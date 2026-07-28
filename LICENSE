@@ -1,21 +1,58 @@
-MIT License
+Star-Magic-Program — DUAL LICENSE
+=================================
 
-Copyright (c) 2025 Daniel8Murphy0007
+Copyright (c) 2026 Daniel T. Murphy / Star-Magic Research Program.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project is offered under **two licenses**. You may choose which to use.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Option A — AGPL-3.0-or-later (open source, share-alike)
+-------------------------------------------------------
+The GNU Affero General Public License v3.0 or (at your option) any later
+version. Full text in `LICENSE-AGPL-3.0.txt`.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Use this option freely for academic research, non-commercial use, and any
+project willing to share modifications back under the same license (including
+SaaS/hosted services, per the AGPL network-provision).
+
+Option B — Commercial (proprietary / closed-source use)
+-------------------------------------------------------
+If you cannot comply with AGPL-3.0's copyleft or network-provision (e.g., you
+want to distribute a proprietary product, run a closed-source SaaS, embed the
+framework in reactor firmware, or otherwise use it in a way AGPL-3.0 does not
+permit), you must obtain a commercial license.
+
+Contact: daniel.murphy00@enrgyone.com
+See: `COMMERCIAL.md`
+
+Migration from MIT
+------------------
+This repository was initialized under MIT license on GitHub. As of the
+v0.1.0 scaffold ship (2026-07-28), the license is changed to
+AGPL-3.0-or-later OR LicenseRef-StarMagic-Commercial (dual). The prior
+MIT text is preserved in `LICENSE-MIT-INITIAL.txt` for historical reference.
+
+Any revisions committed before 2026-07-28 remain covered under the
+original MIT terms; revisions from 2026-07-28 forward are covered under
+this dual-license notice.
+
+Trademarks
+----------
+"UQFF", "Star-Magic", "Star-Magic-Program", "Di-Pseudo-Monopole", and "DPM"
+are unregistered trademarks of Daniel T. Murphy / Star-Magic Research Program.
+Neither license option above grants trademark rights.
+
+Patents
+-------
+Hardware patent licenses (if any) are separate from software licenses.
+Contact the copyright holder for hardware licensing.
+
+Warranty
+--------
+See `NOTICE` for full warranty disclaimer.
+
+Predecessor Project
+-------------------
+This repository (Star-Magic-Program) is the v6.0.0+ systematic rebuild of the
+predecessor Star-Magic repository (github.com/Daniel8Murphy0007/Star-Magic).
+The physics content (whitepapers, canonical primitives, PAPER_N landmark
+series) originates in the predecessor and is credited via `CITATION.cff`.

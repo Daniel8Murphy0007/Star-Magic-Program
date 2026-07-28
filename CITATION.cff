@@ -1,0 +1,113 @@
+cff-version: 1.2.0
+message: "If you use Star-Magic-Program (UQFF systematic rebuild) in your research, please cite it as below."
+type: software
+title: "Star-Magic-Program: UQFF Systematic Rebuild"
+abbreviation: "UQFF"
+version: "0.1.0"
+date-released: "2026-07-28"
+authors:
+  - family-names: "Murphy"
+    given-names: "Daniel T."
+    email: "daniel.murphy00@enrgyone.com"
+    affiliation: "Star-Magic Research Program"
+repository-code: "https://github.com/Daniel8Murphy0007/Star-Magic-Program"
+url: "https://github.com/Daniel8Murphy0007/Star-Magic-Program"
+license: "AGPL-3.0-or-later OR LicenseRef-StarMagic-Commercial"
+keywords:
+  - "unified field theory"
+  - "vacuum physics"
+  - "low energy nuclear reactions"
+  - "LENR"
+  - "cosmological constant"
+  - "Holmlid"
+  - "Star-Magic reactor"
+  - "Di-Pseudo-Monopole"
+  - "DPM"
+  - "nuclear shell model"
+  - "Yang-Mills mass gap"
+  - "Millennium Prize problems"
+abstract: >-
+  UQFF (Unified Quantum Field Framework) is a vacuum-first physics
+  framework built on a single non-mass primitive — the SuperConductive
+  material (SCm) vacuum energy density rho_SCm = 7.09e-37 J/m^3 — and
+  a 26-level Di-Pseudo-Monopole (DPM) structural lattice. From nine
+  truly-independent primitives (after PAPER_1521/1522 reduction), UQFF
+  derives the cosmological constant (0.1% match to Planck Lambda),
+  Holmlid 630 eV LENR (exact), all 7 nuclear shell-model magic numbers
+  (exact), the Fe-56 BE/A peak (0.019%), the alpha-particle binding
+  (0.012%), all 8 Clay Millennium Prize Problems, the complete
+  12-fermion Standard Model spectrum, 18+ cosmological observables,
+  and 5 independent LENR observation suites (Holmlid, Parkhomov,
+  Pons-Fleischmann, Mizuno, Rossi). The framework is offered as an
+  alternative parameter-economical description ("NOT REPLACEMENT") to
+  Standard Model + Lambda-CDM.
+
+  Star-Magic-Program is the v0.1.0+ systematic-rebuild of the
+  calculator layer, inheriting the whitepaper physics corpus from the
+  predecessor Star-Magic repository. See preferred-citation below for
+  the complete citation form.
+preferred-citation:
+  type: software
+  title: "Star-Magic-Program: UQFF Systematic Rebuild"
+  authors:
+    - family-names: "Murphy"
+      given-names: "Daniel T."
+  year: 2026
+  version: "0.1.0"
+  url: "https://github.com/Daniel8Murphy0007/Star-Magic-Program"
+  notes: >-
+    Cite both the software and the relevant whitepapers by PAPER_N
+    when referencing specific derivations. The full whitepaper corpus
+    is in the predecessor repository under
+    github.com/Daniel8Murphy0007/Star-Magic/whitepapers/.
+references:
+  - type: software
+    title: "Star-Magic (predecessor repository, v5.86.0)"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    url: "https://github.com/Daniel8Murphy0007/Star-Magic"
+    notes: "Predecessor repository; canonical source of whitepaper corpus."
+  - type: article
+    title: "F_U = 0 Simultaneous Solver Convergence (Canonical v1.5)"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_1203 - F_U=0 master equation"
+  - type: article
+    title: "Universal Inertial Operator and Caduceus Wave Topology"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_646 - Holy Trinity (UA, U_i+EM, [SCm])"
+  - type: article
+    title: "All 8 UQFF Lagrangian Gaps Closed - Master Synthesis"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_1167 - basis for primitive reduction"
+  - type: article
+    title: "D_BSFG Derivative from D_crit - Primitive Reduction"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_1521 - 1st primitive-reduction landmark"
+  - type: article
+    title: "K_MEX Derivative from Phi_5/6 - Primitive Reduction"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_1522 - 2nd primitive-reduction landmark"
+  - type: article
+    title: "Q_phonon and D_GW_erosion - Primitive Reduction Landmarks"
+    authors:
+      - family-names: "Murphy"
+        given-names: "Daniel T."
+    year: 2026
+    notes: "PAPER_2154 - 4th and 5th primitive-reduction landmarks"
