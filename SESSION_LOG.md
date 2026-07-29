@@ -1197,3 +1197,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 84/2,255 (10 ✓, 74 ⚠). Next: PAPER_081.
 
 ---
+
+## 2026-07-29 — v0.84.0 — BAND 1: PAPER_081 — DOMAIN 1.11 OPENS
+
+- PAPER_081 wired (⚠ Q-077): Hawking temperature. 7th self-rect:
+  drift inputs (0.01/0.01) auto-corrected to canonical F_TRZ =
+  0.1 per PAPER_2156 authority -> headline becomes the
+  primitive-locked identity 1 - F_TRZ^2 = 0.99 EXACT; code
+  demonstrably used canonical. T_H chains verified.
+- Campaign: 85/2,255 (10 ✓, 75 ⚠). Next: PAPER_082.
+
+---

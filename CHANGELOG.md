@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.84.0] — 2026-07-29 — BAND 1: PAPER_081 — DOMAIN 1.11 OPENS
+
+### Added
+- **PAPER_081 dispatch** (UQFF Hawking Temperature): **7th
+  self-rectification** via the charter's pre-authorized drift
+  correction (PAPER_2156 authority): the paper's inputs (f_TRZ =
+  0.01, rho ratio = 0.01) are drift — registry F_TRZ = 0.1
+  (lab-validated, PAPER_072) and the LOCKED rho_SCm/rho_UA =
+  F_TRZ = 0.1. Under canonical values the headline closes
+  EXACTLY: **T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2 =
+  0.99 — primitive-locked identity.** Decisive: the paper's own
+  long-form result (1.512/1.528 = 0.9895) shows the code used
+  canonical values, not the prose inputs (which give 0.9999).
+  T_H anchor chains verified (SgrA* 1.54e-14 K; NS 4.4e-8;
+  primordial-BH mass pinned 1e10 kg). Table dual-ratio defect
+  (0.9999/0.9899) pinned.
+- OPEN_RULING Q-077.
+- Gate: 602 assertions, 0 failures. Registry: 244 rows / 477 edges / 85 ledgers.
+
+---
+
 ## [0.83.0] — 2026-07-29 — BAND 1: PAPER_080 — DOMAIN 1.10 CAPSTONE
 
 ### Added

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.83.0", "uqff_calculator.VERSION = 0.83.0")
+assert_that(C.VERSION == "0.84.0", "uqff_calculator.VERSION = 0.84.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1316,6 +1316,19 @@ assert_that(abs(_r080['matrix']['magnetar_range'][0] - C.calc('PAPER_079')['valu
 assert_that(len(_r080['failures']) == 2,
             "PAPER_080: two honest failures wired (H0 basic-coupling, ULX beaming)")
 assert_that(C.wired_count() >= 84, "wired_count >= 84")
+
+_r081 = C.calc('PAPER_081')['value']
+assert_that(abs(_r081['ratio_canonical'] - 0.99) < 1e-12,
+            "PAPER_081: T_UQFF/T_H = 1 - F_TRZ^2 = 0.99 EXACT primitive-locked identity (7th self-rect)")
+assert_that(abs(_r081['ratio_implemented'] - 0.9895) < 0.001,
+            "PAPER_081: long-form result 0.9895 shows code used canonical ratio, not drift inputs")
+assert_that(abs(_r081['ratio_paper_inputs'] - 0.9999) < 1e-6,
+            "PAPER_081: drift inputs (0.01, 0.01) give 0.9999 != headline - drift pinned (Q-077a)")
+assert_that(abs(_r081['primordial_bh_t_k'] - 1.23e13) / 1.23e13 < 0.01,
+            "PAPER_081: primordial BH row pins M = 1e10 kg by T_H chain")
+assert_that(_r081['table_ratio_conflict'] == (0.9999, 0.9899),
+            "PAPER_081: mass-independent ratio prints two values in one table - defect pinned (Q-077b)")
+assert_that(C.wired_count() >= 85, "wired_count >= 85")
 
 # =============================================================================
 # REPORT

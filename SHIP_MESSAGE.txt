@@ -1,28 +1,29 @@
-v0.83.0 BAND 1: PAPER_080 wired - DOMAIN 1.10 CAPSTONE COMPLETE
+v0.84.0 BAND 1: PAPER_081 wired - 1-F_TRZ^2 IDENTITY (7TH SELF-RECT)
 
-PAPER_080 Complete Multi-Wavelength Validation Suite
-(OPEN_RULING Q-076):
-  Synthesis of PAPER_073-079. Statistics partition EXACT:
-  20 agreements + 2 beyond-standard (magnetar 2x B, ULX) +
-  2 honest failures = 24 predictions; 83.3 pct agreement;
-  negligible-correction subset 6/24 = 25 pct.
+PAPER_081 UQFF-Modified Hawking Temperature (OPEN_RULING Q-077):
+  DOMAIN 1.11 OPENS (black-hole physics).
 
-  LIVE CROSS-CONSISTENCY GATES: the synthesis matrix values are
-  asserted against the live wired dispatches - 075 eta (1.99),
-  074 sigma factor (1.018), 079 B enhancement (1.98) - the
-  capstone and its inputs cannot drift apart silently.
+  7TH SELF-RECTIFICATION (pre-authorized drift correction,
+  PAPER_2156 authority): the paper's stated inputs f_TRZ = 0.01
+  and rho_SCm/rho_UA = 0.01 are DRIFT - the registry has F_TRZ =
+  0.1 (LAB-VALIDATED in PAPER_072) and the LOCKED coupling
+  rho_SCm/rho_UA = F_TRZ = 0.1.
 
-  The paper's own two failures are EXACTLY the two Rule-7 items
-  this campaign pinned independently (H0 basic-coupling null;
-  ULX beaming requirement) - corpus honesty aligns with
-  campaign honesty.
+  Under CANONICAL values the headline closes EXACTLY:
+    T_UQFF/T_H = (1 + F_TRZ)(1 - F_TRZ) = 1 - F_TRZ^2 = 0.99
+  - a PRIMITIVE-LOCKED IDENTITY.
 
-  NNDC + PDG + IAEA-NDS endpoints recorded (3 of 10 pending) -
-  forecasting the nuclear/particle database domains ahead.
-  Flagship falsifiable signature: magnetar 2x B-field.
+  DECISIVE EVIDENCE the original code used canonical values:
+  the paper's own long-form result 1.512e-14/1.528e-14 = 0.9895
+  ~ 0.99, NOT the 0.9999 its prose inputs would give. The drift
+  inputs are carried alongside for the ruling.
 
-  DOMAIN 1.10 COMPLETE (8 papers, 073-080).
+  T_H anchor chains VERIFIED: SgrA* 1.54e-14 K; M87/stellar/NS
+  mass-inverse scaling; NS 4.4e-8 K; primordial-BH row pins
+  M = 1e10 kg (T = 1.23e13 K). Table dual-ratio defect
+  (0.9999 vs 0.9899 for a mass-independent ratio) pinned.
+  6/6 validator tests + C++ cross-check recorded.
 
-Q-076 queued. Gate 596 assertions 0 failures. Registry 242 rows /
-473 edges / 84 citation ledgers. Wired 84/2,255 (10 clean, 74
-OPEN_RULING). Next: PAPER_081.
+Q-077 queued. Gate 602 assertions 0 failures. Registry 244 rows /
+477 edges / 85 citation ledgers. Wired 85/2,255 (10 clean, 75
+OPEN_RULING). Next: PAPER_082.

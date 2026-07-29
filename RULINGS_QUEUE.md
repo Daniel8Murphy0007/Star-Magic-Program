@@ -1381,6 +1381,26 @@ RESOLVED section with the ruling recorded.
   recorded.
 - **Daniel's ruling:** (pending)
 
+### Q-077 — PAPER_081 — F_TRZ drift auto-correction + primitive-locked Hawking identity
+- **Question:** (a) CONFIRM the 7th self-rectification: the
+  paper's inputs f_TRZ = 0.01 and rho_SCm/rho_UA = 0.01 are
+  DRIFT (registry F_TRZ = 0.1, lab-validated in PAPER_072; rho
+  ratio = F_TRZ = 0.1 is the LOCKED coupling with PAPER_2156
+  pre-authorized correction authority). Under canonical values
+  the headline closes EXACTLY: T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) =
+  1 - F_TRZ^2 = 0.99 - a PRIMITIVE-LOCKED IDENTITY. Decisive:
+  the paper's own long-form result (1.512/1.528 = 0.9895) shows
+  the code used ~0.99, not the 0.9999 its prose inputs give.
+  Canonize the identity + mark the 0.01 inputs superseded?
+  (b) The all-systems table prints BOTH 0.9999 (SgrA*/M87) and
+  0.9899 (stellar/NS/magnetar) for a mass-independent ratio -
+  internal defect; the canonical identity gives one value.
+  (c) Primordial-BH row: mass pinned M = 1e10 kg by the T_H
+  chain (T = 1.23e13 K) - confirm.
+- **Best-candidate wired:** canonical identity PRIMARY with
+  drift inputs carried; T_H anchors verified; Domain 1.11 opens.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

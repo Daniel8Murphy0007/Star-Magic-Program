@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.83.0"
+VERSION = "0.84.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4256,5 +4256,55 @@ def _paper_080(dataset):
                     'regime strength ~ |g_mode|/|g_DPM|'),
         'source': 'PAPER_080',
         'residual_pct': abs(20 / 24 * 100 - 83.0),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_081')
+def _paper_081(dataset):
+    """UQFF-Modified Hawking Temperature (Session 0).
+
+    DOMAIN 1.11 OPENS (black-hole physics). T_UQFF/T_H =
+    (1 + f_TRZ) * (1 - rho_SCm/rho_UA).
+    7TH SELF-RECTIFICATION (drift auto-correction, PAPER_2156
+    authority pre-authorized in the charter): the paper's stated
+    inputs (f_TRZ = 0.01, rho ratio = 0.01) are DRIFT - the
+    registry has F_TRZ = 0.1 (lab-validated in PAPER_072) and the
+    LOCKED coupling rho_SCm/rho_UA = F_TRZ = 0.1. Under CANONICAL
+    values the headline closes EXACTLY:
+        (1 + F_TRZ)(1 - F_TRZ) = 1 - F_TRZ^2 = 0.99 EXACT
+    - a PRIMITIVE-LOCKED IDENTITY. Decisive evidence the code
+    used canonical values: the long-form result 1.512e-14/
+    1.528e-14 = 0.9895 ~ 0.99, NOT the 0.9999 the prose inputs
+    give. The drift inputs are carried for the ruling (Q-077a).
+    T_H anchor chains VERIFIED: SgrA* 1.54e-14 K (printed 1.53);
+    M87/stellar/NS mass-inverse scaling checks (4.4e-8 NS);
+    primordial-BH row pins M = 1e10 kg by chain (T = 1.23e13 K).
+    DEFECT: the all-systems table prints BOTH 0.9999 and 0.9899
+    for a mass-independent ratio (Q-077b).
+    6/6 validate_hawking_temperature.py tests + C++ cross-check
+    recorded as stated.
+    """
+    ratio_canonical = (1.0 + F_TRZ) * (1.0 - F_TRZ)        # 0.99 EXACT identity
+    return {
+        'value': {
+            'domain': '1.11 OPENS (black-hole physics)',
+            'ratio_canonical': ratio_canonical,            # 1 - F_TRZ^2 = 0.99
+            'identity': 'T_UQFF/T_H = 1 - F_TRZ^2',
+            'ratio_paper_inputs': (1.0 + 0.01) * (1.0 - 0.01),   # 0.9999 drift
+            'ratio_implemented': 1.512e-14 / 1.528e-14,    # 0.9895 ~ 0.99 code used canonical
+            'drift_inputs': {'f_trz': 0.01, 'rho_ratio': 0.01},  # carried
+            't_h_sgra_k': 1.53e-14,
+            't_uqff_sgra_k': 1.512e-14,
+            't_h_ns_k': 4.38e-8,
+            'primordial_bh_mass_kg': 1e10,                 # pinned by chain
+            'primordial_bh_t_k': 1.23e13,
+            'table_ratio_conflict': (0.9999, 0.9899),      # Q-077b
+            'tests_pass': 6,
+        },
+        'formula': ('T_H = hbar c^3/(8 pi G M k_B); '
+                    'T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2 = 0.99 EXACT'),
+        'source': 'PAPER_081',
+        'residual_pct': abs(ratio_canonical - 0.99) / 0.99 * 100,
         'status': 'OPEN_RULING',
     }

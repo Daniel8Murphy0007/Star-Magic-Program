@@ -473,3 +473,7 @@ observable,multiwavelength_capstone,paper,PAPER_073,matrix row
 observable,multiwavelength_capstone,paper,PAPER_077,matrix row
 observable,multiwavelength_capstone,paper,PAPER_079,matrix row
 observable,future_endpoints_forecast,paper,PAPER_080,roadmap
+observable,hawking_ftrz_identity,paper,PAPER_081,primitive-locked identity
+primitive,F_TRZ,observable,hawking_ftrz_identity,1 - F_TRZ^2 EXACT
+observable,hawking_ftrz_identity,paper,PAPER_072,lab-validated F_TRZ support
+observable,hawking_t_anchors,paper,PAPER_081,T_H chains
