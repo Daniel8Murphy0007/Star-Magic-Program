@@ -736,3 +736,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 39/2,255 (7 ✓, 32 ⚠). Next: PAPER_036 (FUBii template family).
 
 ---
+
+## 2026-07-29 — v0.39.0 — BAND 1: PAPER_036 — FUBii FAMILY OPENS
+
+- PAPER_036 wired (✓ CLEAN): FUBii family root. Base identity =
+  predecessor Tier-4 registry exact (cross-repo continuity); Perseus
+  virx arithmetic verified; template helper in place for 037-039.
+- Gate 297/0. Registry 118 rows / 230 edges / 40 ledgers.
+- Campaign: 40/2,255 (8 ✓, 32 ⚠). Next: PAPER_037 (variants 2-6).
+
+---

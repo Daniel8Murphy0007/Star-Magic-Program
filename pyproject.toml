@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.38.0"
-description = "UQFF Star-Magic-Program v0.38.0: PAPER_035 wired (Higgs CP: A_CP = cos(pi*t_n) reading; arccos-slip audit - self-consistent t_n = 0.331 vs paper 0.353, 87.88-pct decomposition is downstream artifact; one-loop A_CP(H->gg) = 0.74 pct HL-LHC falsifiable survives independently; Gamma_H 3.2 GeV scenario-only). Q-034 queued. Wired 39/2255, gate 291/0. Registry 115 rows / 224 edges / 39 ledgers."
+version = "0.39.0"
+description = "UQFF Star-Magic-Program v0.39.0: PAPER_036 wired (FUBii template family root: base identity F_UBii = F_U - F_Bi - F_i matches predecessor Tier-4 registry EXACTLY - cross-repo continuity; virx variant Perseus -2.024e60 N verified end-to-end; sigma^3 scaling; Q_wave ~ 1e-6 thermalized self-consistency disclosed). CLEAN. Wired 40/2255, gate 297/0. Registry 118 rows / 230 edges / 40 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

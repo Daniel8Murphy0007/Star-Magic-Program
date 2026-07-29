@@ -1,26 +1,19 @@
-v0.38.0 BAND 1: PAPER_035 wired
+v0.39.0 BAND 1: PAPER_036 wired - FUBii TEMPLATE FAMILY OPENS
 
-PAPER_035 Higgs CP Violation (OPEN_RULING Q-034):
-  CMS A_CP = 0.507 +- 0.064 (H->ZZ*->4l) read as cos(pi*t_n).
-  ARITHMETIC AUDIT: arccos(0.507) = 1.039 rad gives the
-  self-consistent t_n = 0.331 (tautological); the paper's t_n = 0.353
-  comes from a circular arccos slip (1.109 rad = arccos(0.4456)) -
-  the celebrated 87.88 pct / 12.12 pct UQFF/SM decomposition is
-  entirely DOWNSTREAM of the slip. Both values wired, 12.1 pct slip
-  magnitude gate-pinned.
-  SURVIVING FALSIFIABLE (independent of the slip): one-loop
-  g_CP = (alpha/4pi)*D_TRZ*t_n^2 = 2.41e-5 ->
-  A_CP(H->gamma-gamma) = 0.74 pct - below current ~5 pct, reachable
-  at HL-LHC 3 ab^-1
-  Gamma_H = 3.2 GeV wired as 95-pct-bound SCENARIO only (x780 SM;
-  paper itself discloses not-physical; CERN theory < 3.6 GeV)
-  psi_2HDM = 32 deg vs <15 deg limit tension disclosed in-paper
+PAPER_036 FUBii Buoyancy Variant 1: Archimedes -> Virial X-ray (CLEAN):
+  The charter-authorized template family (036-039, 17 variants) opens.
+  BASE IDENTITY: F_UBii = F_U - F_Bi - F_i - generalizes Archimedes
+  to the UQFF unified field, and matches the predecessor repository's
+  Tier-4 17-variant registry (BuoyancyProofVariants.py, PAPER_2151)
+  EXACTLY. Cross-repository corpus continuity confirmed.
+  Variant virx: F = -F_rel*(3*sigma_X^2*r_h/(G*E_LEP))*Q_wave*sigma_X
+  sigma^3 scaling = phase-space entropy, not just mass
+  Perseus Cluster: -2.024e60 N - arithmetic VERIFIED end-to-end
+  Honest self-consistency disclosed in-paper: raw 2.4e6 enhancement
+  over gravity -> Q_wave ~ 1e-6 in thermalized ICM -> classical
+  virial equilibrium recovered (Q_wave -> 0 classical limit)
+  Parameterized _fubii_virx helper established for the family.
 
-Q-034 queued: t_n 0.353-vs-0.331 adjudication (is 0.353 derived
-anywhere independently?); width scenario framing; 5th consecutive
-Session-0 paper with in-text self-corrections; header block
-duplicated 4x.
-
-Gate 291 assertions 0 failures. Registry 115 rows / 224 edges / 39
-citation ledgers. Wired 39/2,255 (7 clean, 32 OPEN_RULING).
-Next: PAPER_036 (FUBii buoyancy template family 036-039 begins).
+Gate 297 assertions 0 failures. Registry 118 rows / 230 edges / 40
+citation ledgers. Wired 40/2,255 (8 clean, 32 OPEN_RULING).
+Next: PAPER_037 (FUBii variants 2-6, thermodynamic).

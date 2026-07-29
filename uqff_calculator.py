@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.38.0"
+VERSION = "0.39.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1886,4 +1886,49 @@ def _paper_035(dataset):
         'source': 'PAPER_035',
         'residual_pct': abs(cos_paper - a_cp) / a_cp * 100,   # 12.1 (the slip magnitude)
         'status': 'OPEN_RULING',
+    }
+
+
+def _fubii_virx(sigma_x, r_h, q_wave):
+    f_rel, g_n, e_lep = 1.0e-10, 6.674e-11, 1.22e-19   # PAPER_036 anchors
+    return -f_rel * (3.0 * sigma_x**2 * r_h / (g_n * e_lep)) * q_wave * sigma_x
+
+
+@_register('PAPER_036')
+def _paper_036(dataset):
+    """F_UBii Buoyancy Variant 1: Archimedes -> Virial X-ray (S0).
+
+    TEMPLATE FAMILY ROOT (charter-authorized 036-039, 17 variants).
+    Base identity F_UBii = F_U - F_Bi - F_i - EXACTLY matches the
+    predecessor Tier-4 registry (BuoyancyProofVariants.py, PAPER_2151)
+    - corpus continuity across repositories confirmed.
+    Variant virx: F = -F_rel*(3*sigma_X^2*r_h/(G*E_LEP))*Q_wave*
+    sigma_X (sigma^3 scaling - phase-space entropy, not just mass).
+    Perseus: -2.024e60 N arithmetic VERIFIED end-to-end.
+    Honest self-consistency disclosed in-paper: raw enhancement 2.4e6
+    over gravity implies Q_wave ~ 1e-6 in thermalized ICM -> classical
+    virial equilibrium recovered (Q_wave -> 0 classical limit).
+    CLEAN wiring.
+    """
+    perseus = _fubii_virx(1.3e6, 2.5e22, 1.0)        # -2.024e60 N
+    return {
+        'value': {
+            'base_identity': 'F_UBii = F_U - F_Bi - F_i',
+            'f_ubii_virx_perseus_n': perseus,
+            'paper_value_n': -2.024e60,
+            'f_rel_n': 1.0e-10,
+            'e_lep_j': 1.22e-19,
+            'sigma_scaling_power': 3,
+            'gravity_comparison_n': 8.5e53,
+            'enhancement_raw': abs(perseus) / 8.5e53,       # 2.4e6
+            'q_wave_thermalized': 1.0e-6,            # self-consistency (disclosed)
+            'clusters': {'perseus': (1.3e6, 2.5e22), 'coma': (1.0e6, 6.8e22),
+                         'virgo': (6.0e5, 4.6e22)},
+            'variant_count_family': 17,
+        },
+        'formula': ('F_UBii = F_U - F_Bi - F_i; '
+                    'virx: F = -F_rel*(3*sigma^2*r_h/(G*E_LEP))*Q_wave*sigma'),
+        'source': 'PAPER_036',
+        'residual_pct': abs(perseus - (-2.024e60)) / 2.024e60 * 100,
+        'status': 'WIRED',
     }

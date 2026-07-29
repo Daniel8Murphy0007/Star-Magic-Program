@@ -223,3 +223,9 @@ observable,higgs_cp_temporal_reversal,paper,PAPER_035,primary derivation
 observable,higgs_cp_temporal_reversal,paper,PAPER_027,cos(pi*t_n) mechanism shared
 observable,higgs_cp_one_loop_asymmetry,paper,PAPER_035,primary derivation
 observable,higgs_width_scm_scenario,paper,PAPER_035,primary derivation
+observable,fubii_base_identity,paper,PAPER_036,primary derivation
+observable,fubii_virx_variant,paper,PAPER_036,primary derivation
+observable,fubii_qwave_suppression,paper,PAPER_036,primary derivation
+observable,fubii_base_identity,paper,PAPER_037,family forward-link
+observable,fubii_base_identity,paper,PAPER_038,family forward-link
+observable,fubii_base_identity,paper,PAPER_039,family forward-link

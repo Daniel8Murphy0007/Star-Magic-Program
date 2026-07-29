@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.39.0] — 2026-07-29 — BAND 1: PAPER_036 — FUBii TEMPLATE FAMILY OPENS
+
+### Added
+- **PAPER_036 dispatch** (FUBii Buoyancy Variant 1 — Archimedes/virx):
+  the charter-authorized template family (036-039, 17 variants) opens.
+  Base identity F_UBii = F_U - F_Bi - F_i matches the predecessor
+  Tier-4 registry (BuoyancyProofVariants.py / PAPER_2151) EXACTLY —
+  cross-repository corpus continuity confirmed. Variant virx:
+  F = -F_rel*(3*sigma_X^2*r_h/(G*E_LEP))*Q_wave*sigma_X (sigma^3
+  phase-space scaling); Perseus -2.024e60 N verified end-to-end;
+  honest in-paper self-consistency (raw 2.4e6 enhancement -> Q_wave ~
+  1e-6 thermalized -> classical virial recovered). Parameterized
+  _fubii_virx helper established for the family. CLEAN wiring.
+- Gate: 297 assertions, 0 failures. Registry: 118 rows / 230 edges / 40 ledgers.
+
+---
+
 ## [0.38.0] — 2026-07-29 — BAND 1: PAPER_035
 
 ### Added

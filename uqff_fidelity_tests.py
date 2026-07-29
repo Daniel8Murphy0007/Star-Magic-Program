@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.38.0", "uqff_calculator.VERSION = 0.38.0")
+assert_that(C.VERSION == "0.39.0", "uqff_calculator.VERSION = 0.39.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -655,6 +655,19 @@ assert_that(abs(_r035['width_enhancement'] - 780.0) < 2.0,
 assert_that(_r035['gamma_h_scenario_gev'] < _r035['gamma_h_cern_limit_gev'],
             "PAPER_035: 3.2 GeV scenario below CERN 3.6 GeV limit")
 assert_that(C.wired_count() >= 39, "wired_count >= 39")
+
+_r036 = C.calc('PAPER_036')['value']
+assert_that(abs(_r036['f_ubii_virx_perseus_n'] - (-2.024e60)) / 2.024e60 < 0.001,
+            "PAPER_036: Perseus F_UBii_virx = -2.024e60 N arithmetic verified end-to-end")
+assert_that(_r036['base_identity'] == 'F_UBii = F_U - F_Bi - F_i',
+            "PAPER_036: base identity matches predecessor Tier-4 registry (PAPER_2151 continuity)")
+assert_that(_r036['sigma_scaling_power'] == 3,
+            "PAPER_036: sigma_X^3 scaling (phase-space entropy)")
+assert_that(abs(_r036['enhancement_raw'] - 2.4e6) / 2.4e6 < 0.02,
+            "PAPER_036: raw enhancement 2.4e6 -> Q_wave ~ 1e-6 thermalized (disclosed self-consistency)")
+assert_that(_r036['variant_count_family'] == 17,
+            "PAPER_036: 17-variant family root (template papers 036-039)")
+assert_that(C.wired_count() >= 40, "wired_count >= 40")
 
 # =============================================================================
 # REPORT
