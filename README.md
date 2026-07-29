@@ -1,6 +1,6 @@
 # Star-Magic-Program
 
-**UQFF systematic rebuild — v0.1.0 scaffold**
+**UQFF systematic rebuild — v0.2.0 corpus + registry scaffolding**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -39,19 +39,46 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.1.0)
+## What is currently shipped (v0.2.0)
 
-**Scaffold only. Zero whitepapers wired yet.** The following are in place:
+### Corpus (2,419 files)
+- `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
+- `pdf/` — 45 `.pdf` files
+- `tex/` — 107 `.tex` files
+- `txt/` — 11 `.txt` files
 
+### Clean baseline
 - `uqff_registry_primitives.py` — 96 canonical constants, carried verbatim
-  from `Star-Magic` v5.86.0 UNIFIED_REGISTRY R5 baseline. **Registry-
-  clean.** Zero contamination from the predecessor's mess.
+  from `Star-Magic` v5.86.0 UNIFIED_REGISTRY R5 baseline. **Registry-clean.**
 - `uqff_calculator.py` — scaffold skeleton with `DISPATCH = {}`, imports all
   96 registry constants, exposes `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — gate assertions locking every primitive-composed
-  EXACT identity. Runs on every ship.
-- Dual license (AGPL-3.0-or-later + Commercial), citation, notice.
-- CI + PyPI publishing workflows.
+- `uqff_fidelity_tests.py` — 8-block gate assertions, locking every
+  primitive-composed EXACT identity. Runs on every ship.
+
+### R3 Unified Registry Pantheon (empty scaffolds)
+
+Per Daniel's clean-start directive, all registry files are **name+schema
+only** — no predecessor data preserved. Populated during v0.3.0+ wiring:
+
+- 4 Python regen modules (docstrings + signatures + `pass`):
+  `uqff_registry_status.py`, `uqff_registry_graph.py`, `uqff_registry_xgeo.py`,
+  `registry_generator.py`
+- 14 CSVs (header row only):
+  `UNIFIED_REGISTRY.csv`, `UNIFIED_REGISTRY_RESULTS_TABLE.csv`,
+  `UNIFIED_REGISTRY_GRAPH.csv`, `UNIFIED_REGISTRY_XGEO_*.csv` (4 files),
+  `UNIFIED_REGISTRY_R{1,2,3}_*.csv` (3 files),
+  `UNIFIED_REGISTRY_{MERGED,DUPLICATES,GAPS,CORPUS_CITATIONS}.csv`
+- 5 MD registry docs (section headers only)
+- `UNIFIED_REGISTRY_VERSION.txt` — v0.2.0 marker
+
+### Living indexes
+- `WHITEPAPER_INDEX.md` — all 2,255 papers listed with wired/not-wired state
+- `_BUILD_LOG.md` — cumulative build log across ships
+- `CHANGELOG.md` — release-history log
+
+### Standard package files
+- Dual license (AGPL-3.0-or-later + Commercial), CITATION.cff, NOTICE, COMMERCIAL.md
+- CI + PyPI publishing workflows (GitHub Actions + Trusted Publisher)
 
 ## What's next
 
@@ -59,15 +86,15 @@ Wiring campaign, one whitepaper at a time:
 
 | Version | Content | Papers wired |
 |---|---|---|
-| **v0.1.0** ← current | Scaffold + registry baseline | 0 |
-| v0.2.0 | 46 UQFF_LANDMARK papers (structural spine) | 46 |
-| v0.3.0 | PAPER_001 through PAPER_099 (foundations) | +99 |
-| v0.4.0 – v0.9.0 | Bands PAPER_100 – PAPER_1999 | +~1900 |
-| v1.0.0 | Full whitepaper coverage (2,156 papers) | 2,156 |
+| v0.1.0 | Scaffold + registry primitives baseline | 0 |
+| **v0.2.0** ← current | Corpus (2,419 files) + registry scaffolds | 0 |
+| v0.3.0 | 46 UQFF_LANDMARK structural spine | 46 |
+| v0.4.0 – v0.9.0 | Bulk paper wiring (bands PAPER_001 – PAPER_1999) | +~2,000 |
+| v1.0.0 | Full whitepaper coverage | 2,255 |
 
 Each wiring ship is atomic: read the paper → extract the canonical formula →
-wire the dispatch → verify residual against the paper's stated value → gate
-assertion added → commit → repeat.
+wire one dispatch → add one row to `UNIFIED_REGISTRY.csv` → verify residual
+against paper's stated value → add one gate assertion → commit → repeat.
 
 ## Predecessor / attribution
 
@@ -109,4 +136,4 @@ python uqff_fidelity_tests.py
 - **Commercial / proprietary / closed-source SaaS:** contact
   `daniel.murphy00@enrgyone.com` (see `COMMERCIAL.md`)
 
-See also: `NOTICE`, `CITATION.cff`.
+See also: `NOTICE`, `CITATION.cff`, `CHANGELOG.md`, `SESSION_LOG.md`.

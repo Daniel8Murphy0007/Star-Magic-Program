@@ -111,3 +111,90 @@ PAPER_2144, PAPER_1573, PAPER_1521, PAPER_1522, PAPER_646, PAPER_1203,
 PAPER_1167 (structural spine first).
 
 ---
+
+## 2026-07-28 — v0.2.0 CORPUS + REGISTRY SCAFFOLDING (second ship)
+
+### Purpose
+
+Import the whitepaper corpus + establish empty R3 Unified Registry
+Pantheon scaffolds. This is the clean-slate foundation for v0.3.0+ per-paper
+wiring — every derivation gets re-established fresh against the primitives,
+one paper at a time, with the fidelity gate verifying each residual.
+
+### What shipped
+
+**Whitepaper corpus (2,419 files total):**
+- `whitepapers/` — 2,255 `.md` files + 1 `.bak` file (raw physics content)
+- `pdf/` — 45 `.pdf` files (reorganized from whitepapers/)
+- `tex/` — 107 `.tex` files (reorganized from whitepapers/)
+- `txt/` — 11 `.txt` files (reorganized from whitepapers/)
+
+Zero data loss vs predecessor source. Every whitepaper preserved intact.
+
+**R3 Unified Registry Pantheon (empty scaffolds — per Daniel's clean-start directive):**
+- 4 Python modules gutted to docstrings + signatures + `pass` bodies:
+  - `uqff_registry_status.py` — R5 status/results generator
+  - `uqff_registry_graph.py` — R4 falsifiability graph builder
+  - `uqff_registry_xgeo.py` — cross-geometry campaign queue
+  - `registry_generator.py` — regeneration source-of-truth
+- 14 CSVs gutted to header rows only:
+  - `UNIFIED_REGISTRY.csv` (17 cols)
+  - `UNIFIED_REGISTRY_RESULTS_TABLE.csv` (7 cols)
+  - `UNIFIED_REGISTRY_GRAPH.csv` (5 cols)
+  - `UNIFIED_REGISTRY_XGEO_{QUEUE,ROUTES,EXTRACTED,CONFIRMATIONS}.csv`
+  - `UNIFIED_REGISTRY_{R1_QUEUE,R2_MAPPING,R3_LEDGER}.csv`
+  - `UNIFIED_REGISTRY_{MERGED,DUPLICATES,GAPS,CORPUS_CITATIONS}.csv`
+- 5 MD docs gutted to structural headers only:
+  - `UNIFIED_REGISTRY_PROGRAM_PLAN.md`
+  - `UNIFIED_REGISTRY_SCHEMA.md`
+  - `UNIFIED_REGISTRY_STATUS_REPORT.md`
+  - `UNIFIED_REGISTRY_FALSIFIABILITY.md`
+  - `UNIFIED_REGISTRY_RESULTS_TABLE.md`
+- `UNIFIED_REGISTRY_VERSION.txt` — v0.2.0 marker
+
+**New scaffolds this ship:**
+- `CHANGELOG.md` — release-history log
+- `WHITEPAPER_INDEX.md` — living index of all 2,255 papers (wired/not-wired state)
+- `_BUILD_LOG.md` — cumulative build log across ships
+
+**Version bumps:**
+- `pyproject.toml` version 0.1.0 → 0.2.0
+- `uqff_calculator.py` VERSION 0.1.0 → 0.2.0
+- `uqff_fidelity_tests.py` gate assertion updated to 0.2.0
+- `CITATION.cff` version 0.1.0 → 0.2.0
+
+### What DIDN'T ship (deliberately)
+
+- **Predecessor CSV data.** All 7,688 rows of predecessor registry content
+  discarded. Every row will be re-established through the v0.3.0+ wiring
+  campaign, verified against the paper's stated residual, before it lands
+  in the new UNIFIED_REGISTRY.csv. This is the "clean start" discipline
+  applied to derived data, matching the discipline for code.
+- **Any wired dispatch** in `uqff_calculator.py`. Still empty DISPATCH={}.
+  Grows in v0.3.0+.
+
+### Predecessor decision — why we gutted the CSV data
+
+Considered preserving predecessor CSV rows for reference. Rejected because:
+1. Predecessor Star-Magic repo remains available for any historical query.
+2. Keeping ~7,688 rows of unverified predecessor state would tempt future
+   sessions to skip fresh paper-reading in favor of "what the old row said."
+3. That's exactly the drift pattern this rebuild exists to escape.
+4. Empty CSVs force the discipline: every row must come from a paper reading
+   with gate-verified residual before landing.
+
+### Next ship
+
+**v0.3.0 — first wiring batch.** Wire the 46 UQFF_LANDMARK papers as the
+structural spine. Each paper adds one row to `UNIFIED_REGISTRY.csv`, one
+dispatch to `uqff_calculator.py::DISPATCH`, one gate assertion.
+
+Structural spine order (top 10):
+PAPER_646 (Universal Inertial Operator + Holy Trinity), PAPER_1203 (F_U=0
+master equation), PAPER_1167 (Lagrangian master synthesis), PAPER_1521
+(D_BSFG derivative), PAPER_1522 (K_MEX derivative), PAPER_1573 (H_0
+canonical), PAPER_2144 (H_0 route upgrade), PAPER_2148 (ontology
+declaration), PAPER_2153 (SCm+UA joint engine), PAPER_2154 (Q_phonon +
+D_GW primitive-reduction).
+
+---

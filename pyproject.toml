@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.1.0"
-description = "UQFF Star-Magic-Program v0.1.0 SCAFFOLD: from-scratch systematic rebuild of the Unified Quantum Field Framework calculator with strict whitepaper-truth discipline. One dispatch per whitepaper. Zero hardcoded literals. Registry-primitives-first. Grown one paper at a time, gate-verified per residual, no calculator-registry drift possible by construction. Predecessor: github.com/Daniel8Murphy0007/Star-Magic (v5.86.0)."
+version = "0.2.0"
+description = "UQFF Star-Magic-Program v0.2.0 CORPUS + CLEAN REGISTRY SCAFFOLDING: whitepaper corpus (2,419 files, split whitepapers/md 2,256 + tex/ 107 + pdf/ 45 + txt/ 11) + R3 registry scaffolds (4 Python regen modules gutted to signatures, 14 CSVs header-only, 5 MD docs structural; predecessor rows discarded per clean-start discipline). Scaffold code unchanged from v0.1.0. Next: v0.3.0+ per-paper wiring (46 landmark spine first)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -47,11 +47,20 @@ Predecessor = "https://github.com/Daniel8Murphy0007/Star-Magic"
 Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [tool.setuptools]
-py-modules = ["uqff_registry_primitives", "uqff_calculator", "uqff_fidelity_tests"]
+py-modules = [
+    "uqff_registry_primitives",
+    "uqff_calculator",
+    "uqff_fidelity_tests",
+    "uqff_registry_status",
+    "uqff_registry_graph",
+    "uqff_registry_xgeo",
+    "registry_generator",
+]
 
 [tool.setuptools.data-files]
 "share/star-magic-program" = [
     "README.md",
+    "CHANGELOG.md",
     "CITATION.cff",
     "LICENSE",
     "LICENSE-AGPL-3.0.txt",
@@ -59,4 +68,12 @@ py-modules = ["uqff_registry_primitives", "uqff_calculator", "uqff_fidelity_test
     "NOTICE",
     "COMMERCIAL.md",
     "SESSION_LOG.md",
+    "WHITEPAPER_INDEX.md",
+    "_BUILD_LOG.md",
+    "UNIFIED_REGISTRY_VERSION.txt",
+    "UNIFIED_REGISTRY_PROGRAM_PLAN.md",
+    "UNIFIED_REGISTRY_SCHEMA.md",
+    "UNIFIED_REGISTRY_STATUS_REPORT.md",
+    "UNIFIED_REGISTRY_FALSIFIABILITY.md",
+    "UNIFIED_REGISTRY_RESULTS_TABLE.md",
 ]
