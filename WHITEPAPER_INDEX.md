@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 117 (11 ✓, 106 ⚠ OPEN_RULING)
+- **Wired:** 118 (11 ✓, 107 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2138
+- **Not yet touched:** 2137
 
 ---
 
@@ -306,7 +306,7 @@
 | ⬜ | PAPER_1147 | Calabi Yau 3fold Compactification SCm |
 | ⬜ | PAPER_1148 | M Theory Unification SCm 26D |
 | ⬜ | PAPER_1149 | PSZ2G181 Stroe2025 Xray Mach UQFF Global Connections |
-| ⬜ | PAPER_114 | EP07 ParkerProbe Heliosheath Proof |
+| ⚠ | PAPER_114 | EP07 ParkerProbe Heliosheath Proof |
 | ⬜ | PAPER_1150 | June20 2025 10System Chandra FUBii RareMathematicalOccurrences |
 | ⬜ | PAPER_1151 | VDS DVP BH26 Variant Branches Coupled Field |
 | ⬜ | PAPER_1152 | QCalcGeom SimEngine 12Stage CPT Pipeline |

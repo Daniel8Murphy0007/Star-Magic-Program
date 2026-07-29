@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.116.0", "uqff_calculator.VERSION = 0.116.0")
+assert_that(C.VERSION == "0.117.0", "uqff_calculator.VERSION = 0.117.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1755,6 +1755,19 @@ assert_that(abs(_r113['cta102_kappa_chain'] - 2.664e-3) < 1e-5,
 assert_that(abs(_r113['cta102_vs_canonical'] - 5.33) < 0.01,
             "PAPER_113: corrected CTA 102 is 5.3x ABOVE canonical - reconciliation INVERTED (Q-109a)")
 assert_that(C.wired_count() >= 117, "wired_count >= 117")
+
+_r114 = C.calc('PAPER_114')['value']
+assert_that(abs(_r114['ug2_coeff_j_m3'] - 9.79e-38) < 0.01e-38,
+            "PAPER_114: Ug2 coefficient 9.79e-38 chain (printed 9.76e-38, rounding)")
+assert_that(abs(_r114['p_ram_pa'] - 1e-9) < 1e-12,
+            "PAPER_114: P_ram = 1e-9 Pa EXACT")
+assert_that(abs(_r114['delta_sw'] - 0.01) < 1e-15 and abs(_r114['delta_sw_paper_route'] - 0.01) < 1e-15,
+            "PAPER_114: d_sw = 0.01 via BOTH F_TRZ^2 (primitive candidate) and SSq/57 (paper route) - Q-110a")
+assert_that(abs(_r114['psp_mean_err_pct'] - 1.70) < 0.01,
+            "PAPER_114: PSP 4-perihelion mean error 1.70 pct EXACT")
+assert_that(abs(_r114['alpha_cr_implied'] - 1.02e26) < 0.01e26,
+            "PAPER_114: compression chain closes only at unstated alpha_CR = 1.02e26 (Q-110b)")
+assert_that(C.wired_count() >= 118, "wired_count >= 118")
 
 # =============================================================================
 # REPORT

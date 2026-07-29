@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.116.0"
-description = "UQFF Star-Magic-Program v0.116.0: PAPER_113 wired - EP-05 Fermi-LAT 4LAC blazar decay (canonical-kappa chains EXACT: e^-1 flare fraction, N_cycles 2.426, bins 1.04 pct; FACTOR-10 error found in CTA 102 fit - corrected 2.66e-3/day is 5.3x ABOVE canonical, reconciliation inverted; 50-AGN mean now load-bearing, data unshown). Q-109 queued. Wired 117/2255, gate 799/0. Registry 306 rows / 640 edges / 117 ledgers."
+version = "0.117.0"
+description = "UQFF Star-Magic-Program v0.117.0: PAPER_114 wired - EP-07 Parker Probe heliosheath (Ug2 coefficient + P_ram + PSP 1.70 pct fit EXACT; d_sw = 0.01 dual decomposition found: paper SSq/57 vs F_TRZ^2 primitive-lock candidate with PAPER_2139 precedent; compression chain closes only at unstated alpha_CR = 1.02e26). Q-110 queued. Wired 118/2255, gate 805/0. Registry 308 rows / 645 edges / 118 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

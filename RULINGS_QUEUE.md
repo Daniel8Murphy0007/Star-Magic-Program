@@ -2126,6 +2126,31 @@ RESOLVED section with the ruling recorded.
   disclosed.
 - **Daniel's ruling:** (pending)
 
+### Q-110 — PAPER_114 EP-07 — d_sw decomposition + unstated alpha_CR
+- **Question:** (a) D_SW DECOMPOSITION: the paper derives the
+  heliosheath coupling d_sw = 0.01 as SSq/57 = 0.57/57 (citing
+  the 57-decade spectrum, PAPER_049) — but this route divides
+  SSq by its own mantissa digits (coincidence smell). The
+  primitive-lock candidate is d_sw = F_TRZ² = 0.01 EXACT
+  (predecessor PAPER_2139 canonized the F_TRZ-ladder quartet
+  {F_TRZ², F_TRZ⁴, F_TRZ¹⁰, F_TRZ¹²}, so F_TRZ² has standing
+  precedent). Same number, two routes — which is canonical?
+  (b) ALPHA_CR UNSTATED: the compression chain
+  rho_helio/rho_sw = 1 + Ug2·1.01/P_ram "≈ 1.01" closes ONLY
+  if alpha_CR = 1.02e26, which appears nowhere in the paper;
+  as printed the chain conflates the d_sw 1 pct with the
+  Ug2/P_ram ratio. Provide alpha_CR or restate the compression
+  as directly 1 + d_sw.
+  (c) Footer exponent: chain kappa·(1 AU/400 km/s) = 2.16e-3
+  vs printed 3.2e-3 (conclusion ≈ 0.57 robust either way).
+- **Notable:** everything checkable verifies EXACT (Ug2
+  coefficient 9.79e-38, P_ram = 1e-9 Pa, PSP mean error 1.70
+  pct); Voyager 3-4x shock compression honestly reconciled as
+  a scope carve-out (d_sw is pre-shock sub-threshold only).
+- **Best-candidate wired:** F_TRZ² primitive route exposed
+  alongside the paper's SSq/57; implied alpha_CR pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

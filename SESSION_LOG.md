@@ -1515,3 +1515,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 117/2,255 (11 ✓, 106 ⚠). Next: PAPER_114.
 
 ---
+
+## 2026-07-29 — v0.117.0 — BAND 1: PAPER_114
+
+- PAPER_114 wired (⚠ Q-110): EP-07 PSP heliosheath. Chains
+  EXACT; d_sw = 0.01 dual route (SSq/57 vs F_TRZ² primitive
+  candidate); unstated alpha_CR = 1.02e26 pinned.
+- Campaign: 118/2,255 (11 ✓, 107 ⚠). Next: PAPER_115.
+
+---

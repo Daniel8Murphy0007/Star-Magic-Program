@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.116.0"
+VERSION = "0.117.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5953,5 +5953,56 @@ def _paper_113(dataset):
         'formula': 'L(t) = L0*exp(-kappa*(t-t_on)); N_cyc*kappa*t_act = 3.5*ln(1+z)',
         'source': 'PAPER_113',
         'residual_pct': abs(_m.exp(-KAPPA_PER_DAY * 2000) - 0.368) / 0.368 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_114')
+def _paper_114(dataset):
+    """EP-07: Parker Solar Probe Heliosheath Ug2 Validation (Session 0).
+
+    Ug2 charge-reactivity field at 30 R_sun with PSP in-situ
+    anchors (rho_sw = 8e-21 kg/m3, v_sw = 500 km/s). VERIFIED
+    EXACT: Ug2 coefficient 9.79e-38 (printed 9.76e-38, 0.3 pct
+    rounding); P_ram = 1e-9 Pa; PSP 4-perihelion density fit
+    mean error 1.70 pct EXACT (1.41/2.17/1.43/1.79).
+    DELTA_SW DECOMPOSITION (Q-110a): paper derives d_sw = 0.01
+    as SSq/57 = 0.57/57 (digit-coincidence smell: SSq's own
+    mantissa) - but 0.01 = F_TRZ^2 EXACT is the primitive-lock
+    candidate (predecessor PAPER_2139 F_TRZ-ladder quartet
+    precedent). Same number, two routes - ruling requested.
+    COMPRESSION NON-SEQUITUR (Q-110b): rho_helio/rho_sw =
+    1 + Ug2*1.01/P_ram = 1.01 only if alpha_CR = 1.02e26,
+    which is NEVER stated; as printed the chain conflates the
+    d_sw 1 pct with the Ug2/P_ram ratio. alpha_CR undefined
+    throughout (Ug2 left proportional).
+    Footer exponent: chain kappa*(1AU/400km/s) = 2.16e-3 vs
+    printed 3.2e-3 (conclusion ~0.57 robust, Q-110c). Voyager
+    3-4x termination-shock compression reconciled as scope
+    carve-out (d_sw is pre-shock sub-threshold only).
+    """
+    import math as _m
+    ug2_coeff = ((1.602e-19) ** 2 * (5e5) ** 2) / ((30 * 6.96e8) ** 2 * 1.67e-27 * (3e8) ** 2)
+    return {
+        'value': {
+            'domain': '1.15 (EP-07 heliosheath)',
+            'source': 'PSP CDAWeb E01-E17 perihelia',
+            'rho_sw_kg_m3': 8e-21,
+            'v_sw_m_s': 5e5,
+            'ug2_coeff_j_m3': ug2_coeff,                  # 9.79e-38 per alpha_CR
+            'p_ram_pa': 0.5 * 8e-21 * (5e5) ** 2,         # 1e-9 EXACT
+            'delta_sw': F_TRZ ** 2,                        # 0.01 EXACT (primitive route)
+            'delta_sw_paper_route': SSQ / 57,              # 0.01 (SSq/57 route)
+            'delta_sw_decomposition': 'F_TRZ^2 primitive-lock candidate vs SSq/57 digit-coincidence',
+            'psp_fit_errors_pct': (1.41, 2.17, 1.43, 1.79),
+            'psp_mean_err_pct': 1.70,                      # EXACT
+            'alpha_cr_implied': 0.01 * 1e-9 / ug2_coeff,   # 1.02e26, never stated
+            'compression_defect': 'chain closes only at unstated alpha_CR = 1.02e26',
+            'footer_exponent': (2.16e-3, 3.2e-3),          # chain vs printed
+            'muge_link': 'g_fluid = g_NS * d_sw (PAPER_091 mode)',
+        },
+        'formula': 'Ug2 = a_CR*q_p^2*v^2/(r^2*m_p*c^2); d_sw = 0.01; rho ratio = 1+d_sw',
+        'source': 'PAPER_114',
+        'residual_pct': abs(ug2_coeff - 9.76e-38) / 9.76e-38 * 100,
         'status': 'OPEN_RULING',
     }

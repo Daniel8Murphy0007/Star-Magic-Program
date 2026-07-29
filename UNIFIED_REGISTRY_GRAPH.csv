@@ -640,3 +640,8 @@ primitive,KAPPA_PER_DAY,observable,ep05_blazar_decay,third kappa domain
 observable,ep05_blazar_decay,paper,PAPER_094,kappa origin cross-ref
 observable,ep05_cta102_factor10,paper,PAPER_113,factor-10 error
 observable,ep05_cta102_factor10,paper,PAPER_089,footer recurrence
+observable,ep07_heliosheath_ug2,paper,PAPER_114,Ug2 testbed
+observable,ep07_heliosheath_ug2,paper,PAPER_091,MUGE fluid mode
+primitive,F_TRZ,observable,ep07_delta_sw_decomposition,F_TRZ^2 candidate
+primitive,SSQ,observable,ep07_delta_sw_decomposition,SSq/57 paper route
+observable,ep07_delta_sw_decomposition,paper,PAPER_114,dual decomposition

@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.117.0] — 2026-07-29 — BAND 1: PAPER_114 — d_sw DUAL ROUTE
+
+### Added
+- **PAPER_114 dispatch** (EP-07: Parker Solar Probe Heliosheath
+  Ug2): PSP in-situ anchors (8e-21 kg/m3, 500 km/s). VERIFIED
+  EXACT: Ug2 coefficient 9.79e-38 per alpha_CR; P_ram = 1e-9
+  Pa; PSP 4-perihelion fit mean 1.70%. d_sw = 0.01 DUAL
+  DECOMPOSITION: paper's SSq/57 (divides SSq by its own
+  mantissa — coincidence smell) vs F_TRZ² = 0.01 EXACT
+  primitive-lock candidate (PAPER_2139 F_TRZ-ladder precedent).
+  Compression chain closes only at unstated alpha_CR = 1.02e26.
+  Footer exponent 2.16e-3 vs 3.2e-3 (robust). MUGE g_fluid
+  mode link (PAPER_091).
+- OPEN_RULING Q-110.
+- Gate: 805 assertions, 0 failures. Registry: 308 rows / 645 edges / 118 ledgers.
+
+---
+
 ## [0.116.0] — 2026-07-29 — BAND 1: PAPER_113 — CTA 102 FACTOR-10
 
 ### Added

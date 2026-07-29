@@ -1,29 +1,28 @@
-v0.116.0 BAND 1: PAPER_113 wired - EP-05 CTA 102 FACTOR-10 INVERSION
+v0.117.0 BAND 1: PAPER_114 wired - EP-07 d_sw = F_TRZ^2 CANDIDATE
 
-PAPER_113 EP-05 Fermi-LAT 4LAC Blazar E_react Decay (OPEN_RULING
-Q-109):
-  E_react = 1e46 J * exp(-kappa t) - kappa's THIRD independent
-  domain (GW damping PAPER_094 + MCMC PAPER_063 + blazar
-  population).
+PAPER_114 EP-07 Parker Solar Probe Heliosheath Ug2 (OPEN_RULING
+Q-110):
+  Ug2 charge-reactivity testbed at 30 R_sun, PSP CDAWeb anchors
+  (rho_sw = 8e-21 kg/m3, v_sw = 500 km/s).
 
-  CANONICAL CHAINS EXACT: flare fraction e^-1 = 0.368 at 2000
-  days; N_cycles = 2.426 per e-fold at z=1; 4LAC bin totals
-  3,743 obs / 3,704 pred = 1.04 pct.
+  VERIFIED EXACT: Ug2 coefficient 9.79e-38 per alpha_CR (printed
+  9.76e-38, rounding); P_ram = 1e-9 Pa; PSP 4-perihelion density
+  fit mean error 1.70 pct (1.41/2.17/1.43/1.79).
 
-  FACTOR-10 ARITHMETIC ERROR: the paper's own CTA 102 division
-  ln(2.1/0.47)/562 = 1.497/562 = 2.66e-3/day, PRINTED 2.66e-4.
-  Sanity: at the printed kappa L(562) = 1.81, not the observed
-  0.47. Per-segment kappas (3.3/2.5/2.4 e-3) confirm single-
-  exponential at the chain value. Corrected CTA 102 is 5.3x
-  ABOVE canonical - the printed "factor 1.88 below" extreme-
-  flare reconciliation INVERTS. The unshown 50-AGN mean
-  (4.97e-4/day) is now the sole numerical support for the
-  "kappa confirmed to 5 pct" headline - data requested.
+  D_SW DUAL DECOMPOSITION: the paper derives d_sw = 0.01 as
+  SSq/57 = 0.57/57 - dividing SSq by its own mantissa digits
+  (coincidence smell). The primitive-lock candidate is
+  d_sw = F_TRZ^2 = 0.01 EXACT, with standing precedent from the
+  predecessor F_TRZ-ladder quartet (PAPER_2139). Same number,
+  two routes - ruling requested.
 
-  Lookback t(z=0.1) 1000x label slip (4.75e11 days chain vs
-  4.75e8 printed; e^-kt ~ 0 conclusion robust). 089-footer
-  recurs (Q-085a template).
+  ALPHA_CR UNSTATED: the density-compression chain closes only
+  at alpha_CR = 1.02e26, which appears nowhere in the paper.
 
-Q-109 queued. Gate 799 assertions 0 failures. Registry 306 rows /
-640 edges / 117 citation ledgers. Wired 117/2,255 (11 clean, 106
-OPEN_RULING). Next: PAPER_114.
+  Footer exponent chain 2.16e-3 vs printed 3.2e-3 (conclusion
+  robust). Voyager 3-4x shock compression honestly carved out
+  as post-shock scope.
+
+Q-110 queued. Gate 805 assertions 0 failures. Registry 308 rows /
+645 edges / 118 citation ledgers. Wired 118/2,255 (11 clean, 107
+OPEN_RULING). Next: PAPER_115.
