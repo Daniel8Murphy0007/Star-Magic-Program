@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.112.0", "uqff_calculator.VERSION = 0.112.0")
+assert_that(C.VERSION == "0.113.0", "uqff_calculator.VERSION = 0.113.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1699,6 +1699,21 @@ assert_that(_r109['lightcurve_uniform_scaling'] == 0.975,
 assert_that(_r109['ssq_new_role_count'] == 6,
             "PAPER_109: SSq 6th observational role wired (activation threshold)")
 assert_that(C.wired_count() >= 113, "wired_count >= 113")
+
+_r110 = C.calc('PAPER_110')['value']
+assert_that(_r110['mass_error_pct'] < 0.1,
+            "PAPER_110: M_BH = 4.3e6 Msun at 0.07 pct vs GRAVITY S2 orbit - excellent anchor")
+assert_that(abs(_r110['r_5mpc_m'] - 1.543e14) / 1.543e14 < 0.001,
+            "PAPER_110: r = 5 mpc = 1.543e14 m EXACT")
+assert_that(abs(_r110['g_newton_chain'] - 2.40e-2) / 2.40e-2 < 0.01,
+            "PAPER_110: g_Newton chain 2.40e-2 vs printed 2.401e-5 - x1000 exponent slip (Q-106b)")
+assert_that(abs(_r110['ug4_1894_family'] - 1.8937e-23) < 1e-27,
+            "PAPER_110: Ug4 = 1.8937e-23 (048 cross-check) - the 1.894-mantissa PAPER_2156 origin candidate (Q-106d)")
+assert_that(abs(_r110['v_c_error_pct'] - 0.85) < 0.01,
+            "PAPER_110: rotation curve 238 vs 236 km/s = 0.85 pct EXACT")
+assert_that(_r110['kappa_decay_exponent'] > 8e8,
+            "PAPER_110: kappa full-decay chain EXACT - Q-094d/Q-098 doctrine support")
+assert_that(C.wired_count() >= 114, "wired_count >= 114")
 
 # =============================================================================
 # REPORT

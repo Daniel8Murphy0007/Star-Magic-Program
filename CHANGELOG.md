@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.113.0] — 2026-07-29 — BAND 1: PAPER_110 — 1.894 ORIGIN CANDIDATE
+
+### Added
+- **PAPER_110 dispatch** (EP-06: Gaia SgrA* Distance/Mass):
+  anchors — M_BH = 4.3e6 M_sun at 0.07 pct vs GRAVITY S2 orbit;
+  rotation curve 238 vs 236 km/s = 0.85 pct EXACT; kappa
+  full-decay chain EXACT at 4.5 Gyr (3rd corpus data point for
+  the kappa field-vs-cosmology doctrine). THREE-WAY d_g conflict
+  pinned (2.44/2.55/2.62e20 m). **MAJOR CROSS-REPO FORENSIC:**
+  Ug4(Sun-SgrA*) = 1.8937e-23 N/m2 (PAPER_048 cross-check EXACT)
+  carries the 1.894 MANTISSA of the predecessor Star-Magic
+  corpus's unknown-origin VDS artifact (PAPER_2156 open item) —
+  the strongest origin candidate found to date; no canonization
+  without derivation. Defects: g_Newton x1000 exponent slip
+  (mantissa matches); eps_UQFF chain 16 orders from print
+  (conclusion robust).
+- OPEN_RULING Q-106.
+- Gate: 780 assertions, 0 failures. Registry: 300 rows / 625 edges / 114 ledgers.
+
+---
+
 ## [0.112.0] — 2026-07-29 — BAND 1: PAPER_109 — EP-11 TRI-SOURCE CLOSED
 
 ### Added

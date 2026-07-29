@@ -620,3 +620,8 @@ primitive,SSQ,observable,ep11_gw170817_beta_i_boundary,activation threshold
 observable,ep11_gw170817_beta_i_boundary,paper,PAPER_108,tri-source leg 3
 observable,kilonova_lightcurve_uniform_defect,paper,PAPER_109,LC defect
 observable,kilonova_lightcurve_uniform_defect,paper,PAPER_037,F_kn cross-ref
+observable,ep06_gaia_sgra_anchors,paper,PAPER_110,Gaia anchors
+primitive,KAPPA_PER_DAY,observable,ep06_gaia_sgra_anchors,full-decay chain
+observable,ep06_gaia_sgra_anchors,paper,PAPER_092,d_g conflict family
+observable,ug4_1894_origin_candidate,paper,PAPER_110,1.894 forensic
+observable,ug4_1894_origin_candidate,paper,PAPER_048,exact cross-check

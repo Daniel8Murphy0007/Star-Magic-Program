@@ -2012,6 +2012,33 @@ RESOLVED section with the ruling recorded.
   uniform-scaling flag.
 - **Daniel's ruling:** (pending)
 
+### Q-106 — PAPER_110 EP-06 — d_g three-way + 1.894 origin candidate + slips
+- **Question:** (a) THREE SgrA* distances now in the corpus:
+  EP-06 calibration 2.44e20 m (7.91 kpc), Gaia DR3 2.55e20
+  (8.28 kpc), SOURCE4/066/086 2.62e20 (8.49 kpc) - bracketing
+  Gaia by +/-4 pct; pin the canonical d_g for all SgrA* wiring?
+  (b) g_Newton at 5 mpc: chain 2.40e-2 m/s2 (r = 1.543e14 m
+  EXACT), printed 2.401e-5 - mantissa matches, x1000 exponent
+  slip. (c) eps_UQFF (S2 precession correction): chain 7.9e-22
+  vs printed 6.3e-6 - 16 orders apart; the undetectability
+  conclusion is ROBUST under both readings.
+  (d) MAJOR CROSS-REPO FORENSIC: Ug4(Sun-SgrA*) = 1.8937e-23
+  N/m2 (PAPER_048 cross-check EXACT) carries the 1.894 MANTISSA
+  of the predecessor Star-Magic corpus's unknown-origin VDS
+  artifact (PAPER_2156 open item: "origin of 9.47e-27/5.0e-27
+  densities and the 1.894 ratio unknown"). This is the strongest
+  origin candidate found to date. Per the no-retrofit rule, NO
+  canonization without a derivation - but should this candidate
+  be annotated into the predecessor repo's open-item ledger?
+- **Notable:** M_BH 0.07 pct anchor (excellent); rotation curve
+  0.85 pct EXACT; kappa full-decay chain EXACT (accepting
+  complete field decay and letting Ug4+MUGE dominate - a third
+  corpus data point for the kappa field-vs-cosmology doctrine,
+  after 087's viscous and 098's cosmological resolutions).
+- **Best-candidate wired:** anchors + doctrine support + 1.894
+  candidate flagged; three-way distance carried.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

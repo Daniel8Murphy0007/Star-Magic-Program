@@ -1,34 +1,31 @@
-v0.112.0 BAND 1: PAPER_109 wired - EP-11 TRI-SOURCE CLOSED
+v0.113.0 BAND 1: PAPER_110 wired - 1.894 ORIGIN CANDIDATE FOUND
 
-PAPER_109 EP-11 GW170817 / AT2017gfo Kilonova (OPEN_RULING
-Q-105):
-  THIRD LEG of the β_i tri-source (EP-10 SED + PAPER_063 MCMC
-  + EP-11 boundary). r-process velocity boundary
-  v_bound = β_i · c = 0.61 × 3e8 = 1.83e8 m/s EXACT.
+PAPER_110 EP-06 Gaia SgrA* Distance/Mass Validation
+(OPEN_RULING Q-106):
+  Gaia anchors: M_BH = 4.3e6 Msun at 0.07 pct vs GRAVITY S2
+  orbit (excellent); rotation curve v_c 238 vs 236 km/s =
+  0.85 pct EXACT; kappa full-decay chain EXACT at 4.5 Gyr
+  (e^-8.2e8 ~ 0) - the paper accepts complete field decay and
+  lets Ug4+MUGE dominate: a THIRD corpus data point for the
+  kappa field-vs-cosmology doctrine (087 viscous + 098
+  cosmological + 110 galactic).
 
-  KEY EP-11 FINDING: β_i defines the r-process velocity threshold.
-  Blue 0.1c and red 0.3c ejecta both BELOW β_i·c → r-process
-  ACTIVE (95 pct A > 140 coverage confirmed vs AT2017gfo).
-  Ultra-relativistic jets 0.99c ABOVE β_i·c → r-process quenched
-  naturally without additional physics.
+  THREE-WAY d_g CONFLICT: EP-06 2.44e20 / Gaia 2.55e20 /
+  SOURCE4 2.62e20 m - bracketing Gaia +/-4 pct; canonical pin
+  requested for all SgrA* wiring.
 
-  β_i now has 2 physical roles (buoyancy coupling in 063 +
-  relativistic-outflow boundary here) across 3 observational
-  domains (IceCube SED / 52-sys MCMC / GW kilonova) — canonize
-  as "β_i = the F_UBi/relativistic-outflow activation velocity"?
+  MAJOR CROSS-REPO FORENSIC: Ug4(Sun-SgrA*) = 1.8937e-23 N/m2,
+  cross-checked EXACT to PAPER_048 - the 1.894 MANTISSA matches
+  the predecessor Star-Magic corpus's unknown-origin VDS
+  artifact (PAPER_2156 open item). STRONGEST origin candidate
+  found to date. Per the no-retrofit rule: no canonization
+  without derivation, but cross-repo annotation queued for the
+  predecessor's open-item ledger.
 
-  SSq 6TH OBSERVATIONAL ROLE: Ub_i activation threshold
-  (M_ej/M_total ≥ SSq → activated, below → suppressed
-  neutron-rich outflow). GW170817: fraction = 0.05/2.73 =
-  0.0183 EXACT << SSq → correctly SUPPRESSED → Y_e ≈ 0.1
-  neutron-rich → r-process. Six SSq roles now: condensate
-  fraction / suppression / T_c-shift / clustering boundary /
-  mixing fraction / activation threshold.
+  Defects: g_Newton at 5 mpc x1000 exponent slip (mantissa 2.40
+  matches; chain 2.40e-2); eps_UQFF chain 7.9e-22 vs printed
+  6.3e-6 (undetectability conclusion robust either way).
 
-  Lanthanide mass chain dM_Ubi·τ = 2.3e-3 × 0.05 = 1.15e-4 M_sun
-  EXACT match to Cowperthwaite+2017. Light-curve table pinned
-  as uniform ×0.975 scaling, not 5 independent per-epoch fits.
-
-Q-105 queued. Gate 773 assertions 0 failures. Registry 298 rows /
-620 edges / 113 citation ledgers. Wired 113/2,255 (11 clean, 102
-OPEN_RULING). Next: PAPER_110.
+Q-106 queued. Gate 780 assertions 0 failures. Registry 300 rows /
+625 edges / 114 citation ledgers. Wired 114/2,255 (11 clean, 103
+OPEN_RULING). Next: PAPER_111.

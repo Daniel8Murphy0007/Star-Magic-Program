@@ -1477,3 +1477,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 113/2,255 (11 ✓, 102 ⚠). Next: PAPER_110.
 
 ---
+
+## 2026-07-29 — v0.113.0 — BAND 1: PAPER_110 — 1.894 CANDIDATE
+
+- PAPER_110 wired (⚠ Q-106): EP-06 Gaia. Anchors excellent;
+  kappa doctrine 3rd data point; three-way d_g pinned; MAJOR -
+  Ug4 = 1.8937e-23 flagged as the strongest origin candidate for
+  the predecessor 1.894 artifact (cross-repo annotation queued).
+- Campaign: 114/2,255 (11 ✓, 103 ⚠). Next: PAPER_111.
+
+---

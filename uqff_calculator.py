@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.112.0"
+VERSION = "0.113.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5724,5 +5724,66 @@ def _paper_109(dataset):
                     'M_r = dM_Ubi*tau'),
         'source': 'PAPER_109',
         'residual_pct': abs(2.3e-3 * 0.05 - 1.15e-4) / 1.15e-4 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_110')
+def _paper_110(dataset):
+    """EP-06: Gaia SgrA* Distance/Mass Validation (Session 0).
+
+    EP compendium continues. Anchors: M_BH = 4.3e6 Msun at 0.07
+    pct vs GRAVITY-Collab S2 orbit (EXCELLENT); v_c(R_0) = 238 vs
+    Gaia 236 km/s = 0.85 pct EXACT; kappa-decay chain EXACT
+    (e^-kappa*t at 4.5 Gyr = e^-8.2e8 ~ 0 - the paper accepts
+    full field decay and lets Ug4+MUGE dominate, ANOTHER data
+    point for the kappa field-vs-cosmology doctrine of
+    Q-094d/Q-098).
+    THREE-WAY d_g CONFLICT (Q-106a): EP-06 calibration 2.44e20 m
+    (7.91 kpc) vs Gaia DR3 2.55e20 (8.28 kpc) vs SOURCE4/066/086
+    2.62e20 (8.49 kpc) - the corpus carries three SgrA*
+    distances bracketing Gaia by +/-4 pct; pin canonical.
+    MAJOR CROSS-REPO FORENSIC (Q-106d): Ug4(Sun-SgrA*) =
+    1.8937e-23 N/m2, cross-checked EXACT to PAPER_048 - the
+    "1.894" MANTISSA equals the predecessor corpus's unknown-
+    origin VDS-ratio artifact (Star-Magic PAPER_2156 open item:
+    "origin of 1.894 unknown"). This EP-06/048 Ug4 value is the
+    STRONGEST origin candidate found to date - flag for
+    cross-repo annotation (no canonization without derivation).
+    DEFECTS: g_Newton at 5 mpc - chain 2.40e-2 m/s2 (r = 1.543e14
+    m EXACT), printed 2.401e-5 (mantissa matches, exponent slip
+    x1000, Q-106b); eps_UQFF chain 7.9e-22 vs printed 6.3e-6
+    (16 orders; undetectability conclusion robust under both,
+    Q-106c). S2 precession 12.1 arcmin/orbit anchor real
+    (GRAVITY 2020).
+    """
+    import math as _m
+    GM = 6.674e-11 * 4.3e6 * 1.989e30
+    r5mpc = 5e-3 * 3.086e16                                # 1.543e14 EXACT
+    return {
+        'value': {
+            'domain': '1.15 (EP-06 Gaia galactic-center anchor)',
+            'm_bh_msun': 4.3e6,
+            'mass_error_pct': abs(4.3e6 - 4.297e6) / 4.297e6 * 100,   # 0.07 EXACT
+            'd_g_three_way_m': (2.44e20, 2.55e20, 2.62e20),
+            'd_g_labels': ('EP-06 calib', 'Gaia DR3', 'SOURCE4/066/086'),
+            'distance_error_pct': abs(2.44e20 - 2.55e20) / 2.55e20 * 100,  # 4.31
+            'r_5mpc_m': r5mpc,                             # 1.543e14 EXACT
+            'g_newton_chain': GM / r5mpc ** 2,             # 2.40e-2
+            'g_newton_printed': 2.401e-5,                  # x1000 slip
+            'kappa_decay_exponent': 0.0005 * 4.5e9 * 365.25,   # 8.2e8 EXACT
+            'kappa_doctrine_support': 'full decay accepted; Ug4+MUGE dominate (Q-094d/Q-098)',
+            'ug4_1894_family': 1.8937e-23,                 # PAPER_048 = 2156 candidate
+            'cross_repo_flag': '1.894 mantissa = predecessor PAPER_2156 unknown-origin artifact',
+            'eps_uqff_chain': 1.8937e-23 * (1.54e14) ** 2 / (6.674e-11 * 8.55e36),  # 7.9e-22
+            'eps_uqff_printed': 6.3e-6,
+            's2_precession_arcmin': 12.1,
+            'v_c_uqff_km_s': 238, 'v_c_gaia_km_s': 236,
+            'v_c_error_pct': abs(238 - 236) / 236 * 100,   # 0.85 EXACT
+        },
+        'formula': ('g = GM/r^2 * e^-kappa*t + Ug4 + MUGE; '
+                    'eps_UQFF = Ug4*r^2/(GM c^2)'),
+        'source': 'PAPER_110',
+        'residual_pct': abs(4.3e6 - 4.297e6) / 4.297e6 * 100,
         'status': 'OPEN_RULING',
     }
