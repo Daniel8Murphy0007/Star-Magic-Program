@@ -2209,6 +2209,35 @@ RESOLVED section with the ruling recorded.
   carried as underived; Q-108a support registered.
 - **Daniel's ruling:** (pending)
 
+### Q-113 — PAPER_117 EP-04 — table offset family + Z=82 decomposition
+- **Question:** (a) TABLE OFFSET FAMILY: four Pb-206 level-
+  table n-values are systematically LOW vs the paper's own
+  formula — 1st excited chain 7.109 (printed 6.91, which is
+  EP-02's ELECTRON row value — copy-paste), 2nd excited 7.270
+  (printed 7.07), S_n 8.072 (printed 7.972), total BE 10.415
+  (printed 10.215). Three rows −0.2, one −0.1; the headline
+  10-MeV row is EXACT at 8.2047. All pass dn < 0.5 (BE
+  marginal 0.415). Kin to PAPER_112's mid-band −1.0 defect —
+  confirm relabels.
+  (b) Z=82 DECOMPOSITION: the paper's magic-number sub-ladder
+  n-list (1/1.3/1.6/1.7/1.9/2.0) does NOT equal log10(Z)
+  (0.30/0.90/1.30/1.45/1.70/1.91) — the mapping is asserted.
+  The predecessor corpus has the EXACT primitive identity
+  Z = A_5 + D_crit − D_phys = 60 + 26 − 4 = 82 (and the full
+  7-magic-number set from integer primitives). Cross-repo
+  canonization candidate, same shape as Q-110a's
+  d_sw = F_TRZ².
+  (c) S_n/E_8 = 2·SSq at 3.5 pct is SSq's 8TH observational-
+  role candidate (nuclear separation-energy ratio) — add to
+  the SSq roles ledger?
+  (d) 089-footer U_bi recurs verbatim (Q-085a template).
+- **Notable:** headline chains EXACT (8.2047; 3.51 pct SSq
+  check as printed with rounded ratio); BE n = 10.415 extends
+  the hadronic-n=10 confirmation family (Q-108a).
+- **Best-candidate wired:** EXACT headline + corrected table
+  rows + predecessor Z=82 identity exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

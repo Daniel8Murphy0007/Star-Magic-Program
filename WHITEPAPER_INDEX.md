@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 120 (11 ✓, 109 ⚠ OPEN_RULING)
+- **Wired:** 121 (11 ✓, 110 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2135
+- **Not yet touched:** 2134
 
 ---
 
@@ -343,7 +343,7 @@
 | ⬜ | PAPER_1177 | UQFF 2027 Joint Falsifier Triple |
 | ⬜ | PAPER_1178 | UQFF P13 DESI Y5 w Second Derivative |
 | ⬜ | PAPER_1179 | UQFF 2027 2028 Quadruple Falsifier |
-| ⬜ | PAPER_117 | EP04 ENSDF Pb206 BindingLadder Proof |
+| ⚠ | PAPER_117 | EP04 ENSDF Pb206 BindingLadder Proof |
 | ⬜ | PAPER_1180 | UQFF P14 CMB S4 mu Distortion |
 | ⬜ | PAPER_1181 | Gap Verification Um Heaviside JobB Scope |
 | ⬜ | PAPER_1181 | UQFF Grand Unification S266 S295 Thirty Closures |

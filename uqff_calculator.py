@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.119.0"
+VERSION = "0.120.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6117,5 +6117,61 @@ def _paper_116(dataset):
         'formula': 'E_n = 10^(n-20) J; n = log10(E/1e-20); Coupling_n = SSq*n/4',
         'source': 'PAPER_116',
         'residual_pct': abs(_m.log10(1.6e4) - 4.204) / 4.204 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_117')
+def _paper_117(dataset):
+    """EP-04: ENSDF Pb-206 Binding Ladder n=8 + Z=82 (Session 0).
+
+    Nuclear rung of the PAPER_112/116 ladder. VERIFIED EXACT:
+    E_8 = 1e-12 J = 6.2415 MeV; headline n(10 MeV) = 8.2047
+    (printed 8.205); S_n/E_8 = 1.1803 with 2*SSq = 1.14 at
+    3.51 pct (printed EXACT with rounded ratio) - SSq's 8TH
+    observational-role candidate (nuclear separation-energy
+    ratio).
+    TABLE OFFSET FAMILY (Q-113a): four level-table rows are
+    systematically LOW vs the chain - 1st excited 7.109
+    (printed 6.91, which is EP-02's ELECTRON value), 2nd
+    excited 7.270 (printed 7.07), S_n 8.072 (printed 7.972),
+    total BE 10.415 (printed 10.215). Three rows -0.2, one
+    -0.1. All still pass dn < 0.5 (BE marginal at 0.415).
+    Kin to PAPER_112's mid-band -1.0 defect.
+    Z=82 SUB-LADDER (Q-113b): the paper's magic-number n-list
+    (1/1.3/1.6/1.7/1.9/2.0) does NOT equal log10(Z)
+    (0.30/0.90/1.30/1.45/1.70/1.91) - asserted mapping. The
+    predecessor EXACT identity Z = A_5 + D_crit - D_phys =
+    60 + 26 - 4 = 82 is the primitive-locked alternative
+    (cross-repo candidate, like d_sw = F_TRZ^2).
+    BE n = 10.415 continues the hadronic-n=10 confirmation
+    family (Q-108a). 089-footer recurs (Q-085a template).
+    """
+    import math as _m
+    MeV = 1.602176634e-13
+    lvl = lambda E: _m.log10(E / 1e-20)
+    return {
+        'value': {
+            'domain': '1.15 (EP-04 nuclear ladder)',
+            'source': 'ENSDF/NNDC Pb-206 (Z=82, N=124, AME 2020)',
+            'e8_mev': 1e-12 / MeV,                            # 6.2415 EXACT
+            'n_10mev': lvl(10 * MeV),                         # 8.2047 EXACT
+            'sn_over_e8': 7.367 * MeV / 1e-12,                # 1.1803
+            'two_ssq': 2 * SSQ,                               # 1.14
+            'ssq_err_pct': abs(7.367 * MeV / 1e-12 - 2 * SSQ) / (2 * SSQ) * 100,  # 3.54
+            'ssq_role': '8th observational-role candidate: S_n/E_8 = 2*SSq nuclear',
+            'n_1st_exc_chain': lvl(0.803 * MeV),              # 7.109 vs printed 6.91
+            'n_2nd_exc_chain': lvl(1.162 * MeV),              # 7.270 vs printed 7.07
+            'n_sn_chain': lvl(7.367 * MeV),                   # 8.072 vs printed 7.972
+            'n_be_chain': lvl(1622.3 * MeV),                  # 10.415 vs printed 10.215
+            'offset_family': 'three rows -0.2, one row -0.1; headline row EXACT',
+            'printed_691_is_ep02_electron': True,
+            'z82_identity_predecessor': 60 + 26 - 4,          # A_5 + D_crit - D_phys = 82
+            'z82_paper_route': 'Z = 10^1.914 asserted; sub-ladder n-list not log10(Z)',
+            'footer_recurrence': '089 broken U_bi footer (Q-085a)',
+        },
+        'formula': 'n = log10(E/1e-20); S_n/E_8 = 2*SSq; Z_magic = A_5 + D_crit - D_phys',
+        'source': 'PAPER_117',
+        'residual_pct': abs(lvl(10 * MeV) - 8.205) / 8.205 * 100,
         'status': 'OPEN_RULING',
     }

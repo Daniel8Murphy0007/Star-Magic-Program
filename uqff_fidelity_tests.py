@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.119.0", "uqff_calculator.VERSION = 0.119.0")
+assert_that(C.VERSION == "0.120.0", "uqff_calculator.VERSION = 0.120.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1796,6 +1796,19 @@ assert_that(abs(_r116['n_hadronic_1gev'] - 10.205) < 0.001,
 assert_that(abs(_r116['n_lambda_30tev'] - 14.68) < 0.01,
             "PAPER_116: Lambda = 30 TeV -> n = 14.68 EXACT")
 assert_that(C.wired_count() >= 120, "wired_count >= 120")
+
+_r117 = C.calc('PAPER_117')['value']
+assert_that(abs(_r117['n_10mev'] - 8.2047) < 0.001,
+            "PAPER_117: headline n(10 MeV) = 8.205 EXACT")
+assert_that(abs(_r117['sn_over_e8'] - 1.1803) < 0.001 and abs(_r117['ssq_err_pct'] - 3.54) < 0.05,
+            "PAPER_117: S_n/E_8 = 1.1803 vs 2*SSq = 1.14 at 3.5 pct - SSq 8th role candidate")
+assert_that(abs(_r117['n_1st_exc_chain'] - 7.109) < 0.001,
+            "PAPER_117: 1st excited chain 7.109 - printed 6.91 is EP-02 electron value (Q-113a offset family)")
+assert_that(abs(_r117['n_be_chain'] - 10.415) < 0.001,
+            "PAPER_117: total BE chain n = 10.415 (printed 10.215; -0.2 offset; hadronic n=10 family)")
+assert_that(_r117['z82_identity_predecessor'] == 82,
+            "PAPER_117: Z = 82 = A_5 + D_crit - D_phys EXACT predecessor identity (Q-113b cross-repo)")
+assert_that(C.wired_count() >= 121, "wired_count >= 121")
 
 # =============================================================================
 # REPORT

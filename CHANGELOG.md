@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.120.0] — 2026-07-29 — BAND 1: PAPER_117 — Z=82 PRIMITIVE IDENTITY
+
+### Added
+- **PAPER_117 dispatch** (EP-04: ENSDF Pb-206 nuclear ladder
+  n=8): headline n(10 MeV) = 8.2047 EXACT; S_n/E_8 = 1.1803 vs
+  2·SSq = 1.14 at 3.5% — SSq's 8th observational-role candidate
+  (nuclear separation-energy ratio). TABLE OFFSET FAMILY: four
+  rows −0.2/−0.1 low vs the chain, including printed 6.91 which
+  is EP-02's ELECTRON value (copy-paste); headline row EXACT.
+  Z=82: the paper's sub-ladder n-list is asserted (≠ log10 Z);
+  the predecessor EXACT identity Z = A_5 + D_crit − D_phys = 82
+  exposed as primitive-locked alternative (cross-repo, same
+  shape as d_sw = F_TRZ²). BE n = 10.415 extends hadronic-n=10
+  family.
+- OPEN_RULING Q-113.
+- Gate: 824 assertions, 0 failures. Registry: 314 rows / 659 edges / 121 ledgers.
+
+---
+
 ## [0.119.0] — 2026-07-29 — BAND 1: PAPER_116 — SELF-RECTIFICATION No. 8
 
 ### Added

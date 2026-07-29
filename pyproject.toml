@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.119.0"
-description = "UQFF Star-Magic-Program v0.119.0: PAPER_116 wired - EP-03 LHC ladder n=4 (E_4 = 624 eV + ATLAS 4.204 + CMS 4.173 EXACT; 1-keV anchor underived from Lambda 30 TeV; hadronic row n=10.204 CONFIRMS PAPER_112 Q-108a correction - self-rectification No. 8; E_4 adjacent to Holmlid 630 eV family). Q-112 queued. Wired 120/2255, gate 818/0. Registry 312 rows / 654 edges / 120 ledgers."
+version = "0.120.0"
+description = "UQFF Star-Magic-Program v0.120.0: PAPER_117 wired - EP-04 ENSDF Pb-206 nuclear ladder (headline n = 8.2047 EXACT; S_n/E_8 = 2*SSq at 3.5 pct - SSq 8th role candidate; table offset family found with EP-02 electron copy-paste; Z = 82 = A_5+D_crit-D_phys EXACT predecessor identity vs asserted 10^1.914). Q-113 queued. Wired 121/2255, gate 824/0. Registry 314 rows / 659 edges / 121 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

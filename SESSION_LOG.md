@@ -1544,3 +1544,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 120/2,255 (11 ✓, 109 ⚠). Next: PAPER_117.
 
 ---
+
+## 2026-07-29 — v0.120.0 — BAND 1: PAPER_117
+
+- PAPER_117 wired (⚠ Q-113): EP-04 Pb-206 nuclear ladder.
+  Headline EXACT; SSq 8th role candidate; table offset family
+  (incl. EP-02 electron copy-paste); Z=82 predecessor primitive
+  identity exposed.
+- Campaign: 121/2,255 (11 ✓, 110 ⚠). Next: PAPER_118.
+
+---

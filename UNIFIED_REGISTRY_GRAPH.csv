@@ -654,3 +654,8 @@ observable,ep03_ladder_n4,paper,PAPER_116,n=4 anchor
 primitive,SSQ,observable,ep03_ladder_n4,unit coupling at n=4
 observable,ep03_hadronic_confirms_q108,paper,PAPER_116,hadronic row
 observable,ep03_hadronic_confirms_q108,paper,PAPER_112,confirms Q-108a
+observable,ep04_pb206_ladder_n8,paper,PAPER_117,nuclear rung
+primitive,SSQ,observable,ep04_pb206_ladder_n8,S_n/E_8 = 2*SSq
+observable,ep04_pb206_ladder_n8,paper,PAPER_112,ladder continuity
+observable,ep04_z82_offset_family,paper,PAPER_117,offset family
+observable,ep04_z82_offset_family,paper,PAPER_116,EP-03 sibling
