@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.111.0"
+VERSION = "0.112.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5662,5 +5662,67 @@ def _paper_108(dataset):
                     'f_pp = 1 - SSq*(1-SSq); f_TRZ = +1 pct sub-PeV enhancement'),
         'source': 'PAPER_108',
         'residual_pct': abs(0.61 - BETA_I) / BETA_I * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_109')
+def _paper_109(dataset):
+    """EP-11: GW170817 Kilonova - beta_i r-process boundary + SSq threshold
+    (Session 0). The THIRD LEG of the beta_i tri-source. Also
+    Ub_i mass-fraction activation via SSq (5th SSq observational
+    role: activation threshold).
+    Real-event anchors: M_total = 2.73 Msun, M_ej ~ 0.04-0.06,
+    d = 40.7 Mpc, v_ej blue 0.1c / red 0.3c, Y_e ~ 0.1, 95 pct
+    A>140 coverage. Chains VERIFIED: M_ej/M_total = 0.05/2.73 =
+    0.0183 EXACT (far below SSq 0.57, so Ub_i in suppressed
+    regime - explaining neutron-rich outflow); v_boundary =
+    beta_i*c = 0.61*3e8 = 1.83e8 m/s EXACT.
+    KEY EP-11 FINDING wired: beta_i is the r-process velocity
+    threshold (v < beta_i c -> r-process active, v > beta_i c
+    -> quenched). Blue 0.1c and red 0.3c both below beta_i;
+    ultra-relativistic jets 0.99c above -> r-process quenched
+    naturally.
+    r-process lanthanide mass chain EXACT: dM_Ubi*tau = 2.3e-3*
+    0.05 = 1.15e-4 Msun (matches 10^-4 to 10^-3 Msun opacity
+    modeling of Cowperthwaite+2017). Kilonova L_obs/L_UQFF = 2.5
+    pct uniform - the "error" column is UNIFORM 0.975 scaling,
+    NOT independent 5 systems (Q-105a).
+    Q-105: (a) light-curve rows are uniform x0.975 not
+    independent 5 fits - pin as one row; (b) beta_i r-process
+    boundary as SECOND physical role for beta_i (velocity
+    threshold; complements PAPER_063 buoyancy MCMC and PAPER_108
+    coupling); (c) SSq activation threshold = 5th observational
+    role (condensate/suppression/T_c-shift/clustering/mixing/
+    activation - now 6 roles total).
+    Session-225 footer: GW strain factor 0.333 (=1/3), phase
+    lag 368 cycles - inheritance from PAPER_1000 family.
+    """
+    return {
+        'value': {
+            'domain': '1.15 (EP-11 GW170817 - 3rd beta_i leg)',
+            'event': 'GW170817 / AT2017gfo (NGC 4993)',
+            'm_total_msun': 2.73,
+            'm_ej_msun': 0.05,
+            'm_ej_fraction': 0.05 / 2.73,                  # 0.0183 EXACT
+            'ssq_threshold': 0.57,
+            'ub_i_regime': 'suppressed (fraction << SSq) -> r-process active',
+            'v_boundary_m_s': 0.61 * 3e8,                  # 1.83e8 EXACT
+            'blue_ejecta_c': 0.1,                          # below boundary
+            'red_ejecta_c': 0.3,                           # below boundary
+            'jet_c': 0.99,                                 # above boundary
+            'y_e': 0.1,
+            'a_gt_140_coverage_pct': 95,
+            'lanthanide_mass_chain_msun': 2.3e-3 * 0.05,   # 1.15e-4 EXACT
+            'lightcurve_uniform_scaling': 0.975,           # Q-105a
+            'gw_strain_factor': 1/3,                       # 0.333 footer
+            'phase_lag_cycles_100s': 368,
+            'ssq_new_role_count': 6,                       # + activation threshold
+            'beta_i_role_2': 'r-process velocity boundary (v < beta_i c active)',
+        },
+        'formula': ('M_ej/M_total >= SSq (Ub_i activation); v_ej boundary = beta_i*c; '
+                    'M_r = dM_Ubi*tau'),
+        'source': 'PAPER_109',
+        'residual_pct': abs(2.3e-3 * 0.05 - 1.15e-4) / 1.15e-4 * 100,
         'status': 'OPEN_RULING',
     }

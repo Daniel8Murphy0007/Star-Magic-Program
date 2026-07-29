@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.112.0] — 2026-07-29 — BAND 1: PAPER_109 — EP-11 TRI-SOURCE CLOSED
+
+### Added
+- **PAPER_109 dispatch** (EP-11: GW170817 / AT2017gfo Kilonova):
+  **THIRD LEG of the β_i tri-source** — r-process velocity
+  boundary v_bound = β_i·c = 1.83e8 m/s EXACT. Blue 0.1c and
+  red 0.3c ejecta both BELOW → r-process active (95 pct A>140
+  coverage); ultra-relativistic jets 0.99c ABOVE → r-process
+  quenched naturally. β_i now has 2 physical roles (buoyancy
+  coupling + relativistic-outflow boundary) across 3
+  observational domains (SED / MCMC / boundary).
+  **SSq 6th observational role:** Ub_i activation threshold
+  (M_ej/M_total >= SSq → active; below → suppressed neutron-
+  rich). M_ej fraction 0.0183 << SSq → correctly suppressed
+  regime; lanthanide mass 1.15e-4 M_sun EXACT match to
+  Cowperthwaite+2017 opacity modeling.
+  Light-curve table pinned as UNIFORM x0.975 scaling (Q-105a),
+  not 5 independent per-epoch fits.
+- OPEN_RULING Q-105 (LC uniformity; β_i role; SSq taxonomy).
+- Gate: 773 assertions, 0 failures. Registry: 298 rows / 620 edges / 113 ledgers.
+
+---
+
 ## [0.111.0] — 2026-07-29 — BAND 1: PAPER_108
 
 ### Added

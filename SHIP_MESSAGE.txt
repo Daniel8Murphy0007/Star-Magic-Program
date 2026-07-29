@@ -1,29 +1,34 @@
-v0.111.0 BAND 1: PAPER_108 wired - β_i TRI-SOURCE + SSq 4TH ROLE
+v0.112.0 BAND 1: PAPER_109 wired - EP-11 TRI-SOURCE CLOSED
 
-PAPER_108 EP-10 IceCube Sub-PeV Neutrino SED (OPEN_RULING Q-104):
-  Confirms β_i via IceCube 2022 (γ = 2.37 ± 0.09, F0 = 1.44e-18
-  GeV cm2 s sr). The paper uses β_i = 0.61 (charter drift
-  auto-correct form); canonical BETA_I gives (BETA_I - 0.5)^2
-  = 0.0106 vs the paper's 0.0121, a ~14 pct SED-normalization
-  gap. That gap sits within IceCube's ~5 pct systematic
-  combined with 4 pct statistical - IceCube CANNOT discriminate
-  drift from canonical. Both carried, canonical primary.
+PAPER_109 EP-11 GW170817 / AT2017gfo Kilonova (OPEN_RULING
+Q-105):
+  THIRD LEG of the β_i tri-source (EP-10 SED + PAPER_063 MCMC
+  + EP-11 boundary). r-process velocity boundary
+  v_bound = β_i · c = 0.61 × 3e8 = 1.83e8 m/s EXACT.
 
-  TRI-SOURCE β_i CONFIRMATION recorded (Q-104b canonization
-  candidate): EP-10 IceCube SED + PAPER_063 52-sys MCMC +
-  EP-11 GW170817 r-process ejecta - three independent domains.
+  KEY EP-11 FINDING: β_i defines the r-process velocity threshold.
+  Blue 0.1c and red 0.3c ejecta both BELOW β_i·c → r-process
+  ACTIVE (95 pct A > 140 coverage confirmed vs AT2017gfo).
+  Ultra-relativistic jets 0.99c ABOVE β_i·c → r-process quenched
+  naturally without additional physics.
 
-  SSq GAINS ITS 4TH OBSERVATIONAL ROLE: f_pp = 1 - SSq*(1-SSq)
-  = 1 - 0.57*0.43 = 0.7549 = 75.5 pct pp fraction, matching
-  IceCube's 70-80 pct multi-messenger inference (mixing/
-  branching fraction, joining SSq's condensate-fraction /
-  suppression / T_c-shift / clustering-boundary roles).
+  β_i now has 2 physical roles (buoyancy coupling in 063 +
+  relativistic-outflow boundary here) across 3 observational
+  domains (IceCube SED / 52-sys MCMC / GW kilonova) — canonize
+  as "β_i = the F_UBi/relativistic-outflow activation velocity"?
 
-  β_0 = 1 - m_π/(2 E_p) = 0.9325 EXACT at E_p = 1 GeV.
-  TRZ +1 pct at IceCube systematic - the Q-084 fork
-  undiscriminating here (both branches consistent).
-  4/4 validator tests PASS.
+  SSq 6TH OBSERVATIONAL ROLE: Ub_i activation threshold
+  (M_ej/M_total ≥ SSq → activated, below → suppressed
+  neutron-rich outflow). GW170817: fraction = 0.05/2.73 =
+  0.0183 EXACT << SSq → correctly SUPPRESSED → Y_e ≈ 0.1
+  neutron-rich → r-process. Six SSq roles now: condensate
+  fraction / suppression / T_c-shift / clustering boundary /
+  mixing fraction / activation threshold.
 
-Q-104 queued. Gate 766 assertions 0 failures. Registry 296 rows /
-614 edges / 112 citation ledgers. Wired 112/2,255 (11 clean, 101
-OPEN_RULING). Next: PAPER_109.
+  Lanthanide mass chain dM_Ubi·τ = 2.3e-3 × 0.05 = 1.15e-4 M_sun
+  EXACT match to Cowperthwaite+2017. Light-curve table pinned
+  as uniform ×0.975 scaling, not 5 independent per-epoch fits.
+
+Q-105 queued. Gate 773 assertions 0 failures. Registry 298 rows /
+620 edges / 113 citation ledgers. Wired 113/2,255 (11 clean, 102
+OPEN_RULING). Next: PAPER_110.

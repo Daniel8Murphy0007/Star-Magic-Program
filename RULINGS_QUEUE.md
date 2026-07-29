@@ -1985,6 +1985,33 @@ RESOLVED section with the ruling recorded.
   + tri-source recorded.
 - **Daniel's ruling:** (pending)
 
+### Q-105 — PAPER_109 EP-11 — light-curve uniformity + beta_i 2nd role + SSq 6th role
+- **Question:** (a) The kilonova light-curve table shows UNIFORM
+  x0.975 scaling of L_obs/L_UQFF across all 5 epochs (0.5/1/2/5/
+  10 d), not independent per-epoch fits - pin as a single test
+  row (uniform normalization by 0.975), not 5 independent
+  measurements? (b) beta_i's SECOND physical role: r-process
+  velocity boundary v_bound = beta_i*c = 1.83e8 m/s - joins the
+  buoyancy coupling role (F_UBi) and the neutrino coupling role
+  (108); canonize as "beta_i = the F_UBi/relativistic-outflow
+  activation velocity" with three physics-domain manifestations?
+  (c) SSq's 6TH observational role: activation-threshold /
+  suppression fraction (M_ej/M_total >= SSq -> Ub_i activated;
+  below -> suppressed -> neutron-rich); this now brings SSq to
+  6 uses (condensate-fraction 061 / suppression 060/107 / T_c
+  shift 060/107 / clustering boundary 107 / mixing fraction 108
+  / activation threshold 109) - canonize the taxonomy? (d) The
+  Session-225 footer gw_strain_factor = 1/3 = 0.333 exact - part
+  of a later-corpus GW damping family?
+- **Notable:** M_ej fraction 0.0183 EXACT << SSq (regime
+  correct); lanthanide mass 1.15e-4 EXACT match to observation;
+  the beta_i-tri-source (EP-10 SED + 063 MCMC + EP-11 boundary)
+  is now formally 3 sources across 3 domains - strong Q-104b
+  canonization support.
+- **Best-candidate wired:** all chains + roles counted +
+  uniform-scaling flag.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

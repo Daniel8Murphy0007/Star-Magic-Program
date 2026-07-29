@@ -1467,3 +1467,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 112/2,255 (11 ✓, 101 ⚠). Next: PAPER_109.
 
 ---
+
+## 2026-07-29 — v0.112.0 — BAND 1: PAPER_109 — EP-11 TRI-SOURCE CLOSED
+
+- PAPER_109 wired (⚠ Q-105): EP-11 GW170817. 3rd leg of β_i
+  tri-source (r-process velocity boundary); SSq 6th observational
+  role (activation threshold); lanthanide mass chain EXACT;
+  light-curve uniform-scaling defect flagged.
+- Campaign: 113/2,255 (11 ✓, 102 ⚠). Next: PAPER_110.
+
+---

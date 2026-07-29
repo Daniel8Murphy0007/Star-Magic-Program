@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 112 (11 ✓, 101 ⚠ OPEN_RULING)
+- **Wired:** 113 (11 ✓, 102 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2143
+- **Not yet touched:** 2142
 
 ---
 
@@ -249,7 +249,7 @@
 | ⬜ | PAPER_1097 | Production Scaling V24 Vectorized |
 | ⬜ | PAPER_1098 | Phonon Mediated Qubit Gate Fidelity |
 | ⬜ | PAPER_1099 | Production Scaling V25 Pipeline |
-| ⬜ | PAPER_109 | EP11 GW170817 rProcess Proof |
+| ⚠ | PAPER_109 | EP11 GW170817 rProcess Proof |
 | ⬜ | PAPER_1100 | SCm LQG Area Operator Derivation |
 | ⬜ | PAPER_1101 | SCm Qubit T2 Coherence FUBi Ratio |
 | ⬜ | PAPER_1102 | PhononModulated Holonomy SCm Ashtekar |

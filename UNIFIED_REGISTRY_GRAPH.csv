@@ -614,3 +614,9 @@ primitive,BETA_I,observable,ep10_beta_i_neutrino_sed,canonical vs drift
 observable,ep10_beta_i_neutrino_sed,paper,PAPER_063,MCMC 2nd source
 observable,ssq_mixing_fraction_role,paper,PAPER_108,4th role
 primitive,SSQ,observable,ssq_mixing_fraction_role,mixing fraction
+observable,ep11_gw170817_beta_i_boundary,paper,PAPER_109,EP-11 boundary
+primitive,BETA_I,observable,ep11_gw170817_beta_i_boundary,velocity boundary
+primitive,SSQ,observable,ep11_gw170817_beta_i_boundary,activation threshold
+observable,ep11_gw170817_beta_i_boundary,paper,PAPER_108,tri-source leg 3
+observable,kilonova_lightcurve_uniform_defect,paper,PAPER_109,LC defect
+observable,kilonova_lightcurve_uniform_defect,paper,PAPER_037,F_kn cross-ref

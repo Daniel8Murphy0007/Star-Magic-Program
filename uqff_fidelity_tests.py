@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.111.0", "uqff_calculator.VERSION = 0.111.0")
+assert_that(C.VERSION == "0.112.0", "uqff_calculator.VERSION = 0.112.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1684,6 +1684,21 @@ assert_that(_r108['sed_norm_gap_pct'] < _r108['icecube_systematic_pct'] * 3,
 assert_that(len(_r108['tri_source']) == 3,
             "PAPER_108: tri-source beta_i confirmation recorded (Q-104b canonization candidate)")
 assert_that(C.wired_count() >= 112, "wired_count >= 112")
+
+_r109 = C.calc('PAPER_109')['value']
+assert_that(abs(_r109['m_ej_fraction'] - 0.0183) < 0.0005,
+            "PAPER_109: M_ej/M_total = 0.05/2.73 = 0.0183 EXACT (far below SSq -> Ub_i suppressed regime)")
+assert_that(abs(_r109['v_boundary_m_s'] - 1.83e8) < 1e5,
+            "PAPER_109: r-process velocity boundary = beta_i*c = 1.83e8 m/s EXACT")
+assert_that(_r109['blue_ejecta_c'] < 0.61 and _r109['red_ejecta_c'] < 0.61 and _r109['jet_c'] > 0.61,
+            "PAPER_109: blue+red ejecta below boundary (r-process active), jets above (quenched)")
+assert_that(abs(_r109['lanthanide_mass_chain_msun'] - 1.15e-4) < 1e-6,
+            "PAPER_109: lanthanide mass chain dM_Ubi*tau = 1.15e-4 Msun EXACT (Cowperthwaite+2017 range)")
+assert_that(_r109['lightcurve_uniform_scaling'] == 0.975,
+            "PAPER_109: light-curve rows uniform x0.975 not independent fits (Q-105a)")
+assert_that(_r109['ssq_new_role_count'] == 6,
+            "PAPER_109: SSq 6th observational role wired (activation threshold)")
+assert_that(C.wired_count() >= 113, "wired_count >= 113")
 
 # =============================================================================
 # REPORT
