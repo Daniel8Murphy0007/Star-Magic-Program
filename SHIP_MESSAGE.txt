@@ -1,25 +1,24 @@
-v0.36.0 BAND 1: PAPER_033 wired
+v0.37.0 BAND 1: PAPER_034 wired
 
-PAPER_033 Electroweak Precision Observables (OPEN_RULING Q-032):
-  BESIII DCS D-decays (K+pi0/eta/etap at 1e-4, all >10 sigma) anchor
-  E_react = tan^4(theta_C) = 2.846e-3 - corpus-shared with PAPER_030
-  Oblique corrections:
-    delta_T = E_react*SSq/alpha_EM = 0.222 (~1-sigma of EW fit)
-    delta_rho = E_react = 2.846e-3 - within LEP rho_0 1-sigma
-    delta_S = 1.71 raw, exponentially killed by exp(-kappa*t_EW)*
-    D_TRZ ~ 0 (no LEP conflict)
-  HEADLINE FALSIFIABLE: Delta_m_W = +93 MeV vacuum T-parameter shift
-  m_W^UQFF = 80.455 GeV - same direction and magnitude as the CDF
-  anomaly (80.4335, +70 MeV above SM), consistent at ~0.3 sigma
-  Honest in-paper disclosures preserved: DCS hadronic enhancement
-  1.87x; the epsilon = 2.000 tautology acknowledged as coincidence
+PAPER_034 Higgs kappa_t Coupling (OPEN_RULING Q-033):
+  UH Level-18 field: kappa_18 = 18^(-SSq) = 0.1927 composition
+  kappa_t bracket [1 - SSq*k_eta, 1 - kappa_18*k_eta] =
+  [0.9220, 0.9736]; geometric-mean central = 0.948 (5.2 pct below SM)
+  mu_tH = kappa_t^2 = 0.898 vs ATLAS 0.9583 +- 0.11 (0.6 sigma OK)
+  FALSIFIABLE LADDER: HL-LHC 1.3 sigma (inconclusive) -> FCC-hh
+  10.4 sigma DEFINITIVE discrimination
+  Charm Yukawa: |kappa_c| = 18.8 (sec-4.1 final) within CERN < 47
 
-Q-032 queued: abstract delta_T = 1.622e-3 vs text 0.222 (missing
-/alpha_EM); 3rd consecutive paper with "Wait - let me recalculate"
-left standing (paperwork family); eta-prime enhancement 8.5e-9 is
-FOUR ORDERS below the excess it claims to explain; SU(3) ratio
-1.56-vs-1.24 FSI residual.
+Q-033 queued: (a) abstract/table kappa_c = 42.0 (94.38 pct alignment)
+has NO shown derivation - paper's own final chain gives 18.8;
+(b) sigma(tH) 1.078e-3 vs 1.14e-3 internal split; (c) TRZ section
+makes three attempts with two dead ends left standing - 4th
+consecutive Session-0 paper with in-text self-corrections (chronic);
+(d) CROSS-LOCK FIRES: PAPER_028 fixed kappa_Higgs = 1.0 predicting
+any deviation shifts V_cb_eff - kappa_t = 0.948 here triggers it.
+First inter-paper lock tension of the campaign; adjudication shapes
+both papers.
 
-Gate 277 assertions 0 failures. Registry 109 rows / 214 edges / 37
-citation ledgers. Wired 37/2,255 (7 clean, 30 OPEN_RULING).
-Next: PAPER_034.
+Gate 284 assertions 0 failures. Registry 112 rows / 219 edges / 38
+citation ledgers. Wired 38/2,255 (7 clean, 31 OPEN_RULING).
+Next: PAPER_035.

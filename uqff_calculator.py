@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.36.0"
+VERSION = "0.37.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1778,5 +1778,60 @@ def _paper_033(dataset):
                     'Delta_m_W = m_W*(c^2/(c^2-s^2))*(alpha/2)*delta_T'),
         'source': 'PAPER_033',
         'residual_pct': abs(dm_w_gev - 0.093) / 0.093 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_034')
+def _paper_034(dataset):
+    """Higgs kappa_t Coupling: UQFF vs HL-LHC Data (Session 0).
+
+    UH Level-18 field: kappa_18 = 18^(-SSq) = 0.1927 composition.
+    kappa_t bracket [1 - SSq*k_eta, 1 - kappa_18*k_eta] =
+    [0.9220, 0.9736]; geometric-mean central 0.948; mu_tH = 0.898 vs
+    ATLAS 0.9583 +- 0.11 (0.6 sigma). FALSIFIABLE LADDER: HL-LHC
+    1.3 sigma (inconclusive) -> FCC-hh 10.4 sigma DEFINITIVE.
+    Charm: |kappa_c| = 18.8 (sec-4.1 final) within CERN < 47.
+    Q-033: (a) abstract/table claim kappa_c = 42.0 (94.38 pct
+    alignment vs obs 44.5) but the paper's own final derivation gives
+    18.8 - no shown derivation reproduces 42.0; (b) sigma(tH) 1.078e-3
+    (sec 3.3) vs 1.14e-3 (table); (c) TRZ section has THREE attempts
+    with two dead ends left standing (1.801 unphysical, 0.351 too
+    low) - 4th consecutive paper with in-text self-corrections;
+    (d) CROSS-LOCK TENSION: PAPER_028 fixed kappa_Higgs = 1.0 and
+    predicted any deviation must shift V_cb_eff - this paper predicts
+    kappa_t = 0.948, so the 028 lock implies a V_cb shift. Adjudicate.
+    """
+    import math as _m
+    k_eta = 0.37 ** 2
+    kappa_18 = 18.0 ** (-SSQ)                        # 0.1927
+    kt_low = 1.0 - SSQ * k_eta                       # 0.9220
+    kt_high = 1.0 - kappa_18 * k_eta                 # 0.9736
+    kt_central = _m.sqrt(kt_low * kt_high)           # 0.9474
+    mu_th = kt_central ** 2                          # 0.898
+    return {
+        'value': {
+            'kappa_18_uh': kappa_18,
+            'kt_bracket': (kt_low, kt_high),
+            'kt_central': kt_central,                # 0.948
+            'kt_trz_range': (0.862, 0.974),
+            'mu_th_uqff': mu_th,                     # 0.898
+            'mu_th_atlas': (0.9583, 0.11),
+            'sigma_th_sec33_pb': 1.078e-3,           # Q-033b pair
+            'sigma_th_table_pb': 1.14e-3,
+            'sigma_th_atlas_pb': 1.15e-3,
+            'kappa_c_derived': 18.8,                 # sec-4.1 final
+            'kappa_c_claimed': 42.0,                 # abstract/table (Q-033a)
+            'kappa_c_bound': 47.0,
+            'kappa_c_observed': 44.5,
+            'uh_level18_mass_gev': 125.09 * 18 ** 2, # 40,529
+            'hl_lhc_significance': (1.0 - kt_central) / 0.04,     # 1.3
+            'fcc_hh_significance': (1.0 - kt_central) / 0.005,    # 10.5
+            'cross_lock_028': 'kappa_Higgs = 1.0 (028) vs kappa_t = 0.948 (here)',
+        },
+        'formula': ('kappa_18 = 18^(-SSq); kappa_t = 1 - [SSq or kappa_18]*k_eta; '
+                    'mu = kappa_t^2; FCC-hh sigma = (1-kt)/0.005'),
+        'source': 'PAPER_034',
+        'residual_pct': abs(kt_central - 0.948) / 0.948 * 100,
         'status': 'OPEN_RULING',
     }

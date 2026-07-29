@@ -714,3 +714,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 37/2,255 (7 ✓, 30 ⚠). Next: PAPER_034.
 
 ---
+
+## 2026-07-29 — v0.37.0 — BAND 1: PAPER_034
+
+- PAPER_034 wired (⚠ Q-033): Higgs kappa_t. Level-18 = 18^(-SSq)
+  composed; kappa_t = 0.948 with FCC-hh 10.4-sigma definitive test;
+  kappa_c 42-vs-18.8 conflict; the PAPER_028 kappa_Higgs cross-lock
+  is now in live tension — first inter-paper lock to fire.
+- Gate 284/0. Registry 112 rows / 219 edges / 38 ledgers.
+- Campaign: 38/2,255 (7 ✓, 31 ⚠). Next: PAPER_035.
+
+---

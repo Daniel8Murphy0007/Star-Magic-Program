@@ -497,6 +497,27 @@ RESOLVED section with the ruling recorded.
   enhancement disclosure preserved.
 - **Daniel's ruling:** (pending)
 
+### Q-033 — PAPER_034 — kappa_c 42-vs-18.8 + sigma(tH) split + TRZ chaos + 028 cross-lock
+- **Question:** (a) The abstract and comparison table claim kappa_c =
+  42.0 (94.38 pct alignment vs observed 44.5), but the paper's own
+  final sec-4.1 derivation yields |kappa_c| = 18.8; the intermediate
+  chain wanders through 8.27, 6.07, and a rejected 4290. No shown
+  derivation reproduces 42.0 - which value is canonical? (b) sigma(tH)
+  UQFF: sec 3.3 computes 1.078e-3 pb while the comparison table lists
+  1.14e-3 pb. (c) The TRZ-correction section makes THREE attempts with
+  two dead ends left standing (1.801 "unphysical", 0.351 "too low",
+  final 0.862 via (1 - D_TRZ/10)) - 4th consecutive paper with in-text
+  self-corrections; the pattern is chronic in this Session-0 block.
+  (d) CROSS-LOCK: PAPER_028 fixed kappa_Higgs = 1.0 and predicted any
+  deviation must shift V_cb_eff. This paper predicts kappa_t = 0.948.
+  Under the 028 lock, does UQFF predict a correlated V_cb_eff shift
+  (and of what size), or do kappa_Higgs and kappa_t decouple?
+- **Best-candidate wired:** kappa_t bracket + geometric-mean central
+  0.948 (all composed); both kappa_c values exposed with the bound;
+  FCC-hh 10.4-sigma falsifiability wired; cross-lock tension
+  registered as its own observable.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.37.0] — 2026-07-29 — BAND 1: PAPER_034
+
+### Added
+- **PAPER_034 dispatch** (Higgs kappa_t Coupling): UH Level-18 field —
+  kappa_18 = 18^(-SSq) = 0.1927 composition; kappa_t bracket
+  [0.9220, 0.9736] with geometric-mean central 0.948 (5.2% below SM);
+  mu_tH = 0.898 vs ATLAS 0.9583 +- 0.11 (0.6 sigma). Falsifiable
+  ladder: HL-LHC 1.3 sigma inconclusive -> FCC-hh 10.4 sigma
+  DEFINITIVE. Charm |kappa_c| = 18.8 (final derivation) within CERN
+  < 47. OPEN_RULING Q-033: abstract/table kappa_c = 42.0 has no shown
+  derivation (vs 18.8 derived); sigma(tH) 1.078-vs-1.14 e-3 split;
+  TRZ section triple-attempt chaos (4th consecutive paper with
+  in-text self-corrections — chronic in this Session-0 block);
+  PAPER_028 kappa_Higgs = 1.0 cross-lock now in TENSION with
+  kappa_t = 0.948 — adjudication shapes both papers.
+- Gate: 284 assertions, 0 failures. Registry: 112 rows / 219 edges / 38 ledgers.
+
+---
+
 ## [0.36.0] — 2026-07-29 — BAND 1: PAPER_033
 
 ### Added

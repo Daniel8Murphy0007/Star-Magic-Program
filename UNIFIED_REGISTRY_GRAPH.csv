@@ -213,3 +213,8 @@ observable,ew_oblique_uqff,paper,PAPER_033,primary derivation
 observable,w_mass_shift_uqff,paper,PAPER_033,primary derivation
 observable,dcs_bes3_anchor,paper,PAPER_033,primary derivation
 observable,dcs_bes3_anchor,paper,PAPER_030,E_react = tan^4(theta_C) shared
+primitive,SSQ,observable,kappa_t_uh_level18,kappa_18 = 18^(-SSq); kt = 1-SSq*k_eta
+observable,kappa_t_uh_level18,paper,PAPER_034,primary derivation
+observable,kappa_c_charm_yukawa,paper,PAPER_034,primary derivation
+observable,kappa_higgs_cross_lock_tension,paper,PAPER_034,kappa_t = 0.948
+observable,kappa_higgs_cross_lock_tension,paper,PAPER_028,kappa_Higgs = 1.0 lock

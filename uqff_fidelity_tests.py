@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.36.0", "uqff_calculator.VERSION = 0.36.0")
+assert_that(C.VERSION == "0.37.0", "uqff_calculator.VERSION = 0.37.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -625,6 +625,21 @@ assert_that(abs(_r033['dcs_geometric_mean'] - 5.31e-3) / 5.31e-3 < 0.005,
 assert_that(abs(_r033['rho_uqff'] - 1.00322) < 0.00001,
             "PAPER_033: rho_UQFF = 1.00322 within LEP 1-sigma")
 assert_that(C.wired_count() >= 37, "wired_count >= 37")
+
+_r034 = C.calc('PAPER_034')['value']
+assert_that(abs(_r034['kappa_18_uh'] - 0.1927) < 0.0005,
+            "PAPER_034: UH Level-18 coupling = 18^(-SSq) = 0.1927 composition")
+assert_that(abs(_r034['kt_bracket'][0] - 0.9220) < 0.0005,
+            "PAPER_034: kappa_t low = 1 - SSq*k_eta = 0.9220")
+assert_that(abs(_r034['kt_central'] - 0.948) < 0.001,
+            "PAPER_034: kappa_t central = geometric mean = 0.948 (5.2 pct below SM)")
+assert_that(abs(_r034['mu_th_uqff'] - 0.898) < 0.001,
+            "PAPER_034: mu_tH = kappa_t^2 = 0.898 vs ATLAS 0.9583 +- 0.11 (0.6 sigma)")
+assert_that(abs(_r034['fcc_hh_significance'] - 10.4) < 0.2,
+            "PAPER_034: FCC-hh discrimination 10.4 sigma - definitive falsifiable")
+assert_that(_r034['kappa_c_derived'] < _r034['kappa_c_bound'] and _r034['kappa_c_claimed'] < _r034['kappa_c_bound'],
+            "PAPER_034: both kappa_c values (18.8 derived, 42.0 claimed) within CERN < 47 (Q-033a)")
+assert_that(C.wired_count() >= 38, "wired_count >= 38")
 
 # =============================================================================
 # REPORT
