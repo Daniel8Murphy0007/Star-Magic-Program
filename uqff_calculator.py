@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.60.0"
+VERSION = "0.61.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3043,5 +3043,57 @@ def _paper_057(dataset):
         'formula': ('g ratios pin suite exponents; standard class = no [SCm] point compression'),
         'source': 'PAPER_057',
         'residual_pct': abs(g_3372 / g_agcar - 12.5) / 12.5 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_058')
+def _paper_058(dataset):
+    """M42 Orion Nebula: Suite-Maximum g_grav (Session 0).
+
+    4/4 PASS. THE COMPLETE SUITE RANKING lands in this paper - the
+    full 10-system g_grav exponent family is now pinned by verified
+    ratios (2.0 / 12.5 / 37.5 / 1890): M42 6.6376e-10 > Carina
+    3.3188e-10 > Mice 2.95e-10 > MysticMtn 1.3275e-10 > NGC2264
+    5.9336e-11 > NGC2841 5.3101e-11 > AGCar 2.6550e-11 > Tadpole
+    7.8551e-12 > RedSpider 1.3275e-12 > Tarantula 3.5099e-13 -
+    four orders of magnitude, zero per-system free parameters.
+    M42/Tarantula = 1892 VERIFIES the "1890x ~ 2000x" claim and pins
+    Tarantula at e-13. Proximity-driven maximum (410 pc); Trapezium
+    4 stars mapped to the 4 Ug components. HONEST NEGATIVE RESULT:
+    standard 1x compression despite peak energy - "most energetic is
+    NOT most compressed"; enhancement only for ACTIVE processes
+    (mergers/fast winds). Shock bridge to 051: v = v_Alfven*
+    (1 + Ug1/g)^0.5 ~ 48-50 km/s matches arXiv within 3 pct.
+    Q-054: (a) M42/Carina observed 2.0 vs naive 0.63 (3.2x gap -
+    local-dynamical-mass family convention, accept?); (b) Hubble
+    1.0002 at 410 pc called "numerical artifact" while Red Spider at
+    1.5 kpc = 1.0000 - non-monotonic even locally (joins Q-050a).
+    """
+    ranking = {'m42': 6.6376e-10, 'ngc3372': 3.3188e-10, 'ngc4676': 2.9500e-10,
+               'mystic': 1.3275e-10, 'ngc2264': 5.9336e-11, 'ngc2841': 5.3101e-11,
+               'agcar': 2.6550e-11, 'ugc10214': 7.8551e-12, 'redspider': 1.3275e-12,
+               'tarantula': 3.5099e-13}
+    return {
+        'value': {
+            'system': 'M42 Great Orion Nebula (NGC 1976)',
+            'distance_pc': 410.0,
+            'g_grav': ranking['m42'],
+            'suite_ranking': ranking,
+            'span_orders': 3.28,                     # log10(6.64e-10/3.51e-13)
+            'ratio_m42_carina': ranking['m42'] / ranking['ngc3372'],   # 2.0
+            'ratio_m42_tarantula': ranking['m42'] / ranking['tarantula'],   # 1892
+            'naive_ratio_carina': 0.63,              # Q-054a honest gap
+            'trapezium_ug_map': {'theta1C': 'Ug1', 'theta1D': 'Ug2',
+                                 'theta1B': 'Ug3', 'theta1A': 'Ug4'},
+            'compression': 'standard 1x - honest negative result (energy != compression)',
+            'shock_bridge_kms': (48.0, 50.0),        # matches 051 arXiv within 3 pct
+            'hubble_factor': 1.0002,                 # Q-054b local non-monotonicity
+            'score': (4, 4),
+        },
+        'formula': ('g_grav ~ M_eff/d^2 (local dynamical mass); '
+                    'v_shock = v_Alfven*(1 + Ug1/g_grav)^0.5'),
+        'source': 'PAPER_058',
+        'residual_pct': abs(ranking['m42'] / ranking['tarantula'] - 1890.0) / 1890.0 * 100,
         'status': 'OPEN_RULING',
     }

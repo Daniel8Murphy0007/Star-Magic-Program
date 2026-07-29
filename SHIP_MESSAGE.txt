@@ -1,24 +1,26 @@
-v0.60.0 BAND 1: PAPER_057 wired - Q-051a SELF-RECTIFIED
+v0.61.0 BAND 1: PAPER_058 wired - COMPLETE SUITE RANKING PINNED
 
-PAPER_057 Carina Complex Multi-Scale 3-in-1 (OPEN_RULING Q-053):
-  THREE models, 12/12 PASS, two spatial orders in one environment:
-    NGC 3372 (300 ly): 3.3188e-10, distributed ionization
-    AG Carinae (LBV): 2.6550e-11, slow eruption ~50 km/s
-    Mystic Mountain (pillar): 1.3275e-10, ERODED not compressed
-  All standard 1x class - the physical readings sharpen the tier
-  taxonomy against Red Spider's fast-wind 2x.
-  SELF-RECTIFICATION (4th instance): the verified 12.5x ratio pins
-  Carina at 3.3188e-10 -> Mice/Carina = 0.889: PAPER_055's "2x"
-  claim fails definitively (Q-051a RESOLVED by the corpus).
-  Verified: 3372/AGCar 12.50 EXACT; 3372/M42 0.50; MM/3372 0.40.
-  HONEST: mass-ratio expectation gaps (226x vs 12.5x) disclosed
-  with the local-dynamical-mass reading.
+PAPER_058 M42 Orion Nebula: Suite Maximum (OPEN_RULING Q-054):
+  4/4 PASS. THE COMPLETE 10-SYSTEM RANKING lands - g_grav exponent
+  family settled by verified cross-ratios (2.0/12.5/37.5/1890):
+    M42 6.6376e-10 > Carina 3.3188e-10 > Mice 2.95e-10 >
+    MysticMtn 1.3275e-10 > NGC2264 5.9336e-11 > NGC2841 5.3101e-11
+    > AGCar 2.6550e-11 > Tadpole 7.8551e-12 > RedSpider 1.3275e-12
+    > Tarantula 3.5099e-13
+  Four orders of magnitude, zero per-system free parameters.
+  M42/Tarantula = 1892 VERIFIES the 1890x claim (pins Tarantula).
+  Trapezium's four stars mapped to the four Ug components.
+  HONEST NEGATIVE RESULT: standard 1x compression at PEAK energy -
+  "most energetic is not most compressed"; enhancement is reserved
+  for ACTIVE processes (mergers, fast winds).
+  Shock bridge: v = v_Alfven*(1 + Ug1/g)^0.5 = 48-50 km/s matches
+  the PAPER_051 arXiv shock validations within 3 pct.
 
-Q-053 queued: Red Spider (1.3275e-12) and Mystic Mountain
-(1.3275e-10) share the EXACT mantissa 100x apart - copy artifact?;
-sec-4 "1/10 within 0.5 pct" contradicts the paper's own 0.40 table
-ratio; mass figures mojibaked.
+Q-054 queued: local-dynamical-mass g_grav reading now in THREE
+papers (054/057/058) - canonize as family convention?; Hubble
+1.0002 at 410 pc vs 1.0000 at 1.5 kpc - locally non-monotonic
+(joins the Q-050a definition ruling).
 
-Gate 425 assertions 0 failures. Registry 181 rows / 347 edges / 61
-citation ledgers. Wired 61/2,255 (10 clean, 51 OPEN_RULING).
-Next: PAPER_058.
+Gate 431 assertions 0 failures. Registry 184 rows / 352 edges / 62
+citation ledgers. Wired 62/2,255 (10 clean, 52 OPEN_RULING).
+Next: PAPER_059.

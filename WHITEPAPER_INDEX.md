@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 61 (10 ✓, 51 ⚠ OPEN_RULING)
+- **Wired:** 62 (10 ✓, 52 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2194
+- **Not yet touched:** 2193
 
 ---
 
@@ -91,7 +91,7 @@
 | ⚠ | PAPER_055 | Mice Galaxies NGC4676 UQFF |
 | ⚠ | PAPER_056 | Red Spider Nebula UQFF |
 | ⚠ | PAPER_057 | Carina Nebula Multi Scale UQFF |
-| ⬜ | PAPER_058 | M42 Orion Nebula UQFF |
+| ⚠ | PAPER_058 | M42 Orion Nebula UQFF |
 | ⬜ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF |
 | ⬜ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF |
 | ⬜ | PAPER_061 | Nuclear BEC Formation UQFF |

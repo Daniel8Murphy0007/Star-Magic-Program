@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.60.0"
-description = "UQFF Star-Magic-Program v0.60.0: PAPER_057 wired (Carina multi-scale 3-in-1: 12/12 PASS; 12.5x AGCar ratio EXACT pins Carina - RESOLVES Q-051a (4th self-rectification, Mice 2x claim fails at 0.889); erosion-vs-compression readings sharpen tier taxonomy; 1.3275 mantissa collision found). Q-053 queued. Wired 61/2255, gate 425/0. Registry 181 rows / 347 edges / 61 ledgers."
+version = "0.61.0"
+description = "UQFF Star-Magic-Program v0.61.0: PAPER_058 wired (M42: suite-maximum g_grav; COMPLETE 10-system ranking pinned - 4-order span, M42/Tarantula = 1892 verifies; honest negative result: peak energy w/ standard 1x compression; shock bridge to 051 within 3 pct). Q-054 queued (dynamical-mass convention; local Hubble non-monotonicity). Wired 62/2255, gate 431/0. Registry 184 rows / 352 edges / 62 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

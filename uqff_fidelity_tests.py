@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.60.0", "uqff_calculator.VERSION = 0.60.0")
+assert_that(C.VERSION == "0.61.0", "uqff_calculator.VERSION = 0.61.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -973,6 +973,21 @@ assert_that(abs(_r057['ratio_3372_m42'] - 0.50) < 0.005,
 assert_that(_r057['score'] == (12, 12),
             "PAPER_057: 12/12 PASS across three models, all standard 1x class")
 assert_that(C.wired_count() >= 61, "wired_count >= 61")
+
+_r058 = C.calc('PAPER_058')['value']
+assert_that(abs(_r058['ratio_m42_carina'] - 2.0) < 0.01,
+            "PAPER_058: M42/Carina = 2.0 verified (suite maximum)")
+assert_that(abs(_r058['ratio_m42_tarantula'] - 1891.0) < 5.0,
+            "PAPER_058: M42/Tarantula = 1892 verifies '1890x' - pins Tarantula at 3.5099e-13")
+assert_that(len(_r058['suite_ranking']) == 10,
+            "PAPER_058: complete 10-system g_grav ranking pinned (4-order span)")
+assert_that(_r058['suite_ranking']['m42'] > _r058['suite_ranking']['ngc3372'],
+            "PAPER_058: ranking order M42 > Carina holds")
+assert_that(_r058['compression'].startswith('standard'),
+            "PAPER_058: honest negative result - peak energy with standard 1x compression")
+assert_that(_r058['score'] == (4, 4),
+            "PAPER_058: 4/4 PASS")
+assert_that(C.wired_count() >= 62, "wired_count >= 62")
 
 # =============================================================================
 # REPORT

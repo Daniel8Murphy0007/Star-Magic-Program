@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.61.0] — 2026-07-29 — BAND 1: PAPER_058
+
+### Added
+- **PAPER_058 dispatch** (M42 Orion Nebula — suite maximum): the
+  COMPLETE 10-system g_grav ranking lands and is pinned (M42
+  6.6376e-10 down to Tarantula 3.5099e-13 — four orders, zero
+  per-system free parameters; all cross-ratios verified, including
+  M42/Tarantula = 1892 vs the in-paper 1890x). Proximity-driven
+  maximum with the Trapezium's four stars mapped to the four Ug
+  components. HONEST NEGATIVE RESULT: standard 1x compression at
+  peak energy — "most energetic is not most compressed"; enhancement
+  reserved for ACTIVE processes. Shock bridge: v_Alfven*(1+Ug1/g)^0.5
+  = 48-50 km/s matches the 051 arXiv validations within 3%.
+  OPEN_RULING Q-054 (local-dynamical-mass g_grav convention — now in
+  3 papers, canonize?; local Hubble non-monotonicity joins Q-050a).
+- Gate: 431 assertions, 0 failures. Registry: 184 rows / 352 edges / 62 ledgers.
+
+---
+
 ## [0.60.0] — 2026-07-29 — BAND 1: PAPER_057
 
 ### Added

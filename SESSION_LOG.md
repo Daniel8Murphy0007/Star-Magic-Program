@@ -970,3 +970,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 61/2,255 (10 ✓, 51 ⚠). Next: PAPER_058.
 
 ---
+
+## 2026-07-29 — v0.61.0 — BAND 1: PAPER_058
+
+- PAPER_058 wired (⚠ Q-054): M42 suite maximum. Complete 10-system
+  ranking pinned (the family master dataset); honest 1x-at-peak
+  negative result; dynamical-mass convention question canonization-
+  ready (3 papers now).
+- Gate 431/0. Registry 184 rows / 352 edges / 62 ledgers.
+- Campaign: 62/2,255 (10 ✓, 52 ⚠). Next: PAPER_059.
+
+---

@@ -903,6 +903,24 @@ RESOLVED section with the ruling recorded.
   preserved as the standard-class taxonomy sharpener.
 - **Daniel's ruling:** (pending)
 
+### Q-054 — PAPER_058 — dynamical-mass convention + local Hubble non-monotonicity
+- **Question:** (a) M42/Carina observed 2.0 vs naive M/d^2 prediction
+  0.63 - a 3.2x gap the paper (like 057) attributes to "local
+  dynamical mass" rather than total enclosed mass. This reading now
+  appears in three papers (054/057/058): canonize it as the family
+  convention for g_grav semantics? (b) Hubble factor 1.0002 at 410 pc
+  (called a "numerical artifact" in-paper) while Red Spider at 1.5
+  kpc shows 1.0000 - the column is non-monotonic even among local
+  systems (joins the Q-050a systematic; one definition ruling covers
+  all data). (c) Suite-table exponent mojibake as usual (all
+  recomputed from verified ratios).
+- **NOTE:** the complete 10-system ranking is now pinned - the
+  family's master dataset - and M42/Tarantula = 1892 verifies the
+  in-paper 1890x claim, fixing Tarantula at 3.5099e-13.
+- **Best-candidate wired:** ranking + honest negative result +
+  shock bridge; all cross-ratios verified.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

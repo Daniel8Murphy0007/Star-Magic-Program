@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.60.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.60.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.61.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.61.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-425%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-61-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-431%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-62-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.60.0 wiring campaign live**
+**UQFF systematic rebuild — v0.61.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.60.0)
+## What is currently shipped (v0.61.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 61 / 2,255** (10 ✓ · 51 ⚠ OPEN_RULING · 53 rulings queued) — astro-model family (053-057); Q-051a self-rectified (4th)
+**Wired so far: 62 / 2,255** (10 ✓ · 52 ⚠ OPEN_RULING · 54 rulings queued) — astro-model family (053-058); complete suite ranking pinned
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -120,6 +120,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_055 | Mice Galaxies NGC4676 | major-merger 10x compression; taxonomy minor/major IFU-falsifiable; 37.5x verifies; Q-051 |
 | PAPER_056 | Red Spider Nebula | 2x wind-radiation class EXACT; 1600 km/s wind chain verified; tier hierarchy 1/2/10 complete; Q-052 |
 | PAPER_057 | Carina Multi-Scale (3-in-1) | 12/12; 12.5x ratio EXACT resolves Q-051a; erosion-vs-compression readings; Q-053 |
+| PAPER_058 | M42 Orion (suite maximum) | complete 10-system ranking pinned; honest 1x-at-peak negative; shock bridge 3 pct; Q-054 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -130,7 +131,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (425 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (431 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -211,7 +212,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.57.0 | Band 1: PAPER_054 | 58 |
 | v0.58.0 | Band 1: PAPER_055 | 59 |
 | v0.59.0 | Band 1: PAPER_056 | 60 |
-| **v0.60.0** ← current | Band 1: PAPER_057 | 61 |
+| v0.60.0 | Band 1: PAPER_057 | 61 |
+| **v0.61.0** ← current | Band 1: PAPER_058 | 62 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

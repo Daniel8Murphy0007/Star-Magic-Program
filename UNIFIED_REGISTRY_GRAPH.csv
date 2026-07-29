@@ -347,3 +347,8 @@ observable,q051a_resolution_carina,paper,PAPER_057,resolution datum
 observable,q051a_resolution_carina,paper,PAPER_055,claim corrected
 observable,mantissa_collision_13275,paper,PAPER_057,primary observation
 observable,mantissa_collision_13275,paper,PAPER_056,Red Spider mantissa pair
+observable,suite_g_grav_ranking,paper,PAPER_058,master dataset
+observable,suite_g_grav_ranking,paper,PAPER_057,Carina ratios input
+observable,m42_peak_honest_negative,paper,PAPER_058,primary derivation
+observable,shock_bridge_m42,paper,PAPER_058,primary derivation
+observable,shock_bridge_m42,paper,PAPER_051,arXiv shock cross-link
