@@ -250,3 +250,9 @@ observable,virx_three_clusters,paper,PAPER_036,virx helper reuse
 observable,agn_lobe_subdominance,paper,PAPER_040,primary application
 observable,agn_lobe_subdominance,paper,PAPER_039,lobe variant reuse
 observable,virx_thermodynamic_scaling,paper,PAPER_040,primary derivation
+observable,uqff_thermostat_equation,paper,PAPER_041,primary derivation
+observable,uqff_thermostat_equation,paper,PAPER_036,virx side of balance
+observable,uqff_thermostat_equation,paper,PAPER_039,lobe side of balance
+observable,icm_entropy_floor_sfe_runaway,paper,PAPER_041,primary derivation
+observable,whim_detection_prediction,paper,PAPER_041,primary derivation
+observable,whim_detection_prediction,paper,PAPER_040,n_b buried-factor systematic

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 44 (8 ✓, 36 ⚠ OPEN_RULING)
+- **Wired:** 45 (8 ✓, 37 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2211
+- **Not yet touched:** 2210
 
 ---
 
@@ -74,7 +74,7 @@
 | ⚠ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum |
 | ⚠ | PAPER_039 | FUBii Buoyancy Variants12to17 ICM |
 | ⚠ | PAPER_040 | XRay Cluster Buoyancy Perseus Coma Virgo |
-| ⬜ | PAPER_041 | Intracluster Medium Physics UQFF |
+| ⚠ | PAPER_041 | Intracluster Medium Physics UQFF |
 | ⬜ | PAPER_042 | Monte Carlo 26Layer Compressed Gravity |
 | ⬜ | PAPER_043 | 26D Energy Structure Mathematical Foundation |
 | ⬜ | PAPER_044 | Pre Big Bang Configuration 26D UQFF |

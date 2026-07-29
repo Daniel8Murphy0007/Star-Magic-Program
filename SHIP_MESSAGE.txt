@@ -1,26 +1,25 @@
-v0.43.0 BAND 1: PAPER_040 wired
+v0.44.0 BAND 1: PAPER_041 wired
 
-PAPER_040 X-Ray Cluster Buoyancy: Perseus, Coma, Virgo
-(OPEN_RULING Q-038):
-  First APPLICATION paper of the FUBii family - the PAPER_036
-  _fubii_virx helper reused across all three canonical clusters
-  (template architecture working as designed):
-    Perseus (A426): -2.024e60 N (validator, = PAPER_036)
-    Coma (A1656):   -2.51e60 N chain VERIFIED - edges Perseus
-                    despite lower sigma because r_h = 2.2 Mpc
-    Virgo (M87):    -3.66e59 N closed form vs -7.2e59 validator
-                    (factor-2 sigma-weighting, disclosed in-paper)
-  Perseus 3C84 lobe = 3.3e57 N VERIFIED: AGN lobes are ~1e-3
-  sub-dominant ICM perturbations (Chandra cavity-enthalpy consistent)
-  Scaling F ~ sigma^3 * r_h: UQFF virx force as an equivalent
-  characterization of cluster thermodynamic state (L_X ~ T)
+PAPER_041 ICM Thermodynamics Through the UQFF Lens (OPEN_RULING Q-039):
+  Synthesis: five FUBii variants (whim/lobe/upar/sfe/ent) unify five
+  ICM problems under F_UBii = F_U - F_Bi - F_i.
+  HEADLINE - UQFF THERMOSTAT EQUATION (from F_lobe = F_virx):
+    P*V*(rho_ICM/rho_lobe)*(v_rise/c) = 3*sigma_X^3*r_h/G
+  The AGN feedback loop in PURE OBSERVABLES - cooling-flow problem
+  resolved without fine-tuning. v_rise ~ 300 km/s (Fabian-consistent);
+  t_heat ~ 1e8 yr (3C84 duty-cycle consistent).
+  VERIFIED: entropy floor S_min = P*V*l_P^2/(k_B*A) = 2.1e-41
+  (K_floor factor 2-3 observed); sfe eps^1.5 runaway = 31.6x per
+  decade (BCG SFR 100x below cooling; Schmidt index 1.4 ~ 3/2
+  Bekenstein-area echo).
+  FALSIFIABLE: WHIM T^(3/2) force peaks at T ~ 3e6 K = exactly the
+  OVII/OVIII absorption sweet spot.
 
-Q-038 queued: Virgo factor-2 canonical choice (closed form vs
-validator weighting - what IS the weighting?); Virgo M87 lobe chain
-2.7e55 vs printed 2.7e51 (1e4, pinned); whim N/m^3-vs-N units
-convention between 038/040; mass-inversion 1e8 gap encoded in
-Q_wave (accept as family convention?).
+Q-039 queued: whim n_b stated 1e-6 cm^-3 (1 m^-3) but USED 1e-12
+m^-3 - the same buried 1e12 factor as PAPER_040's whim example
+(SYSTEMATIC - one ruling covers both papers); V_fil 10x; jet-power
+table exponent mojibake.
 
-Gate 322 assertions 0 failures. Registry 130 rows / 251 edges / 44
-citation ledgers. Wired 44/2,255 (8 clean, 36 OPEN_RULING).
-Next: PAPER_041.
+Gate 328 assertions 0 failures. Registry 133 rows / 257 edges / 45
+citation ledgers. Wired 45/2,255 (8 clean, 37 OPEN_RULING).
+Next: PAPER_042.

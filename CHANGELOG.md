@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.44.0] — 2026-07-29 — BAND 1: PAPER_041
+
+### Added
+- **PAPER_041 dispatch** (ICM Thermodynamics synthesis): five FUBii
+  variants unify five ICM problems. HEADLINE — the UQFF THERMOSTAT
+  EQUATION: P*V*(rho_ICM/rho_lobe)*(v_rise/c) = 3*sigma_X^3*r_h/G,
+  the AGN feedback loop expressed in pure observables, resolving the
+  cooling-flow problem without fine-tuning (v_rise ~ 300 km/s and
+  t_heat ~ 1e8 yr both observation-consistent). VERIFIED chains:
+  entropy floor S_min = 2.1e-41 (K_floor factor 2-3 obs-consistent);
+  sfe eps^1.5 runaway = 31.6x per efficiency decade (BCG SFR 100x
+  suppression; Schmidt-index 1.4 ~ 3/2 Bekenstein echo). Falsifiable:
+  WHIM T^(3/2) force peaks at 3e6 K = the OVII/OVIII absorption sweet
+  spot. OPEN_RULING Q-039 (whim n_b stated-vs-used 1e12 buried factor
+  — SYSTEMATIC with PAPER_040, one ruling covers both; V_fil 10x;
+  jet-power table mojibake).
+- Gate: 328 assertions, 0 failures. Registry: 133 rows / 257 edges / 45 ledgers.
+
+---
+
 ## [0.43.0] — 2026-07-29 — BAND 1: PAPER_040
 
 ### Added

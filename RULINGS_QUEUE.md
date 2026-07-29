@@ -612,6 +612,23 @@ RESOLVED section with the ruling recorded.
   verified with sub-dominance ratio; 1e4 gap pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-039 — PAPER_041 — whim n_b buried factor (systematic) + V_fil + table mojibake
+- **Question:** (a) The whim worked examples in BOTH PAPER_040 and
+  PAPER_041 state n_b = 1e-6 cm^-3 (= 1 m^-3) but USE n_b = 1e-12
+  m^-3 in the arithmetic - a 1e12 buried factor appearing
+  systematically in the whim variant (not in 038's Sculptor example,
+  which used n_b = 10 m^-3 explicitly). Is 1e-12 an intended
+  additional dilution factor (e.g. overdensity normalization) or a
+  units slip? One ruling covers both papers. (b) The cylindrical
+  filament volume prints 1.15e70 m^3; pi*(1.54e23)^2*1.543e24 =
+  1.15e71 (10x). (c) The jet-power table exponents are mojibake
+  (P_jet "2e-5 W" for Perseus etc.).
+- **Best-candidate wired:** thermostat equation + entropy-floor +
+  sfe-runaway chains verified and pinned; whim per-volume value wired
+  as printed with the stated-vs-used 1e12 gap gate-pinned; OVII/OVIII
+  sweet-spot prediction preserved as the falsifiable.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -790,3 +790,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 44/2,255 (8 ✓, 36 ⚠). Next: PAPER_041.
 
 ---
+
+## 2026-07-29 — v0.44.0 — BAND 1: PAPER_041
+
+- PAPER_041 wired (⚠ Q-039): ICM synthesis. Thermostat equation is
+  the headline (cooling flow in pure observables); entropy-floor +
+  sfe-runaway chains verified; whim n_b buried factor found
+  SYSTEMATIC across 040/041 (one ruling).
+- Gate 328/0. Registry 133 rows / 257 edges / 45 ledgers.
+- Campaign: 45/2,255 (8 ✓, 37 ⚠). Next: PAPER_042.
+
+---

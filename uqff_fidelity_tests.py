@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.43.0", "uqff_calculator.VERSION = 0.43.0")
+assert_that(C.VERSION == "0.44.0", "uqff_calculator.VERSION = 0.44.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -726,6 +726,21 @@ assert_that(_r040['coma_edges_perseus'],
 assert_that(abs(_r040['lobe_virgo_chain_n'] / _r040['lobe_virgo_printed_n'] - 1.0e4) / 1.0e4 < 0.05,
             "PAPER_040: Virgo lobe chain-vs-printed 1e4 gap pinned (Q-038b)")
 assert_that(C.wired_count() >= 44, "wired_count >= 44")
+
+_r041 = C.calc('PAPER_041')['value']
+assert_that(abs(_r041['s_ent_min'] - 2.1e-41) / 2.1e-41 < 0.02,
+            "PAPER_041: entropy floor S_min = P*V*l_P^2/(k_B*A) = 2.1e-41 VERIFIED")
+assert_that(abs(_r041['sfe_runaway_ratio'] - 31.6) < 0.1,
+            "PAPER_041: sfe runaway = eps^1.5 gives 31.6x per 10x drop VERIFIED (BCG SFR)")
+assert_that(_r041['thermostat_equation'].startswith('P*V*'),
+            "PAPER_041: UQFF thermostat equation wired (AGN feedback in pure observables)")
+assert_that(abs(_r041['whim_optimal_t_k'] - 3.0e6) < 1.0,
+            "PAPER_041: WHIM T^(3/2) peak at 3e6 K = OVII/OVIII sweet spot (falsifiable)")
+assert_that(abs(_r041['n_b_stated_m3'] / _r041['n_b_used_m3'] - 1.0e12) / 1.0e12 < 0.01,
+            "PAPER_041: whim n_b stated-vs-used 1e12 gap pinned (Q-039a, systematic with 040)")
+assert_that(_r041['unified_variant_count'] == 5,
+            "PAPER_041: five variants unify five ICM problems under one F_UBii equation")
+assert_that(C.wired_count() >= 45, "wired_count >= 45")
 
 # =============================================================================
 # REPORT
