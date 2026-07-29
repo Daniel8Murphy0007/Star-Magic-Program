@@ -1087,6 +1087,29 @@ RESOLVED section with the ruling recorded.
   Eddington footer 0.4302 verified.
 - **Daniel's ruling:** (pending)
 
+### Q-063 — PAPER_067 — k4 namespace + Ug4 exponent artifacts + M87 slip + e172 factor
+- **Question:** (a) k4 = 1e15 is PINNED by dual closure (SgrA* and
+  M87* Ug4 values close exactly), but the production appendix
+  lists "k4 = 2.0, Ug4 vacuum-concentration coupling" — two
+  distinct constants sharing one name; canonize the namespace?
+  (b) CenA and NGC1365 Ug4 print uniform "e-5" exponents but the
+  chains give 1.32e-7 and 3.13e-8 (mantissas match) — confirm
+  chain values? (c) M87 Compressed g_C printed 1.29e20 requires
+  dividing by 1e10; the stated r_shadow = 6.5e10 m gives 1.99e19
+  (factor-6.5 slip) — pin corrected value? Also r_shadow itself:
+  6GM/c^2 for M87* is 5.8e13 m, not 6.5e10 — the printed radius
+  looks 1000x short. (d) F_SgrA = 3.95e31 * (-1.35e172) =
+  -5.33e203 N is internally consistent and uses an e172-family
+  factor — same family as Q-059b's x_2; magnitude interpretation
+  ruling requested jointly with Q-059b.
+- **Notable:** NGC1365 maser chain verifies END-TO-END to the
+  claimed 3.6 pct Chandra enhancement (cleanest observational
+  match in the AGN set); mu_j = 3.38e20 cross-consistent with
+  PAPER_062's Um formula.
+- **Best-candidate wired:** k4 = 1e15 with dual-closure evidence;
+  all M/d chains; maser chain; slip pinned with corrected value.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

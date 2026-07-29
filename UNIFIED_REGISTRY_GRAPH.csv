@@ -402,3 +402,10 @@ primitive,OMEGA_SCM_HZ,observable,lenr_resonance_ratios,omega_LENR clear print
 observable,lenr_resonance_ratios,paper,PAPER_062,identity pin confirmation
 observable,vela_kick_prediction,paper,PAPER_066,kick chain
 observable,vela_kick_prediction,paper,PAPER_063,ensemble-mean consistency
+observable,ug4_agn_coupling,paper,PAPER_067,primary derivation
+primitive,RHO_SCM,observable,ug4_agn_coupling,Ug4 density input
+primitive,KAPPA_PER_DAY,observable,ug4_agn_coupling,decay factor
+observable,ngc1365_maser_chain,paper,PAPER_067,end-to-end chain
+observable,m87_shadow_slip,paper,PAPER_067,slip forensic
+observable,m87_shadow_slip,paper,PAPER_063,e172-family link
+observable,ug4_agn_coupling,paper,PAPER_062,mu_j cross-consistency

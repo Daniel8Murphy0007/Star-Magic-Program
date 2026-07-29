@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.69.0"
+VERSION = "0.70.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3537,5 +3537,63 @@ def _paper_066(dataset):
                     'v_kick = F*dt/M; Edd corr = 1 - SSq*exp(-kappa*t)'),
         'source': 'PAPER_066',
         'residual_pct': abs((1.0 - SSQ * _m.exp(-2.9e-4)) - 0.43) / 0.43 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_067')
+def _paper_067(dataset):
+    """AGN Ug4 Vacuum Concentration: SgrA*/M87*/CenA/NGC1365 (Session 0).
+
+    Ug4 = k4 * rho_SCm * (M_BH/d_g) * exp(-kappa t) * cos(pi t_n) *
+    (1 + f_fb), f_fb = 0.05. ALL FOUR M_BH/d_g chains VERIFIED
+    (3.04e16 / 8.08e16 / 1.77e14 / 4.21e13 kg/m).
+    k4 PINNED = 1e15 by DUAL closure: SgrA* 2.26e-5 and M87*
+    6.02e-5 both match printed values exactly; CenA/NGC1365
+    mantissas close (1.32 / 3.13) at chain exponents e-7/e-8 -
+    their printed uniform "e-5" is mojibake artifact (Q-063b).
+    NOTE: appendix k4 = 2.0 is a DIFFERENT constant (coupling vs
+    scaling) - namespace ruling Q-063a.
+    Chains VERIFIED: S2-orbit omega = 2*pi/16yr = 1.244e-8; SgrA*
+    LENR = 1e-10*(7.854e12/1.25e-8)^2 = 3.95e31 EXACT; CenA jet
+    Um = (3.38e20/3.4e20)*1e46 = 9.94e45 (mu_j = 3.38e20 cross-
+    consistent with PAPER_062); NGC1365 maser end-to-end: omega =
+    2*pi*22.235 GHz = 1.397e11, g_DPM = 2.79e-4 at 0.1 pc, ratio
+    1e-5/2.79e-4 = 3.59 pct matching the claimed 3.6 pct Chandra
+    enhancement.
+    ARITHMETIC SLIP CAUGHT: M87 g_C printed 1.29e20 requires
+    dividing by 1e10, but the stated r_shadow = 6.5e10 m gives
+    1.99e19 - factor-6.5 slip (Q-063c).
+    F_SgrA = 3.95e31 * (-1.35e172) = -5.33e203 N - internally
+    consistent arithmetic; the e172 factor is the same family as
+    Q-059b's x_2 large reading (supporting evidence).
+    """
+    import math as _m
+    msun = 1.989e30
+    k4 = 1.0e15                                        # PINNED dual closure
+    agn = {}
+    for n, (m, d) in {'sgra': (4e6, 2.62e20), 'm87': (6.5e9, 1.60e23),
+                      'cena': (5.5e7, 6.17e23), 'ngc1365': (2e7, 9.46e23)}.items():
+        md = m * msun / d
+        agn[n] = {'m_over_d': md, 'ug4': k4 * RHO_SCM * md * 1.05}
+    g_dpm = 6.674e-11 * 2e7 * msun / (3.086e15) ** 2
+    return {
+        'value': {
+            'k4_pinned': k4,
+            'agn': agn,
+            's2_omega_rad_s': 2 * _m.pi / (16 * 3.156e7),      # 1.244e-8
+            'sgra_lenr_term': 1e-10 * (7.854e12 / 1.25e-8) ** 2,   # 3.95e31 EXACT
+            'cena_um_j_per_m': 3.38e20 / 3.4e20 * 1e46,        # 9.94e45
+            'maser_omega_rad_s': 2 * _m.pi * 22.235e9,         # 1.397e11
+            'ngc1365_g_dpm': g_dpm,                            # 2.79e-4
+            'maser_enhancement_pct': 1e-5 / g_dpm * 100,       # 3.59 ~ 3.6 claimed
+            'm87_gc_printed': 1.29e20,
+            'm87_gc_chain': 6.5e9 * msun / 6.5e10 * 1e-10,     # 1.99e19 slip caught
+            'f_fb': 0.05,
+        },
+        'formula': ('Ug4 = k4*rho_SCm*(M_BH/d_g)*exp(-kappa t)*cos(pi t_n)*(1+f_fb); '
+                    'LENR = 1e-10*(omega_LENR/omega_0)^2'),
+        'source': 'PAPER_067',
+        'residual_pct': abs(1e-5 / g_dpm * 100 - 3.6) / 3.6 * 100,
         'status': 'OPEN_RULING',
     }

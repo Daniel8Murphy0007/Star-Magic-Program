@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.69.0", "uqff_calculator.VERSION = 0.69.0")
+assert_that(C.VERSION == "0.70.0", "uqff_calculator.VERSION = 0.70.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1112,6 +1112,22 @@ assert_that(abs(_r066['eddington_correction'] - 0.4302) < 0.001,
 assert_that(60.0 <= _r066['vela_kick_km_s'] <= 350.0,
             "PAPER_066: Vela kick 296 km/s inside observed 60-350 km/s")
 assert_that(C.wired_count() >= 70, "wired_count >= 70")
+
+_r067 = C.calc('PAPER_067')['value']
+assert_that(abs(_r067['agn']['sgra']['m_over_d'] - 3.04e16) / 3.04e16 < 0.01,
+            "PAPER_067: SgrA* M_BH/d_g = 3.04e16 kg/m verified")
+assert_that(abs(_r067['agn']['sgra']['ug4'] - 2.27e-5) / 2.27e-5 < 0.01
+            and abs(_r067['agn']['m87']['ug4'] - 6.03e-5) / 6.03e-5 < 0.01,
+            "PAPER_067: k4 = 1e15 PINNED by dual closure (SgrA* + M87* Ug4 both match)")
+assert_that(abs(_r067['sgra_lenr_term'] - 3.95e31) / 3.95e31 < 0.01,
+            "PAPER_067: SgrA* LENR term 3.95e31 EXACT chain")
+assert_that(abs(_r067['cena_um_j_per_m'] - 9.94e45) / 9.94e45 < 0.01,
+            "PAPER_067: CenA jet Um = 9.94e45 verified (mu_j cross-consistent with PAPER_062)")
+assert_that(abs(_r067['maser_enhancement_pct'] - 3.6) < 0.1,
+            "PAPER_067: NGC1365 maser 3.59 pct end-to-end matches claimed 3.6 pct")
+assert_that(abs(_r067['m87_gc_chain'] - 1.99e19) / 1.99e19 < 0.01,
+            "PAPER_067: M87 g_C slip caught - chain 1.99e19 vs printed 1.29e20 (Q-063c)")
+assert_that(C.wired_count() >= 71, "wired_count >= 71")
 
 # =============================================================================
 # REPORT

@@ -1063,3 +1063,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 70/2,255 (10 ✓, 60 ⚠). Next: PAPER_067.
 
 ---
+
+## 2026-07-29 — v0.70.0 — BAND 1: PAPER_067
+
+- PAPER_067 wired (⚠ Q-063): AGN Ug4. k4 = 1e15 dual-closure pin;
+  4 M/d chains verified; NGC1365 maser end-to-end 3.6 pct; M87
+  factor-6.5 slip caught; e172-family factor evidence for Q-059b.
+- Campaign: 71/2,255 (10 ✓, 61 ⚠). Next: PAPER_068.
+
+---

@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.70.0] — 2026-07-29 — BAND 1: PAPER_067
+
+### Added
+- **PAPER_067 dispatch** (AGN Ug4 Vacuum Concentration): all four
+  M_BH/d_g chains verified (SgrA*/M87*/CenA/NGC1365); **k4 = 1e15
+  PINNED by dual closure** (SgrA* 2.26e-5 + M87* 6.02e-5 both
+  match print); CenA/NGC mantissas close at chain exponents
+  e-7/e-8 (printed uniform e-5 = mojibake artifact). NGC1365
+  maser chain verifies END-TO-END: 2*pi*22.235 GHz -> g_DPM
+  2.79e-4 at 0.1 pc -> 3.59 pct enhancement matching claimed 3.6
+  pct (cleanest AGN observational match). SgrA* LENR term 3.95e31
+  EXACT; CenA jet Um 9.94e45 verified with mu_j cross-consistent
+  to PAPER_062. M87 g_C factor-6.5 arithmetic slip caught
+  (corrected 1.99e19). SgrA* F uses a -1.35e172 factor —
+  e172-family evidence recorded for Q-059b.
+- OPEN_RULING Q-063 (k4 namespace vs appendix k4 = 2.0; exponent
+  artifacts; M87 slip + shadow radius; e172 magnitude ruling).
+- Gate: 510 assertions, 0 failures. Registry: 211 rows / 409 edges / 71 ledgers.
+
+---
+
 ## [0.69.0] — 2026-07-29 — BAND 1: PAPER_066
 
 ### Added

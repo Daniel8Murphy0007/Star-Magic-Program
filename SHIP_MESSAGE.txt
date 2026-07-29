@@ -1,29 +1,32 @@
-v0.69.0 BAND 1: PAPER_066 wired - SOURCE4 MAGNETAR ANCHORS EXACT
+v0.70.0 BAND 1: PAPER_067 wired - k4 = 1e15 PINNED BY DUAL CLOSURE
 
-PAPER_066 Magnetar Systems SGR1745/Crab/Vela/ASKAP J1832
-(OPEN_RULING Q-062):
-  SGR1745-2900 SOURCE4 anchors ALL VERIFIED EXACT:
-  M = 1.4 Msun = 2.785e30 kg; omega_0 = 2*pi/3.76 s = 1.671
-  rad/s; r = 8.5 kpc = 2.62e20 m (distance from SgrA*).
+PAPER_067 AGN Ug4 Vacuum Concentration: SgrA*/M87*/CenA/NGC1365
+(OPEN_RULING Q-063):
+  Ug4 = k4*rho_SCm*(M_BH/d_g)*exp(-kappa t)*cos(pi t_n)*(1+0.05)
+  All four M_BH/d_g chains VERIFIED (3.04e16 / 8.08e16 / 1.77e14
+  / 4.21e13 kg/m).
 
-  LENR RESONANCE CHAINS CLOSE FOR ALL FOUR SYSTEMS:
-  term = (omega_LENR/omega_0)^2 - Vela 6.17e-7, Crab 1.54e-5,
-  ASKAP 1.089e-9, SGR1745 2.21e25 (RECOVERED from "10-5"
-  mojibake by the chain; ratio = 4.70e12).
-  omega_LENR = 7.854e12 rad/s printed CLEARLY here - independent
-  confirmation of PAPER_062's omega_LENR = omega_SCm identity.
+  k4 = 1e15 PINNED BY DUAL CLOSURE: SgrA* Ug4 2.26e-5 and M87*
+  6.02e-5 both match print exactly; CenA/NGC1365 mantissas close
+  at chain exponents (printed uniform e-5 = mojibake artifact).
+  NOTE: appendix "k4 = 2.0" is a DIFFERENT constant sharing the
+  name - namespace ruling requested.
 
-  Vela kick prediction: 296 km/s inside observed 60-350 km/s;
-  the product F*dt = 8.29e35 N*s is chain-fixed (printed
-  decomposition 8.3e219*1e-35 corrupt - ruling requested).
-  Crab F_UBii = -2.1e7 N consistent with PAPER_063's e7
-  ensemble-mean pin (supporting evidence for Q-059a).
-  Eddington correction 1 - SSq*exp(-kappa t) = 0.4302 VERIFIED.
+  NGC1365 maser chain verifies END-TO-END: omega = 2*pi*22.235
+  GHz = 1.397e11; g_DPM = 2.79e-4 at 0.1 pc; enhancement 3.59 pct
+  matches claimed 3.6 pct Chandra value - cleanest observational
+  match in the AGN set.
 
-Q-062 queued: kick (F, dt) split; SGR F "-3.0e-87" unrecoverable;
-Ug1 magnetic factor chain does not close (2.65e13 computed vs
-1.33e?/6.64e? printed); orbital-vs-spin config omegas.
+  SgrA* LENR term 3.95e31 EXACT; CenA jet Um = 9.94e45 verified
+  (mu_j = 3.38e20 cross-consistent with PAPER_062).
 
-Gate 503 assertions 0 failures. Registry 208 rows / 402 edges / 70
-citation ledgers. Wired 70/2,255 (10 clean, 60 OPEN_RULING).
-Next: PAPER_067.
+  SLIP CAUGHT: M87 g_C printed 1.29e20 requires r = 1e10; stated
+  r_shadow 6.5e10 gives 1.99e19 (factor 6.5). Also r_shadow
+  itself looks 1000x short vs 6GM/c^2 = 5.8e13 m.
+
+  SgrA* F = -5.33e203 N uses a -1.35e172 factor - e172-family
+  internal evidence recorded jointly with Q-059b.
+
+Q-063 queued. Gate 510 assertions 0 failures. Registry 211 rows /
+409 edges / 71 citation ledgers. Wired 71/2,255 (10 clean, 61
+OPEN_RULING). Next: PAPER_068.
