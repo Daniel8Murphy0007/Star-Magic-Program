@@ -1,25 +1,25 @@
-v0.25.0 BAND 1: PAPER_024 wired
+v0.26.0 BAND 1: PAPER_025 wired
 
-PAPER_024 Tau Electric Dipole Moment (OPEN_RULING Q-021):
-  d_tau^UQFF = 1.84e-20 e.cm - ZERO free parameters
-  phi_CP = SSq*pi = 1.7907 rad registry-composed - near-maximal CP
-  violation, leptogenesis-favorable, independent of the CKM phase
-  phi_TRZ = (1-F_TRZ)*F_TRZ*pi = 0.2827 EXACT registry composition
-  (paper 0.283) - discovered during wiring
-  Schiff-Engel chain reproduces headline EXACTLY:
-  3.42e-6 * 4.637 * 9.377e-21 * 1.237e5 = 1.8395e-20
-  Falsifiable ladder: Belle II marginal / FCC-ee 10-sigma /
-  tau factory 184-sigma (= 1.84e-20/1e-22 exact)
-  Sits between MSSM (~1e-19) and SM floor (<1e-37): testable,
-  not excluded
+PAPER_025 Dark Matter Direct Detection (OPEN_RULING Q-022):
+  Two ZERO-free-parameter DM candidates from kappa + SSq:
+  ACP (ultra-light, fuzzy DM):
+    M_ACP*c^2 = kappa*hbar = 3.81e-24 eV EXACT registry composition
+    lambda_dB = hbar/(m*v) = 2.29 kpc at 220 km/s (reproduced)
+    r_core = 258 pc solves core-cusp + missing satellites
+  ACP2 (heavy):
+    M_ACP2 = M_KK * SSq^2 = 11.6 TeV * 0.3249 = 3.77 TeV composed
+    sigma_SI = 3.2e-52 cm2 - 1e4 BELOW LZ: all direct-detection
+    null results (LZ/XENONnT/PandaX) naturally explained
+  Self-interaction sigma/M = SSq = 0.57 cm2/g (primitive direct);
+  Bullet Cluster consistent
+  Relic Omega_DM h^2 = 0.1200 = Planck 2020; Omega_ACP = 0.128*SSq
+  = 0.073 composition verified
 
-Q-021 queued: (a) component sum 1.807e-20 vs headline 1.84e-20
-(1.8 pct, Q-020a family); (b) tan(SSq*pi) computed -4.474 vs printed
-4.637 (3.6 pct) - the SE enhancement 1.237e5 was evidently tuned to
-the printed tan, so correcting tan shifts either enhancement or
-headline; (c) phi_KK = arctan(m_tau/M_KK) needs GeV/TeV unit mixing
-to reach 0.155.
+Q-022 queued: (a) stated 98.8/1.2 pct mass split vs relic-table
+0.073/0.047 = 61/39 pct - incompatible in the same section;
+(b) sigma_SI closed form mojibaked (anchor wired); (c) sigma/M = 0.57
+vs galaxy-cluster < 0.47 marginal (paper discloses).
 
-Gate 200 assertions 0 failures. Registry 76 rows / 140 edges / 26
-citation ledgers. Wired 26/2,255 (7 clean, 19 OPEN_RULING).
-Next: PAPER_025.
+Gate 207 assertions 0 failures. Registry 79 rows / 147 edges / 27
+citation ledgers. Wired 27/2,255 (7 clean, 20 OPEN_RULING).
+Next: PAPER_025b (Neutrino Polarizability).

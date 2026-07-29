@@ -296,6 +296,22 @@ RESOLVED section with the ruling recorded.
   phi_TRZ EXACT composition (1-F_TRZ)*F_TRZ*pi = 0.2827 wired.
 - **Daniel's ruling:** (pending)
 
+### Q-022 — PAPER_025 — DM mass-fraction split + sigma_SI closed form + cluster marginality
+- **Question:** (a) Sec 1.2/6 state ACP = 98.8 pct and ACP2 = 1.2 pct
+  of total DM, but the same sec-6 relic table splits Omega h^2 as
+  0.073 (ACP) + 0.047 (ACP2) = 61/39 pct - the two splits are
+  incompatible. Which is canonical? (b) The sigma_SI closed form is
+  mojibaked in source ("[SSq]^4 G_N M_ACP2 m_N / (p v4)") and its
+  dimensional structure cannot be verified; anchor 3.2e-52 cm2 wired.
+  What is the exact closed form? (c) Self-interaction sigma/M = SSq =
+  0.57 cm2/g exceeds the galaxy-cluster constraint < 0.47 (paper
+  discloses "Marginal") - does a cluster-regime suppression apply?
+- **Best-candidate wired:** M_ACP = kappa*hbar EXACT and M_ACP2 =
+  M_KK*SSq^2 compositions verified; relic split 0.073/0.047 wired
+  (arithmetically consistent with 0.128*SSq and the 0.1200 total);
+  98.8/1.2 exposed as stated pair.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

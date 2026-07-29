@@ -594,3 +594,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 26/2,255 (7 ✓, 19 ⚠). Next: PAPER_025.
 
 ---
+
+## 2026-07-29 — v0.26.0 — BAND 1: PAPER_025
+
+- PAPER_025 wired (⚠ Q-022): dark matter. M_ACP = kappa*hbar EXACT;
+  M_ACP2 = M_KK*SSq^2; sigma/M = SSq primitive direct; relic split
+  arithmetic verified (0.128*SSq = 0.073) but 98.8/1.2 stated split
+  incompatible — queued.
+- Gate 207/0. Registry 79 rows / 147 edges / 27 ledgers.
+- Campaign: 27/2,255 (7 ✓, 20 ⚠). Next: PAPER_025b (Neutrino Polarizability).
+
+---

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.25.0"
-description = "UQFF Star-Magic-Program v0.25.0: PAPER_024 wired (tau EDM: d_tau = 1.84e-20 e.cm zero-free-parameter; phi_CP = SSq*pi = 1.7907 rad near-maximal; phi_TRZ = (1-F_TRZ)*F_TRZ*pi = 0.2827 EXACT composition; Schiff-Engel chain reproduces headline; tau factory 184-sigma). Q-021 queued (sum gap, tan print, phi_KK units). Wired 26/2255, gate 200/0. Registry 76 rows / 140 edges / 26 ledgers."
+version = "0.26.0"
+description = "UQFF Star-Magic-Program v0.26.0: PAPER_025 wired (dark matter: M_ACP = kappa*hbar = 3.81e-24 eV EXACT; M_ACP2 = M_KK*SSq^2 = 3.77 TeV; sigma/M = SSq = 0.57 cm2/g; sigma_SI 1e4 below LZ explains all nulls; Omega h^2 = 0.1200 = Planck). Q-022 queued (98.8/1.2 vs 61/39 split). Wired 27/2255, gate 207/0. Registry 79 rows / 147 edges / 27 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

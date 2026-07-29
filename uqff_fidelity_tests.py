@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.25.0", "uqff_calculator.VERSION = 0.25.0")
+assert_that(C.VERSION == "0.26.0", "uqff_calculator.VERSION = 0.26.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -458,6 +458,21 @@ assert_that(abs(_r024['component_sum'] - 1.8073e-20) < 1e-24,
 assert_that(abs(_r024['tan_phi_cp_computed'] + 4.4737) < 0.001,
             "PAPER_024: tan(SSq*pi) = -4.474 computed (paper 4.637, 3.6 pct - Q-021b)")
 assert_that(C.wired_count() >= 26, "wired_count >= 26")
+
+_r025 = C.calc('PAPER_025')['value']
+assert_that(abs(_r025['m_acp_ev'] - 3.81e-24) / 3.81e-24 < 0.005,
+            "PAPER_025: M_ACP = kappa*hbar = 3.81e-24 eV EXACT registry composition")
+assert_that(abs(_r025['lambda_db_kpc'] - 2.29) < 0.02,
+            "PAPER_025: lambda_dB = hbar/(m*v) = 2.29 kpc at 220 km/s reproduced")
+assert_that(abs(_r025['m_acp2_tev'] - 3.77) < 0.01,
+            "PAPER_025: M_ACP2 = M_KK*SSq^2 = 3.769 TeV registry-composed (~paper 3.77)")
+assert_that(abs(_r025['self_interaction_cm2_g'] - 0.57) < 1e-15,
+            "PAPER_025: DM self-interaction sigma/M = SSq = 0.57 cm2/g primitive direct")
+assert_that(abs(_r025['relic_acp_check'] - 0.073) < 0.001,
+            "PAPER_025: Omega_ACP = 0.128*SSq = 0.073 composition checks")
+assert_that(abs(_r025['omega_dm_h2'] - 0.1200) < 1e-12,
+            "PAPER_025: Omega_DM h^2 = 0.1200 = Planck 2020 anchor")
+assert_that(C.wired_count() >= 27, "wired_count >= 27")
 
 # =============================================================================
 # REPORT

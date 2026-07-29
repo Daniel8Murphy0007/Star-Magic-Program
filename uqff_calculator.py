@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.25.0"
+VERSION = "0.26.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1190,5 +1190,59 @@ def _paper_024(dataset):
                     '*enhancement; phi_TRZ = (1-F_TRZ)*F_TRZ*pi'),
         'source': 'PAPER_024',
         'residual_pct': abs((1.71e-20 + 9.3e-22 + 3.2e-23 + 1.1e-23) - 1.84e-20) / 1.84e-20 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_025')
+def _paper_025(dataset):
+    """Dark Matter Direct Detection via UQFF (Session 0).
+
+    Two zero-free-parameter DM candidates:
+    ACP (ultra-light): M_ACP*c^2 = kappa*hbar = 3.81e-24 eV EXACT
+    registry composition (kappa in s^-1 = KAPPA_PER_DAY/86400);
+    fuzzy DM, lambda_dB = hbar/(m*v) = 2.29 kpc at 220 km/s;
+    r_core = 258 pc solves core-cusp.
+    ACP2 (heavy): M_ACP2 = M_KK * SSq^2 = 11.6 TeV * 0.3249 = 3.77 TeV
+    registry-composed; sigma_SI = 3.2e-52 cm^2, 1e4 below LZ -
+    explains ALL null direct-detection results.
+    Self-interaction sigma/M = SSq = 0.57 cm^2/g (primitive direct).
+    Relic Omega_DM h^2 = 0.1200 = Planck 2020 exact.
+    Q-022: (a) mass-fraction split 98.8/1.2 pct stated but relic split
+    0.073/0.047 = 61/39 pct - same section, incompatible; (b) sigma_SI
+    closed form mojibaked (dimensional form unverifiable, anchor
+    wired); (c) galaxy-cluster constraint < 0.47 vs 0.57 marginal
+    (paper discloses honestly).
+    """
+    import math as _m
+    hbar, e_chg = 1.054571817e-34, 1.602176634e-19
+    kappa_per_s = KAPPA_PER_DAY / 86400.0            # 5.787e-9 s^-1
+    m_acp_ev = kappa_per_s * hbar / e_chg            # 3.81e-24 eV EXACT
+    m_acp_kg = kappa_per_s * hbar / 8.98755179e16
+    lambda_db_kpc = hbar / (m_acp_kg * 2.2e5) / 3.0857e19
+    m_acp2_tev = 11.6 * SSQ ** 2                     # 3.769 TeV
+    return {
+        'value': {
+            'm_acp_ev': m_acp_ev,                    # 3.81e-24
+            'lambda_db_kpc': lambda_db_kpc,          # 2.29
+            'm_acp2_tev': m_acp2_tev,                # 3.77 = M_KK*SSq^2
+            'sigma_si_cm2': 3.2e-52,                 # anchor (Q-022b)
+            'lz_limit_cm2': 9.2e-48,
+            'below_lz_factor': 9.2e-48 / 3.2e-52,    # ~2.9e4
+            'self_interaction_cm2_g': SSQ,           # 0.57 primitive direct
+            'bullet_cluster_limit': 1.25,
+            'cluster_limit': 0.47,                   # marginal (Q-022c)
+            'omega_dm_h2': 0.1200,                   # = Planck 2020
+            'relic_split': {'acp': 0.073, 'acp2': 0.047},
+            'relic_acp_check': 0.128 * SSQ,          # 0.073 composition
+            'mass_fraction_stated_pct': (98.8, 1.2), # Q-022a vs 61/39
+            'r_core_pc': 258.0,
+            'soliton_mass_msun': 1.0e8,
+            'fcc_hh_threshold_tev': m_acp2_tev,
+        },
+        'formula': ('M_ACP*c^2 = kappa*hbar; M_ACP2 = M_KK*SSq^2; sigma/M = SSq; '
+                    'Omega_ACP = 0.128*SSq = 0.073; lambda_dB = hbar/(m*v)'),
+        'source': 'PAPER_025',
+        'residual_pct': abs(m_acp_ev - 3.81e-24) / 3.81e-24 * 100,
         'status': 'OPEN_RULING',
     }

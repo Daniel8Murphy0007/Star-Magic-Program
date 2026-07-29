@@ -139,3 +139,10 @@ observable,tau_edm_uqff,paper,PAPER_023,Schiff-Engel Delta_a_tau input
 observable,cp_phase_ssq_pi,paper,PAPER_024,primary derivation
 observable,uqff_phase_hierarchy,paper,PAPER_024,primary derivation
 observable,uqff_phase_hierarchy,paper,PAPER_022,M_KK input for phi_KK
+primitive,KAPPA_PER_DAY,observable,acp_ultralight_dm_mass,M_ACP = (kappa/86400)*hbar
+primitive,SSQ,observable,acp2_heavy_dm_mass,M_ACP2 = M_KK*SSq^2
+primitive,SSQ,observable,dm_self_interaction_ssq,sigma/M = SSq direct
+observable,acp_ultralight_dm_mass,paper,PAPER_025,primary derivation
+observable,acp2_heavy_dm_mass,paper,PAPER_025,primary derivation
+observable,acp2_heavy_dm_mass,paper,PAPER_022,M_KK = 11.6 TeV input
+observable,dm_self_interaction_ssq,paper,PAPER_025,primary derivation

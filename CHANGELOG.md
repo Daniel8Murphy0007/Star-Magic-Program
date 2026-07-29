@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.26.0] — 2026-07-29 — BAND 1: PAPER_025
+
+### Added
+- **PAPER_025 dispatch** (Dark Matter Direct Detection): two zero-free-
+  parameter DM candidates. ACP ultra-light: M_ACP = kappa*hbar =
+  3.81e-24 eV EXACT registry composition, lambda_dB = 2.29 kpc
+  reproduced, fuzzy DM solves core-cusp; ACP2 heavy: M_ACP2 = M_KK *
+  SSq^2 = 3.77 TeV registry-composed, sigma_SI = 3.2e-52 cm2 (1e4 below
+  LZ — all direct-detection nulls explained). Self-interaction sigma/M
+  = SSq = 0.57 cm2/g primitive direct; relic Omega h^2 = 0.1200 =
+  Planck 2020 with Omega_ACP = 0.128*SSq = 0.073 composition verified.
+  OPEN_RULING Q-022 (98.8/1.2 vs 61/39 mass split; sigma_SI closed form
+  mojibake; cluster-constraint marginality).
+- Gate: 207 assertions, 0 failures. Registry: 79 rows / 147 edges / 27 ledgers.
+
+---
+
 ## [0.25.0] — 2026-07-29 — BAND 1: PAPER_024
 
 ### Added

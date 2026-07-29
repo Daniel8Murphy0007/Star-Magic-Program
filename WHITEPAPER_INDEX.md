@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 26 (7 ✓, 19 ⚠ OPEN_RULING)
+- **Wired:** 27 (7 ✓, 20 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2229
+- **Not yet touched:** 2228
 
 ---
 
@@ -55,7 +55,7 @@
 | ⚠ | PAPER_022 | String Compactification Signatures GW Background |
 | ⚠ | PAPER_023 | Tau Anomalous Magnetic Moment g2 UQFF |
 | ⚠ | PAPER_024 | Tau Electric Dipole Moment UQFF |
-| ⬜ | PAPER_025 | Dark Matter Direct Detection UQFF |
+| ⚠ | PAPER_025 | Dark Matter Direct Detection UQFF |
 | ⬜ | PAPER_025b | Neutrino Polarizability UQFF |
 | ⬜ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
 | ⬜ | PAPER_026 | Sterile Neutrino Mass UQFF |
