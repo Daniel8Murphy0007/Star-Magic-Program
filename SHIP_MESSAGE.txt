@@ -1,27 +1,26 @@
-v0.90.0 BAND 1: PAPER_087 wired - AT2019qiz REAL-EVENT ANCHORS
+v0.91.0 BAND 1: PAPER_088 wired - NEUTRINO DETECTABILITY FORK
 
-PAPER_087 AT2019qiz Tidal Disruption Event (OPEN_RULING Q-083):
-  Real-event anchors (Nicholl+2020, closest optical TDE):
-  M_BH pinned as 10^6.45 = 2.82e6 Msun ("10645" caret drop);
-  DISTANCE CHAIN CLOSES UNDER REGISTRY H0: 0.0206*c/70 = 88.2
-  Mpc ~ stated 90 Mpc - another Session-0 canonical-H0
-  consistency.
+PAPER_088 Neutrino SED from SgrA* (OPEN_RULING Q-084):
+  Three channels: Hawking (negligible, consistent 081); corona
+  pp/p-gamma (dominant; gamma = 2.2, E_cut = 5 PeV IceCube-
+  like); TRZ vacuum enhancement.
 
-  Chains EXACT: L_Edd = 3.55e44 erg/s; eta = 0.1*[SCm] = 0.099;
-  L_peak deviation -8.3 pct vs Nicholl+2020; t_fb = 27*(1 +
-  0.06*SSq) = 27.9 d; kappa half-life ln2/KAPPA = 1386 d with
-  the observed 60-d decline HONESTLY disclosed and physically
-  resolved (viscous timescale dominates; kappa = global system
-  coherence).
+  f_TRZ = 0.01 DRIFT, 3RD INSTANCE - and here the ruling
+  changes a FALSIFIABLE PREDICTION:
+  - drift reading: excess = 1.01 (+1 pct) - NOT detectable by
+    IceCube-Gen2
+  - canonical F_TRZ = 0.1: excess = 1.10 (+10 pct) - potentially
+    a DETECTABLE SgrA* point-source excess
+  BOTH branches wired pending your ruling (no in-paper
+  implemented-value proof here, unlike 081).
 
-  SIBLING FLAG: eta = eta_GR*[SCm] (x0.99, REDUCED) here vs
-  eta_Edd*(1+[SCm]) (x1.99, DOUBLED) in 075/078 - opposite
-  directions with the same constant; context ruling requested.
+  Flavor null ROBUST under both readings: (1:1:1)*(1+0.001*
+  f_TRZ) unmeasurable - consistent with IceCube flavor
+  democracy. Ug4 baseline 3.352941e22 cross-consistent with
+  PAPER_086 via LIVE gate check. AGN-active conditional ~5 pct
+  (~3 sigma Gen2) recorded. Mixed excess prints (0.3/1.0/0.35
+  pct) pinned as internal inconsistency.
 
-  DEFECTS: rise-time arithmetic (x1.017 gives 29.5 d, printed
-  28.5); Batch-22 table lists ASKAP period "2.78 h" vs
-  PAPER_069's measured 44 min.
-
-Q-083 queued. Gate 638 assertions 0 failures. Registry 256 rows /
-507 edges / 91 citation ledgers. Wired 91/2,255 (10 clean, 81
-OPEN_RULING). Next: PAPER_088.
+Q-084 queued. Gate 644 assertions 0 failures. Registry 258 rows /
+512 edges / 92 citation ledgers. Wired 92/2,255 (10 clean, 82
+OPEN_RULING). Next: PAPER_089.

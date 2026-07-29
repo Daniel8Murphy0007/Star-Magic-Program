@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.91.0] — 2026-07-29 — BAND 1: PAPER_088
+
+### Added
+- **PAPER_088 dispatch** (Neutrino SED from SgrA*): f_TRZ = 0.01
+  drift 3RD instance — and here the ruling changes a FALSIFIABLE
+  PREDICTION: drift +1 pct excess (undetectable) vs canonical
+  F_TRZ +10 pct (potentially IceCube-Gen2 detectable point-source
+  excess). BOTH branches wired pending ruling. Flavor null
+  (1:1:1) ROBUST under both readings; Ug4 baseline live-gate
+  cross-consistent with PAPER_086; corona parameters IceCube-like
+  (gamma 2.2, 5 PeV cutoff); AGN-active ~5 pct conditional
+  falsifiable; mixed excess prints (0.3/1.0/0.35) pinned.
+- OPEN_RULING Q-084.
+- Gate: 644 assertions, 0 failures. Registry: 258 rows / 512 edges / 92 ledgers.
+
+---
+
 ## [0.90.0] — 2026-07-29 — BAND 1: PAPER_087
 
 ### Added

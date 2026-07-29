@@ -507,3 +507,8 @@ primitive,H0_GRID,observable,at2019qiz_tde,distance chain
 observable,tde_kappa_honesty,paper,PAPER_087,honest disclosure
 primitive,KAPPA_PER_DAY,observable,tde_kappa_honesty,half-life chain
 observable,tde_kappa_honesty,paper,PAPER_069,ASKAP period conflict
+observable,neutrino_sed_fork,paper,PAPER_088,detectability fork
+primitive,F_TRZ,observable,neutrino_sed_fork,canonical fork value
+observable,neutrino_sed_fork,paper,PAPER_081,drift family
+observable,neutrino_flavor_null,paper,PAPER_088,robust null
+observable,neutrino_flavor_null,paper,PAPER_086,Ug4 cross-consistency

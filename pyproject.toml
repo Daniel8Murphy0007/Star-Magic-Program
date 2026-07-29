@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.90.0"
-description = "UQFF Star-Magic-Program v0.90.0: PAPER_087 wired (AT2019qiz TDE: M_BH = 10^6.45 caret pin; distance chain closes under registry H0; eta = 0.099 EXACT with opposite-direction sibling flag vs 1.99; L_peak -8.3 pct EXACT vs Nicholl+2020; t_fb 0.06*SSq chain EXACT; kappa 1386-d half-life honestly resolved vs 60-d decline; ASKAP period conflict vs 069). Q-083 queued. Wired 91/2255, gate 638/0. Registry 256 rows / 507 edges / 91 ledgers."
+version = "0.91.0"
+description = "UQFF Star-Magic-Program v0.91.0: PAPER_088 wired (neutrino SED: f_TRZ drift 3rd instance with a DETECTABILITY FORK - drift +1 pct undetectable vs canonical +10 pct possibly IceCube-Gen2 detectable, both wired pending ruling; flavor null robust under both; Ug4 baseline live-gate cross-consistent with 086; mixed excess prints pinned). Q-084 queued. Wired 92/2255, gate 644/0. Registry 258 rows / 512 edges / 92 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

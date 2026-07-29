@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 91 (10 ✓, 81 ⚠ OPEN_RULING)
+- **Wired:** 92 (10 ✓, 82 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2164
+- **Not yet touched:** 2163
 
 ---
 
@@ -121,7 +121,7 @@
 | ⚠ | PAPER_085 | Page Curve UQFF |
 | ⚠ | PAPER_086 | Ug4 AGN Feedback UQFF |
 | ⚠ | PAPER_087 | AT2019qiz TDE UQFF |
-| ⬜ | PAPER_088 | Neutrino SED UQFF |
+| ⚠ | PAPER_088 | Neutrino SED UQFF |
 | ⬜ | PAPER_089 | UQFF Master Equation Derivation |
 | ⬜ | PAPER_090 | MUGE Compressed Gravity |
 | ⬜ | PAPER_091 | MUGE Resonance 14 Mode |

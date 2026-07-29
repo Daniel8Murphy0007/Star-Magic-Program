@@ -1264,3 +1264,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 91/2,255 (10 ✓, 81 ⚠). Next: PAPER_088.
 
 ---
+
+## 2026-07-29 — v0.91.0 — BAND 1: PAPER_088
+
+- PAPER_088 wired (⚠ Q-084): neutrino SED. Detectability fork
+  (drift +1 pct vs canonical +10 pct) both wired; flavor null
+  robust; Ug4 live cross-check; mixed excess prints pinned.
+- Campaign: 92/2,255 (10 ✓, 82 ⚠). Next: PAPER_089.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.90.0"
+VERSION = "0.91.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4597,5 +4597,52 @@ def _paper_087(dataset):
                     'Mdot_fb ~ (t/t_fb)^(-5/3); half-life = ln2/kappa'),
         'source': 'PAPER_087',
         'residual_pct': abs((2.20 / 2.4 - 1) * 100),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_088')
+def _paper_088(dataset):
+    """Neutrino SED from SgrA* (Session 0, Batch 21).
+
+    Three channels: Hawking (negligible, T_H ~ 1e-14 K -
+    consistent 081), corona pp/p-gamma (dominant, gamma = 2.2,
+    E_cut = 5 PeV - IceCube-like), TRZ vacuum enhancement.
+    f_TRZ = 0.01 DRIFT 3RD INSTANCE (after 081/085) - and HERE
+    THE PHYSICS FORKS (Q-084a): drift reading gives excess
+    1 + 0.01 = 1.01 (+1 pct, NOT detectable by IceCube-Gen2);
+    canonical F_TRZ = 0.1 gives 1.10 (+10 pct) - potentially
+    DETECTABLE point-source excess. The ruling changes a
+    falsifiable prediction, so BOTH readings are wired.
+    Flavor null ROBUST under both: (1:1:1)*(1 + 0.001*f_TRZ) is
+    unmeasurable at either value - consistent with IceCube
+    approximate flavor democracy.
+    Ug4 baseline 3.352941e22 cross-consistent with PAPER_086.
+    INTERNAL INCONSISTENCY (Q-084b): abstract says 0.3 pct
+    excess, sections say 1.0 pct, summary lists both +1.0 and
+    +0.35 - mixed excess values pinned.
+    AGN-active conditional: A_AGN >> 10 pushes Ug4 term to ~5
+    pct (~3 sigma Gen2) - conditional falsifiable.
+    4/4 phase-3 validation tests recorded.
+    """
+    return {
+        'value': {
+            'domain': '1.11 (Batch 21 NeutrinoSEDModule)',
+            'gamma': 2.2, 'e_cut_pev': 5.0,
+            'excess_drift': 1.0 + 0.01,                    # 1.01 as printed
+            'excess_canonical': 1.0 + F_TRZ,               # 1.10 canonical fork
+            'detectability_fork': 'drift +1 pct undetectable; canonical +10 pct possibly Gen2-detectable',
+            'flavor_ratio': (1, 1, 1),
+            'flavor_perturbation_drift': 0.001 * 0.01,     # 1e-5 unmeasurable
+            'flavor_perturbation_canonical': 0.001 * F_TRZ,    # 1e-4 unmeasurable
+            'ug4_baseline_cross': 3.352941e22,             # = 086 anchor
+            'excess_values_printed': (0.3, 1.0, 0.35),     # Q-084b mixed
+            'agn_active_conditional_pct': 5.0,
+            'phase3_tests': 4,
+        },
+        'formula': ('Phi = Phi0*(E/TeV)^-2.2*exp(-E/5PeV)*(1+f_TRZ)*(1+f_Ug4*Ug4/Ug4_ref); '
+                    'flavor (1:1:1)*(1+0.001*f_TRZ)'),
+        'source': 'PAPER_088',
+        'residual_pct': abs((1.0 + F_TRZ) - 1.01) / 1.01 * 100,
         'status': 'OPEN_RULING',
     }

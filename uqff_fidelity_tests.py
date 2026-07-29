@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.90.0", "uqff_calculator.VERSION = 0.90.0")
+assert_that(C.VERSION == "0.91.0", "uqff_calculator.VERSION = 0.91.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1407,6 +1407,19 @@ assert_that(abs(_r087['t_fb_uqff_d'] - 27.9) < 0.05,
 assert_that(abs(_r087['kappa_half_life_d'] - 1386.0) < 1.0,
             "PAPER_087: kappa half-life 1386 d EXACT - honest 60-d mismatch disclosed + resolved")
 assert_that(C.wired_count() >= 91, "wired_count >= 91")
+
+_r088 = C.calc('PAPER_088')['value']
+assert_that(abs(_r088['excess_canonical'] - 1.10) < 1e-12,
+            "PAPER_088: canonical F_TRZ gives +10 pct excess - detectability fork wired (Q-084a)")
+assert_that(abs(_r088['excess_drift'] - 1.01) < 1e-12,
+            "PAPER_088: drift reading +1 pct carried alongside")
+assert_that(_r088['flavor_perturbation_canonical'] < 1e-3,
+            "PAPER_088: flavor null ROBUST under both readings (unmeasurable)")
+assert_that(abs(_r088['ug4_baseline_cross'] - C.calc('PAPER_086')['value']['ug4_anchor_j_m3']) < 1e15,
+            "PAPER_088: Ug4 baseline cross-consistent with the live PAPER_086 anchor")
+assert_that(len(_r088['excess_values_printed']) == 3,
+            "PAPER_088: mixed excess values (0.3/1.0/0.35) pinned (Q-084b)")
+assert_that(C.wired_count() >= 92, "wired_count >= 92")
 
 # =============================================================================
 # REPORT

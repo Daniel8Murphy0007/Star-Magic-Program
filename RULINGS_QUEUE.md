@@ -1522,6 +1522,27 @@ RESOLVED section with the ruling recorded.
   conflicts and siblings queued.
 - **Daniel's ruling:** (pending)
 
+### Q-084 — PAPER_088 — f_TRZ detectability fork + mixed excess prints
+- **Question:** (a) f_TRZ = 0.01 drift 3RD instance (after
+  081/085) - but HERE the ruling changes a FALSIFIABLE
+  PREDICTION: drift reading gives a +1 pct neutrino excess
+  (undetectable by IceCube-Gen2); canonical F_TRZ = 0.1 gives
+  +10 pct - potentially a detectable SgrA* point-source excess.
+  Which is the canonical UQFF neutrino prediction? (BOTH wired
+  pending ruling; the 081-family evidence favors canonical, but
+  unlike 081 there is no in-paper implemented-value proof here.)
+  (b) The excess is printed THREE ways: 0.3 pct (abstract),
+  1.0 pct (sections/summary), +0.35 pct (summary Ug4 row) -
+  internal inconsistency pin. (c) Flavor null is ROBUST under
+  both readings (unmeasurable) - confirm as the safe wired null.
+- **Notable:** corona parameters IceCube-like (gamma 2.2, cutoff
+  5 PeV); Ug4 baseline live-gate cross-consistent with 086;
+  AGN-active ~5 pct conditional falsifiable recorded; Hawking
+  channel negligible consistent with 081.
+- **Best-candidate wired:** both fork branches + robust null +
+  cross-consistency.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
