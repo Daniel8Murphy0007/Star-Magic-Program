@@ -425,6 +425,26 @@ RESOLVED section with the ruling recorded.
   wired.
 - **Daniel's ruling:** (pending)
 
+### Q-029 — PAPER_030 — F_suppress semantics + asymmetry claim + M_dark discrepancy
+- **Question:** (a) "F_suppress" is used for BOTH the suppressed
+  amplitude fraction (0.748, sec 4.2 first use) and effectively its
+  survivor complement in the BR formula BR = BR_tree*(1-F_suppress);
+  the abstract prints "F_suppress = 2.7x10?" (exponent mojibake -
+  0.27 survivor? 2.5e-1?). Canonical semantics? (b) The paper contains
+  an in-text self-correction ("Wait - evaluating more carefully...
+  0.738 -> 0.748") left standing - paperwork cleanup flag.
+  (c) CP-like asymmetry claim A_LFV ~ sqrt(SSq) = 0.755, but the
+  limit-implied asymmetry is (5.9-4.9)/(5.9+4.9) = 0.093 - 8x apart
+  (not significant yet; LHCb Upgrade II will test). Is sqrt(SSq) the
+  canonical asymmetry prediction? (d) M_dark: abstract says >= 2.8 TeV,
+  sec 4.3 derives 2.2 TeV via m_B*exp(pi*t_n/2) - which is the UQFF
+  number (2.8 appears to be the flavor-diagonal Z-prime constraint,
+  not the UQFF derivation)?
+- **Best-candidate wired:** computed F_suppress = 0.749 with explicit
+  survivor split; BR saturation + falsifiability wired; M_dark = 2.16
+  TeV from the closed form; E_react = tan^4(theta_C) verified.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

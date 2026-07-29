@@ -673,3 +673,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 33/2,255 (7 ✓, 26 ⚠). Next: PAPER_030.
 
 ---
+
+## 2026-07-29 — v0.33.0 — BAND 1: PAPER_030
+
+- PAPER_030 wired (⚠ Q-029): dark mediators. BR saturates LHCb bound
+  (sharply falsifiable); E_react = tan^4(theta_C) clean; t_n shared
+  with 027 confirms corpus consistency. Registry crosses 100 rows.
+- Gate 256/0. Registry 100 rows / 195 edges / 34 ledgers.
+- Campaign: 34/2,255 (7 ✓, 27 ⚠). Next: PAPER_031.
+
+---

@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.33.0] — 2026-07-29 — BAND 1: PAPER_030
+
+### Added
+- **PAPER_030 dispatch** (Dark Sector Mediators): mediator exchange
+  encoded in Ug4; F_suppress = cos^2(pi*t_n) = 0.749 computed (paper
+  self-corrects 0.738 -> 0.748 in-text); BR_UQFF = BR_tree*(1-F) =
+  5.8e-6 SATURATES the LHCb bound — sharply falsifiable at LHCb
+  Upgrade II (7.9e-7 reach, scaling verified). M_dark = m_B*
+  exp(pi*t_n/2) = 2.16 TeV; E_react = tan^4(theta_C) = 2.84e-3 closed
+  form verified; one t_n vacuum geometry covers Z-prime / leptoquark /
+  HNL suppression. OPEN_RULING Q-029 (F_suppress semantics + abstract
+  mojibake; asymmetry sqrt(SSq) = 0.755 vs limit-ratio 0.093; M_dark
+  2.2 vs 2.8 TeV).
+- **Registry crosses 100 rows.**
+- Gate: 256 assertions, 0 failures. Registry: 100 rows / 195 edges / 34 ledgers.
+
+---
+
 ## [0.32.0] — 2026-07-29 — BAND 1: PAPER_029
 
 ### Added

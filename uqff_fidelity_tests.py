@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.32.0", "uqff_calculator.VERSION = 0.32.0")
+assert_that(C.VERSION == "0.33.0", "uqff_calculator.VERSION = 0.33.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -565,6 +565,21 @@ assert_that(_r029['n_kk_62_check'] == 62,
 assert_that(abs(_r029['icecube_break_pev'] - 5.8) < 1e-12,
             "PAPER_029: IceCube spectral break = M_KK/2 = 5.8 PeV falsifiable")
 assert_that(C.wired_count() >= 33, "wired_count >= 33")
+
+_r030 = C.calc('PAPER_030')['value']
+assert_that(abs(_r030['f_suppress'] - 0.749) < 0.002,
+            "PAPER_030: F_suppress = cos^2(pi*3.833) = 0.749 (paper self-corrects to 0.748)")
+assert_that(abs(_r030['br_uqff'] - 5.8e-6) / 5.8e-6 < 0.01,
+            "PAPER_030: BR_UQFF = 2.3e-5*(1-F) = 5.8e-6 saturates LHCb bound - falsifiable")
+assert_that(abs(_r030['m_dark_gev'] - 2163.0) / 2163.0 < 0.005,
+            "PAPER_030: M_dark = m_B*exp(pi*t_n/2) = 2163 GeV ~ 2.2 TeV")
+assert_that(abs(_r030['e_react_tan4_cabibbo'] - 2.846e-3) / 2.846e-3 < 0.005,
+            "PAPER_030: E_react = tan^4(theta_C) = 2.84e-3 closed form verified")
+assert_that(abs(_r030['hl_lhc_reach'] - 7.9e-7) / 7.9e-7 < 0.01,
+            "PAPER_030: HL-LHC reach = 5.9e-6*sqrt(5.4/300) = 7.9e-7 scaling verified")
+assert_that(abs(_r030['t_n_lfv'] - 3.8327) < 0.001,
+            "PAPER_030: t_n = 3.833 shared with PAPER_027 (corpus consistency)")
+assert_that(C.wired_count() >= 34, "wired_count >= 34")
 
 # =============================================================================
 # REPORT

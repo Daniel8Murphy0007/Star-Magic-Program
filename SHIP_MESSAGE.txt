@@ -1,25 +1,22 @@
-v0.32.0 BAND 1: PAPER_029 wired
+v0.33.0 BAND 1: PAPER_030 wired - REGISTRY CROSSES 100 ROWS
 
-PAPER_029 New Physics at TeV Scale (OPEN_RULING Q-028):
-  The 95-percent problem: UQFF as a 100-percent theory.
-  Baryonic (5 pct) from Ug1-4; dark matter (27 pct) from SCm;
-  dark energy (68 pct) from the UA aether tensor.
-  Budget compositions: f_SM raw = SSq^4 = 0.1056 -> corrected
-  0.0485 ~ 5 pct; f_DM = 0.268; f_Lambda = 0.683 (residual checks).
-  DISCOVERED DURING WIRING: the printed correction formula
-  SSq^4/(SSq^-1 + SSq^-1/2) evaluates to SSq^6 = 0.0343 EXACTLY -
-  identity candidate gate-pinned.
-  Falsifiable: IceCube spectral break at M_KK/2 = 5.8 PeV (3-sigma
-  with 20 yr); KM3NeT angular anomaly = SSq^2 = 0.325.
-  KK-exponent audit: claimed M_Pl*SSq^8 fails by 13 orders; true
-  exponent 61.5; NOTE 62 = 2*D_crit + SO_5 (the PAPER_2137
-  frame-cadence integer) gives 8.9 TeV - ruling queued.
+PAPER_030 Dark Sector Mediators (OPEN_RULING Q-029):
+  Mediator exchange (Z-prime / leptoquark / HNL) encoded in ONE
+  vacuum geometry: Ug4 = k4*rho_vac*cos(pi*t_n)*[SCm]
+  F_suppress = cos^2(pi*3.833) = 0.749 - 74.9 pct amplitude
+  suppression, 25.1 pct survives
+  BR_UQFF = 2.3e-5 * 0.251 = 5.8e-6 SATURATES the LHCb bound:
+  sharply falsifiable - LHCb Upgrade II (reach 7.9e-7, scaling
+  gate-verified) must either see the signal or exclude the form
+  M_dark = m_B*exp(pi*t_n/2) = 2163 GeV ~ 2.2 TeV
+  E_react = tan^4(theta_C) = 2.84e-3 closed form verified
+  t_n = 3.833 shared with PAPER_027 (corpus consistency pinned)
 
-Q-028 queued (4): f_SM formula-vs-value (SSq^6 candidate); f_DM
-0.268 closed form unshown (printed forms give 0.309/0.197); KK
-exponent 61.5/62/other; T2HK delta_CP 197 deg claimed consistent
-with SSq*pi = 102.6 deg - fails by 94 deg.
+Q-029 queued: F_suppress fraction-vs-survivor semantics + abstract
+exponent mojibake; in-text self-correction left standing; asymmetry
+sqrt(SSq) = 0.755 claim vs limit-ratio 0.093; M_dark 2.2 TeV derived
+vs 2.8 TeV abstract.
 
-Gate 249 assertions 0 failures. Registry 97 rows / 189 edges / 33
-citation ledgers. Wired 33/2,255 (7 clean, 26 OPEN_RULING).
-Next: PAPER_030.
+Gate 256 assertions 0 failures. Registry 100 rows / 195 edges / 34
+citation ledgers. Wired 34/2,255 (7 clean, 27 OPEN_RULING).
+Next: PAPER_031.

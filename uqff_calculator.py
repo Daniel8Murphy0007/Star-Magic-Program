@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.32.0"
+VERSION = "0.33.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1553,5 +1553,59 @@ def _paper_029(dataset):
                     'E_break = M_KK/2; angular anomaly = SSq^2'),
         'source': 'PAPER_029',
         'residual_pct': abs(0.0485 - 0.05) / 0.05 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_030')
+def _paper_030(dataset):
+    """Dark Sector Mediators in UQFF (Session 0).
+
+    Companion to PAPER_027 (same LHCb LFV data). Dark mediator
+    exchange encoded in Ug4 = k4*rho_vac*cos(pi*t_n)*[SCm];
+    F_suppress = cos^2(pi*3.833) = 0.749 (74.9 pct amplitude
+    suppression -> 25.1 pct survives); BR_UQFF = 2.3e-5*0.252 =
+    5.8e-6 SATURATES the LHCb bound (falsifiable: LHCb Upgrade II
+    at 7.9e-7 reach must see it or kill it).
+    M_dark = m_B*exp(pi*t_n/2) = 2.16 TeV; E_react = tan^4(theta_C)
+    = 2.84e-3 closed form verified. Universal t_n suppression covers
+    Z-prime / leptoquark / HNL with one vacuum geometry.
+    Q-029: (a) F_suppress symbol used for both the suppressed
+    fraction (0.748) and its survivor complement (0.252) in different
+    lines; abstract exponent mojibake; (b) in-text self-correction
+    0.738 -> 0.748 left standing; (c) asymmetry claim A = sqrt(SSq)
+    = 0.755 vs limit-ratio (5.9-4.9)/(5.9+4.9) = 0.093;
+    (d) M_dark 2.2 TeV (sec 4.3) vs abstract >= 2.8 TeV.
+    """
+    import math as _m
+    t_n = -_m.log(5.9e-6) / _m.pi                    # 3.8327 (shared with PAPER_027)
+    f_suppress = _m.cos(_m.pi * t_n) ** 2            # 0.749
+    br_uqff = 2.3e-5 * (1.0 - f_suppress)            # 5.77e-6
+    m_dark_gev = 5.279 * _m.exp(_m.pi * t_n / 2.0)   # 2163
+    e_react = _m.tan(0.227) ** 4                     # 2.843e-3
+    hl_lhc_reach = 5.9e-6 * _m.sqrt(5.4 / 300.0)     # 7.9e-7
+    return {
+        'value': {
+            't_n_lfv': t_n,
+            'f_suppress': f_suppress,                # 0.749
+            'survivor_fraction': 1.0 - f_suppress,   # 0.251
+            'br_tree': 2.3e-5,
+            'br_uqff': br_uqff,                      # 5.8e-6 saturates bound
+            'lhcb_limit': 5.9e-6,
+            'm_dark_gev': m_dark_gev,                # 2163 ~ 2.2 TeV
+            'm_dark_abstract_tev': 2.8,              # Q-029d
+            'e_react_tan4_cabibbo': e_react,         # 2.843e-3 (~paper 2.846e-3)
+            'z_prime_constraint_gev2': 1.8e-3,
+            'leptoquark_constraint': 3.4e-3,
+            'hnl_mixing_limit': 2.1e-4,
+            'asymmetry_sqrt_ssq': SSQ ** 0.5,        # 0.755 claim (Q-029c)
+            'asymmetry_limit_ratio': (5.9 - 4.9) / (5.9 + 4.9),   # 0.093
+            'hl_lhc_reach': hl_lhc_reach,            # 7.9e-7
+            'br_uqff_300fb': 4.2e-6,                 # L^(1/4) evolution scenario
+        },
+        'formula': ('F_suppress = cos^2(pi*t_n); BR = BR_tree*(1-F); '
+                    'M_dark = m_B*exp(pi*t_n/2); E_react = tan^4(theta_C)'),
+        'source': 'PAPER_030',
+        'residual_pct': abs(br_uqff - 5.8e-6) / 5.8e-6 * 100,
         'status': 'OPEN_RULING',
     }

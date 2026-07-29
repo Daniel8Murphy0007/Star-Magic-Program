@@ -188,3 +188,9 @@ observable,cosmic_budget_ssq_projection,paper,PAPER_029,primary derivation
 observable,kk_exponent_ladder,paper,PAPER_029,primary derivation
 observable,kk_exponent_ladder,paper,PAPER_022,M_KK = 11.6 TeV input
 observable,neutrino_facility_predictions,paper,PAPER_029,primary derivation
+primitive,SSQ,observable,e_react_cabibbo_form,asymmetry claim sqrt(SSq)
+observable,dark_mediator_suppression,paper,PAPER_030,primary derivation
+observable,dark_mediator_suppression,paper,PAPER_027,shared t_n = 3.833
+observable,dark_mediator_mass_scale,paper,PAPER_030,primary derivation
+observable,e_react_cabibbo_form,paper,PAPER_030,primary derivation
+observable,e_react_cabibbo_form,paper,PAPER_028,Cabibbo-sector cross-ref
