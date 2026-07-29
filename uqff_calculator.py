@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.88.0"
+VERSION = "0.89.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4499,5 +4499,53 @@ def _paper_085(dataset):
                     'S_max = S_BH/2'),
         'source': 'PAPER_085',
         'residual_pct': abs(stretch / 2.0 - 0.5205) / 0.5205 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_086')
+def _paper_086(dataset):
+    """Ug4 AGN Feedback 8-Parameter Formula (Session 0).
+
+    PARAMETER PINS EXACT: M_SgrA* = 4.3e6 Msun = 8.55e36 kg
+    (EHT literature); d_g = 27,000 ly = 2.55e20 m (conversion
+    exact). Baseline validator anchor Ug4 = 3.352941e22 J/m3
+    (10-sig-fig CP2 cross-check recorded).
+    f_AGN chains EXACT: quiescent 1.0*(1 + [SCm]/10) = 1.099;
+    M87 jet-active 3.5*1.099 = 3.8465 (printed 3.85). NOTE the
+    [SCm]/10 structure - F_TRZ-like /10 divisor (Q-082c).
+    f_cycle = (1+cos(pi t_n))/2 in [0,1] EXACT endpoints.
+    DEFECTS: (1) the printed closed form G^2 M^2/(c^4 d^6) * ...
+    is dimensionally m^-4 and evaluates to 1.5e-103 - 125 ORDERS
+    from the anchor; ANCHOR-OVER-FORMULA wiring, closed form
+    marked OPEN (Q-082a). (2) The decay table was computed with
+    kappa = 5e-7/day - an e-4 -> e-7 MOJIBAKE, confirmed by TWO
+    independent rows (rate 1.827e-4/yr = 5e-7*365.25 exactly);
+    canonical KAPPA restores f(1000 yr) = e^-182.6 ~ 0 (Q-082b).
+    [UA] 8th appearance (1+[UA] denominator). Negative-time test
+    (Ug4 > baseline pre-collapse) recorded - links the corpus
+    negative-time doctrine. 7/7 validator tests as stated.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.11 (Ug4 star-BH coupling)',
+            'm_sgra_kg': 4.3e6 * 1.989e30,                 # 8.55e36 EXACT
+            'd_g_m': 27000 * 9.461e15,                     # 2.55e20 EXACT
+            'ug4_anchor_j_m3': 3.352941e22,                # validator anchor
+            'f_agn_quiescent': 1.0 * (1 + 0.99 / 10),      # 1.099 EXACT
+            'f_agn_m87': 3.5 * (1 + 0.99 / 10),            # 3.8465
+            'f_cycle_endpoints': ((1 + _m.cos(0)) / 2, (1 + _m.cos(_m.pi)) / 2),  # (1, 0)
+            'formula_status': 'OPEN - dimensional m^-4, 125 orders from anchor',
+            'decay_table_kappa_used': 5e-7,                # mojibake e-4 -> e-7
+            'decay_rate_per_yr_table': 5e-7 * 365.25,      # 1.827e-4 confirmed 2 rows
+            'decay_canonical_f_1000yr': _m.exp(-KAPPA_PER_DAY * 365250),  # ~0
+            'negative_time_test': 'Ug4 > baseline pre-collapse (recorded)',
+            'tests_pass': 7,
+        },
+        'formula': ('Ug4 anchor 3.352941e22 J/m3 (closed form OPEN); '
+                    'f_AGN = A*(1+[SCm]/10); f_cycle = (1+cos(pi t_n))/2'),
+        'source': 'PAPER_086',
+        'residual_pct': abs(3.5 * 1.099 - 3.85) / 3.85 * 100,
         'status': 'OPEN_RULING',
     }

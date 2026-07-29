@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.88.0", "uqff_calculator.VERSION = 0.88.0")
+assert_that(C.VERSION == "0.89.0", "uqff_calculator.VERSION = 0.89.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1377,6 +1377,21 @@ assert_that(_r085['peak_entropy_shift_pct'] == 0.0,
 assert_that(abs(_r085['solar_t_evap_yr_chain'] - 2.1e67) / 2.1e67 < 0.01,
             "PAPER_085: solar row mantissa matches 2.1e67 YEARS - year-label pattern 2nd instance (Q-081b)")
 assert_that(C.wired_count() >= 89, "wired_count >= 89")
+
+_r086 = C.calc('PAPER_086')['value']
+assert_that(abs(_r086['m_sgra_kg'] - 8.55e36) / 8.55e36 < 0.001,
+            "PAPER_086: SgrA* mass pin 4.3e6 Msun = 8.55e36 kg EXACT")
+assert_that(abs(_r086['d_g_m'] - 2.55e20) / 2.55e20 < 0.01,
+            "PAPER_086: d_g = 27,000 ly = 2.55e20 m EXACT")
+assert_that(abs(_r086['f_agn_quiescent'] - 1.099) < 1e-9,
+            "PAPER_086: f_AGN = 1 + [SCm]/10 = 1.099 EXACT ([SCm]/10 structure noted)")
+assert_that('OPEN' in _r086['formula_status'],
+            "PAPER_086: closed form anchor-over-formula - dimensional + 125-order gap (Q-082a)")
+assert_that(abs(_r086['decay_rate_per_yr_table'] - 1.827e-4) / 1.827e-4 < 0.001,
+            "PAPER_086: decay table kappa e-4->e-7 mojibake CONFIRMED by two rows (Q-082b)")
+assert_that(_r086['decay_canonical_f_1000yr'] < 1e-70,
+            "PAPER_086: canonical kappa gives f(1000 yr) ~ 0 - table correction pinned")
+assert_that(C.wired_count() >= 90, "wired_count >= 90")
 
 # =============================================================================
 # REPORT

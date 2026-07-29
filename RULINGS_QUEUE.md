@@ -1480,6 +1480,28 @@ RESOLVED section with the ruling recorded.
   drift inputs carried; year-label evidence consolidated.
 - **Daniel's ruling:** (pending)
 
+### Q-082 — PAPER_086 — Ug4 closed form + kappa mojibake + [SCm]/10 structure
+- **Question:** (a) The printed Ug4 closed form G^2 M^2/(c^4 d^6)
+  * [SCm]/(1+[UA]) * ... is dimensionally m^-4 and evaluates to
+  1.5e-103 - 125 ORDERS from the validator anchor 3.352941e22
+  J/m3; wired anchor-over-formula with the closed form OPEN -
+  provide the canonical form? (b) The temporal-decay table was
+  computed with kappa = 5e-7/day (an e-4 -> e-7 mojibake,
+  CONFIRMED by two independent rows: rate = 1.827e-4/yr =
+  5e-7*365.25 exactly); canonical KAPPA gives f(1000 yr) ~ 0 -
+  which behavior is intended for Ug4 evolution (the table's slow
+  decay is physically more sensible for Myr-scale AGN)?
+  (c) f_AGN = A*(1 + [SCm]/10): the /10 divisor is an F_TRZ-like
+  structure ([SCm]*F_TRZ?) - primitive reading? (d) [UA] 8th
+  appearance (1+[UA] denominator).
+- **Notable:** parameter pins EXACT (4.3e6 Msun, 27,000 ly);
+  f_AGN and f_cycle chains EXACT; 7/7 validator tests; CP2
+  10-sig-fig integration recorded; negative-time test links the
+  corpus doctrine.
+- **Best-candidate wired:** anchor + modulation chains; formula
+  and decay-rate rulings queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

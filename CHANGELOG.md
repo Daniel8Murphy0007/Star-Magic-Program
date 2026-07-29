@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.89.0] — 2026-07-29 — BAND 1: PAPER_086
+
+### Added
+- **PAPER_086 dispatch** (Ug4 AGN Feedback): parameter pins EXACT
+  (SgrA* 4.3e6 Msun = 8.55e36 kg; d_g = 27,000 ly = 2.55e20 m);
+  validator anchor Ug4 = 3.352941e22 J/m3 wired
+  ANCHOR-OVER-FORMULA — the printed closed form is dimensionally
+  m^-4 and 125 orders from the anchor (OPEN). f_AGN = A*(1 +
+  [SCm]/10) chains EXACT (1.099 / 3.8465); f_cycle endpoints
+  EXACT. **Decay-table kappa e-4 -> e-7 mojibake CONFIRMED by
+  two independent rows** (rate 1.827e-4/yr = 5e-7*365.25);
+  canonical KAPPA gives f(1000 yr) ~ 0 — intended-behavior
+  ruling queued. [SCm]/10 F_TRZ-like structure flagged; [UA]
+  8th appearance; negative-time test recorded.
+- OPEN_RULING Q-082.
+- Gate: 631 assertions, 0 failures. Registry: 254 rows / 501 edges / 90 ledgers.
+
+---
+
 ## [0.88.0] — 2026-07-29 — BAND 1: PAPER_085
 
 ### Added

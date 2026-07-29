@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 89 (10 ✓, 79 ⚠ OPEN_RULING)
+- **Wired:** 90 (10 ✓, 80 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2166
+- **Not yet touched:** 2165
 
 ---
 
@@ -119,7 +119,7 @@
 | ⚠ | PAPER_083 | Primordial BH UQFF |
 | ⚠ | PAPER_084 | Information Paradox 26D UQFF |
 | ⚠ | PAPER_085 | Page Curve UQFF |
-| ⬜ | PAPER_086 | Ug4 AGN Feedback UQFF |
+| ⚠ | PAPER_086 | Ug4 AGN Feedback UQFF |
 | ⬜ | PAPER_087 | AT2019qiz TDE UQFF |
 | ⬜ | PAPER_088 | Neutrino SED UQFF |
 | ⬜ | PAPER_089 | UQFF Master Equation Derivation |

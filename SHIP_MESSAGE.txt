@@ -1,25 +1,32 @@
-v0.88.0 BAND 1: PAPER_085 wired - PAGE TIME 0.5205 FLAGSHIP PREDICTION
+v0.89.0 BAND 1: PAPER_086 wired - KAPPA MOJIBAKE CONFIRMED (90 MILESTONE)
 
-PAPER_085 UQFF Page Curve Derivation (OPEN_RULING Q-081):
-  Fourth Hawking-family paper - the PAPER_081 drift correction
-  PROPAGATES (identical 0.01/0.01 inputs and the same "0.9999 ~
-  0.99" conflation). Under canonical primitives every downstream
-  number closes EXACTLY:
-    stretch = (1 - F_TRZ^2)^-4 = 1.0410
-    PAGE TIME t_P = 0.5205 * t_evap_GR EXACT
-  - wired as the FLAGSHIP MEASURABLE PREDICTION (future micro-BH
-  evaporation observations).
+PAPER_086 Ug4 AGN Feedback 8-Parameter Formula (OPEN_RULING
+Q-082):
+  PARAMETER PINS EXACT: M_SgrA* = 4.3e6 Msun = 8.55e36 kg (EHT);
+  d_g = 27,000 ly = 2.55e20 m.
+  Validator anchor Ug4 = 3.352941e22 J/m3 wired ANCHOR-OVER-
+  FORMULA: the printed closed form G^2 M^2/(c^4 d^6)*... is
+  dimensionally m^-4 and evaluates 125 ORDERS from the anchor -
+  marked OPEN, canonical form requested.
 
-  S_max = S_BH/2 = A_0/(8 l_P^2) EXACT form; triangular
-  two-phase profile; peak entropy UNCHANGED (26D channels
-  unaffected, consistent with 084); final state globally pure.
+  f_AGN = A*(1 + [SCm]/10) chains EXACT: quiescent 1.099, M87
+  jet-active 3.8465 (printed 3.85). The /10 divisor is an
+  F_TRZ-like structure - primitive reading queued.
+  f_cycle = (1+cos(pi t_n))/2 endpoints EXACT.
 
-  YEAR-LABEL PATTERN 2ND INSTANCE: solar-mass row "~2e74 s" vs
-  chain 6.6e74 s = 2.1e67 YEARS (mantissa matches years) - same
-  corruption family as 082's stellar row; systematic reading
-  queued. Primordial row "4.3e-5 s" unrecoverable (chain 8.4e13
-  s); "evaporating now" fits threshold-mass, not 1e10 kg.
+  KAPPA MOJIBAKE CONFIRMED: the decay table was computed with
+  kappa = 5e-7/day (e-4 -> e-7 drop) - proven by TWO independent
+  rows (rate = 1.827e-4/yr = 5e-7*365.25 exactly). Canonical
+  KAPPA gives f(1000 yr) ~ e^-183 ~ 0; the table's slow decay is
+  physically more sensible for Myr-scale AGN - intended-behavior
+  ruling requested.
 
-Q-081 queued. Gate 624 assertions 0 failures. Registry 252 rows /
-497 edges / 89 citation ledgers. Wired 89/2,255 (10 clean, 79
-OPEN_RULING). Next: PAPER_086.
+  [UA] 8th appearance; negative-time test (Ug4 > baseline
+  pre-collapse) recorded; 7/7 validator tests; CP2 10-sig-fig
+  integration.
+
+MILESTONE: 90 papers wired.
+
+Q-082 queued. Gate 631 assertions 0 failures. Registry 254 rows /
+501 edges / 90 citation ledgers. Wired 90/2,255 (10 clean, 80
+OPEN_RULING). Next: PAPER_087.

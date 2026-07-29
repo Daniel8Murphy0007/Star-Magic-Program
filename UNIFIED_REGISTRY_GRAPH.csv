@@ -497,3 +497,7 @@ primitive,F_TRZ,observable,uqff_page_time,identity propagation
 observable,uqff_page_time,paper,PAPER_081,drift-correction parent
 observable,year_label_pattern,paper,PAPER_085,2nd instance
 observable,year_label_pattern,paper,PAPER_082,corruption family
+observable,ug4_8param_anchor,paper,PAPER_086,validator anchor
+observable,ug4_8param_anchor,paper,PAPER_067,Ug4 family link
+observable,ug4_modulation_chains,paper,PAPER_086,modulation chains
+primitive,KAPPA_PER_DAY,observable,ug4_modulation_chains,mojibake correction

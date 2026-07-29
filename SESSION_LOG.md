@@ -1244,3 +1244,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 89/2,255 (10 ✓, 79 ⚠). Next: PAPER_086.
 
 ---
+
+## 2026-07-29 — v0.89.0 — BAND 1: PAPER_086
+
+- PAPER_086 wired (⚠ Q-082): Ug4 feedback. Anchor-over-formula
+  (closed form OPEN, 125-order gap); kappa e-4->e-7 mojibake
+  confirmed; f_AGN/f_cycle chains EXACT; parameter pins EXACT.
+  Milestone: 90 wired.
+- Campaign: 90/2,255 (10 ✓, 80 ⚠). Next: PAPER_087.
+
+---
