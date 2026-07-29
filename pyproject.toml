@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.11.0"
-description = "UQFF Star-Magic-Program v0.11.0: PAPER_012 wired (eccentric circularization: modified Peters de/dt = D^2*GR, tau_circ 9.0x, residual e=0.003 at LIGO band 30x GR, 3x eccentric-merger rate). THIRD D^2 data point - Q-008 recommendation now D^2 canonical. Badge cacheBust fix live (PyPI camo proxy). Wired 12/2255, gate 114/0. Registry 35 rows / 49 edges / 12 ledgers."
+version = "0.12.0"
+description = "UQFF Star-Magic-Program v0.12.0: PAPER_013 wired (magnetar spin-down: D_SCm threshold suppression 99 pct for SGR 1806-20, braking index n=1.5-2.0 matches observed 1-2.5 vs GR 3, resolves magnetar age problem ~1e7 yr). FOURTH D^2 data point. Q-010 queued (3x vs 10000x timescale conflict + B units). Wired 13/2255, gate 119/0. Registry 38 rows / 54 edges / 13 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

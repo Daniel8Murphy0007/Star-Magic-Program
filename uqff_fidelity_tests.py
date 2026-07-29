@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.11.0", "uqff_calculator.VERSION = 0.11.0")
+assert_that(C.VERSION == "0.12.0", "uqff_calculator.VERSION = 0.12.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -272,6 +272,17 @@ assert_that(abs(_r012['e_final_uqff_at_10hz'] - 0.003) < 1e-12,
 assert_that(abs(_r012['rate_enhancement_eccentric'] - 3.0) < 1e-12,
             "PAPER_012: ~3x eccentric-merger detection rate enhancement")
 assert_that(C.wired_count() >= 12, "wired_count >= 12")
+
+_r013 = C.calc('PAPER_013')['value']
+assert_that(abs(_r013['D_scm_sgr1806'] - 0.0218) < 0.0005,
+            "PAPER_013: SGR 1806-20 D_SCm = 0.0218 COMPUTED (paper states ~0.01 - Q-010)")
+assert_that(_r013['braking_index_uqff_range'] == (1.5, 2.0),
+            "PAPER_013: braking index n_UQFF = 1.5-2.0 (vs GR 3; obs 1-2.5)")
+assert_that(abs(_r013['tau_ratio_sec23'] - 1.0e4) < 1.0,
+            "PAPER_013: sec-2.3 tau = t_GR/D^2 = 10,000x (abstract says 3x - Q-010)")
+assert_that(abs(_r013['magnetar_age_resolution_yr'] - 1.0e7) < 1.0,
+            "PAPER_013: magnetar age problem resolved (~1e7 yr)")
+assert_that(C.wired_count() >= 13, "wired_count >= 13")
 
 # =============================================================================
 # REPORT

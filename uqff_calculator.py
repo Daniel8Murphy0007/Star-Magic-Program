@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.11.0"
+VERSION = "0.12.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -572,4 +572,43 @@ def _paper_012(dataset):
                     'tau_circ = 9.0x tau_GR — 3rd D^2 data point (Q-008)'),
         'source': 'PAPER_012',
         'residual_pct': abs(tau_extension - 9.0) / 9.0 * 100.0,
+    }
+
+
+@_register('PAPER_013')
+def _paper_013(dataset):
+    """Magnetar Spin-Down in UQFF (Session 143) — the kappa calibration paper.
+
+    SCm suppression of magnetic dipole radiation: D_SCm(B) = 1-exp[-(B_crit/B)]
+    (threshold form; reproduces SGR 1806-20 D_SCm ~ 0.01-0.02 only with both
+    fields in GAUSS — Q-010 extends the B_crit unit family Q-002/007/009).
+    Edot_UQFF = D_SCm^2 * Edot_GR = 1e-4 (FOURTH D^2 corpus data point).
+    Braking index n_UQFF = 1.5-2.0 vs GR n=3; observed magnetars n ~ 1-2.5 —
+    UQFF resolves the magnetar age problem.
+    Q-010: abstract says t_sd = 3*t_GR but sec 2.3 says t = t_GR/D^2 = 10,000x.
+    """
+    import math as _m
+    B_crit_G = 4.4e13                  # Gauss reading (Q-010)
+    B_sgr1806_G = 2.0e15               # SGR 1806-20 surface field
+
+    D_scm = 1.0 - _m.exp(-(B_crit_G / B_sgr1806_G))   # 0.0218 (paper states ~0.01)
+    return {
+        'value': {
+            'D_scm_sgr1806': D_scm,                       # 0.0218 computed
+            'D_scm_paper_stated': 0.01,
+            'edot_suppression': D_scm**2,                  # ~4.7e-4 (paper: 1e-4 from D=0.01)
+            'braking_index_uqff_range': (1.5, 2.0),
+            'braking_index_gr': 3.0,
+            'braking_index_observed_range': (1.0, 2.5),
+            'tau_ratio_abstract': 3.0,                     # Q-010 conflict
+            'tau_ratio_sec23': 1.0e4,                      # t_GR/D^2 with D=0.01
+            'magnetar_age_resolution_yr': 1.0e7,
+            'sgr1806_period_s': 7.5,
+            'n_known_magnetars': 23,
+        },
+        'formula': ('D_SCm(B) = 1-exp[-(B_crit/B)]; Edot_UQFF = D_SCm^2*Edot_GR '
+                    '(4th D^2 data point); n_UQFF = 2 - dlnD/dlnOmega ~ 1.5-2.0'),
+        'source': 'PAPER_013',
+        'residual_pct': abs(D_scm - 0.01) / 0.01 * 100.0,   # 118% vs paper ~0.01 (Q-010)
+        'status': 'OPEN_RULING',
     }

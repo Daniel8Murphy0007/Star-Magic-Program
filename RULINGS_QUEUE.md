@@ -90,6 +90,8 @@ RESOLVED section with the ruling recorded.
   de/dt = D^2 * de/dt|GR with tau_circ = 9.0x — D^2 now confirmed by
   PAPER_008 + 011 + 012. Recommend ruling: D^2 canonical; PAPER_005's
   linear scaling flagged for revision-note.
+- **FOURTH DATA POINT (PAPER_013):** Edot_UQFF = D_SCm^2 * Edot_GR
+  (0.01 -> 1e-4 explicit in sec 2.2). D^2 convention: 4 papers vs 1.
 
 ### Q-009 — PAPER_009 — aether scale + D_SCm form family
 - **Question:** (a) r = c/kappa stated as 17 Gpc does not reproduce from
@@ -102,6 +104,17 @@ RESOLVED section with the ruling recorded.
   exp(-kappa*r/c) with kappa = 5e-4/day gives exp(-2.4e8) ~ 0 — the stated
   formula is off by ~16 orders of magnitude from its own table, so an
   unstated unit convention is definitely involved
+- **Daniel's ruling:** (pending)
+
+### Q-010 — PAPER_013 — magnetar suppression value + timescale conflict
+- **Question:** (a) D_SCm for SGR 1806-20: stated ~0.01 but the stated formula
+  1-exp[-(B_crit/B)] with both fields in Gauss gives 0.0218 (in Tesla it gives
+  1.0 — impossible); (b) abstract + key-results say t_sd = 3*t_GR, but sec 2.3
+  says t = t_GR/D_SCm^2 = 10,000*t_GR — 3 vs 10,000 is a 3,300x conflict;
+  (c) LaTeX block shows (B_crit/B)^2 squared while text uses unsquared. Which
+  values/forms are canonical?
+- **Best-candidate wired:** unsquared threshold form in Gauss (computed 0.0218);
+  both timescale claims recorded
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

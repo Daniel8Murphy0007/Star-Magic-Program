@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.12.0] — 2026-07-29 — BAND 1: PAPER_013
+
+### Added
+- **PAPER_013 dispatch** (Magnetar Spin-Down — the kappa calibration paper):
+  D_SCm(B) threshold suppression (99% for SGR 1806-20); braking index
+  n_UQFF = 1.5-2.0 matches observed 1-2.5 (GR predicts 3); magnetar age
+  problem resolved (~1e7 yr). OPEN_RULING Q-010 (D_SCm 0.01 vs computed
+  0.0218; abstract 3x vs sec-2.3 10,000x timescale; squared-vs-linear form).
+- **Q-008 FOURTH data point** — Edot = D_SCm^2 * Edot_GR explicit.
+  D^2 convention: 4 corpus papers vs 1 outlier.
+- Gate: 119 assertions, 0 failures. Registry: 38 rows / 54 edges / 13 ledgers.
+
+---
+
 ## [0.11.0] — 2026-07-29 — BAND 1: PAPER_012
 
 ### Added

@@ -1,19 +1,20 @@
-v0.11.0 BAND 1: PAPER_012 wired + badge cacheBust fix
+v0.12.0 BAND 1: PAPER_013 wired (kappa calibration paper)
 
-PAPER_012 Eccentric Binary Circularization (clean):
-  Modified Peters: de/dt|UQFF = D_total^2 * de/dt|GR
-  tau_circ extension 9.0x; residual eccentricity e = 0.003 at LIGO
-  band (30x GR bound); harmonic structure 2f/3f/4f ~ e;
-  ~3x detection-rate enhancement for eccentric mergers
+PAPER_013 Magnetar Spin-Down (OPEN_RULING Q-010):
+  D_SCm(B) = 1-exp[-(B_crit/B)]: 99% magnetic-dipole-radiation
+  suppression for SGR 1806-20 (B = 2e15 G)
+  Braking index n_UQFF = 1.5-2.0 vs GR n=3 - matches observed
+  magnetar range 1-2.5 (anomaly resolved)
+  Magnetar age problem resolved: extended spin-down ~1e7 yr
+  consistent with supernova-remnant associations
 
-Q-008 THIRD DATA POINT: D^2 power convention now confirmed by
-PAPER_008 + PAPER_011 + PAPER_012. Ruling recommendation logged:
-D^2 canonical; PAPER_005 linear-F flagged for revision note.
+Q-008 FOURTH DATA POINT: Edot_UQFF = D_SCm^2 * Edot_GR explicit in
+sec 2.2. D^2 power convention now 4 corpus papers vs 1 outlier.
 
-BADGE FIX: PyPI camo proxy caches badge images by URL indefinitely
-(page showed v0.3.0 for hours). Dynamic badges now carry
-?cacheBust=<version> bumped every ship (CLAUDE.md standing rule 2b).
+Q-010 queued: D_SCm 0.01 stated vs 0.0218 computed; abstract t=3x
+vs sec-2.3 t=10,000x (3,300x internal conflict); squared vs linear
+threshold form between LaTeX and text.
 
-Gate 114 assertions 0 failures. Registry 35 rows / 49 edges / 12
-citation ledgers. Wired 12/2,255 (5 clean, 7 OPEN_RULING).
-Next: PAPER_013 (Magnetar Spin-Down).
+Gate 119 assertions 0 failures. Registry 38 rows / 54 edges / 13
+citation ledgers. Wired 13/2,255 (5 clean, 8 OPEN_RULING).
+Next: PAPER_014 (Primordial Black Holes).

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 12 (5 ✓, 7 ⚠ OPEN_RULING)
+- **Wired:** 13 (5 ✓, 8 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2243
+- **Not yet touched:** 2242
 
 ---
 
@@ -39,7 +39,7 @@
 | ⬜ | PAPER_011b | Amplitude Reduction Factor UQFF |
 | ✓ | PAPER_012 | Eccentric Binary Circularization UQFF |
 | ⬜ | PAPER_012b | GW150914 Waveform Validation |
-| ⬜ | PAPER_013 | Magnetar Spin Down UQFF Framework |
+| ⚠ | PAPER_013 | Magnetar Spin Down UQFF Framework |
 | ⬜ | PAPER_013b | LISA SMBH Merger Rate UQFF |
 | ⬜ | PAPER_014 | Primordial Black Holes UQFF Formation |
 | ⬜ | PAPER_014b | EMRI Aether Damping UQFF |

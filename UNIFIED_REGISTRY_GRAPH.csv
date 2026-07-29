@@ -48,3 +48,8 @@ observable,sgwb_mixed_population_factor,paper,PAPER_011,primary derivation
 primitive,F_TRZ,observable,eccentric_circularization_tau,D chain from (1-F_TRZ)
 observable,eccentric_circularization_tau,paper,PAPER_012,primary derivation
 observable,eccentric_residual_e_ligo_band,paper,PAPER_012,primary derivation
+primitive,B_CRIT,observable,magnetar_scm_suppression_sgr1806,threshold at B_crit
+primitive,KAPPA_PER_DAY,observable,magnetar_age_problem_resolution,kappa calibrated from magnetar spin-down (PAPER_001 x-ref)
+observable,magnetar_scm_suppression_sgr1806,paper,PAPER_013,primary derivation
+observable,magnetar_braking_index,paper,PAPER_013,primary derivation
+observable,magnetar_age_problem_resolution,paper,PAPER_013,primary derivation

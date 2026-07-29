@@ -443,3 +443,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 12/2,255 (5 ✓, 7 ⚠). Next: PAPER_013.
 
 ---
+
+## 2026-07-29 — v0.12.0 — BAND 1: PAPER_013
+
+- PAPER_013 wired (⚠ Q-010): magnetar D_SCm suppression, braking index
+  1.5-2.0, age problem resolution. 4th D^2 data point (Q-008).
+- Gate 119/0. Registry 38 rows / 54 edges / 13 ledgers.
+- Campaign: 13/2,255 (5 ✓, 8 ⚠). Next: PAPER_014.
+
+---
