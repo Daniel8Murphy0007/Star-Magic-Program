@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 108 (10 ✓, 98 ⚠ OPEN_RULING)
+- **Wired:** 109 (10 ✓, 99 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2147
+- **Not yet touched:** 2146
 
 ---
 
@@ -198,7 +198,7 @@
 | ⬜ | PAPER_1057 | NCG Matrix Model SCm |
 | ⬜ | PAPER_1058 | LQG Ashtekar Area Spectrum |
 | ⬜ | PAPER_1059 | CGC BK Saturation SCm |
-| ⬜ | PAPER_105 | BH Phases Nebulae Galaxy Models |
+| ⚠ | PAPER_105 | BH Phases Nebulae Galaxy Models |
 | ⬜ | PAPER_1060 | VDS LENR Isotopic Evolution |
 | ⬜ | PAPER_1061 | Kozima SCm Integration |
 | ⬜ | PAPER_1062 | Wormhole Traversability SCm |

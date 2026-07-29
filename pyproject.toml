@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.107.0"
-description = "UQFF Star-Magic-Program v0.107.0: PAPER_104 wired (P vs NP Millennium 4: [UA] gains a PHYSICAL DEFINITION - v_UA/c = 1e-4 with v_UA = 3.0e4 m/s = 101 v_SCm, decisive Q-060b canonization evidence; extraction [UA]^2 = 1e-8 EXACT; 084 partition 3rd appearance; constant-in-n logical gap honestly documented; canonical 1-1e-9 relation queued). Q-100 queued. Wired 108/2255, gate 742/0. Registry 289 rows / 595 edges / 108 ledgers."
+version = "0.108.0"
+description = "UQFF Star-Magic-Program v0.108.0: PAPER_105 wired - DOMAIN 1.13 CAPSTONE (5-phase BH lifecycle with eta = 0.099 EXACT + 081-identity evaporation; 10-model galaxy/nebula suite = the 053-058 objects via the 089 architecture map; arithmetic 5+10 = 15 Part C and 40-test domain total EXACT; closes multi-physics models 096-105). Q-101 queued. Wired 109/2255, gate 748/0. Registry 290 rows / 599 edges / 109 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

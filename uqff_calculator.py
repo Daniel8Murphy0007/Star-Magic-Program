@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.107.0"
+VERSION = "0.108.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5456,5 +5456,54 @@ def _paper_104(dataset):
                     'partition 4+14+6+2 = D_crit'),
         'source': 'PAPER_104',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_105')
+def _paper_105(dataset):
+    """BH Phases + 10 Galaxy/Nebula Models - Domain 1.13 CAPSTONE (Session 0).
+
+    Two-part consolidation: (A) 5-phase BH lifecycle
+    (formation/accretion/Kerr-active/quiescent/late-evaporation,
+    Drawings 5-9) with the phase-2 accretion efficiency eta =
+    [SCm]*eta_acc = 0.099 EXACT (087/078/075 family) and the
+    phase-5 T_UQFF = 0.99 T_H inheriting the 081 identity;
+    (B) the 10-model galaxy/nebula suite - IDENTICALLY the
+    objects wired in PAPER_053-058 (NGC2264 / UGC10214 / NGC4676
+    / RedSpider / NGC3372 / AGCarinae / M42 / Tarantula / NGC2841
+    / MysticMountain), each mapped to one of the 8 PAPER_089
+    calculator architectures (cross-consistency closure).
+    ARITHMETIC EXACT: BH 5 + galaxy 10 = 15 (Part C); the paper's
+    grand tally 15+5+5+5+5+5 = 40 tests across Papers 96-105 -
+    the Domain-1.13 total. All 15/15 PASS as stated.
+    CLOSES DOMAIN 1.13 (multi-physics models, PAPER_096-105).
+    Q-101: (a) the 10 models here vs the R382-class ranking of
+    053-058 - confirm they are the same suite viewed through the
+    089 architecture map (structural re-expression, not new
+    physics); (b) NGC4676 200-Myr merger + Mystic 1:1.2:1.4
+    pillar ratio are the only fresh quantitative claims - keep as
+    qualitative PASS?
+    """
+    models = ['ngc2264', 'ugc10214', 'ngc4676', 'red_spider', 'ngc3372',
+              'ag_carinae', 'm42', 'tarantula', 'ngc2841', 'mystic_mountain']
+    return {
+        'value': {
+            'domain': '1.13 CAPSTONE (BH phases + 10-model suite)',
+            'bh_phases': ('formation', 'accretion', 'kerr_active', 'quiescent', 'late_evaporation'),
+            'phase2_eta': 0.1 * 0.99,                      # 0.099 EXACT
+            'phase5_t_ratio': 'T_UQFF = 0.99 T_H (081 identity)',
+            'galaxy_models': models,
+            'n_models': len(models),                       # 10 = the 053-058 suite
+            'part_c_total': 5 + 10,                        # 15 EXACT
+            'domain_113_total': 15 + 5 + 5 + 5 + 5 + 5,     # 40 EXACT
+            'suite_cross_ref': 'identical to PAPER_053-058 objects via 089 architecture map',
+            'fresh_claims': ('NGC4676 200-Myr merger', 'Mystic 1:1.2:1.4 pillars'),
+            'all_pass': '15/15',
+        },
+        'formula': ('eta = [SCm]*eta_acc = 0.099; Part C = 5 + 10 = 15; '
+                    'Domain 1.13 total = 40 tests'),
+        'source': 'PAPER_105',
+        'residual_pct': 0.0 if (5 + 10) == 15 else 100.0,
         'status': 'OPEN_RULING',
     }

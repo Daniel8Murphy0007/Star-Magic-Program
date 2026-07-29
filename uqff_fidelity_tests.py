@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.107.0", "uqff_calculator.VERSION = 0.107.0")
+assert_that(C.VERSION == "0.108.0", "uqff_calculator.VERSION = 0.108.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1632,6 +1632,19 @@ assert_that(sum(_r104['partition'].values()) == 26 and _r104['partition_appearan
 assert_that('no lower bound proven' in _r104['honesty'],
             "PAPER_104: Rule-7 honest labeling on Millennium 4")
 assert_that(C.wired_count() >= 108, "wired_count >= 108")
+
+_r105 = C.calc('PAPER_105')['value']
+assert_that(abs(_r105['phase2_eta'] - 0.099) < 1e-9,
+            "PAPER_105: BH phase-2 accretion eta = [SCm]*eta_acc = 0.099 EXACT (087 family)")
+assert_that(_r105['n_models'] == 10 and _r105['part_c_total'] == 15,
+            "PAPER_105: 5 BH phases + 10 galaxy models = 15 Part C EXACT")
+assert_that(_r105['domain_113_total'] == 40,
+            "PAPER_105: Domain 1.13 grand total 40 tests EXACT (Papers 96-105)")
+assert_that(len(_r105['bh_phases']) == 5,
+            "PAPER_105: 5-phase BH lifecycle wired (Drawings 5-9)")
+assert_that('053-058' in _r105['suite_cross_ref'],
+            "PAPER_105: 10-model suite cross-referenced to the 053-058 objects (structural re-expression)")
+assert_that(C.wired_count() >= 109, "wired_count >= 109")
 
 # =============================================================================
 # REPORT

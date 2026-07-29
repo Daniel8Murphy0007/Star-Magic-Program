@@ -1427,3 +1427,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 108/2,255 (10 ✓, 98 ⚠). Next: PAPER_105.
 
 ---
+
+## 2026-07-29 — v0.108.0 — BAND 1: PAPER_105 — DOMAIN 1.13 CAPSTONE
+
+- PAPER_105 wired (⚠ Q-101): capstone. 5 BH phases + 10-model
+  suite (= 053-058); arithmetic EXACT (15 Part C, 40 domain
+  total); eta 0.099 + 081-identity phase-5; Domain 1.13 closed.
+- Campaign: 109/2,255 (10 ✓, 99 ⚠). Next: PAPER_106.
+
+---

@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.108.0] — 2026-07-29 — BAND 1: PAPER_105 — DOMAIN 1.13 CAPSTONE
+
+### Added
+- **PAPER_105 dispatch** (BH Phases + 10 Galaxy/Nebula Models):
+  Domain 1.13 CAPSTONE. Part A — 5-phase BH lifecycle
+  (formation/accretion/Kerr-active/quiescent/late-evaporation,
+  Drawings 5-9) with phase-2 eta = [SCm]*eta_acc = 0.099 EXACT
+  and phase-5 T_UQFF = 0.99 T_H inheriting the 081 identity.
+  Part B — the 10-model galaxy/nebula suite, IDENTICALLY the
+  PAPER_053-058 objects, each mapped to one of the 8 PAPER_089
+  calculator architectures (structural re-expression, no new
+  physics). Arithmetic EXACT: 5+10 = 15 Part C; 15+5+5+5+5+5 =
+  40 domain total. Closes multi-physics models (096-105).
+- OPEN_RULING Q-101 (suite provenance; fresh-claim status).
+- Gate: 748 assertions, 0 failures. Registry: 290 rows / 599 edges / 109 ledgers.
+
+---
+
 ## [0.107.0] — 2026-07-29 — BAND 1: PAPER_104 — [UA] PHYSICAL IDENTITY
 
 ### Added

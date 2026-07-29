@@ -1898,6 +1898,25 @@ RESOLVED section with the ruling recorded.
   labels; gap documented.
 - **Daniel's ruling:** (pending)
 
+### Q-101 — PAPER_105 — 10-model suite provenance + Domain 1.13 closure
+- **Question:** (a) The 10 galaxy/nebula models here (NGC2264 /
+  UGC10214 / NGC4676 / RedSpider / NGC3372 / AGCarinae / M42 /
+  Tarantula / NGC2841 / MysticMountain) are IDENTICALLY the
+  objects wired in PAPER_053-058, now each mapped to one of the
+  8 PAPER_089 calculator architectures - confirm this is a
+  structural re-expression (architecture assignment), not new
+  physics, so no double-count in the census? (b) The only fresh
+  quantitative claims are NGC4676's ~200-Myr merger timescale
+  and Mystic Mountain's 1:1.2:1.4 pillar-mass ratio - keep both
+  as qualitative PASS pending observational cross-check?
+- **Notable:** BH phase-2 eta = [SCm]*eta_acc = 0.099 EXACT
+  (087 family); phase-5 T_UQFF = 0.99 T_H inherits the 081
+  identity; arithmetic 5+10 = 15 and 15+5+5+5+5+5 = 40 EXACT;
+  this paper CLOSES Domain 1.13 (multi-physics models, 096-105).
+- **Best-candidate wired:** capstone with suite cross-reference
+  + exact tallies; provenance ruling queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
