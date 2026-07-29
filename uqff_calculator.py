@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.109.0"
+VERSION = "0.110.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5555,5 +5555,55 @@ def _paper_106(dataset):
                     'w(a) = -1 + w_1(1-a) + w_2(1-a)^2; Omega_L = (6/5)*SSq'),
         'source': 'PAPER_106',
         'residual_pct': abs(0.685 - 1.2 * 0.57) / (1.2 * 0.57) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_107')
+def _paper_107(dataset):
+    """EP-12: Tohsaki-Funaki Alpha-BEC + SSq nuclear calibration (Session 0).
+
+    DOMAIN 1.15 OPENS (Empirical Proof compendium). The core
+    identity chain from PAPER_060 reappears EXACT: dE_BEC =
+    5.0*ln(1.1) = 0.4766 MeV; N_B(0.477, 5.0) = 10.000. AMD/
+    NIMROD-ISiS anchors recorded (kT_fit = 4.628 MeV, 7.4 pct;
+    chi^2/dof = 0.051).
+    UQFF T_c SHIFT EXACT: T_c^UQFF = kT + SSq*dE_BEC = 5 +
+    0.57*0.477 = 5.272 MeV.
+    LEVEL-8 CHAIN EXACT: N_B suppression 0.57/sqrt(8/26) = 1.028
+    (paper's own scaling formula (i/26)^0.5).
+    IKEDA IDENTITY CANDIDATE (Q-103a, MAJOR): the 10-alpha
+    (Ca-40) channel's N_B = 0.57 = SSq EXACTLY - the paper flags
+    it as "non-trivial coincidence" - explicit UQFF-derivation
+    ruling requested (chain from per-channel Bose statistics not
+    obvious; 9-alpha row = 0.62 ~ beta_i is a SECOND SSq-family
+    coincidence).
+    LENR chain: E ~ 4.6e14 MeV/s/cm2 (uses N_B threshold via SSq
+    suppression); k_eta = 1e-55 CONSISTENT with the PAPER_062
+    chain-closure pin.
+    Rule-7: paper labels the [SSq] identification "empirical
+    proof calibration", not a proof of the [SSq] value itself.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.15 OPENS (empirical proof compendium)',
+            'de_bec_mev': 5.0 * _m.log(1.1),               # 0.4766 EXACT
+            'n_b_at_threshold': 1 / (_m.exp(0.477 / 5.0) - 1),  # 10.000
+            'kt_fit_mev': 4.628,
+            'chi2_dof': 0.051,
+            'tc_shift_uqff_mev': 5 + 0.57 * 0.477,         # 5.272 EXACT
+            'level_8_suppression': 0.57 / _m.sqrt(8 / 26),  # 1.028 EXACT
+            'ikeda_10a_n_b_printed': 0.57,                 # = SSq EXACTLY
+            'ikeda_9a_n_b_printed': 0.62,                  # ~ beta_i
+            'ssq_identity_flagged': 'non-trivial coincidence (paper claim)',
+            'lenr_energy_mev_s_cm2': 26.9 * 3e13 * 0.57,   # 4.60e14
+            'k_eta_lenr': 1e-55,                           # 062 consistent
+            'anchors_cross_ref': 'PAPER_059-064 nuclear BEC family',
+        },
+        'formula': ('N_B = 1/(exp(dE/kT)-1); T_c^UQFF = kT + SSq*dE_BEC; '
+                    'level-i suppression = SSq/(i/26)^0.5'),
+        'source': 'PAPER_107',
+        'residual_pct': abs(5 + 0.57 * 0.477 - 5.272) / 5.272 * 100,
         'status': 'OPEN_RULING',
     }

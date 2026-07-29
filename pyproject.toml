@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.109.0"
-description = "UQFF Star-Magic-Program v0.109.0: PAPER_106 wired - Domain 1.14 opens (dark energy): time-dependent vacuum-damping CC resolution with header identity rho_L_UQFF/rho_L_obs = 1 + kappa^2*SSq^2 = 1.0000000812 EXACT; Omega_L = 0.685 anchor links to canonical (6/5)*SSq = 0.684 (PAPER_1156/078); CPL four-anchor falsifiable; f_TRZ drift 9th; Rule-7 honest labeling). Q-102 queued. Wired 110/2255, gate 754/0. Registry 292 rows / 604 edges / 110 ledgers."
+version = "0.110.0"
+description = "UQFF Star-Magic-Program v0.110.0: PAPER_107 wired - EP-12 anchor + Domain 1.15 opens (empirical proof compendium): 060 identity chain reappears EXACT; UQFF T_c shift 5.272 MeV EXACT; level-8 suppression 1.028 EXACT; MAJOR - Ikeda 10-alpha (Ca-40) N_B = SSq EXACTLY plus 9-alpha ~ beta_i, second observational anchor for SSq alongside 094 spin-down origin). Q-103 queued. Wired 111/2255, gate 760/0. Registry 294 rows / 609 edges / 111 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

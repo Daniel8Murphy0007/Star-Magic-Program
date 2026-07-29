@@ -1,29 +1,30 @@
-v0.109.0 BAND 1: PAPER_106 wired - DOMAIN 1.14 OPENS (DARK ENERGY)
+v0.110.0 BAND 1: PAPER_107 wired - EP-12 + IKEDA-10α = SSq EXACT
 
-PAPER_106 UQFF Vacuum Energy - Dark Energy Connection
-(OPEN_RULING Q-102):
-  DOMAIN 1.14 OPENS (cosmology). Time-dependent vacuum-damping
-  resolution of the CC problem: rho_vac(t) evolves toward
-  rho_L_eff ~ 6e-10 J/m3 (~1 pct vs the PAPER_1226 UQFF ledger
-  value 5.957e-10).
+PAPER_107 EP-12 Tohsaki-Funaki α-BEC Proof (OPEN_RULING Q-103):
+  DOMAIN 1.15 OPENS (Empirical Proof compendium).
+  The 060 identity chain reappears EXACT: dE_BEC =
+  5.0*ln(1.1) = 0.4766 MeV; N_B(0.477, 5.0) = 10.000.
+  AMD/NIMROD-ISiS: kT_fit = 4.628 MeV (7.4 pct), chi^2/dof =
+  0.051.
 
-  HEADER IDENTITY EXACT: rho_L_UQFF/rho_L_obs =
-  1 + kappa^2*SSq^2 = 1 + (5e-4)^2*0.57^2 = 1.0000000812
-  (an 8e-8 UQFF correction to observed rho_L).
+  UQFF T_c SHIFT EXACT: T_c^UQFF = 5 + SSq*0.477 = 5.272 MeV.
+  Level-8 chain EXACT: SSq/sqrt(8/26) = 1.028.
 
-  Omega_L,0 = 0.685: 0.57 pct below Planck 0.6889, AND
-  0.685 ~ 1.2*SSq = 0.684 - the canonical (6/5)*SSq relation
-  of PAPER_1156/078 (Q-074c link). Canonization queued.
+  MAJOR - IKEDA IDENTITY: the 10-alpha (Ca-40) channel N_B =
+  0.57 EXACTLY = SSq at the "clustering boundary condition" -
+  the paper flags this as "non-trivial coincidence"; the 9-alpha
+  row 0.62 ~ beta_i is a SECOND SSq-family coincidence.
 
-  CPL parametrization w(a) = -1 + w_1(1-a) + w_2(1-a)^2 with
-  four fresh anchors: w_1 = 0.05, w_2 = -0.03, eps_w = 0.02,
-  alpha_w = 1.5. Supernova z-deltas 0.02/0.05/0.12/0.25 mag at
-  z = 0.5/1/2/5 - campaign-tracked falsifiable.
+  Would give SSq a SECOND observational anchor alongside
+  PAPER_094's 0.755^2 spin-down origin - two independent
+  physical anchors for the same primitive. Derivation ruling
+  requested: does per-channel Bose statistics yield SSq as the
+  heaviest-alpha-cluster boundary?
 
-  f_TRZ drift 9th instance (eps_Omega = 0.08 = 8*f_TRZ tuning).
-  Rule-7 honest "potential resolution / predictions for next-
-  generation surveys" labeling preserved.
+  LENR chain E ~ 4.6e14 MeV/s/cm2 consistent with 062's
+  k_eta = 1e-55 pin. Rule-7 honest: "empirical calibration,
+  not proof of SSq value".
 
-Q-102 queued. Gate 754 assertions 0 failures. Registry 292 rows /
-604 edges / 110 citation ledgers. Wired 110/2,255 (10 clean, 100
-OPEN_RULING). Next: PAPER_107.
+Q-103 queued. Gate 760 assertions 0 failures. Registry 294 rows /
+609 edges / 111 citation ledgers. Wired 111/2,255 (11 clean, 100
+OPEN_RULING). Next: PAPER_108.

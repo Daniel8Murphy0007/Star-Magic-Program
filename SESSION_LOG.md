@@ -1445,3 +1445,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 110/2,255 (10 ✓, 100 ⚠). Next: PAPER_107.
 
 ---
+
+## 2026-07-29 — v0.110.0 — BAND 1: PAPER_107 — DOMAIN 1.15 OPENS
+
+- PAPER_107 wired (✓ + ⚠ Q-103): EP-12 α-BEC anchor. 060
+  identity chain EXACT; T_c shift EXACT; MAJOR - Ikeda 10α =
+  SSq EXACT (2nd observational anchor for SSq alongside 094's
+  spin-down origin). First ✓ paper of the second hundred.
+- Campaign: 111/2,255 (11 ✓, 100 ⚠). Next: PAPER_108.
+
+---

@@ -1938,6 +1938,30 @@ RESOLVED section with the ruling recorded.
   carried; canonization queued.
 - **Daniel's ruling:** (pending)
 
+### Q-103 — PAPER_107 EP-12 — Ikeda SSq identity + second-anchor status
+- **Question:** (a) MAJOR: the Ikeda 10-alpha (Ca-40) channel
+  has N_B = 0.57 EXACTLY = SSq at the ~ boundary condition; the
+  9-alpha row 0.62 ~ beta_i is a SECOND SSq-family coincidence;
+  the paper flags this "non-trivial coincidence" - is there a
+  UQFF derivation from per-channel Bose statistics that yields
+  SSq as the heaviest-alpha-cluster boundary condition? (A
+  first-principles derivation would make Ikeda-10alpha a SECOND
+  observational origin for SSq, alongside PAPER_094's spin-down
+  0.755^2 = 0.5700 origin - two independent physical anchors
+  for the same primitive.) (b) The level-i suppression formula
+  SSq/(i/26)^0.5 gives a new class of level-dependent chains -
+  canonize as a named suppression rule? (c) EP-12 is the anchor
+  paper for the 059-064 nuclear-BEC family; the 060 identity
+  chain reappears EXACT - confirm domain-1.15 as an "empirical
+  proof compendium" (dedicated wiring domain vs referencing).
+- **Notable:** T_c shift EXACT (5.272 = 5 + SSq*0.477);
+  level-8 chain EXACT (1.028); LENR chain E ~ 4.6e14 MeV/s/cm2
+  consistent with 062's k_eta = 1e-55 pin; Rule-7 honest on
+  "empirical calibration, not proof of SSq value".
+- **Best-candidate wired:** all identities + Ikeda-SSq
+  coincidence flagged.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

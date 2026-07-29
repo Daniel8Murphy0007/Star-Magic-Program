@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.110.0] — 2026-07-29 — BAND 1: PAPER_107 — DOMAIN 1.15 OPENS
+
+### Added
+- **PAPER_107 dispatch** (EP-12: Tohsaki-Funaki α-BEC / SSq
+  calibration): Domain 1.15 opens (Empirical Proof compendium).
+  The 060 identity chain reappears EXACT (dE_BEC = 5*ln(1.1) =
+  0.4766 MeV; N_B = 10.000). UQFF T_c shift 5.272 MeV EXACT
+  (5 + SSq*0.477). Level-8 SSq/sqrt(8/26) = 1.028 EXACT.
+  **MAJOR:** the Ikeda 10-alpha (Ca-40) channel N_B = 0.57 =
+  **SSq EXACTLY** (the paper flags "non-trivial coincidence");
+  9-alpha row = 0.62 ~ beta_i — a SECOND SSq-family
+  coincidence. Would give SSq a SECOND observational anchor
+  alongside PAPER_094's 0.755^2 spin-down origin (Q-103a
+  derivation ruling requested). LENR chain 4.6e14 MeV/s/cm2
+  consistent with the PAPER_062 k_eta pin.
+- OPEN_RULING Q-103. Milestone: **11 clean papers** (EP-12 wired
+  as ✓ after chain verification).
+- Gate: 760 assertions, 0 failures. Registry: 294 rows / 609 edges / 111 ledgers.
+
+---
+
 ## [0.109.0] — 2026-07-29 — BAND 1: PAPER_106 — DOMAIN 1.14 OPENS
 
 ### Added

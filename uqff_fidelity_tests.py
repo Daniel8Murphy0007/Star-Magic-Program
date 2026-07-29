@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.109.0", "uqff_calculator.VERSION = 0.109.0")
+assert_that(C.VERSION == "0.110.0", "uqff_calculator.VERSION = 0.110.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1658,6 +1658,19 @@ assert_that(abs(_r106['eps_omega'] - 0.08) < 1e-9,
 assert_that('Rule-7' in _r106['honesty'],
             "PAPER_106: honest 'potential resolution' + falsifiable predictions labeling")
 assert_that(C.wired_count() >= 110, "wired_count >= 110")
+
+_r107 = C.calc('PAPER_107')['value']
+assert_that(abs(_r107['de_bec_mev'] - 0.4766) < 0.001,
+            "PAPER_107: dE_BEC = 5*ln(1.1) = 0.4766 MeV EXACT (060 identity reappears)")
+assert_that(abs(_r107['n_b_at_threshold'] - 10.0) < 0.01,
+            "PAPER_107: N_B(0.477, 5.0) = 10.000 EXACT threshold")
+assert_that(abs(_r107['tc_shift_uqff_mev'] - 5.272) < 0.001,
+            "PAPER_107: T_c^UQFF = 5 + SSq*0.477 = 5.272 MeV EXACT")
+assert_that(abs(_r107['level_8_suppression'] - 1.028) < 0.001,
+            "PAPER_107: level-8 chain SSq/sqrt(8/26) = 1.028 EXACT")
+assert_that(_r107['ikeda_10a_n_b_printed'] == 0.57,
+            "PAPER_107: Ikeda 10-alpha (Ca-40) N_B = 0.57 = SSq EXACTLY (Q-103a MAJOR)")
+assert_that(C.wired_count() >= 111, "wired_count >= 111")
 
 # =============================================================================
 # REPORT

@@ -604,3 +604,8 @@ primitive,KAPPA_PER_DAY,observable,dark_energy_cc_resolution,header identity
 primitive,SSQ,observable,dark_energy_cc_resolution,header + Omega_L
 observable,dark_energy_cc_resolution,paper,PAPER_078,Hubble-tension companion
 observable,cpl_falsifiable_predictions,paper,PAPER_106,CPL anchors
+observable,ep12_ssq_calibration,paper,PAPER_107,EP-12 anchor
+primitive,SSQ,observable,ep12_ssq_calibration,T_c shift
+observable,ep12_ssq_calibration,paper,PAPER_060,identity reappearance
+observable,ikeda_ssq_boundary,paper,PAPER_107,Ikeda coincidence
+primitive,SSQ,observable,ikeda_ssq_boundary,10-alpha boundary

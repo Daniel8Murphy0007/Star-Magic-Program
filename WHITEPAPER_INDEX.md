@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 110 (10 ✓, 100 ⚠ OPEN_RULING)
+- **Wired:** 111 (11 ✓, 100 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2145
+- **Not yet touched:** 2144
 
 ---
 
@@ -223,7 +223,7 @@
 | ⬜ | PAPER_1078 | Solar Wind Flux Partition |
 | ⬜ | PAPER_1079 | Frozen Planet Wind Power |
 | ⬜ | PAPER_1079 | Galaxy Cluster Cooling Flow Suppression |
-| ⬜ | PAPER_107 | EP12 BoseEinstein Nuclear BEC Proof |
+| ⚠ | PAPER_107 | EP12 BoseEinstein Nuclear BEC Proof |
 | ⬜ | PAPER_1080 | Ramanujan Binomial Expansion Proof |
 | ⬜ | PAPER_1080 | TwoStage FU Refinement |
 | ⬜ | PAPER_1081 | CME Flare FU Perturbation |
