@@ -1208,3 +1208,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 85/2,255 (10 ✓, 75 ⚠). Next: PAPER_082.
 
 ---
+
+## 2026-07-29 — v0.85.0 — BAND 1: PAPER_082
+
+- PAPER_082 wired (⚠ Q-078): evaporation. Fourth-power identity
+  inheritance (1.0410 EXACT); t_U/73-kyr/simulation chains EXACT;
+  unit-label + threshold-arithmetic defects pinned.
+- Campaign: 86/2,255 (10 ✓, 76 ⚠). Next: PAPER_083.
+
+---

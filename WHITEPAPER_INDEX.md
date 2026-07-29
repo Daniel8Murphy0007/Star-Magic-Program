@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 85 (10 ✓, 75 ⚠ OPEN_RULING)
+- **Wired:** 86 (10 ✓, 76 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2170
+- **Not yet touched:** 2169
 
 ---
 
@@ -115,7 +115,7 @@
 | ⚠ | PAPER_079 | HEASARC HighEnergy UQFF |
 | ⚠ | PAPER_080 | Complete MultiWavelength UQFF Suite |
 | ⚠ | PAPER_081 | UQFF Hawking Temperature Derivation |
-| ⬜ | PAPER_082 | BH Evaporation Timescales UQFF |
+| ⚠ | PAPER_082 | BH Evaporation Timescales UQFF |
 | ⬜ | PAPER_083 | Primordial BH UQFF |
 | ⬜ | PAPER_084 | Information Paradox 26D UQFF |
 | ⬜ | PAPER_085 | Page Curve UQFF |

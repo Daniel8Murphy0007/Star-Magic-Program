@@ -84,3 +84,4 @@ PAPER_078,PAPER_072;PAPER_075;NED;SDSS;Planck-2018;SH0ES-2023;PAPER_1002
 PAPER_079,PAPER_066;PAPER_075;HEASARC;XMM-Newton;Swift-J1818
 PAPER_080,PAPER_073;PAPER_074;PAPER_075;PAPER_076;PAPER_077;PAPER_078;PAPER_079;QCalc_validation
 PAPER_081,PAPER_072;Hawking-1974;validate_hawking_temperature;uqff_temperature_formula.cpp;PAPER_2156-authority
+PAPER_082,PAPER_081;validate_hawking_temperature;simulate_evaporation

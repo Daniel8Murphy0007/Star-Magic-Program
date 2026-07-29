@@ -477,3 +477,7 @@ observable,hawking_ftrz_identity,paper,PAPER_081,primitive-locked identity
 primitive,F_TRZ,observable,hawking_ftrz_identity,1 - F_TRZ^2 EXACT
 observable,hawking_ftrz_identity,paper,PAPER_072,lab-validated F_TRZ support
 observable,hawking_t_anchors,paper,PAPER_081,T_H chains
+observable,evaporation_identity,paper,PAPER_082,fourth-power inheritance
+primitive,F_TRZ,observable,evaporation_identity,(1-F_TRZ^2)^-4
+observable,evaporation_identity,paper,PAPER_081,identity parent
+observable,evaporation_chains,paper,PAPER_082,verified chains

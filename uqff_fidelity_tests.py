@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.84.0", "uqff_calculator.VERSION = 0.84.0")
+assert_that(C.VERSION == "0.85.0", "uqff_calculator.VERSION = 0.85.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1329,6 +1329,19 @@ assert_that(abs(_r081['primordial_bh_t_k'] - 1.23e13) / 1.23e13 < 0.01,
 assert_that(_r081['table_ratio_conflict'] == (0.9999, 0.9899),
             "PAPER_081: mass-independent ratio prints two values in one table - defect pinned (Q-077b)")
 assert_that(C.wired_count() >= 85, "wired_count >= 85")
+
+_r082 = C.calc('PAPER_082')['value']
+assert_that(abs(_r082['t_ratio'] - 1.0410) < 0.0001,
+            "PAPER_082: t_UQFF/t_GR = (1-F_TRZ^2)^-4 = 1.0410 EXACT (inherits 081 identity)")
+assert_that(abs(_r082['t_universe_s'] - 4.35e17) < 1e15,
+            "PAPER_082: t_U = 4.35e17 s pinned from mojibake (13.8 Gyr)")
+assert_that(abs(_r082['sim_mass_lost_pct'] - 16.5) < 0.1,
+            "PAPER_082: simulation chain 0.583^(1/3) -> 16.5 pct mass lost EXACT (M_0 = 1e10 kg = 081 pin)")
+assert_that(abs(_r082['stellar_t_evap_yr'] - 2.1e70) / 2.1e70 < 0.01,
+            "PAPER_082: stellar row mantissa 2.1 matches 2.1e70 YEARS - unit-label corruption pinned")
+assert_that(abs(_r082['threshold_shift_chain_pct'] - (-1.33)) < 0.05,
+            "PAPER_082: threshold shift chain -1.3 pct vs printed -3.5 pct - defect pinned (Q-078a)")
+assert_that(C.wired_count() >= 86, "wired_count >= 86")
 
 # =============================================================================
 # REPORT

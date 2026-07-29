@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.85.0] — 2026-07-29 — BAND 1: PAPER_082
+
+### Added
+- **PAPER_082 dispatch** (BH Evaporation Timescales): inherits the
+  PAPER_081 identity at fourth power — t_UQFF/t_GR =
+  (1 - F_TRZ^2)^-4 = 1.0410 EXACT (+4.1 pct; zero free
+  parameters). Chains EXACT: t_U = 4.35e17 s pinned (13.8 Gyr);
+  73 kyr = 2.30e12 s; simulation 0.583^(1/3) = 0.8354 -> 16.5
+  pct mass lost with M_0 = 1e10 kg (= 081 pin). Stellar-BH row
+  unit-label corruption pinned (value is 2.1e70 YEARS).
+- Defect: printed threshold shift -3.5 pct vs cube-root chain
+  -1.3 pct.
+- OPEN_RULING Q-078.
+- Gate: 608 assertions, 0 failures. Registry: 246 rows / 481 edges / 86 ledgers.
+
+---
+
 ## [0.84.0] — 2026-07-29 — BAND 1: PAPER_081 — DOMAIN 1.11 OPENS
 
 ### Added

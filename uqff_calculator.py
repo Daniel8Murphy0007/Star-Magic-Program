@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.84.0"
+VERSION = "0.85.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4306,5 +4306,52 @@ def _paper_081(dataset):
                     'T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2 = 0.99 EXACT'),
         'source': 'PAPER_081',
         'residual_pct': abs(ratio_canonical - 0.99) / 0.99 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_082')
+def _paper_082(dataset):
+    """UQFF BH Evaporation Timescales (Session 0).
+
+    Companion to PAPER_081 - INHERITS the primitive-locked
+    identity: t_UQFF/t_GR = (T_UQFF/T_H)^-4 = (1 - F_TRZ^2)^-4 =
+    1.0410 EXACT (+4.1 pct, BHs slightly more stable in the UQFF
+    vacuum); k_UQFF = 0.9606 k_GR.
+    Chains VERIFIED: t_U = 4.35e17 s pinned from the "4.35e-7"
+    mojibake (13.8 Gyr EXACT); 73 kyr = 2.30e12 s EXACT
+    conversion; simulation chain EXACT - M_final/M_0 =
+    (1 - t/t_evap)^(1/3) = 0.583^(1/3) = 0.8354, mass lost 16.5
+    pct (M_initial = 1e10 kg, matching the PAPER_081 pin);
+    stellar-BH row mantissa 2.1 matches 2.1e70 YEARS (= 6.6e77 s
+    chain) - the table's "s" label is the corruption, value is
+    years (Q-078b).
+    DEFECT (Q-078a): printed threshold-mass shift -3.5 pct is
+    inconsistent with the paper's own x1.041 - the cube-root
+    chain gives (1/1.041)^(1/3) = 0.9867 -> -1.3 pct.
+    Buoyancy term negligible above Planck mass (as stated).
+    """
+    factor = (1.0 - F_TRZ ** 2) ** -4                      # 1.0410 EXACT
+    return {
+        'value': {
+            'domain': '1.11 (companion to PAPER_081)',
+            't_ratio': factor,                             # 1.0410 EXACT
+            'identity': 't_UQFF/t_GR = (1 - F_TRZ^2)^-4',
+            'k_factor': (1.0 - F_TRZ ** 2) ** 4,           # 0.9606
+            't_universe_s': 4.35e17,                       # pinned 13.8 Gyr
+            'kyr73_s': 73000 * 3.156e7,                    # 2.30e12 EXACT
+            'sim_m_initial_kg': 1e10,                      # = 081 pin
+            'sim_final_fraction': 0.583 ** (1.0 / 3.0),    # 0.8354 EXACT
+            'sim_mass_lost_pct': (1 - 0.583 ** (1.0 / 3.0)) * 100,   # 16.5
+            'stellar_t_evap_s': 8.41e-17 * (1.989e31) ** 3,    # 6.6e77 s
+            'stellar_t_evap_yr': 8.41e-17 * (1.989e31) ** 3 / 3.156e7,  # 2.1e70 yr
+            'threshold_shift_printed_pct': -3.5,
+            'threshold_shift_chain_pct': ((1 / 1.041) ** (1.0 / 3.0) - 1) * 100,  # -1.3
+            'pbh_threshold_kg': 5.7e11,
+        },
+        'formula': ('t_evap = 5120 pi G^2 M^3/(hbar c^4); '
+                    't_UQFF = t_GR*(1-F_TRZ^2)^-4 = 1.041*t_GR'),
+        'source': 'PAPER_082',
+        'residual_pct': abs(factor - 1.041) / 1.041 * 100,
         'status': 'OPEN_RULING',
     }

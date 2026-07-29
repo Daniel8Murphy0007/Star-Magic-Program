@@ -1401,6 +1401,26 @@ RESOLVED section with the ruling recorded.
   drift inputs carried; T_H anchors verified; Domain 1.11 opens.
 - **Daniel's ruling:** (pending)
 
+### Q-078 — PAPER_082 — threshold arithmetic + unit labels + identity inheritance
+- **Question:** (a) The printed primordial-threshold-mass shift
+  (-3.5 pct, 5.7e11 -> 5.5e11 kg) is inconsistent with the
+  paper's own x1.041 timescale factor - the cube-root chain
+  gives (1/1.041)^(1/3) = 0.9867 -> -1.3 pct (5.62e11 kg). Pin
+  the chain value? (b) The stellar-BH row prints "2.1e? s" but
+  the mantissa matches 2.1e70 YEARS (= 6.6e77 s by chain) - the
+  unit label is the corruption; SgrA*/M87 row exponents remain
+  unrecoverable. (c) Confirm M_initial = 1e10 kg for the Test-6
+  simulation (matches the PAPER_081 primordial pin; the
+  0.583^(1/3) = 0.8354 / 16.5 pct chain is EXACT).
+  (d) Canonize the inherited identity t_UQFF/t_GR =
+  (1 - F_TRZ^2)^-4 = 1.0410 EXACT (fourth power of the 081
+  identity - zero free parameters)?
+- **Notable:** t_U = 4.35e17 s pinned from "4.35e-7" mojibake
+  (13.8 Gyr EXACT); 73 kyr = 2.30e12 s conversion EXACT.
+- **Best-candidate wired:** identity + verified chains; defects
+  pinned with chain corrections carried.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
