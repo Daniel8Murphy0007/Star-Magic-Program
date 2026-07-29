@@ -1053,3 +1053,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 69/2,255 (10 ✓, 59 ⚠). Next: PAPER_066.
 
 ---
+
+## 2026-07-29 — v0.69.0 — BAND 1: PAPER_066
+
+- PAPER_066 wired (⚠ Q-062): magnetars. SOURCE4 anchors EXACT;
+  4 LENR ratio^2 chains close (SGR term 2.21e25 mojibake
+  recovery); omega_LENR clear print confirms 062 pin; Vela kick
+  296 km/s; Crab F supports 063 e7-pin.
+- Campaign: 70/2,255 (10 ✓, 60 ⚠). Next: PAPER_067.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.68.0"
+VERSION = "0.69.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3480,5 +3480,62 @@ def _paper_065(dataset):
                     'category census sums to 121'),
         'source': 'PAPER_065',
         'residual_pct': abs(sum(devs) / len(devs) - 2.87),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_066')
+def _paper_066(dataset):
+    """Magnetar Systems: SGR1745 / Crab / Vela / ASKAP J1832 (Session 0).
+
+    SGR1745-2900 SOURCE4 anchors ALL VERIFIED EXACT: M = 1.4 Msun =
+    2.785e30 kg; omega_0 = 2*pi/3.76 s = 1.671 rad/s; r = 8.5 kpc =
+    2.62e20 m (distance from SgrA*).
+    LENR RESONANCE CHAINS CLOSE FOR ALL FOUR (term = (omega_LENR/
+    omega_0)^2 with omega_LENR = 2*pi*1.25 THz = 7.854e12 - printed
+    CLEARLY here, independently confirming PAPER_062's identity
+    pin): Vela ratio 7.854e-4 -> 6.17e-7; Crab 3.927e-3 -> 1.54e-5;
+    ASKAP 3.30e-5 -> 1.089e-9; SGR1745 ratio 4.70e12 -> term
+    2.21e25 (printed "10-5" = MOJIBAKE of e25, recovered by chain).
+    Crab F_UBii = -2.1e7 N - consistent with the PAPER_063 ensemble
+    mean -6.05e7 under the e7 pin (supports Q-059a).
+    Vela kick: v = F*dt/M = 296 km/s inside observed 60-350 km/s;
+    the PRODUCT F*dt = 8.29e35 N*s is fixed by the chain, but the
+    printed decomposition (8.3e219 * 1e-35) is corrupt (Q-062a).
+    Eddington footer VERIFIED: 1 - SSq*exp(-2.9e-4) = 0.4302.
+    Q-062: (a) F*dt decomposition + Vela F magnitude ("comparable
+    to ensemble mean" claim needs the e7-pin context); (b) SGR1745
+    F "-3.0e-87" unrecoverable (huge LENR term suggests large
+    negative); (c) Ug1 magnetic factor mu0*B^2/8pi chain does not
+    close against printed 1.33e?/6.64e? (2.65e13 computed for B =
+    2.3e10 T); (d) config omega_0 for Crab/Vela are orbital
+    (2e15/1e16 rad/s) not spin - physical meaning ruling.
+    """
+    import math as _m
+    w_lenr = 2.0 * _m.pi * OMEGA_SCM_HZ                  # 7.854e12 clear print
+    systems = {}
+    for name, w0 in (('vela', 1.0e16), ('crab', 2.0e15),
+                     ('askap_j1832', 2.38e17), ('sgr1745', 2.0 * _m.pi / 3.76)):
+        r = w_lenr / w0
+        systems[name] = {'omega0_rad_s': w0, 'lenr_ratio': r, 'lenr_term': r * r}
+    return {
+        'value': {
+            'sgr1745_mass_kg': 1.4 * 1.989e30,           # 2.785e30 EXACT
+            'sgr1745_omega_rad_s': 2.0 * _m.pi / 3.76,   # 1.671 EXACT
+            'sgr1745_r_m': 8.5 * 3.086e19,               # 2.62e20 EXACT
+            'sgr1745_b_t': 2.3e10,
+            'omega_lenr_rad_s': w_lenr,
+            'systems': systems,
+            'sgr_lenr_term_recovered': systems['sgr1745']['lenr_term'],   # 2.21e25
+            'crab_fubii_n': -2.1e7,                      # ~ ensemble mean scale
+            'vela_kick_km_s': 296.0,
+            'vela_kick_product_ns': 2.96e5 * 2.8e30,     # 8.29e35 fixed
+            'vela_kick_observed_range': (60.0, 350.0),
+            'eddington_correction': 1.0 - SSQ * _m.exp(-2.9e-4),   # 0.4302
+        },
+        'formula': ('LENR = (omega_LENR/omega_0)^2, omega_LENR = 2*pi*1.25 THz; '
+                    'v_kick = F*dt/M; Edd corr = 1 - SSq*exp(-kappa*t)'),
+        'source': 'PAPER_066',
+        'residual_pct': abs((1.0 - SSQ * _m.exp(-2.9e-4)) - 0.43) / 0.43 * 100,
         'status': 'OPEN_RULING',
     }

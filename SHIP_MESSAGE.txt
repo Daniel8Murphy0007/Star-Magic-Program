@@ -1,27 +1,29 @@
-v0.68.0 BAND 1: PAPER_065 wired - DOMAIN 1.9 OPENS (121-SYSTEM ROLL-UP)
+v0.69.0 BAND 1: PAPER_066 wired - SOURCE4 MAGNETAR ANCHORS EXACT
 
-PAPER_065 121-System Validation Statistical Summary
-(OPEN_RULING Q-061):
-  15-category census SUMS EXACTLY to 121.
-  15 experimental tests: 13 pass / 1 accept / 1 pending = 93.3 pct
-  (14/15). ALL 13 per-row deviation chains verified individually
-  (TRZ 2.00 ... Higgs 0.21 ... L26 9.40 EXACT).
-  MC stability: 5 systems x 100 trials, 10 pct noise -
-  Stability = 1 - sigma/|mu| >= 0.97, 100/100 valid each.
-  Solvability 99.9 pct (Grok 4 Sept 2025).
-  KAPPA_MCMC = 0.00052/day repeated - cross-consistent w/ 063.
+PAPER_066 Magnetar Systems SGR1745/Crab/Vela/ASKAP J1832
+(OPEN_RULING Q-062):
+  SGR1745-2900 SOURCE4 anchors ALL VERIFIED EXACT:
+  M = 1.4 Msun = 2.785e30 kg; omega_0 = 2*pi/3.76 s = 1.671
+  rad/s; r = 8.5 kpc = 2.62e20 m (distance from SgrA*).
 
-  HONEST DISCREPANCIES PINNED:
-  - Mean deviation three-way: recomputed 2.74 pct vs printed
-    2.87 pct vs abstract 3.1 pct (Q-061a)
-  - 26D-L26 row labels 5.96e-10 J/m3 (the UQFF ledger value!) as
-    MEASURED with 5.4e-10 as predicted - inversion vs corpus
-    (Q-061b)
-  - RHO_SCM predicted-vs-measured 6.95e-37 (2.01 pct): first
-    measured-vs-primitive comparison in the campaign - what
-    measurement is this?
-  - Deviation denominator convention alternates across rows
+  LENR RESONANCE CHAINS CLOSE FOR ALL FOUR SYSTEMS:
+  term = (omega_LENR/omega_0)^2 - Vela 6.17e-7, Crab 1.54e-5,
+  ASKAP 1.089e-9, SGR1745 2.21e25 (RECOVERED from "10-5"
+  mojibake by the chain; ratio = 4.70e12).
+  omega_LENR = 7.854e12 rad/s printed CLEARLY here - independent
+  confirmation of PAPER_062's omega_LENR = omega_SCm identity.
 
-Q-061 queued. Gate 495 assertions 0 failures. Registry 205 rows /
-395 edges / 69 citation ledgers. Wired 69/2,255 (10 clean, 59
-OPEN_RULING). Next: PAPER_066.
+  Vela kick prediction: 296 km/s inside observed 60-350 km/s;
+  the product F*dt = 8.29e35 N*s is chain-fixed (printed
+  decomposition 8.3e219*1e-35 corrupt - ruling requested).
+  Crab F_UBii = -2.1e7 N consistent with PAPER_063's e7
+  ensemble-mean pin (supporting evidence for Q-059a).
+  Eddington correction 1 - SSq*exp(-kappa t) = 0.4302 VERIFIED.
+
+Q-062 queued: kick (F, dt) split; SGR F "-3.0e-87" unrecoverable;
+Ug1 magnetic factor chain does not close (2.65e13 computed vs
+1.33e?/6.64e? printed); orbital-vs-spin config omegas.
+
+Gate 503 assertions 0 failures. Registry 208 rows / 402 edges / 70
+citation ledgers. Wired 70/2,255 (10 clean, 60 OPEN_RULING).
+Next: PAPER_067.

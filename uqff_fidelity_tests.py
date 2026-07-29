@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.68.0", "uqff_calculator.VERSION = 0.68.0")
+assert_that(C.VERSION == "0.69.0", "uqff_calculator.VERSION = 0.69.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1095,6 +1095,23 @@ assert_that(_r065['mc_stability_min'] >= 0.97 and _r065['mc_valid_per_100'] == 1
 assert_that(abs(_r065['lambda_measured_row'] - 5.96e-10) < 1e-12,
             "PAPER_065: L26 row inversion pinned - 5.96e-10 labeled measured (UQFF ledger value; Q-061b)")
 assert_that(C.wired_count() >= 69, "wired_count >= 69")
+
+_r066 = C.calc('PAPER_066')['value']
+assert_that(abs(_r066['sgr1745_mass_kg'] - 2.785e30) / 2.785e30 < 0.001,
+            "PAPER_066: SGR1745 M = 1.4 Msun = 2.785e30 kg EXACT")
+assert_that(abs(_r066['sgr1745_omega_rad_s'] - 1.671) < 0.001,
+            "PAPER_066: SGR1745 omega = 2*pi/3.76 = 1.671 rad/s EXACT")
+assert_that(abs(_r066['sgr1745_r_m'] - 2.62e20) / 2.62e20 < 0.01,
+            "PAPER_066: SGR1745 r = 8.5 kpc = 2.62e20 m EXACT")
+assert_that(abs(_r066['systems']['vela']['lenr_term'] - 6.17e-7) / 6.17e-7 < 0.01,
+            "PAPER_066: Vela LENR term ratio^2 = 6.17e-7 chain closes")
+assert_that(abs(_r066['sgr_lenr_term_recovered'] - 2.21e25) / 2.21e25 < 0.01,
+            "PAPER_066: SGR1745 LENR term 2.21e25 recovered from mojibake by ratio^2 chain")
+assert_that(abs(_r066['eddington_correction'] - 0.4302) < 0.001,
+            "PAPER_066: Eddington correction 1 - SSq*exp(-kappa t) = 0.4302 verified")
+assert_that(60.0 <= _r066['vela_kick_km_s'] <= 350.0,
+            "PAPER_066: Vela kick 296 km/s inside observed 60-350 km/s")
+assert_that(C.wired_count() >= 70, "wired_count >= 70")
 
 # =============================================================================
 # REPORT

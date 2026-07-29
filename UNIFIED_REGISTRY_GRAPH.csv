@@ -395,3 +395,10 @@ observable,validation_121_census,paper,PAPER_064,4-mode validation record
 observable,mc_stability_suite,paper,PAPER_065,MC protocol
 observable,l26_lambda_inversion,paper,PAPER_065,label inversion
 primitive,RHO_SCM,observable,l26_lambda_inversion,measured-vs-primitive row
+observable,sgr1745_source4_anchors,paper,PAPER_066,chain verification
+observable,sgr1745_source4_anchors,paper,PAPER_001,system return
+observable,lenr_resonance_ratios,paper,PAPER_066,ratio^2 chains
+primitive,OMEGA_SCM_HZ,observable,lenr_resonance_ratios,omega_LENR clear print
+observable,lenr_resonance_ratios,paper,PAPER_062,identity pin confirmation
+observable,vela_kick_prediction,paper,PAPER_066,kick chain
+observable,vela_kick_prediction,paper,PAPER_063,ensemble-mean consistency

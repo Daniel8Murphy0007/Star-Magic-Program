@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.69.0] — 2026-07-29 — BAND 1: PAPER_066
+
+### Added
+- **PAPER_066 dispatch** (Magnetar Systems): SGR1745-2900 SOURCE4
+  anchors ALL VERIFIED EXACT (M = 1.4 Msun = 2.785e30 kg; omega =
+  2*pi/3.76 = 1.671 rad/s; r = 8.5 kpc = 2.62e20 m). LENR
+  resonance chains (omega_LENR/omega_0)^2 close for all four
+  systems — including SGR1745's term 2.21e25 RECOVERED from
+  "10-5" mojibake by the chain. omega_LENR = 7.854e12 printed
+  clearly, independently confirming PAPER_062's identity pin.
+  Vela kick 296 km/s inside observed 60-350; F*dt product 8.29e35
+  fixed (printed decomposition corrupt). Crab F = -2.1e7 N
+  consistent with PAPER_063's e7 ensemble-mean pin. Eddington
+  correction 0.4302 verified.
+- OPEN_RULING Q-062 (kick decomposition; SGR F exponent; Ug1
+  magnetic factor chain; orbital-vs-spin config omegas).
+- Gate: 503 assertions, 0 failures. Registry: 208 rows / 402 edges / 70 ledgers.
+
+---
+
 ## [0.68.0] — 2026-07-29 — BAND 1: PAPER_065 — DOMAIN 1.9 OPENS
 
 ### Added

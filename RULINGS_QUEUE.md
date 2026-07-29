@@ -992,7 +992,8 @@ RESOLVED section with the ruling recorded.
   25.38 MeV (5.6 pct below) — which is canonical? (c) F_LENR =
   "6.16e? N" exponent unresolved by any in-paper chain — pin?
   (d) omega_LENR "7.85e?" closes EXACTLY as 2*pi*1.25 THz =
-  omega_SCm — confirm the reading that the LENR channel IS the
+  omega_SCm
+  [SUPPORTED by PAPER_066: 7.854e12 printed clearly there - see Q-062.] — confirm the reading that the LENR channel IS the
   SCm phonon resonance (identity, not independent constant)?
 - **Best-candidate wired:** heavy-electron chain EXACT (3.0 m_e >
   2.530 threshold); both mojibake pins wired with chain-closure
@@ -1058,6 +1059,32 @@ RESOLVED section with the ruling recorded.
   verified; pass rate 14/15; MC stability suite; KAPPA_MCMC
   cross-consistency with PAPER_063; all three mean readings
   carried with recomputed as residual anchor.
+- **Daniel's ruling:** (pending)
+
+### Q-062 — PAPER_066 — Vela kick decomposition + SGR F exponent + Ug1 factor + orbital omegas
+- **Question:** (a) Vela kick v = F*dt/M = 296 km/s (inside
+  observed 60-350) fixes the PRODUCT F*dt = 8.29e35 N*s, but the
+  printed decomposition "8.3e219 * 1e-35" is corrupt — pin the
+  canonical (F, dt) split? (Candidates: F = 8.3e30 N with dt =
+  1e5 s SN impulse; F = 8.3e19 N with dt = 1e16 s.) The
+  "comparable to ensemble mean" claim reads naturally only under
+  PAPER_063's e7 pin via the Crab value (-2.1e7 N). (b) SGR1745
+  F_UBii printed "-3.0e-87" is unrecoverable; its LENR term
+  2.21e25 (recovered) suggests a large negative value — pin?
+  (c) The Ug1 magnetic factor mu0*B^2/8pi computes to 2.65e13 for
+  B = 2.3e10 T but the paper prints 1.33e? (sec 2) and 6.64e?
+  (sec 4) — neither closes; which chain is intended? (d) Config
+  omega_0 for Crab (2e15) and Vela (1e16 rad/s) are described as
+  ORBITAL/barycenter frequencies, not spins — confirm the
+  physical-meaning reading (the paper itself distinguishes Crab
+  spin 190 rad/s from the config value).
+- **Notable:** omega_LENR = 7.854e12 rad/s printed clearly here —
+  independent confirmation of Q-058d's omega_LENR = omega_SCm
+  identity pin. All four LENR ratio^2 chains close, including
+  SGR1745's term = 2.21e25 recovered from "10-5" mojibake.
+- **Best-candidate wired:** SOURCE4 anchors EXACT (1.4 Msun /
+  2*pi/3.76 / 8.5 kpc); four ratio chains; kick product fixed;
+  Eddington footer 0.4302 verified.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
