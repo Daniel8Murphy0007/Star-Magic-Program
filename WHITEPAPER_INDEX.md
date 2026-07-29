@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 11 (4 ✓, 7 ⚠ OPEN_RULING)
+- **Wired:** 12 (5 ✓, 7 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2244
+- **Not yet touched:** 2243
 
 ---
 
@@ -37,7 +37,7 @@
 | ⬜ | PAPER_010b | Time Domain Chirp 23Hz UQFF |
 | ✓ | PAPER_011 | Stochastic GW Background UQFF Implications |
 | ⬜ | PAPER_011b | Amplitude Reduction Factor UQFF |
-| ⬜ | PAPER_012 | Eccentric Binary Circularization UQFF |
+| ✓ | PAPER_012 | Eccentric Binary Circularization UQFF |
 | ⬜ | PAPER_012b | GW150914 Waveform Validation |
 | ⬜ | PAPER_013 | Magnetar Spin Down UQFF Framework |
 | ⬜ | PAPER_013b | LISA SMBH Merger Rate UQFF |

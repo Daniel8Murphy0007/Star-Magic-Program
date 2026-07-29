@@ -86,6 +86,10 @@ RESOLVED section with the ruling recorded.
   with explicit "rho_GW ~ h^2" justification — second corpus data point for
   the D^2 convention. PAPER_005's linear-F scaling increasingly looks like
   the outlier.
+- **THIRD DATA POINT (PAPER_012):** modified Peters equation uses
+  de/dt = D^2 * de/dt|GR with tau_circ = 9.0x — D^2 now confirmed by
+  PAPER_008 + 011 + 012. Recommend ruling: D^2 canonical; PAPER_005's
+  linear scaling flagged for revision-note.
 
 ### Q-009 — PAPER_009 — aether scale + D_SCm form family
 - **Question:** (a) r = c/kappa stated as 17 Gpc does not reproduce from

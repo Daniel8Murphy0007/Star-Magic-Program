@@ -433,3 +433,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 11/2,255 (4 ✓, 7 ⚠). Next: PAPER_012.
 
 ---
+
+## 2026-07-29 — v0.11.0 — BAND 1: PAPER_012
+
+- PAPER_012 wired (✓ clean): modified Peters D^2, tau_circ 9.0x, e=0.003.
+- Q-008 THIRD data point (008+011+012) — recommendation: D^2 canonical.
+- Badge cacheBust standing rule live (CLAUDE.md 2b).
+- Gate 114/0. Registry 35 rows / 49 edges / 12 ledgers.
+- Campaign: 12/2,255 (5 ✓, 7 ⚠). Next: PAPER_013.
+
+---

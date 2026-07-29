@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.10.0", "uqff_calculator.VERSION = 0.10.0")
+assert_that(C.VERSION == "0.11.0", "uqff_calculator.VERSION = 0.11.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -263,6 +263,15 @@ assert_that(abs(_r011['omega_mixed_population_factor'] - 0.37) < 0.005,
 assert_that(abs(_r011['omega_gw_uqff_bns_100hz'] - 1.11e-10) < 2e-13,
             "PAPER_011: Omega_UQFF,BNS ~ 1.11e-10 at 100 Hz")
 assert_that(C.wired_count() >= 11, "wired_count >= 11")
+
+_r012 = C.calc('PAPER_012')['value']
+assert_that(abs(_r012['tau_circ_extension'] - 9.0) < 0.02,
+            "PAPER_012: tau_circ = 9.0x tau_GR (3rd D^2 data point)")
+assert_that(abs(_r012['e_final_uqff_at_10hz'] - 0.003) < 1e-12,
+            "PAPER_012: residual eccentricity 0.003 at LIGO band (30x GR)")
+assert_that(abs(_r012['rate_enhancement_eccentric'] - 3.0) < 1e-12,
+            "PAPER_012: ~3x eccentric-merger detection rate enhancement")
+assert_that(C.wired_count() >= 12, "wired_count >= 12")
 
 # =============================================================================
 # REPORT

@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.11.0] — 2026-07-29 — BAND 1: PAPER_012
+
+### Added
+- **PAPER_012 dispatch** (Eccentric Binary Circularization): modified
+  Peters de/dt = D^2 * de/dt|GR; tau_circ 9.0x extension; residual
+  e = 0.003 at LIGO band (30x GR); ~3x eccentric-merger rate. CLEAN.
+- **Q-008 third data point** — D^2 convention now confirmed by
+  PAPER_008 + 011 + 012; ruling recommendation: D^2 canonical.
+- **Badge cacheBust fix** — PyPI camo proxy caches badge URLs forever;
+  dynamic badges now carry ?cacheBust=<version> per ship (CLAUDE.md 2b).
+- Gate: 114 assertions, 0 failures. Registry: 35 rows / 49 edges / 12 ledgers.
+
+---
+
 ## [0.10.0] — 2026-07-29 — BAND 1: PAPER_011
 
 ### Added

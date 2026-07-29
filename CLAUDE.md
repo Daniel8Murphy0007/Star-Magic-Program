@@ -90,6 +90,10 @@ wire best candidate, set registry `status=OPEN_RULING`, append the question to
    = wired count), `CHANGELOG.md` entry, `SESSION_LOG.md` entry,
    `UNIFIED_REGISTRY_VERSION.txt`.
 2. Keep pyproject `description` ≤ 512 chars, version string included.
+2b. Bump the `?cacheBust=` query param on the two dynamic shields.io badges
+   in README.md to the new version — PyPI's camo image proxy caches badge
+   URLs indefinitely; changing the URL forces a fresh fetch so the PyPI
+   page shows the current version instead of a stale cached badge.
 3. Write `SHIP_MESSAGE.txt` (the commit message for this band).
 4. Daniel runs `.\ship.ps1` — it gates, commits, tags vX.Y.Z, pushes.
 

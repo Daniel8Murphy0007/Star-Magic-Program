@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.10.0"
+VERSION = "0.11.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -542,4 +542,34 @@ def _paper_011(dataset):
                     'Q-008 D^2 convention); mixed 0.5*0.111 + 0.4*0.656 + 0.1*0.5 ~ 0.37'),
         'source': 'PAPER_011',
         'residual_pct': abs(omega_mix - 0.37) / 0.37 * 100.0,
+    }
+
+
+@_register('PAPER_012')
+def _paper_012(dataset):
+    """Eccentric Binary Circularization (Session 143).
+
+    Modified Peters equation: de/dt|UQFF = D_total^2 * de/dt|GR, so
+    tau_circ extends by 1/D^2 = 9.0x — THIRD corpus data point for the
+    Q-008 D^2 convention (with PAPER_008, PAPER_011). Residual
+    eccentricity at LIGO band: e_f = 0.003 (vs GR < 1e-4, 30x higher),
+    producing 2f/3f/4f harmonic structure with relative amplitude ~ e.
+    Rate enhancement ~3x for detectable eccentric mergers.
+    """
+    D_bns = (1.0 - F_TRZ) * 0.37                   # 0.333
+    tau_extension = 1.0 / D_bns**2                  # 9.02x
+    return {
+        'value': {
+            'tau_circ_extension': tau_extension,           # 9.0x
+            'e_final_uqff_at_10hz': 0.003,                 # paper sec 3.2
+            'e_final_gr_at_10hz': 1e-4,                    # GR upper bound
+            'eccentricity_enhancement': 30.0,              # 0.003/1e-4
+            'rate_enhancement_eccentric': 3.0,             # paper sec 4
+            'harmonic_amplitude_ratio': 0.003,             # ~ e at 2f/3f/4f
+            'e0_reference': 0.01,
+        },
+        'formula': ('de/dt|UQFF = D_total^2 * de/dt|GR (modified Peters); '
+                    'tau_circ = 9.0x tau_GR — 3rd D^2 data point (Q-008)'),
+        'source': 'PAPER_012',
+        'residual_pct': abs(tau_extension - 9.0) / 9.0 * 100.0,
     }

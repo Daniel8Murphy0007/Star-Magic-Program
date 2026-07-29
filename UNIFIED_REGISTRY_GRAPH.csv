@@ -45,3 +45,6 @@ observable,bns_remnant_extra_dissipation,paper,PAPER_010,primary derivation
 primitive,F_TRZ,observable,sgwb_omega_suppression,D chains from (1-F_TRZ)
 observable,sgwb_omega_suppression,paper,PAPER_011,primary derivation
 observable,sgwb_mixed_population_factor,paper,PAPER_011,primary derivation
+primitive,F_TRZ,observable,eccentric_circularization_tau,D chain from (1-F_TRZ)
+observable,eccentric_circularization_tau,paper,PAPER_012,primary derivation
+observable,eccentric_residual_e_ligo_band,paper,PAPER_012,primary derivation

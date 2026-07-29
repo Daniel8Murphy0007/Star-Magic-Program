@@ -1,14 +1,19 @@
-v0.10.0 BAND 1: PAPER_011 wired (clean, Q-008 corroborated)
+v0.11.0 BAND 1: PAPER_012 wired + badge cacheBust fix
 
-PAPER_011 Stochastic GW Background:
-  Omega_GW,UQFF = D_total^2 * Omega_GW,GR (rho_GW ~ h^2 explicit)
-  BNS suppression 0.111 (89% cut) / BBH 0.656 (34% cut)
-  Mixed population (50/40/10): Omega_UQFF ~ 0.37*Omega_GR (63% cut)
-  Detection delay: 2028 (GR) -> 2032-2035 (UQFF); LISA slope test
+PAPER_012 Eccentric Binary Circularization (clean):
+  Modified Peters: de/dt|UQFF = D_total^2 * de/dt|GR
+  tau_circ extension 9.0x; residual eccentricity e = 0.003 at LIGO
+  band (30x GR bound); harmonic structure 2f/3f/4f ~ e;
+  ~3x detection-rate enhancement for eccentric mergers
 
-Q-008 SELF-RECTIFICATION: second corpus data point for the D^2 power
-convention (PAPER_008 + PAPER_011 vs PAPER_005's linear-F outlier).
+Q-008 THIRD DATA POINT: D^2 power convention now confirmed by
+PAPER_008 + PAPER_011 + PAPER_012. Ruling recommendation logged:
+D^2 canonical; PAPER_005 linear-F flagged for revision note.
 
-Gate 110 assertions 0 failures. Registry 33 rows / 46 edges / 11
-citation ledgers. Wired 11/2,255 (4 clean, 7 OPEN_RULING).
-Next: PAPER_012 (Eccentric Binary Circularization).
+BADGE FIX: PyPI camo proxy caches badge images by URL indefinitely
+(page showed v0.3.0 for hours). Dynamic badges now carry
+?cacheBust=<version> bumped every ship (CLAUDE.md standing rule 2b).
+
+Gate 114 assertions 0 failures. Registry 35 rows / 49 edges / 12
+citation ledgers. Wired 12/2,255 (5 clean, 7 OPEN_RULING).
+Next: PAPER_013 (Magnetar Spin-Down).
