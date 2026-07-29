@@ -553,3 +553,9 @@ primitive,F_TRZ,observable,frb_slope_repeat_forks,slope fork
 primitive,KAPPA_PER_DAY,observable,frb_slope_repeat_forks,repeat drift
 observable,frb_slope_repeat_forks,paper,PAPER_088,fork family
 observable,frb_emission_model,paper,PAPER_066,magnetar basis
+observable,whittaker_26layer_basis,paper,PAPER_097,Drawing-30 basis
+primitive,D_CRIT,observable,whittaker_26layer_basis,partition sum
+primitive,SO_FIVE,observable,whittaker_26layer_basis,SSq band = 10
+primitive,D_BSFG,observable,whittaker_26layer_basis,TRZ/DM band = 6
+observable,whittaker_26layer_basis,paper,PAPER_084,partition refinement
+observable,whittaker_26layer_basis,paper,PAPER_090,T0-consistent interpretation

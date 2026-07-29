@@ -1,27 +1,27 @@
-v0.99.0 BAND 1: PAPER_096 wired - 100 PAPERS MILESTONE
+v0.100.0 BAND 1: PAPER_097 wired - WHITTAKER PARTITION WITH SO_FIVE BAND
 
-PAPER_096 FRB Emission Model, Drawing 1 (OPEN_RULING Q-092):
-  DOMAIN 1.13 OPENS (multi-physics models; first Drawing paper).
-  Mechanism: coherent Ug1 dipole emission from magnetar TRZ
-  activation, E_FRB = f_TRZ * U_g1 * V_TRZ.
+PAPER_097 Whittaker Decomposition, 26-Layer Basis - Drawing 30
+(OPEN_RULING Q-093):
+  Classical Whittaker/Bateman two-potential separation extended
+  to 26 layers: F_U = Sum_k [d2 phi_k/dz2 + d2 chi_k/dz dt].
 
-  ENERGY-CHAIN DEFECTS PINNED: Gauss/SI mixing (B = 2e14 Gauss
-  inside the SI formula) + V_TRZ factor (correct (1.5^3-1) =
-  2.375 vs printed 0.875). THE FULLY CORRECTED CHAIN GIVES
-  E = 2.7e44 erg - NEARER the CHIME energy range than the
-  printed 1.24e49, without invoking beaming (adoption ruling
-  requested).
+  LAYER PARTITION REFINES PAPER_084's: {1-4 EM/rot, 5-8
+  vacuum/buoyancy, 9-18 SSq/SCm, 19-24 TRZ/DM, 25-26 Cosmic
+  Egg} = 4+4+10+6+2 = 26 EXACT - and the primitive texture
+  STRENGTHENS: the SSq-correction band = 10 = SO_FIVE, giving
+  {D_PHYS, D_PHYS, SO_FIVE, D_BSFG, 2}. 084's coarser 14 splits
+  as 4+10 (Q-080a annotated in place).
 
-  Pulse width 1.5R/(c*[SCm]) = 60.6 us EXACT, with the 10-1000x
-  vs-ms gap honestly disclosed and resolved by r_TRZ scaling.
-  Spectral slope alpha = 1+f_TRZ: 1.01 vs 1.10 - THIRD f_TRZ
-  observable fork (Q-084a now touches neutrinos, pulsar timing,
-  and FRB spectra). Repeat drift P*(1 + KAPPA*t_acc) wired as a
-  campaign falsifiable (FRB 20201124A drift consistency).
-  5/5 FRB_MODEL tests PASS.
+  Completeness l2 residual < 1e-10 PASS on 3 systems (printed
+  exponents mojibaked - pin requested); Helmholtz orthogonality
+  by construction. Physical interpretation T0-CONSISTENT:
+  chi (rotational) dominates at the horizon, phi (static DPM
+  limit) from infinity - Newton emergent at range, again.
+  Cosmic Egg 2nd appearance; f_TRZ drift 7th (listing only).
 
-MILESTONE: 100 PAPERS WIRED (100/2,255; 10 clean, 90
-OPEN_RULING, 92 rulings queued).
+  NOTE: version rolls past 0.99 to v0.100.0 - PEP 440 valid,
+  PyPI sorts it correctly above 0.99.0.
 
-Q-092 queued. Gate 696 assertions 0 failures. Registry 274 rows /
-553 edges / 100 citation ledgers. Next: PAPER_097.
+Q-093 queued. Gate 701 assertions 0 failures. Registry 275 rows /
+559 edges / 101 citation ledgers. Wired 101/2,255 (10 clean, 91
+OPEN_RULING). Next: PAPER_098.

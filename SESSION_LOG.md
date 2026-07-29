@@ -1351,3 +1351,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign next: PAPER_097.
 
 ---
+
+## 2026-07-29 — v0.100.0 — BAND 1: PAPER_097
+
+- PAPER_097 wired (⚠ Q-093): Whittaker 26-layer. Partition EXACT
+  with SO_FIVE band; refines 084 (Q-080a annotated);
+  T0-consistent interpretation. Version rolls to 0.100.0
+  (PEP 440 sorts correctly above 0.99.0).
+- Campaign: 101/2,255 (10 ✓, 91 ⚠). Next: PAPER_098.
+
+---

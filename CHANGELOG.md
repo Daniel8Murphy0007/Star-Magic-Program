@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.100.0] — 2026-07-29 — BAND 1: PAPER_097
+
+### Added
+- **PAPER_097 dispatch** (Whittaker 26-Layer Decomposition,
+  Drawing 30): partition {4,4,10,6,2} = 26 EXACT with
+  STRENGTHENED primitive texture — the SSq-correction band
+  (layers 9-18) = SO_FIVE, alongside D_PHYS (x2), D_BSFG, and
+  the halving 2; REFINES PAPER_084's coarser {4,14,6,2} (the 14
+  splits as 4+10; Q-080a annotated). Completeness < 1e-10 PASS
+  on 3 systems; Helmholtz orthogonality; chi-at-horizon /
+  phi-at-infinity interpretation is T0-doctrine-consistent
+  (Newton limit emergent at range). Cosmic Egg 2nd appearance;
+  f_TRZ drift 7th (listing only).
+- OPEN_RULING Q-093.
+- Gate: 701 assertions, 0 failures. Registry: 275 rows / 559 edges / 101 ledgers.
+
+---
+
 ## [0.99.0] — 2026-07-29 — BAND 1: PAPER_096 — 100 PAPERS MILESTONE
 
 ### Added

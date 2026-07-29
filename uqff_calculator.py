@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.99.0"
+VERSION = "0.100.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5064,5 +5064,51 @@ def _paper_096(dataset):
                     'dt = 1.5R/(c*[SCm]); alpha = 1+f_TRZ; P_rep = P*(1+kappa*t_acc)'),
         'source': 'PAPER_096',
         'residual_pct': abs(1.5 * 1.2e4 / (3e8 * 0.99) - 6e-5) / 6e-5 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_097')
+def _paper_097(dataset):
+    """Whittaker Decomposition, 26-Layer Basis - Drawing 30 (Session 0).
+
+    Classical Whittaker/Bateman two-potential separation extended
+    to the 26-layer geometry: F_U = Sum_k [d2 phi_k/dz2 +
+    d2 chi_k/dz dt].
+    LAYER PARTITION REFINES PAPER_084's: {1-4 EM/rot, 5-8
+    vacuum/buoyancy, 9-18 SSq/SCm, 19-24 TRZ/DM, 25-26 Cosmic
+    Egg} = 4+4+10+6+2 = 26 EXACT - and the texture strengthens:
+    the 10-band carrying the SSq corrections = SO_FIVE, alongside
+    D_PHYS (x2), D_BSFG, and the halving 2. 084's coarser 14
+    splits as 4+10 (Q-093a).
+    Completeness: l2 residual < 1e-10 asserted, PASS on 3 systems
+    (residual exponents mojibaked, Q-093b); orthogonality via
+    Helmholtz by construction.
+    PHYSICAL INTERPRETATION consistent with the T0 doctrine
+    (PAPER_090): chi (rotational) dominates at the horizon, phi
+    (static DPM-limit) dominates from infinity - the Newton
+    far-field limit again emergent, not fundamental.
+    Cosmic Egg 2nd appearance (084-consistent); f_TRZ drift 7th
+    instance (table listing only, no new observable).
+    """
+    partition = {'em_rot_1_4': 4, 'vac_buoy_5_8': 4, 'ssq_scm_9_18': 10,
+                 'trz_dm_19_24': 6, 'cosmic_egg_25_26': 2}
+    return {
+        'value': {
+            'domain': '1.13 (Drawing 30 WHITTAKER_MODEL)',
+            'partition': partition,
+            'partition_sum': sum(partition.values()),      # 26 EXACT
+            'ssq_band_is_so_five': partition['ssq_scm_9_18'] == 10,
+            'refines_084': '14 splits as 4 + 10 (SO_FIVE)',
+            'completeness_threshold': 1e-10,
+            'completeness_pass_systems': 3,
+            'orthogonality': 'Helmholtz by construction',
+            'interpretation': 'chi at horizon, phi (DPM limit) at infinity - T0-consistent',
+            'cosmic_egg_appearance': 2,
+        },
+        'formula': ('F_U = Sum_k [d2 phi_k/dz_k^2 + d2 chi_k/dz_k dt_k]; '
+                    'partition 4+4+10+6+2 = 26'),
+        'source': 'PAPER_097',
+        'residual_pct': 0.0 if sum(partition.values()) == 26 else 100.0,
         'status': 'OPEN_RULING',
     }

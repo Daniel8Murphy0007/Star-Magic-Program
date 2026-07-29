@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 100 (10 ✓, 90 ⚠ OPEN_RULING)
+- **Wired:** 101 (10 ✓, 91 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2155
+- **Not yet touched:** 2154
 
 ---
 
@@ -130,7 +130,7 @@
 | ⚠ | PAPER_094 | Magnetar SGR1745 UQFF Calibration |
 | ⚠ | PAPER_095 | UQFF 99pt9 Solvability |
 | ⚠ | PAPER_096 | FRB UQFF Emission Model |
-| ⬜ | PAPER_097 | Whittaker Decomposition UQFF |
+| ⚠ | PAPER_097 | Whittaker Decomposition UQFF |
 | ⬜ | PAPER_098 | Big Bang UQFF |
 | ⬜ | PAPER_099 | Plasma Shield UQFF |
 | ⬜ | PAPER_1000 | NS Merger FUBi Strain |

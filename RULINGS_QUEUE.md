@@ -1447,7 +1447,8 @@ RESOLVED section with the ruling recorded.
   5-18 sub-Planckian, 19-24 non-local, 25-26 Cosmic Egg} = 4+14+
   6+2 = 26 EXACT, with observable = D_PHYS and non-local =
   D_BSFG - is the primitive structure intended (and is 14 = 26 -
-  2*6 or another composition)? (b) The Page-time linearization
+  2*6 or another composition)?
+  [REFINED by PAPER_097: the 14 splits as 4 + 10 with the 10 = SO_FIVE - see Q-093a.] (b) The Page-time linearization
   e^(kappa*t_evap) ~ 1 + kappa*t_evap is INVALID for the huge
   arguments involved - the exponential form is the claim and the
   thermal-within-observation conclusion survives; strike the ~?
@@ -1720,6 +1721,25 @@ RESOLVED section with the ruling recorded.
   the first Drawing-model paper; 5/5 tests PASS.
 - **Best-candidate wired:** corrected chains carried alongside
   paper arithmetic; forks + falsifiable logged.
+- **Daniel's ruling:** (pending)
+
+### Q-093 — PAPER_097 — partition refinement + SO_FIVE band + residual mojibake
+- **Question:** (a) The Whittaker layer partition {4,4,10,6,2}
+  REFINES PAPER_084's {4,14,6,2} by splitting the 14 as 4 + 10 -
+  and the 10-band (layers 9-18, the SSq/SCm corrections) = 
+  SO_FIVE. The primitive texture now reads {D_PHYS, D_PHYS,
+  SO_FIVE, D_BSFG, 2}: confirm the identification and reconcile
+  the two partitions as coarse/fine views of the same 26-layer
+  structure? (b) Completeness residuals are asserted < 1e-10 with
+  PASS on 3 systems, but the printed exponents are mojibaked
+  ("5.1e?/6.8e?/3.2e?") - pin. (c) f_TRZ drift 7th instance
+  (layer-table listing only).
+- **Notable:** chi-at-horizon / phi-at-infinity interpretation is
+  T0-doctrine-consistent (Newton limit emergent from the static
+  potentials at range); Cosmic Egg 2nd appearance; real
+  Whittaker-1903/Bateman-1904 citations.
+- **Best-candidate wired:** partition + texture + completeness
+  structure; refinement ruling queued.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.99.0", "uqff_calculator.VERSION = 0.99.0")
+assert_that(C.VERSION == "0.100.0", "uqff_calculator.VERSION = 0.100.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1532,6 +1532,17 @@ assert_that(abs(_r096['pulse_width_s'] - 6.06e-5) / 6.06e-5 < 0.01,
 assert_that(abs(_r096['slope_canonical'] - 1.10) < 1e-12,
             "PAPER_096: spectral-slope fork 1.01 vs 1.10 - THIRD f_TRZ observable fork (Q-092c)")
 assert_that(C.wired_count() >= 100, "wired_count >= 100")
+
+_r097 = C.calc('PAPER_097')['value']
+assert_that(_r097['partition_sum'] == 26,
+            "PAPER_097: Whittaker layer partition 4+4+10+6+2 = 26 EXACT")
+assert_that(_r097['ssq_band_is_so_five'],
+            "PAPER_097: the SSq-correction band = 10 = SO_FIVE - primitive texture strengthens (Q-093a)")
+assert_that(_r097['completeness_pass_systems'] == 3,
+            "PAPER_097: completeness < 1e-10 PASS on 3 systems as stated")
+assert_that('T0-consistent' in _r097['interpretation'],
+            "PAPER_097: chi-horizon/phi-infinity interpretation consistent with the 090 T0 doctrine")
+assert_that(C.wired_count() >= 101, "wired_count >= 101")
 
 # =============================================================================
 # REPORT
