@@ -1505,3 +1505,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 116/2,255 (11 ✓, 105 ⚠). Next: PAPER_113.
 
 ---
+
+## 2026-07-29 — v0.116.0 — BAND 1: PAPER_113
+
+- PAPER_113 wired (⚠ Q-109): EP-05 4LAC blazar decay. Canonical
+  chains EXACT; CTA 102 factor-10 error found and corrected
+  (2.66e-3/day, 5.3x above canonical — reconciliation
+  inverted); 50-AGN mean flagged load-bearing/unshown.
+- Campaign: 117/2,255 (11 ✓, 106 ⚠). Next: PAPER_114.
+
+---

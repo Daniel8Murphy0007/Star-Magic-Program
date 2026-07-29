@@ -2096,6 +2096,36 @@ RESOLVED section with the ruling recorded.
   hadron cluster; statistics carried as claimed-with-defect.
 - **Daniel's ruling:** (pending)
 
+### Q-109 — PAPER_113 EP-05 — CTA 102 factor-10 error inverts reconciliation
+- **Question:** (a) FACTOR-10 ARITHMETIC ERROR in the paper's
+  own division: ln(2.1/0.47)/562 = 1.497/562 = 2.66e-3/day,
+  PRINTED as 2.66e-4/day. Per-segment kappas across the four
+  CTA 102 epochs (3.27e-3, 2.54e-3, 2.44e-3) confirm the flare
+  IS single-exponential at ~2.66e-3/day. The corrected value is
+  5.3x ABOVE canonical 5e-4, not the printed "factor 1.88
+  below" — the extreme-flare reconciliation INVERTS. Note the
+  sanity check: at the printed kappa, L(562) = 1.81, not the
+  observed 0.47. Rule on the corrected reading (fast flares
+  decay at multiples of canonical kappa? per-flare vs
+  population kappa distinction?).
+  (b) The load-bearing claim kappa_bar = 4.97e-4/day over the
+  50 brightest monitored AGN is asserted without data — with
+  (a) inverted, this is now the ONLY support for the 5 pct
+  confirmation headline. Provide the 50-AGN fit table.
+  (c) Lookback table: t(z=0.1) chain = 4.75e11 days vs printed
+  4.75e8 (1000x label slip); conclusion e^-kt ~ 0 robust
+  either way.
+  (d) 089-footer U_bi recurs verbatim (Q-085a template).
+- **Notable:** everything at canonical kappa verifies EXACT
+  (e^-1 = 0.368 flare fraction, N_cycles = 2.426, bin totals
+  1.04 pct); kappa's third domain (blazar population) stands
+  structurally, but its numerical support now rests on the
+  unshown 50-AGN mean.
+- **Best-candidate wired:** canonical-kappa chains EXACT;
+  CTA 102 corrected chain pinned; reconciliation inversion
+  disclosed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

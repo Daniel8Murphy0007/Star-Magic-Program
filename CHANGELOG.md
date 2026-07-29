@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.116.0] — 2026-07-29 — BAND 1: PAPER_113 — CTA 102 FACTOR-10
+
+### Added
+- **PAPER_113 dispatch** (EP-05: Fermi-LAT 4LAC Blazar E_react
+  Decay): E_react = 1e46·exp(−κt), κ's third domain (blazar
+  population, after GW damping and MCMC). Canonical chains
+  EXACT: flare fraction e⁻¹ = 0.368 at 2000 days; N_cycles =
+  2.426 per e-fold at z=1; bin totals 3,743/3,704 = 1.04%.
+  FACTOR-10 ERROR: the paper's own CTA 102 division 1.497/562
+  = 2.66e-3/day printed as 2.66e-4; per-segment kappas confirm;
+  corrected value is 5.3x ABOVE canonical — the "1.88x below"
+  reconciliation INVERTS. The unshown 50-AGN mean (4.97e-4) is
+  now the sole numerical support for the confirmation headline.
+  Lookback 1000x label slip (conclusion robust); 089-footer
+  recurs.
+- OPEN_RULING Q-109.
+- Gate: 799 assertions, 0 failures. Registry: 306 rows / 640 edges / 117 ledgers.
+
+---
+
 ## [0.115.0] — 2026-07-29 — BAND 1: PAPER_112 — LADDER −1 DEFECT
 
 ### Added

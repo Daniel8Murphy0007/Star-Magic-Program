@@ -635,3 +635,8 @@ primitive,D_CRIT,observable,ep02_energy_ladder,26 levels
 primitive,KAPPA_PER_DAY,observable,ep02_energy_ladder,S204.5 conversion EXACT
 observable,ep02_midband_defect,paper,PAPER_112,-1 systematic
 observable,ep02_midband_defect,paper,PAPER_089,footer recurrence
+observable,ep05_blazar_decay,paper,PAPER_113,population decay
+primitive,KAPPA_PER_DAY,observable,ep05_blazar_decay,third kappa domain
+observable,ep05_blazar_decay,paper,PAPER_094,kappa origin cross-ref
+observable,ep05_cta102_factor10,paper,PAPER_113,factor-10 error
+observable,ep05_cta102_factor10,paper,PAPER_089,footer recurrence

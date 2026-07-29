@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.115.0", "uqff_calculator.VERSION = 0.115.0")
+assert_that(C.VERSION == "0.116.0", "uqff_calculator.VERSION = 0.116.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1742,6 +1742,19 @@ assert_that(abs(_r112['kappa_per_s'] - 5.787e-9) < 1e-12,
 assert_that('trivially 100' in _r112['stat_defect'],
             "PAPER_112: 90.5 pct within +/-0.5 statistic ill-defined - pinned (Q-108b)")
 assert_that(C.wired_count() >= 116, "wired_count >= 116")
+
+_r113 = C.calc('PAPER_113')['value']
+assert_that(abs(_r113['flare_decay_2000d'] - 0.3679) < 0.0001,
+            "PAPER_113: flare decay e^-1 = 0.368 after 2000 days EXACT (canonical kappa)")
+assert_that(abs(_r113['n_cycles_z1'] - 2.426) < 0.001,
+            "PAPER_113: N_cycles = 2.426 per e-fold at z=1 EXACT")
+assert_that(abs(_r113['bin_err_pct'] - 1.04) < 0.01,
+            "PAPER_113: 4LAC bin totals 3743/3704 = 1.04 pct EXACT")
+assert_that(abs(_r113['cta102_kappa_chain'] - 2.664e-3) < 1e-5,
+            "PAPER_113: CTA 102 chain 2.66e-3/day vs printed 2.66e-4 - FACTOR-10 ERROR pinned (Q-109a)")
+assert_that(abs(_r113['cta102_vs_canonical'] - 5.33) < 0.01,
+            "PAPER_113: corrected CTA 102 is 5.3x ABOVE canonical - reconciliation INVERTED (Q-109a)")
+assert_that(C.wired_count() >= 117, "wired_count >= 117")
 
 # =============================================================================
 # REPORT

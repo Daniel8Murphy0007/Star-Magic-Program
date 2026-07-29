@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.115.0"
+VERSION = "0.116.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5904,5 +5904,54 @@ def _paper_112(dataset):
         'formula': 'n = log10(E_rest/J) + 20; E_n = 10^(n-20) J',
         'source': 'PAPER_112',
         'residual_pct': abs(lvl(2.005e-8) - 12.30) / 12.30 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_113')
+def _paper_113(dataset):
+    """EP-05: Fermi-LAT 4LAC Blazar E_react Decay (Session 0).
+
+    E_react = 1e46 * exp(-kappa*t) with canonical KAPPA_PER_DAY
+    against the 4LAC-DR3 catalog (3,743 blazars). VERIFIED
+    EXACT: flare decay e^(-kappa*2000d) = e^-1 = 0.368;
+    N_cycles = 3.5*ln(2)/(kappa*2000) = 2.426; bin totals
+    3,743 obs / 3,704 pred, 1.04 pct.
+    FACTOR-10 ARITHMETIC ERROR (Q-109a): the paper's own CTA
+    102 division ln(2.1/0.47)/562 = 1.497/562 = 2.66e-3/day,
+    PRINTED 2.66e-4. Per-segment kappas (3.27e-3 / 2.54e-3 /
+    2.44e-3) confirm the flare IS single-exponential at
+    ~2.66e-3/day - which is 5.3x ABOVE canonical, not the
+    printed "factor 1.88 below". The extreme-flare
+    reconciliation INVERTS under the corrected chain.
+    The load-bearing claim kappa_bar = 4.97e-4/day over the 50
+    brightest AGN is asserted without data (Q-109b).
+    Lookback t(z=0.1): chain 4.75e11 days vs printed 4.75e8
+    (1000x label slip; conclusion e^-kt ~ 0 robust either way,
+    Q-109c). 089-footer recurs (Q-085a template).
+    """
+    import math as _m
+    k_cta = _m.log(2.1 / 0.47) / 562
+    return {
+        'value': {
+            'domain': '1.15 (EP-05 blazar decay)',
+            'source': 'Fermi-LAT 4LAC-DR3 (3,743 blazars)',
+            'e_react_form': 'E = 1e46 J * exp(-kappa*t)',
+            'flare_decay_2000d': _m.exp(-KAPPA_PER_DAY * 2000),   # 0.368 EXACT
+            'n_cycles_z1': 3.5 * _m.log(2) / (KAPPA_PER_DAY * 2000),  # 2.426 EXACT
+            'bin_totals': (3743, 3704),
+            'bin_err_pct': (3743 - 3704) / 3743 * 100,            # 1.04 EXACT
+            'cta102_kappa_chain': k_cta,                          # 2.66e-3
+            'cta102_kappa_printed': 2.66e-4,                      # factor-10 error
+            'cta102_segments': (_m.log(2.1/1.4)/124, _m.log(1.4/0.8)/220, _m.log(0.8/0.47)/218),
+            'cta102_vs_canonical': k_cta / KAPPA_PER_DAY,         # 5.33x ABOVE
+            'reconciliation': 'INVERTED: printed 1.88x below; chain 5.3x above',
+            'kappa_bar_50agn': 4.97e-4,                           # asserted, no data
+            'lookback_z01_days_chain': 1.30e9 * 365.25,           # 4.75e11 vs printed 4.75e8
+            'footer_recurrence': '089 broken U_bi footer (Q-085a)',
+        },
+        'formula': 'L(t) = L0*exp(-kappa*(t-t_on)); N_cyc*kappa*t_act = 3.5*ln(1+z)',
+        'source': 'PAPER_113',
+        'residual_pct': abs(_m.exp(-KAPPA_PER_DAY * 2000) - 0.368) / 0.368 * 100,
         'status': 'OPEN_RULING',
     }

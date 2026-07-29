@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 116 (11 ✓, 105 ⚠ OPEN_RULING)
+- **Wired:** 117 (11 ✓, 106 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2139
+- **Not yet touched:** 2138
 
 ---
 
@@ -295,7 +295,7 @@
 | ⬜ | PAPER_1137 | SCm Holmlid Rossi Parkhomov Validation |
 | ⬜ | PAPER_1138 | SCm Holmlid Parkhomov PonsFleischmann Upgrade |
 | ⬜ | PAPER_1139 | SCm PonsFleischmann Derivation |
-| ⬜ | PAPER_113 | EP05 FermiLAT Blazar Ereact Proof |
+| ⚠ | PAPER_113 | EP05 FermiLAT Blazar Ereact Proof |
 | ⬜ | PAPER_1140 | SCm Mizuno LENR Transmutation |
 | ⬜ | PAPER_1141 | SCm Rossi ECat Variants Unified |
 | ⬜ | PAPER_1142 | Polyakov Action Details SCm 26D |
