@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.41.0] — 2026-07-29 — BAND 1: PAPER_038
+
+### Added
+- **PAPER_038 dispatch** (FUBii Quantum Corrections Series, variants
+  7-11): fermi (shock acceleration), kne (CR knee), whim (missing-
+  baryon reservoir), ps (Press-Schechter in Planck-mass units —
+  quantum-gravity anchor), sfe (Bekenstein-like area law). TWO chains
+  VERIFIED end-to-end: fermi Cen A = 0.82 N per 10-GeV proton and
+  whim filament = 7.4e-13 N. Physical claim preserved: the CR knee at
+  3e15 eV is a STATIONARY POINT of the F_UBii landscape (dF/dlnE = 0)
+  — cross-linked to PAPER_020's TRZ break. OPEN_RULING Q-036 (iron-
+  knee log 38.0-vs-39.2 -> ratio 27.5-vs-28.4; ps MW 1000x
+  chain-vs-boxed; sfe Orion 10x; "3x10-5 eV" mojibake for 3e15).
+- Gate: 309 assertions, 0 failures. Registry: 124 rows / 240 edges / 42 ledgers.
+
+---
+
 ## [0.40.0] — 2026-07-29 — BAND 1: PAPER_037
 
 ### Added

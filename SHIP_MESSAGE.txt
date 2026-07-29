@@ -1,29 +1,25 @@
-v0.40.0 BAND 1: PAPER_037 wired
+v0.41.0 BAND 1: PAPER_038 wired
 
-PAPER_037 F_UBii Buoyancy Variants 2-6: Thermodynamic Series
-(OPEN_RULING Q-035):
-  Five variants wired parameterized via _fubii_scale:
-    termv - jet/wind terminal velocity (tau*L/c momentum flux)
-    upar  - ionization parameter, U^(3/2) HII ram-pressure scaling
-    coup  - energy coupling, eps^(3/2) AGN-feedback law
-    orbdec- Peters-linked binary inspiral: F = (F_rel/E_LEP)*
-            P_GW,Peters*Q*|da/dt| - DIRECT UQFF-GW correspondence,
-            bridges the buoyancy family to PAPER_001/012
-    kn    - kilonova
-  KILONOVA VERIFIED END-TO-END: AT2017gfo F_UBii_kn = F_rel*
-  (L_peak*t_peak/E_LEP)*Q*(M_ej/M_sun)^(1/3) = 1.305e54 N with the
-  paper's own inputs - validator-confirmed, gate-pinned.
+PAPER_038 F_UBii Buoyancy Variants 7-11: Quantum Corrections Series
+(OPEN_RULING Q-036):
+  fermi - shock acceleration: Cen A = 0.82 N per ~10 GeV proton
+          VERIFIED end-to-end
+  kne   - CR knee at 3e15 eV as F_UBii STATIONARY POINT
+          (dF/dlnE = 0) - physical origin for the knee; iron/proton
+          ratio = rigidity 26 + log correction; cross-links to
+          PAPER_020's TRZ spectral break
+  whim  - missing-baryon reservoir (40-50 pct): filament = 7.4e-13 N
+          VERIFIED end-to-end (Thomson-depth chain exact)
+  ps    - Press-Schechter halos in Planck-mass units - the UQFF
+          quantum-gravity anchor for structure formation
+  sfe   - star formation as eps^(3/2)*M*c^2/r^2 Bekenstein-like
+          area-limited process
 
-Q-035 queued: exponent mojibake corrupts the OTHER three worked
-examples vs their own formulas - termv M87 100x (pinned), upar M42
-up to 1e13 (r printed "3e-7 m (1 pc)"), coup AGN 1e7-1e8; kn input
-L_peak = 5e40 W vs physical AT2017gfo ~5e34 (canonical-input
-ruling); kn/grav ratio printed 6.2e-7 vs arithmetic 6.2e17.
+Q-036 queued: iron-knee log printed 38.0 vs computed 39.2 (ratio
+27.5 vs 28.4); ps Milky Way boxed -8.7e68 N vs own-factor chain
+-8.7e65 (1000x, pinned); sfe Orion boxed 1.72e22 vs chain 1.72e21
+(10x, pinned); knee energy printed "3x10-5 eV" for 3e15 eV.
 
-Also in this ship: ship.ps1 parser-safe regeneration (split on
-char34; CRLF + BOM) after Daniel's PowerShell rejected the old
-quote/bracket regex.
-
-Gate 303 assertions 0 failures. Registry 121 rows / 235 edges / 41
-citation ledgers. Wired 41/2,255 (8 clean, 33 OPEN_RULING).
-Next: PAPER_038 (FUBii variants 7-11, quantum).
+Gate 309 assertions 0 failures. Registry 124 rows / 240 edges / 42
+citation ledgers. Wired 42/2,255 (8 clean, 34 OPEN_RULING).
+Next: PAPER_039 (FUBii variants 12-17, ICM - closes the family).

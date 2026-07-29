@@ -559,6 +559,23 @@ RESOLVED section with the ruling recorded.
   discrepancies quantified (termv 100x pinned).
 - **Daniel's ruling:** (pending)
 
+### Q-036 — PAPER_038 — quantum-series slips (kne log, ps 1000x, sfe 10x)
+- **Question:** fermi and whim chains verify exactly, but: (a) the
+  iron-knee logarithm is printed 38.0 while ln(1.25e-2/1.22e-19) =
+  39.2 - the Fe/p ratio becomes 28.4 (9.2 pct enhancement), not the
+  stated 27.5 (5.8 pct); which is canonical? (b) ps Milky Way: the
+  chain with the paper's own printed factors (1e-10 * 4.2e57 *
+  1.38e19 * 0.15) gives -8.7e65 N, but the boxed result is -8.7e68 -
+  1000x; (c) sfe Orion A: chain gives 1.72e21 N, boxed result
+  1.72e22 - 10x. Exponent-mojibake family (knee energy itself is
+  printed "3x10-5 eV" for 3e15 eV throughout).
+- **Best-candidate wired:** verified chains gate-pinned (fermi 0.82 N,
+  whim 7.4e-13 N); computed values wired for kne/ps/sfe with paper
+  values exposed alongside and multipliers (1000x, 10x) pinned;
+  knee-as-stationary-point physical claim preserved and cross-linked
+  to PAPER_020's TRZ break.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

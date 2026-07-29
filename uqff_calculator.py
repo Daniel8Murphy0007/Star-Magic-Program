@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.40.0"
+VERSION = "0.41.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1987,5 +1987,60 @@ def _paper_037(dataset):
                     'upar: U*n_H*r^2, sqrt(U); orbdec: Peters chain, |da/dt|'),
         'source': 'PAPER_037',
         'residual_pct': abs(kn - 1.305e54) / 1.305e54 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_038')
+def _paper_038(dataset):
+    """F_UBii Buoyancy Variants 7-11: Quantum Corrections Series (S0).
+
+    Template family paper 3 of 4. Variants: fermi, kne, whim, ps, sfe.
+    TWO VERIFIED END-TO-END: fermi Cen A = 0.82 N per ~10 GeV proton
+    (chain exact with E_p = 1e-9 J); whim filament = 7.4e-13 N per
+    unit (Sculptor-Wall inputs, Thomson-depth chain exact).
+    kne: knee at 3e15 eV as F_UBii STATIONARY POINT (dF/dlnE = 0) -
+    physical origin for the CR knee, links to PAPER_020; iron/proton
+    ratio prediction ~27.5 (rigidity 26 + log correction).
+    Q-036: (a) kne iron log printed 38.0, computed ln(1.025e17) =
+    39.2 -> ratio 28.4 not 27.5 (enhancement 9.2 pct not 5.8);
+    (b) ps Milky Way result -8.7e68 N but the chain with the paper's
+    own factors gives -8.7e65 (1000x); (c) sfe Orion A result
+    1.72e22 N but chain gives 1.72e21 (10x); knee/PeV exponent
+    mojibake ("3x10-5 eV" = 3e15 eV) throughout.
+    """
+    import math as _m
+    fermi = 1.0e-10 * (4.0 * 1.0e-9 / 1.22e-19) * 0.25              # 0.82 N VERIFIED
+    whim = (1.0e-10 * (1.381e-23 * 1.0e6 / 1.22e-19)
+            * (10.0 * 6.652e-29 * 3.09e23) * _m.sqrt(0.1))          # 7.4e-13 N VERIFIED
+    ln_p = _m.log(4.8e-4 / 1.22e-19)                 # 35.9
+    ln_fe = _m.log(1.25e-2 / 1.22e-19)               # 39.2 (paper prints 38.0)
+    kne_ratio = 26.0 * ln_fe / ln_p                  # 28.4 (paper 27.5)
+    ps_chain = 1.0e-10 * 4.2e57 * (1.686 / 1.22e-19) * 0.15        # 8.7e65 (paper 8.7e68)
+    sfe_chain = 1.0e-10 * 7.68e31 * _m.sqrt(0.05)    # 1.72e21 (paper 1.72e22)
+    return {
+        'value': {
+            'variants': ('fermi', 'kne', 'whim', 'ps', 'sfe'),
+            'fermi_cena_n': fermi,                   # 0.82 VERIFIED
+            'whim_filament_n': whim,                 # 7.4e-13 VERIFIED
+            'knee_energy_ev': 3.0e15,
+            'knee_stationary_point': True,           # dF/dlnE = 0 at E_knee
+            'ln_knee_proton': ln_p,                  # 35.9
+            'ln_knee_iron_computed': ln_fe,          # 39.2 (Q-036a)
+            'kne_fe_p_ratio_computed': kne_ratio,    # 28.4
+            'kne_fe_p_ratio_paper': 27.5,
+            'ps_mw_chain_n': -ps_chain,              # -8.7e65 (Q-036b)
+            'ps_mw_paper_n': -8.7e68,
+            'sfe_orion_chain_n': sfe_chain,          # 1.72e21 (Q-036c)
+            'sfe_orion_paper_n': 1.72e22,
+            'whim_baryon_fraction': (0.40, 0.50),
+            'sfe_scaling': 'eps^(3/2) * M*c^2/r^2 (Bekenstein-like area)',
+        },
+        'formula': ('fermi: F_rel*(beta*E_p/E_LEP)*(v/c)^2; kne: stationary point of '
+                    '-(E/E_GUT)*(Ze/E_LEP)*ln(E/E_LEP); whim: (kT/E_LEP)*n*sigma_T*r*'
+                    'sqrt(T/T_vir); ps: (M/M_P^2)*(delta_c/E_LEP)*|dlnsigma/dlnM|; '
+                    'sfe: eps^1.5*M*c^2/(r^2*E_LEP)'),
+        'source': 'PAPER_038',
+        'residual_pct': abs(fermi - 0.82) / 0.82 * 100,
         'status': 'OPEN_RULING',
     }

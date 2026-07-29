@@ -234,3 +234,8 @@ observable,fubii_thermo_variants,paper,PAPER_037,primary derivation
 observable,fubii_orbdec_peters_link,paper,PAPER_037,primary derivation
 observable,fubii_orbdec_peters_link,paper,PAPER_012,Peters chain link
 observable,fubii_thermo_variants,paper,PAPER_036,family base identity
+observable,fubii_fermi_whim_verified,paper,PAPER_038,primary derivation
+observable,cr_knee_stationary_point,paper,PAPER_038,primary derivation
+observable,cr_knee_stationary_point,paper,PAPER_020,CR-sector cross-link
+observable,fubii_ps_sfe_variants,paper,PAPER_038,primary derivation
+observable,fubii_ps_sfe_variants,paper,PAPER_036,family base identity

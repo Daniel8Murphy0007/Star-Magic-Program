@@ -758,3 +758,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 41/2,255 (8 ✓, 33 ⚠). Next: PAPER_038 (variants 7-11, quantum).
 
 ---
+
+## 2026-07-29 — v0.41.0 — BAND 1: PAPER_038
+
+- PAPER_038 wired (⚠ Q-036): FUBii quantum series. fermi + whim
+  verified end-to-end; CR-knee stationary-point claim cross-links to
+  PAPER_020; ps/sfe boxed-result multipliers (1000x, 10x) pinned.
+- Gate 309/0. Registry 124 rows / 240 edges / 42 ledgers.
+- Campaign: 42/2,255 (8 ✓, 34 ⚠). Next: PAPER_039 (variants 12-17, ICM
+  — closes the FUBii family).
+
+---

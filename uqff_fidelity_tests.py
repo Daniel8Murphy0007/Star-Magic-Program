@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.40.0", "uqff_calculator.VERSION = 0.40.0")
+assert_that(C.VERSION == "0.41.0", "uqff_calculator.VERSION = 0.41.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -681,6 +681,21 @@ assert_that(abs(_r037['termv_m87_formula_true_n'] / _r037['termv_m87_paper_n'] -
 assert_that(abs(_r037['kn_grav_ratio_true'] - 6.2e17) / 6.2e17 < 0.02,
             "PAPER_037: kn/grav ratio arithmetic = 6.2e17 (paper prints 6.2e-7 - Q-035e)")
 assert_that(C.wired_count() >= 41, "wired_count >= 41")
+
+_r038 = C.calc('PAPER_038')['value']
+assert_that(abs(_r038['fermi_cena_n'] - 0.82) < 0.01,
+            "PAPER_038: fermi Cen A = 0.82 N per ~10 GeV proton VERIFIED end-to-end")
+assert_that(abs(_r038['whim_filament_n'] - 7.4e-13) / 7.4e-13 < 0.01,
+            "PAPER_038: whim filament = 7.4e-13 N VERIFIED end-to-end (Thomson-depth chain)")
+assert_that(abs(_r038['ln_knee_proton'] - 35.9) < 0.1,
+            "PAPER_038: ln(E_knee/E_LEP) = 35.9 - knee as F_UBii stationary point")
+assert_that(abs(_r038['kne_fe_p_ratio_computed'] - 28.4) < 0.1,
+            "PAPER_038: iron/proton knee ratio computed 28.4 (paper 27.5 via ln slip - Q-036a)")
+assert_that(abs(_r038['ps_mw_paper_n'] / _r038['ps_mw_chain_n'] - 1000.0) < 50.0,
+            "PAPER_038: ps MW paper value is 1000x the chain value (Q-036b quantified)")
+assert_that(abs(_r038['sfe_orion_paper_n'] / _r038['sfe_orion_chain_n'] - 10.0) < 0.5,
+            "PAPER_038: sfe Orion paper value is 10x the chain value (Q-036c quantified)")
+assert_that(C.wired_count() >= 42, "wired_count >= 42")
 
 # =============================================================================
 # REPORT
