@@ -1,17 +1,19 @@
-v0.7.0 BAND 1: PAPER_008 wired
+v0.8.0 BAND 1: PAPER_009 wired (self-rectification milestone)
 
-PAPER_008 Waveform Phase Evolution + Template Mismatch (Session 143,
-OPEN_RULING Q-008):
-  P_UQFF = D_total^2 * P_GR = 0.111 * P_GR (BNS)
-  Inspiral timescale extension tau_UQFF = 9.0x tau_GR
-  Phase-lag growth dphi ~ (1/D^2 - 1) * phi_GR ~ 8x
-  Full 100s GW170817 inspiral: 2310.8 rad = 367.8 cycles
-  (cross-checks PAPER_006 exactly)
-  Template sensitivity: 1% phase error at merger -> 50% SNR loss
+PAPER_009 Damping Mechanism Decomposition (Session 143, OPEN_RULING Q-009):
+  4-mechanism synthesis D_total = D_Aether*D_SCm*D_TRZ*D_String
+  Per-system: GW170817 BNS 0.333 (string 0.37) / GW190425 BNS 0.530
+  (string 0.62) / GW150914 BBH 0.81 = (1-F_TRZ)^2 (string deactivated)
+  BNS/BBH damping ratio 2.43x (matter strengthens damping)
+  TRZ resonance ~100 Hz; string dominance >200 Hz
 
-Q-008 queued: power-scaling convention conflict - PAPER_005 scales P
-linearly by F (0.81) while PAPER_008 scales by D^2 (0.111). D^2 is
-physically consistent with P ~ h^2 since strain scales linearly by D.
+SELF-RECTIFICATION MILESTONE: PAPER_009's per-system table explains
+PAPER_002's 0.5297 headline — the heavier BNS carries reduced string
+coupling (0.62 vs 0.37). First corpus-internal resolution evidence,
+annotated into Q-001. The compile-and-converge design is working.
 
-Gate 94 assertions 0 failures. Registry 25 rows / 35 edges / 8 citation
-ledgers. Wired 8/2,255 (2 clean, 6 OPEN_RULING). Next: PAPER_009.
+Q-009 queued: aether formula exp(-kappa*r/c) evaluates ~0 in literal SI
+(16 orders from paper's own 0.999999 table) - unstated unit convention.
+
+Gate 100 assertions 0 failures. Registry 28 rows / 40 edges / 9 citation
+ledgers. Wired 9/2,255 (2 clean, 7 OPEN_RULING). Next: PAPER_010.

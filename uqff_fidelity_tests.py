@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.7.0", "uqff_calculator.VERSION = 0.7.0")
+assert_that(C.VERSION == "0.8.0", "uqff_calculator.VERSION = 0.8.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -228,6 +228,19 @@ assert_that(abs(_r008['phase_lag_full_rad'] - 2310.8) < 0.1,
 assert_that(abs(_r008['D_bbh_reference'] - 0.81) < 1e-15,
             "PAPER_008: BBH cross-reference (1-F_TRZ)^2 = 0.81 (PAPER_005)")
 assert_that(C.wired_count() >= 8, "wired_count >= 8")
+
+_r009 = C.calc('PAPER_009')['value']
+assert_that(abs(_r009['D_total_by_system']['gw170817_bns'] - 0.333) < 1e-12,
+            "PAPER_009: GW170817 BNS D_total = 0.333")
+assert_that(abs(_r009['D_total_by_system']['gw150914_bbh'] - 0.81) < 1e-15,
+            "PAPER_009: GW150914 BBH D_total = (1-F_TRZ)^2 = 0.81 EXACT")
+assert_that(abs(_r009['bns_bbh_damping_ratio'] - 2.43) < 0.01,
+            "PAPER_009: BNS shows 2.4x stronger damping than BBH")
+assert_that(abs(_r009['d_aether_410mpc_paper'] - 0.999999) < 1e-6,
+            "PAPER_009: D_Aether = 0.999999 paper anchor (Q-009: SI eval gives ~0)")
+assert_that(abs(_r009['string_factor_gw190425'] - 0.62) < 1e-12,
+            "PAPER_009: GW190425 string factor 0.62 (self-rectifies Q-001 direction)")
+assert_that(C.wired_count() >= 9, "wired_count >= 9")
 
 # =============================================================================
 # REPORT

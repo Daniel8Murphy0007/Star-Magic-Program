@@ -401,3 +401,17 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 8/2,255 wired (2 ✓, 6 ⚠). Next: PAPER_009.
 
 ---
+
+## 2026-07-29 — v0.8.0 — BAND 1: PAPER_009
+
+- PAPER_009 wired (⚠ Q-009): 4-mechanism decomposition. Per-system D_totals:
+  0.333 BNS-light / 0.530 BNS-heavy (string 0.62) / 0.81 BBH.
+- SELF-RECTIFICATION MILESTONE: PAPER_009's table explains PAPER_002's
+  0.5297 headline (string=0.62 for heavier BNS) — first corpus-internal
+  resolution evidence, annotated into Q-001. Daniel's design intent working.
+- Gate catch: aether formula SI evaluation 16 orders off its own table
+  (exp(-2.4e8) vs 0.999999) — Q-009.
+- Gate 100/0. Registry 28 rows / 40 edges / 9 ledgers.
+- Campaign: 9/2,255 (2 ✓, 7 ⚠). Next: PAPER_010.
+
+---

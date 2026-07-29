@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 8 (2 ✓, 6 ⚠ OPEN_RULING)
+- **Wired:** 9 (2 ✓, 7 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2247
+- **Not yet touched:** 2246
 
 ---
 
@@ -31,7 +31,7 @@
 | ⚠ | PAPER_007 | Tidal Deformability Constraints BNS UQFF |
 | ⚠ | PAPER_008 | UQFF Waveform Phase Evolution Template Mismatch |
 | ⬜ | PAPER_008b | Full Inspiral Waveform UQFF |
-| ⬜ | PAPER_009 | Damping Mechanism Decomposition UQFF |
+| ⚠ | PAPER_009 | Damping Mechanism Decomposition UQFF |
 | ⬜ | PAPER_009b | Aether String TRZ Damping GW |
 | ⬜ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF |
 | ⬜ | PAPER_010b | Time Domain Chirp 23Hz UQFF |

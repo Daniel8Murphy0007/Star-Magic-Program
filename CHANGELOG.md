@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.8.0] — 2026-07-29 — BAND 1: PAPER_009
+
+### Added
+- **PAPER_009 dispatch** (Damping Mechanism Decomposition, Session 143):
+  4-mechanism synthesis (Aether/SCm/TRZ/String) with per-system table.
+  GW190425 string factor 0.62 — SELF-RECTIFICATION evidence for Q-001
+  (heavier BNS carries reduced string coupling; 0.5297 headline consistent).
+  BNS/BBH damping ratio 2.43x. OPEN_RULING Q-009: gate found the aether
+  formula exp(-kappa*r/c) evaluates ~0 in SI — 16 orders from the paper's
+  own table (0.999999) — unstated unit convention involved.
+- Gate: 100 assertions, 0 failures. Registry: 28 rows / 40 edges / 9 ledgers.
+
+---
+
 ## [0.7.0] — 2026-07-29 — BAND 1: PAPER_008
 
 ### Added

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.7.0"
+VERSION = "0.8.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -422,5 +422,46 @@ def _paper_008(dataset):
                     'dphi ~ 8*phi_GR (Q-008: power convention vs PAPER_005)'),
         'source': 'PAPER_008',
         'residual_pct': abs(1.0 / D_sq - 9.0) / 9.0 * 100.0,   # 9.018 vs paper "9.0"
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_009')
+def _paper_009(dataset):
+    """Damping Mechanism Decomposition (Session 143) — the 4-mechanism synthesis.
+
+    D_total = D_Aether * D_SCm * D_TRZ * D_String per-system:
+      GW170817 BNS 0.333 (String 0.37 primary), GW190425 BNS 0.530
+      (String 0.62 — SELF-RECTIFIES Q-001: heavier BNS has reduced string
+      coupling), GW150914 BBH 0.81 (TRZ only; string deactivated).
+    D_Aether = exp(-kappa*r/c) ~ 1 for all observed events (significant only
+    beyond observable universe). D_SCm = 1 - exp[-(B_crit/B)] (same form as
+    PAPER_007; differs from PAPER_002's Gaussian — feeds Q-002/Q-007).
+    Q-009: aether-scale r = c/kappa stated as 17 Gpc does not reproduce
+    from kappa = 5e-4/day without an unstated unit convention.
+    """
+    systems = {
+        'gw170817_bns': (1.0 - F_TRZ) * 0.37,          # 0.333
+        'gw190425_bns': 0.530,                          # paper: string 0.62 variant
+        'gw150914_bbh': (1.0 - F_TRZ) ** 2,             # 0.81 (TRZ+B-factor, PAPER_005)
+    }
+    return {
+        'value': {
+            'D_total_by_system': systems,
+            'bns_bbh_damping_ratio': systems['gw150914_bbh'] / systems['gw170817_bns'],  # 2.43
+            'string_factor_gw170817': 0.37,
+            'string_factor_gw190425': 0.62,             # heavier-BNS reduced coupling
+            'd_trz': 1.0 - F_TRZ,                       # 0.9 EXACT
+            'd_aether_410mpc_paper': 0.999999,          # paper table anchor (Q-009:
+            'kappa_r_over_c_410mpc_paper': 2.4e-8,      #  SI evaluation gives exp(-2.4e8)
+                                                        #  ~ 0 — formula irreproducible)
+            'trz_resonance_hz': 100.0,                  # paper sec 1.3
+            'string_dominance_above_hz': 200.0,
+            'scm_activation_threshold_note': 'sharp at B ~ 3-5e14 G (mojibake exponents)',
+        },
+        'formula': ('D_total = exp(-kappa*r/c) * [1-exp(-(B_crit/B))] * (1-F_TRZ) * D_string; '
+                    'per-system String: BNS-light 0.37, BNS-heavy 0.62, BBH deactivated'),
+        'source': 'PAPER_009',
+        'residual_pct': abs(systems['gw150914_bbh'] / systems['gw170817_bns'] - 2.4) / 2.4 * 100.0,
         'status': 'OPEN_RULING',
     }

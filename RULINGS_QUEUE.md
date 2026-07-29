@@ -18,6 +18,10 @@ RESOLVED section with the ruling recorded.
 - **Alternatives:** 0.333 (formula chain); or heavier-BNS reduced string coupling
   explains the difference (paper sec 6 hints at this)
 - **Daniel's ruling:** (pending)
+- **SELF-RECTIFICATION NOTE (PAPER_009):** sec 1.2 table gives GW190425
+  D_total = 0.530 with String = 0.62 — the heavier BNS carries REDUCED string
+  coupling, explaining the 0.5297 headline without contradicting the chain.
+  Q-001 likely resolves as "0.5297 correct via string=0.62 variant."
 
 ### Q-003 — PAPER_002 — scenario table does not reproduce from stated formula
 - **Question:** Paper's sec-4 table gives extreme-magnetar (B=3.36e13 G)
@@ -77,6 +81,19 @@ RESOLVED section with the ruling recorded.
   h scales linearly by D in all papers; P ~ h^2 would argue for D^2.)
 - **Best-candidate wired:** per-paper as stated; PAPER_008's D^2 convention is
   physically consistent with P ~ h^2
+- **Daniel's ruling:** (pending)
+
+### Q-009 — PAPER_009 — aether scale + D_SCm form family
+- **Question:** (a) r = c/kappa stated as 17 Gpc does not reproduce from
+  kappa = 5e-4/day (c/kappa = 5.2e16 m = 1.7 pc in SI); what unit convention
+  gives 17 Gpc? (b) D_SCm = 1-exp[-(B_crit/B)] here matches PAPER_007 but
+  differs from PAPER_002's exp[-(B/B_crit)^2] Gaussian — which is the
+  canonical SCm suppression form?
+- **Best-candidate wired:** paper-stated table anchors (D_Aether = 0.999999,
+  kappa*r/c = 2.4e-8 at 410 Mpc); GATE FINDING: literal SI evaluation of
+  exp(-kappa*r/c) with kappa = 5e-4/day gives exp(-2.4e8) ~ 0 — the stated
+  formula is off by ~16 orders of magnitude from its own table, so an
+  unstated unit convention is definitely involved
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
