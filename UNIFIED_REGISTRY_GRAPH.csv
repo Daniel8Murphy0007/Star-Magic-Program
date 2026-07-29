@@ -77,3 +77,9 @@ primitive,D_GW_EROSION,observable,entanglement_range_extension,1/(1-D_GW_EROSION
 observable,entanglement_damping_law,paper,PAPER_016,primary derivation
 observable,chsh_uqff_suppression,paper,PAPER_016,primary derivation
 observable,entanglement_range_extension,paper,PAPER_016,primary derivation
+primitive,KAPPA_PER_DAY,observable,wd_foreground_suppression,U_bi = kappa*[SSq]*mu_s*grad(M_s/r)
+primitive,SSQ,observable,wd_foreground_suppression,U_bi = kappa*[SSq]*mu_s*grad(M_s/r)
+observable,wd_foreground_suppression,paper,PAPER_016b,primary derivation
+observable,wd_resolved_catalog,paper,PAPER_016b,primary derivation
+observable,lisa_net_snr_uqff,paper,PAPER_016b,primary derivation
+observable,wd_foreground_suppression,paper,PAPER_015b,0.622 factor cross-check

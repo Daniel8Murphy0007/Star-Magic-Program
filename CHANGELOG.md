@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.17.0] — 2026-07-29 — BAND 1: PAPER_016b
+
+### Added
+- **PAPER_016b dispatch** (White Dwarf Binary Foreground Reduction):
+  LISA mHz confusion foreground P_UQFF = D_local^2 * P_GR (1.67e-41 vs
+  4.31e-41, 61.4% reduction); D_local = sqrt-derived 0.6224 — corpus
+  consistency with PAPER_015b's cross-band 0.622; resolved catalog
+  10,000 -> 6,216 = exact linear-D scaling; net SNR z~1 = 0.994.
+  OPEN_RULING Q-013 (abstract claims 1.6x SNR improvement + binaries
+  shifting ABOVE threshold; body computes 0.994 net + 3,784 dropping
+  BELOW — body wired, abstract not).
+- Gate: 148 assertions, 0 failures. Registry: 52 rows / 84 edges / 18 ledgers.
+
+### Fixed
+- **Calculator file order** — PAPER_015/015b/016 dispatch blocks had been
+  inserted above the interface instead of after PAPER_014 (wrong anchor;
+  registration unaffected). All 18 dispatches now in strict paper
+  sequence in the file.
+
+---
+
 ## [0.16.0] — 2026-07-29 — BAND 1: PAPER_016
 
 ### Added

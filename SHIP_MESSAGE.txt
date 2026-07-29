@@ -1,21 +1,24 @@
-v0.16.0 BAND 1: PAPER_016 wired
+v0.17.0 BAND 1: PAPER_016b wired + calculator file-order fix
 
-PAPER_016 Quantum Entanglement and UQFF Nonlocal Correlations (CLEAN):
-  gamma_damp = kappa*(E/E_ref)*[1+(E/E_Q)^1.5]*exp(-L/L_coh)
-  - kappa registry-composed (KAPPA_PER_DAY)
-  CHSH: S_QM = 2*sqrt(2) Tsirelson exact; S_UQFF = 2.75 at GeV
-  (eps = 0.0277), 2.60 at L > 1000 km - falsifiable ladder, no
-  existing GeV-scale CHSH experiments
-  Entanglement range extension = 1/D_total = 3.0 = 1/(1-D_GW_EROSION)
-  tau_dec ~ 50 s satellite-scale decay (Micius lacks time resolution)
-  Teleportation fidelity 0.995 at 1000 km; BH info recovery
-  tau ~ (M/M_sun)*1e7 yr
+PAPER_016b White Dwarf Binary Foreground Reduction (OPEN_RULING Q-013):
+  LISA mHz confusion foreground: P_UQFF = D_local^2 * P_GR
+  P_GR = 4.31e-41 -> P_UQFF = 1.67e-41 (61.4 pct reduction)
+  D_local = sqrt(1.67/4.31) = 0.6224 - INDEPENDENTLY re-derives
+  PAPER_015b's cross-band 0.622 (z ~ 0 partial Aether compensation)
+  Resolved catalog 10,000 -> 6,216 = 10,000 x 0.6216 (linear-D, exact)
+  Net LISA SNR: z~1 = 0.619/0.623 = 0.994; z>3 = 0.33/0.62 = 0.53
 
-PRIMITIVE-LOCK CANDIDATE: energy-scaling exponent delta = 1.5 =
-D_BSFG/D_PHYS EXACT - matches the PAPER_1962 3/2 cross-scale
-universality family (6th appearance if ruled). Wired as composition,
-flagged not claimed.
+Q-013 queued: abstract claims LISA sensitivity IMPROVES x1.6 and
+"104 binaries shift ABOVE threshold"; body sections compute net SNR
+0.994 (unchanged) and 3,784 binaries dropping BELOW threshold.
+Body wired (internally consistent + corpus-consistent); abstract not.
+"104" likely exponent mojibake (10^4 family).
 
-Gate 142 assertions 0 failures. Registry 49 rows / 78 edges / 17
-citation ledgers. Wired 17/2,255 (7 clean, 10 OPEN_RULING).
-Next: PAPER_016b (White Dwarf Foreground).
+FIXED: calculator file order - PAPER_015/015b/016 dispatches had been
+inserted above the interface (wrong anchor; registration and all
+shipped values unaffected). All 18 dispatches now in strict paper
+sequence. Caught during Daniel's tag-validation stop.
+
+Gate 148 assertions 0 failures. Registry 52 rows / 84 edges / 18
+citation ledgers. Wired 18/2,255 (7 clean, 11 OPEN_RULING).
+Next: PAPER_017 (Redshift Corrections / LISA).

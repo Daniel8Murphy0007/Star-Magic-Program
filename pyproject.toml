@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.16.0"
-description = "UQFF Star-Magic-Program v0.16.0: PAPER_016 wired (quantum entanglement nonlocal correlations: gamma_damp = kappa*(E/E_ref) registry-composed; CHSH S_UQFF 2.75 at GeV vs 2*sqrt(2); range extension 1/D_total = 3; delta = 1.5 = D_BSFG/D_PHYS EXACT primitive-lock candidate, PAPER_1962 family). CLEAN. Wired 17/2255, gate 142/0. Registry 49 rows / 78 edges / 17 ledgers."
+version = "0.17.0"
+description = "UQFF Star-Magic-Program v0.17.0: PAPER_016b wired (LISA WD-binary foreground: P_UQFF = D_local^2*P_GR, D_local = 0.6224 matches PAPER_015b 0.622; resolved catalog 10000->6216 linear-D; net SNR z~1 = 0.994). Q-013 queued (abstract 1.6x-improvement vs body 0.994 direction conflict). Calculator file order fixed to strict paper sequence. Wired 18/2255, gate 148/0. Registry 52 rows / 84 edges / 18 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

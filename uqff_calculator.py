@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.16.0"
+VERSION = "0.17.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -72,138 +72,6 @@ def _register(paper_id):
         DISPATCH[paper_id] = fn
         return fn
     return _wrap
-
-
-
-@_register('PAPER_015')
-def _paper_015(dataset):
-    """Cosmological Implications of UQFF Modified GW Propagation (Session 0).
-
-    Frequency-dependent damping Gamma_UQFF(f,z) = Gamma_0*(f/f_ref)^alpha
-    * [(1+z)/H(z)]^beta biases standard-siren distances; H_0,UQFF =
-    1.07 * H_0,obs. Validators: UQFF_factor = 0.622 amplitude ->
-    detection volume 0.622^3 = 24% of GR (consistent with PAPER_011
-    mixed-population Omega 0.37x, sqrt(0.37)=0.608 ~ 0.622).
-    Q-012: paper corrects GW170817 H_0 70 -> 75, but PAPER_1573
-    canonizes H_0 = A_5 + SO_5 = 70 EXACT — the UNCORRECTED GW value.
-    Direction-of-correction conflict queued.
-    """
-    uqff_factor = 0.622                       # PAPER_015 validator amplitude factor
-    h0_obs_gw170817 = A_5 + SO_5              # 70 km/s/Mpc — uncorrected GW170817 = PAPER_1573 canonical
-    h0_bias_factor = 1.07                     # PAPER_015 sec 4.1 standard-siren correction
-    return {
-        'value': {
-            'gamma_0_hz': 2.3e-18,            # PAPER_015 sec 2.1 damping rate anchor
-            'alpha_freq_scaling': -0.7,       # discriminator: Horndeski 0, extra-dim +2
-            'beta_redshift_evolution': 0.8,   # discriminator: mod-grav 1.5, extra-dim 0.3
-            'f_ref_hz': 100.0,
-            'd_uqff_20hz': 0.15,              # distance overestimated 16 pct
-            'd_uqff_1000hz': -0.08,           # distance underestimated 8 pct
-            'h0_obs_gw170817': float(h0_obs_gw170817),
-            'h0_bias_factor': h0_bias_factor,
-            'h0_uqff_corrected': h0_obs_gw170817 * h0_bias_factor,   # 74.9 ~ paper 75.0
-            'xi_q_density_fraction': 0.04,
-            'w_uqff_eos': -0.85,
-            'delta_mu_z1_mag': 0.15 * 1 - 0.03 * 1**2,               # 0.12 mag at z=1
-            'detection_sigma': {10: 1.5, 50: 3.2, 200: 5.0},
-            'bayes_factor_50_bns': 200.0,
-            'uqff_factor': uqff_factor,
-            'ligo_horizon_mpc': (13440.0, 8355.0),                   # GR -> UQFF
-            'detection_volume_vs_gr': uqff_factor ** 3,              # 0.2406 ~ 24 pct
-            'lisa_horizon_gpc': (140.8, 87.5),
-            'smbh_amplitude_reduction_pct': (31.6, 32.1),            # z = 0.5-2.0
-        },
-        'formula': ('Gamma_UQFF = Gamma_0*(f/f_ref)^alpha*[(1+z)/H(z)]^beta; '
-                    'd_L,obs = d_L,true*exp[D_UQFF(z,f)]; H_0,UQFF = 1.07*H_0,obs; '
-                    'Omega_UQFF = xi_Q*(1+z)^(3(1+w))'),
-        'source': 'PAPER_015',
-        'residual_pct': abs(70 * 1.07 - 75.0) / 75.0 * 100,          # 0.13 pct vs paper 75.0
-        'status': 'OPEN_RULING',
-    }
-
-
-@_register('PAPER_015b')
-def _paper_015b(dataset):
-    """Multi-Band GW Astronomy: LISA+LIGO Synergy Under UQFF (Session 0).
-
-    D = 0.622 is FREQUENCY-INDEPENDENT across mHz (LISA) and 100 Hz
-    (LIGO) bands — coherent cross-band suppression is the hallmark of
-    vacuum propagation vs source-property effects. Paper sec 2.1
-    discloses the 0.622-vs-0.333 relation explicitly: pure LIGO BBH
-    regime factor is 0.333, 0.622 is the cross-band multiband average
-    (self-rectifies the factor question noted at PAPER_015).
-    Minor slip: abstract says "0.522 x correction" for the volume
-    ratio; sec 4 computes 0.622^3 = 0.241 (wired; noted in registry).
-    """
-    d_multiband = 0.622                       # cross-band average (paper sec 2.1)
-    d_pure_bbh = 1.0 / 3.0                    # paper: pure LIGO BBH regime 0.333
-    return {
-        'value': {
-            'd_multiband': d_multiband,
-            'd_pure_bbh_ligo': d_pure_bbh,
-            'ligo_horizon_mpc': (13440.0, 8355.0),        # GR -> UQFF, 37.8 pct reduction
-            'lisa_horizon_gpc': (140.8, 87.5),            # GR -> UQFF, 37.9 pct reduction
-            'snr_gw150914': (268.0, 167.0),               # GR -> UQFF
-            'snr_smbh_z1': (1116.0, 694.0),               # GR -> UQFF
-            'detection_volume_vs_gr': d_multiband ** 3,   # 0.2407 ~ 24 pct
-            'rates_per_yr': {'bbh_ligo': (90.0, 22.0),
-                             'bns_ligo': (10.0, 2.4),
-                             'smbh_lisa': (30.0, 7.2)},
-            'freq_independence_check': abs(8355.0/13440.0 - 87.5/140.8),  # ~2e-4
-        },
-        'formula': ('h_UQFF = h_GR*(1 - U_bi/F_U)*exp(-kappa*t); '
-                    'd_max(UQFF)/d_max(GR) = D = 0.622 both bands; '
-                    'V(UQFF)/V(GR) = D^3 = 0.241'),
-        'source': 'PAPER_015b',
-        'residual_pct': abs(d_multiband**3 - 0.24) / 0.24 * 100,
-        'status': 'WIRED',
-    }
-
-
-@_register('PAPER_016')
-def _paper_016(dataset):
-    """Quantum Entanglement and UQFF Nonlocal Correlations (Session 0).
-
-    Damping-mediated entanglement decay: gamma_damp = kappa * (E/E_ref)
-    (registry-composed). CHSH suppression S_UQFF = S_QM*(1-eps_damp);
-    S_QM = 2*sqrt(2) exact. Entanglement range extended by 1/D_total = 3
-    (consistent with D_total = 1/3 = 1 - D_GW_EROSION). Energy-scaling
-    exponent delta = 1.5 = D_BSFG/D_PHYS EXACT — primitive-lock
-    candidate (PAPER_1962 3/2 cross-scale family). CLEAN wiring.
-    """
-    import math as _m
-    s_qm = 2.0 * _m.sqrt(2.0)                     # Tsirelson bound, exact
-    delta_energy_scaling = D_BSFG / D_PHYS        # 1.5 EXACT (candidate, PAPER_1962 family)
-    range_extension = 1.0 / (1.0 - D_GW_EROSION)  # 1/D_total = 3.0
-    return {
-        'value': {
-            's_qm_chsh': s_qm,                    # 2.828
-            's_uqff_gev': 2.75,                   # E ~ 1 GeV, +-0.05
-            's_uqff_1000km': 2.60,                # large separation
-            'eps_damp_gev': 1.0 - 2.75 / s_qm,    # 0.0277 suppression
-            'delta_energy_scaling': delta_energy_scaling,
-            'gamma_0_ev': 1.0e-30,                # PAPER_016 sec 2.2 baseline anchor
-            'e_q_gev': 1.0,
-            'alpha_q': 1.0e-2,
-            'range_extension': range_extension,   # 3.0 = 1/D_total
-            'l_dec_1ev_km': 1.0e6,
-            'l_dec_1gev_m': 100.0,
-            'beta_q_gw_coupling': 0.15,
-            'nu_freq_scaling': 2.0,
-            'delta_phi_gw_rad': 1.0e-18,          # LIGO-like h_0 ~ 1e-21
-            'tau_dec_s': 50.0,                    # satellite-scale decay prediction
-            'teleport_fidelity_1000km': 0.995,
-            'qcomm_rate_reduction_pct': 0.5,
-            'primordial_entanglement': 1.0e-50,   # fully decayed over t_universe
-            'bh_info_recovery_yr_per_msun': 1.0e7,
-        },
-        'formula': ('gamma_damp = kappa*(E/E_ref)*[1+(E/E_Q)^1.5]*exp(-L/L_coh); '
-                    'S_UQFF = 2*sqrt(2)*(1 - (L/L_coh)^2*(1-exp(-gamma*t))); '
-                    'range x 1/D_total = 3'),
-        'source': 'PAPER_016',
-        'residual_pct': None,
-        'status': 'WIRED',
-    }
 
 def calc(paper_id, dataset=None):
     """Primary public interface. Look up a paper's dispatch and evaluate it."""
@@ -776,5 +644,177 @@ def _paper_014(dataset):
                     'Lambda_UQFF = kappa*rho_crit; F(M) = exp[-(M/M_Q)^1.8]*[1+0.3*sin]'),
         'source': 'PAPER_014',
         'residual_pct': None,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_015')
+def _paper_015(dataset):
+    """Cosmological Implications of UQFF Modified GW Propagation (Session 0).
+
+    Frequency-dependent damping Gamma_UQFF(f,z) = Gamma_0*(f/f_ref)^alpha
+    * [(1+z)/H(z)]^beta biases standard-siren distances; H_0,UQFF =
+    1.07 * H_0,obs. Validators: UQFF_factor = 0.622 amplitude ->
+    detection volume 0.622^3 = 24% of GR (consistent with PAPER_011
+    mixed-population Omega 0.37x, sqrt(0.37)=0.608 ~ 0.622).
+    Q-012: paper corrects GW170817 H_0 70 -> 75, but PAPER_1573
+    canonizes H_0 = A_5 + SO_5 = 70 EXACT — the UNCORRECTED GW value.
+    Direction-of-correction conflict queued.
+    """
+    uqff_factor = 0.622                       # PAPER_015 validator amplitude factor
+    h0_obs_gw170817 = A_5 + SO_5              # 70 km/s/Mpc — uncorrected GW170817 = PAPER_1573 canonical
+    h0_bias_factor = 1.07                     # PAPER_015 sec 4.1 standard-siren correction
+    return {
+        'value': {
+            'gamma_0_hz': 2.3e-18,            # PAPER_015 sec 2.1 damping rate anchor
+            'alpha_freq_scaling': -0.7,       # discriminator: Horndeski 0, extra-dim +2
+            'beta_redshift_evolution': 0.8,   # discriminator: mod-grav 1.5, extra-dim 0.3
+            'f_ref_hz': 100.0,
+            'd_uqff_20hz': 0.15,              # distance overestimated 16 pct
+            'd_uqff_1000hz': -0.08,           # distance underestimated 8 pct
+            'h0_obs_gw170817': float(h0_obs_gw170817),
+            'h0_bias_factor': h0_bias_factor,
+            'h0_uqff_corrected': h0_obs_gw170817 * h0_bias_factor,   # 74.9 ~ paper 75.0
+            'xi_q_density_fraction': 0.04,
+            'w_uqff_eos': -0.85,
+            'delta_mu_z1_mag': 0.15 * 1 - 0.03 * 1**2,               # 0.12 mag at z=1
+            'detection_sigma': {10: 1.5, 50: 3.2, 200: 5.0},
+            'bayes_factor_50_bns': 200.0,
+            'uqff_factor': uqff_factor,
+            'ligo_horizon_mpc': (13440.0, 8355.0),                   # GR -> UQFF
+            'detection_volume_vs_gr': uqff_factor ** 3,              # 0.2406 ~ 24 pct
+            'lisa_horizon_gpc': (140.8, 87.5),
+            'smbh_amplitude_reduction_pct': (31.6, 32.1),            # z = 0.5-2.0
+        },
+        'formula': ('Gamma_UQFF = Gamma_0*(f/f_ref)^alpha*[(1+z)/H(z)]^beta; '
+                    'd_L,obs = d_L,true*exp[D_UQFF(z,f)]; H_0,UQFF = 1.07*H_0,obs; '
+                    'Omega_UQFF = xi_Q*(1+z)^(3(1+w))'),
+        'source': 'PAPER_015',
+        'residual_pct': abs(70 * 1.07 - 75.0) / 75.0 * 100,          # 0.13 pct vs paper 75.0
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_015b')
+def _paper_015b(dataset):
+    """Multi-Band GW Astronomy: LISA+LIGO Synergy Under UQFF (Session 0).
+
+    D = 0.622 is FREQUENCY-INDEPENDENT across mHz (LISA) and 100 Hz
+    (LIGO) bands — coherent cross-band suppression is the hallmark of
+    vacuum propagation vs source-property effects. Paper sec 2.1
+    discloses the 0.622-vs-0.333 relation explicitly: pure LIGO BBH
+    regime factor is 0.333, 0.622 is the cross-band multiband average
+    (self-rectifies the factor question noted at PAPER_015).
+    Minor slip: abstract says "0.522 x correction" for the volume
+    ratio; sec 4 computes 0.622^3 = 0.241 (wired; noted in registry).
+    """
+    d_multiband = 0.622                       # cross-band average (paper sec 2.1)
+    d_pure_bbh = 1.0 / 3.0                    # paper: pure LIGO BBH regime 0.333
+    return {
+        'value': {
+            'd_multiband': d_multiband,
+            'd_pure_bbh_ligo': d_pure_bbh,
+            'ligo_horizon_mpc': (13440.0, 8355.0),        # GR -> UQFF, 37.8 pct reduction
+            'lisa_horizon_gpc': (140.8, 87.5),            # GR -> UQFF, 37.9 pct reduction
+            'snr_gw150914': (268.0, 167.0),               # GR -> UQFF
+            'snr_smbh_z1': (1116.0, 694.0),               # GR -> UQFF
+            'detection_volume_vs_gr': d_multiband ** 3,   # 0.2407 ~ 24 pct
+            'rates_per_yr': {'bbh_ligo': (90.0, 22.0),
+                             'bns_ligo': (10.0, 2.4),
+                             'smbh_lisa': (30.0, 7.2)},
+            'freq_independence_check': abs(8355.0/13440.0 - 87.5/140.8),  # ~2e-4
+        },
+        'formula': ('h_UQFF = h_GR*(1 - U_bi/F_U)*exp(-kappa*t); '
+                    'd_max(UQFF)/d_max(GR) = D = 0.622 both bands; '
+                    'V(UQFF)/V(GR) = D^3 = 0.241'),
+        'source': 'PAPER_015b',
+        'residual_pct': abs(d_multiband**3 - 0.24) / 0.24 * 100,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_016')
+def _paper_016(dataset):
+    """Quantum Entanglement and UQFF Nonlocal Correlations (Session 0).
+
+    Damping-mediated entanglement decay: gamma_damp = kappa * (E/E_ref)
+    (registry-composed). CHSH suppression S_UQFF = S_QM*(1-eps_damp);
+    S_QM = 2*sqrt(2) exact. Entanglement range extended by 1/D_total = 3
+    (consistent with D_total = 1/3 = 1 - D_GW_EROSION). Energy-scaling
+    exponent delta = 1.5 = D_BSFG/D_PHYS EXACT — primitive-lock
+    candidate (PAPER_1962 3/2 cross-scale family). CLEAN wiring.
+    """
+    import math as _m
+    s_qm = 2.0 * _m.sqrt(2.0)                     # Tsirelson bound, exact
+    delta_energy_scaling = D_BSFG / D_PHYS        # 1.5 EXACT (candidate, PAPER_1962 family)
+    range_extension = 1.0 / (1.0 - D_GW_EROSION)  # 1/D_total = 3.0
+    return {
+        'value': {
+            's_qm_chsh': s_qm,                    # 2.828
+            's_uqff_gev': 2.75,                   # E ~ 1 GeV, +-0.05
+            's_uqff_1000km': 2.60,                # large separation
+            'eps_damp_gev': 1.0 - 2.75 / s_qm,    # 0.0277 suppression
+            'delta_energy_scaling': delta_energy_scaling,
+            'gamma_0_ev': 1.0e-30,                # PAPER_016 sec 2.2 baseline anchor
+            'e_q_gev': 1.0,
+            'alpha_q': 1.0e-2,
+            'range_extension': range_extension,   # 3.0 = 1/D_total
+            'l_dec_1ev_km': 1.0e6,
+            'l_dec_1gev_m': 100.0,
+            'beta_q_gw_coupling': 0.15,
+            'nu_freq_scaling': 2.0,
+            'delta_phi_gw_rad': 1.0e-18,          # LIGO-like h_0 ~ 1e-21
+            'tau_dec_s': 50.0,                    # satellite-scale decay prediction
+            'teleport_fidelity_1000km': 0.995,
+            'qcomm_rate_reduction_pct': 0.5,
+            'primordial_entanglement': 1.0e-50,   # fully decayed over t_universe
+            'bh_info_recovery_yr_per_msun': 1.0e7,
+        },
+        'formula': ('gamma_damp = kappa*(E/E_ref)*[1+(E/E_Q)^1.5]*exp(-L/L_coh); '
+                    'S_UQFF = 2*sqrt(2)*(1 - (L/L_coh)^2*(1-exp(-gamma*t))); '
+                    'range x 1/D_total = 3'),
+        'source': 'PAPER_016',
+        'residual_pct': None,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_016b')
+def _paper_016b(dataset):
+    """White Dwarf Binary Foreground Reduction via UQFF (Session 0).
+
+    LISA mHz confusion foreground from Milky Way WD binaries suppressed
+    by local damping: P_UQFF = D_local^2 * P_GR with D_local =
+    sqrt(1.67/4.31) = 0.6224 — matches PAPER_015b's 0.622 cross-band
+    factor (z ~ 0 intermediate regime, partial Aether compensation).
+    Resolved catalog 10,000 -> 6,216 = 10,000 * 0.6216 (linear-D scaling).
+    Q-013: abstract claims LISA SNR IMPROVES x1.6 and "104 binaries
+    shift ABOVE threshold"; body sec 4.1 computes net SNR ratio
+    D_cosmo/D_local = 0.619/0.623 = 0.994 (unchanged) and sec 3.2 has
+    3,784 binaries dropping BELOW threshold. Direction conflict queued;
+    body sections wired (internally consistent with each other).
+    """
+    import math as _m
+    p_gr = 4.31e-41                            # PAPER_016b sec 3.1 strain PSD anchor
+    p_uqff = 1.67e-41
+    d_local = _m.sqrt(p_uqff / p_gr)           # 0.6224
+    d_cosmo_z1 = 0.619
+    return {
+        'value': {
+            'p_gr_strain_psd': p_gr,
+            'p_uqff_strain_psd': p_uqff,
+            'foreground_reduction_pct': (1.0 - p_uqff / p_gr) * 100,   # 61.3
+            'd_local': d_local,
+            'd_cosmo_z1': d_cosmo_z1,
+            'resolved_wd_gr': 10000,
+            'resolved_wd_uqff': 6216,
+            'resolved_scaling_check': 6216 / 10000.0,                  # 0.6216 ~ d_local
+            'net_snr_ratio_z1': d_cosmo_z1 / 0.623,                    # 0.994 (sec 4.1)
+            'net_snr_ratio_high_z': 0.33 / 0.62,                       # 0.53 (sec 4.2)
+        },
+        'formula': ('P_UQFF = D_local^2 * P_GR; D_local = sqrt(1.67/4.31) = 0.622; '
+                    'SNR(UQFF)/SNR(GR) = D_cosmo/D_local'),
+        'source': 'PAPER_016b',
+        'residual_pct': abs(d_local - 0.623) / 0.623 * 100,
         'status': 'OPEN_RULING',
     }

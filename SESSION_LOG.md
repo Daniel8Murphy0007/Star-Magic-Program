@@ -494,3 +494,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 17/2,255 (7 ✓, 10 ⚠). Next: PAPER_016b (White Dwarf Foreground).
 
 ---
+
+## 2026-07-29 — v0.17.0 — BAND 1: PAPER_016b
+
+- PAPER_016b wired (⚠ Q-013): LISA WD foreground. D_local = 0.6224
+  independently re-derives PAPER_015b's 0.622; catalog scaling exact;
+  abstract-vs-body direction conflict queued (body wired).
+- FIXED: calculator file order — 015/015b/016 moved into strict sequence
+  after 014 (disclosed during Daniel's tag-validation stop).
+- Gate 148/0. Registry 52 rows / 84 edges / 18 ledgers.
+- Campaign: 18/2,255 (7 ✓, 11 ⚠). Next: PAPER_017 (Redshift Corrections/LISA).
+
+---

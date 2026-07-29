@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.16.0", "uqff_calculator.VERSION = 0.16.0")
+assert_that(C.VERSION == "0.17.0", "uqff_calculator.VERSION = 0.17.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -333,6 +333,19 @@ assert_that(abs(_r016['eps_damp_gev'] - 0.0277) < 0.001,
 assert_that(_r016['s_uqff_1000km'] < _r016['s_uqff_gev'] < _r016['s_qm_chsh'],
             "PAPER_016: suppression ordering 2.60 < 2.75 < 2.828 monotone")
 assert_that(C.wired_count() >= 17, "wired_count >= 17")
+
+_r016b = C.calc('PAPER_016b')['value']
+assert_that(abs(_r016b['d_local'] - 0.6224) < 0.001,
+            "PAPER_016b: D_local = sqrt(1.67/4.31) = 0.6224 ~ paper 0.623")
+assert_that(abs(_r016b['d_local'] - 0.622) < 0.001,
+            "PAPER_016b: D_local matches PAPER_015b cross-band 0.622 (corpus consistency)")
+assert_that(abs(_r016b['foreground_reduction_pct'] - 61.4) < 0.5,
+            "PAPER_016b: foreground reduction 61.3 ~ paper 61.4 pct")
+assert_that(abs(_r016b['resolved_scaling_check'] - _r016b['d_local']) < 0.001,
+            "PAPER_016b: resolved catalog 6216/10000 = 0.6216 = D_local linear scaling")
+assert_that(abs(_r016b['net_snr_ratio_z1'] - 0.994) < 0.001,
+            "PAPER_016b: net SNR z~1 = 0.619/0.623 = 0.994 (sec 4.1; Q-013 vs abstract 1.6x)")
+assert_that(C.wired_count() >= 18, "wired_count >= 18")
 
 # =============================================================================
 # REPORT

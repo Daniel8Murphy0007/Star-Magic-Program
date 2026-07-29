@@ -143,6 +143,21 @@ RESOLVED section with the ruling recorded.
   preserved as paper-stated observable.
 - **Daniel's ruling:** (pending)
 
+### Q-013 — PAPER_016b — abstract vs body direction conflict on LISA sensitivity
+- **Question:** Abstract claims (a) ~104 WD binaries shift ABOVE the
+  individually-resolvable threshold and (b) net LISA sensitivity to
+  high-z sources IMPROVES by factor ~1.6 in SNR. Body says the opposite:
+  sec 3.2 has 3,784 binaries dropping BELOW threshold (10,000 -> 6,216),
+  and sec 4.1 computes net SNR ratio = D_cosmo/D_local = 0.619/0.623 =
+  0.994 (essentially unchanged), with sec 4.2 giving 0.53 at z > 3
+  (WORSE, not better). The "104" also looks like exponent mojibake
+  (10^4?), same corruption family as "108"/"105" for 10^8/10^5 earlier
+  in the paper. Which direction is canonical?
+- **Best-candidate wired:** body sections 3.1/3.2/4.1/4.2 (internally
+  consistent with each other AND with PAPER_015b's 0.622 factor);
+  abstract claims not wired.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
