@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.96.0", "uqff_calculator.VERSION = 0.96.0")
+assert_that(C.VERSION == "0.97.0", "uqff_calculator.VERSION = 0.97.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1491,6 +1491,21 @@ assert_that(_r093['horizon_shift_here'] == 0.015,
 assert_that(abs(_r093['shadow_shift_uas'] - 0.105) < 0.001,
             "PAPER_093: shadow shift 0.105 uas EXACT - honest EHT null")
 assert_that(C.wired_count() >= 97, "wired_count >= 97")
+
+_r094 = C.calc('PAPER_094')['value']
+assert_that(abs(_r094['kappa_origin_chain'] - 0.0005) < 1e-12,
+            "PAPER_094: KAPPA ORIGIN chain (600/1200)*1e-3 = 0.0005/day EXACT (provenance landmark)")
+assert_that(abs(_r094['ssq_origin_chain'] - 0.5700) < 0.0001,
+            "PAPER_094: SSQ ORIGIN chain 0.755^2 = 0.5700 EXACT (spin-down anchoring)")
+assert_that(abs(_r094['char_age_yr'] - 9012.0) < 5.0,
+            "PAPER_094: characteristic age 9012 yr EXACT - pins Pdot = 6.61e-12")
+assert_that(abs(_r094['b_over_bcrit'] - 3.18) < 0.01,
+            "PAPER_094: B/B_crit = 3.18 EXACT with B_crit = 4.4e9 T SCHWINGER (informs Q-002)")
+assert_that(abs(_r094['q_wave_magnetar_revised'] - 7.68e24) / 7.68e24 < 0.01,
+            "PAPER_094: 063 magnetar Q_wave pin REVISED to Schwinger B -> 7.68e24 J/m3 (Q-090c)")
+assert_that(abs(_r094['kappa_internal_per_day'] - 1.73e-7) / 1.73e-7 < 0.01,
+            "PAPER_094: kappa_internal = SSq/tau_c = 1.73e-7/day chain EXACT")
+assert_that(C.wired_count() >= 98, "wired_count >= 98")
 
 # =============================================================================
 # REPORT

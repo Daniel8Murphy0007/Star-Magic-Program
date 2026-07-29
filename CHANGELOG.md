@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.97.0] — 2026-07-29 — BAND 1: PAPER_094 — KAPPA + SSQ ORIGINS
+
+### Added
+- **PAPER_094 dispatch** (SGR1745 Calibration): **PROVENANCE
+  LANDMARK — the origin paper for both primary calibration
+  primitives, with both chains EXACT:** kappa = (600 bursts /
+  1200 days) * 1e-3 = 0.0005/day from the SGR1745 2013 outburst
+  (1e-3 factor ruling queued); SSq = 0.755^2 = 0.5700 from
+  magnetar spin-down anchoring (pairs with the later PAPER_1154
+  first-principles derivation). B_CRIT = 4.4e9 T identified as
+  the SCHWINGER field — revising the PAPER_063 magnetar Q_wave
+  pin (7.68e24, same mantissa) and informing the long-open
+  Q-002. Characteristic-age chain 9012 yr EXACT pins Pdot;
+  kappa_internal chain EXACT; Ug4 offsite computation OPEN
+  (mutually inconsistent).
+- OPEN_RULING Q-090; Q-059c annotated with the revision.
+- Gate: 684 assertions, 0 failures. Registry: 270 rows / 543 edges / 98 ledgers.
+
+---
+
 ## [0.96.0] — 2026-07-29 — BAND 1: PAPER_093
 
 ### Added

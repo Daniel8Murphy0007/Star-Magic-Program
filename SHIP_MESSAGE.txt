@@ -1,26 +1,30 @@
-v0.96.0 BAND 1: PAPER_093 wired - THREE SIBLING CONFLICTS ADJUDICATED
+v0.97.0 BAND 1: PAPER_094 wired - KAPPA + SSQ ORIGIN PAPER
 
-PAPER_093 M87* Event Horizon UQFF Analysis (OPEN_RULING Q-089):
-  Chains EXACT: r_S = 2GM/c^2 = 1.9200e13 m (with M = 6.5e9
-  Msun); distance 16.8 Mpc = 5.18e23 m; 8-term sum 2210.9 =
-  printed 2211 (+0.18 pct excess EXACT); shadow factor
-  sqrt(1+(1-[SCm])/2) = 1.0025 -> 0.105 uas shift - honest EHT
-  null (undetectable at 3 uas); eta_jet = 0.099 pct EXACT
-  (FR-I consistent).
+PAPER_094 SGR1745-2900 Magnetar Calibration (OPEN_RULING Q-090):
+  PROVENANCE LANDMARK - the ORIGIN PAPER for both primary
+  calibration primitives, and BOTH origin chains close EXACTLY:
 
-  THREE SIBLING CONFLICTS, CHAIN-ADJUDICATED:
-  1. Horizon shift: (1+0.015) here vs (1+[SCm]*0.07) in 092 -
-     mass-dependent or drift? Canonical form requested.
-  2. T_H(M87): chain gives 9.49e-18 K = EXACTLY the PAPER_081
-     family value; this paper's 1.35e-17 is 43 pct drift -
-     081 wins by chain.
-  3. Jet power 3.6e44 erg/s = L_Edd(SgrA*-mass)*1e-3 copy-slip;
-     the M87 chain gives 8.1e44 (both ~observed 1e44).
+  KAPPA ORIGIN: kappa = (N_burst/t_active)*1e-3 =
+  (600 bursts / 1200 days)*1e-3 = 0.0005/day EXACT - from the
+  SGR1745 2013 outburst statistics. (The 1e-3 scaling factor
+  needs your ruling - burst efficiency? [UA]-like coupling?)
 
-  5TH NUMBERS-SIDE-WITH-CANONICAL INSTANCE: prose 0.9999 vs
-  printed T values 1.34/1.35 = 0.9926 ~ 0.99 - Q-077a evidence
-  keeps growing.
+  SSQ ORIGIN: [SSq]^(1/2) = 0.755 from magnetar spin-down
+  anchoring -> SSq = 0.755^2 = 0.5700 EXACT. Pairs with the
+  later PAPER_1154 first-principles derivation (Session-0
+  empirical origin vs later theory).
 
-Q-089 queued. Gate 677 assertions 0 failures. Registry 268 rows /
-537 edges / 97 citation ledgers. Wired 97/2,255 (10 clean, 87
-OPEN_RULING). Next: PAPER_094.
+  B_CRIT = 4.4e9 T IDENTIFIED AS THE SCHWINGER FIELD
+  m_e^2 c^3/(e hbar): B/B_crit = 3.18 EXACT chain. This REVISES
+  the PAPER_063 magnetar Q_wave pin (B = 4.4e9 -> Q = 7.68e24
+  J/m3, same mantissa as the printed 7.70) and informs the
+  long-open Q-002 B_crit question (Q-059c annotated).
+
+  Support chains EXACT: characteristic age 9012 yr (pins Pdot =
+  6.61e-12); kappa_internal = SSq/tau_c = 1.73e-7/day; MUGE
+  magnetar table consistent. Ug4 offsite computation OPEN
+  (formula/value/conclusion mutually inconsistent).
+
+Q-090 queued. Gate 684 assertions 0 failures. Registry 270 rows /
+543 edges / 98 citation ledgers. Wired 98/2,255 (10 clean, 88
+OPEN_RULING). Next: PAPER_095.

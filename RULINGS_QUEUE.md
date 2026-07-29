@@ -1013,7 +1013,8 @@ RESOLVED section with the ruling recorded.
   the observable universe ~1e26 m") requires the LARGE reading —
   confirm e172? (c) Magnetar Q_wave row closes only with B =
   4.4e10 T, which is the B_crit of PAPER_001/002 (links to open
-  Q-002 unit question) — confirm identification? (d) Confirm the
+  Q-002 unit question) — confirm identification?
+  [REVISED by PAPER_094: B_crit = 4.4e9 T = SCHWINGER field; Q_wave = 7.68e24 (same mantissa) - see Q-090c.] (d) Confirm the
   Planck-ratio column 10^-37 dropped-digit reading.
 - **Notable:** kappa_MCMC = 0.00052/day (47 systems) is the first
   ensemble-level validation of the KAPPA primitive: canonical
@@ -1649,6 +1650,31 @@ RESOLVED section with the ruling recorded.
   EXACT (FR-I consistent); coherence PASS.
 - **Best-candidate wired:** exact chains + all three sibling
   conflicts carried with chain-preferred values.
+- **Daniel's ruling:** (pending)
+
+### Q-090 — PAPER_094 — KAPPA/SSQ origins + Schwinger B_crit + Ug4 offsite
+- **Question:** (a) KAPPA ORIGIN canonization: kappa =
+  (N_burst/t_active)*1e-3 = (600/1200)*1e-3 = 0.0005/day EXACT
+  from the SGR1745 2013 outburst - what is the physical meaning
+  of the 1e-3 scaling factor (burst efficiency? [UA]-like
+  coupling x10?)? (b) SSQ ORIGIN canonization: SSq = 0.755^2 =
+  0.5700 EXACT from spin-down anchoring - record as the
+  empirical Session-0 origin, paired with the later PAPER_1154
+  first-principles derivation? (c) B_CRIT = 4.4e9 T identified
+  as the SCHWINGER field m_e^2 c^3/(e hbar) - this REVISES the
+  PAPER_063 magnetar Q_wave pin (B = 4.4e9 -> Q = 7.68e24 J/m3,
+  same mantissa as the printed 7.70) and informs the long-open
+  Q-002 B_crit unit question - confirm both? (d) The 0.3-pc Ug4
+  falloff computation is mutually inconsistent (formula exponent
+  inverted vs r^-6 physics, printed 5.8 J/m3, conclusion
+  "negligible") - OPEN. (e) Derived B = 1.4e10 T here vs 066's
+  2.3e10 T (epoch sibling; spin-down chain gives 1.6e10).
+- **Notable:** characteristic-age chain 9012 yr EXACT (pins
+  Pdot); kappa_internal = SSq/tau_c = 1.73e-7/day EXACT; MUGE
+  magnetar 8-term table consistent; closest-magnetar-to-SMBH
+  geometry recorded.
+- **Best-candidate wired:** both origin chains + Schwinger
+  identification + revision; defects carried.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

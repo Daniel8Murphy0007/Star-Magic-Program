@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.96.0"
+VERSION = "0.97.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4903,5 +4903,62 @@ def _paper_093(dataset):
                     'P_jet = [SCm]*1e-3*L_Edd'),
         'source': 'PAPER_093',
         'residual_pct': abs((2211 / 2207 - 1) * 100 - 0.18),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_094')
+def _paper_094(dataset):
+    """SGR1745 Magnetar Calibration - KAPPA + SSQ ORIGIN PAPER (Session 0).
+
+    PROVENANCE LANDMARK: this paper documents the PHYSICAL ORIGINS
+    of both primary calibration primitives, and BOTH origin chains
+    close EXACTLY:
+    - KAPPA ORIGIN: burst statistics of the SGR1745 2013 outburst
+      - kappa = (N_burst/t_active)*1e-3 = (600/1200)*1e-3 =
+      0.0005/day EXACT (the 1e-3 scaling factor needs a ruling,
+      Q-090a).
+    - SSQ ORIGIN: magnetar spin-down anchoring - [SSq]^(1/2) =
+      0.755 -> SSq = 0.755^2 = 0.5700 EXACT (Q-090b; pairs with
+      the later PAPER_1154 first-principles derivation:
+      Session-0 empirical origin vs later theory).
+    Support chains EXACT: characteristic age P/(2 Pdot) = 9012 yr
+    (pins Pdot = 6.61e-12 s/s); tau_c = 9000*365 = 3.285e6 days;
+    kappa_internal = SSq/tau_c = 1.73e-7/day; B/B_crit = 3.18
+    with B_CRIT = 4.4e9 T = the SCHWINGER field m_e^2 c^3/(e hbar)
+    - IDENTIFICATION that informs Q-002 and REVISES the PAPER_063
+    magnetar Q_wave pin to B = 4.4e9 -> Q = 7.68e24 J/m3 (same
+    mantissa as before; exponent corrected, Q-090c).
+    Spin-down B chain 3.2e19*sqrt(P*Pdot) = 1.6e10 T (~printed
+    1.4e10; vs 066's 2.3e10 - epoch sibling, Q-090e).
+    DEFECT (Q-090d): the 0.3-pc Ug4 falloff computation is
+    mutually inconsistent (formula exponent inverted, value 5.8,
+    conclusion negligible) - OPEN.
+    MUGE magnetar table: sum chain 1.74e12+8.7e8+2.1e7 ~ 1.75e12
+    consistent; Ug1 at 0.05 pct level as stated.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.12 (KAPPA + SSQ origin paper)',
+            'kappa_origin_chain': (600.0 / 1200.0) * 1e-3,     # 5e-4 EXACT
+            'kappa_origin': 'SGR1745 2013 outburst: 600 bursts / 1200 days * 1e-3',
+            'ssq_origin_chain': 0.755 ** 2,                    # 0.5700 EXACT
+            'ssq_origin': 'magnetar spin-down anchoring [SSq]^(1/2) = 0.755',
+            'char_age_yr': 3.76 / (2 * 6.61e-12) / 3.156e7,    # 9012 EXACT
+            'p_dot_pinned': 6.61e-12,
+            'kappa_internal_per_day': 0.57 / 3.29e6,           # 1.73e-7 EXACT
+            'b_over_bcrit': 1.4e10 / 4.4e9,                    # 3.18 EXACT
+            'b_crit_schwinger_t': 4.4e9,                       # informs Q-002
+            'q_wave_magnetar_revised': (4.4e9) ** 2 / (2 * 1.26e-6),  # 7.68e24 revises 063
+            'b_spindown_chain_t': 3.2e19 * _m.sqrt(3.76 * 6.61e-12) / 1e4,  # 1.6e10
+            'b_066_sibling_t': 2.3e10,
+            'ug4_offsite_status': 'OPEN - formula/value/conclusion mutually inconsistent',
+            'separation_pc': 0.3,
+        },
+        'formula': ('kappa = (N_burst/t_active)*1e-3; SSq = 0.755^2; '
+                    't_c = P/(2 Pdot); B_crit = m_e^2 c^3/(e hbar) = 4.4e9 T'),
+        'source': 'PAPER_094',
+        'residual_pct': abs(0.755 ** 2 - 0.57) / 0.57 * 100,
         'status': 'OPEN_RULING',
     }

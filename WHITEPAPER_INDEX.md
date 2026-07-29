@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 97 (10 ✓, 87 ⚠ OPEN_RULING)
+- **Wired:** 98 (10 ✓, 88 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2158
+- **Not yet touched:** 2157
 
 ---
 
@@ -127,7 +127,7 @@
 | ⚠ | PAPER_091 | MUGE Resonance 14 Mode |
 | ⚠ | PAPER_092 | SgrA MUGE Comparison |
 | ⚠ | PAPER_093 | M87 Event Horizon UQFF |
-| ⬜ | PAPER_094 | Magnetar SGR1745 UQFF Calibration |
+| ⚠ | PAPER_094 | Magnetar SGR1745 UQFF Calibration |
 | ⬜ | PAPER_095 | UQFF 99pt9 Solvability |
 | ⬜ | PAPER_096 | FRB UQFF Emission Model |
 | ⬜ | PAPER_097 | Whittaker Decomposition UQFF |

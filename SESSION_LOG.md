@@ -1320,3 +1320,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 97/2,255 (10 ✓, 87 ⚠). Next: PAPER_094.
 
 ---
+
+## 2026-07-29 — v0.97.0 — BAND 1: PAPER_094 — KAPPA + SSQ ORIGINS
+
+- PAPER_094 wired (⚠ Q-090): the origin paper. Both origin chains
+  EXACT (kappa burst-statistics; SSq spin-down 0.755^2);
+  Schwinger B_crit identification revises the 063 pin + informs
+  Q-002; age chain pins Pdot; Ug4 offsite OPEN.
+- Campaign: 98/2,255 (10 ✓, 88 ⚠). Next: PAPER_095.
+
+---
