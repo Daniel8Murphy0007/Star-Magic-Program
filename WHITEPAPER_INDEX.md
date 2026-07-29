@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 16 (6 ✓, 10 ⚠ OPEN_RULING)
+- **Wired:** 17 (7 ✓, 10 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2239
+- **Not yet touched:** 2238
 
 ---
 
@@ -45,7 +45,7 @@
 | ⬜ | PAPER_014b | EMRI Aether Damping UQFF |
 | ⚠ | PAPER_015 | Cosmological Implications UQFF Modified GW Propagation |
 | ✓ | PAPER_015b | Multiband GW LISA LIGO UQFF |
-| ⬜ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations |
+| ✓ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations |
 | ⬜ | PAPER_016b | White Dwarf Foreground UQFF |
 | ⬜ | PAPER_017 | Redshift Corrections z1 in UQFF GW Propagation |
 | ⬜ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |

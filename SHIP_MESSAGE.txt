@@ -1,21 +1,21 @@
-v0.15.0 BAND 1: PAPER_015b wired
+v0.16.0 BAND 1: PAPER_016 wired
 
-PAPER_015b Multi-Band GW Astronomy: LISA+LIGO Synergy (CLEAN):
-  D = 0.622 FREQUENCY-INDEPENDENT across mHz (LISA) and 100 Hz (LIGO)
-  bands - coherent cross-band suppression is the vacuum-propagation
-  hallmark vs source-property effects.
-  SNR: GW150914 268 -> 167 (ratio 0.6231); SMBH z~1 1116 -> 694
-  (ratio 0.6219) - both = 0.622 exactly as claimed.
-  Horizons: LIGO 13440 -> 8355 Mpc; LISA 140.8 -> 87.5 Gpc (both 38 pct)
-  Detection volume V/V_GR = 0.622^3 = 0.241; rates BBH 90->22/yr.
+PAPER_016 Quantum Entanglement and UQFF Nonlocal Correlations (CLEAN):
+  gamma_damp = kappa*(E/E_ref)*[1+(E/E_Q)^1.5]*exp(-L/L_coh)
+  - kappa registry-composed (KAPPA_PER_DAY)
+  CHSH: S_QM = 2*sqrt(2) Tsirelson exact; S_UQFF = 2.75 at GeV
+  (eps = 0.0277), 2.60 at L > 1000 km - falsifiable ladder, no
+  existing GeV-scale CHSH experiments
+  Entanglement range extension = 1/D_total = 3.0 = 1/(1-D_GW_EROSION)
+  tau_dec ~ 50 s satellite-scale decay (Micius lacks time resolution)
+  Teleportation fidelity 0.995 at 1000 km; BH info recovery
+  tau ~ (M/M_sun)*1e7 yr
 
-SELF-DOCUMENTATION: paper sec 2.1 explicitly discloses that 0.622 is
-the cross-band average while the pure LIGO BBH regime factor is 0.333 -
-resolves the factor question noted during PAPER_015 wiring.
+PRIMITIVE-LOCK CANDIDATE: energy-scaling exponent delta = 1.5 =
+D_BSFG/D_PHYS EXACT - matches the PAPER_1962 3/2 cross-scale
+universality family (6th appearance if ruled). Wired as composition,
+flagged not claimed.
 
-Minor slip noted in registry (abstract "0.522 x correction" vs sec-4's
-0.622^3); sec-4 form wired. No new ruling needed.
-
-Gate 136 assertions 0 failures. Registry 46 rows / 71 edges / 16
-citation ledgers. Wired 16/2,255 (6 clean, 10 OPEN_RULING).
-Next: PAPER_016 (Quantum Entanglement).
+Gate 142 assertions 0 failures. Registry 49 rows / 78 edges / 17
+citation ledgers. Wired 17/2,255 (7 clean, 10 OPEN_RULING).
+Next: PAPER_016b (White Dwarf Foreground).

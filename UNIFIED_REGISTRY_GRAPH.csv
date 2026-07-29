@@ -70,3 +70,10 @@ primitive,KAPPA_PER_DAY,observable,multiband_uqff_factor,h_UQFF = h_GR*(1-U_bi/F
 observable,multiband_uqff_factor,paper,PAPER_015b,primary derivation
 observable,multiband_detection_volume,paper,PAPER_015b,primary derivation
 observable,multiband_uqff_factor,paper,PAPER_015,validator cross-check (same 0.622)
+primitive,KAPPA_PER_DAY,observable,entanglement_damping_law,gamma_damp = kappa*(E/E_ref)
+primitive,D_BSFG,observable,entanglement_damping_law,delta = D_BSFG/D_PHYS = 1.5 candidate
+primitive,D_PHYS,observable,entanglement_damping_law,delta = D_BSFG/D_PHYS = 1.5 candidate
+primitive,D_GW_EROSION,observable,entanglement_range_extension,1/(1-D_GW_EROSION) = 3.0
+observable,entanglement_damping_law,paper,PAPER_016,primary derivation
+observable,chsh_uqff_suppression,paper,PAPER_016,primary derivation
+observable,entanglement_range_extension,paper,PAPER_016,primary derivation

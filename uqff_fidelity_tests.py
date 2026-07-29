@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.15.0", "uqff_calculator.VERSION = 0.15.0")
+assert_that(C.VERSION == "0.16.0", "uqff_calculator.VERSION = 0.16.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -320,6 +320,19 @@ assert_that(abs(_r015b['detection_volume_vs_gr'] - 0.241) < 0.001,
 assert_that(abs(_r015b['d_pure_bbh_ligo'] - 1.0/3.0) < 1e-15,
             "PAPER_015b: pure LIGO BBH factor 0.333 disclosed (0.622 = cross-band avg)")
 assert_that(C.wired_count() >= 16, "wired_count >= 16")
+
+_r016 = C.calc('PAPER_016')['value']
+assert_that(abs(_r016['s_qm_chsh'] - 2.8284271247461903) < 1e-15,
+            "PAPER_016: S_QM = 2*sqrt(2) Tsirelson bound exact")
+assert_that(abs(_r016['delta_energy_scaling'] - 1.5) < 1e-15,
+            "PAPER_016: delta = 1.5 = D_BSFG/D_PHYS EXACT (PAPER_1962 family candidate)")
+assert_that(abs(_r016['range_extension'] - 3.0) < 1e-12,
+            "PAPER_016: entanglement range extension 1/D_total = 3.0 = 1/(1-D_GW_EROSION)")
+assert_that(abs(_r016['eps_damp_gev'] - 0.0277) < 0.001,
+            "PAPER_016: GeV CHSH suppression eps = 1 - 2.75/2.828 = 0.0277")
+assert_that(_r016['s_uqff_1000km'] < _r016['s_uqff_gev'] < _r016['s_qm_chsh'],
+            "PAPER_016: suppression ordering 2.60 < 2.75 < 2.828 monotone")
+assert_that(C.wired_count() >= 17, "wired_count >= 17")
 
 # =============================================================================
 # REPORT

@@ -484,3 +484,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 16/2,255 (6 ✓, 10 ⚠). Next: PAPER_016.
 
 ---
+
+## 2026-07-29 — v0.16.0 — BAND 1: PAPER_016
+
+- PAPER_016 wired (✓ CLEAN): quantum entanglement. gamma_damp composed
+  from kappa; CHSH 2.75/2.60 falsifiable ladder; range x3 = 1/D_total;
+  delta = 1.5 = D_BSFG/D_PHYS EXACT flagged (PAPER_1962 family).
+- Gate 142/0. Registry 49 rows / 78 edges / 17 ledgers.
+- Campaign: 17/2,255 (7 ✓, 10 ⚠). Next: PAPER_016b (White Dwarf Foreground).
+
+---

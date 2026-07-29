@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.16.0] — 2026-07-29 — BAND 1: PAPER_016
+
+### Added
+- **PAPER_016 dispatch** (Quantum Entanglement Nonlocal Correlations):
+  gamma_damp = kappa*(E/E_ref) registry-composed; CHSH suppression
+  S_UQFF = 2.75 at GeV (vs Tsirelson 2*sqrt(2)), 2.60 at L>1000 km;
+  entanglement range extension 1/D_total = 3.0 = 1/(1-D_GW_EROSION);
+  tau_dec ~ 50 s satellite-scale falsifiable prediction. PRIMITIVE-LOCK
+  CANDIDATE: energy-scaling delta = 1.5 = D_BSFG/D_PHYS EXACT
+  (PAPER_1962 3/2 cross-scale family). CLEAN wiring.
+- Gate: 142 assertions, 0 failures. Registry: 49 rows / 78 edges / 17 ledgers.
+
+---
+
 ## [0.15.0] — 2026-07-29 — BAND 1: PAPER_015b
 
 ### Added

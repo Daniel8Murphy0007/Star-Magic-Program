@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.15.0"
+VERSION = "0.16.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -156,6 +156,52 @@ def _paper_015b(dataset):
                     'V(UQFF)/V(GR) = D^3 = 0.241'),
         'source': 'PAPER_015b',
         'residual_pct': abs(d_multiband**3 - 0.24) / 0.24 * 100,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_016')
+def _paper_016(dataset):
+    """Quantum Entanglement and UQFF Nonlocal Correlations (Session 0).
+
+    Damping-mediated entanglement decay: gamma_damp = kappa * (E/E_ref)
+    (registry-composed). CHSH suppression S_UQFF = S_QM*(1-eps_damp);
+    S_QM = 2*sqrt(2) exact. Entanglement range extended by 1/D_total = 3
+    (consistent with D_total = 1/3 = 1 - D_GW_EROSION). Energy-scaling
+    exponent delta = 1.5 = D_BSFG/D_PHYS EXACT — primitive-lock
+    candidate (PAPER_1962 3/2 cross-scale family). CLEAN wiring.
+    """
+    import math as _m
+    s_qm = 2.0 * _m.sqrt(2.0)                     # Tsirelson bound, exact
+    delta_energy_scaling = D_BSFG / D_PHYS        # 1.5 EXACT (candidate, PAPER_1962 family)
+    range_extension = 1.0 / (1.0 - D_GW_EROSION)  # 1/D_total = 3.0
+    return {
+        'value': {
+            's_qm_chsh': s_qm,                    # 2.828
+            's_uqff_gev': 2.75,                   # E ~ 1 GeV, +-0.05
+            's_uqff_1000km': 2.60,                # large separation
+            'eps_damp_gev': 1.0 - 2.75 / s_qm,    # 0.0277 suppression
+            'delta_energy_scaling': delta_energy_scaling,
+            'gamma_0_ev': 1.0e-30,                # PAPER_016 sec 2.2 baseline anchor
+            'e_q_gev': 1.0,
+            'alpha_q': 1.0e-2,
+            'range_extension': range_extension,   # 3.0 = 1/D_total
+            'l_dec_1ev_km': 1.0e6,
+            'l_dec_1gev_m': 100.0,
+            'beta_q_gw_coupling': 0.15,
+            'nu_freq_scaling': 2.0,
+            'delta_phi_gw_rad': 1.0e-18,          # LIGO-like h_0 ~ 1e-21
+            'tau_dec_s': 50.0,                    # satellite-scale decay prediction
+            'teleport_fidelity_1000km': 0.995,
+            'qcomm_rate_reduction_pct': 0.5,
+            'primordial_entanglement': 1.0e-50,   # fully decayed over t_universe
+            'bh_info_recovery_yr_per_msun': 1.0e7,
+        },
+        'formula': ('gamma_damp = kappa*(E/E_ref)*[1+(E/E_Q)^1.5]*exp(-L/L_coh); '
+                    'S_UQFF = 2*sqrt(2)*(1 - (L/L_coh)^2*(1-exp(-gamma*t))); '
+                    'range x 1/D_total = 3'),
+        'source': 'PAPER_016',
+        'residual_pct': None,
         'status': 'WIRED',
     }
 

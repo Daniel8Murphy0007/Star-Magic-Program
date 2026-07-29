@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.15.0"
-description = "UQFF Star-Magic-Program v0.15.0: PAPER_015b wired (multiband LISA+LIGO synergy: D = 0.622 frequency-independent across mHz/100 Hz bands; SNR 268->167 and 1116->694 both 0.622; volume 24 pct GR; 0.622-vs-0.333 relation disclosed in-paper = cross-band average). CLEAN wiring. Wired 16/2255, gate 136/0. Registry 46 rows / 71 edges / 16 ledgers."
+version = "0.16.0"
+description = "UQFF Star-Magic-Program v0.16.0: PAPER_016 wired (quantum entanglement nonlocal correlations: gamma_damp = kappa*(E/E_ref) registry-composed; CHSH S_UQFF 2.75 at GeV vs 2*sqrt(2); range extension 1/D_total = 3; delta = 1.5 = D_BSFG/D_PHYS EXACT primitive-lock candidate, PAPER_1962 family). CLEAN. Wired 17/2255, gate 142/0. Registry 49 rows / 78 edges / 17 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
