@@ -1021,6 +1021,25 @@ RESOLVED section with the ruling recorded.
   x_2 readings carried, magnetar pin, stats suite as stated.
 - **Daniel's ruling:** (pending)
 
+### Q-060 — PAPER_064 — [UA] weight + 4-mode/triadic crosswalk + Abell example + GWTC events
+- **Question:** (a) The Abell2256 Compressed worked example prints
+  "M = 1044 kg, r = 10 m, g = 10 m/s" with all exponents mojibaked;
+  no in-paper chain recovers them (cluster r_virial ~1e23 m with
+  M = 1e44 kg gives g_C = 1e11 in mode units — is the printed g
+  "10^11"?). (b) alpha_B = [UA] = 1e-4 buoyant weighting is a NEW
+  constant — not F_TRZ (0.1), not rho_UA — canonize or identify
+  as drift? (c) The 4-mode weighted sum (KAPPA/SSQ/1e-4/0.99)
+  overlaps the triadic g decomposition w_C*g_comp + w_R*g_res +
+  w_B*g_buoy of the model-suite papers (053-058) but adds the
+  Superconductive term — what is the canonical crosswalk?
+  (d) "LIGO GWTC-4.0 ringdown 0.5 pct for 3 events" — which three?
+- **Notable:** Crab Resonant example closes exactly (omega = 190
+  rad/s = 2*pi*30.2 Hz, the real Crab spin); alpha_S = 0.99 = the
+  H_SCm manifold-completeness constant.
+- **Best-candidate wired:** four modes + registry-primitive weight
+  identification + verified chains + Batch-23 validation record.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.66.0", "uqff_calculator.VERSION = 0.66.0")
+assert_that(C.VERSION == "0.67.0", "uqff_calculator.VERSION = 0.67.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1064,6 +1064,22 @@ assert_that(abs(_r063['q_wave_magnetar'] - 7.68e26) / 7.68e26 < 0.01,
 assert_that(_r063['shapiro_wilk_p'] < 0.001 and _r063['ks_p'] > 0.7,
             "PAPER_063: leptokurtic residual signature (SW reject, KS cannot) wired as stated")
 assert_that(C.wired_count() >= 67, "wired_count >= 67")
+
+_r064 = C.calc('PAPER_064')['value']
+assert_that(abs(_r064['weights']['alpha_C'] - 0.0005) < 1e-12
+            and abs(_r064['weights']['alpha_R'] - 0.57) < 1e-12,
+            "PAPER_064: mode weights identified with registry primitives KAPPA and SSQ")
+assert_that(abs(_r064['g_buoyant_ref'] - 7.09e19) / 7.09e19 < 1e-6,
+            "PAPER_064: buoyant chain rho_UA*1e55 = 7.09e19 verified")
+assert_that(abs(_r064['g_super_t0'] - 1e16) < 1,
+            "PAPER_064: superconductive chain 1e46*1e-30 = 1e16 verified")
+assert_that(abs(_r064['crab_omega_rad_s'] - 190.0) < 0.5,
+            "PAPER_064: Crab omega = 2*pi*30.2 Hz = 189.75 rad/s matches printed 190 (chain closes)")
+assert_that(_r064['mode_evaluations'] == 1784,
+            "PAPER_064: 446 modules * 4 modes = 1784 EXACT")
+assert_that(_r064['gaia_dr4_residual_pct'] < _r064['dpm_dm_halo_residual_pct'],
+            "PAPER_064: Gaia DR4 7 pct beats DPM+DM-halo 12 pct as stated")
+assert_that(C.wired_count() >= 68, "wired_count >= 68")
 
 # =============================================================================
 # REPORT

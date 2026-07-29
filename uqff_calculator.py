@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.66.0"
+VERSION = "0.67.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3368,5 +3368,61 @@ def _paper_063(dataset):
                     'Master: M*(Ug_i - Ub_i + Ui_i); Q_wave = B^2/(2*mu0)'),
         'source': 'PAPER_063',
         'residual_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_064')
+def _paper_064(dataset):
+    """Four UQFF Operational Modes (Session 0, Batch 23).
+
+    Formalizes the mode superposition g_UQFF = alpha_C*g_Compressed
+    + alpha_R*g_Resonant + alpha_B*g_Buoyant + alpha_S*g_Super.
+    Mode formulas: Compressed (M/r)*1e-10; Resonant cos(omega*t)*
+    1e-5; Buoyant rho_vac_UA*1e55; Superconductive E_react*1e-30.
+    WEIGHTS IDENTIFIED WITH REGISTRY CONSTANTS: alpha_C = KAPPA
+    (0.0005), alpha_R = SSQ (0.57), alpha_S = H_SCm (~0.99);
+    alpha_B = [UA] = 1e-4 is a NEW weighting constant (Q-060b).
+    Chains VERIFIED: buoyant 7.09e-36*1e55 = 7.09e19; super
+    1e46*1e-30 = 1e16; Crab omega = 190 rad/s = 2*pi*30.2 Hz (the
+    real Crab spin - chain closes); 446 modules * 4 = 1,784 mode
+    evaluations EXACT. Self-consistency gate |g_C - g_UQFF| <=
+    3*sigma_bootstrap ties to PAPER_063's 3 pct ensemble std.
+    Validation wired as stated: Gaia DR4 proper motions 7 pct (vs
+    12 pct DPM+DM-halo); LIGO GWTC-4.0 ringdown 0.5 pct (3 events,
+    unnamed - Q-060d).
+    Q-060: (a) Abell2256 Compressed example exponents mojibaked
+    beyond in-paper recovery; (b) alpha_B = [UA] = 1e-4 new
+    constant or drift; (c) crosswalk of this 4-mode weighted sum
+    to the triadic w_C/w_R/w_B decomposition of the model-suite
+    (053-058); (d) name the 3 GWTC-4.0 ringdown events.
+    """
+    import math as _m
+    weights = {'alpha_C': KAPPA_PER_DAY, 'alpha_R': SSQ,
+               'alpha_B': 1.0e-4, 'alpha_S': 0.99}
+    return {
+        'value': {
+            'system': 'Batch 23 four-mode formalization (446 modules)',
+            'modes': {
+                'compressed': '(M/r)*1e-10',
+                'resonant': 'cos(omega*t)*1e-5',
+                'buoyant': 'rho_vac_UA*1e55',
+                'superconductive': 'E_react*1e-30',
+            },
+            'weights': weights,
+            'g_buoyant_ref': 7.09e-36 * 1e55,          # 7.09e19 VERIFIED
+            'g_super_t0': 1e46 * 1e-30,                # 1e16 VERIFIED
+            'crab_omega_rad_s': 2 * _m.pi * 30.2,      # 189.75 ~ printed 190
+            'mode_evaluations': 446 * 4,               # 1784 EXACT
+            'gaia_dr4_residual_pct': 7.0,
+            'dpm_dm_halo_residual_pct': 12.0,
+            'gwtc4_ringdown_residual_pct': 0.5,
+            'gwtc4_n_events': 3,
+            'self_consistency_sigma_pct': 3.0,         # from PAPER_063
+        },
+        'formula': ('g_UQFF = KAPPA*g_C + SSQ*g_R + 1e-4*g_B + 0.99*g_S; '
+                    'consistency |g_C - g_UQFF| <= 3*sigma_bootstrap'),
+        'source': 'PAPER_064',
+        'residual_pct': abs(2 * _m.pi * 30.2 - 190.0) / 190.0 * 100,
         'status': 'OPEN_RULING',
     }

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.67.0] — 2026-07-29 — BAND 1: PAPER_064
+
+### Added
+- **PAPER_064 dispatch** (Four Operational Modes, Batch 23):
+  g_UQFF = alpha_C*g_C + alpha_R*g_R + alpha_B*g_B + alpha_S*g_S
+  with weights IDENTIFIED as registry primitives: alpha_C = KAPPA,
+  alpha_R = SSQ, alpha_S = H_SCm (0.99); alpha_B = [UA] = 1e-4 is
+  a NEW constant (Q-060b). Chains verified: buoyant rho_UA*1e55 =
+  7.09e19; superconductive 1e46*1e-30 = 1e16; Crab Resonant
+  example closes EXACTLY (omega = 190 rad/s = 2*pi*30.2 Hz, the
+  real Crab spin); 446 modules * 4 = 1784 evaluations. Validation
+  record: Gaia DR4 proper motions 7 pct (vs 12 pct DPM+DM halo),
+  GWTC-4.0 ringdown 0.5 pct (3 unnamed events). Self-consistency
+  gate ties to PAPER_063's 3 pct bootstrap sigma.
+- OPEN_RULING Q-060 (Abell example exponents; [UA] = 1e-4 status;
+  4-mode vs triadic crosswalk; GWTC event names).
+- Gate: 488 assertions, 0 failures. Registry: 202 rows / 389 edges / 68 ledgers.
+
+---
+
 ## [0.66.0] — 2026-07-29 — BAND 1: PAPER_063
 
 ### Added

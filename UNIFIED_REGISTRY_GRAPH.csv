@@ -382,3 +382,10 @@ observable,kappa_mcmc_validation,paper,PAPER_063,MCMC calibration
 primitive,KAPPA_PER_DAY,observable,kappa_mcmc_validation,validated primitive
 observable,q_wave_magnetic_energy,paper,PAPER_063,chain verification
 observable,q_wave_magnetic_energy,paper,PAPER_001,B_crit identification
+observable,four_mode_superposition,paper,PAPER_064,primary derivation
+primitive,KAPPA_PER_DAY,observable,four_mode_superposition,alpha_C weight
+primitive,SSQ,observable,four_mode_superposition,alpha_R weight
+primitive,RHO_UA,observable,four_mode_superposition,buoyant mode input
+observable,ua_weighting_constant,paper,PAPER_064,new constant
+observable,batch23_validation,paper,PAPER_064,validation record
+observable,four_mode_superposition,paper,PAPER_063,3 pct consistency sigma

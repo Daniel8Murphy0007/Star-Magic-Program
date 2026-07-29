@@ -1033,3 +1033,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 67/2,255 (10 ✓, 57 ⚠). Next: PAPER_064.
 
 ---
+
+## 2026-07-29 — v0.67.0 — BAND 1: PAPER_064
+
+- PAPER_064 wired (⚠ Q-060): four operational modes. Weights =
+  KAPPA/SSQ/1e-4/H_SCm; Crab omega chain closes; 1784 evaluations
+  EXACT; Gaia/GWTC validation recorded; [UA] = 1e-4 new-constant
+  flag; 4-mode vs triadic crosswalk queued.
+- Campaign: 68/2,255 (10 ✓, 58 ⚠). Next: PAPER_065.
+
+---
