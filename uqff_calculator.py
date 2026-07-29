@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.19.0"
+VERSION = "0.20.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -902,5 +902,49 @@ def _paper_018(dataset):
                     'F_TRZ(f) = 1 - F_TRZ*exp[-(f-f_peak)^2/(2*sigma^2)]'),
         'source': 'PAPER_018',
         'residual_pct': None,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_019')
+def _paper_019(dataset):
+    """Pulsar Timing Array Anomalies under UQFF (Session 0).
+
+    TRZ RESONANCE INVERSION: damping (D<1) in the LIGO band flips to
+    amplification (D>1) below ~1 uHz. D_TRZ(f) = 1 + SSq*Phi_TRZ(f),
+    registry-composed: at f_yr = 31.7 nHz, Phi = 1.053 ->
+    D_total = 1 + 0.57*1.053 = 1.600. Resolves the PTA amplitude
+    anomaly: A_UQFF = 1.60 * 1.5e-15 = 2.4e-15 = NANOGrav 15-yr
+    observation, from STANDARD SMBH merger rates. Hellings-Downs
+    preserved (amplitude-only, polarization-preserving).
+    Q-016: abstract/key-results use A_UQFF = A_GR / D^2 with
+    D^2 = 0.625 (= 1/1.60) while sec 3.2 uses A_UQFF = D_total * A_GR
+    with D = 1.60 - conflicting parameterizations landing on the same
+    2.4e-15. Multiplicative form wired (sec 2.3 component table).
+    """
+    phi_ladder = {10e-9: 1.404, 31.7e-9: 1.053, 100e-9: 0.526,
+                  1e-6: 0.0, 1e-3: -0.035, 100.0: -0.175, 300.0: -0.228}
+    d_trz = {f: 1.0 + SSQ * p for f, p in phi_ladder.items()}
+    d_total_fyr = 1.0 + SSQ * 1.053              # 1.6002
+    a_gr_std = 1.5e-15                            # PAPER_019 standard SMBH-rate anchor
+    return {
+        'value': {
+            'd_trz_ladder': d_trz,
+            'd_total_fyr': d_total_fyr,           # 1.600
+            'a_gr_std': a_gr_std,
+            'a_uqff': d_total_fyr * a_gr_std,     # 2.40e-15
+            'a_obs_nanograv15': 2.4e-15,
+            'f_yr_hz': 3.17e-8,
+            'inversion_threshold_hz': 1e-6,
+            'alpha_gr': -2.0 / 3.0,
+            'alpha_eff_uqff': -0.757,             # with TRZ tilt Delta-alpha ~ -0.09
+            'bns_100hz_check': 0.900 * 0.370,     # 0.333 - consistent with PAPER_001/009
+            'hellings_downs_preserved': True,
+            'd_sq_keyresults': 0.625,             # Q-016: = 1/1.60 divisive form
+        },
+        'formula': ('D_TRZ(f) = 1 + SSq*Phi_TRZ(f); D_total(f_yr) = 1 + 0.57*1.053 = 1.60; '
+                    'A_UQFF = D_total * A_GR,std; h_c = A*(f/f_yr)^(-2/3)'),
+        'source': 'PAPER_019',
+        'residual_pct': abs(d_total_fyr * a_gr_std - 2.4e-15) / 2.4e-15 * 100,
         'status': 'OPEN_RULING',
     }

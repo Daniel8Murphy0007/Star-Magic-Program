@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.20.0] — 2026-07-29 — BAND 1: PAPER_019
+
+### Added
+- **PAPER_019 dispatch** (Pulsar Timing Array Anomalies): TRZ RESONANCE
+  INVERSION — the same vacuum mechanism that damps at LIGO frequencies
+  amplifies below ~1 uHz. D_TRZ(f) = 1 + SSq*Phi_TRZ(f) registry-
+  composed; D_total(f_yr = 31.7 nHz) = 1 + 0.57*1.053 = 1.600;
+  A_UQFF = 1.60*1.5e-15 = 2.4e-15 = NANOGrav 15-yr from STANDARD SMBH
+  merger rates (no exotic populations); alpha_eff = -0.757 falsifiable
+  tilt; Hellings-Downs preserved; 100 Hz BNS row 0.900*0.370 = 0.333
+  cross-checks PAPER_001/009. OPEN_RULING Q-016 (abstract divisive
+  A_GR/D^2 with D^2 = 0.625 = 1/1.60 vs sec-3.2 multiplicative D = 1.60;
+  identity 0.625*1.60 = 1 gate-pinned).
+- Gate: 166 assertions, 0 failures. Registry: 61 rows / 104 edges / 21 ledgers.
+
+---
+
 ## [0.19.0] — 2026-07-29 — BAND 1: PAPER_018
 
 ### Added

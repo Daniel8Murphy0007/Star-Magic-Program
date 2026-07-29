@@ -187,6 +187,21 @@ RESOLVED section with the ruling recorded.
   as anchored values.
 - **Daniel's ruling:** (pending)
 
+### Q-016 — PAPER_019 — divisive vs multiplicative D_total parameterization
+- **Question:** Abstract/sec-1.2 write A_UQFF = A_GR / D^2_total,SMBH
+  with key-results "D_total^2 = 6.25e-1" (0.625 = 1/1.60, implying
+  D = 0.79 divisive). Sec 2.3/3.2 write A_UQFF = D_total * A_GR with
+  D_total = 1.60 multiplicative. Both land on 2.4e-15, but the
+  parameterizations are formally inconsistent (division by suppression
+  factor vs multiplication by amplification factor). Which is the
+  canonical form for the amplification regime — and is "D_total^2 =
+  0.625" a leftover from the LIGO-band damping convention?
+- **Best-candidate wired:** multiplicative D_total = 1.60 (sec-2.3
+  component table is explicit: product of D_Aether*D_SCm*D_TRZ*D_String
+  = 1*1*1.6*1 = 1.60); divisive value exposed as d_sq_keyresults with
+  the 0.625*1.60 = 1 identity gate-pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

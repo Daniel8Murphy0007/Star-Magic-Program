@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.19.0"
-description = "UQFF Star-Magic-Program v0.19.0: PAPER_018 wired (LISA aether noise spectrum: harmonic comb at n*0.99 mHz with exp(-n/2) envelope; TRZ dip depth = F_TRZ = 0.1 EXACT at 5 mHz; aether power 222.93 pct of GR SGWB; SNR 12,695,834 matches PAPER_017 validator). Q-015 queued (U_m 1.0 vs 1.0e-4). Wired 20/2255, gate 160/0. Registry 58 rows / 97 edges / 20 ledgers."
+version = "0.20.0"
+description = "UQFF Star-Magic-Program v0.20.0: PAPER_019 wired (PTA anomalies: TRZ resonance inversion - LIGO-band damping flips to nHz amplification; D_total(f_yr) = 1 + SSq*1.053 = 1.60 registry-composed; A_UQFF = 2.4e-15 = NANOGrav 15yr from standard SMBH rates; alpha_eff = -0.757; Hellings-Downs preserved). Q-016 queued (divisive vs multiplicative form). Wired 21/2255, gate 166/0. Registry 61 rows / 104 edges / 21 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

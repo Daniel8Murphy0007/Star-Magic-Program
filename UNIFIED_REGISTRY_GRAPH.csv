@@ -96,3 +96,10 @@ observable,aether_noise_spectrum_law,paper,PAPER_018,primary derivation
 observable,aether_power_fraction,paper,PAPER_018,primary derivation
 observable,aether_power_fraction,paper,PAPER_017,shared validator SNR 12695834
 observable,trz_spectral_dip,paper,PAPER_018,primary derivation
+primitive,SSQ,observable,trz_resonance_inversion,D_TRZ = 1 + SSq*Phi_TRZ
+primitive,SSQ,observable,pta_amplitude_resolution,D_total(f_yr) = 1 + SSq*1.053
+observable,trz_resonance_inversion,paper,PAPER_019,primary derivation
+observable,trz_resonance_inversion,paper,PAPER_001,100 Hz BNS 0.333 consistency
+observable,trz_resonance_inversion,paper,PAPER_009,D_String 0.37 calibrated source
+observable,pta_amplitude_resolution,paper,PAPER_019,primary derivation
+observable,pta_spectral_tilt,paper,PAPER_019,primary derivation

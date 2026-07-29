@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.19.0", "uqff_calculator.VERSION = 0.19.0")
+assert_that(C.VERSION == "0.20.0", "uqff_calculator.VERSION = 0.20.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -372,6 +372,19 @@ assert_that(abs(_r018['aether_power_fraction_pct'] - 222.93) < 1e-9,
 assert_that(abs(_r018['integrated_snr'] - 12695834.0) < 1.0,
             "PAPER_018: integrated SNR 12,695,834 matches PAPER_017 validator (corpus consistency)")
 assert_that(C.wired_count() >= 20, "wired_count >= 20")
+
+_r019 = C.calc('PAPER_019')['value']
+assert_that(abs(_r019['d_total_fyr'] - 1.60) < 0.001,
+            "PAPER_019: D_total(f_yr) = 1 + SSq*1.053 = 1.600 registry-composed")
+assert_that(abs(_r019['a_uqff'] - 2.4e-15) / 2.4e-15 < 0.001,
+            "PAPER_019: A_UQFF = 1.60*1.5e-15 = 2.4e-15 = NANOGrav 15-yr")
+assert_that(abs(_r019['bns_100hz_check'] - 0.333) < 0.001,
+            "PAPER_019: 100 Hz BNS row 0.900*0.370 = 0.333 consistent with PAPER_001/009")
+assert_that(abs(_r019['alpha_gr'] + 2.0/3.0) < 1e-15,
+            "PAPER_019: alpha_GR = -2/3 (Peters circular-inspiral index)")
+assert_that(abs(_r019['d_sq_keyresults'] * _r019['d_total_fyr'] - 1.0) < 0.001,
+            "PAPER_019: key-results 0.625 = 1/1.60 - Q-016 parameterization conflict quantified")
+assert_that(C.wired_count() >= 21, "wired_count >= 21")
 
 # =============================================================================
 # REPORT

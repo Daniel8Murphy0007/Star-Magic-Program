@@ -527,3 +527,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 20/2,255 (7 ✓, 13 ⚠). Next: PAPER_019 (PTA Anomalies).
 
 ---
+
+## 2026-07-29 — v0.20.0 — BAND 1: PAPER_019
+
+- PAPER_019 wired (⚠ Q-016): PTA anomalies. TRZ inversion unifies LIGO
+  damping + PTA amplification under same kappa/SSq; D(f_yr) = 1.60
+  composed from SSQ; NANOGrav 2.4e-15 matched from standard rates.
+- Gate 166/0. Registry 61 rows / 104 edges / 21 ledgers.
+- Campaign: 21/2,255 (7 ✓, 14 ⚠). Next: PAPER_020 (Cosmic Ray Propagation).
+
+---
