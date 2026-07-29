@@ -570,3 +570,8 @@ primitive,SSQ,observable,plasma_shield_model,sqrt trapping fraction
 observable,plasma_shield_model,paper,PAPER_094,0.755 dual role
 observable,shield_period_slip,paper,PAPER_099,unit-slip forensic
 primitive,KAPPA_PER_DAY,observable,shield_period_slip,1/kappa = 2000 d
+observable,thz_resonance_holes,paper,PAPER_100,lab prediction
+primitive,SSQ,observable,thz_resonance_holes,sqrt factor
+primitive,OMEGA_SCM_HZ,observable,thz_fifth_harmonic_fork,5th-harmonic candidate
+primitive,F_TRZ,observable,thz_fifth_harmonic_fork,dip amplitude fork
+observable,thz_fifth_harmonic_fork,paper,PAPER_088,fork family

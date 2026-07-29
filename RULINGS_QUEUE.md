@@ -1536,6 +1536,7 @@ RESOLVED section with the ruling recorded.
   pending ruling; the 081-family evidence favors canonical, but
   unlike 081 there is no in-paper implemented-value proof here.)
   [FORK GROWS: PAPER_091's pulsar-timing enhancement carries the same 1-vs-10-pct fork - see Q-087c; one ruling decides both.]
+  [FOUR OBSERVABLES NOW: + FRB spectral slope (Q-092c) + THz-bench transmission dip (Q-096c, most lab-accessible).]
   (b) The excess is printed THREE ways: 0.3 pct (abstract),
   1.0 pct (sections/summary), +0.35 pct (summary Ug4 row) -
   internal inconsistency pin. (c) Flavor null is ROBUST under
@@ -1784,6 +1785,29 @@ RESOLVED section with the ruling recorded.
   r_ISCO; 5/5 model tests.
 - **Best-candidate wired:** chains + pins + dual-role note;
   slips carried with corrected values.
+- **Daniel's ruling:** (pending)
+
+### Q-096 — PAPER_100 — um pin + 5th-harmonic candidate + 4th fork + Q echo
+- **Question:** (a) The nu_hole chain needs an ad hoc x1e3 as
+  printed; it closes CLEANLY with r_vac,0 = 5.77e-6 m (um
+  scale), and the Delta_r = 23.8-um chain corroborates - pin the
+  um reading? (b) HARMONIC IDENTIFICATION CANDIDATE: nu_hole =
+  6.25 THz = 5 * f_SCm - the 5th harmonic of the 1.25-THz phonon
+  carrier (5 = SO_FIVE/2, halving series), matching the chain to
+  0.16 pct. Per the no-retrofit standing rule this needs your
+  derivation ruling before canonization. (c) The dip amplitude =
+  f_TRZ makes this the FOURTH and MOST LAB-ACCESSIBLE observable
+  fork: printed -0.01 pct vs drift 1 pct vs canonical 10 pct - a
+  10-pct vacuum-transmission dip at 6.25 THz is trivially
+  measurable on a THz bench; the Q-084a ruling now decides four
+  observables (neutrino excess, pulsar timing, FRB slope, THz
+  dip). (d) Q = 62.4 EXACT - possible echo of the corpus 62 =
+  2*D_crit + SO_5 integer; noted WITHOUT retrofit.
+- **Notable:** Session-0 first hundred closes with the
+  framework's most accessible laboratory prediction; 5/5 model
+  tests; factor-100 internal dip mismatch also pinned.
+- **Best-candidate wired:** clean um chain + harmonic candidate
+  + all three fork branches carried.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

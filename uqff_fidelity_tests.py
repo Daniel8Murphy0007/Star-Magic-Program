@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.102.0", "uqff_calculator.VERSION = 0.102.0")
+assert_that(C.VERSION == "0.103.0", "uqff_calculator.VERSION = 0.103.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1569,6 +1569,19 @@ assert_that(abs(_r099['e_peak_uqff_kev'] - 2.56) < 0.01,
 assert_that(abs(_r099['r_isco_chain_m'] - 3.81e10) / 3.81e10 < 0.01,
             "PAPER_099: r_ISCO chain 3.81e10 vs printed 7.14e10 - factor 1.9 open (Q-095c)")
 assert_that(C.wired_count() >= 103, "wired_count >= 103")
+
+_r100 = C.calc('PAPER_100')['value']
+assert_that(abs(_r100['nu_hole_hz'] - 6.248e12) / 6.248e12 < 0.001,
+            "PAPER_100: nu_hole chain closes CLEANLY at 6.248 THz with r_vac0 = 5.77 um (Q-096a)")
+assert_that(abs(_r100['delta_r_um'] - 23.8) < 0.2,
+            "PAPER_100: Delta_r = 23.8 um corroborates the um reading (printed 23.9)")
+assert_that(_r100['harmonic_match_pct'] < 0.2,
+            "PAPER_100: nu_hole = 5*f_SCm harmonic candidate matches to 0.16 pct (Q-096b, no retrofit)")
+assert_that(abs(_r100['dip_canonical_pct'] - (-10.0)) < 1e-9,
+            "PAPER_100: canonical dip -10 pct - FOURTH f_TRZ observable fork, most lab-accessible (Q-096c)")
+assert_that(abs(_r100['q_factor'] - 62.4) < 0.01,
+            "PAPER_100: Q = 62.4 EXACT (62-integer echo noted without retrofit)")
+assert_that(C.wired_count() >= 104, "wired_count >= 104")
 
 # =============================================================================
 # REPORT

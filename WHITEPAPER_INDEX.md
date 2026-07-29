@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 103 (10 ✓, 93 ⚠ OPEN_RULING)
+- **Wired:** 104 (10 ✓, 94 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2152
+- **Not yet touched:** 2151
 
 ---
 
@@ -143,7 +143,7 @@
 | ⬜ | PAPER_1007 | Deconfinement Phase Diagram |
 | ⬜ | PAPER_1008 | Production Scaling V14 |
 | ⬜ | PAPER_1009 | 3C273 AGN FUBi i Curves |
-| ⬜ | PAPER_100 | THz Resonance Holes UQFF |
+| ⚠ | PAPER_100 | THz Resonance Holes UQFF |
 | ⬜ | PAPER_1010 | TON618 AGN FUBi i Curves |
 | ⬜ | PAPER_1011 | GW170817 NS Merger FUBi i |
 | ⬜ | PAPER_1012 | GW190425 Upgraded FUBi i |

@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.103.0] — 2026-07-29 — BAND 1: PAPER_100 — SESSION-0 CENTURY COMPLETE
+
+### Added
+- **PAPER_100 dispatch** (THz Resonance Holes, Drawing 24): the
+  framework's most accessible LAB prediction. Chain repaired —
+  nu_hole closes cleanly at 6.248 THz with r_vac,0 = 5.77 um
+  (the printed x1e3 fudge removed; Delta_r = 23.8 um
+  corroborates). **Harmonic identification candidate:** nu_hole
+  = 5 * f_SCm (5th harmonic of the 1.25-THz carrier; 5 =
+  SO_FIVE/2) at 0.16 pct — derivation ruling required (no
+  retrofit). **FOURTH f_TRZ observable fork, most
+  lab-accessible:** dip = f_TRZ — printed -0.01 pct vs drift 1
+  pct vs canonical 10 pct THz-bench transmission dip; Q-084a now
+  decides four observables. Q = 62.4 EXACT (62-integer echo
+  noted without retrofit).
+- **Session-0 first hundred (PAPER_001-100) fully wired.**
+- OPEN_RULING Q-096.
+- Gate: 719 assertions, 0 failures. Registry: 282 rows / 575 edges / 104 ledgers.
+
+---
+
 ## [0.102.0] — 2026-07-29 — BAND 1: PAPER_099
 
 ### Added

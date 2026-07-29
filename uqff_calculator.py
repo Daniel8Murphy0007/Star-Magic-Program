@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.102.0"
+VERSION = "0.103.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5211,5 +5211,57 @@ def _paper_099(dataset):
                     'P_shield = P_ISCO/kappa; E_peak = 3 k_B T*[SCm]'),
         'source': 'PAPER_099',
         'residual_pct': abs(2.586 * 0.99 - 2.53) / 2.53 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_100')
+def _paper_100(dataset):
+    """THz Resonance Holes - Drawing 24 (Session 0 century closer).
+
+    The framework's most accessible LABORATORY prediction: a
+    vacuum-permittivity dip at nu_hole ~ 6.24 THz (aTHz MUGE mode
+    destructive interference with ZPE).
+    CHAIN REPAIR (Q-096a): the printed nu_hole chain needs an ad
+    hoc x1e3; it closes CLEANLY with r_vac,0 = 5.77e-6 m (um
+    scale, not the printed e-3): 0.755c/(2 pi 5.77e-6) = 6.248e12
+    Hz - and the Delta_r = lambda/2*[SCm] = 23.8 um chain
+    CORROBORATES the um reading (printed 23.9).
+    HARMONIC IDENTIFICATION CANDIDATE (Q-096b): nu_hole = 6.25
+    THz = 5 * f_SCm - the 5TH HARMONIC of the 1.25-THz phonon
+    carrier, matching the chain to 0.16 pct (5 = SO_FIVE/2,
+    halving series). Flagged for Daniel's derivation ruling - NO
+    retrofit without one (standing rule).
+    4TH OBSERVABLE FORK - THE MOST LAB-ACCESSIBLE (Q-096c): the
+    dip amplitude = f_TRZ: printed "-0.01 pct" vs drift f_TRZ =
+    0.01 = 1 pct (factor-100 internal mismatch) vs canonical
+    F_TRZ = 10 pct - a 10-pct vacuum-transmission dip at 6.25
+    THz would be trivially measurable on a THz bench; the Q-084a
+    ruling now touches FOUR observables.
+    Q = nu/Gamma = 6.24/0.1 = 62.4 EXACT (possible echo of the
+    corpus 62 = 2*D_crit + SO_5 integer - noted WITHOUT retrofit,
+    Q-096d). 5/5 model tests as stated.
+    """
+    import math as _m
+    nu = 0.755 * 3e8 / (2 * _m.pi * 5.77e-6)
+    return {
+        'value': {
+            'domain': '1.13 (Drawing 24; Session-0 century closer)',
+            'nu_hole_hz': nu,                              # 6.248e12 clean
+            'r_vac0_pinned_m': 5.77e-6,                    # um reading
+            'delta_r_um': 3e8 / 6.24e12 / 2 * 0.99 * 1e6,  # 23.8 corroborates
+            'harmonic_candidate': '5 * f_SCm = 6.25 THz (SO_FIVE/2 halving)',
+            'harmonic_match_pct': abs(nu / 1e12 - 6.25) / 6.25 * 100,
+            'dip_printed_pct': -0.01,
+            'dip_drift_pct': -1.0,                         # f_TRZ = 0.01
+            'dip_canonical_pct': -F_TRZ * 100,             # -10 pct FOURTH fork
+            'q_factor': 6.24 / 0.1,                        # 62.4 EXACT
+            'q_echo_note': '62 = 2*D_crit + SO_5 corpus integer (no retrofit)',
+            'tests_pass': 5,
+        },
+        'formula': ('nu_hole = sqrt(SSq)*c/(2 pi r_vac0); Delta_r = lambda/2*[SCm]; '
+                    'eps_r = 1 - f_TRZ*Lorentz(nu)'),
+        'source': 'PAPER_100',
+        'residual_pct': abs(nu / 1e12 - 6.24) / 6.24 * 100,
         'status': 'OPEN_RULING',
     }
