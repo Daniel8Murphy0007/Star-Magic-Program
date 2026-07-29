@@ -1000,6 +1000,27 @@ RESOLVED section with the ruling recorded.
   mass-balance alongside.
 - **Daniel's ruling:** (pending)
 
+### Q-059 — PAPER_063 — ensemble-mean pin + x_2 exponent + magnetar B_crit + Planck ratio
+- **Question:** (a) The ensemble mean appears three ways: abstract/
+  table "-6.05x107 N" (reads e7), section-6 LaTeX "10^{217}". The
+  Planck-ratio chain closes EXACTLY under the e7 reading
+  (6.05e7/1.21e44 = 5.0e-37, matching the table's "10-7" as a
+  dropped-digit 10^-37) and e7 is consistent with all FUBii family
+  magnitudes — confirm mean = -6.05e7 N and mark 10^{217} as
+  drift? (b) x_2 cosmic root: abstract "-3.40e-7 m" vs section-2
+  "-3.40e172 m"; the stability claim ("sign change lies far beyond
+  the observable universe ~1e26 m") requires the LARGE reading —
+  confirm e172? (c) Magnetar Q_wave row closes only with B =
+  4.4e10 T, which is the B_crit of PAPER_001/002 (links to open
+  Q-002 unit question) — confirm identification? (d) Confirm the
+  Planck-ratio column 10^-37 dropped-digit reading.
+- **Notable:** kappa_MCMC = 0.00052/day (47 systems) is the first
+  ensemble-level validation of the KAPPA primitive: canonical
+  inside the 95 pct CI, retained.
+- **Best-candidate wired:** e7 mean (ratio-closure evidence), both
+  x_2 readings carried, magnetar pin, stats suite as stated.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

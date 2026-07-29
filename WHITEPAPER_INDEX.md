@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 66 (10 ✓, 56 ⚠ OPEN_RULING)
+- **Wired:** 67 (10 ✓, 57 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2189
+- **Not yet touched:** 2188
 
 ---
 
@@ -96,7 +96,7 @@
 | ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF |
 | ⚠ | PAPER_061 | Nuclear BEC Formation UQFF |
 | ⚠ | PAPER_062 | Widom Larsen LENR UQFF |
-| ⬜ | PAPER_063 | F U Bi i Integral UQFF |
+| ⚠ | PAPER_063 | F U Bi i Integral UQFF |
 | ⬜ | PAPER_064 | 4 UQFF Operational Modes |
 | ⬜ | PAPER_065 | 121 System UQFF Validation Statistical Summary |
 | ⬜ | PAPER_066 | Magnetar Systems SGR1745 Crab Vela UQFF |

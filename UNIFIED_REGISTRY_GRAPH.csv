@@ -376,3 +376,9 @@ primitive,OMEGA_SCM_HZ,observable,omega_lenr_scm_identity,2*pi identity
 observable,k_eta_lenr_coupling,paper,PAPER_062,chain closure
 primitive,RHO_UA,observable,k_eta_lenr_coupling,field chain input
 observable,wl_heavy_electron,paper,PAPER_061,BEC-LENR self-consistency link
+observable,fubii_master_integral,paper,PAPER_063,primary derivation
+observable,fubii_master_integral,paper,PAPER_036,17-variant family root
+observable,kappa_mcmc_validation,paper,PAPER_063,MCMC calibration
+primitive,KAPPA_PER_DAY,observable,kappa_mcmc_validation,validated primitive
+observable,q_wave_magnetic_energy,paper,PAPER_063,chain verification
+observable,q_wave_magnetic_energy,paper,PAPER_001,B_crit identification

@@ -1023,3 +1023,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 66/2,255 (10 ✓, 56 ⚠). Next: PAPER_063.
 
 ---
+
+## 2026-07-29 — v0.66.0 — BAND 1: PAPER_063
+
+- PAPER_063 wired (⚠ Q-059): F_UBii master integral + 52-system
+  ensemble. Mean pinned -6.05e7 N via exact Planck-ratio closure;
+  KAPPA primitive validated by MCMC (47 systems, canonical in CI);
+  magnetar Q_wave pinned at B = B_crit 4.4e10 T (links Q-002).
+- Campaign: 67/2,255 (10 ✓, 57 ⚠). Next: PAPER_064.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.65.0"
+VERSION = "0.66.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3310,5 +3310,63 @@ def _paper_062(dataset):
                     'E_raw = Um*rho_UA/r; E_phys = E_raw*k_eta; omega_LENR = 2*pi*f_SCm'),
         'source': 'PAPER_062',
         'residual_pct': abs(26.9 - 25.38) / 26.9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_063')
+def _paper_063(dataset):
+    """F_U_Bi_i Master Integral + 52-System Ensemble + KAPPA_MCMC (Session 0).
+
+    The ensemble-statistics capstone of the Session-0 catalogue.
+    Three integral forms recorded: C-1 galactic
+    Omega_g*(M_bh/d_g)*Sum(Ug+Ub); C-2 resonant
+    F_Bi*(1+f_TRZ)/(1-Omega_g); Master M*(Ug_i - Ub_i + Ui_i).
+    ENSEMBLE MEAN PINNED BY RATIO-CHAIN CLOSURE: mean/F_Planck =
+    6.05e7/1.21e44 = 5.0e-37 EXACTLY matches the table's mojibaked
+    "10-7" ratio read as 10^-37 -> mean = -6.05e7 N (consistent
+    with the FUBii family magnitudes 036-039/059-061); section-6
+    LaTeX "10^217" identified as drift. Bootstrap std 3 pct (log
+    space), leptokurtic residuals (SW p=0.00055 reject / KS
+    p=0.741 cannot reject -> fat tails, log-normal recommended).
+    KAPPA PRIMITIVE VALIDATED: kappa_MCMC = 0.00052/day across 47
+    systems = canonical KAPPA_PER_DAY * 1.04 (4 pct, inside 95 pct
+    CI (0.00048, 0.00056)) - canonical retained.
+    Q_wave = B^2/2mu0 chains VERIFIED: ISM 3.97e-5, Crab 3.97e-3;
+    magnetar row mojibake PINNED by chain: B = 4.4e10 T (the
+    PAPER_001/002 B_crit!) -> Q = 7.68e26 J/m3 (printed "7.70").
+    Q-059: (a) confirm mean -6.05e7 N pin; (b) x_2 exponent -
+    abstract "-3.40e-7 m" vs sec-2 "-3.40e172 m" (the beyond-
+    observable-universe stability claim requires the large
+    reading); (c) confirm magnetar B = B_crit identification;
+    (d) confirm Planck-ratio 10^-37 reading.
+    """
+    kappa_mcmc = 0.00052
+    mu0_paper = 1.26e-6
+    q_wave = lambda b: b * b / (2.0 * mu0_paper)
+    return {
+        'value': {
+            'system': '52-system ensemble (GrokThread UQFF_0904_Validation)',
+            'n_systems': 52,
+            'n_mcmc': 47,
+            'f_ubii_mean_n': -6.05e7,                 # PINNED by ratio closure
+            'planck_ratio': 6.05e7 / 1.21e44,         # 5.0e-37 EXACT closure
+            'bootstrap_std_pct': 3.0,
+            'kappa_mcmc_per_day': kappa_mcmc,
+            'kappa_deviation_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,  # 4.0
+            'kappa_ci95': (0.00048, 0.00056),
+            'q_wave_ism': q_wave(1e-5),               # 3.97e-5 VERIFIED
+            'q_wave_crab': q_wave(1e-4),              # 3.97e-3 VERIFIED
+            'q_wave_magnetar': q_wave(4.4e10),        # 7.68e26 PINNED (B = B_crit)
+            'shapiro_wilk_p': 0.00055,
+            'ks_p': 0.741,
+            'residual_shape': 'leptokurtic-lognormal',
+            'x2_cosmic_m_large_reading': -3.40e172,   # Q-059b
+            'x2_cosmic_m_abstract_reading': -3.40e-7, # Q-059b
+        },
+        'formula': ('C-1: Omega_g*(M_bh/d_g)*Sum(Ug+Ub); C-2: F_Bi*(1+f_TRZ)/(1-Omega_g); '
+                    'Master: M*(Ug_i - Ub_i + Ui_i); Q_wave = B^2/(2*mu0)'),
+        'source': 'PAPER_063',
+        'residual_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,
         'status': 'OPEN_RULING',
     }

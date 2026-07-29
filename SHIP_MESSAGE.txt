@@ -1,25 +1,33 @@
-v0.65.0 BAND 1: PAPER_062 wired - TWO MOJIBAKE EXPONENTS PINNED
+v0.66.0 BAND 1: PAPER_063 wired - KAPPA PRIMITIVE VALIDATED BY MCMC
 
-PAPER_062 Widom-Larsen LENR (OPEN_RULING Q-058):
-  Heavy-electron chain EXACT: m* = m_e*(1+2e11/1e11) = 3.0 m_e,
-  exceeding the e+p -> n+nu threshold 1.293/0.511 = 2.530 m_e.
-  Enhanced neutron rate eta = 1e13*3.0 = 3e13 /cm2/s.
+PAPER_063 F_U_Bi_i Master Integral + 52-System Ensemble
+(OPEN_RULING Q-059):
+  Three canonical integral forms wired: C-1 galactic
+  Omega_g*(M_bh/d_g)*Sum(Ug+Ub); C-2 resonant
+  F_Bi*(1+f_TRZ)/(1-Omega_g); Master M*(Ug_i - Ub_i + Ui_i).
 
-  TWO MOJIBAKE EXPONENTS PINNED BY CHAIN CLOSURE (not guesswork):
-  1. omega_LENR "7.85e?" = 2*pi*1.25 THz = 7.854e12 rad/s -
-     IDENTICALLY omega_SCm. The LENR channel IS the SCm phonon
-     resonance - primitive identity, no new constant.
-  2. k_eta "10?" - raw field E = Um*rho_UA/r = 1.21e61 V/m
-     (chain verified) closes to printed physical 1.21e6 V/m
-     IFF k_eta = 1e-55.
+  ENSEMBLE MEAN PINNED BY EXACT RATIO CLOSURE: mean/F_Planck =
+  6.05e7/1.21e44 = 5.0e-37 EXACTLY matches the mojibaked "10-7"
+  ratio as dropped-digit 10^-37 -> mean = -6.05e7 N (consistent
+  with all FUBii family magnitudes); sec-6 "10^217" = drift.
 
-  Li transmutation Q wired at W-L literature 26.9 MeV; honest
-  independent mass-balance through 7Li/8Li/8Be gives 25.38 MeV
-  (5.6 pct below cited) - both carried, ruling requested.
+  KAPPA PRIMITIVE VALIDATED: kappa_MCMC = 0.00052/day (47-system
+  MCMC argmin) = canonical * 1.04, canonical inside 95 pct CI
+  (0.00048, 0.00056) - retained. First ensemble-level validation
+  of a registry primitive in the campaign.
 
-Q-058 queued: k_eta confirm; Li Q-value canonical pick; F_LENR
-6.16e? exponent; omega_LENR == omega_SCm identity reading.
+  Q_wave = B^2/2mu0 chains verified (ISM 3.97e-5, Crab 3.97e-3);
+  magnetar row pinned by chain: B = 4.4e10 T = the PAPER_001/002
+  B_crit -> Q = 7.68e26 J/m3 (printed 7.70 mantissa matches).
+  Links to open Q-002.
 
-Gate 474 assertions 0 failures. Registry 196 rows / 376 edges / 66
-citation ledgers. Wired 66/2,255 (10 clean, 56 OPEN_RULING).
-Next: PAPER_063.
+  Leptokurtic residual suite wired as stated (SW p=0.00055 reject,
+  KS p=0.741 cannot -> fat tails, log-normal, bootstrap 3 pct).
+
+Q-059 queued: mean pin; x_2 exponent (abstract e-7 vs sec-2 e172,
+stability claim requires large); magnetar B_crit identification;
+Planck-ratio 10^-37 reading.
+
+Gate 481 assertions 0 failures. Registry 199 rows / 382 edges / 67
+citation ledgers. Wired 67/2,255 (10 clean, 57 OPEN_RULING).
+Next: PAPER_064.

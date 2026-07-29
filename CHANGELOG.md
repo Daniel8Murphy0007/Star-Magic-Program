@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.66.0] — 2026-07-29 — BAND 1: PAPER_063
+
+### Added
+- **PAPER_063 dispatch** (F_U_Bi_i Master Integral): three canonical
+  forms (C-1 galactic / C-2 resonant TRZ / Master all-scales) +
+  52-system ensemble. Ensemble mean PINNED at -6.05e7 N by exact
+  Planck-ratio closure (6.05e7/1.21e44 = 5.0e-37 — the table's
+  "10-7" is a dropped-digit 10^-37); section-6 "10^217" marked as
+  drift candidate. Q_wave = B^2/2mu0 chains verified (ISM/Crab);
+  magnetar row pinned at B = 4.4e10 T = the PAPER_001/002 B_crit.
+  Leptokurtic residual suite wired as stated (SW reject / KS
+  cannot; log-normal recommended; bootstrap 3 pct robust).
+- **KAPPA primitive VALIDATED:** kappa_MCMC = 0.00052/day over 47
+  systems; canonical 0.0005 inside 95 pct CI (0.00048, 0.00056),
+  retained. First ensemble-level validation of a registry
+  primitive in the campaign.
+- OPEN_RULING Q-059 (mean pin; x_2 exponent e-7 vs e172; magnetar
+  B_crit identification; Planck-ratio reading).
+- Gate: 481 assertions, 0 failures. Registry: 199 rows / 382 edges / 67 ledgers.
+
+---
+
 ## [0.65.0] — 2026-07-29 — BAND 1: PAPER_062
 
 ### Added

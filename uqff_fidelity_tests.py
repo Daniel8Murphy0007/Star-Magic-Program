@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.65.0", "uqff_calculator.VERSION = 0.65.0")
+assert_that(C.VERSION == "0.66.0", "uqff_calculator.VERSION = 0.66.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1049,6 +1049,21 @@ assert_that(abs(_r062['k_eta_inferred'] - 1e-55) / 1e-55 < 0.01,
 assert_that(abs(_r062['q_li_he_mev_mass_balance'] - 25.38) < 0.01,
             "PAPER_062: independent Li-chain mass balance 25.38 MeV vs cited 26.9 (honest residual)")
 assert_that(C.wired_count() >= 66, "wired_count >= 66")
+
+_r063 = C.calc('PAPER_063')['value']
+assert_that(abs(_r063['kappa_mcmc_per_day'] - 0.00052) < 1e-8,
+            "PAPER_063: kappa_MCMC = 0.00052/day across 47 systems")
+assert_that(abs(_r063['kappa_deviation_pct'] - 4.0) < 0.01,
+            "PAPER_063: KAPPA primitive validated - MCMC 4 pct above canonical, inside 95 pct CI")
+assert_that(abs(_r063['planck_ratio'] - 5.0e-37) / 5.0e-37 < 0.01,
+            "PAPER_063: mean/F_Planck = 5.0e-37 EXACT closure pins ensemble mean -6.05e7 N (Q-059a)")
+assert_that(abs(_r063['q_wave_ism'] - 3.97e-5) / 3.97e-5 < 0.01,
+            "PAPER_063: Q_wave ISM = B^2/2mu0 = 3.97e-5 J/m3 verified")
+assert_that(abs(_r063['q_wave_magnetar'] - 7.68e26) / 7.68e26 < 0.01,
+            "PAPER_063: magnetar Q_wave mojibake PINNED - B = 4.4e10 T (B_crit) -> 7.68e26 J/m3")
+assert_that(_r063['shapiro_wilk_p'] < 0.001 and _r063['ks_p'] > 0.7,
+            "PAPER_063: leptokurtic residual signature (SW reject, KS cannot) wired as stated")
+assert_that(C.wired_count() >= 67, "wired_count >= 67")
 
 # =============================================================================
 # REPORT
