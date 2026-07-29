@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 114 (11 ✓, 103 ⚠ OPEN_RULING)
+- **Wired:** 115 (11 ✓, 104 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2141
+- **Not yet touched:** 2140
 
 ---
 
@@ -271,7 +271,7 @@
 | ⬜ | PAPER_1117 | SCS Spectral Signatures Radio FRB |
 | ⬜ | PAPER_1118 | Chiral SCm Graphene Pairing Level10 |
 | ⬜ | PAPER_1119 | Lorentz Regauging Vacuum Energy Heaviside |
-| ⬜ | PAPER_111 | EP01 Chandra RACS NaivierStokes Proof |
+| ⚠ | PAPER_111 | EP01 Chandra RACS NaivierStokes Proof |
 | ⬜ | PAPER_1120 | Higgs Production Decay Mode Breakdown |
 | ⬜ | PAPER_1120 | UPDATE Higgs BRs Locked Primitives |
 | ⬜ | PAPER_1121 | Interstellar Shock Prestellar Collapse Molecules |

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.114.0] — 2026-07-29 — BAND 1: PAPER_111
+
+### Added
+- **PAPER_111 dispatch** (EP-01: RACS J0320-35 One-Sided Jet):
+  the cos(omega·t_n) sign-reversal asymmetry mechanism —
+  half-period counter-jet offset gives opposite buoyancy signs
+  (one jet enhanced, one suppressed), complementary to Doppler.
+  Cos-scan chains ALL EXACT (3.179/1.249/1.217). Honest gap:
+  the scan tops at 1.217 and the [SSq]-series closure to R =
+  1.50 is asserted without computation — OPEN. Dissipation
+  TRIPLE DEFECT corrected: chain gives 8.57e17 s = 27 Gyr
+  (printed 2.8e14 s and 9 Gyr are mutually inconsistent);
+  exceeds-Hubble conclusion robust. nu_eff = 1.0099 cross-
+  consistent with PAPER_102; the broken 089 U_bi footer recurs
+  verbatim (template-injection note).
+- OPEN_RULING Q-107.
+- Gate: 786 assertions, 0 failures. Registry: 302 rows / 630 edges / 115 ledgers.
+
+---
+
 ## [0.113.0] — 2026-07-29 — BAND 1: PAPER_110 — 1.894 ORIGIN CANDIDATE
 
 ### Added

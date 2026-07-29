@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.113.0", "uqff_calculator.VERSION = 0.113.0")
+assert_that(C.VERSION == "0.114.0", "uqff_calculator.VERSION = 0.114.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1714,6 +1714,19 @@ assert_that(abs(_r110['v_c_error_pct'] - 0.85) < 0.01,
 assert_that(_r110['kappa_decay_exponent'] > 8e8,
             "PAPER_110: kappa full-decay chain EXACT - Q-094d/Q-098 doctrine support")
 assert_that(C.wired_count() >= 114, "wired_count >= 114")
+
+_r111 = C.calc('PAPER_111')['value']
+assert_that(abs(_r111['cos_scan'][0.25] - 1.217) < 0.001,
+            "PAPER_111: cos-scan chains ALL EXACT (1.217/1.249/3.179)")
+assert_that('ASSERTED' in _r111['series_claim'],
+            "PAPER_111: R = 1.50 series closure asserted without computation - OPEN (Q-107a)")
+assert_that(abs(_r111['tau_dissip_chain_gyr'] - 27.2) < 0.5,
+            "PAPER_111: dissipation chain 27 Gyr - printed (2.8e14 s, 9 Gyr) triple defect (Q-107b)")
+assert_that(_r111['nu_eff_factor'] == 1.0099,
+            "PAPER_111: nu_eff = nu*1.0099 - PAPER_102 cross-consistent")
+assert_that(abs(_r111['doppler_bc_chain'] - 0.081) < 0.001,
+            "PAPER_111: Doppler beta*cos chain 0.081 vs printed 0.091 pinned (Q-107c)")
+assert_that(C.wired_count() >= 115, "wired_count >= 115")
 
 # =============================================================================
 # REPORT

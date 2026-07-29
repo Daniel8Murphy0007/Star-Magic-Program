@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.113.0"
-description = "UQFF Star-Magic-Program v0.113.0: PAPER_110 wired - EP-06 Gaia SgrA* anchors (M_BH 0.07 pct vs S2; rotation curve 0.85 pct EXACT; kappa full-decay chain EXACT as 3rd doctrine data point; three-way d_g conflict pinned; MAJOR - Ug4 = 1.8937e-23 is the strongest origin candidate yet for the predecessor corpus 1.894 unknown-origin artifact, cross-repo annotation queued). Q-106 queued. Wired 114/2255, gate 780/0. Registry 300 rows / 625 edges / 114 ledgers."
+version = "0.114.0"
+description = "UQFF Star-Magic-Program v0.114.0: PAPER_111 wired - EP-01 jet asymmetry (cos sign-reversal mechanism with all scan chains EXACT; R = 1.50 series closure asserted-not-computed, OPEN; dissipation triple defect corrected to 27 Gyr with robust conclusion; nu_eff 102-consistent; 089-footer template recurrence noted). Q-107 queued. Wired 115/2255, gate 786/0. Registry 302 rows / 630 edges / 115 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

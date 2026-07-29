@@ -2039,6 +2039,30 @@ RESOLVED section with the ruling recorded.
   candidate flagged; three-way distance carried.
 - **Daniel's ruling:** (pending)
 
+### Q-107 — PAPER_111 EP-01 — series assertion + dissipation triple defect
+- **Question:** (a) The R = 1.5 jet asymmetry: the in-paper
+  cos-scan tops out at 1.217 (all scan chains EXACT), and the
+  claimed [SSq]-weighted series closure "R = 1.50 +/- 0.05" is
+  ASSERTED without omega_i values or computation - provide the
+  series, or mark R = 1.5 as calibrated? (b) DISSIPATION TRIPLE
+  DEFECT: printed (2.8e14 s, 9 Gyr) are mutually inconsistent
+  (2.8e14 s = 8.9 kyr), and the chain tau = (30 kpc)^2 / 1e28
+  cm2/s = 8.57e17 s = 27 Gyr differs from both; the
+  exceeds-Hubble-time conclusion is ROBUST under the corrected
+  27 Gyr - pin. (c) Doppler beta*cos(theta): chain 0.081 vs
+  printed 0.091 (12 pct, index-rounding sensitivity).
+  (d) The broken 089-footer U_bi chain RECURS verbatim here
+  (Q-085a) - the footer appears to be template-injected;
+  template-audit note.
+- **Notable:** the sign-reversal mechanism itself is clean
+  physics (half-period offset -> opposite buoyancy signs, one
+  jet enhanced/one suppressed, complementary to Doppler);
+  nu_eff = 1.0099 cross-consistent with PAPER_102; nu_ICM
+  pinned at the real 1e28 cm2/s scale.
+- **Best-candidate wired:** mechanism + exact scan chains +
+  corrected dissipation; series assertion OPEN.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

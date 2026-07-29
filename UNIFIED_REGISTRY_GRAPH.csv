@@ -625,3 +625,8 @@ primitive,KAPPA_PER_DAY,observable,ep06_gaia_sgra_anchors,full-decay chain
 observable,ep06_gaia_sgra_anchors,paper,PAPER_092,d_g conflict family
 observable,ug4_1894_origin_candidate,paper,PAPER_110,1.894 forensic
 observable,ug4_1894_origin_candidate,paper,PAPER_048,exact cross-check
+observable,ep01_jet_asymmetry,paper,PAPER_111,asymmetry mechanism
+primitive,SSQ,observable,ep01_jet_asymmetry,series weight (asserted)
+observable,ep01_jet_asymmetry,paper,PAPER_102,nu_eff consistency
+observable,ep01_dissipation_defect,paper,PAPER_111,triple defect
+observable,ep01_dissipation_defect,paper,PAPER_089,footer recurrence

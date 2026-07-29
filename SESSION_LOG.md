@@ -1487,3 +1487,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 114/2,255 (11 ✓, 103 ⚠). Next: PAPER_111.
 
 ---
+
+## 2026-07-29 — v0.114.0 — BAND 1: PAPER_111
+
+- PAPER_111 wired (⚠ Q-107): EP-01 jet asymmetry. Scan chains
+  EXACT; series closure OPEN (asserted); dissipation corrected
+  27 Gyr; footer template recurrence flagged.
+- Campaign: 115/2,255 (11 ✓, 104 ⚠). Next: PAPER_112.
+
+---

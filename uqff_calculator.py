@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.113.0"
+VERSION = "0.114.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5785,5 +5785,62 @@ def _paper_110(dataset):
                     'eps_UQFF = Ug4*r^2/(GM c^2)'),
         'source': 'PAPER_110',
         'residual_pct': abs(4.3e6 - 4.297e6) / 4.297e6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_111')
+def _paper_111(dataset):
+    """EP-01: RACS J0320-35 One-Sided Jet - cos(w t_n) Asymmetry (Session 0).
+
+    EP compendium: jet brightness asymmetry R ~ 1.5 via the
+    cos(omega*t_n) SIGN REVERSAL between primary and counter-jet
+    (half-period offset -> opposite buoyancy signs: one jet
+    enhanced, one suppressed) - complementary to Doppler
+    boosting, wired as the UQFF intrinsic-asymmetry mechanism.
+    COS-SCAN CHAINS ALL EXACT: cos(1.0)/cos(1.4) = 3.179;
+    cos(0.3)/cos(0.7) = 1.249; cos(0.25)/cos(0.65) = 1.217.
+    HONEST GAP (Q-107a): the in-paper scan tops out at 1.217;
+    the claimed [SSq]-weighted series closure to R = 1.50+/-0.05
+    is ASSERTED without omega_i values or computation - OPEN
+    (provide series or mark calibrated).
+    DISSIPATION TRIPLE DEFECT (Q-107b): printed (2.8e14 s, 9
+    Gyr) are MUTUALLY inconsistent (2.8e14 s = 8.9 kyr) and both
+    differ from the chain tau = L^2/nu = (30 kpc)^2/1e28 cm2/s =
+    8.57e17 s = 27 Gyr; the exceeds-Hubble-time conclusion is
+    ROBUST under the corrected 27 Gyr.
+    Doppler cross-check: beta*cos(theta) chain 0.081 vs printed
+    0.091 (12 pct, index-rounding sensitivity, Q-107c).
+    nu_eff = nu*1.0099 - PAPER_102 cross-consistent; nu_ICM
+    pinned 1e28 cm2/s (real ICM scale). The broken 089-footer
+    U_bi chain RECURS verbatim (Q-085a same defect).
+    """
+    import math as _m
+    tau_chain_s = (30 * 3.086e19 * 100) ** 2 / 1e28
+    return {
+        'value': {
+            'domain': '1.15 (EP-01 jet asymmetry)',
+            'source': 'RACS J0320-35 (Chandra + ASKAP RACS)',
+            'r_observed': 1.5,
+            'mechanism': 'cos(omega t_n) sign reversal (half-period counter-jet offset)',
+            'cos_scan': {1.0: _m.cos(1.0) / _m.cos(1.4),
+                         0.3: _m.cos(0.3) / _m.cos(0.7),
+                         0.25: _m.cos(0.25) / _m.cos(0.65)},   # all EXACT
+            'scan_max': 1.217,
+            'series_claim': 'R = 1.50 +/- 0.05 via SSq-weighted series - ASSERTED, OPEN',
+            'doppler_bc_chain': ((1.5) ** (1 / 2.5) - 1) / ((1.5) ** (1 / 2.5) + 1),  # 0.081
+            'doppler_bc_printed': 0.091,
+            'tau_dissip_chain_s': tau_chain_s,             # 8.57e17 = 27 Gyr
+            'tau_dissip_chain_gyr': tau_chain_s / 3.156e7 / 1e9,
+            'tau_printed': (2.8e14, 9.0),                  # mutually inconsistent
+            'conclusion_robust': 'exceeds Hubble time under corrected 27 Gyr',
+            'nu_eff_factor': 1.0099,                       # 102 cross-consistent
+            'nu_icm_cm2_s': 1e28,
+            'footer_recurrence': '089 broken U_bi footer verbatim (Q-085a)',
+        },
+        'formula': ('U_bi_jet = rho*g*h*cos(omega t_n); R from sign reversal; '
+                    'tau = L^2/nu_eff'),
+        'source': 'PAPER_111',
+        'residual_pct': abs(_m.cos(0.25) / _m.cos(0.65) - 1.217) / 1.217 * 100,
         'status': 'OPEN_RULING',
     }

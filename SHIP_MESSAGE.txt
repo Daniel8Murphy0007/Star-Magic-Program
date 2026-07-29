@@ -1,31 +1,30 @@
-v0.113.0 BAND 1: PAPER_110 wired - 1.894 ORIGIN CANDIDATE FOUND
+v0.114.0 BAND 1: PAPER_111 wired - EP-01 JET SIGN-REVERSAL MECHANISM
 
-PAPER_110 EP-06 Gaia SgrA* Distance/Mass Validation
-(OPEN_RULING Q-106):
-  Gaia anchors: M_BH = 4.3e6 Msun at 0.07 pct vs GRAVITY S2
-  orbit (excellent); rotation curve v_c 238 vs 236 km/s =
-  0.85 pct EXACT; kappa full-decay chain EXACT at 4.5 Gyr
-  (e^-8.2e8 ~ 0) - the paper accepts complete field decay and
-  lets Ug4+MUGE dominate: a THIRD corpus data point for the
-  kappa field-vs-cosmology doctrine (087 viscous + 098
-  cosmological + 110 galactic).
+PAPER_111 EP-01 RACS J0320-35 One-Sided Jet (OPEN_RULING Q-107):
+  Jet brightness asymmetry R ~ 1.5 via the cos(omega t_n) SIGN
+  REVERSAL: half-period counter-jet offset -> opposite buoyancy
+  signs (one jet enhanced, one suppressed) - the UQFF intrinsic
+  asymmetry mechanism, complementary to Doppler boosting.
 
-  THREE-WAY d_g CONFLICT: EP-06 2.44e20 / Gaia 2.55e20 /
-  SOURCE4 2.62e20 m - bracketing Gaia +/-4 pct; canonical pin
-  requested for all SgrA* wiring.
+  COS-SCAN CHAINS ALL EXACT: cos(1.0)/cos(1.4) = 3.179;
+  cos(0.3)/cos(0.7) = 1.249; cos(0.25)/cos(0.65) = 1.217.
 
-  MAJOR CROSS-REPO FORENSIC: Ug4(Sun-SgrA*) = 1.8937e-23 N/m2,
-  cross-checked EXACT to PAPER_048 - the 1.894 MANTISSA matches
-  the predecessor Star-Magic corpus's unknown-origin VDS
-  artifact (PAPER_2156 open item). STRONGEST origin candidate
-  found to date. Per the no-retrofit rule: no canonization
-  without derivation, but cross-repo annotation queued for the
-  predecessor's open-item ledger.
+  HONEST GAP: the in-paper scan tops out at 1.217; the
+  [SSq]-weighted series closure to R = 1.50 +/- 0.05 is ASSERTED
+  without omega_i values or computation - OPEN (provide the
+  series or mark R = 1.5 calibrated).
 
-  Defects: g_Newton at 5 mpc x1000 exponent slip (mantissa 2.40
-  matches; chain 2.40e-2); eps_UQFF chain 7.9e-22 vs printed
-  6.3e-6 (undetectability conclusion robust either way).
+  DISSIPATION TRIPLE DEFECT: printed (2.8e14 s, 9 Gyr) are
+  mutually inconsistent (2.8e14 s = 8.9 kyr); the chain
+  tau = (30 kpc)^2 / 1e28 cm2/s = 8.57e17 s = 27 Gyr differs
+  from both - the exceeds-Hubble-time conclusion is ROBUST
+  under the corrected 27 Gyr.
 
-Q-106 queued. Gate 780 assertions 0 failures. Registry 300 rows /
-625 edges / 114 citation ledgers. Wired 114/2,255 (11 clean, 103
-OPEN_RULING). Next: PAPER_111.
+  nu_eff = nu*1.0099 cross-consistent with PAPER_102; nu_ICM
+  pinned 1e28 cm2/s (real scale); Doppler chain 0.081 vs
+  printed 0.091; the broken 089 U_bi footer RECURS verbatim -
+  template-injection audit note.
+
+Q-107 queued. Gate 786 assertions 0 failures. Registry 302 rows /
+630 edges / 115 citation ledgers. Wired 115/2,255 (11 clean, 104
+OPEN_RULING). Next: PAPER_112.
