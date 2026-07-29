@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.105.0"
-description = "UQFF Star-Magic-Program v0.105.0: PAPER_102 wired (Navier-Stokes Millennium 2: nu_eff = 1.0099 EXACT with honest non-rigor labeling; FORK TWIST - the first drift-favoring observable (canonical +9.9 pct viscosity excluded in lab fluids), context-dependence evidence for the joint f_TRZ ruling; 1.25-THz phonon UV cutoff for turbulence; enstrophy-cap relation queued). Q-098 queued. Wired 106/2255, gate 731/0. Registry 286 rows / 584 edges / 106 ledgers."
+version = "0.106.0"
+description = "UQFF Star-Magic-Program v0.106.0: PAPER_103 wired (Riemann Millennium 3: Hilbert-Polya via T-symmetric 5-freq Hamiltonian; first-5 zero anchors literature-EXACT; Rule-7 exemplary self-labeled numerology; harmonic bridge 4.1667e9 EXACT; KK 4+22 = D_crit; t_10000 canonical relation queued). Q-099 queued. Wired 107/2255, gate 737/0. Registry 287 rows / 589 edges / 107 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

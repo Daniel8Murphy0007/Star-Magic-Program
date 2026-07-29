@@ -1855,6 +1855,26 @@ RESOLVED section with the ruling recorded.
   documented; S204 layer chains; enstrophy relation queued.
 - **Daniel's ruling:** (pending)
 
+### Q-099 — PAPER_103 — sec-3 arithmetic + canonical relation + 300-Hz provenance
+- **Question:** (a) The sec-3 critical-line relation chain gives
+  0.57 - 0.57^2/4 = 0.4888, printed 0.50 via a rounded -0.07 -
+  the paper already self-labels it "numerological coincidence";
+  strike or repair? (b) The later-corpus canonical Riemann
+  closure is t_10000 = 9877.78265 EXACT (predecessor gate) -
+  what is its relation to this S0 spectral-operator layer
+  (supersession or complementary Hilbert-Polya motivation)?
+  (c) The S204 harmonic bridge 1.25e12/300 = 4.1667e9 EXACT -
+  provenance of the 300-Hz activation frequency? (d) The open
+  direction (dimensional matching of the 5 UQFF frequencies to
+  gamma_1..5) - keep open or close via a later paper?
+- **Notable:** first-five zero anchors literature-EXACT;
+  T-symmetry Wigner argument structurally clean; Rule-7
+  exemplary self-labeling throughout; KK 4+22 = D_crit; GUE-vs-
+  Gaussian pair-correlation comparison recorded.
+- **Best-candidate wired:** anchors + structure + honest labels;
+  canonical relation queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -584,3 +584,8 @@ primitive,F_TRZ,observable,navier_stokes_regularization,fork twist
 observable,navier_stokes_regularization,paper,PAPER_090,d_fluid term basis
 observable,ns_lenr_body_force,paper,PAPER_102,S204 layer
 primitive,OMEGA_SCM_HZ,observable,ns_lenr_body_force,UV cutoff
+observable,riemann_spectral_framework,paper,PAPER_103,Millennium 3
+primitive,SSQ,observable,riemann_spectral_framework,4/7 proximity note
+primitive,D_CRIT,observable,riemann_spectral_framework,KK split
+primitive,OMEGA_SCM_HZ,observable,riemann_spectral_framework,harmonic bridge
+observable,riemann_spectral_framework,paper,PAPER_091,5-frequency source

@@ -1408,3 +1408,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 106/2,255 (10 ✓, 96 ⚠). Next: PAPER_103.
 
 ---
+
+## 2026-07-29 — v0.106.0 — BAND 1: PAPER_103
+
+- PAPER_103 wired (⚠ Q-099): Riemann. Anchors EXACT; honest
+  self-labeling; bridge chain EXACT; canonical t_10000 relation
+  queued.
+- Campaign: 107/2,255 (10 ✓, 97 ⚠). Next: PAPER_104.
+
+---

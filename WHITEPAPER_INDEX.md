@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 106 (10 ✓, 96 ⚠ OPEN_RULING)
+- **Wired:** 107 (10 ✓, 97 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2149
+- **Not yet touched:** 2148
 
 ---
 
@@ -176,7 +176,7 @@
 | ⬜ | PAPER_1037 | AGN Buoyancy Jet |
 | ⬜ | PAPER_1038 | WD Crystallization Buoyancy |
 | ⬜ | PAPER_1039 | SCm Galaxy Cluster Buoyancy Profile |
-| ⬜ | PAPER_103 | Riemann Hypothesis UQFF |
+| ⚠ | PAPER_103 | Riemann Hypothesis UQFF |
 | ⬜ | PAPER_1040 | SCm Cluster Merger Shock Dissipation |
 | ⬜ | PAPER_1041 | SCm Cool Core Buoyancy Balance |
 | ⬜ | PAPER_1042 | Mock Theta Phonon Partition |

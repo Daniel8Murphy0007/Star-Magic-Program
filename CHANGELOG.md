@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.106.0] — 2026-07-29 — BAND 1: PAPER_103
+
+### Added
+- **PAPER_103 dispatch** (Riemann Hypothesis, Millennium 3):
+  Hilbert-Polya program via the T-symmetric 5-frequency UQFF
+  Hamiltonian; Re(s) = 1/2 from Wigner T-symmetry. First-five
+  zero anchors match literature EXACTLY. **Rule-7 exemplary:**
+  the paper self-labels its SSq relation "numerological
+  coincidence" and the whole connection "speculative". S204
+  chains: harmonic bridge 1.25e12/300 = 4.1667e9 EXACT; KK tower
+  4+22 = D_crit; GUE-vs-Gaussian comparison recorded. Sec-3
+  0.4888-vs-0.50 arithmetic + later-corpus t_10000 canonical
+  relation + 300-Hz provenance queued.
+- OPEN_RULING Q-099.
+- Gate: 737 assertions, 0 failures. Registry: 287 rows / 589 edges / 107 ledgers.
+
+---
+
 ## [0.105.0] — 2026-07-29 — BAND 1: PAPER_102
 
 ### Added

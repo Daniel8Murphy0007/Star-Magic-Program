@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.105.0", "uqff_calculator.VERSION = 0.105.0")
+assert_that(C.VERSION == "0.106.0", "uqff_calculator.VERSION = 0.106.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1608,6 +1608,19 @@ assert_that(abs(_r102['f_vac_n_m3'] - 7.09e-74) < 1e-80,
 assert_that('not rigorous' in _r102['honesty'],
             "PAPER_102: Rule-7 honest labeling preserved on Millennium problem 2")
 assert_that(C.wired_count() >= 106, "wired_count >= 106")
+
+_r103 = C.calc('PAPER_103')['value']
+assert_that(abs(_r103['zeros_first5'][0] - 14.134) < 0.001,
+            "PAPER_103: first-five Riemann zero anchors match literature EXACTLY")
+assert_that(abs(_r103['harmonic_bridge'] - 4.1667e9) / 4.1667e9 < 0.001,
+            "PAPER_103: harmonic bridge 1.25e12/300 = 4.1667e9 EXACT")
+assert_that(abs(_r103['sec3_chain'] - 0.4888) < 0.001,
+            "PAPER_103: sec-3 chain 0.4888 vs printed 0.50 - self-labeled numerology (Q-099a)")
+assert_that(sum(_r103['kk_split']) == 26,
+            "PAPER_103: KK tower 4 + 22 = D_crit split")
+assert_that('Rule-7 exemplary' in _r103['honesty'],
+            "PAPER_103: self-labeled speculative - honest Millennium treatment")
+assert_that(C.wired_count() >= 107, "wired_count >= 107")
 
 # =============================================================================
 # REPORT

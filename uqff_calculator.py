@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.105.0"
+VERSION = "0.106.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5364,5 +5364,51 @@ def _paper_102(dataset):
                     'NS + F_LENR*cos(omega_LENR t) body force'),
         'source': 'PAPER_102',
         'residual_pct': abs((1 + 0.99 * 0.01) - 1.0099) / 1.0099 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_103')
+def _paper_103(dataset):
+    """Riemann Hypothesis Spectral Framework - Millennium 3 (Session 0+).
+
+    Hilbert-Polya program via the T-symmetric 5-frequency UQFF
+    Hamiltonian: zeros' imaginary parts as eigenfrequencies;
+    Re(s) = 1/2 from time-reversal symmetry (Wigner).
+    RULE-7 EXEMPLARY: the paper ITSELF labels its SSq-critical-
+    line relation "a numerological coincidence (not a proof)"
+    and the whole connection "speculative, not a proof".
+    ANCHORS EXACT: the first five zeros (14.134/21.022/25.011/
+    30.425/32.935) ALL match literature; the 5-frequency
+    dimensional matching is the honest open direction.
+    ARITHMETIC NOTE (Q-099a): the sec-3 chain gives 0.57 -
+    0.57^2/4 = 0.4888, printed 0.50 via a rounded -0.07 - low
+    stakes (self-labeled numerology), strike-or-repair ruling.
+    LATER-CORPUS CANONICAL (Q-099b): the Riemann Millennium
+    closure is t_10000 = 9877.78265 EXACT (predecessor gate) -
+    relation to this spectral-operator layer queued.
+    S204 chains: harmonic bridge 1.25e12/300 = 4.1667e9 EXACT
+    (300-Hz activation provenance queued); KK tower 26 = 4 + 22
+    (D_crit split); Montgomery-Odlyzko GUE vs UQFF Gaussian
+    decorrelation comparison recorded.
+    """
+    zeros = (14.134, 21.022, 25.011, 30.425, 32.935)
+    return {
+        'value': {
+            'domain': '1.13 (Millennium: Riemann)',
+            'zeros_first5': zeros,                         # literature EXACT
+            'canonical_closure': 't_10000 = 9877.78265 EXACT (later corpus)',
+            'ssq_vs_4_7_pct': abs(0.57 - 4 / 7) / (4 / 7) * 100,   # 0.25
+            'sec3_chain': 0.57 - 0.57 ** 2 / 4,            # 0.4888 vs printed 0.50
+            'harmonic_bridge': 1.25e12 / 300,              # 4.1667e9 EXACT
+            'kk_split': (4, 22),                           # sums to D_crit
+            'mechanism': 'T-symmetric 5-freq Hamiltonian (Hilbert-Polya)',
+            'honesty': 'self-labeled numerological coincidence / speculative - Rule-7 exemplary',
+            'open_direction': '5-frequency dimensional matching to gamma_n',
+        },
+        'formula': ('H_UQFF = Sum omega_k a+a + Ug4 V; Re(s) = 1/2 from T-symmetry; '
+                    'bridge n = omega_LENR/omega_act = 4.1667e9'),
+        'source': 'PAPER_103',
+        'residual_pct': abs(0.57 - 4 / 7) / (4 / 7) * 100,
         'status': 'OPEN_RULING',
     }

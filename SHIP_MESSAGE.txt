@@ -1,29 +1,29 @@
-v0.105.0 BAND 1: PAPER_102 wired - FORK TWIST FAVORS DRIFT IN LAB FLUIDS
+v0.106.0 BAND 1: PAPER_103 wired - RIEMANN ANCHORS EXACT + HONEST LABELS
 
-PAPER_102 Navier-Stokes Existence and Smoothness (OPEN_RULING
-Q-098):
-  MILLENNIUM PROBLEM 2. UQFF regularization: nu_eff = nu*(1 +
-  [SCm]*f_TRZ) = nu*1.0099 EXACT - [SCm] > 0 everywhere means no
-  UQFF fluid is truly inviscid -> global-smoothness physical
-  argument (HONESTLY labeled "not a rigorous proof"). Re shift
-  -0.98 pct EXACT.
+PAPER_103 Riemann Hypothesis Spectral Framework (OPEN_RULING
+Q-099):
+  MILLENNIUM PROBLEM 3. Hilbert-Polya program: the zeros'
+  imaginary parts as eigenfrequencies of the T-symmetric
+  5-frequency UQFF Hamiltonian; Re(s) = 1/2 from Wigner
+  T-symmetry.
 
-  FORK TWIST - IMPORTANT FOR THE JOINT RULING: the fifth f_TRZ
-  fork instance is the FIRST where observation favors the DRIFT
-  branch. Canonical F_TRZ would give +9.9 pct effective
-  viscosity - experimentally EXCLUDED in ordinary fluids - while
-  drift 1.0099 is consistent. Strong evidence that the coupling
-  is CONTEXT-DEPENDENT (lab fluids vs astrophysical vacua),
-  which would let both branches be right in their domains.
-  Q-084a annotated.
+  ANCHORS EXACT: gamma_1..5 = 14.134 / 21.022 / 25.011 /
+  30.425 / 32.935 - all match literature.
 
-  S204 layer: f_vac = 1e-38*7.09e-36 = 7.09e-74 N/m3 EXACT
-  (negligible); F_LENR = 1.56e36 N oscillatory at omega_LENR =
-  2*pi*1.25 THz (062-identity-consistent); SPECTRAL CUTOFF above
-  1.25 THz - the phonon carrier as a turbulence UV cutoff;
-  Kolmogorov eta_K = 2.83e-14 m. Later-corpus canonical
-  (enstrophy cap 0.85) relation ruling queued.
+  RULE-7 EXEMPLARY: the paper ITSELF labels the SSq-critical-
+  line relation "a numerological coincidence (not a proof)" and
+  the whole connection "speculative" - honest Millennium
+  treatment throughout.
 
-Q-098 queued. Gate 731 assertions 0 failures. Registry 286 rows /
-584 edges / 106 citation ledgers. Wired 106/2,255 (10 clean, 96
-OPEN_RULING). Next: PAPER_103.
+  S204 chains: harmonic bridge 1.25e12/300 Hz = 4.1667e9 EXACT;
+  KK tower 26 = 4 + 22 (D_crit split); Montgomery-Odlyzko GUE
+  vs UQFF Gaussian decorrelation recorded.
+
+  QUEUED: sec-3 chain 0.4888 vs printed 0.50; relation to the
+  later-corpus canonical closure t_10000 = 9877.78265 EXACT;
+  300-Hz activation provenance; the open 5-frequency
+  dimensional-matching direction.
+
+Q-099 queued. Gate 737 assertions 0 failures. Registry 287 rows /
+589 edges / 107 citation ledgers. Wired 107/2,255 (10 clean, 97
+OPEN_RULING). Next: PAPER_104.
