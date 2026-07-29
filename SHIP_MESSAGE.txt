@@ -1,30 +1,34 @@
-v0.122.0 BAND 1: PAPER_119 wired - 7-SYSTEM REFERENCE + SSq DUAL DEFINITION
+v0.123.0 BAND 1: PAPER_120 wired - 24-SYSTEM CATALOG + B_CRIT FORK
 
-PAPER_119 UQFF 7-System Equation Reference (OPEN_RULING Q-115):
-  Structural reference (sec 1.16) superseding PAPER_064's 4
-  modes with Triadic / Quadratic / Master Buoyancy additions.
-  Full variable tables registered.
+PAPER_120 Complete 24-System Astronomical Catalog (OPEN_RULING
+Q-116):
+  Authoritative parameter catalog: Sun, Westerlund 2, Sgr A*,
+  3C273, RACS J0320-35, 4LAC blazars, GW170817, Pb-206, Hoyle
+  state, SGR 1745-2900, galactic disk, LLAGNs, CR sources,
+  IGM, + transients/clusters/exoplanets. EP-01..12 cross-
+  reference table complete.
 
-  ANCHORS EXACT: M_bh = 8.155e36 kg; d_g = 2.554e20 m;
-  tau_gamma = 54.76 yr; tau_kappa = 5.476 yr; lambda_vac_sw =
-  7.2e-4 J/m3; r_j = 100 AU; T_s sum 1 pct; F_rel = 4.31e33
-  corpus-consistent; GW170817 ejecta 1-beta = 0.397 canonical.
+  VERIFIED EXACT: 100 AU = 1.496e13 m; 8 kpc = 2.469e20 m;
+  1e46 erg/s = 1e39 W; Q_wave_47 stats corpus-consistent;
+  Sgr A* dual d_g HONESTLY disclosed (Gaia 2.44e20 vs UQFF
+  2.55e20, 4.5 pct); GW170817 ejecta 40 pct = 1 - beta_i.
 
-  BROKEN DUAL-FORM: the claimed identity 1e46 =
-  rho_SCm*v_SCm^2/rho_vac_A evaluates to 709 - off by 43
-  ORDERS. E_react anchor itself fine (EP-05 calibrated);
-  the decomposition is not.
+  THREE FORKS PINNED:
+  1. EP-09 THIRD VARIANT: R = |cos/cos|^N here vs PAPER_115
+     cumulative ladder vs PAPER_119 single ratio - Q-111 fork
+     now 3 branches.
+  2. B_CRIT 1e4 FORK: catalog 4.4e13 T "QED critical" vs
+     PAPER_094 Schwinger 4.4e9 T. At the true value magnetars
+     are SUPERCRITICAL (B/B_crit = 2-23) and the g_Magnetar
+     (1-B/B_crit) factor goes negative. Informs Q-002.
+  3. UNIT-DIRECTION DRIFT: DM density "8.4e-25 J/m3" is
+     EXACTLY the g/cm3 mantissa of 0.47 GeV/cm3 (true 7.53e-5
+     J/m3) - PAPER_2147 family.
 
-  SSQ DUAL DEFINITION: System 5 defines [SSq] = log10 density
-  ratio ~ 38; sec 9 lists 0.57. Triadic suppression at n=13
-  forks 5.6e-9 vs 0.752 - EIGHT orders. Ruling decides.
+  Propagations logged: tau_dissip 9 Gyr (Q-107b), omega_g
+  7.3e-16 (Q-115c).
 
-  Also: omega_g 18 pct off own parenthetical; Baktun
-  1/kappa^0.33 numerology fails; beta_i 0.61 drift
-  auto-corrected (PAPER_1203); EP-09 mechanism conflict
-  (single cos-ratio here vs PAPER_115 cumulative ladder) -
-  Q-111 annotated with the fork.
-
-Q-115 queued. Gate 836 assertions 0 failures. Registry 318 rows /
-668 edges / 123 citation ledgers. Wired 123/2,255 (11 clean, 112
-OPEN_RULING). Next: PAPER_120.
+Q-116 queued. Gate 842 assertions 0 failures. Registry 320 rows /
+673 edges / 124 citation ledgers. Wired 124/2,255 (11 clean, 113
+OPEN_RULING). Next: PAPER_121 (SGR 1745-2900 full 50+ term
+magnetar equation).

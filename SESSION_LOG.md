@@ -1574,3 +1574,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 123/2,255 (11 ✓, 112 ⚠). Next: PAPER_120.
 
 ---
+
+## 2026-07-29 — v0.123.0 — BAND 1: PAPER_120
+
+- PAPER_120 wired (⚠ Q-116): 24-system catalog. Conversions
+  EXACT; B_crit 1e4 fork (supercritical at Schwinger value,
+  informs Q-002); EP-09 third variant (Q-111 3 branches); DM
+  density g/cm3-mantissa drift.
+- Campaign: 124/2,255 (11 ✓, 113 ⚠). Next: PAPER_121.
+
+---

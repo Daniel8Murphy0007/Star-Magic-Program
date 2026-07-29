@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.122.0", "uqff_calculator.VERSION = 0.122.0")
+assert_that(C.VERSION == "0.123.0", "uqff_calculator.VERSION = 0.123.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1835,6 +1835,19 @@ assert_that(_r119['triadic_fork'][1] / _r119['triadic_fork'][0] > 1e8,
 assert_that(abs(_r119['ejecta_fraction'] - 0.3971) < 0.0001,
             "PAPER_119: GW170817 ejecta 1 - BETA_I = 0.3971 at canonical beta")
 assert_that(C.wired_count() >= 123, "wired_count >= 123")
+
+_r120 = C.calc('PAPER_120')['value']
+assert_that(_r120['n_systems'] == 24 and _r120['n_qwave_superset'] == 47,
+            "PAPER_120: 24-system catalog registered (47-system Q_wave superset)")
+assert_that(abs(_r120['l_3c273_w'] - 1e39) < 1e30,
+            "PAPER_120: 1e46 erg/s = 1e39 W conversion EXACT")
+assert_that(_r120['b_crit_fork'] == (4.4e13, 4.4e9) and _r120['b_over_bcrit_schwinger'][0] > 1,
+            "PAPER_120: B_crit 1e4 fork - catalog 4.4e13 vs PAPER_094 Schwinger 4.4e9; magnetar supercritical at true value (Q-116b, informs Q-002)")
+assert_that('g/cm3 mantissa' in _r120['dm_density_drift'],
+            "PAPER_120: DM density unit-direction drift pinned (Q-116c, PAPER_2147 family)")
+assert_that(abs(_r120['ejecta_fraction'] - 0.3971) < 0.0001,
+            "PAPER_120: GW170817 ejecta 1 - BETA_I canonical")
+assert_that(C.wired_count() >= 124, "wired_count >= 124")
 
 # =============================================================================
 # REPORT

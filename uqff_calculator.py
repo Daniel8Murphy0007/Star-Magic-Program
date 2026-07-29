@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.122.0"
+VERSION = "0.123.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6290,5 +6290,61 @@ def _paper_119(dataset):
         'formula': 'F_U master + 7 system decompositions (reference tables)',
         'source': 'PAPER_119',
         'residual_pct': abs((1.27e3 + 1.11e7) - 1.123e7) / 1.123e7 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_120')
+def _paper_120(dataset):
+    """UQFF 24-System Astronomical Catalog (Session 0, sec 1.16).
+
+    Authoritative parameter catalog for the 24 systems used in
+    UQFF calculations, cross-referenced to EP-01..EP-12.
+    VERIFIED EXACT: R_b = 100 AU = 1.496e13 m; 8 kpc =
+    2.469e20 m; 3C273 1e46 erg/s = 1e39 W; Q_wave_47 stats
+    consistent (mean 3.97e4, std 5.11e4, JB 8.78); Sgr A* dual
+    d_g HONESTLY disclosed (Gaia 2.44e20 vs UQFF 2.55e20,
+    4.5 pct); GW170817 ejecta 40 pct = 1 - beta_i.
+    EP-09 THIRD VARIANT (Q-116a): catalog writes R =
+    |cos(t_n1)/cos(t_n2)|^N with N = 13 - a THIRD mechanism
+    form (PAPER_115: (1+SSq<cos>)^N; PAPER_119: single
+    cos-ratio; here: cos-ratio^N). Q-111 fork now 3 branches.
+    B_CRIT FORK (Q-116b): magnetar section uses B_crit =
+    4.4e13 T "QED critical" - but the QED Schwinger field is
+    4.4e9 T (PAPER_094 canonized). 1e4 fork: at 4.4e13 the
+    magnetar is subcritical (B/B_crit ~ 1e-3, (1-B/B_crit)
+    positive); at the true 4.4e9, B/B_crit = 2-23 SUPER-
+    critical, breaking the g_Magnetar (1-B/B_crit) factor.
+    Informs Q-002 (the original B_crit unit inconsistency).
+    UNIT-DIRECTION DRIFT (Q-116c): DM density printed
+    "8.4e-25 J/m3" is EXACTLY the g/cm3 mantissa of 0.47
+    GeV/cm3 (8.38e-25 g/cm3; true J/m3 = 7.53e-5) - PAPER_2147
+    family, sibling of Q-114a.
+    PROPAGATIONS: tau_dissip = 9 Gyr repeats PAPER_111's
+    defective print (Q-107b chain: 27 Gyr); omega_g = 7.3e-16
+    repeats (Q-115c chain: 8.9e-16).
+    """
+    return {
+        'value': {
+            'domain': '1.16 (24-system catalog)',
+            'n_systems': 24,
+            'n_qwave_superset': 47,
+            'r_b_m': 100 * 1.496e11,                        # EXACT
+            'r_8kpc_m': 8 * 3.086e19,                       # 2.469e20 EXACT
+            'l_3c273_w': 1e46 * 1e-7,                       # 1e39 EXACT
+            'qwave_stats': (3.97e4, 5.11e4, 8.78, 0.012),
+            'd_g_dual': (2.44e20, 2.55e20),                 # honest disclosure
+            'ejecta_fraction': 1 - BETA_I,                  # 0.397
+            'ep09_third_variant': '|cos/cos|^N here vs cumulative ladder (115) vs single ratio (119)',
+            'b_crit_fork': (4.4e13, 4.4e9),                 # catalog vs PAPER_094 Schwinger
+            'b_over_bcrit_catalog': (1e10 / 4.4e13, 1e11 / 4.4e13),   # subcritical
+            'b_over_bcrit_schwinger': (1e10 / 4.4e9, 1e11 / 4.4e9),   # SUPERCRITICAL
+            'dm_density_drift': '8.4e-25 "J/m3" is the g/cm3 mantissa (0.47 GeV/cm3 = 8.38e-25 g/cm3 = 7.53e-5 J/m3)',
+            'propagations': ('tau_dissip 9 Gyr (Q-107b)', 'omega_g 7.3e-16 (Q-115c)'),
+            'catalog_papers': 'EP cross-reference table: 24 systems -> PAPER_107..119',
+        },
+        'formula': 'catalog reference: parameters + equation assignments per system',
+        'source': 'PAPER_120',
+        'residual_pct': abs(8 * 3.086e19 - 2.47e20) / 2.47e20 * 100,
         'status': 'OPEN_RULING',
     }

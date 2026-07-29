@@ -668,3 +668,8 @@ observable,uqff_7system_reference,paper,PAPER_064,supersession
 primitive,BETA_I,observable,uqff_7system_reference,ejecta 1-beta
 primitive,SSQ,observable,uqff_7system_defects,dual definition fork
 observable,uqff_7system_defects,paper,PAPER_115,EP-09 mechanism conflict
+observable,uqff_24system_catalog,paper,PAPER_120,catalog reference
+primitive,BETA_I,observable,uqff_24system_catalog,ejecta fraction
+observable,uqff_catalog_forks,paper,PAPER_120,three forks
+observable,uqff_catalog_forks,paper,PAPER_094,B_crit Schwinger
+observable,uqff_catalog_forks,paper,PAPER_115,EP-09 third variant

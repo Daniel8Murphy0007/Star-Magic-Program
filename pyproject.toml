@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.122.0"
-description = "UQFF Star-Magic-Program v0.122.0: PAPER_119 wired - 7-System Equation Reference (supersedes PAPER_064; anchors EXACT; E_react dual-form identity broken by 43 orders (709 vs 1e46); SSq DUAL DEFINITION forks Triadic suppression by 8 orders; EP-09 mechanism conflict with PAPER_115 annotated into Q-111). Q-115 queued. Wired 123/2255, gate 836/0. Registry 318 rows / 668 edges / 123 ledgers."
+version = "0.123.0"
+description = "UQFF Star-Magic-Program v0.123.0: PAPER_120 wired - 24-System Astronomical Catalog (conversions EXACT, dual d_g honest; B_crit 1e4 fork vs PAPER_094 Schwinger - magnetar supercritical at true value, informs Q-002; EP-09 third mechanism variant - Q-111 now 3 branches; DM density g/cm3-mantissa unit drift). Q-116 queued. Wired 124/2255, gate 842/0. Registry 320 rows / 673 edges / 124 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

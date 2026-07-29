@@ -2181,6 +2181,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** both ladders exposed with corrected
   N thresholds; U_bi at true 65 kpc; crossed-value forensics.
 - **UPDATE (PAPER_119):** the 7-system reference describes EP-09 as a SINGLE cos-ratio > 100 at dt ~ 0.5 day - conflicts with this paper's cumulative ladder; fold into ruling (a).
+- **UPDATE 2 (PAPER_120):** catalog gives a THIRD form R = |cos/cos|^N - fork now 3 branches.
 - **Daniel's ruling:** (pending)
 
 ### Q-112 — PAPER_116 EP-03 — underived 1-keV anchor + Q-108a confirmation
@@ -2303,6 +2304,36 @@ RESOLVED section with the ruling recorded.
   Triadic/Quadratic/MasterBuoyancy additions).
 - **Best-candidate wired:** reference registered; both SSq
   branches and the 709-vs-1e46 fork pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-116 — PAPER_120 24-System Catalog — B_crit 1e4 fork + third EP-09 variant
+- **Question:** (a) EP-09 THIRD VARIANT: the catalog writes
+  R = |cos(pi t_n1)/cos(pi t_n2)|^N with N = 13 - a THIRD
+  mechanism form alongside PAPER_115's cumulative
+  (1+SSq<cos>)^N ladder and PAPER_119's single cos-ratio.
+  Q-111 fork now has 3 branches - one canonical form needed.
+  (b) B_CRIT 1e4 FORK: magnetar section uses B_crit = 4.4e13 T
+  labeled "QED critical", but the QED Schwinger field is
+  4.4e9 T (PAPER_094 canonized it). At 4.4e13 the magnetar is
+  subcritical (B/B_crit ~ 1e-3; the g_Magnetar (1-B/B_crit)
+  factor stays positive); at the true 4.4e9, B/B_crit = 2-23
+  SUPERCRITICAL and the factor goes negative. This directly
+  informs Q-002 (the original PAPER_001/002 B_crit unit
+  inconsistency) - rule on the canonical B_crit and the
+  supercritical handling.
+  (c) UNIT-DIRECTION DRIFT: DM density printed "8.4e-25 J/m3"
+  is EXACTLY the g/cm3 mantissa of 0.47 GeV/cm3 (8.38e-25
+  g/cm3; true 7.53e-5 J/m3) - PAPER_2147 family, sibling of
+  Q-114a's conversions.
+  (d) PROPAGATIONS (no new ruling needed, logged): tau_dissip
+  = 9 Gyr repeats PAPER_111's defective print (chain 27 Gyr,
+  Q-107b); omega_g = 7.3e-16 repeats (chain 8.9e-16, Q-115c).
+- **Notable:** catalog structure is clean and honest where it
+  counts - Sgr A* dual d_g disclosed with uncertainties; 100
+  AU / 8 kpc / erg-to-W conversions EXACT; Q_wave_47 stats
+  corpus-consistent; EP cross-reference table complete.
+- **Best-candidate wired:** 24 systems registered; all three
+  forks pinned; Q-111 and Q-002 annotated.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

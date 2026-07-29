@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.123.0] — 2026-07-29 — BAND 1: PAPER_120 — 24-SYSTEM CATALOG
+
+### Added
+- **PAPER_120 dispatch** (24-System Astronomical Catalog, sec
+  1.16): parameter catalog for all 24 UQFF systems + 47-system
+  Q_wave superset, EP cross-reference complete. EXACT: 100 AU,
+  8 kpc, erg/s→W, Q_wave stats; Sgr A* dual d_g honestly
+  disclosed. THREE FORKS: EP-09 mechanism third variant
+  |cos/cos|^N (Q-111 now 3 branches); B_crit = 4.4e13 vs
+  PAPER_094 Schwinger 4.4e9 (1e4 — magnetar SUPERCRITICAL at
+  true value, breaks (1−B/B_crit); informs Q-002); DM density
+  "8.4e-25 J/m3" is the g/cm3 mantissa (PAPER_2147 unit-
+  direction family). Propagations logged (9 Gyr, omega_g).
+- OPEN_RULING Q-116; Q-111 annotated with third variant.
+- Gate: 842 assertions, 0 failures. Registry: 320 rows / 673 edges / 124 ledgers.
+
+---
+
 ## [0.122.0] — 2026-07-29 — BAND 1: PAPER_119 — 7-SYSTEM REFERENCE
 
 ### Added

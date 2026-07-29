@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 123 (11 ✓, 112 ⚠ OPEN_RULING)
+- **Wired:** 124 (11 ✓, 113 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2132
+- **Not yet touched:** 2131
 
 ---
 
@@ -412,7 +412,7 @@
 | ⬜ | PAPER_1209Y | UQFF Engineering Unified Proof Set |
 | ⬜ | PAPER_1209Z | UQFF Astronomical Units Unified Proof Set |
 | ⬜ | PAPER_1209 | UQFF Particle Physics Unified Proof Set |
-| ⬜ | PAPER_120 | UQFF Astronomical Systems Catalog |
+| ⚠ | PAPER_120 | UQFF Astronomical Systems Catalog |
 | ⬜ | PAPER_1210 | UQFF Lagrangian Bridge 172 Closures |
 | ⬜ | PAPER_1211 | Phase H Closure Trail |
 | ⬜ | PAPER_1212 | UQFF Cosmological Constant Closure |
