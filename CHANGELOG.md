@@ -7,6 +7,31 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.54.0] — 2026-07-29 — BAND 1: PAPER_051
+
+### Added
+- **PAPER_051 dispatch** (arXiv 2024 Cross-Validation — Domain 1.7
+  opens): 16 papers / 10 categories ALL PASS (mean 92.02 +- 9.27,
+  median 96.11, 2024-only 94.07); every alignment chain re-verified
+  in-dispatch (shocks 96.48/96.91, THz 98.31, Bearden 85.06, magnetar
+  95.74, DM 85.65, 26D 100, Hawking 98.06, M-sigma 97.18, final
+  parsec 91.30). Final Parsec Problem resolved via [SCm] viscous Ug4
+  sink; DM as [SCm]+[UA] opposition.
+- **ORIGIN MAJOR:** "[SCm] in Level 13" = 7.09e-? J/m^3 — the
+  canonical rho_SCm NUMBER FAMILY appears at the PLASMA level.
+  Combined with beta_13 = 0.60 ~ BETA_I (3rd corpus datum, Q-041e
+  annotated), the sharpened hypothesis: BOTH canonical primitives
+  are Level-13/plasma values of the 26-ladder.
+- OPEN_RULING Q-048 (7.09-at-L13 origin; NGC2841 Hubble factor
+  1.7154-vs-z=0.002; third rho-ratio value 0.05; THz conflation).
+- Gate: 389 assertions, 0 failures. Registry: 163 rows / 316 edges / 55 ledgers.
+
+### Fixed
+- Block-8 caught a canonical rho_SCm literal in a docstring (4th
+  catch); replaced with symbol name.
+
+---
+
 ## [0.53.0] — 2026-07-29 — BAND 1: PAPER_050 — DOMAIN-1.6 26D BLOCK COMPLETE
 
 ### Added

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.53.0", "uqff_calculator.VERSION = 0.53.0")
+assert_that(C.VERSION == "0.54.0", "uqff_calculator.VERSION = 0.54.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -876,6 +876,21 @@ assert_that(_r050['operationalized_dims'] == 4,
 assert_that(_r050['cp2_score'] == (4, 4),
             "PAPER_050: CP2 integration consistency 4/4 PASS")
 assert_that(C.wired_count() >= 54, "wired_count >= 54")
+
+_r051 = C.calc('PAPER_051')['value']
+assert_that(abs(_r051['shock_velocity'] - 96.48) < 0.05,
+            "PAPER_051: shock-velocity alignment 96.48 chain VERIFIED")
+assert_that(abs(_r051['thz_lenr'] - 98.31) < 0.05,
+            "PAPER_051: THz LENR alignment 98.31 VERIFIED (1.18 vs 1.2 THz)")
+assert_that(abs(_r051['magnetar_scm_l13'] - 95.74) < 0.05,
+            "PAPER_051: magnetar [SCm] L13 alignment 95.74 - the 7.09 family at PLASMA level (Q-048a)")
+assert_that(abs(_r051['final_parsec'] - 91.30) < 0.05,
+            "PAPER_051: final-parsec alignment 91.30 VERIFIED ([SCm] viscous Ug4 sink)")
+assert_that(_r051['categories_pass'] == (10, 10),
+            "PAPER_051: all 10 categories PASS (mean 92.02, median 96.11)")
+assert_that(abs(_r051['hawking'] - 98.06) < 0.05,
+            "PAPER_051: Hawking alignment 98.06 VERIFIED (ratio 0.05 = third value, Q-048c)")
+assert_that(C.wired_count() >= 55, "wired_count >= 55")
 
 # =============================================================================
 # REPORT

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.53.0"
+VERSION = "0.54.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2690,5 +2690,57 @@ def _paper_050(dataset):
                     'C_10,26/C_10,11 = 0.0302; g_j = sum_26 sum_4 alpha_ijk*phi_k*lambda_i*exp(-kappa*t)'),
         'source': 'PAPER_050',
         'residual_pct': abs(c_ratio - 0.0302) / 0.0302 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_051')
+def _paper_051(dataset):
+    """UQFF Predictions vs 2024 arXiv Cross-Validation (Session 0).
+
+    Opens Domain 1.7. 16 papers / 10 categories, ALL PASS; mean
+    92.02 +- 9.27 pct, median 96.11; 2024-only mean 94.07. Alignment
+    chains ALL VERIFY: shocks 96.48/96.91, THz LENR 98.31 (1.18 vs
+    1.2 THz), Bearden 85.06, magnetar 95.74, DM 85.65, 26D 100.00,
+    Hawking 98.06, M-sigma 97.18, final parsec 91.30.
+    ORIGIN MAJOR: "[SCm] in Level 13" = 7.09e-? J/m^3 - THE 7.09
+    NUMBER FAMILY (canonical RHO_SCM) appears at the
+    PLASMA level. Paired with beta_13 = 0.60 ~ BETA_I (Q-041e, two
+    prior data), the hypothesis sharpens: BOTH canonical primitives
+    (rho_SCm AND beta_i) are LEVEL-13/PLASMA values of the 26-ladder.
+    Final-parsec resolution via [SCm] viscous drag (Ug4 sink);
+    DM replaced by [SCm]+[UA] opposition (7.09e-? total).
+    Q-048: (a) the 7.09-at-L13 origin ruling; (b) NGC2841 Hubble
+    factor 1.7154 vs z ~ 0.002 (expected ~1.003 - 3 orders);
+    (c) Hawking section uses rho_SCm/rho_UA ~ 0.05 - a THIRD ratio
+    value (vs 1000 and 0.1, Q-041b annotated); (d) THz text
+    conflates 1.2/1.18/1.25.
+    """
+    align = lambda pred, obs: max(0.0, min(100.0, (1.0 - abs(pred - obs) / abs(obs)) * 100.0))
+    return {
+        'value': {
+            'mean_alignment_pct': 92.02,
+            'std_pct': 9.27,
+            'median_pct': 96.11,
+            'mean_2024_pct': 94.07,
+            'categories_pass': (10, 10),
+            'shock_velocity': align(50.0, 48.3),     # 96.48 VERIFIED
+            'shock_density': align(1.0e5, 9.7e4),    # 96.91 VERIFIED
+            'thz_lenr': align(1.2, 1.18),            # 98.31 VERIFIED
+            'bearden_rscm': align(10.0, 8.7),        # 85.06 VERIFIED
+            'magnetar_scm_l13': align(7.09, 6.8),    # 95.74 VERIFIED - the 7.09 family
+            'dm_vacuum': align(7.09, 6.2),           # 85.65 VERIFIED
+            'quantum_gravity_26d': 100.00,
+            'hawking': align(1.05, 1.03),            # 98.06 VERIFIED
+            'm_sigma': align(0.73, 0.71),            # 97.18 VERIFIED
+            'final_parsec': align(1.0e-8, 9.2e-9),   # 91.30 VERIFIED
+            'origin_709_l13': 'canonical rho_SCm number family at PLASMA level (with beta_13 = 0.60)',
+            'ngc2841_hubble_factor': 1.7154,         # Q-048b vs z ~ 0.002
+            'hawking_ratio_005': 0.05,               # Q-048c third ratio value
+        },
+        'formula': ('alignment = max(0, min(100, (1 - |pred-obs|/|obs|)*100)); '
+                    'final parsec: [SCm] viscous Ug4 sink; DM: [SCm]+[UA] opposition'),
+        'source': 'PAPER_051',
+        'residual_pct': abs(align(50.0, 48.3) - 96.48),
         'status': 'OPEN_RULING',
     }

@@ -665,6 +665,9 @@ RESOLVED section with the ruling recorded.
   plasma-level value of the 26-ladder (origin hypothesis)?
   [2nd DATUM from PAPER_045: plasma = weakest matter-state coupling,
   quartet declines 0.75 -> 0.60 - hypothesis strengthened.]
+  [3rd DATUM from PAPER_051: the 7.09 number family ALSO appears at
+  Level 13 - see Q-048a: both canonical primitives as plasma-level
+  values.]
   (f) FORENSIC: U_i level-10 = 9.47e14 emerges from 0.7575*1.25e12*
   1e3 - the "9.47" number family (predecessor PAPER_2156 audit) can
   arise naturally from beta*omega products; new data point recorded.
@@ -794,6 +797,25 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** partition + TIME-=-PLASMA identification
   + 0.0302 coupling scale pinned; honest 4D-projection note
   preserved; 045's verified C_ij form treated as operational.
+- **Daniel's ruling:** (pending)
+
+### Q-048 — PAPER_051 — 7.09 ORIGIN at plasma level + NGC2841 + third ratio value
+- **Question:** (a) ORIGIN MAJOR: "[SCm] in Level 13" = 7.09e-? J/m^3
+  (exponent mojibaked) - the canonical rho_SCm NUMBER FAMILY
+  (7.09e-37) appears at the PLASMA level of the 26-ladder. Combined
+  with beta_13 = 0.60 ~ BETA_I (Q-041e, now 3 corpus data), the
+  sharpened hypothesis: BOTH canonical primitives (rho_SCm and
+  beta_i) are the LEVEL-13/PLASMA values of the 26-level framework.
+  Rule on the origin reading (and the mojibaked exponent).
+  (b) NGC2841: Hubble factor (1 + H(z)t) = 1.7154 claimed at
+  z ~ 0.002 / 14 Mpc - expected ~1.003; 3-orders inconsistency in
+  the enhancement. (c) The Hawking section uses rho_SCm/rho_UA ~
+  0.05 - a THIRD distinct ratio value (framework 1000, canonical
+  0.1, now 0.05) - Q-041b annotated. (d) The THz text conflates
+  1.2 (prediction), 1.18 (observed), 1.25 (OMEGA_LENR) THz.
+- **Best-candidate wired:** all alignment chains re-verified; the
+  7.09-at-L13 datum gate-pinned with the beta_13 companion; the
+  final-parsec [SCm]-drag resolution preserved.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
