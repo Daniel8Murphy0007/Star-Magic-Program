@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.49.0] — 2026-07-29 — BAND 1: PAPER_046 — 50-PAPER MILESTONE
+
+### Added
+- **PAPER_046 dispatch** (DPM Yin-Yang Cosmology): [UA] Yin / [SCm]
+  Yang vacuum duality; nuclear-core coupling g(A) = 1000*(A/56)^(1/3)
+  verified with the iron peak as reference nucleus (H-1 261, U-238
+  1619); Belly Button Resonance f_bb = exp(-1e-8*t)*cos(2pi*300*t)
+  (trapped [-UA] decay, 3.2-yr e-folding); 52-system F_U_Bi_i mean
+  -6.05e7 N (first multi-system catalogue). SELF-RECTIFICATION (3rd
+  instance): the THz/300-Hz sub-harmonic stated correctly as 4.17e9,
+  resolving Q-040c. HONEST: the ~132-order inflation energy-budget
+  gap disclosed in-paper as open (Q-043a). Third DPM expansion
+  ("Dark Photon Manifold") + ratio-direction datum annotated to
+  Q-042c/Q-041b.
+- **50-PAPER MILESTONE: 50/2,255 wired.**
+- Gate: 359 assertions, 0 failures. Registry: 148 rows / 287 edges / 50 ledgers.
+
+### Fixed
+- Gate caught my over-tight g(H-1) tolerance (true 261.4 vs paper's
+  rounded 260) — corrected with honest numbers.
+
+---
+
 ## [0.48.0] — 2026-07-29 — BAND 1: PAPER_045
 
 ### Added

@@ -282,3 +282,8 @@ observable,phase_transition_quartet,paper,PAPER_043,level hierarchy base
 observable,cross_scale_coupling,paper,PAPER_045,primary derivation
 observable,plasma_beta_060_support,paper,PAPER_045,primary derivation
 primitive,BETA_I,observable,plasma_beta_060_support,canonical-as-plasma hypothesis
+observable,ua_scm_yin_yang_duality,paper,PAPER_046,primary derivation
+observable,nuclear_core_coupling,paper,PAPER_046,primary derivation
+observable,belly_button_resonance,paper,PAPER_046,primary derivation
+observable,belly_button_resonance,paper,PAPER_042,resolves Q-040c divisor slip
+primitive,OMEGA_SCM_HZ,observable,belly_button_resonance,1.25 THz / 300 Hz subharmonic

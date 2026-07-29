@@ -642,6 +642,7 @@ RESOLVED section with the ruling recorded.
   1e-10 N. What is this validator's F_rel and its relation to the
   family constant? (c) The 300 Hz Colman-Gillespie divisor is printed
   4167 but 1.25e12/300 = 4.167e9 (1e6 slip).
+  [SELF-RECTIFIED by PAPER_046: ratio stated correctly as 4.17e9.]
 - **Best-candidate wired:** 26 = D_CRIT composed; the 1.25-THz LENR
   anchor wired EXACTLY onto the predecessor omega_SCm spine (corpus
   continuity gate-pinned); MC Perseus cross-validation pinned; all
@@ -688,6 +689,25 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** quantum-number scheme EXACT and pinned;
   radii ladder + E_26 verified; E_1 resolved by computation; all
   naming issues exposed for one namespace ruling.
+- **Daniel's ruling:** (pending)
+
+### Q-043 — PAPER_046 — inflation energy budget + labeling
+- **Question:** (a) The paper HONESTLY discloses that the DPM
+  pre-inflationary energy (~1e-84 J) amplified by k_eta = 1e10 and
+  tau_infl/t_Planck = 1e11 reaches only ~1e-63 J vs the observable
+  universe's ~1e69 J - a ~132-order gap: "either k_eta is much larger
+  than implemented or the inflation time scales differently; PASS
+  reflects self-consistency, not absolute calibration." Open
+  cosmological-calibration ruling: what closes the gap?
+  (b) gamma = 1e-8/s is labeled "halftime ~3.2 years" but 1/gamma =
+  3.17 yr is the e-folding time (half-life = ln2/gamma = 2.2 yr) -
+  labeling nit.
+- **SELF-RECTIFICATION (3rd instance):** PAPER_046 states the
+  THz/300-Hz sub-harmonic ratio CORRECTLY as 4.17e9 - resolving
+  Q-040c (PAPER_042's printed 4167 confirmed as a 1e6 slip).
+- **Annotations:** Q-041b gains a direction datum (26-level framework
+  ratio = 1000 SCm/UA, inverted vs canonical 0.1); Q-042c gains a
+  THIRD DPM expansion ("Dark Photon Manifold").
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

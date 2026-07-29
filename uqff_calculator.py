@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.48.0"
+VERSION = "0.49.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2421,4 +2421,59 @@ def _paper_045(dataset):
         'source': 'PAPER_045',
         'residual_pct': abs(c_ij(10, 11) - 0.477) / 0.477 * 100,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_046')
+def _paper_046(dataset):
+    """DPM Yin-Yang Cosmology + Dark Photon Manifold (Session 0).
+
+    [UA] Yin (diffuse, information) / [SCm] Yang (dense, force);
+    framework-internal ratio rho_SCm/rho_UA = 1000 (annotates Q-041b:
+    the 26-level framework defines the ratio INVERTED vs canonical
+    0.1 - direction datum). Nuclear-core triad {[UA]}-[SCm]-nucleus:
+    coupling g(A) = 1000*(A/56)^(1/3) VERIFIED (H-1 = 260, Fe-56 =
+    1000 reference = iron peak, U-238 = 1619). Belly Button Resonance
+    f_bb = exp(-gamma*t)*cos(2pi*300*t), gamma = 1e-8/s (~3.2 yr
+    e-folding) - trapped [-UA] electrostatic decay, LENR low-
+    frequency counterpart. SELF-RECTIFICATION: sub-harmonic ratio
+    1.25e12/300 = 4.17e9 stated CORRECTLY here -> RESOLVES Q-040c
+    (PAPER_042's 4167 confirmed as 1e6 slip). 52-system F_U_Bi_i
+    mean = -6.05e7 N (first multi-system catalogue appearance).
+    THIRD DPM expansion: "Dark Photon Manifold" (annotates Q-042c:
+    Di-Pseudo-Monopole / Duality of Plasmatic Medium / Dark Photon
+    Manifold). HONEST: pre-inflationary energy 1e-84 J amplifies to
+    only ~1e-63 J vs universe ~1e69 J - the ~132-order gap disclosed
+    in-paper as open (PASS = self-consistency, not absolute
+    calibration).
+    Q-043: (a) inflation energy-budget gap open ruling; (b) e-folding
+    vs half-life labeling (3.2 yr = 1/gamma).
+    """
+    g_coupling = lambda a: 1000.0 * (a / 56.0) ** (1.0 / 3.0)
+    return {
+        'value': {
+            'rho_ratio_framework': 1000.0,           # Q-041b direction datum
+            'g_h1': g_coupling(1),                   # 260 VERIFIED
+            'g_fe56': g_coupling(56),                # 1000 reference (iron peak)
+            'g_u238': g_coupling(238),               # 1619 VERIFIED
+            'bb_gamma_per_s': 1.0e-8,
+            'bb_efold_yr': 1.0 / 1.0e-8 / 3.156e7,   # 3.17 yr
+            'bb_freq_hz': 300.0,
+            'subharmonic_ratio': 1.25e12 / 300.0,    # 4.17e9 - RESOLVES Q-040c
+            'catalogue_52_mean_n': -6.05e7,
+            'catalogue_52_bootstrap_pct': 3.0,
+            'e_total_prebb_j': 2.83e-84,             # consistent with 044
+            'e_amplified_j': 1.0e-63,
+            'e_universe_j': 1.0e69,
+            'energy_gap_orders': 132,                # disclosed open (Q-043a)
+            'dpm_expansions': ('Di-Pseudo-Monopole (predecessor)',
+                               'Duality of Plasmatic Medium (044)',
+                               'Dark Photon Manifold (here)'),
+            'validator_score': (12, 12),
+        },
+        'formula': ('g(A) = 1000*(A/56)^(1/3); f_bb = exp(-gamma*t)*cos(2pi*300*t); '
+                    'E_universe ~ E_prebb * k_eta * tau_infl/t_Planck (gap disclosed)'),
+        'source': 'PAPER_046',
+        'residual_pct': abs(g_coupling(238) - 1619.0) / 1619.0 * 100,
+        'status': 'OPEN_RULING',
     }

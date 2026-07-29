@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.48.0"
-description = "UQFF Star-Magic-Program v0.48.0: PAPER_045 wired (matter-state quartet levels 10-13: Delta_rho = (2n+1) law all verified; cross-scale coupling C_10,26 = 0.0144 solid-universe Casimir basis; plasma beta = 0.60 strengthens BETA_I-origin hypothesis; single validator failure root-caused in-paper - model behavior). CLEAN. Wired 49/2255, gate 353/0. Registry 145 rows / 282 edges / 49 ledgers."
+version = "0.49.0"
+description = "UQFF Star-Magic-Program v0.49.0: PAPER_046 wired (DPM Yin-Yang cosmology: UA/SCm duality; nuclear coupling g(A) = 1000*(A/56)^(1/3) verified w/ iron-peak reference; Belly Button 300 Hz resonance; sub-harmonic 4.17e9 CORRECT - resolves Q-040c self-rectification; 132-order inflation gap honestly disclosed; 3rd DPM expansion). Q-043 queued. Wired 50/2255, gate 359/0. Registry 148 rows / 287 edges / 50 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

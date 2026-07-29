@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.48.0", "uqff_calculator.VERSION = 0.48.0")
+assert_that(C.VERSION == "0.49.0", "uqff_calculator.VERSION = 0.49.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -801,6 +801,21 @@ assert_that(abs(_r045['plasma_beta'] - 0.60) < 1e-12,
 assert_that(_r045['validator_score'] == (10, 11),
             "PAPER_045: 10/11 with the failure root-caused in-paper (model behavior)")
 assert_that(C.wired_count() >= 49, "wired_count >= 49")
+
+_r046 = C.calc('PAPER_046')['value']
+assert_that(abs(_r046['g_h1'] - 261.4) < 0.5,
+            "PAPER_046: g(H-1) = 1000*(1/56)^(1/3) = 261.4 (paper rounds to 260 via 0.260)")
+assert_that(abs(_r046['g_u238'] - 1619.0) < 1.0,
+            "PAPER_046: g(U-238) = 1619 VERIFIED (iron peak = 1000 reference)")
+assert_that(abs(_r046['subharmonic_ratio'] - 4.167e9) / 4.167e9 < 0.001,
+            "PAPER_046: 1.25 THz/300 Hz = 4.17e9 stated correctly - RESOLVES Q-040c (self-rectification)")
+assert_that(abs(_r046['bb_efold_yr'] - 3.17) < 0.05,
+            "PAPER_046: Belly Button e-folding 1/gamma = 3.17 yr")
+assert_that(_r046['energy_gap_orders'] == 132,
+            "PAPER_046: 132-order inflation energy gap HONESTLY disclosed in-paper (Q-043a)")
+assert_that(len(_r046['dpm_expansions']) == 3,
+            "PAPER_046: THIRD DPM expansion recorded (Q-042c namespace now three-way)")
+assert_that(C.wired_count() >= 50, "wired_count >= 50")
 
 # =============================================================================
 # REPORT
