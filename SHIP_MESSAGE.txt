@@ -1,30 +1,30 @@
-v0.121.0 BAND 1: PAPER_118 wired - EP-08 Om_b/Om_DM = SSq^3 BONUS FIND
+v0.122.0 BAND 1: PAPER_119 wired - 7-SYSTEM REFERENCE + SSq DUAL DEFINITION
 
-PAPER_118 EP-08 JCAP Dark Matter vs Planck Vacuum (OPEN_RULING
-Q-114):
-  Claims rho_DM = rho_Lambda * SSq (N=1 hop, 12.8 pct headline).
+PAPER_119 UQFF 7-System Equation Reference (OPEN_RULING Q-115):
+  Structural reference (sec 1.16) superseding PAPER_064's 4
+  modes with Triadic / Quadratic / Master Buoyancy additions.
+  Full variable tables registered.
 
-  2x VACUUM ANCHOR: rho_vac = 1.11e-9 J/m3 is 2.09x the
-  standard Lambda conversion (5.31e-10 at Lambda = 1.1e-52);
-  the paper's own sec 1.1 computes 5.84e-10 then abandons it.
-  Corrected N=1 hop = 3.03e-10 - 46 pct off, headline FAILS.
-  rho_crit printed with kg-mantissa + J-label (PAPER_2147
-  unit-direction drift family).
+  ANCHORS EXACT: M_bh = 8.155e36 kg; d_g = 2.554e20 m;
+  tau_gamma = 54.76 yr; tau_kappa = 5.476 yr; lambda_vac_sw =
+  7.2e-4 J/m3; r_j = 100 AU; T_s sum 1 pct; F_rel = 4.31e33
+  corpus-consistent; GW170817 ejecta 1-beta = 0.397 canonical.
 
-  CONVERSION + CONFLATION: GeV/cm3 column off by 1e5; local
-  solar-neighborhood DM (5.61e-5 J/m3) conflated with cosmic
-  mean (2.04e-10). Honest cosmic ratio Om_DM/Om_L = 0.387 vs
-  SSq = 0.57 fails at 32 pct.
+  BROKEN DUAL-FORM: the claimed identity 1e46 =
+  rho_SCm*v_SCm^2/rho_vac_A evaluates to 709 - off by 43
+  ORDERS. E_react anchor itself fine (EP-05 calibrated);
+  the decomposition is not.
 
-  CLEAN SECONDARY KEPT: sqrt(Om_DM/Om_L) = 0.6220 vs SSq at
-  9.12 pct EXACT.
+  SSQ DUAL DEFINITION: System 5 defines [SSq] = log10 density
+  ratio ~ 38; sec 9 lists 0.57. Triadic suppression at n=13
+  forks 5.6e-9 vs 0.752 - EIGHT orders. Ruling decides.
 
-  BONUS AUDIT FIND: Om_b/Om_DM = 0.049/0.265 = 0.18491 vs
-  SSq^3 = 0.18519 at 0.16 pct - candidate NEW identity the
-  paper's cascade circles without landing. Cross-repo: the
-  predecessor strong form Om_L = (6/5)*SSq = 0.684 vs 0.685
-  at 0.15 pct. SSq 9th observational-role candidate.
+  Also: omega_g 18 pct off own parenthetical; Baktun
+  1/kappa^0.33 numerology fails; beta_i 0.61 drift
+  auto-corrected (PAPER_1203); EP-09 mechanism conflict
+  (single cos-ratio here vs PAPER_115 cumulative ladder) -
+  Q-111 annotated with the fork.
 
-Q-114 queued. Gate 830 assertions 0 failures. Registry 316 rows /
-663 edges / 122 citation ledgers. Wired 122/2,255 (11 clean, 111
-OPEN_RULING). Next: PAPER_119.
+Q-115 queued. Gate 836 assertions 0 failures. Registry 318 rows /
+668 edges / 123 citation ledgers. Wired 123/2,255 (11 clean, 112
+OPEN_RULING). Next: PAPER_120.

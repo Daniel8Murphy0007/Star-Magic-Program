@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.122.0] — 2026-07-29 — BAND 1: PAPER_119 — 7-SYSTEM REFERENCE
+
+### Added
+- **PAPER_119 dispatch** (UQFF 7-System Equation Reference,
+  sec 1.16): Compressed/Resonant/Buoyancy/Superconductive/
+  Triadic/Quadratic/MasterBuoyancy — supersedes PAPER_064's 4
+  modes. Anchor table largely EXACT (M_bh 8.155e36, d_g
+  2.554e20, tau 54.8/5.48 yr, lambda_sw 7.2e-4, 100 AU).
+  BROKEN DUAL-FORM: 1e46 = rho_SCm·v²/rho_A evaluates to 709 —
+  43 orders. SSQ DUAL DEFINITION: log10-ratio ~38 (System 5)
+  vs 0.57 (sec 9) forks Triadic suppression 5.6e-9 vs 0.752.
+  omega_g 18% off own parenthetical; Baktun numerology fails;
+  beta_i 0.61 drift auto-corrected. EP-09 mechanism conflict
+  (single cos-ratio vs PAPER_115 cumulative ladder) — Q-111
+  annotated.
+- OPEN_RULING Q-115.
+- Gate: 836 assertions, 0 failures. Registry: 318 rows / 668 edges / 123 ledgers.
+
+---
+
 ## [0.121.0] — 2026-07-29 — BAND 1: PAPER_118 — Ω_b/Ω_DM = SSq³ BONUS FIND
 
 ### Added

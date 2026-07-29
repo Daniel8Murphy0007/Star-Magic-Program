@@ -2180,6 +2180,7 @@ RESOLVED section with the ruling recorded.
   in R.
 - **Best-candidate wired:** both ladders exposed with corrected
   N thresholds; U_bi at true 65 kpc; crossed-value forensics.
+- **UPDATE (PAPER_119):** the 7-system reference describes EP-09 as a SINGLE cos-ratio > 100 at dt ~ 0.5 day - conflicts with this paper's cumulative ladder; fold into ruling (a).
 - **Daniel's ruling:** (pending)
 
 ### Q-112 — PAPER_116 EP-03 — underived 1-keV anchor + Q-108a confirmation
@@ -2269,6 +2270,39 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** both anchors exposed (paper 1.11e-9
   vs true 5.31e-10) with corrected hop; secondary kept; bonus
   identity registered.
+- **Daniel's ruling:** (pending)
+
+### Q-115 — PAPER_119 7-System Reference — broken dual-form + SSq dual definition
+- **Question:** (a) BROKEN DUAL-FORM: the Superconductive
+  system claims 1e46 = rho_SCm*v_SCm^2/rho_vac_A, which
+  evaluates to 7.09e-37*(1e8)^2/1e-23 = 709 - off by 43
+  ORDERS. The E_react = 1e46*exp(-kappa t) anchor itself is
+  EP-05-calibrated and fine; the decomposition is not. Provide
+  the intended identity or mark 1e46 as calibrated-only.
+  (b) SSQ DUAL DEFINITION: System 5 (Triadic) defines
+  [SSq] = log10(rho_vac/lambda_vac) ~ 38 while sec 9's shared
+  constants list [SSq] = 0.57. The Triadic suppression
+  exp(-SSq*n/26) at n=13 forks 5.6e-9 vs 0.752 - EIGHT orders.
+  Which SSq drives the Triadic system?
+  (c) omega_g = 7.3e-16 rad/s vs its own parenthetical chain
+  (220 km/s / 8 kpc) = 8.9e-16 (18 pct).
+  (d) The Baktun claim (394 yr ~ 1/kappa^0.33) fails: 12.3
+  days vs 143,909 days.
+  (e) beta_i = 0.61 uniform - drift, auto-corrected to 0.6029
+  per PAPER_1203; also affects the GW170817 ejecta reading
+  (1-beta = 0.3971 canonical vs 0.39 printed).
+  (f) EP-09 MECHANISM CONFLICT: this reference describes
+  R > 100 from a SINGLE cos-ratio at dt ~ 0.5 day, while
+  PAPER_115 built it from the cumulative (1+SSq<cos>)^N
+  ladder. Which is the canonical EP-09 mechanism? (Q-111
+  annotated with this fork.)
+- **Notable:** the anchor table is largely EXACT (M_bh
+  8.155e36, d_g 2.554e20 m, tau 54.76/5.476 yr, lambda_sw
+  7.2e-4, r_j 100 AU, T_s sum 1 pct); the 7-system structure
+  itself is a clean registry (supersedes PAPER_064 with
+  Triadic/Quadratic/MasterBuoyancy additions).
+- **Best-candidate wired:** reference registered; both SSq
+  branches and the 709-vs-1e46 fork pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

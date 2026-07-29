@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.121.0", "uqff_calculator.VERSION = 0.121.0")
+assert_that(C.VERSION == "0.122.0", "uqff_calculator.VERSION = 0.122.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1822,6 +1822,19 @@ assert_that(_r118['bonus_err_pct'] < 0.2,
 assert_that(abs(_r118['honest_cosmic_ratio'] - 0.387) < 0.001,
             "PAPER_118: honest cosmic Om_DM/Om_L = 0.387 vs SSq fails at 32 pct - conflation pinned (Q-114b)")
 assert_that(C.wired_count() >= 122, "wired_count >= 122")
+
+_r119 = C.calc('PAPER_119')['value']
+assert_that(len(_r119['systems']) == 7,
+            "PAPER_119: 7 equation systems registered (supersedes PAPER_064 4 modes)")
+assert_that(abs(_r119['m_bh_kg'] - 8.155e36) < 0.001e36 and abs(_r119['tau_kappa_yr'] - 5.476) < 0.001,
+            "PAPER_119: M_bh / tau chains EXACT")
+assert_that(abs(_r119['dual_form_chain'] - 709) < 1,
+            "PAPER_119: E_react dual-form identity evaluates to 709 vs claimed 1e46 - 43 orders broken (Q-115a)")
+assert_that(_r119['triadic_fork'][1] / _r119['triadic_fork'][0] > 1e8,
+            "PAPER_119: SSq dual definition forks Triadic suppression by 8 orders (Q-115b)")
+assert_that(abs(_r119['ejecta_fraction'] - 0.3971) < 0.0001,
+            "PAPER_119: GW170817 ejecta 1 - BETA_I = 0.3971 at canonical beta")
+assert_that(C.wired_count() >= 123, "wired_count >= 123")
 
 # =============================================================================
 # REPORT

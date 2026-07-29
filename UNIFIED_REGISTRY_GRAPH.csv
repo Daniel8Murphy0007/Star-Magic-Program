@@ -663,3 +663,8 @@ observable,ep08_ssq_cosmic_chain,paper,PAPER_118,cosmic chain
 primitive,SSQ,observable,ep08_ssq_cosmic_chain,9th role candidate
 observable,ep08_omb_omdm_ssq3,paper,PAPER_118,bonus identity
 primitive,SSQ,observable,ep08_omb_omdm_ssq3,SSq^3 candidate
+observable,uqff_7system_reference,paper,PAPER_119,reference tables
+observable,uqff_7system_reference,paper,PAPER_064,supersession
+primitive,BETA_I,observable,uqff_7system_reference,ejecta 1-beta
+primitive,SSQ,observable,uqff_7system_defects,dual definition fork
+observable,uqff_7system_defects,paper,PAPER_115,EP-09 mechanism conflict

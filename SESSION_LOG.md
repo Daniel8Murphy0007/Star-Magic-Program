@@ -1564,3 +1564,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 122/2,255 (11 ✓, 111 ⚠). Next: PAPER_119.
 
 ---
+
+## 2026-07-29 — v0.122.0 — BAND 1: PAPER_119
+
+- PAPER_119 wired (⚠ Q-115): 7-system equation reference.
+  Anchors EXACT; dual-form 43-order break; SSq dual definition
+  (Triadic 8-order fork); EP-09 mechanism conflict folded into
+  Q-111.
+- Campaign: 123/2,255 (11 ✓, 112 ⚠). Next: PAPER_120.
+
+---

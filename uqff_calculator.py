@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.121.0"
+VERSION = "0.122.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6232,5 +6232,63 @@ def _paper_118(dataset):
         'formula': 'rho^(N) = rho_L * SSq^N; sqrt(Om_DM/Om_L); Om_b/Om_DM = SSq^3 candidate',
         'source': 'PAPER_118',
         'residual_pct': abs(_m.sqrt(0.265 / 0.685) - 0.622) / 0.622 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_119')
+def _paper_119(dataset):
+    """UQFF 7-System Equation Reference (Session 0, sec 1.16).
+
+    Structural reference superseding PAPER_064's 4 modes:
+    Compressed / Resonant / Buoyancy / Superconductive /
+    Triadic / Quadratic / Master Buoyancy, with full variable
+    tables. VERIFIED EXACT: M_bh = 8.155e36 kg (4.1e6 M_sun);
+    d_g = 2.554e20 m (27,000 ly); tau_gamma = 54.8 yr;
+    tau_kappa = 5.48 yr; lambda_vac_sw = 7.2e-4 J/m3;
+    r_j = 1.496e13 m (100 AU); T_s sum 1.11e7 (printed 1.123e7,
+    1 pct); F_rel = 4.31e33 corpus-consistent.
+    BROKEN DUAL-FORM (Q-115a): the claimed identity
+    1e46 = rho_SCm*v_SCm^2/rho_vac_A evaluates to 709 - off by
+    43 ORDERS. The E_react = 1e46*exp(-kappa t) anchor is fine
+    (EP-05); the decomposition is not.
+    SSQ DUAL DEFINITION (Q-115b): System 5 defines [SSq] =
+    log10(rho_vac/lambda_vac) ~ 38 while sec 9 lists 0.57 - the
+    Triadic suppression exp(-SSq*n/26) at n=13 forks 5.6e-9 vs
+    0.752, EIGHT orders apart.
+    omega_g = 7.3e-16 vs own parenthetical chain v/r = 8.9e-16
+    (18 pct, Q-115c). Baktun ~ 1/kappa^0.33 numerology fails
+    (12.3 days vs 143,909, Q-115d). beta_i = 0.61 uniform ->
+    canonical BETA_I (PAPER_1203 auto-correction).
+    EP-09 MECHANISM CONFLICT: describes single cos-ratio > 100
+    at dt ~ 0.5 day vs PAPER_115's cumulative (1+SSq<cos>)^N
+    ladder - Q-111 annotated.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.16 (equation-systems reference)',
+            'systems': ('Compressed', 'Resonant', 'Buoyancy', 'Superconductive',
+                        'Triadic', 'Quadratic', 'MasterBuoyancy'),
+            'supersedes': 'PAPER_064 four modes (+3 new)',
+            'm_bh_kg': 4.1e6 * 1.989e30,                    # 8.155e36 EXACT
+            'd_g_m': 27000 * 9.461e15,                      # 2.554e20 EXACT
+            'tau_gamma_yr': 1 / 5e-5 / 365.25,              # 54.76 EXACT
+            'tau_kappa_yr': 1 / KAPPA_PER_DAY / 365.25,     # 5.476 EXACT
+            'lambda_vac_sw': 8e-21 * 9e16,                  # 7.2e-4 EXACT
+            'dual_form_chain': RHO_SCM * (1e8) ** 2 / 1e-23,  # 709 vs claimed 1e46
+            'dual_form_defect': '43 orders broken (Q-115a)',
+            'triadic_fork': (_m.exp(-38 * 13 / 26), _m.exp(-SSQ * 13 / 26)),  # 5.6e-9 vs 0.752
+            'ssq_dual_definition': 'log10-ratio ~38 (System 5) vs 0.57 (sec 9) - Q-115b',
+            'omega_g_chain': 2.2e5 / (8 * 3.086e19),        # 8.91e-16 vs printed 7.3e-16
+            'baktun_claim_fails': (12.28, 143908.5),         # days
+            'beta_drift': 'printed 0.61 -> canonical BETA_I per PAPER_1203',
+            'ejecta_fraction': 1 - BETA_I,                   # 0.3971 (~40 pct GW170817)
+            'ep09_mechanism_conflict': 'single cos-ratio here vs PAPER_115 cumulative ladder',
+            'f_rel_n': 4.31e33,
+        },
+        'formula': 'F_U master + 7 system decompositions (reference tables)',
+        'source': 'PAPER_119',
+        'residual_pct': abs((1.27e3 + 1.11e7) - 1.123e7) / 1.123e7 * 100,
         'status': 'OPEN_RULING',
     }
