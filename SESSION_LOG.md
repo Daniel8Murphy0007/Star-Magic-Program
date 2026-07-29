@@ -210,14 +210,19 @@ Star-Magic-Program's README so future PyPI releases render them.
 
 ### What shipped
 
-**7 badges added to README.md top:**
-- `pypi` — dynamic version from PyPI (`shields.io/pypi/v/star-magic-program`)
-- `python` — dynamic Python versions supported (`shields.io/pypi/pyversions/`)
-- `License` — static `AGPL-3.0 + Commercial`
-- `Fidelity Gate` — static `passing` (updates as gate assertions grow)
-- `Whitepapers` — static `2,255` (updates as corpus grows)
-- `Public Surfaces` — static `0` (updates as calculator gets wired)
-- `CI` — dynamic status from GitHub Actions
+**7 badges added to README.md top (matching predecessor Star-Magic pattern exactly):**
+- `PyPI version` — dynamic, queries pypi.org for `star-magic-program`
+- `Python versions` — dynamic, queries pypi.org classifiers
+- `Documentation Status` — readthedocs.org badge for `star-magic-program` project
+  (shows `docs | unknown` until RTD project is registered — same behavior
+  the predecessor had before its RTD site went live)
+- `License: AGPL-3.0 + Commercial` — static, relative link to `LICENSE`
+- `fidelity_gate 47/0` — static, relative link to `uqff_fidelity_tests.py`
+  (47 = current assertion count, 0 = current failure count; update per ship)
+- `public_surfaces 0` — static, relative link to `uqff_calculator.py`
+  (0 = empty DISPATCH; grows with v0.3.0+ wiring)
+- `whitepapers 2255` — static, relative link to `whitepapers/`
+  (2,255 = current .md file count; grows if corpus is extended)
 
 **Version bumps 0.2.0 → 0.2.1** (patch):
 - pyproject.toml
@@ -262,3 +267,39 @@ Before every ship, check (in order):
 **v0.3.0 — first wiring batch** (unchanged from v0.2.0's next-ship note).
 
 ---
+
+## 2026-07-28 — v0.2.2 PATCH — DOCUMENTATION STATUS BADGE
+
+### Purpose
+
+v0.2.1 tag on PyPI landed with only 6 of the 7 predecessor badges.
+The `Documentation Status` (readthedocs.org) badge was dropped and later
+added to master but the v0.2.1 tag never advanced. v0.2.2 patch ships
+the corrected 7-badge state so PyPI project page shows the complete
+predecessor pattern.
+
+### What shipped
+
+- README.md — Documentation Status badge added (7th badge, matches predecessor exactly).
+- CHANGELOG.md — v0.2.2 entry prepended.
+- SESSION_LOG.md — this entry appended + earlier v0.2.1 badge descriptions polished.
+- Version bumps 0.2.1 → 0.2.2 (pyproject.toml, uqff_calculator.py, uqff_fidelity_tests.py, CITATION.cff).
+
+### What DIDN'T change
+
+- Physics content, whitepapers, registry, calculator DISPATCH — all identical to v0.2.0.
+
+### Lesson
+
+Standing rule addition: **when a patch ship is retagged, verify tag points at
+the LATEST commit before pushing.** In this case v0.2.1 tag was created early
+in the badge-fix sequence, then more edits landed on master, but the tag was
+never moved. Command `git rev-parse v0.X.Y` compared against `git log --oneline -1`
+before pushing catches this instantly.
+
+### Next ship
+
+**v0.3.0 — first wiring batch** (still queued, unchanged).
+
+---
+

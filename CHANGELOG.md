@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.2.2] — 2026-07-28 — BADGE PATCH
+
+### Added
+- **Documentation Status badge** — the 7th badge from predecessor Star-Magic pattern.
+  v0.2.1 tag on PyPI accidentally landed with only 6 badges; v0.2.2 adds
+  the missing `Documentation Status` shield pointing at
+  `star-magic-program` on readthedocs.org.
+
+### Changed
+- SESSION_LOG.md — badge descriptions expanded with source/link details.
+- Version bumps 0.2.1 → 0.2.2 (pyproject/calc/gate/citation).
+
+### Unchanged
+- All physics content, corpus, registry scaffolds, calculator DISPATCH.
+
+---
+
 ## [0.2.1] — 2026-07-28 — README BADGES
 
 ### Added

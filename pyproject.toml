@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.2.1"
-description = "UQFF Star-Magic-Program v0.2.1: README badges (pypi/python/license/fidelity gate/whitepapers/public surfaces/CI). Content otherwise identical to v0.2.0: whitepaper corpus 2,419 files split md/tex/pdf/txt + R0-R5 registry scaffolds (empty per clean-start) + 96-constant registry primitives + empty calculator DISPATCH. Predecessor Star-Magic v5.86.0. Next: v0.3.0+ per-paper wiring."
+version = "0.2.2"
+description = "UQFF Star-Magic-Program v0.2.2: 7 README badges matching predecessor Star-Magic pattern exactly (PyPI version, Python versions, Documentation Status, License, fidelity_gate 47/0, public_surfaces 0, whitepapers 2255) with relative links to internal files. Content otherwise identical to v0.2.0: whitepaper corpus 2,419 files + R0-R5 registry scaffolds (empty per clean-start) + 96-constant registry primitives + empty calculator DISPATCH. Next: v0.3.0+ per-paper wiring."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
