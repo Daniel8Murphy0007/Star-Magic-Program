@@ -1,30 +1,25 @@
-v0.75.0 BAND 1: PAPER_072 wired - F_TRZ LAB VALIDATION + H0 REGISTRY MATCH
+v0.76.0 BAND 1: PAPER_073 wired - DOMAIN 1.10 OPENS (GAIA DR4)
 
-PAPER_072 Red Dwarf Reactor TRZ Physics (OPEN_RULING Q-068):
-  The F_TRZ primitive carries a LAB VALIDATION claim: predicted
-  f_TRZ = 0.10 (= registry F_TRZ), measured 0.098 (2.0 pct) over
-  a 10-hour sustained over-unity run.
+PAPER_073 Gaia DR4 Astrometric Cross-Validation (OPEN_RULING
+Q-069):
+  Domain 1.10 (database integration) opens: Gaia TAP endpoints +
+  ADQL query template recorded.
 
-  COP chain EXACT: (1 + f_TRZ)/(1 - Omega_g) = 1.10/0.9999 =
-  1.1001, + delta_SCm 0.050 -> 1.15 predicted vs 1.12 measured.
-  Same structure as PAPER_063 Form C-2 (cross-consistent).
-  Loss budget EXACT: 0.15 - 0.015 - 0.007 - 0.005 = 0.123 =
-  measured 12.3 pct. Mean deviation 6.735 = printed 6.7.
-  QSC cross-validation: activation 1.18/1.20 = 0.983; 2nd
-  harmonic 2.36 = 2*1.18 EXACT.
+  SSQ CORRECTION CHAIN EXACT: UQFF/Newton = 1 + SSq*0.034 =
+  1.0194 = printed 1.019; dex form 0.034/ln10 = 0.0148 = printed
+  +0.015 dex. Solar anchor g = 274 (calibration row).
+  omega_sun = 2*pi/25.3d = 2.874e-6 rad/s VERIFIED (real solar
+  rotation; corpus omega_s_Sun = 2.5e-6 dual-constant flagged).
+  v_osc = 3.48 m/s negligible as stated.
 
-  CONSTANT CROSS-LINKS:
-  - H_0 anchor 2.26e-18 s^-1 matches the registry A_5+SO_5 = 70
-    km/s/Mpc route to 0.37 pct (early canonical-H0 appearance?)
-  - Omega_g = [UA] = 1e-4: THIRD appearance (064 alpha_B, 068
-    M_eff, 072) - Q-060b canonization now 3-instance supported
-  - kappa/s = 5e-4/86400 = 5.787e-9 EXACT (S204.5 form)
-  - R_SCm Heaviside 1e13 = corpus Um amplifier
+  HONEST PINS:
+  - Solar log g +0.015 dex vs Gaia sigma 0.003 is EXACTLY 5.0
+    sigma; sec 4 instead compares vs population sigma 0.1-0.3
+    (<1 sigma) - dual-comparison ruling requested
+  - g_DPM column mixed conventions: Sirius 367 printed vs 193
+    computed (GM/R^2); Betelgeuse 10x off; WD 300x off; brown
+    dwarf matches M/R LINEAR - per-row corrections carried
 
-  HONEST FLAG: the f_TRZ derivation's raw ratio 1.46e9 needs an
-  UNSPECIFIED eps_coupling = 6.85e-11 to reach 0.10 -
-  calibration-closed, not parameter-free as printed.
-
-Q-068 queued. Gate 547 assertions 0 failures. Registry 225 rows /
-439 edges / 76 citation ledgers. Wired 76/2,255 (10 clean, 66
-OPEN_RULING). Next: PAPER_073.
+Q-069 queued. Gate 554 assertions 0 failures. Registry 228 rows /
+444 edges / 77 citation ledgers. Wired 77/2,255 (10 clean, 67
+OPEN_RULING). Next: PAPER_074.

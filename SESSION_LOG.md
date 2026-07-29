@@ -1123,3 +1123,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 76/2,255 (10 ✓, 66 ⚠). Next: PAPER_073.
 
 ---
+
+## 2026-07-29 — v0.76.0 — BAND 1: PAPER_073 — DOMAIN 1.10 OPENS
+
+- PAPER_073 wired (⚠ Q-069): Gaia DR4. SSq chains EXACT; 5-sigma
+  solar tension pinned honestly; g_DPM column defects corrected
+  per-row; dual solar-rotation constants flagged.
+- Campaign: 77/2,255 (10 ✓, 67 ⚠). Next: PAPER_074.
+
+---

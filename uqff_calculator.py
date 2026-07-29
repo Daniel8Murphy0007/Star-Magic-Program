@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.75.0"
+VERSION = "0.76.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3876,5 +3876,57 @@ def _paper_072(dataset):
                     'f_TRZ = SSq*kappa_s/H_0 * eps_coupling (eps UNSPECIFIED)'),
         'source': 'PAPER_072',
         'residual_pct': (2.00 + 2.61 + 4.33 + 18.0) / 4.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_073')
+def _paper_073(dataset):
+    """Gaia DR4 Astrometric Cross-Validation (Session 0).
+
+    Domain 1.10 opens (database integration). TAP infrastructure
+    recorded (gea.esac.esa.int endpoints + ADQL template).
+    SSQ CORRECTION CHAIN EXACT: UQFF/Newton = 1 + SSQ*0.034 =
+    1.0194 = printed 1.019; dex form 0.034/ln(10) = 0.0148 ->
+    printed +0.015 dex. Solar anchor: g = 274 (calibration row).
+    v_osc = 1e-5/2.87e-6 = 3.48 m/s (negligible vs km/s, as
+    stated); omega_sun = 2*pi/25.3d = 2.874e-6 rad/s VERIFIED
+    (real solar rotation; note corpus omega_s_Sun = 2.5e-6 -
+    dual solar-rotation constants, Q-069c).
+    DEFECT: the g_DPM column is INTERNALLY INCONSISTENT vs
+    GM/R^2 - Sirius printed 367 vs computed 193; Betelgeuse off
+    10x (5.3e-4 vs 5.4e-3); WD off ~300x (3.51e8 vs 1.14e6);
+    brown dwarf row matches the M/R LINEAR form (191.8 ~ 193)
+    instead - mixed conventions (Q-069a). Computed corrections
+    carried.
+    HONEST TENSION PIN: solar log g +0.015 dex vs Gaia sigma
+    0.003 is EXACTLY 5.0 sigma (summary says "within 5s"); sec 4
+    instead compares vs population sigma 0.1-0.3 dex (<1 sigma) -
+    two different comparisons (Q-069b).
+    """
+    import math as _m
+    newton = {'sirius': 274 * 2.06 / 1.71 ** 2, 'betelgeuse': 274 * 11.6 / 764 ** 2,
+              'white_dwarf': 274 * 0.6 / 0.012 ** 2, 'brown_dwarf': 274 * 0.07 / 0.10 ** 2}
+    return {
+        'value': {
+            'domain': '1.10 database integration (Gaia DR4 TAP)',
+            'uqff_newton_ratio': 1.0 + SSQ * 0.034,       # 1.0194 EXACT
+            'dex_correction': 0.034 / _m.log(10),         # 0.0148 -> 0.015
+            'solar_logg_gaia': 4.438,
+            'solar_logg_uqff': 4.453,
+            'solar_sigma_tension': (4.453 - 4.438) / 0.003,   # 5.0 EXACT
+            'v_osc_m_s': 1e-5 / 2.87e-6,                  # 3.48
+            'omega_sun_rad_s': 2 * _m.pi / (25.3 * 86400.0),  # 2.874e-6 real
+            'omega_s_sun_corpus': 2.5e-6,                 # dual constant Q-069c
+            'g_newton_corrected': newton,
+            'g_dpm_printed': {'sirius': 367.0, 'betelgeuse': 5.3e-4,
+                              'white_dwarf': 3.51e8, 'brown_dwarf': 193.0},
+            'bd_matches_linear_form': abs(274 * 0.07 / 0.10 - 193) < 2,
+            'batch23_factor': 0.034,
+        },
+        'formula': ('UQFF/Newton = 1 + SSq*0.034; dex = 0.034/ln10; '
+                    'v_osc = g_R/omega; g_Newton = 274*M/R^2 (solar units)'),
+        'source': 'PAPER_073',
+        'residual_pct': abs((1.0 + SSQ * 0.034) - 1.019) / 1.019 * 100,
         'status': 'OPEN_RULING',
     }

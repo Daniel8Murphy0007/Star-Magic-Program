@@ -1221,6 +1221,28 @@ RESOLVED section with the ruling recorded.
   calibration-closure flag on the f_TRZ derivation.
 - **Daniel's ruling:** (pending)
 
+### Q-069 — PAPER_073 — g_DPM column defects + 5-sigma dual comparison + solar rotation + 0.034
+- **Question:** (a) The g_DPM column is internally inconsistent
+  vs GM/R^2: Sirius printed 367 vs computed 193; Betelgeuse off
+  10x (5.3e-4 vs 5.4e-3); white dwarf off ~300x (3.51e8 vs
+  1.14e6); the brown-dwarf row instead matches the M/R LINEAR
+  form (191.8 ~ printed 193) - mixed conventions. Pin the
+  computed GM/R^2 corrections? (b) Solar log g: the +0.015 dex
+  UQFF correction vs Gaia solar sigma 0.003 is EXACTLY 5.0 sigma
+  (summary prints "within 5s"), while sec 4 compares vs the
+  GSP-Phot population sigma 0.1-0.3 dex (<1 sigma) - which
+  comparison is the canonical falsifiability statement?
+  (c) omega_sun = 2*pi/25.3d = 2.874e-6 rad/s here (real solar
+  rotation) vs the corpus omega_s_Sun = 2.5e-6 rad/s - dual
+  solar-rotation constants; which for stellar-rotation inputs?
+  (d) The 0.034 Batch-23 correction factor - provenance?
+- **Notable:** UQFF/Newton = 1 + SSq*0.034 = 1.0194 chain closes
+  EXACTLY against the printed 1.019 offset; dex chain 0.0148 ->
+  0.015 closes; Domain 1.10 opens with the Gaia TAP endpoints.
+- **Best-candidate wired:** SSq chains + solar anchors + per-row
+  Newton corrections carried alongside printed values.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

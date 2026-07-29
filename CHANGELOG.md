@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.76.0] — 2026-07-29 — BAND 1: PAPER_073 — DOMAIN 1.10 OPENS
+
+### Added
+- **PAPER_073 dispatch** (Gaia DR4 Cross-Validation): Domain 1.10
+  (database integration) opens with the Gaia TAP endpoints + ADQL
+  template recorded. SSq correction chain EXACT: UQFF/Newton =
+  1 + SSq*0.034 = 1.0194 (printed 1.019); dex form 0.034/ln10 =
+  0.0148 (printed 0.015). omega_sun = 2*pi/25.3d = 2.874e-6
+  verified (real solar rotation; corpus 2.5e-6 dual flagged).
+- **Honest pins:** solar log g +0.015 dex vs Gaia sigma 0.003 is
+  EXACTLY 5.0 sigma (vs the <1-sigma population comparison in
+  sec 4 — dual-comparison ruling queued); g_DPM column mixed
+  conventions (Sirius 367 vs 193 computed; Betelgeuse 10x; WD
+  300x; brown dwarf matches M/R linear) — per-row corrections
+  carried.
+- OPEN_RULING Q-069.
+- Gate: 554 assertions, 0 failures. Registry: 228 rows / 444 edges / 77 ledgers.
+
+---
+
 ## [0.75.0] — 2026-07-29 — BAND 1: PAPER_072
 
 ### Added

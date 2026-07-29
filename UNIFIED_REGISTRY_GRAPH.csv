@@ -439,3 +439,8 @@ observable,rdr_constant_crosslinks,paper,PAPER_072,cross-links
 primitive,H0_GRID,observable,rdr_constant_crosslinks,anchor identity 0.37 pct
 primitive,KAPPA_PER_DAY,observable,rdr_constant_crosslinks,per-second form
 observable,rdr_loss_budget,paper,PAPER_072,loss accounting
+observable,gaia_dr4_ssq_correction,paper,PAPER_073,primary derivation
+primitive,SSQ,observable,gaia_dr4_ssq_correction,correction factor
+observable,gdpm_column_defect,paper,PAPER_073,column forensic
+observable,solar_rotation_dual,paper,PAPER_073,dual-constant flag
+observable,gaia_dr4_ssq_correction,paper,PAPER_064,Compressed-mode basis

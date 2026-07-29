@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 76 (10 ✓, 66 ⚠ OPEN_RULING)
+- **Wired:** 77 (10 ✓, 67 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2179
+- **Not yet touched:** 2178
 
 ---
 
@@ -106,7 +106,7 @@
 | ⚠ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF |
 | ⚠ | PAPER_071 | Stellar Superflare Energy Budget UQFF |
 | ⚠ | PAPER_072 | Red Dwarf Reactor Physics UQFF |
-| ⬜ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |
+| ⚠ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |
 | ⬜ | PAPER_074 | NED SIMBAD Galactic Structure UQFF |
 | ⬜ | PAPER_075 | XRay Binaries Chandra UQFF |
 | ⬜ | PAPER_076 | FermiLAT GammaRay UQFF |

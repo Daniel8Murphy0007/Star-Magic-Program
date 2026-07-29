@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.75.0", "uqff_calculator.VERSION = 0.75.0")
+assert_that(C.VERSION == "0.76.0", "uqff_calculator.VERSION = 0.76.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1208,6 +1208,21 @@ assert_that(abs(_r072['loss_budget_net'] - 0.123) < 1e-12,
 assert_that(_r072['eps_coupling_implied'] < 1e-10,
             "PAPER_072: f_TRZ derivation needs unspecified eps ~ 6.85e-11 - calibration-closed flag (Q-068a)")
 assert_that(C.wired_count() >= 76, "wired_count >= 76")
+
+_r073 = C.calc('PAPER_073')['value']
+assert_that(abs(_r073['uqff_newton_ratio'] - 1.0194) < 0.0001,
+            "PAPER_073: UQFF/Newton = 1 + SSq*0.034 = 1.0194 EXACT chain")
+assert_that(abs(_r073['dex_correction'] - 0.0148) < 0.0005,
+            "PAPER_073: dex correction 0.034/ln10 = 0.0148 -> printed 0.015 chain")
+assert_that(abs(_r073['solar_sigma_tension'] - 5.0) < 0.01,
+            "PAPER_073: solar log g tension EXACTLY 5.0 sigma vs Gaia 0.003 - honest pin (Q-069b)")
+assert_that(abs(_r073['omega_sun_rad_s'] - 2.874e-6) / 2.874e-6 < 0.001,
+            "PAPER_073: omega_sun = 2*pi/25.3d = 2.874e-6 verified (real solar rotation)")
+assert_that(_r073['bd_matches_linear_form'],
+            "PAPER_073: brown-dwarf row matches M/R LINEAR form - g_DPM column mixed conventions (Q-069a)")
+assert_that(abs(_r073['g_newton_corrected']['sirius'] - 193.0) < 1.0,
+            "PAPER_073: Sirius Newton correction 193 vs printed 367 pinned")
+assert_that(C.wired_count() >= 77, "wired_count >= 77")
 
 # =============================================================================
 # REPORT
