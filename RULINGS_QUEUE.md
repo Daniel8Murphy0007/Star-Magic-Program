@@ -1537,6 +1537,7 @@ RESOLVED section with the ruling recorded.
   unlike 081 there is no in-paper implemented-value proof here.)
   [FORK GROWS: PAPER_091's pulsar-timing enhancement carries the same 1-vs-10-pct fork - see Q-087c; one ruling decides both.]
   [FOUR OBSERVABLES NOW: + FRB spectral slope (Q-092c) + THz-bench transmission dip (Q-096c, most lab-accessible).]
+  [TWIST at #5: PAPER_102 viscosity favors the DRIFT branch (canonical excluded in lab fluids) - context-dependence evidence; see Q-098a.]
   (b) The excess is printed THREE ways: 0.3 pct (abstract),
   1.0 pct (sections/summary), +0.35 pct (summary Ug4 row) -
   internal inconsistency pin. (c) Flavor null is ROBUST under
@@ -1830,6 +1831,28 @@ RESOLVED section with the ruling recorded.
   8th instance (superseded layer).
 - **Best-candidate wired:** canonical 1.736 GeV primary with the
   full epoch chain preserved.
+- **Daniel's ruling:** (pending)
+
+### Q-098 — PAPER_102 — fork twist (drift-favoring) + enstrophy relation + F_LENR
+- **Question:** (a) FORK TWIST: the fifth f_TRZ fork instance is
+  the FIRST where observation favors the DRIFT branch -
+  canonical F_TRZ gives nu*1.099 (+9.9 pct effective viscosity),
+  experimentally EXCLUDED in ordinary fluids, while the drift
+  1.0099 is consistent. This is strong CONTEXT-DEPENDENCE
+  evidence for the Q-084a joint ruling: does the vacuum-coupling
+  strength differ between lab fluids and astrophysical vacua
+  (making both branches right in their domains)? (b) The
+  later-corpus canonical NS Millennium closure is the ENSTROPHY
+  CAP 0.85 - what is its relation to this S0 viscosity
+  mechanism (supersession or complementary layer)? (c) F_LENR =
+  1.56e36 N oscillatory body force - provenance (time-average
+  zero presumed)? (d) Kolmogorov eta_K = 2.83e-14 m - inputs?
+- **Notable:** nu chain and Re shift EXACT; honest non-rigor
+  labeling (Rule-7); the 1.25-THz phonon carrier as a turbulence
+  UV cutoff is an elegant falsifiable structure; f_vac chain
+  EXACT negligible.
+- **Best-candidate wired:** both fork branches with the twist
+  documented; S204 layer chains; enstrophy relation queued.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -579,3 +579,8 @@ observable,yang_mills_gap,paper,PAPER_101,Millennium primary
 primitive,SSQ,observable,yang_mills_gap,S26 factor input
 observable,ym_epoch_defects,paper,PAPER_101,epoch forensics
 observable,ym_epoch_defects,paper,PAPER_086,Ug4 formula family
+observable,navier_stokes_regularization,paper,PAPER_102,Millennium 2
+primitive,F_TRZ,observable,navier_stokes_regularization,fork twist
+observable,navier_stokes_regularization,paper,PAPER_090,d_fluid term basis
+observable,ns_lenr_body_force,paper,PAPER_102,S204 layer
+primitive,OMEGA_SCM_HZ,observable,ns_lenr_body_force,UV cutoff

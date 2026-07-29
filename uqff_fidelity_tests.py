@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.104.0", "uqff_calculator.VERSION = 0.104.0")
+assert_that(C.VERSION == "0.105.0", "uqff_calculator.VERSION = 0.105.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1595,6 +1595,19 @@ assert_that(abs(_r101['hbar_c_fm_gev'] - 0.1976) < 0.001,
 assert_that('heuristic' in _r101['honesty'],
             "PAPER_101: Rule-7 exemplary honesty - no rigor claim on the Millennium problem")
 assert_that(C.wired_count() >= 105, "wired_count >= 105")
+
+_r102 = C.calc('PAPER_102')['value']
+assert_that(abs(_r102['nu_factor_drift'] - 1.0099) < 1e-9,
+            "PAPER_102: nu_eff = nu*(1 + [SCm]*f_TRZ) = 1.0099 EXACT")
+assert_that(abs(_r102['nu_factor_canonical'] - 1.099) < 1e-9,
+            "PAPER_102: canonical branch +9.9 pct viscosity EXCLUDED in lab fluids - fork twist (Q-098a)")
+assert_that(abs(_r102['re_shift_pct'] - (-0.98)) < 0.01,
+            "PAPER_102: Reynolds shift -0.98 pct EXACT")
+assert_that(abs(_r102['f_vac_n_m3'] - 7.09e-74) < 1e-80,
+            "PAPER_102: f_vac = k_vac*rho_vac = 7.09e-74 EXACT (negligible)")
+assert_that('not rigorous' in _r102['honesty'],
+            "PAPER_102: Rule-7 honest labeling preserved on Millennium problem 2")
+assert_that(C.wired_count() >= 106, "wired_count >= 106")
 
 # =============================================================================
 # REPORT

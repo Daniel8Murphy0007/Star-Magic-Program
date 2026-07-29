@@ -1,27 +1,29 @@
-v0.104.0 BAND 1: PAPER_101 wired - YANG-MILLS 1.736 GeV CANONICAL
+v0.105.0 BAND 1: PAPER_102 wired - FORK TWIST FAVORS DRIFT IN LAB FLUIDS
 
-PAPER_101 Yang-Mills Existence and Mass Gap (OPEN_RULING Q-097):
-  FIRST MILLENNIUM PAPER of the sequence - and a THREE-EPOCH
-  supersession chain visible in ONE file:
-  1. Session-0 heuristic: Delta = f_TRZ * Lambda_QCD = 2 MeV
-     (EXACT chain; honestly labeled "heuristic argument only" -
-     Rule-7 exemplary)
-  2. Session-202/204: m_gap = 5969.92 GeV (PAPER_183; internal
-     ratio 29849.6x EXACT)
-  3. Session-225 CANONICAL: Delta_YM = 1.736 GeV (PAPER_1318
-     integer-primitive closure; lattice anchor 1.7 GeV, 2.1 pct)
+PAPER_102 Navier-Stokes Existence and Smoothness (OPEN_RULING
+Q-098):
+  MILLENNIUM PROBLEM 2. UQFF regularization: nu_eff = nu*(1 +
+  [SCm]*f_TRZ) = nu*1.0099 EXACT - [SCm] > 0 everywhere means no
+  UQFF fluid is truly inviscid -> global-smoothness physical
+  argument (HONESTLY labeled "not a rigorous proof"). Re shift
+  -0.98 pct EXACT.
 
-  WIRED PRIMARY = 1.736 GeV per the self-rectification doctrine
-  (the predecessor-gate-pinned value); both earlier epochs
-  recorded as superseded.
+  FORK TWIST - IMPORTANT FOR THE JOINT RULING: the fifth f_TRZ
+  fork instance is the FIRST where observation favors the DRIFT
+  branch. Canonical F_TRZ would give +9.9 pct effective
+  viscosity - experimentally EXCLUDED in ordinary fluids - while
+  drift 1.0099 is consistent. Strong evidence that the coupling
+  is CONTEXT-DEPENDENT (lab fluids vs astrophysical vacua),
+  which would let both branches be right in their domains.
+  Q-084a annotated.
 
-  DEFECTS PINNED: S0 chain used 1e-12 J/GeV (x160 off; hbar*c/fm
-  = 197.6 MeV, not 31.65 GeV); Ug4_QCD chain evaluates 4.9e96 vs
-  quoted 1e32 (the Q-082a Ug4-formula family); v_SCm = 3.00e4
-  m/s vs later-corpus v_F = 0.77e6 - distinct constants?
-  f_TRZ drift 8th instance (superseded layer). sigma = 0.180
-  GeV^2 + H_SCm registry values recorded.
+  S204 layer: f_vac = 1e-38*7.09e-36 = 7.09e-74 N/m3 EXACT
+  (negligible); F_LENR = 1.56e36 N oscillatory at omega_LENR =
+  2*pi*1.25 THz (062-identity-consistent); SPECTRAL CUTOFF above
+  1.25 THz - the phonon carrier as a turbulence UV cutoff;
+  Kolmogorov eta_K = 2.83e-14 m. Later-corpus canonical
+  (enstrophy cap 0.85) relation ruling queued.
 
-Q-097 queued. Gate 725 assertions 0 failures. Registry 284 rows /
-579 edges / 105 citation ledgers. Wired 105/2,255 (10 clean, 95
-OPEN_RULING). Next: PAPER_102.
+Q-098 queued. Gate 731 assertions 0 failures. Registry 286 rows /
+584 edges / 106 citation ledgers. Wired 106/2,255 (10 clean, 96
+OPEN_RULING). Next: PAPER_103.

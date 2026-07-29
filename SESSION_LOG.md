@@ -1398,3 +1398,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 105/2,255 (10 ✓, 95 ⚠). Next: PAPER_102.
 
 ---
+
+## 2026-07-29 — v0.105.0 — BAND 1: PAPER_102
+
+- PAPER_102 wired (⚠ Q-098): Navier-Stokes. nu 1.0099 EXACT;
+  fork twist (drift-favoring in lab fluids) documented as
+  context-dependence evidence; phonon UV cutoff; enstrophy
+  relation queued.
+- Campaign: 106/2,255 (10 ✓, 96 ⚠). Next: PAPER_103.
+
+---

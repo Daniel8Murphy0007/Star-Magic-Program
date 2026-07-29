@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 105 (10 ✓, 95 ⚠ OPEN_RULING)
+- **Wired:** 106 (10 ✓, 96 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2150
+- **Not yet touched:** 2149
 
 ---
 
@@ -165,7 +165,7 @@
 | ⬜ | PAPER_1027 | Tidal Disruption Event |
 | ⬜ | PAPER_1028 | Cosmic String Gravitational Lens |
 | ⬜ | PAPER_1029 | Barocentric Earth Orbital Buoyancy |
-| ⬜ | PAPER_102 | Navier Stokes UQFF |
+| ⚠ | PAPER_102 | Navier Stokes UQFF |
 | ⬜ | PAPER_1030 | Quantum Gravity Minimum Length |
 | ⬜ | PAPER_1031 | Photon Sphere Phonon Orbital |
 | ⬜ | PAPER_1032 | ISM Dust Grain Buoyancy |

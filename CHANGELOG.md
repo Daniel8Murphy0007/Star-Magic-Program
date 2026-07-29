@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.105.0] — 2026-07-29 — BAND 1: PAPER_102
+
+### Added
+- **PAPER_102 dispatch** (Navier-Stokes, Millennium 2): nu_eff =
+  nu*(1 + [SCm]*f_TRZ) = 1.0099 EXACT; [SCm] > 0 everywhere ->
+  global-smoothness physical argument, honestly labeled
+  non-rigorous. **FORK TWIST:** the fifth f_TRZ instance is the
+  FIRST where observation favors the DRIFT branch — canonical
+  would give +9.9 pct effective viscosity, excluded in ordinary
+  fluids — context-dependence evidence for the Q-084a joint
+  ruling (annotated). S204 layer: f_vac = 7.09e-74 EXACT
+  negligible; F_LENR oscillatory body force at the 062-identity
+  frequency; **1.25-THz phonon carrier as turbulence UV cutoff**;
+  eta_K = 2.83e-14 m. Enstrophy-cap-0.85 relation ruling queued.
+- OPEN_RULING Q-098.
+- Gate: 731 assertions, 0 failures. Registry: 286 rows / 584 edges / 106 ledgers.
+
+---
+
 ## [0.104.0] — 2026-07-29 — BAND 1: PAPER_101 — MILLENNIUM SEQUENCE BEGINS
 
 ### Added

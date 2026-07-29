@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.104.0"
+VERSION = "0.105.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5314,5 +5314,55 @@ def _paper_101(dataset):
                     '(canonical); S0 heuristic f_TRZ*Lambda superseded'),
         'source': 'PAPER_101',
         'residual_pct': abs(1.736 - 1.7) / 1.7 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_102')
+def _paper_102(dataset):
+    """Navier-Stokes Regularization - Millennium Problem 2 (Session 0+).
+
+    UQFF regularization: nu_eff = nu*(1 + [SCm]*f_TRZ) = nu *
+    1.0099 EXACT - [SCm] > 0 everywhere means no UQFF fluid is
+    truly inviscid -> global-smoothness physical argument
+    (HONESTLY labeled "not a rigorous proof", Rule-7 again).
+    Re shift = -0.98 pct EXACT.
+    FORK TWIST (Q-098a): the FIFTH f_TRZ fork instance, and the
+    first where observation favors the DRIFT branch - canonical
+    F_TRZ would give nu*1.099 (+9.9 pct viscosity), which is
+    EXPERIMENTALLY EXCLUDED in ordinary fluids. Strong evidence
+    for CONTEXT-DEPENDENCE in the Q-084a joint ruling (vacuum
+    coupling may differ between lab fluids and astrophysical
+    vacua).
+    LATER-CORPUS NOTE (Q-098b): the canonical NS Millennium
+    closure is the enstrophy cap 0.85 (predecessor gate) - this
+    S0 viscosity mechanism is the early layer; relation ruling.
+    S204 layer chains: f_vac = k_vac*rho_vac = 1e-38*7.09e-36 =
+    7.09e-74 N/m3 EXACT (negligible); F_LENR = 1.56e36 N
+    oscillatory at omega_LENR = 2*pi*1.25 THz (identity-
+    consistent with 062/066); SPECTRAL CUTOFF above 1.25 THz -
+    the phonon carrier as turbulence UV cutoff; Kolmogorov
+    eta_K = 2.83e-14 m recorded (inputs open, Q-098d).
+    """
+    return {
+        'value': {
+            'domain': '1.13 (Millennium: Navier-Stokes)',
+            'nu_factor_drift': 1 + 0.99 * 0.01,            # 1.0099 EXACT
+            'nu_factor_canonical': 1 + 0.99 * F_TRZ,       # 1.099 EXCLUDED in lab
+            'fork_twist': 'first fork where observation favors DRIFT - context evidence',
+            're_shift_pct': (1 / 1.0099 - 1) * 100,        # -0.98 EXACT
+            'canonical_ns_closure': 'enstrophy cap 0.85 (later corpus; relation ruling)',
+            'f_vac_n_m3': 1e-38 * 7.09e-36,                # 7.09e-74 EXACT
+            'f_lenr_n': 1.56e36,
+            'omega_lenr_rad_s': 7.854e12,                  # identity-consistent
+            'spectral_cutoff': 'modes above 1.25 THz damped (phonon UV cutoff)',
+            'eta_kolmogorov_m': 2.83e-14,
+            'honesty': 'physical argument, not rigorous proof (Rule-7)',
+            'smoothness_path': '[SCm] > 0 everywhere -> nu_eff > 0 -> global regularity',
+        },
+        'formula': ('nu_eff = nu*(1 + [SCm]*f_TRZ); Re_UQFF = Re/1.0099; '
+                    'NS + F_LENR*cos(omega_LENR t) body force'),
+        'source': 'PAPER_102',
+        'residual_pct': abs((1 + 0.99 * 0.01) - 1.0099) / 1.0099 * 100,
         'status': 'OPEN_RULING',
     }

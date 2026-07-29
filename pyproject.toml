@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.104.0"
-description = "UQFF Star-Magic-Program v0.104.0: PAPER_101 wired (Yang-Mills mass gap - first Millennium paper: three-epoch supersession chain in one file resolved to the canonical 1.736 GeV (PAPER_1318, lattice 1.7, 2.1 pct) per self-rectification doctrine; S0 heuristic honestly labeled; x160 GeV-conversion defect + Ug4-family chain gap pinned; v_SCm-vs-v_F distinct-constants ruling queued). Q-097 queued. Wired 105/2255, gate 725/0. Registry 284 rows / 579 edges / 105 ledgers."
+version = "0.105.0"
+description = "UQFF Star-Magic-Program v0.105.0: PAPER_102 wired (Navier-Stokes Millennium 2: nu_eff = 1.0099 EXACT with honest non-rigor labeling; FORK TWIST - the first drift-favoring observable (canonical +9.9 pct viscosity excluded in lab fluids), context-dependence evidence for the joint f_TRZ ruling; 1.25-THz phonon UV cutoff for turbulence; enstrophy-cap relation queued). Q-098 queued. Wired 106/2255, gate 731/0. Registry 286 rows / 584 edges / 106 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
