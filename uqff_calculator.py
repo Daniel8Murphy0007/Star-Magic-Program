@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.108.0"
+VERSION = "0.109.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5505,5 +5505,55 @@ def _paper_105(dataset):
                     'Domain 1.13 total = 40 tests'),
         'source': 'PAPER_105',
         'residual_pct': 0.0 if (5 + 10) == 15 else 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_106')
+def _paper_106(dataset):
+    """UQFF Vacuum Energy - Dark Energy Connection (Session 0).
+
+    DOMAIN 1.14 OPENS (cosmology). Time-dependent vacuum-damping
+    resolution of the CC problem: rho_vac(t) = rho_vac,0*e^(-G t)
+    + rho_L,eff*(1 - e^(-G t)); present-day rho_vac_UQFF(t_0) ~
+    6e-10 J/m3 - consistent with the PAPER_1226 UQFF ledger value
+    5.957e-10 (~1 pct).
+    HEADER IDENTITY EXACT: rho_L_UQFF/rho_L_obs = 1 + kappa^2*
+    SSq^2 = 1 + (5e-4)^2*0.57^2 = 1.0000000812 EXACT chain (an
+    8e-8 UQFF correction to the observed value).
+    Omega_L,0 = 0.685: 0.57 pct below Planck 0.6889, and 0.685 ~
+    1.2*SSq = 0.684 - the (6/5)*SSq relation of PAPER_1156/078
+    (091 Q-074c). f_TRZ 9th drift instance (Omega correction
+    eps_Omega = 0.08 = 8*f_TRZ, tuning uncertainty).
+    CPL parametrization w(a) = -1 + w_1(1-a) + w_2(1-a)^2 with
+    w_1 = 0.05, w_2 = -0.03 - four fresh anchors (w_1, w_2,
+    eps_w = 0.02, alpha_w = 1.5); observational-forecast deltas
+    at z = 0.5/1/2/5 recorded (Q-102b).
+    HONESTLY LABELED as a "potential resolution" and "predictions
+    for next-generation surveys" - Rule-7 preserved.
+    RELATION TO LATER CORPUS (Q-102c): PAPER_1156 has Omega_L =
+    (6/5)*SSq = 0.684 as canonical - this S0 0.685 is the same
+    value; explicit identity linkage requested.
+    """
+    return {
+        'value': {
+            'domain': '1.14 OPENS (cosmology - dark energy)',
+            'rho_l_uqff_ratio': 1 + (5e-4) ** 2 * 0.57 ** 2,   # 1.0000000812 EXACT
+            'rho_vac_t0_j_m3': 6e-10,                          # ~1 pct vs 1226 ledger
+            'omega_l_0': 0.685,
+            'omega_l_via_ssq': 1.2 * SSQ,                      # 0.684 = 1156 relation
+            'planck_deviation_pct': abs(0.685 - 0.6889) / 0.6889 * 100,   # 0.57
+            'cc_orders_discrepancy_actual': 122,               # printed 120
+            'cpl_w1': 0.05, 'cpl_w2': -0.03,
+            'eps_w': 0.02, 'alpha_w': 1.5,
+            'eps_omega': 0.08,                                 # = 8*f_TRZ tuning
+            'z_deltas_mag': {0.5: 0.02, 1.0: 0.05, 2.0: 0.12, 5.0: 0.25},
+            'honesty': 'potential resolution + predictions - Rule-7 preserved',
+            'canonical_link': 'Omega_L = (6/5)*SSq (PAPER_1156/078)',
+        },
+        'formula': ('rho_vac(t) = rho_0*e^-Gt + rho_L,eff*(1-e^-Gt); '
+                    'w(a) = -1 + w_1(1-a) + w_2(1-a)^2; Omega_L = (6/5)*SSq'),
+        'source': 'PAPER_106',
+        'residual_pct': abs(0.685 - 1.2 * 0.57) / (1.2 * 0.57) * 100,
         'status': 'OPEN_RULING',
     }

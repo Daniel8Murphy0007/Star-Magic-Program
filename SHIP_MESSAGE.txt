@@ -1,29 +1,29 @@
-v0.108.0 BAND 1: PAPER_105 wired - DOMAIN 1.13 CAPSTONE
+v0.109.0 BAND 1: PAPER_106 wired - DOMAIN 1.14 OPENS (DARK ENERGY)
 
-PAPER_105 BH Phases + 10 Galaxy/Nebula Models (OPEN_RULING
-Q-101):
-  DOMAIN 1.13 CAPSTONE (multi-physics models).
+PAPER_106 UQFF Vacuum Energy - Dark Energy Connection
+(OPEN_RULING Q-102):
+  DOMAIN 1.14 OPENS (cosmology). Time-dependent vacuum-damping
+  resolution of the CC problem: rho_vac(t) evolves toward
+  rho_L_eff ~ 6e-10 J/m3 (~1 pct vs the PAPER_1226 UQFF ledger
+  value 5.957e-10).
 
-  Part A - 5-phase BH lifecycle (formation / accretion /
-  Kerr-active / quiescent / late-evaporation, Drawings 5-9):
-  phase-2 accretion eta = [SCm]*eta_acc = 0.099 EXACT (087/078/
-  075 family); phase-5 T_UQFF = 0.99 T_H inherits the 081
-  identity.
+  HEADER IDENTITY EXACT: rho_L_UQFF/rho_L_obs =
+  1 + kappa^2*SSq^2 = 1 + (5e-4)^2*0.57^2 = 1.0000000812
+  (an 8e-8 UQFF correction to observed rho_L).
 
-  Part B - the 10-model galaxy/nebula suite (NGC2264 / UGC10214
-  / NGC4676 / RedSpider / NGC3372 / AGCarinae / M42 / Tarantula
-  / NGC2841 / MysticMountain) is IDENTICALLY the PAPER_053-058
-  objects, each mapped to one of the 8 PAPER_089 calculator
-  architectures - a structural re-expression (architecture
-  assignment), not new physics.
+  Omega_L,0 = 0.685: 0.57 pct below Planck 0.6889, AND
+  0.685 ~ 1.2*SSq = 0.684 - the canonical (6/5)*SSq relation
+  of PAPER_1156/078 (Q-074c link). Canonization queued.
 
-  Arithmetic EXACT: 5 BH phases + 10 galaxy models = 15 Part C;
-  the grand tally 15+5+5+5+5+5 = 40 tests across Papers 96-105 -
-  the Domain-1.13 total. 15/15 PASS.
+  CPL parametrization w(a) = -1 + w_1(1-a) + w_2(1-a)^2 with
+  four fresh anchors: w_1 = 0.05, w_2 = -0.03, eps_w = 0.02,
+  alpha_w = 1.5. Supernova z-deltas 0.02/0.05/0.12/0.25 mag at
+  z = 0.5/1/2/5 - campaign-tracked falsifiable.
 
-  CLOSES DOMAIN 1.13 (PAPER_096-105).
+  f_TRZ drift 9th instance (eps_Omega = 0.08 = 8*f_TRZ tuning).
+  Rule-7 honest "potential resolution / predictions for next-
+  generation surveys" labeling preserved.
 
-Q-101 queued (suite provenance / fresh-claim status). Gate 748
-assertions 0 failures. Registry 290 rows / 599 edges / 109
-citation ledgers. Wired 109/2,255 (10 clean, 99 OPEN_RULING).
-Next: PAPER_106.
+Q-102 queued. Gate 754 assertions 0 failures. Registry 292 rows /
+604 edges / 110 citation ledgers. Wired 110/2,255 (10 clean, 100
+OPEN_RULING). Next: PAPER_107.

@@ -1917,6 +1917,27 @@ RESOLVED section with the ruling recorded.
   + exact tallies; provenance ruling queued.
 - **Daniel's ruling:** (pending)
 
+### Q-102 — PAPER_106 — canonical Omega_L identity + CPL anchors + relation
+- **Question:** (a) Omega_L = 0.685 anchor here vs Omega_L =
+  (6/5)*SSq = 0.684 (PAPER_1156 canonical, PAPER_078 companion)
+  - explicit-identity linkage; canonize the (6/5)*SSq route as
+  the ORIGIN of the 0.685 anchor here? (b) CPL parametrization
+  four fresh anchors (w_1 = 0.05, w_2 = -0.03, eps_w = 0.02,
+  alpha_w = 1.5) with z-deltas 0.02/0.05/0.12/0.25 mag - pin as
+  campaign-tracked falsifiable for supernova surveys?
+  (c) Relation to the later-corpus canonical dark-energy suite
+  (PAPER_1156 Omega_L 0.71 pct; PAPER_1226 rho_L 5.957e-10; the
+  120-order fine-tuning landmark) - complementary or superseded?
+  (d) eps_Omega = 0.08 = 8*f_TRZ (drift 9th instance, tuning
+  uncertainty).
+- **Notable:** header identity 1 + kappa^2*SSq^2 = 1.0000000812
+  EXACT (an 8e-8 UQFF correction to observed rho_L); Domain 1.14
+  opens with a properly-honest cosmology paper; the "120 orders"
+  claim is the corpus's later-canonized landmark.
+- **Best-candidate wired:** header + anchors + (6/5)*SSq link
+  carried; canonization queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.109.0] — 2026-07-29 — BAND 1: PAPER_106 — DOMAIN 1.14 OPENS
+
+### Added
+- **PAPER_106 dispatch** (Vacuum Energy / Dark Energy, Domain
+  1.14 opens): time-dependent vacuum-damping CC resolution.
+  **Header identity EXACT:** rho_L_UQFF/rho_L_obs = 1 + kappa^2*
+  SSq^2 = 1.0000000812 (an 8e-8 UQFF correction to the observed
+  value). Omega_L,0 = 0.685 links to canonical (6/5)*SSq =
+  0.684 (PAPER_1156/078 — the 091 Q-074c relation). CPL
+  parametrization w(a) = -1 + w_1(1-a) + w_2(1-a)^2 with four
+  fresh anchors (w_1, w_2, eps_w, alpha_w) and z-deltas
+  0.02/0.05/0.12/0.25 mag for supernova surveys. f_TRZ drift
+  9th (eps_Omega = 0.08 = 8*f_TRZ). Rule-7 honest "potential
+  resolution" labeling preserved.
+- OPEN_RULING Q-102.
+- Gate: 754 assertions, 0 failures. Registry: 292 rows / 604 edges / 110 ledgers.
+
+---
+
 ## [0.108.0] — 2026-07-29 — BAND 1: PAPER_105 — DOMAIN 1.13 CAPSTONE
 
 ### Added

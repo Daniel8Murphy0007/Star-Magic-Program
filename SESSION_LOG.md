@@ -1436,3 +1436,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 109/2,255 (10 ✓, 99 ⚠). Next: PAPER_106.
 
 ---
+
+## 2026-07-29 — v0.109.0 — BAND 1: PAPER_106 — DOMAIN 1.14 OPENS
+
+- PAPER_106 wired (⚠ Q-102): dark energy. Header identity
+  1+κ²SSq² EXACT; Ω_L = (6/5)SSq canonical linkage; CPL anchors
+  falsifiable; f_TRZ 9th drift; Domain 1.14 opens.
+- Campaign: 110/2,255 (10 ✓, 100 ⚠). Next: PAPER_107.
+
+---

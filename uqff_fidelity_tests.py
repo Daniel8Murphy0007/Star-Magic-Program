@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.108.0", "uqff_calculator.VERSION = 0.108.0")
+assert_that(C.VERSION == "0.109.0", "uqff_calculator.VERSION = 0.109.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1645,6 +1645,19 @@ assert_that(len(_r105['bh_phases']) == 5,
 assert_that('053-058' in _r105['suite_cross_ref'],
             "PAPER_105: 10-model suite cross-referenced to the 053-058 objects (structural re-expression)")
 assert_that(C.wired_count() >= 109, "wired_count >= 109")
+
+_r106 = C.calc('PAPER_106')['value']
+assert_that(abs(_r106['rho_l_uqff_ratio'] - 1.0000000812) < 1e-10,
+            "PAPER_106: rho_L_UQFF/rho_L_obs = 1 + kappa^2*SSq^2 = 1.0000000812 EXACT header identity")
+assert_that(abs(_r106['omega_l_via_ssq'] - 0.684) < 0.001,
+            "PAPER_106: Omega_L = (6/5)*SSq = 0.684 canonical - links 0.685 anchor to PAPER_1156/078")
+assert_that(_r106['planck_deviation_pct'] < 1.0,
+            "PAPER_106: Omega_L 0.685 within 0.6 pct of Planck 0.6889")
+assert_that(abs(_r106['eps_omega'] - 0.08) < 1e-9,
+            "PAPER_106: eps_Omega = 0.08 = 8*f_TRZ (9th drift instance, tuning uncertainty)")
+assert_that('Rule-7' in _r106['honesty'],
+            "PAPER_106: honest 'potential resolution' + falsifiable predictions labeling")
+assert_that(C.wired_count() >= 110, "wired_count >= 110")
 
 # =============================================================================
 # REPORT

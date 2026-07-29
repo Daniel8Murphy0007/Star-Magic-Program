@@ -599,3 +599,8 @@ observable,domain_113_capstone,paper,PAPER_105,capstone
 observable,domain_113_capstone,paper,PAPER_053,10-model suite
 observable,domain_113_capstone,paper,PAPER_089,architecture map
 observable,domain_113_capstone,paper,PAPER_081,phase-5 T-ratio identity
+observable,dark_energy_cc_resolution,paper,PAPER_106,CC resolution
+primitive,KAPPA_PER_DAY,observable,dark_energy_cc_resolution,header identity
+primitive,SSQ,observable,dark_energy_cc_resolution,header + Omega_L
+observable,dark_energy_cc_resolution,paper,PAPER_078,Hubble-tension companion
+observable,cpl_falsifiable_predictions,paper,PAPER_106,CPL anchors
