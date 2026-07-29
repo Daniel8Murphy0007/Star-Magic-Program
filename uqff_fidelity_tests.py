@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.20.0", "uqff_calculator.VERSION = 0.20.0")
+assert_that(C.VERSION == "0.21.0", "uqff_calculator.VERSION = 0.21.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -385,6 +385,19 @@ assert_that(abs(_r019['alpha_gr'] + 2.0/3.0) < 1e-15,
 assert_that(abs(_r019['d_sq_keyresults'] * _r019['d_total_fyr'] - 1.0) < 0.001,
             "PAPER_019: key-results 0.625 = 1/1.60 - Q-016 parameterization conflict quantified")
 assert_that(C.wired_count() >= 21, "wired_count >= 21")
+
+_r020 = C.calc('PAPER_020')['value']
+assert_that(abs(_r020['z_drag_scaling']['he'] - 1.2599) < 0.001,
+            "PAPER_020: He drag 2^(1/3) = 1.26 exact")
+assert_that(abs(_r020['z_drag_scaling']['fe'] - 2.9625) < 0.01,
+            "PAPER_020: Fe drag 26^(1/3) = 2.96 exact")
+assert_that(abs(_r020['gamma_aether_1e20_per_day'] - 2.748e-3) < 1e-5,
+            "PAPER_020: kappa*100^0.37 = 2.75e-3/day composed (paper 2.68e-3 - Q-017a 2.5 pct slip)")
+assert_that(abs(_r020['beta_aether'] - 0.37) < 1e-15,
+            "PAPER_020: beta_aether = 0.37 anchor (= PAPER_009 D_String(100Hz) value)")
+assert_that(abs(_r020['trz_break_delta_gamma'] - 0.3) < 1e-15,
+            "PAPER_020: TRZ secondary break Delta-gamma = +0.3 at 8e19 eV (AugerPrime falsifiable)")
+assert_that(C.wired_count() >= 22, "wired_count >= 22")
 
 # =============================================================================
 # REPORT

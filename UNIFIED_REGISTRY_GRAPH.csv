@@ -103,3 +103,9 @@ observable,trz_resonance_inversion,paper,PAPER_001,100 Hz BNS 0.333 consistency
 observable,trz_resonance_inversion,paper,PAPER_009,D_String 0.37 calibrated source
 observable,pta_amplitude_resolution,paper,PAPER_019,primary derivation
 observable,pta_spectral_tilt,paper,PAPER_019,primary derivation
+primitive,KAPPA_PER_DAY,observable,uhecr_aether_drag,Gamma_aether = kappa*(E/E_ref)^0.37
+primitive,SSQ,observable,cen_a_anisotropy_trz,A_TRZ = 0.42 stated from [SSq]
+observable,uhecr_aether_drag,paper,PAPER_020,primary derivation
+observable,uhecr_aether_drag,paper,PAPER_009,0.37 = D_String(100Hz); aether unit convention Q-009 family
+observable,uhecr_trz_break,paper,PAPER_020,primary derivation
+observable,cen_a_anisotropy_trz,paper,PAPER_020,primary derivation

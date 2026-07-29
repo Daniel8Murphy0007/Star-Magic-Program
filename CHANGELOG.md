@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.21.0] — 2026-07-29 — BAND 1: PAPER_020
+
+### Added
+- **PAPER_020 dispatch** (Cosmic Ray Propagation): UHECR transport with
+  Gamma_aether(E) = kappa*(E/E_ref)^0.37 registry-composed (0.37 = the
+  PAPER_009 D_String(100 Hz) value); charge-dependent drag Z^(1/3)
+  (He 1.26 / Fe 2.96 exact); TRZ scattering peak at 8e19 eV -> secondary
+  spectral break Delta-gamma = +0.3 (AugerPrime-falsifiable 2026-28);
+  GZK 3.7% sharper; Cen A 14% anisotropy via TRZ filament alignment
+  (A_TRZ = 0.42) without extreme B fields. Same kappa/SSq across 22
+  decades of energy (GW nHz -> 1e20 eV). OPEN_RULING Q-017: 4 internal
+  slips — 100^0.37 arithmetic (2.5%), L_aether SI-vs-paper 9 orders
+  (Q-009 aether-unit family), B-field 3e-12 G vs 5 nG, TRZ-break table
+  exponent 8e18 vs 8e19.
+- Gate: 172 assertions, 0 failures. Registry: 64 rows / 110 edges / 22 ledgers.
+
+---
+
 ## [0.20.0] — 2026-07-29 — BAND 1: PAPER_019
 
 ### Added

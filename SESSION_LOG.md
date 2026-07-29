@@ -537,3 +537,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 21/2,255 (7 ✓, 14 ⚠). Next: PAPER_020 (Cosmic Ray Propagation).
 
 ---
+
+## 2026-07-29 — v0.21.0 — BAND 1: PAPER_020
+
+- PAPER_020 wired (⚠ Q-017): UHECR propagation. Aether drag composed
+  from kappa; Z^(1/3) exact; TRZ break falsifiable at 8e19 eV.
+  Q-017 gathers 4 slips; L_aether unit puzzle joins the Q-009 family
+  (2nd corpus data point for the unstated aether unit convention).
+- Gate 172/0. Registry 64 rows / 110 edges / 22 ledgers.
+- Campaign: 22/2,255 (7 ✓, 15 ⚠). Next: PAPER_021 (Gravitational Lensing).
+
+---

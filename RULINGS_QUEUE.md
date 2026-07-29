@@ -202,6 +202,22 @@ RESOLVED section with the ruling recorded.
   the 0.625*1.60 = 1 identity gate-pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-017 — PAPER_020 — four internal slips (aether exponent/units, B-field, table exponent)
+- **Question:** (a) Sec 2.2 computes 0.0005*(1e20/1e18)^0.37 = 0.0005*5.36
+  but 100^0.37 = 5.495 (2.5 pct slip; 5.36 needs beta = 0.3647).
+  (b) L_aether = c/Gamma at 1e20 eV evaluates to ~0.31 pc in SI but the
+  paper states 192 Mpc — 9 orders; same unstated aether unit convention
+  family as Q-009 (PAPER_009 exp(-kappa*r/c)). (c) Sec 4.3 says required
+  intergalactic B ~ 3e-12 G while the sec-6 comparison table says
+  "B ~ 5 nG sufficient" — 3 orders apart. (d) Sec 3.3 spectral table
+  prints the TRZ-break row as "8x10^18 - 10^19 eV" but Features 1/2.3
+  place the break at 8x10^19 eV (exponent mojibake family).
+- **Best-candidate wired:** composed Gamma_aether from registry kappa
+  with true exponent arithmetic (residual 2.5 pct disclosed); paper
+  anchors exposed alongside; TRZ break wired at 8e19 (three in-paper
+  statements vs one table row).
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.20.0"
+VERSION = "0.21.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -946,5 +946,51 @@ def _paper_019(dataset):
                     'A_UQFF = D_total * A_GR,std; h_c = A*(f/f_yr)^(-2/3)'),
         'source': 'PAPER_019',
         'residual_pct': abs(d_total_fyr * a_gr_std - 2.4e-15) / 2.4e-15 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_020')
+def _paper_020(dataset):
+    """Cosmic Ray Propagation in UQFF Spacetime (Session 0).
+
+    UHECR transport: Gamma_aether(E) = kappa*(E/E_ref)^0.37 with kappa
+    registry-composed (KAPPA_PER_DAY); charge-dependent drag Z^(1/3)
+    (He 1.26, Fe 2.96 exact); TRZ scattering peak at 8e19 eV gives
+    secondary spectral break Delta-gamma = +0.3; GZK 3.7 pct sharper;
+    Cen A anisotropy from TRZ filament alignment (A_TRZ = 0.42), 14 pct
+    excess without extreme B fields. Unifies with GW sector: same
+    kappa/SSq across 22 decades of energy.
+    Q-017: (a) 100^0.37 = 5.495 but paper prints 5.36; (b) L_aether =
+    c/Gamma evaluates to ~0.31 pc in SI but paper says 192 Mpc — same
+    unstated aether unit convention as Q-009; (c) sec-4.3 B ~ 3e-12 G
+    vs sec-6 table B ~ 5 nG (3 orders); (d) sec-3.3 table TRZ-break row
+    printed 8e18-1e19 but feature is at 8e19 (exponent mojibake).
+    """
+    gamma_1e20_per_day = KAPPA_PER_DAY * (1e20 / 1e18) ** 0.37   # 2.75e-3 (paper 2.68e-3)
+    return {
+        'value': {
+            'beta_aether': 0.37,                  # = PAPER_009 D_String(100 Hz) value note
+            'e_ref_ev': 1.0e18,                   # ankle
+            'gamma_aether_1e20_per_day': gamma_1e20_per_day,
+            'gamma_paper_1e20_per_day': 2.68e-3,  # Q-017a: implies 100^0.37 = 5.36 vs true 5.495
+            'l_aether_paper_mpc': 192.0,          # Q-017b: SI evaluation gives ~0.31 pc
+            'sigma_trz_peak_cm2': 3.2e-26,
+            'e_trz_ev': 8.0e19,
+            'trz_break_delta_gamma': 0.3,
+            'gzk_sharpening_pct': 3.7,
+            'gzk_cutoff_uqff_ev': 4.8e19,
+            'a_trz_anisotropy': 0.42,
+            'cen_a_excess_pct': 14.0,
+            'z_drag_scaling': {'p': 1.0, 'he': 2.0 ** (1.0/3.0), 'fe': 26.0 ** (1.0/3.0)},
+            'composition_lnA_1e19': (2.5, 2.8),   # GR -> UQFF
+            'proton_fraction_1e20': (0.30, 0.22),
+            'string_exchange_1e20': 1.0e-58,      # negligible; natural UV cutoff at Planck
+        },
+        'formula': ('Gamma_aether = kappa*(E/E_ref)^0.37; drag ~ Z^(1/3); '
+                    'sigma_TRZ = sigma0*exp[-(log10(E/E_TRZ))^2/(2*0.5^2)]; '
+                    'L_eff = [1/L_GZK + 1/L_aether + 1/L_TRZ]^-1'),
+        'source': 'PAPER_020',
+        'residual_pct': abs(gamma_1e20_per_day - 2.68e-3) / 2.68e-3 * 100,   # 2.5 pct (Q-017a)
         'status': 'OPEN_RULING',
     }

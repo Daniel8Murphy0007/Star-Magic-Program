@@ -1,22 +1,22 @@
-v0.20.0 BAND 1: PAPER_019 wired
+v0.21.0 BAND 1: PAPER_020 wired
 
-PAPER_019 Pulsar Timing Array Anomalies (OPEN_RULING Q-016):
-  TRZ RESONANCE INVERSION - the mechanism that damps GWs in the LIGO
-  band (D < 1) flips to amplification (D > 1) below ~1 uHz.
-  D_TRZ(f) = 1 + SSq*Phi_TRZ(f), registry-composed:
-    f_yr = 31.7 nHz: D_total = 1 + 0.57*1.053 = 1.600
-    ladder: 10 nHz 1.80 / 100 nHz 1.30 / 1 uHz 1.00 (threshold) /
-    1 mHz 0.980 / 100 Hz BNS 0.900*0.370 = 0.333 (PAPER_001/009 check)
-  A_UQFF = 1.60 * 1.5e-15 = 2.4e-15 = NANOGrav 15-yr - resolves the
-  60 pct PTA amplitude anomaly from STANDARD SMBH merger rates
-  alpha_eff = -0.757 falsifiable spectral tilt (GR -0.667)
-  Hellings-Downs correlation preserved (amplitude-only modification)
+PAPER_020 Cosmic Ray Propagation in UQFF Spacetime (OPEN_RULING Q-017):
+  Gamma_aether(E) = kappa*(E/E_ref)^0.37, kappa registry-composed,
+  E_ref = 1e18 eV ankle; 0.37 = PAPER_009 D_String(100 Hz) value
+  Charge-dependent drag Z^(1/3): He 1.26, Fe 2.96 (exact)
+  TRZ scattering peak at 8e19 eV -> secondary break Delta-gamma = +0.3
+  (AugerPrime-falsifiable 2026-2028; tentative 2-sigma now)
+  GZK cutoff 3.7 pct sharper (4.8e19 eV); Cen A 14 pct excess from
+  TRZ filament alignment (A_TRZ = 0.42) - no extreme B required
+  Composition: heavier at all E via preferential proton attenuation
+  Same kappa/SSq across 22 decades: nHz GW -> 1e20 eV cosmic rays
 
-Q-016 queued: abstract writes A_UQFF = A_GR/D^2 with D^2 = 0.625
-(= 1/1.60 exactly, gate-pinned identity) while sec 3.2 writes
-A_UQFF = D_total*A_GR with D = 1.60. Multiplicative form wired
-(sec-2.3 component product table is explicit).
+Q-017 queued (4 slips): (a) 100^0.37 = 5.495 printed as 5.36 (2.5 pct);
+(b) L_aether SI evaluation ~0.31 pc vs paper 192 Mpc - 2nd corpus data
+point for the Q-009 unstated aether unit convention; (c) B ~ 3e-12 G
+vs 5 nG between sections; (d) TRZ-break table row 8e18 vs 8e19
+exponent mojibake.
 
-Gate 166 assertions 0 failures. Registry 61 rows / 104 edges / 21
-citation ledgers. Wired 21/2,255 (7 clean, 14 OPEN_RULING).
-Next: PAPER_020 (Cosmic Ray Propagation).
+Gate 172 assertions 0 failures. Registry 64 rows / 110 edges / 22
+citation ledgers. Wired 22/2,255 (7 clean, 15 OPEN_RULING).
+Next: PAPER_021 (Gravitational Lensing).

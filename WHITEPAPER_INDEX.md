@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 21 (7 ✓, 14 ⚠ OPEN_RULING)
+- **Wired:** 22 (7 ✓, 15 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2234
+- **Not yet touched:** 2233
 
 ---
 
@@ -50,7 +50,7 @@
 | ⚠ | PAPER_017 | Redshift Corrections z1 in UQFF GW Propagation |
 | ⚠ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |
 | ⚠ | PAPER_019 | Pulsar Timing Array Anomalies UQFF |
-| ⬜ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime |
+| ⚠ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime |
 | ⬜ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density |
 | ⬜ | PAPER_022 | String Compactification Signatures GW Background |
 | ⬜ | PAPER_023 | Tau Anomalous Magnetic Moment g2 UQFF |
