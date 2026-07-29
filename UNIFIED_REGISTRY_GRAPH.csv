@@ -492,3 +492,8 @@ primitive,D_PHYS,observable,info_paradox_26d_channels,observable channels
 primitive,D_BSFG,observable,info_paradox_26d_channels,non-local channels
 observable,uqff_page_curve,paper,PAPER_084,Page mechanism
 primitive,KAPPA_PER_DAY,observable,uqff_page_curve,decay term
+observable,uqff_page_time,paper,PAPER_085,flagship prediction
+primitive,F_TRZ,observable,uqff_page_time,identity propagation
+observable,uqff_page_time,paper,PAPER_081,drift-correction parent
+observable,year_label_pattern,paper,PAPER_085,2nd instance
+observable,year_label_pattern,paper,PAPER_082,corruption family

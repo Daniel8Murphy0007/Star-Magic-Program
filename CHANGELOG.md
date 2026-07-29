@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.88.0] — 2026-07-29 — BAND 1: PAPER_085
+
+### Added
+- **PAPER_085 dispatch** (Page Curve): the PAPER_081 drift
+  correction PROPAGATES (same 0.01/0.01 inputs) — under canonical
+  primitives every downstream number closes EXACTLY: stretch
+  (1-F_TRZ^2)^-4 = 1.0410; **Page time t_P = 0.5205*t_evap_GR
+  EXACT — wired as the flagship measurable prediction** (future
+  micro-BH observations). S_max = S_BH/2 = A_0/(8 l_P^2) EXACT;
+  peak entropy unchanged (084-consistent); final state globally
+  pure. Year-label corruption pattern 2ND INSTANCE (solar row
+  mantissa matches 2.1e67 YEARS) consolidated with 082.
+- OPEN_RULING Q-081.
+- Gate: 624 assertions, 0 failures. Registry: 252 rows / 497 edges / 89 ledgers.
+
+---
+
 ## [0.87.0] — 2026-07-29 — BAND 1: PAPER_084
 
 ### Added

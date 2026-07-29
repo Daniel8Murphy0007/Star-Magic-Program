@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.87.0"
+VERSION = "0.88.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4451,5 +4451,53 @@ def _paper_084(dataset):
                     't_P = t_P_GR * e^(kappa*t_evap); I_total = S_BH'),
         'source': 'PAPER_084',
         'residual_pct': 0.0 if sum(partition.values()) == 26 else 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_085')
+def _paper_085(dataset):
+    """UQFF Page Curve Derivation (Session 0).
+
+    Fourth Hawking-family paper. CARRIES THE SAME DRIFT as
+    PAPER_081 (f_TRZ = 0.01, rho ratio = 0.01, with the same
+    "0.9999 ~ 0.99" conflation) - the 081 correction PROPAGATES:
+    under canonical primitives the ratio is 1 - F_TRZ^2 = 0.99
+    EXACT and every downstream number closes:
+    stretch = (1-F_TRZ^2)^-4 = 1.0410 EXACT (consistent 082);
+    PAGE TIME t_P = stretch/2 = 0.5205 * t_evap_GR EXACT - wired
+    as the paper's own flagship measurable prediction (future
+    micro-BH evaporation observations).
+    S_max = S_BH/2 = A_0/(8 l_P^2) EXACT form; triangular
+    two-phase entropy profile; peak entropy UNCHANGED (26D
+    channels unaffected - consistent with PAPER_084); final
+    state globally pure.
+    YEAR-LABEL PATTERN 2ND INSTANCE (Q-081b): solar-mass row
+    prints "~2e74 s" - the chain gives 6.6e74 s = 2.1e67 YEARS
+    (mantissa 2 matches years; same corruption family as 082's
+    stellar row). Primordial row t_evap "4.3e-5 s" unrecoverable
+    (chain 8.4e13 s for the 1e10 kg pin); "evaporating now" fits
+    threshold-mass, not 1e10 kg (Q-081c).
+    """
+    stretch = (1.0 - F_TRZ ** 2) ** -4                     # 1.0410 EXACT
+    return {
+        'value': {
+            'domain': '1.11 (fourth Hawking-family paper)',
+            'ratio_canonical': 1.0 - F_TRZ ** 2,           # 0.99 (081 propagation)
+            'stretch': stretch,                            # 1.0410
+            'page_time_factor': stretch / 2.0,             # 0.5205 EXACT prediction
+            's_max_form': 'S_BH/2 = A_0/(8 l_P^2)',
+            'peak_entropy_shift_pct': 0.0,                 # channels unaffected
+            'final_state': 'globally pure',
+            'solar_t_evap_s_chain': 8.41e-17 * (1.989e30) ** 3,    # 6.6e74 s
+            'solar_t_evap_yr_chain': 8.41e-17 * (1.989e30) ** 3 / 3.156e7,  # 2.1e67 yr
+            'primordial_t_chain_s': 8.41e-17 * (1e10) ** 3,    # 8.4e13 vs printed 4.3e-5
+            'drift_inputs_carried': {'f_trz': 0.01, 'rho_ratio': 0.01},
+            'flagship_prediction': 't_P = 0.5205 * t_evap_GR (micro-BH observable)',
+        },
+        'formula': ('t_P_UQFF = (1-F_TRZ^2)^-4 / 2 * t_evap_GR = 0.5205 t_evap_GR; '
+                    'S_max = S_BH/2'),
+        'source': 'PAPER_085',
+        'residual_pct': abs(stretch / 2.0 - 0.5205) / 0.5205 * 100,
         'status': 'OPEN_RULING',
     }

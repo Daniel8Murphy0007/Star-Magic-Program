@@ -1,29 +1,25 @@
-v0.87.0 BAND 1: PAPER_084 wired - 26D PARTITION WITH PRIMITIVE TEXTURE
+v0.88.0 BAND 1: PAPER_085 wired - PAGE TIME 0.5205 FLAGSHIP PREDICTION
 
-PAPER_084 Information Paradox via 26D Holographic Channels
-(OPEN_RULING Q-080):
-  Channel partition SUMS EXACTLY to D_crit: {1-4 observable} +
-  {5-18 sub-Planckian} + {19-24 non-local} + {25-26 Cosmic Egg}
-  = 4 + 14 + 6 + 2 = 26, with PRIMITIVE TEXTURE: observable
-  channels = D_PHYS, non-local channels = D_BSFG.
+PAPER_085 UQFF Page Curve Derivation (OPEN_RULING Q-081):
+  Fourth Hawking-family paper - the PAPER_081 drift correction
+  PROPAGATES (identical 0.01/0.01 inputs and the same "0.9999 ~
+  0.99" conflation). Under canonical primitives every downstream
+  number closes EXACTLY:
+    stretch = (1 - F_TRZ^2)^-4 = 1.0410
+    PAGE TIME t_P = 0.5205 * t_evap_GR EXACT
+  - wired as the FLAGSHIP MEASURABLE PREDICTION (future micro-BH
+  evaporation observations).
 
-  Cosmic Egg layers 25-26 host the complete pre-collapse pure
-  state (unitarity: Sum I_k = S_BH_initial); 4D observer sees
-  the thermal spectrum from channels 1-4.
+  S_max = S_BH/2 = A_0/(8 l_P^2) EXACT form; triangular
+  two-phase profile; peak entropy UNCHANGED (26D channels
+  unaffected, consistent with 084); final state globally pure.
 
-  The KAPPA primitive enters the Page mechanism directly:
-  S = min[S_thermal, S_BH + I_egg*(1 - e^-kappa t)]; Page time
-  t_P = t_P_GR * e^(kappa*t_evap) - astronomically large ->
-  radiation looks THERMAL within any finite observation
-  (honest null, consistent with no observed recovery).
+  YEAR-LABEL PATTERN 2ND INSTANCE: solar-mass row "~2e74 s" vs
+  chain 6.6e74 s = 2.1e67 YEARS (mantissa matches years) - same
+  corruption family as 082's stellar row; systematic reading
+  queued. Primordial row "4.3e-5 s" unrecoverable (chain 8.4e13
+  s); "evaporating now" fits threshold-mass, not 1e10 kg.
 
-  HONEST NOTE: the paper's linearization e^x ~ 1+x is invalid
-  for the huge arguments involved; the exponential form is the
-  claim and the conclusion survives. AMPS firewall resolved via
-  channels 19-24 + SCm smooth horizon; approximately-thermal
-  (not exactly) radiation is in-principle falsifiable.
-
-Q-080 queued (primitive-partition reading; strike the ~;
-"Cosmic Egg" canonical term). Gate 619 assertions 0 failures.
-Registry 250 rows / 492 edges / 88 citation ledgers. Wired
-88/2,255 (10 clean, 78 OPEN_RULING). Next: PAPER_085.
+Q-081 queued. Gate 624 assertions 0 failures. Registry 252 rows /
+497 edges / 89 citation ledgers. Wired 89/2,255 (10 clean, 79
+OPEN_RULING). Next: PAPER_086.

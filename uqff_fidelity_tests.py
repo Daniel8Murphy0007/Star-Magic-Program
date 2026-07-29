@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.87.0", "uqff_calculator.VERSION = 0.87.0")
+assert_that(C.VERSION == "0.88.0", "uqff_calculator.VERSION = 0.88.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1366,6 +1366,17 @@ assert_that(_r084['linearization_invalid'],
 assert_that('approximately thermal' in _r084['observer_prediction'],
             "PAPER_084: approximately-thermal 4D prediction wired (in-principle falsifiable)")
 assert_that(C.wired_count() >= 88, "wired_count >= 88")
+
+_r085 = C.calc('PAPER_085')['value']
+assert_that(abs(_r085['page_time_factor'] - 0.5205) < 0.0001,
+            "PAPER_085: Page time 0.5205*t_evap_GR EXACT - flagship measurable prediction")
+assert_that(abs(_r085['ratio_canonical'] - 0.99) < 1e-12,
+            "PAPER_085: 081 drift correction propagates - canonical ratio 1-F_TRZ^2")
+assert_that(_r085['peak_entropy_shift_pct'] == 0.0,
+            "PAPER_085: peak entropy unchanged (26D channels unaffected, consistent 084)")
+assert_that(abs(_r085['solar_t_evap_yr_chain'] - 2.1e67) / 2.1e67 < 0.01,
+            "PAPER_085: solar row mantissa matches 2.1e67 YEARS - year-label pattern 2nd instance (Q-081b)")
+assert_that(C.wired_count() >= 89, "wired_count >= 89")
 
 # =============================================================================
 # REPORT

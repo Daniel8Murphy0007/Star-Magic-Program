@@ -1460,6 +1460,26 @@ RESOLVED section with the ruling recorded.
   honest linearization note.
 - **Daniel's ruling:** (pending)
 
+### Q-081 — PAPER_085 — drift propagation + year-label pattern 2nd instance
+- **Question:** (a) Confirm the PAPER_081 drift correction
+  PROPAGATES here (identical 0.01/0.01 inputs and the same
+  "0.9999 ~ 0.99" conflation): under canonical primitives every
+  downstream number closes EXACTLY - stretch 1.0410, Page time
+  0.5205*t_evap_GR (the paper's flagship measurable prediction).
+  (b) YEAR-LABEL PATTERN 2nd instance: solar-mass row "~2e74 s"
+  vs chain 6.6e74 s = 2.1e67 YEARS (mantissa matches years) -
+  same family as 082's stellar row; canonize the pattern reading
+  for Session-0 evaporation tables? (c) Primordial row "4.3e-5
+  s" unrecoverable (chain 8.4e13 s for 1e10 kg); "evaporating
+  now" fits threshold-mass (5.7e11 kg), not 1e10 kg - which mass
+  is the row's subject?
+- **Notable:** S_max = S_BH/2 form EXACT; peak entropy unchanged
+  (084-consistent); final state globally pure; t_P = 0.5205
+  wired as a campaign-tracked falsifiable prediction.
+- **Best-candidate wired:** canonical-identity chain PRIMARY,
+  drift inputs carried; year-label evidence consolidated.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

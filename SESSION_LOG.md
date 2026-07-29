@@ -1235,3 +1235,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 88/2,255 (10 ✓, 78 ⚠). Next: PAPER_085.
 
 ---
+
+## 2026-07-29 — v0.88.0 — BAND 1: PAPER_085
+
+- PAPER_085 wired (⚠ Q-081): Page curve. 081 correction
+  propagates; t_P = 0.5205 EXACT flagship prediction; year-label
+  pattern 2nd instance; S_max form EXACT.
+- Campaign: 89/2,255 (10 ✓, 79 ⚠). Next: PAPER_086.
+
+---

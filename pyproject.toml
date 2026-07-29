@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.87.0"
-description = "UQFF Star-Magic-Program v0.87.0: PAPER_084 wired (information paradox via 26D channels: partition 4+14+6+2 = D_crit EXACT with primitive texture - observable = D_PHYS, non-local = D_BSFG; Cosmic Egg layers 25-26 host the pure state; kappa enters the Page mechanism directly; thermal-within-observation honest null; invalid-linearization note pinned). Q-080 queued. Wired 88/2255, gate 619/0. Registry 250 rows / 492 edges / 88 ledgers."
+version = "0.88.0"
+description = "UQFF Star-Magic-Program v0.88.0: PAPER_085 wired (Page curve: 081 drift correction propagates - stretch 1.0410 and Page time 0.5205*t_evap_GR EXACT under canonical primitives, wired as flagship measurable prediction; S_max = S_BH/2 EXACT; year-label corruption pattern 2nd instance consolidated; peak entropy unchanged consistent with 084). Q-081 queued. Wired 89/2255, gate 624/0. Registry 252 rows / 497 edges / 89 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
