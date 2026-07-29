@@ -17,3 +17,13 @@ primitive,SSQ,observable,gw150914_phase_lag,SSq in stated formula
 observable,gw150914_D_total,paper,PAPER_003,primary derivation
 observable,gw150914_distance_bias,paper,PAPER_003,primary derivation
 observable,gw150914_phase_lag,paper,PAPER_003,primary derivation
+primitive,F_TRZ,observable,gw170817_chirp_D_total,(1-f_TRZ) explicit in paper formula
+observable,gw170817_chirp_D_total,paper,PAPER_004,primary derivation
+observable,gw170817_chirp_h_uqff_peak,paper,PAPER_004,primary derivation
+primitive,F_TRZ,observable,bbh_merger_F_combined,(1-F_TRZ)^2 composition
+observable,bbh_merger_F_combined,paper,PAPER_005,primary derivation
+observable,bbh_merger_energy_retention,paper,PAPER_005,primary derivation
+primitive,F_TRZ,observable,gw170817_multimessenger_D_total,(1-F_TRZ) in chain
+observable,gw170817_multimessenger_D_total,paper,PAPER_006,primary derivation
+observable,gw170817_gw_speed_preservation,paper,PAPER_006,primary derivation
+observable,gw170817_detection_volume_shrink,paper,PAPER_006,primary derivation

@@ -347,9 +347,26 @@ Band 1 continues: PAPER_002-020 (GW family template). Ship per session.
   the self-rectification mechanism is working exactly as designed.
 - Registry: 10 rows, 18 edges, 3 citation ledgers.
 
+### Campaign state at v0.4.0 ship
+
+Wired 3/2,255 (PAPER_001 ✓, PAPER_002 ⚠, PAPER_003 ⚠).
+
+---
+
+## 2026-07-29 — v0.5.0 — BAND 1 CONTINUES (PAPER_004..006)
+
+### What shipped: PAPER_004, PAPER_005, PAPER_006
+
+- PAPER_004 (⚠ Q-005): paper's own formula writes (1-f_TRZ) explicitly —
+  corpus confirmation of the primitive composition used since PAPER_001.
+- PAPER_005 (⚠ Q-006): BBH variant chain F = (1-F_TRZ)^2 = 0.81 EXACT
+  (string deactivated); every numerical result in the paper reproduces.
+- PAPER_006 (✓ clean): multi-messenger consistency; c_GW = c preserved;
+  detection-volume 27x shrink prediction.
+
 ### Campaign state
 
-Wired 3/2,255 (PAPER_001 ✓, PAPER_002 ⚠, PAPER_003 ⚠). Next session
-resumes at PAPER_004 per WHITEPAPER_INDEX.
+Wired 6/2,255 (001 ✓, 002-005 ⚠, 006 ✓). Gate 83/0. Rulings Q-001..Q-006.
+Next paper: PAPER_008 (007 absent from corpus).
 
 ---

@@ -40,6 +40,26 @@ RESOLVED section with the ruling recorded.
   recorded with discrepancy note
 - **Daniel's ruling:** (pending)
 
+### Q-005 — PAPER_004 — minor arithmetic discrepancies
+- **Question:** (a) stated h_UQFF,peak = 9.4332e-23 but 0.333*2.8051e-22 =
+  9.341e-23 (~1% slip; 9.4332 implies factor 0.3363); (b) abstract says 66.4%
+  reduction, sec 4 table says 66.4%, but D_total=0.333 gives 66.7%; (c) sec 5
+  says "UQFF predicts h = 3.33e-23" inconsistent with 9.43e-23 elsewhere.
+  Which values are canonical?
+- **Best-candidate wired:** computed 9.341e-23 from the chain; paper values
+  recorded as stated-anchors with discrepancy notes
+- **Daniel's ruling:** (pending)
+
+### Q-006 — PAPER_005 — F_combined 0.903 vs 0.81
+- **Question:** Sec 2 states P_UQFF = F_combined^2 * P_GR with F_combined =
+  0.903 (giving 0.815), but sec 3 table and ALL numerical results (P ratio
+  0.8100, tau ratio 1.2346 = 1/0.81, E ratio 0.810) consistently use 0.81 =
+  0.9*0.9 = (1-F_TRZ)^2. Is 0.903 a typo for 0.9 (with the square notation
+  belonging to the two-factor product)?
+- **Best-candidate wired:** F_combined = (1-F_TRZ)^2 = 0.81 EXACT (reproduces
+  every numerical result in the paper)
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

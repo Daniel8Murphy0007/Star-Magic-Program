@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -238,4 +238,114 @@ def _paper_003(dataset):
         'source': 'PAPER_003',
         'residual_pct': abs(D_total - (1.0 - D_GW_EROSION)) / (1.0 - D_GW_EROSION) * 100.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_004')
+def _paper_004(dataset):
+    """GW170817 BNS Chirp Phase Evolution — GR vs UQFF (Session 0).
+
+    35-300 Hz chirp window (0.2 s, 200 samples). The paper's own formula
+    explicitly writes h_UQFF = D_aether*D_SCm*(1-f_TRZ)*D_string*h_GR —
+    corpus-internal confirmation of the (1-F_TRZ) primitive composition.
+    Q-005: paper's stated h_UQFF,peak 9.4332e-23 differs ~1% from
+    0.333*2.8051e-22 = 9.341e-23 (arithmetic slip).
+    """
+    D_total = 1.0 * 1.0 * (1.0 - F_TRZ) * 0.37       # 0.333 (paper's own form)
+    h_gr_peak = 2.8051e-22            # PN chirp formula at ~300 Hz (paper sec 2)
+    h_obs = 1.0e-22                   # LIGO observed strain anchor
+    return {
+        'value': {
+            'D_total': D_total,
+            'h_gr_peak': h_gr_peak,
+            'h_uqff_peak_computed': D_total * h_gr_peak,     # 9.341e-23
+            'h_uqff_peak_paper': 9.4332e-23,                 # stated (Q-005)
+            'strain_reduction_pct': (1.0 - D_total) * 100.0, # 66.7 (paper says 66.4)
+            'gr_residual_vs_obs_pct': 5.0,                   # paper sec 2
+            'uqff_mismatch_vs_obs_pct': 66.7,                # paper sec 4
+            'chirp_mass_msun': 1.188,
+            'distance_mpc': 40.0,
+            'freq_range_hz': (35.0, 300.0),
+            'chirp_duration_s': 0.2,
+            'n_samples': 200,
+        },
+        'formula': ('h_UQFF = D_aether*D_SCm*(1-f_TRZ)*D_string*h_GR '
+                    '(paper sec 3 — explicit (1-f_TRZ) composition)'),
+        'source': 'PAPER_004',
+        'residual_pct': abs(D_total * h_gr_peak - 9.4332e-23) / 9.4332e-23 * 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_005')
+def _paper_005(dataset):
+    """BH Merger Energy Retention (Session 0). GW150914-like BBH 36+29 Msun.
+
+    BBH chain variant: string DEACTIVATED (1.0), B-factor 0.9, TRZ 0.9 →
+    combined 0.81 = (1-F_TRZ)^2 primitive composition. Power/energy/timescale
+    all consistently scale by 0.81 (P ratio 0.8100, tau ratio 1/0.81 = 1.2346,
+    E ratio 0.810). Q-006: sec 2 states F_combined = 0.903 with P = F^2*P_GR
+    (0.815), inconsistent with the 0.81 used throughout.
+    """
+    F_combined = (1.0 - F_TRZ) ** 2       # 0.81 EXACT — B-factor * TRZ
+    P_gw_gr = 8.9451e-11                  # W, paper sec 2
+    tau_gr_yr = 9.4417e11
+    E_rad_gr_msun = 0.8031
+    M_tot = 65.0
+    return {
+        'value': {
+            'F_combined': F_combined,                        # 0.81
+            'P_gw_gr_w': P_gw_gr,
+            'P_gw_uqff_w': F_combined * P_gw_gr,             # 7.2455e-11
+            'power_reduction_pct': (1.0 - F_combined) * 100, # 19.0
+            'tau_gr_yr': tau_gr_yr,
+            'tau_uqff_yr': tau_gr_yr / F_combined,           # 1.1656e12
+            'tau_extension_factor': 1.0 / F_combined,        # 1.2346
+            'E_rad_gr_msun': E_rad_gr_msun,
+            'E_rad_uqff_msun': F_combined * E_rad_gr_msun,   # 0.6505
+            'remnant_gr_msun': M_tot - E_rad_gr_msun,        # 64.197
+            'remnant_uqff_msun': M_tot - F_combined * E_rad_gr_msun,  # 64.350
+            'mass_retention_uqff_pct': (M_tot - F_combined * E_rad_gr_msun) / M_tot * 100,
+            'm1_msun': 36.0, 'm2_msun': 29.0, 'distance_mpc': 410.0,
+        },
+        'formula': ('F_combined = (1-F_TRZ)^2 = 0.81 (string deactivated for BBH); '
+                    'P/tau/E all scale by 0.81 (Q-006: sec-2 states 0.903)'),
+        'source': 'PAPER_005',
+        'residual_pct': abs(F_combined * P_gw_gr - 7.2455e-11) / 7.2455e-11 * 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_006')
+def _paper_006(dataset):
+    """Multi-Messenger GW170817 — Kilonova + UQFF Predictions (Session 0).
+
+    Full-inspiral simulation (3,677 cycles, 23-300 Hz, 100 s) + per-messenger
+    UQFF predictions. Consistent with PAPER_001's chain (no new
+    inconsistencies): amplitude-only modification, GW speed preserved,
+    EM sector unmodified. Detection volume shrinks by 1/D_total^3 ~ 27x.
+    """
+    D_total = 1.0 * 1.0 * (1.0 - F_TRZ) * 0.37       # 0.333 (same as PAPER_001)
+    h_gr = 5.4176e-22
+    return {
+        'value': {
+            'D_total': D_total,
+            'h_uqff_strain': D_total * h_gr,             # 1.8041e-22
+            'snr_gr': 32.4,
+            'snr_uqff': D_total * 32.4,                  # 10.8
+            'gw_speed_constraint': 3e-15,                # |dc/c| preserved by UQFF
+            'grb_delay_s': 1.74,                         # unmodified by UQFF
+            'kilonova_ejecta_msun': (0.04, 0.05),        # unmodified by UQFF
+            'total_cycles': 3677,                        # full inspiral sim
+            'max_phase_lag_rad': 2310.8,                 # 367.8 cycles
+            'max_phase_lag_cycles': 367.8,
+            'detection_volume_shrink': 1.0 / D_total**3, # ~27x
+            'B_ns_t': 1.0e4,
+            'chirp_mass_msun': 1.188,
+            'distance_mpc': 40.0,
+        },
+        'formula': ('h_UQFF = D_total*h_GR (amplitude-only; c_GW = c preserved); '
+                    'V_detect scales 1/D_total^3 ~ 27x shrink'),
+        'source': 'PAPER_006',
+        'residual_pct': abs(D_total - (1.0 - D_GW_EROSION)) / (1.0 - D_GW_EROSION) * 100.0,
     }

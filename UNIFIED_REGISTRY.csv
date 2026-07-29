@@ -9,3 +9,10 @@ gw190425_mass_gap_classification,PAPER_002 S0,derived,PAPER_002 sec 5,"P(NS)=0.4
 gw150914_D_total,PAPER_003 S0,derived,PAPER_003 sec 2,1*1*(1-F_TRZ)*0.37 universal BBH chain,0.333,1/3 primitive identity (PAPER_2154),0.100,gw,n/a,PAPER_003,PAPER_001;PAPER_2154,1,0,0,8,WIRED
 gw150914_distance_bias,PAPER_003 S0,derived,PAPER_003 sec 5,D_apparent = D_true/D_total = 410/0.333,1231 Mpc (3.0x),true 410 Mpc (host galaxy),n/a,gw,n/a,PAPER_003,,1,0,0,8,WIRED
 gw150914_phase_lag,PAPER_003 S0,derived,PAPER_003 sec 4,kappa*D*f*SSq (formula evaluates 17.53 vs paper 0.126 - Q-004),0.126 rad,none,n/a,gw,n/a,PAPER_003,,1,0,0,8,OPEN_RULING
+gw170817_chirp_D_total,PAPER_004 S0,derived,PAPER_004 sec 3,D_aether*D_SCm*(1-f_TRZ)*D_string - paper's own explicit (1-F_TRZ) form,0.333,corpus-internal confirmation of primitive composition,0.100,gw,n/a,PAPER_004,PAPER_001;PAPER_2154,1,0,0,5,WIRED
+gw170817_chirp_h_uqff_peak,PAPER_004 S0,derived,PAPER_004 sec 3,0.333 * h_GR(2.8051e-22) = 9.341e-23 computed (paper states 9.4332e-23 - Q-005),9.341e-23,LIGO h_obs ~ 1e-22,1.0,gw,n/a,PAPER_004,,1,0,0,5,OPEN_RULING
+bbh_merger_F_combined,PAPER_005 S0,derived,PAPER_005 sec 3,"(1-F_TRZ)^2 = 0.81 EXACT (B-factor*TRZ, string deactivated for BBH)",0.81,sec-2 states 0.903 (Q-006),n/a,gw,n/a,PAPER_005,PAPER_003,1,0,0,3,OPEN_RULING
+bbh_merger_energy_retention,PAPER_005 S0,derived,PAPER_005 sec 4,E_rad_UQFF = 0.81*E_rad_GR; remnant 64.35 Msun vs GR 64.20,0.6505 Msun,GW150914 remnant ~62 Msun,n/a,gw,n/a,PAPER_005,,1,0,0,3,WIRED
+gw170817_multimessenger_D_total,PAPER_006 S0,derived,PAPER_006 sec 3,1*1*(1-F_TRZ)*0.37 - consistent with PAPER_001,0.333,PAPER_001 cross-check,0.100,gw,n/a,PAPER_006,PAPER_001;PAPER_004,1,0,0,4,WIRED
+gw170817_gw_speed_preservation,PAPER_006 S0,derived,PAPER_006 sec 5,UQFF amplitude-only modification; c_GW = c,|dc/c| < 3e-15,GRB 170817A delay 1.74 s,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED
+gw170817_detection_volume_shrink,PAPER_006 S0,derived,PAPER_006 sec 7,V ~ 1/D_total^3 = 27x shrink (O4/O5 BNS rate prediction),27.1,none,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED

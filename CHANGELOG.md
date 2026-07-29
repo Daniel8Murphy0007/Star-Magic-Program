@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.5.0] — 2026-07-29 — BAND 1 CONTINUES: PAPER_004..PAPER_006
+
+### Added
+- **PAPER_004 dispatch** (GW170817 chirp): paper's own explicit (1-f_TRZ)
+  composition — corpus-internal confirmation of primitive form. OPEN_RULING Q-005.
+- **PAPER_005 dispatch** (BBH energy retention): F = (1-F_TRZ)^2 = 0.81
+  EXACT, string deactivated for BBH; P/tau/E scale consistently. OPEN_RULING Q-006.
+- **PAPER_006 dispatch** (multi-messenger): c_GW = c preserved, kilonova
+  unmodified, detection volume 27x shrink. Clean.
+- Gate Block 9 extended: 83 assertions total, 0 failures.
+- Registry pantheon: 20 rows, 28 edges, 6 citation ledgers.
+
+### Changed
+- Version 0.4.0 → 0.5.0; badges fidelity_gate 83/0, public_surfaces 6.
+- WHITEPAPER_INDEX: 004/005 → ⚠, 006 → ✓.
+
+---
+
 ## [0.4.0] — 2026-07-28 — BAND 1 CONTINUES: PAPER_002 + PAPER_003
 
 ### Added

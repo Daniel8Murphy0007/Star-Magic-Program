@@ -1,26 +1,17 @@
-v0.4.0 BAND 1 CONTINUES: PAPER_002 + PAPER_003 wired, 4 rulings queued
+v0.5.0 BAND 1: PAPER_004..PAPER_006 wired
 
-PAPER_002 GW190425 Mass Gap Interpretation (OPEN_RULING):
-  A_SCm(B) = exp[-(B/B_crit)^2] threshold function + 5-scenario table
-  Mass-gap classification P(NS)=0.49 / P(BH)=0.51 for m1 = 2.52 Msun
-  F_UQFF = 0.5297 paper headline wired; gate computes scenario values
-  honestly from stated formula
+PAPER_004 GW170817 Chirp Phase (OPEN_RULING Q-005): paper's own explicit
+(1-f_TRZ) composition - corpus-internal confirmation of the primitive
+form used since PAPER_001. Minor arithmetic slips queued.
 
-PAPER_003 GW150914 UQFF vs LIGO Strain (OPEN_RULING):
-  Universal BBH chain D_total = 1*1*(1-F_TRZ)*0.37 = 0.333
-  3.0x apparent-distance bias (410 -> 1231 Mpc) - Hubble-inference impact
-  h_UQFF 4.1622e-22, SNR 24 -> 8.0, phase lag 0.126 rad (anchor)
+PAPER_005 BBH Energy Retention (OPEN_RULING Q-006): F = (1-F_TRZ)^2 =
+0.81 EXACT (string deactivated for BBH); P_GW 19% reduction, tau 1.23x
+extension, E_rad 0.6505 Msun - every numerical result reproduces.
 
-RULINGS QUEUED (gate-discovered paper-internal inconsistencies):
-  Q-001 PAPER_002 F_UQFF 0.5297 vs own chain 0.333
-  Q-002 B_crit units: PAPER_001 says T, PAPER_002 says G
-  Q-003 PAPER_002 scenario table does not reproduce from stated formula
-  Q-004 PAPER_003 phase-lag formula evaluates 17.53 not 0.126
+PAPER_006 GW170817 Multi-Messenger (clean): c_GW = c preserved
+(|dc/c| < 3e-15 with GRB 170817A), kilonova sector unmodified,
+detection volume shrinks 27x = 1/D_total^3.
 
-Registry pantheon: UNIFIED_REGISTRY 10 rows, GRAPH 18 edges,
-CORPUS_CITATIONS 3 ledgers. Gate 68 assertions, 0 failures.
-Index: 1 wired-clean, 2 wired-OPEN_RULING, 2,252 remaining.
-
-Campaign per CLAUDE.md charter. Self-rectification doctrine active:
-OPEN_RULING wirings resolve via Daniel's batch answers + later-paper
-cross-references.
+Gate 83 assertions 0 failures. Registry 20 rows / 28 edges / 6 citation
+ledgers. Wired 6/2,255 (2 clean, 4 OPEN_RULING). Rulings Q-001..Q-006
+open. Next paper: PAPER_008 (007 absent from corpus).

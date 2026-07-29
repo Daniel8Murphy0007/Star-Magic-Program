@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.4.0", "uqff_calculator.VERSION = 0.4.0")
+assert_that(C.VERSION == "0.5.0", "uqff_calculator.VERSION = 0.5.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -171,6 +171,39 @@ assert_that(abs(_r003['distance_apparent_mpc'] - 1231.0) < 1.0,
 assert_that(abs(_r003['distance_bias_factor'] - 3.003) < 0.01,
             "PAPER_003: distance bias factor 3.0x")
 assert_that(C.wired_count() >= 3, "wired_count >= 3")
+
+_r004 = C.calc('PAPER_004')['value']
+assert_that(abs(_r004['D_total'] - 0.333) < 1e-12,
+            "PAPER_004: D_total = 0.333 via paper's own (1-f_TRZ) composition")
+assert_that(abs(_r004['h_uqff_peak_computed'] - 9.341e-23) < 5e-26,
+            "PAPER_004: computed h_UQFF = 9.341e-23 (paper states 9.4332e-23, ~1% slip - Q-005)")
+assert_that(abs(_r004['strain_reduction_pct'] - 66.7) < 0.05,
+            "PAPER_004: 66.7% strain reduction (paper abstract says 66.4 - Q-005)")
+assert_that(C.wired_count() >= 4, "wired_count >= 4")
+
+_r005 = C.calc('PAPER_005')['value']
+assert_that(abs(_r005['F_combined'] - 0.81) < 1e-15,
+            "PAPER_005: F_combined = (1-F_TRZ)^2 = 0.81 EXACT (string deactivated BBH)")
+assert_that(abs(_r005['P_gw_uqff_w'] - 7.2455e-11) / 7.2455e-11 < 0.001,
+            "PAPER_005: P_GW_UQFF = 7.2455e-11 W (19% reduction)")
+assert_that(abs(_r005['tau_uqff_yr'] - 1.1656e12) / 1.1656e12 < 0.001,
+            "PAPER_005: tau_UQFF = 1.1656e12 yr (1.23x extension)")
+assert_that(abs(_r005['E_rad_uqff_msun'] - 0.6505) < 0.001,
+            "PAPER_005: E_radiated = 0.6505 Msun (mass retention)")
+assert_that(C.wired_count() >= 5, "wired_count >= 5")
+
+_r006 = C.calc('PAPER_006')['value']
+assert_that(abs(_r006['D_total'] - 0.333) < 1e-12,
+            "PAPER_006: D_total = 0.333 (consistent with PAPER_001)")
+assert_that(abs(_r006['h_uqff_strain'] - 1.8041e-22) < 1e-25,
+            "PAPER_006: h_UQFF = 1.8041e-22 (multi-messenger consistency)")
+assert_that(abs(_r006['snr_uqff'] - 10.8) < 0.02,
+            "PAPER_006: SNR_UQFF = 10.8")
+assert_that(abs(_r006['detection_volume_shrink'] - 27.1) < 0.2,
+            "PAPER_006: detection volume shrinks ~27x (1/0.333^3)")
+assert_that(_r006['gw_speed_constraint'] == 3e-15,
+            "PAPER_006: |dc/c| < 3e-15 preserved (amplitude-only modification)")
+assert_that(C.wired_count() >= 6, "wired_count >= 6")
 
 # =============================================================================
 # REPORT
