@@ -594,6 +594,24 @@ RESOLVED section with the ruling recorded.
   preserved as the family's information-theoretic prediction.
 - **Daniel's ruling:** (pending)
 
+### Q-038 — PAPER_040 — Virgo factor-2 + Virgo lobe 1e4 + whim units convention
+- **Question:** (a) Virgo virx: closed form gives -3.66e59 N, the
+  validator/abstract say -7.2e59; the paper itself discloses "the
+  extra factor of ~2 comes from the detailed sigma_X weighting in
+  BuoyancyProofVariants.py" - which is canonical, the closed form or
+  the validator weighting (and what IS the weighting)? (b) Virgo M87
+  lobe: chain with printed inputs gives 2.7e55 N, printed result
+  2.7e51 (1e4). (c) whim is quoted in N/m^3 here (1.3e-28, Coma) but
+  in N in PAPER_038 (7.4e-13, Sculptor) - per-volume vs integrated
+  convention needs canonization for the registry. (d) The virx
+  mass-inversion recovers M_vir ~ 1e8 below observed, explained as
+  Q_wave renormalization (consistent with 036's Q_wave ~ 1e-6) -
+  accept as family convention?
+- **Best-candidate wired:** all three clusters via the 036 helper
+  (Perseus/Coma verified); both Virgo values exposed; Perseus lobe
+  verified with sub-dominance ratio; 1e4 gap pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

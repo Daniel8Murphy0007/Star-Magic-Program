@@ -780,3 +780,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 43/2,255 (8 ✓, 35 ⚠). Next: PAPER_040.
 
 ---
+
+## 2026-07-29 — v0.43.0 — BAND 1: PAPER_040
+
+- PAPER_040 wired (⚠ Q-038): FUBii applications begin. Three clusters
+  via the 036 helper (template reuse working as designed); lobe
+  sub-dominance verified; Virgo factor-2 and lobe 1e4 pinned.
+- Gate 322/0. Registry 130 rows / 251 edges / 44 ledgers.
+- Campaign: 44/2,255 (8 ✓, 36 ⚠). Next: PAPER_041.
+
+---

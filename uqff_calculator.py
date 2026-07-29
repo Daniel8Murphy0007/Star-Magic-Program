@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.42.0"
+VERSION = "0.43.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2098,5 +2098,56 @@ def _paper_039(dataset):
                     'lobe: F_rel*(PV/E_LEP)*(rho_ICM/rho_lobe)*(v/c)'),
         'source': 'PAPER_039',
         'residual_pct': abs(hawk - (-2.452)) / 2.452 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_040')
+def _paper_040(dataset):
+    """UQFF F_UBii Virial Buoyancy: Perseus, Coma, Virgo (S0).
+
+    First APPLICATION paper of the FUBii family - reuses the
+    _fubii_virx helper from PAPER_036 across the three canonical
+    X-ray clusters. Perseus -2.024e60 N (validator, = 036); Coma
+    -2.51e60 N (chain verified; edges Perseus despite lower sigma
+    because r_h = 2.2 Mpc); Virgo closed-form -3.66e59 N vs validator
+    -7.2e59 (factor ~2 from sigma-weighting, DISCLOSED in-paper).
+    Perseus 3C84 lobe = 3.3e57 N chain verified (~1e3 below virx =
+    AGN lobes are sub-dominant perturbations, consistent w/ Chandra
+    cavity enthalpy). Scaling: F ~ sigma^3 * r_h -> UQFF virx force
+    as equivalent characterization of cluster thermodynamic state
+    (L_X ~ T correlation).
+    Q-038: (a) Virgo 3.7-vs-7.2 e59 canonical choice (closed form vs
+    validator weighting); (b) Virgo M87 lobe chain gives 2.7e55 N vs
+    printed 2.7e51 (1e4); (c) whim quoted in N/m^3 here vs N in
+    PAPER_038 - per-volume vs integrated convention ruling;
+    (d) mass-inversion gap ~1e8 encoded in Q_wave (disclosed,
+    consistent with 036's Q_wave ~ 1e-6 thermalized).
+    """
+    perseus = _fubii_virx(1.3e6, 2.5e22, 1.0)        # -2.024e60
+    coma = _fubii_virx(1.0e6, 6.8e22, 1.0)           # -2.51e60
+    virgo = _fubii_virx(6.0e5, 4.6e22, 1.0)          # -3.66e59
+    lobe_perseus = 1.0e-10 * (1.0e-13 * 2.4e61 / 1.22e-19) * 1.0e3 * (5.0e5 / 3.0e8)
+    return {
+        'value': {
+            'perseus_n': perseus,
+            'coma_n': coma,
+            'virgo_closed_form_n': virgo,
+            'virgo_validator_n': -7.2e59,            # Q-038a
+            'lobe_perseus_n': lobe_perseus,          # 3.3e57 VERIFIED
+            'lobe_virgo_chain_n': 2.7e55,            # Q-038b (printed 2.7e51)
+            'lobe_virgo_printed_n': 2.7e51,
+            'lobe_to_virx_ratio': lobe_perseus / abs(perseus),   # ~1.6e-3 sub-dominant
+            'coma_edges_perseus': abs(coma) > abs(perseus),      # True (r_h compensates)
+            'whim_coma_n_per_m3': 1.3e-28,           # Q-038c units convention
+            'mass_inversion_gap': 1.0e8,             # Q-038d, Q_wave-encoded
+            'cluster_params': {'perseus': (1.3e6, 2.5e22, 6.0),
+                               'coma': (1.0e6, 6.8e22, 8.0),
+                               'virgo': (6.0e5, 4.6e22, 2.5)},
+        },
+        'formula': ('F_virx = -F_rel*(3*sigma^2*r_h/(G*E_LEP))*Q*sigma (PAPER_036 helper); '
+                    'scaling F ~ sigma^3*r_h'),
+        'source': 'PAPER_040',
+        'residual_pct': abs(coma - (-2.5e60)) / 2.5e60 * 100,
         'status': 'OPEN_RULING',
     }

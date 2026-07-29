@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.42.0"
-description = "UQFF Star-Magic-Program v0.42.0: PAPER_039 wired - FUBii 17-VARIANT FAMILY COMPLETE (036-039). hawk 5-Msun BH = -2.452 N VERIFIED (Hawking radiation at laboratory scale); LQC bounce 0.0336 N; Cygnus A lobe 5.1e61 N; ent Page curve = F_UBii sign reversal. Q-037 queued (roche 10x internal conflict). Wired 43/2255, gate 316/0. Registry 127 rows / 246 edges / 43 ledgers."
+version = "0.43.0"
+description = "UQFF Star-Magic-Program v0.43.0: PAPER_040 wired (virx applied to Perseus/Coma/Virgo: -2.024e60 validator / -2.51e60 verified / -3.66e59 closed form; Perseus 3C84 lobe 3.3e57 N verified, AGN lobes sub-dominant; F ~ sigma^3*r_h thermodynamic scaling). Q-038 queued (Virgo factor-2; lobe 1e4; whim units). Wired 44/2255, gate 322/0. Registry 130 rows / 251 edges / 44 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

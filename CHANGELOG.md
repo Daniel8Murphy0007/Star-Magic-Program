@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.43.0] — 2026-07-29 — BAND 1: PAPER_040
+
+### Added
+- **PAPER_040 dispatch** (X-Ray Cluster Buoyancy applications): first
+  APPLICATION paper of the FUBii family — reuses the PAPER_036
+  _fubii_virx helper across Perseus (-2.024e60 N, validator), Coma
+  (-2.51e60 N, chain verified; edges Perseus because r_h = 2.2 Mpc
+  compensates lower sigma), Virgo (-3.66e59 closed form vs -7.2e59
+  validator — factor-2 sigma-weighting disclosed in-paper). Perseus
+  3C84 lobe = 3.3e57 N verified: AGN lobes are ~1e-3 sub-dominant ICM
+  perturbations (Chandra-consistent). F ~ sigma^3*r_h scaling offered
+  as an equivalent characterization of cluster thermodynamic state.
+  OPEN_RULING Q-038 (Virgo factor-2 canonical choice; Virgo lobe 1e4
+  chain-vs-printed; whim N/m^3-vs-N convention; Q_wave-encoded
+  mass-inversion gap).
+- Gate: 322 assertions, 0 failures. Registry: 130 rows / 251 edges / 44 ledgers.
+
+---
+
 ## [0.42.0] — 2026-07-29 — BAND 1: PAPER_039 — FUBii FAMILY COMPLETE
 
 ### Added

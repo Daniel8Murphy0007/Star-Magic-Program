@@ -1,26 +1,26 @@
-v0.42.0 BAND 1: PAPER_039 wired - FUBii 17-VARIANT FAMILY COMPLETE
+v0.43.0 BAND 1: PAPER_040 wired
 
-PAPER_039 F_UBii Buoyancy Variants 12-17: ICM Applications
-(OPEN_RULING Q-037):
-  Closes the charter-authorized template family (036-039, 17/17).
-  THREE VERIFIED END-TO-END:
-    hawk - 5-Msun BH at 30 km = -2.452 N: Hawking radiation as a
-    LABORATORY-SCALE inward buoyancy (weight of ~250 g) - the
-    family's most striking number
-    bd   - LQC bounce (rho/rho_P = 0.41) residual = 0.0336 N through
-    60 e-folds - consistent with no CMB pre-inflationary signal
-    lobe - Cygnus A radio lobes = 5.1e61 N (chain exact)
-  ent - S_BH^3 entanglement scaling; PAGE CURVE = F_UBii SIGN
-  REVERSAL: information recovery as a literal force-direction change
-  dec - exp(-t/tau) quantum-to-classical force diminution
+PAPER_040 X-Ray Cluster Buoyancy: Perseus, Coma, Virgo
+(OPEN_RULING Q-038):
+  First APPLICATION paper of the FUBii family - the PAPER_036
+  _fubii_virx helper reused across all three canonical clusters
+  (template architecture working as designed):
+    Perseus (A426): -2.024e60 N (validator, = PAPER_036)
+    Coma (A1656):   -2.51e60 N chain VERIFIED - edges Perseus
+                    despite lower sigma because r_h = 2.2 Mpc
+    Virgo (M87):    -3.66e59 N closed form vs -7.2e59 validator
+                    (factor-2 sigma-weighting, disclosed in-paper)
+  Perseus 3C84 lobe = 3.3e57 N VERIFIED: AGN lobes are ~1e-3
+  sub-dominant ICM perturbations (Chandra cavity-enthalpy consistent)
+  Scaling F ~ sigma^3 * r_h: UQFF virx force as an equivalent
+  characterization of cluster thermodynamic state (L_X ~ T)
 
-Q-037 queued: roche Cygnus X-2 step line 1.964e54 (= chain-true)
-vs boxed/abstract/validator 1.964e55 - 10x internal conflict, which
-is canonical?; dec intermediate 1e6 slip; hawk carries the 6th
-consecutive Session-0 in-text self-correction (corrected chain
-verifies); V_lobe input 10x vs (50 kpc)^3; summary-table exponent
-mojibake.
+Q-038 queued: Virgo factor-2 canonical choice (closed form vs
+validator weighting - what IS the weighting?); Virgo M87 lobe chain
+2.7e55 vs printed 2.7e51 (1e4, pinned); whim N/m^3-vs-N units
+convention between 038/040; mass-inversion 1e8 gap encoded in
+Q_wave (accept as family convention?).
 
-Gate 316 assertions 0 failures. Registry 127 rows / 246 edges / 43
-citation ledgers. Wired 43/2,255 (8 clean, 35 OPEN_RULING).
-Next: PAPER_040.
+Gate 322 assertions 0 failures. Registry 130 rows / 251 edges / 44
+citation ledgers. Wired 44/2,255 (8 clean, 36 OPEN_RULING).
+Next: PAPER_041.

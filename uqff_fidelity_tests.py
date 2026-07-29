@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.42.0", "uqff_calculator.VERSION = 0.42.0")
+assert_that(C.VERSION == "0.43.0", "uqff_calculator.VERSION = 0.43.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -711,6 +711,21 @@ assert_that(_r039['family_complete'] == 17,
 assert_that(abs(_r039['rho_bounce_over_planck'] - 0.41) < 1e-12,
             "PAPER_039: LQC rho_bounce/rho_Planck = 0.41 quantum-geometry anchor")
 assert_that(C.wired_count() >= 43, "wired_count >= 43")
+
+_r040 = C.calc('PAPER_040')['value']
+assert_that(abs(_r040['perseus_n'] - (-2.024e60)) / 2.024e60 < 0.001,
+            "PAPER_040: Perseus virx = -2.024e60 N (validator, matches PAPER_036)")
+assert_that(abs(_r040['coma_n'] - (-2.5e60)) / 2.5e60 < 0.01,
+            "PAPER_040: Coma virx = -2.51e60 N chain verified")
+assert_that(abs(_r040['virgo_closed_form_n'] - (-3.66e59)) / 3.66e59 < 0.01,
+            "PAPER_040: Virgo closed form = -3.66e59 (validator -7.2e59, factor-2 disclosed - Q-038a)")
+assert_that(abs(_r040['lobe_perseus_n'] - 3.3e57) / 3.3e57 < 0.01,
+            "PAPER_040: Perseus 3C84 lobe = 3.3e57 N chain VERIFIED (sub-dominant vs virx)")
+assert_that(_r040['coma_edges_perseus'],
+            "PAPER_040: Coma edges Perseus despite lower sigma (r_h = 2.2 Mpc compensates)")
+assert_that(abs(_r040['lobe_virgo_chain_n'] / _r040['lobe_virgo_printed_n'] - 1.0e4) / 1.0e4 < 0.05,
+            "PAPER_040: Virgo lobe chain-vs-printed 1e4 gap pinned (Q-038b)")
+assert_that(C.wired_count() >= 44, "wired_count >= 44")
 
 # =============================================================================
 # REPORT
