@@ -358,3 +358,9 @@ observable,f_rel_433_resolution,paper,PAPER_059,clear print
 observable,f_rel_433_resolution,paper,PAPER_042,resolves Q-040b mojibake
 observable,ns_pasta_scaling_bridge,paper,PAPER_059,primary derivation
 primitive,OMEGA_SCM_HZ,observable,f_rel_433_resolution,Q_wave THz factor context
+observable,bose_occupancy_calibration,paper,PAPER_060,primary derivation
+observable,bose_occupancy_calibration,paper,PAPER_059,same NIMROD-ISiS dataset
+observable,bec_de_ladder_26,paper,PAPER_060,primary derivation
+primitive,D_CRIT,observable,bec_de_ladder_26,26-level ladder
+observable,ssq_suppression_mismatch,paper,PAPER_060,formula/table mismatch
+primitive,SSQ,observable,ssq_suppression_mismatch,claimed exponent

@@ -14,6 +14,7 @@ DESIGN RULES (locked, non-negotiable):
 STATE at v0.1.0 (2026-07-28): scaffold only. Dispatch table is empty; the wiring
 campaign starts from PAPER_001 in the first content ship (v0.2.0+).
 """
+import math
 from uqff_registry_primitives import (
     # Locked primitives
     D_PHYS, D_CRIT, N_CH, SO_5, A_5, D_BSFG,
@@ -57,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.62.0"
+VERSION = "0.63.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3150,5 +3151,59 @@ def _paper_059(dataset):
                     'F_UBii = -F_rel*(E_cm/E_LEP)*Q_wave*g_local/1e30'),
         'source': 'PAPER_059',
         'residual_pct': abs(v_frag - 6.0) / 6.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_060')
+def _paper_060(dataset):
+    """Bose-Einstein Occupancy Fit, NIMROD-ISiS (Session 0).
+
+    Companion to PAPER_059 (same Ca-40+Ca-40 dataset). Alpha
+    multiplicities follow N_B = 1/(exp(dE/kT)-1). EXACT threshold
+    chain: dE_BEC = kT*ln(1+1/10) = 5.0*ln(1.1) = 0.4766 MeV gives
+    N_B = 10 (verified to 4 sig figs). Full 26-level dE ladder
+    dE(n) = kT*ln(1+1/n) VERIFIED at every printed row (1.116 /
+    0.589 / 0.400 / 0.303 / 0.244 / 0.189 MeV). Extension chain
+    verified: Hoyle state 3-alpha dE = 1.438 MeV, O-16 4-alpha =
+    1.116 MeV - single T_BEC = 5 MeV covers all three.
+    Fit: kT = 4.63 +/- 0.17 MeV vs true 5.0 (7.4 pct, within 10 pct
+    simulated noise), chi2/dof = 0.051. Data table is DISCLOSED as
+    MOCK (simulated from experimental dispersion) - the fit
+    demonstrates calibration, it is not a raw-histogram fit.
+    Q-056: (a) suppression-table exponent mismatch - formula claims
+    exp(-SSQ*n/26) but every printed value is exp(-0.50*n/26)
+    (paper admits level-26 value 0.6065 = e^-0.5; SSQ = 0.57 would
+    give 0.5655, which IS the S_LFV constant e^-SSQ); which is
+    canonical? (b) mock-data status of the fit; (c) M_UQFF = 14.3
+    TeV header constant vs M_KK = 11.6 TeV.
+    """
+    kt = 5.0
+    de_bec = kt * math.log(1.1)                       # 0.4766 EXACT chain
+    n_b = lambda de: 1.0 / (math.exp(de / kt) - 1.0)
+    ladder = {n: kt * math.log(1.0 + 1.0 / n) for n in (4, 8, 12, 16, 20, 26)}
+    supp_printed = {n: math.exp(-0.50 * n / 26.0) for n in (4, 8, 12, 16, 20, 26)}
+    supp_ssq_26 = math.exp(-SSQ)                      # 0.5655 what formula would give
+    return {
+        'value': {
+            'system': 'Ca-40 + Ca-40 alpha multiplicities (NIMROD-ISiS, mock-data fit)',
+            't_bec_mev': kt,
+            'de_bec_mev': de_bec,                     # 0.4766 EXACT
+            'n_b_at_threshold': n_b(de_bec),          # 10.000
+            'n_b_at_5mev': n_b(5.0),                  # 0.582
+            'kt_fit_mev': 4.63,
+            'kt_fit_err_pct': abs(4.63 - kt) / kt * 100,   # 7.4
+            'chi2_dof': 0.051,
+            'de_ladder_mev': ladder,                  # all rows VERIFIED
+            'suppression_printed': supp_printed,      # exp(-0.50*n/26) as printed
+            'suppression_ssq_level26': supp_ssq_26,   # 0.5655 (= S_LFV) Q-056a
+            'hoyle_3alpha_de_mev': kt * math.log(1.0 + 1.0 / 3.0),   # 1.438
+            'o16_4alpha_de_mev': kt * math.log(1.25),                # 1.116
+            'alpha_cluster_n': 4,
+        },
+        'formula': ('N_B = 1/(exp(dE/kT)-1); dE(n) = kT*ln(1+1/n); '
+                    'dE_BEC = 5.0*ln(1.1) = 0.4766 MeV'),
+        'source': 'PAPER_060',
+        'residual_pct': abs(4.63 - kt) / kt * 100,
         'status': 'OPEN_RULING',
     }

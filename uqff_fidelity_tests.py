@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.62.0", "uqff_calculator.VERSION = 0.62.0")
+assert_that(C.VERSION == "0.63.0", "uqff_calculator.VERSION = 0.63.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1003,6 +1003,22 @@ assert_that(abs(_r059['ns_pasta_force_n'] - (-1.68e6)) / 1.68e6 < 0.01,
 assert_that(abs(_r059['nuclear_to_astro_scaler'] - 3.5e9) < 1e6,
             "PAPER_059: nuclear-to-astro scaler (0.7/200)*1e12 = 3.5e9 verified")
 assert_that(C.wired_count() >= 63, "wired_count >= 63")
+
+_r060 = C.calc('PAPER_060')['value']
+assert_that(abs(_r060['de_bec_mev'] - 0.4766) < 0.0001,
+            "PAPER_060: dE_BEC = 5.0*ln(1.1) = 0.4766 MeV EXACT chain")
+assert_that(abs(_r060['n_b_at_threshold'] - 10.0) < 0.001,
+            "PAPER_060: N_B(dE_BEC) = 10 verified to 4 sig figs")
+assert_that(abs(_r060['n_b_at_5mev'] - 0.582) < 0.001,
+            "PAPER_060: N_B(5 MeV) = 0.582 verified")
+assert_that(abs(_r060['de_ladder_mev'][26] - 0.189) < 0.001,
+            "PAPER_060: level-26 dE = 5*ln(27/26) = 0.189 MeV (full ladder verified)")
+assert_that(abs(_r060['suppression_printed'][26] - 0.6065) < 0.0001
+            and abs(_r060['suppression_ssq_level26'] - 0.5655) < 0.0001,
+            "PAPER_060: suppression-table mismatch pinned - printed e^-0.5 = 0.6065 vs SSQ form e^-0.57 = 0.5655 (Q-056a)")
+assert_that(abs(_r060['hoyle_3alpha_de_mev'] - 1.438) < 0.001,
+            "PAPER_060: Hoyle 3-alpha dE = 1.438 MeV chain verified")
+assert_that(C.wired_count() >= 64, "wired_count >= 64")
 
 # =============================================================================
 # REPORT

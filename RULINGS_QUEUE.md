@@ -942,6 +942,26 @@ RESOLVED section with the ruling recorded.
   anchor recorded.
 - **Daniel's ruling:** (pending)
 
+### Q-056 — PAPER_060 — SSq suppression exponent + mock-data status + M_UQFF
+- **Question:** (a) The [SSq]-weighted BEC suppression table's formula
+  reads exp(-[SSq]*n/26) with [SSq] = 0.57, but every printed value
+  is exp(-0.50*n/26) — the paper itself states the level-26 value
+  "0.6065 = e^(-0.5)". With SSq the level-26 value would be
+  e^-0.57 = 0.5655, which is EXACTLY the S_LFV constant
+  (exp(-SSq), PAPER_046). Which exponent is canonical — 0.50 or
+  SSq = 0.57? (b) The multiplicity table is explicitly labeled
+  "Mock Data" (simulated with 10 pct Gaussian noise from
+  experimental dispersion); the kT = 4.63 MeV fit is therefore a
+  calibration demonstration, not a raw-NIMROD-histogram fit —
+  accept as wired? (c) Header comment carries M_UQFF = 1.43e1
+  (14.3) TeV vs the M_KK = 11.6 TeV wired earlier — third
+  mass-scale constant or drift?
+- **Best-candidate wired:** dE_BEC = 5*ln(1.1) = 0.4766 MeV EXACT;
+  full 26-level dE ladder verified at every row; Hoyle/O-16
+  extension verified; suppression table wired AS PRINTED (0.50
+  exponent) with the SSq alternative pinned alongside.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

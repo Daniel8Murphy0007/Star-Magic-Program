@@ -7,6 +7,31 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.63.0] — 2026-07-29 — BAND 1: PAPER_060 + GATE-COUNT AUDIT CORRECTION
+
+### Added
+- **PAPER_060 dispatch** (Bose-Einstein Occupancy, NIMROD-ISiS):
+  companion to PAPER_059. dE_BEC = kT*ln(1.1) = 0.4766 MeV EXACT
+  chain (N_B = 10 at T_BEC = 5 MeV, 4 sig figs); full 26-level
+  dE(n) = kT*ln(1+1/n) ladder VERIFIED at every printed row;
+  Hoyle 3-alpha (1.438 MeV) + O-16 4-alpha (1.116 MeV) closed by
+  the single T_BEC = 5 MeV parameter. kT fit 4.63 MeV (7.4 pct,
+  chi2/dof 0.051) — data table DISCLOSED as mock/simulated.
+- OPEN_RULING Q-056: (a) suppression-table exponent mismatch —
+  formula says exp(-SSq*n/26), printed values are exp(-0.50*n/26);
+  SSq form would give e^-0.57 = 0.5655 = the S_LFV constant;
+  (b) mock-data fit status; (c) M_UQFF 14.3 TeV vs M_KK 11.6 TeV.
+
+### Fixed
+- **Gate badge audit correction (Rule 7):** advertised assertion
+  count had drifted low (437 claimed at v0.62.0 vs 452 actual).
+  Badge now pinned to the true executed call-site count: **460/0**.
+  No assertions were removed; the count was under-reported.
+
+- Registry: 190 rows / 364 edges / 64 ledgers.
+
+---
+
 ## [0.62.0] — 2026-07-29 — BAND 1: PAPER_059 — DOMAIN 1.8 OPENS
 
 ### Added

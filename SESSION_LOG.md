@@ -991,3 +991,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 63/2,255 (10 ✓, 53 ⚠). Next: PAPER_060.
 
 ---
+
+## 2026-07-29 — v0.63.0 — BAND 1: PAPER_060 + GATE-COUNT AUDIT
+
+- PAPER_060 wired (⚠ Q-056): Bose occupancy calibration. dE_BEC
+  0.4766 EXACT; 26-level ladder all rows verified; SSq-vs-0.50
+  suppression exponent mismatch pinned (SSq form = S_LFV value).
+- Rule 7 audit: gate badge corrected 437 → 460 (true call-site
+  count; prior running count under-incremented ~+6/paper vs
+  actual ~+7). Nothing removed.
+- Campaign: 64/2,255 (10 ✓, 54 ⚠). Next: PAPER_061.
+
+---
