@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.35.0", "uqff_calculator.VERSION = 0.35.0")
+assert_that(C.VERSION == "0.36.0", "uqff_calculator.VERSION = 0.36.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -610,6 +610,21 @@ assert_that(abs(_r032['echo_026b_route_gev'] - _r032['m_s0_prediction_gev']) < 1
 assert_that(abs(_r032['v_s_singlet_gev'] - 791.0) < 1.0,
             "PAPER_032: singlet VEV v_S = 845/sqrt(2*SSq) = 791 GeV (lambda_S = SSq)")
 assert_that(C.wired_count() >= 36, "wired_count >= 36")
+
+_r033 = C.calc('PAPER_033')['value']
+assert_that(abs(_r033['e_react'] - 2.846e-3) / 2.846e-3 < 0.005,
+            "PAPER_033: E_react = tan^4(theta_C) = 2.84e-3 (shared with PAPER_030)")
+assert_that(abs(_r033['delta_t_uqff'] - 0.222) < 0.002,
+            "PAPER_033: delta_T = E_react*SSq/alpha_EM = 0.222")
+assert_that(abs(_r033['dm_w_gev'] - 0.093) < 0.002,
+            "PAPER_033: Delta_m_W = +93 MeV - CDF-anomaly direction and magnitude")
+assert_that(abs(_r033['m_w_uqff_gev'] - 80.455) < 0.003,
+            "PAPER_033: m_W^UQFF = 80.455 GeV vs CDF 80.4335 (~0.3 sigma)")
+assert_that(abs(_r033['dcs_geometric_mean'] - 5.31e-3) / 5.31e-3 < 0.005,
+            "PAPER_033: DCS geometric mean 5.31e-3; hadronic enhancement 1.87x disclosed")
+assert_that(abs(_r033['rho_uqff'] - 1.00322) < 0.00001,
+            "PAPER_033: rho_UQFF = 1.00322 within LEP 1-sigma")
+assert_that(C.wired_count() >= 37, "wired_count >= 37")
 
 # =============================================================================
 # REPORT

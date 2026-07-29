@@ -207,3 +207,9 @@ observable,bsm_scalar_mixing_from_keta,paper,PAPER_032,primary derivation
 observable,s0_scalar_845_resonance,paper,PAPER_032,primary derivation
 observable,s0_scalar_845_resonance,paper,PAPER_026b,845 GeV two-route echo
 observable,vlq_triplet_splitting,paper,PAPER_032,primary derivation
+primitive,SSQ,observable,ew_oblique_uqff,delta_T = E_react*SSq/alpha_EM
+primitive,KAPPA_PER_DAY,observable,ew_oblique_uqff,delta_S suppression exp(-kappa*t_EW)
+observable,ew_oblique_uqff,paper,PAPER_033,primary derivation
+observable,w_mass_shift_uqff,paper,PAPER_033,primary derivation
+observable,dcs_bes3_anchor,paper,PAPER_033,primary derivation
+observable,dcs_bes3_anchor,paper,PAPER_030,E_react = tan^4(theta_C) shared

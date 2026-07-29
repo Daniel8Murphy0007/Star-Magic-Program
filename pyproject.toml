@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.35.0"
-description = "UQFF Star-Magic-Program v0.35.0: PAPER_032 wired (BSM scalar sectors: sin^2(alpha) = k_eta = 0.1369, tan(beta) = 2.70, composite f = 665 GeV FCC-ee-testable; S0 at 845 GeV ECHOES PAPER_026b third-VLQ 2600*SSq^2 = 844.7 by a different route; triplet split 17 GeV via the 0.30 factor). Q-031 queued (1000x unit slip; companion ambiguity; echo ruling). Wired 36/2255, gate 270/0. Registry 106 rows / 208 edges / 36 ledgers."
+version = "0.36.0"
+description = "UQFF Star-Magic-Program v0.36.0: PAPER_033 wired (EW precision: delta_T = E_react*SSq/alpha = 0.222; Delta_m_W = +93 MeV CDF-anomaly direction ~0.3 sigma - headline falsifiable; delta_S killed by exp(-kappa*t_EW)*D_TRZ; BESIII DCS anchors with honest 1.87x hadronic disclosure). Q-032 queued (eta-prime 4-orders shortfall; notation). Wired 37/2255, gate 277/0. Registry 109 rows / 214 edges / 37 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

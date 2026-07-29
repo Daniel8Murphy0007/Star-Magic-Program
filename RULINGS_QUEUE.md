@@ -479,6 +479,24 @@ RESOLVED section with the ruling recorded.
   splitting composed with the 0.30 = (D_PHYS-1)/SO_5 factor.
 - **Daniel's ruling:** (pending)
 
+### Q-032 — PAPER_033 — delta_T notation + eta-prime shortfall + SU(3) + self-corrections
+- **Question:** (a) The abstract states "delta_T_UQFF = E_react*[SSq]
+  = 1.622e-3" while sec 3.2 computes delta_T = E_react*SSq/alpha_EM
+  = 0.222 (and calls 1.622e-3 "delta_rho") — which normalization is
+  canonical for the T-parameter claim? (b) Third consecutive paper
+  with an in-text self-correction left standing ("Wait — let me
+  recalculate"; the 0.294 GeV dead end) — paperwork-cleanup family
+  (PAPER_030 "Wait", PAPER_031 "Hmm"). (c) The eta-prime enhancement
+  estimate Delta_BR = 8.5e-9 is FOUR ORDERS below the observed excess
+  (~0.7e-4) it is presented as explaining — is a different [SCm]
+  power intended? (d) SU(3) ratio predicted 1.56 vs measured 1.24
+  (20 pct, attributed to FSI — accept as disclosed residual?).
+- **Best-candidate wired:** delta_T = 0.222 (sec-3.2 form; W-mass
+  chain 93 MeV verifies against it); Delta_m_W = +93 MeV CDF-direction
+  headline wired as falsifiable; DCS anchors + honest hadronic-
+  enhancement disclosure preserved.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

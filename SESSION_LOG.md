@@ -704,3 +704,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 36/2,255 (7 ✓, 29 ⚠). Next: PAPER_033.
 
 ---
+
+## 2026-07-29 — v0.36.0 — BAND 1: PAPER_033
+
+- PAPER_033 wired (⚠ Q-032): EW precision. Delta_m_W = +93 MeV CDF
+  direction is the headline falsifiable; E_react corpus-shared with
+  030; eta-prime 4-order shortfall caught by arithmetic check.
+- Gate 277/0. Registry 109 rows / 214 edges / 37 ledgers.
+- Campaign: 37/2,255 (7 ✓, 30 ⚠). Next: PAPER_034.
+
+---

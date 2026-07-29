@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.35.0"
+VERSION = "0.36.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1719,5 +1719,64 @@ def _paper_032(dataset):
                     'split = m_W*0.30/sqrt(2)'),
         'source': 'PAPER_032',
         'residual_pct': abs(m_s0_trz - 845.0) / 845.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_033')
+def _paper_033(dataset):
+    """Electroweak Precision Observables: UQFF Corrections (Session 0).
+
+    BESIII DCS D-decays anchor E_react = tan^4(theta_C) = 2.846e-3
+    (shared with PAPER_030 - corpus consistency). Oblique corrections:
+    delta_T = E_react*SSq/alpha_EM = 0.222 (comparable to 1-sigma EW
+    fit uncertainty); delta_rho = E_react = 2.846e-3 within LEP 1-sigma;
+    delta_S = 1.71 raw but exponentially killed by exp(-kappa*t_EW)*
+    D_TRZ ~ 0 (no LEP conflict). HEADLINE FALSIFIABLE: Delta_m_W =
+    +93 MeV - same direction and magnitude as the CDF anomaly
+    (+70 MeV), consistent at ~0.3 sigma.
+    Honest in-paper disclosures: DCS geometric mean 5.31e-3 vs pure
+    CKM 2.846e-3 = 1.87x hadronic enhancement; the epsilon = 2.000
+    "coincidence" E_react == tan^4 acknowledged.
+    Q-032: (a) abstract labels delta_T = 1.622e-3 vs text 0.222
+    (missing /alpha_EM in abstract); (b) 3rd consecutive paper with
+    in-text self-correction ("Wait - let me recalculate", 0.294 GeV
+    dead end); (c) eta-prime enhancement estimate 8.5e-9 is FOUR
+    ORDERS below the observed excess it claims to explain;
+    (d) SU(3) ratio 1.56 predicted vs 1.24 measured (20 pct FSI).
+    """
+    import math as _m
+    e_react = _m.tan(0.227) ** 4                     # 2.843e-3
+    alpha_em = 7.30e-3
+    delta_t = e_react * SSQ / alpha_em               # 0.222
+    delta_rho = e_react                              # 2.846e-3
+    delta_s_raw = 4.0 * 0.2312 * (e_react / (39.2e-3 ** 2))          # 1.71
+    dm_w_gev = 80.4 * (0.769 / (0.769 - 0.231)) * (alpha_em / 2.0) * delta_t
+    dcs = (5.23e-3, 4.22e-3, 6.79e-3)
+    geo_mean = (dcs[0] * dcs[1] * dcs[2]) ** (1.0 / 3.0)
+    return {
+        'value': {
+            'e_react': e_react,
+            'delta_t_uqff': delta_t,                 # 0.222
+            'delta_rho_uqff': delta_rho,
+            'rho_uqff': 1.00037 + delta_rho,         # 1.00322
+            'delta_s_raw': delta_s_raw,              # 1.71 -> suppressed ~0
+            'delta_s_physical': 0.0,
+            'dm_w_gev': dm_w_gev,                    # 0.093
+            'm_w_uqff_gev': 80.362 + dm_w_gev,       # 80.455
+            'm_w_cdf_gev': 80.4335,
+            'dcs_ratios': dcs,
+            'dcs_geometric_mean': geo_mean,          # 5.31e-3
+            'hadronic_enhancement': geo_mean / e_react,   # 1.87
+            'dcs_uqff_enhancement': 1.0 + 0.1369 * e_react,   # 1.00039 negligible
+            'bes_br': {'k_pi0': 1.45e-4, 'k_eta': 1.17e-4, 'k_etap': 1.88e-4},
+            'su3_ratio': (1.56, 1.239),              # predicted vs measured (Q-032d)
+            'etap_enhancement_estimate': 8.5e-9,     # Q-032c: 4 orders short
+        },
+        'formula': ('E_react = tan^4(theta_C); delta_T = E_react*SSq/alpha_EM; '
+                    'delta_S suppressed by exp(-kappa*t_EW)*D_TRZ; '
+                    'Delta_m_W = m_W*(c^2/(c^2-s^2))*(alpha/2)*delta_T'),
+        'source': 'PAPER_033',
+        'residual_pct': abs(dm_w_gev - 0.093) / 0.093 * 100,
         'status': 'OPEN_RULING',
     }

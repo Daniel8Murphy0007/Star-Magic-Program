@@ -1,23 +1,25 @@
-v0.35.0 BAND 1: PAPER_032 wired
+v0.36.0 BAND 1: PAPER_033 wired
 
-PAPER_032 BSM Scalar Sectors (OPEN_RULING Q-031):
-  VLQs cannot get mass from the SM Higgs alone - extended scalar
-  sector required. UQFF Ug2 charge-reactivity mapping:
-    sin^2(alpha) = k_eta = 0.37^2 = 0.1369 -> alpha = 21.7 deg
-    tan(beta) = 1/sqrt(k_eta) = 2.70 (2HDM, FCNC-safe)
-    composite scale f = v/sqrt(xi) = 665 GeV - FCC-ee sees the
-    xi/2 = 6.8 pct coupling shift at >> 5 sigma (falsifiable)
-  S0 scalar at ~845 GeV via TRZ-corrected resonance.
-  REMARKABLE ECHO (gate-pinned): 845 = PAPER_026b's third-VLQ
-  family 2600*SSq^2 = 844.7 GeV by a COMPLETELY DIFFERENT route.
-  Triplet splitting = m_W*0.30/sqrt(2) = 17.0 GeV - composed from
-  (D_PHYS-1)/SO_5; singlet VEV v_S = 845/sqrt(2*SSq) = 791 GeV.
+PAPER_033 Electroweak Precision Observables (OPEN_RULING Q-032):
+  BESIII DCS D-decays (K+pi0/eta/etap at 1e-4, all >10 sigma) anchor
+  E_react = tan^4(theta_C) = 2.846e-3 - corpus-shared with PAPER_030
+  Oblique corrections:
+    delta_T = E_react*SSq/alpha_EM = 0.222 (~1-sigma of EW fit)
+    delta_rho = E_react = 2.846e-3 - within LEP rho_0 1-sigma
+    delta_S = 1.71 raw, exponentially killed by exp(-kappa*t_EW)*
+    D_TRZ ~ 0 (no LEP conflict)
+  HEADLINE FALSIFIABLE: Delta_m_W = +93 MeV vacuum T-parameter shift
+  m_W^UQFF = 80.455 GeV - same direction and magnitude as the CDF
+  anomaly (80.4335, +70 MeV above SM), consistent at ~0.3 sigma
+  Honest in-paper disclosures preserved: DCS hadronic enhancement
+  1.87x; the epsilon = 2.000 tautology acknowledged as coincidence
 
-Q-031 queued: (a) resonance closed form evaluates 2.52e6 GeV as
-printed, paper silently uses 2520 GeV (1000x unit slip); (b) third
-companion offered at 1000/500/313 GeV via three routes; (c) the
-845 GeV echo - same object, coincidence, or deep structure?
+Q-032 queued: abstract delta_T = 1.622e-3 vs text 0.222 (missing
+/alpha_EM); 3rd consecutive paper with "Wait - let me recalculate"
+left standing (paperwork family); eta-prime enhancement 8.5e-9 is
+FOUR ORDERS below the excess it claims to explain; SU(3) ratio
+1.56-vs-1.24 FSI residual.
 
-Gate 270 assertions 0 failures. Registry 106 rows / 208 edges / 36
-citation ledgers. Wired 36/2,255 (7 clean, 29 OPEN_RULING).
-Next: PAPER_033.
+Gate 277 assertions 0 failures. Registry 109 rows / 214 edges / 37
+citation ledgers. Wired 37/2,255 (7 clean, 30 OPEN_RULING).
+Next: PAPER_034.

@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.36.0] — 2026-07-29 — BAND 1: PAPER_033
+
+### Added
+- **PAPER_033 dispatch** (Electroweak Precision Observables): BESIII
+  DCS D-decays anchor E_react = tan^4(theta_C) (shared with PAPER_030).
+  Oblique corrections: delta_T = E_react*SSq/alpha_EM = 0.222;
+  delta_rho = 2.846e-3 within LEP 1-sigma; delta_S raw 1.71
+  exponentially killed by exp(-kappa*t_EW)*D_TRZ (no LEP conflict).
+  HEADLINE: Delta_m_W = +93 MeV — same direction/magnitude as the CDF
+  W-mass anomaly (+70 MeV), consistent ~0.3 sigma, falsifiable.
+  Honest disclosures preserved: 1.87x hadronic DCS enhancement, the
+  epsilon = 2.000 coincidence. OPEN_RULING Q-032 (abstract delta_T
+  notation; 3rd consecutive in-text self-correction; eta-prime
+  enhancement 4 orders short of the excess it claims to explain;
+  SU(3) 1.56-vs-1.24 FSI residual).
+- Gate: 277 assertions, 0 failures. Registry: 109 rows / 214 edges / 37 ledgers.
+
+---
+
 ## [0.35.0] — 2026-07-29 — BAND 1: PAPER_032
 
 ### Added
