@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.76.0"
-description = "UQFF Star-Magic-Program v0.76.0: PAPER_073 wired (Gaia DR4 cross-validation opens Domain 1.10: UQFF/Newton = 1+SSq*0.034 = 1.0194 EXACT chain; dex 0.0148 chain; solar 5.0-sigma tension honestly pinned; g_DPM column mixed-convention defects corrected per-row; dual solar-rotation constants flagged; TAP infrastructure recorded). Q-069 queued. Wired 77/2255, gate 554/0. Registry 228 rows / 444 edges / 77 ledgers."
+version = "0.77.0"
+description = "UQFF Star-Magic-Program v0.77.0: PAPER_074 wired (NED/SIMBAD 6-galaxy sigma suite: all tension chains verify; M31 chain SSq*0.001 = 0.057 pct EXACT; sibling factor conflict 0.032 vs 073 0.034 with row-average favoring 0.034; Rule-7 finding pinned - Newton beats UQFF in all 6 rows, correction-sign ruling requested). Q-070 queued. Wired 78/2255, gate 560/0. Registry 230 rows / 448 edges / 78 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

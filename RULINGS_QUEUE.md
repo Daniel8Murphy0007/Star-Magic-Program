@@ -1243,6 +1243,25 @@ RESOLVED section with the ruling recorded.
   Newton corrections carried alongside printed values.
 - **Daniel's ruling:** (pending)
 
+### Q-070 — PAPER_074 — 0.032/0.034 sibling conflict + one-sided enhancement bias
+- **Question:** (a) The sigma-enhancement factor is 0.032 here
+  (1 + SSq*0.032 = 1.01824 = printed 1.018) but 0.034 in
+  PAPER_073 (1.0194); the actual 6-row average enhancement is
+  1.0193, FAVORING 0.034 - pin one canonical factor?
+  (b) RULE-7 FINDING: the UQFF enhancement moves EVERY prediction
+  further from observation - Newton tensions (1.5/2.0/1.86/0.83/
+  0.38/1.5 sigma) beat UQFF tensions in all 6 rows. Is the
+  correction sign wrong for dispersions, are the observed sigmas
+  systematically low in these catalogs, or does the enhancement
+  belong to a different observable? (c) sigma_Newton inputs
+  (M_gal, r_eff per galaxy) are not tabulated - provenance?
+- **Notable:** all six per-row tension chains verify exactly as
+  printed; M31 proper-motion chain SSq*0.001 = 0.057 pct EXACT;
+  NED/SIMBAD endpoints recorded for Domain 1.10.
+- **Best-candidate wired:** suite as printed with BOTH tension
+  sets (Newton + UQFF) carried; both factor forms exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -444,3 +444,7 @@ primitive,SSQ,observable,gaia_dr4_ssq_correction,correction factor
 observable,gdpm_column_defect,paper,PAPER_073,column forensic
 observable,solar_rotation_dual,paper,PAPER_073,dual-constant flag
 observable,gaia_dr4_ssq_correction,paper,PAPER_064,Compressed-mode basis
+observable,ned_simbad_sigma_suite,paper,PAPER_074,primary suite
+primitive,SSQ,observable,ned_simbad_sigma_suite,enhancement factor
+observable,ned_simbad_sigma_suite,paper,PAPER_073,sibling factor conflict
+observable,uqff_enhancement_bias,paper,PAPER_074,Rule-7 finding

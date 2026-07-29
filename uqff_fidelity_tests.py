@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.76.0", "uqff_calculator.VERSION = 0.76.0")
+assert_that(C.VERSION == "0.77.0", "uqff_calculator.VERSION = 0.77.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1223,6 +1223,19 @@ assert_that(_r073['bd_matches_linear_form'],
 assert_that(abs(_r073['g_newton_corrected']['sirius'] - 193.0) < 1.0,
             "PAPER_073: Sirius Newton correction 193 vs printed 367 pinned")
 assert_that(C.wired_count() >= 77, "wired_count >= 77")
+
+_r074 = C.calc('PAPER_074')['value']
+assert_that(abs(_r074['galaxies']['m87']['tension_uqff'] - 2.0) < 0.01,
+            "PAPER_074: M87 tension 2.0 sigma verifies as printed (all 6 rows check)")
+assert_that(abs(_r074['avg_enhancement'] - 1.0193) < 0.0005,
+            "PAPER_074: row-average enhancement 1.0193 favors the 0.034 factor (Q-070a)")
+assert_that(abs(_r074['ratio_printed'] - 1.01824) < 0.0001,
+            "PAPER_074: printed 1.018 = 1 + SSq*0.032 chain closes (sibling conflict w/ 073's 0.034)")
+assert_that(abs(_r074['m31_dmu_pct'] - 0.057) < 0.001,
+            "PAPER_074: M31 proper-motion chain SSq*0.001 = 0.057 pct EXACT")
+assert_that(_r074['newton_wins_all_rows'],
+            "PAPER_074: Rule-7 finding pinned - Newton beats UQFF in ALL 6 rows (Q-070b)")
+assert_that(C.wired_count() >= 78, "wired_count >= 78")
 
 # =============================================================================
 # REPORT

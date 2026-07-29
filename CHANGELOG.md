@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.77.0] — 2026-07-29 — BAND 1: PAPER_074
+
+### Added
+- **PAPER_074 dispatch** (NED/SIMBAD Galactic Structure): 6-galaxy
+  UQFF virial sigma suite — all six per-row tension chains verify
+  exactly as printed; M31 proper-motion chain SSq*0.001 = 0.057
+  pct EXACT; NED + SIMBAD TAP endpoints recorded.
+- **Sibling-constant conflict:** enhancement factor 0.032 here vs
+  PAPER_073's 0.034; the actual row-average 1.0193 favors 0.034.
+- **Rule-7 finding pinned:** the UQFF enhancement moves EVERY
+  prediction further from observation — Newton tensions beat UQFF
+  in all 6 rows. Wired as printed with BOTH tension sets carried;
+  correction-sign / systematic ruling requested.
+- OPEN_RULING Q-070.
+- Gate: 560 assertions, 0 failures. Registry: 230 rows / 448 edges / 78 ledgers.
+
+---
+
 ## [0.76.0] — 2026-07-29 — BAND 1: PAPER_073 — DOMAIN 1.10 OPENS
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.76.0"
+VERSION = "0.77.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3928,5 +3928,54 @@ def _paper_073(dataset):
                     'v_osc = g_R/omega; g_Newton = 274*M/R^2 (solar units)'),
         'source': 'PAPER_073',
         'residual_pct': abs((1.0 + SSQ * 0.034) - 1.019) / 1.019 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_074')
+def _paper_074(dataset):
+    """NED/SIMBAD Galactic Structure Cross-Validation (Session 0).
+
+    Domain 1.10 continues: NED + SIMBAD TAP/ADQL endpoints
+    recorded. UQFF-modified virial sigma for 6 galaxies; ALL SIX
+    per-row tension chains VERIFY as printed (M87 2.0 / VirgoA 2.6
+    / M81 2.29 / MW 1.17 / M51 0.63 / NGC1277 1.89 sigma).
+    M31 proper-motion chain EXACT: SSq * 0.001 = 0.057 pct.
+    SIBLING-CONSTANT CONFLICT (Q-070a): correction factor 0.032
+    here (1 + SSq*0.032 = 1.01824 = printed 1.018) vs PAPER_073's
+    0.034 (1.0194); the actual row-average enhancement = 1.0193,
+    FAVORING 0.034.
+    RULE-7 HONEST FINDING (Q-070b): the UQFF enhancement moves
+    EVERY prediction further from observation - Newton tensions
+    (1.5/2.0/1.86/0.83/0.38/1.5 sigma) beat UQFF tensions in all
+    6 rows. One-sided bias: either the correction sign is wrong
+    for dispersions, the observations pull low systematically, or
+    the enhancement belongs elsewhere - ruling requested, wired
+    as printed with both tension sets carried.
+    """
+    rows = {'m87': (342.0, 348.0, 324.0, 12.0), 'virgo_a': (334.0, 340.0, 314.0, 10.0),
+            'm81': (156.0, 159.0, 143.0, 7.0), 'milky_way': (105.0, 107.0, 100.0, 6.0),
+            'm51': (88.0, 90.0, 85.0, 8.0), 'ngc1277': (360.0, 367.0, 333.0, 18.0)}
+    out = {}
+    for k, (n, u, o, e) in rows.items():
+        out[k] = {'sigma_newton': n, 'sigma_uqff': u, 'sigma_obs': o,
+                  'tension_uqff': (u - o) / e, 'tension_newton': (n - o) / e}
+    avg = sum(v['sigma_uqff'] / v['sigma_newton'] for v in out.values()) / 6.0
+    return {
+        'value': {
+            'domain': '1.10 (NED + SIMBAD endpoints)',
+            'galaxies': out,
+            'avg_enhancement': avg,                        # 1.0193
+            'factor_here': 0.032,                          # vs 073's 0.034
+            'ratio_printed': 1.0 + SSQ * 0.032,            # 1.01824
+            'ratio_073_form': 1.0 + SSQ * 0.034,           # 1.01938 favored by avg
+            'm31_dmu_pct': SSQ * 0.001 * 100,              # 0.057 EXACT
+            'newton_wins_all_rows': all(abs(v['tension_newton']) < abs(v['tension_uqff'])
+                                        for v in out.values()),
+        },
+        'formula': ('sigma_UQFF^2 = sigma_DPM^2*(1 + F_UBii/F_DPM); '
+                    'enhancement = 1 + SSq*factor; dmu = mu*SSq*(r_AGN/r_gal)'),
+        'source': 'PAPER_074',
+        'residual_pct': abs(avg - 1.018) / 1.018 * 100,
         'status': 'OPEN_RULING',
     }

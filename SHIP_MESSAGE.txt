@@ -1,25 +1,23 @@
-v0.76.0 BAND 1: PAPER_073 wired - DOMAIN 1.10 OPENS (GAIA DR4)
+v0.77.0 BAND 1: PAPER_074 wired - RULE-7 ONE-SIDED-BIAS FINDING
 
-PAPER_073 Gaia DR4 Astrometric Cross-Validation (OPEN_RULING
-Q-069):
-  Domain 1.10 (database integration) opens: Gaia TAP endpoints +
-  ADQL query template recorded.
+PAPER_074 NED/SIMBAD Galactic Structure (OPEN_RULING Q-070):
+  6-galaxy UQFF virial sigma suite - ALL SIX per-row tension
+  chains verify exactly as printed (M87 2.0 / Virgo A 2.6 / M81
+  2.29 / MW 1.17 / M51 0.63 / NGC 1277 1.89 sigma).
+  M31 proper-motion chain EXACT: SSq*0.001 = 0.057 pct.
+  NED + SIMBAD TAP/ADQL endpoints recorded (Domain 1.10).
 
-  SSQ CORRECTION CHAIN EXACT: UQFF/Newton = 1 + SSq*0.034 =
-  1.0194 = printed 1.019; dex form 0.034/ln10 = 0.0148 = printed
-  +0.015 dex. Solar anchor g = 274 (calibration row).
-  omega_sun = 2*pi/25.3d = 2.874e-6 rad/s VERIFIED (real solar
-  rotation; corpus omega_s_Sun = 2.5e-6 dual-constant flagged).
-  v_osc = 3.48 m/s negligible as stated.
+  SIBLING-CONSTANT CONFLICT: enhancement factor 0.032 here
+  (1 + SSq*0.032 = 1.018 printed) vs PAPER_073's 0.034 (1.0194);
+  the actual 6-row average = 1.0193 FAVORS 0.034.
 
-  HONEST PINS:
-  - Solar log g +0.015 dex vs Gaia sigma 0.003 is EXACTLY 5.0
-    sigma; sec 4 instead compares vs population sigma 0.1-0.3
-    (<1 sigma) - dual-comparison ruling requested
-  - g_DPM column mixed conventions: Sirius 367 printed vs 193
-    computed (GM/R^2); Betelgeuse 10x off; WD 300x off; brown
-    dwarf matches M/R LINEAR - per-row corrections carried
+  RULE-7 HONEST FINDING: the UQFF enhancement moves EVERY
+  prediction further from observation - Newton tensions
+  (1.5/2.0/1.86/0.83/0.38/1.5) beat UQFF tensions in ALL 6 rows.
+  Wired as printed with BOTH tension sets carried; ruling
+  requested on correction sign / catalog systematics /
+  observable assignment.
 
-Q-069 queued. Gate 554 assertions 0 failures. Registry 228 rows /
-444 edges / 77 citation ledgers. Wired 77/2,255 (10 clean, 67
-OPEN_RULING). Next: PAPER_074.
+Q-070 queued. Gate 560 assertions 0 failures. Registry 230 rows /
+448 edges / 78 citation ledgers. Wired 78/2,255 (10 clean, 68
+OPEN_RULING). Next: PAPER_075.

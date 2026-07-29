@@ -1132,3 +1132,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 77/2,255 (10 ✓, 67 ⚠). Next: PAPER_074.
 
 ---
+
+## 2026-07-29 — v0.77.0 — BAND 1: PAPER_074
+
+- PAPER_074 wired (⚠ Q-070): NED/SIMBAD suite. 6/6 tension chains
+  verify; 0.032/0.034 sibling conflict (row-average favors
+  0.034); Rule-7 one-sided-bias finding pinned honestly.
+- Campaign: 78/2,255 (10 ✓, 68 ⚠). Next: PAPER_075.
+
+---
