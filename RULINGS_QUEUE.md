@@ -461,6 +461,24 @@ RESOLVED section with the ruling recorded.
   mapping + Tera-Z + LFU chains all verified numerically.
 - **Daniel's ruling:** (pending)
 
+### Q-031 — PAPER_032 — scalar-mass unit slip + companion ambiguity + 845 GeV echo
+- **Question:** (a) The resonance closed form M = m_B*exp(pi*SSq/k_eta)
+  = 5.279*exp(13.08) evaluates to 2.52e6 GeV (2522 TeV) as printed; the
+  paper silently proceeds with 2520 GeV — a 1000x unit slip (prefactor
+  effectively m_B in MeV). TRZ then gives 2520*0.333 = 839 ~ "845 GeV".
+  What is the canonical closed form? (b) The third-companion VLQ is
+  offered at 1000 GeV (m_T*(1-D)), 500 GeV (m_T*D), AND 313 GeV
+  (M_S0*sqrt(k_eta)) — three routes, three masses, no adjudication.
+  (c) REMARKABLE ECHO: the S0 scalar at "845 GeV" equals PAPER_026b's
+  third VLQ family 2600*SSq^2 = 844.7 GeV by a completely different
+  route. Same object (scalar vs fermion — can't be), same mass scale
+  coincidence, or deep structure? Ruling shapes both papers' wiring.
+- **Best-candidate wired:** mixing-angle family (sin^2-alpha = k_eta,
+  tan-beta, f = 665) all verified EXACT; 845 echo gate-pinned; raw
+  closed-form value exposed alongside the used value; triplet
+  splitting composed with the 0.30 = (D_PHYS-1)/SO_5 factor.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

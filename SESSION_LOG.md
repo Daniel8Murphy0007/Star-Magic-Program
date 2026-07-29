@@ -694,3 +694,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 35/2,255 (7 ✓, 28 ⚠). Next: PAPER_032.
 
 ---
+
+## 2026-07-29 — v0.35.0 — BAND 1: PAPER_032
+
+- PAPER_032 wired (⚠ Q-031): BSM scalars. Mixing family exact;
+  845-GeV two-route echo with 026b gate-pinned (deep-structure
+  question queued); 1000x unit slip caught in resonance closed form.
+- Gate 270/0. Registry 106 rows / 208 edges / 36 ledgers.
+- Campaign: 36/2,255 (7 ✓, 29 ⚠). Next: PAPER_033.
+
+---

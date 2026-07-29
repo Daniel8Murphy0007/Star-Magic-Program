@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.35.0] — 2026-07-29 — BAND 1: PAPER_032
+
+### Added
+- **PAPER_032 dispatch** (BSM Scalar Sectors): VLQs demand extended
+  scalars — UQFF Ug2 mapping gives sin^2(alpha) = k_eta = 0.1369
+  (alpha = 21.7 deg), tan(beta) = 1/sqrt(k_eta) = 2.70 (2HDM),
+  composite scale f = v/sqrt(xi) = 665 GeV (FCC-ee sees 6.8% shift at
+  >> 5 sigma). S0 scalar at ~845 GeV via TRZ-corrected resonance —
+  REMARKABLE ECHO: equals PAPER_026b's third-VLQ 2600*SSq^2 = 844.7
+  GeV by a different route (gate-pinned). Triplet splitting = m_W*
+  0.30/sqrt(2) = 17 GeV composed from (D_PHYS-1)/SO_5; singlet VEV
+  v_S = 791 GeV with lambda_S = SSq. OPEN_RULING Q-031 (closed-form
+  1000x unit slip: 2.52e6 GeV printed vs 2520 used; third-companion
+  three-way ambiguity 1000/500/313 GeV; 845-echo adjudication).
+- Gate: 270 assertions, 0 failures. Registry: 106 rows / 208 edges / 36 ledgers.
+
+---
+
 ## [0.34.0] — 2026-07-29 — BAND 1: PAPER_031
 
 ### Added

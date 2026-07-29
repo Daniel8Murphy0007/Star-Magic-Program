@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.34.0"
+VERSION = "0.35.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1657,5 +1657,67 @@ def _paper_031(dataset):
                     'Delta_CKM = 2*[SCm]_flavor*K_CKM'),
         'source': 'PAPER_031',
         'residual_pct': abs(r_d - 0.332) / 0.332 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_032')
+def _paper_032(dataset):
+    """BSM Scalar Sectors in UQFF (Session 0).
+
+    VLQs cannot get mass from the SM Higgs alone -> extended scalar
+    sector required. UQFF Ug2 mapping: sin^2(alpha) = k_eta = 0.1369
+    -> alpha = 21.7 deg; tan(beta) = 1/sqrt(k_eta) = 2.70 (2HDM);
+    composite scale f = v/sqrt(xi) = 665 GeV (FCC-ee sees xi/2 = 6.8
+    pct at >> 5 sigma). Scalar resonance M_S0 ~ 845 GeV via TRZ
+    correction - REMARKABLE ECHO: PAPER_026b's third VLQ family =
+    2600*SSq^2 = 845 GeV lands on the SAME number by a different
+    route. Triplet splitting = m_W*0.30/sqrt(2) = 17 GeV (the 0.30
+    factor again); v_S = M_S0/sqrt(2*SSq) = 791 GeV.
+    Q-031: (a) M_scalar closed form m_B*exp(pi*SSq/k_eta) evaluates
+    to 2.52e6 GeV as printed - the paper silently uses 2520 GeV
+    (1000x unit slip; TRZ 2520*0.333 = 839 ~ 845); (b) third-companion
+    VLQ offered at 1000 / 500 / 313 GeV via three different routes -
+    ambiguous; (c) is the 845 GeV S0 the SAME object as 026b's 845
+    GeV third VLQ family, or two coincident masses?
+    """
+    import math as _m
+    k_eta = 0.37 ** 2                                # 0.1369
+    sin_a = _m.sqrt(k_eta)                           # 0.370
+    alpha_deg = _m.degrees(_m.asin(sin_a))           # 21.7
+    tan_beta = 1.0 / sin_a                           # 2.70
+    f_composite = 246.0 / sin_a                      # 665 GeV
+    exp_arg = _m.pi * SSQ / k_eta                    # 13.08
+    m_scalar_raw_gev = 5.279 * _m.exp(exp_arg)       # 2.53e6 (Q-031a as-printed)
+    m_scalar_used_gev = 2520.0                       # paper usage (1000x slip)
+    m_s0_trz = m_scalar_used_gev / 3.0               # 840 ~ 845 (D = 1/3)
+    triplet_split = 80.4 * ((D_PHYS - 1) / SO_5) / _m.sqrt(2.0)   # 17.05
+    v_s = 845.0 / _m.sqrt(2.0 * SSQ)                 # 791
+    return {
+        'value': {
+            'k_eta': k_eta,
+            'sin2_alpha': k_eta,
+            'alpha_deg': alpha_deg,                  # 21.7
+            'cos2_alpha': 1.0 - k_eta,               # 0.863 WW/ZZ suppression
+            'tan_beta_2hdm': tan_beta,               # 2.70
+            'f_composite_gev': f_composite,          # 665
+            'xi_composite': k_eta,
+            'fcc_ee_kappa_shift_pct': k_eta / 2.0 * 100,   # 6.8
+            'm_scalar_raw_gev': m_scalar_raw_gev,    # 2.5e6 as-printed (Q-031a)
+            'm_scalar_used_gev': m_scalar_used_gev,
+            'm_s0_prediction_gev': 845.0,
+            'm_s0_trz_route': m_s0_trz,              # 840
+            'echo_026b_route_gev': 2600.0 * SSQ**2,  # 844.7 - same number, different route
+            'triplet_split_gev': triplet_split,      # 17.0
+            'v_s_singlet_gev': v_s,                  # 791
+            'vlq_bare_mass_gev': (1500.0**2 - 555.0**2) ** 0.5,   # 1394
+            'third_companion_candidates_gev': (1000.0, 500.0, 313.0),   # Q-031b
+            'br_hierarchy': (0.50, 0.25, 0.25),      # Wb : Zt : Ht singlet limit
+        },
+        'formula': ('sin^2(alpha) = k_eta = 0.37^2; tan(beta) = 1/sqrt(k_eta); '
+                    'f = v/sqrt(xi); M_S0 = (m_scalar/1000?)*D_TRZ ~ 845; '
+                    'split = m_W*0.30/sqrt(2)'),
+        'source': 'PAPER_032',
+        'residual_pct': abs(m_s0_trz - 845.0) / 845.0 * 100,
         'status': 'OPEN_RULING',
     }

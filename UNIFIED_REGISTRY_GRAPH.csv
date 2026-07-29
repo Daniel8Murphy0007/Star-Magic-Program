@@ -200,3 +200,10 @@ observable,rd_rdstar_resolution,paper,PAPER_031,primary derivation
 observable,ckm_row2_unitarity_mapping,paper,PAPER_031,primary derivation
 observable,ckm_row2_unitarity_mapping,paper,PAPER_028,[SCm]_flavor input
 observable,tera_z_lfu_predictions,paper,PAPER_031,primary derivation
+primitive,SSQ,observable,s0_scalar_845_resonance,exp(pi*SSq/k_eta); 2600*SSq^2 echo
+primitive,D_PHYS,observable,vlq_triplet_splitting,0.30 = (D_PHYS-1)/SO_5
+primitive,SO_5,observable,vlq_triplet_splitting,0.30 = (D_PHYS-1)/SO_5
+observable,bsm_scalar_mixing_from_keta,paper,PAPER_032,primary derivation
+observable,s0_scalar_845_resonance,paper,PAPER_032,primary derivation
+observable,s0_scalar_845_resonance,paper,PAPER_026b,845 GeV two-route echo
+observable,vlq_triplet_splitting,paper,PAPER_032,primary derivation

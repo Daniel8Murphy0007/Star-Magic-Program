@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.34.0", "uqff_calculator.VERSION = 0.34.0")
+assert_that(C.VERSION == "0.35.0", "uqff_calculator.VERSION = 0.35.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -595,6 +595,21 @@ assert_that(abs(_r031['tera_z_shift'] - 5.8e-7) / 5.8e-7 < 0.01,
 assert_that(abs(_r031['lfu_uqff'] - 1.060) < 0.001,
             "PAPER_031: LFU = 1 + m_mu/m_tau = 1.060 (Belle II 1.020 within 1.3 sigma)")
 assert_that(C.wired_count() >= 35, "wired_count >= 35")
+
+_r032 = C.calc('PAPER_032')['value']
+assert_that(abs(_r032['alpha_deg'] - 21.7) < 0.1,
+            "PAPER_032: scalar mixing angle alpha = asin(0.37) = 21.7 deg")
+assert_that(abs(_r032['tan_beta_2hdm'] - 2.70) < 0.01,
+            "PAPER_032: tan(beta) = 1/sqrt(k_eta) = 2.70 (2HDM, FCNC-safe)")
+assert_that(abs(_r032['f_composite_gev'] - 665.0) < 1.0,
+            "PAPER_032: composite scale f = 246/0.37 = 665 GeV (FCC-ee 6.8 pct shift)")
+assert_that(abs(_r032['triplet_split_gev'] - 17.0) < 0.1,
+            "PAPER_032: triplet splitting m_W*(D_PHYS-1)/SO_5/sqrt(2) = 17.0 GeV composed")
+assert_that(abs(_r032['echo_026b_route_gev'] - _r032['m_s0_prediction_gev']) < 1.0,
+            "PAPER_032: 845 GeV ECHO - 2600*SSq^2 (026b route) = 844.7 = S0 prediction (Q-031c)")
+assert_that(abs(_r032['v_s_singlet_gev'] - 791.0) < 1.0,
+            "PAPER_032: singlet VEV v_S = 845/sqrt(2*SSq) = 791 GeV (lambda_S = SSq)")
+assert_that(C.wired_count() >= 36, "wired_count >= 36")
 
 # =============================================================================
 # REPORT
