@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.22.0", "uqff_calculator.VERSION = 0.22.0")
+assert_that(C.VERSION == "0.23.0", "uqff_calculator.VERSION = 0.23.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -413,6 +413,21 @@ assert_that(abs(_r021['rho_crit_paper_kg_m3'] - 9.47e-27) < 1e-30,
 assert_that(abs(_r021['rho_crit_registry_kg_m3'] / _r021['rho_crit_paper_kg_m3'] - 0.973) < 0.005,
             "PAPER_021: registry rho_crit (H0 = 70) within 2.7 pct of paper anchor (H0 ~ 71)")
 assert_that(C.wired_count() >= 23, "wired_count >= 23")
+
+_r022 = C.calc('PAPER_022')['value']
+assert_that(abs(_r022['d_string_bns'] - 0.37) < 0.001,
+            "PAPER_022: D_String(BNS) = 1 - SSq^2*1.94 = 0.3697 - ORIGIN of the 0.37 factor")
+assert_that(abs(_r022['polarization_ladder']['breathing'] - 0.3249) < 1e-12,
+            "PAPER_022: breathing mode = SSq^2 = 0.3249 EXACT (~paper 0.325)")
+assert_that(abs(_r022['polarization_ladder']['longitudinal'] - 0.185193) < 1e-6,
+            "PAPER_022: longitudinal mode = SSq^3 = 0.1852 EXACT (~paper 0.185)")
+assert_that(abs(_r022['polarization_ladder']['vector'] - 0.10556) < 1e-4,
+            "PAPER_022: vector modes = SSq^4 = 0.1056 EXACT (~paper 0.106)")
+assert_that(abs(_r022['m_kk_tev'] - 11.6) < 0.05,
+            "PAPER_022: M_KK = hbar*c/1.70e-20 m = 11.61 TeV exact (LHC-consistent)")
+assert_that(_r022['n_compact'] == 22,
+            "PAPER_022: N_compact = D_CRIT - D_PHYS = 22 registry-composed")
+assert_that(C.wired_count() >= 24, "wired_count >= 24")
 
 # =============================================================================
 # REPORT

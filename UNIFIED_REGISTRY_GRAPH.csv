@@ -116,3 +116,11 @@ observable,sigma8_tension_resolution,paper,PAPER_021,primary derivation
 observable,uqff_vacuum_lensing_density,paper,PAPER_021,primary derivation
 observable,gw_lensing_deficit,paper,PAPER_021,primary derivation
 observable,gw_lensing_deficit,paper,PAPER_001,D_total = 0.333 input
+primitive,SSQ,observable,d_string_bns_origin,1 - SSq^2*N_eff
+primitive,SSQ,observable,gw_polarization_ssq_ladder,"amps = SSq^2, SSq^3, SSq^4"
+primitive,D_CRIT,observable,kk_compactification_scale,N_compact = D_crit - D_phys = 22
+primitive,D_PHYS,observable,kk_compactification_scale,N_compact = D_crit - D_phys = 22
+observable,d_string_bns_origin,paper,PAPER_022,primary derivation
+observable,d_string_bns_origin,paper,PAPER_009,0.37 consumer
+observable,gw_polarization_ssq_ladder,paper,PAPER_022,primary derivation
+observable,kk_compactification_scale,paper,PAPER_022,primary derivation

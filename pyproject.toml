@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.22.0"
-description = "UQFF Star-Magic-Program v0.22.0: PAPER_021 wired (lensing: sigma8 tension resolved 0.811*0.940 = 0.762 = DES/HSC/KiDS 0.0-sigma; rho_TRZ = SSq^2*f_TRZ*rho_crit; GW lensing deficit 2.4 pct ET-falsifiable). FORENSIC: predecessor PAPER_2156 mystery constant 9.47e-27 identified as rho_crit mislabel. Q-018 queued. GW family 001-021 COMPLETE. Wired 23/2255, gate 179/0. Registry 67 rows / 117 edges / 23 ledgers."
+version = "0.23.0"
+description = "UQFF Star-Magic-Program v0.23.0: PAPER_022 wired (string compactification: ORIGIN of 0.37 = 1 - SSq^2*1.94; polarization ladder EXACT SSq powers 0.325/0.185/0.106; M_KK = hbar*c/R_c = 11.6 TeV; N_compact = D_crit - D_phys = 22 registry-composed). Q-019 queued ([SSq] symbol ambiguity; BBH string 3-way tension). Wired 24/2255, gate 186/0. Registry 70 rows / 125 edges / 24 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

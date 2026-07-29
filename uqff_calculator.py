@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.22.0"
+VERSION = "0.23.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1042,5 +1042,52 @@ def _paper_021(dataset):
                     'W_UQFF(k) = 1 - 0.083*(k/0.25)^0.37*exp(-0.25/k); sigma8 = 0.811*0.940'),
         'source': 'PAPER_021',
         'residual_pct': abs(0.811 * 0.940 - 0.762) / 0.762 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_022')
+def _paper_022(dataset):
+    """String Compactification Signatures in GW Background (Session 0).
+
+    ORIGIN OF 0.37: D_String(BNS) = 1 - SSq^2 * N_eff = 1 - 0.325*1.94
+    = 0.3695 - the string factor used across PAPER_001/009/020 now
+    composes from the registry. Polarization ladder is EXACT powers of
+    SSq: breathing SSq^2 = 0.325, longitudinal SSq^3 = 0.185, vector
+    SSq^4 = 0.106. KK scale M_KK = hbar*c/R_c = 11.6 TeV at R_c =
+    1.70e-20 m (exact; all LHC limits satisfied, FCC-hh testable).
+    Q-019: (a) "[SSq]" symbol used for BOTH 0.57 and 0.325 = SSq^2;
+    (b) compactification closed form [SSq] = (R_s/R_c)^(22/4) does not
+    reproduce R_c from stated R_s (mojibake exponents); (c) D_String
+    (BBH) = 0.82 here vs 0.81 = (1-F_TRZ)^2 (PAPER_005) vs 1.0
+    (PAPER_019 table) - three-way BBH string-factor tension.
+    """
+    ssq2 = SSQ ** 2                                  # 0.3249
+    n_eff = 1.94                                     # PAPER_022 sec 2.2 anchor
+    d_string_bns = 1.0 - ssq2 * n_eff                # 0.3697
+    hbar_c_j_m = 3.16153e-26                         # hbar*c
+    r_c = 1.70e-20                                   # m, PAPER_022 compactification radius
+    m_kk_tev = hbar_c_j_m / r_c / 1.602177e-19 / 1e12
+    return {
+        'value': {
+            'd_string_bns': d_string_bns,            # 0.37 ORIGIN
+            'd_string_bbh': 0.82,                    # Q-019c
+            'n_eff': n_eff,
+            'r_c_m': r_c,
+            'm_kk_tev': m_kk_tev,                    # 11.61
+            'polarization_ladder': {'breathing': ssq2,        # 0.325
+                                    'longitudinal': SSQ ** 3, # 0.185
+                                    'vector': SSQ ** 4},      # 0.106
+            'omega_kk_peak': ssq2 * 1.0e-9,          # 3.25e-10 at 1e-4 Hz (LISA)
+            'kk_resonance_hz': 1.0e-4,
+            'sgwb_break_hz': 1.0e-8,                 # PTA-LISA overlap unique signature
+            'hd_breathing_contamination_pct': 32.5,  # SKA-testable
+            'lhc_limits_tev': {'add': 5.7, 'rs': 4.1, 'tev_inv': 6.0},
+            'n_compact': D_CRIT - D_PHYS,            # 22 = 26 - 4 registry-composed
+        },
+        'formula': ('D_String(BNS) = 1 - SSq^2*N_eff = 1 - 0.325*1.94 = 0.37; '
+                    'M_KK = hbar*c/R_c = 11.6 TeV; polarization amps = SSq^(2,3,4)'),
+        'source': 'PAPER_022',
+        'residual_pct': abs(d_string_bns - 0.37) / 0.37 * 100,
         'status': 'OPEN_RULING',
     }

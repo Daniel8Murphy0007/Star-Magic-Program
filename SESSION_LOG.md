@@ -562,3 +562,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 23/2,255 (7 ✓, 16 ⚠). Next: PAPER_022 (new family begins).
 
 ---
+
+## 2026-07-29 — v0.23.0 — BAND 1: PAPER_022
+
+- PAPER_022 wired (⚠ Q-019): string compactification. 0.37 ORIGIN
+  composed (1 - SSq^2*1.94); polarization ladder = exact SSq powers
+  (discovered during wiring — paper labels them inconsistently);
+  M_KK = 11.6 TeV exact; N_compact = 22 = D_crit - D_phys.
+- Gate 186/0. Registry 70 rows / 125 edges / 24 ledgers.
+- Campaign: 24/2,255 (7 ✓, 17 ⚠). Next: PAPER_023 (Tau g-2).
+
+---

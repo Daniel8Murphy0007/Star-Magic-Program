@@ -242,6 +242,25 @@ RESOLVED section with the ruling recorded.
   disclosed); registry rho_crit exposed alongside for comparison.
 - **Daniel's ruling:** (pending)
 
+### Q-019 — PAPER_022 — [SSq] symbol ambiguity + compactification closed form + BBH string factor
+- **Question:** (a) The paper uses "[SSq]" for BOTH 0.57 (canonical) and
+  0.325 = SSq^2 (sec-2.2 KK exchange, sec-4 breathing amplitude,
+  Omega_KK peak). The numeric ladder is EXACT SSq powers (0.325/0.185/
+  0.106 = SSq^2/^3/^4) — should the symbol convention be canonized as
+  powers of SSq? (b) The compactification closed form [SSq] =
+  (R_s/R_c)^(N_compact/4) does not reproduce R_c = 1.70e-20 m from the
+  stated R_s (exponents mojibaked in source); M_KK = hbar*c/R_c = 11.6
+  TeV does check exactly. What is the canonical R_s? (c) D_String(BBH) =
+  0.82 here, but PAPER_005 derives BBH total 0.81 = (1-F_TRZ)^2 with
+  string DEACTIVATED, and PAPER_019's table has D_String(BBH) = 1.0 —
+  three-way tension on the BBH string factor (0.82 may be a transcription
+  of 0.81 attributed to the wrong mechanism).
+- **Best-candidate wired:** D_String(BNS) composed as 1 - SSq^2*1.94 =
+  0.3697 (0.08 pct residual); polarization ladder wired as exact SSq
+  powers; M_KK anchored via exact hbar*c/R_c; BBH 0.82 exposed as anchor
+  with the tension documented.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

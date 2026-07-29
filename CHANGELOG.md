@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.23.0] — 2026-07-29 — BAND 1: PAPER_022
+
+### Added
+- **PAPER_022 dispatch** (String Compactification Signatures): ORIGIN of
+  the 0.37 string factor — D_String(BNS) = 1 - SSq^2*N_eff = 1 -
+  0.3249*1.94 = 0.3697 (consumed by PAPER_001/009/020, now registry-
+  composed). Extra GW polarization amplitudes are EXACT SSq powers:
+  breathing SSq^2 = 0.325, longitudinal SSq^3 = 0.185, vector SSq^4 =
+  0.106 (ET/SKA falsifiable; 32.5% HD contamination). M_KK = hbar*c/R_c
+  = 11.6 TeV exact at R_c = 1.70e-20 m (all LHC limits satisfied);
+  N_compact = D_crit - D_phys = 22 registry-composed. KK SGWB peak
+  3.25e-10 at 1e-4 Hz; spectral break at 1e-8 Hz PTA-LISA unique.
+  OPEN_RULING Q-019 ([SSq] symbol means both 0.57 and SSq^2;
+  compactification closed form vs R_c; BBH string factor 0.82/0.81/1.0
+  three-way tension).
+- Gate: 186 assertions, 0 failures. Registry: 70 rows / 125 edges / 24 ledgers.
+
+---
+
 ## [0.22.0] — 2026-07-29 — BAND 1: PAPER_021 — GW TEMPLATE FAMILY 001-021 COMPLETE
 
 ### Added

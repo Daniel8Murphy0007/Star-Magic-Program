@@ -1,32 +1,26 @@
-v0.22.0 BAND 1: PAPER_021 wired - GW TEMPLATE FAMILY 001-021 COMPLETE
+v0.23.0 BAND 1: PAPER_022 wired
 
-PAPER_021 Gravitational Lensing Corrections (OPEN_RULING Q-018):
-  sigma8 tension RESOLVED: f_vac(z=0.5) = 0.083 ->
-  sigma8_UQFF = 0.811 * 0.940 = 0.762 = DES/HSC/KiDS combined
-  (0.0-sigma tension vs the 3.2-sigma GR discrepancy)
-  rho_TRZ = SSq^2 * f_TRZ * rho_crit, SSq^2 = 0.3249 registry-composed
-  Shear correlation (1-0.083)^2 = 0.841; W_UQFF(k) window on P(k)
-  GW lensing: 2.4 pct magnification deficit + unique 0.003 rad phase
-  shift - 3-sigma with ~50 lensed events, ~2 yr Einstein Telescope
+PAPER_022 String Compactification Signatures in GW Background
+(OPEN_RULING Q-019):
+  ORIGIN OF 0.37: D_String(BNS) = 1 - SSq^2*N_eff = 1 - 0.3249*1.94
+  = 0.3697 - the string factor consumed by PAPER_001/009/020 now
+  composes from the registry (0.08 pct residual)
+  POLARIZATION LADDER = EXACT SSq POWERS (found during wiring):
+    breathing = SSq^2 = 0.325 / longitudinal = SSq^3 = 0.185 /
+    vector = SSq^4 = 0.106 - ET + SKA falsifiable, 32.5 pct HD
+    contamination prediction
+  M_KK = hbar*c/R_c = 11.6 TeV EXACT at R_c = 1.70e-20 m; all LHC
+  limits satisfied (ADD 5.7 / RS 4.1 / TeV-1 6.0); FCC-hh testable
+  N_compact = D_crit - D_phys = 22 registry-composed
+  KK SGWB peak 3.25e-10 at 1e-4 Hz (LISA 2035); spectral break at
+  1e-8 Hz PTA-LISA overlap unique signature
 
-FORENSIC IDENTIFICATION - predecessor audit target CLOSED:
-  PAPER_021's rho_crit anchor 9.47e-27 kg/m3 is EXACTLY the
-  unknown-origin "RHO_SCM = 9.47e-27" constant in the predecessor's
-  bulk_vds_dvp_bsh_upgrade.py (PAPER_2156 flagged origin UNKNOWN).
-  It is the cosmological CRITICAL DENSITY (H0 ~ 71) mislabeled as SCm
-  density. The 1.894 "VDS ratio" was rho_crit/5.0e-27 - never a UQFF
-  density ratio. Registry rho_crit (H0 = 70) = 9.21e-27 (2.7 pct).
-  Self-rectification doctrine confirmed: sequential wiring surfaced
-  the answer at paper 21 of 2,255.
+Q-019 queued: (a) "[SSq]" symbol used for both 0.57 and 0.325 = SSq^2
+- canonize power notation? (b) compactification closed form does not
+reproduce R_c from stated R_s (mojibake); (c) BBH string factor
+three-way tension: 0.82 here / 0.81 = (1-F_TRZ)^2 PAPER_005 (string
+deactivated) / 1.0 PAPER_019 table.
 
-Q-018 queued: 0.917 (= 1-0.083) vs 0.940 suppression families
-(Einstein ring 0.969 sides with 0.940); paper f_TRZ = 0.12 vs
-canonical 0.1; b/r_s = 0.09-vs-0.3 slip.
-
-Gate caught + fixed an over-tight tolerance this ship (0.969^2 =
-0.9390 vs 0.940 = 0.11 pct, honest label applied).
-
-GW TEMPLATE FAMILY 001-021 COMPLETE: 23 dispatches (incl. 015b/016b).
-Gate 179 assertions 0 failures. Registry 67 rows / 117 edges / 23
-citation ledgers. Wired 23/2,255 (7 clean, 16 OPEN_RULING).
-Next: PAPER_022 (new family).
+Gate 186 assertions 0 failures. Registry 70 rows / 125 edges / 24
+citation ledgers. Wired 24/2,255 (7 clean, 17 OPEN_RULING).
+Next: PAPER_023 (Tau Anomalous Magnetic Moment g-2).
