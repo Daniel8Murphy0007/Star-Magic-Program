@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.23.0", "uqff_calculator.VERSION = 0.23.0")
+assert_that(C.VERSION == "0.24.0", "uqff_calculator.VERSION = 0.24.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -428,6 +428,21 @@ assert_that(abs(_r022['m_kk_tev'] - 11.6) < 0.05,
 assert_that(_r022['n_compact'] == 22,
             "PAPER_022: N_compact = D_CRIT - D_PHYS = 22 registry-composed")
 assert_that(C.wired_count() >= 24, "wired_count >= 24")
+
+_r023 = C.calc('PAPER_023')['value']
+assert_that(abs(_r023['delta_a_tau_kk'] - 1.92e-9) / 1.92e-9 < 0.005,
+            "PAPER_023: KK loop (m^2/8piM^2)*(2/3)*(1/SSq^2) = 1.92e-9 EXACT composition")
+assert_that(abs(_r023['f_string_basel'] - 1.6449) < 0.0001,
+            "PAPER_023: F_string = pi^2/6 = 1.6449 Basel exact (~paper 1.645)")
+assert_that(abs(_r023['ratio_tau_mu'] - 282.8) < 0.5,
+            "PAPER_023: (m_tau/m_mu)^2 = 282.8 (~paper 282.6)")
+assert_that(abs(_r023['universality_exponent'] - 2.37) < 1e-15,
+            "PAPER_023: universality exponent 2.37 = 2 + 0.37 (PAPER_022 string factor link)")
+assert_that(abs(_r023['a_tau_uqff'] - 1.18063e-3) < 1e-8,
+            "PAPER_023: a_tau^UQFF = 1.17721e-3 + 3.42e-6 = 1.18063e-3")
+assert_that(abs(_r023['component_sum'] - 3.386e-6) < 1e-9,
+            "PAPER_023: component sum 3.386e-6 vs headline 3.42e-6 (1 pct, Q-020a) honestly pinned")
+assert_that(C.wired_count() >= 25, "wired_count >= 25")
 
 # =============================================================================
 # REPORT

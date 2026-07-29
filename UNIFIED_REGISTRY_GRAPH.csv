@@ -124,3 +124,11 @@ observable,d_string_bns_origin,paper,PAPER_022,primary derivation
 observable,d_string_bns_origin,paper,PAPER_009,0.37 consumer
 observable,gw_polarization_ssq_ladder,paper,PAPER_022,primary derivation
 observable,kk_compactification_scale,paper,PAPER_022,primary derivation
+primitive,SSQ,observable,tau_g2_kk_loop,N_eff = 1/SSq^2
+primitive,SSQ,observable,tau_g2_uqff_correction,string loop SSq^2; tan(SSq*pi) CP phase
+primitive,KAPPA_PER_DAY,observable,tau_g2_uqff_correction,aether loop coupling (Q-020b reading)
+observable,tau_g2_uqff_correction,paper,PAPER_023,primary derivation
+observable,tau_g2_kk_loop,paper,PAPER_023,primary derivation
+observable,tau_g2_kk_loop,paper,PAPER_022,M_KK = 11.6 TeV input
+observable,lepton_universality_exponent,paper,PAPER_023,primary derivation
+observable,lepton_universality_exponent,paper,PAPER_022,0.37 string factor link

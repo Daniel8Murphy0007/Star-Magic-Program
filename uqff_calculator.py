@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.23.0"
+VERSION = "0.24.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1089,5 +1089,57 @@ def _paper_022(dataset):
                     'M_KK = hbar*c/R_c = 11.6 TeV; polarization amps = SSq^(2,3,4)'),
         'source': 'PAPER_022',
         'residual_pct': abs(d_string_bns - 0.37) / 0.37 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_023')
+def _paper_023(dataset):
+    """Tau Anomalous Magnetic Moment (g-2) via UQFF (Session 0).
+
+    First BSM-domain paper. Delta_a_tau^UQFF = +3.42e-6 headline
+    (aether loop 3.38e-6 dominant); a_tau^UQFF = 1.18063e-3.
+    EXACT compositions verified: KK loop = (m_tau^2/(8*pi*M_KK^2))
+    * (2/3) * (1/SSq^2) = 1.92e-9 EXACT; F_string = pi^2/6 = 1.645
+    (Basel); ratio Delta_a_tau/Delta_a_mu = (m_tau/m_mu)^2 = 282.8
+    (~paper 282.6). Universality-breaking exponent 2.37 = 2 + 0.37 —
+    the PAPER_022 string factor as an anomalous-dimension correction.
+    Q-020: (a) component sum 3.386e-6 vs headline 3.42e-6 (1 pct);
+    (b) closed form kappa*SSq*m^2/M_UQFF^2 evaluates to 4.4e-12, six
+    orders below headline (kappa reading); (c) SM component table has
+    Hadronic-LO 3.50e-4 (exponent drift; sum 1.524e-3 vs stated total
+    1.17721e-3 which IS the literature value); (d) string loop needs
+    /pi not /(4pi) to hit 3.84e-9; (e) tan(SSq*pi) printed -4.637 vs
+    computed value.
+    """
+    import math as _m
+    m_tau_gev, m_mu_gev, m_kk_gev = 1.77686, 0.1056584, 11600.0
+    kk_loop = (m_tau_gev**2 / (8*_m.pi*m_kk_gev**2)) * (2.0/3.0) * (1.0/SSQ**2)
+    string_loop_pi = (SSQ**2/_m.pi) * (m_tau_gev**2/m_kk_gev**2) * (_m.pi**2/6)
+    tan_cp = _m.tan(SSQ * _m.pi)
+    return {
+        'value': {
+            'delta_a_tau_total': 3.42e-6,            # headline anchor
+            'delta_a_tau_aether': 3.38e-6,           # dominant
+            'delta_a_tau_string': 3.84e-9,           # paper anchor (Q-020d)
+            'delta_a_tau_string_composed_pi': string_loop_pi,   # 3.99e-9 with /pi
+            'delta_a_tau_kk': kk_loop,               # 1.92e-9 EXACT composition
+            'delta_a_tau_trz': 1.27e-25,
+            'component_sum': 3.38e-6 + 3.84e-9 + 1.92e-9,       # 3.386e-6 (Q-020a)
+            'a_tau_sm': 1.17721e-3,
+            'a_tau_uqff': 1.17721e-3 + 3.42e-6,      # 1.18063e-3
+            'f_string_basel': _m.pi**2 / 6,          # 1.6449 exact
+            'n_eff_kk': 1.0 / SSQ**2,                # 3.078 (~paper 3.08)
+            'm_uqff_tev': 14.3,
+            'ratio_tau_mu': (m_tau_gev/m_mu_gev)**2, # 282.8 (~paper 282.6)
+            'universality_exponent': 2.37,           # = 2 + 0.37 (PAPER_022 string factor)
+            'tan_phi_cp': tan_cp,                    # computed (paper prints -4.637; Q-020e)
+            'delphi_bounds': (-0.052, 0.013),
+            'future_sigma': {'belle2': 0.07, 'fcc_ee': 0.7, 'clic': 1.7, 'tau_factory': 3.4},
+        },
+        'formula': ('Delta_a_KK = (m_tau^2/(8*pi*M_KK^2))*(2/3)*(1/SSq^2); '
+                    'F_string = pi^2/6; Delta_a ~ m_l^2/M_NP^2; exponent 2.37 = 2 + 0.37'),
+        'source': 'PAPER_023',
+        'residual_pct': abs((3.38e-6 + 3.84e-9 + 1.92e-9) - 3.42e-6) / 3.42e-6 * 100,
         'status': 'OPEN_RULING',
     }

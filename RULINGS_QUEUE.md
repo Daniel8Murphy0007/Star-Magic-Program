@@ -261,6 +261,23 @@ RESOLVED section with the ruling recorded.
   with the tension documented.
 - **Daniel's ruling:** (pending)
 
+### Q-020 — PAPER_023 — five slips in tau g-2 (sum, closed form, SM table, 4pi, tan)
+- **Question:** (a) Components sum to 3.386e-6 (3.38e-6 + 3.84e-9 +
+  1.92e-9) but headline is 3.42e-6 (1 pct gap). (b) The boxed closed
+  form Delta_a = kappa*[SSq]*m_tau^2/M_UQFF^2 with kappa = 5e-4
+  evaluates to 4.4e-12 — six orders below the 3.42e-6 it claims; what
+  is kappa's normalization in this loop context? (c) SM component
+  table lists Hadronic-LO = 3.50e-4 (tau-scale HVP should be ~3.5e-6);
+  the table sums to 1.524e-3, not the stated (and literature-correct)
+  total 1.17721e-3 — exponent drift family. (d) String loop as printed
+  ([SSq]^2/4pi) gives 9.98e-10; reproducing the stated 3.84e-9
+  requires /pi ("4p" mojibake for pi?). (e) tan([SSq]*pi) is printed
+  as tan(1.795) = -4.637; computed tan(0.57*pi = 1.7907) = -4.46.
+- **Best-candidate wired:** headline anchors preserved; KK loop wired
+  as exact composition (1.92e-9 verified); component-sum discrepancy
+  gate-pinned honestly; both string-loop readings exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

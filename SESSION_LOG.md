@@ -573,3 +573,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 24/2,255 (7 ✓, 17 ⚠). Next: PAPER_023 (Tau g-2).
 
 ---
+
+## 2026-07-29 — v0.24.0 — BAND 1: PAPER_023 — BSM DOMAIN OPENS
+
+- PAPER_023 wired (⚠ Q-020): tau g-2. KK loop composes EXACTLY from
+  1/SSq^2; exponent 2.37 = 2 + 0.37 links BSM to the GW string factor;
+  5 paper-internal slips queued (incl. SM-table exponent drift family).
+- Gate 193/0. Registry 73 rows / 133 edges / 25 ledgers.
+- Campaign: 25/2,255 (7 ✓, 18 ⚠). Next: PAPER_024 (Tau EDM).
+
+---

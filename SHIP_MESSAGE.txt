@@ -1,26 +1,25 @@
-v0.23.0 BAND 1: PAPER_022 wired
+v0.24.0 BAND 1: PAPER_023 wired - BSM DOMAIN OPENS
 
-PAPER_022 String Compactification Signatures in GW Background
-(OPEN_RULING Q-019):
-  ORIGIN OF 0.37: D_String(BNS) = 1 - SSq^2*N_eff = 1 - 0.3249*1.94
-  = 0.3697 - the string factor consumed by PAPER_001/009/020 now
-  composes from the registry (0.08 pct residual)
-  POLARIZATION LADDER = EXACT SSq POWERS (found during wiring):
-    breathing = SSq^2 = 0.325 / longitudinal = SSq^3 = 0.185 /
-    vector = SSq^4 = 0.106 - ET + SKA falsifiable, 32.5 pct HD
-    contamination prediction
-  M_KK = hbar*c/R_c = 11.6 TeV EXACT at R_c = 1.70e-20 m; all LHC
-  limits satisfied (ADD 5.7 / RS 4.1 / TeV-1 6.0); FCC-hh testable
-  N_compact = D_crit - D_phys = 22 registry-composed
-  KK SGWB peak 3.25e-10 at 1e-4 Hz (LISA 2035); spectral break at
-  1e-8 Hz PTA-LISA overlap unique signature
+PAPER_023 Tau Anomalous Magnetic Moment g-2 (OPEN_RULING Q-020):
+  First Beyond-Standard-Model domain paper (Domain 1.4).
+  Delta_a_tau^UQFF = +3.42e-6 (aether 3.38e-6 + string 3.84e-9 +
+  KK 1.92e-9); a_tau^UQFF = 1.18063e-3; M_UQFF = 14.3 TeV consistent
+  with PAPER_022 M_KK = 11.6 TeV.
+  EXACT COMPOSITIONS VERIFIED:
+    KK loop = (m_tau^2/(8pi*M_KK^2))*(2/3)*(1/SSq^2) = 1.92e-9
+    F_string = pi^2/6 = 1.6449 (Basel)
+    (m_tau/m_mu)^2 = 282.8 (~paper 282.6)
+  UNIVERSALITY-BREAKING EXPONENT 2.37 = 2 + 0.37 - the PAPER_022
+  string factor reappears as an anomalous dimension in BSM scaling.
+  Unique UQFF prediction vs 2.00 standard.
+  Falsifiable: dedicated tau factory ~1e-6 precision -> 3.4-sigma.
 
-Q-019 queued: (a) "[SSq]" symbol used for both 0.57 and 0.325 = SSq^2
-- canonize power notation? (b) compactification closed form does not
-reproduce R_c from stated R_s (mojibake); (c) BBH string factor
-three-way tension: 0.82 here / 0.81 = (1-F_TRZ)^2 PAPER_005 (string
-deactivated) / 1.0 PAPER_019 table.
+Q-020 queued (5 slips): component sum 3.386e-6 vs headline 3.42e-6
+(1 pct); boxed closed form 6 orders off under day-rate kappa reading;
+SM table Hadronic-LO 3.50e-4 exponent drift (sums to 1.524e-3, not
+the stated literature-correct 1.17721e-3); string loop needs /pi not
+/(4pi); tan(SSq*pi) -4.637 printed vs -4.46 computed.
 
-Gate 186 assertions 0 failures. Registry 70 rows / 125 edges / 24
-citation ledgers. Wired 24/2,255 (7 clean, 17 OPEN_RULING).
-Next: PAPER_023 (Tau Anomalous Magnetic Moment g-2).
+Gate 193 assertions 0 failures. Registry 73 rows / 133 edges / 25
+citation ledgers. Wired 25/2,255 (7 clean, 18 OPEN_RULING).
+Next: PAPER_024 (Tau EDM).

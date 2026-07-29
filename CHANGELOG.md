@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.24.0] — 2026-07-29 — BAND 1: PAPER_023 — BSM DOMAIN OPENS
+
+### Added
+- **PAPER_023 dispatch** (Tau Anomalous Magnetic Moment g-2): first
+  Beyond-Standard-Model domain paper. Delta_a_tau^UQFF = +3.42e-6
+  (aether loop dominant), a_tau^UQFF = 1.18063e-3, M_UQFF = 14.3 TeV
+  consistent with PAPER_022's M_KK = 11.6 TeV. EXACT compositions:
+  KK loop = (m_tau^2/(8pi*M_KK^2))*(2/3)*(1/SSq^2) = 1.92e-9;
+  F_string = pi^2/6 Basel; (m_tau/m_mu)^2 = 282.8. Universality-
+  breaking exponent 2.37 = 2 + 0.37 — the PAPER_022 string factor as
+  an anomalous dimension. Tau-factory 3.4-sigma falsifiable target.
+  OPEN_RULING Q-020: 5 slips (component sum 1 pct; closed-form kappa
+  normalization 6 orders; SM-table Hadronic-LO exponent drift; 4pi-vs-pi
+  in string loop; tan(SSq*pi) value).
+- Gate: 193 assertions, 0 failures. Registry: 73 rows / 133 edges / 25 ledgers.
+
+---
+
 ## [0.23.0] — 2026-07-29 — BAND 1: PAPER_022
 
 ### Added

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.23.0"
-description = "UQFF Star-Magic-Program v0.23.0: PAPER_022 wired (string compactification: ORIGIN of 0.37 = 1 - SSq^2*1.94; polarization ladder EXACT SSq powers 0.325/0.185/0.106; M_KK = hbar*c/R_c = 11.6 TeV; N_compact = D_crit - D_phys = 22 registry-composed). Q-019 queued ([SSq] symbol ambiguity; BBH string 3-way tension). Wired 24/2255, gate 186/0. Registry 70 rows / 125 edges / 24 ledgers."
+version = "0.24.0"
+description = "UQFF Star-Magic-Program v0.24.0: PAPER_023 wired (tau g-2, first BSM paper: Delta_a_tau = +3.42e-6, a_tau = 1.18063e-3; KK loop EXACT composition with 1/SSq^2; F_string = pi^2/6 Basel; universality exponent 2.37 = 2 + 0.37 links to PAPER_022 string factor; tau-factory 3.4-sigma target). Q-020 queued (5 slips). Wired 25/2255, gate 193/0. Registry 73 rows / 133 edges / 25 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
