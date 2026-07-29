@@ -1,23 +1,27 @@
-v0.98.0 BAND 1: PAPER_095 wired - SOLVABILITY PROVENANCE + ASKAP RECONCILIATION
+v0.99.0 BAND 1: PAPER_096 wired - 100 PAPERS MILESTONE
 
-PAPER_095 UQFF 99.9 pct Solvability (OPEN_RULING Q-091):
-  PROVENANCE of the corpus-wide 99.9 pct claim. Validator
-  arithmetic ALL EXACT: 250+25+15+50 = 340 tests; 249+25+15+49 =
-  338 passes; 338/340 = 99.4 pct. Honest solvable-vs-physical
-  split (PNe 100 pct solvable / 93.3 pct physical). Grok-4
-  extension 999/1000 = 99.9 pct with the "659 additional"
-  off-by-one pinned (chain: 660).
+PAPER_096 FRB Emission Model, Drawing 1 (OPEN_RULING Q-092):
+  DOMAIN 1.13 OPENS (multi-physics models; first Drawing paper).
+  Mechanism: coherent Ug1 dipole emission from magnetar TRZ
+  activation, E_FRB = f_TRZ * U_g1 * V_TRZ.
 
-  ASKAP RECONCILIATION CANDIDATE: the transient formula here is
-  ORBITAL - P = 2*pi*sqrt(r^3/GM)*(1+f_TRZ) gives r = 7.8e8 m
-  for 2.78 h around 1.4 Msun. Reading: 2.78 h (087/095) =
-  orbital resonance; 069's 44 min = emission cycle - would
-  RESOLVE the Q-083c conflict (annotated in place).
+  ENERGY-CHAIN DEFECTS PINNED: Gauss/SI mixing (B = 2e14 Gauss
+  inside the SI formula) + V_TRZ factor (correct (1.5^3-1) =
+  2.375 vs printed 0.875). THE FULLY CORRECTED CHAIN GIVES
+  E = 2.7e44 erg - NEARER the CHIME energy range than the
+  printed 1.24e49, without invoking beaming (adoption ruling
+  requested).
 
-  Superflare boost (1 + SSq) = 1.57 EXACT ((1+constant) family);
-  f_TRZ drift 5th instance + (1+f_TRZ)-vs-0.995 factor conflict;
-  failure taxonomy honest (all 0.1 pct = unphysical inputs).
+  Pulse width 1.5R/(c*[SCm]) = 60.6 us EXACT, with the 10-1000x
+  vs-ms gap honestly disclosed and resolved by r_TRZ scaling.
+  Spectral slope alpha = 1+f_TRZ: 1.01 vs 1.10 - THIRD f_TRZ
+  observable fork (Q-084a now touches neutrinos, pulsar timing,
+  and FRB spectra). Repeat drift P*(1 + KAPPA*t_acc) wired as a
+  campaign falsifiable (FRB 20201124A drift consistency).
+  5/5 FRB_MODEL tests PASS.
 
-Q-091 queued. Gate 690 assertions 0 failures. Registry 272 rows /
-548 edges / 99 citation ledgers. Wired 99/2,255 (10 clean, 89
-OPEN_RULING). Next: PAPER_096.
+MILESTONE: 100 PAPERS WIRED (100/2,255; 10 clean, 90
+OPEN_RULING, 92 rulings queued).
+
+Q-092 queued. Gate 696 assertions 0 failures. Registry 274 rows /
+553 edges / 100 citation ledgers. Next: PAPER_097.

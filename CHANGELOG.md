@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.99.0] — 2026-07-29 — BAND 1: PAPER_096 — 100 PAPERS MILESTONE
+
+### Added
+- **PAPER_096 dispatch** (FRB Emission Model, Drawing 1): Domain
+  1.13 opens (multi-physics models). Energy chain defects pinned:
+  Gauss/SI mixing (LaTeX B in Gauss inside the SI formula) +
+  V_TRZ factor (2.375 correct vs 0.875 printed); the FULLY
+  CORRECTED chain gives E = 2.7e44 erg — nearer the CHIME range
+  than the printed 1.24e49, without invoking beaming. Pulse width
+  1.5R/(c*[SCm]) = 60.6 us EXACT with honest range disclosure.
+  Spectral slope 1+f_TRZ adds the THIRD f_TRZ observable fork
+  (1.01 vs 1.10). Repeat drift P*(1+KAPPA*t_acc) wired as a
+  campaign falsifiable (FRB 20201124A consistency).
+- **Milestone: 100 papers wired.**
+- OPEN_RULING Q-092.
+- Gate: 696 assertions, 0 failures. Registry: 274 rows / 553 edges / 100 ledgers.
+
+---
+
 ## [0.98.0] — 2026-07-29 — BAND 1: PAPER_095
 
 ### Added

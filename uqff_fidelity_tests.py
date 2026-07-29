@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.98.0", "uqff_calculator.VERSION = 0.98.0")
+assert_that(C.VERSION == "0.99.0", "uqff_calculator.VERSION = 0.99.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1519,6 +1519,19 @@ assert_that(abs(_r095['superflare_boost'] - 1.57) < 1e-12,
 assert_that('orbital resonance' in _r095['askap_reconciliation'],
             "PAPER_095: ASKAP 2.78-h orbital-vs-emission reconciliation candidate (Q-091b/Q-083c)")
 assert_that(C.wired_count() >= 99, "wired_count >= 99")
+
+_r096 = C.calc('PAPER_096')['value']
+assert_that(abs(_r096['ug1_si_j_m3'] - 1.59e26) / 1.59e26 < 0.01,
+            "PAPER_096: correct-SI U_g1 = 1.59e26 J/m3 (Gauss/SI mixing pinned; mantissa right)")
+assert_that(_r096['v_trz_factor_correct'] == 2.375 and _r096['v_trz_factor_printed'] == 0.875,
+            "PAPER_096: V_TRZ factor 2.375 correct vs 0.875 printed - defect pinned (Q-092b)")
+assert_that(abs(_r096['e_frb_corrected_j'] - 2.7e37) / 2.7e37 < 0.02,
+            "PAPER_096: fully corrected E_FRB = 2.7e37 J = 2.7e44 erg - nearer CHIME without beaming")
+assert_that(abs(_r096['pulse_width_s'] - 6.06e-5) / 6.06e-5 < 0.01,
+            "PAPER_096: pulse width 60.6 us EXACT chain")
+assert_that(abs(_r096['slope_canonical'] - 1.10) < 1e-12,
+            "PAPER_096: spectral-slope fork 1.01 vs 1.10 - THIRD f_TRZ observable fork (Q-092c)")
+assert_that(C.wired_count() >= 100, "wired_count >= 100")
 
 # =============================================================================
 # REPORT

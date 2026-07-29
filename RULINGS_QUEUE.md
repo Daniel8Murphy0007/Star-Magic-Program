@@ -1699,6 +1699,29 @@ RESOLVED section with the ruling recorded.
   reconciliation candidate; conflicts carried.
 - **Daniel's ruling:** (pending)
 
+### Q-092 — PAPER_096 — Gauss/SI mixing + V-factor + slope fork + repeat drift
+- **Question:** (a) U_g1 = B^2/2mu0: the LaTeX inserts B = 2e14
+  (GAUSS) into the SI formula (1.59e34); the printed 1.59e31
+  matches neither; correct SI with B = 2e10 T gives 1.59e26
+  J/m3 (mantissa 1.59 right in all readings) - pin the SI chain?
+  (b) V_TRZ factor: (1.5^3 - 1) = 2.375 correct vs printed 0.875
+  vs implied-by-value 1.08 - three-way; NOTE the fully corrected
+  chain E = 2.7e44 erg lands NEARER the CHIME energy range than
+  the printed 1.24e49 without invoking beaming - adopt?
+  (c) Spectral slope alpha = 1 + f_TRZ: 1.01 (drift, 6th
+  instance) vs 1.10 (canonical) - THIRD observable fork; both
+  inside CHIME 1.0-2.0 so less decisive than the neutrino/
+  pulsar-timing forks, but the Q-084a ruling now touches three
+  observables. (d) Repeat-drift P*(1 + KAPPA*t_acc) with the
+  FRB 20201124A consistency claim - confirm as campaign-tracked
+  falsifiable (KAPPA enters FRB phenomenology directly).
+- **Notable:** pulse width 60.6 us EXACT with honest 10-1000x
+  disclosure + r_TRZ-scaling resolution; Domain 1.13 opens with
+  the first Drawing-model paper; 5/5 tests PASS.
+- **Best-candidate wired:** corrected chains carried alongside
+  paper arithmetic; forks + falsifiable logged.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

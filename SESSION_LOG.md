@@ -1341,3 +1341,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 99/2,255 (10 ✓, 89 ⚠). Next: PAPER_096.
 
 ---
+
+## 2026-07-29 — v0.99.0 — BAND 1: PAPER_096 — 100 PAPERS
+
+- PAPER_096 wired (⚠ Q-092): FRB model. Corrected energy chain
+  carried (2.7e44 erg); pulse EXACT; slope fork (3rd); repeat
+  drift falsifiable. Domain 1.13 opens.
+- MILESTONE: 100/2,255 wired (10 ✓, 90 ⚠, 92 rulings queued).
+- Campaign next: PAPER_097.
+
+---

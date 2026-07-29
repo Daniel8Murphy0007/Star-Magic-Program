@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.98.0"
+VERSION = "0.99.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5009,5 +5009,60 @@ def _paper_095(dataset):
                     'E_flare = eta_rec*B^2*R^3*(1+SSq); solvability = finite+physical'),
         'source': 'PAPER_095',
         'residual_pct': abs(338 / 340 * 100 - 99.4),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_096')
+def _paper_096(dataset):
+    """FRB Emission Model - Drawing 1 (Session 0).
+
+    DOMAIN 1.13 OPENS (multi-physics models; first Drawing paper).
+    Mechanism: coherent Ug1 dipole emission from magnetar TRZ
+    activation; E_FRB = f_TRZ * U_g1 * V_TRZ.
+    ENERGY-CHAIN DEFECTS (Q-092a/b): (1) GAUSS/SI MIXING - the
+    LaTeX uses B = 2e14 (Gauss) in the SI formula giving 1.59e34;
+    printed 1.59e31 matches neither; correct SI (B = 2e10 T)
+    gives U_g1 = 1.59e26 J/m3 (mantissa 1.59 = 4/2.513 right in
+    all readings). (2) V_TRZ factor: (1.5^3 - 1) = 2.375 correct
+    vs printed 0.875 vs implied-by-value 1.08 - three-way.
+    FULLY CORRECTED CHAIN: E = 0.01*1.59e26*1.72e13 = 2.7e37 J =
+    2.7e44 erg - NEARER the CHIME energy range without invoking
+    beaming (carried alongside the paper arithmetic 1.24e42 J).
+    Pulse width EXACT: 1.5*R/(c*[SCm]) = 60.6 us; honest
+    10-1000x vs ms disclosed + r_TRZ-scaling resolution.
+    SPECTRAL-SLOPE FORK (Q-092c): alpha = 1 + f_TRZ = 1.01
+    (drift, 6th instance) vs 1.10 (canonical) - THIRD observable
+    fork (both inside CHIME 1.0-2.0, less decisive).
+    Repeat-drift prediction: P*(1 + KAPPA*t_acc) - slowly
+    increasing interval, FRB 20201124A consistency - campaign
+    falsifiable (Q-092d). All 5 FRB_MODEL tests PASS as stated.
+    """
+    import math as _m
+    mu0 = 4 * _m.pi * 1e-7
+    ug1_si = (2e10) ** 2 / (2 * mu0)                       # 1.59e26 correct
+    v_correct = 4 * _m.pi / 3 * (1.2e4) ** 3 * 2.375      # 1.72e13
+    return {
+        'value': {
+            'domain': '1.13 OPENS (Drawing 1 FRB_MODEL)',
+            'ug1_si_j_m3': ug1_si,                         # 1.59e26
+            'ug1_printed': 1.59e31,
+            'ug1_latex_gauss_mix': 1.59e34,
+            'v_trz_factor_correct': 2.375,
+            'v_trz_factor_printed': 0.875,
+            'v_trz_correct_m3': v_correct,
+            'e_frb_corrected_j': 0.01 * ug1_si * v_correct,    # 2.7e37 = 2.7e44 erg
+            'e_frb_paper_j': 1.24e42,
+            'pulse_width_s': 1.5 * 1.2e4 / (3e8 * 0.99),   # 60.6 us EXACT
+            'slope_drift': 1.01,
+            'slope_canonical': 1.0 + F_TRZ,                # 1.10 third fork
+            'repeat_drift_form': 'P*(1 + KAPPA*t_acc)',
+            'frb_20201124a': 'drift-consistent (falsifiable)',
+            'tests_pass': 5,
+        },
+        'formula': ('E_FRB = f_TRZ*U_g1*V_TRZ; U_g1 = B^2/2mu0; '
+                    'dt = 1.5R/(c*[SCm]); alpha = 1+f_TRZ; P_rep = P*(1+kappa*t_acc)'),
+        'source': 'PAPER_096',
+        'residual_pct': abs(1.5 * 1.2e4 / (3e8 * 0.99) - 6e-5) / 6e-5 * 100,
         'status': 'OPEN_RULING',
     }
