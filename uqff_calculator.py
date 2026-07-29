@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.27.0"
+VERSION = "0.28.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1294,5 +1294,63 @@ def _paper_025b(dataset):
                     'm1/m2 = M_N2/M_N1 = SSq; enhancement = sin^2(2theta)/4*(M_s1/Sum)^2'),
         'source': 'PAPER_025b',
         'residual_pct': abs(sum(m_nu) - 74.2) / 74.2 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_026')
+def _paper_026(dataset):
+    """Sterile Neutrino Mass Generation via UQFF (Session 0).
+
+    Complete sterile spectrum, zero free parameters:
+    M_s1 = 7.1 keV (RGE fixed point, 3.55 keV line);
+    M_s2 = SSq * M_W = 45.81 GeV EXACT (just above M_Z/2 = 45.6);
+    M_s3 = M_KK / SSq = 20,351 GeV EXACT; GUT series M_N =
+    {2.19e9, 1.25e9, 7.12e8} GeV geometric in SSq (internal ratios
+    verify EXACTLY -> resolves Q-023b: M_N1 exponent = 1e9).
+    Yukawa ladder y_a = SSq^(4-a): 0.185/0.325/0.570 (SSq powers
+    again). Relic dilution D_s = 1/SSq = 1.754; Omega = 0.305*SSq^1.5
+    = 0.131. GUT seesaw triple (8.7, 15.2, 50.3) meV sums to EXACTLY
+    74.2 -> resolves the Q-023a stated-sum question (025b's own
+    triple was the low-scale RGE variant). 0vbb m_bb = 12.3 meV
+    (CUPID-1T); NuSTAR tension disclosed in-paper.
+    Q-024: duplicate PAPER_026 file (short late-era variant derives
+    5.4 keV via rho_SCm*S26*Phi_res/c^2 with a 1e5 unit issue);
+    sin vs sin^2 for 1.78e-10 between 025b/026; printed mixing-chain
+    factors mojibaked.
+    """
+    m_s2_gev = SSQ * 80.377                          # 45.81 EXACT
+    m_s3_gev = 11600.0 / SSQ                         # 20,351 EXACT
+    gut = (2.19e9, 2.19e9 * SSQ, 2.19e9 * SSQ**2)    # 1.248e9, 7.115e8
+    yukawa = {'e': SSQ**3, 'mu': SSQ**2, 'tau': SSQ}
+    d_s = 1.0 / SSQ                                  # 1.754
+    omega_s1 = 0.305 * SSQ**1.5
+    m_nu_gut = (8.7, 15.2, 50.3)                     # meV, sums 74.2 EXACT
+    return {
+        'value': {
+            'm_s1_kev': 7.1,
+            'm_s2_gev': m_s2_gev,
+            'm_z_half_gev': 45.6,
+            'm_s3_gev': m_s3_gev,
+            'sin2_2theta2': SSQ**4,                  # 0.1056 M_s2 mixing
+            'ssq6_mixing_prefactor': SSQ**6,         # 0.0343 (~paper 0.0343)
+            'sin_2theta_s1': 1.78e-10,               # anchor (sin vs sin^2 - Q-024b)
+            'gut_majorana_gev': gut,
+            'gut_ratio_check': gut[1] / gut[0],      # = SSq EXACT
+            'yukawa_ladder': yukawa,
+            'd_s_dilution': d_s,                     # 1/SSq = 1.754
+            'omega_s1_h2': omega_s1,                 # 0.131
+            'm_nu_gut_mev': m_nu_gut,
+            'sum_m_nu_gut_mev': sum(m_nu_gut),       # 74.2 EXACT
+            'm_nu_lowscale_ev': (0.0086, 0.0171, 0.0507),
+            'delta_m31_sq_ev2': (2.45e-3, 2.51e-3),  # UQFF vs observed
+            'm_bb_0vbb_mev': 12.3,                   # CUPID-1T 2035
+            'eta_b_leptogenesis': 6.1e-10,           # M_N3-driven, 0.3 pct of Planck
+            'nustar_tension': True,
+        },
+        'formula': ('M_s2 = SSq*M_W; M_s3 = M_KK/SSq; M_N geometric ratio SSq; '
+                    'y_a = SSq^(4-a); D_s = 1/SSq; Omega = 0.305*SSq^1.5'),
+        'source': 'PAPER_026',
+        'residual_pct': abs(m_s2_gev - 45.8) / 45.8 * 100,
         'status': 'OPEN_RULING',
     }

@@ -615,3 +615,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 28/2,255 (7 ✓, 21 ⚠). Next: PAPER_026.
 
 ---
+
+## 2026-07-29 — v0.28.0 — BAND 1: PAPER_026
+
+- PAPER_026 wired (⚠ Q-024): sterile spectrum. M_s2/M_s3/GUT-series/
+  Yukawa ladder all SSq-composed EXACT. SELF-RECTIFICATION: Q-023a and
+  Q-023b closed by this paper (74.2 = GUT triple; M_N1 = 2.19e9) —
+  doctrine working one paper later, as designed. Duplicate-file
+  question queued (Q-024a).
+- Gate 221/0. Registry 85 rows / 162 edges / 29 ledgers.
+- Campaign: 29/2,255 (7 ✓, 22 ⚠). Next: PAPER_026b (Vector-Like Quarks).
+
+---

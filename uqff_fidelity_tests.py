@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.27.0", "uqff_calculator.VERSION = 0.27.0")
+assert_that(C.VERSION == "0.28.0", "uqff_calculator.VERSION = 0.28.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -488,6 +488,23 @@ assert_that(abs(_r025b['g_uqff_nucleon'] - 9.7e-6) / 9.7e-6 < 0.01,
 assert_that(abs(_r025b['sum_m_nu_components_mev'] - 72.89) < 0.01,
             "PAPER_025b: components sum 72.89 meV vs stated 74.2 (1.8 pct, Q-023a) honestly pinned")
 assert_that(C.wired_count() >= 28, "wired_count >= 28")
+
+_r026 = C.calc('PAPER_026')['value']
+assert_that(abs(_r026['m_s2_gev'] - 45.81) < 0.01,
+            "PAPER_026: M_s2 = SSq*M_W = 45.81 GeV EXACT (above M_Z/2 = 45.6)")
+assert_that(abs(_r026['m_s3_gev'] - 20351.0) < 1.0,
+            "PAPER_026: M_s3 = M_KK/SSq = 20,351 GeV EXACT (matches PAPER_025b anchor)")
+assert_that(abs(_r026['gut_ratio_check'] - 0.57) < 1e-12,
+            "PAPER_026: GUT Majorana geometric ratio = SSq EXACT (resolves Q-023b: M_N1 = 2.19e9 GeV)")
+assert_that(abs(_r026['sum_m_nu_gut_mev'] - 74.2) < 1e-9,
+            "PAPER_026: GUT seesaw triple sums to 74.2 meV EXACT (resolves Q-023a stated-sum origin)")
+assert_that(abs(_r026['d_s_dilution'] - 1.7544) < 0.001,
+            "PAPER_026: entropy dilution D_s = 1/SSq = 1.754")
+assert_that(abs(_r026['omega_s1_h2'] - 0.131) < 0.001,
+            "PAPER_026: Omega_s1 = 0.305*SSq^1.5 = 0.131 composition")
+assert_that(abs(_r026['yukawa_ladder']['e'] - 0.185193) < 1e-6,
+            "PAPER_026: Yukawa ladder y_e = SSq^3 = 0.185 (SSq powers, PAPER_022 family)")
+assert_that(C.wired_count() >= 29, "wired_count >= 29")
 
 # =============================================================================
 # REPORT

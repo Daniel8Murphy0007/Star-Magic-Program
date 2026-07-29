@@ -153,3 +153,11 @@ observable,sterile_neutrino_7kev,paper,PAPER_025b,primary derivation
 observable,neutrino_mass_ssq_hierarchy,paper,PAPER_025b,primary derivation
 observable,neutrino_polarizability_bound,paper,PAPER_025b,primary derivation
 observable,sterile_neutrino_7kev,paper,PAPER_025,DM sector companion
+primitive,SSQ,observable,sterile_spectrum_low_scale,M_s2 = SSq*M_W; M_s3 = M_KK/SSq; SSq^4/SSq^6 mixings
+primitive,SSQ,observable,gut_majorana_ssq_series,geometric ratio SSq; Yukawa SSq^(4-a)
+primitive,SSQ,observable,sterile_relic_leptogenesis,D_s = 1/SSq; Omega = 0.305*SSq^1.5
+observable,sterile_spectrum_low_scale,paper,PAPER_026,primary derivation
+observable,sterile_spectrum_low_scale,paper,PAPER_022,M_KK = 11.6 TeV input
+observable,gut_majorana_ssq_series,paper,PAPER_026,primary derivation
+observable,gut_majorana_ssq_series,paper,PAPER_025b,resolves Q-023a/b (self-rectification)
+observable,sterile_relic_leptogenesis,paper,PAPER_026,primary derivation

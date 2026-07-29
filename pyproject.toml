@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.27.0"
-description = "UQFF Star-Magic-Program v0.27.0: PAPER_025b wired (neutrino polarizability: M_s1 = 7.1 keV sterile -> 3.55 keV Perseus/M31 X-ray line; m1/m2 = SSq = 0.570 EXACT hierarchy; kappa*SSq = 2.85e-4; mixing enhancement 0.407 verified; a_nu < 1e-32 cm3 CEvNS-reachable). Q-023 queued (mass-sum 1.8 pct; M_N1 mojibake; DW 0.131 vs 0.12). Wired 28/2255, gate 214/0. Registry 82 rows / 154 edges / 28 ledgers."
+version = "0.28.0"
+description = "UQFF Star-Magic-Program v0.28.0: PAPER_026 wired (sterile spectrum: M_s2 = SSq*M_W = 45.81 GeV EXACT; M_s3 = M_KK/SSq = 20351 GeV; GUT Majorana geometric series in SSq resolves Q-023a/b via self-rectification - 74.2 meV = GUT triple sum EXACT, M_N1 = 2.19e9; Yukawa ladder SSq^(4-a)). Q-024 queued (duplicate 026 file; sin vs sin^2). Wired 29/2255, gate 221/0. Registry 85 rows / 162 edges / 29 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

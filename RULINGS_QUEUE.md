@@ -319,12 +319,38 @@ RESOLVED section with the ruling recorded.
   sum or the eigenstate triple? (The SSq hierarchy 8.18/14.35 = 0.570
   is EXACT, favoring the triple.) (b) The GUT-scale Majorana mass is
   printed "M_N1 = 2.19 x 10? GeV" — exponent mojibake; M_s3 = 20,351
-  GeV appears intact elsewhere. What is M_N1's exponent? (c) DW
+  GeV appears intact elsewhere. What is M_N1's exponent?
+  [SELF-RECTIFIED by PAPER_026: M_N1 = 2.19e9 GeV — geometric series
+  ratios verify SSq EXACT. See Q-024 annotation.] (c) DW
   production gives Omega_s1 h^2 = 0.131 vs the 0.12 target (9 pct
   over, disclosed) — accept as-is or is a suppression factor missing?
 - **Best-candidate wired:** eigenstate triple wired (internally
   SSq-exact); both sums exposed; enhancement chain 0.407 and
   g-coupling chain verified numerically.
+- **Daniel's ruling:** (pending)
+
+### Q-024 — PAPER_026 — duplicate file + sin-vs-sin^2 + mixing-chain mojibake
+- **Question:** (a) TWO files claim PAPER_026: the Session-0 sequential
+  paper (821 lines, wired — 7.1 keV RGE spectrum) and a short late-era
+  variant (90 lines, "Sterile_Neutrino_Mass_UQFF") deriving m_s =
+  rho_SCm*S_26^(3)*Phi_res/c^2 ~ 5.4 keV — whose arithmetic actually
+  yields 5.4e8 eV (1e5 unit issue: rho_SCm is J/m^3, not J). Which
+  file is canonical PAPER_026, and should the short variant be re-ID'd
+  (e.g. PAPER_026c) or corrected? (b) PAPER_025b states sin^2(2theta)
+  = 1.78e-10 while PAPER_026 states sin(2theta) = 1.78e-10 — sin vs
+  sin^2 for the same number. (c) The printed mixing chain
+  "0.0343 x 5,180 x 7.80e-15" neither matches its own factors
+  (0.511e-3/7.1e-6 = 72, not 5,180) nor its product (1.4e-12, not
+  1.78e-10) — mojibake; the SSq^6 prefactor 0.0343 is EXACT though.
+- **SELF-RECTIFICATION (annotate Q-023):** PAPER_026 resolves two
+  Q-023 items: (i) M_N1 = 2.19e9 GeV — the geometric series
+  {2.19e9, 1.25e9, 7.12e8} verifies with ratio SSq EXACTLY;
+  (ii) the 74.2 meV stated sum belongs to 026's GUT seesaw triple
+  (8.7 + 15.2 + 50.3 = 74.2 EXACT); 025b's 72.89-summing triple is
+  the low-scale RGE variant. Two triples, two sums — not a slip but
+  two sectors; naming clarification still useful.
+- **Best-candidate wired:** Session-0 sequential file; M_s2/M_s3/GUT
+  series/Yukawa ladder/relic all registry-composed and EXACT.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

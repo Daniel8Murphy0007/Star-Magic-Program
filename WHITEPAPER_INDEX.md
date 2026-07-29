@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 28 (7 ✓, 21 ⚠ OPEN_RULING)
+- **Wired:** 29 (7 ✓, 22 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2227
+- **Not yet touched:** 2226
 
 ---
 
@@ -57,7 +57,7 @@
 | ⚠ | PAPER_024 | Tau Electric Dipole Moment UQFF |
 | ⚠ | PAPER_025 | Dark Matter Direct Detection UQFF |
 | ⚠ | PAPER_025b | Neutrino Polarizability UQFF |
-| ⬜ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
+| ⚠ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
 | ⬜ | PAPER_026 | Sterile Neutrino Mass UQFF |
 | ⬜ | PAPER_026b | Vector Like Quarks UQFF |
 | ⬜ | PAPER_027 | Lepton Flavor Violation UQFF |

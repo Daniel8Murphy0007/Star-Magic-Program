@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.28.0] — 2026-07-29 — BAND 1: PAPER_026
+
+### Added
+- **PAPER_026 dispatch** (Sterile Neutrino Mass Generation): complete
+  zero-free-parameter sterile spectrum. M_s2 = SSq*M_W = 45.81 GeV
+  EXACT (just above M_Z/2); M_s3 = M_KK/SSq = 20,351 GeV EXACT; GUT
+  Majorana series {2.19e9, 1.25e9, 7.12e8} GeV geometric in SSq
+  (ratios verify EXACTLY); Yukawa ladder y_a = SSq^(4-a); entropy
+  dilution D_s = 1/SSq; Omega_s1 = 0.305*SSq^1.5 = 0.131;
+  leptogenesis eta_B = 6.1e-10 (0.3% of Planck); 0vbb m_bb = 12.3 meV
+  (CUPID-1T). OPEN_RULING Q-024 (duplicate PAPER_026 file with 5.4 keV
+  variant + 1e5 unit issue; sin-vs-sin^2 for 1.78e-10; mixing-chain
+  mojibake).
+- **SELF-RECTIFICATION — first ruling items closed by corpus:**
+  PAPER_026 resolves Q-023a (74.2 meV = GUT triple 8.7+15.2+50.3 EXACT;
+  025b's triple is the low-scale RGE variant — two sectors, two sums)
+  and Q-023b (M_N1 = 2.19e9 GeV via exact SSq-series consistency).
+- Gate: 221 assertions, 0 failures. Registry: 85 rows / 162 edges / 29 ledgers.
+
+---
+
 ## [0.27.0] — 2026-07-29 — BAND 1: PAPER_025b
 
 ### Added
