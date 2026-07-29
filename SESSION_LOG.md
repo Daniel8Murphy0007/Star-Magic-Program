@@ -1168,3 +1168,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 81/2,255 (10 ✓, 71 ⚠). Next: PAPER_078.
 
 ---
+
+## 2026-07-29 — v0.81.0 — BAND 1: PAPER_078
+
+- PAPER_078 wired (⚠ Q-074): Hubble-tension honest null (dH0 =
+  0.0034 EXACT); midpoint 70.2 on registry H0 route (interpretive
+  supersession note); L* +0.3 dex EXACT; [UA]/[SCm] appearance
+  counts grow.
+- Campaign: 82/2,255 (10 ✓, 72 ⚠). Next: PAPER_079.
+
+---

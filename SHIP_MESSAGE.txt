@@ -1,23 +1,24 @@
-v0.80.0 BAND 1: PAPER_077 wired - GWTC-4 EVENTS NAMED (Q-060d RESOLVED)
+v0.81.0 BAND 1: PAPER_078 wired - TENSION MIDPOINT ON REGISTRY H0 ROUTE
 
-PAPER_077 LIGO GWTC-4.0 Ringdown Cross-Validation (OPEN_RULING
-Q-073):
-  RESOLVES Q-060d: the three Batch-23 GWTC-4.0 ringdown events
-  are NAMED - GW150914 (251 Hz), GW190521 (89 Hz), GW200115
-  (~2800 Hz). Mass anchors match published GWTC values
-  (35.6+30.6 -> 63.1; 85+66 -> 142; 5.7+1.5 -> 7.1).
+PAPER_078 NED Extragalactic + Hubble Tension (OPEN_RULING Q-074):
+  HONEST NULL: dH0 = H0*[UA]*0.5 = 67.4*1e-4*0.5 = 0.0034
+  km/s/Mpc EXACT - far too small for the 5.6 km/s/Mpc tension;
+  the Session-0 paper says so plainly. [UA] SIXTH appearance.
 
-  UQFF corrections are TINY by construction: ringdown deltas
-  ~1e-6 fractional; d_L = (1 + [UA]*z) < 0.01 pct at z=1 EXACT -
-  [UA] = 1e-4 FIFTH appearance. GWTC constraints UNMODIFIED
-  (null suite, falsifiable).
+  HISTORICAL NOTE: the tension midpoint (67.4+73.0)/2 = 70.2
+  sits ON the registry H0 = A_5+SO_5 = 70 route - the later
+  corpus (PAPER_1573-era) resolves the tension at the natural
+  mean, interpretively superseding this paper's open question.
+  No code change; registry numerics already canonical.
 
-  HONEST RESIDUALS: the printed QNM approximation evaluates to
-  285 / 130 / 1975 Hz vs anchors 251 / 89 / 2800 (13-46 pct) -
-  the anchors track REAL observed ringdowns; anchors wired over
-  formula. GW150914 M_f 65.3-vs-63.1 internal conflict + delta
-  column arithmetic slip pinned.
+  AGN L* chain EXACT: x1.99 ([SCm] 5th) = +0.3 dex
+  (log10(1.99) = 0.299), uniform across 4 redshift bins, inside
+  the 0.5-dex scatter - consistent with PAPER_075's multiplier.
+  DLA HI-21cm null falsifiable.
 
-Q-073 queued. Gate 578 assertions 0 failures. Registry 236 rows /
-460 edges / 81 citation ledgers. Wired 81/2,255 (10 clean, 71
-OPEN_RULING). Next: PAPER_078.
+  DEFECT: tension 4.2 sigma printed vs 5.0 computed from the
+  quoted errors - pinned.
+
+Q-074 queued. Gate 584 assertions 0 failures. Registry 238 rows /
+464 edges / 82 citation ledgers. Wired 82/2,255 (10 clean, 72
+OPEN_RULING). Next: PAPER_079.

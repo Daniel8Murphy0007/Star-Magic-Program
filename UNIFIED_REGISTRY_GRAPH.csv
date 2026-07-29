@@ -460,3 +460,7 @@ observable,gwtc4_ringdown_events,paper,PAPER_077,event naming
 observable,gwtc4_ringdown_events,paper,PAPER_064,resolves Q-060d
 observable,gw_dl_ua_correction,paper,PAPER_077,null correction
 observable,gw_dl_ua_correction,paper,PAPER_075,[UA] 5th appearance
+observable,hubble_tension_null,paper,PAPER_078,honest null
+primitive,H0_GRID,observable,hubble_tension_null,midpoint-on-route note
+observable,agn_lstar_shift,paper,PAPER_078,primary chain
+observable,agn_lstar_shift,paper,PAPER_075,1.99 multiplier consistency

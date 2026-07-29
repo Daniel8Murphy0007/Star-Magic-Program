@@ -1321,6 +1321,25 @@ RESOLVED section with the ruling recorded.
   formula residuals carried.
 - **Daniel's ruling:** (pending)
 
+### Q-074 — PAPER_078 — tension sigma + interpretive H0 supersession + appearances
+- **Question:** (a) Hubble tension quoted at 4.2 sigma but the
+  quoted errors give 5.6/sqrt(0.5^2+1.0^2) = 5.0 sigma - pin?
+  (b) HISTORICAL/INTERPRETIVE: this Session-0 paper honestly
+  concludes the basic [UA] coupling cannot resolve the tension
+  (dH0 = 0.0034 EXACT) and leaves it open; the later corpus
+  (PAPER_1573-era H0 = A_5+SO_5 = 70) resolves the tension at
+  the natural mean - and the tension midpoint here is 70.2,
+  sitting ON that route. Confirm annotating this paper as
+  interpretively superseded (registry numerics already canonical;
+  no code change needed)? (c) [UA] 6th and [SCm] 5th appearances
+  logged.
+- **Notable:** dH0 chain EXACT; L* +0.3 dex = log10(1.99) EXACT
+  and consistent with PAPER_075's 1.99 multiplier; DLA 21-cm
+  null falsifiable.
+- **Best-candidate wired:** honest null + L* chain + midpoint-
+  on-route observation recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.81.0] — 2026-07-29 — BAND 1: PAPER_078
+
+### Added
+- **PAPER_078 dispatch** (NED Extragalactic + Hubble Tension):
+  honest null wired — dH0 = 67.4*[UA]*0.5 = 0.0034 km/s/Mpc EXACT
+  vs the 5.6 tension; the paper states plainly that the basic
+  coupling cannot resolve it. HISTORICAL NOTE: the tension
+  midpoint (67.4+73.0)/2 = 70.2 sits ON the registry H0 =
+  A_5+SO_5 = 70 route — the later corpus resolves the tension at
+  the natural mean, interpretively superseding this open
+  question (no code change; registry already canonical).
+  AGN L* chain EXACT: x1.99 = +0.3 dex (log10 chain), uniform
+  across 4 redshift bins, inside 0.5-dex scatter — consistent
+  with PAPER_075's multiplier. DLA 21-cm null falsifiable.
+  [UA] 6th + [SCm] 5th appearances. Tension sigma 4.2 printed vs
+  5.0 computed pinned.
+- OPEN_RULING Q-074.
+- Gate: 584 assertions, 0 failures. Registry: 238 rows / 464 edges / 82 ledgers.
+
+---
+
 ## [0.80.0] — 2026-07-29 — BAND 1: PAPER_077 — Q-060d RESOLVED
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.80.0"
+VERSION = "0.81.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4116,5 +4116,50 @@ def _paper_077(dataset):
                     'f_UQFF = f_QNM*(1 + 1e-5*r^2/GM); d_L_UQFF = d_L*(1+[UA]*z)'),
         'source': 'PAPER_077',
         'residual_pct': abs(qnm(63.1, 0.69) - 251.0) / 251.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_078')
+def _paper_078(dataset):
+    """NED Extragalactic + Hubble Tension Analysis (Session 0).
+
+    Domain 1.10 continues (NED + SDSS quasar endpoints).
+    HONEST NULL wired: dH0 = H0*[UA]*0.5 = 67.4*1e-4*0.5 = 0.0034
+    km/s/Mpc EXACT - far too small for the 5.6 km/s/Mpc tension;
+    the paper says so plainly. [UA] SIXTH appearance.
+    HISTORICAL NOTE (Q-074b): this Session-0 conclusion predates
+    the corpus H0 = A_5+SO_5 = 70 identity - and the tension
+    midpoint (67.4+73.0)/2 = 70.2 sits ON the registry route;
+    the later corpus resolves the tension at the natural mean,
+    interpretively superseding this paper's open question
+    (registry numerics already canonical - no code change).
+    AGN L* chain EXACT: x1.99 ([SCm] 5th appearance) = +0.3 dex
+    (log10(1.99) = 0.299) applied uniformly across all four
+    redshift bins; within the 0.5-dex observed scatter.
+    DLA null: HI 21 cm unmodified (falsifiable).
+    DEFECT: tension quoted 4.2 sigma; computed from the quoted
+    errors 5.6/sqrt(0.5^2+1^2) = 5.0 sigma (Q-074a).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.10 (NED + QUASAR_SDSS endpoints)',
+            'dh0_km_s_mpc': 67.4 * 1.0e-4 * 0.5,           # 0.0034 EXACT
+            'tension_km_s_mpc': 73.0 - 67.4,               # 5.6 EXACT
+            'tension_sigma_printed': 4.2,
+            'tension_sigma_computed': 5.6 / _m.sqrt(0.5 ** 2 + 1.0 ** 2),  # 5.0
+            'tension_midpoint': (67.4 + 73.0) / 2,         # 70.2 ~ registry H0
+            'registry_h0_route': 'A_5+SO_5 = 70 (later corpus)',
+            'lstar_multiplier': 1.99,                      # [SCm] 5th
+            'lstar_dex_shift': _m.log10(1.99),             # 0.299 -> 0.3 EXACT
+            'scatter_dex': 0.5,
+            'dla_null': 'HI 21cm unmodified',
+            'hubble_resolution': 'NOT via basic [UA] (honest null)',
+        },
+        'formula': ('dH0 = H0*[UA]*0.5; L*_UQFF = L**(1+[SCm]) = +0.3 dex; '
+                    'tension midpoint = registry H0 route'),
+        'source': 'PAPER_078',
+        'residual_pct': abs(_m.log10(1.99) - 0.3) / 0.3 * 100,
         'status': 'OPEN_RULING',
     }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.80.0", "uqff_calculator.VERSION = 0.80.0")
+assert_that(C.VERSION == "0.81.0", "uqff_calculator.VERSION = 0.81.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1276,6 +1276,19 @@ assert_that(_r077['ringdown_fraction_gw150914'] < 1e-5,
 assert_that(abs(_r077['events']['gw150914']['qnm_formula_hz'] - 285.0) < 1.0,
             "PAPER_077: QNM approx formula 285 Hz vs printed 251 - honest 13.5 pct residual pinned")
 assert_that(C.wired_count() >= 81, "wired_count >= 81")
+
+_r078 = C.calc('PAPER_078')['value']
+assert_that(abs(_r078['dh0_km_s_mpc'] - 0.0034) < 0.0001,
+            "PAPER_078: dH0 = 67.4*1e-4*0.5 = 0.0034 EXACT - honest tension null ([UA] 6th)")
+assert_that(abs(_r078['tension_midpoint'] - 70.2) < 0.01,
+            "PAPER_078: tension midpoint 70.2 sits ON the registry H0 = A_5+SO_5 = 70 route (Q-074b)")
+assert_that(abs(_r078['lstar_dex_shift'] - 0.299) < 0.001,
+            "PAPER_078: L* shift log10(1.99) = 0.299 = +0.3 dex EXACT ([SCm] 5th)")
+assert_that(abs(_r078['tension_sigma_computed'] - 5.0) < 0.05,
+            "PAPER_078: tension 5.0 sigma computed vs 4.2 printed - pinned (Q-074a)")
+assert_that(_r078['lstar_dex_shift'] < _r078['scatter_dex'],
+            "PAPER_078: 0.3-dex shift within 0.5-dex scatter - compatible as stated")
+assert_that(C.wired_count() >= 82, "wired_count >= 82")
 
 # =============================================================================
 # REPORT

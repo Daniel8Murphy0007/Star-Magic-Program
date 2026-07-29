@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 81 (10 ✓, 71 ⚠ OPEN_RULING)
+- **Wired:** 82 (10 ✓, 72 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2174
+- **Not yet touched:** 2173
 
 ---
 
@@ -111,7 +111,7 @@
 | ⚠ | PAPER_075 | XRay Binaries Chandra UQFF |
 | ⚠ | PAPER_076 | FermiLAT GammaRay UQFF |
 | ⚠ | PAPER_077 | LIGO GWTC4 Cross Validation UQFF |
-| ⬜ | PAPER_078 | NED Extragalactic UQFF |
+| ⚠ | PAPER_078 | NED Extragalactic UQFF |
 | ⬜ | PAPER_079 | HEASARC HighEnergy UQFF |
 | ⬜ | PAPER_080 | Complete MultiWavelength UQFF Suite |
 | ⬜ | PAPER_081 | UQFF Hawking Temperature Derivation |
