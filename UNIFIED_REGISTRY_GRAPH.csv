@@ -174,3 +174,9 @@ observable,lfv_suppression_mechanism,paper,PAPER_027,primary derivation
 observable,lfv_reversal_depth,paper,PAPER_027,primary derivation
 observable,lfv_fu_chain,paper,PAPER_027,primary derivation
 observable,lfv_fu_chain,paper,PAPER_026b,k_eta symbol collision cross-ref
+primitive,BETA_I,observable,ckm_vcb_fu_chain,Ub_i = beta_i*Gamma/(m_B*c^2)
+primitive,F_TRZ,observable,ckm_vcb_fu_chain,Ug4 denom = (1-F_TRZ)*rho_UA pattern (Q-026a)
+observable,scm_flavor_mixing_density,paper,PAPER_028,primary derivation
+observable,scm_flavor_mixing_density,paper,PAPER_027,anchors LFV suppression
+observable,ckm_vcb_fu_chain,paper,PAPER_028,primary derivation
+observable,vcb_puzzle_uqff,paper,PAPER_028,primary derivation

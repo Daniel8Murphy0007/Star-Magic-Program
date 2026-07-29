@@ -375,7 +375,7 @@ RESOLVED section with the ruling recorded.
   0.9*rho_UA = (1-F_TRZ)*rho_UA, NOT the canonical rho_SCm = 7.09e-37.
   The effective form Ug4 = BR/(1-F_TRZ) = 6.556e-6 matches the paper's
   6.558e-6 exactly. Is (1-F_TRZ)*rho_UA the intended composition, or
-  is 6.38e-36 a density drift that should read rho_SCm (which would
+  is 6.38e-36 a density drift [2nd instance found in PAPER_028 Ug4 — pattern SYSTEMATIC, see Q-027a] that should read rho_SCm (which would
   give Ug4 = 10*BR/0.9 = 6.6e-5)? (b) The tau+e- reversal depth is
   printed 3.900 but -ln(4.9e-6)/pi = 3.8917 (0.2 pct). (c) Symbol
   collision: k_eta = 1e-113 (LENR neutron coupling, this paper) vs
@@ -384,6 +384,25 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** exp(-SSq) composition EXACT; t_n = 3.833
   chain reproduces the LHCb limit to machine precision; Ug4 wired in
   its effective BR/(1-F_TRZ) form with both readings documented.
+- **Daniel's ruling:** (pending)
+
+### Q-027 — PAPER_028 — Cabibbo claim + Gamma/BR tension + LFU derivation
+- **Question:** (a) [Annotates Q-026a] The Ug4 denominator 6.38e-36 =
+  0.9*rho_UA appears AGAIN in this paper's weak-scale vacuum ratio —
+  2nd corpus instance; the (1-F_TRZ)*rho_UA pattern is systematic, not
+  a one-off. Same ruling covers both. (b) Sec 2.4 claims the Cabibbo
+  ratio [SCm]_flavor/|V_us|^2 = 0.0303 ~ (m_s/m_b)^(1/2), but
+  (m_s/m_b)^(1/2) = 0.15 — the claim fails numerically by 5x (as
+  power 1 it is 0.023, 25 pct off; what is the intended identity?).
+  (c) Gamma(B->Dlnu) = 3.14e9 s^-1 is quoted "-> tau_B ~ 1.5 ps
+  consistent with PDG", but partial/total = 3.14e9/6.67e11 = 0.47 pct
+  vs the measured BR = 2.06 pct — 4.4x partial-width tension.
+  (d) The comparison table lists LFU R = 1.020 as the UQFF prediction
+  (= measured central value) with no derivation shown; SM = 1.000.
+  Is 1.020 derived anywhere in the corpus?
+- **Best-candidate wired:** [SCm]_flavor = |V_cb|^2 EXACT; F_U chain
+  reproduced with registry BETA_I; claim-check failures pinned
+  honestly, anchors preserved.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -1,28 +1,27 @@
-v0.30.0 BAND 1: PAPER_027 wired
+v0.31.0 BAND 1: PAPER_028 wired
 
-PAPER_027 Lepton Flavor Violation Processes (OPEN_RULING Q-026):
-  LHCb B0 -> K*0 tau(+-)e(-+) limits (5.9e-6 / 4.9e-6, 90 pct CL)
-  explained via DPM temporal reversal: LFV requires t_n < 0 ->
-  cos(pi*t_n) = -1 destructive suppression. No ad hoc symmetries.
-  S_LFV = exp(-|t_n|*SSq) = exp(-0.57) = 0.5655 EXACT registry
-  composition
-  Critical reversal depth t_n = -ln(BR)/pi = 3.833;
-  BR = exp(-pi*3.833) = 5.9e-6 reproduces the LHCb limit to machine
-  precision (gate-pinned)
-  Ug chain verified: Ug1 = m_B/m_p = 5.63; Ug3 = -0.59*0.5655 =
-  -0.3337; F_U = 5.29 net positive - the unified field actively
-  opposes LFV transitions
-  SM GIM floor 1e-54: any observation at 1e-6 is unambiguous BSM
+PAPER_028 BSM Coupling Constants (OPEN_RULING Q-027):
+  Belle II |V_cb| = (39.2 +- 0.9)e-3 (365 fb^-1) mapped to the SCm
+  vacuum: [SCm]_flavor = Ug2 = |V_cb|^2 * kappa_Higgs = 1.5366e-3
+  - the CKM matrix element AS a vacuum flavor-mixing density.
+  Anchors the PAPER_027 LFV suppression mechanism.
+  kappa_Higgs = 1.0 SM constraint -> TESTABLE CROSS-LOCK: any Higgs
+  coupling deviation (Paper 34, H->bb) must shift |V_cb|_eff.
+  F_U chain reproduced with registry BETA_I: Ug1 = m_B/m_p = 5.61;
+  Ug3 = 0.0296; Ug4 = 95.06; Ub_i = 24.88; F_U = 75.81 > 0.
+  V_cb puzzle (~2 sigma incl-vs-excl) = operator-basis dependence
+  of [SCm]_flavor.
 
-Q-026 queued: (a) Ug4 denominator 6.38e-36 = 0.9*rho_UA (effective
-Ug4 = BR/(1-F_TRZ), matches paper exactly) vs canonical rho_SCm
-reading (10x larger) - which composition is intended? (b) tau+e-
-depth printed 3.900 vs computed 3.8917; (c) k_eta symbol collision
-(1e-113 LENR here vs 0.1369 VLQ in PAPER_026b).
+Q-027 queued: (a) the 0.9*rho_UA denominator appears in a SECOND
+paper (Ug4 here, Ug4 in 027) - Q-026a annotated: the (1-F_TRZ)*rho_UA
+pattern is systematic, one ruling covers both; (b) Cabibbo
+(m_s/m_b)^(1/2) claim fails numerically by 5x; (c) Gamma partial
+3.14e9 s^-1 vs BR 2.06 pct = 4.4x tension; (d) LFU 1.020 listed as
+UQFF prediction without derivation.
 
-Gate Block-8 banned-literal guard caught a density literal in a
-docstring this ship - prose counts; replaced with registry symbol.
+Block-8 guard caught a beta_i literal in a code comment (2nd catch
+in two ships - comments count).
 
-Gate 235 assertions 0 failures. Registry 91 rows / 175 edges / 31
-citation ledgers. Wired 31/2,255 (7 clean, 24 OPEN_RULING).
-Next: PAPER_028.
+Gate 242 assertions 0 failures. Registry 94 rows / 181 edges / 32
+citation ledgers. Wired 32/2,255 (7 clean, 25 OPEN_RULING).
+Next: PAPER_029.

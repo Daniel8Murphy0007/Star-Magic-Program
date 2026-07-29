@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.30.0"
-description = "UQFF Star-Magic-Program v0.30.0: PAPER_027 wired (LFV: LHCb B0->K*0 tau e limits from DPM temporal reversal; S_LFV = exp(-SSq) = 0.5655 EXACT; t_n = -ln(BR)/pi = 3.833 reproduces 5.9e-6 exactly; F_U chain verified; SM GIM floor 1e-54). Q-026 queued (Ug4 density denominator; k_eta collision). Wired 31/2255, gate 235/0. Registry 91 rows / 175 edges / 31 ledgers."
+version = "0.31.0"
+description = "UQFF Star-Magic-Program v0.31.0: PAPER_028 wired (Belle II V_cb: [SCm]_flavor = V_cb^2 = 1.5366e-3 - CKM element as SCm vacuum density; kappa_Higgs = 1.0 constraint cross-locks Paper 34; F_U chain 75.81 with registry BETA_I; 0.9*rho_UA denominator pattern now SYSTEMATIC - 2nd instance). Q-027 queued. Wired 32/2255, gate 242/0. Registry 94 rows / 181 edges / 32 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

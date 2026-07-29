@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.30.0", "uqff_calculator.VERSION = 0.30.0")
+assert_that(C.VERSION == "0.31.0", "uqff_calculator.VERSION = 0.31.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -535,6 +535,21 @@ assert_that(abs(_r027['ug1_mb_over_mp'] - 5.627) < 0.01,
 assert_that(abs(_r027['ug4_effective'] - 6.556e-6) < 1e-9,
             "PAPER_027: Ug4 = BR/(1-F_TRZ) = 6.556e-6 (~paper 6.558e-6; Q-026a density reading)")
 assert_that(C.wired_count() >= 31, "wired_count >= 31")
+
+_r028 = C.calc('PAPER_028')['value']
+assert_that(abs(_r028['scm_flavor_mixing'] - 1.5366e-3) / 1.5366e-3 < 0.001,
+            "PAPER_028: [SCm]_flavor = |V_cb|^2 = 1.5366e-3 EXACT (CKM as vacuum density)")
+assert_that(abs(_r028['ug_ladder']['ug1'] - 5.627) < 0.02,
+            "PAPER_028: Ug1 = m_B/m_p = 5.63 (~paper 5.614)")
+assert_that(abs(_r028['ug_ladder']['ub_i'] - 24.88) < 0.1,
+            "PAPER_028: Ub_i = beta_i*Gamma/(m_B*c^2) = 24.88 with registry BETA_I")
+assert_that(abs(_r028['f_u_total'] - 75.81) < 0.1,
+            "PAPER_028: F_U = 75.81 net positive (B->Dlnu supported)")
+assert_that(abs(_r028['phase_space'] - 0.936) < 0.001,
+            "PAPER_028: phase space sqrt(1-(m_D/m_B)^2) = 0.936 verified")
+assert_that(abs(_r028['cabibbo_ratio'] - 0.0303) < 0.0005,
+            "PAPER_028: Cabibbo ratio 0.0303 pinned (its (m_s/m_b)^1/2 claim FAILS - Q-027b)")
+assert_that(C.wired_count() >= 32, "wired_count >= 32")
 
 # =============================================================================
 # REPORT

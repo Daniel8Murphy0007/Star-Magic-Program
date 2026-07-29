@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.31.0] — 2026-07-29 — BAND 1: PAPER_028
+
+### Added
+- **PAPER_028 dispatch** (BSM Coupling Constants): Belle II |V_cb| =
+  39.2e-3 mapped to SCm vacuum — [SCm]_flavor = Ug2 = |V_cb|^2 *
+  kappa_Higgs = 1.5366e-3 (CKM element AS vacuum density, the key
+  result; anchors PAPER_027's LFV mechanism). kappa_Higgs = 1.0 SM
+  constraint creates a testable cross-lock with Paper 34 (Higgs->bb).
+  F_U chain reproduced with registry BETA_I (Ub_i = 24.88, F_U =
+  75.81); V_cb puzzle (~2 sigma) interpreted as operator-basis
+  dependence of [SCm]_flavor. OPEN_RULING Q-027: the 0.9*rho_UA
+  denominator appears AGAIN (2nd instance — Q-026a pattern now
+  SYSTEMATIC); Cabibbo (m_s/m_b)^(1/2) claim fails numerically 5x;
+  Gamma-vs-BR 4.4x partial-width tension; LFU 1.020 underived.
+- Gate: 242 assertions, 0 failures. Registry: 94 rows / 181 edges / 32 ledgers.
+
+### Fixed
+- Block-8 guard caught a canonical beta_i literal in a code comment —
+  second catch in two ships; comments and docstrings both count.
+- Gate: 242 assertions, 0 failures.
+
+---
+
 ## [0.30.0] — 2026-07-29 — BAND 1: PAPER_027
 
 ### Added

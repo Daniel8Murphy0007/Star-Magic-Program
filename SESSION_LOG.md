@@ -650,3 +650,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 31/2,255 (7 ✓, 24 ⚠). Next: PAPER_028.
 
 ---
+
+## 2026-07-29 — v0.31.0 — BAND 1: PAPER_028
+
+- PAPER_028 wired (⚠ Q-027): Belle II V_cb. [SCm]_flavor = V_cb^2
+  EXACT; kappa_Higgs cross-lock with Paper 34 registered; the
+  0.9*rho_UA denominator found in a 2nd paper — Q-026a annotated as
+  SYSTEMATIC pattern awaiting one ruling for both.
+- Gate 242/0. Registry 94 rows / 181 edges / 32 ledgers.
+- Campaign: 32/2,255 (7 ✓, 25 ⚠). Next: PAPER_029.
+
+---

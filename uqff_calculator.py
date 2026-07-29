@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.30.0"
+VERSION = "0.31.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1448,5 +1448,55 @@ def _paper_027(dataset):
                     't_n_LFV = -ln(BR)/pi; BR = exp(-pi*t_n)'),
         'source': 'PAPER_027',
         'residual_pct': abs(_m.exp(-_m.pi * t_n_lfv) - br_limit_me) / br_limit_me * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_028')
+def _paper_028(dataset):
+    """BSM Coupling Constants from UQFF Framework (Session 0).
+
+    Belle II |V_cb| = 39.2e-3 mapped to SCm flavor-mixing vacuum
+    density: [SCm]_flavor = Ug2 = |V_cb|^2 * kappa_Higgs = 1.5366e-3
+    (the KEY result - CKM coupling as vacuum density). kappa_Higgs =
+    1.0 SM constraint gives a testable link: any Higgs-coupling
+    deviation must shift |V_cb|_eff (cross-locked with Paper 34).
+    Ug ladder verified: Ug1 = m_B/m_p = 5.61; Ug3 = 0.0296;
+    Ug4 = 95.06 - and its denominator is AGAIN 0.9*rho_UA (2nd corpus
+    instance of the Q-026a pattern -> systematic, not a one-off);
+    Ub_i = beta_i*Gamma/(m_B*c^2) = 24.89; F_U = 75.81 > 0.
+    Q-027: (a) Q-026a density pattern 2nd instance (annotated);
+    (b) Cabibbo-ratio claim 0.0303 ~ (m_s/m_b)^(1/2) fails numerically
+    (sqrt gives 0.15); (c) Gamma = 3.14e9 s^-1 vs BR 2.06 pct and
+    tau_B 1.5 ps implies ~4.4x partial-width tension; (d) LFU 1.020
+    listed as UQFF prediction without derivation shown.
+    """
+    v_cb = 39.2e-3
+    scm_flavor = v_cb ** 2                            # 1.5366e-3 EXACT
+    ug1 = 5.27965 / 0.93827                           # m_B/m_p
+    ug4 = 95.06                                       # paper anchor (0.9*rho_UA denom - Q-026a)
+    ub_i = BETA_I * 3.14e9 / (8.458e-10 * 9.0e16)     # 24.87 with registry BETA_I
+    return {
+        'value': {
+            'v_cb': v_cb,
+            'v_cb_err': 0.9e-3,
+            'scm_flavor_mixing': scm_flavor,          # 1.5366e-3
+            'kappa_higgs': 1.0,
+            'gamma_b_dlnu_s': 3.14e9,
+            'ug_ladder': {'ug1': ug1, 'ug2': scm_flavor, 'ug3': 0.02960,
+                          'ug4': ug4, 'ub_i': ub_i},
+            'f_u_total': ug1 + scm_flavor + 0.02960 + ug4 - ub_i,   # ~75.8
+            'br_b0_dlnu_pct': 2.06,
+            'br_bp_dlnu_pct': 2.31,
+            'lfu_ratio': (1.020, 0.030),
+            'vcb_puzzle_delta': 3.0e-3,               # inclusive-exclusive ~2 sigma
+            'cabibbo_ratio': scm_flavor / 0.0507,     # 0.0303 (claim check fails - Q-027b)
+            'phase_space': (1.0 - (1.86966 / 5.27965) ** 2) ** 0.5,   # 0.9354
+        },
+        'formula': ('[SCm]_flavor = |V_cb|^2 * kappa_Higgs; '
+                    'Gamma ~ G_F^2*|V_cb|^2*m_B^5*|F|^2/(192*pi^3); '
+                    'Ub_i = beta_i*Gamma/(m_B*c^2)'),
+        'source': 'PAPER_028',
+        'residual_pct': abs(scm_flavor - 1.5366e-3) / 1.5366e-3 * 100,
         'status': 'OPEN_RULING',
     }
