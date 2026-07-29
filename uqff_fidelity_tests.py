@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.120.0", "uqff_calculator.VERSION = 0.120.0")
+assert_that(C.VERSION == "0.121.0", "uqff_calculator.VERSION = 0.121.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1809,6 +1809,19 @@ assert_that(abs(_r117['n_be_chain'] - 10.415) < 0.001,
 assert_that(_r117['z82_identity_predecessor'] == 82,
             "PAPER_117: Z = 82 = A_5 + D_crit - D_phys EXACT predecessor identity (Q-113b cross-repo)")
 assert_that(C.wired_count() >= 121, "wired_count >= 121")
+
+_r118 = C.calc('PAPER_118')['value']
+assert_that(abs(_r118['vac_ratio'] - 2.09) < 0.01,
+            "PAPER_118: rho_vac = 1.11e-9 is 2.09x standard Lambda conversion (5.31e-10) (Q-114a)")
+assert_that(abs(_r118['n1_hop_at_true'] - 3.03e-10) < 0.01e-10,
+            "PAPER_118: N=1 hop at TRUE rho_Lambda = 3.03e-10 - 46 pct off, headline fails corrected (Q-114a)")
+assert_that(abs(_r118['secondary_sqrt'] - 0.6220) < 0.0001,
+            "PAPER_118: CLEAN secondary sqrt(Om_DM/Om_L) = 0.6220 vs SSq at 9.12 pct EXACT")
+assert_that(_r118['bonus_err_pct'] < 0.2,
+            "PAPER_118: BONUS FIND Om_b/Om_DM = 0.18491 vs SSq^3 = 0.18519 at 0.16 pct (Q-114c candidate identity)")
+assert_that(abs(_r118['honest_cosmic_ratio'] - 0.387) < 0.001,
+            "PAPER_118: honest cosmic Om_DM/Om_L = 0.387 vs SSq fails at 32 pct - conflation pinned (Q-114b)")
+assert_that(C.wired_count() >= 122, "wired_count >= 122")
 
 # =============================================================================
 # REPORT

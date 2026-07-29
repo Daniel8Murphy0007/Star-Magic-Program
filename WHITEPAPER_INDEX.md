@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 121 (11 ✓, 110 ⚠ OPEN_RULING)
+- **Wired:** 122 (11 ✓, 111 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2134
+- **Not yet touched:** 2133
 
 ---
 
@@ -363,7 +363,7 @@
 | ⬜ | PAPER_1188 | UQFF Number Theory Frontier Set |
 | ⬜ | PAPER_1189 | Photoevaporation Compressed HZ Orion UQFF |
 | ⬜ | PAPER_1189 | UQFF Chemistry Atomic Unified Proof Set |
-| ⬜ | PAPER_118 | EP08 JCAP DarkMatter Vacuum Proof |
+| ⚠ | PAPER_118 | EP08 JCAP DarkMatter Vacuum Proof |
 | ⬜ | PAPER_1190 | ALMA Molecular Gas UQFF |
 | ⬜ | PAPER_1190 | UQFF Mathematical Constants Unified Proof Set |
 | ⬜ | PAPER_1191 | GW190425 Mass Gap Bayesian UQFF |

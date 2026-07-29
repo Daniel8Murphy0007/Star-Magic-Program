@@ -659,3 +659,7 @@ primitive,SSQ,observable,ep04_pb206_ladder_n8,S_n/E_8 = 2*SSq
 observable,ep04_pb206_ladder_n8,paper,PAPER_112,ladder continuity
 observable,ep04_z82_offset_family,paper,PAPER_117,offset family
 observable,ep04_z82_offset_family,paper,PAPER_116,EP-03 sibling
+observable,ep08_ssq_cosmic_chain,paper,PAPER_118,cosmic chain
+primitive,SSQ,observable,ep08_ssq_cosmic_chain,9th role candidate
+observable,ep08_omb_omdm_ssq3,paper,PAPER_118,bonus identity
+primitive,SSQ,observable,ep08_omb_omdm_ssq3,SSq^3 candidate

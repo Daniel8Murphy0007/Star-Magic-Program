@@ -1554,3 +1554,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 121/2,255 (11 ✓, 110 ⚠). Next: PAPER_118.
 
 ---
+
+## 2026-07-29 — v0.121.0 — BAND 1: PAPER_118
+
+- PAPER_118 wired (⚠ Q-114): EP-08 DM/vacuum SSq chain. 2x
+  anchor collapses headline (corrected 46 pct fail); clean
+  secondary 0.622 kept; BONUS: Om_b/Om_DM = SSq³ at 0.16 pct
+  candidate identity; unit-direction drift family logged.
+- Campaign: 122/2,255 (11 ✓, 111 ⚠). Next: PAPER_119.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.120.0"
+VERSION = "0.121.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6173,5 +6173,64 @@ def _paper_117(dataset):
         'formula': 'n = log10(E/1e-20); S_n/E_8 = 2*SSq; Z_magic = A_5 + D_crit - D_phys',
         'source': 'PAPER_117',
         'residual_pct': abs(lvl(10 * MeV) - 8.205) / 8.205 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_118')
+def _paper_118(dataset):
+    """EP-08: JCAP DM Density vs Planck Vacuum - SSq Chain (Session 0).
+
+    Claims rho_DM = rho_Lambda * SSq (N=1 hop, 12.8 pct).
+    UNIT-DIRECTION DRIFT FAMILY (Q-114a): rho_crit printed
+    8.53e-10 "J/m3" is the kg/m3 mantissa with a J label
+    (true: 8.53e-27 kg/m3 = 7.68e-10 J/m3) - PAPER_2147
+    pattern. rho_vac = 1.11e-9 J/m3 is 2.09x the standard
+    Lambda conversion (Lambda*c^4/8piG = 5.31e-10 at
+    Lambda = 1.1e-52); the paper's own sec 1.1 computes
+    5.84e-10 then abandons it unexplained. At the true value
+    the N=1 hop gives 3.03e-10 - 46 pct off target, headline
+    FAILS.
+    CONVERSION + CONFLATION (Q-114b): GeV/cm3 column uses
+    1.602e-9 J/m3 per GeV/cm3 (true 1.602e-4 - off 1e5), and
+    conflates LOCAL solar-neighborhood DM (0.35 GeV/cm3 =
+    5.61e-5 J/m3) with COSMIC mean (2.04e-10 J/m3). The honest
+    cosmic statement Om_DM/Om_L = 0.387 vs SSq = 0.57 fails at
+    32 pct.
+    CLEAN SECONDARY (kept): sqrt(Om_DM/Om_L) = 0.6220 vs SSq
+    at 9.12 pct EXACT.
+    BONUS AUDIT FIND (Q-114c): Om_b/Om_DM = 0.049/0.265 =
+    0.18491 vs SSq^3 = 0.18519 at 0.16 pct (Planck h^2 route
+    0.8 pct) - candidate NEW identity the paper's cascade
+    circles without landing.
+    CROSS-REPO (Q-114d): predecessor strong form
+    Om_L = (6/5)*SSq = 0.684 vs Planck 0.685 at 0.15 pct.
+    """
+    import math as _m
+    G = 6.674e-11; c = 3e8
+    rho_L_true = 1.1e-52 * c ** 4 / (8 * _m.pi * G)
+    return {
+        'value': {
+            'domain': '1.15 (EP-08 cosmological SSq)',
+            'source': 'Planck 2018 + JCAP 2024 local DM constraints',
+            'rho_crit_kg_m3': 8.533e-27,
+            'rho_crit_j_m3': 8.533e-27 * c ** 2,           # 7.68e-10 (paper mislabeled)
+            'rho_lambda_true_j_m3': rho_L_true,             # 5.31e-10
+            'rho_vac_paper': 1.11e-9,                       # 2.09x standard
+            'vac_ratio': 1.11e-9 / rho_L_true,              # 2.09
+            'n1_hop_at_true': rho_L_true * SSQ,             # 3.03e-10 - 46 pct off
+            'n1_hop_at_paper': 1.11e-9 * SSQ,               # 6.33e-10 - the 12.8 pct headline
+            'honest_cosmic_ratio': 0.265 / 0.685,           # 0.387 vs SSq fails 32 pct
+            'secondary_sqrt': _m.sqrt(0.265 / 0.685),       # 0.6220 - CLEAN, 9.12 pct
+            'gev_cm3_conversion_defect': 'used 1.602e-9 J/m3 per GeV/cm3; true 1.602e-4 (1e5 off) + local/cosmic conflation',
+            'bonus_omb_omdm': 0.049 / 0.265,                # 0.18491
+            'bonus_ssq_cubed': SSQ ** 3,                    # 0.18519
+            'bonus_err_pct': abs(0.049 / 0.265 - SSQ ** 3) / SSQ ** 3 * 100,  # 0.16
+            'cross_repo_strong_form': '(6/5)*SSq = 0.684 vs Planck Om_L 0.685 at 0.15 pct',
+            'ssq_role': '9th observational-role candidate (cosmological density ratios)',
+        },
+        'formula': 'rho^(N) = rho_L * SSq^N; sqrt(Om_DM/Om_L); Om_b/Om_DM = SSq^3 candidate',
+        'source': 'PAPER_118',
+        'residual_pct': abs(_m.sqrt(0.265 / 0.685) - 0.622) / 0.622 * 100,
         'status': 'OPEN_RULING',
     }

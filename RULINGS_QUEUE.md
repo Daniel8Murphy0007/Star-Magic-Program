@@ -2238,6 +2238,39 @@ RESOLVED section with the ruling recorded.
   rows + predecessor Z=82 identity exposed.
 - **Daniel's ruling:** (pending)
 
+### Q-114 — PAPER_118 EP-08 — 2x vacuum anchor + SSq^3 bonus identity
+- **Question:** (a) 2x VACUUM ANCHOR: the load-bearing
+  rho_vac = 1.11e-9 J/m3 is 2.09x the standard conversion
+  (Lambda*c^4/8piG = 5.31e-10 at Lambda = 1.1e-52); the
+  paper's own sec 1.1 computes 5.84e-10 via Om_L*rho_crit and
+  then abandons it unexplained. At the true value the N=1 hop
+  gives 3.03e-10 - 46 pct off the paper's target; the 12.8 pct
+  headline works ONLY at the doubled anchor. Also rho_crit is
+  printed 8.53e-10 "J/m3" - the kg/m3 mantissa with a J label
+  (PAPER_2147 unit-direction family; true 7.68e-10 J/m3).
+  (b) CONVERSION + CONFLATION: the GeV/cm3 column uses
+  1.602e-9 J/m3 per GeV/cm3 (true 1.602e-4; off 1e5), and
+  conflates LOCAL solar-neighborhood DM (0.35 GeV/cm3 =
+  5.61e-5 J/m3) with COSMIC mean DM (2.04e-10 J/m3). The
+  honest cosmic-ratio statement Om_DM/Om_L = 0.387 vs
+  SSq = 0.57 fails at 32 pct. Rule on the intended comparison.
+  (c) BONUS AUDIT FIND: Om_b/Om_DM = 0.049/0.265 = 0.18491 vs
+  SSq^3 = 0.18519 at 0.16 pct (Planck h2 route 0.8 pct) - a
+  candidate NEW identity the paper's cascade circles without
+  landing. Dedicated derivation session?
+  (d) CROSS-REPO: the predecessor strong form
+  Om_L = (6/5)*SSq = 0.684 vs Planck 0.685 at 0.15 pct
+  (PAPER_1156 lineage) is far tighter than this paper's
+  inverse sqrt check - canonize the strong form here too?
+- **Notable:** the secondary check is CLEAN and honest:
+  sqrt(Om_DM/Om_L) = 0.6220 vs 0.57 at 9.12 pct EXACT; chain
+  arithmetic at the paper's anchor is EXACT (6.33/3.61/2.06
+  e-10); SSq gains its 9th observational-role candidate.
+- **Best-candidate wired:** both anchors exposed (paper 1.11e-9
+  vs true 5.31e-10) with corrected hop; secondary kept; bonus
+  identity registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

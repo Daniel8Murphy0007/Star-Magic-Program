@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.121.0] — 2026-07-29 — BAND 1: PAPER_118 — Ω_b/Ω_DM = SSq³ BONUS FIND
+
+### Added
+- **PAPER_118 dispatch** (EP-08: JCAP DM vs Planck vacuum, SSq
+  chain): the 12.8% N=1 headline rests on rho_vac = 1.11e-9 —
+  2.09x the standard Lambda conversion (true 5.31e-10; the
+  paper's own sec 1.1 computes 5.84e-10 and abandons it).
+  Corrected hop = 3.03e-10, 46% off — fails. rho_crit printed
+  with kg-mantissa/J-label (PAPER_2147 unit-direction family).
+  GeV/cm3 conversion 1e5 off + local/cosmic DM conflation
+  (honest cosmic ratio 0.387 vs SSq fails at 32%). CLEAN
+  secondary kept: sqrt(Om_DM/Om_L) = 0.6220 at 9.12% EXACT.
+  BONUS AUDIT FIND: Om_b/Om_DM = 0.18491 vs SSq³ = 0.18519 at
+  0.16% — candidate NEW identity. Cross-repo: predecessor
+  Om_L = (6/5)·SSq at 0.15% is the strong form. SSq 9th role
+  candidate.
+- OPEN_RULING Q-114.
+- Gate: 830 assertions, 0 failures. Registry: 316 rows / 663 edges / 122 ledgers.
+
+---
+
 ## [0.120.0] — 2026-07-29 — BAND 1: PAPER_117 — Z=82 PRIMITIVE IDENTITY
 
 ### Added

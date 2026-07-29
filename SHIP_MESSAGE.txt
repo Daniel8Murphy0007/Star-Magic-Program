@@ -1,30 +1,30 @@
-v0.120.0 BAND 1: PAPER_117 wired - EP-04 Z=82 PRIMITIVE IDENTITY
+v0.121.0 BAND 1: PAPER_118 wired - EP-08 Om_b/Om_DM = SSq^3 BONUS FIND
 
-PAPER_117 EP-04 ENSDF Pb-206 Nuclear Ladder n=8 (OPEN_RULING
-Q-113):
-  Nuclear rung of the EP ladder: E_8 = 1e-12 J = 6.2415 MeV.
+PAPER_118 EP-08 JCAP Dark Matter vs Planck Vacuum (OPEN_RULING
+Q-114):
+  Claims rho_DM = rho_Lambda * SSq (N=1 hop, 12.8 pct headline).
 
-  VERIFIED EXACT: headline n(10 MeV) = 8.2047; S_n/E_8 =
-  1.1803 vs 2*SSq = 1.14 at 3.5 pct - SSq's 8TH observational-
-  role candidate (nuclear separation-energy ratio).
+  2x VACUUM ANCHOR: rho_vac = 1.11e-9 J/m3 is 2.09x the
+  standard Lambda conversion (5.31e-10 at Lambda = 1.1e-52);
+  the paper's own sec 1.1 computes 5.84e-10 then abandons it.
+  Corrected N=1 hop = 3.03e-10 - 46 pct off, headline FAILS.
+  rho_crit printed with kg-mantissa + J-label (PAPER_2147
+  unit-direction drift family).
 
-  TABLE OFFSET FAMILY: four level-table rows systematically
-  low vs the paper's own formula - 1st excited 7.109 printed
-  as 6.91 (which is EP-02's ELECTRON row - copy-paste), 2nd
-  excited 7.270 printed 7.07, S_n 8.072 printed 7.972, BE
-  10.415 printed 10.215. Three rows -0.2, one -0.1; headline
-  row EXACT. Kin to PAPER_112's mid-band -1.0 defect.
+  CONVERSION + CONFLATION: GeV/cm3 column off by 1e5; local
+  solar-neighborhood DM (5.61e-5 J/m3) conflated with cosmic
+  mean (2.04e-10). Honest cosmic ratio Om_DM/Om_L = 0.387 vs
+  SSq = 0.57 fails at 32 pct.
 
-  Z=82 DECOMPOSITION: the paper's magic-number sub-ladder
-  n-list does not equal log10(Z) - asserted mapping. The
-  predecessor corpus has the EXACT primitive identity
-  Z = A_5 + D_crit - D_phys = 60 + 26 - 4 = 82 (full 7-magic
-  set available). Cross-repo canonization candidate, same
-  shape as Q-110a's d_sw = F_TRZ^2.
+  CLEAN SECONDARY KEPT: sqrt(Om_DM/Om_L) = 0.6220 vs SSq at
+  9.12 pct EXACT.
 
-  BE n = 10.415 extends the hadronic-n=10 confirmation family
-  (Q-108a). 089-footer recurs.
+  BONUS AUDIT FIND: Om_b/Om_DM = 0.049/0.265 = 0.18491 vs
+  SSq^3 = 0.18519 at 0.16 pct - candidate NEW identity the
+  paper's cascade circles without landing. Cross-repo: the
+  predecessor strong form Om_L = (6/5)*SSq = 0.684 vs 0.685
+  at 0.15 pct. SSq 9th observational-role candidate.
 
-Q-113 queued. Gate 824 assertions 0 failures. Registry 314 rows /
-659 edges / 121 citation ledgers. Wired 121/2,255 (11 clean, 110
-OPEN_RULING). Next: PAPER_118.
+Q-114 queued. Gate 830 assertions 0 failures. Registry 316 rows /
+663 edges / 122 citation ledgers. Wired 122/2,255 (11 clean, 111
+OPEN_RULING). Next: PAPER_119.
