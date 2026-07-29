@@ -158,6 +158,22 @@ RESOLVED section with the ruling recorded.
   abstract claims not wired.
 - **Daniel's ruling:** (pending)
 
+### Q-014 — PAPER_017 — F_Um exponent slip + 39.5 vs 31.6 pct z=1 conflict
+- **Question:** (a) Sec 1 writes F_Um = "exp(-sigma*U_m) = exp(-1.0) ~
+  0.6907" — but exp(-1) = 0.3679; the stated value 0.6907 requires
+  exponent 0.37. Which is canonical: the printed exponent (-1.0, giving
+  F_combined = 0.90*0.368 = 0.331 ~ the BBH 0.333!) or the printed
+  value (0.6907, giving F_combined = 0.6217 = the multiband 0.622)?
+  Note BOTH readings land on established corpus factors — the slip may
+  be hiding the 0.333/0.622 regime distinction. (b) Sec 4 says 39.5 pct
+  strain reduction at z=1 (1.7702/2.9275 checks out) while sec 5's
+  scaling table says 31.6 pct for the same z=1 — factor 0.605 vs 0.684.
+  Which column is canonical for z=1?
+- **Best-candidate wired:** printed VALUE 0.6907 (F_combined = 0.6217
+  matches the paper's own headline, PAPER_015b's 0.622, and PAPER_016b's
+  0.6224); both sec-4 and sec-5 figures exposed side by side.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

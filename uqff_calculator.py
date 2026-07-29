@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.17.0"
+VERSION = "0.18.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -816,5 +816,50 @@ def _paper_016b(dataset):
                     'SNR(UQFF)/SNR(GR) = D_cosmo/D_local'),
         'source': 'PAPER_016b',
         'residual_pct': abs(d_local - 0.623) / 0.623 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_017')
+def _paper_017(dataset):
+    """Redshift Corrections (z=1) in UQFF GW Propagation (Session 0).
+
+    ORIGIN OF THE 0.622 FACTOR — this paper decomposes it:
+    F_combined = F_TRZ_factor * F_aether * F_Um
+               = (1 - F_TRZ) * 1.0 * 0.6907 = 0.6217
+    Phase lag at merger composes EXACTLY from the registry:
+    phi_lag = 2*pi * F_TRZ * (t/tau_merge) = 0.6283 rad at t = tau
+    (paper 0.63 rad = 0.10 cycles = F_TRZ cycles).
+    Q-014: paper sec 1 writes F_Um = "exp(-1.0) ~ 0.6907" but
+    exp(-1) = 0.3679; the value 0.6907 requires exponent 0.37. Also
+    sec 4 says 39.5 pct strain reduction at z=1 while sec 5's table
+    says 31.6 pct for the same z=1 row. Both queued.
+    """
+    import math as _m
+    f_trz_factor = 1.0 - F_TRZ                  # 0.90 registry-composed
+    f_aether = 1.0                              # negligible at 6.42 Gpc (d_aether >> D_L)
+    f_um = 0.6907                               # PAPER_017 sec 1 anchor (exponent slip - Q-014)
+    f_combined = f_trz_factor * f_aether * f_um # 0.6216
+    phi_lag = 2.0 * _m.pi * F_TRZ               # 0.6283 rad at t = tau_merge
+    return {
+        'value': {
+            'f_trz_factor': f_trz_factor,
+            'f_um': f_um,
+            'f_combined': f_combined,           # 0.6216 ~ paper 0.6217
+            'phi_lag_merger_rad': phi_lag,      # ~ paper 0.63
+            'phi_lag_cycles': F_TRZ,            # 0.10 cycles EXACT
+            'h_gr_peak': 2.9275e-19,            # PAPER_017 sec 4 anchors
+            'h_uqff_peak': 1.7702e-19,
+            'strain_reduction_sec4_pct': (1.0 - 1.7702 / 2.9275) * 100,   # 39.5
+            'amp_reduction_sec5_z1_pct': 31.6,                            # Q-014 conflict
+            'snr': (205910.0, 128338.0),
+            'snr_ratio': 128338.0 / 205910.0,   # 0.6233
+            'redshift_scaling': {0.5: (2.68, 32.1), 1.0: (6.42, 31.6), 2.0: (17.13, 31.6)},
+            'dl_z1_gpc': 6.42,
+        },
+        'formula': ('F_combined = (1-F_TRZ)*F_aether*F_Um = 0.90*1.0*0.6907 = 0.6217; '
+                    'phi_lag = 2*pi*F_TRZ*t/tau_merge'),
+        'source': 'PAPER_017',
+        'residual_pct': abs(f_combined - 0.6217) / 0.6217 * 100,
         'status': 'OPEN_RULING',
     }

@@ -1,24 +1,24 @@
-v0.17.0 BAND 1: PAPER_016b wired + calculator file-order fix
+v0.18.0 BAND 1: PAPER_017 wired
 
-PAPER_016b White Dwarf Binary Foreground Reduction (OPEN_RULING Q-013):
-  LISA mHz confusion foreground: P_UQFF = D_local^2 * P_GR
-  P_GR = 4.31e-41 -> P_UQFF = 1.67e-41 (61.4 pct reduction)
-  D_local = sqrt(1.67/4.31) = 0.6224 - INDEPENDENTLY re-derives
-  PAPER_015b's cross-band 0.622 (z ~ 0 partial Aether compensation)
-  Resolved catalog 10,000 -> 6,216 = 10,000 x 0.6216 (linear-D, exact)
-  Net LISA SNR: z~1 = 0.619/0.623 = 0.994; z>3 = 0.33/0.62 = 0.53
+PAPER_017 Redshift Corrections (z=1) in UQFF GW Propagation
+(OPEN_RULING Q-014):
+  ORIGIN OF THE 0.622 FACTOR - decomposed at last:
+  F_combined = (1-F_TRZ) * F_aether * F_Um = 0.90 * 1.0 * 0.6907
+             = 0.6217
+  Phase lag at merger = 2*pi*F_TRZ = 0.6283 rad EXACT registry
+  composition (paper 0.63 rad = 0.10 cycles = F_TRZ cycles EXACT)
+  SMBH 1e6 Msun z=1: h 2.9275e-19 -> 1.7702e-19; SNR 205910 -> 128338
+  (ratio 0.6233); flat 31-32 pct reduction z=0.5-2.0 (aether ~ 1
+  out to 17 Gpc - TRZ + U_m dominate, distance-independent)
 
-Q-013 queued: abstract claims LISA sensitivity IMPROVES x1.6 and
-"104 binaries shift ABOVE threshold"; body sections compute net SNR
-0.994 (unchanged) and 3,784 binaries dropping BELOW threshold.
-Body wired (internally consistent + corpus-consistent); abstract not.
-"104" likely exponent mojibake (10^4 family).
+Q-014 queued (double-sided): F_Um printed as "exp(-1.0) ~ 0.6907" but
+exp(-1) = 0.3679. EXPONENT reading gives F_combined = 0.331 ~ BBH
+0.333; VALUE reading gives 0.6217 = multiband 0.622. Both land on
+established corpus factors - the slip may be hiding the 0.333/0.622
+regime distinction. Value reading wired (matches paper headline +
+PAPER_015b + PAPER_016b). Also: sec-4 39.5 pct vs sec-5 31.6 pct at
+the same z=1.
 
-FIXED: calculator file order - PAPER_015/015b/016 dispatches had been
-inserted above the interface (wrong anchor; registration and all
-shipped values unaffected). All 18 dispatches now in strict paper
-sequence. Caught during Daniel's tag-validation stop.
-
-Gate 148 assertions 0 failures. Registry 52 rows / 84 edges / 18
-citation ledgers. Wired 18/2,255 (7 clean, 11 OPEN_RULING).
-Next: PAPER_017 (Redshift Corrections / LISA).
+Gate 154 assertions 0 failures. Registry 55 rows / 91 edges / 19
+citation ledgers. Wired 19/2,255 (7 clean, 12 OPEN_RULING).
+Next: PAPER_018 (Aether Noise LISA).

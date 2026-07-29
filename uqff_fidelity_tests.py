@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.17.0", "uqff_calculator.VERSION = 0.17.0")
+assert_that(C.VERSION == "0.18.0", "uqff_calculator.VERSION = 0.18.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -346,6 +346,19 @@ assert_that(abs(_r016b['resolved_scaling_check'] - _r016b['d_local']) < 0.001,
 assert_that(abs(_r016b['net_snr_ratio_z1'] - 0.994) < 0.001,
             "PAPER_016b: net SNR z~1 = 0.619/0.623 = 0.994 (sec 4.1; Q-013 vs abstract 1.6x)")
 assert_that(C.wired_count() >= 18, "wired_count >= 18")
+
+_r017 = C.calc('PAPER_017')['value']
+assert_that(abs(_r017['f_combined'] - 0.6217) < 0.0005,
+            "PAPER_017: F_combined = (1-F_TRZ)*1.0*0.6907 = 0.6216 ~ paper 0.6217 - ORIGIN of 0.622")
+assert_that(abs(_r017['phi_lag_merger_rad'] - 0.6283185307179586) < 1e-12,
+            "PAPER_017: phi_lag = 2*pi*F_TRZ = 0.6283 rad EXACT registry composition (~paper 0.63)")
+assert_that(abs(_r017['phi_lag_cycles'] - 0.1) < 1e-15,
+            "PAPER_017: phase lag 0.10 cycles = F_TRZ EXACT")
+assert_that(abs(_r017['snr_ratio'] - 0.6233) < 0.001,
+            "PAPER_017: SNR 128338/205910 = 0.6233 ~ 0.622 family")
+assert_that(abs(_r017['strain_reduction_sec4_pct'] - 39.5) < 0.1,
+            "PAPER_017: sec-4 strain reduction 39.5 pct reproduced (vs sec-5 31.6 - Q-014)")
+assert_that(C.wired_count() >= 19, "wired_count >= 19")
 
 # =============================================================================
 # REPORT

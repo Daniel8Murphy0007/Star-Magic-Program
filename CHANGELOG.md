@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.18.0] — 2026-07-29 — BAND 1: PAPER_017
+
+### Added
+- **PAPER_017 dispatch** (Redshift Corrections z=1, LISA): decomposes the
+  ORIGIN of the 0.622 factor — F_combined = (1-F_TRZ)*F_aether*F_Um =
+  0.90*1.0*0.6907 = 0.6217; merger phase lag = 2*pi*F_TRZ = 0.6283 rad
+  EXACT registry composition (= 0.10 cycles = F_TRZ); SNR ratio 0.6233;
+  flat 31-32% reduction z=0.5-2 (aether-negligible regime).
+  OPEN_RULING Q-014: (a) F_Um printed "exp(-1.0) ~ 0.6907" but
+  exp(-1) = 0.368 — remarkably, exponent reading gives F_combined =
+  0.331 ~ the BBH 0.333 while value reading gives 0.622 — the slip may
+  hide the regime split; (b) sec-4 39.5% vs sec-5 31.6% at same z=1.
+- Gate: 154 assertions, 0 failures. Registry: 55 rows / 91 edges / 19 ledgers.
+
+---
+
 ## [0.17.0] — 2026-07-29 — BAND 1: PAPER_016b
 
 ### Added

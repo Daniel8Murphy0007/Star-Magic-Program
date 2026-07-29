@@ -506,3 +506,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 18/2,255 (7 ✓, 11 ⚠). Next: PAPER_017 (Redshift Corrections/LISA).
 
 ---
+
+## 2026-07-29 — v0.18.0 — BAND 1: PAPER_017
+
+- PAPER_017 wired (⚠ Q-014): z=1 LISA corrections. 0.622 factor ORIGIN
+  decomposed: (1-F_TRZ)*F_Um; phase lag 2*pi*F_TRZ EXACT. Q-014's
+  exponent slip is double-sided: both readings land on corpus factors
+  (0.331 ~ BBH 0.333 vs 0.6217 = multiband 0.622).
+- Gate 154/0. Registry 55 rows / 91 edges / 19 ledgers.
+- Campaign: 19/2,255 (7 ✓, 12 ⚠). Next: PAPER_018 (Aether Noise LISA).
+
+---
