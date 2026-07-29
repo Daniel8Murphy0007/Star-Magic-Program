@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.85.0"
+VERSION = "0.86.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4353,5 +4353,52 @@ def _paper_082(dataset):
                     't_UQFF = t_GR*(1-F_TRZ^2)^-4 = 1.041*t_GR'),
         'source': 'PAPER_082',
         'residual_pct': abs(factor - 1.041) / 1.041 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_083')
+def _paper_083(dataset):
+    """Primordial BH Mass Distribution (Session 0).
+
+    Third of the Hawking family. THRESHOLD CONVERGENCE (Q-079a
+    consolidating Q-078a): this paper's formula M_th = M_GR *
+    0.99^(-4/3) has a SIGN-FLIPPED exponent - slower evaporation
+    (t x1.041) LOWERS the surviving-mass threshold; correct
+    physics is 0.99^(+4/3) -> 5.62e11 kg (-1.3 pct), EXACTLY the
+    PAPER_082 chain value. Three printed values now on record:
+    082's -3.5 pct, 083's +0.5 pct, and the double-supported
+    chain -1.3 pct (with the primitive form (1-F_TRZ^2)^(4/3)).
+    Chains VERIFIED: delta_c = 0.45 UNCHANGED (P_vac/P_rad =
+    [UA]*z^-4 = 1e-28 negligible at z_form = 1e6 - [UA] 7th
+    appearance, null); E_peak Wien ratio = 0.99 (1 pct softer
+    gamma peak, inherits the 081 identity); f_PBH arithmetic as
+    printed 1.005*0.96 = 0.9648 (-3.5 pct); with the corrected
+    threshold: 0.9867*0.96 = 0.9472 (-5.3 pct) - both carried
+    (Q-079b). No Fermi-LAT/INTEGRAL/CMB constraint violated
+    (compatibility nulls). Asteroid-window mass exponents
+    mojibaked (literature 1e17-1e22 g; Q-079c).
+    """
+    m_gr = 5.70e11
+    ratio = 1.0 - F_TRZ ** 2                               # 0.99 identity
+    return {
+        'value': {
+            'domain': '1.11 (PBH, third Hawking-family paper)',
+            'delta_c': 0.45,
+            'p_ratio_z1e6': 1.0e-4 * 1.0e-24,              # 1e-28 negligible
+            'm_threshold_gr_kg': m_gr,
+            'm_threshold_printed_kg': 5.73e11,             # +0.5 pct (sign-flipped)
+            'm_threshold_chain_kg': m_gr * ratio ** (4.0 / 3.0),   # 5.62e11 correct
+            'threshold_chain_pct': (ratio ** (4.0 / 3.0) - 1) * 100,   # -1.33
+            'e_peak_ratio': ratio,                          # 0.99 Wien
+            'f_pbh_printed': 1.005 * 0.96,                 # 0.9648
+            'f_pbh_corrected': ratio ** (4.0 / 3.0) * 0.96,    # 0.9472
+            'constraints': 'Fermi-LAT/INTEGRAL/CMB compatible (nulls)',
+            'asteroid_window_g': (1e17, 1e22),             # literature pin
+        },
+        'formula': ('M_th = M_GR*(1-F_TRZ^2)^(4/3) [CORRECT SIGN]; '
+                    'E_peak = 2.82 k_B T_UQFF; f_PBH = f*(M_th ratio)*(T ratio)^4'),
+        'source': 'PAPER_083',
+        'residual_pct': abs(m_gr * ratio ** (4.0 / 3.0) - 5.73e11) / 5.73e11 * 100,
         'status': 'OPEN_RULING',
     }

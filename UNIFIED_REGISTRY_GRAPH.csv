@@ -481,3 +481,8 @@ observable,evaporation_identity,paper,PAPER_082,fourth-power inheritance
 primitive,F_TRZ,observable,evaporation_identity,(1-F_TRZ^2)^-4
 observable,evaporation_identity,paper,PAPER_081,identity parent
 observable,evaporation_chains,paper,PAPER_082,verified chains
+observable,pbh_threshold_convergence,paper,PAPER_083,sign-flip catch
+observable,pbh_threshold_convergence,paper,PAPER_082,chain convergence
+primitive,F_TRZ,observable,pbh_threshold_convergence,(1-F_TRZ^2)^(4/3)
+observable,pbh_nulls_fpbh,paper,PAPER_083,nulls + f_PBH
+observable,pbh_nulls_fpbh,paper,PAPER_081,Wien-ratio inheritance

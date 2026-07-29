@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.85.0", "uqff_calculator.VERSION = 0.85.0")
+assert_that(C.VERSION == "0.86.0", "uqff_calculator.VERSION = 0.86.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1342,6 +1342,19 @@ assert_that(abs(_r082['stellar_t_evap_yr'] - 2.1e70) / 2.1e70 < 0.01,
 assert_that(abs(_r082['threshold_shift_chain_pct'] - (-1.33)) < 0.05,
             "PAPER_082: threshold shift chain -1.3 pct vs printed -3.5 pct - defect pinned (Q-078a)")
 assert_that(C.wired_count() >= 86, "wired_count >= 86")
+
+_r083 = C.calc('PAPER_083')['value']
+assert_that(abs(_r083['m_threshold_chain_kg'] - 5.624e11) / 5.624e11 < 0.001,
+            "PAPER_083: threshold chain 0.99^(4/3) = 5.62e11 kg - sign-flip corrected, CONFIRMS 082 chain (Q-079a)")
+assert_that(abs(_r083['threshold_chain_pct'] - (-1.33)) < 0.02,
+            "PAPER_083: -1.3 pct threshold shift double-supported (082 + 083 chains converge)")
+assert_that(_r083['delta_c'] == 0.45 and _r083['p_ratio_z1e6'] < 1e-27,
+            "PAPER_083: delta_c unchanged - vacuum-pressure null verified ([UA] 7th)")
+assert_that(abs(_r083['f_pbh_printed'] - 0.9648) < 0.0001,
+            "PAPER_083: f_PBH printed arithmetic 1.005*0.96 = 0.9648 verified; corrected 0.9472 carried")
+assert_that(abs(_r083['e_peak_ratio'] - 0.99) < 1e-12,
+            "PAPER_083: E_peak Wien ratio = 1 - F_TRZ^2 (inherits 081 identity)")
+assert_that(C.wired_count() >= 87, "wired_count >= 87")
 
 # =============================================================================
 # REPORT

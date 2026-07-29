@@ -1406,7 +1406,8 @@ RESOLVED section with the ruling recorded.
   (-3.5 pct, 5.7e11 -> 5.5e11 kg) is inconsistent with the
   paper's own x1.041 timescale factor - the cube-root chain
   gives (1/1.041)^(1/3) = 0.9867 -> -1.3 pct (5.62e11 kg). Pin
-  the chain value? (b) The stellar-BH row prints "2.1e? s" but
+  the chain value?
+  [CONVERGENCE: PAPER_083's sign-corrected formula gives the SAME -1.3 pct - see Q-079a.] (b) The stellar-BH row prints "2.1e? s" but
   the mantissa matches 2.1e70 YEARS (= 6.6e77 s by chain) - the
   unit label is the corruption; SgrA*/M87 row exponents remain
   unrecoverable. (c) Confirm M_initial = 1e10 kg for the Test-6
@@ -1419,6 +1420,25 @@ RESOLVED section with the ruling recorded.
   (13.8 Gyr EXACT); 73 kyr = 2.30e12 s conversion EXACT.
 - **Best-candidate wired:** identity + verified chains; defects
   pinned with chain corrections carried.
+- **Daniel's ruling:** (pending)
+
+### Q-079 — PAPER_083 — threshold sign-flip convergence + f_PBH + asteroid window
+- **Question:** (a) CONSOLIDATED THRESHOLD RULING (with Q-078a):
+  PAPER_083's formula M_th = M_GR*0.99^(-4/3) has a SIGN-FLIPPED
+  exponent (slower evaporation LOWERS the surviving threshold);
+  the correct (1-F_TRZ^2)^(+4/3) gives 5.62e11 kg (-1.3 pct) -
+  EXACTLY the PAPER_082 chain. Three printed values now on
+  record: 082's -3.5 pct, 083's +0.5 pct, chain -1.3 pct
+  (double-supported). Pin the chain value + primitive form?
+  (b) f_PBH: printed 1.005*0.96 = 0.9648 (-3.5 pct) vs
+  corrected-threshold 0.9472 (-5.3 pct) - pick follows the
+  threshold ruling. (c) Asteroid-mass window prints "10-5x10-7
+  g"; literature window is 1e17-1e22 g - exponent mojibake pin.
+- **Notable:** delta_c = 0.45 unchanged (1e-28 null chain, [UA]
+  7th appearance); E_peak Wien ratio inherits the 081 identity;
+  all constraint-compatibility nulls wired.
+- **Best-candidate wired:** chain threshold PRIMARY with printed
+  values carried; nulls verified.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

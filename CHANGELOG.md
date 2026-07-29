@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.86.0] — 2026-07-29 — BAND 1: PAPER_083
+
+### Added
+- **PAPER_083 dispatch** (Primordial BHs): threshold SIGN-FLIP
+  caught — the paper's 0.99^(-4/3) exponent is inverted; the
+  correct (1 - F_TRZ^2)^(+4/3) gives 5.62e11 kg (-1.3 pct),
+  EXACTLY the PAPER_082 chain value — the consolidated threshold
+  ruling (Q-078a/Q-079a) is now double-supported with a primitive
+  form. delta_c = 0.45 unchanged (P_vac/P_rad = 1e-28 null; [UA]
+  7th appearance); E_peak Wien ratio inherits the 081 identity;
+  f_PBH printed 0.9648 and corrected 0.9472 both carried;
+  Fermi/INTEGRAL/CMB compatibility nulls wired.
+- OPEN_RULING Q-079.
+- Gate: 614 assertions, 0 failures. Registry: 248 rows / 486 edges / 87 ledgers.
+
+---
+
 ## [0.85.0] — 2026-07-29 — BAND 1: PAPER_082
 
 ### Added

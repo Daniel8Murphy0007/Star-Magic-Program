@@ -1217,3 +1217,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 86/2,255 (10 ✓, 76 ⚠). Next: PAPER_083.
 
 ---
+
+## 2026-07-29 — v0.86.0 — BAND 1: PAPER_083
+
+- PAPER_083 wired (⚠ Q-079): PBHs. Sign-flip caught; -1.3 pct
+  threshold double-supported (082+083 convergence, primitive form
+  (1-F_TRZ^2)^(4/3)); delta_c null; f_PBH both readings carried.
+- Campaign: 87/2,255 (10 ✓, 77 ⚠). Next: PAPER_084.
+
+---
