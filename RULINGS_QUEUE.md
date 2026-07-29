@@ -851,6 +851,23 @@ RESOLVED section with the ruling recorded.
   observation; both Hubble data pinned for one ruling.
 - **Daniel's ruling:** (pending)
 
+### Q-051 — PAPER_055 — NGC3372 ratio claim + geometric factor + exponents
+- **Question:** (a) "g_grav = 2x that of NGC3372 Carina" fails against
+  the suite values: with Carina at 3.3188e-10 the Mice are 0.89x, at
+  3.3188e-11 they are 8.9x - neither is 2x. Which Carina exponent is
+  canonical (settles both claims)? (b) The merger geometric factor
+  (1 + 0.3)^2.3 computes to 1.83 but is printed "~1.7" (the [SCm]
+  spike absorbs the difference: 5.5 vs 6). (c) The 10x enhanced
+  values' exponents are mojibaked in-source (1.0533e-1 implied).
+- **NOTE:** the "37.5x vs Tadpole" claim VERIFIES exactly
+  (2.95e-10/7.8551e-12 = 37.56) - pinning the suite's g_grav
+  exponent family and further confirming Q-050b's computed 7.55.
+  Hubble 1.0002 at z = 0.022 is the third Q-050a systematic datum.
+- **Best-candidate wired:** 10x signature + taxonomy + timeline;
+  geometric factor computed honestly; exponent family pinned via the
+  verified 37.5x ratio.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

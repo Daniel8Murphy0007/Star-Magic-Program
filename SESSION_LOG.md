@@ -940,3 +940,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 58/2,255 (10 ✓, 48 ⚠). Next: PAPER_055.
 
 ---
+
+## 2026-07-29 — v0.58.0 — BAND 1: PAPER_055
+
+- PAPER_055 wired (⚠ Q-051): The Mice. Major-merger 10x signature;
+  minor/major taxonomy established (IFU-falsifiable); 37.5x ratio
+  verifies exactly and pins the suite exponent family.
+- Gate 413/0. Registry 175 rows / 337 edges / 59 ledgers.
+- Campaign: 59/2,255 (10 ✓, 49 ⚠). Next: PAPER_056.
+
+---

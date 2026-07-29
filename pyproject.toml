@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.57.0"
-description = "UQFF Star-Magic-Program v0.57.0: PAPER_054 wired (Tadpole Galaxy: 280-kpc tail = Ug3 torque boost 0.4 + [UA] wake asymmetry, no tuned CDM geometry; g_compressed identified as universal normalization; Hubble-factor column found INVERTED vs redshift - Q-048b upgraded to systematic). Q-050 queued. Wired 58/2255, gate 407/0. Registry 172 rows / 332 edges / 58 ledgers."
+version = "0.58.0"
+description = "UQFF Star-Magic-Program v0.58.0: PAPER_055 wired (The Mice: major-merger 10x compression signature - 1.83 geometric x 5.5 [SCm] spike; merger taxonomy minor/Ug3 vs major/[SCm] IFU-falsifiable; 37.5x-vs-Tadpole VERIFIES exactly pinning suite exponents). Q-051 queued. Wired 59/2255, gate 413/0. Registry 175 rows / 337 edges / 59 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -39,7 +39,7 @@ git commit -F SHIP_MESSAGE.txt
 $headMsg = git log -1 --format=%s
 Write-Host "HEAD: $headMsg"
 if (-not $headMsg.StartsWith($tag)) {
-    Write-Host "WARNING: HEAD subject does not start with $tag - verify commit landed." -ForegroundColor Yellow
+    Write-Error "COMMIT DID NOT LAND - HEAD subject does not start with $tag. Refusing to tag."; exit 1
 }
 
 # --- 7. Tag AFTER commit; verify tag == HEAD ---

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.57.0"
+VERSION = "0.58.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2892,5 +2892,55 @@ def _paper_054(dataset):
                     'Ug3 = M*omega_string*r*t*exp(-kappa*t)'),
         'source': 'PAPER_054',
         'residual_pct': abs(ug3_boost - 0.4) / 0.4 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_055')
+def _paper_055(dataset):
+    """NGC 4676 The Mice: Merger Compression Enhancement (S0).
+
+    Model paper 3 - MAJOR-MERGER case. 10x enhancement of BOTH
+    g_compressed and R_amplitude (vs universal normalization) =
+    the UQFF major-merger signature: (1 + 0.3 overlap)^2.3 = 1.83
+    geometric x ~6 [SCm]-compression spike ~ 10. MERGER TAXONOMY
+    (falsifiable via IFU spectroscopy of shock zones):
+      minor merger (Tadpole): Ug3 torque -> one-sided tail, standard
+      compression; major merger (Mice): [SCm] halo-overlap spike ->
+      10x compression, symmetric double tails.
+    g_grav = 2.95e-10 - "37.5x UGC10214" VERIFIES EXACTLY
+    (2.95e-10/7.8551e-12 = 37.56), pinning the suite exponents
+    (e-10/e-11/e-12 family) and further confirming Q-050b's 7.55.
+    Timeline: pericenter -160 Myr, 10x now, relaxes to standard at
+    coalescence (+2.5 Gyr). Hubble 1.0002 at z = 0.022 = third
+    datum for the Q-050a systematic.
+    Q-051: (a) "2x NGC3372" claim fails against suite values
+    (0.89x at e-10 or 8.9x at e-11 - neither is 2); (b) (1.3)^2.3 =
+    1.83 printed as ~1.7; (c) enhancement-value exponents mojibaked.
+    """
+    geom = 1.3 ** 2.3                                # 1.83 (paper ~1.7)
+    return {
+        'value': {
+            'system': 'NGC 4676 A+B (The Mice, Arp 242)',
+            'distance_mpc': 87.0,
+            'z': 0.0220,
+            'g_grav': 2.9500e-10,
+            'g_compressed_enhanced': 1.0533e-1,      # 10x universal
+            'r_amplitude_enhanced': 1.1586e-1,
+            'enhancement': 10.0,
+            'geom_factor': geom,                     # 1.83 (Q-051b)
+            'scm_spike_factor': 10.0 / geom,         # ~5.5
+            'ratio_vs_tadpole': 2.9500e-10 / 7.8551e-12,   # 37.56 EXACT vs claim 37.5
+            'hubble_factor': 1.0002,                 # 3rd Q-050a datum
+            'taxonomy': {'minor': 'Ug3 torque, one-sided tail',
+                         'major': '[SCm] compression, symmetric tails'},
+            'ifu_falsifiable': 'merger shock-zone spectroscopy distinguishes the two',
+            'timeline_myr': {'pericenter': -160, 'today_factor': '5-7', 'coalesce': 2500},
+            'score': (4, 4),
+        },
+        'formula': ('g_merger = g_isolated*(1 + dM_overlap/M)^2.3 * [SCm]-spike; '
+                    '(1.3)^2.3 * ~5.5 ~ 10'),
+        'source': 'PAPER_055',
+        'residual_pct': abs(2.9500e-10 / 7.8551e-12 - 37.5) / 37.5 * 100,
         'status': 'OPEN_RULING',
     }

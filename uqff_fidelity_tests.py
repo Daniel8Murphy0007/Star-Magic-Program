@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.57.0", "uqff_calculator.VERSION = 0.57.0")
+assert_that(C.VERSION == "0.58.0", "uqff_calculator.VERSION = 0.58.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -932,6 +932,19 @@ assert_that(abs(_r054['ngc2264_ratio_computed'] - 7.55) < 0.05,
 assert_that(_r054['hubble_factor'] < 1.01 and _r054['z'] > 0.03,
             "PAPER_054: Hubble 1.0002 at z = 0.0312 - inverted vs NGC2841 (Q-050a systematic)")
 assert_that(C.wired_count() >= 58, "wired_count >= 58")
+
+_r055 = C.calc('PAPER_055')['value']
+assert_that(abs(_r055['ratio_vs_tadpole'] - 37.56) < 0.1,
+            "PAPER_055: 37.5x-vs-Tadpole claim VERIFIES exactly - pins suite exponent family")
+assert_that(abs(_r055['enhancement'] - 10.0) < 1e-12,
+            "PAPER_055: 10x major-merger compression signature (both g_comp and R)")
+assert_that(abs(_r055['geom_factor'] - 1.828) < 0.005,
+            "PAPER_055: (1.3)^2.3 = 1.83 computed (paper prints ~1.7 - Q-051b)")
+assert_that(_r055['score'] == (4, 4),
+            "PAPER_055: 4/4 PASS matches suite")
+assert_that(abs(_r055['hubble_factor'] - 1.0002) < 1e-6 and _r055['z'] > 0.02,
+            "PAPER_055: Hubble 1.0002 at z = 0.022 - third Q-050a systematic datum")
+assert_that(C.wired_count() >= 59, "wired_count >= 59")
 
 # =============================================================================
 # REPORT

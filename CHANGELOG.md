@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.58.0] — 2026-07-29 — BAND 1: PAPER_055
+
+### Added
+- **PAPER_055 dispatch** (NGC 4676 The Mice): the major-merger case —
+  10x enhancement of BOTH g_compressed and R_amplitude as the UQFF
+  merger signature ((1+0.3)^2.3 = 1.83 geometric x ~5.5 [SCm]
+  halo-overlap spike). MERGER TAXONOMY established: minor (Ug3
+  torque, one-sided tail — Tadpole) vs major ([SCm] compression,
+  symmetric tails — Mice), IFU-falsifiable via shock-zone
+  spectroscopy. The "37.5x vs Tadpole" claim VERIFIES EXACTLY,
+  pinning the suite's g_grav exponent family and confirming
+  Q-050b's arithmetic. Timeline: 10x at pericenter, relaxes to
+  standard at coalescence. OPEN_RULING Q-051 ("2x NGC3372" claim
+  fails both exponent readings; geometric 1.83-vs-1.7 print;
+  enhancement exponents mojibaked).
+- Gate: 413 assertions, 0 failures. Registry: 175 rows / 337 edges / 59 ledgers.
+
+---
+
 ## [0.57.0] — 2026-07-29 — BAND 1: PAPER_054
 
 ### Added

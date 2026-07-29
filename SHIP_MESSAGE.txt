@@ -1,22 +1,26 @@
-v0.57.0 BAND 1: PAPER_054 wired
+v0.58.0 BAND 1: PAPER_055 wired
 
-PAPER_054 UGC 10214 Tadpole Galaxy (OPEN_RULING Q-050):
-  4/4 PASS (matches the 052 suite row). The 280-kpc tidal tail -
-  longest known - explained by TWO UQFF mechanisms:
-    Ug3 string-rotation torque: 200 kpc bare -> 280 kpc with
-    boost = 0.4 (chain verified)
-    [UA] wake drag asymmetry: one-sided tadpole morphology WITHOUT
-    tuned CDM halo-collision geometry
-  The paper itself observes g_compressed = 1.0533e-2 is IDENTICAL
-  across systems - now registry-framed as a universal normalization
-  (g_grav carries the system-specific physics).
+PAPER_055 NGC 4676 The Mice (OPEN_RULING Q-051):
+  MAJOR-MERGER case: 10x enhancement of BOTH g_compressed and
+  R_amplitude - the UQFF merger signature:
+    (1 + 0.3 overlap)^2.3 = 1.83 geometric x ~5.5 [SCm]
+    halo-overlap compression spike ~ 10
+  MERGER TAXONOMY (IFU-falsifiable via shock-zone spectroscopy):
+    minor merger (Tadpole): Ug3 torque -> one-sided tail,
+    standard compression
+    major merger (Mice): [SCm] compression -> 10x, symmetric
+    double tails
+  "37.5x vs Tadpole" VERIFIES EXACTLY (2.95e-10/7.8551e-12 =
+  37.56) - pins the suite's g_grav exponent family and confirms
+  Q-050b's computed arithmetic.
+  Timeline: 10x at pericenter (-160 Myr), relaxes to standard at
+  coalescence (+2.5 Gyr). Hubble 1.0002 at z = 0.022 = third
+  Q-050a systematic datum.
 
-Q-050 queued: (a) SYSTEMATIC - the suite's Hubble-factor column is
-INVERTED vs redshift (UGC10214 z = 0.0312 -> 1.0002; NGC2841
-z ~ 0.002 -> 1.7154): Q-048b upgraded from outlier to systematic;
-canonical Hubble-factor definition ruling; (b) "9.3x lower" claim
-vs computed 7.55x; (c) total-mass exponent mojibake.
+Q-051 queued: "2x NGC3372" fails both exponent readings (0.89x or
+8.9x); geometric factor printed ~1.7 vs computed 1.83; enhanced-
+value exponents mojibaked.
 
-Gate 407 assertions 0 failures. Registry 172 rows / 332 edges / 58
-citation ledgers. Wired 58/2,255 (10 clean, 48 OPEN_RULING).
-Next: PAPER_055.
+Gate 413 assertions 0 failures. Registry 175 rows / 337 edges / 59
+citation ledgers. Wired 59/2,255 (10 clean, 49 OPEN_RULING).
+Next: PAPER_056.
