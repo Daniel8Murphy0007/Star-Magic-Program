@@ -981,3 +981,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 62/2,255 (10 ✓, 52 ⚠). Next: PAPER_059.
 
 ---
+
+## 2026-07-29 — v0.62.0 — BAND 1: PAPER_059 — DOMAIN 1.8 OPENS
+
+- PAPER_059 wired (⚠ Q-055): alpha BEC. Real DOI anchor; chains
+  verified; Q-040b self-rectified (5th) via the clear F_rel = 4.30e33
+  print; E_LEP/Q_wave namespace collisions flagged.
+- Gate 437/0. Registry 187 rows / 358 edges / 63 ledgers.
+- Campaign: 63/2,255 (10 ✓, 53 ⚠). Next: PAPER_060.
+
+---

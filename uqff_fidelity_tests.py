@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.61.0", "uqff_calculator.VERSION = 0.61.0")
+assert_that(C.VERSION == "0.62.0", "uqff_calculator.VERSION = 0.62.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -988,6 +988,21 @@ assert_that(_r058['compression'].startswith('standard'),
 assert_that(_r058['score'] == (4, 4),
             "PAPER_058: 4/4 PASS")
 assert_that(C.wired_count() >= 62, "wired_count >= 62")
+
+_r059 = C.calc('PAPER_059')['value']
+assert_that(_r059['ikeda_channels'] == 10,
+            "PAPER_059: Ikeda diagram 10 channels for Ca-40 (10-alpha conjugate)")
+assert_that(abs(_r059['p_alpha_saturation'] - 0.95) < 1e-12,
+            "PAPER_059: P_alpha saturation = 0.95 (observed 0.85, centrality-avg disclosed)")
+assert_that(abs(_r059['v_heaviest_cm_ns'] - 6.0) < 1e-12,
+            "PAPER_059: fragment velocity chain 8.0*(1-0.25) = 6.0 cm/ns VERIFIED")
+assert_that(abs(_r059['f_rel_resolved_n'] - 4.30e33) < 1e28,
+            "PAPER_059: F_rel = 4.30e33 N printed clearly - RESOLVES Q-040b (5th self-rectification)")
+assert_that(abs(_r059['ns_pasta_force_n'] - (-1.68e6)) / 1.68e6 < 0.01,
+            "PAPER_059: NS nuclear-pasta scaling chain -1.68e6 N verified")
+assert_that(abs(_r059['nuclear_to_astro_scaler'] - 3.5e9) < 1e6,
+            "PAPER_059: nuclear-to-astro scaler (0.7/200)*1e12 = 3.5e9 verified")
+assert_that(C.wired_count() >= 63, "wired_count >= 63")
 
 # =============================================================================
 # REPORT

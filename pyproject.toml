@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.61.0"
-description = "UQFF Star-Magic-Program v0.61.0: PAPER_058 wired (M42: suite-maximum g_grav; COMPLETE 10-system ranking pinned - 4-order span, M42/Tarantula = 1892 verifies; honest negative result: peak energy w/ standard 1x compression; shock bridge to 051 within 3 pct). Q-054 queued (dynamical-mass convention; local Hubble non-monotonicity). Wired 62/2255, gate 431/0. Registry 184 rows / 352 edges / 62 ledgers."
+version = "0.62.0"
+description = "UQFF Star-Magic-Program v0.62.0: PAPER_059 wired (alpha BEC in Ca-40 collisions, real DOI anchor: 10-channel Ikeda; P_alpha saturation 0.95; velocity + NS-pasta chains verified; F_rel = 4.30e33 N printed clearly RESOLVING Q-040b - 5th self-rectification; E_LEP dual-meaning + Q_wave three-way flagged). Q-055 queued. Wired 63/2255, gate 437/0. Registry 187 rows / 358 edges / 63 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

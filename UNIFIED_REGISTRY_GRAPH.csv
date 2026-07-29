@@ -352,3 +352,9 @@ observable,suite_g_grav_ranking,paper,PAPER_057,Carina ratios input
 observable,m42_peak_honest_negative,paper,PAPER_058,primary derivation
 observable,shock_bridge_m42,paper,PAPER_058,primary derivation
 observable,shock_bridge_m42,paper,PAPER_051,arXiv shock cross-link
+observable,alpha_bec_ca40,paper,PAPER_059,primary derivation
+observable,alpha_bec_ca40,paper,PAPER_047,nuclear-sector companion
+observable,f_rel_433_resolution,paper,PAPER_059,clear print
+observable,f_rel_433_resolution,paper,PAPER_042,resolves Q-040b mojibake
+observable,ns_pasta_scaling_bridge,paper,PAPER_059,primary derivation
+primitive,OMEGA_SCM_HZ,observable,f_rel_433_resolution,Q_wave THz factor context

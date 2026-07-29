@@ -1,26 +1,25 @@
-v0.61.0 BAND 1: PAPER_058 wired - COMPLETE SUITE RANKING PINNED
+v0.62.0 BAND 1: PAPER_059 wired - DOMAIN 1.8 OPENS, Q-040b RESOLVED
 
-PAPER_058 M42 Orion Nebula: Suite Maximum (OPEN_RULING Q-054):
-  4/4 PASS. THE COMPLETE 10-SYSTEM RANKING lands - g_grav exponent
-  family settled by verified cross-ratios (2.0/12.5/37.5/1890):
-    M42 6.6376e-10 > Carina 3.3188e-10 > Mice 2.95e-10 >
-    MysticMtn 1.3275e-10 > NGC2264 5.9336e-11 > NGC2841 5.3101e-11
-    > AGCar 2.6550e-11 > Tadpole 7.8551e-12 > RedSpider 1.3275e-12
-    > Tarantula 3.5099e-13
-  Four orders of magnitude, zero per-system free parameters.
-  M42/Tarantula = 1892 VERIFIES the 1890x claim (pins Tarantula).
-  Trapezium's four stars mapped to the four Ug components.
-  HONEST NEGATIVE RESULT: standard 1x compression at PEAK energy -
-  "most energetic is not most compressed"; enhancement is reserved
-  for ACTIVE processes (mergers, fast winds).
-  Shock bridge: v = v_Alfven*(1 + Ug1/g)^0.5 = 48-50 km/s matches
-  the PAPER_051 arXiv shock validations within 3 pct.
+PAPER_059 Alpha BEC in Heavy-Ion Collisions (OPEN_RULING Q-055):
+  Domain 1.8 opens on a REAL experimental anchor: Schmidt et al.
+  2016 (DOI:10.1393/ncc/i2016-16394-6), Ca-40+Ca-40 at 35 MeV/u,
+  TAMU NIMROD-ISiS.
+  Ikeda diagram: 10 channels (Ca-40 = 10x4 max alpha-conjugate)
+  P_alpha = 0.10 + 0.85*(E*-1)/8 - saturation 0.95 vs observed
+  0.85 (centrality averaging, disclosed)
+  Fragment velocity chain VERIFIED: 8.0*(1-0.25) = 6.0 cm/ns
+  Negative F_UBii = -4.77e6 N stabilizes the alpha BEC (T ~ 5 MeV)
+  NS scaling chain VERIFIED: -4.8e6*3.5e9*1e-10 = -1.68e6 N -
+  lab alpha clustering bridged to neutron-star nuclear pasta
 
-Q-054 queued: local-dynamical-mass g_grav reading now in THREE
-papers (054/057/058) - canonize as family convention?; Hubble
-1.0002 at 410 pc vs 1.0000 at 1.5 kpc - locally non-monotonic
-(joins the Q-050a definition ruling).
+SELF-RECTIFICATION (5th instance): F_rel = 4.30e33 N (LEP 1998)
+printed CLEARLY - resolves PAPER_042's mojibaked exponent (Q-040b).
 
-Gate 431 assertions 0 failures. Registry 184 rows / 352 edges / 62
-citation ledgers. Wired 62/2,255 (10 clean, 52 OPEN_RULING).
-Next: PAPER_059.
+Q-055 queued: E_LEP symbol collision (1.22e-19 J FUBii family vs
+200 GeV LEP beam here - 30 orders); Q_wave three-way namespace
+(1.0 / 1e-6 / 1e12); F_UBii g_local input underdetermined (factor
+~1.8 open); centrality-averaging reading.
+
+Gate 437 assertions 0 failures. Registry 187 rows / 358 edges / 63
+citation ledgers. Wired 63/2,255 (10 clean, 53 OPEN_RULING).
+Next: PAPER_060.

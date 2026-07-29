@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.61.0"
+VERSION = "0.62.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3095,5 +3095,60 @@ def _paper_058(dataset):
                     'v_shock = v_Alfven*(1 + Ug1/g_grav)^0.5'),
         'source': 'PAPER_058',
         'residual_pct': abs(ranking['m42'] / ranking['tarantula'] - 1890.0) / 1890.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_059')
+def _paper_059(dataset):
+    """Alpha BEC in Heavy-Ion Collisions (Session 0).
+
+    Domain 1.8 opens with a REAL experimental anchor: Schmidt et al.
+    2016 (DOI:10.1393/ncc/i2016-16394-6), Ca-40+Ca-40 at 35 MeV/u,
+    NIMROD-ISiS. Ikeda diagram: 10 channels for Ca-40 -> 10-alpha
+    (40 = 10x4 max conjugate). P_alpha = 0.10 + 0.85*(E*-1)/8:
+    saturation 0.95 vs observed ~0.85 (centrality averaging,
+    disclosed). Fragment velocity chain VERIFIED: 8.0*(1-0.5*0.5) =
+    6.0 cm/ns. Negative F_U_Bi_i = -4,766,771 N stabilizes the
+    alpha-BEC against thermal disassembly (T_BEC ~ 5 MeV); NS
+    scaling chain -4.8e6*3.5e9*1e-10 = -1.68e6 N links lab
+    clustering to nuclear-pasta stabilization.
+    SELF-RECTIFICATION (5th): F_rel = 4.30e33 N (LEP 1998) printed
+    CLEARLY here - resolving PAPER_042's mojibaked exponent
+    (Q-040b). BUT: E_LEP here = 200 GeV (LEP beam energy), a SECOND
+    E_LEP meaning vs the FUBii family's 1.22e-19 J - 30-order
+    symbol collision; Q_wave gains a third value (1e12 THz factor
+    vs 1.0 / 1e-6).
+    Q-055: (a) E_LEP dual meaning; (b) Q_wave namespace three-way;
+    (c) F_UBii chain g_local input underdetermined (order verified,
+    factor ~1.8 open); (d) centrality-averaging reading of the
+    0.95-vs-0.85 gap.
+    """
+    p_alpha = lambda e_star: 0.10 + 0.85 * (e_star - 1.0) / 8.0
+    v_frag = 8.0 * (1.0 - 0.5 * 20.0 / 40.0)         # 6.0 VERIFIED
+    ns_scale = -4.8e6 * 3.5e9 * 1.0e-10              # -1.68e6 VERIFIED
+    return {
+        'value': {
+            'system': 'Ca-40 + Ca-40 at 35 MeV/nucleon (NIMROD-ISiS)',
+            'doi': '10.1393/ncc/i2016-16394-6',
+            'ikeda_channels': 10,
+            'p_alpha_mid': p_alpha(5.0),             # 0.525
+            'p_alpha_saturation': p_alpha(9.0),      # 0.95
+            'p_alpha_observed': 0.85,
+            'v_heaviest_cm_ns': v_frag,              # 6.0 VERIFIED
+            'f_ubii_n': -4766771.0,
+            'f_rel_resolved_n': 4.30e33,             # RESOLVES Q-040b (5th self-rect)
+            'e_lep_here_gev': 200.0,                 # Q-055a collision w/ 1.22e-19 J
+            'q_wave_here': 1.0e12,                   # Q-055b third value
+            't_bec_mev': 5.0,
+            'nuclear_to_astro_scaler': (0.700 / 200.0) * 1.0e12,   # 3.5e9
+            'ns_pasta_force_n': ns_scale,            # -1.68e6 chain verified
+            'lowest_channel': ('alpha + Ar-36', 15.67),
+            'highest_channel': ('9alpha + 4n', 95.63),
+        },
+        'formula': ('P_alpha = 0.10 + 0.85*(E*-1)/8; v_frag = v_beam*(1 - 0.5*A/A_proj); '
+                    'F_UBii = -F_rel*(E_cm/E_LEP)*Q_wave*g_local/1e30'),
+        'source': 'PAPER_059',
+        'residual_pct': abs(v_frag - 6.0) / 6.0 * 100,
         'status': 'OPEN_RULING',
     }

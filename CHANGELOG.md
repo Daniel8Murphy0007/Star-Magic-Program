@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.62.0] — 2026-07-29 — BAND 1: PAPER_059 — DOMAIN 1.8 OPENS
+
+### Added
+- **PAPER_059 dispatch** (Alpha BEC in Heavy-Ion Collisions): Domain
+  1.8 opens on a REAL experimental anchor (Schmidt et al. 2016,
+  DOI:10.1393/ncc/i2016-16394-6, NIMROD-ISiS). Ca-40 10-channel
+  Ikeda diagram; P_alpha = 0.10+0.85*(E*-1)/8 with 0.95 saturation
+  vs 0.85 observed (centrality averaging disclosed); fragment
+  velocity chain 6.0 cm/ns VERIFIED; negative F_UBii = -4.77e6 N
+  stabilizes the alpha BEC (T ~ 5 MeV); NS nuclear-pasta scaling
+  chain -1.68e6 N verified — lab clustering bridged to NS crusts.
+- **SELF-RECTIFICATION (5th):** F_rel = 4.30e33 N (LEP 1998)
+  printed clearly, resolving PAPER_042's mojibaked exponent (Q-040b).
+- OPEN_RULING Q-055 (E_LEP dual meaning 1.22e-19 J vs 200 GeV —
+  30-order symbol collision; Q_wave three-way namespace 1/1e-6/1e12;
+  g_local input underdetermined; centrality-averaging reading).
+- Gate: 437 assertions, 0 failures. Registry: 187 rows / 358 edges / 63 ledgers.
+
+---
+
 ## [0.61.0] — 2026-07-29 — BAND 1: PAPER_058
 
 ### Added

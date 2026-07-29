@@ -635,7 +635,8 @@ RESOLVED section with the ruling recorded.
   while the 61-order Planck->Hubble span over 25 steps implies 2.44
   orders/layer - three-way conflict on the framework's central scale
   ladder. Which is canonical? (b) F_rel is printed "4.30e? N (LEP
-  1998)" with the exponent mojibaked, the in-text derivation abandoned
+  1998)" with the exponent mojibaked,
+  [RESOLVED by PAPER_059: F_rel = 4.30e33 N printed clearly - see Q-055.] the in-text derivation abandoned
   mid-chain (7th consecutive Session-0 self-correction: first chain
   gives 5.25e7 N, then pivots to a Planck-force ansatz that does not
   numerically close), and it differs from the FUBii family F_rel =
@@ -919,6 +920,26 @@ RESOLVED section with the ruling recorded.
   in-paper 1890x claim, fixing Tarantula at 3.5099e-13.
 - **Best-candidate wired:** ranking + honest negative result +
   shock bridge; all cross-ratios verified.
+- **Daniel's ruling:** (pending)
+
+### Q-055 — PAPER_059 — E_LEP dual meaning + Q_wave three-way + g_local input
+- **Question:** (a) E_LEP symbol collision: the FUBii family uses
+  E_LEP = 1.22e-19 J (~0.76 eV "lepton energy scale") while this
+  paper uses E_LEP = 200 GeV (the LEP collider beam energy) - same
+  symbol, 30 orders apart. Rename one in the registry? (b) Q_wave
+  now carries THREE values across the corpus: 1.0 (FUBii ground
+  state), ~1e-6 (thermalized ICM, 036), and 1e12 (THz resonance
+  factor here) - namespace/semantics ruling. (c) The F_UBii chain's
+  g_local input is underdetermined (chain verifies to order with
+  GM/r^2 at fm scale but the printed -4,766,771 N needs a factor
+  ~1.8 pinned). (d) P_alpha saturation 0.95 vs observed 0.85
+  attributed to centrality averaging - accept the reading?
+- **SELF-RECTIFICATION (5th instance):** F_rel = 4.30e33 N
+  (LEP 1998) is printed clearly here, RESOLVING PAPER_042's
+  mojibaked "4.30e? N" (Q-040b annotated).
+- **Best-candidate wired:** Ikeda 10 channels + P_alpha formula +
+  velocity and NS-scaling chains verified; real-DOI experimental
+  anchor recorded.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
