@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.6.0"
-description = "UQFF Star-Magic-Program v0.6.0: PAPER_007 wired (BNS tidal deformability: Lambda=(2/3)k2(R/M)^5 ~400 typical NS; f_SCm(B)=1-exp[-(B_crit/B)] threshold suppression; mass-gap NS/BH discriminator Lambda 16 vs 0). Q-007 queued (mojibake exponents). Corrects prior claim that PAPER_007 was absent - it exists and is now wired in sequence. Wired 7/2255, gate 88/0. Registry 23 rows / 32 edges / 7 ledgers."
+version = "0.7.0"
+description = "UQFF Star-Magic-Program v0.7.0: PAPER_008 wired (waveform phase evolution + template mismatch: P_UQFF = D_total^2*P_GR, tau 9.0x extension, phase lag ~8x phi_GR, full-inspiral 2310.8 rad cross-checks PAPER_006). Q-008 queued (power convention linear-F vs D^2 between PAPER_005/008). Wired 8/2255, gate 94/0. Registry 25 rows / 35 edges / 8 ledgers. Campaign per CLAUDE.md."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

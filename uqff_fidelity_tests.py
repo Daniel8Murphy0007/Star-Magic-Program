@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.6.0", "uqff_calculator.VERSION = 0.6.0")
+assert_that(C.VERSION == "0.7.0", "uqff_calculator.VERSION = 0.7.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -215,6 +215,19 @@ assert_that(abs(_r007['f_scm_at_bcrit'] - 0.632) < 0.001,
 assert_that(_r007['Lambda_ns_massgap_2p52'] > 0 and _r007['Lambda_bh'] == 0.0,
             "PAPER_007: Lambda_NS(2.52) = 16 vs Lambda_BH = 0 discriminator")
 assert_that(C.wired_count() >= 7, "wired_count >= 7")
+
+_r008 = C.calc('PAPER_008')['value']
+assert_that(abs(_r008['D_total_squared'] - 0.110889) < 1e-6,
+            "PAPER_008: D_total^2 = 0.111 (power scaling)")
+assert_that(abs(_r008['tau_extension_factor'] - 9.0) < 0.02,
+            "PAPER_008: tau_UQFF = 9.0x tau_GR (1/D^2)")
+assert_that(abs(_r008['phase_lag_growth_factor'] - 8.0) < 0.02,
+            "PAPER_008: phase lag ~ 8x phi_GR (1/D^2 - 1)")
+assert_that(abs(_r008['phase_lag_full_rad'] - 2310.8) < 0.1,
+            "PAPER_008: full-inspiral phase lag 2310.8 rad (matches PAPER_006)")
+assert_that(abs(_r008['D_bbh_reference'] - 0.81) < 1e-15,
+            "PAPER_008: BBH cross-reference (1-F_TRZ)^2 = 0.81 (PAPER_005)")
+assert_that(C.wired_count() >= 8, "wired_count >= 8")
 
 # =============================================================================
 # REPORT

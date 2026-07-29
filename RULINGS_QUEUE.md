@@ -69,6 +69,16 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** f_SCm(B) = 1 - exp[-(B_crit/B)] linear, B_crit = 4.4e13
 - **Daniel's ruling:** (pending)
 
+### Q-008 — PAPER_008 vs PAPER_005 — power/timescale scaling convention
+- **Question:** PAPER_005 scales P linearly (P_UQFF = 0.81*P_GR = F*P_GR) and
+  tau by 1/F (1.23x). PAPER_008 scales P by D^2 (P_UQFF = 0.111*P_GR) and tau
+  by 1/D^2 (9.0x). Both cannot be the universal convention. Is power scaled by
+  the damping factor linearly (PAPER_005) or squared (PAPER_008)? (Note: strain
+  h scales linearly by D in all papers; P ~ h^2 would argue for D^2.)
+- **Best-candidate wired:** per-paper as stated; PAPER_008's D^2 convention is
+  physically consistent with P ~ h^2
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

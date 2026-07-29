@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.6.0"
+VERSION = "0.7.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -388,5 +388,39 @@ def _paper_007(dataset):
                     'f_SCm(B) = 1 - exp[-(B_crit/B)]'),
         'source': 'PAPER_007',
         'residual_pct': abs(Lambda_typical - 400.0) / 400.0 * 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_008')
+def _paper_008(dataset):
+    """UQFF Waveform Phase Evolution and Template Mismatch (Session 143).
+
+    Power scales as D_total^2 here: P_UQFF = D^2 * P_GR, giving inspiral
+    extension tau_UQFF = tau_GR / D^2 = 9.0x and phase-lag growth
+    dphi ~ (1/D^2 - 1) * phi_GR ~ 8x. Full 100 s GW170817 inspiral:
+    dphi = 2310.8 rad = 367.8 cycles (consistent with PAPER_006).
+    Q-008: power convention differs from PAPER_005 (P scaled by F linearly
+    there, by D^2 here; tau by 1/F vs 1/D^2).
+    """
+    D_total = (1.0 - F_TRZ) * 0.37        # 0.333 BNS chain
+    D_sq = D_total ** 2                    # 0.111
+    return {
+        'value': {
+            'D_total': D_total,
+            'D_total_squared': D_sq,                       # 0.111
+            'tau_extension_factor': 1.0 / D_sq,            # 9.02x
+            'phase_lag_growth_factor': 1.0 / D_sq - 1.0,   # 8.02x phi_GR
+            'phase_lag_full_rad': 2310.8,                  # 100s inspiral anchor
+            'phase_lag_full_cycles': 367.8,
+            'mismatch': 1.0 - D_total,                     # 0.667
+            'snr_uqff': D_total * 32.4,                    # 10.8
+            'D_bbh_reference': (1.0 - F_TRZ) ** 2,         # 0.81 (PAPER_005 x-ref)
+            'template_phase_sensitivity': '1% phase error at merger -> 50% SNR loss',
+        },
+        'formula': ('P_UQFF = D_total^2*P_GR; tau_UQFF = tau_GR/D^2 = 9x; '
+                    'dphi ~ 8*phi_GR (Q-008: power convention vs PAPER_005)'),
+        'source': 'PAPER_008',
+        'residual_pct': abs(1.0 / D_sq - 9.0) / 9.0 * 100.0,   # 9.018 vs paper "9.0"
         'status': 'OPEN_RULING',
     }

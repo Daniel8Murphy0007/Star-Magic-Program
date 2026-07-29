@@ -390,3 +390,14 @@ The error came from misreading a predecessor-calculator audit list. Papers
 Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 
 ---
+
+## 2026-07-29 — v0.7.0 — BAND 1: PAPER_008
+
+- PAPER_008 wired (⚠ Q-008): P = D_total^2 * P_GR convention, tau 9.0x,
+  phase lag ~8x, 2310.8 rad full-inspiral anchor consistent with PAPER_006.
+- Q-008: PAPER_005 (linear F) vs PAPER_008 (D^2) power-scaling convention
+  conflict — D^2 argued physically consistent with P ~ h^2.
+- Gate 94/0. Registry 25 rows / 35 edges / 8 citation ledgers.
+- Campaign: 8/2,255 wired (2 ✓, 6 ⚠). Next: PAPER_009.
+
+---

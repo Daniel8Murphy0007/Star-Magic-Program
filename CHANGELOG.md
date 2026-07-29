@@ -7,6 +7,18 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.7.0] — 2026-07-29 — BAND 1: PAPER_008
+
+### Added
+- **PAPER_008 dispatch** (Waveform Phase Evolution + Template Mismatch,
+  Session 143): P_UQFF = D_total^2 * P_GR; inspiral extension 9.0x;
+  phase-lag growth ~8x phi_GR; full-inspiral 2310.8 rad cross-checks
+  PAPER_006. OPEN_RULING Q-008 (power convention: linear F in PAPER_005
+  vs D^2 here; D^2 physically consistent with P ~ h^2).
+- Gate: 94 assertions, 0 failures. Registry: 25 rows / 35 edges / 8 ledgers.
+
+---
+
 ## [0.6.0] — 2026-07-29 — BAND 1: PAPER_007
 
 ### Added

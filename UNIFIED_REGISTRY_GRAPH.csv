@@ -31,3 +31,6 @@ primitive,B_CRIT,observable,bns_f_scm_suppression,f_SCm(B) threshold at B_crit
 observable,bns_tidal_deformability_lambda,paper,PAPER_007,primary derivation
 observable,bns_f_scm_suppression,paper,PAPER_007,primary derivation
 observable,massgap_ns_bh_discriminator,paper,PAPER_007,primary derivation
+primitive,F_TRZ,observable,gw_phase_lag_growth,D_total = (1-F_TRZ)*0.37
+observable,gw_phase_lag_growth,paper,PAPER_008,primary derivation
+observable,gw_tau_extension_d_squared,paper,PAPER_008,primary derivation
