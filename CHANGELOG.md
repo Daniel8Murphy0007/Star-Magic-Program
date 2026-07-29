@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.42.0] — 2026-07-29 — BAND 1: PAPER_039 — FUBii FAMILY COMPLETE
+
+### Added
+- **PAPER_039 dispatch** (FUBii ICM Applications, variants 12-17):
+  closes the charter-authorized 17-variant family (036-039). THREE
+  chains VERIFIED end-to-end: hawk 5-Msun BH at 30 km = -2.452 N —
+  Hawking radiation manifesting as a LABORATORY-SCALE inward buoyancy
+  (weight of ~250 g), the family's most striking number; bd LQC bounce
+  residual 0.0336 N through 60 e-folds (consistent with no CMB
+  pre-inflationary signal); lobe Cygnus A = 5.1e61 N. ent: S^3
+  entanglement scaling with the Page curve as an F_UBii SIGN REVERSAL
+  (information recovery = force direction change). OPEN_RULING Q-037
+  (roche step-line e54 = chain-true vs boxed/validator e55, 10x
+  pinned; dec 1e6 intermediate slip; 6th consecutive in-text
+  self-correction; summary-table exponent mojibake).
+- **FUBii family closure:** all 17 variants wired across 4 papers,
+  self-consistent on F_UBii = F_U - F_Bi - F_i with F_rel/E_LEP
+  normalization.
+- Gate: 316 assertions, 0 failures. Registry: 127 rows / 246 edges / 43 ledgers.
+
+---
+
 ## [0.41.0] — 2026-07-29 — BAND 1: PAPER_038
 
 ### Added

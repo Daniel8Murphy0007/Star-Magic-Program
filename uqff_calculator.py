@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.41.0"
+VERSION = "0.42.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2042,5 +2042,61 @@ def _paper_038(dataset):
                     'sfe: eps^1.5*M*c^2/(r^2*E_LEP)'),
         'source': 'PAPER_038',
         'residual_pct': abs(fermi - 0.82) / 0.82 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_039')
+def _paper_039(dataset):
+    """F_UBii Buoyancy Variants 12-17: ICM Applications (S0).
+
+    CLOSES THE 17-VARIANT FAMILY (036-039). Variants: hawk, bd,
+    roche, ent, dec, lobe.
+    THREE VERIFIED END-TO-END: hawk 5-Msun BH at 30 km = -2.452 N
+    (Hawking radiation as a LABORATORY-SCALE inward buoyancy - the
+    family's most striking number); bd LQC bounce = 0.0336 N residual
+    through 60 e-folds (consistent with no CMB pre-inflationary
+    signal); lobe Cygnus A = 5.1e61 N (chain exact from stated
+    inputs). ent: S^3 entanglement scaling with Page curve = F_UBii
+    SIGN REVERSAL (information recovery as force direction change).
+    Q-037: (a) roche Cygnus X-2 internal conflict - step line 1.964e54
+    (= chain-true 1.965e54) vs boxed/validator 1.964e55 (10x);
+    (b) dec molecule intermediate printed 8636 vs computed 8.65e-3
+    (1e6); (c) hawk contains the 6th consecutive in-text
+    self-correction (first attempt 8.065e50 abandoned, corrected
+    chain verifies); (d) V_lobe = (50 kpc)^3 = 3.7e63 m^3 vs used
+    3.7e62; summary-table exponents mojibake throughout.
+    """
+    import math as _m
+    hbar, kb, g_n, e_lep, f_rel = 1.055e-34, 1.381e-23, 6.674e-11, 1.22e-19, 1.0e-10
+    m_bh = 9.945e30
+    r_s = 2 * g_n * m_bh / 9.0e16
+    temp_factor = (hbar * 2.7e25) / (8 * _m.pi * g_n * m_bh * kb * e_lep)
+    hawk = -f_rel * temp_factor * (r_s / 3.0e4) ** 2                 # -2.45 N VERIFIED
+    bd = f_rel * 0.41 * (1.0e43 ** 2 / e_lep) * (1.0e-32) ** 3       # 0.0336 N VERIFIED
+    lobe = f_rel * (1.0e-11 * 3.7e62 / e_lep) * 1.0e4 * (5.0e5 / 3.0e8)   # 5.06e61 VERIFIED
+    roche_chain = f_rel * (g_n * 1.193e30 * 3.580e30 / ((1.5e9)**2 * e_lep)) * 1.893e13
+    return {
+        'value': {
+            'variants': ('hawk', 'bd', 'roche', 'ent', 'dec', 'lobe'),
+            'family_complete': 17,
+            'hawk_5msun_n': hawk,                    # -2.45 VERIFIED (lab-scale!)
+            'hawk_paper_n': -2.452,
+            'hawk_equivalent_kg': abs(hawk) / 9.81,  # ~0.25 kg weight
+            'bd_bounce_n': bd,                       # 0.0336 VERIFIED
+            'lobe_cyga_n': lobe,                     # 5.06e61 VERIFIED
+            'roche_chain_n': roche_chain,            # 1.965e54 (Q-037a)
+            'roche_boxed_n': 1.964e55,
+            'ent_scaling': 'S_BH^3; Page curve = F_UBii sign reversal',
+            'dec_scaling': 'exp(-t/tau_dec) quantum-to-classical force diminution',
+            'dec_molecule_paper_n': 8.6e-10,         # Q-037b (1e6 intermediate slip)
+            'rho_bounce_over_planck': 0.41,          # LQC quantum-geometry factor
+        },
+        'formula': ('hawk: -F_rel*(hbar*c^3/(8pi*G*M*k_B*E_LEP))*(r_s/r)^2; '
+                    'bd: F_rel*(rho/rho_P)*(H^2/E_LEP)*(a_b/a)^3; '
+                    'roche: F_rel*(G*M1*M2/(R_L^2*E_LEP))*dM/dt; '
+                    'lobe: F_rel*(PV/E_LEP)*(rho_ICM/rho_lobe)*(v/c)'),
+        'source': 'PAPER_039',
+        'residual_pct': abs(hawk - (-2.452)) / 2.452 * 100,
         'status': 'OPEN_RULING',
     }

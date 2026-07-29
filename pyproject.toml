@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.41.0"
-description = "UQFF Star-Magic-Program v0.41.0: PAPER_038 wired (FUBii quantum series 7-11: fermi 0.82 N and whim 7.4e-13 N VERIFIED end-to-end; CR knee at 3e15 eV as F_UBii stationary point linking to PAPER_020; ps Planck-mass quantum-gravity anchor; sfe Bekenstein-like area law). Q-036 queued (kne log slip; ps 1000x; sfe 10x). Wired 42/2255, gate 309/0. Registry 124 rows / 240 edges / 42 ledgers."
+version = "0.42.0"
+description = "UQFF Star-Magic-Program v0.42.0: PAPER_039 wired - FUBii 17-VARIANT FAMILY COMPLETE (036-039). hawk 5-Msun BH = -2.452 N VERIFIED (Hawking radiation at laboratory scale); LQC bounce 0.0336 N; Cygnus A lobe 5.1e61 N; ent Page curve = F_UBii sign reversal. Q-037 queued (roche 10x internal conflict). Wired 43/2255, gate 316/0. Registry 127 rows / 246 edges / 43 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.41.0", "uqff_calculator.VERSION = 0.41.0")
+assert_that(C.VERSION == "0.42.0", "uqff_calculator.VERSION = 0.42.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -696,6 +696,21 @@ assert_that(abs(_r038['ps_mw_paper_n'] / _r038['ps_mw_chain_n'] - 1000.0) < 50.0
 assert_that(abs(_r038['sfe_orion_paper_n'] / _r038['sfe_orion_chain_n'] - 10.0) < 0.5,
             "PAPER_038: sfe Orion paper value is 10x the chain value (Q-036c quantified)")
 assert_that(C.wired_count() >= 42, "wired_count >= 42")
+
+_r039 = C.calc('PAPER_039')['value']
+assert_that(abs(_r039['hawk_5msun_n'] - (-2.452)) < 0.02,
+            "PAPER_039: hawk 5-Msun BH = -2.45 N VERIFIED - Hawking radiation as lab-scale buoyancy")
+assert_that(abs(_r039['bd_bounce_n'] - 0.0336) < 0.001,
+            "PAPER_039: LQC bounce residual = 0.0336 N VERIFIED (60 e-folds propagated)")
+assert_that(abs(_r039['lobe_cyga_n'] - 5.06e61) / 5.06e61 < 0.01,
+            "PAPER_039: Cygnus A lobe = 5.06e61 N VERIFIED (chain exact)")
+assert_that(abs(_r039['roche_boxed_n'] / _r039['roche_chain_n'] - 10.0) < 0.5,
+            "PAPER_039: roche boxed value is 10x the chain value (Q-037a pinned)")
+assert_that(_r039['family_complete'] == 17,
+            "PAPER_039: 17-variant F_UBii family COMPLETE (036-039)")
+assert_that(abs(_r039['rho_bounce_over_planck'] - 0.41) < 1e-12,
+            "PAPER_039: LQC rho_bounce/rho_Planck = 0.41 quantum-geometry anchor")
+assert_that(C.wired_count() >= 43, "wired_count >= 43")
 
 # =============================================================================
 # REPORT

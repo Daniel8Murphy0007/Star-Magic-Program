@@ -769,3 +769,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
   — closes the FUBii family).
 
 ---
+
+## 2026-07-29 — v0.42.0 — BAND 1: PAPER_039 — FUBii FAMILY COMPLETE
+
+- PAPER_039 wired (⚠ Q-037): FUBii ICM series closes the 17-variant
+  family. hawk/bd/lobe verified; roche 10x internal conflict pinned;
+  Page-curve-as-sign-reversal preserved as the family's headline
+  information-theoretic prediction.
+- Gate 316/0. Registry 127 rows / 246 edges / 43 ledgers.
+- Campaign: 43/2,255 (8 ✓, 35 ⚠). Next: PAPER_040.
+
+---

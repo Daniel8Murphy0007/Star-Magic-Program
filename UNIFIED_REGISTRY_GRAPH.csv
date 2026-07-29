@@ -239,3 +239,9 @@ observable,cr_knee_stationary_point,paper,PAPER_038,primary derivation
 observable,cr_knee_stationary_point,paper,PAPER_020,CR-sector cross-link
 observable,fubii_ps_sfe_variants,paper,PAPER_038,primary derivation
 observable,fubii_ps_sfe_variants,paper,PAPER_036,family base identity
+observable,fubii_hawk_lab_scale,paper,PAPER_039,primary derivation
+observable,fubii_bd_lobe_verified,paper,PAPER_039,primary derivation
+observable,fubii_family_closure,paper,PAPER_039,family closure
+observable,fubii_family_closure,paper,PAPER_036,base identity root
+observable,fubii_family_closure,paper,PAPER_037,variants 2-6
+observable,fubii_family_closure,paper,PAPER_038,variants 7-11

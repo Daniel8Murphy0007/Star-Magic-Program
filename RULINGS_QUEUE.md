@@ -576,6 +576,24 @@ RESOLVED section with the ruling recorded.
   to PAPER_020's TRZ break.
 - **Daniel's ruling:** (pending)
 
+### Q-037 — PAPER_039 — roche 10x internal conflict + dec slip + family paperwork
+- **Question:** (a) roche Cygnus X-2: the step line prints 1.964e54 N
+  (= the chain-true value 1.965e54 from the paper's own factors) but
+  the boxed result, abstract, and validator all say 1.964e55 - a 10x
+  internal conflict. Which is canonical? (b) dec molecule example:
+  intermediate printed 8636 but hbar/(tau*E_LEP) = 8.65e-3 (1e6 slip;
+  result 8.6e-10 N follows the printed intermediate). (c) hawk section
+  contains the 6th consecutive Session-0 in-text self-correction
+  (first attempt 8.065e50 abandoned mid-derivation; the corrected
+  chain verifies at -2.452 N). (d) V_lobe = (50 kpc)^3 = 3.7e63 m^3
+  but 3.7e62 used; summary-table exponents are mojibake throughout
+  (e.g. virx listed "-2.024e106").
+- **Best-candidate wired:** hawk/bd/lobe chains verified and
+  gate-pinned; roche wired at chain-true e54 with the boxed e55
+  exposed and the 10x pinned; ent Page-curve sign-reversal claim
+  preserved as the family's information-theoretic prediction.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
