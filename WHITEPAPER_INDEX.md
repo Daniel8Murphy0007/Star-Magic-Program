@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 71 (10 ✓, 61 ⚠ OPEN_RULING)
+- **Wired:** 72 (10 ✓, 62 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2184
+- **Not yet touched:** 2183
 
 ---
 
@@ -101,7 +101,7 @@
 | ⚠ | PAPER_065 | 121 System UQFF Validation Statistical Summary |
 | ⚠ | PAPER_066 | Magnetar Systems SGR1745 Crab Vela UQFF |
 | ⚠ | PAPER_067 | AGN SgrA M87 CentaurusA UQFF |
-| ⬜ | PAPER_068 | Globular Cluster Dynamics UQFF |
+| ⚠ | PAPER_068 | Globular Cluster Dynamics UQFF |
 | ⬜ | PAPER_069 | Radio Transient ASKAP J1832 UQFF |
 | ⬜ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF |
 | ⬜ | PAPER_071 | Stellar Superflare Energy Budget UQFF |

@@ -1,32 +1,28 @@
-v0.70.0 BAND 1: PAPER_067 wired - k4 = 1e15 PINNED BY DUAL CLOSURE
+v0.71.0 BAND 1: PAPER_068 wired - RULE-D OPEN ON CORRUPT IMBH FORMULA
 
-PAPER_067 AGN Ug4 Vacuum Concentration: SgrA*/M87*/CenA/NGC1365
-(OPEN_RULING Q-063):
-  Ug4 = k4*rho_SCm*(M_BH/d_g)*exp(-kappa t)*cos(pi t_n)*(1+0.05)
-  All four M_BH/d_g chains VERIFIED (3.04e16 / 8.08e16 / 1.77e14
-  / 4.21e13 kg/m).
+PAPER_068 Globular Cluster Dynamics: M13 + Omega Centauri
+(OPEN_RULING Q-064):
+  Ui_galaxy replaces DM sub-halos: delta_G = G*2.3e-4 (0.023 pct).
+  M13 VIRIAL CHAIN EXACT: sqrt(G*6e5*Msun/1.49pc) = 41.6 km/s;
+  sigma_UQFF = 41.6*0.293 = 12.19 km/s vs 12.1 measured (0.8 pct,
+  self-consistent ratio).
 
-  k4 = 1e15 PINNED BY DUAL CLOSURE: SgrA* Ug4 2.26e-5 and M87*
-  6.02e-5 both match print exactly; CenA/NGC1365 mantissas close
-  at chain exponents (printed uniform e-5 = mojibake artifact).
-  NOTE: appendix "k4 = 2.0" is a DIFFERENT constant sharing the
-  name - namespace ruling requested.
+  RULE-D DISCIPLINE APPLIED: Omega Cen IMBH M-sigma formula
+  denominator exponents are corrupt (cannot reproduce 4.2e4 Msun
+  under any wired k4) - ANCHORS WIRED (4.2e4 pred vs 4.0e4 X-ray,
+  5.0 pct), formula marked OPEN_UQFF_DERIVATION_TARGET, nothing
+  substituted.
 
-  NGC1365 maser chain verifies END-TO-END: omega = 2*pi*22.235
-  GHz = 1.397e11; g_DPM = 2.79e-4 at 0.1 pc; enhancement 3.59 pct
-  matches claimed 3.6 pct Chandra value - cleanest observational
-  match in the AGN set.
+  DEFECTS PINNED: f_Z = 1 - v_esc^2/(sigma^2+v_UQFF^2) evaluates
+  to -16.8 as printed (malformed); M_eff printed 5.94e5 applies
+  the [UA]*[SCm] correction at 100x strength (chain: 5.9994e5).
 
-  SgrA* LENR term 3.95e31 EXACT; CenA jet Um = 9.94e45 verified
-  (mu_j = 3.38e20 cross-consistent with PAPER_062).
+  CROSS-LINKS: [UA] = 0.0001 REAPPEARS (2nd appearance -
+  supporting Q-060b canonization); v_UQFF = 0.62 km/s echoes
+  PAPER_017's 0.622 = (1-F_TRZ)*F_Um constant.
+  SSq 13th physical role: Omega Cen nucleus BEC fraction = 0.57.
+  Falsifiable predictions: 47 Tuc 11.4 / NGC 6397 5.4 / M15 13.9.
 
-  SLIP CAUGHT: M87 g_C printed 1.29e20 requires r = 1e10; stated
-  r_shadow 6.5e10 gives 1.99e19 (factor 6.5). Also r_shadow
-  itself looks 1000x short vs 6GM/c^2 = 5.8e13 m.
-
-  SgrA* F = -5.33e203 N uses a -1.35e172 factor - e172-family
-  internal evidence recorded jointly with Q-059b.
-
-Q-063 queued. Gate 510 assertions 0 failures. Registry 211 rows /
-409 edges / 71 citation ledgers. Wired 71/2,255 (10 clean, 61
-OPEN_RULING). Next: PAPER_068.
+Q-064 queued. Gate 517 assertions 0 failures. Registry 214 rows /
+415 edges / 72 citation ledgers. Wired 72/2,255 (10 clean, 62
+OPEN_RULING). Next: PAPER_069.

@@ -1028,7 +1028,8 @@ RESOLVED section with the ruling recorded.
   no in-paper chain recovers them (cluster r_virial ~1e23 m with
   M = 1e44 kg gives g_C = 1e11 in mode units — is the printed g
   "10^11"?). (b) alpha_B = [UA] = 1e-4 buoyant weighting is a NEW
-  constant — not F_TRZ (0.1), not rho_UA — canonize or identify
+  constant
+  [SUPPORTED by PAPER_068: [UA] = 0.0001 reappears in the M_eff formula - see Q-064d.] — not F_TRZ (0.1), not rho_UA — canonize or identify
   as drift? (c) The 4-mode weighted sum (KAPPA/SSQ/1e-4/0.99)
   overlaps the triadic g decomposition w_C*g_comp + w_R*g_res +
   w_B*g_buoy of the model-suite papers (053-058) but adds the
@@ -1108,6 +1109,29 @@ RESOLVED section with the ruling recorded.
   PAPER_062's Um formula.
 - **Best-candidate wired:** k4 = 1e15 with dual-closure evidence;
   all M/d chains; maser chain; slip pinned with corrected value.
+- **Daniel's ruling:** (pending)
+
+### Q-064 — PAPER_068 — M_eff slip + f_Z malformed + IMBH formula + constant echoes
+- **Question:** (a) M_eff printed 5.94e5 Msun equals 6e5*0.99, but
+  the formula M*(1 - [UA]*[SCm]) = 6e5*(1 - 0.0001*0.99) gives
+  5.9994e5 - the printed value applies the correction at 100x
+  strength; which is canonical? (b) f_Z = 1 - v_esc^2/(sigma^2 +
+  v_UQFF^2) evaluates to -16.8 as printed (v_esc = 52 >> sigma =
+  12.3) - the formula is inverted or malformed; what is the
+  intended form that yields 0.89? (c) Omega Cen IMBH M-sigma
+  formula: denominator exponents (k4 shown as 1e-30, Omega_g as
+  10^-7.5) cannot reproduce 4.2e4 Msun under any wired k4 -
+  anchors wired, formula marked OPEN_UQFF_DERIVATION_TARGET
+  (Rule D); provide canonical form? (d) Two constant echoes:
+  [UA] = 0.0001 reappears (2nd appearance - supports Q-060b
+  canonization); v_UQFF = 0.62 km/s echoes the 0.622 =
+  (1-F_TRZ)*F_Um constant of PAPER_017 - same constant?
+- **Notable:** M13 virial chain EXACT (41.6 km/s); sigma ratio
+  0.293 self-consistent; Omega Cen nucleus BEC fraction = SSq
+  (13th physical role).
+- **Best-candidate wired:** virial + sigma chains; IMBH anchors
+  with formula OPEN; falsifiable predictions table (47 Tuc 11.4,
+  NGC 6397 5.4, M15 13.9 km/s).
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

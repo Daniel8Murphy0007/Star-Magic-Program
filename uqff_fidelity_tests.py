@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.70.0", "uqff_calculator.VERSION = 0.70.0")
+assert_that(C.VERSION == "0.71.0", "uqff_calculator.VERSION = 0.71.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1128,6 +1128,21 @@ assert_that(abs(_r067['maser_enhancement_pct'] - 3.6) < 0.1,
 assert_that(abs(_r067['m87_gc_chain'] - 1.99e19) / 1.99e19 < 0.01,
             "PAPER_067: M87 g_C slip caught - chain 1.99e19 vs printed 1.29e20 (Q-063c)")
 assert_that(C.wired_count() >= 71, "wired_count >= 71")
+
+_r068 = C.calc('PAPER_068')['value']
+assert_that(abs(_r068['m13_sigma_vir_km_s'] - 41.6) < 0.1,
+            "PAPER_068: M13 virial chain sqrt(G*M/r_half) = 41.6 km/s EXACT")
+assert_that(abs(_r068['m13_sigma_uqff_km_s'] - 12.19) < 0.01,
+            "PAPER_068: sigma_UQFF = 41.6*0.293 = 12.19 km/s vs 12.1 measured (0.8 pct)")
+assert_that(_r068['fz_formula_as_printed'] < 0,
+            "PAPER_068: f_Z formula as printed evaluates NEGATIVE - malformed, OPEN (Q-064b)")
+assert_that(_r068['imbh_formula_status'] == 'OPEN_UQFF_DERIVATION_TARGET',
+            "PAPER_068: IMBH M-sigma formula corrupt - anchors wired, formula OPEN (Rule D)")
+assert_that(abs(_r068['m_eff_chain_msun'] - 5.9994e5) < 10,
+            "PAPER_068: M_eff chain 5.9994e5 vs printed 5.94e5 - factor-100 slip pinned (Q-064a)")
+assert_that(abs(_r068['omega_cen_bec_fraction'] - 0.57) < 1e-12,
+            "PAPER_068: Omega Cen nucleus BEC fraction = SSq (13th physical role)")
+assert_that(C.wired_count() >= 72, "wired_count >= 72")
 
 # =============================================================================
 # REPORT

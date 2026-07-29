@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.70.0"
+VERSION = "0.71.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3595,5 +3595,60 @@ def _paper_067(dataset):
                     'LENR = 1e-10*(omega_LENR/omega_0)^2'),
         'source': 'PAPER_067',
         'residual_pct': abs(1e-5 / g_dpm * 100 - 3.6) / 3.6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_068')
+def _paper_068(dataset):
+    """Globular Cluster Dynamics: M13 + Omega Centauri (Session 0).
+
+    Ui_galaxy field replaces dark-matter sub-halos: delta_G =
+    G * 2.3e-4 (= 0.023 pct EXACT conversion).
+    M13 VIRIAL CHAIN EXACT: sqrt(G*6e5*Msun/(1.49 pc)) = 41.6 km/s;
+    sigma_UQFF = 41.6*sqrt(1-beta_iso) = 41.6*0.293 = 12.19 km/s
+    vs 12.1 measured (0.8 pct residual; ratio 12.2/41.6 = 0.2933
+    self-consistent). Deviations match the PAPER_065 suite rows
+    (1.63/2.25/2.75/5.00 pct).
+    CROSS-LINKS: [UA] = 0.0001 REAPPEARS in M_eff formula
+    (supports Q-060b canonization); v_UQFF = 0.62 km/s echoes the
+    PAPER_017-family 0.622 constant (Q-064d).
+    DEFECTS CAUGHT: (1) M_eff printed 5.94e5 Msun = 6e5*0.99, but
+    the formula (1 - 0.0001*0.99) gives 5.9994e5 - factor-100
+    slip in the correction term. (2) f_Z = 1 - v_esc^2/(sigma^2 +
+    v_UQFF^2) evaluates to -16.8 as printed (v_esc >> sigma) -
+    formula inverted or malformed, OPEN. (3) Omega Cen IMBH M-sigma
+    denominator exponents corrupt - cannot reproduce 4.2e4 Msun
+    with any wired k4; ANCHORS wired (4.2e4 pred vs 4.0e4 X-ray,
+    5.0 pct), formula OPEN_UQFF_DERIVATION_TARGET.
+    SSq 13th role: Omega Cen nucleus BEC fraction = 0.57 = SSq
+    (saturated-vacuum stripped-dwarf interpretation).
+    Falsifiable predictions wired: 47 Tuc 11.4 / NGC 6397 5.4 /
+    M15 13.9 km/s dispersions.
+    """
+    import math as _m
+    sigma_vir = _m.sqrt(6.674e-11 * 6e5 * 1.989e30 / (1.49 * 3.086e16))  # 41.6 km/s
+    return {
+        'value': {
+            'delta_g_fraction': 2.3e-4,
+            'm13_sigma_vir_km_s': sigma_vir / 1e3,        # 41.62 EXACT
+            'm13_sigma_uqff_km_s': sigma_vir / 1e3 * 0.293,   # 12.19
+            'm13_sigma_measured_km_s': 12.1,
+            'm13_fz_pred': 0.89, 'm13_fz_measured': 0.87,
+            'fz_formula_as_printed': 1 - 2704 / (12.3**2 + 0.62**2),  # -16.8 broken
+            'omega_cen_sigma_km_s': 18.7,
+            'omega_cen_imbh_pred_msun': 4.2e4,
+            'omega_cen_imbh_measured_msun': 4.0e4,
+            'imbh_formula_status': 'OPEN_UQFF_DERIVATION_TARGET',
+            'm_eff_chain_msun': 6e5 * (1 - 0.0001 * 0.99),    # 5.9994e5 vs printed 5.94e5
+            'ua_weight_reappearance': 1.0e-4,             # supports Q-060b
+            'v_uqff_km_s': 0.62,                          # echoes 0.622 family
+            'omega_cen_bec_fraction': SSQ,                # 13th SSq role
+            'predictions_km_s': {'47tuc': 11.4, 'ngc6397': 5.4, 'm15': 13.9},
+        },
+        'formula': ('sigma = sqrt(G*M/r_half); sigma_UQFF = sigma*sqrt(1-beta_iso); '
+                    'delta_G = G*2.3e-4; IMBH M-sigma OPEN'),
+        'source': 'PAPER_068',
+        'residual_pct': abs(sigma_vir / 1e3 * 0.293 - 12.1) / 12.1 * 100,
         'status': 'OPEN_RULING',
     }

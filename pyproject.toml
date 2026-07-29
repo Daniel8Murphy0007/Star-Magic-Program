@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.70.0"
-description = "UQFF Star-Magic-Program v0.70.0: PAPER_067 wired (AGN Ug4 vacuum concentration: all four M_BH/d_g chains verified; k4 = 1e15 PINNED by dual closure; NGC1365 maser chain verifies end-to-end to claimed 3.6 pct; M87 g_C factor-6.5 slip caught with corrected value; SgrA* LENR 3.95e31 EXACT; e172-family factor evidence recorded). Q-063 queued. Wired 71/2255, gate 510/0. Registry 211 rows / 409 edges / 71 ledgers."
+version = "0.71.0"
+description = "UQFF Star-Magic-Program v0.71.0: PAPER_068 wired (globular clusters: M13 virial 41.6 km/s EXACT -> sigma 12.19 vs 12.1 measured; Omega Cen IMBH anchors 4.2e4/4.0e4 Msun with corrupt M-sigma formula marked OPEN per Rule D; f_Z formula malformed (negative) pinned; M_eff factor-100 slip caught; [UA] = 1e-4 reappears; SSq 13th role as BEC fraction; 3 falsifiable dispersion predictions). Q-064 queued. Wired 72/2255, gate 517/0. Registry 214 rows / 415 edges / 72 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -1072,3 +1072,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 71/2,255 (10 ✓, 61 ⚠). Next: PAPER_068.
 
 ---
+
+## 2026-07-29 — v0.71.0 — BAND 1: PAPER_068
+
+- PAPER_068 wired (⚠ Q-064): globular clusters. M13 virial EXACT;
+  IMBH formula corrupt -> Rule-D OPEN with anchors preserved;
+  f_Z malformed + M_eff slip pinned; [UA] 2nd appearance;
+  SSq 13th role; 3 falsifiable predictions.
+- Campaign: 72/2,255 (10 ✓, 62 ⚠). Next: PAPER_069.
+
+---

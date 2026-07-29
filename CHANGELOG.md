@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.71.0] — 2026-07-29 — BAND 1: PAPER_068
+
+### Added
+- **PAPER_068 dispatch** (Globular Cluster Dynamics): M13 virial
+  chain EXACT (41.6 km/s); sigma_UQFF = 41.6*0.293 = 12.19 vs
+  12.1 measured (0.8 pct). Omega Cen IMBH anchors wired (4.2e4
+  pred vs 4.0e4 X-ray, 5.0 pct) with the corrupt M-sigma formula
+  marked **OPEN_UQFF_DERIVATION_TARGET per Rule D** (no
+  substitution). Defects pinned: f_Z formula evaluates NEGATIVE
+  as printed; M_eff factor-100 correction slip. Cross-links:
+  [UA] = 1e-4 reappears (2nd appearance, supports Q-060b);
+  v_UQFF = 0.62 km/s echoes the PAPER_017 0.622 constant.
+  SSq gains its 13th physical role (Omega Cen nucleus BEC
+  fraction = 0.57). Falsifiable predictions wired: 47 Tuc 11.4 /
+  NGC 6397 5.4 / M15 13.9 km/s.
+- OPEN_RULING Q-064 (M_eff slip; f_Z intended form; IMBH
+  canonical formula; constant echoes).
+- Gate: 517 assertions, 0 failures. Registry: 214 rows / 415 edges / 72 ledgers.
+
+---
+
 ## [0.70.0] — 2026-07-29 — BAND 1: PAPER_067
 
 ### Added

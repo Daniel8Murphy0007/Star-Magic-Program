@@ -409,3 +409,9 @@ observable,ngc1365_maser_chain,paper,PAPER_067,end-to-end chain
 observable,m87_shadow_slip,paper,PAPER_067,slip forensic
 observable,m87_shadow_slip,paper,PAPER_063,e172-family link
 observable,ug4_agn_coupling,paper,PAPER_062,mu_j cross-consistency
+observable,gc_ui_galaxy_mediation,paper,PAPER_068,primary derivation
+observable,gc_ui_galaxy_mediation,paper,PAPER_064,UA weight reappearance
+observable,gc_ui_galaxy_mediation,paper,PAPER_017,0.62 constant echo
+observable,omega_cen_imbh,paper,PAPER_068,anchors + OPEN formula
+observable,gc_predictions_ssq_role13,paper,PAPER_068,predictions table
+primitive,SSQ,observable,gc_predictions_ssq_role13,13th role BEC fraction
