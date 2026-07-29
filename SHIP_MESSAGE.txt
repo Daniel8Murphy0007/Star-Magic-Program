@@ -1,28 +1,27 @@
-v0.51.0 BAND 1: PAPER_048 wired - 1.894 FORENSIC ORIGIN CANDIDATE
+v0.52.0 BAND 1: PAPER_049 wired - UNIT-DIRECTION DRIFT ROOT FOUND
 
-PAPER_048 Ug4 Black Hole Vacuum Pressure (OPEN_RULING Q-045):
-  Ug4 = M_BH*rho_vac[SCm]/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n)
-  Sun-SgrA* peak Ug4(0) = 1.246e28 N/m^2 VERIFIED
-  Decay alpha*t = 164 over 4.5 Gyr -> BH vacuum pressure is an
-  EARLY-UNIVERSE force (galaxy-seed [SCm] concentration role;
-  fully decayed today - consistent with modern lensing)
-  BH levels: stellar L21 / SMBH L24 / ultra L26 with the HONEST
-  off-scale disclosure (n = 73.87 -> coupling-channel index);
-  lambda_24 = 0.10 matches PAPER_043 beta-table EXACT
+PAPER_049 Three-Component Vacuum Energy (OPEN_RULING Q-046):
+  [SCm] dense = rho_c*c^2 = 8.988e31 J/m^3 (sequestered in wells)
+  [UA] trapped = 5.6472e-12 J/m^3 (Bohr-scale, LENR mediator)
+  26-level polynomial lambda_vac = 7e-11 J/m^3 (validator)
+  sum(n^2, 20..26) = 3731 EXACT; L26/L1 = 676 cosmic dominance
+  Observed Lambda = residual lowest-frequency [UA] after Yin-Yang
+  cancellation (structural framing, not fine-tuning)
+  HONEST: paper discloses it cannot reproduce the validator 7e-11
+  from its own formula (attempts: 5.33e-6 / 1.4e-6 / 4e-6)
 
-FORENSIC MAJOR: the validator value 1.8937e-23 N/m^2 IS the
-predecessor "1.894" unknown-origin number (PAPER_2156 bulk-script
-artifact flagged for future investigation). Candidate TRUE ORIGIN:
-this Ug4 Sun-SgrA* force reading - never a density ratio. Paired
-with PAPER_021's 9.47e-27 = rho_crit identification, BOTH
-predecessor forensic targets now have fresh-corpus origin
-candidates. Bonus continuity: near-BH condensate 1e15 kg/m^3 =
-predecessor PAPER_421 rho_c.
+FORENSIC (unit direction) - the headline "UQFF vacuum exceeds
+LambdaCDM by 16 orders" is a UNITS ARTIFACT: rho_Lambda was quoted
+as 5.96e-27 "J/m^3" which is the kg/m^3 VALUE. With consistent
+J/m^3 (5.96e-10 - the predecessor canonical family), the ratio is
+7e-11/5.96e-10 = 0.117: lambda_vac sits BELOW Lambda by ~8.5x.
+This is the ROOT-ERA instance of the kg/m^3-vs-J/m^3 drift that
+predecessor PAPER_2147 corrected across 933 papers - the drift
+traces to Session 0. Both readings computed and gate-pinned.
 
-Q-045 queued: kappa-correction peak -> 1.8937e-23 underived (opaque
-1.5e-51 factor); alpha = 1e-10/day third decay constant naming;
-channel-index reading acceptance.
+Q-046 queued: lambda_vac closed-form opacity; unit-direction
+headline correction; trapped-UA chain mojibake.
 
-Gate 371 assertions 0 failures. Registry 154 rows / 298 edges / 52
-citation ledgers. Wired 52/2,255 (9 clean, 43 OPEN_RULING).
-Next: PAPER_049.
+Gate 377 assertions 0 failures. Registry 157 rows / 304 edges / 53
+citation ledgers. Wired 53/2,255 (9 clean, 44 OPEN_RULING).
+Next: PAPER_050.

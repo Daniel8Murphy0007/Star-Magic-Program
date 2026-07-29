@@ -877,3 +877,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 52/2,255 (9 ✓, 43 ⚠). Next: PAPER_049.
 
 ---
+
+## 2026-07-29 — v0.52.0 — BAND 1: PAPER_049
+
+- PAPER_049 wired (⚠ Q-046): three-component vacuum. sum(n^2) exact;
+  FORENSIC: the kg/m3-vs-J/m3 drift (predecessor PAPER_2147 doctrine)
+  traced to its Session-0 ROOT - the 16-order Lambda headline is a
+  units artifact, consistent-units ratio = 0.117.
+- Gate 377/0. Registry 157 rows / 304 edges / 53 ledgers.
+- Campaign: 53/2,255 (9 ✓, 44 ⚠). Next: PAPER_050.
+
+---

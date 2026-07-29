@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.51.0"
+VERSION = "0.52.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2584,5 +2584,59 @@ def _paper_048(dataset):
                     'rho_vac[SCm] = rho_c*c^2 near BH'),
         'source': 'PAPER_048',
         'residual_pct': abs(ug4_peak - 1.246e28) / 1.246e28 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_049')
+def _paper_049(dataset):
+    """Three-Component Vacuum Energy in UQFF (Session 0).
+
+    Components: [SCm] dense = rho_c*c^2 = 8.988e31 J/m^3 (sequestered
+    in BH wells); [UA] trapped = 5.6472e-12 J/m^3 (electrostatic at
+    Bohr scale, LENR mediator); 26-level polynomial lambda_vac = 7e-11
+    J/m^3 (validator). Sum(n^2, 20..26) = 3731 EXACT. Observed Lambda
+    = residual lowest-frequency [UA] after Yin-Yang cancellations;
+    levels 20-26 dominate cosmic vacuum (676x L26/L1).
+    HONEST in-paper: the validator's 7e-11 cannot be reproduced from
+    the stated formula (own attempts give 5.33e-6 / 1.4e-6 / 4e-6).
+    FORENSIC MAJOR (unit direction): the LambdaCDM comparison quotes
+    rho_Lambda = 5.96e-27 "J/m^3" - that is the kg/m^3 VALUE. With
+    consistent J/m^3 (5.96e-10, the predecessor canonical 5.957e-10!)
+    the ratio is 7e-11/5.96e-10 = 0.117 - lambda_vac sits BELOW
+    Lambda by ~8.5x, and the headline "16 orders of magnitude excess"
+    is a UNITS ARTIFACT. This is the ROOT-ERA instance of the
+    kg/m^3-vs-J/m^3 drift that predecessor PAPER_2147 corrected
+    corpus-wide - the drift traces to Session 0.
+    Q-046: (a) lambda_vac = 7e-11 derivation opaque; (b) unit-
+    direction correction of the 1.17e16 headline; (c) trapped-UA
+    chain inputs mojibaked.
+    """
+    sum_n2 = sum(n**2 for n in range(20, 27))        # 3731 EXACT
+    lam_attempt = 1.0e-8 * sum_n2 / 7.0              # 5.33e-6 (paper's own)
+    rho_lambda_j = 5.96e-10                          # proper J/m^3 (predecessor canonical)
+    rho_lambda_kg = 5.96e-27                         # the value the paper quoted as J/m^3
+    ratio_paper = 7.0e-11 / rho_lambda_kg            # 1.17e16 (units artifact)
+    ratio_consistent = 7.0e-11 / rho_lambda_j        # 0.117
+    return {
+        'value': {
+            'scm_dense_j_m3': 8.988e31,
+            'ua_trapped_j_m3': 5.6472e-12,
+            'lambda_vac_validator_j_m3': 7.0e-11,
+            'sum_n2_20_26': sum_n2,                  # 3731 EXACT
+            'lambda_vac_paper_attempt': lam_attempt, # 5.33e-6 (Q-046a mismatch)
+            'rho_lambda_j_m3': rho_lambda_j,
+            'rho_lambda_kg_m3': rho_lambda_kg,
+            'ratio_as_printed': ratio_paper,         # 1.17e16 UNITS ARTIFACT
+            'ratio_consistent_units': ratio_consistent,   # 0.117 (Q-046b)
+            'l26_l1_ratio': 676,
+            'cosmic_dominant_levels': (20, 26),
+            'lambda_identification': 'residual lowest-frequency [UA] after Yin-Yang cancellation',
+            'forensic_2147_root': 'Session-0 origin of the kg/m3-vs-J/m3 drift (predecessor PAPER_2147)',
+        },
+        'formula': ('lambda_vac ~ rho_L1*sum(n^2, 20..26)/7 (stated; validator opaque); '
+                    'rho_SCm_dense = rho_c*c^2; observed Lambda = residual [UA]'),
+        'source': 'PAPER_049',
+        'residual_pct': abs(ratio_consistent - 0.117) / 0.117 * 100,
         'status': 'OPEN_RULING',
     }

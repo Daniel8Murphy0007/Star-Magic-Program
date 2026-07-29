@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.51.0", "uqff_calculator.VERSION = 0.51.0")
+assert_that(C.VERSION == "0.52.0", "uqff_calculator.VERSION = 0.52.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -846,6 +846,21 @@ assert_that(abs(_r048['r_s_sgra_m'] - 1.224e10) / 1.224e10 < 0.005,
 assert_that(abs(_r048['alpha_per_day_implied'] - 1.0e-10) / 1.0e-10 < 0.01,
             "PAPER_048: implied alpha = 1e-10/day (distinct from kappa - Q-045b)")
 assert_that(C.wired_count() >= 52, "wired_count >= 52")
+
+_r049 = C.calc('PAPER_049')['value']
+assert_that(_r049['sum_n2_20_26'] == 3731,
+            "PAPER_049: sum(n^2, 20..26) = 3731 EXACT")
+assert_that(abs(_r049['ratio_as_printed'] - 1.17e16) / 1.17e16 < 0.01,
+            "PAPER_049: printed 1.17e16 ratio reproduced - and identified as a UNITS ARTIFACT (Q-046b)")
+assert_that(abs(_r049['ratio_consistent_units'] - 0.117) < 0.002,
+            "PAPER_049: consistent-units ratio = 7e-11/5.96e-10 = 0.117 (lambda_vac BELOW Lambda)")
+assert_that(abs(_r049['rho_lambda_j_m3'] - 5.96e-10) < 1e-13,
+            "PAPER_049: proper rho_Lambda = 5.96e-10 J/m^3 (predecessor canonical family)")
+assert_that(_r049['l26_l1_ratio'] == 676,
+            "PAPER_049: L26/L1 = 26^2 = 676 cosmic dominance")
+assert_that(abs(_r049['lambda_vac_paper_attempt'] - 5.33e-6) / 5.33e-6 < 0.01,
+            "PAPER_049: paper's own formula gives 5.33e-6 vs validator 7e-11 (opacity honestly disclosed)")
+assert_that(C.wired_count() >= 53, "wired_count >= 53")
 
 # =============================================================================
 # REPORT

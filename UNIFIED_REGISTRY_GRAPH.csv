@@ -298,3 +298,9 @@ observable,forensic_1894_origin,paper,PAPER_048,validator value
 observable,forensic_1894_origin,paper,PAPER_021,forensic companion (9.47 = rho_crit)
 observable,bh_level_classification,paper,PAPER_048,primary derivation
 observable,bh_level_classification,paper,PAPER_043,beta-table lambda_24 input
+observable,three_component_vacuum,paper,PAPER_049,primary derivation
+observable,three_component_vacuum,paper,PAPER_048,[SCm] dense continuity
+observable,forensic_unit_direction_root,paper,PAPER_049,root-era instance
+observable,forensic_unit_direction_root,paper,PAPER_021,forensic family (predecessor targets)
+observable,lambda_as_residual_ua,paper,PAPER_049,primary derivation
+observable,lambda_as_residual_ua,paper,PAPER_046,Yin-Yang cancellation basis

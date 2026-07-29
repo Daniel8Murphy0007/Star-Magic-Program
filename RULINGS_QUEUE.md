@@ -753,6 +753,27 @@ RESOLVED section with the ruling recorded.
   0.10 exact vs 043; early-universe galaxy-seeding role preserved.
 - **Daniel's ruling:** (pending)
 
+### Q-046 — PAPER_049 — lambda_vac opacity + UNIT-DIRECTION ROOT + trapped-UA chain
+- **Question:** (a) The validator's lambda_vac = 7e-11 J/m^3 cannot
+  be reproduced from the paper's own stated formula - its three
+  attempts give 5.33e-6, 1.4e-6, and 4e-6 (honestly disclosed as
+  opaque; definition lives in QCalc_Phase1_Validation.py Test 2).
+  What is the canonical closed form? (b) FORENSIC/UNITS MAJOR: the
+  LambdaCDM comparison quotes rho_Lambda = 5.96e-27 "J/m^3" - that
+  is the kg/m^3 value. With consistent J/m^3 (5.96e-10, the
+  predecessor canonical family), the ratio is 7e-11/5.96e-10 =
+  0.117: lambda_vac sits BELOW Lambda by ~8.5x, and the paper's
+  "16 orders of magnitude excess" headline is a UNITS ARTIFACT.
+  This is the ROOT-ERA instance of the kg/m^3-vs-J/m^3 drift that
+  predecessor PAPER_2147 corrected corpus-wide - the drift traces to
+  Session 0. Correct the headline reading? (c) The trapped-UA
+  5.6472e-12 electrostatic chain has mojibaked inputs (q_UA, radius
+  exponents) - canonical chain?
+- **Best-candidate wired:** sum(n^2) = 3731 exact; both ratio
+  readings computed and pinned (1.17e16 artifact + 0.117 consistent);
+  three components anchored; Lambda-as-residual-[UA] claim preserved.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

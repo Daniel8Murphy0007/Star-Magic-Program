@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.52.0] — 2026-07-29 — BAND 1: PAPER_049
+
+### Added
+- **PAPER_049 dispatch** (Three-Component Vacuum Energy): [SCm] dense
+  (8.988e31, sequestered in wells) / [UA] trapped (5.6472e-12, LENR
+  mediator) / 26-level polynomial (7e-11 validator). sum(n^2, 20..26)
+  = 3731 EXACT; observed Lambda identified as the residual lowest-
+  frequency [UA] after Yin-Yang cancellation; levels 20-26 dominate
+  (676x). The paper honestly discloses it cannot reproduce the
+  validator's 7e-11 from its own formula.
+- **FORENSIC (unit direction):** the "16 orders of magnitude excess
+  over LambdaCDM" headline is a UNITS ARTIFACT — rho_Lambda was
+  quoted as 5.96e-27 "J/m^3" (the kg/m^3 value). With consistent
+  J/m^3 (5.96e-10, predecessor canonical family) the ratio is 0.117:
+  lambda_vac sits BELOW Lambda. This is the ROOT-ERA instance of the
+  kg/m^3-vs-J/m^3 drift that predecessor PAPER_2147 corrected
+  corpus-wide — the drift traces to Session 0. Both ratio readings
+  computed and gate-pinned.
+- OPEN_RULING Q-046 (lambda_vac derivation opacity; unit-direction
+  headline correction; trapped-UA chain mojibake).
+- Gate: 377 assertions, 0 failures. Registry: 157 rows / 304 edges / 53 ledgers.
+
+---
+
 ## [0.51.0] — 2026-07-29 — BAND 1: PAPER_048
 
 ### Added

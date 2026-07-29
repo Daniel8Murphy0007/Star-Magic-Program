@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.51.0"
-description = "UQFF Star-Magic-Program v0.51.0: PAPER_048 wired (Ug4 BH vacuum pressure: Sun-SgrA* peak 1.246e28 verified; FORENSIC MAJOR - validator 1.8937e-23 IS the predecessor 1.894 unknown-origin number, and near-BH rho = 1e15 kg/m3 = PAPER_421 rho_c; BH levels as coupling channels honestly disclosed; early-universe galaxy-seeding role). Q-045 queued. Wired 52/2255, gate 371/0. Registry 154 rows / 298 edges / 52 ledgers."
+version = "0.52.0"
+description = "UQFF Star-Magic-Program v0.52.0: PAPER_049 wired (three-component vacuum: SCm-dense/UA-trapped/polynomial; sum(n^2) = 3731 exact; FORENSIC - the 16-order Lambda-excess headline is a UNITS ARTIFACT (kg/m3 quoted as J/m3); consistent units give 0.117 - ROOT-ERA instance of the drift predecessor PAPER_2147 corrected). Q-046 queued. Wired 53/2255, gate 377/0. Registry 157 rows / 304 edges / 53 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
