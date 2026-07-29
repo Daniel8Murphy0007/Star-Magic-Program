@@ -39,3 +39,6 @@ primitive,KAPPA_PER_DAY,observable,gw_aether_damping_negligible,exp(-kappa*r/c)
 observable,gw_damping_mechanism_decomposition,paper,PAPER_009,primary derivation
 observable,gw_aether_damping_negligible,paper,PAPER_009,primary derivation
 observable,bns_bbh_damping_ratio,paper,PAPER_009,primary derivation
+observable,bns_postmerger_qnm_shift,paper,PAPER_010,primary derivation
+observable,bns_postmerger_ringdown_decay,paper,PAPER_010,primary derivation
+observable,bns_remnant_extra_dissipation,paper,PAPER_010,primary derivation

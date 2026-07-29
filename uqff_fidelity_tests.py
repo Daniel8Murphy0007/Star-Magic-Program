@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.8.0", "uqff_calculator.VERSION = 0.8.0")
+assert_that(C.VERSION == "0.9.0", "uqff_calculator.VERSION = 0.9.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -241,6 +241,17 @@ assert_that(abs(_r009['d_aether_410mpc_paper'] - 0.999999) < 1e-6,
 assert_that(abs(_r009['string_factor_gw190425'] - 0.62) < 1e-12,
             "PAPER_009: GW190425 string factor 0.62 (self-rectifies Q-001 direction)")
 assert_that(C.wired_count() >= 9, "wired_count >= 9")
+
+_r010 = C.calc('PAPER_010')['value']
+assert_that(abs(_r010['f_uqff_hz'] - 2375.0) < 0.5,
+            "PAPER_010: f_UQFF = 2.375 kHz (5% QNM downshift)")
+assert_that(abs(_r010['freq_shift_hz'] - 125.0) < 0.5,
+            "PAPER_010: 125 Hz shift (detectable at 3G)")
+assert_that(abs(_r010['tau_uqff_ms'] - 7.14) < 0.05,
+            "PAPER_010: tau_UQFF ~ 7 ms (29% faster ringdown decay)")
+assert_that(abs(_r010['eps_damp'] - 0.15) < 1e-12,
+            "PAPER_010: 15% extra quantum-channel energy dissipation")
+assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
 # =============================================================================
 # REPORT

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 9 (2 ✓, 7 ⚠ OPEN_RULING)
+- **Wired:** 10 (3 ✓, 7 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2246
+- **Not yet touched:** 2245
 
 ---
 
@@ -33,7 +33,7 @@
 | ⬜ | PAPER_008b | Full Inspiral Waveform UQFF |
 | ⚠ | PAPER_009 | Damping Mechanism Decomposition UQFF |
 | ⬜ | PAPER_009b | Aether String TRZ Damping GW |
-| ⬜ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF |
+| ✓ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF |
 | ⬜ | PAPER_010b | Time Domain Chirp 23Hz UQFF |
 | ⬜ | PAPER_011 | Stochastic GW Background UQFF Implications |
 | ⬜ | PAPER_011b | Amplitude Reduction Factor UQFF |

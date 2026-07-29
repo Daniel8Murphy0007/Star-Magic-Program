@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.8.0"
-description = "UQFF Star-Magic-Program v0.8.0: PAPER_009 wired (4-mechanism damping decomposition: Aether/SCm/TRZ/String per-system; GW190425 string=0.62 SELF-RECTIFIES Q-001; BNS/BBH ratio 2.43x; gate found aether formula 16 orders off own table -> Q-009). Wired 9/2255, gate 100/0. Registry 28 rows / 40 edges / 9 ledgers. Campaign per CLAUDE.md."
+version = "0.9.0"
+description = "UQFF Star-Magic-Program v0.9.0: PAPER_010 wired (post-merger QNM: f_UQFF = 0.95*f_GR = 2.375 kHz with 125 Hz detectable shift; ringdown decay 29 pct faster tau ~7 ms; 15 pct extra quantum-channel dissipation -> lighter remnant). Clean wiring, no new rulings. Wired 10/2255, gate 105/0. Registry 31 rows / 43 edges / 10 ledgers. Campaign per CLAUDE.md."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

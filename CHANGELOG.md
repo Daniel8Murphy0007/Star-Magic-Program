@@ -7,6 +7,18 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.9.0] — 2026-07-29 — BAND 1: PAPER_010
+
+### Added
+- **PAPER_010 dispatch** (Post-Merger Oscillations + Remnant Mass):
+  QNM frequency downshift f_UQFF = 0.95*f_GR (2.5 -> 2.375 kHz, 125 Hz
+  detectable at 3G); ringdown decay 29% faster (tau ~7 ms, gamma=0.4);
+  15% extra quantum-channel dissipation -> lighter remnant. CLEAN wiring
+  (internally consistent paper, no new rulings).
+- Gate: 105 assertions, 0 failures. Registry: 31 rows / 43 edges / 10 ledgers.
+
+---
+
 ## [0.8.0] — 2026-07-29 — BAND 1: PAPER_009
 
 ### Added

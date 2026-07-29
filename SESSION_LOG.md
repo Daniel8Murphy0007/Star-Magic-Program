@@ -415,3 +415,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 9/2,255 (2 ✓, 7 ⚠). Next: PAPER_010.
 
 ---
+
+## 2026-07-29 — v0.9.0 — BAND 1: PAPER_010
+
+- PAPER_010 wired (✓ clean): QNM 5% downshift (125 Hz), ringdown 0.71x,
+  15% extra dissipation. Internally consistent — no rulings needed.
+- Gate 105/0. Registry 31 rows / 43 edges / 10 ledgers.
+- Campaign: 10/2,255 (3 ✓, 7 ⚠). Next: PAPER_011.
+
+---

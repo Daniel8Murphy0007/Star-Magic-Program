@@ -1,19 +1,14 @@
-v0.8.0 BAND 1: PAPER_009 wired (self-rectification milestone)
+v0.9.0 BAND 1: PAPER_010 wired (clean)
 
-PAPER_009 Damping Mechanism Decomposition (Session 143, OPEN_RULING Q-009):
-  4-mechanism synthesis D_total = D_Aether*D_SCm*D_TRZ*D_String
-  Per-system: GW170817 BNS 0.333 (string 0.37) / GW190425 BNS 0.530
-  (string 0.62) / GW150914 BBH 0.81 = (1-F_TRZ)^2 (string deactivated)
-  BNS/BBH damping ratio 2.43x (matter strengthens damping)
-  TRZ resonance ~100 Hz; string dominance >200 Hz
+PAPER_010 Post-Merger Oscillations + Remnant Mass:
+  QNM frequency: f_UQFF = f_GR*(1 + alpha_Q - beta_damp) ~ 0.95*f_GR
+  (2.5 kHz -> 2.375 kHz; 125 Hz shift detectable at 3G sensitivity)
+  Ringdown decay: tau_UQFF = tau_GR/(1+0.4) = 0.71*tau_GR (~7 ms)
+  Remnant: E_rad_UQFF = 1.15*E_rad_GR (15% extra quantum-channel
+  dissipation -> lighter remnant than GR predicts)
 
-SELF-RECTIFICATION MILESTONE: PAPER_009's per-system table explains
-PAPER_002's 0.5297 headline — the heavier BNS carries reduced string
-coupling (0.62 vs 0.37). First corpus-internal resolution evidence,
-annotated into Q-001. The compile-and-converge design is working.
+Clean wiring - paper internally consistent, no new rulings queued.
 
-Q-009 queued: aether formula exp(-kappa*r/c) evaluates ~0 in literal SI
-(16 orders from paper's own 0.999999 table) - unstated unit convention.
-
-Gate 100 assertions 0 failures. Registry 28 rows / 40 edges / 9 citation
-ledgers. Wired 9/2,255 (2 clean, 7 OPEN_RULING). Next: PAPER_010.
+Gate 105 assertions 0 failures. Registry 31 rows / 43 edges / 10
+citation ledgers. Wired 10/2,255 (3 clean, 7 OPEN_RULING).
+Next: PAPER_011 (Stochastic GW Background).

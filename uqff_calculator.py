@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.8.0"
+VERSION = "0.9.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -464,4 +464,47 @@ def _paper_009(dataset):
         'source': 'PAPER_009',
         'residual_pct': abs(systems['gw150914_bbh'] / systems['gw170817_bns'] - 2.4) / 2.4 * 100.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_010')
+def _paper_010(dataset):
+    """Post-Merger Oscillations and Remnant Mass (Session 0).
+
+    QNM modifications for the BNS remnant:
+      f_UQFF = f_GR*(1 + alpha_Q - beta_damp) ~ 0.95*f_GR (5% downshift;
+        2.5 kHz -> 2.375 kHz, 125 Hz shift detectable at 3G sensitivity)
+      tau_UQFF = tau_GR/(1 + gamma_damp) ~ 0.71*tau_GR (29% faster decay;
+        10 ms -> ~7 ms) with gamma_damp ~ 0.4 at 2.5 kHz
+      E_rad_UQFF = E_rad_GR*(1 + eps_damp), eps_damp ~ 0.15 (15% extra
+        quantum-channel dissipation) -> lighter remnant
+    Note: eps_damp INCREASES radiated energy here while PAPER_005 DECREASES
+    it for BBH — different mechanisms (QNM ringdown vs inspiral), not
+    contradiction; ranges are paper-stated envelopes.
+    """
+    f_gr_hz = 2.5e3                    # typical BNS post-merger peak
+    tau_gr_ms = 10.0
+    gamma_damp = 0.4                   # at ~2.5 kHz
+    eps_damp = 0.15
+    m1, m2 = 1.4, 1.4                  # comparison case
+    e_rad_gr_msun = 0.05               # typical GR radiated (comparison case)
+    return {
+        'value': {
+            'f_uqff_over_f_gr': 0.95,
+            'f_gr_hz': f_gr_hz,
+            'f_uqff_hz': 0.95 * f_gr_hz,               # 2375 Hz
+            'freq_shift_hz': 0.05 * f_gr_hz,           # 125 Hz
+            'tau_ratio': 1.0 / (1.0 + gamma_damp),     # 0.714
+            'tau_gr_ms': tau_gr_ms,
+            'tau_uqff_ms': tau_gr_ms / (1.0 + gamma_damp),   # 7.14 ms
+            'eps_damp': eps_damp,
+            'e_rad_uqff_msun': e_rad_gr_msun * (1.0 + eps_damp),
+            'remnant_uqff_msun': m1 + m2 - e_rad_gr_msun * (1.0 + eps_damp),
+            'alpha_q_range': (0.02, 0.05),
+            'beta_damp_range': (0.03, 0.08),
+        },
+        'formula': ('f_UQFF = 0.95*f_GR; tau_UQFF = tau_GR/(1+0.4) = 0.71*tau_GR; '
+                    'E_rad_UQFF = (1+0.15)*E_rad_GR'),
+        'source': 'PAPER_010',
+        'residual_pct': abs(1.0 / 1.4 - 0.71) / 0.71 * 100.0,   # 0.60% (0.714 vs stated 0.71)
     }
