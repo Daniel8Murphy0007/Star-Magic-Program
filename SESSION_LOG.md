@@ -1159,3 +1159,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 80/2,255 (10 ✓, 70 ⚠). Next: PAPER_077.
 
 ---
+
+## 2026-07-29 — v0.80.0 — BAND 1: PAPER_077 — Q-060d RESOLVED
+
+- PAPER_077 wired (⚠ Q-073): GWTC-4 ringdowns. 3 events named
+  (Q-060d resolved in place); anchors-over-formula with honest
+  QNM residuals; [UA] 5th appearance; null suite.
+- Campaign: 81/2,255 (10 ✓, 71 ⚠). Next: PAPER_078.
+
+---

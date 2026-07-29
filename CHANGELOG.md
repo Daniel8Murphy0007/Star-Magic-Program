@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.80.0] — 2026-07-29 — BAND 1: PAPER_077 — Q-060d RESOLVED
+
+### Added
+- **PAPER_077 dispatch** (LIGO GWTC-4.0 Ringdown): the three
+  Batch-23 ringdown events are NAMED — GW150914 (251 Hz),
+  GW190521 (89 Hz), GW200115 (2800 Hz) — RESOLVING Q-060d.
+  Mass anchors match published GWTC values (radiated masses
+  physical). UQFF corrections ~1e-6 fractional (null suite);
+  d_L = (1 + [UA]*z) correction < 0.01 pct at z=1 EXACT — [UA]
+  5th appearance. Honest residuals: the printed QNM approximation
+  evaluates 13-46 pct off the anchors (which track real observed
+  ringdowns) — anchors wired over formula. GW150914 M_f
+  65.3/63.1 internal conflict pinned.
+- OPEN_RULING Q-073.
+- Gate: 578 assertions, 0 failures. Registry: 236 rows / 460 edges / 81 ledgers.
+
+---
+
 ## [0.79.0] — 2026-07-29 — BAND 1: PAPER_076
 
 ### Added

@@ -1036,6 +1036,7 @@ RESOLVED section with the ruling recorded.
   w_B*g_buoy of the model-suite papers (053-058) but adds the
   Superconductive term — what is the canonical crosswalk?
   (d) "LIGO GWTC-4.0 ringdown 0.5 pct for 3 events" — which three?
+  [RESOLVED by PAPER_077: GW150914, GW190521, GW200115 - see Q-073.]
 - **Notable:** Crab Resonant example closes exactly (omega = 190
   rad/s = 2*pi*30.2 Hz, the real Crab spin); alpha_S = 0.99 = the
   H_SCm manifold-completeness constant.
@@ -1300,6 +1301,24 @@ RESOLVED section with the ruling recorded.
   spectrum unmodified) wired as falsifiable.
 - **Best-candidate wired:** chains + nulls + prediction; formula
   defect pinned with conclusion preserved.
+- **Daniel's ruling:** (pending)
+
+### Q-073 — PAPER_077 — QNM formula residuals + M_f conflict + delta arithmetic
+- **Question:** (a) The printed QNM formula evaluates to 285 /
+  130 / 1975 Hz for the three events vs printed anchors 251 / 89
+  / 2800 Hz (13-46 pct off); the anchors track REAL observed
+  ringdowns, so the formula is the rough approximation - confirm
+  anchors-over-formula wiring? (b) GW150914 M_f: 65.3 Msun (sec
+  2) vs 63.1 (table) - both appear in literature; pin one.
+  (c) Delta column: 251.0003 - 251 = 0.0003 but the table prints
+  0.0001 Hz - minor arithmetic slip. (d) [UA] = 1e-4 FIFTH
+  appearance (d_L correction).
+- **RESOLUTION:** Q-060d is ANSWERED by this paper - the three
+  Batch-23 GWTC-4.0 ringdown events are GW150914, GW190521,
+  GW200115 (annotated in place).
+- **Best-candidate wired:** named events with published-value
+  mass anchors; UQFF deltas ~1e-6 (null suite); honest QNM
+  formula residuals carried.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -1,25 +1,23 @@
-v0.79.0 BAND 1: PAPER_076 wired - FERMI NULL SUITE (80 PAPERS MILESTONE)
+v0.80.0 BAND 1: PAPER_077 wired - GWTC-4 EVENTS NAMED (Q-060d RESOLVED)
 
-PAPER_076 Fermi-LAT 4FGL Gamma-Ray Predictions (OPEN_RULING
-Q-072):
-  NULL-PREDICTION suite: average flux and spectral shape
-  UNMODIFIED by UQFF - falsifiable nulls wired. The Resonant
-  1e-5 flux modulation is below single-pulse 4FGL sensitivity
-  but POTENTIALLY DETECTABLE in epoch-folded analysis - wired as
-  a campaign-tracked falsifiable prediction.
+PAPER_077 LIGO GWTC-4.0 Ringdown Cross-Validation (OPEN_RULING
+Q-073):
+  RESOLVES Q-060d: the three Batch-23 GWTC-4.0 ringdown events
+  are NAMED - GW150914 (251 Hz), GW190521 (89 Hz), GW200115
+  (~2800 Hz). Mass anchors match published GWTC values
+  (35.6+30.6 -> 63.1; 85+66 -> 142; 5.7+1.5 -> 7.1).
 
-  Chains EXACT: Mrk421 omega = 2*pi/315d = 2.309e-7; Crab omega
-  = 2*pi*29.65 Hz = 186.3 (dual-spin conflict: 29.65 Hz here vs
-  30.2 Hz in 064/066 - both internally exact, epoch ruling
-  requested); phase variation 1e-5/274 = 3.65e-8.
+  UQFF corrections are TINY by construction: ringdown deltas
+  ~1e-6 fractional; d_L = (1 + [UA]*z) < 0.01 pct at z=1 EXACT -
+  [UA] = 1e-4 FIFTH appearance. GWTC constraints UNMODIFIED
+  (null suite, falsifiable).
 
-  DEFECT PINNED: effective-photon-mass formula evaluates to
-  8.0e-76 kg^2 vs printed 1.05e-70 (5 orders off) - the
-  unobservability conclusion is ROBUST regardless; formula
-  marked for ruling.
+  HONEST RESIDUALS: the printed QNM approximation evaluates to
+  285 / 130 / 1975 Hz vs anchors 251 / 89 / 2800 (13-46 pct) -
+  the anchors track REAL observed ringdowns; anchors wired over
+  formula. GW150914 M_f 65.3-vs-63.1 internal conflict + delta
+  column arithmetic slip pinned.
 
-MILESTONE: 80 papers wired.
-
-Q-072 queued. Gate 572 assertions 0 failures. Registry 234 rows /
-456 edges / 80 citation ledgers. Wired 80/2,255 (10 clean, 70
-OPEN_RULING). Next: PAPER_077.
+Q-073 queued. Gate 578 assertions 0 failures. Registry 236 rows /
+460 edges / 81 citation ledgers. Wired 81/2,255 (10 clean, 71
+OPEN_RULING). Next: PAPER_078.

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.79.0", "uqff_calculator.VERSION = 0.79.0")
+assert_that(C.VERSION == "0.80.0", "uqff_calculator.VERSION = 0.80.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1263,6 +1263,19 @@ assert_that(_r076['photon_mass_chain_kg2'] < 1e-74,
 assert_that(_r076['epoch_folded_prediction'] and _r076['modulation_amplitude'] == 1e-5,
             "PAPER_076: epoch-folded 1e-5 modulation wired as campaign-tracked falsifiable prediction")
 assert_that(C.wired_count() >= 80, "wired_count >= 80")
+
+_r077 = C.calc('PAPER_077')['value']
+assert_that(set(_r077['events'].keys()) == {'gw150914', 'gw190521', 'gw200115'},
+            "PAPER_077: the 3 GWTC-4.0 ringdown events NAMED - resolves Q-060d")
+assert_that(abs(_r077['events']['gw150914']['f_ring_hz'] - 251.0) < 0.1,
+            "PAPER_077: GW150914 ringdown anchor 251 Hz (matches observation)")
+assert_that(abs(_r077['dl_correction_z1_pct'] - 0.01) < 1e-6,
+            "PAPER_077: d_L correction 0.01 pct at z=1 EXACT - [UA] 5th appearance")
+assert_that(_r077['ringdown_fraction_gw150914'] < 1e-5,
+            "PAPER_077: UQFF ringdown corrections ~1e-6 fractional - GWTC unmodified (null suite)")
+assert_that(abs(_r077['events']['gw150914']['qnm_formula_hz'] - 285.0) < 1.0,
+            "PAPER_077: QNM approx formula 285 Hz vs printed 251 - honest 13.5 pct residual pinned")
+assert_that(C.wired_count() >= 81, "wired_count >= 81")
 
 # =============================================================================
 # REPORT

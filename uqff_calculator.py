@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.79.0"
+VERSION = "0.80.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4066,5 +4066,55 @@ def _paper_076(dataset):
                     'm_gamma^2 = hbar^2*rho_UA*c^2/eps0 (DOES NOT CLOSE - Q-072a)'),
         'source': 'PAPER_076',
         'residual_pct': abs(2 * _m.pi * 29.65 - 186.3) / 186.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_077')
+def _paper_077(dataset):
+    """LIGO GWTC-4.0 Ringdown Cross-Validation (Session 0).
+
+    RESOLVES Q-060d: the three Batch-23 GWTC-4.0 ringdown events
+    are NAMED - GW150914 (251 Hz), GW190521 (89 Hz), GW200115
+    (~2800 Hz). Event mass anchors match published GWTC values
+    (35.6+30.6 -> 63.1; 85+66 -> 142; 5.7+1.5 -> 7.1 - radiated
+    masses physical).
+    UQFF corrections are TINY by construction: ringdown +1e-5 *
+    (r^2/GM) -> deltas 0.0003/0.0001/0.03 Hz (fractions ~1e-6);
+    d_L correction (1 + [UA]*z) < 0.01 pct at z=1 EXACT - [UA] =
+    1e-4 FIFTH appearance. GWTC constraints therefore UNMODIFIED
+    at current precision (null suite like PAPER_076).
+    HONEST RESIDUALS: the printed QNM formula evaluates to
+    285/130/1975 Hz vs printed 251/89/2800 (13-46 pct off) - the
+    printed values track REAL observed ringdowns; the formula is
+    the rough Echeverria approximation. Anchors wired over
+    formula. Internal inconsistency: GW150914 M_f = 65.3 (sec 2)
+    vs 63.1 (table) - Q-073b.
+    """
+    import math as _m
+    c3 = (2.998e8) ** 3
+    qnm = lambda mf, af: c3 / (2 * _m.pi * 6.674e-11 * mf * 1.989e30) * (1 - 0.63 * (1 - af) ** 0.3)
+    events = {
+        'gw150914': {'m1': 35.6, 'm2': 30.6, 'mf': 63.1, 'af': 0.69,
+                     'f_ring_hz': 251.0, 'f_uqff_hz': 251.0003, 'qnm_formula_hz': qnm(63.1, 0.69)},
+        'gw190521': {'m1': 85.0, 'm2': 66.0, 'mf': 142.0, 'af': 0.72,
+                     'f_ring_hz': 89.0, 'f_uqff_hz': 89.0001, 'qnm_formula_hz': qnm(142.0, 0.72)},
+        'gw200115': {'m1': 5.7, 'm2': 1.5, 'mf': 7.1, 'af': 0.30,
+                     'f_ring_hz': 2800.0, 'f_uqff_hz': 2800.03, 'qnm_formula_hz': qnm(7.1, 0.30)},
+    }
+    return {
+        'value': {
+            'domain': '1.10 (LIGO GWOSC endpoints)',
+            'events': events,                              # RESOLVES Q-060d
+            'dl_correction_z1_pct': 1.0e-4 * 1.0 * 100,    # 0.01 EXACT, [UA] 5th
+            'ringdown_fraction_gw150914': 0.0003 / 251.0,  # ~1e-6 tiny
+            'gw150914_mf_conflict': (65.3, 63.1),          # Q-073b
+            'chirp_mass_status': 'unmodified',
+            'sky_localization_status': 'unmodified',
+        },
+        'formula': ('f_QNM = c^3/(2 pi G M_f)*(1-0.63*(1-a_f)^0.3) [approx]; '
+                    'f_UQFF = f_QNM*(1 + 1e-5*r^2/GM); d_L_UQFF = d_L*(1+[UA]*z)'),
+        'source': 'PAPER_077',
+        'residual_pct': abs(qnm(63.1, 0.69) - 251.0) / 251.0 * 100,
         'status': 'OPEN_RULING',
     }

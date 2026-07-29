@@ -456,3 +456,7 @@ observable,fermi_null_predictions,paper,PAPER_076,null predictions
 primitive,RHO_UA,observable,photon_mass_formula_defect,formula input
 observable,fermi_null_predictions,paper,PAPER_066,Crab spin conflict
 observable,photon_mass_formula_defect,paper,PAPER_076,formula forensic
+observable,gwtc4_ringdown_events,paper,PAPER_077,event naming
+observable,gwtc4_ringdown_events,paper,PAPER_064,resolves Q-060d
+observable,gw_dl_ua_correction,paper,PAPER_077,null correction
+observable,gw_dl_ua_correction,paper,PAPER_075,[UA] 5th appearance
