@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.14.0", "uqff_calculator.VERSION = 0.14.0")
+assert_that(C.VERSION == "0.15.0", "uqff_calculator.VERSION = 0.15.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -307,6 +307,19 @@ assert_that(abs(_r015['delta_mu_z1_mag'] - 0.12) < 1e-12,
 assert_that(abs(_r015['ligo_horizon_mpc'][1] / _r015['ligo_horizon_mpc'][0] - _r015['uqff_factor']) < 0.001,
             "PAPER_015: 8355/13440 = 0.6216 ~ UQFF_factor 0.622 internally consistent")
 assert_that(C.wired_count() >= 15, "wired_count >= 15")
+
+_r015b = C.calc('PAPER_015b')['value']
+assert_that(abs(_r015b['snr_gw150914'][1] / _r015b['snr_gw150914'][0] - 0.622) < 0.002,
+            "PAPER_015b: GW150914 SNR 167/268 = 0.6231 ~ D = 0.622")
+assert_that(abs(_r015b['snr_smbh_z1'][1] / _r015b['snr_smbh_z1'][0] - 0.622) < 0.002,
+            "PAPER_015b: SMBH SNR 694/1116 = 0.6219 ~ D = 0.622")
+assert_that(_r015b['freq_independence_check'] < 0.001,
+            "PAPER_015b: LIGO ratio == LISA ratio within 1e-3 (frequency independence)")
+assert_that(abs(_r015b['detection_volume_vs_gr'] - 0.241) < 0.001,
+            "PAPER_015b: V/V_GR = 0.622^3 = 0.2407 ~ paper 0.241")
+assert_that(abs(_r015b['d_pure_bbh_ligo'] - 1.0/3.0) < 1e-15,
+            "PAPER_015b: pure LIGO BBH factor 0.333 disclosed (0.622 = cross-band avg)")
+assert_that(C.wired_count() >= 16, "wired_count >= 16")
 
 # =============================================================================
 # REPORT

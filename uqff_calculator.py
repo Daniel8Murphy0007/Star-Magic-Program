@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.14.0"
+VERSION = "0.15.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -119,6 +119,44 @@ def _paper_015(dataset):
         'source': 'PAPER_015',
         'residual_pct': abs(70 * 1.07 - 75.0) / 75.0 * 100,          # 0.13 pct vs paper 75.0
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_015b')
+def _paper_015b(dataset):
+    """Multi-Band GW Astronomy: LISA+LIGO Synergy Under UQFF (Session 0).
+
+    D = 0.622 is FREQUENCY-INDEPENDENT across mHz (LISA) and 100 Hz
+    (LIGO) bands — coherent cross-band suppression is the hallmark of
+    vacuum propagation vs source-property effects. Paper sec 2.1
+    discloses the 0.622-vs-0.333 relation explicitly: pure LIGO BBH
+    regime factor is 0.333, 0.622 is the cross-band multiband average
+    (self-rectifies the factor question noted at PAPER_015).
+    Minor slip: abstract says "0.522 x correction" for the volume
+    ratio; sec 4 computes 0.622^3 = 0.241 (wired; noted in registry).
+    """
+    d_multiband = 0.622                       # cross-band average (paper sec 2.1)
+    d_pure_bbh = 1.0 / 3.0                    # paper: pure LIGO BBH regime 0.333
+    return {
+        'value': {
+            'd_multiband': d_multiband,
+            'd_pure_bbh_ligo': d_pure_bbh,
+            'ligo_horizon_mpc': (13440.0, 8355.0),        # GR -> UQFF, 37.8 pct reduction
+            'lisa_horizon_gpc': (140.8, 87.5),            # GR -> UQFF, 37.9 pct reduction
+            'snr_gw150914': (268.0, 167.0),               # GR -> UQFF
+            'snr_smbh_z1': (1116.0, 694.0),               # GR -> UQFF
+            'detection_volume_vs_gr': d_multiband ** 3,   # 0.2407 ~ 24 pct
+            'rates_per_yr': {'bbh_ligo': (90.0, 22.0),
+                             'bns_ligo': (10.0, 2.4),
+                             'smbh_lisa': (30.0, 7.2)},
+            'freq_independence_check': abs(8355.0/13440.0 - 87.5/140.8),  # ~2e-4
+        },
+        'formula': ('h_UQFF = h_GR*(1 - U_bi/F_U)*exp(-kappa*t); '
+                    'd_max(UQFF)/d_max(GR) = D = 0.622 both bands; '
+                    'V(UQFF)/V(GR) = D^3 = 0.241'),
+        'source': 'PAPER_015b',
+        'residual_pct': abs(d_multiband**3 - 0.24) / 0.24 * 100,
+        'status': 'WIRED',
     }
 
 def calc(paper_id, dataset=None):

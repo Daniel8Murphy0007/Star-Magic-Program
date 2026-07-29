@@ -66,3 +66,7 @@ observable,gw_propagation_damping_law,paper,PAPER_015,primary derivation
 observable,standard_siren_h0_bias,paper,PAPER_015,primary derivation
 observable,gw_detection_volume_uqff,paper,PAPER_015,validator block
 observable,gw_detection_volume_uqff,paper,PAPER_011,mixed-population cross-check
+primitive,KAPPA_PER_DAY,observable,multiband_uqff_factor,h_UQFF = h_GR*(1-U_bi/F_U)*exp(-kappa*t)
+observable,multiband_uqff_factor,paper,PAPER_015b,primary derivation
+observable,multiband_detection_volume,paper,PAPER_015b,primary derivation
+observable,multiband_uqff_factor,paper,PAPER_015,validator cross-check (same 0.622)

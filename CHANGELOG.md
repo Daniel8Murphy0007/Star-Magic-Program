@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.15.0] — 2026-07-29 — BAND 1: PAPER_015b
+
+### Added
+- **PAPER_015b dispatch** (Multiband LISA+LIGO Synergy): D = 0.622
+  FREQUENCY-INDEPENDENT across mHz and 100 Hz bands — coherent cross-band
+  suppression as the vacuum-propagation hallmark. SNR 268->167 (GW150914)
+  and 1116->694 (SMBH z~1) both exactly 0.622; horizons 13440->8355 Mpc /
+  140.8->87.5 Gpc; volume 24% GR. Paper itself discloses 0.622 =
+  cross-band average of pure-BBH 0.333 — self-documents the factor
+  relation flagged at PAPER_015. CLEAN wiring (abstract "0.522" slip
+  noted in registry, sec-4 form wired).
+- Gate: 136 assertions, 0 failures. Registry: 46 rows / 71 edges / 16 ledgers.
+
+---
+
 ## [0.14.0] — 2026-07-29 — BAND 1: PAPER_015
 
 ### Added

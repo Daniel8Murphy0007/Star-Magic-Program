@@ -474,3 +474,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 15/2,255 (5 ✓, 10 ⚠). Next: PAPER_015b (Multiband LISA/LIGO).
 
 ---
+
+## 2026-07-29 — v0.15.0 — BAND 1: PAPER_015b
+
+- PAPER_015b wired (✓ CLEAN): multiband LISA+LIGO. D = 0.622
+  frequency-independent, SNR ratios internally exact; paper discloses
+  0.622 = cross-band average of pure-BBH 0.333. Volume 24% GR.
+- Gate 136/0. Registry 46 rows / 71 edges / 16 ledgers.
+- Campaign: 16/2,255 (6 ✓, 10 ⚠). Next: PAPER_016.
+
+---

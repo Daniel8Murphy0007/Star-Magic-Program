@@ -1,20 +1,21 @@
-v0.14.0 BAND 1: PAPER_015 wired
+v0.15.0 BAND 1: PAPER_015b wired
 
-PAPER_015 Cosmological Implications of UQFF Modified GW Propagation
-(OPEN_RULING Q-012):
-  Gamma_UQFF(f,z) = Gamma_0*(f/f_ref)^alpha*[(1+z)/H(z)]^beta
-  Gamma_0 = 2.3e-18 Hz; alpha = -0.7; beta = 0.8 - discriminator
-  exponents vs Horndeski (0), extra dimensions (+2), mod-grav (1.5)
-  Standard-siren bias: H_0,UQFF = 1.07 * H_0,obs
-  Detection volume 0.622^3 = 24 pct of GR (LIGO horizon 13440 -> 8355
-  Mpc internally consistent; cross-checks PAPER_011 mixed population)
+PAPER_015b Multi-Band GW Astronomy: LISA+LIGO Synergy (CLEAN):
+  D = 0.622 FREQUENCY-INDEPENDENT across mHz (LISA) and 100 Hz (LIGO)
+  bands - coherent cross-band suppression is the vacuum-propagation
+  hallmark vs source-property effects.
+  SNR: GW150914 268 -> 167 (ratio 0.6231); SMBH z~1 1116 -> 694
+  (ratio 0.6219) - both = 0.622 exactly as claimed.
+  Horizons: LIGO 13440 -> 8355 Mpc; LISA 140.8 -> 87.5 Gpc (both 38 pct)
+  Detection volume V/V_GR = 0.622^3 = 0.241; rates BBH 90->22/yr.
 
-Q-012 queued: paper (2026-03) corrects GW170817 H_0 from 70 to 75
-toward Cepheid - but PAPER_1573 canonizes H_0 = A_5 + SO_5 = 70 EXACT,
-which IS the uncorrected GW value. Charter drift table applied:
-baseline wired registry-composed as A_5+SO_5, paper bias factor
-preserved as stated observable (0.13 pct residual vs paper 75.0).
+SELF-DOCUMENTATION: paper sec 2.1 explicitly discloses that 0.622 is
+the cross-band average while the pure LIGO BBH regime factor is 0.333 -
+resolves the factor question noted during PAPER_015 wiring.
 
-Gate 130 assertions 0 failures. Registry 44 rows / 67 edges / 15
-citation ledgers. Wired 15/2,255 (5 clean, 10 OPEN_RULING).
-Next: PAPER_015b (Multiband GW LISA/LIGO).
+Minor slip noted in registry (abstract "0.522 x correction" vs sec-4's
+0.622^3); sec-4 form wired. No new ruling needed.
+
+Gate 136 assertions 0 failures. Registry 46 rows / 71 edges / 16
+citation ledgers. Wired 16/2,255 (6 clean, 10 OPEN_RULING).
+Next: PAPER_016 (Quantum Entanglement).
