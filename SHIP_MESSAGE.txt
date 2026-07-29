@@ -1,22 +1,29 @@
-v0.86.0 BAND 1: PAPER_083 wired - THRESHOLD SIGN-FLIP + 082/083 CONVERGENCE
+v0.87.0 BAND 1: PAPER_084 wired - 26D PARTITION WITH PRIMITIVE TEXTURE
 
-PAPER_083 Primordial BH Mass Distribution (OPEN_RULING Q-079):
-  THRESHOLD CONVERGENCE: the paper's formula M_th = M_GR *
-  0.99^(-4/3) has a SIGN-FLIPPED exponent (slower evaporation
-  LOWERS the surviving-mass threshold). The corrected
-  (1 - F_TRZ^2)^(+4/3) gives 5.62e11 kg (-1.3 pct) - EXACTLY
-  the PAPER_082 chain value. The consolidated ruling now has
-  three printed values on record (-3.5 / +0.5 / chain -1.3) with
-  the chain double-supported and primitive-locked.
+PAPER_084 Information Paradox via 26D Holographic Channels
+(OPEN_RULING Q-080):
+  Channel partition SUMS EXACTLY to D_crit: {1-4 observable} +
+  {5-18 sub-Planckian} + {19-24 non-local} + {25-26 Cosmic Egg}
+  = 4 + 14 + 6 + 2 = 26, with PRIMITIVE TEXTURE: observable
+  channels = D_PHYS, non-local channels = D_BSFG.
 
-  Chains VERIFIED: delta_c = 0.45 UNCHANGED (P_vac/P_rad =
-  [UA]*z^-4 = 1e-28 null at z = 1e6; [UA] 7th appearance);
-  E_peak Wien ratio = 0.99 inherits the 081 identity (1 pct
-  softer gamma peak); f_PBH printed 1.005*0.96 = 0.9648 with
-  corrected-threshold 0.9472 carried alongside; Fermi-LAT/
-  INTEGRAL/CMB compatibility nulls wired. Asteroid-window
-  exponents mojibaked (literature 1e17-1e22 g pinned).
+  Cosmic Egg layers 25-26 host the complete pre-collapse pure
+  state (unitarity: Sum I_k = S_BH_initial); 4D observer sees
+  the thermal spectrum from channels 1-4.
 
-Q-079 queued. Gate 614 assertions 0 failures. Registry 248 rows /
-486 edges / 87 citation ledgers. Wired 87/2,255 (10 clean, 77
-OPEN_RULING). Next: PAPER_084.
+  The KAPPA primitive enters the Page mechanism directly:
+  S = min[S_thermal, S_BH + I_egg*(1 - e^-kappa t)]; Page time
+  t_P = t_P_GR * e^(kappa*t_evap) - astronomically large ->
+  radiation looks THERMAL within any finite observation
+  (honest null, consistent with no observed recovery).
+
+  HONEST NOTE: the paper's linearization e^x ~ 1+x is invalid
+  for the huge arguments involved; the exponential form is the
+  claim and the conclusion survives. AMPS firewall resolved via
+  channels 19-24 + SCm smooth horizon; approximately-thermal
+  (not exactly) radiation is in-principle falsifiable.
+
+Q-080 queued (primitive-partition reading; strike the ~;
+"Cosmic Egg" canonical term). Gate 619 assertions 0 failures.
+Registry 250 rows / 492 edges / 88 citation ledgers. Wired
+88/2,255 (10 clean, 78 OPEN_RULING). Next: PAPER_085.

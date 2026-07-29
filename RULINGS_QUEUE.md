@@ -1441,6 +1441,25 @@ RESOLVED section with the ruling recorded.
   values carried; nulls verified.
 - **Daniel's ruling:** (pending)
 
+### Q-080 — PAPER_084 — primitive partition + Page linearization + Cosmic Egg
+- **Question:** (a) The 26-channel partition {1-4 observable,
+  5-18 sub-Planckian, 19-24 non-local, 25-26 Cosmic Egg} = 4+14+
+  6+2 = 26 EXACT, with observable = D_PHYS and non-local =
+  D_BSFG - is the primitive structure intended (and is 14 = 26 -
+  2*6 or another composition)? (b) The Page-time linearization
+  e^(kappa*t_evap) ~ 1 + kappa*t_evap is INVALID for the huge
+  arguments involved - the exponential form is the claim and the
+  thermal-within-observation conclusion survives; strike the ~?
+  (c) "Cosmic Egg" (layers 25-26) makes its first campaign
+  appearance - canonical term for the registry?
+- **Notable:** kappa enters the Page mechanism directly;
+  approximately-thermal (not exactly) 4D radiation is an
+  in-principle falsifiable deviation; conservation Sum I_k =
+  S_BH wired.
+- **Best-candidate wired:** structural partition + Page formula +
+  honest linearization note.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

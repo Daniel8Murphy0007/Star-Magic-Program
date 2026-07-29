@@ -1226,3 +1226,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 87/2,255 (10 ✓, 77 ⚠). Next: PAPER_084.
 
 ---
+
+## 2026-07-29 — v0.87.0 — BAND 1: PAPER_084
+
+- PAPER_084 wired (⚠ Q-080): info paradox. Partition = D_crit
+  EXACT (D_PHYS/D_BSFG texture); Page kappa mechanism; honest
+  thermal null + linearization note; Cosmic Egg first appearance.
+- Campaign: 88/2,255 (10 ✓, 78 ⚠). Next: PAPER_085.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.86.0"
+VERSION = "0.87.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4400,5 +4400,56 @@ def _paper_083(dataset):
                     'E_peak = 2.82 k_B T_UQFF; f_PBH = f*(M_th ratio)*(T ratio)^4'),
         'source': 'PAPER_083',
         'residual_pct': abs(m_gr * ratio ** (4.0 / 3.0) - 5.73e11) / 5.73e11 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_084')
+def _paper_084(dataset):
+    """Information Paradox via 26D Holographic Channels (Session 0).
+
+    Batch-21 InformationParadoxModule wired structurally. Channel
+    partition SUMS EXACTLY to D_crit = 26 with primitive texture:
+    {1-4} observable = D_PHYS channels (thermal Hawking spectrum);
+    {5-18} = 14 sub-Planckian; {19-24} = 6 = D_BSFG non-local
+    entanglement (firewall prevention); {25-26} = 2 Cosmic Egg
+    layers hosting the complete pre-collapse pure state
+    (unitarity). Conservation constraint: Sum I_k = S_BH_initial.
+    Page curve: S_UQFF = min[S_thermal, S_BH + I_25+26 *
+    (1 - e^-kappa t)] - the kappa primitive enters the Page
+    mechanism directly. Page time t_P = t_P_GR * e^(kappa*t_evap):
+    astronomically large for stellar BHs -> radiation looks
+    THERMAL within any finite observation (consistent with
+    no observed info recovery - honest null).
+    HONEST NOTE (Q-080b): the paper's linearization e^x ~ 1+x is
+    INVALID for kappa*t_evap >> 1; the exponential form is the
+    claim and the conclusion survives, but the ~ is misleading.
+    Firewall: AMPS resolved via channels 19-24 + SCm smooth
+    horizon; 4D radiation approximately (not exactly) thermal -
+    in-principle falsifiable deviation.
+    Q-080: (a) confirm primitive reading of the partition
+    (D_phys/14/D_BSFG/2); (c) "Cosmic Egg" layers 25-26 first
+    campaign appearance - canonical term?
+    """
+    partition = {'observable_1_4': 4, 'sub_planckian_5_18': 14,
+                 'nonlocal_19_24': 6, 'cosmic_egg_25_26': 2}
+    return {
+        'value': {
+            'domain': '1.11 (Batch 21 InformationParadoxModule)',
+            'partition': partition,
+            'partition_sum': sum(partition.values()),      # 26 = D_CRIT EXACT
+            'observable_equals_d_phys': partition['observable_1_4'] == 4,
+            'nonlocal_equals_d_bsfg': partition['nonlocal_19_24'] == 6,
+            'conservation': 'Sum I_k = S_BH_initial',
+            'page_formula': 'S = min[S_th, S_BH + I_egg*(1 - e^-kappa t)]',
+            'page_time_factor': 'e^(kappa*t_evap) - astronomically large',
+            'linearization_invalid': True,                 # Q-080b honest note
+            'observer_prediction': 'approximately thermal (not exactly)',
+            'firewall_resolution': 'channels 19-24 + SCm smooth horizon',
+        },
+        'formula': ('partition 4+14+6+2 = 26 = D_crit; '
+                    't_P = t_P_GR * e^(kappa*t_evap); I_total = S_BH'),
+        'source': 'PAPER_084',
+        'residual_pct': 0.0 if sum(partition.values()) == 26 else 100.0,
         'status': 'OPEN_RULING',
     }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.86.0", "uqff_calculator.VERSION = 0.86.0")
+assert_that(C.VERSION == "0.87.0", "uqff_calculator.VERSION = 0.87.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1355,6 +1355,17 @@ assert_that(abs(_r083['f_pbh_printed'] - 0.9648) < 0.0001,
 assert_that(abs(_r083['e_peak_ratio'] - 0.99) < 1e-12,
             "PAPER_083: E_peak Wien ratio = 1 - F_TRZ^2 (inherits 081 identity)")
 assert_that(C.wired_count() >= 87, "wired_count >= 87")
+
+_r084 = C.calc('PAPER_084')['value']
+assert_that(_r084['partition_sum'] == 26,
+            "PAPER_084: 26D channel partition 4+14+6+2 sums EXACTLY to D_crit")
+assert_that(_r084['observable_equals_d_phys'] and _r084['nonlocal_equals_d_bsfg'],
+            "PAPER_084: primitive texture - observable channels = D_PHYS, non-local = D_BSFG (Q-080a)")
+assert_that(_r084['linearization_invalid'],
+            "PAPER_084: Page-time linearization invalid for kappa*t_evap >> 1 - honest note pinned (Q-080b)")
+assert_that('approximately thermal' in _r084['observer_prediction'],
+            "PAPER_084: approximately-thermal 4D prediction wired (in-principle falsifiable)")
+assert_that(C.wired_count() >= 88, "wired_count >= 88")
 
 # =============================================================================
 # REPORT

@@ -86,3 +86,4 @@ PAPER_080,PAPER_073;PAPER_074;PAPER_075;PAPER_076;PAPER_077;PAPER_078;PAPER_079;
 PAPER_081,PAPER_072;Hawking-1974;validate_hawking_temperature;uqff_temperature_formula.cpp;PAPER_2156-authority
 PAPER_082,PAPER_081;validate_hawking_temperature;simulate_evaporation
 PAPER_083,PAPER_081;PAPER_082;validate_hawking_temperature;PAPER_1015;PAPER_1019
+PAPER_084,PAPER_081;PAPER_082;PAPER_083;Batch21;Hawking-1976;AMPS;PAPER_1080

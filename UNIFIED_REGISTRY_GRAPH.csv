@@ -486,3 +486,9 @@ observable,pbh_threshold_convergence,paper,PAPER_082,chain convergence
 primitive,F_TRZ,observable,pbh_threshold_convergence,(1-F_TRZ^2)^(4/3)
 observable,pbh_nulls_fpbh,paper,PAPER_083,nulls + f_PBH
 observable,pbh_nulls_fpbh,paper,PAPER_081,Wien-ratio inheritance
+observable,info_paradox_26d_channels,paper,PAPER_084,channel structure
+primitive,D_CRIT,observable,info_paradox_26d_channels,partition sum
+primitive,D_PHYS,observable,info_paradox_26d_channels,observable channels
+primitive,D_BSFG,observable,info_paradox_26d_channels,non-local channels
+observable,uqff_page_curve,paper,PAPER_084,Page mechanism
+primitive,KAPPA_PER_DAY,observable,uqff_page_curve,decay term

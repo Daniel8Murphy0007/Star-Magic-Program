@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.86.0"
-description = "UQFF Star-Magic-Program v0.86.0: PAPER_083 wired (primordial BHs: threshold sign-flip caught - corrected (1-F_TRZ^2)^(4/3) gives 5.62e11 kg (-1.3 pct) EXACTLY matching the 082 chain, double-supporting the consolidated ruling; delta_c null verified; Wien ratio inherits 081 identity; f_PBH both readings carried; [UA] 7th appearance). Q-079 queued. Wired 87/2255, gate 614/0. Registry 248 rows / 486 edges / 87 ledgers."
+version = "0.87.0"
+description = "UQFF Star-Magic-Program v0.87.0: PAPER_084 wired (information paradox via 26D channels: partition 4+14+6+2 = D_crit EXACT with primitive texture - observable = D_PHYS, non-local = D_BSFG; Cosmic Egg layers 25-26 host the pure state; kappa enters the Page mechanism directly; thermal-within-observation honest null; invalid-linearization note pinned). Q-080 queued. Wired 88/2255, gate 619/0. Registry 250 rows / 492 edges / 88 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

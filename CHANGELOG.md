@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.87.0] — 2026-07-29 — BAND 1: PAPER_084
+
+### Added
+- **PAPER_084 dispatch** (Information Paradox 26D): channel
+  partition 4+14+6+2 = 26 = D_crit EXACT with primitive texture
+  (observable channels = D_PHYS; non-local = D_BSFG); Cosmic Egg
+  layers 25-26 host the complete pure state (unitarity, Sum I_k
+  = S_BH). Page curve carries the kappa primitive directly:
+  S = min[S_th, S_BH + I_egg*(1 - e^-kappa t)]; Page time
+  e^(kappa*t_evap) astronomically large -> thermal-within-
+  observation honest null. AMPS firewall via channels 19-24 +
+  SCm smooth horizon; approximately-thermal 4D radiation is an
+  in-principle falsifiable deviation. Invalid-linearization note
+  pinned.
+- OPEN_RULING Q-080 (primitive partition; strike the ~;
+  "Cosmic Egg" canonical term).
+- Gate: 619 assertions, 0 failures. Registry: 250 rows / 492 edges / 88 ledgers.
+
+---
+
 ## [0.86.0] — 2026-07-29 — BAND 1: PAPER_083
 
 ### Added
