@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 34 (7 ✓, 27 ⚠ OPEN_RULING)
+- **Wired:** 35 (7 ✓, 28 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2221
+- **Not yet touched:** 2220
 
 ---
 
@@ -64,7 +64,7 @@
 | ⚠ | PAPER_028 | BSM Coupling Constants UQFF |
 | ⚠ | PAPER_029 | New Physics TeV Scale UQFF |
 | ⚠ | PAPER_030 | Dark Sector Mediators UQFF |
-| ⬜ | PAPER_031 | Flavor Anomalies Resolution UQFF |
+| ⚠ | PAPER_031 | Flavor Anomalies Resolution UQFF |
 | ⬜ | PAPER_032 | BSM Scalar Sectors UQFF |
 | ⬜ | PAPER_033 | Electroweak Precision UQFF |
 | ⬜ | PAPER_034 | Higgs Kappa t Coupling UQFF |

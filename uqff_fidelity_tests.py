@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.33.0", "uqff_calculator.VERSION = 0.33.0")
+assert_that(C.VERSION == "0.34.0", "uqff_calculator.VERSION = 0.34.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -580,6 +580,21 @@ assert_that(abs(_r030['hl_lhc_reach'] - 7.9e-7) / 7.9e-7 < 0.01,
 assert_that(abs(_r030['t_n_lfv'] - 3.8327) < 0.001,
             "PAPER_030: t_n = 3.833 shared with PAPER_027 (corpus consistency)")
 assert_that(C.wired_count() >= 34, "wired_count >= 34")
+
+_r031 = C.calc('PAPER_031')['value']
+assert_that(abs(_r031['r_d_uqff'] - 0.332) < 0.001,
+            "PAPER_031: R(D) = 0.298/(1-(m_tau/m_b)^2*SSq) = 0.332 (1.9 -> 0.9 sigma)")
+assert_that(abs(_r031['r_dstar_uqff'] - 0.269) < 0.001,
+            "PAPER_031: R(D*) = 0.269 with F_TRZ factor in denominator (3.3 -> 1.2 sigma)")
+assert_that(abs(_r031['c_d_kinematic'] - 0.1806) < 0.0005,
+            "PAPER_031: C = (m_tau/m_b)^2 = 0.1806 (printed as unsquared - Q-030a)")
+assert_that(abs(_r031['ckm_uqff_mapping'] - 0.0020) < 0.0001,
+            "PAPER_031: CKM row-2 deficit 2*[SCm]_flavor*0.65 = 0.0020 mapped")
+assert_that(abs(_r031['tera_z_shift'] - 5.8e-7) / 5.8e-7 < 0.01,
+            "PAPER_031: Tera-Z shift [SCm]*m_tau^2/m_Z^2 = 5.8e-7 (FCC-ee testable)")
+assert_that(abs(_r031['lfu_uqff'] - 1.060) < 0.001,
+            "PAPER_031: LFU = 1 + m_mu/m_tau = 1.060 (Belle II 1.020 within 1.3 sigma)")
+assert_that(C.wired_count() >= 35, "wired_count >= 35")
 
 # =============================================================================
 # REPORT

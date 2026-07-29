@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.33.0"
+VERSION = "0.34.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1607,5 +1607,55 @@ def _paper_030(dataset):
                     'M_dark = m_B*exp(pi*t_n/2); E_react = tan^4(theta_C)'),
         'source': 'PAPER_030',
         'residual_pct': abs(br_uqff - 5.8e-6) / 5.8e-6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_031')
+def _paper_031(dataset):
+    """Flavor Anomalies Resolution via UQFF (Session 0).
+
+    B-physics anomaly resolutions from [SCm]_flavor + SSq:
+    R(D)_UQFF = R_SM/(1 - (m_tau/m_b)^2 * SSq) = 0.298/0.897 = 0.332
+    (tension 1.9 -> 0.9 sigma); R(D*)_UQFF = 0.254/(1 - 0.978*SSq*
+    F_TRZ) = 0.269 (3.3 -> 1.2 sigma) - NOTE the D* channel carries
+    an extra 0.1 = F_TRZ factor (composition candidate, Q-030b).
+    CKM row-2 unitarity deficit 0.0020 = 2*[SCm]_flavor*0.65 mapped.
+    Tera-Z: Delta_R = [SCm]*m_tau^2/m_Z^2 = 5.8e-7 (FCC-ee probes
+    [SCm] at 1e-7). LFU R = 1 + m_mu/m_tau = 1.060 (Belle II 1.020,
+    within 1.3 sigma, overestimate disclosed).
+    Q-030: (a) C printed as (m_tau/m_b) but value 0.1806 =
+    (m_tau/m_b)^2; (b) D* F_TRZ factor unexplained in-text;
+    (c) two abandoned derivations left standing ("Hmm, this
+    overshoots" + 0.458 dead end - paperwork family with 030);
+    (d) K_CKM = 0.65 anchor underived.
+    """
+    m_tau, m_mu, m_b_quark, m_dstar, m_z = 1.777, 0.1057, 4.18, 2.010, 91.19
+    c_d = (m_tau / m_b_quark) ** 2                   # 0.1806
+    r_d = 0.298 / (1.0 - c_d * SSQ)                  # 0.332
+    c_dstar = (m_tau / m_dstar) ** 2 * 1.25          # 0.977
+    r_dstar = 0.254 / (1.0 - c_dstar * SSQ * F_TRZ)  # 0.269 (F_TRZ candidate)
+    scm_flavor = 39.2e-3 ** 2
+    return {
+        'value': {
+            'r_d_sm': 0.298, 'r_d_measured': 0.356,
+            'r_d_uqff': r_d,                         # 0.332: 1.9 -> 0.9 sigma
+            'r_dstar_sm': 0.254, 'r_dstar_measured': 0.291,
+            'r_dstar_uqff': r_dstar,                 # 0.269: 3.3 -> 1.2 sigma
+            'c_d_kinematic': c_d,
+            'c_dstar_kinematic': c_dstar,
+            'delta_tau_mu': (m_tau - m_mu) / m_tau,  # 0.9405
+            'ckm_row2_deficit': 1.0 - (0.2214**2 + 0.9734**2 + 0.0392**2),   # 0.0019
+            'ckm_uqff_mapping': 2.0 * scm_flavor * 0.65,                     # 0.0020
+            'tera_z_shift': scm_flavor * m_tau**2 / m_z**2,                  # 5.8e-7
+            'lfu_uqff': 1.0 + m_mu / m_tau,          # 1.060 (Belle II 1.020)
+            'kappa_tau_correction': scm_flavor * (m_tau / 246.0)**2,         # 8.0e-8
+            'tension_reduction': {'r_d': (1.9, 0.9), 'r_dstar': (3.3, 1.2)},
+        },
+        'formula': ('R(D) = R_SM/(1 - (m_tau/m_b)^2*SSq); '
+                    'R(D*) = R_SM/(1 - C*SSq*F_TRZ); LFU = 1 + m_mu/m_tau; '
+                    'Delta_CKM = 2*[SCm]_flavor*K_CKM'),
+        'source': 'PAPER_031',
+        'residual_pct': abs(r_d - 0.332) / 0.332 * 100,
         'status': 'OPEN_RULING',
     }

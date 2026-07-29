@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.34.0] — 2026-07-29 — BAND 1: PAPER_031
+
+### Added
+- **PAPER_031 dispatch** (Flavor Anomalies Resolution): R(D)_UQFF =
+  R_SM/(1-(m_tau/m_b)^2*SSq) = 0.332 — tension 1.9 -> 0.9 sigma;
+  R(D*)_UQFF = 0.269 with an F_TRZ factor in the vector channel —
+  tension 3.3 -> 1.2 sigma (the 0.1 factor equals F_TRZ exactly;
+  composition candidate queued). CKM row-2 unitarity deficit 0.0020
+  mapped to 2*[SCm]_flavor*K_CKM; Tera-Z shift 5.8e-7 (FCC-ee probes
+  [SCm] at 1e-7); LFU = 1 + m_mu/m_tau = 1.060 vs Belle II 1.020
+  (1.3 sigma, overestimate disclosed); kappa_tau correction 8e-8
+  negligible — discrimination comes from Tera-Z, not Higgs couplings.
+  OPEN_RULING Q-030 (kinematic-notation slip; D* F_TRZ; abandoned
+  in-text derivations; K_CKM = 0.65 underived).
+- Gate: 263 assertions, 0 failures. Registry: 103 rows / 201 edges / 35 ledgers.
+
+---
+
 ## [0.33.0] — 2026-07-29 — BAND 1: PAPER_030
 
 ### Added

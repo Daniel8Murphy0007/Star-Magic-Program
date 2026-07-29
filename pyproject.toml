@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.33.0"
-description = "UQFF Star-Magic-Program v0.33.0: PAPER_030 wired (dark sector mediators: F_suppress = cos^2(pi*t_n) = 0.749; BR_UQFF = 5.8e-6 SATURATES LHCb bound - LHCb Upgrade II must see it or kill it; M_dark = m_B*exp(pi*t_n/2) = 2.2 TeV; E_react = tan^4(theta_C) verified; one vacuum geometry covers Z-prime/LQ/HNL). Q-029 queued. Registry hits 100 rows. Wired 34/2255, gate 256/0. Registry 100 rows / 195 edges / 34 ledgers."
+version = "0.34.0"
+description = "UQFF Star-Magic-Program v0.34.0: PAPER_031 wired (flavor anomalies: R(D) = 0.332 via SSq denominator, 1.9->0.9 sigma; R(D*) = 0.269 with F_TRZ factor, 3.3->1.2 sigma; CKM row-2 deficit 0.0020 mapped to 2*[SCm]_flavor*0.65; Tera-Z 5.8e-7 FCC-ee-testable; LFU 1.060). Q-030 queued (D* F_TRZ candidate; K_CKM anchor). Wired 35/2255, gate 263/0. Registry 103 rows / 201 edges / 35 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

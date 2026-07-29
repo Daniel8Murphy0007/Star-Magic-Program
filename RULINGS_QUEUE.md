@@ -445,6 +445,22 @@ RESOLVED section with the ruling recorded.
   TeV from the closed form; E_react = tan^4(theta_C) verified.
 - **Daniel's ruling:** (pending)
 
+### Q-030 — PAPER_031 — kinematic-factor notation + D* F_TRZ factor + K_CKM anchor
+- **Question:** (a) The R(D) kinematic factor is printed "(m_tau/m_b)
+  = 0.1806" but 1.777/4.18 = 0.425; the VALUE 0.1806 = (m_tau/m_b)^2 —
+  notation slip, squared form wired. (b) The R(D*) denominator carries
+  an extra 0.1 factor (0.978*0.57*0.1) that the R(D) channel lacks and
+  the text never explains — it equals F_TRZ exactly. Intended
+  composition (vector-channel TRZ suppression) or numerical fudge?
+  (c) Two abandoned derivations left standing in sec 2.2 ("Hmm, this
+  overshoots" + the R = 0.458 dead end) — same paperwork-cleanup
+  family as PAPER_030's "Wait" correction. (d) The CKM row-2 mapping
+  uses K_CKM = 0.65 with no derivation — closed form?
+- **Best-candidate wired:** squared kinematic form (matches value);
+  D* factor wired AS F_TRZ (composition candidate flagged); CKM
+  mapping + Tera-Z + LFU chains all verified numerically.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

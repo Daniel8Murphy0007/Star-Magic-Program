@@ -194,3 +194,9 @@ observable,dark_mediator_suppression,paper,PAPER_027,shared t_n = 3.833
 observable,dark_mediator_mass_scale,paper,PAPER_030,primary derivation
 observable,e_react_cabibbo_form,paper,PAPER_030,primary derivation
 observable,e_react_cabibbo_form,paper,PAPER_028,Cabibbo-sector cross-ref
+primitive,SSQ,observable,rd_rdstar_resolution,denominator SSq factor both channels
+primitive,F_TRZ,observable,rd_rdstar_resolution,D* channel 0.1 factor candidate
+observable,rd_rdstar_resolution,paper,PAPER_031,primary derivation
+observable,ckm_row2_unitarity_mapping,paper,PAPER_031,primary derivation
+observable,ckm_row2_unitarity_mapping,paper,PAPER_028,[SCm]_flavor input
+observable,tera_z_lfu_predictions,paper,PAPER_031,primary derivation

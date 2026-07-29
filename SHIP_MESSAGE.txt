@@ -1,22 +1,24 @@
-v0.33.0 BAND 1: PAPER_030 wired - REGISTRY CROSSES 100 ROWS
+v0.34.0 BAND 1: PAPER_031 wired
 
-PAPER_030 Dark Sector Mediators (OPEN_RULING Q-029):
-  Mediator exchange (Z-prime / leptoquark / HNL) encoded in ONE
-  vacuum geometry: Ug4 = k4*rho_vac*cos(pi*t_n)*[SCm]
-  F_suppress = cos^2(pi*3.833) = 0.749 - 74.9 pct amplitude
-  suppression, 25.1 pct survives
-  BR_UQFF = 2.3e-5 * 0.251 = 5.8e-6 SATURATES the LHCb bound:
-  sharply falsifiable - LHCb Upgrade II (reach 7.9e-7, scaling
-  gate-verified) must either see the signal or exclude the form
-  M_dark = m_B*exp(pi*t_n/2) = 2163 GeV ~ 2.2 TeV
-  E_react = tan^4(theta_C) = 2.84e-3 closed form verified
-  t_n = 3.833 shared with PAPER_027 (corpus consistency pinned)
+PAPER_031 Flavor Anomalies Resolution (OPEN_RULING Q-030):
+  R(D)_UQFF = R_SM / (1 - (m_tau/m_b)^2 * SSq) = 0.298/0.897 = 0.332
+    - between SM (0.298) and measurement (0.356): 1.9 -> 0.9 sigma
+  R(D*)_UQFF = 0.254 / (1 - 0.978*SSq*F_TRZ) = 0.269
+    - 3.3 -> 1.2 sigma; the vector channel's extra 0.1 factor equals
+    F_TRZ EXACTLY (composition candidate, unexplained in-text)
+  CKM row-2 unitarity deficit: observed 0.0020 = 2*[SCm]_flavor*0.65
+  Tera-Z: Delta_R = [SCm]*m_tau^2/m_Z^2 = 5.8e-7 - FCC-ee probes
+  the [SCm] framework at 1e-7 (falsifiable)
+  LFU = 1 + m_mu/m_tau = 1.060 vs Belle II 1.020 (1.3 sigma,
+  overestimate disclosed in-paper)
+  kappa_tau correction 8e-8: Higgs factories will NOT discriminate -
+  Tera-Z universality is the test
 
-Q-029 queued: F_suppress fraction-vs-survivor semantics + abstract
-exponent mojibake; in-text self-correction left standing; asymmetry
-sqrt(SSq) = 0.755 claim vs limit-ratio 0.093; M_dark 2.2 TeV derived
-vs 2.8 TeV abstract.
+Q-030 queued: kinematic factor printed unsquared (value is squared);
+D* F_TRZ factor intended composition or fudge; two abandoned
+derivations left standing ("Hmm, this overshoots" - paperwork family
+with PAPER_030's "Wait"); K_CKM = 0.65 underived.
 
-Gate 256 assertions 0 failures. Registry 100 rows / 195 edges / 34
-citation ledgers. Wired 34/2,255 (7 clean, 27 OPEN_RULING).
-Next: PAPER_031.
+Gate 263 assertions 0 failures. Registry 103 rows / 201 edges / 35
+citation ledgers. Wired 35/2,255 (7 clean, 28 OPEN_RULING).
+Next: PAPER_032.

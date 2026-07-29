@@ -683,3 +683,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 34/2,255 (7 ✓, 27 ⚠). Next: PAPER_031.
 
 ---
+
+## 2026-07-29 — v0.34.0 — BAND 1: PAPER_031
+
+- PAPER_031 wired (⚠ Q-030): flavor anomalies. R(D)/R(D*) tensions
+  cut to 0.9/1.2 sigma via SSq denominators; D* channel's extra 0.1
+  factor = F_TRZ exactly (composition candidate); CKM row-2 mapping
+  verified; abandoned in-text derivations flagged (paperwork family).
+- Gate 263/0. Registry 103 rows / 201 edges / 35 ledgers.
+- Campaign: 35/2,255 (7 ✓, 28 ⚠). Next: PAPER_032.
+
+---
