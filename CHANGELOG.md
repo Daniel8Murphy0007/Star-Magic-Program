@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.29.0] — 2026-07-29 — BAND 1: PAPER_026b
+
+### Added
+- **PAPER_026b dispatch** (Vector-Like Quarks): ATLAS Run 2
+  (arXiv:2506.15515) coupling averages land EXACTLY on established UQFF
+  factors — singlet-T (0.22+0.52)/2 = 0.37 = beta_string; triplet
+  (0.14+0.46)/2 = 0.30 = (D_PHYS-1)/SO_5 (0.3-factor family, identity
+  gate-pinned). k_eta_VLQ = 0.37^2 = 0.1369 EXACT (Ug2/Ug4 coupling).
+  VLQ hierarchy 1 : SSq : SSq^2 predicts a THIRD FAMILY at 845 GeV —
+  untested, Run-3 discoverable (falsifiable). sigma(1.5 TeV) = 85.9 fb
+  anchored. OPEN_RULING Q-025 (printed sigma formula evaluates ~1.1 fb,
+  75x gap — canonical formula ruling; V_string,heavy 5.5-12.3 TeV scale
+  ruling; EW-VEV 52-GeV form disclosed too light in-paper).
+- Gate: 228 assertions, 0 failures. Registry: 88 rows / 169 edges / 30 ledgers.
+
+---
+
 ## [0.28.0] — 2026-07-29 — BAND 1: PAPER_026
 
 ### Added

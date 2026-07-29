@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 29 (7 ✓, 22 ⚠ OPEN_RULING)
+- **Wired:** 30 (7 ✓, 23 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2226
+- **Not yet touched:** 2225
 
 ---
 
@@ -59,7 +59,7 @@
 | ⚠ | PAPER_025b | Neutrino Polarizability UQFF |
 | ⚠ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
 | ⬜ | PAPER_026 | Sterile Neutrino Mass UQFF |
-| ⬜ | PAPER_026b | Vector Like Quarks UQFF |
+| ⚠ | PAPER_026b | Vector Like Quarks UQFF |
 | ⬜ | PAPER_027 | Lepton Flavor Violation UQFF |
 | ⬜ | PAPER_028 | BSM Coupling Constants UQFF |
 | ⬜ | PAPER_029 | New Physics TeV Scale UQFF |

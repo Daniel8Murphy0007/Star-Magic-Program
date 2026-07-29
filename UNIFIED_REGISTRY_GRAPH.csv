@@ -161,3 +161,10 @@ observable,sterile_spectrum_low_scale,paper,PAPER_022,M_KK = 11.6 TeV input
 observable,gut_majorana_ssq_series,paper,PAPER_026,primary derivation
 observable,gut_majorana_ssq_series,paper,PAPER_025b,resolves Q-023a/b (self-rectification)
 observable,sterile_relic_leptogenesis,paper,PAPER_026,primary derivation
+primitive,SSQ,observable,vlq_ssq_hierarchy,ratios 1 : SSq : SSq^2
+primitive,D_PHYS,observable,vlq_atlas_coupling_calibration,triplet 0.30 = (D_PHYS-1)/SO_5
+primitive,SO_5,observable,vlq_atlas_coupling_calibration,triplet 0.30 = (D_PHYS-1)/SO_5
+observable,vlq_atlas_coupling_calibration,paper,PAPER_026b,primary derivation
+observable,vlq_atlas_coupling_calibration,paper,PAPER_022,0.37 = beta_string origin
+observable,vlq_ssq_hierarchy,paper,PAPER_026b,primary derivation
+observable,vlq_production_cross_section,paper,PAPER_026b,primary derivation

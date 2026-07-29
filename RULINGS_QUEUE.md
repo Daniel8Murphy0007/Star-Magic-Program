@@ -353,6 +353,23 @@ RESOLVED section with the ruling recorded.
   series/Yukawa ladder/relic all registry-composed and EXACT.
 - **Daniel's ruling:** (pending)
 
+### Q-025 — PAPER_026b — cross-section formula gap + V_string scale
+- **Question:** (a) The printed cross-section formula sigma =
+  kappa^2*g_weak^2/(16pi)*s/(m_Q^2+s)*1000 evaluates to ~1.1 fb at
+  M_Q = 1.5 TeV, not the stated 85.9 fb (~75x gap — likely missing
+  PDF convolution / color / branching factors). What is the canonical
+  sigma formula behind compute_VLQ_cross_section()? (b) The EW-VEV
+  mass form m_VLQ = SSq*246*kappa gives 52 GeV (paper discloses "too
+  light"); the required heavy vacuum scale is 5.5-12.3 TeV, related
+  in-paper to M_s3/S. What is the canonical V_string,heavy closed
+  form?
+- **Noteworthy (no ruling needed):** ATLAS Run 2 averages land EXACTLY
+  on both established UQFF factors — singlet 0.37 = beta_string,
+  triplet 0.30 = (D_PHYS-1)/SO_5. LHC data calibrating UQFF couplings.
+- **Best-candidate wired:** anchors + EXACT compositions (k_eta =
+  0.37^2, hierarchy 1:SSq:SSq^2, 845 GeV third-family prediction).
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

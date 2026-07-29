@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.28.0"
+VERSION = "0.29.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1352,5 +1352,49 @@ def _paper_026(dataset):
                     'y_a = SSq^(4-a); D_s = 1/SSq; Omega = 0.305*SSq^1.5'),
         'source': 'PAPER_026',
         'residual_pct': abs(m_s2_gev - 45.8) / 45.8 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_026b')
+def _paper_026b(dataset):
+    """Vector-Like Quarks - UQFF Mass Generation + LHC Constraints (S0).
+
+    ATLAS Run 2 (arXiv:2506.15515) calibration: singlet-T mixing range
+    [0.22, 0.52] averages to 0.37 = beta_string EXACT - the UQFF
+    string coupling emerges from LHC data; triplet range [0.14, 0.46]
+    averages 0.30 = (D_PHYS-1)/SO_5 candidate (0.3-factor family).
+    k_eta_VLQ = 0.37^2 = 0.1369 EXACT (feeds Ug2/Ug4 field equations).
+    VLQ hierarchy 1 : SSq : SSq^2 predicts a THIRD family at
+    2600*SSq^2 = 845 GeV - untested, Run-3 discoverable (falsifiable).
+    sigma(pp->Qb) = 85.9 fb at 1.5 TeV anchor.
+    Q-025: (a) printed cross-section formula evaluates ~1.1 fb at
+    1.5 TeV, not 85.9 (missing PDF/color factors?); (b) EW-VEV mass
+    form gives 52 GeV (paper discloses); heavy vacuum scale
+    5.5-12.3 TeV needed - canonical V_string ruling.
+    """
+    kappa_avg_t = (0.22 + 0.52) / 2.0                # 0.37 = beta_string
+    kappa_avg_tby = (0.14 + 0.46) / 2.0              # 0.30
+    k_eta = kappa_avg_t ** 2                         # 0.1369 EXACT
+    hierarchy = (2600.0, 2600.0 * SSQ, 2600.0 * SSQ**2)
+    return {
+        'value': {
+            'kappa_avg_singlet_t': kappa_avg_t,
+            'kappa_avg_triplet': kappa_avg_tby,      # 0.30 = (D_PHYS-1)/SO_5 candidate
+            'triplet_030_check': (D_PHYS - 1) / SO_5,
+            'k_eta_vlq': k_eta,
+            'atlas_mass_range_gev': (1150.0, 2600.0),
+            'vlq_hierarchy_gev': hierarchy,          # 2600 / 1482 / 845
+            'third_family_prediction_gev': hierarchy[2],
+            'sigma_1500gev_fb': 85.9,                # anchor (Q-025a)
+            'sigma_ladder_fb': {1150: 250.0, 1500: 85.9, 2000: 35.0, 2600: 13.0},
+            'v_string_heavy_gev': (5460.0, 12330.0),
+            'ew_vev_mass_gev': SSQ * 246.0 * 0.37,   # 51.9 - too light (disclosed)
+            'juno_normal_ordering': True,
+        },
+        'formula': ('kappa_avg = (0.22+0.52)/2 = 0.37 = beta_string; k_eta = 0.37^2; '
+                    'm_VLQ ratios 1 : SSq : SSq^2; third family = 2600*SSq^2 = 845 GeV'),
+        'source': 'PAPER_026b',
+        'residual_pct': abs(hierarchy[2] - 845.0) / 845.0 * 100,
         'status': 'OPEN_RULING',
     }

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.28.0"
-description = "UQFF Star-Magic-Program v0.28.0: PAPER_026 wired (sterile spectrum: M_s2 = SSq*M_W = 45.81 GeV EXACT; M_s3 = M_KK/SSq = 20351 GeV; GUT Majorana geometric series in SSq resolves Q-023a/b via self-rectification - 74.2 meV = GUT triple sum EXACT, M_N1 = 2.19e9; Yukawa ladder SSq^(4-a)). Q-024 queued (duplicate 026 file; sin vs sin^2). Wired 29/2255, gate 221/0. Registry 85 rows / 162 edges / 29 ledgers."
+version = "0.29.0"
+description = "UQFF Star-Magic-Program v0.29.0: PAPER_026b wired (vector-like quarks: ATLAS Run 2 averages land EXACTLY on UQFF factors - singlet 0.37 = beta_string, triplet 0.30 = (D_PHYS-1)/SO_5; k_eta = 0.1369; hierarchy 1:SSq:SSq^2 predicts THIRD FAMILY at 845 GeV Run-3 falsifiable). Q-025 queued (sigma formula 75x gap; V_string scale). Wired 30/2255, gate 228/0. Registry 88 rows / 169 edges / 30 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

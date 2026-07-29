@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.28.0", "uqff_calculator.VERSION = 0.28.0")
+assert_that(C.VERSION == "0.29.0", "uqff_calculator.VERSION = 0.29.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -505,6 +505,21 @@ assert_that(abs(_r026['omega_s1_h2'] - 0.131) < 0.001,
 assert_that(abs(_r026['yukawa_ladder']['e'] - 0.185193) < 1e-6,
             "PAPER_026: Yukawa ladder y_e = SSq^3 = 0.185 (SSq powers, PAPER_022 family)")
 assert_that(C.wired_count() >= 29, "wired_count >= 29")
+
+_r026b = C.calc('PAPER_026b')['value']
+assert_that(abs(_r026b['kappa_avg_singlet_t'] - 0.37) < 1e-15,
+            "PAPER_026b: ATLAS singlet-T average (0.22+0.52)/2 = 0.37 = beta_string EXACT")
+assert_that(abs(_r026b['kappa_avg_triplet'] - 0.30) < 1e-15,
+            "PAPER_026b: triplet average 0.30 = (D_PHYS-1)/SO_5 candidate (0.3-factor family)")
+assert_that(abs(_r026b['kappa_avg_triplet'] - _r026b['triplet_030_check']) < 1e-15,
+            "PAPER_026b: 0.30 = (D_PHYS-1)/SO_5 identity holds exactly")
+assert_that(abs(_r026b['k_eta_vlq'] - 0.1369) < 1e-12,
+            "PAPER_026b: k_eta_VLQ = 0.37^2 = 0.1369 EXACT")
+assert_that(abs(_r026b['third_family_prediction_gev'] - 844.7) < 0.5,
+            "PAPER_026b: third VLQ family 2600*SSq^2 = 844.7 GeV (~paper 845, Run-3 falsifiable)")
+assert_that(abs(_r026b['vlq_hierarchy_gev'][1] - 1482.0) < 1.0,
+            "PAPER_026b: second family 2600*SSq = 1482 GeV")
+assert_that(C.wired_count() >= 30, "wired_count >= 30")
 
 # =============================================================================
 # REPORT

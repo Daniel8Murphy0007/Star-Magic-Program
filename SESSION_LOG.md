@@ -627,3 +627,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 29/2,255 (7 ✓, 22 ⚠). Next: PAPER_026b (Vector-Like Quarks).
 
 ---
+
+## 2026-07-29 — v0.29.0 — BAND 1: PAPER_026b
+
+- PAPER_026b wired (⚠ Q-025): VLQs. ATLAS averages = 0.37 and 0.30
+  EXACT on UQFF factors (LHC data calibrating the framework); third
+  family at 845 GeV = 2600*SSq^2 falsifiable; sigma-formula gap queued.
+- Gate 228/0. Registry 88 rows / 169 edges / 30 ledgers.
+- Campaign: 30/2,255 (7 ✓, 23 ⚠). Next: PAPER_027.
+
+---
