@@ -1,20 +1,22 @@
-v0.56.0 BAND 1: PAPER_053 wired - ASTRO-MODEL FAMILY OPENS
+v0.57.0 BAND 1: PAPER_054 wired
 
-PAPER_053 NGC 2264 Star-Forming Region: 8-Test Validation (CLEAN):
-  First per-system model paper (the PAPER_052 suite, one system per
-  paper). ALL 8 RATIOS RE-VERIFIED from predicted/expected pairs:
-    g_grav 1.0011 / Hubble 1.0000 / M_sf 0.9992 / E_rad 0.9995 /
-    a_EM 1.0003 / g_compressed 1.0003 / R_amplitude 0.9980 /
-    EM dominance 1.0000
-  Every value matches the PAPER_052 suite row EXACTLY.
-  Regime: EM-DOMINATED (OB winds/jets over gravity) - the regime
-  taxonomy opens for the model family.
-  Resonance factor SSq/(1+SSq) = 0.3631 registry-composed.
-  HONEST framing recorded: "expected" values are calibration
-  targets - near-unity ratios are regression checks of the model
-  against its own calibration, not independent observations.
-  [SSq] 0.5 pct calibration uncertainty (Grok-4 provenance).
+PAPER_054 UGC 10214 Tadpole Galaxy (OPEN_RULING Q-050):
+  4/4 PASS (matches the 052 suite row). The 280-kpc tidal tail -
+  longest known - explained by TWO UQFF mechanisms:
+    Ug3 string-rotation torque: 200 kpc bare -> 280 kpc with
+    boost = 0.4 (chain verified)
+    [UA] wake drag asymmetry: one-sided tadpole morphology WITHOUT
+    tuned CDM halo-collision geometry
+  The paper itself observes g_compressed = 1.0533e-2 is IDENTICAL
+  across systems - now registry-framed as a universal normalization
+  (g_grav carries the system-specific physics).
 
-Gate 401 assertions 0 failures. Registry 169 rows / 327 edges / 57
-citation ledgers. Wired 57/2,255 (10 clean, 47 OPEN_RULING).
-Next: PAPER_054.
+Q-050 queued: (a) SYSTEMATIC - the suite's Hubble-factor column is
+INVERTED vs redshift (UGC10214 z = 0.0312 -> 1.0002; NGC2841
+z ~ 0.002 -> 1.7154): Q-048b upgraded from outlier to systematic;
+canonical Hubble-factor definition ruling; (b) "9.3x lower" claim
+vs computed 7.55x; (c) total-mass exponent mojibake.
+
+Gate 407 assertions 0 failures. Registry 172 rows / 332 edges / 58
+citation ledgers. Wired 58/2,255 (10 clean, 48 OPEN_RULING).
+Next: PAPER_055.

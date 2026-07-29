@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.57.0] — 2026-07-29 — BAND 1: PAPER_054
+
+### Added
+- **PAPER_054 dispatch** (Tadpole Galaxy UGC 10214): 4/4 PASS matching
+  the 052 suite. The 280-kpc tidal tail — longest known — explained by
+  Ug3 string-rotation torque (boost = 0.4, chain verified) plus [UA]
+  wake drag asymmetry giving the one-sided tadpole morphology without
+  tuned CDM collision geometry. The paper itself observes that
+  g_compressed = 1.0533e-2 is IDENTICAL across systems — registry now
+  frames it as a universal normalization with g_grav carrying the
+  system physics. OPEN_RULING Q-050: the suite's Hubble-factor column
+  is INVERTED vs redshift (1.0002 at z = 0.0312 here vs 1.7154 at
+  z ~ 0.002 for NGC2841) — Q-048b upgraded from outlier to
+  SYSTEMATIC; 9.3x-vs-7.55x ratio claim; mass exponent mojibake.
+- Gate: 407 assertions, 0 failures. Registry: 172 rows / 332 edges / 58 ledgers.
+
+---
+
 ## [0.56.0] — 2026-07-29 — BAND 1: PAPER_053 — ASTRO-MODEL FAMILY OPENS
 
 ### Added

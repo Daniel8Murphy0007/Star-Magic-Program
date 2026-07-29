@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.56.0", "uqff_calculator.VERSION = 0.56.0")
+assert_that(C.VERSION == "0.57.0", "uqff_calculator.VERSION = 0.57.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -919,6 +919,19 @@ assert_that(abs(_r053['ssq_resonance_factor'] - 0.3631) < 0.0005,
 assert_that(_r053['score'] == (8, 8) and _r053['em_dominance'] >= 0.99,
             "PAPER_053: 8/8 PASS, EM-dominated regime confirmed")
 assert_that(C.wired_count() >= 57, "wired_count >= 57")
+
+_r054 = C.calc('PAPER_054')['value']
+assert_that(abs(_r054['ug3_boost'] - 0.4) < 1e-12,
+            "PAPER_054: Ug3 tail boost = 280/200 - 1 = 0.4 (chain verified)")
+assert_that(abs(_r054['g_compressed'] - 1.0533e-2) < 1e-12,
+            "PAPER_054: g_compressed universal normalization (matches suite)")
+assert_that(_r054['score'] == (4, 4),
+            "PAPER_054: 4/4 PASS matches 052 suite row")
+assert_that(abs(_r054['ngc2264_ratio_computed'] - 7.55) < 0.05,
+            "PAPER_054: NGC2264/UGC10214 g ratio computed 7.55 (paper claims 9.3 - Q-050b)")
+assert_that(_r054['hubble_factor'] < 1.01 and _r054['z'] > 0.03,
+            "PAPER_054: Hubble 1.0002 at z = 0.0312 - inverted vs NGC2841 (Q-050a systematic)")
+assert_that(C.wired_count() >= 58, "wired_count >= 58")
 
 # =============================================================================
 # REPORT

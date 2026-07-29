@@ -930,3 +930,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 57/2,255 (10 ✓, 47 ⚠). Next: PAPER_054.
 
 ---
+
+## 2026-07-29 — v0.57.0 — BAND 1: PAPER_054
+
+- PAPER_054 wired (⚠ Q-050): Tadpole Galaxy. Tail chain verified;
+  g_compressed reframed as universal normalization; the Hubble-factor
+  inversion found SYSTEMATIC across the suite (Q-048b upgraded).
+- Gate 407/0. Registry 172 rows / 332 edges / 58 ledgers.
+- Campaign: 58/2,255 (10 ✓, 48 ⚠). Next: PAPER_055.
+
+---

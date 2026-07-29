@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.56.0"
-description = "UQFF Star-Magic-Program v0.56.0: PAPER_053 wired (NGC 2264 model paper opens the astro-model family: 8/8 tests re-verified, matches 052 suite row exactly; EM-dominated regime; SSq/(1+SSq) = 0.3631 composed; honest calibration-target framing recorded). CLEAN. Wired 57/2255, gate 401/0. Registry 169 rows / 327 edges / 57 ledgers."
+version = "0.57.0"
+description = "UQFF Star-Magic-Program v0.57.0: PAPER_054 wired (Tadpole Galaxy: 280-kpc tail = Ug3 torque boost 0.4 + [UA] wake asymmetry, no tuned CDM geometry; g_compressed identified as universal normalization; Hubble-factor column found INVERTED vs redshift - Q-048b upgraded to systematic). Q-050 queued. Wired 58/2255, gate 407/0. Registry 172 rows / 332 edges / 58 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

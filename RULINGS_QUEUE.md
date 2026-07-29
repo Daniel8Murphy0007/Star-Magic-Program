@@ -809,7 +809,8 @@ RESOLVED section with the ruling recorded.
   Rule on the origin reading (and the mojibaked exponent).
   (b) NGC2841: Hubble factor (1 + H(z)t) = 1.7154 claimed at
   z ~ 0.002 / 14 Mpc - expected ~1.003; 3-orders inconsistency in
-  the enhancement. (c) The Hawking section uses rho_SCm/rho_UA ~
+  the enhancement. [UPGRADED to SYSTEMATIC by PAPER_054: see Q-050a -
+  the column is inverted vs redshift across the suite.] (c) The Hawking section uses rho_SCm/rho_UA ~
   0.05 - a THIRD distinct ratio value (framework 1000, canonical
   0.1, now 0.05) - Q-041b annotated. (d) The THz text conflates
   1.2 (prediction), 1.18 (observed), 1.25 (OMEGA_LENR) THz.
@@ -835,6 +836,19 @@ RESOLVED section with the ruling recorded.
   the 043 E18-Higgs decade mismatch. Fold into the Q-041d ruling.
 - **Best-candidate wired:** Higgs 99.79 + Page 99.84 chains verified;
   44/44 suite pinned; margins and contradictions exposed.
+- **Daniel's ruling:** (pending)
+
+### Q-050 — PAPER_054 — Hubble-factor SYSTEMATIC + ratio claim + mass mojibake
+- **Question:** (a) SYSTEMATIC (upgrades Q-048b): the model suite's
+  Hubble factor is INVERTED vs redshift - UGC10214 at z = 0.0312
+  shows 1.0002 while NGC2841 at z ~ 0.002 shows 1.7154. What is the
+  canonical Hubble-factor definition for the family (and which
+  system's value is right)? (b) "9.3x lower than NGC2264" - computed
+  ratio is 7.55x. (c) Total mass printed "10 M?" (exponent mojibake;
+  1e11 Msun implied by the 420-Mpc spiral context).
+- **Best-candidate wired:** tail chain verified (0.4 Ug3 boost);
+  g_compressed framed as universal normalization per the paper's own
+  observation; both Hubble data pinned for one ruling.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

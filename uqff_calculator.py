@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.56.0"
+VERSION = "0.57.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2847,4 +2847,50 @@ def _paper_053(dataset):
         'source': 'PAPER_053',
         'residual_pct': abs(ratios['r_amplitude'] - 0.9980) * 100,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_054')
+def _paper_054(dataset):
+    """UGC 10214 Tadpole Galaxy: UQFF Tidal Analysis (Session 0).
+
+    Model paper 2 of the family (4/4 PASS, matches 052 suite row).
+    280-kpc tidal tail via TWO UQFF mechanisms: Ug3 string-rotation
+    torque (extends beyond tidal radius) + [UA] wake drag asymmetry
+    (one-sided tadpole morphology without tuned CDM geometry).
+    Tail-length chain: 200 kpc bare -> 280 kpc with Ug3 boost
+    (boost factor 0.4). Paper itself notes g_compressed = 1.0533e-2
+    is IDENTICAL across systems - a universal normalization, with
+    g_grav carrying the system-specific physics (registry-framed).
+    Q-050: (a) SYSTEMATIC - Hubble factor 1.0002 at z = 0.0312 here
+    vs 1.7154 at z ~ 0.002 (NGC2841): the Hubble column is INVERTED
+    vs redshift (Q-048b upgraded from outlier to systematic);
+    (b) "9.3x lower than NGC2264" vs computed 7.55x; (c) total mass
+    "10 M?" exponent mojibake (1e11 Msun implied by context).
+    """
+    ug3_boost = 280.0 / 200.0 - 1.0                  # 0.4
+    return {
+        'value': {
+            'system': 'UGC 10214 (Tadpole, Arp 188)',
+            'distance_mpc': 420.0,
+            'z': 0.0312,
+            'g_grav': 7.8551e-12,
+            'hubble_factor': 1.0002,                 # Q-050a systematic
+            'g_compressed': 1.0533e-2,               # universal normalization
+            'r_amplitude': 1.1586e-2,
+            'tail_kpc': 280.0,
+            'tail_bare_kpc': 200.0,
+            'ug3_boost': ug3_boost,                  # 0.4
+            'companion_kpc': 55.0,
+            'mechanisms': ('Ug3 string-rotation torque', '[UA] wake drag asymmetry'),
+            'cdm_contrast': 'longer tails without tuned halo-collision geometry',
+            'score': (4, 4),
+            'ngc2264_ratio_claimed': 9.3,            # Q-050b vs computed 7.55
+            'ngc2264_ratio_computed': 5.9336e-11 / 7.8551e-12,
+        },
+        'formula': ('L_tail = v_enc*t_peri*(1 + Ug3/Ug1_tidal); '
+                    'Ug3 = M*omega_string*r*t*exp(-kappa*t)'),
+        'source': 'PAPER_054',
+        'residual_pct': abs(ug3_boost - 0.4) / 0.4 * 100,
+        'status': 'OPEN_RULING',
     }

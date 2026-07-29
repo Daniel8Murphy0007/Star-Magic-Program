@@ -327,3 +327,8 @@ observable,ngc2264_8test_model,paper,PAPER_053,primary derivation
 observable,ngc2264_8test_model,paper,PAPER_052,suite row cross-check
 observable,em_dominance_regime,paper,PAPER_053,primary derivation
 observable,resonance_ssq_composition,paper,PAPER_053,primary derivation
+observable,ugc10214_tidal_model,paper,PAPER_054,primary derivation
+observable,hubble_factor_systematic,paper,PAPER_054,z = 0.0312 datum
+observable,hubble_factor_systematic,paper,PAPER_052,NGC2841 1.7154 companion datum
+observable,g_compressed_normalization,paper,PAPER_054,primary observation
+observable,g_compressed_normalization,paper,PAPER_053,suite-wide constant
