@@ -1,26 +1,25 @@
-v0.91.0 BAND 1: PAPER_088 wired - NEUTRINO DETECTABILITY FORK
+v0.92.0 BAND 1: PAPER_089 wired - DOMAIN 1.12 OPENS (8 ARCHITECTURES)
 
-PAPER_088 Neutrino SED from SgrA* (OPEN_RULING Q-084):
-  Three channels: Hawking (negligible, consistent 081); corona
-  pp/p-gamma (dominant; gamma = 2.2, E_cut = 5 PeV IceCube-
-  like); TRZ vacuum enhancement.
+PAPER_089 UQFF Master Equation + 8 Calculator Architectures
+(OPEN_RULING Q-085):
+  DOMAIN 1.12 OPENS. The 7-component master integrand (Ug1-4,
+  Um, U_bi, kappa*SSq) and 8 specializations registered: Base /
+  Compressed (MUGE, fwd-ref PAPER_090) / Superconductive /
+  Triadic / Buoyant / MasterBuoyant / Resonant / Quadratic.
+  8/8 self_validate() PASS on 5 standard systems.
 
-  f_TRZ = 0.01 DRIFT, 3RD INSTANCE - and here the ruling
-  changes a FALSIFIABLE PREDICTION:
-  - drift reading: excess = 1.01 (+1 pct) - NOT detectable by
-    IceCube-Gen2
-  - canonical F_TRZ = 0.1: excess = 1.10 (+10 pct) - potentially
-    a DETECTABLE SgrA* point-source excess
-  BOTH branches wired pending your ruling (no in-paper
-  implemented-value proof here, unlike 081).
+  DRIFT AUTO-CORRECTED (charter table): "kappa_i ~ 0.603" is a
+  symbol slip + drift form of beta_i - canonical BETA_I applied.
+  Triadic equal-body 120-deg cosine sum = 0 EXACT (balanced).
+  Superconductive F*[SCm] = x0.99 with range check (0.98,1.00)
+  SUPPORTS the Q-083a context reading: SC-mode reduction vs XRB
+  (1+[SCm]) doubling are mode-dependent structures (annotated).
+  5 resonant frequencies cross-consistent with PAPER_064.
+  [UA] 9th appearance (Buoyant, sub-dominant).
 
-  Flavor null ROBUST under both readings: (1:1:1)*(1+0.001*
-  f_TRZ) unmeasurable - consistent with IceCube flavor
-  democracy. Ug4 baseline 3.352941e22 cross-consistent with
-  PAPER_086 via LIVE gate check. AGN-active conditional ~5 pct
-  (~3 sigma Gen2) recorded. Mixed excess prints (0.3/1.0/0.35
-  pct) pinned as internal inconsistency.
+  DEFECT: footer solar U_bi chain does not close - printed
+  factors give 1.09e8 vs printed 147 m/s2 (6 orders) - OPEN.
 
-Q-084 queued. Gate 644 assertions 0 failures. Registry 258 rows /
-512 edges / 92 citation ledgers. Wired 92/2,255 (10 clean, 82
-OPEN_RULING). Next: PAPER_089.
+Q-085 queued. Gate 650 assertions 0 failures. Registry 260 rows /
+517 edges / 93 citation ledgers. Wired 93/2,255 (10 clean, 83
+OPEN_RULING). Next: PAPER_090.

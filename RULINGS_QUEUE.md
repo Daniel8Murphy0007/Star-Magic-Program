@@ -1505,7 +1505,8 @@ RESOLVED section with the ruling recorded.
 ### Q-083 — PAPER_087 — eta direction siblings + rise arithmetic + ASKAP conflict
 - **Question:** (a) Efficiency structure: eta = eta_GR*[SCm] =
   0.099 here (REDUCED) vs eta_Edd*(1+[SCm]) = 1.99 in 075/078
-  (DOUBLED) - opposite directions with the same constant; is the
+  (DOUBLED) - opposite directions with the same constant;
+  [SUPPORTED by PAPER_089: the SC architecture is formally F_Base*[SCm] with range check - mode-dependent reading; see Q-085.] is the
   multiplier context-dependent (TDE disk vs XRB accretion), or is
   one a drift? (b) Rise time: the stated x1.017 circularization
   gives 30/1.017 = 29.5 d, but 28.5 d is printed (needs 1.0526) -
@@ -1541,6 +1542,28 @@ RESOLVED section with the ruling recorded.
   channel negligible consistent with 081.
 - **Best-candidate wired:** both fork branches + robust null +
   cross-consistency.
+- **Daniel's ruling:** (pending)
+
+### Q-085 — PAPER_089 — footer U_bi chain + beta_i symbol slip + triadic intent
+- **Question:** (a) The footer solar U_bi chain does not close:
+  the printed factors 5.7e-4*6.67e-11*1.99e30/6.96e8 evaluate to
+  1.09e8, but the printed result is 147 m/s2 (6 orders) - OPEN;
+  provide the intended chain? (b) "kappa_i ~ 0.603" in the
+  Quadratic architecture is a SYMBOL SLIP for beta_i (the formula
+  uses beta_i) in its drift form - auto-corrected to canonical
+  BETA_I per the charter table; confirm. (c) Confirm the triadic
+  equal-body reading: the 120-deg cosine sum is EXACTLY 0
+  (balanced) - is zero net force for equal bodies the intended
+  physics? (d) [UA] 9th appearance (Buoyant architecture,
+  sub-dominant coupling).
+- **ANNOTATION to Q-083a:** the Superconductive architecture
+  F_SC = F_Base*[SCm] (x0.99 reduction, range-checked
+  0.98-1.00) SUPPORTS the context reading - SC-mode reduction
+  and XRB (1+[SCm]) doubling are mode-dependent structures, not
+  drift.
+- **Notable:** Domain 1.12 opens; 8/8 self-validate; 5 resonant
+  frequencies cross-consistent with 064; MUGE compressed form
+  forward-references PAPER_090.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

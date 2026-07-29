@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.92.0] — 2026-07-29 — BAND 1: PAPER_089 — DOMAIN 1.12 OPENS
+
+### Added
+- **PAPER_089 dispatch** (Master Equation + 8 Architectures):
+  7-component master integrand + 8 specializations registered,
+  8/8 self-validate on 5 systems. beta_i "0.603" drift (with a
+  kappa_i symbol slip) AUTO-CORRECTED to canonical BETA_I per the
+  charter table. Triadic equal-body cosine sum = 0 EXACT.
+  Superconductive F*[SCm] = x0.99 with range check SUPPORTS the
+  Q-083a context reading (mode-dependent structures, annotated).
+  5 resonant frequencies cross-consistent with 064; MUGE
+  compressed form forward-references PAPER_090; [UA] 9th
+  appearance. Footer solar U_bi chain 6-orders-off pinned OPEN.
+- OPEN_RULING Q-085.
+- Gate: 650 assertions, 0 failures. Registry: 260 rows / 517 edges / 93 ledgers.
+
+---
+
 ## [0.91.0] — 2026-07-29 — BAND 1: PAPER_088
 
 ### Added

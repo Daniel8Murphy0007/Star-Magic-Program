@@ -1273,3 +1273,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 92/2,255 (10 ✓, 82 ⚠). Next: PAPER_089.
 
 ---
+
+## 2026-07-29 — v0.92.0 — BAND 1: PAPER_089 — DOMAIN 1.12 OPENS
+
+- PAPER_089 wired (⚠ Q-085): master equation + 8 architectures.
+  beta_i drift auto-corrected; triadic sum 0 EXACT; SC context
+  support annotated to Q-083a; footer chain OPEN.
+- Campaign: 93/2,255 (10 ✓, 83 ⚠). Next: PAPER_090.
+
+---

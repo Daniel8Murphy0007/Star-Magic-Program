@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.91.0"
+VERSION = "0.92.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4644,5 +4644,57 @@ def _paper_088(dataset):
                     'flavor (1:1:1)*(1+0.001*f_TRZ)'),
         'source': 'PAPER_088',
         'residual_pct': abs((1.0 + F_TRZ) - 1.01) / 1.01 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_089')
+def _paper_089(dataset):
+    """UQFF Master Equation + 8 Calculator Architectures (Session 0).
+
+    DOMAIN 1.12 OPENS (master calculators). The 7-component master
+    integrand (Ug1-4, Um, U_bi, kappa*SSq) and its 8
+    specializations registered: Base / Compressed (MUGE 10-term,
+    fwd-ref PAPER_090) / Superconductive (x[SCm] = x0.99) /
+    Triadic (120-deg symmetry; equal-body cosine sum = 0 EXACT -
+    balanced) / Buoyant ([UA] 9th appearance, sub-dominant) /
+    MasterBuoyant (fullest single-body form) / Resonant (5 named
+    frequencies - cross-consistent with PAPER_064's Resonant
+    mode) / Quadratic (beta_i*(r_P/r)^2 post-GR).
+    DRIFT AUTO-CORRECTED (charter table): "kappa_i ~ 0.603" is a
+    symbol slip + drift form of BETA_I (canonical PAPER_1203
+    value applied; Q-085b). SUPERCONDUCTIVE x0.99 SUPPORTS the
+    Q-083a context reading: SC-mode multiplies by [SCm]
+    (reduction), XRB accretion multiplies by (1+[SCm]) (doubling)
+    - different modes, both structures legitimate (annotated).
+    All 8 self_validate() PASS on 5 standard systems as stated.
+    DEFECT (Q-085a): the footer solar U_bi chain does not close -
+    printed factors give 1.09e8, printed result 147 m/s2 (6
+    orders); OPEN.
+    """
+    architectures = ['base', 'compressed', 'superconductive', 'triadic',
+                     'buoyant', 'master_buoyant', 'resonant', 'quadratic']
+    return {
+        'value': {
+            'domain': '1.12 OPENS (master calculators)',
+            'architectures': architectures,
+            'n_architectures': len(architectures),         # 8
+            'sc_multiplier': 0.99,                         # supports Q-083a context
+            'triadic_equal_sum': 0.0,                      # cosine sum EXACT
+            'beta_i_applied': BETA_I,                      # canonical, drift corrected
+            'beta_i_printed': 0.603,                       # drift form carried
+            'quadratic_form': 'F*(1 + beta_i*(r_P/r)^2)',
+            'resonant_frequencies': ['SuperFreq', 'QuantumFreq', 'AetherFreq',
+                                     'FluidFreq', 'ExpFreq'],
+            'self_validate_pass': 8,
+            'test_systems': 5,
+            'footer_ubi_chain': 5.7e-4 * 6.67e-11 * 1.99e30 / 6.96e8,  # 1.09e8
+            'footer_ubi_printed': 147.0,                   # does not close Q-085a
+            'sc_range_check': (0.98, 1.00),
+        },
+        'formula': ('F_UBii = integral[Sum Ug_k + Um + U_bi + kappa*SSq] dV; '
+                    '8 specializations; F_SC = F_Base*[SCm]'),
+        'source': 'PAPER_089',
+        'residual_pct': abs(BETA_I - 0.603) / 0.603 * 100,
         'status': 'OPEN_RULING',
     }

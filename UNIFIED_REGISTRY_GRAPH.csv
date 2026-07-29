@@ -512,3 +512,8 @@ primitive,F_TRZ,observable,neutrino_sed_fork,canonical fork value
 observable,neutrino_sed_fork,paper,PAPER_081,drift family
 observable,neutrino_flavor_null,paper,PAPER_088,robust null
 observable,neutrino_flavor_null,paper,PAPER_086,Ug4 cross-consistency
+observable,master_eq_8_architectures,paper,PAPER_089,architecture registry
+primitive,BETA_I,observable,master_eq_8_architectures,drift auto-correction
+primitive,SSQ,observable,master_eq_8_architectures,calibration term
+observable,sc_mode_context_support,paper,PAPER_089,context support
+observable,sc_mode_context_support,paper,PAPER_087,eta-direction annotation

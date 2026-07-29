@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.91.0", "uqff_calculator.VERSION = 0.91.0")
+assert_that(C.VERSION == "0.92.0", "uqff_calculator.VERSION = 0.92.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1420,6 +1420,19 @@ assert_that(abs(_r088['ug4_baseline_cross'] - C.calc('PAPER_086')['value']['ug4_
 assert_that(len(_r088['excess_values_printed']) == 3,
             "PAPER_088: mixed excess values (0.3/1.0/0.35) pinned (Q-084b)")
 assert_that(C.wired_count() >= 92, "wired_count >= 92")
+
+_r089 = C.calc('PAPER_089')['value']
+assert_that(_r089['n_architectures'] == 8 and _r089['self_validate_pass'] == 8,
+            "PAPER_089: 8 calculator architectures registered, 8/8 self-validate PASS")
+assert_that(abs(_r089['beta_i_applied'] - 0.6029) < 1e-9,
+            "PAPER_089: beta_i drift form 0.603 auto-corrected to canonical BETA_I (charter table)")
+assert_that(abs(_r089['triadic_equal_sum']) < 1e-12,
+            "PAPER_089: triadic equal-body cosine sum = 0 EXACT (balanced 120-deg symmetry)")
+assert_that(_r089['sc_multiplier'] == 0.99,
+            "PAPER_089: Superconductive x[SCm] supports Q-083a context reading (mode-dependent structures)")
+assert_that(_r089['footer_ubi_chain'] > 1e8 and _r089['footer_ubi_printed'] == 147.0,
+            "PAPER_089: footer solar U_bi chain does not close (6 orders) - OPEN pinned (Q-085a)")
+assert_that(C.wired_count() >= 93, "wired_count >= 93")
 
 # =============================================================================
 # REPORT
