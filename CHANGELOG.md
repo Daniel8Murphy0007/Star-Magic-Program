@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.78.0] — 2026-07-29 — BAND 1: PAPER_075
+
+### Added
+- **PAPER_075 dispatch** (X-Ray Binaries, Chandra CSC2 + HEASARC):
+  eta_UQFF = eta_Edd*(1+[SCm]) = 1.99x EXACT; all five
+  L_obs/L_UQFF ratio chains verify from mantissas (Cyg 0.893 /
+  Her 0.769 / Sco 1.15 / GRS 0.80 / NGC5907 ULX 25.0). Honest
+  limitation wired: 2x cannot explain 25x super-Eddington —
+  beaming required. Hardness-ratio null prediction ([UA]-scale,
+  negligible — luminosity-only modification is falsifiable).
+  [SCm] = 0.99 and [UA] = 1e-4 both reach 4th appearances.
+- Defect pinned: per-row L_UQFF/L_Edd multipliers (1.4/1.11/
+  1.014/2.0) inconsistent with the uniform 1.99 claim; M_dot
+  inputs untabulated.
+- OPEN_RULING Q-071.
+- Gate: 566 assertions, 0 failures. Registry: 232 rows / 452 edges / 79 ledgers.
+
+---
+
 ## [0.77.0] — 2026-07-29 — BAND 1: PAPER_074
 
 ### Added

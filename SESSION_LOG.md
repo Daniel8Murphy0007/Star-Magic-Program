@@ -1141,3 +1141,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 78/2,255 (10 ✓, 68 ⚠). Next: PAPER_075.
 
 ---
+
+## 2026-07-29 — v0.78.0 — BAND 1: PAPER_075
+
+- PAPER_075 wired (⚠ Q-071): XRBs. eta 1.99x EXACT; 5/5 ratio
+  chains; ULX beaming limitation honest; [SCm]/[UA] 4th
+  appearances; per-row multiplier inconsistency pinned.
+- Campaign: 79/2,255 (10 ✓, 69 ⚠). Next: PAPER_076.
+
+---

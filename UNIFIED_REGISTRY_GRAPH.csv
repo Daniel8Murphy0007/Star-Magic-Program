@@ -448,3 +448,7 @@ observable,ned_simbad_sigma_suite,paper,PAPER_074,primary suite
 primitive,SSQ,observable,ned_simbad_sigma_suite,enhancement factor
 observable,ned_simbad_sigma_suite,paper,PAPER_073,sibling factor conflict
 observable,uqff_enhancement_bias,paper,PAPER_074,Rule-7 finding
+observable,xrb_eta_enhancement,paper,PAPER_075,primary derivation
+observable,xrb_eta_enhancement,paper,PAPER_064,Superconductive-mode basis
+observable,xrb_hardness_null,paper,PAPER_075,null prediction
+observable,xrb_hardness_null,paper,PAPER_072,[UA] 4th appearance

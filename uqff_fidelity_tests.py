@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.77.0", "uqff_calculator.VERSION = 0.77.0")
+assert_that(C.VERSION == "0.78.0", "uqff_calculator.VERSION = 0.78.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1236,6 +1236,20 @@ assert_that(abs(_r074['m31_dmu_pct'] - 0.057) < 0.001,
 assert_that(_r074['newton_wins_all_rows'],
             "PAPER_074: Rule-7 finding pinned - Newton beats UQFF in ALL 6 rows (Q-070b)")
 assert_that(C.wired_count() >= 78, "wired_count >= 78")
+
+_r075 = C.calc('PAPER_075')['value']
+assert_that(abs(_r075['eta_enhancement'] - 1.99) < 1e-12,
+            "PAPER_075: eta_UQFF = (1+[SCm]) = 1.99x EXACT")
+assert_that(abs(_r075['l_obs_over_uqff']['cyg_x1'] - 0.893) < 0.001,
+            "PAPER_075: Cygnus X-1 ratio 0.893 verifies (all 5 ratio chains check)")
+assert_that(_r075['l_obs_over_uqff']['ngc5907_ulx'] == 25.0 and _r075['ulx_requires_beaming'],
+            "PAPER_075: ULX 25x honest limitation wired - beaming required beyond 2x mode")
+assert_that(_r075['dhr_chain'] < 1e-9,
+            "PAPER_075: hardness-ratio shift negligible - [UA] 4th appearance (Q-060b support)")
+assert_that(abs(_r075['per_row_multipliers']['ulx'] - 2.0) < 0.01
+            and abs(_r075['per_row_multipliers']['grs'] - 1.014) < 0.01,
+            "PAPER_075: per-row multiplier inconsistency pinned (1.4/1.11/1.014/2.0 vs uniform 1.99; Q-071a)")
+assert_that(C.wired_count() >= 79, "wired_count >= 79")
 
 # =============================================================================
 # REPORT

@@ -1029,7 +1029,8 @@ RESOLVED section with the ruling recorded.
   M = 1e44 kg gives g_C = 1e11 in mode units — is the printed g
   "10^11"?). (b) alpha_B = [UA] = 1e-4 buoyant weighting is a NEW
   constant
-  [SUPPORTED by PAPER_068: [UA] = 0.0001 reappears in the M_eff formula - see Q-064d.] — not F_TRZ (0.1), not rho_UA — canonize or identify
+  [SUPPORTED by PAPER_068: [UA] = 0.0001 reappears in the M_eff formula - see Q-064d.]
+  [4th APPEARANCE in PAPER_075 (hardness-ratio null) - see Q-071c.] — not F_TRZ (0.1), not rho_UA — canonize or identify
   as drift? (c) The 4-mode weighted sum (KAPPA/SSQ/1e-4/0.99)
   overlaps the triadic g decomposition w_C*g_comp + w_R*g_res +
   w_B*g_buoy of the model-suite papers (053-058) but adds the
@@ -1260,6 +1261,27 @@ RESOLVED section with the ruling recorded.
   NED/SIMBAD endpoints recorded for Domain 1.10.
 - **Best-candidate wired:** suite as printed with BOTH tension
   sets (Newton + UQFF) carried; both factor forms exposed.
+- **Daniel's ruling:** (pending)
+
+### Q-071 — PAPER_075 — per-row multiplier inconsistency + [SCm]/[UA] appearances
+- **Question:** (a) The claimed uniform eta enhancement is 1.99x
+  (= 1+[SCm]) but per-row L_UQFF/L_Edd multipliers vary: Cyg 1.4,
+  Her ~10 (exponent-dependent), Sco 1.11, GRS 1.014, ULX 2.0 -
+  only the ULX row matches; the M_dot inputs in L_X =
+  E_react*M_dot*eta are untabulated, so the variation cannot be
+  verified in-paper. Provide the M_dot table or pin the ULX-row
+  reading? (b) [SCm] = 0.99 as enhancement multiplier - confirm
+  identity with the H_SCm manifold-completeness constant (4th
+  appearance of the 0.99 value). (c) [UA] = 1e-4 4th appearance
+  (negligible hardness-ratio shift) - Q-060b canonization now
+  4-instance supported.
+- **Notable:** all five L_obs/L_UQFF ratio chains verify from
+  mantissas; the ULX row honestly discloses that 2x cannot
+  explain 25x super-Eddington (beaming required); the
+  hardness-ratio null is a falsifiable UQFF prediction
+  (luminosity-only modification).
+- **Best-candidate wired:** ratios + null prediction + honest
+  limitation; per-row multipliers carried for the ruling.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -1,23 +1,26 @@
-v0.77.0 BAND 1: PAPER_074 wired - RULE-7 ONE-SIDED-BIAS FINDING
+v0.78.0 BAND 1: PAPER_075 wired - XRB 1.99x CHAIN + ULX HONEST LIMIT
 
-PAPER_074 NED/SIMBAD Galactic Structure (OPEN_RULING Q-070):
-  6-galaxy UQFF virial sigma suite - ALL SIX per-row tension
-  chains verify exactly as printed (M87 2.0 / Virgo A 2.6 / M81
-  2.29 / MW 1.17 / M51 0.63 / NGC 1277 1.89 sigma).
-  M31 proper-motion chain EXACT: SSq*0.001 = 0.057 pct.
-  NED + SIMBAD TAP/ADQL endpoints recorded (Domain 1.10).
+PAPER_075 X-Ray Binaries: Chandra CSC2 + HEASARC (OPEN_RULING
+Q-071):
+  eta_UQFF = eta_Edd * (1 + [SCm]) = 1.99x EXACT.
+  ALL FIVE L_obs/L_UQFF ratio chains verify from mantissas:
+  Cygnus X-1 0.893 / Her X-1 0.769 / Sco X-1 1.15 / GRS 1915
+  0.80 / NGC 5907 ULX 25.0.
 
-  SIBLING-CONSTANT CONFLICT: enhancement factor 0.032 here
-  (1 + SSq*0.032 = 1.018 printed) vs PAPER_073's 0.034 (1.0194);
-  the actual 6-row average = 1.0193 FAVORS 0.034.
+  HONEST LIMITATION wired as stated: even the 2x Superconductive
+  enhancement cannot explain the 25x super-Eddington ULX -
+  geometric beaming or field confinement required.
 
-  RULE-7 HONEST FINDING: the UQFF enhancement moves EVERY
-  prediction further from observation - Newton tensions
-  (1.5/2.0/1.86/0.83/0.38/1.5) beat UQFF tensions in ALL 6 rows.
-  Wired as printed with BOTH tension sets carried; ruling
-  requested on correction sign / catalog systematics /
-  observable assignment.
+  Hardness-ratio NULL prediction: dHR = [UA]*1e-6*HR negligible -
+  UQFF modifies luminosities, not spectral shape (falsifiable).
 
-Q-070 queued. Gate 560 assertions 0 failures. Registry 230 rows /
-448 edges / 78 citation ledgers. Wired 78/2,255 (10 clean, 68
-OPEN_RULING). Next: PAPER_075.
+  CONSTANT APPEARANCES: [SCm] = 0.99 (4th) and [UA] = 1e-4 (4th -
+  Q-060b canonization support grows).
+
+  DEFECT PINNED: per-row L_UQFF/L_Edd multipliers vary (1.4 /
+  1.11 / 1.014 / 2.0) vs the uniform 1.99 claim; M_dot inputs
+  untabulated - ruling requested.
+
+Q-071 queued. Gate 566 assertions 0 failures. Registry 232 rows /
+452 edges / 79 citation ledgers. Wired 79/2,255 (10 clean, 69
+OPEN_RULING). Next: PAPER_076.

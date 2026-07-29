@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 78 (10 ✓, 68 ⚠ OPEN_RULING)
+- **Wired:** 79 (10 ✓, 69 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2177
+- **Not yet touched:** 2176
 
 ---
 
@@ -108,7 +108,7 @@
 | ⚠ | PAPER_072 | Red Dwarf Reactor Physics UQFF |
 | ⚠ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |
 | ⚠ | PAPER_074 | NED SIMBAD Galactic Structure UQFF |
-| ⬜ | PAPER_075 | XRay Binaries Chandra UQFF |
+| ⚠ | PAPER_075 | XRay Binaries Chandra UQFF |
 | ⬜ | PAPER_076 | FermiLAT GammaRay UQFF |
 | ⬜ | PAPER_077 | LIGO GWTC4 Cross Validation UQFF |
 | ⬜ | PAPER_078 | NED Extragalactic UQFF |

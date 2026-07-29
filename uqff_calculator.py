@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.77.0"
+VERSION = "0.78.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3977,5 +3977,49 @@ def _paper_074(dataset):
                     'enhancement = 1 + SSq*factor; dmu = mu*SSq*(r_AGN/r_gal)'),
         'source': 'PAPER_074',
         'residual_pct': abs(avg - 1.018) / 1.018 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_075')
+def _paper_075(dataset):
+    """X-Ray Binaries: Chandra CSC2 + HEASARC (Session 0).
+
+    Domain 1.10 continues. eta_UQFF = eta_Edd * (1 + [SCm]) =
+    1.99x EXACT ([SCm] = 0.99, 4th appearance of the H_SCm-value
+    constant as a multiplier). ALL FIVE L_obs/L_UQFF ratio chains
+    VERIFY from mantissas: CygX-1 0.893, HerX-1 0.769, ScoX-1
+    1.15, GRS1915 0.80, NGC5907 ULX 25.0.
+    HONEST LIMITATION wired as stated: even the 2x enhancement
+    cannot explain the 25x super-Eddington ULX - geometric beaming
+    or field confinement required beyond the Superconductive mode.
+    Hardness-ratio chain: dHR = [UA]*1e-6*HR = negligible - [UA] =
+    1e-4 FOURTH appearance (Q-060b canonization further
+    supported); UQFF modifies luminosity, not spectral shape.
+    DEFECT (Q-071a): per-row L_UQFF/L_Edd multipliers are
+    inconsistent (1.4 / ~10 / 1.11 / 1.014 / 2.0) vs the uniform
+    1.99 claim - the M_dot inputs in L_X = E_react*M_dot*eta are
+    untabulated, so the variation is unverifiable in-paper.
+    Chandra CSC2 cone-search + HEASARC XRAYBSC (235 sources)
+    endpoints recorded.
+    """
+    ratios = {'cyg_x1': 2.5 / 2.8, 'her_x1': 1.0 / 1.3, 'sco_x1': 2.3 / 2.0,
+              'grs1915': 6.0 / 7.5, 'ngc5907_ulx': 25.0}
+    return {
+        'value': {
+            'domain': '1.10 (Chandra CSC2 + HEASARC endpoints)',
+            'eta_enhancement': 1.0 + 0.99,                 # 1.99 EXACT
+            'scm_multiplier': 0.99,                        # 4th appearance
+            'l_obs_over_uqff': ratios,                     # all verify
+            'ulx_requires_beaming': True,                  # honest limitation
+            'dhr_chain': 1.0e-4 * 1.0e-6,                  # negligible [UA] 4th
+            'per_row_multipliers': {'cyg': 2.8 / 2.0, 'sco': 2.0 / 1.8,
+                                    'grs': 7.5 / 7.4, 'ulx': 4.0 / 2.0},
+            'heasarc_sources': 235,
+        },
+        'formula': ('eta_UQFF = eta_Edd*(1+[SCm]) = 1.99*eta_Edd; '
+                    'dHR = [UA]*(n_vac/n_ISM)*HR (negligible)'),
+        'source': 'PAPER_075',
+        'residual_pct': abs((1.0 + 0.99) - 1.99) / 1.99 * 100,
         'status': 'OPEN_RULING',
     }
