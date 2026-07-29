@@ -1094,3 +1094,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 73/2,255 (10 ✓, 63 ⚠). Next: PAPER_070.
 
 ---
+
+## 2026-07-29 — v0.73.0 — BAND 1: PAPER_070
+
+- PAPER_070 wired (⚠ Q-066): Helix + PN Archive. Kepler chain
+  EXACT (0.0041 AU); decisive x_2 dual-corrupt-print evidence;
+  PN omega mismatch + 50-pct claim failure pinned.
+- Campaign: 74/2,255 (10 ✓, 64 ⚠). Next: PAPER_071.
+
+---

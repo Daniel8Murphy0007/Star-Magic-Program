@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 73 (10 ✓, 63 ⚠ OPEN_RULING)
+- **Wired:** 74 (10 ✓, 64 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2182
+- **Not yet touched:** 2181
 
 ---
 
@@ -103,7 +103,7 @@
 | ⚠ | PAPER_067 | AGN SgrA M87 CentaurusA UQFF |
 | ⚠ | PAPER_068 | Globular Cluster Dynamics UQFF |
 | ⚠ | PAPER_069 | Radio Transient ASKAP J1832 UQFF |
-| ⬜ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF |
+| ⚠ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF |
 | ⬜ | PAPER_071 | Stellar Superflare Energy Budget UQFF |
 | ⬜ | PAPER_072 | Red Dwarf Reactor Physics UQFF |
 | ⬜ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |

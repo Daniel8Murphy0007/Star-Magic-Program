@@ -1,28 +1,26 @@
-v0.72.0 BAND 1: PAPER_069 wired + PAPER_066 SUPERSEDED (6TH SELF-RECT)
+v0.73.0 BAND 1: PAPER_070 wired - KEPLER CHAIN EXACT + x_2 FORENSICS
 
-PAPER_069 ASKAP J1832-0911 Long-Period Transient (OPEN_RULING
-Q-065):
-  omega_0 = 2*pi/2640 s = 2.380e-3 rad/s EXACT from the measured
-  44-minute period (LaTeX-clear chain).
-  LENR = 1e-10*(7.854e12/2.380e-3)^2 = 1.09e21 VERIFIED EXACT.
-  Distance PINNED: "4.63e-6 m" mash = 4.63 kpc = 1.43e20 m =
-  15,102 ly, matching stated ~15,000 ly exactly.
-  Alternation mechanism VERIFIED: kappa-decay negligible per
-  cycle (1.5e-5); X-ray/radio switching = cos(omega_0 t) sign
-  flip at half-period 1320 s = 22 min -> observed 44-min cycle.
-  Threshold chain ln(1e6)/kappa = 27,631 days verified.
-  FALSIFIABLE: minimum LPT threshold period ~44 min predicted.
+PAPER_070 Helix Nebula + PN Archive (OPEN_RULING Q-066):
+  Helix chains ALL EXACT: WD M = 0.64 Msun = 1.273e30 kg;
+  omega_0 = 2*pi/10440 = 6.018e-4 rad/s; LENR = 1.70e22.
+  DESTROYED-PLANET KEPLER CHAIN EXACT: r_orb = (GM/omega^2)^(1/3)
+  = 6.16e8 m = 0.0041 AU - the vacuum ripping radius matching
+  Chandra's 2.9-hr debris-disk signal. g_Compressed = 2.06e11.
+  Shell radius PINNED: "6.15e-8 m" = 0.65 ly = 6.15e15 m (ly
+  conversion exact). Buoyant F/V = 1e-20*7.09e19 = 0.709 N/m3.
+  PN Archive LENR = 6.17e31 EXACT; F arithmetic checks.
 
-PAPER_066 SUPERSESSION (6th self-rectification, per charter):
-  PAPER_066's ASKAP config omega 2.38e17 was MOJIBAKE of
-  2.380e-3 (= 2*pi/P). Dispatch updated; old value preserved in
-  registry supersession note; gate assertion locks the corrected
-  ratio 3.30e15. Q-062d partially updated (Crab/Vela configs may
-  warrant the same scrutiny).
+  DECISIVE x_2 EVIDENCE: the integral factor prints as -1.35e-7
+  (Helix) AND -1.35e172 (PN Archive) IN THE SAME PAPER - same
+  mantissa, two corrupt exponents. It is PAPER_063's x_2 constant
+  typographically scrambled (5 appearances: 063/067/069/070x2).
+  Joint canonical-exponent ruling queued w/ Q-059b/Q-065c.
 
-  -1.35e172 integral factor: 3rd appearance (067 SgrA*, here,
-  063 x_2 family) - joint magnitude ruling queued with Q-059b.
+  DEFECTS PINNED: PN omega config 1e-8 vs 2*pi/1e6 = 6.28e-6
+  from the stated period; the "~50 pct of shell acceleration"
+  radiation-comparability claim requires L_X ~ 1e41 W (fails
+  dimensional scrutiny).
 
-Q-065 queued. Gate 524 assertions 0 failures. Registry 216 rows /
-420 edges / 73 citation ledgers. Wired 73/2,255 (10 clean, 63
-OPEN_RULING). Next: PAPER_070.
+Q-066 queued. Gate 532 assertions 0 failures. Registry 219 rows /
+426 edges / 74 citation ledgers. Wired 74/2,255 (10 clean, 64
+OPEN_RULING). Next: PAPER_071.

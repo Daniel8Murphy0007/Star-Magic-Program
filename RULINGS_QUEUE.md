@@ -1154,6 +1154,27 @@ RESOLVED section with the ruling recorded.
   sign flip); MC stability consistent with PAPER_065.
 - **Daniel's ruling:** (pending)
 
+### Q-066 — PAPER_070 — x_2 dual-print + PN omega mismatch + shell radius + 50-pct claim
+- **Question:** (a) DECISIVE x_2 EVIDENCE: the integral factor
+  prints as -1.35e-7 (Helix section) AND -1.35e172 (PN Archive
+  section) IN THE SAME PAPER - same mantissa, two corrupt
+  exponents. This identifies the factor as PAPER_063's x_2
+  constant with typographically scrambled exponents everywhere it
+  appears (5 appearances now: 063, 067, 069, 070x2). Joint ruling
+  with Q-059b/Q-065c: what is x_2's canonical exponent?
+  (b) PN Archive omega_0 = 1e-8 rad/s (config) vs 2*pi/1e6 =
+  6.28e-6 from the stated 10-day period - which is canonical?
+  (c) Shell radius pinned: "6.15e-8 m" = 0.65 ly = 6.15e15 m (ly
+  conversion exact; the 200 pc in the same cell is the distance)
+  - confirm. (d) The "UQFF buoyancy contributes ~50 pct of shell
+  acceleration" claim requires L_X ~ 1e41 W in the radiation
+  comparison - fails dimensional scrutiny as printed; intended
+  chain?
+- **Best-candidate wired:** Helix chains ALL EXACT (mass, omega,
+  LENR, Kepler 0.0041 AU, g_C, buoyant 0.709); PN LENR EXACT;
+  stability consistent with PAPER_065.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

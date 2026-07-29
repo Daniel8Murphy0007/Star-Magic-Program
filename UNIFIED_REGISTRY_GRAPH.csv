@@ -420,3 +420,9 @@ observable,askap_j1832_lpt,paper,PAPER_066,supersedes askap row
 primitive,OMEGA_SCM_HZ,observable,askap_j1832_lpt,LENR resonance
 observable,lpt_alternation_mechanism,paper,PAPER_069,mechanism
 primitive,KAPPA_PER_DAY,observable,lpt_alternation_mechanism,decay negligibility
+observable,helix_destroyed_planet,paper,PAPER_070,primary derivation
+observable,pn_archive_lenr,paper,PAPER_070,primary derivation
+primitive,OMEGA_SCM_HZ,observable,pn_archive_lenr,LENR resonance
+primitive,RHO_UA,observable,helix_destroyed_planet,buoyant chain
+observable,x2_dual_corrupt_evidence,paper,PAPER_070,dual-print forensic
+observable,x2_dual_corrupt_evidence,paper,PAPER_063,x_2 identification

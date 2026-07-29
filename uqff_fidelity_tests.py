@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.72.0", "uqff_calculator.VERSION = 0.72.0")
+assert_that(C.VERSION == "0.73.0", "uqff_calculator.VERSION = 0.73.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1159,6 +1159,23 @@ assert_that(abs(_r069['threshold_days'] - 27631.0) < 1.0,
 assert_that(_r069['kappa_dt_44min'] < 2e-5,
             "PAPER_069: kappa-decay negligible on 44-min scale - alternation is cos sign-flip at 22 min")
 assert_that(C.wired_count() >= 73, "wired_count >= 73")
+
+_r070 = C.calc('PAPER_070')['value']
+assert_that(abs(_r070['helix_omega0_rad_s'] - 6.018e-4) / 6.018e-4 < 0.001,
+            "PAPER_070: Helix omega_0 = 2*pi/10440 = 6.018e-4 EXACT")
+assert_that(abs(_r070['helix_lenr'] - 1.70e22) / 1.70e22 < 0.01,
+            "PAPER_070: Helix LENR = 1.70e22 EXACT chain")
+assert_that(abs(_r070['r_orb_au'] - 0.0041) < 0.0002,
+            "PAPER_070: destroyed-planet Kepler chain r_orb = 0.0041 AU EXACT")
+assert_that(abs(_r070['buoyant_f_per_v'] - 0.709) < 0.001,
+            "PAPER_070: buoyant F/V = 0.709 N/m3 EXACT")
+assert_that(abs(_r070['pn_lenr'] - 6.17e31) / 6.17e31 < 0.01,
+            "PAPER_070: PN Archive LENR = 6.17e31 EXACT")
+assert_that(_r070['x2_factor_prints'][0] == -1.35e-7 and _r070['x2_factor_prints'][1] == -1.35e172,
+            "PAPER_070: x_2 factor dual corrupt exponents in ONE paper pinned (decisive Q-066a evidence)")
+assert_that(_r070['radiation_claim_lx_needed_w'] > 1e40,
+            "PAPER_070: 50-pct radiation-comparability claim requires L_X ~ 1e41 W - fails scrutiny (Q-066d)")
+assert_that(C.wired_count() >= 74, "wired_count >= 74")
 
 # =============================================================================
 # REPORT

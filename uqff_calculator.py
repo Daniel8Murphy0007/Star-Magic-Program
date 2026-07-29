@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.72.0"
+VERSION = "0.73.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3707,5 +3707,62 @@ def _paper_069(dataset):
                     'alternation = cos(omega_0 t) sign flip at P/2'),
         'source': 'PAPER_069',
         'residual_pct': abs(_m.log(1e46 / 1e40) / KAPPA_PER_DAY - 27600.0) / 27600.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_070')
+def _paper_070(dataset):
+    """Helix Nebula + PN Archive Shell Dynamics (Session 0).
+
+    Helix (NGC 7293) chains ALL EXACT: WD M = 0.64 Msun =
+    1.273e30 kg; omega_0 = 2*pi/10440 s = 6.018e-4 rad/s; LENR =
+    1e-10*(1.305e16)^2 = 1.70e22. DESTROYED-PLANET KEPLER CHAIN
+    EXACT: r_orb = (GM/omega^2)^(1/3) = 6.16e8 m = 0.0041 AU;
+    g_Compressed = 2.06e11 (normalized) - vacuum compression at
+    0.004 AU as the ripping radius for the Chandra debris disk.
+    Shell radius PINNED: "6.15e-8 m" = 0.65 ly = 6.15e15 m (ly
+    conversion exact; 200 pc in the table is the DISTANCE).
+    Buoyant chain EXACT: F/V = 1e-20 * 7.09e19 = 0.709 N/m3.
+    PN Archive: LENR = 1e-10*(7.854e20)^2 = 6.17e31 EXACT;
+    F = -8.33e203 arithmetic checks.
+    DECISIVE x_2 EVIDENCE (Q-066a): the integral factor prints as
+    -1.35e-7 (Helix) AND -1.35e172 (PN Archive) IN THE SAME PAPER
+    - same mantissa, two corrupt exponents; it is the PAPER_063
+    x_2 constant typographically scrambled (4th + 5th e-family
+    appearances; joint ruling with Q-059b/Q-065c).
+    DEFECTS: PN omega_0 = 1e-8 config vs 2*pi/1e6 = 6.28e-6 from
+    the stated 10-day period (Q-066b); the "~50 pct of shell
+    acceleration" radiation-comparability claim requires L_X ~
+    1e41 W - fails dimensional scrutiny as printed (Q-066d).
+    MC stability 0.971/0.970, 100/100 (consistent PAPER_065).
+    """
+    import math as _m
+    w0 = 2.0 * _m.pi / 10440.0
+    ratio = 7.854e12 / w0
+    r_orb = (6.674e-11 * 1.27e30 / w0 ** 2) ** (1.0 / 3.0)
+    return {
+        'value': {
+            'helix_wd_mass_kg': 0.64 * 1.989e30,          # 1.273e30 EXACT
+            'helix_omega0_rad_s': w0,                     # 6.018e-4 EXACT
+            'helix_lenr': 1e-10 * ratio * ratio,          # 1.70e22 EXACT
+            'r_orb_m': r_orb,                             # 6.16e8 EXACT
+            'r_orb_au': r_orb / 1.496e11,                 # 0.0041 EXACT
+            'g_compressed_norm': 1.27e30 / r_orb * 1e-10, # 2.06e11 EXACT
+            'shell_radius_m': 0.65 * 9.461e15,            # 6.15e15 pinned
+            'buoyant_f_per_v': 1e-20 * 7.09e19,           # 0.709 EXACT
+            'pn_lenr': 1e-10 * (7.854e20) ** 2,           # 6.17e31 EXACT
+            'pn_omega_config': 1e-8,
+            'pn_omega_from_period': 2 * _m.pi / 1e6,      # 6.28e-6 mismatch
+            'x2_factor_prints': (-1.35e-7, -1.35e172),    # same-paper dual corrupt
+            'helix_f_mantissa': -2.30,
+            'pn_f_n': -8.33e203,
+            'radiation_claim_lx_needed_w': 0.7 * 4 * _m.pi * (6.15e15) ** 2 * 3e8,
+            'mc_stability': (0.971, 0.970),
+        },
+        'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2; r_orb = (GM/omega^2)^(1/3); '
+                    'F/V = rho_shell*g_Buoyant'),
+        'source': 'PAPER_070',
+        'residual_pct': abs(r_orb / 1.496e11 - 0.004) / 0.004 * 100,
         'status': 'OPEN_RULING',
     }

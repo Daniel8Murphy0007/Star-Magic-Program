@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.73.0] — 2026-07-29 — BAND 1: PAPER_070
+
+### Added
+- **PAPER_070 dispatch** (Helix Nebula + PN Archive): Helix chains
+  ALL EXACT — WD 0.64 Msun, omega_0 = 2*pi/10440, LENR 1.70e22,
+  destroyed-planet Kepler radius (GM/omega^2)^(1/3) = 6.16e8 m =
+  0.0041 AU (the vacuum ripping radius for Chandra's 2.9-hr
+  debris signal), g_C 2.06e11, buoyant F/V = 0.709 N/m3. Shell
+  radius pinned 0.65 ly = 6.15e15 m. PN Archive LENR 6.17e31
+  EXACT.
+- **DECISIVE x_2 FORENSICS:** the integral factor prints as
+  -1.35e-7 AND -1.35e172 in the same paper — identifying it as
+  PAPER_063's x_2 with scrambled exponents (5 appearances across
+  063/067/069/070); joint canonical-exponent ruling queued.
+- Defects pinned: PN omega config 1e-8 vs 2*pi/period 6.28e-6;
+  "50 pct shell acceleration" claim requires L_X ~ 1e41 W.
+- OPEN_RULING Q-066.
+- Gate: 532 assertions, 0 failures. Registry: 219 rows / 426 edges / 74 ledgers.
+
+---
+
 ## [0.72.0] — 2026-07-29 — BAND 1: PAPER_069 + PAPER_066 SUPERSESSION
 
 ### Added
