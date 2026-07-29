@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.5.0"
-description = "UQFF Star-Magic-Program v0.5.0: PAPER_004..006 wired (GW170817 chirp - papers own (1-f_TRZ) composition confirms primitive form; BBH energy retention F=(1-F_TRZ)^2=0.81 EXACT; multi-messenger c_GW=c preserved, 27x detection-volume shrink). Rulings Q-005/Q-006 added (6 total). Wired 6/2255, gate 83/0. Registry 20 rows / 28 edges / 6 citation ledgers. Campaign per CLAUDE.md."
+version = "0.6.0"
+description = "UQFF Star-Magic-Program v0.6.0: PAPER_007 wired (BNS tidal deformability: Lambda=(2/3)k2(R/M)^5 ~400 typical NS; f_SCm(B)=1-exp[-(B_crit/B)] threshold suppression; mass-gap NS/BH discriminator Lambda 16 vs 0). Q-007 queued (mojibake exponents). Corrects prior claim that PAPER_007 was absent - it exists and is now wired in sequence. Wired 7/2255, gate 88/0. Registry 23 rows / 32 edges / 7 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

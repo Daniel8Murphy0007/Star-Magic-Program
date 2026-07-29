@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 6 (2 ✓, 4 ⚠ OPEN_RULING)
+- **Wired:** 7 (2 ✓, 5 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2249
+- **Not yet touched:** 2248
 
 ---
 
@@ -28,7 +28,7 @@
 | ⚠ | PAPER_004 | GW170817 BNS Chirp Phase Evolution |
 | ⚠ | PAPER_005 | BH Merger Energy Retention UQFF |
 | ✓ | PAPER_006 | GW170817 Multi Messenger Full Inspiral |
-| ⬜ | PAPER_007 | Tidal Deformability Constraints BNS UQFF |
+| ⚠ | PAPER_007 | Tidal Deformability Constraints BNS UQFF |
 | ⬜ | PAPER_008 | UQFF Waveform Phase Evolution Template Mismatch |
 | ⬜ | PAPER_008b | Full Inspiral Waveform UQFF |
 | ⬜ | PAPER_009 | Damping Mechanism Decomposition UQFF |

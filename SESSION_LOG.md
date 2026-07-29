@@ -370,3 +370,23 @@ Wired 6/2,255 (001 ✓, 002-005 ⚠, 006 ✓). Gate 83/0. Rulings Q-001..Q-006.
 Next paper: PAPER_008 (007 absent from corpus).
 
 ---
+
+## 2026-07-29 — v0.6.0 — BAND 1: PAPER_007
+
+### Correction
+Prior session notes claimed "PAPER_008 next (007 absent from corpus)".
+WRONG — PAPER_007 exists (Tidal Deformability Constraints BNS, Session 143).
+The error came from misreading a predecessor-calculator audit list. Papers
+001-021 verified present with no numbering gaps.
+
+### What shipped
+- PAPER_007 wired (⚠ Q-007): Lambda = (2/3)k2(R/M)^5, f_SCm(B) threshold
+  suppression, mass-gap NS/BH discriminator (Lambda 16 vs 0).
+- Gate self-corrected during wiring: first k2/C guess gave Lambda=469 vs
+  paper ~400; corrected to C=0.172 (proper GM/Rc^2), k2=0.09 -> Lambda=399.
+- Gate 88/0. Registry 23 rows / 32 edges / 7 citation ledgers.
+
+### Campaign state
+Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
+
+---

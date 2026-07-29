@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.6.0] — 2026-07-29 — BAND 1: PAPER_007
+
+### Added
+- **PAPER_007 dispatch** (BNS Tidal Deformability, Session 143):
+  Lambda = (2/3)*k2*(R/M)^5 (~400 for M=1.4/R=12km); UQFF suppression
+  f_SCm(B) = 1 - exp[-(B_crit/B)]; mass-gap NS/BH discriminator
+  Lambda_NS(2.52) = 16 vs Lambda_BH = 0. OPEN_RULING Q-007 (mojibake
+  exponents + linear-vs-squared f_SCm power).
+- Gate: 88 assertions, 0 failures. Registry: 23 rows / 32 edges / 7 ledgers.
+
+### Fixed
+- Corrects the prior claim that PAPER_007 was absent from the corpus —
+  it exists (Tidal_Deformability_Constraints_BNS_UQFF) and is now wired
+  in proper sequence.
+
+---
+
 ## [0.5.0] — 2026-07-29 — BAND 1 CONTINUES: PAPER_004..PAPER_006
 
 ### Added

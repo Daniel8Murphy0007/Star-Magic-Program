@@ -1,17 +1,18 @@
-v0.5.0 BAND 1: PAPER_004..PAPER_006 wired
+v0.6.0 BAND 1: PAPER_007 wired (corrects "007 absent" error)
 
-PAPER_004 GW170817 Chirp Phase (OPEN_RULING Q-005): paper's own explicit
-(1-f_TRZ) composition - corpus-internal confirmation of the primitive
-form used since PAPER_001. Minor arithmetic slips queued.
+PAPER_007 BNS Tidal Deformability (Session 143, OPEN_RULING Q-007):
+  Lambda = (2/3)*k2*(R/M)^5 - typical NS (M=1.4, R=12km, C=0.172,
+  k2=0.09) gives Lambda = 399 vs LIGO GW170817 range 190-600.
+  UQFF suppression f_SCm(B) = 1 - exp[-(B_crit/B)]: no suppression for
+  pulsars, threshold at B_crit, full suppression for hyper-magnetars.
+  Mass-gap NS/BH discriminator: Lambda_NS(2.52 Msun) = 16 vs
+  Lambda_BH = 0 (GW190425 m1 classification tool).
 
-PAPER_005 BBH Energy Retention (OPEN_RULING Q-006): F = (1-F_TRZ)^2 =
-0.81 EXACT (string deactivated for BBH); P_GW 19% reduction, tau 1.23x
-extension, E_rad 0.6505 Msun - every numerical result reproduces.
+CORRECTION: prior session wrongly claimed PAPER_007 absent from corpus.
+It exists; sequence has no gaps (001-021 verified).
 
-PAPER_006 GW170817 Multi-Messenger (clean): c_GW = c preserved
-(|dc/c| < 3e-15 with GRB 170817A), kilonova sector unmodified,
-detection volume shrinks 27x = 1/D_total^3.
+Q-007 queued: mojibake-garbled exponents in B-regime table + linear vs
+squared f_SCm power discrepancy between sec 2.1 and 2.2.
 
-Gate 83 assertions 0 failures. Registry 20 rows / 28 edges / 6 citation
-ledgers. Wired 6/2,255 (2 clean, 4 OPEN_RULING). Rulings Q-001..Q-006
-open. Next paper: PAPER_008 (007 absent from corpus).
+Gate 88 assertions 0 failures. Registry 23 rows / 32 edges / 7 citation
+ledgers. Wired 7/2,255. Next: PAPER_008.

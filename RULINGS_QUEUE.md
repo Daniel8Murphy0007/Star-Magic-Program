@@ -60,6 +60,15 @@ RESOLVED section with the ruling recorded.
   every numerical result in the paper)
 - **Daniel's ruling:** (pending)
 
+### Q-007 — PAPER_007 — mojibake-garbled exponents in B-field regime table
+- **Question:** Paper text shows "B > 10-4 G", "B ~ 10-5 G", "B_crit = 4.4 x 10 T"
+  etc. — encoding damage garbled the exponents. Context implies 1e14/1e15 G and
+  4.4e13. Also f_SCm formula direction: sec 2.2 writes f = 1 - exp[-(B_crit/B)]
+  (suppression INCREASES with B), while lambda_obs in sec 2.1 uses f_SCm(B)^2
+  (squared) vs sec 2.2's linear. Which exponents and which power are canonical?
+- **Best-candidate wired:** f_SCm(B) = 1 - exp[-(B_crit/B)] linear, B_crit = 4.4e13
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

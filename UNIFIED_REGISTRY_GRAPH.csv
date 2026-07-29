@@ -27,3 +27,7 @@ primitive,F_TRZ,observable,gw170817_multimessenger_D_total,(1-F_TRZ) in chain
 observable,gw170817_multimessenger_D_total,paper,PAPER_006,primary derivation
 observable,gw170817_gw_speed_preservation,paper,PAPER_006,primary derivation
 observable,gw170817_detection_volume_shrink,paper,PAPER_006,primary derivation
+primitive,B_CRIT,observable,bns_f_scm_suppression,f_SCm(B) threshold at B_crit
+observable,bns_tidal_deformability_lambda,paper,PAPER_007,primary derivation
+observable,bns_f_scm_suppression,paper,PAPER_007,primary derivation
+observable,massgap_ns_bh_discriminator,paper,PAPER_007,primary derivation

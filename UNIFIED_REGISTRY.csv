@@ -16,3 +16,6 @@ bbh_merger_energy_retention,PAPER_005 S0,derived,PAPER_005 sec 4,E_rad_UQFF = 0.
 gw170817_multimessenger_D_total,PAPER_006 S0,derived,PAPER_006 sec 3,1*1*(1-F_TRZ)*0.37 - consistent with PAPER_001,0.333,PAPER_001 cross-check,0.100,gw,n/a,PAPER_006,PAPER_001;PAPER_004,1,0,0,4,WIRED
 gw170817_gw_speed_preservation,PAPER_006 S0,derived,PAPER_006 sec 5,UQFF amplitude-only modification; c_GW = c,|dc/c| < 3e-15,GRB 170817A delay 1.74 s,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED
 gw170817_detection_volume_shrink,PAPER_006 S0,derived,PAPER_006 sec 7,V ~ 1/D_total^3 = 27x shrink (O4/O5 BNS rate prediction),27.1,none,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED
+bns_tidal_deformability_lambda,PAPER_007 S143,derived,PAPER_007 sec 2,Lambda = (2/3)*k2*(R/M)^5; lambda_UQFF = lambda_GR*f_SCm(B),~400 typical NS,LIGO GW170817 190-600,n/a,gw,n/a,PAPER_007,PAPER_001;PAPER_002;PAPER_010,1,0,0,3,OPEN_RULING
+bns_f_scm_suppression,PAPER_007 S143,derived,PAPER_007 sec 2.2,f_SCm(B) = 1 - exp[-(B_crit/B)] (threshold suppression),0.632 at B_crit,regime table (mojibake exponents - Q-007),n/a,gw,n/a,PAPER_007,PAPER_002,1,0,0,3,OPEN_RULING
+massgap_ns_bh_discriminator,PAPER_007 S143,derived,PAPER_007 abstract,Lambda_NS(2.52 Msun) ~ 16 vs Lambda_BH = 0,16 vs 0,GW190425 m1 classification,n/a,gw,n/a,PAPER_007,PAPER_002,1,0,0,3,WIRED

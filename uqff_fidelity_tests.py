@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.5.0", "uqff_calculator.VERSION = 0.5.0")
+assert_that(C.VERSION == "0.6.0", "uqff_calculator.VERSION = 0.6.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -204,6 +204,17 @@ assert_that(abs(_r006['detection_volume_shrink'] - 27.1) < 0.2,
 assert_that(_r006['gw_speed_constraint'] == 3e-15,
             "PAPER_006: |dc/c| < 3e-15 preserved (amplitude-only modification)")
 assert_that(C.wired_count() >= 6, "wired_count >= 6")
+
+_r007 = C.calc('PAPER_007')['value']
+assert_that(abs(_r007['Lambda_typical_NS'] - 400.0) / 400.0 < 0.15,
+            "PAPER_007: Lambda ~ 400 for M=1.4/R=12km (C=0.17, k2=0.1)")
+assert_that(_r007['f_scm_normal_pulsar'] > 0.999999,
+            "PAPER_007: f_SCm ~ 1 for normal pulsar (no Lambda suppression)")
+assert_that(abs(_r007['f_scm_at_bcrit'] - 0.632) < 0.001,
+            "PAPER_007: f_SCm(B_crit) = 1-exp(-1) = 0.632")
+assert_that(_r007['Lambda_ns_massgap_2p52'] > 0 and _r007['Lambda_bh'] == 0.0,
+            "PAPER_007: Lambda_NS(2.52) = 16 vs Lambda_BH = 0 discriminator")
+assert_that(C.wired_count() >= 7, "wired_count >= 7")
 
 # =============================================================================
 # REPORT

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.5.0"
+VERSION = "0.6.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -348,4 +348,45 @@ def _paper_006(dataset):
                     'V_detect scales 1/D_total^3 ~ 27x shrink'),
         'source': 'PAPER_006',
         'residual_pct': abs(D_total - (1.0 - D_GW_EROSION)) / (1.0 - D_GW_EROSION) * 100.0,
+    }
+
+
+@_register('PAPER_007')
+def _paper_007(dataset):
+    """Tidal Deformability Constraints from BNS Mergers (Session 143).
+
+    Lambda = (2/3)*k2*(R/M)^5; UQFF adds B-field suppression
+    f_SCm(B) = 1 - exp[-(B_crit/B)]: f->1 for B<<B_crit (no suppression),
+    f->0 for B>>B_crit (full suppression). NS/BH discriminator at the
+    GW190425 mass gap: Lambda_NS(2.52 Msun) ~ 16 vs Lambda_BH = 0.
+    Q-007: paper text carries mojibake-garbled exponents (B regimes,
+    B_crit unit) — values wired from context-consistent readings.
+    """
+    import math as _m
+    B_crit = 4.4e13                   # B_crit anchor (unit T vs G — Q-002/Q-007)
+
+    def f_scm(B):
+        return 1.0 - _m.exp(-(B_crit / B))
+
+    k2 = 0.09                         # typical NS Love number (reproduces Lambda~400)
+    C = 0.172                         # compactness GM/(Rc^2) for M=1.4 Msun, R=12 km
+    Lambda_typical = (2.0 / 3.0) * k2 * (1.0 / C) ** 5
+    return {
+        'value': {
+            'Lambda_gw170817_range': (190.0, 600.0),     # LIGO 90% credible
+            'Lambda_1p4_upper': 800.0,                   # LIGO constraint
+            'Lambda_typical_NS': Lambda_typical,         # ~400 at C=0.17
+            'Lambda_ns_massgap_2p52': 16.0,              # paper: NS/BH discriminator
+            'Lambda_bh': 0.0,                            # BH has zero tidal deformability
+            'f_scm_normal_pulsar': f_scm(1.0e4),         # B=1e8 G = 1e4 T -> ~1.0
+            'f_scm_at_bcrit': f_scm(B_crit),             # 1-exp(-1) = 0.632
+            'compactness_typical': C,
+            'k2_typical': k2,
+            'm1_msun': 1.46, 'm2_msun': 1.27,            # GW170817 posteriors
+        },
+        'formula': ('Lambda = (2/3)*k2*(R/M)^5; lambda_UQFF = lambda_GR*f_SCm(B); '
+                    'f_SCm(B) = 1 - exp[-(B_crit/B)]'),
+        'source': 'PAPER_007',
+        'residual_pct': abs(Lambda_typical - 400.0) / 400.0 * 100.0,
+        'status': 'OPEN_RULING',
     }
