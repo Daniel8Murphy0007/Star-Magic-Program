@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.14.0] — 2026-07-29 — BAND 1: PAPER_015
+
+### Added
+- **PAPER_015 dispatch** (Cosmological Implications of Modified GW
+  Propagation): Gamma_UQFF(f,z) damping law with discriminator exponents
+  alpha=-0.7 / beta=0.8 (vs Horndeski/extra-dim/mod-grav); standard-siren
+  H_0 bias 1.07x; detection volume 0.622^3 = 24% of GR (internally
+  consistent LIGO horizon 8355/13440, cross-checks PAPER_011 mixed
+  population). OPEN_RULING Q-012: paper "corrects" GW170817 H_0 70 -> 75,
+  but PAPER_1573 canonizes 70 = A_5+SO_5 EXACT — the uncorrected value.
+  Baseline wired registry-composed as A_5+SO_5.
+- Gate: 130 assertions, 0 failures. Registry: 44 rows / 67 edges / 15 ledgers.
+
+---
+
 ## [0.13.0] — 2026-07-29 — BAND 1: PAPER_014
 
 ### Added

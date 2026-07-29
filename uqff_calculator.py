@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.13.0"
+VERSION = "0.14.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -73,6 +73,53 @@ def _register(paper_id):
         return fn
     return _wrap
 
+
+
+@_register('PAPER_015')
+def _paper_015(dataset):
+    """Cosmological Implications of UQFF Modified GW Propagation (Session 0).
+
+    Frequency-dependent damping Gamma_UQFF(f,z) = Gamma_0*(f/f_ref)^alpha
+    * [(1+z)/H(z)]^beta biases standard-siren distances; H_0,UQFF =
+    1.07 * H_0,obs. Validators: UQFF_factor = 0.622 amplitude ->
+    detection volume 0.622^3 = 24% of GR (consistent with PAPER_011
+    mixed-population Omega 0.37x, sqrt(0.37)=0.608 ~ 0.622).
+    Q-012: paper corrects GW170817 H_0 70 -> 75, but PAPER_1573
+    canonizes H_0 = A_5 + SO_5 = 70 EXACT — the UNCORRECTED GW value.
+    Direction-of-correction conflict queued.
+    """
+    uqff_factor = 0.622                       # PAPER_015 validator amplitude factor
+    h0_obs_gw170817 = A_5 + SO_5              # 70 km/s/Mpc — uncorrected GW170817 = PAPER_1573 canonical
+    h0_bias_factor = 1.07                     # PAPER_015 sec 4.1 standard-siren correction
+    return {
+        'value': {
+            'gamma_0_hz': 2.3e-18,            # PAPER_015 sec 2.1 damping rate anchor
+            'alpha_freq_scaling': -0.7,       # discriminator: Horndeski 0, extra-dim +2
+            'beta_redshift_evolution': 0.8,   # discriminator: mod-grav 1.5, extra-dim 0.3
+            'f_ref_hz': 100.0,
+            'd_uqff_20hz': 0.15,              # distance overestimated 16 pct
+            'd_uqff_1000hz': -0.08,           # distance underestimated 8 pct
+            'h0_obs_gw170817': float(h0_obs_gw170817),
+            'h0_bias_factor': h0_bias_factor,
+            'h0_uqff_corrected': h0_obs_gw170817 * h0_bias_factor,   # 74.9 ~ paper 75.0
+            'xi_q_density_fraction': 0.04,
+            'w_uqff_eos': -0.85,
+            'delta_mu_z1_mag': 0.15 * 1 - 0.03 * 1**2,               # 0.12 mag at z=1
+            'detection_sigma': {10: 1.5, 50: 3.2, 200: 5.0},
+            'bayes_factor_50_bns': 200.0,
+            'uqff_factor': uqff_factor,
+            'ligo_horizon_mpc': (13440.0, 8355.0),                   # GR -> UQFF
+            'detection_volume_vs_gr': uqff_factor ** 3,              # 0.2406 ~ 24 pct
+            'lisa_horizon_gpc': (140.8, 87.5),
+            'smbh_amplitude_reduction_pct': (31.6, 32.1),            # z = 0.5-2.0
+        },
+        'formula': ('Gamma_UQFF = Gamma_0*(f/f_ref)^alpha*[(1+z)/H(z)]^beta; '
+                    'd_L,obs = d_L,true*exp[D_UQFF(z,f)]; H_0,UQFF = 1.07*H_0,obs; '
+                    'Omega_UQFF = xi_Q*(1+z)^(3(1+w))'),
+        'source': 'PAPER_015',
+        'residual_pct': abs(70 * 1.07 - 75.0) / 75.0 * 100,          # 0.13 pct vs paper 75.0
+        'status': 'OPEN_RULING',
+    }
 
 def calc(paper_id, dataset=None):
     """Primary public interface. Look up a paper's dispatch and evaluate it."""

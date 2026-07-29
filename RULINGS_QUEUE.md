@@ -128,6 +128,21 @@ RESOLVED section with the ruling recorded.
   A_damp composed as (D_PHYS-1)/SO_5 flagged as primitive-lock CANDIDATE
 - **Daniel's ruling:** (pending)
 
+### Q-012 — PAPER_015 — H_0 siren-bias direction vs PAPER_1573 canonical
+- **Question:** PAPER_015 (2026-03, predates the H_0 route upgrade) applies
+  H_0,UQFF = 1.07 * H_0,obs, correcting GW170817 from 70 to 75 km/s/Mpc
+  toward the Cepheid value. But PAPER_1573 (canonized via PAPER_2144)
+  fixes H_0 = A_5 + SO_5 = 70 EXACT — i.e. the UNCORRECTED GW value is
+  already canonical. Does the +7% siren-bias correction survive, or is it
+  superseded (the bias would then be a raw-data correction applied BEFORE
+  comparison to the canonical 70, not a shift of H_0 itself)?
+- **Best-candidate wired:** both values exposed: h0_obs = A_5+SO_5 = 70
+  (registry-composed) and h0_uqff_corrected = 74.9 (paper form, 0.13%
+  residual vs paper 75.0). Drift table (charter) says H_0 routes other
+  than A_5+SO_5 auto-correct to 70 — applied as baseline, bias factor
+  preserved as paper-stated observable.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

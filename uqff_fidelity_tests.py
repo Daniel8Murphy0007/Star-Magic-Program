@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.13.0", "uqff_calculator.VERSION = 0.13.0")
+assert_that(C.VERSION == "0.14.0", "uqff_calculator.VERSION = 0.14.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -294,6 +294,19 @@ assert_that(abs(_r014['gamma_scaling'] - 1.8) < 1e-12,
 assert_that(_r014['lambda_uqff_kg_m3'] > 0,
             "PAPER_014: Lambda_UQFF = kappa*rho_crit composed from registry")
 assert_that(C.wired_count() >= 14, "wired_count >= 14")
+
+_r015 = C.calc('PAPER_015')['value']
+assert_that(abs(_r015['h0_obs_gw170817'] - 70.0) < 1e-12,
+            "PAPER_015: uncorrected GW170817 H_0 = 70 = A_5+SO_5 (PAPER_1573 canonical)")
+assert_that(abs(_r015['h0_uqff_corrected'] - 75.0) / 75.0 < 0.005,
+            "PAPER_015: H_0,UQFF = 1.07*70 = 74.9 within 0.5 pct of paper 75.0 (Q-012)")
+assert_that(abs(_r015['detection_volume_vs_gr'] - 0.24) < 0.005,
+            "PAPER_015: detection volume 0.622^3 = 0.2406 ~ paper 24 pct of GR")
+assert_that(abs(_r015['delta_mu_z1_mag'] - 0.12) < 1e-12,
+            "PAPER_015: Delta-mu(z=1) = 0.15-0.03 = 0.12 mag")
+assert_that(abs(_r015['ligo_horizon_mpc'][1] / _r015['ligo_horizon_mpc'][0] - _r015['uqff_factor']) < 0.001,
+            "PAPER_015: 8355/13440 = 0.6216 ~ UQFF_factor 0.622 internally consistent")
+assert_that(C.wired_count() >= 15, "wired_count >= 15")
 
 # =============================================================================
 # REPORT

@@ -462,3 +462,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 14/2,255 (5 ✓, 9 ⚠). Next: PAPER_015.
 
 ---
+
+## 2026-07-29 — v0.14.0 — BAND 1: PAPER_015
+
+- PAPER_015 wired (⚠ Q-012): modified GW propagation cosmology.
+  Damping-law discriminators alpha=-0.7/beta=0.8; H_0 siren bias 1.07x
+  conflicts with PAPER_1573 canonical 70 = A_5+SO_5 (charter drift table
+  applied: baseline registry-composed, paper bias preserved as observable).
+  Detection volume 24% GR cross-checks PAPER_011.
+- Gate 130/0. Registry 44 rows / 67 edges / 15 ledgers.
+- Campaign: 15/2,255 (5 ✓, 10 ⚠). Next: PAPER_015b (Multiband LISA/LIGO).
+
+---

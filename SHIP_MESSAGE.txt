@@ -1,19 +1,20 @@
-v0.13.0 BAND 1: PAPER_014 wired
+v0.14.0 BAND 1: PAPER_015 wired
 
-PAPER_014 Primordial Black Holes (OPEN_RULING Q-011):
-  Modified Friedmann: H^2 = 8piG/3*rho - k/a^2 + Lambda_UQFF/3 + xi_Q*H
-  Lambda_UQFF = kappa * rho_crit - COMPOSED from registry primitives
-  (KAPPA_PER_DAY x RHO_CRITICAL_KG_PER_M3)
-  Critical overdensity delta_c,UQFF = 0.45*(1 - alpha_Q + beta_damp)
-  Mass-function modifier: F = exp[-(M/1e15 g)^1.8]*[1 + 0.3*sin(...)]
+PAPER_015 Cosmological Implications of UQFF Modified GW Propagation
+(OPEN_RULING Q-012):
+  Gamma_UQFF(f,z) = Gamma_0*(f/f_ref)^alpha*[(1+z)/H(z)]^beta
+  Gamma_0 = 2.3e-18 Hz; alpha = -0.7; beta = 0.8 - discriminator
+  exponents vs Horndeski (0), extra dimensions (+2), mod-grav (1.5)
+  Standard-siren bias: H_0,UQFF = 1.07 * H_0,obs
+  Detection volume 0.622^3 = 24 pct of GR (LIGO horizon 13440 -> 8355
+  Mpc internally consistent; cross-checks PAPER_011 mixed population)
 
-PRIMITIVE-LOCK CANDIDATE: A_damp = 0.3 = (D_phys-1)/SO_5 EXACT -
-matches the 0.3-factor cross-regime family (predecessor PAPER_1953).
-Flagged for landmark verification, wired as composition.
+Q-012 queued: paper (2026-03) corrects GW170817 H_0 from 70 to 75
+toward Cepheid - but PAPER_1573 canonizes H_0 = A_5 + SO_5 = 70 EXACT,
+which IS the uncorrected GW value. Charter drift table applied:
+baseline wired registry-composed as A_5+SO_5, paper bias factor
+preserved as stated observable (0.13 pct residual vs paper 75.0).
 
-Q-011 queued: key-results line says delta_c = 0.333 (apparent copy-slip
-of GW D_total) vs sec-2.2's standard 0.45.
-
-Gate 124 assertions 0 failures. Registry 41 rows / 61 edges / 14
-citation ledgers. Wired 14/2,255 (5 clean, 9 OPEN_RULING).
-Next: PAPER_015 (Cosmological Implications of Modified GW Propagation).
+Gate 130 assertions 0 failures. Registry 44 rows / 67 edges / 15
+citation ledgers. Wired 15/2,255 (5 clean, 10 OPEN_RULING).
+Next: PAPER_015b (Multiband GW LISA/LIGO).

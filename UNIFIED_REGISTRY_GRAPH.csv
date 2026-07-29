@@ -60,3 +60,9 @@ primitive,SO_5,observable,pbh_mass_function_A_damp,(D_phys-1)/SO_5 = 0.3
 observable,pbh_modified_friedmann,paper,PAPER_014,primary derivation
 observable,pbh_critical_overdensity,paper,PAPER_014,primary derivation
 observable,pbh_mass_function_A_damp,paper,PAPER_014,primary derivation
+primitive,A_5,observable,standard_siren_h0_bias,"H_0,obs = A_5+SO_5 = 70 baseline"
+primitive,SO_5,observable,standard_siren_h0_bias,"H_0,obs = A_5+SO_5 = 70 baseline"
+observable,gw_propagation_damping_law,paper,PAPER_015,primary derivation
+observable,standard_siren_h0_bias,paper,PAPER_015,primary derivation
+observable,gw_detection_volume_uqff,paper,PAPER_015,validator block
+observable,gw_detection_volume_uqff,paper,PAPER_011,mixed-population cross-check
