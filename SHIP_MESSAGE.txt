@@ -1,24 +1,26 @@
-v0.37.0 BAND 1: PAPER_034 wired
+v0.38.0 BAND 1: PAPER_035 wired
 
-PAPER_034 Higgs kappa_t Coupling (OPEN_RULING Q-033):
-  UH Level-18 field: kappa_18 = 18^(-SSq) = 0.1927 composition
-  kappa_t bracket [1 - SSq*k_eta, 1 - kappa_18*k_eta] =
-  [0.9220, 0.9736]; geometric-mean central = 0.948 (5.2 pct below SM)
-  mu_tH = kappa_t^2 = 0.898 vs ATLAS 0.9583 +- 0.11 (0.6 sigma OK)
-  FALSIFIABLE LADDER: HL-LHC 1.3 sigma (inconclusive) -> FCC-hh
-  10.4 sigma DEFINITIVE discrimination
-  Charm Yukawa: |kappa_c| = 18.8 (sec-4.1 final) within CERN < 47
+PAPER_035 Higgs CP Violation (OPEN_RULING Q-034):
+  CMS A_CP = 0.507 +- 0.064 (H->ZZ*->4l) read as cos(pi*t_n).
+  ARITHMETIC AUDIT: arccos(0.507) = 1.039 rad gives the
+  self-consistent t_n = 0.331 (tautological); the paper's t_n = 0.353
+  comes from a circular arccos slip (1.109 rad = arccos(0.4456)) -
+  the celebrated 87.88 pct / 12.12 pct UQFF/SM decomposition is
+  entirely DOWNSTREAM of the slip. Both values wired, 12.1 pct slip
+  magnitude gate-pinned.
+  SURVIVING FALSIFIABLE (independent of the slip): one-loop
+  g_CP = (alpha/4pi)*D_TRZ*t_n^2 = 2.41e-5 ->
+  A_CP(H->gamma-gamma) = 0.74 pct - below current ~5 pct, reachable
+  at HL-LHC 3 ab^-1
+  Gamma_H = 3.2 GeV wired as 95-pct-bound SCENARIO only (x780 SM;
+  paper itself discloses not-physical; CERN theory < 3.6 GeV)
+  psi_2HDM = 32 deg vs <15 deg limit tension disclosed in-paper
 
-Q-033 queued: (a) abstract/table kappa_c = 42.0 (94.38 pct alignment)
-has NO shown derivation - paper's own final chain gives 18.8;
-(b) sigma(tH) 1.078e-3 vs 1.14e-3 internal split; (c) TRZ section
-makes three attempts with two dead ends left standing - 4th
-consecutive Session-0 paper with in-text self-corrections (chronic);
-(d) CROSS-LOCK FIRES: PAPER_028 fixed kappa_Higgs = 1.0 predicting
-any deviation shifts V_cb_eff - kappa_t = 0.948 here triggers it.
-First inter-paper lock tension of the campaign; adjudication shapes
-both papers.
+Q-034 queued: t_n 0.353-vs-0.331 adjudication (is 0.353 derived
+anywhere independently?); width scenario framing; 5th consecutive
+Session-0 paper with in-text self-corrections; header block
+duplicated 4x.
 
-Gate 284 assertions 0 failures. Registry 112 rows / 219 edges / 38
-citation ledgers. Wired 38/2,255 (7 clean, 31 OPEN_RULING).
-Next: PAPER_035.
+Gate 291 assertions 0 failures. Registry 115 rows / 224 edges / 39
+citation ledgers. Wired 39/2,255 (7 clean, 32 OPEN_RULING).
+Next: PAPER_036 (FUBii buoyancy template family 036-039 begins).

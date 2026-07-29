@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.37.0", "uqff_calculator.VERSION = 0.37.0")
+assert_that(C.VERSION == "0.38.0", "uqff_calculator.VERSION = 0.38.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -640,6 +640,21 @@ assert_that(abs(_r034['fcc_hh_significance'] - 10.4) < 0.2,
 assert_that(_r034['kappa_c_derived'] < _r034['kappa_c_bound'] and _r034['kappa_c_claimed'] < _r034['kappa_c_bound'],
             "PAPER_034: both kappa_c values (18.8 derived, 42.0 claimed) within CERN < 47 (Q-033a)")
 assert_that(C.wired_count() >= 38, "wired_count >= 38")
+
+_r035 = C.calc('PAPER_035')['value']
+assert_that(abs(_r035['t_n_self_consistent'] - 0.3308) < 0.001,
+            "PAPER_035: self-consistent t_n = arccos(0.507)/pi = 0.331 (paper used 0.353 - Q-034a)")
+assert_that(abs(_r035['cos_pi_tn_paper'] - 0.4456) < 0.001,
+            "PAPER_035: cos(pi*0.353) = 0.4456 - the 87.88 pct decomposition is downstream of the slip")
+assert_that(abs(_r035['g_cp_one_loop'] - 2.41e-5) / 2.41e-5 < 0.01,
+            "PAPER_035: one-loop g_CP = (alpha/4pi)*D_TRZ*t_n^2 = 2.41e-5 composed")
+assert_that(abs(_r035['a_cp_hgg'] - 7.4e-3) / 7.4e-3 < 0.01,
+            "PAPER_035: A_CP(H->gamma-gamma) = 0.74 pct falsifiable at HL-LHC")
+assert_that(abs(_r035['width_enhancement'] - 780.0) < 2.0,
+            "PAPER_035: Gamma_H scenario = 780x SM (bound scenario, disclosed not physical)")
+assert_that(_r035['gamma_h_scenario_gev'] < _r035['gamma_h_cern_limit_gev'],
+            "PAPER_035: 3.2 GeV scenario below CERN 3.6 GeV limit")
+assert_that(C.wired_count() >= 39, "wired_count >= 39")
 
 # =============================================================================
 # REPORT

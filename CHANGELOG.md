@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.38.0] — 2026-07-29 — BAND 1: PAPER_035
+
+### Added
+- **PAPER_035 dispatch** (Higgs CP Violation): CMS A_CP = 0.507 read as
+  cos(pi*t_n). ARITHMETIC AUDIT: arccos(0.507) = 1.039 rad -> the
+  self-consistent (tautological) t_n = 0.331; the paper's t_n = 0.353
+  traces to a circular arccos slip (1.109 rad = arccos(0.4456)), and
+  the 87.88/12.12 UQFF/SM decomposition is entirely downstream of it —
+  both values wired, slip quantified at 12.1%. The one-loop falsifiable
+  SURVIVES independently: g_CP = (alpha/4pi)*D_TRZ*t_n^2 = 2.41e-5 ->
+  A_CP(H->gamma-gamma) = 0.74% (HL-LHC reachable). Gamma_H = 3.2 GeV
+  wired as bound-scenario only (x780 SM, paper discloses). OPEN_RULING
+  Q-034 (t_n adjudication; width framing; 5th consecutive in-text
+  self-correction; 4x-duplicated header).
+- Gate: 291 assertions, 0 failures. Registry: 115 rows / 224 edges / 39 ledgers.
+
+---
+
 ## [0.37.0] — 2026-07-29 — BAND 1: PAPER_034
 
 ### Added

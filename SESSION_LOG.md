@@ -725,3 +725,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 38/2,255 (7 ✓, 31 ⚠). Next: PAPER_035.
 
 ---
+
+## 2026-07-29 — v0.38.0 — BAND 1: PAPER_035
+
+- PAPER_035 wired (⚠ Q-034): Higgs CP. Arccos-slip audit: the 87.88
+  pct decomposition is an artifact; tautological t_n = 0.331 vs paper
+  0.353 queued. One-loop 0.74 pct Hgg asymmetry survives as clean
+  falsifiable. Width 3.2 GeV wired scenario-only.
+- Gate 291/0. Registry 115 rows / 224 edges / 39 ledgers.
+- Campaign: 39/2,255 (7 ✓, 32 ⚠). Next: PAPER_036 (FUBii template family).
+
+---

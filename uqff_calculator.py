@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.37.0"
+VERSION = "0.38.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1833,5 +1833,57 @@ def _paper_034(dataset):
                     'mu = kappa_t^2; FCC-hh sigma = (1-kt)/0.005'),
         'source': 'PAPER_034',
         'residual_pct': abs(kt_central - 0.948) / 0.948 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_035')
+def _paper_035(dataset):
+    """Higgs CP Violation: UQFF Phase Predictions (Session 0).
+
+    CMS A_CP = 0.507 +- 0.064 (H->ZZ*->4l). UQFF reads A_CP as
+    cos(pi*t_n). ARITHMETIC AUDIT: arccos(0.507) = 1.039 rad ->
+    self-consistent t_n = 0.331 (tautological); the paper uses
+    t_n = 0.353 (arccos slip: 1.109 rad = arccos(0.4456), circular)
+    yielding cos = 0.4456 and pivots to an 87.88 pct / 12.12 pct
+    UQFF/SM decomposition - the decomposition is DOWNSTREAM of the
+    slip. One-loop falsifiable survives independently:
+    g_CP = (alpha/4pi)*D_TRZ*t_n^2 = 2.41e-5 -> A_CP(H->gg) = 0.74
+    pct, below current ~5 pct sensitivity, reachable at HL-LHC.
+    Gamma_H = 3.2 GeV is a 95-pct-bound scenario (x780 SM), not the
+    physical width (paper discloses).
+    Q-034: (a) t_n 0.353-vs-0.331 arccos slip + decomposition
+    artifact; (b) Gamma_H scenario framing vs LHC off-shell ~4 MeV;
+    (c) 5th consecutive in-text self-correction; (d) header block
+    duplicated 4x (formatting corruption).
+    """
+    import math as _m
+    a_cp = 0.507
+    t_n_self_consistent = _m.acos(a_cp) / _m.pi      # 0.3308
+    t_n_paper = 0.353
+    cos_paper = abs(_m.cos(_m.pi * t_n_paper))       # 0.4456
+    g_cp = (7.30e-3 / (4 * _m.pi)) * (1.0/3.0) * t_n_paper ** 2   # 2.41e-5
+    a_cp_hgg = 2.0 * g_cp / 6.49e-3                  # 7.4e-3
+    return {
+        'value': {
+            'a_cp_cms': (a_cp, 0.064),
+            't_n_self_consistent': t_n_self_consistent,   # 0.331 (Q-034a)
+            't_n_paper': t_n_paper,
+            'cos_pi_tn_paper': cos_paper,            # 0.4456
+            'decomposition_pct': (87.88, 12.12),     # artifact of slip
+            'phi_cp_rad': _m.pi * t_n_paper,         # 1.109
+            'psi_2hdm_deg': _m.degrees(_m.pi * t_n_paper) / 2.0,   # 31.8 (vs <15 limit - disclosed)
+            'g_cp_one_loop': g_cp,                   # 2.41e-5 composed with D_TRZ = 1/3
+            'a_cp_hgg': a_cp_hgg,                    # 0.0074 falsifiable at HL-LHC
+            'current_sensitivity': 0.05,
+            'gamma_h_scenario_gev': 3.2,             # x780 bound scenario
+            'gamma_h_sm_mev': 4.1,
+            'gamma_h_cern_limit_gev': 3.6,
+            'width_enhancement': 3.2 / 4.1e-3,       # 780
+        },
+        'formula': ('t_n = arccos(A_CP)/pi; g_CP = (alpha/4pi)*D_TRZ*t_n^2; '
+                    'A_CP(Hgg) = 2*g_CP/g_SM'),
+        'source': 'PAPER_035',
+        'residual_pct': abs(cos_paper - a_cp) / a_cp * 100,   # 12.1 (the slip magnitude)
         'status': 'OPEN_RULING',
     }

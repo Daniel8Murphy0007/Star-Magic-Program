@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 38 (7 ✓, 31 ⚠ OPEN_RULING)
+- **Wired:** 39 (7 ✓, 32 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2217
+- **Not yet touched:** 2216
 
 ---
 
@@ -68,7 +68,7 @@
 | ⚠ | PAPER_032 | BSM Scalar Sectors UQFF |
 | ⚠ | PAPER_033 | Electroweak Precision UQFF |
 | ⚠ | PAPER_034 | Higgs Kappa t Coupling UQFF |
-| ⬜ | PAPER_035 | Higgs CP Violation UQFF |
+| ⚠ | PAPER_035 | Higgs CP Violation UQFF |
 | ⬜ | PAPER_036 | FUBii Buoyancy Variant1 Archimedes UQFF |
 | ⬜ | PAPER_037 | FUBii Buoyancy Variants2to6 Thermodynamic |
 | ⬜ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum |

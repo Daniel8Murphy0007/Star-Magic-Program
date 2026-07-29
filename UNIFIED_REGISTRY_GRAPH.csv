@@ -218,3 +218,8 @@ observable,kappa_t_uh_level18,paper,PAPER_034,primary derivation
 observable,kappa_c_charm_yukawa,paper,PAPER_034,primary derivation
 observable,kappa_higgs_cross_lock_tension,paper,PAPER_034,kappa_t = 0.948
 observable,kappa_higgs_cross_lock_tension,paper,PAPER_028,kappa_Higgs = 1.0 lock
+primitive,F_TRZ,observable,higgs_cp_one_loop_asymmetry,D_TRZ = 1/3 loop suppression
+observable,higgs_cp_temporal_reversal,paper,PAPER_035,primary derivation
+observable,higgs_cp_temporal_reversal,paper,PAPER_027,cos(pi*t_n) mechanism shared
+observable,higgs_cp_one_loop_asymmetry,paper,PAPER_035,primary derivation
+observable,higgs_width_scm_scenario,paper,PAPER_035,primary derivation

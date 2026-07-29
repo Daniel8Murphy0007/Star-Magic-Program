@@ -518,6 +518,27 @@ RESOLVED section with the ruling recorded.
   registered as its own observable.
 - **Daniel's ruling:** (pending)
 
+### Q-034 — PAPER_035 — arccos slip + decomposition artifact + width scenario framing
+- **Question:** (a) The paper defines t_n by |cos(pi*t_n)| = A_CP =
+  0.507, which gives arccos(0.507) = 1.039 rad -> t_n = 0.331
+  (tautological). But it uses t_n = 0.353 - the printed "arccos =
+  1.109 rad" is actually arccos(0.4456), a circular slip. The
+  87.88 pct / 12.12 pct UQFF/SM decomposition (and the validator's
+  87.88 alignment figure) is entirely DOWNSTREAM of this slip. Is
+  t_n = 0.353 independently derived anywhere in the corpus, or does
+  the wiring collapse to the tautological 0.331? (b) Gamma_H = 3.2
+  GeV (x780 SM) is presented in the abstract as a "prediction" but
+  sec 2.2 discloses it as a 95-pct-bound scenario; LHC off-shell
+  measurements (~4 MeV) exclude a physical GeV-scale width - keep as
+  scenario-only? (c) 5th consecutive Session-0 paper with in-text
+  self-corrections ("Wait - let me recalculate", twice here).
+  (d) Header block duplicated 4x (formatting corruption).
+- **Best-candidate wired:** both t_n values exposed with the slip
+  quantified (12.1 pct); the one-loop A_CP(H->gg) = 0.74 pct
+  falsifiable wired independently (survives the slip); width wired
+  as scenario with SM baseline and CERN limit alongside.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
