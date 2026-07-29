@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.78.0"
+VERSION = "0.79.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4021,5 +4021,50 @@ def _paper_075(dataset):
                     'dHR = [UA]*(n_vac/n_ISM)*HR (negligible)'),
         'source': 'PAPER_075',
         'residual_pct': abs((1.0 + 0.99) - 1.99) / 1.99 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_076')
+def _paper_076(dataset):
+    """Fermi-LAT 4FGL Gamma-Ray Predictions (Session 0).
+
+    Domain 1.10 continues (Fermi endpoints recorded). Primarily a
+    NULL-PREDICTION paper: average flux and spectral shape
+    UNMODIFIED by UQFF; the Resonant 1e-5 modulation sits below
+    single-pulse 4FGL sensitivity but is flagged as POTENTIALLY
+    DETECTABLE in epoch-folded analysis - campaign-tracked
+    falsifiable prediction (Q-072c).
+    Chains VERIFIED: Mrk421 omega = 2*pi/315d = 2.309e-7 EXACT;
+    Crab omega = 2*pi*29.65 Hz = 186.3 EXACT (NOTE: 29.65 Hz here
+    vs 30.2 Hz in 064/066 - dual Crab spin, epoch question
+    Q-072b); phase-dependent gravity variation 1e-5/274 = 3.65e-8
+    chain closes.
+    DEFECT: the effective-photon-mass formula hbar^2*rho_UA*c^2/
+    eps0 evaluates to 8.0e-76 kg^2, not the printed 1.05e-70 -
+    formula does not close (Q-072a); the null conclusion (any
+    tiny m_gamma unobservable) is ROBUST regardless. Crab 4FGL
+    flux anchor 5.65e-7 ph/cm2/s recorded.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.10 (Fermi-LAT + 4FGL endpoints)',
+            'mrk421_omega': 2 * _m.pi / (315 * 86400.0),   # 2.309e-7 EXACT
+            'crab_omega_here': 2 * _m.pi * 29.65,          # 186.3 EXACT
+            'crab_freq_conflict_hz': (29.65, 30.2),        # Q-072b
+            'phase_variation': 1e-5 / 274.0,               # 3.65e-8 chain
+            'photon_mass_printed_kg2': 1.05e-70,
+            'photon_mass_chain_kg2': (1.055e-34) ** 2 * 7.09e-36 * 9e16 / 8.85e-12,
+            'null_flux': 'unmodified',
+            'null_spectrum': 'unmodified',
+            'modulation_amplitude': 1e-5,
+            'epoch_folded_prediction': True,               # falsifiable
+            'crab_4fgl_flux': 5.65e-7,
+        },
+        'formula': ('F(t) = F0*(1 + 1e-5*cos(omega t)); '
+                    'm_gamma^2 = hbar^2*rho_UA*c^2/eps0 (DOES NOT CLOSE - Q-072a)'),
+        'source': 'PAPER_076',
+        'residual_pct': abs(2 * _m.pi * 29.65 - 186.3) / 186.3 * 100,
         'status': 'OPEN_RULING',
     }

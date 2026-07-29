@@ -1150,3 +1150,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 79/2,255 (10 ✓, 69 ⚠). Next: PAPER_076.
 
 ---
+
+## 2026-07-29 — v0.79.0 — BAND 1: PAPER_076
+
+- PAPER_076 wired (⚠ Q-072): Fermi-LAT nulls. Omega chains EXACT;
+  dual Crab spin pinned; photon-mass formula defect pinned;
+  epoch-folded 1e-5 prediction tracked. Milestone: 80 wired.
+- Campaign: 80/2,255 (10 ✓, 70 ⚠). Next: PAPER_077.
+
+---

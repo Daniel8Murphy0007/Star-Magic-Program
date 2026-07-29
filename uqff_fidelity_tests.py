@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.78.0", "uqff_calculator.VERSION = 0.78.0")
+assert_that(C.VERSION == "0.79.0", "uqff_calculator.VERSION = 0.79.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1250,6 +1250,19 @@ assert_that(abs(_r075['per_row_multipliers']['ulx'] - 2.0) < 0.01
             and abs(_r075['per_row_multipliers']['grs'] - 1.014) < 0.01,
             "PAPER_075: per-row multiplier inconsistency pinned (1.4/1.11/1.014/2.0 vs uniform 1.99; Q-071a)")
 assert_that(C.wired_count() >= 79, "wired_count >= 79")
+
+_r076 = C.calc('PAPER_076')['value']
+assert_that(abs(_r076['mrk421_omega'] - 2.309e-7) / 2.309e-7 < 0.001,
+            "PAPER_076: Mrk421 omega = 2*pi/315d = 2.309e-7 EXACT")
+assert_that(abs(_r076['crab_omega_here'] - 186.3) < 0.01,
+            "PAPER_076: Crab omega = 2*pi*29.65 = 186.3 EXACT (dual-spin conflict w/ 30.2 pinned Q-072b)")
+assert_that(abs(_r076['phase_variation'] - 3.65e-8) / 3.65e-8 < 0.01,
+            "PAPER_076: phase-dependent variation 1e-5/274 = 3.65e-8 chain closes")
+assert_that(_r076['photon_mass_chain_kg2'] < 1e-74,
+            "PAPER_076: photon-mass formula does NOT close (8.0e-76 vs printed 1.05e-70) - pinned Q-072a")
+assert_that(_r076['epoch_folded_prediction'] and _r076['modulation_amplitude'] == 1e-5,
+            "PAPER_076: epoch-folded 1e-5 modulation wired as campaign-tracked falsifiable prediction")
+assert_that(C.wired_count() >= 80, "wired_count >= 80")
 
 # =============================================================================
 # REPORT

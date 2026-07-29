@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.79.0] — 2026-07-29 — BAND 1: PAPER_076
+
+### Added
+- **PAPER_076 dispatch** (Fermi-LAT 4FGL): null-prediction suite —
+  average flux and spectral shape UNMODIFIED by UQFF (falsifiable
+  nulls); the Resonant 1e-5 modulation is below single-pulse
+  sensitivity but wired as a campaign-tracked epoch-folded
+  falsifiable prediction. Chains EXACT: Mrk421 omega = 2*pi/315d;
+  Crab omega = 2*pi*29.65 = 186.3 (dual-spin conflict with the
+  30.2 Hz of 064/066 pinned); phase variation 1e-5/274 = 3.65e-8.
+- Defect pinned: photon-mass formula evaluates 8.0e-76 vs printed
+  1.05e-70 (5 orders); null conclusion robust regardless.
+- OPEN_RULING Q-072.
+- Gate: 572 assertions, 0 failures. Registry: 234 rows / 456 edges / 80 ledgers.
+
+---
+
 ## [0.78.0] — 2026-07-29 — BAND 1: PAPER_075
 
 ### Added

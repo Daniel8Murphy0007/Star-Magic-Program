@@ -1284,6 +1284,24 @@ RESOLVED section with the ruling recorded.
   limitation; per-row multipliers carried for the ruling.
 - **Daniel's ruling:** (pending)
 
+### Q-072 — PAPER_076 — photon-mass formula + Crab dual spin + epoch-folded prediction
+- **Question:** (a) The effective-photon-mass formula m^2 =
+  hbar^2*rho_UA*c^2/eps0 evaluates to 8.0e-76 kg^2, not the
+  printed 1.05e-70 (5 orders off) - the null conclusion (any tiny
+  m_gamma is unobservable) is robust either way, but should the
+  formula be marked OPEN or corrected? (b) Crab spin: 29.65 Hz
+  here (omega = 186.3) vs 30.2 Hz in PAPER_064/066 (omega = 190)
+  - both chains are internally exact; epoch difference or drift?
+  Pin canonical Crab spin. (c) Confirm the epoch-folded 1e-5
+  gamma-ray modulation as a campaign-tracked falsifiable
+  prediction (the paper's strongest testable claim).
+- **Notable:** Mrk421 omega = 2*pi/315d EXACT; phase-variation
+  chain 1e-5/274 = 3.65e-8 closes; null predictions (flux +
+  spectrum unmodified) wired as falsifiable.
+- **Best-candidate wired:** chains + nulls + prediction; formula
+  defect pinned with conclusion preserved.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.78.0"
-description = "UQFF Star-Magic-Program v0.78.0: PAPER_075 wired (X-ray binaries: eta_UQFF = 1+[SCm] = 1.99x EXACT; all five L_obs/L_UQFF ratio chains verify incl. ULX 25x with honest beaming-required limitation; hardness-ratio null prediction; [SCm] and [UA] 4th appearances; per-row multiplier inconsistency pinned). Q-071 queued. Wired 79/2255, gate 566/0. Registry 232 rows / 452 edges / 79 ledgers."
+version = "0.79.0"
+description = "UQFF Star-Magic-Program v0.79.0: PAPER_076 wired (Fermi-LAT 4FGL null-prediction suite: flux + spectrum unmodified; epoch-folded 1e-5 modulation tracked as falsifiable prediction; Mrk421/Crab omega chains EXACT with dual Crab-spin conflict pinned; photon-mass formula does not close - defect pinned with robust null conclusion preserved). Q-072 queued. Wired 80/2255, gate 572/0. Registry 234 rows / 456 edges / 80 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
