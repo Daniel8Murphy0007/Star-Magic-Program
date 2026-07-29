@@ -322,3 +322,8 @@ observable,cms_higgs_l18_validation,paper,PAPER_034,kappa_t cross-lock context
 observable,page_curve_26_channels,paper,PAPER_052,primary derivation
 observable,page_curve_26_channels,paper,PAPER_039,ent sign-reversal companion
 observable,model_suite_44_44,paper,PAPER_052,primary derivation
+primitive,SSQ,observable,resonance_ssq_composition,SSq/(1+SSq) = 0.3631
+observable,ngc2264_8test_model,paper,PAPER_053,primary derivation
+observable,ngc2264_8test_model,paper,PAPER_052,suite row cross-check
+observable,em_dominance_regime,paper,PAPER_053,primary derivation
+observable,resonance_ssq_composition,paper,PAPER_053,primary derivation

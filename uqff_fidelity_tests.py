@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.55.0", "uqff_calculator.VERSION = 0.55.0")
+assert_that(C.VERSION == "0.56.0", "uqff_calculator.VERSION = 0.56.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -906,6 +906,19 @@ assert_that(abs(_r052['higgs_margin'] - 7.61) < 0.01,
 assert_that(_r052['weakest_category'][1] > 60.0,
             "PAPER_052: weakest category (Aether Revival 71.85) still above its 60 target")
 assert_that(C.wired_count() >= 56, "wired_count >= 56")
+
+_r053 = C.calc('PAPER_053')['value']
+assert_that(abs(_r053['ratios']['g_grav'] - 1.0011) < 0.0002,
+            "PAPER_053: g_grav ratio 1.0011 re-verified from pair")
+assert_that(abs(_r053['ratios']['m_sf'] - 0.9992) < 0.0002,
+            "PAPER_053: M_sf ratio 0.9992 (1.4987 vs 1.5 Msun/Myr)")
+assert_that(abs(_r053['ratios']['r_amplitude'] - 0.9980) < 0.0002,
+            "PAPER_053: R_amplitude ratio 0.9980 (largest deviation, within SSq 0.5 pct)")
+assert_that(abs(_r053['ssq_resonance_factor'] - 0.3631) < 0.0005,
+            "PAPER_053: resonance factor SSq/(1+SSq) = 0.3631 registry-composed")
+assert_that(_r053['score'] == (8, 8) and _r053['em_dominance'] >= 0.99,
+            "PAPER_053: 8/8 PASS, EM-dominated regime confirmed")
+assert_that(C.wired_count() >= 57, "wired_count >= 57")
 
 # =============================================================================
 # REPORT

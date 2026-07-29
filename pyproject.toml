@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.55.0"
-description = "UQFF Star-Magic-Program v0.55.0: PAPER_052 wired (arXiv 2025: CMS Higgs 99.79 verified w/ L18-oscillator-projection reading annotated to Q-041d; Page curve 26-channel 99.84 verified; 44/44 model suite; self-referential-validation framing queued). Q-049. Wired 56/2255, gate 395/0. Registry 166 rows / 322 edges / 56 ledgers."
+version = "0.56.0"
+description = "UQFF Star-Magic-Program v0.56.0: PAPER_053 wired (NGC 2264 model paper opens the astro-model family: 8/8 tests re-verified, matches 052 suite row exactly; EM-dominated regime; SSq/(1+SSq) = 0.3631 composed; honest calibration-target framing recorded). CLEAN. Wired 57/2255, gate 401/0. Registry 169 rows / 327 edges / 57 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
