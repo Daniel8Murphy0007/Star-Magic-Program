@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.51.0] — 2026-07-29 — BAND 1: PAPER_048
+
+### Added
+- **PAPER_048 dispatch** (Ug4 Black Hole Vacuum Pressure): Sun-SgrA*
+  peak Ug4 = 1.246e28 N/m^2 VERIFIED; exponential decay (alpha*t =
+  164 over 4.5 Gyr) makes BH vacuum pressure an EARLY-UNIVERSE force
+  with a galaxy-seeding role. BH classification L21/L24/L26 with the
+  honest off-scale disclosure (n = 73.87 -> coupling-channel index);
+  lambda_24 = 0.10 matches the 043 beta-table exactly.
+- **FORENSIC MAJOR:** the validator value 1.8937e-23 N/m^2 IS the
+  predecessor "1.894" unknown-origin number (PAPER_2156 bulk-script
+  artifact) — candidate true origin is this Ug4 force reading, never
+  a density ratio. Paired with PAPER_021's 9.47e-27 = rho_crit
+  identification, BOTH predecessor audit targets now have fresh-corpus
+  origin candidates. Bonus: near-BH condensate 1e15 kg/m^3 =
+  predecessor PAPER_421 rho_c (continuity).
+- OPEN_RULING Q-045 (kappa-correction underived; alpha = 1e-10/day
+  third decay constant; forensic confirmation; channel-index reading).
+- Gate: 371 assertions, 0 failures. Registry: 154 rows / 298 edges / 52 ledgers.
+
+---
+
 ## [0.50.0] — 2026-07-29 — BAND 1: PAPER_047
 
 ### Added

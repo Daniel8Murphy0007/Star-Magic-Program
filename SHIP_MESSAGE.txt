@@ -1,26 +1,28 @@
-v0.50.0 BAND 1: PAPER_047 wired
+v0.51.0 BAND 1: PAPER_048 wired - 1.894 FORENSIC ORIGIN CANDIDATE
 
-PAPER_047 Nuclear Binding Energy: SEMF + 26-Level Polynomial
-(OPEN_RULING Q-044):
-  SEMF Fe-56 chain VERIFIED END-TO-END:
-    882.0 - 260.2 - 125.6 - 6.8 + 1.49 = 490.9 MeV
-    vs literature 492.3 MeV (0.3 pct)
-  B_UQFF = g(A)*V_nuc*rho_L1*k_conv = 2.53e-35 MeV - HONESTLY
-  framed as negligible at present vacuum density; becomes relevant
-  only at pre-inflationary densities
-  IRON-PEAK INSIGHT: coupling alignment, not correction - B/A max
-  (8.79 MeV) coincides with the g = 1000 reference; distinctive
-  claim: stellar nucleosynthesis terminates at Fe-56 partly because
-  A > 56 exceeds the reference coupling
-  Level-8 = 6.25 MeV nuclear scale (21.97 pct, consistent w/ 043)
+PAPER_048 Ug4 Black Hole Vacuum Pressure (OPEN_RULING Q-045):
+  Ug4 = M_BH*rho_vac[SCm]/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n)
+  Sun-SgrA* peak Ug4(0) = 1.246e28 N/m^2 VERIFIED
+  Decay alpha*t = 164 over 4.5 Gyr -> BH vacuum pressure is an
+  EARLY-UNIVERSE force (galaxy-seed [SCm] concentration role;
+  fully decayed today - consistent with modern lensing)
+  BH levels: stellar L21 / SMBH L24 / ultra L26 with the HONEST
+  off-scale disclosure (n = 73.87 -> coupling-channel index);
+  lambda_24 = 0.10 matches PAPER_043 beta-table EXACT
 
-Q-044 queued: (a) coupling table ROW-SHIFTED - Pb-208 shows U-238's
-value (true 1549) and U-238 shows 1662 (no listed nucleus); both
-true values computed and gate-pinned; (b) NEW ARTIFACT TYPE: an
-AI-session sentence ("The conversation summary reports 556 MeV...")
-leaked into the whitepaper prose; (c) abstract B_UQFF exponent
-mojibake (~1e-5 vs 2.53e-35); (d) level-10 "pion mass scale" label.
+FORENSIC MAJOR: the validator value 1.8937e-23 N/m^2 IS the
+predecessor "1.894" unknown-origin number (PAPER_2156 bulk-script
+artifact flagged for future investigation). Candidate TRUE ORIGIN:
+this Ug4 Sun-SgrA* force reading - never a density ratio. Paired
+with PAPER_021's 9.47e-27 = rho_crit identification, BOTH
+predecessor forensic targets now have fresh-corpus origin
+candidates. Bonus continuity: near-BH condensate 1e15 kg/m^3 =
+predecessor PAPER_421 rho_c.
 
-Gate 365 assertions 0 failures. Registry 151 rows / 292 edges / 51
-citation ledgers. Wired 51/2,255 (9 clean, 42 OPEN_RULING).
-Next: PAPER_048.
+Q-045 queued: kappa-correction peak -> 1.8937e-23 underived (opaque
+1.5e-51 factor); alpha = 1e-10/day third decay constant naming;
+channel-index reading acceptance.
+
+Gate 371 assertions 0 failures. Registry 154 rows / 298 edges / 52
+citation ledgers. Wired 52/2,255 (9 clean, 43 OPEN_RULING).
+Next: PAPER_049.

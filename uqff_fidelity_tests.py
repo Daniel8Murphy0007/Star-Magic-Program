@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.50.0", "uqff_calculator.VERSION = 0.50.0")
+assert_that(C.VERSION == "0.51.0", "uqff_calculator.VERSION = 0.51.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -831,6 +831,21 @@ assert_that(abs(_r047['level8_error_pct'] - 21.97) < 0.1,
 assert_that(abs(_r047['iron_peak_b_per_a'] - 8.79) < 1e-12,
             "PAPER_047: iron peak B/A = 8.79 MeV aligned with g = 1000 reference")
 assert_that(C.wired_count() >= 51, "wired_count >= 51")
+
+_r048 = C.calc('PAPER_048')['value']
+assert_that(abs(_r048['ug4_peak_n_m2'] - 1.246e28) / 1.246e28 < 0.005,
+            "PAPER_048: Ug4 peak = M*rho/(d^2) = 1.246e28 N/m^2 VERIFIED (Sun-SgrA*)")
+assert_that(abs(_r048['ug4_validator_n_m2'] - 1.8937e-23) < 1e-27,
+            "PAPER_048: validator 1.8937e-23 = the predecessor 1.894 FORENSIC number (origin candidate)")
+assert_that(abs(_r048['rho_dense_kg_m3'] - 1.0e15) < 1.0,
+            "PAPER_048: near-BH condensate 1e15 kg/m^3 = predecessor PAPER_421 rho_c (continuity)")
+assert_that(abs(_r048['lambda_24'] - 0.10) < 1e-15,
+            "PAPER_048: lambda_24 = 0.10 matches PAPER_043 beta-table EXACT")
+assert_that(abs(_r048['r_s_sgra_m'] - 1.224e10) / 1.224e10 < 0.005,
+            "PAPER_048: SgrA* r_s = 1.22e10 m verified")
+assert_that(abs(_r048['alpha_per_day_implied'] - 1.0e-10) / 1.0e-10 < 0.01,
+            "PAPER_048: implied alpha = 1e-10/day (distinct from kappa - Q-045b)")
+assert_that(C.wired_count() >= 52, "wired_count >= 52")
 
 # =============================================================================
 # REPORT

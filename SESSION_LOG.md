@@ -866,3 +866,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 51/2,255 (9 ✓, 42 ⚠). Next: PAPER_048.
 
 ---
+
+## 2026-07-29 — v0.51.0 — BAND 1: PAPER_048
+
+- PAPER_048 wired (⚠ Q-045): Ug4 BH vacuum pressure. Peak verified;
+  FORENSIC MAJOR: 1.8937e-23 validator value = predecessor 1.894
+  origin candidate + rho_c = 1e15 continuity. Both predecessor audit
+  targets (9.47, 1.894) now traced by the fresh corpus.
+- Gate 371/0. Registry 154 rows / 298 edges / 52 ledgers.
+- Campaign: 52/2,255 (9 ✓, 43 ⚠). Next: PAPER_049.
+
+---

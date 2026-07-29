@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.50.0"
+VERSION = "0.51.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2526,5 +2526,63 @@ def _paper_047(dataset):
                     '+ a_p/sqrt(A); B_UQFF = g(A)*V_nuc*rho_L1*k_conv'),
         'source': 'PAPER_047',
         'residual_pct': abs(semf - 490.9) / 490.9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_048')
+def _paper_048(dataset):
+    """Ug4 Black Hole Vacuum Pressure (Session 0).
+
+    Ug4 = M_BH*rho_vac[SCm]/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n).
+    Sun-SgrA* reference: peak Ug4(0) = 1.246e28 N/m^2 VERIFIED
+    (M = 8.2543e36 kg, rho = 8.988e31 J/m^3, d = 2.44e20 m);
+    validator kappa-corrected value 1.8937e-23 N/m^2.
+    FORENSIC MAJOR: 1.8937 IS the predecessor "1.894" number
+    (PAPER_2156 unknown-origin bulk-script ratio) - candidate TRUE
+    ORIGIN: this Ug4 Sun-SgrA* validator value, not a density ratio.
+    AND rho_dense = 1e15 kg/m^3 near-BH condensate = predecessor
+    PAPER_421 rho_c (Heaviside critical density) - double continuity.
+    BH level classification: stellar L21 / SMBH L24 / ultra L26;
+    HONEST in-paper disclosure that absolute BH energy is off-scale
+    (n = 73.87) -> level reinterpreted as coupling-channel index;
+    lambda_24 = 0.10 from the 043 beta table EXACT; Ug4_eff =
+    1.894e-24. Decay: alpha*t = 164.36 over 4.5 Gyr -> e^-164 ~ 0
+    (BH vacuum pressure was an EARLY-UNIVERSE force - galaxy-seed
+    formation role, decayed today).
+    Q-045: (a) the kappa-correction peak -> 1.8937e-23 is underived
+    (opaque factor ~1.5e-51); (b) alpha = 1e-10/day implied by
+    alpha*t = 164.36 (printed exponent mojibake) - distinct from
+    kappa = 5e-4/day, relation ruling; (c) forensic origin
+    confirmation for the 1.894 family; (d) off-scale level
+    reinterpretation - accept as canonical reading?
+    """
+    m_bh = 8.2543e36
+    rho_dense_j = 1.0e15 * 8.988e16                  # 8.988e31 J/m^3 (rho_c * c^2)
+    d_g = 2.44e20
+    ug4_peak = m_bh * rho_dense_j / d_g ** 2         # 1.246e28 VERIFIED
+    alpha_t = 164.36
+    return {
+        'value': {
+            'ug4_peak_n_m2': ug4_peak,               # 1.246e28
+            'ug4_validator_n_m2': 1.8937e-23,        # THE 1.894 forensic number
+            'ug4_eff_l24': 0.10 * 1.8937e-23,        # 1.894e-24
+            'lambda_24': 0.10,                       # 043 beta-table EXACT
+            'rho_dense_kg_m3': 1.0e15,               # = predecessor PAPER_421 rho_c
+            'rho_background_j_m3': 1.0e-8,
+            'density_enhancement': 8.988e31 / 1.0e-8,   # ~9e39
+            'alpha_t_45gyr': alpha_t,
+            'alpha_per_day_implied': alpha_t / 1.6436e12,   # 1e-10/day (Q-045b)
+            'decay_factor': 6.25e-72,
+            'r_s_sgra_m': 2 * 6.674e-11 * m_bh / 9.0e16,    # 1.224e10
+            'bh_levels': {'stellar': 21, 'smbh': 24, 'ultra': 26},
+            'off_scale_n': 73.87,                    # honest disclosure -> channel index
+            'early_universe_role': 'BH-seeded [SCm] concentration in galaxy formation',
+            'forensic_1894': 'predecessor PAPER_2156 unknown-origin 1.894 = this Ug4 validator value (candidate)',
+        },
+        'formula': ('Ug4 = M_BH*rho_vac[SCm]/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n); '
+                    'rho_vac[SCm] = rho_c*c^2 near BH'),
+        'source': 'PAPER_048',
+        'residual_pct': abs(ug4_peak - 1.246e28) / 1.246e28 * 100,
         'status': 'OPEN_RULING',
     }

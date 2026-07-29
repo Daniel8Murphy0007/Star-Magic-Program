@@ -292,3 +292,9 @@ observable,b_uqff_vacuum_correction,paper,PAPER_047,primary derivation
 observable,b_uqff_vacuum_correction,paper,PAPER_046,g(A) coupling input
 observable,iron_peak_termination_claim,paper,PAPER_047,primary derivation
 observable,iron_peak_termination_claim,paper,PAPER_046,iron-peak reference
+observable,ug4_bh_vacuum_pressure,paper,PAPER_048,primary derivation
+observable,ug4_bh_vacuum_pressure,paper,PAPER_042,Ug4 layer component
+observable,forensic_1894_origin,paper,PAPER_048,validator value
+observable,forensic_1894_origin,paper,PAPER_021,forensic companion (9.47 = rho_crit)
+observable,bh_level_classification,paper,PAPER_048,primary derivation
+observable,bh_level_classification,paper,PAPER_043,beta-table lambda_24 input

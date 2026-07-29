@@ -729,6 +729,30 @@ RESOLVED section with the ruling recorded.
   distinctive UQFF prediction.
 - **Daniel's ruling:** (pending)
 
+### Q-045 — PAPER_048 — Ug4 kappa-correction + alpha constant + 1.894 FORENSIC ORIGIN
+- **Question:** (a) The validator value Ug4 = 1.8937e-23 N/m^2 is
+  described as "time-averaged or kappa-corrected" from the verified
+  peak 1.246e28, but no derivation is shown - the implied factor
+  ~1.5e-51 is opaque. What is the correction chain? (b) The decay
+  exponent alpha*t = 164.36 over 4.5 Gyr implies alpha = 1e-10/day
+  (printed exponent mojibake) - a THIRD decay constant alongside
+  kappa = 5e-4/day and gamma = 1e-8/s (046): relation/naming ruling.
+  (c) FORENSIC MAJOR: 1.8937 IS the predecessor "1.894" number that
+  PAPER_2156 flagged as an unknown-origin bulk-script artifact
+  ("VDS ratio 1.894"). Candidate true origin: THIS Ug4 Sun-SgrA*
+  validator value - a force reading, never a density ratio. Paired
+  with PAPER_021's 9.47e-27 = rho_crit identification, BOTH
+  predecessor audit targets now have fresh-corpus origin candidates.
+  ALSO: near-BH condensate rho = 1e15 kg/m^3 = predecessor
+  PAPER_421 rho_c (Heaviside critical density) - continuity.
+  (d) BH absolute energy is off-scale (n = 73.87); the paper
+  honestly reinterprets levels 21/24/26 as coupling-channel indices -
+  accept as the canonical reading?
+- **Best-candidate wired:** peak chain verified; validator value
+  anchored with the forensic identification gate-pinned; lambda_24 =
+  0.10 exact vs 043; early-universe galaxy-seeding role preserved.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
