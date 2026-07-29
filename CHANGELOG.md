@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.19.0] — 2026-07-29 — BAND 1: PAPER_018
+
+### Added
+- **PAPER_018 dispatch** (Aether Noise Spectrum for LISA): S_UQFF =
+  S_GR*[1+P_aether]*F_TRZ(f); harmonic comb at n*0.99 mHz with exp(-n/2)
+  envelope (no astrophysical analogue — smoking-gun); TRZ suppression
+  dip depth = F_TRZ = 0.1 EXACT registry composition at ~5 mHz; aether
+  power fraction 222.93% of GR SGWB; integrated SNR 12,695,834 — same
+  validator figure as PAPER_017 (corpus consistency). OPEN_RULING Q-015
+  (U_m = 1.0 sec-1 vs 1.0e-4 key-results, four orders apart).
+- Gate: 160 assertions, 0 failures. Registry: 58 rows / 97 edges / 20 ledgers.
+
+---
+
 ## [0.18.0] — 2026-07-29 — BAND 1: PAPER_017
 
 ### Added

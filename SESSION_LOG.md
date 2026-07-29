@@ -517,3 +517,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 19/2,255 (7 ✓, 12 ⚠). Next: PAPER_018 (Aether Noise LISA).
 
 ---
+
+## 2026-07-29 — v0.19.0 — BAND 1: PAPER_018
+
+- PAPER_018 wired (⚠ Q-015): LISA aether noise spectrum. TRZ dip =
+  F_TRZ = 0.1 EXACT; harmonic comb smoking-gun; SNR figure cross-checks
+  PAPER_017 validator. U_m 1.0-vs-1e-4 conflict queued.
+- Gate 160/0. Registry 58 rows / 97 edges / 20 ledgers.
+- Campaign: 20/2,255 (7 ✓, 13 ⚠). Next: PAPER_019 (PTA Anomalies).
+
+---

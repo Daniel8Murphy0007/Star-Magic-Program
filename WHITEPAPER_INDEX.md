@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 19 (7 ✓, 12 ⚠ OPEN_RULING)
+- **Wired:** 20 (7 ✓, 13 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2236
+- **Not yet touched:** 2235
 
 ---
 
@@ -48,7 +48,7 @@
 | ✓ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations |
 | ⚠ | PAPER_016b | White Dwarf Foreground UQFF |
 | ⚠ | PAPER_017 | Redshift Corrections z1 in UQFF GW Propagation |
-| ⬜ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |
+| ⚠ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |
 | ⬜ | PAPER_019 | Pulsar Timing Array Anomalies UQFF |
 | ⬜ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime |
 | ⬜ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density |

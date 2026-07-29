@@ -174,6 +174,19 @@ RESOLVED section with the ruling recorded.
   0.6224); both sec-4 and sec-5 figures exposed side by side.
 - **Daniel's ruling:** (pending)
 
+### Q-015 — PAPER_018 — U_m calibration value 1.0 vs 1.0e-4
+- **Question:** Sec 1 states "U_m: Magnetic energy parameter (= 1.0 in
+  calibrated UQFF)" and the sec-3 comb-amplitude table uses the 1.0
+  reading (U_m x 1.0, U_m x e^-1, ...). But the key-numerical-results
+  line states U_m = 1.0e-4 — four orders of magnitude apart. The
+  222.93% integrated power fraction appears to require the larger
+  reading. Which U_m is canonical for the aether comb?
+- **Best-candidate wired:** both exposed side by side (u_m_sec1 = 1.0,
+  u_m_keyresults = 1.0e-4); comb envelope + power fraction wired from
+  the paper's own stated outputs, which are U_m-reading-independent
+  as anchored values.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

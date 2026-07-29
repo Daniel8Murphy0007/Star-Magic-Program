@@ -90,3 +90,9 @@ observable,f_combined_0622_decomposition,paper,PAPER_015b,explains cross-band 0.
 observable,f_combined_0622_decomposition,paper,PAPER_016b,explains D_local 0.6224
 observable,lisa_phase_lag_ftrz,paper,PAPER_017,primary derivation
 observable,smbh_z1_strain_snr,paper,PAPER_017,primary derivation
+primitive,F_TRZ,observable,trz_spectral_dip,dip depth = F_TRZ = 0.1 EXACT
+primitive,F_TRZ,observable,aether_noise_spectrum_law,F_TRZ(f) notch term
+observable,aether_noise_spectrum_law,paper,PAPER_018,primary derivation
+observable,aether_power_fraction,paper,PAPER_018,primary derivation
+observable,aether_power_fraction,paper,PAPER_017,shared validator SNR 12695834
+observable,trz_spectral_dip,paper,PAPER_018,primary derivation

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.18.0", "uqff_calculator.VERSION = 0.18.0")
+assert_that(C.VERSION == "0.19.0", "uqff_calculator.VERSION = 0.19.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -359,6 +359,19 @@ assert_that(abs(_r017['snr_ratio'] - 0.6233) < 0.001,
 assert_that(abs(_r017['strain_reduction_sec4_pct'] - 39.5) < 0.1,
             "PAPER_017: sec-4 strain reduction 39.5 pct reproduced (vs sec-5 31.6 - Q-014)")
 assert_that(C.wired_count() >= 19, "wired_count >= 19")
+
+_r018 = C.calc('PAPER_018')['value']
+assert_that(abs(_r018['trz_dip_depth'] - 0.1) < 1e-15,
+            "PAPER_018: TRZ suppression dip depth = F_TRZ = 0.1 EXACT registry composition")
+assert_that(abs(_r018['sgwb_slope'] - 2.0/3.0) < 1e-15,
+            "PAPER_018: SGWB inspiral slope f^(2/3) = D_GW_EROSION value note (2/3)")
+assert_that(abs(_r018['comb_envelope_n1_5'][0] - 0.6065) < 0.001,
+            "PAPER_018: comb n=1 weight exp(-1/2) = 0.6065")
+assert_that(abs(_r018['aether_power_fraction_pct'] - 222.93) < 1e-9,
+            "PAPER_018: aether power fraction 222.93 pct anchor locked")
+assert_that(abs(_r018['integrated_snr'] - 12695834.0) < 1.0,
+            "PAPER_018: integrated SNR 12,695,834 matches PAPER_017 validator (corpus consistency)")
+assert_that(C.wired_count() >= 20, "wired_count >= 20")
 
 # =============================================================================
 # REPORT

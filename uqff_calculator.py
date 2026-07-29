@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.18.0"
+VERSION = "0.19.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -861,5 +861,46 @@ def _paper_017(dataset):
                     'phi_lag = 2*pi*F_TRZ*t/tau_merge'),
         'source': 'PAPER_017',
         'residual_pct': abs(f_combined - 0.6217) / 0.6217 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_018')
+def _paper_018(dataset):
+    """Aether Noise Spectrum Characterization for LISA (Session 0).
+
+    S_UQFF(f) = S_GR(f)*[1+P_aether(f)]*F_TRZ(f); harmonic comb at
+    n * f_U (f_U ~ 0.99 mHz) with exp(-n/2) envelope; TRZ suppression
+    dip = F_TRZ = 0.1 EXACT (registry) near 5 mHz. Aether power
+    fraction 222.93 pct of GR SGWB; integrated SNR 12,695,834 —
+    same validator figure as PAPER_017 (corpus-consistent).
+    Q-015: sec 1 says U_m = 1.0 (calibrated) but key-results line says
+    U_m = 1.0e-4 — four orders apart; comb amplitudes in sec 3 use the
+    1.0 reading. Queued.
+    """
+    import math as _m
+    trz_dip = F_TRZ                              # 0.1 EXACT - 10 pct suppression depth
+    comb_envelope = [_m.exp(-n / 2.0) for n in range(1, 6)]
+    return {
+        'value': {
+            'f_u_fundamental_mhz': 0.99,         # PAPER_018 peak aether line anchor
+            'trz_dip_depth': trz_dip,            # 0.1 = F_TRZ registry-composed
+            'trz_dip_freq_mhz': 5.0,
+            'aether_power_fraction_pct': 222.93, # P_aether/P_GR
+            'integrated_snr': 12695834.0,        # matches PAPER_017 validator
+            'omega_gw_gr': 1.0e-9,
+            'beta_m_modulation': 0.01,
+            'sideband_offset_mhz': 0.01,
+            'comb_envelope_n1_5': comb_envelope, # exp(-n/2) harmonic weights
+            'sgwb_slope': 2.0 / 3.0,             # S_GR ~ f^(2/3) inspiral-dominated
+            'observation_years': 4,
+            'u_m_sec1': 1.0,                     # Q-015 conflict pair
+            'u_m_keyresults': 1.0e-4,
+        },
+        'formula': ('S_UQFF = S_GR*[1+P_aether]*F_TRZ(f); '
+                    'P_aether = U_m*sum_n exp(-n/2)*delta(f-n*f_U)*W; '
+                    'F_TRZ(f) = 1 - F_TRZ*exp[-(f-f_peak)^2/(2*sigma^2)]'),
+        'source': 'PAPER_018',
+        'residual_pct': None,
         'status': 'OPEN_RULING',
     }
