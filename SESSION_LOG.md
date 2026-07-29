@@ -855,3 +855,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 50/2,255 (9 ✓, 41 ⚠). Next: PAPER_047.
 
 ---
+
+## 2026-07-29 — v0.50.0 — BAND 1: PAPER_047
+
+- PAPER_047 wired (⚠ Q-044): nuclear binding. SEMF chain verified;
+  honest-negligible vacuum correction; coupling-table row shift
+  caught by recomputation; leaked AI-session sentence flagged (new
+  artifact type for the cleanup family).
+- Gate 365/0. Registry 151 rows / 292 edges / 51 ledgers.
+- Campaign: 51/2,255 (9 ✓, 42 ⚠). Next: PAPER_048.
+
+---

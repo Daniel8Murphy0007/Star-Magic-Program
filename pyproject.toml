@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.49.0"
-description = "UQFF Star-Magic-Program v0.49.0: PAPER_046 wired (DPM Yin-Yang cosmology: UA/SCm duality; nuclear coupling g(A) = 1000*(A/56)^(1/3) verified w/ iron-peak reference; Belly Button 300 Hz resonance; sub-harmonic 4.17e9 CORRECT - resolves Q-040c self-rectification; 132-order inflation gap honestly disclosed; 3rd DPM expansion). Q-043 queued. Wired 50/2255, gate 359/0. Registry 148 rows / 287 edges / 50 ledgers."
+version = "0.50.0"
+description = "UQFF Star-Magic-Program v0.50.0: PAPER_047 wired (nuclear binding: SEMF Fe-56 = 490.9 MeV chain verified 0.3 pct vs literature; B_UQFF = 2.53e-35 MeV honest-negligible; iron peak = coupling alignment with nucleosynthesis-termination claim; coupling-table row shift caught + leaked AI-session sentence flagged). Q-044 queued. Wired 51/2255, gate 365/0. Registry 151 rows / 292 edges / 51 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

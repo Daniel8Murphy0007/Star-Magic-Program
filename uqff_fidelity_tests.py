@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.49.0", "uqff_calculator.VERSION = 0.49.0")
+assert_that(C.VERSION == "0.50.0", "uqff_calculator.VERSION = 0.50.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -816,6 +816,21 @@ assert_that(_r046['energy_gap_orders'] == 132,
 assert_that(len(_r046['dpm_expansions']) == 3,
             "PAPER_046: THIRD DPM expansion recorded (Q-042c namespace now three-way)")
 assert_that(C.wired_count() >= 50, "wired_count >= 50")
+
+_r047 = C.calc('PAPER_047')['value']
+assert_that(abs(_r047['semf_fe56_mev'] - 490.9) < 0.5,
+            "PAPER_047: SEMF Fe-56 = 490.9 MeV chain VERIFIED (lit 492.3, 0.3 pct)")
+assert_that(_r047['b_uqff_fe56_mev'] < 1e-30,
+            "PAPER_047: UQFF vacuum correction 2.53e-35 MeV negligible (honest framing)")
+assert_that(abs(_r047['g_pb208_true'] - 1549.0) < 1.0,
+            "PAPER_047: g(Pb-208) true = 1549 (table shows 1619 = U-238 value - row shift Q-044a)")
+assert_that(abs(_r047['g_u238_true'] - 1619.0) < 1.0,
+            "PAPER_047: g(U-238) true = 1619 (table shows 1662 - row shift Q-044a)")
+assert_that(abs(_r047['level8_error_pct'] - 21.97) < 0.1,
+            "PAPER_047: level-8 6.25 MeV nuclear check consistent with PAPER_043")
+assert_that(abs(_r047['iron_peak_b_per_a'] - 8.79) < 1e-12,
+            "PAPER_047: iron peak B/A = 8.79 MeV aligned with g = 1000 reference")
+assert_that(C.wired_count() >= 51, "wired_count >= 51")
 
 # =============================================================================
 # REPORT

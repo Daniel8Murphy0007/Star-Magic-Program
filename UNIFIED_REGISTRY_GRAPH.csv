@@ -287,3 +287,8 @@ observable,nuclear_core_coupling,paper,PAPER_046,primary derivation
 observable,belly_button_resonance,paper,PAPER_046,primary derivation
 observable,belly_button_resonance,paper,PAPER_042,resolves Q-040c divisor slip
 primitive,OMEGA_SCM_HZ,observable,belly_button_resonance,1.25 THz / 300 Hz subharmonic
+observable,semf_fe56_verified,paper,PAPER_047,primary derivation
+observable,b_uqff_vacuum_correction,paper,PAPER_047,primary derivation
+observable,b_uqff_vacuum_correction,paper,PAPER_046,g(A) coupling input
+observable,iron_peak_termination_claim,paper,PAPER_047,primary derivation
+observable,iron_peak_termination_claim,paper,PAPER_046,iron-peak reference

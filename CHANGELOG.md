@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.50.0] — 2026-07-29 — BAND 1: PAPER_047
+
+### Added
+- **PAPER_047 dispatch** (Nuclear Binding Energy — SEMF + 26-Level):
+  the full SEMF Fe-56 chain VERIFIED end-to-end (490.9 MeV vs
+  literature 492.3, 0.3%). B_UQFF = g(A)*V_nuc*rho_L1*k_conv =
+  2.53e-35 MeV — honestly framed as negligible at present vacuum
+  density (relevant pre-inflation). Iron-peak insight: COUPLING
+  ALIGNMENT (B/A max at g = 1000 reference) with the distinctive
+  claim that nucleosynthesis terminates at Fe-56 partly because
+  A > 56 exceeds the reference coupling. Level-8 nuclear check
+  consistent with PAPER_043. OPEN_RULING Q-044: coupling table
+  ROW-SHIFTED (Pb-208/U-238 displaced — both true values pinned);
+  NEW ARTIFACT TYPE — an AI-session "conversation summary" sentence
+  leaked into the prose; abstract exponent mojibake; pion-label nit.
+- Gate: 365 assertions, 0 failures. Registry: 151 rows / 292 edges / 51 ledgers.
+
+---
+
 ## [0.49.0] — 2026-07-29 — BAND 1: PAPER_046 — 50-PAPER MILESTONE
 
 ### Added

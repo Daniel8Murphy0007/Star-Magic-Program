@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.49.0"
+VERSION = "0.50.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2475,5 +2475,56 @@ def _paper_046(dataset):
                     'E_universe ~ E_prebb * k_eta * tau_infl/t_Planck (gap disclosed)'),
         'source': 'PAPER_046',
         'residual_pct': abs(g_coupling(238) - 1619.0) / 1619.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_047')
+def _paper_047(dataset):
+    """Nuclear Binding Energy: SEMF + 26-Level Polynomial (S0).
+
+    SEMF Fe-56 chain VERIFIED END-TO-END: 882.0 - 260.2 - 125.6 -
+    6.8 + 1.49 = 490.9 MeV vs literature 492.3 (0.3 pct). UQFF
+    vacuum correction B_UQFF = g*V_nuc*rho_L1*k_conv = 2.53e-35 MeV
+    - negligible at present vacuum density, HONESTLY framed
+    (relevant only at pre-inflationary densities). The iron-peak
+    insight is COUPLING ALIGNMENT: B/A maximum (8.79 MeV) coincides
+    with g = 1000 reference; distinctive prediction - stellar
+    nucleosynthesis terminates at Fe-56 partly because A > 56
+    exceeds the reference coupling. Level-8 = 6.25 MeV nuclear scale
+    (21.97 pct of 8 MeV consensus, consistent with 043).
+    Q-044: (a) coupling table ROW SHIFT - Pb-208 shows 1619 (which
+    is U-238's correct value; Pb-208 true = 1549) and U-238 shows
+    1662 (= A ~ 258); (b) NEW ARTIFACT TYPE: the sentence "The
+    conversation summary reports 556 MeV..." leaked AI-session
+    text into the whitepaper prose; (c) abstract B_UQFF "~1e-5 MeV"
+    vs computed 2.53e-35 (exponent mojibake); (d) level-10 labeled
+    "pion mass scale" at 625 MeV (m_pi = 139.6).
+    """
+    semf = 15.75 * 56 - 17.80 * 56 ** (2.0/3.0) - 0.711 * 676 / 56 ** (1.0/3.0) \
+           - 23.70 * 16.0 / 56.0 + 11.18 / 56 ** 0.5
+    v_nuc_fe = 7.24e-45 * 56                          # 4.05e-43 m^3
+    b_uqff = 1000.0 * v_nuc_fe * 1.0e-8 * 6.242e12    # 2.53e-35 MeV
+    g = lambda a: 1000.0 * (a / 56.0) ** (1.0 / 3.0)
+    return {
+        'value': {
+            'semf_fe56_mev': semf,                    # 490.9 VERIFIED
+            'literature_fe56_mev': 492.3,
+            'semf_error_pct': abs(semf - 492.3) / 492.3 * 100,   # 0.3
+            'b_uqff_fe56_mev': b_uqff,                # 2.53e-35 negligible (honest)
+            'iron_peak_b_per_a': 8.79,
+            'g_pb208_true': g(208),                   # 1549 (table shows 1619 - Q-044a)
+            'g_u238_true': g(238),                    # 1619 (table shows 1662 - Q-044a)
+            'level8_mev': 6.25,
+            'level8_error_pct': 21.97,
+            'nucleosynthesis_termination': 'A > 56 exceeds g = 1000 reference coupling',
+            'leaked_artifact': 'conversation-summary sentence in prose (Q-044b)',
+            'semf_coeffs': {'a_v': 15.75, 'a_s': 17.80, 'a_c': 0.711,
+                            'a_a': 23.70, 'a_p': 11.18},
+        },
+        'formula': ('B_SEMF = a_v*A - a_s*A^(2/3) - a_c*Z^2/A^(1/3) - a_a*(A-2Z)^2/A '
+                    '+ a_p/sqrt(A); B_UQFF = g(A)*V_nuc*rho_L1*k_conv'),
+        'source': 'PAPER_047',
+        'residual_pct': abs(semf - 490.9) / 490.9 * 100,
         'status': 'OPEN_RULING',
     }

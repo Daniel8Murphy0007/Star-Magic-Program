@@ -710,6 +710,25 @@ RESOLVED section with the ruling recorded.
   THIRD DPM expansion ("Dark Photon Manifold").
 - **Daniel's ruling:** (pending)
 
+### Q-044 — PAPER_047 — coupling-table row shift + leaked AI artifact + mojibake
+- **Question:** (a) The sec-4 coupling table is ROW-SHIFTED: Pb-208
+  shows g = 1619 (which is U-238's correct value; Pb-208 true =
+  1549) and U-238 shows 1662 (corresponds to A ~ 258, no listed
+  nucleus). Both true values computed and gate-pinned - confirm the
+  shift reading? (b) NEW ARTIFACT TYPE: the sentence "The
+  conversation summary reports 556 MeV which includes a different
+  choice of Coulomb calculation" leaked an AI-session reference into
+  the whitepaper prose - flag for the same cleanup family as the
+  in-text self-corrections (now 7 papers). (c) Abstract prints
+  B_UQFF ~ 1e-5 MeV vs the computed 2.53e-35 (exponent mojibake).
+  (d) Level-10 row labeled "pion mass scale" at 625 MeV (m_pi =
+  139.6 - 4.5x; rho-meson 775 closer).
+- **Best-candidate wired:** SEMF chain verified end-to-end (0.3 pct
+  vs literature); B_UQFF honest-negligible framing preserved; both
+  true coupling values pinned; termination claim preserved as the
+  distinctive UQFF prediction.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
