@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.40.0] — 2026-07-29 — BAND 1: PAPER_037
+
+### Added
+- **PAPER_037 dispatch** (FUBii Thermodynamic Series, variants 2-6):
+  termv (jet terminal velocity), upar (U^1.5 ionization), coup
+  (eps^1.5 energy coupling), orbdec (Peters-linked binary inspiral —
+  direct UQFF-GW correspondence bridging to PAPER_001/012), kn
+  (kilonova). KILONOVA VERIFIED END-TO-END: AT2017gfo F_UBii =
+  1.305e54 N with the paper's own inputs (validator match);
+  parameterized _fubii_scale helper serves the family. OPEN_RULING
+  Q-035: exponent mojibake corrupts the termv/upar/coup worked
+  examples by 1e2-1e15 vs their own formulas (all quantified and
+  gate-pinned); kn L_peak = 5e40 W vs physical ~5e34 input ruling;
+  kn/grav ratio printed 6.2e-7 vs arithmetic 6.2e17.
+- Gate: 303 assertions, 0 failures. Registry: 121 rows / 235 edges / 41 ledgers.
+
+### Fixed
+- **ship.ps1 regenerated** (parser-safe): Daniel's PowerShell rejected
+  the old quote/bracket regex; version now extracted by splitting on
+  [char]34, CRLF + UTF-8 BOM. Shipped with v0.39.0.
+- Gate: 303 assertions, 0 failures.
+
+---
+
 ## [0.39.0] — 2026-07-29 — BAND 1: PAPER_036 — FUBii TEMPLATE FAMILY OPENS
 
 ### Added

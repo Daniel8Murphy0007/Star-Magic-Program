@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.39.0"
+VERSION = "0.40.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1931,4 +1931,61 @@ def _paper_036(dataset):
         'source': 'PAPER_036',
         'residual_pct': abs(perseus - (-2.024e60)) / 2.024e60 * 100,
         'status': 'WIRED',
+    }
+
+
+def _fubii_scale(numerator, q_wave, tail):
+    f_rel, e_lep = 1.0e-10, 1.22e-19                 # PAPER_036 family anchors
+    return f_rel * (numerator / e_lep) * q_wave * tail
+
+
+@_register('PAPER_037')
+def _paper_037(dataset):
+    """F_UBii Buoyancy Variants 2-6: Thermodynamic Series (S0).
+
+    Template family paper 2 of 4. Variants: termv (jet terminal
+    velocity), upar (ionization parameter, U^1.5 scaling), coup
+    (energy coupling, eps^1.5 law), orbdec (Peters-linked binary
+    inspiral), kn (kilonova).
+    KN VERIFIED END-TO-END: AT2017gfo F_UBii_kn = F_rel*(L_peak*
+    t_peak/E_LEP)*Q*(M_ej/M_sun)^(1/3) = 1.305e54 N with the paper's
+    own inputs (L = 5e40 W, 1 day, 0.05 M_sun) - validator-confirmed.
+    Q-035: exponent mojibake corrupts the OTHER worked examples -
+    (a) termv M87 intermediate 2.73e48 vs formula-true 2.73e51 (and
+    tau/L exponents unreadable); (b) upar M42 intermediate 7.38e45 vs
+    formula-true ~7.4e58 with r printed "3e-7 m (1 pc)"; interpretation
+    also prints 7.4e-5 N vs result -7.4e35 N; (c) coup AGN 4.10e53 vs
+    formula-true 4.10e61; (d) kn L_peak = 5e40 W anchor vs physical
+    AT2017gfo ~5e34 W (6 orders - which is canonical?); (e) kn/grav
+    ratio printed 6.2e-7, arithmetic gives 6.2e17.
+    Formulas wired parameterized; kn chain gate-pinned; corrupted
+    examples exposed as anchors with discrepancies quantified.
+    """
+    kn = _fubii_scale(5.0e40 * 86400.0, 1.0, 0.05 ** (1.0 / 3.0))    # 1.303e54
+    termv_true = _fubii_scale(1.0e-3 * 1.0e44 / 3.0e8, 1.0, 2.94e8)  # 8.0e49 formula-true
+    coup_true = _fubii_scale(0.05 * 1.0e44, 1.0, 0.05 ** 0.5)        # 9.2e50 formula-true
+    return {
+        'value': {
+            'variants': ('termv', 'upar', 'coup', 'orbdec', 'kn'),
+            'kn_at2017gfo_n': kn,                    # 1.303e54 ~ paper 1.305e54 VERIFIED
+            'kn_paper_n': 1.305e54,
+            'kn_l_peak_w': 5.0e40,                   # Q-035d vs physical ~5e34
+            'mej_cube_root': 0.05 ** (1.0/3.0),      # 0.368
+            'termv_m87_paper_n': 8.0e47,             # Q-035a
+            'termv_m87_formula_true_n': termv_true,  # 8.0e49
+            'upar_m42_paper_n': -7.4e35,             # Q-035b
+            'coup_agn_paper_n': 9.2e43,              # Q-035c
+            'coup_agn_formula_true_n': coup_true,    # 9.2e50
+            'orbdec_gw170817_paper_n': -4.1e47,
+            'upar_scaling': 'U^(3/2)',
+            'coup_scaling': 'eps^(3/2)',
+            'kn_grav_ratio_true': kn / 2.1e36,       # 6.2e17 (paper prints 6.2e-7 - Q-035e)
+        },
+        'formula': ('F = F_rel*(numerator/E_LEP)*Q_wave*tail; '
+                    'kn: numerator = L_peak*t_peak, tail = (M_ej/M_sun)^(1/3); '
+                    'termv: tau*L/c, v_term; coup: eps*Edot, sqrt(eps); '
+                    'upar: U*n_H*r^2, sqrt(U); orbdec: Peters chain, |da/dt|'),
+        'source': 'PAPER_037',
+        'residual_pct': abs(kn - 1.305e54) / 1.305e54 * 100,
+        'status': 'OPEN_RULING',
     }

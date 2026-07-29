@@ -229,3 +229,8 @@ observable,fubii_qwave_suppression,paper,PAPER_036,primary derivation
 observable,fubii_base_identity,paper,PAPER_037,family forward-link
 observable,fubii_base_identity,paper,PAPER_038,family forward-link
 observable,fubii_base_identity,paper,PAPER_039,family forward-link
+observable,fubii_kn_kilonova,paper,PAPER_037,primary derivation
+observable,fubii_thermo_variants,paper,PAPER_037,primary derivation
+observable,fubii_orbdec_peters_link,paper,PAPER_037,primary derivation
+observable,fubii_orbdec_peters_link,paper,PAPER_012,Peters chain link
+observable,fubii_thermo_variants,paper,PAPER_036,family base identity

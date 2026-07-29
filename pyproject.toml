@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.39.0"
-description = "UQFF Star-Magic-Program v0.39.0: PAPER_036 wired (FUBii template family root: base identity F_UBii = F_U - F_Bi - F_i matches predecessor Tier-4 registry EXACTLY - cross-repo continuity; virx variant Perseus -2.024e60 N verified end-to-end; sigma^3 scaling; Q_wave ~ 1e-6 thermalized self-consistency disclosed). CLEAN. Wired 40/2255, gate 297/0. Registry 118 rows / 230 edges / 40 ledgers."
+version = "0.40.0"
+description = "UQFF Star-Magic-Program v0.40.0: PAPER_037 wired (FUBii thermodynamic series, variants 2-6: kilonova AT2017gfo 1.305e54 N VERIFIED end-to-end; termv/upar/coup/orbdec parameterized; orbdec links buoyancy family to GW Peters chain). Q-035 queued (exponent mojibake corrupts 3 worked examples 1e2-1e15; kn input scale). Wired 41/2255, gate 303/0. Registry 121 rows / 235 edges / 41 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

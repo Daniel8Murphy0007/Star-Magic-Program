@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.39.0", "uqff_calculator.VERSION = 0.39.0")
+assert_that(C.VERSION == "0.40.0", "uqff_calculator.VERSION = 0.40.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -668,6 +668,19 @@ assert_that(abs(_r036['enhancement_raw'] - 2.4e6) / 2.4e6 < 0.02,
 assert_that(_r036['variant_count_family'] == 17,
             "PAPER_036: 17-variant family root (template papers 036-039)")
 assert_that(C.wired_count() >= 40, "wired_count >= 40")
+
+_r037 = C.calc('PAPER_037')['value']
+assert_that(abs(_r037['kn_at2017gfo_n'] - 1.305e54) / 1.305e54 < 0.005,
+            "PAPER_037: kilonova F_UBii = 1.305e54 N VERIFIED end-to-end (validator match)")
+assert_that(abs(_r037['mej_cube_root'] - 0.368) < 0.001,
+            "PAPER_037: (0.05)^(1/3) = 0.368 ejecta opacity factor")
+assert_that(len(_r037['variants']) == 5,
+            "PAPER_037: 5 thermodynamic variants (2-6 of 17)")
+assert_that(abs(_r037['termv_m87_formula_true_n'] / _r037['termv_m87_paper_n'] - 100.0) < 5.0,
+            "PAPER_037: termv M87 formula-true is 100x the printed value (Q-035a quantified)")
+assert_that(abs(_r037['kn_grav_ratio_true'] - 6.2e17) / 6.2e17 < 0.02,
+            "PAPER_037: kn/grav ratio arithmetic = 6.2e17 (paper prints 6.2e-7 - Q-035e)")
+assert_that(C.wired_count() >= 41, "wired_count >= 41")
 
 # =============================================================================
 # REPORT

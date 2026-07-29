@@ -539,6 +539,26 @@ RESOLVED section with the ruling recorded.
   as scenario with SM baseline and CERN limit alongside.
 - **Daniel's ruling:** (pending)
 
+### Q-035 — PAPER_037 — thermodynamic-series exponent mojibake + kn input scale
+- **Question:** The kilonova chain verifies end-to-end (1.305e54 N),
+  but the other worked examples are internally inconsistent with
+  their own formulas: (a) termv M87 printed intermediate 2.73e48 vs
+  formula-true 2.73e51 (result 8.0e47 vs 8.0e49 - 100x); (b) upar M42
+  printed 7.38e45 vs formula-true ~7.4e58, with r given as "3e-7 m
+  (1 pc)" (1 pc = 3.09e16 m) and the interpretation restating the
+  -7.4e35 N result as "7.4e-5 N"; (c) coup AGN printed 4.10e53 vs
+  formula-true 4.10e61 (result 9.2e43 vs 9.2e50). All exponent-
+  mojibake family. Which are canonical: the printed RESULTS or the
+  FORMULAS evaluated with the stated inputs? (d) kn uses L_peak =
+  5e40 W; physical AT2017gfo peak is ~5e34 W (6 orders) - is 5e40 a
+  UQFF-frame luminosity or an input drift? (e) kn/gravity ratio
+  printed 6.2e-7; arithmetic gives 6.2e17.
+- **Best-candidate wired:** kn chain gate-pinned (verified); formulas
+  wired parameterized via _fubii_scale; corrupted examples exposed
+  as paper anchors with formula-true values alongside and
+  discrepancies quantified (termv 100x pinned).
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

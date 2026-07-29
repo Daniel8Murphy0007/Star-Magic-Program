@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 40 (8 ✓, 32 ⚠ OPEN_RULING)
+- **Wired:** 41 (8 ✓, 33 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2215
+- **Not yet touched:** 2214
 
 ---
 
@@ -70,7 +70,7 @@
 | ⚠ | PAPER_034 | Higgs Kappa t Coupling UQFF |
 | ⚠ | PAPER_035 | Higgs CP Violation UQFF |
 | ✓ | PAPER_036 | FUBii Buoyancy Variant1 Archimedes UQFF |
-| ⬜ | PAPER_037 | FUBii Buoyancy Variants2to6 Thermodynamic |
+| ⚠ | PAPER_037 | FUBii Buoyancy Variants2to6 Thermodynamic |
 | ⬜ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum |
 | ⬜ | PAPER_039 | FUBii Buoyancy Variants12to17 ICM |
 | ⬜ | PAPER_040 | XRay Cluster Buoyancy Perseus Coma Virgo |

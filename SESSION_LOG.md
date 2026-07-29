@@ -746,3 +746,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 40/2,255 (8 ✓, 32 ⚠). Next: PAPER_037 (variants 2-6).
 
 ---
+
+## 2026-07-29 — v0.40.0 — BAND 1: PAPER_037
+
+- PAPER_037 wired (⚠ Q-035): FUBii thermodynamic series. Kilonova
+  verified end-to-end; orbdec bridges buoyancy family to the GW
+  Peters chain; three worked examples exponent-corrupted (quantified).
+- ship.ps1 parser-safe regeneration landed with v0.39.0 (Daniel's
+  PowerShell rejected the quote/bracket regex; split-on-char34 now).
+- Gate 303/0. Registry 121 rows / 235 edges / 41 ledgers.
+- Campaign: 41/2,255 (8 ✓, 33 ⚠). Next: PAPER_038 (variants 7-11, quantum).
+
+---
