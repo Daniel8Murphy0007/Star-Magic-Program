@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 107 (10 ✓, 97 ⚠ OPEN_RULING)
+- **Wired:** 108 (10 ✓, 98 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2148
+- **Not yet touched:** 2147
 
 ---
 
@@ -187,7 +187,7 @@
 | ⬜ | PAPER_1047 | Type Iax Supernova Buoyancy Reversal |
 | ⬜ | PAPER_1048 | M Sigma Phonon Corrected |
 | ⬜ | PAPER_1049 | Source10 GPU DPM Spectral Atlas |
-| ⬜ | PAPER_104 | P vs NP UQFF |
+| ⚠ | PAPER_104 | P vs NP UQFF |
 | ⬜ | PAPER_1050 | MUGE FUBii 9System Synthesis |
 | ⬜ | PAPER_1051 | Universal Duality SCm UA Theorem |
 | ⬜ | PAPER_1052 | TQFT Anyon Braiding ChernSimons |

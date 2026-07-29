@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.106.0"
-description = "UQFF Star-Magic-Program v0.106.0: PAPER_103 wired (Riemann Millennium 3: Hilbert-Polya via T-symmetric 5-freq Hamiltonian; first-5 zero anchors literature-EXACT; Rule-7 exemplary self-labeled numerology; harmonic bridge 4.1667e9 EXACT; KK 4+22 = D_crit; t_10000 canonical relation queued). Q-099 queued. Wired 107/2255, gate 737/0. Registry 287 rows / 589 edges / 107 ledgers."
+version = "0.107.0"
+description = "UQFF Star-Magic-Program v0.107.0: PAPER_104 wired (P vs NP Millennium 4: [UA] gains a PHYSICAL DEFINITION - v_UA/c = 1e-4 with v_UA = 3.0e4 m/s = 101 v_SCm, decisive Q-060b canonization evidence; extraction [UA]^2 = 1e-8 EXACT; 084 partition 3rd appearance; constant-in-n logical gap honestly documented; canonical 1-1e-9 relation queued). Q-100 queued. Wired 108/2255, gate 742/0. Registry 289 rows / 595 edges / 108 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

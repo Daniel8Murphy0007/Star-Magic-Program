@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.106.0"
+VERSION = "0.107.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5410,5 +5410,51 @@ def _paper_103(dataset):
                     'bridge n = omega_LENR/omega_act = 4.1667e9'),
         'source': 'PAPER_103',
         'residual_pct': abs(0.57 - 4 / 7) / (4 / 7) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_104')
+def _paper_104(dataset):
+    """P vs NP via 26D Computation - Millennium 4 (Session 0+).
+
+    UQFF-P vs UQFF-NP framing: 26D solvability with 4D
+    extraction suppressed by the computational horizon.
+    [UA] PHYSICAL IDENTIFICATION (Q-100a, MAJOR): Sector-7
+    defines [UA] = v_UA/c = 1e-4 -> v_UA = 3.0e4 m/s = EXACTLY
+    the v_SCm of PAPER_101 Sector-2. The [UA] constant (11th
+    appearance) now has a PHYSICAL DEFINITION - strong
+    canonization evidence for Q-060b, and it links Q-097d.
+    Computational partition {1-4 P, 5-18 BQP, 19-24 QMA, 25-26
+    UQFF-P} = the 084 partition, THIRD appearance (consistent).
+    Extraction probability [UA]^2 = 1e-8 EXACT.
+    LOGICAL GAP (Q-100b): sec-5's extraction cost [UA]^-2 = 1e8
+    is CONSTANT in n - the printed P != NP conclusion needs
+    n-dependence; the paper honestly self-labels "physics, not
+    mathematics - no lower bound proven" (Rule-7).
+    Hierarchy P in BQP in PSPACE in UQFF-P recorded (standard
+    inclusions correct). Later-corpus canonical: P != NP
+    confidence 1 - 1e-9 (predecessor gate) - relation queued.
+    Event-horizon analogy: information exists in 26D but is
+    4D-inaccessible (consistent with the 084 info-anchor).
+    """
+    return {
+        'value': {
+            'domain': '1.13 (Millennium: P vs NP)',
+            'ua_physical_identity': 'v_UA/c = 1e-4',
+            'v_ua_m_s': 3e8 * 1e-4,                        # 3.0e4 = 101's v_SCm
+            'links_101_v_scm': True,
+            'extraction_prob': 1e-4 ** 2,                  # 1e-8 EXACT
+            'expected_attempts': 1e8,                      # constant-in-n gap
+            'partition': {'p_1_4': 4, 'bqp_5_18': 14, 'qma_19_24': 6, 'uqffp_25_26': 2},
+            'partition_appearance': 3,                     # 084/097-coarse/104
+            'hierarchy': 'P in BQP in PSPACE in UQFF-P',
+            'canonical_closure': 'P != NP at 1 - 1e-9 (later corpus)',
+            'honesty': 'physics not mathematics - no lower bound proven (Rule-7)',
+        },
+        'formula': ('P_4D = [UA]^2 * P_26D; [UA] = v_UA/c = 1e-4; '
+                    'partition 4+14+6+2 = D_crit'),
+        'source': 'PAPER_104',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

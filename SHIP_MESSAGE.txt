@@ -1,29 +1,29 @@
-v0.106.0 BAND 1: PAPER_103 wired - RIEMANN ANCHORS EXACT + HONEST LABELS
+v0.107.0 BAND 1: PAPER_104 wired - [UA] PHYSICAL IDENTITY FOUND
 
-PAPER_103 Riemann Hypothesis Spectral Framework (OPEN_RULING
-Q-099):
-  MILLENNIUM PROBLEM 3. Hilbert-Polya program: the zeros'
-  imaginary parts as eigenfrequencies of the T-symmetric
-  5-frequency UQFF Hamiltonian; Re(s) = 1/2 from Wigner
-  T-symmetry.
+PAPER_104 P vs NP via 26D Computation (OPEN_RULING Q-100):
+  MILLENNIUM PROBLEM 4. UQFF-P framing: NP problems polynomial-
+  solvable in 26D; 4D extraction suppressed by the computational
+  horizon.
 
-  ANCHORS EXACT: gamma_1..5 = 14.134 / 21.022 / 25.011 /
-  30.425 / 32.935 - all match literature.
+  MAJOR - [UA] GAINS A PHYSICAL DEFINITION: Sector-7 defines
+  [UA] = v_UA/c = 1e-4, giving v_UA = 3.0e4 m/s = EXACTLY the
+  v_SCm of PAPER_101 Sector-2. After 11 appearances across the
+  band, the [UA] constant now has a physical identity - decisive
+  canonization evidence for Q-060b, and it links the Q-097d
+  velocity question (one constant, not two?).
 
-  RULE-7 EXEMPLARY: the paper ITSELF labels the SSq-critical-
-  line relation "a numerological coincidence (not a proof)" and
-  the whole connection "speculative" - honest Millennium
-  treatment throughout.
+  Extraction probability [UA]^2 = 1e-8 EXACT. Computational
+  partition {1-4 P, 5-18 BQP, 19-24 QMA, 25-26 UQFF-P} = the
+  084 partition, THIRD consistent appearance. Hierarchy
+  P in BQP in PSPACE in UQFF-P (standard inclusions correct).
 
-  S204 chains: harmonic bridge 1.25e12/300 Hz = 4.1667e9 EXACT;
-  KK tower 26 = 4 + 22 (D_crit split); Montgomery-Odlyzko GUE
-  vs UQFF Gaussian decorrelation recorded.
+  HONEST: sec-5's extraction cost is constant in n - the P != NP
+  conclusion does not follow as printed (needs n-dependence);
+  the paper self-labels "physics, not mathematics - no lower
+  bound proven". Later-corpus canonical (1 - 1e-9) relation
+  queued. Event-horizon analogy consistent with the 084
+  information-anchor.
 
-  QUEUED: sec-3 chain 0.4888 vs printed 0.50; relation to the
-  later-corpus canonical closure t_10000 = 9877.78265 EXACT;
-  300-Hz activation provenance; the open 5-frequency
-  dimensional-matching direction.
-
-Q-099 queued. Gate 737 assertions 0 failures. Registry 287 rows /
-589 edges / 107 citation ledgers. Wired 107/2,255 (10 clean, 97
-OPEN_RULING). Next: PAPER_104.
+Q-100 queued (100 rulings now). Gate 742 assertions 0 failures.
+Registry 289 rows / 595 edges / 108 citation ledgers. Wired
+108/2,255 (10 clean, 98 OPEN_RULING). Next: PAPER_105.

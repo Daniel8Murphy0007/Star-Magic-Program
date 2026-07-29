@@ -1417,3 +1417,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 107/2,255 (10 ✓, 97 ⚠). Next: PAPER_104.
 
 ---
+
+## 2026-07-29 — v0.107.0 — BAND 1: PAPER_104 — [UA] IDENTITY
+
+- PAPER_104 wired (⚠ Q-100): P vs NP. [UA] = v_UA/c physical
+  definition found (v_UA = 3.0e4 = 101 v_SCm); Q-060b + Q-097d
+  annotated; partition 3rd appearance; honest logical-gap note.
+  Rulings queue reaches 100.
+- Campaign: 108/2,255 (10 ✓, 98 ⚠). Next: PAPER_105.
+
+---

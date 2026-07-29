@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.107.0] — 2026-07-29 — BAND 1: PAPER_104 — [UA] PHYSICAL IDENTITY
+
+### Added
+- **PAPER_104 dispatch** (P vs NP, Millennium 4): UQFF-P framing
+  with the 26D/4D computational horizon. **MAJOR: [UA] gains a
+  PHYSICAL DEFINITION** — Sector-7 gives [UA] = v_UA/c = 1e-4,
+  so v_UA = 3.0e4 m/s = EXACTLY the v_SCm of PAPER_101 Sector-2;
+  decisive canonization evidence for Q-060b (11 appearances now)
+  and a Q-097d link. Extraction probability [UA]^2 = 1e-8 EXACT;
+  computational partition = 084's (3rd consistent appearance);
+  hierarchy inclusions standard-correct. Sec-5 constant-in-n
+  logical gap documented (the paper honestly self-labels
+  "physics, not mathematics"). Canonical 1-1e-9 relation queued.
+- OPEN_RULING Q-100 (milestone: 100 rulings queued).
+- Gate: 742 assertions, 0 failures. Registry: 289 rows / 595 edges / 108 ledgers.
+
+---
+
 ## [0.106.0] — 2026-07-29 — BAND 1: PAPER_103
 
 ### Added

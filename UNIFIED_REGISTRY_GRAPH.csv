@@ -589,3 +589,9 @@ primitive,SSQ,observable,riemann_spectral_framework,4/7 proximity note
 primitive,D_CRIT,observable,riemann_spectral_framework,KK split
 primitive,OMEGA_SCM_HZ,observable,riemann_spectral_framework,harmonic bridge
 observable,riemann_spectral_framework,paper,PAPER_091,5-frequency source
+observable,p_vs_np_26d,paper,PAPER_104,Millennium 4
+primitive,D_CRIT,observable,p_vs_np_26d,26D partition
+observable,p_vs_np_26d,paper,PAPER_084,partition 3rd appearance
+observable,ua_physical_identity,paper,PAPER_104,physical definition
+observable,ua_physical_identity,paper,PAPER_101,v_SCm link
+observable,ua_physical_identity,paper,PAPER_064,Q-060b evidence

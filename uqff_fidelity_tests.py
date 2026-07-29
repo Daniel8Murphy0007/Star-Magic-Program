@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.106.0", "uqff_calculator.VERSION = 0.106.0")
+assert_that(C.VERSION == "0.107.0", "uqff_calculator.VERSION = 0.107.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1621,6 +1621,17 @@ assert_that(sum(_r103['kk_split']) == 26,
 assert_that('Rule-7 exemplary' in _r103['honesty'],
             "PAPER_103: self-labeled speculative - honest Millennium treatment")
 assert_that(C.wired_count() >= 107, "wired_count >= 107")
+
+_r104 = C.calc('PAPER_104')['value']
+assert_that(abs(_r104['v_ua_m_s'] - 3.0e4) < 1e-6,
+            "PAPER_104: [UA] = v_UA/c PHYSICAL IDENTITY -> v_UA = 3.0e4 m/s = 101's v_SCm (Q-100a)")
+assert_that(abs(_r104['extraction_prob'] - 1e-8) < 1e-15,
+            "PAPER_104: extraction probability [UA]^2 = 1e-8 EXACT")
+assert_that(sum(_r104['partition'].values()) == 26 and _r104['partition_appearance'] == 3,
+            "PAPER_104: computational partition = the 084 partition, 3rd consistent appearance")
+assert_that('no lower bound proven' in _r104['honesty'],
+            "PAPER_104: Rule-7 honest labeling on Millennium 4")
+assert_that(C.wired_count() >= 108, "wired_count >= 108")
 
 # =============================================================================
 # REPORT

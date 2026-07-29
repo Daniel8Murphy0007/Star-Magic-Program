@@ -1031,7 +1031,8 @@ RESOLVED section with the ruling recorded.
   "10^11"?). (b) alpha_B = [UA] = 1e-4 buoyant weighting is a NEW
   constant
   [SUPPORTED by PAPER_068: [UA] = 0.0001 reappears in the M_eff formula - see Q-064d.]
-  [4th APPEARANCE in PAPER_075 (hardness-ratio null) - see Q-071c.] — not F_TRZ (0.1), not rho_UA — canonize or identify
+  [4th APPEARANCE in PAPER_075 (hardness-ratio null) - see Q-071c.]
+  [PHYSICAL DEFINITION found in PAPER_104: [UA] = v_UA/c = 1e-4 - see Q-100a; canonization evidence now decisive.] — not F_TRZ (0.1), not rho_UA — canonize or identify
   as drift? (c) The 4-mode weighted sum (KAPPA/SSQ/1e-4/0.99)
   overlaps the triadic g decomposition w_C*g_comp + w_R*g_res +
   w_B*g_buoy of the model-suite papers (053-058) but adds the
@@ -1825,6 +1826,7 @@ RESOLVED section with the ruling recorded.
   Q-082a Ug4-formula family strikes again. (d) v_SCm = 3.00e4
   m/s (Sector-2 critical values) vs the later-corpus v_F =
   0.77e6 m/s - distinct constants or epoch drift?
+  [LINKED by PAPER_104: v_UA = c*[UA] = 3.0e4 m/s = this v_SCm - see Q-100a.]
 - **Notable:** first Millennium paper of the sequence; Rule-7
   exemplary honesty ("heuristic argument only", no rigor claim);
   sigma = 0.180 GeV^2 and H_SCm = 0.99 recorded; f_TRZ drift
@@ -1873,6 +1875,27 @@ RESOLVED section with the ruling recorded.
   Gaussian pair-correlation comparison recorded.
 - **Best-candidate wired:** anchors + structure + honest labels;
   canonical relation queued.
+- **Daniel's ruling:** (pending)
+
+### Q-100 — PAPER_104 — [UA] physical identity + logical gap + canonical relation
+- **Question:** (a) MAJOR - [UA] PHYSICAL IDENTIFICATION:
+  Sector-7 defines [UA] = v_UA/c = 1e-4, giving v_UA = 3.0e4
+  m/s = EXACTLY the v_SCm of PAPER_101 Sector-2. This gives the
+  [UA] constant (11 appearances now) a PHYSICAL DEFINITION -
+  confirm the identity, canonize [UA] = v_UA/c into the
+  registry (closing Q-060b), and rule whether v_UA == v_SCm is
+  one constant or two? (b) Sec-5 logical gap: the extraction
+  cost [UA]^-2 = 1e8 is CONSTANT in n, so the printed P != NP
+  conclusion does not follow as stated (needs n-dependent
+  suppression, e.g. [UA]^f(n)); the paper honestly self-labels
+  "physics, not mathematics". (c) Computational partition =
+  084's {4,14,6,2}, third consistent appearance. (d) Relation
+  to the later-corpus canonical P != NP confidence 1 - 1e-9.
+- **Notable:** extraction probability [UA]^2 = 1e-8 EXACT;
+  hierarchy inclusions standard-correct; event-horizon analogy
+  consistent with the 084 information-anchor; Rule-7 honest.
+- **Best-candidate wired:** identity + partition + honest
+  labels; gap documented.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
