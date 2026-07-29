@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.9.0", "uqff_calculator.VERSION = 0.9.0")
+assert_that(C.VERSION == "0.10.0", "uqff_calculator.VERSION = 0.10.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -252,6 +252,17 @@ assert_that(abs(_r010['tau_uqff_ms'] - 7.14) < 0.05,
 assert_that(abs(_r010['eps_damp'] - 0.15) < 1e-12,
             "PAPER_010: 15% extra quantum-channel energy dissipation")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
+
+_r011 = C.calc('PAPER_011')['value']
+assert_that(abs(_r011['omega_suppression_bns'] - 0.110889) < 1e-6,
+            "PAPER_011: Omega BNS suppression = D^2 = 0.111 (89% cut)")
+assert_that(abs(_r011['omega_suppression_bbh'] - 0.6561) < 1e-6,
+            "PAPER_011: Omega BBH suppression = 0.81^2 = 0.656 (paper rounds 0.66)")
+assert_that(abs(_r011['omega_mixed_population_factor'] - 0.37) < 0.005,
+            "PAPER_011: mixed-population Omega ~ 0.37*Omega_GR (63% reduction)")
+assert_that(abs(_r011['omega_gw_uqff_bns_100hz'] - 1.11e-10) < 2e-13,
+            "PAPER_011: Omega_UQFF,BNS ~ 1.11e-10 at 100 Hz")
+assert_that(C.wired_count() >= 11, "wired_count >= 11")
 
 # =============================================================================
 # REPORT

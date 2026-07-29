@@ -82,6 +82,10 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** per-paper as stated; PAPER_008's D^2 convention is
   physically consistent with P ~ h^2
 - **Daniel's ruling:** (pending)
+- **SELF-RECTIFICATION NOTE (PAPER_011):** Omega_GW,UQFF = D^2 * Omega_GR
+  with explicit "rho_GW ~ h^2" justification — second corpus data point for
+  the D^2 convention. PAPER_005's linear-F scaling increasingly looks like
+  the outlier.
 
 ### Q-009 — PAPER_009 — aether scale + D_SCm form family
 - **Question:** (a) r = c/kappa stated as 17 Gpc does not reproduce from

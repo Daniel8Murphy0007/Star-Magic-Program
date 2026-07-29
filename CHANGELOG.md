@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.10.0] — 2026-07-29 — BAND 1: PAPER_011
+
+### Added
+- **PAPER_011 dispatch** (Stochastic GW Background): Omega_UQFF = D^2 *
+  Omega_GR (rho_GW ~ h^2); BNS suppression 0.111 (89%), BBH 0.656 (34%),
+  mixed population 0.37x (63% SGWB reduction); detection delayed
+  2028 -> 2032-2035; LISA slope discriminator. CLEAN wiring.
+- Q-008 SELF-RECTIFICATION: PAPER_011 is the second corpus data point for
+  the D^2 power convention — PAPER_005's linear-F increasingly the outlier.
+- Gate: 110 assertions, 0 failures. Registry: 33 rows / 46 edges / 11 ledgers.
+
+---
+
 ## [0.9.0] — 2026-07-29 — BAND 1: PAPER_010
 
 ### Added

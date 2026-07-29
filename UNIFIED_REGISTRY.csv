@@ -27,3 +27,5 @@ bns_bbh_damping_ratio,PAPER_009 S143,derived,PAPER_009 sec 1.2,0.81/0.333 = 2.43
 bns_postmerger_qnm_shift,PAPER_010 S0,derived,PAPER_010 sec 2.1,f_UQFF = f_GR*(1+alpha_Q-beta_damp) ~ 0.95*f_GR,2375 Hz (125 Hz shift),3G-detectable,n/a,gw,n/a,PAPER_010,PAPER_007,1,0,0,2,WIRED
 bns_postmerger_ringdown_decay,PAPER_010 S0,derived,PAPER_010 sec 2.2,"tau_UQFF = tau_GR/(1+gamma_damp), gamma=0.4",0.714*tau_GR (~7 ms),stated 0.71,0.60,gw,n/a,PAPER_010,,1,0,0,2,WIRED
 bns_remnant_extra_dissipation,PAPER_010 S0,derived,PAPER_010 sec 3,E_rad_UQFF = (1+0.15)*E_rad_GR (quantum channels; ringdown context),1.15x,note: PAPER_005 inspiral context reduces E_rad - different mechanism,n/a,gw,n/a,PAPER_010,PAPER_005,1,0,0,2,WIRED
+sgwb_omega_suppression,PAPER_011 S0,derived,PAPER_011 sec 2,Omega_UQFF = D_total^2 * Omega_GR (energy ~ h^2),BNS 0.111 / BBH 0.656,corroborates Q-008 D^2 convention (2nd corpus data point),n/a,gw,n/a,PAPER_011,PAPER_008,1,0,0,2,WIRED
+sgwb_mixed_population_factor,PAPER_011 S0,derived,PAPER_011 sec 2.4,0.5*0.111 + 0.4*0.656 + 0.1*0.5 = 0.37 (63% SGWB reduction),0.37,detection delay 2028 -> 2032-2035,0.13,gw,n/a,PAPER_011,,1,0,0,2,WIRED

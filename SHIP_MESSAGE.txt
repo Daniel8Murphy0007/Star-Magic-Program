@@ -1,14 +1,14 @@
-v0.9.0 BAND 1: PAPER_010 wired (clean)
+v0.10.0 BAND 1: PAPER_011 wired (clean, Q-008 corroborated)
 
-PAPER_010 Post-Merger Oscillations + Remnant Mass:
-  QNM frequency: f_UQFF = f_GR*(1 + alpha_Q - beta_damp) ~ 0.95*f_GR
-  (2.5 kHz -> 2.375 kHz; 125 Hz shift detectable at 3G sensitivity)
-  Ringdown decay: tau_UQFF = tau_GR/(1+0.4) = 0.71*tau_GR (~7 ms)
-  Remnant: E_rad_UQFF = 1.15*E_rad_GR (15% extra quantum-channel
-  dissipation -> lighter remnant than GR predicts)
+PAPER_011 Stochastic GW Background:
+  Omega_GW,UQFF = D_total^2 * Omega_GW,GR (rho_GW ~ h^2 explicit)
+  BNS suppression 0.111 (89% cut) / BBH 0.656 (34% cut)
+  Mixed population (50/40/10): Omega_UQFF ~ 0.37*Omega_GR (63% cut)
+  Detection delay: 2028 (GR) -> 2032-2035 (UQFF); LISA slope test
 
-Clean wiring - paper internally consistent, no new rulings queued.
+Q-008 SELF-RECTIFICATION: second corpus data point for the D^2 power
+convention (PAPER_008 + PAPER_011 vs PAPER_005's linear-F outlier).
 
-Gate 105 assertions 0 failures. Registry 31 rows / 43 edges / 10
-citation ledgers. Wired 10/2,255 (3 clean, 7 OPEN_RULING).
-Next: PAPER_011 (Stochastic GW Background).
+Gate 110 assertions 0 failures. Registry 33 rows / 46 edges / 11
+citation ledgers. Wired 11/2,255 (4 clean, 7 OPEN_RULING).
+Next: PAPER_012 (Eccentric Binary Circularization).

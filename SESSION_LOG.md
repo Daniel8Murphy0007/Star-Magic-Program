@@ -424,3 +424,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 10/2,255 (3 ✓, 7 ⚠). Next: PAPER_011.
 
 ---
+
+## 2026-07-29 — v0.10.0 — BAND 1: PAPER_011
+
+- PAPER_011 wired (✓ clean): SGWB Omega = D^2*Omega_GR; mixed 0.37x.
+- Q-008 corroboration: second corpus D^2 data point (rho_GW ~ h^2 explicit).
+- Gate 110/0. Registry 33 rows / 46 edges / 11 ledgers.
+- Campaign: 11/2,255 (4 ✓, 7 ⚠). Next: PAPER_012.
+
+---

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.9.0"
+VERSION = "0.10.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -507,4 +507,39 @@ def _paper_010(dataset):
                     'E_rad_UQFF = (1+0.15)*E_rad_GR'),
         'source': 'PAPER_010',
         'residual_pct': abs(1.0 / 1.4 - 0.71) / 0.71 * 100.0,   # 0.60% (0.714 vs stated 0.71)
+    }
+
+
+@_register('PAPER_011')
+def _paper_011(dataset):
+    """Stochastic GW Background in UQFF (Session 0).
+
+    Omega_GW,UQFF = D_total^2 * Omega_GW,GR (energy ~ h^2 — CORROBORATES
+    Q-008's D^2 convention, second corpus data point). Per-population:
+    BNS 0.111 (89% cut), BBH 0.81^2 ~ 0.66 (34% cut). Mixed population
+    (50/40/10 BNS/BBH/NSBH): Omega_UQFF ~ 0.37*Omega_GR (63% reduction).
+    Detection delayed 2028 -> 2032-2035; LISA slope discriminates.
+    """
+    D_bns = (1.0 - F_TRZ) * 0.37                  # 0.333
+    D_bbh = (1.0 - F_TRZ) ** 2                     # 0.81
+    omega_gr_100hz = 1.0e-9                        # GR anchor at 100 Hz
+    f_bns, f_bbh, f_nsbh = 0.5, 0.4, 0.1           # population fractions
+    nsbh_factor = 0.5                              # paper-stated NSBH suppression
+    omega_mix = f_bns * D_bns**2 + f_bbh * D_bbh**2 + f_nsbh * nsbh_factor
+    return {
+        'value': {
+            'omega_suppression_bns': D_bns**2,             # 0.111
+            'omega_suppression_bbh': D_bbh**2,             # 0.656
+            'omega_gw_gr_100hz': omega_gr_100hz,
+            'omega_gw_uqff_bns_100hz': D_bns**2 * omega_gr_100hz,   # 1.11e-10
+            'omega_mixed_population_factor': omega_mix,    # ~0.37
+            'sgwb_reduction_pct': (1.0 - omega_mix) * 100, # ~63
+            'detection_delay': '2028 (GR) -> 2032-2035 (UQFF)',
+            'trz_dip_at_hz': 100.0,
+            'population_fractions': (f_bns, f_bbh, f_nsbh),
+        },
+        'formula': ('Omega_UQFF = D_total^2 * Omega_GR (energy ~ h^2, corroborates '
+                    'Q-008 D^2 convention); mixed 0.5*0.111 + 0.4*0.656 + 0.1*0.5 ~ 0.37'),
+        'source': 'PAPER_011',
+        'residual_pct': abs(omega_mix - 0.37) / 0.37 * 100.0,
     }
