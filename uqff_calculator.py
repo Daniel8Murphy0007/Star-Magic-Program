@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.73.0"
+VERSION = "0.74.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3764,5 +3764,60 @@ def _paper_070(dataset):
                     'F/V = rho_shell*g_Buoyant'),
         'source': 'PAPER_070',
         'residual_pct': abs(r_orb / 1.496e11 - 0.004) / 0.004 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_071')
+def _paper_071(dataset):
+    """Stellar Superflare Energy Budget (Session 0).
+
+    Last of the five MC-stability systems. Chains ALL EXACT:
+    omega_0 = 2*pi/3600 = 1.745e-3; LENR = 1e-10*(4.501e15)^2 =
+    2.026e21; solar surface gravity GM/r^2 = 274.0 m/s2 (matches
+    the real Sun EXACTLY - self-consistency landmark); Ug1 = 274 *
+    mu0*B^2/8pi = 1.37e-9 for B = 1e-2 T (100 G) - this CONFIRMS
+    the PAPER_066 Ug1 magnetic-factor formula (mu0*B^2/8pi =
+    5e-12 here computes cleanly; annotates Q-062c); Um chain
+    2.43e53 (1 - e^-x ~ x small-argument verified); E_Kepler =
+    1e-3 * 4e26 * 3600 = 1.44e27 J EXACT (L_star = solar).
+    x_2 FORENSICS DEEPEN (Q-067a): section 2.6 prints x2 =
+    "-1.35e-7" in prose and "-1.35e172" in LaTeX on ADJACENT
+    LINES; and the mantissa 1.35 differs from PAPER_063's x_2 =
+    3.40 - suggesting TWO x2 values (cosmic 3.40 vs stellar-
+    geometry 1.35), each with the e-7/e172 dual-print corruption.
+    Integral = 2.026e21 * 1.35e172 -> mantissa 2.735 checks.
+    DEFECTS: L_X directed chain (1e-30 * L = 1e4 N) pins L_X =
+    1e34 W but the table prints "10-4 W" and claims "1e4 solar"
+    ratio - inconsistent (Q-067b); Um/energy table exponents
+    corrupt though mantissas verify (2.43*6.96 = 16.9).
+    LENR ratio to ASKAP = 1.86 (~factor 2 as stated).
+    MC stability 0.971, 100/100 (consistent PAPER_065).
+    """
+    import math as _m
+    w0 = 2.0 * _m.pi / 3600.0
+    ratio = 7.854e12 / w0
+    g_sun = 6.674e-11 * 1.989e30 / (6.96e8) ** 2
+    return {
+        'value': {
+            'system': 'Solar-type superflare (Chandra + Kepler K2)',
+            'omega0_rad_s': w0,                            # 1.745e-3 EXACT
+            'lenr': 1e-10 * ratio * ratio,                 # 2.026e21 EXACT
+            'g_solar_m_s2': g_sun,                         # 274.0 EXACT real Sun
+            'ug1': g_sun * 4 * _m.pi * 1e-7 * (1e-2) ** 2 / (8 * _m.pi),  # 1.37e-9
+            'um_chain': 3.38e20 / 6.96e8 * (1 - _m.exp(-5e-5)) * 1e46,    # 2.43e53
+            'e_kepler_j': 1e-3 * 4e26 * 3600,              # 1.44e27 EXACT
+            'x2_prints': (-1.35e-7, -1.35e172),            # adjacent-line dual
+            'x2_mantissa_vs_063': (1.35, 3.40),            # two x2 values Q-067a
+            'integral_mantissa': 2.026 * 1.35,             # 2.735 checks
+            'f_ubii_n': -2.74e193,
+            'lx_pinned_by_directed_w': 1e34,               # 1e-30*L = 1e4 N
+            'lenr_ratio_to_askap': 2.03e21 / 1.09e21,      # 1.86
+            'mc_stability': 0.971,
+        },
+        'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2; g = GM/r^2; '
+                    'Ug1 = g*mu0*B^2/8pi; E_Kepler = (dF/F)*L*dt'),
+        'source': 'PAPER_071',
+        'residual_pct': abs(g_sun - 274.0) / 274.0 * 100,
         'status': 'OPEN_RULING',
     }

@@ -426,3 +426,9 @@ primitive,OMEGA_SCM_HZ,observable,pn_archive_lenr,LENR resonance
 primitive,RHO_UA,observable,helix_destroyed_planet,buoyant chain
 observable,x2_dual_corrupt_evidence,paper,PAPER_070,dual-print forensic
 observable,x2_dual_corrupt_evidence,paper,PAPER_063,x_2 identification
+observable,superflare_budget,paper,PAPER_071,primary derivation
+primitive,OMEGA_SCM_HZ,observable,superflare_budget,LENR resonance
+observable,superflare_budget,paper,PAPER_066,Ug1 formula confirmation
+observable,x2_two_values_evidence,paper,PAPER_071,adjacent-line dual print
+observable,x2_two_values_evidence,paper,PAPER_063,mantissa divergence
+observable,superflare_lx_pin,paper,PAPER_071,directed chain pin

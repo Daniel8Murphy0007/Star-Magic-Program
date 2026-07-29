@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.73.0", "uqff_calculator.VERSION = 0.73.0")
+assert_that(C.VERSION == "0.74.0", "uqff_calculator.VERSION = 0.74.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1176,6 +1176,21 @@ assert_that(_r070['x2_factor_prints'][0] == -1.35e-7 and _r070['x2_factor_prints
 assert_that(_r070['radiation_claim_lx_needed_w'] > 1e40,
             "PAPER_070: 50-pct radiation-comparability claim requires L_X ~ 1e41 W - fails scrutiny (Q-066d)")
 assert_that(C.wired_count() >= 74, "wired_count >= 74")
+
+_r071 = C.calc('PAPER_071')['value']
+assert_that(abs(_r071['g_solar_m_s2'] - 274.0) < 0.1,
+            "PAPER_071: solar surface gravity 274.0 m/s2 EXACT (real-Sun self-consistency)")
+assert_that(abs(_r071['lenr'] - 2.026e21) / 2.026e21 < 0.01,
+            "PAPER_071: LENR = 2.026e21 EXACT chain")
+assert_that(abs(_r071['ug1'] - 1.37e-9) / 1.37e-9 < 0.01,
+            "PAPER_071: Ug1 = 1.37e-9 EXACT - confirms PAPER_066 mu0*B^2/8pi formula (Q-062c)")
+assert_that(abs(_r071['e_kepler_j'] - 1.44e27) / 1.44e27 < 0.001,
+            "PAPER_071: E_Kepler = 1.44e27 J EXACT (L_star = solar 4e26)")
+assert_that(abs(_r071['um_chain'] - 2.43e53) / 2.43e53 < 0.01,
+            "PAPER_071: Um chain 2.43e53 verified (small-argument expansion)")
+assert_that(abs(_r071['lenr_ratio_to_askap'] - 1.86) < 0.01,
+            "PAPER_071: LENR ratio to ASKAP = 1.86 (factor ~2 as stated)")
+assert_that(C.wired_count() >= 75, "wired_count >= 75")
 
 # =============================================================================
 # REPORT

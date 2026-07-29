@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.74.0] — 2026-07-29 — BAND 1: PAPER_071
+
+### Added
+- **PAPER_071 dispatch** (Stellar Superflare Energy Budget): last
+  of the five MC-stability systems. All chains EXACT: omega_0 =
+  2*pi/3600; LENR 2.026e21; **solar surface gravity 274.0 m/s2
+  matching the real Sun exactly** (self-consistency landmark);
+  Ug1 = 1.37e-9 — confirming the PAPER_066 mu0*B^2/8pi formula
+  (Q-062c annotated); Um 2.43e53; E_Kepler = 1.44e27 J EXACT
+  (L_star = solar 4e26). LENR ratio to ASKAP 1.86 as stated.
+- **x_2 forensics deepen:** adjacent-line dual print (-1.35e-7
+  prose / -1.35e172 LaTeX) AND mantissa 1.35 vs PAPER_063's 3.40
+  — evidence of TWO x2 constants (cosmic vs stellar geometry),
+  each with the e-7/e172 corruption. Joint ruling queue grows.
+- Defects pinned: L_X = 1e34 W by directed chain vs "10-4 W"
+  table print; Um/energy-table exponent corruption (mantissas
+  verify).
+- OPEN_RULING Q-067.
+- Gate: 539 assertions, 0 failures. Registry: 222 rows / 432 edges / 75 ledgers.
+
+---
+
 ## [0.73.0] — 2026-07-29 — BAND 1: PAPER_070
 
 ### Added

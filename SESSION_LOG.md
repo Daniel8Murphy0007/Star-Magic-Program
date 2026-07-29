@@ -1103,3 +1103,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 74/2,255 (10 ✓, 64 ⚠). Next: PAPER_071.
 
 ---
+
+## 2026-07-29 — v0.74.0 — BAND 1: PAPER_071
+
+- PAPER_071 wired (⚠ Q-067): superflares. Solar gravity 274.0
+  EXACT; Ug1 formula confirmed (annotates Q-062c); E_Kepler
+  1.44e27 EXACT; two-x2 evidence deepens the joint ruling;
+  L_X pinned 1e34 W. All five MC-stability systems now wired.
+- Campaign: 75/2,255 (10 ✓, 65 ⚠). Next: PAPER_072.
+
+---

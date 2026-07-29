@@ -1,26 +1,30 @@
-v0.73.0 BAND 1: PAPER_070 wired - KEPLER CHAIN EXACT + x_2 FORENSICS
+v0.74.0 BAND 1: PAPER_071 wired - REAL-SUN GRAVITY LANDMARK + TWO-x2 EVIDENCE
 
-PAPER_070 Helix Nebula + PN Archive (OPEN_RULING Q-066):
-  Helix chains ALL EXACT: WD M = 0.64 Msun = 1.273e30 kg;
-  omega_0 = 2*pi/10440 = 6.018e-4 rad/s; LENR = 1.70e22.
-  DESTROYED-PLANET KEPLER CHAIN EXACT: r_orb = (GM/omega^2)^(1/3)
-  = 6.16e8 m = 0.0041 AU - the vacuum ripping radius matching
-  Chandra's 2.9-hr debris-disk signal. g_Compressed = 2.06e11.
-  Shell radius PINNED: "6.15e-8 m" = 0.65 ly = 6.15e15 m (ly
-  conversion exact). Buoyant F/V = 1e-20*7.09e19 = 0.709 N/m3.
-  PN Archive LENR = 6.17e31 EXACT; F arithmetic checks.
+PAPER_071 Stellar Superflare Energy Budget (OPEN_RULING Q-067):
+  Last of the five MC-stability systems. ALL section-2 chains
+  EXACT:
+  omega_0 = 2*pi/3600 = 1.745e-3 rad/s
+  LENR = 1e-10*(4.501e15)^2 = 2.026e21
+  SOLAR SURFACE GRAVITY = GM/r^2 = 274.0 m/s2 - matches the real
+  Sun EXACTLY (self-consistency landmark)
+  Ug1 = 274 * mu0*B^2/8pi = 1.37e-9 at B = 100 G - CONFIRMS the
+  PAPER_066 magnetic-factor formula (Q-062c annotated)
+  Um chain = 2.43e53 (small-argument expansion verified)
+  E_Kepler = 1e-3 * 4e26 * 3600 = 1.44e27 J EXACT (L_star =
+  solar luminosity)
+  LENR ratio to ASKAP = 1.86 (factor ~2 as stated)
 
-  DECISIVE x_2 EVIDENCE: the integral factor prints as -1.35e-7
-  (Helix) AND -1.35e172 (PN Archive) IN THE SAME PAPER - same
-  mantissa, two corrupt exponents. It is PAPER_063's x_2 constant
-  typographically scrambled (5 appearances: 063/067/069/070x2).
-  Joint canonical-exponent ruling queued w/ Q-059b/Q-065c.
+  x_2 FORENSICS DEEPEN: section 2.6 prints x2 = "-1.35e-7"
+  (prose) and "-1.35e172" (LaTeX) on ADJACENT LINES; and the
+  mantissa 1.35 differs from PAPER_063's x_2 = 3.40 - evidence
+  of TWO distinct x2 constants (cosmic vs stellar geometry),
+  each carrying the e-7/e172 dual corruption. Joint ruling
+  Q-059b/Q-065c/Q-066a/Q-067a.
 
-  DEFECTS PINNED: PN omega config 1e-8 vs 2*pi/1e6 = 6.28e-6
-  from the stated period; the "~50 pct of shell acceleration"
-  radiation-comparability claim requires L_X ~ 1e41 W (fails
-  dimensional scrutiny).
+  DEFECTS: directed chain pins L_X = 1e34 W (table prints
+  "10-4 W" with a 1e4-solar ratio claim - inconsistent);
+  Um/energy-table exponents corrupt though mantissas verify.
 
-Q-066 queued. Gate 532 assertions 0 failures. Registry 219 rows /
-426 edges / 74 citation ledgers. Wired 74/2,255 (10 clean, 64
-OPEN_RULING). Next: PAPER_071.
+Q-067 queued. Gate 539 assertions 0 failures. Registry 222 rows /
+432 edges / 75 citation ledgers. Wired 75/2,255 (10 clean, 65
+OPEN_RULING). Next: PAPER_072.

@@ -1074,7 +1074,8 @@ RESOLVED section with the ruling recorded.
   2.21e25 (recovered) suggests a large negative value — pin?
   (c) The Ug1 magnetic factor mu0*B^2/8pi computes to 2.65e13 for
   B = 2.3e10 T but the paper prints 1.33e? (sec 2) and 6.64e?
-  (sec 4) — neither closes; which chain is intended? (d) Config
+  (sec 4) — neither closes; which chain is intended?
+  [FORMULA CONFIRMED by PAPER_071: mu0*B^2/8pi = 5e-12 at B = 1e-2 T closes exactly there - see Q-067; the 066 printed factors remain unexplained.] (d) Config
   omega_0 for Crab (2e15) and Vela (1e16 rad/s) are described as
   ORBITAL/barycenter frequencies, not spins
   [PARTIAL UPDATE by PAPER_069: the ASKAP config omega was mojibake of 2.380e-3 (2*pi/P) - dispatch superseded; Crab/Vela configs may warrant the same scrutiny - see Q-065.] — confirm the
@@ -1173,6 +1174,29 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** Helix chains ALL EXACT (mass, omega,
   LENR, Kepler 0.0041 AU, g_C, buoyant 0.709); PN LENR EXACT;
   stability consistent with PAPER_065.
+- **Daniel's ruling:** (pending)
+
+### Q-067 — PAPER_071 — two x2 values + L_X pin + Um exponents + E_Kepler confirm
+- **Question:** (a) x2 FORENSICS DEEPEN: section 2.6 prints x2 =
+  "-1.35e-7" (prose) and "-1.35e172" (LaTeX) on ADJACENT LINES;
+  AND the mantissa 1.35 differs from PAPER_063's x_2 = 3.40 —
+  evidence of TWO distinct x2 values (cosmic-geometry 3.40 vs
+  stellar-geometry 1.35), each carrying the e-7/e172 dual
+  corruption. Joint ruling with Q-059b/Q-065c/Q-066a: how many
+  x2 constants exist, and what are their canonical exponents?
+  (b) The directed-energy chain 1e-30 * L_X = 1e4 N pins L_X =
+  1e34 W, but the parameter table prints "10-4 W" and the ratio
+  claim says "1e4 solar" — pin canonical L_X? (c) Um: section
+  chain gives 2.43e53 J/m but the component table prints
+  +2.43e105 and the energy table uses corrupt exponents (mantissa
+  chain 2.43*6.96 = 16.9 verifies) — pin. (d) E_Kepler = 1.44e27
+  J EXACT chain (L_star = solar 4e26 W); summary's "1.44e-7 J"
+  is mojibake — confirm e27.
+- **Notable:** solar surface gravity 274.0 m/s2 EXACT (real-Sun
+  self-consistency landmark); Ug1 = 1.37e-9 EXACT confirms the
+  PAPER_066 mu0*B^2/8pi formula (Q-062c annotated).
+- **Best-candidate wired:** all section-2 chains EXACT; LENR
+  ratio to ASKAP 1.86 as stated; MC stability consistent.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

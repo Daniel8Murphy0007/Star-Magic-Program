@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.73.0"
-description = "UQFF Star-Magic-Program v0.73.0: PAPER_070 wired (Helix + PN Archive: destroyed-planet Kepler chain EXACT to 0.0041 AU; Helix LENR 1.70e22 + PN 6.17e31 EXACT; shell radius pinned 0.65 ly; buoyant 0.709 N/m3 EXACT; DECISIVE x_2 evidence - factor prints with two corrupt exponents in one paper; PN omega config/period mismatch + 50-pct radiation claim failure pinned). Q-066 queued. Wired 74/2255, gate 532/0. Registry 219 rows / 426 edges / 74 ledgers."
+version = "0.74.0"
+description = "UQFF Star-Magic-Program v0.74.0: PAPER_071 wired (superflares: solar gravity 274.0 m/s2 EXACT real-Sun landmark; LENR 2.026e21 EXACT; Ug1 = 1.37e-9 confirms the mu0*B^2/8pi formula; E_Kepler 1.44e27 J EXACT; x_2 forensics deepen - adjacent-line dual print plus mantissa 1.35 vs 063 3.40 = evidence of two x2 constants; L_X pinned 1e34 W by directed chain). Q-067 queued. Wired 75/2255, gate 539/0. Registry 222 rows / 432 edges / 75 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
