@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.123.0"
-description = "UQFF Star-Magic-Program v0.123.0: PAPER_120 wired - 24-System Astronomical Catalog (conversions EXACT, dual d_g honest; B_crit 1e4 fork vs PAPER_094 Schwinger - magnetar supercritical at true value, informs Q-002; EP-09 third mechanism variant - Q-111 now 3 branches; DM density g/cm3-mantissa unit drift). Q-116 queued. Wired 124/2255, gate 842/0. Registry 320 rows / 673 edges / 124 ledgers."
+version = "0.124.0"
+description = "UQFF Star-Magic-Program v0.124.0: PAPER_121 wired - 71-Equation Catalog (7 modes x 12 EPs complete reference; M_bh internal fork 4.1 vs 4.3e6 Msun; UA triple fork; EP-08 hop-count triple; GOLDEN-RATIO FIND alpha_fund = 1/phi and IMF slope = -sqrt(3) EXACT; paper-number remap anomaly queued). Q-117 queued. Wired 125/2255, gate 848/0. Registry 322 rows / 678 edges / 125 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

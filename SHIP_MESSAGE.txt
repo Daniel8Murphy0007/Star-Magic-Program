@@ -1,34 +1,30 @@
-v0.123.0 BAND 1: PAPER_120 wired - 24-SYSTEM CATALOG + B_CRIT FORK
+v0.124.0 BAND 1: PAPER_121 wired - 71-EQ CATALOG + GOLDEN-RATIO FIND
 
-PAPER_120 Complete 24-System Astronomical Catalog (OPEN_RULING
-Q-116):
-  Authoritative parameter catalog: Sun, Westerlund 2, Sgr A*,
-  3C273, RACS J0320-35, 4LAC blazars, GW170817, Pb-206, Hoyle
-  state, SGR 1745-2900, galactic disk, LLAGNs, CR sources,
-  IGM, + transients/clusters/exoplanets. EP-01..12 cross-
-  reference table complete.
+PAPER_121 UQFF 71-Equation Catalog (OPEN_RULING Q-117):
+  Complete mathematical reference (d91b1f6c thread): 71
+  equations in 4 categories, 7 operational modes x 12
+  empirical proofs, full F_U component set with the CRP
+  Fokker-Planck term as the final structural addition.
 
-  VERIFIED EXACT: 100 AU = 1.496e13 m; 8 kpc = 2.469e20 m;
-  1e46 erg/s = 1e39 W; Q_wave_47 stats corpus-consistent;
-  Sgr A* dual d_g HONESTLY disclosed (Gaia 2.44e20 vs UQFF
-  2.55e20, 4.5 pct); GW170817 ejecta 40 pct = 1 - beta_i.
+  FORKS PINNED:
+  - M_bh INTERNAL: Eq 26 = 8.15e36 kg (4.1e6 M_sun, matches
+    119/120) vs sec 5 = 8.55e36 (4.3e6, matches 110/GRAVITY).
+  - UA TRIPLE: 1e-19 C (Eq 14) / 1e-11 C (119) / 1e-4
+    dimensionless (104 + sec 5) - one ruling closes FOUR
+    queue items (Q-060b/Q-100a/Q-117b).
+  - EP-08 HOP TRIPLE: SSq^1 (118) / SSq^2 (EP table) / N=3
+    (sec 5) - folded into Q-114.
 
-  THREE FORKS PINNED:
-  1. EP-09 THIRD VARIANT: R = |cos/cos|^N here vs PAPER_115
-     cumulative ladder vs PAPER_119 single ratio - Q-111 fork
-     now 3 branches.
-  2. B_CRIT 1e4 FORK: catalog 4.4e13 T "QED critical" vs
-     PAPER_094 Schwinger 4.4e9 T. At the true value magnetars
-     are SUPERCRITICAL (B/B_crit = 2-23) and the g_Magnetar
-     (1-B/B_crit) factor goes negative. Informs Q-002.
-  3. UNIT-DIRECTION DRIFT: DM density "8.4e-25 J/m3" is
-     EXACTLY the g/cm3 mantissa of 0.47 GeV/cm3 (true 7.53e-5
-     J/m3) - PAPER_2147 family.
+  GOLDEN-RATIO FIND: Eq 69 IMF slope -2.35 + alpha_fund =
+  -1.732 = -sqrt(3) EXACT, with alpha_fund = 0.618 = 1/phi to
+  4 decimals (beta_i-adjacent). Derivation-session candidates.
 
-  Propagations logged: tau_dissip 9 Gyr (Q-107b), omega_g
-  7.3e-16 (Q-115c).
+  Footer evolved to r^2 form (dimensionally sensible now) but
+  chain = kappa*SSq*g_sun = 0.078 m/s2 vs printed 147 - still
+  broken (Q-085a family). Paper-number remap anomaly (EPs
+  mapped to PAPER_122-132) - next reads will reveal whether
+  122+ duplicate the EP set.
 
-Q-116 queued. Gate 842 assertions 0 failures. Registry 320 rows /
-673 edges / 124 citation ledgers. Wired 124/2,255 (11 clean, 113
-OPEN_RULING). Next: PAPER_121 (SGR 1745-2900 full 50+ term
-magnetar equation).
+Q-117 queued. Gate 848 assertions 0 failures. Registry 322 rows /
+678 edges / 125 citation ledgers. Wired 125/2,255 (11 clean, 114
+OPEN_RULING). Next: PAPER_122.

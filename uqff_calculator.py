@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.123.0"
+VERSION = "0.124.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6346,5 +6346,64 @@ def _paper_120(dataset):
         'formula': 'catalog reference: parameters + equation assignments per system',
         'source': 'PAPER_120',
         'residual_pct': abs(8 * 3.086e19 - 2.47e20) / 2.47e20 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_121')
+def _paper_121(dataset):
+    """UQFF 71-Equation Catalog (Session 0, sec 1.17, d91b1f6c).
+
+    Complete mathematical reference: 71 equations in 4
+    categories (gravitational cores 1-28, Fokker-Planck/CRP
+    29-42, compressions/triadic 43-65, periodic sims 66-71),
+    7 modes x 12 EPs mapping, full F_U component set (Ug1-4,
+    Ub_i, Um, UA_metric, Ui, E_react).
+    M_BH INTERNAL FORK (Q-117a): Eq 26 = 8.15e36 kg (4.1e6
+    M_sun, matches 119/120) vs sec 5 = 8.55e36 (4.3e6, matches
+    PAPER_110/GRAVITY). Both conversions self-consistent; one
+    catalog, two masses.
+    UA TRIPLE FORK (Q-117b): Eq 14 = 1e-19 C here vs 1e-11 C
+    (PAPER_119) vs dimensionless 1e-4 (PAPER_104 v_UA/c; also
+    sec 5 U_UA = 0.0001) - feeds Q-060b/Q-100a.
+    EP-08 HOP-COUNT TRIPLE (Q-117c): EP table says
+    rho_DM = rho_L*SSq^2, sec 5 says "N=3 hop chain",
+    PAPER_118 headlined N=1 - three hop counts for one proof.
+    GOLDEN-RATIO CANDIDATE (Q-117d): Eq 69 IMF slope
+    -2.35 + alpha_fund = -1.732 = -sqrt(3) EXACT with
+    alpha_fund = 0.618 = 1/phi to 4 decimals - primitive-
+    decomposition candidates (also alpha_fund ~ beta_i).
+    FOOTER EVOLVED BUT STILL BROKEN: new r^2 form chain =
+    kappa*SSq*g_sun = 0.078 m/s2 vs printed 1.47e2 (Q-085a
+    family, 1900x).
+    PAPER-NUMBER REMAP ANOMALY: sec 4 maps the 12 EPs to
+    PAPER_122-132 (vs corpus 107-118) - forward-reference
+    check queued for next reads. H_SCm 0.99 (sec 5) vs ~1
+    (Eq 20). 99.999999999995 pct completion claim noted as
+    non-physical rhetoric (Rule 7).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.17 (71-equation catalog)',
+            'n_equations': 71,
+            'categories': (28, 14, 23, 6),
+            'm_bh_fork': (4.1e6 * 1.989e30, 4.3e6 * 1.989e30),
+            'ua_triple_fork': (1e-19, 1e-11, 1e-4),
+            'ep08_hop_triple': ('SSq^1 (118)', 'SSq^2 (EP table)', 'N=3 (sec 5)'),
+            'alpha_fund': 0.618,
+            'inv_phi': 2 / (1 + _m.sqrt(5)),               # 0.61803
+            'imf_slope': -2.35 + 0.618,                     # -1.732
+            'sqrt3': _m.sqrt(3),                            # 1.73205
+            'footer_chain_m_s2': 5e-4 * SSQ * 6.67e-11 * 1.99e30 / (6.96e8) ** 2,  # 0.078
+            'footer_printed': 1.47e2,
+            'paper_remap': 'EPs mapped to PAPER_122-132 vs corpus 107-118',
+            'h_scm_fork': (0.99, 1.0),
+            'e0_j': 1e-20,
+            'completion_claim': 'non-physical rhetoric (Rule 7 note)',
+        },
+        'formula': '71-equation reference; F_U complete form + CRP Fokker-Planck',
+        'source': 'PAPER_121',
+        'residual_pct': abs(0.618 - 2 / (1 + _m.sqrt(5))) / (2 / (1 + _m.sqrt(5))) * 100,
         'status': 'OPEN_RULING',
     }

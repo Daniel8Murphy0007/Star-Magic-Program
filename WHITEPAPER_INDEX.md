@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 124 (11 ✓, 113 ⚠ OPEN_RULING)
+- **Wired:** 125 (11 ✓, 114 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2131
+- **Not yet touched:** 2130
 
 ---
 
@@ -423,7 +423,7 @@
 | ⬜ | PAPER_1217 | Mass Ratios Locked Primitives |
 | ⬜ | PAPER_1218 | Higgs Sector UQFF |
 | ⬜ | PAPER_1219 | Riemann Reading B Ricci Trace Projection |
-| ⬜ | PAPER_121 | UQFF 71Equation Catalog Complete Framework |
+| ⚠ | PAPER_121 | UQFF 71Equation Catalog Complete Framework |
 | ⬜ | PAPER_1220 | Three Generations From Ricci Trace |
 | ⬜ | PAPER_1221 | SU3 Color From D BSFG |
 | ⬜ | PAPER_1222 | Bell Quantum Bound Spinor Bundle |

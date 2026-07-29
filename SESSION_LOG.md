@@ -1584,3 +1584,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 124/2,255 (11 ✓, 113 ⚠). Next: PAPER_121.
 
 ---
+
+## 2026-07-29 — v0.124.0 — BAND 1: PAPER_121
+
+- PAPER_121 wired (⚠ Q-117): 71-equation catalog. M_bh/UA/
+  hop-count forks pinned; alpha_fund = 1/phi + IMF = -sqrt(3)
+  EXACT candidates; remap anomaly queued.
+- Campaign: 125/2,255 (11 ✓, 114 ⚠). Next: PAPER_122.
+
+---

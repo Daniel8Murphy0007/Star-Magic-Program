@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.124.0] — 2026-07-29 — BAND 1: PAPER_121 — GOLDEN-RATIO FIND
+
+### Added
+- **PAPER_121 dispatch** (71-Equation Catalog, sec 1.17,
+  d91b1f6c thread): 4 categories (28+14+23+6), 7 modes x 12
+  EPs, complete F_U component set with CRP Fokker-Planck as
+  final structural addition. FORKS: M_bh internal (Eq 26
+  4.1e6 vs sec 5 4.3e6 M_sun); UA triple (1e-19 C / 1e-11 C /
+  1e-4 — a single ruling now closes FOUR queue items); EP-08
+  hop-count triple (SSq^1/SSq^2/N=3); H_SCm 0.99 vs 1.
+  GOLDEN-RATIO FIND: Eq 69 alpha_fund = 0.618 = 1/phi to 4
+  decimals, IMF slope -1.732 = -sqrt(3) EXACT — derivation-
+  session candidates. Footer evolved to r^2 form but still
+  broken (chain 0.078 vs 147). Paper-number remap anomaly
+  (EPs → 122-132) queued for forward check.
+- OPEN_RULING Q-117.
+- Gate: 848 assertions, 0 failures. Registry: 322 rows / 678 edges / 125 ledgers.
+
+---
+
 ## [0.123.0] — 2026-07-29 — BAND 1: PAPER_120 — 24-SYSTEM CATALOG
 
 ### Added

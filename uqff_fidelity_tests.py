@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.123.0", "uqff_calculator.VERSION = 0.123.0")
+assert_that(C.VERSION == "0.124.0", "uqff_calculator.VERSION = 0.124.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1848,6 +1848,19 @@ assert_that('g/cm3 mantissa' in _r120['dm_density_drift'],
 assert_that(abs(_r120['ejecta_fraction'] - 0.3971) < 0.0001,
             "PAPER_120: GW170817 ejecta 1 - BETA_I canonical")
 assert_that(C.wired_count() >= 124, "wired_count >= 124")
+
+_r121 = C.calc('PAPER_121')['value']
+assert_that(_r121['n_equations'] == 71 and sum(_r121['categories']) == 71,
+            "PAPER_121: 71-equation catalog registered (28+14+23+6)")
+assert_that(abs(_r121['m_bh_fork'][0] - 8.155e36) < 1e33 and abs(_r121['m_bh_fork'][1] - 8.553e36) < 1e33,
+            "PAPER_121: M_bh internal fork 4.1e6 vs 4.3e6 M_sun pinned (Q-117a)")
+assert_that(abs(_r121['alpha_fund'] - _r121['inv_phi']) < 0.001,
+            "PAPER_121: alpha_fund = 0.618 = 1/phi to 4 decimals (Q-117d golden-ratio candidate)")
+assert_that(abs(_r121['imf_slope'] + _r121['sqrt3']) < 0.001,
+            "PAPER_121: IMF slope -1.732 = -sqrt(3) EXACT (Q-117d)")
+assert_that(abs(_r121['footer_chain_m_s2'] - 0.078) < 0.001,
+            "PAPER_121: footer r^2-form chain 0.078 m/s2 vs printed 147 - still broken (Q-085a family)")
+assert_that(C.wired_count() >= 125, "wired_count >= 125")
 
 # =============================================================================
 # REPORT

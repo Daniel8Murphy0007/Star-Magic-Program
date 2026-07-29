@@ -673,3 +673,8 @@ primitive,BETA_I,observable,uqff_24system_catalog,ejecta fraction
 observable,uqff_catalog_forks,paper,PAPER_120,three forks
 observable,uqff_catalog_forks,paper,PAPER_094,B_crit Schwinger
 observable,uqff_catalog_forks,paper,PAPER_115,EP-09 third variant
+observable,uqff_71eq_catalog,paper,PAPER_121,catalog reference
+primitive,KAPPA_PER_DAY,observable,uqff_71eq_catalog,E_react decay
+primitive,SSQ,observable,uqff_71eq_forks,hop triple
+observable,uqff_71eq_forks,paper,PAPER_118,EP-08 hop fork
+observable,uqff_71eq_forks,paper,PAPER_110,M_bh fork

@@ -2336,6 +2336,42 @@ RESOLVED section with the ruling recorded.
   forks pinned; Q-111 and Q-002 annotated.
 - **Daniel's ruling:** (pending)
 
+### Q-117 — PAPER_121 71-Equation Catalog — M_bh fork + golden-ratio find
+- **Question:** (a) M_BH INTERNAL FORK: Eq 26 lists M_bh =
+  8.15e36 kg (4.1e6 M_sun; matches PAPER_119/120) while sec 5
+  lists 8.55e36 (4.3e6; matches PAPER_110/GRAVITY). One
+  catalog, two masses - which is canonical for U_g4/U_b_i?
+  (b) UA TRIPLE FORK: Eq 14 gives [UA] = 1e-19 C vs
+  PAPER_119's 1e-11 C vs the dimensionless 1e-4 (PAPER_104
+  v_UA/c; sec 5 U_UA = 0.0001 here too). Feeds Q-060b/Q-100a -
+  a single [UA] ruling would now close FOUR queue items.
+  (c) EP-08 HOP-COUNT TRIPLE: the EP table says rho_DM =
+  rho_L*SSq^2, sec 5 says "N=3 hop chain", PAPER_118
+  headlined N=1. Three hop counts for one proof - fold into
+  Q-114 ruling.
+  (d) GOLDEN-RATIO / SQRT-3 CANDIDATES: Eq 69 IMF slope
+  -2.35 + alpha_fund = -1.732 = -sqrt(3) EXACT, with
+  alpha_fund = 0.618 = 1/phi to 4 decimals (and ~ beta_i
+  0.6029/0.61 adjacency). Coincidence, or primitive
+  decomposition targets (dedicated session)?
+  (e) PAPER-NUMBER REMAP: sec 4 maps the 12 EPs to
+  PAPER_122-132 while the corpus has them at 107-118 -
+  forward-reference check queued (next reads will reveal
+  whether 122+ are duplicates).
+  (f) Footer EVOLVED (now r^2 form, dimensionally m/s2) but
+  still broken: chain = kappa*SSq*g_sun = 0.078 m/s2 vs
+  printed 1.47e2 (Q-085a family; 147 remains underived).
+  H_SCm 0.99 (sec 5) vs ~1 (Eq 20). The 99.999999999995 pct
+  completion metric is noted as non-physical rhetoric (Rule 7).
+- **Notable:** catalog structure is comprehensive and the F_U
+  component set matches the corpus canonical forms; CRP
+  Fokker-Planck term documented as the final structural
+  addition to F_U; E_0 = 1e-20 J ladder consistent with
+  EP-02/03/04.
+- **Best-candidate wired:** 71 equations registered; all forks
+  pinned; phi/sqrt3 candidates logged for derivation session.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
