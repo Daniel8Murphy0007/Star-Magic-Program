@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.117.0", "uqff_calculator.VERSION = 0.117.0")
+assert_that(C.VERSION == "0.118.0", "uqff_calculator.VERSION = 0.118.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1768,6 +1768,21 @@ assert_that(abs(_r114['psp_mean_err_pct'] - 1.70) < 0.01,
 assert_that(abs(_r114['alpha_cr_implied'] - 1.02e26) < 0.01e26,
             "PAPER_114: compression chain closes only at unstated alpha_CR = 1.02e26 (Q-110b)")
 assert_that(C.wired_count() >= 118, "wired_count >= 118")
+
+_r115 = C.calc('PAPER_115')['value']
+assert_that(abs(_r115['per_reversal'] - 1.3629) < 0.0001,
+            "PAPER_115: per-reversal factor 1 + SSq*2/pi = 1.3629 EXACT")
+assert_that(abs(_r115['r_n13_chain'] - 55.97) < 0.01 and abs(_r115['printed_129_8_is'] - 129.75) < 0.01,
+            "PAPER_115: ladders crossed - 1.363^13 = 56.0 chain; printed 129.8 IS 1.5^12 (Q-111a)")
+assert_that(14.8 < _r115['n_for_100_ssq'] < 15.0,
+            "PAPER_115: R > 100 needs N = 15 at SSq-weighted rate (not 13)")
+assert_that(abs(_r115['ubi_corrected'] - 6.11e-10) < 0.01e-10,
+            "PAPER_115: U_bi = 6.11e-10 N/m2 at TRUE 65 kpc (printed 6.14e-14 used r 100x high) (Q-111b)")
+assert_that(abs(_r115['doppler_chain'] - 2.28e6) < 0.01e6,
+            "PAPER_115: Doppler chain 2.28e6 vs printed 2.2e7 - factor 10 (Q-111c)")
+assert_that(abs(_r115['t_jet_yr'] - 3.03e5) < 0.01e5,
+            "PAPER_115: t_jet = 3.03e5 yr EXACT (65 kpc / 0.7c)")
+assert_that(C.wired_count() >= 119, "wired_count >= 119")
 
 # =============================================================================
 # REPORT

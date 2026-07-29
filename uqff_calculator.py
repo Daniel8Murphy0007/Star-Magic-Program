@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.117.0"
+VERSION = "0.118.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6004,5 +6004,63 @@ def _paper_114(dataset):
         'formula': 'Ug2 = a_CR*q_p^2*v^2/(r^2*m_p*c^2); d_sw = 0.01; rho ratio = 1+d_sw',
         'source': 'PAPER_114',
         'residual_pct': abs(ug2_coeff - 9.76e-38) / 9.76e-38 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_115')
+def _paper_115(dataset):
+    """EP-09: 3C 273 Quasar Jet One-Sidedness >100:1 (Session 0).
+
+    Extends PAPER_111's single cos(w t_n) reversal (R = 1.5) to
+    N cumulative reversals: R_N = (1 + SSq*<|cos|>)^N with
+    <|cos|> = 2/pi, per-reversal 1.3629 EXACT.
+    LADDERS CROSSED (Q-111a): the paper prints 1.363^12 = 95.2
+    and 1.363^13 = 129.8, but the chain gives 41.1 and 56.0 -
+    and the printed "129.8" is EXACTLY 1.5^12 = 129.75 (the
+    R_basic = 1.5 ladder value). At the SSq-weighted rate,
+    R > 100 needs N = 15 (not 13); at 1.5/reversal, N = 12.
+    Conclusion structure survives with the corrected N.
+    RADIUS 100x SLIP (Q-111b): 65 kpc = 2.0e21 m; the paper
+    used r = 2.0e23 m. Corrected U_bi = F_rel*SSq/r^2 =
+    6.11e-10 N/m2 (the printed 6.14e-14 verifies EXACTLY at
+    the wrong r). F_rel = 4.31e33 N cross-consistent with the
+    Q-040b resolved 4.30e33 (PAPER_069 route).
+    DOPPLER FACTOR-10 (Q-111c): chain (Gamma=10, 5 deg,
+    alpha=0.7) = 2.28e6 vs printed 2.2e7; the "overproduces by
+    5 orders" claim becomes 4.4 orders - qualitatively robust.
+    Internal 1000x lifetime inconsistency: sec 2.3 says 2e8 yr,
+    sec 4 chain gives 3.03e5 yr EXACT (65 kpc / 0.7c).
+    Timescale chains EXACT: t_jet 3.03e5 yr, dt_n = 2.33e4 yr,
+    kappa = 0.1825/yr, e-fold 5.48 yr.
+    """
+    import math as _m
+    per = 1 + SSQ * (2 / _m.pi)
+    r65 = 65 * 3.086e19
+    b = _m.sqrt(1 - 1 / 100)
+    ct = _m.cos(_m.radians(5))
+    return {
+        'value': {
+            'domain': '1.15 (EP-09 jet asymmetry)',
+            'source': '3C 273 (MNRAS/VLBI/HST; ratio >100:1 radio, >1000:1 optical)',
+            'per_reversal': per,                              # 1.3629 EXACT
+            'r_n12_chain': per ** 12,                         # 41.1 vs printed 95.2
+            'r_n13_chain': per ** 13,                         # 56.0 vs printed 129.8
+            'printed_129_8_is': 1.5 ** 12,                    # 129.75 - crossed ladder
+            'n_for_100_ssq': _m.log(100) / _m.log(per),       # 14.87 -> N=15
+            'n_for_100_basic': _m.log(100) / _m.log(1.5),     # 11.36 -> N=12
+            'r_65kpc_m': r65,                                 # 2.0e21 vs paper 2.0e23
+            'ubi_corrected': 4.31e33 * SSQ / r65 ** 2,        # 6.11e-10 N/m2
+            'ubi_printed_at_wrong_r': 4.31e33 * SSQ / (2.0e23) ** 2,  # 6.14e-14
+            'f_rel_n': 4.31e33,                               # ~ Q-040b 4.30e33
+            'doppler_chain': ((1 + b * ct) / (1 - b * ct)) ** 2.7,  # 2.28e6 vs 2.2e7
+            't_jet_yr': r65 / (0.7 * 3e8) / 3.156e7,          # 3.03e5 EXACT
+            'dt_n_yr': r65 / (0.7 * 3e8) / 3.156e7 / 13,      # 2.33e4 EXACT
+            'lifetime_inconsistency': 'sec 2.3 2e8 yr vs sec 4 3e5 yr (1000x)',
+            'mechanism': 'cumulative t_n buoyancy-inversion, Lorentz-independent floor',
+        },
+        'formula': 'R_N = (1 + SSq*2/pi)^N; U_bi = F_rel*SSq/r^2',
+        'source': 'PAPER_115',
+        'residual_pct': abs(per - 1.363) / 1.363 * 100,
         'status': 'OPEN_RULING',
     }

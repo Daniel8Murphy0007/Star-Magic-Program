@@ -1524,3 +1524,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 118/2,255 (11 ✓, 107 ⚠). Next: PAPER_115.
 
 ---
+
+## 2026-07-29 — v0.118.0 — BAND 1: PAPER_115
+
+- PAPER_115 wired (⚠ Q-111): EP-09 3C273 jet. Ladders crossed
+  (129.8 = 1.5^12); N=15 corrected threshold; 100x radius slip
+  fixed (U_bi 6.11e-10); Doppler factor-10; F_rel converges
+  with Q-040b.
+- Campaign: 119/2,255 (11 ✓, 108 ⚠). Next: PAPER_116.
+
+---

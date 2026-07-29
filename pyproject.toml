@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.117.0"
-description = "UQFF Star-Magic-Program v0.117.0: PAPER_114 wired - EP-07 Parker Probe heliosheath (Ug2 coefficient + P_ram + PSP 1.70 pct fit EXACT; d_sw = 0.01 dual decomposition found: paper SSq/57 vs F_TRZ^2 primitive-lock candidate with PAPER_2139 precedent; compression chain closes only at unstated alpha_CR = 1.02e26). Q-110 queued. Wired 118/2255, gate 805/0. Registry 308 rows / 645 edges / 118 ledgers."
+version = "0.118.0"
+description = "UQFF Star-Magic-Program v0.118.0: PAPER_115 wired - EP-09 3C273 jet >100:1 (per-reversal 1.3629 + timescales EXACT; LADDERS CROSSED: printed 129.8 is 1.5^12 not 1.363^13, R>100 needs N=15; 100x radius slip corrected U_bi 6.11e-10; Doppler factor-10; F_rel cross-consistent with Q-040b). Q-111 queued. Wired 119/2255, gate 812/0. Registry 310 rows / 650 edges / 119 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

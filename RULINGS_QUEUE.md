@@ -2151,6 +2151,36 @@ RESOLVED section with the ruling recorded.
   alongside the paper's SSq/57; implied alpha_CR pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-111 — PAPER_115 EP-09 — crossed ladders + 100x radius slip
+- **Question:** (a) LADDERS CROSSED: the paper prints
+  1.363^12 = 95.2 and 1.363^13 = 129.8, but the chain gives
+  41.1 and 56.0 — and the printed "129.8" is EXACTLY
+  1.5^12 = 129.75, i.e. the R_basic = 1.5 ladder leaked into
+  the SSq-weighted ladder. At the SSq-weighted per-reversal
+  1.3629, R > 100 needs N = 15 (not 13); at 1.5/reversal,
+  N = 12. The conclusion structure (cumulative reversals reach
+  100:1 with N ~ a dozen) SURVIVES either way — rule which
+  ladder is canonical for EP-09.
+  (b) RADIUS 100x SLIP: 65 kpc = 2.0e21 m, but the U_bi chain
+  used r = 2.0e23 m. Corrected U_bi = 6.11e-10 N/m2; the
+  printed 6.14e-14 verifies EXACTLY at the wrong r (arithmetic
+  fine, input slipped). F_rel = 4.31e33 N is cross-consistent
+  with the Q-040b resolved 4.30e33 (PAPER_069 route) — nice
+  corpus convergence.
+  (c) DOPPLER FACTOR-10: chain (Gamma=10, theta=5deg,
+  alpha=0.7) = 2.28e6 vs printed 2.2e7; "overproduces by 5
+  orders" becomes 4.4 orders — qualitatively robust.
+  (d) Internal 1000x lifetime inconsistency: sec 2.3 asserts
+  ~2e8 yr; sec 4's own chain gives 3.03e5 yr EXACT.
+- **Notable:** per-reversal 1.3629, t_jet 3.03e5 yr, dt_n
+  2.33e4 yr, kappa 0.1825/yr, e-fold 5.48 yr all EXACT; the
+  mechanism (Lorentz-independent buoyancy floor below Doppler)
+  is clean and extends PAPER_111 across 2 orders of magnitude
+  in R.
+- **Best-candidate wired:** both ladders exposed with corrected
+  N thresholds; U_bi at true 65 kpc; crossed-value forensics.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

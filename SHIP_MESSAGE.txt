@@ -1,28 +1,29 @@
-v0.117.0 BAND 1: PAPER_114 wired - EP-07 d_sw = F_TRZ^2 CANDIDATE
+v0.118.0 BAND 1: PAPER_115 wired - EP-09 CROSSED LADDERS FOUND
 
-PAPER_114 EP-07 Parker Solar Probe Heliosheath Ug2 (OPEN_RULING
-Q-110):
-  Ug2 charge-reactivity testbed at 30 R_sun, PSP CDAWeb anchors
-  (rho_sw = 8e-21 kg/m3, v_sw = 500 km/s).
+PAPER_115 EP-09 3C 273 Quasar Jet One-Sidedness >100:1
+(OPEN_RULING Q-111):
+  Extends EP-01's single reversal to N cumulative t_n
+  buoyancy inversions: R_N = (1 + SSq*2/pi)^N, per-reversal
+  1.3629 EXACT - a Lorentz-independent asymmetry floor below
+  Doppler beaming.
 
-  VERIFIED EXACT: Ug2 coefficient 9.79e-38 per alpha_CR (printed
-  9.76e-38, rounding); P_ram = 1e-9 Pa; PSP 4-perihelion density
-  fit mean error 1.70 pct (1.41/2.17/1.43/1.79).
+  LADDERS CROSSED: printed 1.363^12 = 95.2 and 1.363^13 =
+  129.8, but the chain gives 41.1 and 56.0 - and the printed
+  "129.8" is EXACTLY 1.5^12 = 129.75. The basic-1.5 and
+  SSq-weighted ladders leaked into each other. R > 100 needs
+  N = 15 at the SSq rate (or N = 12 at 1.5). Conclusion
+  structure survives with corrected N - ruling picks the
+  canonical ladder.
 
-  D_SW DUAL DECOMPOSITION: the paper derives d_sw = 0.01 as
-  SSq/57 = 0.57/57 - dividing SSq by its own mantissa digits
-  (coincidence smell). The primitive-lock candidate is
-  d_sw = F_TRZ^2 = 0.01 EXACT, with standing precedent from the
-  predecessor F_TRZ-ladder quartet (PAPER_2139). Same number,
-  two routes - ruling requested.
+  100x RADIUS SLIP: 65 kpc = 2.0e21 m; the paper used 2.0e23.
+  Corrected U_bi = 6.11e-10 N/m2 (printed 6.14e-14 verifies
+  EXACTLY at the wrong r). F_rel = 4.31e33 N cross-consistent
+  with Q-040b's resolved 4.30e33 - corpus convergence.
 
-  ALPHA_CR UNSTATED: the density-compression chain closes only
-  at alpha_CR = 1.02e26, which appears nowhere in the paper.
+  DOPPLER FACTOR-10: chain 2.28e6 vs printed 2.2e7 ("5 orders"
+  becomes 4.4 - qualitatively robust). Internal 1000x lifetime
+  inconsistency (2e8 yr vs own chain 3.03e5 yr EXACT).
 
-  Footer exponent chain 2.16e-3 vs printed 3.2e-3 (conclusion
-  robust). Voyager 3-4x shock compression honestly carved out
-  as post-shock scope.
-
-Q-110 queued. Gate 805 assertions 0 failures. Registry 308 rows /
-645 edges / 118 citation ledgers. Wired 118/2,255 (11 clean, 107
-OPEN_RULING). Next: PAPER_115.
+Q-111 queued. Gate 812 assertions 0 failures. Registry 310 rows /
+650 edges / 119 citation ledgers. Wired 119/2,255 (11 clean, 108
+OPEN_RULING). Next: PAPER_116.

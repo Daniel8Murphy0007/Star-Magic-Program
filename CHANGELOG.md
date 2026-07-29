@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.118.0] — 2026-07-29 — BAND 1: PAPER_115 — CROSSED LADDERS
+
+### Added
+- **PAPER_115 dispatch** (EP-09: 3C 273 Jet One-Sidedness
+  >100:1): N cumulative t_n reversals, per-reversal
+  1 + SSq·2/π = 1.3629 EXACT. LADDERS CROSSED: printed
+  1.363^13 = "129.8" is actually 1.5^12 = 129.75 — the basic
+  and SSq-weighted ladders leaked into each other; chain gives
+  56.0 at N=13, R>100 needs N=15 (or N=12 on the 1.5 ladder).
+  100x RADIUS SLIP: 65 kpc = 2.0e21 m, paper used 2.0e23;
+  corrected U_bi = 6.11e-10 N/m2. Doppler factor-10 (2.28e6
+  chain vs 2.2e7). F_rel = 4.31e33 cross-consistent with
+  Q-040b's 4.30e33. Timescale chains EXACT (3.03e5 yr, dt_n
+  2.33e4 yr). Internal 1000x lifetime inconsistency flagged.
+- OPEN_RULING Q-111.
+- Gate: 812 assertions, 0 failures. Registry: 310 rows / 650 edges / 119 ledgers.
+
+---
+
 ## [0.117.0] — 2026-07-29 — BAND 1: PAPER_114 — d_sw DUAL ROUTE
 
 ### Added

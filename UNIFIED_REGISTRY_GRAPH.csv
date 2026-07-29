@@ -645,3 +645,8 @@ observable,ep07_heliosheath_ug2,paper,PAPER_091,MUGE fluid mode
 primitive,F_TRZ,observable,ep07_delta_sw_decomposition,F_TRZ^2 candidate
 primitive,SSQ,observable,ep07_delta_sw_decomposition,SSq/57 paper route
 observable,ep07_delta_sw_decomposition,paper,PAPER_114,dual decomposition
+observable,ep09_3c273_multi_reversal,paper,PAPER_115,multi-reversal ladder
+primitive,SSQ,observable,ep09_3c273_multi_reversal,per-reversal weight
+observable,ep09_3c273_multi_reversal,paper,PAPER_111,EP-01 baseline extension
+observable,ep09_ubi_65kpc,paper,PAPER_115,radius slip
+observable,ep09_ubi_65kpc,paper,PAPER_069,F_rel cross-consistency
