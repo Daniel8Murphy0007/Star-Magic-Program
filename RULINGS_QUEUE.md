@@ -1566,6 +1566,28 @@ RESOLVED section with the ruling recorded.
   forward-references PAPER_090.
 - **Daniel's ruling:** (pending)
 
+### Q-086 — PAPER_090 — row chains + term count + T0 doctrine root + SSq*kappa ratio
+- **Question:** (a) Validation-table chains: the Sun row CLOSES
+  (274.2 chain vs 274.3 printed) but SgrA* (234.3 printed vs
+  3.54e6 at the stated horizon) and NS (1.62e12 vs 1.30e12) do
+  not - what r_test/M inputs produce the printed values?
+  (b) Term count prints three ways: title "10-Term", abstract
+  "9-term", table 9 rows (4 mult + 5 add) - pin. (c) PROVENANCE:
+  section 1 states "gravity originates from F_U, not Newton; the
+  DPM mass gradient is the limiting case of Ug2" - the T0
+  causal-ordering doctrine in its Session-0 form; record this
+  paper as the doctrine's early-corpus root? (d) Footer
+  U_bi/F_U = SSq*kappa = 2.85e-4 EXACT - canonize as a named
+  ratio?
+- **Notable:** r_s(SgrA*) = 1.27e10 m EXACT pins M = 8.55e36
+  (086 cross-consistent); (1-B/B_crit) magnetar gravitational
+  suppression is the flagship falsifiable (no GR analogue);
+  2-ppm total correction at horizon; LCDM-concordant limits at
+  kpc/Gpc.
+- **Best-candidate wired:** master structure + doctrine root +
+  exact chains; row defects carried.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

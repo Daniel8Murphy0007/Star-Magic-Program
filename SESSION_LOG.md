@@ -1282,3 +1282,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 93/2,255 (10 ✓, 83 ⚠). Next: PAPER_090.
 
 ---
+
+## 2026-07-29 — v0.93.0 — BAND 1: PAPER_090
+
+- PAPER_090 wired (⚠ Q-086): MUGE compressed. T0-doctrine
+  provenance root recorded; r_s pins 086 mass EXACT; Sun row +
+  SSq*kappa footer chains close; SgrA*/NS rows + term count
+  flagged.
+- Campaign: 94/2,255 (10 ✓, 84 ⚠). Next: PAPER_091.
+
+---

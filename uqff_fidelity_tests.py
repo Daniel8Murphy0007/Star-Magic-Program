@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.92.0", "uqff_calculator.VERSION = 0.92.0")
+assert_that(C.VERSION == "0.93.0", "uqff_calculator.VERSION = 0.93.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1433,6 +1433,21 @@ assert_that(_r089['sc_multiplier'] == 0.99,
 assert_that(_r089['footer_ubi_chain'] > 1e8 and _r089['footer_ubi_printed'] == 147.0,
             "PAPER_089: footer solar U_bi chain does not close (6 orders) - OPEN pinned (Q-085a)")
 assert_that(C.wired_count() >= 93, "wired_count >= 93")
+
+_r090 = C.calc('PAPER_090')['value']
+assert_that(abs(_r090['r_s_sgra_m'] - 1.27e10) / 1.27e10 < 0.001,
+            "PAPER_090: r_s(SgrA*) = 1.27e10 m EXACT - pins M = 8.55e36 (086 cross-consistent)")
+assert_that(abs(_r090['ubi_over_fu'] - 2.85e-4) < 1e-9,
+            "PAPER_090: U_bi/F_U = SSq*kappa = 2.85e-4 EXACT footer chain")
+assert_that(abs(_r090['sun_g_chain'] - 274.2) < 0.2,
+            "PAPER_090: Sun row closes (274.2 chain vs 274.3 printed)")
+assert_that('Newton = Ug2 limiting case' in _r090['doctrine'],
+            "PAPER_090: T0-doctrine provenance root wired - F_U originates gravity (Q-086c)")
+assert_that(_r090['sgra_g_chain'] > 1e6 and _r090['sgra_g_printed'] == 234.3,
+            "PAPER_090: SgrA* row does not close vs horizon chain - defect pinned (Q-086a)")
+assert_that(_r090['term_count_prints'] == (10, 9, 9),
+            "PAPER_090: term-count inconsistency (title 10 / abstract 9 / table 9) pinned (Q-086b)")
+assert_that(C.wired_count() >= 94, "wired_count >= 94")
 
 # =============================================================================
 # REPORT

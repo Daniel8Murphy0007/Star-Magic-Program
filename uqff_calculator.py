@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.92.0"
+VERSION = "0.93.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4696,5 +4696,58 @@ def _paper_089(dataset):
                     '8 specializations; F_SC = F_Base*[SCm]'),
         'source': 'PAPER_089',
         'residual_pct': abs(BETA_I - 0.603) / 0.603 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_090')
+def _paper_090(dataset):
+    """MUGE Compressed Gravity 10-Term Framework (Session 0).
+
+    PROVENANCE LANDMARK (Q-086c): this Session-0 paper already
+    states the canonical causal ordering - "Gravity originates
+    from F_U, NOT from Newton; the DPM mass gradient is the
+    LIMITING CASE of Ug2 when vacuum couplings -> 0/1" - the
+    dpm_helpers T0 doctrine (GM/r^2 LAST) canonized much later in
+    the corpus cascade. Early-corpus root of the ontology.
+    MUGE master: multiplicative core [mass-kernel * (1+H0*t) *
+    (1 - B/B_crit) * F_env] + additive [Ug-sum, Lambda*c^2/3,
+    quantum, fluid, DM-perturbation]. The superconductive
+    (1 - B/B_crit) gravitational suppression near magnetar
+    fields is the flagship falsifiable (no GR analogue).
+    Chains: r_s(SgrA*) = 2GM/c^2 = 1.27e10 m EXACT (pins M =
+    8.55e36 = the 086 value); Sun row g = 274.3 CLOSES (274.2
+    chain); footer U_bi/F_U = SSq*kappa = 2.85e-4 EXACT;
+    g_total/g_DPM = 1.000002 (2 ppm, consistent "< 5 ppm").
+    Scale hierarchy: DM dominates kpc, expansion+Lambda dominate
+    Gpc (LCDM-concordant limits).
+    DEFECTS (Q-086a/b): SgrA* row g = 234.3 does not close vs
+    GM/r_s^2 = 3.54e6 chain; NS row 1.62e12 vs 1.30e12 chain;
+    term COUNT inconsistent (title 10 / abstract 9 / table 9
+    rows). Anchors carried; chains flagged.
+    """
+    GM = 6.674e-11 * 8.55e36
+    return {
+        'value': {
+            'domain': '1.12 (MUGE compressed, fwd-ref resolved from 089)',
+            'doctrine': 'F_U originates gravity; Newton = Ug2 limiting case (T0 root)',
+            'r_s_sgra_m': 2 * GM / 8.988e16,               # 1.27e10 EXACT
+            'sun_g_chain': 6.674e-11 * 1.99e30 / (6.96e8) ** 2,  # 274.2 closes
+            'sun_g_printed': 274.3,
+            'ubi_over_fu': SSQ * KAPPA_PER_DAY,            # 2.85e-4 EXACT
+            'total_correction_ppm': 2.0,                   # < 5 ppm as stated
+            'sc_suppression': '(1 - B/B_crit) - flagship falsifiable, no GR analogue',
+            'scale_hierarchy': {'kpc': 'DM perturbation', 'gpc': 'expansion + Lambda'},
+            'sgra_g_printed': 234.3,
+            'sgra_g_chain': GM / (1.27e10) ** 2,           # 3.54e6 does not close
+            'ns_g_printed': 1.62e12,
+            'ns_g_chain': 6.674e-11 * 2.8e30 / (1.2e4) ** 2,   # 1.30e12
+            'term_count_prints': (10, 9, 9),               # title/abstract/table
+            'systems_validated': 5,
+        },
+        'formula': ('g_MUGE = GM/r^2*(1+H0 t)(1-B/B_crit)F_env + Sum Ug + Lambda c^2/3 '
+                    '+ quantum + fluid + DM; U_bi/F_U = SSq*kappa'),
+        'source': 'PAPER_090',
+        'residual_pct': abs(6.674e-11 * 1.99e30 / (6.96e8) ** 2 - 274.3) / 274.3 * 100,
         'status': 'OPEN_RULING',
     }

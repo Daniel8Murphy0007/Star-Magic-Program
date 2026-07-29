@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.93.0] — 2026-07-29 — BAND 1: PAPER_090
+
+### Added
+- **PAPER_090 dispatch** (MUGE Compressed Gravity): **PROVENANCE
+  LANDMARK** — this Session-0 paper states the canonical causal
+  ordering ("gravity originates from F_U, not Newton; the DPM
+  mass gradient is the LIMITING CASE of Ug2") — the dpm-helpers
+  T0 doctrine's early-corpus root. MUGE master: 4-factor
+  multiplicative core + 5 additive terms; 2-ppm horizon
+  correction; LCDM-concordant kpc/Gpc limits; (1 - B/B_crit)
+  magnetar gravitational suppression = flagship falsifiable (no
+  GR analogue). Chains: r_s(SgrA*) = 1.27e10 m EXACT (pins the
+  086 mass); Sun row closes (274.2/274.3); footer U_bi/F_U =
+  SSq*kappa = 2.85e-4 EXACT. Defects: SgrA*/NS rows do not close
+  vs chains; term count prints 10/9/9.
+- OPEN_RULING Q-086.
+- Gate: 657 assertions, 0 failures. Registry: 262 rows / 523 edges / 94 ledgers.
+
+---
+
 ## [0.92.0] — 2026-07-29 — BAND 1: PAPER_089 — DOMAIN 1.12 OPENS
 
 ### Added

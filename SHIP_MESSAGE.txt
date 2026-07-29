@@ -1,25 +1,28 @@
-v0.92.0 BAND 1: PAPER_089 wired - DOMAIN 1.12 OPENS (8 ARCHITECTURES)
+v0.93.0 BAND 1: PAPER_090 wired - T0-DOCTRINE PROVENANCE ROOT
 
-PAPER_089 UQFF Master Equation + 8 Calculator Architectures
-(OPEN_RULING Q-085):
-  DOMAIN 1.12 OPENS. The 7-component master integrand (Ug1-4,
-  Um, U_bi, kappa*SSq) and 8 specializations registered: Base /
-  Compressed (MUGE, fwd-ref PAPER_090) / Superconductive /
-  Triadic / Buoyant / MasterBuoyant / Resonant / Quadratic.
-  8/8 self_validate() PASS on 5 standard systems.
+PAPER_090 MUGE Compressed Gravity (OPEN_RULING Q-086):
+  PROVENANCE LANDMARK: this Session-0 paper already states the
+  canonical causal ordering - "Gravity originates from F_U, NOT
+  from Newton; the DPM mass gradient mu_s*grad(M_s/r) is the
+  LIMITING CASE of the Ug2 channel" - the dpm-helpers T0
+  doctrine (GM/r^2 LAST) in its early-corpus form. Recorded as
+  the doctrine's root.
 
-  DRIFT AUTO-CORRECTED (charter table): "kappa_i ~ 0.603" is a
-  symbol slip + drift form of beta_i - canonical BETA_I applied.
-  Triadic equal-body 120-deg cosine sum = 0 EXACT (balanced).
-  Superconductive F*[SCm] = x0.99 with range check (0.98,1.00)
-  SUPPORTS the Q-083a context reading: SC-mode reduction vs XRB
-  (1+[SCm]) doubling are mode-dependent structures (annotated).
-  5 resonant frequencies cross-consistent with PAPER_064.
-  [UA] 9th appearance (Buoyant, sub-dominant).
+  MUGE master equation: multiplicative core [mass-kernel *
+  (1 + H0*t) * (1 - B/B_crit) * F_env] + additive [Ug-sum,
+  Lambda*c^2/3, quantum, fluid, DM-perturbation]. Total horizon
+  correction 2 ppm; kpc/Gpc limits LCDM-concordant.
+  FLAGSHIP FALSIFIABLE: (1 - B/B_crit) gravitational suppression
+  near magnetar fields - no GR analogue.
 
-  DEFECT: footer solar U_bi chain does not close - printed
-  factors give 1.09e8 vs printed 147 m/s2 (6 orders) - OPEN.
+  Chains: r_s(SgrA*) = 2GM/c^2 = 1.27e10 m EXACT (pins M =
+  8.55e36, cross-consistent with 086); Sun row CLOSES (274.2 vs
+  274.3); footer U_bi/F_U = SSq*kappa = 2.85e-4 EXACT.
 
-Q-085 queued. Gate 650 assertions 0 failures. Registry 260 rows /
-517 edges / 93 citation ledgers. Wired 93/2,255 (10 clean, 83
-OPEN_RULING). Next: PAPER_090.
+  DEFECTS: SgrA* row 234.3 vs horizon chain 3.54e6; NS row
+  1.62e12 vs 1.30e12; term count prints 10/9/9
+  (title/abstract/table).
+
+Q-086 queued. Gate 657 assertions 0 failures. Registry 262 rows /
+523 edges / 94 citation ledgers. Wired 94/2,255 (10 clean, 84
+OPEN_RULING). Next: PAPER_091.

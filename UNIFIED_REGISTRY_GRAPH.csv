@@ -517,3 +517,9 @@ primitive,BETA_I,observable,master_eq_8_architectures,drift auto-correction
 primitive,SSQ,observable,master_eq_8_architectures,calibration term
 observable,sc_mode_context_support,paper,PAPER_089,context support
 observable,sc_mode_context_support,paper,PAPER_087,eta-direction annotation
+observable,muge_compressed_master,paper,PAPER_090,master equation
+observable,muge_compressed_master,paper,PAPER_089,fwd-ref resolution
+primitive,H0_GRID,observable,muge_compressed_master,expansion factor
+observable,fu_origination_doctrine_root,paper,PAPER_090,doctrine root
+primitive,SSQ,observable,fu_origination_doctrine_root,U_bi/F_U ratio
+primitive,KAPPA_PER_DAY,observable,fu_origination_doctrine_root,U_bi/F_U ratio

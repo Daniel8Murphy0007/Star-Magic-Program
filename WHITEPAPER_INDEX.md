@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 93 (10 ✓, 83 ⚠ OPEN_RULING)
+- **Wired:** 94 (10 ✓, 84 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2162
+- **Not yet touched:** 2161
 
 ---
 
@@ -123,7 +123,7 @@
 | ⚠ | PAPER_087 | AT2019qiz TDE UQFF |
 | ⚠ | PAPER_088 | Neutrino SED UQFF |
 | ⚠ | PAPER_089 | UQFF Master Equation Derivation |
-| ⬜ | PAPER_090 | MUGE Compressed Gravity |
+| ⚠ | PAPER_090 | MUGE Compressed Gravity |
 | ⬜ | PAPER_091 | MUGE Resonance 14 Mode |
 | ⬜ | PAPER_092 | SgrA MUGE Comparison |
 | ⬜ | PAPER_093 | M87 Event Horizon UQFF |
