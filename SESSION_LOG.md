@@ -1178,3 +1178,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 82/2,255 (10 ✓, 72 ⚠). Next: PAPER_079.
 
 ---
+
+## 2026-07-29 — v0.82.0 — BAND 1: PAPER_079
+
+- PAPER_079 wired (⚠ Q-075): HEASARC magnetars. 1.9801x EXACT
+  (1.98/1.99 sibling flag); anchors literature-matched; 4/5
+  tautology honesty pin; J1818 lone discriminator.
+- Campaign: 83/2,255 (10 ✓, 73 ⚠). Next: PAPER_080.
+
+---

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.81.0", "uqff_calculator.VERSION = 0.81.0")
+assert_that(C.VERSION == "0.82.0", "uqff_calculator.VERSION = 0.82.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1289,6 +1289,19 @@ assert_that(abs(_r078['tension_sigma_computed'] - 5.0) < 0.05,
 assert_that(_r078['lstar_dex_shift'] < _r078['scatter_dex'],
             "PAPER_078: 0.3-dex shift within 0.5-dex scatter - compatible as stated")
 assert_that(C.wired_count() >= 82, "wired_count >= 82")
+
+_r079 = C.calc('PAPER_079')['value']
+assert_that(abs(_r079['b_enhancement'] - 1.9801) < 1e-6,
+            "PAPER_079: B enhancement 1 + [SCm]*H_SCm = 1.9801 EXACT (sibling of 1.99; Q-075a)")
+assert_that(abs(_r079['sgr1806_spindown_chain'] - 2.4e15) / 2.4e15 < 0.01,
+            "PAPER_079: SGR1806 spin-down chain 2.4e15 G matches literature anchor 2e15")
+assert_that(_r079['tautological_rows'] == 4,
+            "PAPER_079: 4/5 rows tautological (B_obs = spin-down B_std) - honesty pin (Q-075b)")
+assert_that(abs(_r079['swift_j1818_ratio'] - 2.69) < 0.01,
+            "PAPER_079: Swift J1818 ratio 2.69 = printed 2.7 - the lone discriminating row")
+assert_that(_r079['xmm_tx_enhancement'] == 1e-4,
+            "PAPER_079: XMM T_X null (0.01 pct undetectable)")
+assert_that(C.wired_count() >= 83, "wired_count >= 83")
 
 # =============================================================================
 # REPORT

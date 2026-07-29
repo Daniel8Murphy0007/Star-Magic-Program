@@ -1340,6 +1340,26 @@ RESOLVED section with the ruling recorded.
   on-route observation recorded.
 - **Daniel's ruling:** (pending)
 
+### Q-075 — PAPER_079 — 1.98/1.99 siblings + tautological rows + J1818 inputs + Pdot
+- **Question:** (a) Enhancement structures: 1.9801 = 1 +
+  [SCm]*H_SCm here vs 1.99 = 1 + [SCm] in PAPER_075/078 - both
+  chains exact; canonize one, or are both context-dependent
+  (B-field vs luminosity)? (b) 4 of 5 magnetar rows have B_obs =
+  B_std, which is TAUTOLOGICAL (catalog B values are themselves
+  spin-down derived) - the internal/external-field interpretation
+  is untestable in those rows; accept Swift J1818 (ratio 2.69,
+  youngest at 240 yr) as the lone falsifiability statement?
+  (c) Swift J1818 B_std = 4.7e14 G input vs its literature
+  ~3.5e14 (used as B_obs) - inputs provenance? (d) SGR1745
+  spin-down chain 3.2e19*sqrt(3.8*6.6e-12) = 1.6e14 vs printed
+  2.3e14 - Pdot exponent recovery open.
+- **Notable:** SGR1806 spin-down chain 2.4e15 matches the
+  literature anchor; XMM T_X null (0.01 pct) falsifiable;
+  B_std anchors all match published magnetar values.
+- **Best-candidate wired:** enhancement chain + anchors +
+  honesty pin + lone-discriminator reading.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

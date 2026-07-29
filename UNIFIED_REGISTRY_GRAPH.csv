@@ -464,3 +464,7 @@ observable,hubble_tension_null,paper,PAPER_078,honest null
 primitive,H0_GRID,observable,hubble_tension_null,midpoint-on-route note
 observable,agn_lstar_shift,paper,PAPER_078,primary chain
 observable,agn_lstar_shift,paper,PAPER_075,1.99 multiplier consistency
+observable,magnetar_b_enhancement,paper,PAPER_079,primary derivation
+observable,magnetar_b_enhancement,paper,PAPER_066,magnetar family link
+observable,swift_j1818_discriminator,paper,PAPER_079,lone falsifiable row
+observable,magnetar_b_enhancement,paper,PAPER_075,1.99-sibling structure

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.81.0"
+VERSION = "0.82.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4161,5 +4161,52 @@ def _paper_078(dataset):
                     'tension midpoint = registry H0 route'),
         'source': 'PAPER_078',
         'residual_pct': abs(_m.log10(1.99) - 0.3) / 0.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_079')
+def _paper_079(dataset):
+    """HEASARC Magnetar Catalog B-Field Predictions (Session 0).
+
+    Domain 1.10 continues (HEASARC cone/TAP/magnetar endpoints).
+    B_UQFF = B_std * (1 + [SCm]*H_SCm) = 1.9801x EXACT - a SIBLING
+    of the 1.99 = 1+[SCm] structure in 075/078 (both 0.99
+    constants used together here; Q-075a namespace).
+    Five-magnetar table: B_std anchors match literature (SGR1806
+    2e15 / SGR1745 2.3e14 / 1E2259 5.9e13 / XTE1810 2.1e14 G,
+    exponents recovered from mojibake by literature match + spin-
+    down chain: 3.2e19*sqrt(P*Pdot) = 2.4e15 for SGR1806 checks).
+    FALSIFIABILITY HONESTY (Q-075b): 4 of 5 rows have B_obs =
+    B_std - TAUTOLOGICAL, since catalog B values ARE spin-down
+    derived; the interpretation (UQFF B = total internal field,
+    spin-down = external dipole) is untestable in those rows.
+    Only Swift J1818 (youngest, ~240 yr) DISCRIMINATES: ratio
+    9.4/3.5 = 2.69 = printed 2.7, read as stronger [SCm] coupling
+    in the active phase - the table's lone falsifiable row.
+    XMM cluster T_X enhancement F/(Mg) ~ 1e-4 -> 0.01 pct
+    undetectable (null). SGR1745 spin-down chain gives 1.6e14 vs
+    printed 2.3e14 - Pdot exponent recovery open (Q-075d).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.10 (HEASARC endpoints)',
+            'b_enhancement': 1.0 + 0.99 * 0.99,            # 1.9801 EXACT
+            'sibling_199': 1.99,                           # 075/078 structure
+            'magnetars_b_std_g': {'sgr1806': 2.0e15, 'sgr1745': 2.3e14,
+                                  '1e2259': 5.9e13, 'xte1810': 2.1e14,
+                                  'swift_j1818': 4.7e14},
+            'sgr1806_spindown_chain': 3.2e19 * _m.sqrt(7.6 * 7.5e-10),  # 2.4e15
+            'sgr1745_spindown_chain': 3.2e19 * _m.sqrt(3.8 * 6.6e-12),  # 1.6e14 vs 2.3e14
+            'tautological_rows': 4,
+            'swift_j1818_ratio': 9.4e14 / 3.5e14,          # 2.69 discriminating
+            'swift_j1818_age_yr': 240.0,
+            'xmm_tx_enhancement': 1.0e-4,                  # 0.01 pct null
+        },
+        'formula': ('B_UQFF = B_std*(1 + [SCm]*H_SCm) = 1.9801*B_std; '
+                    'B_std = 3.2e19*sqrt(P*Pdot) G'),
+        'source': 'PAPER_079',
+        'residual_pct': abs(9.4e14 / 3.5e14 - 2.7) / 2.7 * 100,
         'status': 'OPEN_RULING',
     }

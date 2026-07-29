@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.82.0] — 2026-07-29 — BAND 1: PAPER_079
+
+### Added
+- **PAPER_079 dispatch** (HEASARC Magnetar Catalog): B_UQFF =
+  B_std*(1 + [SCm]*H_SCm) = 1.9801x EXACT — sibling of the 1.99
+  structure (075/078); namespace ruling queued. Five-magnetar
+  table with literature-matching B_std anchors (SGR1806 spin-down
+  chain 2.4e15 G verifies). HONESTY PIN: 4/5 rows are
+  tautological (catalog B IS spin-down derived); Swift J1818
+  (240 yr) is the lone discriminating row — ratio 2.69 = printed
+  2.7, read as active-phase [SCm] strengthening. XMM cluster T_X
+  null (0.01 pct undetectable). SGR1745 Pdot recovery open.
+- OPEN_RULING Q-075.
+- Gate: 590 assertions, 0 failures. Registry: 240 rows / 468 edges / 83 ledgers.
+
+---
+
 ## [0.81.0] — 2026-07-29 — BAND 1: PAPER_078
 
 ### Added

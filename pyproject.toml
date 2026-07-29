@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.81.0"
-description = "UQFF Star-Magic-Program v0.81.0: PAPER_078 wired (NED extragalactic + Hubble tension: honest null dH0 = 0.0034 EXACT vs 5.6 tension; tension midpoint 70.2 sits ON the registry H0 = A_5+SO_5 route - interpretive supersession noted; AGN L* +0.3 dex = log10(1.99) EXACT consistent with 075; DLA 21-cm null; [UA] 6th + [SCm] 5th appearances). Q-074 queued. Wired 82/2255, gate 584/0. Registry 238 rows / 464 edges / 82 ledgers."
+version = "0.82.0"
+description = "UQFF Star-Magic-Program v0.82.0: PAPER_079 wired (HEASARC magnetars: B enhancement 1+[SCm]*H_SCm = 1.9801 EXACT sibling of 1.99; literature-matching B_std anchors with SGR1806 spin-down chain verified; honesty pin - 4/5 rows tautological, Swift J1818 ratio 2.69 is the lone discriminator; XMM T_X null). Q-075 queued. Wired 83/2255, gate 590/0. Registry 240 rows / 468 edges / 83 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
