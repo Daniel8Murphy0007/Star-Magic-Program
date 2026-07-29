@@ -1767,6 +1767,25 @@ RESOLVED section with the ruling recorded.
   record; 4/4 tests as stated.
 - **Daniel's ruling:** (pending)
 
+### Q-095 — PAPER_099 — shield-period unit slip + T pin + ISCO factor + 0.755 dual role
+- **Question:** (a) P_shield = P_ISCO/kappa: 1/kappa = 2000 days
+  EXACT, but 2000 * 27 min = 37.5 DAYS - the printed "37.5 yr"
+  is a day/yr unit slip; the ~40-yr SgrA* QPO consistency claim
+  needs an extra x365 - pin the intended chain? (b) E_peak =
+  3 k_B T * [SCm] = 2.56 keV pins T_plasma = 1e7 K (the printed
+  "108 K" reads 1e7; 1e8 gives 25.9 keV) - confirm. (c) r_ISCO
+  printed 7.14e10 m vs the 6GM/c^2 chain 3.81e10 (factor ~1.9)
+  - inputs? (d) sqrt(SSq) = 0.755 appears in a SECOND role
+  (trapping fraction) - the same number as the PAPER_094
+  SSq-origin anchor; intended structural reuse?
+- **Notable:** honest in-paper trapping self-check ("0.755 > 1?
+  No") deriving the T < T_crit condition; hard-X-ray-deficit
+  resolution mechanism; zone structure (1-2)/(2-10)/(10-100)
+  r_ISCO; 5/5 model tests.
+- **Best-candidate wired:** chains + pins + dual-role note;
+  slips carried with corrected values.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

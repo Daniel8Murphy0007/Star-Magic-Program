@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.101.0", "uqff_calculator.VERSION = 0.101.0")
+assert_that(C.VERSION == "0.102.0", "uqff_calculator.VERSION = 0.102.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1556,6 +1556,19 @@ assert_that(_r098['kappa_t_age_reductio'] > 1e9,
 assert_that(_r098['friedmann_correction'] == 1e-120,
             "PAPER_098: Friedmann correction 1e-120 negligible (120-orders scale)")
 assert_that(C.wired_count() >= 102, "wired_count >= 102")
+
+_r099 = C.calc('PAPER_099')['value']
+assert_that(abs(_r099['sqrt_ssq'] - 0.755) < 0.001,
+            "PAPER_099: sqrt(SSq) = 0.755 reappears (= 094 origin anchor, 2nd role)")
+assert_that(abs(_r099['inv_kappa_days'] - 2000.0) < 1e-9,
+            "PAPER_099: 1/kappa = 2000 days EXACT")
+assert_that(abs(_r099['p_shield_chain_days'] - 37.5) < 0.01,
+            "PAPER_099: P_shield chain = 37.5 DAYS - printed yr is a unit slip (Q-095a)")
+assert_that(abs(_r099['e_peak_uqff_kev'] - 2.56) < 0.01,
+            "PAPER_099: E_peak UQFF = 2.56 keV EXACT - pins T_plasma = 1e7 K (Q-095b)")
+assert_that(abs(_r099['r_isco_chain_m'] - 3.81e10) / 3.81e10 < 0.01,
+            "PAPER_099: r_ISCO chain 3.81e10 vs printed 7.14e10 - factor 1.9 open (Q-095c)")
+assert_that(C.wired_count() >= 103, "wired_count >= 103")
 
 # =============================================================================
 # REPORT

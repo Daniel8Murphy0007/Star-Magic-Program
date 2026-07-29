@@ -565,3 +565,8 @@ primitive,D_CRIT,observable,cosmic_egg_bigbang,26D product state
 observable,eta_b_ua_closure,paper,PAPER_098,CP*[UA] chain
 observable,t_cmb_firas_tension,paper,PAPER_098,Rule-7 pin
 observable,cosmic_egg_bigbang,paper,PAPER_084,Egg terminology
+observable,plasma_shield_model,paper,PAPER_099,trapping model
+primitive,SSQ,observable,plasma_shield_model,sqrt trapping fraction
+observable,plasma_shield_model,paper,PAPER_094,0.755 dual role
+observable,shield_period_slip,paper,PAPER_099,unit-slip forensic
+primitive,KAPPA_PER_DAY,observable,shield_period_slip,1/kappa = 2000 d

@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.102.0] — 2026-07-29 — BAND 1: PAPER_099
+
+### Added
+- **PAPER_099 dispatch** (Plasma Shield, Drawings 21/28/29): Ug2
+  charge-reactivity trapping (AGN hard-X-ray-deficit mechanism).
+  sqrt(SSq) = 0.755 in a SECOND role (trapping fraction; = the
+  094 origin anchor) with the paper honestly running its own
+  trapping check and deriving T < T_crit. Chains pin mojibake:
+  E_peak = 2.56 keV EXACT pins T_plasma = 1e7 K; 1/kappa = 2000
+  days EXACT but 2000*27 min = 37.5 DAYS (printed "yr" — unit
+  slip; the 40-yr QPO claim needs x365). r_ISCO factor-1.9 open.
+- OPEN_RULING Q-095.
+- Gate: 713 assertions, 0 failures. Registry: 280 rows / 570 edges / 103 ledgers.
+
+---
+
 ## [0.101.0] — 2026-07-29 — BAND 1: PAPER_098
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.101.0"
+VERSION = "0.102.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5162,5 +5162,54 @@ def _paper_098(dataset):
                     '|Psi(t)> = e^-kappa|t| |Psi_0> + (1-e^-kappa|t|)|Psi_BB>'),
         'source': 'PAPER_098',
         'residual_pct': abs(2.725 * 0.995 - 2.711) / 2.711 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_099')
+def _paper_099(dataset):
+    """Plasma Shield-Capture Model - Drawings 21/28/29 (Session 0).
+
+    Ug2 charge-reactivity trapping around compact objects (AGN
+    hard-X-ray-deficit resolution). Three zones: inner shield
+    (1-2 r_ISCO), accretion flow (2-10), outer capture (10-100).
+    sqrt(SSq) = 0.755 REAPPEARS as the trapping fraction - the
+    SAME value as the PAPER_094 SSq-origin anchor, now in a
+    second role (Q-095d); the paper HONESTLY runs its own
+    trapping check ("0.755 > 1? No") and derives the T < T_crit
+    condition instead.
+    CHAINS PIN MOJIBAKE: (1) E_peak = 3 k_B T * [SCm] = 2.56 keV
+    requires T_plasma = 1e7 K (the printed "108 K" reads 1e7;
+    1e8 gives 25.9 keV - excluded); UQFF peak 2.586*0.99 = 2.56
+    keV EXACT. (2) P_shield = P_ISCO / kappa: 1/kappa = 2000
+    days EXACT; but 2000 * 27 min = 37.5 DAYS - the printed
+    "37.5 yr" is a day/yr UNIT SLIP (the ~40-yr QPO consistency
+    claim needs x365; Q-095a).
+    r_ISCO printed 7.14e10 vs 6GM/c^2 chain 3.81e10 - factor
+    ~1.9 open (Q-095c). L_X = 4 pi r^2 sigma T^4 * [SCm] form
+    recorded; 5/5 model tests as stated.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.13 (Drawings 21/28/29 PLASMA_SHIELD_MODEL)',
+            'sqrt_ssq': _m.sqrt(SSQ),                      # 0.755 = 094 anchor
+            'trapping_condition': 'T < T_crit (honest self-check in-paper)',
+            'inv_kappa_days': 1.0 / KAPPA_PER_DAY,         # 2000 EXACT
+            'p_shield_chain_days': 2000 * 27 / 60.0 / 24.0,    # 37.5 DAYS
+            'p_shield_printed': '37.5 yr (unit slip)',
+            't_plasma_pinned_k': 1e7,                      # by E_peak chain
+            'e_peak_kev': 3 * 1.381e-23 * 1e7 / 1.602e-16, # 2.59
+            'e_peak_uqff_kev': 2.586 * 0.99,               # 2.56 EXACT
+            'r_isco_chain_m': 6 * 6.674e-11 * 8.55e36 / 8.988e16,  # 3.81e10
+            'r_isco_printed_m': 7.14e10,                   # factor 1.9 open
+            'zones_r_isco': ((1, 2), (2, 10), (10, 100)),
+            'lx_form': '4 pi r^2 sigma T^4 * [SCm]',
+            'tests_pass': 5,
+        },
+        'formula': ('dU_g2 = q^2 sqrt(SSq)/(8 pi eps0 r_ISCO); '
+                    'P_shield = P_ISCO/kappa; E_peak = 3 k_B T*[SCm]'),
+        'source': 'PAPER_099',
+        'residual_pct': abs(2.586 * 0.99 - 2.53) / 2.53 * 100,
         'status': 'OPEN_RULING',
     }

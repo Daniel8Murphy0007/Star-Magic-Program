@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 102 (10 ✓, 92 ⚠ OPEN_RULING)
+- **Wired:** 103 (10 ✓, 93 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2153
+- **Not yet touched:** 2152
 
 ---
 
@@ -132,7 +132,7 @@
 | ⚠ | PAPER_096 | FRB UQFF Emission Model |
 | ⚠ | PAPER_097 | Whittaker Decomposition UQFF |
 | ⚠ | PAPER_098 | Big Bang UQFF |
-| ⬜ | PAPER_099 | Plasma Shield UQFF |
+| ⚠ | PAPER_099 | Plasma Shield UQFF |
 | ⬜ | PAPER_1000 | NS Merger FUBi Strain |
 | ⬜ | PAPER_1001 | SMBH Binary Merger FUBi |
 | ⬜ | PAPER_1002 | AGN Accretion Buoyancy |

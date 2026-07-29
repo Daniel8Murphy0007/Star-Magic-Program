@@ -1,30 +1,27 @@
-v0.101.0 BAND 1: PAPER_098 wired - ETA_B CLOSURE + FIRAS RULE-7 PIN
+v0.102.0 BAND 1: PAPER_099 wired - 0.755 DUAL ROLE + UNIT-SLIP PINS
 
-PAPER_098 Big Bang / Cosmic Quantum Egg, Drawings 14+20
-(OPEN_RULING Q-094):
-  Pre-inflationary 26D product vacuum state |Psi_0> with
-  kappa-driven decoherence at t < 0 (negative-time mechanism).
+PAPER_099 Plasma Shield-Capture Model, Drawings 21/28/29
+(OPEN_RULING Q-095):
+  Ug2 charge-reactivity trapping around compact objects - the
+  AGN hard-X-ray-deficit resolution mechanism. Zone structure
+  (1-2)/(2-10)/(10-100) r_ISCO.
 
-  BARYON-ASYMMETRY CHAIN EXACT TO OBSERVATION: eta_b =
-  eps_CP * [UA] = 6e-6 * 1e-4 = 6e-10 = the observed value -
-  [UA]'s 10TH appearance and its cleanest closure yet
-  (canonization requested).
+  sqrt(SSq) = 0.755 appears in a SECOND role (trapping
+  fraction) - the same number as the PAPER_094 SSq-origin
+  anchor. The paper HONESTLY runs its own trapping check
+  ("0.755 > 1? No") and derives the T < T_crit condition.
 
-  RULE-7 PIN: T_CMB = T0*sqrt([SCm]) = 2.711 K (chain EXACT)
-  sits ~24 SIGMA from FIRAS (2.7255 +/- 0.0006) - the printed
-  PASS is generous. Either the horizon-scale caveat exempts the
-  FIRAS spectrum (then which observable IS 2.711 K?) or
-  sqrt([SCm]) is drift. Ruling requested.
+  CHAINS PIN MOJIBAKE:
+  - E_peak = 3 k_B T * [SCm] = 2.56 keV EXACT pins T_plasma =
+    1e7 K (1e8 would give 25.9 keV - excluded by the print)
+  - 1/kappa = 2000 days EXACT; but 2000 * 27 min = 37.5 DAYS -
+    the printed "37.5 yr" is a day/yr UNIT SLIP (the ~40-yr
+    SgrA* QPO consistency claim needs x365)
 
-  HONEST SELF-CORRECTION recorded as doctrine: the paper runs
-  its own reductio (kappa*t_age = 2.5e9, unphysical) and
-  resolves it - kappa applies to FIELD terms, kappa_cosm << 
-  kappa governs cosmology (consistent with 087's viscous
-  resolution). Friedmann correction 1e-120 negligible; H0
-  GR-concordant with no UQFF claim. Egg terminology
-  reconciliation queued (full 26D state here vs layers 25-26
-  in 084/097).
+  r_ISCO printed 7.14e10 vs 6GM/c^2 chain 3.81e10 - factor-1.9
+  open. L_X = 4 pi r^2 sigma T^4 * [SCm] form recorded; 5/5
+  model tests PASS.
 
-Q-094 queued. Gate 707 assertions 0 failures. Registry 278 rows /
-565 edges / 102 citation ledgers. Wired 102/2,255 (10 clean, 92
-OPEN_RULING). Next: PAPER_099.
+Q-095 queued. Gate 713 assertions 0 failures. Registry 280 rows /
+570 edges / 103 citation ledgers. Wired 103/2,255 (10 clean, 93
+OPEN_RULING). Next: PAPER_100.

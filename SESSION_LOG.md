@@ -1370,3 +1370,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 102/2,255 (10 ✓, 92 ⚠). Next: PAPER_099.
 
 ---
+
+## 2026-07-29 — v0.102.0 — BAND 1: PAPER_099
+
+- PAPER_099 wired (⚠ Q-095): plasma shield. 0.755 dual role;
+  T = 1e7 K pin; 37.5-day/yr slip; ISCO factor open; honest
+  in-paper trapping self-check noted.
+- Campaign: 103/2,255 (10 ✓, 93 ⚠). Next: PAPER_100.
+
+---
