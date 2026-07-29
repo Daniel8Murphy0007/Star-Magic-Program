@@ -2,6 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg)](https://pypi.org/project/star-magic-program/)
 [![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg)](https://pypi.org/project/star-magic-program/)
+[![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-47%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-0-blue)](uqff_calculator.py)
