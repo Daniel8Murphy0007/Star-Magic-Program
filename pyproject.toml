@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.64.0"
-description = "UQFF Star-Magic-Program v0.64.0: PAPER_061 wired (multi-scale nuclear BEC: Phi_BEC = SSq = 0.57 scale-invariant order parameter, 57+28=85 pct yield closure; NS force chain verified; 0.38 MeV T_c shift disclosed phenomenological with microscopic 5.13e-58 K chain verified; F_thermal GeV unit-slip caught - margin 4000x corrected). Q-057 queued. Wired 65/2255, gate 467/0. Registry 193 rows / 370 edges / 65 ledgers."
+version = "0.65.0"
+description = "UQFF Star-Magic-Program v0.65.0: PAPER_062 wired (Widom-Larsen LENR: heavy-electron m* = 3.0 m_e EXACT vs 2.530 threshold; TWO mojibake exponents pinned by chain closure - omega_LENR = 2*pi*1.25 THz = omega_SCm identity, k_eta = 1e-55 from field-chain closure; Li Q-value 26.9 cited with honest 25.38 mass-balance alongside). Q-058 queued. Wired 66/2255, gate 474/0. Registry 196 rows / 376 edges / 66 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

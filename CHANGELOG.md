@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.65.0] — 2026-07-29 — BAND 1: PAPER_062
+
+### Added
+- **PAPER_062 dispatch** (Widom-Larsen LENR): heavy-electron chain
+  EXACT (m* = 3.0 m_e > 2.530 threshold from 1.293/0.511); eta =
+  3e13 /cm2/s. TWO mojibake exponents pinned by chain closure:
+  omega_LENR = 2*pi*1.25 THz = omega_SCm (the LENR channel IS the
+  SCm phonon resonance — primitive identity), and k_eta = 1e-55
+  (raw field 1.21e61 V/m verified -> printed physical 1.21e6 V/m).
+  Li transmutation Q wired at cited 26.9 MeV with honest
+  independent mass-balance 25.38 MeV carried alongside.
+- OPEN_RULING Q-058 (k_eta confirmation; Li Q-value; F_LENR
+  exponent; omega identity reading).
+- Gate: 474 assertions, 0 failures. Registry: 196 rows / 376 edges / 66 ledgers.
+
+---
+
 ## [0.64.0] — 2026-07-29 — BAND 1: PAPER_061
 
 ### Added

@@ -1,25 +1,25 @@
-v0.64.0 BAND 1: PAPER_061 wired - PHI_BEC = SSQ SCALE-INVARIANCE
+v0.65.0 BAND 1: PAPER_062 wired - TWO MOJIBAKE EXPONENTS PINNED
 
-PAPER_061 Nuclear BEC Formation (OPEN_RULING Q-057):
-  Multi-scale synthesis: Hoyle 3-alpha (7.654 MeV) -> Ca-40
-  10-alpha -> NS crust pasta -> NS surface coherence.
-  CENTRAL CLAIM WIRED: Phi_BEC = SSq = 0.57 scale-invariant
-  condensate fraction (SSq's 12th physical role) - 57 pct
-  condensate + 28 pct thermal = 85 pct observed yield CLOSES.
-  NS force chain VERIFIED: -4.77e6*3.5e9*1e-10 = -1.67e6 N.
-  HONEST DISCLOSURE preserved: 0.38 MeV T_c shift is
-  phenomenological - the paper itself derives the microscopic
-  chain rho_SCm*V/(N*k_B) = 5.13e-58 K (verified) and says so.
+PAPER_062 Widom-Larsen LENR (OPEN_RULING Q-058):
+  Heavy-electron chain EXACT: m* = m_e*(1+2e11/1e11) = 3.0 m_e,
+  exceeding the e+p -> n+nu threshold 1.293/0.511 = 2.530 m_e.
+  Enhanced neutron rate eta = 1e13*3.0 = 3e13 /cm2/s.
 
-UNIT-SLIP FORENSIC: F_thermal = 3*5 MeV/2 fm printed as 1.2e6 N -
-that value requires GeV/fm; correct MeV/fm arithmetic = 1.2e3 N.
-Stability margin: 4x as printed, ~4000x corrected. The stability
-conclusion survives and STRENGTHENS under correction.
+  TWO MOJIBAKE EXPONENTS PINNED BY CHAIN CLOSURE (not guesswork):
+  1. omega_LENR "7.85e?" = 2*pi*1.25 THz = 7.854e12 rad/s -
+     IDENTICALLY omega_SCm. The LENR channel IS the SCm phonon
+     resonance - primitive identity, no new constant.
+  2. k_eta "10?" - raw field E = Um*rho_UA/r = 1.21e61 V/m
+     (chain verified) closes to printed physical 1.21e6 V/m
+     IFF k_eta = 1e-55.
 
-Q-057 queued: (a) pin printed-vs-corrected margin; (b) accept
-0.38 MeV as system_50 calibration constant; (c) header
-kappa_i = 0.61 beta_i drift form.
+  Li transmutation Q wired at W-L literature 26.9 MeV; honest
+  independent mass-balance through 7Li/8Li/8Be gives 25.38 MeV
+  (5.6 pct below cited) - both carried, ruling requested.
 
-Gate 467 assertions 0 failures. Registry 193 rows / 370 edges / 65
-citation ledgers. Wired 65/2,255 (10 clean, 55 OPEN_RULING).
-Next: PAPER_062.
+Q-058 queued: k_eta confirm; Li Q-value canonical pick; F_LENR
+6.16e? exponent; omega_LENR == omega_SCm identity reading.
+
+Gate 474 assertions 0 failures. Registry 196 rows / 376 edges / 66
+citation ledgers. Wired 66/2,255 (10 clean, 56 OPEN_RULING).
+Next: PAPER_063.

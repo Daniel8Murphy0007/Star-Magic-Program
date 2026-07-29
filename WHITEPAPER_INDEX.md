@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 65 (10 ✓, 55 ⚠ OPEN_RULING)
+- **Wired:** 66 (10 ✓, 56 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2190
+- **Not yet touched:** 2189
 
 ---
 
@@ -95,7 +95,7 @@
 | ⚠ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF |
 | ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF |
 | ⚠ | PAPER_061 | Nuclear BEC Formation UQFF |
-| ⬜ | PAPER_062 | Widom Larsen LENR UQFF |
+| ⚠ | PAPER_062 | Widom Larsen LENR UQFF |
 | ⬜ | PAPER_063 | F U Bi i Integral UQFF |
 | ⬜ | PAPER_064 | 4 UQFF Operational Modes |
 | ⬜ | PAPER_065 | 121 System UQFF Validation Statistical Summary |

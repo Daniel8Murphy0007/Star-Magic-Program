@@ -1014,3 +1014,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 65/2,255 (10 ✓, 55 ⚠). Next: PAPER_062.
 
 ---
+
+## 2026-07-29 — v0.65.0 — BAND 1: PAPER_062
+
+- PAPER_062 wired (⚠ Q-058): Widom-Larsen LENR. m* chain EXACT;
+  omega_LENR = omega_SCm identity pinned; k_eta = 1e-55 from
+  chain closure; Li Q 26.9 cited / 25.38 mass-balance honest pair.
+- Campaign: 66/2,255 (10 ✓, 56 ⚠). Next: PAPER_063.
+
+---

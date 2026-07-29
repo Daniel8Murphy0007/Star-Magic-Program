@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.64.0", "uqff_calculator.VERSION = 0.64.0")
+assert_that(C.VERSION == "0.65.0", "uqff_calculator.VERSION = 0.65.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1034,6 +1034,21 @@ assert_that(abs(_r061['f_thermal_n_corrected'] - 1201.5) < 1.0,
 assert_that(_r061['stability_margin_corrected'] > 1000,
             "PAPER_061: corrected stability margin ~4000x - conclusion survives and strengthens")
 assert_that(C.wired_count() >= 65, "wired_count >= 65")
+
+_r062 = C.calc('PAPER_062')['value']
+assert_that(abs(_r062['m_star_ratio'] - 3.0) < 1e-12,
+            "PAPER_062: heavy electron m* = 3.0 m_e EXACT chain")
+assert_that(abs(_r062['threshold_m_star'] - 2.530) < 0.001,
+            "PAPER_062: W-L threshold 1.293/0.511 = 2.530 m_e verified")
+assert_that(abs(_r062['omega_lenr_rad_s'] - 7.854e12) / 7.854e12 < 0.001,
+            "PAPER_062: omega_LENR mojibake PINNED = 2*pi*1.25 THz = omega_SCm identity")
+assert_that(abs(_r062['e_raw_v_per_m'] - 1.212e61) / 1.212e61 < 0.01,
+            "PAPER_062: raw field chain Um*rho_UA/r = 1.21e61 V/m verified")
+assert_that(abs(_r062['k_eta_inferred'] - 1e-55) / 1e-55 < 0.01,
+            "PAPER_062: k_eta = 1e-55 inferred by chain closure (Q-058a)")
+assert_that(abs(_r062['q_li_he_mev_mass_balance'] - 25.38) < 0.01,
+            "PAPER_062: independent Li-chain mass balance 25.38 MeV vs cited 26.9 (honest residual)")
+assert_that(C.wired_count() >= 66, "wired_count >= 66")
 
 # =============================================================================
 # REPORT

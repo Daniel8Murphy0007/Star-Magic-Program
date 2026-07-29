@@ -370,3 +370,9 @@ observable,phi_bec_scale_invariant,paper,PAPER_059,yield closure input
 observable,t_c_shift_phenomenological,paper,PAPER_061,disclosed calibration
 primitive,RHO_SCM,observable,t_c_shift_phenomenological,microscopic chain input
 observable,f_thermal_gev_slip,paper,PAPER_061,unit-slip forensic
+observable,wl_heavy_electron,paper,PAPER_062,primary derivation
+observable,omega_lenr_scm_identity,paper,PAPER_062,mojibake pin
+primitive,OMEGA_SCM_HZ,observable,omega_lenr_scm_identity,2*pi identity
+observable,k_eta_lenr_coupling,paper,PAPER_062,chain closure
+primitive,RHO_UA,observable,k_eta_lenr_coupling,field chain input
+observable,wl_heavy_electron,paper,PAPER_061,BEC-LENR self-consistency link

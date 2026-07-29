@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.64.0"
+VERSION = "0.65.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3256,5 +3256,59 @@ def _paper_061(dataset):
                     'dT_c_micro = rho_SCm*V/(N*k_B); F_NS = F_nuc*S*sqrt(rho-ratio)'),
         'source': 'PAPER_061',
         'residual_pct': abs(-4.77e6 * 3.5e9 * 1e-10 - (-1.67e6)) / 1.67e6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_062')
+def _paper_062(dataset):
+    """Widom-Larsen LENR via Heavy Electron + Um Oscillation (Session 0).
+
+    W-L 2006 PRB mechanism wired as the F_core LENR term
+    (system_49). Heavy-electron chain EXACT: m* = m_e*(1+|E|/E0) =
+    1 + 2e11/1e11 = 3.0 m_e, exceeding the e+p -> n+nu threshold
+    m* > 1.293/0.511 = 2.530 m_e. Enhanced neutron rate eta =
+    1e13*3.0 = 3e13 /cm2/s.
+    TWO MOJIBAKE EXPONENTS PINNED BY CHAIN CLOSURE:
+    (1) omega_LENR "7.85e?" = 2*pi*1.25 THz = 7.854e12 rad/s -
+    IDENTICALLY omega_SCm; the LENR channel IS the SCm phonon
+    resonance (primitive identity, not a new constant).
+    (2) k_eta "1e?" - raw field chain E = Um*rho_UA/r =
+    1.71e86*7.09e-36/1e-10 = 1.21e61 V/m VERIFIED; printed
+    physical E(Um) = 1.21e6 V/m closes IFF k_eta = 1e-55.
+    Q(6Li+2n -> 2He-4) wired at W-L literature 26.9 MeV; honest
+    note: independent mass-balance (7.250+2.033+16.004+0.092)
+    gives 25.38 MeV, 5.6 pct below the cited figure.
+    Q-058: (a) confirm k_eta = 1e-55; (b) 26.9 vs 25.38 MeV Li
+    chain; (c) F_LENR = 6.16e? N exponent unresolved; (d) confirm
+    omega_LENR == omega_SCm identity reading.
+    """
+    import math as _m
+    m_star_ratio = 1.0 + 2.0e11 / 1.0e11                 # 3.0 EXACT
+    threshold = 1.293 / 0.511                            # 2.530
+    omega_lenr = 2.0 * _m.pi * OMEGA_SCM_HZ              # 7.854e12 = omega_SCm
+    e_raw = 1.71e86 * 7.09e-36 / 1.0e-10   # paper's rho_UA anchor as printed
+    k_eta_inferred = 1.21e6 / e_raw                      # ~1e-55
+    return {
+        'value': {
+            'system': 'Pd-D metallic hydride (W-L 2006 PRB; GrokThread system_49)',
+            'm_star_ratio': m_star_ratio,                # 3.0 EXACT
+            'threshold_m_star': threshold,               # 2.530
+            'eta_enhanced_cm2s': 1.0e13 * m_star_ratio,  # 3e13
+            'omega_lenr_rad_s': omega_lenr,              # = 2*pi*omega_SCm PINNED
+            'um_field_tpm': 1.71e86,
+            'e_raw_v_per_m': e_raw,                      # 1.21e61 VERIFIED
+            'e_physical_v_per_m': 1.21e6,
+            'k_eta_inferred': k_eta_inferred,            # 1e-55 chain closure
+            'q_li_he_mev_cited': 26.9,                   # W-L literature
+            'q_li_he_mev_mass_balance': 25.38,           # honest independent check
+            'q_dd_mev': 3.27,
+            'solar_corona_m_star': 1.1,
+            'solar_rate_orders_below': 16,
+        },
+        'formula': ('m* = m_e*(1+|E|/E0); eta = eta_0*m*/m_e; '
+                    'E_raw = Um*rho_UA/r; E_phys = E_raw*k_eta; omega_LENR = 2*pi*f_SCm'),
+        'source': 'PAPER_062',
+        'residual_pct': abs(26.9 - 25.38) / 26.9 * 100,
         'status': 'OPEN_RULING',
     }

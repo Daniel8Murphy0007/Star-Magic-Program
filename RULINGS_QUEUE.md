@@ -982,6 +982,24 @@ RESOLVED section with the ruling recorded.
   side; 0.38 MeV wired AS-DISCLOSED phenomenological.
 - **Daniel's ruling:** (pending)
 
+### Q-058 — PAPER_062 — k_eta chain closure + Li Q-value + F_LENR exponent + omega identity
+- **Question:** (a) k_eta printed as mojibaked "10?"; the field
+  chain E_raw = Um*rho_UA/r = 1.21e61 V/m (verified) closes to
+  the printed physical E(Um) = 1.21e6 V/m IFF k_eta = 1e-55 —
+  confirm 1e-55 as the canonical ultra-small LENR coupling?
+  (b) Q(6Li+2n -> 2 He-4) wired at the W-L literature 26.9 MeV;
+  independent mass-balance through the 7Li/8Li/8Be chain gives
+  25.38 MeV (5.6 pct below) — which is canonical? (c) F_LENR =
+  "6.16e? N" exponent unresolved by any in-paper chain — pin?
+  (d) omega_LENR "7.85e?" closes EXACTLY as 2*pi*1.25 THz =
+  omega_SCm — confirm the reading that the LENR channel IS the
+  SCm phonon resonance (identity, not independent constant)?
+- **Best-candidate wired:** heavy-electron chain EXACT (3.0 m_e >
+  2.530 threshold); both mojibake pins wired with chain-closure
+  provenance; Li Q-value carried at cited 26.9 with honest 25.38
+  mass-balance alongside.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
