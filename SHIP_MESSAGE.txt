@@ -1,24 +1,8 @@
-v0.3.0 WIRING CAMPAIGN START: charter + ship.ps1 + PAPER_001 wired
+v0.3.1 patch: README body refreshed to v0.3.0 campaign state
 
-CLAUDE.md campaign charter authorized by Daniel 2026-07-28: sequential
-wiring of all 2,255 whitepapers from PAPER_001, autonomous band sessions,
-full stop at PAPER_500 for manual review.
-
-Infrastructure:
-  CLAUDE.md        campaign charter (sessions self-configure from it)
-  ship.ps1         one-command band ship (gate/commit/tag-verify/push)
-  RULINGS_QUEUE.md never-block ambiguity protocol
-  SHIP_MESSAGE.txt per-band commit message (this file)
-
-First wired dispatch - PAPER_001 GW170817 UQFF Damping Analysis:
-  D_total = D_Aether*D_SCm*(1-F_TRZ)*D_String = 0.333
-  Composed from registry primitives F_TRZ, D_GW_EROSION, B_CRIT
-  Honest residual 0.10 pct vs 1/3 primitive identity (PAPER_2154)
-  16 observables; 8 gate assertions (Block 9); gate 55/0 green
-  Registry pantheon: +4 UNIFIED_REGISTRY rows, +7 GRAPH edges,
-  +1 CORPUS_CITATIONS row; WHITEPAPER_INDEX PAPER_001 flipped to WIRED
-
-Version bumps 0.2.2 -> 0.3.0 (pyproject, calculator, gate, citation);
-badges fidelity_gate 55/0, public_surfaces 1.
-
-Campaign continues: PAPER_002+ next session.
+The v0.3.0 ship carried a stale README body (header and shipped-state
+section still described v0.2.0). Corrected: header says wiring campaign
+started, shipped-state section shows wired-paper table (PAPER_001),
+registry pantheon described as live, campaign infrastructure listed,
+roadmap updated with PAPER_500 milestone. Version bumps 0.3.0 -> 0.3.1.
+Zero physics or calculator changes.

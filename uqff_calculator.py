@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
