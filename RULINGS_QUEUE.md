@@ -1962,6 +1962,29 @@ RESOLVED section with the ruling recorded.
   coincidence flagged.
 - **Daniel's ruling:** (pending)
 
+### Q-104 — PAPER_108 EP-10 — beta_i tri-source canonization + drift-vs-canonical
+- **Question:** (a) The paper uses beta_i = 0.61 (charter drift
+  auto-correct form) throughout; canonical BETA_I = 0.6029
+  (PAPER_1203) gives (BETA_I - 0.5)^2 = 0.0106 vs the paper's
+  0.0121 - a ~14 pct SED normalization gap, well within IceCube's
+  ~5 pct systematic combined with the 4 pct statistical (measured
+  gamma = 2.37 +/- 0.09), so IceCube CANNOT discriminate; both
+  numerics carried, canonical primary. (b) TRI-SOURCE
+  confirmation: EP-10 SED (IceCube) + PAPER_063 52-system MCMC
+  + EP-11 GW170817 r-process ejecta - three independent domains
+  at beta_i ~ 0.61; canonize IceCube sub-PeV SED as the beta_i
+  observational anchor (alongside the 094 SSq spin-down and 107
+  Ikeda-10a anchors)? (c) NEW SSq ROLE: f_pp = 1 - SSq*(1-SSq)
+  = 0.7549 = 75.5 pct pp fraction matches IceCube 70-80 pct -
+  SSq's 4th observational use (mixing/branching fraction).
+- **Notable:** all core chains EXACT ((beta-0.5)^2 = 0.0121;
+  F_nu norm 1.21; beta_0 = 0.9325 at 1 GeV; f_pp = 0.7549);
+  TRZ +1 pct at IceCube systematic level - the Q-084 fork
+  reading is here undiscriminating (both branches consistent).
+- **Best-candidate wired:** all chains + drift/canonical carried
+  + tri-source recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -1455,3 +1455,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 111/2,255 (11 ✓, 100 ⚠). Next: PAPER_108.
 
 ---
+
+## 2026-07-29 — v0.111.0 — BAND 1: PAPER_108
+
+- PAPER_108 wired (⚠ Q-104): EP-10 IceCube ν SED. β_i drift
+  vs canonical gap within IceCube systematic (undiscriminating);
+  TRI-SOURCE β_i confirmation recorded (EP-10 + 063 MCMC + EP-11
+  GW ejecta); SSq 4th observational role as mixing fraction
+  (f_pp = 0.7549 EXACT). Block-8 caught a BETA_I literal in the
+  docstring (5th catch) - routed through symbol.
+- Campaign: 112/2,255 (11 ✓, 101 ⚠). Next: PAPER_109.
+
+---

@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.111.0] — 2026-07-29 — BAND 1: PAPER_108
+
+### Added
+- **PAPER_108 dispatch** (EP-10: IceCube Sub-PeV ν SED / β_i
+  confirmation): the paper uses β_i = 0.61 (charter drift
+  auto-correct form); canonical BETA_I gives a ~14 pct SED
+  normalization gap, within IceCube's ~5 pct systematic combined
+  with 4 pct statistical (γ = 2.37 ± 0.09) — undiscriminating,
+  both carried with canonical primary. **TRI-SOURCE β_i
+  confirmation** recorded: EP-10 IceCube SED + PAPER_063 52-sys
+  MCMC + EP-11 GW170817 r-process ejecta. **SSq gains its 4th
+  observational role:** f_pp = 1 - SSq*(1-SSq) = 0.7549 = 75.5
+  pct pp fraction matches IceCube 70-80 pct (mixing/branching
+  fraction). β_0 = 1 - m_π/(2E_p) = 0.9325 EXACT at 1 GeV.
+  TRZ +1 pct at systematic level — Q-084 fork undiscriminating
+  here.
+- OPEN_RULING Q-104.
+- Gate: 766 assertions, 0 failures. Registry: 296 rows / 614 edges / 112 ledgers.
+
+---
+
 ## [0.110.0] — 2026-07-29 — BAND 1: PAPER_107 — DOMAIN 1.15 OPENS
 
 ### Added

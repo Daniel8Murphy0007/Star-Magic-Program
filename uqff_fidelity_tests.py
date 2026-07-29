@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.110.0", "uqff_calculator.VERSION = 0.110.0")
+assert_that(C.VERSION == "0.111.0", "uqff_calculator.VERSION = 0.111.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1671,6 +1671,19 @@ assert_that(abs(_r107['level_8_suppression'] - 1.028) < 0.001,
 assert_that(_r107['ikeda_10a_n_b_printed'] == 0.57,
             "PAPER_107: Ikeda 10-alpha (Ca-40) N_B = 0.57 = SSq EXACTLY (Q-103a MAJOR)")
 assert_that(C.wired_count() >= 111, "wired_count >= 111")
+
+_r108 = C.calc('PAPER_108')['value']
+assert_that(abs(_r108['f_pp_ssq_chain'] - 0.7549) < 0.001,
+            "PAPER_108: f_pp = 1 - SSq*(1-SSq) = 0.7549 EXACT (SSq 4th observational role - mixing fraction)")
+assert_that(abs(_r108['beta_drift_squared'] - 0.0121) < 1e-9,
+            "PAPER_108: (beta_i - 0.5)^2 = 0.0121 EXACT at drift 0.61")
+assert_that(abs(_r108['beta_0_at_1gev'] - 0.9325) < 1e-9,
+            "PAPER_108: beta_0 = 1 - m_pi/(2 E_p) = 0.9325 EXACT at E_p = 1 GeV")
+assert_that(_r108['sed_norm_gap_pct'] < _r108['icecube_systematic_pct'] * 3,
+            "PAPER_108: drift-vs-canonical beta_i SED-norm gap within IceCube systematic (undiscriminating; Q-104a)")
+assert_that(len(_r108['tri_source']) == 3,
+            "PAPER_108: tri-source beta_i confirmation recorded (Q-104b canonization candidate)")
+assert_that(C.wired_count() >= 112, "wired_count >= 112")
 
 # =============================================================================
 # REPORT

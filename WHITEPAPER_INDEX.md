@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 111 (11 ✓, 100 ⚠ OPEN_RULING)
+- **Wired:** 112 (11 ✓, 101 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2144
+- **Not yet touched:** 2143
 
 ---
 
@@ -237,7 +237,7 @@
 | ⬜ | PAPER_1087 | ERRATUM |
 | ⬜ | PAPER_1088 | FUBii SevenComponent Decomposition |
 | ⬜ | PAPER_1089 | Inflation Buoyancy Lagrangian |
-| ⬜ | PAPER_108 | EP10 IceCube Neutrino SED Proof |
+| ⚠ | PAPER_108 | EP10 IceCube Neutrino SED Proof |
 | ⬜ | PAPER_1090 | DarkEnergy Buoyancy Lagrangian |
 | ⬜ | PAPER_1091 | Production Scaling V23 |
 | ⬜ | PAPER_1092 | SCm CMB Phonon Power Spectrum |

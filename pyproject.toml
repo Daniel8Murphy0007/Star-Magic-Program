@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.110.0"
-description = "UQFF Star-Magic-Program v0.110.0: PAPER_107 wired - EP-12 anchor + Domain 1.15 opens (empirical proof compendium): 060 identity chain reappears EXACT; UQFF T_c shift 5.272 MeV EXACT; level-8 suppression 1.028 EXACT; MAJOR - Ikeda 10-alpha (Ca-40) N_B = SSq EXACTLY plus 9-alpha ~ beta_i, second observational anchor for SSq alongside 094 spin-down origin). Q-103 queued. Wired 111/2255, gate 760/0. Registry 294 rows / 609 edges / 111 ledgers."
+version = "0.111.0"
+description = "UQFF Star-Magic-Program v0.111.0: PAPER_108 wired - EP-10 IceCube sub-PeV beta_i tri-source confirmation (drift 0.61 vs canonical BETA_I 14 pct gap within IceCube systematic - undiscriminating); F_pp = 1 - SSq*(1-SSq) = 0.7549 EXACT gives SSq its 4th observational role as mixing/branching fraction; TRZ +1 pct in systematic; tri-source canonization queued). Q-104 queued. Wired 112/2255, gate 766/0. Registry 296 rows / 614 edges / 112 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

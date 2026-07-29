@@ -609,3 +609,8 @@ primitive,SSQ,observable,ep12_ssq_calibration,T_c shift
 observable,ep12_ssq_calibration,paper,PAPER_060,identity reappearance
 observable,ikeda_ssq_boundary,paper,PAPER_107,Ikeda coincidence
 primitive,SSQ,observable,ikeda_ssq_boundary,10-alpha boundary
+observable,ep10_beta_i_neutrino_sed,paper,PAPER_108,EP-10 confirmation
+primitive,BETA_I,observable,ep10_beta_i_neutrino_sed,canonical vs drift
+observable,ep10_beta_i_neutrino_sed,paper,PAPER_063,MCMC 2nd source
+observable,ssq_mixing_fraction_role,paper,PAPER_108,4th role
+primitive,SSQ,observable,ssq_mixing_fraction_role,mixing fraction
