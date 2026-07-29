@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.44.0"
-description = "UQFF Star-Magic-Program v0.44.0: PAPER_041 wired (ICM synthesis: UQFF THERMOSTAT EQUATION P*V*(rho_r)*(v/c) = 3*sigma^3*r_h/G resolves cooling-flow problem in pure observables; entropy floor 2.1e-41 verified; sfe eps^1.5 runaway 31.6x explains BCG SFR; WHIM T^3/2 peak at 3e6 K = OVII/OVIII sweet spot). Q-039 queued (whim n_b 1e12 buried factor, systematic w/ 040). Wired 45/2255, gate 328/0. Registry 133 rows / 257 edges / 45 ledgers."
+version = "0.45.0"
+description = "UQFF Star-Magic-Program v0.45.0: PAPER_042 wired (first 26D paper: compressed gravity as 26 = D_CRIT layers spanning 61 orders; LENR 1.25 THz anchor = predecessor omega_SCm spine EXACT - corpus continuity; MC ensemble cross-validates Perseus virx at 4.2 pct spread; 22/24 honest). Q-040 queued (amplification three-way; F_rel mojibake; CG divisor 1e6). Wired 46/2255, gate 334/0. Registry 136 rows / 264 edges / 46 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -629,6 +629,25 @@ RESOLVED section with the ruling recorded.
   sweet-spot prediction preserved as the falsifiable.
 - **Daniel's ruling:** (pending)
 
+### Q-040 — PAPER_042 — layer amplification three-way + F_rel mojibake + CG divisor
+- **Question:** (a) The layer amplification is stated as "a factor of
+  10" in the header AND "Ug1_{i+1}/Ug1_i = 10^12" in the formula,
+  while the 61-order Planck->Hubble span over 25 steps implies 2.44
+  orders/layer - three-way conflict on the framework's central scale
+  ladder. Which is canonical? (b) F_rel is printed "4.30e? N (LEP
+  1998)" with the exponent mojibaked, the in-text derivation abandoned
+  mid-chain (7th consecutive Session-0 self-correction: first chain
+  gives 5.25e7 N, then pivots to a Planck-force ansatz that does not
+  numerically close), and it differs from the FUBii family F_rel =
+  1e-10 N. What is this validator's F_rel and its relation to the
+  family constant? (c) The 300 Hz Colman-Gillespie divisor is printed
+  4167 but 1.25e12/300 = 4.167e9 (1e6 slip).
+- **Best-candidate wired:** 26 = D_CRIT composed; the 1.25-THz LENR
+  anchor wired EXACTLY onto the predecessor omega_SCm spine (corpus
+  continuity gate-pinned); MC Perseus cross-validation pinned; all
+  three conflicts exposed with true values alongside.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

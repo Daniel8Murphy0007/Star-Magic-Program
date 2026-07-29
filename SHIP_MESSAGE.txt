@@ -1,25 +1,28 @@
-v0.44.0 BAND 1: PAPER_041 wired
+v0.45.0 BAND 1: PAPER_042 wired - 26D FRAMEWORK OPENS
 
-PAPER_041 ICM Thermodynamics Through the UQFF Lens (OPEN_RULING Q-039):
-  Synthesis: five FUBii variants (whim/lobe/upar/sfe/ent) unify five
-  ICM problems under F_UBii = F_U - F_Bi - F_i.
-  HEADLINE - UQFF THERMOSTAT EQUATION (from F_lobe = F_virx):
-    P*V*(rho_ICM/rho_lobe)*(v_rise/c) = 3*sigma_X^3*r_h/G
-  The AGN feedback loop in PURE OBSERVABLES - cooling-flow problem
-  resolved without fine-tuning. v_rise ~ 300 km/s (Fabian-consistent);
-  t_heat ~ 1e8 yr (3C84 duty-cycle consistent).
-  VERIFIED: entropy floor S_min = P*V*l_P^2/(k_B*A) = 2.1e-41
-  (K_floor factor 2-3 observed); sfe eps^1.5 runaway = 31.6x per
-  decade (BCG SFR 100x below cooling; Schmidt index 1.4 ~ 3/2
-  Bekenstein-area echo).
-  FALSIFIABLE: WHIM T^(3/2) force peaks at T ~ 3e6 K = exactly the
-  OVII/OVIII absorption sweet spot.
+PAPER_042 Monte Carlo 26-Layer Compressed Gravity (OPEN_RULING Q-040):
+  FIRST 26D-FRAMEWORK PAPER: gravity = superposition of 26 = D_CRIT
+  layers (registry-composed), g = sum_26(Ug1+Ug2+Ug3+Ug4)_i,
+  spanning 61 orders Planck -> Hubble (SN1006 layer 19, SgrA*
+  layer 22 with r_s = 1.27e10 m verified).
+  Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i - registry primitives
+  in the layer formula directly.
+  CORPUS CONTINUITY: LENR resonance E = h*1.25 THz = 8.28e-22 J =
+  5.17 meV - EXACTLY the predecessor omega_SCm phonon carrier
+  (Holmlid-chain E_phonon). The THz spine surfaces at paper 42.
+  LENR as F_UBii stationary point (dF/df = 0) - family pattern with
+  PAPER_038's CR knee.
+  MC ensemble (N = 1000, 3 pct noise): Perseus mean -2.024e60 N at
+  4.2 pct spread - CROSS-VALIDATES PAPER_036/040.
+  Validator 22/24 honestly disclosed (2 boundary, not physics).
 
-Q-039 queued: whim n_b stated 1e-6 cm^-3 (1 m^-3) but USED 1e-12
-m^-3 - the same buried 1e12 factor as PAPER_040's whim example
-(SYSTEMATIC - one ruling covers both papers); V_fil 10x; jet-power
-table exponent mojibake.
+Q-040 queued: layer amplification stated both 10 and 1e12 vs implied
+2.44 orders/layer (three-way conflict on the central scale ladder);
+F_rel "4.30e? N (LEP 1998)" exponent mojibake + abandoned derivation
+(7th consecutive in-text self-correction) + differs from family
+F_rel = 1e-10; 300 Hz Colman-Gillespie divisor printed 4167 vs true
+4.167e9.
 
-Gate 328 assertions 0 failures. Registry 133 rows / 257 edges / 45
-citation ledgers. Wired 45/2,255 (8 clean, 37 OPEN_RULING).
-Next: PAPER_042.
+Gate 334 assertions 0 failures. Registry 136 rows / 264 edges / 46
+citation ledgers. Wired 46/2,255 (8 clean, 38 OPEN_RULING).
+Next: PAPER_043.

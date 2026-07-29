@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.45.0] — 2026-07-29 — BAND 1: PAPER_042 — 26D FRAMEWORK OPENS
+
+### Added
+- **PAPER_042 dispatch** (Monte Carlo 26-Layer Compressed Gravity):
+  first 26D-framework paper — gravity as superposition of 26 = D_CRIT
+  layers (registry-composed) spanning 61 orders Planck -> Hubble;
+  Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i uses registry primitives
+  directly. CORPUS CONTINUITY ANCHOR: the LENR resonance E = h*1.25
+  THz = 8.28e-22 J = 5.17 meV is EXACTLY the predecessor omega_SCm
+  phonon carrier — the THz spine surfaces at paper 42 of the fresh
+  corpus (gate-pinned). MC ensemble (N = 1000) cross-validates the
+  Perseus virx value at 4.2% spread; validator honestly discloses
+  22/24. OPEN_RULING Q-040 (layer amplification 10-vs-1e12-vs-2.44
+  three-way; F_rel "4.30e?" mojibake + 7th consecutive in-text
+  self-correction; 300 Hz divisor 1e6 slip).
+- Gate: 334 assertions, 0 failures. Registry: 136 rows / 264 edges / 46 ledgers.
+
+---
+
 ## [0.44.0] — 2026-07-29 — BAND 1: PAPER_041
 
 ### Added

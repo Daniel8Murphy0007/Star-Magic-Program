@@ -256,3 +256,11 @@ observable,uqff_thermostat_equation,paper,PAPER_039,lobe side of balance
 observable,icm_entropy_floor_sfe_runaway,paper,PAPER_041,primary derivation
 observable,whim_detection_prediction,paper,PAPER_041,primary derivation
 observable,whim_detection_prediction,paper,PAPER_040,n_b buried-factor systematic
+primitive,D_CRIT,observable,compressed_gravity_26_layers,26 layers = D_crit
+primitive,RHO_UA,observable,compressed_gravity_26_layers,Ug1_i vacuum density factor
+primitive,F_TRZ,observable,compressed_gravity_26_layers,f_TRZ_i layer factor
+primitive,OMEGA_SCM_HZ,observable,lenr_thz_spine_anchor,1.25 THz carrier
+observable,compressed_gravity_26_layers,paper,PAPER_042,primary derivation
+observable,lenr_thz_spine_anchor,paper,PAPER_042,primary derivation
+observable,monte_carlo_virx_crossval,paper,PAPER_042,primary derivation
+observable,monte_carlo_virx_crossval,paper,PAPER_036,virx cross-validation

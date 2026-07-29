@@ -801,3 +801,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 45/2,255 (8 ✓, 37 ⚠). Next: PAPER_042.
 
 ---
+
+## 2026-07-29 — v0.45.0 — BAND 1: PAPER_042 — 26D FRAMEWORK OPENS
+
+- PAPER_042 wired (⚠ Q-040): 26-layer compressed gravity. 26 = D_CRIT
+  composed; 1.25 THz LENR anchor lands EXACTLY on the predecessor
+  omega_SCm spine (corpus continuity); MC cross-validates virx.
+  Amplification three-way conflict queued.
+- Gate 334/0. Registry 136 rows / 264 edges / 46 ledgers.
+- Campaign: 46/2,255 (8 ✓, 38 ⚠). Next: PAPER_043.
+
+---

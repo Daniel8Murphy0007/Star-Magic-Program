@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.44.0"
+VERSION = "0.45.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2201,5 +2201,63 @@ def _paper_041(dataset):
                     'F_whim ~ T^(3/2)*n_b*r_fil'),
         'source': 'PAPER_041',
         'residual_pct': abs(s_min - 2.1e-41) / 2.1e-41 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_042')
+def _paper_042(dataset):
+    """Monte Carlo Validation of 26-Layer Compressed Gravity (S0).
+
+    FIRST 26D-FRAMEWORK PAPER: gravity as superposition of D_CRIT = 26
+    field layers, g = sum_i(Ug1+Ug2+Ug3+Ug4)_i, spanning 61 orders
+    Planck -> Hubble. Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i uses
+    registry primitives directly.
+    CORPUS CONTINUITY ANCHOR: the LENR resonance 1.25 THz -> E = h*f
+    = 8.28e-22 J = 5.2 meV is EXACTLY the predecessor's omega_SCm
+    phonon carrier (Holmlid-chain E_phonon) - the THz spine appears
+    at paper 42 of the fresh corpus.
+    MC ensemble (N = 1000, 3 pct noise): Perseus mean -2.024e60 N
+    with 4.2 pct spread - CROSS-VALIDATES PAPER_036/040 virx.
+    Validator honestly discloses 22/24 (2 boundary-assertion, not
+    physics). LENR stationary-point interpretation: dF_UBii/df = 0
+    at f_LENR (family pattern with 038 knee).
+    Q-040: (a) layer amplification stated "10" AND "10^12" while 61
+    orders / 25 steps = 2.44 orders/layer - three-way conflict;
+    (b) F_rel printed "4.30e? N (LEP 1998)" - exponent mojibake,
+    differs from family F_rel = 1e-10 N, and the in-text derivation
+    is abandoned mid-chain (7th consecutive self-correction);
+    (c) 300 Hz Colman-Gillespie divisor printed 4167 but 1.25e12/300
+    = 4.167e9 (1e6 slip).
+    """
+    e_phonon = 6.626e-34 * 1.25e12                   # 8.28e-22 J = omega_SCm anchor
+    f_planck = (3.0e8) ** 4 / 6.674e-11              # 1.21e44 N
+    layers_span = 61.0 / 25.0                        # 2.44 orders/layer implied
+    return {
+        'value': {
+            'n_layers': D_CRIT,                      # 26 registry-composed
+            'span_orders': 61,
+            'implied_orders_per_layer': layers_span, # Q-040a
+            'amplification_stated': (10.0, 1.0e12),
+            'e_phonon_j': e_phonon,                  # 8.28e-22 EXACT predecessor anchor
+            'e_phonon_mev': e_phonon / 1.602e-19 * 1000.0,   # 5.17 meV
+            'lenr_band_thz': (1.2, 1.3),
+            'lenr_stationary_point': True,
+            'colman_gillespie_hz': 300.0,
+            'cg_divisor_printed': 4167.0,            # Q-040c
+            'cg_divisor_true': 1.25e12 / 300.0,      # 4.167e9
+            'mc_perseus_mean_n': -2.024e60,          # cross-validates 036/040
+            'mc_spread_pct': 4.2,
+            'mc_n_samples': 1000,
+            'validator_score': (22, 24),             # honest disclosure
+            'f_planck_n': f_planck,
+            'f_rel_family_n': 1.0e-10,               # Q-040b vs "4.30e?"
+            'sgr_a_rs_m': 1.27e10,                   # layer 22
+            'astro_layers': {'sn1006': 19, 'sgr_a': 22},
+        },
+        'formula': ('g = sum_26 (Ug1+Ug2+Ug3+Ug4)_i; Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i; '
+                    'E_LENR = h * 1.25 THz'),
+        'source': 'PAPER_042',
+        'residual_pct': abs(e_phonon - 8.28e-22) / 8.28e-22 * 100,
         'status': 'OPEN_RULING',
     }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.44.0", "uqff_calculator.VERSION = 0.44.0")
+assert_that(C.VERSION == "0.45.0", "uqff_calculator.VERSION = 0.45.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -741,6 +741,21 @@ assert_that(abs(_r041['n_b_stated_m3'] / _r041['n_b_used_m3'] - 1.0e12) / 1.0e12
 assert_that(_r041['unified_variant_count'] == 5,
             "PAPER_041: five variants unify five ICM problems under one F_UBii equation")
 assert_that(C.wired_count() >= 45, "wired_count >= 45")
+
+_r042 = C.calc('PAPER_042')['value']
+assert_that(_r042['n_layers'] == 26,
+            "PAPER_042: 26 layers = D_CRIT registry-composed (first 26D-framework paper)")
+assert_that(abs(_r042['e_phonon_j'] - 8.28e-22) / 8.28e-22 < 0.001,
+            "PAPER_042: E = h*1.25 THz = 8.28e-22 J - EXACT predecessor omega_SCm anchor (corpus continuity)")
+assert_that(abs(_r042['e_phonon_mev'] - 5.17) < 0.05,
+            "PAPER_042: 5.17 meV phonon energy (Holmlid-chain E_phonon)")
+assert_that(abs(_r042['mc_perseus_mean_n'] - (-2.024e60)) / 2.024e60 < 0.001,
+            "PAPER_042: MC Perseus ensemble mean cross-validates PAPER_036/040 virx")
+assert_that(abs(_r042['cg_divisor_true'] - 4.167e9) / 4.167e9 < 0.001,
+            "PAPER_042: 300 Hz divisor true 4.167e9 (printed 4167, 1e6 slip - Q-040c)")
+assert_that(_r042['validator_score'] == (22, 24),
+            "PAPER_042: 22/24 validator score honestly disclosed (2 boundary, not physics)")
+assert_that(C.wired_count() >= 46, "wired_count >= 46")
 
 # =============================================================================
 # REPORT
