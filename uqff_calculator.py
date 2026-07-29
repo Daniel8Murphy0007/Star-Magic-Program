@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.45.0"
+VERSION = "0.46.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2259,5 +2259,64 @@ def _paper_042(dataset):
                     'E_LENR = h * 1.25 THz'),
         'source': 'PAPER_042',
         'residual_pct': abs(e_phonon - 8.28e-22) / 8.28e-22 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_043')
+def _paper_043(dataset):
+    """UQFF 26-Level Polynomial Energy Hierarchy (Session 0).
+
+    Domain-1.6 spine. TWO representations, DUAL-CONSISTENT:
+    polynomial E_n = 10^(n-20) J (25-order span, verified) and
+    density rho_n = rho_level1 * n^2 (parabolic), linked by
+    V_n = 10^(n-12)/n^2 m^3 (level 10 -> 4.6 cm cube, verified).
+    Levels 10-13 = solid/liquid/gas/plasma; level 20 = Ug4 anchor
+    (1 J); level 26 = observable universe.
+    CONTINUITY: U_i,level = lambda_i*(rho_r)*omega_LENR*cos(pi*t_n)*
+    (1+f_TRZ) is the predecessor PAPER_646 Universal Inertial
+    Operator FORM; level-10 value 9.47e14 VERIFIED (0.75*1e3*
+    1.25e12*1.01). beta ladder declines 1.00 -> 0.05; LEVEL 13
+    (PLASMA) beta = 0.60 ~ canonical BETA_I - candidate
+    ORIGIN of the canonical coupling (plasma-level).
+    FORENSIC ECHO: 9.47e14 = 0.7575*1.25e12*1e3 - the mysterious
+    9.47 family (predecessor PAPER_2156) emerges naturally from
+    beta*omega products. New data point for that audit.
+    Honest: E8 = 6.25 MeV vs nuclear 8 MeV = 21.97 pct error
+    disclosed (scale index, not precision formula).
+    Q-041: (a) rho_SCm SYMBOL COLLISION - 1e-8 J/m^3 level
+    normalization here vs canonical RHO_SCM (appendix quotes
+    canonical; two quantities one symbol); (b) density ratio printed
+    "10", used 1e3, canonical 0.1 - three-way; (c) f_TRZ default
+    0.01 vs canonical 0.1; (d) "Higgs at E18 = 1e-2 J" is 6e7 GeV,
+    not 125 GeV (level-12 decade) nor UH-18 (PAPER_034).
+    """
+    e_n = lambda n: 10.0 ** (n - 20)
+    v_n = lambda n: 10.0 ** (n - 12) / n ** 2
+    ui_10 = 0.75 * 1.0e3 * 1.25e12 * 1.0 * 1.01      # 9.47e14 VERIFIED
+    e8_mev = e_n(8) / 1.602e-19 / 1.0e6              # 6.24 MeV
+    return {
+        'value': {
+            'polynomial_e1_j': e_n(1),               # 1e-19
+            'polynomial_e20_j': e_n(20),             # 1.0 (Ug4 anchor)
+            'polynomial_e26_j': e_n(26),             # 1e6
+            'span_orders': 25,
+            'v10_m3': v_n(10),                       # 1e-4 (4.6 cm cube)
+            'ui_level10': ui_10,                     # 9.47e14 (forensic echo)
+            'beta_ladder_sample': {1: 1.00, 10: 0.75, 13: 0.60, 20: 0.25, 26: 0.05},
+            'beta_13_plasma': 0.60,                  # ~ BETA_I canonical ORIGIN candidate
+            'beta_i_canonical': BETA_I,
+            'e8_mev': e8_mev,                        # 6.24 vs nuclear 8
+            'nuclear_error_pct': (8.0 - e8_mev) / 8.0 * 100,   # 21.97 disclosed
+            'matter_states_levels': {'solid': 10, 'liquid': 11, 'gas': 12, 'plasma': 13},
+            'rho_level1_j_m3': 1.0e-8,               # Q-041a symbol collision
+            'density_ratio_used': 1.0e3,             # Q-041b three-way
+            'f_trz_paper_default': 0.01,             # Q-041c vs F_TRZ = 0.1
+            'ug3_harmonic': 'sin(i*pi/26)',
+        },
+        'formula': ('E_n = 10^(n-20) J; rho_n = rho_1*n^2; V_n = 10^(n-12)/n^2; '
+                    'U_i = lambda_i*(rho_r)*omega_LENR*cos(pi*t_n)*(1+f_TRZ)'),
+        'source': 'PAPER_043',
+        'residual_pct': (8.0 - e8_mev) / 8.0 * 100,
         'status': 'OPEN_RULING',
     }

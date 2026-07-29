@@ -1,28 +1,31 @@
-v0.45.0 BAND 1: PAPER_042 wired - 26D FRAMEWORK OPENS
+v0.46.0 BAND 1: PAPER_043 wired
 
-PAPER_042 Monte Carlo 26-Layer Compressed Gravity (OPEN_RULING Q-040):
-  FIRST 26D-FRAMEWORK PAPER: gravity = superposition of 26 = D_CRIT
-  layers (registry-composed), g = sum_26(Ug1+Ug2+Ug3+Ug4)_i,
-  spanning 61 orders Planck -> Hubble (SN1006 layer 19, SgrA*
-  layer 22 with r_s = 1.27e10 m verified).
-  Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i - registry primitives
-  in the layer formula directly.
-  CORPUS CONTINUITY: LENR resonance E = h*1.25 THz = 8.28e-22 J =
-  5.17 meV - EXACTLY the predecessor omega_SCm phonon carrier
-  (Holmlid-chain E_phonon). The THz spine surfaces at paper 42.
-  LENR as F_UBii stationary point (dF/df = 0) - family pattern with
-  PAPER_038's CR knee.
-  MC ensemble (N = 1000, 3 pct noise): Perseus mean -2.024e60 N at
-  4.2 pct spread - CROSS-VALIDATES PAPER_036/040.
-  Validator 22/24 honestly disclosed (2 boundary, not physics).
+PAPER_043 UQFF 26-Level Polynomial Energy Hierarchy (OPEN_RULING
+Q-041) - the Domain-1.6 spine:
+  TWO REPRESENTATIONS, DUAL-CONSISTENT (both verified):
+    polynomial E_n = 10^(n-20) J - 25 orders, E1 quark 1e-19 J ->
+    E20 = 1 J Ug4 anchor -> E26 universe 1e6 J
+    density rho_n = rho_L1 * n^2 (parabolic local field)
+    linked via V_n = 10^(n-12)/n^2 (level-10 = 4.6 cm cube checks)
+  Levels 10-13 = SOLID/LIQUID/GAS/PLASMA matter states
+  U_i level form = predecessor PAPER_646 Universal Inertial Operator
+  (level-10 chain = 9.47e14 VERIFIED)
+  ORIGIN CANDIDATE: level-13 PLASMA beta = 0.60 ~ canonical BETA_I -
+  is the canonical buoyancy coupling THE plasma-level value of the
+  26-ladder?
+  FORENSIC: the "9.47" number family (predecessor PAPER_2156 open
+  audit) emerges here naturally from beta*omega products - new
+  data point recorded.
+  Honest: E8 = 6.24 MeV vs 8 MeV nuclear binding = 21.97 pct
+  disclosed (energy-scale index, not precision formula).
 
-Q-040 queued: layer amplification stated both 10 and 1e12 vs implied
-2.44 orders/layer (three-way conflict on the central scale ladder);
-F_rel "4.30e? N (LEP 1998)" exponent mojibake + abandoned derivation
-(7th consecutive in-text self-correction) + differs from family
-F_rel = 1e-10; 300 Hz Colman-Gillespie divisor printed 4167 vs true
-4.167e9.
+Q-041 queued: rho_SCm SYMBOL COLLISION (1e-8 level normalization vs
+canonical, both in same paper); density ratio printed 10 / used 1e3
+/ canonical 0.1 three-way; f_TRZ 0.01-vs-0.1; E18-Higgs decade
+mismatch (6e7 GeV, not 125 GeV nor UH-18).
 
-Gate 334 assertions 0 failures. Registry 136 rows / 264 edges / 46
-citation ledgers. Wired 46/2,255 (8 clean, 38 OPEN_RULING).
-Next: PAPER_043.
+Block-8 guard caught a docstring literal (3rd catch - it works).
+
+Gate 341 assertions 0 failures. Registry 139 rows / 272 edges / 47
+citation ledgers. Wired 47/2,255 (8 clean, 39 OPEN_RULING).
+Next: PAPER_044.

@@ -812,3 +812,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 46/2,255 (8 ✓, 38 ⚠). Next: PAPER_043.
 
 ---
+
+## 2026-07-29 — v0.46.0 — BAND 1: PAPER_043
+
+- PAPER_043 wired (⚠ Q-041): 26-level hierarchy spine. Dual
+  representations verified; PAPER_646 operator form continuity;
+  BETA_I-as-plasma-level origin candidate flagged; 9.47 forensic
+  echo recorded. Block-8 caught a docstring literal (3rd time).
+- Gate 341/0. Registry 139 rows / 272 edges / 47 ledgers.
+- Campaign: 47/2,255 (8 ✓, 39 ⚠). Next: PAPER_044.
+
+---

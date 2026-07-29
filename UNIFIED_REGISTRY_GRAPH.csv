@@ -264,3 +264,11 @@ observable,compressed_gravity_26_layers,paper,PAPER_042,primary derivation
 observable,lenr_thz_spine_anchor,paper,PAPER_042,primary derivation
 observable,monte_carlo_virx_crossval,paper,PAPER_042,primary derivation
 observable,monte_carlo_virx_crossval,paper,PAPER_036,virx cross-validation
+primitive,D_CRIT,observable,energy_hierarchy_26_level,26 levels
+primitive,BETA_I,observable,beta_ladder_plasma_origin,canonical = L13 plasma candidate
+primitive,OMEGA_SCM_HZ,observable,universal_inertia_level_form,omega_LENR = 1.25 THz
+primitive,F_TRZ,observable,universal_inertia_level_form,(1+f_TRZ) factor (paper default 0.01)
+observable,energy_hierarchy_26_level,paper,PAPER_043,primary derivation
+observable,energy_hierarchy_26_level,paper,PAPER_042,26-layer gravity foundation
+observable,universal_inertia_level_form,paper,PAPER_043,primary derivation
+observable,beta_ladder_plasma_origin,paper,PAPER_043,primary derivation

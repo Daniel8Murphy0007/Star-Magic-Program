@@ -648,6 +648,28 @@ RESOLVED section with the ruling recorded.
   three conflicts exposed with true values alongside.
 - **Daniel's ruling:** (pending)
 
+### Q-041 — PAPER_043 — rho symbol collision + ratio three-way + beta-13 origin + 9.47 echo
+- **Question:** (a) This paper defines rho_SCm = 1e-8 J/m^3 as the
+  LEVEL-1 density normalization of the 26-ladder, while its own
+  appendix quotes the canonical rho_SCm = 7.09e-37 J/m^3 - two
+  quantities sharing one symbol. Rename the level normalization
+  (e.g. rho_L1) in the registry? (b) The density ratio rho_SCm/rho_UA
+  is printed "10", USED as 1e3 (level-10 chain verifies with 1e3),
+  and the canonical ratio is 0.1 - three-way. (c) f_TRZ default 0.01
+  here vs canonical F_TRZ = 0.1. (d) "Higgs at E18 = 1e-2 J" is
+  6e7 GeV - neither 125 GeV (which lands in the level-12 decade) nor
+  PAPER_034's UH-18 (40.5 TeV): which Higgs-level assignment is
+  canonical? (e) NOTEWORTHY - LEVEL 13 (PLASMA) beta = 0.60 ~
+  canonical BETA_I = 0.6029: is the canonical buoyancy coupling THE
+  plasma-level value of the 26-ladder (origin hypothesis)?
+  (f) FORENSIC: U_i level-10 = 9.47e14 emerges from 0.7575*1.25e12*
+  1e3 - the "9.47" number family (predecessor PAPER_2156 audit) can
+  arise naturally from beta*omega products; new data point recorded.
+- **Best-candidate wired:** both representations + dual-consistency
+  verified; level-10 U_i chain verified; beta-13 origin candidate and
+  9.47 echo gate-pinned; all collisions exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

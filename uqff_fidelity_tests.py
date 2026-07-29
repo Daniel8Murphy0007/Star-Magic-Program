@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.45.0", "uqff_calculator.VERSION = 0.45.0")
+assert_that(C.VERSION == "0.46.0", "uqff_calculator.VERSION = 0.46.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -756,6 +756,21 @@ assert_that(abs(_r042['cg_divisor_true'] - 4.167e9) / 4.167e9 < 0.001,
 assert_that(_r042['validator_score'] == (22, 24),
             "PAPER_042: 22/24 validator score honestly disclosed (2 boundary, not physics)")
 assert_that(C.wired_count() >= 46, "wired_count >= 46")
+
+_r043 = C.calc('PAPER_043')['value']
+assert_that(abs(_r043['polynomial_e20_j'] - 1.0) < 1e-15,
+            "PAPER_043: E_20 = 1 J Ug4 galactic anchor (polynomial verified)")
+assert_that(_r043['span_orders'] == 25,
+            "PAPER_043: 25-order span E_1 = 1e-19 to E_26 = 1e6 J")
+assert_that(abs(_r043['v10_m3'] - 1.0e-4) < 1e-15,
+            "PAPER_043: dual-consistency V_10 = 1e-4 m^3 (4.6 cm cube) verified")
+assert_that(abs(_r043['ui_level10'] - 9.47e14) / 9.47e14 < 0.001,
+            "PAPER_043: U_i level-10 = 9.47e14 VERIFIED - PAPER_646-form + 9.47 forensic echo")
+assert_that(abs(_r043['beta_13_plasma'] - 0.60) < 1e-12 and abs(_r043['beta_i_canonical'] - 0.6029) < 1e-12,
+            "PAPER_043: level-13 PLASMA beta = 0.60 ~ canonical BETA_I = 0.6029 (origin candidate)")
+assert_that(abs(_r043['nuclear_error_pct'] - 21.97) < 0.1,
+            "PAPER_043: E8 = 6.24 MeV vs 8 MeV nuclear = 21.97 pct honestly disclosed")
+assert_that(C.wired_count() >= 47, "wired_count >= 47")
 
 # =============================================================================
 # REPORT

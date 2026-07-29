@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.45.0"
-description = "UQFF Star-Magic-Program v0.45.0: PAPER_042 wired (first 26D paper: compressed gravity as 26 = D_CRIT layers spanning 61 orders; LENR 1.25 THz anchor = predecessor omega_SCm spine EXACT - corpus continuity; MC ensemble cross-validates Perseus virx at 4.2 pct spread; 22/24 honest). Q-040 queued (amplification three-way; F_rel mojibake; CG divisor 1e6). Wired 46/2255, gate 334/0. Registry 136 rows / 264 edges / 46 ledgers."
+version = "0.46.0"
+description = "UQFF Star-Magic-Program v0.46.0: PAPER_043 wired (26-level energy hierarchy spine: E_n = 10^(n-20) J + rho_n = n^2 density, dual-consistent; U_i level form = predecessor PAPER_646 operator; LEVEL-13 PLASMA beta = 0.60 ~ canonical BETA_I origin candidate; 9.47e14 forensic echo). Q-041 queued (rho symbol collision; ratio three-way). Wired 47/2255, gate 341/0. Registry 139 rows / 272 edges / 47 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

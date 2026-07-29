@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.46.0] — 2026-07-29 — BAND 1: PAPER_043
+
+### Added
+- **PAPER_043 dispatch** (26-Level Polynomial Energy Hierarchy —
+  Domain-1.6 spine): E_n = 10^(n-20) J polynomial (25-order span) +
+  rho_n = n^2 density representation, DUAL-CONSISTENT via V_n =
+  10^(n-12)/n^2 (level-10 4.6-cm cube verified); levels 10-13 = the
+  four matter states; level 20 = Ug4 anchor. U_i level form is the
+  predecessor PAPER_646 Universal Inertial Operator (level-10 =
+  9.47e14 verified — and the mysterious 9.47 family gains a forensic
+  data point: it emerges from beta*omega products). ORIGIN CANDIDATE:
+  level-13 PLASMA beta = 0.60 ~ canonical BETA_I — the canonical
+  buoyancy coupling as the plasma-level value of the 26-ladder.
+  Honest: E8 = 6.24 MeV vs 8 MeV nuclear (21.97%) disclosed as scale
+  index. OPEN_RULING Q-041 (rho_SCm symbol collision; density-ratio
+  three-way 10/1e3/0.1; f_TRZ 0.01-vs-0.1; E18-Higgs decade mismatch).
+- Gate: 341 assertions, 0 failures. Registry: 139 rows / 272 edges / 47 ledgers.
+
+### Fixed
+- Block-8 guard caught a beta_i literal in a docstring again (3rd
+  catch); replaced with symbol name.
+
+---
+
 ## [0.45.0] — 2026-07-29 — BAND 1: PAPER_042 — 26D FRAMEWORK OPENS
 
 ### Added
