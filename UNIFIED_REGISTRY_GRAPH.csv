@@ -528,3 +528,8 @@ observable,muge_resonance_14mode,paper,PAPER_090,compressed companion
 observable,trz_pulsar_timing_fork,paper,PAPER_091,2nd observable fork
 primitive,F_TRZ,observable,trz_pulsar_timing_fork,canonical fork value
 observable,trz_pulsar_timing_fork,paper,PAPER_088,fork family
+observable,sgra_muge_decomposition,paper,PAPER_092,8-term decomposition
+observable,sgra_muge_decomposition,paper,PAPER_090,anchor family
+observable,coherence_information_anchor,paper,PAPER_092,coherence peak
+observable,coherence_information_anchor,paper,PAPER_084,info-storage support
+primitive,H0_GRID,observable,sgra_muge_decomposition,expansion factor in dup block

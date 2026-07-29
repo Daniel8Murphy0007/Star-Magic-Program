@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.94.0"
+VERSION = "0.95.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4801,5 +4801,56 @@ def _paper_091(dataset):
                     'aDPM = g*(1-v/c)/(1+v/c)'),
         'source': 'PAPER_091',
         'residual_pct': abs((1 - 2 * _m.sqrt(1 / 270.0)) ** 0.5 - 1 + 0.063) / 0.063 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_092')
+def _paper_092(dataset):
+    """SgrA* MUGE 8-Term Decomposition + Coherence Peak (Session 0).
+
+    UQFF HORIZON CHAIN EXACT (Q-088b): r_horizon = r_S * (1 +
+    [SCm]*0.07) = 1.19e10 * 1.0693 = 1.272e10 m - the +7 pct
+    superconductive horizon shift introduces a NEW 0.07 constant.
+    SUM CHAINS EXACT: 234.1 + 0.40 + 0.015 + 0.00061 = 234.52 =
+    printed 234.5; base fraction 234.1/234.5 = 99.82 pct EXACT;
+    DM row +15.3 pct at 8.5 kpc EXACT (2.79/2.42 - rotation-curve
+    flatness claim).
+    Q-086a SHARPENED (Q-088a): the g-ladder implies an EFFECTIVE
+    GM = 234.1*(1.27e10)^2 = 3.78e22 = 7.1e-5 of the physical GM
+    - the ladder is roughly 1/r^2-consistent internally (factor
+    ~1.7 residuals row-to-row) but the absolute normalization is
+    unexplained; normalization-convention ruling requested for
+    the whole 090/091/092 anchor family.
+    Coherence: Gaussian information anchor at horizon, sigma ~
+    l_P*(M/m_P)^(1/3), >1e6 horizon/far ratio asserted PASS -
+    SUPPORTS the PAPER_084 channel-25/26 information storage
+    (cross-link). base_gravity dominates 99.82 pct near-horizon.
+    TEXT CORRUPTION (Q-088c): section 3 contains duplicated
+    g_MUGE = g_N(1 - U_bi/F_U)(1 + H0 r/c) blocks (the 090 ratio
+    2.85e-4 reappears - cross-consistent) and garbled "Name"
+    tokens - source-file damage noted.
+    """
+    r_uqff = 1.19e10 * (1 + 0.99 * 0.07)
+    gm_eff = 234.1 * (1.27e10) ** 2
+    return {
+        'value': {
+            'domain': '1.12 (SgrA* calibration system)',
+            'r_horizon_uqff_m': r_uqff,                    # 1.272e10 EXACT
+            'horizon_shift_constant': 0.07,                # NEW constant Q-088b
+            'sum_terms': 234.1 + 0.40 + 0.015 + 0.00061,   # 234.52 EXACT
+            'base_fraction_pct': 234.1 / 234.5 * 100,      # 99.82 EXACT
+            'dm_853kpc_ratio': 2.79 / 2.42,                # 1.153 EXACT
+            'gm_effective': gm_eff,                        # 3.78e22
+            'gm_ratio_to_physical': gm_eff / (6.674e-11 * 8.0e36),  # 7.1e-5 Q-088a
+            'coherence_ratio_min': 1e6,                    # assert PASS
+            'coherence_role': 'information anchor - supports PAPER_084 channels 25-26',
+            'ubi_over_fu_reappears': 2.85e-4,              # 090 cross-consistent
+            'text_corruption': 'sec 3 duplicated blocks + Name tokens',
+        },
+        'formula': ('r_hor = r_S*(1 + [SCm]*0.07); g_total = sum(8 terms); '
+                    'g_coh = g0*exp(-(r-r_hor)^2/2 sigma^2)'),
+        'source': 'PAPER_092',
+        'residual_pct': abs(r_uqff - 1.27e10) / 1.27e10 * 100,
         'status': 'OPEN_RULING',
     }

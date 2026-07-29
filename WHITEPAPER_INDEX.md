@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 95 (10 ✓, 85 ⚠ OPEN_RULING)
+- **Wired:** 96 (10 ✓, 86 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2160
+- **Not yet touched:** 2159
 
 ---
 
@@ -125,7 +125,7 @@
 | ⚠ | PAPER_089 | UQFF Master Equation Derivation |
 | ⚠ | PAPER_090 | MUGE Compressed Gravity |
 | ⚠ | PAPER_091 | MUGE Resonance 14 Mode |
-| ⬜ | PAPER_092 | SgrA MUGE Comparison |
+| ⚠ | PAPER_092 | SgrA MUGE Comparison |
 | ⬜ | PAPER_093 | M87 Event Horizon UQFF |
 | ⬜ | PAPER_094 | Magnetar SGR1745 UQFF Calibration |
 | ⬜ | PAPER_095 | UQFF 99pt9 Solvability |

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.94.0"
-description = "UQFF Star-Magic-Program v0.94.0: PAPER_091 wired (MUGE resonance 14-mode: aDPM radius-label defect caught - -6.3 pct occurs at 270 R_S not 10, formula right; f_TRZ 4th drift instance with a SECOND observable fork - 1 vs 10 pct pulsar-timing joining the Q-084 neutrino fork; mode-count 14/13/13 pinned; valid linearization; wormhole Planck null). Q-087 queued. Wired 95/2255, gate 663/0. Registry 264 rows / 528 edges / 95 ledgers."
+version = "0.95.0"
+description = "UQFF Star-Magic-Program v0.95.0: PAPER_092 wired (SgrA* MUGE decomposition: UQFF horizon r_S*(1+[SCm]*0.07) = 1.272e10 EXACT with new 0.07 constant; sum/fraction/DM chains EXACT incl. +15.3 pct rotation-curve; effective-GM normalization 7.1e-5 sharpens Q-086a for the whole anchor family; coherence peak supports 084 info-anchor; sec-3 text corruption noted). Q-088 queued. Wired 96/2255, gate 670/0. Registry 266 rows / 533 edges / 96 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

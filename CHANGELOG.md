@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.95.0] — 2026-07-29 — BAND 1: PAPER_092
+
+### Added
+- **PAPER_092 dispatch** (SgrA* MUGE Decomposition): UQFF horizon
+  chain EXACT — r_hor = r_S*(1 + [SCm]*0.07) = 1.272e10 m,
+  introducing a NEW 0.07 horizon-shift constant. Sum chain 234.52
+  EXACT; base fraction 99.82 pct EXACT; DM +15.3 pct at 8.5 kpc
+  EXACT (rotation-curve flatness). Q-086a SHARPENED: the g-ladder
+  implies effective GM = 7.1e-5 of physical — one normalization
+  ruling covers the whole 090/091/092 anchor family. Coherence
+  Gaussian (>1e6 horizon/far) supports the PAPER_084
+  information-anchor reading; U_bi/F_U = 2.85e-4 reappears
+  (090-consistent). Section-3 source-file corruption noted
+  (duplicated blocks, Name tokens).
+- OPEN_RULING Q-088.
+- Gate: 670 assertions, 0 failures. Registry: 266 rows / 533 edges / 96 ledgers.
+
+---
+
 ## [0.94.0] — 2026-07-29 — BAND 1: PAPER_091
 
 ### Added

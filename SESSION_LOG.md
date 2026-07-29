@@ -1301,3 +1301,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 95/2,255 (10 ✓, 85 ⚠). Next: PAPER_092.
 
 ---
+
+## 2026-07-29 — v0.95.0 — BAND 1: PAPER_092
+
+- PAPER_092 wired (⚠ Q-088): SgrA* decomposition. Horizon
+  (1+[SCm]*0.07) EXACT (new 0.07 constant); sum/fraction/DM
+  chains EXACT; effective-GM 7.1e-5 sharpens Q-086a; coherence
+  supports 084; corruption noted.
+- Campaign: 96/2,255 (10 ✓, 86 ⚠). Next: PAPER_093.
+
+---

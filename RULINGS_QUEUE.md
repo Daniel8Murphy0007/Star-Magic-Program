@@ -1572,6 +1572,7 @@ RESOLVED section with the ruling recorded.
   (274.2 chain vs 274.3 printed) but SgrA* (234.3 printed vs
   3.54e6 at the stated horizon) and NS (1.62e12 vs 1.30e12) do
   not - what r_test/M inputs produce the printed values?
+  [SHARPENED by PAPER_092: effective GM = 7.1e-5 of physical - see Q-088a.]
   (b) Term count prints three ways: title "10-Term", abstract
   "9-term", table 9 rows (4 mult + 5 add) - pin. (c) PROVENANCE:
   section 1 states "gravity originates from F_U, not Newton; the
@@ -1608,6 +1609,27 @@ RESOLVED section with the ruling recorded.
   family-consistent with 090's anchors.
 - **Best-candidate wired:** decomposition + both fork branches +
   corrected radius label carried.
+- **Daniel's ruling:** (pending)
+
+### Q-088 — PAPER_092 — effective-GM normalization + 0.07 constant + text corruption
+- **Question:** (a) Q-086a SHARPENED: the SgrA* g-ladder implies
+  effective GM = 234.1*(1.27e10)^2 = 3.78e22 = 7.1e-5 of the
+  physical GM; the ladder is roughly 1/r^2-consistent internally
+  but its absolute normalization is unexplained - what units/
+  normalization convention do the 090/091/092 g-anchors use?
+  (One ruling covers the whole anchor family.) (b) The UQFF
+  horizon shift r_hor = r_S*(1 + [SCm]*0.07) closes EXACTLY
+  (1.272e10) - canonize the NEW 0.07 horizon-shift constant?
+  (c) Section 3 shows source-file damage (duplicated
+  g_MUGE = g_N(1-U_bi/F_U)(1+H0 r/c) blocks + garbled "Name"
+  tokens) - note for corpus repair. (d) Footer "F_U at horizon =
+  2.0e18 m/s2" unexplained.
+- **Notable:** sum chain 234.52 EXACT; base fraction 99.82 pct
+  EXACT; DM +15.3 pct at 8.5 kpc EXACT (rotation-curve match);
+  coherence >1e6 ratio supports the 084 information-anchor
+  reading; U_bi/F_U = 2.85e-4 cross-consistent with 090.
+- **Best-candidate wired:** exact chains + sharpened
+  normalization question + corruption note.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

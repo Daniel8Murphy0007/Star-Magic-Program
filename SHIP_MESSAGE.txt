@@ -1,25 +1,26 @@
-v0.94.0 BAND 1: PAPER_091 wired - 2ND f_TRZ OBSERVABLE FORK
+v0.95.0 BAND 1: PAPER_092 wired - HORIZON CHAIN EXACT + GM QUESTION SHARPENED
 
-PAPER_091 MUGE Resonance 14-Mode Framework (OPEN_RULING Q-087):
-  aDPM Doppler base g*(1-v/c)/(1+v/c) with RADIUS-LABEL DEFECT
-  caught: the printed "-6.3 pct at r = 10 R_S" contradicts the
-  paper's own formula (chain gives -39 pct at 10 R_S); -6.28 pct
-  occurs EXACTLY at r ~ 270 R_S. Formula right, label wrong.
+PAPER_092 SgrA* MUGE 8-Term Decomposition (OPEN_RULING Q-088):
+  UQFF HORIZON CHAIN EXACT: r_horizon = r_S * (1 + [SCm]*0.07)
+  = 1.19e10 * 1.0693 = 1.272e10 m - the +7 pct superconductive
+  horizon shift introduces a NEW 0.07 constant (canonize?).
 
-  MODE COUNT: title 14 / formula base+13 / table base+12 - one
-  mode missing from the table.
+  SUM CHAINS EXACT: 234.1 + 0.40 + 0.015 + 0.00061 = 234.52 =
+  printed 234.5; base fraction 99.82 pct EXACT; DM +15.3 pct at
+  8.5 kpc EXACT (2.79/2.42 - rotation-curve flatness claim).
 
-  f_TRZ DRIFT 4TH INSTANCE - SECOND OBSERVABLE FORK: the TRZ
-  mode (explicitly "the same f_TRZ that modifies Hawking
-  temperature - a universal UQFF factor") claims a 1 pct
-  pulsar-timing enhancement; canonical F_TRZ = 0.1 makes it 10
-  pct - STRONGLY testable. The Q-084a ruling now decides BOTH
-  the SgrA* neutrino excess and the pulsar-timing signal.
+  Q-086a SHARPENED: the g-ladder implies EFFECTIVE GM =
+  234.1*(1.27e10)^2 = 3.78e22 = 7.1e-5 of the physical GM -
+  internally ~1/r^2-consistent but absolutely unexplained; one
+  normalization ruling covers the whole 090/091/092 anchor
+  family.
 
-  5-freq product linearization VALID here (small a_k, contrast
-  084's invalid one); wormhole mode = clean Planck-regime null;
-  SgrA* resonance/compressed = 1.0175 cross-table consistency.
+  Coherence Gaussian information anchor at horizon (>1e6
+  horizon/far PASS) SUPPORTS the PAPER_084 channels-25/26
+  storage; U_bi/F_U = 2.85e-4 reappears (090-consistent).
+  Section-3 source corruption noted (duplicated blocks, "Name"
+  tokens) - corpus-repair item.
 
-Q-087 queued. Gate 663 assertions 0 failures. Registry 264 rows /
-528 edges / 95 citation ledgers. Wired 95/2,255 (10 clean, 85
-OPEN_RULING). Next: PAPER_092.
+Q-088 queued. Gate 670 assertions 0 failures. Registry 266 rows /
+533 edges / 96 citation ledgers. Wired 96/2,255 (10 clean, 86
+OPEN_RULING). Next: PAPER_093.

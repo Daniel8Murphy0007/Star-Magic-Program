@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.94.0", "uqff_calculator.VERSION = 0.94.0")
+assert_that(C.VERSION == "0.95.0", "uqff_calculator.VERSION = 0.95.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1461,6 +1461,21 @@ assert_that(abs(_r091['trz_mode_canonical'] - 0.1) < 1e-12,
 assert_that(abs(_r091['sgra_res_vs_comp'] - 1.0175) < 0.0001,
             "PAPER_091: SgrA* resonance/compressed = 1.0175 cross-table consistency")
 assert_that(C.wired_count() >= 95, "wired_count >= 95")
+
+_r092 = C.calc('PAPER_092')['value']
+assert_that(abs(_r092['r_horizon_uqff_m'] - 1.272e10) / 1.272e10 < 0.001,
+            "PAPER_092: UQFF horizon r_S*(1+[SCm]*0.07) = 1.272e10 m EXACT (new 0.07 constant)")
+assert_that(abs(_r092['sum_terms'] - 234.52) < 0.01,
+            "PAPER_092: 8-term sum 234.52 = printed 234.5 EXACT")
+assert_that(abs(_r092['base_fraction_pct'] - 99.82) < 0.01,
+            "PAPER_092: base-gravity fraction 99.82 pct EXACT")
+assert_that(abs(_r092['dm_853kpc_ratio'] - 1.153) < 0.001,
+            "PAPER_092: DM +15.3 pct at 8.5 kpc EXACT (rotation-curve claim)")
+assert_that(_r092['gm_ratio_to_physical'] < 1e-4,
+            "PAPER_092: effective-GM normalization 7.1e-5 of physical - Q-086a sharpened (Q-088a)")
+assert_that(abs(_r092['ubi_over_fu_reappears'] - 2.85e-4) < 1e-9,
+            "PAPER_092: U_bi/F_U = 2.85e-4 reappears - 090 cross-consistent")
+assert_that(C.wired_count() >= 96, "wired_count >= 96")
 
 # =============================================================================
 # REPORT
