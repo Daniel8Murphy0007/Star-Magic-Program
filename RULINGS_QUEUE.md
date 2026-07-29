@@ -818,6 +818,25 @@ RESOLVED section with the ruling recorded.
   final-parsec [SCm]-drag resolution preserved.
 - **Daniel's ruling:** (pending)
 
+### Q-049 — PAPER_052 — margin contradiction + self-referential validation + placeholders
+- **Question:** (a) Sec 2.2 states "every category exceeds its target
+  by at least 10 percentage points" immediately after a table showing
+  the Higgs margin at +7.61 - adjacent-sentence contradiction
+  (paperwork). (b) The Page-curve validation source is
+  "arXiv:2501.xxxxx - Page Curve Recovery via 26-Dimensional
+  Information Channels", i.e. a UQFF paper: the 99.84 alignment
+  compares UQFF against UQFF. Should self-referential entries be
+  scored separately from external-literature alignments in the
+  category means? (c) Placeholder "xxxxx" arXiv IDs appear throughout
+  051/052 - resolve to real IDs where they exist?
+- **ANNOTATION to Q-041d:** sec 1.1 offers the oscillator-projection
+  reading - E18 = 62.4 TeV is the Level-18 condensate SCALE while
+  125 GeV is the projected resonance frequency - partially resolving
+  the 043 E18-Higgs decade mismatch. Fold into the Q-041d ruling.
+- **Best-candidate wired:** Higgs 99.79 + Page 99.84 chains verified;
+  44/44 suite pinned; margins and contradictions exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

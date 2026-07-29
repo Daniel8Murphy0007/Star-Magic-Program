@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.54.0"
+VERSION = "0.55.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2742,5 +2742,58 @@ def _paper_051(dataset):
                     'final parsec: [SCm] viscous Ug4 sink; DM: [SCm]+[UA] opposition'),
         'source': 'PAPER_051',
         'residual_pct': abs(align(50.0, 48.3) - 96.48),
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_052')
+def _paper_052(dataset):
+    """UQFF Predictions vs arXiv 2025 (Session 0).
+
+    Companion year to 051. CMS Higgs: 125.09 (UH Level-18) vs 125.35
+    observed = 99.79 VERIFIED; kappa_V/kappa_f = 1.0 predicted vs
+    1.01 CMS. IMPORTANT for Q-041d: sec 1.1 explains the E18-decade
+    mismatch - E18 = 1e-2 J = 62.4 TeV is the Level-18 condensate
+    ENERGY SCALE while 125 GeV is the RESONANCE FREQUENCY of the L18
+    oscillator projected to 3+1 (oscillator-projection reading -
+    annotated to the queue). Page curve: 26 information channels
+    (1/26 each), max unitarity deviation 0.9515 vs 0.95 island-
+    formula = 99.84 VERIFIED - connects to 039's ent sign-reversal.
+    Full framework: 16 papers / 10 categories PASS, mean 92.02,
+    median 96.11 (consistent w/ 051); best QG 100.00, weakest Aether
+    Revival 71.85 (> 60 target). Model suite 44/44 PASS (10 models);
+    NGC2841 Hubble 1.7154 outlier carries Q-048b.
+    Q-049: (a) adjacent-sentence contradiction: "every category
+    exceeds by at least 10 points" vs Higgs margin +7.61 in the same
+    table; (b) the Page-curve source is "arXiv:2501.xxxxx", a UQFF
+    paper - the 99.84 aligns UQFF against UQFF (self-referential
+    validation framing ruling); (c) placeholder xxxxx arXiv IDs
+    throughout both 051/052.
+    """
+    align = lambda pred, obs: (1.0 - abs(pred - obs) / abs(obs)) * 100.0
+    return {
+        'value': {
+            'higgs_alignment': align(125.09, 125.35),    # 99.79 VERIFIED
+            'higgs_uqff_gev': 125.09,
+            'higgs_cms_gev': 125.35,
+            'kv_kf': (1.0, 1.01),
+            'l18_oscillator_reading': 'E18 = 62.4 TeV scale; 125 GeV = projected resonance (Q-041d annotation)',
+            'page_alignment': align(0.9515, 0.95),       # 99.84 VERIFIED
+            'page_channels': D_CRIT,
+            'page_deviation_pct': 0.9515,
+            'framework_mean': 92.02,
+            'framework_median': 96.11,
+            'categories': (10, 10),
+            'best_category': ('Quantum Gravity', 100.00),
+            'weakest_category': ('Aether Revival', 71.85),
+            'higgs_margin': 97.61 - 90.0,            # +7.61 (Q-049a contradiction)
+            'model_suite': (44, 44),
+            'models': 10,
+            'ngc2841_hubble': 1.7154,                # Q-048b carries
+            'self_referential_flag': 'Page source arXiv:2501.xxxxx is a UQFF paper (Q-049b)',
+        },
+        'formula': ('alignment = (1 - |pred-obs|/|obs|)*100; Page: delta = (1/26)*sum(lambda_i*dS_i/S)'),
+        'source': 'PAPER_052',
+        'residual_pct': abs(align(125.09, 125.35) - 99.79),
         'status': 'OPEN_RULING',
     }

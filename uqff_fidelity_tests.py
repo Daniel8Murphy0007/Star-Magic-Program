@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.54.0", "uqff_calculator.VERSION = 0.54.0")
+assert_that(C.VERSION == "0.55.0", "uqff_calculator.VERSION = 0.55.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -891,6 +891,21 @@ assert_that(_r051['categories_pass'] == (10, 10),
 assert_that(abs(_r051['hawking'] - 98.06) < 0.05,
             "PAPER_051: Hawking alignment 98.06 VERIFIED (ratio 0.05 = third value, Q-048c)")
 assert_that(C.wired_count() >= 55, "wired_count >= 55")
+
+_r052 = C.calc('PAPER_052')['value']
+assert_that(abs(_r052['higgs_alignment'] - 99.79) < 0.02,
+            "PAPER_052: CMS Higgs alignment 99.79 VERIFIED (125.09 UH-L18 vs 125.35)")
+assert_that(abs(_r052['page_alignment'] - 99.84) < 0.02,
+            "PAPER_052: Page-curve alignment 99.84 VERIFIED (0.9515 vs 0.95 island formula)")
+assert_that(_r052['page_channels'] == 26,
+            "PAPER_052: 26 information channels = D_CRIT (1/26 information each)")
+assert_that(_r052['model_suite'] == (44, 44),
+            "PAPER_052: astrophysical model suite 44/44 PASS (10 models)")
+assert_that(abs(_r052['higgs_margin'] - 7.61) < 0.01,
+            "PAPER_052: Higgs margin +7.61 contradicts 'at least 10 points' claim (Q-049a pinned)")
+assert_that(_r052['weakest_category'][1] > 60.0,
+            "PAPER_052: weakest category (Aether Revival 71.85) still above its 60 target")
+assert_that(C.wired_count() >= 56, "wired_count >= 56")
 
 # =============================================================================
 # REPORT

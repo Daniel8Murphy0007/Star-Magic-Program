@@ -316,3 +316,9 @@ observable,origin_709_plasma_level,paper,PAPER_043,beta-ladder L13 companion
 observable,origin_709_plasma_level,paper,PAPER_045,plasma-quartet companion
 observable,final_parsec_scm_drag,paper,PAPER_051,primary derivation
 observable,final_parsec_scm_drag,paper,PAPER_048,Ug4 sink mechanism
+primitive,D_CRIT,observable,page_curve_26_channels,26 information channels
+observable,cms_higgs_l18_validation,paper,PAPER_052,primary derivation
+observable,cms_higgs_l18_validation,paper,PAPER_034,kappa_t cross-lock context
+observable,page_curve_26_channels,paper,PAPER_052,primary derivation
+observable,page_curve_26_channels,paper,PAPER_039,ent sign-reversal companion
+observable,model_suite_44_44,paper,PAPER_052,primary derivation
