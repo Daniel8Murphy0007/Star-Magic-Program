@@ -53,3 +53,10 @@ primitive,KAPPA_PER_DAY,observable,magnetar_age_problem_resolution,kappa calibra
 observable,magnetar_scm_suppression_sgr1806,paper,PAPER_013,primary derivation
 observable,magnetar_braking_index,paper,PAPER_013,primary derivation
 observable,magnetar_age_problem_resolution,paper,PAPER_013,primary derivation
+primitive,KAPPA_PER_DAY,observable,pbh_modified_friedmann,Lambda_UQFF = kappa*rho_crit
+primitive,RHO_CRITICAL_KG_PER_M3,observable,pbh_modified_friedmann,Lambda_UQFF = kappa*rho_crit
+primitive,D_PHYS,observable,pbh_mass_function_A_damp,(D_phys-1)/SO_5 = 0.3
+primitive,SO_5,observable,pbh_mass_function_A_damp,(D_phys-1)/SO_5 = 0.3
+observable,pbh_modified_friedmann,paper,PAPER_014,primary derivation
+observable,pbh_critical_overdensity,paper,PAPER_014,primary derivation
+observable,pbh_mass_function_A_damp,paper,PAPER_014,primary derivation

@@ -117,6 +117,17 @@ RESOLVED section with the ruling recorded.
   both timescale claims recorded
 - **Daniel's ruling:** (pending)
 
+### Q-011 — PAPER_014 — delta_c value conflict 0.333 vs 0.45
+- **Question:** Key-numerical-results line states delta_c(GR) = 3.33e-1, but
+  sec 2.2 explicitly states delta_c,GR ~ 0.45 (the standard collapse
+  threshold). The 0.333 appears to be a copy-slip of the GW D_total. Also:
+  A_damp = 0.3 in the mass-function modifier equals (D_phys-1)/SO_5 EXACT —
+  is this a deliberate primitive-lock (PAPER_1953 0.3-factor family) or
+  coincidence?
+- **Best-candidate wired:** delta_c,GR = 0.45 (sec 2.2, physically standard);
+  A_damp composed as (D_PHYS-1)/SO_5 flagged as primitive-lock CANDIDATE
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

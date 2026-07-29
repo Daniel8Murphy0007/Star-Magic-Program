@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.12.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.12.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.13.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.13.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-119%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-13-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-124%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-14-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.12.0 wiring campaign live**
+**UQFF systematic rebuild — v0.13.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.12.0)
+## What is currently shipped (v0.13.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 13 / 2,255** (5 ✓ · 8 ⚠ OPEN_RULING · 10 rulings queued)
+**Wired so far: 14 / 2,255** (5 ✓ · 9 ⚠ OPEN_RULING · 11 rulings queued)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -72,6 +72,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_011 | Stochastic GW Background | Omega = D^2*Omega_GR; mixed population 0.37x (63% cut); corroborates D^2 convention |
 | PAPER_012 | Eccentric Binary Circularization | modified Peters D^2; tau_circ 9.0x; e=0.003 at 10 Hz (30x GR); 3rd D^2 data point |
 | PAPER_013 | Magnetar Spin-Down | D_SCm 99% dipole suppression; braking index 1.5-2.0 matches obs; age problem resolved; Q-010 |
+| PAPER_014 | Primordial Black Holes | Lambda_UQFF = kappa*rho_crit; delta_c 0.45; A_damp = 0.3 = (D_phys-1)/SO_5 candidate; Q-011 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -82,7 +83,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (119 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (124 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -115,7 +116,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.9.0 | Band 1: PAPER_010 | 10 |
 | v0.10.0 | Band 1: PAPER_011 | 11 |
 | v0.11.0 | Band 1: PAPER_012 | 12 |
-| **v0.12.0** ← current | Band 1: PAPER_013 | 13 |
+| v0.12.0 | Band 1: PAPER_013 | 13 |
+| **v0.13.0** ← current | Band 1: PAPER_014 | 14 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

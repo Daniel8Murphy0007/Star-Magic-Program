@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.13.0] — 2026-07-29 — BAND 1: PAPER_014
+
+### Added
+- **PAPER_014 dispatch** (Primordial Black Holes): modified Friedmann with
+  Lambda_UQFF = kappa*rho_crit (registry-composed from KAPPA_PER_DAY and
+  RHO_CRITICAL); critical overdensity 0.45*(1-alpha_Q+beta_damp);
+  mass-function A_damp = 0.3 = (D_phys-1)/SO_5 EXACT — primitive-lock
+  CANDIDATE flagged (PAPER_1953 0.3-factor family). OPEN_RULING Q-011
+  (delta_c 0.333 vs 0.45 copy-slip).
+- Gate: 124 assertions, 0 failures. Registry: 41 rows / 61 edges / 14 ledgers.
+
+---
+
 ## [0.12.0] — 2026-07-29 — BAND 1: PAPER_013
 
 ### Added

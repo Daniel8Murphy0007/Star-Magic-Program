@@ -1,20 +1,19 @@
-v0.12.0 BAND 1: PAPER_013 wired (kappa calibration paper)
+v0.13.0 BAND 1: PAPER_014 wired
 
-PAPER_013 Magnetar Spin-Down (OPEN_RULING Q-010):
-  D_SCm(B) = 1-exp[-(B_crit/B)]: 99% magnetic-dipole-radiation
-  suppression for SGR 1806-20 (B = 2e15 G)
-  Braking index n_UQFF = 1.5-2.0 vs GR n=3 - matches observed
-  magnetar range 1-2.5 (anomaly resolved)
-  Magnetar age problem resolved: extended spin-down ~1e7 yr
-  consistent with supernova-remnant associations
+PAPER_014 Primordial Black Holes (OPEN_RULING Q-011):
+  Modified Friedmann: H^2 = 8piG/3*rho - k/a^2 + Lambda_UQFF/3 + xi_Q*H
+  Lambda_UQFF = kappa * rho_crit - COMPOSED from registry primitives
+  (KAPPA_PER_DAY x RHO_CRITICAL_KG_PER_M3)
+  Critical overdensity delta_c,UQFF = 0.45*(1 - alpha_Q + beta_damp)
+  Mass-function modifier: F = exp[-(M/1e15 g)^1.8]*[1 + 0.3*sin(...)]
 
-Q-008 FOURTH DATA POINT: Edot_UQFF = D_SCm^2 * Edot_GR explicit in
-sec 2.2. D^2 power convention now 4 corpus papers vs 1 outlier.
+PRIMITIVE-LOCK CANDIDATE: A_damp = 0.3 = (D_phys-1)/SO_5 EXACT -
+matches the 0.3-factor cross-regime family (predecessor PAPER_1953).
+Flagged for landmark verification, wired as composition.
 
-Q-010 queued: D_SCm 0.01 stated vs 0.0218 computed; abstract t=3x
-vs sec-2.3 t=10,000x (3,300x internal conflict); squared vs linear
-threshold form between LaTeX and text.
+Q-011 queued: key-results line says delta_c = 0.333 (apparent copy-slip
+of GW D_total) vs sec-2.2's standard 0.45.
 
-Gate 119 assertions 0 failures. Registry 38 rows / 54 edges / 13
-citation ledgers. Wired 13/2,255 (5 clean, 8 OPEN_RULING).
-Next: PAPER_014 (Primordial Black Holes).
+Gate 124 assertions 0 failures. Registry 41 rows / 61 edges / 14
+citation ledgers. Wired 14/2,255 (5 clean, 9 OPEN_RULING).
+Next: PAPER_015 (Cosmological Implications of Modified GW Propagation).

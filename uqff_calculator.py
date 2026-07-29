@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.12.0"
+VERSION = "0.13.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -610,5 +610,40 @@ def _paper_013(dataset):
                     '(4th D^2 data point); n_UQFF = 2 - dlnD/dlnOmega ~ 1.5-2.0'),
         'source': 'PAPER_013',
         'residual_pct': abs(D_scm - 0.01) / 0.01 * 100.0,   # 118% vs paper ~0.01 (Q-010)
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_014')
+def _paper_014(dataset):
+    """Primordial Black Holes — UQFF Formation Mechanisms (Session 0).
+
+    Modified Friedmann adds Lambda_UQFF(t)/3 + xi_Q*H terms with
+    Lambda_UQFF ~ kappa * rho_crit (registry-composed here). Critical
+    overdensity delta_c,UQFF = delta_c,GR*(1 - alpha_Q + beta_damp).
+    Mass-function modifier F = exp[-(M/M_Q)^gamma]*[1 + A_damp*sin(...)]
+    with M_Q = 1e15 g, gamma = 1.8, A_damp = 0.3. NOTE: A_damp = 0.3 =
+    (D_PHYS-1)/SO_5 EXACT — potential primitive-lock (PAPER_1953 family;
+    flagged for landmark verification, not claimed).
+    Q-011: key-results line says delta_c(GR) = 0.333 but sec 2.2 says
+    0.45 — the 0.333 appears to be a copy-slip of the GW D_total.
+    """
+    lambda_uqff = KAPPA_PER_DAY * RHO_CRITICAL_KG_PER_M3   # kappa*rho_crit composition
+    A_damp = (D_PHYS - 1) / SO_5                            # 0.3 EXACT (primitive candidate)
+    return {
+        'value': {
+            'delta_c_gr': 0.45,                    # sec 2.2 (Q-011: key-results says 0.333)
+            'alpha_q_range': (0.01, 0.05),
+            'xi_q': 1.0e-3,
+            'lambda_uqff_kg_m3': lambda_uqff,
+            'mass_scale_M_Q_g': 1.0e15,
+            'gamma_scaling': 1.8,
+            'A_damp': A_damp,                      # 0.3 = (D_phys-1)/SO_5
+            'delta_c_uqff_range': (0.45 * (1 - 0.05), 0.45 * (1 - 0.01)),
+        },
+        'formula': ('H^2 = 8piG/3*rho - k/a^2 + Lambda_UQFF/3 + xi_Q*H, '
+                    'Lambda_UQFF = kappa*rho_crit; F(M) = exp[-(M/M_Q)^1.8]*[1+0.3*sin]'),
+        'source': 'PAPER_014',
+        'residual_pct': None,
         'status': 'OPEN_RULING',
     }

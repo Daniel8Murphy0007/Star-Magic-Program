@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.12.0"
-description = "UQFF Star-Magic-Program v0.12.0: PAPER_013 wired (magnetar spin-down: D_SCm threshold suppression 99 pct for SGR 1806-20, braking index n=1.5-2.0 matches observed 1-2.5 vs GR 3, resolves magnetar age problem ~1e7 yr). FOURTH D^2 data point. Q-010 queued (3x vs 10000x timescale conflict + B units). Wired 13/2255, gate 119/0. Registry 38 rows / 54 edges / 13 ledgers."
+version = "0.13.0"
+description = "UQFF Star-Magic-Program v0.13.0: PAPER_014 wired (primordial BHs: modified Friedmann + Lambda_UQFF = kappa*rho_crit registry-composed; delta_c = 0.45(1-alpha_Q+beta); mass-fn A_damp = 0.3 = (D_phys-1)/SO_5 EXACT primitive-lock candidate). Q-011 queued (0.333 vs 0.45 copy-slip). Wired 14/2255, gate 124/0. Registry 41 rows / 61 edges / 14 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

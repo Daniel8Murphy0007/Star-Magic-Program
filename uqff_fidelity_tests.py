@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.12.0", "uqff_calculator.VERSION = 0.12.0")
+assert_that(C.VERSION == "0.13.0", "uqff_calculator.VERSION = 0.13.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -283,6 +283,17 @@ assert_that(abs(_r013['tau_ratio_sec23'] - 1.0e4) < 1.0,
 assert_that(abs(_r013['magnetar_age_resolution_yr'] - 1.0e7) < 1.0,
             "PAPER_013: magnetar age problem resolved (~1e7 yr)")
 assert_that(C.wired_count() >= 13, "wired_count >= 13")
+
+_r014 = C.calc('PAPER_014')['value']
+assert_that(abs(_r014['A_damp'] - 0.3) < 1e-15,
+            "PAPER_014: A_damp = 0.3 = (D_phys-1)/SO_5 EXACT (primitive-lock candidate)")
+assert_that(abs(_r014['delta_c_gr'] - 0.45) < 1e-12,
+            "PAPER_014: delta_c,GR = 0.45 (sec 2.2; key-results 0.333 slip - Q-011)")
+assert_that(abs(_r014['gamma_scaling'] - 1.8) < 1e-12,
+            "PAPER_014: gamma = 1.8 UQFF mass-function scaling")
+assert_that(_r014['lambda_uqff_kg_m3'] > 0,
+            "PAPER_014: Lambda_UQFF = kappa*rho_crit composed from registry")
+assert_that(C.wired_count() >= 14, "wired_count >= 14")
 
 # =============================================================================
 # REPORT

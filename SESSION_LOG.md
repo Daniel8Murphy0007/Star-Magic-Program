@@ -452,3 +452,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 13/2,255 (5 ✓, 8 ⚠). Next: PAPER_014.
 
 ---
+
+## 2026-07-29 — v0.13.0 — BAND 1: PAPER_014
+
+- PAPER_014 wired (⚠ Q-011): PBH formation. Lambda_UQFF = kappa*rho_crit
+  composed from registry primitives; A_damp = 0.3 = (D_phys-1)/SO_5 EXACT
+  flagged as primitive-lock candidate (0.3-factor family).
+- Gate 124/0. Registry 41 rows / 61 edges / 14 ledgers.
+- Campaign: 14/2,255 (5 ✓, 9 ⚠). Next: PAPER_015.
+
+---
