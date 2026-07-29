@@ -405,6 +405,26 @@ RESOLVED section with the ruling recorded.
   honestly, anchors preserved.
 - **Daniel's ruling:** (pending)
 
+### Q-028 — PAPER_029 — budget formulas + KK exponent + T2HK consistency claim
+- **Question:** (a) The f_SM correction formula SSq^4/(SSq^-1 +
+  SSq^-1/2) evaluates to 0.0343 — which is SSq^6 EXACTLY — not the
+  claimed 0.0485. Is the intended identity f_SM = SSq^6 (0.0343, 31
+  pct below observed 0.05), or is 0.0485 from an unshown computation
+  with a different closed form? (b) f_DM printed forms give 0.309
+  (SSq^2*0.95) and 0.197 (with /(1+SSq)); the final 0.268 comes from
+  "full computation" not shown — closed form? (c) M_KK = M_Pl*SSq^8
+  fails by 13 orders; solving M_Pl*SSq^n = 11.6 TeV gives n = 61.5.
+  NOTE: 2*D_crit + SO_5 = 62 (the PAPER_2137 frame-cadence integer)
+  gives M_Pl*SSq^62 = 8.9 TeV (23 pct low). Is the canonical exponent
+  61.5, 62, or something else? (d) The T2HK row claims delta_CP =
+  197 deg is "consistent" with phi_CP = SSq*pi = 1.795 rad = 102.6
+  deg — the claim fails by 94 deg. Relation intended?
+- **Best-candidate wired:** SSq^4 raw + SSq^6 identity candidate
+  gate-pinned; budget residual consistency verified (0.6835); true KK
+  exponent computed and exposed; falsifiable IceCube 5.8 PeV break
+  wired.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

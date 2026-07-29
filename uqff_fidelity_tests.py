@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.31.0", "uqff_calculator.VERSION = 0.31.0")
+assert_that(C.VERSION == "0.32.0", "uqff_calculator.VERSION = 0.32.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -550,6 +550,21 @@ assert_that(abs(_r028['phase_space'] - 0.936) < 0.001,
 assert_that(abs(_r028['cabibbo_ratio'] - 0.0303) < 0.0005,
             "PAPER_028: Cabibbo ratio 0.0303 pinned (its (m_s/m_b)^1/2 claim FAILS - Q-027b)")
 assert_that(C.wired_count() >= 32, "wired_count >= 32")
+
+_r029 = C.calc('PAPER_029')['value']
+assert_that(abs(_r029['f_sm_raw_ssq4'] - 0.1056) < 0.0001,
+            "PAPER_029: f_SM raw = SSq^4 = 0.1056")
+assert_that(abs(_r029['f_sm_corrected_printed'] - _r029['ssq6_identity_candidate']) < 0.0001,
+            "PAPER_029: printed correction formula = SSq^6 = 0.0343 EXACTLY (not 0.0485 - Q-028a)")
+assert_that(abs(_r029['budget_residual_check'] - 0.6835) < 0.0001,
+            "PAPER_029: f_Lambda = 1 - 0.0485 - 0.268 = 0.6835 residual consistent")
+assert_that(abs(_r029['n_kk_true'] - 61.5) < 0.1,
+            "PAPER_029: true KK exponent 61.5 (claimed 8 fails by 13 orders - Q-028c)")
+assert_that(_r029['n_kk_62_check'] == 62,
+            "PAPER_029: 2*D_CRIT + SO_5 = 62 registry-composed (PAPER_2137-family candidate near 61.5)")
+assert_that(abs(_r029['icecube_break_pev'] - 5.8) < 1e-12,
+            "PAPER_029: IceCube spectral break = M_KK/2 = 5.8 PeV falsifiable")
+assert_that(C.wired_count() >= 33, "wired_count >= 33")
 
 # =============================================================================
 # REPORT

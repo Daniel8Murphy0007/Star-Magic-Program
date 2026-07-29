@@ -180,3 +180,11 @@ observable,scm_flavor_mixing_density,paper,PAPER_028,primary derivation
 observable,scm_flavor_mixing_density,paper,PAPER_027,anchors LFV suppression
 observable,ckm_vcb_fu_chain,paper,PAPER_028,primary derivation
 observable,vcb_puzzle_uqff,paper,PAPER_028,primary derivation
+primitive,SSQ,observable,cosmic_budget_ssq_projection,f_SM ~ SSq^4; f_DM ~ SSq^2
+primitive,SSQ,observable,kk_exponent_ladder,M_KK = M_Pl*SSq^n
+primitive,D_CRIT,observable,kk_exponent_ladder,62 = 2*D_crit + SO_5 candidate
+primitive,SO_5,observable,kk_exponent_ladder,62 = 2*D_crit + SO_5 candidate
+observable,cosmic_budget_ssq_projection,paper,PAPER_029,primary derivation
+observable,kk_exponent_ladder,paper,PAPER_029,primary derivation
+observable,kk_exponent_ladder,paper,PAPER_022,M_KK = 11.6 TeV input
+observable,neutrino_facility_predictions,paper,PAPER_029,primary derivation

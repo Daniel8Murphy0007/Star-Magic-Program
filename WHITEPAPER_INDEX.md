@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 32 (7 ✓, 25 ⚠ OPEN_RULING)
+- **Wired:** 33 (7 ✓, 26 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2223
+- **Not yet touched:** 2222
 
 ---
 
@@ -62,7 +62,7 @@
 | ⚠ | PAPER_026b | Vector Like Quarks UQFF |
 | ⚠ | PAPER_027 | Lepton Flavor Violation UQFF |
 | ⚠ | PAPER_028 | BSM Coupling Constants UQFF |
-| ⬜ | PAPER_029 | New Physics TeV Scale UQFF |
+| ⚠ | PAPER_029 | New Physics TeV Scale UQFF |
 | ⬜ | PAPER_030 | Dark Sector Mediators UQFF |
 | ⬜ | PAPER_031 | Flavor Anomalies Resolution UQFF |
 | ⬜ | PAPER_032 | BSM Scalar Sectors UQFF |

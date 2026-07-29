@@ -661,3 +661,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 32/2,255 (7 ✓, 25 ⚠). Next: PAPER_029.
 
 ---
+
+## 2026-07-29 — v0.32.0 — BAND 1: PAPER_029
+
+- PAPER_029 wired (⚠ Q-028): TeV-scale BSM. SSq-projection cosmic
+  budget; SSq^6 identity candidate discovered (printed correction
+  formula evaluates to it EXACTLY); KK exponent audit surfaced
+  61.5-vs-62 question (2*D_crit + SO_5 candidate); IceCube 5.8 PeV
+  break falsifiable.
+- Gate 249/0. Registry 97 rows / 189 edges / 33 ledgers.
+- Campaign: 33/2,255 (7 ✓, 26 ⚠). Next: PAPER_030.
+
+---

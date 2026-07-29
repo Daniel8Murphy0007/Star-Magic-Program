@@ -1,27 +1,25 @@
-v0.31.0 BAND 1: PAPER_028 wired
+v0.32.0 BAND 1: PAPER_029 wired
 
-PAPER_028 BSM Coupling Constants (OPEN_RULING Q-027):
-  Belle II |V_cb| = (39.2 +- 0.9)e-3 (365 fb^-1) mapped to the SCm
-  vacuum: [SCm]_flavor = Ug2 = |V_cb|^2 * kappa_Higgs = 1.5366e-3
-  - the CKM matrix element AS a vacuum flavor-mixing density.
-  Anchors the PAPER_027 LFV suppression mechanism.
-  kappa_Higgs = 1.0 SM constraint -> TESTABLE CROSS-LOCK: any Higgs
-  coupling deviation (Paper 34, H->bb) must shift |V_cb|_eff.
-  F_U chain reproduced with registry BETA_I: Ug1 = m_B/m_p = 5.61;
-  Ug3 = 0.0296; Ug4 = 95.06; Ub_i = 24.88; F_U = 75.81 > 0.
-  V_cb puzzle (~2 sigma incl-vs-excl) = operator-basis dependence
-  of [SCm]_flavor.
+PAPER_029 New Physics at TeV Scale (OPEN_RULING Q-028):
+  The 95-percent problem: UQFF as a 100-percent theory.
+  Baryonic (5 pct) from Ug1-4; dark matter (27 pct) from SCm;
+  dark energy (68 pct) from the UA aether tensor.
+  Budget compositions: f_SM raw = SSq^4 = 0.1056 -> corrected
+  0.0485 ~ 5 pct; f_DM = 0.268; f_Lambda = 0.683 (residual checks).
+  DISCOVERED DURING WIRING: the printed correction formula
+  SSq^4/(SSq^-1 + SSq^-1/2) evaluates to SSq^6 = 0.0343 EXACTLY -
+  identity candidate gate-pinned.
+  Falsifiable: IceCube spectral break at M_KK/2 = 5.8 PeV (3-sigma
+  with 20 yr); KM3NeT angular anomaly = SSq^2 = 0.325.
+  KK-exponent audit: claimed M_Pl*SSq^8 fails by 13 orders; true
+  exponent 61.5; NOTE 62 = 2*D_crit + SO_5 (the PAPER_2137
+  frame-cadence integer) gives 8.9 TeV - ruling queued.
 
-Q-027 queued: (a) the 0.9*rho_UA denominator appears in a SECOND
-paper (Ug4 here, Ug4 in 027) - Q-026a annotated: the (1-F_TRZ)*rho_UA
-pattern is systematic, one ruling covers both; (b) Cabibbo
-(m_s/m_b)^(1/2) claim fails numerically by 5x; (c) Gamma partial
-3.14e9 s^-1 vs BR 2.06 pct = 4.4x tension; (d) LFU 1.020 listed as
-UQFF prediction without derivation.
+Q-028 queued (4): f_SM formula-vs-value (SSq^6 candidate); f_DM
+0.268 closed form unshown (printed forms give 0.309/0.197); KK
+exponent 61.5/62/other; T2HK delta_CP 197 deg claimed consistent
+with SSq*pi = 102.6 deg - fails by 94 deg.
 
-Block-8 guard caught a beta_i literal in a code comment (2nd catch
-in two ships - comments count).
-
-Gate 242 assertions 0 failures. Registry 94 rows / 181 edges / 32
-citation ledgers. Wired 32/2,255 (7 clean, 25 OPEN_RULING).
-Next: PAPER_029.
+Gate 249 assertions 0 failures. Registry 97 rows / 189 edges / 33
+citation ledgers. Wired 33/2,255 (7 clean, 26 OPEN_RULING).
+Next: PAPER_030.

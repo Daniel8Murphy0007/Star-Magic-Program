@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.32.0] — 2026-07-29 — BAND 1: PAPER_029
+
+### Added
+- **PAPER_029 dispatch** (New Physics at TeV Scale): the 95-percent
+  problem — UQFF as 100-percent theory. Cosmic budget from SSq
+  projections: f_SM ~ SSq^4 raw = 0.1056, corrected 0.0485 ~ 5%
+  (printed correction formula evaluates to SSq^6 = 0.0343 EXACTLY —
+  identity candidate gate-pinned); f_DM = 0.268; f_Lambda = 0.683
+  residual-consistent. Falsifiable: IceCube spectral break at M_KK/2 =
+  5.8 PeV (3-sigma/20 yr); KM3NeT angular anomaly = SSq^2. KK-exponent
+  audit: claimed M_Pl*SSq^8 fails by 13 orders; true exponent 61.5,
+  with 62 = 2*D_crit + SO_5 (PAPER_2137 integer) giving 8.9 TeV —
+  queued. OPEN_RULING Q-028 (4 items incl. T2HK 197-vs-102.6 deg
+  consistency claim failure).
+- Gate: 249 assertions, 0 failures. Registry: 97 rows / 189 edges / 33 ledgers.
+
+---
+
 ## [0.31.0] — 2026-07-29 — BAND 1: PAPER_028
 
 ### Added

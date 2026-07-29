@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.31.0"
+VERSION = "0.32.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1498,5 +1498,60 @@ def _paper_028(dataset):
                     'Ub_i = beta_i*Gamma/(m_B*c^2)'),
         'source': 'PAPER_028',
         'residual_pct': abs(scm_flavor - 1.5366e-3) / 1.5366e-3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_029')
+def _paper_029(dataset):
+    """New Physics at TeV Scale: UQFF Predictions (Session 0).
+
+    The 95-percent problem: UQFF as a 100-percent theory - baryonic
+    from Ug1-4, dark matter from SCm, dark energy from UA tensor.
+    Budget compositions: f_SM raw = SSq^4 = 0.1056; paper's corrected
+    value 0.0485 ~ 5 pct; f_DM = 0.268; f_Lambda = 0.683 residual.
+    TeV predictions: IceCube spectral break at M_KK/2 = 5.8 PeV;
+    KM3NeT angular anomaly = SSq^2 = 0.325; PeV cross-section
+    enhancement +0.3 pct.
+    Q-028: (a) printed f_SM correction SSq^4/(SSq^-1 + SSq^-1/2)
+    evaluates to 0.0343 = SSq^6 EXACTLY, not the claimed 0.0485 -
+    is the intended identity f_SM = SSq^6? (b) f_DM printed forms give
+    0.309 / 0.197 but result 0.268 from unshown computation;
+    (c) M_KK = M_Pl*SSq^8 fails by 13 orders - solving gives true
+    exponent 61.5 (note 2*D_crit + SO_5 = 62 gives 8.9 TeV);
+    (d) T2HK claim: delta_CP = 197 deg "consistent" with SSq*pi =
+    102.6 deg - fails.
+    """
+    import math as _m
+    f_sm_raw = SSQ ** 4                              # 0.1056
+    f_sm_corrected_printed = SSQ**4 / (1.0/SSQ + 1.0/_m.sqrt(SSQ))   # 0.0343
+    ssq6 = SSQ ** 6                                  # 0.0343 - identity candidate
+    m_pl_gev = 1.22e19
+    n_kk_true = _m.log(11600.0 / m_pl_gev) / _m.log(SSQ)             # 61.5
+    return {
+        'value': {
+            'f_sm_raw_ssq4': f_sm_raw,
+            'f_sm_corrected_printed': f_sm_corrected_printed,        # 0.0343 (Q-028a)
+            'ssq6_identity_candidate': ssq6,
+            'f_sm_paper': 0.0485,
+            'f_dm_form1': SSQ**2 * 0.95,             # 0.3086
+            'f_dm_form2': SSQ**2 * 0.95 / (1.0 + SSQ),               # 0.197
+            'f_dm_paper': 0.268,
+            'f_lambda_paper': 0.683,
+            'budget_residual_check': 1.0 - 0.0485 - 0.268,           # 0.6835
+            'n_kk_claimed': 8,
+            'n_kk_true': n_kk_true,                  # 61.5 (Q-028c)
+            'n_kk_62_check': 2 * D_CRIT + SO_5,      # 62 -> M = M_Pl*SSq^62 = 8.9 TeV
+            'icecube_break_pev': 11.6 / 2.0,         # 5.8 = M_KK/2
+            'km3net_angular_anomaly': SSQ ** 2,      # 0.325
+            'pev_xsec_enhancement_pct': 0.3,
+            'delta_cp_t2hk_deg': 197.0,
+            'ssq_pi_deg': SSQ * 180.0,               # 102.6 (Q-028d)
+            'sm_universe_fraction': 0.05,
+        },
+        'formula': ('f_SM ~ SSq^4 (corrected form evaluates SSq^6); f_DM ~ SSq^2*(1-f_SM); '
+                    'E_break = M_KK/2; angular anomaly = SSq^2'),
+        'source': 'PAPER_029',
+        'residual_pct': abs(0.0485 - 0.05) / 0.05 * 100,
         'status': 'OPEN_RULING',
     }
