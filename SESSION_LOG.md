@@ -198,3 +198,67 @@ declaration), PAPER_2153 (SCm+UA joint engine), PAPER_2154 (Q_phonon +
 D_GW primitive-reduction).
 
 ---
+
+## 2026-07-28 — v0.2.1 PATCH — README BADGES
+
+### Purpose
+
+PyPI project page for v0.2.0 shipped without visible status badges.
+Predecessor Star-Magic PyPI page rendered 7 shields.io/GitHub badges
+at the top of its description. This patch adds the same 7 badges to
+Star-Magic-Program's README so future PyPI releases render them.
+
+### What shipped
+
+**7 badges added to README.md top:**
+- `pypi` — dynamic version from PyPI (`shields.io/pypi/v/star-magic-program`)
+- `python` — dynamic Python versions supported (`shields.io/pypi/pyversions/`)
+- `License` — static `AGPL-3.0 + Commercial`
+- `Fidelity Gate` — static `passing` (updates as gate assertions grow)
+- `Whitepapers` — static `2,255` (updates as corpus grows)
+- `Public Surfaces` — static `0` (updates as calculator gets wired)
+- `CI` — dynamic status from GitHub Actions
+
+**Version bumps 0.2.0 → 0.2.1** (patch):
+- pyproject.toml
+- uqff_calculator.py (VERSION)
+- uqff_fidelity_tests.py (assertion)
+- CITATION.cff
+- CHANGELOG.md (v0.2.1 entry prepended)
+
+### What DIDN'T change
+
+- Whitepaper corpus (still 2,255 md + 45 pdf + 107 tex + 11 txt)
+- Registry primitives (96 constants, unchanged from v0.1.0)
+- Calculator DISPATCH (still empty, awaits v0.3.0+ wiring)
+- Fidelity gate blocks 1-7 (only block 8 version assertion touched)
+- All 14 registry CSVs (still header-only)
+- All 4 registry Python regen modules (still gutted signatures)
+- All 5 registry MD docs (still structural)
+- All license files, NOTICE, COMMERCIAL.md, WHITEPAPER_INDEX.md, _BUILD_LOG.md
+
+### Lesson from v0.2.0 ship (documented for next time)
+
+The v0.2.0 ship failed 4 times in a row on GitHub Actions before landing.
+Root causes discovered in order:
+1. Stale `.git/index.lock` blocking git operations silently
+2. Windows Defender / OneDrive holding a lock on `.git/COMMIT_EDITMSG`
+   causing every `git commit` to fail with "Permission denied" while
+   PowerShell blocks continued past the failed step
+3. Branch protection rules on GitHub blocking direct pushes to master
+
+**Standing rule going forward:**
+Before every ship, check (in order):
+1. `.git/index.lock` and `.git/COMMIT_EDITMSG` (delete if present)
+2. Any lingering `Code.exe` / `OneDrive.exe` processes with handles
+   on `.git/` — kill if found
+3. GitHub repo's branch protection settings on `master` for private repos
+4. Version consistency across pyproject.toml, uqff_calculator.py,
+   uqff_fidelity_tests.py, CITATION.cff, CHANGELOG.md, SESSION_LOG.md
+5. Fidelity gate exit code 0
+
+### Next ship
+
+**v0.3.0 — first wiring batch** (unchanged from v0.2.0's next-ship note).
+
+---

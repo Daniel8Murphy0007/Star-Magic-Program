@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.2.1] — 2026-07-28 — README BADGES
+
+### Added
+- 7 README badges rendered by shields.io (visible on PyPI + GitHub):
+  - `pypi` (dynamic version), `python` (dynamic version support),
+  - `License AGPL-3.0 + Commercial`,
+  - `Fidelity Gate passing`,
+  - `Whitepapers 2,255`,
+  - `Public Surfaces 0` (updates as calculator gets wired),
+  - `CI` (dynamic status from GitHub Actions).
+
+### Changed
+- Version bumps 0.2.0 → 0.2.1 (pyproject.toml, uqff_calculator.py, uqff_fidelity_tests.py, CITATION.cff).
+
+### Unchanged
+- Whitepaper corpus, registry scaffolds, calculator DISPATCH, fidelity gate blocks 1-8 — all identical to v0.2.0.
+
+---
+
 ## [0.2.0] — 2026-07-28 — CORPUS + REGISTRY SCAFFOLDING
 
 ### Added
