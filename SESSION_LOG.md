@@ -1534,3 +1534,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 119/2,255 (11 ✓, 108 ⚠). Next: PAPER_116.
 
 ---
+
+## 2026-07-29 — v0.119.0 — BAND 1: PAPER_116
+
+- PAPER_116 wired (⚠ Q-112): EP-03 LHC ladder n=4. Anchors
+  EXACT; 1-keV E_transfer underived; hadronic row n=10.204
+  confirms Q-108a (self-rectification No. 8); Holmlid-family
+  adjacency noted.
+- Campaign: 120/2,255 (11 ✓, 109 ⚠). Next: PAPER_117.
+
+---

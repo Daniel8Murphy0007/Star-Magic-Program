@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.119.0] — 2026-07-29 — BAND 1: PAPER_116 — SELF-RECTIFICATION No. 8
+
+### Added
+- **PAPER_116 dispatch** (EP-03: ATLAS Run 3 Virtual Quark,
+  ladder n=4): E_4 = 1e-16 J = 624 eV EXACT; ATLAS n = 4.204 /
+  CMS n = 4.173 EXACT; Lambda 30 TeV -> n = 14.68. The
+  load-bearing E_transfer = 1.6e-16 J is exactly 1 keV,
+  UNDERIVED from Lambda (in-paper chains give 3.5e-18/3.2e-11).
+  hbar*c/E_4 = 2e-10 m is atomic scale vs "sub-hadronic" label.
+  SELF-RECTIFICATION No. 8: the hadronic row (1 GeV ->
+  n = 10.204, expected 10) CONFIRMS the PAPER_112 Q-108a
+  mid-band correction from within the corpus. Cross-repo note:
+  E_4 = 624 eV adjacent to Holmlid 630 / Coulomb 626 eV family.
+- OPEN_RULING Q-112; Q-108 annotated with the confirmation.
+- Gate: 818 assertions, 0 failures. Registry: 312 rows / 654 edges / 120 ledgers.
+
+---
+
 ## [0.118.0] — 2026-07-29 — BAND 1: PAPER_115 — CROSSED LADDERS
 
 ### Added

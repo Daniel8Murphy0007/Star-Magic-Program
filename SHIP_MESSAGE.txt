@@ -1,29 +1,30 @@
-v0.118.0 BAND 1: PAPER_115 wired - EP-09 CROSSED LADDERS FOUND
+v0.119.0 BAND 1: PAPER_116 wired - EP-03 CONFIRMS Q-108a CORRECTION
 
-PAPER_115 EP-09 3C 273 Quasar Jet One-Sidedness >100:1
-(OPEN_RULING Q-111):
-  Extends EP-01's single reversal to N cumulative t_n
-  buoyancy inversions: R_N = (1 + SSq*2/pi)^N, per-reversal
-  1.3629 EXACT - a Lorentz-independent asymmetry floor below
-  Doppler beaming.
+PAPER_116 EP-03 ATLAS Run 3 Virtual Quark, Ladder n=4
+(OPEN_RULING Q-112):
+  Same ladder as EP-02: E_n = 10^(n-20) J.
 
-  LADDERS CROSSED: printed 1.363^12 = 95.2 and 1.363^13 =
-  129.8, but the chain gives 41.1 and 56.0 - and the printed
-  "129.8" is EXACTLY 1.5^12 = 129.75. The basic-1.5 and
-  SSq-weighted ladders leaked into each other. R > 100 needs
-  N = 15 at the SSq rate (or N = 12 at 1.5). Conclusion
-  structure survives with corrected N - ruling picks the
-  canonical ladder.
+  VERIFIED EXACT: E_4 = 1e-16 J = 624 eV; lambda_4 = 1.99 nm;
+  ATLAS n = 4.204; CMS n = 4.173; CMS 28/30 scaling; Lambda =
+  30 TeV -> n = 14.68; validator's 60 pct error-vs-E_4
+  disclosure honest.
 
-  100x RADIUS SLIP: 65 kpc = 2.0e21 m; the paper used 2.0e23.
-  Corrected U_bi = 6.11e-10 N/m2 (printed 6.14e-14 verifies
-  EXACTLY at the wrong r). F_rel = 4.31e33 N cross-consistent
-  with Q-040b's resolved 4.30e33 - corpus convergence.
+  UNDERIVED ANCHOR: E_transfer = 1.6e-16 J is exactly 1 keV,
+  with NO chain connecting it to Lambda = 30 TeV - the paper's
+  own two E_virtual attempts give 3.5e-18 and 3.2e-11 J. The
+  Delta-n = 0.204 headline rests on it. Label tension:
+  hbar*c/E_4 = 2e-10 m is atomic scale, "sub-hadronic" is
+  asserted (the paper's own "Wait - correcting" passage saw it).
 
-  DOPPLER FACTOR-10: chain 2.28e6 vs printed 2.2e7 ("5 orders"
-  becomes 4.4 - qualitatively robust). Internal 1000x lifetime
-  inconsistency (2e8 yr vs own chain 3.03e5 yr EXACT).
+  SELF-RECTIFICATION No. 8: the paper's hadronic row (1 GeV ->
+  n = 10.204, expected n = 10) CONFIRMS the PAPER_112 Q-108a
+  mid-band correction (hadron cluster 9-11, not 8-9) from
+  within the corpus itself. Q-108 annotated.
 
-Q-111 queued. Gate 812 assertions 0 failures. Registry 310 rows /
-650 edges / 119 citation ledgers. Wired 119/2,255 (11 clean, 108
-OPEN_RULING). Next: PAPER_116.
+  CROSS-REPO NOTE: E_4 = 624 eV sits adjacent to the
+  predecessor Holmlid 630 eV / Coulomb 626 eV family -
+  convergence candidate flagged.
+
+Q-112 queued. Gate 818 assertions 0 failures. Registry 312 rows /
+654 edges / 120 citation ledgers. Wired 120/2,255 (11 clean, 109
+OPEN_RULING). Next: PAPER_117.

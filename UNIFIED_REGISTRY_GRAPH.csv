@@ -650,3 +650,7 @@ primitive,SSQ,observable,ep09_3c273_multi_reversal,per-reversal weight
 observable,ep09_3c273_multi_reversal,paper,PAPER_111,EP-01 baseline extension
 observable,ep09_ubi_65kpc,paper,PAPER_115,radius slip
 observable,ep09_ubi_65kpc,paper,PAPER_069,F_rel cross-consistency
+observable,ep03_ladder_n4,paper,PAPER_116,n=4 anchor
+primitive,SSQ,observable,ep03_ladder_n4,unit coupling at n=4
+observable,ep03_hadronic_confirms_q108,paper,PAPER_116,hadronic row
+observable,ep03_hadronic_confirms_q108,paper,PAPER_112,confirms Q-108a

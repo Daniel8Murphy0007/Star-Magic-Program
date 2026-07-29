@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.118.0", "uqff_calculator.VERSION = 0.118.0")
+assert_that(C.VERSION == "0.119.0", "uqff_calculator.VERSION = 0.119.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1783,6 +1783,19 @@ assert_that(abs(_r115['doppler_chain'] - 2.28e6) < 0.01e6,
 assert_that(abs(_r115['t_jet_yr'] - 3.03e5) < 0.01e5,
             "PAPER_115: t_jet = 3.03e5 yr EXACT (65 kpc / 0.7c)")
 assert_that(C.wired_count() >= 119, "wired_count >= 119")
+
+_r116 = C.calc('PAPER_116')['value']
+assert_that(abs(_r116['e4_ev'] - 624.15) < 0.01,
+            "PAPER_116: E_4 = 624 eV EXACT (adjacent to Holmlid 630 family - cross-repo note)")
+assert_that(abs(_r116['n_atlas'] - 4.204) < 0.001 and abs(_r116['n_cms'] - 4.173) < 0.001,
+            "PAPER_116: ATLAS 4.204 / CMS 4.173 ladder assignments EXACT")
+assert_that(abs(_r116['e_transfer_is_1kev'] - 1.0) < 0.01,
+            "PAPER_116: E_transfer anchor is exactly 1 keV, underived from Lambda = 30 TeV (Q-112a)")
+assert_that(abs(_r116['n_hadronic_1gev'] - 10.205) < 0.001,
+            "PAPER_116: hadronic 1 GeV -> n = 10.20 CONFIRMS PAPER_112 Q-108a correction (self-rectification No. 8)")
+assert_that(abs(_r116['n_lambda_30tev'] - 14.68) < 0.01,
+            "PAPER_116: Lambda = 30 TeV -> n = 14.68 EXACT")
+assert_that(C.wired_count() >= 120, "wired_count >= 120")
 
 # =============================================================================
 # REPORT

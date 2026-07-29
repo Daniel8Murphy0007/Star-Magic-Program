@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 119 (11 ✓, 108 ⚠ OPEN_RULING)
+- **Wired:** 120 (11 ✓, 109 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2136
+- **Not yet touched:** 2135
 
 ---
 
@@ -330,7 +330,7 @@
 | ⬜ | PAPER_1167 | UQFF All 8 Lagrangian Gaps Closed Master Synthesis |
 | ⬜ | PAPER_1168 | UQFF Falsifiable Predictions Closed Lagrangian |
 | ⬜ | PAPER_1169 | UQFF Numerical Confrontation P1 P5 With Archival Data |
-| ⬜ | PAPER_116 | EP03 LHC VirtualQuark Proof |
+| ⚠ | PAPER_116 | EP03 LHC VirtualQuark Proof |
 | ⬜ | PAPER_1170 | UPDATE Session 2026 June Vacuum Ledger |
 | ⬜ | PAPER_1170 | UQFF Vacuum Energy Ledger R26 KK BSFG Saturation |
 | ⬜ | PAPER_1171 | UQFF KK Regulator First Principles Derivation |

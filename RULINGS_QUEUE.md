@@ -2092,6 +2092,7 @@ RESOLVED section with the ruling recorded.
   EXACT (electron/EW/nuclear/E_13 = 624 GeV); the defects are
   in the mid-band transcription and the statistics framing,
   not in the ladder itself.
+- **UPDATE (PAPER_116):** the EP-03 hadronic row (1 GeV -> n = 10.204, expected n = 10) CONFIRMS the (a) correction from within the corpus - self-rectification No. 8.
 - **Best-candidate wired:** ladder + EXACT anchors + corrected
   hadron cluster; statistics carried as claimed-with-defect.
 - **Daniel's ruling:** (pending)
@@ -2179,6 +2180,33 @@ RESOLVED section with the ruling recorded.
   in R.
 - **Best-candidate wired:** both ladders exposed with corrected
   N thresholds; U_bi at true 65 kpc; crossed-value forensics.
+- **Daniel's ruling:** (pending)
+
+### Q-112 — PAPER_116 EP-03 — underived 1-keV anchor + Q-108a confirmation
+- **Question:** (a) UNDERIVED ANCHOR: E_transfer = 1.6e-16 J
+  (exactly 1 keV) is the load-bearing input for the
+  Delta-n = 0.204 headline, but NO chain connects it to
+  Lambda = 30 TeV. The paper's own two E_virtual attempts give
+  3.5e-18 J (tau = 3e-17 s) and 3.2e-11 J (r = 1 fm) — neither
+  matches. Provide the t-channel derivation or mark the 1-keV
+  anchor calibrated.
+  (b) LABEL TENSION: hbar*c/E_4 = 2.0e-10 m is atomic scale;
+  the "sub-hadronic QCD boundary" interpretation is asserted
+  (the paper's own "Wait — correcting" passage abandoned the
+  radius chain when it landed atomic).
+  (c) SELF-RECTIFICATION No. 8 (FYI, supports Q-108a): the
+  paper's hadronic row (1 GeV -> n = 10.204, expected n = 10)
+  confirms from within the corpus that hadrons sit at n = 10,
+  matching my PAPER_112 mid-band correction (proton n = 10.18;
+  cluster 9-11 not 8-9).
+  (d) CROSS-REPO NOTE: E_4 = 624 eV sits adjacent to the
+  predecessor Holmlid 630 eV / Coulomb-at-2.3pm 626 eV family —
+  convergence candidate worth a dedicated derivation session?
+- **Notable:** all defined chains EXACT (E_4 = 624 eV, ATLAS
+  4.204, CMS 4.173, Lambda->14.68, CMS 28/30 scaling); the
+  validator's 60 pct error-vs-E_4 disclosure is honest.
+- **Best-candidate wired:** ladder anchors EXACT; 1-keV anchor
+  carried as underived; Q-108a support registered.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

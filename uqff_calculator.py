@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.118.0"
+VERSION = "0.119.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6062,5 +6062,60 @@ def _paper_115(dataset):
         'formula': 'R_N = (1 + SSq*2/pi)^N; U_bi = F_rel*SSq/r^2',
         'source': 'PAPER_115',
         'residual_pct': abs(per - 1.363) / 1.363 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_116')
+def _paper_116(dataset):
+    """EP-03: ATLAS Run 3 Virtual Quark - Ladder n=4 (Session 0).
+
+    Same ladder as PAPER_112 (E_n = 10^(n-20) J). VERIFIED
+    EXACT: E_4 = 1e-16 J = 624 eV; lambda_4 = 1.99 nm;
+    n(1.6e-16) = 4.204; n(1.49e-16) = 4.173; CMS scaling
+    (28/30)*1.6e-16 = 1.493e-16; Lambda_30TeV = 4.81e-6 J ->
+    n = 14.68; validator 60 pct error-vs-E4 disclosure honest.
+    UNDERIVED ANCHOR (Q-112a): E_transfer = 1.6e-16 J is
+    exactly 1 keV, but NO derivation connects it to
+    Lambda = 30 TeV - the paper's own two E_virtual chains
+    give 3.5e-18 J (tau = 3e-17 s) and 3.2e-11 J (r = 1 fm),
+    neither matches. The Delta-n = 0.204 headline rests on it.
+    LABEL TENSION (Q-112b): hbar*c/E_4 = 2.0e-10 m is ATOMIC
+    scale; the "sub-hadronic QCD boundary" label is asserted -
+    the paper's own abandoned chain (its "Wait - correcting"
+    passage) saw this.
+    SELF-RECTIFICATION No. 8 (Q-112c): the hadronic row
+    (1 GeV -> n = 10.204, expected n = 10) CONFIRMS the
+    PAPER_112 Q-108a mid-band correction (proton n = 10.18,
+    hadron cluster 9-11 not 8-9) from within the corpus itself.
+    CROSS-REPO NOTE (Q-112d): E_4 = 624 eV sits adjacent to
+    the predecessor Holmlid 630 eV / Coulomb 626 eV family.
+    Coupling_n = SSq*(n/4): unit value 0.57 at n=4 by
+    construction.
+    """
+    import math as _m
+    eV = 1.602176634e-19
+    return {
+        'value': {
+            'domain': '1.15 (EP-03 ladder n=4)',
+            'source': 'ATLAS-CONF-2025-007 (Lambda_LL > 30 TeV) + CMS-EXO-24-006 (28 TeV)',
+            'e4_j': 1e-16,
+            'e4_ev': 1e-16 / eV,                               # 624.15 EXACT
+            'lambda4_m': 6.626e-34 * 3e8 / 1e-16,              # 1.99e-9 EXACT
+            'n_atlas': _m.log10(1.6e-16 / 1e-20),              # 4.204 EXACT
+            'n_cms': _m.log10(1.49e-16 / 1e-20),               # 4.173 EXACT
+            'n_lambda_30tev': _m.log10(30e12 * eV / 1e-20),    # 14.68 EXACT
+            'e_transfer_is_1kev': 1.6e-16 / (1e3 * eV),        # 0.999 - underived anchor
+            'inpaper_evirtual_candidates': (3.5e-18, 3.2e-11), # neither matches
+            'hbar_c_over_e4_m': 1.055e-34 * 3e8 / 1e-16,       # 3.2e-10 atomic scale
+            'n_hadronic_1gev': _m.log10(1.602176634e-10 / 1e-20),  # 10.20 - CONFIRMS Q-108a
+            'self_rectification': 'No. 8: hadronic n=10 row confirms PAPER_112 mid-band correction',
+            'coupling_n4': SSQ,                                # unit by construction
+            'error_vs_e4_pct': 60.0,                           # honest in-paper disclosure
+            'cross_repo_note': 'E_4 = 624 eV adjacent to Holmlid 630 / Coulomb 626 eV family',
+        },
+        'formula': 'E_n = 10^(n-20) J; n = log10(E/1e-20); Coupling_n = SSq*n/4',
+        'source': 'PAPER_116',
+        'residual_pct': abs(_m.log10(1.6e4) - 4.204) / 4.204 * 100,
         'status': 'OPEN_RULING',
     }
