@@ -868,6 +868,22 @@ RESOLVED section with the ruling recorded.
   verified 37.5x ratio.
 - **Daniel's ruling:** (pending)
 
+### Q-052 — PAPER_056 — calibrated 2x factor + M42 row confusion + 256 anchor
+- **Question:** (a) The 2x compression factor is CALIBRATED, not
+  derived - the printed EUV closed form sqrt(1 + k_B*T/(m_p*c^2))
+  gives sqrt(1 + 3.7e-8) ~ 1 (and its own intermediate prints 0.04,
+  off by 6 orders); the paper discloses "calibrated to 2.0 at the
+  wind-velocity regime". What is the canonical closed form for the
+  wind-radiation compression class? (b) "222x weaker than M42"
+  actually matches the MICE ratio (2.95e-10/1.3275e-12 = 222.2);
+  the true M42 ratio is 500x - row confusion (both values pinned).
+  (c) The wind chain's Ug2/g_grav = 256 anchor is underived - 2^8
+  candidate composition?
+- **Best-candidate wired:** 2x EXACT + wind chain 1600 km/s
+  verified; three-tier hierarchy (1x/2x/10x) completed and pinned;
+  all ratios recomputed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

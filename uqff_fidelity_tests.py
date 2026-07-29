@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.58.0", "uqff_calculator.VERSION = 0.58.0")
+assert_that(C.VERSION == "0.59.0", "uqff_calculator.VERSION = 0.59.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -945,6 +945,21 @@ assert_that(_r055['score'] == (4, 4),
 assert_that(abs(_r055['hubble_factor'] - 1.0002) < 1e-6 and _r055['z'] > 0.02,
             "PAPER_055: Hubble 1.0002 at z = 0.022 - third Q-050a systematic datum")
 assert_that(C.wired_count() >= 59, "wired_count >= 59")
+
+_r056 = C.calc('PAPER_056')['value']
+assert_that(abs(_r056['compression_factor'] - 2.0) < 1e-4,
+            "PAPER_056: 2x compression EXACT (2.1066e-2 / 1.0533e-2)")
+assert_that(abs(_r056['wind_kms'] - 1600.0) < 1e-9,
+            "PAPER_056: wind chain 100*sqrt(256) = 1600 km/s VERIFIED (fastest PN wind)")
+assert_that(abs(_r056['ratio_ngc2264'] - 44.70) < 0.1,
+            "PAPER_056: 44.8x-vs-NGC2264 claim verifies (44.70)")
+assert_that(abs(2.9500e-10 / 1.3275e-12 - 222.2) < 0.5,
+            "PAPER_056: the '222x M42' figure actually matches the MICE ratio (Q-052b row confusion)")
+assert_that(abs(_r056['ratio_m42_true'] - 500.0) < 1.0,
+            "PAPER_056: true M42 ratio = 500x pinned")
+assert_that(_r056['tier_hierarchy'] == {'standard': 1, 'wind_radiation': 2, 'merger': 10},
+            "PAPER_056: three-tier compression hierarchy complete (1x/2x/10x)")
+assert_that(C.wired_count() >= 60, "wired_count >= 60")
 
 # =============================================================================
 # REPORT

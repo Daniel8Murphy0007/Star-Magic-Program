@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.59.0] — 2026-07-29 — BAND 1: PAPER_056
+
+### Added
+- **PAPER_056 dispatch** (Red Spider Nebula NGC 6537): the 2x
+  wind-radiation compression class (EXACT: 2.1066e-2 = 2*universal) —
+  completing the THREE-TIER hierarchy 1x standard / 2x wind-radiation
+  / 10x merger, testable via shock velocities. Wind chain VERIFIED:
+  v = v_esc*sqrt(Ug2/g) = 100*sqrt(256) = 1600 km/s (fastest PN wind
+  known); lowest local g_grav (radiation-pressure dominated);
+  "44.8x vs NGC2264" verifies. HONEST: the paper discloses the 2x
+  factor is calibrated (its printed EUV closed form evaluates to ~1).
+  OPEN_RULING Q-052 (2x closed form OPEN; "222x M42" actually matches
+  the Mice ratio — row confusion, true M42 = 500x, both pinned;
+  Ug2/g = 256 anchor underived).
+- Gate: 419 assertions, 0 failures. Registry: 178 rows / 342 edges / 60 ledgers.
+
+---
+
 ## [0.58.0] — 2026-07-29 — BAND 1: PAPER_055
 
 ### Added

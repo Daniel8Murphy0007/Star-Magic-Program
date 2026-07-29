@@ -337,3 +337,8 @@ observable,merger_taxonomy_uqff,paper,PAPER_055,primary derivation
 observable,merger_taxonomy_uqff,paper,PAPER_054,minor-merger exemplar
 observable,suite_exponent_pinning,paper,PAPER_055,primary verification
 observable,suite_exponent_pinning,paper,PAPER_052,suite exponents context
+primitive,SSQ,observable,wind_channeling_chain,(1+[SSq]) bipolar anisotropy
+observable,red_spider_2x_class,paper,PAPER_056,primary derivation
+observable,wind_channeling_chain,paper,PAPER_056,primary derivation
+observable,compression_tier_hierarchy,paper,PAPER_056,hierarchy completion
+observable,compression_tier_hierarchy,paper,PAPER_055,10x merger tier

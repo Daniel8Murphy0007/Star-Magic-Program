@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 59 (10 ✓, 49 ⚠ OPEN_RULING)
+- **Wired:** 60 (10 ✓, 50 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2196
+- **Not yet touched:** 2195
 
 ---
 
@@ -89,7 +89,7 @@
 | ✓ | PAPER_053 | NGC2264 Star Formation UQFF |
 | ⚠ | PAPER_054 | Tadpole Galaxy UGC10214 UQFF |
 | ⚠ | PAPER_055 | Mice Galaxies NGC4676 UQFF |
-| ⬜ | PAPER_056 | Red Spider Nebula UQFF |
+| ⚠ | PAPER_056 | Red Spider Nebula UQFF |
 | ⬜ | PAPER_057 | Carina Nebula Multi Scale UQFF |
 | ⬜ | PAPER_058 | M42 Orion Nebula UQFF |
 | ⬜ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF |

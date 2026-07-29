@@ -1,26 +1,22 @@
-v0.58.0 BAND 1: PAPER_055 wired
+v0.59.0 BAND 1: PAPER_056 wired
 
-PAPER_055 NGC 4676 The Mice (OPEN_RULING Q-051):
-  MAJOR-MERGER case: 10x enhancement of BOTH g_compressed and
-  R_amplitude - the UQFF merger signature:
-    (1 + 0.3 overlap)^2.3 = 1.83 geometric x ~5.5 [SCm]
-    halo-overlap compression spike ~ 10
-  MERGER TAXONOMY (IFU-falsifiable via shock-zone spectroscopy):
-    minor merger (Tadpole): Ug3 torque -> one-sided tail,
-    standard compression
-    major merger (Mice): [SCm] compression -> 10x, symmetric
-    double tails
-  "37.5x vs Tadpole" VERIFIES EXACTLY (2.95e-10/7.8551e-12 =
-  37.56) - pins the suite's g_grav exponent family and confirms
-  Q-050b's computed arithmetic.
-  Timeline: 10x at pericenter (-160 Myr), relaxes to standard at
-  coalescence (+2.5 Gyr). Hubble 1.0002 at z = 0.022 = third
-  Q-050a systematic datum.
+PAPER_056 Red Spider Nebula NGC 6537 (OPEN_RULING Q-052):
+  The 2x WIND-RADIATION compression class (EXACT: 2.1066e-2 =
+  2 * universal normalization) - completing the THREE-TIER
+  compression hierarchy:
+    1x standard / 2x wind-radiation / 10x merger
+  (testable via shock velocities across PN and merger systems)
+  Wind chain VERIFIED: v = v_esc*sqrt(Ug2/g_grav) =
+  100*sqrt(256) = 1600 km/s - the fastest PN wind known
+  Lowest local g_grav (1.3275e-12): radiation-pressure dominated
+  "44.8x weaker than NGC2264" verifies (44.70)
+  HONEST in-paper: the 2x factor is CALIBRATED - the printed EUV
+  closed form evaluates to ~1 (disclosed)
 
-Q-051 queued: "2x NGC3372" fails both exponent readings (0.89x or
-8.9x); geometric factor printed ~1.7 vs computed 1.83; enhanced-
-value exponents mojibaked.
+Q-052 queued: 2x closed form OPEN; "222x weaker than M42" actually
+matches the MICE ratio (row confusion; true M42 = 500x - both
+pinned); Ug2/g = 256 anchor underived (2^8 candidate).
 
-Gate 413 assertions 0 failures. Registry 175 rows / 337 edges / 59
-citation ledgers. Wired 59/2,255 (10 clean, 49 OPEN_RULING).
-Next: PAPER_056.
+Gate 419 assertions 0 failures. Registry 178 rows / 342 edges / 60
+citation ledgers. Wired 60/2,255 (10 clean, 50 OPEN_RULING).
+Next: PAPER_057.

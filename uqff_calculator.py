@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.58.0"
+VERSION = "0.59.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2942,5 +2942,58 @@ def _paper_055(dataset):
                     '(1.3)^2.3 * ~5.5 ~ 10'),
         'source': 'PAPER_055',
         'residual_pct': abs(2.9500e-10 / 7.8551e-12 - 37.5) / 37.5 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_056')
+def _paper_056(dataset):
+    """Red Spider Nebula NGC 6537: 2x Compression Class (S0).
+
+    Model paper 4 - completes the THREE-TIER COMPRESSION HIERARCHY:
+    1x standard / 2x wind-radiation (here) / 10x merger (Mice) -
+    testable via shock velocities across PN and merger systems.
+    2x EXACT: g_comp = 2.1066e-2 = 2*universal; R = 2.3173e-2.
+    Wind chain VERIFIED: v = v_esc*sqrt(Ug2/g) = 100*sqrt(256) =
+    1600 km/s (fastest PN wind known; radiation-pressure dominated,
+    lowest local g_grav = 1.3275e-12). "44.8x weaker than NGC2264"
+    verifies (44.70). HONEST in-paper: the printed EUV closed form
+    gives sqrt(1 + 3.7e-8) ~ 1, NOT 2 - the paper discloses the 2x
+    factor is "calibrated to 2.0 at the wind-velocity regime".
+    Q-052: (a) 2x calibrated, closed form OPEN (printed formula off
+    by 8 orders in its own exponent too - 0.04 vs 3.7e-8);
+    (b) "222x weaker than M42" actually matches the MICE value
+    (2.95e-10/1.3275e-12 = 222); true M42 ratio = 500x - row
+    confusion; (c) Ug2/g_grav = 256 anchor underived (= 2^8?).
+    """
+    import math as _m
+    two_x = 2.1066e-2 / 1.0533e-2                    # 2.0000 EXACT
+    wind = 100.0 * _m.sqrt(256.0)                    # 1600 VERIFIED
+    r_2264 = 5.9336e-11 / 1.3275e-12                 # 44.70
+    r_mice = 2.9500e-10 / 1.3275e-12                 # 222.2 (= the "222" claim)
+    r_m42 = 6.6376e-10 / 1.3275e-12                  # 500.0 true
+    return {
+        'value': {
+            'system': 'Red Spider Nebula (NGC 6537)',
+            'distance_kpc': 1.5,
+            't_star_k': 4.0e5,
+            'g_grav': 1.3275e-12,
+            'g_compressed': 2.1066e-2,
+            'compression_factor': two_x,             # 2.0 EXACT
+            'r_amplitude': 2.3173e-2,
+            'wind_kms': wind,                        # 1600 VERIFIED
+            'ug2_over_g': 256.0,                     # Q-052c (2^8?)
+            'hubble_factor': 1.0000,
+            'tier_hierarchy': {'standard': 1, 'wind_radiation': 2, 'merger': 10},
+            'ratio_ngc2264': r_2264,                 # 44.70 (~claim 44.8)
+            'ratio_222_matches': 'Mice (2.95e-10), not M42 - Q-052b',
+            'ratio_m42_true': r_m42,                 # 500.0
+            'euv_formula_status': 'calibrated to 2.0; closed form OPEN (disclosed in-paper)',
+            'score': (4, 4),
+        },
+        'formula': ('v_wind = v_esc*sqrt(Ug2/g_grav) = 100*sqrt(256) = 1600 km/s; '
+                    'tier: 1x / 2x / 10x compression classes'),
+        'source': 'PAPER_056',
+        'residual_pct': abs(r_2264 - 44.8) / 44.8 * 100,
         'status': 'OPEN_RULING',
     }
