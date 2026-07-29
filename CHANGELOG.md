@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.48.0] — 2026-07-29 — BAND 1: PAPER_045
+
+### Added
+- **PAPER_045 dispatch** (Quantum Phase Transitions, levels 10-13):
+  the matter-state quartet SOLID/LIQUID/GAS/PLASMA. Transition law
+  Delta_rho = rho_L1*(2n+1) — melting 2.1e-7 / vaporization 2.3e-7 /
+  ionization 2.5e-7 J/m^3 ALL VERIFIED, thermodynamically ordered
+  (universal-vs-material ratio honestly disclosed). Cross-scale
+  coupling C_ij verified: adjacent 0.477, distant C_10,26 = 0.0144 —
+  a real 1.44% solid-to-universe coupling (UQFF basis for Casimir +
+  long-range correlations). Plasma beta = 0.60 (weakest matter-state
+  coupling) is the 2nd corpus datum supporting the BETA_I-as-plasma-
+  level origin hypothesis (Q-041e annotated). The single validator
+  failure (10/11) is root-caused IN-PAPER with the fix — model
+  engineering behavior. CLEAN wiring.
+- Gate: 353 assertions, 0 failures. Registry: 145 rows / 282 edges / 49 ledgers.
+
+---
+
 ## [0.47.0] — 2026-07-29 — BAND 1: PAPER_044
 
 ### Added

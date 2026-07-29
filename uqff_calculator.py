@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.47.0"
+VERSION = "0.48.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2371,4 +2371,54 @@ def _paper_044(dataset):
         'source': 'PAPER_044',
         'residual_pct': abs(e_center(26) - 2.83e-84) / 2.83e-84 * 100,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_045')
+def _paper_045(dataset):
+    """Quantum Phase Transitions at Levels 10-13 (Session 0).
+
+    The matter-state quartet: SOLID/LIQUID/GAS/PLASMA = levels
+    10/11/12/13. Phase-transition energy density Delta_rho =
+    rho_L1*(2n+1): melting 2.1e-7, vaporization 2.3e-7, ionization
+    2.5e-7 J/m^3 - ALL VERIFIED; ordering consistent with
+    thermodynamics; honest disclosure that 23/21 = 1.095 is a
+    universal scale parameter (water L_vap/L_fus = 6.8 material-
+    specific). Cross-scale coupling C_ij = lambda_i*lambda_j*
+    sqrt(min/max): adjacent C_10,11 = 0.477 VERIFIED; distant
+    C_10,26 = 0.0144 VERIFIED - 1.44 pct solid-to-universe coupling
+    (UQFF basis for Casimir + long-range condensed-matter
+    correlations). beta declines 0.05/level through the quartet;
+    PLASMA (13) = 0.60 weakest matter-state coupling - SUPPORTS the
+    Q-041e hypothesis (canonical BETA_I as plasma-level coupling).
+    MODEL PAPER BEHAVIOR: the single validator failure (10/11) is
+    dissected in-paper with root cause (strict-vs-nonstrict lookup
+    inequality) and fix - honest engineering. CLEAN wiring.
+    """
+    import math as _m
+    rho = lambda n: 1.0e-8 * n ** 2
+    lam = {10: 0.75, 11: 0.70, 12: 0.65, 13: 0.60, 26: 0.05}
+    c_ij = lambda i, j: lam[i] * lam[j] * _m.sqrt(min(rho(i), rho(j)) / max(rho(i), rho(j)))
+    d_rho = lambda n: 1.0e-8 * (2 * n + 1)
+    return {
+        'value': {
+            'phase_levels': {'solid': 10, 'liquid': 11, 'gas': 12, 'plasma': 13},
+            'melting_j_m3': d_rho(10),               # 2.1e-7 VERIFIED
+            'vaporization_j_m3': d_rho(11),          # 2.3e-7 VERIFIED
+            'ionization_j_m3': d_rho(12),            # 2.5e-7 VERIFIED
+            'vap_fus_ratio_uqff': 23.0 / 21.0,       # 1.095 universal (water 6.8 disclosed)
+            'c_adjacent_10_11': c_ij(10, 11),        # 0.477 VERIFIED
+            'c_distant_10_26': c_ij(10, 26),         # 0.0144 VERIFIED
+            'solid_universe_coupling_pct': c_ij(10, 26) * 100.0,
+            'beta_quartet': (0.75, 0.70, 0.65, 0.60),
+            'beta_decrement': 0.05,
+            'plasma_beta': 0.60,                     # supports Q-041e BETA_I origin
+            'validator_score': (10, 11),
+            'failure_analysis': 'strict-vs-nonstrict lookup inequality, root-caused + fixed in-paper',
+        },
+        'formula': ('Delta_rho = rho_L1*(2n+1); C_ij = lambda_i*lambda_j*sqrt(min/max); '
+                    'rho_n = rho_L1*n^2'),
+        'source': 'PAPER_045',
+        'residual_pct': abs(c_ij(10, 11) - 0.477) / 0.477 * 100,
+        'status': 'WIRED',
     }

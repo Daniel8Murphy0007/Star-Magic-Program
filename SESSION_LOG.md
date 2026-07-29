@@ -833,3 +833,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 48/2,255 (8 ✓, 40 ⚠). Next: PAPER_045.
 
 ---
+
+## 2026-07-29 — v0.48.0 — BAND 1: PAPER_045
+
+- PAPER_045 wired (✓ CLEAN): matter-state quartet. (2n+1) law +
+  couplings verified; plasma beta = 0.60 strengthens the BETA_I
+  origin hypothesis (Q-041e annotated); in-paper failure analysis is
+  model behavior.
+- Gate 353/0. Registry 145 rows / 282 edges / 49 ledgers.
+- Campaign: 49/2,255 (9 ✓, 40 ⚠). Next: PAPER_046.
+
+---

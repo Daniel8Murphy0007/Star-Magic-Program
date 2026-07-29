@@ -662,6 +662,8 @@ RESOLVED section with the ruling recorded.
   canonical? (e) NOTEWORTHY - LEVEL 13 (PLASMA) beta = 0.60 ~
   canonical BETA_I = 0.6029: is the canonical buoyancy coupling THE
   plasma-level value of the 26-ladder (origin hypothesis)?
+  [2nd DATUM from PAPER_045: plasma = weakest matter-state coupling,
+  quartet declines 0.75 -> 0.60 - hypothesis strengthened.]
   (f) FORENSIC: U_i level-10 = 9.47e14 emerges from 0.7575*1.25e12*
   1e3 - the "9.47" number family (predecessor PAPER_2156 audit) can
   arise naturally from beta*omega products; new data point recorded.

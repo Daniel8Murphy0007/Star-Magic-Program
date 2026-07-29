@@ -277,3 +277,8 @@ observable,pre_bigbang_26_centers,paper,PAPER_044,primary derivation
 observable,pre_bigbang_26_centers,paper,PAPER_043,level-hierarchy unfolding
 observable,inflation_force_dpm,paper,PAPER_044,primary derivation
 observable,dpm_naming_lineage,paper,PAPER_044,primary derivation
+observable,phase_transition_quartet,paper,PAPER_045,primary derivation
+observable,phase_transition_quartet,paper,PAPER_043,level hierarchy base
+observable,cross_scale_coupling,paper,PAPER_045,primary derivation
+observable,plasma_beta_060_support,paper,PAPER_045,primary derivation
+primitive,BETA_I,observable,plasma_beta_060_support,canonical-as-plasma hypothesis

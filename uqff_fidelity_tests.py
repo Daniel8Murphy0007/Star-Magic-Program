@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.47.0", "uqff_calculator.VERSION = 0.47.0")
+assert_that(C.VERSION == "0.48.0", "uqff_calculator.VERSION = 0.48.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -786,6 +786,21 @@ assert_that(_r044['matter_state_centers_k'] == 1,
 assert_that(_r044['validator_score'] == (12, 12),
             "PAPER_044: DPM cosmology validator 12/12 PASS")
 assert_that(C.wired_count() >= 48, "wired_count >= 48")
+
+_r045 = C.calc('PAPER_045')['value']
+assert_that(abs(_r045['melting_j_m3'] - 2.1e-7) < 1e-12,
+            "PAPER_045: melting Delta_rho = rho_L1*21 = 2.1e-7 J/m^3 VERIFIED")
+assert_that(abs(_r045['ionization_j_m3'] - 2.5e-7) < 1e-12,
+            "PAPER_045: ionization Delta_rho = rho_L1*25 = 2.5e-7 J/m^3 VERIFIED")
+assert_that(abs(_r045['c_adjacent_10_11'] - 0.477) < 0.001,
+            "PAPER_045: adjacent coupling C_10,11 = 0.477 VERIFIED")
+assert_that(abs(_r045['c_distant_10_26'] - 0.0144) < 0.0002,
+            "PAPER_045: distant coupling C_10,26 = 0.0144 - 1.44 pct solid-universe (Casimir basis)")
+assert_that(abs(_r045['plasma_beta'] - 0.60) < 1e-12,
+            "PAPER_045: plasma beta = 0.60 weakest matter-state coupling (supports Q-041e origin)")
+assert_that(_r045['validator_score'] == (10, 11),
+            "PAPER_045: 10/11 with the failure root-caused in-paper (model behavior)")
+assert_that(C.wired_count() >= 49, "wired_count >= 49")
 
 # =============================================================================
 # REPORT
