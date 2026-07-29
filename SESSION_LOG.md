@@ -1496,3 +1496,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 115/2,255 (11 ✓, 104 ⚠). Next: PAPER_112.
 
 ---
+
+## 2026-07-29 — v0.115.0 — BAND 1: PAPER_112
+
+- PAPER_112 wired (⚠ Q-108): EP-02 PDG ladder. Anchors EXACT;
+  systematic −1 mid-band defect found (hadron cluster → 9-11);
+  statistics framing defects pinned.
+- Campaign: 116/2,255 (11 ✓, 105 ⚠). Next: PAPER_113.
+
+---

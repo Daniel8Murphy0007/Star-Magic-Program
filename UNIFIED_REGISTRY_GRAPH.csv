@@ -630,3 +630,8 @@ primitive,SSQ,observable,ep01_jet_asymmetry,series weight (asserted)
 observable,ep01_jet_asymmetry,paper,PAPER_102,nu_eff consistency
 observable,ep01_dissipation_defect,paper,PAPER_111,triple defect
 observable,ep01_dissipation_defect,paper,PAPER_089,footer recurrence
+observable,ep02_energy_ladder,paper,PAPER_112,ladder assignments
+primitive,D_CRIT,observable,ep02_energy_ladder,26 levels
+primitive,KAPPA_PER_DAY,observable,ep02_energy_ladder,S204.5 conversion EXACT
+observable,ep02_midband_defect,paper,PAPER_112,-1 systematic
+observable,ep02_midband_defect,paper,PAPER_089,footer recurrence

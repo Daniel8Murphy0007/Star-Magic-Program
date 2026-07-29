@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.114.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.114.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.115.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.115.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-786%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-115-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-793%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-116-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.114.0 wiring campaign live**
+**UQFF systematic rebuild — v0.115.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.114.0)
+## What is currently shipped (v0.115.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 115 / 2,255** (11 ✓ · 104 ⚠ OPEN_RULING · 107 rulings queued) — EP-01 jet sign-reversal mechanism (111)
+**Wired so far: 116 / 2,255** (11 ✓ · 105 ⚠ OPEN_RULING · 108 rulings queued) — EP-02 ladder −1 defect found (112)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -174,6 +174,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_109 | EP-11 GW170817 r-Process | v = β_i·c = 1.83e8 EXACT; SSq activation 6th role; M_r = 1.15e-4 EXACT; Q-105 |
 | PAPER_110 | EP-06 Gaia SgrA* | M_BH 0.07 pct; v_c 0.85 pct EXACT; Ug4 = 1.894-family origin candidate; Q-106 |
 | PAPER_111 | EP-01 RACS Jet | cos sign-reversal mechanism; scan EXACT; R = 1.5 series OPEN; 27-Gyr fix; Q-107 |
+| PAPER_112 | EP-02 PDG Ladder | EW/nuclear anchors EXACT; mid-band −1 defect; hadron cluster → 9-11; Q-108 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -184,7 +185,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (786 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (793 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -319,7 +320,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.111.0 | Band 1: PAPER_108 | 112 |
 | v0.112.0 | Band 1: PAPER_109 | 113 |
 | v0.113.0 | Band 1: PAPER_110 | 114 |
-| **v0.114.0** ← current | Band 1: PAPER_111 | 115 |
+| v0.114.0 | Band 1: PAPER_111 | 115 |
+| **v0.115.0** ← current | Band 1: PAPER_112 | 116 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

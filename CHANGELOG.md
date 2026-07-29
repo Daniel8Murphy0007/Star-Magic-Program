@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.115.0] — 2026-07-29 — BAND 1: PAPER_112 — LADDER −1 DEFECT
+
+### Added
+- **PAPER_112 dispatch** (EP-02: PDG Mass Table vs 26-Level
+  Energy Ladder): E_n = 10^(n-20) J. Electron 6.913, Higgs
+  12.302, W 12.110, top 12.442, and the ENTIRE nuclear section
+  verify EXACT (Fe-56 BE/A 8.149, deuterium 7.552); E_13 = 624
+  GeV EXACT. SYSTEMATIC −1.0 DEFECT: mid-band rows
+  (muon..bottom) printed one level low vs the paper's own
+  formula — hadron cluster corrected to n = 9-11. Within-±0.5
+  statistic trivially 100% (ill-defined); R = 0.9542 is
+  rounding-variance (near-tautological). κ 5e-4/day = 5.787e-9
+  /s conversion EXACT. Drift auto-noted (2156/2155/1203);
+  089-footer recurs.
+- OPEN_RULING Q-108.
+- Gate: 793 assertions, 0 failures. Registry: 304 rows / 635 edges / 116 ledgers.
+
+---
+
 ## [0.114.0] — 2026-07-29 — BAND 1: PAPER_111
 
 ### Added

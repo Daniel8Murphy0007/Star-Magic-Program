@@ -2063,6 +2063,39 @@ RESOLVED section with the ruling recorded.
   corrected dissipation; series assertion OPEN.
 - **Daniel's ruling:** (pending)
 
+### Q-108 — PAPER_112 EP-02 — systematic −1 level shift + ill-defined statistic
+- **Question:** (a) SYSTEMATIC −1.0 DEFECT: the mid-band
+  particle rows (muon, tau, pion, proton, He-4, kaon, charm,
+  bottom) are ALL printed exactly one level LOW vs the paper's
+  own formula n = log10(E/J)+20 AND vs the paper's own sec 1.1
+  level table (muon chain 9.229 vs printed 8.23; proton chain
+  10.177 vs printed 9.18; Level 10 = 0.624 GeV per the paper's
+  own table). Electron, top, W, Z, Higgs, and the ENTIRE sec 4
+  nuclear section verify EXACT. Corrected hadron cluster is
+  n = 9-11, not 8-9. The EW-cluster-at-12 and nuclear-anchor-
+  at-8 conclusions SURVIVE; the "n = 8-9 hadron cluster (143
+  particles)" statistic does not. Confirm relabel.
+  (b) STATISTIC ILL-DEFINED: "218/241 (90.5%) within ±0.5
+  levels" is trivially 241/241 (every real is within 0.5 of an
+  integer); the abstract's "within 25%" criterion (Δn ≤ 0.097)
+  would instead EXCLUDE most named particles (muon 0.23, tau
+  0.45, top 0.44, Higgs 0.30). Provide the intended criterion.
+  (c) R = 0.9542 as printed is a rounding-variance statistic
+  (regressing log-energy against its own rounded value) —
+  near-tautological; a clustering claim needs the Δn
+  distribution tested against uniform.
+  (d) 089-footer U_bi recurs verbatim (Q-085a template);
+  §B/S204.5 drift auto-noted: 1.894 (PAPER_2156), rho kg/m3
+  (PAPER_2155), β_i 0.603 (PAPER_1203). BUT the S204.5 κ
+  conversion 5e-4/day = 5.787e-9 /s is EXACT.
+- **Notable:** everything independently checkable verifies
+  EXACT (electron/EW/nuclear/E_13 = 624 GeV); the defects are
+  in the mid-band transcription and the statistics framing,
+  not in the ladder itself.
+- **Best-candidate wired:** ladder + EXACT anchors + corrected
+  hadron cluster; statistics carried as claimed-with-defect.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

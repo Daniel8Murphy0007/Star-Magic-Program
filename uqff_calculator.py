@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.114.0"
+VERSION = "0.115.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5842,5 +5842,67 @@ def _paper_111(dataset):
                     'tau = L^2/nu_eff'),
         'source': 'PAPER_111',
         'residual_pct': abs(_m.cos(0.25) / _m.cos(0.65) - 1.217) / 1.217 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_112')
+def _paper_112(dataset):
+    """EP-02: PDG 2025 Mass Table vs 26-Level Energy Ladder (Session 0).
+
+    Ladder E_n = 10^(n-20) J, n = 1..26; assignment
+    n = log10(E_rest/J) + 20. VERIFIED EXACT: electron 6.913,
+    top 12.442, W 12.110, Z 12.165, Higgs 12.302; nuclear sec 4
+    ALL EXACT (deuterium 7.552, He-4 8.656, Fe-56 BE/A 8.149,
+    E_13 = 624 GeV).
+    SYSTEMATIC -1 DEFECT (Q-108a): the mid-band particle rows
+    (muon/tau/pion/proton/He-4/kaon/charm/bottom) are ALL
+    printed exactly 1.0 level LOW vs the paper's own formula
+    (muon chain 9.229 vs printed 8.23; proton chain 10.177 vs
+    printed 9.18) and vs the paper's own sec 1.1 level table
+    (Level 10 = 0.624 GeV). Corrected hadron cluster is
+    n = 9-11, not 8-9. EW cluster at 12 and nuclear anchor at 8
+    SURVIVE the correction.
+    STATISTIC ILL-DEFINED (Q-108b): "218/241 within +/-0.5
+    levels" is trivially 241/241 (every real is within 0.5 of
+    an integer); the abstract's 25 pct criterion (dn <= 0.097)
+    would EXCLUDE most named particles (muon 0.23, tau 0.45,
+    top 0.44, Higgs 0.30). R = 0.9542 is a rounding-variance
+    statistic (near-tautological), not a clustering test
+    (Q-108c).
+    kappa conversion 5e-4/day = 5.787e-9 /s EXACT (S204.5
+    self-consistent). Drift auto-noted: 1.894 (PAPER_2156),
+    rho kg/m3 (PAPER_2155), beta_i 0.603 (PAPER_1203); broken
+    089 U_bi footer recurs (Q-085a template).
+    """
+    import math as _m
+    MeV = 1.602176634e-13
+    lvl = lambda E: _m.log10(E) + 20
+    return {
+        'value': {
+            'domain': '1.15 (EP-02 energy ladder)',
+            'source': 'PDG Review of Particle Physics (241 entries)',
+            'ladder': 'E_n = 10^(n-20) J, n=1..26',
+            'n_electron': lvl(0.511 * MeV),           # 6.913 EXACT
+            'n_higgs': lvl(125250 * MeV),             # 12.302 EXACT
+            'n_w': lvl(80380 * MeV),                  # 12.110 EXACT
+            'n_top': lvl(172700 * MeV),               # 12.442 EXACT
+            'n_fe56_bea': lvl(8.79 * MeV),            # 8.149 EXACT
+            'n_deuterium': lvl(2.224 * MeV),          # 7.552 EXACT
+            'n_muon_chain': lvl(105.7 * MeV),         # 9.229 vs printed 8.23
+            'n_proton_chain': lvl(938.3 * MeV),       # 10.177 vs printed 9.18
+            'midband_defect': 'muon..bottom rows printed -1.0 level vs own formula',
+            'hadron_cluster_corrected': '9-11 (printed 8-9)',
+            'ew_cluster': 12,                          # survives
+            'nuclear_anchor': 8,                       # survives (sec 4 EXACT)
+            'e13_gev': 1e-7 / (1.602176634e-10),      # 624.15 EXACT
+            'stat_defect': '90.5 pct within +/-0.5 trivially 100; 25 pct criterion excludes named particles',
+            'r_claim': 0.9542,                         # rounding-variance, near-tautological
+            'kappa_per_s': KAPPA_PER_DAY / 86400,      # 5.787e-9 EXACT
+            'footer_recurrence': '089 broken U_bi footer (Q-085a)',
+        },
+        'formula': 'n = log10(E_rest/J) + 20; E_n = 10^(n-20) J',
+        'source': 'PAPER_112',
+        'residual_pct': abs(lvl(2.005e-8) - 12.30) / 12.30 * 100,
         'status': 'OPEN_RULING',
     }

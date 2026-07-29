@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.114.0", "uqff_calculator.VERSION = 0.114.0")
+assert_that(C.VERSION == "0.115.0", "uqff_calculator.VERSION = 0.115.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1727,6 +1727,21 @@ assert_that(_r111['nu_eff_factor'] == 1.0099,
 assert_that(abs(_r111['doppler_bc_chain'] - 0.081) < 0.001,
             "PAPER_111: Doppler beta*cos chain 0.081 vs printed 0.091 pinned (Q-107c)")
 assert_that(C.wired_count() >= 115, "wired_count >= 115")
+
+_r112 = C.calc('PAPER_112')['value']
+assert_that(abs(_r112['n_higgs'] - 12.302) < 0.001,
+            "PAPER_112: Higgs level 12.302 EXACT (EW cluster at n=12)")
+assert_that(abs(_r112['n_fe56_bea'] - 8.149) < 0.001,
+            "PAPER_112: Fe-56 BE/A level 8.149 EXACT (nuclear anchor n=8, sec 4 all EXACT)")
+assert_that(abs(_r112['n_muon_chain'] - 9.229) < 0.001 and abs(_r112['n_proton_chain'] - 10.177) < 0.001,
+            "PAPER_112: mid-band -1.0 systematic defect pinned (muon 9.229 vs printed 8.23; proton 10.177 vs 9.18) (Q-108a)")
+assert_that(abs(_r112['e13_gev'] - 624.15) < 0.1,
+            "PAPER_112: E_13 = 624 GeV BSM threshold EXACT")
+assert_that(abs(_r112['kappa_per_s'] - 5.787e-9) < 1e-12,
+            "PAPER_112: kappa 5e-4/day = 5.787e-9 /s conversion EXACT (S204.5 self-consistent)")
+assert_that('trivially 100' in _r112['stat_defect'],
+            "PAPER_112: 90.5 pct within +/-0.5 statistic ill-defined - pinned (Q-108b)")
+assert_that(C.wired_count() >= 116, "wired_count >= 116")
 
 # =============================================================================
 # REPORT

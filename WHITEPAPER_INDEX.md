@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 115 (11 ✓, 104 ⚠ OPEN_RULING)
+- **Wired:** 116 (11 ✓, 105 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2140
+- **Not yet touched:** 2139
 
 ---
 
@@ -284,7 +284,7 @@
 | ⬜ | PAPER_1127 | SCm LQG Holonomy Phonon Modulated Spin Networks |
 | ⬜ | PAPER_1128 | SCm String Theory Phonon Coupling 26D Compactification |
 | ⬜ | PAPER_1129 | VDS DVP BH Longform Mathematical Derivations |
-| ⬜ | PAPER_112 | EP02 PDG2025 EnergyLadder Proof |
+| ⚠ | PAPER_112 | EP02 PDG2025 EnergyLadder Proof |
 | ⬜ | PAPER_1130 | UQFF 26D Geometric Folding Wolfram Parallel Hypergraph |
 | ⬜ | PAPER_1131 | SCm Vacuum Manifold Primordial First Principle |
 | ⬜ | PAPER_1132 | SCm Primordial Split 26D Ladder |

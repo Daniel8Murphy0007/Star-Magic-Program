@@ -1,30 +1,29 @@
-v0.114.0 BAND 1: PAPER_111 wired - EP-01 JET SIGN-REVERSAL MECHANISM
+v0.115.0 BAND 1: PAPER_112 wired - EP-02 LADDER -1 DEFECT FOUND
 
-PAPER_111 EP-01 RACS J0320-35 One-Sided Jet (OPEN_RULING Q-107):
-  Jet brightness asymmetry R ~ 1.5 via the cos(omega t_n) SIGN
-  REVERSAL: half-period counter-jet offset -> opposite buoyancy
-  signs (one jet enhanced, one suppressed) - the UQFF intrinsic
-  asymmetry mechanism, complementary to Doppler boosting.
+PAPER_112 EP-02 PDG Mass Table vs 26-Level Energy Ladder
+(OPEN_RULING Q-108):
+  E_n = 10^(n-20) J, n = log10(E_rest/J) + 20.
 
-  COS-SCAN CHAINS ALL EXACT: cos(1.0)/cos(1.4) = 3.179;
-  cos(0.3)/cos(0.7) = 1.249; cos(0.25)/cos(0.65) = 1.217.
+  VERIFIED EXACT: electron 6.913, Higgs 12.302, W 12.110,
+  Z 12.165, top 12.442; ENTIRE nuclear section (deuterium
+  7.552, He-4 8.656, Fe-56 BE/A 8.149); E_13 = 624 GeV BSM
+  threshold; kappa 5e-4/day = 5.787e-9 /s conversion.
 
-  HONEST GAP: the in-paper scan tops out at 1.217; the
-  [SSq]-weighted series closure to R = 1.50 +/- 0.05 is ASSERTED
-  without omega_i values or computation - OPEN (provide the
-  series or mark R = 1.5 calibrated).
+  SYSTEMATIC -1.0 DEFECT: the mid-band rows (muon, tau, pion,
+  proton, He-4, kaon, charm, bottom) are ALL printed exactly
+  one level LOW vs the paper's own formula AND its own level
+  table (muon chain 9.229 vs printed 8.23; proton 10.177 vs
+  9.18). Corrected hadron cluster: n = 9-11, not 8-9. The
+  EW-cluster-at-12 and nuclear-anchor-at-8 conclusions SURVIVE.
 
-  DISSIPATION TRIPLE DEFECT: printed (2.8e14 s, 9 Gyr) are
-  mutually inconsistent (2.8e14 s = 8.9 kyr); the chain
-  tau = (30 kpc)^2 / 1e28 cm2/s = 8.57e17 s = 27 Gyr differs
-  from both - the exceeds-Hubble-time conclusion is ROBUST
-  under the corrected 27 Gyr.
+  STATISTIC ILL-DEFINED: "218/241 within +/-0.5 levels" is
+  trivially 241/241; the abstract's 25 pct criterion would
+  exclude most named particles. R = 0.9542 is rounding-variance
+  (near-tautological). Q-108b/c.
 
-  nu_eff = nu*1.0099 cross-consistent with PAPER_102; nu_ICM
-  pinned 1e28 cm2/s (real scale); Doppler chain 0.081 vs
-  printed 0.091; the broken 089 U_bi footer RECURS verbatim -
-  template-injection audit note.
+  089-footer recurs (Q-085a template); drift auto-noted
+  (PAPER_2156/2155/1203 authorities).
 
-Q-107 queued. Gate 786 assertions 0 failures. Registry 302 rows /
-630 edges / 115 citation ledgers. Wired 115/2,255 (11 clean, 104
-OPEN_RULING). Next: PAPER_112.
+Q-108 queued. Gate 793 assertions 0 failures. Registry 304 rows /
+635 edges / 116 citation ledgers. Wired 116/2,255 (11 clean, 105
+OPEN_RULING). Next: PAPER_113.
