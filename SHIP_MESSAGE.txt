@@ -1,31 +1,25 @@
-v0.46.0 BAND 1: PAPER_043 wired
+v0.47.0 BAND 1: PAPER_044 wired
 
-PAPER_043 UQFF 26-Level Polynomial Energy Hierarchy (OPEN_RULING
-Q-041) - the Domain-1.6 spine:
-  TWO REPRESENTATIONS, DUAL-CONSISTENT (both verified):
-    polynomial E_n = 10^(n-20) J - 25 orders, E1 quark 1e-19 J ->
-    E20 = 1 J Ug4 anchor -> E26 universe 1e6 J
-    density rho_n = rho_L1 * n^2 (parabolic local field)
-    linked via V_n = 10^(n-12)/n^2 (level-10 = 4.6 cm cube checks)
-  Levels 10-13 = SOLID/LIQUID/GAS/PLASMA matter states
-  U_i level form = predecessor PAPER_646 Universal Inertial Operator
-  (level-10 chain = 9.47e14 VERIFIED)
-  ORIGIN CANDIDATE: level-13 PLASMA beta = 0.60 ~ canonical BETA_I -
-  is the canonical buoyancy coupling THE plasma-level value of the
-  26-ladder?
-  FORENSIC: the "9.47" number family (predecessor PAPER_2156 open
-  audit) emerges here naturally from beta*omega products - new
-  data point recorded.
-  Honest: E8 = 6.24 MeV vs 8 MeV nuclear binding = 21.97 pct
-  disclosed (energy-scale index, not precision formula).
+PAPER_044 Pre-Big-Bang 26-Center DPM Manifold (OPEN_RULING Q-042):
+  Cosmogenesis: the singularity replaced by a STRUCTURED 26-center
+  quantum manifold - one center per quantum level, unfolding into
+  the PAPER_043 hierarchy at inflation.
+  QUANTUM-NUMBER SCHEME EXACT (gate-pinned):
+    h_i = (i-1) mod 7 / k_i = floor((i-1)/7) / l_i = i
+    7-fold h-cycle; matter-state centers 10-13 share the k = 1 shell
+  Radii ladder r_i = 10^(-35+i/3) m: r_1 = 2.15e-35 ~ Planck length
+  E_center_26 = rho_L1*26^2*(4pi/3)*r_26^3 = 2.83e-84 J VERIFIED;
+  E_1 exponent mojibake resolved by computation (4.16e-112 J)
+  Inflation force F_U(0) = F_core + sum_26(U_i_state + F_p_i);
+  mixing entropy dominated by cosmic-scale centers; 12/12 PASS
 
-Q-041 queued: rho_SCm SYMBOL COLLISION (1e-8 level normalization vs
-canonical, both in same paper); density ratio printed 10 / used 1e3
-/ canonical 0.1 three-way; f_TRZ 0.01-vs-0.1; E18-Higgs decade
-mismatch (6e7 GeV, not 125 GeV nor UH-18).
+Q-042 queued: r_26 "nuclear scale" label is 12 orders off
+(description slip); K_ETA = 1e10 inflation coupling is the THIRD
+distinct quantity named k_eta (0.1369 VLQ / 1e-113 LENR / 1e10
+here) - namespace ruling joins Q-026c; DPM expanded "Duality of
+Plasmatic Medium" here vs predecessor canonical "Di-Pseudo-
+Monopole" - which expansion is canonical for the fresh corpus?
 
-Block-8 guard caught a docstring literal (3rd catch - it works).
-
-Gate 341 assertions 0 failures. Registry 139 rows / 272 edges / 47
-citation ledgers. Wired 47/2,255 (8 clean, 39 OPEN_RULING).
-Next: PAPER_044.
+Gate 347 assertions 0 failures. Registry 142 rows / 277 edges / 48
+citation ledgers. Wired 48/2,255 (8 clean, 40 OPEN_RULING).
+Next: PAPER_045.

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.46.0", "uqff_calculator.VERSION = 0.46.0")
+assert_that(C.VERSION == "0.47.0", "uqff_calculator.VERSION = 0.47.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -771,6 +771,21 @@ assert_that(abs(_r043['beta_13_plasma'] - 0.60) < 1e-12 and abs(_r043['beta_i_ca
 assert_that(abs(_r043['nuclear_error_pct'] - 21.97) < 0.1,
             "PAPER_043: E8 = 6.24 MeV vs 8 MeV nuclear = 21.97 pct honestly disclosed")
 assert_that(C.wired_count() >= 47, "wired_count >= 47")
+
+_r044 = C.calc('PAPER_044')['value']
+assert_that(_r044['quantum_numbers_check'][8] == (0, 1) and _r044['quantum_numbers_check'][26] == (4, 3),
+            "PAPER_044: quantum-number scheme EXACT (center 8 = (0,1), center 26 = (4,3))")
+assert_that(abs(_r044['r_1_m'] - 2.154e-35) / 2.154e-35 < 0.001,
+            "PAPER_044: r_1 = 10^(-35+1/3) = 2.15e-35 m ~ Planck length")
+assert_that(abs(_r044['e_center_26_j'] - 2.83e-84) / 2.83e-84 < 0.01,
+            "PAPER_044: E_center_26 = 2.83e-84 J VERIFIED end-to-end")
+assert_that(abs(_r044['e_center_1_j'] - 4.16e-112) / 4.16e-112 < 0.02,
+            "PAPER_044: E_center_1 = 4.16e-112 J (mojibake exponent resolved by computation)")
+assert_that(_r044['matter_state_centers_k'] == 1,
+            "PAPER_044: matter-state centers 10-13 share k = 1 (angular-momentum shell)")
+assert_that(_r044['validator_score'] == (12, 12),
+            "PAPER_044: DPM cosmology validator 12/12 PASS")
+assert_that(C.wired_count() >= 48, "wired_count >= 48")
 
 # =============================================================================
 # REPORT

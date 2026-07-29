@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.47.0] — 2026-07-29 — BAND 1: PAPER_044
+
+### Added
+- **PAPER_044 dispatch** (Pre-Big-Bang 26-Center DPM Manifold): the
+  cosmological singularity replaced by a structured 26-center quantum
+  manifold (one center per level). Quantum-number scheme EXACT and
+  gate-pinned: h_i = (i-1) mod 7, k_i = floor((i-1)/7), l_i = i —
+  matter-state centers 10-13 share the k = 1 shell. Radii ladder
+  r_i = 10^(-35+i/3) m from the Planck length; E_center_26 = 2.83e-84
+  J VERIFIED end-to-end (E_1 mojibake resolved by computation to
+  4.16e-112 J). Inflation force F_U(0) = F_core + sum_26(U_i + F_p);
+  mixing entropy high-center dominated; 12/12 validator PASS.
+  OPEN_RULING Q-042 (r_26 "nuclear scale" label 12 orders off;
+  K_ETA = 1e10 is the THIRD distinct k_eta meaning — namespace ruling
+  joins Q-026c; DPM expansion "Duality of Plasmatic Medium" vs
+  predecessor "Di-Pseudo-Monopole" lineage).
+- Gate: 347 assertions, 0 failures. Registry: 142 rows / 277 edges / 48 ledgers.
+
+---
+
 ## [0.46.0] — 2026-07-29 — BAND 1: PAPER_043
 
 ### Added

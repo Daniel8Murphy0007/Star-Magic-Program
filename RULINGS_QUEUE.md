@@ -670,6 +670,24 @@ RESOLVED section with the ruling recorded.
   9.47 echo gate-pinned; all collisions exposed.
 - **Daniel's ruling:** (pending)
 
+### Q-042 — PAPER_044 — r_26 label + K_ETA third meaning + DPM naming lineage
+- **Question:** (a) r_26 = 10^(-35+26/3) = 4.64e-27 m is labeled
+  "~nuclear scale" - 12 orders from nuclear 1e-15 m (description
+  slip); E_center_1's exponent is mojibaked in-source (computation
+  resolves it to 4.16e-112 J; E_26 = 2.83e-84 verifies exactly).
+  (b) K_ETA = 1e10 (inflation amplification) is the THIRD distinct
+  quantity named k_eta in the corpus (0.1369 VLQ coupling, 1e-113
+  LENR coefficient, 1e10 here) - joins the Q-026c namespace ruling:
+  canonical naming scheme for the registry? (c) DPM is expanded here
+  as "Duality of Plasmatic Medium" ([UA] diffuse + [SCm] dense),
+  while the predecessor canon is "Di-Pseudo-Monopole" - same dual-
+  vacuum structure, two expansions. Which expansion is canonical for
+  the fresh corpus?
+- **Best-candidate wired:** quantum-number scheme EXACT and pinned;
+  radii ladder + E_26 verified; E_1 resolved by computation; all
+  naming issues exposed for one namespace ruling.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -823,3 +823,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 47/2,255 (8 ✓, 39 ⚠). Next: PAPER_044.
 
 ---
+
+## 2026-07-29 — v0.47.0 — BAND 1: PAPER_044
+
+- PAPER_044 wired (⚠ Q-042): pre-Big-Bang cosmogenesis. h/k/l scheme
+  exact; E_26 verified; k_eta namespace now three-way; DPM naming
+  lineage question queued for the fresh corpus.
+- Gate 347/0. Registry 142 rows / 277 edges / 48 ledgers.
+- Campaign: 48/2,255 (8 ✓, 40 ⚠). Next: PAPER_045.
+
+---

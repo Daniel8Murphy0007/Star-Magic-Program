@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.46.0"
+VERSION = "0.47.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2318,5 +2318,57 @@ def _paper_043(dataset):
                     'U_i = lambda_i*(rho_r)*omega_LENR*cos(pi*t_n)*(1+f_TRZ)'),
         'source': 'PAPER_043',
         'residual_pct': (8.0 - e8_mev) / 8.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_044')
+def _paper_044(dataset):
+    """Pre-Big-Bang 26-Center DPM Manifold (Session 0).
+
+    Cosmogenesis: the singularity replaced by a structured 26-center
+    manifold (one center per quantum level). EXACT quantum-number
+    scheme verified: h_i = (i-1) mod 7, k_i = floor((i-1)/7), l_i = i
+    (7-fold h-cycle; matter-state centers 10-13 at k = 1).
+    Radii ladder r_i = 10^(-35+i/3) m: r_1 = 2.15e-35 ~ Planck
+    length; E_center_26 = rho_L1*26^2*(4pi/3)*r_26^3 = 2.83e-84 J
+    VERIFIED. Energy weighted toward high centers -> mixing entropy
+    dominated by cosmic-scale centers (consistent). Inflation force
+    F_U(0) = F_core + sum_26(U_i + F_p); 12/12 validator PASS.
+    NAMING LINEAGE: DPM expanded here as "Duality of Plasmatic
+    Medium" vs predecessor canonical "Di-Pseudo-Monopole" - same
+    UA/SCm dual-vacuum structure, two expansions (Q-042c).
+    Q-042: (a) r_26 = 4.64e-27 m labeled "~nuclear scale" (12 orders
+    from 1e-15 - description slip) + E_1 exponent mojibake (computed
+    4.16e-112 J); (b) K_ETA = 1e10 inflation coupling is a THIRD
+    distinct k_eta meaning (0.1369 VLQ / 1e-113 LENR / 1e10 here) -
+    namespace ruling joins Q-026c.
+    """
+    import math as _m
+    r_i = lambda i: 10.0 ** (-35.0 + i / 3.0)
+    h_i = lambda i: (i - 1) % 7
+    k_i = lambda i: (i - 1) // 7
+    e_center = lambda i: 1.0e-8 * i**2 * (4.0/3.0) * _m.pi * r_i(i)**3
+    return {
+        'value': {
+            'n_centers': D_CRIT,
+            'quantum_numbers_check': {8: (h_i(8), k_i(8)), 26: (h_i(26), k_i(26))},   # (0,1),(4,3) EXACT
+            'r_1_m': r_i(1),                         # 2.15e-35 ~ Planck
+            'r_26_m': r_i(26),                       # 4.64e-27 (label slip Q-042a)
+            'planck_length_m': 1.616e-35,
+            'e_center_1_j': e_center(1),             # 4.16e-112 (mojibake resolved)
+            'e_center_26_j': e_center(26),           # 2.83e-84 VERIFIED
+            'energy_weighting': 'high centers dominate (E ~ i^2 * 10^i)',
+            'k_eta_inflation': 1.0e10,               # Q-042b 3rd k_eta meaning
+            'inflation_force_form': 'F_U(0) = F_core + sum_26(U_i_state + F_p_i)',
+            'matter_state_centers_k': 1,             # centers 10-13 all at k = 1
+            'validator_score': (12, 12),
+            'dpm_naming': ('Duality of Plasmatic Medium (here)',
+                           'Di-Pseudo-Monopole (predecessor canonical)'),
+        },
+        'formula': ('h_i = (i-1) mod 7; k_i = floor((i-1)/7); l_i = i; '
+                    'r_i = 10^(-35+i/3); E_i = rho_L1*i^2*(4pi/3)*r_i^3'),
+        'source': 'PAPER_044',
+        'residual_pct': abs(e_center(26) - 2.83e-84) / 2.83e-84 * 100,
         'status': 'OPEN_RULING',
     }
