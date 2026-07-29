@@ -1003,3 +1003,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 64/2,255 (10 ✓, 54 ⚠). Next: PAPER_061.
 
 ---
+
+## 2026-07-29 — v0.64.0 — BAND 1: PAPER_061
+
+- PAPER_061 wired (⚠ Q-057): multi-scale BEC. Phi_BEC = SSq
+  scale-invariance; yield closure 85 pct; NS chain verified;
+  0.38 MeV T_c disclosed phenomenological; F_thermal GeV slip
+  caught (margin 4000x corrected). Block-8 caught a BETA_I literal
+  in my docstring - replaced with symbol name (5th catch).
+- Campaign: 65/2,255 (10 ✓, 55 ⚠). Next: PAPER_062.
+
+---

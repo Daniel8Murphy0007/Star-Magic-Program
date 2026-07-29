@@ -1,27 +1,25 @@
-v0.63.0 BAND 1: PAPER_060 wired + GATE-COUNT AUDIT CORRECTION
+v0.64.0 BAND 1: PAPER_061 wired - PHI_BEC = SSQ SCALE-INVARIANCE
 
-PAPER_060 Bose-Einstein Occupancy NIMROD-ISiS (OPEN_RULING Q-056):
-  Companion to PAPER_059 (same Ca-40 dataset).
-  dE_BEC = kT*ln(1+1/10) = 5.0*ln(1.1) = 0.4766 MeV EXACT -
-  N_B = 10 at T_BEC = 5 MeV verified to 4 significant figures
-  Full 26-level dE(n) = kT*ln(1+1/n) ladder VERIFIED at every
-  printed row: 1.116 / 0.589 / 0.400 / 0.303 / 0.244 / 0.189 MeV
-  Cross-nucleus closure: Hoyle 3-alpha 1.438 MeV + O-16 4-alpha
-  1.116 MeV from the SAME single T_BEC = 5 MeV parameter
-  kT fit 4.63 +/- 0.17 MeV (7.4 pct), chi2/dof = 0.051 - data
-  table honestly DISCLOSED as mock/simulated
+PAPER_061 Nuclear BEC Formation (OPEN_RULING Q-057):
+  Multi-scale synthesis: Hoyle 3-alpha (7.654 MeV) -> Ca-40
+  10-alpha -> NS crust pasta -> NS surface coherence.
+  CENTRAL CLAIM WIRED: Phi_BEC = SSq = 0.57 scale-invariant
+  condensate fraction (SSq's 12th physical role) - 57 pct
+  condensate + 28 pct thermal = 85 pct observed yield CLOSES.
+  NS force chain VERIFIED: -4.77e6*3.5e9*1e-10 = -1.67e6 N.
+  HONEST DISCLOSURE preserved: 0.38 MeV T_c shift is
+  phenomenological - the paper itself derives the microscopic
+  chain rho_SCm*V/(N*k_B) = 5.13e-58 K (verified) and says so.
 
-Q-056 queued: (a) suppression-table exponent mismatch - formula
-claims exp(-SSq*n/26) but every printed value is exp(-0.50*n/26);
-the SSq form would give e^-0.57 = 0.5655 which IS the S_LFV
-constant (PAPER_046) - which exponent is canonical? (b) mock-data
-fit status; (c) M_UQFF 14.3 TeV vs M_KK 11.6 TeV.
+UNIT-SLIP FORENSIC: F_thermal = 3*5 MeV/2 fm printed as 1.2e6 N -
+that value requires GeV/fm; correct MeV/fm arithmetic = 1.2e3 N.
+Stability margin: 4x as printed, ~4000x corrected. The stability
+conclusion survives and STRENGTHENS under correction.
 
-RULE 7 AUDIT: gate badge count corrected 437 -> 460. The running
-count I advertised had drifted low (~15 under across recent bands);
-460 is the true executed assert_that call-site count. Nothing was
-removed - the count was under-reported.
+Q-057 queued: (a) pin printed-vs-corrected margin; (b) accept
+0.38 MeV as system_50 calibration constant; (c) header
+kappa_i = 0.61 beta_i drift form.
 
-Gate 460 assertions 0 failures. Registry 190 rows / 364 edges / 64
-citation ledgers. Wired 64/2,255 (10 clean, 54 OPEN_RULING).
-Next: PAPER_061.
+Gate 467 assertions 0 failures. Registry 193 rows / 370 edges / 65
+citation ledgers. Wired 65/2,255 (10 clean, 55 OPEN_RULING).
+Next: PAPER_062.

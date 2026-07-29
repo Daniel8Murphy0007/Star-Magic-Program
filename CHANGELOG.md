@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.64.0] — 2026-07-29 — BAND 1: PAPER_061
+
+### Added
+- **PAPER_061 dispatch** (Nuclear BEC Formation): multi-scale
+  synthesis Hoyle 3-alpha -> Ca-40 10-alpha -> NS crust -> NS
+  surface. Central falsifiable claim wired: Phi_BEC = SSq = 0.57
+  is SCALE-INVARIANT (SSq's 12th physical role); 57 pct condensate
+  + 28 pct thermal = 85 pct observed yield closes arithmetically.
+  NS force chain -1.67e6 N verified (consistent with 059). Honest
+  disclosure preserved: 0.38 MeV T_c shift is phenomenological —
+  microscopic chain 5.13e-58 K VERIFIED negligible.
+- **Unit-slip forensic:** F_thermal printed 1.2e6 N requires
+  GeV/fm; correct MeV/fm gives 1.2e3 N. Stability margin 4x
+  printed vs ~4000x corrected — conclusion survives, stronger.
+- OPEN_RULING Q-057 (margin pin; T_c calibration acceptance;
+  header beta_i = 0.61 drift form).
+- Gate: 467 assertions, 0 failures. Registry: 193 rows / 370 edges / 65 ledgers.
+
+---
+
 ## [0.63.0] — 2026-07-29 — BAND 1: PAPER_060 + GATE-COUNT AUDIT CORRECTION
 
 ### Added

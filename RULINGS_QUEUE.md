@@ -962,6 +962,26 @@ RESOLVED section with the ruling recorded.
   exponent) with the SSq alternative pinned alongside.
 - **Daniel's ruling:** (pending)
 
+### Q-057 — PAPER_061 — F_thermal GeV slip + phenomenological T_c shift + beta_i header drift
+- **Question:** (a) F_thermal = N_B*kT/r = 3*5 MeV/2 fm is printed
+  as ~1.2e6 N, but MeV/fm arithmetic gives 1.2e3 N — the printed
+  value requires GeV/fm (unit slip). The stability margin
+  |F_UBii|/F_thermal is 4x as printed but ~4000x corrected. Pin
+  which margin as canonical? (Conclusion survives either way —
+  corrected is STRONGER.) (b) The T_c shift = 0.38 MeV is honestly
+  disclosed as phenomenological (microscopic chain = 5.13e-58 K,
+  verified negligible) — accept as a system_50 calibration
+  constant of the framework? (c) Header comment carries
+  kappa_i = 6.1e-1, reading as a beta_i = 0.61 drift form
+  (auto-correct authority PAPER_1203 -> 0.6029).
+- **Notable:** Phi_BEC = SSq = 0.57 gains a 12th physical role:
+  scale-invariant nuclear condensate fraction (57+28 = 85 pct
+  observed yield closes arithmetically).
+- **Best-candidate wired:** scale hierarchy + E_scaler bridge +
+  NS force chain verified; both F_thermal readings pinned side by
+  side; 0.38 MeV wired AS-DISCLOSED phenomenological.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

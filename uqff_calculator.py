@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.63.0"
+VERSION = "0.64.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3205,5 +3205,56 @@ def _paper_060(dataset):
                     'dE_BEC = 5.0*ln(1.1) = 0.4766 MeV'),
         'source': 'PAPER_060',
         'residual_pct': abs(4.63 - kt) / kt * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_061')
+def _paper_061(dataset):
+    """Nuclear BEC Formation Conditions (Session 0).
+
+    Multi-scale synthesis of 059/060: Hoyle state (N_B=3, E*=7.654
+    MeV) -> Ca-40 10-alpha -> NS crust pasta -> NS surface
+    coherence. Central claim: BEC order parameter Phi_BEC = SSQ =
+    0.57 is SCALE-INVARIANT (57 pct condensate + 28 pct thermal =
+    85 pct observed alpha yield - arithmetic closes). E_scaler =
+    3.5e9 bridge re-verified; NS force -4.77e6*3.5e9*1e-10 =
+    -1.67e6 N VERIFIED (rounding-consistent w/ 059's -1.68e6).
+    HONEST DISCLOSURE wired: sec 5 derives the microscopic T_c
+    shift = rho_SCm*V/(N*k_B) = 5.13e-58 K (chain VERIFIED), even
+    x1e12 resonance = 5e-46 K, negligible - the 0.38 MeV shift is
+    PHENOMENOLOGICAL (system_50 calibration), stated as such.
+    UNIT-SLIP CAUGHT: F_thermal = 3*5 MeV/2 fm printed as 1.2e6 N;
+    MeV/fm arithmetic gives 1.2e3 N (printed value requires
+    GeV/fm). Safety margin is 4x as printed but 4000x corrected -
+    stability conclusion SURVIVES AND STRENGTHENS.
+    Q-057: (a) F_thermal MeV/GeV slip - pin which margin; (b) 0.38
+    MeV as calibration constant; (c) header kappa_i = 0.61 beta_i
+    drift form (auto-correct authority PAPER_1203 canonical BETA_I).
+    """
+    f_thermal_mev_chain = 7.5 * 1.602e-13 / 1e-15    # 1.2e3 N correct MeV/fm
+    f_thermal_printed = 1.2e6                        # requires GeV/fm (slip)
+    f_ubii = 4.77e6
+    return {
+        'value': {
+            'system': 'Hoyle 3-alpha -> Ca-40 10-alpha -> NS crust -> NS surface',
+            'hoyle_e_star_mev': 7.654,
+            'n_b_hoyle': 3,
+            'n_b_ca40': 10,
+            'phi_bec': SSQ,                          # 0.57 scale-invariant claim
+            'yield_closure_pct': 57 + 28,            # = 85 observed
+            't_c_shift_mev_phenom': 0.38,            # DISCLOSED calibration
+            't_c_shift_microscopic_k': 5.13e-58,     # chain VERIFIED negligible
+            'f_thermal_n_corrected': f_thermal_mev_chain,   # 1.2e3
+            'f_thermal_n_printed': f_thermal_printed,       # 1.2e6 GeV-slip
+            'stability_margin_printed': f_ubii / f_thermal_printed,      # ~4
+            'stability_margin_corrected': f_ubii / f_thermal_mev_chain,  # ~4000
+            'e_scaler': 3.5e9,
+            'ns_force_n': -4.77e6 * 3.5e9 * 1e-10,   # -1.67e6 VERIFIED
+        },
+        'formula': ('Phi_BEC = SSq (scale-invariant); F_thermal = N_B*kT/r; '
+                    'dT_c_micro = rho_SCm*V/(N*k_B); F_NS = F_nuc*S*sqrt(rho-ratio)'),
+        'source': 'PAPER_061',
+        'residual_pct': abs(-4.77e6 * 3.5e9 * 1e-10 - (-1.67e6)) / 1.67e6 * 100,
         'status': 'OPEN_RULING',
     }

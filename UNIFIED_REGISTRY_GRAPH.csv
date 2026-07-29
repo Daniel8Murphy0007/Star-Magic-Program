@@ -364,3 +364,9 @@ observable,bec_de_ladder_26,paper,PAPER_060,primary derivation
 primitive,D_CRIT,observable,bec_de_ladder_26,26-level ladder
 observable,ssq_suppression_mismatch,paper,PAPER_060,formula/table mismatch
 primitive,SSQ,observable,ssq_suppression_mismatch,claimed exponent
+observable,phi_bec_scale_invariant,paper,PAPER_061,primary derivation
+primitive,SSQ,observable,phi_bec_scale_invariant,order parameter identity
+observable,phi_bec_scale_invariant,paper,PAPER_059,yield closure input
+observable,t_c_shift_phenomenological,paper,PAPER_061,disclosed calibration
+primitive,RHO_SCM,observable,t_c_shift_phenomenological,microscopic chain input
+observable,f_thermal_gev_slip,paper,PAPER_061,unit-slip forensic

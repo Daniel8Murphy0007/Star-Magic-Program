@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.63.0"
-description = "UQFF Star-Magic-Program v0.63.0: PAPER_060 wired (Bose-Einstein occupancy calibration: dE_BEC = 5*ln(1.1) = 0.4766 MeV EXACT; full 26-level dE ladder verified every row; Hoyle/O-16 single-parameter closure; SSq-vs-0.50 suppression-exponent mismatch pinned; mock-data status disclosed). Q-056 queued. Gate count AUDIT-CORRECTED to true call-site count: 460/0. Wired 64/2255. Registry 190 rows / 364 edges / 64 ledgers."
+version = "0.64.0"
+description = "UQFF Star-Magic-Program v0.64.0: PAPER_061 wired (multi-scale nuclear BEC: Phi_BEC = SSq = 0.57 scale-invariant order parameter, 57+28=85 pct yield closure; NS force chain verified; 0.38 MeV T_c shift disclosed phenomenological with microscopic 5.13e-58 K chain verified; F_thermal GeV unit-slip caught - margin 4000x corrected). Q-057 queued. Wired 65/2255, gate 467/0. Registry 193 rows / 370 edges / 65 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

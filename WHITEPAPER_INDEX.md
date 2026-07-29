@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 64 (10 ✓, 54 ⚠ OPEN_RULING)
+- **Wired:** 65 (10 ✓, 55 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2191
+- **Not yet touched:** 2190
 
 ---
 
@@ -94,7 +94,7 @@
 | ⚠ | PAPER_058 | M42 Orion Nebula UQFF |
 | ⚠ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF |
 | ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF |
-| ⬜ | PAPER_061 | Nuclear BEC Formation UQFF |
+| ⚠ | PAPER_061 | Nuclear BEC Formation UQFF |
 | ⬜ | PAPER_062 | Widom Larsen LENR UQFF |
 | ⬜ | PAPER_063 | F U Bi i Integral UQFF |
 | ⬜ | PAPER_064 | 4 UQFF Operational Modes |

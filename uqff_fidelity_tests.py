@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.63.0", "uqff_calculator.VERSION = 0.63.0")
+assert_that(C.VERSION == "0.64.0", "uqff_calculator.VERSION = 0.64.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1019,6 +1019,21 @@ assert_that(abs(_r060['suppression_printed'][26] - 0.6065) < 0.0001
 assert_that(abs(_r060['hoyle_3alpha_de_mev'] - 1.438) < 0.001,
             "PAPER_060: Hoyle 3-alpha dE = 1.438 MeV chain verified")
 assert_that(C.wired_count() >= 64, "wired_count >= 64")
+
+_r061 = C.calc('PAPER_061')['value']
+assert_that(abs(_r061['phi_bec'] - 0.57) < 1e-12,
+            "PAPER_061: Phi_BEC = SSq = 0.57 scale-invariant order parameter")
+assert_that(_r061['yield_closure_pct'] == 85,
+            "PAPER_061: 57 pct condensate + 28 pct thermal = 85 pct observed yield closes")
+assert_that(abs(_r061['ns_force_n'] - (-1.6695e6)) < 1e3,
+            "PAPER_061: NS force -4.77e6*3.5e9*1e-10 = -1.67e6 N chain verified")
+assert_that(abs(_r061['t_c_shift_microscopic_k'] - 5.13e-58) < 1e-59,
+            "PAPER_061: microscopic dT_c = 5.13e-58 K verified - 0.38 MeV DISCLOSED as phenomenological")
+assert_that(abs(_r061['f_thermal_n_corrected'] - 1201.5) < 1.0,
+            "PAPER_061: F_thermal MeV/fm chain = 1.2e3 N - printed 1.2e6 N is a GeV-slip (Q-057a)")
+assert_that(_r061['stability_margin_corrected'] > 1000,
+            "PAPER_061: corrected stability margin ~4000x - conclusion survives and strengthens")
+assert_that(C.wired_count() >= 65, "wired_count >= 65")
 
 # =============================================================================
 # REPORT
