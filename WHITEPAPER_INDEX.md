@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired (v0.2.0):** 0
+- **Wired:** 1
 - **OPEN targets:** 0
-- **Not yet touched:** 2255
+- **Not yet touched:** 2254
 
 ---
 
@@ -22,7 +22,7 @@
 | Status | Paper ID | Title fragment |
 |---|---|---|
 | ⬜ | COMPLETE_UQFF_EQUATIONS_REFERENCE | (no PAPER_N prefix) |
-| ⬜ | PAPER_001 | GW170817 UQFF Damping Analysis |
+| ✓ | PAPER_001 | GW170817 UQFF Damping Analysis |
 | ⬜ | PAPER_002 | GW190425 Mass Gap Interpretation |
 | ⬜ | PAPER_003 | GW150914 UQFF vs LIGO Strain |
 | ⬜ | PAPER_004 | GW170817 BNS Chirp Phase Evolution |

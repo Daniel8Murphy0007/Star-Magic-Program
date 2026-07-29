@@ -1,1 +1,5 @@
 quantity,origin,kind,canonical_route,formula,value,reference,residual_pct,sector,phi_variant,paper_source,confirmations,py_sites,cpp_sites,lean_sites,corpus_citations,status
+gw170817_D_total,PAPER_001 S1,derived,PAPER_001 sec 2.2.5,D_Aether*D_SCm*(1-F_TRZ)*D_String = 1*1*0.9*0.37,0.333,1/3 primitive identity (PAPER_2154),0.100,gw,n/a,PAPER_001,PAPER_1011;PAPER_2154,1,0,0,19,WIRED
+gw170817_h_uqff_strain,PAPER_001 S1,derived,PAPER_001 sec 3.3,D_total * h_GR,1.8041e-22,LIGO GR 5.4176e-22,n/a,gw,n/a,PAPER_001,PAPER_1011,1,0,0,19,WIRED
+gw170817_snr_uqff,PAPER_001 S1,derived,PAPER_001 sec 3.4,D_total * SNR_GR,10.79,detection threshold 8,n/a,gw,n/a,PAPER_001,,1,0,0,19,WIRED
+gw170817_mismatch,PAPER_001 S1,derived,PAPER_001 sec 4.1,1 - D_total ~ D_GW_EROSION,0.667,2/3 EXACT (PAPER_2154),0.050,gw,n/a,PAPER_001,PAPER_2154,1,0,0,19,WIRED

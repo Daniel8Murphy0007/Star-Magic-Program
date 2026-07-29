@@ -1,1 +1,8 @@
 src_kind,src,dst_kind,dst,edge_info
+primitive,F_TRZ,observable,gw170817_D_total,D_TRZ = 1-F_TRZ
+primitive,D_GW_EROSION,observable,gw170817_mismatch,mismatch ~ 2/3 EXACT
+primitive,B_CRIT,observable,gw170817_D_total,D_SCm = f(B_NS/B_CRIT)
+observable,gw170817_D_total,paper,PAPER_001,primary derivation
+observable,gw170817_h_uqff_strain,paper,PAPER_001,primary derivation
+observable,gw170817_snr_uqff,paper,PAPER_001,primary derivation
+observable,gw170817_mismatch,paper,PAPER_001,primary derivation

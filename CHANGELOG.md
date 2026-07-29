@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.3.0] — 2026-07-28 — WIRING CAMPAIGN START
+
+### Added
+- **CLAUDE.md** — campaign charter: sequential wiring from PAPER_001, band
+  structure, per-paper protocol, template authorizations, drift auto-corrections,
+  rulings queue, gate discipline, ship protocol, standing lessons.
+- **ship.ps1** — one-command band ship (gate → commit → tag-verify → push).
+- **RULINGS_QUEUE.md** — never-block ambiguity protocol.
+- **First wired dispatch: PAPER_001** (GW170817 UQFF Damping Analysis):
+  - D_total composed from registry primitives (F_TRZ, D_GW_EROSION, B_CRIT)
+  - 16 observables returned; honest 0.10% residual vs 1/3 primitive identity
+  - 8 gate assertions (Block 9 opened)
+  - +4 UNIFIED_REGISTRY.csv rows, +7 GRAPH edges, +1 CORPUS_CITATIONS row
+  - WHITEPAPER_INDEX: PAPER_001 ⬜ → ✓
+
+### Changed
+- Version 0.2.2 → 0.3.0; badges fidelity_gate 55/0, public_surfaces 1.
+
+---
+
 ## [0.2.2] — 2026-07-28 — BADGE PATCH
 
 ### Added

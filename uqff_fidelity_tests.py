@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.2.2", "uqff_calculator.VERSION = 0.2.2")
+assert_that(C.VERSION == "0.3.0", "uqff_calculator.VERSION = 0.3.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -120,6 +120,28 @@ for tok in BANNED:
         # allow inside comments only
         pass
     assert_that(tok not in calc_src, f"Banned registry-duplicating literal in calculator: {tok}")
+
+# =============================================================================
+# BLOCK 9 — WIRED-PAPER ASSERTIONS (grows with the campaign, one block per band)
+# =============================================================================
+
+# --- Band 1: PAPER_001-020 (GW foundation) ---
+_r001 = C.calc('PAPER_001')['value']
+assert_that(abs(_r001['D_total'] - 0.333) < 1e-12,
+            "PAPER_001: D_total = 0.333 (paper damping chain 1*1*0.9*0.37)")
+assert_that(abs(_r001['D_trz'] - 0.9) < 1e-15,
+            "PAPER_001: D_TRZ = 1 - F_TRZ = 0.9 EXACT")
+assert_that(abs(_r001['D_total'] - (1.0 - P.D_GW_EROSION)) / (1.0 - P.D_GW_EROSION) < 0.0011,
+            "PAPER_001: D_total within 0.11% of primitive identity 1/3 (PAPER_2154)")
+assert_that(abs(_r001['h_uqff_strain'] - 1.8041e-22) < 1e-25,
+            "PAPER_001: h_UQFF = 1.8041e-22 strain")
+assert_that(abs(_r001['snr_uqff'] - 10.8) < 0.02,
+            "PAPER_001: SNR_UQFF = 10.8")
+assert_that(abs(_r001['mismatch'] - 0.667) < 1e-12,
+            "PAPER_001: mismatch = 0.667 (paper precision)")
+assert_that(abs(_r001['B_NS_over_B_crit'] - 2.27e-10) < 0.01e-10,
+            "PAPER_001: B_NS/B_crit = 2.27e-10 (negligible SCm damping)")
+assert_that(C.wired_count() >= 1, "wired_count >= 1 (campaign started)")
 
 # =============================================================================
 # REPORT

@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.2.2"
+VERSION = "0.3.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -98,12 +98,49 @@ def wired_count():
 
 
 # =============================================================================
-# PAPER_N DISPATCHES — populated in subsequent ships (v0.2.0 and later)
+# PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)
 # =============================================================================
-# Wiring campaign order:
-#   v0.2.0  — 46 UQFF_LANDMARK papers (structural spine)
-#   v0.3.0  — PAPER_001 through PAPER_099 (foundation: GW, paradox, BSM)
-#   v0.4.0  — PAPER_100 through PAPER_299
-#   ...continued...
-#   v1.0.0  — Full whitepaper coverage (2,156 papers)
-# =============================================================================
+
+
+@_register('PAPER_001')
+def _paper_001(dataset):
+    """GW170817 UQFF Damping Analysis (Session 1).
+
+    BNS merger strain damping: D_total = D_Aether*D_SCm*D_TRZ*D_String.
+    Headline 66.7% reduction later canonized as D_GW_EROSION = D_phys/D_BSFG
+    = 2/3 EXACT (PAPER_2154 5th primitive-reduction landmark); paper chain
+    (0.9*0.37 = 0.333) sits 0.10% from the primitive identity 1/3.
+    """
+    B_NS = 1.0e4                      # T — typical NS field, paper Table 3.1
+    D_aether = 1.0                    # negligible aether coupling at 40 Mpc
+    D_scm = 1.0                       # B_NS/B_CRIT = 2.27e-10 << 1
+    D_trz = 1.0 - F_TRZ               # 0.9 EXACT (topological resonance zone)
+    D_string = 0.37                   # paper-stated string-sector factor
+    D_total = D_aether * D_scm * D_trz * D_string      # 0.333
+    h_gr = 5.4176e-22                 # LIGO GR peak strain anchor (paper §3.3)
+    snr_gr = 32.4                     # GR SNR anchor (paper §3.4)
+    d_primitive = 1.0 - D_GW_EROSION  # 1/3 EXACT per PAPER_2154
+    return {
+        'value': {
+            'D_aether': D_aether,
+            'D_scm': D_scm,
+            'D_trz': D_trz,
+            'D_string': D_string,
+            'D_total': D_total,
+            'D_total_primitive_identity': d_primitive,
+            'h_gr_strain': h_gr,
+            'h_uqff_strain': D_total * h_gr,             # 1.8041e-22
+            'snr_gr': snr_gr,
+            'snr_uqff': D_total * snr_gr,                # 10.79
+            'mismatch': 1.0 - D_total,                   # 0.667
+            'B_NS_over_B_crit': B_NS / B_CRIT,           # 2.27e-10
+            'chirp_mass_msun': 1.188,                    # LIGO O2 anchor
+            'total_mass_msun': 2.73,                     # LIGO O2 anchor
+            'distance_mpc': 40.0,                        # NGC 4993 anchor
+            'grb_delay_s': 1.74,                         # GRB 170817A anchor
+        },
+        'formula': ('D_total = D_Aether*D_SCm*(1-F_TRZ)*D_String; '
+                    'h_UQFF = D_total*h_GR; mismatch ~ D_GW_EROSION (PAPER_2154)'),
+        'source': 'PAPER_001',
+        'residual_pct': abs(D_total - d_primitive) / d_primitive * 100.0,  # 0.10%
+    }

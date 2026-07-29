@@ -303,3 +303,31 @@ before pushing catches this instantly.
 
 ---
 
+## 2026-07-28 — v0.3.0 — WIRING CAMPAIGN START (charter + PAPER_001)
+
+### Authorized
+
+Daniel: "I can't loose anything by experimenting with the idea of setting you
+loose over the first 500... Build the charter." Campaign authorized: autonomous
+band wiring, ship per session via ship.ps1, full stop at PAPER_500 for manual
+review.
+
+### What shipped
+
+- **CLAUDE.md** — the campaign charter (every session self-configures from it)
+- **ship.ps1** — one-command ship encoding all 2026-07-28 standing lessons
+- **RULINGS_QUEUE.md** — never-block protocol
+- **PAPER_001 wired end-to-end** (the pattern proof):
+  - Dispatch `_paper_001` composed from F_TRZ, D_GW_EROSION, B_CRIT primitives
+  - D_total = 0.333 (paper chain); 0.10% honest residual vs 1/3 (PAPER_2154)
+  - Registry pantheon: +4 rows, +7 edges, +1 citations row
+  - Gate Block 9 opened: 8 assertions, all green (55 total)
+  - Index: PAPER_001 ✓
+- Version 0.3.0 across pyproject/calculator/gate/citation; badges updated.
+
+### Next
+
+Band 1 continues: PAPER_002-020 (GW family template). Ship per session.
+
+---
+
