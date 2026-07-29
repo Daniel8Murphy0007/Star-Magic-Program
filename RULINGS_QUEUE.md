@@ -1502,6 +1502,26 @@ RESOLVED section with the ruling recorded.
   and decay-rate rulings queued.
 - **Daniel's ruling:** (pending)
 
+### Q-083 — PAPER_087 — eta direction siblings + rise arithmetic + ASKAP conflict
+- **Question:** (a) Efficiency structure: eta = eta_GR*[SCm] =
+  0.099 here (REDUCED) vs eta_Edd*(1+[SCm]) = 1.99 in 075/078
+  (DOUBLED) - opposite directions with the same constant; is the
+  multiplier context-dependent (TDE disk vs XRB accretion), or is
+  one a drift? (b) Rise time: the stated x1.017 circularization
+  gives 30/1.017 = 29.5 d, but 28.5 d is printed (needs 1.0526) -
+  arithmetic pin. (c) Batch-22 table lists ASKAP J1832 period
+  "2.78 h" vs PAPER_069's measured 44 min = 0.733 h - conflict
+  (2.78 h is not a harmonic of 2640 s either). (d) M_BH "10645
+  Msun" pinned as 10^6.45 = 2.82e6 (caret drop) - confirm.
+- **Notable:** distance chain closes under the registry H0
+  (88.2 ~ 90 Mpc - another Session-0 canonical-H0 consistency);
+  kappa half-life 1386 d EXACT with the 60-d observed decline
+  HONESTLY disclosed and physically resolved; L_peak -8.3 pct
+  EXACT vs Nicholl+2020; t_fb 0.06*SSq chain EXACT.
+- **Best-candidate wired:** real-event anchors + verified chains;
+  conflicts and siblings queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

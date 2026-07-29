@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.89.0"
-description = "UQFF Star-Magic-Program v0.89.0: PAPER_086 wired (Ug4 AGN feedback: parameter pins EXACT - 4.3e6 Msun + 27,000 ly; validator anchor 3.352941e22 J/m3 with closed form OPEN (dimensional + 125-order gap); f_AGN/f_cycle chains EXACT; decay-table kappa e-4->e-7 mojibake CONFIRMED by two rows; [SCm]/10 structure flagged; [UA] 8th appearance). Q-082 queued. Wired 90/2255, gate 631/0. Registry 254 rows / 501 edges / 90 ledgers."
+version = "0.90.0"
+description = "UQFF Star-Magic-Program v0.90.0: PAPER_087 wired (AT2019qiz TDE: M_BH = 10^6.45 caret pin; distance chain closes under registry H0; eta = 0.099 EXACT with opposite-direction sibling flag vs 1.99; L_peak -8.3 pct EXACT vs Nicholl+2020; t_fb 0.06*SSq chain EXACT; kappa 1386-d half-life honestly resolved vs 60-d decline; ASKAP period conflict vs 069). Q-083 queued. Wired 91/2255, gate 638/0. Registry 256 rows / 507 edges / 91 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

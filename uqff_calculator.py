@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.89.0"
+VERSION = "0.90.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4547,5 +4547,55 @@ def _paper_086(dataset):
                     'f_AGN = A*(1+[SCm]/10); f_cycle = (1+cos(pi t_n))/2'),
         'source': 'PAPER_086',
         'residual_pct': abs(3.5 * 1.099 - 3.85) / 3.85 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_087')
+def _paper_087(dataset):
+    """AT2019qiz Tidal Disruption Event (Session 0, Batch 22).
+
+    Real-event anchors (Nicholl+2020): z = 0.0206; M_BH pinned as
+    10^6.45 = 2.82e6 Msun (the "10645" print is a caret-drop);
+    DISTANCE CHAIN CLOSES UNDER REGISTRY H0: 0.0206*c/70 = 88.2
+    Mpc ~ stated 90 Mpc (2 pct - another Session-0 canonical-H0
+    consistency).
+    Chains VERIFIED: L_Edd = 1.26e38*2.82e6 = 3.55e44 erg/s
+    (printed 3.6e44); eta_UQFF = 0.1*[SCm] = 0.099 EXACT; L_peak
+    deviation 2.20/2.4 = -8.3 pct EXACT; t_fb correction
+    0.06*SSQ = 0.0342 -> 27.9 d EXACT; kappa half-life ln2/KAPPA
+    = 1386 days EXACT vs observed 60 d - HONESTLY disclosed and
+    resolved via viscous-timescale domination (kappa = global
+    coherence, not optical decline).
+    SIBLING STRUCTURE (Q-083a): eta = eta_GR*[SCm] (x0.99,
+    efficiency REDUCED) here vs eta_Edd*(1+[SCm]) (x1.99,
+    DOUBLED) in 075/078 - opposite directions, context ruling.
+    DEFECTS: rise time 30/1.017 = 29.5 d, printed 28.5 (needs
+    1.0526 - Q-083b); Batch-22 table lists ASKAP period "2.78 h"
+    vs the PAPER_069 measured 44 min = 0.733 h (Q-083c conflict).
+    Match column verified: 91.7/95.0/96.7/99.0.
+    """
+    return {
+        'value': {
+            'domain': '1.11 (Batch 22 transients)',
+            'z': 0.0206,
+            'm_bh_msun': 10 ** 6.45,                       # 2.82e6 caret pin
+            'distance_chain_mpc': 0.0206 * 2.998e5 / 70.0, # 88.2 ~ 90 (H0 registry)
+            'l_edd_erg_s': 1.26e38 * 2.82e6,               # 3.55e44
+            'eta_uqff': 0.1 * 0.99,                        # 0.099 EXACT
+            'l_peak_deviation_pct': (2.20 / 2.4 - 1) * 100,    # -8.3 EXACT
+            't_fb_correction': 0.06 * SSQ,                 # 0.0342 EXACT
+            't_fb_uqff_d': 27 * (1 + 0.06 * SSQ),          # 27.9 EXACT
+            'kappa_half_life_d': 0.6931 / KAPPA_PER_DAY,   # 1386 EXACT
+            'observed_decline_d': 60.0,
+            'decline_resolution': 'viscous timescale dominates; kappa = global coherence',
+            'rise_chain_d': 30 / 1.017,                    # 29.5 vs printed 28.5
+            'askap_period_conflict_h': (2.78, 2640 / 3600.0),  # vs 069
+            'eta_sibling': ('x0.99 here', 'x1.99 in 075/078'),
+        },
+        'formula': ('eta = eta_GR*[SCm]; t_fb_UQFF = t_fb*(1 + 0.06*SSq); '
+                    'Mdot_fb ~ (t/t_fb)^(-5/3); half-life = ln2/kappa'),
+        'source': 'PAPER_087',
+        'residual_pct': abs((2.20 / 2.4 - 1) * 100),
         'status': 'OPEN_RULING',
     }

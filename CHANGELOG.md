@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.90.0] — 2026-07-29 — BAND 1: PAPER_087
+
+### Added
+- **PAPER_087 dispatch** (AT2019qiz TDE, Batch 22): real-event
+  anchors (Nicholl+2020). M_BH pinned as 10^6.45 = 2.82e6 Msun
+  (caret drop); distance chain closes under the registry H0
+  (88.2 ~ 90 Mpc). Chains EXACT: L_Edd 3.55e44; eta = 0.1*[SCm]
+  = 0.099; L_peak -8.3 pct; t_fb = 27*(1+0.06*SSq) = 27.9 d;
+  kappa half-life 1386 d with the observed 60-d decline HONESTLY
+  disclosed and resolved (viscous domination; kappa = global
+  coherence). Sibling flag: eta x0.99 (reduced) vs x1.99
+  (doubled, 075/078) — opposite directions. Defects: rise-time
+  arithmetic (29.5 vs 28.5); Batch-22 ASKAP period 2.78 h vs
+  069's 44 min.
+- OPEN_RULING Q-083.
+- Gate: 638 assertions, 0 failures. Registry: 256 rows / 507 edges / 91 ledgers.
+
+---
+
 ## [0.89.0] — 2026-07-29 — BAND 1: PAPER_086
 
 ### Added

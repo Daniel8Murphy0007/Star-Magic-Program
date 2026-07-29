@@ -1,32 +1,27 @@
-v0.89.0 BAND 1: PAPER_086 wired - KAPPA MOJIBAKE CONFIRMED (90 MILESTONE)
+v0.90.0 BAND 1: PAPER_087 wired - AT2019qiz REAL-EVENT ANCHORS
 
-PAPER_086 Ug4 AGN Feedback 8-Parameter Formula (OPEN_RULING
-Q-082):
-  PARAMETER PINS EXACT: M_SgrA* = 4.3e6 Msun = 8.55e36 kg (EHT);
-  d_g = 27,000 ly = 2.55e20 m.
-  Validator anchor Ug4 = 3.352941e22 J/m3 wired ANCHOR-OVER-
-  FORMULA: the printed closed form G^2 M^2/(c^4 d^6)*... is
-  dimensionally m^-4 and evaluates 125 ORDERS from the anchor -
-  marked OPEN, canonical form requested.
+PAPER_087 AT2019qiz Tidal Disruption Event (OPEN_RULING Q-083):
+  Real-event anchors (Nicholl+2020, closest optical TDE):
+  M_BH pinned as 10^6.45 = 2.82e6 Msun ("10645" caret drop);
+  DISTANCE CHAIN CLOSES UNDER REGISTRY H0: 0.0206*c/70 = 88.2
+  Mpc ~ stated 90 Mpc - another Session-0 canonical-H0
+  consistency.
 
-  f_AGN = A*(1 + [SCm]/10) chains EXACT: quiescent 1.099, M87
-  jet-active 3.8465 (printed 3.85). The /10 divisor is an
-  F_TRZ-like structure - primitive reading queued.
-  f_cycle = (1+cos(pi t_n))/2 endpoints EXACT.
+  Chains EXACT: L_Edd = 3.55e44 erg/s; eta = 0.1*[SCm] = 0.099;
+  L_peak deviation -8.3 pct vs Nicholl+2020; t_fb = 27*(1 +
+  0.06*SSq) = 27.9 d; kappa half-life ln2/KAPPA = 1386 d with
+  the observed 60-d decline HONESTLY disclosed and physically
+  resolved (viscous timescale dominates; kappa = global system
+  coherence).
 
-  KAPPA MOJIBAKE CONFIRMED: the decay table was computed with
-  kappa = 5e-7/day (e-4 -> e-7 drop) - proven by TWO independent
-  rows (rate = 1.827e-4/yr = 5e-7*365.25 exactly). Canonical
-  KAPPA gives f(1000 yr) ~ e^-183 ~ 0; the table's slow decay is
-  physically more sensible for Myr-scale AGN - intended-behavior
-  ruling requested.
+  SIBLING FLAG: eta = eta_GR*[SCm] (x0.99, REDUCED) here vs
+  eta_Edd*(1+[SCm]) (x1.99, DOUBLED) in 075/078 - opposite
+  directions with the same constant; context ruling requested.
 
-  [UA] 8th appearance; negative-time test (Ug4 > baseline
-  pre-collapse) recorded; 7/7 validator tests; CP2 10-sig-fig
-  integration.
+  DEFECTS: rise-time arithmetic (x1.017 gives 29.5 d, printed
+  28.5); Batch-22 table lists ASKAP period "2.78 h" vs
+  PAPER_069's measured 44 min.
 
-MILESTONE: 90 papers wired.
-
-Q-082 queued. Gate 631 assertions 0 failures. Registry 254 rows /
-501 edges / 90 citation ledgers. Wired 90/2,255 (10 clean, 80
-OPEN_RULING). Next: PAPER_087.
+Q-083 queued. Gate 638 assertions 0 failures. Registry 256 rows /
+507 edges / 91 citation ledgers. Wired 91/2,255 (10 clean, 81
+OPEN_RULING). Next: PAPER_088.

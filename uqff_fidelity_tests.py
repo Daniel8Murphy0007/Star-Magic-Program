@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.89.0", "uqff_calculator.VERSION = 0.89.0")
+assert_that(C.VERSION == "0.90.0", "uqff_calculator.VERSION = 0.90.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1392,6 +1392,21 @@ assert_that(abs(_r086['decay_rate_per_yr_table'] - 1.827e-4) / 1.827e-4 < 0.001,
 assert_that(_r086['decay_canonical_f_1000yr'] < 1e-70,
             "PAPER_086: canonical kappa gives f(1000 yr) ~ 0 - table correction pinned")
 assert_that(C.wired_count() >= 90, "wired_count >= 90")
+
+_r087 = C.calc('PAPER_087')['value']
+assert_that(abs(_r087['m_bh_msun'] - 2.82e6) / 2.82e6 < 0.001,
+            "PAPER_087: M_BH = 10^6.45 = 2.82e6 Msun caret-drop pin")
+assert_that(abs(_r087['distance_chain_mpc'] - 88.2) < 0.5,
+            "PAPER_087: distance chain closes under registry H0 (88.2 ~ 90 Mpc)")
+assert_that(abs(_r087['eta_uqff'] - 0.099) < 1e-12,
+            "PAPER_087: eta = 0.1*[SCm] = 0.099 EXACT (opposite-direction sibling of 1.99; Q-083a)")
+assert_that(abs(_r087['l_peak_deviation_pct'] - (-8.33)) < 0.01,
+            "PAPER_087: L_peak deviation -8.3 pct EXACT vs Nicholl+2020")
+assert_that(abs(_r087['t_fb_uqff_d'] - 27.9) < 0.05,
+            "PAPER_087: t_fb correction 0.06*SSq chain -> 27.9 d EXACT")
+assert_that(abs(_r087['kappa_half_life_d'] - 1386.0) < 1.0,
+            "PAPER_087: kappa half-life 1386 d EXACT - honest 60-d mismatch disclosed + resolved")
+assert_that(C.wired_count() >= 91, "wired_count >= 91")
 
 # =============================================================================
 # REPORT

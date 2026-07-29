@@ -1254,3 +1254,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 90/2,255 (10 ✓, 80 ⚠). Next: PAPER_087.
 
 ---
+
+## 2026-07-29 — v0.90.0 — BAND 1: PAPER_087
+
+- PAPER_087 wired (⚠ Q-083): AT2019qiz TDE. Real-event anchors;
+  caret-drop 10^6.45 pin; H0-registry distance chain; -8.3 pct
+  EXACT; honest kappa/viscous resolution; eta-direction sibling
+  + ASKAP conflict flagged.
+- Campaign: 91/2,255 (10 ✓, 81 ⚠). Next: PAPER_088.
+
+---
