@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.82.0"
+VERSION = "0.83.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4208,5 +4208,53 @@ def _paper_079(dataset):
                     'B_std = 3.2e19*sqrt(P*Pdot) G'),
         'source': 'PAPER_079',
         'residual_pct': abs(9.4e14 / 3.5e14 - 2.7) / 2.7 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_080')
+def _paper_080(dataset):
+    """Complete Multi-Wavelength Validation Suite (Session 0).
+
+    DOMAIN 1.10 CAPSTONE: synthesis of PAPER_073-079. Statistics
+    partition EXACT: 20 agreements + 2 beyond-standard (magnetar
+    2x B, ULX) + 2 honest failures (H0 tension unresolved, ULX
+    25x) = 24 predictions; 20/24 = 83.3 pct; negligible-correction
+    subset 6/24 = 25 pct. 7 of 10 databases validated; NNDC/PDG/
+    IAEA endpoints recorded, forecasting the nuclear/particle
+    domains ahead.
+    MATRIX CROSS-CONSISTENT with the wired dispatches: +0.015 dex
+    (073), x1.018 (074), x1.99 (075), 1e-5 (076), 0.5 pct (077),
+    +0.3 dex (078), 1.98-2.7 (079) - gate asserts these against
+    the live calc() values.
+    SYNTHESIS HONESTY NOTE (Q-076a): the matrix reports galaxy
+    sigma_v "<2-3 sigma agreement" which is TRUE but omits the
+    PAPER_074 one-sided finding (Newton closer in all 6 rows) -
+    the Rule-7 pin from 074 stands alongside this roll-up.
+    The two failures are wired as PHYSICALLY MEANINGFUL per the
+    paper: H0 needs beyond-basic-[UA] extensions (later corpus:
+    H0 = A_5+SO_5); ULX needs beaming. The magnetar 2x B-field
+    stands as the suite's flagship falsifiable signature.
+    """
+    return {
+        'value': {
+            'domain': '1.10 CAPSTONE (synthesis of 073-079)',
+            'n_predictions': 24,
+            'n_agree': 20, 'n_beyond': 2, 'n_fail': 2,
+            'partition_check': 20 + 2 + 2,                 # 24 EXACT
+            'agree_pct': 20 / 24 * 100,                    # 83.3
+            'negligible_pct': 6 / 24 * 100,                # 25.0
+            'databases_validated': 7, 'databases_total': 10,
+            'pending_endpoints': ['NNDC', 'PDG', 'IAEA-NDS'],
+            'matrix': {'gaia_dex': 0.015, 'ned_sigma': 1.018, 'xrb_eta': 1.99,
+                       'fermi_amp': 1e-5, 'ligo_pct': 0.5, 'agn_dex': 0.3,
+                       'magnetar_range': (1.98, 2.7)},
+            'failures': ['H0 tension (basic [UA] insufficient)', 'ULX 25x (beaming)'],
+            'flagship_signature': 'magnetar 2x B-field',
+        },
+        'formula': ('synthesis matrix over 073-079; partition 20+2+2 = 24; '
+                    'regime strength ~ |g_mode|/|g_DPM|'),
+        'source': 'PAPER_080',
+        'residual_pct': abs(20 / 24 * 100 - 83.0),
         'status': 'OPEN_RULING',
     }

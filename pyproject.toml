@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.82.0"
-description = "UQFF Star-Magic-Program v0.82.0: PAPER_079 wired (HEASARC magnetars: B enhancement 1+[SCm]*H_SCm = 1.9801 EXACT sibling of 1.99; literature-matching B_std anchors with SGR1806 spin-down chain verified; honesty pin - 4/5 rows tautological, Swift J1818 ratio 2.69 is the lone discriminator; XMM T_X null). Q-075 queued. Wired 83/2255, gate 590/0. Registry 240 rows / 468 edges / 83 ledgers."
+version = "0.83.0"
+description = "UQFF Star-Magic-Program v0.83.0: PAPER_080 wired (Domain 1.10 CAPSTONE: 24-prediction partition 20+2+2 EXACT, 83.3 pct; matrix cross-consistent with wired 073-079 dispatches via LIVE gate assertions; two honest failures = the same Rule-7 items this campaign pinned; NNDC/PDG/IAEA endpoints forecast nuclear domains; flagship falsifiable = magnetar 2x B). Q-076 queued. Wired 84/2255, gate 596/0. Registry 242 rows / 473 edges / 84 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

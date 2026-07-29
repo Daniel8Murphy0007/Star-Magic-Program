@@ -1187,3 +1187,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 83/2,255 (10 ✓, 73 ⚠). Next: PAPER_080.
 
 ---
+
+## 2026-07-29 — v0.83.0 — BAND 1: PAPER_080 — DOMAIN 1.10 CAPSTONE
+
+- PAPER_080 wired (⚠ Q-076): capstone. Partition EXACT; live
+  cross-consistency gates vs 073-079; failures = our Rule-7 pins;
+  future-endpoint roadmap recorded. Domain 1.10 complete (8
+  papers, 073-080).
+- Campaign: 84/2,255 (10 ✓, 74 ⚠). Next: PAPER_081.
+
+---

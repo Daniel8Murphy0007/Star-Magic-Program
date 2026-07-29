@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.83.0] — 2026-07-29 — BAND 1: PAPER_080 — DOMAIN 1.10 CAPSTONE
+
+### Added
+- **PAPER_080 dispatch** (Multi-Wavelength Suite Capstone):
+  synthesis of 073-079. Statistics partition EXACT (20 agree +
+  2 beyond-standard + 2 honest failures = 24; 83.3 pct). The
+  matrix is cross-consistent with the wired dispatches and the
+  gate now asserts this against LIVE calc() values (075 eta,
+  074 sigma factor, 079 B enhancement). The paper's own two
+  failures are the same two Rule-7 items this campaign pinned
+  (H0 basic-coupling null; ULX beaming) — corpus honesty aligns
+  with campaign honesty. NNDC/PDG/IAEA endpoints recorded,
+  forecasting nuclear/particle domains. Flagship falsifiable:
+  magnetar 2x B-field.
+- OPEN_RULING Q-076 (synthesis omits the 074 one-sided caveat;
+  database count convention; NNDC row provenance).
+- Gate: 596 assertions, 0 failures. Registry: 242 rows / 473 edges / 84 ledgers.
+
+---
+
 ## [0.82.0] — 2026-07-29 — BAND 1: PAPER_079
 
 ### Added

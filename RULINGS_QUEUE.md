@@ -1360,6 +1360,27 @@ RESOLVED section with the ruling recorded.
   honesty pin + lone-discriminator reading.
 - **Daniel's ruling:** (pending)
 
+### Q-076 — PAPER_080 — synthesis honesty + database count + NNDC row
+- **Question:** (a) The synthesis matrix reports galaxy sigma_v
+  "<2-3 sigma agreement" - true, but it omits the PAPER_074
+  one-sided finding (Newton closer in ALL 6 rows); should the
+  capstone carry the Rule-7 caveat explicitly? (b) "7 of 10
+  databases validated" while the matrix lists 8 domains including
+  an NNDC nuclear-binding row - count convention? (c) The NNDC
+  row claims "+0.015 dex nuclear binding" - same 0.034 factor as
+  Gaia (Q-069d) or separate? Provenance forecast for the nuclear
+  domain ahead.
+- **Notable:** statistics partition EXACT (20+2+2 = 24, 83.3
+  pct); matrix values cross-consistent with the wired 073-079
+  dispatches (gate asserts against live calc values); the two
+  failures are the same two Rule-7 items this campaign pinned
+  (H0 basic-coupling null, ULX beaming) - the corpus's own
+  honesty aligns with ours.
+- **Best-candidate wired:** capstone roll-up with live
+  cross-consistency assertions; pending-endpoint roadmap
+  recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

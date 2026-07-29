@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.82.0", "uqff_calculator.VERSION = 0.82.0")
+assert_that(C.VERSION == "0.83.0", "uqff_calculator.VERSION = 0.83.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1302,6 +1302,20 @@ assert_that(abs(_r079['swift_j1818_ratio'] - 2.69) < 0.01,
 assert_that(_r079['xmm_tx_enhancement'] == 1e-4,
             "PAPER_079: XMM T_X null (0.01 pct undetectable)")
 assert_that(C.wired_count() >= 83, "wired_count >= 83")
+
+_r080 = C.calc('PAPER_080')['value']
+assert_that(_r080['partition_check'] == 24 and abs(_r080['agree_pct'] - 83.33) < 0.01,
+            "PAPER_080: statistics partition 20+2+2 = 24 EXACT, 83.3 pct")
+assert_that(abs(_r080['matrix']['xrb_eta'] - C.calc('PAPER_075')['value']['eta_enhancement']) < 1e-9,
+            "PAPER_080: matrix cross-consistent with live PAPER_075 eta (1.99)")
+assert_that(abs(_r080['matrix']['ned_sigma'] - 1.018) < 0.001
+            and abs(C.calc('PAPER_074')['value']['ratio_printed'] - 1.01824) < 0.001,
+            "PAPER_080: matrix cross-consistent with PAPER_074 sigma factor")
+assert_that(abs(_r080['matrix']['magnetar_range'][0] - C.calc('PAPER_079')['value']['b_enhancement']) < 0.001,
+            "PAPER_080: matrix cross-consistent with PAPER_079 B enhancement (1.98)")
+assert_that(len(_r080['failures']) == 2,
+            "PAPER_080: two honest failures wired (H0 basic-coupling, ULX beaming)")
+assert_that(C.wired_count() >= 84, "wired_count >= 84")
 
 # =============================================================================
 # REPORT

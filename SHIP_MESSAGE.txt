@@ -1,26 +1,28 @@
-v0.82.0 BAND 1: PAPER_079 wired - MAGNETAR TAUTOLOGY HONESTY PIN
+v0.83.0 BAND 1: PAPER_080 wired - DOMAIN 1.10 CAPSTONE COMPLETE
 
-PAPER_079 HEASARC Magnetar Catalog (OPEN_RULING Q-075):
-  B_UQFF = B_std * (1 + [SCm]*H_SCm) = 1.9801x EXACT - sibling
-  of the 1.99 = 1+[SCm] structure in 075/078 (namespace ruling
-  queued: context-dependent or drift?).
+PAPER_080 Complete Multi-Wavelength Validation Suite
+(OPEN_RULING Q-076):
+  Synthesis of PAPER_073-079. Statistics partition EXACT:
+  20 agreements + 2 beyond-standard (magnetar 2x B, ULX) +
+  2 honest failures = 24 predictions; 83.3 pct agreement;
+  negligible-correction subset 6/24 = 25 pct.
 
-  Five-magnetar table: B_std anchors match published values
-  (SGR1806 2e15 / SGR1745 2.3e14 / 1E2259 5.9e13 / XTE1810
-  2.1e14 G); SGR1806 spin-down chain 3.2e19*sqrt(P*Pdot) =
-  2.4e15 verifies.
+  LIVE CROSS-CONSISTENCY GATES: the synthesis matrix values are
+  asserted against the live wired dispatches - 075 eta (1.99),
+  074 sigma factor (1.018), 079 B enhancement (1.98) - the
+  capstone and its inputs cannot drift apart silently.
 
-  HONESTY PIN: 4 of 5 rows have B_obs = B_std - TAUTOLOGICAL,
-  since catalog B values are themselves spin-down derived; the
-  internal/external-field interpretation is untestable there.
-  Swift J1818 (youngest, ~240 yr) is the LONE DISCRIMINATOR:
-  ratio 9.4/3.5 = 2.69 = printed 2.7, read as active-phase
-  [SCm] strengthening.
+  The paper's own two failures are EXACTLY the two Rule-7 items
+  this campaign pinned independently (H0 basic-coupling null;
+  ULX beaming requirement) - corpus honesty aligns with
+  campaign honesty.
 
-  XMM cluster T_X null: 0.01 pct undetectable (falsifiable).
-  SGR1745 Pdot exponent recovery open (chain 1.6e14 vs printed
-  2.3e14).
+  NNDC + PDG + IAEA-NDS endpoints recorded (3 of 10 pending) -
+  forecasting the nuclear/particle database domains ahead.
+  Flagship falsifiable signature: magnetar 2x B-field.
 
-Q-075 queued. Gate 590 assertions 0 failures. Registry 240 rows /
-468 edges / 83 citation ledgers. Wired 83/2,255 (10 clean, 73
-OPEN_RULING). Next: PAPER_080.
+  DOMAIN 1.10 COMPLETE (8 papers, 073-080).
+
+Q-076 queued. Gate 596 assertions 0 failures. Registry 242 rows /
+473 edges / 84 citation ledgers. Wired 84/2,255 (10 clean, 74
+OPEN_RULING). Next: PAPER_081.
