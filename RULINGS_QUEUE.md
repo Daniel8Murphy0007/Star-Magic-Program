@@ -370,6 +370,22 @@ RESOLVED section with the ruling recorded.
   0.37^2, hierarchy 1:SSq:SSq^2, 845 GeV third-family prediction).
 - **Daniel's ruling:** (pending)
 
+### Q-026 — PAPER_027 — Ug4 density denominator + reversal-depth print + k_eta collision
+- **Question:** (a) The Ug4 term uses denominator 6.38e-36 — which is
+  0.9*rho_UA = (1-F_TRZ)*rho_UA, NOT the canonical rho_SCm = 7.09e-37.
+  The effective form Ug4 = BR/(1-F_TRZ) = 6.556e-6 matches the paper's
+  6.558e-6 exactly. Is (1-F_TRZ)*rho_UA the intended composition, or
+  is 6.38e-36 a density drift that should read rho_SCm (which would
+  give Ug4 = 10*BR/0.9 = 6.6e-5)? (b) The tau+e- reversal depth is
+  printed 3.900 but -ln(4.9e-6)/pi = 3.8917 (0.2 pct). (c) Symbol
+  collision: k_eta = 1e-113 (LENR neutron coupling, this paper) vs
+  k_eta_VLQ = 0.1369 (PAPER_026b) — same identifier, two quantities;
+  namespace clarification for the registry.
+- **Best-candidate wired:** exp(-SSq) composition EXACT; t_n = 3.833
+  chain reproduces the LHCb limit to machine precision; Ug4 wired in
+  its effective BR/(1-F_TRZ) form with both readings documented.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

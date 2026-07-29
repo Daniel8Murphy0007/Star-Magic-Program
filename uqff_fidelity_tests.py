@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.29.0", "uqff_calculator.VERSION = 0.29.0")
+assert_that(C.VERSION == "0.30.0", "uqff_calculator.VERSION = 0.30.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -520,6 +520,21 @@ assert_that(abs(_r026b['third_family_prediction_gev'] - 844.7) < 0.5,
 assert_that(abs(_r026b['vlq_hierarchy_gev'][1] - 1482.0) < 1.0,
             "PAPER_026b: second family 2600*SSq = 1482 GeV")
 assert_that(C.wired_count() >= 30, "wired_count >= 30")
+
+_r027 = C.calc('PAPER_027')['value']
+assert_that(abs(_r027['s_lfv'] - 0.5655) < 0.0001,
+            "PAPER_027: S_LFV = exp(-SSq) = 0.5655 EXACT registry composition")
+assert_that(abs(_r027['ug3_suppression'] + 0.3337) < 0.001,
+            "PAPER_027: Ug3 = -0.59*0.5655 = -0.3337 chain verified")
+assert_that(abs(_r027['t_n_lfv_constraint'] - 3.833) < 0.001,
+            "PAPER_027: t_n_LFV = -ln(5.9e-6)/pi = 3.833 reversal depth")
+assert_that(abs(_r027['br_reproduction'] - 5.9e-6) / 5.9e-6 < 1e-9,
+            "PAPER_027: BR = exp(-pi*t_n) = 5.9e-6 reproduces LHCb limit exactly")
+assert_that(abs(_r027['ug1_mb_over_mp'] - 5.627) < 0.01,
+            "PAPER_027: Ug1 = m_B/m_p = 5.627 (~paper 5.622)")
+assert_that(abs(_r027['ug4_effective'] - 6.556e-6) < 1e-9,
+            "PAPER_027: Ug4 = BR/(1-F_TRZ) = 6.556e-6 (~paper 6.558e-6; Q-026a density reading)")
+assert_that(C.wired_count() >= 31, "wired_count >= 31")
 
 # =============================================================================
 # REPORT

@@ -168,3 +168,9 @@ observable,vlq_atlas_coupling_calibration,paper,PAPER_026b,primary derivation
 observable,vlq_atlas_coupling_calibration,paper,PAPER_022,0.37 = beta_string origin
 observable,vlq_ssq_hierarchy,paper,PAPER_026b,primary derivation
 observable,vlq_production_cross_section,paper,PAPER_026b,primary derivation
+primitive,SSQ,observable,lfv_suppression_mechanism,S_LFV = exp(-|t_n|*SSq)
+primitive,F_TRZ,observable,lfv_fu_chain,Ug4 = BR/(1-F_TRZ) effective reading
+observable,lfv_suppression_mechanism,paper,PAPER_027,primary derivation
+observable,lfv_reversal_depth,paper,PAPER_027,primary derivation
+observable,lfv_fu_chain,paper,PAPER_027,primary derivation
+observable,lfv_fu_chain,paper,PAPER_026b,k_eta symbol collision cross-ref

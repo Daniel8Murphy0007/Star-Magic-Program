@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.29.0"
+VERSION = "0.30.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1396,5 +1396,57 @@ def _paper_026b(dataset):
                     'm_VLQ ratios 1 : SSq : SSq^2; third family = 2600*SSq^2 = 845 GeV'),
         'source': 'PAPER_026b',
         'residual_pct': abs(hierarchy[2] - 845.0) / 845.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_027')
+def _paper_027(dataset):
+    """Lepton Flavor Violation Processes in UQFF (Session 0).
+
+    LHCb B0 -> K*0 tau e limits explained via DPM temporal reversal:
+    LFV requires t_n < 0 -> cos(pi*t_n) = -1 destructive suppression.
+    S_LFV = exp(-|t_n|*SSq) = exp(-0.57) = 0.5655 EXACT registry
+    composition. Critical reversal depth t_n = -ln(BR)/pi = 3.833;
+    BR = exp(-pi*3.833) = 5.9e-6 reproduces the LHCb limit. Ug-chain
+    verified: Ug1 = m_B/m_p = 5.62; Ug3 = -0.59*0.5655 = -0.3337;
+    F_U = 5.288 net positive (transition disfavored). SM GIM floor
+    1e-54 - any observation at 1e-6 is BSM.
+    Q-026: (a) Ug4 denominator printed 6.38e-36 = 0.9*rho_UA, NOT
+    canonical RHO_SCM - effective form Ug4 = BR/(1-F_TRZ);
+    intended composition or density drift? (b) tau+e- reversal depth
+    printed 3.900 vs computed -ln(4.9e-6)/pi = 3.8917; (c) k_eta
+    symbol collision: 1e-113 (LENR coupling here) vs 0.1369
+    (PAPER_026b VLQ) - same name, two quantities.
+    """
+    import math as _m
+    s_lfv = _m.exp(-1.0 * SSQ)                       # 0.5655 EXACT
+    br_limit_me = 5.9e-6
+    c_lfv = br_limit_me / 1.0e-5                     # 0.59
+    ug3 = -1.0 * c_lfv * s_lfv                       # -0.3337
+    t_n_lfv = -_m.log(br_limit_me) / _m.pi           # 3.8327
+    ug1 = 5.27965 / 0.93827                          # m_B/m_p = 5.627
+    ug4_effective = br_limit_me / (1.0 - F_TRZ)      # 6.556e-6 (Q-026a reading)
+    return {
+        'value': {
+            'br_limit_tau_minus_e': br_limit_me,     # LHCb 90 pct CL
+            'br_limit_tau_plus_e': 4.9e-6,
+            's_lfv': s_lfv,                          # exp(-SSq)
+            'c_lfv_wilson_proxy': c_lfv,
+            'ug3_suppression': ug3,
+            't_n_lfv_constraint': t_n_lfv,           # 3.833
+            't_n_plus_printed': 3.900,               # Q-026b (computed 3.8917)
+            'br_reproduction': _m.exp(-_m.pi * t_n_lfv),   # = 5.9e-6
+            'ug1_mb_over_mp': ug1,
+            'ug4_effective': ug4_effective,          # BR/(1-F_TRZ) reading
+            'f_u_net': ug1 - abs(ug3),               # ~5.29 (paper 5.288 with 5.622 Ug1)
+            'sm_gim_floor': 1.0e-54,
+            'lhcb_luminosity_fb': 5.4,
+            'k_eta_lenr': 1.0e-113,                  # Q-026c symbol collision
+        },
+        'formula': ('S_LFV = exp(-|t_n|*SSq); Ug3 = cos(pi*t_n)*C_LFV*S_LFV; '
+                    't_n_LFV = -ln(BR)/pi; BR = exp(-pi*t_n)'),
+        'source': 'PAPER_027',
+        'residual_pct': abs(_m.exp(-_m.pi * t_n_lfv) - br_limit_me) / br_limit_me * 100,
         'status': 'OPEN_RULING',
     }

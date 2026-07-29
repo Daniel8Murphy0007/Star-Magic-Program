@@ -637,3 +637,16 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 30/2,255 (7 ✓, 23 ⚠). Next: PAPER_027.
 
 ---
+
+## 2026-07-29 — v0.30.0 — BAND 1: PAPER_027
+
+- PAPER_027 wired (⚠ Q-026): LFV. exp(-SSq) composition EXACT; reversal
+  depth reproduces LHCb limit exactly; Ug4 density-denominator question
+  queued. Gate Block-8 caught a docstring literal — fixed.
+- v0.29.0 ship-verification note: ship.ps1 HAD completed (commit+tag+
+  PyPI all green); my sandbox check raced ahead of the ship. Standing
+  lesson: verify ship state only after Daniel confirms the run.
+- Gate 235/0. Registry 91 rows / 175 edges / 31 ledgers.
+- Campaign: 31/2,255 (7 ✓, 24 ⚠). Next: PAPER_028.
+
+---

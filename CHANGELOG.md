@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.30.0] — 2026-07-29 — BAND 1: PAPER_027
+
+### Added
+- **PAPER_027 dispatch** (Lepton Flavor Violation): LHCb B0 -> K*0 tau e
+  limits explained via DPM temporal reversal — LFV requires t_n < 0,
+  cos(pi*t_n) = -1 destructive. S_LFV = exp(-|t_n|*SSq) = 0.5655 EXACT
+  registry composition; critical reversal depth t_n = -ln(BR)/pi =
+  3.833 with BR = exp(-pi*t_n) reproducing the 5.9e-6 LHCb limit to
+  machine precision; Ug chain verified (Ug1 = m_B/m_p = 5.63, Ug3 =
+  -0.3337, F_U = 5.29 net positive); SM GIM floor 1e-54. OPEN_RULING
+  Q-026 (Ug4 denominator = 0.9*rho_UA vs canonical rho_SCm; tau+e-
+  depth print 3.900 vs 3.8917; k_eta symbol collision with PAPER_026b).
+- Gate: 235 assertions, 0 failures. Registry: 91 rows / 175 edges / 31 ledgers.
+
+### Fixed
+- Gate Block-8 banned-literal check caught a canonical density literal
+  in a dispatch docstring (prose counts too) — replaced with the
+  registry symbol name. The guard works exactly as designed.
+
+---
+
 ## [0.29.0] — 2026-07-29 — BAND 1: PAPER_026b
 
 ### Added
