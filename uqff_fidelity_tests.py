@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.26.0", "uqff_calculator.VERSION = 0.26.0")
+assert_that(C.VERSION == "0.27.0", "uqff_calculator.VERSION = 0.27.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -473,6 +473,21 @@ assert_that(abs(_r025['relic_acp_check'] - 0.073) < 0.001,
 assert_that(abs(_r025['omega_dm_h2'] - 0.1200) < 1e-12,
             "PAPER_025: Omega_DM h^2 = 0.1200 = Planck 2020 anchor")
 assert_that(C.wired_count() >= 27, "wired_count >= 27")
+
+_r025b = C.calc('PAPER_025b')['value']
+assert_that(abs(_r025b['kappa_ssq'] - 2.85e-4) < 1e-18,
+            "PAPER_025b: kappa*SSq = 2.85e-4 EXACT registry composition")
+assert_that(abs(_r025b['hierarchy_ratio_12'] - 0.57) < 0.0005,
+            "PAPER_025b: m_nu1/m_nu2 = 8.18/14.35 = 0.5700 = SSq EXACT hierarchy")
+assert_that(abs(_r025b['xray_line_kev'] - 3.55) < 1e-12,
+            "PAPER_025b: E_gamma = M_s1/2 = 3.55 keV (Perseus/M31 XMM line)")
+assert_that(abs(_r025b['mixing_enhancement'] - 0.407) < 0.001,
+            "PAPER_025b: sterile mixing enhancement 0.407 chain verified")
+assert_that(abs(_r025b['g_uqff_nucleon'] - 9.7e-6) / 9.7e-6 < 0.01,
+            "PAPER_025b: g_UQFF-nucleon = 0.37*(m_N/M_s3)*SSq = 9.7e-6 (0.37 factor again)")
+assert_that(abs(_r025b['sum_m_nu_components_mev'] - 72.89) < 0.01,
+            "PAPER_025b: components sum 72.89 meV vs stated 74.2 (1.8 pct, Q-023a) honestly pinned")
+assert_that(C.wired_count() >= 28, "wired_count >= 28")
 
 # =============================================================================
 # REPORT

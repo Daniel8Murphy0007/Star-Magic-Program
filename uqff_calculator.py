@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.26.0"
+VERSION = "0.27.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1244,5 +1244,55 @@ def _paper_025(dataset):
                     'Omega_ACP = 0.128*SSq = 0.073; lambda_dB = hbar/(m*v)'),
         'source': 'PAPER_025',
         'residual_pct': abs(m_acp_ev - 3.81e-24) / 3.81e-24 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_025b')
+def _paper_025b(dataset):
+    """Neutrino Polarizability - UQFF Quantum Field Contributions (S0).
+
+    Sterile sector: M_s1 = 7.1 keV -> E_gamma = 3.55 keV X-ray line
+    (consistent with the unidentified Perseus/M31 XMM line);
+    sin^2(2theta) = 1.78e-10 < 3e-10 XMM constraint.
+    EXACT hierarchy: m_nu1/m_nu2 = SSq = 0.570 (8.18/14.35 checks);
+    M_N2/M_N1 = SSq exact. kappa*SSq = 2.85e-4 registry composition.
+    Mixing enhancement chain verified: sin^2(2theta)/4 * (M_s1/Sum)^2
+    = 0.407 (O(1)). g_UQFF-nucleon = 0.37*(m_N/M_s3)*SSq = 9.7e-6
+    (the 0.37 string factor again). Polarizability bound
+    a_nu < 1e-32 cm^3 (COHERENT ~1e-30; next-gen CEvNS reach).
+    Q-023: (a) Sum m_nu stated 74.2 meV but components sum 72.89 meV
+    (1.8 pct); (b) M_N1 = 2.19e? GeV exponent mojibake; (c) DW
+    production Omega_s1 h^2 = 0.131 vs 0.12 target (9 pct over,
+    disclosed in paper).
+    """
+    kappa_ssq = KAPPA_PER_DAY * SSQ                  # 2.85e-4 EXACT
+    m_nu = (8.18, 14.35, 50.36)                      # meV, paper anchors
+    enhancement = (1.78e-10 / 4.0) * (7100.0 / 0.0742) ** 2
+    g_nucleon = 0.37 * (0.938 / 20351.0) * SSQ       # 9.72e-6
+    return {
+        'value': {
+            'kappa_ssq': kappa_ssq,
+            'm_s1_kev': 7.1,
+            'xray_line_kev': 7.1 / 2.0,              # 3.55 = Perseus/M31 line
+            'sin2_2theta': 1.78e-10,
+            'xmm_constraint': 3.0e-10,
+            'm_nu_mev_x3': m_nu,
+            'sum_m_nu_stated_mev': 74.2,             # Q-023a
+            'sum_m_nu_components_mev': sum(m_nu),    # 72.89
+            'hierarchy_ratio_12': m_nu[0] / m_nu[1], # 0.5700 = SSq EXACT
+            'delta_m31_sq': (2.45e-3, 2.51e-3),      # UQFF vs PDG
+            'mixing_enhancement': enhancement,       # 0.407 verified
+            'g_uqff_nucleon': g_nucleon,             # 9.7e-6
+            'm_s3_gev': 20351.0,
+            'charge_radius_cm2': 6.0e-33,
+            'polarizability_bound_cm3': 1.0e-32,
+            'coherent_sensitivity_cm3': 1.0e-30,
+            'omega_s1_h2': 0.131,                    # Q-023c vs 0.12
+        },
+        'formula': ('m_nu = (m_D^2/M_N)*(1 + kappa*SSq*v^2/M_N^2); kappa*SSq = 2.85e-4; '
+                    'm1/m2 = M_N2/M_N1 = SSq; enhancement = sin^2(2theta)/4*(M_s1/Sum)^2'),
+        'source': 'PAPER_025b',
+        'residual_pct': abs(sum(m_nu) - 74.2) / 74.2 * 100,
         'status': 'OPEN_RULING',
     }

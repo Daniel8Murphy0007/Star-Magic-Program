@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.27.0] — 2026-07-29 — BAND 1: PAPER_025b
+
+### Added
+- **PAPER_025b dispatch** (Neutrino Polarizability): sterile M_s1 =
+  7.1 keV (Aether RGE fixed point) -> E_gamma = 3.55 keV consistent
+  with the unidentified Perseus/M31 XMM line; sin^2(2theta) = 1.78e-10
+  under the XMM constraint. EXACT SSq hierarchy: m_nu1/m_nu2 =
+  8.18/14.35 = 0.570 and M_N2/M_N1 = SSq; kappa*SSq = 2.85e-4 registry
+  composition; sterile mixing enhancement 0.407 chain verified;
+  g_UQFF-nucleon = 0.37*(m_N/M_s3)*SSq = 9.7e-6 (0.37 string factor
+  again); polarizability bound a_nu < 1e-32 cm^3 (next-gen CEvNS).
+  OPEN_RULING Q-023 (mass-sum 74.2 vs 72.89 meV; M_N1 exponent
+  mojibake; DW overproduction 0.131 vs 0.12).
+- Gate: 214 assertions, 0 failures. Registry: 82 rows / 154 edges / 28 ledgers.
+
+---
+
 ## [0.26.0] — 2026-07-29 — BAND 1: PAPER_025
 
 ### Added

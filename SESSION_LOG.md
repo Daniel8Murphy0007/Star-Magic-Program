@@ -605,3 +605,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 27/2,255 (7 ✓, 20 ⚠). Next: PAPER_025b (Neutrino Polarizability).
 
 ---
+
+## 2026-07-29 — v0.27.0 — BAND 1: PAPER_025b
+
+- PAPER_025b wired (⚠ Q-023): neutrino polarizability. SSq hierarchy
+  EXACT (0.570); 3.55 keV XMM line; enhancement + coupling chains
+  verified; component-sum family slip queued (3rd corpus instance).
+- Gate 214/0. Registry 82 rows / 154 edges / 28 ledgers.
+- Campaign: 28/2,255 (7 ✓, 21 ⚠). Next: PAPER_026.
+
+---

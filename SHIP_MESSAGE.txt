@@ -1,25 +1,23 @@
-v0.26.0 BAND 1: PAPER_025 wired
+v0.27.0 BAND 1: PAPER_025b wired
 
-PAPER_025 Dark Matter Direct Detection (OPEN_RULING Q-022):
-  Two ZERO-free-parameter DM candidates from kappa + SSq:
-  ACP (ultra-light, fuzzy DM):
-    M_ACP*c^2 = kappa*hbar = 3.81e-24 eV EXACT registry composition
-    lambda_dB = hbar/(m*v) = 2.29 kpc at 220 km/s (reproduced)
-    r_core = 258 pc solves core-cusp + missing satellites
-  ACP2 (heavy):
-    M_ACP2 = M_KK * SSq^2 = 11.6 TeV * 0.3249 = 3.77 TeV composed
-    sigma_SI = 3.2e-52 cm2 - 1e4 BELOW LZ: all direct-detection
-    null results (LZ/XENONnT/PandaX) naturally explained
-  Self-interaction sigma/M = SSq = 0.57 cm2/g (primitive direct);
-  Bullet Cluster consistent
-  Relic Omega_DM h^2 = 0.1200 = Planck 2020; Omega_ACP = 0.128*SSq
-  = 0.073 composition verified
+PAPER_025b Neutrino Polarizability (OPEN_RULING Q-023):
+  Sterile sector: M_s1 = 7.1 keV (Aether RGE fixed point) ->
+  E_gamma = 3.55 keV - consistent with the unidentified Perseus/M31
+  XMM-Newton line; sin^2(2theta) = 1.78e-10 < 3e-10 XMM constraint
+  EXACT SSq HIERARCHY: m_nu1/m_nu2 = 8.18/14.35 = 0.5700 = SSq;
+  M_N2/M_N1 = SSq exact
+  kappa*SSq = 2.85e-4 registry composition (headline coupling)
+  Mixing enhancement chain verified: sin^2(2theta)/4*(M_s1/Sum)^2
+  = 0.407 (O(1), not negligible)
+  g_UQFF-nucleon = 0.37*(m_N/M_s3)*SSq = 9.7e-6 - the 0.37 string
+  factor appears again (comagnetometer proxy, arXiv:2506.15046)
+  Bound: a_nu < 1e-32 cm^3 (COHERENT ~1e-30; next-gen CEvNS reach)
 
-Q-022 queued: (a) stated 98.8/1.2 pct mass split vs relic-table
-0.073/0.047 = 61/39 pct - incompatible in the same section;
-(b) sigma_SI closed form mojibaked (anchor wired); (c) sigma/M = 0.57
-vs galaxy-cluster < 0.47 marginal (paper discloses).
+Q-023 queued: (a) Sum m_nu 74.2 meV stated vs eigenstates summing
+72.89 meV (1.8 pct - third instance of the component-sum family);
+(b) M_N1 = 2.19e? GeV exponent mojibake; (c) DW production 0.131 vs
+0.12 target (9 pct over, paper discloses).
 
-Gate 207 assertions 0 failures. Registry 79 rows / 147 edges / 27
-citation ledgers. Wired 27/2,255 (7 clean, 20 OPEN_RULING).
-Next: PAPER_025b (Neutrino Polarizability).
+Gate 214 assertions 0 failures. Registry 82 rows / 154 edges / 28
+citation ledgers. Wired 28/2,255 (7 clean, 21 OPEN_RULING).
+Next: PAPER_026.

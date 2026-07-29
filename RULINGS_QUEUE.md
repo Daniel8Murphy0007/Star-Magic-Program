@@ -312,6 +312,21 @@ RESOLVED section with the ruling recorded.
   98.8/1.2 exposed as stated pair.
 - **Daniel's ruling:** (pending)
 
+### Q-023 — PAPER_025b — neutrino mass sum + M_N1 mojibake + DW overproduction
+- **Question:** (a) Sum m_nu stated as 74.2 meV, but the three listed
+  eigenstates (8.18 + 14.35 + 50.36) sum to 72.89 meV — 1.8 pct gap
+  (Q-020a/Q-021a component-sum family). Which is canonical: the stated
+  sum or the eigenstate triple? (The SSq hierarchy 8.18/14.35 = 0.570
+  is EXACT, favoring the triple.) (b) The GUT-scale Majorana mass is
+  printed "M_N1 = 2.19 x 10? GeV" — exponent mojibake; M_s3 = 20,351
+  GeV appears intact elsewhere. What is M_N1's exponent? (c) DW
+  production gives Omega_s1 h^2 = 0.131 vs the 0.12 target (9 pct
+  over, disclosed) — accept as-is or is a suppression factor missing?
+- **Best-candidate wired:** eigenstate triple wired (internally
+  SSq-exact); both sums exposed; enhancement chain 0.407 and
+  g-coupling chain verified numerically.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

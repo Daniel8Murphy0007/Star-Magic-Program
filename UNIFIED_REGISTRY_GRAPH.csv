@@ -146,3 +146,10 @@ observable,acp_ultralight_dm_mass,paper,PAPER_025,primary derivation
 observable,acp2_heavy_dm_mass,paper,PAPER_025,primary derivation
 observable,acp2_heavy_dm_mass,paper,PAPER_022,M_KK = 11.6 TeV input
 observable,dm_self_interaction_ssq,paper,PAPER_025,primary derivation
+primitive,KAPPA_PER_DAY,observable,neutrino_polarizability_bound,kappa*SSq = 2.85e-4
+primitive,SSQ,observable,neutrino_mass_ssq_hierarchy,m1/m2 = M_N2/M_N1 = SSq
+primitive,SSQ,observable,neutrino_polarizability_bound,g coupling chain + condensate SSq^2
+observable,sterile_neutrino_7kev,paper,PAPER_025b,primary derivation
+observable,neutrino_mass_ssq_hierarchy,paper,PAPER_025b,primary derivation
+observable,neutrino_polarizability_bound,paper,PAPER_025b,primary derivation
+observable,sterile_neutrino_7kev,paper,PAPER_025,DM sector companion
