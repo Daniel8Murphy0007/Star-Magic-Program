@@ -543,3 +543,8 @@ primitive,SSQ,observable,kappa_ssq_origins,spin-down origin
 observable,bcrit_schwinger_resolution,paper,PAPER_094,Schwinger identification
 observable,bcrit_schwinger_resolution,paper,PAPER_063,Q_wave pin revision
 observable,bcrit_schwinger_resolution,paper,PAPER_002,Q-002 information
+observable,solvability_999_provenance,paper,PAPER_095,claim provenance
+observable,solvability_999_provenance,paper,PAPER_065,quoted claim
+primitive,SSQ,observable,solvability_999_provenance,superflare boost
+observable,askap_orbital_reconciliation,paper,PAPER_095,orbital formula
+observable,askap_orbital_reconciliation,paper,PAPER_069,emission-cycle pair

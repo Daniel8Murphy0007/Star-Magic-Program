@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.97.0"
+VERSION = "0.98.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4960,5 +4960,54 @@ def _paper_094(dataset):
                     't_c = P/(2 Pdot); B_crit = m_e^2 c^3/(e hbar) = 4.4e9 T'),
         'source': 'PAPER_094',
         'residual_pct': abs(0.755 ** 2 - 0.57) / 0.57 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_095')
+def _paper_095(dataset):
+    """UQFF 99.9 pct Solvability Validation (Session 0).
+
+    PROVENANCE for the corpus-wide "99.9 pct solvability" claim
+    (quoted in PAPER_065 and framework history). Category
+    arithmetic ALL EXACT: 250+25+15+50 = 340 tests; 249+25+15+49
+    = 338 passes; 338/340 = 99.41 pct; per-category 99.6/100/
+    100-solvable(93.3-physical)/98.0 - the PNe solvable-vs-
+    physical distinction is honestly drawn.
+    Grok-4 extension: 999/1000 = 99.9 pct; OFF-BY-ONE defect:
+    "659 additional cases" but 1000-340 = 660 (Q-091a).
+    ASKAP 2.78-h RECONCILIATION CANDIDATE (Q-091b): the formula
+    here is ORBITAL - P = 2*pi*sqrt(r^3/GM)*(1+f_TRZ), giving
+    r = 7.8e8 m for 2.78 h around 1.4 Msun - supporting the
+    reading that 2.78 h (087/095) is the ORBITAL RESONANCE while
+    069's 44 min is the EMISSION cycle; would resolve Q-083c.
+    f_TRZ drift 5th instance + internal factor inconsistency
+    ((1+f_TRZ) = 1.01 vs the text's "P*0.995"; Q-091c).
+    Superflare boost (1 + SSq) = 1.57 EXACT - another member of
+    the (1+constant) enhancement family; eta_rec = 0.1;
+    factor-of-3 criterion, 49/50.
+    Failure taxonomy honest: all 0.1 pct failures are unphysical
+    inputs (r->0, M<0, precision limits), none astrophysical.
+    """
+    return {
+        'value': {
+            'domain': '1.12 (solvability provenance)',
+            'total_tests': 250 + 25 + 15 + 50,             # 340 EXACT
+            'total_pass': 249 + 25 + 15 + 49,              # 338 EXACT
+            'pass_rate_pct': 338 / 340 * 100,              # 99.41
+            'per_category_pct': (99.6, 100.0, 93.3, 98.0),
+            'grok4_rate': 999 / 1000 * 100,                # 99.9
+            'off_by_one': (659, 1000 - 340),               # printed vs chain 660
+            'askap_orbital_r_m': 7.78e8,                   # 2.78 h reconciliation
+            'askap_reconciliation': '2.78 h = orbital resonance; 44 min = emission cycle',
+            'superflare_boost': 1 + SSQ,                   # 1.57 EXACT
+            'eta_rec': 0.1,
+            'ftrz_factor_conflict': (1.01, 0.995),         # Q-091c
+            'failure_taxonomy': 'unphysical inputs only (honest)',
+        },
+        'formula': ('P_orb = 2*pi*sqrt(r^3/GM)*(1+f_TRZ); '
+                    'E_flare = eta_rec*B^2*R^3*(1+SSq); solvability = finite+physical'),
+        'source': 'PAPER_095',
+        'residual_pct': abs(338 / 340 * 100 - 99.4),
         'status': 'OPEN_RULING',
     }

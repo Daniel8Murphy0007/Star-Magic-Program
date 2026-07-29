@@ -1,30 +1,23 @@
-v0.97.0 BAND 1: PAPER_094 wired - KAPPA + SSQ ORIGIN PAPER
+v0.98.0 BAND 1: PAPER_095 wired - SOLVABILITY PROVENANCE + ASKAP RECONCILIATION
 
-PAPER_094 SGR1745-2900 Magnetar Calibration (OPEN_RULING Q-090):
-  PROVENANCE LANDMARK - the ORIGIN PAPER for both primary
-  calibration primitives, and BOTH origin chains close EXACTLY:
+PAPER_095 UQFF 99.9 pct Solvability (OPEN_RULING Q-091):
+  PROVENANCE of the corpus-wide 99.9 pct claim. Validator
+  arithmetic ALL EXACT: 250+25+15+50 = 340 tests; 249+25+15+49 =
+  338 passes; 338/340 = 99.4 pct. Honest solvable-vs-physical
+  split (PNe 100 pct solvable / 93.3 pct physical). Grok-4
+  extension 999/1000 = 99.9 pct with the "659 additional"
+  off-by-one pinned (chain: 660).
 
-  KAPPA ORIGIN: kappa = (N_burst/t_active)*1e-3 =
-  (600 bursts / 1200 days)*1e-3 = 0.0005/day EXACT - from the
-  SGR1745 2013 outburst statistics. (The 1e-3 scaling factor
-  needs your ruling - burst efficiency? [UA]-like coupling?)
+  ASKAP RECONCILIATION CANDIDATE: the transient formula here is
+  ORBITAL - P = 2*pi*sqrt(r^3/GM)*(1+f_TRZ) gives r = 7.8e8 m
+  for 2.78 h around 1.4 Msun. Reading: 2.78 h (087/095) =
+  orbital resonance; 069's 44 min = emission cycle - would
+  RESOLVE the Q-083c conflict (annotated in place).
 
-  SSQ ORIGIN: [SSq]^(1/2) = 0.755 from magnetar spin-down
-  anchoring -> SSq = 0.755^2 = 0.5700 EXACT. Pairs with the
-  later PAPER_1154 first-principles derivation (Session-0
-  empirical origin vs later theory).
+  Superflare boost (1 + SSq) = 1.57 EXACT ((1+constant) family);
+  f_TRZ drift 5th instance + (1+f_TRZ)-vs-0.995 factor conflict;
+  failure taxonomy honest (all 0.1 pct = unphysical inputs).
 
-  B_CRIT = 4.4e9 T IDENTIFIED AS THE SCHWINGER FIELD
-  m_e^2 c^3/(e hbar): B/B_crit = 3.18 EXACT chain. This REVISES
-  the PAPER_063 magnetar Q_wave pin (B = 4.4e9 -> Q = 7.68e24
-  J/m3, same mantissa as the printed 7.70) and informs the
-  long-open Q-002 B_crit question (Q-059c annotated).
-
-  Support chains EXACT: characteristic age 9012 yr (pins Pdot =
-  6.61e-12); kappa_internal = SSq/tau_c = 1.73e-7/day; MUGE
-  magnetar table consistent. Ug4 offsite computation OPEN
-  (formula/value/conclusion mutually inconsistent).
-
-Q-090 queued. Gate 684 assertions 0 failures. Registry 270 rows /
-543 edges / 98 citation ledgers. Wired 98/2,255 (10 clean, 88
-OPEN_RULING). Next: PAPER_095.
+Q-091 queued. Gate 690 assertions 0 failures. Registry 272 rows /
+548 edges / 99 citation ledgers. Wired 99/2,255 (10 clean, 89
+OPEN_RULING). Next: PAPER_096.

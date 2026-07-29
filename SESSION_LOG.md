@@ -1330,3 +1330,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 98/2,255 (10 ✓, 88 ⚠). Next: PAPER_095.
 
 ---
+
+## 2026-07-29 — v0.98.0 — BAND 1: PAPER_095
+
+- PAPER_095 wired (⚠ Q-091): solvability provenance. 338/340
+  EXACT; off-by-one pinned; ASKAP orbital reconciliation
+  candidate (annotated to Q-083c); (1+SSq) boost EXACT.
+  (Note: first heredoc attempt failed on quoting - no partial
+  writes; clean rerun verified; index counter corrected.)
+- Campaign: 99/2,255 (10 ✓, 89 ⚠). Next: PAPER_096.
+
+---

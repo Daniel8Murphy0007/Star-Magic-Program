@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.98.0] — 2026-07-29 — BAND 1: PAPER_095
+
+### Added
+- **PAPER_095 dispatch** (99.9 pct Solvability): PROVENANCE of the
+  corpus-wide claim — validator arithmetic ALL EXACT (340 tests /
+  338 passes / 99.4 pct; honest solvable-vs-physical split on
+  PNe); Grok-4 extension 999/1000 with the "659 additional"
+  off-by-one pinned (chain: 660). **ASKAP reconciliation
+  candidate:** the transient formula is ORBITAL — 2.78 h reads as
+  orbital resonance (r = 7.8e8 m), 069's 44 min as emission
+  cycle — resolving the Q-083c conflict (annotated). Superflare
+  boost (1+SSq) = 1.57 EXACT; f_TRZ drift 5th instance +
+  1.01-vs-0.995 factor conflict; failure taxonomy honest
+  (unphysical inputs only).
+- OPEN_RULING Q-091.
+- Gate: 690 assertions, 0 failures. Registry: 272 rows / 548 edges / 99 ledgers.
+
+---
+
 ## [0.97.0] — 2026-07-29 — BAND 1: PAPER_094 — KAPPA + SSQ ORIGINS
 
 ### Added

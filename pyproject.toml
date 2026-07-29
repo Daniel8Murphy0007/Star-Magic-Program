@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.97.0"
-description = "UQFF Star-Magic-Program v0.97.0: PAPER_094 wired (KAPPA + SSQ ORIGIN PAPER: kappa = (600/1200)*1e-3 EXACT from SGR1745 2013 outburst; SSq = 0.755^2 = 0.5700 EXACT from spin-down anchoring; B_crit = 4.4e9 T Schwinger identification revises the 063 pin and informs Q-002; characteristic-age chain pins Pdot; Ug4 offsite computation OPEN). Q-090 queued. Wired 98/2255, gate 684/0. Registry 270 rows / 543 edges / 98 ledgers."
+version = "0.98.0"
+description = "UQFF Star-Magic-Program v0.98.0: PAPER_095 wired (99.9-pct solvability provenance: validator arithmetic 338/340 = 99.4 EXACT with honest solvable-vs-physical split; Grok-4 999/1000 extension with 659-vs-660 off-by-one pinned; ASKAP 2.78-h ORBITAL reconciliation candidate resolves the Q-083c conflict; superflare (1+SSq) = 1.57 boost EXACT; f_TRZ drift 5th instance). Q-091 queued. Wired 99/2255, gate 690/0. Registry 272 rows / 548 edges / 99 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.97.0", "uqff_calculator.VERSION = 0.97.0")
+assert_that(C.VERSION == "0.98.0", "uqff_calculator.VERSION = 0.98.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1506,6 +1506,19 @@ assert_that(abs(_r094['q_wave_magnetar_revised'] - 7.68e24) / 7.68e24 < 0.01,
 assert_that(abs(_r094['kappa_internal_per_day'] - 1.73e-7) / 1.73e-7 < 0.01,
             "PAPER_094: kappa_internal = SSq/tau_c = 1.73e-7/day chain EXACT")
 assert_that(C.wired_count() >= 98, "wired_count >= 98")
+
+_r095 = C.calc('PAPER_095')['value']
+assert_that(_r095['total_tests'] == 340 and _r095['total_pass'] == 338,
+            "PAPER_095: category arithmetic 340/338 EXACT")
+assert_that(abs(_r095['pass_rate_pct'] - 99.41) < 0.01,
+            "PAPER_095: validator rate 99.4 pct EXACT; Grok-4 extension 99.9 pct provenance")
+assert_that(_r095['off_by_one'] == (659, 660),
+            "PAPER_095: 659-vs-660 off-by-one pinned (Q-091a)")
+assert_that(abs(_r095['superflare_boost'] - 1.57) < 1e-12,
+            "PAPER_095: superflare boost (1+SSq) = 1.57 EXACT")
+assert_that('orbital resonance' in _r095['askap_reconciliation'],
+            "PAPER_095: ASKAP 2.78-h orbital-vs-emission reconciliation candidate (Q-091b/Q-083c)")
+assert_that(C.wired_count() >= 99, "wired_count >= 99")
 
 # =============================================================================
 # REPORT

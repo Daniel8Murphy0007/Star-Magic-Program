@@ -1513,7 +1513,8 @@ RESOLVED section with the ruling recorded.
   gives 30/1.017 = 29.5 d, but 28.5 d is printed (needs 1.0526) -
   arithmetic pin. (c) Batch-22 table lists ASKAP J1832 period
   "2.78 h" vs PAPER_069's measured 44 min = 0.733 h - conflict
-  (2.78 h is not a harmonic of 2640 s either). (d) M_BH "10645
+  (2.78 h is not a harmonic of 2640 s either).
+  [RECONCILIATION CANDIDATE from PAPER_095: 2.78 h = orbital resonance, 44 min = emission cycle - see Q-091b.] (d) M_BH "10645
   Msun" pinned as 10^6.45 = 2.82e6 (caret drop) - confirm.
 - **Notable:** distance chain closes under the registry H0
   (88.2 ~ 90 Mpc - another Session-0 canonical-H0 consistency);
@@ -1675,6 +1676,27 @@ RESOLVED section with the ruling recorded.
   geometry recorded.
 - **Best-candidate wired:** both origin chains + Schwinger
   identification + revision; defects carried.
+- **Daniel's ruling:** (pending)
+
+### Q-091 — PAPER_095 — off-by-one + ASKAP orbital reconciliation + factor conflict
+- **Question:** (a) Grok-4 extension: "659 additional cases" but
+  1000 - 340 = 660 - off-by-one pin. (b) ASKAP RECONCILIATION
+  CANDIDATE: this paper's transient formula is ORBITAL (P =
+  2*pi*sqrt(r^3/GM)*(1+f_TRZ), r = 7.8e8 m for 2.78 h around
+  1.4 Msun) - supporting the reading that the 2.78-h value
+  (087/095) is the orbital resonance while 069's 44 min is the
+  emission cycle. Confirm, and thereby resolve Q-083c?
+  (c) Factor conflict: (1+f_TRZ) = 1.01 in the formula vs
+  "P*0.995" in the worked text (1.01 vs 0.995) - and f_TRZ drift
+  5th instance (the Q-084/Q-087 fork family keeps growing).
+  (d) Superflare boost (1 + SSq) = 1.57 EXACT - log as another
+  (1+constant) enhancement-family member.
+- **Notable:** category arithmetic ALL EXACT (340/338/99.4);
+  honest solvable-vs-physical split on PNe (100 vs 93.3);
+  failure taxonomy = unphysical inputs only; this is the
+  PROVENANCE paper for the corpus-wide 99.9 pct claim.
+- **Best-candidate wired:** arithmetic + provenance + orbital
+  reconciliation candidate; conflicts carried.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
