@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 22 (7 ✓, 15 ⚠ OPEN_RULING)
+- **Wired:** 23 (7 ✓, 16 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2233
+- **Not yet touched:** 2232
 
 ---
 
@@ -51,7 +51,7 @@
 | ⚠ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |
 | ⚠ | PAPER_019 | Pulsar Timing Array Anomalies UQFF |
 | ⚠ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime |
-| ⬜ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density |
+| ⚠ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density |
 | ⬜ | PAPER_022 | String Compactification Signatures GW Background |
 | ⬜ | PAPER_023 | Tau Anomalous Magnetic Moment g2 UQFF |
 | ⬜ | PAPER_024 | Tau Electric Dipole Moment UQFF |

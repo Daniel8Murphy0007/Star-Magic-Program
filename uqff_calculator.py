@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.21.0"
+VERSION = "0.22.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -992,5 +992,55 @@ def _paper_020(dataset):
                     'L_eff = [1/L_GZK + 1/L_aether + 1/L_TRZ]^-1'),
         'source': 'PAPER_020',
         'residual_pct': abs(gamma_1e20_per_day - 2.68e-3) / 2.68e-3 * 100,   # 2.5 pct (Q-017a)
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_021')
+def _paper_021(dataset):
+    """Gravitational Lensing Corrections from UQFF Vacuum Density (S0).
+
+    sigma_8 tension resolution: f_vac(z=0.5) = 0.083 suppression ->
+    sigma_8 = 0.762 = DES/HSC/KiDS combined (0.0-sigma tension).
+    rho_TRZ = SSq^2 * f_TRZ * rho_crit with SSq^2 = 0.3249 registry-
+    composed. GW lensing magnification deficit 2.4 pct (ET-falsifiable,
+    ~2 yr); unique 0.003 rad waveform phase shift.
+    FORENSIC: paper anchor rho_crit = 9.47e-30 g/cm3 = 9.47e-27 kg/m3
+    is EXACTLY the predecessor bulk-script "RHO_SCM" constant whose
+    origin PAPER_2156 flagged UNKNOWN - it is the cosmological critical
+    density (H0 ~ 71), mislabeled as SCm density in Session 204.
+    Q-018: (a) suppression factor 0.917 (= 1 - 0.083, sec 2.1 eq) vs
+    0.940 (sec 3.3, needed for 0.762; Einstein ring sqrt(0.940) = 0.969
+    consistent with 0.940 family); (b) paper uses f_TRZ = 0.12 vs
+    canonical F_TRZ = 0.1; (c) delta_vac uses (b/r_s) = 0.09 = 0.3^2
+    where formula states 0.3.
+    """
+    ssq_sq = SSQ ** 2                              # 0.3249 ~ paper 0.325
+    rho_crit_paper = 9.47e-27                      # kg/m3 - PAPER_021 anchor (= PAPER_2156 mystery constant)
+    rho_trz = ssq_sq * 0.12 * rho_crit_paper       # paper f_TRZ = 0.12 (Q-018b)
+    f_vac = 0.083
+    return {
+        'value': {
+            'ssq_squared': ssq_sq,
+            'rho_trz_kg_m3': rho_trz,              # 3.69e-31 g/cm3 scale in paper units
+            'rho_vac_frac_of_crit': 3.91e-2,
+            'rho_crit_paper_kg_m3': rho_crit_paper,
+            'rho_crit_registry_kg_m3': RHO_CRITICAL_KG_PER_M3,   # 9.21e-27 (H0 = 70)
+            'f_vac_z05': f_vac,
+            'suppression_0917': 1.0 - f_vac,       # sec 2.1 family
+            'suppression_0940': 0.940,             # sec 3.3 family (Q-018a)
+            'sigma8_planck': 0.811,
+            'sigma8_uqff': 0.811 * 0.940,          # 0.762
+            'sigma8_observed_wl': 0.762,
+            'shear_xi_suppression': (1.0 - f_vac) ** 2,          # 0.841 ~ paper 0.840
+            'gw_magnification_deficit_pct': 2.4,
+            'gw_phase_shift_rad': 0.003,
+            'einstein_ring_factor': 0.969,         # = sqrt(0.940)
+            'w_uqff_params': {'a_vac': 0.083, 'k_vac_h_mpc': 0.25, 'n_vac': 0.37},
+        },
+        'formula': ('kappa_UQFF = kappa_GR*(1 - f_vac(z)); rho_TRZ = SSq^2*f_TRZ*rho_crit; '
+                    'W_UQFF(k) = 1 - 0.083*(k/0.25)^0.37*exp(-0.25/k); sigma8 = 0.811*0.940'),
+        'source': 'PAPER_021',
+        'residual_pct': abs(0.811 * 0.940 - 0.762) / 0.762 * 100,
         'status': 'OPEN_RULING',
     }

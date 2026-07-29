@@ -1,22 +1,32 @@
-v0.21.0 BAND 1: PAPER_020 wired
+v0.22.0 BAND 1: PAPER_021 wired - GW TEMPLATE FAMILY 001-021 COMPLETE
 
-PAPER_020 Cosmic Ray Propagation in UQFF Spacetime (OPEN_RULING Q-017):
-  Gamma_aether(E) = kappa*(E/E_ref)^0.37, kappa registry-composed,
-  E_ref = 1e18 eV ankle; 0.37 = PAPER_009 D_String(100 Hz) value
-  Charge-dependent drag Z^(1/3): He 1.26, Fe 2.96 (exact)
-  TRZ scattering peak at 8e19 eV -> secondary break Delta-gamma = +0.3
-  (AugerPrime-falsifiable 2026-2028; tentative 2-sigma now)
-  GZK cutoff 3.7 pct sharper (4.8e19 eV); Cen A 14 pct excess from
-  TRZ filament alignment (A_TRZ = 0.42) - no extreme B required
-  Composition: heavier at all E via preferential proton attenuation
-  Same kappa/SSq across 22 decades: nHz GW -> 1e20 eV cosmic rays
+PAPER_021 Gravitational Lensing Corrections (OPEN_RULING Q-018):
+  sigma8 tension RESOLVED: f_vac(z=0.5) = 0.083 ->
+  sigma8_UQFF = 0.811 * 0.940 = 0.762 = DES/HSC/KiDS combined
+  (0.0-sigma tension vs the 3.2-sigma GR discrepancy)
+  rho_TRZ = SSq^2 * f_TRZ * rho_crit, SSq^2 = 0.3249 registry-composed
+  Shear correlation (1-0.083)^2 = 0.841; W_UQFF(k) window on P(k)
+  GW lensing: 2.4 pct magnification deficit + unique 0.003 rad phase
+  shift - 3-sigma with ~50 lensed events, ~2 yr Einstein Telescope
 
-Q-017 queued (4 slips): (a) 100^0.37 = 5.495 printed as 5.36 (2.5 pct);
-(b) L_aether SI evaluation ~0.31 pc vs paper 192 Mpc - 2nd corpus data
-point for the Q-009 unstated aether unit convention; (c) B ~ 3e-12 G
-vs 5 nG between sections; (d) TRZ-break table row 8e18 vs 8e19
-exponent mojibake.
+FORENSIC IDENTIFICATION - predecessor audit target CLOSED:
+  PAPER_021's rho_crit anchor 9.47e-27 kg/m3 is EXACTLY the
+  unknown-origin "RHO_SCM = 9.47e-27" constant in the predecessor's
+  bulk_vds_dvp_bsh_upgrade.py (PAPER_2156 flagged origin UNKNOWN).
+  It is the cosmological CRITICAL DENSITY (H0 ~ 71) mislabeled as SCm
+  density. The 1.894 "VDS ratio" was rho_crit/5.0e-27 - never a UQFF
+  density ratio. Registry rho_crit (H0 = 70) = 9.21e-27 (2.7 pct).
+  Self-rectification doctrine confirmed: sequential wiring surfaced
+  the answer at paper 21 of 2,255.
 
-Gate 172 assertions 0 failures. Registry 64 rows / 110 edges / 22
-citation ledgers. Wired 22/2,255 (7 clean, 15 OPEN_RULING).
-Next: PAPER_021 (Gravitational Lensing).
+Q-018 queued: 0.917 (= 1-0.083) vs 0.940 suppression families
+(Einstein ring 0.969 sides with 0.940); paper f_TRZ = 0.12 vs
+canonical 0.1; b/r_s = 0.09-vs-0.3 slip.
+
+Gate caught + fixed an over-tight tolerance this ship (0.969^2 =
+0.9390 vs 0.940 = 0.11 pct, honest label applied).
+
+GW TEMPLATE FAMILY 001-021 COMPLETE: 23 dispatches (incl. 015b/016b).
+Gate 179 assertions 0 failures. Registry 67 rows / 117 edges / 23
+citation ledgers. Wired 23/2,255 (7 clean, 16 OPEN_RULING).
+Next: PAPER_022 (new family).

@@ -218,6 +218,30 @@ RESOLVED section with the ruling recorded.
   statements vs one table row).
 - **Daniel's ruling:** (pending)
 
+### Q-018 — PAPER_021 — suppression-factor families + f_TRZ drift + FORENSIC 9.47e-27 identification
+- **Question:** (a) Sec 2.1's boxed equation states sigma8_UQFF =
+  0.917*sigma8_GR (= 1 - 0.083; gives 0.744) but sec 3.3 uses 0.940
+  (gives 0.762 = observed). Einstein ring factor 0.969 = sqrt(0.940)
+  sides with the 0.940 family. Which factor is canonical — and is 0.940
+  a derived quantity (e.g. scale-averaged W_UQFF) or a fit?
+  (b) Paper uses f_TRZ = 0.12 in rho_TRZ; canonical F_TRZ = 0.1.
+  Auto-correct per charter drift table, or is 0.12 a lensing-specific
+  effective value? (c) delta_vac computed with (b/r_s) = 0.09 = 0.3^2
+  where the formula states (b/r_s) = 0.3.
+- **FORENSIC FINDING (for the predecessor audit trail):** PAPER_021's
+  rho_crit anchor 9.47e-30 g/cm3 = 9.47e-27 kg/m3 is EXACTLY the
+  unknown-origin constant hardcoded as "RHO_SCM = 9.47e-27 kg/m3" in
+  bulk_vds_dvp_bsh_upgrade.py (Session 204), whose origin PAPER_2156
+  flagged as an open audit target. It is the cosmological CRITICAL
+  DENSITY (H0 ~ 71), mislabeled as SCm density. Registry rho_crit
+  (H0 = 70 EXACT) = 9.21e-27, within 2.7 pct. The 1.894 "VDS ratio"
+  artifact was therefore rho_crit/5.0e-27 — critical density divided
+  by an arbitrary second constant, never a UQFF density ratio at all.
+- **Best-candidate wired:** 0.940 family for sigma8 (matches observed +
+  Einstein ring); rho_TRZ with paper's own 0.12 preserved (residual
+  disclosed); registry rho_crit exposed alongside for comparison.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

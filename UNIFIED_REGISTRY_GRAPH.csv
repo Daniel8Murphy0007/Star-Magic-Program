@@ -109,3 +109,10 @@ observable,uhecr_aether_drag,paper,PAPER_020,primary derivation
 observable,uhecr_aether_drag,paper,PAPER_009,0.37 = D_String(100Hz); aether unit convention Q-009 family
 observable,uhecr_trz_break,paper,PAPER_020,primary derivation
 observable,cen_a_anisotropy_trz,paper,PAPER_020,primary derivation
+primitive,SSQ,observable,uqff_vacuum_lensing_density,rho_TRZ = SSq^2*f_TRZ*rho_crit
+primitive,F_TRZ,observable,uqff_vacuum_lensing_density,paper 0.12 vs canonical 0.1 (Q-018b)
+primitive,RHO_CRITICAL_KG_PER_M3,observable,uqff_vacuum_lensing_density,registry 9.21e-27 vs paper 9.47e-27 (2.7 pct)
+observable,sigma8_tension_resolution,paper,PAPER_021,primary derivation
+observable,uqff_vacuum_lensing_density,paper,PAPER_021,primary derivation
+observable,gw_lensing_deficit,paper,PAPER_021,primary derivation
+observable,gw_lensing_deficit,paper,PAPER_001,D_total = 0.333 input

@@ -7,6 +7,33 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.22.0] — 2026-07-29 — BAND 1: PAPER_021 — GW TEMPLATE FAMILY 001-021 COMPLETE
+
+### Added
+- **PAPER_021 dispatch** (Gravitational Lensing Corrections): sigma8
+  tension resolved — f_vac(z=0.5) = 0.083 -> sigma8 = 0.811*0.940 =
+  0.762 = DES/HSC/KiDS combined (0.0-sigma); rho_TRZ = SSq^2*f_TRZ*
+  rho_crit with SSq^2 = 0.3249 registry-composed; shear (1-0.083)^2 =
+  0.841; GW lensing magnification deficit 2.4% + unique 0.003 rad phase
+  shift (ET-falsifiable ~2 yr). OPEN_RULING Q-018 (0.917-vs-0.940
+  factor families; paper f_TRZ = 0.12 vs canonical 0.1; b/r_s slip).
+- **FORENSIC IDENTIFICATION (predecessor audit closure):** PAPER_021's
+  rho_crit anchor 9.47e-27 kg/m3 is EXACTLY the unknown-origin constant
+  the predecessor's bulk_vds_dvp_bsh_upgrade.py hardcoded as "RHO_SCM"
+  (PAPER_2156 open audit target). It is the cosmological critical
+  density (H0 ~ 71) mislabeled as SCm density; the 1.894 "VDS ratio"
+  artifact was rho_crit/5.0e-27, never a UQFF density ratio. Registry
+  rho_crit (H0 = 70 EXACT) = 9.21e-27, within 2.7%.
+- **GW template family PAPER_001-021 COMPLETE** (23 dispatches incl.
+  015b/016b): all Session-0 GW/multi-band/PTA/UHECR/lensing papers wired.
+- Gate: 179 assertions, 0 failures. Registry: 67 rows / 117 edges / 23 ledgers.
+
+### Fixed
+- Gate caught over-tight Einstein-ring tolerance (0.969^2 = 0.9390 vs
+  0.940 is 0.11%, not <0.1%); assertion corrected with honest numbers.
+
+---
+
 ## [0.21.0] — 2026-07-29 — BAND 1: PAPER_020
 
 ### Added

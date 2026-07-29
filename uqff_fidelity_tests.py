@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.21.0", "uqff_calculator.VERSION = 0.21.0")
+assert_that(C.VERSION == "0.22.0", "uqff_calculator.VERSION = 0.22.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -398,6 +398,21 @@ assert_that(abs(_r020['beta_aether'] - 0.37) < 1e-15,
 assert_that(abs(_r020['trz_break_delta_gamma'] - 0.3) < 1e-15,
             "PAPER_020: TRZ secondary break Delta-gamma = +0.3 at 8e19 eV (AugerPrime falsifiable)")
 assert_that(C.wired_count() >= 22, "wired_count >= 22")
+
+_r021 = C.calc('PAPER_021')['value']
+assert_that(abs(_r021['ssq_squared'] - 0.3249) < 1e-12,
+            "PAPER_021: SSq^2 = 0.57^2 = 0.3249 registry-composed (~paper 0.325)")
+assert_that(abs(_r021['sigma8_uqff'] - 0.762) / 0.762 < 0.001,
+            "PAPER_021: sigma8 = 0.811*0.940 = 0.762 = DES/HSC/KiDS combined (0.0-sigma)")
+assert_that(abs(_r021['shear_xi_suppression'] - 0.841) < 0.001,
+            "PAPER_021: shear correlation (1-0.083)^2 = 0.841 ~ paper 0.840")
+assert_that(abs(_r021['einstein_ring_factor'] ** 2 - _r021['suppression_0940']) < 0.002,
+            "PAPER_021: Einstein ring 0.969^2 = 0.9390 vs 0.940 (0.11 pct; paper rounds sqrt(0.940) = 0.9695 to 0.969) - Q-018a family")
+assert_that(abs(_r021['rho_crit_paper_kg_m3'] - 9.47e-27) < 1e-30,
+            "PAPER_021: rho_crit anchor 9.47e-27 kg/m3 = PAPER_2156 mystery bulk-script constant IDENTIFIED")
+assert_that(abs(_r021['rho_crit_registry_kg_m3'] / _r021['rho_crit_paper_kg_m3'] - 0.973) < 0.005,
+            "PAPER_021: registry rho_crit (H0 = 70) within 2.7 pct of paper anchor (H0 ~ 71)")
+assert_that(C.wired_count() >= 23, "wired_count >= 23")
 
 # =============================================================================
 # REPORT

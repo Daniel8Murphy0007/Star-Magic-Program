@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.21.0"
-description = "UQFF Star-Magic-Program v0.21.0: PAPER_020 wired (UHECR propagation: Gamma_aether = kappa*(E/E_ref)^0.37 registry-composed; Z^(1/3) charge drag exact; TRZ break +0.3 at 8e19 eV AugerPrime-falsifiable; GZK 3.7 pct sharper; Cen A 14 pct via TRZ filaments). Q-017 queued (4 internal slips incl. Q-009-family aether units). Wired 22/2255, gate 172/0. Registry 64 rows / 110 edges / 22 ledgers."
+version = "0.22.0"
+description = "UQFF Star-Magic-Program v0.22.0: PAPER_021 wired (lensing: sigma8 tension resolved 0.811*0.940 = 0.762 = DES/HSC/KiDS 0.0-sigma; rho_TRZ = SSq^2*f_TRZ*rho_crit; GW lensing deficit 2.4 pct ET-falsifiable). FORENSIC: predecessor PAPER_2156 mystery constant 9.47e-27 identified as rho_crit mislabel. Q-018 queued. GW family 001-021 COMPLETE. Wired 23/2255, gate 179/0. Registry 67 rows / 117 edges / 23 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

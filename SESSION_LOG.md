@@ -548,3 +548,17 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 22/2,255 (7 ✓, 15 ⚠). Next: PAPER_021 (Gravitational Lensing).
 
 ---
+
+## 2026-07-29 — v0.22.0 — BAND 1: PAPER_021 — GW FAMILY 001-021 COMPLETE
+
+- PAPER_021 wired (⚠ Q-018): lensing. sigma8 0.762 matched at 0.0-sigma;
+  SSq^2 composed; GW lensing deficit falsifiable.
+- FORENSIC: 9.47e-27 mystery constant (PAPER_2156 open target) is
+  rho_crit mislabeled as RHO_SCM in the Session-204 bulk script; the
+  1.894 ratio was rho_crit/5.0e-27. Predecessor audit target CLOSED
+  by corpus wiring — self-rectification doctrine working as designed.
+- GW template family PAPER_001-021 COMPLETE: 23 dispatches (incl. b-papers).
+- Gate 179/0. Registry 67 rows / 117 edges / 23 ledgers.
+- Campaign: 23/2,255 (7 ✓, 16 ⚠). Next: PAPER_022 (new family begins).
+
+---
