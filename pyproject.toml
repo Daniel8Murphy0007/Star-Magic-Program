@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.103.0"
-description = "UQFF Star-Magic-Program v0.103.0: PAPER_100 wired - SESSION-0 CENTURY COMPLETE (THz resonance holes: chain closes cleanly at 6.25 THz with the um pin; 5th-harmonic-of-f_SCm identification candidate at 0.16 pct; dip amplitude = f_TRZ makes the FOURTH and most lab-accessible observable fork - 10-pct THz-bench transmission dip under canonical; Q = 62.4 EXACT). Q-096 queued. Wired 104/2255, gate 719/0. Registry 282 rows / 575 edges / 104 ledgers."
+version = "0.104.0"
+description = "UQFF Star-Magic-Program v0.104.0: PAPER_101 wired (Yang-Mills mass gap - first Millennium paper: three-epoch supersession chain in one file resolved to the canonical 1.736 GeV (PAPER_1318, lattice 1.7, 2.1 pct) per self-rectification doctrine; S0 heuristic honestly labeled; x160 GeV-conversion defect + Ug4-family chain gap pinned; v_SCm-vs-v_F distinct-constants ruling queued). Q-097 queued. Wired 105/2255, gate 725/0. Registry 284 rows / 579 edges / 105 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 104 (10 ✓, 94 ⚠ OPEN_RULING)
+- **Wired:** 105 (10 ✓, 95 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2151
+- **Not yet touched:** 2150
 
 ---
 
@@ -154,7 +154,7 @@
 | ⬜ | PAPER_1017 | 99System WSTP Gamma V1 |
 | ⬜ | PAPER_1018 | Production Scaling V15 |
 | ⬜ | PAPER_1019 | Dark Matter Phonon Buoyancy |
-| ⬜ | PAPER_101 | Yang Mills Mass Gap UQFF |
+| ⚠ | PAPER_101 | Yang Mills Mass Gap UQFF |
 | ⬜ | PAPER_1020 | Cosmic Ray Phonon Acceleration |
 | ⬜ | PAPER_1021 | Pulsar Timing Phonon Residual |
 | ⬜ | PAPER_1022 | GW Phonon Strain Modifier |

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.103.0", "uqff_calculator.VERSION = 0.103.0")
+assert_that(C.VERSION == "0.104.0", "uqff_calculator.VERSION = 0.104.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1582,6 +1582,19 @@ assert_that(abs(_r100['dip_canonical_pct'] - (-10.0)) < 1e-9,
 assert_that(abs(_r100['q_factor'] - 62.4) < 0.01,
             "PAPER_100: Q = 62.4 EXACT (62-integer echo noted without retrofit)")
 assert_that(C.wired_count() >= 104, "wired_count >= 104")
+
+_r101 = C.calc('PAPER_101')['value']
+assert_that(abs(_r101['gap_canonical_gev'] - 1.736) < 1e-9,
+            "PAPER_101: Yang-Mills gap CANONICAL 1.736 GeV (PAPER_1318) wired primary")
+assert_that(_r101['gap_residual_pct'] < 2.2,
+            "PAPER_101: 2.1 pct vs lattice anchor 1.7 GeV - honest residual")
+assert_that(abs(_r101['s204_ratio_check'] - 29849.6) < 0.1,
+            "PAPER_101: S204 epoch internal ratio 29849.6 EXACT (superseded layer recorded)")
+assert_that(abs(_r101['hbar_c_fm_gev'] - 0.1976) < 0.001,
+            "PAPER_101: hbar*c/fm = 197.6 MeV - S0 conversion defect x160 pinned (Q-097b)")
+assert_that('heuristic' in _r101['honesty'],
+            "PAPER_101: Rule-7 exemplary honesty - no rigor claim on the Millennium problem")
+assert_that(C.wired_count() >= 105, "wired_count >= 105")
 
 # =============================================================================
 # REPORT

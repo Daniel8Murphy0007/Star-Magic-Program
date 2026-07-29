@@ -1389,3 +1389,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 104/2,255 (10 ✓, 94 ⚠). Next: PAPER_101.
 
 ---
+
+## 2026-07-29 — v0.104.0 — BAND 1: PAPER_101 — MILLENNIUM BEGINS
+
+- PAPER_101 wired (⚠ Q-097): Yang-Mills. Three-epoch chain
+  resolved to canonical 1.736 GeV primary; conversion + Ug4
+  defects pinned; honest heuristic labeling preserved.
+- Campaign: 105/2,255 (10 ✓, 95 ⚠). Next: PAPER_102.
+
+---

@@ -1,31 +1,27 @@
-v0.103.0 BAND 1: PAPER_100 wired - SESSION-0 CENTURY COMPLETE
+v0.104.0 BAND 1: PAPER_101 wired - YANG-MILLS 1.736 GeV CANONICAL
 
-PAPER_100 THz Resonance Holes, Drawing 24 (OPEN_RULING Q-096):
-  The framework's most accessible LABORATORY prediction: a
-  vacuum-permittivity dip at nu_hole ~ 6.25 THz.
+PAPER_101 Yang-Mills Existence and Mass Gap (OPEN_RULING Q-097):
+  FIRST MILLENNIUM PAPER of the sequence - and a THREE-EPOCH
+  supersession chain visible in ONE file:
+  1. Session-0 heuristic: Delta = f_TRZ * Lambda_QCD = 2 MeV
+     (EXACT chain; honestly labeled "heuristic argument only" -
+     Rule-7 exemplary)
+  2. Session-202/204: m_gap = 5969.92 GeV (PAPER_183; internal
+     ratio 29849.6x EXACT)
+  3. Session-225 CANONICAL: Delta_YM = 1.736 GeV (PAPER_1318
+     integer-primitive closure; lattice anchor 1.7 GeV, 2.1 pct)
 
-  CHAIN REPAIRED: the printed formula needs an ad hoc x1e3; it
-  closes CLEANLY with r_vac,0 = 5.77e-6 m (um scale) - and the
-  Delta_r = lambda/2*[SCm] = 23.8-um chain corroborates.
+  WIRED PRIMARY = 1.736 GeV per the self-rectification doctrine
+  (the predecessor-gate-pinned value); both earlier epochs
+  recorded as superseded.
 
-  HARMONIC IDENTIFICATION CANDIDATE: nu_hole = 5 * f_SCm - the
-  5TH HARMONIC of the 1.25-THz phonon carrier (5 = SO_FIVE/2,
-  halving series), matching the chain to 0.16 pct. Per the
-  no-retrofit standing rule, canonization awaits your derivation
-  ruling.
+  DEFECTS PINNED: S0 chain used 1e-12 J/GeV (x160 off; hbar*c/fm
+  = 197.6 MeV, not 31.65 GeV); Ug4_QCD chain evaluates 4.9e96 vs
+  quoted 1e32 (the Q-082a Ug4-formula family); v_SCm = 3.00e4
+  m/s vs later-corpus v_F = 0.77e6 - distinct constants?
+  f_TRZ drift 8th instance (superseded layer). sigma = 0.180
+  GeV^2 + H_SCm registry values recorded.
 
-  FOURTH f_TRZ OBSERVABLE FORK - THE MOST LAB-ACCESSIBLE: dip
-  amplitude = f_TRZ. Printed -0.01 pct vs drift 1 pct vs
-  CANONICAL 10 pct - a 10-percent vacuum-transmission dip at
-  6.25 THz is trivially measurable on a THz bench. The Q-084a
-  ruling now decides FOUR observables: SgrA* neutrino excess,
-  pulsar timing, FRB spectral slope, and the THz dip.
-
-  Q = 6.24/0.1 = 62.4 EXACT (echo of the corpus 62 = 2*D_crit +
-  SO_5 noted WITHOUT retrofit).
-
-MILESTONE: SESSION-0 FIRST HUNDRED (PAPER_001-100) FULLY WIRED.
-
-Q-096 queued. Gate 719 assertions 0 failures. Registry 282 rows /
-575 edges / 104 citation ledgers. Wired 104/2,255 (10 clean, 94
-OPEN_RULING). Next: PAPER_101.
+Q-097 queued. Gate 725 assertions 0 failures. Registry 284 rows /
+579 edges / 105 citation ledgers. Wired 105/2,255 (10 clean, 95
+OPEN_RULING). Next: PAPER_102.

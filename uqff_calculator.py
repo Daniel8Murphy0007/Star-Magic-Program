@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.103.0"
+VERSION = "0.104.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5263,5 +5263,56 @@ def _paper_100(dataset):
                     'eps_r = 1 - f_TRZ*Lorentz(nu)'),
         'source': 'PAPER_100',
         'residual_pct': abs(nu / 1e12 - 6.24) / 6.24 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_101')
+def _paper_101(dataset):
+    """Yang-Mills Mass Gap - Millennium Problem (Session 0 + updates).
+
+    FIRST MILLENNIUM PAPER of the sequence - and a THREE-EPOCH
+    supersession chain visible in ONE file:
+    (1) Session-0 heuristic: Delta = f_TRZ * Lambda_QCD = 2 MeV
+        (EXACT chain), honestly labeled "heuristic argument only"
+        - Rule-7 exemplary;
+    (2) Session-202/204 update: m_gap = 5969.92 GeV (PAPER_183,
+        2 sigma H_SCm/v_SCm^2; internal ratio 29849.6x EXACT);
+    (3) Session-225 CANONICAL: Delta_YM = 1.736 GeV (PAPER_1318
+        integer-primitive closure; lattice anchor 1.7 GeV, 2.1
+        pct) - the predecessor-gate-pinned value.
+    WIRED PRIMARY = 1.736 GeV per the self-rectification
+    doctrine; both earlier epochs recorded as superseded
+    (Q-097a).
+    DEFECTS: (b) the S0 chain uses 1e-12 J/GeV (hbar*c/fm =
+    197.6 MeV, printed "31.65 GeV" - conversion off x160);
+    (c) Ug4_QCD chain evaluates 4.9e96 vs quoted 1e32 - the
+    Q-082a Ug4-formula family again; (d) v_SCm = 3.00e4 m/s
+    (Sector-2 critical values) vs the later-corpus v_F = 0.77e6
+    - distinct constants ruling.
+    f_TRZ drift 8th instance (S0 layer; superseded regardless).
+    Sector-2 registry: sigma = 0.180 GeV^2, H_SCm = 0.99.
+    """
+    return {
+        'value': {
+            'domain': '1.13 (Millennium: Yang-Mills)',
+            'gap_canonical_gev': 1.736,                    # PAPER_1318 primary
+            'gap_lattice_anchor_gev': 1.7,
+            'gap_residual_pct': abs(1.736 - 1.7) / 1.7 * 100,  # 2.1
+            'gap_epoch_s0_mev': 0.01 * 200,                # 2 EXACT superseded
+            'gap_epoch_s204_gev': 5969.92,                 # superseded
+            's204_ratio_check': 5969.92 / 0.2,             # 29849.6 EXACT
+            'hbar_c_fm_gev': 0.1976,                       # vs printed 31.65
+            'conversion_defect': 'used 1e-12 J/GeV (x160 off)',
+            'ug4_qcd_chain': 4.9e96,                       # vs quoted 1e32
+            'sigma_string_gev2': 0.180,
+            'v_scm_m_s': 3.00e4,                           # vs v_F 0.77e6 Q-097d
+            'honesty': 'heuristic argument only - no rigor claim (Rule-7 exemplary)',
+            'mechanism': 'Ug4 vacuum concentration -> gapped gluon propagator',
+        },
+        'formula': ('Delta_YM = Lambda_QCD * exp(-1/(alpha_s N_c)) * S26^(3) = 1.736 GeV '
+                    '(canonical); S0 heuristic f_TRZ*Lambda superseded'),
+        'source': 'PAPER_101',
+        'residual_pct': abs(1.736 - 1.7) / 1.7 * 100,
         'status': 'OPEN_RULING',
     }

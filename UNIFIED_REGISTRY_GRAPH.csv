@@ -575,3 +575,7 @@ primitive,SSQ,observable,thz_resonance_holes,sqrt factor
 primitive,OMEGA_SCM_HZ,observable,thz_fifth_harmonic_fork,5th-harmonic candidate
 primitive,F_TRZ,observable,thz_fifth_harmonic_fork,dip amplitude fork
 observable,thz_fifth_harmonic_fork,paper,PAPER_088,fork family
+observable,yang_mills_gap,paper,PAPER_101,Millennium primary
+primitive,SSQ,observable,yang_mills_gap,S26 factor input
+observable,ym_epoch_defects,paper,PAPER_101,epoch forensics
+observable,ym_epoch_defects,paper,PAPER_086,Ug4 formula family

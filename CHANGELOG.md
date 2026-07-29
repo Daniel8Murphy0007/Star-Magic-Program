@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.104.0] — 2026-07-29 — BAND 1: PAPER_101 — MILLENNIUM SEQUENCE BEGINS
+
+### Added
+- **PAPER_101 dispatch** (Yang-Mills Mass Gap): a THREE-EPOCH
+  supersession chain visible in one file — S0 heuristic 2 MeV
+  (honestly labeled), S204 5969.92 GeV (internal ratio EXACT),
+  S225 CANONICAL **1.736 GeV** (PAPER_1318 integer-primitive
+  closure; lattice anchor 1.7 GeV, 2.1 pct) — wired PRIMARY per
+  the self-rectification doctrine. Defects pinned: S0 GeV
+  conversion x160 off (hbar*c/fm = 197.6 MeV, not 31.65 GeV);
+  Ug4_QCD chain 4.9e96 vs quoted 1e32 (Q-082a family); v_SCm =
+  3.00e4 vs later v_F = 0.77e6 distinct-constants ruling.
+  Rule-7 exemplary honesty preserved ("heuristic argument only").
+- OPEN_RULING Q-097.
+- Gate: 725 assertions, 0 failures. Registry: 284 rows / 579 edges / 105 ledgers.
+
+---
+
 ## [0.103.0] — 2026-07-29 — BAND 1: PAPER_100 — SESSION-0 CENTURY COMPLETE
 
 ### Added

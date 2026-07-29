@@ -1810,6 +1810,28 @@ RESOLVED section with the ruling recorded.
   + all three fork branches carried.
 - **Daniel's ruling:** (pending)
 
+### Q-097 — PAPER_101 — three-epoch gap supersession + conversion defect + v_SCm
+- **Question:** (a) THREE-EPOCH CHAIN in one file: S0 heuristic
+  Delta = f_TRZ*Lambda_QCD = 2 MeV (honestly labeled heuristic)
+  -> S202/204 m_gap = 5969.92 GeV (PAPER_183; internal ratio
+  29849.6x EXACT) -> S225 CANONICAL Delta_YM = 1.736 GeV
+  (PAPER_1318 integer-primitive closure, lattice 1.7 GeV, 2.1
+  pct). Wired 1.736 GeV as PRIMARY per the self-rectification
+  doctrine - confirm and mark both earlier epochs superseded?
+  (b) S0 conversion defect: the chain uses 1e-12 J/GeV
+  (hbar*c/fm = 197.6 MeV, printed "31.65 GeV" - off x160).
+  (c) Ug4_QCD chain evaluates 4.9e96 vs the quoted 1e32 - the
+  Q-082a Ug4-formula family strikes again. (d) v_SCm = 3.00e4
+  m/s (Sector-2 critical values) vs the later-corpus v_F =
+  0.77e6 m/s - distinct constants or epoch drift?
+- **Notable:** first Millennium paper of the sequence; Rule-7
+  exemplary honesty ("heuristic argument only", no rigor claim);
+  sigma = 0.180 GeV^2 and H_SCm = 0.99 recorded; f_TRZ drift
+  8th instance (superseded layer).
+- **Best-candidate wired:** canonical 1.736 GeV primary with the
+  full epoch chain preserved.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
