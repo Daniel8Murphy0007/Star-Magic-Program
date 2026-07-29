@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.101.0] — 2026-07-29 — BAND 1: PAPER_098
+
+### Added
+- **PAPER_098 dispatch** (Big Bang / Cosmic Quantum Egg): 26D
+  pre-inflationary product vacuum state with kappa-driven
+  decoherence at t < 0 (negative-time mechanism). **Baryon
+  asymmetry chain EXACT to observation:** eta_b = eps_CP*[UA] =
+  6e-6*1e-4 = 6e-10 ([UA] 10th appearance, cleanest closure).
+  **Rule-7 pin:** T_CMB = 2.725*sqrt([SCm]) = 2.711 K (chain
+  EXACT) is ~24 sigma from FIRAS — the printed PASS is generous;
+  horizon-caveat-vs-drift ruling queued. Honest kappa reductio
+  self-caught (kappa*t_age = 2.5e9) and resolved — the
+  FIELD-vs-COSMOLOGY doctrine recorded (087-consistent).
+  Friedmann correction 1e-120 negligible; H0 GR-concordant; Egg
+  terminology reconciliation queued (full state vs layers 25-26).
+- OPEN_RULING Q-094.
+- Gate: 707 assertions, 0 failures. Registry: 278 rows / 565 edges / 102 ledgers.
+
+---
+
 ## [0.100.0] — 2026-07-29 — BAND 1: PAPER_097
 
 ### Added

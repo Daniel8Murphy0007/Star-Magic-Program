@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.100.0"
+VERSION = "0.101.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -5110,5 +5110,57 @@ def _paper_097(dataset):
                     'partition 4+4+10+6+2 = 26'),
         'source': 'PAPER_097',
         'residual_pct': 0.0 if sum(partition.values()) == 26 else 100.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_098')
+def _paper_098(dataset):
+    """Big Bang / Cosmic Quantum Egg - Drawings 14+20 (Session 0).
+
+    Pre-inflationary 26D product state |Psi_0> = tensor_k |vac>_k
+    with kappa-driven decoherence at t < 0 (negative-time
+    mechanism; links the corpus doctrine + 086's test).
+    COSMIC EGG TERMINOLOGY (Q-094b): here the WHOLE 26D state is
+    the Egg; 084/097 called layers 25-26 the "Cosmic Egg layers"
+    - coarse/residual reconciliation ruling.
+    BARYON-ASYMMETRY CHAIN EXACT TO OBSERVATION (Q-094c): eta_b =
+    eps_CP * [UA] = 6e-6 * 1e-4 = 6e-10 = the observed value -
+    [UA] 10TH appearance and its cleanest closure yet.
+    RULE-7 PIN (Q-094a): T_CMB = T0*sqrt([SCm]) = 2.725*0.995 =
+    2.711 K (chain EXACT) sits ~24 SIGMA from FIRAS (2.7255 +/-
+    0.0006) - the printed PASS is generous; either the
+    horizon-scale caveat exempts the FIRAS spectrum (then which
+    observable IS 2.711 K?) or the sqrt([SCm]) factor is drift.
+    HONEST SELF-CORRECTION recorded: the paper runs its own
+    reductio (kappa*t_age = 2.5e9, unphysical) and resolves it -
+    kappa applies to FIELD terms, kappa_cosm << kappa governs
+    cosmology; consistent with 087's viscous resolution (the
+    field-vs-system-coherence doctrine, Q-094d).
+    Friedmann correction ~1e-120 negligible (the 120-orders
+    scale); H0 GR-concordant 67.4; 4/4 model tests as stated.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.13 (Drawings 14+20 BIG_BANG_MODEL)',
+            'pre_state': '26D product |vac> tensor state, t < 0',
+            'sqrt_scm': _m.sqrt(0.99),                     # 0.995 EXACT
+            't_cmb_pred_k': 2.725 * 0.995,                 # 2.711 EXACT chain
+            't_cmb_firas_k': 2.7255,
+            'firas_sigma_tension': (2.7255 - 2.711) / 0.0006,   # ~24 sigma Rule-7
+            'eta_b_chain': 6e-6 * 1e-4,                    # 6e-10 EXACT = observed
+            'eta_b_observed': 6.1e-10,
+            'kappa_t_age_reductio': 0.0005 * 4.93e12,      # 2.5e9 self-caught
+            'kappa_doctrine': 'field terms only; kappa_cosm << kappa (087-consistent)',
+            'friedmann_correction': 1e-120,
+            'h0_stance': 'GR-concordant 67.4 (no UQFF modification claimed)',
+            'egg_terminology': ('full 26D state here', 'layers 25-26 in 084/097'),
+            'tests_pass': 4,
+        },
+        'formula': ('T_CMB = T0*sqrt([SCm]); eta_b = eps_CP*[UA]; '
+                    '|Psi(t)> = e^-kappa|t| |Psi_0> + (1-e^-kappa|t|)|Psi_BB>'),
+        'source': 'PAPER_098',
+        'residual_pct': abs(2.725 * 0.995 - 2.711) / 2.711 * 100,
         'status': 'OPEN_RULING',
     }

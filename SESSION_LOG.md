@@ -1361,3 +1361,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 101/2,255 (10 ✓, 91 ⚠). Next: PAPER_098.
 
 ---
+
+## 2026-07-29 — v0.101.0 — BAND 1: PAPER_098
+
+- PAPER_098 wired (⚠ Q-094): Cosmic Egg. eta_b closure EXACT;
+  T_CMB FIRAS 24-sigma Rule-7 pin; kappa field-vs-cosmology
+  doctrine recorded; Egg terminology reconciliation queued.
+- Campaign: 102/2,255 (10 ✓, 92 ⚠). Next: PAPER_099.
+
+---

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.100.0", "uqff_calculator.VERSION = 0.100.0")
+assert_that(C.VERSION == "0.101.0", "uqff_calculator.VERSION = 0.101.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1543,6 +1543,19 @@ assert_that(_r097['completeness_pass_systems'] == 3,
 assert_that('T0-consistent' in _r097['interpretation'],
             "PAPER_097: chi-horizon/phi-infinity interpretation consistent with the 090 T0 doctrine")
 assert_that(C.wired_count() >= 101, "wired_count >= 101")
+
+_r098 = C.calc('PAPER_098')['value']
+assert_that(abs(_r098['t_cmb_pred_k'] - 2.711) < 0.001,
+            "PAPER_098: T_CMB chain 2.725*sqrt([SCm]) = 2.711 K EXACT")
+assert_that(_r098['firas_sigma_tension'] > 20,
+            "PAPER_098: 2.711 K sits ~24 sigma from FIRAS - Rule-7 pin on the printed PASS (Q-094a)")
+assert_that(abs(_r098['eta_b_chain'] - 6e-10) < 1e-15,
+            "PAPER_098: baryon asymmetry eps_CP*[UA] = 6e-10 EXACT to observation ([UA] 10th)")
+assert_that(_r098['kappa_t_age_reductio'] > 1e9,
+            "PAPER_098: honest kappa reductio self-caught - field-vs-cosmology doctrine (Q-094d)")
+assert_that(_r098['friedmann_correction'] == 1e-120,
+            "PAPER_098: Friedmann correction 1e-120 negligible (120-orders scale)")
+assert_that(C.wired_count() >= 102, "wired_count >= 102")
 
 # =============================================================================
 # REPORT

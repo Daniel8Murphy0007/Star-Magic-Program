@@ -1742,6 +1742,31 @@ RESOLVED section with the ruling recorded.
   structure; refinement ruling queued.
 - **Daniel's ruling:** (pending)
 
+### Q-094 — PAPER_098 — T_CMB FIRAS tension + Egg terminology + eta_b closure + kappa doctrine
+- **Question:** (a) RULE-7: T_CMB = T0*sqrt([SCm]) = 2.711 K
+  (chain EXACT) sits ~24 SIGMA from FIRAS (2.7255 +/- 0.0006) -
+  the printed PASS is generous. The paper caveats that the
+  sqrt([SCm]) coupling acts "at horizon scales, not at last
+  scattering" - but then which observable IS 2.711 K, and does
+  FIRAS exclude it? Or is the sqrt([SCm]) factor drift ([SCm]
+  -> 1 restores concordance)? (b) Cosmic Egg terminology: here
+  the Egg = the FULL 26D product state at t < 0; in 084/097 the
+  "Cosmic Egg layers" are 25-26 - reconcile (Egg = whole
+  pre-state, layers 25-26 = its post-collapse residual
+  channels?). (c) Baryon asymmetry eta_b = eps_CP * [UA] =
+  6e-10 EXACT to observation - canonize the mechanism ([UA]
+  10th appearance, its cleanest closure)? (d) Record the kappa
+  FIELD-vs-COSMOLOGY doctrine: the paper self-catches the
+  kappa*t_age = 2.5e9 reductio and resolves it (kappa = field
+  terms; kappa_cosm << kappa) - consistent with 087's viscous
+  resolution; standing doctrine?
+- **Notable:** negative-time decoherence mechanism; Friedmann
+  correction 1e-120 negligible (the 120-orders scale); H0
+  GR-concordant with no UQFF claim (honest).
+- **Best-candidate wired:** chains + tension pin + doctrine
+  record; 4/4 tests as stated.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

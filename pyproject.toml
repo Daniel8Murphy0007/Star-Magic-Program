@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.100.0"
-description = "UQFF Star-Magic-Program v0.100.0: PAPER_097 wired (Whittaker 26-layer decomposition: partition 4+4+10+6+2 = 26 EXACT with strengthened primitive texture - the SSq band = SO_FIVE; refines the 084 partition; T0-consistent horizon/infinity interpretation; completeness < 1e-10 on 3 systems). Q-093 queued. Wired 101/2255, gate 701/0. Registry 275 rows / 559 edges / 101 ledgers."
+version = "0.101.0"
+description = "UQFF Star-Magic-Program v0.101.0: PAPER_098 wired (Cosmic Quantum Egg: 26D pre-inflationary product state with negative-time kappa decoherence; baryon asymmetry eps_CP*[UA] = 6e-10 EXACT to observation - [UA] 10th and cleanest closure; T_CMB 2.711 K chain EXACT but ~24 sigma from FIRAS - Rule-7 pin on the printed PASS; honest kappa field-vs-cosmology self-correction recorded as doctrine). Q-094 queued. Wired 102/2255, gate 707/0. Registry 278 rows / 565 edges / 102 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

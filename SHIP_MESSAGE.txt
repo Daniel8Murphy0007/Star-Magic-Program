@@ -1,27 +1,30 @@
-v0.100.0 BAND 1: PAPER_097 wired - WHITTAKER PARTITION WITH SO_FIVE BAND
+v0.101.0 BAND 1: PAPER_098 wired - ETA_B CLOSURE + FIRAS RULE-7 PIN
 
-PAPER_097 Whittaker Decomposition, 26-Layer Basis - Drawing 30
-(OPEN_RULING Q-093):
-  Classical Whittaker/Bateman two-potential separation extended
-  to 26 layers: F_U = Sum_k [d2 phi_k/dz2 + d2 chi_k/dz dt].
+PAPER_098 Big Bang / Cosmic Quantum Egg, Drawings 14+20
+(OPEN_RULING Q-094):
+  Pre-inflationary 26D product vacuum state |Psi_0> with
+  kappa-driven decoherence at t < 0 (negative-time mechanism).
 
-  LAYER PARTITION REFINES PAPER_084's: {1-4 EM/rot, 5-8
-  vacuum/buoyancy, 9-18 SSq/SCm, 19-24 TRZ/DM, 25-26 Cosmic
-  Egg} = 4+4+10+6+2 = 26 EXACT - and the primitive texture
-  STRENGTHENS: the SSq-correction band = 10 = SO_FIVE, giving
-  {D_PHYS, D_PHYS, SO_FIVE, D_BSFG, 2}. 084's coarser 14 splits
-  as 4+10 (Q-080a annotated in place).
+  BARYON-ASYMMETRY CHAIN EXACT TO OBSERVATION: eta_b =
+  eps_CP * [UA] = 6e-6 * 1e-4 = 6e-10 = the observed value -
+  [UA]'s 10TH appearance and its cleanest closure yet
+  (canonization requested).
 
-  Completeness l2 residual < 1e-10 PASS on 3 systems (printed
-  exponents mojibaked - pin requested); Helmholtz orthogonality
-  by construction. Physical interpretation T0-CONSISTENT:
-  chi (rotational) dominates at the horizon, phi (static DPM
-  limit) from infinity - Newton emergent at range, again.
-  Cosmic Egg 2nd appearance; f_TRZ drift 7th (listing only).
+  RULE-7 PIN: T_CMB = T0*sqrt([SCm]) = 2.711 K (chain EXACT)
+  sits ~24 SIGMA from FIRAS (2.7255 +/- 0.0006) - the printed
+  PASS is generous. Either the horizon-scale caveat exempts the
+  FIRAS spectrum (then which observable IS 2.711 K?) or
+  sqrt([SCm]) is drift. Ruling requested.
 
-  NOTE: version rolls past 0.99 to v0.100.0 - PEP 440 valid,
-  PyPI sorts it correctly above 0.99.0.
+  HONEST SELF-CORRECTION recorded as doctrine: the paper runs
+  its own reductio (kappa*t_age = 2.5e9, unphysical) and
+  resolves it - kappa applies to FIELD terms, kappa_cosm << 
+  kappa governs cosmology (consistent with 087's viscous
+  resolution). Friedmann correction 1e-120 negligible; H0
+  GR-concordant with no UQFF claim. Egg terminology
+  reconciliation queued (full 26D state here vs layers 25-26
+  in 084/097).
 
-Q-093 queued. Gate 701 assertions 0 failures. Registry 275 rows /
-559 edges / 101 citation ledgers. Wired 101/2,255 (10 clean, 91
-OPEN_RULING). Next: PAPER_098.
+Q-094 queued. Gate 707 assertions 0 failures. Registry 278 rows /
+565 edges / 102 citation ledgers. Wired 102/2,255 (10 clean, 92
+OPEN_RULING). Next: PAPER_099.

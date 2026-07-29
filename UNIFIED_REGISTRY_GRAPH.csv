@@ -559,3 +559,9 @@ primitive,SO_FIVE,observable,whittaker_26layer_basis,SSq band = 10
 primitive,D_BSFG,observable,whittaker_26layer_basis,TRZ/DM band = 6
 observable,whittaker_26layer_basis,paper,PAPER_084,partition refinement
 observable,whittaker_26layer_basis,paper,PAPER_090,T0-consistent interpretation
+observable,cosmic_egg_bigbang,paper,PAPER_098,pre-inflationary state
+primitive,KAPPA_PER_DAY,observable,cosmic_egg_bigbang,decoherence rate
+primitive,D_CRIT,observable,cosmic_egg_bigbang,26D product state
+observable,eta_b_ua_closure,paper,PAPER_098,CP*[UA] chain
+observable,t_cmb_firas_tension,paper,PAPER_098,Rule-7 pin
+observable,cosmic_egg_bigbang,paper,PAPER_084,Egg terminology
