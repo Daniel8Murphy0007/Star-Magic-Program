@@ -1632,6 +1632,25 @@ RESOLVED section with the ruling recorded.
   normalization question + corruption note.
 - **Daniel's ruling:** (pending)
 
+### Q-089 — PAPER_093 — horizon-shift siblings + T_H drift + jet L_Edd slip
+- **Question:** (a) Horizon-shift constants conflict between
+  companions: SgrA* (092) uses r_S*(1 + [SCm]*0.07) = +6.93 pct;
+  M87 (093) uses r_S*(1 + 0.015) = +1.5 pct - mass-dependent
+  shift or drift? Pin the canonical form. (b) T_H(M87): the
+  chain gives 9.49e-18 K, EXACTLY the PAPER_081 family value
+  (9.43e-18); this paper's 1.35e-17 is 43 pct high - pin 081?
+  (c) Jet power printed 3.6e44 erg/s equals L_Edd(SgrA*-mass)*
+  1e-3 (copy-slip); the M87 chain gives 8.1e44 - both consistent
+  with observed ~1e44; pin the M87 chain? (d) 5th
+  numbers-side-with-canonical instance: prose 0.9999 vs printed
+  T values 1.34/1.35 = 0.9926 ~ 0.99 (Q-077a support grows).
+- **Notable:** r_S = 1.9200e13 EXACT; 8-term sum + excess EXACT;
+  shadow 0.105-uas honest EHT null; eta_jet 0.099 pct chain
+  EXACT (FR-I consistent); coherence PASS.
+- **Best-candidate wired:** exact chains + all three sibling
+  conflicts carried with chain-preferred values.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

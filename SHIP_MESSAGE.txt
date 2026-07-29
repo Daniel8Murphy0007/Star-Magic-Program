@@ -1,26 +1,26 @@
-v0.95.0 BAND 1: PAPER_092 wired - HORIZON CHAIN EXACT + GM QUESTION SHARPENED
+v0.96.0 BAND 1: PAPER_093 wired - THREE SIBLING CONFLICTS ADJUDICATED
 
-PAPER_092 SgrA* MUGE 8-Term Decomposition (OPEN_RULING Q-088):
-  UQFF HORIZON CHAIN EXACT: r_horizon = r_S * (1 + [SCm]*0.07)
-  = 1.19e10 * 1.0693 = 1.272e10 m - the +7 pct superconductive
-  horizon shift introduces a NEW 0.07 constant (canonize?).
+PAPER_093 M87* Event Horizon UQFF Analysis (OPEN_RULING Q-089):
+  Chains EXACT: r_S = 2GM/c^2 = 1.9200e13 m (with M = 6.5e9
+  Msun); distance 16.8 Mpc = 5.18e23 m; 8-term sum 2210.9 =
+  printed 2211 (+0.18 pct excess EXACT); shadow factor
+  sqrt(1+(1-[SCm])/2) = 1.0025 -> 0.105 uas shift - honest EHT
+  null (undetectable at 3 uas); eta_jet = 0.099 pct EXACT
+  (FR-I consistent).
 
-  SUM CHAINS EXACT: 234.1 + 0.40 + 0.015 + 0.00061 = 234.52 =
-  printed 234.5; base fraction 99.82 pct EXACT; DM +15.3 pct at
-  8.5 kpc EXACT (2.79/2.42 - rotation-curve flatness claim).
+  THREE SIBLING CONFLICTS, CHAIN-ADJUDICATED:
+  1. Horizon shift: (1+0.015) here vs (1+[SCm]*0.07) in 092 -
+     mass-dependent or drift? Canonical form requested.
+  2. T_H(M87): chain gives 9.49e-18 K = EXACTLY the PAPER_081
+     family value; this paper's 1.35e-17 is 43 pct drift -
+     081 wins by chain.
+  3. Jet power 3.6e44 erg/s = L_Edd(SgrA*-mass)*1e-3 copy-slip;
+     the M87 chain gives 8.1e44 (both ~observed 1e44).
 
-  Q-086a SHARPENED: the g-ladder implies EFFECTIVE GM =
-  234.1*(1.27e10)^2 = 3.78e22 = 7.1e-5 of the physical GM -
-  internally ~1/r^2-consistent but absolutely unexplained; one
-  normalization ruling covers the whole 090/091/092 anchor
-  family.
+  5TH NUMBERS-SIDE-WITH-CANONICAL INSTANCE: prose 0.9999 vs
+  printed T values 1.34/1.35 = 0.9926 ~ 0.99 - Q-077a evidence
+  keeps growing.
 
-  Coherence Gaussian information anchor at horizon (>1e6
-  horizon/far PASS) SUPPORTS the PAPER_084 channels-25/26
-  storage; U_bi/F_U = 2.85e-4 reappears (090-consistent).
-  Section-3 source corruption noted (duplicated blocks, "Name"
-  tokens) - corpus-repair item.
-
-Q-088 queued. Gate 670 assertions 0 failures. Registry 266 rows /
-533 edges / 96 citation ledgers. Wired 96/2,255 (10 clean, 86
-OPEN_RULING). Next: PAPER_093.
+Q-089 queued. Gate 677 assertions 0 failures. Registry 268 rows /
+537 edges / 97 citation ledgers. Wired 97/2,255 (10 clean, 87
+OPEN_RULING). Next: PAPER_094.

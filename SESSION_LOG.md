@@ -1311,3 +1311,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 96/2,255 (10 ✓, 86 ⚠). Next: PAPER_093.
 
 ---
+
+## 2026-07-29 — v0.96.0 — BAND 1: PAPER_093
+
+- PAPER_093 wired (⚠ Q-089): M87* horizon. r_S/sum/shadow chains
+  EXACT; T_H drift adjudicated toward 081; shift-constant +
+  jet-L_Edd conflicts pinned; canonical-identity evidence grows.
+- Campaign: 97/2,255 (10 ✓, 87 ⚠). Next: PAPER_094.
+
+---

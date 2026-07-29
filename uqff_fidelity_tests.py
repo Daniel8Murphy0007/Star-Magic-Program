@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.95.0", "uqff_calculator.VERSION = 0.95.0")
+assert_that(C.VERSION == "0.96.0", "uqff_calculator.VERSION = 0.96.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1476,6 +1476,21 @@ assert_that(_r092['gm_ratio_to_physical'] < 1e-4,
 assert_that(abs(_r092['ubi_over_fu_reappears'] - 2.85e-4) < 1e-9,
             "PAPER_092: U_bi/F_U = 2.85e-4 reappears - 090 cross-consistent")
 assert_that(C.wired_count() >= 96, "wired_count >= 96")
+
+_r093 = C.calc('PAPER_093')['value']
+assert_that(abs(_r093['r_s_m'] - 1.92e13) / 1.92e13 < 0.0001,
+            "PAPER_093: M87 r_S = 1.9200e13 m EXACT")
+assert_that(abs(_r093['sum_terms'] - 2210.9) < 0.1,
+            "PAPER_093: 8-term sum 2210.9 = printed 2211 EXACT (+0.18 pct excess)")
+assert_that(abs(_r093['t_h_chain_k'] - 9.49e-18) / 9.49e-18 < 0.01,
+            "PAPER_093: T_H chain 9.49e-18 K = the 081 family value; printed 1.35e-17 is drift (Q-089b)")
+assert_that(abs(_r093['t_ratio_implemented'] - 0.9926) < 0.001,
+            "PAPER_093: T values give ~0.99 - numbers side with canonical again (Q-077a support, 5th)")
+assert_that(_r093['horizon_shift_here'] == 0.015,
+            "PAPER_093: horizon shift 0.015 vs 092's 0.07 - sibling conflict pinned (Q-089a)")
+assert_that(abs(_r093['shadow_shift_uas'] - 0.105) < 0.001,
+            "PAPER_093: shadow shift 0.105 uas EXACT - honest EHT null")
+assert_that(C.wired_count() >= 97, "wired_count >= 97")
 
 # =============================================================================
 # REPORT

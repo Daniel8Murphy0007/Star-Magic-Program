@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.95.0"
-description = "UQFF Star-Magic-Program v0.95.0: PAPER_092 wired (SgrA* MUGE decomposition: UQFF horizon r_S*(1+[SCm]*0.07) = 1.272e10 EXACT with new 0.07 constant; sum/fraction/DM chains EXACT incl. +15.3 pct rotation-curve; effective-GM normalization 7.1e-5 sharpens Q-086a for the whole anchor family; coherence peak supports 084 info-anchor; sec-3 text corruption noted). Q-088 queued. Wired 96/2255, gate 670/0. Registry 266 rows / 533 edges / 96 ledgers."
+version = "0.96.0"
+description = "UQFF Star-Magic-Program v0.96.0: PAPER_093 wired (M87* horizon: r_S = 1.9200e13 EXACT; 8-term sum + 0.18 pct excess EXACT; shadow 0.105-uas honest EHT null; T_H chain sides with 081 against in-paper drift; horizon-shift 0.015-vs-0.07 sibling conflict; jet L_Edd copy-slip pinned with M87 chain 8.1e44; 5th numbers-side-with-canonical instance). Q-089 queued. Wired 97/2255, gate 677/0. Registry 268 rows / 537 edges / 97 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

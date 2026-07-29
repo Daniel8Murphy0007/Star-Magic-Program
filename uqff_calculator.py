@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.95.0"
+VERSION = "0.96.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4852,5 +4852,56 @@ def _paper_092(dataset):
                     'g_coh = g0*exp(-(r-r_hor)^2/2 sigma^2)'),
         'source': 'PAPER_092',
         'residual_pct': abs(r_uqff - 1.27e10) / 1.27e10 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_093')
+def _paper_093(dataset):
+    """M87* Event Horizon MUGE Analysis (Session 0).
+
+    Chains EXACT: r_S = 2GM/c^2 = 1.9200e13 m (stunning precision
+    with M = 6.5e9 Msun); distance 16.8 Mpc = 5.18e23 m; 8-term
+    sum 2210.9 = printed 2211; UQFF excess +0.18 pct EXACT;
+    shadow shift sqrt(1+(1-[SCm])/2) = 1.0025 EXACT -> 0.105 uas
+    (undetectable at 3 uas, honest null).
+    SIBLING CONFLICTS: (a) horizon shift (1+0.015) here vs
+    (1+[SCm]*0.07) in 092 - two different shift constants between
+    companion papers (mass-dependent or drift? Q-089a);
+    (b) T_H(M87): the chain gives 9.49e-18 K - EXACTLY the
+    PAPER_081 family value (9.43e-18); this paper's 1.35e-17 is
+    43 pct high (drift; 081 wins by chain, Q-089b);
+    (c) jet power printed 3.6e44 erg/s equals the SgrA*-mass
+    L_Edd*1e-3 (copy-slip); the M87 chain gives 8.1e44 - both
+    consistent with observed ~1e44 (Q-089c).
+    5TH DRIFT-FAMILY INSTANCE: prose says 0.9999 but the printed
+    T values give 1.34/1.35 = 0.9926 ~ 0.99 - the numbers side
+    with the CANONICAL identity again (more Q-077a support).
+    eta_jet = 0.99*0.001 = 0.099 pct chain EXACT (FR-I ~0.1 pct
+    consistent). Coherence >1e6 PASS (M87 system).
+    """
+    M = 6.5e9 * 1.989e30
+    return {
+        'value': {
+            'domain': '1.12 (M87* strong-field test)',
+            'r_s_m': 2 * 6.674e-11 * M / 8.988e16,         # 1.9200e13 EXACT
+            'horizon_shift_here': 0.015,                   # vs 092's 0.07 Q-089a
+            'distance_m': 16.8 * 3.086e22,                 # 5.18e23 EXACT
+            'sum_terms': 2207 + 3.75 + 0.14 + 0.044,       # 2210.9 EXACT
+            'excess_pct': (2211 / 2207 - 1) * 100,         # 0.18 EXACT
+            't_h_chain_k': 2.842e-9 / (8 * 3.14159265 * 6.674e-11 * M * 1.381e-23),  # 9.49e-18
+            't_h_printed_k': 1.35e-17,                     # drift; 081 wins
+            't_ratio_implemented': 1.34 / 1.35,            # 0.9926 ~ canonical
+            'jet_chain_erg_s': 1.26e38 * 6.5e9 * 1e-3 * 0.99,  # 8.1e44
+            'jet_printed_erg_s': 3.6e44,                   # SgrA-mass slip
+            'eta_jet_pct': 0.99 * 0.001 * 100,             # 0.099 EXACT
+            'shadow_factor': (1 + (1 - 0.99) / 2) ** 0.5,  # 1.0025 EXACT
+            'shadow_shift_uas': 42 * 0.0025,               # 0.105 EXACT null
+            'spin': 0.90,
+        },
+        'formula': ('r_hor = r_S*(1+0.015); shadow = r_GR*sqrt(1+(1-[SCm])/2); '
+                    'P_jet = [SCm]*1e-3*L_Edd'),
+        'source': 'PAPER_093',
+        'residual_pct': abs((2211 / 2207 - 1) * 100 - 0.18),
         'status': 'OPEN_RULING',
     }

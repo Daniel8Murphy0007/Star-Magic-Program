@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.96.0] — 2026-07-29 — BAND 1: PAPER_093
+
+### Added
+- **PAPER_093 dispatch** (M87* Event Horizon): chains EXACT —
+  r_S = 1.9200e13 m; distance 5.18e23; 8-term sum 2210.9
+  (+0.18 pct); shadow factor 1.0025 -> 0.105 uas honest EHT null;
+  eta_jet 0.099 pct. Three sibling conflicts chain-adjudicated:
+  horizon shift 0.015 vs 092's 0.07; T_H chain 9.49e-18 K sides
+  with PAPER_081 against this paper's 1.35e-17 drift; jet power
+  3.6e44 = SgrA*-mass L_Edd copy-slip (M87 chain 8.1e44). 5th
+  numbers-side-with-canonical instance (printed T ratio 0.9926 ~
+  0.99) strengthens Q-077a.
+- OPEN_RULING Q-089.
+- Gate: 677 assertions, 0 failures. Registry: 268 rows / 537 edges / 97 ledgers.
+
+---
+
 ## [0.95.0] — 2026-07-29 — BAND 1: PAPER_092
 
 ### Added

@@ -533,3 +533,7 @@ observable,sgra_muge_decomposition,paper,PAPER_090,anchor family
 observable,coherence_information_anchor,paper,PAPER_092,coherence peak
 observable,coherence_information_anchor,paper,PAPER_084,info-storage support
 primitive,H0_GRID,observable,sgra_muge_decomposition,expansion factor in dup block
+observable,m87_horizon_analysis,paper,PAPER_093,strong-field test
+observable,m87_horizon_analysis,paper,PAPER_092,horizon-shift sibling
+observable,m87_th_drift,paper,PAPER_093,T_H forensic
+observable,m87_th_drift,paper,PAPER_081,chain-supported family
