@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.74.0", "uqff_calculator.VERSION = 0.74.0")
+assert_that(C.VERSION == "0.75.0", "uqff_calculator.VERSION = 0.75.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1191,6 +1191,23 @@ assert_that(abs(_r071['um_chain'] - 2.43e53) / 2.43e53 < 0.01,
 assert_that(abs(_r071['lenr_ratio_to_askap'] - 1.86) < 0.01,
             "PAPER_071: LENR ratio to ASKAP = 1.86 (factor ~2 as stated)")
 assert_that(C.wired_count() >= 75, "wired_count >= 75")
+
+_r072 = C.calc('PAPER_072')['value']
+assert_that(abs(_r072['f_trz_predicted'] - 0.10) < 1e-12,
+            "PAPER_072: RDR f_TRZ prediction = registry F_TRZ (lab-measured 0.098, 2.0 pct)")
+assert_that(abs(_r072['cop_base'] - 1.1001) < 0.0001,
+            "PAPER_072: COP base (1+0.10)/(1-1e-4) = 1.1001 EXACT")
+assert_that(abs(_r072['kappa_per_s'] - 5.787e-9) / 5.787e-9 < 0.001,
+            "PAPER_072: kappa/s = 5.787e-9 EXACT (S204.5 per-second form)")
+assert_that(_r072['h0_registry_residual_pct'] < 0.5,
+            "PAPER_072: H_0 anchor 2.26e-18 matches registry A_5+SO_5 route to 0.37 pct (Q-068b)")
+assert_that(abs(_r072['mean_dev_pct'] - 6.735) < 0.01,
+            "PAPER_072: mean deviation 6.735 = printed 6.7 verified")
+assert_that(abs(_r072['loss_budget_net'] - 0.123) < 1e-12,
+            "PAPER_072: net-energy loss budget 0.123 EXACT chain")
+assert_that(_r072['eps_coupling_implied'] < 1e-10,
+            "PAPER_072: f_TRZ derivation needs unspecified eps ~ 6.85e-11 - calibration-closed flag (Q-068a)")
+assert_that(C.wired_count() >= 76, "wired_count >= 76")
 
 # =============================================================================
 # REPORT

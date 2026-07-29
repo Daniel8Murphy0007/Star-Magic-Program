@@ -1113,3 +1113,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 75/2,255 (10 ✓, 65 ⚠). Next: PAPER_072.
 
 ---
+
+## 2026-07-29 — v0.75.0 — BAND 1: PAPER_072
+
+- PAPER_072 wired (⚠ Q-068): Red Dwarf Reactor. F_TRZ lab
+  validation claim; COP + loss-budget chains EXACT; H0 registry
+  match 0.37 pct; [UA] 3rd appearance; eps_coupling calibration
+  flag (honest).
+- Campaign: 76/2,255 (10 ✓, 66 ⚠). Next: PAPER_073.
+
+---

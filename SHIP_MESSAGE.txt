@@ -1,30 +1,30 @@
-v0.74.0 BAND 1: PAPER_071 wired - REAL-SUN GRAVITY LANDMARK + TWO-x2 EVIDENCE
+v0.75.0 BAND 1: PAPER_072 wired - F_TRZ LAB VALIDATION + H0 REGISTRY MATCH
 
-PAPER_071 Stellar Superflare Energy Budget (OPEN_RULING Q-067):
-  Last of the five MC-stability systems. ALL section-2 chains
-  EXACT:
-  omega_0 = 2*pi/3600 = 1.745e-3 rad/s
-  LENR = 1e-10*(4.501e15)^2 = 2.026e21
-  SOLAR SURFACE GRAVITY = GM/r^2 = 274.0 m/s2 - matches the real
-  Sun EXACTLY (self-consistency landmark)
-  Ug1 = 274 * mu0*B^2/8pi = 1.37e-9 at B = 100 G - CONFIRMS the
-  PAPER_066 magnetic-factor formula (Q-062c annotated)
-  Um chain = 2.43e53 (small-argument expansion verified)
-  E_Kepler = 1e-3 * 4e26 * 3600 = 1.44e27 J EXACT (L_star =
-  solar luminosity)
-  LENR ratio to ASKAP = 1.86 (factor ~2 as stated)
+PAPER_072 Red Dwarf Reactor TRZ Physics (OPEN_RULING Q-068):
+  The F_TRZ primitive carries a LAB VALIDATION claim: predicted
+  f_TRZ = 0.10 (= registry F_TRZ), measured 0.098 (2.0 pct) over
+  a 10-hour sustained over-unity run.
 
-  x_2 FORENSICS DEEPEN: section 2.6 prints x2 = "-1.35e-7"
-  (prose) and "-1.35e172" (LaTeX) on ADJACENT LINES; and the
-  mantissa 1.35 differs from PAPER_063's x_2 = 3.40 - evidence
-  of TWO distinct x2 constants (cosmic vs stellar geometry),
-  each carrying the e-7/e172 dual corruption. Joint ruling
-  Q-059b/Q-065c/Q-066a/Q-067a.
+  COP chain EXACT: (1 + f_TRZ)/(1 - Omega_g) = 1.10/0.9999 =
+  1.1001, + delta_SCm 0.050 -> 1.15 predicted vs 1.12 measured.
+  Same structure as PAPER_063 Form C-2 (cross-consistent).
+  Loss budget EXACT: 0.15 - 0.015 - 0.007 - 0.005 = 0.123 =
+  measured 12.3 pct. Mean deviation 6.735 = printed 6.7.
+  QSC cross-validation: activation 1.18/1.20 = 0.983; 2nd
+  harmonic 2.36 = 2*1.18 EXACT.
 
-  DEFECTS: directed chain pins L_X = 1e34 W (table prints
-  "10-4 W" with a 1e4-solar ratio claim - inconsistent);
-  Um/energy-table exponents corrupt though mantissas verify.
+  CONSTANT CROSS-LINKS:
+  - H_0 anchor 2.26e-18 s^-1 matches the registry A_5+SO_5 = 70
+    km/s/Mpc route to 0.37 pct (early canonical-H0 appearance?)
+  - Omega_g = [UA] = 1e-4: THIRD appearance (064 alpha_B, 068
+    M_eff, 072) - Q-060b canonization now 3-instance supported
+  - kappa/s = 5e-4/86400 = 5.787e-9 EXACT (S204.5 form)
+  - R_SCm Heaviside 1e13 = corpus Um amplifier
 
-Q-067 queued. Gate 539 assertions 0 failures. Registry 222 rows /
-432 edges / 75 citation ledgers. Wired 75/2,255 (10 clean, 65
-OPEN_RULING). Next: PAPER_072.
+  HONEST FLAG: the f_TRZ derivation's raw ratio 1.46e9 needs an
+  UNSPECIFIED eps_coupling = 6.85e-11 to reach 0.10 -
+  calibration-closed, not parameter-free as printed.
+
+Q-068 queued. Gate 547 assertions 0 failures. Registry 225 rows /
+439 edges / 76 citation ledgers. Wired 76/2,255 (10 clean, 66
+OPEN_RULING). Next: PAPER_073.

@@ -432,3 +432,10 @@ observable,superflare_budget,paper,PAPER_066,Ug1 formula confirmation
 observable,x2_two_values_evidence,paper,PAPER_071,adjacent-line dual print
 observable,x2_two_values_evidence,paper,PAPER_063,mantissa divergence
 observable,superflare_lx_pin,paper,PAPER_071,directed chain pin
+observable,rdr_ftrz_lab_validation,paper,PAPER_072,primary validation
+primitive,F_TRZ,observable,rdr_ftrz_lab_validation,lab-measured claim
+primitive,SSQ,observable,rdr_ftrz_lab_validation,coherence factor
+observable,rdr_constant_crosslinks,paper,PAPER_072,cross-links
+primitive,H0_GRID,observable,rdr_constant_crosslinks,anchor identity 0.37 pct
+primitive,KAPPA_PER_DAY,observable,rdr_constant_crosslinks,per-second form
+observable,rdr_loss_budget,paper,PAPER_072,loss accounting

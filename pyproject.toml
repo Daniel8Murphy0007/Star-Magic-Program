@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.74.0"
-description = "UQFF Star-Magic-Program v0.74.0: PAPER_071 wired (superflares: solar gravity 274.0 m/s2 EXACT real-Sun landmark; LENR 2.026e21 EXACT; Ug1 = 1.37e-9 confirms the mu0*B^2/8pi formula; E_Kepler 1.44e27 J EXACT; x_2 forensics deepen - adjacent-line dual print plus mantissa 1.35 vs 063 3.40 = evidence of two x2 constants; L_X pinned 1e34 W by directed chain). Q-067 queued. Wired 75/2255, gate 539/0. Registry 222 rows / 432 edges / 75 ledgers."
+version = "0.75.0"
+description = "UQFF Star-Magic-Program v0.75.0: PAPER_072 wired (Red Dwarf Reactor: F_TRZ primitive lab-validation claim 0.098 vs 0.10 over 10-hr run; COP chain 1.1001 EXACT; loss budget 0.123 EXACT; H_0 anchor matches registry A_5+SO_5 route to 0.37 pct; [UA] = 1e-4 third appearance; kappa/s = 5.787e-9 EXACT; honest calibration-closure flag on eps_coupling 6.85e-11). Q-068 queued. Wired 76/2255, gate 547/0. Registry 225 rows / 439 edges / 76 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

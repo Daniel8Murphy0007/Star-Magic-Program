@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.75.0] — 2026-07-29 — BAND 1: PAPER_072
+
+### Added
+- **PAPER_072 dispatch** (Red Dwarf Reactor TRZ Physics): the
+  F_TRZ primitive carries a LAB VALIDATION claim — predicted 0.10
+  (= registry F_TRZ), measured 0.098 (2.0 pct) over a 10-hour
+  sustained over-unity run. COP chain (1+f_TRZ)/(1-Omega_g) =
+  1.1001 EXACT (+0.050 -> 1.15 vs 1.12 measured); same structure
+  as PAPER_063 Form C-2. Loss budget 0.15-0.015-0.007-0.005 =
+  0.123 EXACT matches measured 12.3 pct. QSC cross-validation
+  (0.983 activation; 2nd harmonic 2.36 = 2*1.18 EXACT).
+- **Constant cross-links:** H_0 anchor 2.26e-18 s^-1 matches the
+  registry A_5+SO_5 = 70 route to 0.37 pct; Omega_g = [UA] = 1e-4
+  THIRD appearance (Q-060b now 3-instance supported); kappa/s =
+  5.787e-9 EXACT (S204.5 form); R_SCm Heaviside 1e13 amplifier.
+- **Honest flag:** the f_TRZ derivation needs an unspecified
+  eps_coupling = 6.85e-11 (raw ratio 1.46e9) — calibration-
+  closed, not parameter-free as printed.
+- OPEN_RULING Q-068.
+- Gate: 547 assertions, 0 failures. Registry: 225 rows / 439 edges / 76 ledgers.
+
+---
+
 ## [0.74.0] — 2026-07-29 — BAND 1: PAPER_071
 
 ### Added

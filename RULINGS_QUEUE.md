@@ -1199,6 +1199,28 @@ RESOLVED section with the ruling recorded.
   ratio to ASKAP 1.86 as stated; MC stability consistent.
 - **Daniel's ruling:** (pending)
 
+### Q-068 — PAPER_072 — eps_coupling gap + H0 identity + [UA] 3rd appearance + delta_SCm
+- **Question:** (a) The f_TRZ derivation's raw ratio SSq*kappa_s/
+  H_0 = 1.46e9 requires an UNSPECIFIED eps_coupling = 6.85e-11 to
+  land at the predicted 0.10 - the derivation is calibration-
+  closed, not parameter-free as the prose implies. Canonical form
+  or acknowledge calibration? (b) The H_0 anchor 2.26e-18 s^-1
+  matches the registry A_5+SO_5 = 70 km/s/Mpc route to 0.37 pct -
+  confirm identity (would make this Session-0 paper an early
+  appearance of the canonical H_0)? (c) Omega_g = [UA] = 1e-4 is
+  the THIRD appearance of the [UA] weighting constant (064
+  alpha_B, 068 M_eff, 072 Omega_g) - canonize into the registry
+  now with three corroborating instances? (d) delta_SCm = 0.050
+  COP enhancement term provenance (partial R_SCm excitation 0.87
+  is cited but 0.87 * what = 0.050 is not shown).
+- **Notable:** predicted f_TRZ = 0.10 IS the registry F_TRZ
+  primitive with a lab-measured 0.098 (2.0 pct, 10-hr sustained);
+  COP structure matches PAPER_063 Form C-2; loss budget 0.123
+  EXACT; kappa per-second form 5.787e-9 EXACT (S204.5).
+- **Best-candidate wired:** all verified chains + honest
+  calibration-closure flag on the f_TRZ derivation.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

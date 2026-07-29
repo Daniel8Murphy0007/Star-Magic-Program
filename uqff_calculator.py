@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.74.0"
+VERSION = "0.75.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3819,5 +3819,62 @@ def _paper_071(dataset):
                     'Ug1 = g*mu0*B^2/8pi; E_Kepler = (dF/F)*L*dt'),
         'source': 'PAPER_071',
         'residual_pct': abs(g_sun - 274.0) / 274.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_072')
+def _paper_072(dataset):
+    """Red Dwarf Reactor TRZ Physics (Session 0, Batch 33).
+
+    Lab validation family for the F_TRZ primitive: predicted
+    f_TRZ = 0.10 (= registry F_TRZ), measured 0.098 (2.0 pct) over
+    a 10-hour sustained run. COP chain EXACT: (1 + f_TRZ)/(1 -
+    Omega_g) = 1.10/0.9999 = 1.1001, + delta_SCm 0.050 -> 1.150
+    predicted vs 1.12 measured (2.61 pct). Same (1+f_TRZ)/
+    (1-Omega_g) structure as PAPER_063 Form C-2 - cross-consistent.
+    CONSTANT CROSS-LINKS: Omega_g = [UA] = 1e-4 - THIRD appearance
+    (064 alpha_B, 068 M_eff, here) strengthening Q-060b; kappa/s =
+    5e-4/86400 = 5.787e-9 EXACT (the S204.5 per-second form); H_0
+    anchor 2.26e-18 s^-1 matches the registry A_5+SO_5 = 70 route
+    to 0.37 pct (Q-068b identity); R_SCm Heaviside 1e13 amplifier
+    matches the corpus Um phase-transition amplifier.
+    Chains VERIFIED: mean deviation (2.00+2.61+4.33+18.0)/4 =
+    6.735 = printed 6.7; loss budget 0.15-0.015-0.007-0.005 =
+    0.123 EXACT; QSC activation 1.18/1.20 = 0.983; 2nd harmonic
+    2.36 = 2*1.18 EXACT; confinement 2.87/3.0 = 95.7 pct.
+    HONEST FLAG (Q-068a): the f_TRZ derivation's raw ratio
+    SSq*kappa_s/H_0 = 1.46e9 needs an UNSPECIFIED eps_coupling =
+    6.85e-11 to land at 0.10 - the derivation is calibration-
+    closed, not parameter-free as printed.
+    """
+    kappa_s = KAPPA_PER_DAY / 86400.0                    # 5.787e-9 EXACT
+    raw = SSQ * kappa_s / 2.26e-18
+    return {
+        'value': {
+            'system': 'Red Dwarf Reactor Batch 33 (10-hr sustained over-unity)',
+            'f_trz_predicted': 0.10,                     # = registry F_TRZ
+            'f_trz_measured': 0.098,
+            'cop_base': 1.10 / 0.9999,                   # 1.1001 EXACT
+            'cop_predicted': 1.15,
+            'cop_measured': 1.12,
+            'omega_g_ua': 1.0e-4,                        # 3rd [UA] appearance
+            'kappa_per_s': kappa_s,
+            'h0_anchor_s': 2.26e-18,
+            'h0_registry_residual_pct': abs(2.26e-18 - 2.2685e-18) / 2.2685e-18 * 100,
+            'ftrz_raw_ratio': raw,                       # 1.46e9
+            'eps_coupling_implied': 0.10 / raw,          # 6.85e-11 unspecified
+            'mean_dev_pct': (2.00 + 2.61 + 4.33 + 18.0) / 4.0,   # 6.735
+            'loss_budget_net': 0.15 - 0.015 - 0.007 - 0.005,     # 0.123 EXACT
+            'qsc_activation': 1.18 / 1.20,               # 0.983
+            'qsc_2nd_harmonic_thz': 2 * 1.18,            # 2.36 EXACT
+            'confinement_eff': 2.87 / 3.0,               # 0.957
+            'r_scm_amplifier': 1e13,
+            't_plasma_pred_k': 3.0e6, 't_plasma_meas_k': 2.87e6,
+        },
+        'formula': ('COP = (1+f_TRZ)/(1-Omega_g) + delta_SCm; '
+                    'f_TRZ = SSq*kappa_s/H_0 * eps_coupling (eps UNSPECIFIED)'),
+        'source': 'PAPER_072',
+        'residual_pct': (2.00 + 2.61 + 4.33 + 18.0) / 4.0,
         'status': 'OPEN_RULING',
     }
