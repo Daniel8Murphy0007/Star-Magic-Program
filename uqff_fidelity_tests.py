@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.24.0", "uqff_calculator.VERSION = 0.24.0")
+assert_that(C.VERSION == "0.25.0", "uqff_calculator.VERSION = 0.25.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -443,6 +443,21 @@ assert_that(abs(_r023['a_tau_uqff'] - 1.18063e-3) < 1e-8,
 assert_that(abs(_r023['component_sum'] - 3.386e-6) < 1e-9,
             "PAPER_023: component sum 3.386e-6 vs headline 3.42e-6 (1 pct, Q-020a) honestly pinned")
 assert_that(C.wired_count() >= 25, "wired_count >= 25")
+
+_r024 = C.calc('PAPER_024')['value']
+assert_that(abs(_r024['phi_cp_rad'] - 1.7907078) < 1e-6,
+            "PAPER_024: phi_CP = SSq*pi = 1.7907 rad registry-composed (paper rounds 1.795)")
+assert_that(abs(_r024['phi_trz_rad'] - 0.2827433) < 1e-6,
+            "PAPER_024: phi_TRZ = (1-F_TRZ)*F_TRZ*pi = 0.2827 EXACT (~paper 0.283)")
+assert_that(abs(_r024['se_chain_ecm'] - 1.84e-20) / 1.84e-20 < 0.001,
+            "PAPER_024: Schiff-Engel chain 3.42e-6*4.637*9.377e-21*1.237e5 = 1.8395e-20 = headline")
+assert_that(abs(_r024['sigma_reach']['tau_factory'] - 184.0) < 1e-12,
+            "PAPER_024: tau-factory 184-sigma = 1.84e-20/1e-22 exact")
+assert_that(abs(_r024['component_sum'] - 1.8073e-20) < 1e-24,
+            "PAPER_024: component sum 1.807e-20 vs headline 1.84e-20 (1.8 pct, Q-021a) honestly pinned")
+assert_that(abs(_r024['tan_phi_cp_computed'] + 4.4737) < 0.001,
+            "PAPER_024: tan(SSq*pi) = -4.474 computed (paper 4.637, 3.6 pct - Q-021b)")
+assert_that(C.wired_count() >= 26, "wired_count >= 26")
 
 # =============================================================================
 # REPORT

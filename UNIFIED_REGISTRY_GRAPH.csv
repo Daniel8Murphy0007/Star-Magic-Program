@@ -132,3 +132,10 @@ observable,tau_g2_kk_loop,paper,PAPER_023,primary derivation
 observable,tau_g2_kk_loop,paper,PAPER_022,M_KK = 11.6 TeV input
 observable,lepton_universality_exponent,paper,PAPER_023,primary derivation
 observable,lepton_universality_exponent,paper,PAPER_022,0.37 string factor link
+primitive,SSQ,observable,cp_phase_ssq_pi,phi_CP = SSq*pi
+primitive,F_TRZ,observable,uqff_phase_hierarchy,phi_TRZ = (1-F_TRZ)*F_TRZ*pi
+observable,tau_edm_uqff,paper,PAPER_024,primary derivation
+observable,tau_edm_uqff,paper,PAPER_023,Schiff-Engel Delta_a_tau input
+observable,cp_phase_ssq_pi,paper,PAPER_024,primary derivation
+observable,uqff_phase_hierarchy,paper,PAPER_024,primary derivation
+observable,uqff_phase_hierarchy,paper,PAPER_022,M_KK input for phi_KK

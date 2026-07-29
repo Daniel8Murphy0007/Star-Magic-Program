@@ -278,6 +278,24 @@ RESOLVED section with the ruling recorded.
   gate-pinned honestly; both string-loop readings exposed.
 - **Daniel's ruling:** (pending)
 
+### Q-021 — PAPER_024 — EDM component sum + tan(SSq*pi) print + phi_KK units
+- **Question:** (a) EDM components sum to 1.807e-20 (1.71e-20 + 9.3e-22
+  + 3.2e-23 + 1.1e-23) vs headline 1.84e-20 — 1.8 pct gap, same family
+  as Q-020a. (b) tan(SSq*pi): computed tan(1.7907) = -4.474, but the
+  paper (and PAPER_023) print 4.637 — 3.6 pct off; the Schiff-Engel
+  enhancement factor 1.237e5 evidently was tuned against the PRINTED
+  tan (chain reproduces 1.84e-20 exactly). If tan is corrected to
+  4.474, either the enhancement or the headline shifts by 3.6 pct.
+  Which is anchored: the printed tan, the enhancement factor, or the
+  1.84e-20 headline? (c) phi_KK = arctan(m_tau/M_KK) evaluates to
+  1.53e-4 in consistent GeV units; the paper value 0.155 requires
+  m_tau [GeV] / M_KK [TeV] unit mixing (arctan(1.777/11.6) = 0.152,
+  still 2 pct from printed 0.155).
+- **Best-candidate wired:** headline 1.84e-20 anchored (SE chain
+  reproduces it exactly); computed tan exposed alongside printed;
+  phi_TRZ EXACT composition (1-F_TRZ)*F_TRZ*pi = 0.2827 wired.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

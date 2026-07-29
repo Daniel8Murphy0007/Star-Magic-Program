@@ -583,3 +583,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 25/2,255 (7 ✓, 18 ⚠). Next: PAPER_024 (Tau EDM).
 
 ---
+
+## 2026-07-29 — v0.25.0 — BAND 1: PAPER_024
+
+- PAPER_024 wired (⚠ Q-021): tau EDM. phi_CP = SSq*pi composed;
+  phi_TRZ = (1-F_TRZ)*F_TRZ*pi EXACT found during wiring; tan-print
+  discrepancy (Q-020e family) now quantified against the SE chain.
+- Gate hits 200 assertions, 0 failures. Registry 76 rows / 140 edges /
+  26 ledgers.
+- Campaign: 26/2,255 (7 ✓, 19 ⚠). Next: PAPER_025.
+
+---

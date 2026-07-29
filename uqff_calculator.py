@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.24.0"
+VERSION = "0.25.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -1141,5 +1141,54 @@ def _paper_023(dataset):
                     'F_string = pi^2/6; Delta_a ~ m_l^2/M_NP^2; exponent 2.37 = 2 + 0.37'),
         'source': 'PAPER_023',
         'residual_pct': abs((3.38e-6 + 3.84e-9 + 1.92e-9) - 3.42e-6) / 3.42e-6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_024')
+def _paper_024(dataset):
+    """Tau Electric Dipole Moment via UQFF (Session 0).
+
+    d_tau^UQFF = 1.84e-20 e.cm, zero free parameters: phi_CP = SSq*pi
+    = 1.7907 rad registry-composed (near-maximal CP violation ->
+    leptogenesis-favorable). Phase hierarchy compositions: phi_TRZ =
+    (1-F_TRZ)*F_TRZ*pi = 0.2827 EXACT (paper 0.283); phi_KK =
+    arctan(m_tau/M_KK) = 0.152 (paper 0.155; GeV/TeV unit mix).
+    Schiff-Engel chain reproduces headline EXACTLY: 3.42e-6 * 4.637 *
+    9.377e-21 * 1.237e5 = 1.8395e-20. Falsifiable: FCC-ee 10-sigma,
+    tau factory 184-sigma (= 1.84e-20/1e-22 exact).
+    Q-021: (a) component sum 1.807e-20 vs headline 1.84e-20 (1.8 pct);
+    (b) tan(SSq*pi) = -4.474 computed but paper prints 4.637 (3.6 pct;
+    the SE enhancement 1.237e5 was evidently tuned to the printed
+    value); (c) phi_KK arctan mixes GeV/TeV.
+    """
+    import math as _m
+    phi_cp = SSQ * _m.pi                             # 1.7907 rad
+    phi_trz = (1.0 - F_TRZ) * F_TRZ * _m.pi          # 0.2827 EXACT
+    phi_kk = _m.atan(1.77686 / 11.6)                 # 0.1520 (GeV/TeV mix - Q-021c)
+    se_chain = 3.42e-6 * 4.637 * 9.377e-21 * 1.237e5 # 1.8395e-20
+    return {
+        'value': {
+            'd_tau_ecm': 1.84e-20,                   # headline
+            'phi_cp_rad': phi_cp,
+            'tan_phi_cp_computed': _m.tan(phi_cp),   # -4.474 (paper 4.637 - Q-021b)
+            'components_ecm': {'aether': 1.71e-20, 'string': 9.3e-22,
+                               'trz': 3.2e-23, 'kk': 1.1e-23},
+            'component_sum': 1.71e-20 + 9.3e-22 + 3.2e-23 + 1.1e-23,   # 1.807e-20 (Q-021a)
+            'phi_trz_rad': phi_trz,                  # (1-F_TRZ)*F_TRZ*pi EXACT
+            'phi_kk_rad': phi_kk,
+            'se_analytic_ecm': 1.487e-25,
+            'se_enhancement': 1.237e5,
+            'se_chain_ecm': se_chain,                # 1.8395e-20 = headline
+            'a_cp_asymmetry': 1.27e-12,
+            'belle_bounds_ecm': {'re': 5.0e-17, 'im': 1.1e-16},
+            'sm_floor_ecm': 1.0e-37,
+            'sigma_reach': {'fcc_ee': 10.0, 'clic': 4.0, 'tau_factory': 184.0},
+            'tau_magneton_ecm': 9.377e-21,
+        },
+        'formula': ('phi_CP = SSq*pi; d_tau = Delta_a_tau*tan(phi_CP)*(e*hbar/2*m_tau*c)'
+                    '*enhancement; phi_TRZ = (1-F_TRZ)*F_TRZ*pi'),
+        'source': 'PAPER_024',
+        'residual_pct': abs((1.71e-20 + 9.3e-22 + 3.2e-23 + 1.1e-23) - 1.84e-20) / 1.84e-20 * 100,
         'status': 'OPEN_RULING',
     }

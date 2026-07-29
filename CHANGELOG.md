@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.25.0] — 2026-07-29 — BAND 1: PAPER_024
+
+### Added
+- **PAPER_024 dispatch** (Tau Electric Dipole Moment): d_tau = 1.84e-20
+  e.cm — zero-free-parameter BSM prediction. phi_CP = SSq*pi = 1.7907
+  rad registry-composed (near-maximal CP violation, leptogenesis-
+  favorable, NOT the CKM phase); phi_TRZ = (1-F_TRZ)*F_TRZ*pi = 0.2827
+  EXACT composition (discovered during wiring); Schiff-Engel chain
+  reproduces the headline exactly; tau-factory reach 184-sigma
+  (= 1.84e-20/1e-22 exact); FCC-ee 10-sigma. OPEN_RULING Q-021
+  (component sum 1.8% under headline; tan(SSq*pi) computed -4.474 vs
+  printed 4.637 with SE enhancement tuned to the print; phi_KK
+  GeV/TeV unit mixing).
+- Gate: 200 assertions, 0 failures. Registry: 76 rows / 140 edges / 26 ledgers.
+
+---
+
 ## [0.24.0] — 2026-07-29 — BAND 1: PAPER_023 — BSM DOMAIN OPENS
 
 ### Added
