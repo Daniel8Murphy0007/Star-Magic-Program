@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.59.0"
-description = "UQFF Star-Magic-Program v0.59.0: PAPER_056 wired (Red Spider Nebula: 2x wind-radiation compression class EXACT - completes the 1x/2x/10x three-tier hierarchy; wind chain 100*sqrt(256) = 1600 km/s verified, fastest PN wind; 2x factor disclosed as calibrated, closed form OPEN; M42-row confusion pinned). Q-052 queued. Wired 60/2255, gate 419/0. Registry 178 rows / 342 edges / 60 ledgers."
+version = "0.60.0"
+description = "UQFF Star-Magic-Program v0.60.0: PAPER_057 wired (Carina multi-scale 3-in-1: 12/12 PASS; 12.5x AGCar ratio EXACT pins Carina - RESOLVES Q-051a (4th self-rectification, Mice 2x claim fails at 0.889); erosion-vs-compression readings sharpen tier taxonomy; 1.3275 mantissa collision found). Q-053 queued. Wired 61/2255, gate 425/0. Registry 181 rows / 347 edges / 61 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

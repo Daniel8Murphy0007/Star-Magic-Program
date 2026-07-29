@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.60.0] — 2026-07-29 — BAND 1: PAPER_057
+
+### Added
+- **PAPER_057 dispatch** (Carina Multi-Scale 3-in-1): NGC 3372 +
+  AG Carinae + Mystic Mountain, 12/12 PASS across two spatial orders
+  in one environment — all standard 1x class with sharp physical
+  readings (distributed ionization / slow LBV eruption / EROSION not
+  compression), tightening the tier taxonomy against 056's fast-wind
+  2x. SELF-RECTIFICATION (4th): the verified 12.5x NGC3372/AGCar
+  ratio pins Carina at 3.3188e-10, RESOLVING Q-051a — Mice/Carina =
+  0.889 and PAPER_055's "2x" claim fails definitively. Honest
+  mass-gap disclosures (226x expected vs 12.5x measured) preserved
+  with the local-dynamical-mass reading. OPEN_RULING Q-053 (Red
+  Spider/Mystic Mountain EXACT mantissa collision 1.3275 at 100x
+  separation; sec-4 "1/10" contradicts own 0.40 table; mass
+  mojibake).
+- Gate: 425 assertions, 0 failures. Registry: 181 rows / 347 edges / 61 ledgers.
+
+---
+
 ## [0.59.0] — 2026-07-29 — BAND 1: PAPER_056
 
 ### Added

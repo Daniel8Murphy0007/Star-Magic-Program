@@ -342,3 +342,8 @@ observable,red_spider_2x_class,paper,PAPER_056,primary derivation
 observable,wind_channeling_chain,paper,PAPER_056,primary derivation
 observable,compression_tier_hierarchy,paper,PAPER_056,hierarchy completion
 observable,compression_tier_hierarchy,paper,PAPER_055,10x merger tier
+observable,carina_multiscale_12_12,paper,PAPER_057,primary derivation
+observable,q051a_resolution_carina,paper,PAPER_057,resolution datum
+observable,q051a_resolution_carina,paper,PAPER_055,claim corrected
+observable,mantissa_collision_13275,paper,PAPER_057,primary observation
+observable,mantissa_collision_13275,paper,PAPER_056,Red Spider mantissa pair

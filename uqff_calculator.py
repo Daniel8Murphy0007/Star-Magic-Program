@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.59.0"
+VERSION = "0.60.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2995,5 +2995,53 @@ def _paper_056(dataset):
                     'tier: 1x / 2x / 10x compression classes'),
         'source': 'PAPER_056',
         'residual_pct': abs(r_2264 - 44.8) / 44.8 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_057')
+def _paper_057(dataset):
+    """Carina Complex Multi-Scale: NGC3372 + AG Car + Mystic Mtn (S0).
+
+    THREE models in one paper (12/12 PASS) spanning two spatial
+    orders in one coherent environment. All three in the STANDARD
+    compression class (1x) - physically read: distributed ionization
+    (3372), slow LBV eruption ~50 km/s (AG Car), and EROSION not
+    compression (Mystic Mountain pillar) - sharpening the tier
+    taxonomy against 056's fast-wind 2x.
+    RESOLVES Q-051a: NGC3372 = 3.3188e-10 pinned by the verified
+    12.5x AG-Car ratio -> the Mice "2x Carina" claim definitively
+    FAILS (true ratio 0.89x).
+    Verified ratios: 3372/AGCar = 12.50 EXACT; 3372/M42 = 0.50;
+    MM/3372 = 0.40; AGCar/3372 = 0.08. HONEST: mass-ratio
+    expectations vs measured (226x vs 12.5; 400:1 vs 2.5:1)
+    disclosed with the local-dynamical-mass reading.
+    Q-053: (a) Red Spider and Mystic Mountain share the EXACT
+    mantissa 1.3275 (e-12 vs e-10) - copy artifact or coincidence?;
+    (b) sec-4 claims MM = (1/10)*3372 "within 0.5 pct" but the
+    paper's own table ratio is 0.40 - internal contradiction;
+    (c) mass-ratio figures mojibaked (1538x etc).
+    """
+    g_3372, g_agcar, g_mm, g_m42 = 3.3188e-10, 2.6550e-11, 1.3275e-10, 6.6376e-10
+    return {
+        'value': {
+            'systems': ('NGC 3372', 'AG Carinae', 'Mystic Mountain'),
+            'g_3372': g_3372, 'g_agcar': g_agcar, 'g_mm': g_mm,
+            'ratio_3372_agcar': g_3372 / g_agcar,    # 12.50 EXACT
+            'ratio_3372_m42': g_3372 / g_m42,        # 0.50
+            'ratio_mm_3372': g_mm / g_3372,          # 0.40 (vs sec-4 "1/10" - Q-053b)
+            'ratio_mice_3372': 2.9500e-10 / g_3372,  # 0.889 - Q-051a RESOLVED
+            'hubble': {'ngc3372': 1.0001, 'agcar': 1.0003, 'mm': 1.0001},
+            'compression_class': 'standard 1x all three',
+            'physical_readings': {'3372': 'distributed ionization, no point compression',
+                                  'agcar': 'slow LBV eruption (~50 km/s) - no fast-wind 2x',
+                                  'mm': 'ERODED not compressed (photoevaporation)'},
+            'mantissa_collision': 'Red Spider 1.3275e-12 vs Mystic Mtn 1.3275e-10 (Q-053a)',
+            'honest_mass_gap': '226x expected vs 12.5 measured - local dynamical mass reading',
+            'score': (12, 12),
+        },
+        'formula': ('g ratios pin suite exponents; standard class = no [SCm] point compression'),
+        'source': 'PAPER_057',
+        'residual_pct': abs(g_3372 / g_agcar - 12.5) / 12.5 * 100,
         'status': 'OPEN_RULING',
     }

@@ -960,3 +960,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 60/2,255 (10 ✓, 50 ⚠). Next: PAPER_057.
 
 ---
+
+## 2026-07-29 — v0.60.0 — BAND 1: PAPER_057
+
+- PAPER_057 wired (⚠ Q-053): Carina 3-in-1. Q-051a self-rectified
+  (4th instance); erosion-vs-compression physical readings; mantissa
+  collision 1.3275 flagged for the suite audit.
+- Gate 425/0. Registry 181 rows / 347 edges / 61 ledgers.
+- Campaign: 61/2,255 (10 ✓, 51 ⚠). Next: PAPER_058.
+
+---

@@ -855,7 +855,9 @@ RESOLVED section with the ruling recorded.
 - **Question:** (a) "g_grav = 2x that of NGC3372 Carina" fails against
   the suite values: with Carina at 3.3188e-10 the Mice are 0.89x, at
   3.3188e-11 they are 8.9x - neither is 2x. Which Carina exponent is
-  canonical (settles both claims)? (b) The merger geometric factor
+  canonical (settles both claims)?
+  [RESOLVED by PAPER_057: Carina = 3.3188e-10 (12.5x AGCar ratio
+  verifies) -> Mice/Carina = 0.889; the 2x claim fails. See Q-053.] (b) The merger geometric factor
   (1 + 0.3)^2.3 computes to 1.83 but is printed "~1.7" (the [SCm]
   spike absorbs the difference: 5.5 vs 6). (c) The 10x enhanced
   values' exponents are mojibaked in-source (1.0533e-1 implied).
@@ -882,6 +884,23 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** 2x EXACT + wind chain 1600 km/s
   verified; three-tier hierarchy (1x/2x/10x) completed and pinned;
   all ratios recomputed.
+- **Daniel's ruling:** (pending)
+
+### Q-053 — PAPER_057 — mantissa collision + internal 1/10-vs-0.40 + mass mojibake
+- **Question:** (a) Red Spider (1.3275e-12) and Mystic Mountain
+  (1.3275e-10) share the EXACT 5-digit mantissa, 100x apart - copy
+  artifact in the model suite or coincidence? (b) Sec 4 states
+  g_MysticMtn = (1/10)*g_NGC3372 "within 0.5 pct" while the paper's
+  own sec-5 table gives the ratio 0.40 - internal contradiction
+  (0.40 is arithmetic-true). (c) Mass-ratio figures mojibaked
+  ("1538x", "~105 Msun" exponents).
+- **SELF-RECTIFICATION (4th instance):** the verified 12.5x
+  NGC3372/AGCar ratio pins Carina at 3.3188e-10, RESOLVING Q-051a -
+  Mice/Carina = 0.889 and PAPER_055's "2x NGC3372" claim fails
+  definitively.
+- **Best-candidate wired:** all ratios recomputed and pinned; the
+  three physical readings (distributed / slow-LBV / erosion)
+  preserved as the standard-class taxonomy sharpener.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -1,22 +1,24 @@
-v0.59.0 BAND 1: PAPER_056 wired
+v0.60.0 BAND 1: PAPER_057 wired - Q-051a SELF-RECTIFIED
 
-PAPER_056 Red Spider Nebula NGC 6537 (OPEN_RULING Q-052):
-  The 2x WIND-RADIATION compression class (EXACT: 2.1066e-2 =
-  2 * universal normalization) - completing the THREE-TIER
-  compression hierarchy:
-    1x standard / 2x wind-radiation / 10x merger
-  (testable via shock velocities across PN and merger systems)
-  Wind chain VERIFIED: v = v_esc*sqrt(Ug2/g_grav) =
-  100*sqrt(256) = 1600 km/s - the fastest PN wind known
-  Lowest local g_grav (1.3275e-12): radiation-pressure dominated
-  "44.8x weaker than NGC2264" verifies (44.70)
-  HONEST in-paper: the 2x factor is CALIBRATED - the printed EUV
-  closed form evaluates to ~1 (disclosed)
+PAPER_057 Carina Complex Multi-Scale 3-in-1 (OPEN_RULING Q-053):
+  THREE models, 12/12 PASS, two spatial orders in one environment:
+    NGC 3372 (300 ly): 3.3188e-10, distributed ionization
+    AG Carinae (LBV): 2.6550e-11, slow eruption ~50 km/s
+    Mystic Mountain (pillar): 1.3275e-10, ERODED not compressed
+  All standard 1x class - the physical readings sharpen the tier
+  taxonomy against Red Spider's fast-wind 2x.
+  SELF-RECTIFICATION (4th instance): the verified 12.5x ratio pins
+  Carina at 3.3188e-10 -> Mice/Carina = 0.889: PAPER_055's "2x"
+  claim fails definitively (Q-051a RESOLVED by the corpus).
+  Verified: 3372/AGCar 12.50 EXACT; 3372/M42 0.50; MM/3372 0.40.
+  HONEST: mass-ratio expectation gaps (226x vs 12.5x) disclosed
+  with the local-dynamical-mass reading.
 
-Q-052 queued: 2x closed form OPEN; "222x weaker than M42" actually
-matches the MICE ratio (row confusion; true M42 = 500x - both
-pinned); Ug2/g = 256 anchor underived (2^8 candidate).
+Q-053 queued: Red Spider (1.3275e-12) and Mystic Mountain
+(1.3275e-10) share the EXACT mantissa 100x apart - copy artifact?;
+sec-4 "1/10 within 0.5 pct" contradicts the paper's own 0.40 table
+ratio; mass figures mojibaked.
 
-Gate 419 assertions 0 failures. Registry 178 rows / 342 edges / 60
-citation ledgers. Wired 60/2,255 (10 clean, 50 OPEN_RULING).
-Next: PAPER_057.
+Gate 425 assertions 0 failures. Registry 181 rows / 347 edges / 61
+citation ledgers. Wired 61/2,255 (10 clean, 51 OPEN_RULING).
+Next: PAPER_058.

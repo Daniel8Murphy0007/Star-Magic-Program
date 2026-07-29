@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.59.0", "uqff_calculator.VERSION = 0.59.0")
+assert_that(C.VERSION == "0.60.0", "uqff_calculator.VERSION = 0.60.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -960,6 +960,19 @@ assert_that(abs(_r056['ratio_m42_true'] - 500.0) < 1.0,
 assert_that(_r056['tier_hierarchy'] == {'standard': 1, 'wind_radiation': 2, 'merger': 10},
             "PAPER_056: three-tier compression hierarchy complete (1x/2x/10x)")
 assert_that(C.wired_count() >= 60, "wired_count >= 60")
+
+_r057 = C.calc('PAPER_057')['value']
+assert_that(abs(_r057['ratio_3372_agcar'] - 12.50) < 0.01,
+            "PAPER_057: NGC3372/AGCar = 12.50 EXACT - pins Carina at 3.3188e-10")
+assert_that(abs(_r057['ratio_mice_3372'] - 0.889) < 0.005,
+            "PAPER_057: Mice/Carina = 0.889 - Q-051a RESOLVED (055's '2x' claim fails definitively)")
+assert_that(abs(_r057['ratio_mm_3372'] - 0.40) < 0.005,
+            "PAPER_057: MM/3372 = 0.40 (sec-4 '1/10' claim contradicts own table - Q-053b)")
+assert_that(abs(_r057['ratio_3372_m42'] - 0.50) < 0.005,
+            "PAPER_057: Carina/M42 = 0.50 verified")
+assert_that(_r057['score'] == (12, 12),
+            "PAPER_057: 12/12 PASS across three models, all standard 1x class")
+assert_that(C.wired_count() >= 61, "wired_count >= 61")
 
 # =============================================================================
 # REPORT
