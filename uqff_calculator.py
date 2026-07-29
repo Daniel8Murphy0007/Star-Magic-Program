@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -143,4 +143,99 @@ def _paper_001(dataset):
                     'h_UQFF = D_total*h_GR; mismatch ~ D_GW_EROSION (PAPER_2154)'),
         'source': 'PAPER_001',
         'residual_pct': abs(D_total - d_primitive) / d_primitive * 100.0,  # 0.10%
+    }
+
+
+@_register('PAPER_002')
+def _paper_002(dataset):
+    """GW190425 Mass Gap Interpretation (Session 0).
+
+    Heaviest known BNS (3.64 Msun); m1 = 2.52 Msun overlaps the 2.5-5 Msun
+    mass gap. SCm suppression is a threshold phenomenon:
+    A_SCm(B) = exp[-(B/B_crit)^2], complete only at B >~ 1e15 G.
+    OPEN_RULING Q-001: paper states F_UQFF = 0.5297 but its own chain
+    1*A_SCm*0.9*0.37 = 0.333; 0.5297 ~ 1-0.47 matches the S225 phonon 47%
+    suppression instead. Wired best-candidate: paper-stated headline values.
+    """
+    import math as _m
+    B_crit_G = 4.4e13                 # G here (PAPER_001 used T) — OPEN_RULING Q-002
+
+    def a_scm(B_gauss):
+        return _m.exp(-((B_gauss / B_crit_G) ** 2))
+
+    scenarios = {                     # paper sec 4 five-field-scenario table
+        'normal_pulsar_1e8G': a_scm(1.0e8),
+        'high_b_pulsar_6.95e9G': a_scm(6.95e9),
+        'magnetar_4.83e11G': a_scm(4.83e11),
+        'extreme_magnetar_3.36e13G': a_scm(3.36e13),   # 0.998871 paper
+        'hyper_magnetar_1e15G': a_scm(1.0e15),         # 0.0 paper
+    }
+    F_uqff = 0.5297                   # paper-stated headline (OPEN_RULING Q-001)
+    h_gr = 1.702e-23                  # GR peak strain anchor (paper sec 3)
+    return {
+        'value': {
+            'F_uqff': F_uqff,
+            'amplitude_reduction_pct': (1.0 - F_uqff) * 100.0,   # 47.0
+            'h_gr_strain': h_gr,
+            'h_uqff_strain': 1.067e-23,                          # paper sec 3
+            'snr_observed': 12.9,
+            'snr_uqff': 3.6,
+            'A_scm_scenarios': scenarios,
+            'p_ns': 0.49,                                        # paper sec 5
+            'p_bh': 0.51,
+            'bh_factor': 0.6217,
+            'ns_factor_mean': 0.5836,
+            'chirp_mass_msun': 1.44,                             # LIGO anchor
+            'm1_msun': 2.52,                                     # mass-gap component
+            'm2_msun': 1.12,
+            'total_mass_msun': 3.64,
+            'distance_mpc': 159.0,
+        },
+        'formula': ('F = A_aether*A_SCm(B)*A_TRZ*A_string; '
+                    'A_SCm(B) = exp[-(B/B_crit)^2]'),
+        'source': 'PAPER_002',
+        'residual_pct': None,          # pending Q-001 ruling
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_003')
+def _paper_003(dataset):
+    """GW150914 UQFF vs LIGO Strain Comparison (Session 0).
+
+    First BBH detection. Same universal 0.333 chain as PAPER_001 (no magnetic
+    suppression for BBH). New observables: 3x apparent-distance bias (direct
+    Hubble-inference impact) and propagation phase lag.
+    OPEN_RULING Q-004: stated phase-lag formula kappa*D*f*SSq evaluates to
+    17.53 with the given numbers, not the paper's 0.126 rad.
+    """
+    D_aether = 1.0
+    D_scm = 1.0                        # BBH: no B-field, no SCm suppression
+    D_trz = 1.0 - F_TRZ                # 0.9 EXACT
+    D_string = 0.37
+    D_total = D_aether * D_scm * D_trz * D_string       # 0.333 universal BBH
+    h_gr_peak = 1.2499e-21             # semi-analytic GR peak (paper sec 3.1)
+    d_true_mpc = 410.0                 # LIGO anchor
+    return {
+        'value': {
+            'D_total': D_total,
+            'h_gr_peak': h_gr_peak,
+            'h_uqff_peak': D_total * h_gr_peak,          # 4.1622e-22
+            'snr_gr': 24.0,
+            'snr_uqff': D_total * 24.0,                  # 8.0
+            'distance_true_mpc': d_true_mpc,
+            'distance_apparent_mpc': d_true_mpc / D_total,   # 1231 Mpc
+            'distance_bias_factor': 1.0 / D_total,           # 3.0x
+            'phase_lag_rad': 0.126,                      # paper-stated (Q-004)
+            'ripple_amplitude_pct': 1.0,                 # paper sec 4
+            'm1_msun': 36.0,                             # LIGO anchor
+            'm2_msun': 29.0,
+            'total_mass_msun': 65.0,
+            'chirp_mass_msun': 28.3,
+        },
+        'formula': ('D_total = 1*1*(1-F_TRZ)*0.37 (universal BBH); '
+                    'D_apparent = D_true/D_total; phase lag kappa*D*f*SSq (Q-004)'),
+        'source': 'PAPER_003',
+        'residual_pct': abs(D_total - (1.0 - D_GW_EROSION)) / (1.0 - D_GW_EROSION) * 100.0,
+        'status': 'OPEN_RULING',
     }

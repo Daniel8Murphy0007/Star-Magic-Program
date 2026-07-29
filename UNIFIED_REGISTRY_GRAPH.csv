@@ -6,3 +6,14 @@ observable,gw170817_D_total,paper,PAPER_001,primary derivation
 observable,gw170817_h_uqff_strain,paper,PAPER_001,primary derivation
 observable,gw170817_snr_uqff,paper,PAPER_001,primary derivation
 observable,gw170817_mismatch,paper,PAPER_001,primary derivation
+primitive,B_CRIT,observable,gw190425_a_scm_function,A_SCm=exp[-(B/B_crit)^2]
+observable,gw190425_F_uqff,paper,PAPER_002,primary derivation
+observable,gw190425_a_scm_function,paper,PAPER_002,primary derivation
+observable,gw190425_mass_gap_classification,paper,PAPER_002,primary derivation
+primitive,F_TRZ,observable,gw150914_D_total,D_TRZ = 1-F_TRZ
+primitive,D_GW_EROSION,observable,gw150914_distance_bias,bias = 1/(1-D_GW_EROSION) ~ 3
+primitive,KAPPA_PER_DAY,observable,gw150914_phase_lag,kappa in stated formula
+primitive,SSQ,observable,gw150914_phase_lag,SSq in stated formula
+observable,gw150914_D_total,paper,PAPER_003,primary derivation
+observable,gw150914_distance_bias,paper,PAPER_003,primary derivation
+observable,gw150914_phase_lag,paper,PAPER_003,primary derivation

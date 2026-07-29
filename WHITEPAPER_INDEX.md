@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 1
+- **Wired:** 3 (1 ✓, 2 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2254
+- **Not yet touched:** 2252
 
 ---
 
@@ -23,8 +23,8 @@
 |---|---|---|
 | ⬜ | COMPLETE_UQFF_EQUATIONS_REFERENCE | (no PAPER_N prefix) |
 | ✓ | PAPER_001 | GW170817 UQFF Damping Analysis |
-| ⬜ | PAPER_002 | GW190425 Mass Gap Interpretation |
-| ⬜ | PAPER_003 | GW150914 UQFF vs LIGO Strain |
+| ⚠ | PAPER_002 | GW190425 Mass Gap Interpretation |
+| ⚠ | PAPER_003 | GW150914 UQFF vs LIGO Strain |
 | ⬜ | PAPER_004 | GW170817 BNS Chirp Phase Evolution |
 | ⬜ | PAPER_005 | BH Merger Energy Retention UQFF |
 | ⬜ | PAPER_006 | GW170817 Multi Messenger Full Inspiral |

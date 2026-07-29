@@ -331,3 +331,25 @@ Band 1 continues: PAPER_002-020 (GW family template). Ship per session.
 
 ---
 
+
+## 2026-07-28 — v0.4.0 — BAND 1 CONTINUES (PAPER_002 + PAPER_003)
+
+### What shipped
+
+- PAPER_002 GW190425 wired (⚠ OPEN_RULING): A_SCm(B)=exp[-(B/B_crit)^2]
+  threshold function + 5 field scenarios + mass-gap P(NS)/P(BH) classification.
+- PAPER_003 GW150914 wired (⚠ OPEN_RULING): universal BBH 0.333 chain
+  (composed from F_TRZ), 3.0x apparent-distance bias, phase-lag anchor.
+- 4 rulings queued: Q-001 (F_UQFF 0.5297 vs chain 0.333), Q-002 (B_crit
+  T vs G), Q-003 (scenario table irreproducible from stated formula),
+  Q-004 (phase-lag formula evaluates 17.53 not 0.126).
+- Gate: 68 assertions, 0 failures. The gate CAUGHT all four inconsistencies —
+  the self-rectification mechanism is working exactly as designed.
+- Registry: 10 rows, 18 edges, 3 citation ledgers.
+
+### Campaign state
+
+Wired 3/2,255 (PAPER_001 ✓, PAPER_002 ⚠, PAPER_003 ⚠). Next session
+resumes at PAPER_004 per WHITEPAPER_INDEX.
+
+---

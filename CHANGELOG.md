@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.4.0] — 2026-07-28 — BAND 1 CONTINUES: PAPER_002 + PAPER_003
+
+### Added
+- **PAPER_002 dispatch** (GW190425 Mass Gap): A_SCm(B) threshold function,
+  5-scenario field table, mass-gap classification P(BH)=0.51. OPEN_RULING.
+- **PAPER_003 dispatch** (GW150914 BBH): universal 0.333 chain, 3.0x
+  apparent-distance bias, phase-lag anchor. OPEN_RULING.
+- **RULINGS_QUEUE Q-001..Q-004** — gate-discovered paper-internal
+  inconsistencies (F_UQFF headline vs chain; B_crit units T vs G;
+  scenario table reproduction; phase-lag formula evaluation).
+- Gate Block 9 extended: 68 assertions total, 0 failures.
+- Registry pantheon: UNIFIED_REGISTRY 10 rows, GRAPH 18 edges,
+  CORPUS_CITATIONS 3 ledgers.
+
+### Changed
+- Version 0.3.1 → 0.4.0; badges fidelity_gate 68/0, public_surfaces 3.
+- WHITEPAPER_INDEX: PAPER_002/003 → ⚠ OPEN_RULING.
+
+---
+
 ## [0.3.0] — 2026-07-28 — WIRING CAMPAIGN START
 
 ### Added

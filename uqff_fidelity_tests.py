@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.3.1", "uqff_calculator.VERSION = 0.3.1")
+assert_that(C.VERSION == "0.4.0", "uqff_calculator.VERSION = 0.4.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -142,6 +142,35 @@ assert_that(abs(_r001['mismatch'] - 0.667) < 1e-12,
 assert_that(abs(_r001['B_NS_over_B_crit'] - 2.27e-10) < 0.01e-10,
             "PAPER_001: B_NS/B_crit = 2.27e-10 (negligible SCm damping)")
 assert_that(C.wired_count() >= 1, "wired_count >= 1 (campaign started)")
+
+_r002 = C.calc('PAPER_002')['value']
+assert_that(abs(_r002['F_uqff'] - 0.5297) < 1e-12,
+            "PAPER_002: F_UQFF = 0.5297 (paper headline; Q-001 OPEN)")
+assert_that(abs(_r002['amplitude_reduction_pct'] - 47.03) < 0.05,
+            "PAPER_002: 47.0% amplitude reduction")
+assert_that(abs(_r002['A_scm_scenarios']['extreme_magnetar_3.36e13G'] - 0.5581) < 5e-4,
+            "PAPER_002: extreme magnetar A_SCm = 0.558 COMPUTED from stated formula "
+            "(paper's table says 0.998871, back-solves to B_crit=1e15 G — Q-003 OPEN)")
+assert_that(_r002['A_scm_scenarios']['hyper_magnetar_1e15G'] < 1e-200,
+            "PAPER_002: hyper-magnetar A_SCm -> 0 (complete suppression)")
+assert_that(_r002['A_scm_scenarios']['normal_pulsar_1e8G'] > 0.999999999,
+            "PAPER_002: normal pulsar A_SCm = 1.0 (B << B_crit)")
+assert_that(abs(_r002['p_ns'] + _r002['p_bh'] - 1.0) < 1e-12,
+            "PAPER_002: P(NS) + P(BH) = 1")
+assert_that(C.wired_count() >= 2, "wired_count >= 2")
+
+_r003 = C.calc('PAPER_003')['value']
+assert_that(abs(_r003['D_total'] - 0.333) < 1e-12,
+            "PAPER_003: D_total = 0.333 (universal BBH chain, same as PAPER_001)")
+assert_that(abs(_r003['h_uqff_peak'] - 4.1622e-22) < 1e-25,
+            "PAPER_003: h_UQFF peak = 4.1622e-22")
+assert_that(abs(_r003['snr_uqff'] - 8.0) < 0.01,
+            "PAPER_003: SNR_UQFF = 8.0 (at detection threshold)")
+assert_that(abs(_r003['distance_apparent_mpc'] - 1231.0) < 1.0,
+            "PAPER_003: apparent distance 1231 Mpc (3x bias vs true 410)")
+assert_that(abs(_r003['distance_bias_factor'] - 3.003) < 0.01,
+            "PAPER_003: distance bias factor 3.0x")
+assert_that(C.wired_count() >= 3, "wired_count >= 3")
 
 # =============================================================================
 # REPORT

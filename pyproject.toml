@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.3.1"
-description = "UQFF Star-Magic-Program v0.3.1 (README refresh for campaign state; content = v0.3.0): wiring campaign charter (CLAUDE.md) + ship.ps1 + RULINGS_QUEUE + first wired dispatch PAPER_001 (GW170817 damping: D_total composed from F_TRZ/D_GW_EROSION/B_CRIT registry primitives, 0.10 pct honest residual vs 1/3 primitive identity per PAPER_2154). Registry pantheon live: +4 rows, +7 graph edges, +1 citation row. Gate 55 assertions green. Sequential wiring continues PAPER_002+."
+version = "0.4.0"
+description = "UQFF Star-Magic-Program v0.4.0: PAPER_002 + PAPER_003 wired (GW190425 mass-gap A_SCm threshold fn + GW150914 universal BBH 0.333 chain, 3x distance bias, phase lag). 4 rulings queued (Q-001..Q-004: paper-internal inconsistencies found by gate). Wired 3/2255, gate 68/0. Registry pantheon: 10 rows, 18 edges, 3 citation ledgers. Campaign per CLAUDE.md charter, sequential from PAPER_001."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
