@@ -1292,3 +1292,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 94/2,255 (10 ✓, 84 ⚠). Next: PAPER_091.
 
 ---
+
+## 2026-07-29 — v0.94.0 — BAND 1: PAPER_091
+
+- PAPER_091 wired (⚠ Q-087): MUGE resonance. aDPM 270-R_S label
+  fix; pulsar-timing fork joins the Q-084 family (one ruling,
+  two observables); mode-count defect pinned.
+- Campaign: 95/2,255 (10 ✓, 85 ⚠). Next: PAPER_092.
+
+---

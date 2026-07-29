@@ -1532,6 +1532,7 @@ RESOLVED section with the ruling recorded.
   Which is the canonical UQFF neutrino prediction? (BOTH wired
   pending ruling; the 081-family evidence favors canonical, but
   unlike 081 there is no in-paper implemented-value proof here.)
+  [FORK GROWS: PAPER_091's pulsar-timing enhancement carries the same 1-vs-10-pct fork - see Q-087c; one ruling decides both.]
   (b) The excess is printed THREE ways: 0.3 pct (abstract),
   1.0 pct (sections/summary), +0.35 pct (summary Ug4 row) -
   internal inconsistency pin. (c) Flavor null is ROBUST under
@@ -1586,6 +1587,27 @@ RESOLVED section with the ruling recorded.
   kpc/Gpc.
 - **Best-candidate wired:** master structure + doctrine root +
   exact chains; row defects carried.
+- **Daniel's ruling:** (pending)
+
+### Q-087 — PAPER_091 — mode count + aDPM radius label + pulsar-timing fork
+- **Question:** (a) Mode count prints three ways: title
+  "14-Mode", formula base + 13 deltas, table base + 12 = 13 rows
+  - one mode is missing from the table; which? (b) aDPM: the
+  printed "-6.3 pct at r = 10 R_S" contradicts the paper's own
+  formula - the chain gives -39 pct at 10 R_S, and -6.28 pct
+  occurs EXACTLY at r ~ 270 R_S; the formula is right, the
+  radius label is the defect - pin 270 R_S? (c) f_TRZ 4TH drift
+  instance with a SECOND observable fork: the claimed 1 pct
+  pulsar-timing enhancement becomes 10 pct under canonical
+  F_TRZ - the Q-084a ruling now decides BOTH the neutrino excess
+  and the pulsar-timing signal. (d) Cross-table: SgrA* resonance
+  total = compressed x 1.0175 (+1.75 pct net) - intended
+  resonance budget?
+- **Notable:** 5-freq linearization VALID here (small a_k,
+  contrast 084); wormhole mode is a clean Planck-regime null;
+  family-consistent with 090's anchors.
+- **Best-candidate wired:** decomposition + both fork branches +
+  corrected radius label carried.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.93.0", "uqff_calculator.VERSION = 0.93.0")
+assert_that(C.VERSION == "0.94.0", "uqff_calculator.VERSION = 0.94.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1448,6 +1448,19 @@ assert_that(_r090['sgra_g_chain'] > 1e6 and _r090['sgra_g_printed'] == 234.3,
 assert_that(_r090['term_count_prints'] == (10, 9, 9),
             "PAPER_090: term-count inconsistency (title 10 / abstract 9 / table 9) pinned (Q-086b)")
 assert_that(C.wired_count() >= 94, "wired_count >= 94")
+
+_r091 = C.calc('PAPER_091')['value']
+assert_that(abs(_r091['adpm_at_10rs'] - (-0.394)) < 0.001,
+            "PAPER_091: aDPM chain -39 pct at 10 R_S - printed -6.3 pct label wrong (Q-087b)")
+assert_that(_r091['adpm_radius_for_printed'] == 270.0,
+            "PAPER_091: -6.3 pct occurs EXACTLY at ~270 R_S - formula right, radius label defect")
+assert_that(_r091['mode_count_prints'] == (14, 13, 13),
+            "PAPER_091: mode count 14/13/13 (title/formula/table) - one mode missing (Q-087a)")
+assert_that(abs(_r091['trz_mode_canonical'] - 0.1) < 1e-12,
+            "PAPER_091: f_TRZ 4th drift instance - pulsar-timing fork 1 vs 10 pct (joins Q-084)")
+assert_that(abs(_r091['sgra_res_vs_comp'] - 1.0175) < 0.0001,
+            "PAPER_091: SgrA* resonance/compressed = 1.0175 cross-table consistency")
+assert_that(C.wired_count() >= 95, "wired_count >= 95")
 
 # =============================================================================
 # REPORT

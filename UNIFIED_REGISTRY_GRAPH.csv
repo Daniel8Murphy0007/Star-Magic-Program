@@ -523,3 +523,8 @@ primitive,H0_GRID,observable,muge_compressed_master,expansion factor
 observable,fu_origination_doctrine_root,paper,PAPER_090,doctrine root
 primitive,SSQ,observable,fu_origination_doctrine_root,U_bi/F_U ratio
 primitive,KAPPA_PER_DAY,observable,fu_origination_doctrine_root,U_bi/F_U ratio
+observable,muge_resonance_14mode,paper,PAPER_091,resonance decomposition
+observable,muge_resonance_14mode,paper,PAPER_090,compressed companion
+observable,trz_pulsar_timing_fork,paper,PAPER_091,2nd observable fork
+primitive,F_TRZ,observable,trz_pulsar_timing_fork,canonical fork value
+observable,trz_pulsar_timing_fork,paper,PAPER_088,fork family

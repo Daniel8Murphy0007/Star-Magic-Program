@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.94.0] — 2026-07-29 — BAND 1: PAPER_091
+
+### Added
+- **PAPER_091 dispatch** (MUGE Resonance 14-Mode): aDPM Doppler
+  base with a RADIUS-LABEL DEFECT caught — the printed "-6.3 pct
+  at 10 R_S" contradicts the paper's own formula (chain -39 pct
+  there); -6.28 pct occurs EXACTLY at ~270 R_S. Mode count
+  prints 14/13/13 (one table row missing). **f_TRZ drift 4th
+  instance with a SECOND observable fork:** 1 pct (drift) vs 10
+  pct (canonical) pulsar-timing enhancement — the Q-084a ruling
+  now decides both the neutrino excess and this signal. 5-freq
+  linearization VALID (contrast 084); wormhole mode clean Planck
+  null; cross-table 1.0175 consistency with 090.
+- OPEN_RULING Q-087.
+- Gate: 663 assertions, 0 failures. Registry: 264 rows / 528 edges / 95 ledgers.
+
+---
+
 ## [0.93.0] — 2026-07-29 — BAND 1: PAPER_090
 
 ### Added

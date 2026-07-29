@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.93.0"
-description = "UQFF Star-Magic-Program v0.93.0: PAPER_090 wired (MUGE compressed gravity: PROVENANCE LANDMARK - Session-0 root of the T0 doctrine, gravity originates from F_U with Newton as Ug2 limiting case; r_s chain pins 086 mass EXACT; Sun row closes; U_bi/F_U = SSq*kappa = 2.85e-4 EXACT; magnetar (1-B/B_crit) suppression flagship falsifiable; SgrA*/NS row chains + term-count defects pinned). Q-086 queued. Wired 94/2255, gate 657/0. Registry 262 rows / 523 edges / 94 ledgers."
+version = "0.94.0"
+description = "UQFF Star-Magic-Program v0.94.0: PAPER_091 wired (MUGE resonance 14-mode: aDPM radius-label defect caught - -6.3 pct occurs at 270 R_S not 10, formula right; f_TRZ 4th drift instance with a SECOND observable fork - 1 vs 10 pct pulsar-timing joining the Q-084 neutrino fork; mode-count 14/13/13 pinned; valid linearization; wormhole Planck null). Q-087 queued. Wired 95/2255, gate 663/0. Registry 264 rows / 528 edges / 95 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

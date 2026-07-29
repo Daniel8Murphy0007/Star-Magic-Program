@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.93.0"
+VERSION = "0.94.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -4749,5 +4749,57 @@ def _paper_090(dataset):
                     '+ quantum + fluid + DM; U_bi/F_U = SSq*kappa'),
         'source': 'PAPER_090',
         'residual_pct': abs(6.674e-11 * 1.99e30 / (6.96e8) ** 2 - 274.3) / 274.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_091')
+def _paper_091(dataset):
+    """MUGE Resonance 14-Mode Framework (Session 0).
+
+    Companion to PAPER_090. aDPM Doppler base g = GM/r^2 *
+    (1-v/c)/(1+v/c), reduced (1 - 2*sqrt(R_S/r))^(1/2) for
+    circular orbits. RADIUS-LABEL DEFECT (Q-087b): the printed
+    "-6.3 pct at r = 10 R_S" is inconsistent with the paper's own
+    formula (chain gives -39 pct at 10 R_S); -6.28 pct occurs
+    EXACTLY at r ~ 270 R_S - the formula is right, the label is
+    wrong.
+    MODE COUNT DEFECT (Q-087a): title says 14, the formula sums
+    base + 13 deltas, the table lists base + 12 = 13 rows - one
+    mode missing from the table.
+    f_TRZ DRIFT 4TH INSTANCE with ANOTHER OBSERVABLE FORK
+    (Q-087c, joins Q-084): the TRZ mode delta = f_TRZ * g_aDPM is
+    explicitly called "the same f_TRZ that modifies Hawking
+    temperature (Paper 81) - a universal UQFF factor" and claims
+    a 1 pct pulsar-timing enhancement; canonical F_TRZ = 0.1
+    makes that a 10 pct signal - strongly testable. Both wired.
+    5-freq product linearization VALID here (small a_k - contrast
+    084's invalid one). Wormhole mode: Planck-throat Gaussian,
+    null except Planck regime. Cross-table: SgrA* resonance total
+    238.4 = 234.3 * 1.0175 (+1.75 pct net vs compressed); NS/
+    magnetar/Sun shifts +0.6/-0.2 pct - family-consistent with
+    090's anchors (which carry their own open chain question).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.12 (MUGE resonance, companion to 090)',
+            'adpm_form': 'g*(1 - 2*sqrt(R_S/r))^(1/2)',
+            'adpm_at_10rs': (1 - 2 * _m.sqrt(0.1)) ** 0.5 - 1,     # -39 pct chain
+            'adpm_printed_pct': -6.3,
+            'adpm_radius_for_printed': 270.0,              # R_S units - label fix
+            'mode_count_prints': (14, 13, 13),             # title/formula/table
+            'trz_mode_drift': 0.01 * 1.0,                  # 1 pct claim
+            'trz_mode_canonical': F_TRZ * 1.0,             # 10 pct fork
+            'pulsar_timing_fork': 'drift 1 pct vs canonical 10 pct - joins Q-084',
+            'linearization_valid': True,                   # small a_k
+            'wormhole_mode': 'Planck-throat Gaussian null',
+            'sgra_res_vs_comp': 238.4 / 234.3,             # 1.0175
+            'systems_validated': 5,
+        },
+        'formula': ('g_Res = g_aDPM + Sum delta_k; delta_TRZ = f_TRZ*g_aDPM; '
+                    'aDPM = g*(1-v/c)/(1+v/c)'),
+        'source': 'PAPER_091',
+        'residual_pct': abs((1 - 2 * _m.sqrt(1 / 270.0)) ** 0.5 - 1 + 0.063) / 0.063 * 100,
         'status': 'OPEN_RULING',
     }
