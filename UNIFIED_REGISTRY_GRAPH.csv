@@ -415,3 +415,8 @@ observable,gc_ui_galaxy_mediation,paper,PAPER_017,0.62 constant echo
 observable,omega_cen_imbh,paper,PAPER_068,anchors + OPEN formula
 observable,gc_predictions_ssq_role13,paper,PAPER_068,predictions table
 primitive,SSQ,observable,gc_predictions_ssq_role13,13th role BEC fraction
+observable,askap_j1832_lpt,paper,PAPER_069,primary derivation
+observable,askap_j1832_lpt,paper,PAPER_066,supersedes askap row
+primitive,OMEGA_SCM_HZ,observable,askap_j1832_lpt,LENR resonance
+observable,lpt_alternation_mechanism,paper,PAPER_069,mechanism
+primitive,KAPPA_PER_DAY,observable,lpt_alternation_mechanism,decay negligibility

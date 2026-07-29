@@ -1076,7 +1076,8 @@ RESOLVED section with the ruling recorded.
   B = 2.3e10 T but the paper prints 1.33e? (sec 2) and 6.64e?
   (sec 4) — neither closes; which chain is intended? (d) Config
   omega_0 for Crab (2e15) and Vela (1e16 rad/s) are described as
-  ORBITAL/barycenter frequencies, not spins — confirm the
+  ORBITAL/barycenter frequencies, not spins
+  [PARTIAL UPDATE by PAPER_069: the ASKAP config omega was mojibake of 2.380e-3 (2*pi/P) - dispatch superseded; Crab/Vela configs may warrant the same scrutiny - see Q-065.] — confirm the
   physical-meaning reading (the paper itself distinguishes Crab
   spin 190 rad/s from the config value).
 - **Notable:** omega_LENR = 7.854e12 rad/s printed clearly here —
@@ -1132,6 +1133,25 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** virial + sigma chains; IMBH anchors
   with formula OPEN; falsifiable predictions table (47 Tuc 11.4,
   NGC 6397 5.4, M15 13.9 km/s).
+- **Daniel's ruling:** (pending)
+
+### Q-065 — PAPER_069 — 066-ASKAP supersession + distance pin + e172 3rd appearance
+- **Question:** (a) CONFIRM the supersession: PAPER_069 derives
+  omega_0 = 2*pi/2640 s = 2.380e-3 rad/s from the measured period
+  (LaTeX-clear); PAPER_066's config value 2.38e17 was mojibake.
+  The PAPER_066 dispatch has been UPDATED per charter (6th
+  self-rectification; old value preserved in this note and the
+  registry row). (b) Distance: printed "4.63e-6 m" pins as 4.63
+  kpc = 1.43e20 m = 15,102 ly, matching the stated ~15,000 ly
+  exactly - confirm. (c) The -1.35e172 integral factor makes its
+  THIRD appearance (PAPER_067 SgrA*, PAPER_069 here, x_2 family
+  PAPER_063) - joint magnitude ruling with Q-059b requested;
+  F = -1.47e193 N interpretation. (d) Falsifiable LPT
+  threshold-period prediction (~44 min minimum) wired - confirm
+  as a campaign-tracked prediction.
+- **Best-candidate wired:** all chains EXACT (omega_0, LENR
+  1.09e21, threshold 27,631 days, kappa negligibility, 22-min
+  sign flip); MC stability consistent with PAPER_065.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -1,28 +1,28 @@
-v0.71.0 BAND 1: PAPER_068 wired - RULE-D OPEN ON CORRUPT IMBH FORMULA
+v0.72.0 BAND 1: PAPER_069 wired + PAPER_066 SUPERSEDED (6TH SELF-RECT)
 
-PAPER_068 Globular Cluster Dynamics: M13 + Omega Centauri
-(OPEN_RULING Q-064):
-  Ui_galaxy replaces DM sub-halos: delta_G = G*2.3e-4 (0.023 pct).
-  M13 VIRIAL CHAIN EXACT: sqrt(G*6e5*Msun/1.49pc) = 41.6 km/s;
-  sigma_UQFF = 41.6*0.293 = 12.19 km/s vs 12.1 measured (0.8 pct,
-  self-consistent ratio).
+PAPER_069 ASKAP J1832-0911 Long-Period Transient (OPEN_RULING
+Q-065):
+  omega_0 = 2*pi/2640 s = 2.380e-3 rad/s EXACT from the measured
+  44-minute period (LaTeX-clear chain).
+  LENR = 1e-10*(7.854e12/2.380e-3)^2 = 1.09e21 VERIFIED EXACT.
+  Distance PINNED: "4.63e-6 m" mash = 4.63 kpc = 1.43e20 m =
+  15,102 ly, matching stated ~15,000 ly exactly.
+  Alternation mechanism VERIFIED: kappa-decay negligible per
+  cycle (1.5e-5); X-ray/radio switching = cos(omega_0 t) sign
+  flip at half-period 1320 s = 22 min -> observed 44-min cycle.
+  Threshold chain ln(1e6)/kappa = 27,631 days verified.
+  FALSIFIABLE: minimum LPT threshold period ~44 min predicted.
 
-  RULE-D DISCIPLINE APPLIED: Omega Cen IMBH M-sigma formula
-  denominator exponents are corrupt (cannot reproduce 4.2e4 Msun
-  under any wired k4) - ANCHORS WIRED (4.2e4 pred vs 4.0e4 X-ray,
-  5.0 pct), formula marked OPEN_UQFF_DERIVATION_TARGET, nothing
-  substituted.
+PAPER_066 SUPERSESSION (6th self-rectification, per charter):
+  PAPER_066's ASKAP config omega 2.38e17 was MOJIBAKE of
+  2.380e-3 (= 2*pi/P). Dispatch updated; old value preserved in
+  registry supersession note; gate assertion locks the corrected
+  ratio 3.30e15. Q-062d partially updated (Crab/Vela configs may
+  warrant the same scrutiny).
 
-  DEFECTS PINNED: f_Z = 1 - v_esc^2/(sigma^2+v_UQFF^2) evaluates
-  to -16.8 as printed (malformed); M_eff printed 5.94e5 applies
-  the [UA]*[SCm] correction at 100x strength (chain: 5.9994e5).
+  -1.35e172 integral factor: 3rd appearance (067 SgrA*, here,
+  063 x_2 family) - joint magnitude ruling queued with Q-059b.
 
-  CROSS-LINKS: [UA] = 0.0001 REAPPEARS (2nd appearance -
-  supporting Q-060b canonization); v_UQFF = 0.62 km/s echoes
-  PAPER_017's 0.622 = (1-F_TRZ)*F_Um constant.
-  SSq 13th physical role: Omega Cen nucleus BEC fraction = 0.57.
-  Falsifiable predictions: 47 Tuc 11.4 / NGC 6397 5.4 / M15 13.9.
-
-Q-064 queued. Gate 517 assertions 0 failures. Registry 214 rows /
-415 edges / 72 citation ledgers. Wired 72/2,255 (10 clean, 62
-OPEN_RULING). Next: PAPER_069.
+Q-065 queued. Gate 524 assertions 0 failures. Registry 216 rows /
+420 edges / 73 citation ledgers. Wired 73/2,255 (10 clean, 63
+OPEN_RULING). Next: PAPER_070.

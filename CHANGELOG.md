@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.72.0] — 2026-07-29 — BAND 1: PAPER_069 + PAPER_066 SUPERSESSION
+
+### Added
+- **PAPER_069 dispatch** (ASKAP J1832-0911 LPT): omega_0 =
+  2*pi/2640 s = 2.380e-3 rad/s EXACT from the measured 44-min
+  period; LENR = 1e-10*(3.30e15)^2 = 1.09e21 VERIFIED EXACT.
+  Distance pinned: 4.63 kpc = 1.43e20 m = 15,102 ly (matches
+  stated ~15,000 ly). Alternation mechanism verified: kappa-decay
+  negligible per cycle (1.5e-5); X-ray/radio switching =
+  cos(omega_0 t) sign flip at 1320 s = 22 min. Threshold chain
+  27,631 days verified. Falsifiable minimum-LPT-period (~44 min)
+  prediction wired. -1.35e172 factor 3rd appearance (Q-059b
+  joint ruling).
+
+### Changed
+- **PAPER_066 dispatch SUPERSEDED (6th self-rectification):**
+  ASKAP omega updated from config mojibake 2.38e17 to PAPER_069's
+  2*pi/2640 = 2.380e-3; old value preserved in registry
+  supersession note; gate assertion locks the corrected ratio.
+- Gate: 524 assertions, 0 failures. Registry: 216 rows / 420 edges / 73 ledgers.
+
+---
+
 ## [0.71.0] — 2026-07-29 — BAND 1: PAPER_068
 
 ### Added

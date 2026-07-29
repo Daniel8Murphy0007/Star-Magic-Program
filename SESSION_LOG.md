@@ -1082,3 +1082,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 72/2,255 (10 ✓, 62 ⚠). Next: PAPER_069.
 
 ---
+
+## 2026-07-29 — v0.72.0 — BAND 1: PAPER_069 + 066 SUPERSESSION
+
+- PAPER_069 wired (⚠ Q-065): ASKAP LPT. omega_0 = 2*pi/2640
+  EXACT; LENR 1.09e21; distance 4.63 kpc = 15,102 ly pin;
+  22-min sign-flip mechanism; threshold 27,631 days.
+- PAPER_066 ASKAP row SUPERSEDED per charter (6th self-rect):
+  dispatch updated, old config value preserved in notes, gate
+  tightened. Q-062d partially updated.
+- Campaign: 73/2,255 (10 ✓, 63 ⚠). Next: PAPER_070.
+
+---

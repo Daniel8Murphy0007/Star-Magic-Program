@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.71.0", "uqff_calculator.VERSION = 0.71.0")
+assert_that(C.VERSION == "0.72.0", "uqff_calculator.VERSION = 0.72.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1143,6 +1143,22 @@ assert_that(abs(_r068['m_eff_chain_msun'] - 5.9994e5) < 10,
 assert_that(abs(_r068['omega_cen_bec_fraction'] - 0.57) < 1e-12,
             "PAPER_068: Omega Cen nucleus BEC fraction = SSq (13th physical role)")
 assert_that(C.wired_count() >= 72, "wired_count >= 72")
+
+_r069 = C.calc('PAPER_069')['value']
+assert_that(abs(_r069['omega0_rad_s'] - 2.380e-3) / 2.380e-3 < 0.001,
+            "PAPER_069: omega_0 = 2*pi/2640 = 2.380e-3 rad/s EXACT from measured period")
+assert_that(abs(_r069['lenr_term'] - 1.09e21) / 1.09e21 < 0.01,
+            "PAPER_069: LENR = 1e-10*(3.30e15)^2 = 1.09e21 EXACT (supersedes PAPER_066 ASKAP reading)")
+_r066b = C.calc('PAPER_066')['value']
+assert_that(abs(_r066b['systems']['askap_j1832']['lenr_ratio'] - 3.30e15) / 3.30e15 < 0.01,
+            "PAPER_066 SUPERSESSION: ASKAP dispatch updated to PAPER_069 omega (6th self-rectification)")
+assert_that(abs(_r069['distance_ly_check'] - 15000.0) / 15000.0 < 0.01,
+            "PAPER_069: distance pin 4.63 kpc = 15,102 ly matches stated ~15,000 ly")
+assert_that(abs(_r069['threshold_days'] - 27631.0) < 1.0,
+            "PAPER_069: threshold chain ln(1e6)/kappa = 27,631 days verified (printed 27,600)")
+assert_that(_r069['kappa_dt_44min'] < 2e-5,
+            "PAPER_069: kappa-decay negligible on 44-min scale - alternation is cos sign-flip at 22 min")
+assert_that(C.wired_count() >= 73, "wired_count >= 73")
 
 # =============================================================================
 # REPORT

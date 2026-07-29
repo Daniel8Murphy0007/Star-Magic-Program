@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.71.0"
+VERSION = "0.72.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3495,7 +3495,9 @@ def _paper_066(dataset):
     omega_0)^2 with omega_LENR = 2*pi*1.25 THz = 7.854e12 - printed
     CLEARLY here, independently confirming PAPER_062's identity
     pin): Vela ratio 7.854e-4 -> 6.17e-7; Crab 3.927e-3 -> 1.54e-5;
-    ASKAP 3.30e-5 -> 1.089e-9; SGR1745 ratio 4.70e12 -> term
+    ASKAP 3.30e15 -> 1.089e21 (SUPERSEDED by PAPER_069: omega_0 =
+    2*pi/2640 s = 2.380e-3, not the config 2.38e17 mojibake - 6th
+    self-rectification); SGR1745 ratio 4.70e12 -> term
     2.21e25 (printed "10-5" = MOJIBAKE of e25, recovered by chain).
     Crab F_UBii = -2.1e7 N - consistent with the PAPER_063 ensemble
     mean -6.05e7 under the e7 pin (supports Q-059a).
@@ -3515,7 +3517,7 @@ def _paper_066(dataset):
     w_lenr = 2.0 * _m.pi * OMEGA_SCM_HZ                  # 7.854e12 clear print
     systems = {}
     for name, w0 in (('vela', 1.0e16), ('crab', 2.0e15),
-                     ('askap_j1832', 2.38e17), ('sgr1745', 2.0 * _m.pi / 3.76)):
+                     ('askap_j1832', 2.0 * _m.pi / 2640.0), ('sgr1745', 2.0 * _m.pi / 3.76)):
         r = w_lenr / w0
         systems[name] = {'omega0_rad_s': w0, 'lenr_ratio': r, 'lenr_term': r * r}
     return {
@@ -3650,5 +3652,60 @@ def _paper_068(dataset):
                     'delta_G = G*2.3e-4; IMBH M-sigma OPEN'),
         'source': 'PAPER_068',
         'residual_pct': abs(sigma_vir / 1e3 * 0.293 - 12.1) / 12.1 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_069')
+def _paper_069(dataset):
+    """ASKAP J1832-0911 Long-Period Transient (Session 0).
+
+    44-min LPT (Hurley-Walker 2023 + Chandra 2025). omega_0 =
+    2*pi/2640 s = 2.380e-3 rad/s EXACT from the measured period -
+    this LaTeX-clear chain SUPERSEDES PAPER_066's config value
+    2.38e17 (mojibake): 6th SELF-RECTIFICATION; the PAPER_066
+    dispatch has been updated per charter.
+    LENR = 1e-10*(7.854e12/2.380e-3)^2 = 1e-10*(3.30e15)^2 =
+    1.09e21 VERIFIED EXACT. Integral = 1.09e21*(-1.35e172) =
+    -1.47e193 N (arithmetic checks; -1.35e172 factor 3rd
+    appearance - e172 family, joint ruling Q-059b).
+    DISTANCE PINNED: "4.63e-6 m" mash reads 4.63 kpc = 1.43e20 m
+    = 15,102 ly, matching the stated ~15,000 ly EXACTLY.
+    Mode-switch mechanism wired: kappa-decay negligible on 44-min
+    scale (kappa*dt = 1.5e-5, verified); alternation driven by
+    cos(omega_0*t) sign flip at half-period 1320 s = 22 min ->
+    X-ray/radio alternation at observed 44-min full cycle.
+    Threshold chain ln(1e46/1e40)/kappa = 27,631 days VERIFIED
+    (printed 27,600). MC stability 0.970, 100/100 (consistent w/
+    PAPER_065) - stability BECAUSE omega_0 is measured, not
+    noise-varied. Falsifiable: minimum LPT threshold period ~44
+    min predicted.
+    """
+    import math as _m
+    w0 = 2.0 * _m.pi / 2640.0                            # 2.380e-3 EXACT
+    ratio = 7.854e12 / w0
+    return {
+        'value': {
+            'system': 'ASKAP J1832-0911 (LPT, Chandra + ASKAP May 2025)',
+            'period_s': 2640.0,
+            'omega0_rad_s': w0,
+            'lenr_ratio': ratio,                          # 3.30e15
+            'lenr_term': 1e-10 * ratio * ratio,           # 1.09e21 EXACT
+            'integral_factor': -1.35e172,                 # e172 family (Q-059b)
+            'f_ubii_n': -1.47e193,
+            'distance_kpc': 4.63,
+            'distance_m': 4.63 * 3.086e19,                # 1.43e20 = 15,102 ly
+            'distance_ly_check': 4.63 * 3.086e19 / 9.461e15,
+            'half_period_s': 1320.0,                      # 22 min sign flip
+            'kappa_dt_44min': KAPPA_PER_DAY * 2640.0 / 86400.0,   # 1.5e-5
+            'threshold_days': _m.log(1e46 / 1e40) / KAPPA_PER_DAY,  # 27,631
+            'mc_stability': 0.970,
+            'mc_valid': 100,
+            'lpt_min_period_prediction_min': 44.0,
+        },
+        'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2, omega_0 = 2*pi/P; '
+                    'alternation = cos(omega_0 t) sign flip at P/2'),
+        'source': 'PAPER_069',
+        'residual_pct': abs(_m.log(1e46 / 1e40) / KAPPA_PER_DAY - 27600.0) / 27600.0 * 100,
         'status': 'OPEN_RULING',
     }
