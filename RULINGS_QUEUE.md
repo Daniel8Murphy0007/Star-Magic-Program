@@ -1040,6 +1040,26 @@ RESOLVED section with the ruling recorded.
   identification + verified chains + Batch-23 validation record.
 - **Daniel's ruling:** (pending)
 
+### Q-061 — PAPER_065 — mean-dev three-way + L26 label inversion + denominator convention
+- **Question:** (a) Mean experimental deviation appears three ways:
+  recomputed mean of the 13 pass rows = 2.74 pct, printed "2.87
+  pct", abstract "3.1 pct" — which is canonical? (b) The 26D-L26
+  row lists Lambda = 5.4e-10 J/m3 as PREDICTED and 5.96e-10 as
+  MEASURED; elsewhere in the corpus 5.957e-10 J/m3 IS the
+  UQFF-derived ledger value — is this row's labeling inverted, or
+  is a different L26 prediction intended? (Related: RHO_SCM
+  appears as predicted 7.09e-37 vs measured 6.95e-37, 2.01 pct —
+  the first measured-vs-primitive comparison in the campaign;
+  what measurement is 6.95e-37?) (c) Deviation denominators
+  alternate between predicted (RDR/QSC rows) and measured
+  (OmegaCen/L13 rows) — pin one convention? (d) Solar/Galactic
+  Compressed test exponents are mojibaked beyond recovery.
+- **Best-candidate wired:** census 121 EXACT; 13 row chains
+  verified; pass rate 14/15; MC stability suite; KAPPA_MCMC
+  cross-consistency with PAPER_063; all three mean readings
+  carried with recomputed as residual anchor.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

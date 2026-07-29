@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 68 (10 ✓, 58 ⚠ OPEN_RULING)
+- **Wired:** 69 (10 ✓, 59 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2187
+- **Not yet touched:** 2186
 
 ---
 
@@ -98,7 +98,7 @@
 | ⚠ | PAPER_062 | Widom Larsen LENR UQFF |
 | ⚠ | PAPER_063 | F U Bi i Integral UQFF |
 | ⚠ | PAPER_064 | 4 UQFF Operational Modes |
-| ⬜ | PAPER_065 | 121 System UQFF Validation Statistical Summary |
+| ⚠ | PAPER_065 | 121 System UQFF Validation Statistical Summary |
 | ⬜ | PAPER_066 | Magnetar Systems SGR1745 Crab Vela UQFF |
 | ⬜ | PAPER_067 | AGN SgrA M87 CentaurusA UQFF |
 | ⬜ | PAPER_068 | Globular Cluster Dynamics UQFF |

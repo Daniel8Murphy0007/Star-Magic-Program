@@ -1043,3 +1043,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 68/2,255 (10 ✓, 58 ⚠). Next: PAPER_065.
 
 ---
+
+## 2026-07-29 — v0.68.0 — BAND 1: PAPER_065 — DOMAIN 1.9 OPENS
+
+- PAPER_065 wired (⚠ Q-061): 121-system roll-up. Census EXACT;
+  13 chains verified; three-way mean-dev discrepancy + L26 label
+  inversion pinned. Block-8 caught a RHO_SCM literal (6th catch) -
+  routed through registry symbol.
+- Campaign: 69/2,255 (10 ✓, 59 ⚠). Next: PAPER_066.
+
+---

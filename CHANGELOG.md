@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.68.0] — 2026-07-29 — BAND 1: PAPER_065 — DOMAIN 1.9 OPENS
+
+### Added
+- **PAPER_065 dispatch** (121-System Validation Summary): 15-category
+  census sums EXACTLY to 121; 15 experimental tests -> 13 pass /
+  1 accept / 1 pending (93.3 pct); all 13 per-row deviation chains
+  verified individually; MC stability suite (5 x 100 trials,
+  stability >= 0.97, 100/100 valid); solvability 99.9 pct;
+  KAPPA_MCMC = 0.00052 repeat cross-consistent with PAPER_063.
+- **Honest discrepancies pinned:** mean deviation three-way
+  (recomputed 2.74 vs printed 2.87 vs abstract 3.1 pct); 26D-L26
+  row labels the UQFF ledger value 5.96e-10 J/m3 as "measured"
+  (inversion vs corpus); RHO_SCM predicted-vs-measured 6.95e-37
+  (2.01 pct) is the campaign's first measured-vs-primitive row.
+- OPEN_RULING Q-061 (mean pick; L26 labeling; denominator
+  convention; Compressed-test mojibake).
+- Gate: 495 assertions, 0 failures. Registry: 205 rows / 395 edges / 69 ledgers.
+
+---
+
 ## [0.67.0] — 2026-07-29 — BAND 1: PAPER_064
 
 ### Added

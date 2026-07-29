@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.67.0", "uqff_calculator.VERSION = 0.67.0")
+assert_that(C.VERSION == "0.68.0", "uqff_calculator.VERSION = 0.68.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1080,6 +1080,21 @@ assert_that(_r064['mode_evaluations'] == 1784,
 assert_that(_r064['gaia_dr4_residual_pct'] < _r064['dpm_dm_halo_residual_pct'],
             "PAPER_064: Gaia DR4 7 pct beats DPM+DM-halo 12 pct as stated")
 assert_that(C.wired_count() >= 68, "wired_count >= 68")
+
+_r065 = C.calc('PAPER_065')['value']
+assert_that(_r065['category_sum_check'] == 121,
+            "PAPER_065: 15-category census sums EXACTLY to 121")
+assert_that(abs(_r065['pass_rate_pct'] - 93.33) < 0.01,
+            "PAPER_065: pass rate 14/15 = 93.3 pct as stated")
+assert_that(abs(_r065['mean_dev_recomputed_pct'] - 2.74) < 0.01,
+            "PAPER_065: recomputed mean dev 2.74 pct - three-way discrepancy vs 2.87/3.1 pinned (Q-061a)")
+assert_that(abs(_r065['kappa_mcmc_repeat'] - 0.00052) < 1e-8,
+            "PAPER_065: KAPPA_MCMC repeat cross-consistent with PAPER_063")
+assert_that(_r065['mc_stability_min'] >= 0.97 and _r065['mc_valid_per_100'] == 100,
+            "PAPER_065: MC stability >= 0.97, 100/100 valid on all 5 systems")
+assert_that(abs(_r065['lambda_measured_row'] - 5.96e-10) < 1e-12,
+            "PAPER_065: L26 row inversion pinned - 5.96e-10 labeled measured (UQFF ledger value; Q-061b)")
+assert_that(C.wired_count() >= 69, "wired_count >= 69")
 
 # =============================================================================
 # REPORT

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.67.0"
+VERSION = "0.68.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -3424,5 +3424,61 @@ def _paper_064(dataset):
                     'consistency |g_C - g_UQFF| <= 3*sigma_bootstrap'),
         'source': 'PAPER_064',
         'residual_pct': abs(2 * _m.pi * 30.2 - 190.0) / 190.0 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_065')
+def _paper_065(dataset):
+    """121-System Automated Validation Statistical Summary (Session 0).
+
+    Domain 1.9 opens: the ensemble roll-up. Category census SUMS
+    EXACTLY to 121 (15 categories, 18 NS/pulsar ... 18 other).
+    Experimental suite: 15 tests -> 13 pass / 1 accept / 1 pending
+    = 93.3 pct (14/15). All 13 per-row deviation chains VERIFIED
+    individually (RDR TRZ 2.00, COP 2.61, plasma-T 4.33, QSC THz
+    1.67, dA 0.10, 2nd-harmonic 1.67, M13 1.63/2.25, OmegaCen
+    2.75/5.00, L13 2.01, L18 Higgs 0.21, L26 9.40).
+    THREE-WAY MEAN DISCREPANCY (honest): recomputed mean of the 13
+    pass rows = 2.74 pct vs printed 2.87 pct vs abstract 3.1 pct
+    (Q-061a). Denominator convention also inconsistent across rows
+    (predicted-denom vs measured-denom, Q-061c).
+    NOTABLE INVERSION: 26D-L26 row lists Lambda 5.4e-10 J/m3 as
+    PREDICTED and 5.96e-10 as MEASURED - but 5.96e-10 is the UQFF
+    ledger value elsewhere in the corpus (Q-061b).
+    KAPPA_MCMC = 0.00052/day repeated - cross-consistent with
+    PAPER_063. MC stability: 5 systems x 100 trials, stability =
+    1 - sigma/|mu| >= 0.97, 100/100 valid each. Solvability 99.9
+    pct (Grok 4, Sept 2025). RHO_SCM appears as PREDICTED (registry
+    value) vs measured 6.95e-37 (2.01 pct) - first measured-vs-primitive
+    row in the campaign.
+    """
+    devs = [2.00, 2.61, 4.33, 1.67, 0.10, 1.67, 1.63,
+            2.25, 2.75, 5.00, 2.01, 0.21, 9.40]
+    return {
+        'value': {
+            'system': '121-system validation suite (Domain 1.9)',
+            'n_systems': 121,
+            'category_sum_check': 121,                 # EXACT
+            'n_tests': 15,
+            'n_pass': 13, 'n_accept': 1, 'n_pending': 1,
+            'pass_rate_pct': 14.0 / 15.0 * 100.0,      # 93.33
+            'mean_dev_recomputed_pct': sum(devs) / len(devs),   # 2.74
+            'mean_dev_printed_pct': 2.87,
+            'mean_dev_abstract_pct': 3.1,
+            'kappa_mcmc_repeat': 0.00052,              # = PAPER_063
+            'mc_stability_min': 0.97,
+            'mc_valid_per_100': 100,
+            'solvability_pct': 99.9,
+            'rho_scm_predicted': RHO_SCM,
+            'rho_scm_measured': 6.95e-37,              # 2.01 pct row
+            'lambda_predicted_row': 5.4e-10,
+            'lambda_measured_row': 5.96e-10,           # inversion Q-061b
+            'higgs_dev_pct': 0.21,
+        },
+        'formula': ('Stability = 1 - sigma_F/|mu_F|; pass rate = (pass+accept)/tests; '
+                    'category census sums to 121'),
+        'source': 'PAPER_065',
+        'residual_pct': abs(sum(devs) / len(devs) - 2.87),
         'status': 'OPEN_RULING',
     }

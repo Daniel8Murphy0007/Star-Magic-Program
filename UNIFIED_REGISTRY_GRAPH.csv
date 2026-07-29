@@ -389,3 +389,9 @@ primitive,RHO_UA,observable,four_mode_superposition,buoyant mode input
 observable,ua_weighting_constant,paper,PAPER_064,new constant
 observable,batch23_validation,paper,PAPER_064,validation record
 observable,four_mode_superposition,paper,PAPER_063,3 pct consistency sigma
+observable,validation_121_census,paper,PAPER_065,primary summary
+observable,validation_121_census,paper,PAPER_063,kappa MCMC cross-consistency
+observable,validation_121_census,paper,PAPER_064,4-mode validation record
+observable,mc_stability_suite,paper,PAPER_065,MC protocol
+observable,l26_lambda_inversion,paper,PAPER_065,label inversion
+primitive,RHO_SCM,observable,l26_lambda_inversion,measured-vs-primitive row

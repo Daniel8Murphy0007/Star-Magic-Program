@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.67.0"
-description = "UQFF Star-Magic-Program v0.67.0: PAPER_064 wired (four operational modes formalized: g_UQFF = KAPPA*g_C + SSQ*g_R + 1e-4*g_B + 0.99*g_S with weights identified as registry primitives; buoyant/superconductive chains verified; Crab omega = 2*pi*30.2 Hz closes; 446*4 = 1784 evaluations; Gaia DR4 7 pct + GWTC-4.0 ringdown 0.5 pct validation). Q-060 queued. Wired 68/2255, gate 488/0. Registry 202 rows / 389 edges / 68 ledgers."
+version = "0.68.0"
+description = "UQFF Star-Magic-Program v0.68.0: PAPER_065 wired (121-system validation roll-up, Domain 1.9: category census sums EXACT to 121; 13 pass-row deviation chains verified; pass rate 14/15 = 93.3 pct; MC stability >= 0.97 all systems; KAPPA_MCMC cross-consistent with PAPER_063; three-way mean-dev discrepancy 2.74/2.87/3.1 pinned; L26 Lambda label inversion flagged). Q-061 queued. Wired 69/2255, gate 495/0. Registry 205 rows / 395 edges / 69 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

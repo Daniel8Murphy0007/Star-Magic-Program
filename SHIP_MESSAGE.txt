@@ -1,29 +1,27 @@
-v0.67.0 BAND 1: PAPER_064 wired - FOUR OPERATIONAL MODES FORMALIZED
+v0.68.0 BAND 1: PAPER_065 wired - DOMAIN 1.9 OPENS (121-SYSTEM ROLL-UP)
 
-PAPER_064 Four UQFF Operational Modes (OPEN_RULING Q-060):
-  g_UQFF = alpha_C*g_Compressed + alpha_R*g_Resonant +
-           alpha_B*g_Buoyant + alpha_S*g_Superconductive
-  Mode formulas: (M/r)*1e-10 / cos(omega*t)*1e-5 / rho_UA*1e55 /
-  E_react*1e-30.
+PAPER_065 121-System Validation Statistical Summary
+(OPEN_RULING Q-061):
+  15-category census SUMS EXACTLY to 121.
+  15 experimental tests: 13 pass / 1 accept / 1 pending = 93.3 pct
+  (14/15). ALL 13 per-row deviation chains verified individually
+  (TRZ 2.00 ... Higgs 0.21 ... L26 9.40 EXACT).
+  MC stability: 5 systems x 100 trials, 10 pct noise -
+  Stability = 1 - sigma/|mu| >= 0.97, 100/100 valid each.
+  Solvability 99.9 pct (Grok 4 Sept 2025).
+  KAPPA_MCMC = 0.00052/day repeated - cross-consistent w/ 063.
 
-  WEIGHTS IDENTIFIED AS REGISTRY PRIMITIVES: alpha_C = KAPPA
-  (0.0005), alpha_R = SSQ (0.57), alpha_S = H_SCm (0.99);
-  alpha_B = [UA] = 1e-4 is a NEW weighting constant (Q-060b).
+  HONEST DISCREPANCIES PINNED:
+  - Mean deviation three-way: recomputed 2.74 pct vs printed
+    2.87 pct vs abstract 3.1 pct (Q-061a)
+  - 26D-L26 row labels 5.96e-10 J/m3 (the UQFF ledger value!) as
+    MEASURED with 5.4e-10 as predicted - inversion vs corpus
+    (Q-061b)
+  - RHO_SCM predicted-vs-measured 6.95e-37 (2.01 pct): first
+    measured-vs-primitive comparison in the campaign - what
+    measurement is this?
+  - Deviation denominator convention alternates across rows
 
-  Chains VERIFIED: buoyant 7.09e-36*1e55 = 7.09e19; super
-  1e46*1e-30 = 1e16; Crab Resonant closes EXACTLY (190 rad/s =
-  2*pi*30.2 Hz, the real Crab spin); 446 modules * 4 = 1,784
-  mode evaluations EXACT.
-
-  Batch 23 validation record: Gaia DR4 proper motions 7 pct
-  (beats 12 pct DPM+DM-halo); LIGO GWTC-4.0 ringdown 0.5 pct on
-  3 events (unnamed - Q-060d). Self-consistency gate |g_C -
-  g_UQFF| <= 3 sigma ties to PAPER_063's ensemble std.
-
-Q-060 queued: Abell2256 example exponents unrecoverable; [UA] =
-1e-4 canonize-or-drift; crosswalk of 4-mode sum to the triadic
-w_C/w_R/w_B decomposition (053-058); name the 3 GWTC-4.0 events.
-
-Gate 488 assertions 0 failures. Registry 202 rows / 389 edges / 68
-citation ledgers. Wired 68/2,255 (10 clean, 58 OPEN_RULING).
-Next: PAPER_065.
+Q-061 queued. Gate 495 assertions 0 failures. Registry 205 rows /
+395 edges / 69 citation ledgers. Wired 69/2,255 (10 clean, 59
+OPEN_RULING). Next: PAPER_066.
