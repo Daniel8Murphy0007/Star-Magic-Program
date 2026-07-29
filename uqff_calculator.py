@@ -57,7 +57,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.52.0"
+VERSION = "0.53.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -2638,5 +2638,57 @@ def _paper_049(dataset):
                     'rho_SCm_dense = rho_c*c^2; observed Lambda = residual [UA]'),
         'source': 'PAPER_049',
         'residual_pct': abs(ratio_consistent - 0.117) / 0.117 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_050')
+def _paper_050(dataset):
+    """26D Manifold Compactification to 3+1 Spacetime (Session 0).
+
+    Closes the Domain-1.6 block (043-050). The 26 levels partition
+    9 + 4 + 13: 9 compactified quantum dimensions (L1-9, Calabi-Yau-
+    like, sub-collider), 4 OBSERVABLE spacetime (L10-13), 13 macro-
+    cosmic coupling channels (L14-26). CENTRAL IDENTIFICATION: the
+    3+1 dimensions ARE the matter states - solid/liquid/gas = x/y/z
+    spatial, PLASMA = TIME. Quantum-cosmic bridge C_10,26 = 0.0144
+    (cross-checks 045); coupling length scale C_10,26/C_10,11 =
+    0.0302. Honest v4.75 note: only 4 of 26 dims operationalized -
+    numerics use the 4D projection. String mapping: 26 = bosonic
+    dimension, framed as phenomenological discretization of
+    worldsheet modes (honest). SOURCE115 19-system 26D master
+    polynomial forward-referenced.
+    Q-047: (a) 9+4+13 partition vs predecessor canonical 26->10->6->4
+    flow (PAPER_1160) - two decompositions of 26, reconcile?
+    (b) dark-matter-alternative claim: 1.44 pct coupling vs observed
+    rotation-curve discrepancy (factor 5-10 at outer radii) -
+    magnitude gap; (c) TWO C_ij formulas in corpus: 045's
+    density-ratio form (verified) vs 050's energy form with
+    unspecified alpha_cross; (d) level-domain labels conflict between
+    the 043 table and 050's tier-1 table (L3 GUT-vs-nuclear etc.).
+    """
+    partition = (9, 4, 13)
+    c_ratio = 0.0144 / 0.477                         # 0.0302 coupling length scale
+    return {
+        'value': {
+            'partition_9_4_13': partition,
+            'partition_sum': sum(partition),         # 26 = D_CRIT
+            'spacetime_identification': {'x': 'solid L10', 'y': 'liquid L11',
+                                         'z': 'gas L12', 'ct': 'plasma L13'},
+            'c_10_26': 0.0144,                       # cross-checks 045
+            'coupling_length_scale': c_ratio,        # 0.0302
+            'operationalized_dims': 4,
+            'projection_note': '4D numerics; 22 compact dims analytic (honest v4.75 note)',
+            'bosonic_string_dim': 26,
+            'transverse_modes': 24,
+            'dm_alternative_claim_pct': 1.44,        # Q-047b magnitude gap
+            'source115_systems': 19,
+            'cp2_score': (4, 4),
+            'predecessor_flow': '26->10->6->4 (PAPER_1160)',
+        },
+        'formula': ('26 = 9 (compact) + 4 (observable = matter states) + 13 (channels); '
+                    'C_10,26/C_10,11 = 0.0302; g_j = sum_26 sum_4 alpha_ijk*phi_k*lambda_i*exp(-kappa*t)'),
+        'source': 'PAPER_050',
+        'residual_pct': abs(c_ratio - 0.0302) / 0.0302 * 100,
         'status': 'OPEN_RULING',
     }

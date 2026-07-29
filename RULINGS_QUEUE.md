@@ -774,6 +774,28 @@ RESOLVED section with the ruling recorded.
   three components anchored; Lambda-as-residual-[UA] claim preserved.
 - **Daniel's ruling:** (pending)
 
+### Q-047 — PAPER_050 — partition-vs-flow + DM claim magnitude + dual C_ij + label conflicts
+- **Question:** (a) This paper partitions 26 = 9 + 4 + 13 (compact /
+  observable / channels), while the predecessor canon has the
+  26 -> 10 -> 6 -> 4 dimensional FLOW (PAPER_1160, D_crit -> SO_5 ->
+  D_BSFG -> D_phys). Two decompositions of the same 26: reconcile
+  (e.g. flow = dynamical, partition = static census) or does one
+  supersede? (b) The dark-matter-alternative claim attributes
+  galactic rotation-curve discrepancies to the 1.44 pct C_10,26
+  coupling - but observed discrepancies are factor ~5-10 at outer
+  radii; magnitude gap needs a mechanism (accumulation? resonance?).
+  (c) TWO cross-scale coupling formulas now exist: 045's
+  lambda*lambda*sqrt(min_rho/max_rho) (verified to 0.0144) and 050's
+  lambda*lambda/sqrt(E_m*E_n)*alpha_cross with alpha_cross
+  unspecified (needs 3.84e-3 to match). Which is canonical?
+  (d) Level-domain labels conflict between 043's table (L3 = nuclear
+  shell, L5 = electron shells) and 050's tier-1 table (L3 = GUT
+  scale, L5 = strong force) - one assignment table should rule.
+- **Best-candidate wired:** partition + TIME-=-PLASMA identification
+  + 0.0302 coupling scale pinned; honest 4D-projection note
+  preserved; 045's verified C_ij form treated as operational.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

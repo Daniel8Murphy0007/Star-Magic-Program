@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.52.0"
-description = "UQFF Star-Magic-Program v0.52.0: PAPER_049 wired (three-component vacuum: SCm-dense/UA-trapped/polynomial; sum(n^2) = 3731 exact; FORENSIC - the 16-order Lambda-excess headline is a UNITS ARTIFACT (kg/m3 quoted as J/m3); consistent units give 0.117 - ROOT-ERA instance of the drift predecessor PAPER_2147 corrected). Q-046 queued. Wired 53/2255, gate 377/0. Registry 157 rows / 304 edges / 53 ledgers."
+version = "0.53.0"
+description = "UQFF Star-Magic-Program v0.53.0: PAPER_050 wired - Domain-1.6 26D block COMPLETE (043-050). Compactification 26 = 9+4+13; central identification: 3+1 spacetime = matter states, TIME = PLASMA; quantum-cosmic bridge 0.0144 w/ coupling scale 0.0302; honest 4D-projection note; string mapping. Q-047 queued (partition-vs-flow reconciliation). Wired 54/2255, gate 383/0. Registry 160 rows / 310 edges / 54 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

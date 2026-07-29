@@ -1,27 +1,29 @@
-v0.52.0 BAND 1: PAPER_049 wired - UNIT-DIRECTION DRIFT ROOT FOUND
+v0.53.0 BAND 1: PAPER_050 wired - DOMAIN-1.6 26D BLOCK COMPLETE
 
-PAPER_049 Three-Component Vacuum Energy (OPEN_RULING Q-046):
-  [SCm] dense = rho_c*c^2 = 8.988e31 J/m^3 (sequestered in wells)
-  [UA] trapped = 5.6472e-12 J/m^3 (Bohr-scale, LENR mediator)
-  26-level polynomial lambda_vac = 7e-11 J/m^3 (validator)
-  sum(n^2, 20..26) = 3731 EXACT; L26/L1 = 676 cosmic dominance
-  Observed Lambda = residual lowest-frequency [UA] after Yin-Yang
-  cancellation (structural framing, not fine-tuning)
-  HONEST: paper discloses it cannot reproduce the validator 7e-11
-  from its own formula (attempts: 5.33e-6 / 1.4e-6 / 4e-6)
+PAPER_050 26D Manifold Compactification (OPEN_RULING Q-047):
+  Closes the Domain-1.6 block (042-050).
+  PARTITION: 26 = 9 + 4 + 13
+    9 compactified quantum dims (L1-9, Calabi-Yau-like, sub-collider)
+    4 OBSERVABLE spacetime (L10-13)
+    13 macro-cosmic coupling channels (L14-26)
+  CENTRAL IDENTIFICATION: the 3+1 dimensions ARE the matter states -
+  solid/liquid/gas = x/y/z spatial, TIME = PLASMA.
+  Quantum-cosmic bridge C_10,26 = 0.0144 (cross-checks PAPER_045);
+  coupling length scale C_10,26/C_10,11 = 0.0302
+  HONEST v4.75 note: 4 of 26 dims operationalized - numerics use the
+  4D projection, 22 compact dims analytic
+  String mapping: 26 = bosonic dimension, honestly framed as
+  phenomenological worldsheet discretization; SOURCE115 19-system
+  26D master polynomial forward-referenced; CP2 4/4 PASS
 
-FORENSIC (unit direction) - the headline "UQFF vacuum exceeds
-LambdaCDM by 16 orders" is a UNITS ARTIFACT: rho_Lambda was quoted
-as 5.96e-27 "J/m^3" which is the kg/m^3 VALUE. With consistent
-J/m^3 (5.96e-10 - the predecessor canonical family), the ratio is
-7e-11/5.96e-10 = 0.117: lambda_vac sits BELOW Lambda by ~8.5x.
-This is the ROOT-ERA instance of the kg/m^3-vs-J/m^3 drift that
-predecessor PAPER_2147 corrected across 933 papers - the drift
-traces to Session 0. Both readings computed and gate-pinned.
+Q-047 queued: (a) 9+4+13 partition vs predecessor canonical
+26->10->6->4 flow (PAPER_1160) - two decompositions of 26, reconcile
+or supersede?; (b) 1.44 pct dark-matter-alternative claim vs factor
+5-10 observed rotation-curve discrepancy (magnitude gap);
+(c) two C_ij formulas in corpus (045 verified density-ratio form vs
+050 energy form w/ unspecified alpha_cross); (d) level-domain labels
+conflict between 043 and 050 tables.
 
-Q-046 queued: lambda_vac closed-form opacity; unit-direction
-headline correction; trapped-UA chain mojibake.
-
-Gate 377 assertions 0 failures. Registry 157 rows / 304 edges / 53
-citation ledgers. Wired 53/2,255 (9 clean, 44 OPEN_RULING).
-Next: PAPER_050.
+Gate 383 assertions 0 failures. Registry 160 rows / 310 edges / 54
+citation ledgers. Wired 54/2,255 (9 clean, 45 OPEN_RULING).
+Next: PAPER_051.

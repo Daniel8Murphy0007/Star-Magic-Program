@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.52.0", "uqff_calculator.VERSION = 0.52.0")
+assert_that(C.VERSION == "0.53.0", "uqff_calculator.VERSION = 0.53.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -861,6 +861,21 @@ assert_that(_r049['l26_l1_ratio'] == 676,
 assert_that(abs(_r049['lambda_vac_paper_attempt'] - 5.33e-6) / 5.33e-6 < 0.01,
             "PAPER_049: paper's own formula gives 5.33e-6 vs validator 7e-11 (opacity honestly disclosed)")
 assert_that(C.wired_count() >= 53, "wired_count >= 53")
+
+_r050 = C.calc('PAPER_050')['value']
+assert_that(_r050['partition_sum'] == 26 and _r050['partition_9_4_13'] == (9, 4, 13),
+            "PAPER_050: 26 = 9 + 4 + 13 partition (compact/observable/channels)")
+assert_that(_r050['spacetime_identification']['ct'] == 'plasma L13',
+            "PAPER_050: TIME = PLASMA (L13) - the central matter-state spacetime identification")
+assert_that(abs(_r050['coupling_length_scale'] - 0.0302) < 0.0005,
+            "PAPER_050: coupling length scale C_10,26/C_10,11 = 0.0302")
+assert_that(abs(_r050['c_10_26'] - 0.0144) < 1e-12,
+            "PAPER_050: quantum-cosmic bridge 0.0144 cross-checks PAPER_045")
+assert_that(_r050['operationalized_dims'] == 4,
+            "PAPER_050: honest disclosure - 4 of 26 dims operationalized (4D projection numerics)")
+assert_that(_r050['cp2_score'] == (4, 4),
+            "PAPER_050: CP2 integration consistency 4/4 PASS")
+assert_that(C.wired_count() >= 54, "wired_count >= 54")
 
 # =============================================================================
 # REPORT
