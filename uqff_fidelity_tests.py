@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.141.0", "uqff_calculator.VERSION = 0.141.0")
+assert_that(C.VERSION == "0.142.0", "uqff_calculator.VERSION = 0.142.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2084,6 +2084,19 @@ assert_that(len(_r138['b_crit_fork']) == 3,
 assert_that(abs(_r138['h0_si'] - 2.269e-18) < 0.001e-18,
             "PAPER_138: H_0 = 2.269e-18 /s EXACT (PAPER_1573 route consistent)")
 assert_that(C.wired_count() >= 142, "wired_count >= 142")
+
+_r139 = C.calc('PAPER_139')['value']
+assert_that(abs(_r139['f_grav_n'] - 3.634e-47) < 0.001e-47,
+            "PAPER_139: F_grav = 3.634e-47 N EXACT")
+assert_that(abs(_r139['hubble_factor'] - 1.9877) < 0.0001,
+            "PAPER_139: (1 + H0 t) = 1.9877 EXACT")
+assert_that(28 < _r139['orders_apart'] < 30,
+            "PAPER_139: Ug4 paper value 29 orders from its stated chain - falsified output No. 7 (Q-135a)")
+assert_that(abs(_r139['total_vs_dominant'] - 105) < 1,
+            "PAPER_139: total g_H 105x SMALLER than claimed dominant Ug4i (Q-135b)")
+assert_that(abs(_r139['p_term'] - 1.448e31) < 0.001e31,
+            "PAPER_139: P_term arithmetic 1.448e31 EXACT (units flag open)")
+assert_that(C.wired_count() >= 143, "wired_count >= 143")
 
 # =============================================================================
 # REPORT

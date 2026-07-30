@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 142 (11 ✓, 131 ⚠ OPEN_RULING)
+- **Wired:** 143 (11 ✓, 132 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2113
+- **Not yet touched:** 2112
 
 ---
 
@@ -621,7 +621,7 @@
 | ⬜ | PAPER_1397 | TWO ENVELOPES |
 | ⬜ | PAPER_1398 | SLEEPING BEAUTY |
 | ⬜ | PAPER_1399 | DOOMSDAY ARGUMENT |
-| ⬜ | PAPER_139 | UQFF HydrogenAtom Ug4i InverseBoyle MetallicH CrystallineMUGE |
+| ⚠ | PAPER_139 | UQFF HydrogenAtom Ug4i InverseBoyle MetallicH CrystallineMUGE |
 | ⬜ | PAPER_1400 | THESEUS SHIP |
 | ⬜ | PAPER_1401 | MISSING SATELLITES |
 | ⬜ | PAPER_1402 | TOO BIG TO FAIL |

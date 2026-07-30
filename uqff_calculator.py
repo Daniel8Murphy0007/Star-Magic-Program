@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.141.0"
+VERSION = "0.142.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7341,5 +7341,60 @@ def _paper_138(dataset):
         'formula': 'M(t) = M_0(1+e^-t/tau); R_cav = (3 E t^3 / 2pi rho P_0)^(1/5) [nonstandard]',
         'source': 'PAPER_138',
         'residual_pct': abs(400e3 * (1 + _m.exp(-1)) - 547200) / 547200 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_139')
+def _paper_139(dataset):
+    """Hydrogen MUGE-H: Ug4i Inverse Void (S0, sec 2.1).
+
+    MUGE-H at extreme pressure (>500 GPa metallic H):
+    inverse-Boyle claim V ~ P^(+1/3) past crystallization,
+    Ug4i = 1/Ug4 inverse-void dominance. VERIFIED EXACT:
+    F_grav = G m_p m_e/r^2 = 3.634e-47 N; H0*t+1 = 1.9877;
+    P_term arithmetic 1.448e31; Lamb factor 1.00001; the
+    (Ug4, Ug4i) PAIR internally consistent (1/7.623e-49 =
+    1.312e48).
+    UG4 UNREPRODUCIBLE (Q-135a): the stated derivation
+    "g_grav * 0.001" gives 3.99e-20 (Ug4i = 2.51e19) - the
+    paper's 7.623e-49 / 1.312e48 pair sits 29 ORDERS away and
+    the code comments claim the paper values while the code
+    prints the chain values. FALSIFIED OUTPUT No. 7.
+    TOTAL-VS-DOMINANT (Q-135b): g_H = 1.252e46 is 105x
+    SMALLER than its own claimed dominant term Ug4i = 1.312e48
+    - "dominated by Ug4i" cannot hold.
+    DIMENSIONAL (Q-135c): Ug4i = 1/Ug4 has units s^2/m yet is
+    summed with accelerations (the table itself prints Ug2i
+    in "m/s^-1") - the MUGE inverse-term family is
+    dimensionally invalid as printed.
+    Lamb honesty: UQFF 0.001 pct vs observed 0.014 pct
+    disclosed as below-resolution. Monopole ratio 10 (nuc +
+    electron double count) per PAPER_140.
+    """
+    import math as _m
+    r = 0.529e-10
+    g_grav = 6.674e-11 * 1.673e-27 / r ** 2
+    return {
+        'value': {
+            'domain': '2.1 (hydrogen MUGE-H)',
+            'f_grav_n': 6.674e-11 * 1.673e-27 * 9.109e-31 / r ** 2,  # 3.634e-47 EXACT
+            'hubble_factor': 1 + 2.268e-18 * 4.355e17,       # 1.9877 EXACT
+            'ug4_stated_chain': g_grav * 0.001,              # 3.99e-20
+            'ug4_paper': 7.623e-49,
+            'orders_apart': _m.log10((g_grav * 0.001) / 7.623e-49),  # ~28.7
+            'ug4i_pair_consistent': 1 / 7.623e-49,           # 1.312e48 internal
+            'falsified_output_no7': 'code prints 3.99e-20/2.51e19; comments claim 7.6e-49/1.3e48',
+            'total_vs_dominant': 1.312e48 / 1.252e46,        # 105 - inconsistent
+            'dimensional_defect': 'Ug4i = 1/Ug4 (s^2/m) summed with accelerations',
+            'p_term': 5e11 * 0.1 / (1.381e-23 * 300) * 1.2,  # 1.448e31 EXACT
+            'lamb_factor': 1 + 10 / 1e6,                     # 1.00001
+            'lamb_honesty': 'UQFF 0.001 pct vs obs 0.014 pct - below-resolution disclosed',
+            'inverse_boyle_claim': 'V ~ P^(+1/3) past 500 GPa crystallization',
+            'monopole_ratio': 10,
+        },
+        'formula': 'g_H = Gm_p m_e/r^2 (1+H t)(1+10+10)(...) + sum Ug + Ug4i; Ug4i = 1/Ug4',
+        'source': 'PAPER_139',
+        'residual_pct': abs((1 + 2.268e-18 * 4.355e17) - 1.9877) / 1.9877 * 100,
         'status': 'OPEN_RULING',
     }

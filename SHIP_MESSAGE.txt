@@ -1,30 +1,31 @@
-v0.141.0 BAND 1: PAPER_138 wired - CAVITY 1000x SLIP CAUGHT
+v0.142.0 BAND 1: PAPER_139 wired - MUGE INVERSE-FAMILY RULING REQUESTED
 
-PAPER_138 UQFF NGC 3603 Cluster Burst (OPEN_RULING Q-134):
-  sec 2.1: M(t) = M_0(1+e^(-t/tau_SF)) burst evolution + SCm
-  wind-feedback cavity as a UQFF buoyancy wave (cos(pi t_n)
-  prevents recollapse - distinctive claim).
+PAPER_139 UQFF Hydrogen MUGE-H: Ug4i Inverse Void (OPEN_RULING
+Q-135):
+  sec 2.1: extreme-pressure hydrogen (>500 GPa metallic) with
+  the INVERSE-BOYLE prediction V ~ P^(+1/3) past
+  crystallization - preserved as the distinctive falsifiable
+  claim.
 
-  VERIFIED EXACT: M_0 = 7.956e35 kg; M(tau) = 547,152 M_sun;
-  P_0 = 4e-8 Pa; H_0 = 70 -> 2.269e-18 /s (consistent with
-  the predecessor A_5+SO_5 = 70 route); Lambda c^2/3 =
-  3.3e-36.
+  VERIFIED EXACT: F_grav = G m_p m_e/r^2 = 3.634e-47 N;
+  (1 + H0 t) = 1.9877; P_term arithmetic 1.448e31; Lamb
+  factor 1.00001 (below-resolution honesty); the (Ug4, Ug4i)
+  pair internally consistent.
 
-  CAVITY AGREEMENT MANUFACTURED: the printed "R_cav = 21 ly,
-  11 pct overshoot vs observed 19" rests on a 1000x unit
-  slip - the paper's own chain gives 2.16e20 m = 22,867 LY
-  (7.0 kpc, mislabeled "6.5 pc"); the code prints ~9,099 ly
-  (FALSIFIED OUTPUT No. 6); the standard Weaver formula gives
-  266 ly with these inputs. The formula also divides by P_0
-  (nonstandard).
+  UG4 UNREPRODUCIBLE (falsified output No. 7): the stated
+  chain "g_grav * 0.001" gives 3.99e-20 (Ug4i = 2.51e19); the
+  paper carries 7.623e-49 / 1.312e48 - 29 ORDERS apart. The
+  code prints the chain values while its comments claim the
+  paper values.
 
-  Mdot text 100x slip (6.32e21 vs correct 6.30e19 - the CODE
-  is right this time). P_SCm = 1e28 Pa physicality flag (same
-  bookkeeping question as Q-132a).
+  TOTAL-VS-DOMINANT: g_H = 1.252e46 is 105x SMALLER than its
+  own claimed dominant term Ug4i = 1.312e48.
 
-  B_CRIT THIRD VALUE: 1e11 T joins 4.4e9 (Schwinger) and
-  4.4e13 (catalog) - Q-002 now adjudicates three values.
+  DIMENSIONAL FAMILY: Ug4i = 1/Ug4 carries s^2/m yet is
+  summed with accelerations (the table prints Ug2i in
+  "m/s^-1") - the MUGE inverse-term convention ruling affects
+  every downstream MUGE application paper.
 
-Q-134 queued. Gate 951 assertions 0 failures. Registry 356 rows /
-752 edges / 142 citation ledgers. Wired 142/2,255 (11 clean, 131
-OPEN_RULING). Next: PAPER_139.
+Q-135 queued. Gate 957 assertions 0 failures. Registry 358 rows /
+755 edges / 143 citation ledgers. Wired 143/2,255 (11 clean, 132
+OPEN_RULING). Next: PAPER_140.

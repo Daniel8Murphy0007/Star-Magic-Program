@@ -1754,3 +1754,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 142/2,255 (11 ✓, 131 ⚠). Next: PAPER_139.
 
 ---
+
+## 2026-07-29 — v0.142.0 — BAND 1: PAPER_139
+
+- PAPER_139 wired (⚠ Q-135): hydrogen MUGE-H. Chains EXACT;
+  Ug4 29 orders off its stated chain (falsified No. 7); total
+  < dominant; inverse-family dimensional ruling requested.
+- Campaign: 143/2,255 (11 ✓, 132 ⚠). Next: PAPER_140.
+
+---

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.142.0] — 2026-07-29 — BAND 1: PAPER_139 — MUGE INVERSE-FAMILY RULING
+
+### Added
+- **PAPER_139 dispatch** (Hydrogen MUGE-H, sec 2.1): extreme-
+  pressure hydrogen with the inverse-Boyle V ~ P^(+1/3)
+  crystallization prediction (preserved as falsifiable).
+  EXACT: F_grav = 3.634e-47 N, Hubble factor 1.9877, P_term
+  1.448e31, Lamb 1.00001, (Ug4, Ug4i) pair internal. UG4
+  UNREPRODUCIBLE: the paper value sits 29 ORDERS from its own
+  stated chain (falsified output No. 7 — code prints the
+  chain, comments claim the paper). Total g_H is 105x SMALLER
+  than its claimed dominant term. Ug4i = 1/Ug4 carries s²/m
+  yet is summed with accelerations — the MUGE inverse-family
+  (Ug2i/3i/4i) dimensional convention ruling affects every
+  downstream MUGE paper.
+- OPEN_RULING Q-135.
+- Gate: 957 assertions, 0 failures. Registry: 358 rows / 755 edges / 143 ledgers.
+
+---
+
 ## [0.141.0] — 2026-07-29 — BAND 1: PAPER_138 — CAVITY 1000x SLIP
 
 ### Added

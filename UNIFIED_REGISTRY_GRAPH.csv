@@ -752,3 +752,6 @@ observable,ngc3603_burst_evolution,paper,PAPER_138,burst model
 observable,ngc3603_burst_evolution,paper,PAPER_133,F_U application
 observable,ngc3603_cavity_defects,paper,PAPER_138,cavity defects
 observable,ngc3603_cavity_defects,paper,PAPER_120,B_crit fork growth
+observable,hydrogen_muge_ug4i,paper,PAPER_139,MUGE-H
+primitive,F_TRZ,observable,hydrogen_muge_ug4i,f_TRZ factor
+observable,hydrogen_muge_defects,paper,PAPER_139,Ug4 unreproducible

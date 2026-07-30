@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.141.0"
-description = "UQFF Star-Magic-Program v0.141.0: PAPER_138 wired - NGC 3603 cluster burst (M(t) chains EXACT; cavity 21-ly agreement manufactured by 1000x unit slip - chain 22,867 ly, code 9,099, Weaver 266; falsified output No. 6; B_crit THIRD value 1e11 T grows the Q-002 fork; H_0 = 2.269e-18 consistent with A_5+SO_5 route). Q-134 queued. Wired 142/2255, gate 951/0. Registry 356 rows / 752 edges / 142 ledgers."
+version = "0.142.0"
+description = "UQFF Star-Magic-Program v0.142.0: PAPER_139 wired - Hydrogen MUGE-H (F_grav/Hubble/P_term chains EXACT; Ug4 paper value 29 orders from its stated chain - falsified output No. 7; total g_H 105x smaller than its dominant term; MUGE inverse-family dimensional ruling requested; inverse-Boyle V ~ P^1/3 prediction preserved). Q-135 queued. Wired 143/2255, gate 957/0. Registry 358 rows / 755 edges / 143 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

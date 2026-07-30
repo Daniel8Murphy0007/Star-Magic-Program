@@ -2921,6 +2921,36 @@ RESOLVED section with the ruling recorded.
   manufactured agreement + slips + fork growth pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-135 — PAPER_139 Hydrogen MUGE-H — Ug4 unreproducible + dimensional family
+- **Question:** (a) UG4 UNREPRODUCIBLE: the stated derivation
+  "Ug4 = g_grav * 0.001" gives 3.99e-20 m/s2 (so Ug4i =
+  2.51e19), but the paper carries 7.623e-49 / 1.312e48 - 29
+  ORDERS apart. The (Ug4, Ug4i) pair is internally consistent
+  (1/7.623e-49 = 1.312e48) but its origin is underived, and
+  the code comments claim the paper values while the code
+  PRINTS the chain values (FALSIFIED OUTPUT No. 7). Provide
+  Ug4's actual chain.
+  (b) TOTAL-VS-DOMINANT: g_H = 1.252e46 is 105x SMALLER than
+  its own claimed dominant term Ug4i = 1.312e48 - "dominated
+  by Ug4i" cannot hold as printed. Which is canonical?
+  (c) DIMENSIONAL FAMILY: Ug4i = 1/Ug4 carries s^2/m yet is
+  summed with accelerations; the parameter table itself
+  prints Ug2i in "m/s^-1". The MUGE inverse-term family
+  (Ug2i/Ug3i/Ug4i) needs a dimensional convention ruling -
+  this affects every MUGE application paper downstream.
+  (d) The inverse-Boyle claim (V ~ P^(+1/3) past 500 GPa
+  crystallization) is the distinctive falsifiable content -
+  preserve as prediction regardless of (a-c)?
+- **Notable:** EXACT chains where checkable (F_grav =
+  3.634e-47 N, Hubble factor 1.9877, P_term 1.448e31, Lamb
+  1.00001); the Lamb-shift below-resolution disclosure is
+  honest; monopole ratio 10 double-count consistent with
+  PAPER_140.
+- **Best-candidate wired:** MUGE-H with the pair carried as
+  internally-consistent-but-underived; all three structural
+  defects pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
