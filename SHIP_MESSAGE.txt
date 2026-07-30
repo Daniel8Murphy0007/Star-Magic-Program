@@ -1,33 +1,31 @@
-v0.136.0 BAND 1: PAPER_133 wired - E_REACT v^1 RESOLUTION FOUND
+v0.137.0 BAND 1: PAPER_134 wired - UG2 EXPONENT SLIP RESOLVED
 
-PAPER_133 UQFF F_U Genesis (OPEN_RULING Q-129) - opens sec 2.1:
-  The 3419da89 genesis thread - the May 2025 ORIGINAL F_U
-  derivation. 7 sub-equations, 14 calibrated constants,
-  five-force unification claim.
+PAPER_134 UQFF Heliosphere Ug2: Solar Wind Transmutation
+(OPEN_RULING Q-130):
+  sec 2.1: heliosphere as Ug2 transmutation shell - hydrogen
+  wall = magnetic adhesion (tied to real Voyager Lyman-alpha
+  backscatter), not ram-pressure equilibrium.
 
-  PROVENANCE ANCHOR: k1/k2/k3 = 1.5/1.2/1.8, beta_i = 0.6
-  (genesis value), and the 9-argument Ug_i signature match
-  the predecessor PAPER_2152 Final-Equations provenance
-  findings bit-for-bit. PAPER_133 is the genesis-thread
-  transcription; beta 0.6 -> canonical 0.6029 is documented
-  lineage, not silent drift.
+  UG2 RESOLVED: the chain 1.2 x 1.1e-10 x 8887 x 1.005 x 1e46
+  = 1.18e40 - MANTISSA matches the printed 1.18e53 exactly.
+  PAPER_133's unreproducible Ug2 was a 13-order exponent
+  slip, not a different formula. Q-129 annotated. Convention
+  fork: literal (1+eps*v) = 5001 gives 5.87e43.
 
-  E_REACT RESOLUTION (headline): the dual-form identity
-  closes EXACTLY with v to the FIRST power -
-  rho_SCm * v_SCm / rho_A = 1e15 * 1e8 / 1e-23 = 1e46.
-  The corpus's v^2 is the drift: divide-v^2 gives 1e54
-  (8 over, PAPER_119/121), multiply-v^2 gives 1e8 (38 under,
-  this paper's code discloses "normalized by 10^38").
-  RESOLVES Q-115a's 43-order break. Q-115 annotated.
+  AGE LAW BREAKS AT GYR: dR ~ e^(alpha t) with the daily
+  alpha gives exponent 8.4e8 over the Sun's age (own code
+  would print inf); the "+73 pct for 8 Gyr" actually
+  corresponds to 3 YEARS; T-Tauri exponent printed 1000x low.
+  The thickness-age law needs its own alpha_star.
 
-  VERIFIED EXACT: Omega_g*M_bh/d_g = 23.33; rho_vac ratio
-  10 = 1/F_TRZ (PAPER_140 monopole); mu_s consistent with
-  PAPER_119.
+  SCALE BREAKS: k_liquid chain 2e8 printed 201 (1e6); Earth
+  volume chain 1.34e21 printed as the OBSERVED 1.34e18 (1e3 -
+  prints target, not chain); k_2 calibration formula gives
+  2e-49, not 1.2.
 
-  PINNED: Ug2 solar 1.18e53 unreproducible (needs E_react =
-  2.17e50; code prints 5.4e10) - output No. 3; two-alpha
-  naming collision; omega_c 12.5 yr labeled "11-year".
+  VERIFIED EXACT: M/R_b^2 = 8887; P_ram = 2e-9 Pa; Earth
+  liquid anchor 1.335e18 m3 correct.
 
-Q-129 queued. Gate 920 assertions 0 failures. Registry 346 rows /
-731 edges / 137 citation ledgers. Wired 137/2,255 (11 clean, 126
-OPEN_RULING). Next: PAPER_134.
+Q-130 queued. Gate 926 assertions 0 failures. Registry 348 rows /
+735 edges / 138 citation ledgers. Wired 138/2,255 (11 clean, 127
+OPEN_RULING). Next: PAPER_135.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.136.0"
+VERSION = "0.137.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7063,5 +7063,58 @@ def _paper_133(dataset):
         'formula': 'F_U = sum[k_i dUg_i - beta_i Ug_i Omega M/d E_react] + Um + UA_metric',
         'source': 'PAPER_133',
         'residual_pct': abs(7.3e-16 * 8.15e36 / 2.55e20 - 23.3) / 23.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_134')
+def _paper_134(dataset):
+    """Heliosphere Ug2: Transmutation + Age + Water (S0, sec 2.1).
+
+    Ug2 outer-bubble model: heliosphere as transmutation shell
+    (hydrogen-wall buildup), not ram-pressure equilibrium.
+    UG2 EXPONENT RESOLVED (Q-130a): the chain 1.2*1.1e-10*
+    (M/R_b^2 = 8887)*1.005*1e46 = 1.18e40 - MANTISSA matches
+    the printed 1.18e53 exactly; 13-order exponent slip. This
+    RESOLVES PAPER_133's unreproducible Ug2 (Q-129c annotated).
+    Literal (1+eps*v) = 5001 variant gives 5.87e43 -
+    convention fork (v normalization).
+    AGE LAW BROKEN AT GYR (Q-130b): dR ~ e^(alpha*t) with
+    alpha = 5e-4/day OVERFLOWS at stellar ages (exponent
+    8.4e8 for the Sun - own code would print inf); the
+    printed "+73 pct for 8 Gyr" actually corresponds to 3
+    YEARS at this alpha; T-Tauri exponent 1.83e6 printed as
+    "1826" (1000x). A separate (tiny) stellar-age alpha is
+    required for the law to mean anything.
+    SCALE BREAKS (Q-130c): k_liquid chain = 1 + 1e-3*1e15/
+    5000 = 2e8, printed 201 (1e6 off); Earth volume chain =
+    1.34e21 m3 printed as the observed 1.34e18 (1e3 off -
+    prints the target, not the chain); k_2 calibration
+    formula evaluates to 2e-49, not 1.2.
+    VERIFIED EXACT: M/R_b^2 = 8887; P_ram = 2e-9 Pa;
+    Earth observed liquid 1.335e18 m3 anchor correct.
+    """
+    return {
+        'value': {
+            'domain': '2.1 (Heliosphere Ug2)',
+            'm_over_rb2': 1.989e30 / (1.496e13) ** 2,        # 8887 EXACT
+            'ug2_chain': 1.2 * 1.1e-10 * 8887 * 1.005 * 1e46,  # 1.18e40
+            'ug2_printed': 1.18e53,
+            'exponent_slip_orders': 13,
+            'q129c_resolution': 'PAPER_133 Ug2 unreproducibility = this exponent slip',
+            'ug2_literal_epsv': 1.2 * 1.1e-10 * 8887 * 5001 * 1e46,  # 5.87e43 variant
+            'p_ram_pa': 8e-21 * (5e5) ** 2,                  # 2e-9 EXACT
+            'age_exponent_sun': KAPPA_PER_DAY * 4.6e9 * 365.25,  # 8.4e8 - overflow
+            'plus73pct_true_dt_yr': 1096 / 365.25,           # 3.0 yr not 3.4 Gyr
+            'ttauri_exponent': (1.83e6, 1826),               # chain vs printed (1000x)
+            'k_liquid_chain': 1 + 1e-3 * 1e15 / 5000,        # 2e8 vs printed 201
+            'earth_volume_chain_m3': 201 * 6.67e21 / 1000,   # 1.34e21 vs printed 1.34e18
+            'earth_observed_m3': 1.335e18,                   # anchor correct
+            'k2_calib_formula_gives': 2.05e-49,              # not 1.2
+            'transmutation_claim': 'hydrogen wall = Ug2 magnetic adhesion (Voyager Lyman-alpha)',
+        },
+        'formula': 'Ug2 = k2(Q_A+Q_UA)M/r^2 S(r-R_b)(1+eps v)H E_react; dR ~ e^(alpha t)',
+        'source': 'PAPER_134',
+        'residual_pct': abs(1.989e30 / (1.496e13) ** 2 - 8887) / 8887 * 100,
         'status': 'OPEN_RULING',
     }

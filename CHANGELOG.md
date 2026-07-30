@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.137.0] — 2026-07-29 — BAND 1: PAPER_134 — UG2 EXPONENT SLIP RESOLVED
+
+### Added
+- **PAPER_134 dispatch** (Heliosphere Ug2 transmutation, sec
+  2.1): heliosphere as hydrogen-wall transmutation shell (tied
+  to real Voyager Lyman-alpha). UG2 RESOLVED: chain = 1.18e40 —
+  mantissa exactly matches the printed 1.18e53; 13-order
+  exponent slip explains PAPER_133's unreproducibility (Q-129
+  annotated). AGE LAW BREAKS at Gyr: daily alpha overflows
+  (Sun exponent 8.4e8; "+73% for 8 Gyr" is actually 3 years;
+  T-Tauri 1000x print slip) — needs its own alpha_star. Three
+  more scale breaks (k_liquid 1e6; Earth volume prints target
+  not chain; k_2 calibration gives 2e-49). M/R_b² = 8887 and
+  P_ram = 2e-9 EXACT.
+- OPEN_RULING Q-130.
+- Gate: 926 assertions, 0 failures. Registry: 348 rows / 735 edges / 138 ledgers.
+
+---
+
 ## [0.136.0] — 2026-07-29 — BAND 1: PAPER_133 — E_REACT v¹ RESOLUTION
 
 ### Added

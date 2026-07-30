@@ -731,3 +731,7 @@ primitive,F_TRZ,observable,fu_genesis_construction,rho ratio 10
 observable,ereact_v1_resolution,paper,PAPER_133,v^1 resolution
 observable,ereact_v1_resolution,paper,PAPER_119,resolves 43-order break
 observable,ereact_v1_resolution,paper,PAPER_121,dual-form lineage
+observable,heliosphere_ug2_transmutation,paper,PAPER_134,transmutation shell
+observable,heliosphere_ug2_transmutation,paper,PAPER_133,exponent-slip resolution
+primitive,KAPPA_PER_DAY,observable,heliosphere_scale_breaks,age-law overflow
+observable,heliosphere_scale_breaks,paper,PAPER_134,scale breaks

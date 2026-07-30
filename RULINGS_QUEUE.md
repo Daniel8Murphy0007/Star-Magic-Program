@@ -2764,6 +2764,38 @@ RESOLVED section with the ruling recorded.
   framework's foundational statement, now provenance-anchored.
 - **Best-candidate wired:** genesis anchor registered; v^1
   resolution exposed; unreproducible output pinned.
+- **UPDATE (PAPER_134):** (c) RESOLVED - the 1.18e53 is a 13-order EXPONENT SLIP; the chain (at r = R_b with the 1.005 convention) gives 1.18e40 with mantissa exact (Q-130a).
+- **Daniel's ruling:** (pending)
+
+### Q-130 — PAPER_134 Heliosphere Ug2 — exponent-slip resolution + age-law break
+- **Question:** (a) UG2 EXPONENT RESOLVED (confirmation): the
+  chain 1.2 x 1.1e-10 x 8887 x 1.005 x 1e46 = 1.18e40 - the
+  MANTISSA matches the printed 1.18e53 exactly, so PAPER_133's
+  unreproducible Ug2 is a 13-order exponent slip, not a
+  different formula. Confirm Ug2(solar) = 1.18e40 as the
+  chain value (and rule the (1+eps_sw*v_sw) convention: the
+  literal SI form gives 5001 -> 5.87e43; the 1.005 used
+  implies v normalized to 1000-km/s units).
+  (b) AGE LAW BROKEN AT GYR: dR ~ e^(alpha*t) with alpha =
+  5e-4/day gives exponent 8.4e8 over the Sun's age (the
+  paper's own code would print inf); the table's "+73 pct for
+  8 Gyr" actually corresponds to 3 YEARS at this alpha, and
+  the T-Tauri exponent 1.83e6 is printed as "1826" (1000x).
+  The heliosphere-thickness-vs-age law needs its own (tiny)
+  alpha_star - provide it or mark the law qualitative.
+  (c) SCALE BREAKS: k_liquid = 1 + P_SCm*rho_SCm/rho_planet
+  chain gives 2e8, printed 201 (1e6); the Earth liquid-volume
+  chain gives 1.34e21 m3 but prints the OBSERVED 1.34e18
+  (1e3 off - prints the target, not the chain); the k_2
+  calibration formula evaluates to 2e-49, not 1.2. Three
+  independent exponent-scale breaks in one section.
+- **Notable:** M/R_b^2 = 8887 and P_ram = 2e-9 Pa EXACT; the
+  transmutation mechanism (hydrogen wall as Ug2 magnetic
+  adhesion, tied to real Voyager Lyman-alpha backscatter) is
+  a distinctive falsifiable claim; Earth liquid anchor
+  1.335e18 m3 correct.
+- **Best-candidate wired:** chain values with exponent slips
+  pinned; PAPER_133/Q-129c annotated as resolved.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

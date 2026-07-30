@@ -1709,3 +1709,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 137/2,255 (11 ✓, 126 ⚠). Next: PAPER_134.
 
 ---
+
+## 2026-07-29 — v0.137.0 — BAND 1: PAPER_134
+
+- PAPER_134 wired (⚠ Q-130): Heliosphere Ug2. Exponent slip
+  resolved (1.18e40 chain); age law breaks at Gyr; scale
+  breaks pinned; Q-129 annotated.
+- Campaign: 138/2,255 (11 ✓, 127 ⚠). Next: PAPER_135.
+
+---

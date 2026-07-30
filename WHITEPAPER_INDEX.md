@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 137 (11 ✓, 126 ⚠ OPEN_RULING)
+- **Wired:** 138 (11 ✓, 127 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2118
+- **Not yet touched:** 2117
 
 ---
 
@@ -566,7 +566,7 @@
 | ⬜ | PAPER_1347 | HTSC |
 | ⬜ | PAPER_1348 | HUBBARD |
 | ⬜ | PAPER_1349 | FQH STATES |
-| ⬜ | PAPER_134 | UQFF Heliosphere Ug2 SolarWind Transmutation HelioAge PlanetaryWater |
+| ⚠ | PAPER_134 | UQFF Heliosphere Ug2 SolarWind Transmutation HelioAge PlanetaryWater |
 | ⬜ | PAPER_1350 | SPIN LIQUID |
 | ⬜ | PAPER_1351 | TOP INSULATORS |
 | ⬜ | PAPER_1352 | QSH |

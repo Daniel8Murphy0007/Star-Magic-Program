@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.136.0", "uqff_calculator.VERSION = 0.136.0")
+assert_that(C.VERSION == "0.137.0", "uqff_calculator.VERSION = 0.137.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2017,6 +2017,19 @@ assert_that(abs(_r133['ug2_implied_ereact'] - 2.17e50) < 0.01e50,
 assert_that(_r133['genesis_beta'] == 0.6,
             "PAPER_133: genesis beta_i = 0.6 - PAPER_2152 provenance lineage documented")
 assert_that(C.wired_count() >= 137, "wired_count >= 137")
+
+_r134 = C.calc('PAPER_134')['value']
+assert_that(abs(_r134['m_over_rb2'] - 8887) < 1,
+            "PAPER_134: M/R_b^2 = 8887 EXACT")
+assert_that(abs(_r134['ug2_chain'] - 1.18e40) < 0.01e40,
+            "PAPER_134: Ug2 chain = 1.18e40 - mantissa exact, 13-order exponent slip resolves PAPER_133 (Q-130a)")
+assert_that(abs(_r134['p_ram_pa'] - 2e-9) < 1e-12,
+            "PAPER_134: P_ram = 2e-9 Pa EXACT")
+assert_that(_r134['age_exponent_sun'] > 1e8,
+            "PAPER_134: age law overflows at Gyr with daily alpha - +73 pct is 3 yr not 3.4 Gyr (Q-130b)")
+assert_that(_r134['k_liquid_chain'] > 1e8,
+            "PAPER_134: k_liquid chain 2e8 vs printed 201 - 1e6 scale break (Q-130c)")
+assert_that(C.wired_count() >= 138, "wired_count >= 138")
 
 # =============================================================================
 # REPORT

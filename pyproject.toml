@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.136.0"
-description = "UQFF Star-Magic-Program v0.136.0: PAPER_133 wired - F_U Genesis opens sec 2.1 (provenance anchor matching PAPER_2152 Final-Equations bit-for-bit; E_REACT RESOLUTION: v^1 form rho*v/rho_A = 1e46 EXACT resolves Q-115a 43-order break - v^2 is the drift; Ug2 solar 1.18e53 unreproducible). Q-129 queued. Wired 137/2255, gate 920/0. Registry 346 rows / 731 edges / 137 ledgers."
+version = "0.137.0"
+description = "UQFF Star-Magic-Program v0.137.0: PAPER_134 wired - Heliosphere Ug2 transmutation (Ug2 chain 1.18e40, mantissa exact - 13-order exponent slip RESOLVES PAPER_133; age law overflows at Gyr with daily alpha - +73 pct is 3 yr; k_liquid/Earth-volume/k_2 scale breaks pinned; P_ram 2e-9 EXACT). Q-130 queued. Wired 138/2255, gate 926/0. Registry 348 rows / 735 edges / 138 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
