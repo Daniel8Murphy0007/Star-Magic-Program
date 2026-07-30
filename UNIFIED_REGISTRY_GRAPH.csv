@@ -722,3 +722,7 @@ primitive,BETA_I,observable,superconductive_dual_gw_racs,Y_e derivation
 primitive,KAPPA_PER_DAY,observable,superconductive_dual_gw_racs,aging R + exhaustion
 observable,superconductive_dual_forks,paper,PAPER_111,RACS reclassification
 observable,superconductive_dual_forks,paper,PAPER_127,UA fork growth
+observable,quadratic_hoyle_bec_nb3,paper,PAPER_132,Hoyle BEC fit
+primitive,SSQ,observable,quadratic_hoyle_bec_nb3,geometric sum + T_c + LENR
+observable,quadratic_hoyle_bec_nb3,paper,PAPER_107,EP-12 lineage
+observable,quadratic_hoyle_defects,paper,PAPER_132,asserted chi2

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.134.0"
-description = "UQFF Star-Magic-Program v0.134.0: PAPER_131 wired - Superconductive dual GW170817+RACS (Y_e = 0.0930 first-principles chain EXACT; RACS RECLASSIFIED quasar-vs-young-NS 1e5 scale fork; R = 1.5 aging dt back-solved, light travel gives 1.06; [UA] FIFTH value 0.168 ~ 1/6; ejecta 40 pct dual derivation). Q-127 queued. Wired 135/2255, gate 908/0. Registry 342 rows / 722 edges / 135 ledgers."
+version = "0.135.0"
+description = "UQFF Star-Magic-Program v0.135.0: PAPER_132 wired - Hoyle BEC N_B=3 (geometric SSq sum 7.676 MeV at 0.28 pct; T_c = 1/SSq enhancement; LENR e^SSq = 1.768; clean code No. 2; E_0 back-solved; chi2 asserted without table). CLOSES the d91b1f6c 12-EP block (122-132). Q-128 queued. Wired 136/2255, gate 914/0. Registry 344 rows / 726 edges / 136 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -2696,6 +2696,39 @@ RESOLVED section with the ruling recorded.
   disclosed; all four forks pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-128 — PAPER_132 Hoyle BEC — E_0 back-solved + asserted chi2
+- **Question:** (a) E_0 PROVENANCE: the 0.28 pct Hoyle fit
+  rests on E_0 = 3.69 MeV, which is back-solved
+  (7.654/2.0801 = 3.680) and labeled "alpha threshold
+  reference" - but the 3-alpha threshold is 7.274 MeV and the
+  Hoyle state sits 0.380 above it. The paper HONESTLY
+  abandons its first calibration mid-text (E_0 = 3 + dE =
+  0.414 -> 6.654, dropped). Provide E_0's independent
+  derivation or mark the fit calibrated (1 parameter -> 1
+  observable).
+  (b) CHI2 ASSERTED: chi2/dof = 0.051 over "8 observables"
+  with no O_k/P_k/sigma_k table anywhere; also the
+  "over-constrained = fewer free parameters" interpretation
+  is backwards (chi2 << 1 signals overfitting or inflated
+  errors). Provide the 8-observable table.
+  (c) BROKEN FORMS: the Gamow exponent "[SSq]/hbar" is
+  dimensionally invalid (the code just uses e^SSq - fine);
+  the coherence-length formula hbar/sqrt(2m*rho) is not a
+  length. LENR "consistent with Pd/D" is generous: e^SSq =
+  1.77 (77 pct) vs orders-of-magnitude observed claims.
+  (d) N_B = 3 minimum-boson claim is cross-linked to
+  PAPER_128's N = 3 cascade hops - a numerological adjacency
+  (boson count vs hop count); rule whether the "universal
+  N = 3 Quadratic threshold" is one identity or two.
+- **Notable:** chains all EXACT (geometric sum 2.0801, 7.676
+  MeV at 0.28 pct, T_c 14.04, e^SSq 1.768); CLEAN code block
+  No. 2; the honest mid-text abandonment of the first
+  calibration is good Rule 7 practice; closes the d91b1f6c
+  12-EP block (PAPER_122-132 all wired).
+- **Best-candidate wired:** fit with back-solve disclosed;
+  broken forms and chi2 assertion pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

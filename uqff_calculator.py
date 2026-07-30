@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.134.0"
+VERSION = "0.135.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6951,5 +6951,59 @@ def _paper_131(dataset):
         'formula': 'Y_e = b*[UA]/(1+b*[UA]); R = e^(kappa dt); f_ej forks',
         'source': 'PAPER_131',
         'residual_pct': abs(0.61 * 0.168 / (1 + 0.61 * 0.168) - 0.093) / 0.093 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_132')
+def _paper_132(dataset):
+    """Quadratic Mode: Tohsaki Hoyle BEC N_B=3 (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-12 (PAPER_107) - closes the
+    12-EP d91b1f6c block (122-132). VERIFIED EXACT: geometric
+    sum 1+SSq+SSq^2+SSq^3 = 2.0801; E_Hoyle = E_0 * 2.0801 =
+    7.676 MeV vs measured 7.654 (0.28 pct); T_c enhancement
+    1/SSq = 1.754 (8 -> 14.04 MeV); LENR factor e^SSq = 1.768;
+    CLEAN CODE BLOCK No. 2 (outputs reproduce).
+    E_0 CALIBRATED (Q-128a): E_0 = 3.69 MeV is back-solved
+    (7.654/2.0801 = 3.680); labeled "alpha threshold
+    reference" but the 3-alpha threshold is 7.274 and Hoyle
+    sits 0.380 above it - E_0 has no independent provenance.
+    The paper HONESTLY abandons its first calibration mid-text
+    (E_0 = 3 + dE = 0.414 -> 6.654, dropped).
+    CHI2 ASSERTED (Q-128b): chi2/dof = 0.051 over "8
+    observables" with no O_k/P_k/sigma_k table; and the
+    "over-constrained = fewer parameters" reading is backwards
+    (chi2 << 1 means overfitting/inflated errors).
+    BROKEN FORMS (Q-128c): Gamow exponent "[SSq]/hbar"
+    dimensionally invalid (code just uses e^SSq); coherence
+    length hbar/sqrt(2m*rho) not a length. LENR "consistent
+    with Pd/D" is generous - observed LENR claims are orders
+    of magnitude, e^SSq = 1.77 is 77 pct.
+    N_B = 3 minimum-boson claim cross-linked to PAPER_128's
+    N=3 cascade (numerological adjacency, noted).
+    """
+    return {
+        'value': {
+            'domain': '1.17 (Quadratic BEC, EP-12 refinement; closes d91b1f6c block)',
+            'geometric_sum': sum(SSQ ** k for k in range(4)),   # 2.0801 EXACT
+            'e_hoyle_uqff': 3.69 * sum(SSQ ** k for k in range(4)),  # 7.676 EXACT
+            'e_hoyle_measured': 7.654,
+            'err_pct': abs(3.69 * sum(SSQ ** k for k in range(4)) - 7.654) / 7.654 * 100,  # 0.28
+            'e0_backsolved': 7.654 / sum(SSQ ** k for k in range(4)),  # 3.680 - calibrated
+            'e0_provenance': 'none independent; first calibration honestly abandoned mid-text',
+            't_c_enhancement': 1 / SSQ,                         # 1.754
+            't_c_uqff_mev': 8 / SSQ,                            # 14.04
+            'lenr_factor': 2.718281828459045 ** SSQ,            # 1.768
+            'code_status': 'clean block No. 2 - outputs reproduce',
+            'chi2_asserted': 0.051,
+            'chi2_note': 'no observables table; over-constrained reading backwards',
+            'broken_forms': 'Gamow [SSq]/hbar + coherence-length formula dimensionally invalid',
+            'hoyle_above_threshold_mev': 7.654 - 7.274,         # 0.380
+            'nb3_crosslink': 'N_B = 3 minimum vs PAPER_128 N=3 cascade (adjacency noted)',
+        },
+        'formula': 'E = E_0*(1+SSq+SSq^2+SSq^3); T_c *= 1/SSq; Gamma *= e^SSq',
+        'source': 'PAPER_132',
+        'residual_pct': abs(3.69 * sum(SSQ ** k for k in range(4)) - 7.654) / 7.654 * 100,
         'status': 'OPEN_RULING',
     }

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.135.0] — 2026-07-29 — BAND 1: PAPER_132 — d91b1f6c BLOCK COMPLETE
+
+### Added
+- **PAPER_132 dispatch** (Quadratic Hoyle BEC N_B=3,
+  d91b1f6c): E_Hoyle = E_0·(1+SSq+SSq²+SSq³) = 7.676 MeV at
+  0.28% (geometric sum 2.0801 EXACT); T_c enhancement 1/SSq =
+  1.754; LENR e^SSq = 1.768; CLEAN code block No. 2. E_0 =
+  3.69 back-solved (first calibration honestly abandoned
+  mid-text); chi2/dof = 0.051 asserted without observables
+  table (+ backwards over-constrained reading); Gamow and
+  coherence-length forms dimensionally invalid as printed.
+  N_B=3-vs-N=3-cascade adjacency noted. CLOSES the d91b1f6c
+  12-EP refinement block (PAPER_122-132, 11 papers): 3
+  self-rectifications (Nos. 9-11), 2 falsified code outputs,
+  2 clean code blocks, multiple fork resolutions.
+- OPEN_RULING Q-128.
+- Gate: 914 assertions, 0 failures. Registry: 344 rows / 726 edges / 136 ledgers.
+
+---
+
 ## [0.134.0] — 2026-07-29 — BAND 1: PAPER_131 — RACS RECLASSIFICATION FORK
 
 ### Added

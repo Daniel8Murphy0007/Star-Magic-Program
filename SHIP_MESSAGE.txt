@@ -1,29 +1,30 @@
-v0.134.0 BAND 1: PAPER_131 wired - RACS RECLASSIFICATION FORK
+v0.135.0 BAND 1: PAPER_132 wired - d91b1f6c 12-EP BLOCK COMPLETE
 
-PAPER_131 UQFF Superconductive Dual: GW170817 + RACS J0320-35
-(OPEN_RULING Q-127):
-  d91b1f6c combined refinement of EP-11 + EP-01.
+PAPER_132 UQFF Quadratic Mode: Tohsaki Hoyle BEC N_B=3
+(OPEN_RULING Q-128):
+  d91b1f6c refinement of EP-12 - closes the 122-132 block.
 
-  VERIFIED EXACT: Y_e = beta*[UA]/(1+beta*[UA]) = 0.0930 at
-  [UA] = 0.168 - the corpus's FIRST first-principles Y_e
-  derivation (7 pct from the observed ~0.1). Old-NS
-  exhaustion exponent 7.93e5 EXACT -> clean falsifiable
-  young-NS inference (RACS < 5.5 yr). Reactor sufficiency
-  1e46 >> 7.2e43 robust. ln(1.5)/kappa = 810.9 d EXACT.
+  VERIFIED EXACT: geometric sum 1+SSq+SSq^2+SSq^3 = 2.0801;
+  E_Hoyle = 7.676 MeV vs measured 7.654 (0.28 pct); T_c
+  enhancement 1/SSq = 1.754 (8 -> 14.04 MeV); LENR e^SSq =
+  1.768. CLEAN code block No. 2 (outputs reproduce).
 
-  RACS RECLASSIFIED: PAPER_111 = quasar-scale jet (30 kpc,
-  Gyr dissipation); here = young NEUTRON STAR (0.1 pc,
-  intermittent SCm ignition). Scales incompatible by 1e5 -
-  ruling picks (affects Q-107 wholesale).
+  E_0 BACK-SOLVED: the 0.28 pct fit rests on E_0 = 3.69 MeV
+  = 7.654/2.0801 - no independent provenance ("alpha
+  threshold" label doesn't hold: threshold is 7.274). The
+  paper HONESTLY abandons its first calibration mid-text.
+  chi2/dof = 0.051 asserted without the 8-observable table;
+  Gamow + coherence-length forms dimensionally invalid as
+  printed; N_B=3 vs N=3-cascade adjacency noted.
 
-  EP-01 MECHANISM VARIANT No. 2: R = 1.5 from E_react aging
-  e^(kappa*dt) - but dt = 811 days is BACK-SOLVED; the
-  light-travel justification gives 116 days -> R = 1.06.
+  D91B1F6C BLOCK SUMMARY (PAPER_122-132, 11 papers):
+  3 self-rectifications canonized (proton n=10 / Pb-208
+  isotope / vacuum anchor), 2 falsified code outputs caught,
+  2 clean code blocks, kappa first real derivation, Y_e first
+  first-principles claim, R = 130.0 exact at corrected t,
+  RACS reclassification fork opened, [UA] fork grown to 5
+  values.
 
-  [UA] FIFTH VALUE: 0.168 (0.8 pct from 1/6 - primitive
-  adjacency). Single-[UA] ruling now closes SIX queue items.
-  Ejecta 40 pct dual derivation (ad hoc x4 vs 1-beta_i).
-
-Q-127 queued. Gate 908 assertions 0 failures. Registry 342 rows /
-722 edges / 135 citation ledgers. Wired 135/2,255 (11 clean, 124
-OPEN_RULING). Next: PAPER_132.
+Q-128 queued. Gate 914 assertions 0 failures. Registry 344 rows /
+726 edges / 136 citation ledgers. Wired 136/2,255 (11 clean, 125
+OPEN_RULING). Next: PAPER_133.

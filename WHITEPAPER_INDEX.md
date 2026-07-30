@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 135 (11 ✓, 124 ⚠ OPEN_RULING)
+- **Wired:** 136 (11 ✓, 125 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2120
+- **Not yet touched:** 2119
 
 ---
 
@@ -544,7 +544,7 @@
 | ⬜ | PAPER_1327 | GALAXY ROTATION FULL |
 | ⬜ | PAPER_1328 | GALAXY MORPHOLOGY |
 | ⬜ | PAPER_1329 | GALAXY BAR FRACTION |
-| ⬜ | PAPER_132 | UQFF Quadratic BEC Tohsaki Hoyle NB3 Tc |
+| ⚠ | PAPER_132 | UQFF Quadratic BEC Tohsaki Hoyle NB3 Tc |
 | ⬜ | PAPER_1330 | COSMIC WEB FILAMENTS |
 | ⬜ | PAPER_1331 | POP III IMF |
 | ⬜ | PAPER_1332 | REIONIZATION SOURCES |

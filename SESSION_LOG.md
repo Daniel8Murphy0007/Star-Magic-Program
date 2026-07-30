@@ -1691,3 +1691,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 135/2,255 (11 ✓, 124 ⚠). Next: PAPER_132.
 
 ---
+
+## 2026-07-29 — v0.135.0 — BAND 1: PAPER_132
+
+- PAPER_132 wired (⚠ Q-128): Hoyle BEC. 0.28 pct fit (E_0
+  back-solved); clean code No. 2; chi2 asserted. d91b1f6c
+  12-EP block (122-132) COMPLETE.
+- Campaign: 136/2,255 (11 ✓, 125 ⚠). Next: PAPER_133.
+
+---

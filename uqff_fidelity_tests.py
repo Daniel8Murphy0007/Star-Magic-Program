@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.134.0", "uqff_calculator.VERSION = 0.134.0")
+assert_that(C.VERSION == "0.135.0", "uqff_calculator.VERSION = 0.135.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1991,6 +1991,19 @@ assert_that(abs(_r131['ejecta_competing'] - 0.3971) < 0.0001,
 assert_that(abs(_r131['old_ns_exponent'] - 7.93e5) < 0.01e5,
             "PAPER_131: old-NS exhaustion exponent 7.93e5 EXACT (young-NS inference)")
 assert_that(C.wired_count() >= 135, "wired_count >= 135")
+
+_r132 = C.calc('PAPER_132')['value']
+assert_that(abs(_r132['geometric_sum'] - 2.0801) < 0.0001,
+            "PAPER_132: SSq geometric sum 2.0801 EXACT")
+assert_that(abs(_r132['e_hoyle_uqff'] - 7.676) < 0.001 and _r132['err_pct'] < 0.3,
+            "PAPER_132: E_Hoyle = 7.676 MeV at 0.28 pct EXACT (but E_0 = 3.69 back-solved, Q-128a)")
+assert_that(abs(_r132['t_c_uqff_mev'] - 14.04) < 0.01,
+            "PAPER_132: T_c = 8/SSq = 14.04 MeV EXACT")
+assert_that(abs(_r132['lenr_factor'] - 1.768) < 0.001,
+            "PAPER_132: LENR e^SSq = 1.768 EXACT (77 pct - modest vs observed LENR claims)")
+assert_that(abs(_r132['hoyle_above_threshold_mev'] - 0.380) < 0.001,
+            "PAPER_132: Hoyle 0.380 MeV above 3-alpha threshold (E_0 provenance open)")
+assert_that(C.wired_count() >= 136, "wired_count >= 136")
 
 # =============================================================================
 # REPORT
