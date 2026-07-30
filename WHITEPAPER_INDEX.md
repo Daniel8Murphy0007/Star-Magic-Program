@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 128 (11 ✓, 117 ⚠ OPEN_RULING)
+- **Wired:** 129 (11 ✓, 118 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2127
+- **Not yet touched:** 2126
 
 ---
 
@@ -467,7 +467,7 @@
 | ⬜ | PAPER_1257 | STERILE NEUTRINO EXISTENCE |
 | ⬜ | PAPER_1258 | GRB LONG SHORT BIMODALITY |
 | ⬜ | PAPER_1259 | FRB ORIGIN MECHANISM |
-| ⬜ | PAPER_125 | UQFF Superconductive Fermi4LAC Ereact Kappa |
+| ⚠ | PAPER_125 | UQFF Superconductive Fermi4LAC Ereact Kappa |
 | ⬜ | PAPER_1260 | SGR A STAR FLARES |
 | ⬜ | PAPER_1261 | CORONAL HEATING PROBLEM |
 | ⬜ | PAPER_1262 | STELLAR IMF SALPETER |

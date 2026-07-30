@@ -1,31 +1,30 @@
-v0.127.0 BAND 1: PAPER_124 wired - SELF-RECTIFICATION No. 10
+v0.128.0 BAND 1: PAPER_125 wired - KAPPA FIRST REAL DERIVATION
 
-PAPER_124 UQFF Buoyancy Mode Nuclear: Pb-206 S_n (OPEN_RULING
-Q-120):
-  d91b1f6c refinement of EP-04. S_n = 2*SSq*E_8 = 1.14e-12 J =
-  7.116 MeV EXACT, bracketing Pb-207 (6.74, 5.59 pct) and
-  Pb-208 (7.37, 3.43 pct).
+PAPER_125 UQFF Superconductive Mode: Fermi 4LAC E_react kappa
+(OPEN_RULING Q-121):
+  d91b1f6c refinement of EP-05.
 
-  SELF-RECTIFICATION No. 10: this paper's table carries the
-  TRUE ENSDF separation energies - Pb-206 = 8.09 MeV, Pb-207 =
-  6.74, Pb-208 = 7.37 - revealing PAPER_117's "Pb-206 S_n =
-  7.367 MeV" was actually PB-208's value. The SSq nuclear
-  check survives ONLY as a doubly-magic Pb-208 statement
-  (ratio 1.181 vs 1.14, 3.6 pct); true Pb-206 fails at 13.7
-  pct. Improved reading: factor 2 = TWO closed shells (Z=82 +
-  N=126), one SSq quantum each - restricting scope
-  strengthens the physics. Q-113 annotated; SSq 8th-role
-  candidate reassigned Pb-206 -> Pb-208.
+  FIRST REAL DERIVATION: kappa = alpha/t_mean = 0.35/700 =
+  5e-4/day EXACT - from observed blazar variability index and
+  7-year baseline (power-law -> exponential conversion). Not
+  just a calibration anymore.
 
-  DN FORMULA BROKEN: sec 3.3 prints 1e17/1e16 = "1.05" - the
-  ratio is 10, and the formula as written gives dn = 2.0, not
-  0.21. The 0.21 target is the Q-119a log10(1.602) artifact
-  regardless - double defect.
+  Q-109b PARTIALLY ANSWERED: per-source kappas now named -
+  3C273 4.9e-4, PKS 1510-089 5.1e-4, Mrk 421 4.8e-4, Mrk 501
+  5.0e-4 (mean 4.95e-4). CTA 102 (the factor-10 case) is
+  ABSENT from this refinement's sample - implicit flare-vs-
+  population resolution. Q-109 annotated.
 
-  B/A section muddled (E_8^atomic undefined; 16 pct honestly
-  disclosed). [SCm] density fork now THREE values in three
-  papers (1e15 / 1e16 / 1e17 kg/m3).
+  VERIFIED EXACT: tau = 2000 d; t_1/2 = 1386 d = 3.80 yr
+  (matches 1-5 yr blazar variability); decay table; L =
+  E0*kappa = 5.79e37 W.
 
-Q-120 queued. Gate 865 assertions 0 failures. Registry 328 rows /
-692 edges / 128 citation ledgers. Wired 128/2,255 (11 clean, 117
-OPEN_RULING). Next: PAPER_125.
+  PINNED: circular simulation code (fits its own injected
+  kappa - Rule 7); eta_gamma direction backwards (gamma
+  fraction exceeding total); Arrhenius form requires unstated
+  E_gap = 58.4 kT = 5.03 keV at T = 1e6 K; stray M_UQFF =
+  14.3 TeV.
+
+Q-121 queued. Gate 871 assertions 0 failures. Registry 330 rows /
+696 edges / 129 citation ledgers. Wired 129/2,255 (11 clean, 118
+OPEN_RULING). Next: PAPER_126.

@@ -692,3 +692,7 @@ primitive,SSQ,observable,buoyancy_nuclear_sn_pb208,2*SSq quantum per shell
 observable,buoyancy_nuclear_sn_pb208,paper,PAPER_117,isotope correction
 observable,buoyancy_nuclear_defects,paper,PAPER_124,dn formula break
 observable,buoyancy_nuclear_defects,paper,PAPER_123,artifact linkage
+observable,superconductive_kappa_calib,paper,PAPER_125,kappa calibration
+primitive,KAPPA_PER_DAY,observable,superconductive_kappa_calib,derivation + 40-blazar
+observable,superconductive_kappa_calib,paper,PAPER_113,Q-109b partial answer
+observable,superconductive_kappa_defects,paper,PAPER_125,circular code

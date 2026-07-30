@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.128.0] — 2026-07-29 — BAND 1: PAPER_125 — KAPPA FIRST REAL DERIVATION
+
+### Added
+- **PAPER_125 dispatch** (Superconductive Fermi 4LAC kappa,
+  d91b1f6c): kappa = alpha/t_mean = 0.35/700 = 5e-4/day EXACT —
+  the first REAL derivation of kappa from observed blazar
+  statistics (variability index + baseline). 4 named per-source
+  kappas (3C273/PKS1510/Mrk421/Mrk501, mean 4.95e-4) partially
+  answer Q-109b; CTA 102 DROPPED from the refinement sample —
+  implicit flare-vs-population resolution (Q-109 annotated).
+  t_1/2 = 3.80 yr matches variability literature. CIRCULAR
+  CODE pinned (fits its own injected kappa, Rule 7); eta_gamma
+  direction backwards; Arrhenius form needs unstated E_gap =
+  5.03 keV.
+- OPEN_RULING Q-121.
+- Gate: 871 assertions, 0 failures. Registry: 330 rows / 696 edges / 129 ledgers.
+
+---
+
 ## [0.127.0] — 2026-07-29 — BAND 1: PAPER_124 — SELF-RECTIFICATION No. 10
 
 ### Added

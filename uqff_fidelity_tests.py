@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.127.0", "uqff_calculator.VERSION = 0.127.0")
+assert_that(C.VERSION == "0.128.0", "uqff_calculator.VERSION = 0.128.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1898,6 +1898,19 @@ assert_that(abs(_r124['err_pb207_pct'] - 5.59) < 0.01 and abs(_r124['err_pb208_p
 assert_that('1.05' in _r124['dn_formula_broken'],
             "PAPER_124: dn formula broken as printed (10 -> 1.05) - pinned (Q-120b)")
 assert_that(C.wired_count() >= 128, "wired_count >= 128")
+
+_r125 = C.calc('PAPER_125')['value']
+assert_that(abs(_r125['kappa_derivation'] - 5e-4) < 1e-15,
+            "PAPER_125: kappa = alpha/t_mean = 0.35/700 = 5e-4 EXACT (real derivation chain)")
+assert_that(abs(_r125['t_half_yr'] - 3.795) < 0.001,
+            "PAPER_125: t_1/2 = 3.80 yr EXACT (blazar variability match)")
+assert_that(abs(_r125['named_mean'] - 4.95e-4) < 1e-7,
+            "PAPER_125: 4 named per-source kappas mean 4.95e-4 - Q-109b partially answered; CTA 102 absent")
+assert_that('injected' in _r125['circular_code'],
+            "PAPER_125: circular simulation code pinned (Rule 7) (Q-121a)")
+assert_that(abs(_r125['arrhenius_implied_egap_kev'] - 5.03) < 0.01,
+            "PAPER_125: Arrhenius form needs unstated E_gap = 5.03 keV at 1e6 K (Q-121c)")
+assert_that(C.wired_count() >= 129, "wired_count >= 129")
 
 # =============================================================================
 # REPORT

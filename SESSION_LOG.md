@@ -1623,3 +1623,14 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 128/2,255 (11 ✓, 117 ⚠). Next: PAPER_125.
 
 ---
+
+## 2026-07-29 — v0.128.0 — BAND 1: PAPER_125
+
+- PAPER_125 wired (⚠ Q-121): Superconductive 4LAC kappa.
+  First real derivation (0.35/700 EXACT); named per-source
+  kappas answer Q-109b partially; CTA 102 dropped (implicit
+  resolution); circular code + eta direction + Arrhenius
+  assertion pinned.
+- Campaign: 129/2,255 (11 ✓, 118 ⚠). Next: PAPER_126.
+
+---

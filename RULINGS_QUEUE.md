@@ -2126,6 +2126,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** canonical-kappa chains EXACT;
   CTA 102 corrected chain pinned; reconciliation inversion
   disclosed.
+- **UPDATE (PAPER_125):** refinement provides 4 named per-source kappas (3C273 4.9e-4, PKS1510 5.1e-4, Mrk421 4.8e-4, Mrk501 5.0e-4) and DROPS CTA 102 from the sample - implicit flare-vs-population resolution; (b) partially answered.
 - **Daniel's ruling:** (pending)
 
 ### Q-110 — PAPER_114 EP-07 — d_sw decomposition + unstated alpha_CR
@@ -2467,6 +2468,35 @@ RESOLVED section with the ruling recorded.
   predecessor Z=82 identity (Q-113b).
 - **Best-candidate wired:** Pb-208 reassignment as canonical;
   true-Pb-206 failure disclosed; broken formula pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-121 — PAPER_125 Superconductive kappa — circular code + direction defect
+- **Question:** (a) CIRCULAR CODE (Rule 7): the sec 3.2
+  "statistical fit across 40 blazars" GENERATES synthetic
+  light curves with kappa = 5e-4 injected, then fits them
+  back, recovering 0.000500 +/- 0.000025. It validates
+  nothing about the sky. It is labeled "simulated" but
+  presented as the calibration methodology. Provide the real
+  40-source fit table (extends Q-109b), or mark the
+  calibration as resting on the 4 named sources + the
+  alpha/t_mean derivation.
+  (b) ETA_GAMMA DIRECTION: sec 2.3 computes L_gamma =
+  L_total x 1e3 - a gamma FRACTION cannot exceed the total;
+  the inversion runs backwards. Also 5.79e40 is printed as
+  "~1e40" (5.8x rounding). Restate the luminosity chain.
+  (c) ARRHENIUS ASSERTED: kappa = (kT/hbar)exp(-E_gap/kT)
+  requires implied E_gap = 58.4 kT = 5.03 keV at T_SCm = 1e6
+  K - E_gap is never stated. Derive or mark asserted. Stray
+  M_UQFF = 14.3 TeV comment constant unexplained.
+- **Notable:** kappa = alpha/t_mean = 0.35/700 = 5e-4 EXACT
+  is the first REAL derivation of kappa from observed blazar
+  statistics (power-law index + baseline); 4 named per-source
+  kappas (mean 4.95e-4) partially answer Q-109b; CTA 102 is
+  absent from this refinement's sample - implicitly resolving
+  Q-109a as flare-vs-population distinction; t_1/2 = 3.80 yr
+  matches the 1-5 yr blazar variability literature.
+- **Best-candidate wired:** derivation chain + named sources
+  as calibration; circular code and direction defect pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

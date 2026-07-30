@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.127.0"
+VERSION = "0.128.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6570,5 +6570,62 @@ def _paper_124(dataset):
         'formula': 'S_n = 2*SSq*E_8 (doubly-magic); dn_nuclear formula broken as printed',
         'source': 'PAPER_124',
         'residual_pct': abs(2 * SSQ * 1e-12 / 1.602e-13 - 7.117) / 7.117 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_125')
+def _paper_125(dataset):
+    """Superconductive Mode: Fermi 4LAC E_react kappa (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-05 (PAPER_113). VERIFIED EXACT:
+    kappa = alpha/t_mean = 0.35/700 = 5e-4/day (a REAL
+    derivation chain: power-law -> exponential conversion);
+    tau = 2000 d; t_1/2 = 1386 d = 3.80 yr; decay table
+    (5.0e45 / 3.68e45 / 8.21e44 / 6.74e43); L = E0*kappa =
+    5.79e37 W.
+    Q-109b PARTIALLY ANSWERED: per-source kappas now named -
+    3C273 4.9e-4, PKS 1510-089 5.1e-4, Mrk 421 4.8e-4,
+    Mrk 501 5.0e-4 (4 of 40; mean 4.95e-4 ~ 4.97e-4). CTA 102
+    (PAPER_113's factor-10 case) is ABSENT from the refinement
+    sample - implicit flare-vs-population resolution (7-yr
+    baseline population kappa = 5e-4; individual flares
+    faster).
+    CIRCULAR CODE (Q-121a, Rule 7): the sec 3.2 "statistical
+    fit" GENERATES synthetic curves with kappa = 5e-4 injected
+    and fits them back - validates nothing; disclosed as
+    simulated but presented as calibration.
+    LUMINOSITY DIRECTION (Q-121b): sec 2.3 multiplies by
+    eta_gamma^-1 = 1e3 to get L_gamma > L_total - backwards
+    (a fraction cannot exceed total); also 5.79e40 printed as
+    ~1e40 (5.8x rounding).
+    ARRHENIUS ASSERTED (Q-121c): kappa = (kT/hbar)exp(-E_gap/
+    kT) needs implied E_gap = 58.4 kT = 5.03 keV at T = 1e6 K
+    - never stated in-paper. Stray M_UQFF = 14.3 TeV comment
+    constant unexplained.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.17 (Superconductive mode, EP-05 refinement)',
+            'kappa_derivation': 0.35 / 700,                 # 5e-4 EXACT
+            'tau_days': 1 / KAPPA_PER_DAY,                  # 2000
+            't_half_days': _m.log(2) / KAPPA_PER_DAY,       # 1386.3
+            't_half_yr': _m.log(2) / KAPPA_PER_DAY / 365.25,  # 3.795
+            'per_source_kappas': {'3C273': 4.9e-4, 'PKS1510': 5.1e-4,
+                                  'Mrk421': 4.8e-4, 'Mrk501': 5.0e-4},
+            'named_mean': (4.9e-4 + 5.1e-4 + 4.8e-4 + 5.0e-4) / 4,  # 4.95e-4
+            'q109b_status': 'partially answered - 4 of 40 named; CTA 102 absent from sample',
+            'l_total_w': 1e46 * KAPPA_PER_DAY / 86400,      # 5.79e37 EXACT
+            'decay_table': {1386: 1e46 * _m.exp(-KAPPA_PER_DAY * 1386),
+                            10000: 1e46 * _m.exp(-KAPPA_PER_DAY * 10000)},
+            'circular_code': 'sec 3.2 fits its own injected kappa - validates nothing (Rule 7)',
+            'eta_direction_defect': 'L_gamma = L_total * 1e3 backwards; 5.79e40 printed ~1e40',
+            'arrhenius_implied_egap_kev': 58.38 * 1.38e-23 * 1e6 / 1.602e-19 / 1e3,  # 5.03
+            'stray_constant': 'M_UQFF = 14.3 TeV comment, unexplained',
+        },
+        'formula': 'kappa = alpha/t_mean = 0.35/700; E_react = 1e46*exp(-kappa t)',
+        'source': 'PAPER_125',
+        'residual_pct': abs(0.35 / 700 - KAPPA_PER_DAY) / KAPPA_PER_DAY * 100,
         'status': 'OPEN_RULING',
     }
