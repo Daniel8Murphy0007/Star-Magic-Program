@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 155 (11 ✓, 144 ⚠ OPEN_RULING)
+- **Wired:** 156 (11 ✓, 145 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2100
+- **Not yet touched:** 2099
 
 ---
 
@@ -764,7 +764,7 @@
 | ⬜ | PAPER_1527 | PI OVER 4 TRANSCENDENTAL |
 | ⬜ | PAPER_1528 | CATALAN G TRANSCENDENTAL |
 | ⬜ | PAPER_1529 | ZETA 2 TRANSCENDENTAL |
-| ⬜ | PAPER_152 | UQFF StudentsGuide Cosmological MUGE Baseline |
+| ⚠ | PAPER_152 | UQFF StudentsGuide Cosmological MUGE Baseline |
 | ⬜ | PAPER_1530 | ZETA 3 APERY TRANSCENDENTAL |
 | ⬜ | PAPER_1531 | GAMMA EULER TRANSCENDENTAL |
 | ⬜ | PAPER_1532 | H2O MOLAR MASS 18 |

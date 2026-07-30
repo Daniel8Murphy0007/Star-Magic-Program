@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.155.0] — 2026-07-30 — BAND 1: PAPER_152 — FORMULA FORK ROOT CAUSE
+
+### Added
+- **PAPER_152 dispatch** (Student's Guide cosmological
+  baseline, sec 2.2 — closes the 7-system suite): g =
+  3.958e14 floor; 38.4-decade cascade EXACT; term arithmetic
+  EXACT where stated. ROOT CAUSE FOUND: this paper uses a
+  THIRD 12-term formula set (plasma-form afluid, direct-form
+  asuper) differing from both the 146/147 derivations and the
+  implied table set — explaining every formula-vs-table
+  discrepancy (Q-143a/145a/146). Total sits 13 orders below
+  its own largest term (hand-waved normalization —
+  fingerprint-consistent). Slips: aquantum/afluid 100x, LCDM
+  10x (mantissa-exact); Osc kappa-day × t-Myr unit mix; H0
+  67.4-vs-70 fork (predecessor canonized 70); SGR1745
+  double-listed. Honest LCDM scope statement acknowledged.
+- OPEN_RULING Q-148.
+- Gate: 1,038 assertions, 0 failures. Registry: 381 rows / 811 edges / 156 ledgers (measured).
+
+---
+
 ## [0.154.0] — 2026-07-30 — BAND 1: PAPER_151 — VALUE FINGERPRINT
 
 ### Added

@@ -3342,6 +3342,41 @@ RESOLVED section with the ruling recorded.
   block's central forensic findings.
 - **Daniel's ruling:** (pending)
 
+### Q-148 — PAPER_152 Cosmological Baseline — formula set fork No. 3 (root cause)
+- **Question:** (a) FORMULA SET FORK No. 3 (root cause
+  identified): this paper's 12-term forms differ from the
+  PAPER_146/147 derivations - afluid = k3 B^2/(4pi rho r)
+  (plasma form) vs (nu lap_v/Evac) aDPM; asuper = Fsuper
+  fTHz rho v^2 vs the aDPM-cascade form; aTHz/avac/aquantum/
+  aAether/aexp all restructured. THREE formula sets now
+  coexist (146/147 derivations, the implied system-table set,
+  152's forms) - this is the root cause of every formula-vs-
+  table discrepancy (Q-143a/145a/146). ONE canonical 12-term
+  formula set must be ruled before the MUGE block can be
+  finalized.
+  (b) TOTAL-VS-TERMS: the total g = 3.958e14 sits 13 ORDERS
+  below its own largest component (aaether_res = 1.5e27),
+  closed only by hand-waved "normalization, volume factors,
+  cross-coupling" - the total is unreproducible from its own
+  terms (consistent with the Q-147a assigned-values
+  fingerprint).
+  (c) SLIPS + FORKS: aquantum and afluid 100x mantissa-exact
+  slips; LCDM comparison 10x; Osc t_n = 6.9 from a
+  kappa[/day] x t[Myr] unit mix (proper: 2.5e9); H0 = 67.4
+  here vs the corpus/predecessor-canonical 70 (PAPER_1573) -
+  fold into the H0 route family; the "7-system" table lists
+  SGR1745 twice (6 unique systems + repeat).
+- **Notable:** term arithmetic is EXACT where stated
+  (asuper 6.287e24, aaether_res 1.5e27, aexp 1.308e-9, aTHz
+  6.38e-27); the 38.4-decade cascade span claim verifies
+  EXACTLY; the paper HONESTLY declares the LCDM comparison
+  inappropriate (scope statement consistent with the 148/149
+  identification) - the scoping doctrine keeps cohering.
+- **Best-candidate wired:** baseline + cascade registered;
+  the three-formula-set root cause pinned as the block's
+  closing finding.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

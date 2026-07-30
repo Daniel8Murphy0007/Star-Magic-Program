@@ -1,30 +1,33 @@
-v0.154.0 BAND 1: PAPER_151 wired - 1-2-5 x (1+P_SCm) FINGERPRINT
+v0.155.0 BAND 1: PAPER_152 wired - FORMULA SET FORK No. 3 (ROOT CAUSE)
 
-PAPER_151 UQFF Pillars of Creation + Rings of Relativity
-(OPEN_RULING Q-147):
-  Fourth Cycle 3 system paper: cascade steps /5, /4 EXACT;
-  Einstein-ring geometry chains EXACT (r_E = 1.498e20 m,
-  lap_arc = 1.33e-32); real Pillars astronomy; Rings honestly
-  disclosed as a parametric lens class.
+PAPER_152 UQFF Student's Guide Cosmological Baseline
+(OPEN_RULING Q-148) - closes the 7-system suite:
+  Cosmological MUGE floor g = 3.958e14; the 38.4-decade
+  cascade span verifies EXACTLY; term arithmetic EXACT where
+  stated (asuper 6.287e24, aaether_res 1.5e27, aexp 1.308e-9).
 
-  BLOCK-LEVEL FINGERPRINT (the audit's central finding for
-  sec 2.2): the 7-system g mantissas {1.001, 2.001, 5.005,
-  4.105} are round numbers {1, 2, 5, 4.1} times
-  (1 + 1e-3) = (1 + P_SCM) - a 1-2-5 engineering-decade
-  ladder with a uniform P_SCm tag. The system values were
-  ASSIGNED parametrically, not computed from the 12-term
-  formulas - consistent with every formula-vs-table
-  discrepancy found (Q-143a/145a). The MUGE-g identification
-  question becomes: what would the REAL computed values be?
-  (Q-141 annotated; note P_SCm = F_TRZ^3 per Q-132d.)
+  ROOT CAUSE FOUND: this paper's 12-term forms differ from
+  the PAPER_146/147 derivations (afluid = k3 B^2/(4pi rho r)
+  plasma form; asuper direct form; most terms restructured) -
+  THREE formula sets now coexist (derivations, implied
+  tables, 152 forms). This explains every formula-vs-table
+  discrepancy found across the block (Q-143a/145a/146). One
+  canonical 12-term set must be ruled before the MUGE block
+  finalizes.
 
-  LENSING 30-ORDER FLAG: theta_E_MUGE = theta_E_GR x
-  (1 + 8.3e28) - observed Einstein rings match GR to ~1 pct;
-  falsified unless MUGE-g is scoped away from photon paths
-  (one scoping doctrine resolves this AND the 150 Jeans mix).
+  TOTAL-VS-TERMS: the total sits 13 ORDERS below its own
+  largest component (1.5e27), closed by hand-waved
+  normalization - consistent with the Q-147a assigned-values
+  fingerprint.
 
-  B-label 10x slip (mG/muG family, 4th instance).
+  ALSO: aquantum/afluid 100x + LCDM 10x mantissa-exact slips;
+  Osc t_n from a kappa[/day] x t[Myr] unit mix; H0 = 67.4
+  vs corpus-canonical 70 (PAPER_1573 route); SGR1745 listed
+  twice in the "7-system" table. HONEST: the LCDM comparison
+  is explicitly declared inappropriate - the scoping doctrine
+  keeps cohering with 148/149.
 
-Q-147 queued. Gate 1,032 assertions 0 failures. Registry
-379 rows / 807 edges / 155 ledgers (measured). Wired
-155/2,255 (11 clean, 144 OPEN_RULING). Next: PAPER_152.
+Q-148 queued. Gate 1,038 assertions 0 failures. Registry
+381 rows / 811 edges / 156 ledgers (measured). Wired
+156/2,255 (11 clean, 145 OPEN_RULING). Next: PAPER_153
+(Morris-Thorne wormhole extension).

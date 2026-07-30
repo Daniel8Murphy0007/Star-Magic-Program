@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.154.0"
-description = "UQFF Star-Magic-Program v0.154.0: PAPER_151 wired - Pillars/Rings cascade (FINGERPRINT FOUND: 7-system g values = 1-2-5 decade ladder x (1+P_SCm) - assigned not computed, reframes the MUGE-g question; lensing correction 8.3e28 flagged 30 orders vs observed rings unless scoped; geometry chains EXACT). Q-147 queued. Wired 155/2255, gate 1032/0. Registry 379 rows / 807 edges / 155 ledgers (measured)."
+version = "0.155.0"
+description = "UQFF Star-Magic-Program v0.155.0: PAPER_152 wired - cosmological baseline closes the 7-system suite (38.4-decade cascade EXACT; FORMULA SET FORK No. 3 found - three coexisting 12-term formula sets are the root cause of all table discrepancies; total 13 orders below own largest term; H0 67.4-vs-70 fork; honest LCDM scope statement). Q-148 queued. Wired 156/2255, gate 1038/0. Registry 381 rows / 811 edges / 156 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

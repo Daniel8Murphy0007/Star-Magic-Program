@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.154.0"
+VERSION = "0.155.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8062,5 +8062,62 @@ def _paper_151(dataset):
         'formula': 'cascade g_n ~ round x (1+P_SCm) x 10^-k; theta_E_MUGE = theta_GR(1 + a r_E/c^2)',
         'source': 'PAPER_151',
         'residual_pct': abs(3.09e25 / 206265 - 1.5e20) / 1.5e20 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_152')
+def _paper_152(dataset):
+    """Student's Guide Cosmological Baseline (S0, sec 2.2).
+
+    Final Cycle 3 system paper: cosmological MUGE floor
+    g = 3.958e14 with the full 7-system 38-decade cascade
+    table (38.4 decades EXACT). Term arithmetic EXACT where
+    stated (aTHz 6.38e-27, asuper 6.287e24, aaether_res
+    1.5e27, aAether_freq 1.8e-3, aexp 1.308e-9).
+    FORMULA SET FORK No. 3 (Q-148a): this paper's 12-term
+    forms differ from PAPER_146/147's derivations (e.g.,
+    afluid = k3 B^2/(4pi rho r) plasma form vs (nu lap_v/
+    Evac) aDPM; asuper = Fsuper fTHz rho v^2 vs the aDPM-
+    cascade form). THREE formula sets now exist (146/147
+    derivations, the implied table set, 152's forms) - the
+    root cause of every formula-vs-table discrepancy.
+    TOTAL-VS-TERMS (Q-148b): the total 3.958e14 sits 13
+    ORDERS below its own largest component (aaether_res
+    1.5e27) - closed by hand-waved "normalization, volume
+    factors, cross-coupling"; total unreproducible from own
+    terms (fingerprint-consistent).
+    SLIPS (Q-148c): aquantum 100x (2.15e-42 chain vs e-40);
+    afluid 100x (1.05e-60 vs e-62); LCDM comparison 10x
+    (3.44e-11 vs 3.4e-12) - all mantissa-exact. Osc t_n = 6.9
+    from kappa[/day] x t[Myr] unit mix (proper days: 2.5e9).
+    H0 fork: 67.4 here vs 70 corpus-canonical (predecessor
+    PAPER_1573). 7-system table lists SGR1745 TWICE (6 unique
+    + repeat). Honest note: the LCDM comparison is explicitly
+    declared inappropriate (scope statement consistent with
+    148/149).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.2 (cosmological baseline; closes system suite)',
+            'g_muge': 3.958e14,
+            'cascade_decades': _m.log10(4.105e29 / 1.773e-9),  # 38.4 EXACT
+            'term_exact': {'aTHz': 6.381e-27, 'asuper': 6.287e24,
+                           'aaether_res': 1.5e27, 'aexp': 1.308e-9},
+            'formula_fork_no3': 'afluid plasma form + asuper direct form differ from 146/147',
+            'three_formula_sets': '146/147 derivations vs implied tables vs 152 forms',
+            'total_vs_largest': 1.5e27 / 3.958e14,            # 3.8e12 - 13 orders
+            'total_unreproducible': 'closed by hand-waved normalization (fingerprint-consistent)',
+            'slips_100x': ('aquantum 2.15e-42 vs e-40', 'afluid 1.05e-60 vs e-62'),
+            'slip_10x': 'LCDM 3.44e-11 vs 3.4e-12',
+            'osc_unit_mix': 't_n = kappa[/day] x t[Myr] = 6.9 (proper days 2.5e9)',
+            'h0_fork': (67.4, 70),
+            'sgr1745_double_listed': True,
+            'scope_honesty': 'LCDM comparison declared inappropriate - 148/149-consistent',
+        },
+        'formula': '12-term (152 variant forms); cascade table 38 decades',
+        'source': 'PAPER_152',
+        'residual_pct': abs(_m.log10(4.105e29 / 1.773e-9) - 38.4) / 38.4 * 100,
         'status': 'OPEN_RULING',
     }

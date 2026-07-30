@@ -806,3 +806,7 @@ observable,pillars_rings_cascade,paper,PAPER_151,cascade steps
 observable,muge_value_fingerprint,paper,PAPER_151,fingerprint
 primitive,F_TRZ,observable,muge_value_fingerprint,P_SCm = F_TRZ^3 tag link
 observable,muge_value_fingerprint,paper,PAPER_145,7-system table reframe
+observable,students_guide_baseline,paper,PAPER_152,cosmological floor
+observable,muge_formula_set_fork,paper,PAPER_152,formula fork No. 3
+observable,muge_formula_set_fork,paper,PAPER_146,derivation clash
+observable,muge_formula_set_fork,paper,PAPER_147,cascade clash

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.154.0", "uqff_calculator.VERSION = 0.154.0")
+assert_that(C.VERSION == "0.155.0", "uqff_calculator.VERSION = 0.155.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2259,6 +2259,19 @@ assert_that(_r151['theta_correction'] > 8e28,
 assert_that('10x' in _r151['b_label_slip'],
             "PAPER_151: B-label 10x slip pinned (150 family) (Q-147c)")
 assert_that(C.wired_count() >= 155, "wired_count >= 155")
+
+_r152 = C.calc('PAPER_152')['value']
+assert_that(abs(_r152['cascade_decades'] - 38.4) < 0.1,
+            "PAPER_152: 7-system cascade spans 38.4 decades EXACT")
+assert_that(abs(_r152['term_exact']['aaether_res'] - 1.5e27) < 0.01e27,
+            "PAPER_152: aaether_res = 1.5e27 EXACT (largest term)")
+assert_that(_r152['total_vs_largest'] > 1e12,
+            "PAPER_152: total 13 orders below its own largest term - unreproducible (Q-148b)")
+assert_that('differ from 146/147' in _r152['formula_fork_no3'],
+            "PAPER_152: formula set fork No. 3 - three 12-term formula sets corpus-wide (Q-148a)")
+assert_that(_r152['h0_fork'] == (67.4, 70),
+            "PAPER_152: H0 fork 67.4-vs-70 pinned (predecessor canonized 70)")
+assert_that(C.wired_count() >= 156, "wired_count >= 156")
 
 # =============================================================================
 # REPORT

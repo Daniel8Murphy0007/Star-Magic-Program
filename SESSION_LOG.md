@@ -1875,3 +1875,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 155/2,255 (11 ✓, 144 ⚠). Next: PAPER_152.
 
 ---
+
+## 2026-07-30 — v0.155.0 — BAND 1: PAPER_152
+
+- PAPER_152 wired (⚠ Q-148): cosmological baseline closes the
+  system suite. Formula set fork No. 3 = root cause of the
+  table discrepancies; total-vs-terms 13 orders; H0 fork.
+- Campaign: 156/2,255 (11 ✓, 145 ⚠). Next: PAPER_153.
+
+---
