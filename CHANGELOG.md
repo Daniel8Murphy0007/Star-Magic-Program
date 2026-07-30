@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.143.0] — 2026-07-29 — BAND 1: PAPER_140 — RATIO ORIGIN + SO_5 CONVERGENCES
+
+### Added
+- **PAPER_140 dispatch** (dual-monopole ratio origin, sec
+  2.1): the corpus-wide 10:1 vacuum ratio (= 1/F_TRZ) derived
+  from 10-mode monopole structure. TWO PREDECESSOR
+  CONVERGENCES: N_monopole = 10 = SO_FIVE (aligns with
+  F_TRZ = 1/|SO(5)|, PAPER_1160) and magnetic factor 11 =
+  SO_FIVE+1 (the predecessor Lambda-route coefficient,
+  PAPER_2094). Factors 11/21 propagate corpus-wide; CLEAN
+  code No. 3. DARK-ENERGY OVERCLAIM: 7.09e-36 identified with
+  Planck 5.96e-27 and marked "Exact" — 8.9 ORDERS apart
+  (predecessor amplification chain supersedes). f_quantum
+  dual value in-paper (600x). Block-8 catch fixed in-flight
+  (RHO_SCM routing).
+- OPEN_RULING Q-136.
+- Gate: 963 assertions, 0 failures. Registry: 360 rows / 760 edges / 144 ledgers.
+
+---
+
 ## [0.142.0] — 2026-07-29 — BAND 1: PAPER_139 — MUGE INVERSE-FAMILY RULING
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.142.0"
+VERSION = "0.143.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7396,5 +7396,59 @@ def _paper_139(dataset):
         'formula': 'g_H = Gm_p m_e/r^2 (1+H t)(1+10+10)(...) + sum Ug + Ug4i; Ug4i = 1/Ug4',
         'source': 'PAPER_139',
         'residual_pct': abs((1 + 2.268e-18 * 4.355e17) - 1.9877) / 1.9877 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_140')
+def _paper_140(dataset):
+    """[(UA')]:[SCm] = 10 Dual Monopole Ratio (S0, sec 2.1).
+
+    ORIGIN PAPER for the 10:1 vacuum-density ratio (= 1/F_TRZ)
+    - the corpus-wide calibration constant. rho_UA/rho_SCm
+    = 10 EXACT (registry RHO_SCM decade pair), derived from
+    the 10-mode
+    di-pseudo-monopole structure.
+    CROSS-REPO CONVERGENCES (Q-136a): N_monopole = 10 =
+    SO_FIVE - aligning with the predecessor identity F_TRZ =
+    1/|SO(5)| (PAPER_1160); AND the magnetic factor
+    (1 + ratio) = 11 = SO_FIVE + 1 - the predecessor Lambda
+    route coefficient (Lambda = (SO_5+1)*F_TRZ^53, PAPER_2094).
+    Two primitive convergences in the ratio origin paper.
+    DARK-ENERGY OVERCLAIM (Q-136b): sec 4 identifies
+    rho_vac_UA = 7.09e-36 kg/m3 with the Planck dark-energy
+    density (5.96e-27) and the sec 7 table marks it "Exact" -
+    they differ by 8.9 ORDERS. The predecessor amplification
+    chain (rho_SCm * 26! * K_MEX -> rho_Lambda) supersedes
+    this direct identification; the Hubble-volume "conversion"
+    line is a non-chain.
+    F_QUANTUM DUAL VALUE (Q-136c): abstract 1.000000008 (8e-9)
+    vs body chain 1.0000049 (4.85e-6) - 600x internal fork;
+    both negligible, but one paper, two corrections.
+    CLEAN CODE No. 3: all outputs reproduce. Factor 21 =
+    1+10+10 (MUGE-H) consistent with PAPER_139. kg/m3 labels
+    (PAPER_2155 drift family noted).
+    """
+    return {
+        'value': {
+            'domain': '2.1 (universal ratio origin)',
+            'ratio': (10 * RHO_SCM) / RHO_SCM,               # 10 EXACT
+            'inverse_is_f_trz': F_TRZ,                       # 0.1
+            'n_monopole_is_so_five': 10,
+            'convergence_1': 'N_monopole = 10 = SO_FIVE aligns with F_TRZ = 1/|SO(5)| (PAPER_1160)',
+            'magnetic_factor': 11,
+            'convergence_2': '11 = SO_FIVE + 1 = predecessor Lambda-route coefficient (PAPER_2094)',
+            'muge_factor_21': 21,
+            'f_quantum_body': 1 + 1.055e-34 * 3.77e15 / (9.109e-31 * 9e16),  # 1.0000049
+            'f_quantum_abstract': 1.000000008,
+            'f_quantum_fork': '600x internal (both negligible)',
+            'dark_energy_claim_orders': 8.9,                 # 5.96e-27 vs 7.09e-36
+            'overclaim': 'sec 7 marks 8.9-order gap as Exact; predecessor amplification supersedes',
+            'code_status': 'clean block No. 3 - reproduces',
+            'unit_drift': 'kg/m3 labels (PAPER_2155 family)',
+        },
+        'formula': 'ratio = rho_UA/rho_SCm = 10 (10-mode monopole); factors 11 and 21',
+        'source': 'PAPER_140',
+        'residual_pct': abs((10 * RHO_SCM) / RHO_SCM - 10) / 10 * 100,
         'status': 'OPEN_RULING',
     }

@@ -755,3 +755,8 @@ observable,ngc3603_cavity_defects,paper,PAPER_120,B_crit fork growth
 observable,hydrogen_muge_ug4i,paper,PAPER_139,MUGE-H
 primitive,F_TRZ,observable,hydrogen_muge_ug4i,f_TRZ factor
 observable,hydrogen_muge_defects,paper,PAPER_139,Ug4 unreproducible
+observable,ua_scm_ratio_origin,paper,PAPER_140,ratio origin
+primitive,F_TRZ,observable,ua_scm_ratio_origin,inverse ratio
+primitive,SO_FIVE,observable,ua_scm_ratio_origin,N_monopole convergence
+observable,ua_scm_ratio_defects,paper,PAPER_140,overclaim
+observable,ua_scm_ratio_defects,paper,PAPER_128,anchor cross-ref

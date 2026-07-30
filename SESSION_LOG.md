@@ -1763,3 +1763,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 143/2,255 (11 ✓, 132 ⚠). Next: PAPER_140.
 
 ---
+
+## 2026-07-29 — v0.143.0 — BAND 1: PAPER_140
+
+- PAPER_140 wired (⚠ Q-136): monopole ratio origin. Ratio 10
+  EXACT with two SO_5 predecessor convergences; DE overclaim
+  (8.9 orders marked Exact) pinned; clean code No. 3.
+- Campaign: 144/2,255 (11 ✓, 133 ⚠). Next: PAPER_141.
+
+---

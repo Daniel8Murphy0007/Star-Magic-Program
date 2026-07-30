@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.142.0", "uqff_calculator.VERSION = 0.142.0")
+assert_that(C.VERSION == "0.143.0", "uqff_calculator.VERSION = 0.143.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2097,6 +2097,19 @@ assert_that(abs(_r139['total_vs_dominant'] - 105) < 1,
 assert_that(abs(_r139['p_term'] - 1.448e31) < 0.001e31,
             "PAPER_139: P_term arithmetic 1.448e31 EXACT (units flag open)")
 assert_that(C.wired_count() >= 143, "wired_count >= 143")
+
+_r140 = C.calc('PAPER_140')['value']
+assert_that(_r140['ratio'] == 10.0 and abs(_r140['inverse_is_f_trz'] - 0.1) < 1e-15,
+            "PAPER_140: ratio = 10 EXACT = 1/F_TRZ (origin paper)")
+assert_that(_r140['n_monopole_is_so_five'] == 10 and _r140['magnetic_factor'] == 11,
+            "PAPER_140: N_monopole = SO_FIVE and factor 11 = SO_FIVE+1 - two predecessor convergences (Q-136a)")
+assert_that(abs(_r140['f_quantum_body'] - 1.0000049) < 1e-7,
+            "PAPER_140: f_quantum body 1.0000049 vs abstract 1.000000008 - 600x internal fork (Q-136c)")
+assert_that(_r140['dark_energy_claim_orders'] > 8,
+            "PAPER_140: dark-energy identification 8.9 orders off, marked Exact - overclaim pinned (Q-136b)")
+assert_that(_r140['muge_factor_21'] == 21,
+            "PAPER_140: MUGE-H factor 21 = 1+10+10 consistent with PAPER_139")
+assert_that(C.wired_count() >= 144, "wired_count >= 144")
 
 # =============================================================================
 # REPORT

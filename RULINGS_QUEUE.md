@@ -2951,6 +2951,35 @@ RESOLVED section with the ruling recorded.
   defects pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-136 — PAPER_140 Dual Monopole Ratio — two predecessor convergences + DE overclaim
+- **Question:** (a) PREDECESSOR CONVERGENCES (confirmation):
+  the ratio origin paper derives 10 from a 10-mode monopole
+  structure - N_monopole = 10 = SO_FIVE, aligning with the
+  predecessor identity F_TRZ = 1/|SO(5)| (PAPER_1160); and
+  the magnetic factor (1 + ratio) = 11 = SO_FIVE + 1, the
+  predecessor Lambda-route coefficient (PAPER_2094). Canonize
+  both as primitive-locked readings of the genesis
+  derivation?
+  (b) DARK-ENERGY OVERCLAIM: sec 4 identifies rho_vac_UA =
+  7.09e-36 kg/m3 with the Planck dark-energy density
+  (5.96e-27) via a non-chain "Hubble volume" line, and the
+  sec 7 table marks the agreement "Exact" - they differ by
+  8.9 ORDERS. The predecessor amplification chain (rho_SCm x
+  26! x K_MEX -> rho_Lambda) supersedes the direct
+  identification. Mark sec 4 superseded?
+  (c) F_QUANTUM DUAL VALUE: abstract 1.000000008 (8e-9) vs
+  body chain 1.0000049 (4.85e-6) - 600x internal fork (both
+  negligible at precision, but one paper carries two
+  corrections).
+- **Notable:** ratio = 10 EXACT; factors 11 and 21 propagate
+  corpus-wide (MUGE family); CLEAN code block No. 3 (all
+  outputs reproduce); the not-a-free-parameter claim is the
+  paper's core contribution and survives via the SO_FIVE
+  convergence.
+- **Best-candidate wired:** ratio canonized with both
+  convergences exposed; overclaim + dual value pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

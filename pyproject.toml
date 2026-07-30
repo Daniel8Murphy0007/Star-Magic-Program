@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.142.0"
-description = "UQFF Star-Magic-Program v0.142.0: PAPER_139 wired - Hydrogen MUGE-H (F_grav/Hubble/P_term chains EXACT; Ug4 paper value 29 orders from its stated chain - falsified output No. 7; total g_H 105x smaller than its dominant term; MUGE inverse-family dimensional ruling requested; inverse-Boyle V ~ P^1/3 prediction preserved). Q-135 queued. Wired 143/2255, gate 957/0. Registry 358 rows / 755 edges / 143 ledgers."
+version = "0.143.0"
+description = "UQFF Star-Magic-Program v0.143.0: PAPER_140 wired - dual-monopole ratio origin (ratio = 10 = 1/F_TRZ EXACT; TWO predecessor convergences: N_monopole = SO_FIVE ~ F_TRZ = 1/|SO(5)| and factor 11 = SO_5+1 Lambda-route coefficient; dark-energy identification 8.9 orders off marked Exact - overclaim pinned; clean code No. 3). Q-136 queued. Wired 144/2255, gate 963/0. Registry 360 rows / 760 edges / 144 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
