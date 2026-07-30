@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.128.0"
-description = "UQFF Star-Magic-Program v0.128.0: PAPER_125 wired - Superconductive Fermi 4LAC kappa (FIRST real derivation kappa = alpha/t_mean = 0.35/700 = 5e-4 EXACT; 4 named per-source kappas partially answer Q-109b, CTA 102 dropped from sample; circular simulation code pinned Rule 7; Arrhenius needs unstated E_gap = 5.03 keV). Q-121 queued. Wired 129/2255, gate 871/0. Registry 330 rows / 696 edges / 129 ledgers."
+version = "0.129.0"
+description = "UQFF Star-Magic-Program v0.129.0: PAPER_126 wired - Master Buoyancy Gaia SgrA* (galactic pair (4.3e6 Msun, 2.44e20 m) canonized, error chains EXACT; eps_UA self-canceling derivation pinned Rule 7; PRIMITIVE FIND: M_bh correction /10 IS F_TRZ -> (1 + SSq*beta*F_TRZ) = 4.297). Q-122 queued. Wired 130/2255, gate 877/0. Registry 332 rows / 701 edges / 130 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

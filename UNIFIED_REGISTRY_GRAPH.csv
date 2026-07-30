@@ -696,3 +696,8 @@ observable,superconductive_kappa_calib,paper,PAPER_125,kappa calibration
 primitive,KAPPA_PER_DAY,observable,superconductive_kappa_calib,derivation + 40-blazar
 observable,superconductive_kappa_calib,paper,PAPER_113,Q-109b partial answer
 observable,superconductive_kappa_defects,paper,PAPER_125,circular code
+observable,master_buoyancy_galactic_pair,paper,PAPER_126,galactic pair
+observable,master_buoyancy_galactic_pair,paper,PAPER_110,EP-06 lineage
+primitive,F_TRZ,observable,mbh_ftrz_correction_find,the /10 decomposition
+primitive,SSQ,observable,mbh_ftrz_correction_find,correction factor
+primitive,BETA_I,observable,mbh_ftrz_correction_find,correction factor

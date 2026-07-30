@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.128.0", "uqff_calculator.VERSION = 0.128.0")
+assert_that(C.VERSION == "0.129.0", "uqff_calculator.VERSION = 0.129.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1911,6 +1911,19 @@ assert_that('injected' in _r125['circular_code'],
 assert_that(abs(_r125['arrhenius_implied_egap_kev'] - 5.03) < 0.01,
             "PAPER_125: Arrhenius form needs unstated E_gap = 5.03 keV at 1e6 K (Q-121c)")
 assert_that(C.wired_count() >= 129, "wired_count >= 129")
+
+_r126 = C.calc('PAPER_126')['value']
+assert_that(abs(_r126['d_g_err_pct'] - 4.31) < 0.01 and abs(_r126['m_bh_err_pct'] - 3.51) < 0.01,
+            "PAPER_126: d_g 4.31 pct / M_bh 3.51 pct errors EXACT")
+assert_that(abs(_r126['m_over_d'] - 3.50e16) < 0.01e16,
+            "PAPER_126: M_bh/d_g = 3.50e16 kg/m galactic calibration unit EXACT")
+assert_that('circularity' in _r126['self_canceling_code'],
+            "PAPER_126: eps_UA self-canceling code pinned - 4.3 pct calibrated not derived (Q-122a)")
+assert_that(abs(_r126['mbh_corrected_canonical'] - 4.297) < 0.001,
+            "PAPER_126: M_app = M*(1 + SSq*beta_i*F_TRZ) = 4.297 at canonical beta - the /10 IS F_TRZ (Q-122b primitive find)")
+assert_that(abs(_r126['roundtrip_kpc'] - 8.247) < 0.001,
+            "PAPER_126: round-trip 8.247 kpc vs GRAVITY 8.277 (0.37 pct)")
+assert_that(C.wired_count() >= 130, "wired_count >= 130")
 
 # =============================================================================
 # REPORT

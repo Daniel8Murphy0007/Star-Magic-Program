@@ -1634,3 +1634,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 129/2,255 (11 ✓, 118 ⚠). Next: PAPER_126.
 
 ---
+
+## 2026-07-29 — v0.129.0 — BAND 1: PAPER_126
+
+- PAPER_126 wired (⚠ Q-122): Master Buoyancy Gaia. Galactic
+  pair (4.3e6, 2.44e20) canonized; eps_UA circularity pinned;
+  /10 = F_TRZ primitive find; Q-117 annotated.
+- Campaign: 130/2,255 (11 ✓, 119 ⚠). Next: PAPER_127.
+
+---

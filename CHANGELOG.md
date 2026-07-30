@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.129.0] — 2026-07-29 — BAND 1: PAPER_126 — /10 = F_TRZ FIND
+
+### Added
+- **PAPER_126 dispatch** (Master Buoyancy Gaia Sgr A*,
+  d91b1f6c): canonizes the galactic pair (M_bh = 4.3e6 M_sun,
+  d_g = 2.44e20 m), resolving PAPER_121's internal fork toward
+  PAPER_110's values (Q-122c ruling picks corpus-wide; Q-117
+  annotated). Error chains EXACT (4.31% GRAVITY, 3.51% EHT,
+  M/d = 3.50e16). SELF-CANCELING DERIVATION pinned: eps_UA
+  code literally multiplies and divides by beta²/SSq —
+  4.3% is calibrated, not derived (Rule 7). PRIMITIVE FIND:
+  the M_bh correction "(1 + SSq·beta_i/10)" — the /10 IS
+  F_TRZ; (1 + SSq·beta·F_TRZ) gives 4.297 at canonical beta.
+  Abstract garble (0.348 → "0.213") and dual GRAVITY R0
+  logged. Block-8 catch fixed in-flight.
+- OPEN_RULING Q-122.
+- Gate: 877 assertions, 0 failures. Registry: 332 rows / 701 edges / 130 ledgers.
+
+---
+
 ## [0.128.0] — 2026-07-29 — BAND 1: PAPER_125 — KAPPA FIRST REAL DERIVATION
 
 ### Added

@@ -2373,6 +2373,7 @@ RESOLVED section with the ruling recorded.
   EP-02/03/04.
 - **Best-candidate wired:** 71 equations registered; all forks
   pinned; phi/sqrt3 candidates logged for derivation session.
+- **UPDATE (PAPER_126):** the Master Buoyancy refinement canonizes (4.3e6, 2.44e20) with EXACT error chains - (a) leans 4.3e6; fold into Q-122c galactic-pair ruling.
 - **Daniel's ruling:** (pending)
 
 ### Q-118 — PAPER_122 Compressed PDG refinement — Q-108a canonized + falsified code output
@@ -2497,6 +2498,37 @@ RESOLVED section with the ruling recorded.
   matches the 1-5 yr blazar variability literature.
 - **Best-candidate wired:** derivation chain + named sources
   as calibration; circular code and direction defect pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-122 — PAPER_126 Master Buoyancy Gaia — self-canceling derivation + F_TRZ find
+- **Question:** (a) SELF-CANCELING DERIVATION (Rule 7): the
+  eps_UA = 4.3 pct "[UA] path compression" is calibrated, not
+  derived - the prose computes beta^2/SSq = 0.653 then
+  silently swaps to 0.043, and the verification code
+  LITERALLY multiplies and divides by beta^2/SSq:
+  (b2/S)*0.043/(b2/S) = 0.043. Explicit circularity. Provide
+  a real eps_UA derivation or mark calibrated.
+  (b) PRIMITIVE FIND: the M_bh correction "(1 + SSq*beta_i/
+  10)" decomposes as (1 + SSq*beta_i*F_TRZ) - the /10 IS
+  F_TRZ. Chain: 4.154*(1.0348) = 4.298 ~ 4.3 (canonical beta:
+  4.297). Canonize the F_TRZ reading of the apparent-mass
+  enhancement?
+  (c) GALACTIC PAIR RULING: PAPER_126 canonizes (M_bh =
+  4.3e6 M_sun, d_g = 2.44e20 m) - consistent with PAPER_110
+  and PAPER_121 sec 5, against PAPER_119/120 and PAPER_121
+  Eq 26-27's (4.1e6, 2.55e20). One pair must drive
+  Ub_i/Ug4 corpus-wide - pick (this also settles Q-117a).
+  (d) Garbles: abstract prints kappa_i*SSq = "0.213" (chain
+  0.348); GRAVITY R0 quoted as both 8.13 and 8.277 in one
+  paper; omega_g exponent mojibake; footer "F_U at event
+  horizon = 2.0e18 m/s" units nonsense.
+- **Notable:** headline arithmetic all EXACT (4.31 pct, 3.51
+  pct, 3.50e16, round-trip 8.247 kpc at 0.37 pct); the [UA]
+  path-compression mechanism (distinct from lensing) is a
+  clean falsifiable narrative even though its magnitude is
+  currently calibrated; Eddington footer arithmetic EXACT.
+- **Best-candidate wired:** (4.3e6, 2.44e20) as canonical
+  pair; F_TRZ decomposition exposed; circularity pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.128.0"
+VERSION = "0.129.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6627,5 +6627,59 @@ def _paper_125(dataset):
         'formula': 'kappa = alpha/t_mean = 0.35/700; E_react = 1e46*exp(-kappa t)',
         'source': 'PAPER_125',
         'residual_pct': abs(0.35 / 700 - KAPPA_PER_DAY) / KAPPA_PER_DAY * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_126')
+def _paper_126(dataset):
+    """Master Buoyancy: Gaia Sgr A* Galactic Calibration (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-06 (PAPER_110). Canonizes the
+    galactic pair d_g = 2.44e20 m (7.92 kpc) + M_bh = 4.3e6
+    M_sun - resolving the PAPER_121 internal fork toward the
+    sec-5/PAPER_110 values (vs 119/120's 4.1e6 + 2.55e20).
+    VERIFIED EXACT: d_g error vs GRAVITY 4.31 pct; M_bh error
+    vs EHT 3.51 pct; M/d = 3.50e16 kg/m; 7.92 kpc = 2.444e20;
+    round-trip 2.44e20*1.043 = 8.247 kpc (0.37 pct).
+    SELF-CANCELING DERIVATION (Q-122a, Rule 7): the eps_UA
+    "derivation" computes beta^2/SSq = 0.653 then silently
+    swaps to the observed 0.043; the verification code
+    LITERALLY multiplies and divides by beta^2/SSq -
+    (b2/S)*0.043/(b2/S) = 0.043 - explicit circularity.
+    eps_UA = 4.3 pct is calibrated, not derived.
+    PRIMITIVE FIND (Q-122b): the M_bh correction sec 3.3
+    "(1 + SSq*beta_i/10)" decomposes as (1 + SSq*beta_i*F_TRZ)
+    - the /10 IS F_TRZ. Chain: 4.154*(1+0.0348) = 4.298 ~ 4.3;
+    at canonical BETA_I: 4.297. Primitive-composable
+    candidate for the [SCm] apparent-mass enhancement.
+    Abstract garbled: kappa_i*SSq printed "0.213" (chain
+    0.348); GRAVITY R0 quoted both 8.13 and 8.277 in-paper;
+    omega_g exponent mojibake; footer "F_U = 2.0e18 m/s"
+    units nonsense; Eddington footer arithmetic EXACT (0.430).
+    """
+    return {
+        'value': {
+            'domain': '1.17 (Master Buoyancy, EP-06 refinement)',
+            'd_g_m': 7.92 * 3.086e19,                       # 2.444e20 EXACT
+            'm_bh_msun': 4.3e6,
+            'galactic_pair_canonized': '(4.3e6 M_sun, 2.44e20 m) - resolves PAPER_121 fork',
+            'd_g_err_pct': (8.277 - 7.92) / 8.277 * 100,    # 4.31 EXACT
+            'm_bh_err_pct': (4.3 - 4.154) / 4.154 * 100,    # 3.51 EXACT
+            'm_over_d': 8.55e36 / 2.44e20,                  # 3.50e16 EXACT
+            'roundtrip_kpc': 2.44e20 * 1.043 / 3.086e19,    # 8.247 (0.37 pct)
+            'eps_ua': 0.043,                                # calibrated, NOT derived
+            'self_canceling_code': '(b2/S)*0.043/(b2/S) = 0.043 - explicit circularity (Rule 7)',
+            'prose_derivation_gap': 'beta^2/SSq = 0.653 computed then swapped to 0.043',
+            'mbh_correction_primitive': SSQ * BETA_I * F_TRZ,  # 0.0344 canonical
+            'mbh_corrected_canonical': 4.154 * (1 + SSQ * BETA_I * F_TRZ),  # 4.297
+            'primitive_find': 'the /10 IS F_TRZ: (1 + SSq*beta_i*F_TRZ) apparent-mass form',
+            'abstract_garbled': '0.61*0.57 = 0.348 printed as 0.213',
+            'gravity_r0_dual': (8.13, 8.277),
+            'eddington_footer': 0.430,                       # arithmetic EXACT
+        },
+        'formula': 'd_geo = d_g*(1+eps_UA); M_app = M*(1 + SSq*beta_i*F_TRZ)',
+        'source': 'PAPER_126',
+        'residual_pct': abs(4.154 * (1 + SSQ * BETA_I * F_TRZ) - 4.3) / 4.3 * 100,
         'status': 'OPEN_RULING',
     }

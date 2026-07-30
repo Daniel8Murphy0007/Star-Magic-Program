@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 129 (11 ✓, 118 ⚠ OPEN_RULING)
+- **Wired:** 130 (11 ✓, 119 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2126
+- **Not yet touched:** 2125
 
 ---
 
@@ -478,7 +478,7 @@
 | ⬜ | PAPER_1267 | PTA SGWB SPECTRAL INDEX |
 | ⬜ | PAPER_1268 | MULTIMESSENGER NU PHOTON DELAY |
 | ⬜ | PAPER_1269 | ORIGIN OF LIFE ABIOGENESIS |
-| ⬜ | PAPER_126 | UQFF MasterBuoyancy Gaia SgrA Calibration |
+| ⚠ | PAPER_126 | UQFF MasterBuoyancy Gaia SgrA Calibration |
 | ⬜ | PAPER_1270 | ORIGIN OF MASS HIGGS VEV |
 | ⬜ | PAPER_1271 | CC FINE TUNING 120 ORDERS |
 | ⬜ | PAPER_1272 | VACUUM STABILITY |
