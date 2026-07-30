@@ -781,3 +781,8 @@ observable,muge_cycle3_architecture,paper,PAPER_145,12-term registry
 primitive,F_TRZ,observable,muge_cycle3_architecture,boundary term + Newton limit
 observable,muge_cycle3_architecture,paper,PAPER_140,vacuum-split rectification
 observable,muge_cycle3_forks,paper,PAPER_145,k4 + g-identification
+observable,muge12_term_derivations,paper,PAPER_146,term derivations
+primitive,F_TRZ,observable,muge12_term_derivations,boundary + (1+fTRZ)
+observable,muge12_term_derivations,paper,PAPER_145,architecture companion
+observable,muge12_form_forks,paper,PAPER_146,form forks
+observable,muge12_form_forks,paper,PAPER_139,Ug4i collision

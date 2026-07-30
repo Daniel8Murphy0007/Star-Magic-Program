@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.148.0"
-description = "UQFF Star-Magic-Program v0.148.0: PAPER_145 wired - MUGE Cycle 3 opens sec 2.2 (12-term resonance registry + 7-system table; SELF-RECTIFICATION No. 12: vacuum split resolves PAPER_140 DE conflation + J/m3 relabel; k4 fork 1.0-vs-2.0; MUGE-g identification OPEN - values 21/23 orders from physical gravities). Q-141 queued. Wired 149/2255, gate 996/0. Registry 370 rows / 781 edges / 149 ledgers."
+version = "0.149.0"
+description = "UQFF Star-Magic-Program v0.149.0: PAPER_146 wired - 12-term MUGE derivations (Osc period 19.9 yr + Evac ratio 10 EXACT; fTRZ additive-vs-multiplicative form fork; Ug4i naming collision direct-vs-inverse; aDPM units hand-waved - feeds the MUGE-g identification). GATE CROSSES 1,000 ASSERTIONS (1002/0). Q-142 queued. Wired 150/2255. Registry 372 rows / 786 edges / 150 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

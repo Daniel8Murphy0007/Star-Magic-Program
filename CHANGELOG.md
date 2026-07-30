@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.149.0] — 2026-07-30 — BAND 1: PAPER_146 — GATE CROSSES 1,000
+
+### Added
+- **PAPER_146 dispatch** (12-term MUGE derivations, sec 2.2):
+  term-by-term first-principles chains (FDPM driver through
+  fTRZ boundary) with the regime dominance map (fluid at
+  compact objects, aDPM at SMBH) — the wiring registry for
+  147-156. EXACT: Osc aether period 19.9 yr; Evac ratio 10 =
+  monopole link. FORKS: fTRZ additive-vs-multiplicative
+  (dimensionless 0.1 summed with m/s²; own prose implies
+  (1+fTRZ)); 10%-vs-40/60 internal inconsistency; Ug4i naming
+  collision (direct here vs inverse in 139/121); aDPM units
+  hand-waved ("normalization by system mass" unstated — root
+  of the Q-141c g-identification). Honest g_Newt comparison
+  column acknowledged. Paper 150 of 2,255 wired.
+- OPEN_RULING Q-142. **GATE CROSSES 1,000 ASSERTIONS (1,002).**
+- Gate: 1,002 assertions, 0 failures. Registry: 372 rows / 786 edges / 150 ledgers.
+
+---
+
 ## [0.148.0] — 2026-07-30 — BAND 1: PAPER_145 — §2.2 OPENS, VACUUM SPLIT
 
 ### Added

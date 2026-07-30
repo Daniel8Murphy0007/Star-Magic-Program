@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.148.0"
+VERSION = "0.149.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7735,5 +7735,61 @@ def _paper_145(dataset):
         'formula': 'g = aDPM + aTHz + avac_diff + ... + fTRZ (12 terms); FDPM = I*A*(w1-w2)',
         'source': 'PAPER_145',
         'residual_pct': abs((10 * RHO_SCM - RHO_SCM) - 6.381e-36) / 6.381e-36 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_146')
+def _paper_146(dataset):
+    """12-Term MUGE Derivations (S0, sec 2.2).
+
+    Term-by-term first-principles derivations for the Cycle 3
+    master equation (companion to PAPER_145): FDPM vortical
+    driver -> THz cascade -> vac-diff -> Heaviside super-freq
+    -> aether-res (x(1+fTRZ)) -> Ug4i -> quantum/Aether/fluid
+    freq -> Osc -> Hubble -> fTRZ boundary. Dominance map by
+    regime (fluid at compact objects, aDPM at SMBH). VERIFIED:
+    Osc period 2pi/omega_i = 19.9 yr EXACT; Evac ratio 10 =
+    monopole ratio (140 link); DeltaEvac lineage EXACT.
+    FTRZ FORM FORK (Q-142a): the master equation SUMS the
+    dimensionless fTRZ = 0.1 with accelerations (Term 12
+    additive), while the paper's own sec 3.12 prose reads it
+    multiplicatively ("adds ~10 pct deviation" = (1+fTRZ)
+    factor, and the fTRZ->0 Newton limit). Form-vs-intent
+    fork; extends the Q-135c MUGE dimensional family. ALSO
+    "10 pct deviation consistent with the 40/60 bridge" is an
+    internal inconsistency (10 != 40).
+    UG4I NAMING COLLISION (Q-142b): Term 6 Ug4i here = the
+    DIRECT vacuum term rho_SCm*(M/d)*e^-at*cos - NOT
+    PAPER_139/121's INVERSE 1/Ug4. One symbol, two different
+    quantities across sec 2.1/2.2.
+    ADPM UNITS OPEN (Q-142c): the paper's own dimensional
+    check hand-waves "reduces to m/s2 for appropriate
+    normalization by system mass" - normalization unstated;
+    feeds the Q-141c MUGE-g identification. Sgr A* g_Newt at
+    1 AU table slip (chain 2.4e4 vs printed 3.6e10).
+    Honest framing: MUGE-vs-Newton gaps embraced as feature
+    (extreme-source prediction), g_Newt column added.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.2 (12-term derivations)',
+            'osc_period_yr': 2 * _m.pi / 1e-8 / 3.156e7,     # 19.9 EXACT
+            'evac_ratio': 10.0,                              # monopole link EXACT
+            'ftrz_form_fork': 'additive Term 12 vs (1+fTRZ) multiplicative intent',
+            'ten_vs_forty': '10 pct fTRZ deviation claimed consistent with 40/60 - inconsistent',
+            'ug4i_collision': 'direct vacuum term here vs inverse 1/Ug4 (139/121)',
+            'adpm_units': 'hand-waved normalization by system mass - unstated (Q-141c feed)',
+            'dominance_map': {'magnetar': 'afluid_freq', 'SMBH': 'aDPM',
+                              'SFR': 'afluid_freq', 'cosmological': 'aexp+aDPM'},
+            'sgra_gnewt_slip': (2.4e4, 3.6e10),              # chain vs table at 1 AU
+            'newton_limit': 'fTRZ->0 -> GM/r^2 (PAPER_155 forward ref)',
+            'ns_bridge': 'afluid bounded -> cascade closed (PAPER_154 forward ref)',
+            'honest_framing': 'MUGE-vs-Newton gaps embraced as extreme-source feature',
+        },
+        'formula': '12 term forms registered; aDPM = FDPM*fDPM*Evac*c*Vsys; FDPM = I*A*(w1-w2)',
+        'source': 'PAPER_146',
+        'residual_pct': abs(2 * _m.pi / 1e-8 / 3.156e7 - 19.9) / 19.9 * 100,
         'status': 'OPEN_RULING',
     }

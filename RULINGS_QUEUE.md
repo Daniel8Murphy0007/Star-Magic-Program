@@ -3142,6 +3142,37 @@ RESOLVED section with the ruling recorded.
   ahead of the 146-156 wiring run.
 - **Daniel's ruling:** (pending)
 
+### Q-142 — PAPER_146 12-Term Derivations — fTRZ form fork + Ug4i collision
+- **Question:** (a) FTRZ FORM FORK: the master equation SUMS
+  the dimensionless fTRZ = 0.1 with m/s2 accelerations
+  (additive Term 12), while the paper's own sec 3.12 prose
+  reads it MULTIPLICATIVELY ("fTRZ = 0.1 adds ~10 pct
+  deviation from GR" and the fTRZ->0 Newton recovery both
+  imply a (1+fTRZ) factor). Which form is canonical?
+  (Extends the Q-135c MUGE dimensional-family ruling.) Also
+  the claim that the 10 pct deviation is "consistent with
+  the 40/60 bridge" is internally inconsistent (10 != 40).
+  (b) UG4I NAMING COLLISION: Term 6 "Ug4i" here is the
+  DIRECT vacuum term rho_SCm*(M/d)*e^-at*cos(pi t_n), while
+  PAPER_139/121 define Ug4i = 1/Ug4 (inverse void). One
+  symbol, two quantities across sec 2.1/2.2 - rename one or
+  rule the sec 2.2 usage supersedes.
+  (c) ADPM UNITS: the paper's own dimensional check
+  hand-waves "reduces to m/s2 for appropriate normalization
+  by system mass" - the normalization is unstated. This is
+  the root of the Q-141c MUGE-g identification question.
+  Sgr A* g_Newt-at-1-AU table slip (chain 2.4e4 vs printed
+  3.6e10) noted.
+- **Notable:** Osc aether period 19.9 yr EXACT; Evac ratio
+  10 links cleanly to the monopole origin (140); the regime
+  dominance map is the useful wiring registry for 147-156;
+  the g_Newt comparison column and embraced-gap framing are
+  honest.
+- **Best-candidate wired:** term registry + dominance map;
+  both forks and the units hand-wave pinned ahead of the
+  system papers.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

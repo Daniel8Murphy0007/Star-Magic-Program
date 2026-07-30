@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.148.0", "uqff_calculator.VERSION = 0.148.0")
+assert_that(C.VERSION == "0.149.0", "uqff_calculator.VERSION = 0.149.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2181,6 +2181,19 @@ assert_that(_r145['k4_fork'] == (1.0, 2.0),
 assert_that(_r145['seven_systems']['SGR1745'] < 1e-8 and _r145['seven_systems']['SgrA'] > 1e29,
             "PAPER_145: MUGE-g identification OPEN - 21/23 orders from physical gravities (Q-141c)")
 assert_that(C.wired_count() >= 149, "wired_count >= 149")
+
+_r146 = C.calc('PAPER_146')['value']
+assert_that(abs(_r146['osc_period_yr'] - 19.9) < 0.1,
+            "PAPER_146: Osc aether period 19.9 yr EXACT")
+assert_that(_r146['evac_ratio'] == 10.0,
+            "PAPER_146: Evac_neb/Evac_ISM = 10 = monopole ratio (PAPER_140 link)")
+assert_that('additive' in _r146['ftrz_form_fork'],
+            "PAPER_146: fTRZ additive-vs-multiplicative form fork pinned (Q-142a)")
+assert_that('inverse' in _r146['ug4i_collision'],
+            "PAPER_146: Ug4i naming collision (direct vs 139/121 inverse) pinned (Q-142b)")
+assert_that(_r146['sgra_gnewt_slip'][1] / _r146['sgra_gnewt_slip'][0] > 1e5,
+            "PAPER_146: Sgr A* g_Newt-at-1AU table slip pinned")
+assert_that(C.wired_count() >= 150, "wired_count >= 150")
 
 # =============================================================================
 # REPORT

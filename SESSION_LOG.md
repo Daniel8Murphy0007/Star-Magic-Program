@@ -1818,3 +1818,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 149/2,255 (11 ✓, 138 ⚠). Next: PAPER_146.
 
 ---
+
+## 2026-07-30 — v0.149.0 — BAND 1: PAPER_146
+
+- PAPER_146 wired (⚠ Q-142): 12-term derivations. Dominance
+  map registered; fTRZ form fork + Ug4i collision + aDPM
+  units pinned. GATE CROSSES 1,000 (1,002/0). Paper 150 wired.
+- Campaign: 150/2,255 (11 ✓, 139 ⚠). Next: PAPER_147.
+
+---

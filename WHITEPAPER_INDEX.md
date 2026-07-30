@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 149 (11 ✓, 138 ⚠ OPEN_RULING)
+- **Wired:** 150 (11 ✓, 139 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2106
+- **Not yet touched:** 2105
 
 ---
 
@@ -698,7 +698,7 @@
 | ⬜ | PAPER_1467 | BUCKET J VAC STABILITY |
 | ⬜ | PAPER_1468 | BUCKET J HIGGS TRILINEAR |
 | ⬜ | PAPER_1469 | BUCKET K EW VACUUM DECAY |
-| ⬜ | PAPER_146 | UQFF SuperconductiveResonance 12Term MUGE Master Equation |
+| ⚠ | PAPER_146 | UQFF SuperconductiveResonance 12Term MUGE Master Equation |
 | ⬜ | PAPER_1470 | BUCKET K QUANTUM SUPREMACY |
 | ⬜ | PAPER_1471 | INVERSE GALOIS |
 | ⬜ | PAPER_1472 | DPM RESONANCE 40HZ |

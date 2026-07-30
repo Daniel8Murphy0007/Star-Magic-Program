@@ -1,31 +1,32 @@
-v0.148.0 BAND 1: PAPER_145 wired - SEC 2.2 OPENS + VACUUM SPLIT
+v0.149.0 BAND 1: PAPER_146 wired - GATE CROSSES 1,000 ASSERTIONS
 
-PAPER_145 UQFF MUGE Compression Cycle 3 (OPEN_RULING Q-141) -
-opens sec 2.2 (07b7f7a6 thread):
-  12-term Superconductive Resonance architecture: aDPM driver
-  (FDPM = I*A*(omega1-omega2)) + THz cascade + vac-diff +
-  super-freq + aether-res + Ug4i + quantum/Aether/fluid freq
-  + Osc + expansion + fTRZ boundary. Constants table +
-  7-system validation (23 OOM span). fTRZ->0 recovers GM/r^2
-  as Step-10 observational projection - consistent with the
-  predecessor dpm_helpers doctrine.
+PAPER_146 UQFF 12-Term MUGE Derivations (OPEN_RULING Q-142):
+  sec 2.2: term-by-term first-principles chains for the Cycle
+  3 master equation, with the regime dominance map (fluid at
+  compact objects / aDPM at SMBH / expansion at cosmological)
+  - the wiring registry for PAPER_147-156.
 
-  SELF-RECTIFICATION No. 12: the constants table SPLITS
-  rho_vac_UA = 6e-27 kg/m3 (~ Planck DE) from Evac_neb =
-  7.09e-36 J/m3 - resolving PAPER_140's 8.9-order DE
-  conflation (Q-136 annotated) AND relabeling the vacuum
-  energies J/m3 (predecessor-native direction).
+  VERIFIED EXACT: Osc aether period 2pi/omega_i = 19.9 yr;
+  Evac_neb/Evac_ISM = 10 = the monopole ratio (PAPER_140
+  link); DeltaEvac lineage.
 
-  K4 FORK: Cycle 3 k4 = 2.0 vs genesis 1.0 - ruling picks.
+  FTRZ FORM FORK: the master equation SUMS dimensionless
+  fTRZ = 0.1 with accelerations, while the paper's own prose
+  reads it multiplicatively ((1+fTRZ), ~10 pct GR deviation,
+  fTRZ->0 Newton recovery). Also "10 pct consistent with the
+  40/60 bridge" is internally inconsistent. Extends Q-135c.
 
-  MUGE-G IDENTIFICATION OPEN: the 7-system g values are
-  unmappable as surface gravities (SGR1745 21 orders below a
-  real NS surface; Sgr A* 23 above Newtonian-at-horizon).
-  What MUGE-g IS decides how PAPER_146-156 get wired.
-  Westerlund = Tapestry clone + /5-/4 scaling noted.
+  UG4I NAMING COLLISION: Term 6 Ug4i = DIRECT vacuum term
+  here vs 1/Ug4 INVERSE in PAPER_139/121 - one symbol, two
+  quantities across sec 2.1/2.2.
 
-  DeltaEvac = 6.381e-36 EXACT. Block-8 catch fixed in-flight.
+  ADPM UNITS OPEN: dimensional check hand-waves an unstated
+  mass normalization - the root of the Q-141c MUGE-g
+  identification. Honest g_Newt column + embraced-gap framing
+  acknowledged.
 
-Q-141 queued. Gate 996 assertions 0 failures. Registry 370 rows /
-781 edges / 149 citation ledgers. Wired 149/2,255 (11 clean, 138
-OPEN_RULING). Next: PAPER_146.
+  MILESTONES: paper 150 of 2,255 wired; GATE CROSSES 1,000
+  ASSERTIONS (1,002, 0 failures).
+
+Q-142 queued. Registry 372 rows / 786 edges / 150 ledgers.
+Wired 150/2,255 (11 clean, 139 OPEN_RULING). Next: PAPER_147.
