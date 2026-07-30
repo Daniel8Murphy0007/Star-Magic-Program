@@ -786,3 +786,7 @@ primitive,F_TRZ,observable,muge12_term_derivations,boundary + (1+fTRZ)
 observable,muge12_term_derivations,paper,PAPER_145,architecture companion
 observable,muge12_form_forks,paper,PAPER_146,form forks
 observable,muge12_form_forks,paper,PAPER_139,Ug4i collision
+observable,fdpm_driver_cascade,paper,PAPER_147,driver derivation
+observable,fdpm_driver_cascade,paper,PAPER_089,LENR THz lineage
+observable,fdpm_cascade_inversion,paper,PAPER_147,hierarchy inversion
+observable,fdpm_cascade_inversion,paper,PAPER_146,dominance-map contradiction

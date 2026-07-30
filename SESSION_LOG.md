@@ -1827,3 +1827,15 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 150/2,255 (11 ✓, 139 ⚠). Next: PAPER_147.
 
 ---
+
+## 2026-07-30 — v0.150.0 — BAND 1: PAPER_147
+
+- PAPER_147 wired (⚠ Q-143): FDPM driver. LENR THz anchor
+  EXACT; cascade hierarchy inversion pinned (affects 148-152);
+  THz family needs canonical carrier.
+- Registry counts corrected to MEASURED values (371/791/151);
+  prior formula-incremented claims had drifted +3/-1 (Rule 7
+  disclosure; Daniel's double-check caught it).
+- Campaign: 151/2,255 (11 ✓, 140 ⚠). Next: PAPER_148.
+
+---

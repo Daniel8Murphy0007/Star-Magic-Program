@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.149.0"
+VERSION = "0.150.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7791,5 +7791,55 @@ def _paper_146(dataset):
         'formula': '12 term forms registered; aDPM = FDPM*fDPM*Evac*c*Vsys; FDPM = I*A*(w1-w2)',
         'source': 'PAPER_146',
         'residual_pct': abs(2 * _m.pi / 1e-8 / 3.156e7 - 19.9) / 19.9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_147')
+def _paper_147(dataset):
+    """FDPM Vortical Driver Derivation (S0, sec 2.2).
+
+    Level-1/2/3 cascade: FDPM = I*A*(omega1-omega2) ->
+    aDPM -> aTHz -> avac_diff, with the LENR THz anchor
+    (1.18 THz observed vs 1.2 predicted = 1.7 pct EXACT,
+    PAPER_089 lineage). avac_diff/aDPM = 1e-7 at stellar
+    winds EXACT (subdominant, consistent).
+    CASCADE HIERARCHY INVERSION (Q-143a): the paper's own
+    arithmetic gives aTHz = 3.33e9 x aDPM at vexp = 1e5 m/s
+    (and ~3e12 x at Sgr A* accretion speeds) - the Level-2
+    term exceeds its OWN Level-1 driver by 9-12 orders,
+    contradicting the 145/146 dominance map that has aDPM
+    dominant at Sgr A*. Either the aTHz form needs a
+    normalizer or the dominance table is mislabeled.
+    FDPM DOUBLE-COUNT (Q-143b): I = rho*<r>*A*dOmega already
+    contains A and dOmega; FDPM = I*A*dOmega then carries
+    A^2*dOmega^2 - derivation-chain double-counting.
+    ADPM(SGRA*) UNREPRODUCIBLE (Q-143c): 4.105e29 carried
+    from 145 but FDPM and Vsys are only given qualitatively
+    ("large") - not derivable from in-paper inputs.
+    THZ FAMILY (Q-143d): fDPM = 1.0 THz here / LENR 1.18-1.2
+    / predecessor omega_SCm = 1.25 THz - four values in the
+    corpus THz family; one canonical carrier needed.
+    Placeholder citations "arXiv:2408.xxxxx" (twice) pinned.
+    """
+    return {
+        'value': {
+            'domain': '2.2 (FDPM driver)',
+            'cascade': 'FDPM -> aDPM -> aTHz -> avac_diff',
+            'athz_over_adpm_stellar': 1e12 * 10 * (1e5 / 3e8),   # 3.33e9 EXACT
+            'athz_over_adpm_sgra': 1e12 * 10 * (9e7 / 3e8),      # 3e12
+            'hierarchy_inversion': 'Level-2 exceeds Level-1 driver by 9-12 orders - dominance map contradiction',
+            'avac_over_adpm': 0.9 * (1e5 / 3e8) ** 2,            # 1e-7 EXACT
+            'lenr_thz_err_pct': abs(1.2 - 1.18) / 1.18 * 100,    # 1.69 EXACT
+            'thz_family': (1.0, 1.18, 1.2, 1.25),                # THz values corpus-wide
+            'fdpm_double_count': 'A and dOmega appear in I and again in FDPM = I*A*dOmega',
+            'adpm_sgra_carried': 4.105e29,
+            'adpm_status': 'unreproducible from in-paper inputs (FDPM/Vsys qualitative)',
+            'placeholder_citations': 'arXiv:2408.xxxxx x2',
+            'sgr1745_inputs': {'mass_kg': 2.8e30, 'radius_m': 1.2e4, 'B_T': 3e11},
+        },
+        'formula': 'FDPM = I*A*(w1-w2); aDPM = FDPM*fDPM*Evac*c*Vsys; aTHz/aDPM = 10*fTHz*vexp/c',
+        'source': 'PAPER_147',
+        'residual_pct': abs(1e12 * 10 * (1e5 / 3e8) - 3.33e9) / 3.33e9 * 100,
         'status': 'OPEN_RULING',
     }

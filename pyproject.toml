@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.149.0"
-description = "UQFF Star-Magic-Program v0.149.0: PAPER_146 wired - 12-term MUGE derivations (Osc period 19.9 yr + Evac ratio 10 EXACT; fTRZ additive-vs-multiplicative form fork; Ug4i naming collision direct-vs-inverse; aDPM units hand-waved - feeds the MUGE-g identification). GATE CROSSES 1,000 ASSERTIONS (1002/0). Q-142 queued. Wired 150/2255. Registry 372 rows / 786 edges / 150 ledgers."
+version = "0.150.0"
+description = "UQFF Star-Magic-Program v0.150.0: PAPER_147 wired - FDPM vortical driver (LENR THz anchor 1.7 pct EXACT; CASCADE INVERSION - aTHz = 3.3e9-3e12 x its own driver, contradicting the dominance map; FDPM double-count; aDPM(SgrA) unreproducible; THz family 4 values needs canonical carrier). Q-143 queued. Wired 151/2255, gate 1008/0. Registry 371 rows / 791 edges / 151 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

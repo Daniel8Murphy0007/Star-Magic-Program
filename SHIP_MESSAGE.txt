@@ -1,32 +1,31 @@
-v0.149.0 BAND 1: PAPER_146 wired - GATE CROSSES 1,000 ASSERTIONS
+v0.150.0 BAND 1: PAPER_147 wired - CASCADE HIERARCHY INVERSION
 
-PAPER_146 UQFF 12-Term MUGE Derivations (OPEN_RULING Q-142):
-  sec 2.2: term-by-term first-principles chains for the Cycle
-  3 master equation, with the regime dominance map (fluid at
-  compact objects / aDPM at SMBH / expansion at cosmological)
-  - the wiring registry for PAPER_147-156.
+PAPER_147 UQFF FDPM Vortical Driver (OPEN_RULING Q-143):
+  sec 2.2: FDPM = I*A*(omega1-omega2) derivation + the
+  Level 1-3 cascade (aDPM -> aTHz -> avac_diff), anchored to
+  the LENR THz signature.
 
-  VERIFIED EXACT: Osc aether period 2pi/omega_i = 19.9 yr;
-  Evac_neb/Evac_ISM = 10 = the monopole ratio (PAPER_140
-  link); DeltaEvac lineage.
+  VERIFIED EXACT: LENR anchor 1.18 vs 1.2 THz = 1.7 pct
+  (PAPER_089 lineage - nuclear-to-astrophysical through one
+  frequency); avac_diff/aDPM = 1e-7 (subdominance clean).
 
-  FTRZ FORM FORK: the master equation SUMS dimensionless
-  fTRZ = 0.1 with accelerations, while the paper's own prose
-  reads it multiplicatively ((1+fTRZ), ~10 pct GR deviation,
-  fTRZ->0 Newton recovery). Also "10 pct consistent with the
-  40/60 bridge" is internally inconsistent. Extends Q-135c.
+  CASCADE HIERARCHY INVERSION: the paper's own arithmetic
+  gives aTHz = 3.33e9 x aDPM at stellar winds and ~3e12 x at
+  Sgr A* accretion speeds - the Level-2 term exceeds its OWN
+  driver by 9-12 orders, contradicting the 145/146 dominance
+  map (aDPM listed dominant at Sgr A*). Ruling affects all
+  148-152 system wirings.
 
-  UG4I NAMING COLLISION: Term 6 Ug4i = DIRECT vacuum term
-  here vs 1/Ug4 INVERSE in PAPER_139/121 - one symbol, two
-  quantities across sec 2.1/2.2.
+  Also pinned: FDPM double-count (A and dOmega appear in I
+  and again in FDPM - quadratic coupling or slip?);
+  aDPM(SgrA*) = 4.105e29 unreproducible (FDPM/Vsys only
+  qualitative); THz family now FOUR values (fDPM 1.0 / LENR
+  1.18 / predicted 1.2 / predecessor omega_SCm 1.25) - one
+  canonical carrier needed; placeholder "arXiv:2408.xxxxx"
+  citations (resolve to 089's 2408.15233?).
 
-  ADPM UNITS OPEN: dimensional check hand-waves an unstated
-  mass normalization - the root of the Q-141c MUGE-g
-  identification. Honest g_Newt column + embraced-gap framing
-  acknowledged.
-
-  MILESTONES: paper 150 of 2,255 wired; GATE CROSSES 1,000
-  ASSERTIONS (1,002, 0 failures).
-
-Q-142 queued. Registry 372 rows / 786 edges / 150 ledgers.
-Wired 150/2,255 (11 clean, 139 OPEN_RULING). Next: PAPER_147.
+Q-143 queued. Gate 1,008 assertions 0 failures. Registry 371
+rows / 791 edges / 151 ledgers (MEASURED - prior advertised
+counts had drifted +3 rows/-1 edge via formula-increment;
+corrected under Rule 7 after Daniel's double-check). Wired
+151/2,255 (11 clean, 140 OPEN_RULING). Next: PAPER_148.

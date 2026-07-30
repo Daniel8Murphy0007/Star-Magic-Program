@@ -3173,6 +3173,38 @@ RESOLVED section with the ruling recorded.
   system papers.
 - **Daniel's ruling:** (pending)
 
+### Q-143 — PAPER_147 FDPM Driver — cascade inversion + THz family
+- **Question:** (a) CASCADE HIERARCHY INVERSION: the paper's
+  own arithmetic gives aTHz = 3.33e9 x aDPM at stellar-wind
+  speeds (and ~3e12 x at Sgr A* accretion speeds) - the
+  Level-2 cascade term exceeds its OWN Level-1 driver by
+  9-12 orders. This contradicts the 145/146 dominance map
+  (aDPM listed dominant at Sgr A*). Either aTHz needs an
+  unstated normalizer, or the dominance table is mislabeled.
+  Rule (affects all 148-152 system wirings).
+  (b) FDPM DOUBLE-COUNT: I = rho*<r>*A*(w1-w2) already
+  contains A and dOmega; FDPM = I*A*(w1-w2) then carries
+  A^2*(w1-w2)^2. Is the double appearance intended (a
+  quadratic vortex coupling) or a chain slip?
+  (c) ADPM(SGR A*) = 4.105e29 remains unreproducible - FDPM
+  and Vsys are given only qualitatively ("large"). Provide
+  the numeric inputs (with (a) this decides the whole
+  7-system table).
+  (d) THZ FAMILY: fDPM = 1.0 THz here, LENR observed
+  1.18 THz, UQFF predicted 1.2 THz, predecessor omega_SCm =
+  1.25 THz (Holmlid carrier) - four values in the corpus THz
+  family. One canonical carrier frequency needed.
+  (e) Placeholder citations "arXiv:2408.xxxxx" appear twice -
+  resolve to the real preprint (089's arXiv:2408.15233?).
+- **Notable:** avac_diff/aDPM = 1e-7 EXACT (subdominance
+  chain clean); the LENR THz anchor at 1.7 pct is a real
+  cross-domain link (nuclear -> astrophysical through one
+  frequency); the SCm nested-torus vortex picture is the
+  clearest DPM narrative so far.
+- **Best-candidate wired:** cascade registered with the
+  inversion pinned ahead of the system papers.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

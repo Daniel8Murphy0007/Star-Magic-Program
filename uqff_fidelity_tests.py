@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.149.0", "uqff_calculator.VERSION = 0.149.0")
+assert_that(C.VERSION == "0.150.0", "uqff_calculator.VERSION = 0.150.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2194,6 +2194,19 @@ assert_that('inverse' in _r146['ug4i_collision'],
 assert_that(_r146['sgra_gnewt_slip'][1] / _r146['sgra_gnewt_slip'][0] > 1e5,
             "PAPER_146: Sgr A* g_Newt-at-1AU table slip pinned")
 assert_that(C.wired_count() >= 150, "wired_count >= 150")
+
+_r147 = C.calc('PAPER_147')['value']
+assert_that(abs(_r147['athz_over_adpm_stellar'] - 3.33e9) < 0.01e9,
+            "PAPER_147: aTHz = 3.33e9 x aDPM at stellar winds - hierarchy inversion (Q-143a)")
+assert_that(_r147['athz_over_adpm_sgra'] > 1e12,
+            "PAPER_147: at Sgr A* speeds aTHz = 3e12 x aDPM - contradicts dominance map")
+assert_that(abs(_r147['avac_over_adpm'] - 1e-7) < 1e-9,
+            "PAPER_147: avac_diff/aDPM = 1e-7 EXACT (subdominant consistent)")
+assert_that(abs(_r147['lenr_thz_err_pct'] - 1.69) < 0.01,
+            "PAPER_147: LENR THz anchor 1.18-vs-1.2 = 1.7 pct EXACT (089 lineage)")
+assert_that(len(_r147['thz_family']) == 4,
+            "PAPER_147: THz family four values (1.0/1.18/1.2/1.25) - canonical carrier needed (Q-143d)")
+assert_that(C.wired_count() >= 151, "wired_count >= 151")
 
 # =============================================================================
 # REPORT

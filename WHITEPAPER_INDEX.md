@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 150 (11 ✓, 139 ⚠ OPEN_RULING)
+- **Wired:** 151 (11 ✓, 140 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2105
+- **Not yet touched:** 2104
 
 ---
 
@@ -709,7 +709,7 @@
 | ⬜ | PAPER_1477 | PROTON ORBITAL 1 78HZ |
 | ⬜ | PAPER_1478 | REACTOR 3RPM MINIMUM |
 | ⬜ | PAPER_1479 | LEVEL 13 BH RADIUS |
-| ⬜ | PAPER_147 | UQFF FDPM VorticalResonance DPM Driver Aether Coupling |
+| ⚠ | PAPER_147 | UQFF FDPM VorticalResonance DPM Driver Aether Coupling |
 | ⬜ | PAPER_1480 | F UMR UNIVERSAL MAGNETIC RESONANCE |
 | ⬜ | PAPER_1481 | V LITTLE V BIG 1 OVER 33 |
 | ⬜ | PAPER_1482 | F UB BUOYANCY 22MHZ |

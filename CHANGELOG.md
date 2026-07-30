@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.150.0] — 2026-07-30 — BAND 1: PAPER_147 — CASCADE INVERSION
+
+### Added
+- **PAPER_147 dispatch** (FDPM vortical driver, sec 2.2):
+  Level 1-3 cascade derivations with the LENR THz anchor
+  (1.18 vs 1.2 THz = 1.7% EXACT, 089 lineage) and
+  avac_diff/aDPM = 1e-7 EXACT. CASCADE HIERARCHY INVERSION:
+  the paper's own arithmetic gives aTHz = 3.33e9x its own
+  driver at stellar winds (3e12x at Sgr A*) — contradicting
+  the 145/146 dominance map; ruling affects all 148-152
+  system wirings. FDPM double-count (A, dOmega twice);
+  aDPM(SgrA*) = 4.105e29 unreproducible from in-paper inputs;
+  THz family now 4 values (1.0/1.18/1.2/1.25 — canonical
+  carrier needed); placeholder arXiv citations pinned.
+- OPEN_RULING Q-143.
+- Gate: 1,008 assertions, 0 failures. Registry: 371 rows / 791
+  edges / 151 ledgers — MEASURED from disk this release; prior
+  advertised counts had drifted by formula-increment (+3 rows /
+  −1 edge accumulated). Counts are grep/csv-measured from here
+  on (Rule 7, same lesson as the v0.63.0 badge audit).
+
+---
+
 ## [0.149.0] — 2026-07-30 — BAND 1: PAPER_146 — GATE CROSSES 1,000
 
 ### Added
