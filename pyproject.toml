@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.143.0"
-description = "UQFF Star-Magic-Program v0.143.0: PAPER_140 wired - dual-monopole ratio origin (ratio = 10 = 1/F_TRZ EXACT; TWO predecessor convergences: N_monopole = SO_FIVE ~ F_TRZ = 1/|SO(5)| and factor 11 = SO_5+1 Lambda-route coefficient; dark-energy identification 8.9 orders off marked Exact - overclaim pinned; clean code No. 3). Q-136 queued. Wired 144/2255, gate 963/0. Registry 360 rows / 760 edges / 144 ledgers."
+version = "0.144.0"
+description = "UQFF Star-Magic-Program v0.144.0: PAPER_141 wired - H2O azeotrope salinity (E_rot + Henry + gas table EXACT; Buoy_term code-calibrated after THREE failed chains honestly disclosed; Azeo_void = 0.2 = 2/SO_FIVE - second independent 1/5 appearance pairing with PAPER_123 winding; daily-alpha used constructively). Q-137 queued. Wired 145/2255, gate 970/0. Registry 362 rows / 764 edges / 145 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.143.0", "uqff_calculator.VERSION = 0.143.0")
+assert_that(C.VERSION == "0.144.0", "uqff_calculator.VERSION = 0.144.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2110,6 +2110,21 @@ assert_that(_r140['dark_energy_claim_orders'] > 8,
 assert_that(_r140['muge_factor_21'] == 21,
             "PAPER_140: MUGE-H factor 21 = 1+10+10 consistent with PAPER_139")
 assert_that(C.wired_count() >= 144, "wired_count >= 144")
+
+_r141 = C.calc('PAPER_141')['value']
+assert_that(abs(_r141['e_rot_j'] - 2.125e29) < 0.001e29,
+            "PAPER_141: E_rot = 2.125e29 J EXACT")
+assert_that(abs(_r141['henry_correction'] - 1.29e-29) < 0.01e-29,
+            "PAPER_141: Henry correction 1.29e-29 EXACT (below-precision honesty)")
+assert_that(abs(_r141['gas_table_mm']['H2'] - 62.4) < 0.1,
+            "PAPER_141: gas table EXACT (4 gases)")
+assert_that(abs(_r141['azeo_primitive'] - 0.2) < 1e-15,
+            "PAPER_141: Azeo_void = 0.2 = 2/SO_FIVE - second independent 1/5 appearance (Q-137b)")
+assert_that(len(_r141['failed_chains']) == 3,
+            "PAPER_141: Buoy_term code-calibrated - three failed chains honestly disclosed (Q-137a)")
+assert_that(abs(_r141['ug4_prefactor'] - 9.42e-18) < 0.01e-18,
+            "PAPER_141: Ug4 oceanic prefactor 9.42e-18 EXACT (attenuation constructive)")
+assert_that(C.wired_count() >= 145, "wired_count >= 145")
 
 # =============================================================================
 # REPORT

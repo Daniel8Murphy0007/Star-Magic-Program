@@ -2980,6 +2980,39 @@ RESOLVED section with the ruling recorded.
   convergences exposed; overclaim + dual value pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-137 — PAPER_141 H2O Azeotrope — code-calibrated Buoy_term + 1/5 pair
+- **Question:** (a) BUOY_TERM CODE-CALIBRATED: the paper
+  openly shows THREE failed derivation chains (2.31e-44 ->
+  1.77e-80 -> rescaled 6.6e-63) before citing Buoy_term =
+  1.262e-28 as "the validated numerical from
+  CondensedPhysics2.py" - exemplary Rule 7 failure
+  disclosure, but the value is code-sourced. Provide the
+  CondensedPhysics2 Buoy derivation, or mark Buoy_term
+  calibrated. (Title prints 1.262e-8 vs body 1.262e-28 -
+  exponent mojibake.)
+  (b) AZEO_VOID = 1/5 PAIR: 0.2 = 2/SO_FIVE - the SAME value
+  as PAPER_123's winding number dn = 1/5. Two independent
+  1/5 appearances (vortex winding topology + H-bond void
+  fraction). Coincidence or a 2/SO_five primitive constant?
+  (Joins the F_TRZ-power ladder inquiry family.)
+  (c) Flags: t_Earth = 1.461e6 days = 4,000 yr (odd anchor -
+  the Ug4 ~ 0 conclusion is robust for any large t, but what
+  is 4,000 yr?); deep-ocean H2 partial pressure "80 atm" is
+  unphysical for open ocean (~1e-9 atm; hydrothermal/lab
+  value?) - the 62.4 mM H2 row rests on it.
+  (d) CONSTRUCTIVE DAILY-ALPHA: unlike Q-130b/Q-131a where
+  the daily alpha broke Gyr claims, here the attenuation is
+  USED (Ug4 -> 0 at Earth, rotation/Ub takes over) - a
+  consistent framework reading that may inform the alpha
+  ruling.
+- **Notable:** E_rot = 2.125e29 J EXACT; Henry correction
+  1.29e-29 EXACT with honest below-precision disclosure; all
+  four gas-table products EXACT; the geological gas-ratio
+  stability claim is the distinctive falsifiable content.
+- **Best-candidate wired:** mechanism + EXACT chains;
+  code-calibration and 1/5 pair registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

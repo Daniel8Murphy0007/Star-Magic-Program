@@ -1772,3 +1772,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 144/2,255 (11 ✓, 133 ⚠). Next: PAPER_141.
 
 ---
+
+## 2026-07-30 — v0.144.0 — BAND 1: PAPER_141
+
+- PAPER_141 wired (⚠ Q-137): H2O azeotrope. Chains EXACT;
+  Buoy_term code-calibrated (3 failed chains disclosed);
+  Azeo_void = 2/SO_FIVE second 1/5 appearance; constructive
+  daily-alpha noted.
+- Campaign: 145/2,255 (11 ✓, 134 ⚠). Next: PAPER_142.
+
+---

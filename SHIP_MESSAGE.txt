@@ -1,31 +1,30 @@
-v0.143.0 BAND 1: PAPER_140 wired - RATIO ORIGIN + SO_5 CONVERGENCES
+v0.144.0 BAND 1: PAPER_141 wired - SECOND 1/5 APPEARANCE
 
-PAPER_140 UQFF Dual Monopole Ratio [(UA')]:[SCm] = 10
-(OPEN_RULING Q-136):
-  sec 2.1: THE ORIGIN PAPER for the corpus-wide 10:1 vacuum
-  ratio (= 1/F_TRZ), derived from the 10-mode di-pseudo-
-  monopole structure - not a free parameter.
+PAPER_141 UQFF H2O Azeotrope Oceanic Salinity (OPEN_RULING
+Q-137):
+  sec 2.1: azeotropic void (0.2) stabilized by Ub/Earth
+  rotation after Ug4 fully attenuates - the daily-alpha decay
+  used CONSTRUCTIVELY for once (Ug4 -> 0, rotation takes
+  over); may inform the alpha ruling family.
 
-  TWO PREDECESSOR CONVERGENCES:
-  1. N_monopole = 10 = SO_FIVE - aligning with the
-     predecessor identity F_TRZ = 1/|SO(5)| (PAPER_1160).
-  2. Magnetic factor (1 + ratio) = 11 = SO_FIVE + 1 - the
-     predecessor Lambda-route coefficient (PAPER_2094:
-     Lambda = (SO_5+1)*F_TRZ^53).
-  The genesis derivation and the predecessor primitive
-  identities converge on the same integers.
+  VERIFIED EXACT: E_rot = 2.125e29 J; Henry correction
+  1.29e-29 (honest below-precision disclosure); ALL FOUR
+  dissolved-gas products (H2 62.4 mM, N2 0.507, O2 0.273,
+  Ar 0.013); Ug4 oceanic prefactor 9.42e-18.
 
-  VERIFIED: ratio = 10 EXACT; factors 11 and 21 corpus-
-  consistent; CLEAN code block No. 3 (all reproduces).
+  BUOY_TERM CODE-CALIBRATED: the paper openly shows THREE
+  failed derivation chains before citing 1.262e-28 from
+  CondensedPhysics2 - exemplary Rule 7 failure disclosure;
+  derivation requested. (Title 1.262e-8 vs body 1.262e-28
+  exponent mojibake.)
 
-  DARK-ENERGY OVERCLAIM: sec 4 identifies 7.09e-36 kg/m3
-  with the Planck density (5.96e-27) via a non-chain and the
-  results table marks it "Exact" - 8.9 ORDERS apart. The
-  predecessor amplification chain supersedes. f_quantum
-  carries two values in one paper (8e-9 vs 4.85e-6).
+  AZEO_VOID = 1/5 PAIR: 0.2 = 2/SO_FIVE - the SAME value as
+  PAPER_123's vortex winding dn = 1/5. Two independent 1/5
+  appearances across domains - primitive candidate.
 
-  Block-8 literal catch fixed in-flight (RHO_SCM routing).
+  Flags: t_Earth = 4,000 yr odd anchor; deep-ocean H2 "80
+  atm" unphysical (hydrothermal/lab value?).
 
-Q-136 queued. Gate 963 assertions 0 failures. Registry 360 rows /
-760 edges / 144 citation ledgers. Wired 144/2,255 (11 clean, 133
-OPEN_RULING). Next: PAPER_141.
+Q-137 queued. Gate 970 assertions 0 failures. Registry 362 rows /
+764 edges / 145 citation ledgers. Wired 145/2,255 (11 clean, 134
+OPEN_RULING). Next: PAPER_142.

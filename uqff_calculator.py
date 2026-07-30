@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.143.0"
+VERSION = "0.144.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7450,5 +7450,59 @@ def _paper_140(dataset):
         'formula': 'ratio = rho_UA/rho_SCm = 10 (10-mode monopole); factors 11 and 21',
         'source': 'PAPER_140',
         'residual_pct': abs((10 * RHO_SCM) / RHO_SCM - 10) / 10 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_141')
+def _paper_141(dataset):
+    """H2O Azeotrope Oceanic Salinity (S0, sec 2.1).
+
+    Azeotropic void (Azeo_void = 0.2) stabilized by Ub/Earth
+    rotation after Ug4 fully attenuates at Earth (the daily-
+    alpha decay used CONSTRUCTIVELY: e^-730 ~ 0 -> rotation
+    takes over). VERIFIED EXACT: E_rot = 2.125e29 J; Henry
+    correction 1.29e-29; ALL FOUR gas-table products (H2 62.4
+    mM, N2 0.507, O2 0.273, Ar 0.013); Ug4 prefactor 9.42e-18.
+    BUOY_TERM CODE-CALIBRATED (Q-137a): the paper openly shows
+    THREE failed derivation chains (2.31e-44 -> 1.77e-80 ->
+    rescale 6.6e-63) before citing 1.262e-28 as "the validated
+    numerical from CondensedPhysics2" - exemplary Rule 7
+    failure disclosure, but the value is code-sourced, not
+    derived. Title prints 1.262e-8 vs body 1.262e-28
+    (exponent mojibake).
+    AZEO_VOID = 1/5 CANDIDATE (Q-137b): 0.2 = 2/SO_FIVE -
+    the SAME value as PAPER_123's winding number dn = 1/5.
+    Two independent 1/5 appearances (vortex winding + H-bond
+    void fraction) - primitive-decomposition candidate.
+    Flags: t_Earth = 1.461e6 days = 4,000 yr (odd anchor;
+    conclusion Ug4 ~ 0 robust for any large t); H2 partial
+    pressure "80 atm deep" unphysical for open ocean
+    (~1e-9 atm; looks hydrothermal/lab); Henry-correction
+    below-precision honesty disclosed.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.1 (oceanic azeotrope)',
+            'azeo_void': 0.2,
+            'azeo_primitive': 2 / 10,                        # 2/SO_FIVE = 1/5
+            'winding_echo': 'same 1/5 as PAPER_123 dn - two independent appearances',
+            'e_rot_j': 0.5 * 8.04e37 * (7.27e-5) ** 2,       # 2.125e29 EXACT
+            'henry_correction': 1.262e-28 / 9.81,            # 1.29e-29 EXACT
+            'gas_table_mm': {'H2': 62.4, 'N2': 0.507, 'O2': 0.273, 'Ar': 0.013},
+            'ug4_prefactor': RHO_SCM * 1.989e30 / 1.497e11,  # 9.42e-18 EXACT
+            'ug4_attenuated': 'e^-730.5 ~ 0 - daily-alpha used constructively',
+            'buoy_term': 1.262e-28,
+            'buoy_status': 'code-calibrated; THREE failed chains disclosed in-paper (Rule 7 exemplary)',
+            'failed_chains': (2.31e-44, 1.77e-80, 6.65e-63),
+            'title_body_mojibake': (1.262e-8, 1.262e-28),
+            't_earth_odd': '1.461e6 days = 4,000 yr anchor',
+            'h2_physicality': '80 atm deep-ocean H2 unphysical (open ocean ~1e-9 atm)',
+            'salinity_factor': 0.035,
+        },
+        'formula': 'Buoy = rho V g (1+Sal) family; C_UQFF = K_H P (1 + Buoy/g)',
+        'source': 'PAPER_141',
+        'residual_pct': abs(0.5 * 8.04e37 * (7.27e-5) ** 2 - 2.12e29) / 2.12e29 * 100,
         'status': 'OPEN_RULING',
     }

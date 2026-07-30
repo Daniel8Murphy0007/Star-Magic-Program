@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 144 (11 ✓, 133 ⚠ OPEN_RULING)
+- **Wired:** 145 (11 ✓, 134 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2111
+- **Not yet touched:** 2110
 
 ---
 
@@ -643,7 +643,7 @@
 | ⬜ | PAPER_1417 | CFL COLOR SUPERCONDUCTIVITY |
 | ⬜ | PAPER_1418 | CR ANKLE |
 | ⬜ | PAPER_1419 | CRAB TEV CUTOFF |
-| ⬜ | PAPER_141 | UQFF H2O Azeotrope OceanicSalinity Buoy Ug4 NOAAValidation |
+| ⚠ | PAPER_141 | UQFF H2O Azeotrope OceanicSalinity Buoy Ug4 NOAAValidation |
 | ⬜ | PAPER_1420 | BUCKET C DARK ENERGY TIME EVOLVE |
 | ⬜ | PAPER_1421 | BUCKET C CNUB |
 | ⬜ | PAPER_1422 | BUCKET C MISSING BARYONS |

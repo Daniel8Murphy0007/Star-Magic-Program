@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.144.0] — 2026-07-30 — BAND 1: PAPER_141 — SECOND 1/5 APPEARANCE
+
+### Added
+- **PAPER_141 dispatch** (H2O azeotrope oceanic salinity, sec
+  2.1): azeotropic void 0.2 stabilized by Ub/rotation after
+  Ug4 fully attenuates at Earth — the daily-alpha decay used
+  CONSTRUCTIVELY (may inform the alpha ruling). EXACT: E_rot
+  = 2.125e29 J, Henry correction 1.29e-29 (below-precision
+  honesty), all four gas products, Ug4 prefactor 9.42e-18.
+  BUOY_TERM CODE-CALIBRATED: three failed chains honestly
+  shown in-paper before citing the code value (exemplary
+  Rule 7). AZEO_VOID = 0.2 = 2/SO_FIVE — the SECOND
+  independent 1/5 appearance (pairs with PAPER_123's winding
+  dn = 1/5; primitive candidate). Flags: 4,000-yr t_Earth
+  anchor; 80-atm deep H2 physicality; title/body exponent
+  mojibake.
+- OPEN_RULING Q-137.
+- Gate: 970 assertions, 0 failures. Registry: 362 rows / 764 edges / 145 ledgers.
+
+---
+
 ## [0.143.0] — 2026-07-29 — BAND 1: PAPER_140 — RATIO ORIGIN + SO_5 CONVERGENCES
 
 ### Added

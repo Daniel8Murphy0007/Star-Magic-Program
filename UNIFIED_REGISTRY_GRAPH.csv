@@ -760,3 +760,7 @@ primitive,F_TRZ,observable,ua_scm_ratio_origin,inverse ratio
 primitive,SO_FIVE,observable,ua_scm_ratio_origin,N_monopole convergence
 observable,ua_scm_ratio_defects,paper,PAPER_140,overclaim
 observable,ua_scm_ratio_defects,paper,PAPER_128,anchor cross-ref
+observable,h2o_azeotrope_salinity,paper,PAPER_141,azeotrope mechanism
+primitive,RHO_SCM,observable,h2o_azeotrope_salinity,Ug4 prefactor
+primitive,SO_FIVE,observable,azeo_void_one_fifth,2/SO_five
+observable,azeo_void_one_fifth,paper,PAPER_123,1/5 pair
