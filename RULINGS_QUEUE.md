@@ -2185,6 +2185,7 @@ RESOLVED section with the ruling recorded.
   N thresholds; U_bi at true 65 kpc; crossed-value forensics.
 - **UPDATE (PAPER_119):** the 7-system reference describes EP-09 as a SINGLE cos-ratio > 100 at dt ~ 0.5 day - conflicts with this paper's cumulative ladder; fold into ruling (a).
 - **UPDATE 2 (PAPER_120):** catalog gives a THIRD form R = |cos/cos|^N - fork now 3 branches.
+- **UPDATE 3 (PAPER_129):** d91b1f6c adds the interference form |2/(1+cos(pi t))|^2 with t_n < 0 - the FIRST variant that reproduces R = 130.0 exactly from a closed form (at corrected t = -0.809; Q-125). Fork now 4 branches; No. 4 presumably canonical.
 - **Daniel's ruling:** (pending)
 
 ### Q-112 — PAPER_116 EP-03 — underived 1-keV anchor + Q-108a confirmation
@@ -2598,6 +2599,39 @@ RESOLVED section with the ruling recorded.
   boldest falsifiable position.
 - **Best-candidate wired:** N=3/SSq^3 with fixed anchor;
   circular-anchor suspicion + conversions pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-125 — PAPER_129 Triadic 3C273 — sign+degree double error, corrected t = -0.81
+- **Question:** (a) DOUBLE ERROR: the R = 130 back-solve
+  requires cos(pi t_-) = -(1 - 2/sqrt(130)) = -0.8246; the
+  paper DROPPED THE SIGN (+0.8246) and then divided 34.5
+  degrees by 360 instead of 180 (printing t_- = 0.096 ~
+  -0.10). CORRECTED: |t_-| = 0.809, which verifies R = 130.0
+  EXACTLY (exact solve); at the printed -0.10 the formula gives R = 1.05.
+  (The paper's own code prints components without asserting a
+  match - honest.) Confirm t_n(counter) = -0.81 canonical.
+  (b) N = 13 PRIMITIVE: 13 zero-crossings = 13 VLBI knots,
+  and N = D_crit/2 = 13 EXACT - the predecessor halving
+  series (PAPER_2138: {D_phys/2, D_BSFG/2, SO_5/2, D_crit/2})
+  already canonized 13 = D_crit/2. Canonize the knot count as
+  primitive-locked? Negative-time physicality is consistent
+  with predecessor PAPER_597 dual-existence branches.
+  (c) R_BEAM = 45 UNDERIVED: the kinematic formula at the
+  stated parameters gives 5.2e8. The EP-09 Doppler family is
+  now forked 45 / 2.28e6 / 2.2e7 across papers - one beaming
+  convention needed. beta_app = 3.60c chain EXACT.
+  (d) MECHANISM VARIANT No. 4: the interference form
+  |2/(1+cos)|^2 with t_n < 0 joins the cumulative ladder
+  (115), single ratio (119), ratio^N (120). As the d91b1f6c
+  refinement this is presumably intended-canonical - fold
+  into the Q-111 ruling.
+- **Notable:** the corrected interference form is the FIRST
+  EP-09 mechanism that actually reproduces R = 130 from a
+  single closed form (R = 130.0 at t = -0.809); N = 13 gains
+  primitive standing; the negative-time discovery narrative
+  aligns with the predecessor corpus.
+- **Best-candidate wired:** corrected t = -0.809 with R = 131
+  verified; N = D_crit/2 exposed; Doppler fork pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

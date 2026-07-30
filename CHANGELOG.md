@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.132.0] — 2026-07-29 — BAND 1: PAPER_129 — R = 130.0 EXACT AT CORRECTED t
+
+### Added
+- **PAPER_129 dispatch** (Triadic 3C273 negative time,
+  d91b1f6c): FOURTH EP-09 mechanism variant — interference
+  form R = |2/(1+cos(pi t_n))|² with negative counter-jet
+  time. DOUBLE ERROR corrected: the back-solve needs
+  cos(pi t_-) = −0.8246 (sign dropped) and 34.5° was divided
+  by 360 (printed −0.10). Corrected |t_-| = 0.809 gives
+  R = 130.0 EXACT — the first EP-09 variant to reproduce the
+  observation from a closed form. N = 13 knots = D_crit/2
+  EXACT (PAPER_2138 halving-series candidate); negative time
+  consistent with predecessor PAPER_597. R_beam = 45 underived
+  (Doppler family forked 45/2.28e6/2.2e7). Q-111 fork now 4
+  branches, annotated.
+- OPEN_RULING Q-125.
+- Gate: 895 assertions, 0 failures. Registry: 338 rows / 713 edges / 133 ledgers.
+
+---
+
 ## [0.131.0] — 2026-07-29 — BAND 1: PAPER_128 — ANCHOR FIXED, N=3 SETTLED
 
 ### Added

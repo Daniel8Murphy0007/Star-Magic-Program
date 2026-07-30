@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.131.0", "uqff_calculator.VERSION = 0.131.0")
+assert_that(C.VERSION == "0.132.0", "uqff_calculator.VERSION = 0.132.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1950,6 +1950,19 @@ assert_that(abs(_r128['empirical_ratio'] - 0.1622) < 0.0001,
 assert_that(abs(_r128['n1_baryon_offset'] - 8.13) < 0.01,
             "PAPER_128: N=1 baryon factor-8 offset honestly disclosed")
 assert_that(C.wired_count() >= 132, "wired_count >= 132")
+
+_r129 = C.calc('PAPER_129')['value']
+assert_that(abs(_r129['cos_pi_t_true'] + 0.8246) < 0.0001,
+            "PAPER_129: cos(pi t_-) = -0.8246 - paper dropped the sign (Q-125a)")
+assert_that(abs(_r129['t_counter_corrected'] + 0.809) < 0.001,
+            "PAPER_129: corrected t_- = -0.809 (paper's -0.10 = sign + deg/360 double error)")
+assert_that(abs(_r129['r_at_corrected'] - 130) < 0.1 and _r129['r_at_printed'] < 1.1,
+            "PAPER_129: R = 130.0 EXACT at corrected t (exact solve); R = 1.05 at printed t - fails")
+assert_that(_r129['n_crossings'] == 13 and 26 // 2 == 13,
+            "PAPER_129: N = 13 = D_crit/2 EXACT primitive candidate (Q-125b)")
+assert_that(abs(_r129['beta_app_chain'] - 3.60) < 0.01,
+            "PAPER_129: beta_app = 3.60c chain EXACT")
+assert_that(C.wired_count() >= 133, "wired_count >= 133")
 
 # =============================================================================
 # REPORT

@@ -1662,3 +1662,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 132/2,255 (11 ✓, 121 ⚠). Next: PAPER_129.
 
 ---
+
+## 2026-07-29 — v0.132.0 — BAND 1: PAPER_129
+
+- PAPER_129 wired (⚠ Q-125): Triadic 3C273 negative time.
+  Sign + deg/360 double error corrected (t = -0.809 → R =
+  130.0 EXACT); N = 13 = D_crit/2 candidate; Doppler fork
+  pinned; Q-111 now 4 branches.
+- Campaign: 133/2,255 (11 ✓, 122 ⚠). Next: PAPER_130.
+
+---

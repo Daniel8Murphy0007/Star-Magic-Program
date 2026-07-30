@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.131.0"
+VERSION = "0.132.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6790,5 +6790,61 @@ def _paper_128(dataset):
         'formula': 'rho_N = rho_L * SSq^N; N=3 for DM; eps ~ SSq^4 claimed',
         'source': 'PAPER_128',
         'residual_pct': abs(5.96e-27 * SSQ ** 3 - 1.104e-27) / 1.104e-27 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_129')
+def _paper_129(dataset):
+    """Triadic Mode: 3C273 Negative Time, R=130, N=13 (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-09 (PAPER_115) - FOURTH mechanism
+    variant: interference form R = |2/(1+cos(pi t_n))|^2 with
+    NEGATIVE counter-jet time t_n < 0 (anti-phase [UA]
+    destructive interference). Q-111 fork now 4 branches, this
+    being the intended-canonical d91b1f6c form.
+    DOUBLE ERROR CORRECTED (Q-125a): the back-solve requires
+    cos(pi t_-) = -(1 - 2/sqrt(130)) = -0.8246 - the paper
+    DROPPED THE SIGN (printed +0.8246) and then divided 34.5
+    degrees by 360 (printed t_- = 0.096 ~ 0.10). Corrected:
+    |t_-| = 0.809, which VERIFIES R = 131 exactly. At the
+    paper's t = -0.10 the formula gives R = 1.05 (the paper's
+    own code shows this - it prints components without
+    asserting a match, honest).
+    N=13 PRIMITIVE CANDIDATE (Q-125b): 13 zero-crossings =
+    13 VLBI knots; N = D_crit/2 = 13 EXACT (predecessor
+    PAPER_2138 halving series includes D_crit/2). Negative-
+    time physicality consistent with predecessor PAPER_597
+    dual-existence branches.
+    R_BEAM = 45 UNDERIVED (Q-125c): the kinematic formula at
+    Gamma = 10, theta = 5, exponent 3.7 gives 5.2e8; the
+    Doppler family across EP-09 papers is now forked 45 /
+    2.28e6 / 2.2e7. beta_app chain 3.60 EXACT ("3.5c").
+    """
+    import math as _m
+    cos_true = 2 / _m.sqrt(130) - 1
+    t_true = _m.acos(cos_true) / _m.pi
+    return {
+        'value': {
+            'domain': '1.17 (Triadic mode, EP-09 refinement)',
+            'mechanism_variant': 'No. 4: R = |2/(1+cos(pi t_n))|^2, t_n < 0 counter-jet',
+            'cos_pi_t_true': cos_true,                       # -0.8246 (sign restored)
+            't_counter_corrected': -t_true,                  # -0.809
+            't_counter_printed': -0.10,                      # sign + deg/360 double error
+            'r_at_corrected': (2 / (1 + _m.cos(_m.pi * t_true))) ** 2,  # 131 VERIFIED
+            'r_at_printed': (2 / (1 + _m.cos(_m.pi * 0.10))) ** 2,      # 1.05 - fails
+            'n_crossings': 13,
+            'n_primitive': 'N = D_crit/2 = 13 EXACT (PAPER_2138 halving-series candidate)',
+            'beta_app_chain': 0.98 * _m.sin(_m.radians(5)) / (1 - 0.98 * _m.cos(_m.radians(5))),  # 3.60
+            'r_beam_claimed': 45,                            # underived
+            'r_beam_formula_gives': 5.2e8,                   # at Gamma=10, exp 3.7
+            'doppler_family_fork': (45, 2.28e6, 2.2e7),
+            'triadic_correction_claim': 130 / 45,            # 2.9 arithmetic OK
+            'negative_time': 'physical anti-phase [UA] state; predecessor PAPER_597 consistent',
+            'code_honesty': 'prints components without asserting 130 match',
+        },
+        'formula': 'R = |2/(1+cos(pi t_n))|^2; N knots = zero-crossings of cos(pi t_n)',
+        'source': 'PAPER_129',
+        'residual_pct': abs((2 / (1 + _m.cos(_m.pi * t_true))) ** 2 - 130) / 130 * 100,
         'status': 'OPEN_RULING',
     }

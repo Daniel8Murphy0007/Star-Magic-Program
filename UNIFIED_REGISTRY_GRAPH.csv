@@ -709,3 +709,7 @@ observable,quadratic_dm_ssq3_cascade,paper,PAPER_128,N=3 cascade
 primitive,SSQ,observable,quadratic_dm_ssq3_cascade,SSq^3 hop product
 observable,quadratic_dm_ssq3_cascade,paper,PAPER_118,anchor fix
 observable,quadratic_dm_circular_anchor,paper,PAPER_128,circular anchor
+observable,triadic_3c273_negative_time,paper,PAPER_129,4th variant
+observable,triadic_3c273_negative_time,paper,PAPER_115,EP-09 lineage
+primitive,D_CRIT,observable,triadic_3c273_negative_time,N = D_crit/2
+observable,triadic_3c273_doppler_fork,paper,PAPER_129,R_beam underived

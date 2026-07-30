@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.131.0"
-description = "UQFF Star-Magic-Program v0.131.0: PAPER_128 wired - Quadratic DM cascade (VACUUM ANCHOR FIXED at 1 pct from standard - self-rectification No. 11; hop count settled N=3/SSq^3 resolving Q-117c; but the 0.185 anchor IS SSq^3 numerically while cited Read+2014 says 0.40 - circular suspicion; conversions still conflated). Q-124 queued. Wired 132/2255, gate 889/0. Registry 336 rows / 709 edges / 132 ledgers."
+version = "0.132.0"
+description = "UQFF Star-Magic-Program v0.132.0: PAPER_129 wired - Triadic 3C273 negative time (4th EP-09 variant; sign+deg/360 double error corrected: t = -0.809 gives R = 130.0 EXACT vs paper -0.10 giving 1.05; N = 13 = D_crit/2 primitive candidate; R_beam = 45 underived, Doppler family forked). Q-125 queued. Wired 133/2255, gate 895/0. Registry 338 rows / 713 edges / 133 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

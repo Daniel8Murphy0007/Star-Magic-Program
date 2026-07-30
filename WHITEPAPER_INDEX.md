@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 132 (11 ✓, 121 ⚠ OPEN_RULING)
+- **Wired:** 133 (11 ✓, 122 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2123
+- **Not yet touched:** 2122
 
 ---
 
@@ -511,7 +511,7 @@
 | ⬜ | PAPER_1297 | GOLDBACH WEAK |
 | ⬜ | PAPER_1298 | P VS BQP |
 | ⬜ | PAPER_1299 | NP VS CO NP |
-| ⬜ | PAPER_129 | UQFF Triadic 3C273 Jet NegativeTime N13 |
+| ⚠ | PAPER_129 | UQFF Triadic 3C273 Jet NegativeTime N13 |
 | ⬜ | PAPER_1300 | SCHANUEL CONJECTURE |
 | ⬜ | PAPER_1301 | LEHMER MAHLER |
 | ⬜ | PAPER_1302 | INVERSE GALOIS |

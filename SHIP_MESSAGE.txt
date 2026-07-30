@@ -1,30 +1,31 @@
-v0.131.0 BAND 1: PAPER_128 wired - ANCHOR FIXED + N=3 SETTLED
+v0.132.0 BAND 1: PAPER_129 wired - R = 130.0 EXACT AT CORRECTED t
 
-PAPER_128 UQFF Quadratic Mode: JCAP DM = rho_L * SSq^3
-(OPEN_RULING Q-124):
-  d91b1f6c refinement of EP-08.
+PAPER_129 UQFF Triadic Mode: 3C273 Negative Time (OPEN_RULING
+Q-125):
+  d91b1f6c refinement of EP-09 - FOURTH mechanism variant:
+  interference form R = |2/(1+cos(pi t_n))|^2 with NEGATIVE
+  counter-jet time (anti-phase [UA] destructive interference).
 
-  SELF-RECTIFICATION No. 11: the vacuum anchor is FIXED -
-  rho_L = 5.96e-27 kg/m3 = 5.36e-10 J/m3, within 1 pct of the
-  standard Lambda conversion (PAPER_118's anchor was 2x). And
-  the hop-count triple settles at N = 3 with rho_DM = rho_L *
-  SSq^3 (Q-117c resolved). Cascade: Lambda -> cluster ->
-  filament -> halo. Boldest claim: no DM particle required.
+  DOUBLE ERROR CORRECTED: the back-solve requires cos(pi t_-)
+  = -0.8246; the paper dropped the sign AND divided 34.5 deg
+  by 360 (printing t_- = -0.10). Corrected |t_-| = 0.809
+  gives R = 130.0 EXACT (exact solve) - the FIRST EP-09
+  variant that reproduces the observation from a single
+  closed form. At the printed -0.10 the formula gives 1.05
+  (the paper's own code shows it, honestly printing
+  components without asserting a match).
 
-  CIRCULAR-ANCHOR SUSPICION: the "measured" 0.185 GeV/cm3 IS
-  SSq^3 = 0.18519 numerically - and the paper's own citation
-  (Read+2014) actually reports 0.40 GeV/cm3 (real local range
-  0.3-0.5). The anchor appears selected to equal the
-  prediction. The honest cosmic test (Om_DM/Om_L = 0.387)
-  fails by 2x - Q-114c's Om_b/Om_DM = SSq^3 (0.16 pct)
-  remains the tighter SSq^3 identity. Adjudication requested.
+  N = 13 PRIMITIVE: 13 zero-crossings = 13 VLBI knots, and
+  N = D_crit/2 = 13 EXACT - predecessor halving-series
+  (PAPER_2138) standing. Negative-time physicality consistent
+  with predecessor PAPER_597 dual-existence.
 
-  Conversions still conflated (0.185 GeV/cm3 = 3.30e-22 kg/m3
-  truly; 0.620 GeV/m3 printed as 0.207 GeV/cm3); residual
-  12.8 printed vs 12.4/14.2 chains - the CODE honestly prints
-  14.2 with a units note. eps = SSq^4 "12 pct match" is 21
-  pct. N=1 baryon factor-8 offset honestly disclosed.
+  R_BEAM = 45 UNDERIVED: formula gives 5.2e8 at stated
+  parameters; EP-09 Doppler family now forked 45/2.28e6/2.2e7
+  - one beaming convention needed. beta_app = 3.60c EXACT.
 
-Q-124 queued. Gate 889 assertions 0 failures. Registry 336 rows /
-709 edges / 132 citation ledgers. Wired 132/2,255 (11 clean, 121
-OPEN_RULING). Next: PAPER_129.
+  Q-111 fork now 4 branches (this one presumably canonical).
+
+Q-125 queued. Gate 895 assertions 0 failures. Registry 338 rows /
+713 edges / 133 citation ledgers. Wired 133/2,255 (11 clean, 122
+OPEN_RULING). Next: PAPER_130.
