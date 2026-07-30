@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.157.0"
-description = "UQFF Star-Magic-Program v0.157.0: PAPER_154 wired - NS quasar jets (PRIMITIVE identities f_jet = v_SCm*F_TRZ + T_Osc = tau/F_TRZ = 54.8 yr M87-matched + nu_SCm EXACT; 1e46 SECOND decomposition rho v^2/lambda_fm with the two routes algebraically linked; lambda_SCm = 1 fm registered; Step-4 derivation broken; curl-free Millennium core sound). Q-150 queued. Wired 158/2255, gate 1050/0. Registry 385 rows / 820 edges / 158 ledgers (measured)."
+version = "0.158.0"
+description = "UQFF Star-Magic-Program v0.158.0: PAPER_155 wired - SM-limit keystone (core proof VALID: four conditions + Ug4i Taylor -> GM/r^2, containment doctrine; but rests on the FOURTH Ug4i form - fork adjudication now decides the keystone; three mantissa slips incl. the Pioneer claim; Pioneer attribution outdated per Turyshev 2012). Q-151 queued. Wired 159/2255, gate 1056/0. Registry 387 rows / 824 edges / 159 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

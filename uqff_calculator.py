@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.157.0"
+VERSION = "0.158.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8235,5 +8235,60 @@ def _paper_154(dataset):
         'formula': 'du/dt + (u.grad)u = -grad p/rho + nu lap u + v_SCm F_TRZ z_hat + g_MUGE r_hat',
         'source': 'PAPER_154',
         'residual_pct': abs(1e8 * F_TRZ - 1e7) / 1e7 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_155')
+def _paper_155(dataset):
+    """SM Gravity as MUGE Limit (S0, sec 2.2 keystone).
+
+    The block keystone: lim(fTRZ->0, B->0, rho_SCm->rho_b,
+    kt->0) g_MUGE = GM/r^2. CORE PROOF VALID: each term
+    vanishes under the four conditions and Ug4i -> GM/r^2 via
+    the Taylor limit (1-e^-kt)/kt -> 1 - the containment
+    claim (UQFF contains DPM-seeded gravity, doesn't replace
+    it) holds. Newton-as-Step-10 doctrine consistent with the
+    predecessor dpm_helpers chain. Mercury chain EXACT
+    (g = 0.0397, ratio 5.0e-8); GW-speed cancellation EXACT
+    (constructed but GW170817-consistent); LLR bounds fine.
+    UG4I FOURTH FORM (Q-151a): the proof rests on Ug4i =
+    (GM/r^2)(1-e^-kt)/(kt) - a FOURTH variant (139 inverse;
+    146 direct-vacuum; 152 kappa-rho-V form; here Taylor
+    form). The keystone's validity is now hostage to the
+    Ug4i-fork adjudication.
+    MANTISSA SLIPS x3 (Q-151b): aaether solar 1.5e-14 printed
+    1.5e-9 (1e5 - the Pioneer-consistency claim rests on it);
+    Pioneer GM/r^2 1.21e-6 printed 1.21e-7 (10x); Sgr A*
+    kt/2 = 3.65e8 printed 365 (1e6 - the "GR-like 1.5"
+    comparison incoherent either way).
+    PIONEER OUTDATED (Q-151c): the anomaly was resolved as
+    thermal recoil (Turyshev 2012) - attributing ~1e-9 to
+    UQFF aether residue conflicts with the accepted
+    resolution; also eps_SCm = 0.003 is back-solved to land
+    on 1e-9 while claimed "not a free parameter".
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.2 keystone (SM limit proof)',
+            'limit_conditions': ('fTRZ->0', 'B->0', 'rho_SCm->rho_b', 'kt->0'),
+            'taylor_core': (1 - _m.exp(-0.001)) / 0.001,      # -> 1 VALID
+            'proof_status': 'core valid modulo the Ug4i fourth-form fork',
+            'ug4i_fourth_form': '(GM/r^2)(1-e^-kt)/kt - fork now FOUR variants',
+            'mercury_g': 1.33e20 / (5.79e10) ** 2,            # 0.0397 EXACT
+            'mercury_ratio': 2e-9 / 0.0397,                   # 5.0e-8 EXACT
+            'gw_speed': 'c(1-f)+fc = c EXACT (constructed, GW170817-consistent)',
+            'aaether_solar_chain': 5e-5 * 1e-20 * 1e2 * 3e8,  # 1.5e-14 vs printed 1.5e-9
+            'pioneer_gm_chain': 1.33e20 / (1.05e13) ** 2,     # 1.21e-6 vs printed 1.21e-7
+            'sgra_kt_chain': 5e-4 * 1.46e12 / 2,              # 3.65e8 vs printed 365
+            'mantissa_slips': 3,
+            'eps_scm_rescue': 0.003,
+            'pioneer_status': 'anomaly thermally resolved (Turyshev 2012) - attribution outdated',
+            'containment_doctrine': 'UQFF contains DPM-seeded gravity as limit (Step-10 consistent)',
+        },
+        'formula': 'lim g_MUGE = GM/r^2 via Ug4i Taylor; corrections O(kt, B^2, fTRZ^2)',
+        'source': 'PAPER_155',
+        'residual_pct': abs(1.33e20 / (5.79e10) ** 2 - 0.0397) / 0.0397 * 100,
         'status': 'OPEN_RULING',
     }

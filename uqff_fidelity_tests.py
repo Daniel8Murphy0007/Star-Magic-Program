@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.157.0", "uqff_calculator.VERSION = 0.157.0")
+assert_that(C.VERSION == "0.158.0", "uqff_calculator.VERSION = 0.158.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2298,6 +2298,19 @@ assert_that(abs(_r154['nu_scm'] - 3.33e-8) < 0.01e-8,
 assert_that(_r154['step4_denominator'][0] / _r154['step4_denominator'][1] > 1e7,
             "PAPER_154: Step-4 derivation broken (8-order slip, abandoned) - f_jet definitional (Q-150c)")
 assert_that(C.wired_count() >= 158, "wired_count >= 158")
+
+_r155 = C.calc('PAPER_155')['value']
+assert_that(abs(_r155['taylor_core'] - 1) < 0.001,
+            "PAPER_155: Taylor core (1-e^-kt)/kt -> 1 VALID - SM limit proof holds modulo Ug4i fork")
+assert_that(abs(_r155['mercury_g'] - 0.0397) < 0.0001,
+            "PAPER_155: Mercury chain EXACT (solar-system consistency)")
+assert_that('FOUR variants' in _r155['ug4i_fourth_form'],
+            "PAPER_155: keystone rests on Ug4i FOURTH form - fork adjudication now decides the proof (Q-151a)")
+assert_that(_r155['aaether_solar_chain'] < 1e-13 and _r155['sgra_kt_chain'] > 1e8,
+            "PAPER_155: three mantissa-exact slips pinned (1e5/10x/1e6) (Q-151b)")
+assert_that('Turyshev' in _r155['pioneer_status'],
+            "PAPER_155: Pioneer attribution outdated (thermally resolved) (Q-151c)")
+assert_that(C.wired_count() >= 159, "wired_count >= 159")
 
 # =============================================================================
 # REPORT

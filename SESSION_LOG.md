@@ -1903,3 +1903,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 158/2,255 (11 ✓, 147 ⚠). Next: PAPER_155.
 
 ---
+
+## 2026-07-30 — v0.158.0 — BAND 1: PAPER_155
+
+- PAPER_155 wired (⚠ Q-151): SM-limit keystone. Core proof
+  valid modulo the Ug4i 4th form; Pioneer section outdated;
+  containment doctrine canonization proposed.
+- Campaign: 159/2,255 (11 ✓, 148 ⚠). Next: PAPER_156.
+
+---

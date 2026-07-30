@@ -819,3 +819,7 @@ primitive,F_TRZ,observable,ns_jets_scm_force,f_jet + T_Osc
 primitive,KAPPA_PER_DAY,observable,ns_jets_scm_force,T_Osc
 observable,e46_second_route,paper,PAPER_154,second 1e46 route
 observable,e46_second_route,paper,PAPER_133,route comparison
+observable,sm_limit_keystone,paper,PAPER_155,limit proof
+primitive,F_TRZ,observable,sm_limit_keystone,limit variable
+observable,sm_limit_defects,paper,PAPER_155,fourth Ug4i form
+observable,sm_limit_defects,paper,PAPER_139,Ug4i fork lineage

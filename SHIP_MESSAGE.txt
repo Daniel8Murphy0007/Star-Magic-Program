@@ -1,33 +1,32 @@
-v0.157.0 BAND 1: PAPER_154 wired - SECOND 1e46 ROUTE + JET IDENTITIES
+v0.158.0 BAND 1: PAPER_155 wired - SM-LIMIT KEYSTONE (VALID MODULO FORK)
 
-PAPER_154 UQFF Navier-Stokes Quasar Jets, Jos Stam Solver
-(OPEN_RULING Q-150):
-  PRIMITIVE IDENTITIES (all EXACT):
-  - f_jet = v_SCm * F_TRZ = 1e7 m/s (the paper itself notes
-    the /10 is 1/fTRZ)
-  - T_Osc = 1/(F_TRZ*kappa) = tau_SCm/F_TRZ = 54.8 yr -
-    matched to M87 knot-ejection variability (10-50 yr)
-  - nu_SCm = v_SCm*lambda_SCm/3 = 3.33e-8 m^2/s
-  NEW CONSTANT: lambda_SCm = 1e-15 m (1 fm SCm correlation
-  length, nuclear-scale consistent).
+PAPER_155 UQFF Standard Model Gravity as MUGE Limit
+(OPEN_RULING Q-151) - the block keystone:
+  lim(fTRZ->0, B->0, rho_SCm->rho_b, kt->0) g_MUGE = GM/r^2.
 
-  1E46 SECOND DECOMPOSITION: rho_SCm*v_SCm^2/lambda_SCm =
-  1e46 EXACT - joins Q-129a's rho*v/rho_A as a second closing
-  route to the E_react anchor. AND the routes are
-  algebraically LINKED: lambda_SCm = rho_A*v_SCm numerically
-  (1e-23*1e8 = 1e-15). Q-129 annotated; adjudication queued.
+  CORE PROOF VALID: under the four conditions each of the 12
+  terms vanishes and Ug4i -> GM/r^2 via the Taylor limit
+  (1-e^-kt)/kt -> 1. The CONTAINMENT DOCTRINE ("UQFF does not
+  replace DPM-seeded gravity - it contains it") is the
+  cleanest Step-10 statement in the corpus, consistent with
+  the predecessor dpm_helpers chain. Mercury chain EXACT
+  (5.0e-8 fractional - passes); GW-speed cancellation EXACT
+  (GW170817-consistent); LLR bounds honest.
 
-  MILLENNIUM CORE (soundest NS argument in the corpus):
-  constant bounded force is curl-free -> generates NO
-  vorticity -> prevents the stretching cascade. 4th NS route
-  but the first with a clean mechanism.
+  KEYSTONE HOSTAGE: the proof rests on Ug4i =
+  (GM/r^2)(1-e^-kt)/kt - the FOURTH Ug4i variant (139
+  inverse / 146 direct / 152 kappa-rho-V / 155 Taylor). The
+  Q-142b fork adjudication now decides whether the keystone
+  stands. Q-142 annotated.
 
-  BROKEN: Step-4 derivation (denominator 3e-6 printed 1e-14,
-  chain abandoned - f_jet is definitional); Gronwall exponent
-  carries meters; CenA 15-vs-15,000 hand-wave; SGR
-  linear-vs-squared inconsistency.
+  PINNED: three mantissa-exact slips (aaether solar 1e5 -
+  the Pioneer-consistency claim rests ENTIRELY on it;
+  Pioneer GM 10x; SgrA kt 1e6); eps_SCm = 0.003 back-solved
+  while claimed not-free; the Pioneer anomaly attribution is
+  OUTDATED (thermally resolved, Turyshev 2012) - retire or
+  reframe as a bound.
 
-Q-150 queued. Gate 1,050 assertions 0 failures. Registry
-385 rows / 820 edges / 158 ledgers (measured). Wired
-158/2,255 (11 clean, 147 OPEN_RULING). Next: PAPER_155
-(fTRZ->0 Standard Model recovery proof).
+Q-151 queued. Gate 1,056 assertions 0 failures. Registry
+387 rows / 824 edges / 159 ledgers (measured). Wired
+159/2,255 (11 clean, 148 OPEN_RULING). Next: PAPER_156
+(Millennium roadmap - closes the 07b7f7a6 block).

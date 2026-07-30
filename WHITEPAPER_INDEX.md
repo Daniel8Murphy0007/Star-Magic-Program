@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 158 (11 ✓, 147 ⚠ OPEN_RULING)
+- **Wired:** 159 (11 ✓, 148 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2097
+- **Not yet touched:** 2096
 
 ---
 
@@ -797,7 +797,7 @@
 | ⬜ | PAPER_1557 | M H HIGGS 125 10 |
 | ⬜ | PAPER_1558 | M TAU 1 777 |
 | ⬜ | PAPER_1559 | M MU MUON 0 10566 |
-| ⬜ | PAPER_155 | UQFF SM Gravity MUGE Resonance Equilibrium LimitingCase |
+| ⚠ | PAPER_155 | UQFF SM Gravity MUGE Resonance Equilibrium LimitingCase |
 | ⬜ | PAPER_1560 | TRANSCENDENTAL PI 3 14159 |
 | ⬜ | PAPER_1561 | TRANSCENDENTAL PHI GOLDEN |
 | ⬜ | PAPER_1562 | TRANSCENDENTAL SQRT 2 |

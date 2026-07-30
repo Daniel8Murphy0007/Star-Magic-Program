@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.158.0] — 2026-07-30 — BAND 1: PAPER_155 — SM-LIMIT KEYSTONE
+
+### Added
+- **PAPER_155 dispatch** (SM gravity as MUGE limit, sec 2.2
+  keystone): the core proof is VALID — under the four
+  conditions each term vanishes and Ug4i → GM/r² via the
+  Taylor limit; the containment doctrine ("UQFF contains
+  DPM-seeded gravity") is the cleanest Step-10 statement,
+  predecessor-consistent. Mercury EXACT; GW-speed
+  cancellation EXACT. BUT the proof rests on the FOURTH Ug4i
+  form (fork: inverse/direct/kappa-rho-V/Taylor) — the Q-142b
+  adjudication now decides the keystone (Q-142 annotated).
+  Three mantissa slips (the Pioneer-consistency claim rests
+  entirely on the 1e5 one); eps_SCm back-solved; Pioneer
+  attribution outdated (thermally resolved, Turyshev 2012).
+- OPEN_RULING Q-151.
+- Gate: 1,056 assertions, 0 failures. Registry: 387 rows / 824 edges / 159 ledgers (measured).
+
+---
+
 ## [0.157.0] — 2026-07-30 — BAND 1: PAPER_154 — SECOND 1e46 ROUTE
 
 ### Added

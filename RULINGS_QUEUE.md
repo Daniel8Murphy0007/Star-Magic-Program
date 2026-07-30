@@ -3162,6 +3162,7 @@ RESOLVED section with the ruling recorded.
   PAPER_139/121 define Ug4i = 1/Ug4 (inverse void). One
   symbol, two quantities across sec 2.1/2.2 - rename one or
   rule the sec 2.2 usage supersedes.
+  (UPDATE PAPER_152/155: the fork is now FOUR forms - 139 inverse, 146 direct, 152 kappa-rho-V, 155 Taylor - and the SM-limit KEYSTONE proof rests on form 4; Q-151a.)
   (c) ADPM UNITS: the paper's own dimensional check
   hand-waves "reduces to m/s2 for appropriate normalization
   by system mass" - the normalization is unstated. This is
@@ -3451,6 +3452,42 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** three primitive identities +
   lambda_SCm registered; second 1e46 route with the
   algebraic-link observation; broken chains pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-151 — PAPER_155 SM Limit Keystone — proof valid modulo Ug4i fourth form
+- **Question:** (a) UG4I FOURTH FORM (keystone hostage): the
+  SM-recovery proof - the limit the whole MUGE block leans
+  on - rests on Ug4i = (GM/r^2)(1-e^-kt)/(kt), a FOURTH
+  variant of the Ug4i symbol (139: 1/Ug4 inverse; 146:
+  rho(M/d)e^-at cos direct; 152: kappa rho V/(t r^2); here:
+  Taylor form). The core proof is mathematically VALID given
+  this form (term-by-term vanishing + (1-e^-kt)/kt -> 1),
+  so the Ug4i-fork adjudication (Q-142b) now decides whether
+  the keystone stands. Rule the canonical Ug4i.
+  (b) MANTISSA SLIPS x3: aaether solar chain 1.5e-14 printed
+  1.5e-9 (1e5 - the Pioneer-consistency claim rests
+  ENTIRELY on this slip); Pioneer GM/r^2 chain 1.21e-6
+  printed 1.21e-7 (10x); Sgr A* kt/2 chain 3.65e8 printed
+  365 (1e6 - and the "GR-like 1.5" comparison is incoherent
+  at any value).
+  (c) PIONEER OUTDATED: the anomaly was resolved as
+  anisotropic thermal recoil (Turyshev et al. 2012);
+  attributing ~1e-9 m/s^2 to UQFF aether residue conflicts
+  with the accepted resolution. Also eps_SCm = 0.003 is
+  back-solved to land on 1e-9 while being claimed "not a
+  free parameter". Retire the Pioneer section or reframe as
+  a bound?
+  (d) CONTAINMENT DOCTRINE (confirmation): "UQFF does not
+  replace DPM-seeded gravity - it contains it" + the
+  four-condition SM limit is the cleanest statement of the
+  Step-10 doctrine (predecessor dpm_helpers-consistent).
+  Canonize as the framework's GR-relationship statement?
+- **Notable:** the core limit proof is the block's most
+  important VALID result (given form 4); Mercury chain EXACT
+  (5.0e-8 fractional - passes); GW-speed cancellation EXACT
+  and GW170817-consistent; LLR bounds honest.
+- **Best-candidate wired:** keystone registered as
+  valid-modulo-fork; slips + Pioneer outdatedness pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
