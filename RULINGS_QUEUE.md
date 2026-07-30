@@ -3013,6 +3013,35 @@ RESOLVED section with the ruling recorded.
   code-calibration and 1/5 pair registered.
 - **Daniel's ruling:** (pending)
 
+### Q-138 — PAPER_142 H_res Periodic Table — d_pair chaos + alpha_G identification
+- **Question:** (a) D_PAIR CONVENTION CHAOS: back-solving the
+  results table gives FIVE effective pairing factors against
+  the one stated convention - H/O-16/Ca-40 at ~1.0 (even-even
+  should be 2.0 per the table), He-4 at 0.501 (a DOUBLY MAGIC
+  nucleus suppressed by half), Ni-62 at 2.397 ("AME-
+  enhanced"), Sn-120/Z=120 at 2.0, Pb-208 at 2.502. The table
+  cannot be reproduced from the stated cases. Provide the
+  actual d_pair rule (the code comment itself hedges).
+  (b) ALPHA_G IDENTIFICATION (confirmation): k_dp =
+  G m_p^2/(hbar c) = 5.902e-39 EXACT - the dimensionless
+  gravitational fine-structure constant. A real physical-
+  constant identification inside the dipole term; canonize?
+  (c) S_SHELL ISLAND FORK: the island rows use 0.1*(114+184)
+  = 29.8, but Z=114 is NOT in the code MAGIC list - the code
+  yields 31.0 = 0.1*(126+184) for both Z=114 and Z=120.
+  Add 114 to the predicted-magic list or correct the table?
+  (d) MAGIC NUMBERS: the seven canonical magic numbers carry
+  predecessor EXACT integer identities (Q-113b family);
+  N=184 island prediction (1.80x Pb resonance, 1e6 longer
+  half-life than Og) is the falsifiable content - preserve.
+- **Notable:** Ni-62 chains EXACT (A_res 1900.6 V, f_res
+  1.415e22 Hz); H-1 baseline 0.457 V EXACT; the single-
+  equation-for-126-elements claim is the distinctive
+  framework content.
+- **Best-candidate wired:** H_res with EXACT anchors and
+  alpha_G exposed; pairing chaos + island fork pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

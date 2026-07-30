@@ -764,3 +764,7 @@ observable,h2o_azeotrope_salinity,paper,PAPER_141,azeotrope mechanism
 primitive,RHO_SCM,observable,h2o_azeotrope_salinity,Ug4 prefactor
 primitive,SO_FIVE,observable,azeo_void_one_fifth,2/SO_five
 observable,azeo_void_one_fifth,paper,PAPER_123,1/5 pair
+observable,hres_periodic_table,paper,PAPER_142,H_res equation
+observable,hres_periodic_table,paper,PAPER_137,ladder crosslink
+observable,hres_dpair_chaos,paper,PAPER_142,pairing chaos
+observable,hres_dpair_chaos,paper,PAPER_124,magic-number lineage

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.144.0"
+VERSION = "0.145.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7504,5 +7504,61 @@ def _paper_141(dataset):
         'formula': 'Buoy = rho V g (1+Sal) family; C_UQFF = K_H P (1 + Buoy/g)',
         'source': 'PAPER_141',
         'residual_pct': abs(0.5 * 8.04e37 * (7.27e-5) ** 2 - 2.12e29) / 2.12e29 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_142')
+def _paper_142(dataset):
+    """H_res Extended Periodic Table Z=1-126 (S0, sec 2.1).
+
+    Universal nuclear resonance H_res(Z,t): amplitude
+    A_res = k_A*Z*(A/A_H)*(1+d_pair), frequency from AME2020
+    binding, magic numbers {2,8,20,28,50,82,126}+184 as H_res
+    maxima; island-of-stability prediction Z=114-126, A~320.
+    VERIFIED EXACT: Ni-62 A_res = 1900.6 V and f_res =
+    1.415e22 Hz chains; H-1 = 0.457 V; island ratio 1.80x Pb;
+    k_dp = G m_p^2/(hbar c) = 5.902e-39 = ALPHA_G - the
+    gravitational fine-structure constant, an EXACT physical
+    identification (Q-138b).
+    D_PAIR CONVENTION CHAOS (Q-138a): the results table uses
+    FIVE effective pairing factors against one stated
+    convention - back-solved (1+d): H/O/Ca ~ 1.0 (even-even
+    O/Ca should get 2.0), He-4 = 0.501 (doubly magic
+    SUPPRESSED by half), Ni = 2.397 ("AME-enhanced"), Sn/Z120
+    = 2.0, Pb = 2.502. The table is not reproducible from the
+    stated cases; the code comment itself hedges ("1.0 base,
+    1.397 AME-enhanced").
+    S_SHELL ISLAND FORK (Q-138c): table 29.8 = 0.1*(114+184)
+    but 114 is NOT in the code MAGIC list - code gives 31.0 =
+    0.1*(126+184) for both Z=114 and Z=120.
+    Magic numbers: predecessor EXACT integer identities
+    available (Q-113b family); N=184 island prediction is the
+    falsifiable content (1.8x Pb resonance, 1e6 longer
+    half-life than Og).
+    """
+    import math as _m
+    kA = 0.4604; AH = 1.008
+    return {
+        'value': {
+            'domain': '2.1 (H_res periodic table)',
+            'ni62_ares': kA * 28 * (62 / AH) * (1 + 1.397),   # 1900.6 EXACT
+            'ni62_fres': 545.26e6 * 1.602e-19 / 6.626e-34 * (AH / 62) * 6.6,  # 1.415e22 EXACT
+            'h1_ares': kA * 1 * (1 / AH),                     # 0.457 EXACT
+            'k_dp': 6.674e-11 * (1.673e-27) ** 2 / (1.055e-34 * 3e8),  # 5.902e-39
+            'k_dp_identification': 'ALPHA_G - gravitational fine-structure constant EXACT',
+            'dpair_effective_backsolved': {'H': 1.001, 'He4': 0.501, 'O16': 1.007,
+                                           'Ca40': 1.009, 'Ni62': 2.396, 'Sn120': 2.004,
+                                           'Pb208': 2.502, 'Z120': 2.003},
+            'dpair_chaos': 'FIVE effective conventions vs one stated - table not reproducible',
+            's_shell_island_fork': (29.8, 31.0),              # table vs code
+            'magic_numbers': (2, 8, 20, 28, 50, 82, 126),
+            'island_prediction': 'Z=114-126, N=184, A~320; 1.80x Pb resonance',
+            'island_ratio': 35130 / 19488,                    # 1.80
+            'predecessor_identities': 'Q-113b EXACT integer family available for all 7',
+        },
+        'formula': 'H_res = A_res sin(2pi f t) + U_dp SCm k_nuc + S_shell + U_r E_trans',
+        'source': 'PAPER_142',
+        'residual_pct': abs(kA * 28 * (62 / AH) * 2.397 - 1900) / 1900 * 100,
         'status': 'OPEN_RULING',
     }

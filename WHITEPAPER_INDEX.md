@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 145 (11 ✓, 134 ⚠ OPEN_RULING)
+- **Wired:** 146 (11 ✓, 135 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2110
+- **Not yet touched:** 2109
 
 ---
 
@@ -654,7 +654,7 @@
 | ⬜ | PAPER_1427 | BUCKET D KOTO |
 | ⬜ | PAPER_1428 | BUCKET D FCNC |
 | ⬜ | PAPER_1429 | BUCKET D T VIOLATION |
-| ⬜ | PAPER_142 | UQFF Hydrogen PToE Resonance Hres Z1to126 ShellMagicNumbers |
+| ⚠ | PAPER_142 | UQFF Hydrogen PToE Resonance Hres Z1to126 ShellMagicNumbers |
 | ⬜ | PAPER_1430 | BUCKET E GW MEMORY |
 | ⬜ | PAPER_1431 | BUCKET E STANDARD SIREN H0 |
 | ⬜ | PAPER_1432 | BUCKET F MAGNETAR GIANT FLARE |

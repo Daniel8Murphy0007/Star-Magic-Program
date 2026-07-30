@@ -1,30 +1,31 @@
-v0.144.0 BAND 1: PAPER_141 wired - SECOND 1/5 APPEARANCE
+v0.145.0 BAND 1: PAPER_142 wired - k_dp = ALPHA_G IDENTIFICATION
 
-PAPER_141 UQFF H2O Azeotrope Oceanic Salinity (OPEN_RULING
-Q-137):
-  sec 2.1: azeotropic void (0.2) stabilized by Ub/Earth
-  rotation after Ug4 fully attenuates - the daily-alpha decay
-  used CONSTRUCTIVELY for once (Ug4 -> 0, rotation takes
-  over); may inform the alpha ruling family.
+PAPER_142 UQFF H_res Extended Periodic Table Z=1-126
+(OPEN_RULING Q-138):
+  sec 2.1: universal nuclear resonance H_res(Z,t) - one
+  equation for all 126 elements, magic numbers {2,8,20,28,
+  50,82,126}+184 as resonance maxima, island-of-stability
+  prediction (Z=114-126, A~320, 1.80x Pb resonance, 1e6
+  longer half-life than Og) - falsifiable, preserved.
 
-  VERIFIED EXACT: E_rot = 2.125e29 J; Henry correction
-  1.29e-29 (honest below-precision disclosure); ALL FOUR
-  dissolved-gas products (H2 62.4 mM, N2 0.507, O2 0.273,
-  Ar 0.013); Ug4 oceanic prefactor 9.42e-18.
+  VERIFIED EXACT: Ni-62 A_res = 1900.6 V and f_res =
+  1.415e22 Hz full chains; H-1 baseline 0.457 V; and
+  k_dp = G m_p^2/(hbar c) = 5.902e-39 - EXACTLY alpha_G,
+  the dimensionless gravitational fine-structure constant.
+  A genuine physical-constant identification inside the
+  dipole term (canonization candidate).
 
-  BUOY_TERM CODE-CALIBRATED: the paper openly shows THREE
-  failed derivation chains before citing 1.262e-28 from
-  CondensedPhysics2 - exemplary Rule 7 failure disclosure;
-  derivation requested. (Title 1.262e-8 vs body 1.262e-28
-  exponent mojibake.)
+  D_PAIR CONVENTION CHAOS: back-solving the results table
+  yields FIVE effective pairing factors against one stated
+  rule - H/O-16/Ca-40 at ~1.0 (stated 2.0 for even-even),
+  He-4 DOUBLY MAGIC suppressed at 0.501, Ni-62 at 2.397,
+  Sn/Z=120 at 2.0, Pb-208 at 2.502. Table not reproducible;
+  actual rule requested.
 
-  AZEO_VOID = 1/5 PAIR: 0.2 = 2/SO_FIVE - the SAME value as
-  PAPER_123's vortex winding dn = 1/5. Two independent 1/5
-  appearances across domains - primitive candidate.
+  S_SHELL ISLAND FORK: table 29.8 = 0.1*(114+184) but 114 is
+  not in the code MAGIC list (code gives 31.0). Magic numbers
+  carry predecessor EXACT integer identities (Q-113b).
 
-  Flags: t_Earth = 4,000 yr odd anchor; deep-ocean H2 "80
-  atm" unphysical (hydrothermal/lab value?).
-
-Q-137 queued. Gate 970 assertions 0 failures. Registry 362 rows /
-764 edges / 145 citation ledgers. Wired 145/2,255 (11 clean, 134
-OPEN_RULING). Next: PAPER_142.
+Q-138 queued. Gate 977 assertions 0 failures. Registry 364 rows /
+768 edges / 146 citation ledgers. Wired 146/2,255 (11 clean, 135
+OPEN_RULING). Next: PAPER_143.

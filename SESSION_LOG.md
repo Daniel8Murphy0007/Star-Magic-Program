@@ -1782,3 +1782,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 145/2,255 (11 ✓, 134 ⚠). Next: PAPER_142.
 
 ---
+
+## 2026-07-30 — v0.145.0 — BAND 1: PAPER_142
+
+- PAPER_142 wired (⚠ Q-138): H_res periodic table. Ni-62
+  EXACT; k_dp = alpha_G identification; d_pair five-convention
+  chaos pinned; island prediction preserved.
+- Campaign: 146/2,255 (11 ✓, 135 ⚠). Next: PAPER_143.
+
+---

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.144.0", "uqff_calculator.VERSION = 0.144.0")
+assert_that(C.VERSION == "0.145.0", "uqff_calculator.VERSION = 0.145.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2125,6 +2125,21 @@ assert_that(len(_r141['failed_chains']) == 3,
 assert_that(abs(_r141['ug4_prefactor'] - 9.42e-18) < 0.01e-18,
             "PAPER_141: Ug4 oceanic prefactor 9.42e-18 EXACT (attenuation constructive)")
 assert_that(C.wired_count() >= 145, "wired_count >= 145")
+
+_r142 = C.calc('PAPER_142')['value']
+assert_that(abs(_r142['ni62_ares'] - 1900.6) < 0.1,
+            "PAPER_142: Ni-62 A_res = 1900.6 V EXACT")
+assert_that(abs(_r142['ni62_fres'] - 1.415e22) < 0.001e22,
+            "PAPER_142: Ni-62 f_res = 1.415e22 Hz EXACT")
+assert_that(abs(_r142['k_dp'] - 5.902e-39) < 0.001e-39,
+            "PAPER_142: k_dp = ALPHA_G = 5.902e-39 EXACT physical identification (Q-138b)")
+assert_that(abs(_r142['dpair_effective_backsolved']['He4'] - 0.501) < 0.001 and abs(_r142['dpair_effective_backsolved']['Pb208'] - 2.502) < 0.001,
+            "PAPER_142: d_pair chaos pinned - He-4 suppressed 0.5x, Pb 2.5x, five conventions (Q-138a)")
+assert_that(_r142['s_shell_island_fork'] == (29.8, 31.0),
+            "PAPER_142: S_shell island table-vs-code fork (114 not in MAGIC list) (Q-138c)")
+assert_that(abs(_r142['island_ratio'] - 1.80) < 0.01,
+            "PAPER_142: island resonance 1.80x Pb - falsifiable prediction")
+assert_that(C.wired_count() >= 146, "wired_count >= 146")
 
 # =============================================================================
 # REPORT

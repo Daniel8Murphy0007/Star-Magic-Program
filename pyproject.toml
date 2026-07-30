@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.144.0"
-description = "UQFF Star-Magic-Program v0.144.0: PAPER_141 wired - H2O azeotrope salinity (E_rot + Henry + gas table EXACT; Buoy_term code-calibrated after THREE failed chains honestly disclosed; Azeo_void = 0.2 = 2/SO_FIVE - second independent 1/5 appearance pairing with PAPER_123 winding; daily-alpha used constructively). Q-137 queued. Wired 145/2255, gate 970/0. Registry 362 rows / 764 edges / 145 ledgers."
+version = "0.145.0"
+description = "UQFF Star-Magic-Program v0.145.0: PAPER_142 wired - H_res periodic table Z=1-126 (Ni-62 chains EXACT; k_dp = ALPHA_G = 5.902e-39 EXACT identification; d_pair CHAOS - five effective conventions in one table, He-4 doubly-magic suppressed 0.5x; S_shell island table-vs-code fork; N=184 island prediction 1.80x Pb preserved). Q-138 queued. Wired 146/2255, gate 977/0. Registry 364 rows / 768 edges / 146 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

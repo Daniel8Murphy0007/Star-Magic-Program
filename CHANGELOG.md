@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.145.0] — 2026-07-30 — BAND 1: PAPER_142 — k_dp = ALPHA_G
+
+### Added
+- **PAPER_142 dispatch** (H_res extended periodic table
+  Z=1-126, sec 2.1): universal nuclear resonance with magic
+  numbers as H_res maxima and the island-of-stability
+  prediction (Z=114-126, N=184, 1.80x Pb — falsifiable,
+  preserved). EXACT: Ni-62 A_res = 1900.6 V and f_res =
+  1.415e22 Hz; H-1 = 0.457 V; k_dp = G m_p²/(ħc) = 5.902e-39
+  — EXACTLY alpha_G, the gravitational fine-structure
+  constant (canonization candidate). D_PAIR CHAOS: five
+  effective pairing conventions back-solved from one results
+  table (He-4 doubly-magic suppressed 0.5x; Pb at 2.5x) —
+  not reproducible from the stated rule. S_shell island fork
+  (table 29.8 vs code 31.0; 114 absent from MAGIC list).
+- OPEN_RULING Q-138.
+- Gate: 977 assertions, 0 failures. Registry: 364 rows / 768 edges / 146 ledgers.
+
+---
+
 ## [0.144.0] — 2026-07-30 — BAND 1: PAPER_141 — SECOND 1/5 APPEARANCE
 
 ### Added
