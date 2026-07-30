@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.151.0"
+VERSION = "0.152.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7895,5 +7895,63 @@ def _paper_148(dataset):
         'formula': 'afluid = (nu lap_v / Evac) aDPM; 12-term table; r_lc = cP/2pi',
         'source': 'PAPER_148',
         'residual_pct': abs(3e8 * 3.76 / (2 * _m.pi) - 1.8e8) / 1.8e8 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_149')
+def _paper_149(dataset):
+    """Sgr A* MUGE: aDPM Dominance (S0, sec 2.2).
+
+    Second Cycle 3 system paper: 12-term table for Sgr A*
+    (aDPM = 4.105e29 at 99.9 pct), scoped INSIDE r_s per the
+    identification (SCm-internal acceleration; outside r_s the
+    fTRZ->0 limit recovers GM/r^2 - consistent with 148's
+    Q-141c reading). VERIFIED EXACT: Vsys = 7.79e30 m^3;
+    g_Newt(1 AU) = 2.43e4 - CORRECTING PAPER_146's 3.6e10
+    table slip (self-rectification); ratio 1.69e25; A = pi
+    r_s^2 = 4.75e20; QPO harmonic 500 GHz.
+    CASCADE INVERSION CONFIRMED (Q-145a): the table's
+    aTHz/aDPM = 0.0034 vs PAPER_147's cascade formula at
+    vexp = 0.3c giving 3e12 - a 1e15 DISCREPANCY. The system
+    tables were NOT computed with 147's formula (or an
+    unstated normalizer exists). Q-143a inversion is real.
+    ABSTRACT-VS-BODY FORK (Q-145b): abstract "~1e19 x
+    amplification" vs the body's own 1.69e25 (6 orders; the
+    1e19 tag propagated from 145/146).
+    G_NEWT(R_S) 1e9 SLIP (Q-145c): chain 3.59e6 vs printed
+    3.6e15 (mantissa exact); the downstream MUGE/Newt-at-r_s
+    ratio (1.14e14) inherits it (true 1.14e23).
+    FDPM BACK-SOLVED: sec 4's own words - "extracted from the
+    result, confirming self-consistency" - circularity
+    honestly visible (Q-143c confirmed).
+    B_DISK 1e12 T physicality flag: ~14 orders above the
+    EHT-inferred ~30 G accretion field.
+    """
+    import math as _m
+    rs = 1.23e10
+    return {
+        'value': {
+            'domain': '2.2 (Sgr A* system validation)',
+            'g_muge': 4.105e29,
+            'adpm_fraction': 0.999,
+            'scope': 'inside r_s only; fTRZ->0 recovery outside (148-consistent)',
+            'vsys_m3': 4 / 3 * _m.pi * rs ** 3,              # 7.79e30 EXACT
+            'g_newt_1au': 6.67e-11 * 8.15e36 / (1.496e11) ** 2,  # 2.43e4 EXACT
+            'corrects_146_slip': 'g_Newt(1AU) right here vs 146 table 3.6e10',
+            'ratio_body': 4.105e29 / 2.43e4,                 # 1.69e25 EXACT
+            'ratio_abstract': 1e19,                          # 6-order fork
+            'g_newt_rs_chain': 6.67e-11 * 8.15e36 / rs ** 2,  # 3.59e6 vs printed 3.6e15
+            'area_rs': _m.pi * rs ** 2,                      # 4.75e20 EXACT
+            'athz_table_over_adpm': 1.4e27 / 4.105e29,       # 0.0034
+            'athz_formula_over_adpm': 1e12 * 10 * (9e7 / 3e8),  # 3e12
+            'inversion_confirmed': '1e15 discrepancy - tables not computed with 147 formula (Q-143a)',
+            'fdpm_backsolved': 'own words: extracted from the result (Q-143c confirmed)',
+            'qpo_hz': 5e11,
+            'b_disk_flag': '1e12 T vs EHT ~30 G (~14 orders)',
+        },
+        'formula': '12-term table; aDPM dominant; scope inside r_s; QPO = fDPM/2',
+        'source': 'PAPER_149',
+        'residual_pct': abs(4 / 3 * _m.pi * rs ** 3 - 7.78e30) / 7.78e30 * 100,
         'status': 'OPEN_RULING',
     }

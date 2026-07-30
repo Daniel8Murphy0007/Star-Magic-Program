@@ -1848,3 +1848,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 152/2,255 (11 ✓, 141 ⚠). Next: PAPER_149.
 
 ---
+
+## 2026-07-30 — v0.152.0 — BAND 1: PAPER_149
+
+- PAPER_149 wired (⚠ Q-145): Sgr A* aDPM. Inversion confirmed
+  (1e15); abstract fork; scope statement good; corrects 146
+  slip. Registry measured 375/799/153.
+- Campaign: 153/2,255 (11 ✓, 142 ⚠). Next: PAPER_150.
+
+---

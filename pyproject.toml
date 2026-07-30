@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.151.0"
-description = "UQFF Star-Magic-Program v0.151.0: PAPER_148 wired - SGR1745 magnetar (afluid 99 pct; MUGE-g EXPLICITLY identified as magnetospheric-scale correction - Q-141c partial answer; fTRZ additive form REFUTED by own table; B_crit direction votes Schwinger; three mantissa-exact slips). Q-144 queued. Wired 152/2255, gate 1014/0. Registry 373 rows / 795 edges / 152 ledgers (measured)."
+version = "0.152.0"
+description = "UQFF Star-Magic-Program v0.152.0: PAPER_149 wired - Sgr A* aDPM dominance (Vsys/ratio/g_Newt chains EXACT, correcting 146 slip; CASCADE INVERSION CONFIRMED - table aTHz/aDPM 0.0034 vs formula 3e12, 1e15 discrepancy; abstract-vs-body 6-order fork; FDPM back-solved by own admission; scope-inside-r_s statement good). Q-145 queued. Wired 153/2255, gate 1020/0. Registry 375 rows / 799 edges / 153 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

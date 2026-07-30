@@ -1,36 +1,30 @@
-v0.151.0 BAND 1: PAPER_148 wired - fTRZ ADDITIVE REFUTED + SCHWINGER VOTE
+v0.152.0 BAND 1: PAPER_149 wired - CASCADE INVERSION CONFIRMED (1e15)
 
-PAPER_148 UQFF SGR1745-2900 Magnetar Validation (OPEN_RULING
-Q-144):
-  First Cycle 3 system paper: 12-term table with afluid_freq
-  dominant at 99 pct (g = 1.773e-9 m/s^2).
+PAPER_149 UQFF Sgr A* MUGE: aDPM Dominance (OPEN_RULING Q-145):
+  Second Cycle 3 system paper: 12-term table with aDPM at
+  99.9 pct (g = 4.105e29 m/s^2), properly SCOPED inside r_s
+  (SCm-internal acceleration; fTRZ->0 recovery outside -
+  consistent with 148's identification statement).
 
-  MUGE-G IDENTIFIED (Q-141c partial answer): the paper
-  EXPLICITLY states g is the magnetospheric-scale MUGE
-  correction, NOT bulk surface gravity - the first in-corpus
-  identification statement; adopted as the reading for
-  149-152.
+  VERIFIED EXACT: Vsys = 7.79e30 m^3; g_Newt(1 AU) = 2.43e4 -
+  silently CORRECTING PAPER_146's 3.6e10 table slip; ratio
+  1.69e25; A = pi r_s^2 = 4.75e20; QPO harmonic 500 GHz
+  (falsifiable).
 
-  TWO STRUCTURAL VOTES:
-  1. FTRZ ADDITIVE REFUTED: the paper's own table lists
-     fTRZ = 0.1 "subdominant" against a 1.773e-9 total - if
-     summed, fTRZ would be 5.6e7x the total. The table only
-     closes non-additively. Strong Q-142a datapoint toward
-     the multiplicative (1+fTRZ) form.
-  2. B_CRIT SCHWINGER VOTE: "B = 3e11 is 3 orders above
-     B_crit" is FALSE with the printed 4.4e13 (B is BELOW)
-     and directionally TRUE only with the Schwinger 4.4e9
-     (68x above). Internal consistency votes Schwinger
-     (feeds Q-002/116b/134d).
+  CASCADE INVERSION CONFIRMED (closes the Q-143a loop): the
+  table's aTHz/aDPM = 0.0034 vs PAPER_147's cascade formula
+  giving 3e12 at 0.3c - a 1e15 DISCREPANCY. The system tables
+  were NOT computed with the printed cascade formula. Q-143
+  annotated; SOURCE4's actual normalization requested.
 
-  VERIFIED EXACT: lap_v = 41.4; r_lc = 1.795e8 m. Three
-  mantissa-exact exponent slips pinned (nu 1e3; g_lc 10x;
-  surface 10x - the transcription family grows).
+  ALSO PINNED: abstract "1e19x" vs body 1.69e25 (6-order
+  internal fork, tag propagated from 145/146); g_Newt(r_s)
+  chain 3.59e6 vs printed 3.6e15 (1e9 mantissa-exact slip,
+  downstream ratio inherits); FDPM back-solved by the paper's
+  own admission ("extracted from the result" - Q-143c
+  confirmed); B_disk = 1e12 T sits ~14 orders above the
+  EHT-inferred ~30 G.
 
-  Falsifiable predictions: pulse-drift delta, delta-DM aether
-  drag, Ug4i proximity coupling (largest known M_bh/d_g
-  magnetar at 0.1 pc from Sgr A*).
-
-Q-144 queued. Gate 1,014 assertions 0 failures. Registry
-373 rows / 795 edges / 152 ledgers (measured). Wired 152/2,255
-(11 clean, 141 OPEN_RULING). Next: PAPER_149.
+Q-145 queued. Gate 1,020 assertions 0 failures. Registry
+375 rows / 799 edges / 153 ledgers (measured). Wired
+153/2,255 (11 clean, 142 OPEN_RULING). Next: PAPER_150.

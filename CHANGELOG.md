@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.152.0] — 2026-07-30 — BAND 1: PAPER_149 — INVERSION CONFIRMED
+
+### Added
+- **PAPER_149 dispatch** (Sgr A* aDPM dominance, sec 2.2):
+  second Cycle 3 system paper, g = 4.105e29 SCOPED inside r_s
+  (SCm-internal; 148-consistent identification). EXACT: Vsys
+  7.79e30, g_Newt(1AU) = 2.43e4 (silently correcting 146's
+  3.6e10 slip), ratio 1.69e25, A = 4.75e20; QPO 500 GHz
+  falsifiable. CASCADE INVERSION CONFIRMED: table aTHz/aDPM =
+  0.0034 vs the 147 formula's 3e12 — 1e15 discrepancy; the
+  system tables were not computed with the printed cascade
+  (Q-143 annotated). Abstract 1e19 vs body 1.69e25 (6-order
+  fork); g_Newt(r_s) 1e9 mantissa-exact slip; FDPM
+  back-solved by own admission; B_disk physicality flag.
+- OPEN_RULING Q-145.
+- Gate: 1,020 assertions, 0 failures. Registry: 375 rows / 799 edges / 153 ledgers (measured).
+
+---
+
 ## [0.151.0] — 2026-07-30 — BAND 1: PAPER_148 — fTRZ ADDITIVE REFUTED
 
 ### Added

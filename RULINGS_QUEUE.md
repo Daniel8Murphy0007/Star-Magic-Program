@@ -3184,6 +3184,7 @@ RESOLVED section with the ruling recorded.
   (aDPM listed dominant at Sgr A*). Either aTHz needs an
   unstated normalizer, or the dominance table is mislabeled.
   Rule (affects all 148-152 system wirings).
+  (UPDATE PAPER_149: CONFIRMED - the Sgr A* table gives aTHz/aDPM = 0.0034 vs the formula's 3e12, a 1e15 discrepancy; the tables were not computed with this formula. Q-145a.)
   (b) FDPM DOUBLE-COUNT: I = rho*<r>*A*(w1-w2) already
   contains A and dOmega; FDPM = I*A*(w1-w2) then carries
   A^2*(w1-w2)^2. Is the double appearance intended (a
@@ -3238,6 +3239,38 @@ RESOLVED section with the ruling recorded.
   laboratory is a genuine unique-test-case argument.
 - **Best-candidate wired:** table + identification; both
   structural votes registered; slips pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-145 — PAPER_149 Sgr A* — cascade inversion confirmed + scope statement
+- **Question:** (a) CASCADE INVERSION CONFIRMED (closes the
+  Q-143a loop): the Sgr A* table gives aTHz/aDPM = 0.0034,
+  while PAPER_147's cascade formula at vexp = 0.3c gives
+  3e12 - a 1e15 DISCREPANCY. The system tables were NOT
+  computed with the printed cascade formula. Provide the
+  actual aTHz normalization used by SOURCE4, or mark the 147
+  formula superseded by the table values.
+  (b) ABSTRACT-VS-BODY: "~1e19 x amplification" (abstract,
+  propagated from 145/146) vs the body's own 1.69e25 - a
+  6-order internal fork. Which is the canonical Sgr A*
+  amplification figure?
+  (c) G_NEWT(R_S) 1e9 SLIP: chain 3.59e6 m/s2 vs printed
+  3.6e15 (mantissa exact); the downstream MUGE/Newt ratio at
+  r_s (printed 1.14e14) inherits it (true 1.14e23). The
+  mantissa-exact family grows again.
+  (d) SCOPE STATEMENT (good): the paper scopes g = 4.105e29
+  INSIDE r_s (SCm-internal acceleration) with fTRZ->0
+  recovery outside - consistent with 148's identification;
+  FDPM is back-solved by the paper's own admission
+  ("extracted from the result") confirming Q-143c; B_disk =
+  1e12 T sits ~14 orders above the EHT-inferred ~30 G.
+- **Notable:** g_Newt(1 AU) = 2.43e4 EXACT - silently
+  CORRECTING PAPER_146's 3.6e10 table slip; Vsys, area, and
+  ratio chains EXACT; the QPO-at-500-GHz harmonic and
+  ISCO/jet modification table are falsifiable content; the
+  148-vs-149 dominance contrast (fluid vs aDPM) is the
+  hierarchy claim working as designed.
+- **Best-candidate wired:** table + scope registered; the
+  1e15 inversion confirmation and both slips pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

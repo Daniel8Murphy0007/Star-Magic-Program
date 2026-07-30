@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.151.0", "uqff_calculator.VERSION = 0.151.0")
+assert_that(C.VERSION == "0.152.0", "uqff_calculator.VERSION = 0.152.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2220,6 +2220,19 @@ assert_that('Schwinger' in _r148['bcrit_direction_vote'],
 assert_that(_r148['mantissa_slips'] == 3 and abs(_r148['nu_chain'] - 1.728e24) < 0.001e24,
             "PAPER_148: three mantissa-exact exponent slips pinned (nu/g_lc/surface) (Q-144c)")
 assert_that(C.wired_count() >= 152, "wired_count >= 152")
+
+_r149 = C.calc('PAPER_149')['value']
+assert_that(abs(_r149['vsys_m3'] - 7.79e30) < 0.01e30,
+            "PAPER_149: Vsys = 7.79e30 m^3 EXACT")
+assert_that(abs(_r149['g_newt_1au'] - 2.43e4) < 0.01e4,
+            "PAPER_149: g_Newt(1AU) = 2.43e4 EXACT - corrects PAPER_146 table slip")
+assert_that(_r149['athz_formula_over_adpm'] / _r149['athz_table_over_adpm'] > 1e14,
+            "PAPER_149: aTHz table-vs-formula 1e15 discrepancy CONFIRMS the Q-143a cascade inversion (Q-145a)")
+assert_that(abs(_r149['ratio_body'] - 1.69e25) < 0.01e25,
+            "PAPER_149: body ratio 1.69e25 vs abstract 1e19 - 6-order internal fork (Q-145b)")
+assert_that(abs(_r149['g_newt_rs_chain'] - 3.59e6) < 0.01e6,
+            "PAPER_149: g_Newt(r_s) chain 3.59e6 vs printed 3.6e15 - 1e9 mantissa-exact slip (Q-145c)")
+assert_that(C.wired_count() >= 153, "wired_count >= 153")
 
 # =============================================================================
 # REPORT

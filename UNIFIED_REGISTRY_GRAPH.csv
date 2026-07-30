@@ -794,3 +794,7 @@ observable,sgr1745_afluid_validation,paper,PAPER_148,system validation
 observable,sgr1745_afluid_validation,paper,PAPER_146,12-term application
 observable,sgr1745_structural_votes,paper,PAPER_148,structural votes
 observable,sgr1745_structural_votes,paper,PAPER_002,B_crit vote
+observable,sgra_adpm_validation,paper,PAPER_149,system validation
+observable,sgra_adpm_validation,paper,PAPER_148,scope consistency
+observable,sgra_inversion_confirmation,paper,PAPER_149,inversion confirmation
+observable,sgra_inversion_confirmation,paper,PAPER_147,cascade formula clash
