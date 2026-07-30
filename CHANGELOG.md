@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.159.0] — 2026-07-30 — BAND 1: PAPER_156 — CYCLE 3 BLOCK COMPLETE
+
+### Added
+- **PAPER_156 dispatch** (Millennium roadmap — closes sec 2.2
+  / 07b7f7a6 block, PAPER_145-156, 12 papers): 10 master
+  equations bridging six open Clay problems. Consistent: t_0
+  = 1/(kappa·F_TRZ) = 20,000 d = 154's T_Osc; P-NP N^1.75
+  EXACT; BSD 1/kappa = 2000 EXACT; e^SSq echoes 132.
+  MILLENNIUM FORK (corpus-wide): the roadmap's bridges differ
+  from the predecessor canonical closures on all six problems
+  (YM 5.2e-11 eV vs 1.736 GeV = 3.3e19; Riemann Li_s entire/
+  decorative; BSD ord = rank×2000 INVERTS the conjecture).
+  sqrt-10 slip in eq-M2; two false SSq adjacencies; NS
+  curl-free leg (from 154) is the roadmap's sound leg.
+  BLOCK SUMMARY (145-156): assigned-values fingerprint, three
+  formula sets (root cause), Ug4i four-form fork deciding the
+  SM keystone, 2.32-mm throat landmark, three primitive jet
+  identities, two 1e46 routes, fTRZ scoped doctrine.
+- OPEN_RULING Q-152. Two float-tolerance fixes in-flight.
+- Gate: 1,063 assertions, 0 failures. Registry: 389 rows / 829 edges / 160 ledgers (measured).
+
+---
+
 ## [0.158.0] — 2026-07-30 — BAND 1: PAPER_155 — SM-LIMIT KEYSTONE
 
 ### Added

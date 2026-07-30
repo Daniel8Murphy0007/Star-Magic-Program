@@ -823,3 +823,8 @@ observable,sm_limit_keystone,paper,PAPER_155,limit proof
 primitive,F_TRZ,observable,sm_limit_keystone,limit variable
 observable,sm_limit_defects,paper,PAPER_155,fourth Ug4i form
 observable,sm_limit_defects,paper,PAPER_139,Ug4i fork lineage
+observable,millennium_roadmap,paper,PAPER_156,10 equations
+primitive,SSQ,observable,millennium_roadmap,P-NP exponent
+primitive,KAPPA_PER_DAY,observable,millennium_roadmap,BSD amplifier + t_0
+observable,millennium_fork_corpus,paper,PAPER_156,six-problem fork
+observable,millennium_fork_corpus,paper,PAPER_154,NS route inherit

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.158.0"
+VERSION = "0.159.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8290,5 +8290,66 @@ def _paper_155(dataset):
         'formula': 'lim g_MUGE = GM/r^2 via Ug4i Taylor; corrections O(kt, B^2, fTRZ^2)',
         'source': 'PAPER_155',
         'residual_pct': abs(1.33e20 / (5.79e10) ** 2 - 0.0397) / 0.0397 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_156')
+def _paper_156(dataset):
+    """Millennium Prize Roadmap (S0, closes sec 2.2 / 07b7f7a6).
+
+    10 master equations bridging UQFF to the Clay problems -
+    the Cycle 3 block capstone (PAPER_145-156 complete).
+    VERIFIED: t_0 = 1/(kappa*F_TRZ) = 20,000 days = 154's
+    T_Osc (consistent); zeta_UQFF = Li_s(e^-10) math fine;
+    N^(1/SSq) = N^1.75 EXACT; BSD 1/kappa = 2000 EXACT;
+    e^SSq = 1.768 internal echo with 132's LENR factor;
+    Hodge E_n/E_0 = 10^(n-1) rational (trivially).
+    YM GAP FORK (Q-152a): eq-M2 gives Delta = 5.2e-11 eV
+    ("gravitational superconductor" gap) vs the corpus/
+    predecessor canonical 1.736 GeV (PAPER_1318) - a 3.3e19
+    fork; the roadmap's SCm gap does not address the QCD-type
+    Millennium statement. ALSO a sqrt-10 slip inside: sqrt
+    (6.287e24) = 2.51e12 printed 7.93e12 (chain-correct gap
+    1.65e-11 eV).
+    FALSE ADJACENCIES (Q-152b): "SSq ~ 14.13/2pi = 2.25"
+    (4x false); "SSq ~ ln(phi)/phi = 0.297" (2x false); the
+    only true identity is trivial (SSq = ln(1.768) by
+    definition). BSD LOGIC INVERSION: ord = rank x 2000
+    CONTRADICTS the conjecture it bridges (ord = rank);
+    zeta_UQFF is entire (no zero structure) so the Riemann
+    bridge is decorative.
+    MILLENNIUM FORK CORPUS-WIDE (Q-152c): the roadmap's six
+    bridges are DIFFERENT routes from the predecessor's
+    canonical closures (Riemann 9877.78265, NS enstrophy
+    0.85, Hodge 1.0, P-NP 1-1e-9, BSD 0.30598, YM 1.736) -
+    one canonical Millennium set needed.
+    Honest: Poincare listed as solved (Perelman) for
+    verification only; NS bridge inherits 154's sound
+    curl-free core.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.2 capstone (Millennium roadmap; block 145-156 complete)',
+            'n_equations': 10,
+            't0_days': 1 / (KAPPA_PER_DAY * F_TRZ),           # 20,000 = 154 T_Osc
+            'zeta_z': _m.exp(-10),                            # 4.54e-5
+            'pnp_exponent': 1 / SSQ,                          # 1.754
+            'bsd_amplifier': 1 / KAPPA_PER_DAY,               # 2000 EXACT
+            'ym_gap_roadmap_ev': 5.2e-11,
+            'ym_gap_canonical_gev': 1.736,
+            'ym_fork': 1.736e9 / 5.2e-11,                     # 3.3e19
+            'ym_sqrt_slip': (_m.sqrt(6.287e24), 7.93e12),     # 2.51e12 vs printed
+            'false_adjacencies': ('SSq ~ 2.25 (4x)', 'SSq ~ 0.297 (2x)'),
+            'true_echo': 'e^SSq = 1.768 = PAPER_132 LENR factor',
+            'bsd_inversion': 'ord = rank x 2000 contradicts BSD (ord = rank)',
+            'riemann_status': 'zeta_UQFF entire - bridge decorative',
+            'millennium_fork': 'roadmap bridges vs predecessor canonical closures - adjudicate',
+            'block_complete': 'PAPER_145-156 (12 papers, 07b7f7a6)',
+        },
+        'formula': '10 master equations (eq-M1..M10); zeta_UQFF = Li_s(e^-10)',
+        'source': 'PAPER_156',
+        'residual_pct': abs(1 / (KAPPA_PER_DAY * F_TRZ) - 20000) / 20000 * 100,
         'status': 'OPEN_RULING',
     }

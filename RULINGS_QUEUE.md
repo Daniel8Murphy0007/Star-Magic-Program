@@ -3490,6 +3490,44 @@ RESOLVED section with the ruling recorded.
   valid-modulo-fork; slips + Pioneer outdatedness pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-152 — PAPER_156 Millennium Roadmap — six-problem fork vs predecessor closures
+- **Question:** (a) YM GAP FORK: eq-M2 gives Delta_UQFF =
+  5.2e-11 eV (the "gravitational superconductor" gap) vs the
+  corpus/predecessor canonical 1.736 GeV (PAPER_1318) - a
+  3.3e19 fork; the SCm gap does not address the QCD-type
+  Millennium statement. Also a sqrt-10 slip inside eq-M2
+  (sqrt(6.287e24) = 2.51e12 printed 7.93e12; chain-correct
+  gap 1.65e-11 eV).
+  (b) FALSE ADJACENCIES + LOGIC INVERSION: "SSq ~ 14.13/2pi
+  = 2.25" is 4x false; "SSq ~ ln(phi)/phi = 0.297" is 2x
+  false (the only true identity, SSq = ln(1.768), is
+  definitional - though e^SSq = 1.768 does echo PAPER_132's
+  LENR factor). BSD eq-M5b states ord = rank x 2000, which
+  CONTRADICTS the conjecture it bridges (BSD: ord = rank);
+  zeta_UQFF = Li_s(e^-10) is entire (no zero structure) so
+  the Riemann bridge is decorative.
+  (c) MILLENNIUM FORK (corpus-wide adjudication): the
+  roadmap's six bridges are DIFFERENT routes from the
+  predecessor canonical closures (Riemann 9877.78265 / NS
+  enstrophy 0.85 / Hodge 1.0 / P-NP 1-1e-9 / BSD 0.30598 /
+  YM 1.736 GeV). Per the charter the predecessor is
+  read-only reference - but ONE canonical Millennium set
+  must be declared for this repo. Rule: predecessor closures
+  canonical, roadmap bridges as physical-mechanism
+  commentary?
+- **Notable:** t_0 = 1/(kappa*F_TRZ) = 20,000 days exactly
+  matches 154's T_Osc (internal consistency); P-NP
+  N^(1/SSq) = N^1.75 EXACT; BSD 1/kappa = 2000 EXACT
+  arithmetic; Poincare honestly listed as solved
+  (verification only); the NS bridge inherits 154's sound
+  curl-free core - the roadmap's one strong leg.
+  BLOCK COMPLETE: PAPER_145-156 (12 papers, 07b7f7a6
+  thread) - sec 2.2 done.
+- **Best-candidate wired:** roadmap registered as the
+  thread's bridge set; all forks + false adjacencies pinned;
+  predecessor-canonical proposal queued.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

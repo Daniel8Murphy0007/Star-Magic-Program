@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.158.0", "uqff_calculator.VERSION = 0.158.0")
+assert_that(C.VERSION == "0.159.0", "uqff_calculator.VERSION = 0.159.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2311,6 +2311,21 @@ assert_that(_r155['aaether_solar_chain'] < 1e-13 and _r155['sgra_kt_chain'] > 1e
 assert_that('Turyshev' in _r155['pioneer_status'],
             "PAPER_155: Pioneer attribution outdated (thermally resolved) (Q-151c)")
 assert_that(C.wired_count() >= 159, "wired_count >= 159")
+
+_r156 = C.calc('PAPER_156')['value']
+assert_that(abs(_r156['t0_days'] - 20000) < 1e-9,
+            "PAPER_156: t_0 = 1/(kappa*F_TRZ) = 20,000 days = 154's T_Osc (consistent)")
+assert_that(abs(_r156['pnp_exponent'] - 1.754) < 0.001,
+            "PAPER_156: P-NP exponent N^(1/SSq) = N^1.754 EXACT")
+assert_that(_r156['ym_fork'] > 1e19,
+            "PAPER_156: YM gap fork 3.3e19 (roadmap 5.2e-11 eV vs canonical 1.736 GeV) (Q-152a)")
+assert_that(_r156['ym_sqrt_slip'][1] / _r156['ym_sqrt_slip'][0] > 3,
+            "PAPER_156: sqrt-10 slip inside eq-M2 pinned")
+assert_that(abs(_r156['bsd_amplifier'] - 2000) < 1e-9,
+            "PAPER_156: BSD 1/kappa = 2000 EXACT (but ord = rank x 2000 inverts BSD)")
+assert_that('145-156' in _r156['block_complete'],
+            "PAPER_156: Cycle 3 block COMPLETE (12 papers)")
+assert_that(C.wired_count() >= 160, "wired_count >= 160")
 
 # =============================================================================
 # REPORT

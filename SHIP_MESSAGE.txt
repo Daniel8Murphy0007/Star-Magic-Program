@@ -1,32 +1,33 @@
-v0.158.0 BAND 1: PAPER_155 wired - SM-LIMIT KEYSTONE (VALID MODULO FORK)
+v0.159.0 BAND 1: PAPER_156 wired - CYCLE 3 BLOCK COMPLETE
 
-PAPER_155 UQFF Standard Model Gravity as MUGE Limit
-(OPEN_RULING Q-151) - the block keystone:
-  lim(fTRZ->0, B->0, rho_SCm->rho_b, kt->0) g_MUGE = GM/r^2.
+PAPER_156 UQFF Millennium Prize Roadmap (OPEN_RULING Q-152) -
+closes the 07b7f7a6 block (PAPER_145-156, 12 papers):
+  10 master equations bridging the six open Clay problems.
 
-  CORE PROOF VALID: under the four conditions each of the 12
-  terms vanishes and Ug4i -> GM/r^2 via the Taylor limit
-  (1-e^-kt)/kt -> 1. The CONTAINMENT DOCTRINE ("UQFF does not
-  replace DPM-seeded gravity - it contains it") is the
-  cleanest Step-10 statement in the corpus, consistent with
-  the predecessor dpm_helpers chain. Mercury chain EXACT
-  (5.0e-8 fractional - passes); GW-speed cancellation EXACT
-  (GW170817-consistent); LLR bounds honest.
+  CONSISTENT: t_0 = 1/(kappa*F_TRZ) = 20,000 days exactly
+  matches 154's T_Osc; P-NP exponent N^(1/SSq) = N^1.75
+  EXACT; BSD 1/kappa = 2000 EXACT; e^SSq = 1.768 echoes
+  PAPER_132's LENR factor; Poincare honestly listed solved.
 
-  KEYSTONE HOSTAGE: the proof rests on Ug4i =
-  (GM/r^2)(1-e^-kt)/kt - the FOURTH Ug4i variant (139
-  inverse / 146 direct / 152 kappa-rho-V / 155 Taylor). The
-  Q-142b fork adjudication now decides whether the keystone
-  stands. Q-142 annotated.
+  MILLENNIUM FORK (corpus-wide adjudication): the roadmap's
+  bridges are DIFFERENT routes from the predecessor canonical
+  closures on ALL SIX problems - YM 5.2e-11 eV vs 1.736 GeV
+  (3.3e19 fork, plus a sqrt-10 slip in the chain); Riemann
+  zeta_UQFF is entire (decorative); BSD "ord = rank x 2000"
+  INVERTS the conjecture it bridges. Two false SSq
+  adjacencies pinned (2.25, 0.297). The NS curl-free leg
+  (from 154) is the roadmap's one sound mechanism. Proposed:
+  predecessor closures canonical, roadmap as mechanism
+  commentary.
 
-  PINNED: three mantissa-exact slips (aaether solar 1e5 -
-  the Pioneer-consistency claim rests ENTIRELY on it;
-  Pioneer GM 10x; SgrA kt 1e6); eps_SCm = 0.003 back-solved
-  while claimed not-free; the Pioneer anomaly attribution is
-  OUTDATED (thermally resolved, Turyshev 2012) - retire or
-  reframe as a bound.
+  CYCLE 3 BLOCK SUMMARY (145-156): assigned-values
+  fingerprint (1-2-5 x (1+P_SCm)), THREE formula sets (root
+  cause of all table discrepancies), Ug4i FOUR-form fork now
+  deciding the SM keystone, the 2.32-mm throat landmark
+  derivation, three primitive jet identities + lambda_SCm =
+  1 fm, two algebraically-linked 1e46 routes, and the scoped
+  fTRZ doctrine.
 
-Q-151 queued. Gate 1,056 assertions 0 failures. Registry
-387 rows / 824 edges / 159 ledgers (measured). Wired
-159/2,255 (11 clean, 148 OPEN_RULING). Next: PAPER_156
-(Millennium roadmap - closes the 07b7f7a6 block).
+Q-152 queued. Gate 1,063 assertions 0 failures. Registry
+389 rows / 829 edges / 160 ledgers (measured). Wired
+160/2,255 (11 clean, 149 OPEN_RULING). Next: PAPER_157.

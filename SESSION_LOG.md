@@ -1912,3 +1912,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 159/2,255 (11 ✓, 148 ⚠). Next: PAPER_156.
 
 ---
+
+## 2026-07-30 — v0.159.0 — BAND 1: PAPER_156
+
+- PAPER_156 wired (⚠ Q-152): Millennium roadmap. Cycle 3
+  block 145-156 COMPLETE (12 papers). Six-problem Millennium
+  fork vs predecessor closures queued for adjudication.
+- Campaign: 160/2,255 (11 ✓, 149 ⚠). Next: PAPER_157.
+
+---
