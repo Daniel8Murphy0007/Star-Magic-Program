@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.139.0", "uqff_calculator.VERSION = 0.139.0")
+assert_that(C.VERSION == "0.140.0", "uqff_calculator.VERSION = 0.140.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2056,6 +2056,19 @@ assert_that(abs(_r136['p_scm_chain'] - 1e-3) < 1e-15 and abs(_r136['p_scm_primit
 assert_that(len(_r136['v_ua_fork']) == 3,
             "PAPER_136: v_UA text/code/corpus fork (1e8/1e4/3e4) pinned (Q-132c)")
 assert_that(C.wired_count() >= 140, "wired_count >= 140")
+
+_r137 = C.calc('PAPER_137')['value']
+assert_that(abs(_r137['e18_ev'] - 6.24e16) < 0.01e16,
+            "PAPER_137: E_18 = 62.4 PeV (printed MeV - 1e9 conversion break); real Higgs n = 12.3 (Q-133a)")
+assert_that(abs(_r137['higgs_true_n'] - 12.3) < 0.01,
+            "PAPER_137: genesis n=18 Higgs label superseded by EP block n=12")
+assert_that(abs(_r137['orbital_cascade_actual'] - 2.18e-14) < 0.01e-14 and abs(_r137['k_needed_for_10ev'] - 32) < 0.2,
+            "PAPER_137: orbital cascade gives 136 keV not 10 eV (k=32 needed) - falsified output No. 5 (Q-133b)")
+assert_that(_r137['ereact_ladder_max'] == 1e21 and _r137['n_needed_for_1e46'] == 51,
+            "PAPER_137: E_react ladder maxes 1e21 - 1e46 off-ladder under v^2; supports v^1 resolution (Q-133c)")
+assert_that(abs(_r137['rho_ladder_n26'] - 1e28) < 1e22,
+            "PAPER_137: rho ladder self-consistent (n=26 -> 1e28)")
+assert_that(C.wired_count() >= 141, "wired_count >= 141")
 
 # =============================================================================
 # REPORT

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 140 (11 ✓, 129 ⚠ OPEN_RULING)
+- **Wired:** 141 (11 ✓, 130 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2115
+- **Not yet touched:** 2114
 
 ---
 
@@ -599,7 +599,7 @@
 | ⬜ | PAPER_1377 | FAINT YOUNG SUN PARADOX |
 | ⬜ | PAPER_1378 | LOSCHMIDT PARADOX |
 | ⬜ | PAPER_1379 | KLEIN PARADOX |
-| ⬜ | PAPER_137 | UQFF 26QuantumLevels EnergyLadder E0to10n Higgs GalacticVacuum |
+| ⚠ | PAPER_137 | UQFF 26QuantumLevels EnergyLadder E0to10n Higgs GalacticVacuum |
 | ⬜ | PAPER_1380 | MPEMBA EFFECT |
 | ⬜ | PAPER_1381 | FINAL PARSEC PROBLEM |
 | ⬜ | PAPER_1382 | AHARONOV BOHM DISPATCH |

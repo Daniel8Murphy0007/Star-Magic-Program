@@ -1,28 +1,32 @@
-v0.139.0 BAND 1: PAPER_136 wired - P_SCm = F_TRZ^3 PRIMITIVE FIND
+v0.140.0 BAND 1: PAPER_137 wired - GENESIS LABELS SUPERSEDED BY EP
 
-PAPER_136 UQFF Planetary Core Ug3 Exclusivity (OPEN_RULING
-Q-132):
-  sec 2.1: P_SCm = 1e-3 planetary suppression - SCm interacts
-  ONLY with Ug3 in cores (no external SCm signal - cleanly
-  falsifiable); quantum Hamiltonian H = H_Ug3 + H_SCm + H_UA
-  as the orbital-stability mechanism (no dark matter).
+PAPER_137 UQFF 26 Quantum Levels: Genesis Ladder (OPEN_RULING
+Q-133):
+  sec 2.1: the ladder ORIGIN (E_n = 1e-20 * 10^n, formula
+  identical to the EP block) with the Ug ACTIVATION-BAND map
+  (Ug3 n=5+, Ug1 n=10+, Ug2 n=13+, Ug4 n=20+) and the
+  hierarchy-problem dissolution claim (force scales = SCm
+  density rungs).
 
-  VERIFIED EXACT: H_Ug3 = 1.8*B^2/2mu0 = 448 J/m3; T_prec =
-  29.09 days; J = 1.12e9; P_SCm derivation arithmetic.
+  LABEL FORK SUPERSEDED: genesis labels conflict with the
+  corrected EP assignments - Higgs labeled n=18 (E_18 = 1e-2
+  J = 62.4 PEV, printed "62.4 MeV" - a 1e9 conversion break;
+  real Higgs n=12.3), and n=10 labeled "atomic" while
+  carrying the hadronic 0.624 GeV rung. Genesis ENERGIES
+  stand; genesis LABELS superseded by EP-02/PAPER_122.
 
-  PRIMITIVE FIND: P_SCm = 1e-3 = F_TRZ^3 EXACT - joins
-  d_sw = F_TRZ^2 (Q-110a) in an F_TRZ-power ladder, with
-  predecessor PAPER_2139 quartet standing.
+  FALSIFIED OUTPUT No. 5: orbital cascade E_10*SSq^15 =
+  136 keV, claimed "~10 eV" (k = 32 needed, not 15).
 
-  TENSIONS: H_SCm = 5e27 sits 25 ORDERS above H_Ug3 (decay-
-  dominated) and exceeds Earth-core mass-energy by 4e6
-  (physicality question); the "29-day lunar-month match" is
-  the SOLAR rotation period by construction (omega_s = 2.5e-6
-  is the corpus solar constant - circular relabel); the
-  P_SCm derivation needs omega_star = 2.5e-3, 1000x the
-  corpus solar omega; v_UA text/code/corpus fork (1e8/1e4/
-  3e4) folds into the single-[UA] ruling.
+  THIRD v^1 SUPPORT: the paper's own E_react^(n) = 10^(n-5)
+  ladder maxes at 1e21 - the 1e46 anchor needs n = 51,
+  OFF-LADDER under multiply-v^2; under the Q-129a v^1
+  resolution E_react(solar n=13) = 1e46 lands on-anchor.
+  Q-129 annotated.
 
-Q-132 queued. Gate 938 assertions 0 failures. Registry 352 rows /
-743 edges / 140 citation ledgers. Wired 140/2,255 (11 clean, 129
-OPEN_RULING). Next: PAPER_137.
+  In-paper honesty acknowledged: levels 7/14 flagged
+  proximate; n=18 flagged index-not-derivation.
+
+Q-133 queued. Gate 944 assertions 0 failures. Registry 354 rows /
+748 edges / 141 citation ledgers. Wired 141/2,255 (11 clean, 130
+OPEN_RULING). Next: PAPER_138.

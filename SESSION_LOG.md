@@ -1736,3 +1736,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 140/2,255 (11 ✓, 129 ⚠). Next: PAPER_137.
 
 ---
+
+## 2026-07-29 — v0.140.0 — BAND 1: PAPER_137
+
+- PAPER_137 wired (⚠ Q-133): genesis 26-level ladder.
+  Activation bands registered; labels superseded by EP block;
+  falsified output No. 5; v¹ third support (Q-129 annotated).
+- Campaign: 141/2,255 (11 ✓, 130 ⚠). Next: PAPER_138.
+
+---

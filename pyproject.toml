@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.139.0"
-description = "UQFF Star-Magic-Program v0.139.0: PAPER_136 wired - Planetary core Ug3 exclusivity (H_Ug3 = 448 + T_prec = 29.09 d + P_SCm chain EXACT; PRIMITIVE FIND P_SCm = F_TRZ^3 EXACT joins the F_TRZ ladder; H_SCm hierarchy/physicality tension; 29-day lunar match is solar-rotation relabel; v_UA text/code/corpus fork). Q-132 queued. Wired 140/2255, gate 938/0. Registry 352 rows / 743 edges / 140 ledgers."
+version = "0.140.0"
+description = "UQFF Star-Magic-Program v0.140.0: PAPER_137 wired - Genesis 26-level ladder (Ug activation bands registered; genesis Higgs-n=18 label superseded by EP n=12 - 1e9 conversion break pinned; orbital cascade falsified output No. 5 (136 keV vs 10 eV); E_react ladder gives THIRD v^1 support - 1e46 off-ladder under v^2). Q-133 queued. Wired 141/2255, gate 944/0. Registry 354 rows / 748 edges / 141 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

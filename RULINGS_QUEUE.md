@@ -2765,6 +2765,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** genesis anchor registered; v^1
   resolution exposed; unreproducible output pinned.
 - **UPDATE (PAPER_134):** (c) RESOLVED - the 1.18e53 is a 13-order EXPONENT SLIP; the chain (at r = R_b with the 1.005 convention) gives 1.18e40 with mantissa exact (Q-130a).
+- **UPDATE 2 (PAPER_137):** (a) THIRD SUPPORT - the genesis ladder E_react^(n) = 10^(n-5) maxes at 1e21; 1e46 is off-ladder under v^2 but lands on-anchor at n=13 under v^1 (Q-133c).
 - **Daniel's ruling:** (pending)
 
 ### Q-130 — PAPER_134 Heliosphere Ug2 — exponent-slip resolution + age-law break
@@ -2857,6 +2858,39 @@ RESOLVED section with the ruling recorded.
   geomagnetic order-of-magnitude comparison honest.
 - **Best-candidate wired:** exclusivity + Hamiltonian with
   tensions pinned; F_TRZ^3 exposed.
+- **Daniel's ruling:** (pending)
+
+### Q-133 — PAPER_137 Genesis Ladder — label fork superseded + v^1 third support
+- **Question:** (a) LABEL FORK (supersession confirmation):
+  the genesis fixed-point labels conflict with the corrected
+  EP assignments - Higgs labeled n=18 here (E_18 = 1e-2 J =
+  62.4 PEV, printed "62.4 MeV" - a 1e9 conversion break; the
+  real Higgs 2e-8 J sits at n=12.3 per EP-02/PAPER_122), and
+  n=10 is labeled "atomic solid state" while carrying 0.624
+  GeV (the EP correction's HADRONIC rung). Since the EP block
+  is the later refinement, confirm: genesis ladder ENERGIES
+  stand, genesis LABELS superseded by the EP assignments.
+  (b) FALSIFIED OUTPUT No. 5: the orbital cascade
+  E_10*SSq^15 = 2.18e-14 J = 136 keV, claimed "~10 eV ~ H
+  Lyman limit"; reaching 10 eV needs k = 32, not 15. The
+  code as written prints 136 keV.
+  (c) E_REACT LADDER SUPPORTS v^1 (third support): the
+  paper's own E_react^(n) = 10^(n-5) maxes at 1e21 (n=26);
+  the 1e46 anchor would need n = 51, OFF-LADDER under the
+  multiply-v^2 form. Under the Q-129a v^1 resolution,
+  E_react(n=13, solar) = 1e46 lands on-anchor. Canonize v^1.
+  (d) The Ug ACTIVATION-BAND map (Ug3 n=5+, Ug1 n=10+, Ug2
+  n=13+, Ug4 n=20+) and the hierarchy-dissolution claim are
+  the paper's real content - preserve as the canonical
+  activation registry?
+- **Notable:** the ladder formula is IDENTICAL to the EP
+  block (E_0 = 1e-20); rho ladder self-consistent (n=26 ->
+  1e28); the paper honestly flags levels 7/14 as proximate
+  and n=18 as index-not-derivation; hierarchy-problem
+  dissolution is a distinctive framework claim.
+- **Best-candidate wired:** activation bands + ladder with
+  EP-superseded labels; falsified cascade output pinned;
+  v^1 support registered.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

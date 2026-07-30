@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.140.0] — 2026-07-29 — BAND 1: PAPER_137 — GENESIS LABELS SUPERSEDED
+
+### Added
+- **PAPER_137 dispatch** (Genesis 26-level ladder, sec 2.1):
+  the ladder ORIGIN (formula identical to the EP block) with
+  the Ug activation-band map (Ug3 n=5+, Ug1 n=10+, Ug2 n=13+,
+  Ug4 n=20+) and the hierarchy-problem dissolution claim.
+  LABEL FORK: genesis Higgs-at-n=18 (E_18 = 62.4 PeV printed
+  "MeV" — 1e9 break; real Higgs n=12.3) and atomic-at-n=10
+  (carries hadronic 0.624 GeV) labels are SUPERSEDED by the
+  EP-block assignments. FALSIFIED OUTPUT No. 5: orbital
+  cascade 136 keV claimed 10 eV (k=32 needed). THIRD v¹
+  SUPPORT: E_react ladder maxes 1e21 — 1e46 off-ladder under
+  v²; lands on-anchor at solar n=13 under v¹ (Q-129
+  annotated). Honest proximity notes in-paper acknowledged.
+- OPEN_RULING Q-133.
+- Gate: 944 assertions, 0 failures. Registry: 354 rows / 748 edges / 141 ledgers.
+
+---
+
 ## [0.139.0] — 2026-07-29 — BAND 1: PAPER_136 — P_SCm = F_TRZ³ FIND
 
 ### Added

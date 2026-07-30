@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.139.0"
+VERSION = "0.140.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7225,5 +7225,63 @@ def _paper_136(dataset):
         'formula': 'H = k3 B^2/2mu0 cos + P_SCm rho v^2/2 e^-at + rho_A v_UA^2/2 cos',
         'source': 'PAPER_136',
         'residual_pct': abs(1.8 * (2.5e-2) ** 2 / (2 * 4 * _m.pi * 1e-7) - 448) / 448 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_137')
+def _paper_137(dataset):
+    """26 Quantum Levels: Genesis Ladder (S0, sec 2.1).
+
+    The genesis-thread origin of the E_n = E_0*10^n ladder
+    (E_0 = 1e-20 J, same as EP block) with Ug activation
+    bands: Ug3 n=5+, Ug1 n=10+, Ug2 n=13+, Ug4 n=20+;
+    hierarchy-problem dissolution claim (force scales = SCm
+    density rungs). Ladder rho_SCm^(n) = 1e15*10^(n-13)
+    self-consistent (n=26 -> 1e28).
+    LABEL FORK SUPERSEDED (Q-133a): the genesis fixed-point
+    labels conflict with the corrected EP assignments - Higgs
+    labeled n=18 here (E_18 = 1e-2 J = 62.4 PEV, printed
+    "62.4 MeV" - 1e9 conversion break; real Higgs 2e-8 J is
+    n=12.3 per EP-02/PAPER_122); n=10 labeled "atomic solid
+    state" while carrying 0.624 GeV (hadronic - the EP
+    correction's proton rung). The EP block already SUPERSEDES
+    these labels; genesis energies stand, labels do not.
+    FALSIFIED OUTPUT No. 5 (Q-133b): the orbital cascade
+    E_10*SSq^15 = 2.18e-14 J = 136 keV, claimed "~10 eV";
+    reaching 10 eV needs k = 32, not 15. Code would print
+    136 keV.
+    E_REACT LADDER SUPPORTS v^1 (Q-133c): E_react^(n) =
+    10^(n-5) maxes at 1e21 (n=26) - the 1e46 anchor would
+    need n = 51, OFF-LADDER under the multiply-v^2 form;
+    under the Q-129a v^1 resolution E_react(n=13 solar) =
+    1e46 on-anchor. Third support for the v^1 canonization.
+    Honest notes in-paper: levels 7/14 flagged proximate;
+    n=18 Higgs flagged "index, not derivation".
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.1 (26-level genesis ladder)',
+            'ladder': 'E_n = 1e-20 * 10^n (identical to EP block)',
+            'activation_bands': {'Ug3': 5, 'Ug1': 10, 'Ug2': 13, 'Ug4': 20},
+            'e18_ev': 1e-2 / 1.602e-19,                     # 6.24e16 = 62.4 PeV
+            'e18_printed': '62.4 MeV - 1e9 conversion break',
+            'higgs_true_n': _m.log10(2e-8) + 20,            # 12.3 (EP block)
+            'label_fork': 'genesis n=18 Higgs / n=10 atomic labels superseded by EP block',
+            'orbital_cascade_actual': 1e-10 * SSQ ** 15,    # 2.18e-14 J = 136 keV
+            'orbital_claimed_ev': 10,
+            'k_needed_for_10ev': _m.log(1.6e-18 / 1e-10) / _m.log(SSQ),  # 32
+            'falsified_output_no5': 'code prints 136 keV vs claimed ~10 eV',
+            'ereact_ladder_max': 10 ** (26 - 5),            # 1e21
+            'n_needed_for_1e46': 51,                        # off-ladder
+            'v1_support': 'third support for Q-129a v^1 canonization',
+            'rho_ladder_n26': 1e15 * 10 ** (26 - 13),       # 1e28 self-consistent
+            'hierarchy_claim': 'force scales = SCm density rungs (dissolves hierarchy problem)',
+            'honest_notes': 'levels 7/14 proximate; n=18 flagged index-not-derivation',
+        },
+        'formula': 'E_n = E_0*10^n; rho^(n) = 1e15*10^(n-13); E_react^(n) = 10^(n-5)',
+        'source': 'PAPER_137',
+        'residual_pct': abs(1e15 * 10 ** 13 - 1e28) / 1e28 * 100,
         'status': 'OPEN_RULING',
     }

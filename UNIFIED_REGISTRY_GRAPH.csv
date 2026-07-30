@@ -743,3 +743,8 @@ observable,planetary_ug3_exclusivity,paper,PAPER_136,Ug3 exclusivity
 primitive,F_TRZ,observable,planetary_ug3_exclusivity,P_SCm = F_TRZ^3
 observable,planetary_ug3_tensions,paper,PAPER_136,hierarchy tension
 observable,planetary_ug3_tensions,paper,PAPER_104,v_UA fork
+observable,genesis_26level_ladder,paper,PAPER_137,activation bands
+primitive,D_CRIT,observable,genesis_26level_ladder,26 levels
+observable,genesis_ladder_defects,paper,PAPER_137,label fork
+observable,genesis_ladder_defects,paper,PAPER_122,EP supersession
+observable,genesis_ladder_defects,paper,PAPER_133,v^1 support
