@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 157 (11 ✓, 146 ⚠ OPEN_RULING)
+- **Wired:** 158 (11 ✓, 147 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2098
+- **Not yet touched:** 2097
 
 ---
 
@@ -786,7 +786,7 @@
 | ⬜ | PAPER_1547 | FARADAY F 96485 |
 | ⬜ | PAPER_1548 | Z0 VACUUM IMPEDANCE |
 | ⬜ | PAPER_1549 | ALPHA INVERSE 137 036 |
-| ⬜ | PAPER_154 | UQFF NavierStokes QuasarJets JosStam SCm Force |
+| ⚠ | PAPER_154 | UQFF NavierStokes QuasarJets JosStam SCm Force |
 | ⬜ | PAPER_1550 | COMPTON LAMBDA 2 426 |
 | ⬜ | PAPER_1551 | MARIANA TRENCH 11 |
 | ⬜ | PAPER_1552 | Z RECOMB 1090 |

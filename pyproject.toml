@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.156.0"
-description = "UQFF Star-Magic-Program v0.156.0: PAPER_153 wired - MT wormhole (throat r_0 = 2.32 mm GENUINELY derived from SCm parameters - the block cleanest chain, landmark candidate; fTRZ NATIVE HOME found at the throat - scoped Q-142a resolution proposed; kappa spatial reuse + 13.8-Gyr-to-yr echo pinned). Q-149 queued. Wired 157/2255, gate 1044/0. Registry 383 rows / 815 edges / 157 ledgers (measured)."
+version = "0.157.0"
+description = "UQFF Star-Magic-Program v0.157.0: PAPER_154 wired - NS quasar jets (PRIMITIVE identities f_jet = v_SCm*F_TRZ + T_Osc = tau/F_TRZ = 54.8 yr M87-matched + nu_SCm EXACT; 1e46 SECOND decomposition rho v^2/lambda_fm with the two routes algebraically linked; lambda_SCm = 1 fm registered; Step-4 derivation broken; curl-free Millennium core sound). Q-150 queued. Wired 158/2255, gate 1050/0. Registry 385 rows / 820 edges / 158 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

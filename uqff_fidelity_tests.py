@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.156.0", "uqff_calculator.VERSION = 0.156.0")
+assert_that(C.VERSION == "0.157.0", "uqff_calculator.VERSION = 0.157.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2285,6 +2285,19 @@ assert_that(abs(_r153['cosmological_time_actual_yr'] - 13.83) < 0.01,
 assert_that(abs(_r153['scm_margin'] - 13.9) < 0.1,
             "PAPER_153: SCm exceeds reduced exotic requirement 13.9x - self-consistency chain")
 assert_that(C.wired_count() >= 157, "wired_count >= 157")
+
+_r154 = C.calc('PAPER_154')['value']
+assert_that(_r154['f_jet'] == 1e7,
+            "PAPER_154: f_jet = v_SCm * F_TRZ = 1e7 EXACT primitive identity")
+assert_that(abs(_r154['t_osc_yr'] - 54.8) < 0.1,
+            "PAPER_154: T_Osc = tau/F_TRZ = 54.8 yr EXACT (M87 knot match)")
+assert_that(abs(_r154['e46_second_decomposition'] - 1e46) < 1e40,
+            "PAPER_154: rho v^2/lambda_fm = 1e46 EXACT - SECOND closing decomposition (Q-150b, annotates Q-129)")
+assert_that(abs(_r154['nu_scm'] - 3.33e-8) < 0.01e-8,
+            "PAPER_154: nu_SCm = v lambda/3 = 3.33e-8 EXACT; lambda_SCm = 1 fm registered")
+assert_that(_r154['step4_denominator'][0] / _r154['step4_denominator'][1] > 1e7,
+            "PAPER_154: Step-4 derivation broken (8-order slip, abandoned) - f_jet definitional (Q-150c)")
+assert_that(C.wired_count() >= 158, "wired_count >= 158")
 
 # =============================================================================
 # REPORT

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.156.0"
+VERSION = "0.157.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8178,5 +8178,62 @@ def _paper_153(dataset):
         'formula': 'b = 0.9 r0^2/r + 0.1 r0 e^-k(r-r0); r0 = sqrt(c^2/8piG rho v^2)',
         'source': 'PAPER_153',
         'residual_pct': abs(r0 * 1000 - 2.32) / 2.32 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_154')
+def _paper_154(dataset):
+    """NS Quasar Jets: Stam Solver + SCm Force (S0, sec 2.2).
+
+    UQFF Navier-Stokes with SCm body force; Jos Stam stable-
+    fluids integration; the Millennium bridge (bounded
+    constant force -> curl-free -> no vorticity generation ->
+    no blow-up: the curl argument is the sound core).
+    PRIMITIVE IDENTITIES (Q-150a): f_jet = v_SCm * F_TRZ =
+    1e7 m/s EXACT (the /10 IS 1/F_TRZ, stated in-paper);
+    T_Osc = 1/(F_TRZ*kappa) = tau_SCm/F_TRZ = 20,000 days =
+    54.8 yr EXACT - matched to M87 knot-ejection variability
+    (10-50 yr); nu_SCm = v_SCm*lambda_SCm/3 = 3.33e-8 EXACT.
+    NEW CONSTANT: lambda_SCm = 1e-15 m (1 fm correlation
+    length, nuclear-scale consistent).
+    1E46 SECOND DECOMPOSITION (Q-150b): f_vol = rho_SCm *
+    v_SCm^2 / lambda_SCm = 1e46 EXACT - a second closing
+    route to the E_react anchor (alongside Q-129a's
+    rho*v/rho_A). Two independent primitive decompositions
+    now; annotates Q-129/Q-115.
+    DERIVATION BROKEN (Q-150c): the Step-4 chain has an
+    8-order denominator slip (3e-6 printed 1e-14) and is
+    abandoned mid-line - the full chain gives 3.3e58, not
+    1e7. f_jet is DEFINITIONAL (primitive-clean), not derived
+    as printed. Gronwall exponent e^(f_jet*t) carries m/s x s
+    = meters (dimensional abuse).
+    CENA 15-VS-15,000 (Q-150d): v_jet/f_jet = 15 "explained"
+    by L/L_coh = 15,000 with an Alfven hand-wave bridging
+    1000x; SGR f_jet printed 1e5 needs the SQUARED (B/B_ref)^2
+    while the formula line is linear.
+    """
+    return {
+        'value': {
+            'domain': '2.2 (NS jets + Millennium bridge)',
+            'f_jet': 1e8 * F_TRZ,                             # 1e7 EXACT primitive
+            'f_jet_identity': 'v_SCm * F_TRZ (the /10 IS 1/F_TRZ, in-paper)',
+            't_osc_days': 1 / (F_TRZ * KAPPA_PER_DAY),        # 20,000 EXACT
+            't_osc_yr': 1 / (F_TRZ * KAPPA_PER_DAY) / 365.25,  # 54.8
+            'm87_match': 'knot variability 10-50 yr vs 54.8 - plausible',
+            'nu_scm': 1e8 * 1e-15 / 3,                        # 3.33e-8 EXACT
+            'lambda_scm_m': 1e-15,                            # NEW constant (1 fm)
+            'e46_second_decomposition': 1e15 * (1e8) ** 2 / 1e-15,  # 1e46 EXACT
+            'decomposition_note': 'rho v^2/lambda_fm joins rho v/rho_A (Q-129a) - two routes',
+            'step4_denominator': (3e-6, 1e-14),               # chain vs printed
+            'derivation_status': 'broken/abandoned - f_jet definitional',
+            'gronwall_units': 'exponent f_jet*t = meters - dimensional abuse',
+            'cena_gap': (15, 15000),
+            'sgr_linear_vs_squared': (1e6, 1e5),
+            'millennium_core': 'curl(const force) = 0 -> no vorticity generation - sound point',
+        },
+        'formula': 'du/dt + (u.grad)u = -grad p/rho + nu lap u + v_SCm F_TRZ z_hat + g_MUGE r_hat',
+        'source': 'PAPER_154',
+        'residual_pct': abs(1e8 * F_TRZ - 1e7) / 1e7 * 100,
         'status': 'OPEN_RULING',
     }

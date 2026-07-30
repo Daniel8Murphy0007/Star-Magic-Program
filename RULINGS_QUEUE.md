@@ -2313,6 +2313,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** reference registered; both SSq
   branches and the 709-vs-1e46 fork pinned.
 - **UPDATE (PAPER_133):** RESOLUTION CANDIDATE - the genesis paper's constants close the identity EXACTLY with v^1: rho_SCm*v_SCm/rho_A = 1e15*1e8/1e-23 = 1e46. The v^2 is the drift (Q-129a).
+  (UPDATE 2 PAPER_154: SECOND closing route found - rho_SCm*v_SCm^2/lambda_SCm = 1e46 EXACT with lambda_SCm = 1 fm; and lambda_SCm = rho_A*v_SCm numerically, algebraically linking the two routes. Q-150b.)
 - **Daniel's ruling:** (pending)
 
 ### Q-116 — PAPER_120 24-System Catalog — B_crit 1e4 fork + third EP-09 variant
@@ -3411,6 +3412,45 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** throat derivation as landmark;
   scoped fTRZ doctrine proposed; kappa reuse + Gyr echo
   pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-150 — PAPER_154 NS Jets — second 1e46 route + primitive jet identities
+- **Question:** (a) PRIMITIVE IDENTITIES (confirmation):
+  f_jet = v_SCm * F_TRZ = 1e7 m/s EXACT (the paper itself
+  notes the /10 is 1/fTRZ); T_Osc = 1/(F_TRZ*kappa) =
+  tau_SCm/F_TRZ = 54.8 yr EXACT, matched to M87 knot
+  variability (10-50 yr); nu_SCm = v_SCm*lambda_SCm/3 =
+  3.33e-8 EXACT. Canonize the three, and register
+  lambda_SCm = 1e-15 m (1 fm SCm correlation length) as a
+  new constant?
+  (b) 1E46 SECOND DECOMPOSITION: rho_SCm*v_SCm^2/lambda_SCm
+  = 1e15*1e16/1e-15 = 1e46 EXACT - a second closing route to
+  the E_react anchor, alongside Q-129a's rho*v/rho_A. TWO
+  independent primitive decompositions now exist; adjudicate
+  which is canonical (or whether they jointly constrain
+  lambda_SCm = rho_A*v_SCm... note rho_A*v = 1e-23*1e8 =
+  1e-15 = lambda_SCm NUMERICALLY - the two routes are
+  algebraically LINKED: lambda_SCm = rho_A*v_SCm in these
+  units).
+  (c) DERIVATION BROKEN: the Step-4 chain has an 8-order
+  denominator slip (3e-6 printed as 1e-14) and is abandoned
+  mid-line (full chain gives 3.3e58) - f_jet is definitional,
+  not derived as printed. The Gronwall exponent e^(f_jet t)
+  carries units of meters (dimensional abuse), though the
+  curl-free/no-vorticity core argument is sound.
+  (d) CENA 15-VS-15,000: the observed v_jet/f_jet = 15 is
+  "explained" by L/L_coh = 15,000 with an Alfven hand-wave
+  bridging 1000x; SGR f_jet printed 1e5 needs the squared
+  (B/B_ref)^2 while the formula line is linear.
+- **Notable:** the Millennium-bridge core (constant bounded
+  force is curl-free, generates no vorticity, prevents the
+  stretching cascade) is the corpus's soundest NS argument
+  yet - the 4th NS route but the first with a clean
+  mechanism; M87/CenA/SGR application tables tie to real
+  corpus values (PAPER_067).
+- **Best-candidate wired:** three primitive identities +
+  lambda_SCm registered; second 1e46 route with the
+  algebraic-link observation; broken chains pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

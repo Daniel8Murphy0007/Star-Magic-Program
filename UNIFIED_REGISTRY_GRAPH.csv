@@ -814,3 +814,8 @@ observable,mt_wormhole_throat,paper,PAPER_153,throat derivation
 primitive,F_TRZ,observable,ftrz_native_home,topology fraction
 observable,ftrz_native_home,paper,PAPER_148,Q-142a scoped resolution
 primitive,KAPPA_PER_DAY,observable,ftrz_native_home,spatial reuse flag
+observable,ns_jets_scm_force,paper,PAPER_154,jet force identity
+primitive,F_TRZ,observable,ns_jets_scm_force,f_jet + T_Osc
+primitive,KAPPA_PER_DAY,observable,ns_jets_scm_force,T_Osc
+observable,e46_second_route,paper,PAPER_154,second 1e46 route
+observable,e46_second_route,paper,PAPER_133,route comparison

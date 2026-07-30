@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.157.0] — 2026-07-30 — BAND 1: PAPER_154 — SECOND 1e46 ROUTE
+
+### Added
+- **PAPER_154 dispatch** (NS quasar jets + Stam solver, sec
+  2.2): PRIMITIVE IDENTITIES — f_jet = v_SCm·F_TRZ = 1e7 m/s
+  EXACT (the /10 is 1/fTRZ, in-paper); T_Osc = tau/F_TRZ =
+  54.8 yr EXACT (M87 knot-cycle match); nu_SCm = v·lambda/3
+  EXACT. NEW CONSTANT lambda_SCm = 1 fm. 1E46 SECOND
+  DECOMPOSITION: rho·v²/lambda_fm = 1e46 EXACT — and the two
+  routes are algebraically linked (lambda_SCm = rho_A·v_SCm
+  numerically; Q-129 annotated). The Millennium core
+  (curl-free constant force → no vorticity generation) is
+  the corpus's soundest NS argument. Broken: Step-4
+  derivation (8-order slip, abandoned — f_jet definitional);
+  Gronwall units; CenA 15-vs-15,000; SGR linear-vs-squared.
+- OPEN_RULING Q-150.
+- Gate: 1,050 assertions, 0 failures. Registry: 385 rows / 820 edges / 158 ledgers (measured).
+
+---
+
 ## [0.156.0] — 2026-07-30 — BAND 1: PAPER_153 — 2.32 mm THROAT DERIVED
 
 ### Added

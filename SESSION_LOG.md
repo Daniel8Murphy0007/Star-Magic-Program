@@ -1894,3 +1894,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 157/2,255 (11 ✓, 146 ⚠). Next: PAPER_154.
 
 ---
+
+## 2026-07-30 — v0.157.0 — BAND 1: PAPER_154
+
+- PAPER_154 wired (⚠ Q-150): NS jets. Three primitive
+  identities + lambda_SCm = 1 fm; second 1e46 route (linked
+  to Q-129a algebraically); curl-free Millennium core sound.
+- Campaign: 158/2,255 (11 ✓, 147 ⚠). Next: PAPER_155.
+
+---

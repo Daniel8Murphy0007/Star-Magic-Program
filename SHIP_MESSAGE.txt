@@ -1,33 +1,33 @@
-v0.156.0 BAND 1: PAPER_153 wired - 2.32 mm THROAT GENUINELY DERIVED
+v0.157.0 BAND 1: PAPER_154 wired - SECOND 1e46 ROUTE + JET IDENTITIES
 
-PAPER_153 UQFF Morris-Thorne Wormhole (OPEN_RULING Q-149):
-  UQFF-modified MT metric: shape function b = 0.9 r_0^2/r +
-  0.1 r_0 e^(-k(r-r_0)); SCm as the physical exotic-matter
-  source (1e31 J/m3 exceeds the reduced requirement 13.9x).
+PAPER_154 UQFF Navier-Stokes Quasar Jets, Jos Stam Solver
+(OPEN_RULING Q-150):
+  PRIMITIVE IDENTITIES (all EXACT):
+  - f_jet = v_SCm * F_TRZ = 1e7 m/s (the paper itself notes
+    the /10 is 1/fTRZ)
+  - T_Osc = 1/(F_TRZ*kappa) = tau_SCm/F_TRZ = 54.8 yr -
+    matched to M87 knot-ejection variability (10-50 yr)
+  - nu_SCm = v_SCm*lambda_SCm/3 = 3.33e-8 m^2/s
+  NEW CONSTANT: lambda_SCm = 1e-15 m (1 fm SCm correlation
+  length, nuclear-scale consistent).
 
-  GENUINE DERIVATION (the block's cleanest chain): throat
-  r_0 = sqrt(c^2/(8 pi G rho_SCm v_SCm^2)) = 2.32 mm from
-  SCm parameters alone - NO back-solving. Landmark
-  falsifiable prediction candidate (natural macroscopic
-  wormhole scale). Transit 7.73 ps; throat condition
-  0.9 + 0.1 = 1 EXACT.
+  1E46 SECOND DECOMPOSITION: rho_SCm*v_SCm^2/lambda_SCm =
+  1e46 EXACT - joins Q-129a's rho*v/rho_A as a second closing
+  route to the E_react anchor. AND the routes are
+  algebraically LINKED: lambda_SCm = rho_A*v_SCm numerically
+  (1e-23*1e8 = 1e-15). Q-129 annotated; adjudication queued.
 
-  FTRZ NATIVE HOME: at the throat the additive dimensionless
-  fTRZ = 0.1 reads correctly as a TOPOLOGY FRACTION (10 pct
-  topology / 90 pct resonance). SCOPED Q-142a RESOLUTION
-  PROPOSED: fTRZ additive in topology-normalized contexts,
-  multiplicative (1+fTRZ) in acceleration contexts - one
-  doctrine resolving Q-142a AND the 148 refutation. Q-142
-  annotated.
+  MILLENNIUM CORE (soundest NS argument in the corpus):
+  constant bounded force is curl-free -> generates NO
+  vorticity -> prevents the stretching cascade. 4th NS route
+  but the first with a clean mechanism.
 
-  PINNED: kappa[/day] applied to (r - r_0) in METERS -
-  dimensionally invalid, own table admits (kappa_length
-  needed); the "cosmological" decay factor e^-kt = 0.08
-  corresponds to t = 13.83 YEARS (the 13.8-Gyr number echoed
-  in years - daily-alpha family); "comparable" 274x stretch;
-  90/10-vs-LCDM hand-wave self-disclosed.
+  BROKEN: Step-4 derivation (denominator 3e-6 printed 1e-14,
+  chain abandoned - f_jet is definitional); Gronwall exponent
+  carries meters; CenA 15-vs-15,000 hand-wave; SGR
+  linear-vs-squared inconsistency.
 
-Q-149 queued. Gate 1,044 assertions 0 failures. Registry
-383 rows / 815 edges / 157 ledgers (measured). Wired
-157/2,255 (11 clean, 146 OPEN_RULING). Next: PAPER_154
-(Navier-Stokes jets Millennium).
+Q-150 queued. Gate 1,050 assertions 0 failures. Registry
+385 rows / 820 edges / 158 ledgers (measured). Wired
+158/2,255 (11 clean, 147 OPEN_RULING). Next: PAPER_155
+(fTRZ->0 Standard Model recovery proof).
