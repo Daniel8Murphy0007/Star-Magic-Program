@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.138.0"
-description = "UQFF Star-Magic-Program v0.138.0: PAPER_135 wired - Quasar jets negative time + NS Millennium (F_SCm(1pc) = 3.24e14 EXACT; time-reversal jet mechanism orientation-free; daily-alpha break: printed decay = 8 days not 5 Myr, own code prints 511 kpc vs claimed 37 - falsified output No. 4; 3rd NS route registered). Q-131 queued. Wired 139/2255, gate 932/0. Registry 350 rows / 739 edges / 139 ledgers."
+version = "0.139.0"
+description = "UQFF Star-Magic-Program v0.139.0: PAPER_136 wired - Planetary core Ug3 exclusivity (H_Ug3 = 448 + T_prec = 29.09 d + P_SCm chain EXACT; PRIMITIVE FIND P_SCm = F_TRZ^3 EXACT joins the F_TRZ ladder; H_SCm hierarchy/physicality tension; 29-day lunar match is solar-rotation relabel; v_UA text/code/corpus fork). Q-132 queued. Wired 140/2255, gate 938/0. Registry 352 rows / 743 edges / 140 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

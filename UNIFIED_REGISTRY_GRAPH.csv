@@ -739,3 +739,7 @@ observable,quasar_jets_negative_time,paper,PAPER_135,time-reversal jets
 primitive,KAPPA_PER_DAY,observable,quasar_jets_negative_time,daily-alpha break
 observable,ns_millennium_bounded_forcing,paper,PAPER_135,3rd NS route
 observable,ns_millennium_bounded_forcing,paper,PAPER_102,NS route fork
+observable,planetary_ug3_exclusivity,paper,PAPER_136,Ug3 exclusivity
+primitive,F_TRZ,observable,planetary_ug3_exclusivity,P_SCm = F_TRZ^3
+observable,planetary_ug3_tensions,paper,PAPER_136,hierarchy tension
+observable,planetary_ug3_tensions,paper,PAPER_104,v_UA fork

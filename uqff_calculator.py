@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.138.0"
+VERSION = "0.139.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7170,5 +7170,60 @@ def _paper_135(dataset):
         'formula': 'F_SCm = rho_SCm v_SCm^2 / r * e^(-alpha t); dL = v t (1 - e^(-at)cos(pi t_n))',
         'source': 'PAPER_135',
         'residual_pct': abs(1e15 * (1e8) ** 2 / 3.086e16 - 3.24e14) / 3.24e14 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_136')
+def _paper_136(dataset):
+    """Planetary Core Ug3 Exclusivity + Orbital Hamiltonian (S0, sec 2.1).
+
+    P_SCm = 1e-3 planetary suppression (SCm interacts ONLY
+    with Ug3 in cores); H = H_Ug3 + H_SCm + H_UA quasi-
+    periodic orbital-stability Hamiltonian. VERIFIED EXACT:
+    H_Ug3 = 1.8*B^2/2mu0 = 448 J/m3; H_SCm = 5e27; T_prec =
+    2pi/omega_s = 29.09 days; J = 1.12e9; P_SCm chain
+    arithmetic (10 * 1e-3 * 0.1 = 1e-3).
+    HIERARCHY TENSION (Q-132a): H_SCm = 5e27 sits 25 ORDERS
+    above H_Ug3 = 448 - the quasi-periodic narrative rides on
+    the vanishing term while the Hamiltonian is decay-
+    dominated; AND 5e27 J/m3 exceeds Earth's core mass-energy
+    density (1.17e21) by 4e6 - physicality open.
+    OMEGA RELABELING (Q-132b): the "29-day lunar month match"
+    is the SOLAR rotation period by construction (omega_s =
+    2.5e-6 rad/s IS the corpus solar-rotation constant) -
+    circular relabel, not an independent lunar prediction.
+    And the P_SCm derivation needs omega_star = 2.5e-3, a
+    THOUSAND times the corpus solar omega_s - internal fork.
+    V_UA TEXT-VS-CODE FORK (Q-132c): text H_UA = 5e-8 needs
+    v_UA = 1e8; the code sets 1e4 (giving 5e-16); corpus
+    PAPER_104 has v_UA = 3e4 (4.5e-15). [UA]-family fork
+    instance.
+    P_SCm = 1e-3 = F_TRZ^3? note: 1e-3 = F_TRZ^3 EXACT -
+    primitive candidate alongside d_sw = F_TRZ^2 (Q-110a
+    ladder pattern).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.1 (planetary core Ug3)',
+            'h_ug3': 1.8 * (2.5e-2) ** 2 / (2 * 4 * _m.pi * 1e-7),  # 447.6 EXACT
+            'h_scm': 1e-3 * 1e15 * (1e8) ** 2 / 2,          # 5e27 EXACT
+            'hierarchy_ratio': 5e27 / 448,                   # 1.1e25
+            'core_mass_energy': 1.3e4 * 9e16,                # 1.17e21
+            'physicality_excess': 5e27 / 1.17e21,            # 4e6
+            't_prec_days': 2 * _m.pi / 2.5e-6 / 86400,       # 29.09 EXACT
+            'omega_relabel': 'omega_s = solar rotation; lunar-month match circular',
+            'j_quasi_invariant': 448 * 2.513e6,              # 1.12e9 EXACT
+            'p_scm_chain': (1e4 / 1e3) * (2.5e-6 / 2.5e-3) * 0.1,  # 1e-3 arithmetic EXACT
+            'omega_star_fork': 'derivation needs 2.5e-3 vs corpus solar 2.5e-6 (1000x)',
+            'v_ua_fork': (1e8, 1e4, 3e4),                    # text / code / corpus
+            'h_ua_variants': (5e-8, 5e-16, 4.5e-15),
+            'p_scm_primitive': F_TRZ ** 3,                    # 1e-3 EXACT candidate
+            'primitive_note': 'P_SCm = F_TRZ^3 joins d_sw = F_TRZ^2 ladder pattern',
+        },
+        'formula': 'H = k3 B^2/2mu0 cos + P_SCm rho v^2/2 e^-at + rho_A v_UA^2/2 cos',
+        'source': 'PAPER_136',
+        'residual_pct': abs(1.8 * (2.5e-2) ** 2 / (2 * 4 * _m.pi * 1e-7) - 448) / 448 * 100,
         'status': 'OPEN_RULING',
     }

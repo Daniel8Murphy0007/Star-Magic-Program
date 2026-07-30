@@ -1727,3 +1727,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 139/2,255 (11 ✓, 128 ⚠). Next: PAPER_136.
 
 ---
+
+## 2026-07-29 — v0.139.0 — BAND 1: PAPER_136
+
+- PAPER_136 wired (⚠ Q-132): planetary Ug3 core. P_SCm =
+  F_TRZ³ primitive find; hierarchy/physicality tension; solar
+  relabel; v_UA fork.
+- Campaign: 140/2,255 (11 ✓, 129 ⚠). Next: PAPER_137.
+
+---

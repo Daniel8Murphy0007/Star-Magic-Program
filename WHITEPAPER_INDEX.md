@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 139 (11 ✓, 128 ⚠ OPEN_RULING)
+- **Wired:** 140 (11 ✓, 129 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2116
+- **Not yet touched:** 2115
 
 ---
 
@@ -588,7 +588,7 @@
 | ⬜ | PAPER_1367 | ROOM TEMP SC |
 | ⬜ | PAPER_1368 | FUSION LAWSON |
 | ⬜ | PAPER_1369 | TABLETOP QG |
-| ⬜ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian |
+| ⚠ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian |
 | ⬜ | PAPER_1370 | ANTIMATTER |
 | ⬜ | PAPER_1371 | DM DETECTION |
 | ⬜ | PAPER_1372 | GW SIREN H0 |

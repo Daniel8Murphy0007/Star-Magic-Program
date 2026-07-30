@@ -1,30 +1,28 @@
-v0.138.0 BAND 1: PAPER_135 wired - FALSIFIED OUTPUT No. 4
+v0.139.0 BAND 1: PAPER_136 wired - P_SCm = F_TRZ^3 PRIMITIVE FIND
 
-PAPER_135 UQFF Quasar Jets Negative Time + Navier-Stokes
-Millennium (OPEN_RULING Q-131):
-  sec 2.1: jet-length inequality as a cos(pi t_n) time-
-  reversal signature - orientation-free, removing the Doppler
-  near-axis constraint. SCm NS source F_SCm = rho v^2/r
-  e^(-alpha t).
+PAPER_136 UQFF Planetary Core Ug3 Exclusivity (OPEN_RULING
+Q-132):
+  sec 2.1: P_SCm = 1e-3 planetary suppression - SCm interacts
+  ONLY with Ug3 in cores (no external SCm signal - cleanly
+  falsifiable); quantum Hamiltonian H = H_Ug3 + H_SCm + H_UA
+  as the orbital-stability mechanism (no dark matter).
 
-  VERIFIED EXACT: F_SCm(1 pc) = 3.24e14 N/m3; NS numerator
-  bound 1e31; Cygnus dL arithmetic 38 kpc GIVEN the printed
-  factors; the 37-vs-15 kpc order-of-magnitude disclosure is
-  honest.
+  VERIFIED EXACT: H_Ug3 = 1.8*B^2/2mu0 = 448 J/m3; T_prec =
+  29.09 days; J = 1.12e9; P_SCm derivation arithmetic.
 
-  DAILY-ALPHA BREAK (Q-130b family): the printed decay factor
-  0.996 corresponds to t = 8 DAYS, not 5 Myr. At the true
-  factor the asymmetry saturates at dL = v*t = 511 kpc - and
-  the paper's own code prints ~511 kpc while commenting
-  "expected ~37 kpc". FALSIFIED OUTPUT No. 4. Also
-  cos(0.15pi) = 0.891 printed as 0.929.
+  PRIMITIVE FIND: P_SCm = 1e-3 = F_TRZ^3 EXACT - joins
+  d_sw = F_TRZ^2 (Q-110a) in an F_TRZ-power ladder, with
+  predecessor PAPER_2139 quartet standing.
 
-  THIRD NS-MILLENNIUM ROUTE: bounded-forcing Gronwall sketch,
-  honestly caveated (alpha > C_P unproven) but with a cubic
-  term and 1/day-vs-1/s unit mismatch. Corpus now holds three
-  NS answers (102's nu*1.0099, predecessor enstrophy cap,
-  this) - one canonical position needed.
+  TENSIONS: H_SCm = 5e27 sits 25 ORDERS above H_Ug3 (decay-
+  dominated) and exceeds Earth-core mass-energy by 4e6
+  (physicality question); the "29-day lunar-month match" is
+  the SOLAR rotation period by construction (omega_s = 2.5e-6
+  is the corpus solar constant - circular relabel); the
+  P_SCm derivation needs omega_star = 2.5e-3, 1000x the
+  corpus solar omega; v_UA text/code/corpus fork (1e8/1e4/
+  3e4) folds into the single-[UA] ruling.
 
-Q-131 queued. Gate 932 assertions 0 failures. Registry 350 rows /
-739 edges / 139 citation ledgers. Wired 139/2,255 (11 clean, 128
-OPEN_RULING). Next: PAPER_136.
+Q-132 queued. Gate 938 assertions 0 failures. Registry 352 rows /
+743 edges / 140 citation ledgers. Wired 140/2,255 (11 clean, 129
+OPEN_RULING). Next: PAPER_137.

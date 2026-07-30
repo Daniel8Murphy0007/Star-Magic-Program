@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.138.0", "uqff_calculator.VERSION = 0.138.0")
+assert_that(C.VERSION == "0.139.0", "uqff_calculator.VERSION = 0.139.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2043,6 +2043,19 @@ assert_that(abs(_r135['dl_code_actual_kpc'] - 511) < 1,
 assert_that(abs(_r135['cos_slip'][0] - 0.891) < 0.001,
             "PAPER_135: cos(0.15pi) = 0.891 vs printed 0.929 - factor slip")
 assert_that(C.wired_count() >= 139, "wired_count >= 139")
+
+_r136 = C.calc('PAPER_136')['value']
+assert_that(abs(_r136['h_ug3'] - 447.6) < 0.1,
+            "PAPER_136: H_Ug3 = 448 J/m3 EXACT")
+assert_that(abs(_r136['t_prec_days'] - 29.09) < 0.01,
+            "PAPER_136: T_prec = 29.09 days EXACT (solar-rotation relabel, Q-132b)")
+assert_that(_r136['hierarchy_ratio'] > 1e24 and _r136['physicality_excess'] > 1e6,
+            "PAPER_136: H_SCm 25 orders above H_Ug3 + exceeds core mass-energy by 4e6 (Q-132a)")
+assert_that(abs(_r136['p_scm_chain'] - 1e-3) < 1e-15 and abs(_r136['p_scm_primitive'] - 1e-3) < 1e-15,
+            "PAPER_136: P_SCm = 1e-3 chain EXACT and = F_TRZ^3 primitive candidate")
+assert_that(len(_r136['v_ua_fork']) == 3,
+            "PAPER_136: v_UA text/code/corpus fork (1e8/1e4/3e4) pinned (Q-132c)")
+assert_that(C.wired_count() >= 140, "wired_count >= 140")
 
 # =============================================================================
 # REPORT

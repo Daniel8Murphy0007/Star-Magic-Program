@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.139.0] — 2026-07-29 — BAND 1: PAPER_136 — P_SCm = F_TRZ³ FIND
+
+### Added
+- **PAPER_136 dispatch** (Planetary core Ug3 exclusivity, sec
+  2.1): P_SCm = 1e-3 suppression (SCm-Ug3 core exclusivity, no
+  external signal — cleanly falsifiable); H = H_Ug3 + H_SCm +
+  H_UA. EXACT: H_Ug3 = 448 J/m3, T_prec = 29.09 d, J = 1.12e9,
+  P_SCm chain. PRIMITIVE FIND: P_SCm = F_TRZ³ EXACT — joins
+  d_sw = F_TRZ² in an F_TRZ-power ladder (PAPER_2139 quartet
+  precedent). TENSIONS: H_SCm 25 orders above H_Ug3 and 4e6×
+  Earth-core mass-energy (physicality); the "29-day lunar
+  match" is the solar-rotation period by construction; P_SCm
+  derivation needs omega_star 1000× the corpus solar value;
+  v_UA text/code/corpus fork (1e8/1e4/3e4).
+- OPEN_RULING Q-132.
+- Gate: 938 assertions, 0 failures. Registry: 352 rows / 743 edges / 140 ledgers.
+
+---
+
 ## [0.138.0] — 2026-07-29 — BAND 1: PAPER_135 — FALSIFIED OUTPUT No. 4
 
 ### Added

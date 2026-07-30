@@ -2829,6 +2829,36 @@ RESOLVED section with the ruling recorded.
   registered.
 - **Daniel's ruling:** (pending)
 
+### Q-132 — PAPER_136 Planetary Ug3 — P_SCm = F_TRZ^3 + hierarchy tension
+- **Question:** (a) HIERARCHY + PHYSICALITY: H_SCm = 5e27
+  J/m3 sits 25 ORDERS above H_Ug3 = 448 - the quasi-periodic
+  orbital-stability narrative rides on the vanishing term
+  while the Hamiltonian is decay-dominated. And 5e27 J/m3
+  exceeds Earth's core mass-energy density (1.17e21) by 4e6.
+  Is H_SCm a per-volume bookkeeping of trapped SCm (not
+  physically present energy), or does P_SCm suppress it
+  further in the total?
+  (b) OMEGA RELABEL: the "29-day lunar-month match" is the
+  solar-rotation period by construction (omega_s = 2.5e-6
+  rad/s IS the corpus solar constant; 2pi/omega = 29.09 d).
+  Circular relabel, not an independent lunar prediction. And
+  the P_SCm derivation needs omega_star = 2.5e-3 - a THOUSAND
+  times the corpus solar omega_s. Which omega is stellar?
+  (c) V_UA FORK: text H_UA = 5e-8 needs v_UA = 1e8; the code
+  sets 1e4 (5e-16); the corpus (PAPER_104) has 3e4 (4.5e-15).
+  Fold into the single-[UA] ruling family.
+  (d) PRIMITIVE CANDIDATE: P_SCm = 1e-3 = F_TRZ^3 EXACT -
+  joins d_sw = F_TRZ^2 (Q-110a) in an F_TRZ-power ladder
+  (predecessor PAPER_2139 quartet precedent). Canonize
+  P_SCm = F_TRZ^3?
+- **Notable:** chains EXACT (448 J/m3, 29.09 d, J = 1.12e9,
+  P_SCm arithmetic); the SCm-Ug3 exclusivity claim ("no
+  external SCm signal from planets") is cleanly falsifiable;
+  geomagnetic order-of-magnitude comparison honest.
+- **Best-candidate wired:** exclusivity + Hamiltonian with
+  tensions pinned; F_TRZ^3 exposed.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
