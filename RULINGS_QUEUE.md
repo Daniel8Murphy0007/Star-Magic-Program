@@ -2798,6 +2798,37 @@ RESOLVED section with the ruling recorded.
   pinned; PAPER_133/Q-129c annotated as resolved.
 - **Daniel's ruling:** (pending)
 
+### Q-131 — PAPER_135 Quasar Jets + NS — daily-alpha break + 3rd NS route
+- **Question:** (a) DAILY-ALPHA BREAK (Q-130b family): the
+  Cygnus A decay factor printed 0.996 corresponds to t = 8
+  DAYS, not the stated 5 Myr (alpha*t_jet = 9.1e5 -> e ~ 0).
+  At the true factor the asymmetry SATURATES at dL = v*t =
+  511 kpc - and the paper's own code prints ~511 kpc while
+  commenting "expected ~37 kpc" (FALSIFIED OUTPUT No. 4).
+  Same ruling as Q-130b: astronomical-timescale processes
+  need their own decay constant, or the jet asymmetry
+  saturates. Also cos(0.15pi) = 0.891 printed as 0.929.
+  (b) THIRD NS-MILLENNIUM ROUTE: bounded-forcing Gronwall
+  argument (exponentially decaying smooth F_SCm) - honestly
+  caveated (alpha > C_P unproven) but the printed inequality
+  carries a cubic term and compares alpha (1/day) against
+  C_P (1/s). The corpus now has THREE NS answers: PAPER_102's
+  nu*1.0099, the predecessor enstrophy cap 0.85, and this
+  bounded-forcing route. One canonical NS-Millennium position
+  needed.
+  (c) The time-reversal jet mechanism (orientation-free,
+  removes the Doppler near-axis constraint) is the paper's
+  distinctive claim - fold into the Q-111/Q-125 EP-09
+  mechanism adjudication as the sec 2.1 genesis-thread form.
+- **Notable:** F_SCm(1 pc) = 3.24e14 EXACT; NS bound 1e31
+  EXACT; the 37-vs-15 kpc order-of-magnitude disclosure is
+  honest; v_SCm = 1e8 trapped-SCm speed cap consistent with
+  the genesis framework.
+- **Best-candidate wired:** mechanism + EXACT chains; daily-
+  alpha break and falsified output pinned; NS route fork
+  registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

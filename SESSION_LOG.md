@@ -1718,3 +1718,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 138/2,255 (11 ✓, 127 ⚠). Next: PAPER_135.
 
 ---
+
+## 2026-07-29 — v0.138.0 — BAND 1: PAPER_135
+
+- PAPER_135 wired (⚠ Q-131): quasar jets + NS Millennium.
+  F_SCm EXACT; daily-alpha break (0.996 = 8 days); falsified
+  output No. 4 (511 vs 37 kpc); 3rd NS route registered.
+- Campaign: 139/2,255 (11 ✓, 128 ⚠). Next: PAPER_136.
+
+---

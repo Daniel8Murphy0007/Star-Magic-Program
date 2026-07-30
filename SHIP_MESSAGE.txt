@@ -1,31 +1,30 @@
-v0.137.0 BAND 1: PAPER_134 wired - UG2 EXPONENT SLIP RESOLVED
+v0.138.0 BAND 1: PAPER_135 wired - FALSIFIED OUTPUT No. 4
 
-PAPER_134 UQFF Heliosphere Ug2: Solar Wind Transmutation
-(OPEN_RULING Q-130):
-  sec 2.1: heliosphere as Ug2 transmutation shell - hydrogen
-  wall = magnetic adhesion (tied to real Voyager Lyman-alpha
-  backscatter), not ram-pressure equilibrium.
+PAPER_135 UQFF Quasar Jets Negative Time + Navier-Stokes
+Millennium (OPEN_RULING Q-131):
+  sec 2.1: jet-length inequality as a cos(pi t_n) time-
+  reversal signature - orientation-free, removing the Doppler
+  near-axis constraint. SCm NS source F_SCm = rho v^2/r
+  e^(-alpha t).
 
-  UG2 RESOLVED: the chain 1.2 x 1.1e-10 x 8887 x 1.005 x 1e46
-  = 1.18e40 - MANTISSA matches the printed 1.18e53 exactly.
-  PAPER_133's unreproducible Ug2 was a 13-order exponent
-  slip, not a different formula. Q-129 annotated. Convention
-  fork: literal (1+eps*v) = 5001 gives 5.87e43.
+  VERIFIED EXACT: F_SCm(1 pc) = 3.24e14 N/m3; NS numerator
+  bound 1e31; Cygnus dL arithmetic 38 kpc GIVEN the printed
+  factors; the 37-vs-15 kpc order-of-magnitude disclosure is
+  honest.
 
-  AGE LAW BREAKS AT GYR: dR ~ e^(alpha t) with the daily
-  alpha gives exponent 8.4e8 over the Sun's age (own code
-  would print inf); the "+73 pct for 8 Gyr" actually
-  corresponds to 3 YEARS; T-Tauri exponent printed 1000x low.
-  The thickness-age law needs its own alpha_star.
+  DAILY-ALPHA BREAK (Q-130b family): the printed decay factor
+  0.996 corresponds to t = 8 DAYS, not 5 Myr. At the true
+  factor the asymmetry saturates at dL = v*t = 511 kpc - and
+  the paper's own code prints ~511 kpc while commenting
+  "expected ~37 kpc". FALSIFIED OUTPUT No. 4. Also
+  cos(0.15pi) = 0.891 printed as 0.929.
 
-  SCALE BREAKS: k_liquid chain 2e8 printed 201 (1e6); Earth
-  volume chain 1.34e21 printed as the OBSERVED 1.34e18 (1e3 -
-  prints target, not chain); k_2 calibration formula gives
-  2e-49, not 1.2.
+  THIRD NS-MILLENNIUM ROUTE: bounded-forcing Gronwall sketch,
+  honestly caveated (alpha > C_P unproven) but with a cubic
+  term and 1/day-vs-1/s unit mismatch. Corpus now holds three
+  NS answers (102's nu*1.0099, predecessor enstrophy cap,
+  this) - one canonical position needed.
 
-  VERIFIED EXACT: M/R_b^2 = 8887; P_ram = 2e-9 Pa; Earth
-  liquid anchor 1.335e18 m3 correct.
-
-Q-130 queued. Gate 926 assertions 0 failures. Registry 348 rows /
-735 edges / 138 citation ledgers. Wired 138/2,255 (11 clean, 127
-OPEN_RULING). Next: PAPER_135.
+Q-131 queued. Gate 932 assertions 0 failures. Registry 350 rows /
+739 edges / 139 citation ledgers. Wired 139/2,255 (11 clean, 128
+OPEN_RULING). Next: PAPER_136.

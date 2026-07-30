@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.137.0"
+VERSION = "0.138.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7116,5 +7116,59 @@ def _paper_134(dataset):
         'formula': 'Ug2 = k2(Q_A+Q_UA)M/r^2 S(r-R_b)(1+eps v)H E_react; dR ~ e^(alpha t)',
         'source': 'PAPER_134',
         'residual_pct': abs(1.989e30 / (1.496e13) ** 2 - 8887) / 8887 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_135')
+def _paper_135(dataset):
+    """Quasar Jets Negative Time + NS Millennium (S0, sec 2.1).
+
+    Jet-length inequality as cos(pi t_n) time-reversal
+    signature (orientation-free alternative to Doppler);
+    SCm Navier-Stokes source F_SCm = rho v^2/r e^(-alpha t).
+    VERIFIED EXACT: F_SCm(1 pc) = 3.24e14 N/m3; NS numerator
+    bound 1e31; t_jet = 1.58e14 s; Cygnus dL arithmetic 38 kpc
+    GIVEN the printed factors; 37-vs-15 kpc order-of-magnitude
+    disclosure honest.
+    DAILY-ALPHA BREAK AGAIN (Q-131a): the printed decay factor
+    0.996 corresponds to t = 8 DAYS, not 5 Myr (alpha*t_jet =
+    9.1e5 -> e^-that = 0). At the true factor the asymmetry
+    saturates: dL = v*t = 511 kpc. FALSIFIED OUTPUT No. 4: the
+    paper's own code prints ~511 kpc while commenting
+    "expected ~37 kpc". Same Q-130b family (daily alpha at
+    astronomical timescales needs its own constant).
+    cos(0.15*pi) = 0.891 printed as 0.929 (factor slip).
+    NS MILLENNIUM ROUTE (Q-131b): bounded-forcing Gronwall
+    sketch - honestly caveated (alpha > C_P unproven), but the
+    inequality as printed has a cubic term and alpha (1/day)
+    vs C_P (1/s) unit mismatch. THIRD corpus NS route (vs
+    PAPER_102 nu*1.0099 and the predecessor enstrophy cap
+    0.85) - one canonical NS answer needed.
+    v_SCm = 1e8 m/s superluminal-exempt framework claim
+    (trapped SCm, genesis-consistent).
+    """
+    import math as _m
+    t_days = 5e6 * 365.25
+    return {
+        'value': {
+            'domain': '2.1 (quasar jets + NS Millennium)',
+            'f_scm_1pc': 1e15 * (1e8) ** 2 / 3.086e16,      # 3.24e14 EXACT
+            'ns_bound_numerator': 1e15 * (1e8) ** 2,        # 1e31 EXACT
+            'dl_printed_factors_kpc': 1e8 * 1.58e14 * (1 - 0.996 * 0.929) / 3.086e19,  # 38
+            'printed_decay_true_t_days': -_m.log(0.996) / KAPPA_PER_DAY,  # 8 days
+            'dl_code_actual_kpc': 1e8 * t_days * 86400 * (1 - _m.exp(-KAPPA_PER_DAY * t_days) * _m.cos(_m.pi * 0.15)) / 3.086e19,  # 511
+            'falsified_output_no4': 'code prints 511 kpc, comments expected ~37',
+            'cos_slip': (_m.cos(0.15 * _m.pi), 0.929),      # 0.891 vs printed
+            'observed_dl_kpc': 15,
+            'honesty': 'order-of-magnitude disclosure honest (37 vs 15)',
+            'ns_route': 'bounded-forcing Gronwall (3rd corpus NS route; alpha>C_P caveated)',
+            'ns_route_defects': 'cubic term in inequality; alpha 1/day vs C_P 1/s units',
+            'jet_table': {'CygnusA': 1.33, 'PKS0637': 6},
+            'mechanism': 'cos(pi t_n) time-reversal, orientation-free vs Doppler',
+        },
+        'formula': 'F_SCm = rho_SCm v_SCm^2 / r * e^(-alpha t); dL = v t (1 - e^(-at)cos(pi t_n))',
+        'source': 'PAPER_135',
+        'residual_pct': abs(1e15 * (1e8) ** 2 / 3.086e16 - 3.24e14) / 3.24e14 * 100,
         'status': 'OPEN_RULING',
     }

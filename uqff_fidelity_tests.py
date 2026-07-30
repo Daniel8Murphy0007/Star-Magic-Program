@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.137.0", "uqff_calculator.VERSION = 0.137.0")
+assert_that(C.VERSION == "0.138.0", "uqff_calculator.VERSION = 0.138.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2030,6 +2030,19 @@ assert_that(_r134['age_exponent_sun'] > 1e8,
 assert_that(_r134['k_liquid_chain'] > 1e8,
             "PAPER_134: k_liquid chain 2e8 vs printed 201 - 1e6 scale break (Q-130c)")
 assert_that(C.wired_count() >= 138, "wired_count >= 138")
+
+_r135 = C.calc('PAPER_135')['value']
+assert_that(abs(_r135['f_scm_1pc'] - 3.24e14) < 0.01e14,
+            "PAPER_135: F_SCm(1 pc) = 3.24e14 N/m3 EXACT")
+assert_that(abs(_r135['dl_printed_factors_kpc'] - 38) < 1,
+            "PAPER_135: Cygnus dL = 38 kpc arithmetic consistent GIVEN printed factors")
+assert_that(abs(_r135['printed_decay_true_t_days'] - 8) < 0.1,
+            "PAPER_135: printed 0.996 decay corresponds to 8 DAYS not 5 Myr - daily-alpha break (Q-131a)")
+assert_that(abs(_r135['dl_code_actual_kpc'] - 511) < 1,
+            "PAPER_135: own code prints 511 kpc vs claimed 37 - falsified output No. 4")
+assert_that(abs(_r135['cos_slip'][0] - 0.891) < 0.001,
+            "PAPER_135: cos(0.15pi) = 0.891 vs printed 0.929 - factor slip")
+assert_that(C.wired_count() >= 139, "wired_count >= 139")
 
 # =============================================================================
 # REPORT

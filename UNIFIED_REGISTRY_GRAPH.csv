@@ -735,3 +735,7 @@ observable,heliosphere_ug2_transmutation,paper,PAPER_134,transmutation shell
 observable,heliosphere_ug2_transmutation,paper,PAPER_133,exponent-slip resolution
 primitive,KAPPA_PER_DAY,observable,heliosphere_scale_breaks,age-law overflow
 observable,heliosphere_scale_breaks,paper,PAPER_134,scale breaks
+observable,quasar_jets_negative_time,paper,PAPER_135,time-reversal jets
+primitive,KAPPA_PER_DAY,observable,quasar_jets_negative_time,daily-alpha break
+observable,ns_millennium_bounded_forcing,paper,PAPER_135,3rd NS route
+observable,ns_millennium_bounded_forcing,paper,PAPER_102,NS route fork

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.138.0] — 2026-07-29 — BAND 1: PAPER_135 — FALSIFIED OUTPUT No. 4
+
+### Added
+- **PAPER_135 dispatch** (Quasar jets negative time + NS
+  Millennium, sec 2.1): jet inequality as cos(pi t_n)
+  time-reversal signature (orientation-free vs Doppler);
+  F_SCm(1 pc) = 3.24e14 N/m3 EXACT; NS bound 1e31 EXACT.
+  DAILY-ALPHA BREAK (Q-130b family): the printed 0.996 decay
+  corresponds to 8 DAYS not 5 Myr; at the true factor the
+  asymmetry saturates at 511 kpc — and the paper's own code
+  prints ~511 while commenting "expected ~37" (falsified
+  output No. 4). cos(0.15pi) slip (0.891 vs 0.929). THIRD NS
+  Millennium route registered (bounded-forcing Gronwall,
+  honestly caveated but with cubic-term + unit defects) —
+  one canonical NS position needed vs 102 + enstrophy cap.
+- OPEN_RULING Q-131.
+- Gate: 932 assertions, 0 failures. Registry: 350 rows / 739 edges / 139 ledgers.
+
+---
+
 ## [0.137.0] — 2026-07-29 — BAND 1: PAPER_134 — UG2 EXPONENT SLIP RESOLVED
 
 ### Added

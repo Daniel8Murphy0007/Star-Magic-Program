@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 138 (11 ✓, 127 ⚠ OPEN_RULING)
+- **Wired:** 139 (11 ✓, 128 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2117
+- **Not yet touched:** 2116
 
 ---
 
@@ -577,7 +577,7 @@
 | ⬜ | PAPER_1357 | PROTEIN FOLDING |
 | ⬜ | PAPER_1358 | HOMOCHIRALITY |
 | ⬜ | PAPER_1359 | GENETIC CODE |
-| ⬜ | PAPER_135 | UQFF Quasar Jets NegativeTime cos pi tn NS Millennium |
+| ⚠ | PAPER_135 | UQFF Quasar Jets NegativeTime cos pi tn NS Millennium |
 | ⬜ | PAPER_1360 | CANCER GROWTH |
 | ⬜ | PAPER_1361 | CONSCIOUSNESS BINDING |
 | ⬜ | PAPER_1362 | NEURAL PHASE TRANSITIONS |
