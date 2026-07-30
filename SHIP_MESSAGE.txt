@@ -1,31 +1,36 @@
-v0.150.0 BAND 1: PAPER_147 wired - CASCADE HIERARCHY INVERSION
+v0.151.0 BAND 1: PAPER_148 wired - fTRZ ADDITIVE REFUTED + SCHWINGER VOTE
 
-PAPER_147 UQFF FDPM Vortical Driver (OPEN_RULING Q-143):
-  sec 2.2: FDPM = I*A*(omega1-omega2) derivation + the
-  Level 1-3 cascade (aDPM -> aTHz -> avac_diff), anchored to
-  the LENR THz signature.
+PAPER_148 UQFF SGR1745-2900 Magnetar Validation (OPEN_RULING
+Q-144):
+  First Cycle 3 system paper: 12-term table with afluid_freq
+  dominant at 99 pct (g = 1.773e-9 m/s^2).
 
-  VERIFIED EXACT: LENR anchor 1.18 vs 1.2 THz = 1.7 pct
-  (PAPER_089 lineage - nuclear-to-astrophysical through one
-  frequency); avac_diff/aDPM = 1e-7 (subdominance clean).
+  MUGE-G IDENTIFIED (Q-141c partial answer): the paper
+  EXPLICITLY states g is the magnetospheric-scale MUGE
+  correction, NOT bulk surface gravity - the first in-corpus
+  identification statement; adopted as the reading for
+  149-152.
 
-  CASCADE HIERARCHY INVERSION: the paper's own arithmetic
-  gives aTHz = 3.33e9 x aDPM at stellar winds and ~3e12 x at
-  Sgr A* accretion speeds - the Level-2 term exceeds its OWN
-  driver by 9-12 orders, contradicting the 145/146 dominance
-  map (aDPM listed dominant at Sgr A*). Ruling affects all
-  148-152 system wirings.
+  TWO STRUCTURAL VOTES:
+  1. FTRZ ADDITIVE REFUTED: the paper's own table lists
+     fTRZ = 0.1 "subdominant" against a 1.773e-9 total - if
+     summed, fTRZ would be 5.6e7x the total. The table only
+     closes non-additively. Strong Q-142a datapoint toward
+     the multiplicative (1+fTRZ) form.
+  2. B_CRIT SCHWINGER VOTE: "B = 3e11 is 3 orders above
+     B_crit" is FALSE with the printed 4.4e13 (B is BELOW)
+     and directionally TRUE only with the Schwinger 4.4e9
+     (68x above). Internal consistency votes Schwinger
+     (feeds Q-002/116b/134d).
 
-  Also pinned: FDPM double-count (A and dOmega appear in I
-  and again in FDPM - quadratic coupling or slip?);
-  aDPM(SgrA*) = 4.105e29 unreproducible (FDPM/Vsys only
-  qualitative); THz family now FOUR values (fDPM 1.0 / LENR
-  1.18 / predicted 1.2 / predecessor omega_SCm 1.25) - one
-  canonical carrier needed; placeholder "arXiv:2408.xxxxx"
-  citations (resolve to 089's 2408.15233?).
+  VERIFIED EXACT: lap_v = 41.4; r_lc = 1.795e8 m. Three
+  mantissa-exact exponent slips pinned (nu 1e3; g_lc 10x;
+  surface 10x - the transcription family grows).
 
-Q-143 queued. Gate 1,008 assertions 0 failures. Registry 371
-rows / 791 edges / 151 ledgers (MEASURED - prior advertised
-counts had drifted +3 rows/-1 edge via formula-increment;
-corrected under Rule 7 after Daniel's double-check). Wired
-151/2,255 (11 clean, 140 OPEN_RULING). Next: PAPER_148.
+  Falsifiable predictions: pulse-drift delta, delta-DM aether
+  drag, Ug4i proximity coupling (largest known M_bh/d_g
+  magnetar at 0.1 pc from Sgr A*).
+
+Q-144 queued. Gate 1,014 assertions 0 failures. Registry
+373 rows / 795 edges / 152 ledgers (measured). Wired 152/2,255
+(11 clean, 141 OPEN_RULING). Next: PAPER_149.

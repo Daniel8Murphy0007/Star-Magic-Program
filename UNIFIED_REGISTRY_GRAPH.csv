@@ -790,3 +790,7 @@ observable,fdpm_driver_cascade,paper,PAPER_147,driver derivation
 observable,fdpm_driver_cascade,paper,PAPER_089,LENR THz lineage
 observable,fdpm_cascade_inversion,paper,PAPER_147,hierarchy inversion
 observable,fdpm_cascade_inversion,paper,PAPER_146,dominance-map contradiction
+observable,sgr1745_afluid_validation,paper,PAPER_148,system validation
+observable,sgr1745_afluid_validation,paper,PAPER_146,12-term application
+observable,sgr1745_structural_votes,paper,PAPER_148,structural votes
+observable,sgr1745_structural_votes,paper,PAPER_002,B_crit vote

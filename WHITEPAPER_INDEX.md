@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 151 (11 ✓, 140 ⚠ OPEN_RULING)
+- **Wired:** 152 (11 ✓, 141 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2104
+- **Not yet touched:** 2103
 
 ---
 
@@ -720,7 +720,7 @@
 | ⬜ | PAPER_1487 | DISTANCE SPOOKY |
 | ⬜ | PAPER_1488 | ZERO MASS BIGBANG STATE |
 | ⬜ | PAPER_1489 | SPIN PRECESSION 30DEG |
-| ⬜ | PAPER_148 | UQFF SGR1745 Magnetar MUGE FluidDynamics Dominant |
+| ⚠ | PAPER_148 | UQFF SGR1745 Magnetar MUGE FluidDynamics Dominant |
 | ⬜ | PAPER_1490 | HUBBLE OSCILLATION PER GYR |
 | ⬜ | PAPER_1491 | NI62 PEAK BINDING |
 | ⬜ | PAPER_1492 | PROTON CORE DENSITY |

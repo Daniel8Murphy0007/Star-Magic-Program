@@ -1839,3 +1839,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 151/2,255 (11 ✓, 140 ⚠). Next: PAPER_148.
 
 ---
+
+## 2026-07-30 — v0.151.0 — BAND 1: PAPER_148
+
+- PAPER_148 wired (⚠ Q-144): SGR1745 magnetar. MUGE-g
+  identified (Q-141c partial); fTRZ additive refuted (Q-142
+  datapoint); B_crit Schwinger vote; 3 mantissa slips.
+- Campaign: 152/2,255 (11 ✓, 141 ⚠). Next: PAPER_149.
+
+---

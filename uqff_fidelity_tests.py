@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.150.0", "uqff_calculator.VERSION = 0.150.0")
+assert_that(C.VERSION == "0.151.0", "uqff_calculator.VERSION = 0.151.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2207,6 +2207,19 @@ assert_that(abs(_r147['lenr_thz_err_pct'] - 1.69) < 0.01,
 assert_that(len(_r147['thz_family']) == 4,
             "PAPER_147: THz family four values (1.0/1.18/1.2/1.25) - canonical carrier needed (Q-143d)")
 assert_that(C.wired_count() >= 151, "wired_count >= 151")
+
+_r148 = C.calc('PAPER_148')['value']
+assert_that(abs(_r148['lap_v_chain'] - 41.4) < 0.1,
+            "PAPER_148: lap_v = 41.4 EXACT")
+assert_that(abs(_r148['r_lc_m'] - 1.795e8) < 0.001e8,
+            "PAPER_148: light-cylinder r_lc = 1.795e8 m EXACT")
+assert_that(_r148['ftrz_additive_refuted'] > 1e7,
+            "PAPER_148: additive fTRZ would be 5.6e7x the total - own table refutes additive form (Q-144a)")
+assert_that('Schwinger' in _r148['bcrit_direction_vote'],
+            "PAPER_148: B_crit direction consistency votes Schwinger 4.4e9 (Q-144b, feeds Q-002)")
+assert_that(_r148['mantissa_slips'] == 3 and abs(_r148['nu_chain'] - 1.728e24) < 0.001e24,
+            "PAPER_148: three mantissa-exact exponent slips pinned (nu/g_lc/surface) (Q-144c)")
+assert_that(C.wired_count() >= 152, "wired_count >= 152")
 
 # =============================================================================
 # REPORT

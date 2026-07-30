@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.151.0] — 2026-07-30 — BAND 1: PAPER_148 — fTRZ ADDITIVE REFUTED
+
+### Added
+- **PAPER_148 dispatch** (SGR1745-2900 magnetar validation,
+  sec 2.2): first Cycle 3 system paper — 12-term table with
+  afluid_freq at 99% (g = 1.773e-9), and the EXPLICIT MUGE-g
+  identification (magnetospheric-scale correction, NOT bulk
+  gravity — partial Q-141c answer; Q-141 annotated). TWO
+  STRUCTURAL VOTES: the paper's own table REFUTES the
+  additive fTRZ form (0.1 would be 5.6e7x the total — Q-142
+  annotated toward multiplicative); the "B above B_crit"
+  direction holds only with the Schwinger 4.4e9 (feeds
+  Q-002). EXACT: lap_v 41.4, r_lc 1.795e8 m. Three
+  mantissa-exact exponent slips pinned (nu 1e3, g_lc 10x,
+  surface 10x). Falsifiable predictions registered.
+- OPEN_RULING Q-144.
+- Gate: 1,014 assertions, 0 failures. Registry: 373 rows / 795 edges / 152 ledgers (measured).
+
+---
+
 ## [0.150.0] — 2026-07-30 — BAND 1: PAPER_147 — CASCADE INVERSION
 
 ### Added

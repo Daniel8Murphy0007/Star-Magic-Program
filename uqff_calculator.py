@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.150.0"
+VERSION = "0.151.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7841,5 +7841,59 @@ def _paper_147(dataset):
         'formula': 'FDPM = I*A*(w1-w2); aDPM = FDPM*fDPM*Evac*c*Vsys; aTHz/aDPM = 10*fTHz*vexp/c',
         'source': 'PAPER_147',
         'residual_pct': abs(1e12 * 10 * (1e5 / 3e8) - 3.33e9) / 3.33e9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_148')
+def _paper_148(dataset):
+    """SGR1745-2900 Magnetar: afluid Dominance (S0, sec 2.2).
+
+    First Cycle 3 system paper: 12-term table for SGR1745
+    (afluid_freq = 1.773e-9 at 99 pct), with the EXPLICIT
+    identification statement - MUGE-g is the MAGNETOSPHERIC-
+    SCALE correction, NOT bulk surface gravity (partially
+    answers Q-141c). VERIFIED EXACT: lap_v chain = 41.4;
+    r_lc = cP/2pi = 1.795e8 m.
+    FTRZ ADDITIVE FORM REFUTED (Q-144a): the paper's own term
+    table lists fTRZ = 0.1 as "subdominant" against a total of
+    1.773e-9 - if summed, fTRZ would be 5.6e7 x the total.
+    The table only closes if fTRZ is NOT additive - empirical
+    datapoint resolving Q-142a toward multiplicative.
+    B_CRIT DIRECTION VOTE (Q-144b): "B = 3e11 is 3 orders
+    ABOVE B_crit" is FALSE with the printed 4.4e13 (B is 2
+    orders BELOW) and directionally TRUE only with the
+    Schwinger 4.4e9 (68x above) - this paper's internal
+    consistency votes Schwinger in the Q-002/116b/134d fork.
+    MANTISSA-EXACT SLIPS x3 (Q-144c): nu chain 1.728e24
+    printed 1.73e21 (1e3); g_Newt(r_lc) 5.80e3 printed 5.8e4
+    (10x); surface g 1.30e12 printed 1.4e13 (10x).
+    Observational-prediction table (pulse drift, delta-DM
+    aether drag, Ug4i proximity coupling at 0.1 pc) is clean
+    falsifiable content; SGR1745 = largest known M_bh/d_g
+    magnetar laboratory.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.2 (SGR1745 system validation)',
+            'g_muge': 1.773e-9,
+            'g_identification': 'magnetospheric-scale correction, NOT bulk gravity (Q-141c partial)',
+            'afluid_fraction': 0.99,
+            'lap_v_chain': (3e11) ** 2 / (4 * _m.pi * 1e-7 * 1e15 * (1.2e4) ** 3),  # 41.4 EXACT
+            'r_lc_m': 3e8 * 3.76 / (2 * _m.pi),              # 1.795e8 EXACT
+            'ftrz_additive_refuted': 0.1 / 1.773e-9,          # 5.6e7 x total - impossible
+            'q142a_datapoint': 'own table closes only if fTRZ non-additive',
+            'bcrit_direction_vote': 'above-claim true only with Schwinger 4.4e9 (68x); false with 4.4e13',
+            'nu_chain': (1e8) ** 2 * (2000 * 86400),          # 1.728e24 vs printed 1.73e21
+            'g_newt_rlc_chain': 6.67e-11 * 2.8e30 / (1.795e8) ** 2,  # 5.80e3 vs printed 5.8e4
+            'surface_g_chain': 6.674e-11 * 2.8e30 / (1.2e4) ** 2,    # 1.30e12 vs printed 1.4e13
+            'mantissa_slips': 3,
+            'predictions': ('pulse drift delta', 'delta-DM aether drag', 'Ug4i 0.1 pc coupling'),
+            'unique_lab': 'largest known M_bh/d_g magnetar (0.1 pc from Sgr A*)',
+        },
+        'formula': 'afluid = (nu lap_v / Evac) aDPM; 12-term table; r_lc = cP/2pi',
+        'source': 'PAPER_148',
+        'residual_pct': abs(3e8 * 3.76 / (2 * _m.pi) - 1.8e8) / 1.8e8 * 100,
         'status': 'OPEN_RULING',
     }

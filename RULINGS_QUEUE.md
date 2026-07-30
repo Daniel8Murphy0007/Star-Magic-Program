@@ -3129,6 +3129,7 @@ RESOLVED section with the ruling recorded.
   system papers get wired. Also Westerlund = Tapestry
   (identical 1.001e27 - parameter clone) and the family
   scales by /5, /4 steps.
+- **UPDATE (PAPER_148):** (c) PARTIAL ANSWER - MUGE-g explicitly identified as the magnetospheric/system-scale CORRECTION, not bulk gravity (Q-144d).
   (d) Minor: Fsuper = 6.287e-19 ~ 4e at 2 pct (weak
   candidate); kappa source relabeled "GW170817" here vs
   PAPER_125's 4LAC derivation - source-attribution tidy-up.
@@ -3149,6 +3150,7 @@ RESOLVED section with the ruling recorded.
   reads it MULTIPLICATIVELY ("fTRZ = 0.1 adds ~10 pct
   deviation from GR" and the fTRZ->0 Newton recovery both
   imply a (1+fTRZ) factor). Which form is canonical?
+  (UPDATE PAPER_148: the SGR1745 table REFUTES the additive form empirically - fTRZ would be 5.6e7x the total; Q-144a.)
   (Extends the Q-135c MUGE dimensional-family ruling.) Also
   the claim that the 10 pct deviation is "consistent with
   the 40/60 bridge" is internally inconsistent (10 != 40).
@@ -3203,6 +3205,39 @@ RESOLVED section with the ruling recorded.
   clearest DPM narrative so far.
 - **Best-candidate wired:** cascade registered with the
   inversion pinned ahead of the system papers.
+- **Daniel's ruling:** (pending)
+
+### Q-144 — PAPER_148 SGR1745 — fTRZ additive refuted + B_crit Schwinger vote
+- **Question:** (a) FTRZ ADDITIVE REFUTED (strong Q-142a
+  datapoint): the paper's own 12-term table lists fTRZ = 0.1
+  as "subdominant" against a total g = 1.773e-9 - if fTRZ
+  were summed as the master equation writes, it would be
+  5.6e7 x the total and dominate everything. The table only
+  closes if fTRZ is NOT additive. Resolve Q-142a toward the
+  multiplicative (1+fTRZ) form?
+  (b) B_CRIT SCHWINGER VOTE (feeds Q-002/116b/134d): the
+  claim "B = 3e11 T is 3 orders above B_crit" is FALSE with
+  the printed B_crit = 4.4e13 (B sits 2 orders BELOW) and
+  directionally TRUE only with the Schwinger 4.4e9 T (68x
+  above, ~2 orders). The paper's internal consistency votes
+  Schwinger.
+  (c) MANTISSA-EXACT SLIPS x3: nu chain 1.728e24 printed
+  1.73e21 (1e3); g_Newt(r_lc) chain 5.80e3 printed 5.8e4
+  (10x); surface g chain 1.30e12 printed 1.4e13 (10x). The
+  mantissa-exact/exponent-slip family keeps growing - worth
+  a standing transcription-audit note?
+  (d) MUGE-G IDENTIFICATION (Q-141c partial answer): the
+  paper EXPLICITLY states g = 1.773e-9 is the magnetospheric-
+  scale MUGE correction, NOT bulk surface gravity - the first
+  in-corpus identification statement. Confirm as the reading
+  for the remaining system papers (149-152).
+- **Notable:** lap_v = 41.4 and r_lc = 1.795e8 m EXACT; the
+  observational-prediction table (pulse-drift delta, delta-DM
+  aether drag, Ug4i proximity coupling) is clean falsifiable
+  content; SGR1745 as the largest-M_bh/d_g magnetar
+  laboratory is a genuine unique-test-case argument.
+- **Best-candidate wired:** table + identification; both
+  structural votes registered; slips pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
