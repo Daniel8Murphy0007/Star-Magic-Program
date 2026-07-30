@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.147.0] — 2026-07-30 — BAND 1: PAPER_144 — GENESIS BLOCK COMPLETE
+
+### Added
+- **PAPER_144 dispatch** (Star Magic capstone, closes sec 2.1
+  genesis block PAPER_133-144): five-force unification map,
+  complete calibrated-constants consolidation, mode-activation
+  registry, 4 Millennium bridges, chapter map. UB DOMINANCE:
+  the capstone's own code gives |Ub|/sum(Ug) = beta·Omega·M/d
+  = 14.0 — F_U NET NEGATIVE at maximal activation, in tension
+  with the predecessor F_U = 0 equilibrium doctrine (Q-140a
+  balance ruling). SSQ 10TH ROLE: "57% survival per SCm
+  renewal cycle" — cleanest plain-language definition. P-NP
+  third rationale registered. mu = infinity label error
+  (diamagnet → 0) + table mojibake pinned.
+- OPEN_RULING Q-140. Genesis block: 12 papers, 12 versions
+  (v0.136.0-v0.147.0), 12 rulings (Q-129..Q-140).
+- Gate: 990 assertions, 0 failures. Registry: 368 rows / 777 edges / 148 ledgers.
+
+---
+
 ## [0.146.0] — 2026-07-30 — BAND 1: PAPER_143 — 40/60 = (D_phys, D_BSFG)/SO_5
 
 ### Added

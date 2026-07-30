@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 147 (11 ✓, 136 ⚠ OPEN_RULING)
+- **Wired:** 148 (11 ✓, 137 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2108
+- **Not yet touched:** 2107
 
 ---
 
@@ -676,7 +676,7 @@
 | ⬜ | PAPER_1447 | BUCKET G GRB JET FORMATION |
 | ⬜ | PAPER_1448 | BUCKET G STELLAR B FIELD |
 | ⬜ | PAPER_1449 | BUCKET G STELLAR IMF |
-| ⬜ | PAPER_144 | StarMagic SCm CosmicGlue Paradigm Complete Framework Overview |
+| ⚠ | PAPER_144 | StarMagic SCm CosmicGlue Paradigm Complete Framework Overview |
 | ⬜ | PAPER_1450 | BUCKET H MONOPOLE PROBLEM |
 | ⬜ | PAPER_1451 | BUCKET K LIGHT BY LIGHT |
 | ⬜ | PAPER_1452 | BUCKET K VACUUM BIREFRINGENCE |

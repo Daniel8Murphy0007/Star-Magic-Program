@@ -1800,3 +1800,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 147/2,255 (11 ✓, 136 ⚠). Next: PAPER_144.
 
 ---
+
+## 2026-07-30 — v0.147.0 — BAND 1: PAPER_144
+
+- PAPER_144 wired (⚠ Q-140): Star Magic capstone. Genesis
+  block 133-144 COMPLETE (12 papers). Ub/Ug = 14 doctrine
+  tension; SSq 10th role; P-NP third rationale.
+- Campaign: 148/2,255 (11 ✓, 137 ⚠). Next: PAPER_145.
+
+---

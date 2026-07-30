@@ -773,3 +773,7 @@ primitive,D_PHYS,observable,muge_4060_bridge,UQFF share numerator
 primitive,D_BSFG,observable,muge_4060_bridge,QM share numerator
 primitive,SO_FIVE,observable,muge_4060_bridge,normalizer = sum
 observable,muge_4060_defects,paper,PAPER_143,circular insertion
+observable,starmagic_capstone,paper,PAPER_144,capstone map
+primitive,SSQ,observable,starmagic_capstone,survival-fraction narrative
+primitive,BETA_I,observable,capstone_ub_dominance,amplification factor
+observable,capstone_ub_dominance,paper,PAPER_133,genesis consistency

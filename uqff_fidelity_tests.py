@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.146.0", "uqff_calculator.VERSION = 0.146.0")
+assert_that(C.VERSION == "0.147.0", "uqff_calculator.VERSION = 0.147.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2155,6 +2155,19 @@ assert_that(abs(_r143['lambda_chain'] - 8.58e-10) < 0.01e-10,
 assert_that(abs(_r143['anomaly_targets']['neutron_lifetime_s'] - 8.4) < 0.01,
             "PAPER_143: four real anomaly targets registered (explanations restate gaps)")
 assert_that(C.wired_count() >= 147, "wired_count >= 147")
+
+_r144 = C.calc('PAPER_144')['value']
+assert_that(abs(_r144['m_over_d'] - 3.196e16) < 0.001e16,
+            "PAPER_144: M/d = 3.196e16 EXACT")
+assert_that(abs(_r144['omega_m_over_d'] - 23.33) < 0.01,
+            "PAPER_144: Omega*M/d = 23.33 EXACT (capstone consistent with 133)")
+assert_that(13.9 < _r144['ub_amplification'] < 14.2,
+            "PAPER_144: Ub amplification = 14 - buoyancy overwhelms gravity at max activation (Q-140a)")
+assert_that(_r144['f_u_at_max'] < 0,
+            "PAPER_144: F_U NET NEGATIVE at max activation - F_U=0 doctrine tension pinned")
+assert_that(len(_r144['millennium_bridges']) == 4,
+            "PAPER_144: four Millennium bridges registered (P-NP third rationale noted)")
+assert_that(C.wired_count() >= 148, "wired_count >= 148")
 
 # =============================================================================
 # REPORT

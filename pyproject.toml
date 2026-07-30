@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.146.0"
-description = "UQFF Star-Magic-Program v0.146.0: PAPER_143 wired - 40/60 quantum-gravity bridge (PRIMITIVE FIND: split = (D_PHYS, D_BSFG)/SO_FIVE EXACT with ratio 2/3 = predecessor PAPER_2154 identity - rescues the derived claim; as-printed circular with hardcoded 0.67 + code syntax error; lambda 1e9 slip mantissa-exact; four real anomaly targets queued). Q-139 queued. Wired 147/2255, gate 984/0. Registry 366 rows / 773 edges / 147 ledgers."
+version = "0.147.0"
+description = "UQFF Star-Magic-Program v0.147.0: PAPER_144 wired - Star Magic capstone closes the genesis block 133-144 (five-force map + constants consolidation; UB DOMINANCE finding: |Ub|/Ug = 14, F_U net negative at max activation - F_U=0 doctrine tension; SSq 10th role: 57 pct survival per renewal cycle; P-NP third rationale). Q-140 queued. Wired 148/2255, gate 990/0. Registry 368 rows / 777 edges / 148 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

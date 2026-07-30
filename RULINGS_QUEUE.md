@@ -3075,6 +3075,39 @@ RESOLVED section with the ruling recorded.
   four anomaly targets registered.
 - **Daniel's ruling:** (pending)
 
+### Q-140 — PAPER_144 Capstone — Ub dominance vs F_U = 0 doctrine
+- **Question:** (a) UB DOMINANCE: running the capstone's own
+  component code, |Ub|/sum(Ug) = beta_i*Omega_g*M_bh/d_g =
+  14.0 - the buoyancy term overwhelms ALL gravity terms 14:1
+  and F_U = -4.99e25 is NET NEGATIVE at maximal activation
+  (cos = 1). This is in tension with the predecessor F_U = 0
+  equilibrium doctrine (PAPER_1203: equilibrium via
+  F_UBi/F_UBii balance at every shell). Is the genesis Ub
+  form (with the extra Omega*M/d factor) canonical, or does
+  the predecessor balanced form supersede? The factor 14 =
+  0.6 x 23.33 decides whether F_U can ever be zero at these
+  calibrations.
+  (b) SSQ 10TH ROLE: the narrative defines SSq as "57 pct of
+  any quantum state survives each SCm renewal cycle" - the
+  cleanest plain-language reading in the corpus (survival
+  fraction). Add to the SSq roles ledger as the canonical
+  narrative?
+  (c) P-VS-NP THIRD RATIONALE: "no superluminal NP oracle
+  since v_SCm < c" joins PAPER_104's [UA]^2 extraction and
+  the predecessor 1-1e-9 value - three P-NP statements
+  corpus-wide, one canonical position needed.
+  (d) Labels: mu_SCm = infinity for "perfect flux expulsion"
+  is a physics label error (perfect diamagnet has mu_r -> 0);
+  table mojibake (M_bh e-6, rho_SCm 10-5).
+- **Notable:** M/d = 3.196e16 and Omega*M/d = 23.33 EXACT
+  (consistent with PAPER_133); the five-force activation map
+  and the complete constants consolidation are the genesis
+  block's finished deliverables; Session 44 (PAPER_133-144)
+  closes with 12 papers wired.
+- **Best-candidate wired:** capstone registered; Ub-dominance
+  tension pinned for the doctrine ruling.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

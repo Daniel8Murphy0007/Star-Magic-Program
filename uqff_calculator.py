@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.146.0"
+VERSION = "0.147.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7619,5 +7619,66 @@ def _paper_143(dataset):
         'formula': 'g_bridge = 0.6 g_QM + 0.4 g_UQFF; shares = (D_BSFG, D_PHYS)/SO_FIVE',
         'source': 'PAPER_143',
         'residual_pct': abs(2.2 / 3.3 - 4 / 6) / (4 / 6) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_144')
+def _paper_144(dataset):
+    """Star Magic Cosmic Glue Capstone (S0, sec 2.1 close).
+
+    Framework-paradigm consolidation closing the genesis block
+    (PAPER_133-144, Session 44): five-force unification table
+    (gravity/EM/strong/weak/dark as Ug activation regimes),
+    complete calibrated-constants table, mode-activation
+    registry, 4 Millennium bridges, Star Magic chapter map,
+    plain-language narrative.
+    UB DOMINANCE FINDING (Q-140a): running the capstone's own
+    component code, |Ub|/sum(Ug) = beta_i*Omega_g*M_bh/d_g =
+    14.0 - buoyancy overwhelms ALL gravity terms 14:1 and
+    F_U = -4.99e25 NET NEGATIVE at maximal activation. In
+    tension with the predecessor F_U = 0 equilibrium doctrine
+    (PAPER_1203); either the calibrations or the Ub form need
+    the balance ruling.
+    SSQ 10TH ROLE (Q-140b): the narrative gives SSq its
+    cleanest plain-language definition - "57 pct of any
+    quantum state survives each SCm renewal cycle" (survival
+    fraction). Canonical-narrative candidate for the roles
+    ledger.
+    P-VS-NP THIRD RATIONALE (Q-140c): "no superluminal NP
+    oracle since v_SCm < c" joins PAPER_104's [UA]^2
+    extraction and the predecessor 1-1e-9 - three P-NP
+    statements corpus-wide.
+    Table mojibake/labels: M_bh printed e-6 (e36); rho_SCm
+    printed 10-5 (1e15); mu_SCm = infinity for "perfect flux
+    expulsion" - PHYSICS LABEL ERROR (perfect diamagnet has
+    mu_r -> 0, not infinity). Verified: M/d = 3.196e16;
+    Omega*M/d = 23.33; component chain reproduces.
+    """
+    K = 8.15e36 / 2.55e20
+    ug_sum = 1.5 * 7.3e-16 * K + 1.2 * 1e8 * K + 1.8 * 7.3e-16 * K + 1.0 * RHO_SCM * K
+    ub = -BETA_I * ug_sum * 7.3e-16 * K
+    return {
+        'value': {
+            'domain': '2.1 capstone (genesis block close)',
+            'block': 'PAPER_133-144 Session 44 complete',
+            'five_force_map': {'gravity': 'Ug1+Ug4', 'EM': 'Ug2', 'strong': 'Ug3',
+                               'weak': 'Ug4+Ub', 'dark': 'UA+ratio10'},
+            'm_over_d': K,                                   # 3.196e16 EXACT
+            'omega_m_over_d': 7.3e-16 * K,                   # 23.33 EXACT
+            'ub_amplification': BETA_I * 7.3e-16 * K,        # 14.07 canonical
+            'f_u_at_max': ug_sum + ub,                       # net negative
+            'ub_dominance': '|Ub|/sum(Ug) = 14 - F_U net negative at max activation',
+            'f_u_zero_tension': 'predecessor PAPER_1203 equilibrium doctrine needs balance ruling',
+            'ssq_narrative': '57 pct survival per SCm renewal cycle (10th role candidate)',
+            'millennium_bridges': ('YM n=17-18 threshold', 'NS bounded forcing',
+                                   'Riemann resonant nodes', 'P-NP no-superluminal-oracle'),
+            'pnp_third_rationale': 'joins PAPER_104 [UA]^2 and predecessor 1-1e-9',
+            'mu_label_error': 'superconductor mu -> 0 (diamagnet), printed infinity',
+            'constants_table': 'complete consolidation (kappa/SSq/beta/k1-4/ratio 10/E_0)',
+        },
+        'formula': 'F_U = sum dUg_i + dUb + dUm + UA_mn (capstone compact form)',
+        'source': 'PAPER_144',
+        'residual_pct': abs(7.3e-16 * K - 23.33) / 23.33 * 100,
         'status': 'OPEN_RULING',
     }

@@ -1,32 +1,35 @@
-v0.146.0 BAND 1: PAPER_143 wired - 40/60 = (D_PHYS, D_BSFG)/SO_5 FIND
+v0.147.0 BAND 1: PAPER_144 wired - GENESIS BLOCK 133-144 COMPLETE
 
-PAPER_143 UQFF 40/60 Quantum-Gravity Bridge (OPEN_RULING Q-139):
-  sec 2.1: g_bridge = 0.6*g_QM + 0.4*g_UQFF - the framework's
-  most compact unification statement.
+PAPER_144 Star Magic SCm Cosmic Glue Capstone (OPEN_RULING
+Q-140) - closes the sec 2.1 genesis block:
+  Five-force unification map (gravity/EM/strong/weak/dark as
+  Ug activation regimes), complete calibrated-constants
+  consolidation, mode-activation registry, 4 Millennium
+  bridges, Star Magic chapter map, plain-language narrative.
 
-  PRIMITIVE FIND (headline): the split back-solves to
-  g_UQFF/g_QM = 2/3 = D_PHYS/D_BSFG EXACT - the predecessor
-  PAPER_2154 identity - with shares
-    UQFF = D_PHYS/(D_PHYS + D_BSFG) = 4/10 = 0.4 EXACT
-    QM   = D_BSFG/(D_PHYS + D_BSFG) = 6/10 = 0.6 EXACT
-  and the normalizer D_PHYS + D_BSFG = 10 = SO_FIVE. The
-  40/60 split IS the primitive pair normalized by SO_five.
-  This rescues the paper's derived-not-assumed claim, which
-  otherwise fails: the nuclear g_UQFF = 2.2e34 is underived,
-  the code literally hardcodes g_UQFF_nuc = 0.67*g_QM (split
-  inserted), and the code block has a LaTeX-brace SYNTAX
-  ERROR - it cannot run (broken block No. 8).
+  UB DOMINANCE FINDING: the capstone's own component code
+  gives |Ub|/sum(Ug) = beta_i*Omega_g*M_bh/d_g = 14.0 -
+  buoyancy overwhelms ALL gravity terms and F_U = -4.99e25 is
+  NET NEGATIVE at maximal activation. Tension with the
+  predecessor F_U = 0 equilibrium doctrine (PAPER_1203) -
+  Q-140a asks which Ub form is canonical.
 
-  VERIFIED EXACT: g_QM(Bohr) = 4.52e22; f_sc(300K) = 4.98e-3;
-  f_sc(10K) = 0.0905. Lambda: 1e9 exponent slip (chain
-  8.58e-10 vs printed 8.59e-19, mantissa exact - family
-  pattern); proton stability robust.
+  SSQ 10TH ROLE: "57 pct of any quantum state survives each
+  SCm renewal cycle" - the corpus's cleanest plain-language
+  SSq definition (survival fraction).
 
-  FOUR REAL ANOMALY TARGETS registered (proton radius 0.036
-  fm, muonic Lamb +68 meV, g-2 ~6e-12, neutron 8.4 s) -
-  currently the explanations restate the gaps; queued as OPEN
-  derivation targets.
+  P-VS-NP THIRD RATIONALE: no-superluminal-oracle joins
+  PAPER_104's [UA]^2 and the predecessor 1-1e-9.
 
-Q-139 queued. Gate 984 assertions 0 failures. Registry 366 rows /
-773 edges / 147 citation ledgers. Wired 147/2,255 (11 clean, 136
-OPEN_RULING). Next: PAPER_144 (sec 2.1 capstone).
+  VERIFIED: M/d = 3.196e16 and Omega*M/d = 23.33 EXACT
+  (genesis-consistent). mu = infinity label error pinned.
+
+  GENESIS BLOCK SUMMARY (133-144, 12 papers): provenance
+  anchor (PAPER_2152 match), E_react v^1 resolution, Ug2
+  exponent-slip resolution, THREE primitive finds (P_SCm =
+  F_TRZ^3, 40/60 = (D_phys,D_BSFG)/SO_5, k_dp = alpha_G),
+  two 1/5 appearances, five falsified/broken code outputs.
+
+Q-140 queued. Gate 990 assertions 0 failures. Registry 368 rows /
+777 edges / 148 citation ledgers. Wired 148/2,255 (11 clean, 137
+OPEN_RULING). Next: PAPER_145.
