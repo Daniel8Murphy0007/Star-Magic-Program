@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.152.0"
-description = "UQFF Star-Magic-Program v0.152.0: PAPER_149 wired - Sgr A* aDPM dominance (Vsys/ratio/g_Newt chains EXACT, correcting 146 slip; CASCADE INVERSION CONFIRMED - table aTHz/aDPM 0.0034 vs formula 3e12, 1e15 discrepancy; abstract-vs-body 6-order fork; FDPM back-solved by own admission; scope-inside-r_s statement good). Q-145 queued. Wired 153/2255, gate 1020/0. Registry 375 rows / 799 edges / 153 ledgers (measured)."
+version = "0.153.0"
+description = "UQFF Star-Magic-Program v0.153.0: PAPER_150 wired - Tapestry/Westerlund SFR resonance (clone reframed as universal saturation floor + 20-yr periodicity prediction; but floor formula gives 1e6-different values at own radii and Westerlund fails the SFR precondition by 4+ orders; SOURCE4 unit slips; distance fork; Jeans scope mix). Q-146 queued. Wired 154/2255, gate 1026/0. Registry 377 rows / 803 edges / 154 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

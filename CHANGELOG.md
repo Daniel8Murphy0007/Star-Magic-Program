@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.153.0] — 2026-07-30 — BAND 1: PAPER_150 — FLOOR SELF-CONTRADICTION
+
+### Added
+- **PAPER_150 dispatch** (Tapestry + Westerlund 2 SFR
+  resonance, sec 2.2): the clone values (both 1.001e27) are
+  reframed as a universal afluid saturation floor — the right
+  KIND of move — with the block's best falsifiable content
+  (20-yr aether periodicity, maser-testable). BUT: the floor
+  formula gives 1e6-different values at the paper's own
+  SOURCE4 radii (2.54e26 vs 2.54e20), and Westerlund 2 fails
+  the mechanism's own SFR > 100 Msun/yr precondition by 4+
+  orders (actual ~5e-3). SOURCE4 unit slips (SFR proxies
+  6.3x/10x; B labels 1e3-1e4); Westerlund distance fork
+  (2.8 vs 8 kpc); Jeans scope mix violating the 148/149
+  identification; implied table ratio 500 extends the
+  formula-vs-table family.
+- OPEN_RULING Q-146.
+- Gate: 1,026 assertions, 0 failures. Registry: 377 rows / 803 edges / 154 ledgers (measured).
+
+---
+
 ## [0.152.0] — 2026-07-30 — BAND 1: PAPER_149 — INVERSION CONFIRMED
 
 ### Added

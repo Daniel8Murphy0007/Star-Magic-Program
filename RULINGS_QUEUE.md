@@ -3273,6 +3273,42 @@ RESOLVED section with the ruling recorded.
   1e15 inversion confirmation and both slips pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-146 — PAPER_150 SFR Systems — floor self-contradiction + precondition fail
+- **Question:** (a) FLOOR SELF-CONTRADICTION: the clone
+  values (both 1.001e27) are reframed as a "universal afluid
+  saturation floor" - but the floor formula
+  v_SCm^2*tau/(Evac*R^2) evaluated at the paper's OWN SOURCE4
+  radii gives 2.54e26 (Westerlund, 1 pc) vs 2.54e20
+  (Tapestry, 1 kpc) - 1e6 APART. Either the floor is
+  R-independent (different formula) or the clone is a
+  parameter artifact after all. Rule.
+  (b) PRECONDITION FAIL: the floor requires SFR > 100
+  Msun/yr; Westerlund 2's actual SFR ~ 5e-3 Msun/yr (1e4
+  Msun over ~2 Myr) - one of the mechanism's two showcase
+  systems fails its own precondition by 4+ orders.
+  (c) SOURCE4 SLIPS: SFR proxies 6.3x/10x off their labels
+  (1.0e24 for "100 Msun/yr"; 6.34e26 = 10,000 Msun/yr
+  labeled 1,000); B fields mislabeled 1e3-1e4 (1e-3 T as
+  "1 mG"; 1e-7 T as "1 muG"); Westerlund DISTANCE fork:
+  2.8 kpc here vs 8 kpc in the PAPER_120 catalog (literature
+  ~4.2 kpc) - three-way distance question.
+  (d) JEANS SCOPE MIX: the M_Jeans suppression chain plugs
+  MUGE-g into a test-particle criterion - violating the
+  148/149 identification (MUGE-g = system-scale correction,
+  not particle acceleration); and epsilon_SF -> 1 overclaims
+  vs observed 10-30 pct starburst efficiencies.
+- **Notable:** the clone-to-floor reframe is the right KIND
+  of move (turning an artifact flag into a falsifiable
+  claim), and the ~20-yr aether periodicity prediction with
+  named observables (H2O/OH maser monitoring, YSO X-ray
+  variation) is the block's best falsifiable content; the
+  implied table ratio nu*lap_v/Evac = 500 extends the
+  formula-vs-table family (Q-143a).
+- **Best-candidate wired:** floor + periodicity registered
+  with both self-contradictions pinned; slips + scope mix
+  logged.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

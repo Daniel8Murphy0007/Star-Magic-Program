@@ -1857,3 +1857,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 153/2,255 (11 ✓, 142 ⚠). Next: PAPER_150.
 
 ---
+
+## 2026-07-30 — v0.153.0 — BAND 1: PAPER_150
+
+- PAPER_150 wired (⚠ Q-146): SFR systems. Floor claim 1e6
+  self-contradiction; precondition fail; SOURCE4 slips;
+  20-yr prediction registered. Measured 377/803/154.
+- Campaign: 154/2,255 (11 ✓, 143 ⚠). Next: PAPER_151.
+
+---

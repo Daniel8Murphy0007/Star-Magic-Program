@@ -798,3 +798,7 @@ observable,sgra_adpm_validation,paper,PAPER_149,system validation
 observable,sgra_adpm_validation,paper,PAPER_148,scope consistency
 observable,sgra_inversion_confirmation,paper,PAPER_149,inversion confirmation
 observable,sgra_inversion_confirmation,paper,PAPER_147,cascade formula clash
+observable,sfr_saturation_floor,paper,PAPER_150,floor claim
+observable,sfr_saturation_floor,paper,PAPER_146,afluid application
+observable,sfr_source4_slips,paper,PAPER_150,SOURCE4 slips
+observable,sfr_source4_slips,paper,PAPER_120,distance fork

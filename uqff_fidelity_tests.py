@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.152.0", "uqff_calculator.VERSION = 0.152.0")
+assert_that(C.VERSION == "0.153.0", "uqff_calculator.VERSION = 0.153.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2233,6 +2233,19 @@ assert_that(abs(_r149['ratio_body'] - 1.69e25) < 0.01e25,
 assert_that(abs(_r149['g_newt_rs_chain'] - 3.59e6) < 0.01e6,
             "PAPER_149: g_Newt(r_s) chain 3.59e6 vs printed 3.6e15 - 1e9 mantissa-exact slip (Q-145c)")
 assert_that(C.wired_count() >= 153, "wired_count >= 153")
+
+_r150 = C.calc('PAPER_150')['value']
+assert_that(_r150['sat_westerlund'] / _r150['sat_tapestry'] > 1e5,
+            "PAPER_150: saturation floor 1e6 apart at own radii - same-floor claim self-contradicts (Q-146a)")
+assert_that(_r150['westerlund_actual_sfr'] < 0.01,
+            "PAPER_150: Westerlund SFR ~ 5e-3 Msun/yr fails the > 100 precondition by 4+ orders (Q-146b)")
+assert_that(_r150['westerlund_distance_fork'] == (2.8, 8.0),
+            "PAPER_150: Westerlund distance fork 2.8-vs-8 kpc pinned (Q-146c)")
+assert_that(abs(_r150['periodicity_prediction_yr'] - 19.9) < 0.1,
+            "PAPER_150: 20-yr aether periodicity prediction registered (maser-testable)")
+assert_that(abs(_r150['implied_ratio'] - 500) < 1,
+            "PAPER_150: table implies nu*lap_v/Evac = 500 (formula-vs-table family)")
+assert_that(C.wired_count() >= 154, "wired_count >= 154")
 
 # =============================================================================
 # REPORT

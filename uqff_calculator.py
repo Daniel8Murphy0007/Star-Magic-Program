@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.152.0"
+VERSION = "0.153.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7953,5 +7953,61 @@ def _paper_149(dataset):
         'formula': '12-term table; aDPM dominant; scope inside r_s; QPO = fDPM/2',
         'source': 'PAPER_149',
         'residual_pct': abs(4 / 3 * _m.pi * rs ** 3 - 7.78e30) / 7.78e30 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_150')
+def _paper_150(dataset):
+    """Tapestry + Westerlund 2: SFR Resonance (S0, sec 2.2).
+
+    Third Cycle 3 system paper - addresses the Q-141c clone
+    flag by claiming the identical g ~ 1.001e27 for both SFRs
+    is a UNIVERSAL afluid saturation floor (falsifiable
+    reframe), with the ~20-yr aether periodicity prediction
+    (maser monitoring observable - clean falsifiable content).
+    FLOOR CLAIM FAILS OWN INPUTS (Q-146a): the saturation
+    formula v^2 tau/(Evac R^2) evaluated at the paper's own
+    SOURCE4 radii gives 2.54e26 (Westerlund, 1 pc) vs 2.54e20
+    (Tapestry, 1 kpc) - 1e6 APART. The same-floor mechanism
+    contradicts its own R-dependence.
+    PRECONDITION FAILS (Q-146b): the floor requires SFR > 100
+    Msun/yr, but Westerlund 2's actual SFR ~ 5e-3 Msun/yr
+    (1e4 Msun over ~2 Myr) - one of the two systems fails the
+    mechanism's own precondition by 4+ orders.
+    SOURCE4 UNIT SLIPS (Q-146c): SFR proxies off 6.3x/10x
+    (1.0e24 for "100 Msun/yr" = 6.3e24; 6.34e26 for "1000" =
+    10,000 Msun/yr); B labels off 1e3-1e4 (1e-3 T labeled
+    "1 mG"; 1e-7 T labeled "1 muG"). Westerlund DISTANCE FORK:
+    2.8 kpc here vs 8 kpc (PAPER_120 catalog; real ~4.2).
+    SCOPE MIX (Q-146d): the Jeans-suppression chain plugs
+    MUGE-g (system-scale correction per the 148/149
+    identification) into a test-particle criterion
+    (afluid/g_Newt = 1e37 -> M_Jeans -> 0, epsilon -> 1) -
+    scope violation of the corpus's own identification;
+    also real starburst efficiencies are 10-30 pct, not 1.
+    Implied nu*lap_v/Evac = afluid/aDPM = 500 from the table
+    (formula-vs-table family, Q-143a consistent).
+    """
+    return {
+        'value': {
+            'domain': '2.2 (SFR systems validation)',
+            'g_muge_both': 1.001e27,
+            'clone_reframe': 'identical values claimed as universal saturation floor',
+            'sat_westerlund': 1e16 * 1.728e8 / (7.09e-36 * (3.1e16) ** 2),  # 2.54e26
+            'sat_tapestry': 1e16 * 1.728e8 / (7.09e-36 * (3.1e19) ** 2),    # 2.54e20
+            'floor_self_contradiction': '1e6 apart at own radii (Q-146a)',
+            'westerlund_actual_sfr': 1e4 / 2e6,               # 0.005 Msun/yr
+            'precondition_fail': 'needs > 100 Msun/yr; Westerlund at 5e-3 (Q-146b)',
+            'sfr_proxy_slips': (6.3, 10),                     # x-factors
+            'b_label_slips': ('1e-3 T as 1 mG (1e4)', '1e-7 T as 1 muG (1e3)'),
+            'westerlund_distance_fork': (2.8, 8.0),           # kpc, this paper vs 120
+            'jeans_scope_mix': 'MUGE-g into test-particle Jeans - violates 148/149 identification',
+            'periodicity_prediction_yr': 19.9,
+            'implied_ratio': 1.001e27 / 2e24,                 # 500 - table family
+        },
+        'formula': 'afluid floor = v_SCm^2 tau/(Evac R^2); M_Jeans_MUGE = M_std/(1 + afluid/g_Newt)',
+        'source': 'PAPER_150',
+        'residual_pct': abs(1e16 * 1.728e8 / (7.09e-36 * (3.1e16) ** 2) - 2.54e26) / 2.54e26 * 100,
         'status': 'OPEN_RULING',
     }
