@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.129.0"
-description = "UQFF Star-Magic-Program v0.129.0: PAPER_126 wired - Master Buoyancy Gaia SgrA* (galactic pair (4.3e6 Msun, 2.44e20 m) canonized, error chains EXACT; eps_UA self-canceling derivation pinned Rule 7; PRIMITIVE FIND: M_bh correction /10 IS F_TRZ -> (1 + SSq*beta*F_TRZ) = 4.297). Q-122 queued. Wired 130/2255, gate 877/0. Registry 332 rows / 701 edges / 130 ledgers."
+version = "0.130.0"
+description = "UQFF Star-Magic-Program v0.130.0: PAPER_127 wired - Resonant PSP Alfven boundary (d_sw grounded as PSP E8 velocity jump, chains EXACT; FALSIFIED code output No. 2 - 4.4e-7 vs claimed 5e5, 1.1e12 off; [UA] FOURTH value 0.0145 circular; d_sw definition fork now 3 routes). Q-123 queued. Wired 131/2255, gate 883/0. Registry 334 rows / 705 edges / 131 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

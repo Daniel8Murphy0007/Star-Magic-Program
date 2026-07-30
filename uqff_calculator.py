@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.129.0"
+VERSION = "0.130.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6681,5 +6681,60 @@ def _paper_126(dataset):
         'formula': 'd_geo = d_g*(1+eps_UA); M_app = M*(1 + SSq*beta_i*F_TRZ)',
         'source': 'PAPER_126',
         'residual_pct': abs(4.154 * (1 + SSQ * BETA_I * F_TRZ) - 4.3) / 4.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_127')
+def _paper_127(dataset):
+    """Resonant Mode: PSP delta_sw Alfven Boundary (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-07 (PAPER_114). NEW PHYSICAL
+    GROUNDING: d_sw = 0.01 as the Alfven-crossing velocity
+    jump (PSP Encounter 8, 2021, r_A ~ 20 R_sun) with the
+    Resonant Mode activating super-Alfvenically. VERIFIED
+    EXACT: F_U(r_A) = GM/r_A^2 = 0.685 m/s2 (x1.01 = 0.692);
+    omega_res = v/r_A = 3.59e-5 rad/s; t_n = r_A/v = 2.784e4 s
+    = 0.322 days; omega = pi/t_n = 1.13e-4 rad/s; PSP-wave
+    factor-5 comparison honest.
+    FALSIFIED CODE OUTPUT No. 2 (Q-123a, Rule 7): the sec 3.3
+    block's actual output is 4.39e-7 m/s, not the claimed
+    "~5e5" - off by 1.1e12. The formula multiplies a mass
+    DENSITY by g (units kg/m3 * m/s2, not acceleration). Even
+    the sensible escape form sqrt(2GM/r_A) gives 1.38e5.
+    UA FOURTH VALUE (Q-123b): [UA] = d_sw/F_U = 0.0145 here -
+    joining 1e-19 C / 1e-11 C / 1e-4. And it is CIRCULAR:
+    [UA] is back-solved FROM d_sw, then claimed to explain it.
+    D_SW DEFINITION FORK now 3 routes (Q-123c): SSq/57
+    (PAPER_114), F_TRZ^2 (Q-110a candidate), [UA]*F_U at
+    Alfven point (here). Same 0.01, three stories.
+    Sound-speed formula c_UA = sqrt(gamma*rho/rho) is
+    dimensionally broken as printed (density ratio is
+    dimensionless).
+    """
+    import math as _m
+    rA = 20 * 6.96e8
+    FU = 6.674e-11 * 1.989e30 / rA ** 2
+    return {
+        'value': {
+            'domain': '1.17 (Resonant mode, EP-07 refinement)',
+            'f_u_ra': FU,                                   # 0.685 EXACT
+            'f_u_ra_x101': FU * 1.01,                       # 0.692 EXACT
+            'omega_res': 5e5 / rA,                          # 3.59e-5 EXACT
+            't_n_days': rA / 5e5 / 86400,                   # 0.322 EXACT
+            'omega_pi_tn': _m.pi / (rA / 5e5),              # 1.13e-4 EXACT
+            'ua_fourth_value': 0.01 / (FU * 1.01),          # 0.0145 circular
+            'ua_fork_values': (1e-19, 1e-11, 1e-4, 0.0145),
+            'code_actual_output': _m.sqrt(2 * (1e-23 + RHO_SCM) * FU * 1.01 * rA),  # 4.39e-7
+            'code_claimed': 5e5,
+            'code_defect': 'falsified output No. 2 - 1.1e12 off; density-times-g not acceleration',
+            'escape_sanity': _m.sqrt(2 * 6.674e-11 * 1.989e30 / rA),  # 1.38e5
+            'dsw_definition_fork': 'SSq/57 (114) vs F_TRZ^2 (Q-110a) vs [UA]*F_U Alfven (here)',
+            'alfven_grounding': 'PSP E8 2021 sub-Alfvenic crossing at ~20 R_sun; dv/v ~ 1 pct',
+            'sound_speed_broken': 'sqrt(gamma*rho/rho) dimensionless under radical',
+        },
+        'formula': 'd_sw = [UA]*F_U at r_A; omega = pi/t_n; t_n = r_A/v_sw',
+        'source': 'PAPER_127',
+        'residual_pct': abs(FU - 0.685) / 0.685 * 100,
         'status': 'OPEN_RULING',
     }

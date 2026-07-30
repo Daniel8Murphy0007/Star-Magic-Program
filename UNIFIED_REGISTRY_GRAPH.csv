@@ -701,3 +701,7 @@ observable,master_buoyancy_galactic_pair,paper,PAPER_110,EP-06 lineage
 primitive,F_TRZ,observable,mbh_ftrz_correction_find,the /10 decomposition
 primitive,SSQ,observable,mbh_ftrz_correction_find,correction factor
 primitive,BETA_I,observable,mbh_ftrz_correction_find,correction factor
+observable,resonant_psp_alfven,paper,PAPER_127,Alfven boundary
+observable,resonant_psp_alfven,paper,PAPER_114,EP-07 lineage
+observable,resonant_psp_defects,paper,PAPER_127,code falsification
+observable,resonant_psp_defects,paper,PAPER_121,UA fork growth

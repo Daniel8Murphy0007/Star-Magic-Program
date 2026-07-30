@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 130 (11 ✓, 119 ⚠ OPEN_RULING)
+- **Wired:** 131 (11 ✓, 120 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2125
+- **Not yet touched:** 2124
 
 ---
 
@@ -489,7 +489,7 @@
 | ⬜ | PAPER_1277 | ORIGIN OF INERTIA REFERENCE |
 | ⬜ | PAPER_1278 | PRE BIG BANG |
 | ⬜ | PAPER_1279 | PENROSE HAWKING QUANTUM |
-| ⬜ | PAPER_127 | UQFF Resonant ParkerSolarProbe DeltaSW |
+| ⚠ | PAPER_127 | UQFF Resonant ParkerSolarProbe DeltaSW |
 | ⬜ | PAPER_1280 | INFO PARADOX FULL QG |
 | ⬜ | PAPER_1281 | ADS CFT TO DS EXTENSION |
 | ⬜ | PAPER_1282 | GAUGE GRAVITY GENERAL DIM |

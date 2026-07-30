@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.130.0] — 2026-07-29 — BAND 1: PAPER_127 — ALFVÉN GROUNDING
+
+### Added
+- **PAPER_127 dispatch** (Resonant PSP delta_sw, d91b1f6c):
+  d_sw = 0.01 grounded as the Alfvén-crossing velocity jump
+  (PSP Encounter 8, 2021 — best observational peg d_sw has
+  received). Chains EXACT: F_U(r_A) = 0.685 m/s², omega_res =
+  3.59e-5 rad/s, t_n = 0.322 d, omega = 1.13e-4 rad/s.
+  FALSIFIED CODE OUTPUT No. 2: actual 4.39e-7 m/s vs claimed
+  ~5e5 (1.1e12 off; density×g isn't an acceleration). [UA]
+  FOURTH value (0.0145, circularly back-solved) — the single-
+  [UA] ruling now closes FIVE queue items. d_sw definition
+  fork now 3 routes (SSq/57, F_TRZ², [UA]·F_U). Q-110
+  annotated.
+- OPEN_RULING Q-123.
+- Gate: 883 assertions, 0 failures. Registry: 334 rows / 705 edges / 131 ledgers.
+
+---
+
 ## [0.129.0] — 2026-07-29 — BAND 1: PAPER_126 — /10 = F_TRZ FIND
 
 ### Added

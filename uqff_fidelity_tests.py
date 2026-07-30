@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.129.0", "uqff_calculator.VERSION = 0.129.0")
+assert_that(C.VERSION == "0.130.0", "uqff_calculator.VERSION = 0.130.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1924,6 +1924,19 @@ assert_that(abs(_r126['mbh_corrected_canonical'] - 4.297) < 0.001,
 assert_that(abs(_r126['roundtrip_kpc'] - 8.247) < 0.001,
             "PAPER_126: round-trip 8.247 kpc vs GRAVITY 8.277 (0.37 pct)")
 assert_that(C.wired_count() >= 130, "wired_count >= 130")
+
+_r127 = C.calc('PAPER_127')['value']
+assert_that(abs(_r127['f_u_ra'] - 0.685) < 0.001,
+            "PAPER_127: F_U(r_A) = 0.685 m/s2 EXACT")
+assert_that(abs(_r127['omega_res'] - 3.59e-5) < 0.01e-5 and abs(_r127['t_n_days'] - 0.322) < 0.001,
+            "PAPER_127: Alfven resonance chains EXACT (3.59e-5 rad/s; t_n = 0.322 d)")
+assert_that(_r127['code_claimed'] / _r127['code_actual_output'] > 1e12,
+            "PAPER_127: falsified code output No. 2 - actual 4.4e-7 vs claimed 5e5 (Q-123a)")
+assert_that(abs(_r127['ua_fourth_value'] - 0.0145) < 0.0001,
+            "PAPER_127: [UA] fourth value 0.0145 (circular back-solve) - fork grows (Q-123b)")
+assert_that(len(_r127['ua_fork_values']) == 4,
+            "PAPER_127: [UA] fork now 4 values across corpus")
+assert_that(C.wired_count() >= 131, "wired_count >= 131")
 
 # =============================================================================
 # REPORT

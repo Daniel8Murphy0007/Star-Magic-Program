@@ -1643,3 +1643,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 130/2,255 (11 ✓, 119 ⚠). Next: PAPER_127.
 
 ---
+
+## 2026-07-29 — v0.130.0 — BAND 1: PAPER_127
+
+- PAPER_127 wired (⚠ Q-123): Resonant PSP Alfvén boundary.
+  Chains EXACT; falsified code output No. 2 (1.1e12); [UA]
+  fourth value; d_sw definition fork 3 routes; Q-110 annotated.
+- Campaign: 131/2,255 (11 ✓, 120 ⚠). Next: PAPER_128.
+
+---

@@ -1,32 +1,30 @@
-v0.129.0 BAND 1: PAPER_126 wired - M_bh CORRECTION /10 = F_TRZ FIND
+v0.130.0 BAND 1: PAPER_127 wired - ALFVEN GROUNDING + [UA] 4TH VALUE
 
-PAPER_126 UQFF Master Buoyancy: Gaia Sgr A* Calibration
-(OPEN_RULING Q-122):
-  d91b1f6c refinement of EP-06. Canonizes the galactic pair
-  (M_bh = 4.3e6 M_sun, d_g = 2.44e20 m = 7.92 kpc) - resolving
-  PAPER_121's internal fork toward PAPER_110's values, against
-  PAPER_119/120's (4.1e6, 2.55e20). Q-122c asks for the
-  corpus-wide pick (settles Q-117a too).
+PAPER_127 UQFF Resonant Mode: PSP delta_sw Alfven Boundary
+(OPEN_RULING Q-123):
+  d91b1f6c refinement of EP-07. d_sw = 0.01 grounded as the
+  observed Alfven-crossing velocity jump (PSP Encounter 8,
+  2021, r_A ~ 20 R_sun) - the best observational peg d_sw has
+  received. Resonant Mode = super-Alfvenic activation.
 
-  VERIFIED EXACT: d_g error vs GRAVITY 4.31 pct; M_bh error vs
-  EHT 3.51 pct; M/d = 3.50e16 kg/m calibration unit; round-trip
-  2.44e20 x 1.043 = 8.247 kpc (0.37 pct from GRAVITY).
+  VERIFIED EXACT: F_U(r_A) = 0.685 m/s2 (x1.01 = 0.692);
+  omega_res = 3.59e-5 rad/s; t_n = 0.322 days; omega = pi/t_n
+  = 1.13e-4 rad/s; PSP wave-period factor-5 comparison honest.
 
-  SELF-CANCELING DERIVATION (Rule 7): the eps_UA = 4.3 pct
-  "[UA] path compression" verification code literally
-  multiplies AND divides by beta^2/SSq, leaving the observed
-  0.043 untouched; the prose computes 0.653 then swaps to
-  0.043 silently. Calibrated, not derived.
+  FALSIFIED CODE OUTPUT No. 2 (Rule 7): the v_sw prediction
+  block actually outputs 4.39e-7 m/s, not the claimed "~5e5" -
+  off by 1.1e12 (density x g is not an acceleration; even
+  escape form gives 1.38e5). Second falsified output in the
+  d91b1f6c block.
 
-  PRIMITIVE FIND: the M_bh correction "(1 + SSq*beta_i/10)"
-  decomposes as (1 + SSq*beta_i*F_TRZ) - the /10 IS F_TRZ.
-  4.154 x 1.0348 = 4.298 ~ 4.3 (canonical beta: 4.297).
-  Canonization candidate for the [SCm] apparent-mass form.
+  [UA] FOURTH VALUE: 0.0145 = d_sw/F_U - circularly back-
+  solved, joining 1e-19 C / 1e-11 C / 1e-4. The single-[UA]
+  ruling now closes FIVE queue items.
 
-  Garbles logged: abstract 0.348 printed "0.213"; GRAVITY R0
-  dual-quoted (8.13/8.277); footer units nonsense. Block-8
-  literal catch fixed in-flight.
+  D_SW DEFINITION FORK (3 routes): SSq/57 (114) vs F_TRZ^2
+  (Q-110a primitive) vs [UA]*F_U Alfven (here). Strongest
+  observational peg vs strongest primitive peg - ruling picks.
 
-Q-122 queued. Gate 877 assertions 0 failures. Registry 332 rows /
-701 edges / 130 citation ledgers. Wired 130/2,255 (11 clean, 119
-OPEN_RULING). Next: PAPER_127.
+Q-123 queued. Gate 883 assertions 0 failures. Registry 334 rows /
+705 edges / 131 citation ledgers. Wired 131/2,255 (11 clean, 120
+OPEN_RULING). Next: PAPER_128.

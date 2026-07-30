@@ -2152,6 +2152,7 @@ RESOLVED section with the ruling recorded.
   a scope carve-out (d_sw is pre-shock sub-threshold only).
 - **Best-candidate wired:** F_TRZ² primitive route exposed
   alongside the paper's SSq/57; implied alpha_CR pinned.
+- **UPDATE (PAPER_127):** the refinement grounds d_sw = 0.01 as the observed Alfven-crossing velocity jump (PSP E8) via a THIRD route [UA]*F_U - definition fork folded into Q-123c.
 - **Daniel's ruling:** (pending)
 
 ### Q-111 — PAPER_115 EP-09 — crossed ladders + 100x radius slip
@@ -2529,6 +2530,37 @@ RESOLVED section with the ruling recorded.
   currently calibrated; Eddington footer arithmetic EXACT.
 - **Best-candidate wired:** (4.3e6, 2.44e20) as canonical
   pair; F_TRZ decomposition exposed; circularity pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-123 — PAPER_127 Resonant PSP — falsified code No. 2 + [UA] fourth value
+- **Question:** (a) FALSIFIED CODE OUTPUT No. 2 (Rule 7): the
+  sec 3.3 v_sw prediction block actually outputs 4.39e-7 m/s,
+  not the claimed "~5e5" - off by 1.1e12. The formula
+  multiplies a mass density by g (kg/m3 * m/s2 - not an
+  acceleration); even the sensible escape form sqrt(2GM/r_A)
+  gives 1.38e5. Second falsified code output in the d91b1f6c
+  block (after PAPER_122's R^2). Provide the real v_sw chain
+  or drop the code claim.
+  (b) [UA] FOURTH VALUE: [UA] = d_sw/F_U = 0.0145 here -
+  joining 1e-19 C (121 Eq14), 1e-11 C (119), 1e-4 dimensionless
+  (104/121 sec5). AND it is circular: back-solved FROM d_sw,
+  then presented as explaining d_sw. The single-[UA] ruling
+  (Q-060b/Q-100a/Q-117b) now closes FIVE queue items.
+  (c) D_SW DEFINITION FORK (3 routes): SSq/57 (PAPER_114),
+  F_TRZ^2 = 0.01 EXACT (Q-110a primitive candidate),
+  [UA]*F_U at the Alfven point (here). Same 0.01, three
+  stories - the Alfven GROUNDING (observed dv/v ~ 1 pct at
+  PSP E8) is the strongest observational peg; the F_TRZ^2
+  route is the strongest primitive peg. Rule.
+  (d) Sound-speed formula sqrt(gamma*rho/rho) is
+  dimensionless under the radical - broken as printed.
+- **Notable:** prose chains all EXACT (0.685/0.692 m/s2,
+  3.59e-5 rad/s, t_n = 0.322 d, omega = 1.13e-4 rad/s);
+  the Alfven-critical-point-as-[UA]-boundary narrative is
+  the best physical grounding d_sw has received; the PSP
+  factor-5 wave-period comparison is honestly disclosed.
+- **Best-candidate wired:** Alfven grounding + EXACT chains;
+  code falsification and circular [UA] pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
