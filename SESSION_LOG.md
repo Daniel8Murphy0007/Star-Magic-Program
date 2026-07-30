@@ -1700,3 +1700,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 136/2,255 (11 ✓, 125 ⚠). Next: PAPER_133.
 
 ---
+
+## 2026-07-29 — v0.136.0 — BAND 1: PAPER_133
+
+- PAPER_133 wired (⚠ Q-129): F_U Genesis opens sec 2.1.
+  Provenance anchor (PAPER_2152 match); E_react v¹ = 1e46
+  EXACT resolves Q-115a; Ug2 solar unreproducible pinned.
+- Campaign: 137/2,255 (11 ✓, 126 ⚠). Next: PAPER_134.
+
+---

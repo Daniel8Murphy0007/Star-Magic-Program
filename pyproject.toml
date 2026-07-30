@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.135.0"
-description = "UQFF Star-Magic-Program v0.135.0: PAPER_132 wired - Hoyle BEC N_B=3 (geometric SSq sum 7.676 MeV at 0.28 pct; T_c = 1/SSq enhancement; LENR e^SSq = 1.768; clean code No. 2; E_0 back-solved; chi2 asserted without table). CLOSES the d91b1f6c 12-EP block (122-132). Q-128 queued. Wired 136/2255, gate 914/0. Registry 344 rows / 726 edges / 136 ledgers."
+version = "0.136.0"
+description = "UQFF Star-Magic-Program v0.136.0: PAPER_133 wired - F_U Genesis opens sec 2.1 (provenance anchor matching PAPER_2152 Final-Equations bit-for-bit; E_REACT RESOLUTION: v^1 form rho*v/rho_A = 1e46 EXACT resolves Q-115a 43-order break - v^2 is the drift; Ug2 solar 1.18e53 unreproducible). Q-129 queued. Wired 137/2255, gate 920/0. Registry 346 rows / 731 edges / 137 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

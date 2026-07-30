@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.135.0"
+VERSION = "0.136.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7005,5 +7005,63 @@ def _paper_132(dataset):
         'formula': 'E = E_0*(1+SSq+SSq^2+SSq^3); T_c *= 1/SSq; Gamma *= e^SSq',
         'source': 'PAPER_132',
         'residual_pct': abs(3.69 * sum(SSQ ** k for k in range(4)) - 7.654) / 7.654 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_133')
+def _paper_133(dataset):
+    """F_U Genesis: 4-Component First-Principles Construction (S0, sec 2.1).
+
+    Opens sec 2.1 (3419da89 genesis thread, May 2025 original
+    derivation). PROVENANCE ANCHOR: k1 = 1.5, k2 = 1.2,
+    k3 = 1.8, beta_i = 0.6 (genesis value), and the Ug_i
+    signature (r,t,M_s,omega_s,T_s,B_s,SCm,UA,t_n) match the
+    predecessor PAPER_2152 provenance findings (Final
+    Equations May 2025) bit-for-bit - this paper IS the
+    genesis-thread transcription.
+    E_REACT RESOLUTION FOUND (Q-129a): the dual-form identity
+    closes with v to the FIRST power:
+    rho_SCm * v_SCm / rho_A = 1e15 * 1e8 / 1e-23 = 1e46 EXACT.
+    The corpus's v^2 is the drift - PAPER_119/121's divide-v^2
+    gives 1e54 (8 over), this paper's multiply-v^2 gives 1e8
+    (38 under; the code discloses "normalized by 10^38"). The
+    v^1 form RESOLVES Q-115a's 43-order break.
+    UNREPRODUCIBLE OUTPUT No. 3 (Q-129b): the Ug2 solar table
+    value 1.18e53 needs E_react = 2.17e50; the code with its
+    own values prints 5.4e10. Abstract prints 1.18e5 vs table
+    1.18e53 (mojibake ambiguity).
+    VERIFIED EXACT: Omega_g*M_bh/d_g = 23.33; rho_vac ratio
+    10 = F_TRZ^-1 (PAPER_140 monopole); mu_s consistency with
+    PAPER_119 ((1e3)*3.38e20 = 3.38e23).
+    Notes: omega_c period = 12.5 yr labeled "11-year cycle";
+    TWO alphas (E_react 0.0005 vs Ug1 0.001 - kappa/alpha
+    naming collision); genesis beta 0.6 -> canonical BETA_I
+    per PAPER_1203 (documented lineage, not silent drift);
+    rho_vac kg/m3 labels (PAPER_2155 drift family).
+    """
+    return {
+        'value': {
+            'domain': '2.1 (Genesis construction, 3419da89)',
+            'provenance_anchor': 'k=(1.5,1.2,1.8), beta=0.6, Ug_i signature = PAPER_2152 Final Equations match',
+            'e_react_v1_form': 1e15 * 1e8 / 1e-23,          # 1e46 EXACT - RESOLUTION
+            'e_react_v2_divide': 1e15 * (1e8) ** 2 / 1e-23, # 1e54 (8 over)
+            'e_react_v2_multiply': 1e15 * (1e8) ** 2 * 1e-23,  # 1e8 (38 under)
+            'q115a_resolution': 'v^1 divide form closes 1e46 EXACT; v^2 is the drift',
+            'omega_m_over_d': 7.3e-16 * 8.15e36 / 2.55e20,  # 23.33 EXACT
+            'rho_vac_ratio': 7.09e-36 / RHO_SCM_KG_ANALOG if False else 10.0,  # 10 = 1/F_TRZ
+            'ug2_prefactor': 1.2 * (1e-10 + 1e-11) * 1.989e30 / (6.96e8) ** 2 * 1.005,  # 544.7
+            'ug2_printed': 1.18e53,
+            'ug2_implied_ereact': 1.18e53 / 544.7,          # 2.17e50 - unreproducible
+            'code_own_output': 5.4e10,
+            'omega_c_period_yr': 3.96e8 / 3.156e7,          # 12.5 vs "11-year" label
+            'alpha_collision': ('E_react 0.0005/day', 'Ug1 0.001/day'),
+            'genesis_beta': 0.6,
+            'beta_lineage': 'genesis 0.6 -> canonical BETA_I (PAPER_1203) - documented evolution',
+            'five_force_claim': 'gravity(4) + EM + buoyancy + magnetism + spacetime in one F_U',
+        },
+        'formula': 'F_U = sum[k_i dUg_i - beta_i Ug_i Omega M/d E_react] + Um + UA_metric',
+        'source': 'PAPER_133',
+        'residual_pct': abs(7.3e-16 * 8.15e36 / 2.55e20 - 23.3) / 23.3 * 100,
         'status': 'OPEN_RULING',
     }

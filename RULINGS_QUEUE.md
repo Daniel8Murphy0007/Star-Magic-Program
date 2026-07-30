@@ -2312,6 +2312,7 @@ RESOLVED section with the ruling recorded.
   Triadic/Quadratic/MasterBuoyancy additions).
 - **Best-candidate wired:** reference registered; both SSq
   branches and the 709-vs-1e46 fork pinned.
+- **UPDATE (PAPER_133):** RESOLUTION CANDIDATE - the genesis paper's constants close the identity EXACTLY with v^1: rho_SCm*v_SCm/rho_A = 1e15*1e8/1e-23 = 1e46. The v^2 is the drift (Q-129a).
 - **Daniel's ruling:** (pending)
 
 ### Q-116 — PAPER_120 24-System Catalog — B_crit 1e4 fork + third EP-09 variant
@@ -2727,6 +2728,42 @@ RESOLVED section with the ruling recorded.
   12-EP block (PAPER_122-132 all wired).
 - **Best-candidate wired:** fit with back-solve disclosed;
   broken forms and chi2 assertion pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-129 — PAPER_133 F_U Genesis — E_react v^1 resolution + provenance anchor
+- **Question:** (a) E_REACT RESOLUTION (headline): the
+  dual-form identity closes EXACTLY with v to the FIRST
+  power: rho_SCm * v_SCm / rho_A = 1e15 * 1e8 / 1e-23 = 1e46.
+  The corpus's v^2 is the drift - PAPER_119/121's divide-v^2
+  gives 1e54 (8 orders over) and this paper's multiply-v^2
+  gives 1e8 (38 under, "normalized by 10^38" in the code).
+  Canonize E_react = rho_SCm*v_SCm/rho_A (v^1) and mark the
+  v^2 appearances as drift? (Resolves Q-115a. Note the v^1
+  form's units are m/s - the W/m3 label remains open either
+  way.)
+  (b) PROVENANCE ANCHOR (confirmation): k1/k2/k3 = 1.5/1.2/
+  1.8, beta_i = 0.6, and the Ug_i 9-argument signature match
+  the predecessor PAPER_2152 Final-Equations provenance
+  findings bit-for-bit - PAPER_133 is the genesis-thread
+  transcription. Mark it the sec 2.1 provenance root?
+  (genesis beta 0.6 -> canonical 0.6029 is documented
+  lineage, not silent drift.)
+  (c) UNREPRODUCIBLE OUTPUT No. 3: the Ug2 solar table value
+  1.18e53 requires E_react = 2.17e50 (neither 1e46 nor the
+  code's own 1e8); the code as written prints 5.4e10. Also
+  abstract prints 1.18e5 vs table 1.18e53. Provide the Ug2
+  chain.
+  (d) Minor: omega_c period = 12.5 yr labeled "11-year solar
+  cycle"; TWO alphas in one paper (E_react decay 0.0005/day
+  named alpha here = kappa elsewhere; Ug1 alpha = 0.001/day) -
+  naming collision worth a registry note; rho_vac kg/m3
+  labels (PAPER_2155 drift family).
+- **Notable:** Omega_g*M_bh/d_g = 23.33 EXACT; rho ratio 10 =
+  1/F_TRZ EXACT (PAPER_140 monopole); mu_s consistent with
+  PAPER_119; the five-force unification claim is the
+  framework's foundational statement, now provenance-anchored.
+- **Best-candidate wired:** genesis anchor registered; v^1
+  resolution exposed; unreproducible output pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

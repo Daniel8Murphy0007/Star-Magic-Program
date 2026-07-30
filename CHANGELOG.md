@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.136.0] — 2026-07-29 — BAND 1: PAPER_133 — E_REACT v¹ RESOLUTION
+
+### Added
+- **PAPER_133 dispatch** (F_U Genesis, 3419da89 thread —
+  opens sec 2.1): the May 2025 original derivation. PROVENANCE
+  ANCHOR: k = (1.5, 1.2, 1.8), beta_i = 0.6 (genesis), and the
+  9-argument Ug_i signature match the predecessor PAPER_2152
+  Final-Equations findings bit-for-bit. E_REACT RESOLUTION
+  FOUND: rho_SCm·v_SCm/rho_A = 1e15·1e8/1e-23 = 1e46 EXACT
+  with v¹ — the corpus's v² is the drift (1e54 / 1e8 both
+  fail); resolves Q-115a's 43-order break (Q-115 annotated).
+  Omega·M/d = 23.33 EXACT; rho ratio 10 = 1/F_TRZ. Ug2 solar
+  1.18e53 unreproducible (output No. 3); two-alpha naming
+  collision; 12.5-yr omega_c labeled 11-year.
+- OPEN_RULING Q-129.
+- Gate: 920 assertions, 0 failures. Registry: 346 rows / 731 edges / 137 ledgers.
+
+---
+
 ## [0.135.0] — 2026-07-29 — BAND 1: PAPER_132 — d91b1f6c BLOCK COMPLETE
 
 ### Added

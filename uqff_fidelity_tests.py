@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.135.0", "uqff_calculator.VERSION = 0.135.0")
+assert_that(C.VERSION == "0.136.0", "uqff_calculator.VERSION = 0.136.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2004,6 +2004,19 @@ assert_that(abs(_r132['lenr_factor'] - 1.768) < 0.001,
 assert_that(abs(_r132['hoyle_above_threshold_mev'] - 0.380) < 0.001,
             "PAPER_132: Hoyle 0.380 MeV above 3-alpha threshold (E_0 provenance open)")
 assert_that(C.wired_count() >= 136, "wired_count >= 136")
+
+_r133 = C.calc('PAPER_133')['value']
+assert_that(abs(_r133['e_react_v1_form'] - 1e46) < 1e40,
+            "PAPER_133: E_react = rho_SCm*v_SCm/rho_A = 1e46 EXACT with v^1 - RESOLVES Q-115a 43-order break (Q-129a)")
+assert_that(_r133['e_react_v2_divide'] == 1e54 and abs(_r133['e_react_v2_multiply'] - 1e8) < 1,
+            "PAPER_133: both v^2 forms fail (1e54 / 1e8) - v^2 is the drift")
+assert_that(abs(_r133['omega_m_over_d'] - 23.33) < 0.01,
+            "PAPER_133: Omega_g*M_bh/d_g = 23.33 EXACT")
+assert_that(abs(_r133['ug2_implied_ereact'] - 2.17e50) < 0.01e50,
+            "PAPER_133: Ug2 table 1.18e53 unreproducible (needs E_react 2.17e50; code prints 5.4e10) (Q-129b)")
+assert_that(_r133['genesis_beta'] == 0.6,
+            "PAPER_133: genesis beta_i = 0.6 - PAPER_2152 provenance lineage documented")
+assert_that(C.wired_count() >= 137, "wired_count >= 137")
 
 # =============================================================================
 # REPORT

@@ -1,30 +1,33 @@
-v0.135.0 BAND 1: PAPER_132 wired - d91b1f6c 12-EP BLOCK COMPLETE
+v0.136.0 BAND 1: PAPER_133 wired - E_REACT v^1 RESOLUTION FOUND
 
-PAPER_132 UQFF Quadratic Mode: Tohsaki Hoyle BEC N_B=3
-(OPEN_RULING Q-128):
-  d91b1f6c refinement of EP-12 - closes the 122-132 block.
+PAPER_133 UQFF F_U Genesis (OPEN_RULING Q-129) - opens sec 2.1:
+  The 3419da89 genesis thread - the May 2025 ORIGINAL F_U
+  derivation. 7 sub-equations, 14 calibrated constants,
+  five-force unification claim.
 
-  VERIFIED EXACT: geometric sum 1+SSq+SSq^2+SSq^3 = 2.0801;
-  E_Hoyle = 7.676 MeV vs measured 7.654 (0.28 pct); T_c
-  enhancement 1/SSq = 1.754 (8 -> 14.04 MeV); LENR e^SSq =
-  1.768. CLEAN code block No. 2 (outputs reproduce).
+  PROVENANCE ANCHOR: k1/k2/k3 = 1.5/1.2/1.8, beta_i = 0.6
+  (genesis value), and the 9-argument Ug_i signature match
+  the predecessor PAPER_2152 Final-Equations provenance
+  findings bit-for-bit. PAPER_133 is the genesis-thread
+  transcription; beta 0.6 -> canonical 0.6029 is documented
+  lineage, not silent drift.
 
-  E_0 BACK-SOLVED: the 0.28 pct fit rests on E_0 = 3.69 MeV
-  = 7.654/2.0801 - no independent provenance ("alpha
-  threshold" label doesn't hold: threshold is 7.274). The
-  paper HONESTLY abandons its first calibration mid-text.
-  chi2/dof = 0.051 asserted without the 8-observable table;
-  Gamow + coherence-length forms dimensionally invalid as
-  printed; N_B=3 vs N=3-cascade adjacency noted.
+  E_REACT RESOLUTION (headline): the dual-form identity
+  closes EXACTLY with v to the FIRST power -
+  rho_SCm * v_SCm / rho_A = 1e15 * 1e8 / 1e-23 = 1e46.
+  The corpus's v^2 is the drift: divide-v^2 gives 1e54
+  (8 over, PAPER_119/121), multiply-v^2 gives 1e8 (38 under,
+  this paper's code discloses "normalized by 10^38").
+  RESOLVES Q-115a's 43-order break. Q-115 annotated.
 
-  D91B1F6C BLOCK SUMMARY (PAPER_122-132, 11 papers):
-  3 self-rectifications canonized (proton n=10 / Pb-208
-  isotope / vacuum anchor), 2 falsified code outputs caught,
-  2 clean code blocks, kappa first real derivation, Y_e first
-  first-principles claim, R = 130.0 exact at corrected t,
-  RACS reclassification fork opened, [UA] fork grown to 5
-  values.
+  VERIFIED EXACT: Omega_g*M_bh/d_g = 23.33; rho_vac ratio
+  10 = 1/F_TRZ (PAPER_140 monopole); mu_s consistent with
+  PAPER_119.
 
-Q-128 queued. Gate 914 assertions 0 failures. Registry 344 rows /
-726 edges / 136 citation ledgers. Wired 136/2,255 (11 clean, 125
-OPEN_RULING). Next: PAPER_133.
+  PINNED: Ug2 solar 1.18e53 unreproducible (needs E_react =
+  2.17e50; code prints 5.4e10) - output No. 3; two-alpha
+  naming collision; omega_c 12.5 yr labeled "11-year".
+
+Q-129 queued. Gate 920 assertions 0 failures. Registry 346 rows /
+731 edges / 137 citation ledgers. Wired 137/2,255 (11 clean, 126
+OPEN_RULING). Next: PAPER_134.

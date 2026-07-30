@@ -726,3 +726,8 @@ observable,quadratic_hoyle_bec_nb3,paper,PAPER_132,Hoyle BEC fit
 primitive,SSQ,observable,quadratic_hoyle_bec_nb3,geometric sum + T_c + LENR
 observable,quadratic_hoyle_bec_nb3,paper,PAPER_107,EP-12 lineage
 observable,quadratic_hoyle_defects,paper,PAPER_132,asserted chi2
+observable,fu_genesis_construction,paper,PAPER_133,genesis anchor
+primitive,F_TRZ,observable,fu_genesis_construction,rho ratio 10
+observable,ereact_v1_resolution,paper,PAPER_133,v^1 resolution
+observable,ereact_v1_resolution,paper,PAPER_119,resolves 43-order break
+observable,ereact_v1_resolution,paper,PAPER_121,dual-form lineage
