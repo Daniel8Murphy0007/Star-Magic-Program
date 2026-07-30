@@ -777,3 +777,7 @@ observable,starmagic_capstone,paper,PAPER_144,capstone map
 primitive,SSQ,observable,starmagic_capstone,survival-fraction narrative
 primitive,BETA_I,observable,capstone_ub_dominance,amplification factor
 observable,capstone_ub_dominance,paper,PAPER_133,genesis consistency
+observable,muge_cycle3_architecture,paper,PAPER_145,12-term registry
+primitive,F_TRZ,observable,muge_cycle3_architecture,boundary term + Newton limit
+observable,muge_cycle3_architecture,paper,PAPER_140,vacuum-split rectification
+observable,muge_cycle3_forks,paper,PAPER_145,k4 + g-identification

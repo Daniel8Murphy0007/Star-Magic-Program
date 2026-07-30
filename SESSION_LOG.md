@@ -1809,3 +1809,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 148/2,255 (11 ✓, 137 ⚠). Next: PAPER_145.
 
 ---
+
+## 2026-07-30 — v0.148.0 — BAND 1: PAPER_145
+
+- PAPER_145 wired (⚠ Q-141): MUGE Cycle 3 opens §2.2.
+  Vacuum split rectification (No. 12); k4 fork; MUGE-g
+  identification open ahead of the 146-156 run.
+- Campaign: 149/2,255 (11 ✓, 138 ⚠). Next: PAPER_146.
+
+---

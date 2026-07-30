@@ -2967,6 +2967,7 @@ RESOLVED section with the ruling recorded.
   8.9 ORDERS. The predecessor amplification chain (rho_SCm x
   26! x K_MEX -> rho_Lambda) supersedes the direct
   identification. Mark sec 4 superseded?
+- **UPDATE (PAPER_145):** the Cycle 3 constants table SPLITS the two quantities (rho_vac_UA = 6e-27 DE vs Evac_neb = 7.09e-36 J/m3) - conflation resolved in-corpus (self-rectification No. 12, Q-141a).
   (c) F_QUANTUM DUAL VALUE: abstract 1.000000008 (8e-9) vs
   body chain 1.0000049 (4.85e-6) - 600x internal fork (both
   negligible at precision, but one paper carries two
@@ -3106,6 +3107,39 @@ RESOLVED section with the ruling recorded.
   closes with 12 papers wired.
 - **Best-candidate wired:** capstone registered; Ub-dominance
   tension pinned for the doctrine ruling.
+- **Daniel's ruling:** (pending)
+
+### Q-141 — PAPER_145 MUGE Cycle 3 — vacuum split rectification + g-identification
+- **Question:** (a) SELF-RECTIFICATION No. 12 (confirmation):
+  the Cycle 3 constants table SPLITS rho_vac_UA = 6e-27 kg/m3
+  (~ Planck DE 5.96e-27) from Evac_neb = 7.09e-36 J/m3 -
+  resolving PAPER_140's 8.9-order DE conflation (Q-136b), and
+  relabels the vacuum energies J/m3 (predecessor-native
+  direction). Confirm the split as canonical.
+  (b) K4 FORK: Cycle 3 sets k4 = 2.0 vs the genesis k4 = 1.0
+  (PAPER_133/144) - the galactic coupling doubled between
+  sec 2.1 and sec 2.2. Which k4 drives Ug4 corpus-wide?
+  (c) G-IDENTIFICATION OPEN: the 7-system MUGE-g values are
+  physically unmappable as surface gravities - SGR1745
+  1.773e-9 m/s2 sits 21 ORDERS below a real NS surface
+  (1.9e12), and Sgr A* 4.105e29 sits 23 ORDERS above the
+  Newtonian value at the horizon (3.7e6). What physical
+  quantity IS MUGE-g (a correction density? a resonance
+  amplitude?) - the identification decides how PAPER_146-156
+  system papers get wired. Also Westerlund = Tapestry
+  (identical 1.001e27 - parameter clone) and the family
+  scales by /5, /4 steps.
+  (d) Minor: Fsuper = 6.287e-19 ~ 4e at 2 pct (weak
+  candidate); kappa source relabeled "GW170817" here vs
+  PAPER_125's 4LAC derivation - source-attribution tidy-up.
+- **Notable:** DeltaEvac = 6.381e-36 EXACT; the fTRZ->0
+  Newton-recovery limit matches the predecessor dpm_helpers
+  doctrine (GM/r^2 as Step-10 observational projection);
+  the 12-term hierarchy is the sec 2.2 architecture registry
+  for the next 11 papers.
+- **Best-candidate wired:** architecture + constants
+  registered; split rectification credited; forks pinned
+  ahead of the 146-156 wiring run.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

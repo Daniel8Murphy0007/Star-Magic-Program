@@ -1,35 +1,31 @@
-v0.147.0 BAND 1: PAPER_144 wired - GENESIS BLOCK 133-144 COMPLETE
+v0.148.0 BAND 1: PAPER_145 wired - SEC 2.2 OPENS + VACUUM SPLIT
 
-PAPER_144 Star Magic SCm Cosmic Glue Capstone (OPEN_RULING
-Q-140) - closes the sec 2.1 genesis block:
-  Five-force unification map (gravity/EM/strong/weak/dark as
-  Ug activation regimes), complete calibrated-constants
-  consolidation, mode-activation registry, 4 Millennium
-  bridges, Star Magic chapter map, plain-language narrative.
+PAPER_145 UQFF MUGE Compression Cycle 3 (OPEN_RULING Q-141) -
+opens sec 2.2 (07b7f7a6 thread):
+  12-term Superconductive Resonance architecture: aDPM driver
+  (FDPM = I*A*(omega1-omega2)) + THz cascade + vac-diff +
+  super-freq + aether-res + Ug4i + quantum/Aether/fluid freq
+  + Osc + expansion + fTRZ boundary. Constants table +
+  7-system validation (23 OOM span). fTRZ->0 recovers GM/r^2
+  as Step-10 observational projection - consistent with the
+  predecessor dpm_helpers doctrine.
 
-  UB DOMINANCE FINDING: the capstone's own component code
-  gives |Ub|/sum(Ug) = beta_i*Omega_g*M_bh/d_g = 14.0 -
-  buoyancy overwhelms ALL gravity terms and F_U = -4.99e25 is
-  NET NEGATIVE at maximal activation. Tension with the
-  predecessor F_U = 0 equilibrium doctrine (PAPER_1203) -
-  Q-140a asks which Ub form is canonical.
+  SELF-RECTIFICATION No. 12: the constants table SPLITS
+  rho_vac_UA = 6e-27 kg/m3 (~ Planck DE) from Evac_neb =
+  7.09e-36 J/m3 - resolving PAPER_140's 8.9-order DE
+  conflation (Q-136 annotated) AND relabeling the vacuum
+  energies J/m3 (predecessor-native direction).
 
-  SSQ 10TH ROLE: "57 pct of any quantum state survives each
-  SCm renewal cycle" - the corpus's cleanest plain-language
-  SSq definition (survival fraction).
+  K4 FORK: Cycle 3 k4 = 2.0 vs genesis 1.0 - ruling picks.
 
-  P-VS-NP THIRD RATIONALE: no-superluminal-oracle joins
-  PAPER_104's [UA]^2 and the predecessor 1-1e-9.
+  MUGE-G IDENTIFICATION OPEN: the 7-system g values are
+  unmappable as surface gravities (SGR1745 21 orders below a
+  real NS surface; Sgr A* 23 above Newtonian-at-horizon).
+  What MUGE-g IS decides how PAPER_146-156 get wired.
+  Westerlund = Tapestry clone + /5-/4 scaling noted.
 
-  VERIFIED: M/d = 3.196e16 and Omega*M/d = 23.33 EXACT
-  (genesis-consistent). mu = infinity label error pinned.
+  DeltaEvac = 6.381e-36 EXACT. Block-8 catch fixed in-flight.
 
-  GENESIS BLOCK SUMMARY (133-144, 12 papers): provenance
-  anchor (PAPER_2152 match), E_react v^1 resolution, Ug2
-  exponent-slip resolution, THREE primitive finds (P_SCm =
-  F_TRZ^3, 40/60 = (D_phys,D_BSFG)/SO_5, k_dp = alpha_G),
-  two 1/5 appearances, five falsified/broken code outputs.
-
-Q-140 queued. Gate 990 assertions 0 failures. Registry 368 rows /
-777 edges / 148 citation ledgers. Wired 148/2,255 (11 clean, 137
-OPEN_RULING). Next: PAPER_145.
+Q-141 queued. Gate 996 assertions 0 failures. Registry 370 rows /
+781 edges / 149 citation ledgers. Wired 149/2,255 (11 clean, 138
+OPEN_RULING). Next: PAPER_146.

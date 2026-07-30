@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 148 (11 ✓, 137 ⚠ OPEN_RULING)
+- **Wired:** 149 (11 ✓, 138 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2107
+- **Not yet touched:** 2106
 
 ---
 
@@ -687,7 +687,7 @@
 | ⬜ | PAPER_1457 | BUCKET C HUBBLE BUBBLE |
 | ⬜ | PAPER_1458 | BUCKET C SMBH SEEDS |
 | ⬜ | PAPER_1459 | BUCKET C S8 GROWTH |
-| ⬜ | PAPER_145 | UQFF MUGE Compression Cycle3 Unified Framework 12Term Resonance |
+| ⚠ | PAPER_145 | UQFF MUGE Compression Cycle3 Unified Framework 12Term Resonance |
 | ⬜ | PAPER_1460 | BUCKET C LATE ISW |
 | ⬜ | PAPER_1461 | BUCKET C FLATNESS |
 | ⬜ | PAPER_1462 | BUCKET C HORIZON PROBLEM |

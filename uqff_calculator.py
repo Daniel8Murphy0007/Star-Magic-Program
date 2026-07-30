@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.147.0"
+VERSION = "0.148.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7680,5 +7680,60 @@ def _paper_144(dataset):
         'formula': 'F_U = sum dUg_i + dUb + dUm + UA_mn (capstone compact form)',
         'source': 'PAPER_144',
         'residual_pct': abs(7.3e-16 * K - 23.33) / 23.33 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_145')
+def _paper_145(dataset):
+    """MUGE Compression Cycle 3 Architecture (S0, opens sec 2.2).
+
+    12-term Superconductive Resonance registry (aDPM driver
+    FDPM = I*A*(omega1-omega2), THz cascade, vac-diff, super-
+    freq, aether-res, Ug4i, quantum/Aether/fluid freq, Osc,
+    expansion, fTRZ boundary) + constants table + 7-system
+    validation; fTRZ->0 limit recovers GM/r^2 (Newton as
+    Step-10 projection - predecessor dpm_helpers doctrine
+    consistent). DeltaEvac = 6.381e-36 EXACT.
+    SELF-RECTIFICATION No. 12 (Q-141a): the constants table
+    SPLITS rho_vac_UA = 6e-27 kg/m3 (~ Planck DE 5.96e-27)
+    from Evac_neb = 7.09e-36 J/m3 - resolving PAPER_140's
+    8.9-order DE conflation, AND relabels the vacuum energies
+    J/m3 (predecessor-native direction).
+    K4 FORK (Q-141b): Cycle 3 k4 = 2.0 vs genesis k4 = 1.0
+    (133/144) - coupling doubled between sec 2.1 and 2.2.
+    G-IDENTIFICATION OPEN (Q-141c): the 7-system g values are
+    physically unmappable as surface gravities - SGR1745
+    1.773e-9 sits 21 ORDERS below a real NS surface (1.9e12);
+    Sgr A* 4.105e29 sits 23 ORDERS above Newtonian at the
+    horizon (3.7e6). What IS MUGE-g? Also Westerlund =
+    Tapestry (1.001e27 clone) and the family scales by /5,
+    /4 steps.
+    Notes: Fsuper = 6.287e-19 ~ 4e (2 pct, weak candidate);
+    kappa source relabeled "GW170817" vs 125's 4LAC.
+    """
+    return {
+        'value': {
+            'domain': '2.2 (MUGE Cycle 3 architecture)',
+            'n_terms': 12,
+            'delta_evac': 10 * RHO_SCM - RHO_SCM,            # 6.381e-36 EXACT
+            'vacuum_split': 'rho_vac_UA 6e-27 (DE) separated from Evac_neb 7.09e-36 J/m3',
+            'self_rectification': 'No. 12: resolves PAPER_140 DE conflation + J/m3 relabel',
+            'k4_fork': (1.0, 2.0),                           # genesis vs Cycle 3
+            'seven_systems': {'SGR1745': 1.773e-9, 'SgrA': 4.105e29, 'Tapestry': 1.001e27,
+                              'Westerlund2': 1.001e27, 'Pillars': 2.001e26,
+                              'Rings': 5.005e25, 'StudentUniverse': 3.958e14},
+            'ns_surface_real': 1.9e12,
+            'sgra_newtonian_at_rs': 3.7e6,
+            'g_identification_open': 'MUGE-g unmappable to surface gravity (21/23 orders off)',
+            'westerlund_tapestry_clone': True,
+            'scaling_pattern': (5.0, 4.0),
+            'fsuper_4e_ratio': 6.287e-19 / (4 * 1.602e-19),  # 0.981
+            'newton_limit': 'fTRZ->0 recovers GM/r^2 (Step-10 projection, dpm_helpers consistent)',
+            'solvability_claim': '99.9 pct, 0 NaN across 7 systems',
+        },
+        'formula': 'g = aDPM + aTHz + avac_diff + ... + fTRZ (12 terms); FDPM = I*A*(w1-w2)',
+        'source': 'PAPER_145',
+        'residual_pct': abs((10 * RHO_SCM - RHO_SCM) - 6.381e-36) / 6.381e-36 * 100,
         'status': 'OPEN_RULING',
     }

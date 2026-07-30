@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.148.0] — 2026-07-30 — BAND 1: PAPER_145 — §2.2 OPENS, VACUUM SPLIT
+
+### Added
+- **PAPER_145 dispatch** (MUGE Compression Cycle 3, opens sec
+  2.2 / 07b7f7a6 thread): 12-term Superconductive Resonance
+  registry (FDPM driver + cascade), constants table, 7-system
+  validation spanning 23 OOM, fTRZ→0 Newton recovery (Step-10
+  projection — predecessor dpm_helpers consistent). SELF-
+  RECTIFICATION No. 12: the constants table SPLITS rho_vac_UA
+  = 6e-27 (DE) from Evac_neb = 7.09e-36 J/m3 — resolving
+  PAPER_140's 8.9-order conflation (Q-136 annotated) with a
+  J/m3 relabel. K4 FORK (1.0 genesis vs 2.0 Cycle 3). MUGE-g
+  IDENTIFICATION OPEN: system values sit 21/23 orders from
+  physical gravities — the ruling shapes how 146-156 get
+  wired. Block-8 catch fixed in-flight.
+- OPEN_RULING Q-141.
+- Gate: 996 assertions, 0 failures. Registry: 370 rows / 781 edges / 149 ledgers.
+
+---
+
 ## [0.147.0] — 2026-07-30 — BAND 1: PAPER_144 — GENESIS BLOCK COMPLETE
 
 ### Added

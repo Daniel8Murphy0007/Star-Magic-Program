@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.147.0", "uqff_calculator.VERSION = 0.147.0")
+assert_that(C.VERSION == "0.148.0", "uqff_calculator.VERSION = 0.148.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2168,6 +2168,19 @@ assert_that(_r144['f_u_at_max'] < 0,
 assert_that(len(_r144['millennium_bridges']) == 4,
             "PAPER_144: four Millennium bridges registered (P-NP third rationale noted)")
 assert_that(C.wired_count() >= 148, "wired_count >= 148")
+
+_r145 = C.calc('PAPER_145')['value']
+assert_that(_r145['n_terms'] == 12,
+            "PAPER_145: 12-term Cycle 3 architecture registered")
+assert_that(abs(_r145['delta_evac'] - 6.381e-36) < 1e-39,
+            "PAPER_145: DeltaEvac = 6.381e-36 EXACT")
+assert_that('resolves PAPER_140' in _r145['self_rectification'],
+            "PAPER_145: vacuum split resolves 140 DE conflation - self-rectification No. 12 (Q-141a)")
+assert_that(_r145['k4_fork'] == (1.0, 2.0),
+            "PAPER_145: k4 fork genesis 1.0 vs Cycle 3 2.0 pinned (Q-141b)")
+assert_that(_r145['seven_systems']['SGR1745'] < 1e-8 and _r145['seven_systems']['SgrA'] > 1e29,
+            "PAPER_145: MUGE-g identification OPEN - 21/23 orders from physical gravities (Q-141c)")
+assert_that(C.wired_count() >= 149, "wired_count >= 149")
 
 # =============================================================================
 # REPORT

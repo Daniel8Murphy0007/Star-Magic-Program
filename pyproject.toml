@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.147.0"
-description = "UQFF Star-Magic-Program v0.147.0: PAPER_144 wired - Star Magic capstone closes the genesis block 133-144 (five-force map + constants consolidation; UB DOMINANCE finding: |Ub|/Ug = 14, F_U net negative at max activation - F_U=0 doctrine tension; SSq 10th role: 57 pct survival per renewal cycle; P-NP third rationale). Q-140 queued. Wired 148/2255, gate 990/0. Registry 368 rows / 777 edges / 148 ledgers."
+version = "0.148.0"
+description = "UQFF Star-Magic-Program v0.148.0: PAPER_145 wired - MUGE Cycle 3 opens sec 2.2 (12-term resonance registry + 7-system table; SELF-RECTIFICATION No. 12: vacuum split resolves PAPER_140 DE conflation + J/m3 relabel; k4 fork 1.0-vs-2.0; MUGE-g identification OPEN - values 21/23 orders from physical gravities). Q-141 queued. Wired 149/2255, gate 996/0. Registry 370 rows / 781 edges / 149 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
