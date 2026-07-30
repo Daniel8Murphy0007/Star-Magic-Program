@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.130.0"
-description = "UQFF Star-Magic-Program v0.130.0: PAPER_127 wired - Resonant PSP Alfven boundary (d_sw grounded as PSP E8 velocity jump, chains EXACT; FALSIFIED code output No. 2 - 4.4e-7 vs claimed 5e5, 1.1e12 off; [UA] FOURTH value 0.0145 circular; d_sw definition fork now 3 routes). Q-123 queued. Wired 131/2255, gate 883/0. Registry 334 rows / 705 edges / 131 ledgers."
+version = "0.131.0"
+description = "UQFF Star-Magic-Program v0.131.0: PAPER_128 wired - Quadratic DM cascade (VACUUM ANCHOR FIXED at 1 pct from standard - self-rectification No. 11; hop count settled N=3/SSq^3 resolving Q-117c; but the 0.185 anchor IS SSq^3 numerically while cited Read+2014 says 0.40 - circular suspicion; conversions still conflated). Q-124 queued. Wired 132/2255, gate 889/0. Registry 336 rows / 709 edges / 132 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

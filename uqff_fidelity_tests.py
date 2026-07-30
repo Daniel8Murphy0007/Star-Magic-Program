@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.130.0", "uqff_calculator.VERSION = 0.130.0")
+assert_that(C.VERSION == "0.131.0", "uqff_calculator.VERSION = 0.131.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1937,6 +1937,19 @@ assert_that(abs(_r127['ua_fourth_value'] - 0.0145) < 0.0001,
 assert_that(len(_r127['ua_fork_values']) == 4,
             "PAPER_127: [UA] fork now 4 values across corpus")
 assert_that(C.wired_count() >= 131, "wired_count >= 131")
+
+_r128 = C.calc('PAPER_128')['value']
+assert_that(abs(_r128['rho_l_j_m3'] - 5.36e-10) < 0.01e-10,
+            "PAPER_128: vacuum anchor FIXED at 5.36e-10 J/m3 (1 pct from standard) - self-rectification No. 11")
+assert_that(abs(_r128['rho_dm_uqff'] - 1.104e-27) < 0.001e-27,
+            "PAPER_128: rho_DM = rho_L * SSq^3 = 1.104e-27 EXACT; hop count settled N=3")
+assert_that(abs(_r128['ssq_cubed'] - 0.18519) < 0.00001,
+            "PAPER_128: the 'measured' 0.185 GeV/cm3 anchor IS SSq^3 numerically - circular suspicion (Q-124b)")
+assert_that(abs(_r128['empirical_ratio'] - 0.1622) < 0.0001,
+            "PAPER_128: empirical ratio 0.1622 EXACT; residual chains 12.4/14.2 vs printed 12.8")
+assert_that(abs(_r128['n1_baryon_offset'] - 8.13) < 0.01,
+            "PAPER_128: N=1 baryon factor-8 offset honestly disclosed")
+assert_that(C.wired_count() >= 132, "wired_count >= 132")
 
 # =============================================================================
 # REPORT

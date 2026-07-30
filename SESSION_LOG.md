@@ -1652,3 +1652,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 131/2,255 (11 ✓, 120 ⚠). Next: PAPER_128.
 
 ---
+
+## 2026-07-29 — v0.131.0 — BAND 1: PAPER_128
+
+- PAPER_128 wired (⚠ Q-124): Quadratic DM SSq³ cascade.
+  Anchor fixed (No. 11); N=3 settled; circular-anchor
+  suspicion (0.185 = SSq³, Read+2014 says 0.40); Q-114/Q-117
+  annotated.
+- Campaign: 132/2,255 (11 ✓, 121 ⚠). Next: PAPER_129.
+
+---

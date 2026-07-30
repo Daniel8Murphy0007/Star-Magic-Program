@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 131 (11 ✓, 120 ⚠ OPEN_RULING)
+- **Wired:** 132 (11 ✓, 121 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2124
+- **Not yet touched:** 2123
 
 ---
 
@@ -500,7 +500,7 @@
 | ⬜ | PAPER_1287 | HILBERT 8TH PART2 GOLDBACH RIEMANN |
 | ⬜ | PAPER_1288 | HILBERT 16TH LIMIT CYCLES |
 | ⬜ | PAPER_1289 | HILBERT 18TH KEPLER SPHERE PACKING |
-| ⬜ | PAPER_128 | UQFF Quadratic JCAP DarkMatter SSq3 Cascade |
+| ⚠ | PAPER_128 | UQFF Quadratic JCAP DarkMatter SSq3 Cascade |
 | ⬜ | PAPER_1290 | SMALE 1ST RIEMANN |
 | ⬜ | PAPER_1291 | SMALE 2ND JACOBIAN |
 | ⬜ | PAPER_1292 | SMALE 11TH KNOT RECOGNITION |

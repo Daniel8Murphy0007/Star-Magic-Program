@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.130.0"
+VERSION = "0.131.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6736,5 +6736,59 @@ def _paper_127(dataset):
         'formula': 'd_sw = [UA]*F_U at r_A; omega = pi/t_n; t_n = r_A/v_sw',
         'source': 'PAPER_127',
         'residual_pct': abs(FU - 0.685) / 0.685 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_128')
+def _paper_128(dataset):
+    """Quadratic Mode: JCAP DM = rho_L * SSq^3 Cascade (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-08 (PAPER_118).
+    SELF-RECTIFICATION No. 11 (Q-124a): the vacuum anchor is
+    FIXED - rho_L = 5.96e-27 kg/m3 = 5.36e-10 J/m3, within 1
+    pct of the standard Lambda conversion (5.31e-10),
+    correcting PAPER_118's 2x anchor. And the hop count
+    settles at N = 3 with rho_DM = rho_L * SSq^3 - resolving
+    the Q-117c triple (SSq^1/SSq^2/N=3) toward N=3.
+    CIRCULAR-ANCHOR SUSPICION (Q-124b): the "measured" 0.185
+    GeV/cm3 IS SSq^3 = 0.18519 numerically - and the cited
+    Read+2014 actually reports 0.40 GeV/cm3. The anchor
+    appears selected to match the prediction. Real local halo
+    range 0.3-0.5.
+    CONVERSIONS STILL BROKEN (Q-124c): 0.185 GeV/cm3 =
+    3.30e-22 kg/m3 truly; the paper's 9.67e-28 is cosmic-mean
+    scale (local/cosmic conflation persists from 118);
+    0.620 GeV/m3 printed as "0.207 GeV/cm3" (factor-3 slip +
+    1e6 unit); residual printed 12.8 pct vs chains 12.4/14.2
+    (the CODE honestly prints 14.2 with a disclosure note).
+    eps = SSq^4 claim: actual mismatch 21 pct, claimed "12
+    pct match". N=1 baryon factor-8 offset HONESTLY disclosed.
+    SSq^3 now appears TWICE in the corpus audit: here
+    (rho_DM/rho_L claim) and Q-114c (Om_b/Om_DM = SSq^3 at
+    0.16 pct - the tighter identity).
+    """
+    return {
+        'value': {
+            'domain': '1.17 (Quadratic mode, EP-08 refinement)',
+            'rho_l_kg_m3': 5.96e-27,
+            'rho_l_j_m3': 5.96e-27 * 9e16,                  # 5.36e-10 - anchor FIXED
+            'anchor_fix': 'No. 11: within 1 pct of standard 5.31e-10 (118 was 2x)',
+            'hop_count_settled': 'N = 3, rho_DM = rho_L * SSq^3 (resolves Q-117c)',
+            'ssq_cubed': SSQ ** 3,                          # 0.18519
+            'rho_dm_uqff': 5.96e-27 * SSQ ** 3,             # 1.104e-27 EXACT
+            'empirical_ratio': 9.67e-28 / 5.96e-27,         # 0.1622 EXACT
+            'residual_chains': (12.4, 14.2),                # printed 12.8
+            'code_honesty': 'code prints 14.2 with unit-system disclosure note',
+            'circular_anchor': '0.185 GeV/cm3 IS SSq^3 numerically; Read+2014 actually 0.40',
+            'true_0185_kg_m3': 0.185 * 1.783e-27 * 1e6,     # 3.30e-22 (conflation persists)
+            'gev_conversion_slip': '0.620 GeV/m3 printed as 0.207 GeV/cm3',
+            'eps_ssq4_claim': (0.128, SSQ ** 4),            # 21 pct apart, claimed 12
+            'n1_baryon_offset': 3.397e-27 / (0.049 * 8.53e-27),  # 8.1 - honest
+            'ssq3_double_appearance': 'here + Q-114c Om_b/Om_DM (0.16 pct, tighter)',
+        },
+        'formula': 'rho_N = rho_L * SSq^N; N=3 for DM; eps ~ SSq^4 claimed',
+        'source': 'PAPER_128',
+        'residual_pct': abs(5.96e-27 * SSQ ** 3 - 1.104e-27) / 1.104e-27 * 100,
         'status': 'OPEN_RULING',
     }

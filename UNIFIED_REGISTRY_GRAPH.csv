@@ -705,3 +705,7 @@ observable,resonant_psp_alfven,paper,PAPER_127,Alfven boundary
 observable,resonant_psp_alfven,paper,PAPER_114,EP-07 lineage
 observable,resonant_psp_defects,paper,PAPER_127,code falsification
 observable,resonant_psp_defects,paper,PAPER_121,UA fork growth
+observable,quadratic_dm_ssq3_cascade,paper,PAPER_128,N=3 cascade
+primitive,SSQ,observable,quadratic_dm_ssq3_cascade,SSq^3 hop product
+observable,quadratic_dm_ssq3_cascade,paper,PAPER_118,anchor fix
+observable,quadratic_dm_circular_anchor,paper,PAPER_128,circular anchor

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.131.0] — 2026-07-29 — BAND 1: PAPER_128 — ANCHOR FIXED, N=3 SETTLED
+
+### Added
+- **PAPER_128 dispatch** (Quadratic DM SSq³ cascade,
+  d91b1f6c): SELF-RECTIFICATION No. 11 — the vacuum anchor is
+  FIXED (rho_L = 5.96e-27 kg/m3 = 5.36e-10 J/m3, 1% from
+  standard; PAPER_118's was 2x) and the hop count settles at
+  N=3 with rho_DM = rho_L·SSq³ (Q-117c triple resolved).
+  CIRCULAR-ANCHOR SUSPICION: the "measured" 0.185 GeV/cm3 IS
+  SSq³ numerically; cited Read+2014 actually reports 0.40.
+  Conversions still conflated (local/cosmic; GeV/m3-as-cm3);
+  residual 12.8 printed vs 12.4/14.2 chains (code honestly
+  prints 14.2). N=1 baryon factor-8 honest. SSq³ double
+  appearance noted (vs Q-114c's tighter Om_b/Om_DM identity).
+  Q-114/Q-117 annotated.
+- OPEN_RULING Q-124.
+- Gate: 889 assertions, 0 failures. Registry: 336 rows / 709 edges / 132 ledgers.
+
+---
+
 ## [0.130.0] — 2026-07-29 — BAND 1: PAPER_127 — ALFVÉN GROUNDING
 
 ### Added

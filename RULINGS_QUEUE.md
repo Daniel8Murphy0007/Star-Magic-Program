@@ -2275,6 +2275,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** both anchors exposed (paper 1.11e-9
   vs true 5.31e-10) with corrected hop; secondary kept; bonus
   identity registered.
+- **UPDATE (PAPER_128):** refinement FIXES the 2x anchor (5.36e-10, 1 pct from standard) and settles hops at N=3/SSq^3 - but its 0.185 anchor IS SSq^3 numerically (circular suspicion, Q-124b); the (c) identity remains the tighter SSq^3 statement.
 - **Daniel's ruling:** (pending)
 
 ### Q-115 — PAPER_119 7-System Reference — broken dual-form + SSq dual definition
@@ -2375,6 +2376,7 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** 71 equations registered; all forks
   pinned; phi/sqrt3 candidates logged for derivation session.
 - **UPDATE (PAPER_126):** the Master Buoyancy refinement canonizes (4.3e6, 2.44e20) with EXACT error chains - (a) leans 4.3e6; fold into Q-122c galactic-pair ruling.
+- **UPDATE 2 (PAPER_128):** (c) hop-count triple RESOLVED toward N=3 with SSq^3 (Q-124a).
 - **Daniel's ruling:** (pending)
 
 ### Q-118 — PAPER_122 Compressed PDG refinement — Q-108a canonized + falsified code output
@@ -2561,6 +2563,41 @@ RESOLVED section with the ruling recorded.
   factor-5 wave-period comparison is honestly disclosed.
 - **Best-candidate wired:** Alfven grounding + EXACT chains;
   code falsification and circular [UA] pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-124 — PAPER_128 Quadratic DM cascade — anchor fixed but circular
+- **Question:** (a) SELF-RECTIFICATION No. 11 (confirmation):
+  the refinement FIXES PAPER_118's 2x vacuum anchor (rho_L =
+  5.96e-27 kg/m3 = 5.36e-10 J/m3, within 1 pct of standard)
+  AND settles the hop-count triple at N = 3 with rho_DM =
+  rho_L * SSq^3 (Q-117c resolved). Confirm N=3/SSq^3 as the
+  canonical EP-08 form.
+  (b) CIRCULAR-ANCHOR SUSPICION: the "measured" rho_DM =
+  0.185 GeV/cm3 IS SSq^3 = 0.18519 numerically - and the
+  paper's own citation (Read+2014) actually reports 0.40
+  GeV/cm3. Real local-halo range 0.3-0.5. The anchor appears
+  selected to equal the prediction. Provide the actual JCAP
+  2025 source for 0.185, or mark the comparison cosmic-mean
+  (where Om_DM/Om_L = 0.387 vs SSq^3 = 0.185 FAILS by 2x -
+  note the honest cosmic test favors the Q-114c identity
+  Om_b/Om_DM = SSq^3 at 0.16 pct instead).
+  (c) CONVERSIONS: 0.185 GeV/cm3 = 3.30e-22 kg/m3 truly (the
+  paper's 9.67e-28 is cosmic-mean scale - the 118 conflation
+  persists); 0.620 GeV/m3 printed as "0.207 GeV/cm3";
+  residual printed 12.8 pct vs chains 12.4/14.2 (the CODE
+  honestly prints 14.2 with a units note - partial Rule 7
+  compliance); eps = SSq^4 "12 pct match" is actually 21 pct.
+  (d) SSq^3 DOUBLE APPEARANCE: this paper's rho_DM/rho_L
+  claim and the Q-114c audit find (Om_b/Om_DM = SSq^3 at
+  0.16 pct) both put SSq^3 in the cosmological sector - the
+  Q-114c identity is far tighter. Dedicated derivation
+  session should adjudicate WHICH ratio SSq^3 governs.
+- **Notable:** cascade arithmetic EXACT (1.104e-27; empirical
+  ratio 0.1622); N=1 baryon factor-8 offset honestly
+  disclosed; the no-DM-particle claim is the framework's
+  boldest falsifiable position.
+- **Best-candidate wired:** N=3/SSq^3 with fixed anchor;
+  circular-anchor suspicion + conversions pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
