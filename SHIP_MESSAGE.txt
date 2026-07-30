@@ -1,33 +1,33 @@
-v0.155.0 BAND 1: PAPER_152 wired - FORMULA SET FORK No. 3 (ROOT CAUSE)
+v0.156.0 BAND 1: PAPER_153 wired - 2.32 mm THROAT GENUINELY DERIVED
 
-PAPER_152 UQFF Student's Guide Cosmological Baseline
-(OPEN_RULING Q-148) - closes the 7-system suite:
-  Cosmological MUGE floor g = 3.958e14; the 38.4-decade
-  cascade span verifies EXACTLY; term arithmetic EXACT where
-  stated (asuper 6.287e24, aaether_res 1.5e27, aexp 1.308e-9).
+PAPER_153 UQFF Morris-Thorne Wormhole (OPEN_RULING Q-149):
+  UQFF-modified MT metric: shape function b = 0.9 r_0^2/r +
+  0.1 r_0 e^(-k(r-r_0)); SCm as the physical exotic-matter
+  source (1e31 J/m3 exceeds the reduced requirement 13.9x).
 
-  ROOT CAUSE FOUND: this paper's 12-term forms differ from
-  the PAPER_146/147 derivations (afluid = k3 B^2/(4pi rho r)
-  plasma form; asuper direct form; most terms restructured) -
-  THREE formula sets now coexist (derivations, implied
-  tables, 152 forms). This explains every formula-vs-table
-  discrepancy found across the block (Q-143a/145a/146). One
-  canonical 12-term set must be ruled before the MUGE block
-  finalizes.
+  GENUINE DERIVATION (the block's cleanest chain): throat
+  r_0 = sqrt(c^2/(8 pi G rho_SCm v_SCm^2)) = 2.32 mm from
+  SCm parameters alone - NO back-solving. Landmark
+  falsifiable prediction candidate (natural macroscopic
+  wormhole scale). Transit 7.73 ps; throat condition
+  0.9 + 0.1 = 1 EXACT.
 
-  TOTAL-VS-TERMS: the total sits 13 ORDERS below its own
-  largest component (1.5e27), closed by hand-waved
-  normalization - consistent with the Q-147a assigned-values
-  fingerprint.
+  FTRZ NATIVE HOME: at the throat the additive dimensionless
+  fTRZ = 0.1 reads correctly as a TOPOLOGY FRACTION (10 pct
+  topology / 90 pct resonance). SCOPED Q-142a RESOLUTION
+  PROPOSED: fTRZ additive in topology-normalized contexts,
+  multiplicative (1+fTRZ) in acceleration contexts - one
+  doctrine resolving Q-142a AND the 148 refutation. Q-142
+  annotated.
 
-  ALSO: aquantum/afluid 100x + LCDM 10x mantissa-exact slips;
-  Osc t_n from a kappa[/day] x t[Myr] unit mix; H0 = 67.4
-  vs corpus-canonical 70 (PAPER_1573 route); SGR1745 listed
-  twice in the "7-system" table. HONEST: the LCDM comparison
-  is explicitly declared inappropriate - the scoping doctrine
-  keeps cohering with 148/149.
+  PINNED: kappa[/day] applied to (r - r_0) in METERS -
+  dimensionally invalid, own table admits (kappa_length
+  needed); the "cosmological" decay factor e^-kt = 0.08
+  corresponds to t = 13.83 YEARS (the 13.8-Gyr number echoed
+  in years - daily-alpha family); "comparable" 274x stretch;
+  90/10-vs-LCDM hand-wave self-disclosed.
 
-Q-148 queued. Gate 1,038 assertions 0 failures. Registry
-381 rows / 811 edges / 156 ledgers (measured). Wired
-156/2,255 (11 clean, 145 OPEN_RULING). Next: PAPER_153
-(Morris-Thorne wormhole extension).
+Q-149 queued. Gate 1,044 assertions 0 failures. Registry
+383 rows / 815 edges / 157 ledgers (measured). Wired
+157/2,255 (11 clean, 146 OPEN_RULING). Next: PAPER_154
+(Navier-Stokes jets Millennium).

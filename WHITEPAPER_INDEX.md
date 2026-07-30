@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 156 (11 ✓, 145 ⚠ OPEN_RULING)
+- **Wired:** 157 (11 ✓, 146 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2099
+- **Not yet touched:** 2098
 
 ---
 
@@ -775,7 +775,7 @@
 | ⬜ | PAPER_1537 | HEART RATE 70 |
 | ⬜ | PAPER_1538 | BP SYSTOLIC 120 |
 | ⬜ | PAPER_1539 | BP DIASTOLIC 80 |
-| ⬜ | PAPER_153 | UQFF MorrisThorne Wormhole Geodesics UQFF Metric |
+| ⚠ | PAPER_153 | UQFF MorrisThorne Wormhole Geodesics UQFF Metric |
 | ⬜ | PAPER_1540 | BREATHING RATE 16 |
 | ⬜ | PAPER_1541 | KARMAN LINE 100 |
 | ⬜ | PAPER_1542 | CONTINENTAL CRUST 35 |

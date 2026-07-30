@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.155.0"
+VERSION = "0.156.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8119,5 +8119,64 @@ def _paper_152(dataset):
         'formula': '12-term (152 variant forms); cascade table 38 decades',
         'source': 'PAPER_152',
         'residual_pct': abs(_m.log10(4.105e29 / 1.773e-9) - 38.4) / 38.4 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_153')
+def _paper_153(dataset):
+    """Morris-Thorne Wormhole: fTRZ Throat Geometry (S0, sec 2.2).
+
+    UQFF-modified MT metric: shape function b = 0.9 r_0^2/r +
+    0.1 r_0 e^(-kappa(r-r_0)) with the throat condition
+    0.9 + 0.1 = 1 EXACT; SCm as the physical exotic-matter
+    source. GENUINE DERIVATION (the block's cleanest): throat
+    r_0 = sqrt(c^2/(8 pi G rho_SCm v_SCm^2)) = 2.32 mm from
+    SCm parameters alone - no back-solving. VERIFIED EXACT:
+    transit 7.73 ps; exotic-GR 1e31 = rho v^2 by
+    construction; 93 pct reduction arithmetic; SCm margin
+    13.9x.
+    FTRZ NATIVE HOME (Q-149a): the throat is where the
+    additive dimensionless fTRZ READS CORRECTLY (topology
+    fraction: 10 pct topology / 90 pct resonance) -
+    supporting a SCOPED Q-142a resolution: fTRZ additive only
+    in topology-normalized contexts, multiplicative (1+fTRZ)
+    in acceleration contexts.
+    KAPPA SPATIAL REUSE (Q-149b): the shape function applies
+    kappa[/day] to a SPATIAL argument (r - r_0 in meters) -
+    dimensionally invalid; the paper's own table acknowledges
+    ("kappa -> spatial falloff"). A kappa_length is needed.
+    GYR-TO-YR ECHO (Q-149c): the exotic-reduction factor
+    e^-kt = 0.08 corresponds to t = 13.83 YEARS labeled
+    "cosmological time" - the 13.8-Gyr -> 13.8-yr unit echo
+    (daily-alpha family). The 93 pct headline inherits it.
+    Loose: throat aaether 1.5e27 called "comparable" to
+    SgrA* 4.105e29 (274x); 90/10-vs-LCDM hand-wave
+    self-disclosed (x2.2). Predecessor lineage: PAPER_901
+    phonon-modified wormhole geodesics.
+    """
+    import math as _m
+    r0 = _m.sqrt(9e16 / (8 * _m.pi * 6.67e-11 * 1e15 * (1e8) ** 2))
+    return {
+        'value': {
+            'domain': '2.2 (MT wormhole geometry)',
+            'r0_m': r0,                                       # 2.317e-3 GENUINE
+            'r0_mm': r0 * 1000,                               # 2.32 EXACT
+            'derivation_status': 'cleanest genuine derivation in the block - no back-solve',
+            'transit_s': 2.32e-3 / 3e8,                       # 7.73e-12 EXACT
+            'exotic_gr': 9e16 / (8 * _m.pi * 6.67e-11 * 5.37e-6),  # 1e31 EXACT
+            'scm_margin': 1e31 / 7.2e29,                      # 13.9x
+            'throat_condition': 0.9 + 0.1,                    # 1.0 EXACT
+            'ftrz_native_home': 'topology fraction at throat - additive reads correctly here',
+            'q142a_scoped_resolution': 'additive in topology contexts; (1+fTRZ) in acceleration',
+            'kappa_spatial_reuse': 'kappa[/day] applied to meters - dimensionally invalid (own table admits)',
+            'cosmological_time_actual_yr': -_m.log(0.08) / 5e-4 / 365.25,  # 13.83 - Gyr->yr echo
+            'reduction_pct': (1 - 0.9 * 0.08) * 100,          # 92.8
+            'comparable_stretch': 4.105e29 / 1.5e27,          # 274x
+            'predecessor_lineage': 'PAPER_901 phonon wormhole geodesics',
+        },
+        'formula': 'b = 0.9 r0^2/r + 0.1 r0 e^-k(r-r0); r0 = sqrt(c^2/8piG rho v^2)',
+        'source': 'PAPER_153',
+        'residual_pct': abs(r0 * 1000 - 2.32) / 2.32 * 100,
         'status': 'OPEN_RULING',
     }

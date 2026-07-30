@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.156.0] — 2026-07-30 — BAND 1: PAPER_153 — 2.32 mm THROAT DERIVED
+
+### Added
+- **PAPER_153 dispatch** (Morris-Thorne wormhole, sec 2.2):
+  UQFF-modified MT metric with SCm as the physical exotic-
+  matter source. GENUINE DERIVATION (block's cleanest): throat
+  r_0 = sqrt(c²/8πG·rho_SCm·v²) = 2.32 mm from SCm parameters
+  alone — landmark falsifiable prediction candidate. Transit
+  7.73 ps, exotic 1e31, 13.9x SCm margin, throat condition
+  EXACT. FTRZ NATIVE HOME: the throat is where additive
+  dimensionless fTRZ reads correctly (topology fraction) —
+  SCOPED Q-142a resolution proposed (additive in topology
+  contexts, (1+fTRZ) in acceleration; Q-142 annotated).
+  Pinned: kappa[/day] applied to meters (own table admits);
+  "cosmological" decay factor = 13.83 YEARS (Gyr→yr echo);
+  274x "comparable" stretch.
+- OPEN_RULING Q-149.
+- Gate: 1,044 assertions, 0 failures. Registry: 383 rows / 815 edges / 157 ledgers (measured).
+
+---
+
 ## [0.155.0] — 2026-07-30 — BAND 1: PAPER_152 — FORMULA FORK ROOT CAUSE
 
 ### Added

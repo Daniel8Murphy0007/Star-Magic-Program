@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.155.0"
-description = "UQFF Star-Magic-Program v0.155.0: PAPER_152 wired - cosmological baseline closes the 7-system suite (38.4-decade cascade EXACT; FORMULA SET FORK No. 3 found - three coexisting 12-term formula sets are the root cause of all table discrepancies; total 13 orders below own largest term; H0 67.4-vs-70 fork; honest LCDM scope statement). Q-148 queued. Wired 156/2255, gate 1038/0. Registry 381 rows / 811 edges / 156 ledgers (measured)."
+version = "0.156.0"
+description = "UQFF Star-Magic-Program v0.156.0: PAPER_153 wired - MT wormhole (throat r_0 = 2.32 mm GENUINELY derived from SCm parameters - the block cleanest chain, landmark candidate; fTRZ NATIVE HOME found at the throat - scoped Q-142a resolution proposed; kappa spatial reuse + 13.8-Gyr-to-yr echo pinned). Q-149 queued. Wired 157/2255, gate 1044/0. Registry 383 rows / 815 edges / 157 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

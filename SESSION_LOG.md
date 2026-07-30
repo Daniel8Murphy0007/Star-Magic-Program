@@ -1884,3 +1884,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 156/2,255 (11 ✓, 145 ⚠). Next: PAPER_153.
 
 ---
+
+## 2026-07-30 — v0.156.0 — BAND 1: PAPER_153
+
+- PAPER_153 wired (⚠ Q-149): MT wormhole. r_0 = 2.32 mm
+  genuine derivation (landmark candidate); fTRZ native home +
+  scoped doctrine proposed (Q-142 annotated); kappa spatial
+  reuse + Gyr-yr echo pinned.
+- Campaign: 157/2,255 (11 ✓, 146 ⚠). Next: PAPER_154.
+
+---

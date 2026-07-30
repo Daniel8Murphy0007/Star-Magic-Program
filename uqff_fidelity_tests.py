@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.155.0", "uqff_calculator.VERSION = 0.155.0")
+assert_that(C.VERSION == "0.156.0", "uqff_calculator.VERSION = 0.156.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2272,6 +2272,19 @@ assert_that('differ from 146/147' in _r152['formula_fork_no3'],
 assert_that(_r152['h0_fork'] == (67.4, 70),
             "PAPER_152: H0 fork 67.4-vs-70 pinned (predecessor canonized 70)")
 assert_that(C.wired_count() >= 156, "wired_count >= 156")
+
+_r153 = C.calc('PAPER_153')['value']
+assert_that(abs(_r153['r0_mm'] - 2.32) < 0.01,
+            "PAPER_153: throat r_0 = 2.32 mm GENUINELY derived from SCm parameters (block's cleanest)")
+assert_that(abs(_r153['transit_s'] - 7.73e-12) < 0.01e-12,
+            "PAPER_153: transit 7.73 ps EXACT")
+assert_that(_r153['throat_condition'] == 1.0,
+            "PAPER_153: throat condition 0.9 + 0.1 = 1 EXACT; fTRZ native home (topology fraction) (Q-149a)")
+assert_that(abs(_r153['cosmological_time_actual_yr'] - 13.83) < 0.01,
+            "PAPER_153: 'cosmological' decay factor = 13.83 YEARS - Gyr-to-yr echo (Q-149c)")
+assert_that(abs(_r153['scm_margin'] - 13.9) < 0.1,
+            "PAPER_153: SCm exceeds reduced exotic requirement 13.9x - self-consistency chain")
+assert_that(C.wired_count() >= 157, "wired_count >= 157")
 
 # =============================================================================
 # REPORT

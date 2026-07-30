@@ -3152,6 +3152,7 @@ RESOLVED section with the ruling recorded.
   deviation from GR" and the fTRZ->0 Newton recovery both
   imply a (1+fTRZ) factor). Which form is canonical?
   (UPDATE PAPER_148: the SGR1745 table REFUTES the additive form empirically - fTRZ would be 5.6e7x the total; Q-144a.)
+  (UPDATE 2 PAPER_153: SCOPED RESOLUTION proposed - additive in topology-normalized contexts (throat shape function reads correctly), multiplicative (1+fTRZ) in acceleration contexts; Q-149a.)
   (Extends the Q-135c MUGE dimensional-family ruling.) Also
   the claim that the 10 pct deviation is "consistent with
   the 40/60 bridge" is internally inconsistent (10 != 40).
@@ -3375,6 +3376,41 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** baseline + cascade registered;
   the three-formula-set root cause pinned as the block's
   closing finding.
+- **Daniel's ruling:** (pending)
+
+### Q-149 — PAPER_153 MT Wormhole — 2.32 mm genuine derivation + fTRZ native home
+- **Question:** (a) FTRZ NATIVE HOME (scoped Q-142a
+  resolution candidate): at the wormhole throat the additive
+  dimensionless fTRZ = 0.1 READS CORRECTLY - a topology
+  fraction (10 pct topology / 90 pct resonance in the shape
+  function, throat condition 0.9 + 0.1 = 1 EXACT). Proposed
+  scoped resolution: fTRZ enters ADDITIVELY in topology-
+  normalized contexts (shape functions, fractions) and
+  MULTIPLICATIVELY as (1+fTRZ) in acceleration contexts
+  (resolving Q-142a + the 148 refutation in one doctrine).
+  Confirm?
+  (b) KAPPA SPATIAL REUSE: the shape function applies
+  kappa[/day] to (r - r_0) in METERS - dimensionally invalid
+  (the paper's own predictions table admits the temporal-to-
+  spatial reuse). A kappa_length constant is needed for the
+  metric to be well-defined.
+  (c) GYR-TO-YR ECHO: the exotic-reduction factor e^-kt =
+  0.08 corresponds to t = 13.83 YEARS, labeled "cosmological
+  time" - the 13.8-Gyr number echoed in years (daily-alpha
+  family). The 93 pct reduction headline inherits it.
+  (d) The throat prediction r_0 = 2.32 mm is GENUINELY
+  derived from SCm parameters (c^2/8piG rho v^2 - no
+  back-solving, the block's cleanest chain) - canonize as a
+  falsifiable UQFF landmark prediction (natural macroscopic
+  wormhole scale)?
+- **Notable:** transit 7.73 ps EXACT; exotic-GR 1e31 = rho
+  v^2 by construction (self-consistent); SCm margin 13.9x;
+  predecessor PAPER_901 (phonon wormhole geodesics) lineage;
+  "comparable" 274x stretch and the 90/10-vs-LCDM x2.2
+  hand-wave are self-disclosed.
+- **Best-candidate wired:** throat derivation as landmark;
+  scoped fTRZ doctrine proposed; kappa reuse + Gyr echo
+  pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

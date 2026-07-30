@@ -810,3 +810,7 @@ observable,students_guide_baseline,paper,PAPER_152,cosmological floor
 observable,muge_formula_set_fork,paper,PAPER_152,formula fork No. 3
 observable,muge_formula_set_fork,paper,PAPER_146,derivation clash
 observable,muge_formula_set_fork,paper,PAPER_147,cascade clash
+observable,mt_wormhole_throat,paper,PAPER_153,throat derivation
+primitive,F_TRZ,observable,ftrz_native_home,topology fraction
+observable,ftrz_native_home,paper,PAPER_148,Q-142a scoped resolution
+primitive,KAPPA_PER_DAY,observable,ftrz_native_home,spatial reuse flag
