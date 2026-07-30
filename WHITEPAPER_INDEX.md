@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 126 (11 ✓, 115 ⚠ OPEN_RULING)
+- **Wired:** 127 (11 ✓, 116 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2129
+- **Not yet touched:** 2128
 
 ---
 
@@ -445,7 +445,7 @@
 | ⬜ | PAPER_1237 | EHT Shadow M87 SgrA Combined |
 | ⬜ | PAPER_1238 | LIGO Ringdown Multi Mode Spectrum |
 | ⬜ | PAPER_1239 | NANOGrav 15yr SGWB |
-| ⬜ | PAPER_123 | UQFF SubQuantum ATLAS LHC Virtual Quark n4 |
+| ⚠ | PAPER_123 | UQFF SubQuantum ATLAS LHC Virtual Quark n4 |
 | ⬜ | PAPER_1240 | JWST z14 R26 Growth Factor |
 | ⬜ | PAPER_1241 | GOLDBACH CONJECTURE |
 | ⬜ | PAPER_1242 | TWIN PRIME CONJECTURE |

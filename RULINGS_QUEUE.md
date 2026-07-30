@@ -2403,6 +2403,41 @@ RESOLVED section with the ruling recorded.
   code defect + hop-claim failure pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-119 — PAPER_123 Sub-Quantum n=4.20 — dn is the eV-to-J mantissa
+- **Question:** (a) UNIT-CONVERSION ARTIFACT (headline): the
+  "universal [SCm] binding signature dn ~ 0.20" equals
+  log10(1.602) = 0.20466 - the eV-to-J conversion mantissa.
+  Both EP-03 (1 keV) and EP-04 (10 MeV) anchors are ROUND
+  numbers in eV, so their fractional ladder positions are
+  IDENTICALLY 0.2047 (real values 0.20412 / 0.20471 - 0.0006
+  apart, not the paper's constructed 0.20 vs 0.21). The sec
+  4.1 "nuclear [SCm] 5 pct enhancement" derivation is built on
+  that rounding. ANY round-eV energy lands at fractional
+  0.2047 on this ladder. Rule on whether dn ~ 0.20 carries
+  physics or is anchor-choice artifact.
+  (b) WINDING-VS-ANCHOR EXCLUSIVITY: dn = 1/5 = 2/SO_five
+  EXACT is a clean primitive candidate (5-fold [UA] vortex
+  winding), but 1/5 != log10(1.602) - the mismatch IS the
+  0.989-vs-1.000 keV residual. Either the winding number is
+  physics (anchor becomes 0.989 keV) or the anchor is 1.000
+  keV (dn becomes the conversion mantissa). Cannot be both -
+  pick.
+  (c) Q-112a PARTIALLY ANSWERED: derivation direction is now
+  inverted (dn input -> keV output), and the paper honestly
+  discloses its failed rho-ratio chain (3.08e-14). The
+  Lambda = 30 TeV connection remains underived.
+  (d) Labels: alpha_s ~ 0.12 quoted "at 1 keV" is the
+  M_Z-scale value (QCD nonperturbative at keV); omega_g
+  printed 7.3e-6 vs corpus 7.3e-16 (exponent mojibake).
+- **Notable:** the 10^4.20 chain verifies EXACT (1.585e-16 J
+  = 0.989 keV); the failed-chain disclosure is the corpus's
+  most honest self-correction passage so far; confinement-as-
+  level-hopping (n=4 unstable -> n>=6 integer) is a clean
+  physical narrative.
+- **Best-candidate wired:** both dn routes exposed with the
+  exclusivity pinned; artifact finding registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

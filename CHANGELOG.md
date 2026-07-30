@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.126.0] — 2026-07-29 — BAND 1: PAPER_123 — dn = log10(1.602) ARTIFACT
+
+### Added
+- **PAPER_123 dispatch** (Sub-Quantum ATLAS n=4.20, d91b1f6c):
+  the 1-keV anchor now derived via winding number dn = 1/5 =
+  2/SO_five EXACT → E = 1.585e-16 J = 0.989 keV (chain EXACT;
+  Q-112a partially answered; failed rho-ratio chain honestly
+  disclosed). ARTIFACT FOUND: the "universal dn ~ 0.20 [SCm]
+  binding signature" equals log10(1.602) — the eV-to-J
+  conversion mantissa. EP-03/EP-04 round-eV anchors land
+  identically at 0.2047 (0.0006 apart, not 0.20-vs-0.21); the
+  nuclear-enhancement story is a rounding artifact. Winding-
+  vs-anchor exclusivity pinned: 1/5 ≠ log10(1.602) and the
+  mismatch IS the 0.989-vs-1.000 keV residual.
+- OPEN_RULING Q-119. Block-8 catch fixed (RHO_SCM symbol).
+- Gate: 860 assertions, 0 failures. Registry: 326 rows / 687 edges / 127 ledgers.
+
+---
+
 ## [0.125.0] — 2026-07-29 — BAND 1: PAPER_122 — SELF-RECTIFICATION No. 9
 
 ### Added

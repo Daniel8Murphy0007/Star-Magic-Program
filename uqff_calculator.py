@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.125.0"
+VERSION = "0.126.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6455,5 +6455,61 @@ def _paper_122(dataset):
         'formula': 'E_n = 1e-20 * 10^n; n = log10(E)+20; intra-level SSq spacing',
         'source': 'PAPER_122',
         'residual_pct': abs((_m.log10(1.50e-10) + 20) - 10.2) / 10.2 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_123')
+def _paper_123(dataset):
+    """Compressed Sub-Quantum: ATLAS Virtual Quark n=4.20 (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-03 (PAPER_116): the 1-keV anchor
+    now gets a claimed derivation - topological winding number
+    dn = 1/5 = 0.20 (5-fold [UA] vortex) -> E = E_0*10^4.20 =
+    1.585e-16 J = 0.989 keV. Chain EXACT. Derivation direction
+    INVERTED vs 116 (dn now input, keV output) - partially
+    answers Q-112a. The paper HONESTLY discloses its failed
+    first chain (rho ratio route -> 3.08e-14).
+    UNIT-CONVERSION ARTIFACT FOUND (Q-119a): the "universal
+    [SCm] binding signature dn ~ 0.20" is log10(1.602) =
+    0.20466 - the eV-to-J conversion mantissa. Both EP-03
+    (1 keV) and EP-04 (10 MeV) anchors are ROUND numbers in
+    eV, so their fractional levels are IDENTICALLY 0.2047
+    (real values 0.20412 vs 0.20471 - 0.0006 apart, NOT the
+    paper's constructed 0.20-vs-0.21). The sec 4.1 "5 pct
+    nuclear [SCm] enhancement" story is a rounding artifact.
+    WINDING PRIMITIVE CANDIDATE (Q-119b): dn = 1/5 = 2/SO_five
+    EXACT is clean - but 1/5 != log10(1.602), and that
+    mismatch IS the 0.989-vs-1.000 keV residual. Either the
+    winding number is the physics (and the anchor is 0.989
+    keV), or the anchor is 1.000 keV (and dn is the conversion
+    mantissa) - cannot be both.
+    Physics-label note: alpha_s ~ 0.12 quoted "at 1 keV" is
+    the M_Z-scale value (QCD nonperturbative at keV).
+    omega_g printed 7.3e-6 (sec 3.1) vs corpus 7.3e-16 -
+    1e10 exponent mojibake.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.17 (Compressed sub-quantum, EP-03 refinement)',
+            'e_virtual_j': 1e-20 * 10 ** 4.20,             # 1.585e-16 EXACT
+            'e_virtual_kev': 1e-20 * 10 ** 4.20 / 1.602e-16,  # 0.989 EXACT
+            'dn_winding': 1 / 5,                            # 0.20 EXACT = 2/SO_five
+            'dn_primitive_route': '2/SO_five = 0.2 EXACT',
+            'log10_1602': _m.log10(1.602),                  # 0.20466 - the artifact
+            'ep03_real_dn': _m.log10(1.6e4) - 4,            # 0.20412
+            'ep04_real_dn': _m.log10(1.602176634e8) - 8,    # 0.20471
+            'real_dn_gap': abs((_m.log10(1.6e4) - 4) - (_m.log10(1.602176634e8) - 8)),  # 0.0006
+            'artifact_finding': 'dn ~ 0.2047 = log10(1.602) eV-to-J mantissa; round-eV anchors',
+            'nuclear_enhancement_claim': '0.21 = 0.20 x 1.05 - rounding artifact',
+            'failed_chain_disclosed': RHO_SCM / 1e-23 * 0.434,  # 3.08e-14 honest
+            'winding_vs_artifact_residual': 10 ** (0.2 - _m.log10(1.602)),  # 0.9893
+            'q112a_status': 'partially answered - derivation direction inverted',
+            'alpha_s_label_issue': 'M_Z-scale 0.12 quoted at keV (nonperturbative)',
+        },
+        'formula': 'E = E_0*10^(4 + 1/5); dn candidates: 2/SO_five vs log10(1.602)',
+        'source': 'PAPER_123',
+        'residual_pct': abs(1e-20 * 10 ** 4.20 / 1.602e-16 - 0.989) / 0.989 * 100,
         'status': 'OPEN_RULING',
     }

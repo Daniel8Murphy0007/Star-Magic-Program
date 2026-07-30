@@ -1,30 +1,31 @@
-v0.125.0 BAND 1: PAPER_122 wired - SELF-RECTIFICATION No. 9
+v0.126.0 BAND 1: PAPER_123 wired - dn = log10(1.602) ARTIFACT FOUND
 
-PAPER_122 UQFF Compressed Mode: PDG 241-Particle Ladder,
-d91b1f6c refinement (OPEN_RULING Q-118):
+PAPER_123 UQFF Sub-Quantum: ATLAS Virtual Quark n=4.20
+(OPEN_RULING Q-119):
+  d91b1f6c refinement of EP-03: the 1-keV anchor now DERIVED
+  via topological winding number dn = 1/5 = 2/SO_five EXACT
+  (5-fold [UA] vortex) -> E = E_0*10^4.20 = 1.585e-16 J =
+  0.989 keV. Chain EXACT. Q-112a partially answered
+  (derivation direction inverted). The paper honestly
+  discloses its failed rho-ratio first chain.
 
-  SELF-RECTIFICATION No. 9: this paper EXPLICITLY assigns
-  proton n = 10 (sec 3.1: log10(1.5e-10)+20 = 10.2) and pion
-  n = 9 - canonizing the Q-108a mid-band correction found in
-  PAPER_112's audit. Three corpus voices now agree hadrons sit
-  at n = 9-10 (PAPER_116 hadronic row, PAPER_122 explicit,
-  audit chain). The charter's self-rectification doctrine is
-  working exactly as designed. Q-108 annotated - suggest
-  RESOLVED-BY-CORPUS.
+  UNIT-CONVERSION ARTIFACT (headline): the "universal [SCm]
+  binding signature dn ~ 0.20" equals log10(1.602) = 0.20466 -
+  the eV-to-J conversion mantissa. EP-03 (1 keV) and EP-04
+  (10 MeV) anchors are ROUND numbers in eV, so their
+  fractional ladder positions are IDENTICALLY 0.2047 (real
+  gap 0.0006, not the constructed 0.20-vs-0.21). The sec 4.1
+  "5 pct nuclear enhancement" derivation is rounding. ANY
+  round-eV energy lands at fractional 0.2047 on this ladder.
 
-  CODE-OUTPUT FALSIFIED (Rule 7): the paper's own numpy block,
-  run VERBATIM, outputs R^2 = 0.468 - not the printed
-  "0.9527". Linear-space R^2 is dominated by the n=12 cluster.
-  The 4th code energy 8.19e-12 J = 51.1 MeV matches no PDG
-  particle. Fit-statistic ruling requested.
+  EXCLUSIVITY PINNED: winding 1/5 != log10(1.602), and the
+  mismatch IS the 0.989-vs-1.000 keV residual. Either winding
+  is physics (anchor 0.989 keV) or the anchor is 1 keV (dn is
+  the mantissa) - ruling picks.
 
-  HIGGS FACTOR-2: E_H = 2.01 x E_12 observation is real, but
-  the "2-hop [SSq]" attribution fails (SSq^-2 = 3.08 != 2;
-  actual 1.24 hops). Note 2 = D_phys/2 primitive candidate.
+  Block-8 banned-literal catch fixed in-flight (RHO_SCM
+  symbol). Labels: alpha_s at keV, omega_g exponent mojibake.
 
-  Minor: electron n=6 anomalous (chain 6.91 -> 7); pion energy
-  2.41e-11 vs true 2.163e-11 (11 pct); 089-footer recurs.
-
-Q-118 queued. Gate 854 assertions 0 failures. Registry 324 rows /
-682 edges / 126 citation ledgers. Wired 126/2,255 (11 clean, 115
-OPEN_RULING). Next: PAPER_123.
+Q-119 queued. Gate 860 assertions 0 failures. Registry 326 rows /
+687 edges / 127 citation ledgers. Wired 127/2,255 (11 clean, 116
+OPEN_RULING). Next: PAPER_124.

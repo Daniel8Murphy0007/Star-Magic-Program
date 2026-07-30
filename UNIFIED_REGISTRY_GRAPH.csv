@@ -682,3 +682,8 @@ observable,compressed_pdg_refinement,paper,PAPER_122,EP-02 refinement
 observable,compressed_pdg_refinement,paper,PAPER_112,supersedes mid-band
 primitive,SSQ,observable,compressed_pdg_code_defect,2-hop claim fails
 observable,compressed_pdg_code_defect,paper,PAPER_122,code defect
+observable,subquantum_n420_winding,paper,PAPER_123,winding derivation
+observable,subquantum_n420_winding,paper,PAPER_116,Q-112a partial answer
+primitive,SO_FIVE,observable,subquantum_n420_winding,2/SO_five candidate
+observable,dn_unit_conversion_artifact,paper,PAPER_123,artifact finding
+observable,dn_unit_conversion_artifact,paper,PAPER_117,EP-04 same artifact

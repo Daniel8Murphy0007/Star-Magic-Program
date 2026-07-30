@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.125.0", "uqff_calculator.VERSION = 0.125.0")
+assert_that(C.VERSION == "0.126.0", "uqff_calculator.VERSION = 0.126.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1874,6 +1874,19 @@ assert_that(abs(_r122['ssq_2hop_claim'] - 3.08) < 0.01 and abs(_r122['higgs_actu
 assert_that(abs(_r122['higgs_factor2'] - 2.01) < 0.01,
             "PAPER_122: E_H = 2.01 x E_12 factor-2 observation real")
 assert_that(C.wired_count() >= 126, "wired_count >= 126")
+
+_r123 = C.calc('PAPER_123')['value']
+assert_that(abs(_r123['e_virtual_kev'] - 0.989) < 0.001,
+            "PAPER_123: E_0*10^4.20 = 0.989 keV chain EXACT")
+assert_that(abs(_r123['dn_winding'] - 0.2) < 1e-15 and abs(_r123['dn_winding'] - 2 / 10) < 1e-15,
+            "PAPER_123: winding dn = 1/5 = 2/SO_five EXACT primitive candidate (Q-119b)")
+assert_that(abs(_r123['log10_1602'] - 0.20466) < 0.00001,
+            "PAPER_123: dn ~ 0.2047 = log10(1.602) eV-to-J mantissa - unit-conversion artifact (Q-119a)")
+assert_that(_r123['real_dn_gap'] < 0.001,
+            "PAPER_123: EP-03/EP-04 real dn identical to 0.0006 - the 0.20-vs-0.21 story is rounding")
+assert_that(abs(_r123['winding_vs_artifact_residual'] - 0.9893) < 0.0001,
+            "PAPER_123: 0.989-vs-1.000 keV residual IS the winding-vs-mantissa mismatch")
+assert_that(C.wired_count() >= 127, "wired_count >= 127")
 
 # =============================================================================
 # REPORT

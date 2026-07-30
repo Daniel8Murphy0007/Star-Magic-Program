@@ -1603,3 +1603,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 126/2,255 (11 ✓, 115 ⚠). Next: PAPER_123.
 
 ---
+
+## 2026-07-29 — v0.126.0 — BAND 1: PAPER_123
+
+- PAPER_123 wired (⚠ Q-119): sub-quantum n=4.20. Winding
+  1/5 = 2/SO_five derives 0.989 keV EXACT; dn ~ 0.20 exposed
+  as log10(1.602) unit-conversion artifact; exclusivity
+  pinned. Block-8 literal catch fixed.
+- Campaign: 127/2,255 (11 ✓, 116 ⚠). Next: PAPER_124.
+
+---
