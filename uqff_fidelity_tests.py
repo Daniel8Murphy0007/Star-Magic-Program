@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.132.0", "uqff_calculator.VERSION = 0.132.0")
+assert_that(C.VERSION == "0.133.0", "uqff_calculator.VERSION = 0.133.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1963,6 +1963,19 @@ assert_that(_r129['n_crossings'] == 13 and 26 // 2 == 13,
 assert_that(abs(_r129['beta_app_chain'] - 3.60) < 0.01,
             "PAPER_129: beta_app = 3.60c chain EXACT")
 assert_that(C.wired_count() >= 133, "wired_count >= 133")
+
+_r130 = C.calc('PAPER_130')['value']
+assert_that(abs(_r130['e_nu_peak_pev'] - 0.061) < 0.001,
+            "PAPER_130: E_nu peak = 0.061 PeV EXACT (< 0.1 PeV bound)")
+assert_that(abs(_r130['inversion_beta'] - 0.600) < 0.001,
+            "PAPER_130: IceCube inversion beta_i = 0.600 EXACT (clean code block)")
+assert_that(_r130['precision_at_canonical_pct'] < _r130['precision_at_061_pct'],
+            "PAPER_130: canonical BETA_I improves the fit 1.64 -> 0.48 pct (PAPER_1203 auto-correction strengthens)")
+assert_that(_r130['peak_at_1e16_pev'] > 0.1,
+            "PAPER_130: p_max internal fork - at Eq29's 1e16 the peak FAILS the bound; calibration needs 1e15 (Q-126b)")
+assert_that(abs(_r130['degeneracy_pct'] - 22) < 0.1,
+            "PAPER_130: UQFF net 0.061 vs standard 0.05 - 22 pct degeneracy noted (Q-126c)")
+assert_that(C.wired_count() >= 134, "wired_count >= 134")
 
 # =============================================================================
 # REPORT

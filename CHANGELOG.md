@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.133.0] — 2026-07-29 — BAND 1: PAPER_130 — CANONICAL β IMPROVES
+
+### Added
+- **PAPER_130 dispatch** (IceCube beta_i CRP calibration,
+  d91b1f6c): E_nu = beta_i·p_max·f_pion = 0.061 PeV EXACT;
+  inversion 0.600 at 1.6% — FIRST fully clean code block in
+  the d91b1f6c set (reproduces verbatim). Canonical BETA_I
+  improves the fit to 0.48% (PAPER_1203 auto-correction
+  strengthens). P_MAX INTERNAL FORK: Eq29 says 1e16 but the
+  calibration needs 1e15 (at 1e16 the peak FAILS the bound —
+  factor 10 decides pass/fail). 22% degeneracy with standard
+  p-gamma kinematics noted (needs independent signature).
+  Spectral 2.0-vs-2.37 gap asserted. beta_i tri-domain claim
+  explicit — Q-104 annotated. Q-105 header restored after an
+  annotation-script slip (verified).
+- OPEN_RULING Q-126.
+- Gate: 901 assertions, 0 failures. Registry: 340 rows / 717 edges / 134 ledgers.
+
+---
+
 ## [0.132.0] — 2026-07-29 — BAND 1: PAPER_129 — R = 130.0 EXACT AT CORRECTED t
 
 ### Added

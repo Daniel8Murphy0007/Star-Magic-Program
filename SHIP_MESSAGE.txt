@@ -1,31 +1,32 @@
-v0.132.0 BAND 1: PAPER_129 wired - R = 130.0 EXACT AT CORRECTED t
+v0.133.0 BAND 1: PAPER_130 wired - CANONICAL BETA IMPROVES ICECUBE FIT
 
-PAPER_129 UQFF Triadic Mode: 3C273 Negative Time (OPEN_RULING
-Q-125):
-  d91b1f6c refinement of EP-09 - FOURTH mechanism variant:
-  interference form R = |2/(1+cos(pi t_n))|^2 with NEGATIVE
-  counter-jet time (anti-phase [UA] destructive interference).
+PAPER_130 UQFF Buoyancy+CRP: IceCube beta_i Calibration
+(OPEN_RULING Q-126):
+  d91b1f6c refinement of EP-10.
 
-  DOUBLE ERROR CORRECTED: the back-solve requires cos(pi t_-)
-  = -0.8246; the paper dropped the sign AND divided 34.5 deg
-  by 360 (printing t_- = -0.10). Corrected |t_-| = 0.809
-  gives R = 130.0 EXACT (exact solve) - the FIRST EP-09
-  variant that reproduces the observation from a single
-  closed form. At the printed -0.10 the formula gives 1.05
-  (the paper's own code shows it, honestly printing
-  components without asserting a match).
+  VERIFIED EXACT: E_nu peak = beta_i * p_max * f_pion = 0.061
+  PeV (< 0.1 PeV bound); IceCube inversion beta_i = 0.600 at
+  1.6 pct. FIRST fully clean code block in the d91b1f6c set -
+  outputs reproduce verbatim.
 
-  N = 13 PRIMITIVE: 13 zero-crossings = 13 VLBI knots, and
-  N = D_crit/2 = 13 EXACT - predecessor halving-series
-  (PAPER_2138) standing. Negative-time physicality consistent
-  with predecessor PAPER_597 dual-existence.
+  CANONICAL BETA IMPROVES: at BETA_I (PAPER_1203) the
+  inversion error drops 1.64 -> 0.48 pct - the charter
+  auto-correction STRENGTHENS this calibration.
 
-  R_BEAM = 45 UNDERIVED: formula gives 5.2e8 at stated
-  parameters; EP-09 Doppler family now forked 45/2.28e6/2.2e7
-  - one beaming convention needed. beta_app = 3.60c EXACT.
+  P_MAX INTERNAL FORK: Eq29 and the data table say 1e16 eV,
+  but the calibration needs 1e15 - at 1e16 the predicted peak
+  is 0.61 PeV and FAILS the bound. Factor 10 decides
+  pass/fail; ruling picks.
 
-  Q-111 fork now 4 branches (this one presumably canonical).
+  DEGENERACY: UQFF net transfer 0.061 vs standard p-gamma
+  0.05 (22 pct) - the SED peak barely distinguishes the
+  frameworks; independent signature needed. Spectral
+  2.0-vs-2.37 gap attributed to [SCm] damping without chain.
 
-Q-125 queued. Gate 895 assertions 0 failures. Registry 338 rows /
-713 edges / 133 citation ledgers. Wired 133/2,255 (11 clean, 122
-OPEN_RULING). Next: PAPER_130.
+  beta_i tri-domain universality explicit (gravity + CRP +
+  ejecta) - Q-104 annotated. Housekeeping: Q-105 header
+  restored after an annotation-script slip (verified intact).
+
+Q-126 queued. Gate 901 assertions 0 failures. Registry 340 rows /
+717 edges / 134 citation ledgers. Wired 134/2,255 (11 clean, 123
+OPEN_RULING). Next: PAPER_131.

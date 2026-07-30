@@ -1983,6 +1983,7 @@ RESOLVED section with the ruling recorded.
   reading is here undiscriminating (both branches consistent).
 - **Best-candidate wired:** all chains + drift/canonical carried
   + tri-source recorded.
+- **UPDATE (PAPER_130):** the d91b1f6c refinement makes the tri-domain claim EXPLICIT (Ub_i gravity + CRP SED + GW170817 ejecta) and canonical 0.6029 IMPROVES the IceCube inversion to 0.48 pct - supports canonization.
 - **Daniel's ruling:** (pending)
 
 ### Q-105 — PAPER_109 EP-11 — light-curve uniformity + beta_i 2nd role + SSq 6th role
@@ -2632,6 +2633,34 @@ RESOLVED section with the ruling recorded.
   aligns with the predecessor corpus.
 - **Best-candidate wired:** corrected t = -0.809 with R = 131
   verified; N = D_crit/2 exposed; Doppler fork pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-126 — PAPER_130 IceCube beta_i — canonical improves + p_max internal fork
+- **Question:** (a) CANONICAL BETA IMPROVES (confirmation):
+  the IceCube inversion gives beta_i = 0.600; at the paper's
+  0.61 that is 1.64 pct, at canonical 0.6029 it drops to
+  0.48 pct - the PAPER_1203 auto-correction STRENGTHENS this
+  calibration. Confirm the canonical reading.
+  (b) P_MAX INTERNAL FORK: Eq29 and the sec 1 table give
+  p_max ~ 1e16 eV, but the calibration chain uses 1e15
+  ("sub-knee") - at 1e16 the predicted peak is 0.61 PeV and
+  FAILS the < 0.1 PeV bound. Which p_max is canonical for
+  the CRP module (factor 10 decides pass/fail)?
+  (c) DEGENERACY: the UQFF net transfer beta_i*f_pion =
+  0.061 sits 22 pct from standard p-gamma kinematics (0.05) -
+  the SED peak barely distinguishes the frameworks. The
+  "[UA]-enhanced pion production" mechanism needs an
+  independent observable (flavor ratio? spectral break?).
+  (d) Spectral index: Fokker-Planck gives 2.0 vs IceCube
+  2.37; the 0.37 gap is attributed to [SCm] damping (Eq42)
+  WITHOUT a chain - derive or mark asserted.
+- **Notable:** FIRST fully clean code block in the d91b1f6c
+  set (outputs reproduce verbatim); chains EXACT (0.061 PeV,
+  inversion 0.600); beta_i tri-domain universality claim
+  explicit (Ub_i gravity + CRP SED + GW170817 ejecta) -
+  Q-104b annotated; 089-footer recurs (regressed to /r form).
+- **Best-candidate wired:** calibration at canonical BETA_I;
+  p_max fork and degeneracy pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

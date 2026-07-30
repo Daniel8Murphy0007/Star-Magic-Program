@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.132.0"
-description = "UQFF Star-Magic-Program v0.132.0: PAPER_129 wired - Triadic 3C273 negative time (4th EP-09 variant; sign+deg/360 double error corrected: t = -0.809 gives R = 130.0 EXACT vs paper -0.10 giving 1.05; N = 13 = D_crit/2 primitive candidate; R_beam = 45 underived, Doppler family forked). Q-125 queued. Wired 133/2255, gate 895/0. Registry 338 rows / 713 edges / 133 ledgers."
+version = "0.133.0"
+description = "UQFF Star-Magic-Program v0.133.0: PAPER_130 wired - IceCube beta_i CRP calibration (0.061 PeV + inversion 0.600 EXACT; first fully clean d91b1f6c code block; canonical BETA_I improves fit 1.64 -> 0.48 pct; p_max internal factor-10 fork decides pass/fail; 22 pct degeneracy with standard kinematics noted). Q-126 queued. Wired 134/2255, gate 901/0. Registry 340 rows / 717 edges / 134 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

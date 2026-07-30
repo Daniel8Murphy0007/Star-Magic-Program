@@ -1672,3 +1672,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 133/2,255 (11 ✓, 122 ⚠). Next: PAPER_130.
 
 ---
+
+## 2026-07-29 — v0.133.0 — BAND 1: PAPER_130
+
+- PAPER_130 wired (⚠ Q-126): IceCube beta_i calibration.
+  Chains EXACT + first clean d91b1f6c code; canonical BETA_I
+  improves fit; p_max fork + degeneracy pinned; Q-104
+  annotated; Q-105 header restored after script slip.
+- Campaign: 134/2,255 (11 ✓, 123 ⚠). Next: PAPER_131.
+
+---

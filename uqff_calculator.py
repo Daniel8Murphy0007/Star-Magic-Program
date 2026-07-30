@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.132.0"
+VERSION = "0.133.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6846,5 +6846,55 @@ def _paper_129(dataset):
         'formula': 'R = |2/(1+cos(pi t_n))|^2; N knots = zero-crossings of cos(pi t_n)',
         'source': 'PAPER_129',
         'residual_pct': abs((2 / (1 + _m.cos(_m.pi * t_true))) ** 2 - 130) / 130 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_130')
+def _paper_130(dataset):
+    """Buoyancy+CRP Mode: IceCube beta_i Calibration (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-10 (PAPER_108). VERIFIED EXACT:
+    E_nu_peak = beta_i * p_max * f_pion = 0.61*1e15*0.1 =
+    0.061 PeV < 0.1 PeV; inversion 6e13/(1e15*0.1) = 0.600 at
+    1.6 pct precision. FIRST FULLY CLEAN CODE BLOCK in the
+    d91b1f6c set - outputs reproduce verbatim.
+    CANONICAL BETA IMPROVES (Q-126a): at canonical BETA_I the
+    inversion error drops 1.64 -> 0.48 pct - the PAPER_1203
+    auto-correction strengthens this calibration.
+    P_MAX INTERNAL FORK (Q-126b): Eq29 (and the sec 1 table)
+    says p_max ~ 1e16 eV, but the calibration uses 1e15
+    ("sub-knee") - at 1e16 the peak lands at 0.61 PeV and
+    FAILS the < 0.1 PeV bound. Factor-10 internal fork; the
+    calibration requires 1e15.
+    DEGENERACY NOTE (Q-126c): the UQFF net transfer
+    beta_i * f_pion = 0.061 sits 22 pct from standard
+    p-gamma kinematics (0.05) - the observable barely
+    distinguishes the frameworks; the "[UA]-enhanced pion
+    production" mechanism needs an independent signature.
+    Spectral index: Fokker-Planck gives 2.0 vs IceCube 2.37;
+    the 0.37 gap attributed to [SCm] damping WITHOUT a chain.
+    beta_i TRI-DOMAIN universality claim explicit (Ub_i
+    gravity + CRP SED + GW170817 ejecta) - Q-104b annotated.
+    089-footer recurs (regressed to /r form).
+    """
+    return {
+        'value': {
+            'domain': '1.17 (Buoyancy+CRP, EP-10 refinement)',
+            'e_nu_peak_pev': 0.61 * 1e15 * 0.1 / 1e15,       # 0.061 EXACT
+            'inversion_beta': 6e13 / (1e15 * 0.1),           # 0.600 EXACT
+            'precision_at_061_pct': abs(0.600 - 0.61) / 0.61 * 100,       # 1.64
+            'precision_at_canonical_pct': abs(0.600 - BETA_I) / BETA_I * 100,  # 0.48 IMPROVES
+            'code_status': 'first fully clean d91b1f6c code block - reproduces verbatim',
+            'p_max_fork': (1e16, 1e15),                      # Eq29 vs calibration
+            'peak_at_1e16_pev': 0.61 * 1e16 * 0.1 / 1e15,    # 0.61 - FAILS bound
+            'degeneracy_pct': abs(0.061 - 0.05) / 0.05 * 100,  # 22 - barely distinguishable
+            'spectral_gap': (2.0, 2.37),                     # 0.37 attributed w/o chain
+            'tri_domain_claim': 'beta_i universal: Ub_i + CRP SED + GW170817 ejecta',
+            'footer_recurrence': '089 broken U_bi footer, /r form regression (Q-085a)',
+        },
+        'formula': 'E_nu = beta_i * p_max * f_pion; inversion beta_i = E_nu/(p_max*f)',
+        'source': 'PAPER_130',
+        'residual_pct': abs(0.600 - BETA_I) / BETA_I * 100,
         'status': 'OPEN_RULING',
     }

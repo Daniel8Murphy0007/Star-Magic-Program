@@ -713,3 +713,7 @@ observable,triadic_3c273_negative_time,paper,PAPER_129,4th variant
 observable,triadic_3c273_negative_time,paper,PAPER_115,EP-09 lineage
 primitive,D_CRIT,observable,triadic_3c273_negative_time,N = D_crit/2
 observable,triadic_3c273_doppler_fork,paper,PAPER_129,R_beam underived
+observable,buoyancy_icecube_beta_calib,paper,PAPER_130,beta calibration
+primitive,BETA_I,observable,buoyancy_icecube_beta_calib,canonical improves fit
+observable,buoyancy_icecube_beta_calib,paper,PAPER_108,EP-10 lineage
+observable,buoyancy_icecube_forks,paper,PAPER_130,p_max fork

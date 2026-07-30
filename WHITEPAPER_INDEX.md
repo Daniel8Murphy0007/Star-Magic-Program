@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 133 (11 ✓, 122 ⚠ OPEN_RULING)
+- **Wired:** 134 (11 ✓, 123 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2122
+- **Not yet touched:** 2121
 
 ---
 
@@ -522,7 +522,7 @@
 | ⬜ | PAPER_1307 | CKM UNITARITY |
 | ⬜ | PAPER_1308 | LEPTON CP DELTA |
 | ⬜ | PAPER_1309 | EW VACUUM DECAY |
-| ⬜ | PAPER_130 | UQFF Buoyancy IceCube Beta i CRP Calibration |
+| ⚠ | PAPER_130 | UQFF Buoyancy IceCube Beta i CRP Calibration |
 | ⬜ | PAPER_1310 | HIGGS TRILINEAR |
 | ⬜ | PAPER_1311 | HIGGS VEV ORIGIN C |
 | ⬜ | PAPER_1312 | TOP YUKAWA |
