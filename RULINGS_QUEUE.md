@@ -3528,6 +3528,39 @@ RESOLVED section with the ruling recorded.
   predecessor-canonical proposal queued.
 - **Daniel's ruling:** (pending)
 
+### Q-153 — PAPER_157 Solar System F_U — E_react third variant + undeclared k4 + assigned Ug3
+- **Question:** (a) E_REACT NOW HAS THREE FORMS: route 1
+  rho_SCm*v_SCm/rho_A (v^1, PAPER_129, Q-129a); route 2
+  rho_SCm*v^2/lambda_SCm with lambda_SCm = 1 fm (PAPER_154,
+  Q-150b); route 3 rho_SCm*v_SCm^2/rho_A * e^-kappa*t
+  (PAPER_157 sec 2.1). Which is canonical? (Routes 1 and 3
+  differ by one factor of v = 2.97e8.)
+  (b) UNDECLARED CONSTANT: the uniform Ug4 = 4.219e-10
+  implies k4 = 2.000 EXACT (= 4.219e-10 / [rho_v*C_conc*
+  (Mbh/dg)*(1+f_feedback)]) but k4 appears in no constant
+  table. Confirm k4 = 2?
+  (c) ASSIGNED Ug3: mantissa 1.588 constant across bodies
+  with clean decade exponents (Sun/Earth ratio = 1e6 exact)
+  - same fingerprint as the 148-152 system tables. Were the
+  per-body Ug3 assigned rather than computed from k3*Bj*
+  Pcore*E_react?
+- **Notable (derived in this wiring):** the whole F_U table
+  collapses to ONE relation - F_U = (1 - beta*Omega_g*
+  M_bh/d_g)*Ug3 = -13.0*Ug3 for ALL four bodies (measured
+  -12.9975, chain -12.9988, 0.01%); -13 adjacent to
+  -D_crit/2 (N=13 family: PAPER_139's N=13 = D_crit/2).
+  kappa 5e-4/day = 5.787e-9/s EXACT cross-section
+  consistency; SgrA* triple (Omega_g, M_bh, d_g) carried
+  from 148 unchanged. Sec 2.3 OPENS with this paper.
+- **Drift auto-corrected:** beta_i 0.6 (sec 4) and 0.603
+  (S204.5) -> canonical 0.6029 (PAPER_1203); rho_SCm
+  kg/m3 -> J/m3 (PAPER_2155/2147); sec B 1.894 VDS ratio ->
+  F_TRZ = 0.1 (PAPER_2156).
+- **Best-candidate wired:** table + derived -13 structure +
+  k4 = 2 implication registered; three E_react routes
+  queued together for one adjudication.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

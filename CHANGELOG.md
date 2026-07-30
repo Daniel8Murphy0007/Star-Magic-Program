@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.160.0] — 2026-07-30 — BAND 1: PAPER_157 — SEC 2.3 OPENS
+
+### Added
+- **PAPER_157 dispatch** (Solar System F_U validation, S47,
+  thread 7f9068 — first paper of sec 2.3): MUGE F_U for Sun/
+  Earth/Jupiter/Neptune with per-body omega_c; 27 C++ tests.
+  WIRING-DERIVED STRUCTURE: the entire F_U table collapses
+  to F_U = (1 − beta·Omega_g·M_bh/d_g)·Ug3 = −13.0·Ug3 for
+  ALL four bodies (0.01% chain match; −13 adjacent to
+  −D_crit/2, the N=13 family). Ug3 mantissa 1.588 constant
+  with decade exponents — the assigned-values fingerprint
+  continues into sec 2.3. Undeclared k4 = 2.000 EXACT
+  implied by uniform Ug4. E_react THIRD variant (rho·v²/
+  rho_A) joins the two prior routes — one adjudication
+  queued. kappa 5e-4/day = 5.787e-9/s cross-section EXACT.
+  Drift auto-corrected by citation: beta 0.6/0.603 →
+  0.6029; kg/m³ → J/m³; 1.894 → F_TRZ.
+- OPEN_RULING Q-153.
+- Gate: 1,070 assertions, 0 failures. Registry: 391 rows / 834 edges / 161 ledgers (measured).
+
+---
+
 ## [0.159.0] — 2026-07-30 — BAND 1: PAPER_156 — CYCLE 3 BLOCK COMPLETE
 
 ### Added

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 160 (11 ✓, 149 ⚠ OPEN_RULING)
+- **Wired:** 161 (11 ✓, 150 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2095
+- **Not yet touched:** 2094
 
 ---
 
@@ -819,7 +819,7 @@
 | ⬜ | PAPER_1577 | DIAMOND MOHS 10 |
 | ⬜ | PAPER_1578 | SPEED OF SOUND AIR 343 |
 | ⬜ | PAPER_1579 | EARTH SUN DISTANCE 149 6 GM |
-| ⬜ | PAPER_157 | SolarSystem UQFF FU Validation Sun Earth Jupiter Neptune |
+| ⚠ | PAPER_157 | SolarSystem UQFF FU Validation Sun Earth Jupiter Neptune |
 | ⬜ | PAPER_1580 | SIDEREAL YEAR 365 25 DAYS |
 | ⬜ | PAPER_1581 | BODY TEMP 37 CELSIUS |
 | ⬜ | PAPER_1582 | BLOOD GLUCOSE 100 MG DL |

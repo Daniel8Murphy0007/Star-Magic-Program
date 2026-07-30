@@ -1921,3 +1921,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 160/2,255 (11 ✓, 149 ⚠). Next: PAPER_157.
 
 ---
+
+## 2026-07-30 — v0.160.0 — BAND 1: PAPER_157
+
+- PAPER_157 wired (⚠ Q-153): Solar System F_U — sec 2.3
+  opens. Derived F_U = −13·Ug3 structure; k4 = 2 implied;
+  E_react third variant queued with routes 1-2.
+- Campaign: 161/2,255 (11 ✓, 150 ⚠). Next: PAPER_158.
+
+---

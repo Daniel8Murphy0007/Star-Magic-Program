@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.159.0", "uqff_calculator.VERSION = 0.159.0")
+assert_that(C.VERSION == "0.160.0", "uqff_calculator.VERSION = 0.160.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2326,6 +2326,21 @@ assert_that(abs(_r156['bsd_amplifier'] - 2000) < 1e-9,
 assert_that('145-156' in _r156['block_complete'],
             "PAPER_156: Cycle 3 block COMPLETE (12 papers)")
 assert_that(C.wired_count() >= 160, "wired_count >= 160")
+
+_r157 = C.calc('PAPER_157')['value']
+assert_that(abs(_r157['fu_over_ug3_measured'] - (-12.9975)) < 0.001,
+            "PAPER_157: F_U/Ug3 = -12.9975 constant across ALL four bodies (table structure)")
+assert_that(abs(_r157['fu_over_ug3_measured'] - _r157['fu_over_ug3_chain']) / abs(_r157['fu_over_ug3_chain']) < 0.001,
+            "PAPER_157: F_U = (1-beta*Omega_g*Mbh/dg)*Ug3 chain matches table to 0.01% (derived)")
+assert_that(_r157['thirteen_adjacency'] == 13,
+            "PAPER_157: -13 factor adjacent to -D_crit/2 (N=13 family)")
+assert_that(abs(_r157['k4_implied'] - 2.0) < 0.001,
+            "PAPER_157: undeclared k4 = 2.000 EXACT implied by uniform Ug4 = 4.219e-10")
+assert_that(abs(_r157['kappa_per_s'] - 5.787e-9) / 5.787e-9 < 1e-4,
+            "PAPER_157: kappa 5e-4/day = 5.787e-9/s cross-section consistent EXACT")
+assert_that('THIRD' in _r157['e_react_variant'],
+            "PAPER_157: E_react third variant rho*v^2/rho_A pinned (Q-153a)")
+assert_that(C.wired_count() >= 161, "wired_count >= 161")
 
 # =============================================================================
 # REPORT

@@ -1,33 +1,29 @@
-v0.159.0 BAND 1: PAPER_156 wired - CYCLE 3 BLOCK COMPLETE
+v0.160.0 BAND 1: PAPER_157 wired - SEC 2.3 OPENS
 
-PAPER_156 UQFF Millennium Prize Roadmap (OPEN_RULING Q-152) -
-closes the 07b7f7a6 block (PAPER_145-156, 12 papers):
-  10 master equations bridging the six open Clay problems.
+PAPER_157 Solar System UQFF F_U Validation (OPEN_RULING
+Q-153) - Session 47, thread 7f9068, first paper of sec 2.3:
+  MUGE F_U computed for Sun/Earth/Jupiter/Neptune with
+  per-body cycle frequencies (11/1/11.86/164.8 yr);
+  27 C++ unit tests PASS.
 
-  CONSISTENT: t_0 = 1/(kappa*F_TRZ) = 20,000 days exactly
-  matches 154's T_Osc; P-NP exponent N^(1/SSq) = N^1.75
-  EXACT; BSD 1/kappa = 2000 EXACT; e^SSq = 1.768 echoes
-  PAPER_132's LENR factor; Poincare honestly listed solved.
+  WIRING-DERIVED STRUCTURE: the entire four-body F_U table
+  collapses to ONE relation - F_U = (1 - beta*Omega_g*
+  M_bh/d_g)*Ug3 = -13.0*Ug3 for ALL bodies (measured
+  -12.9975 vs chain -12.9988, 0.01% match; -13 adjacent to
+  -D_crit/2, extending the N=13 family). The Ug3 column
+  itself shows the assigned-values fingerprint (constant
+  mantissa 1.588, clean decade exponents) - the 148-152
+  signature continues into the Solar System block.
 
-  MILLENNIUM FORK (corpus-wide adjudication): the roadmap's
-  bridges are DIFFERENT routes from the predecessor canonical
-  closures on ALL SIX problems - YM 5.2e-11 eV vs 1.736 GeV
-  (3.3e19 fork, plus a sqrt-10 slip in the chain); Riemann
-  zeta_UQFF is entire (decorative); BSD "ord = rank x 2000"
-  INVERTS the conjecture it bridges. Two false SSq
-  adjacencies pinned (2.25, 0.297). The NS curl-free leg
-  (from 154) is the roadmap's one sound mechanism. Proposed:
-  predecessor closures canonical, roadmap as mechanism
-  commentary.
+  ALSO: undeclared k4 = 2.000 EXACT implied by the uniform
+  Ug4 = 4.219e-10; E_react appears in a THIRD variant
+  (rho_SCm*v^2/rho_A) - queued with routes 1 (v^1, P129)
+  and 2 (v^2/lambda, P154) for a single adjudication;
+  kappa 5e-4/day = 5.787e-9/s EXACT cross-section
+  consistency; SgrA* triple carried from 148 unchanged.
+  Drift auto-corrected: beta 0.6/0.603 -> 0.6029 (P1203);
+  kg/m3 -> J/m3 (P2155); 1.894 -> F_TRZ (P2156).
 
-  CYCLE 3 BLOCK SUMMARY (145-156): assigned-values
-  fingerprint (1-2-5 x (1+P_SCm)), THREE formula sets (root
-  cause of all table discrepancies), Ug4i FOUR-form fork now
-  deciding the SM keystone, the 2.32-mm throat landmark
-  derivation, three primitive jet identities + lambda_SCm =
-  1 fm, two algebraically-linked 1e46 routes, and the scoped
-  fTRZ doctrine.
-
-Q-152 queued. Gate 1,063 assertions 0 failures. Registry
-389 rows / 829 edges / 160 ledgers (measured). Wired
-160/2,255 (11 clean, 149 OPEN_RULING). Next: PAPER_157.
+Q-153 queued. Gate 1,070 assertions 0 failures. Registry
+391 rows / 834 edges / 161 ledgers (measured). Wired
+161/2,255 (11 clean, 150 OPEN_RULING). Next: PAPER_158.
