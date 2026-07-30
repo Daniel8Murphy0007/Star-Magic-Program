@@ -678,3 +678,7 @@ primitive,KAPPA_PER_DAY,observable,uqff_71eq_catalog,E_react decay
 primitive,SSQ,observable,uqff_71eq_forks,hop triple
 observable,uqff_71eq_forks,paper,PAPER_118,EP-08 hop fork
 observable,uqff_71eq_forks,paper,PAPER_110,M_bh fork
+observable,compressed_pdg_refinement,paper,PAPER_122,EP-02 refinement
+observable,compressed_pdg_refinement,paper,PAPER_112,supersedes mid-band
+primitive,SSQ,observable,compressed_pdg_code_defect,2-hop claim fails
+observable,compressed_pdg_code_defect,paper,PAPER_122,code defect

@@ -1,30 +1,30 @@
-v0.124.0 BAND 1: PAPER_121 wired - 71-EQ CATALOG + GOLDEN-RATIO FIND
+v0.125.0 BAND 1: PAPER_122 wired - SELF-RECTIFICATION No. 9
 
-PAPER_121 UQFF 71-Equation Catalog (OPEN_RULING Q-117):
-  Complete mathematical reference (d91b1f6c thread): 71
-  equations in 4 categories, 7 operational modes x 12
-  empirical proofs, full F_U component set with the CRP
-  Fokker-Planck term as the final structural addition.
+PAPER_122 UQFF Compressed Mode: PDG 241-Particle Ladder,
+d91b1f6c refinement (OPEN_RULING Q-118):
 
-  FORKS PINNED:
-  - M_bh INTERNAL: Eq 26 = 8.15e36 kg (4.1e6 M_sun, matches
-    119/120) vs sec 5 = 8.55e36 (4.3e6, matches 110/GRAVITY).
-  - UA TRIPLE: 1e-19 C (Eq 14) / 1e-11 C (119) / 1e-4
-    dimensionless (104 + sec 5) - one ruling closes FOUR
-    queue items (Q-060b/Q-100a/Q-117b).
-  - EP-08 HOP TRIPLE: SSq^1 (118) / SSq^2 (EP table) / N=3
-    (sec 5) - folded into Q-114.
+  SELF-RECTIFICATION No. 9: this paper EXPLICITLY assigns
+  proton n = 10 (sec 3.1: log10(1.5e-10)+20 = 10.2) and pion
+  n = 9 - canonizing the Q-108a mid-band correction found in
+  PAPER_112's audit. Three corpus voices now agree hadrons sit
+  at n = 9-10 (PAPER_116 hadronic row, PAPER_122 explicit,
+  audit chain). The charter's self-rectification doctrine is
+  working exactly as designed. Q-108 annotated - suggest
+  RESOLVED-BY-CORPUS.
 
-  GOLDEN-RATIO FIND: Eq 69 IMF slope -2.35 + alpha_fund =
-  -1.732 = -sqrt(3) EXACT, with alpha_fund = 0.618 = 1/phi to
-  4 decimals (beta_i-adjacent). Derivation-session candidates.
+  CODE-OUTPUT FALSIFIED (Rule 7): the paper's own numpy block,
+  run VERBATIM, outputs R^2 = 0.468 - not the printed
+  "0.9527". Linear-space R^2 is dominated by the n=12 cluster.
+  The 4th code energy 8.19e-12 J = 51.1 MeV matches no PDG
+  particle. Fit-statistic ruling requested.
 
-  Footer evolved to r^2 form (dimensionally sensible now) but
-  chain = kappa*SSq*g_sun = 0.078 m/s2 vs printed 147 - still
-  broken (Q-085a family). Paper-number remap anomaly (EPs
-  mapped to PAPER_122-132) - next reads will reveal whether
-  122+ duplicate the EP set.
+  HIGGS FACTOR-2: E_H = 2.01 x E_12 observation is real, but
+  the "2-hop [SSq]" attribution fails (SSq^-2 = 3.08 != 2;
+  actual 1.24 hops). Note 2 = D_phys/2 primitive candidate.
 
-Q-117 queued. Gate 848 assertions 0 failures. Registry 322 rows /
-678 edges / 125 citation ledgers. Wired 125/2,255 (11 clean, 114
-OPEN_RULING). Next: PAPER_122.
+  Minor: electron n=6 anomalous (chain 6.91 -> 7); pion energy
+  2.41e-11 vs true 2.163e-11 (11 pct); 089-footer recurs.
+
+Q-118 queued. Gate 854 assertions 0 failures. Registry 324 rows /
+682 edges / 126 citation ledgers. Wired 126/2,255 (11 clean, 115
+OPEN_RULING). Next: PAPER_123.

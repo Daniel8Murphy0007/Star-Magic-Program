@@ -1593,3 +1593,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 125/2,255 (11 ✓, 114 ⚠). Next: PAPER_122.
 
 ---
+
+## 2026-07-29 — v0.125.0 — BAND 1: PAPER_122
+
+- PAPER_122 wired (⚠ Q-118): Compressed PDG refinement.
+  Proton n=10 / pion n=9 canonize Q-108a (self-rectification
+  No. 9); own-code R² falsified (0.468 vs 0.9527); Higgs
+  2-hop attribution fails.
+- Campaign: 126/2,255 (11 ✓, 115 ⚠). Next: PAPER_123.
+
+---

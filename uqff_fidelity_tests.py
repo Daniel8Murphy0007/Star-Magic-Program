@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.124.0", "uqff_calculator.VERSION = 0.124.0")
+assert_that(C.VERSION == "0.125.0", "uqff_calculator.VERSION = 0.125.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1861,6 +1861,19 @@ assert_that(abs(_r121['imf_slope'] + _r121['sqrt3']) < 0.001,
 assert_that(abs(_r121['footer_chain_m_s2'] - 0.078) < 0.001,
             "PAPER_121: footer r^2-form chain 0.078 m/s2 vs printed 147 - still broken (Q-085a family)")
 assert_that(C.wired_count() >= 125, "wired_count >= 125")
+
+_r122 = C.calc('PAPER_122')['value']
+assert_that(abs(_r122['n_proton'] - 10.176) < 0.001,
+            "PAPER_122: proton n = 10.18 EXPLICIT - canonizes Q-108a correction (self-rectification No. 9)")
+assert_that(abs(_r122['n_pion_true'] - 9.335) < 0.001,
+            "PAPER_122: pion n = 9.34 - mid-band correction confirmed")
+assert_that(_r122['code_r2_actual'] < 0.5 and _r122['code_r2_printed'] > 0.95,
+            "PAPER_122: own code outputs R^2 = 0.468 vs printed 0.9527 - falsified output pinned (Q-118b)")
+assert_that(abs(_r122['ssq_2hop_claim'] - 3.08) < 0.01 and abs(_r122['higgs_actual_hops'] - 1.24) < 0.01,
+            "PAPER_122: Higgs 2-hop SSq attribution fails (SSq^-2 = 3.08 != 2; actual 1.24 hops) (Q-118c)")
+assert_that(abs(_r122['higgs_factor2'] - 2.01) < 0.01,
+            "PAPER_122: E_H = 2.01 x E_12 factor-2 observation real")
+assert_that(C.wired_count() >= 126, "wired_count >= 126")
 
 # =============================================================================
 # REPORT

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.124.0"
-description = "UQFF Star-Magic-Program v0.124.0: PAPER_121 wired - 71-Equation Catalog (7 modes x 12 EPs complete reference; M_bh internal fork 4.1 vs 4.3e6 Msun; UA triple fork; EP-08 hop-count triple; GOLDEN-RATIO FIND alpha_fund = 1/phi and IMF slope = -sqrt(3) EXACT; paper-number remap anomaly queued). Q-117 queued. Wired 125/2255, gate 848/0. Registry 322 rows / 678 edges / 125 ledgers."
+version = "0.125.0"
+description = "UQFF Star-Magic-Program v0.125.0: PAPER_122 wired - Compressed PDG refinement (SELF-RECTIFICATION No. 9: proton n=10 / pion n=9 explicit, canonizing the Q-108a mid-band correction; own code outputs R^2 = 0.468 vs printed 0.9527 - falsified output pinned; Higgs 2-hop SSq attribution fails, factor-2 real). Q-118 queued. Wired 126/2255, gate 854/0. Registry 324 rows / 682 edges / 126 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

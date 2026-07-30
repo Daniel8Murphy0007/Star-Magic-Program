@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.125.0] — 2026-07-29 — BAND 1: PAPER_122 — SELF-RECTIFICATION No. 9
+
+### Added
+- **PAPER_122 dispatch** (Compressed Mode PDG refinement,
+  d91b1f6c): EXPLICITLY assigns proton n = 10 and pion n = 9 —
+  canonizing the Q-108a mid-band correction in-corpus, exactly
+  as the charter self-rectification doctrine predicts (2nd
+  confirmation after PAPER_116; Q-108 annotated, suggest
+  RESOLVED-BY-CORPUS). CODE-OUTPUT FALSIFIED: the paper's own
+  numpy block run verbatim outputs R² = 0.468, not the printed
+  0.9527 (Rule 7); 4th code energy = 51.1 MeV matches no PDG
+  particle. Higgs factor-2 observation real (2.01×E_12) but
+  the "2-hop [SSq]" attribution fails (SSq⁻² = 3.08 ≠ 2;
+  actual 1.24 hops). Electron n=6 anomalous; pion energy 11%
+  transcription slip.
+- OPEN_RULING Q-118.
+- Gate: 854 assertions, 0 failures. Registry: 324 rows / 682 edges / 126 ledgers.
+
+---
+
 ## [0.124.0] — 2026-07-29 — BAND 1: PAPER_121 — GOLDEN-RATIO FIND
 
 ### Added

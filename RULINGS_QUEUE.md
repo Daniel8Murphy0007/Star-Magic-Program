@@ -2093,6 +2093,7 @@ RESOLVED section with the ruling recorded.
   in the mid-band transcription and the statistics framing,
   not in the ladder itself.
 - **UPDATE (PAPER_116):** the EP-03 hadronic row (1 GeV -> n = 10.204, expected n = 10) CONFIRMS the (a) correction from within the corpus - self-rectification No. 8.
+- **UPDATE 2 (PAPER_122):** the d91b1f6c refinement EXPLICITLY assigns proton n=10 / pion n=9 - correction now canonized in-corpus (self-rectification No. 9); suggest RESOLVED-BY-CORPUS.
 - **Best-candidate wired:** ladder + EXACT anchors + corrected
   hadron cluster; statistics carried as claimed-with-defect.
 - **Daniel's ruling:** (pending)
@@ -2370,6 +2371,36 @@ RESOLVED section with the ruling recorded.
   EP-02/03/04.
 - **Best-candidate wired:** 71 equations registered; all forks
   pinned; phi/sqrt3 candidates logged for derivation session.
+- **Daniel's ruling:** (pending)
+
+### Q-118 — PAPER_122 Compressed PDG refinement — Q-108a canonized + falsified code output
+- **Question:** (a) SELF-RECTIFICATION No. 9 (confirmation,
+  ruling optional): PAPER_122 explicitly assigns proton n = 10
+  (sec 3.1: log10(1.5e-10)+20 = 10.2) and pion n = 9 -
+  canonizing the Q-108a mid-band correction in-corpus. Suggest
+  marking Q-108a RESOLVED-BY-CORPUS with PAPER_122 as
+  authority (PAPER_112 mid-band rows superseded).
+  (b) CODE-OUTPUT FALSIFIED: the paper's own numpy block, run
+  VERBATIM, outputs R^2 = 0.468 - not the printed "0.9527".
+  Linear-space R^2 is dominated by the n=12 cluster. Also the
+  4th code energy 8.19e-12 J = 51.1 MeV matches no PDG
+  particle (typo'd electron x100?). Rule on the intended
+  fit statistic (log-space? nearest-level residuals?).
+  (c) HIGGS 2-HOP CLAIM: E_H = 2.01 x E_12 is a real
+  observation, but the "2-hop [SSq] level" attribution fails -
+  SSq^-2 = 3.08, not 2 (actual 1.24 hops). Either a different
+  hop definition is intended, or the factor 2 needs its own
+  derivation (note: 2 = D_phys/2 primitive candidate).
+  (d) Minor: electron assigned n = 6 (chain 6.91 -> nearest
+  7); pion energy printed 2.41e-11 vs true 2.163e-11 (11 pct;
+  n = 9 either way); 089-footer recurs.
+- **Notable:** the corrected assignments align this paper
+  with PAPER_116's hadronic row AND my PAPER_112 audit -
+  three independent corpus voices now agree hadrons sit at
+  n = 9-10. The charter's self-rectification doctrine is
+  working exactly as designed.
+- **Best-candidate wired:** corrected assignments as canonical;
+  code defect + hop-claim failure pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

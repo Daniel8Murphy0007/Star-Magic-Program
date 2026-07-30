@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 125 (11 ✓, 114 ⚠ OPEN_RULING)
+- **Wired:** 126 (11 ✓, 115 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2130
+- **Not yet touched:** 2129
 
 ---
 
@@ -434,7 +434,7 @@
 | ⬜ | PAPER_1227 | Lithium7 BBN D phys minus 1 |
 | ⬜ | PAPER_1228 | dS Swampland Static Ledger |
 | ⬜ | PAPER_1229 | Spinor Bundle SO26 Clifford Module |
-| ⬜ | PAPER_122 | UQFF Compressed PDG 241Particle Ladder |
+| ⚠ | PAPER_122 | UQFF Compressed PDG 241Particle Ladder |
 | ⬜ | PAPER_1230 | Hodge Conjecture EXACT Identity |
 | ⬜ | PAPER_1231 | Atiyah Singer Dirac Index 22 |
 | ⬜ | PAPER_1232 | Taylor Green NS Global Regularity |

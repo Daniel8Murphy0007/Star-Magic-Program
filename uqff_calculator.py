@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.124.0"
+VERSION = "0.125.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6405,5 +6405,55 @@ def _paper_121(dataset):
         'formula': '71-equation reference; F_U complete form + CRP Fokker-Planck',
         'source': 'PAPER_121',
         'residual_pct': abs(0.618 - 2 / (1 + _m.sqrt(5))) / (2 / (1 + _m.sqrt(5))) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_122')
+def _paper_122(dataset):
+    """Compressed Mode: PDG 241-Particle Ladder, d91b1f6c refinement (S0, sec 1.17).
+
+    The d91b1f6c-thread version of EP-02 (PAPER_112).
+    SELF-RECTIFICATION No. 9 (Q-118a): this paper EXPLICITLY
+    assigns proton n = 10 (sec 3.1 chain: log10(1.5e-10)+20 =
+    10.2) and pion n = 9 - correcting PAPER_112's mid-band -1
+    defect exactly as the charter self-rectification doctrine
+    predicts. Q-108a correction now CANONIZED in-corpus
+    (second confirmation after PAPER_116's hadronic row).
+    CODE-OUTPUT FALSIFIED (Q-118b): running the paper's own
+    numpy block VERBATIM outputs R^2 = 0.468, not the printed
+    "0.9527". The linear-space R^2 is dominated by the n=12
+    cluster; the printed output does not reproduce. Rule 7.
+    Also the code's 4th energy 8.19e-12 J = 51.1 MeV matches
+    no PDG particle (typo'd electron x100).
+    HIGGS 2-HOP ATTRIBUTION FAILS (Q-118c): E_H = 2*E_12 is
+    real (2.01e-8/1e-8), but "2-hop [SSq] level" gives
+    SSq^-2 = 3.08 not 2 (actual 1.24 hops).
+    Minor: electron assigned n = 6 (chain 6.91 -> nearest 7);
+    pion energy printed 2.41e-11 vs true 2.163e-11 (11 pct;
+    n = 9 either way). 089-footer recurs.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.17 (Compressed mode, EP-02 refinement)',
+            'supersedes_partially': 'PAPER_112 mid-band assignments',
+            'n_proton': _m.log10(1.50e-10) + 20,           # 10.18 - CORRECTED vs 112
+            'n_pion_true': _m.log10(2.163e-11) + 20,       # 9.34 - CORRECTED vs 112
+            'n_electron_chain': _m.log10(8.19e-14) + 20,   # 6.91 (paper says 6 - anomalous)
+            'self_rectification': 'No. 9: proton n=10 / pion n=9 canonize Q-108a correction',
+            'code_r2_actual': 0.468,
+            'code_r2_printed': 0.9527,
+            'code_defect': 'own numpy block outputs 0.468 verbatim - printed output false (Rule 7)',
+            'code_mystery_entry_mev': 8.19e-12 / 1.602e-13,  # 51.1 - no PDG particle
+            'higgs_factor2': 2.01e-8 / 1e-8,                # 2.01 real
+            'ssq_2hop_claim': 1 / SSQ ** 2,                 # 3.08 - fails
+            'higgs_actual_hops': _m.log(2.01) / _m.log(1 / SSQ),  # 1.24
+            'pion_energy_slip': (2.41e-11, 2.163e-11),
+            'footer_recurrence': '089 broken U_bi footer (Q-085a)',
+        },
+        'formula': 'E_n = 1e-20 * 10^n; n = log10(E)+20; intra-level SSq spacing',
+        'source': 'PAPER_122',
+        'residual_pct': abs((_m.log10(1.50e-10) + 20) - 10.2) / 10.2 * 100,
         'status': 'OPEN_RULING',
     }
