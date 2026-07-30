@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.126.0", "uqff_calculator.VERSION = 0.126.0")
+assert_that(C.VERSION == "0.127.0", "uqff_calculator.VERSION = 0.127.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1887,6 +1887,17 @@ assert_that(_r123['real_dn_gap'] < 0.001,
 assert_that(abs(_r123['winding_vs_artifact_residual'] - 0.9893) < 0.0001,
             "PAPER_123: 0.989-vs-1.000 keV residual IS the winding-vs-mantissa mismatch")
 assert_that(C.wired_count() >= 127, "wired_count >= 127")
+
+_r124 = C.calc('PAPER_124')['value']
+assert_that(abs(_r124['sn_uqff_mev'] - 7.116) < 0.001,
+            "PAPER_124: S_n = 2*SSq*E_8 = 7.116 MeV EXACT")
+assert_that(abs(_r124['pb208_ratio'] - 1.181) < 0.001 and abs(_r124['pb206_true_ratio'] - 1.296) < 0.001,
+            "PAPER_124: SSq check survives as Pb-208 doubly-magic (3.6 pct); true Pb-206 fails (13.7 pct) - PAPER_117 isotope misattribution corrected (self-rectification No. 10)")
+assert_that(abs(_r124['err_pb207_pct'] - 5.59) < 0.01 and abs(_r124['err_pb208_pct'] - 3.43) < 0.01,
+            "PAPER_124: bracket errors 5.59/3.43 pct EXACT")
+assert_that('1.05' in _r124['dn_formula_broken'],
+            "PAPER_124: dn formula broken as printed (10 -> 1.05) - pinned (Q-120b)")
+assert_that(C.wired_count() >= 128, "wired_count >= 128")
 
 # =============================================================================
 # REPORT

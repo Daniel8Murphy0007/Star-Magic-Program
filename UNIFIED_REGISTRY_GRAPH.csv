@@ -687,3 +687,8 @@ observable,subquantum_n420_winding,paper,PAPER_116,Q-112a partial answer
 primitive,SO_FIVE,observable,subquantum_n420_winding,2/SO_five candidate
 observable,dn_unit_conversion_artifact,paper,PAPER_123,artifact finding
 observable,dn_unit_conversion_artifact,paper,PAPER_117,EP-04 same artifact
+observable,buoyancy_nuclear_sn_pb208,paper,PAPER_124,doubly-magic S_n
+primitive,SSQ,observable,buoyancy_nuclear_sn_pb208,2*SSq quantum per shell
+observable,buoyancy_nuclear_sn_pb208,paper,PAPER_117,isotope correction
+observable,buoyancy_nuclear_defects,paper,PAPER_124,dn formula break
+observable,buoyancy_nuclear_defects,paper,PAPER_123,artifact linkage

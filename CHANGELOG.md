@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.127.0] — 2026-07-29 — BAND 1: PAPER_124 — SELF-RECTIFICATION No. 10
+
+### Added
+- **PAPER_124 dispatch** (Buoyancy Nuclear S_n, d91b1f6c):
+  S_n = 2·SSq·E_8 = 7.116 MeV EXACT, bracketing Pb-207 (5.59%)
+  and Pb-208 (3.43%). SELF-RECTIFICATION No. 10: the table
+  carries TRUE ENSDF values (Pb-206 = 8.09 MeV) revealing
+  PAPER_117's "Pb-206 S_n = 7.367" was Pb-208's — the SSq
+  nuclear check reassigns to doubly-magic Pb-208 (survives
+  3.6%; true Pb-206 fails 13.7%), with the cleaner factor-2 =
+  two-closed-shells reading. Q-113 annotated. DN FORMULA
+  BROKEN: 1e17/1e16 printed as "1.05" (is 10; formula gives
+  2.0); dn = 0.21 remains the Q-119a artifact. [SCm] density
+  fork grows (1e15/1e16/1e17).
+- OPEN_RULING Q-120.
+- Gate: 865 assertions, 0 failures. Registry: 328 rows / 692 edges / 128 ledgers.
+
+---
+
 ## [0.126.0] — 2026-07-29 — BAND 1: PAPER_123 — dn = log10(1.602) ARTIFACT
 
 ### Added

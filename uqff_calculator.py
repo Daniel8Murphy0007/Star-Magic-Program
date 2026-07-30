@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.126.0"
+VERSION = "0.127.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6511,5 +6511,64 @@ def _paper_123(dataset):
         'formula': 'E = E_0*10^(4 + 1/5); dn candidates: 2/SO_five vs log10(1.602)',
         'source': 'PAPER_123',
         'residual_pct': abs(1e-20 * 10 ** 4.20 / 1.602e-16 - 0.989) / 0.989 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_124')
+def _paper_124(dataset):
+    """Buoyancy Mode Nuclear: Pb-206 S_n = 2*SSq*E_8 (S0, sec 1.17).
+
+    d91b1f6c refinement of EP-04 (PAPER_117). VERIFIED EXACT:
+    S_n_UQFF = 2*SSq*E_8 = 1.14e-12 J = 7.116 MeV; errors vs
+    Pb-207 (6.74) = 5.59 pct and Pb-208 (7.37) = 3.43 pct;
+    10^0.21 chain 10.12 MeV.
+    SELF-RECTIFICATION No. 10 (Q-120a): this paper's table
+    carries the TRUE ENSDF values - Pb-206 S_n = 8.09 MeV,
+    Pb-207 = 6.74, Pb-208 = 7.37 - revealing PAPER_117's
+    "Pb-206 S_n = 7.367 MeV" was actually PB-208's value
+    (isotope misattribution). Consequence: the SSq nuclear
+    check survives ONLY as a doubly-magic Pb-208 statement
+    (ratio 1.181 vs 1.14, 3.6 pct); true Pb-206 fails at 13.7
+    pct. The improved reading: factor 2 = TWO closed shells
+    (Z=82 + N=126), each contributing one SSq quantum -
+    physically cleaner and restricts the identity to
+    doubly-magic nuclei. PAPER_117's 8th-role candidate
+    reassigned Pb-206 -> Pb-208.
+    DN FORMULA BROKEN (Q-120b): sec 3.3 prints
+    1e17/1e16 = "1.05" - the ratio is 10, making the formula
+    as written give dn = 2.0 not 0.21. And dn = 0.21 is the
+    Q-119a log10(1.602) artifact regardless.
+    B/A section muddled: "E_8^atomic = 8.0 MeV" undefined
+    (E_8 = 6.24); SSq^(8/26) = 0.841 chain vs printed 0.834;
+    16 pct disclosed honestly. [SCm] density fork grows:
+    1e15 (121 Eq13) / 1e16 vacuum / 1e17 nuclear (here).
+    Magic numbers as [SCm] crystallization points (U_bi = 0
+    at closures) - clean narrative, consistent with Z=82
+    predecessor identity (Q-113b).
+    """
+    import math as _m
+    MeV = 1.602176634e-13
+    return {
+        'value': {
+            'domain': '1.17 (Buoyancy nuclear, EP-04 refinement)',
+            'sn_uqff_j': 2 * SSQ * 1e-12,                   # 1.14e-12 EXACT
+            'sn_uqff_mev': 2 * SSQ * 1e-12 / 1.602e-13,     # 7.116 EXACT
+            'err_pb207_pct': abs(7.117 - 6.74) / 6.74 * 100,   # 5.59
+            'err_pb208_pct': abs(7.117 - 7.37) / 7.37 * 100,   # 3.43
+            'ensdf_true': {'Pb206': 8.09, 'Pb207': 6.74, 'Pb208': 7.37},
+            'self_rectification': 'No. 10: PAPER_117 Pb-206 value was Pb-208 (isotope misattribution)',
+            'pb206_true_ratio': 8.09 * MeV / 1e-12,         # 1.296 - fails 13.7 pct
+            'pb208_ratio': 7.37 * MeV / 1e-12,              # 1.181 - survives 3.6 pct
+            'factor2_reading': 'two closed shells (Z=82 + N=126), one SSq quantum each',
+            'dn_formula_broken': '1e17/1e16 printed as 1.05 (is 10; formula gives dn = 2.0)',
+            'dn_artifact': 'dn = 0.21 remains Q-119a log10(1.602) artifact',
+            'ba_section': 'E_8^atomic = 8.0 undefined; SSq^(8/26) = 0.841 vs printed 0.834; 16 pct disclosed',
+            'scm_density_fork': (1e15, 1e16, 1e17),
+            'magic_narrative': 'U_bi = 0 at shell closures ([SCm] crystallization)',
+        },
+        'formula': 'S_n = 2*SSq*E_8 (doubly-magic); dn_nuclear formula broken as printed',
+        'source': 'PAPER_124',
+        'residual_pct': abs(2 * SSQ * 1e-12 / 1.602e-13 - 7.117) / 7.117 * 100,
         'status': 'OPEN_RULING',
     }

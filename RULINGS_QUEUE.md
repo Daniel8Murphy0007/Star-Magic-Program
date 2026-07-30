@@ -2239,6 +2239,7 @@ RESOLVED section with the ruling recorded.
   the hadronic-n=10 confirmation family (Q-108a).
 - **Best-candidate wired:** EXACT headline + corrected table
   rows + predecessor Z=82 identity exposed.
+- **UPDATE (PAPER_124):** the d91b1f6c refinement reveals the (c) S_n value used was PB-208's (7.367), not Pb-206's (true 8.09) - the SSq 8th-role candidate reassigns to doubly-magic Pb-208 (survives at 3.6 pct; true Pb-206 fails 13.7 pct). Self-rectification No. 10.
 - **Daniel's ruling:** (pending)
 
 ### Q-114 — PAPER_118 EP-08 — 2x vacuum anchor + SSq^3 bonus identity
@@ -2436,6 +2437,36 @@ RESOLVED section with the ruling recorded.
   physical narrative.
 - **Best-candidate wired:** both dn routes exposed with the
   exclusivity pinned; artifact finding registered.
+- **Daniel's ruling:** (pending)
+
+### Q-120 — PAPER_124 Buoyancy Nuclear — isotope misattribution corrected + broken dn formula
+- **Question:** (a) SELF-RECTIFICATION No. 10 (confirmation):
+  PAPER_124's table carries the TRUE ENSDF separation
+  energies - Pb-206 = 8.09 MeV, Pb-207 = 6.74, Pb-208 = 7.37 -
+  revealing that PAPER_117's "Pb-206 S_n = 7.367 MeV" was
+  actually PB-208's value. Consequence: the S_n = 2*SSq*E_8
+  identity survives ONLY as a DOUBLY-MAGIC Pb-208 statement
+  (ratio 1.181 vs 1.14, 3.6 pct); true Pb-206 fails at 13.7
+  pct. The improved factor-2 reading (two closed shells, one
+  SSq quantum each) actually strengthens the physics by
+  restricting scope. Confirm: reassign the SSq 8th-role
+  candidate from Pb-206 to Pb-208, and annotate Q-113.
+  (b) DN FORMULA BROKEN: sec 3.3 prints 1e17/1e16 = "1.05" -
+  the ratio is 10, and the formula as written gives
+  dn = 10 x 0.20 = 2.0, not 0.21. The 1.05 factor is inserted
+  by fiat. And dn = 0.21 is the Q-119a log10(1.602) artifact
+  regardless - double defect.
+  (c) B/A section: "E_8^atomic = 8.0 MeV" undefined (E_8 =
+  6.24); SSq^(8/26) chain = 0.841 vs printed 0.834; the 16
+  pct miss is honestly disclosed. [SCm] density fork grows:
+  1e15 (PAPER_121 Eq 13) / 1e16 "vacuum" / 1e17 "nuclear"
+  (here) - third [SCm] value in three papers.
+- **Notable:** headline chains EXACT (7.116 MeV, 5.59/3.43
+  pct brackets); magic-numbers-as-crystallization (U_bi = 0
+  at closures) is a clean narrative consistent with the
+  predecessor Z=82 identity (Q-113b).
+- **Best-candidate wired:** Pb-208 reassignment as canonical;
+  true-Pb-206 failure disclosed; broken formula pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

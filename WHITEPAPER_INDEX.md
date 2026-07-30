@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 127 (11 ✓, 116 ⚠ OPEN_RULING)
+- **Wired:** 128 (11 ✓, 117 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2128
+- **Not yet touched:** 2127
 
 ---
 
@@ -456,7 +456,7 @@
 | ⬜ | PAPER_1247 | LANGLANDS PROGRAM |
 | ⬜ | PAPER_1248 | SMOOTH POINCARE 4D |
 | ⬜ | PAPER_1249 | CMB COLD SPOT |
-| ⬜ | PAPER_124 | UQFF Buoyancy Nuclear ENSDF Pb206 Sn |
+| ⚠ | PAPER_124 | UQFF Buoyancy Nuclear ENSDF Pb206 Sn |
 | ⬜ | PAPER_1250 | AXIS OF EVIL CMB |
 | ⬜ | PAPER_1251 | DARK FLOW BULK VELOCITY |
 | ⬜ | PAPER_1252 | LATE ISW EFFECT |

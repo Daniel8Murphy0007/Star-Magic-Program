@@ -1613,3 +1613,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 127/2,255 (11 ✓, 116 ⚠). Next: PAPER_124.
 
 ---
+
+## 2026-07-29 — v0.127.0 — BAND 1: PAPER_124
+
+- PAPER_124 wired (⚠ Q-120): Buoyancy nuclear S_n. Isotope
+  misattribution corrected (self-rectification No. 10; SSq
+  check → doubly-magic Pb-208); dn formula broken as printed;
+  [SCm] density fork grows.
+- Campaign: 128/2,255 (11 ✓, 117 ⚠). Next: PAPER_125.
+
+---
