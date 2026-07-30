@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.141.0] — 2026-07-29 — BAND 1: PAPER_138 — CAVITY 1000x SLIP
+
+### Added
+- **PAPER_138 dispatch** (NGC 3603 cluster burst, sec 2.1):
+  M(t) = M_0(1+e^(-t/tau)) with M(tau) = 547,152 M_sun EXACT;
+  P_0 = 4e-8 Pa EXACT; H_0 = 2.269e-18 /s (A_5+SO_5 route
+  consistent); cavity-as-buoyancy-wave distinctive claim.
+  CAVITY AGREEMENT MANUFACTURED: the printed "21 ly, 11%
+  overshoot" rests on a 1000x unit slip — chain 22,867 ly
+  (7 kpc), code prints 9,099 ly (falsified output No. 6),
+  standard Weaver 266 ly. Mdot text 100x slip (code correct —
+  inverted pattern). P_SCm = 1e28 Pa physicality flag.
+  B_CRIT THIRD VALUE (1e11 T) — the Q-002 fork now
+  adjudicates three values.
+- OPEN_RULING Q-134.
+- Gate: 951 assertions, 0 failures. Registry: 356 rows / 752 edges / 142 ledgers.
+
+---
+
 ## [0.140.0] — 2026-07-29 — BAND 1: PAPER_137 — GENESIS LABELS SUPERSEDED
 
 ### Added

@@ -1,32 +1,30 @@
-v0.140.0 BAND 1: PAPER_137 wired - GENESIS LABELS SUPERSEDED BY EP
+v0.141.0 BAND 1: PAPER_138 wired - CAVITY 1000x SLIP CAUGHT
 
-PAPER_137 UQFF 26 Quantum Levels: Genesis Ladder (OPEN_RULING
-Q-133):
-  sec 2.1: the ladder ORIGIN (E_n = 1e-20 * 10^n, formula
-  identical to the EP block) with the Ug ACTIVATION-BAND map
-  (Ug3 n=5+, Ug1 n=10+, Ug2 n=13+, Ug4 n=20+) and the
-  hierarchy-problem dissolution claim (force scales = SCm
-  density rungs).
+PAPER_138 UQFF NGC 3603 Cluster Burst (OPEN_RULING Q-134):
+  sec 2.1: M(t) = M_0(1+e^(-t/tau_SF)) burst evolution + SCm
+  wind-feedback cavity as a UQFF buoyancy wave (cos(pi t_n)
+  prevents recollapse - distinctive claim).
 
-  LABEL FORK SUPERSEDED: genesis labels conflict with the
-  corrected EP assignments - Higgs labeled n=18 (E_18 = 1e-2
-  J = 62.4 PEV, printed "62.4 MeV" - a 1e9 conversion break;
-  real Higgs n=12.3), and n=10 labeled "atomic" while
-  carrying the hadronic 0.624 GeV rung. Genesis ENERGIES
-  stand; genesis LABELS superseded by EP-02/PAPER_122.
+  VERIFIED EXACT: M_0 = 7.956e35 kg; M(tau) = 547,152 M_sun;
+  P_0 = 4e-8 Pa; H_0 = 70 -> 2.269e-18 /s (consistent with
+  the predecessor A_5+SO_5 = 70 route); Lambda c^2/3 =
+  3.3e-36.
 
-  FALSIFIED OUTPUT No. 5: orbital cascade E_10*SSq^15 =
-  136 keV, claimed "~10 eV" (k = 32 needed, not 15).
+  CAVITY AGREEMENT MANUFACTURED: the printed "R_cav = 21 ly,
+  11 pct overshoot vs observed 19" rests on a 1000x unit
+  slip - the paper's own chain gives 2.16e20 m = 22,867 LY
+  (7.0 kpc, mislabeled "6.5 pc"); the code prints ~9,099 ly
+  (FALSIFIED OUTPUT No. 6); the standard Weaver formula gives
+  266 ly with these inputs. The formula also divides by P_0
+  (nonstandard).
 
-  THIRD v^1 SUPPORT: the paper's own E_react^(n) = 10^(n-5)
-  ladder maxes at 1e21 - the 1e46 anchor needs n = 51,
-  OFF-LADDER under multiply-v^2; under the Q-129a v^1
-  resolution E_react(solar n=13) = 1e46 lands on-anchor.
-  Q-129 annotated.
+  Mdot text 100x slip (6.32e21 vs correct 6.30e19 - the CODE
+  is right this time). P_SCm = 1e28 Pa physicality flag (same
+  bookkeeping question as Q-132a).
 
-  In-paper honesty acknowledged: levels 7/14 flagged
-  proximate; n=18 flagged index-not-derivation.
+  B_CRIT THIRD VALUE: 1e11 T joins 4.4e9 (Schwinger) and
+  4.4e13 (catalog) - Q-002 now adjudicates three values.
 
-Q-133 queued. Gate 944 assertions 0 failures. Registry 354 rows /
-748 edges / 141 citation ledgers. Wired 141/2,255 (11 clean, 130
-OPEN_RULING). Next: PAPER_138.
+Q-134 queued. Gate 951 assertions 0 failures. Registry 356 rows /
+752 edges / 142 citation ledgers. Wired 142/2,255 (11 clean, 131
+OPEN_RULING). Next: PAPER_139.

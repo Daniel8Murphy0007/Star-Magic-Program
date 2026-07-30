@@ -1745,3 +1745,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 141/2,255 (11 ✓, 130 ⚠). Next: PAPER_138.
 
 ---
+
+## 2026-07-29 — v0.141.0 — BAND 1: PAPER_138
+
+- PAPER_138 wired (⚠ Q-134): NGC 3603 burst. M(t) EXACT;
+  cavity agreement manufactured (1000x slip; falsified output
+  No. 6); B_crit third value; H_0 route consistent.
+- Campaign: 142/2,255 (11 ✓, 131 ⚠). Next: PAPER_139.
+
+---

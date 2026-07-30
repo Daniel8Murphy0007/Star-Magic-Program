@@ -748,3 +748,7 @@ primitive,D_CRIT,observable,genesis_26level_ladder,26 levels
 observable,genesis_ladder_defects,paper,PAPER_137,label fork
 observable,genesis_ladder_defects,paper,PAPER_122,EP supersession
 observable,genesis_ladder_defects,paper,PAPER_133,v^1 support
+observable,ngc3603_burst_evolution,paper,PAPER_138,burst model
+observable,ngc3603_burst_evolution,paper,PAPER_133,F_U application
+observable,ngc3603_cavity_defects,paper,PAPER_138,cavity defects
+observable,ngc3603_cavity_defects,paper,PAPER_120,B_crit fork growth

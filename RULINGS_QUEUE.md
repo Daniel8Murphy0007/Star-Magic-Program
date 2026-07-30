@@ -2893,6 +2893,34 @@ RESOLVED section with the ruling recorded.
   v^1 support registered.
 - **Daniel's ruling:** (pending)
 
+### Q-134 — PAPER_138 NGC 3603 — cavity agreement manufactured + B_crit third value
+- **Question:** (a) CAVITY AGREEMENT MANUFACTURED: the printed
+  "R_cav = 21 ly (11 pct overshoot)" rests on a 1000x unit
+  slip - the paper's own chain gives 2.16e20 m = 22,867 LY
+  (7.0 kpc, written as "6.5 pc"); the code prints ~9,099 ly
+  (FALSIFIED OUTPUT No. 6); even the standard Weaver formula
+  gives 266 ly with these inputs. The formula also divides by
+  P_0 (nonstandard). Provide the intended cavity chain or
+  mark the 19-ly comparison open.
+  (b) MDOT 100x TEXT SLIP: text 6.32e21 kg/s vs correct
+  6.30e19 (the code has it right - text-vs-code inversion of
+  the usual pattern).
+  (c) PHYSICALITY: P_SCm = 1e28 Pa (white-dwarf-core scale
+  inside a molecular cloud) and "P_thermal ~ 1e11 Pa" (real
+  cloud cores ~1e-10 Pa) - both under the 100x star-formation
+  claim. Same P_SCm bookkeeping question as Q-132a.
+  (d) B_CRIT THIRD VALUE: 1e11 T here joins 4.4e9 (Schwinger,
+  PAPER_094) and 4.4e13 (catalog, PAPER_120) - the Q-002
+  B_crit ruling now adjudicates THREE values.
+- **Notable:** M(t) chains EXACT (M_0 = 7.956e35; M(tau) =
+  547,152; P_0 = 4e-8); H_0 = 2.269e-18 /s consistent with
+  the predecessor A_5+SO_5 = 70 route; the cavity-as-
+  buoyancy-wave mechanism (cos(pi t_n) preventing recollapse)
+  is the distinctive claim.
+- **Best-candidate wired:** burst model with EXACT chains;
+  manufactured agreement + slips + fork growth pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

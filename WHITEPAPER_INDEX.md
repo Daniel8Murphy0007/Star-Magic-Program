@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 141 (11 ✓, 130 ⚠ OPEN_RULING)
+- **Wired:** 142 (11 ✓, 131 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2114
+- **Not yet touched:** 2113
 
 ---
 
@@ -610,7 +610,7 @@
 | ⬜ | PAPER_1387 | KLEIN GORDON NEGATIVE ENERGY |
 | ⬜ | PAPER_1388 | SUPPLEE SUBMARINE |
 | ⬜ | PAPER_1389 | LADDER POLE AND BARN |
-| ⬜ | PAPER_138 | UQFF NGC3603 ClusterBurst MassEvolution SCm PFeedback |
+| ⚠ | PAPER_138 | UQFF NGC3603 ClusterBurst MassEvolution SCm PFeedback |
 | ⬜ | PAPER_1390 | TROUTON NOBLE |
 | ⬜ | PAPER_1391 | HANBURY BROWN TWISS |
 | ⬜ | PAPER_1392 | RENNINGER NEGATIVE RESULT |

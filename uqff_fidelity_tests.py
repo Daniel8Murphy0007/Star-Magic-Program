@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.140.0", "uqff_calculator.VERSION = 0.140.0")
+assert_that(C.VERSION == "0.141.0", "uqff_calculator.VERSION = 0.141.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2069,6 +2069,21 @@ assert_that(_r137['ereact_ladder_max'] == 1e21 and _r137['n_needed_for_1e46'] ==
 assert_that(abs(_r137['rho_ladder_n26'] - 1e28) < 1e22,
             "PAPER_137: rho ladder self-consistent (n=26 -> 1e28)")
 assert_that(C.wired_count() >= 141, "wired_count >= 141")
+
+_r138 = C.calc('PAPER_138')['value']
+assert_that(abs(_r138['m_at_tau_msun'] - 547152) < 1,
+            "PAPER_138: M(tau) = 547,152 M_sun EXACT")
+assert_that(abs(_r138['p0_pa'] - 4e-8) < 1e-11,
+            "PAPER_138: P_0 = 4e-8 Pa EXACT")
+assert_that(_r138['cavity_chain_ly'] > 20000 and abs(_r138['cavity_code_ly'] - 9099) < 10,
+            "PAPER_138: cavity chain 22,867 ly / code 9,099 ly vs printed 21 - 1000x slip, falsified output No. 6 (Q-134a)")
+assert_that(abs(_r138['cavity_weaver_ly'] - 266) < 1,
+            "PAPER_138: standard Weaver gives 266 ly with these inputs (observed 19)")
+assert_that(len(_r138['b_crit_fork']) == 3,
+            "PAPER_138: B_crit THIRD value (1e11) - Q-002 fork now 3 values (Q-134d)")
+assert_that(abs(_r138['h0_si'] - 2.269e-18) < 0.001e-18,
+            "PAPER_138: H_0 = 2.269e-18 /s EXACT (PAPER_1573 route consistent)")
+assert_that(C.wired_count() >= 142, "wired_count >= 142")
 
 # =============================================================================
 # REPORT

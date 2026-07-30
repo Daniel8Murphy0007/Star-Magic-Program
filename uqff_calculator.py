@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.140.0"
+VERSION = "0.141.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7283,5 +7283,63 @@ def _paper_137(dataset):
         'formula': 'E_n = E_0*10^n; rho^(n) = 1e15*10^(n-13); E_react^(n) = 10^(n-5)',
         'source': 'PAPER_137',
         'residual_pct': abs(1e15 * 10 ** 13 - 1e28) / 1e28 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_138')
+def _paper_138(dataset):
+    """NGC 3603 Cluster Burst: M(t) + P(t) Cavity (S0, sec 2.1).
+
+    M(t) = M_0(1+e^(-t/tau_SF)) burst evolution + SCm wind-
+    feedback cavity as buoyancy wave. VERIFIED EXACT: M_0 =
+    7.956e35 kg; M(tau) = 547,152 M_sun; P_0 = 4e-8 Pa;
+    H_0 = 70 -> 2.269e-18 /s (PAPER_1573 route consistent);
+    Lambda c^2/3 = 3.3e-36 (printed 3.6e-36, units s^-1
+    should be s^-2).
+    CAVITY AGREEMENT MANUFACTURED (Q-134a): the printed "21
+    ly, 11 pct overshoot" rests on a 1000x unit slip - the
+    paper's own chain gives 2.16e20 m = 22,867 LY (7.0 kpc),
+    its code prints ~9,099 ly (FALSIFIED OUTPUT No. 6), and
+    even the standard Weaver formula gives 266 ly with these
+    inputs. The formula also divides by P_0 (nonstandard;
+    Weaver has no such division).
+    MDOT 100x TEXT SLIP (Q-134b): text 6.32e21 kg/s vs
+    correct 6.30e19 (the CODE has it right).
+    PHYSICALITY (Q-134c): P_SCm = 1e28 Pa (white-dwarf-core
+    scale inside a molecular cloud) and P_thermal = 1e11 Pa
+    (real cloud cores ~1e-10 Pa) - both flags on the 100x
+    star-formation-rate claim.
+    B_CRIT THIRD VALUE (Q-134d): 1e11 T here vs 4.4e9
+    (Schwinger, PAPER_094) vs 4.4e13 (catalog, PAPER_120) -
+    the Q-002 fork now has THREE values.
+    """
+    import math as _m
+    mdot = 100 * 1e-5 * 1.989e30 / (365.25 * 86400)
+    Edot = 0.5 * mdot * (2e6) ** 2
+    t = 1e6 * 365.25 * 86400
+    return {
+        'value': {
+            'domain': '2.1 (NGC 3603 cluster burst)',
+            'm0_kg': 400e3 * 1.989e30,                       # 7.956e35 EXACT
+            'm_at_tau_msun': 400e3 * (1 + _m.exp(-1)),       # 547,152 EXACT
+            'p0_pa': 1e-20 * (2e6) ** 2,                     # 4e-8 EXACT
+            'h0_si': 70e3 / 3.0857e22,                       # 2.269e-18 (1573 route)
+            'mdot_true': mdot,                               # 6.30e19 (text 100x high)
+            'cavity_chain_ly': 2.1635e20 / 9.461e15,         # 22,867 - not 21
+            'cavity_code_ly': (3 * Edot * t ** 3 / (2 * _m.pi * 1e-20 * 4e-8)) ** 0.2 / 9.461e15,  # 9,099
+            'cavity_weaver_ly': 0.76 * (Edot * t ** 3 / 1e-20) ** 0.2 / 9.461e15,  # 266
+            'cavity_observed_ly': 19,
+            'falsified_output_no6': 'code prints ~9,099 ly; printed agreement 21 ly is a 1000x unit slip',
+            'p_scm_pa': 1e15 * (1e8) ** 2 * 1e-3,            # 1e28 physicality flag
+            'p_thermal_claim_pa': 1e11,                       # vs real ~1e-10
+            'b_crit_third_value': 1e11,
+            'b_crit_fork': (4.4e9, 4.4e13, 1e11),
+            'lambda_c2_3': 1.1e-52 * 9e16 / 3,               # 3.3e-36
+            'buoyancy_wave_claim': 'cavity = Ub wave, not mechanical bubble',
+        },
+        'formula': 'M(t) = M_0(1+e^-t/tau); R_cav = (3 E t^3 / 2pi rho P_0)^(1/5) [nonstandard]',
+        'source': 'PAPER_138',
+        'residual_pct': abs(400e3 * (1 + _m.exp(-1)) - 547200) / 547200 * 100,
         'status': 'OPEN_RULING',
     }
