@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.145.0", "uqff_calculator.VERSION = 0.145.0")
+assert_that(C.VERSION == "0.146.0", "uqff_calculator.VERSION = 0.146.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2140,6 +2140,21 @@ assert_that(_r142['s_shell_island_fork'] == (29.8, 31.0),
 assert_that(abs(_r142['island_ratio'] - 1.80) < 0.01,
             "PAPER_142: island resonance 1.80x Pb - falsifiable prediction")
 assert_that(C.wired_count() >= 146, "wired_count >= 146")
+
+_r143 = C.calc('PAPER_143')['value']
+assert_that(abs(_r143['uqff_share_primitive'] - 0.4) < 1e-15 and abs(_r143['qm_share_primitive'] - 0.6) < 1e-15,
+            "PAPER_143: 40/60 split = (D_PHYS, D_BSFG)/SO_FIVE EXACT primitive decomposition (Q-139a)")
+assert_that(abs(_r143['ratio_backsolved'] - 4 / 6) < 0.001,
+            "PAPER_143: back-solved ratio 2/3 = D_PHYS/D_BSFG (PAPER_2154 predecessor identity)")
+assert_that(abs(_r143['g_qm_bohr'] - 4.52e22) < 0.01e22,
+            "PAPER_143: g_QM(Bohr) = 4.52e22 EXACT")
+assert_that('hardcoded' in _r143['code_circular'] and 'cannot run' in _r143['code_syntax_error'],
+            "PAPER_143: split circularly inserted + code block syntax error (Q-139b)")
+assert_that(abs(_r143['lambda_chain'] - 8.58e-10) < 0.01e-10,
+            "PAPER_143: lambda chain 8.58e-10 vs printed 8.59e-19 - 1e9 slip, mantissa exact (Q-139c)")
+assert_that(abs(_r143['anomaly_targets']['neutron_lifetime_s'] - 8.4) < 0.01,
+            "PAPER_143: four real anomaly targets registered (explanations restate gaps)")
+assert_that(C.wired_count() >= 147, "wired_count >= 147")
 
 # =============================================================================
 # REPORT

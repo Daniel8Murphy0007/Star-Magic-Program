@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.145.0"
+VERSION = "0.146.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7560,5 +7560,64 @@ def _paper_142(dataset):
         'formula': 'H_res = A_res sin(2pi f t) + U_dp SCm k_nuc + S_shell + U_r E_trans',
         'source': 'PAPER_142',
         'residual_pct': abs(kA * 28 * (62 / AH) * 2.397 - 1900) / 1900 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_143')
+def _paper_143(dataset):
+    """MUGE 40/60 Quantum-Gravity Bridge (S0, sec 2.1).
+
+    g_bridge = 0.6*g_QM + 0.4*g_UQFF - the claimed exact split
+    between Schrodinger/Dirac and UQFF contributions.
+    PRIMITIVE FIND (Q-139a): the split back-solves to
+    g_UQFF/g_QM = 2.2/3.3 = 2/3 = D_PHYS/D_BSFG EXACT
+    (predecessor PAPER_2154 identity), with shares
+    UQFF = D_PHYS/(D_PHYS+D_BSFG) = 4/10 = 0.4 EXACT and
+    QM = D_BSFG/10 = 0.6 EXACT - and D_PHYS + D_BSFG = 10 =
+    SO_FIVE. The 40/60 split IS the primitive pair normalized
+    by SO_five. This can rescue the derived-not-assumed claim.
+    AS-PRINTED CIRCULAR (Q-139b): the nuclear-surface
+    g_UQFF = 2.2e34 is UNDERIVED, and the code literally
+    hardcodes g_UQFF_nuc = 0.67*g_QM_nuc - the split is
+    inserted, not derived. AND the code block contains
+    "f_{sc\_300K}" (LaTeX braces in Python) - SYNTAX ERROR,
+    cannot run at all (broken code block No. 8).
+    VERIFIED EXACT: g_QM(Bohr) = 4.52e22; f_sc(300K) =
+    4.98e-3; f_sc(10K) = 0.0905; neutron gap 8.4 s real.
+    LAMBDA 1e9 EXPONENT SLIP (Q-139c): chain 8.58e-10 vs
+    printed 8.59e-19 - mantissa exact (family pattern);
+    proton-stability conclusion robust either way.
+    ANOMALY TABLE RESTATES (Q-139d): four REAL anomalies
+    (proton radius 0.036 fm, muonic Lamb +68 meV, g-2 ~6e-12,
+    neutron lifetime 8.4 s) enumerated, but each UQFF
+    "explanation" just restates the observed gap - zero
+    derivations. Real physics targets, no chains yet.
+    """
+    return {
+        'value': {
+            'domain': '2.1 (quantum-gravity bridge)',
+            'split': (0.6, 0.4),
+            'ratio_backsolved': 2.2 / 3.3,                   # 2/3
+            'primitive_ratio': 4 / 6,                        # D_PHYS/D_BSFG EXACT
+            'uqff_share_primitive': 4 / (4 + 6),             # 0.4 EXACT
+            'qm_share_primitive': 6 / 10,                    # 0.6 EXACT
+            'primitive_find': 'split = D_PHYS : D_BSFG normalized by SO_FIVE (their sum = 10)',
+            'predecessor_link': 'ratio 2/3 = PAPER_2154 D_phys/D_BSFG identity',
+            'g_qm_bohr': 13.6 * 1.602e-19 / (9.109e-31 * 0.529e-10),  # 4.52e22 EXACT
+            'g_uqff_nuc_underived': 2.2e34,
+            'code_circular': 'g_UQFF_nuc = 0.67*g_QM hardcoded - split inserted',
+            'code_syntax_error': 'LaTeX braces in Python - block cannot run (No. 8)',
+            'lambda_chain': 2.27e-18 * 1.67e-27 * 9e16 / (1.055e-34 * 3.77e15),  # 8.58e-10
+            'lambda_printed': 8.59e-19,                       # 1e9 slip, mantissa exact
+            'f_sc_300k': 0.004979,
+            'f_sc_10k': 0.0905,
+            'anomaly_targets': {'proton_radius_fm': 0.036, 'muonic_lamb_mev': 67.85,
+                                'g2_gap': 6e-12, 'neutron_lifetime_s': 8.4},
+            'anomaly_status': 'four real targets; explanations restate gaps (no chains)',
+        },
+        'formula': 'g_bridge = 0.6 g_QM + 0.4 g_UQFF; shares = (D_BSFG, D_PHYS)/SO_FIVE',
+        'source': 'PAPER_143',
+        'residual_pct': abs(2.2 / 3.3 - 4 / 6) / (4 / 6) * 100,
         'status': 'OPEN_RULING',
     }

@@ -3042,6 +3042,39 @@ RESOLVED section with the ruling recorded.
   alpha_G exposed; pairing chaos + island fork pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-139 — PAPER_143 40/60 Bridge — split = (D_phys, D_BSFG)/SO_five find
+- **Question:** (a) PRIMITIVE FIND (headline): the 40/60
+  split back-solves to g_UQFF/g_QM = 2.2/3.3 = 2/3 =
+  D_PHYS/D_BSFG EXACT (the predecessor PAPER_2154 identity),
+  with shares UQFF = D_PHYS/(D_PHYS+D_BSFG) = 4/10 = 0.4
+  EXACT, QM = D_BSFG/10 = 0.6 EXACT - and the normalizer
+  D_PHYS + D_BSFG = 10 = SO_FIVE. The 40/60 split IS the
+  primitive pair normalized by SO_five. Canonize this
+  decomposition (it rescues the paper's derived-not-assumed
+  claim, which otherwise fails per (b))?
+  (b) AS-PRINTED CIRCULAR: the nuclear-surface g_UQFF =
+  2.2e34 is underived, and the verification code literally
+  hardcodes g_UQFF_nuc = 0.67*g_QM_nuc - the split is
+  inserted, not derived. The code block ALSO contains LaTeX
+  braces in a Python identifier - SYNTAX ERROR, cannot run
+  (broken block No. 8).
+  (c) LAMBDA 1e9 EXPONENT SLIP: chain 8.58e-10 vs printed
+  8.59e-19 - mantissa exact (family pattern); the proton-
+  stability conclusion is robust either way.
+  (d) ANOMALY TABLE: four REAL anomalies enumerated (proton
+  radius 0.036 fm, muonic Lamb +68 meV, electron g-2 ~6e-12,
+  neutron beam-bottle 8.4 s) but each UQFF "explanation"
+  restates the observed gap with no derivation. Queue the
+  four as OPEN derivation targets rather than validations?
+- **Notable:** g_QM(Bohr) = 4.52e22 EXACT; f_sc chains EXACT
+  (4.98e-3 / 0.0905); the bridge-equation form g = 0.6 g_QM +
+  0.4 g_UQFF is the framework's most compact unification
+  statement, and under (a) it becomes primitive-locked.
+- **Best-candidate wired:** primitive decomposition exposed
+  as the rescue; circularity + syntax error + slip pinned;
+  four anomaly targets registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

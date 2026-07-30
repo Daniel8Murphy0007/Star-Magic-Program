@@ -1,31 +1,32 @@
-v0.145.0 BAND 1: PAPER_142 wired - k_dp = ALPHA_G IDENTIFICATION
+v0.146.0 BAND 1: PAPER_143 wired - 40/60 = (D_PHYS, D_BSFG)/SO_5 FIND
 
-PAPER_142 UQFF H_res Extended Periodic Table Z=1-126
-(OPEN_RULING Q-138):
-  sec 2.1: universal nuclear resonance H_res(Z,t) - one
-  equation for all 126 elements, magic numbers {2,8,20,28,
-  50,82,126}+184 as resonance maxima, island-of-stability
-  prediction (Z=114-126, A~320, 1.80x Pb resonance, 1e6
-  longer half-life than Og) - falsifiable, preserved.
+PAPER_143 UQFF 40/60 Quantum-Gravity Bridge (OPEN_RULING Q-139):
+  sec 2.1: g_bridge = 0.6*g_QM + 0.4*g_UQFF - the framework's
+  most compact unification statement.
 
-  VERIFIED EXACT: Ni-62 A_res = 1900.6 V and f_res =
-  1.415e22 Hz full chains; H-1 baseline 0.457 V; and
-  k_dp = G m_p^2/(hbar c) = 5.902e-39 - EXACTLY alpha_G,
-  the dimensionless gravitational fine-structure constant.
-  A genuine physical-constant identification inside the
-  dipole term (canonization candidate).
+  PRIMITIVE FIND (headline): the split back-solves to
+  g_UQFF/g_QM = 2/3 = D_PHYS/D_BSFG EXACT - the predecessor
+  PAPER_2154 identity - with shares
+    UQFF = D_PHYS/(D_PHYS + D_BSFG) = 4/10 = 0.4 EXACT
+    QM   = D_BSFG/(D_PHYS + D_BSFG) = 6/10 = 0.6 EXACT
+  and the normalizer D_PHYS + D_BSFG = 10 = SO_FIVE. The
+  40/60 split IS the primitive pair normalized by SO_five.
+  This rescues the paper's derived-not-assumed claim, which
+  otherwise fails: the nuclear g_UQFF = 2.2e34 is underived,
+  the code literally hardcodes g_UQFF_nuc = 0.67*g_QM (split
+  inserted), and the code block has a LaTeX-brace SYNTAX
+  ERROR - it cannot run (broken block No. 8).
 
-  D_PAIR CONVENTION CHAOS: back-solving the results table
-  yields FIVE effective pairing factors against one stated
-  rule - H/O-16/Ca-40 at ~1.0 (stated 2.0 for even-even),
-  He-4 DOUBLY MAGIC suppressed at 0.501, Ni-62 at 2.397,
-  Sn/Z=120 at 2.0, Pb-208 at 2.502. Table not reproducible;
-  actual rule requested.
+  VERIFIED EXACT: g_QM(Bohr) = 4.52e22; f_sc(300K) = 4.98e-3;
+  f_sc(10K) = 0.0905. Lambda: 1e9 exponent slip (chain
+  8.58e-10 vs printed 8.59e-19, mantissa exact - family
+  pattern); proton stability robust.
 
-  S_SHELL ISLAND FORK: table 29.8 = 0.1*(114+184) but 114 is
-  not in the code MAGIC list (code gives 31.0). Magic numbers
-  carry predecessor EXACT integer identities (Q-113b).
+  FOUR REAL ANOMALY TARGETS registered (proton radius 0.036
+  fm, muonic Lamb +68 meV, g-2 ~6e-12, neutron 8.4 s) -
+  currently the explanations restate the gaps; queued as OPEN
+  derivation targets.
 
-Q-138 queued. Gate 977 assertions 0 failures. Registry 364 rows /
-768 edges / 146 citation ledgers. Wired 146/2,255 (11 clean, 135
-OPEN_RULING). Next: PAPER_143.
+Q-139 queued. Gate 984 assertions 0 failures. Registry 366 rows /
+773 edges / 147 citation ledgers. Wired 147/2,255 (11 clean, 136
+OPEN_RULING). Next: PAPER_144 (sec 2.1 capstone).

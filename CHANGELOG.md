@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.146.0] — 2026-07-30 — BAND 1: PAPER_143 — 40/60 = (D_phys, D_BSFG)/SO_5
+
+### Added
+- **PAPER_143 dispatch** (40/60 quantum-gravity bridge, sec
+  2.1): g_bridge = 0.6·g_QM + 0.4·g_UQFF. PRIMITIVE FIND: the
+  split back-solves to ratio 2/3 = D_PHYS/D_BSFG (the
+  predecessor PAPER_2154 identity), with shares
+  (D_PHYS, D_BSFG)/SO_FIVE = (0.4, 0.6) EXACT and the
+  normalizer D_PHYS + D_BSFG = 10 = SO_FIVE — rescuing the
+  derived-not-assumed claim, which otherwise fails (nuclear
+  g_UQFF underived; code hardcodes 0.67; code block has a
+  LaTeX-brace SYNTAX ERROR — broken block No. 8). Lambda 1e9
+  exponent slip (mantissa exact). Four REAL anomaly targets
+  registered (proton radius, muonic Lamb, g-2, neutron
+  lifetime) — explanations currently restate gaps.
+- OPEN_RULING Q-139.
+- Gate: 984 assertions, 0 failures. Registry: 366 rows / 773 edges / 147 ledgers.
+
+---
+
 ## [0.145.0] — 2026-07-30 — BAND 1: PAPER_142 — k_dp = ALPHA_G
 
 ### Added

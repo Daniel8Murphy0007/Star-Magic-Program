@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 146 (11 ✓, 135 ⚠ OPEN_RULING)
+- **Wired:** 147 (11 ✓, 136 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2109
+- **Not yet touched:** 2108
 
 ---
 
@@ -665,7 +665,7 @@
 | ⬜ | PAPER_1437 | BUCKET C EDGES 21CM |
 | ⬜ | PAPER_1438 | BUCKET C JWST HIGH Z |
 | ⬜ | PAPER_1439 | BUCKET C INFLATION T NEG |
-| ⬜ | PAPER_143 | UQFF 40pct Contribution MUGE vs Prior SchrodingerDirac Bridge |
+| ⚠ | PAPER_143 | UQFF 40pct Contribution MUGE vs Prior SchrodingerDirac Bridge |
 | ⬜ | PAPER_1440 | BUCKET C INFLATON N S |
 | ⬜ | PAPER_1441 | BUCKET D LITHIUM 7 |
 | ⬜ | PAPER_1442 | BUCKET D STERILE NEUTRINO |

@@ -768,3 +768,8 @@ observable,hres_periodic_table,paper,PAPER_142,H_res equation
 observable,hres_periodic_table,paper,PAPER_137,ladder crosslink
 observable,hres_dpair_chaos,paper,PAPER_142,pairing chaos
 observable,hres_dpair_chaos,paper,PAPER_124,magic-number lineage
+observable,muge_4060_bridge,paper,PAPER_143,bridge equation
+primitive,D_PHYS,observable,muge_4060_bridge,UQFF share numerator
+primitive,D_BSFG,observable,muge_4060_bridge,QM share numerator
+primitive,SO_FIVE,observable,muge_4060_bridge,normalizer = sum
+observable,muge_4060_defects,paper,PAPER_143,circular insertion

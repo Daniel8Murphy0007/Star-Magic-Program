@@ -1791,3 +1791,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 146/2,255 (11 ✓, 135 ⚠). Next: PAPER_143.
 
 ---
+
+## 2026-07-30 — v0.146.0 — BAND 1: PAPER_143
+
+- PAPER_143 wired (⚠ Q-139): 40/60 bridge. Primitive find
+  (split = (D_phys, D_BSFG)/SO_5 EXACT); circular-as-printed
+  pinned; four anomaly targets queued.
+- Campaign: 147/2,255 (11 ✓, 136 ⚠). Next: PAPER_144.
+
+---
