@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.153.0"
+VERSION = "0.154.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8009,5 +8009,58 @@ def _paper_150(dataset):
         'formula': 'afluid floor = v_SCm^2 tau/(Evac R^2); M_Jeans_MUGE = M_std/(1 + afluid/g_Newt)',
         'source': 'PAPER_150',
         'residual_pct': abs(1e16 * 1.728e8 / (7.09e-36 * (3.1e16) ** 2) - 2.54e26) / 2.54e26 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_151')
+def _paper_151(dataset):
+    """Pillars + Rings: MUGE Cascade Steps (S0, sec 2.2).
+
+    Fourth Cycle 3 system paper: Pillars g = 2.001e26,
+    Rings g = 5.005e25 (cascade steps /5, /4 from the SFR
+    floor). VERIFIED EXACT: r_E = 1.498e20 m; lap_arc =
+    1.33e-32; theta_E-correction arithmetic 8.34e28; cascade
+    ratios 5.002/3.998.
+    VALUE FINGERPRINT (Q-147a, block-level): the system g
+    mantissas {1.001, 2.001, 5.005, 4.105} = round numbers
+    {1, 2, 5, 4.1} x (1 + 1e-3) = x(1 + P_SCM) - the 7-system
+    table is a 1-2-5 engineering-decade ladder times
+    (1 + P_SCm). Strong evidence the values are ASSIGNED
+    parametrically, not computed - reframes the Q-141c MUGE-g
+    identification (values = placeholders with a P_SCm tag).
+    LENSING 30-ORDER FLAG (Q-147b): theta_E_MUGE = theta_E_GR
+    x (1 + 8.3e28) - the paper admits "enormous" and
+    hand-waves dark-matter consistency, but observed Einstein
+    rings match GR to ~1 pct; unless MUGE-g is scoped away
+    from photon paths (the 148/149 identification), this is
+    falsified by 30 orders. Same scope rule as 150's Jeans
+    mix.
+    B-LABEL SLIP AGAIN (Q-147c): SOURCE4 pillars B = 1.0e-7 T
+    labeled "100 muG" (= 1e-8 T) - 10x, the 150 family.
+    Honest notes: "Rings of Relativity" disclosed as a
+    parametric Einstein-ring class, not one object; Pillars
+    astronomy inputs (7000 ly, 70 M_Earth/yr evaporation,
+    10 Msun pillars) are real values.
+    """
+    return {
+        'value': {
+            'domain': '2.2 (Pillars + Rings validation)',
+            'g_pillars': 2.001e26,
+            'g_rings': 5.005e25,
+            'cascade_ratios': (1.001e27 / 2.001e26, 2.001e26 / 5.005e25),  # 5.00, 4.00
+            'fingerprint_factor': 1.001,
+            'fingerprint': 'g = round{1,2,5,4.1} x (1 + P_SCM) decade ladder - values assigned',
+            'p_scm_tag': 1 + 1e-3,
+            'r_e_m': 3.09e25 / 206265,                        # 1.498e20 EXACT
+            'lap_arc': 3e8 / (1.5e20) ** 2,                   # 1.33e-32 EXACT
+            'theta_correction': 5.005e25 * 1.5e20 / 9e16,     # 8.34e28 EXACT arithmetic
+            'lensing_flag': 'x(1+8.3e28) vs observed GR-match ~1 pct - 30 orders unless scoped away',
+            'b_label_slip': '1.0e-7 T labeled 100 muG (true 1e-8) - 10x family',
+            'honest_notes': 'Rings = parametric class disclosed; Pillars astronomy real',
+        },
+        'formula': 'cascade g_n ~ round x (1+P_SCm) x 10^-k; theta_E_MUGE = theta_GR(1 + a r_E/c^2)',
+        'source': 'PAPER_151',
+        'residual_pct': abs(3.09e25 / 206265 - 1.5e20) / 1.5e20 * 100,
         'status': 'OPEN_RULING',
     }

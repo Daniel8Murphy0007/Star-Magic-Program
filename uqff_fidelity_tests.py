@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.153.0", "uqff_calculator.VERSION = 0.153.0")
+assert_that(C.VERSION == "0.154.0", "uqff_calculator.VERSION = 0.154.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2246,6 +2246,19 @@ assert_that(abs(_r150['periodicity_prediction_yr'] - 19.9) < 0.1,
 assert_that(abs(_r150['implied_ratio'] - 500) < 1,
             "PAPER_150: table implies nu*lap_v/Evac = 500 (formula-vs-table family)")
 assert_that(C.wired_count() >= 154, "wired_count >= 154")
+
+_r151 = C.calc('PAPER_151')['value']
+assert_that(abs(_r151['cascade_ratios'][0] - 5.0) < 0.01 and abs(_r151['cascade_ratios'][1] - 4.0) < 0.01,
+            "PAPER_151: cascade ratios 5.00/4.00 EXACT")
+assert_that(abs(_r151['p_scm_tag'] - 1.001) < 1e-6,
+            "PAPER_151: VALUE FINGERPRINT - system g = round x (1 + P_SCM) decade ladder (Q-147a)")
+assert_that(abs(_r151['r_e_m'] - 1.498e20) < 0.001e20,
+            "PAPER_151: Einstein radius 1.498e20 m EXACT")
+assert_that(_r151['theta_correction'] > 8e28,
+            "PAPER_151: lensing correction 8.3e28 - 30-order observation flag unless scoped (Q-147b)")
+assert_that('10x' in _r151['b_label_slip'],
+            "PAPER_151: B-label 10x slip pinned (150 family) (Q-147c)")
+assert_that(C.wired_count() >= 155, "wired_count >= 155")
 
 # =============================================================================
 # REPORT

@@ -1866,3 +1866,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 154/2,255 (11 ✓, 143 ⚠). Next: PAPER_151.
 
 ---
+
+## 2026-07-30 — v0.154.0 — BAND 1: PAPER_151
+
+- PAPER_151 wired (⚠ Q-147): Pillars/Rings. FINGERPRINT: 7-
+  system values = 1-2-5 ladder x (1+P_SCm), assigned not
+  computed; lensing 30-order scope flag; Q-141 annotated.
+- Campaign: 155/2,255 (11 ✓, 144 ⚠). Next: PAPER_152.
+
+---

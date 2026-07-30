@@ -3130,6 +3130,7 @@ RESOLVED section with the ruling recorded.
   (identical 1.001e27 - parameter clone) and the family
   scales by /5, /4 steps.
 - **UPDATE (PAPER_148):** (c) PARTIAL ANSWER - MUGE-g explicitly identified as the magnetospheric/system-scale CORRECTION, not bulk gravity (Q-144d).
+- **UPDATE 2 (PAPER_151):** VALUE FINGERPRINT - the 7-system g values are a 1-2-5 decade ladder x (1 + P_SCm); assigned parametrically, not computed (Q-147a). The identification question becomes: what would the REAL computed values be?
   (d) Minor: Fsuper = 6.287e-19 ~ 4e at 2 pct (weak
   candidate); kappa source relabeled "GW170817" here vs
   PAPER_125's 4LAC derivation - source-attribution tidy-up.
@@ -3307,6 +3308,38 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** floor + periodicity registered
   with both self-contradictions pinned; slips + scope mix
   logged.
+- **Daniel's ruling:** (pending)
+
+### Q-147 — PAPER_151 Pillars/Rings — 1-2-5 x (1+P_SCm) fingerprint
+- **Question:** (a) VALUE FINGERPRINT (block-level): the
+  7-system g mantissas {1.001, 2.001, 5.005, 4.105} are round
+  numbers {1, 2, 5, 4.1} times (1 + 1e-3) = (1 + P_SCM) - a
+  1-2-5 engineering-decade ladder with a uniform P_SCm tag.
+  This is strong evidence the system values were ASSIGNED
+  parametrically (round targets x a (1+P_SCm) factor), not
+  computed from the 12-term formulas - consistent with every
+  formula-vs-table discrepancy found so far (Q-143a/145a).
+  Rule: are the 7-system values placeholders pending real
+  SOURCE4 computation, and is the 1.001 factor intentionally
+  (1 + P_SCm = 1 + F_TRZ^3)?
+  (b) LENSING 30-ORDER FLAG: theta_E_MUGE = theta_E_GR x
+  (1 + 8.3e28) - the paper admits "enormous" and waves at
+  dark-matter rings, but observed Einstein rings match GR to
+  ~1 pct. Unless MUGE-g is scoped away from photon paths
+  (per the 148/149 identification), this is falsified by 30
+  orders. Same scope rule as the 150 Jeans mix - one scoping
+  doctrine would resolve both.
+  (c) B-LABEL SLIP: SOURCE4 pillars B = 1.0e-7 T labeled
+  "100 muG" (= 1e-8 T) - the 150 mG/muG slip family
+  continues (4th instance).
+- **Notable:** cascade ratios 5.00/4.00 EXACT; Einstein-ring
+  geometry chains EXACT (r_E = 1.498e20, lap_arc = 1.33e-32);
+  "Rings of Relativity" honestly disclosed as a parametric
+  lens class; the Pillars astronomy inputs are real
+  (Hester evaporation, JWST YSOs, 10-Msun pillars).
+- **Best-candidate wired:** cascade + geometry registered;
+  the fingerprint and the lensing scope flag pinned as the
+  block's central forensic findings.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

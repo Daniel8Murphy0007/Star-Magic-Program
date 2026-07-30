@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.153.0"
-description = "UQFF Star-Magic-Program v0.153.0: PAPER_150 wired - Tapestry/Westerlund SFR resonance (clone reframed as universal saturation floor + 20-yr periodicity prediction; but floor formula gives 1e6-different values at own radii and Westerlund fails the SFR precondition by 4+ orders; SOURCE4 unit slips; distance fork; Jeans scope mix). Q-146 queued. Wired 154/2255, gate 1026/0. Registry 377 rows / 803 edges / 154 ledgers (measured)."
+version = "0.154.0"
+description = "UQFF Star-Magic-Program v0.154.0: PAPER_151 wired - Pillars/Rings cascade (FINGERPRINT FOUND: 7-system g values = 1-2-5 decade ladder x (1+P_SCm) - assigned not computed, reframes the MUGE-g question; lensing correction 8.3e28 flagged 30 orders vs observed rings unless scoped; geometry chains EXACT). Q-147 queued. Wired 155/2255, gate 1032/0. Registry 379 rows / 807 edges / 155 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

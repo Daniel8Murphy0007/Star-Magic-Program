@@ -802,3 +802,7 @@ observable,sfr_saturation_floor,paper,PAPER_150,floor claim
 observable,sfr_saturation_floor,paper,PAPER_146,afluid application
 observable,sfr_source4_slips,paper,PAPER_150,SOURCE4 slips
 observable,sfr_source4_slips,paper,PAPER_120,distance fork
+observable,pillars_rings_cascade,paper,PAPER_151,cascade steps
+observable,muge_value_fingerprint,paper,PAPER_151,fingerprint
+primitive,F_TRZ,observable,muge_value_fingerprint,P_SCm = F_TRZ^3 tag link
+observable,muge_value_fingerprint,paper,PAPER_145,7-system table reframe

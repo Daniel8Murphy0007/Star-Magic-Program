@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.154.0] — 2026-07-30 — BAND 1: PAPER_151 — VALUE FINGERPRINT
+
+### Added
+- **PAPER_151 dispatch** (Pillars + Rings cascade, sec 2.2):
+  cascade steps /5, /4 EXACT; Einstein-ring geometry chains
+  EXACT (r_E 1.498e20, lap_arc 1.33e-32); Rings honestly
+  disclosed as a parametric lens class. BLOCK-LEVEL
+  FINGERPRINT: the 7-system g mantissas are round {1, 2, 5,
+  4.1} × (1 + P_SCm = 1e-3) — a 1-2-5 decade ladder; the
+  values were ASSIGNED, not computed (consistent with every
+  formula-vs-table discrepancy; Q-141 annotated — the
+  identification question becomes what the real computed
+  values would be). LENSING 30-ORDER FLAG: theta_E ×
+  (1+8.3e28) vs observed GR-match ~1% unless MUGE-g is
+  scoped from photon paths (one scoping doctrine resolves
+  this + the 150 Jeans mix). B-label 10x slip family (4th).
+- OPEN_RULING Q-147.
+- Gate: 1,032 assertions, 0 failures. Registry: 379 rows / 807 edges / 155 ledgers (measured).
+
+---
+
 ## [0.153.0] — 2026-07-30 — BAND 1: PAPER_150 — FLOOR SELF-CONTRADICTION
 
 ### Added
