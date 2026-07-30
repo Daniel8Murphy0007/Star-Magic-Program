@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.133.0"
-description = "UQFF Star-Magic-Program v0.133.0: PAPER_130 wired - IceCube beta_i CRP calibration (0.061 PeV + inversion 0.600 EXACT; first fully clean d91b1f6c code block; canonical BETA_I improves fit 1.64 -> 0.48 pct; p_max internal factor-10 fork decides pass/fail; 22 pct degeneracy with standard kinematics noted). Q-126 queued. Wired 134/2255, gate 901/0. Registry 340 rows / 717 edges / 134 ledgers."
+version = "0.134.0"
+description = "UQFF Star-Magic-Program v0.134.0: PAPER_131 wired - Superconductive dual GW170817+RACS (Y_e = 0.0930 first-principles chain EXACT; RACS RECLASSIFIED quasar-vs-young-NS 1e5 scale fork; R = 1.5 aging dt back-solved, light travel gives 1.06; [UA] FIFTH value 0.168 ~ 1/6; ejecta 40 pct dual derivation). Q-127 queued. Wired 135/2255, gate 908/0. Registry 342 rows / 722 edges / 135 ledgers."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

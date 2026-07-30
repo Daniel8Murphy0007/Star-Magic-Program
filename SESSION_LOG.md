@@ -1682,3 +1682,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 134/2,255 (11 ✓, 123 ⚠). Next: PAPER_131.
 
 ---
+
+## 2026-07-29 — v0.134.0 — BAND 1: PAPER_131
+
+- PAPER_131 wired (⚠ Q-127): Superconductive dual. Y_e chain
+  EXACT; RACS reclassification fork (1e5); aging dt
+  back-solved; [UA] 5th value; ejecta dual derivation.
+- Campaign: 135/2,255 (11 ✓, 124 ⚠). Next: PAPER_132.
+
+---

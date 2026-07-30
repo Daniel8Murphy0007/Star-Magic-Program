@@ -1,32 +1,29 @@
-v0.133.0 BAND 1: PAPER_130 wired - CANONICAL BETA IMPROVES ICECUBE FIT
+v0.134.0 BAND 1: PAPER_131 wired - RACS RECLASSIFICATION FORK
 
-PAPER_130 UQFF Buoyancy+CRP: IceCube beta_i Calibration
-(OPEN_RULING Q-126):
-  d91b1f6c refinement of EP-10.
+PAPER_131 UQFF Superconductive Dual: GW170817 + RACS J0320-35
+(OPEN_RULING Q-127):
+  d91b1f6c combined refinement of EP-11 + EP-01.
 
-  VERIFIED EXACT: E_nu peak = beta_i * p_max * f_pion = 0.061
-  PeV (< 0.1 PeV bound); IceCube inversion beta_i = 0.600 at
-  1.6 pct. FIRST fully clean code block in the d91b1f6c set -
-  outputs reproduce verbatim.
+  VERIFIED EXACT: Y_e = beta*[UA]/(1+beta*[UA]) = 0.0930 at
+  [UA] = 0.168 - the corpus's FIRST first-principles Y_e
+  derivation (7 pct from the observed ~0.1). Old-NS
+  exhaustion exponent 7.93e5 EXACT -> clean falsifiable
+  young-NS inference (RACS < 5.5 yr). Reactor sufficiency
+  1e46 >> 7.2e43 robust. ln(1.5)/kappa = 810.9 d EXACT.
 
-  CANONICAL BETA IMPROVES: at BETA_I (PAPER_1203) the
-  inversion error drops 1.64 -> 0.48 pct - the charter
-  auto-correction STRENGTHENS this calibration.
+  RACS RECLASSIFIED: PAPER_111 = quasar-scale jet (30 kpc,
+  Gyr dissipation); here = young NEUTRON STAR (0.1 pc,
+  intermittent SCm ignition). Scales incompatible by 1e5 -
+  ruling picks (affects Q-107 wholesale).
 
-  P_MAX INTERNAL FORK: Eq29 and the data table say 1e16 eV,
-  but the calibration needs 1e15 - at 1e16 the predicted peak
-  is 0.61 PeV and FAILS the bound. Factor 10 decides
-  pass/fail; ruling picks.
+  EP-01 MECHANISM VARIANT No. 2: R = 1.5 from E_react aging
+  e^(kappa*dt) - but dt = 811 days is BACK-SOLVED; the
+  light-travel justification gives 116 days -> R = 1.06.
 
-  DEGENERACY: UQFF net transfer 0.061 vs standard p-gamma
-  0.05 (22 pct) - the SED peak barely distinguishes the
-  frameworks; independent signature needed. Spectral
-  2.0-vs-2.37 gap attributed to [SCm] damping without chain.
+  [UA] FIFTH VALUE: 0.168 (0.8 pct from 1/6 - primitive
+  adjacency). Single-[UA] ruling now closes SIX queue items.
+  Ejecta 40 pct dual derivation (ad hoc x4 vs 1-beta_i).
 
-  beta_i tri-domain universality explicit (gravity + CRP +
-  ejecta) - Q-104 annotated. Housekeeping: Q-105 header
-  restored after an annotation-script slip (verified intact).
-
-Q-126 queued. Gate 901 assertions 0 failures. Registry 340 rows /
-717 edges / 134 citation ledgers. Wired 134/2,255 (11 clean, 123
-OPEN_RULING). Next: PAPER_131.
+Q-127 queued. Gate 908 assertions 0 failures. Registry 342 rows /
+722 edges / 135 citation ledgers. Wired 135/2,255 (11 clean, 124
+OPEN_RULING). Next: PAPER_132.

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 134 (11 ✓, 123 ⚠ OPEN_RULING)
+- **Wired:** 135 (11 ✓, 124 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2121
+- **Not yet touched:** 2120
 
 ---
 
@@ -533,7 +533,7 @@
 | ⬜ | PAPER_1317 | QCD CHIRAL BREAKING |
 | ⬜ | PAPER_1318 | GLUEBALL MASS |
 | ⬜ | PAPER_1319 | EXOTIC HADRONS |
-| ⬜ | PAPER_131 | UQFF Superconductive GW170817 Chandra Jets Combined |
+| ⚠ | PAPER_131 | UQFF Superconductive GW170817 Chandra Jets Combined |
 | ⬜ | PAPER_1320 | CLFV MU TO E GAMMA |
 | ⬜ | PAPER_1321 | STELLAR MAGNETISM ORIGIN |
 | ⬜ | PAPER_1322 | UHECR ACCELERATION |

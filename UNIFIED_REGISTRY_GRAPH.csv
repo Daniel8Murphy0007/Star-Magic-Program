@@ -717,3 +717,8 @@ observable,buoyancy_icecube_beta_calib,paper,PAPER_130,beta calibration
 primitive,BETA_I,observable,buoyancy_icecube_beta_calib,canonical improves fit
 observable,buoyancy_icecube_beta_calib,paper,PAPER_108,EP-10 lineage
 observable,buoyancy_icecube_forks,paper,PAPER_130,p_max fork
+observable,superconductive_dual_gw_racs,paper,PAPER_131,dual synthesis
+primitive,BETA_I,observable,superconductive_dual_gw_racs,Y_e derivation
+primitive,KAPPA_PER_DAY,observable,superconductive_dual_gw_racs,aging R + exhaustion
+observable,superconductive_dual_forks,paper,PAPER_111,RACS reclassification
+observable,superconductive_dual_forks,paper,PAPER_127,UA fork growth

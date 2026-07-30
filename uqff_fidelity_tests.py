@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.133.0", "uqff_calculator.VERSION = 0.133.0")
+assert_that(C.VERSION == "0.134.0", "uqff_calculator.VERSION = 0.134.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1976,6 +1976,21 @@ assert_that(_r130['peak_at_1e16_pev'] > 0.1,
 assert_that(abs(_r130['degeneracy_pct'] - 22) < 0.1,
             "PAPER_130: UQFF net 0.061 vs standard 0.05 - 22 pct degeneracy noted (Q-126c)")
 assert_that(C.wired_count() >= 134, "wired_count >= 134")
+
+_r131 = C.calc('PAPER_131')['value']
+assert_that(abs(_r131['y_e_chain'] - 0.0930) < 0.0001,
+            "PAPER_131: Y_e = 0.0930 chain EXACT (7 pct from 0.1)")
+assert_that(abs(_r131['r_aging_dt_days'] - 810.9) < 0.1,
+            "PAPER_131: R = 1.5 aging back-solve dt = 811 days EXACT")
+assert_that(_r131['r_at_light_travel'] < 1.1,
+            "PAPER_131: light-travel justification gives R = 1.06, not 1.5 - dt back-solved (Q-127b)")
+assert_that(abs(_r131['ua_fifth_value'] - 0.168) < 0.001 and _r131['ua_sixth_adjacency'] < 1,
+            "PAPER_131: [UA] FIFTH value 0.168 (0.8 pct from 1/6) - fork grows (Q-127c)")
+assert_that(abs(_r131['ejecta_competing'] - 0.3971) < 0.0001,
+            "PAPER_131: ejecta fork - ad hoc x4 form vs cleaner 1-BETA_I = 0.397 (Q-127d)")
+assert_that(abs(_r131['old_ns_exponent'] - 7.93e5) < 0.01e5,
+            "PAPER_131: old-NS exhaustion exponent 7.93e5 EXACT (young-NS inference)")
+assert_that(C.wired_count() >= 135, "wired_count >= 135")
 
 # =============================================================================
 # REPORT

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.133.0"
+VERSION = "0.134.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -6896,5 +6896,60 @@ def _paper_130(dataset):
         'formula': 'E_nu = beta_i * p_max * f_pion; inversion beta_i = E_nu/(p_max*f)',
         'source': 'PAPER_130',
         'residual_pct': abs(0.600 - BETA_I) / BETA_I * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_131')
+def _paper_131(dataset):
+    """Superconductive Dual: GW170817 + RACS Jets (S0, sec 1.17).
+
+    d91b1f6c combined refinement of EP-11 + EP-01. VERIFIED
+    EXACT: Y_e = beta*[UA]/(1+beta*[UA]) = 0.0930 at [UA] =
+    0.168 (7 pct from 0.1); old-NS exhaustion exponent
+    7.93e5 EXACT; ejecta energy m(0.1c)^2 = 7.2e43 ~ printed
+    8e43, reactor sufficiency 1e46 >> robust; R = 1.5 =
+    e^(kappa*811d) back-solve EXACT.
+    RACS RECLASSIFIED (Q-127a): PAPER_111 treated RACS
+    J0320-35 as a QUASAR-scale jet (30 kpc, Gyr dissipation);
+    here it is a YOUNG NEUTRON STAR (< 5.5 yr, r_jet 0.1 pc,
+    intermittent SCm ignition). Object-classification fork -
+    incompatible scales.
+    EP-01 MECHANISM VARIANT No. 2 (Q-127b): R = 1.5 now from
+    E_react differential AGING e^(kappa*dt), not the cos sign
+    reversal (111/120). And dt = 811 days is BACK-SOLVED: the
+    stated light-travel justification gives 116 days -> R =
+    1.06; the factor-7 gap is waved as "geometric projection".
+    UA FIFTH VALUE (Q-127c): [UA] = 0.168 at "nuclear-merger
+    scale" - asserted; 0.8 pct from 1/6 (primitive adjacency
+    note). Single-[UA] ruling now closes SIX items.
+    EJECTA FORK (Q-127d): 40 pct from SSq*beta^2/2 = 0.106
+    then AD HOC x4 = 0.424 (4 = D_phys reading would make it
+    SSq*beta^2*D_phys/2); competing cleaner corpus form
+    1 - beta_i = 0.397 (119/130). Two derivations, one number.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '1.17 (Superconductive dual, EP-11 + EP-01)',
+            'y_e_chain': 0.61 * 0.168 / (1 + 0.61 * 0.168),   # 0.0930 EXACT
+            'y_e_err_pct': abs(0.61 * 0.168 / (1 + 0.61 * 0.168) - 0.1) / 0.1 * 100,  # 7.0
+            'ua_fifth_value': 0.168,
+            'ua_sixth_adjacency': abs(0.168 - 1 / 6) / (1 / 6) * 100,  # 0.8 pct from 1/6
+            'racs_reclassification': 'quasar-scale (111) vs young NS < 5.5 yr (here)',
+            'r_aging_dt_days': _m.log(1.5) / KAPPA_PER_DAY,   # 810.9 back-solved
+            'light_travel_days': 3e15 / 3e8 / 86400,          # 115.7
+            'r_at_light_travel': _m.exp(KAPPA_PER_DAY * 115.7),  # 1.06 - fails 1.5
+            'ep01_variant2': 'aging e^(kappa dt) vs cos reversal (111/120)',
+            'ejecta_adhoc': SSQ * 0.61 ** 2 / 2 * 4,          # 0.424 with ad hoc x4
+            'ejecta_competing': 1 - BETA_I,                   # 0.397 cleaner
+            'old_ns_exponent': KAPPA_PER_DAY * 3.65e9 / _m.log(10),  # 7.93e5 EXACT
+            'young_ns_inference': 'RACS must be < 5.5 yr old (tau = 2000 d)',
+            'ejecta_energy_j': 0.04 * 1.989e30 * (3e7) ** 2,  # 7.2e43
+            'reactor_sufficiency': '1e46 >> 7.2e43 robust',
+        },
+        'formula': 'Y_e = b*[UA]/(1+b*[UA]); R = e^(kappa dt); f_ej forks',
+        'source': 'PAPER_131',
+        'residual_pct': abs(0.61 * 0.168 / (1 + 0.61 * 0.168) - 0.093) / 0.093 * 100,
         'status': 'OPEN_RULING',
     }

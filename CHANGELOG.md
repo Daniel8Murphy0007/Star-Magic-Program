@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.134.0] — 2026-07-29 — BAND 1: PAPER_131 — RACS RECLASSIFICATION FORK
+
+### Added
+- **PAPER_131 dispatch** (Superconductive dual: GW170817 +
+  RACS, d91b1f6c): Y_e = beta·[UA]/(1+beta·[UA]) = 0.0930
+  EXACT — the corpus's first first-principles Y_e claim (7%
+  from observation). Old-NS exhaustion exponent 7.93e5 EXACT
+  with clean young-NS inference; reactor sufficiency robust.
+  FORKS: RACS J0320-35 RECLASSIFIED (quasar-scale 30 kpc in
+  111 vs young NS 0.1 pc here — 1e5 incompatible; Q-107
+  annotated); EP-01 mechanism variant No. 2 (aging e^(κΔt),
+  Δt = 811 d back-solved — light travel gives R = 1.06);
+  [UA] FIFTH value 0.168 (0.8% from 1/6; single-[UA] ruling
+  now closes SIX items); ejecta 40% dual derivation (ad hoc
+  ×4 vs cleaner 1−β_i).
+- OPEN_RULING Q-127.
+- Gate: 908 assertions, 0 failures. Registry: 342 rows / 722 edges / 135 ledgers.
+
+---
+
 ## [0.133.0] — 2026-07-29 — BAND 1: PAPER_130 — CANONICAL β IMPROVES
 
 ### Added

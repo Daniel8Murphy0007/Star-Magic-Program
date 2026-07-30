@@ -2062,6 +2062,7 @@ RESOLVED section with the ruling recorded.
   pinned at the real 1e28 cm2/s scale.
 - **Best-candidate wired:** mechanism + exact scan chains +
   corrected dissipation; series assertion OPEN.
+- **UPDATE (PAPER_131):** RACS J0320-35 RECLASSIFIED as a young NS (< 5.5 yr, 0.1 pc) with R = 1.5 from E_react aging - incompatible with this paper's quasar-scale reading; fold classification into the ruling (Q-127a).
 - **Daniel's ruling:** (pending)
 
 ### Q-108 — PAPER_112 EP-02 — systematic −1 level shift + ill-defined statistic
@@ -2661,6 +2662,38 @@ RESOLVED section with the ruling recorded.
   Q-104b annotated; 089-footer recurs (regressed to /r form).
 - **Best-candidate wired:** calibration at canonical BETA_I;
   p_max fork and degeneracy pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-127 — PAPER_131 Superconductive Dual — RACS reclassified + Y_e derivation
+- **Question:** (a) RACS RECLASSIFIED: PAPER_111 treated RACS
+  J0320-35 as a QUASAR-scale one-sided jet (30 kpc, Gyr-scale
+  dissipation, Doppler analysis); this paper makes it a YOUNG
+  NEUTRON STAR (< 5.5 yr, r_jet ~ 0.1 pc, intermittent SCm
+  ignition cycles). The scales are incompatible by 1e5. Which
+  classification is canonical? (Affects Q-107 wholesale.)
+  (b) EP-01 MECHANISM VARIANT No. 2: R = 1.5 now arises from
+  E_react differential AGING e^(kappa*dt) rather than the cos
+  sign reversal (111/120). And dt = 811 days is BACK-SOLVED
+  from R = 1.5 - the stated light-travel justification gives
+  116 days -> R = 1.06; the factor-7 gap is waved as
+  "geometric projection". Provide the projection chain or
+  mark dt calibrated.
+  (c) [UA] FIFTH VALUE: 0.168 at "nuclear-merger scale"
+  (asserted) - 0.8 pct from 1/6 (primitive adjacency worth a
+  look: [UA]_merger = 1/6?). The single-[UA] ruling now
+  closes SIX queue items (Q-060b/100a/117b/123b/127c + the
+  Y_e mapping).
+  (d) EJECTA 40 PCT DUAL DERIVATION: here SSq*beta^2/2 =
+  0.106 with an AD HOC x4 (= D_phys reading?); the corpus
+  already has the cleaner 1 - beta_i = 0.397 (119/130). Pick
+  the canonical form.
+- **Notable:** Y_e = 0.0930 chain EXACT and is the corpus's
+  first first-principles Y_e claim (7 pct from observation);
+  old-NS exhaustion exponent 7.93e5 EXACT with a clean
+  falsifiable young-NS inference; reactor sufficiency
+  (1e46 >> 7.2e43) robust; ln(1.5)/kappa = 810.9 EXACT.
+- **Best-candidate wired:** Y_e + aging chains with back-solve
+  disclosed; all four forks pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
