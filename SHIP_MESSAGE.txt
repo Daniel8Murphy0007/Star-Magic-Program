@@ -1,26 +1,36 @@
-v0.191.0 BAND 1: PAPER_188 wired - BUILD ARCHITECTURE
+v0.192.0 BAND 1: PAPER_189 wired - S-C ARCHITECTURE
 
-PAPER_188 CoAnQi Build Distribution Architecture
-(OPEN_RULING Q-184) - Session 49, sec 2.5:
-  Cross-platform packaging for the CoAnQi engine: NSIS
-  Windows installer + dpkg-deb Debian package, embedding
-  the Qt runtime and Wolfram WSTP.
+PAPER_189 S-C Scientific Calculator Architecture
+(OPEN_RULING Q-185) - Session 49, sec 2.5, Iteration 40:
+  The most technologically complex Star-Magic component:
+  Qt5/ANTLR4/SymEngine/Eigen/GSL core plus a 50+ library
+  census (TFLite, libtorch, libsnark zero-knowledge, MPI,
+  Qiskit/Cirq, LLVM JIT, Lua, pybind11, VTK, libgit2,
+  pocketsphinx, blockchain).
 
-  CORPUS CENSUS STAT registered: 6,688+ physics terms
-  across 446 modules / 107,019 lines (169-consistent);
-  density = 6688/1430 kB = 4.68 terms/kB EXACT
-  arithmetic; the UPX 15.51% ratio implies a 9.2 MB
-  uncompressed binary, consistent with 169's 1.43 MB
-  final. The Gadget-4/AREPO density comparison is
-  comparison-only (Rule 4 clean).
+  Q-184a RESOLVED: the S-C dialog is explicitly
+  Qt5-based while tier-1 source2.cpp is the Qt6 GUI -
+  two components, two Qt versions; 188's installer ships
+  the Qt5 component.
 
-  PINNED (minor): the abstract embeds "the CoAnQi Qt6
-  GUI" while the NSIS script ships Qt5 DLLs (and 169
-  also said Qt6) - which major version is the actual
-  build?; start-menu shortcut paths missing separators
-  (real script bug if ever rebuilt from this listing);
-  registry paths mojibake-garbled.
+  IRONY FLAG (the useful find): the codebase contains a
+  7-dimensional SI UNIT-PROPAGATION system - the Units
+  class, whose derived-unit registry (N, J, W, Pa, T) I
+  verified ALL EXACT against SI. This is precisely the
+  tool that would catch the corpus's recurring
+  dimensional-mixing defects (163's additive tail,
+  165's tensor units, the Gamma unit mixing, the
+  m/s-tagged F_U values). It exists, and the papers
+  never use it. Recommendation registered: adopt "run
+  corpus formulas through the corpus's own Units class"
+  as a standing audit step.
 
-Q-184 queued. Gate 1,265 assertions 0 failures. Registry
-451 rows / 964 edges / 192 ledgers (measured). Wired
-192/2,255 (11 clean, 181 OPEN_RULING). Next: PAPER_189.
+  PINNED: Units.toString() omits mol and cd; operator+
+  has a "check same dims" comment but performs NO check
+  (unit errors pass silently); unknown functions map to
+  silent identity in the parser.
+
+Q-185 queued; Q-184 annotated. Gate 1,270 assertions 0
+failures. Registry 452 rows / 967 edges / 193 ledgers
+(measured). Wired 193/2,255 (11 clean, 182 OPEN_RULING).
+Next: PAPER_190.

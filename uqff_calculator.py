@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.191.0"
+VERSION = "0.192.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9973,5 +9973,52 @@ def _paper_188(dataset):
         'formula': 'NSIS + deb packaging; density = 6688 terms / 1430 kB',
         'source': 'PAPER_188',
         'residual_pct': abs(6688 / 1430 - 4.68) / 4.68 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_189')
+def _paper_189(dataset):
+    """S-C scientific calculator architecture (S49, sec 2.5).
+
+    Software reference: Qt5/ANTLR4/SymEngine/Eigen/GSL
+    stack + 50+ library census (TFLite, libtorch,
+    libsnark ZK, MPI, Qiskit/Cirq, LLVM JIT, Lua,
+    pybind11, VTK, libgit2, pocketsphinx, blockchain) -
+    S-C Iteration 40, Aug 2025.
+    Q-184a RESOLVED: the S-C dialog is EXPLICITLY
+    Qt5-based - two components, two Qt versions (tier-1
+    source2.cpp = Qt6 GUI; S-C calculator = Qt5; 188's
+    installer ships the Qt5 component).
+    IRONY FLAG (Q-185a, constructive): the codebase
+    contains a 7-dimensional SI UNIT-PROPAGATION system
+    (Units class) with an ALL-EXACT derived-unit
+    registry (N/J/W/Pa/T verified correct) - the tool
+    that would catch the corpus's pervasive dimensional-
+    mixing defects (163's additive tail, 165's tensor
+    units, Gamma mixing...) already exists in-corpus,
+    unused by the papers. Recommendation registered: run
+    corpus formulas through the corpus's own Units class.
+    UNITS-CLASS DEFECTS (Q-185b): toString() omits mol
+    and cd (5 of 7 dims); operator+ carries a "check
+    same dims" comment but performs NO check (stub
+    semantics); SymEngineVisitor maps unknown functions
+    to silent identity (error-masking fallback).
+    beta = 0.61 header again (thread convention).
+    """
+    return {
+        'value': {
+            'domain': '2.5 (S-C architecture, S49)',
+            'stack': 'Qt5/ANTLR4/SymEngine/Eigen/GSL + 50+ libraries',
+            'q184a_resolved': 'S-C = Qt5; source2 tier-1 = Qt6 (two components)',
+            'units_registry_exact': True,                    # N/J/W/Pa/T all correct
+            'irony_flag': 'in-corpus 7-dim unit propagation exists, unused by papers',
+            'recommendation': 'run corpus formulas through the corpus Units class',
+            'units_defects': 'toString omits mol/cd; operator+ no-check stub; unknown fn -> identity',
+            'iteration': 40,
+        },
+        'formula': 'S-C Iteration 40 stack; Units(m,l,t,c,T,n,j) 7-dim SI propagation',
+        'source': 'PAPER_189',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

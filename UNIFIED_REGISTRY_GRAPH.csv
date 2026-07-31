@@ -963,3 +963,6 @@ observable,catalog_defects,paper,PAPER_187,defect set
 observable,catalog_defects,paper,PAPER_174,vexp resolution
 observable,coanqi_build_distribution,paper,PAPER_188,packaging
 observable,coanqi_build_distribution,paper,PAPER_169,module/line consistency
+observable,sc_calculator_architecture,paper,PAPER_189,S-C stack
+observable,sc_calculator_architecture,paper,PAPER_188,Qt resolution
+observable,sc_calculator_architecture,paper,PAPER_163,unit-mixing remedy

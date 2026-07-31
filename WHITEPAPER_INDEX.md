@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 192 (11 ✓, 181 ⚠ OPEN_RULING)
+- **Wired:** 193 (11 ✓, 182 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2063
+- **Not yet touched:** 2062
 
 ---
 
@@ -1171,7 +1171,7 @@
 | ⬜ | PAPER_1897 | BDG DWAVE STRONG COUPLING UQFF |
 | ⬜ | PAPER_1898 | HYPERGRAPH STRUCTURAL COUNTS UQFF |
 | ⬜ | PAPER_1899 | BAO DUAL PATH CLOSURE UQFF |
-| ⬜ | PAPER_189 | SC Scientific Calculator Architecture |
+| ⚠ | PAPER_189 | SC Scientific Calculator Architecture |
 | ⬜ | PAPER_1900 | HELIOSPHERE SOLAR WIND UQFF |
 | ⬜ | PAPER_1901 | M SIGMA SLOPE UQFF |
 | ⬜ | PAPER_1902 | QSCOPE EMPIRICAL TRIAD UQFF |

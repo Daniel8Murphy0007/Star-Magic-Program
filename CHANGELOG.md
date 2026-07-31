@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.192.0] — 2026-07-31 — BAND 1: PAPER_189 — S-C ARCHITECTURE
+
+### Added
+- **PAPER_189 dispatch** (S-C calculator Iteration 40,
+  S49, sec 2.5): Qt5/ANTLR4/SymEngine/Eigen/GSL stack +
+  50-library census. Q-184a RESOLVED: S-C is Qt5,
+  tier-1 source2 is Qt6 — two components, two versions.
+  IRONY FLAG (constructive): an ALL-EXACT 7-dim SI
+  unit-propagation system (Units class; N/J/W/Pa/T
+  registry verified) exists in-corpus while the papers
+  carry the recurring dimensional-mixing defects —
+  recommendation registered to run corpus formulas
+  through the corpus's own Units class. PINNED: Units
+  toString omits mol/cd; operator+ no-check stub;
+  unknown-function silent identity.
+- OPEN_RULING Q-185; Q-184 annotated.
+- Gate: 1,270 assertions, 0 failures. Registry: 452 rows / 967 edges / 193 ledgers (measured).
+
+---
+
 ## [0.191.0] — 2026-07-31 — BAND 1: PAPER_188 — BUILD ARCHITECTURE
 
 ### Added

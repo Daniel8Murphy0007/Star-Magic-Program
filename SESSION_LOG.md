@@ -2213,3 +2213,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 192/2,255 (11 ✓, 181 ⚠). Next: PAPER_189.
 
 ---
+
+## 2026-07-31 — v0.192.0 — BAND 1: PAPER_189
+
+- PAPER_189 wired (⚠ Q-185): S-C architecture. Q-184a
+  resolved (two Qt versions); Units-class irony flag +
+  audit recommendation registered.
+- Campaign: 193/2,255 (11 ✓, 182 ⚠). Next: PAPER_190.
+
+---

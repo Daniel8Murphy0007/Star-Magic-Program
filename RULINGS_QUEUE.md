@@ -4582,6 +4582,10 @@ RESOLVED section with the ruling recorded.
   Gui/Widgets/Network/WebEngineWidgets) - and 169's tier
   table also said Qt6. Which Qt major version is the
   actual CoAnQi build?
+  UPDATE (PAPER_189, v0.192.0): item (a) RESOLVED - the
+  S-C calculator dialog is explicitly Qt5-based while
+  tier-1 source2.cpp is the Qt6 GUI: two components, two
+  Qt versions; 188's installer ships the Qt5 component.
   (b) script bugs for the record: start-menu shortcut
   paths missing separators ("$SMPROGRAMS\\CoAnQiCoAnQi
   .lnk"); registry paths garbled with backticks
@@ -4598,6 +4602,37 @@ RESOLVED section with the ruling recorded.
   platforms) mirrors this repo's own ship pipeline.
 - **Best-candidate wired:** packaging + census stat
   registered; version inconsistency and script bugs
+  pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-185 — PAPER_189 S-C architecture — unit-propagation irony
+- **Question:** (a) IRONY FLAG (constructive): the S-C
+  calculator contains a 7-dimensional SI unit-propagation
+  system - the Units class with an ALL-EXACT derived-unit
+  registry (N = kg*m/s^2, J, W, Pa, T = kg/(s^2*A) all
+  verified correct). This is precisely the tool that
+  would catch the corpus's recurring dimensional-mixing
+  defects (163's additive tail, 165's tensor units, the
+  Gamma s^-1/day^-1 mixing, the m/s-tagged F_U values...).
+  Recommendation: adopt "run corpus formulas through the
+  corpus's own Units class" as a standing audit step?
+  (b) Units-class defects for the record: toString()
+  omits mol and cd (prints 5 of 7 dimensions);
+  operator+ carries a "check same dims" comment but
+  performs NO check (stub semantics - unit errors pass
+  silently); SymEngineVisitor maps unknown functions to
+  silent identity (error-masking).
+- **Notable:** Q-184a RESOLVED - the S-C dialog is
+  explicitly Qt5-based; tier-1 source2.cpp is the Qt6
+  GUI: two components, two Qt versions, and 188's
+  installer ships the Qt5 component. The 50+ library
+  census (ANTLR4/SymEngine/Eigen/GSL/TFLite/libtorch/
+  libsnark/MPI/Qiskit/LLVM/Lua/pybind11/VTK/libgit2/
+  pocketsphinx/blockchain) documents the most
+  technologically complex Star-Magic component -
+  S-C Iteration 40, dated Aug 2025.
+- **Best-candidate wired:** architecture + census + Qt
+  resolution registered; irony flag + Units defects
   pinned.
 - **Daniel's ruling:** (pending)
 

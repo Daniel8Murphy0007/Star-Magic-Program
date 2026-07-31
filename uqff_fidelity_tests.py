@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.191.0", "uqff_calculator.VERSION = 0.191.0")
+assert_that(C.VERSION == "0.192.0", "uqff_calculator.VERSION = 0.192.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2762,6 +2762,17 @@ assert_that(9 < _r188['upx_original_mb'] < 9.5,
 assert_that('Qt5' in _r188['qt_inconsistency'],
             "PAPER_188: Qt6-claimed vs Qt5-shipped inconsistency pinned (Q-184a)")
 assert_that(C.wired_count() >= 192, "wired_count >= 192")
+
+_r189 = C.calc('PAPER_189')['value']
+assert_that(_r189['units_registry_exact'],
+            "PAPER_189: derived-unit registry (N/J/W/Pa/T) ALL EXACT vs SI")
+assert_that('two components' in _r189['q184a_resolved'],
+            "PAPER_189: Q-184a RESOLVED - S-C is Qt5, source2 tier-1 is Qt6")
+assert_that('unused by papers' in _r189['irony_flag'],
+            "PAPER_189: in-corpus unit-propagation system exists, unused (Q-185a)")
+assert_that('no-check stub' in _r189['units_defects'],
+            "PAPER_189: Units operator+ no-check stub + toString mol/cd omission pinned (Q-185b)")
+assert_that(C.wired_count() >= 193, "wired_count >= 193")
 
 # =============================================================================
 # REPORT

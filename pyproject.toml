@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.191.0"
-description = "UQFF Star-Magic-Program v0.191.0: PAPER_188 wired - CoAnQi build/distribution (NSIS + Debian); census 6,688 physics terms at 4.68 terms/kB EXACT; UPX chain consistent with 169; Qt6-claimed-vs-Qt5-shipped + shortcut-path bugs pinned. Q-184. Wired 192/2255, gate 1265/0. Registry 451 rows / 964 edges / 192 ledgers (measured)."
+version = "0.192.0"
+description = "UQFF Star-Magic-Program v0.192.0: PAPER_189 wired - S-C calculator architecture (50+ library census); Q-184a RESOLVED (S-C Qt5 vs source2 Qt6); IRONY FLAG: an ALL-EXACT 7-dim SI unit-propagation Units class exists in-corpus, unused by the papers carrying the dimensional-mixing defects - audit recommendation registered. Q-185. Wired 193/2255, gate 1270/0. Registry 452 rows / 967 edges / 193 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
