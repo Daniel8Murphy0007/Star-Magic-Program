@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.182.0] — 2026-07-31 — BAND 1: PAPER_179 — THEORY CAPSTONE
+
+### Added
+- **PAPER_179 dispatch** (Star Magic 5-chapter theory,
+  S48, sec 2.4-K): DPM = UA'/SCm formal definition (dual
+  charge+mass pseudo-monopole — converges with the
+  predecessor's grad(UA)→DPM_vortex T0 chain); full F_U
+  taxonomy tree; pi-cycle gate (quasar jet reversal at
+  cos(pi t_n) = −1); discrete-banded force principles;
+  HONESTY LANDMARK (sec 8: "speculative... constants
+  require empirical calibration" with named per-constant
+  sources). Anchors: dg 0.2% from GRAVITY 8.277 kpc;
+  Omega_g order-consistent. PINNED: YM gap FOURTH
+  construct (E_react(0) ~ 8.8e54 — Q-152a now four-way);
+  NS existence-proof overclaim (Rule 7); M_bh 4.6% below
+  GRAVITY-2022.
+- OPEN_RULING Q-175.
+- Gate: 1,210 assertions, 0 failures. Registry: 434 rows / 932 edges / 183 ledgers (measured).
+
+---
+
 ## [0.181.0] — 2026-07-31 — BAND 1: PAPER_178 — 3D INFRASTRUCTURE
 
 ### Added

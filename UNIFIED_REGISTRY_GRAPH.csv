@@ -926,3 +926,8 @@ observable,simulation_code_truth_vote,paper,PAPER_172,vote #1 unit test
 observable,simulation_code_truth_vote,paper,PAPER_174,vote #2 decomposition
 observable,coanqi_3d_infrastructure,paper,PAPER_178,3D layer
 observable,coanqi_3d_infrastructure,paper,PAPER_168,Perlin mismatch
+observable,star_magic_5ch_theory,paper,PAPER_179,theory capstone
+observable,star_magic_5ch_theory,paper,PAPER_176,SCm chapter 2
+primitive,SSQ,observable,star_magic_5ch_theory,Jeans header
+observable,ym_fourth_ns_overclaim,paper,PAPER_179,4th YM + overclaim
+observable,ym_fourth_ns_overclaim,paper,PAPER_156,YM fork family

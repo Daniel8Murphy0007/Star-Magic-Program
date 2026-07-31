@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.181.0"
+VERSION = "0.182.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9459,5 +9459,59 @@ def _paper_178(dataset):
         'formula': '3D entity layer: mesh/texture/shader/camera/animation infrastructure',
         'source': 'PAPER_178',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_179')
+def _paper_179(dataset):
+    """Star Magic 5-chapter theory + DPM taxonomy (S48, sec 2.4-K).
+
+    Theory capstone of the CoAnQi block: 5-chapter
+    structure, the full F_U taxonomy tree (Ug 4-range /
+    Ub opposing / Um strings / UA tensor), the pi-cycle
+    gate (cos(pi t_n) = +1/-1/0 - quasar jet-reversal
+    mechanism), and the discrete-banded force principles.
+    DPM FORMAL DEFINITION: DPM = UA'/SCm (Aether time-
+    derivative over SCm density; "Di" = dual charge+mass;
+    pseudo-monopole, NOT a magnetic monopole) - a
+    UA-DERIVATIVE structure normalized by SCm, echoing
+    the predecessor T0 chain (grad(UA) -> DPM_vortex):
+    cross-repo doctrinal convergence on DPM-from-
+    UA-derivative.
+    HONESTY LANDMARK: sec 8 states outright "this
+    framework is speculative... constants require
+    empirical calibration" with named sources - the
+    corpus's most explicit epistemic self-assessment.
+    ANCHOR CHECKS: dg = 8.26 kpc vs GRAVITY 8.277 (0.2%
+    EXCELLENT); M_bh = 8.15e36 vs GRAVITY-2022 8.55e36
+    (4.6% - Q-175d); Omega_g = 7.3e-16 order-consistent
+    with the galactic year.
+    YM FOURTH CONSTRUCT (Q-175a): chapter 5 maps the
+    mass gap to E_react(0) = SCm_density*v^2/rho_A ~
+    8.8e54 - the fork now has FOUR distinct constructs
+    (5.2e-11 eV / 300 MeV / 1.736 GeV / E_react(0)).
+    NS OVERCLAIM (Q-175b): "FluidSolver provides an
+    existence and convergence proof" - a 32x32 Stam
+    solver is numerical evidence, not a proof (Rule 7
+    flag).
+    """
+    return {
+        'value': {
+            'domain': '2.4-K (theory capstone, thread 381a8fe7)',
+            'dpm_definition': "DPM = UA'/SCm - UA-derivative over SCm density",
+            'cross_repo_echo': 'predecessor T0: grad(UA) -> DPM_vortex (convergent)',
+            'pi_cycle_gate': 'cos(pi t_n): +1 forward / -1 quasar reversal / 0 null',
+            'taxonomy': 'F_U = [Ug 4-range] + [Ub opposing] + [Um strings] + [UA tensor]',
+            'honesty_landmark': 'sec 8: "speculative... require empirical calibration"',
+            'dg_vs_gravity_pct': abs(8.26 - 8.277) / 8.277 * 100,   # 0.2
+            'mbh_vs_gravity_pct': abs(8.15e36 - 8.547e36) / 8.547e36 * 100,  # 4.6
+            'ym_fourth_construct': 'gap = E_react(0) ~ 8.8e54 (fork now 4 constructs)',
+            'ns_overclaim': 'existence proof claimed from numerical solver (Rule 7)',
+            'calibration_sources': 'kappa faint-young-Sun; beta rotation curves; Omega_g/Mbh/dg GRAVITY',
+        },
+        'formula': "DPM = UA'/SCm; F_U taxonomy; pi-cycle gate",
+        'source': 'PAPER_179',
+        'residual_pct': abs(8.26 - 8.277) / 8.277 * 100,
         'status': 'OPEN_RULING',
     }

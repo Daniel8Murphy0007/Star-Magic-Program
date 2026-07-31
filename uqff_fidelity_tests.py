@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.181.0", "uqff_calculator.VERSION = 0.181.0")
+assert_that(C.VERSION == "0.182.0", "uqff_calculator.VERSION = 0.182.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2628,6 +2628,21 @@ assert_that('Perlin' in _r178['perlin_mismatch'],
 assert_that('booleanUnion' in _r178['stubs_confessed'],
             "PAPER_178: modeling stubs confessed (extrudeMesh, booleanUnion)")
 assert_that(C.wired_count() >= 182, "wired_count >= 182")
+
+_r179 = C.calc('PAPER_179')['value']
+assert_that("UA'/SCm" in _r179['dpm_definition'],
+            "PAPER_179: DPM = UA'/SCm formal definition registered (cross-repo UA-derivative echo)")
+assert_that(_r179['dg_vs_gravity_pct'] < 0.3,
+            "PAPER_179: dg anchor 0.2% from GRAVITY 8.277 kpc - excellent")
+assert_that(4 < _r179['mbh_vs_gravity_pct'] < 5,
+            "PAPER_179: M_bh 4.6% below GRAVITY-2022 (Q-175d)")
+assert_that('4 constructs' in _r179['ym_fourth_construct'],
+            "PAPER_179: YM gap FOURTH construct (E_react(0)) - fork expands (Q-175a)")
+assert_that('speculative' in _r179['honesty_landmark'],
+            "PAPER_179: explicit epistemic self-assessment registered (honesty landmark)")
+assert_that('Rule 7' in _r179['ns_overclaim'],
+            "PAPER_179: NS existence-proof overclaim flagged (Q-175b)")
+assert_that(C.wired_count() >= 183, "wired_count >= 183")
 
 # =============================================================================
 # REPORT

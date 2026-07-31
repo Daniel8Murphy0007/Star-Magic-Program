@@ -1,28 +1,35 @@
-v0.181.0 BAND 1: PAPER_178 wired - 3D INFRASTRUCTURE
+v0.182.0 BAND 1: PAPER_179 wired - THEORY CAPSTONE
 
-PAPER_178 CoAnQi 3D Simulation Entity Framework
-(OPEN_RULING Q-174) - Session 48, thread 381a8fe7, sec
-2.4-J:
-  Implementation companion to 168: OBJ mesh I/O
-  (indexed, deduplicated), stb_image textures with
-  mipmaps, GLSL shader pipeline, multi-viewport lookAt
-  camera, skeletal bone animation with SLERP (gimbal-
-  lock-free planetary spin), 2-octave procedural
-  landscape, Euler entity integration seeded from
-  MUGESystem.vexp. TWO STUBS CONFESSED (extrudeMesh,
-  booleanUnion - "planned for future plugin
-  implementation") - the honest-labeling pattern
-  continues. The F_U minus-buoyancy convention holds
-  for the 4TH consecutive paper (2152 provenance echo
-  unbroken through the CoAnQi block).
+PAPER_179 Star Magic 5-Chapter Theory (OPEN_RULING
+Q-175) - Session 48, thread 381a8fe7, sec 2.4-K:
+  The theory capstone of the CoAnQi block. DPM gets its
+  FORMAL DEFINITION: DPM = UA'/SCm - the Aether
+  time-derivative over SCm density, a dual charge+mass
+  pseudo-monopole (explicitly NOT a magnetic monopole).
+  This converges with the predecessor repo's T0 chain
+  (grad(UA) -> DPM_vortex): both repos define DPM as a
+  UA-derivative structure coupled to SCm. Full F_U
+  taxonomy tree; pi-cycle gate giving the cleanest
+  statement of quasar jet reversal (cos(pi t_n) = -1
+  branch); discrete-banded force principles.
 
-  PINNED (minor): 168 described the landscape as
-  "Perlin noise"; 178 implements sine-cosine octaves -
-  doc-vs-implementation mismatch, cosmetic; beta_i =
-  0.61 appears a 4th consecutive time - clearly the
-  2.4-thread local convention; Q-174 asks whether the
-  charter auto-correction (0.6029) applies thread-wide.
+  HONESTY LANDMARK: sec 8 states "this framework is
+  speculative... the constants require empirical
+  calibration," naming a source per constant - the
+  corpus's most explicit epistemic self-assessment.
+  Anchors: dg = 8.26 kpc is 0.2%% from GRAVITY's 8.277;
+  Omega_g order-consistent with the galactic year.
 
-Q-174 queued. Gate 1,203 assertions 0 failures. Registry
-432 rows / 927 edges / 182 ledgers (measured). Wired
-182/2,255 (11 clean, 171 OPEN_RULING). Next: PAPER_179.
+  PINNED FOR RULING: (a) YM gap FOURTH construct -
+  chapter 5 maps the mass gap to E_react(0) ~ 8.8e54;
+  the Q-152a adjudication is now four-way (5.2e-11 eV /
+  300 MeV / 1.736 GeV / E_react(0)); (b) "FluidSolver
+  provides an existence and convergence proof" - a
+  numerical run is not a proof (Rule 7); (c) DPM
+  temporal-vs-spatial derivative mapping across repos;
+  (d) M_bh = 8.15e36 is 4.6%% below the GRAVITY-2022
+  value it cites.
+
+Q-175 queued. Gate 1,210 assertions 0 failures. Registry
+434 rows / 932 edges / 183 ledgers (measured). Wired
+183/2,255 (11 clean, 172 OPEN_RULING). Next: PAPER_180.

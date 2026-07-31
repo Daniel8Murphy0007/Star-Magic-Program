@@ -4246,6 +4246,45 @@ RESOLVED section with the ruling recorded.
   mismatch and drift-streak pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-175 — PAPER_179 theory capstone — YM fourth construct + NS overclaim + DPM mapping
+- **Question:** (a) YM GAP FOURTH CONSTRUCT: chapter 5
+  maps the mass gap to the static reactor value
+  E_react(0) = SCm_density*v_SCm^2/rho_A ~ 8.8e54 (with
+  176's values). The fork now holds FOUR constructs:
+  5.2e-11 eV (156 roadmap), 300 MeV (167), 1.736 GeV
+  (predecessor canonical PAPER_1318), E_react(0) (here).
+  The Q-152a adjudication is now four-way.
+  (b) NS OVERCLAIM: "The FluidSolver provides an
+  existence and convergence proof for specific cases" -
+  a 32x32 Stam solver run is numerical evidence, not a
+  mathematical existence proof (Rule 7 honest-claims
+  flag). Downgrade wording to "numerical demonstration"?
+  (c) DPM MAPPING: the formal DPM = UA'/SCm (Aether
+  TIME-derivative over SCm density) vs the predecessor
+  T0 chain (grad(UA) -> DPM_vortex - SPATIAL gradient
+  seed) and DPM = SCm (x) UA (tensor-pair architecture).
+  All three are UA-derivative-coupled-to-SCm structures
+  - rule the canonical formal definition (or scope:
+  temporal ratio locally, spatial gradient as seed)?
+  (d) M_bh = 8.15e36 kg cited to GRAVITY-2022; actual
+  GRAVITY value 4.297e6 Msun = 8.55e36 (4.6%). Update
+  the anchor or keep the corpus literal?
+- **Notable:** dg = 8.26 kpc is 0.2%% from GRAVITY's
+  8.277 kpc - excellent; Omega_g order-consistent with
+  the galactic year. The pi-cycle gate table gives the
+  cleanest statement yet of the quasar jet-reversal
+  mechanism (cos(pi t_n) = -1 branch). HONESTY LANDMARK:
+  sec 8 says outright "this framework is speculative...
+  the constants require empirical calibration" with
+  named sources per constant - the corpus's most
+  explicit epistemic self-assessment, exactly the
+  Rule 7 spirit. Jeans-mass header echoes the 150
+  magnetic-correction family.
+- **Best-candidate wired:** capstone + DPM definition +
+  pi-gate + honesty landmark registered; four-way YM
+  fork, overclaim, and anchor drift pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

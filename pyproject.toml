@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.181.0"
-description = "UQFF Star-Magic-Program v0.181.0: PAPER_178 wired - CoAnQi 3D infrastructure implementation (OBJ/textures/shaders/SLERP/landscape; two stubs confessed); minus-buoyancy convention 4th consecutive; Perlin-vs-sine heightmap doc mismatch + beta 0.61 thread-convention question queued. Q-174. Wired 182/2255, gate 1203/0. Registry 432 rows / 927 edges / 182 ledgers (measured)."
+version = "0.182.0"
+description = "UQFF Star-Magic-Program v0.182.0: PAPER_179 wired - Star Magic 5-chapter theory capstone; DPM = UA_prime/SCm formal definition (cross-repo UA-derivative convergence); pi-cycle quasar-reversal gate; HONESTY LANDMARK (speculative + calibration sources named); dg 0.2% from GRAVITY; YM gap FOURTH construct + NS existence-proof overclaim pinned. Q-175. Wired 183/2255, gate 1210/0. Registry 434 rows / 932 edges / 183 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
