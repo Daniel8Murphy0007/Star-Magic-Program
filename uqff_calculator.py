@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.193.0"
+VERSION = "0.194.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10061,6 +10061,39 @@ def _paper_190(dataset):
         },
         'formula': '10-rule dispatch + linearity/scalar + PINE Ramanujan ODE fallback',
         'source': 'PAPER_190',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_191')
+def _paper_191(dataset):
+    """S-C multi-modal features (S49, sec 2.5).
+
+    UI/features catalog - eight systems: VR/AR (Qt3D +
+    VTK), pocketsphinx voice, blockchain equation-
+    provenance logging, MQTT IoT broadcast, haptics,
+    PyTorch LSTM autocomplete (autocomplete.pt),
+    biometric API gate, gesture navigation; plus
+    MathHighlighter (ANTLR4 4-class), DraggableButton
+    palette, InsertCommand/MacroCommand undo-redo.
+    No numeric physics content beyond the standard
+    headers (beta = 0.61 thread convention). Engineering
+    note: MacroCommand undoes in correct REVERSE order
+    (rbegin/rend) - proper command-pattern discipline.
+    Registered as infrastructure reference only.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (multi-modal features, S49)',
+            'n_feature_systems': 8,
+            'systems': ('VR/AR', 'voice', 'blockchain provenance', 'IoT MQTT',
+                        'haptics', 'ML autocomplete', 'biometrics', 'gestures'),
+            'engineering_note': 'MacroCommand reverse-order undo (rbegin/rend) correct',
+            'physics_content': 'none beyond standard headers',
+        },
+        'formula': '8 multi-modal feature systems (infrastructure catalog)',
+        'source': 'PAPER_191',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

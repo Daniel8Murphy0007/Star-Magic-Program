@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.193.0", "uqff_calculator.VERSION = 0.193.0")
+assert_that(C.VERSION == "0.194.0", "uqff_calculator.VERSION = 0.194.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2782,6 +2782,13 @@ assert_that('zeta(1)' in _r190['rk_divergence'],
 assert_that('unevaluated' in _r190['fallback_honesty'],
             "PAPER_190: honest unevaluated-Integral fallback (no silent wrong answers)")
 assert_that(C.wired_count() >= 194, "wired_count >= 194")
+
+_r191 = C.calc('PAPER_191')['value']
+assert_that(_r191['n_feature_systems'] == 8 and len(_r191['systems']) == 8,
+            "PAPER_191: 8 multi-modal feature systems cataloged")
+assert_that('reverse-order undo' in _r191['engineering_note'],
+            "PAPER_191: MacroCommand reverse-order undo correctness noted")
+assert_that(C.wired_count() >= 195, "wired_count >= 195")
 
 # =============================================================================
 # REPORT

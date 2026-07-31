@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.194.0] — 2026-07-31 — BAND 1: PAPER_191 — MULTI-MODAL FEATURES
+
+### Added
+- **PAPER_191 dispatch** (S-C multi-modal features, S49,
+  sec 2.5): eight systems (VR/AR, voice, blockchain
+  equation provenance, IoT MQTT, haptics, PyTorch LSTM
+  autocomplete, biometrics, gestures) + highlighter/
+  palette/undo-redo. Pure infrastructure — no numeric
+  physics beyond headers. MacroCommand reverse-order
+  undo correctness noted.
+- OPEN_RULING Q-187 (minimal).
+- Gate: 1,277 assertions, 0 failures. Registry: 454 rows / 971 edges / 195 ledgers (measured).
+
+---
+
 ## [0.193.0] — 2026-07-31 — BAND 1: PAPER_190 — INTEGRATION ENGINE
 
 ### Added

@@ -4663,6 +4663,22 @@ RESOLVED section with the ruling recorded.
   oddity pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-187 — PAPER_191 multi-modal features — minimal entry
+- **Question:** none of substance - pure UI/features
+  catalog with no numeric physics beyond the standard
+  headers (beta = 0.61 thread convention, covered by
+  Q-174b/Q-178). Registered for completeness.
+- **Notable:** eight feature systems documented (VR/AR,
+  voice, blockchain equation-provenance logging, IoT
+  MQTT, haptics, PyTorch LSTM autocomplete, biometric
+  API gate, gestures); MacroCommand implements
+  REVERSE-order undo via rbegin/rend - correct
+  command-pattern discipline; blockchain equation
+  provenance is conceptually adjacent to this repo's
+  own registry-provenance doctrine.
+- **Best-candidate wired:** infrastructure reference.
+- **Daniel's ruling:** (pending - or fold into batch)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -1,29 +1,22 @@
-v0.193.0 BAND 1: PAPER_190 wired - INTEGRATION ENGINE
+v0.194.0 BAND 1: PAPER_191 wired - MULTI-MODAL FEATURES
 
-PAPER_190 S-C Symbolic Integration Engine (OPEN_RULING
-Q-186) - Session 49, sec 2.5:
-  10-rule SymEngine integration dispatch (power, 1/x,
-  six trig forms, exp, log-by-parts) plus linearity and
-  scalar-factor rules, VarCollectorVisitor, and the PINE
-  ODE path.
+PAPER_191 S-C Multi-Modal Calculator Features
+(OPEN_RULING Q-187, minimal) - Session 49, sec 2.5:
+  Eight feature systems cataloged: VR/AR (Qt3D + VTK),
+  pocketsphinx voice, blockchain equation-provenance
+  logging (conceptually adjacent to this repo's own
+  registry-provenance doctrine), IoT MQTT broadcast,
+  haptics, PyTorch LSTM autocomplete, biometric API
+  gate, and gesture navigation - plus the ANTLR4
+  highlighter, drag-drop symbol palette, and
+  command-pattern undo/redo (reverse-order undo
+  correctly implemented).
 
-  CLEANEST TABLE IN THE CORPUS: all 10 antiderivative
-  rules NUMERICALLY VERIFIED correct (differentiating
-  each printed antiderivative reproduces its integrand
-  to 1e-6) - the first formula table in 190 papers with
-  zero value defects. The engineering honesty matches:
-  anything unhandled returns an unevaluated Integral
-  symbol rather than a silent wrong answer (contrast
-  189's unknown-function identity fallback).
+  Pure infrastructure - no numeric physics beyond the
+  standard headers. Thinnest wire of the campaign;
+  registered for completeness and index continuity.
 
-  PINNED: (a) the Ramanujan regularization term R_K
-  begins its sum at j = K+1, making the first term
-  zeta(1) - the harmonic pole; divergent as printed
-  (start at K+2, or regularize); (b) design oddity -
-  polynomials integrate EXACTLY at any degree, so the
-  degree > 10 PINE fallback swaps an exact computation
-  for an approximation.
-
-Q-186 queued. Gate 1,274 assertions 0 failures. Registry
-453 rows / 969 edges / 194 ledgers (measured). Wired
-194/2,255 (11 clean, 183 OPEN_RULING). Next: PAPER_191.
+Q-187 queued (minimal). Gate 1,277 assertions 0
+failures. Registry 454 rows / 971 edges / 195 ledgers
+(measured). Wired 195/2,255 (11 clean, 184 OPEN_RULING).
+Next: PAPER_192.

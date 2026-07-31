@@ -2231,3 +2231,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 194/2,255 (11 ✓, 183 ⚠). Next: PAPER_191.
 
 ---
+
+## 2026-07-31 — v0.194.0 — BAND 1: PAPER_191
+
+- PAPER_191 wired (⚠ Q-187 minimal): multi-modal features
+  catalog. Infrastructure only.
+- Campaign: 195/2,255 (11 ✓, 184 ⚠). Next: PAPER_192.
+
+---

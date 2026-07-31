@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 194 (11 ✓, 183 ⚠ OPEN_RULING)
+- **Wired:** 195 (11 ✓, 184 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2061
+- **Not yet touched:** 2060
 
 ---
 
@@ -1193,7 +1193,7 @@
 | ⬜ | PAPER_1917 | NESTED UG SHELL CLOSURE UQFF |
 | ⬜ | PAPER_1918 | PHASE3 COMPREHENSIVE INVENTORY UQFF |
 | ⬜ | PAPER_1919 | F TRZ POWER LADDER UQFF |
-| ⬜ | PAPER_191 | SC Multi Modal Calculator Features |
+| ⚠ | PAPER_191 | SC Multi Modal Calculator Features |
 | ⬜ | PAPER_1920 | LAMBDA CASCADE MASTER EQUATION UQFF |
 | ⬜ | PAPER_1921 | F DM EQUALS UG3 CROSS FRAMEWORK CLOSURE UQFF |
 | ⬜ | PAPER_1922 | MUGE COMPRESSION RATIO UQFF |
