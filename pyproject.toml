@@ -4,14 +4,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.208.0"
-description = "UQFF Star-Magic-Program v0.208.0: PAPER_205 wired - Ramanujan/Hermite Q_n polynomials backing the 26-layer structure; 26-state sum = GENUINE orthogonal spectral expansion of compressed gravity; recurrence/gen-func/orthogonality verified; TWO errors corrected via direct computation (Q_26 constant 25!! not printed 17!!; false unit-circle root claim). Q-201. Wired 209/2255, gate 1351/0. Registry 472 rows / 1011 edges / 209 ledgers (measured)."
+version = "0.209.0"
+description = "UQFF Star-Magic-Program v0.209.0: PAPER_205 (Ramanujan/Hermite Q_n; 26-state sum = orthogonal spectral expansion; Q_26 constant + unit-circle errors corrected) re-shipped after the v0.208.0 CI break, with proper dependency support - sympy/mpmath/numpy/scipy now declared and pip-installed by CI/Release before the gate. Q-201. Wired 209/2255, gate 1351/0. Registry 472 rows / 1011 edges / 209 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
 ]
 license = { text = "AGPL-3.0-or-later OR LicenseRef-StarMagic-Commercial" }
 requires-python = ">=3.9"
+dependencies = [
+    "sympy>=1.12",
+    "mpmath>=1.3",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
 keywords = [
     "unified field theory",
     "vacuum physics",

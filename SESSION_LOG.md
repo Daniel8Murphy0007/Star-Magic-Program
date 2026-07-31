@@ -2344,3 +2344,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 209/2,255 (11 ✓, 198 ⚠). Next: PAPER_206.
 
 ---
+
+## 2026-07-31 — v0.209.0 — PAPER_205 DO-OVER + DEPENDENCY SUPPORT
+
+- v0.208.0 (PAPER_205) failed CI + Release: PAPER_205 imports sympy, but pyproject declared ZERO dependencies and the workflows never installed anything - sympy absent on the runners. Root-caused from the actual CI workflow (matrix 3.9-3.13, no install) + faithful git-archive reproduction.
+- CORRECT FIX (support, not workaround): declared dependencies [sympy, mpmath, numpy, scipy]; ci.yml + release-to-pypi.yml now `pip install .` before the gate; gate fails fast + clear if a dep is missing. PAPER_205 KEEPS sympy (Q_26(0) = 25!!). Reverted the earlier pure-Python workaround + stdlib guard.
+- ONE PAPER PER SHIP: PAPER_206 backed out of this release entirely - it ships separately as v0.210.0. v0.209.0 = the PAPER_205 do-over alone.
+- Standing lesson: dispatches may use sympy/numpy/scipy/mpmath (declared deps); any new required library goes in pyproject `dependencies`. Wired 209/2,255; gate 1,351.
+
+---

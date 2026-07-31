@@ -12,6 +12,25 @@ Discipline (locked):
 import math
 import sys
 
+# Scientific-stack dependency check (fail-fast, clear message). The framework's
+# math genuinely requires sympy (symbolic derivations) + numpy/scipy/mpmath
+# (numerics); these are declared in pyproject `dependencies` and installed by
+# CI/Release before the gate runs. If a dependency is missing, exit HERE with a
+# clear message rather than crashing deep inside a paper dispatch (the v0.208.0
+# CI break: PAPER_205 imported sympy on a runner that had not installed it).
+_missing_deps = []
+for _dep in ("sympy", "mpmath", "numpy", "scipy"):
+    try:
+        __import__(_dep)
+    except ImportError:
+        _missing_deps.append(_dep)
+if _missing_deps:
+    print("[FIDELITY GATE] MISSING REQUIRED DEPENDENCIES: " + ", ".join(_missing_deps))
+    print("  These are declared in pyproject `dependencies`. Install with `pip install .`")
+    print("  (CI/Release install them before the gate; a bare `python uqff_fidelity_tests.py`")
+    print("   needs them present too).")
+    sys.exit(1)
+
 import uqff_registry_primitives as P
 import uqff_calculator as C
 
@@ -98,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.208.0", "uqff_calculator.VERSION = 0.208.0")
+assert_that(C.VERSION == "0.209.0", "uqff_calculator.VERSION = 0.209.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2951,6 +2970,7 @@ assert_that('e^{xt+t^2/2}' in _r205['gen_function'],
 assert_that('orthogonal expansion' in _r205['orthogonal_spectral'],
             "PAPER_205: 26-state sum = orthogonal spectral expansion of gravity series (genuine)")
 assert_that(C.wired_count() >= 209, "wired_count >= 209")
+
 
 # =============================================================================
 # REPORT

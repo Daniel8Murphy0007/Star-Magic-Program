@@ -7,6 +7,17 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.209.0] — 2026-07-31 — PAPER_205 DO-OVER + DEPENDENCY SUPPORT
+
+### Fixed / Added
+- **Re-ships PAPER_205** after v0.208.0 failed CI and Release. Root cause: PAPER_205 imports sympy, but the package declared ZERO dependencies and the workflows never installed anything, so sympy was absent on the runners. The framework legitimately needs the scientific stack (sympy for symbolic derivations; numpy/scipy/mpmath for numerics) and more papers will too — the fix SUPPORTS it rather than working around it.
+- Declared `dependencies = [sympy>=1.12, mpmath>=1.3, numpy>=1.24, scipy>=1.10]` in pyproject (verified in built `Requires-Dist`). `ci.yml` and `release-to-pypi.yml` now `pip install .` before the gate. The gate fails fast with a clear message if a declared dependency is missing.
+- PAPER_205 keeps its sympy implementation: Q_n = x·Q_{n-1} + (n-1)·Q_{n-2} (probabilist Hermite); the 26-state sum is an orthogonal spectral expansion of compressed gravity; Q_26(0) = 25!! = 7,905,853,580,625 (printed 17!! corrected) and the false "roots on the unit circle" claim corrected (roots are real).
+- v0.208.0 skipped on PyPI; v0.209.0 supersedes it. **One paper per ship:** PAPER_206 is NOT in this release — it ships separately as v0.210.0.
+- Gate: 1,351 assertions, 0 failures. Registry: 472 rows / 1011 edges / 209 ledgers (measured).
+
+---
+
 ## [0.208.0] — 2026-07-31 — BAND 1: PAPER_205 — RAMANUJAN/HERMITE Q_n
 
 ### Added

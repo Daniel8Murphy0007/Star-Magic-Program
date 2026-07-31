@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.208.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.208.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.209.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.209.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1351%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-209-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.208.0 wiring campaign live**
+**UQFF systematic rebuild — v0.209.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.208.0)
+## What is currently shipped (v0.209.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 209 / 2,255** (11 ✓ · 198 ⚠ OPEN_RULING · 201 rulings queued) — Hermite spectral basis; Q_26 corrected (205)
+**Wired so far: 209 / 2,255** (11 ✓ · 198 ⚠ OPEN_RULING · 201 rulings queued) — Hermite spectral basis; dependency support fixed (205)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -507,7 +507,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.205.0 | Band 1: PAPER_202 | 206 |
 | v0.206.0 | Band 1: PAPER_203 | 207 |
 | v0.207.0 | Band 1: PAPER_204 | 208 |
-| **v0.208.0** ← current | Band 1: PAPER_205 | 209 |
+| v0.208.0 (skipped: CI break) | Band 1: PAPER_205 | 209 |
+| **v0.209.0** ← current | Band 1: PAPER_205 (do-over + deps) | 209 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

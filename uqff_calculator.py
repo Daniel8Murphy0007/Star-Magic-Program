@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.208.0"
+VERSION = "0.209.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10760,7 +10760,7 @@ def _paper_205(dataset):
     Q = [_sp.Integer(1), _x]
     for n in range(2, 27):
         Q.append(_sp.expand(_x*Q[n-1] + (n-1)*Q[n-2]))
-    q26_const = int(Q[26].subs(_x, 0))
+    q26_const = int(Q[26].subs(_x, 0))                   # = 25!!
     return {
         'value': {
             'domain': '2.6 (Ramanujan/Hermite Q_n, thread 7514fe)',
@@ -10779,3 +10779,4 @@ def _paper_205(dataset):
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }
+
