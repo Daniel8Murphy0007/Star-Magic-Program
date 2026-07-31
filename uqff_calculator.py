@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.205.0"
+VERSION = "0.206.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10618,6 +10618,53 @@ def _paper_202(dataset):
         },
         'formula': 'cosmic-dawn F_UBii,X + Um,X: eta/BBN/CMB/recomb/reion/Jeans',
         'source': 'PAPER_202',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_203')
+def _paper_203(dataset):
+    """UQFF inflationary/perturbation cosmology (S50, sec 2.6).
+
+    Continuation of 202 into inflation + post-inflation:
+    non-Gaussianity f_NL, primordial curvature spectrum,
+    reheating, structure growth D(a), LQC pre-bounce
+    modification, BAO/Sakharov - under both F_UBii and Um
+    channels with d_c Gaussian tails.
+    REAL ANCHORS VERIFIED: f_NL,local = -0.9+-5.1
+    (Planck, no detection); n_s = 0.9649+-0.0042 (>5sig
+    tilt); r < 0.036 (BICEP/Keck 2021); P_R ~ 2.1e-9 at
+    k0=0.05; sigma_8 = 0.811; f = Om^0.55 (Linder);
+    D(z=1)/D(z=0) ~ 0.76; r_s ~ 147 Mpc BAO, z_drag ~
+    1020; f*sigma_8 ~ 0.46 (RSD). Slow-roll relations
+    n_s = 1-6eps+2eta, r = 16eps correct.
+    UQFF-ADJACENT TESTABLE (Q-199a): P_R,UQFF = P_R*(1 +
+    rho_UQFF*c^2/(3H^2)) modifies large-scale power at low
+    multipoles, and the LQC (1+k/k*)^-a term provides
+    natural large-scale suppression - both offered as the
+    mechanism for the observed low-l CMB anomaly. A
+    concrete falsifiable UQFF/LQC prediction (unlike the
+    pure-embedding variants).
+    BUCKET C TIE (continues Q-198): n_s, sigma_8, r_s are
+    also in the predecessor PAPER_1156 cosmology suite.
+    Rule 4 clean - real inflation/LSS physics as F_X
+    targets, UQFF = the vacuum-energy P_R modification +
+    operator overlay.
+    """
+    return {
+        'value': {
+            'domain': '2.6 (inflationary/perturbation cosmology, thread 7514fe)',
+            'real_anchors': {'f_NL': -0.9, 'n_s': 0.9649, 'r_bound': 0.036,
+                             'P_R': 2.1e-9, 'sigma_8': 0.811, 'r_s_Mpc': 147, 'z_drag': 1020},
+            'slow_roll_correct': 'n_s = 1-6eps+2eta, r = 16eps',
+            'growth_correct': 'f = Om^0.55 (Linder); D(z=1)/D(z=0) ~ 0.76',
+            'low_l_anomaly_prediction': 'P_R*(1+rho_UQFF c^2/3H^2) + LQC (1+k/k*)^-a suppress low-l CMB (Q-199a)',
+            'bucketC_tie': 'n_s/sigma_8/r_s also in predecessor PAPER_1156 (Q-198 continues)',
+            'both_channels': 'F_UBii + Um per observable',
+        },
+        'formula': 'inflation/LSS F_UBii,X + Um,X: f_NL/P_R/reheat/D(a)/LQC/BAO',
+        'source': 'PAPER_203',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

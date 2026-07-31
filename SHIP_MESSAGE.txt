@@ -1,23 +1,24 @@
-v0.205.0 BAND 1: PAPER_202 wired - COSMIC DAWN
+v0.206.0 BAND 1: PAPER_203 wired - INFLATION COSMOLOGY
 
-PAPER_202 UQFF Reionization/BBN/Recombination/Cosmic Dawn (OPEN_RULING Q-198) - Session 50,
+PAPER_203 UQFF CMB/Structure Growth/Non-Gaussianity/Curvature (OPEN_RULING Q-199) - Session 50,
 thread 7514fe, sec 2.6:
-  Cosmic-dawn physics from z~1100 (recombination) to z~5 (reionization end) under both the F_UBii
-  and Um channels: baryon-photon ratio, BBN deuterium bottleneck, CMB power spectrum, recombination
-  optical depth, ionization-fraction evolution, HII bubble growth, Jeans mass/length.
+  The inflationary and post-inflationary continuation of 202 - non-Gaussianity f_NL, primordial
+  curvature power spectrum, reheating, structure growth D(a), LQC pre-bounce modification, and
+  BAO/Sakharov oscillations - under both the F_UBii and Um channels.
 
-  REAL ANCHORS VERIFIED: eta = 6.08e-10 (Planck+BBN), Y_P = 0.247 (4He mass fraction), tau_reion =
-  0.054 + z_re ~ 7.7 (Planck 2018), z_rec ~ 1100, alpha_B = 2.6e-13 cm^3/s (case B), sigma_T =
-  6.652e-29 m^2, n_s = 0.965, n_gamma = 410 cm^-3; Jeans mass M_J = (5kT/G mu m_H)^3/2*(3/4pi
-  rho)^1/2 correct - all standard cosmology.
+  REAL ANCHORS VERIFIED: f_NL,local = -0.9+-5.1 (Planck, no detection); n_s = 0.9649+-0.0042
+  (>5sigma tilt); r < 0.036 (BICEP/Keck 2021); P_R ~ 2.1e-9 at k0 = 0.05 Mpc^-1; sigma_8 = 0.811;
+  f = Om^0.55 (Linder 2005); D(z=1)/D(z=0) ~ 0.76; r_s ~ 147 Mpc + z_drag ~ 1020; f*sigma_8 ~
+  0.46 (RSD). Slow-roll relations n_s = 1-6eps+2eta and r = 16eps correct.
 
-  PREDECESSOR TIE: these are the same observables the predecessor repo's BUCKET C cosmology
-  (PAPER_1156, calculate_cosmology 18-observable LCDM suite) already derives to sub-0.1% - here
-  re-expressed through the F_UBii/Um operator overlay. The canonical-cosmology source should be
-  declared (BUCKET C owns the observables; 202 is the channel re-expression). Rule 4 clean - SM
-  cosmology as comparison target, UQFF sets the acoustic horizon via Lambda*c^2/3 (CMB first peak
-  l~220). The k_eta ~ 1e-113 (182) and delta_k ~ 7.25e8 (198) deep-vacuum constants reappear as
-  the BBN freeze-out coupling.
+  UQFF-ADJACENT TESTABLE (the notable part): unlike the pure-embedding variants, this paper offers
+  a concrete prediction - P_R,UQFF(k) = P_R(k)*(1 + rho_UQFF*c^2/(3H^2)) modifies large-scale
+  power at low multipoles, and the LQC (1+k/k*)^-a term provides natural large-scale suppression -
+  both proposed as the mechanism for the observed low-l CMB power deficit (the quadrupole/octupole
+  anomaly). Registered as a falsifiable UQFF/LQC prediction.
 
-Q-198 queued. Gate 1,333 assertions 0 failures. Registry 468 rows / 1003 edges / 206 ledgers (measured). Wired 206/2,255 (11 clean,
-195 OPEN_RULING). Next: PAPER_203.
+  BUCKET C overlap continues (Q-198): n_s, sigma_8, r_s are also in the predecessor PAPER_1156
+  cosmology suite. Rule 4 clean throughout.
+
+Q-199 queued. Gate 1,339 assertions 0 failures. Registry 469 rows / 1005 edges / 207 ledgers (measured). Wired 207/2,255 (11 clean,
+196 OPEN_RULING). Next: PAPER_204.

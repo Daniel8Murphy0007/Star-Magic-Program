@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.205.0", "uqff_calculator.VERSION = 0.205.0")
+assert_that(C.VERSION == "0.206.0", "uqff_calculator.VERSION = 0.206.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2912,6 +2912,19 @@ assert_that('PAPER_1156' in _r202['predecessor_bucketC'],
 assert_that('l~220' in _r202['acoustic_horizon'],
             "PAPER_202: UQFF Lambda*c^2/3 sets acoustic horizon (CMB first peak)")
 assert_that(C.wired_count() >= 206, "wired_count >= 206")
+
+_r203 = C.calc('PAPER_203')['value']
+assert_that(_r203['real_anchors']['n_s'] == 0.9649,
+            "PAPER_203: n_s = 0.9649 (Planck 2018 real, >5sigma tilt)")
+assert_that(_r203['real_anchors']['r_s_Mpc'] == 147,
+            "PAPER_203: BAO sound horizon r_s = 147 Mpc (real)")
+assert_that('n_s = 1-6eps+2eta' in _r203['slow_roll_correct'],
+            "PAPER_203: slow-roll n_s/r relations correct")
+assert_that('low-l CMB' in _r203['low_l_anomaly_prediction'],
+            "PAPER_203: low-l CMB anomaly prediction via UQFF P_R + LQC suppression (Q-199a)")
+assert_that('PAPER_1156' in _r203['bucketC_tie'],
+            "PAPER_203: n_s/sigma_8/r_s overlap predecessor BUCKET C (Q-198 continues)")
+assert_that(C.wired_count() >= 207, "wired_count >= 207")
 
 # =============================================================================
 # REPORT

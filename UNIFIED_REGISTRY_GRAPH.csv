@@ -1002,3 +1002,5 @@ observable,gw_lifecycle_chain,paper,PAPER_200,Um channel
 observable,cosmic_dawn_reionization,paper,PAPER_202,cosmic dawn
 observable,cosmic_dawn_reionization,paper,PAPER_199,cosmo F_UBii
 observable,cosmic_dawn_reionization,paper,PAPER_200,cosmo Um
+observable,inflation_perturbation_cosmology,paper,PAPER_203,inflation cosmology
+observable,inflation_perturbation_cosmology,paper,PAPER_202,cosmic dawn continuation

@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.206.0] — 2026-07-31 — BAND 1: PAPER_203 — INFLATION COSMOLOGY
+
+### Added
+- **PAPER_203 dispatch** (inflationary/perturbation cosmology, S50, sec 2.6): non-Gaussianity f_NL, primordial curvature spectrum, reheating, structure growth D(a), LQC pre-bounce, BAO/Sakharov under both F_UBii+Um channels. Real anchors verified (f_NL -0.9±5.1, n_s 0.9649, r<0.036 BICEP/Keck, sigma_8 0.811, r_s 147 Mpc, f=Om^0.55); slow-roll n_s/r relations correct. UQFF-ADJACENT TESTABLE: P_R modification + LQC (1+k/k*)^-a suppression proposed as the low-l CMB power-deficit mechanism — a concrete falsifiable prediction. BUCKET C overlap continues (n_s/sigma_8/r_s also in PAPER_1156).
+- OPEN_RULING Q-199.
+- Gate: 1,339 assertions, 0 failures. Registry: 469 rows / 1005 edges / 207 ledgers (measured).
+
+---
+
 ## [0.205.0] — 2026-07-31 — BAND 1: PAPER_202 — COSMIC DAWN
 
 ### Added

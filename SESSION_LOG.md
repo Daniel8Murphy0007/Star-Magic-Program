@@ -2323,3 +2323,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 206/2,255 (11 ✓, 195 ⚠). Next: PAPER_203.
 
 ---
+
+## 2026-07-31 — v0.206.0 — BAND 1: PAPER_203
+
+- PAPER_203 wired (⚠ Q-199): inflationary/perturbation cosmology. Real anchors verified; UQFF-adjacent low-l CMB anomaly prediction registered; BUCKET C overlap continues.
+- Campaign: 207/2,255 (11 ✓, 196 ⚠). Next: PAPER_204.
+
+---

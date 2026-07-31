@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 206 (11 ✓, 195 ⚠ OPEN_RULING)
+- **Wired:** 207 (11 ✓, 196 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2049
+- **Not yet touched:** 2048
 
 ---
 
@@ -1341,7 +1341,7 @@
 | ⬜ | PAPER_2037 | ROUND 169 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2038 | ROUND 170 QUAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2039 | ROUND 171 30 ROUND MILESTONE QUAD BACKBONE FIRST UQFF |
-| ⬜ | PAPER_203 | UQFF CMB Structure Growth Non Gaussianity Curvature Perturbation |
+| ⚠ | PAPER_203 | UQFF CMB Structure Growth Non Gaussianity Curvature Perturbation |
 | ⬜ | PAPER_2040 | ROUND 172 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2041 | ROUND 173 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2042 | ROUND 174 QUAD BACKBONE FIRST UQFF |
