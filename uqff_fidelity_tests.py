@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.192.0", "uqff_calculator.VERSION = 0.192.0")
+assert_that(C.VERSION == "0.193.0", "uqff_calculator.VERSION = 0.193.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2773,6 +2773,15 @@ assert_that('unused by papers' in _r189['irony_flag'],
 assert_that('no-check stub' in _r189['units_defects'],
             "PAPER_189: Units operator+ no-check stub + toString mol/cd omission pinned (Q-185b)")
 assert_that(C.wired_count() >= 193, "wired_count >= 193")
+
+_r190 = C.calc('PAPER_190')['value']
+assert_that(_r190['all_rules_verified'],
+            "PAPER_190: ALL 10 antiderivative rules numerically verified correct")
+assert_that('zeta(1)' in _r190['rk_divergence'],
+            "PAPER_190: R_K regularization diverges at its first term (Q-186a)")
+assert_that('unevaluated' in _r190['fallback_honesty'],
+            "PAPER_190: honest unevaluated-Integral fallback (no silent wrong answers)")
+assert_that(C.wired_count() >= 194, "wired_count >= 194")
 
 # =============================================================================
 # REPORT

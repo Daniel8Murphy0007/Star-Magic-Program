@@ -4636,6 +4636,33 @@ RESOLVED section with the ruling recorded.
   pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-186 — PAPER_190 integration engine — R_K divergence + PINE oddity
+- **Question:** (a) the Ramanujan regularization term
+  R_K(x) = ((-1)^K/K!) * sum_{{j=K+1}}^inf ((-x)^j/j!) *
+  zeta(j-K) begins at j = K+1, making its first term
+  zeta(1) - the harmonic pole. As printed the series is
+  DIVERGENT. Should the sum start at j = K+2, or is an
+  eta-style regularization of the zeta(1) term intended?
+  (b) design oddity: polynomials integrate EXACTLY at
+  any degree via the power rule + linearity, so the
+  "degree > 10 -> Ramanujan approximation" PINE fallback
+  replaces an exact computation with an approximation.
+  Intended (performance guard?) or leftover scaffolding?
+- **Notable (cleanest table in the corpus):** ALL 10
+  antiderivative rules numerically VERIFIED correct -
+  power, 1/x, six trig forms, exp, log-by-parts, plus
+  linearity and scalar-factor: the first formula table
+  in 190 papers with zero value defects. The engineering
+  is honest too: the Mul rule applies only with a
+  numeric factor, and everything unhandled returns an
+  unevaluated Integral symbol rather than a silent wrong
+  answer (contrast 189's unknown-function identity
+  fallback). Truncation K = min(10, degree/2).
+- **Best-candidate wired:** engine + verified table +
+  honest-fallback pattern registered; divergence and
+  oddity pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

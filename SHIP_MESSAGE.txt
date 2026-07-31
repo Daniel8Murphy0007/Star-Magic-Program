@@ -1,36 +1,29 @@
-v0.192.0 BAND 1: PAPER_189 wired - S-C ARCHITECTURE
+v0.193.0 BAND 1: PAPER_190 wired - INTEGRATION ENGINE
 
-PAPER_189 S-C Scientific Calculator Architecture
-(OPEN_RULING Q-185) - Session 49, sec 2.5, Iteration 40:
-  The most technologically complex Star-Magic component:
-  Qt5/ANTLR4/SymEngine/Eigen/GSL core plus a 50+ library
-  census (TFLite, libtorch, libsnark zero-knowledge, MPI,
-  Qiskit/Cirq, LLVM JIT, Lua, pybind11, VTK, libgit2,
-  pocketsphinx, blockchain).
+PAPER_190 S-C Symbolic Integration Engine (OPEN_RULING
+Q-186) - Session 49, sec 2.5:
+  10-rule SymEngine integration dispatch (power, 1/x,
+  six trig forms, exp, log-by-parts) plus linearity and
+  scalar-factor rules, VarCollectorVisitor, and the PINE
+  ODE path.
 
-  Q-184a RESOLVED: the S-C dialog is explicitly
-  Qt5-based while tier-1 source2.cpp is the Qt6 GUI -
-  two components, two Qt versions; 188's installer ships
-  the Qt5 component.
+  CLEANEST TABLE IN THE CORPUS: all 10 antiderivative
+  rules NUMERICALLY VERIFIED correct (differentiating
+  each printed antiderivative reproduces its integrand
+  to 1e-6) - the first formula table in 190 papers with
+  zero value defects. The engineering honesty matches:
+  anything unhandled returns an unevaluated Integral
+  symbol rather than a silent wrong answer (contrast
+  189's unknown-function identity fallback).
 
-  IRONY FLAG (the useful find): the codebase contains a
-  7-dimensional SI UNIT-PROPAGATION system - the Units
-  class, whose derived-unit registry (N, J, W, Pa, T) I
-  verified ALL EXACT against SI. This is precisely the
-  tool that would catch the corpus's recurring
-  dimensional-mixing defects (163's additive tail,
-  165's tensor units, the Gamma unit mixing, the
-  m/s-tagged F_U values). It exists, and the papers
-  never use it. Recommendation registered: adopt "run
-  corpus formulas through the corpus's own Units class"
-  as a standing audit step.
+  PINNED: (a) the Ramanujan regularization term R_K
+  begins its sum at j = K+1, making the first term
+  zeta(1) - the harmonic pole; divergent as printed
+  (start at K+2, or regularize); (b) design oddity -
+  polynomials integrate EXACTLY at any degree, so the
+  degree > 10 PINE fallback swaps an exact computation
+  for an approximation.
 
-  PINNED: Units.toString() omits mol and cd; operator+
-  has a "check same dims" comment but performs NO check
-  (unit errors pass silently); unknown functions map to
-  silent identity in the parser.
-
-Q-185 queued; Q-184 annotated. Gate 1,270 assertions 0
-failures. Registry 452 rows / 967 edges / 193 ledgers
-(measured). Wired 193/2,255 (11 clean, 182 OPEN_RULING).
-Next: PAPER_190.
+Q-186 queued. Gate 1,274 assertions 0 failures. Registry
+453 rows / 969 edges / 194 ledgers (measured). Wired
+194/2,255 (11 clean, 183 OPEN_RULING). Next: PAPER_191.

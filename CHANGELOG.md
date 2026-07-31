@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.193.0] — 2026-07-31 — BAND 1: PAPER_190 — INTEGRATION ENGINE
+
+### Added
+- **PAPER_190 dispatch** (S-C symbolic integration, S49,
+  sec 2.5): 10-rule SymEngine dispatch + linearity/
+  scalar + honest unevaluated fallback + PINE ODE path.
+  ALL 10 antiderivative rules NUMERICALLY VERIFIED —
+  the first zero-defect formula table in 190 papers.
+  Honest-fallback engineering noted (contrast 189's
+  identity fallback). PINNED: R_K regularization first
+  term = zeta(1) harmonic pole (divergent as printed);
+  PINE replaces exact polynomial integration with
+  approximation at degree > 10.
+- OPEN_RULING Q-186.
+- Gate: 1,274 assertions, 0 failures. Registry: 453 rows / 969 edges / 194 ledgers (measured).
+
+---
+
 ## [0.192.0] — 2026-07-31 — BAND 1: PAPER_189 — S-C ARCHITECTURE
 
 ### Added

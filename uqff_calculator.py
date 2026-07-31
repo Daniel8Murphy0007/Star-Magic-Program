@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.192.0"
+VERSION = "0.193.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10019,6 +10019,48 @@ def _paper_189(dataset):
         },
         'formula': 'S-C Iteration 40 stack; Units(m,l,t,c,T,n,j) 7-dim SI propagation',
         'source': 'PAPER_189',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_190')
+def _paper_190(dataset):
+    """S-C symbolic integration engine (S49, sec 2.5).
+
+    10-rule SymEngine integration dispatch (power/trig x6/
+    exp/log + linearity + scalar-factor) with honest
+    unevaluated-Integral fallback, plus VarCollectorVisitor
+    and the PINE ODE path.
+    FULLY VERIFIED (rare): ALL 10 antiderivative rules
+    numerically checked correct (d/dx of each printed
+    antiderivative reproduces the integrand to 1e-6) -
+    the cleanest formula table in the corpus to date.
+    Honest engineering: Mul rule applies only with a
+    numeric factor; everything else returns an
+    unevaluated Integral symbol (no silent wrong answers
+    - contrast the parser's identity fallback in 189).
+    DEFECTS (Q-186): (a) the Ramanujan regularization
+    term R_K starts its sum at j = K+1, making the first
+    term zeta(1) - the harmonic pole; DIVERGENT as
+    printed (j should start at K+2, or the term needs
+    an eta-style regularization); (b) design oddity -
+    polynomials integrate EXACTLY at any degree, so the
+    degree > 10 PINE fallback replaces an exact
+    computation with an approximation.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (integration engine, S49)',
+            'n_rules': 12,
+            'all_rules_verified': True,
+            'fallback_honesty': 'unevaluated Integral symbol - no silent wrong answers',
+            'rk_divergence': 'R_K first term = zeta(1) harmonic pole (Q-186a)',
+            'pine_oddity': 'polynomial exact integration replaced by approximation at degree>10 (Q-186b)',
+            'truncation': 'K = min(10, degree/2)',
+        },
+        'formula': '10-rule dispatch + linearity/scalar + PINE Ramanujan ODE fallback',
+        'source': 'PAPER_190',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.192.0"
-description = "UQFF Star-Magic-Program v0.192.0: PAPER_189 wired - S-C calculator architecture (50+ library census); Q-184a RESOLVED (S-C Qt5 vs source2 Qt6); IRONY FLAG: an ALL-EXACT 7-dim SI unit-propagation Units class exists in-corpus, unused by the papers carrying the dimensional-mixing defects - audit recommendation registered. Q-185. Wired 193/2255, gate 1270/0. Registry 452 rows / 967 edges / 193 ledgers (measured)."
+version = "0.193.0"
+description = "UQFF Star-Magic-Program v0.193.0: PAPER_190 wired - S-C symbolic integration engine; ALL 10 antiderivative rules NUMERICALLY VERIFIED (cleanest formula table in the corpus); honest unevaluated-fallback pattern; R_K regularization zeta(1) divergence + PINE polynomial oddity pinned. Q-186. Wired 194/2255, gate 1274/0. Registry 453 rows / 969 edges / 194 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

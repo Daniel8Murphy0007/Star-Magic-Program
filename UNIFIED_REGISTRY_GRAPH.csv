@@ -966,3 +966,5 @@ observable,coanqi_build_distribution,paper,PAPER_169,module/line consistency
 observable,sc_calculator_architecture,paper,PAPER_189,S-C stack
 observable,sc_calculator_architecture,paper,PAPER_188,Qt resolution
 observable,sc_calculator_architecture,paper,PAPER_163,unit-mixing remedy
+observable,sc_integration_engine,paper,PAPER_190,10-rule engine
+observable,sc_integration_engine,paper,PAPER_189,S-C component

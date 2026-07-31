@@ -2222,3 +2222,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 193/2,255 (11 ✓, 182 ⚠). Next: PAPER_190.
 
 ---
+
+## 2026-07-31 — v0.193.0 — BAND 1: PAPER_190
+
+- PAPER_190 wired (⚠ Q-186): integration engine. All 10
+  rules verified (cleanest table yet); zeta(1) divergence
+  + PINE oddity pinned.
+- Campaign: 194/2,255 (11 ✓, 183 ⚠). Next: PAPER_191.
+
+---
