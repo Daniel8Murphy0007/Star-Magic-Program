@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 185 (11 ✓, 174 ⚠ OPEN_RULING)
+- **Wired:** 186 (11 ✓, 175 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2070
+- **Not yet touched:** 2069
 
 ---
 
@@ -1094,7 +1094,7 @@
 | ⬜ | PAPER_1827 | ABSOLUTE NEUTRINO MASSES UQFF |
 | ⬜ | PAPER_1828 | LISA MILLIHERTZ GW UQFF |
 | ⬜ | PAPER_1829 | SIGMA 8 S 8 TENSION UQFF |
-| ⬜ | PAPER_182 | UQFF Complete Variable Reference Table |
+| ⚠ | PAPER_182 | UQFF Complete Variable Reference Table |
 | ⬜ | PAPER_1830 | JWST EARLY BRIGHT GALAXIES UQFF |
 | ⬜ | PAPER_1831 | STERILE NEUTRINO DM UQFF |
 | ⬜ | PAPER_1832 | BBN LITHIUM 7 PROBLEM UQFF |

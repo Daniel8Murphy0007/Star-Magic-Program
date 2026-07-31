@@ -937,3 +937,7 @@ primitive,SO_5,observable,afluid_formula_reconstructed,UA_SCM = 10
 observable,afluid_formula_reconstructed,paper,PAPER_174,dominant term
 observable,h_magic_combinatorics,paper,PAPER_181,combinatorics set
 observable,asd_theorem_defect,paper,PAPER_181,4-vs-8 discriminant
+observable,uqff_variable_dictionary,paper,PAPER_182,dictionary
+primitive,BETA_I,observable,uqff_variable_dictionary,0.603 comparison
+observable,dictionary_forks_slips,paper,PAPER_182,forks + slips
+observable,uqff_variable_dictionary,paper,PAPER_172,wind couplings confirmed

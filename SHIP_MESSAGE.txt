@@ -1,32 +1,37 @@
-v0.184.0 BAND 1: PAPER_181 wired - SEC 2.5 OPENS
+v0.185.0 BAND 1: PAPER_182 wired - VARIABLE DICTIONARY
 
-PAPER_181 Graph Theory H-Magic Labelings (OPEN_RULING
-Q-177) - Session 49, sec 2.5 opener (extended audit of
-thread 381a8fe7):
-  30+ thesis-level combinatorics results: H-magic
-  labelings, tree decompositions, sumset partitions,
-  ascending subgraph decompositions - HONESTLY scoped as
-  "orthogonal to the UQFF physics framework."
+PAPER_182 Complete Variable Reference Table (OPEN_RULING
+Q-178) - Session 49, sec 2.5:
+  The canonical UQFF variable dictionary: 20+ symbols in
+  five categories, feeding every derivation in
+  PAPER_170-195.
 
-  PROJECT-NAME ETYMOLOGY registered: "Star Magic" is
-  the star graph K_1,n of magic-labeling theory - a
-  central vertex joined to n leaves - carrying dual
-  meaning with the UQFF picture of a central mass
-  coupled to n orbiting bodies. The name of the entire
-  program is documented as a mathematical pun.
+  FORK RESOLUTIONS SUPPLIED (the dictionary settles more
+  than it opens): beta_i = 0.603 - overriding the thread
+  headers' 0.61 and landing next to the canonical value
+  (Q-174b answered); B_crit = 4.4e13 "QED" collects its
+  THIRD vote (Q-002 tally: 158+164+182 vs 148-Schwinger
+  vs 173-1e11); separate dictionary rows for delta_sw =
+  0.01 (Ug2) and eps_sw = 0.001 (Ubi) CONFIRM 172's
+  two-couplings clarification; H_SCm = 0.99 settles the
+  1.0 variants; rho_A = 1e-23 confirms 176; k1-k4 =
+  your May-2025 source-document set; omega_s_Sun =
+  2.5e-6 predecessor-canonical yet again.
 
-  VERIFIED: tw(T) = 1 and pw <= ceil(log2 n) are
-  correct standard results; complexity table plausible;
-  footer Jeans arithmetic EXACT.
+  NEW FORKS: U_UA = 1e-4 vs 1.0 in 172's Ubi formula
+  (1e4 - directly scales every buoyancy term); eta
+  units; Pcore "normalized 1.0" vs 176's real 3.6e11
+  Pa; k_eta = 1e-113 unexplained; sec-8 Ug1(Sun) =
+  9.26e22 vs 157's 1.386e32 (normalization fork).
 
-  PINNED: ASD Theorem 4 prints sqrt(1 + 4*C(n,2)) where
-  the triangular-number inversion requires sqrt(1 + 8E)
-  - counterexamples verified (n = 4: paper t_max = 2 vs
-  correct 3, where 1+2+3 = 6 edges exactly exhausts
-  K_4; n = 10: 6 vs 9). A factor-2 slip inside the
-  radical. Theorem 2's magic-sum bound assumes exact
-  cover by H-copies without stating it.
+  LAYERED SLIPS (deepest anatomy yet): v_SCm printed
+  2.958e8 - a transposition of 2.968e8 - and the
+  E_react mantissa 8.74 MATCHES the transposed v; on
+  top, exponent slips of 1e9 (Sun) and 1e18 (Earth)
+  with exact mantissas. The gate also caught a banned
+  canonical literal in my own docstring - fixed
+  in-flight.
 
-Q-177 queued. Gate 1,221 assertions 0 failures. Registry
-438 rows / 938 edges / 185 ledgers (measured). Wired
-185/2,255 (11 clean, 174 OPEN_RULING). Next: PAPER_182.
+Q-178 queued. Gate 1,228 assertions 0 failures. Registry
+440 rows / 942 edges / 186 ledgers (measured). Wired
+186/2,255 (11 clean, 175 OPEN_RULING). Next: PAPER_183.

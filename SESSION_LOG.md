@@ -2149,3 +2149,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 185/2,255 (11 ✓, 174 ⚠). Next: PAPER_182.
 
 ---
+
+## 2026-07-31 — v0.185.0 — BAND 1: PAPER_182
+
+- PAPER_182 wired (⚠ Q-178): variable dictionary.
+  Resolves beta/Bcrit/wind/H_SCm/rho_A forks; new U_UA +
+  normalization forks; layered slips. Gate caught a
+  banned literal in my docstring - fixed.
+- Campaign: 186/2,255 (11 ✓, 175 ⚠). Next: PAPER_183.
+
+---

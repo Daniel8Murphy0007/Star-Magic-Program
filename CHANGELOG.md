@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.185.0] — 2026-07-31 — BAND 1: PAPER_182 — VARIABLE DICTIONARY
+
+### Added
+- **PAPER_182 dispatch** (complete variable reference,
+  S49, sec 2.5): the canonical 20+-symbol dictionary.
+  FORK RESOLUTIONS SUPPLIED: beta_i = 0.603 (overrides
+  thread 0.61, ~canonical); B_crit = 4.4e13 THIRD vote;
+  separate delta_sw/eps_sw rows CONFIRM 172's two-wind-
+  couplings; H_SCm = 0.99; rho_A = 1e-23; k1-k4 source-
+  doc set; omega_s_Sun predecessor-canonical. NEW FORKS:
+  U_UA 1e-4 vs 172's 1.0 (scales every Ubi term); eta
+  units; Pcore normalization; k_eta = 1e-113; Ug1
+  normalization 1.5e9 vs 157. LAYERED SLIPS: v_SCm
+  transposition (2.958e8) is LOAD-BEARING (the E_react
+  mantissa matches it) with 1e9/1e18 exponent slips on
+  top. In-flight: gate caught a banned canonical literal
+  in the dispatch docstring — routed through BETA_I.
+- OPEN_RULING Q-178.
+- Gate: 1,228 assertions, 0 failures. Registry: 440 rows / 942 edges / 186 ledgers (measured).
+
+---
+
 ## [0.184.0] — 2026-07-31 — BAND 1: PAPER_181 — SEC 2.5 OPENS (COMBINATORICS)
 
 ### Added

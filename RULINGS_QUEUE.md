@@ -4349,6 +4349,40 @@ RESOLVED section with the ruling recorded.
   with verified counterexamples.
 - **Daniel's ruling:** (pending)
 
+### Q-178 — PAPER_182 variable dictionary — new forks + layered slips
+- **Question:** (a) NEW FORKS surfaced by the dictionary:
+  U_UA = 1e-4 here vs [UA] = UUA = 1.0 in 172's Ubi
+  formula (1e4 - directly scales every buoyancy term);
+  eta units s^2/kg vs 165's m^2/(J*s^2); Pcore/PSCm =
+  1.0 "normalized" vs 176's real Earth 3.6e11 Pa (Ug3/Um
+  magnitudes depend on which); Lambda = 1.089e-52 vs the
+  corpus 1.1e-52 (1%); k_eta = 1e-113 "deep vacuum"
+  unexplained; sec-8 Ug1(Sun) = 9.26e22 "normalized" vs
+  157's 1.386e32 (1.5e9 - cross-thread normalization).
+  Which normalization is canonical?
+  (b) LAYERED SLIPS (deepest anatomy yet): v_SCm printed
+  2.958e8 - a digit transposition of 2.968e8 - and the
+  derived E_react mantissa 8.74 MATCHES the transposed v
+  (8.7498 vs correct 8.809: the transposition is load-
+  bearing in the derivation). On top, exponent slips:
+  Sun chain = 8.75e54 printed 8.74e45 (1e9); Earth chain
+  = 8.75e51 printed 8.74e33 (1e18). Mantissa-exact
+  exponent slips stacked on a transposition.
+- **Notable (fork-resolution goldmine):** the dictionary
+  RESOLVES more than it forks - beta_i = 0.603 overrides
+  the thread headers' 0.61 (Q-174b answered: 0.603 ~
+  canonical 0.6029); B_crit = 4.4e13 "QED" collects its
+  THIRD vote (Q-002 tally now 158+164+182 vs 148's
+  Schwinger vote vs 173's 1e11); delta_sw = 0.01 (Ug2)
+  and eps_sw = 0.001 (Ubi) as SEPARATE dictionary rows
+  CONFIRMS 172's two-couplings clarification; H_SCm =
+  0.99 settles the 1.0 variants; rho_A = 1e-23 confirms
+  176; k1-k4 = the May-2025 source-doc set; omega_s_Sun
+  = 2.5e-6 predecessor-canonical yet again.
+- **Best-candidate wired:** dictionary + resolutions
+  registered; new forks and the layered slips pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

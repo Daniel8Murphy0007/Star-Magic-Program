@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.184.0", "uqff_calculator.VERSION = 0.184.0")
+assert_that(C.VERSION == "0.185.0", "uqff_calculator.VERSION = 0.185.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2667,6 +2667,21 @@ assert_that('K_{1,n}' in _r181['etymology'],
 assert_that(abs(_r181['footer_jeans'] - 7.41e-10) < 1e-13,
             "PAPER_181: footer Jeans arithmetic 0.57*1.3e-9 = 7.41e-10 EXACT")
 assert_that(C.wired_count() >= 185, "wired_count >= 185")
+
+_r182 = C.calc('PAPER_182')['value']
+assert_that(_r182['beta_dictionary'] == 0.603,
+            "PAPER_182: dictionary beta_i = 0.603 overrides thread 0.61 (~canonical 0.6029)")
+assert_that(_r182['bcrit_third_vote'] == 4.4e13,
+            "PAPER_182: B_crit = 4.4e13 THIRD vote (Q-002 tally)")
+assert_that(1e9 * 0.9 < _r182['e_react_chain'] / _r182['e_react_printed'] < 1e9 * 1.1,
+            "PAPER_182: E_react 1e9 exponent slip with mantissa matching the TRANSPOSED v (Q-178b)")
+assert_that(1e18 * 0.9 < _r182['earth_chain'] / _r182['earth_printed'] < 1e18 * 1.1,
+            "PAPER_182: Earth E_react 1e18 exponent slip, mantissa EXACT")
+assert_that(_r182['u_ua_fork'] == (1e-4, 1.0),
+            "PAPER_182: U_UA fork 1e-4 dictionary vs 1.0 in 172 (Q-178a)")
+assert_that(_r182['k_constants_confirmed']['k4'] == 2.0,
+            "PAPER_182: k1-k4 source-doc set confirmed by the dictionary")
+assert_that(C.wired_count() >= 186, "wired_count >= 186")
 
 # =============================================================================
 # REPORT

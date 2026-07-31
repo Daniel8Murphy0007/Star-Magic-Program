@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.184.0"
+VERSION = "0.185.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9615,5 +9615,60 @@ def _paper_181(dataset):
         'formula': 'H-magic: sum over H-copy of f(v) + f(e) = k; ASD t_max inversion',
         'source': 'PAPER_181',
         'residual_pct': abs(0.57 * 1.3e-9 - 7.4e-10) / 7.4e-10 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_182')
+def _paper_182(dataset):
+    """Complete variable reference table (S49, sec 2.5).
+
+    The canonical UQFF variable dictionary (20+ symbols in
+    5 categories) - a fork-resolution instrument:
+    RESOLUTIONS SUPPLIED: beta_i = 0.603 (dictionary
+    overrides the thread headers' 0.61; ~canonical BETA_I
+    rounded - Q-174b input); B_crit = 4.4e13 "QED" THIRD
+    vote (Q-002); delta_sw = 0.01 (Ug2) vs eps_sw = 0.001
+    (Ubi) - dictionary CONFIRMS 172's two-distinct-wind-
+    couplings clarification; H_SCm = 0.99 (resolves
+    171/176's 1.0); rho_A = 1e-23 confirms 176; k1-k4 =
+    source-doc set confirmed; omega_s_Sun = 2.5e-6
+    predecessor-canonical again; gamma = 5e-5 consistent
+    with 171.
+    NEW FORKS (Q-178): U_UA = 1e-4 here vs 1.0 in 172's
+    Ubi (1e4); eta units s^2/kg vs 165's m^2/(J*s^2);
+    Pcore = 1.0 "normalized" vs 176's real 3.6e11 Pa;
+    Lambda = 1.089e-52 vs corpus 1.1e-52 (1%); k_eta =
+    1e-113 new unexplained deep-vacuum constant; sec-8
+    Ug1 Sun = 9.26e22 "normalized" vs 157's 1.386e32
+    (1.5e9 - cross-thread normalization fork).
+    LAYERED SLIPS (Q-178b): v_SCm printed 2.958e8
+    (transposition of 2.968e8) and the E_react mantissa
+    8.74 MATCHES the transposed v (load-bearing); on top,
+    exponent slips - chain 8.75e54 printed 8.74e45 (1e9)
+    and Earth chain 8.75e51 printed 8.74e33 (1e18) -
+    mantissa-exact exponent slips stacked on a digit
+    transposition (deepest slip anatomy yet).
+    """
+    v_t = 2.958e8
+    return {
+        'value': {
+            'domain': '2.5 (variable dictionary, S49)',
+            'resolutions': 'beta 0.603; Bcrit 4.4e13 3rd vote; two wind couplings confirmed; H_SCm 0.99; rho_A 1e-23',
+            'beta_dictionary': 0.603,
+            'bcrit_third_vote': 4.4e13,
+            'e_react_chain': 1e15 * v_t**2 / 1e-23,          # 8.75e54
+            'e_react_printed': 8.74e45,                      # 1e9 exponent slip
+            'earth_chain': 1e12 * v_t**2 / 1e-23,            # 8.75e51
+            'earth_printed': 8.74e33,                        # 1e18 slip
+            'v_transposition': '2.958e8 printed for 2.968e8 - and 8.74 mantissa matches it',
+            'u_ua_fork': (1e-4, 1.0),                        # dict vs 172
+            'ug1_normalization_fork': (9.26e22, 1.386e32),   # vs 157
+            'k_eta_new': 1e-113,
+            'k_constants_confirmed': {'k1': 1.5, 'k2': 1.2, 'k3': 1.8, 'k4': 2.0},
+        },
+        'formula': 'canonical variable dictionary; E_react = rho_SCm*v^2/rho_A*e^-kt',
+        'source': 'PAPER_182',
+        'residual_pct': abs(0.603 - BETA_I) / BETA_I * 100,
         'status': 'OPEN_RULING',
     }
