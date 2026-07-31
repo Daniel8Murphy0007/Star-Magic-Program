@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.203.0"
-description = "UQFF Star-Magic-Program v0.203.0: PAPER_200 wired - Um Universal Magnetism taxonomy (50+ variants); ties to predecessor L_mag / PAPER_1072 Heaviside amplifier; THIRD cross-repo operator taxonomy (Ug/F_UBii/Um); embedded physics verified (Eddington, GW chirp, M-L). Q-196. Wired 204/2255, gate 1322/0. Registry 466 rows / 997 edges / 204 ledgers (measured)."
+version = "0.204.0"
+description = "UQFF Star-Magic-Program v0.204.0: PAPER_201 wired - UQFF GW lifecycle chain (inspiral/QNM/BZ/orbital-decay/kilonova) under both F_UBii and Um channels; REAL-DATA verified (GW150914 chirp 28.1, Hulse-Taylor Pdot + periastron, AT2017gfo); h_UQFF strain damping = predecessor GW bucket; QNM coefficient confirms Q-194a. Q-197. Wired 205/2255, gate 1328/0. Registry 467 rows / 1000 edges / 205 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

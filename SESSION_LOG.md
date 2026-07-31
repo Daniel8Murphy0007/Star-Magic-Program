@@ -2309,3 +2309,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 204/2,255 (11 ✓, 193 ⚠). Next: PAPER_201.
 
 ---
+
+## 2026-07-31 — v0.204.0 — BAND 1: PAPER_201
+
+- PAPER_201 wired (⚠ Q-197): GW lifecycle chain. Both F_UBii+Um channels per phase; real-data verified (GW150914/GW170817/Hulse-Taylor/AT2017gfo); strain-damping = predecessor GW bucket; QNM coefficient confirms Q-194a.
+- Campaign: 205/2,255 (11 ✓, 194 ⚠). Next: PAPER_202.
+
+---

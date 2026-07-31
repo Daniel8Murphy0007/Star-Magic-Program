@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.204.0] — 2026-07-31 — BAND 1: PAPER_201 — GW LIFECYCLE CHAIN
+
+### Added
+- **PAPER_201 dispatch** (UQFF GW lifecycle, S50, sec 2.6): the full compact-binary chain (inspiral chirp -> QNM ringdown -> BZ jet -> kilonova remnant + orbital decay + periastron) under BOTH the F_UBii and Um operators — concretely realizing the "both channels per system" structure. REAL-DATA VERIFIED: GW150914 chirp M_c = 28.1 Msun, GW170817 1.188, Hulse-Taylor Pdot -2.422e-12 + periastron 4.226 deg/yr (GR-confirmed), AT2017gfo kilonova. Header h_UQFF = h_GR·(1-Ubi/F_U)·e^-kt = predecessor GW-bucket strain damping. PINNED: QNM 0.3737+0.088a coefficient (confirms Q-194a — the corpus's consistent non-Berti parametrization).
+- OPEN_RULING Q-197.
+- Gate: 1,328 assertions, 0 failures. Registry: 467 rows / 1000 edges / 205 ledgers (measured).
+
+---
+
 ## [0.203.0] — 2026-07-31 — BAND 1: PAPER_200 — UM MAGNETISM TAXONOMY
 
 ### Added

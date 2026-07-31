@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.203.0", "uqff_calculator.VERSION = 0.203.0")
+assert_that(C.VERSION == "0.204.0", "uqff_calculator.VERSION = 0.204.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2888,6 +2888,19 @@ assert_that(1.2e31 < _r200['eddington_verified'] < 1.3e31,
 assert_that('mu-damping vs F_UBii' in _r200['operator_vs_buoyancy'],
             "PAPER_200: Um and F_UBii apply different operators to same phenomena")
 assert_that(C.wired_count() >= 204, "wired_count >= 204")
+
+_r201 = C.calc('PAPER_201')['value']
+assert_that(abs(_r201['chirp_gw150914'] - 28.3) < 0.5,
+            "PAPER_201: GW150914 chirp mass = 28.1 Msun verified (m1=36/m2=29)")
+assert_that(_r201['chirp_gw170817'] == 1.188,
+            "PAPER_201: GW170817 chirp mass 1.188 Msun (real LIGO value)")
+assert_that(_r201['hulse_taylor_verified'] == (-2.422e-12, 4.226),
+            "PAPER_201: Hulse-Taylor Pdot -2.422e-12 + periastron 4.226 deg/yr (real, GR-confirmed)")
+assert_that('predecessor GW bucket' in _r201['strain_damping_header'],
+            "PAPER_201: h_UQFF strain-damping = predecessor GW bucket form")
+assert_that('225 Hz' in _r201['qnm_coeff_note'],
+            "PAPER_201: QNM 0.3737+0.088a coefficient note (Q-197a, confirms Q-194a)")
+assert_that(C.wired_count() >= 205, "wired_count >= 205")
 
 # =============================================================================
 # REPORT

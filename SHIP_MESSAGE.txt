@@ -1,25 +1,22 @@
-v0.203.0 BAND 1: PAPER_200 wired - UM MAGNETISM TAXONOMY
+v0.204.0 BAND 1: PAPER_201 wired - GW LIFECYCLE CHAIN
 
-PAPER_200 Um Universal Magnetism Taxonomy (OPEN_RULING Q-196) - Session 50, thread 7514fe, sec 2.6:
-  The magnetism counterpart to the F_UBii buoyancy taxonomy - 50+ Um variants in the general form
-  Um,X = [sum_j mu_j/r_j]*(1 - e^-gamma*t*cos(pi t_n))*F_X, the SCm-vacuum magnetic operator with
-  exponential damping. Spans cosmological magnetism, BH thermodynamics, compact/stellar, GW,
-  ISM/plasma (Kazantsev dynamo, Alfven Mach, C/J shocks, DSA), structure formation, reionization,
-  dark matter.
+PAPER_201 UQFF Gravitational Waves (OPEN_RULING Q-197) - Session 50, thread 7514fe, sec 2.6:
+  The full GW compact-binary lifecycle under BOTH the F_UBii buoyancy and Um magnetism operators:
+  inspiral (chirp) -> ringdown (QNM) -> jet (Blandford-Znajek) -> remnant (kilonova), plus
+  long-term orbital decay and periastron advance. This concretely realizes the "both channels per
+  system" structure noted at 200 - every GW phase gets a buoyancy and a magnetism UQFF channel.
 
-  PREDECESSOR TIE: Um is the L_mag sector operator / PAPER_1072 Heaviside amplifier (the U_m term
-  in the 9-sector Lagrangian and the F_U sum); this catalog is its per-regime enumeration - the
-  THIRD cross-repo taxonomy, completing the trilogy: Ug decomposition (171), F_UBii buoyancy
-  (198-199), Um magnetism (200).
+  REAL-DATA CALIBRATION VERIFIED: GW150914 chirp mass M_c = 28.1 Msun (m1=36/m2=29; obs 28.6);
+  GW170817 M_c = 1.188 Msun; Hulse-Taylor PSR B1913+16 Pdot = -2.422e-12 and periastron advance
+  4.226 deg/yr (both real, GR-confirmed to <0.1%); AT2017gfo kilonova M_ej ~ 0.05 Msun, v_ej ~
+  0.15c; Peters 2.5PN orbital-decay formula with the correct f(e) eccentricity factor. The header
+  h_UQFF = h_GR*(1 - Ubi/F_U)*e^-kt is the SCm strain-damping form of the predecessor's GW bucket
+  (PAPER_914/915).
 
-  EMBEDDED PHYSICS VERIFIED: Eddington header L_UQFF = 4pi G M c/kappa_es*(1 - SSq*e^-kappa*dt) =
-  1.26e31 W correct; GW chirp (32/5)(G Mc^5/3/c^5)(pi f)^10/3 correct quadrupole luminosity;
-  main-sequence L ~ mu^4 M^3 correct - all SM comparison targets (Rule 4 clean; UQFF = the
-  mu*(1-e^-gt)*F_X embedding).
+  PINNED: the QNM ringdown coefficient 0.3737 + 0.088*a_f recurs (as in 198) - for GW150914 it
+  gives 225 Hz, the paper cites 251, canonical Berti gives 272; this confirms Q-194a that
+  0.3737+0.088a is the corpus's consistent non-Berti parametrization. Rule 4 clean - real GW
+  physics as comparison targets, UQFF = the operator overlay plus strain damping.
 
-  STRUCTURAL NOTE: the same base astrophysics F_X terms (QNM, Blandford-Znajek, Hawking, Arnett,
-  Press-Schechter) appear in BOTH the F_UBii and Um taxonomies - each observed system gets both a
-  buoyancy channel (F_rel/E_LEP) and a magnetism channel (mu-damping), not duplication.
-
-Q-196 queued. Gate 1,322 assertions 0 failures. Registry 466 rows / 997 edges / 204 ledgers (measured). Wired 204/2,255 (11 clean,
-193 OPEN_RULING). Next: PAPER_201.
+Q-197 queued. Gate 1,328 assertions 0 failures. Registry 467 rows / 1000 edges / 205 ledgers (measured). Wired 205/2,255 (11 clean,
+194 OPEN_RULING). Next: PAPER_202.

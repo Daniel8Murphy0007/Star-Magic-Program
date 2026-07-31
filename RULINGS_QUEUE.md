@@ -4956,6 +4956,40 @@ RESOLVED section with the ruling recorded.
   embeddings registered.
 - **Daniel's ruling:** (pending)
 
+### Q-197 — PAPER_201 GW lifecycle chain — QNM coefficient (confirms Q-194a)
+- **Question:** the QNM ringdown coefficient 0.3737 +
+  0.088*a_f recurs here (as in 198): for GW150914's
+  M_f=62/a_f=0.67 it gives f_QNM = 225 Hz, the paper
+  cites 251 Hz, and the canonical Berti l=2,m=2 real-
+  part fit (1.5251 - 1.1568(1-a)^0.1292) gives 272 Hz -
+  none exactly reproduces the observed ~251 Hz. This
+  confirms Q-194a: the 0.3737+0.088a is the corpus's
+  consistent (non-Berti) parametrization across 198 and
+  201. Ruling: adopt it as the UQFF QNM form (cite as
+  such, not "Berti fits"), or replace with the canonical
+  Berti fit?
+- **Notable (strong real-data paper):** the GW lifecycle
+  chain applies BOTH the F_UBii buoyancy and Um
+  magnetism operators to each phase (inspiral -> ringdown
+  -> jet -> kilonova, + orbital decay + periastron),
+  concretely realizing the "both channels per system"
+  structure noted in Q-196. REAL-DATA CALIBRATION
+  VERIFIED: GW150914 chirp mass M_c = 28.1 Msun
+  (m1=36/m2=29; obs 28.6); GW170817 M_c = 1.188 Msun;
+  Hulse-Taylor PSR B1913+16 Pdot = -2.422e-12 and
+  periastron 4.226 deg/yr (both real, GR-confirmed to
+  <0.1%); AT2017gfo kilonova M_ej ~ 0.05 Msun, v_ej ~
+  0.15c; Peters 2.5PN decay + f(e) eccentricity factor
+  correct. The header h_UQFF = h_GR*(1 - Ubi/F_U)*e^-kt
+  is the SCm strain-damping form of the predecessor's GW
+  bucket (PAPER_914/915). Rule 4 clean - real GW physics
+  as comparison targets, UQFF = the operator overlay +
+  strain damping.
+- **Best-candidate wired:** GW chain + both-channel
+  realization + verified real-data calibration
+  registered; QNM coefficient pinned (Q-194a confirmed).
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
