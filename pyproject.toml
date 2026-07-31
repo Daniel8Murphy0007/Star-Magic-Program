@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.168.0"
-description = "UQFF Star-Magic-Program v0.168.0: PAPER_165 wired - stress-energy coupling A_mu_nu = g + eta*T_s00*cos(pi t_n); Delta_A = 4.448e-15 EXACT with trace factor 4 = D_PHYS; input-chain defects (B^2/2mu0 11.6%, T_plasma 1.5e5x, Python-default transposition) + magnitude slips (~4 vs 20.8 orders, 1043 vs 73.7) pinned. Q-161. Wired 169/2255, gate 1119/0. Registry 407 rows / 870 edges / 169 ledgers (measured)."
+version = "0.169.0"
+description = "UQFF Star-Magic-Program v0.169.0: PAPER_166 wired - solar-wind buoyancy modulation wind_mod = 1 + epsilon_sw*rho_sw on all Ubi terms + H_SCm; rho_sw(1 AU) = 8.35e-21 EXACT, radial law 3/4 rows exact; km/s-vs-m/s unit ambiguity PERSISTS in the fix paper itself (1.4 vs 401); Mercury 10x + threshold 100x slips pinned. Q-162. Wired 170/2255, gate 1125/0. Registry 409 rows / 873 edges / 170 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

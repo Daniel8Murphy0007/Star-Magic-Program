@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.169.0] — 2026-07-30 — BAND 1: PAPER_166 — SOLAR WIND MODULATION
+
+### Added
+- **PAPER_166 dispatch** (epsilon_sw wind modulation, S47,
+  sec 2.3): wind_mod = 1 + epsilon_sw·rho_sw applied to
+  all four Ubi terms + H_SCm = 0.99. VERIFIED: rho_sw
+  (1 AU) = m_p·5 cm⁻³ = 8.35e-21 EXACT; wind_mod − 1 =
+  8.35e-24 honestly negligible at 1 AU; radial 1/r² table
+  exact in 3 of 4 rows. PINNED: the delta_sw km/s-vs-m/s
+  dimensional mismatch this paper set out to FIX persists
+  in its own sec-7 verification ("1.4" vs actual 401 —
+  1000× ambiguity inherited by the derived accretion
+  density); Mercury row 10× slip with EXACT mantissa;
+  1% threshold claimed at 1e3 kg/m³, actual 10 (100×).
+- OPEN_RULING Q-162.
+- Gate: 1,125 assertions, 0 failures. Registry: 409 rows / 873 edges / 170 ledgers (measured).
+
+---
+
 ## [0.168.0] — 2026-07-30 — BAND 1: PAPER_165 — A_MU_NU TENSOR COUPLING
 
 ### Added

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.168.0", "uqff_calculator.VERSION = 0.168.0")
+assert_that(C.VERSION == "0.169.0", "uqff_calculator.VERSION = 0.169.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2447,6 +2447,19 @@ assert_that(20 < _r165['orders_above_wormhole'] < 21,
 assert_that(73 < _r165['orders_below_fu_sun'] < 74,
             "PAPER_165: 73.7 orders below F_U(Sun), claimed '1043' (Q-161b)")
 assert_that(C.wired_count() >= 169, "wired_count >= 169")
+
+_r166 = C.calc('PAPER_166')['value']
+assert_that(abs(_r166['rho_sw_1au'] - 8.35e-21) / 8.35e-21 < 1e-6,
+            "PAPER_166: rho_sw(1 AU) = m_p*5e6 = 8.35e-21 kg/m^3 EXACT")
+assert_that(9.9 < _r166['mercury_slip'][1] / _r166['mercury_slip'][0] < 10.1,
+            "PAPER_166: Mercury row 10x slip with EXACT mantissa (5.48e-19 vs 5.49e-20)")
+assert_that(_r166['sec7_actual'] == 401.0,
+            "PAPER_166: sec 7 '1.4' actually = 401 with stated 4e5 m/s - km/s unit persists (Q-162a)")
+assert_that(_r166['sec7_kms_reading'] == 1.4,
+            "PAPER_166: sec 7 = 1.4 only under v_sw in km/s")
+assert_that(_r166['threshold_1pct'] == 10.0,
+            "PAPER_166: 1% threshold rho = 10 kg/m^3, claimed 1e3 - 100x slip (Q-162b)")
+assert_that(C.wired_count() >= 170, "wired_count >= 170")
 
 # =============================================================================
 # REPORT

@@ -2003,3 +2003,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 169/2,255 (11 ✓, 158 ⚠). Next: PAPER_166.
 
 ---
+
+## 2026-07-30 — v0.169.0 — BAND 1: PAPER_166
+
+- PAPER_166 wired (⚠ Q-162): wind_mod buoyancy modulation.
+  1 AU + radial law verified; km/s unit ambiguity persists
+  in the fix's own check; Mercury/threshold slips.
+- Campaign: 170/2,255 (11 ✓, 159 ⚠). Next: PAPER_167.
+
+---

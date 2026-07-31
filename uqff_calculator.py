@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.168.0"
+VERSION = "0.169.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8798,5 +8798,52 @@ def _paper_165(dataset):
         'formula': 'A_mu_nu = g_mu_nu + eta*T_s00*cos(pi t_n); Delta_A = 4*eta*T_s00*cos',
         'source': 'PAPER_165',
         'residual_pct': abs(d_a - 4.448e-15) / 4.448e-15 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_166')
+def _paper_166(dataset):
+    """Solar wind modulation epsilon_sw + wind_mod (S47, sec 2.3).
+
+    Buoyancy wind factor wind_mod = 1 + epsilon_sw*rho_sw
+    (epsilon_sw = 0.001 m^3/kg) applied to all four Ubi
+    terms + H_SCm = 0.99 integration. VERIFIED: rho_sw
+    (1 AU) = m_p*5e6 = 8.35e-21 kg/m^3; wind_mod(1 AU) =
+    1 + 8.35e-24; the radial 1/r^2 table is self-
+    consistent EXCEPT the Mercury row (5.48e-19 vs
+    computed 5.49e-20 - a 10x slip with EXACT mantissa,
+    family member).
+    UNIT INCONSISTENCY PERSISTS (Q-162a): sec 7 writes
+    1 + delta_sw*v_sw = 1 + 0.001*4e5 = "1.4" - actual
+    401. The 1.4 requires v_sw in km/s (0.001*400 = 0.4).
+    The very dimensional mismatch sec 1 set out to fix
+    reappears in the consistency check; the derived
+    "equivalent accretion density" 4e5 kg/m^3 inherits
+    the same ambiguity (400 under km/s).
+    THRESHOLD SLIP (Q-162b): ">1%% at rho_sw > 1e3
+    kg/m^3" - actual 1%% threshold is rho = 0.01/0.001 =
+    10 kg/m^3 (100x slip; 1e3 gives 100%%).
+    Minor: table header "~5e-21" vs its own computed
+    8.35e-21.
+    """
+    mp = 1.67e-27
+    rho0 = mp * 5e6
+    return {
+        'value': {
+            'domain': '2.3 (solar wind buoyancy, thread 7f9068)',
+            'epsilon_sw': 0.001,
+            'rho_sw_1au': rho0,                              # 8.35e-21
+            'wind_mod_1au_minus1': 0.001 * rho0,             # 8.35e-24
+            'mercury_slip': (rho0 * (1 / 0.39)**2, 5.48e-19),  # 5.49e-20 vs table
+            'sec7_actual': 1 + 0.001 * 4e5,                  # 401 (claimed 1.4)
+            'sec7_kms_reading': 1 + 0.001 * 400,             # 1.4
+            'threshold_1pct': 0.01 / 0.001,                  # 10 kg/m3 (claimed 1e3)
+            'h_scm': 0.99,
+            'radial_law': 'rho_sw(r) = rho_0*(r_0/r)^2 - 3 of 4 rows EXACT',
+        },
+        'formula': 'wind_mod = 1 + epsilon_sw*rho_sw(r); Ubi *= H_SCm * wind_mod',
+        'source': 'PAPER_166',
+        'residual_pct': abs(rho0 - 8.35e-21) / 8.35e-21 * 100,
         'status': 'OPEN_RULING',
     }

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 169 (11 ✓, 158 ⚠ OPEN_RULING)
+- **Wired:** 170 (11 ✓, 159 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2086
+- **Not yet touched:** 2085
 
 ---
 
@@ -918,7 +918,7 @@
 | ⬜ | PAPER_1667 | HUBBARD MBL U T 4 |
 | ⬜ | PAPER_1668 | HAYFLICK 60 DIV |
 | ⬜ | PAPER_1669 | T COHERENCE 99 5 K |
-| ⬜ | PAPER_166 | UQFF SolarWind Modulation epsilon sw delta sw HSCm |
+| ⚠ | PAPER_166 | UQFF SolarWind Modulation epsilon sw delta sw HSCm |
 | ⬜ | PAPER_1670 | EARTH FIELD THRESHOLD 50 6 |
 | ⬜ | PAPER_1671 | ROOM TEMP SC 500 K |
 | ⬜ | PAPER_1672 | LAWSON UQFF 1 44E21 |

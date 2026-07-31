@@ -869,3 +869,6 @@ observable,tensor_coupling_amunu,paper,PAPER_165,A_mu_nu coupling
 primitive,D_PHYS,observable,tensor_coupling_amunu,4D trace factor
 observable,amunu_input_defects,paper,PAPER_165,input defects
 observable,amunu_input_defects,paper,PAPER_159,wormhole comparison
+observable,solar_wind_wind_mod,paper,PAPER_166,wind_mod law
+observable,solar_wind_wind_mod,paper,PAPER_157,Ubi application
+observable,wind_mod_defects,paper,PAPER_166,3 defects

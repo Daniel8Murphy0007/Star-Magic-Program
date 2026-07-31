@@ -1,29 +1,27 @@
-v0.168.0 BAND 1: PAPER_165 wired - A_MU_NU TENSOR COUPLING
+v0.169.0 BAND 1: PAPER_166 wired - SOLAR WIND MODULATION
 
-PAPER_165 Stress-Energy Tensor Coupling (OPEN_RULING
-Q-161) - Session 47, thread 7f9068, sec 2.3:
-  A_mu_nu = g_mu_nu + eta*T_s00*cos(pi t_n) with eta =
-  1e-22 and T_s00 = T_plasma + T_SCm; the scalar trace
-  perturbation Delta_A = 4*eta*T_s00 = 4.448e-15 verifies
-  EXACT - and the trace factor 4 IS D_PHYS (the 4D
-  diagonal count), a small primitive touchpoint. tr(A)
-  gives F_U its tensor term: the second SCm-plasma <->
-  geometry coupling channel, oscillation-synchronized to
-  the Ubi buoyancy phase.
+PAPER_166 Solar Wind Modulation (OPEN_RULING Q-162) -
+Session 47, thread 7f9068, sec 2.3:
+  wind_mod = 1 + epsilon_sw*rho_sw (epsilon_sw = 0.001
+  m^3/kg) applied consistently to all four Ubi buoyancy
+  terms, plus H_SCm = 0.99 integration. VERIFIED:
+  rho_sw(1 AU) = m_p * 5/cc = 8.35e-21 kg/m^3 EXACT;
+  wind_mod - 1 = 8.35e-24 at 1 AU (honestly negligible,
+  significant only in accretion/compressed regions);
+  radial 1/r^2 law exact in 3 of 4 table rows.
 
-  PINNED FOR RULING: (a) input chains - T_SCm = B^2/2mu0
-  at the stated "B~5 T" gives 9.947e6 Pa, not 1.11e7
-  (11.6%; B = 5.28 T would match exactly); T_plasma =
-  1270 Pa vs the n*k*T chain at the stated coronal
-  rho/T = 8.3e-3 Pa (1.5e5x unexplained); the sec-7
-  Python default 1.127e7 digit-transposes 1.1127e7;
-  (b) magnitude slips - "~4 orders above the wormhole
-  term" (actual 20.8 orders) and "1043 orders below
-  F_U(Sun)" (actual 73.7) - the "~4" recurs verbatim
-  from 161's scaling claim, possibly the same mojibake
-  vector; (c) naive matrix trace (A_flat = 2) vs proper
-  g^mu_mu = 4.
+  PINNED FOR RULING: (a) UNIT PERSISTENCE - the paper
+  exists to fix the delta_sw*v_sw dimensional mismatch,
+  yet its own sec-7 verification writes "1 + 0.001*4e5 =
+  1.4" where the arithmetic gives 401; the printed 1.4
+  requires v_sw in km/s. Is delta_sw per-km/s (Ug2 wind
+  factor 1.4 canonical) or per-m/s (401)? The derived
+  "equivalent accretion density" (4e5 vs 400 kg/m^3)
+  inherits the same 1000x ambiguity. (b) Mercury radial
+  row 10x slip with EXACT mantissa (family member; other
+  rows exact); 1%% threshold claimed at rho > 1e3 kg/m^3,
+  actual 10 kg/m^3 (100x).
 
-Q-161 queued. Gate 1,119 assertions 0 failures. Registry
-407 rows / 870 edges / 169 ledgers (measured). Wired
-169/2,255 (11 clean, 158 OPEN_RULING). Next: PAPER_166.
+Q-162 queued. Gate 1,125 assertions 0 failures. Registry
+409 rows / 873 edges / 170 ledgers (measured). Wired
+170/2,255 (11 clean, 159 OPEN_RULING). Next: PAPER_167.

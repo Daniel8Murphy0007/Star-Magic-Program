@@ -3803,6 +3803,35 @@ RESOLVED section with the ruling recorded.
   magnitude defects pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-162 — PAPER_166 wind modulation — km/s unit persistence + Mercury/threshold slips
+- **Question:** (a) UNIT PERSISTENCE: sec 1 states the
+  paper exists to fix the delta_sw*v_sw "dimensional
+  mismatch" - yet sec 7's own consistency check writes
+  "1 + 0.001*4e5 = 1.4" where the arithmetic gives 401;
+  the printed 1.4 requires v_sw = 400 (km/s). Is delta_sw
+  = 0.001 defined per (km/s) - making Ug2's wind factor
+  1.4 canonical - or per (m/s), making it 401? The derived
+  "equivalent accretion density" (4e5 vs 400 kg/m^3)
+  inherits the same 1000x ambiguity.
+  (b) TWO SLIPS: Mercury radial row 5.48e-19 vs the 1/r^2
+  law's 5.49e-20 (10x, EXACT mantissa - family member;
+  the other 3 rows are exact); ">1%% at rho_sw > 1e3
+  kg/m^3" vs actual threshold 10 kg/m^3 (100x; 1e3 gives
+  100%%). Also the parameter table's "~5e-21" vs its own
+  computed 8.35e-21.
+- **Notable:** the core model is clean - rho_sw(1 AU) =
+  m_p*5 cm^-3 = 8.35e-21 EXACT, wind_mod(1 AU) - 1 =
+  8.35e-24 honestly negligible, radial 1/r^2 law
+  self-consistent in 3 of 4 rows, physically motivated
+  three-channel mechanism (Archimedes/ram pressure/ion
+  friction), H_SCm = 0.99 carried from 064 canonical.
+  This paper directly reworks the Ubi wind factor used in
+  148/157's system tables.
+- **Best-candidate wired:** wind_mod law + verified
+  1 AU/radial values registered; unit persistence + slips
+  pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
