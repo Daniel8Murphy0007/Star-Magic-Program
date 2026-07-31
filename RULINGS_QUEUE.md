@@ -3651,6 +3651,36 @@ RESOLVED section with the ruling recorded.
   citation (PAPER_2147/2149 doctrine).
 - **Daniel's ruling:** (pending)
 
+### Q-157 — PAPER_161 relativistic jet — scaling claim + rho ambiguities
+- **Question:** (a) SCALING CLAIM: sec 5 says E_react
+  "increases ~4" going 0.1c -> 0.99c, but (0.99/0.1)^2 =
+  98.01. The nearby "~7 the rest-mass energy" is clearly
+  mojibake for "~7x" (gamma-1 = 6.09), so "~4" may also be
+  mojibake (e.g. "~98" or "~10^2" with dropped chars) - or
+  a genuine 24.5x error. Which?
+  (b) DENSITY AMBIGUITIES: rho_A printed "1.67x10?7"
+  (mojibake) - is it 1.67e-27 kg/m^3 (= 1 H atom/m^3, the
+  natural reading for "H gas ambient density") or 1.67e-7?
+  And rho_SCm = 1e-5 kg/m^3 "AGN accretion disk" joins the
+  rho_SCm context-value family (canonical 7.09e-37 J/m^3;
+  struct values 1e11-1e15; bulk-script 9.47e-27...). Is
+  1e-5 an approved per-context value?
+  (c) M_UQFF = 1.43e1 TeV = 14.3 TeV appears in an HTML
+  comment (line 21) with no derivation - new unexplained
+  constant. Meaning?
+- **Notable:** gamma(0.99c) = 7.0888 ~ 7.09 numerically
+  echoes the rho_SCm mantissa (coincidence class, logged);
+  E_inject = 6.09*m*c^2 verified; v_SCm = 2.968e8 EXACT;
+  the Stam-solver body force f = (E_react/rho_A)*(cos,sin)
+  (pi t_n) is spatially uniform hence CURL-FREE - the
+  quasar-jet NS implementation is consistent with 154's
+  sound curl-free core (the roadmap's one strong Millennium
+  leg). E_react appears in the route-3 form (v^2/rho_A),
+  reinforcing the Q-153a three-route adjudication.
+- **Best-candidate wired:** 0.99c calibration + gamma +
+  curl-free consistency registered; discrepancies pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

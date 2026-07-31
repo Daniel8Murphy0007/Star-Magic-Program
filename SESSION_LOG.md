@@ -1958,3 +1958,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 164/2,255 (11 ✓, 153 ⚠). Next: PAPER_161.
 
 ---
+
+## 2026-07-30 — v0.164.0 — BAND 1: PAPER_161
+
+- PAPER_161 wired (⚠ Q-157): relativistic SCm jet 0.99c.
+  Gamma + E_inject verified; curl-free body force
+  consistent with 154; scaling/density ambiguities queued.
+- Campaign: 165/2,255 (11 ✓, 154 ⚠). Next: PAPER_162.
+
+---

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 164 (11 ✓, 153 ⚠ OPEN_RULING)
+- **Wired:** 165 (11 ✓, 154 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2091
+- **Not yet touched:** 2090
 
 ---
 
@@ -863,7 +863,7 @@
 | ⬜ | PAPER_1617 | OMEGA LAMBDA DARK 0 685 |
 | ⬜ | PAPER_1618 | T CMB 2 725 K |
 | ⬜ | PAPER_1619 | UNIVERSE AGE 13 78 GYR |
-| ⬜ | PAPER_161 | Relativistic SCm Jet vSCm 099c J1610 Quasar |
+| ⚠ | PAPER_161 | Relativistic SCm Jet vSCm 099c J1610 Quasar |
 | ⬜ | PAPER_1620 | SIGMA 8 CLUSTERING 0 811 |
 | ⬜ | PAPER_1621 | LAPSE RATE 6 5 K KM |
 | ⬜ | PAPER_1622 | AU OVER R EARTH 23481 |

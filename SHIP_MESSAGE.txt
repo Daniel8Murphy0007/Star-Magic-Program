@@ -1,32 +1,28 @@
-v0.163.0 BAND 1: PAPER_160 wired - K4 CONFIRMED BY CORPUS
+v0.164.0 BAND 1: PAPER_161 wired - RELATIVISTIC SCM JET
 
-PAPER_160 Ug4 Extended Calibration (OPEN_RULING Q-156) -
-Session 47, thread 7f9068, sec 2.3:
-  Calibrates the three parameters PAPER_086 left undefined:
-  rho_v = 6e-27 (dark-energy density, 1.8% rounding of
-  Lambda*c^2/8piG = 5.89e-27 kg/m3), C_conc = 1.0
-  (isotropic baseline, 0.1-100 AGN range), f_feedback =
-  0.1 (observed AGN efficiency mean). Ug4(0,0) = 4.2188e-10
-  chain verified to 0.004%.
+PAPER_161 Relativistic SCm Jet Dynamics (OPEN_RULING
+Q-157) - Session 47, thread 7f9068, sec 2.3:
+  v_SCm = 0.99c = 2.968e8 m/s calibrated for quasar
+  J1610+1811 (z = 3.122). Lorentz gamma = 7.0888 (paper
+  7.09 - numerically echoing the rho_SCm mantissa,
+  coincidence logged); E_inject = (gamma-1)*m*c^2 =
+  6.09*m*c^2 VERIFIED.
 
-  SELF-RECTIFICATION VALIDATED: the paper declares k4 = 2.0
-  "UQFF canonical (unchanged)" - CONFIRMING the k4 = 2.000
-  EXACT that the v0.160.0 PAPER_157 wiring derived from the
-  uniform Ug4 BEFORE this paper was read. Q-153 item (b)
-  resolved by the corpus, exactly as the charter's
-  self-rectification doctrine predicts.
+  CURL-FREE CONSISTENCY: the Jos Stam stable-fluids body
+  force f = (E_react/rho_A)*(cos, sin)(pi t_n) is
+  spatially uniform, hence curl-free - the quasar-jet NS
+  implementation is consistent with 154's sound curl-free
+  core (the Millennium roadmap's one strong leg). E_react
+  appears in route-3 form (v^2/rho_A), reinforcing the
+  Q-153a three-route adjudication.
 
-  LAMBDA BRIDGE (queued): rho_v = Lambda*c^2/8piG ties Ug4
-  directly to the cosmological constant; the paper claims
-  090's compressed Lambda*c^2/3 term and Ug4 are
-  complementary global/local dark-energy forms.
+  PINNED: sec 5 claims E_react "increases ~4" from 0.1c
+  to 0.99c - actual (0.99/0.1)^2 = 98.01 (mojibake like
+  the nearby "~7"="~7x", or a 24.5x error); rho_A
+  mojibake "1.67x10?7" (1.67e-27 = 1 H/m^3 candidate);
+  rho_SCm = 1e-5 kg/m^3 AGN-disk joins the context-value
+  family; M_UQFF = 14.3 TeV unexplained comment constant.
 
-  Drift pinned: "5.96e-27 J/m^3" unit tag on a kg/m^3
-  value (PAPER_2147 unit-direction class); footer "F_U =
-  2.0e+18 m/s" velocity-unit slip. Footer Eddington
-  1 - SSq*e^-2.9e-4 = 0.43017 EXACT.
-
-Q-156 queued; Q-153 annotated. Gate 1,089 assertions 0
-failures. Registry 397 rows / 848 edges / 164 ledgers
-(measured). Wired 164/2,255 (11 clean, 153 OPEN_RULING).
-Next: PAPER_161.
+Q-157 queued. Gate 1,095 assertions 0 failures. Registry
+399 rows / 852 edges / 165 ledgers (measured). Wired
+165/2,255 (11 clean, 154 OPEN_RULING). Next: PAPER_162.

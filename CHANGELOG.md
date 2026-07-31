@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.164.0] — 2026-07-30 — BAND 1: PAPER_161 — RELATIVISTIC SCM JET
+
+### Added
+- **PAPER_161 dispatch** (v_SCm = 0.99c, J1610+1811 quasar
+  z = 3.122, S47, sec 2.3): Lorentz gamma = 7.0888 (paper
+  7.09 — numerically echoes the rho_SCm mantissa,
+  coincidence logged); E_inject = (gamma−1)mc² = 6.09mc²
+  verified; Jos Stam stable-fluids body force f =
+  (E_react/rho_A)(cos, sin)(pi t_n) is spatially uniform
+  hence CURL-FREE — the quasar NS implementation is
+  consistent with 154's sound core. E_react appears in
+  route-3 form (v²/rho_A), reinforcing Q-153a. Pinned:
+  "increases ~4" vs actual 98.01 (mojibake-or-error);
+  rho_A mojibake (1.67e-27 candidate); rho_SCm = 1e-5
+  AGN-disk context value; M_UQFF = 14.3 TeV unexplained
+  comment constant.
+- OPEN_RULING Q-157.
+- Gate: 1,095 assertions, 0 failures. Registry: 399 rows / 852 edges / 165 ledgers (measured).
+
+---
+
 ## [0.163.0] — 2026-07-30 — BAND 1: PAPER_160 — K4 CONFIRMED BY CORPUS
 
 ### Added

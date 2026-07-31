@@ -847,3 +847,7 @@ observable,ug4_calibration_triple,paper,PAPER_160,3 calibrations
 primitive,SSQ,observable,ug4_calibration_triple,footer Eddington
 observable,k4_canonical_confirmed,paper,PAPER_160,k4 = 2 canonical
 observable,k4_canonical_confirmed,paper,PAPER_157,157-derived k4 confirmed
+observable,relativistic_scm_jet,paper,PAPER_161,0.99c calibration
+observable,relativistic_scm_jet,paper,PAPER_154,curl-free consistency
+primitive,KAPPA_PER_DAY,observable,relativistic_scm_jet,E_react decay
+observable,jet_scaling_discrepancy,paper,PAPER_161,~4 vs 98.01

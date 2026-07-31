@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.163.0"
+VERSION = "0.164.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8551,5 +8551,53 @@ def _paper_160(dataset):
         'formula': 'Ug4 = k4*rho_v*C_conc*(Mbh/dg)*e^-at*cos(pi tn)*(1+f_fb)',
         'source': 'PAPER_160',
         'residual_pct': abs(ug4 - 4.219e-10) / 4.219e-10 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_161')
+def _paper_161(dataset):
+    """Relativistic SCm jet v_SCm = 0.99c - J1610+1811 quasar (S47, sec 2.3).
+
+    Calibrates E_react's jet velocity relativistically for
+    the z = 3.122 quasar: v_SCm = 0.99c = 2.968e8 m/s;
+    Lorentz gamma = 7.0888 (paper 7.09); E_inject =
+    (gamma-1)*m*c^2 = 6.09*m*c^2 VERIFIED. Extends the
+    E_react v^2/rho_A form (157's route 3, Q-153a family)
+    and wires it as the Jos Stam stable-fluids body force
+    f_UQFF = (E_react/rho_A)*(cos pi t_n, sin pi t_n) -
+    spatially UNIFORM hence curl-free, CONSISTENT with
+    154's curl-free NS core.
+    GAMMA ECHO: gamma(0.99c) = 7.0888 ~ 7.09 - numerically
+    echoes the rho_SCm mantissa (coincidence class, noted).
+    SCALING DISCREPANCY (Q-157a): sec 5 claims E_react
+    "increases ~4" from 0.1c to 0.99c; actual (0.99/0.1)^2
+    = 98.01 - either mojibake (dropped chars, like the
+    "~7" = "~7x" nearby) or a 24.5x error.
+    NEW VALUES: rho_SCm = 1e-5 kg/m^3 "AGN accretion disk"
+    (ANOTHER context value in the rho_SCm fork family);
+    rho_A = 1.67e-{ambiguous} mojibake (1.67e-27 = 1 H/m^3
+    candidate); M_UQFF = 14.3 TeV appears in a comment
+    (new unexplained constant).
+    """
+    import math as _m
+    gamma = 1 / _m.sqrt(1 - 0.99**2)
+    return {
+        'value': {
+            'domain': '2.3 (relativistic jet, thread 7f9068)',
+            'v_scm': 0.99 * 2.998e8,                        # 2.968e8
+            'gamma': gamma,                                  # 7.0888
+            'gamma_echo': 'gamma ~ 7.09 = rho_SCm mantissa (coincidence, noted)',
+            'e_inject_factor': gamma - 1,                    # 6.0888 (paper 6.09)
+            'v2_scaling_actual': (0.99 / 0.1)**2,            # 98.01
+            'v2_scaling_claimed': 4,                         # sec 5 "~4" (Q-157a)
+            'body_force': 'f = (E_react/rho_A)*(cos,sin)(pi t_n) - uniform, curl-free (154-consistent)',
+            'e_react_form': 'rho_SCm*v^2/rho_A (157 route 3, Q-153a family)',
+            'j1610': {'z': 3.122, 'L_erg_s': 1e47},
+            'new_context_values': 'rho_SCm 1e-5 kg/m3 AGN disk; M_UQFF 14.3 TeV comment',
+        },
+        'formula': 'E_react_rel = rho_SCm*v_SCm^2/rho_A * e^-kappa*t; v_SCm = 0.99c',
+        'source': 'PAPER_161',
+        'residual_pct': abs(gamma - 7.09) / 7.09 * 100,
         'status': 'OPEN_RULING',
     }

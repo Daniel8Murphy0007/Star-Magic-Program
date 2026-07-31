@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.163.0", "uqff_calculator.VERSION = 0.163.0")
+assert_that(C.VERSION == "0.164.0", "uqff_calculator.VERSION = 0.164.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2382,6 +2382,19 @@ assert_that(abs(_r160['footer_edd'] - 0.43017) < 1e-4,
 assert_that('2147' in _r160['drift'],
             "PAPER_160: J/m^3-on-kg/m^3 unit-tag drift pinned (PAPER_2147 class)")
 assert_that(C.wired_count() >= 164, "wired_count >= 164")
+
+_r161 = C.calc('PAPER_161')['value']
+assert_that(abs(_r161['gamma'] - 7.0888) < 1e-3,
+            "PAPER_161: Lorentz gamma(0.99c) = 7.0888 (paper 7.09)")
+assert_that(abs(_r161['e_inject_factor'] - 6.09) < 0.01,
+            "PAPER_161: E_inject = (gamma-1)*m*c^2 = 6.09*m*c^2 verified")
+assert_that(abs(_r161['v2_scaling_actual'] - 98.01) < 0.1,
+            "PAPER_161: actual v^2 scaling 0.1c->0.99c = 98.01 vs claimed ~4 (Q-157a)")
+assert_that(abs(_r161['v_scm'] - 2.968e8) / 2.968e8 < 1e-3,
+            "PAPER_161: v_SCm = 0.99c = 2.968e8 m/s")
+assert_that('curl-free' in _r161['body_force'],
+            "PAPER_161: uniform body force curl-free - consistent with 154's NS core")
+assert_that(C.wired_count() >= 165, "wired_count >= 165")
 
 # =============================================================================
 # REPORT
