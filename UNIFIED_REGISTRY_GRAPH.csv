@@ -895,3 +895,8 @@ observable,ug_decomposition_full,paper,PAPER_170,struct consumer
 primitive,KAPPA_PER_DAY,observable,ug_decomposition_full,E_react decay
 observable,ubi_third_form_wind_fork,paper,PAPER_171,3rd Ubi form
 observable,ubi_third_form_wind_fork,paper,PAPER_166,wind-factor fork
+observable,fu_complete_assembly,paper,PAPER_172,compute_FU capstone
+primitive,D_PHYS,observable,fu_complete_assembly,jet 1/4 factor
+observable,resonance_smoking_gun,paper,PAPER_172,unit-test evidence
+observable,resonance_smoking_gun,paper,PAPER_152,table values disproven
+observable,resonance_smoking_gun,paper,PAPER_158,blend g_res implicated

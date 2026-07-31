@@ -2058,3 +2058,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 175/2,255 (11 ✓, 164 ⚠). Next: PAPER_172.
 
 ---
+
+## 2026-07-30 — v0.175.0 — BAND 1: PAPER_172
+
+- PAPER_172 wired (⚠ Q-168): F_U assembly capstone.
+  Resonance smoking gun 9.3e53 (Q-143a/147a proven);
+  four Ubi forms; wind couplings clarified.
+- Campaign: 176/2,255 (11 ✓, 165 ⚠). Next: PAPER_173.
+
+---

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.174.0"
+VERSION = "0.175.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9089,5 +9089,60 @@ def _paper_171(dataset):
         'formula': 'Ug1..Ug4 + Um closed forms with k = (1.5, 1.2, 1.8, 2.0)',
         'source': 'PAPER_171',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_172')
+def _paper_172(dataset):
+    """F_U complete unified field assembly (S48, sec 2.4-D).
+
+    The compute_FU() capstone: (Ug1+Ug2+Ug3+Ug4) +
+    (Ubi1..4) + Um + tr(A_mu_nu), with the quasar jet
+    F_jet = FU - Ubi(FU*0.25) (0.25 = 1/D_PHYS) driving
+    the NS solver (177).
+    SMOKING GUN (Q-168c, annotates Q-143a/Q-147a): the
+    code's OWN unit test expects resonance_MUGE(SGR1745)
+    ~ 1.773e-9 while the 152/158 tables print 1.655e45
+    for the same quantity - a 9.3e53 discrepancy proving
+    the tables' g_res values are NOT what the code
+    computes (assigned placeholders confirmed from inside
+    the codebase). compressed_MUGE 1.782e39 IS table-
+    consistent.
+    WIND-FACTOR CLARIFICATION (partially resolves Q-162a/
+    Q-167b): TWO DISTINCT factors - Ug2 uses delta_sw*
+    v_sw; Ubi uses eps_sw*rho_sw = 8e-24 (negligible,
+    166-form). Not one unstable factor but two different
+    couplings.
+    FOURTH UBI FORM (Q-168a): sec 4 adds the Archimedes
+    form U_bi = rho_vac*V_eff*g_loc*SSq*e^-kappa*t
+    (printed twice) alongside the full chain (sec 1,
+    beta = 0.6 drift) and reprints 171's mu_s-gradient
+    form - FOUR Ubi forms corpus-active (echoes the Ug4i
+    four-form fork).
+    A_MU_NU SIGNATURE FLIP (Q-168b): g = diag(1,-1,-1,-1)
+    here -> tr = -2 + 4.508e-15*cos, vs 165's
+    diag(-1,1,1,1) -> +2 + 4.448e-15; and T_s00 = 1.127e7
+    here ADOPTS 165's transposed Python default - two
+    T_s00 candidates now (1.112e7 vs 1.127e7).
+    """
+    return {
+        'value': {
+            'domain': '2.4-D (F_U assembly, thread 381a8fe7)',
+            'assembly': '(sum Ug) + (sum Ubi) + Um + tr(A_mu_nu)',
+            'jet_law': 'F_jet = FU - Ubi(FU*0.25); 0.25 = 1/D_PHYS',
+            'jet_quarter_is_d_phys': 1 / D_PHYS,             # 0.25
+            'resonance_unittest': 1.773e-9,
+            'resonance_table': 1.655e45,
+            'smoking_gun_ratio': 1.655e45 / 1.773e-9,        # 9.3e53
+            'compressed_consistent': abs(1.782e39 - 1.783e39) / 1.783e39,  # 0.06%
+            'ubi_fourth_form': 'rho_vac*V_eff*g_loc*SSq*e^-kt (Archimedes) - 4 forms active',
+            'wind_two_factors': 'Ug2: delta_sw*v_sw; Ubi: eps_sw*rho_sw = 8e-24 (distinct)',
+            'amunu_flip': 'diag(1,-1,-1,-1) tr = -2 vs 165 +2; T_s00 = 1.127e7 adopted',
+            'beta_drift': '0.6 (sec 1) -> canonical BETA_I per PAPER_1203',
+        },
+        'formula': 'F_U = sum(Ug) + sum(Ubi) + Um + tr(A); F_jet = FU - Ubi(FU/4)',
+        'source': 'PAPER_172',
+        'residual_pct': abs(1.782e39 - 1.783e39) / 1.783e39 * 100,
         'status': 'OPEN_RULING',
     }

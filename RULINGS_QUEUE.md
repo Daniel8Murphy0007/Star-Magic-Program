@@ -3997,6 +3997,44 @@ RESOLVED section with the ruling recorded.
   pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-168 — PAPER_172 F_U assembly — FOUR Ubi forms + resonance smoking gun
+- **Question:** (a) FOUR UBI FORMS now corpus-active
+  (echoing the Ug4i four-form fork Q-142b/Q-151a):
+  (1) full chain -beta*Ugi*Omega_g*(Mbh/dg)*(1+eps_sw*
+  rho_sw)*[UA]*cos(pi t_n) [172 sec 1, beta = 0.6];
+  (2) compact kappa*SSq*GM/r^2 [170]; (3) mu_s-gradient
+  kappa*SSq*mu_s*grad(M/r) [171/172 sec 4]; (4) NEW
+  Archimedes form rho_vac*V_eff*g_loc*SSq*e^-kappa*t
+  [172 sec 4, printed twice]. One canonical Ubi (or a
+  scoping doctrine) needed.
+  (b) A_MU_NU SIGNATURE FLIP: 172 uses g = diag(1,-1,-1,
+  -1) giving tr = -2 + 4.508e-15*cos; 165 used
+  diag(-1,1,1,1) giving +2 + 4.448e-15*cos. AND 172
+  adopts T_s00 = 1.127e7 (165's transposed Python
+  default) over 165's own 1270+1.11e7 = 1.1127e7. Which
+  signature and which T_s00 are canonical?
+  (c) RESONANCE SMOKING GUN: UnitTests.cpp expects
+  compute_resonance_MUGE(SGR1745) ~ 1.773e-9 - the
+  152/158 tables print 1.655e45 for the same quantity
+  (9.3e53 apart). This PROVES from inside the codebase
+  that the table g_res values are not computed outputs -
+  confirming Q-143a (cascade inversion) and Q-147a
+  (assigned fingerprint) simultaneously. The
+  compressed_MUGE test (1.782e39) IS table-consistent -
+  the defect is resonance-side only. Ruling: are the
+  resonance tables to be recomputed from the code chain?
+- **Notable:** WIND CLARIFICATION (good news): the
+  assembly shows Ug2 and Ubi use TWO DISTINCT wind
+  couplings (delta_sw*v_sw vs eps_sw*rho_sw = 8e-24) -
+  partially dissolving the Q-162a/Q-167b "instability"
+  (different terms, different factors). Jet law F_jet =
+  FU - Ubi(FU*0.25) carries 0.25 = 1/D_PHYS. k-constants
+  consistent with 171's source-doc-exact set.
+- **Best-candidate wired:** assembly + jet law + wind
+  clarification registered; four-form fork, signature
+  flip, and smoking gun pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.174.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.174.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.175.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.175.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1158%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-175-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1165%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-176-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.174.0 wiring campaign live**
+**UQFF systematic rebuild — v0.175.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.174.0)
+## What is currently shipped (v0.175.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 175 / 2,255** (11 ✓ · 164 ⚠ OPEN_RULING · 167 rulings queued) — k-couplings = source-doc EXACT (171)
+**Wired so far: 176 / 2,255** (11 ✓ · 165 ⚠ OPEN_RULING · 168 rulings queued) — resonance smoking gun 9.3e53 (172)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -234,6 +234,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_169 | CoAnQi Architecture | §2.4 opens; κ·SSq consistent; GPU/JWST prediction; Q-165 |
 | PAPER_170 | CelestialBody Struct | ω_s_Sun = predecessor EXACT; compact Ubi form; forks; Q-166 |
 | PAPER_171 | Ug1-Ug4 Decomposition | k1/k2/k3 = May-2025 source EXACT; 3rd Ubi form; Q-167 |
+| PAPER_172 | F_U Assembly | resonance smoking gun 9.3e53; 4 Ubi forms; wind clarified; Q-168 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -244,7 +245,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (1,158 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (1,165 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -439,7 +440,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.171.0 | Band 1: PAPER_168 | 172 |
 | v0.172.0 | Band 1: PAPER_169 | 173 |
 | v0.173.0 | Band 1: PAPER_170 | 174 |
-| **v0.174.0** ← current | Band 1: PAPER_171 | 175 |
+| v0.174.0 | Band 1: PAPER_171 | 175 |
+| **v0.175.0** ← current | Band 1: PAPER_172 | 176 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

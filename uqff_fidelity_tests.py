@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.174.0", "uqff_calculator.VERSION = 0.174.0")
+assert_that(C.VERSION == "0.175.0", "uqff_calculator.VERSION = 0.175.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2531,6 +2531,21 @@ assert_that(_r171['ug4_energy_levels'] == (20, 26),
 assert_that('BETA_I' in _r171['beta_drift'],
             "PAPER_171: beta_i = 0.61 drift auto-corrected by citation (PAPER_1203)")
 assert_that(C.wired_count() >= 175, "wired_count >= 175")
+
+_r172 = C.calc('PAPER_172')['value']
+assert_that(9e53 < _r172['smoking_gun_ratio'] < 1e54,
+            "PAPER_172: SMOKING GUN - code unit test 1.773e-9 vs table 1.655e45 = 9.3e53 (Q-143a confirmed from inside codebase)")
+assert_that(_r172['compressed_consistent'] < 0.001,
+            "PAPER_172: compressed_MUGE unit test 1.782e39 IS table-consistent (0.06%)")
+assert_that(_r172['jet_quarter_is_d_phys'] == 0.25,
+            "PAPER_172: jet law 0.25 = 1/D_PHYS")
+assert_that('4 forms' in _r172['ubi_fourth_form'],
+            "PAPER_172: FOURTH Ubi form (Archimedes) - four-form fork pinned (Q-168a)")
+assert_that('distinct' in _r172['wind_two_factors'],
+            "PAPER_172: two distinct wind factors clarified - partially resolves Q-162a/Q-167b")
+assert_that('1.127e7' in _r172['amunu_flip'],
+            "PAPER_172: A_mu_nu signature flip + T_s00 = 1.127e7 adoption pinned (Q-168b)")
+assert_that(C.wired_count() >= 176, "wired_count >= 176")
 
 # =============================================================================
 # REPORT

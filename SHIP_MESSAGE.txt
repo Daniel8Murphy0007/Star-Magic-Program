@@ -1,34 +1,32 @@
-v0.174.0 BAND 1: PAPER_171 wired - UG DECOMPOSITION
+v0.175.0 BAND 1: PAPER_172 wired - F_U ASSEMBLY + SMOKING GUN
 
-PAPER_171 Universal Gravity Ug1-Ug4 Full Decomposition
-(OPEN_RULING Q-167) - Session 48, thread 381a8fe7, sec
-2.4-C:
-  Implementation reference for the four Ug ranges + Um
-  with all helper functions (step_function, E_react,
-  mu_s, Bj, omega_s_t, mu_j) and calibrated constants.
+PAPER_172 F_U Complete Unified Field Assembly
+(OPEN_RULING Q-168) - Session 48, thread 381a8fe7, sec
+2.4-D:
+  The compute_FU() capstone: (Ug1+Ug2+Ug3+Ug4) +
+  (Ubi1..4) + Um + tr(A_mu_nu), with the quasar jet law
+  F_jet = FU - Ubi(FU*0.25) - the 0.25 being 1/D_PHYS.
 
-  MAJOR PROVENANCE CONVERGENCE: k1 = 1.5, k2 = 1.2,
-  k3 = 1.8 EXACTLY match the coupling constants in your
-  May 2025 "Final Equations" source document (the
-  PAPER_2152 provenance chain) - the sec 2.4 CoAnQi
-  codebase carries the original couplings verbatim.
-  k4 = 2.0 gets its THIRD corpus confirmation (157
-  derived it, 160 canonized it, 171 implements it).
-  Ug4 assigned to energy levels 20-26 (26-level
-  structure touchpoint); clearest physical
-  interpretations yet for all five terms.
+  SMOKING GUN (the big one): UnitTests.cpp expects
+  compute_resonance_MUGE(SGR1745) ~ 1.773e-9, while the
+  152/158 system tables print 1.655e45 for the SAME
+  quantity - 9.3e53 apart. This PROVES from inside the
+  codebase itself that the resonance-table values are
+  not computed outputs - simultaneously confirming
+  Q-143a (cascade inversion) and Q-147a (the assigned-
+  values fingerprint). The compressed-side test
+  (1.782e39) IS table-consistent - the defect is
+  resonance-only.
 
-  PINNED FOR RULING: (a) THIRD Ubi form in three
-  consecutive papers (kappa*SSq*mu_s*grad(M/r) here vs
-  170's compact GM/r^2 vs 148's full chain) + beta_i =
-  0.61 drift (auto-corrected to 0.6029 per charter);
-  (b) wind-factor instability - delta_sw = 0.01, v_sw =
-  5e5 -> 5001, vs 166's 1.4/401 readings (3600x span
-  across two consecutive papers); (c) Bj(t) placeholder
-  dominance - the confessed 1e3 constant is 1e6 x the
-  1e-3 baseline string field, leaving Ug3 and Um
-  placeholder-dominated until Q-158c is ruled.
+  ALSO: WIND CLARIFICATION (good news) - Ug2 and Ubi
+  use two DISTINCT wind couplings (delta_sw*v_sw vs
+  eps_sw*rho_sw = 8e-24), partially dissolving the
+  Q-162a/Q-167b "instability"; FOURTH Ubi form
+  (Archimedes rho_vac*V_eff*g_loc*SSq*e^-kt) - the Ubi
+  fork now mirrors the Ug4i four-form fork; A_mu_nu
+  signature FLIP vs 165 (tr = -2 vs +2) with T_s00 =
+  1.127e7 adopted; beta = 0.6 drift auto-corrected.
 
-Q-167 queued. Gate 1,158 assertions 0 failures. Registry
-419 rows / 896 edges / 175 ledgers (measured). Wired
-175/2,255 (11 clean, 164 OPEN_RULING). Next: PAPER_172.
+Q-168 queued. Gate 1,165 assertions 0 failures. Registry
+421 rows / 901 edges / 176 ledgers (measured). Wired
+176/2,255 (11 clean, 165 OPEN_RULING). Next: PAPER_173.

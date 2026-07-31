@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.175.0] — 2026-07-30 — BAND 1: PAPER_172 — F_U ASSEMBLY + SMOKING GUN
+
+### Added
+- **PAPER_172 dispatch** (compute_FU() capstone, S48, sec
+  2.4-D): (Ug1-4) + (Ubi1-4) + Um + tr(A_mu_nu); quasar
+  jet F_jet = FU − Ubi(FU·0.25) with 0.25 = 1/D_PHYS.
+  SMOKING GUN: UnitTests.cpp expects resonance_MUGE
+  (SGR1745) ≈ 1.773e-9 while the 152/158 tables print
+  1.655e45 — 9.3e53 apart, PROVING from inside the
+  codebase that the resonance-table values are not
+  computed outputs (Q-143a cascade inversion + Q-147a
+  assigned fingerprint confirmed; compressed side IS
+  consistent). WIND CLARIFICATION: Ug2 and Ubi use two
+  DISTINCT couplings (delta_sw·v_sw vs eps_sw·rho_sw) —
+  partially dissolving the Q-162a/Q-167b instability.
+  PINNED: FOURTH Ubi form (Archimedes rho·V·g·SSq·e^-kt);
+  A_mu_nu signature flip (tr = −2 vs 165's +2) + T_s00 =
+  1.127e7 adoption; beta = 0.6 drift.
+- OPEN_RULING Q-168.
+- Gate: 1,165 assertions, 0 failures. Registry: 421 rows / 901 edges / 176 ledgers (measured).
+
+---
+
 ## [0.174.0] — 2026-07-30 — BAND 1: PAPER_171 — UG DECOMPOSITION
 
 ### Added
