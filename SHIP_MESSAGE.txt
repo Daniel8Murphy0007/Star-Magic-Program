@@ -1,17 +1,19 @@
-v0.210.0 BAND 1: PAPER_206 wired - VORTEX AVALANCHE SOC
+v0.211.0 BAND 1: PAPER_207 wired - ENTANGLEMENT CHAIN
 
-PAPER_206 Magnetar Vortex Avalanche Simulation (OPEN_RULING Q-202) - Session 50, thread 7514fe,
-sec 2.6: 2D (10x10 BFS lattice) + 3D (spherical shell) superfluid-vortex unpinning avalanches ->
-power-law P(S) ~ S^-alpha (self-organized criticality). 2D alpha ~ 1.6+-0.2 (S up to 69)
-consistent with observed pulsar glitch statistics (Melatos 2008: 1.5-2.0); 3D (5 events, S up to
-165) HONESTLY reported as insufficient (alpha 0+-8, needs ~1000 events). Feynman n_v =
-2 Omega m_n/hbar and Magnus F_M = rho_s kappa v_L verified; anchors real (Vela DeltaOmega/Omega ~
-2e-6, Crab ~ 1e-8, anti-glitch 1E 2259+586 Antonopoulou 2018).
+PAPER_207 QuTiP Quantum Entanglement Chain (OPEN_RULING Q-203) - Session 50, thread 7514fe,
+sec 2.6: a 4-qubit CNOT entanglement cascade as the quantum microscopic picture of PAPER_206's
+classical vortex avalanche (each pinning site = qubit; CNOT = "site A unpins -> entangle with B").
 
-UQFF PREDICTION: mapping avalanche size S to F_UBii,glitch (198) via DeltaOmega = S*hbar*n_v/(4pi I)
-predicts the UQFF buoyancy force is power-law distributed, P(F_UBii,glitch) ~ F^-1.6; and 196's
-negative-R(t) anti-glitch mechanism matches the observed 1E 2259+586 anti-glitch - a falsifiable
-glitch <-> F_UBii,glitch <-> R(t)-sign chain.
+CORRECT: the Bell-pair S_VN = ln2; Ryu-Takayanagi S_VN = Area/(4G); Bell/Mermin bounds (CHSH
+Tsirelson 2*sqrt(2) = 2.828; GHZ Mermin = 4); and the fast-decoherence argument (t_dec ~ 1e-45 s,
+so the classical BFS power-law of 206 is the effective shadow of the quantum mechanism).
 
-Gate 1,357 assertions 0 failures. Registry 473 rows / 1014 edges / 210 ledgers (measured). Wired 210/2,255 (11 clean, 199 OPEN_RULING).
-Next: PAPER_207.
+ENTROPY ERROR CORRECTED (verified by direct computation): the paper claims S_VN rises 0 -> 0.693
+-> 1.386 -> 1.945 ("approaching 2 bits"). The CNOT-chain states are GHZ-type, whose von Neumann
+entropy is EXACTLY ln2 = 0.6931 for every step after the Bell pair and for ANY bipartition - it
+does not rise to ~2. The 1.386 (= 2ln2) and 1.945 values would need a different state (two
+independent Bell pairs), not a GHZ cascade; there is also a nat/bit conflation. The analogy and
+the classical-shadow argument stand; only the entropy curve was wrong. Dispatch stays stdlib.
+
+Gate 1,363 assertions 0 failures. Registry 475 rows / 1017 edges / 211 ledgers (measured). Wired 211/2,255 (11 clean, 200 OPEN_RULING).
+Next: PAPER_208.

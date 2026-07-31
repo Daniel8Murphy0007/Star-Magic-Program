@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.211.0] — 2026-07-31 — BAND 1: PAPER_207 — ENTANGLEMENT CHAIN
+
+### Added
+- **PAPER_207 dispatch** (QuTiP CNOT entanglement chain, S50, sec 2.6): 4-qubit cascade as the quantum microscopic picture of 206 vortex avalanches. CORRECT: Bell pair S_VN = ln2, Ryu-Takayanagi form, Bell/Mermin bounds (Tsirelson 2.828, GHZ Mermin 4), fast-decoherence argument (t_dec ~ 1e-45 s -> classical BFS is the shadow). ENTROPY ERROR CORRECTED via direct computation: the chain states are GHZ-type, so S_VN = ln2 = 0.6931 constant for all steps after the Bell pair and any bipartition - NOT the paper's claimed rise to ~2 (1.386 = 2ln2 / 1.945 require a non-GHZ state; nat/bit conflation noted). Dispatch stays stdlib (computes ln2 via math; no qutip dep).
+- OPEN_RULING Q-203.
+- Gate: 1,363 assertions, 0 failures. Registry: 475 rows / 1017 edges / 211 ledgers (measured).
+
+---
+
 ## [0.210.0] — 2026-07-31 — BAND 1: PAPER_206 — VORTEX AVALANCHE SOC
 
 ### Added

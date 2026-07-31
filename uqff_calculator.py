@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.210.0"
+VERSION = "0.211.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10819,6 +10819,59 @@ def _paper_206(dataset):
         },
         'formula': 'P(S) ~ S^-alpha SOC; S -> F_UBii,glitch via DeltaOmega = S hbar n_v/(4pi I)',
         'source': 'PAPER_206',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_207')
+def _paper_207(dataset):
+    """QuTiP entanglement chain - CNOT + von Neumann entropy (S50, sec 2.6).
+
+    4-qubit CNOT entanglement cascade as the QUANTUM
+    microscopic picture of PAPER_206's classical vortex
+    avalanche (each pinning site = qubit; CNOT = "site A
+    unpins -> entangle with B"). Justified by the
+    degenerate-superfluid coherence length (xi ~ 10 fm)
+    spanning many lattice sites.
+    CORRECT: steps 0-2 (S_VN = 0, 0, ln2 = 0.693 for the
+    Bell pair); Ryu-Takayanagi S_VN = Area/(4G) holographic
+    form; Bell/Mermin bounds (CHSH Tsirelson 2*sqrt(2) =
+    2.828; GHZ Mermin = 4); the fast-decoherence argument
+    (t_dec ~ 1e-45 s -> the classical BFS power-law of 206
+    is the effective shadow of the quantum mechanism).
+    F_UBii,ent (AdS/CFT) + F_UBii,ent_dec (decoherence)
+    variants tie to 198's F_UBii family.
+    ENTROPY ERROR (Q-203a, corrected here): the paper
+    claims S_VN rises monotonically 0 -> 0.693 -> 1.386 ->
+    1.945 ("approaching 2 bits"). VERIFIED WRONG: the
+    CNOT-chain states are GHZ-type, and GHZ von Neumann
+    entropy is EXACTLY ln2 = 0.6931 for every step after
+    the Bell pair and for ANY bipartition (reduced state
+    is maximally mixed only in a 2D subspace). It does NOT
+    rise to ~2. The 1.386 = 2*ln2 / 1.945 values would
+    require a different state (e.g. two independent Bell
+    pairs), not a GHZ cascade. Also a nat/bit conflation:
+    ln2 nat = 1 bit, so "2 bits" = 1.386 nat, not 1.945.
+    The entanglement-cascade ANALOGY and the classical-
+    shadow argument stand; only the entropy curve is wrong.
+    """
+    import math as _m
+    ln2 = _m.log(2)
+    return {
+        'value': {
+            'domain': '2.6 (entanglement chain, thread 7514fe)',
+            'svn_steps_correct': (0.0, 0.0, ln2, ln2, ln2),  # 0,0,0.693,0.693,0.693
+            'svn_paper_claim': (0.0, 0.0, 0.693, 1.386, 1.945),
+            'ghz_entropy_is_ln2': ln2,                        # 0.6931 for ALL bipartitions
+            'entropy_error': 'paper claims rise to ~2; GHZ S_VN is constant ln2 (Q-203a)',
+            'bell_mermin_correct': 'CHSH Tsirelson 2sqrt2 = 2.828; GHZ Mermin = 4',
+            'rt_formula': 'S_VN = Area/(4G) Ryu-Takayanagi (correct)',
+            'decoherence_shadow': 't_dec ~ 1e-45 s -> classical 206 BFS power-law is the shadow',
+            'quantum_of_206': 'microscopic quantum picture of PAPER_206 avalanche',
+        },
+        'formula': 'CNOT chain -> GHZ; S_VN = ln2 (constant); F_UBii,ent = -F_rel S_VN/E_LEP Q_wave',
+        'source': 'PAPER_207',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

@@ -1013,3 +1013,6 @@ observable,q26_constant_correction,paper,PAPER_205,computed corrections
 observable,vortex_avalanche_soc,paper,PAPER_206,SOC simulation
 observable,vortex_avalanche_soc,paper,PAPER_198,"F_UBii,glitch variant"
 observable,vortex_avalanche_soc,paper,PAPER_196,R(t) anti-glitch
+observable,entanglement_chain_svn,paper,PAPER_207,CNOT chain
+observable,entanglement_chain_svn,paper,PAPER_206,classical avalanche
+observable,ghz_entropy_correction,paper,PAPER_207,computed correction

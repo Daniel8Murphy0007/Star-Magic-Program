@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.210.0", "uqff_calculator.VERSION = 0.210.0")
+assert_that(C.VERSION == "0.211.0", "uqff_calculator.VERSION = 0.211.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2983,6 +2983,19 @@ assert_that('1E2259+586' in _r206['uqff_glitch_prediction'],
 assert_that(_r206['anchors']['vela'] == 2e-6,
             "PAPER_206: Vela glitch DeltaOmega/Omega ~ 2e-6 (real anchor)")
 assert_that(C.wired_count() >= 210, "wired_count >= 210")
+
+_r207 = C.calc('PAPER_207')['value']
+assert_that(abs(_r207['ghz_entropy_is_ln2'] - 0.6931) < 1e-3,
+            "PAPER_207: GHZ von Neumann entropy = ln2 = 0.6931 (constant, all bipartitions)")
+assert_that(_r207['svn_steps_correct'][3] == _r207['svn_steps_correct'][4],
+            "PAPER_207: S_VN constant at ln2 for GHZ-chain steps 3-4 (not rising to ~2, Q-203a)")
+assert_that('constant ln2' in _r207['entropy_error'],
+            "PAPER_207: entropy-rise claim corrected - GHZ S_VN is constant (Q-203a)")
+assert_that('2.828' in _r207['bell_mermin_correct'],
+            "PAPER_207: Bell/Mermin bounds correct (Tsirelson 2sqrt2, GHZ Mermin 4)")
+assert_that('shadow' in _r207['decoherence_shadow'],
+            "PAPER_207: fast-decoherence -> classical 206 power-law is the shadow")
+assert_that(C.wired_count() >= 211, "wired_count >= 211")
 
 
 # =============================================================================

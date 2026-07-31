@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 210 (11 ✓, 199 ⚠ OPEN_RULING)
+- **Wired:** 211 (11 ✓, 200 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2045
+- **Not yet touched:** 2044
 
 ---
 
@@ -1385,7 +1385,7 @@
 | ⬜ | PAPER_2077 | ROUND 200 MILESTONE ROUND NUMBER TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2078 | ROUND 201 60 ROUND MILESTONE DIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2079 | ROUND 204 CP2 ARC OPENING QUAD BACKBONE FIRST UQFF |
-| ⬜ | PAPER_207 | QuTiP Quantum Entanglement Chain CNOT VonNeumann Magnetar |
+| ⚠ | PAPER_207 | QuTiP Quantum Entanglement Chain CNOT VonNeumann Magnetar |
 | ⬜ | PAPER_2080 | ROUND 205 CP2 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2081 | ROUND 206 CP2 QUAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2082 | ROUND 207 CP2 TRIAD BACKBONE FIRST UQFF |

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.210.0"
-description = "UQFF Star-Magic-Program v0.210.0: PAPER_206 wired - magnetar vortex-avalanche SOC; 2D power-law alpha 1.6 (Melatos-consistent glitch stats), 3D undersampling honest; Feynman/Magnus verified; UQFF prediction P(F_UBii,glitch)~F^-1.6 + anti-glitch link to 196 R(t). Q-202. Wired 210/2255, gate 1357/0. Registry 473 rows / 1014 edges / 210 ledgers (measured)."
+version = "0.211.0"
+description = "UQFF Star-Magic-Program v0.211.0: PAPER_207 wired - QuTiP CNOT entanglement chain as the quantum picture of 206 vortex avalanches; Bell/Mermin bounds + RT + fast-decoherence shadow correct; GHZ von Neumann entropy correction (constant ln2, not the claimed rise to ~2). Q-203. Wired 211/2255, gate 1363/0. Registry 475 rows / 1017 edges / 211 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

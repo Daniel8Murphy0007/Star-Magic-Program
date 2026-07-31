@@ -2360,3 +2360,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 210/2,255 (11 ✓, 199 ⚠). Next: PAPER_207.
 
 ---
+
+## 2026-07-31 — v0.211.0 — BAND 1: PAPER_207
+
+- PAPER_207 wired (⚠ Q-203): QuTiP entanglement chain. Bell/Mermin/RT/decoherence correct; GHZ von Neumann entropy corrected to constant ln2 (not the claimed rise to ~2) via direct computation.
+- Campaign: 211/2,255 (11 ✓, 200 ⚠). Next: PAPER_208.
+
+---

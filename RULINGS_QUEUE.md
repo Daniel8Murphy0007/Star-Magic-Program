@@ -5136,6 +5136,33 @@ RESOLVED section with the ruling recorded.
   UQFF glitch/anti-glitch prediction registered.
 - **Daniel's ruling:** (pending)
 
+### Q-203 — PAPER_207 entanglement chain — GHZ entropy correction
+- **Question:** the paper claims the CNOT-chain von
+  Neumann entropy rises monotonically 0 -> 0.693 ->
+  1.386 -> 1.945 ("approaching 2 bits"). VERIFIED WRONG
+  by direct computation: the states are GHZ-type, whose
+  S_VN is EXACTLY ln2 = 0.6931 for every step after the
+  Bell pair and for ANY bipartition. It does not rise to
+  ~2. The 1.386 (= 2ln2) and 1.945 values would require
+  a different state (two independent Bell pairs), not a
+  GHZ cascade; there is also a nat/bit conflation (ln2
+  nat = 1 bit, so "2 bits" = 1.386 nat). Adopt the
+  corrected constant-ln2 entropy?
+- **Notable:** the rest is sound - the entanglement-
+  cascade-as-avalanche ANALOGY (quantum microscopic
+  picture of 206's classical BFS), the Ryu-Takayanagi
+  S_VN = Area/(4G) form, Bell/Mermin bounds (CHSH
+  Tsirelson 2sqrt2 = 2.828; GHZ Mermin = 4), and the
+  fast-decoherence argument (t_dec ~ 1e-45 s -> the
+  classical power-law of 206 is the effective shadow of
+  the quantum mechanism) are all correct. F_UBii,ent
+  (AdS/CFT) + F_UBii,ent_dec (decoherence) tie to 198's
+  F_UBii family. Note: qutip is described in the source
+  but the dispatch computes ln2 in stdlib (no qutip dep).
+- **Best-candidate wired:** entanglement chain + analogy
+  + correct bounds registered; GHZ entropy corrected.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
