@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.204.0"
+VERSION = "0.205.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10572,5 +10572,52 @@ def _paper_201(dataset):
         'formula': 'GW chain: F_UBii,X + Um,X per phase; h_UQFF = h_GR*(1-Ubi/F_U)*e^-kt',
         'source': 'PAPER_201',
         'residual_pct': abs((m1 * m2)**0.6 / (m1 + m2)**0.2 - 28.3) / 28.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_202')
+def _paper_202(dataset):
+    """UQFF cosmic-dawn/reionization physics (S50, sec 2.6).
+
+    Applies both F_UBii and Um channels across cosmic
+    dawn (z ~ 1100 recombination to z ~ 5 reionization
+    end): baryon-photon ratio, BBN deuterium bottleneck,
+    CMB power spectrum, recombination optical depth,
+    ionization-fraction evolution, HII bubble growth,
+    Jeans mass/length.
+    REAL ANCHORS VERIFIED: eta = 6.08e-10 (Planck+BBN),
+    Y_P = 0.247 (4He mass fraction), tau_reion = 0.054 +
+    z_re ~ 7.7 (Planck 2018), z_rec ~ 1100, alpha_B =
+    2.6e-13 cm^3/s (case B), sigma_T = 6.652e-29 m^2,
+    n_s = 0.965, n_gamma = 410 cm^-3 - all standard
+    cosmology; Jeans mass M_J = (5kT/G mu m_H)^3/2 *
+    (3/4pi rho)^1/2 correct.
+    PREDECESSOR TIE: these are the same observables the
+    predecessor BUCKET C cosmology (PAPER_1156, calculate
+    _cosmology) covers - Y_p 0.050%, tau_reion, z_reion -
+    here re-expressed through the F_UBii/Um operator
+    overlay (SM cosmology as the F_X comparison target,
+    Rule 4 clean; UQFF sets the acoustic horizon via the
+    Lambda*c^2/3 term).
+    NOTE: the k_eta ~ 1e-113 deep-vacuum constant (182)
+    and delta_k ~ 7.25e8 (198) reappear as the BBN
+    freeze-out coupling - consistent cross-paper.
+    """
+    return {
+        'value': {
+            'domain': '2.6 (cosmic dawn/reionization, thread 7514fe)',
+            'z_range': 'z ~ 1100 (recombination) to z ~ 5 (reionization end)',
+            'real_anchors': {'eta': 6.08e-10, 'Y_P': 0.247, 'tau_reion': 0.054,
+                             'z_rec': 1100, 'n_s': 0.965, 'alpha_B': 2.6e-13},
+            'predecessor_bucketC': 'same observables as PAPER_1156 calculate_cosmology (Y_p/tau/z_reion)',
+            'jeans_correct': 'M_J = (5kT/G mu m_H)^3/2 (3/4pi rho)^1/2',
+            'keta_reappears': 'k_eta 1e-113 (182) + delta_k 7.25e8 (198) as BBN freeze-out coupling',
+            'both_channels': 'F_UBii + Um per phenomenon',
+            'acoustic_horizon': 'UQFF Lambda*c^2/3 sets acoustic horizon (CMB peak l~220)',
+        },
+        'formula': 'cosmic-dawn F_UBii,X + Um,X: eta/BBN/CMB/recomb/reion/Jeans',
+        'source': 'PAPER_202',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

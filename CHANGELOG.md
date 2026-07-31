@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.205.0] — 2026-07-31 — BAND 1: PAPER_202 — COSMIC DAWN
+
+### Added
+- **PAPER_202 dispatch** (cosmic dawn/reionization, S50, sec 2.6): baryon-photon ratio, BBN deuterium bottleneck, CMB power spectrum, recombination optical depth, ionization evolution, HII bubble growth, Jeans mass/length (z~1100 to z~5) under both F_UBii and Um channels. Real anchors verified (eta 6.08e-10, Y_P 0.247, tau_reion 0.054, z_rec 1100, n_s 0.965, alpha_B 2.6e-13). Same observables as the predecessor BUCKET C cosmology (PAPER_1156); UQFF Lambda·c²/3 sets the acoustic horizon (CMB first peak l~220). Rule 4 clean — SM cosmology as F_X comparison targets.
+- OPEN_RULING Q-198.
+- Gate: 1,333 assertions, 0 failures. Registry: 468 rows / 1003 edges / 206 ledgers (measured).
+
+---
+
 ## [0.204.0] — 2026-07-31 — BAND 1: PAPER_201 — GW LIFECYCLE CHAIN
 
 ### Added

@@ -999,3 +999,6 @@ observable,um_magnetism_taxonomy,paper,PAPER_171,Ug taxonomy sibling
 observable,gw_lifecycle_chain,paper,PAPER_201,GW chain
 observable,gw_lifecycle_chain,paper,PAPER_198,F_UBii channel
 observable,gw_lifecycle_chain,paper,PAPER_200,Um channel
+observable,cosmic_dawn_reionization,paper,PAPER_202,cosmic dawn
+observable,cosmic_dawn_reionization,paper,PAPER_199,cosmo F_UBii
+observable,cosmic_dawn_reionization,paper,PAPER_200,cosmo Um

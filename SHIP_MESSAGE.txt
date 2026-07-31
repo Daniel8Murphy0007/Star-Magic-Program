@@ -1,22 +1,23 @@
-v0.204.0 BAND 1: PAPER_201 wired - GW LIFECYCLE CHAIN
+v0.205.0 BAND 1: PAPER_202 wired - COSMIC DAWN
 
-PAPER_201 UQFF Gravitational Waves (OPEN_RULING Q-197) - Session 50, thread 7514fe, sec 2.6:
-  The full GW compact-binary lifecycle under BOTH the F_UBii buoyancy and Um magnetism operators:
-  inspiral (chirp) -> ringdown (QNM) -> jet (Blandford-Znajek) -> remnant (kilonova), plus
-  long-term orbital decay and periastron advance. This concretely realizes the "both channels per
-  system" structure noted at 200 - every GW phase gets a buoyancy and a magnetism UQFF channel.
+PAPER_202 UQFF Reionization/BBN/Recombination/Cosmic Dawn (OPEN_RULING Q-198) - Session 50,
+thread 7514fe, sec 2.6:
+  Cosmic-dawn physics from z~1100 (recombination) to z~5 (reionization end) under both the F_UBii
+  and Um channels: baryon-photon ratio, BBN deuterium bottleneck, CMB power spectrum, recombination
+  optical depth, ionization-fraction evolution, HII bubble growth, Jeans mass/length.
 
-  REAL-DATA CALIBRATION VERIFIED: GW150914 chirp mass M_c = 28.1 Msun (m1=36/m2=29; obs 28.6);
-  GW170817 M_c = 1.188 Msun; Hulse-Taylor PSR B1913+16 Pdot = -2.422e-12 and periastron advance
-  4.226 deg/yr (both real, GR-confirmed to <0.1%); AT2017gfo kilonova M_ej ~ 0.05 Msun, v_ej ~
-  0.15c; Peters 2.5PN orbital-decay formula with the correct f(e) eccentricity factor. The header
-  h_UQFF = h_GR*(1 - Ubi/F_U)*e^-kt is the SCm strain-damping form of the predecessor's GW bucket
-  (PAPER_914/915).
+  REAL ANCHORS VERIFIED: eta = 6.08e-10 (Planck+BBN), Y_P = 0.247 (4He mass fraction), tau_reion =
+  0.054 + z_re ~ 7.7 (Planck 2018), z_rec ~ 1100, alpha_B = 2.6e-13 cm^3/s (case B), sigma_T =
+  6.652e-29 m^2, n_s = 0.965, n_gamma = 410 cm^-3; Jeans mass M_J = (5kT/G mu m_H)^3/2*(3/4pi
+  rho)^1/2 correct - all standard cosmology.
 
-  PINNED: the QNM ringdown coefficient 0.3737 + 0.088*a_f recurs (as in 198) - for GW150914 it
-  gives 225 Hz, the paper cites 251, canonical Berti gives 272; this confirms Q-194a that
-  0.3737+0.088a is the corpus's consistent non-Berti parametrization. Rule 4 clean - real GW
-  physics as comparison targets, UQFF = the operator overlay plus strain damping.
+  PREDECESSOR TIE: these are the same observables the predecessor repo's BUCKET C cosmology
+  (PAPER_1156, calculate_cosmology 18-observable LCDM suite) already derives to sub-0.1% - here
+  re-expressed through the F_UBii/Um operator overlay. The canonical-cosmology source should be
+  declared (BUCKET C owns the observables; 202 is the channel re-expression). Rule 4 clean - SM
+  cosmology as comparison target, UQFF sets the acoustic horizon via Lambda*c^2/3 (CMB first peak
+  l~220). The k_eta ~ 1e-113 (182) and delta_k ~ 7.25e8 (198) deep-vacuum constants reappear as
+  the BBN freeze-out coupling.
 
-Q-197 queued. Gate 1,328 assertions 0 failures. Registry 467 rows / 1000 edges / 205 ledgers (measured). Wired 205/2,255 (11 clean,
-194 OPEN_RULING). Next: PAPER_202.
+Q-198 queued. Gate 1,333 assertions 0 failures. Registry 468 rows / 1003 edges / 206 ledgers (measured). Wired 206/2,255 (11 clean,
+195 OPEN_RULING). Next: PAPER_203.

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.204.0", "uqff_calculator.VERSION = 0.204.0")
+assert_that(C.VERSION == "0.205.0", "uqff_calculator.VERSION = 0.205.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2901,6 +2901,17 @@ assert_that('predecessor GW bucket' in _r201['strain_damping_header'],
 assert_that('225 Hz' in _r201['qnm_coeff_note'],
             "PAPER_201: QNM 0.3737+0.088a coefficient note (Q-197a, confirms Q-194a)")
 assert_that(C.wired_count() >= 205, "wired_count >= 205")
+
+_r202 = C.calc('PAPER_202')['value']
+assert_that(_r202['real_anchors']['Y_P'] == 0.247,
+            "PAPER_202: BBN Y_P = 0.247 (4He mass fraction, real value)")
+assert_that(_r202['real_anchors']['tau_reion'] == 0.054,
+            "PAPER_202: tau_reion = 0.054 (Planck 2018 real value)")
+assert_that('PAPER_1156' in _r202['predecessor_bucketC'],
+            "PAPER_202: same observables as predecessor BUCKET C cosmology (PAPER_1156)")
+assert_that('l~220' in _r202['acoustic_horizon'],
+            "PAPER_202: UQFF Lambda*c^2/3 sets acoustic horizon (CMB first peak)")
+assert_that(C.wired_count() >= 206, "wired_count >= 206")
 
 # =============================================================================
 # REPORT

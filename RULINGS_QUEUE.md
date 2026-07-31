@@ -4990,6 +4990,33 @@ RESOLVED section with the ruling recorded.
   registered; QNM coefficient pinned (Q-194a confirmed).
 - **Daniel's ruling:** (pending)
 
+### Q-198 — PAPER_202 cosmic dawn — BUCKET C cross-repo overlap
+- **Question:** the cosmic-dawn observables here (Y_p =
+  0.247, tau_reion = 0.054, z_reion, eta = 6.08e-10, n_s
+  = 0.965) are the SAME quantities the predecessor repo's
+  BUCKET C cosmology (PAPER_1156, calculate_cosmology,
+  18-observable LCDM suite) already derives to sub-0.1%.
+  Here they appear as F_X terms inside the F_UBii/Um
+  operator overlay. Ruling: is this operator overlay a
+  distinct UQFF prediction, or is the cosmic-dawn
+  observable set canonically owned by BUCKET C (with 202
+  as the buoyancy/magnetism-channel re-expression)? The
+  canonical-cosmology source should be declared.
+- **Notable:** all anchors are REAL standard cosmology
+  and correctly stated - eta 6.08e-10 (Planck+BBN), Y_P
+  0.247 (4He), tau_reion 0.054 + z_re 7.7, z_rec 1100,
+  alpha_B 2.6e-13 (case B), sigma_T 6.652e-29, n_gamma
+  410 cm^-3; Jeans mass M_J = (5kT/G mu m_H)^3/2*(3/4pi
+  rho)^1/2 correct. Rule 4 clean - SM cosmology as
+  comparison target, UQFF sets the acoustic horizon via
+  the Lambda*c^2/3 term (CMB first peak l~220). The
+  k_eta ~ 1e-113 (182) and delta_k ~ 7.25e8 (198)
+  deep-vacuum constants reappear as the BBN freeze-out
+  coupling - consistent cross-paper.
+- **Best-candidate wired:** cosmic-dawn channel overlay +
+  verified anchors + BUCKET C tie registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
