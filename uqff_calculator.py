@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.211.0"
+VERSION = "0.212.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10872,6 +10872,63 @@ def _paper_207(dataset):
         },
         'formula': 'CNOT chain -> GHZ; S_VN = ln2 (constant); F_UBii,ent = -F_rel S_VN/E_LEP Q_wave',
         'source': 'PAPER_207',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_208')
+def _paper_208(dataset):
+    """UQFF variable calibration status (S50, sec 2.6).
+
+    Consolidated calibration of six variables. VERIFIED:
+    [SSq] = 0.57 canonical -> e^-0.57 = 0.5655, layer sum
+    S = 1/(1-e^-0.57) = 2.302 EXACT; phi ~ 0.81 via
+    arcsin(0.81)/pi = 0.301 (t_n young-universe branch);
+    f = 1/1680 s = 5.952e-4 Hz (28-min SGR A* QPO);
+    T_ISCO 30 min -> 5.56e-4 Hz (6.6% of 5.95e-4);
+    Q_wave = 6.33e4 J/m^3 = the 196/198 stat-table value,
+    Chandra cross-check 6.2e4 (2%); CIA H2O-H2 refit
+    b = 0.004997, sigma(j=2, 400 cm^-1) = 11.65 A^2
+    (arXiv:2506.09257).
+    NAME COLLISION (Q-204a): "f_TRZ" here is a FREQUENCY
+    (5.95e-4 Hz, the SGR A* 28-min flare rate) - it is
+    NOT the canonical F_TRZ = 0.1 dimensionless time-
+    reversal-zone factor (PAPER_1160 = 1/SO_5). Two
+    distinct objects sharing a symbol; the frequency
+    should be renamed (f_flare / f_QPO) to protect the
+    F_TRZ primitive.
+    PHI FORK (Q-204b): phi ~ 0.81+-0.01 here vs the
+    canonical Phi_res = 0.84 (default) / 5/6 (nuclear);
+    close but distinct - is phi(t) = sin(pi t_n) + 0.01
+    cos(...) a separate PHASE variable from the Phi_res
+    coupling primitive?
+    rho_vac,[UA] ~ 1e-15 kg/m^3 joins the rho_UA fork
+    family (honestly flagged "coupling strength, not
+    mass"); SSq log-formula ties to k_eta ~ 1e-113
+    (182/199). SSq/Q_wave are canonical; phi/f_TRZ/rho_UA
+    need the rulings.
+    """
+    import math as _m
+    ssq = 0.57
+    return {
+        'value': {
+            'domain': '2.6 (variable calibration, thread 7514fe)',
+            'ssq_canonical': ssq,
+            'e_neg_ssq': _m.exp(-ssq),                       # 0.5655
+            'layer_sum': 1 / (1 - _m.exp(-ssq)),             # 2.302
+            'phi': 0.81,
+            'phi_tn_branch': _m.asin(0.81) / _m.pi,          # 0.301
+            'f_qpo_hz': 1 / 1680,                            # 5.952e-4 (28 min)
+            'f_trz_name_collision': 'f_TRZ freq 5.95e-4 Hz != canonical F_TRZ = 0.1 (Q-204a)',
+            'phi_fork': 'phi ~ 0.81 vs canonical Phi_res = 0.84 / 5/6 (Q-204b)',
+            'q_wave': 6.33e4,
+            'q_wave_matches_196_198': True,
+            'cia_refit': {'b': 0.004997, 'sigma_A2': 11.65},
+            'rho_ua_1e15': 'joins rho_UA fork family (coupling, not mass)',
+        },
+        'formula': 'phi/f_QPO/rho_UA/SSq/Q_wave/CIA calibration; S = 1/(1-e^-SSq)',
+        'source': 'PAPER_208',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

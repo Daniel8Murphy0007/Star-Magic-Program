@@ -1016,3 +1016,6 @@ observable,vortex_avalanche_soc,paper,PAPER_196,R(t) anti-glitch
 observable,entanglement_chain_svn,paper,PAPER_207,CNOT chain
 observable,entanglement_chain_svn,paper,PAPER_206,classical avalanche
 observable,ghz_entropy_correction,paper,PAPER_207,computed correction
+observable,variable_calibration_status,paper,PAPER_208,6 variables
+primitive,SSQ,observable,variable_calibration_status,SSq layer sum
+primitive,F_TRZ,observable,ftrz_collision_phi_fork,name collision

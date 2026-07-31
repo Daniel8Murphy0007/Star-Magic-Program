@@ -1,19 +1,21 @@
-v0.211.0 BAND 1: PAPER_207 wired - ENTANGLEMENT CHAIN
+v0.212.0 BAND 1: PAPER_208 wired - VARIABLE CALIBRATION
 
-PAPER_207 QuTiP Quantum Entanglement Chain (OPEN_RULING Q-203) - Session 50, thread 7514fe,
-sec 2.6: a 4-qubit CNOT entanglement cascade as the quantum microscopic picture of PAPER_206's
-classical vortex avalanche (each pinning site = qubit; CNOT = "site A unpins -> entangle with B").
+PAPER_208 UQFF Variable Calibration (OPEN_RULING Q-204) - Session 50, thread 7514fe, sec 2.6:
+  Consolidated calibration status for six UQFF variables.
 
-CORRECT: the Bell-pair S_VN = ln2; Ryu-Takayanagi S_VN = Area/(4G); Bell/Mermin bounds (CHSH
-Tsirelson 2*sqrt(2) = 2.828; GHZ Mermin = 4); and the fast-decoherence argument (t_dec ~ 1e-45 s,
-so the classical BFS power-law of 206 is the effective shadow of the quantum mechanism).
+  VERIFIED CANONICAL: [SSq] = 0.57 -> e^-0.57 = 0.5655, layer sum 1/(1-e^-0.57) = 2.302 EXACT;
+  Q_wave = 6.33e4 J/m^3 matches the 196/198 stat table (Chandra cross-check 6.2e4, 2%). Also:
+  phi ~ 0.81 via arcsin(0.81)/pi = 0.301 (young-universe t_n branch); f_QPO = 1/1680 s = 5.95e-4
+  Hz (28-min SGR A* flare, consistent with Kerr ISCO f ~ 5.56e-4 at 6.6%); CIA H2O-H2 refit
+  b = 0.004997, sigma(j=2, 400 cm^-1) = 11.65 A^2 (arXiv:2506.09257).
 
-ENTROPY ERROR CORRECTED (verified by direct computation): the paper claims S_VN rises 0 -> 0.693
--> 1.386 -> 1.945 ("approaching 2 bits"). The CNOT-chain states are GHZ-type, whose von Neumann
-entropy is EXACTLY ln2 = 0.6931 for every step after the Bell pair and for ANY bipartition - it
-does not rise to ~2. The 1.386 (= 2ln2) and 1.945 values would need a different state (two
-independent Bell pairs), not a GHZ cascade; there is also a nat/bit conflation. The analogy and
-the classical-shadow argument stand; only the entropy curve was wrong. Dispatch stays stdlib.
+  PINNED FOR RULING: (a) NAME COLLISION - this paper's "f_TRZ" is a FREQUENCY (5.95e-4 Hz, the
+  SGR A* flare rate), NOT the canonical F_TRZ = 0.1 dimensionless time-reversal-zone factor
+  (PAPER_1160 = 1/SO_5); it should be renamed (f_flare/f_QPO) to protect the primitive.
+  (b) PHI FORK - phi ~ 0.81 vs the canonical Phi_res = 0.84 / 5/6 (nuclear): separate phase
+  variable or a fork? (c) rho_vac,[UA] ~ 1e-15 kg/m^3 joins the rho_UA fork family (honestly
+  flagged "coupling strength, not mass"). The SSq log-formula (log(ratio) ~ 113) ties to the
+  k_eta ~ 1e-113 deep-vacuum constant (182/199).
 
-Gate 1,363 assertions 0 failures. Registry 475 rows / 1017 edges / 211 ledgers (measured). Wired 211/2,255 (11 clean, 200 OPEN_RULING).
-Next: PAPER_208.
+Gate 1,369 assertions 0 failures. Registry 477 rows / 1020 edges / 212 ledgers (measured). Wired 212/2,255 (11 clean, 201 OPEN_RULING).
+Next: PAPER_209.

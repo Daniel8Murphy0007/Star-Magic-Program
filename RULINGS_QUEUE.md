@@ -5163,6 +5163,40 @@ RESOLVED section with the ruling recorded.
   + correct bounds registered; GHZ entropy corrected.
 - **Daniel's ruling:** (pending)
 
+### Q-204 — PAPER_208 variable calibration — f_TRZ name collision + phi fork
+- **Question:** (a) NAME COLLISION: this paper's "f_TRZ"
+  is a FREQUENCY (5.95e-4 Hz = the SGR A* 28-min flare
+  rate, = 1/1680 s) - it is NOT the canonical F_TRZ = 0.1
+  dimensionless time-reversal-zone factor (PAPER_1160 =
+  1/SO_5). Two entirely different objects sharing the
+  symbol. Rename the frequency (f_flare / f_QPO) to
+  protect the F_TRZ primitive?
+  (b) PHI FORK: phi ~ 0.81+-0.01 here (phi(t) = sin(pi
+  t_n) + 0.01 cos(2pi f t)) vs the canonical Phi_res =
+  0.84 (default) / 5/6 (nuclear). Close but distinct.
+  Is phi a separate PHASE variable from the Phi_res
+  coupling primitive, or a fork of it? (arcsin(0.81)/pi
+  = 0.301 puts it on a young-universe t_n ~ 0.3, z ~ 1.5
+  branch.)
+  (c) rho_vac,[UA] ~ 1e-15 kg/m^3 - another rho_UA fork
+  value (honestly flagged "coupling strength, not mass";
+  units J/m^3 ~ kg/m^3 at c=1). Reconcile with the
+  canonical rho_UA = 10*rho_SCm = 7.09e-36 J/m^3?
+- **Notable:** SSq and Q_wave are CANONICAL and verified:
+  SSq = 0.57 -> e^-0.57 = 0.5655, layer sum 1/(1-e^-0.57)
+  = 2.302 EXACT; Q_wave = 6.33e4 J/m^3 matches the
+  196/198 stat table with a Chandra cross-check at 6.2e4
+  (2%). The SSq log-formula (log(ratio) ~ 113) ties to
+  the k_eta ~ 1e-113 deep-vacuum constant (182/199). The
+  CIA H2O-H2 refit (b = 0.004997, sigma(j=2, 400 cm^-1)
+  = 11.65 A^2, arXiv:2506.09257) is a real spectroscopy
+  calibration. f_QPO 5.95e-4 Hz is consistent with the
+  Kerr ISCO (a~0.94) f ~ 5.56e-4 Hz at 6.6%.
+- **Best-candidate wired:** 6-variable calibration +
+  canonical SSq/Q_wave registered; f_TRZ collision, phi
+  fork, rho_UA value pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

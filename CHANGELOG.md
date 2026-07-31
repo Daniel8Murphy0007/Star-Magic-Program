@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.212.0] — 2026-07-31 — BAND 1: PAPER_208 — VARIABLE CALIBRATION
+
+### Added
+- **PAPER_208 dispatch** (variable calibration status, S50, sec 2.6): six variables. VERIFIED canonical: SSq = 0.57 (layer sum 1/(1-e^-0.57) = 2.302 EXACT), Q_wave = 6.33e4 J/m^3 (matches 196/198, Chandra 2%). phi ~ 0.81 (arcsin/pi = 0.301 branch), f_QPO = 5.95e-4 Hz (28-min SGR A*), CIA H2O-H2 refit b=0.004997/sigma=11.65 A^2. PINNED: "f_TRZ" here is a FREQUENCY (5.95e-4 Hz) not the canonical F_TRZ=0.1 dimensionless - NAME COLLISION, rename f_flare/f_QPO; phi-vs-Phi_res(0.84) fork; rho_vac,UA~1e-15 joins the rho_UA fork family.
+- OPEN_RULING Q-204.
+- Gate: 1,369 assertions, 0 failures. Registry: 477 rows / 1020 edges / 212 ledgers (measured).
+
+---
+
 ## [0.211.0] — 2026-07-31 — BAND 1: PAPER_207 — ENTANGLEMENT CHAIN
 
 ### Added

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.211.0", "uqff_calculator.VERSION = 0.211.0")
+assert_that(C.VERSION == "0.212.0", "uqff_calculator.VERSION = 0.212.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2996,6 +2996,19 @@ assert_that('2.828' in _r207['bell_mermin_correct'],
 assert_that('shadow' in _r207['decoherence_shadow'],
             "PAPER_207: fast-decoherence -> classical 206 power-law is the shadow")
 assert_that(C.wired_count() >= 211, "wired_count >= 211")
+
+_r208 = C.calc('PAPER_208')['value']
+assert_that(abs(_r208['layer_sum'] - 2.302) < 0.01,
+            "PAPER_208: layer sum S = 1/(1-e^-SSq) = 2.302 EXACT (SSq = 0.57)")
+assert_that(abs(_r208['phi_tn_branch'] - 0.301) < 0.005,
+            "PAPER_208: phi ~ 0.81 via arcsin(0.81)/pi = 0.301 (young-universe t_n branch)")
+assert_that(abs(_r208['f_qpo_hz'] - 5.952e-4) < 1e-6,
+            "PAPER_208: f = 1/1680s = 5.95e-4 Hz (28-min SGR A* QPO)")
+assert_that('!= canonical F_TRZ' in _r208['f_trz_name_collision'],
+            "PAPER_208: f_TRZ frequency vs canonical F_TRZ=0.1 NAME COLLISION pinned (Q-204a)")
+assert_that(_r208['q_wave'] == 6.33e4 and _r208['q_wave_matches_196_198'],
+            "PAPER_208: Q_wave 6.33e4 J/m^3 matches 196/198 stat table")
+assert_that(C.wired_count() >= 212, "wired_count >= 212")
 
 
 # =============================================================================

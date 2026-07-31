@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.211.0"
-description = "UQFF Star-Magic-Program v0.211.0: PAPER_207 wired - QuTiP CNOT entanglement chain as the quantum picture of 206 vortex avalanches; Bell/Mermin bounds + RT + fast-decoherence shadow correct; GHZ von Neumann entropy correction (constant ln2, not the claimed rise to ~2). Q-203. Wired 211/2255, gate 1363/0. Registry 475 rows / 1017 edges / 211 ledgers (measured)."
+version = "0.212.0"
+description = "UQFF Star-Magic-Program v0.212.0: PAPER_208 wired - 6-variable calibration status; SSq=0.57 layer-sum 2.302 + Q_wave 6.33e4 canonical (verified); f_TRZ frequency-vs-primitive NAME COLLISION + phi-vs-Phi_res fork + rho_UA value pinned; CIA H2O-H2 refit. Q-204. Wired 212/2255, gate 1369/0. Registry 477 rows / 1020 edges / 212 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

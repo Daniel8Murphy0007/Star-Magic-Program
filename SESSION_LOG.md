@@ -2367,3 +2367,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 211/2,255 (11 ✓, 200 ⚠). Next: PAPER_208.
 
 ---
+
+## 2026-07-31 — v0.212.0 — BAND 1: PAPER_208
+
+- PAPER_208 wired (⚠ Q-204): variable calibration. SSq/Q_wave canonical verified; f_TRZ frequency-vs-primitive name collision + phi/Phi_res fork + rho_UA value pinned.
+- Campaign: 212/2,255 (11 ✓, 201 ⚠). Next: PAPER_209.
+
+---
