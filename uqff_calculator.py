@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.221.0"
+VERSION = "0.222.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11517,6 +11517,73 @@ def _paper_217(dataset):
         },
         'formula': 'a*F_U^2 + b*F_U + c = 0; |F_U-/F_U+| = 3940; F_hier convergent (e^-1/26 < 1)',
         'source': 'PAPER_217',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_218')
+def _paper_218(dataset):
+    """NGC 3603 stellar pressure dispersal (1-P(t)) (S55).
+
+    Derives the (1-P(t)) multiplicative gravitational suppressor for the
+    massive young OB cluster NGC 3603 - the fractional rate at which
+    combined UV radiation + stellar-wind pressure disperses the natal
+    molecular cloud. Wired observables:
+    * (1-P(t)) is the ONLY pressure-specific multiplicative term among
+      the 29-document suppressor taxonomy: (1-P) pressure (NGC 3603),
+      (1-E) irradiation (Pillars/Horsehead), (1-M_coll) collision
+      (Antennae), -M_SN supernova mass loss (NGC 2525), (1+M_sf) star
+      formation (NGC 1792/M16).
+    * NGC 3603 params (Harayama 2008 / Portegies Zwart 2010): r=5.0e18 m
+      (~163 pc), M=3.18e34 kg (=1.6e4 M_sun, verified), B=1e-8 T,
+      v_wind=2e6 m/s, Q(H0)~1e51 s^-1, L_wind~1e38 erg/s, t_disp 1-3 Myr.
+    * P(t) = 0.15 at age 3 Myr -> (1-P) = 0.85, a 15% gravitational
+      reduction; g*M/r^2*(1-P) = G*3.18e34/(5e18)^2 * 0.85 = 7.22e-14
+      m/s^2 (registry G, worked correctly).
+    * Star-formation efficiency e_SFE ~ 30-35% (vs 1-10% for
+      unpressurized low-mass clusters); regimes: P>0.5 quenched, P<0.2
+      gravity-dominated (NGC 3603 current), P->1 dispersal (Eta Car).
+    * Unique triple product on the DPM-seeded term:
+      (1+H_0*t)*(1-B/B_crit)*(1-P(t)).
+    Q-214: PAPER_218 sec 4 has three worked-example errors - (a) g_base
+    stated 8.52e-52 m/s^2 but the correct value is 7.22e-14 (~38 OOM
+    off); (b) (1-B/B_crit) stated 0.9999977 but B/B_crit = 1e-8/4.4e13 =
+    2.3e-22 so the factor is ~1.0; (c) "5% reduction" stated but P=0.15
+    is a 15% reduction. The (1-P) structural term and P=0.15 are correct
+    and are what was wired. Appendix drift auto-corrected per charter.
+    """
+    M_ngc3603 = 3.18e34                                   # kg, 1.6e4 M_sun (Harayama 2008)
+    r_ngc3603 = 5.0e18                                    # m, ~163 pc core radius
+    p_t = 0.15                                            # pressure dispersal at 3 Myr
+    one_minus_p = 1 - p_t                                 # 0.85
+    g_base = G_OBSERVED * M_ngc3603 / r_ngc3603 ** 2 * one_minus_p  # 7.22e-14
+    b_over_bcrit = 1e-8 / B_CRIT                          # 2.3e-22
+    return {
+        'value': {
+            'domain': '2.16 (NGC 3603 stellar pressure dispersal)',
+            'pressure_term': '(1-P(t))',
+            'p_t': p_t,
+            'one_minus_p': one_minus_p,                  # 0.85
+            'reduction_pct': p_t * 100,                  # 15% (paper says 5%)
+            'M_kg': M_ngc3603,
+            'M_solar': 1.6e4,
+            'r_m': r_ngc3603,
+            'v_wind_m_s': 2e6,
+            'g_base_m_s2': g_base,                        # 7.22e-14
+            'b_over_bcrit': b_over_bcrit,                 # 2.3e-22
+            'one_minus_b_bcrit': 1 - b_over_bcrit,        # ~1.0
+            'e_sfe_pct': '30-35',
+            'e_sfe_unpressurized_pct': '1-10',
+            'suppressor_taxonomy': {'pressure': '(1-P)', 'irradiation': '(1-E)',
+                                    'collision': '(1-M_coll)', 'supernova': '-M_SN',
+                                    'star_formation': '(1+M_sf)'},
+            'regimes': {'quenched': 'P>0.5', 'gravity_dominated': 'P<0.2', 'dispersal': 'P->1'},
+            'triple_product': '(1+H_0*t)*(1-B/B_crit)*(1-P(t))',
+            'sec4_arithmetic_fork': 'paper g_base 8.52e-52 (correct 7.22e-14, 38 OOM), 1-B/Bcrit 0.9999977 (correct ~1.0), 5% vs 15% (Q-214)',
+        },
+        'formula': 'g = G*M/r^2 * (1+H_0*t) * (1-B/B_crit) * (1-P(t)); P=0.15 -> (1-P)=0.85',
+        'source': 'PAPER_218',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

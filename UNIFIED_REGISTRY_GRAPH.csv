@@ -1051,3 +1051,6 @@ observable,triadic_validation_westerlund_pillars,observable,cr_dsa_knee,0.03=3*F
 observable,fubii_two_branch_polynomial,paper,PAPER_217,2-branch quadratic
 observable,rare_math_discoveries_cgm,paper,PAPER_217,3 rare discoveries
 observable,rare_math_discoveries_cgm,observable,triadic_validation_westerlund_pillars,"f_z,CGM ties PAPER_216"
+primitive,B_CRIT,observable,ngc3603_pressure_dispersal,1-B/B_crit magnetic suppressor
+observable,ngc3603_pressure_dispersal,paper,PAPER_218,(1-P(t)) term
+observable,suppressor_term_taxonomy,paper,PAPER_218,5-term taxonomy

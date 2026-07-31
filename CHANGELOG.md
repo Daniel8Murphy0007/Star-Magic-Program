@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.222.0] — 2026-07-31 — BAND 1: PAPER_218 — NGC 3603 PRESSURE DISPERSAL
+
+### Added
+- **PAPER_218 wired** (⚠ Q-214): NGC 3603 stellar pressure dispersal — the
+  (1-P(t)) multiplicative gravitational suppressor, the fraction of the natal
+  molecular cloud dispersed by the cluster's UV + stellar-wind pressure. It is
+  the ONLY pressure-specific multiplicative term in the 29-document suppressor
+  taxonomy: (1-P) pressure, (1-E) irradiation, (1-M_coll) collision, -M_SN
+  supernova mass loss, (1+M_sf) star formation. Params (Harayama 2008 /
+  Portegies Zwart 2010): r=5.0e18 m (~163 pc), M=3.18e34 kg (=1.6e4 M_sun),
+  B=1e-8 T, v_wind=2e6 m/s. P(t)=0.15 at 3 Myr → (1-P)=0.85, a 15% reduction;
+  g_base = G·M/r²·(1-P) = 7.22e-14 m/s² (registry G). Star-formation efficiency
+  e_SFE 30-35% (vs 1-10% unpressurized); regimes P>0.5 quenched / P<0.2
+  gravity-dominated / P→1 dispersal. Unique triple product on the DPM-seeded
+  term (1+H_0·t)·(1-B/B_crit)·(1-P(t)).
+- Q-214: three section-4 worked-example errors — g_base stated 8.52e-52 m/s²
+  (correct 7.22e-14, ~38 OOM off), (1-B/B_crit) stated 0.9999977 (correct ~1.0,
+  B/B_crit=2.3e-22), "5% reduction" stated (correct 15% for P=0.15). Corrected
+  values wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1424 → 1430 (+6). Registry 497 rows / 1055 edges / 222 ledgers.
+
+---
+
 ## [0.221.0] — 2026-07-31 — BAND 1: PAPER_217 — F_U_Bi_i POLYNOMIAL + RARE DISCOVERIES
 
 ### Added

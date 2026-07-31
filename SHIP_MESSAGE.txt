@@ -1,34 +1,32 @@
-v0.221.0 BAND 1: PAPER_217 wired - F_U_Bi_i POLYNOMIAL + RARE DISCOVERIES
+v0.222.0 BAND 1: PAPER_218 wired - NGC 3603 PRESSURE DISPERSAL
 
-PAPER_217 (DeepSearch F_U_Bi_i Polynomial Verification and Rare
-Mathematical Discoveries, S54) wired as one dispatch (Q-213,
-OPEN_RULING).
+PAPER_218 (NGC 3603 Stellar Pressure Dispersal - UQFF (1-P(t))
+Compressed Framework, S55) wired as one dispatch (Q-214, OPEN_RULING).
 
 Physics:
-- F_U_Bi_i full 12-term buoyancy integral over 4 geometry classes
-  (spherical sin(theta)*f, toroidal cos(phi)*f, linear f, hybrid
-  sin*cos*f^2).
-- Two-branch quadratic a*F_U^2 + b*F_U + c = 0 at cosmological scale:
-  Branch 1 (creation, +) F_U+ ~ 2.11e208 N; Branch 2 (annihilation, -)
-  F_U- ~ -8.31e211 N; asymmetry |F_U-/F_U+| = 3938 ~ 3940 (paper),
-  linked to the baryon asymmetry ~6e-10 and the near-cancellation
-  giving the stable present universe at t_n ~ 0.95pi. Stability:
-  discriminant b^2-4ac = 0 for r > r_Planck. Verified.
-- Three UQFF-exclusive rare discoveries (not reducible to GR/QFT):
-  F_hier relativistic 26-layer hierarchy decay integral (convergent,
-  ratio e^-1/26 = 0.962 < 1); Delta-F adaptive feedback force
-  F_rel*t*(1-e^-T/t) (capacitor-charge analogue -> impulse F_rel*t);
-  F_hyb hybrid polarization mode P_pol*f_mm/omega_0.
-- CGM metallicity f_z,CGM = 1.46e-73 (ties PAPER_216); e^-SSq =
-  e^-0.57 = 0.566.
+- (1-P(t)) is the multiplicative gravitational suppressor from stellar
+  UV + wind pressure dispersing the natal molecular cloud - the ONLY
+  pressure-specific multiplicative term in the 29-document suppressor
+  taxonomy: (1-P) pressure (NGC 3603), (1-E) irradiation (Pillars/
+  Horsehead), (1-M_coll) collision (Antennae), -M_SN supernova mass
+  loss (NGC 2525), (1+M_sf) star formation (NGC 1792/M16).
+- NGC 3603 params (Harayama 2008 / Portegies Zwart 2010): r=5.0e18 m
+  (~163 pc), M=3.18e34 kg (=1.6e4 M_sun, verified), B=1e-8 T,
+  v_wind=2e6 m/s, Q(H0)~1e51/s, L_wind~1e38 erg/s, t_disp 1-3 Myr.
+- P(t) = 0.15 at 3 Myr -> (1-P) = 0.85, a 15% gravitational reduction;
+  g_base = G*M/r^2*(1-P) = 6.674e-11*3.18e34/(5e18)^2*0.85 = 7.22e-14
+  m/s^2 (registry G). Star-formation efficiency e_SFE 30-35% (vs 1-10%
+  for unpressurized low-mass clusters). Regimes: P>0.5 quenched,
+  P<0.2 gravity-dominated (NGC 3603 current), P->1 dispersal.
+- Unique triple product on the DPM-seeded term:
+  (1+H_0*t)*(1-B/B_crit)*(1-P(t)).
 
-Q-213: (a) the two-branch F_U values are documented references - the
-polynomial coefficients a,b,c are given only symbolically, so
-2.11e208 / -8.31e211 N cannot be re-derived. (b) the f_z,CGM
-derivation states 0.57^26 ~ 6.16e-6, but 0.57^26 = 4.50e-7 (~14x
-drift), and the density-ratio exponent n_CGM is fitted to 67.5
-(fractional) rather than the primitive 26. Appendix boilerplate drift
-(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Q-214: PAPER_218 sec 4 has three worked-example errors, corrected in
+the wiring: (a) g_base stated 8.52e-52 m/s^2 (correct 7.22e-14, ~38
+OOM off); (b) (1-B/B_crit) stated 0.9999977 (correct ~1.0, since
+B/B_crit = 1e-8/4.4e13 = 2.3e-22); (c) "5% reduction" stated (correct
+15% for P=0.15). Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
 
-Gate: 1424/0. Registry 495 rows / 1052 edges / 221 ledgers (measured).
-Campaign: 221/2,255. Next: PAPER_218.
+Gate: 1430/0. Registry 497 rows / 1055 edges / 222 ledgers (measured).
+Campaign: 222/2,255. Next: PAPER_219.

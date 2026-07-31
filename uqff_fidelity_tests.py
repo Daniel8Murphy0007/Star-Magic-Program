@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.221.0", "uqff_calculator.VERSION = 0.221.0")
+assert_that(C.VERSION == "0.222.0", "uqff_calculator.VERSION = 0.222.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3126,6 +3126,19 @@ assert_that(len(_r217['rare_discoveries']) == 3 and abs(_r217['e_neg_ssq'] - 0.5
 assert_that(abs(_r217['ssq_26'] - 4.495171312401194e-07) < 1e-13,
             "PAPER_217: 0.57^26 = 4.50e-7 (paper's 6.16e-6 is ~14x drift, n_CGM fit 67.5, Q-213)")
 assert_that(C.wired_count() >= 221, "wired_count >= 221")
+
+_r218 = C.calc('PAPER_218')['value']
+assert_that(_r218['p_t'] == 0.15 and _r218['one_minus_p'] == 0.85 and _r218['reduction_pct'] == 15.0,
+            "PAPER_218: P(t)=0.15 -> (1-P)=0.85 = 15% reduction (paper's '5%' is drift, Q-214)")
+assert_that(abs(_r218['g_base_m_s2'] - 7.2159288e-14) < 1e-20,
+            "PAPER_218: g_base = G*M/r^2*(1-P) = 7.22e-14 m/s^2 (paper's 8.52e-52 is ~38 OOM off)")
+assert_that(abs(_r218['M_kg'] / 1.989e30 - 1.6e4) < 100,
+            "PAPER_218: NGC 3603 M = 3.18e34 kg = 1.6e4 M_sun (Harayama 2008)")
+assert_that(len(_r218['suppressor_taxonomy']) == 5 and _r218['suppressor_taxonomy']['pressure'] == '(1-P)',
+            "PAPER_218: 5-term suppressor taxonomy; (1-P) is the unique pressure-specific term")
+assert_that(_r218['one_minus_b_bcrit'] == 1.0,
+            "PAPER_218: B/B_crit = 1e-8/4.4e13 = 2.3e-22 -> (1-B/B_crit) ~ 1.0 (paper 0.9999977 drift)")
+assert_that(C.wired_count() >= 222, "wired_count >= 222")
 
 
 # =============================================================================

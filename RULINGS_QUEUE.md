@@ -9,6 +9,22 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-214 — PAPER_218 — NGC 3603 section-4 worked-example arithmetic errors
+- **Question:** PAPER_218 sec 4 has three numerical errors in the g_base worked
+  example (the structural (1-P(t)) term and P(t)=0.15 are correct):
+  (a) g_base stated 8.52e-52 m/s^2, but G*M/r^2*(1-P) =
+  6.674e-11*3.18e34/(5e18)^2*0.85 = 7.22e-14 m/s^2 (~38 orders of magnitude off
+  - looks like an exponent transcription error);
+  (b) (1-B/B_crit) stated 0.9999977, but B/B_crit = 1e-8/4.4e13 = 2.3e-22, so the
+  factor is ~1.0 (the 0.9999977 would need B/B_crit ~ 2.3e-6);
+  (c) the "key result" is stated as a "5% reduction from P(t)=0.15", but P=0.15
+  is a 15% reduction (1-P=0.85).
+  Confirm these are transcription typos and that the wired values (7.22e-14 m/s^2,
+  ~1.0, 15%) are canonical.
+- **Best-candidate wired:** g_base recomputed = 7.22e-14 m/s^2 (registry G),
+  (1-B/B_crit)~1.0, 15% reduction; paper's stated values flagged, not wired.
+- **Daniel's ruling:** (pending)
+
 ### Q-213 — PAPER_217 — two-branch F_U references + f_z,CGM arithmetic drift
 - **Question (a):** PAPER_217's two-branch quadratic gives F_U+ ~ 2.11e208 N
   (creation) and F_U- ~ -8.31e211 N (annihilation), asymmetry |ratio| = 3940.

@@ -2446,3 +2446,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1424/0. Registry 495 rows / 1052 edges / 221 ledgers. Campaign: 221/2,255 (11 ✓, 210 ⚠). Next: PAPER_218.
 
 ---
+
+## 2026-07-31 — v0.222.0 — BAND 1: PAPER_218
+
+- PAPER_218 wired (⚠ Q-214): NGC 3603 stellar pressure dispersal (1-P(t)) — only pressure-specific multiplicative suppressor in the 29-doc taxonomy ((1-P)/(1-E)/(1-M_coll)/-M_SN/(1+M_sf)). P=0.15 → (1-P)=0.85 (15% reduction); g_base=G·M/r²·(1-P)=7.22e-14 m/s² (M=1.6e4 M_sun, r=163 pc); e_SFE 30-35% vs 1-10%; triple product (1+H_0t)(1-B/Bcrit)(1-P). Appendix drift auto-corrected.
+- Q-214: sec-4 errors — g_base 8.52e-52 (correct 7.22e-14, 38 OOM), (1-B/Bcrit) 0.9999977 (correct ~1.0), 5% vs 15%.
+- Gate 1430/0. Registry 497 rows / 1055 edges / 222 ledgers. Campaign: 222/2,255 (11 ✓, 211 ⚠). Next: PAPER_219.
+
+---
