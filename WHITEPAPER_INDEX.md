@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 187 (11 ✓, 176 ⚠ OPEN_RULING)
+- **Wired:** 188 (11 ✓, 177 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2068
+- **Not yet touched:** 2067
 
 ---
 
@@ -1116,7 +1116,7 @@
 | ⬜ | PAPER_1847 | NEUTRON ELECTRIC DIPOLE MOMENT UQFF |
 | ⬜ | PAPER_1848 | AMS02 POSITRON EXCESS UQFF |
 | ⬜ | PAPER_1849 | KAON CP VIOLATION EPSILON K UQFF |
-| ⬜ | PAPER_184 | Quasar Navier Stokes SCm Forcing Negative Time Asymmetry |
+| ⚠ | PAPER_184 | Quasar Navier Stokes SCm Forcing Negative Time Asymmetry |
 | ⬜ | PAPER_1850 | MUON G MINUS 2 PRECISION REFINEMENT UQFF |
 | ⬜ | PAPER_1851 | VACUUM BIREFRINGENCE UQFF |
 | ⬜ | PAPER_1852 | CASIMIR FORCE VACUUM ENERGY UQFF |

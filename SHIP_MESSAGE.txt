@@ -1,31 +1,36 @@
-v0.186.0 BAND 1: PAPER_183 wired - YM HAMILTONIAN
+v0.187.0 BAND 1: PAPER_184 wired - QUASAR NS ASYMMETRY
 
-PAPER_183 Yang-Mills Hamiltonian via SCm/UA (OPEN_RULING
-Q-179) - Session 49, sec 2.5:
-  H_UQFF = H_Ug3 + H_SCm + H_UA, mapping UQFF onto an
-  SU(2)xU(1) effective gauge theory: the Ug3 string
-  nodes as the SU(2) kinetic sector (B^2/2mu0), the SCm
-  manifold as a Higgs-like condensate, and the UA
-  tensor as a U(1) conformal vacuum; pi-cycle
-  quantization framed as a Bohr-Sommerfeld analogy. The
-  mass-gap claim is honestly hedged "at the classical
-  level," and the "8 orders" SCm-dominance claim is
-  internally consistent with the printed values.
+PAPER_184 Quasar Navier-Stokes with SCm Forcing
+(OPEN_RULING Q-180) - Session 49, sec 2.5:
+  Augmented NS with the radial SCm body force F_SCm =
+  rho_SCm*v^2/r * e^-kappa*t.
 
-  PINNED FOR RULING: (a) FIFTH YM gap construct -
-  m_gap^2 = 2*gamma*H_SCm/v^2, whose own chain breaks
-  by 1e4 (4.95e9 vs printed 4.87e13); the Q-152a gap
-  adjudication is now FIVE-way, the corpus's largest
-  outstanding fork. (b) TRANSPOSITION PROPAGATION -
-  H_SCm's printed mantissa 4.375 arises EXACTLY from
-  182's transposed v_SCm = 2.958e8 (correct v gives
-  4.40), with a 10x exponent slip on top: forensic
-  evidence the S49 papers share a common already-
-  transposed source table. (c) H_Ug3 = 3.14e22 (pi
-  mantissa, no SGR B-value reconstructs it); H_UA 9e6
-  off its own chain; Gamma = alpha + gamma + kappa
-  mixes s^-1 with day^-1; footer garbled.
+  THE GOOD PHYSICS: the negative-time asymmetry is
+  mathematically CORRECT - under t -> -t the damping
+  e^-kt becomes amplification e^+kt, breaking the NS
+  equation's time-reversal symmetry. That is a clean
+  classical arrow-of-time mechanism for one-sided
+  quasar jets, and the energy-estimate bookkeeping
+  (short-time SCm injection, long-time dissipation,
+  forcing uniformly in L2) is sound. The SCm-damping-
+  as-regularizer idea aligns with 154's core and the
+  predecessor's NS closure. kappa day->s conversion
+  EXACT.
 
-Q-179 queued. Gate 1,234 assertions 0 failures. Registry
-442 rows / 946 edges / 187 ledgers (measured). Wired
-187/2,255 (11 clean, 176 OPEN_RULING). Next: PAPER_184.
+  PINNED FOR RULING: (a) Prodi-Serrin DOUBLE defect -
+  the paper prints "p = 2, q = 6 (satisfying 1 + 1/2 =
+  1)" where the sum is actually 1.5 > 1 (criterion
+  fails as chosen), and the criterion conditions the
+  velocity field, not the forcing - "globally
+  well-posed" does not follow as printed; (b) the
+  sec-5 decay table implies kappa = 5.2-8.4e-5/day,
+  10x slower than the stated 5e-4 (the 10x family);
+  (c) transposed v = 2.958e8 THIRD consecutive paper
+  (182/183/184) - the S49 papers demonstrably share a
+  common already-transposed source; F_SCm(0) also
+  implies an unstated r = 10 m; mu_eff = 1.5e40 Pa*s;
+  "SGR 1745" (a magnetar) labeled a quasar.
+
+Q-180 queued. Gate 1,241 assertions 0 failures. Registry
+444 rows / 950 edges / 188 ledgers (measured). Wired
+188/2,255 (11 clean, 177 OPEN_RULING). Next: PAPER_185.

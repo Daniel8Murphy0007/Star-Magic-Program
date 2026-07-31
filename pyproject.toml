@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.186.0"
-description = "UQFF Star-Magic-Program v0.186.0: PAPER_183 wired - YM Hamiltonian H = H_Ug3 + H_SCm + H_UA mapping UQFF to SU(2)xU(1); gap claim hedged classical; FIFTH YM construct (fork five-way); 182 TRANSPOSITION PROPAGATES (H_SCm mantissa = transposed-v chain) - common-source evidence; H_Ug3 pi-mantissa unreconstructable. Q-179. Wired 187/2255, gate 1234/0. Registry 442 rows / 946 edges / 187 ledgers (measured)."
+version = "0.187.0"
+description = "UQFF Star-Magic-Program v0.187.0: PAPER_184 wired - quasar NS + SCm forcing; time-reversal asymmetry CORRECT (clean arrow-of-time mechanism); Prodi-Serrin double defect (1.5 printed as 1; criterion misapplied); decay-table kappa 10x; transposed v THIRD appearance (common-source 3 deep). Q-180. Wired 188/2255, gate 1241/0. Registry 444 rows / 950 edges / 188 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

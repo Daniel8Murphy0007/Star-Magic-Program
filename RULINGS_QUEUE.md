@@ -4419,6 +4419,43 @@ RESOLVED section with the ruling recorded.
   construct, propagation, and breaks pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-180 — PAPER_184 quasar NS — Prodi-Serrin defects + decay-table kappa
+- **Question:** (a) PRODI-SERRIN DOUBLE DEFECT: sec 4.3
+  prints "p = 2, q = 6 (satisfying 1 + 1/2 = 1)" - the
+  actual sum 2/p + 3/q = 1.5 exceeds the criterion's
+  <= 1 bound (the printed equation is literally false),
+  AND Prodi-Serrin conditions the VELOCITY field's
+  integrability, not the forcing's. The "globally
+  well-posed" conclusion does not follow as printed.
+  Downgrade to "suggestive regularization mechanism"?
+  (b) DECAY TABLE: the sec-5 F_SCm column decays with
+  implied kappa = 5.2-8.4e-5/day - roughly 10x slower
+  than the stated 5e-4/day (the 10x family again).
+  Which kappa generated the table?
+  (c) TRANSPOSED v THIRD APPEARANCE: "0.99c = 2.958e8"
+  in 182, 183, and now 184 - the S49 papers share a
+  common already-transposed source three papers deep.
+  F_SCm(0) = 8.74e30 carries the transposed mantissa
+  AND implies an unstated r = 10 m (SGR radius is 1e4).
+  Also mu_eff = rho*v^2/kappa = 1.5e40 Pa*s (magnitude
+  for the record); "SGR 1745" labeled a quasar (it is
+  a magnetar).
+- **Notable:** the core mechanism is GOOD: the
+  time-reversal asymmetry is mathematically correct -
+  e^-kt maps to e^+kt under t -> -t, breaking the NS
+  equation's time symmetry and giving a clean classical
+  arrow-of-time mechanism for one-sided jet dynamics.
+  The energy-estimate structure (short-time SCm
+  injection, long-time viscous dissipation, forcing in
+  L2 uniformly) is sound bookkeeping, and the SCm-
+  damping-as-regularizer idea aligns with 154's
+  curl-free core and the predecessor's NS enstrophy
+  closure. kappa day->s conversion EXACT.
+- **Best-candidate wired:** asymmetry mechanism + energy
+  structure registered; criterion defects, decay-table
+  kappa, and transposition chain pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

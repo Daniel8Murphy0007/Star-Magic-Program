@@ -2168,3 +2168,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 187/2,255 (11 ✓, 176 ⚠). Next: PAPER_184.
 
 ---
+
+## 2026-07-31 — v0.187.0 — BAND 1: PAPER_184
+
+- PAPER_184 wired (⚠ Q-180): quasar NS asymmetry. Arrow-
+  of-time mechanism valid; Prodi-Serrin double defect;
+  decay-table 10x; transposition chain 3 deep.
+- Campaign: 188/2,255 (11 ✓, 177 ⚠). Next: PAPER_185.
+
+---

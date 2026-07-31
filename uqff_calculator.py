@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.186.0"
+VERSION = "0.187.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9725,5 +9725,58 @@ def _paper_183(dataset):
         'formula': 'H_UQFF = k3*B^2/2mu0*cos + rho*v^2/2*e^-gt + eta*rho_A*v_UA^2/2*cos',
         'source': 'PAPER_183',
         'residual_pct': abs(h_chain_transposed / 10 - 4.37e30) / 4.37e30 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_184')
+def _paper_184(dataset):
+    """Quasar NS + SCm forcing + negative-time asymmetry (S49, sec 2.5).
+
+    Augmented NS: rho(dv/dt + v.grad v) = -grad p +
+    mu*lap v + F_SCm with F_SCm = rho_SCm*v^2/r*e^-kt*
+    r_hat (radial E_react family). GOOD PHYSICS: the
+    time-reversal asymmetry is mathematically correct
+    (e^-kt -> e^+kt under t -> -t breaks NS time-
+    symmetry) - a clean arrow-of-time mechanism for jet
+    irreversibility; the SCm-damping regularization IDEA
+    aligns with 154's sound core and the predecessor NS
+    closure. kappa = 5e-4/day = 5.79e-9 s^-1 conversion
+    EXACT.
+    TRANSPOSED v THIRD APPEARANCE (Q-180c): "0.99c =
+    2.958e8" again (182/183/184) - common-source
+    evidence now three papers deep; F_SCm(0) = 8.74e30
+    carries the transposed mantissa AND implies r = 10 m
+    (unstated; SGR radius is 1e4).
+    PRODI-SERRIN DOUBLE DEFECT (Q-180a): sec 4.3 prints
+    "p = 2, q = 6 (satisfying 1 + 1/2 = 1)" - actual
+    2/p + 3/q = 1.5 > 1, the criterion FAILS as chosen;
+    and Prodi-Serrin conditions the VELOCITY field, not
+    the forcing - the "globally well-posed" conclusion
+    does not follow as printed.
+    DECAY-TABLE 10x (Q-180b): the sec-5 F_SCm column
+    decays with implied kappa = 5.2-8.4e-5/day - 10x
+    slower than the stated 5e-4 (10x family). mu_eff =
+    rho*v^2/kappa = 1.5e40 Pa*s (magnitude noted);
+    "SGR 1745" labeled a quasar (it is a magnetar).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.5 (quasar NS asymmetry, S49)',
+            'forcing': 'F_SCm = rho_SCm*v^2/r * e^-kappa*t * r_hat',
+            'asymmetry_valid': 'e^-kt -> e^+kt under t->-t - correct symmetry breaking',
+            'kappa_conversion': 5e-4 / 86400,                # 5.79e-9 EXACT
+            'transposed_v_third': '2.958e8 in 182/183/184 - common-source 3 deep',
+            'r_implied_m': 1e15 * (2.958e8)**2 / 8.74e30,    # 10 m unstated
+            'prodi_serrin_actual': 2 / 2 + 3 / 6,            # 1.5 (printed "= 1")
+            'decay_kappa_implied': (5.74e-5, 5.17e-5, 8.36e-5),  # ~10x slow
+            'mu_eff': 1e15 * (2.958e8)**2 / 5.79e-9,         # 1.5e40 Pa*s
+            'naming': 'SGR 1745 (magnetar) labeled quasar',
+            'regularization_idea': 'SCm damping as NS regularizer - 154/predecessor-aligned',
+        },
+        'formula': 'NS + rho_SCm*v^2/r*e^-kt; time-reversal asymmetry mechanism',
+        'source': 'PAPER_184',
+        'residual_pct': abs(5e-4 / 86400 - 5.79e-9) / 5.79e-9 * 100,
         'status': 'OPEN_RULING',
     }

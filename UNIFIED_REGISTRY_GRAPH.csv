@@ -945,3 +945,7 @@ observable,ym_hamiltonian_decomp,paper,PAPER_183,3-term H
 observable,ym_fifth_transposition_propagation,paper,PAPER_183,5th construct
 observable,ym_fifth_transposition_propagation,paper,PAPER_182,transposition source
 observable,ym_fifth_transposition_propagation,paper,PAPER_156,YM fork family
+observable,quasar_ns_asymmetry,paper,PAPER_184,asymmetry mechanism
+primitive,KAPPA_PER_DAY,observable,quasar_ns_asymmetry,decay factor
+observable,prodi_serrin_defects,paper,PAPER_184,criterion defects
+observable,prodi_serrin_defects,paper,PAPER_182,transposition chain

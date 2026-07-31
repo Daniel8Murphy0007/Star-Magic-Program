@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.187.0] — 2026-07-31 — BAND 1: PAPER_184 — QUASAR NS ASYMMETRY
+
+### Added
+- **PAPER_184 dispatch** (NS + SCm forcing + negative-time
+  asymmetry, S49, sec 2.5): augmented NS with radial
+  F_SCm = rho_SCm·v²/r·e^-kt. The asymmetry mechanism is
+  CORRECT (e^-kt → e^+kt under t→−t breaks NS time
+  symmetry) — a clean classical arrow-of-time mechanism
+  for one-sided jets; energy-estimate structure sound;
+  SCm-damping regularization aligns with 154 + the
+  predecessor NS closure; kappa conversion EXACT.
+  PINNED: Prodi-Serrin DOUBLE defect (2/p+3/q = 1.5
+  printed as "= 1"; criterion conditions velocity, not
+  forcing — well-posedness doesn't follow); decay table
+  implies kappa 10× slower than stated; transposed v =
+  2.958e8 THIRD appearance (common source 3 deep);
+  unstated r = 10 m; mu_eff = 1.5e40 Pa·s; SGR-labeled-
+  quasar naming.
+- OPEN_RULING Q-180.
+- Gate: 1,241 assertions, 0 failures. Registry: 444 rows / 950 edges / 188 ledgers (measured).
+
+---
+
 ## [0.186.0] — 2026-07-31 — BAND 1: PAPER_183 — YM HAMILTONIAN
 
 ### Added

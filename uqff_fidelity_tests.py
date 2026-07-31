@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.186.0", "uqff_calculator.VERSION = 0.186.0")
+assert_that(C.VERSION == "0.187.0", "uqff_calculator.VERSION = 0.187.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2695,6 +2695,21 @@ assert_that(1.3e8 < _r183['dominance_internal_ok'] < 1.5e8,
 assert_that('classical level' in _r183['hedge'],
             "PAPER_183: mass-gap claim honestly hedged to classical level")
 assert_that(C.wired_count() >= 187, "wired_count >= 187")
+
+_r184 = C.calc('PAPER_184')['value']
+assert_that(abs(_r184['kappa_conversion'] - 5.787e-9) / 5.787e-9 < 0.001,
+            "PAPER_184: kappa day->s conversion EXACT")
+assert_that(_r184['prodi_serrin_actual'] == 1.5,
+            "PAPER_184: Prodi-Serrin 2/p+3/q = 1.5 > 1 - printed '= 1' false; criterion fails (Q-180a)")
+assert_that(9.5 < _r184['r_implied_m'] < 10.5,
+            "PAPER_184: F_SCm(0) implies r = 10 m unstated (transposed mantissa carried)")
+assert_that(all(4e-5 < k < 9e-5 for k in _r184['decay_kappa_implied']),
+            "PAPER_184: decay table implies kappa ~5-8e-5/day - 10x slower than stated (Q-180b)")
+assert_that(1.4e40 < _r184['mu_eff'] < 1.6e40,
+            "PAPER_184: mu_eff = 1.5e40 Pa*s magnitude pinned")
+assert_that('common-source 3 deep' in _r184['transposed_v_third'],
+            "PAPER_184: transposed v third appearance - common-source evidence (Q-180c)")
+assert_that(C.wired_count() >= 188, "wired_count >= 188")
 
 # =============================================================================
 # REPORT
