@@ -910,3 +910,8 @@ observable,resonance_13term_decomp,paper,PAPER_172,unit-test cross-match
 primitive,SO_5,observable,resonance_13term_decomp,UA_SCM = 10
 primitive,F_TRZ,observable,resonance_13term_decomp,fTRZ term
 observable,adpm_chain_breaks,paper,PAPER_174,4 defects
+observable,energy_ladder_26,paper,PAPER_175,26-level ladder
+primitive,D_CRIT,observable,energy_ladder_26,26 levels
+primitive,KAPPA_PER_DAY,observable,energy_ladder_26,correction squared
+primitive,SSQ,observable,energy_ladder_26,correction squared
+observable,ladder_notes,paper,PAPER_175,3 notes

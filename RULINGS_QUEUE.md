@@ -4112,6 +4112,37 @@ RESOLVED section with the ruling recorded.
   fTRZ refutation #2, and mislabel pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-171 — PAPER_175 26-level ladder — energy-vs-frequency mapping + anchors
+- **Question:** (a) LADDER TYPE: this paper's 26 levels
+  are ENERGY decades (E_n = 1e-20*10^n J); the
+  predecessor's canonical 26-layer chain is FREQUENCY-
+  based (1e19 Hz particle physics -> 1e-10 Hz gravity).
+  Same structure viewed through E = h*f, or two distinct
+  26-ladders? A mapping ruling would connect the sec-2.4
+  ladder to the predecessor chain.
+  (b) LEVEL-18 HIGGS ANCHOR: level 18 = 1e-2 J is
+  labeled "Higgs boson scale" but 125 GeV = 2.0e-8 J -
+  5e5 off. The level-18-Higgs ASSIGNMENT is corpus-wide
+  (predecessor PAPER_1120 "CP phase + level 18"), so is
+  the 1e-2 J energy value the defect, or does "level 18"
+  mean something other than the particle's rest energy?
+  (c) E_0 = 1e-20 J base quantum is underived
+  (numerically ~12.07 x the predecessor E_phonon =
+  h*1.25 THz - not a clean primitive ratio). Basis?
+- **Notable:** the header carries the DEEPEST 2.85e-4
+  family appearance yet: rho_Lambda^UQFF = rho_obs*(1 +
+  (kappa*SSq)^2) = 1.0000000812 EXACT - the family
+  product squared. Ug level bands are IDENTICAL to 171's
+  table (cross-paper consistent). The rho_vac framing is
+  honest and Rule 4-clean: explicitly "NOT the QFT
+  zero-point" (SCm-UA inertial densities), sidestepping
+  the 120-order problem by construction. rho_v = 6e-27
+  grounded at the level-19/20 boundary.
+- **Best-candidate wired:** ladder + exact correction +
+  band consistency registered; mapping and anchor
+  questions pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

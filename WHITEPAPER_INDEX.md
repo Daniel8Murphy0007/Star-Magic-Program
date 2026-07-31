@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 178 (11 ✓, 167 ⚠ OPEN_RULING)
+- **Wired:** 179 (11 ✓, 168 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2077
+- **Not yet touched:** 2076
 
 ---
 
@@ -1017,7 +1017,7 @@
 | ⬜ | PAPER_1757 | GALAXY TYPES 4 |
 | ⬜ | PAPER_1758 | GALAXY SUBTYPES 24 |
 | ⬜ | PAPER_1759 | BARYON FRACTION 50 6 |
-| ⬜ | PAPER_175 | 26 Quantum Energy Levels Vacuum Energy Density |
+| ⚠ | PAPER_175 | 26 Quantum Energy Levels Vacuum Energy Density |
 | ⬜ | PAPER_1760 | Z REION 7 0 |
 | ⬜ | PAPER_1761 | T 21CM MINUS 289 MK |
 | ⬜ | PAPER_1762 | SF EFFICIENCY 1 75 |

@@ -1,37 +1,31 @@
-v0.177.0 BAND 1: PAPER_174 wired - RESONANCE CODE-TRUTH
+v0.178.0 BAND 1: PAPER_175 wired - 26-LEVEL ENERGY LADDER
 
-PAPER_174 Modular Resonance MUGE 13+1 Terms (OPEN_RULING
-Q-170) - Session 48, thread 381a8fe7, sec 2.4-F:
-  The resonance-side decomposition: master aDPM amplitude
-  scaled through 12 frequency terms plus the Morris-
-  Thorne wormhole 14th.
+PAPER_175 26 Quantum Energy Levels + rho_vac (OPEN_RULING
+Q-171) - Session 48, thread 381a8fe7, sec 2.4-G:
+  The D_crit = 26 decade energy ladder E_n = 1e-20*10^n J
+  (1e-19 to 1e6 J), grounding the rho_v = 6e-27 Ug4
+  constant at the level-19/20 boundary, with the
+  per-object law rho_vac = sum(f_i*E_i)/V. The framing
+  is honest and Rule 4-clean: explicitly "NOT the QFT
+  zero-point" - SCm-UA inertial densities, sidestepping
+  the 120-order problem by construction.
 
-  RESONANCE CODE-TRUTH ESTABLISHED: the total sums to
-  1.773e-9 - an EXACT match to 172's unit-test
-  expectation, dominated by afluid_freq. Together with
-  v0.175.0/v0.176.0, the resonance tables (1e45-1e156 in
-  152/158) are now DOUBLY disproven: the code's own
-  decomposition and its own unit test agree with each
-  other and not with the tables.
+  VERIFIED EXACT: the header rho_Lambda correction =
+  1 + (kappa*SSq)^2 = 1 + 8.1225e-8 = 1.0000000812 -
+  the 2.85e-4 family SQUARED (its deepest appearance
+  yet: footer ratio in 158, delta_P in 169, compact Ubi
+  in 170, now squared in 175). Ug level bands are
+  IDENTICAL to 171's table (Ug1 10-13, Ug4 20-26).
 
-  CROSS-PAPER CONSISTENCY: fquantum = 2pi/t_Hubble =
-  1.445e-17 EXACT (the same factor as 173's quantum
-  term); H_z = 2.270e-18 = 70.05 km/s/Mpc - the SECOND
-  canonical H0 vote in sec 2.4; UA_SCM = 10 = SO_5;
-  Evac_neb/Evac_ISM = 10 again; fosc = 4.57e14 Hz =
-  c/656 nm (a real H-alpha spectral anchor); wormhole
-  term 7.09e-44 EXACT; mantissa identity 3.545 = 7.09/2.
+  QUEUED FOR RULING: (a) this ladder is ENERGY-decade
+  while the predecessor's canonical 26-layer chain is
+  FREQUENCY-based - same structure through E = h*f, or
+  two ladders needing a mapping? (b) level 18 "Higgs
+  boson scale" at 1e-2 J vs actual 125 GeV = 2.0e-8 J
+  (5e5 off; the level-18-Higgs ASSIGNMENT is corpus-wide
+  via PAPER_1120 - is the energy value the defect?);
+  (c) E_0 = 1e-20 J base quantum underived.
 
-  PINNED FOR RULING: aDPM root-formula break (printed
-  chain gives 2.8e24 vs its own test value 3.545e-42 -
-  66 orders); sub-term table values not following the
-  printed formulas (code extraction needed); raw-additive
-  fTRZ EMPIRICALLY REFUTED A SECOND TIME (0.1 listed as
-  dominant additive term vs code total 1.773e-9 - the
-  Q-142/Q-149 scoped doctrine gains independent
-  confirmation from the 2.4 thread); fAether "Planck
-  scale" mislabel (78 orders).
-
-Q-170 queued. Gate 1,179 assertions 0 failures. Registry
-425 rows / 911 edges / 178 ledgers (measured). Wired
-178/2,255 (11 clean, 167 OPEN_RULING). Next: PAPER_175.
+Q-171 queued. Gate 1,185 assertions 0 failures. Registry
+427 rows / 916 edges / 179 ledgers (measured). Wired
+179/2,255 (11 clean, 168 OPEN_RULING). Next: PAPER_176.

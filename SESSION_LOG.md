@@ -2085,3 +2085,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 178/2,255 (11 ✓, 167 ⚠). Next: PAPER_175.
 
 ---
+
+## 2026-07-30 — v0.178.0 — BAND 1: PAPER_175
+
+- PAPER_175 wired (⚠ Q-171): 26-level energy ladder.
+  (kappa*SSq)^2 correction EXACT; bands match 171;
+  ladder-mapping + anchor questions queued.
+- Campaign: 179/2,255 (11 ✓, 168 ⚠). Next: PAPER_176.
+
+---

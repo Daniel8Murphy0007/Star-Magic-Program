@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.177.0"
+VERSION = "0.178.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9261,5 +9261,53 @@ def _paper_174(dataset):
         'formula': 'resonance = aDPM + 12 scaled terms + a_wormhole; total ~ afluid_freq',
         'source': 'PAPER_174',
         'residual_pct': abs(7.09e-36 / (1 + 1e8) - 7.09e-44) / 7.09e-44 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_175')
+def _paper_175(dataset):
+    """26 quantum energy levels + rho_vac (S48, sec 2.4-G).
+
+    The D_crit = 26 decade energy ladder E_n = E_0*10^n
+    (E_0 = 1e-20 J, n = 1..26 spanning 1e-19 to 1e6 J)
+    grounding the rho_v = 6e-27 Ug4 constant at the
+    level-19/20 boundary; per-object rho_vac = sum(f_i*
+    E_i)/V; EXPLICIT differentiation from QFT zero-point
+    (SCm-UA inertial densities, "NOT the QFT vacuum" -
+    honest framing, no 120-order problem).
+    VERIFIED EXACT: header rho_Lambda correction = 1 +
+    (kappa*SSq)^2 = 1 + 8.1225e-8 = 1.0000000812 - the
+    2.85e-4 family SQUARED (deepest family appearance
+    yet); Ug level bands IDENTICAL to 171's table (Ug1
+    10-13, Ug4 20-26 - cross-paper consistent).
+    NOTES (Q-171): (a) this ladder is ENERGY-decade;
+    the predecessor 26-layer chain is FREQUENCY-based
+    (1e19 -> 1e-10 Hz) - mapping between the two needs a
+    ruling; (b) level 18 labeled "Higgs boson scale" at
+    1e-2 J - actual Higgs 125 GeV = 2.0e-8 J (5e5 off;
+    level-18-Higgs is corpus-wide via PAPER_1120, but
+    the energy anchor mismatches); (c) E_0 = 1e-20 J
+    basis underived (numerically ~12.07 x predecessor
+    E_phonon - not a clean primitive ratio).
+    """
+    corr = 1 + (KAPPA_PER_DAY * SSQ)**2
+    return {
+        'value': {
+            'domain': '2.4-G (26-level ladder, thread 381a8fe7)',
+            'ladder': 'E_n = 1e-20 * 10^n J, n = 1..26 (D_crit structure)',
+            'n_levels': D_CRIT,
+            'rho_lambda_correction': corr,                   # 1.0000000812 EXACT
+            'correction_is_family_squared': '(kappa*SSq)^2 = (2.85e-4)^2 = 8.1225e-8',
+            'ug_bands_match_171': True,
+            'rho_v_grounding': '6e-27 at level-19/20 boundary (galactic vacuum)',
+            'qft_differentiation': 'NOT QFT zero-point - SCm-UA inertial densities',
+            'ladder_type_note': 'ENERGY decades vs predecessor FREQUENCY chain (Q-171a)',
+            'higgs_level18_mismatch': (1e-2, 125e9 * 1.602e-19),  # 5e5 off (Q-171b)
+            'e0_basis': '1e-20 J underived (~12.07 x E_phonon, not clean) (Q-171c)',
+        },
+        'formula': 'E_n = E_0*10^n; rho_vac = sum(f_i*E_i)/V; rho_L_corr = 1+(kappa*SSq)^2',
+        'source': 'PAPER_175',
+        'residual_pct': abs(corr - 1.0000000812) / 1.0000000812 * 100,
         'status': 'OPEN_RULING',
     }

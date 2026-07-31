@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.178.0] — 2026-07-30 — BAND 1: PAPER_175 — 26-LEVEL ENERGY LADDER
+
+### Added
+- **PAPER_175 dispatch** (26 quantum energy levels +
+  rho_vac, S48, sec 2.4-G): E_n = 1e-20·10^n J decade
+  ladder (D_crit structure) grounding rho_v = 6e-27 at
+  the level-19/20 boundary; per-object rho_vac law;
+  EXPLICIT non-QFT framing (SCm-UA inertial densities —
+  Rule 4-clean, sidesteps the 120-order problem).
+  VERIFIED EXACT: rho_Lambda correction = 1 +
+  (kappa·SSq)² = 1.0000000812 — the 2.85e-4 family
+  SQUARED (deepest appearance yet); Ug level bands
+  identical to 171. QUEUED: energy-vs-frequency ladder
+  mapping to the predecessor chain; level-18 "Higgs"
+  anchor 5e5 mismatch; E_0 = 1e-20 J basis.
+- OPEN_RULING Q-171.
+- Gate: 1,185 assertions, 0 failures. Registry: 427 rows / 916 edges / 179 ledgers (measured).
+
+---
+
 ## [0.177.0] — 2026-07-30 — BAND 1: PAPER_174 — RESONANCE CODE-TRUTH
 
 ### Added

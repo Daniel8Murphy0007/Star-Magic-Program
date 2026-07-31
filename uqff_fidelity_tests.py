@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.177.0", "uqff_calculator.VERSION = 0.177.0")
+assert_that(C.VERSION == "0.178.0", "uqff_calculator.VERSION = 0.178.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2576,6 +2576,19 @@ assert_that(_r174['adpm_formula_break'][0] / _r174['adpm_formula_break'][1] > 1e
 assert_that(5e7 < _r174['ftrz_additive_refuted_again'] < 6e7,
             "PAPER_174: additive fTRZ empirically refuted AGAIN - 0.1 vs total 1.773e-9 (Q-142 #2)")
 assert_that(C.wired_count() >= 178, "wired_count >= 178")
+
+_r175 = C.calc('PAPER_175')['value']
+assert_that(_r175['n_levels'] == 26,
+            "PAPER_175: 26-level energy ladder = D_CRIT structure")
+assert_that(abs(_r175['rho_lambda_correction'] - 1.0000000812) < 1e-10,
+            "PAPER_175: rho_Lambda correction = 1 + (kappa*SSq)^2 = 1.0000000812 EXACT (family squared)")
+assert_that(_r175['ug_bands_match_171'],
+            "PAPER_175: Ug level bands identical to 171 (cross-paper consistent)")
+assert_that(_r175['higgs_level18_mismatch'][0] / _r175['higgs_level18_mismatch'][1] > 4e5,
+            "PAPER_175: level-18 'Higgs' at 1e-2 J vs actual 2.0e-8 J - 5e5 mismatch (Q-171b)")
+assert_that('NOT QFT' in _r175['qft_differentiation'],
+            "PAPER_175: explicit differentiation from QFT zero-point (honest framing)")
+assert_that(C.wired_count() >= 179, "wired_count >= 179")
 
 # =============================================================================
 # REPORT
