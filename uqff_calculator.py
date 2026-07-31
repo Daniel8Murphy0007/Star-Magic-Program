@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.215.0"
+VERSION = "0.216.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11128,6 +11128,70 @@ def _paper_211(dataset):
         },
         'formula': 'comp_ratio = 11/(99*13); g_UQFF = GM/r^2*[1+H][1-B/Bc][1+F_env] + Ug1..4 + Lc^2/3 + ...',
         'source': 'PAPER_211',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_212')
+def _paper_212(dataset):
+    """UQFF 48-scale framework + H2O-H2 CIA cross-section refit (S50).
+
+    UQFF spans 48 physical scales from molecular rotational torque
+    (~1e-34 N.m) to the observable-universe diameter (~1e27 m) under
+    one master equation. Wired observables:
+    * H2O-H2 CIA refit (arXiv:2506.09257, Dj=2 quadrupolar induction):
+      slope b = 0.004997 A^2/cm^-1; sigma(400 cm^-1) = 9.65 + b*400
+      = 11.649 A^2 (paper 11.65). Update vs Borysow-Frommhold 1987
+      sigma_old = 11.0 A^2 -> +5.90% (paper 5.9%). This is the source
+      detail for the CIA figures cited in PAPER_208.
+    * UQFF vacuum-CIA coupling k_phi ~ 1e-113 (ties the k_eta ~ 1e-113
+      deep-vacuum thread); k_phi ~ sigma_CIA^-1 so dk_phi/k_phi = -5.9%;
+      planetary-atmosphere opacity (Uranus/Neptune) shifts ~0.06% in
+      g(r,t) (within observational calibration).
+    * H2 molecular rotor (smallest scale, #9): rotational constant
+      B(H2) = 60.853 cm^-1; torque tau_rot ~ 1e-34 N.m. Q-208: the
+      paper's B->J conversion 7.55e-23 J is ~16x low (hc*60.853 cm^-1
+      = 1.209e-21 J; 7.55e-23 J corresponds to ~3.8 cm^-1) - paperwork
+      drift, rotational constant itself correct.
+    * Scale span: 5 physical regimes (quantum/molecular, compact/
+      stellar, galactic ISM/disk, large-scale structure, cosmological);
+      key ratios H2-rotor:D_universe = 1e-34 N.m : 1e27 m ~ 1e61,
+      nuclear:Hubble = 1e-15 : 1e26 ~ 1e41, k_phi:G ~ 1e-103; a single
+      master equation covers the ~61-decade span.
+    Appendix drift auto-corrected per charter (VDS 1.894 -> F_TRZ=0.1
+    PAPER_2156; kg/m^3 -> J/m^3 PAPER_2155/2147; beta_i -> BETA_I
+    PAPER_1203; YM 1.736 GeV per PAPER_1318 registry-bug supersession).
+    """
+    b_cia = 0.004997
+    sigma_400 = 9.65 + b_cia * 400.0                      # 11.649
+    cia_update_pct = (sigma_400 - 11.0) / 11.0 * 100.0    # +5.90%
+    b_h2_cm1 = 60.853
+    return {
+        'value': {
+            'domain': '2.10 (48-scale framework + CIA refit)',
+            'scales_total': 48,
+            'regimes': 5,
+            'span_decades': 61,
+            'single_master_equation': True,
+            'cia_slope_b': b_cia,                          # 0.004997 A^2/cm^-1
+            'cia_sigma_400': sigma_400,                    # 11.649 A^2
+            'cia_sigma_400_paper': 11.65,
+            'cia_sigma_old': 11.0,
+            'cia_update_pct': cia_update_pct,              # +5.90%
+            'cia_ties_paper_208': True,
+            'k_phi_order': 1e-113,
+            'k_phi_shift_pct': -5.9,                       # k_phi ~ sigma^-1
+            'planetary_opacity_shift_pct': 0.06,
+            'b_h2_cm1': b_h2_cm1,                          # 60.853
+            'tau_rot_order_N_m': 1e-34,
+            'b_h2_j_conversion_fork': 'paper 7.55e-23 J is ~16x low; hc*60.853 = 1.209e-21 J (Q-208)',
+            'ratio_rotor_universe': 1e61,
+            'ratio_nuclear_hubble': 1e41,
+            'ratio_kphi_G_order': -103,
+        },
+        'formula': 'sigma(E) = a + b*E; sigma(400)=9.65+0.004997*400; k_phi ~ sigma_CIA^-1',
+        'source': 'PAPER_212',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

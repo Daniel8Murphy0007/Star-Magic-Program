@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.215.0", "uqff_calculator.VERSION = 0.215.0")
+assert_that(C.VERSION == "0.216.0", "uqff_calculator.VERSION = 0.216.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3048,6 +3048,19 @@ assert_that(_r211['q_wave_mean'] == 6.33e4 and abs(_r211['q_wave_scatter_pct'] -
 assert_that(_r211['systems_total'] == 99 and _r211['systems_named'] == 29 and _r211['systems_q_wave_computed'] == 47,
             "PAPER_211: 99 systems (29 named + 70 implied), 47 Q_wave-computed")
 assert_that(C.wired_count() >= 215, "wired_count >= 215")
+
+_r212 = C.calc('PAPER_212')['value']
+assert_that(abs(_r212['cia_sigma_400'] - 11.6488) < 1e-6,
+            "PAPER_212: H2O-H2 CIA sigma(400) = 9.65 + 0.004997*400 = 11.649 A^2 (paper 11.65)")
+assert_that(abs(_r212['cia_update_pct'] - 5.898181818181814) < 1e-9,
+            "PAPER_212: CIA update vs Borysow-Frommhold 11.0 = +5.90% (paper 5.9%)")
+assert_that(_r212['scales_total'] == 48 and _r212['span_decades'] == 61 and _r212['regimes'] == 5,
+            "PAPER_212: 48 scales, 5 regimes, ~61-decade span, single master equation")
+assert_that(_r212['ratio_rotor_universe'] == 1e61 and _r212['ratio_nuclear_hubble'] == 1e41,
+            "PAPER_212: scale ratios rotor:universe ~1e61, nuclear:Hubble ~1e41")
+assert_that(_r212['b_h2_cm1'] == 60.853,
+            "PAPER_212: H2 rotational constant B = 60.853 cm^-1 (J-conversion drift Q-208)")
+assert_that(C.wired_count() >= 216, "wired_count >= 216")
 
 
 # =============================================================================

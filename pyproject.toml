@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.215.0"
-description = "UQFF Star-Magic-Program v0.215.0: PAPER_211 wired - 99-system framework Compression Cycle 3; 99 eqs x 13 terms = 1287 raw -> 11 backbone + 99 F_env (ratio 0.855%); backbone unification 886/990=89.5% (table-sum 90.7%, Q-207); Q_wave mean 6.33e4 J/m^3 (ties 208), 1.90% scatter; 29 named + 70 implied systems. Q-207. Wired 215/2255, gate 1388/0. Registry 483 rows / 1032 edges / 215 ledgers (measured)."
+version = "0.216.0"
+description = "UQFF Star-Magic-Program v0.216.0: PAPER_212 wired - 48-scale framework + H2O-H2 CIA refit; 48 scales / 5 regimes / ~61-decade span single master eq; CIA b=0.004997, sigma(400)=11.649 A^2 (+5.90% vs 11.0); k_phi ~1e-113 shifts -5.9%; B(H2)=60.853 cm^-1 (J-conv drift Q-208); ratios 1e61/1e41/1e-103. Q-208. Wired 216/2255, gate 1394/0. Registry 485 rows / 1035 edges / 216 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

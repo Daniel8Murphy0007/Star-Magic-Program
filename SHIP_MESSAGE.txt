@@ -1,28 +1,31 @@
-v0.215.0 BAND 1: PAPER_211 wired - 99-SYSTEM COMPRESSION CYCLE 3
+v0.216.0 BAND 1: PAPER_212 wired - 48-SCALE + CIA REFIT
 
-PAPER_211 (UQFF 99-System Complete Framework and Compression Cycle 3,
-S50) wired as one dispatch (Q-207, OPEN_RULING).
+PAPER_212 (UQFF 48-Scale Molecular Rotor and CIA Cross-Section
+Framework, S50) wired as one dispatch (Q-208, OPEN_RULING).
 
 Physics:
-- 99-system UQFF framework: 29 explicitly named + 70 implied systems
-  across 7 categories; 47 explicitly Q_wave-computed.
-- Compression Cycle 3: 99 equations x mean 13 terms = 1287 raw unique
-  terms -> 1 equation x 11 backbone terms + 99 F_env(t) functions;
-  compression ratio 11/1287 = 0.855% (paper 0.86%). Verified in Python.
-- Backbone unification: paper states 886/990 = 89.5% average coverage;
-  the table's own 10 per-term system counts sum to 898/990 = 90.7%
-  (Q-207: 12-count numerator drift, both retained). Conservative 85%
-  headline, 40% term reduction.
-- Q_wave calibration across 47 systems: mean 6.33e4 J/m^3 (ties
-  PAPER_208 canonical), std 0.12e4 = 1.90% scatter (paper 2%),
-  min 5.8e4 (cosmological voids), max 6.9e4 (dense magnetars).
-- 7 F_env categories: cluster, AGN, SFR, neutron-star, spiral,
-  cosmological, X-ray-binary. Error metrics: JWST 99.87%, Chandra
-  99.98%, ALMA/VLA 99.94%.
+- UQFF spans 48 physical scales from the H2 molecular rotor torque
+  (~1e-34 N.m) to the observable-universe diameter (~1e27 m) under a
+  single master equation. 5 physical regimes (quantum/molecular,
+  compact/stellar, galactic ISM/disk, large-scale structure,
+  cosmological); ~61-decade span. Key ratios: rotor:D_universe ~1e61,
+  nuclear:Hubble ~1e41, k_phi:G ~1e-103.
+- H2O-H2 collision-induced-absorption refit (arXiv:2506.09257,
+  Dj=2 quadrupolar): slope b = 0.004997 A^2/cm^-1,
+  sigma(400 cm^-1) = 9.65 + b*400 = 11.649 A^2 (paper 11.65),
+  a +5.90% update over Borysow-Frommhold 1987 (11.0 A^2). This is
+  the source detail for the CIA figures cited in PAPER_208.
+  Verified in Python.
+- UQFF vacuum-CIA coupling k_phi ~ 1e-113 (ties the k_eta deep-vacuum
+  thread); k_phi ~ sigma_CIA^-1 so dk_phi/k_phi = -5.9%; planetary
+  atmosphere (Uranus/Neptune) opacity shifts ~0.06% in g(r,t).
+- H2 rotational constant B = 60.853 cm^-1; torque tau_rot ~ 1e-34 N.m.
 
-Q-207: backbone-coverage numerator 886 (stated) vs 898 (table sum).
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i, kappa /s form)
+Q-208: the paper's B->J conversion 7.55e-23 J is ~16x low (hc*60.853
+cm^-1 = 1.209e-21 J; 7.55e-23 J corresponds to ~3.8 cm^-1). The
+rotational constant 60.853 cm^-1 itself is correct and is what was
+wired. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i, YM gap)
 auto-corrected per charter, not in wired physics.
 
-Gate: 1388/0. Registry 483 rows / 1032 edges / 215 ledgers (measured).
-Campaign: 215/2,255. Next: PAPER_212.
+Gate: 1394/0. Registry 485 rows / 1035 edges / 216 ledgers (measured).
+Campaign: 216/2,255. Next: PAPER_213.

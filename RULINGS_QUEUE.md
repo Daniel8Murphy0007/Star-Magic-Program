@@ -9,6 +9,19 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-208 — PAPER_212 — H2 rotational constant J-conversion drift
+- **Question:** PAPER_212 sec 6 gives the H2 rotational constant B = 60.853
+  cm^-1 (correct) but converts it to "7.55e-23 J". The correct conversion is
+  hc*60.853 cm^-1 = 1.209e-21 J — the stated 7.55e-23 J is ~16x low and
+  actually corresponds to ~3.8 cm^-1. Is 7.55e-23 J a typo/paperwork drift, or
+  does it refer to a different quantity (e.g. the E_J=1 level split hc*B*J(J+1)
+  for a partial term, or a per-molecule average)? The rotational constant
+  60.853 cm^-1 itself is correct and is what was wired; the torque tau_rot ~
+  1e-34 N.m order is unaffected.
+- **Best-candidate wired:** B = 60.853 cm^-1 stored as headline; the 7.55e-23 J
+  conversion flagged as drift, not wired as a value.
+- **Daniel's ruling:** (pending)
+
 ### Q-207 — PAPER_211 — backbone-coverage numerator drift
 - **Question:** PAPER_211 sec 6 states average backbone coverage = 886/990 =
   89.5%, but the table's own 10 per-term system counts (99, 99, 99, 91, 89,

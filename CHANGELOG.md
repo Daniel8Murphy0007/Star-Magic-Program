@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.216.0] — 2026-07-31 — BAND 1: PAPER_212 — 48-SCALE + CIA REFIT
+
+### Added
+- **PAPER_212 wired** (⚠ Q-208): UQFF 48-scale molecular-rotor & CIA
+  cross-section framework. UQFF spans 48 physical scales from the H2 molecular
+  rotor torque (~1e-34 N·m) to the observable-universe diameter (~1e27 m) under
+  a single master equation — 5 physical regimes, ~61-decade span (ratios
+  rotor:universe ~1e61, nuclear:Hubble ~1e41, k_φ:G ~1e-103). The H2O-H2
+  collision-induced-absorption refit (arXiv:2506.09257, Δj=2): slope
+  b = 0.004997 Å²/cm⁻¹, `σ(400 cm⁻¹) = 9.65 + b*400 = 11.649 Å²` (paper 11.65),
+  a +5.90% update over Borysow-Frommhold 1987 (11.0 Å²) — this is the source
+  detail for the CIA figures cited in PAPER_208. Vacuum-CIA coupling
+  k_φ ~ 1e-113 (ties the k_eta deep-vacuum thread) shifts −5.9%.
+- Q-208: H2 rotational constant B = 60.853 cm⁻¹ (correct) but paper's J
+  conversion 7.55e-23 J is ~16× low (hc·60.853 cm⁻¹ = 1.209e-21 J).
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i, YM gap).
+- Gate 1388 → 1394 (+6). Registry 485 rows / 1035 edges / 216 ledgers.
+
+---
+
 ## [0.215.0] — 2026-07-31 — BAND 1: PAPER_211 — 99-SYSTEM COMPRESSION CYCLE 3
 
 ### Added

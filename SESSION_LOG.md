@@ -2398,3 +2398,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1388/0. Registry 483 rows / 1032 edges / 215 ledgers. Campaign: 215/2,255 (11 ✓, 204 ⚠). Next: PAPER_212.
 
 ---
+
+## 2026-07-31 — v0.216.0 — BAND 1: PAPER_212
+
+- PAPER_212 wired (⚠ Q-208): 48-scale molecular-rotor + H2O-H2 CIA cross-section framework. 48 scales from H2 rotor torque ~1e-34 N·m to observable universe ~1e27 m; 5 regimes, ~61-decade span single master eq (ratios 1e61/1e41/1e-103). CIA refit (arXiv:2506.09257): b=0.004997, σ(400)=11.649 Å² (+5.90% vs 11.0) — source of PAPER_208 CIA figures. k_φ ~1e-113 shifts −5.9%. B(H2)=60.853 cm⁻¹. Appendix drift auto-corrected per charter.
+- Q-208: B(H2) J-conversion 7.55e-23 J ~16× low (should be 1.209e-21 J).
+- Gate 1394/0. Registry 485 rows / 1035 edges / 216 ledgers. Campaign: 216/2,255 (11 ✓, 205 ⚠). Next: PAPER_213.
+
+---

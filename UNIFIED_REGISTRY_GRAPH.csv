@@ -1031,3 +1031,6 @@ observable,mond_cluster_lensing_discriminator,paper,PAPER_210,cluster/lensing te
 observable,framework_compression_cycle3,paper,PAPER_211,compression cycle 3
 observable,q_wave_47system_calibration,paper,PAPER_211,47-system Q_wave
 observable,q_wave_47system_calibration,observable,q_wave,PAPER_208 canonical tie
+observable,scale_48_framework,paper,PAPER_212,48-scale table
+observable,cia_h2o_h2_refit,paper,PAPER_212,CIA refit
+observable,cia_h2o_h2_refit,observable,variable_calibration_status,PAPER_208 CIA source
