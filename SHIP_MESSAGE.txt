@@ -1,28 +1,32 @@
-v0.162.0 BAND 1: PAPER_159 wired - 13TH RESONANCE TERM
+v0.163.0 BAND 1: PAPER_160 wired - K4 CONFIRMED BY CORPUS
 
-PAPER_159 Morris-Thorne Wormhole 13th MUGE Term
-(OPEN_RULING Q-155) - Session 47, thread 7f9068, sec 2.3:
-  a_worm = f_worm*E_vac,neb/(b^2+r^2) extends PAPER_146's
-  12-term resonance MUGE to 13 terms (the g_res that 158's
-  blend references). a_worm(1 AU) = 3.168e-58 verified to
-  0.06%; large-r limit reproduces 1/r^2 DPM-seeded decay.
+PAPER_160 Ug4 Extended Calibration (OPEN_RULING Q-156) -
+Session 47, thread 7f9068, sec 2.3:
+  Calibrates the three parameters PAPER_086 left undefined:
+  rho_v = 6e-27 (dark-energy density, 1.8% rounding of
+  Lambda*c^2/8piG = 5.89e-27 kg/m3), C_conc = 1.0
+  (isotropic baseline, 0.1-100 AGN range), f_feedback =
+  0.1 (observed AGN efficiency mean). Ug4(0,0) = 4.2188e-10
+  chain verified to 0.004%.
 
-  PRIMITIVE IDENTITY: E_vac,neb = 7.09e-36 = SO_5*rho_SCm
-  = rho_UA EXACT - the nebular vacuum energy IS the UA
-  density.
+  SELF-RECTIFICATION VALIDATED: the paper declares k4 = 2.0
+  "UQFF canonical (unchanged)" - CONFIRMING the k4 = 2.000
+  EXACT that the v0.160.0 PAPER_157 wiring derived from the
+  uniform Ug4 BEFORE this paper was read. Q-153 item (b)
+  resolved by the corpus, exactly as the charter's
+  self-rectification doctrine predicts.
 
-  THROAT FORK: b = 1.0 m calibration here vs PAPER_153's
-  GENUINELY DERIVED r_0 = 2.32 mm from SCm parameters -
-  the paired wormhole papers disagree by 431x in throat
-  radius (1.9e5x in throat acceleration). Which is
-  canonical? (Q-155a)
+  LAMBDA BRIDGE (queued): rho_v = Lambda*c^2/8piG ties Ug4
+  directly to the cosmological constant; the paper claims
+  090's compressed Lambda*c^2/3 term and Ug4 are
+  complementary global/local dark-energy forms.
 
-  MAGNITUDE SLIP: "1e58x smaller than DPM at 1 AU" vs
-  actual 1.87e55 - a 534x slip (mantissa-exponent family).
-  fTRZ persists ADDITIVE as term 12 (Q-142/149 doctrine
-  now covers the 13-term set). The gate caught a stray x10
-  in my own first dispatch draft - fixed before sync.
+  Drift pinned: "5.96e-27 J/m^3" unit tag on a kg/m^3
+  value (PAPER_2147 unit-direction class); footer "F_U =
+  2.0e+18 m/s" velocity-unit slip. Footer Eddington
+  1 - SSq*e^-2.9e-4 = 0.43017 EXACT.
 
-Q-155 queued. Gate 1,083 assertions 0 failures. Registry
-395 rows / 844 edges / 163 ledgers (measured). Wired
-163/2,255 (11 clean, 152 OPEN_RULING). Next: PAPER_160.
+Q-156 queued; Q-153 annotated. Gate 1,089 assertions 0
+failures. Registry 397 rows / 848 edges / 164 ledgers
+(measured). Wired 164/2,255 (11 clean, 153 OPEN_RULING).
+Next: PAPER_161.

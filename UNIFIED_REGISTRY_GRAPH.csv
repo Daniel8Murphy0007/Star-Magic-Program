@@ -843,3 +843,7 @@ primitive,SO_FIVE,observable,muge_13th_term_wormhole,"E_vac,neb = SO_5*rho_SCm"
 primitive,RHO_SCM,observable,muge_13th_term_wormhole,"E_vac,neb identity"
 observable,wormhole_throat_fork,paper,PAPER_159,b = 1.0 m
 observable,wormhole_throat_fork,paper,PAPER_153,r_0 = 2.32 mm derived
+observable,ug4_calibration_triple,paper,PAPER_160,3 calibrations
+primitive,SSQ,observable,ug4_calibration_triple,footer Eddington
+observable,k4_canonical_confirmed,paper,PAPER_160,k4 = 2 canonical
+observable,k4_canonical_confirmed,paper,PAPER_157,157-derived k4 confirmed

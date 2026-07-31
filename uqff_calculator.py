@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.162.0"
+VERSION = "0.163.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8502,5 +8502,54 @@ def _paper_159(dataset):
         'formula': 'g_res(13) = sum(12 terms) + f_worm*E_vac,neb/(b^2+r^2)',
         'source': 'PAPER_159',
         'residual_pct': abs(a_worm_au - 3.17e-58) / 3.17e-58 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_160')
+def _paper_160(dataset):
+    """Ug4 extended - rho_v/C_conc/f_feedback calibration (S47, sec 2.3).
+
+    Calibrates the three parameters PAPER_086 left undefined:
+    rho_v = 6e-27 (dark-energy density, ~1.8% rounding of
+    Lambda*c^2/8piG = 5.89e-27), C_conc = 1.0 (isotropic
+    baseline, expected 0.1-100 for AGN), f_feedback = 0.1
+    (AGN efficiency 0.05-0.15 mean).
+    K4 CONFIRMED (self-rectification): declares k4 = 2.0
+    "UQFF canonical" - CONFIRMS the k4 = 2.000 EXACT that
+    the PAPER_157 wiring derived from the uniform Ug4
+    (Q-153b RESOLVED by corpus).
+    VERIFIED: Ug4(0,0) = 2.0*6e-27*1.0*(Mbh/dg)*1.1 =
+    4.2188e-10 (paper 4.219e-10, 0.004%); footer
+    1 - SSq*e^-2.9e-4 = 0.43017 EXACT.
+    LAMBDA BRIDGE: rho_v = Lambda*c^2/8piG ties Ug4 to the
+    cosmological constant; claims Lambda*c^2/3 (090) and
+    Ug4 are complementary global/local dark-energy forms.
+    DRIFT: "5.96e-27 J/m^3" unit tag - the value is kg/m^3
+    (SM kg-native); J/m^3-native doctrine per PAPER_2147;
+    footer "F_U = 2.0e+18 m/s" unit slip.
+    """
+    import math as _m
+    m_bh, d_g = 8.15e36, 2.55e20  # SgrA* (papers 148/157)
+    ug4 = 2.0 * 6e-27 * 1.0 * (m_bh / d_g) * 1.1
+    rho_lambda = 1.1e-52 * 2.998e8**2 / (8 * _m.pi * 6.674e-11)
+    return {
+        'value': {
+            'domain': '2.3 (Ug4 calibration, thread 7f9068)',
+            'rho_v': 6e-27,
+            'rho_lambda_chain': rho_lambda,                  # 5.89e-27 kg/m3
+            'rounding_pct': abs(6e-27 - rho_lambda) / rho_lambda * 100,  # 1.8%
+            'c_conc': 1.0,
+            'f_feedback': 0.1,
+            'k4_canonical': 2.0,
+            'k4_confirms_157': 'Q-153b RESOLVED - 157-derived k4 = 2.000 EXACT confirmed',
+            'ug4_t0': ug4,                                   # 4.2188e-10
+            'footer_edd': 1 - SSQ * _m.exp(-2.9e-4),         # 0.43017
+            'lambda_bridge': 'rho_v = Lambda*c^2/8piG - Ug4 <-> LCDM dark energy',
+            'drift': 'J/m^3 tag on kg/m^3 value (PAPER_2147 class); F_U in m/s',
+        },
+        'formula': 'Ug4 = k4*rho_v*C_conc*(Mbh/dg)*e^-at*cos(pi tn)*(1+f_fb)',
+        'source': 'PAPER_160',
+        'residual_pct': abs(ug4 - 4.219e-10) / 4.219e-10 * 100,
         'status': 'OPEN_RULING',
     }

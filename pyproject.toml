@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.162.0"
-description = "UQFF Star-Magic-Program v0.162.0: PAPER_159 wired - 13th resonance term a_worm = f_worm*E_vac/(b^2+r^2) extends 146; a_worm(1 AU) verified 0.06%; PRIMITIVE IDENTITY E_vac,neb = SO_5*rho_SCm = rho_UA EXACT; throat FORK b = 1.0 m vs 153 derived 2.32 mm (431x); 534x magnitude slip pinned. Q-155 queued. Wired 163/2255, gate 1083/0. Registry 395 rows / 844 edges / 163 ledgers (measured)."
+version = "0.163.0"
+description = "UQFF Star-Magic-Program v0.163.0: PAPER_160 wired - Ug4 calibration (rho_v = 6e-27, C_conc = 1.0, f_feedback = 0.1) completes PAPER_086; k4 = 2.0 declared canonical, CONFIRMING the k4 = 2.000 EXACT derived in the 157 wiring (Q-153b resolved - self-rectification validated); Ug4 chain verified 0.004%; Lambda bridge queued. Q-156. Wired 164/2255, gate 1089/0. Registry 397 rows / 848 edges / 164 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 163 (11 ✓, 152 ⚠ OPEN_RULING)
+- **Wired:** 164 (11 ✓, 153 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2092
+- **Not yet touched:** 2091
 
 ---
 
@@ -852,7 +852,7 @@
 | ⬜ | PAPER_1607 | M C CHARM 1 27 |
 | ⬜ | PAPER_1608 | M S STRANGE 0 095 |
 | ⬜ | PAPER_1609 | M E ELECTRON 0 000511 |
-| ⬜ | PAPER_160 | Ug4 Extended Vacuum Concentration AGN Feedback rhov Calibration |
+| ⚠ | PAPER_160 | Ug4 Extended Vacuum Concentration AGN Feedback rhov Calibration |
 | ⬜ | PAPER_1610 | NUCLEAR FE56 BE A 8 7903 |
 | ⬜ | PAPER_1611 | NUCLEAR NI62 BE A 8 7946 |
 | ⬜ | PAPER_1612 | NUCLEAR U235 BE A 7 591 |

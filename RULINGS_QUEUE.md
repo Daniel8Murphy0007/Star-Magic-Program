@@ -3559,6 +3559,11 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** table + derived -13 structure +
   k4 = 2 implication registered; three E_react routes
   queued together for one adjudication.
+- **UPDATE (PAPER_160, v0.163.0):** item (b) RESOLVED by
+  corpus self-rectification - PAPER_160 declares k4 = 2.0
+  "UQFF canonical (unchanged)", confirming the k4 = 2.000
+  EXACT derived in the 157 wiring. Items (a) and (c) remain
+  open.
 - **Daniel's ruling:** (pending)
 
 ### Q-154 — PAPER_158 Hybrid MUGE blend — underflow artifact + B_crit vote
@@ -3617,6 +3622,33 @@ RESOLVED section with the ruling recorded.
   references this 13-term g_res.
 - **Best-candidate wired:** 13th term + verified 1 AU value
   + rho_UA identity registered; both fork and slip pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-156 — PAPER_160 Ug4 calibration — rho_v unit tag + Lambda-bridge status
+- **Question:** (a) rho_v = 6e-27 is the SM kg/m^3-native
+  dark-energy density (Lambda*c^2/8piG = 5.89e-27 kg/m^3,
+  1.8% rounding), and the paper tags the intermediate value
+  "5.96e-27 J/m^3" - the PAPER_2147 unit-direction drift
+  class. Under J/m^3-native doctrine, should rho_v in Ug4
+  be re-expressed as the UQFF-native rho_Lambda = 5.957e-10
+  J/m^3 route (/c^2 post-conversion), or kept as the
+  observed kg/m^3 anchor (Hybrid-Form Doctrine PAPER_2149)?
+  (b) LAMBDA BRIDGE: sec 5 claims Lambda*c^2/3 (090
+  compressed term) and k4*rho_v*C_conc*Mbh/dg (Ug4) are
+  "complementary representations of the same dark energy"
+  (global vs local). Canonize this bridge?
+  (c) Footer "F_U at event horizon = 2.0e+18 m/s" - F_U in
+  velocity units (slip class).
+- **Notable:** k4 = 2.0 declared canonical - CONFIRMS the
+  157-wiring-derived k4 = 2.000 EXACT (Q-153b RESOLVED,
+  self-rectification doctrine validated: the derivation
+  preceded reading the confirming paper). Ug4(0,0) =
+  4.2188e-10 chain verified 0.004%; footer Eddington
+  1 - SSq*e^-2.9e-4 = 0.43017 EXACT; C_conc/f_feedback
+  physically motivated with stated ranges.
+- **Best-candidate wired:** three calibrations + verified
+  chain + k4 confirmation registered; drift tagged by
+  citation (PAPER_2147/2149 doctrine).
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

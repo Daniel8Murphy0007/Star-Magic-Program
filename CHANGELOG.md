@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.163.0] — 2026-07-30 — BAND 1: PAPER_160 — K4 CONFIRMED BY CORPUS
+
+### Added
+- **PAPER_160 dispatch** (Ug4 extended calibration, S47,
+  sec 2.3): rho_v = 6e-27 (1.8% rounding of Lambda·c²/8piG
+  = 5.89e-27 kg/m³), C_conc = 1.0, f_feedback = 0.1 —
+  completes PAPER_086's undefined parameters. Ug4(0,0) =
+  4.2188e-10 chain verified (0.004%). SELF-RECTIFICATION
+  VALIDATED: k4 = 2.0 declared "UQFF canonical" — confirms
+  the k4 = 2.000 EXACT that the 157 wiring derived from
+  the uniform Ug4 BEFORE this paper was read (Q-153b
+  resolved). Lambda bridge (Ug4 ↔ ΛCDM dark energy,
+  global-090 vs local complementarity) queued for
+  canonization. Drift pinned: "J/m³" tag on a kg/m³ value
+  (PAPER_2147 class); footer F_U in m/s.
+- OPEN_RULING Q-156; Q-153 annotated (item b resolved).
+- Gate: 1,089 assertions, 0 failures. Registry: 397 rows / 848 edges / 164 ledgers (measured).
+
+---
+
 ## [0.162.0] — 2026-07-30 — BAND 1: PAPER_159 — 13TH RESONANCE TERM
 
 ### Added

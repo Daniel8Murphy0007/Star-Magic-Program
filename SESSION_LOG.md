@@ -1949,3 +1949,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 163/2,255 (11 ✓, 152 ⚠). Next: PAPER_160.
 
 ---
+
+## 2026-07-30 — v0.163.0 — BAND 1: PAPER_160
+
+- PAPER_160 wired (⚠ Q-156): Ug4 calibration triple. k4 =
+  2.0 canonical CONFIRMS 157-derived value (Q-153b
+  resolved). Lambda bridge queued.
+- Campaign: 164/2,255 (11 ✓, 153 ⚠). Next: PAPER_161.
+
+---

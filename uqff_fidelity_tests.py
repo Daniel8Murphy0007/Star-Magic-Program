@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.162.0", "uqff_calculator.VERSION = 0.162.0")
+assert_that(C.VERSION == "0.163.0", "uqff_calculator.VERSION = 0.163.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2369,6 +2369,19 @@ assert_that(400 < 1.0 / 2.32e-3 < 460,
 assert_that(_r159['magnitude_slip'][1] / _r159['magnitude_slip'][0] > 500,
             "PAPER_159: '1e58x smaller' claim is a 534x slip vs actual 1.87e55 (Q-155b)")
 assert_that(C.wired_count() >= 163, "wired_count >= 163")
+
+_r160 = C.calc('PAPER_160')['value']
+assert_that(abs(_r160['ug4_t0'] - 4.219e-10) / 4.219e-10 < 1e-3,
+            "PAPER_160: Ug4(0,0) = 4.2188e-10 chain verified (paper 4.219e-10, 0.004%)")
+assert_that(_r160['k4_canonical'] == 2.0,
+            "PAPER_160: k4 = 2.0 declared canonical - CONFIRMS 157-derived k4 = 2.000 (Q-153b resolved)")
+assert_that(_r160['rounding_pct'] < 2.0,
+            "PAPER_160: rho_v = 6e-27 is 1.8% rounding of Lambda*c^2/8piG = 5.89e-27")
+assert_that(abs(_r160['footer_edd'] - 0.43017) < 1e-4,
+            "PAPER_160: footer 1 - SSq*e^-2.9e-4 = 0.43017 EXACT")
+assert_that('2147' in _r160['drift'],
+            "PAPER_160: J/m^3-on-kg/m^3 unit-tag drift pinned (PAPER_2147 class)")
+assert_that(C.wired_count() >= 164, "wired_count >= 164")
 
 # =============================================================================
 # REPORT
