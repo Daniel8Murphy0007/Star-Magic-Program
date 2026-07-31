@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.214.0] — 2026-07-31 — BAND 1: PAPER_210 — UQFF vs MOND
+
+### Added
+- **PAPER_210 wired** (⚠ Q-206): UQFF vs MOND comparison framework.
+  MOND's acceleration scale a0 ~ 1.2e-10 m/s² is emergent, not fundamental,
+  recovered as `a0 = c*H0/6 = 1.134e-10` (H0 = A_5+SO_5 = 70 from registry;
+  5.48% residual) with Milgrom's `cH0/(2π) = 1.083e-10` also reproduced. The
+  vacuum-buoyancy coupling `k_UA = [UA] = 1e-4 = F_TRZ^4` EXACT (registry
+  identity). MOND fails in clusters by factor 2-5 (Bullet Cluster
+  M_lensing/M_b ~ 2) where UQFF's F_UBii,vir + F_UBii,ps (~40% ICM buoyancy)
+  gives M_eff ~ 3e14 M_sun (chi²/N: UQFF 1.5, MOND 3-10, CDM 1.2-2.0). Strong
+  lensing Abell 2744: 36 predicted vs 33 observed (+9.09%). Bulk flow at
+  150 Mpc: UQFF 240 vs CosmicFlows-4 248 (3.23%), MOND ~320 (+29%). UQFF
+  ranked 1st or tied-1st on all 9 benchmark tests.
+- Q-206: emergent-a0 route (cH0/6 vs cH0/2π) and k_UA = F_TRZ^4 confirmation.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1376 → 1382 (+6). Registry 481 rows / 1029 edges / 214 ledgers.
+
+---
+
 ## [0.213.0] — 2026-07-31 — BAND 1: PAPER_209 — UQFF vs LAMBDA-CDM
 
 ### Added

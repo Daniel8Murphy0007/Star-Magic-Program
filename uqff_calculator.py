@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.213.0"
+VERSION = "0.214.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10995,5 +10995,72 @@ def _paper_209(dataset):
         'formula': 'rho_L^UQFF = rho_L^obs*(1+kappa^2*SSq^2); LCDM = UQFF with quantum/buoy/mag/nuc -> 0',
         'source': 'PAPER_209',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_210')
+def _paper_210(dataset):
+    """UQFF vs MOND comparison framework (S50, thread 7514fe).
+
+    MOND's a0 emerges from UQFF vacuum-buoyancy coupling; MOND fails
+    in clusters by factor 2-5 while UQFF's F_UBii decomposition
+    handles them. Wired observables:
+    * MOND acceleration scale a0 ~ 1.2e-10 m/s^2 recovered as
+      a0 = c*H0/6 = 1.134e-10 (H0 = A_5+SO_5 = 70 via registry;
+      5.5% vs the 1.2e-10 calibration) — Milgrom's cH0/(2pi)
+      coincidence = 1.083e-10 also reproduced.
+    * UQFF coupling k_UA = [UA] = 1e-4 = F_TRZ^4 EXACT (registry
+      identity): a0 is emergent, not fundamental, set by
+      k_UA * rho_vac,[UA] at galactic transition radii r_trans~5 kpc.
+    * BTFR M_b ~ v_flat^4 (identical structure MOND & UQFF).
+    * Bullet Cluster: M_lensing/M_b ~ 2 (3e14/1.5e14 M_sun);
+      MOND mass ~ M_b underpredicts factor 2-5, UQFF F_UBii,vir +
+      F_UBii,ps (~40% ICM buoyancy) -> M_eff ~ 3e14 matches.
+      Fit chi2/N: UQFF 1.5, MOND 3-10, CDM 1.2-2.0.
+    * Strong lensing Abell 2744: UQFF predicts 36 multiple images
+      vs 33 observed (CLASH/HFF) = +9.09% (vs MOND/TeVeS 25-40%).
+    * Peculiar-velocity bulk flow at 150 Mpc: UQFF 240 km/s vs
+      CosmicFlows-4 248 (3.23%); MOND ~320 (+29%, too high);
+      LCDM ~200 (low).
+    * 9-test summary: UQFF ranked 1st or tied-1st on every row.
+    Appendix drift auto-corrected per charter (not in wired physics):
+    VDS 1.894 -> F_TRZ=0.1 (PAPER_2156); rho_SCm/rho_UA kg/m^3 ->
+    J/m^3 (PAPER_2155/2147); beta_i 0.61/0.603 -> canonical BETA_I
+    (PAPER_1203).
+    """
+    import math as _m
+    a0_ch0_6 = C_OBSERVED * H0_OBSERVED_LOCAL / 6.0          # 1.134e-10
+    a0_ch0_2pi = C_OBSERVED * H0_OBSERVED_LOCAL / (2 * _m.pi) # 1.083e-10
+    a0_mond = 1.2e-10
+    a0_resid = abs(a0_ch0_6 - a0_mond) / a0_mond * 100.0     # 5.48%
+    k_ua = F_TRZ ** 4                                        # 1e-4 EXACT
+    abell_resid = (36 - 33) / 33 * 100.0                    # +9.09%
+    bulk_uqff = (248 - 240) / 248 * 100.0                   # 3.23%
+    bulk_mond = (320 - 248) / 248 * 100.0                   # +29.03%
+    return {
+        'value': {
+            'domain': '2.8 (UQFF vs MOND, thread 7514fe)',
+            'mond_recovered_at_galactic': True,
+            'a0_mond_target': a0_mond,
+            'a0_ch0_over_6': a0_ch0_6,                       # 1.134e-10
+            'a0_ch0_over_2pi': a0_ch0_2pi,                   # 1.083e-10
+            'a0_residual_pct': a0_resid,                     # 5.48%
+            'k_UA': k_ua,                                    # 1e-4
+            'k_UA_is_F_TRZ4': abs(k_ua - 1e-4) < 1e-12,      # EXACT
+            'a0_emergent_not_fundamental': True,
+            'btfr': 'M_b ~ v_flat^4 (MOND & UQFF identical)',
+            'bullet_mass_ratio': 2.0,                        # M_lensing/M_b
+            'chi2_per_N': {'UQFF': 1.5, 'MOND': '3-10', 'CDM': '1.2-2.0'},
+            'icm_buoyancy_mass_gain_pct': 40.0,
+            'abell2744_images': {'predicted': 36, 'observed': 33},
+            'abell2744_residual_pct': abell_resid,           # +9.09%
+            'bulk_flow_uqff_resid_pct': bulk_uqff,           # 3.23%
+            'bulk_flow_mond_resid_pct': bulk_mond,           # +29.03%
+            'uqff_rank': '1st or tied-1st on all 9 tests',
+        },
+        'formula': 'a0 = c*H0/6; k_UA = F_TRZ^4; M_eff = M_vis + dM_UBii,vir + dM_UBii,ps',
+        'source': 'PAPER_210',
+        'residual_pct': a0_resid,
         'status': 'OPEN_RULING',
     }

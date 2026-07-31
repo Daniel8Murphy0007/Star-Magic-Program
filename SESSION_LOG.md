@@ -2382,3 +2382,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1376/0. Registry 479 rows / 1024 edges / 213 ledgers. Campaign: 213/2,255 (11 ✓, 202 ⚠). Next: PAPER_210.
 
 ---
+
+## 2026-07-31 — v0.214.0 — BAND 1: PAPER_210
+
+- PAPER_210 wired (⚠ Q-206): UQFF vs MOND comparison. MOND a0 ~ 1.2e-10 emergent as a0 = c*H0/6 = 1.134e-10 (H0=70 registry, 5.48%); coupling k_UA = [UA] = F_TRZ^4 = 1e-4 EXACT (registry identity). MOND fails clusters factor 2-5; UQFF F_UBii handles them (chi2/N 1.5 vs MOND 3-10). Abell 2744 lensing +9.09%, bulk flow UQFF 3.23% vs MOND +29%. UQFF 1st on 9 tests. Appendix drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+- Q-206: emergent-a0 route + k_UA = F_TRZ^4 confirmation.
+- Gate 1382/0. Registry 481 rows / 1029 edges / 214 ledgers. Campaign: 214/2,255 (11 ✓, 203 ⚠). Next: PAPER_211.
+
+---

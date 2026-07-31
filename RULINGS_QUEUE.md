@@ -9,6 +9,19 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-206 — PAPER_210 — emergent-a0 route and k_UA identity
+- **Question:** PAPER_210 sec 4 gives MOND's a0 ~ 1.2e-10 m/s^2 as emergent.
+  Two dimensional routes reproduce it near-exactly: a0 = c*H0/6 = 1.134e-10
+  (5.48% vs 1.2e-10) and Milgrom's a0 = c*H0/(2pi) = 1.083e-10. Which is the
+  canonical UQFF route? Separately, the paper's coupling k_UA = [UA] = 1e-4
+  matches F_TRZ^4 = 1e-4 EXACTLY (registry identity) — confirm k_UA = F_TRZ^4
+  is intended, not a numerical coincidence. The naive a0 = sqrt(k_UA*rho_UA*G)
+  = 2.6e-15 is off by ~5e4 and the paper rescales via r_trans^2/M_galaxy at
+  r_trans ~ 5 kpc; is r_trans a free parameter or primitive-composed?
+- **Best-candidate wired:** a0 = c*H0/6 stored as headline (residual 5.48%),
+  cH0/2pi noted; k_UA = F_TRZ^4 pinned in gate as EXACT.
+- **Daniel's ruling:** (pending)
+
 ### Q-205 — PAPER_209 — cluster mass-function tail exponent 0.3 fork
 - **Question:** PAPER_209 sec 4 gives the massive-cluster mass-function
   correction n_UQFF(>M) = n_PS(>M)*(1 + C_UQFF*(M/1e15 M_sun)^0.3). Is the

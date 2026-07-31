@@ -1023,3 +1023,8 @@ primitive,KAPPA_PER_DAY,observable,running_vacuum_de_discriminator,kappa^2 facto
 primitive,SSQ,observable,running_vacuum_de_discriminator,SSq^2 factor
 observable,lcdm_uqff_superset,paper,PAPER_209,29-benchmark comparison
 observable,running_vacuum_de_discriminator,paper,PAPER_209,running-vacuum EOS
+primitive,F_TRZ,observable,mond_a0_emergent,k_UA = F_TRZ^4
+primitive,H0_OBSERVED_LOCAL,observable,mond_a0_emergent,a0 = c*H0/6
+primitive,C_OBSERVED,observable,mond_a0_emergent,a0 = c*H0/6
+observable,mond_a0_emergent,paper,PAPER_210,emergent a0
+observable,mond_cluster_lensing_discriminator,paper,PAPER_210,cluster/lensing tests

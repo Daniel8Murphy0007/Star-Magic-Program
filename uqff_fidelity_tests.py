@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.213.0", "uqff_calculator.VERSION = 0.213.0")
+assert_that(C.VERSION == "0.214.0", "uqff_calculator.VERSION = 0.214.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3022,6 +3022,19 @@ assert_that(abs(_r209['cluster_score_gain_pct'] - 3.7037037037037033) < 1e-9,
 assert_that(_r209['cmb_resonance_multipoles'] == [6, 10, 22],
             "PAPER_209: 26-layer resonance predicts CMB excess at l = 6, 10, 22")
 assert_that(C.wired_count() >= 213, "wired_count >= 213")
+
+_r210 = C.calc('PAPER_210')['value']
+assert_that(_r210['k_UA_is_F_TRZ4'] and abs(_r210['k_UA'] - 1e-4) < 1e-12,
+            "PAPER_210: k_UA = [UA] = F_TRZ^4 = 1e-4 EXACT (registry identity)")
+assert_that(abs(_r210['a0_ch0_over_6'] - 1.1342147994333332e-10) < 1e-22,
+            "PAPER_210: MOND a0 recovered as c*H0/6 = 1.134e-10 (H0 = A_5+SO_5 registry)")
+assert_that(abs(_r210['a0_residual_pct'] - 5.482100047222236) < 1e-9,
+            "PAPER_210: a0 c*H0/6 vs 1.2e-10 MOND target = 5.48%")
+assert_that(abs(_r210['abell2744_residual_pct'] - 9.090909090909092) < 1e-9,
+            "PAPER_210: Abell 2744 strong lensing 36 pred vs 33 obs = +9.09%")
+assert_that(abs(_r210['bulk_flow_uqff_resid_pct'] - 3.225806451612903) < 1e-9,
+            "PAPER_210: bulk flow UQFF 240 vs CosmicFlows-4 248 = 3.23% (MOND +29%)")
+assert_that(C.wired_count() >= 214, "wired_count >= 214")
 
 
 # =============================================================================
