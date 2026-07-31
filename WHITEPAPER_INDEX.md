@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 180 (11 ✓, 169 ⚠ OPEN_RULING)
+- **Wired:** 181 (11 ✓, 170 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2075
+- **Not yet touched:** 2074
 
 ---
 
@@ -1039,7 +1039,7 @@
 | ⬜ | PAPER_1777 | Z REION ALT 7 70 |
 | ⬜ | PAPER_1778 | R AA QGP 0 208 |
 | ⬜ | PAPER_1779 | E ANKLE 3 62E18 EV |
-| ⬜ | PAPER_177 | FluidSolver NavierStokes UQFF Coupling |
+| ⚠ | PAPER_177 | FluidSolver NavierStokes UQFF Coupling |
 | ⬜ | PAPER_1780 | CNUB TEMP 1 954 K |
 | ⬜ | PAPER_1781 | SZILARD W KT LN 2 |
 | ⬜ | PAPER_1782 | SOLAR NU E 1 3 ALT |

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.179.0"
+VERSION = "0.180.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9366,5 +9366,56 @@ def _paper_176(dataset):
         'formula': 'E_react = SCm_density*v^2/rho_A*e^-kt; kappa =? -ln(L/L0)/t_age',
         'source': 'PAPER_176',
         'residual_pct': abs(2.55e20 / 3.086e19 - 8.3) / 8.3 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_177')
+def _paper_177(dataset):
+    """FluidSolver NS + UQFF coupling - quasar jets (S48, sec 2.4-I).
+
+    Stam (1999) stable-fluids solver: N = 32, dt = 0.1,
+    visc = 1e-4, 20 Gauss-Seidel iterations, no-slip
+    walls, semi-Lagrangian advection; UQFF enters as the
+    spatially UNIFORM body force ux += dt*g_res (curl-
+    free - CONSISTENT with 154/161 for the 3rd time);
+    jet injection uy += 10 N/m^2 across the central 50%%
+    row (SCm-expulsion ignition per 176); MHD
+    interpretation table; runs per-system from
+    populate_simulation_entities (168).
+    THIRD CODE-TRUTH VOTE (Q-173a, annotates Q-143/168):
+    with the code-truth g_res = 1.773e-9, dt*g = 1.77e-10
+    per step - numerically sane; with the TABLE value
+    1.655e45, dt*g = 1.7e44 m/s per step on a unit grid -
+    absurd. The SIMULATION only functions with the
+    code-truth value: a third independent confirmation
+    that 1.773e-9 is operational and the tables are not.
+    DRIVE DOMINANCE (Q-173b): jet force 10 vs UQFF
+    contribution 1.77e-10 - ratio 5.6e10. At code-truth
+    values the visualized jet dynamics come from
+    add_jet_force, with the UQFF term decorative.
+    Intended (UQFF as trigger, fluid as response), or
+    should g_res scale up? beta_i = 0.61 header drift
+    (3rd consecutive; -> BETA_I per PAPER_1203).
+    Diffuse coefficient a = dt*visc*N^2 = 0.01024
+    (denominator 1.041 - stable).
+    """
+    dt, visc, n = 0.1, 1e-4, 32
+    return {
+        'value': {
+            'domain': '2.4-I (fluid solver, thread 381a8fe7)',
+            'solver': 'Stam stable fluids: N=32, dt=0.1, visc=1e-4, 20 GS iters',
+            'body_force_step_codetruth': dt * 1.773e-9,      # 1.77e-10 sane
+            'body_force_step_table': dt * 1.655e45,          # absurd
+            'third_code_truth_vote': 'simulation numerically sane ONLY with 1.773e-9',
+            'jet_over_uqff': 10 / (dt * 1.773e-9),           # 5.6e10
+            'curl_free_consistency': 'uniform body force - 154/161 consistent (3rd)',
+            'diffuse_a': dt * visc * n**2,                   # 0.01024
+            'force_jet': 10.0,
+            'beta_drift': '0.61 header (3rd consecutive) -> BETA_I per PAPER_1203',
+        },
+        'formula': 'NS Stam solver + ux += dt*g_res; jet uy += 10 at midrow',
+        'source': 'PAPER_177',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

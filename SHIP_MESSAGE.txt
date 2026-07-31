@@ -1,38 +1,33 @@
-v0.179.0 BAND 1: PAPER_176 wired - SCM MANIFOLD REFERENCE
+v0.180.0 BAND 1: PAPER_177 wired - FLUIDSOLVER COUPLING
 
-PAPER_176 SCm Discovery, Properties, and Cosmic Role
-(OPEN_RULING Q-172) - Session 48, thread 381a8fe7, sec
-2.4-H:
-  The SCm reference paper: Qs = 0 (no quantum
-  signature), bound within every atom and star,
-  superconducting, v_SCm = 0.99c (consistent with 161);
-  drives E_react, the DPM moment, the string field, the
-  heliosphere, and the quasar-ejection mechanism
-  (Ug-retention failure -> unbound SCm ignites against
-  free UA -> jet), feeding 177's fluid solver. The
-  "dark electron" analogy comes with a falsifiable
-  detection pathway (anomalous orbital precession).
+PAPER_177 FluidSolver Navier-Stokes + UQFF Coupling
+(OPEN_RULING Q-173) - Session 48, thread 381a8fe7, sec
+2.4-I:
+  Textbook Stam (1999) stable-fluids solver: N = 32,
+  dt = 0.1, visc = 1e-4, 20 Gauss-Seidel iterations,
+  no-slip walls, semi-Lagrangian advection, double
+  projection. UQFF enters as the spatially UNIFORM body
+  force ux += dt*g_res - curl-free, consistent with
+  154/161 for the THIRD time. Jet injection (10 N/m^2,
+  central row) implements 176's SCm-expulsion ignition;
+  full MHD interpretation table; runs per-system via
+  168's entity population.
 
-  REAL ANCHORS EXACT: Earth Pcore = 3.6e11 Pa is the
-  actual seismological central pressure; dg = 2.55e20 m
-  = 8.26 kpc matches the real Sun-GC distance.
+  THIRD CODE-TRUTH VOTE: with g_res = 1.773e-9 the body
+  force is 1.77e-10 per step - numerically sane. With
+  the TABLE value 1.655e45 it would be 1.7e44 m/s per
+  step - the simulation could not run. The working
+  fluid sim is the third independent witness (after
+  172's unit test and 174's decomposition) that
+  1.773e-9 is the operational resonance value.
 
-  DOMINANCE REFRAMED: the 1e3 SCm_contrib dominating
-  B_s is stated as INTENTIONAL physics ("SCm is the
-  primary source of the stellar DPM moment") - a
-  candidate resolution for Q-158c/Q-167c, with the bare
-  1e3 magnitude still needing derivation.
+  PINNED FOR RULING: drive dominance - force_jet = 10
+  vs UQFF contribution 1.77e-10 (5.6e10 ratio); at
+  code-truth scale the jet dynamics come from
+  add_jet_force with the UQFF term decorative. Intended
+  as trigger-plus-response, or rescale? beta_i = 0.61
+  header drift (3rd consecutive, auto-corrected).
 
-  PINNED FOR RULING: (a) the corpus's FIRST kappa
-  derivation attempt (faint-young-Sun -ln(0.7)/t_age)
-  gives 2.12e-13/day but prints "0.000212/day" - a 1e9
-  slip with EXACT mantissa; canonical 5e-4 is 2.4e9x
-  the true chain - the derivation does not support it;
-  (b) rho_A = 1e-23 kg/m^3 joins the rho_A fork family;
-  (c) cross-repo doctrine: astronomical SCm unbinding
-  here vs the predecessor's PAPER_2153 bound-state/
-  collider-only ruling - reconciliation needed.
-
-Q-172 queued. Gate 1,192 assertions 0 failures. Registry
-429 rows / 920 edges / 180 ledgers (measured). Wired
-180/2,255 (11 clean, 169 OPEN_RULING). Next: PAPER_177.
+Q-173 queued. Gate 1,198 assertions 0 failures. Registry
+431 rows / 925 edges / 181 ledgers (measured). Wired
+181/2,255 (11 clean, 170 OPEN_RULING). Next: PAPER_178.

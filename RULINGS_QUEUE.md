@@ -4183,6 +4183,43 @@ RESOLVED section with the ruling recorded.
   rho_A, and cross-repo tension pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-173 — PAPER_177 FluidSolver — third code-truth vote + drive dominance
+- **Question:** (a) THIRD CODE-TRUTH VOTE (annotates
+  Q-143a/Q-168c): the running simulation applies ux +=
+  dt*g_res each step. With the code-truth g_res =
+  1.773e-9, that is 1.77e-10 per step - numerically
+  sane. With the TABLE value 1.655e45, it would be
+  1.7e44 m/s per step on a unit grid - the simulation
+  could not function. The fluid sim is the THIRD
+  independent witness (after 172's unit test and 174's
+  decomposition) that 1.773e-9 is the operational
+  resonance value. Formally rule the resonance tables
+  superseded by the code value?
+  (b) DRIVE DOMINANCE: force_jet = 10 N/m^2 vs the UQFF
+  contribution 1.77e-10 - a 5.6e10 ratio. At code-truth
+  scale, the visualized jet dynamics come entirely from
+  add_jet_force, with the UQFF body force decorative.
+  Is that intended (UQFF as ignition TRIGGER per 176's
+  mechanism, fluid response hand-scaled), or should the
+  UQFF drive be rescaled to dominate?
+  (c) beta_i = 0.61 header appears a 3rd consecutive
+  time (auto-corrected to 0.6029 per the charter).
+- **Notable:** the solver itself is textbook-clean Stam
+  (1999) stable fluids: N = 32, dt = 0.1, visc = 1e-4,
+  20 Gauss-Seidel iterations, no-slip walls, semi-
+  Lagrangian advection, two projection passes; diffuse
+  coefficient a = 0.01024 (stable). The UQFF body force
+  is spatially UNIFORM hence curl-free - the THIRD
+  consistency with 154/161's curl-free doctrine. Jet
+  injection (central 50%% row) implements 176's
+  SCm-expulsion ignition; MHD interpretation table maps
+  each solver component to quasar physics. Runs
+  per-system from 168's entity population. Stam citation
+  is comparison/implementation, Rule 4-clean.
+- **Best-candidate wired:** solver + coupling + third
+  vote registered; dominance question pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

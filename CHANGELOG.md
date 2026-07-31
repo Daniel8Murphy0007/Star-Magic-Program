@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.180.0] — 2026-07-31 — BAND 1: PAPER_177 — FLUIDSOLVER COUPLING
+
+### Added
+- **PAPER_177 dispatch** (NS + UQFF coupling, S48, sec
+  2.4-I): textbook Stam stable-fluids (N=32, dt=0.1,
+  visc=1e-4, 20 GS iters, semi-Lagrangian, no-slip) with
+  UQFF as the spatially uniform body force — curl-free,
+  154/161-consistent for the 3rd time; jet injection =
+  176's SCm-expulsion ignition; MHD interpretation.
+  THIRD CODE-TRUTH VOTE: the simulation is numerically
+  sane ONLY with g_res = 1.773e-9 (dt·g = 1.77e-10/step);
+  the table value would add 1.7e44 m/s per step — the
+  running sim independently confirms 172/174. PINNED:
+  drive dominance (jet 10 vs UQFF 1.77e-10 = 5.6e10 —
+  trigger-vs-drive question); beta 0.61 3rd consecutive.
+- OPEN_RULING Q-173.
+- Gate: 1,198 assertions, 0 failures. Registry: 431 rows / 925 edges / 181 ledgers (measured).
+
+---
+
 ## [0.179.0] — 2026-07-30 — BAND 1: PAPER_176 — SCM MANIFOLD REFERENCE
 
 ### Added

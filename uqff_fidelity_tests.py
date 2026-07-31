@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.179.0", "uqff_calculator.VERSION = 0.179.0")
+assert_that(C.VERSION == "0.180.0", "uqff_calculator.VERSION = 0.180.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2604,6 +2604,19 @@ assert_that('intentional' in _r176['dominance_reframed'],
 assert_that(_r176['rho_a_new'] == 1e-23,
             "PAPER_176: rho_A = 1e-23 new ambient-Aether fork value (Q-172b)")
 assert_that(C.wired_count() >= 180, "wired_count >= 180")
+
+_r177 = C.calc('PAPER_177')['value']
+assert_that(abs(_r177['body_force_step_codetruth'] - 1.773e-10) < 1e-13,
+            "PAPER_177: dt*g_res(code-truth) = 1.77e-10 per step - numerically sane")
+assert_that(_r177['body_force_step_table'] > 1e43,
+            "PAPER_177: table value would add 1.7e44 m/s per step - absurd; 3rd code-truth vote (Q-173a)")
+assert_that(5e10 < _r177['jet_over_uqff'] < 6e10,
+            "PAPER_177: jet force dominates UQFF drive by 5.6e10 (Q-173b)")
+assert_that(abs(_r177['diffuse_a'] - 0.01024) < 1e-6,
+            "PAPER_177: diffuse coefficient a = dt*visc*N^2 = 0.01024 (stable)")
+assert_that('154/161' in _r177['curl_free_consistency'],
+            "PAPER_177: uniform body force curl-free - 3rd consistency with 154/161")
+assert_that(C.wired_count() >= 181, "wired_count >= 181")
 
 # =============================================================================
 # REPORT

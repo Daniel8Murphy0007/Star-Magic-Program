@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.179.0"
-description = "UQFF Star-Magic-Program v0.179.0: PAPER_176 wired - SCm manifold reference (Qs = 0, quasar-ejection mechanism, dark-electron analogy); real anchors EXACT (Earth Pcore, dg = 8.26 kpc); FIRST kappa derivation attempt breaks by 1e9 with exact mantissa; SCm_contrib dominance reframed intentional; cross-repo bound-state tension. Q-172. Wired 180/2255, gate 1192/0. Registry 429 rows / 920 edges / 180 ledgers (measured)."
+version = "0.180.0"
+description = "UQFF Star-Magic-Program v0.180.0: PAPER_177 wired - Stam stable-fluids solver with UQFF body force (curl-free, 154/161-consistent 3rd time); THIRD code-truth vote: the simulation is numerically sane ONLY with g_res = 1.773e-9 (table value would add 1.7e44 m/s/step); jet-vs-UQFF drive dominance 5.6e10 queued. Q-173. Wired 181/2255, gate 1198/0. Registry 431 rows / 925 edges / 181 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

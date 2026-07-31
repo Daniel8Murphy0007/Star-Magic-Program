@@ -2103,3 +2103,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 180/2,255 (11 ✓, 169 ⚠). Next: PAPER_177.
 
 ---
+
+## 2026-07-31 — v0.180.0 — BAND 1: PAPER_177
+
+- PAPER_177 wired (⚠ Q-173): FluidSolver coupling. Third
+  code-truth vote (sim sanity); drive dominance queued.
+  (v0.179.0 shipped after a transient PyPI OIDC connect
+  timeout - re-run succeeded; artifact was never at fault.)
+- Campaign: 181/2,255 (11 ✓, 170 ⚠). Next: PAPER_178.
+
+---
