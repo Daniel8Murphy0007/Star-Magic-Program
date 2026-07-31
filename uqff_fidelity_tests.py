@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.217.0", "uqff_calculator.VERSION = 0.217.0")
+assert_that(C.VERSION == "0.218.0", "uqff_calculator.VERSION = 0.218.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3074,6 +3074,19 @@ assert_that(abs(_r213['dd_over_d_pct'] - 0.0021502139462979226) < 1e-12,
 assert_that(_r213['n_magic_neutron'] == [2, 8, 20, 28, 50, 82, 126] and _r213['h_res_sub_equations'] == 7,
             "PAPER_213: H_res 7 sub-equations; neutron magic {2,8,20,28,50,82,126} (proton 7th=114, Q-209a)")
 assert_that(C.wired_count() >= 217, "wired_count >= 217")
+
+_r214 = C.calc('PAPER_214')['value']
+assert_that(_r214['strong_shock_compression_ratio'] == 4.0,
+            "PAPER_214: strong-shock rho2/rho1 = (gamma+1)/(gamma-1) = 4 EXACT (gamma=5/3)")
+assert_that(_r214['cycle2_raw_terms'] == 456 and abs(_r214['cycle2_compression_pct'] - 8.333333333333332) < 1e-9,
+            "PAPER_214: Compression Cycle 2 = 38 F_env / (38*12=456 raw) = 8.33%")
+assert_that(abs(_r214['mhd_improvement_over_pure_pct'] - 0.13) < 1e-6,
+            "PAPER_214: UQFF non-ideal MHD +0.13% over pure MHD (99.87% vs 99.74%)")
+assert_that(_r214['mhd_equation_types'] == 6 and len(_r214['mhd_types']) == 6,
+            "PAPER_214: 6 MHD cluster equation types enumerated")
+assert_that(_r214['benchmark_f_env']['perseus'] == 0.85 and _r214['error_metrics']['chandra'] == 99.98,
+            "PAPER_214: MHD benchmark F_env (Perseus 0.85); Chandra 99.98% alignment")
+assert_that(C.wired_count() >= 218, "wired_count >= 218")
 
 
 # =============================================================================

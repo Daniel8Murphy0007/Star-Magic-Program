@@ -1,33 +1,31 @@
-v0.217.0 BAND 1: PAPER_213 wired - H_res SUITE + D_universe
+v0.218.0 BAND 1: PAPER_214 wired - MHD CLUSTERS/JETS/ACCRETION
 
-PAPER_213 (H_res Suite and D_universe Master Equations, S50) wired as
-one dispatch (Q-209, OPEN_RULING).
+PAPER_214 (MHD Clusters, Jets, and Accretion in the UQFF Framework,
+S50) wired as one dispatch (Q-210, OPEN_RULING).
 
 Physics:
-- H_res: a 7-sub-equation nuclear/EM resonance suite coupling nuclear
-  magic numbers to gravitational buoyancy.
-  * A_res(SGR1745 magnetar B~1e15 T) = mu_B*B/E_bind =
-    (9.274e-24*1e15)/8.79e6 = 1.055e-15 (paper 1.06e-15).
-  * omega_res(56Fe ground state) ~ 1.7e27 rad/s -> f = w/2pi =
-    2.706e26 Hz (paper 2.7e26 Hz).
-  * [SCm] = tanh(T_cc/T)*(1-(B/B_c2)^2): tanh(1) = 0.762; above B_c2
-    (= B_crit QED field) the factor goes negative -> UQFF predicts
-    reversed buoyancy in magnetars.
-  * S_shell (doubly-magic 208Pb, Z=82 N=126): E_pairing = 12/sqrt(208)
-    = 0.832 MeV extra stability. All verified in Python.
-- D_universe: LCDM/Planck-2018 baseline 93.014 Gly; UQFF corrections
-  +0.002 (quantum) -0.001 (LQC bounce) +0.001 (Lambda running) ->
-  93.016 Gly; dD/D = 0.00215% (paper 0.002%, unobservable). Comoving
-  radius to last scattering D_c,rec ~ 14.0 Gpc, so diameter
-  2*D_c,rec = 28 Gpc ~ 91-93 Gly.
+- Six MHD cluster equation types feed the UQFF master as F_env,cluster
+  contributions: (1) jet termination shock, (2) angular-momentum
+  transport, (3) disk MHD / Alfven velocity, (4) Rankine-Hugoniot jump
+  conditions, (5) Press-Schechter mass function (B-modified), (6) star-
+  formation-rate coupling.
+- Strong-shock compression ratio rho2/rho1 = (gamma+1)/(gamma-1) = 4
+  EXACT for gamma = 5/3 (M_s >> 1); post-shock v2 = v1/4. Verified.
+- Compression Cycle 2: 38 systems x 12 terms = 456 raw terms -> 38
+  F_env(t) functions = 8.33% of original (net 85% unification); drives
+  Cycle 3 (99 systems, PAPER_211).
+- Error metrics after Cycle 2: JWST 99.87%, Chandra 99.98%, ALMA
+  99.94%; UQFF non-ideal MHD gives +0.13% over pure MHD (99.87% vs
+  99.74%).
+- 6-system MHD benchmark F_env: Perseus 0.85, Westerlund-2 0.80,
+  M87 0.95, SGR A* 0.72, Cassiopeia A 0.91, ESO 137-001 0.68.
 
-Q-209: (a) the H_res proton-magic list ends in 114 (island-of-
-stability) rather than the UQFF-canonical 126; neutron magic
-{2,8,20,28,50,82,126} unchanged. (b) The paper's D_universe =
-2*(1+z_rec)*D_c,rec formula carries a spurious (1+z_rec) factor
-(2*1101*14 Gpc = 30828 Gpc is wrong); correct is 2*D_c,rec ~ 28 Gpc.
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected
-per charter, not in wired physics.
+Q-210: the Type-3 Alfven worked example is internally inconsistent -
+it writes rho_ICM = 1e-26 kg/m^3 but uses 1e-27 in the sqrt, and
+labels 8.5e7 m/s as "85 km/s" (a 1000x unit error; 8.46e7 m/s =
+84,628 km/s). The benchmark-table v_A = 85 km/s is the physically
+sensible value and is what was wired. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1400/0. Registry 487 rows / 1038 edges / 217 ledgers (measured).
-Campaign: 217/2,255. Next: PAPER_214.
+Gate: 1406/0. Registry 489 rows / 1041 edges / 218 ledgers (measured).
+Campaign: 218/2,255. Next: PAPER_215.

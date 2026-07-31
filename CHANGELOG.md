@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.218.0] — 2026-07-31 — BAND 1: PAPER_214 — MHD CLUSTERS/JETS/ACCRETION
+
+### Added
+- **PAPER_214 wired** (⚠ Q-210): MHD clusters, jets, and accretion framework +
+  Compression Cycle 2. Six MHD cluster equation types feed F_env,cluster: jet
+  termination shock, angular-momentum transport, disk MHD/Alfvén, Rankine-Hugoniot
+  jump conditions, B-modified Press-Schechter, and SFR coupling. Strong-shock
+  compression `ρ2/ρ1 = (γ+1)/(γ-1) = 4` EXACT for γ=5/3 (v2 = v1/4). Compression
+  Cycle 2: 38 systems × 12 = 456 raw terms → 38 F_env(t) functions = 8.33% of
+  original (net 85% unification), driving Cycle 3 (PAPER_211). Error metrics
+  JWST 99.87%, Chandra 99.98%, ALMA 99.94%; UQFF non-ideal MHD gives +0.13% over
+  pure MHD (vs 99.74%). 6-system benchmark F_env: Perseus 0.85, Westerlund-2 0.80,
+  M87 0.95, SGR A* 0.72, Cas A 0.91, ESO 137-001 0.68.
+- Q-210: Type-3 Alfvén worked example has a 1000× unit error (8.5e7 m/s labeled
+  "85 km/s") and an internal ρ inconsistency (1e-26 vs 1e-27); the benchmark-table
+  v_A = 85 km/s is the sensible value and was wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1400 → 1406 (+6). Registry 489 rows / 1041 edges / 218 ledgers.
+
+---
+
 ## [0.217.0] — 2026-07-31 — BAND 1: PAPER_213 — H_res SUITE + D_universe
 
 ### Added

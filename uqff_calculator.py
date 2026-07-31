@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.217.0"
+VERSION = "0.218.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11262,5 +11262,67 @@ def _paper_213(dataset):
         'formula': 'A_res = mu_B*B/E_bind; S_shell = 12/sqrt(A); D_u = 2*D_c,rec*(1+corrections)',
         'source': 'PAPER_213',
         'residual_pct': dd_over_d_pct,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_214')
+def _paper_214(dataset):
+    """MHD clusters/jets/accretion, Compression Cycle 2 (S50, thread 7514fe).
+
+    Six MHD cluster equation types feed the UQFF master as F_env,cluster
+    contributions and drive Compression Cycle 2 (38 systems). Wired
+    observables:
+    * Six MHD types: (1) jet termination shock, (2) angular-momentum
+      transport, (3) disk MHD / Alfven velocity, (4) Rankine-Hugoniot
+      jump conditions, (5) Press-Schechter mass function (B-modified),
+      (6) star-formation-rate coupling.
+    * Strong-shock compression ratio rho2/rho1 = (gamma+1)/(gamma-1) =
+      4 EXACT for gamma = 5/3 (M_s >> 1); post-shock v2 = v1/4,
+      T2 = 3*m_p*v1^2/(16*k_B).
+    * Compression Cycle 2: 38 systems x 12 terms = 456 raw terms -> 38
+      F_env(t) functions = 8.33% of original (net "85% unification").
+    * Error metrics after Cycle 2: JWST 99.87%, Chandra 99.98%,
+      ALMA 99.94%; UQFF non-ideal-MHD gives +0.13% over pure MHD
+      (99.87% vs 99.74%).
+    * 6-system MHD benchmark F_env values: Perseus 0.85, Westerlund-2
+      0.80, M87 0.95, SGR A* 0.72, Cassiopeia A 0.91, ESO 137-001 0.68.
+    Q-210: the Type-3 Alfven worked example is internally inconsistent
+    - it writes rho_ICM = 1e-26 kg/m^3 but uses 1e-27 inside the sqrt,
+      and labels the result 8.5e7 m/s as "85 km/s" (a 1000x unit error;
+      8.46e7 m/s = 84,628 km/s). The benchmark-table v_A = 85 km/s is
+      the physically sensible value and is what was wired.
+    Appendix drift auto-corrected per charter (VDS 1.894 -> F_TRZ=0.1;
+    kg/m^3 -> J/m^3; beta_i -> BETA_I).
+    """
+    gamma = 5.0 / 3.0
+    shock_ratio = (gamma + 1) / (gamma - 1)               # 4.0 EXACT
+    cycle2_raw = 38 * 12                                   # 456
+    cycle2_pct = 38 / cycle2_raw * 100.0                  # 8.33%
+    mhd_improvement_pct = 99.87 - 99.74                   # 0.13
+    return {
+        'value': {
+            'domain': '2.12 (MHD clusters/jets/accretion, Cycle 2)',
+            'mhd_equation_types': 6,
+            'mhd_types': ['jet_termination_shock', 'angular_momentum_transport',
+                          'disk_mhd_alfven', 'rankine_hugoniot', 'press_schechter_mhd',
+                          'sfr_coupling'],
+            'strong_shock_gamma': gamma,
+            'strong_shock_compression_ratio': shock_ratio,   # 4.0 EXACT
+            'post_shock_velocity_factor': 0.25,              # v2 = v1/4
+            'cycle2_systems': 38,
+            'cycle2_raw_terms': cycle2_raw,                  # 456
+            'cycle2_compression_pct': cycle2_pct,            # 8.33%
+            'error_metrics': {'jwst': 99.87, 'chandra': 99.98, 'alma': 99.94},
+            'mhd_improvement_over_pure_pct': mhd_improvement_pct,  # 0.13
+            'benchmark_f_env': {'perseus': 0.85, 'westerlund2': 0.80, 'm87': 0.95,
+                                'sgr_a_star': 0.72, 'cassiopeia_a': 0.91, 'eso137_001': 0.68},
+            'benchmark_v_a_km_s': {'perseus': 85, 'westerlund2': 300, 'm87': 70,
+                                   'sgr_a_star': 500, 'cassiopeia_a': 900, 'eso137_001': 20},
+            'alfven_worked_example_fork': 'Type-3 v_A 8.5e7 m/s mislabeled 85 km/s (1000x), rho 1e-26 vs 1e-27 (Q-210)',
+        },
+        'formula': 'rho2/rho1 = (gamma+1)/(gamma-1) = 4; cycle2 = 38/(38*12) = 8.33%',
+        'source': 'PAPER_214',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

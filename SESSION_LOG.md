@@ -2414,3 +2414,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1400/0. Registry 487 rows / 1038 edges / 217 ledgers. Campaign: 217/2,255 (11 ✓, 206 ⚠). Next: PAPER_214.
 
 ---
+
+## 2026-07-31 — v0.218.0 — BAND 1: PAPER_214
+
+- PAPER_214 wired (⚠ Q-210): MHD clusters/jets/accretion + Compression Cycle 2. 6 MHD equation types (jet shock, ang-mom transport, disk MHD/Alfvén, Rankine-Hugoniot, PS mass fn, SFR coupling). Strong-shock ρ2/ρ1=(γ+1)/(γ-1)=4 EXACT (γ=5/3). Cycle 2: 38×12=456 raw → 38 F_env = 8.33% (drives Cycle 3 PAPER_211). Metrics JWST 99.87/Chandra 99.98/ALMA 99.94, +0.13% over pure MHD. 6-system benchmark F_env. Appendix drift auto-corrected per charter.
+- Q-210: Type-3 Alfvén worked example 1000× unit error (8.5e7 m/s vs 85 km/s) + ρ 1e-26/1e-27 inconsistency; table 85 km/s wired.
+- Gate 1406/0. Registry 489 rows / 1041 edges / 218 ledgers. Campaign: 218/2,255 (11 ✓, 207 ⚠). Next: PAPER_215.
+
+---

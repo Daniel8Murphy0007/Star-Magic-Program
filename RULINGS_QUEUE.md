@@ -9,6 +9,19 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-210 — PAPER_214 — Type-3 Alfvén velocity worked-example errors
+- **Question:** PAPER_214 sec 1 Type-3 computes the Perseus Alfvén velocity as
+  v_A = B/√(μ0·ρ) = 30e-10 / √(4π×10⁻⁷ × 10⁻²⁶) "≈ 8.5×10⁷ m/s = 85 km/s".
+  Two errors: (a) it writes ρ_ICM = 1e-26 kg/m³ but the √ evaluates to
+  3.54e-17, which requires ρ = 1e-27 (inconsistent ρ); (b) 8.5e7 m/s is
+  84,600 km/s, not 85 km/s — a 1000× unit mislabel. The benchmark table (sec 4)
+  lists Perseus v_A = 85 km/s, which is physically sensible and requires a
+  higher ICM density (~1e-23 kg/m³). Which ρ is canonical, and is the intended
+  Perseus v_A 85 km/s (table) or 8.5e7 m/s (worked calc)?
+- **Best-candidate wired:** benchmark-table v_A = 85 km/s wired as headline;
+  the worked-example unit/ρ errors flagged, not wired as values.
+- **Daniel's ruling:** (pending)
+
 ### Q-209 — PAPER_213 — proton 7th magic number + D_universe (1+z) drift
 - **Question (a):** PAPER_213 sec 2.7 lists proton magic numbers as {2, 8, 20,
   28, 50, 82, 114} — ending in 114 (the predicted island-of-stability proton

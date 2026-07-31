@@ -1037,3 +1037,6 @@ observable,cia_h2o_h2_refit,observable,variable_calibration_status,PAPER_208 CIA
 observable,h_res_resonance_suite,paper,PAPER_213,H_res 7 sub-eqs
 observable,d_universe_master_equation,paper,PAPER_213,D_universe
 primitive,B_CRIT,observable,h_res_resonance_suite,B_c2 QED critical field
+observable,mhd_cluster_six_types,paper,PAPER_214,6 MHD types
+observable,mhd_compression_cycle2,paper,PAPER_214,Cycle 2
+observable,mhd_compression_cycle2,observable,framework_compression_cycle3,Cycle 2 -> 3 PAPER_211
