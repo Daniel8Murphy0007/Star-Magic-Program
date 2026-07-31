@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.169.0"
+VERSION = "0.170.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8845,5 +8845,58 @@ def _paper_166(dataset):
         'formula': 'wind_mod = 1 + epsilon_sw*rho_sw(r); Ubi *= H_SCm * wind_mod',
         'source': 'PAPER_166',
         'residual_pct': abs(rho0 - 8.35e-21) / 8.35e-21 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_167')
+def _paper_167(dataset):
+    """GW231123 225 Msun merger + YM mass-gap bridge (S47, sec 2.3).
+
+    Real O4 event (Nov 2023): ~130+~95 = 225 Msun total,
+    remnant ~213, dM_GW = 12 SELF-CONSISTENT; both
+    components in/above the 50-130 PISN gap. UQFF model:
+    Ug4*(1+f_feedback) dominance for extreme mass +
+    g_pert with M_DM/M = 5, drho/rho = 0.5 (1350 Msun
+    effective - arithmetic EXACT). Osc_term per 164's
+    variable law.
+    F_U ADDITIVITY (noted): BH1 5e51 + BH2 3e51 = remnant
+    8e51 EXACT - F_U treated additive across merger.
+    Comparison table reuses 152's SgrA* 1.3e100 (cascade-
+    inverted family) and SGR B = 3e11 - the B fork
+    PERSISTS in the very next paper after 164's Chandra
+    2.3e10 (Q-160a evidence grows).
+    YM GAP THIRD VALUE (Q-163a): Delta = Lambda_QCD =
+    300 MeV joins the fork (roadmap 5.2e-11 eV, canonical
+    1.736 GeV - now three values spanning 3e19).
+    CHAIN DEFECTS (Q-163b): M_gap = Delta^4/(hbar^3 c^3)*
+    V/c^2 at 300 MeV, V = (1 fm)^3 gives 1.88e-27 kg
+    (glueball-scale, physically sensible) not the printed
+    1e-35 (5e8 off); and N = 225 Msun/1e-35 = 4.5e67, not
+    the printed 1e71 (2200x internal inconsistency).
+    PREDICTION REGISTERED: mass-gap BH masses quantized in
+    units of the YM gap.
+    """
+    D = 300e6 * 1.602e-19
+    hbar, c = 1.0546e-34, 2.998e8
+    m_gap_chain = D**4 / (hbar * c)**3 * (1e-15)**3 / c**2
+    msun = 1.989e30
+    return {
+        'value': {
+            'domain': '2.3 (GW231123 event, thread 7f9068)',
+            'masses': {'m1': 130, 'm2': 95, 'total': 225, 'remnant': 213, 'dm_gw': 12},
+            'mass_balance_exact': 225 - 213 == 12,
+            'g_pert_mass': (225 + 1125),                     # 1350 Msun EXACT
+            'fu_additive': (5e51 + 3e51, 8e51),              # EXACT
+            'ym_gap_third_value': '300 MeV joins 5.2e-11 eV + 1.736 GeV fork (Q-163a)',
+            'm_gap_chain_kg': m_gap_chain,                   # 1.88e-27 (paper 1e-35)
+            'n_glueball_chain': 225 * msun / 1e-35,          # 4.5e67 (paper 1e71)
+            'sgr_b_persists': '3e11 T again - one paper after Chandra 2.3e10 (Q-160a)',
+            'sgra_reuse': '1.3e100 = 152 cascade-inverted value reused',
+            'prediction': 'mass-gap BH masses quantized in YM-gap units',
+        },
+        'formula': 'Ug4(225 Msun)*(1+f_fb) + g_pert(M_DM/M=5, drho/rho=0.5); M_gap = D^4/(hbar c)^3*V',
+        'source': 'PAPER_167',
+        'residual_pct': abs((5e51 + 3e51) - 8e51) / 8e51 * 100,
         'status': 'OPEN_RULING',
     }

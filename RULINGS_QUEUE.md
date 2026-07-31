@@ -3832,6 +3832,37 @@ RESOLVED section with the ruling recorded.
   pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-163 — PAPER_167 GW231123 — YM gap third value + chain defects
+- **Question:** (a) YM GAP FORK (third value): this paper
+  sets Delta = Lambda_QCD = 300 MeV for the Millennium
+  bridge. The corpus now carries THREE YM gap values:
+  5.2e-11 eV (156 roadmap), 1.736 GeV (predecessor
+  canonical PAPER_1318), 300 MeV (here) - spanning 3.3e19.
+  One canonical Delta needed (folds into Q-152a).
+  (b) CHAIN DEFECTS: M_gap = Delta^4/(hbar^3 c^3) *
+  V_accretion at 300 MeV, V = (1 fm)^3 computes to
+  1.88e-27 kg - glueball-scale and physically sensible -
+  NOT the printed "~1e-35 kg" (5e8 off). And N_glueball =
+  225 Msun / 1e-35 = 4.5e67, not the printed "~1e71"
+  (2200x inconsistent even with the paper's own M_gap).
+  Confirm chain values 1.88e-27 kg / 2.4e59?
+  (c) The comparison table reuses SGR B = 3e11 T ONE
+  PAPER after 164's Chandra "confirmation" of 2.3e10 -
+  strengthening the Q-160a fork; and SgrA* F_U = 1.3e100
+  reuses 152's cascade-inverted resonance value (Q-143a).
+- **Notable:** GW231123 is a REAL O4 event and the mass
+  bookkeeping is self-consistent (130+95 = 225, remnant
+  213, dM_GW = 12); g_pert arithmetic EXACT (1350 Msun);
+  F_U is treated ADDITIVE across the merger (5e51 + 3e51
+  = 8e51 EXACT - a structural choice worth canonizing or
+  rejecting); the quantized mass-gap BH PREDICTION
+  (masses in YM-gap units) is registered as falsifiable.
+  PISN phrasing note: 95 Msun is IN the 50-130 gap, 130
+  at its edge - "both above the gap" misstates.
+- **Best-candidate wired:** event + model + prediction
+  registered; fork value and chain defects pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

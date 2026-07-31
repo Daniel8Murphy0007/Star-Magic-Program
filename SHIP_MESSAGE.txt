@@ -1,27 +1,29 @@
-v0.169.0 BAND 1: PAPER_166 wired - SOLAR WIND MODULATION
+v0.170.0 BAND 1: PAPER_167 wired - GW231123 MASS GAP
 
-PAPER_166 Solar Wind Modulation (OPEN_RULING Q-162) -
+PAPER_167 GW231123 225 Msun Merger (OPEN_RULING Q-163) -
 Session 47, thread 7f9068, sec 2.3:
-  wind_mod = 1 + epsilon_sw*rho_sw (epsilon_sw = 0.001
-  m^3/kg) applied consistently to all four Ubi buoyancy
-  terms, plus H_SCm = 0.99 integration. VERIFIED:
-  rho_sw(1 AU) = m_p * 5/cc = 8.35e-21 kg/m^3 EXACT;
-  wind_mod - 1 = 8.35e-24 at 1 AU (honestly negligible,
-  significant only in accretion/compressed regions);
-  radial 1/r^2 law exact in 3 of 4 table rows.
+  Real LVK O4 event (Nov 2023). Mass bookkeeping is
+  self-consistent: 130 + 95 = 225 Msun, remnant 213,
+  dM_GW = 12. UQFF model: Ug4*(1+f_feedback) dominance
+  for extreme mass + g_pert with M_DM/M = 5, drho/rho =
+  0.5 (1350 Msun effective, EXACT); Osc_term per 164's
+  variable law. F_U treated ADDITIVE across the merger
+  (5e51 + 3e51 = 8e51 EXACT) - a structural choice
+  flagged for canonization or rejection. PREDICTION
+  registered as falsifiable: mass-gap BH masses
+  quantized in units of the Yang-Mills gap.
 
-  PINNED FOR RULING: (a) UNIT PERSISTENCE - the paper
-  exists to fix the delta_sw*v_sw dimensional mismatch,
-  yet its own sec-7 verification writes "1 + 0.001*4e5 =
-  1.4" where the arithmetic gives 401; the printed 1.4
-  requires v_sw in km/s. Is delta_sw per-km/s (Ug2 wind
-  factor 1.4 canonical) or per-m/s (401)? The derived
-  "equivalent accretion density" (4e5 vs 400 kg/m^3)
-  inherits the same 1000x ambiguity. (b) Mercury radial
-  row 10x slip with EXACT mantissa (family member; other
-  rows exact); 1%% threshold claimed at rho > 1e3 kg/m^3,
-  actual 10 kg/m^3 (100x).
+  PINNED FOR RULING: (a) YM GAP THIRD VALUE - Delta =
+  300 MeV joins 156's 5.2e-11 eV and the predecessor-
+  canonical 1.736 GeV (fork now spans 3.3e19; folds into
+  Q-152a); (b) chain defects - M_gap computes 1.88e-27
+  kg (glueball-scale, sensible) vs printed 1e-35 (5e8
+  off); N-glueball = 4.5e67 vs printed 1e71 (2200x
+  inconsistent with the paper's own M_gap); (c) SGR B =
+  3e11 T reappears ONE paper after 164's Chandra 2.3e10
+  "confirmation" (Q-160a evidence); SgrA* F_U reuses
+  152's cascade-inverted 1.3e100.
 
-Q-162 queued. Gate 1,125 assertions 0 failures. Registry
-409 rows / 873 edges / 170 ledgers (measured). Wired
-170/2,255 (11 clean, 159 OPEN_RULING). Next: PAPER_167.
+Q-163 queued. Gate 1,132 assertions 0 failures. Registry
+411 rows / 878 edges / 171 ledgers (measured). Wired
+171/2,255 (11 clean, 160 OPEN_RULING). Next: PAPER_168.

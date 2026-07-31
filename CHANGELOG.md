@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.170.0] — 2026-07-30 — BAND 1: PAPER_167 — GW231123 MASS GAP
+
+### Added
+- **PAPER_167 dispatch** (GW231123 225 Msun merger, S47,
+  sec 2.3): real O4 event (Nov 2023), mass bookkeeping
+  self-consistent (130+95 = 225, remnant 213, dM = 12);
+  Ug4·(1+f_feedback) dominance + g_pert (1350 Msun EXACT);
+  F_U additive across merger (5e51 + 3e51 = 8e51 EXACT —
+  structural choice flagged for canonization); PREDICTION
+  registered: mass-gap BH masses quantized in YM-gap
+  units. PINNED: YM gap THIRD value (300 MeV joins
+  5.2e-11 eV and 1.736 GeV — 3.3e19 span, Q-152a family);
+  M_gap chain computes 1.88e-27 kg (glueball-scale) vs
+  printed 1e-35 (5e8); N-glueball 4.5e67 vs printed 1e71
+  (2200× internal); SGR B = 3e11 persists one paper after
+  164's Chandra 2.3e10; SgrA* reuses 152's cascade-
+  inverted 1.3e100.
+- OPEN_RULING Q-163.
+- Gate: 1,132 assertions, 0 failures. Registry: 411 rows / 878 edges / 171 ledgers (measured).
+
+---
+
 ## [0.169.0] — 2026-07-30 — BAND 1: PAPER_166 — SOLAR WIND MODULATION
 
 ### Added

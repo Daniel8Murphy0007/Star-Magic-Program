@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.169.0"
-description = "UQFF Star-Magic-Program v0.169.0: PAPER_166 wired - solar-wind buoyancy modulation wind_mod = 1 + epsilon_sw*rho_sw on all Ubi terms + H_SCm; rho_sw(1 AU) = 8.35e-21 EXACT, radial law 3/4 rows exact; km/s-vs-m/s unit ambiguity PERSISTS in the fix paper itself (1.4 vs 401); Mercury 10x + threshold 100x slips pinned. Q-162. Wired 170/2255, gate 1125/0. Registry 409 rows / 873 edges / 170 ledgers (measured)."
+version = "0.170.0"
+description = "UQFF Star-Magic-Program v0.170.0: PAPER_167 wired - GW231123 (real O4, 225 Msun) via Ug4 feedback + g_pert; mass bookkeeping self-consistent; F_U additive across merger EXACT; YM gap THIRD value 300 MeV joins the 3.3e19 fork; M_gap chain 1.88e-27 kg vs printed 1e-35; quantized mass-gap-BH prediction registered. Q-163. Wired 171/2255, gate 1132/0. Registry 411 rows / 878 edges / 171 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

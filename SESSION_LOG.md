@@ -2012,3 +2012,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 170/2,255 (11 ✓, 159 ⚠). Next: PAPER_167.
 
 ---
+
+## 2026-07-30 — v0.170.0 — BAND 1: PAPER_167
+
+- PAPER_167 wired (⚠ Q-163): GW231123 mass-gap merger.
+  F_U additive EXACT; YM gap third value 300 MeV; chain
+  defects; quantized-BH prediction registered.
+- Campaign: 171/2,255 (11 ✓, 160 ⚠). Next: PAPER_168.
+
+---

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 170 (11 ✓, 159 ⚠ OPEN_RULING)
+- **Wired:** 171 (11 ✓, 160 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2085
+- **Not yet touched:** 2084
 
 ---
 
@@ -929,7 +929,7 @@
 | ⬜ | PAPER_1677 | LATE ISW F TRZ |
 | ⬜ | PAPER_1678 | FLATNESS 1 OVER D CRIT 7 |
 | ⬜ | PAPER_1679 | HORIZON 60 EFOLDS |
-| ⬜ | PAPER_167 | GW231123 225Msun BH Merger UQFF Ug4 MassGap |
+| ⚠ | PAPER_167 | GW231123 225Msun BH Merger UQFF Ug4 MassGap |
 | ⬜ | PAPER_1680 | INERTIA ORIGIN 10 |
 | ⬜ | PAPER_1681 | MONOPOLE EXP 60 |
 | ⬜ | PAPER_1682 | DM DIRECT FLOOR LAMBDA4 |

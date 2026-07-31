@@ -872,3 +872,8 @@ observable,amunu_input_defects,paper,PAPER_159,wormhole comparison
 observable,solar_wind_wind_mod,paper,PAPER_166,wind_mod law
 observable,solar_wind_wind_mod,paper,PAPER_157,Ubi application
 observable,wind_mod_defects,paper,PAPER_166,3 defects
+observable,gw231123_ug4_massgap,paper,PAPER_167,event analysis
+observable,gw231123_ug4_massgap,paper,PAPER_164,Osc_term law
+observable,gw231123_ug4_massgap,paper,PAPER_160,Ug4 calibration
+observable,ym_gap_third_value,paper,PAPER_167,300 MeV
+observable,ym_gap_third_value,paper,PAPER_156,YM fork family

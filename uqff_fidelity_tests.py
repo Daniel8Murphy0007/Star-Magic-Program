@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.169.0", "uqff_calculator.VERSION = 0.169.0")
+assert_that(C.VERSION == "0.170.0", "uqff_calculator.VERSION = 0.170.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2460,6 +2460,21 @@ assert_that(_r166['sec7_kms_reading'] == 1.4,
 assert_that(_r166['threshold_1pct'] == 10.0,
             "PAPER_166: 1% threshold rho = 10 kg/m^3, claimed 1e3 - 100x slip (Q-162b)")
 assert_that(C.wired_count() >= 170, "wired_count >= 170")
+
+_r167 = C.calc('PAPER_167')['value']
+assert_that(_r167['mass_balance_exact'],
+            "PAPER_167: GW231123 mass balance 225 - 213 = 12 Msun SELF-CONSISTENT")
+assert_that(_r167['fu_additive'][0] == _r167['fu_additive'][1],
+            "PAPER_167: F_U additive across merger - 5e51 + 3e51 = 8e51 EXACT")
+assert_that(1.8e-27 < _r167['m_gap_chain_kg'] < 2.0e-27,
+            "PAPER_167: M_gap chain gives 1.88e-27 kg (glueball-scale), paper prints 1e-35 (Q-163b)")
+assert_that(4e67 < _r167['n_glueball_chain'] < 5e67,
+            "PAPER_167: N = 225 Msun/1e-35 = 4.5e67, paper prints 1e71 - 2200x internal (Q-163b)")
+assert_that('300 MeV' in _r167['ym_gap_third_value'],
+            "PAPER_167: YM gap THIRD value 300 MeV pinned (Q-163a, Q-152a family)")
+assert_that(_r167['g_pert_mass'] == 1350,
+            "PAPER_167: g_pert effective mass (225 + 1125) = 1350 Msun EXACT")
+assert_that(C.wired_count() >= 171, "wired_count >= 171")
 
 # =============================================================================
 # REPORT
