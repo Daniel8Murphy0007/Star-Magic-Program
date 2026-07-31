@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.164.0"
-description = "UQFF Star-Magic-Program v0.164.0: PAPER_161 wired - relativistic SCm jet v_SCm = 0.99c for J1610+1811 (z=3.122); gamma = 7.0888 + E_inject = 6.09*m*c^2 verified; Stam-solver body force spatially uniform hence CURL-FREE (154-consistent); scaling claim ~4 vs actual 98.01 pinned; rho ambiguities queued. Q-157. Wired 165/2255, gate 1095/0. Registry 399 rows / 852 edges / 165 ledgers (measured)."
+version = "0.165.0"
+description = "UQFF Star-Magic-Program v0.165.0: PAPER_162 wired - solar-cycle omega_c foundation for 157; B(t) time-varying + delta_def; 2.33x cycle modulation testable prediction; DEFECT TRIO pinned (0.4 T absolute-vs-relative amplitude, 6.3 s vs 6283 s period slip, SCm_contrib 1e9 x B_s not perturbative). Q-158. Wired 166/2255, gate 1101/0. Registry 401 rows / 856 edges / 166 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

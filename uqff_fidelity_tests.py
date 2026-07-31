@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.164.0", "uqff_calculator.VERSION = 0.164.0")
+assert_that(C.VERSION == "0.165.0", "uqff_calculator.VERSION = 0.165.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2395,6 +2395,19 @@ assert_that(abs(_r161['v_scm'] - 2.968e8) / 2.968e8 < 1e-3,
 assert_that('curl-free' in _r161['body_force'],
             "PAPER_161: uniform body force curl-free - consistent with 154's NS core")
 assert_that(C.wired_count() >= 165, "wired_count >= 165")
+
+_r162 = C.calc('PAPER_162')['value']
+assert_that(abs(_r162['omega_c_sun'] - 1.810e-8) / 1.810e-8 < 1e-3,
+            "PAPER_162: omega_c(Sun) = 2pi/11yr = 1.810e-8 rad/s verified")
+assert_that(abs(_r162['cycle_ratio'] - 2.333) < 0.001,
+            "PAPER_162: solar-cycle Ug1 ratio 1.4/0.6 = 2.333 EXACT (testable prediction)")
+assert_that(abs(_r162['period_actual_s'] - 6283.19) < 0.1,
+            "PAPER_162: delta_def period = 6283 s, not '6.3 s' - 1000x slip, mantissa EXACT (Q-158b)")
+assert_that(_r162['scm_contrib_sun_T'] == 1e5,
+            "PAPER_162: SCm_contrib(Sun) = 1e5 T = 1e9 x B_s - 'perturbative' claim false (Q-158c)")
+assert_that(abs(_r162['footer_solar_wind'] - 0.5688) < 0.001,
+            "PAPER_162: footer solar-wind correction 0.5688 ~ 5.7e-1 (exponent 2.16e-3 vs paper 3.2e-3)")
+assert_that(C.wired_count() >= 166, "wired_count >= 166")
 
 # =============================================================================
 # REPORT

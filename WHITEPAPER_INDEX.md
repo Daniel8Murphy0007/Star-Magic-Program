@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 165 (11 ✓, 154 ⚠ OPEN_RULING)
+- **Wired:** 166 (11 ✓, 155 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2090
+- **Not yet touched:** 2089
 
 ---
 
@@ -874,7 +874,7 @@
 | ⬜ | PAPER_1627 | GAS CONSTANT R 8 314 |
 | ⬜ | PAPER_1628 | H MASS 1 008 |
 | ⬜ | PAPER_1629 | EV LEAD 1 602 |
-| ⬜ | PAPER_162 | SolarCycle UQFF omegac TimeVarying Bt |
+| ⚠ | PAPER_162 | SolarCycle UQFF omegac TimeVarying Bt |
 | ⬜ | PAPER_1630 | OCEAN DEPTH 3 7 KM |
 | ⬜ | PAPER_1631 | MT EVEREST 8 848 KM |
 | ⬜ | PAPER_1632 | OCEAN SALINITY 35 PPT |

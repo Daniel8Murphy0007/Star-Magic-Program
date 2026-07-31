@@ -851,3 +851,7 @@ observable,relativistic_scm_jet,paper,PAPER_161,0.99c calibration
 observable,relativistic_scm_jet,paper,PAPER_154,curl-free consistency
 primitive,KAPPA_PER_DAY,observable,relativistic_scm_jet,E_react decay
 observable,jet_scaling_discrepancy,paper,PAPER_161,~4 vs 98.01
+observable,solar_cycle_omega_c,paper,PAPER_162,omega_c foundation
+observable,solar_cycle_omega_c,paper,PAPER_157,per-body usage
+primitive,SSQ,observable,solar_cycle_omega_c,footer solar wind
+observable,solar_cycle_defect_trio,paper,PAPER_162,3 defects

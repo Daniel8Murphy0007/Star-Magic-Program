@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.164.0"
+VERSION = "0.165.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8599,5 +8599,56 @@ def _paper_161(dataset):
         'formula': 'E_react_rel = rho_SCm*v_SCm^2/rho_A * e^-kappa*t; v_SCm = 0.99c',
         'source': 'PAPER_161',
         'residual_pct': abs(gamma - 7.09) / 7.09 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_162')
+def _paper_162(dataset):
+    """Solar-cycle omega_c + time-varying B(t) + delta_def (S47, sec 2.3).
+
+    Theoretical foundation for 157's per-body omega_c:
+    B(t) = B_s + 0.4*sin(omega_c*t) + SCm_contrib; Ug1
+    defect factor delta_def = 0.01 at 0.001 rad/s; Ug3
+    rotation modulation omega'_s = omega_s + omega_c*
+    cos(omega_c*t). omega_c(Sun) = 1.810e-8 rad/s (11 yr)
+    VERIFIED; sec 6 ratio 1.4/0.6 = 2.333 EXACT; testable
+    2.3x solar-cycle UQFF modulation prediction.
+    AMPLITUDE INCONSISTENCY (Q-158a): the 0.4 oscillation
+    is ABSOLUTE Tesla in the formula and C++ (0.4 T =
+    4000x the 1e-4 T mean) but RELATIVE in sec 6's own
+    arithmetic (B_s + 0.4 = 1.4e-4 reads 0.4 as 0.4e-4)
+    and in the motivation (+-40%%). Intent = B_s*(1 +
+    0.4*sin); implementation = B_s + 0.4.
+    PERIOD SLIP (Q-158b): "0.001 rad/s (~6.3 second
+    period)" - actual 2pi/0.001 = 6283 s = 1.75 hr; the
+    mantissa 6.28 is EXACT, the e3 dropped (mantissa-
+    exponent-slip family).
+    PERTURBATIVE CLAIM FALSE (Q-158c): SCm_contrib =
+    SCm_density*1e-10 gives 1e5 T (Sun struct 1e15) =
+    1e9 x B_s - not "~B_s/100"; ties to 157's mu_s(t)
+    "+1e3" term (same family).
+    Footer kappa*(1AU/400km/s) = 2.16e-3 (paper 3.2e-3,
+    1.5x) but result 0.5688 ~ 5.7e-1 either way.
+    """
+    import math as _m
+    year = 365.25 * 86400
+    return {
+        'value': {
+            'domain': '2.3 (solar cycle, thread 7f9068)',
+            'omega_c_sun': 2 * _m.pi / (11 * year),          # 1.810e-8
+            'omega_c_bodies_yr': (11, 1, 11.86, 164.8),
+            'cycle_ratio': 1.4 / 0.6,                        # 2.333 EXACT
+            'delta_def': 0.01,
+            'period_actual_s': 2 * _m.pi / 0.001,            # 6283 s
+            'period_claimed_s': 6.3,                         # 1000x slip
+            'amplitude_defect': '0.4 T absolute in code vs 0.4*B_s relative in sec 6/motivation',
+            'scm_contrib_sun_T': 1e15 * 1e-10,               # 1e5 T - not perturbative
+            'footer_solar_wind': SSQ * _m.exp(-5.787e-9 * (1.496e11 / 4e5)),  # 0.5688
+            'prediction': '2.3x UQFF modulation over 11-yr cycle (cosmic-ray corr.)',
+        },
+        'formula': 'B(t) = B_s + 0.4*sin(omega_c*t) + SCm_contrib; delta_def = 0.01',
+        'source': 'PAPER_162',
+        'residual_pct': abs(1.4 / 0.6 - 2.33) / 2.33 * 100,
         'status': 'OPEN_RULING',
     }

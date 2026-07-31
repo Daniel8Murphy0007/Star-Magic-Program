@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.165.0] — 2026-07-30 — BAND 1: PAPER_162 — SOLAR-CYCLE FOUNDATION
+
+### Added
+- **PAPER_162 dispatch** (solar-cycle omega_c + B(t) +
+  delta_def, S47, sec 2.3): per-body cycle frequency as
+  first-class parameter — the theoretical foundation for
+  157's table. omega_c(Sun) = 1.810e-8 rad/s verified;
+  TESTABLE: 2.33× UQFF modulation over the 11-yr cycle
+  (cosmic-ray correlation) — one of the corpus's cleaner
+  falsifiable statements. DEFECT TRIO: (1) 0.4 amplitude
+  absolute-Tesla in formula/C++ (4000× mean) vs relative
+  in sec 6's own arithmetic (intent B_s·(1+0.4 sin));
+  (2) delta_def period "6.3 s" vs actual 6283 s — 1000×
+  slip with EXACT mantissa; (3) SCm_contrib = 1e5 T for
+  the Sun (1e9 × B_s), "perturbative" claim false — ties
+  to 157's mu_s "+1e3" term.
+- OPEN_RULING Q-158.
+- Gate: 1,101 assertions, 0 failures. Registry: 401 rows / 856 edges / 166 ledgers (measured).
+
+---
+
 ## [0.164.0] — 2026-07-30 — BAND 1: PAPER_161 — RELATIVISTIC SCM JET
 
 ### Added

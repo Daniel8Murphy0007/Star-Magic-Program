@@ -1,28 +1,31 @@
-v0.164.0 BAND 1: PAPER_161 wired - RELATIVISTIC SCM JET
+v0.165.0 BAND 1: PAPER_162 wired - SOLAR-CYCLE FOUNDATION
 
-PAPER_161 Relativistic SCm Jet Dynamics (OPEN_RULING
-Q-157) - Session 47, thread 7f9068, sec 2.3:
-  v_SCm = 0.99c = 2.968e8 m/s calibrated for quasar
-  J1610+1811 (z = 3.122). Lorentz gamma = 7.0888 (paper
-  7.09 - numerically echoing the rho_SCm mantissa,
-  coincidence logged); E_inject = (gamma-1)*m*c^2 =
-  6.09*m*c^2 VERIFIED.
+PAPER_162 Solar Cycle UQFF (OPEN_RULING Q-158) - Session
+47, thread 7f9068, sec 2.3:
+  Establishes per-body cycle frequency omega_c as a
+  first-class UQFF parameter - the theoretical foundation
+  for 157's per-body table (periods 11/1/11.86/164.8 yr
+  match EXACT). B(t) = B_s + 0.4*sin(omega_c*t) +
+  SCm_contrib; Ug1 defect factor delta_def = 0.01; Ug3
+  rotation modulation. omega_c(Sun) = 1.810e-8 rad/s
+  verified.
 
-  CURL-FREE CONSISTENCY: the Jos Stam stable-fluids body
-  force f = (E_react/rho_A)*(cos, sin)(pi t_n) is
-  spatially uniform, hence curl-free - the quasar-jet NS
-  implementation is consistent with 154's sound curl-free
-  core (the Millennium roadmap's one strong leg). E_react
-  appears in route-3 form (v^2/rho_A), reinforcing the
-  Q-153a three-route adjudication.
+  TESTABLE PREDICTION: 2.33x UQFF field modulation over
+  the 11-year solar cycle, claimed to correlate with
+  cosmic-ray flux (~10-20%% observed) - one of the
+  corpus's cleaner falsifiable statements.
 
-  PINNED: sec 5 claims E_react "increases ~4" from 0.1c
-  to 0.99c - actual (0.99/0.1)^2 = 98.01 (mojibake like
-  the nearby "~7"="~7x", or a 24.5x error); rho_A
-  mojibake "1.67x10?7" (1.67e-27 = 1 H/m^3 candidate);
-  rho_SCm = 1e-5 kg/m^3 AGN-disk joins the context-value
-  family; M_UQFF = 14.3 TeV unexplained comment constant.
+  DEFECT TRIO PINNED: (1) the 0.4 oscillation amplitude
+  is ABSOLUTE Tesla in the formula and C++ (0.4 T = 4000x
+  the 1e-4 T mean) but RELATIVE in sec 6's own arithmetic
+  and the +-40%% motivation - intent B_s*(1 + 0.4*sin);
+  (2) delta_def period "~6.3 second" vs actual 2pi/0.001
+  = 6283 s - a 1000x slip with EXACT mantissa 6.28
+  (mantissa-exponent family); (3) SCm_contrib =
+  SCm_density*1e-10 = 1e5 T for the Sun = 1e9 x B_s -
+  the "perturbative ~B_s/100" claim is false with 157's
+  struct values (ties to 157's mu_s "+1e3" term).
 
-Q-157 queued. Gate 1,095 assertions 0 failures. Registry
-399 rows / 852 edges / 165 ledgers (measured). Wired
-165/2,255 (11 clean, 154 OPEN_RULING). Next: PAPER_162.
+Q-158 queued. Gate 1,101 assertions 0 failures. Registry
+401 rows / 856 edges / 166 ledgers (measured). Wired
+166/2,255 (11 clean, 155 OPEN_RULING). Next: PAPER_163.

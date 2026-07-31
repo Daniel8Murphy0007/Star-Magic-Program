@@ -3681,6 +3681,38 @@ RESOLVED section with the ruling recorded.
   curl-free consistency registered; discrepancies pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-158 — PAPER_162 solar cycle — amplitude units + period slip + perturbative claim
+- **Question:** (a) AMPLITUDE: is the B(t) oscillation
+  0.4 T ABSOLUTE (as the boxed formula and C++ implement:
+  B_s + 0.4*sin, giving 0.4 T swings on a 1e-4 T mean =
+  4000x) or 40%% RELATIVE (as the motivation states and
+  sec 6's own arithmetic uses: B_s + 0.4 = 1.4e-4 reads
+  0.4 as 0.4e-4)? Intent appears to be B_s*(1 + 0.4*
+  sin(omega_c*t)). Note 157's mu_s(t) formula carries the
+  same family issue (+10^3 term inside (B_s + 0.4 sin +
+  1e3)*R_s^3).
+  (b) PERIOD SLIP: "delta_def ... at 0.001 rad/s (~6.3
+  second period)" - actual 2pi/0.001 = 6283 s = 1.75 hr.
+  Mantissa 6.28 EXACT, e3 dropped (the mantissa-exponent-
+  slip family). Confirm 6283 s intended?
+  (c) PERTURBATIVE CLAIM: SCm_contrib = SCm_density*1e-10
+  gives 1e5 T for the Sun (struct 1e15), 100 T for Earth -
+  1e5-1e9 x B_s, NOT the stated "~B_s/100". Should
+  SCm_contrib scale be per-body-calibrated or is the
+  1e-10 coefficient wrong?
+- **Notable:** omega_c(Sun) = 1.810e-8 rad/s verified;
+  the four per-body periods (11/1/11.86/164.8 yr) match
+  157's table EXACT; sec 6 ratio 1.4/0.6 = 2.333 EXACT;
+  TESTABLE PREDICTION: 2.3x UQFF field modulation over the
+  11-yr cycle, claimed to correlate with cosmic-ray flux
+  (~10-20%% observed) - one of the corpus's cleaner
+  falsifiable statements. Footer solar-wind correction
+  0.5688 ~ 5.7e-1 (its exponent 2.16e-3 vs printed 3.2e-3,
+  result insensitive).
+- **Best-candidate wired:** omega_c foundation + 2.33x
+  prediction registered; defect trio pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

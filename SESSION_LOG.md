@@ -1967,3 +1967,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 165/2,255 (11 ✓, 154 ⚠). Next: PAPER_162.
 
 ---
+
+## 2026-07-30 — v0.165.0 — BAND 1: PAPER_162
+
+- PAPER_162 wired (⚠ Q-158): solar-cycle omega_c
+  foundation. 2.33x testable prediction; amplitude/period/
+  perturbative defect trio pinned.
+- Campaign: 166/2,255 (11 ✓, 155 ⚠). Next: PAPER_163.
+
+---
