@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.180.0"
+VERSION = "0.181.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9416,6 +9416,48 @@ def _paper_177(dataset):
         },
         'formula': 'NS Stam solver + ux += dt*g_res; jet uy += 10 at midrow',
         'source': 'PAPER_177',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_178')
+def _paper_178(dataset):
+    """CoAnQi 3D entity framework implementation (S48, sec 2.4-J).
+
+    Infrastructure companion to 168: OBJ mesh I/O
+    (indexed, deduplicated), stb_image textures with
+    mipmaps, GLSL shader pipeline, lookAt multi-viewport
+    camera, skeletal bone animation with SLERP (gimbal-
+    lock-free planetary spin), procedural landscape, and
+    two CONFESSED stubs (extrudeMesh, booleanUnion -
+    "planned for future plugin implementation").
+    Entity update is Euler integration (position +=
+    velocity*dt, velocity seeded from MUGESystem.vexp).
+    Headers carry the F_U minus-buoyancy convention (4th
+    consecutive - 2152 echo) and the third-form Ubi with
+    beta_i = 0.61 (4th consecutive drift -> BETA_I per
+    PAPER_1203).
+    MINOR MISMATCH (Q-174a): 168 described the landscape
+    as "Perlin noise"; 178's actual formula is a 2-octave
+    sine-cosine heightmap h = sin(x)cos(z) + 0.5 sin(2x)
+    cos(2z) - description-vs-implementation gap.
+    """
+    return {
+        'value': {
+            'domain': '2.4-J (3D infrastructure, thread 381a8fe7)',
+            'components': ('OBJ I/O', 'textures', 'shaders', 'camera', 'SLERP bones',
+                           'procedural landscape', 'stubs'),
+            'entity_update': 'Euler: pos += vel*dt; vel from MUGESystem.vexp',
+            'heightmap': 'sin(x*s)cos(z*s) + 0.5 sin(2xs)cos(2zs) - 2 octaves',
+            'perlin_mismatch': '168 says Perlin; 178 implements sine-cosine (Q-174a)',
+            'stubs_confessed': 'extrudeMesh, booleanUnion',
+            'fu_convention_streak': 4,
+            'beta_drift_streak': '0.61 4th consecutive -> BETA_I (PAPER_1203)',
+            'slerp_role': 'gimbal-lock-free planetary spin animation',
+        },
+        'formula': '3D entity layer: mesh/texture/shader/camera/animation infrastructure',
+        'source': 'PAPER_178',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

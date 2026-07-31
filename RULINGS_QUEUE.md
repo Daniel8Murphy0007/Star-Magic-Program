@@ -4220,6 +4220,32 @@ RESOLVED section with the ruling recorded.
   vote registered; dominance question pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-174 — PAPER_178 3D infrastructure — heightmap description mismatch
+- **Question:** (a) 168 describes the procedural
+  landscape as "Perlin noise heightmap"; 178's actual
+  implementation is a 2-octave sine-cosine map h =
+  sin(x*s)cos(z*s) + 0.5 sin(2xs)cos(2zs). Which is the
+  intended terrain generator (cosmetic doc fix, no
+  physics impact)?
+  (b) beta_i = 0.61 header appears a 4TH consecutive
+  time in the 2.4 thread - the 0.61 value is clearly
+  this thread's local convention. Confirm the charter
+  auto-correction (0.6029) applies thread-wide, or is
+  0.61 a deliberate 2.4-era value?
+- **Notable:** pure infrastructure paper - OBJ I/O,
+  textures, shaders, multi-viewport camera, SLERP
+  skeletal animation (gimbal-lock-free planetary spin),
+  Euler entity integration seeded from MUGESystem.vexp.
+  TWO STUBS CONFESSED (extrudeMesh, booleanUnion -
+  "planned for future plugin implementation") - the
+  honest-labeling pattern continues. The F_U minus-
+  buoyancy convention holds for the 4th consecutive
+  paper (2152 provenance echo unbroken through the
+  entire CoAnQi block).
+- **Best-candidate wired:** infrastructure registered;
+  mismatch and drift-streak pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

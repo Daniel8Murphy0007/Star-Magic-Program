@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.181.0] — 2026-07-31 — BAND 1: PAPER_178 — 3D INFRASTRUCTURE
+
+### Added
+- **PAPER_178 dispatch** (CoAnQi 3D implementation, S48,
+  sec 2.4-J): OBJ mesh I/O, stb_image textures, GLSL
+  shaders, multi-viewport camera, SLERP skeletal
+  animation (gimbal-lock-free planetary spin), 2-octave
+  sine-cosine landscape, Euler entity integration; TWO
+  STUBS CONFESSED (extrudeMesh, booleanUnion). Minus-
+  buoyancy convention 4th consecutive (2152 echo).
+  PINNED: 168-Perlin vs 178-sine-cosine heightmap doc
+  mismatch; beta 0.61 4th consecutive (thread-convention
+  question for the charter auto-correction).
+- OPEN_RULING Q-174.
+- Gate: 1,203 assertions, 0 failures. Registry: 432 rows / 927 edges / 182 ledgers (measured).
+
+---
+
 ## [0.180.0] — 2026-07-31 — BAND 1: PAPER_177 — FLUIDSOLVER COUPLING
 
 ### Added

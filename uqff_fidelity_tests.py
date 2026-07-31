@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.180.0", "uqff_calculator.VERSION = 0.180.0")
+assert_that(C.VERSION == "0.181.0", "uqff_calculator.VERSION = 0.181.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2617,6 +2617,17 @@ assert_that(abs(_r177['diffuse_a'] - 0.01024) < 1e-6,
 assert_that('154/161' in _r177['curl_free_consistency'],
             "PAPER_177: uniform body force curl-free - 3rd consistency with 154/161")
 assert_that(C.wired_count() >= 181, "wired_count >= 181")
+
+_r178 = C.calc('PAPER_178')['value']
+assert_that(len(_r178['components']) == 7,
+            "PAPER_178: 7 infrastructure components registered")
+assert_that(_r178['fu_convention_streak'] == 4,
+            "PAPER_178: F_U minus-buoyancy convention 4th consecutive (2152 echo)")
+assert_that('Perlin' in _r178['perlin_mismatch'],
+            "PAPER_178: 168-Perlin vs 178-sine-cosine heightmap mismatch pinned (Q-174a)")
+assert_that('booleanUnion' in _r178['stubs_confessed'],
+            "PAPER_178: modeling stubs confessed (extrudeMesh, booleanUnion)")
+assert_that(C.wired_count() >= 182, "wired_count >= 182")
 
 # =============================================================================
 # REPORT

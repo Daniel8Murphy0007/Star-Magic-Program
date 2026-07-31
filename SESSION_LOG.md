@@ -2113,3 +2113,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 181/2,255 (11 ✓, 170 ⚠). Next: PAPER_178.
 
 ---
+
+## 2026-07-31 — v0.181.0 — BAND 1: PAPER_178
+
+- PAPER_178 wired (⚠ Q-174): 3D infrastructure. Stubs
+  confessed; heightmap doc mismatch; convention streaks
+  logged.
+- Campaign: 182/2,255 (11 ✓, 171 ⚠). Next: PAPER_179.
+
+---

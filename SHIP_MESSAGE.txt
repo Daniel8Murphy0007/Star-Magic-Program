@@ -1,33 +1,28 @@
-v0.180.0 BAND 1: PAPER_177 wired - FLUIDSOLVER COUPLING
+v0.181.0 BAND 1: PAPER_178 wired - 3D INFRASTRUCTURE
 
-PAPER_177 FluidSolver Navier-Stokes + UQFF Coupling
-(OPEN_RULING Q-173) - Session 48, thread 381a8fe7, sec
-2.4-I:
-  Textbook Stam (1999) stable-fluids solver: N = 32,
-  dt = 0.1, visc = 1e-4, 20 Gauss-Seidel iterations,
-  no-slip walls, semi-Lagrangian advection, double
-  projection. UQFF enters as the spatially UNIFORM body
-  force ux += dt*g_res - curl-free, consistent with
-  154/161 for the THIRD time. Jet injection (10 N/m^2,
-  central row) implements 176's SCm-expulsion ignition;
-  full MHD interpretation table; runs per-system via
-  168's entity population.
+PAPER_178 CoAnQi 3D Simulation Entity Framework
+(OPEN_RULING Q-174) - Session 48, thread 381a8fe7, sec
+2.4-J:
+  Implementation companion to 168: OBJ mesh I/O
+  (indexed, deduplicated), stb_image textures with
+  mipmaps, GLSL shader pipeline, multi-viewport lookAt
+  camera, skeletal bone animation with SLERP (gimbal-
+  lock-free planetary spin), 2-octave procedural
+  landscape, Euler entity integration seeded from
+  MUGESystem.vexp. TWO STUBS CONFESSED (extrudeMesh,
+  booleanUnion - "planned for future plugin
+  implementation") - the honest-labeling pattern
+  continues. The F_U minus-buoyancy convention holds
+  for the 4TH consecutive paper (2152 provenance echo
+  unbroken through the CoAnQi block).
 
-  THIRD CODE-TRUTH VOTE: with g_res = 1.773e-9 the body
-  force is 1.77e-10 per step - numerically sane. With
-  the TABLE value 1.655e45 it would be 1.7e44 m/s per
-  step - the simulation could not run. The working
-  fluid sim is the third independent witness (after
-  172's unit test and 174's decomposition) that
-  1.773e-9 is the operational resonance value.
+  PINNED (minor): 168 described the landscape as
+  "Perlin noise"; 178 implements sine-cosine octaves -
+  doc-vs-implementation mismatch, cosmetic; beta_i =
+  0.61 appears a 4th consecutive time - clearly the
+  2.4-thread local convention; Q-174 asks whether the
+  charter auto-correction (0.6029) applies thread-wide.
 
-  PINNED FOR RULING: drive dominance - force_jet = 10
-  vs UQFF contribution 1.77e-10 (5.6e10 ratio); at
-  code-truth scale the jet dynamics come from
-  add_jet_force with the UQFF term decorative. Intended
-  as trigger-plus-response, or rescale? beta_i = 0.61
-  header drift (3rd consecutive, auto-corrected).
-
-Q-173 queued. Gate 1,198 assertions 0 failures. Registry
-431 rows / 925 edges / 181 ledgers (measured). Wired
-181/2,255 (11 clean, 170 OPEN_RULING). Next: PAPER_178.
+Q-174 queued. Gate 1,203 assertions 0 failures. Registry
+432 rows / 927 edges / 182 ledgers (measured). Wired
+182/2,255 (11 clean, 171 OPEN_RULING). Next: PAPER_179.

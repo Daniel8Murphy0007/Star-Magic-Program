@@ -924,3 +924,5 @@ observable,fluidsolver_uqff_coupling,paper,PAPER_154,curl-free 3rd
 observable,simulation_code_truth_vote,paper,PAPER_177,sanity vote
 observable,simulation_code_truth_vote,paper,PAPER_172,vote #1 unit test
 observable,simulation_code_truth_vote,paper,PAPER_174,vote #2 decomposition
+observable,coanqi_3d_infrastructure,paper,PAPER_178,3D layer
+observable,coanqi_3d_infrastructure,paper,PAPER_168,Perlin mismatch
