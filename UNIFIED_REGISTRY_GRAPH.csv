@@ -865,3 +865,7 @@ observable,high_energy_calibration,paper,PAPER_154,lambda_SCm echo
 observable,high_energy_calibration,paper,PAPER_146,Osc_term upgrade
 observable,sgr_b_fork_contradiction,paper,PAPER_164,B fork + contradiction
 observable,sgr_b_fork_contradiction,paper,PAPER_158,beta blend reference
+observable,tensor_coupling_amunu,paper,PAPER_165,A_mu_nu coupling
+primitive,D_PHYS,observable,tensor_coupling_amunu,4D trace factor
+observable,amunu_input_defects,paper,PAPER_165,input defects
+observable,amunu_input_defects,paper,PAPER_159,wormhole comparison

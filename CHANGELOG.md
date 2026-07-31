@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.168.0] — 2026-07-30 — BAND 1: PAPER_165 — A_MU_NU TENSOR COUPLING
+
+### Added
+- **PAPER_165 dispatch** (stress-energy coupling, S47,
+  sec 2.3): A_mu_nu = g_mu_nu + eta·T_s00·cos(pi t_n);
+  trace perturbation Delta_A = 4·eta·T_s00 = 4.448e-15
+  EXACT, with the trace factor 4 = D_PHYS (4D diagonal
+  count — small primitive touchpoint). tr(A) gives the
+  F_U sum its tensor term — second plasma-geometry
+  coupling channel. PINNED: T_SCm = B²/2mu0 at "B~5 T"
+  gives 9.947e6 not 1.11e7 (B = 5.28 T would match);
+  T_plasma = 1270 Pa vs 8.3e-3 Pa n·k·T chain (1.5e5×);
+  Python default 1.127e7 digit-transposes 1.1127e7;
+  magnitude claims "~4 orders" (actual 20.8) and "1043
+  orders" (actual 73.7) garbled — the "~4" recurs
+  verbatim from 161.
+- OPEN_RULING Q-161.
+- Gate: 1,119 assertions, 0 failures. Registry: 407 rows / 870 edges / 169 ledgers (measured).
+
+---
+
 ## [0.167.0] — 2026-07-30 — BAND 1: PAPER_164 — MULTI-MESSENGER CALIBRATION
 
 ### Added

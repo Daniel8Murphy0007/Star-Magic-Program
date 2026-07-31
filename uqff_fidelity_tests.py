@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.167.0", "uqff_calculator.VERSION = 0.167.0")
+assert_that(C.VERSION == "0.168.0", "uqff_calculator.VERSION = 0.168.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2434,6 +2434,19 @@ assert_that('13x' in _r164['sgr_b_fork'],
 assert_that('compressed' in _r164['contradiction'],
             "PAPER_164: sec 5 resonance-dominates claim contradicts 158/155 at beta~1 (Q-160b)")
 assert_that(C.wired_count() >= 168, "wired_count >= 168")
+
+_r165 = C.calc('PAPER_165')['value']
+assert_that(abs(_r165['delta_a'] - 4.448e-15) / 4.448e-15 < 1e-6,
+            "PAPER_165: Delta_A = 4*eta*T_s00 = 4.448e-15 EXACT")
+assert_that(_r165['trace_factor_is_d_phys'] == 4,
+            "PAPER_165: trace factor 4 = D_PHYS (4D trace count)")
+assert_that(abs(_r165['t_scm_chain'] - 9.947e6) / 9.947e6 < 0.001,
+            "PAPER_165: B^2/2mu0 @ 5T = 9.947e6, paper 1.11e7 (11.6%; B = 5.28 T would match) (Q-161a)")
+assert_that(20 < _r165['orders_above_wormhole'] < 21,
+            "PAPER_165: 20.8 orders above wormhole term, claimed '~4' (Q-161b)")
+assert_that(73 < _r165['orders_below_fu_sun'] < 74,
+            "PAPER_165: 73.7 orders below F_U(Sun), claimed '1043' (Q-161b)")
+assert_that(C.wired_count() >= 169, "wired_count >= 169")
 
 # =============================================================================
 # REPORT

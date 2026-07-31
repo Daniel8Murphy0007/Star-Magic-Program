@@ -1994,3 +1994,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 168/2,255 (11 ✓, 157 ⚠). Next: PAPER_165.
 
 ---
+
+## 2026-07-30 — v0.168.0 — BAND 1: PAPER_165
+
+- PAPER_165 wired (⚠ Q-161): A_mu_nu tensor coupling.
+  Delta_A EXACT; 4 = D_PHYS; input-chain + magnitude
+  defects pinned.
+- Campaign: 169/2,255 (11 ✓, 158 ⚠). Next: PAPER_166.
+
+---

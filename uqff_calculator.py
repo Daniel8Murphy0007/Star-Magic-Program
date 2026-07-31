@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.167.0"
+VERSION = "0.168.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8751,5 +8751,52 @@ def _paper_164(dataset):
         'formula': 'dE_vac = E_coll/(1 fm)^3; Osc = h_GW*w_GW^2*r^2*M/M_m; B/B_crit Chandra',
         'source': 'PAPER_164',
         'residual_pct': abs(de_vac - 2.083e39) / 2.083e39 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_165')
+def _paper_165(dataset):
+    """Stress-energy tensor coupling A_mu_nu (S47, sec 2.3).
+
+    A_mu_nu = g_mu_nu + eta*T_s00*cos(pi t_n) with eta =
+    1e-22, T_s00 = T_plasma + T_SCm = 1270 + 1.11e7 Pa;
+    trace perturbation Delta_A = 4*eta*T_s00*cos(pi t_n) =
+    4.448e-15 EXACT (the 4 = D_PHYS, the 4D trace count) -
+    tr(A_mu_nu) enters the F_U sum (second SCm-plasma <->
+    geometry coupling after 154/161).
+    INPUT DISCREPANCIES (Q-161a): T_SCm = B^2/2mu0 "at
+    B~5 T" gives 9.947e6, not 1.11e7 (11.6%; B = 5.28 T
+    would match); T_plasma = 1270 Pa vs coronal n*k*T at
+    the stated rho~1e-12/T~1e6 = 8.3e-3 Pa (1.5e5x);
+    Python default T_s00 = 1.127e7 is a digit transposition
+    of 1.1127e7 (gives 4.508e-15, 1.3%%).
+    MAGNITUDE-CLAIM SLIPS (Q-161b): "~4 orders above the
+    wormhole term" - actual 20.8 orders; "1043 orders
+    smaller than F_U(Sun)" - actual 73.7 orders (both
+    garbled; the "~4" recurs from 161's scaling claim).
+    Tensor note: A_flat = 2 uses the naive matrix trace of
+    diag(-1,1,1,1); proper g^mu_mu = 4 (index sloppiness,
+    internally consistent).
+    """
+    import math as _m
+    t_s00 = 1270 + 1.11e7
+    d_a = D_PHYS * 1e-22 * 1.112e7
+    return {
+        'value': {
+            'domain': '2.3 (tensor coupling, thread 7f9068)',
+            'delta_a': d_a,                                  # 4.448e-15 EXACT
+            'trace_factor_is_d_phys': D_PHYS,                # 4
+            't_s00': t_s00,                                  # 1.1101e7
+            't_scm_chain': 25 / (2 * 4 * _m.pi * 1e-7),      # 9.947e6 vs paper 1.11e7
+            't_plasma_chain': (1e-12 / 1.67e-27) * 1.381e-23 * 1e6,  # 8.3e-3 vs 1270
+            'python_default_typo': '1.127e7 transposition of 1.1127e7 -> 4.508e-15 (1.3%)',
+            'orders_above_wormhole': _m.log10(d_a / 7.09e-36),   # 20.8 (claimed ~4)
+            'orders_below_fu_sun': _m.log10(2.064e59 / d_a),     # 73.7 (claimed 1043)
+            'coupling_role': 'tr(A_mu_nu) term in F_U - 2nd plasma-geometry coupling',
+        },
+        'formula': 'A_mu_nu = g_mu_nu + eta*T_s00*cos(pi t_n); Delta_A = 4*eta*T_s00*cos',
+        'source': 'PAPER_165',
+        'residual_pct': abs(d_a - 4.448e-15) / 4.448e-15 * 100,
         'status': 'OPEN_RULING',
     }

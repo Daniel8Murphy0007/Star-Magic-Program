@@ -3772,6 +3772,37 @@ RESOLVED section with the ruling recorded.
   values registered; fork and contradiction pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-161 — PAPER_165 A_mu_nu coupling — input chains + magnitude slips
+- **Question:** (a) INPUT CHAINS: T_SCm = B^2/(2mu0) "at
+  B~5 T" = 9.947e6 Pa, not the stated 1.11e7 (11.6%;
+  B = 5.28 T would match exactly - is 5.28 T the intended
+  field?). T_plasma = 1270 Pa vs the n*k*T chain at the
+  stated rho~1e-12 kg/m^3, T~1e6 K = 8.3e-3 Pa - a 1.5e5x
+  gap (what pressure chain produced 1270?). And the sec 7
+  Python default T_s00 = 1.127e7 digit-transposes the
+  1270+1.11e7 = 1.1127e7 sum (Delta_A becomes 4.508e-15,
+  1.3%).
+  (b) MAGNITUDE SLIPS: "~4 orders of magnitude above the
+  wormhole term" - actual 4.448e-15/7.09e-36 = 20.8
+  orders; "1043 orders smaller than F_U(Sun)" - actual
+  73.7 orders. Both garbled (and "~4" recurs verbatim from
+  161's scaling claim - possibly the same mojibake vector).
+  (c) Naive matrix trace: A_flat = 2 sums diag(-1,1,1,1)
+  as a matrix; proper g^mu_mu = 4. Keep the paper's
+  convention or the tensor-correct one?
+- **Notable:** the core arithmetic is EXACT - Delta_A =
+  4*eta*T_s00 = 4.448e-15 verifies perfectly, and the
+  trace factor 4 IS D_PHYS (the 4D diagonal count) - a
+  small primitive touchpoint. The coupling gives the F_U
+  sum its tr(A_mu_nu) term (the second SCm-plasma <->
+  geometry channel after the fluid solvers), with an
+  isotropic homogeneous-compression interpretation and
+  oscillation synchronized to the Ubi buoyancy phase.
+- **Best-candidate wired:** coupling + exact Delta_A +
+  D_PHYS trace identity registered; input-chain and
+  magnitude defects pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -1,28 +1,29 @@
-v0.167.0 BAND 1: PAPER_164 wired - MULTI-MESSENGER CALIBRATION
+v0.168.0 BAND 1: PAPER_165 wired - A_MU_NU TENSOR COUPLING
 
-PAPER_164 High-Energy Dataset Validation (OPEN_RULING
-Q-160) - Session 47, thread 7f9068, sec 2.3:
-  Six datasets mapped to MUGE terms: ATLAS 13 TeV ->
-  dE_vac; CMS -> uncertainty bound; GWOSC O4a + GW231123
-  (225 Msun) -> Osc_term variable upgrade; EHT SgrA* ->
-  eps_shadow = 0.02; Chandra CSC 2.1 -> B/B_crit; CAST ->
-  ALP coupling.
+PAPER_165 Stress-Energy Tensor Coupling (OPEN_RULING
+Q-161) - Session 47, thread 7f9068, sec 2.3:
+  A_mu_nu = g_mu_nu + eta*T_s00*cos(pi t_n) with eta =
+  1e-22 and T_s00 = T_plasma + T_SCm; the scalar trace
+  perturbation Delta_A = 4*eta*T_s00 = 4.448e-15 verifies
+  EXACT - and the trace factor 4 IS D_PHYS (the 4D
+  diagonal count), a small primitive touchpoint. tr(A)
+  gives F_U its tensor term: the second SCm-plasma <->
+  geometry coupling channel, oscillation-synchronized to
+  the Ubi buoyancy phase.
 
-  VERIFIED CLEAN: dE_vac = 13 TeV/(1 fm)^3 = 2.083e39
-  J/m^3 exact (only the printed per-TeV intermediate is a
-  typo); dx = hbar*c/(2*6.5 TeV) = 1.518e-20 m; Chandra
-  B/B_crit = 5.227e-4 EXACT with clean Gauss->Tesla
-  conversion. The (1 fm)^3 interaction volume equals
-  154's lambda_SCm = 1 fm (Q-150b family echo).
+  PINNED FOR RULING: (a) input chains - T_SCm = B^2/2mu0
+  at the stated "B~5 T" gives 9.947e6 Pa, not 1.11e7
+  (11.6%; B = 5.28 T would match exactly); T_plasma =
+  1270 Pa vs the n*k*T chain at the stated coronal
+  rho/T = 8.3e-3 Pa (1.5e5x unexplained); the sec-7
+  Python default 1.127e7 digit-transposes 1.1127e7;
+  (b) magnitude slips - "~4 orders above the wormhole
+  term" (actual 20.8 orders) and "1043 orders below
+  F_U(Sun)" (actual 73.7) - the "~4" recurs verbatim
+  from 161's scaling claim, possibly the same mojibake
+  vector; (c) naive matrix trace (A_flat = 2) vs proper
+  g^mu_mu = 4.
 
-  PINNED FOR RULING: (a) SGR 1745 B FORK - Chandra
-  "confirms" 2.3e10 T but 148/158 use 3e11 T for the same
-  magnetar (13x); B_crit = 4.4e13 gets its second vote
-  (Q-002 family); (b) SELF-CONTRADICTION - sec 5 says
-  "resonance MUGE dominates" from f_super ~ 1, but under
-  158's own blend beta ~ 1 means COMPRESSED dominates,
-  and the cited 155 keystone is the compressed limit.
-
-Q-160 queued. Gate 1,113 assertions 0 failures. Registry
-405 rows / 866 edges / 168 ledgers (measured). Wired
-168/2,255 (11 clean, 157 OPEN_RULING). Next: PAPER_165.
+Q-161 queued. Gate 1,119 assertions 0 failures. Registry
+407 rows / 870 edges / 169 ledgers (measured). Wired
+169/2,255 (11 clean, 158 OPEN_RULING). Next: PAPER_166.
