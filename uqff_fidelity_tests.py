@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.190.0", "uqff_calculator.VERSION = 0.190.0")
+assert_that(C.VERSION == "0.191.0", "uqff_calculator.VERSION = 0.191.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2751,6 +2751,17 @@ assert_that('DPM CW/CCW' in _r187['counter_rotation'],
 assert_that(_r187['sgra_area_break'][0] / _r187['sgra_area_break'][1] > 1e9,
             "PAPER_187: SgrA* horizon-area value 1.5e9 x 4*pi*Rs^2 (Q-183b)")
 assert_that(C.wired_count() >= 191, "wired_count >= 191")
+
+_r188 = C.calc('PAPER_188')['value']
+assert_that(abs(_r188['terms_per_kb'] - 4.68) < 0.01,
+            "PAPER_188: 6688 terms / 1430 kB = 4.68 terms/kB EXACT")
+assert_that(_r188['physics_terms_census'] == 6688,
+            "PAPER_188: 6,688 physics-terms corpus census stat registered")
+assert_that(9 < _r188['upx_original_mb'] < 9.5,
+            "PAPER_188: UPX ratio implies 9.2 MB uncompressed (169-consistent)")
+assert_that('Qt5' in _r188['qt_inconsistency'],
+            "PAPER_188: Qt6-claimed vs Qt5-shipped inconsistency pinned (Q-184a)")
+assert_that(C.wired_count() >= 192, "wired_count >= 192")
 
 # =============================================================================
 # REPORT

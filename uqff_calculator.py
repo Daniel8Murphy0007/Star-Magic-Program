@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.190.0"
+VERSION = "0.191.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9935,5 +9935,43 @@ def _paper_187(dataset):
         'formula': '18-param x 7-system catalog; B = F_TRZ*Bcrit universal',
         'source': 'PAPER_187',
         'residual_pct': abs(1e10 / 1e11 - F_TRZ) / F_TRZ * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_188')
+def _paper_188(dataset):
+    """CoAnQi build/distribution architecture (S49, sec 2.5).
+
+    Packaging paper: NSIS Windows installer + dpkg-deb
+    Debian package for the CoAnQi engine (446 modules,
+    107,019 lines - 169-consistent). CORPUS CENSUS STAT:
+    6,688+ physics terms packaged; density 6688/1430 kB
+    = 4.68 terms/kB EXACT arithmetic; UPX 15.51% ratio
+    implies a 9.2 MB uncompressed binary (169's 1.43 MB
+    final consistent). Gadget-4/AREPO density comparison
+    is comparison-only (Rule 4 clean).
+    MINOR DEFECTS (Q-184): abstract says "Qt6 GUI" while
+    the NSIS script ships Qt5 DLLs (Qt5Core/Gui/Widgets/
+    Network/WebEngine) - version inconsistency with
+    169's tier table; start-menu shortcut paths missing
+    separators ("$SMPROGRAMS\\CoAnQiCoAnQi.lnk" - actual
+    script bug); registry paths mojibake-garbled with
+    backticks. Package version 1.0.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (build/distribution, S49)',
+            'platforms': ('NSIS Windows .exe', 'dpkg-deb Debian .deb'),
+            'physics_terms_census': 6688,
+            'terms_per_kb': 6688 / 1430,                     # 4.68 EXACT
+            'upx_original_mb': 1.43e6 / 0.1551 / 1e6,        # 9.2
+            'modules_lines_consistent': '446 modules / 107,019 lines = 169 values',
+            'qt_inconsistency': 'abstract Qt6 vs shipped Qt5 DLLs (Q-184a)',
+            'shortcut_bug': 'SMPROGRAMS paths missing separators (Q-184b)',
+        },
+        'formula': 'NSIS + deb packaging; density = 6688 terms / 1430 kB',
+        'source': 'PAPER_188',
+        'residual_pct': abs(6688 / 1430 - 4.68) / 4.68 * 100,
         'status': 'OPEN_RULING',
     }

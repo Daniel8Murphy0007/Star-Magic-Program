@@ -4576,6 +4576,31 @@ RESOLVED section with the ruling recorded.
   resolutions registered; defects pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-184 — PAPER_188 build architecture — Qt version + script bugs
+- **Question:** (a) the abstract embeds "the CoAnQi Qt6
+  GUI" while the NSIS script ships Qt5 DLLs (Qt5Core/
+  Gui/Widgets/Network/WebEngineWidgets) - and 169's tier
+  table also said Qt6. Which Qt major version is the
+  actual CoAnQi build?
+  (b) script bugs for the record: start-menu shortcut
+  paths missing separators ("$SMPROGRAMS\\CoAnQiCoAnQi
+  .lnk"); registry paths garbled with backticks
+  (rendering artifact). Cosmetic unless the installer
+  is ever rebuilt from this listing.
+- **Notable:** CORPUS CENSUS STAT registered: 6,688+
+  physics terms across 446 modules / 107,019 lines -
+  density 4.68 terms/kB EXACT arithmetic (6688/1430);
+  UPX 15.51% ratio implies a 9.2 MB uncompressed
+  binary, consistent with 169's 1.43 MB final. The
+  Gadget-4/AREPO density comparison is comparison-only
+  (Rule 4 clean). Pure infrastructure paper otherwise -
+  packaging discipline (one-click installers both
+  platforms) mirrors this repo's own ship pipeline.
+- **Best-candidate wired:** packaging + census stat
+  registered; version inconsistency and script bugs
+  pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

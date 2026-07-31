@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.190.0"
-description = "UQFF Star-Magic-Program v0.190.0: PAPER_187 wired - 7-object v2 source catalog; STRUCTURAL DISCOVERY: B/Bcrit = 0.1 = F_TRZ EXACT for ALL systems (B = F_TRZ*Bcrit universal - Q-002 REFRAMED); Q-176a resolved (vexp = 1e3); omega2 = -omega1 universal (DPM CW/CCW echo); Westerlund = Tapestry intentional. Q-183. Wired 191/2255, gate 1260/0. Registry 450 rows / 962 edges / 191 ledgers (measured)."
+version = "0.191.0"
+description = "UQFF Star-Magic-Program v0.191.0: PAPER_188 wired - CoAnQi build/distribution (NSIS + Debian); census 6,688 physics terms at 4.68 terms/kB EXACT; UPX chain consistent with 169; Qt6-claimed-vs-Qt5-shipped + shortcut-path bugs pinned. Q-184. Wired 192/2255, gate 1265/0. Registry 451 rows / 964 edges / 192 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

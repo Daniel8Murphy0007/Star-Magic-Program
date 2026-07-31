@@ -2204,3 +2204,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 191/2,255 (11 ✓, 180 ⚠). Next: PAPER_188.
 
 ---
+
+## 2026-07-31 — v0.191.0 — BAND 1: PAPER_188
+
+- PAPER_188 wired (⚠ Q-184): build/distribution. 6,688-
+  term census; density arithmetic exact; Qt version +
+  script bugs pinned.
+- Campaign: 192/2,255 (11 ✓, 181 ⚠). Next: PAPER_189.
+
+---

@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.191.0] — 2026-07-31 — BAND 1: PAPER_188 — BUILD ARCHITECTURE
+
+### Added
+- **PAPER_188 dispatch** (NSIS + Debian packaging, S49,
+  sec 2.5): cross-platform distribution for the CoAnQi
+  engine. CENSUS: 6,688+ physics terms; 4.68 terms/kB
+  EXACT (6688/1430); UPX 15.51% implies 9.2 MB
+  uncompressed (169-consistent); 446 modules / 107,019
+  lines consistent. PINNED: Qt6-claimed vs Qt5-shipped
+  DLLs; start-menu shortcut-path bug; registry mojibake.
+- OPEN_RULING Q-184.
+- Gate: 1,265 assertions, 0 failures. Registry: 451 rows / 964 edges / 192 ledgers (measured).
+
+---
+
 ## [0.190.0] — 2026-07-31 — BAND 1: PAPER_187 — RATIO LOCK DISCOVERY
 
 ### Added

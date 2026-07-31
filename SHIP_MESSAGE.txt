@@ -1,37 +1,26 @@
-v0.190.0 BAND 1: PAPER_187 wired - RATIO LOCK DISCOVERY
+v0.191.0 BAND 1: PAPER_188 wired - BUILD ARCHITECTURE
 
-PAPER_187 Canonical 7-Object MUGESystem Catalog
-(OPEN_RULING Q-183) - Session 49, sec 2.5, v2 rewrite:
-  The source table behind the S49 papers: 18 parameters
-  x 7 systems spanning 22.5 orders of magnitude in mass.
+PAPER_188 CoAnQi Build Distribution Architecture
+(OPEN_RULING Q-184) - Session 49, sec 2.5:
+  Cross-platform packaging for the CoAnQi engine: NSIS
+  Windows installer + dpkg-deb Debian package, embedding
+  the Qt runtime and Wolfram WSTP.
 
-  STRUCTURAL DISCOVERY (the headline): EVERY system in
-  the catalog has B/Bcrit = 0.1 = F_TRZ EXACT - SGR
-  1e10/1e11, SgrA* 1e-5/1e-4, the GMC class 1e-4/1e-3,
-  Rings 1e-5/1e-4, Student's Guide 1e-10/1e-9. The
-  catalog encodes B = F_TRZ*Bcrit universally: the
-  RATIO is the primitive-locked object, and the
-  per-system Bcrit values are derived from the local
-  field. This REFRAMES the long-running Q-002 B_crit
-  fork - 4.4e9/4.4e13/1e11 were per-context Bcrit
-  values; the invariant is F_TRZ.
+  CORPUS CENSUS STAT registered: 6,688+ physics terms
+  across 446 modules / 107,019 lines (169-consistent);
+  density = 6688/1430 kB = 4.68 terms/kB EXACT
+  arithmetic; the UPX 15.51% ratio implies a 9.2 MB
+  uncompressed binary, consistent with 169's 1.43 MB
+  final. The Gadget-4/AREPO density comparison is
+  comparison-only (Rule 4 clean).
 
-  RESOLUTIONS: Q-176a - catalog vexp(SGR) = 1e3
-  canonical (174's printed output carried the 100x
-  slip); ffluid = 1.269e-14 confirms 180's afluid
-  reconstruction; Westerlund 2 = Tapestry DECLARED
-  intentional ("equivalent GMC-class" - 158's duplicate
-  rows were design, not error); omega2 = -omega1 for
-  ALL seven systems - the predecessor's DPM CW/CCW
-  counter-rotating grinding poles appearing in the
-  operational catalog.
+  PINNED (minor): the abstract embeds "the CoAnQi Qt6
+  GUI" while the NSIS script ships Qt5 DLLs (and 169
+  also said Qt6) - which major version is the actual
+  build?; start-menu shortcut paths missing separators
+  (real script bug if ever rebuilt from this listing);
+  registry paths mojibake-garbled.
 
-  PINNED: "six orders of magnitude in mass" vs 23 on
-  the same page (actual 22.5); Student M_DM = M while
-  claiming 5x; SgrA* horizon-area 1.5e9 break; 1e26 m
-  labeled 14 Gpc (actual 3.2); kpc-object redshifts.
-
-Q-183 queued; Q-176 annotated. Gate 1,260 assertions 0
-failures. Registry 450 rows / 962 edges / 191 ledgers
-(measured). Wired 191/2,255 (11 clean, 180 OPEN_RULING).
-Next: PAPER_188.
+Q-184 queued. Gate 1,265 assertions 0 failures. Registry
+451 rows / 964 edges / 192 ledgers (measured). Wired
+192/2,255 (11 clean, 181 OPEN_RULING). Next: PAPER_189.

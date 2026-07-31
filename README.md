@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.190.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.190.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.191.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.191.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1260%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-191-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1265%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-192-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.190.0 wiring campaign live**
+**UQFF systematic rebuild — v0.191.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.190.0)
+## What is currently shipped (v0.191.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 191 / 2,255** (11 ✓ · 180 ⚠ OPEN_RULING · 183 rulings queued) — B = F_TRZ·Bcrit universal lock (187)
+**Wired so far: 192 / 2,255** (11 ✓ · 181 ⚠ OPEN_RULING · 184 rulings queued) — build architecture; terms census (188)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -250,6 +250,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_185 | Riemann π-Bridge | eta-not-Mobius correction; 3-way fork; honest hedge; Q-181 |
 | PAPER_186 | Body Reference v2 | Q-166b/c resolved; placeholder dropped from μ_s; Q-182 |
 | PAPER_187 | 7-Object Catalog | B/Bcrit = F_TRZ ALL systems; Q-176a resolved; ω₂ = −ω₁; Q-183 |
+| PAPER_188 | Build Architecture | 6,688-term census; 4.68 terms/kB; Qt5/Qt6 pin; Q-184 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -260,7 +261,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (1,260 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (1,265 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -471,7 +472,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.187.0 | Band 1: PAPER_184 | 188 |
 | v0.188.0 | Band 1: PAPER_185 | 189 |
 | v0.189.0 | Band 1: PAPER_186 | 190 |
-| **v0.190.0** ← current | Band 1: PAPER_187 | 191 |
+| v0.190.0 | Band 1: PAPER_187 | 191 |
+| **v0.191.0** ← current | Band 1: PAPER_188 | 192 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

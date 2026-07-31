@@ -961,3 +961,5 @@ primitive,F_TRZ,observable,muge_7object_catalog_v2,B/Bcrit lock
 observable,muge_7object_catalog_v2,paper,PAPER_180,ffluid confirmation
 observable,catalog_defects,paper,PAPER_187,defect set
 observable,catalog_defects,paper,PAPER_174,vexp resolution
+observable,coanqi_build_distribution,paper,PAPER_188,packaging
+observable,coanqi_build_distribution,paper,PAPER_169,module/line consistency

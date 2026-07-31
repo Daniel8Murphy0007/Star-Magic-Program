@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 191 (11 ✓, 180 ⚠ OPEN_RULING)
+- **Wired:** 192 (11 ✓, 181 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2064
+- **Not yet touched:** 2063
 
 ---
 
@@ -1160,7 +1160,7 @@
 | ⬜ | PAPER_1887 | FUSION Q ITER UQFF |
 | ⬜ | PAPER_1888 | NEUTRON NBAR NEDM LANL UQFF |
 | ⬜ | PAPER_1889 | PROTEIN FOLDING LEVINTHAL UQFF |
-| ⬜ | PAPER_188 | CoAnQi Build Distribution Architecture |
+| ⚠ | PAPER_188 | CoAnQi Build Distribution Architecture |
 | ⬜ | PAPER_1890 | HYDROGEN SPECTRUM PRECISION UQFF |
 | ⬜ | PAPER_1891 | DISTANCE LADDER SNIA UQFF |
 | ⬜ | PAPER_1892 | PERIODIC TABLE MOLECULAR ORBITALS UQFF |
