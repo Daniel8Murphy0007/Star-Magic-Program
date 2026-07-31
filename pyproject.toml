@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.175.0"
-description = "UQFF Star-Magic-Program v0.175.0: PAPER_172 wired - compute_FU() assembly capstone; SMOKING GUN: code unit test expects resonance 1.773e-9 vs tables 1.655e45 (9.3e53) - cascade inversion PROVEN from inside the codebase; FOUR Ubi forms active; A_mu_nu signature flip; two distinct wind couplings clarified. Q-168. Wired 176/2255, gate 1165/0. Registry 421 rows / 901 edges / 176 ledgers (measured)."
+version = "0.176.0"
+description = "UQFF Star-Magic-Program v0.176.0: PAPER_173 wired - 9-term compressed MUGE decomposition; DERIVED: the 1.782e39 unit-test value = 3GM^2/r^3 at SGR (0.05%) - compressed tables structurally explained (pairs with 172 resonance disproof); H0 = 70 CANONICAL vote (vs 163/152 67.4); paired 10x mantissa-exact slips; Bcrit 1e11 third-way vote. Q-169. Wired 177/2255, gate 1172/0. Registry 423 rows / 906 edges / 177 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

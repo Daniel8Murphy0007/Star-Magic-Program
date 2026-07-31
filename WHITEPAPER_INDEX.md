@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 176 (11 ✓, 165 ⚠ OPEN_RULING)
+- **Wired:** 177 (11 ✓, 166 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2079
+- **Not yet touched:** 2078
 
 ---
 
@@ -995,7 +995,7 @@
 | ⬜ | PAPER_1737 | KEPLER ETA MAX 0 7405 |
 | ⬜ | PAPER_1738 | BQP BOUND 2 POW D 2 |
 | ⬜ | PAPER_1739 | U I SUN 2 75E 7 |
-| ⬜ | PAPER_173 | Modular Compressed MUGE 9Term Decomposition |
+| ⚠ | PAPER_173 | Modular Compressed MUGE 9Term Decomposition |
 | ⬜ | PAPER_1740 | LAMBDA CANONICAL 5 957E 10 |
 | ⬜ | PAPER_1741 | DS PHASE INVERTED K MEX |
 | ⬜ | PAPER_1742 | GOLDBACH WEAK ODD 3 PRIMES |

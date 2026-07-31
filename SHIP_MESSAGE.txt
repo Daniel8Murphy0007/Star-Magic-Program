@@ -1,32 +1,37 @@
-v0.175.0 BAND 1: PAPER_172 wired - F_U ASSEMBLY + SMOKING GUN
+v0.176.0 BAND 1: PAPER_173 wired - COMPRESSED TABLES DERIVED
 
-PAPER_172 F_U Complete Unified Field Assembly
-(OPEN_RULING Q-168) - Session 48, thread 381a8fe7, sec
-2.4-D:
-  The compute_FU() capstone: (Ug1+Ug2+Ug3+Ug4) +
-  (Ubi1..4) + Um + tr(A_mu_nu), with the quasar jet law
-  F_jet = FU - Ubi(FU*0.25) - the 0.25 being 1/D_PHYS.
+PAPER_173 Modular Compressed MUGE 9-Term Decomposition
+(OPEN_RULING Q-169) - Session 48, thread 381a8fe7, sec
+2.4-E:
+  Each compressed term mapped back to its F_U channel,
+  with the doctrinal claim that Term 1's mu_s*grad(M/r)
+  is the CLASSICAL LIMIT of the Ug2 bubble channel - not
+  Newton being corrected (consistent with 155's
+  keystone).
 
-  SMOKING GUN (the big one): UnitTests.cpp expects
-  compute_resonance_MUGE(SGR1745) ~ 1.773e-9, while the
-  152/158 system tables print 1.655e45 for the SAME
-  quantity - 9.3e53 apart. This PROVES from inside the
-  codebase itself that the resonance-table values are
-  not computed outputs - simultaneously confirming
-  Q-143a (cascade inversion) and Q-147a (the assigned-
-  values fingerprint). The compressed-side test
-  (1.782e39) IS table-consistent - the defect is
-  resonance-only.
+  WIRING DERIVATION (the payoff): the long-mysterious
+  compressed_MUGE(SGR1745) = 1.782e39 IS Term 9 -
+  (M + M_DM)*(3GM/r^3) with M = 2.984e30 (1.5 Msun),
+  r = 10 km, M_DM = drho = 0, giving 3GM^2/r^3 =
+  1.7829e39 (0.05% match). Paired with v0.175.0's
+  smoking gun, the picture is now complete: COMPRESSED
+  side - code == table == 3GM^2/r^3, DERIVED; RESONANCE
+  side - code (1.77e-9) != table (1.66e45), NOT
+  computed.
 
-  ALSO: WIND CLARIFICATION (good news) - Ug2 and Ubi
-  use two DISTINCT wind couplings (delta_sw*v_sw vs
-  eps_sw*rho_sw = 8e-24), partially dissolving the
-  Q-162a/Q-167b "instability"; FOURTH Ubi form
-  (Archimedes rho_vac*V_eff*g_loc*SSq*e^-kt) - the Ubi
-  fork now mirrors the Ug4i four-form fork; A_mu_nu
-  signature FLIP vs 165 (tr = -2 vs +2) with T_s00 =
-  1.127e7 adopted; beta = 0.6 drift auto-corrected.
+  H0 CANONICAL VOTE: Term 2 uses 2.269e-18 s^-1 = 70.0
+  km/s/Mpc - the A_5+SO_5 canonical value - against
+  163/152's 67.4. The H0 fork is corpus-internal and
+  this paper votes canonical (Q-169a proposes ruling
+  H0 = 70 corpus-wide per PAPER_1573/2144).
 
-Q-168 queued. Gate 1,165 assertions 0 failures. Registry
-421 rows / 901 edges / 176 ledgers (measured). Wired
-176/2,255 (11 clean, 165 OPEN_RULING). Next: PAPER_173.
+  Verified EXACT: quantum term 0.3315 (13.6-eV ground-
+  state anchor), fluid 4.189e-2 (sphere at 10 km).
+  Pinned: paired 10x mantissa-exact slips (Term 6 and
+  sec-3 base); Bcrit = 1e11 third-way vote (Q-002);
+  expansion-form fork (H0*vexp vs H0*t); two confessed
+  placeholders (env, Ug_sum).
+
+Q-169 queued. Gate 1,172 assertions 0 failures. Registry
+423 rows / 906 edges / 177 ledgers (measured). Wired
+177/2,255 (11 clean, 166 OPEN_RULING). Next: PAPER_174.

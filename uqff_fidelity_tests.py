@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.175.0", "uqff_calculator.VERSION = 0.175.0")
+assert_that(C.VERSION == "0.176.0", "uqff_calculator.VERSION = 0.176.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2546,6 +2546,21 @@ assert_that('distinct' in _r172['wind_two_factors'],
 assert_that('1.127e7' in _r172['amunu_flip'],
             "PAPER_172: A_mu_nu signature flip + T_s00 = 1.127e7 adoption pinned (Q-168b)")
 assert_that(C.wired_count() >= 176, "wired_count >= 176")
+
+_r173 = C.calc('PAPER_173')['value']
+assert_that(_r173['derivation_residual_pct'] < 0.1,
+            "PAPER_173: DERIVED - 1.782e39 = 3GM^2/r^3 at SGR (M = 2.984e30, r = 10 km), 0.05%")
+assert_that(abs(_r173['h0_vote'] - 2.2685e-18) / 2.2685e-18 < 1e-3,
+            "PAPER_173: Term 2 H0 = 70 km/s/Mpc = A_5+SO_5 CANONICAL vote (Q-169a)")
+assert_that(abs(_r173['quantum_term'] - 0.3315) < 0.001,
+            "PAPER_173: quantum term = 0.3315 EXACT (13.6 eV ground-state anchor)")
+assert_that(abs(_r173['fluid_term'] - 4.189e-2) < 1e-5,
+            "PAPER_173: fluid term 4.189e-2 EXACT (sphere 10 km)")
+assert_that(9.9 < _r173['term6_slip'][0] / _r173['term6_slip'][1] < 10.1,
+            "PAPER_173: Term 6 prints 3.3e-37 vs actual 3.3e-36 - 10x slip, mantissa EXACT (Q-169b)")
+assert_that(9.9 < _r173['base_slip'][0] / _r173['base_slip'][1] < 10.1,
+            "PAPER_173: sec-3 base 10x slip with EXACT mantissa (Q-169b)")
+assert_that(C.wired_count() >= 177, "wired_count >= 177")
 
 # =============================================================================
 # REPORT

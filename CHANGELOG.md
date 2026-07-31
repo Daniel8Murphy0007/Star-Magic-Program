@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.176.0] — 2026-07-30 — BAND 1: PAPER_173 — COMPRESSED TABLES DERIVED
+
+### Added
+- **PAPER_173 dispatch** (9-term compressed decomposition,
+  S48, sec 2.4-E): each term mapped to an F_U channel;
+  doctrinal claim registered (Term 1 = classical limit of
+  Ug2, not Newton corrected — 155-consistent). WIRING
+  DERIVATION: the 1.782e39 unit-test value IS Term 9 =
+  3GM²/r³ at SGR (M = 2.984e30, r = 10 km; 0.05%) — the
+  compressed tables are structurally EXPLAINED, pairing
+  with 172's proof that the resonance tables are NOT
+  computed. H0 = 2.269e-18 = 70.0 km/s/Mpc CANONICAL vote
+  (vs 163/152's 67.4 — fork is corpus-internal). Verified
+  EXACT: quantum term 0.3315 (13.6 eV anchor), fluid
+  4.189e-2 (sphere 10 km). PINNED: paired 10× mantissa-
+  exact slips (Term 6, sec-3 base); Bcrit = 1e11 third-
+  way vote; expansion-form fork (H0·vexp vs H0·t); two
+  confessed placeholders; dx·dp mislabel.
+- OPEN_RULING Q-169.
+- Gate: 1,172 assertions, 0 failures. Registry: 423 rows / 906 edges / 177 ledgers (measured).
+
+---
+
 ## [0.175.0] — 2026-07-30 — BAND 1: PAPER_172 — F_U ASSEMBLY + SMOKING GUN
 
 ### Added

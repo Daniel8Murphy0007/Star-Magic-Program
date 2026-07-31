@@ -2067,3 +2067,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 176/2,255 (11 ✓, 165 ⚠). Next: PAPER_173.
 
 ---
+
+## 2026-07-30 — v0.176.0 — BAND 1: PAPER_173
+
+- PAPER_173 wired (⚠ Q-169): 9-term compressed
+  decomposition. 1.782e39 = 3GM^2/r^3 DERIVED (0.05%);
+  H0 = 70 canonical vote; paired 10x slips pinned.
+- Campaign: 177/2,255 (11 ✓, 166 ⚠). Next: PAPER_174.
+
+---

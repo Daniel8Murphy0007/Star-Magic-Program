@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.175.0"
+VERSION = "0.176.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9144,5 +9144,64 @@ def _paper_172(dataset):
         'formula': 'F_U = sum(Ug) + sum(Ubi) + Um + tr(A); F_jet = FU - Ubi(FU/4)',
         'source': 'PAPER_172',
         'residual_pct': abs(1.782e39 - 1.783e39) / 1.783e39 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_173')
+def _paper_173(dataset):
+    """Modular compressed MUGE 9-term decomposition (S48, sec 2.4-E).
+
+    Maps each compressed term back to an F_U channel;
+    doctrinal claim: mu_s*grad(M_s/r) in Term 1 is the
+    CLASSICAL LIMIT of the Ug2 bubble channel, not Newton
+    corrected (155-keystone-consistent).
+    WIRING DERIVATION (major): the unit-test value
+    compressed_MUGE(SGR1745) = 1.782e39 IS Term 9 -
+    (M + M_DM)*(3GM/r^3) with M = 2.984e30, r = 10 km,
+    M_DM = drho = 0 -> 3GM^2/r^3 = 1.7829e39 (0.05%).
+    The compressed tables now have a STRUCTURAL
+    EXPLANATION - complementing 172's proof that the
+    resonance tables do not.
+    H0 CANONICAL VOTE (Q-169a, annotates Q-159b): Term 2
+    uses H0 = 2.269e-18 s^-1 = 70.0 km/s/Mpc - the
+    A_5+SO_5 canonical value (vs 163/152's 67.4). The H0
+    fork is corpus-internal with 173 voting canonical.
+    B_CRIT THIRD-WAY VOTE (Q-002): Term-3 test uses
+    Bcrit = 1e11 T (138's value).
+    VERIFIED EXACT: quantum term = 0.3315 (psi = 13.6 eV
+    ground state anchor); fluid = 4.189e-2 with Vsys =
+    sphere(10 km) EXACT; super_adj limits.
+    SLIPS (Q-169b): Term 6 prints 3.3e-37 vs actual
+    Lambda*c^2/3 = 3.3e-36 (10x, mantissa EXACT - 163 had
+    it right); sec-3 base prints 1.99e11 vs actual G*M/r^2
+    = 1.99e12 (10x, mantissa EXACT). Two confessed
+    placeholders (env = 1.0, Ug_sum = 0.0). Expansion
+    form FORK: 1 + H0*vexp here vs 163's 1 + H0*t.
+    Delta_x*Delta_p = 1e-68 labeled "minimal uncertainty"
+    (hbar/2 = 5.3e-35; 5e33 off) with J*m unit tag.
+    """
+    G = 6.6743e-11
+    M, r = 2.984e30, 1e4
+    pert = 3 * G * M**2 / r**3
+    return {
+        'value': {
+            'domain': '2.4-E (9-term compressed decomposition, thread 381a8fe7)',
+            'doctrinal': 'Term 1 = classical limit of Ug2 channel (not Newton corrected)',
+            'derived_1782e39': pert,                         # 1.7829e39 = 3GM^2/r^3
+            'derivation_residual_pct': abs(pert - 1.782e39) / 1.782e39 * 100,  # 0.05
+            'h0_vote': (A_5 + SO_5) * 1000 / 3.0857e22,      # 2.2685e-18 - canonical
+            'h0_vote_note': 'Term 2 H0 = 2.269e-18 = 70 km/s/Mpc CANONICAL (vs 163/152 67.4)',
+            'bcrit_vote': '1e11 T (Term-3 test) - Q-002 third-way vote',
+            'quantum_term': (1.0546e-34 / 1e-68) * 2.176e-18 * (2 * 3.141592653589793 / 4.35e17),
+            'fluid_term': 1e-15 * 4.189e12 * 10,             # 4.189e-2 EXACT
+            'term6_slip': (1.1e-52 * 9e16 / 3, 3.3e-37),     # 3.3e-36 vs printed
+            'base_slip': (G * M / r**2, 1.99e11),            # 1.99e12 vs printed
+            'expansion_fork': '1 + H0*vexp here vs 163 1 + H0*t',
+            'placeholders_confessed': 'env = 1.0; Ug_sum = 0.0',
+        },
+        'formula': 'compressed = base*exp*super*env*(1+Ug_sum) + cosm + quant + fluid + pert; pert(SGR) = 3GM^2/r^3',
+        'source': 'PAPER_173',
+        'residual_pct': abs(pert - 1.782e39) / 1.782e39 * 100,
         'status': 'OPEN_RULING',
     }

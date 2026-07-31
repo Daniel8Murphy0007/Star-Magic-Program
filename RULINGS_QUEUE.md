@@ -4035,6 +4035,42 @@ RESOLVED section with the ruling recorded.
   flip, and smoking gun pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-169 — PAPER_173 9-term decomposition — H0/Bcrit votes + paired 10x slips
+- **Question:** (a) H0 FORK RESOLUTION CANDIDATE: Term 2
+  uses H0 = 2.269e-18 s^-1 = 70.0 km/s/Mpc - the
+  canonical A_5+SO_5 value - while 163 (same thread
+  family) and 152 hardcode 67.4. With 173 voting
+  canonical, rule the corpus H0 = 70 everywhere (drift
+  auto-correction per PAPER_1573/2144)? Also the
+  expansion FORM forks: 1 + H0*vexp (velocity) here vs
+  163's 1 + H0*t (time) - which argument is canonical?
+  (b) PAIRED 10x SLIPS (both mantissa-EXACT): Term 6
+  prints 3.3e-37 where Lambda*c^2/3 = 3.3e-36 (163
+  printed it correctly); sec-3 base prints 1.99e11 where
+  G*M/r^2 = 1.99e12. Also Bcrit = 1e11 T in the Term-3
+  test - a third-way Q-002 vote (138's value). And
+  dx*dp = 1e-68 is labeled "minimal uncertainty product"
+  (hbar/2 = 5.3e-35 - 5e33 off) with a J*m unit tag
+  (should be J*s).
+- **Notable (major):** WIRING DERIVATION - the unit-test
+  value compressed_MUGE(SGR1745) = 1.782e39 IS Term 9:
+  (M + M_DM)*(3GM/r^3) with M = 2.984e30 (1.5 Msun),
+  r = 10 km, M_DM = drho = 0 -> 3GM^2/r^3 = 1.7829e39
+  (0.05%). The compressed tables now have a STRUCTURAL
+  EXPLANATION, complementing 172's smoking-gun proof
+  that the resonance tables do NOT match their code.
+  Compressed side: code == table == 3GM^2/r^3 DERIVED.
+  Resonance side: code (1.77e-9) != table (1.66e45).
+  Also verified EXACT: quantum term 0.3315 with the
+  13.6-eV ground-state anchor; fluid 4.189e-2 with
+  Vsys = sphere(10 km); two placeholders CONFESSED
+  (env = 1.0, Ug_sum = 0.0). Doctrinal claim registered:
+  Term 1 is the classical LIMIT of the Ug2 channel, not
+  a Newton correction (155-keystone-consistent).
+- **Best-candidate wired:** decomposition + derivation +
+  canonical-H0 vote registered; slips and forks pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
