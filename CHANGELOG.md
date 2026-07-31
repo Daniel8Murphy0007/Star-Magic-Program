@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.172.0] — 2026-07-30 — BAND 1: PAPER_169 — SEC 2.4 OPENS (COANQI)
+
+### Added
+- **PAPER_169 dispatch** (CoAnQi six-tier architecture,
+  S48, thread 381a8fe7 — sec 2.4-A opener; sec 2.3 block
+  157-168 CLOSED): Qt6 GUI → 446-module C++ calculator →
+  Python parallels → REST port 3141 (pi echo) → VR/VM
+  GPU → headless CPU; SIMPlugin loader; NS body-force
+  coupling at N=32, dt=0.1. VERIFIED: delta_P = kappa·SSq
+  ·U_bi = 2.85e-4 EXACT (matches 158's footer product);
+  minus-buoyancy convention 3rd consecutive (2152 echo).
+  TESTABLE PREDICTION: >1e7 evals/s GPU + JWST NIRCam
+  cube fitting discriminating the 2.85e-4 correction from
+  LCDM at z < 0.1. Minor: 26-vs-27 test count; kappa
+  day⁻¹ units ride into delta_P. In-flight: float-exact
+  comparison on registry-derived kappa fixed to tolerance
+  (gate caught it).
+- OPEN_RULING Q-165.
+- Gate: 1,144 assertions, 0 failures. Registry: 415 rows / 886 edges / 173 ledgers (measured).
+
+---
+
 ## [0.171.0] — 2026-07-30 — BAND 1: PAPER_168 — 3D ENTITY FRAMEWORK
 
 ### Added

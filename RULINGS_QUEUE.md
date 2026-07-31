@@ -3889,6 +3889,39 @@ RESOLVED section with the ruling recorded.
   cross-checks registered; scale defects pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-165 — PAPER_169 CoAnQi architecture — test count + kappa units
+- **Question:** (a) unit-test count: 169 says "26
+  validated unit tests"; 157 (same C++ codebase family)
+  said "all 27 unit tests PASS". Which count is current?
+  (b) delta_P_UQFF = kappa*SSq*U_bi: kappa carries day^-1
+  units that ride into the pressure correction
+  uncompensated - is the 2.85e-4 factor per-day (with an
+  implicit t = 1 day), or is kappa*SSq here meant as a
+  dimensionless product?
+- **Notable:** sec 2.4-A OPENS (thread 381a8fe7, Session
+  48) - sec 2.3 (157-168, 12 papers) is CLOSED. The
+  architecture physics is corpus-consistent: kappa*SSq =
+  2.85e-4 EXACT matches 158's footer product; the F_U
+  minus-buoyancy sign convention appears for the 3rd
+  consecutive paper (PAPER_2152 provenance echo); REST
+  port 3141 is a pi digits echo. TESTABLE PREDICTION
+  registered: >1e7 UQFF evals/s on GPU enabling JWST
+  NIRCam cube fitting to discriminate the 2.85e-4
+  buoyancy correction from LCDM at z < 0.1 - concrete
+  and dated (2026 target). The Gadget-4/AREPO mention is
+  comparison-only (Rule 4 compliant).
+  SEC 2.3 BLOCK SUMMARY (157-168): F_U = -13*Ug3
+  structure derived (157) and k4 = 2 confirmed by corpus
+  (160, self-rectification validated); blend underflow
+  artifact (158); E_react three-route fork; SGR B fork
+  (3e11 vs 2.3e10); YM gap third value (167); recurring
+  mantissa-exact exponent slips throughout; two clean
+  testable predictions (2.33x solar cycle, GW231123
+  quantization).
+- **Best-candidate wired:** architecture + block
+  transition + prediction registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.171.0"
-description = "UQFF Star-Magic-Program v0.171.0: PAPER_168 wired - MUGE 3D entity framework (Tier 3 VR/VM gateway, 7 systems); F_U minus-buoyancy sign convention predecessor-consistent (2152 echo); overlay values cross-check EXACT vs 157/158; scale-table defects (13-vs-23 orders, 1e6x law break) pinned. Q-164. Wired 172/2255, gate 1138/0. Registry 413 rows / 882 edges / 172 ledgers (measured)."
+version = "0.172.0"
+description = "UQFF Star-Magic-Program v0.172.0: PAPER_169 wired - CoAnQi six-tier architecture OPENS sec 2.4 (thread 381a8fe7); sec 2.3 block (157-168) CLOSED; kappa*SSq = 2.85e-4 EXACT corpus-consistent; minus-buoyancy convention 3rd consecutive; GPU/JWST discrimination prediction registered. Q-165. Wired 173/2255, gate 1144/0. Registry 415 rows / 886 edges / 173 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

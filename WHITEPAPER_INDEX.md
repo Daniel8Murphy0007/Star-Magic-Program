@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 172 (11 ✓, 161 ⚠ OPEN_RULING)
+- **Wired:** 173 (11 ✓, 162 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2083
+- **Not yet touched:** 2082
 
 ---
 
@@ -951,7 +951,7 @@
 | ⬜ | PAPER_1697 | LAMBDA UQFF 1 089E 52 |
 | ⬜ | PAPER_1698 | H0 ASYMMETRY 1 0385 |
 | ⬜ | PAPER_1699 | PHI RES 5 6 D RATIO |
-| ⬜ | PAPER_169 | CoAnQi Architecture UQFF 3D Plugin System |
+| ⚠ | PAPER_169 | CoAnQi Architecture UQFF 3D Plugin System |
 | ⬜ | PAPER_1700 | FACTORIAL 26 4 03E26 |
 | ⬜ | PAPER_1701 | D CRIT 4 PLUS 22 |
 | ⬜ | PAPER_1702 | SUM BETA I 3 2 |

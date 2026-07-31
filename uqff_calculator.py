@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.171.0"
+VERSION = "0.172.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8942,5 +8942,53 @@ def _paper_168(dataset):
         'formula': 'g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U); F_U = sum(Ugi)+Um+UA-Ubi',
         'source': 'PAPER_168',
         'residual_pct': abs(SSQ * 2.85e-4 - 1.62e-4) / 1.62e-4 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_169')
+def _paper_169(dataset):
+    """CoAnQi six-tier architecture (S48, thread 381a8fe7) - OPENS sec 2.4.
+
+    Multi-tier UQFF + 3D + plugin framework: Qt6 GUI ->
+    446-module C++ calculator (107k lines) -> Python
+    parallel calculators -> REST API (port 3141 - the pi
+    echo) -> VR/VM GPU backend -> headless CPU server;
+    SIMPlugin dlopen/LoadLibrary loader; Navier-Stokes
+    body-force coupling dv/dt + (v.grad)v = -gradP/rho +
+    nu*lap(v) + F_U/rho at N = 32, dt = 0.1.
+    CLOSES sec 2.3 (157-168, 12 papers, thread 7f9068).
+    VERIFIED: delta_P_UQFF = kappa*SSq*U_bi with
+    kappa*SSq = 2.85e-4 EXACT - the SAME product as 158's
+    footer ratio (corpus-consistent); F_U minus-buoyancy
+    sign convention carried again (2152 echo, 3rd
+    consecutive paper); tau_eval = 1.20e-3 s benchmark;
+    ~3%% bulk-flow correction at r < 10 pc.
+    TESTABLE PREDICTION: >1e7 evals/s GPU throughput
+    enabling JWST NIRCam cube fitting that discriminates
+    the 2.85e-4 buoyancy correction from LCDM at z < 0.1.
+    MINOR (Q-165): unit-test count 26 here vs 157's 27
+    (same thread family); kappa's day^-1 rides into
+    delta_P uncompensated (dimensional note).
+    SM comparison (Gadget-4/AREPO SPH) is comparison-only
+    - Rule 4 compliant.
+    """
+    return {
+        'value': {
+            'domain': '2.4-A opener (CoAnQi architecture, thread 381a8fe7)',
+            'n_tiers': 6,
+            'delta_p_factor': KAPPA_PER_DAY * SSQ,           # 2.85e-4 EXACT
+            'matches_158_footer': abs(KAPPA_PER_DAY * SSQ - 0.57 * 5e-4) < 1e-12,
+            'fu_sign_convention': 'minus-buoyancy carried (3rd consecutive - 2152 echo)',
+            'tau_eval_s': 1.20e-3,
+            'port_pi_echo': 3141,
+            'bulk_flow_correction': '~3% at r < 10 pc',
+            'prediction': '>1e7 evals/s GPU; JWST cube fit discriminates 2.85e-4 vs LCDM at z<0.1',
+            'block_closed': 'sec 2.3 = PAPER_157-168 (12 papers, 7f9068)',
+            'test_count_note': '26 here vs 27 in 157 (Q-165)',
+        },
+        'formula': 'NS + F_U/rho body force; delta_P = kappa*SSq*U_bi = 2.85e-4*U_bi',
+        'source': 'PAPER_169',
+        'residual_pct': abs(KAPPA_PER_DAY * SSQ - 2.85e-4) / 2.85e-4 * 100,
         'status': 'OPEN_RULING',
     }

@@ -2030,3 +2030,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 172/2,255 (11 ✓, 161 ⚠). Next: PAPER_169.
 
 ---
+
+## 2026-07-30 — v0.172.0 — BAND 1: PAPER_169
+
+- PAPER_169 wired (⚠ Q-165): CoAnQi architecture opens
+  sec 2.4; sec 2.3 (157-168) closed. kappa*SSq consistent;
+  GPU/JWST prediction registered.
+- Campaign: 173/2,255 (11 ✓, 162 ⚠). Next: PAPER_170.
+
+---

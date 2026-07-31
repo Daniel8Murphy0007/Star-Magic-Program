@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.171.0", "uqff_calculator.VERSION = 0.171.0")
+assert_that(C.VERSION == "0.172.0", "uqff_calculator.VERSION = 0.172.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2488,6 +2488,19 @@ assert_that(_r168['size_span_orders'] > 20,
 assert_that('1e6x' in _r168['scale_law_break'],
             "PAPER_168: entity scale law breaks 1e6x at Rings row (Q-164)")
 assert_that(C.wired_count() >= 172, "wired_count >= 172")
+
+_r169 = C.calc('PAPER_169')['value']
+assert_that(abs(_r169['delta_p_factor'] - 2.85e-4) < 1e-12,
+            "PAPER_169: delta_P factor kappa*SSq = 2.85e-4 EXACT (matches 158 footer product)")
+assert_that(_r169['matches_158_footer'],
+            "PAPER_169: kappa*SSq product corpus-consistent with 158")
+assert_that(_r169['n_tiers'] == 6,
+            "PAPER_169: six-tier CoAnQi architecture registered")
+assert_that(_r169['port_pi_echo'] == 3141,
+            "PAPER_169: REST port 3141 (pi echo)")
+assert_that('157-168' in _r169['block_closed'],
+            "PAPER_169: sec 2.3 block (157-168) CLOSED; sec 2.4 opens")
+assert_that(C.wired_count() >= 173, "wired_count >= 173")
 
 # =============================================================================
 # REPORT

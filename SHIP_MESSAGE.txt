@@ -1,30 +1,33 @@
-v0.171.0 BAND 1: PAPER_168 wired - 3D ENTITY FRAMEWORK
+v0.172.0 BAND 1: PAPER_169 wired - SEC 2.4 OPENS (COANQI)
 
-PAPER_168 MUGE 3D Simulation Entity Framework
-(OPEN_RULING Q-164) - Session 47, thread 7f9068, sec 2.3:
-  Architecture paper: the Tier 3 VR/VM gateway. 7-system
-  entity framework (per-system archives, plugin DLLs),
-  OpenGL multi-viewport, Perlin terrain mapping physics
-  fields via y = log10|g_MUGE|*scale, MicroTeX equation
-  overlay.
+PAPER_169 CoAnQi Multi-Tier Architecture (OPEN_RULING
+Q-165) - Session 48, thread 381a8fe7, sec 2.4-A opener.
+SEC 2.3 BLOCK (157-168, 12 papers) IS CLOSED.
 
-  PHYSICS CONSISTENCY (the good part): the header F_U =
-  sum(Ugi) + Um + UA - Ubi carries the EXPLICIT MINUS on
-  buoyancy - matching the predecessor master-equation
-  convention (negative-buoyancy-in-sum, a PAPER_2152
-  provenance echo appearing inside the sec 2.3 thread);
-  the g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U) correction
-  evaluates to 1.62e-4 with 158's footer ratio; and the
-  LaTeX overlay values (1.78e39 / 1.66e45 / -2.06e59)
-  cross-check EXACTLY against 158's SGR row and 157's
-  Sun F_U.
+  Six-tier framework: Qt6 GUI -> 446-module C++
+  calculator (107k lines) -> Python parallel calculators
+  -> REST API on port 3141 (a pi-digits echo) -> VR/VM
+  GPU backend -> headless CPU server; SIMPlugin
+  cross-platform loader; Navier-Stokes body-force
+  coupling with F_U/rho at N = 32, dt = 0.1.
 
-  PINNED: "systems span 13 orders of magnitude" - actual
-  size span ~23 orders (scale factors span 16); the
-  entity scale law is linear-in-ly for three rows but
-  breaks by 1e6 at Rings (1 Gly -> 1000) and Student
-  (Hubble -> 1e13) with no stated compression law.
+  CORPUS-CONSISTENT: delta_P = kappa*SSq*U_bi with
+  kappa*SSq = 2.85e-4 EXACT - the same product as 158's
+  footer; the F_U minus-buoyancy sign convention appears
+  for the 3rd consecutive paper (PAPER_2152 provenance
+  echo). TESTABLE PREDICTION registered: >1e7 UQFF
+  evals/s on GPU enabling JWST NIRCam cube fitting to
+  discriminate the 2.85e-4 buoyancy correction from LCDM
+  at z < 0.1 (2026 target - concrete and dated).
 
-Q-164 queued. Gate 1,138 assertions 0 failures. Registry
-413 rows / 882 edges / 172 ledgers (measured). Wired
-172/2,255 (11 clean, 161 OPEN_RULING). Next: PAPER_169.
+  SEC 2.3 BLOCK SUMMARY: F_U = -13*Ug3 derived (157);
+  k4 = 2 confirmed by corpus (160 - self-rectification
+  validated); blend underflow artifact (158); E_react
+  three-route fork; SGR B fork; YM gap third value (167);
+  two clean testable predictions (2.33x solar cycle,
+  GW231123 quantization). Gate caught a float-exact
+  comparison on registry-derived kappa - fixed in-flight.
+
+Q-165 queued. Gate 1,144 assertions 0 failures. Registry
+415 rows / 886 edges / 173 ledgers (measured). Wired
+173/2,255 (11 clean, 162 OPEN_RULING). Next: PAPER_170.
