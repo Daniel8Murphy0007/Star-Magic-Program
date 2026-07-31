@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.214.0"
+VERSION = "0.215.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11062,5 +11062,72 @@ def _paper_210(dataset):
         'formula': 'a0 = c*H0/6; k_UA = F_TRZ^4; M_eff = M_vis + dM_UBii,vir + dM_UBii,ps',
         'source': 'PAPER_210',
         'residual_pct': a0_resid,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_211')
+def _paper_211(dataset):
+    """UQFF 99-system framework, Compression Cycle 3 (S50, thread 7514fe).
+
+    Consolidates the 99-system UQFF framework (29 explicitly named +
+    70 implied across 7 categories; 47 explicitly Q_wave-computed) into
+    one compressed master equation. Wired structural observables:
+    * Compression Cycle 3: 99 equations x mean 13 terms = 1287 raw
+      unique terms -> 1 equation x 11 backbone terms + 99 F_env(t)
+      functions; compression ratio 11/1287 = 0.855% (paper 0.86%).
+    * Backbone unification: paper states 886/990 = 89.5% average
+      coverage across the top-10 backbone terms; the table's own
+      10 per-term system counts sum to 898/990 = 90.7% (Q-207: minor
+      paper arithmetic drift, both retained; conservative headline 85%).
+    * Q_wave calibration across 47 systems: mean 6.33e4 J/m^3
+      (ties PAPER_208 canonical), std 0.12e4 = 1.90% scatter
+      (paper 2%), min 5.8e4 (cosmological voids), max 6.9e4 (dense
+      magnetar environments).
+    * Compressed master g_UQFF(r,t) = G*M(t)/r^2 * [1+H(t,z)] *
+      [1-B/B_crit] * [1+F_env(t)] + (Ug1+Ug2+Ug3'+Ug4) + Lambda*c^2/3
+      + quantum + fluid + perturbation (11 backbone terms).
+    * 7 F_env categories: cluster, AGN, SFR, neutron-star, spiral,
+      cosmological, X-ray-binary.
+    * Error metrics: JWST 99.87%, Chandra 99.98%, ALMA/VLA 99.94%.
+    Appendix drift auto-corrected per charter (VDS 1.894 -> F_TRZ=0.1
+    PAPER_2156; kg/m^3 -> J/m^3 PAPER_2155/2147; beta_i -> canonical
+    BETA_I PAPER_1203); S204.5 kappa 5.787e-9/s is the /s form of the
+    5e-4/day KAPPA_PER_DAY registry primitive.
+    """
+    raw_terms = 99 * 13                                    # 1287
+    backbone_terms = 11
+    comp_ratio = backbone_terms / raw_terms * 100.0        # 0.855%
+    counts = [99, 99, 99, 91, 89, 87, 86, 85, 84, 79]
+    backbone_table_pct = sum(counts) / 990 * 100.0         # 90.71%
+    backbone_paper_pct = 886 / 990 * 100.0                 # 89.49%
+    q_scatter = 0.12 / 6.33 * 100.0                        # 1.90%
+    return {
+        'value': {
+            'domain': '2.9 (99-system framework, Compression Cycle 3)',
+            'systems_total': 99,
+            'systems_named': 29,
+            'systems_implied': 70,
+            'systems_q_wave_computed': 47,
+            'raw_unique_terms': raw_terms,                 # 1287
+            'backbone_terms': backbone_terms,              # 11
+            'compression_ratio_pct': comp_ratio,           # 0.855
+            'compression_ratio_paper_pct': 0.86,
+            'backbone_avg_paper_pct': backbone_paper_pct,  # 89.49
+            'backbone_avg_table_pct': backbone_table_pct,  # 90.71
+            'backbone_sum_fork': '886/990=89.5% stated vs table-sum 898/990=90.7% (Q-207)',
+            'backbone_unification_headline_pct': 85.0,
+            'term_reduction_pct': 40.0,
+            'q_wave_mean': 6.33e4,
+            'q_wave_scatter_pct': q_scatter,               # 1.90
+            'q_wave_min': 5.8e4,
+            'q_wave_max': 6.9e4,
+            'f_env_categories': ['cluster', 'agn', 'sfr', 'neutron_star',
+                                 'spiral', 'cosmological', 'xray_binary'],
+            'error_metrics': {'jwst': 99.87, 'chandra': 99.98, 'alma_vla': 99.94},
+        },
+        'formula': 'comp_ratio = 11/(99*13); g_UQFF = GM/r^2*[1+H][1-B/Bc][1+F_env] + Ug1..4 + Lc^2/3 + ...',
+        'source': 'PAPER_211',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

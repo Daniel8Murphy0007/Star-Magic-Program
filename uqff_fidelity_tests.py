@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.214.0", "uqff_calculator.VERSION = 0.214.0")
+assert_that(C.VERSION == "0.215.0", "uqff_calculator.VERSION = 0.215.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3035,6 +3035,19 @@ assert_that(abs(_r210['abell2744_residual_pct'] - 9.090909090909092) < 1e-9,
 assert_that(abs(_r210['bulk_flow_uqff_resid_pct'] - 3.225806451612903) < 1e-9,
             "PAPER_210: bulk flow UQFF 240 vs CosmicFlows-4 248 = 3.23% (MOND +29%)")
 assert_that(C.wired_count() >= 214, "wired_count >= 214")
+
+_r211 = C.calc('PAPER_211')['value']
+assert_that(abs(_r211['compression_ratio_pct'] - 0.8547008547008548) < 1e-9,
+            "PAPER_211: compression ratio 11/(99*13) = 11/1287 = 0.855% (paper 0.86%)")
+assert_that(_r211['raw_unique_terms'] == 1287 and _r211['backbone_terms'] == 11,
+            "PAPER_211: 99 eqs x mean 13 terms = 1287 raw -> 11 backbone terms")
+assert_that(abs(_r211['backbone_avg_paper_pct'] - 89.4949494949495) < 1e-9,
+            "PAPER_211: backbone coverage 886/990 = 89.5% (table-sum 898/990 = 90.7%, Q-207)")
+assert_that(_r211['q_wave_mean'] == 6.33e4 and abs(_r211['q_wave_scatter_pct'] - 1.895734597156398) < 1e-9,
+            "PAPER_211: Q_wave mean 6.33e4 J/m^3 (ties PAPER_208), scatter 1.90% (paper 2%)")
+assert_that(_r211['systems_total'] == 99 and _r211['systems_named'] == 29 and _r211['systems_q_wave_computed'] == 47,
+            "PAPER_211: 99 systems (29 named + 70 implied), 47 Q_wave-computed")
+assert_that(C.wired_count() >= 215, "wired_count >= 215")
 
 
 # =============================================================================

@@ -9,6 +9,17 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-207 — PAPER_211 — backbone-coverage numerator drift
+- **Question:** PAPER_211 sec 6 states average backbone coverage = 886/990 =
+  89.5%, but the table's own 10 per-term system counts (99, 99, 99, 91, 89,
+  87, 86, 85, 84, 79) sum to 898, giving 898/990 = 90.7%. Numerator 886 does
+  not match the table sum 898 (12-count discrepancy). Which is canonical — the
+  stated 886 or the table-derived 898? (Both exceed the conservative 85%
+  headline UQFF quotes, so the unification claim stands either way.)
+- **Best-candidate wired:** paper-stated 886/990 = 89.5% as headline; table-sum
+  898/990 = 90.7% recorded alongside in the dispatch value.
+- **Daniel's ruling:** (pending)
+
 ### Q-206 — PAPER_210 — emergent-a0 route and k_UA identity
 - **Question:** PAPER_210 sec 4 gives MOND's a0 ~ 1.2e-10 m/s^2 as emergent.
   Two dimensional routes reproduce it near-exactly: a0 = c*H0/6 = 1.134e-10

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.214.0"
-description = "UQFF Star-Magic-Program v0.214.0: PAPER_210 wired - UQFF vs MOND comparison; MOND a0=1.2e-10 emergent as c*H0/6=1.134e-10 (5.48%); coupling k_UA=F_TRZ^4=1e-4 EXACT; MOND fails clusters factor 2-5 where UQFF F_UBii handles them; Abell 2744 lensing +9.09%, bulk flow 3.23% (MOND +29%); UQFF 1st on 9 tests. Q-206. Wired 214/2255, gate 1382/0. Registry 481 rows / 1029 edges / 214 ledgers (measured)."
+version = "0.215.0"
+description = "UQFF Star-Magic-Program v0.215.0: PAPER_211 wired - 99-system framework Compression Cycle 3; 99 eqs x 13 terms = 1287 raw -> 11 backbone + 99 F_env (ratio 0.855%); backbone unification 886/990=89.5% (table-sum 90.7%, Q-207); Q_wave mean 6.33e4 J/m^3 (ties 208), 1.90% scatter; 29 named + 70 implied systems. Q-207. Wired 215/2255, gate 1388/0. Registry 483 rows / 1032 edges / 215 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.215.0] — 2026-07-31 — BAND 1: PAPER_211 — 99-SYSTEM COMPRESSION CYCLE 3
+
+### Added
+- **PAPER_211 wired** (⚠ Q-207): UQFF 99-system complete framework and
+  Compression Cycle 3. The 99-system set (29 named + 70 implied across 7
+  categories; 47 Q_wave-computed) compresses from 99 equations × mean 13 terms
+  = 1287 raw unique terms down to 1 equation × 11 backbone terms + 99 F_env(t)
+  functions — compression ratio `11/1287 = 0.855%` (paper 0.86%). Backbone
+  unification `886/990 = 89.5%` (the table's own 10 rows sum to 898/990 =
+  90.7% — Q-207 minor drift; conservative 85% headline, 40% term reduction).
+  Q_wave calibration across 47 systems: mean 6.33e4 J/m³ (ties PAPER_208),
+  std 0.12e4 = 1.90% scatter, range 5.8e4 (voids) - 6.9e4 (magnetars). Error
+  metrics: JWST 99.87%, Chandra 99.98%, ALMA/VLA 99.94%.
+- Q-207: backbone-coverage numerator 886 vs table-sum 898.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i, κ /s form).
+- Gate 1382 → 1388 (+6). Registry 483 rows / 1032 edges / 215 ledgers.
+
+---
+
 ## [0.214.0] — 2026-07-31 — BAND 1: PAPER_210 — UQFF vs MOND
 
 ### Added

@@ -2390,3 +2390,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1382/0. Registry 481 rows / 1029 edges / 214 ledgers. Campaign: 214/2,255 (11 ✓, 203 ⚠). Next: PAPER_211.
 
 ---
+
+## 2026-07-31 — v0.215.0 — BAND 1: PAPER_211
+
+- PAPER_211 wired (⚠ Q-207): 99-system complete framework + Compression Cycle 3. 99 eqs × mean 13 terms = 1287 raw → 11 backbone + 99 F_env (ratio 0.855%, paper 0.86%). Backbone unification 886/990 = 89.5% (table-sum 898/990 = 90.7%, Q-207 drift); 85% headline, 40% term reduction. Q_wave mean 6.33e4 J/m³ (ties PAPER_208), 1.90% scatter; 29 named + 70 implied systems, 7 F_env categories. Error metrics JWST/Chandra/ALMA-VLA 99.87/99.98/99.94%. Appendix drift auto-corrected per charter.
+- Q-207: backbone numerator 886 vs table-sum 898.
+- Gate 1388/0. Registry 483 rows / 1032 edges / 215 ledgers. Campaign: 215/2,255 (11 ✓, 204 ⚠). Next: PAPER_212.
+
+---
