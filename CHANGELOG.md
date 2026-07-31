@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.167.0] — 2026-07-30 — BAND 1: PAPER_164 — MULTI-MESSENGER CALIBRATION
+
+### Added
+- **PAPER_164 dispatch** (CERN/GWOSC/EHT/Chandra/CAST
+  validation framework, S47, sec 2.3): six datasets mapped
+  to MUGE terms. VERIFIED: dE_vac = 13 TeV/(1 fm)³ =
+  2.083e39 J/m³ (final value correct; printed per-TeV
+  intermediate is a typo); dx = 1.518e-20 m sub-nuclear;
+  Chandra B/B_crit = 5.227e-4 EXACT. Osc_term upgraded
+  from 146's constant to a variable law (GW231123,
+  225 Msun). The (1 fm)³ interaction volume echoes 154's
+  lambda_SCm = 1 fm. PINNED: SGR 1745 B fork — Chandra
+  2.3e10 T vs 148/158's 3e11 T (13×); B_crit = 4.4e13
+  second vote (Q-002); sec-5 self-contradiction
+  ("resonance dominates" at beta ≈ 1, which per 158/155
+  means compressed dominates).
+- OPEN_RULING Q-160.
+- Gate: 1,113 assertions, 0 failures. Registry: 405 rows / 866 edges / 168 ledgers (measured).
+
+---
+
 ## [0.166.0] — 2026-07-30 — BAND 1: PAPER_163 — MODULAR COMPRESSED MUGE
 
 ### Added

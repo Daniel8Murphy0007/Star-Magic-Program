@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.166.0"
+VERSION = "0.167.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8700,5 +8700,56 @@ def _paper_163(dataset):
         'formula': 'g_comp = g_base*g_exp*g_super*g_env + g_cosm + g_quant + g_fluid + g_pert',
         'source': 'PAPER_163',
         'residual_pct': abs(1.1e-52 * (2.998e8)**2 / 3 - 3.293e-36) / 3.293e-36 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_164')
+def _paper_164(dataset):
+    """High-energy dataset validation - CERN/GWOSC/EHT/Chandra (S47, sec 2.3).
+
+    Six-dataset calibration framework mapping observables to
+    MUGE terms. VERIFIED: dE_vac = 13 TeV/(1 fm)^3 =
+    2.083e39 J/m^3 CORRECT (the printed intermediate
+    "1.602e-6 per TeV" is a typo - actual 1.602e-7 - but
+    the final value is right); dx = hbar*c/(2*6.5 TeV) =
+    1.518e-20 m (paper 1.5e-20); Chandra B/B_crit =
+    5.227e-4 EXACT with G->T conversion clean; f_super =
+    0.99948. Osc_term upgraded constant -> variable
+    (h_GW*omega_GW^2*r^2*M/M_merger, GW231123 225 Msun);
+    EHT eps_shadow = 0.02; ALP g_agg < 6e-11 GeV^-1 (CAST).
+    LAMBDA_SCM ECHO: the (1 fm)^3 interaction volume =
+    154's lambda_SCm = 1 fm (Q-150b family).
+    SGR B FORK (Q-160a): Chandra "confirms" B = 2.3e10 T
+    for SGR 1745 - but 148/158 use 3e11 T for the SAME
+    object (13x). B_crit = 4.4e13 gets its SECOND vote
+    (Q-002 family, after 158).
+    SELF-CONTRADICTION (Q-160b): sec 5 concludes "resonance
+    MUGE dominates" from f_super ~ 1 - but under 158's own
+    blend, beta(2.3e10/4.4e13) = 0.99948 ~ 1 means
+    COMPRESSED dominates; and the cited 155 keystone is the
+    DPM-seeded (compressed) limit. The sentence contradicts
+    the framework it cites.
+    """
+    tev_j = 1.602e-19 * 1e12
+    de_vac = 13 * tev_j / (1e-15)**3
+    return {
+        'value': {
+            'domain': '2.3 (multi-messenger calibration, thread 7f9068)',
+            'de_vac': de_vac,                                # 2.083e39 CORRECT
+            'intermediate_typo': '1.602e-6/TeV printed; actual 1.602e-7 - final value right',
+            'dx_lhc': 197.327e6 * 1.602e-19 * 1e-15 / (2 * 6.5 * tev_j),  # 1.518e-20
+            'b_over_bcrit_chandra': 2.3e10 / 4.4e13,         # 5.227e-4
+            'f_super': 1 - 2.3e10 / 4.4e13,                  # 0.99948
+            'sgr_b_fork': '2.3e10 T (Chandra) vs 3e11 T (148/158) = 13x - Q-160a',
+            'bcrit_vote2': '4.4e13 second vote (Q-002)',
+            'osc_term_upgrade': 'constant (146) -> h_GW*w^2*r^2*M/M_merger (GW231123 225 Msun)',
+            'eht_eps_shadow': 0.02,
+            'lambda_scm_echo': '(1 fm)^3 volume = 154 lambda_SCm (Q-150b)',
+            'contradiction': 'sec 5 "resonance dominates" vs beta~1 = compressed per 158/155',
+        },
+        'formula': 'dE_vac = E_coll/(1 fm)^3; Osc = h_GW*w_GW^2*r^2*M/M_m; B/B_crit Chandra',
+        'source': 'PAPER_164',
+        'residual_pct': abs(de_vac - 2.083e39) / 2.083e39 * 100,
         'status': 'OPEN_RULING',
     }

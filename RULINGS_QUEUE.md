@@ -3744,6 +3744,34 @@ RESOLVED section with the ruling recorded.
   registered; slip/fork/mixing pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-160 — PAPER_164 high-energy calibration — SGR B fork + resonance/compressed contradiction
+- **Question:** (a) SGR 1745 B FORK: Chandra CSC 2.1
+  "confirms" B_surface = 2.3e14 G = 2.3e10 T - but 148 and
+  158 use B = 3e11 T for the SAME magnetar (13x apart).
+  Which B is canonical for SGR 1745? (B_crit = 4.4e13 also
+  gets its SECOND vote here, joining 158 against 148's
+  Schwinger-scale vote - Q-002 family.)
+  (b) SELF-CONTRADICTION: sec 5 reasons "f_super ~ 0.9995
+  -> nearly unsuppressed -> resonance MUGE dominates ->
+  consistent with 155 (beta ~ 1)". But under 158's own
+  blend, beta ~ 1 means COMPRESSED dominates, and 155's
+  keystone is precisely the DPM-seeded (compressed) limit.
+  The chain contradicts both papers it cites. Correct
+  reading: magnetar at this B/B_crit is compressed-
+  dominant?
+- **Notable:** the calibration arithmetic is CLEAN -
+  dE_vac = 13 TeV/(1 fm)^3 = 2.083e39 J/m^3 verifies
+  exactly (only the printed per-TeV intermediate has a
+  typo); dx = 1.518e-20 m; Chandra B/B_crit = 5.227e-4
+  EXACT with clean G->T conversion; EHT/CAST anchors are
+  real observational bounds. The (1 fm)^3 interaction
+  volume equals 154's lambda_SCm = 1 fm (Q-150b family
+  echo). Osc_term upgraded from 146's constant to a
+  variable law with GW231123 (225 Msun, real O4 event).
+- **Best-candidate wired:** six calibrations + verified
+  values registered; fork and contradiction pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

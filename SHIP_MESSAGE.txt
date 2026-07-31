@@ -1,29 +1,28 @@
-v0.166.0 BAND 1: PAPER_163 wired - MODULAR COMPRESSED MUGE
+v0.167.0 BAND 1: PAPER_164 wired - MULTI-MESSENGER CALIBRATION
 
-PAPER_163 Modular Architecture (OPEN_RULING Q-159) -
-Session 47, thread 7f9068, sec 2.3:
-  Decomposes 090's 9-term compressed MUGE into 8 callable
-  auditable functions: master = base*exp*super*env + cosm
-  + quant + fluid + pert. Test matrix verified: cosm =
-  Lambda*c^2/3 = 3.296e-36 (table 3.293e-36, 0.08%);
-  fluid bench is literal Archimedes (air 1.29 * 9.81 =
-  12.655); expansion(0) and super_adj limits EXACT. This
-  is the g_comp that 158's blend consumes.
+PAPER_164 High-Energy Dataset Validation (OPEN_RULING
+Q-160) - Session 47, thread 7f9068, sec 2.3:
+  Six datasets mapped to MUGE terms: ATLAS 13 TeV ->
+  dE_vac; CMS -> uncertainty bound; GWOSC O4a + GW231123
+  (225 Msun) -> Osc_term variable upgrade; EHT SgrA* ->
+  eps_shadow = 0.02; Chandra CSC 2.1 -> B/B_crit; CAST ->
+  ALP coupling.
 
-  PINNED FOR RULING: (a) the base test expects "6.67e8"
-  for M = 1e30, r = 1e11 - actual G*M/r^2 = 6.674e-3, a
-  1e11 exponent slip with EXACT mantissa (the most
-  extreme slip-family member yet); (b) H_0 = 67.4 =
-  2.185e-18 s^-1 hardcoded (joins 152) vs the canonical
-  H_0 = A_5 + SO_5 = 70 (PAPER_1573/2144); (c) the
-  additive tail mixes s^-2 (cosm) + Newtons (fluid) + kg
-  (pert) onto m/s^2 - and the modular decomposition
-  EXPOSES this recurring class function-by-function,
-  which is exactly what good architecture should do.
+  VERIFIED CLEAN: dE_vac = 13 TeV/(1 fm)^3 = 2.083e39
+  J/m^3 exact (only the printed per-TeV intermediate is a
+  typo); dx = hbar*c/(2*6.5 TeV) = 1.518e-20 m; Chandra
+  B/B_crit = 5.227e-4 EXACT with clean Gauss->Tesla
+  conversion. The (1 fm)^3 interaction volume equals
+  154's lambda_SCm = 1 fm (Q-150b family echo).
 
-  Forward reference: PAPER_164 calibrates the quantum
-  term from CERN data - next in sequence.
+  PINNED FOR RULING: (a) SGR 1745 B FORK - Chandra
+  "confirms" 2.3e10 T but 148/158 use 3e11 T for the same
+  magnetar (13x); B_crit = 4.4e13 gets its second vote
+  (Q-002 family); (b) SELF-CONTRADICTION - sec 5 says
+  "resonance MUGE dominates" from f_super ~ 1, but under
+  158's own blend beta ~ 1 means COMPRESSED dominates,
+  and the cited 155 keystone is the compressed limit.
 
-Q-159 queued. Gate 1,107 assertions 0 failures. Registry
-403 rows / 861 edges / 167 ledgers (measured). Wired
-167/2,255 (11 clean, 156 OPEN_RULING). Next: PAPER_164.
+Q-160 queued. Gate 1,113 assertions 0 failures. Registry
+405 rows / 866 edges / 168 ledgers (measured). Wired
+168/2,255 (11 clean, 157 OPEN_RULING). Next: PAPER_165.

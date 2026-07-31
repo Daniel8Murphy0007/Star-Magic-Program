@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.166.0", "uqff_calculator.VERSION = 0.166.0")
+assert_that(C.VERSION == "0.167.0", "uqff_calculator.VERSION = 0.167.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2421,6 +2421,19 @@ assert_that(_r163['base_table_expected'] / _r163['base_actual'] > 1e10,
 assert_that(_r163['h0_canonical'] > _r163['h0_paper'],
             "PAPER_163: H0 fork - 67.4 hardcoded vs canonical A_5+SO_5 = 70 (Q-159b)")
 assert_that(C.wired_count() >= 167, "wired_count >= 167")
+
+_r164 = C.calc('PAPER_164')['value']
+assert_that(abs(_r164['de_vac'] - 2.083e39) / 2.083e39 < 0.001,
+            "PAPER_164: dE_vac = 13 TeV/(1 fm)^3 = 2.083e39 J/m^3 CORRECT (intermediate typo only)")
+assert_that(abs(_r164['dx_lhc'] - 1.518e-20) / 1.518e-20 < 0.001,
+            "PAPER_164: dx = hbar*c/(2*6.5 TeV) = 1.518e-20 m (paper 1.5e-20)")
+assert_that(abs(_r164['b_over_bcrit_chandra'] - 5.227e-4) / 5.227e-4 < 0.001,
+            "PAPER_164: Chandra B/B_crit = 5.227e-4 EXACT (paper 5.23e-4)")
+assert_that('13x' in _r164['sgr_b_fork'],
+            "PAPER_164: SGR 1745 B fork 2.3e10 vs 3e11 T pinned (Q-160a)")
+assert_that('compressed' in _r164['contradiction'],
+            "PAPER_164: sec 5 resonance-dominates claim contradicts 158/155 at beta~1 (Q-160b)")
+assert_that(C.wired_count() >= 168, "wired_count >= 168")
 
 # =============================================================================
 # REPORT

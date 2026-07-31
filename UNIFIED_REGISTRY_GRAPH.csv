@@ -860,3 +860,8 @@ observable,compressed_muge_modular,paper,PAPER_090,9-term source
 primitive,A_5,observable,modular_defect_trio,H0 canonical comparison
 primitive,SO_5,observable,modular_defect_trio,H0 canonical comparison
 observable,modular_defect_trio,paper,PAPER_163,slip/fork/mixing
+observable,high_energy_calibration,paper,PAPER_164,6 datasets
+observable,high_energy_calibration,paper,PAPER_154,lambda_SCm echo
+observable,high_energy_calibration,paper,PAPER_146,Osc_term upgrade
+observable,sgr_b_fork_contradiction,paper,PAPER_164,B fork + contradiction
+observable,sgr_b_fork_contradiction,paper,PAPER_158,beta blend reference

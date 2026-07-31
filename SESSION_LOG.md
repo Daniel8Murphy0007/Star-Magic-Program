@@ -1985,3 +1985,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 167/2,255 (11 ✓, 156 ⚠). Next: PAPER_164.
 
 ---
+
+## 2026-07-30 — v0.167.0 — BAND 1: PAPER_164
+
+- PAPER_164 wired (⚠ Q-160): six-dataset multi-messenger
+  calibration. dE_vac verified; SGR B fork 13x; sec-5
+  resonance/compressed contradiction pinned.
+- Campaign: 168/2,255 (11 ✓, 157 ⚠). Next: PAPER_165.
+
+---

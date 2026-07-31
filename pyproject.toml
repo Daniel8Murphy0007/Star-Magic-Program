@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.166.0"
-description = "UQFF Star-Magic-Program v0.166.0: PAPER_163 wired - modular decomposition of the 9-term compressed MUGE into 8 auditable functions; test matrix verified (cosm 0.08%, Archimedes fluid bench); base-test 1e11 exponent slip with EXACT mantissa pinned; H0 = 67.4 fork vs canonical 70; additive-tail dimensional mixing now function-explicit. Q-159. Wired 167/2255, gate 1107/0. Registry 403 rows / 861 edges / 167 ledgers (measured)."
+version = "0.167.0"
+description = "UQFF Star-Magic-Program v0.167.0: PAPER_164 wired - six-dataset high-energy calibration (ATLAS/CMS/GWOSC/EHT/Chandra/CAST); dE_vac = 2.083e39 J/m^3 verified; Osc_term constant->variable (GW231123); SGR 1745 B FORK 2.3e10 vs 3e11 T (13x); sec-5 resonance-vs-compressed self-contradiction pinned; (1 fm)^3 = 154 lambda_SCm echo. Q-160. Wired 168/2255, gate 1113/0. Registry 405 rows / 866 edges / 168 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
