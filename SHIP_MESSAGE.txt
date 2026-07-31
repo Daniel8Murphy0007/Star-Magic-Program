@@ -1,28 +1,26 @@
-v0.197.0 BAND 1: PAPER_194 wired - GRAPHICS3D MESH I/O
+v0.198.0 BAND 1: PAPER_195 wired - DATA LOADER
 
-PAPER_194 Assimp LoadOBJ and VTK ExportToSTL
-(OPEN_RULING Q-190, minimal) - Session 49, sec 2.5:
-  Graphics3D namespace mesh-I/O reference: Assimp
-  loadOBJ (multi-mesh, triangulate/smooth-normals/
-  tangent-space/join-vertices post-processing), VTK
-  vtkSTLWriter exportToSTL, exportOBJ round-trip,
-  loadTexture, procedural landscape, extrude, boolean
-  union, LaTeX-to-texture - eight operations.
+PAPER_195 CoAnQi Universal JSON/YAML/CSV Data Loader
+(OPEN_RULING Q-191) - Session 49, sec 2.5:
+  The load_bodies() function family reading the 12-field
+  CelestialBody from three formats - JSON (nlohmann),
+  YAML (yaml-cpp), CSV (getline) - plus save_bodies
+  round-trip and extension-based format dispatch. Sound
+  engineering: proper exceptions on open/parse failure,
+  and the dM/M < 1e-15 round-trip fidelity claim is
+  correct IEEE-754 double behavior. SIMBAD/GAIA
+  catalog-ingest motivation.
 
-  Sound graphics engineering: proper vertexOffset
-  accumulation across meshes, default up-normal and
-  zero-UV fallbacks, correct triangulate-then-index
-  flow. The only carry-over defect is Q-174a: the
-  abstract says the landscape uses "Perlin noise"
-  (matching 168) while 178 implements octaved
-  sine-cosine - the doc/impl mismatch now spans three
-  papers. Cosmetic.
+  PINNED: the JSON loader EXAMPLE uses omega_c = 1.994e-7
+  (Sun) and 1.991e-7 (Earth) - both ~2pi/(1 year) -
+  which reverts to 170's shared-period state that 186's
+  v2 rewrite already fixed (canonical Sun omega_c =
+  2pi/11yr = 1.81e-8). The loader CODE is correct; only
+  the illustrative JSON data is stale relative to the
+  186 canonical set. Cosmetic doc-data fix.
 
   No numeric physics beyond the standard headers.
-  Thinnest-tier wire; the CoAnQi/S-C software block
-  continues through sec 2.5.
 
-Q-190 queued (minimal). Gate 1,288 assertions 0
-failures. Registry 457 rows / 978 edges / 198 ledgers
-(measured). Wired 198/2,255 (11 clean, 187 OPEN_RULING).
-Next: PAPER_195.
+Q-191 queued. Gate 1,292 assertions 0 failures. Registry
+458 rows / 980 edges / 199 ledgers (measured). Wired
+199/2,255 (11 clean, 188 OPEN_RULING). Next: PAPER_196.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.197.0"
-description = "UQFF Star-Magic-Program v0.197.0: PAPER_194 wired - Graphics3D mesh I/O (Assimp loadOBJ / VTK exportToSTL + 6 ops); sound engineering; Perlin-vs-sine landscape doc/impl mismatch persists; infrastructure only. Q-190 minimal. Wired 198/2255, gate 1288/0. Registry 457 rows / 978 edges / 198 ledgers (measured)."
+version = "0.198.0"
+description = "UQFF Star-Magic-Program v0.198.0: PAPER_195 wired - CelestialBody data-loader framework (JSON/YAML/CSV + round-trip); sound engineering, IEEE-754 fidelity; JSON example omega_c stale (reverts pre-186 shared-period), loader code correct. Q-191. Wired 199/2255, gate 1292/0. Registry 458 rows / 980 edges / 199 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

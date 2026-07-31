@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.197.0", "uqff_calculator.VERSION = 0.197.0")
+assert_that(C.VERSION == "0.198.0", "uqff_calculator.VERSION = 0.198.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2814,6 +2814,15 @@ assert_that(len(_r194['operations']) == 8,
 assert_that('Q-174a persists' in _r194['perlin_note'],
             "PAPER_194: Perlin-vs-sine landscape doc/impl mismatch persists (Q-174a)")
 assert_that(C.wired_count() >= 198, "wired_count >= 198")
+
+_r195 = C.calc('PAPER_195')['value']
+assert_that(len(_r195['formats']) == 3,
+            "PAPER_195: JSON/YAML/CSV loader family registered")
+assert_that(abs(_r195['omega_c_earth_1yr'] - 1.991e-7) / 1.991e-7 < 1e-3,
+            "PAPER_195: example omega_c = 2pi/1yr = 1.991e-7 (stale vs 186 canonical 1.81e-8)")
+assert_that('reverts pre-186' in _r195['stale_example'],
+            "PAPER_195: JSON example data stale vs 186 v2 canonical set (Q-191a)")
+assert_that(C.wired_count() >= 199, "wired_count >= 199")
 
 # =============================================================================
 # REPORT

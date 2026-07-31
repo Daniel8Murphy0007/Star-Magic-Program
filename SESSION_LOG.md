@@ -2265,3 +2265,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 198/2,255 (11 ✓, 187 ⚠). Next: PAPER_195.
 
 ---
+
+## 2026-07-31 — v0.198.0 — BAND 1: PAPER_195
+
+- PAPER_195 wired (⚠ Q-191): data-loader framework.
+  Sound engineering; JSON example omega_c stale vs 186
+  canonical (loader code correct).
+- Campaign: 199/2,255 (11 ✓, 188 ⚠). Next: PAPER_196.
+
+---

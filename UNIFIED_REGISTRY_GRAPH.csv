@@ -977,3 +977,5 @@ observable,coanqi_7namespace_arch,paper,PAPER_172,F_U term divergence
 observable,coanqi_7namespace_arch,paper,PAPER_171,Ug form variance
 observable,graphics3d_mesh_io,paper,PAPER_194,mesh I/O
 observable,graphics3d_mesh_io,paper,PAPER_178,Perlin mismatch
+observable,celestialbody_data_loader,paper,PAPER_195,loader family
+observable,celestialbody_data_loader,paper,PAPER_186,stale-data vs canonical

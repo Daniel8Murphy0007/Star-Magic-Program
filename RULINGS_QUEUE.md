@@ -4761,6 +4761,29 @@ RESOLVED section with the ruling recorded.
   registered.
 - **Daniel's ruling:** (pending - or fold into batch)
 
+### Q-191 — PAPER_195 data loader — stale omega_c example data
+- **Question:** the JSON loader example uses omega_c =
+  1.994e-7 (Sun) and 1.991e-7 (Earth) - both ~2pi/(1
+  year) - which REVERTS to 170's shared-period state
+  that 186's v2 rewrite already FIXED (canonical Sun
+  omega_c = 2pi/11yr = 1.81e-8). The loader CODE is
+  correct (it reads whatever the file provides); only
+  the illustrative JSON example carries the old values.
+  Confirm the example data should be updated to the 186
+  canonical set (cosmetic doc-data fix, no code impact)?
+- **Notable:** sound loader engineering across three
+  formats (JSON nlohmann / YAML yaml-cpp / CSV getline)
+  + save_bodies round-trip + extension-based format
+  dispatch; proper exception handling on open/parse
+  failure; the dM/M < 1e-15 round-trip fidelity claim
+  is correct IEEE-754 double behavior. Pcore/PSCm
+  documented as normalized 0-1 (176-anchor consistent).
+  SIMBAD/GAIA catalog-ingest motivation. No numeric
+  physics beyond the headers.
+- **Best-candidate wired:** loader registered; stale
+  example data flagged.
+- **Daniel's ruling:** (pending - or fold into batch)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

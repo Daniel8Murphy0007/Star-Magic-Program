@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.198.0] — 2026-07-31 — BAND 1: PAPER_195 — DATA LOADER
+
+### Added
+- **PAPER_195 dispatch** (JSON/YAML/CSV data loader, S49,
+  sec 2.5): load_bodies() family + save_bodies round-trip
+  + extension dispatch for the 12-field CelestialBody;
+  sound engineering (exceptions, IEEE-754 dM/M < 1e-15).
+  PINNED: JSON example omega_c = 1.99e-7 (1-yr for both)
+  reverts 170's shared-period state that 186 fixed —
+  loader code correct, illustrative data stale. No
+  numeric physics beyond headers.
+- OPEN_RULING Q-191.
+- Gate: 1,292 assertions, 0 failures. Registry: 458 rows / 980 edges / 199 ledgers (measured).
+
+---
+
 ## [0.197.0] — 2026-07-31 — BAND 1: PAPER_194 — GRAPHICS3D MESH I/O
 
 ### Added

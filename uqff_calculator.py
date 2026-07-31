@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.197.0"
+VERSION = "0.198.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10215,6 +10215,46 @@ def _paper_194(dataset):
         },
         'formula': 'Assimp/VTK mesh I/O reference implementations',
         'source': 'PAPER_194',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_195')
+def _paper_195(dataset):
+    """CelestialBody data-loader framework (S49, sec 2.5).
+
+    load_bodies() family for the 12-field CelestialBody:
+    JSON (nlohmann), YAML (yaml-cpp), CSV (getline) +
+    save_bodies round-trip + extension-dispatch. Sound
+    engineering: proper exceptions on open/parse failure,
+    double-precision round-trip (dM/M < 1e-15 = IEEE-754
+    fidelity, correct claim); SIMBAD/GAIA ingest
+    motivation.
+    STALE EXAMPLE DATA (Q-191a): the JSON example uses
+    omega_c = 1.994e-7 (Sun) and 1.991e-7 (Earth) - both
+    ~2pi/(1 yr) - which REVERTS to 170's shared-period
+    state that 186's v2 rewrite FIXED (canonical Sun
+    omega_c = 2pi/11yr = 1.81e-8). The loader example
+    data is stale relative to the 186 canonical set;
+    the loader CODE is correct, only its illustrative
+    JSON carries the old values. Cosmetic doc-data fix.
+    Pcore/PSCm documented as normalized 0-1 (176-anchor
+    consistent). No numeric physics beyond headers.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.5 (data loader, S49)',
+            'formats': ('JSON nlohmann', 'YAML yaml-cpp', 'CSV getline'),
+            'roundtrip_fidelity': 'dM/M < 1e-15 (IEEE-754 double, correct)',
+            'omega_c_earth_1yr': 2 * _m.pi / (365.25 * 86400),   # 1.991e-7
+            'omega_c_canonical_sun': 2 * _m.pi / (11 * 365.25 * 86400),  # 1.81e-8
+            'stale_example': 'JSON omega_c uses 1-yr for both - reverts pre-186 (Q-191a)',
+            'physics_content': 'none beyond headers; loader code correct',
+        },
+        'formula': 'load_bodies JSON/YAML/CSV + save_bodies round-trip',
+        'source': 'PAPER_195',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }
