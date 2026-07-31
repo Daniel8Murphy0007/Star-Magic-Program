@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.161.0] — 2026-07-30 — BAND 1: PAPER_158 — BLEND UNDERFLOW ARTIFACT
+
+### Added
+- **PAPER_158 dispatch** (Hybrid MUGE blending, S47, sec
+  2.3): g_hybrid = beta·g_comp + (1−beta)·g_res with beta =
+  exp(−B/B_crit) — first algebraic bridge between compressed
+  (090) and resonance (146) MUGE, extending 155's fTRZ→0
+  keystone. Limits verified (beta_SGR 0.99321, beta_NS
+  0.97753). FLOAT-UNDERFLOW ARTIFACT: the table's
+  "g_hybrid ≈ g_comp" holds only because float64 exp(−x)
+  == 1.0 for x < 1.1e-16; analytically the resonance term
+  dominates EVERY row (SGR 6.4e3× … Student's Guide
+  1.4e85×) because g_res carries the cascade-inverted
+  1e100–1e156 magnitudes (Q-143a). B_crit = 4.4e13 vote
+  logged — Q-002 fork deepens (opposite regime assignment
+  for SGR 1745 vs the Schwinger scale). Footer SSq·kappa
+  = 2.85e-4 EXACT.
+- OPEN_RULING Q-154.
+- Gate: 1,077 assertions, 0 failures. Registry: 393 rows / 839 edges / 162 ledgers (measured).
+
+---
+
 ## [0.160.0] — 2026-07-30 — BAND 1: PAPER_157 — SEC 2.3 OPENS
 
 ### Added

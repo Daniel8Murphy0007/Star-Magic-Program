@@ -1,29 +1,29 @@
-v0.160.0 BAND 1: PAPER_157 wired - SEC 2.3 OPENS
+v0.161.0 BAND 1: PAPER_158 wired - BLEND UNDERFLOW ARTIFACT
 
-PAPER_157 Solar System UQFF F_U Validation (OPEN_RULING
-Q-153) - Session 47, thread 7f9068, first paper of sec 2.3:
-  MUGE F_U computed for Sun/Earth/Jupiter/Neptune with
-  per-body cycle frequencies (11/1/11.86/164.8 yr);
-  27 C++ unit tests PASS.
+PAPER_158 Hybrid MUGE Blending Model (OPEN_RULING Q-154) -
+Session 47, thread 7f9068, sec 2.3:
+  g_hybrid = beta*g_comp + (1-beta)*g_res with beta =
+  exp(-B/B_crit) - the first algebraic bridge between the
+  compressed (090, 9-term) and resonance (146, 12-term)
+  MUGE frameworks, extending 155's fTRZ->0 keystone to
+  intermediate magnetic fields. Limiting cases verified:
+  beta_SGR = 0.99321 (paper 0.9933), beta_NS = 0.97753
+  (paper 0.977), Sun ~ 1.
 
-  WIRING-DERIVED STRUCTURE: the entire four-body F_U table
-  collapses to ONE relation - F_U = (1 - beta*Omega_g*
-  M_bh/d_g)*Ug3 = -13.0*Ug3 for ALL bodies (measured
-  -12.9975 vs chain -12.9988, 0.01% match; -13 adjacent to
-  -D_crit/2, extending the N=13 family). The Ug3 column
-  itself shows the assigned-values fingerprint (constant
-  mantissa 1.588, clean decade exponents) - the 148-152
-  signature continues into the Solar System block.
+  FLOAT-UNDERFLOW ARTIFACT: the 7-system validation
+  table's "g_hybrid ~ g_comp" conclusion holds ONLY
+  because float64 exp(-x) == 1.0 exactly for x < 1.1e-16
+  (the paper's own implementation). Analytically (1-beta)
+  = B/B_crit, and the resonance term DOMINATES every row -
+  SGR 1745 by 6.4e3, SgrA* by 1.6e47, Student's Guide by
+  1.4e85 - because g_res carries the cascade-inverted
+  1e100-1e156 magnitudes (Q-143a). The blend algebra is
+  sound; the table conclusion masks the g_res problem.
 
-  ALSO: undeclared k4 = 2.000 EXACT implied by the uniform
-  Ug4 = 4.219e-10; E_react appears in a THIRD variant
-  (rho_SCm*v^2/rho_A) - queued with routes 1 (v^1, P129)
-  and 2 (v^2/lambda, P154) for a single adjudication;
-  kappa 5e-4/day = 5.787e-9/s EXACT cross-section
-  consistency; SgrA* triple carried from 148 unchanged.
-  Drift auto-corrected: beta 0.6/0.603 -> 0.6029 (P1203);
-  kg/m3 -> J/m3 (P2155); 1.894 -> F_TRZ (P2156).
+  B_CRIT FORK VOTE: 4.4e13 T here vs 148's Schwinger
+  4.4e9 vote - at 4.4e9, beta_SGR = e^-68 ~ 0, the
+  OPPOSITE regime assignment for SGR 1745. Q-002 deepens.
 
-Q-153 queued. Gate 1,070 assertions 0 failures. Registry
-391 rows / 834 edges / 161 ledgers (measured). Wired
-161/2,255 (11 clean, 150 OPEN_RULING). Next: PAPER_158.
+Q-154 queued. Gate 1,077 assertions 0 failures. Registry
+393 rows / 839 edges / 162 ledgers (measured). Wired
+162/2,255 (11 clean, 151 OPEN_RULING). Next: PAPER_159.

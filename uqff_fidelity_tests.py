@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.160.0", "uqff_calculator.VERSION = 0.160.0")
+assert_that(C.VERSION == "0.161.0", "uqff_calculator.VERSION = 0.161.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2341,6 +2341,21 @@ assert_that(abs(_r157['kappa_per_s'] - 5.787e-9) / 5.787e-9 < 1e-4,
 assert_that('THIRD' in _r157['e_react_variant'],
             "PAPER_157: E_react third variant rho*v^2/rho_A pinned (Q-153a)")
 assert_that(C.wired_count() >= 161, "wired_count >= 161")
+
+_r158 = C.calc('PAPER_158')['value']
+assert_that(abs(_r158['beta_sgr'] - 0.99321) < 1e-4,
+            "PAPER_158: beta_SGR = exp(-3e11/4.4e13) = 0.99321 (paper 0.9933)")
+assert_that(abs(_r158['beta_ns'] - 0.97753) < 1e-4,
+            "PAPER_158: beta_NS = 0.97753 (paper 0.977)")
+assert_that(_r158['res_dominance_analytic']['SGR 1745'] > 6e3,
+            "PAPER_158: resonance term dominates SGR row by 6.4e3 analytically")
+assert_that(_r158['res_dominance_analytic']['StudentsGuide'] > 1e85,
+            "PAPER_158: resonance dominates Student's Guide by 1.4e85 - underflow artifact (Q-154a)")
+assert_that(abs(_r158['footer_ubi_ratio'] - 2.85e-4) < 1e-9,
+            "PAPER_158: footer U_bi/F_U = SSq*kappa = 2.85e-4 EXACT")
+assert_that('4.4e13' in _r158['b_crit_fork_vote'],
+            "PAPER_158: B_crit = 4.4e13 vote pinned (Q-002 fork deepens)")
+assert_that(C.wired_count() >= 162, "wired_count >= 162")
 
 # =============================================================================
 # REPORT

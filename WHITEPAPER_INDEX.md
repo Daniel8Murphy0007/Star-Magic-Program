@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 161 (11 ✓, 150 ⚠ OPEN_RULING)
+- **Wired:** 162 (11 ✓, 151 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2094
+- **Not yet touched:** 2093
 
 ---
 
@@ -830,7 +830,7 @@
 | ⬜ | PAPER_1587 | MU 0 LEAD 1 257 |
 | ⬜ | PAPER_1588 | COULOMB KE LEAD 8 988 |
 | ⬜ | PAPER_1589 | BOHR RADIUS A0 5 292 |
-| ⬜ | PAPER_158 | Hybrid MUGE Blending Model Beta Compressed Resonance |
+| ⚠ | PAPER_158 | Hybrid MUGE Blending Model Beta Compressed Resonance |
 | ⬜ | PAPER_1590 | RYDBERG R INF 1 0974 |
 | ⬜ | PAPER_1591 | ELECTRON G FACTOR 2 0023 |
 | ⬜ | PAPER_1592 | BOHR MAGNETON MU B 9 274 |

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.160.0"
+VERSION = "0.161.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8402,5 +8402,59 @@ def _paper_157(dataset):
         'formula': 'F_U = (1 - beta*Omega_g*M_bh/d_g)*Ug3 = -13*Ug3 (derived here)',
         'source': 'PAPER_157',
         'residual_pct': abs((-2.064e59 / 1.588e58) - (1 - amp)) / abs(1 - amp) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_158')
+def _paper_158(dataset):
+    """Hybrid MUGE blending model (S47, thread 7f9068, sec 2.3).
+
+    g_hybrid = beta*g_comp + (1-beta)*g_res with beta =
+    exp(-B/B_crit), B_crit = 4.4e13 T - the first algebraic
+    bridge between compressed (090, 9-term) and resonance
+    (146, 12-term) MUGE, extending 155's fTRZ->0 limit to
+    intermediate B. Clean algebra; limits verified (beta_SGR
+    = 0.99321, beta_NS = 0.97753, Sun ~ 1).
+    FLOAT-UNDERFLOW ARTIFACT (Q-154a): the validation table's
+    "g_hybrid ~ g_comp" conclusion holds ONLY because float64
+    exp(-x) == 1.0 exactly for x < ~1.1e-16; analytically
+    (1-beta) = B/B_crit and the resonance term DOMINATES
+    every row - SGR by 6.4e3, SgrA* by 1.6e47, Student's
+    Guide by 1.4e85 - because g_res carries the cascade-
+    inverted 1e100-1e156 magnitudes (Q-143a CONFIRMED
+    upstream). The blend model is sound; the table conclusion
+    is an underflow masking the g_res magnitude problem.
+    B_CRIT FORK VOTE (Q-002): this paper uses 4.4e13 T
+    (catalog-120 value) - vs 148's internal-consistency vote
+    for Schwinger 4.4e9. Fork deepens.
+    Mode mapping (064): compressed beta=1, resonant beta=0,
+    superconductive beta=0 + fTRZ. Footer U_bi/F_U = SSq*
+    kappa = 2.85e-4 EXACT.
+    """
+    import math as _m
+    b_crit = 4.4e13  # paper sec 2 (Q-002 fork: vs 4.4e9 Schwinger, 1e11)
+    rows = {'SGR 1745': (3e11, 1.783e39, 1.655e45),
+            'SgrA*': (1e-5, 1.816e34, 1.256e100),
+            'StudentsGuide': (1e-10, 2.000e47, 1.257e156)}
+    dominance = {}
+    for k, (B, gc, gr) in rows.items():
+        om = -_m.expm1(-B / b_crit)
+        dominance[k] = om * gr / ((1 - om) * gc)
+    return {
+        'value': {
+            'domain': '2.3 (hybrid blend, thread 7f9068)',
+            'beta_form': 'exp(-B/B_crit), B_crit = 4.4e13 T',
+            'beta_sgr': _m.exp(-3e11 / b_crit),               # 0.99321
+            'beta_ns': _m.exp(-1e12 / b_crit),                # 0.97753
+            'res_dominance_analytic': dominance,              # 6.4e3 .. 1.4e85
+            'underflow_artifact': 'table ~g_comp holds only via float64 exp==1.0',
+            'footer_ubi_ratio': SSQ * KAPPA_PER_DAY,          # 2.85e-4 EXACT
+            'b_crit_fork_vote': '4.4e13 (vs Schwinger 4.4e9 - Q-002 deepens)',
+            'bridges': 'PAPER_090 compressed <-> PAPER_146 resonance; extends 155',
+        },
+        'formula': 'g_hybrid = beta*g_comp + (1-beta)*g_res; beta = exp(-B/B_crit)',
+        'source': 'PAPER_158',
+        'residual_pct': abs(_m.exp(-3e11 / b_crit) - 0.9933) / 0.9933 * 100,
         'status': 'OPEN_RULING',
     }

@@ -3561,6 +3561,37 @@ RESOLVED section with the ruling recorded.
   queued together for one adjudication.
 - **Daniel's ruling:** (pending)
 
+### Q-154 — PAPER_158 Hybrid MUGE blend — underflow artifact + B_crit vote
+- **Question:** (a) UNDERFLOW ARTIFACT: the 7-system
+  validation table concludes "g_hybrid ~ g_comp" for all
+  non-magnetar rows, but this holds ONLY because float64
+  exp(-x) == 1.0 exactly for x < ~1.1e-16 (the paper's own
+  Python implementation). Analytically (1-beta) = B/B_crit
+  and the resonance term DOMINATES every row: SGR 1745 by
+  6.4e3, SgrA* by 1.6e47, Student's Guide by 1.4e85 -
+  because g_res carries the cascade-inverted 1e100-1e156
+  magnitudes (Q-143a CONFIRMED). Ruling: is the blend
+  intended to operate on CORRECTED g_res values (in which
+  case the table conclusion may hold), or is the underflow
+  the accepted behavior?
+  (b) B_CRIT FORK VOTE: this paper uses B_crit = 4.4e13 T
+  (the catalog-120 value) as the blend scale - PAPER_148's
+  internal consistency voted for Schwinger 4.4e9 (Q-002).
+  The blend scale changes by 1e4 depending on the ruling
+  (beta_SGR: 0.9932 at 4.4e13 vs e^-68 ~ 0 at 4.4e9 -
+  OPPOSITE regime assignments for SGR 1745).
+- **Notable:** the blend algebra itself is clean and the
+  limiting cases verify (beta_SGR = 0.99321 paper 0.9933;
+  beta_NS = 0.97753 paper 0.977; Sun ~ 1). First algebraic
+  bridge between compressed (090) and resonance (146) MUGE;
+  extends 155's fTRZ->0 keystone to intermediate B. Mode
+  mapping to 064's four operational modes. Footer U_bi/F_U
+  = SSq*kappa = 2.85e-4 EXACT.
+- **Best-candidate wired:** blend + verified limits +
+  analytic dominance ratios registered; artifact pinned;
+  B_crit vote logged to the Q-002 family.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

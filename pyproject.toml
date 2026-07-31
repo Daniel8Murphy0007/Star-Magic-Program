@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.160.0"
-description = "UQFF Star-Magic-Program v0.160.0: PAPER_157 wired - Solar System F_U validation OPENS sec 2.3 (Sun/Earth/Jupiter/Neptune; wiring DERIVES the whole table as F_U = -13.0*Ug3 via the buoyancy chain, 0.01%; -13 ~ -D_crit/2; undeclared k4 = 2.000 EXACT; E_react THIRD variant). Q-153 queued. Wired 161/2255, gate 1070/0. Registry 391 rows / 834 edges / 161 ledgers (measured)."
+version = "0.161.0"
+description = "UQFF Star-Magic-Program v0.161.0: PAPER_158 wired - Hybrid MUGE blend g = beta*g_comp + (1-beta)*g_res, beta = exp(-B/B_crit): first compressed<->resonance bridge, limits verified; but the table conclusion holds only via float64 UNDERFLOW - analytically the resonance term dominates every row (up to 1.4e85, cascade-inverted g_res); B_crit = 4.4e13 vote deepens Q-002. Q-154 queued. Wired 162/2255, gate 1077/0. Registry 393 rows / 839 edges / 162 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

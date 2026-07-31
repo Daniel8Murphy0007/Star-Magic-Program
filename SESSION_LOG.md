@@ -1930,3 +1930,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 161/2,255 (11 ✓, 150 ⚠). Next: PAPER_158.
 
 ---
+
+## 2026-07-30 — v0.161.0 — BAND 1: PAPER_158
+
+- PAPER_158 wired (⚠ Q-154): hybrid MUGE blend. Bridge
+  algebra sound; table conclusion is a float64 underflow
+  artifact masking cascade-inverted g_res; B_crit 4.4e13
+  vote deepens Q-002.
+- Campaign: 162/2,255 (11 ✓, 151 ⚠). Next: PAPER_159.
+
+---

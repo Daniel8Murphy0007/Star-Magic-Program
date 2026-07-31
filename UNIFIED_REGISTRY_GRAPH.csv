@@ -833,3 +833,8 @@ primitive,D_CRIT,observable,solar_system_fu_4body,-13 ~ -D_crit/2
 primitive,KAPPA_PER_DAY,observable,solar_system_fu_4body,5.787e-9/s consistency
 observable,k4_and_ereact_v3,paper,PAPER_157,undeclared k4=2
 observable,k4_and_ereact_v3,paper,PAPER_129,E_react route comparison
+observable,hybrid_muge_blend,paper,PAPER_158,blend equation
+primitive,SSQ,observable,hybrid_muge_blend,footer ratio
+primitive,KAPPA_PER_DAY,observable,hybrid_muge_blend,footer ratio
+observable,blend_underflow_artifact,paper,PAPER_158,table artifact
+observable,blend_underflow_artifact,paper,PAPER_152,g_res magnitudes
