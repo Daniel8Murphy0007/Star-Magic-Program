@@ -4922,6 +4922,40 @@ RESOLVED section with the ruling recorded.
   + verified embeddings registered; unit mojibake noted.
 - **Daniel's ruling:** (pending)
 
+### Q-196 — PAPER_200 Um magnetism taxonomy — third cross-repo taxonomy
+- **Question:** (a) THIRD TAXONOMY CONVERGENCE: the
+  corpus now has three parallel per-regime taxonomies of
+  the F_U operators - Ug decomposition (171), F_UBii
+  buoyancy (198+199, matching predecessor PAPER_2151),
+  and now Um magnetism (200, 50+ variants matching the
+  predecessor L_mag sector / PAPER_1072 Heaviside
+  amplifier). Adopt the three as the canonical
+  operator-taxonomy set feeding the canonical-F_U ruling
+  (Q-189)?
+  (b) OPERATOR-vs-PHENOMENON structure: the SAME base
+  astrophysics F_X terms (QNM, Blandford-Znajek, Hawking,
+  Arnett, Press-Schechter, etc.) appear in BOTH the
+  F_UBii and Um taxonomies - Um applies the magnetic
+  mu*(1-e^-gt) operator while F_UBii applies the buoyant
+  F_rel/E_LEP*Q_wave operator to the same observed
+  phenomena. Confirm this is intentional (each observed
+  system gets both a buoyancy and a magnetism UQFF
+  channel), not duplication?
+- **Notable:** clean embedding throughout - Eddington
+  header L_UQFF = 4pi G M c/kappa_es*(1 - SSq*e^-kappa*
+  dt) = 1.26e31 W verified; GW chirp (32/5)(G Mc^5/3/
+  c^5)(pi f)^10/3 correct quadrupole luminosity; main-
+  sequence L ~ mu^4 M^3 correct; Kazantsev dynamo,
+  Alfven Mach, C/J shocks (Rankine-Hugoniot), DSA
+  spectrum, N-body relaxation all standard forms as F_X
+  (SM comparison targets, Rule 4 clean; UQFF = the
+  mu*(1-e^-gt)*F_X embedding). This completes the
+  operator-taxonomy trilogy of the 7514fe thread.
+- **Best-candidate wired:** Um taxonomy + predecessor
+  L_mag tie + third-taxonomy convergence + verified
+  embeddings registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

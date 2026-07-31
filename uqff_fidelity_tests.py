@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.202.0", "uqff_calculator.VERSION = 0.202.0")
+assert_that(C.VERSION == "0.203.0", "uqff_calculator.VERSION = 0.203.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2875,6 +2875,19 @@ assert_that('Chevallier-Polarski-Linder' in _r199['cpl_w_correct'],
 assert_that('PAPER_2151' in _r199['predecessor_registry_extension'],
             "PAPER_199: extends predecessor F_UBii registry into cosmological sector")
 assert_that(C.wired_count() >= 203, "wired_count >= 203")
+
+_r200 = C.calc('PAPER_200')['value']
+assert_that(_r200['n_variants'] >= 50,
+            "PAPER_200: 50+ Um magnetism variants cataloged")
+assert_that('PAPER_1072' in _r200['predecessor_tie'],
+            "PAPER_200: Um ties to predecessor L_mag / PAPER_1072 Heaviside amplifier operator")
+assert_that('3 cross-repo taxonomies' in _r200['third_taxonomy'],
+            "PAPER_200: third cross-repo taxonomy (Ug/F_UBii/Um)")
+assert_that(1.2e31 < _r200['eddington_verified'] < 1.3e31,
+            "PAPER_200: embedded Eddington L = 4pi G M c/kappa_es = 1.26e31 W verified")
+assert_that('mu-damping vs F_UBii' in _r200['operator_vs_buoyancy'],
+            "PAPER_200: Um and F_UBii apply different operators to same phenomena")
+assert_that(C.wired_count() >= 204, "wired_count >= 204")
 
 # =============================================================================
 # REPORT

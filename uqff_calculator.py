@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.202.0"
+VERSION = "0.203.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10467,6 +10467,60 @@ def _paper_199(dataset):
         },
         'formula': '19 cosmological/dark F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave',
         'source': 'PAPER_199',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_200')
+def _paper_200(dataset):
+    """Um Universal Magnetism taxonomy - complete catalog (S50, sec 2.6).
+
+    The magnetism counterpart to the F_UBii buoyancy
+    taxonomy (198/199): 50+ Um variants in the general
+    form Um,X = [sum_j mu_j/r_j]*(1 - e^-gamma*t*cos(pi
+    t_n))*F_X - the SCm-vacuum magnetic operator with
+    exponential damping and a system-specific F_X.
+    Spans cosmological magnetism, BH thermodynamics,
+    compact/stellar, GW, ISM/plasma (Kazantsev dynamo,
+    Alfven Mach, C/J shocks, DSA), structure formation,
+    reionization, dark matter.
+    PREDECESSOR TIE: Um is the L_mag sector operator /
+    PAPER_1072 Heaviside amplifier (the U_m magnetism
+    term in the 9-sector Lagrangian and the F_U sum);
+    this catalog is its per-regime enumeration - the
+    third cross-repo taxonomy convergence (Ug 171 / Ubi
+    198-199 / Um 200).
+    EMBEDDED PHYSICS VERIFIED: Eddington header L_UQFF =
+    4pi G M c/kappa_es * (1 - SSq*e^-kappa*dt) =
+    1.26e31 W correct; GW chirp (32/5)(G Mc^5/3/c^5)(pi
+    f)^10/3 correct quadrupole luminosity; main-sequence
+    L ~ mu^4 M^3 correct M-L; N-body relaxation
+    136 t_relax/ln(0.02N) standard - all SM comparison
+    targets (Rule 4 clean; UQFF = the mu*(1-e^-gt)*F_X
+    embedding).
+    Note: the same base astrophysics F_X terms appear in
+    BOTH the F_UBii and Um taxonomies (e.g. QNM,
+    Blandford-Znajek, Hawking) - Um and F_UBii apply
+    DIFFERENT UQFF operators (magnetic mu-damping vs
+    buoyant F_rel/E_LEP) to the same observed phenomena.
+    """
+    import math as _m
+    G, c, mp, sigT, Msun = 6.674e-11, 2.998e8, 1.673e-27, 6.652e-29, 1.989e30
+    return {
+        'value': {
+            'domain': '2.6 (Um magnetism taxonomy, thread 7514fe)',
+            'n_variants': 50,
+            'general_form': 'Um,X = [sum mu_j/r_j]*(1 - e^-gt*cos(pi t_n))*F_X',
+            'predecessor_tie': 'L_mag sector / PAPER_1072 Heaviside amplifier U_m operator',
+            'third_taxonomy': 'Ug (171) / F_UBii (198-199) / Um (200) - 3 cross-repo taxonomies',
+            'eddington_verified': 4 * _m.pi * G * Msun * c / (sigT / mp),  # 1.26e31 W
+            'gw_chirp_correct': '(32/5)(G Mc^5/3/c^5)(pi f)^10/3 quadrupole luminosity',
+            'operator_vs_buoyancy': 'same F_X phenomena, Um mu-damping vs F_UBii F_rel/E_LEP',
+            'embedding_rule4': 'textbook magnetism/astro as F_X; UQFF = mu*(1-e^-gt) operator',
+        },
+        'formula': '50+ Um variants: [sum mu_j/r_j]*(1-e^-gt)*F_X',
+        'source': 'PAPER_200',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

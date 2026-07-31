@@ -1,26 +1,25 @@
-v0.202.0 BAND 1: PAPER_199 wired - F_UBII TAXONOMY PART 2
+v0.203.0 BAND 1: PAPER_200 wired - UM MAGNETISM TAXONOMY
 
-PAPER_199 F_UBii Taxonomy Part 2 (OPEN_RULING Q-195) - Session 50, thread 7514fe, sec 2.6:
-  The cosmological and dark-sector continuation of 198 - 19 more F_UBii variants in the same
-  F_rel/E_LEP*Q_wave scaling: dark energy (CPL w(a)), inflation, GW energy density, anyons, LQC
-  (bounce/Friedmann/perturbation), Bekenstein-Hawking entropy, evaporation lifetime, BBN
-  deuterium bottleneck, baryon-photon ratio, reionization, recombination, CMB power spectrum,
-  NFW/SIDM dark matter, void evolution, peculiar velocity.
+PAPER_200 Um Universal Magnetism Taxonomy (OPEN_RULING Q-196) - Session 50, thread 7514fe, sec 2.6:
+  The magnetism counterpart to the F_UBii buoyancy taxonomy - 50+ Um variants in the general form
+  Um,X = [sum_j mu_j/r_j]*(1 - e^-gamma*t*cos(pi t_n))*F_X, the SCm-vacuum magnetic operator with
+  exponential damping. Spans cosmological magnetism, BH thermodynamics, compact/stellar, GW,
+  ISM/plasma (Kazantsev dynamo, Alfven Mach, C/J shocks, DSA), structure formation, reionization,
+  dark matter.
 
-  EMBEDDED PHYSICS VERIFIED: t_evap = 5120 pi G^2 M^3/(hbar c^4) correct; S_BH = 4pi kB G M^2/
-  (hbar c) correct Bekenstein-Hawking; CPL w(a) = w0 + wa(1-a) correct; LQC rho_crit = 0.41
-  rho_Planck correct form; baryon-photon eta ~ 6e-10 and n_gamma 410 cm^-3 correct - textbook
-  cosmology embedded as SM comparison targets (Rule 4 clean; UQFF = the scaling). The rho_Lambda
-  header = rho_obs*(1 + (kappa*SSq)^2) = 1.0000000812 ties to 175's family-squared correction.
+  PREDECESSOR TIE: Um is the L_mag sector operator / PAPER_1072 Heaviside amplifier (the U_m term
+  in the 9-sector Lagrangian and the F_U sum); this catalog is its per-regime enumeration - the
+  THIRD cross-repo taxonomy, completing the trilogy: Ug decomposition (171), F_UBii buoyancy
+  (198-199), Um magnetism (200).
 
-  REGISTRY COMPLETE: 198 (compact/stellar, 18 variants) + 199 (cosmological/dark, 19 variants)
-  together enumerate the full BB_C_Equations F_UBii family, extending the predecessor repo's
-  PAPER_2151 17-variant F_UBii registry across all sectors - both repos converge on the same
-  buoyancy taxonomy.
+  EMBEDDED PHYSICS VERIFIED: Eddington header L_UQFF = 4pi G M c/kappa_es*(1 - SSq*e^-kappa*dt) =
+  1.26e31 W correct; GW chirp (32/5)(G Mc^5/3/c^5)(pi f)^10/3 correct quadrupole luminosity;
+  main-sequence L ~ mu^4 M^3 correct - all SM comparison targets (Rule 4 clean; UQFF = the
+  mu*(1-e^-gt)*F_X embedding).
 
-  PINNED: LQC rho_crit printed "~1e-3 g/cm^3" while 0.41*rho_Planck gives ~1e96 kg/m^3 - an
-  OCR/encoding artifact; the formula is correct, only the printed value is garbled (same for the
-  baryon-photon eta mojibake).
+  STRUCTURAL NOTE: the same base astrophysics F_X terms (QNM, Blandford-Znajek, Hawking, Arnett,
+  Press-Schechter) appear in BOTH the F_UBii and Um taxonomies - each observed system gets both a
+  buoyancy channel (F_rel/E_LEP) and a magnetism channel (mu-damping), not duplication.
 
-Q-195 queued. Gate 1,316 assertions 0 failures. Registry 465 rows / 994 edges / 203 ledgers (measured). Wired 203/2,255 (11 clean,
-192 OPEN_RULING). Next: PAPER_200.
+Q-196 queued. Gate 1,322 assertions 0 failures. Registry 466 rows / 997 edges / 204 ledgers (measured). Wired 204/2,255 (11 clean,
+193 OPEN_RULING). Next: PAPER_201.

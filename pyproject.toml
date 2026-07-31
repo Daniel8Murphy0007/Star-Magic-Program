@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.202.0"
-description = "UQFF Star-Magic-Program v0.202.0: PAPER_199 wired - F_UBii taxonomy Part 2 (19 cosmological/dark-sector variants); embedded physics verified (Bekenstein-Hawking, evaporation, CPL dark energy); rho_Lambda header = 175 family-squared; 198+199 complete the predecessor PAPER_2151 F_UBii registry across all sectors. Q-195. Wired 203/2255, gate 1316/0. Registry 465 rows / 994 edges / 203 ledgers (measured)."
+version = "0.203.0"
+description = "UQFF Star-Magic-Program v0.203.0: PAPER_200 wired - Um Universal Magnetism taxonomy (50+ variants); ties to predecessor L_mag / PAPER_1072 Heaviside amplifier; THIRD cross-repo operator taxonomy (Ug/F_UBii/Um); embedded physics verified (Eddington, GW chirp, M-L). Q-196. Wired 204/2255, gate 1322/0. Registry 466 rows / 997 edges / 204 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

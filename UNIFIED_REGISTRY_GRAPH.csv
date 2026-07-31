@@ -993,3 +993,6 @@ observable,fubii_qnm_parametrization,paper,PAPER_198,QNM note
 observable,fubii_taxonomy_part2,paper,PAPER_199,19 cosmo variants
 observable,fubii_taxonomy_part2,paper,PAPER_198,taxonomy part 1
 primitive,KAPPA_PER_DAY,observable,fubii_taxonomy_part2,rho_Lambda header
+observable,um_magnetism_taxonomy,paper,PAPER_200,50+ Um variants
+observable,um_magnetism_taxonomy,paper,PAPER_198,F_UBii companion
+observable,um_magnetism_taxonomy,paper,PAPER_171,Ug taxonomy sibling

@@ -2302,3 +2302,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 203/2,255 (11 ✓, 192 ⚠). Next: PAPER_200.
 
 ---
+
+## 2026-07-31 — v0.203.0 — BAND 1: PAPER_200
+
+- PAPER_200 wired (⚠ Q-196): Um magnetism taxonomy. 50+ variants; predecessor L_mag/1072 tie; third cross-repo taxonomy completes the Ug/F_UBii/Um trilogy; embedded physics verified.
+- Campaign: 204/2,255 (11 ✓, 193 ⚠). Next: PAPER_201.
+
+---

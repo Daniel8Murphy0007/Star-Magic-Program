@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.203.0] — 2026-07-31 — BAND 1: PAPER_200 — UM MAGNETISM TAXONOMY
+
+### Added
+- **PAPER_200 dispatch** (Um Universal Magnetism taxonomy, S50, sec 2.6): 50+ Um variants in Um,X = [sum mu_j/r_j]·(1−e^-gt·cos)·F_X (cosmological, BH thermo, compact/stellar, GW, ISM/plasma, structure formation, reionization, dark matter). Um = predecessor L_mag sector / PAPER_1072 Heaviside amplifier. THIRD cross-repo operator taxonomy (Ug 171 / F_UBii 198-199 / Um 200) — the trilogy of the 7514fe thread. Embedded physics verified (Eddington 1.26e31 W, GW chirp, main-sequence M-L). Same F_X phenomena as F_UBii under a different UQFF operator.
+- OPEN_RULING Q-196.
+- Gate: 1,322 assertions, 0 failures. Registry: 466 rows / 997 edges / 204 ledgers (measured).
+
+---
+
 ## [0.202.0] — 2026-07-31 — BAND 1: PAPER_199 — F_UBII TAXONOMY PART 2
 
 ### Added
