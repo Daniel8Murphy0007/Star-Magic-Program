@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.189.0", "uqff_calculator.VERSION = 0.189.0")
+assert_that(C.VERSION == "0.190.0", "uqff_calculator.VERSION = 0.190.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2736,6 +2736,21 @@ assert_that(_r186['mu_s_printed'] / _r186['mu_s_no_placeholder'] > 0.5,
 assert_that('e45' in _r186['e_react_slip_persists'],
             "PAPER_186: E_react transposed-mantissa + exponent slip persists in v2 (Q-182b)")
 assert_that(C.wired_count() >= 190, "wired_count >= 190")
+
+_r187 = C.calc('PAPER_187')['value']
+assert_that(_r187['b_over_bcrit_universal'] == 0.1,
+            "PAPER_187: B/Bcrit = 0.1 = F_TRZ EXACT for ALL 7 systems - ratio primitive-locked (Q-183a)")
+assert_that('Q-002 reframed' in _r187['ratio_lock'],
+            "PAPER_187: B = F_TRZ*Bcrit universal encoding - B_crit fork reframed")
+assert_that('vexp = 1e3 canonical' in _r187['q176a_resolved'],
+            "PAPER_187: Q-176a RESOLVED - catalog vexp = 1e3; 174's output carried the slip")
+assert_that(_r187['ffluid_confirms_180'] == 1.269e-14,
+            "PAPER_187: ffluid confirms 180's afluid reconstruction input")
+assert_that('DPM CW/CCW' in _r187['counter_rotation'],
+            "PAPER_187: omega2 = -omega1 universal - predecessor grinding-pole echo")
+assert_that(_r187['sgra_area_break'][0] / _r187['sgra_area_break'][1] > 1e9,
+            "PAPER_187: SgrA* horizon-area value 1.5e9 x 4*pi*Rs^2 (Q-183b)")
+assert_that(C.wired_count() >= 191, "wired_count >= 191")
 
 # =============================================================================
 # REPORT

@@ -2195,3 +2195,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 190/2,255 (11 ✓, 179 ⚠). Next: PAPER_187.
 
 ---
+
+## 2026-07-31 — v0.190.0 — BAND 1: PAPER_187
+
+- PAPER_187 wired (⚠ Q-183): 7-object source catalog.
+  B = F_TRZ*Bcrit universal lock (Q-002 reframed);
+  Q-176a resolved; CW/CCW echo; defects pinned.
+- Campaign: 191/2,255 (11 ✓, 180 ⚠). Next: PAPER_188.
+
+---

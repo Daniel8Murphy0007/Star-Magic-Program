@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 190 (11 ✓, 179 ⚠ OPEN_RULING)
+- **Wired:** 191 (11 ✓, 180 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2065
+- **Not yet touched:** 2064
 
 ---
 
@@ -1149,7 +1149,7 @@
 | ⬜ | PAPER_1877 | RECOMBINATION DARK AGES UQFF |
 | ⬜ | PAPER_1878 | QGP HEAVY ION UQFF |
 | ⬜ | PAPER_1879 | AGN BLAZARS TEV UQFF |
-| ⬜ | PAPER_187 | Canonical 7 Object MUGESystem Catalog |
+| ⚠ | PAPER_187 | Canonical 7 Object MUGESystem Catalog |
 | ⬜ | PAPER_1880 | MODIFIED GRAVITY EP UQFF |
 | ⬜ | PAPER_1881 | PRIMORDIAL BLACK HOLE DM UQFF |
 | ⬜ | PAPER_1882 | WZ BOSON DECAY PRECISION UQFF |

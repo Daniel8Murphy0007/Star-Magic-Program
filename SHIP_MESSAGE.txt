@@ -1,38 +1,37 @@
-v0.189.0 BAND 1: PAPER_186 wired - BODY REFERENCE V2
+v0.190.0 BAND 1: PAPER_187 wired - RATIO LOCK DISCOVERY
 
-PAPER_186 Solar System Canonical Body Reference
-(OPEN_RULING Q-182) - Session 49, sec 2.5, "standalone
-codebase rewrite v2":
-  The authoritative four-body parameter set - and a
-  FORK-RESOLUTION paper, the corpus self-rectifying in
-  real time:
+PAPER_187 Canonical 7-Object MUGESystem Catalog
+(OPEN_RULING Q-183) - Session 49, sec 2.5, v2 rewrite:
+  The source table behind the S49 papers: 18 parameters
+  x 7 systems spanning 22.5 orders of magnitude in mass.
 
-  Q-166b RESOLVED: per-body omega_c is RESTORED (Earth
-  1 yr, Jupiter 11.86, Neptune 164.8) - the 162/157
-  doctrine is canonical, and 170's shared-11-yr table
-  documented an older codebase state exactly as the
-  supersession question suspected.
+  STRUCTURAL DISCOVERY (the headline): EVERY system in
+  the catalog has B/Bcrit = 0.1 = F_TRZ EXACT - SGR
+  1e10/1e11, SgrA* 1e-5/1e-4, the GMC class 1e-4/1e-3,
+  Rings 1e-5/1e-4, Student's Guide 1e-10/1e-9. The
+  catalog encodes B = F_TRZ*Bcrit universally: the
+  RATIO is the primitive-locked object, and the
+  per-system Bcrit values are derived from the local
+  field. This REFRAMES the long-running Q-002 B_crit
+  fork - 4.4e9/4.4e13/1e11 were per-context Bcrit
+  values; the invariant is F_TRZ.
 
-  Q-166c RESOLVED: Neptune returns to 157's values
-  (SCm_density 1e11, Bs 1e-4) - 170's variants were the
-  outliers.
+  RESOLUTIONS: Q-176a - catalog vexp(SGR) = 1e3
+  canonical (174's printed output carried the 100x
+  slip); ffluid = 1.269e-14 confirms 180's afluid
+  reconstruction; Westerlund 2 = Tapestry DECLARED
+  intentional ("equivalent GMC-class" - 158's duplicate
+  rows were design, not error); omega2 = -omega1 for
+  ALL seven systems - the predecessor's DPM CW/CCW
+  counter-rotating grinding poles appearing in the
+  operational catalog.
 
-  PLACEHOLDER DROPPED: mu_s(0) = 2.03e22 matches the
-  NO-placeholder form Bs*Rs^3 = 3.37e22 within 1.7x,
-  while the +1e3 SCm_contrib form is 7 orders off - the
-  v2 rewrite has removed the confessed placeholder from
-  mu_s (major Q-158c/Q-167c development; the 1.66x
-  residual remains open).
+  PINNED: "six orders of magnitude in mass" vs 23 on
+  the same page (actual 22.5); Student M_DM = M while
+  claiming 5x; SgrA* horizon-area 1.5e9 break; 1e26 m
+  labeled 14 Gpc (actual 3.2); kpc-object redshifts.
 
-  Also: Pcore/PSCm normalization now documented with
-  inline physical anchors (Earth 3.6e11 Pa EXACT vs
-  176); Jupiter's 11.86-yr omega_c ~ solar 11-yr
-  resonance registered; Neptune B honesty note inline
-  (uses 100 uT, admits real is 14-16). PERSISTS: the
-  E_react 8.74e45 transposed-mantissa + exponent slip
-  carried into v2.
-
-Q-182 queued; Q-166 annotated. Gate 1,253 assertions 0
-failures. Registry 448 rows / 957 edges / 190 ledgers
-(measured). Wired 190/2,255 (11 clean, 179 OPEN_RULING).
-Next: PAPER_187.
+Q-183 queued; Q-176 annotated. Gate 1,260 assertions 0
+failures. Registry 450 rows / 962 edges / 191 ledgers
+(measured). Wired 191/2,255 (11 clean, 180 OPEN_RULING).
+Next: PAPER_188.

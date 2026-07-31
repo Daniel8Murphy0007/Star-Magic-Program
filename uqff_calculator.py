@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.189.0"
+VERSION = "0.190.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9880,5 +9880,60 @@ def _paper_186(dataset):
         'formula': 'four-body canonical struct set; mu_s = Bs*Rs^3 (placeholder dropped)',
         'source': 'PAPER_186',
         'residual_pct': abs(2.03e22 - 1e-4 * rs3) / (1e-4 * rs3) * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_187')
+def _paper_187(dataset):
+    """Canonical 7-object MUGESystem catalog (S49, sec 2.5).
+
+    The v2 source table behind the S49 papers: 18
+    parameters x 7 systems (SGR/SgrA*/Tapestry/West2/
+    Pillars/Rings/Student), 22.5 orders in mass.
+    STRUCTURAL DISCOVERY (major): EVERY system has
+    B/Bcrit = 0.1 = F_TRZ EXACT (SGR 1e10/1e11, SgrA*
+    1e-5/1e-4, GMCs 1e-4/1e-3, Rings 1e-5/1e-4, Student
+    1e-10/1e-9) - the catalog encodes B = F_TRZ*Bcrit
+    universally. The RATIO is the primitive-locked
+    object; per-system Bcrit values are derived. This
+    REFRAMES the Q-002 B_crit fork entirely.
+    RESOLUTIONS: Q-176a - catalog vexp(SGR) = 1e3
+    canonical (174's printed aTHz 1.182e-33 carried the
+    100x slip in the OUTPUT; correct 1.182e-35);
+    ffluid = 1.269e-14 CONFIRMS 180's afluid
+    reconstruction input; Westerlund 2 = Tapestry
+    DECLARED intentional ("equivalent GMC-class") -
+    explaining 158's duplicate rows; omega2 = -omega1
+    for ALL systems (counter-rotating pairs - the
+    predecessor DPM CW/CCW grinding-pole echo in the
+    operational catalog).
+    DEFECTS (Q-183b): abstract says "six orders of
+    magnitude in mass" vs 22.5 actual (the UQFF-First
+    line says 23 - internal contradiction); Student
+    M_DM = 1e53 = M while claiming "~5x baryonic";
+    SgrA* "horizon area" A = 2.813e30 is 1.5e9 x
+    4*pi*Rs^2; r = 1e26 labeled "~14 Gpc" (actual 3.2);
+    z = 0.0009 assigned to kpc-scale objects.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (7-object source catalog, S49 v2)',
+            'n_systems': 7,
+            'n_params': 18,
+            'b_over_bcrit_universal': F_TRZ,                 # 0.1 EXACT all systems
+            'ratio_lock': 'B = F_TRZ*Bcrit encoded universally - Q-002 reframed',
+            'q176a_resolved': 'vexp = 1e3 canonical; 174 output carried the 100x slip',
+            'ffluid_confirms_180': 1.269e-14,
+            'counter_rotation': 'omega2 = -omega1 all systems (DPM CW/CCW echo)',
+            'westerlund_tapestry': 'declared equivalent GMC-class (158 duplicates explained)',
+            'mass_span_orders': 22.5,
+            'six_orders_contradiction': 'abstract "six" vs 22.5 actual vs "23" same page',
+            'student_mdm_inconsistency': 'M_DM = M printed while claiming 5x',
+            'sgra_area_break': (2.813e30, 1.843e21),
+        },
+        'formula': '18-param x 7-system catalog; B = F_TRZ*Bcrit universal',
+        'source': 'PAPER_187',
+        'residual_pct': abs(1e10 / 1e11 - F_TRZ) / F_TRZ * 100,
         'status': 'OPEN_RULING',
     }

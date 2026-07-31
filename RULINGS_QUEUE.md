@@ -4301,6 +4301,10 @@ RESOLVED section with the ruling recorded.
   vexp = 1e3 for aTHz but the expected 1.182e-33
   requires vexp = 1e5 (100x; 174's chain also implied
   1e5). Which vexp is the SGR1745 canonical?
+  UPDATE (PAPER_187, v0.190.0): item (a) RESOLVED - the v2
+  catalog specifies vexp(SGR) = 1e3 (twice: 180 test list
+  + 187 struct); 174's printed aTHz = 1.182e-33 carried
+  the 100x slip in the OUTPUT (correct 1.182e-35).
   (b) AFLUID CLOSED FORM (confirm): reconstruction gives
   afluid = ffluid*Vsys*UA_SCM/c_res = 1.772e-9 (0.06%
   vs the 1.773e-9 unit test), with UA_SCM = 10 = SO_5 -
@@ -4532,6 +4536,44 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** v2 reference + resolutions
   registered; placeholder-drop evidence + persisting
   slips pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-183 — PAPER_187 7-object catalog — B = F_TRZ*Bcrit universal lock
+- **Question:** (a) RATIO LOCK (major structural
+  discovery): EVERY system in the v2 catalog has
+  B/Bcrit = 0.1 = F_TRZ EXACT - SGR 1e10/1e11, SgrA*
+  1e-5/1e-4, Tapestry/Westerlund/Pillars 1e-4/1e-3,
+  Rings 1e-5/1e-4, Student 1e-10/1e-9. The catalog
+  encodes B = F_TRZ*Bcrit universally: the RATIO is the
+  primitive-locked object and the per-system Bcrit
+  values are derived from the local B. This REFRAMES
+  the whole Q-002 B_crit fork (4.4e9 vs 4.4e13 vs 1e11
+  were per-context Bcrit values; the invariant is the
+  F_TRZ ratio). Canonize B = F_TRZ*Bcrit as the design
+  rule?
+  (b) DEFECTS: abstract says "six orders of magnitude
+  in mass" while the same page says 23 (actual 22.5);
+  Student's Guide M_DM = 1e53 EQUALS M while claiming
+  "~5x baryonic"; SgrA* "event horizon area" 2.813e30
+  is 1.5e9 x the true 4*pi*Rs^2; r = 1e26 labeled
+  "~14 Gpc" (actual 3.2); z = 0.0009 assigned to
+  kpc-scale objects (kpc distances have no cosmological
+  redshift).
+- **Notable:** this IS the source table behind the S49
+  papers, and it RESOLVES Q-176a: vexp(SGR) = 1e3
+  canonical, so 174's printed aTHz output carried the
+  100x slip. ffluid = 1.269e-14 CONFIRMS 180's afluid
+  reconstruction input. omega2 = -omega1 for ALL seven
+  systems - counter-rotating pairs, the predecessor's
+  DPM CW/CCW grinding-pole architecture appearing in
+  the operational catalog. Westerlund 2 = Tapestry is
+  DECLARED intentional ("equivalent GMC-class") -
+  explaining 158's duplicate rows as design, not
+  copy-paste. SGR g_local = 10 documented as
+  "normalized, actual ~1e12" - the normalization
+  honesty continues.
+- **Best-candidate wired:** catalog + ratio lock +
+  resolutions registered; defects pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

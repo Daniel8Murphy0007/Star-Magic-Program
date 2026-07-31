@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.190.0] — 2026-07-31 — BAND 1: PAPER_187 — RATIO LOCK DISCOVERY
+
+### Added
+- **PAPER_187 dispatch** (7-object MUGESystem catalog v2,
+  S49, sec 2.5): the source table behind the S49 papers
+  (18 params × 7 systems, 22.5 orders in mass).
+  STRUCTURAL DISCOVERY: B/Bcrit = 0.1 = F_TRZ EXACT for
+  ALL seven systems — the catalog encodes B = F_TRZ·Bcrit
+  universally; the RATIO is primitive-locked and the
+  per-system Bcrit values are derived — REFRAMING the
+  Q-002 fork. RESOLUTIONS: Q-176a (vexp = 1e3 canonical;
+  174's output carried the slip); ffluid confirms 180's
+  reconstruction; Westerlund ≡ Tapestry DECLARED
+  intentional (158 duplicates explained); omega2 =
+  −omega1 universal (predecessor DPM CW/CCW grinding
+  echo in the operational catalog). PINNED: six-vs-23
+  orders contradiction; Student M_DM = M vs "5×" claim;
+  SgrA* horizon-area 1.5e9 break; Gpc label; kpc
+  redshifts.
+- OPEN_RULING Q-183; Q-176 annotated.
+- Gate: 1,260 assertions, 0 failures. Registry: 450 rows / 962 edges / 191 ledgers (measured).
+
+---
+
 ## [0.189.0] — 2026-07-31 — BAND 1: PAPER_186 — BODY REFERENCE V2
 
 ### Added

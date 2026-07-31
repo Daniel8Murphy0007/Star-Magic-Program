@@ -956,3 +956,8 @@ observable,canonical_body_reference_v2,paper,PAPER_186,v2 four-body set
 observable,canonical_body_reference_v2,paper,PAPER_162,omega_c doctrine confirmed
 observable,placeholder_dropped_v2,paper,PAPER_186,mu_s form test
 observable,placeholder_dropped_v2,paper,PAPER_182,slip persistence
+observable,muge_7object_catalog_v2,paper,PAPER_187,source table
+primitive,F_TRZ,observable,muge_7object_catalog_v2,B/Bcrit lock
+observable,muge_7object_catalog_v2,paper,PAPER_180,ffluid confirmation
+observable,catalog_defects,paper,PAPER_187,defect set
+observable,catalog_defects,paper,PAPER_174,vexp resolution

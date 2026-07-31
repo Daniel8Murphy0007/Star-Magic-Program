@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.189.0"
-description = "UQFF Star-Magic-Program v0.189.0: PAPER_186 wired - canonical body reference v2 RESOLVES Q-166b/c (per-body omega_c restored; Neptune back to 157 values); Pcore normalization documented; PLACEHOLDER DROPPED from mu_s (7-order form test) - Q-158c trajectory; E_react transposed-mantissa slip persists into v2. Q-182. Wired 190/2255, gate 1253/0. Registry 448 rows / 957 edges / 190 ledgers (measured)."
+version = "0.190.0"
+description = "UQFF Star-Magic-Program v0.190.0: PAPER_187 wired - 7-object v2 source catalog; STRUCTURAL DISCOVERY: B/Bcrit = 0.1 = F_TRZ EXACT for ALL systems (B = F_TRZ*Bcrit universal - Q-002 REFRAMED); Q-176a resolved (vexp = 1e3); omega2 = -omega1 universal (DPM CW/CCW echo); Westerlund = Tapestry intentional. Q-183. Wired 191/2255, gate 1260/0. Registry 450 rows / 962 edges / 191 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
