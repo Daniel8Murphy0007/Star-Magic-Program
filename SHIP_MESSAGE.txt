@@ -1,37 +1,37 @@
-v0.176.0 BAND 1: PAPER_173 wired - COMPRESSED TABLES DERIVED
+v0.177.0 BAND 1: PAPER_174 wired - RESONANCE CODE-TRUTH
 
-PAPER_173 Modular Compressed MUGE 9-Term Decomposition
-(OPEN_RULING Q-169) - Session 48, thread 381a8fe7, sec
-2.4-E:
-  Each compressed term mapped back to its F_U channel,
-  with the doctrinal claim that Term 1's mu_s*grad(M/r)
-  is the CLASSICAL LIMIT of the Ug2 bubble channel - not
-  Newton being corrected (consistent with 155's
-  keystone).
+PAPER_174 Modular Resonance MUGE 13+1 Terms (OPEN_RULING
+Q-170) - Session 48, thread 381a8fe7, sec 2.4-F:
+  The resonance-side decomposition: master aDPM amplitude
+  scaled through 12 frequency terms plus the Morris-
+  Thorne wormhole 14th.
 
-  WIRING DERIVATION (the payoff): the long-mysterious
-  compressed_MUGE(SGR1745) = 1.782e39 IS Term 9 -
-  (M + M_DM)*(3GM/r^3) with M = 2.984e30 (1.5 Msun),
-  r = 10 km, M_DM = drho = 0, giving 3GM^2/r^3 =
-  1.7829e39 (0.05% match). Paired with v0.175.0's
-  smoking gun, the picture is now complete: COMPRESSED
-  side - code == table == 3GM^2/r^3, DERIVED; RESONANCE
-  side - code (1.77e-9) != table (1.66e45), NOT
-  computed.
+  RESONANCE CODE-TRUTH ESTABLISHED: the total sums to
+  1.773e-9 - an EXACT match to 172's unit-test
+  expectation, dominated by afluid_freq. Together with
+  v0.175.0/v0.176.0, the resonance tables (1e45-1e156 in
+  152/158) are now DOUBLY disproven: the code's own
+  decomposition and its own unit test agree with each
+  other and not with the tables.
 
-  H0 CANONICAL VOTE: Term 2 uses 2.269e-18 s^-1 = 70.0
-  km/s/Mpc - the A_5+SO_5 canonical value - against
-  163/152's 67.4. The H0 fork is corpus-internal and
-  this paper votes canonical (Q-169a proposes ruling
-  H0 = 70 corpus-wide per PAPER_1573/2144).
+  CROSS-PAPER CONSISTENCY: fquantum = 2pi/t_Hubble =
+  1.445e-17 EXACT (the same factor as 173's quantum
+  term); H_z = 2.270e-18 = 70.05 km/s/Mpc - the SECOND
+  canonical H0 vote in sec 2.4; UA_SCM = 10 = SO_5;
+  Evac_neb/Evac_ISM = 10 again; fosc = 4.57e14 Hz =
+  c/656 nm (a real H-alpha spectral anchor); wormhole
+  term 7.09e-44 EXACT; mantissa identity 3.545 = 7.09/2.
 
-  Verified EXACT: quantum term 0.3315 (13.6-eV ground-
-  state anchor), fluid 4.189e-2 (sphere at 10 km).
-  Pinned: paired 10x mantissa-exact slips (Term 6 and
-  sec-3 base); Bcrit = 1e11 third-way vote (Q-002);
-  expansion-form fork (H0*vexp vs H0*t); two confessed
-  placeholders (env, Ug_sum).
+  PINNED FOR RULING: aDPM root-formula break (printed
+  chain gives 2.8e24 vs its own test value 3.545e-42 -
+  66 orders); sub-term table values not following the
+  printed formulas (code extraction needed); raw-additive
+  fTRZ EMPIRICALLY REFUTED A SECOND TIME (0.1 listed as
+  dominant additive term vs code total 1.773e-9 - the
+  Q-142/Q-149 scoped doctrine gains independent
+  confirmation from the 2.4 thread); fAether "Planck
+  scale" mislabel (78 orders).
 
-Q-169 queued. Gate 1,172 assertions 0 failures. Registry
-423 rows / 906 edges / 177 ledgers (measured). Wired
-177/2,255 (11 clean, 166 OPEN_RULING). Next: PAPER_174.
+Q-170 queued. Gate 1,179 assertions 0 failures. Registry
+425 rows / 911 edges / 178 ledgers (measured). Wired
+178/2,255 (11 clean, 167 OPEN_RULING). Next: PAPER_175.

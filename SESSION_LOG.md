@@ -2076,3 +2076,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 177/2,255 (11 ✓, 166 ⚠). Next: PAPER_174.
 
 ---
+
+## 2026-07-30 — v0.177.0 — BAND 1: PAPER_174
+
+- PAPER_174 wired (⚠ Q-170): resonance code-truth
+  1.773e-9 established; fTRZ additive refuted #2; aDPM
+  root break; H0 = 70 second vote.
+- Campaign: 178/2,255 (11 ✓, 167 ⚠). Next: PAPER_175.
+
+---

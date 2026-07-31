@@ -905,3 +905,8 @@ primitive,A_5,observable,compressed_9term_decomp,H0 canonical vote
 primitive,SO_5,observable,compressed_9term_decomp,H0 canonical vote
 observable,compressed_votes_slips,paper,PAPER_173,votes + slips
 observable,compressed_9term_decomp,paper,PAPER_172,tables explained/disproven pair
+observable,resonance_13term_decomp,paper,PAPER_174,13+1 terms
+observable,resonance_13term_decomp,paper,PAPER_172,unit-test cross-match
+primitive,SO_5,observable,resonance_13term_decomp,UA_SCM = 10
+primitive,F_TRZ,observable,resonance_13term_decomp,fTRZ term
+observable,adpm_chain_breaks,paper,PAPER_174,4 defects

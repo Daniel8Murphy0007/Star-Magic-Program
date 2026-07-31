@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.176.0"
-description = "UQFF Star-Magic-Program v0.176.0: PAPER_173 wired - 9-term compressed MUGE decomposition; DERIVED: the 1.782e39 unit-test value = 3GM^2/r^3 at SGR (0.05%) - compressed tables structurally explained (pairs with 172 resonance disproof); H0 = 70 CANONICAL vote (vs 163/152 67.4); paired 10x mantissa-exact slips; Bcrit 1e11 third-way vote. Q-169. Wired 177/2255, gate 1172/0. Registry 423 rows / 906 edges / 177 ledgers (measured)."
+version = "0.177.0"
+description = "UQFF Star-Magic-Program v0.177.0: PAPER_174 wired - resonance MUGE 13+1 decomposition; total 1.773e-9 EXACT match to 172 unit test (152/158 tables doubly disproven); fquantum = 2pi/t_H cross-match; H0 = 70 second canonical vote; aDPM root formula 66-order break; additive fTRZ empirically refuted #2. Q-170. Wired 178/2255, gate 1179/0. Registry 425 rows / 911 edges / 178 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

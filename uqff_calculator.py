@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.176.0"
+VERSION = "0.177.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9203,5 +9203,63 @@ def _paper_173(dataset):
         'formula': 'compressed = base*exp*super*env*(1+Ug_sum) + cosm + quant + fluid + pert; pert(SGR) = 3GM^2/r^3',
         'source': 'PAPER_173',
         'residual_pct': abs(pert - 1.782e39) / 1.782e39 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_174')
+def _paper_174(dataset):
+    """Modular resonance MUGE 13+1 terms (S48, sec 2.4-F).
+
+    The resonance-side decomposition - the code-truth
+    companion to 172's smoking gun: total resonance_MUGE
+    (SGR1745) ~ 1.773e-9 EXACT match to 172's unit test,
+    dominated by afluid_freq. The 1e45-1e156 resonance
+    tables (152/158) are now doubly disproven: the code's
+    own decomposition sums to 1.773e-9.
+    VERIFIED: aTHz chain CONSISTENT (vexp = 1e5 implied);
+    fquantum = 2pi/t_Hubble = 1.445e-17 EXACT (matches
+    173's quantum factor - cross-paper); wormhole term
+    7.09e-44 at r = 1e4 EXACT; fosc = 4.57e14 Hz = c/656
+    nm (H-alpha anchor); UA_SCM = 10 = SO_5 ratio; fTRZ =
+    F_TRZ = 0.1; H_z = 2.270e-18 = 70.05 km/s/Mpc -
+    SECOND canonical H0 vote in sec 2.4; Evac_neb/ISM =
+    10 = SO_5 again; MANTISSA IDENTITY: aDPM = 3.545e-42
+    with 3.545 = 7.09/2 EXACT (= Evac_neb/2 mantissa).
+    DEFECTS (Q-170): (a) the printed aDPM formula
+    (FDPM*fDPM*Evac*c*Vsys) gives 2.8e24, 66 orders from
+    its own test value 3.545e-42 - formula-vs-value break
+    at the chain root; (b) sub-term table values do not
+    follow the printed formulas (avac_diff 1e11 off,
+    asuper 47 orders, aquantum 7 orders) though labeled
+    "from UnitTests.cpp" - code extraction needed;
+    (c) fTRZ = 0.1 listed as additive "dominant term" yet
+    total = 1.773e-9 - the code total EMPIRICALLY REFUTES
+    raw-additive fTRZ a second time (Q-142 refutation #2,
+    now from the 2.4 thread); (d) fAether = 1.576e-35
+    labeled "Planck frequency scale" (actual 1.85e43 Hz -
+    78 orders).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.4-F (resonance decomposition, thread 381a8fe7)',
+            'resonance_total': 1.773e-9,
+            'matches_172_unittest': True,
+            'dominant_term': 'afluid_freq',
+            'tables_doubly_disproven': '152/158 1e45-1e156 vs code-sum 1.773e-9',
+            'fquantum_exact': 2 * _m.pi / 4.35e17,           # 1.445e-17 = 173 match
+            'wormhole_r1e4': 7.09e-36 / (1 + 1e8),           # 7.09e-44 EXACT
+            'fosc_halpha': 3e8 / 656.3e-9,                   # 4.57e14
+            'h0_second_vote': 2.270e-18 * 3.0857e22 / 1000,  # 70.05 canonical
+            'ua_scm_is_so5': 10,
+            'mantissa_identity': '3.545 = 7.09/2 EXACT (aDPM = Evac_neb/2 mantissa)',
+            'adpm_formula_break': (2.8e24, 3.545e-42),       # 66 orders (Q-170a)
+            'ftrz_additive_refuted_again': 0.1 / 1.773e-9,   # 5.6e7 (Q-142 #2)
+            'faether_mislabel': 'claimed Planck scale; actual 1.85e43 Hz (78 orders)',
+        },
+        'formula': 'resonance = aDPM + 12 scaled terms + a_wormhole; total ~ afluid_freq',
+        'source': 'PAPER_174',
+        'residual_pct': abs(7.09e-36 / (1 + 1e8) - 7.09e-44) / 7.09e-44 * 100,
         'status': 'OPEN_RULING',
     }

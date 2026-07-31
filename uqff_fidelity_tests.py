@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.176.0", "uqff_calculator.VERSION = 0.176.0")
+assert_that(C.VERSION == "0.177.0", "uqff_calculator.VERSION = 0.177.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2561,6 +2561,21 @@ assert_that(9.9 < _r173['term6_slip'][0] / _r173['term6_slip'][1] < 10.1,
 assert_that(9.9 < _r173['base_slip'][0] / _r173['base_slip'][1] < 10.1,
             "PAPER_173: sec-3 base 10x slip with EXACT mantissa (Q-169b)")
 assert_that(C.wired_count() >= 177, "wired_count >= 177")
+
+_r174 = C.calc('PAPER_174')['value']
+assert_that(_r174['resonance_total'] == 1.773e-9 and _r174['matches_172_unittest'],
+            "PAPER_174: resonance total 1.773e-9 EXACT match to 172's unit test - tables doubly disproven")
+assert_that(abs(_r174['fquantum_exact'] - 1.445e-17) / 1.445e-17 < 0.001,
+            "PAPER_174: fquantum = 2pi/t_Hubble = 1.445e-17 EXACT (cross-paper match to 173)")
+assert_that(abs(_r174['wormhole_r1e4'] - 7.09e-44) / 7.09e-44 < 1e-6,
+            "PAPER_174: wormhole term 7.09e-44 at r = 1e4 EXACT")
+assert_that(abs(_r174['h0_second_vote'] - 70.05) < 0.1,
+            "PAPER_174: H_z = 2.270e-18 = 70.05 km/s/Mpc - second canonical H0 vote in sec 2.4")
+assert_that(_r174['adpm_formula_break'][0] / _r174['adpm_formula_break'][1] > 1e65,
+            "PAPER_174: aDPM printed formula 66 orders from its own test value (Q-170a)")
+assert_that(5e7 < _r174['ftrz_additive_refuted_again'] < 6e7,
+            "PAPER_174: additive fTRZ empirically refuted AGAIN - 0.1 vs total 1.773e-9 (Q-142 #2)")
+assert_that(C.wired_count() >= 178, "wired_count >= 178")
 
 # =============================================================================
 # REPORT

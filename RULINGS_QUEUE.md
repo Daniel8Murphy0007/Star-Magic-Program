@@ -4071,6 +4071,47 @@ RESOLVED section with the ruling recorded.
   canonical-H0 vote registered; slips and forks pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-170 — PAPER_174 resonance decomposition — aDPM root break + fTRZ refutation #2
+- **Question:** (a) aDPM ROOT BREAK: the printed formula
+  aDPM = FDPM*fDPM*Evac_neb*c_res*Vsys evaluates to
+  2.8e24, yet the paper's own test value is 3.545e-42 -
+  66 orders apart AT THE CHAIN ROOT. The mantissa
+  identity 3.545 = 7.09/2 EXACT suggests the actual
+  computation is Evac_neb/2 x 1e-6-scale. What is the
+  true aDPM formula in MUGE.cpp?
+  (b) SUB-TERM TABLE: the "from UnitTests.cpp" expected
+  values do not follow the printed formulas (avac_diff
+  1e11 off, asuper_freq 47 orders, aquantum_freq 7
+  orders) - though aTHz IS consistent (implying vexp =
+  1e5). Code-side extraction of the real formulas needed
+  (same procedure as the XGEO opaque-formula recoveries).
+  (c) fTRZ ADDITIVE REFUTED #2: fTRZ = 0.1 is listed as
+  a "dominant term" in the additive sum, yet the code
+  total is 1.773e-9 - 5.6e7x smaller. The 2.4-thread
+  code empirically refutes raw-additive fTRZ exactly as
+  148's table did (Q-142/Q-149 scoped doctrine gains its
+  second independent confirmation).
+  (d) fAether = 1.576e-35 Hz labeled "Planck frequency
+  scale" - actual Planck frequency 1.85e43 Hz (78
+  orders). Mislabel or different construct?
+- **Notable:** the resonance code-truth is now FULLY
+  ESTABLISHED: total = 1.773e-9 EXACT match to 172's
+  unit test, afluid_freq dominant - the 152/158
+  resonance tables (1e45-1e156) are doubly disproven.
+  Cross-paper consistency: fquantum = 2pi/t_Hubble =
+  1.445e-17 EXACT (same factor as 173's quantum term);
+  H_z = 2.270e-18 = 70.05 km/s/Mpc - SECOND canonical
+  H0 vote in sec 2.4; UA_SCM = 10 = SO_5 (the F_TRZ
+  reciprocal ratio); Evac_neb/Evac_ISM = 10 again;
+  fosc = 4.57e14 Hz = c/656 nm (H-alpha - a real
+  spectral anchor); wormhole term 7.09e-44 EXACT at
+  r = 1e4 (b dropped from the printed form but
+  numerically irrelevant at r >> b).
+- **Best-candidate wired:** decomposition + code-truth
+  total + anchors registered; root break, table breaks,
+  fTRZ refutation #2, and mislabel pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

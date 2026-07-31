@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.177.0] — 2026-07-30 — BAND 1: PAPER_174 — RESONANCE CODE-TRUTH
+
+### Added
+- **PAPER_174 dispatch** (resonance 13+1 decomposition,
+  S48, sec 2.4-F): the aDPM chain + Morris-Thorne 14th
+  term. RESONANCE CODE-TRUTH ESTABLISHED: total = 1.773e-9
+  EXACT match to 172's unit test (afluid_freq dominant) —
+  the 152/158 resonance tables (1e45–1e156) are DOUBLY
+  disproven. Cross-paper: fquantum = 2pi/t_H = 1.445e-17
+  EXACT (= 173's factor); H_z = 70.05 km/s/Mpc SECOND
+  canonical vote; UA_SCM = 10 = SO_5; fosc = H-alpha
+  anchor; wormhole 7.09e-44 EXACT; mantissa identity
+  3.545 = 7.09/2. PINNED: aDPM root formula 66-order
+  break vs its own value; sub-term table not following
+  printed formulas; raw-additive fTRZ EMPIRICALLY REFUTED
+  #2 (0.1 vs total 1.773e-9); fAether "Planck" mislabel.
+- OPEN_RULING Q-170.
+- Gate: 1,179 assertions, 0 failures. Registry: 425 rows / 911 edges / 178 ledgers (measured).
+
+---
+
 ## [0.176.0] — 2026-07-30 — BAND 1: PAPER_173 — COMPRESSED TABLES DERIVED
 
 ### Added

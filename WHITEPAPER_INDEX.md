@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 177 (11 ✓, 166 ⚠ OPEN_RULING)
+- **Wired:** 178 (11 ✓, 167 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2078
+- **Not yet touched:** 2077
 
 ---
 
@@ -1006,7 +1006,7 @@
 | ⬜ | PAPER_1747 | LOG 2 E 1 4427 |
 | ⬜ | PAPER_1748 | PI OVER 2 1 5708 |
 | ⬜ | PAPER_1749 | OMEGA W1 0 5671 |
-| ⬜ | PAPER_174 | Modular Resonance MUGE 13Term Wormhole |
+| ⚠ | PAPER_174 | Modular Resonance MUGE 13Term Wormhole |
 | ⬜ | PAPER_1750 | KHINCHIN K 2 6854 |
 | ⬜ | PAPER_1751 | SQRT 2PI 2 5066 |
 | ⬜ | PAPER_1752 | PAPER 1199 CUMULATIVE COUNT 157 |
