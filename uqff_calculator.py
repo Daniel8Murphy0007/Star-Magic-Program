@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.220.0"
+VERSION = "0.221.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11453,6 +11453,70 @@ def _paper_216(dataset):
         },
         'formula': 'Triadic {FU_g1, R(t), FU_Bi}; buoyancy decay e^-(pi-t_n); couplings F_TRZ, 3*F_TRZ^2',
         'source': 'PAPER_216',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_217')
+def _paper_217(dataset):
+    """DeepSearch F_U_Bi_i polynomial + rare mathematical discoveries (S54).
+
+    Verification of the full F_U_Bi_i 12-term buoyancy integral, its
+    two-branch quadratic solution, and three UQFF-exclusive expressions.
+    Wired observables:
+    * F_U_Bi_i sums 12 vacuum-buoyancy modes over 4 geometry classes:
+      spherical sin(theta)*f, toroidal cos(phi)*f, linear f, hybrid
+      sin*cos*f^2.
+    * Two-branch quadratic a*F_U^2 + b*F_U + c = 0 at cosmological
+      scale: Branch 1 (creation, +) F_U+ ~ 2.11e208 N; Branch 2
+      (annihilation, -) F_U- ~ -8.31e211 N; asymmetry |F_U-/F_U+| =
+      3938 ~ 3940 (paper) - linked to baryon asymmetry ~6e-10 and the
+      near-cancellation giving the stable present universe at t_n~0.95pi.
+      Stability: discriminant b^2-4ac = 0 for r > r_Planck.
+    * Three rare discoveries (UQFF-exclusive, not reducible to GR/QFT):
+      F_hier relativistic 26-layer hierarchy decay integral (convergent,
+      ratio e^-1/26 = 0.962 < 1); Delta-F adaptive feedback force
+      F_rel*t*(1-e^-T/t) (capacitor-charge analogue -> impulse F_rel*t
+      as T/t->inf); F_hyb hybrid polarization mode P_pol*f_mm/omega_0.
+    * CGM metallicity f_z,CGM = 1.46e-73 (ties PAPER_216); e^-[SSq] =
+      e^-0.57 = 0.566.
+    Q-213: (a) the two-branch F_U values are documented references - the
+    polynomial coefficients a,b,c are not given numerically, so
+    2.11e208 / -8.31e211 N cannot be re-derived. (b) the f_z,CGM
+    derivation states [SSq]^26 = 0.57^26 ~ 6.16e-6, but 0.57^26 =
+    4.50e-7 (~14x drift); and the density-ratio exponent n_CGM is
+    fitted to 67.5 (fractional) rather than the primitive 26.
+    Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    f_u_plus = 2.11e208
+    f_u_minus = -8.31e211
+    branch_ratio = abs(f_u_minus / f_u_plus)             # 3938
+    e_neg_ssq = _m.exp(-SSQ)                              # 0.566
+    ssq_26 = SSQ ** 26                                    # 4.50e-7 (paper 6.16e-6)
+    fhier_ratio = _m.exp(-1 / 26)                         # 0.962 < 1
+    return {
+        'value': {
+            'domain': '2.15 (F_U_Bi_i polynomial + rare discoveries)',
+            'fubii_modes': 12,
+            'geometry_classes': ['spherical', 'toroidal', 'linear', 'hybrid'],
+            'branch1_creation_N': f_u_plus,               # 2.11e208
+            'branch2_annihilation_N': f_u_minus,          # -8.31e211
+            'branch_asymmetry_ratio': branch_ratio,       # 3938 ~ 3940
+            'branch_asymmetry_paper': 3940,
+            'discriminant': 0,                            # b^2-4ac = 0
+            'present_epoch_tn': 0.95 * _m.pi,             # 2.985
+            'rare_discoveries': ['F_hier', 'delta_F', 'F_hyb'],
+            'fhier_convergence_ratio': fhier_ratio,       # 0.962 < 1
+            'fhier_convergent': fhier_ratio < 1,
+            'f_z_cgm': 1.46e-73,
+            'e_neg_ssq': e_neg_ssq,                       # 0.566
+            'ssq_26': ssq_26,                             # 4.50e-7
+            'ssq_26_paper_fork': 'paper states 0.57^26 ~ 6.16e-6, actual 4.50e-7 (~14x); n_CGM fitted 67.5 (Q-213)',
+        },
+        'formula': 'a*F_U^2 + b*F_U + c = 0; |F_U-/F_U+| = 3940; F_hier convergent (e^-1/26 < 1)',
+        'source': 'PAPER_217',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

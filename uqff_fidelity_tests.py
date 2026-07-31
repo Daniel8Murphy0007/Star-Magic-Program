@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.220.0", "uqff_calculator.VERSION = 0.220.0")
+assert_that(C.VERSION == "0.221.0", "uqff_calculator.VERSION = 0.221.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3113,6 +3113,19 @@ assert_that(_r216['westerlund2']['r_t_N'] == -2.29e-41 and _r216['pillars_m16'][
 assert_that(_r216['f_z_cgm'] == 1.46e-73 and _r216['dk_phi'] == 7.25e8,
             "PAPER_216: f_z,CGM=1.46e-73; dk_phi=7.25e8 (ties PAPER_212)")
 assert_that(C.wired_count() >= 220, "wired_count >= 220")
+
+_r217 = C.calc('PAPER_217')['value']
+assert_that(_r217['fubii_modes'] == 12 and len(_r217['geometry_classes']) == 4,
+            "PAPER_217: F_U_Bi_i 12-term integral over 4 geometry classes")
+assert_that(abs(_r217['branch_asymmetry_ratio'] - 3938.388625592417) < 1e-6 and _r217['discriminant'] == 0,
+            "PAPER_217: two-branch |F_U-/F_U+| = 3938 ~ 3940; discriminant b^2-4ac = 0")
+assert_that(_r217['fhier_convergent'] and abs(_r217['fhier_convergence_ratio'] - 0.9622687143632572) < 1e-9,
+            "PAPER_217: F_hier 26-layer hierarchy convergent, ratio e^-1/26 = 0.962 < 1")
+assert_that(len(_r217['rare_discoveries']) == 3 and abs(_r217['e_neg_ssq'] - 0.5655254386995371) < 1e-9,
+            "PAPER_217: 3 rare discoveries (F_hier, delta_F, F_hyb); e^-SSq = 0.566")
+assert_that(abs(_r217['ssq_26'] - 4.495171312401194e-07) < 1e-13,
+            "PAPER_217: 0.57^26 = 4.50e-7 (paper's 6.16e-6 is ~14x drift, n_CGM fit 67.5, Q-213)")
+assert_that(C.wired_count() >= 221, "wired_count >= 221")
 
 
 # =============================================================================

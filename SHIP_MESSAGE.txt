@@ -1,31 +1,34 @@
-v0.220.0 BAND 1: PAPER_216 wired - TRIADIC VALIDATION (Wd2 + PILLARS)
+v0.221.0 BAND 1: PAPER_217 wired - F_U_Bi_i POLYNOMIAL + RARE DISCOVERIES
 
-PAPER_216 (Triadic UQFF Numerical Validation Suite - Westerlund 2 and
-Pillars of Creation, S54) wired as one dispatch (Q-212, OPEN_RULING).
+PAPER_217 (DeepSearch F_U_Bi_i Polynomial Verification and Rare
+Mathematical Discoveries, S54) wired as one dispatch (Q-213,
+OPEN_RULING).
 
 Physics:
-- Simultaneous computation of the three Triadic modes - Compressed
-  (FU_g1), Resonance (R(t)), Buoyancy (FU_Bi) - on two star-forming
-  benchmarks.
-- Westerlund 2 (r = 1.89e16 m): FU_g1 = 2.43e-40 N, R(t) = -2.29e-41 N,
-  FU_Bi ~ 6.14e-32 N; resonance coupling 0.1 = F_TRZ.
-- Pillars of Creation / M16 (r = 4.73e16 m): FU_g1 = 3.95e-41 N,
-  R(t) = -1.12e-42 N, FU_Bi ~ 9.79e-33 N; resonance coupling 0.03 =
-  3*F_TRZ^2 (the same PAPER_215 a_Ug1 primitive). R(t) magnitudes
-  reproduced in Python given the paper's cos = -0.9455.
-- Buoyancy temporal-decay factor e^-(pi - t_n): t_n=0 -> e^-pi = 0.0432
-  (max attenuation, proto-shells), t_n=pi/2 -> 0.208, t_n=pi -> 1 (max
-  buoyancy) - the cosmic-to-quantum time bridge. Verified.
-- DPM proportion pair f_UA' = 0.999, f_SCm = 0.001 (sum = 1),
-  rho_UA/rho_SCm = 10 = SO_5; f_z,CGM = 1.46e-73; dk_phi = 7.25e8
-  (ties PAPER_212), V_little/V_big = 1/33 (Boyle's-law proto-shell).
+- F_U_Bi_i full 12-term buoyancy integral over 4 geometry classes
+  (spherical sin(theta)*f, toroidal cos(phi)*f, linear f, hybrid
+  sin*cos*f^2).
+- Two-branch quadratic a*F_U^2 + b*F_U + c = 0 at cosmological scale:
+  Branch 1 (creation, +) F_U+ ~ 2.11e208 N; Branch 2 (annihilation, -)
+  F_U- ~ -8.31e211 N; asymmetry |F_U-/F_U+| = 3938 ~ 3940 (paper),
+  linked to the baryon asymmetry ~6e-10 and the near-cancellation
+  giving the stable present universe at t_n ~ 0.95pi. Stability:
+  discriminant b^2-4ac = 0 for r > r_Planck. Verified.
+- Three UQFF-exclusive rare discoveries (not reducible to GR/QFT):
+  F_hier relativistic 26-layer hierarchy decay integral (convergent,
+  ratio e^-1/26 = 0.962 < 1); Delta-F adaptive feedback force
+  F_rel*t*(1-e^-T/t) (capacitor-charge analogue -> impulse F_rel*t);
+  F_hyb hybrid polarization mode P_pol*f_mm/omega_0.
+- CGM metallicity f_z,CGM = 1.46e-73 (ties PAPER_216); e^-SSq =
+  e^-0.57 = 0.566.
 
-Q-212: (a) the resonance couplings 0.1 / 0.03 = F_TRZ / 3*F_TRZ^2 -
-primitive origin confirmation. (b) The R(t) worked examples state
-cos(omega*t) = -0.9455, but the shown omega*t products (~12.5 / ~9.36
-rad) give cos = +0.9998 / -0.9978; the t_n phase term inside the cos
-argument is unshown. Appendix boilerplate drift (VDS 1.894, kg/m^3,
-beta_i) auto-corrected per charter.
+Q-213: (a) the two-branch F_U values are documented references - the
+polynomial coefficients a,b,c are given only symbolically, so
+2.11e208 / -8.31e211 N cannot be re-derived. (b) the f_z,CGM
+derivation states 0.57^26 ~ 6.16e-6, but 0.57^26 = 4.50e-7 (~14x
+drift), and the density-ratio exponent n_CGM is fitted to 67.5
+(fractional) rather than the primitive 26. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1418/0. Registry 493 rows / 1049 edges / 220 ledgers (measured).
-Campaign: 220/2,255. Next: PAPER_217.
+Gate: 1424/0. Registry 495 rows / 1052 edges / 221 ledgers (measured).
+Campaign: 221/2,255. Next: PAPER_218.

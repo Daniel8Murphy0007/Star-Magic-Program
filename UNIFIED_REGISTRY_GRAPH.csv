@@ -1048,3 +1048,6 @@ primitive,F_TRZ,observable,triadic_validation_westerlund_pillars,couplings F_TRZ
 observable,triadic_validation_westerlund_pillars,paper,PAPER_216,Triadic 3-mode
 observable,buoyancy_temporal_decay,paper,PAPER_216,e^-(pi-t_n)
 observable,triadic_validation_westerlund_pillars,observable,cr_dsa_knee,0.03=3*F_TRZ^2 tie PAPER_215
+observable,fubii_two_branch_polynomial,paper,PAPER_217,2-branch quadratic
+observable,rare_math_discoveries_cgm,paper,PAPER_217,3 rare discoveries
+observable,rare_math_discoveries_cgm,observable,triadic_validation_westerlund_pillars,"f_z,CGM ties PAPER_216"

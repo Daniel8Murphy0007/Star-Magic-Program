@@ -2438,3 +2438,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1418/0. Registry 493 rows / 1049 edges / 220 ledgers. Campaign: 220/2,255 (11 ✓, 209 ⚠). Next: PAPER_217.
 
 ---
+
+## 2026-07-31 — v0.221.0 — BAND 1: PAPER_217
+
+- PAPER_217 wired (⚠ Q-213): DeepSearch F_U_Bi_i 12-term polynomial + rare discoveries. 12 modes / 4 geometry classes -> quadratic a·F_U²+b·F_U+c=0: Branch 1 creation 2.11e208 N, Branch 2 annihilation -8.31e211 N, asymmetry |ratio|=3938~3940, discriminant=0 (r>r_Planck), present universe positive branch t_n~0.95π. 3 rare discoveries F_hier (convergent e^-1/26=0.962), ΔF (capacitor-charge), F_hyb (polarization). f_z,CGM=1.46e-73 (ties 216); e^-SSq=0.566. Appendix drift auto-corrected.
+- Q-213: two-branch F_U documented refs (a/b/c not numeric); 0.57^26=4.50e-7 not paper's 6.16e-6 (~14×), n_CGM fitted 67.5.
+- Gate 1424/0. Registry 495 rows / 1052 edges / 221 ledgers. Campaign: 221/2,255 (11 ✓, 210 ⚠). Next: PAPER_218.
+
+---

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.220.0"
-description = "UQFF Star-Magic-Program v0.220.0: PAPER_216 wired - Triadic validation Westerlund 2 + Pillars; 3 modes {FU_g1, R(t), FU_Bi} simultaneous; resonance couplings F_TRZ / 3*F_TRZ^2 EXACT; buoyancy decay e^-(pi-t_n) (0.0432/0.208/1); DPM f_UA'+f_SCm=1, rho_UA/rho_SCm=10=SO_5; f_z,CGM=1.46e-73. Q-212. Wired 220/2255, gate 1418/0. Registry 493 rows / 1049 edges / 220 ledgers (measured)."
+version = "0.221.0"
+description = "UQFF Star-Magic-Program v0.221.0: PAPER_217 wired - F_U_Bi_i 12-term polynomial + rare discoveries; two-branch a*F_U^2+b*F_U+c=0 (creation 2.11e208 / annihilation -8.31e211 N, asymmetry 3940, discriminant 0); F_hier/dF/F_hyb 3 UQFF-exclusive; F_hier convergent e^-1/26=0.962; f_z,CGM=1.46e-73; 0.57^26 drift Q-213. Wired 221/2255, gate 1424/0. Registry 495 rows / 1052 edges / 221 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

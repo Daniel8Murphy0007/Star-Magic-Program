@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.221.0] — 2026-07-31 — BAND 1: PAPER_217 — F_U_Bi_i POLYNOMIAL + RARE DISCOVERIES
+
+### Added
+- **PAPER_217 wired** (⚠ Q-213): DeepSearch verification of the F_U_Bi_i 12-term
+  buoyancy integral, its two-branch polynomial solution, and three
+  UQFF-exclusive expressions. The 12 modes span 4 geometry classes (spherical,
+  toroidal, linear, hybrid) and reduce to an effective quadratic
+  `a·F_U² + b·F_U + c = 0`: Branch 1 (creation) F_U+ ~ 2.11e208 N, Branch 2
+  (annihilation) F_U- ~ -8.31e211 N, asymmetry |F_U-/F_U+| = 3938 ~ 3940 (linked
+  to baryon asymmetry ~6e-10); stability discriminant b²-4ac = 0 for r > r_Planck;
+  present universe at the positive branch, t_n ~ 0.95π. Three rare discoveries:
+  F_hier (relativistic 26-layer hierarchy decay, convergent — ratio e^-1/26 =
+  0.962 < 1), ΔF (adaptive feedback force, capacitor-charge analogue → impulse),
+  F_hyb (hybrid polarization mode). f_z,CGM = 1.46e-73 (ties PAPER_216);
+  e^-SSq = 0.566.
+- Q-213: (a) two-branch F_U values are documented references (a/b/c not numeric);
+  (b) the f_z,CGM derivation states 0.57^26 ~ 6.16e-6 but 0.57^26 = 4.50e-7
+  (~14× drift), and n_CGM is fitted to 67.5 (fractional) not the primitive 26.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1418 → 1424 (+6). Registry 495 rows / 1052 edges / 221 ledgers.
+
+---
+
 ## [0.220.0] — 2026-07-31 — BAND 1: PAPER_216 — TRIADIC VALIDATION (Wd2 + PILLARS)
 
 ### Added

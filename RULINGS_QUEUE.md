@@ -9,6 +9,23 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-213 — PAPER_217 — two-branch F_U references + f_z,CGM arithmetic drift
+- **Question (a):** PAPER_217's two-branch quadratic gives F_U+ ~ 2.11e208 N
+  (creation) and F_U- ~ -8.31e211 N (annihilation), asymmetry |ratio| = 3940.
+  The polynomial coefficients a, b, c are given only symbolically (in terms of
+  the 12 mode sums), not numerically, so the two branch values cannot be
+  re-derived — they are documented references. Should the a/b/c numeric
+  coefficients be recorded, or are the branch values terminal?
+- **Question (b):** The f_z,CGM = 1.46e-73 derivation (sec 4.2) states
+  [SSq]^26 = 0.57^26 ~ 6.16e-6, but 0.57^26 = 4.50e-7 (~14x drift). The paper
+  then admits the density-ratio exponent n_CGM is "fitted to 67.5 (fractional)
+  rather than the integer 26" to match Haardt & Madau (2012) / Prochaska (2017).
+  Is f_z,CGM a fitted quantity (n_CGM=67.5) or should there be a primitive
+  n_CGM=26 chain? And is the 6.16e-6 a typo for 4.50e-7?
+- **Best-candidate wired:** branch values + asymmetry 3940 wired as documented
+  references; 0.57^26 = 4.50e-7 computed and gate-pinned; both forks recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-212 — PAPER_216 — Triadic resonance couplings + cos-argument reproducibility
 - **Question (a):** PAPER_216's Triadic validation uses resonance coupling 0.1
   for Westerlund 2 and 0.03 for the Pillars of Creation. 0.1 = F_TRZ EXACTLY and

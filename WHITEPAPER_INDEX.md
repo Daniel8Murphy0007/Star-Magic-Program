@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 220 (11 ✓, 209 ⚠ OPEN_RULING)
+- **Wired:** 221 (11 ✓, 210 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2035
+- **Not yet touched:** 2034
 
 ---
 
@@ -1473,7 +1473,7 @@
 | ⬜ | PAPER_2156 | 1 894 RATIO BULK SCRIPT ARTIFACT 935 PAPERS NON CANONICAL DENSITIES 9 47E 27 AND |
 | ⚠ | PAPER_215 | Cosmic Rays WHIM Fermi Acceleration CR Knee UQFF |
 | ⚠ | PAPER_216 | Triadic UQFF Numerical Validation Westerlund2 Pillars |
-| ⬜ | PAPER_217 | DeepSearch FUBii Polynomial Rare Mathematical Discoveries |
+| ⚠ | PAPER_217 | DeepSearch FUBii Polynomial Rare Mathematical Discoveries |
 | ⬜ | PAPER_218 | NGC3603 Stellar Pressure Dispersal UQFF |
 | ⬜ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
 | ⬜ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
