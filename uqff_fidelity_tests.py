@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.212.0", "uqff_calculator.VERSION = 0.212.0")
+assert_that(C.VERSION == "0.213.0", "uqff_calculator.VERSION = 0.213.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3009,6 +3009,19 @@ assert_that('!= canonical F_TRZ' in _r208['f_trz_name_collision'],
 assert_that(_r208['q_wave'] == 6.33e4 and _r208['q_wave_matches_196_198'],
             "PAPER_208: Q_wave 6.33e4 J/m^3 matches 196/198 stat table")
 assert_that(C.wired_count() >= 212, "wired_count >= 212")
+
+_r209 = C.calc('PAPER_209')['value']
+assert_that(abs(_r209['de_running_factor'] - 1.000000081225) < 1e-13,
+            "PAPER_209: rho_L^UQFF/rho_L^obs = 1 + kappa^2*SSq^2 = 1.000000081225")
+assert_that(_r209['lcdm_is_uqff_subset'] is True,
+            "PAPER_209: Lambda-CDM reduces from UQFF (strict superset)")
+assert_that(abs(_r209['cmb_score_gain_pct'] - 0.7017543859649098) < 1e-9,
+            "PAPER_209: CMB C_l 28.5->28.7 = +0.70% (verified)")
+assert_that(abs(_r209['cluster_score_gain_pct'] - 3.7037037037037033) < 1e-9,
+            "PAPER_209: cluster mass fn 27->28 = +3.70% (paper states 3.4%, honest residual)")
+assert_that(_r209['cmb_resonance_multipoles'] == [6, 10, 22],
+            "PAPER_209: 26-layer resonance predicts CMB excess at l = 6, 10, 22")
+assert_that(C.wired_count() >= 213, "wired_count >= 213")
 
 
 # =============================================================================

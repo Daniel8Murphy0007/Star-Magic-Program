@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.212.0"
+VERSION = "0.213.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10933,3 +10933,67 @@ def _paper_208(dataset):
         'status': 'OPEN_RULING',
     }
 
+
+
+@_register('PAPER_209')
+def _paper_209(dataset):
+    """UQFF vs Lambda-CDM comparison framework (S50, thread 7514fe).
+
+    Lambda-CDM reduces from UQFF when quantum, buoyancy, magnetic
+    and nuclear terms -> 0, so UQFF is a strict superset. Key
+    discriminators wired:
+    * Running-vacuum dark-energy correction (Ug4):
+        rho_Lambda^UQFF = rho_Lambda^obs * (1 + kappa^2 * SSq^2)
+        = rho_Lambda^obs * 1.000000081225 (paper: 1.0000000812).
+      kappa = KAPPA_PER_DAY = 5.0e-4 day^-1 (PAPER_2112),
+      SSq = 0.57 (PAPER_1154).
+    * Scale-dependent EOS w(r): galactic w~-1.001 (stiffer),
+      cluster w~-0.998 (softer), cosmic w=-1 (matches LCDM at
+      Hubble scale); Delta-w ~ 0.001-0.003 at Mpc vs DESI 2024
+      sigma(w) ~ 0.05 -> needs 50x precision.
+    * Cluster mass-function tail exponent 0.3 (Q-205: is this the
+      PAPER_1953 "0.3 factor" = (D_phys-1)/SO_5 = 3/10, or the
+      1 - D_phys/D_BSFG = 1/3 = 0.333 GW-erosion adjacent form?),
+      C_UQFF ~ 0.02-0.05 depends on SSq.
+    * CMB 26-layer resonance: quadrupole l=2 suppression ~-50%
+      (explains observed low-l deficit), small excesses at
+      l = 6, 10, 22 (26-resonance testable with future data).
+    * 29-benchmark score: CMB C_l 28.5->28.7 (+0.70% verified),
+      cluster mass function 27->28 (computed +3.70%; paper states
+      +3.4% - minor paper arithmetic drift, honest residual kept).
+    * D_universe ~93.1 Gly vs LCDM 93.0 (<1%).
+    rho_Lambda^obs = 5.96e-27 kg/m^3 is the LCDM comparison anchor
+    (NOT a rho_SCm value), retained as a literal per charter.
+    """
+    kappa = KAPPA_PER_DAY                                  # 5.0e-4 day^-1
+    ssq = SSQ                                              # 0.57
+    de_factor = 1.0 + (kappa ** 2) * (ssq ** 2)           # 1.000000081225
+    cmb_gain_pct = (28.7 - 28.5) / 28.5 * 100.0           # +0.70%
+    cluster_gain_pct = (28.0 - 27.0) / 27.0 * 100.0       # +3.70%
+    return {
+        'value': {
+            'domain': '2.7 (UQFF vs Lambda-CDM, thread 7514fe)',
+            'lcdm_is_uqff_subset': True,
+            'de_running_factor': de_factor,               # 1.000000081225
+            'de_factor_paper': 1.0000000812,
+            'kappa_per_day': kappa,
+            'ssq': ssq,
+            'w_running': {'galactic': -1.001, 'cluster': -0.998, 'cosmic': -1.0},
+            'delta_w_mpc': '0.001-0.003 vs DESI sigma 0.05 (50x needed)',
+            'mass_fn_exponent': 0.3,
+            'mass_fn_exponent_fork': '0.3 (PAPER_1953 3/10) vs 1/3 (1-D_phys/D_BSFG) Q-205',
+            'C_UQFF': '0.02-0.05 (SSq-dependent)',
+            'cmb_quadrupole_suppression_pct': -50.0,
+            'cmb_resonance_multipoles': [6, 10, 22],
+            'cmb_score_gain_pct': cmb_gain_pct,           # +0.70
+            'cluster_score_gain_pct': cluster_gain_pct,   # +3.70 (paper 3.4)
+            'cluster_gain_paper_pct': 3.4,
+            'd_universe_gly': 93.1,
+            'd_universe_lcdm_gly': 93.0,
+            'rho_lambda_obs_kg_m3': 5.96e-27,             # LCDM comparison anchor, not rho_SCm
+        },
+        'formula': 'rho_L^UQFF = rho_L^obs*(1+kappa^2*SSq^2); LCDM = UQFF with quantum/buoy/mag/nuc -> 0',
+        'source': 'PAPER_209',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }

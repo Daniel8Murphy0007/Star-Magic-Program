@@ -1019,3 +1019,7 @@ observable,ghz_entropy_correction,paper,PAPER_207,computed correction
 observable,variable_calibration_status,paper,PAPER_208,6 variables
 primitive,SSQ,observable,variable_calibration_status,SSq layer sum
 primitive,F_TRZ,observable,ftrz_collision_phi_fork,name collision
+primitive,KAPPA_PER_DAY,observable,running_vacuum_de_discriminator,kappa^2 factor
+primitive,SSQ,observable,running_vacuum_de_discriminator,SSq^2 factor
+observable,lcdm_uqff_superset,paper,PAPER_209,29-benchmark comparison
+observable,running_vacuum_de_discriminator,paper,PAPER_209,running-vacuum EOS

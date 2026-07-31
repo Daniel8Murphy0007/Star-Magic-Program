@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.212.0"
-description = "UQFF Star-Magic-Program v0.212.0: PAPER_208 wired - 6-variable calibration status; SSq=0.57 layer-sum 2.302 + Q_wave 6.33e4 canonical (verified); f_TRZ frequency-vs-primitive NAME COLLISION + phi-vs-Phi_res fork + rho_UA value pinned; CIA H2O-H2 refit. Q-204. Wired 212/2255, gate 1369/0. Registry 477 rows / 1020 edges / 212 ledgers (measured)."
+version = "0.213.0"
+description = "UQFF Star-Magic-Program v0.213.0: PAPER_209 wired - UQFF vs Lambda-CDM comparison; LCDM is strict UQFF subset (quantum/buoy/mag/nuclear -> 0); running-vacuum rho_L*(1+kappa^2*SSq^2)=1.000000081225 verified; scale-dependent EOS w(r); CMB 26-resonance l=6,10,22; 29-benchmark CMB +0.70%, cluster +3.70% (paper 3.4%). Q-205. Wired 213/2255, gate 1376/0. Registry 479 rows / 1024 edges / 213 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

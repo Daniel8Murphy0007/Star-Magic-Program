@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.213.0] — 2026-07-31 — BAND 1: PAPER_209 — UQFF vs LAMBDA-CDM
+
+### Added
+- **PAPER_209 wired** (⚠ Q-205): UQFF vs Lambda-CDM comparison framework.
+  Lambda-CDM reduces from UQFF when quantum/buoyancy/magnetic/nuclear terms
+  vanish — UQFF is a strict superset. Running-vacuum dark-energy discriminator
+  `rho_L^UQFF = rho_L^obs*(1 + kappa^2*SSq^2) = rho_L^obs*1.000000081225`
+  (kappa = KAPPA_PER_DAY 5e-4/day, SSq = 0.57 — both from registry) verified.
+  Scale-dependent EOS w(r): galactic −1.001, cluster −0.998, cosmic −1.0.
+  CMB 26-layer resonance excess at l = 6, 10, 22; quadrupole l=2 suppression
+  −50%. 29-benchmark score: CMB C_l +0.70% (verified), cluster mass fn +3.70%
+  (paper states 3.4% — minor paper arithmetic drift, honest residual kept).
+- Q-205: cluster mass-fn tail exponent 0.3 fork (PAPER_1953 3/10 vs 1/3).
+- Gate 1370 → 1376 (+6). Registry 479 rows / 1024 edges / 213 ledgers.
+
+---
+
 ## [0.212.0] — 2026-07-31 — BAND 1: PAPER_208 — VARIABLE CALIBRATION
 
 ### Added

@@ -2374,3 +2374,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 212/2,255 (11 ✓, 201 ⚠). Next: PAPER_209.
 
 ---
+
+## 2026-07-31 — v0.213.0 — BAND 1: PAPER_209
+
+- PAPER_209 wired (⚠ Q-205): UQFF vs Lambda-CDM comparison. LCDM = strict UQFF subset (quantum/buoy/mag/nuclear → 0). Running-vacuum discriminator rho_L*(1+kappa^2*SSq^2)=1.000000081225 verified (kappa/SSq from registry). Scale-dependent EOS w(r); CMB 26-resonance l=6,10,22, quadrupole −50%. 29-benchmark CMB +0.70% verified, cluster +3.70% (paper 3.4% — minor drift kept honest).
+- Q-205: cluster mass-fn exponent 0.3 fork (PAPER_1953 3/10 vs 1/3).
+- Gate 1376/0. Registry 479 rows / 1024 edges / 213 ledgers. Campaign: 213/2,255 (11 ✓, 202 ⚠). Next: PAPER_210.
+
+---

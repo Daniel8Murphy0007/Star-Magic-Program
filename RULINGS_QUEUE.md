@@ -9,6 +9,19 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-205 — PAPER_209 — cluster mass-function tail exponent 0.3 fork
+- **Question:** PAPER_209 sec 4 gives the massive-cluster mass-function
+  correction n_UQFF(>M) = n_PS(>M)*(1 + C_UQFF*(M/1e15 M_sun)^0.3). Is the
+  exponent 0.3 the PAPER_1953 "0.3 factor" = (D_phys-1)/SO_5 = 3/10 EXACT, or
+  the GW-erosion-adjacent 1 - D_phys/D_BSFG = 1/3 = 0.333 (PAPER_2154)? Both
+  land near 0.3; the paper writes 0.3 flat. Secondary: paper states the cluster
+  benchmark score gain as +3.4% but 27->28 of 29 computes to +3.70% (minor
+  paper arithmetic drift — dispatch keeps the computed 3.70% as honest residual
+  and records the paper's 3.4%).
+- **Best-candidate wired:** exponent 0.3 stored flat; both fork candidates noted
+  in registry row running_vacuum_de_discriminator and dispatch value.
+- **Daniel's ruling:** (pending)
+
 ### Q-001 — PAPER_002 — F_UQFF headline vs damping chain inconsistency
 - **Question:** Paper states F_UQFF = 0.5297 (47% reduction) but its own formula
   1.0 * A_SCm * 0.90 * 0.37 evaluates to 0.333. The 0.5297 value matches
