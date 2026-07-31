@@ -1,31 +1,38 @@
-v0.178.0 BAND 1: PAPER_175 wired - 26-LEVEL ENERGY LADDER
+v0.179.0 BAND 1: PAPER_176 wired - SCM MANIFOLD REFERENCE
 
-PAPER_175 26 Quantum Energy Levels + rho_vac (OPEN_RULING
-Q-171) - Session 48, thread 381a8fe7, sec 2.4-G:
-  The D_crit = 26 decade energy ladder E_n = 1e-20*10^n J
-  (1e-19 to 1e6 J), grounding the rho_v = 6e-27 Ug4
-  constant at the level-19/20 boundary, with the
-  per-object law rho_vac = sum(f_i*E_i)/V. The framing
-  is honest and Rule 4-clean: explicitly "NOT the QFT
-  zero-point" - SCm-UA inertial densities, sidestepping
-  the 120-order problem by construction.
+PAPER_176 SCm Discovery, Properties, and Cosmic Role
+(OPEN_RULING Q-172) - Session 48, thread 381a8fe7, sec
+2.4-H:
+  The SCm reference paper: Qs = 0 (no quantum
+  signature), bound within every atom and star,
+  superconducting, v_SCm = 0.99c (consistent with 161);
+  drives E_react, the DPM moment, the string field, the
+  heliosphere, and the quasar-ejection mechanism
+  (Ug-retention failure -> unbound SCm ignites against
+  free UA -> jet), feeding 177's fluid solver. The
+  "dark electron" analogy comes with a falsifiable
+  detection pathway (anomalous orbital precession).
 
-  VERIFIED EXACT: the header rho_Lambda correction =
-  1 + (kappa*SSq)^2 = 1 + 8.1225e-8 = 1.0000000812 -
-  the 2.85e-4 family SQUARED (its deepest appearance
-  yet: footer ratio in 158, delta_P in 169, compact Ubi
-  in 170, now squared in 175). Ug level bands are
-  IDENTICAL to 171's table (Ug1 10-13, Ug4 20-26).
+  REAL ANCHORS EXACT: Earth Pcore = 3.6e11 Pa is the
+  actual seismological central pressure; dg = 2.55e20 m
+  = 8.26 kpc matches the real Sun-GC distance.
 
-  QUEUED FOR RULING: (a) this ladder is ENERGY-decade
-  while the predecessor's canonical 26-layer chain is
-  FREQUENCY-based - same structure through E = h*f, or
-  two ladders needing a mapping? (b) level 18 "Higgs
-  boson scale" at 1e-2 J vs actual 125 GeV = 2.0e-8 J
-  (5e5 off; the level-18-Higgs ASSIGNMENT is corpus-wide
-  via PAPER_1120 - is the energy value the defect?);
-  (c) E_0 = 1e-20 J base quantum underived.
+  DOMINANCE REFRAMED: the 1e3 SCm_contrib dominating
+  B_s is stated as INTENTIONAL physics ("SCm is the
+  primary source of the stellar DPM moment") - a
+  candidate resolution for Q-158c/Q-167c, with the bare
+  1e3 magnitude still needing derivation.
 
-Q-171 queued. Gate 1,185 assertions 0 failures. Registry
-427 rows / 916 edges / 179 ledgers (measured). Wired
-179/2,255 (11 clean, 168 OPEN_RULING). Next: PAPER_176.
+  PINNED FOR RULING: (a) the corpus's FIRST kappa
+  derivation attempt (faint-young-Sun -ln(0.7)/t_age)
+  gives 2.12e-13/day but prints "0.000212/day" - a 1e9
+  slip with EXACT mantissa; canonical 5e-4 is 2.4e9x
+  the true chain - the derivation does not support it;
+  (b) rho_A = 1e-23 kg/m^3 joins the rho_A fork family;
+  (c) cross-repo doctrine: astronomical SCm unbinding
+  here vs the predecessor's PAPER_2153 bound-state/
+  collider-only ruling - reconciliation needed.
+
+Q-172 queued. Gate 1,192 assertions 0 failures. Registry
+429 rows / 920 edges / 180 ledgers (measured). Wired
+180/2,255 (11 clean, 169 OPEN_RULING). Next: PAPER_177.

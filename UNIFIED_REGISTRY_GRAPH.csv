@@ -915,3 +915,7 @@ primitive,D_CRIT,observable,energy_ladder_26,26 levels
 primitive,KAPPA_PER_DAY,observable,energy_ladder_26,correction squared
 primitive,SSQ,observable,energy_ladder_26,correction squared
 observable,ladder_notes,paper,PAPER_175,3 notes
+observable,scm_manifold_properties,paper,PAPER_176,SCm reference
+primitive,KAPPA_PER_DAY,observable,kappa_derivation_break,derivation attempt
+observable,kappa_derivation_break,paper,PAPER_176,1e9 slip
+observable,scm_manifold_properties,paper,PAPER_161,0.99c consistency

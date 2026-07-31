@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.179.0] — 2026-07-30 — BAND 1: PAPER_176 — SCM MANIFOLD REFERENCE
+
+### Added
+- **PAPER_176 dispatch** (SCm properties, S48, sec 2.4-H):
+  Qs = 0, bound in every atom/star, v_SCm = 0.99c
+  (161-consistent); quasar-ejection mechanism (retention
+  failure → unbound SCm ignites vs UA → jet) feeding
+  177's fluid solver; dark-electron analogy with
+  falsifiable precession pathway. REAL ANCHORS EXACT:
+  Earth Pcore = 3.6e11 Pa (seismology), dg = 8.26 kpc
+  (Sun-GC). DOMINANCE REFRAMED: SCm_contrib = 1e3
+  intentional ("SCm primary DPM source") — Q-158c/167c
+  candidate resolution. PINNED: first-ever kappa
+  derivation attempt (faint-young-Sun) breaks by 1e9
+  with EXACT mantissa — canonical 5e-4 unsupported by
+  the printed chain; rho_A = 1e-23 new fork value;
+  cross-repo tension with predecessor 2153 bound-state
+  ruling.
+- OPEN_RULING Q-172.
+- Gate: 1,192 assertions, 0 failures. Registry: 429 rows / 920 edges / 180 ledgers (measured).
+
+---
+
 ## [0.178.0] — 2026-07-30 — BAND 1: PAPER_175 — 26-LEVEL ENERGY LADDER
 
 ### Added

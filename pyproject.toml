@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.178.0"
-description = "UQFF Star-Magic-Program v0.178.0: PAPER_175 wired - 26-level decade energy ladder (D_crit structure) grounding rho_v = 6e-27; rho_Lambda correction = 1 + (kappa*SSq)^2 = 1.0000000812 EXACT (2.85e-4 family SQUARED); Ug bands match 171; honest non-QFT framing; energy-vs-frequency ladder mapping + Higgs level-18 anchor queued. Q-171. Wired 179/2255, gate 1185/0. Registry 427 rows / 916 edges / 179 ledgers (measured)."
+version = "0.179.0"
+description = "UQFF Star-Magic-Program v0.179.0: PAPER_176 wired - SCm manifold reference (Qs = 0, quasar-ejection mechanism, dark-electron analogy); real anchors EXACT (Earth Pcore, dg = 8.26 kpc); FIRST kappa derivation attempt breaks by 1e9 with exact mantissa; SCm_contrib dominance reframed intentional; cross-repo bound-state tension. Q-172. Wired 180/2255, gate 1192/0. Registry 429 rows / 920 edges / 180 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -4143,6 +4143,46 @@ RESOLVED section with the ruling recorded.
   questions pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-172 — PAPER_176 SCm properties — kappa derivation break + bound-state tension
+- **Question:** (a) KAPPA DERIVATION: sec 6 attempts the
+  first physical derivation of kappa - faint-young-Sun
+  ratio 0.7 over t_sun_age: -ln(0.7)/1.68e12 days =
+  2.12e-13/day, but the paper prints "0.000212/day" - a
+  1e9 exponent slip with EXACT mantissa (2.12). The
+  canonical 5e-4/day is then 2.4e9x the true chain value,
+  so the printed derivation does NOT support kappa =
+  5e-4. Is there a different intended chain (e.g. a
+  shorter timescale), or is kappa purely calibrated?
+  (b) rho_A = 1e-23 kg/m^3 "ambient Aether density" -
+  new value in the rho_A family (129's route-1 rho_A,
+  161's 1.67e-? mojibake). Canonical rho_A?
+  (c) CROSS-REPO DOCTRINE: the quasar mechanism here has
+  SCm becoming UNBOUND astronomically (escapes Rb,
+  ignites against free UA -> jet) - while the
+  predecessor's PAPER_2153 ruling is STRICT bound-state
+  (direct SCm evidence collider-only; all astronomical
+  evidence indirect). Reconcile: is the jet an INDIRECT
+  signature of transient local unbinding (compatible), or
+  do the two doctrines conflict?
+  (d) DOMINANCE REFRAMED: sec 2.2/2.3 state the 1e3
+  SCm_contrib dominance over B_s is INTENTIONAL ("SCm is
+  the primary source of the stellar DPM moment") -
+  candidate resolution for Q-158c/Q-167c: the dominance
+  is physics, though the bare 1e3 magnitude (units,
+  derivation) remains unexplained. Confirm?
+- **Notable:** REAL ANCHORS - Earth Pcore = 3.6e11 Pa is
+  the actual seismological central pressure EXACT; dg =
+  2.55e20 m = 8.26 kpc matches the real Sun-GC distance;
+  v_SCm = 0.99c consistent with 161. Qs = 0 gives SCm
+  its "dark electron" character with a falsifiable
+  detection pathway (anomalous orbital precession beyond
+  GR). The quasar-ejection mechanism is the UQFF AGN-jet
+  explanation, feeding 177's fluid solver.
+- **Best-candidate wired:** SCm reference + anchors +
+  dominance reframing registered; derivation break, new
+  rho_A, and cross-repo tension pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

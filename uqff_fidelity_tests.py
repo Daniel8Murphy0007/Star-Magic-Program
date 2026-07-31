@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.178.0", "uqff_calculator.VERSION = 0.178.0")
+assert_that(C.VERSION == "0.179.0", "uqff_calculator.VERSION = 0.179.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2589,6 +2589,21 @@ assert_that(_r175['higgs_level18_mismatch'][0] / _r175['higgs_level18_mismatch']
 assert_that('NOT QFT' in _r175['qft_differentiation'],
             "PAPER_175: explicit differentiation from QFT zero-point (honest framing)")
 assert_that(C.wired_count() >= 179, "wired_count >= 179")
+
+_r176 = C.calc('PAPER_176')['value']
+assert_that(_r176['pcore_earth_anchor'] == 3.6e11,
+            "PAPER_176: Earth Pcore = 3.6e11 Pa - real seismology anchor EXACT")
+assert_that(abs(_r176['dg_kpc'] - 8.26) < 0.01,
+            "PAPER_176: dg = 2.55e20 m = 8.26 kpc (real Sun-GC distance)")
+assert_that(9e8 < _r176['kappa_printed'] / _r176['kappa_chain_per_day'] < 1.1e9,
+            "PAPER_176: kappa derivation 1e9 slip with EXACT mantissa 2.12 (Q-172a)")
+assert_that(2e9 < _r176['kappa_canonical_gap'] < 3e9,
+            "PAPER_176: canonical kappa = 5e-4 is 2.4e9 x the faint-young-Sun chain value")
+assert_that('intentional' in _r176['dominance_reframed'],
+            "PAPER_176: SCm_contrib dominance reframed as intentional physics (Q-158c/167c candidate)")
+assert_that(_r176['rho_a_new'] == 1e-23,
+            "PAPER_176: rho_A = 1e-23 new ambient-Aether fork value (Q-172b)")
+assert_that(C.wired_count() >= 180, "wired_count >= 180")
 
 # =============================================================================
 # REPORT

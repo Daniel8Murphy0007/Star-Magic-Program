@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.178.0"
+VERSION = "0.179.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9309,5 +9309,62 @@ def _paper_175(dataset):
         'formula': 'E_n = E_0*10^n; rho_vac = sum(f_i*E_i)/V; rho_L_corr = 1+(kappa*SSq)^2',
         'source': 'PAPER_175',
         'residual_pct': abs(corr - 1.0000000812) / 1.0000000812 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_176')
+def _paper_176(dataset):
+    """SCm superconducting manifold properties (S48, sec 2.4-H).
+
+    SCm reference: Qs = 0 (no quantum signature), bound in
+    every atom/star, superconducting, v_SCm = 0.99c (161-
+    consistent); drives E_react, mu_s, Bj, heliosphere,
+    and the quasar mechanism (Ug-retention failure ->
+    unbound SCm ignites against UA -> jet). "Dark
+    electron" analogy + anomalous-precession detection
+    pathway. REAL ANCHORS: Earth Pcore = 3.6e11 Pa EXACT
+    (seismology); dg = 2.55e20 m = 8.26 kpc (real Sun-GC).
+    DOMINANCE REFRAMED (Q-172d): SCm_contrib = 1e3
+    dominating B_s is stated as INTENTIONAL physics ("SCm
+    is the primary source of the stellar DPM moment") -
+    candidate resolution for Q-158c/Q-167c: dominance is
+    the claim, the bare 1e3 magnitude still unexplained.
+    KAPPA DERIVATION ATTEMPT (Q-172a): first corpus
+    attempt to derive kappa physically - faint-young-Sun
+    -ln(0.7)/t_sun_age. Chain value = 2.12e-13/day;
+    printed "0.000212/day" - a 1e9 slip with EXACT
+    mantissa (2.12); canonical 5e-4 is then 2.4e9 x the
+    true chain. The derivation as printed does not
+    support kappa = 5e-4.
+    NEW FORK VALUE (Q-172b): rho_A = 1e-23 kg/m^3
+    ambient Aether density (joins the rho_A family).
+    CROSS-REPO DOCTRINE (Q-172c): quasar mechanism has
+    SCm becoming UNBOUND astronomically - predecessor
+    PAPER_2153 ruling: SCm bound, direct evidence
+    collider-only. Reconcile (jet = indirect signature
+    of transient unbinding?).
+    """
+    import math as _m
+    t_days = 4.6e9 * 3.156e7 / 86400
+    k_chain = -_m.log(0.7) / t_days
+    return {
+        'value': {
+            'domain': '2.4-H (SCm properties, thread 381a8fe7)',
+            'qs': 0,
+            'v_scm': 0.99 * 2.998e8,
+            'pcore_earth_anchor': 3.6e11,
+            'dg_kpc': 2.55e20 / 3.086e19,                    # 8.26 real
+            'kappa_chain_per_day': k_chain,                  # 2.12e-13
+            'kappa_printed': 2.12e-4,                        # 1e9 slip, mantissa EXACT
+            'kappa_canonical_gap': KAPPA_PER_DAY / k_chain,  # 2.4e9
+            'rho_a_new': 1e-23,
+            'dominance_reframed': 'SCm_contrib 1e3 intentional - SCm primary DPM source',
+            'quasar_mechanism': 'Ug retention failure -> unbound SCm ignites vs UA -> jet',
+            'cross_repo_tension': 'vs predecessor 2153 bound-state/collider-only ruling',
+        },
+        'formula': 'E_react = SCm_density*v^2/rho_A*e^-kt; kappa =? -ln(L/L0)/t_age',
+        'source': 'PAPER_176',
+        'residual_pct': abs(2.55e20 / 3.086e19 - 8.3) / 8.3 * 100,
         'status': 'OPEN_RULING',
     }

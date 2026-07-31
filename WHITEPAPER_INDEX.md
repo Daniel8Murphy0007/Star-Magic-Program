@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 179 (11 ✓, 168 ⚠ OPEN_RULING)
+- **Wired:** 180 (11 ✓, 169 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2076
+- **Not yet touched:** 2075
 
 ---
 
@@ -1028,7 +1028,7 @@
 | ⬜ | PAPER_1767 | SCHWINGER ENHANCED 1 22E18 |
 | ⬜ | PAPER_1768 | T NEG MINUS 2512 S |
 | ⬜ | PAPER_1769 | SPHALERON ENERGY 0 875 EV |
-| ⬜ | PAPER_176 | SCm Superconducting Manifold Discovery Properties |
+| ⚠ | PAPER_176 | SCm Superconducting Manifold Discovery Properties |
 | ⬜ | PAPER_1770 | DM SUPPRESSION FACTOR 3 |
 | ⬜ | PAPER_1771 | D CRIT 26 UNIVERSAL |
 | ⬜ | PAPER_1772 | NFW C VIR 9 95 ALT |
