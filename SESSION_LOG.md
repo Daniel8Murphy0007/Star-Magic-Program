@@ -2281,3 +2281,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 200/2,255 (11 ✓, 189 ⚠). Next: PAPER_197.
 
 ---
+
+## 2026-07-31 — v0.200.0 — BAND 1: PAPER_197
+
+- PAPER_197 wired (⚠ Q-193): F_U_Bi_i extended integral. UV/mm/hybrid/hierarchical terms as 196 buoyancy channel; two-buoyancy clarification (integral vs point-Ubi); k_eta magnitude link.
+- Campaign: 201/2,255 (11 ✓, 190 ⚠). Next: PAPER_198.
+
+---

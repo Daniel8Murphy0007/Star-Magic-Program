@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.199.0"
+VERSION = "0.200.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10309,6 +10309,55 @@ def _paper_196(dataset):
         },
         'formula': 'Triadic: FU_g1 + R(t) + FU_Bi; g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U)',
         'source': 'PAPER_196',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_197')
+def _paper_197(dataset):
+    """F_U_Bi_i extended integral - UV/mm/hybrid/hierarchical (S50, sec 2.6).
+
+    Extends the F_U_Bi_i buoyancy INTEGRAL (12+ standard
+    terms: -F0, DPM mom/grav/stab, LENR, activation, DE
+    luminosity, DPM resonance, neutron, relativistic CM)
+    with four multi-wavelength coupling terms:
+    F_UV = k_UV*L_UV (GALEX/Spitzer), F_mm = k_mm*L_mm*
+    f_mm (ALMA), F_hyb = P_pol*f_mm/omega0, F_hier =
+    sum(v_i/c)^2/omega0. Slots into 196's triadic as the
+    FU_Bi channel.
+    CLARIFICATION (Q-193a, resolves Ubi-fork confusion):
+    F_U_Bi_i is a spatial INTEGRAL (int over x) of a
+    multi-term buoyancy density - it is NOT the same
+    object as the point-buoyancy Ubi whose four forms
+    are in Q-168a. The corpus has TWO distinct buoyancy
+    constructs: point-Ubi (172/193 F_U sum term) and the
+    F_U_Bi_i integral (this / 063). The canonical-F_U
+    ruling (Q-189) should distinguish them.
+    PARAMS: k_UV = k_mm = 1e-30 N/W (mojibake "10?3°"),
+    f_mm = 1.05, F_hier n=2/m=1 (standard velocity-
+    hierarchy form). rho_vac,UA ~ 1e-113 = the k_eta
+    deep-vacuum constant from 182 (Q-178 family) -
+    reappears as the normalization explaining the
+    extreme 1e208/1e211 N magnitudes.
+    Activation gating documented (F_UV on UV-flare
+    threshold, F_mm on ALMA continuum, F_hyb continuous,
+    F_hier multi-component).
+    """
+    return {
+        'value': {
+            'domain': '2.6 (F_U_Bi_i extended integral, thread 7514fe)',
+            'four_new_terms': ('F_UV GALEX/Spitzer', 'F_mm ALMA', 'F_hyb polarization', 'F_hier remnant'),
+            'k_uv_mm': 1e-30,
+            'f_mm': 1.05,
+            'f_hier_exponents': {'n': 2, 'm': 1},
+            'integral_vs_point': 'F_U_Bi_i integral distinct from point-Ubi four-form (Q-193a)',
+            'rho_ua_keta_link': 'rho_vac,UA ~ 1e-113 = 182 k_eta - explains extreme magnitudes',
+            'triadic_channel': 'FU_Bi channel of 196 triadic',
+            'activation_gating': 'F_UV flare-thresh / F_mm continuum / F_hyb continuous / F_hier multi-comp',
+        },
+        'formula': 'F_U_Bi_i = int[12 standard terms + k_UV*L_UV + k_mm*L_mm*f_mm]dx',
+        'source': 'PAPER_197',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

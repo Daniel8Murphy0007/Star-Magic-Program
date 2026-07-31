@@ -983,3 +983,7 @@ observable,triadic_master_equation,paper,PAPER_196,triadic form
 observable,triadic_master_equation,paper,PAPER_171,Ug decomposition
 observable,triadic_ssq_and_subeqs,paper,PAPER_196,SSq + sub-eqs
 primitive,SSQ,observable,triadic_ssq_and_subeqs,0.57 constant canonical
+observable,fubi_extended_integral,paper,PAPER_197,extended integral
+observable,fubi_extended_integral,paper,PAPER_196,FU_Bi triadic channel
+observable,fubi_integral_clarification,paper,PAPER_197,two-buoyancy
+observable,fubi_integral_clarification,paper,PAPER_172,point-Ubi contrast

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.199.0", "uqff_calculator.VERSION = 0.199.0")
+assert_that(C.VERSION == "0.200.0", "uqff_calculator.VERSION = 0.200.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2836,6 +2836,19 @@ assert_that(_r196['w2_buoyancy_dominant'] > 1e8,
 assert_that('E(z) structure' in _r196['hz_lcdm_correct'],
             "PAPER_196: H(t,z) = H0*sqrt(0.3(1+z)^3+0.7) correct LCDM E(z) form")
 assert_that(C.wired_count() >= 200, "wired_count >= 200")
+
+_r197 = C.calc('PAPER_197')['value']
+assert_that(len(_r197['four_new_terms']) == 4,
+            "PAPER_197: four multi-wavelength coupling terms (UV/mm/hybrid/hierarchical)")
+assert_that(_r197['k_uv_mm'] == 1e-30,
+            "PAPER_197: k_UV = k_mm = 1e-30 N/W (mojibake decoded)")
+assert_that('distinct from point-Ubi' in _r197['integral_vs_point'],
+            "PAPER_197: F_U_Bi_i integral distinct from point-Ubi four-form (Q-193a clarification)")
+assert_that('182 k_eta' in _r197['rho_ua_keta_link'],
+            "PAPER_197: rho_vac,UA ~ 1e-113 = 182's k_eta deep-vacuum constant")
+assert_that('FU_Bi channel of 196' in _r197['triadic_channel'],
+            "PAPER_197: slots into 196 triadic as the buoyancy channel")
+assert_that(C.wired_count() >= 201, "wired_count >= 201")
 
 # =============================================================================
 # REPORT

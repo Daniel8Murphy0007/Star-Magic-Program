@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.200.0] — 2026-07-31 — BAND 1: PAPER_197 — F_U_BI_I EXTENDED INTEGRAL
+
+### Added
+- **PAPER_197 dispatch** (F_U_Bi_i extended integral, S50, sec 2.6): the buoyancy INTEGRAL extended with four multi-wavelength coupling terms (F_UV GALEX/Spitzer, F_mm ALMA, F_hyb polarization, F_hier remnant hierarchy) beyond the 12 standard terms; slots into 196 triadic as the FU_Bi channel; k_UV = k_mm = 1e-30 N/W, f_mm = 1.05, F_hier n=2/m=1; activation-gated per band. CLARIFICATION: F_U_Bi_i is a spatial INTEGRAL distinct from the point-buoyancy Ubi four-form (Q-168a) — two buoyancy constructs the canonical-F_U ruling should distinguish. rho_vac,UA ~ 1e-113 = 182 k_eta explains the extreme magnitudes.
+- OPEN_RULING Q-193.
+- Gate: 1,304 assertions, 0 failures. Registry: 462 rows / 988 edges / 201 ledgers (measured).
+
+---
+
 ## [0.199.0] — 2026-07-31 — BAND 1: PAPER_196 — TRIADIC MASTER EQ (PAPER 200)
 
 ### Added

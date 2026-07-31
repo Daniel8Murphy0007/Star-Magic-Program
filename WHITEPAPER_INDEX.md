@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 200 (11 ✓, 189 ⚠ OPEN_RULING)
+- **Wired:** 201 (11 ✓, 190 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2055
+- **Not yet touched:** 2054
 
 ---
 
@@ -1275,7 +1275,7 @@
 | ⬜ | PAPER_1977 | SOMBRERO GAMMA BH 9TH F TRZ SQUARED ANCHOR UQFF |
 | ⬜ | PAPER_1978 | SO 5 PLUS 1 EQUALS 11 AETHER COUPLING AT SOMBRERO UQFF |
 | ⬜ | PAPER_1979 | M DM OVER M TOTAL 2 F TRZ SOMBRERO CROSS DOMAIN UQFF |
-| ⬜ | PAPER_197 | F U Bi i Extended Integral UV mm Wave Hybrid Hierarchical |
+| ⚠ | PAPER_197 | F U Bi i Extended Integral UV mm Wave Hybrid Hierarchical |
 | ⬜ | PAPER_1980 | E 0 INITIAL VS SATURATION DISAMBIGUATION AT M16 UQFF |
 | ⬜ | PAPER_1981 | B J BASE F TRZ CUBED MAGNETIC STRING FIELD APPLICATION UQFF |
 | ⬜ | PAPER_1982 | ANTENNAE COALESCENCE D PHYS SO 5 8 YR SLOT EXTENSION UQFF |

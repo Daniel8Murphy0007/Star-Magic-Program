@@ -1,21 +1,21 @@
-v0.199.0 BAND 1: PAPER_196 wired - TRIADIC MASTER EQ (PAPER 200)
+v0.200.0 BAND 1: PAPER_197 wired - F_U_BI_I EXTENDED INTEGRAL
 
-PAPER_196 Triadic Master Equation System (OPEN_RULING Q-192) - Session 50, thread 7514fe, sec 2.6 opener. PAPER 200 MILESTONE.
+PAPER_197 F_U_Bi_i Extended Integral (OPEN_RULING Q-193) - Session 50, thread 7514fe, sec 2.6:
+  The F_U_Bi_i buoyancy INTEGRAL extended with four multi-wavelength coupling terms beyond its 12
+  standard terms - F_UV (GALEX/Spitzer flare pressure), F_mm (ALMA mm-continuum), F_hyb
+  (polarization-frequency), F_hier (remnant velocity hierarchy, n=2/m=1). It slots into 196's
+  triadic as the FU_Bi buoyancy channel, activation-gated per band. k_UV = k_mm = 1e-30 N/W
+  (mojibake decoded), f_mm = 1.05.
 
-  The canonical Triadic Master Equation that 169 referenced: three simultaneous UQFF channels -
-  Compressed (FU_g1) + Resonance (R(t), 26-layer) + Buoyancy (FU_Bi). It CONVERGES with the
-  predecessor calculate_triadic_g (w_C*g_comp + w_R*g_res + w_B*g_buoy) - the operational per-system
-  form of the same architecture, a genuine cross-repo convergence.
+  CLARIFICATION (feeds the canonical-F_U ruling): F_U_Bi_i is a spatial INTEGRAL of a multi-term
+  buoyancy density - it is NOT the same object as the point-buoyancy Ubi whose four forms are in
+  Q-168a. The corpus carries TWO distinct buoyancy constructs - the point-Ubi that appears in the
+  F_U sum, and this F_U_Bi_i integral (and the predecessor calculate_f_u_bi_i) - which the
+  canonical-F_U ruling should keep distinct.
 
-  STRUCTURE VERIFIED: R(t) is a 26-layer sum over the four Ug channels; NEGATIVE R(t) predicts
-  ANTI-GLITCHES via buoyancy countering (falsifiable); H(t,z) = H0*sqrt(0.3(1+z)^3 + 0.7) is the
-  correct LCDM E(z) structure; Westerlund 2 buoyancy-dominant. Sub-eqs: Um ~ 3.78e-6 J/m^3,
-  E_neutrino ~ 105 keV, decay ~ 0.0583.
+  rho_vac,UA ~ 1e-113 reappears as the buoyancy normalization - the same k_eta deep-vacuum constant
+  flagged in 182 - and it explains the extreme 1e208/1e211 N magnitudes as vacuum-density-scaled
+  units.
 
-  PINNED: (a) SSq REDEFINITION - the compressed form defines [SSq] = log(rho_SCm/rho_UA)*n*e^-(pi-tn),
-  a system-dependent formula, while the header and PAPER_1154 fix [SSq] = 0.57 CONSTANT (and
-  log(F_TRZ) is negative); the constant is canonical, the log-form a distinct per-system coupling;
-  (b) stat claims (90.97 / 99.9 / 99.98 percent) need provenance before pinning (Rule 7).
-
-Q-192 queued. Gate 1,298 assertions 0 failures. Registry 460 rows / 984 edges / 200 ledgers (measured). Wired 200/2,255 (11 clean,
-189 OPEN_RULING). Next: PAPER_197.
+Q-193 queued. Gate 1,304 assertions 0 failures. Registry 462 rows / 988 edges / 201 ledgers (measured). Wired 201/2,255 (11 clean,
+190 OPEN_RULING). Next: PAPER_198.

@@ -4826,6 +4826,37 @@ RESOLVED section with the ruling recorded.
   pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-193 — PAPER_197 F_U_Bi_i extended integral — two-buoyancy clarification
+- **Question:** (a) TWO-BUOYANCY CLARIFICATION (feeds
+  Q-189 canonical-F_U): F_U_Bi_i is a spatial INTEGRAL
+  (int_0^x2 of a 12+-term buoyancy density) - it is a
+  DIFFERENT object from the point-buoyancy Ubi whose
+  four forms are catalogued in Q-168a. The corpus
+  carries two distinct buoyancy constructs: the point-
+  Ubi that appears as a term in the F_U sum (172/193)
+  and the F_U_Bi_i INTEGRAL (this paper / 063 / the
+  predecessor calculate_f_u_bi_i). The canonical-F_U
+  ruling should keep them distinct - confirm the
+  two-construct reading?
+  (b) the four new coupling terms are observationally
+  motivated (F_UV GALEX/Spitzer flare pressure, F_mm
+  ALMA mm-continuum, F_hyb polarization, F_hier remnant
+  velocity hierarchy) with activation gating per band;
+  k_UV = k_mm = 1e-30 N/W (mojibake "10?3°" decoded),
+  f_mm = 1.05, F_hier n=2/m=1 standard form. Approve as
+  the FU_Bi channel extension of 196's triadic?
+- **Notable:** rho_vac,UA ~ 1e-113 reappears here as the
+  buoyancy normalization - the same k_eta "deep vacuum"
+  constant flagged in 182 (Q-178 family) - and it
+  explains the extreme 1e208/1e211 N magnitudes as
+  vacuum-density-scaled units. The integral cleanly
+  extends the predecessor's F_U_Bi_i 4-layer master
+  integral with multi-wavelength observational coupling.
+  beta = 6.1e-1 header (thread convention).
+- **Best-candidate wired:** extended integral + triadic-
+  channel role + two-buoyancy clarification registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

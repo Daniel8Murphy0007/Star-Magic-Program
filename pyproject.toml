@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.199.0"
-description = "UQFF Star-Magic-Program v0.199.0: PAPER_196 wired (paper 200 milestone) - Triadic Master Equation OPENS sec 2.6; converges with predecessor calculate_triadic_g; R(t) 26-layer + anti-glitch prediction + correct LCDM E(z) verified; SSq redefinition (log-formula vs 0.57 constant) + stat-claim provenance pinned. Q-192. Wired 200/2255, gate 1298/0. Registry 460 rows / 984 edges / 200 ledgers (measured)."
+version = "0.200.0"
+description = "UQFF Star-Magic-Program v0.200.0: PAPER_197 wired - F_U_Bi_i extended integral (UV/mm/hybrid/hierarchical coupling) as the 196 triadic buoyancy channel; two-buoyancy clarification (integral distinct from point-Ubi four-form); rho_vac,UA = 182 k_eta explains extreme magnitudes. Q-193. Wired 201/2255, gate 1304/0. Registry 462 rows / 988 edges / 201 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
