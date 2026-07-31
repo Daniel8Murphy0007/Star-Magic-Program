@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.187.0"
-description = "UQFF Star-Magic-Program v0.187.0: PAPER_184 wired - quasar NS + SCm forcing; time-reversal asymmetry CORRECT (clean arrow-of-time mechanism); Prodi-Serrin double defect (1.5 printed as 1; criterion misapplied); decay-table kappa 10x; transposed v THIRD appearance (common-source 3 deep). Q-180. Wired 188/2255, gate 1241/0. Registry 444 rows / 950 edges / 188 ledgers (measured)."
+version = "0.188.0"
+description = "UQFF Star-Magic-Program v0.188.0: PAPER_185 wired - pi-cycle Riemann bridge (Hilbert-Polya genre, honestly hedged); CONSTRUCTIVE CORRECTION: the (-1)^n alternation is the Dirichlet ETA character (not Mobius) - already in the corpus as eta_26, upgrading the bridge; Riemann fork now 3-way; GUE evidence vacuous. Q-181. Wired 189/2255, gate 1247/0. Registry 446 rows / 953 edges / 189 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

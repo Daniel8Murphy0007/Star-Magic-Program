@@ -4456,6 +4456,42 @@ RESOLVED section with the ruling recorded.
   kappa, and transposition chain pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-181 — PAPER_185 Riemann bridge — eta correction + 3-way fork
+- **Question:** (a) MOBIUS MISLABEL (constructive
+  correction proposed): sec 3.2 calls the (-1)^n
+  alternation "the Mobius function contribution" - false
+  (mu(4) = 0, mu(6) = +1; Mobius does not alternate).
+  The alternating character is the DIRICHLET ETA
+  function: eta(s) = sum (-1)^(n-1)/n^s = (1-2^(1-s))*
+  zeta(s), which GENUINELY shares its nontrivial zeros
+  with zeta - and eta_26 ALREADY EXISTS in the corpus
+  (the S204.2 S_26 acceleration formula). Adopting the
+  eta identification would both fix the math and connect
+  the bridge to existing corpus machinery. Approve?
+  (b) sec 4.2's "GUE consistency" evidence is a single
+  ratio of two equal, otherwise-unverifiable frequencies
+  (1.26e-7 Hz) - it carries no statistical content.
+  Strike or replace with actual spacing statistics?
+  (c) RIEMANN FORK NOW 3-WAY: 156's Li_s(e^-10) bridge
+  (entire, decorative), 185's spectral-eta bridge (the
+  strongest of the three under the (a) correction), and
+  the predecessor canonical closure 9877.78265
+  (t_10000). One canonical Riemann route needed
+  (parallels the five-way YM fork).
+- **Notable:** the paper's genre is Hilbert-Polya
+  physical motivation and it says so HONESTLY: "this
+  does not constitute a proof... physical motivation."
+  The standard mathematics is printed correctly (von
+  Mangoldt explicit formula; first zeros 14.135/21.022/
+  25.011; Montgomery/GUE framing). The cos(pi t_n)
+  occurrence table across all six field components is a
+  useful consolidation. Footer carries 183's garbled
+  U_bi line verbatim (common-footer artifact).
+- **Best-candidate wired:** bridge + honest hedge +
+  correct standard math registered; eta correction
+  proposed; fork and weak evidence pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

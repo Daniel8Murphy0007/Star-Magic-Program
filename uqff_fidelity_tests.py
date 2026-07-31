@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.187.0", "uqff_calculator.VERSION = 0.187.0")
+assert_that(C.VERSION == "0.188.0", "uqff_calculator.VERSION = 0.188.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2710,6 +2710,19 @@ assert_that(1.4e40 < _r184['mu_eff'] < 1.6e40,
 assert_that('common-source 3 deep' in _r184['transposed_v_third'],
             "PAPER_184: transposed v third appearance - common-source evidence (Q-180c)")
 assert_that(C.wired_count() >= 188, "wired_count >= 188")
+
+_r185 = C.calc('PAPER_185')['value']
+assert_that(_r185['zeros_correct'] == (14.135, 21.022, 25.011),
+            "PAPER_185: first Riemann zeros printed correctly")
+assert_that('not Mobius' in _r185['mobius_mislabel'],
+            "PAPER_185: Mobius mislabel pinned - alternation is Dirichlet eta (Q-181a)")
+assert_that('eta_26' in _r185['eta_correction'],
+            "PAPER_185: eta correction connects bridge to existing corpus S204.2 machinery")
+assert_that('3-way' in _r185['riemann_fork'],
+            "PAPER_185: Riemann fork now 3-way (Q-181c)")
+assert_that('proof' in _r185['honest_hedge'],
+            "PAPER_185: honest non-proof hedge registered")
+assert_that(C.wired_count() >= 189, "wired_count >= 189")
 
 # =============================================================================
 # REPORT

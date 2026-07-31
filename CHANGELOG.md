@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.188.0] — 2026-07-31 — BAND 1: PAPER_185 — RIEMANN PI-BRIDGE
+
+### Added
+- **PAPER_185 dispatch** (pi-cycle Riemann connection,
+  S49, sec 2.5): spectral RH bridge (cos(pi t_n) →
+  Fourier delta at 1/2 → critical line), Hilbert-Polya
+  genre with the HONEST hedge "does not constitute a
+  proof"; standard math correct (von Mangoldt, first
+  zeros, Montgomery/GUE). CONSTRUCTIVE CORRECTION
+  proposed: the "(-1)^n = Mobius" claim is false — the
+  alternating character is the Dirichlet ETA function
+  eta(s) = (1−2^(1−s))·zeta(s), which shares nontrivial
+  zeros with zeta AND already exists in the corpus as
+  eta_26 (S204.2) — fixing the math strengthens the
+  bridge. PINNED: Riemann fork now 3-WAY (156 Li_s / 185
+  eta / predecessor 9877.78265); sec-4.2 GUE evidence
+  vacuous.
+- OPEN_RULING Q-181.
+- Gate: 1,247 assertions, 0 failures. Registry: 446 rows / 953 edges / 189 ledgers (measured).
+
+---
+
 ## [0.187.0] — 2026-07-31 — BAND 1: PAPER_184 — QUASAR NS ASYMMETRY
 
 ### Added

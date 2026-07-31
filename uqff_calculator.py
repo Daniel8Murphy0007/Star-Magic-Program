@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.187.0"
+VERSION = "0.188.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9778,5 +9778,54 @@ def _paper_184(dataset):
         'formula': 'NS + rho_SCm*v^2/r*e^-kt; time-reversal asymmetry mechanism',
         'source': 'PAPER_184',
         'residual_pct': abs(5e-4 / 86400 - 5.79e-9) / 5.79e-9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_185')
+def _paper_185(dataset):
+    """Pi-cycle Riemann zeta connection (S49, sec 2.5).
+
+    Spectral RH bridge: cos(pi t_n) across all six field
+    components -> Fourier delta at omega = +-1/2 ->
+    identification with the critical line Re(rho) = 1/2;
+    Hilbert-Polya-genre physical motivation with the
+    HONEST HEDGE "this does not constitute a proof."
+    Standard math printed correctly: von Mangoldt
+    explicit formula; first Riemann zeros 14.135/21.022/
+    25.011; GUE/Montgomery framing.
+    CONSTRUCTIVE CORRECTION (Q-181a): the paper labels
+    the (-1)^n alternation "the Mobius function
+    contribution" - FALSE (mu(4) = 0, mu(6) = +1; not
+    alternating). The alternating character is the
+    DIRICHLET ETA function, eta(s) = (1-2^(1-s))*zeta(s)
+    - which (i) genuinely shares its nontrivial zeros
+    with zeta and (ii) ALREADY EXISTS in the corpus as
+    the eta_26 term of the S204.2 S_26 machinery. The
+    correction UPGRADES the bridge and connects it to
+    existing corpus math.
+    RIEMANN FORK NOW 3-WAY (Q-181c): 156's Li_s(e^-10)
+    (entire/decorative), 185's spectral-eta bridge,
+    predecessor canonical 9877.78265 (t_10000).
+    WEAK EVIDENCE (Q-181b): sec 4.2's "GUE consistency"
+    is a single ratio of two equal unverifiable
+    frequencies (1.26e-7 Hz) - says nothing about GUE
+    statistics. Footer carries 183's garbled U_bi again.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (Riemann bridge, S49)',
+            'bridge': 'cos(pi t_n) -> Fourier delta at 1/2 -> critical line',
+            'honest_hedge': '"does not constitute a proof" - Hilbert-Polya genre',
+            'zeros_correct': (14.135, 21.022, 25.011),
+            'mobius_mislabel': '(-1)^n is Dirichlet ETA character, not Mobius (Q-181a)',
+            'eta_correction': 'eta(s) = (1-2^(1-s))*zeta(s) - already in corpus as eta_26 (S204.2)',
+            'riemann_fork': '3-way: 156 Li_s / 185 spectral-eta / predecessor 9877.78265',
+            'gue_evidence_weak': 'single ratio of equal unverifiable freqs (Q-181b)',
+            'pi_quantization': 'Delta_F*Delta_t >= ||F||/2pi (conceptual)',
+        },
+        'formula': 'F_hat(omega) = FT[F_U(t_n)]; alternation -> eta character -> zeta zeros',
+        'source': 'PAPER_185',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

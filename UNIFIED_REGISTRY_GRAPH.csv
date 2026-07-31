@@ -949,3 +949,6 @@ observable,quasar_ns_asymmetry,paper,PAPER_184,asymmetry mechanism
 primitive,KAPPA_PER_DAY,observable,quasar_ns_asymmetry,decay factor
 observable,prodi_serrin_defects,paper,PAPER_184,criterion defects
 observable,prodi_serrin_defects,paper,PAPER_182,transposition chain
+observable,pi_cycle_riemann_bridge,paper,PAPER_185,spectral bridge
+observable,eta_correction_riemann_fork,paper,PAPER_185,eta correction
+observable,eta_correction_riemann_fork,paper,PAPER_156,Riemann fork family

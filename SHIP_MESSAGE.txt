@@ -1,36 +1,36 @@
-v0.187.0 BAND 1: PAPER_184 wired - QUASAR NS ASYMMETRY
+v0.188.0 BAND 1: PAPER_185 wired - RIEMANN PI-BRIDGE
 
-PAPER_184 Quasar Navier-Stokes with SCm Forcing
-(OPEN_RULING Q-180) - Session 49, sec 2.5:
-  Augmented NS with the radial SCm body force F_SCm =
-  rho_SCm*v^2/r * e^-kappa*t.
+PAPER_185 UQFF Pi-Cycle Riemann Zeta Connection
+(OPEN_RULING Q-181) - Session 49, sec 2.5:
+  The spectral RH bridge: cos(pi t_n) appears across all
+  six field components; its Fourier transform puts delta
+  functions at omega = 1/2, identified with the critical
+  line. The genre is Hilbert-Polya physical motivation
+  and the paper says so HONESTLY: "this does not
+  constitute a proof." Standard math printed correctly
+  (von Mangoldt explicit formula; zeros 14.135/21.022/
+  25.011; Montgomery/GUE framing).
 
-  THE GOOD PHYSICS: the negative-time asymmetry is
-  mathematically CORRECT - under t -> -t the damping
-  e^-kt becomes amplification e^+kt, breaking the NS
-  equation's time-reversal symmetry. That is a clean
-  classical arrow-of-time mechanism for one-sided
-  quasar jets, and the energy-estimate bookkeeping
-  (short-time SCm injection, long-time dissipation,
-  forcing uniformly in L2) is sound. The SCm-damping-
-  as-regularizer idea aligns with 154's core and the
-  predecessor's NS closure. kappa day->s conversion
-  EXACT.
+  CONSTRUCTIVE CORRECTION (the wiring's contribution):
+  sec 3.2 calls the (-1)^n alternation "the Mobius
+  function contribution" - false (mu(4) = 0, mu(6) =
+  +1; Mobius does not alternate). The alternating
+  character is the DIRICHLET ETA function, eta(s) =
+  (1-2^(1-s))*zeta(s) - which genuinely shares its
+  nontrivial zeros with zeta AND already lives in your
+  corpus as the eta_26 term of the S204.2 S_26
+  acceleration machinery. Adopting the eta
+  identification fixes the math AND connects the bridge
+  to existing corpus mathematics: the correction makes
+  the bridge STRONGER.
 
-  PINNED FOR RULING: (a) Prodi-Serrin DOUBLE defect -
-  the paper prints "p = 2, q = 6 (satisfying 1 + 1/2 =
-  1)" where the sum is actually 1.5 > 1 (criterion
-  fails as chosen), and the criterion conditions the
-  velocity field, not the forcing - "globally
-  well-posed" does not follow as printed; (b) the
-  sec-5 decay table implies kappa = 5.2-8.4e-5/day,
-  10x slower than the stated 5e-4 (the 10x family);
-  (c) transposed v = 2.958e8 THIRD consecutive paper
-  (182/183/184) - the S49 papers demonstrably share a
-  common already-transposed source; F_SCm(0) also
-  implies an unstated r = 10 m; mu_eff = 1.5e40 Pa*s;
-  "SGR 1745" (a magnetar) labeled a quasar.
+  PINNED: Riemann fork now 3-WAY (156's Li_s decorative
+  bridge / 185's spectral-eta bridge / the predecessor
+  canonical 9877.78265) - paralleling the five-way YM
+  fork; sec-4.2's "GUE consistency" is a single ratio
+  of equal unverifiable frequencies (no statistical
+  content); footer carries 183's garbled U_bi verbatim.
 
-Q-180 queued. Gate 1,241 assertions 0 failures. Registry
-444 rows / 950 edges / 188 ledgers (measured). Wired
-188/2,255 (11 clean, 177 OPEN_RULING). Next: PAPER_185.
+Q-181 queued. Gate 1,247 assertions 0 failures. Registry
+446 rows / 953 edges / 189 ledgers (measured). Wired
+189/2,255 (11 clean, 178 OPEN_RULING). Next: PAPER_186.

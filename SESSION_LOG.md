@@ -2177,3 +2177,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 188/2,255 (11 ✓, 177 ⚠). Next: PAPER_185.
 
 ---
+
+## 2026-07-31 — v0.188.0 — BAND 1: PAPER_185
+
+- PAPER_185 wired (⚠ Q-181): Riemann pi-bridge. Eta-not-
+  Mobius constructive correction (connects to corpus
+  eta_26); 3-way Riemann fork; honest hedge registered.
+- Campaign: 189/2,255 (11 ✓, 178 ⚠). Next: PAPER_186.
+
+---
