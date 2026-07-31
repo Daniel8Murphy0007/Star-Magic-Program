@@ -2288,3 +2288,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 201/2,255 (11 ✓, 190 ⚠). Next: PAPER_198.
 
 ---
+
+## 2026-07-31 — v0.201.0 — BAND 1: PAPER_198
+
+- PAPER_198 wired (⚠ Q-194): F_UBii taxonomy Part 1. 18 variants; cross-repo convergence with predecessor PAPER_2151 F_UBii registry; embedded physics verified; QNM parametrization pinned.
+- Campaign: 202/2,255 (11 ✓, 191 ⚠). Next: PAPER_199.
+
+---

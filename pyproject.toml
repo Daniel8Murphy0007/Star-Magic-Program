@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.200.0"
-description = "UQFF Star-Magic-Program v0.200.0: PAPER_197 wired - F_U_Bi_i extended integral (UV/mm/hybrid/hierarchical coupling) as the 196 triadic buoyancy channel; two-buoyancy clarification (integral distinct from point-Ubi four-form); rho_vac,UA = 182 k_eta explains extreme magnitudes. Q-193. Wired 201/2255, gate 1304/0. Registry 462 rows / 988 edges / 201 ledgers (measured)."
+version = "0.201.0"
+description = "UQFF Star-Magic-Program v0.201.0: PAPER_198 wired - F_UBii taxonomy Part 1 (18 compact/stellar variants via F_rel/E_LEP*Q_wave scaling); CROSS-REPO convergence with predecessor PAPER_2151 17-variant F_UBii registry; embedded physics verified (Hawking, Schwarzschild); QNM parametrization vs Berti noted. Q-194. Wired 202/2255, gate 1310/0. Registry 464 rows / 991 edges / 202 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

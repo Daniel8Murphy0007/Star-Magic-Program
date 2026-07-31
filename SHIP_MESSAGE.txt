@@ -1,21 +1,26 @@
-v0.200.0 BAND 1: PAPER_197 wired - F_U_BI_I EXTENDED INTEGRAL
+v0.201.0 BAND 1: PAPER_198 wired - F_UBII TAXONOMY PART 1
 
-PAPER_197 F_U_Bi_i Extended Integral (OPEN_RULING Q-193) - Session 50, thread 7514fe, sec 2.6:
-  The F_U_Bi_i buoyancy INTEGRAL extended with four multi-wavelength coupling terms beyond its 12
-  standard terms - F_UV (GALEX/Spitzer flare pressure), F_mm (ALMA mm-continuum), F_hyb
-  (polarization-frequency), F_hier (remnant velocity hierarchy, n=2/m=1). It slots into 196's
-  triadic as the FU_Bi buoyancy channel, activation-gated per band. k_UV = k_mm = 1e-30 N/W
-  (mojibake decoded), f_mm = 1.05.
+PAPER_198 F_UBii Taxonomy Part 1 (OPEN_RULING Q-194) - Session 50, thread 7514fe, sec 2.6:
+  18 F_UBii buoyancy variants covering compact objects and stellar physics, each embedding the
+  system's characteristic scale into the universal F_rel/E_LEP*Q_wave scaling: MHD dynamo,
+  terminal velocity, Hawking, QNM ringdown, Blandford-Znajek, Arnett SN, TOV, pulsar spin-down,
+  jet velocity, planet migration, superfluid glitch, J-shock, Sedov-Taylor, GRB afterglow, SIDM,
+  ionization fronts, virial, Press-Schechter.
 
-  CLARIFICATION (feeds the canonical-F_U ruling): F_U_Bi_i is a spatial INTEGRAL of a multi-term
-  buoyancy density - it is NOT the same object as the point-buoyancy Ubi whose four forms are in
-  Q-168a. The corpus carries TWO distinct buoyancy constructs - the point-Ubi that appears in the
-  F_U sum, and this F_U_Bi_i integral (and the predecessor calculate_f_u_bi_i) - which the
-  canonical-F_U ruling should keep distinct.
+  CROSS-REPO CONVERGENCE (major): this 18-variant catalog is the operational form of the
+  predecessor repo's PAPER_2151 BuoyancyProofVariants 17-variant F_UBii registry - the same
+  variant family, the same "universe-response" operator role (F_UBii vs F_UBi "mass pushing",
+  per PAPER_2148/2151). Both repos independently enumerate the same buoyancy taxonomy.
 
-  rho_vac,UA ~ 1e-113 reappears as the buoyancy normalization - the same k_eta deep-vacuum constant
-  flagged in 182 - and it explains the extreme 1e208/1e211 N magnitudes as vacuum-density-scaled
-  units.
+  EMBEDDED PHYSICS VERIFIED: the F_X terms are correct textbook formulas - Hawking T_H =
+  hbar c^3/(8 pi G M kB), Schwarzschild surface gravity c^4/4GM, Arnett SN diffusion, TOV with
+  full GR corrections, Sedov-Taylor, Rankine-Hugoniot - embedded as SM comparison targets (Rule 4
+  clean; the UQFF content is the F_rel/E_LEP/Q_wave embedding). F_rel ~ 4.3e33 N and Q_wave ~
+  6.33e4 J/m^3 match 196's triadic stat table.
 
-Q-193 queued. Gate 1,304 assertions 0 failures. Registry 462 rows / 988 edges / 201 ledgers (measured). Wired 201/2,255 (11 clean,
-190 OPEN_RULING). Next: PAPER_198.
+  PINNED: the QNM ringdown uses the coefficient 0.3737 + 0.088*a_f (item-945 citation) where the
+  canonical Berti l=2,m=2 real-part fit is 1.5251 - 1.1568(1-a)^0.1292 - a different
+  parametrization to confirm. "Part 1" - the enumeration continues.
+
+Q-194 queued. Gate 1,310 assertions 0 failures. Registry 464 rows / 991 edges / 202 ledgers (measured). Wired 202/2,255 (11 clean,
+191 OPEN_RULING). Next: PAPER_199.

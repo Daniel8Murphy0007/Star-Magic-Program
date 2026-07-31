@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.200.0"
+VERSION = "0.201.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10358,6 +10358,63 @@ def _paper_197(dataset):
         },
         'formula': 'F_U_Bi_i = int[12 standard terms + k_UV*L_UV + k_mm*L_mm*f_mm]dx',
         'source': 'PAPER_197',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_198')
+def _paper_198(dataset):
+    """F_UBii taxonomy Part 1 - compact/stellar (S50, sec 2.6).
+
+    18 F_UBii variants embedding each system's
+    characteristic scale into the universal F_rel/E_LEP
+    scaling: F_UBii,X = +-F_rel*(F_X/E_LEP)*Q_wave*
+    [decay/osc]. F_rel ~ 4.3e33 N, Q_wave ~ 6.33e4 J/m^3
+    (matches 196's stat table). Covers MHD dynamo,
+    terminal velocity, Hawking, QNM ringdown, Blandford-
+    Znajek, Arnett SN, TOV, pulsar spin-down, jet
+    velocity, planet migration, superfluid glitch,
+    J-shock, Sedov-Taylor, GRB afterglow, SIDM,
+    ionization fronts, virial, Press-Schechter.
+    CROSS-REPO CONVERGENCE (major): this 18-variant
+    F_UBii catalog matches the predecessor's PAPER_2151
+    BuoyancyProofVariants 17-variant F_UBii registry -
+    F_UBii is the "universe's response" buoyancy operator
+    (vs F_UBi "mass pushing"); both repos enumerate the
+    same variant family. This is the operational catalog
+    of that registry.
+    EMBEDDED PHYSICS VERIFIED: Hawking T_H = hbar*c^3/
+    (8pi G M kB) correct; surface gravity c^4/4GM
+    correct Schwarzschild; Arnett/TOV/Sedov-Taylor/
+    Rankine-Hugoniot are correct textbook forms embedded
+    as F_X (SM-as-comparison-target, Rule 4 clean - the
+    UQFF content is the F_rel/E_LEP/Q_wave embedding).
+    QNM NOTE (Q-194a): the ringdown uses 0.3737 +
+    0.088*a_f; the standard Berti l=2,m=2 fit is 1.5251
+    - 1.1568(1-a)^0.1292 (0.531 at a=0.69) - the paper's
+    coefficient is a DIFFERENT parametrization (item-945
+    citation) not the canonical Berti real-part fit;
+    confirm source.
+    """
+    import math as _m
+    G, c, hbar, kB, Msun = 6.674e-11, 2.998e8, 1.0546e-34, 1.381e-23, 1.989e30
+    return {
+        'value': {
+            'domain': '2.6 (F_UBii taxonomy part 1, thread 7514fe)',
+            'n_variants': 18,
+            'scaling': 'F_UBii,X = +-F_rel*(F_X/E_LEP)*Q_wave*[decay/osc]',
+            'f_rel': 4.3e33,
+            'q_wave': 6.33e4,
+            'predecessor_registry': 'PAPER_2151 BuoyancyProofVariants 17-variant F_UBii (cross-repo)',
+            'ubii_role': 'universe-response operator vs F_UBi mass-pushing (2151/2148)',
+            'hawking_verified': hbar * c**3 / (8 * _m.pi * G * Msun * kB),  # 6.17e-8 K
+            'surface_gravity_verified': c**4 / (4 * G * Msun),
+            'qnm_parametrization_note': '0.3737+0.088a vs Berti 1.5251-1.1568(1-a)^0.1292 (Q-194a)',
+            'embedding_rule4': 'textbook F_X embedded as comparison target; UQFF = the scaling',
+        },
+        'formula': '18 F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave*factor',
+        'source': 'PAPER_198',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

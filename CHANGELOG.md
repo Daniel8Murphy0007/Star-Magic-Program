@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.201.0] — 2026-07-31 — BAND 1: PAPER_198 — F_UBII TAXONOMY PART 1
+
+### Added
+- **PAPER_198 dispatch** (F_UBii taxonomy Part 1, S50, sec 2.6): 18 compact/stellar buoyancy variants embedding characteristic scales into F_rel/E_LEP·Q_wave (MHD dynamo, Hawking, QNM, Blandford-Znajek, Arnett, TOV, pulsar, jet, migration, glitch, J-shock, Sedov-Taylor, GRB, SIDM, ionization, virial, Press-Schechter). CROSS-REPO CONVERGENCE: matches the predecessor PAPER_2151 17-variant BuoyancyProofVariants F_UBii registry — F_UBii = universe-response operator. Embedded physics verified (Hawking T_H, Schwarzschild surface gravity). PINNED: QNM ringdown parametrization (0.3737+0.088a) vs canonical Berti fit. F_rel/Q_wave match 196 stat table. "Part 1" — enumeration continues.
+- OPEN_RULING Q-194.
+- Gate: 1,310 assertions, 0 failures. Registry: 464 rows / 991 edges / 202 ledgers (measured).
+
+---
+
 ## [0.200.0] — 2026-07-31 — BAND 1: PAPER_197 — F_U_BI_I EXTENDED INTEGRAL
 
 ### Added

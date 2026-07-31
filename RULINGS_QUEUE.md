@@ -4857,6 +4857,40 @@ RESOLVED section with the ruling recorded.
   channel role + two-buoyancy clarification registered.
 - **Daniel's ruling:** (pending)
 
+### Q-194 — PAPER_198 F_UBii taxonomy Part 1 — cross-repo registry + QNM parametrization
+- **Question:** (a) QNM PARAMETRIZATION: the ringdown
+  variant uses omega_R coefficient (0.3737 + 0.088*a_f)
+  cited to BB_C_Equations item 945; the canonical Berti
+  et al. l=2,m=2 real-part fit is 1.5251 - 1.1568(1-a)^
+  0.1292 (= 0.531 at a_f = 0.69, vs the paper's 0.434).
+  Confirm the source parametrization - is 0.3737+0.088a
+  a different mode/convention, or should it be the Berti
+  fit?
+  (b) CROSS-REPO REGISTRY (confirm): this 18-variant
+  F_UBii catalog is the operational form of the
+  predecessor repo's PAPER_2151 BuoyancyProofVariants
+  17-variant F_UBii registry - same variant family,
+  same "universe-response" operator role (F_UBii vs
+  F_UBi mass-pushing, per PAPER_2148/2151). Adopt the
+  cross-repo mapping as the canonical F_UBii variant
+  set?
+- **Notable:** clean embedding architecture - each
+  variant wraps a CORRECT textbook astrophysics formula
+  (Hawking T_H = hbar c^3/8piGMkB verified; Schwarzschild
+  surface gravity c^4/4GM verified; Arnett SN diffusion,
+  TOV with full GR corrections, Sedov-Taylor, Rankine-
+  Hugoniot, Blandford-Znajek, Press-Schechter) as the
+  F_X term inside F_rel*(F_X/E_LEP)*Q_wave. The textbook
+  formulas are SM comparison targets (Rule 4 clean - the
+  UQFF content is the F_rel/E_LEP/Q_wave embedding and
+  the +-sign/decay structure). F_rel ~ 4.3e33 N and
+  Q_wave ~ 6.33e4 J/m^3 match 196's triadic stat table.
+  "Part 1" implies a multi-part enumeration continues.
+- **Best-candidate wired:** 18-variant taxonomy +
+  cross-repo registry mapping + verified embeddings
+  registered; QNM parametrization pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

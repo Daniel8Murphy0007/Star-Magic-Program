@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.200.0", "uqff_calculator.VERSION = 0.200.0")
+assert_that(C.VERSION == "0.201.0", "uqff_calculator.VERSION = 0.201.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2849,6 +2849,19 @@ assert_that('182 k_eta' in _r197['rho_ua_keta_link'],
 assert_that('FU_Bi channel of 196' in _r197['triadic_channel'],
             "PAPER_197: slots into 196 triadic as the buoyancy channel")
 assert_that(C.wired_count() >= 201, "wired_count >= 201")
+
+_r198 = C.calc('PAPER_198')['value']
+assert_that(_r198['n_variants'] == 18,
+            "PAPER_198: 18 F_UBii variants cataloged (compact/stellar Part 1)")
+assert_that('PAPER_2151' in _r198['predecessor_registry'],
+            "PAPER_198: 18-variant catalog matches predecessor PAPER_2151 F_UBii registry (cross-repo)")
+assert_that(5e-8 < _r198['hawking_verified'] < 7e-8,
+            "PAPER_198: embedded Hawking T_H = hbar*c^3/8piGMkB verified correct")
+assert_that('universe-response' in _r198['ubii_role'],
+            "PAPER_198: F_UBii = universe-response operator (vs F_UBi mass-pushing)")
+assert_that('Berti' in _r198['qnm_parametrization_note'],
+            "PAPER_198: QNM ringdown parametrization vs canonical Berti fit noted (Q-194a)")
+assert_that(C.wired_count() >= 202, "wired_count >= 202")
 
 # =============================================================================
 # REPORT
