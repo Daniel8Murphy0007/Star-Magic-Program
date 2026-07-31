@@ -4784,6 +4784,48 @@ RESOLVED section with the ruling recorded.
   example data flagged.
 - **Daniel's ruling:** (pending - or fold into batch)
 
+### Q-192 — PAPER_196 Triadic Master Equation — SSq redefinition + stat provenance
+- **Question:** (a) SSq REDEFINITION: the compressed
+  master form defines [SSq] = log(rho_vac,SCm/rho_vac,
+  UA') * n * e^-(pi-tn) - a SYSTEM- and n-DEPENDENT
+  formula - while the paper header and PAPER_1154 canon
+  fix [SSq] = 0.57 CONSTANT (and log(rho_SCm/rho_UA) =
+  log(F_TRZ) = log(0.1) is negative, so the two cannot
+  be equal). Ruling: the 0.57 constant is canonical and
+  the log-form is a distinct per-system RESONANCE
+  COUPLING that must not overwrite the SSq primitive -
+  confirm and give the log-coupling its own symbol?
+  (b) STAT CLAIMS: "90.97%% unification of 47-system
+  variants", "99.9%% calibration confidence (99
+  systems)", "99.98%% JWST/Chandra alignment", "0.012
+  non-normality" - these need provenance/verification
+  before they can be pinned as more than paper-stated
+  (Rule 7 honest-residuals). Source PDFs cited
+  (22Sept2025); flag for the eventual audit.
+- **Notable (major - sec 2.6 OPENS, thread 7514fe):**
+  this is the CANONICAL Triadic Master Equation that 169
+  referenced - three simultaneous channels FU_g1
+  (compressed) + R(t) (resonance, 26-layer) + FU_Bi
+  (buoyancy). It CONVERGES with the predecessor repo's
+  calculate_triadic_g (w_C*g_comp + w_R*g_res +
+  w_B*g_buoy) - the operational per-system form of the
+  same architecture, a genuine cross-repo convergence.
+  STRUCTURE VERIFIED: R(t) = sum_{i=1}^{26} over the
+  four Ug channels (26-layer confirmed); negative R(t)
+  predicts ANTI-GLITCHES via buoyancy countering (a
+  concrete falsifiable mechanism); H(t,z) = H0*sqrt
+  (0.3(1+z)^3 + 0.7) is the correct LCDM E(z) structure;
+  Westerlund 2's buoyancy channel dominates (6.14e-32 vs
+  FU_g1 2.43e-40). Sub-equations: Um ~ 3.78e-6 J/m^3,
+  E_neutrino ~ 1.05e5 eV (~105 keV), decay rate ~
+  0.0583, delta_k ~ 7.25e8; pseudo-monopole 2pi*n/6
+  states. beta = 6.1e-1 header (thread convention).
+- **Best-candidate wired:** triadic canonical form +
+  predecessor convergence + verified structure
+  registered; SSq redefinition and stat provenance
+  pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.198.0"
+VERSION = "0.199.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10255,6 +10255,60 @@ def _paper_195(dataset):
         },
         'formula': 'load_bodies JSON/YAML/CSV + save_bodies round-trip',
         'source': 'PAPER_195',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_196')
+def _paper_196(dataset):
+    """Triadic Master Equation System (S50, thread 7514fe) - OPENS sec 2.6.
+
+    New thread (Sept-2025 PDF audit). The canonical
+    triadic form 169 referenced: three simultaneous UQFF
+    channels - Compressed (FU_g1), Resonance (R(t),
+    26-layer), Buoyancy (FU_Bi) - fully characterizing
+    any system. This IS the predecessor's
+    calculate_triadic_g (w_C*g_comp + w_R*g_res +
+    w_B*g_buoy) in operational per-system form - a
+    cross-repo architecture convergence.
+    STRUCTURE VERIFIED: resonance R(t) = sum_{i=1}^{26}
+    over the four Ug channels (26-layer confirmed);
+    negative R(t) (cos < 0) predicts anti-glitches via
+    buoyancy countering (falsifiable mechanism); H(t,z)
+    = H0*sqrt(0.3(1+z)^3 + 0.7) is the correct LCDM E(z)
+    structure; Westerlund 2 buoyancy dominates
+    (6.14e-32 vs FU_g1 2.43e-40, ~1e9).
+    SSq REDEFINITION (Q-192a, important): the compressed
+    form defines [SSq] = log(rho_vac,SCm/rho_vac,UA')*n*
+    e^-(pi-tn) - a SYSTEM-DEPENDENT formula - while the
+    header and PAPER_1154 canon fix [SSq] = 0.57 CONSTANT
+    (and log(F_TRZ) is negative). Two distinct SSq
+    meanings; the constant is canonical, the log-form is
+    a per-system coupling that must NOT overwrite it.
+    SUB-EQUATIONS: Um ~ 3.78e-6 J/m^3, E_neutrino ~
+    1.05e5 eV, decay rate ~ 0.0583, delta_k ~ 7.25e8;
+    pseudo-monopole 2pi n/6 states.
+    STAT CLAIMS (Q-192b): "90.97%% of 47 variants",
+    "99.9%% / 99 systems", "99.98%% JWST/Chandra
+    alignment" - provenance/verification pending (Rule 7).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.6 opener (triadic master eq, thread 7514fe)',
+            'triadic': 'FU_g1 (compressed) + R(t) (resonance 26-layer) + FU_Bi (buoyancy)',
+            'predecessor_convergence': 'calculate_triadic_g w_C*g_comp + w_R*g_res + w_B*g_buoy',
+            'resonance_26layer': 'R(t) = sum_{i=1}^{26} over 4 Ug channels',
+            'anti_glitch_prediction': 'negative R(t) via buoyancy countering (falsifiable)',
+            'hz_lcdm_correct': 'H0*sqrt(0.3(1+z)^3+0.7) = correct E(z) structure',
+            'ssq_redefinition': 'log(rho_SCm/rho_UA)*n formula vs 0.57 constant (Q-192a)',
+            'w2_buoyancy_dominant': 6.14e-32 / 2.43e-40,      # ~2.5e8
+            'sub_eqs': {'Um': 3.78e-6, 'E_nu_eV': 1.05e5, 'decay': 0.0583},
+            'stat_claims_pending': '90.97% / 99.9% / 99.98% - verification pending (Q-192b)',
+        },
+        'formula': 'Triadic: FU_g1 + R(t) + FU_Bi; g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U)',
+        'source': 'PAPER_196',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

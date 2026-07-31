@@ -1,26 +1,21 @@
-v0.198.0 BAND 1: PAPER_195 wired - DATA LOADER
+v0.199.0 BAND 1: PAPER_196 wired - TRIADIC MASTER EQ (PAPER 200)
 
-PAPER_195 CoAnQi Universal JSON/YAML/CSV Data Loader
-(OPEN_RULING Q-191) - Session 49, sec 2.5:
-  The load_bodies() function family reading the 12-field
-  CelestialBody from three formats - JSON (nlohmann),
-  YAML (yaml-cpp), CSV (getline) - plus save_bodies
-  round-trip and extension-based format dispatch. Sound
-  engineering: proper exceptions on open/parse failure,
-  and the dM/M < 1e-15 round-trip fidelity claim is
-  correct IEEE-754 double behavior. SIMBAD/GAIA
-  catalog-ingest motivation.
+PAPER_196 Triadic Master Equation System (OPEN_RULING Q-192) - Session 50, thread 7514fe, sec 2.6 opener. PAPER 200 MILESTONE.
 
-  PINNED: the JSON loader EXAMPLE uses omega_c = 1.994e-7
-  (Sun) and 1.991e-7 (Earth) - both ~2pi/(1 year) -
-  which reverts to 170's shared-period state that 186's
-  v2 rewrite already fixed (canonical Sun omega_c =
-  2pi/11yr = 1.81e-8). The loader CODE is correct; only
-  the illustrative JSON data is stale relative to the
-  186 canonical set. Cosmetic doc-data fix.
+  The canonical Triadic Master Equation that 169 referenced: three simultaneous UQFF channels -
+  Compressed (FU_g1) + Resonance (R(t), 26-layer) + Buoyancy (FU_Bi). It CONVERGES with the
+  predecessor calculate_triadic_g (w_C*g_comp + w_R*g_res + w_B*g_buoy) - the operational per-system
+  form of the same architecture, a genuine cross-repo convergence.
 
-  No numeric physics beyond the standard headers.
+  STRUCTURE VERIFIED: R(t) is a 26-layer sum over the four Ug channels; NEGATIVE R(t) predicts
+  ANTI-GLITCHES via buoyancy countering (falsifiable); H(t,z) = H0*sqrt(0.3(1+z)^3 + 0.7) is the
+  correct LCDM E(z) structure; Westerlund 2 buoyancy-dominant. Sub-eqs: Um ~ 3.78e-6 J/m^3,
+  E_neutrino ~ 105 keV, decay ~ 0.0583.
 
-Q-191 queued. Gate 1,292 assertions 0 failures. Registry
-458 rows / 980 edges / 199 ledgers (measured). Wired
-199/2,255 (11 clean, 188 OPEN_RULING). Next: PAPER_196.
+  PINNED: (a) SSq REDEFINITION - the compressed form defines [SSq] = log(rho_SCm/rho_UA)*n*e^-(pi-tn),
+  a system-dependent formula, while the header and PAPER_1154 fix [SSq] = 0.57 CONSTANT (and
+  log(F_TRZ) is negative); the constant is canonical, the log-form a distinct per-system coupling;
+  (b) stat claims (90.97 / 99.9 / 99.98 percent) need provenance before pinning (Rule 7).
+
+Q-192 queued. Gate 1,298 assertions 0 failures. Registry 460 rows / 984 edges / 200 ledgers (measured). Wired 200/2,255 (11 clean,
+189 OPEN_RULING). Next: PAPER_197.

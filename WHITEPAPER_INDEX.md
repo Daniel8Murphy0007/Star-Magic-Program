@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 199 (11 ✓, 188 ⚠ OPEN_RULING)
+- **Wired:** 200 (11 ✓, 189 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2056
+- **Not yet touched:** 2055
 
 ---
 
@@ -1264,7 +1264,7 @@
 | ⬜ | PAPER_1967 | BETA I FOUR CHANNEL DECOMPOSITION INFRASTRUCTURE UQFF |
 | ⬜ | PAPER_1968 | MW V FLAT RESIDUAL CLOSURE VIA F UBI I 99 AMPLIFIER UQFF |
 | ⬜ | PAPER_1969 | M87 JET MULTI OBSERVABLE F TRZ FACE 1 CONCURRENCE UQFF |
-| ⬜ | PAPER_196 | Triadic Master Equation System Compressed Resonance Buoyancy UQFF |
+| ⚠ | PAPER_196 | Triadic Master Equation System Compressed Resonance Buoyancy UQFF |
 | ⬜ | PAPER_1970 | D PHYS TIMES SO5 EQUALS 40 MULTI SCALE ANCHOR ATTRIBUTIONS UQFF |
 | ⬜ | PAPER_1971 | A 5 OVER D PHYS EQUALS 15 CROSS DOMAIN INSTANCES UQFF |
 | ⬜ | PAPER_1972 | V WIND 2000 KM S EXTENSION TO ANTENNAE MERGER UQFF |

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.198.0"
-description = "UQFF Star-Magic-Program v0.198.0: PAPER_195 wired - CelestialBody data-loader framework (JSON/YAML/CSV + round-trip); sound engineering, IEEE-754 fidelity; JSON example omega_c stale (reverts pre-186 shared-period), loader code correct. Q-191. Wired 199/2255, gate 1292/0. Registry 458 rows / 980 edges / 199 ledgers (measured)."
+version = "0.199.0"
+description = "UQFF Star-Magic-Program v0.199.0: PAPER_196 wired (paper 200 milestone) - Triadic Master Equation OPENS sec 2.6; converges with predecessor calculate_triadic_g; R(t) 26-layer + anti-glitch prediction + correct LCDM E(z) verified; SSq redefinition (log-formula vs 0.57 constant) + stat-claim provenance pinned. Q-192. Wired 200/2255, gate 1298/0. Registry 460 rows / 984 edges / 200 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

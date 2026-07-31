@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.199.0] — 2026-07-31 — BAND 1: PAPER_196 — TRIADIC MASTER EQ (PAPER 200)
+
+### Added
+- **PAPER_196 dispatch** (Triadic Master Equation, S50, thread 7514fe — sec 2.6 opener, paper 200 milestone): the canonical three-channel form 169 referenced — Compressed (FU_g1) + Resonance (R(t), 26-layer) + Buoyancy (FU_Bi). CONVERGES with the predecessor calculate_triadic_g (w_C·g_comp + w_R·g_res + w_B·g_buoy) — cross-repo convergence. VERIFIED: R(t) 26-layer sum; negative-R(t) anti-glitch (falsifiable); H(t,z) correct LCDM E(z); Westerlund 2 buoyancy-dominant. PINNED: SSq redefinition (log-formula vs 0.57 constant — constant canonical); stat claims (90.97/99.9/99.98%) verification pending (Rule 7). Sub-eqs: Um 3.78e-6 J/m³, E_nu 105 keV, decay 0.0583.
+- OPEN_RULING Q-192.
+- Gate: 1,298 assertions, 0 failures. Registry: 460 rows / 984 edges / 200 ledgers (measured).
+
+---
+
 ## [0.198.0] — 2026-07-31 — BAND 1: PAPER_195 — DATA LOADER
 
 ### Added

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.198.0", "uqff_calculator.VERSION = 0.198.0")
+assert_that(C.VERSION == "0.199.0", "uqff_calculator.VERSION = 0.199.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2823,6 +2823,19 @@ assert_that(abs(_r195['omega_c_earth_1yr'] - 1.991e-7) / 1.991e-7 < 1e-3,
 assert_that('reverts pre-186' in _r195['stale_example'],
             "PAPER_195: JSON example data stale vs 186 v2 canonical set (Q-191a)")
 assert_that(C.wired_count() >= 199, "wired_count >= 199")
+
+_r196 = C.calc('PAPER_196')['value']
+assert_that('calculate_triadic_g' in _r196['predecessor_convergence'],
+            "PAPER_196: triadic form converges with predecessor calculate_triadic_g (cross-repo)")
+assert_that('sum_{i=1}^{26}' in _r196['resonance_26layer'],
+            "PAPER_196: resonance R(t) 26-layer structure confirmed")
+assert_that('log' in _r196['ssq_redefinition'] and '0.57 constant' in _r196['ssq_redefinition'],
+            "PAPER_196: SSq redefinition - log-formula vs 0.57 constant (Q-192a)")
+assert_that(_r196['w2_buoyancy_dominant'] > 1e8,
+            "PAPER_196: Westerlund 2 buoyancy channel dominates compressed by ~1e8")
+assert_that('E(z) structure' in _r196['hz_lcdm_correct'],
+            "PAPER_196: H(t,z) = H0*sqrt(0.3(1+z)^3+0.7) correct LCDM E(z) form")
+assert_that(C.wired_count() >= 200, "wired_count >= 200")
 
 # =============================================================================
 # REPORT

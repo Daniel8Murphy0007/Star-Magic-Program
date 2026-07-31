@@ -979,3 +979,7 @@ observable,graphics3d_mesh_io,paper,PAPER_194,mesh I/O
 observable,graphics3d_mesh_io,paper,PAPER_178,Perlin mismatch
 observable,celestialbody_data_loader,paper,PAPER_195,loader family
 observable,celestialbody_data_loader,paper,PAPER_186,stale-data vs canonical
+observable,triadic_master_equation,paper,PAPER_196,triadic form
+observable,triadic_master_equation,paper,PAPER_171,Ug decomposition
+observable,triadic_ssq_and_subeqs,paper,PAPER_196,SSq + sub-eqs
+primitive,SSQ,observable,triadic_ssq_and_subeqs,0.57 constant canonical
