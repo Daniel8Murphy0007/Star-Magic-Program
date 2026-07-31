@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 196 (11 ✓, 185 ⚠ OPEN_RULING)
+- **Wired:** 197 (11 ✓, 186 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2059
+- **Not yet touched:** 2058
 
 ---
 
@@ -1231,7 +1231,7 @@
 | ⬜ | PAPER_1938 | OMEGA SCM UNIVERSAL CARRIER CATALOG UQFF |
 | ⬜ | PAPER_1939 | ASCII TMP |
 | ⬜ | PAPER_1939 | THREE PATH 22 ATIYAH SINGER UQFF |
-| ⬜ | PAPER_193 | CoAnQi Namespaced Modular Cpp Architecture |
+| ⚠ | PAPER_193 | CoAnQi Namespaced Modular Cpp Architecture |
 | ⬜ | PAPER_1940 | DPM SPECTRUM 1 3 2 3 SPLIT UQFF |
 | ⬜ | PAPER_1941 | DPM DECADE RATIO CROSS SCALE UNIVERSALITY UQFF |
 | ⬜ | PAPER_1942 | PHOTOEVAPORATION E0 EQUALS F TRZ UQFF |

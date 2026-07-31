@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.195.0", "uqff_calculator.VERSION = 0.195.0")
+assert_that(C.VERSION == "0.196.0", "uqff_calculator.VERSION = 0.196.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2796,6 +2796,17 @@ assert_that('never verifies' in _r192['sign_verify_mismatch'],
 assert_that('WebSocket 8765' in _r192['stack'],
             "PAPER_192: collaboration stack (WebSocket/OT/ECDSA/Snappy) registered")
 assert_that(C.wired_count() >= 196, "wired_count >= 196")
+
+_r193 = C.calc('PAPER_193')['value']
+assert_that(_r193['n_namespaces'] == 7 and len(_r193['namespaces']) == 7,
+            "PAPER_193: 7-namespace decomposition registered")
+assert_that(abs(_r193['mu0_exact'] - 1.2566e-6) / 1.2566e-6 < 1e-4,
+            "PAPER_193: mu0 = 4pi*1e-7 = 1.2566e-6 EXACT")
+assert_that(_r193['fu_term_count_here'] == 5,
+            "PAPER_193: F_U = sum(Ugi)+Ubi (5 terms) drops Um+tr(A) vs 172 ten-term (Q-189a)")
+assert_that('variant' in _r193['canonical_field_set_needed'],
+            "PAPER_193: architecture-doc field equations are a variant set - canonical set needed")
+assert_that(C.wired_count() >= 197, "wired_count >= 197")
 
 # =============================================================================
 # REPORT

@@ -1,29 +1,26 @@
-v0.195.0 BAND 1: PAPER_192 wired - COLLABORATION PROTOCOL
+v0.196.0 BAND 1: PAPER_193 wired - 7-NAMESPACE ARCHITECTURE
 
-PAPER_192 S-C Collaborative Real-Time Mathematics
-(OPEN_RULING Q-188) - Session 49, sec 2.5:
-  Real-time collaboration protocol: WebSocket (port
-  8765) + Operational Transformation for concurrent-edit
-  consistency + ECDSA message signing + Snappy
-  compression. The broadcastState pipeline (serialize ->
-  sign -> compress -> base64 -> broadcast) and its
-  onRemoteChange inverse are well-structured, with
-  OT-document versioning.
+PAPER_193 CoAnQi Namespaced Modular C++ Architecture
+(OPEN_RULING Q-189) - Session 49, sec 2.5:
+  The codebase refactored into 7 sub-namespaces -
+  Physics, MUGE, Fluid, Testing, Graphics3D, Plugins,
+  Utils - a clean concern-separation view of 169's
+  6-tier system. Constants EXACT (mu0 = 4pi*1e-7 =
+  1.2566e-6; PI to 14 digits; G/c standard).
 
-  PINNED: the ECDSA security layer is non-functional as
-  written - broadcastState signs the COMPACT JSON of the
-  state WITHOUT the sig field, while onRemoteChange
-  verifies against the DEFAULT-formatted (indented) JSON
-  WITH the sig field embedded. Two independent payload
-  mismatches (sig-field inclusion + formatting), so a
-  correct signature can never verify. Fix: verify the
-  exact compact-without-sig bytes that were signed.
-  Cosmetic for the physics corpus, real if the collab
-  layer is ever built from this listing.
+  FIELD-EQUATION FORM DIVERGENCE (the substantive find):
+  the namespace documentation restates the UQFF field
+  equations in DIFFERENT forms than the operational
+  papers - Ug1 = k1*mu_s^2/r^3 (squared moment, 1/r^3)
+  vs 171's k1*mu_s*grad(M/r); Ug2 and Ug4 likewise
+  variant; and F_U = sum(Ugi) + Ubi here is FIVE terms,
+  dropping Um and tr(A_mu_nu) that appear in 172's
+  ten-term compute_FU. I've flagged this as the UMBRELLA
+  canonical-F_U ruling - it subsumes the outstanding Ubi
+  four-form (Q-168a) and Ug4i four-form (Q-142b)
+  questions into a single "declare the canonical field
+  set" decision.
 
-  No numeric physics beyond the standard headers. The
-  S-C software block (189-192) is winding down.
-
-Q-188 queued. Gate 1,280 assertions 0 failures. Registry
-455 rows / 973 edges / 196 ledgers (measured). Wired
-196/2,255 (11 clean, 185 OPEN_RULING). Next: PAPER_193.
+Q-189 queued. Gate 1,285 assertions 0 failures. Registry
+456 rows / 976 edges / 197 ledgers (measured). Wired
+197/2,255 (11 clean, 186 OPEN_RULING). Next: PAPER_194.

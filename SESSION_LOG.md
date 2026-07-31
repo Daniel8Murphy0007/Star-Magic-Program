@@ -2248,3 +2248,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 196/2,255 (11 ✓, 185 ⚠). Next: PAPER_193.
 
 ---
+
+## 2026-07-31 — v0.196.0 — BAND 1: PAPER_193
+
+- PAPER_193 wired (⚠ Q-189): 7-namespace architecture.
+  Field-equation form divergence flagged as umbrella
+  canonical-F_U ruling; constants exact.
+- Campaign: 197/2,255 (11 ✓, 186 ⚠). Next: PAPER_194.
+
+---

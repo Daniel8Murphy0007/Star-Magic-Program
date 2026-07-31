@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.195.0"
+VERSION = "0.196.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10133,5 +10133,50 @@ def _paper_192(dataset):
         'formula': 'broadcastState pipeline; OT concurrent-edit consistency',
         'source': 'PAPER_192',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_193')
+def _paper_193(dataset):
+    """CoAnQi 7-namespace modular architecture (S49, sec 2.5).
+
+    Refactor reference: 7 sub-namespaces (Physics, MUGE,
+    Fluid, Testing, Graphics3D, Plugins, Utils) -
+    concern-separation view of 169's 6-tier system.
+    Constants EXACT: mu0 = 1.2566e-6 (= 4pi*1e-7), PI to
+    14 digits, G/c standard.
+    FIELD-EQUATION FORM DIVERGENCE (Q-189a, important):
+    the namespace docs restate the Ug family in DIFFERENT
+    forms than the operational papers - Ug1 = k1*mu_s^2/
+    r^3 (SQUARED moment, 1/r^3) vs 171's k1*mu_s*grad
+    (M/r); Ug2 = k2*qs*v_SCm/r^2*sin vs the bubble/step
+    form; Ug4 = k4*rho_SCm/r*e^-kt vs 160's k4*rho_v*
+    C*Mbh/dg. AND F_U = sum(Ugi) + Ubi here (FIVE terms)
+    DROPS Um and tr(A_mu_nu) present in 172's ten-term
+    assembly and the 168/169/178 minus-buoyancy headers.
+    The architecture-doc equations are a simplified/
+    older variant set - not the operational forms. A
+    canonical field-equation set is needed (this is the
+    Ubi four-form / Ug4i four-form question at the F_U
+    level).
+    beta drift absent here (no header). Registered as
+    architecture reference with the divergence flagged.
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.5 (namespace architecture, S49)',
+            'n_namespaces': 7,
+            'namespaces': ('Physics', 'MUGE', 'Fluid', 'Testing', 'Graphics3D', 'Plugins', 'Utils'),
+            'mu0_exact': 4 * _m.pi * 1e-7,                   # 1.2566e-6
+            'fu_term_count_here': 5,
+            'fu_divergence': 'sum(Ugi) + Ubi (5) DROPS Um + tr(A) vs 172 ten-term',
+            'ug1_form_variant': 'k1*mu_s^2/r^3 vs 171 k1*mu_s*grad(M/r)',
+            'canonical_field_set_needed': 'architecture doc = simplified/older variant (Q-189a)',
+        },
+        'formula': '7 namespaces; F_U = sum(Ugi) + Ubi (variant 5-term form)',
+        'source': 'PAPER_193',
+        'residual_pct': abs(4 * _m.pi * 1e-7 - 1.2566e-6) / 1.2566e-6 * 100,
         'status': 'OPEN_RULING',
     }

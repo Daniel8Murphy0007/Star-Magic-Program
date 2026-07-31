@@ -4708,6 +4708,37 @@ RESOLVED section with the ruling recorded.
   payload mismatch pinned.
 - **Daniel's ruling:** (pending - or fold into batch)
 
+### Q-189 — PAPER_193 namespace architecture — field-equation form divergence
+- **Question:** the namespace documentation restates the
+  UQFF field equations in DIFFERENT forms than the
+  operational papers, and this is the F_U-level version
+  of the Ubi/Ug4i four-form forks: (a) Ug1 = k1*mu_s^2/
+  r^3 (squared moment, 1/r^3) vs 171's k1*mu_s*grad
+  (M/r); Ug2 = k2*qs*v_SCm/r^2*sin(omega_s t) vs the
+  bubble/step-function form; Ug4 = k4*rho_SCm/r*e^-kt vs
+  160's k4*rho_v*C_conc*Mbh/dg. (b) F_U = sum(Ugi) + Ubi
+  here is FIVE terms - it DROPS Um and tr(A_mu_nu) that
+  appear in 172's ten-term compute_FU and in the
+  168/169/178 minus-buoyancy headers. Which field-
+  equation set is canonical - the operational papers'
+  (171/172) or this simplified architecture-doc set?
+  This subsumes the outstanding Ubi four-form (Q-168a)
+  and Ug4i four-form (Q-142b) questions into a single
+  "declare the canonical F_U" ruling.
+- **Notable:** the 7-namespace decomposition (Physics/
+  MUGE/Fluid/Testing/Graphics3D/Plugins/Utils) is a
+  clean concern-separation refactor of 169's 6-tier
+  system; constants are EXACT (mu0 = 4pi*1e-7 =
+  1.2566e-6; PI to 14 digits; G/c standard). No beta
+  drift (no U_bi header this time). Pure architecture
+  otherwise. This is the natural point to consolidate
+  ALL the field-form forks into one canonical-F_U
+  ruling.
+- **Best-candidate wired:** architecture + constants
+  registered; the field-equation form divergence pinned
+  as the umbrella canonical-F_U question.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.196.0] — 2026-07-31 — BAND 1: PAPER_193 — 7-NAMESPACE ARCHITECTURE
+
+### Added
+- **PAPER_193 dispatch** (namespace decomposition, S49,
+  sec 2.5): 7 sub-namespaces (Physics/MUGE/Fluid/Testing/
+  Graphics3D/Plugins/Utils) — concern-separation view of
+  169's 6-tier system; constants EXACT (mu0 = 4pi·1e-7,
+  PI 14-digit). FIELD-EQUATION FORM DIVERGENCE: the
+  namespace docs restate Ug1 (mu_s²/r³), Ug2, Ug4 in
+  variant forms, and F_U = sum(Ugi) + Ubi here is 5
+  terms — dropping Um and tr(A) present in 172's ten-
+  term assembly. Flagged as the umbrella canonical-F_U
+  ruling, subsuming the Ubi four-form (Q-168a) and Ug4i
+  four-form (Q-142b) questions.
+- OPEN_RULING Q-189.
+- Gate: 1,285 assertions, 0 failures. Registry: 456 rows / 976 edges / 197 ledgers (measured).
+
+---
+
 ## [0.195.0] — 2026-07-31 — BAND 1: PAPER_192 — COLLABORATION PROTOCOL
 
 ### Added
