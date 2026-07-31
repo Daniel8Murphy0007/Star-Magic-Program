@@ -1,22 +1,29 @@
-v0.194.0 BAND 1: PAPER_191 wired - MULTI-MODAL FEATURES
+v0.195.0 BAND 1: PAPER_192 wired - COLLABORATION PROTOCOL
 
-PAPER_191 S-C Multi-Modal Calculator Features
-(OPEN_RULING Q-187, minimal) - Session 49, sec 2.5:
-  Eight feature systems cataloged: VR/AR (Qt3D + VTK),
-  pocketsphinx voice, blockchain equation-provenance
-  logging (conceptually adjacent to this repo's own
-  registry-provenance doctrine), IoT MQTT broadcast,
-  haptics, PyTorch LSTM autocomplete, biometric API
-  gate, and gesture navigation - plus the ANTLR4
-  highlighter, drag-drop symbol palette, and
-  command-pattern undo/redo (reverse-order undo
-  correctly implemented).
+PAPER_192 S-C Collaborative Real-Time Mathematics
+(OPEN_RULING Q-188) - Session 49, sec 2.5:
+  Real-time collaboration protocol: WebSocket (port
+  8765) + Operational Transformation for concurrent-edit
+  consistency + ECDSA message signing + Snappy
+  compression. The broadcastState pipeline (serialize ->
+  sign -> compress -> base64 -> broadcast) and its
+  onRemoteChange inverse are well-structured, with
+  OT-document versioning.
 
-  Pure infrastructure - no numeric physics beyond the
-  standard headers. Thinnest wire of the campaign;
-  registered for completeness and index continuity.
+  PINNED: the ECDSA security layer is non-functional as
+  written - broadcastState signs the COMPACT JSON of the
+  state WITHOUT the sig field, while onRemoteChange
+  verifies against the DEFAULT-formatted (indented) JSON
+  WITH the sig field embedded. Two independent payload
+  mismatches (sig-field inclusion + formatting), so a
+  correct signature can never verify. Fix: verify the
+  exact compact-without-sig bytes that were signed.
+  Cosmetic for the physics corpus, real if the collab
+  layer is ever built from this listing.
 
-Q-187 queued (minimal). Gate 1,277 assertions 0
-failures. Registry 454 rows / 971 edges / 195 ledgers
-(measured). Wired 195/2,255 (11 clean, 184 OPEN_RULING).
-Next: PAPER_192.
+  No numeric physics beyond the standard headers. The
+  S-C software block (189-192) is winding down.
+
+Q-188 queued. Gate 1,280 assertions 0 failures. Registry
+455 rows / 973 edges / 196 ledgers (measured). Wired
+196/2,255 (11 clean, 185 OPEN_RULING). Next: PAPER_193.

@@ -4679,6 +4679,35 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** infrastructure reference.
 - **Daniel's ruling:** (pending - or fold into batch)
 
+### Q-188 — PAPER_192 collaboration protocol — ECDSA sign/verify mismatch
+- **Question:** the security layer is non-functional as
+  written: broadcastState() signs rawData = the COMPACT
+  JSON of the state object WITHOUT the sig field, but
+  onRemoteChange() verifies the signature against
+  QJsonDocument(state).toJson() = the DEFAULT-formatted
+  (indented) JSON of the state object WITH the sig field
+  now embedded. Two independent mismatches - the sig
+  field is present in the verified payload but absent
+  from the signed payload, and Compact != indented
+  formatting - so a correct signature can NEVER verify.
+  Fix: verify the exact byte string that was signed
+  (Compact, sig-field stripped). Cosmetic for the
+  physics corpus, but a real bug if the collaboration
+  layer is ever built from this listing.
+- **Notable:** pure infrastructure - WebSocket (port
+  8765) + Operational Transformation for concurrent-edit
+  consistency + ECDSA message authentication + Snappy
+  compression; the broadcastState pipeline (serialize ->
+  sign -> compress -> base64 -> broadcast) and its
+  onRemoteChange inverse are otherwise well-structured,
+  with OT-document versioning. No numeric physics beyond
+  the standard headers. This is the collaboration
+  counterpart to 191's feature catalog; the S-C block
+  (189-192) is winding down.
+- **Best-candidate wired:** protocol registered; crypto
+  payload mismatch pinned.
+- **Daniel's ruling:** (pending - or fold into batch)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

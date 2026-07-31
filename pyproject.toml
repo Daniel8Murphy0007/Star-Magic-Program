@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.194.0"
-description = "UQFF Star-Magic-Program v0.194.0: PAPER_191 wired - S-C multi-modal features (8 systems: VR/AR, voice, blockchain provenance, IoT, haptics, ML autocomplete, biometrics, gestures); infrastructure catalog, no numeric physics; command-pattern discipline noted. Q-187 minimal. Wired 195/2255, gate 1277/0. Registry 454 rows / 971 edges / 195 ledgers (measured)."
+version = "0.195.0"
+description = "UQFF Star-Magic-Program v0.195.0: PAPER_192 wired - S-C collaboration protocol (WebSocket/OT/ECDSA/Snappy); ECDSA sign/verify payload mismatch (signs compact-no-sig, verifies indented-with-sig - never verifies); infrastructure only. Q-188. Wired 196/2255, gate 1280/0. Registry 455 rows / 973 edges / 196 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

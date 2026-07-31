@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.194.0"
+VERSION = "0.195.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10094,6 +10094,44 @@ def _paper_191(dataset):
         },
         'formula': '8 multi-modal feature systems (infrastructure catalog)',
         'source': 'PAPER_191',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_192')
+def _paper_192(dataset):
+    """S-C collaborative real-time math protocol (S49, sec 2.5).
+
+    Real-time collaboration pipeline: WebSocket (port
+    8765) + Operational Transformation (concurrent-edit
+    consistency) + ECDSA signing + Snappy compression;
+    broadcastState() = serialize -> ECDSA sign -> Snappy
+    compress -> base64 -> broadcast; onRemoteChange
+    reverses it; importExcel/performStats extend to data
+    import + stats. OT-doc versioning included.
+    SIGN/VERIFY MISMATCH (Q-188a): broadcastState signs
+    rawData = the Compact JSON of state WITHOUT the sig
+    field; onRemoteChange verifies against QJsonDocument
+    (state).toJson() = the DEFAULT-formatted JSON of
+    state WITH the sig field embedded. Two mismatches
+    (sig-field inclusion + Compact-vs-indented) mean the
+    signature can NEVER verify as written - the security
+    layer is non-functional. Fix: verify the exact
+    Compact-without-sig payload that was signed.
+    No numeric physics beyond standard headers.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (collaboration protocol, S49)',
+            'stack': 'WebSocket 8765 + OT + ECDSA + Snappy',
+            'pipeline': 'serialize -> sign -> compress -> base64 -> broadcast',
+            'sign_verify_mismatch': 'signs Compact-no-sig, verifies indented-with-sig - never verifies (Q-188a)',
+            'ot_versioning': 'ot_document_version included in state',
+            'physics_content': 'none beyond standard headers',
+        },
+        'formula': 'broadcastState pipeline; OT concurrent-edit consistency',
+        'source': 'PAPER_192',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

@@ -2239,3 +2239,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 195/2,255 (11 ✓, 184 ⚠). Next: PAPER_192.
 
 ---
+
+## 2026-07-31 — v0.195.0 — BAND 1: PAPER_192
+
+- PAPER_192 wired (⚠ Q-188): collaboration protocol.
+  ECDSA sign/verify payload mismatch pinned;
+  infrastructure only.
+- Campaign: 196/2,255 (11 ✓, 185 ⚠). Next: PAPER_193.
+
+---

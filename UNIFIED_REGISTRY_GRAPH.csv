@@ -970,3 +970,5 @@ observable,sc_integration_engine,paper,PAPER_190,10-rule engine
 observable,sc_integration_engine,paper,PAPER_189,S-C component
 observable,sc_multimodal_features,paper,PAPER_191,8 systems
 observable,sc_multimodal_features,paper,PAPER_189,S-C component
+observable,sc_collaboration_protocol,paper,PAPER_192,collab pipeline
+observable,sc_collaboration_protocol,paper,PAPER_189,S-C component

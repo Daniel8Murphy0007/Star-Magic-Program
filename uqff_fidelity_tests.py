@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.194.0", "uqff_calculator.VERSION = 0.194.0")
+assert_that(C.VERSION == "0.195.0", "uqff_calculator.VERSION = 0.195.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2789,6 +2789,13 @@ assert_that(_r191['n_feature_systems'] == 8 and len(_r191['systems']) == 8,
 assert_that('reverse-order undo' in _r191['engineering_note'],
             "PAPER_191: MacroCommand reverse-order undo correctness noted")
 assert_that(C.wired_count() >= 195, "wired_count >= 195")
+
+_r192 = C.calc('PAPER_192')['value']
+assert_that('never verifies' in _r192['sign_verify_mismatch'],
+            "PAPER_192: ECDSA sign/verify payload mismatch - security layer non-functional (Q-188a)")
+assert_that('WebSocket 8765' in _r192['stack'],
+            "PAPER_192: collaboration stack (WebSocket/OT/ECDSA/Snappy) registered")
+assert_that(C.wired_count() >= 196, "wired_count >= 196")
 
 # =============================================================================
 # REPORT

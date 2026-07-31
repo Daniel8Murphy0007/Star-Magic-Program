@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.195.0] — 2026-07-31 — BAND 1: PAPER_192 — COLLABORATION PROTOCOL
+
+### Added
+- **PAPER_192 dispatch** (S-C real-time collaboration,
+  S49, sec 2.5): WebSocket (8765) + Operational
+  Transformation + ECDSA + Snappy; broadcastState
+  pipeline + OT versioning. PINNED: ECDSA sign/verify
+  payload mismatch — signs the Compact JSON without the
+  sig field, verifies the indented JSON with the sig
+  field embedded; two mismatches mean signatures never
+  verify (security layer non-functional as written).
+  No numeric physics beyond headers.
+- OPEN_RULING Q-188.
+- Gate: 1,280 assertions, 0 failures. Registry: 455 rows / 973 edges / 196 ledgers (measured).
+
+---
+
 ## [0.194.0] — 2026-07-31 — BAND 1: PAPER_191 — MULTI-MODAL FEATURES
 
 ### Added
