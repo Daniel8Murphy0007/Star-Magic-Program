@@ -9,6 +9,22 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-212 — PAPER_216 — Triadic resonance couplings + cos-argument reproducibility
+- **Question (a):** PAPER_216's Triadic validation uses resonance coupling 0.1
+  for Westerlund 2 and 0.03 for the Pillars of Creation. 0.1 = F_TRZ EXACTLY and
+  0.03 = 3*F_TRZ^2 EXACTLY (the same PAPER_215 a_Ug1 primitive). Are these
+  intended primitive couplings, or per-system fits that happen to land on them?
+- **Question (b):** The R(t) worked examples state cos(ω·t) = -0.9455 for both
+  systems, but the shown ω·t products (1.989e-13 × 6.307e13 ≈ 12.54 rad for
+  Westerlund; × 4.705e13 ≈ 9.36 rad for Pillars) evaluate to cos = +0.9998 and
+  -0.9978 respectively, not -0.9455. The t_n phase term inside the cos argument
+  is not shown. Confirm the -0.9455 phase and the missing t_n term. (The R(t)
+  output magnitudes -2.29e-41 / -1.12e-42 N reproduce given -0.9455.)
+- **Best-candidate wired:** couplings stored as F_TRZ / 3*F_TRZ^2 (gate-pinned);
+  Triadic outputs wired as the paper's documented validation values; cos fork
+  recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-211 — PAPER_215 — CR knee Ug1 shift primitive origin + CPL/PAPER_209 tie
 - **Question (a):** PAPER_215 sec 3/8 gives the UQFF CR-knee shift a_Ug1 ~ 0.03
   (from Ug1 magnetic enhancement), applied as E_knee(UQFF) = Z*3e15*(1+0.03).

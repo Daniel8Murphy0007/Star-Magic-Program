@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.219.0", "uqff_calculator.VERSION = 0.219.0")
+assert_that(C.VERSION == "0.220.0", "uqff_calculator.VERSION = 0.220.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3100,6 +3100,19 @@ assert_that(_r215['diffusion_1pev_cm2_s'] == 1e31,
 assert_that(abs(_r215['kazantsev_gamma_dynamo_s'] - 3.2362459546925564e-17) < 1e-25,
             "PAPER_215: Kazantsev WHIM dynamo gamma = 1e5/3.09e21 = 3.24e-17 s^-1")
 assert_that(C.wired_count() >= 219, "wired_count >= 219")
+
+_r216 = C.calc('PAPER_216')['value']
+assert_that(_r216['proportion_sum'] == 1.0 and _r216['rho_ua_over_scm'] == 10,
+            "PAPER_216: DPM proportion f_UA'+f_SCm = 0.999+0.001 = 1; rho_UA/rho_SCm = 10 = SO_5")
+assert_that(abs(_r216['decay_tn_0'] - 0.04321391826377226) < 1e-9 and abs(_r216['decay_tn_pi_2'] - 0.20787957635076193) < 1e-9,
+            "PAPER_216: buoyancy decay e^-(pi-t_n): e^-pi=0.0432, e^-pi/2=0.208, e^0=1")
+assert_that(_r216['coupling_westerlund_is_ftrz'] and _r216['coupling_pillars_is_3ftrz2'],
+            "PAPER_216: resonance couplings 0.1=F_TRZ (Westerlund) / 0.03=3*F_TRZ^2 (Pillars)")
+assert_that(_r216['westerlund2']['r_t_N'] == -2.29e-41 and _r216['pillars_m16']['fu_g1_N'] == 3.95e-41,
+            "PAPER_216: Triadic outputs Westerlund R(t)=-2.29e-41 N, Pillars FU_g1=3.95e-41 N")
+assert_that(_r216['f_z_cgm'] == 1.46e-73 and _r216['dk_phi'] == 7.25e8,
+            "PAPER_216: f_z,CGM=1.46e-73; dk_phi=7.25e8 (ties PAPER_212)")
+assert_that(C.wired_count() >= 220, "wired_count >= 220")
 
 
 # =============================================================================

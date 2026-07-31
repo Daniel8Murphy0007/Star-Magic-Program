@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.220.0] — 2026-07-31 — BAND 1: PAPER_216 — TRIADIC VALIDATION (Wd2 + PILLARS)
+
+### Added
+- **PAPER_216 wired** (⚠ Q-212): Triadic UQFF numerical validation on Westerlund 2
+  and the Pillars of Creation (M16). The three Triadic modes — Compressed (FU_g1),
+  Resonance (R(t)), Buoyancy (FU_Bi) — are computed simultaneously. Westerlund 2
+  (r=1.89e16 m): FU_g1 = 2.43e-40 N, R(t) = -2.29e-41 N, FU_Bi ~ 6.14e-32 N,
+  resonance coupling **0.1 = F_TRZ**. Pillars M16 (r=4.73e16 m): FU_g1 = 3.95e-41 N,
+  R(t) = -1.12e-42 N, FU_Bi ~ 9.79e-33 N, resonance coupling **0.03 = 3·F_TRZ²**
+  (the same PAPER_215 a_Ug1 primitive). Buoyancy temporal decay e^-(π-t_n): 0.0432
+  (t_n=0), 0.208 (π/2), 1 (π). DPM proportion f_UA'+f_SCm = 0.999+0.001 = 1,
+  ρ_UA/ρ_SCm = 10 = SO_5; f_z,CGM = 1.46e-73.
+- Q-212: (a) resonance couplings F_TRZ / 3·F_TRZ² primitive origin; (b) the R(t)
+  cos = -0.9455 is not reproduced by the shown ω·t (t_n phase term unshown).
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1412 → 1418 (+6). Registry 493 rows / 1049 edges / 220 ledgers.
+
+---
+
 ## [0.219.0] — 2026-07-31 — BAND 1: PAPER_215 — COSMIC RAYS / WHIM / CR KNEE
 
 ### Added

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 219 (11 ✓, 208 ⚠ OPEN_RULING)
+- **Wired:** 220 (11 ✓, 209 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2036
+- **Not yet touched:** 2035
 
 ---
 
@@ -1472,7 +1472,7 @@
 | ⬜ | PAPER_2155 | S204 5 CALIBRATION TABLE CORPUS AUDIT 933 PAPERS KG PER M3 TO J PER M3 UNIT TAG  |
 | ⬜ | PAPER_2156 | 1 894 RATIO BULK SCRIPT ARTIFACT 935 PAPERS NON CANONICAL DENSITIES 9 47E 27 AND |
 | ⚠ | PAPER_215 | Cosmic Rays WHIM Fermi Acceleration CR Knee UQFF |
-| ⬜ | PAPER_216 | Triadic UQFF Numerical Validation Westerlund2 Pillars |
+| ⚠ | PAPER_216 | Triadic UQFF Numerical Validation Westerlund2 Pillars |
 | ⬜ | PAPER_217 | DeepSearch FUBii Polynomial Rare Mathematical Discoveries |
 | ⬜ | PAPER_218 | NGC3603 Stellar Pressure Dispersal UQFF |
 | ⬜ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |

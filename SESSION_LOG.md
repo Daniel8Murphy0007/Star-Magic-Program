@@ -2430,3 +2430,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1412/0. Registry 491 rows / 1045 edges / 219 ledgers. Campaign: 219/2,255 (11 ✓, 208 ⚠). Next: PAPER_216.
 
 ---
+
+## 2026-07-31 — v0.220.0 — BAND 1: PAPER_216
+
+- PAPER_216 wired (⚠ Q-212): Triadic UQFF numerical validation on Westerlund 2 + Pillars (M16). 3 modes {FU_g1, R(t), FU_Bi} simultaneous. Westerlund (r=1.89e16 m): 2.43e-40/-2.29e-41/6.14e-32 N, coupling 0.1=F_TRZ. Pillars (r=4.73e16 m): 3.95e-41/-1.12e-42/9.79e-33 N, coupling 0.03=3·F_TRZ² (ties PAPER_215). Buoyancy decay e^-(π-t_n) 0.0432/0.208/1; DPM f_UA'+f_SCm=1, ρ_UA/ρ_SCm=10=SO_5; f_z,CGM=1.46e-73. Appendix drift auto-corrected.
+- Q-212: resonance couplings F_TRZ / 3·F_TRZ² origin; cos=-0.9455 not reproduced by shown ω·t (t_n phase unshown).
+- Gate 1418/0. Registry 493 rows / 1049 edges / 220 ledgers. Campaign: 220/2,255 (11 ✓, 209 ⚠). Next: PAPER_217.
+
+---

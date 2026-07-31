@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.219.0"
+VERSION = "0.220.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11389,6 +11389,70 @@ def _paper_215(dataset):
         },
         'formula': 'alpha = (r+2)/(r-1) = 2; a_Ug1 = 3*F_TRZ^2 = 0.03; E_max = Z*e*B*u_s*R',
         'source': 'PAPER_215',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_216')
+def _paper_216(dataset):
+    """Triadic UQFF numerical validation: Westerlund 2 + Pillars (S54).
+
+    Simultaneous computation of the three Triadic modes - Compressed
+    (FU_g1), Resonance (R(t)), Buoyancy (FU_Bi) - on two star-forming
+    benchmarks. Wired observables:
+    * Vacuum proportion pair f_UA' = 0.999, f_SCm = 0.001 (sum = 1 DPM
+      proportion), R_EB = 1.0; ratio rho_UA/rho_SCm = 10 = SO_5.
+    * Buoyancy temporal-decay factor e^-(pi - t_n): t_n=0 -> e^-pi =
+      0.0432 (max attenuation), t_n=pi/2 -> e^-pi/2 = 0.208, t_n=pi ->
+      e^0 = 1 (max buoyancy) - the cosmic-to-quantum time bridge.
+    * Westerlund 2 (r = 1.89e16 m) Triadic outputs: FU_g1 = 2.43e-40 N,
+      R(t) = -2.29e-41 N, FU_Bi ~ 6.14e-32 N; resonance coupling 0.1 =
+      F_TRZ.
+    * Pillars of Creation / M16 (r = 4.73e16 m): FU_g1 = 3.95e-41 N,
+      R(t) = -1.12e-42 N, FU_Bi ~ 9.79e-33 N; resonance coupling 0.03 =
+      3*F_TRZ^2 (the same PAPER_215 a_Ug1 primitive).
+    * CGM metallicity f_z,CGM = 1.46e-73 = [SSq]^26 * exp(-[SSq]*n/26) *
+      VDS (both systems).
+    * f_Ub = k_Ub * dk_phi * (rho_UA/rho_SCm) * (V_little/V_big), with
+      dk_phi = 7.25e8 (ties PAPER_212) and V_little/V_big = 1/33
+      (Boyle's-law proto-shell volumes).
+    R(t) magnitudes reproduce given the paper's cos = -0.9455; Q-212:
+    (a) resonance couplings 0.1 / 0.03 = F_TRZ / 3*F_TRZ^2 primitive
+    identities; (b) the shown omega*t products (~12.5 / ~9.36 rad) give
+    cos 0.9998 / -0.9978, not -0.9455 - the t_n phase term is unshown.
+    Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    e_neg_pi = _m.exp(-_m.pi)                             # 0.0432
+    e_neg_pi_2 = _m.exp(-_m.pi / 2)                       # 0.208
+    coupling_westerlund = F_TRZ                           # 0.1
+    coupling_pillars = 3 * (F_TRZ ** 2)                  # 0.03
+    return {
+        'value': {
+            'domain': '2.14 (Triadic validation: Westerlund 2 + Pillars)',
+            'f_ua_prime': 0.999,
+            'f_scm': 0.001,
+            'proportion_sum': 0.999 + 0.001,             # 1.0
+            'rho_ua_over_scm': 10,                        # SO_5
+            'decay_tn_0': e_neg_pi,                       # 0.0432
+            'decay_tn_pi_2': e_neg_pi_2,                  # 0.208
+            'decay_tn_pi': 1.0,
+            'westerlund2': {'r_m': 1.89e16, 'fu_g1_N': 2.43e-40,
+                            'r_t_N': -2.29e-41, 'fu_bi_N': 6.14e-32,
+                            'resonance_coupling': coupling_westerlund},
+            'pillars_m16': {'r_m': 4.73e16, 'fu_g1_N': 3.95e-41,
+                            'r_t_N': -1.12e-42, 'fu_bi_N': 9.79e-33,
+                            'resonance_coupling': coupling_pillars},
+            'coupling_westerlund_is_ftrz': abs(coupling_westerlund - 0.1) < 1e-12,
+            'coupling_pillars_is_3ftrz2': abs(coupling_pillars - 0.03) < 1e-12,
+            'f_z_cgm': 1.46e-73,
+            'dk_phi': 7.25e8,
+            'v_little_over_big': 1.0 / 33,
+            'cos_arg_fork': 'shown omega*t gives cos 0.9998/-0.9978, paper uses -0.9455 (t_n phase unshown, Q-212)',
+        },
+        'formula': 'Triadic {FU_g1, R(t), FU_Bi}; buoyancy decay e^-(pi-t_n); couplings F_TRZ, 3*F_TRZ^2',
+        'source': 'PAPER_216',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

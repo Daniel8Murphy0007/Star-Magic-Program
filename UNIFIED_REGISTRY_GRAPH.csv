@@ -1044,3 +1044,7 @@ primitive,F_TRZ,observable,cr_dsa_knee,a_Ug1 = 3*F_TRZ^2
 observable,cr_dsa_knee,paper,PAPER_215,DSA + knee
 observable,cr_whim_dynamo_cpl,paper,PAPER_215,WHIM/dynamo/CPL
 observable,cr_whim_dynamo_cpl,observable,running_vacuum_de_discriminator,CPL ties PAPER_209
+primitive,F_TRZ,observable,triadic_validation_westerlund_pillars,couplings F_TRZ / 3*F_TRZ^2
+observable,triadic_validation_westerlund_pillars,paper,PAPER_216,Triadic 3-mode
+observable,buoyancy_temporal_decay,paper,PAPER_216,e^-(pi-t_n)
+observable,triadic_validation_westerlund_pillars,observable,cr_dsa_knee,0.03=3*F_TRZ^2 tie PAPER_215

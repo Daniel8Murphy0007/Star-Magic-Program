@@ -1,32 +1,31 @@
-v0.219.0 BAND 1: PAPER_215 wired - COSMIC RAYS / WHIM / CR KNEE
+v0.220.0 BAND 1: PAPER_216 wired - TRIADIC VALIDATION (Wd2 + PILLARS)
 
-PAPER_215 (Cosmic Rays, WHIM, Fermi Acceleration, and CR Knee in
-UQFF, S50) wired as one dispatch (Q-211, OPEN_RULING).
+PAPER_216 (Triadic UQFF Numerical Validation Suite - Westerlund 2 and
+Pillars of Creation, S54) wired as one dispatch (Q-212, OPEN_RULING).
 
 Physics:
-- Diffusive shock acceleration (Fermi-I) power-law index
-  alpha = (r+2)/(r-1) = 2 EXACT for strong-shock compression r=4
-  (gamma=5/3); observed E^-2.7 at Earth is propagation-steepened,
-  intrinsic E^-2 confirmed by gamma-rays. Verified.
-- CR knee via Hillas E_max = Z*e*B*u_s*R: proton (B=300uG=3e-10 T,
-  u_s=1e7 m/s, R=10 pc=3.09e17 m) = 9.27e14 eV ~ 1 PeV; scales as Z.
-- UQFF knee shift a_Ug1 = 0.03 = 3*F_TRZ^2 EXACT (Ug1 magnetic
-  enhancement); E_knee(UQFF) = Z*3e15 eV*1.03: proton 3.09e15,
-  He 6.18e15, CNO 2.16e16, Si 4.33e16, Fe 8.04e16 eV (+/-5% obs).
-- ISM/IGM diffusion D(E) = D0*(E/E0)^beta, D0=1e28 cm^2/s at 10 GeV;
-  D(1 PeV) = 1e28*(1e6)^0.5 = 1e31 cm^2/s (beta=0.5, Kraichnan).
-- WHIM: 40-50% of baryons at z<2, T~1e5-1e7 K, Z~0.1 Z_sun; Kazantsev
-  small-scale dynamo growth gamma = v_turb/l_turb = 1e5/3.09e21 =
-  3.24e-17 s^-1 (uG in ~1 Gyr).
-- CPL dark energy w(a)=w0+w_a(1-a); DESI 2024 w0~-0.7 w_a~-1.1
-  (2-sigma LCDM tension); UQFF w(a)=-1+Ug4(a)/(rho_L c^2) gives
-  natural CPL-like running, tying PAPER_209 running-vacuum.
+- Simultaneous computation of the three Triadic modes - Compressed
+  (FU_g1), Resonance (R(t)), Buoyancy (FU_Bi) - on two star-forming
+  benchmarks.
+- Westerlund 2 (r = 1.89e16 m): FU_g1 = 2.43e-40 N, R(t) = -2.29e-41 N,
+  FU_Bi ~ 6.14e-32 N; resonance coupling 0.1 = F_TRZ.
+- Pillars of Creation / M16 (r = 4.73e16 m): FU_g1 = 3.95e-41 N,
+  R(t) = -1.12e-42 N, FU_Bi ~ 9.79e-33 N; resonance coupling 0.03 =
+  3*F_TRZ^2 (the same PAPER_215 a_Ug1 primitive). R(t) magnitudes
+  reproduced in Python given the paper's cos = -0.9455.
+- Buoyancy temporal-decay factor e^-(pi - t_n): t_n=0 -> e^-pi = 0.0432
+  (max attenuation, proto-shells), t_n=pi/2 -> 0.208, t_n=pi -> 1 (max
+  buoyancy) - the cosmic-to-quantum time bridge. Verified.
+- DPM proportion pair f_UA' = 0.999, f_SCm = 0.001 (sum = 1),
+  rho_UA/rho_SCm = 10 = SO_5; f_z,CGM = 1.46e-73; dk_phi = 7.25e8
+  (ties PAPER_212), V_little/V_big = 1/33 (Boyle's-law proto-shell).
 
-Q-211: (a) the knee shift a_Ug1 = 0.03 matches 3*F_TRZ^2 exactly -
-primitive origin confirmation. (b) The CPL running w(a)=-1+Ug4 shares
-PAPER_209's Ug4 running-vacuum discriminator (Q-205) - one canonical
-surface or per-paper? Appendix boilerplate drift (VDS 1.894, kg/m^3,
+Q-212: (a) the resonance couplings 0.1 / 0.03 = F_TRZ / 3*F_TRZ^2 -
+primitive origin confirmation. (b) The R(t) worked examples state
+cos(omega*t) = -0.9455, but the shown omega*t products (~12.5 / ~9.36
+rad) give cos = +0.9998 / -0.9978; the t_n phase term inside the cos
+argument is unshown. Appendix boilerplate drift (VDS 1.894, kg/m^3,
 beta_i) auto-corrected per charter.
 
-Gate: 1412/0. Registry 491 rows / 1045 edges / 219 ledgers (measured).
-Campaign: 219/2,255. Next: PAPER_216.
+Gate: 1418/0. Registry 493 rows / 1049 edges / 220 ledgers (measured).
+Campaign: 220/2,255. Next: PAPER_217.
