@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.170.0"
+VERSION = "0.171.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8898,5 +8898,49 @@ def _paper_167(dataset):
         'formula': 'Ug4(225 Msun)*(1+f_fb) + g_pert(M_DM/M=5, drho/rho=0.5); M_gap = D^4/(hbar c)^3*V',
         'source': 'PAPER_167',
         'residual_pct': abs((5e51 + 3e51) - 8e51) / 8e51 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_168')
+def _paper_168(dataset):
+    """MUGE 3D simulation entity framework (S47, sec 2.3).
+
+    Architecture paper: 7-system visualization engine
+    (OpenGL/GLFW, per-system archives, plugin DLLs, Perlin
+    terrain with y = log10|g_MUGE|*scale, MicroTeX overlay)
+    - the Tier 3 VR/VM gateway for Tier 2 UQFF output.
+    PHYSICS CONTENT: header F_U = sum(Ugi) + Um + UA - Ubi
+    with the EXPLICIT MINUS on buoyancy - consistent with
+    the predecessor F_U master convention (negative-
+    buoyancy-in-sum, PAPER_2152 provenance echo); g_UQFF =
+    g_MUGE*(1 - SSq*Ubi/F_U), correction = 1.62e-4 with
+    158's footer ratio. Overlay values cross-check EXACT
+    against 158's SGR row (1.78e39/1.66e45) and 157's Sun
+    F_U (-2.06e59) - the fingerprint values are propagated
+    consistently.
+    SCALE-TABLE DEFECTS (Q-164): "13 orders of magnitude"
+    - actual size span ~23 orders (scale factors span 16);
+    entity scale law is linear-in-ly for Tapestry/West/
+    Pillars but breaks 1e6x for Rings (1 Gly -> 1000) and
+    Student (Hubble -> 1e13) - piecewise-compressed with
+    no stated law.
+    """
+    return {
+        'value': {
+            'domain': '2.3 (3D entity framework, thread 7f9068)',
+            'n_systems': 7,
+            'fu_sign_convention': 'sum(Ugi) + Um + UA - Ubi (minus-buoyancy, predecessor-consistent)',
+            'g_uqff_correction': SSQ * 2.85e-4,              # 1.62e-4
+            'overlay_crosscheck': 'g_comp 1.78e39 / g_res 1.66e45 / F_U -2.06e59 = 158/157 values',
+            'size_span_orders': 22.9,                        # paper claims 13
+            'scale_factor_span_orders': 16.0,
+            'scale_law_break': 'linear-in-ly (3 rows) breaks 1e6x at Rings, Student',
+            'terrain_map': 'y = log10|g_MUGE|*scale',
+            'tier': 'Tier 3 VR/VM gateway',
+        },
+        'formula': 'g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U); F_U = sum(Ugi)+Um+UA-Ubi',
+        'source': 'PAPER_168',
+        'residual_pct': abs(SSQ * 2.85e-4 - 1.62e-4) / 1.62e-4 * 100,
         'status': 'OPEN_RULING',
     }

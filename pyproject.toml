@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.170.0"
-description = "UQFF Star-Magic-Program v0.170.0: PAPER_167 wired - GW231123 (real O4, 225 Msun) via Ug4 feedback + g_pert; mass bookkeeping self-consistent; F_U additive across merger EXACT; YM gap THIRD value 300 MeV joins the 3.3e19 fork; M_gap chain 1.88e-27 kg vs printed 1e-35; quantized mass-gap-BH prediction registered. Q-163. Wired 171/2255, gate 1132/0. Registry 411 rows / 878 edges / 171 ledgers (measured)."
+version = "0.171.0"
+description = "UQFF Star-Magic-Program v0.171.0: PAPER_168 wired - MUGE 3D entity framework (Tier 3 VR/VM gateway, 7 systems); F_U minus-buoyancy sign convention predecessor-consistent (2152 echo); overlay values cross-check EXACT vs 157/158; scale-table defects (13-vs-23 orders, 1e6x law break) pinned. Q-164. Wired 172/2255, gate 1138/0. Registry 413 rows / 882 edges / 172 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

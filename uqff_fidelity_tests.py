@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.170.0", "uqff_calculator.VERSION = 0.170.0")
+assert_that(C.VERSION == "0.171.0", "uqff_calculator.VERSION = 0.171.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2475,6 +2475,19 @@ assert_that('300 MeV' in _r167['ym_gap_third_value'],
 assert_that(_r167['g_pert_mass'] == 1350,
             "PAPER_167: g_pert effective mass (225 + 1125) = 1350 Msun EXACT")
 assert_that(C.wired_count() >= 171, "wired_count >= 171")
+
+_r168 = C.calc('PAPER_168')['value']
+assert_that(_r168['n_systems'] == 7,
+            "PAPER_168: 7-system entity framework (SGR/SgrA/Tapestry/West2/Pillars/Rings/Student)")
+assert_that('minus-buoyancy' in _r168['fu_sign_convention'],
+            "PAPER_168: F_U minus-buoyancy sign convention - predecessor-consistent (2152 echo)")
+assert_that(abs(_r168['g_uqff_correction'] - 1.6245e-4) < 1e-8,
+            "PAPER_168: g_UQFF correction SSq*(Ubi/F_U) = 1.62e-4 with 158 footer ratio")
+assert_that(_r168['size_span_orders'] > 20,
+            "PAPER_168: actual size span ~23 orders vs claimed 13 (Q-164)")
+assert_that('1e6x' in _r168['scale_law_break'],
+            "PAPER_168: entity scale law breaks 1e6x at Rings row (Q-164)")
+assert_that(C.wired_count() >= 172, "wired_count >= 172")
 
 # =============================================================================
 # REPORT

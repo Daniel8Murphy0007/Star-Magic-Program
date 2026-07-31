@@ -877,3 +877,7 @@ observable,gw231123_ug4_massgap,paper,PAPER_164,Osc_term law
 observable,gw231123_ug4_massgap,paper,PAPER_160,Ug4 calibration
 observable,ym_gap_third_value,paper,PAPER_167,300 MeV
 observable,ym_gap_third_value,paper,PAPER_156,YM fork family
+observable,muge_3d_entity_framework,paper,PAPER_168,Tier 3 gateway
+primitive,SSQ,observable,muge_3d_entity_framework,g_UQFF correction
+observable,muge_3d_entity_framework,paper,PAPER_157,overlay F_U value
+observable,entity_scale_defects,paper,PAPER_168,scale table

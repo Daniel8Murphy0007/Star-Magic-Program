@@ -1,29 +1,30 @@
-v0.170.0 BAND 1: PAPER_167 wired - GW231123 MASS GAP
+v0.171.0 BAND 1: PAPER_168 wired - 3D ENTITY FRAMEWORK
 
-PAPER_167 GW231123 225 Msun Merger (OPEN_RULING Q-163) -
-Session 47, thread 7f9068, sec 2.3:
-  Real LVK O4 event (Nov 2023). Mass bookkeeping is
-  self-consistent: 130 + 95 = 225 Msun, remnant 213,
-  dM_GW = 12. UQFF model: Ug4*(1+f_feedback) dominance
-  for extreme mass + g_pert with M_DM/M = 5, drho/rho =
-  0.5 (1350 Msun effective, EXACT); Osc_term per 164's
-  variable law. F_U treated ADDITIVE across the merger
-  (5e51 + 3e51 = 8e51 EXACT) - a structural choice
-  flagged for canonization or rejection. PREDICTION
-  registered as falsifiable: mass-gap BH masses
-  quantized in units of the Yang-Mills gap.
+PAPER_168 MUGE 3D Simulation Entity Framework
+(OPEN_RULING Q-164) - Session 47, thread 7f9068, sec 2.3:
+  Architecture paper: the Tier 3 VR/VM gateway. 7-system
+  entity framework (per-system archives, plugin DLLs),
+  OpenGL multi-viewport, Perlin terrain mapping physics
+  fields via y = log10|g_MUGE|*scale, MicroTeX equation
+  overlay.
 
-  PINNED FOR RULING: (a) YM GAP THIRD VALUE - Delta =
-  300 MeV joins 156's 5.2e-11 eV and the predecessor-
-  canonical 1.736 GeV (fork now spans 3.3e19; folds into
-  Q-152a); (b) chain defects - M_gap computes 1.88e-27
-  kg (glueball-scale, sensible) vs printed 1e-35 (5e8
-  off); N-glueball = 4.5e67 vs printed 1e71 (2200x
-  inconsistent with the paper's own M_gap); (c) SGR B =
-  3e11 T reappears ONE paper after 164's Chandra 2.3e10
-  "confirmation" (Q-160a evidence); SgrA* F_U reuses
-  152's cascade-inverted 1.3e100.
+  PHYSICS CONSISTENCY (the good part): the header F_U =
+  sum(Ugi) + Um + UA - Ubi carries the EXPLICIT MINUS on
+  buoyancy - matching the predecessor master-equation
+  convention (negative-buoyancy-in-sum, a PAPER_2152
+  provenance echo appearing inside the sec 2.3 thread);
+  the g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U) correction
+  evaluates to 1.62e-4 with 158's footer ratio; and the
+  LaTeX overlay values (1.78e39 / 1.66e45 / -2.06e59)
+  cross-check EXACTLY against 158's SGR row and 157's
+  Sun F_U.
 
-Q-163 queued. Gate 1,132 assertions 0 failures. Registry
-411 rows / 878 edges / 171 ledgers (measured). Wired
-171/2,255 (11 clean, 160 OPEN_RULING). Next: PAPER_168.
+  PINNED: "systems span 13 orders of magnitude" - actual
+  size span ~23 orders (scale factors span 16); the
+  entity scale law is linear-in-ly for three rows but
+  breaks by 1e6 at Rings (1 Gly -> 1000) and Student
+  (Hubble -> 1e13) with no stated compression law.
+
+Q-164 queued. Gate 1,138 assertions 0 failures. Registry
+413 rows / 882 edges / 172 ledgers (measured). Wired
+172/2,255 (11 clean, 161 OPEN_RULING). Next: PAPER_169.

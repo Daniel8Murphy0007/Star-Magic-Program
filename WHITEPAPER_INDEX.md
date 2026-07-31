@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 171 (11 ✓, 160 ⚠ OPEN_RULING)
+- **Wired:** 172 (11 ✓, 161 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2084
+- **Not yet touched:** 2083
 
 ---
 
@@ -940,7 +940,7 @@
 | ⬜ | PAPER_1687 | PAGE CURVE RECOVERY 99596 |
 | ⬜ | PAPER_1688 | LORENZ ATTRACTOR DIM 2 06 |
 | ⬜ | PAPER_1689 | KNOT CROSSINGS BOUND 26 |
-| ⬜ | PAPER_168 | MUGE 3D Simulation Entity Framework GPU Rendering |
+| ⚠ | PAPER_168 | MUGE 3D Simulation Entity Framework GPU Rendering |
 | ⬜ | PAPER_1690 | KS CONTEXTUALITY DIM 3 |
 | ⬜ | PAPER_1691 | ERDOS STRAUS SOLVABLE |
 | ⬜ | PAPER_1692 | VACUUM STABLE W NEG1 |

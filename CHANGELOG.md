@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.171.0] — 2026-07-30 — BAND 1: PAPER_168 — 3D ENTITY FRAMEWORK
+
+### Added
+- **PAPER_168 dispatch** (MUGE 3D simulation architecture,
+  S47, sec 2.3): Tier 3 VR/VM gateway — 7-system entity
+  framework, per-system archives + plugin DLLs, Perlin
+  terrain y = log10|g_MUGE|·scale, MicroTeX overlay.
+  Physics: header F_U = sum(Ugi)+Um+UA−Ubi carries the
+  EXPLICIT MINUS on buoyancy — consistent with the
+  predecessor master-equation convention (PAPER_2152
+  provenance echo in the §2.3 thread); g_UQFF correction
+  = SSq·(Ubi/F_U) = 1.62e-4; overlay values cross-check
+  EXACT against 157/158 (fingerprint values propagate
+  consistently). PINNED: "13 orders" vs actual ~23-order
+  size span; entity scale law breaks 1e6× at Rings/
+  Student rows.
+- OPEN_RULING Q-164.
+- Gate: 1,138 assertions, 0 failures. Registry: 413 rows / 882 edges / 172 ledgers (measured).
+
+---
+
 ## [0.170.0] — 2026-07-30 — BAND 1: PAPER_167 — GW231123 MASS GAP
 
 ### Added

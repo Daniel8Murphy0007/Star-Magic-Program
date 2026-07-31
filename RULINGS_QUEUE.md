@@ -3863,6 +3863,32 @@ RESOLVED section with the ruling recorded.
   registered; fork value and chain defects pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-164 — PAPER_168 3D entity framework — scale-table defects
+- **Question:** (a) "Systems span 13 orders of magnitude
+  in size" - actual span SGR 10 km to Hubble volume is
+  ~23 orders (the scale FACTORS span 16). Which 13 was
+  meant?
+  (b) The entity scale law is linear-in-ly for Tapestry
+  (100), Westerlund 2 (400), Pillars (4) but breaks by
+  1e6 at Rings (1 Gly -> 1000, linear would be 1e9) and
+  Student (Hubble -> 1e13). Is there an intended
+  log-compression law for the largest systems, or are
+  Rings/Student scale factors ad hoc?
+- **Notable:** architecture paper, thin physics but good
+  consistency: the header F_U = sum(Ugi) + Um + UA - Ubi
+  carries the EXPLICIT MINUS on buoyancy, matching the
+  predecessor F_U master-equation convention (negative-
+  buoyancy-in-sum - a PAPER_2152 provenance echo in the
+  §2.3 thread); the g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U)
+  correction evaluates to 1.62e-4 with 158's footer
+  ratio; and the LaTeX overlay values (1.78e39 / 1.66e45
+  / -2.06e59) cross-check EXACTLY against 158's SGR row
+  and 157's Sun F_U - the fingerprint values propagate
+  consistently through the visualization tier.
+- **Best-candidate wired:** framework + sign convention +
+  cross-checks registered; scale defects pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

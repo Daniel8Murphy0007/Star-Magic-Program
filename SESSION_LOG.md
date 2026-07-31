@@ -2021,3 +2021,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 171/2,255 (11 ✓, 160 ⚠). Next: PAPER_168.
 
 ---
+
+## 2026-07-30 — v0.171.0 — BAND 1: PAPER_168
+
+- PAPER_168 wired (⚠ Q-164): 3D entity framework.
+  Minus-buoyancy convention (2152 echo); overlay
+  cross-checks exact; scale-table defects pinned.
+- Campaign: 172/2,255 (11 ✓, 161 ⚠). Next: PAPER_169.
+
+---
