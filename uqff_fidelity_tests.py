@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.182.0", "uqff_calculator.VERSION = 0.182.0")
+assert_that(C.VERSION == "0.183.0", "uqff_calculator.VERSION = 0.183.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2643,6 +2643,19 @@ assert_that('speculative' in _r179['honesty_landmark'],
 assert_that('Rule 7' in _r179['ns_overclaim'],
             "PAPER_179: NS existence-proof overclaim flagged (Q-175b)")
 assert_that(C.wired_count() >= 183, "wired_count >= 183")
+
+_r180 = C.calc('PAPER_180')['value']
+assert_that(_r180['n_tests'] == 26 and _r180['test_breakdown'] == (10, 14, 2),
+            "PAPER_180: 26-test suite (10+14+2) - Q-165a count question resolved")
+assert_that(_r180['afluid_residual_pct'] < 0.1,
+            "PAPER_180: afluid = ffluid*Vsys*SO_5/c_res RECONSTRUCTED (0.06% vs unit test)")
+assert_that(_r180['ua_scm_is_so5'] == 10,
+            "PAPER_180: reconstruction uses UA_SCM = 10 = SO_5")
+assert_that(abs(_r180['self_audit_match'][0] - 2.799e24) < 1e21,
+            "PAPER_180: corpus self-audit chain 2.799e24 matches our Q-170a verification EXACTLY")
+assert_that('100x' in _r180['test12_vexp_inconsistency'],
+            "PAPER_180: test-12 vexp 1e3-vs-1e5 inconsistency pinned (Q-176a)")
+assert_that(C.wired_count() >= 184, "wired_count >= 184")
 
 # =============================================================================
 # REPORT

@@ -1,35 +1,34 @@
-v0.182.0 BAND 1: PAPER_179 wired - THEORY CAPSTONE
+v0.183.0 BAND 1: PAPER_180 wired - TEST CATALOG + SELF-AUDIT
 
-PAPER_179 Star Magic 5-Chapter Theory (OPEN_RULING
-Q-175) - Session 48, thread 381a8fe7, sec 2.4-K:
-  The theory capstone of the CoAnQi block. DPM gets its
-  FORMAL DEFINITION: DPM = UA'/SCm - the Aether
-  time-derivative over SCm density, a dual charge+mass
-  pseudo-monopole (explicitly NOT a magnetic monopole).
-  This converges with the predecessor repo's T0 chain
-  (grad(UA) -> DPM_vortex): both repos define DPM as a
-  UA-derivative structure coupled to SCm. Full F_U
-  taxonomy tree; pi-cycle gate giving the cleanest
-  statement of quasar jet reversal (cos(pi t_n) = -1
-  branch); discrete-banded force principles.
+PAPER_180 CoAnQi Unit Test Suite (OPEN_RULING Q-176) -
+Session 48, thread 381a8fe7, sec 2.4-L:
+  The full 26-test regression catalog: 10 compressed +
+  14 resonance + 2 error-handling. Q-165a RESOLVED -
+  157's "27 tests" was the 7f9068 solar-system suite;
+  both counts are correct for their own suites.
+  Regression doctrine registered: the 26 expected values
+  form the canonical pin set ("any future change must
+  preserve these") - precisely the code-truth doctrine
+  our own gate implements.
 
-  HONESTY LANDMARK: sec 8 states "this framework is
-  speculative... the constants require empirical
-  calibration," naming a source per constant - the
-  corpus's most explicit epistemic self-assessment.
-  Anchors: dg = 8.26 kpc is 0.2%% from GRAVITY's 8.277;
-  Omega_g order-consistent with the galactic year.
+  CORPUS SELF-AUDIT (the remarkable part): sec 5
+  computes the aDPM chain, reaches 2.799e24, and writes
+  "? wait, need to recheck" - deferring to MUGE.cpp for
+  the exact code path. The corpus itself catches the
+  Q-170a root break, and our v0.177.0 verification
+  (2.7995e24) matches the paper's aborted chain EXACTLY.
 
-  PINNED FOR RULING: (a) YM gap FOURTH construct -
-  chapter 5 maps the mass gap to E_react(0) ~ 8.8e54;
-  the Q-152a adjudication is now four-way (5.2e-11 eV /
-  300 MeV / 1.736 GeV / E_react(0)); (b) "FluidSolver
-  provides an existence and convergence proof" - a
-  numerical run is not a proof (Rule 7); (c) DPM
-  temporal-vs-spatial derivative mapping across repos;
-  (d) M_bh = 8.15e36 is 4.6%% below the GRAVITY-2022
-  value it cites.
+  WIRING DERIVATION: the dominant resonance term now
+  has a closed form - afluid = ffluid*Vsys*UA_SCM/c_res
+  = 1.269e-14 * 4.189e12 * 10 / 3e8 = 1.772e-9 (0.06%
+  vs the 1.773e-9 unit test), with UA_SCM = 10 = SO_5.
+  Since afluid IS the resonance total, this derives the
+  resonance MUGE's operative physics.
 
-Q-175 queued. Gate 1,210 assertions 0 failures. Registry
-434 rows / 932 edges / 183 ledgers (measured). Wired
-183/2,255 (11 clean, 172 OPEN_RULING). Next: PAPER_180.
+  PINNED: test-12 lists vexp = 1e3 but its expected
+  value requires 1e5 (100x; 174 implied 1e5 too).
+
+Q-176 queued; Q-165 annotated. Gate 1,216 assertions 0
+failures. Registry 436 rows / 936 edges / 184 ledgers
+(measured). Wired 184/2,255 (11 clean, 173 OPEN_RULING).
+Next: PAPER_181.

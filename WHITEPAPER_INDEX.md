@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 183 (11 ✓, 172 ⚠ OPEN_RULING)
+- **Wired:** 184 (11 ✓, 173 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2072
+- **Not yet touched:** 2071
 
 ---
 
@@ -1072,7 +1072,7 @@
 | ⬜ | PAPER_1807 | NGC 2014 2020 TAPESTRY BLAZING STARBIRTH LMC |
 | ⬜ | PAPER_1808 | GROSS PITAEVSKII VORTEX SIMULATION UQFF AETHER |
 | ⬜ | PAPER_1809 | AETHER SUPERFLUID DYNAMICS UNIVERSAL AETHER UA |
-| ⬜ | PAPER_180 | CoAnQi Unit Test Suite 26 Validated Functions |
+| ⚠ | PAPER_180 | CoAnQi Unit Test Suite 26 Validated Functions |
 | ⬜ | PAPER_1810 | 26TH ORDER UNIVERSAL FIELD EXPANSION F U |
 | ⬜ | PAPER_1811 | DPM CYCLES QUANTUM ANNEALING BQP EXTENSION |
 | ⬜ | PAPER_1812 | QAOA VQE CHIP ARCHITECTURE UQFF WOLFRAM 9D |

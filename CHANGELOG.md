@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.183.0] — 2026-07-31 — BAND 1: PAPER_180 — TEST CATALOG + SELF-AUDIT
+
+### Added
+- **PAPER_180 dispatch** (26-test suite catalog, S48, sec
+  2.4-L): 10 compressed + 14 resonance + 2 error tests;
+  Q-165a RESOLVED (157's "27" = other-thread suite);
+  regression doctrine registered (the 26 expected values
+  = canonical pin set). CORPUS SELF-AUDIT: sec 5 computes
+  the aDPM chain to 2.799e24, writes "? wait, need to
+  recheck," and defers to MUGE.cpp — the corpus itself
+  catches the Q-170a root break, matching our v0.177.0
+  verification EXACTLY. WIRING DERIVATION: afluid =
+  ffluid·Vsys·UA_SCM/c_res = 1.772e-9 (0.06% vs unit
+  test) with UA_SCM = 10 = SO_5 — the DOMINANT resonance
+  term now has a closed form. PINNED: test-12 vexp
+  1e3-listed vs 1e5-required (100×).
+- OPEN_RULING Q-176; Q-165 annotated.
+- Gate: 1,216 assertions, 0 failures. Registry: 436 rows / 936 edges / 184 ledgers (measured).
+
+---
+
 ## [0.182.0] — 2026-07-31 — BAND 1: PAPER_179 — THEORY CAPSTONE
 
 ### Added

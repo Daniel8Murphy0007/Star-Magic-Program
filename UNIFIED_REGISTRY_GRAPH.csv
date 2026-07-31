@@ -931,3 +931,7 @@ observable,star_magic_5ch_theory,paper,PAPER_176,SCm chapter 2
 primitive,SSQ,observable,star_magic_5ch_theory,Jeans header
 observable,ym_fourth_ns_overclaim,paper,PAPER_179,4th YM + overclaim
 observable,ym_fourth_ns_overclaim,paper,PAPER_156,YM fork family
+observable,coanqi_26test_catalog,paper,PAPER_180,26-test set
+observable,afluid_formula_reconstructed,paper,PAPER_180,closed form
+primitive,SO_5,observable,afluid_formula_reconstructed,UA_SCM = 10
+observable,afluid_formula_reconstructed,paper,PAPER_174,dominant term

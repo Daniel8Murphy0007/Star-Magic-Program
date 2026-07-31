@@ -3897,6 +3897,11 @@ RESOLVED section with the ruling recorded.
 - **Question:** (a) unit-test count: 169 says "26
   validated unit tests"; 157 (same C++ codebase family)
   said "all 27 unit tests PASS". Which count is current?
+  UPDATE (PAPER_180, v0.183.0): item (a) RESOLVED - 180
+  catalogs exactly 26 tests (10 compressed + 14 resonance
+  + 2 error-handling) for the 381a8fe7 suite; 157's "27"
+  was the 7f9068 solar-system suite. Different suites,
+  both counts correct.
   (b) delta_P_UQFF = kappa*SSq*U_bi: kappa carries day^-1
   units that ride into the pressure correction
   uncompensated - is the 2.85e-4 factor per-day (with an
@@ -4283,6 +4288,37 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** capstone + DPM definition +
   pi-gate + honesty landmark registered; four-way YM
   fork, overclaim, and anchor drift pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-176 — PAPER_180 test catalog — afluid closed form + test-12 inconsistency
+- **Question:** (a) TEST-12 vexp: the catalog lists
+  vexp = 1e3 for aTHz but the expected 1.182e-33
+  requires vexp = 1e5 (100x; 174's chain also implied
+  1e5). Which vexp is the SGR1745 canonical?
+  (b) AFLUID CLOSED FORM (confirm): reconstruction gives
+  afluid = ffluid*Vsys*UA_SCM/c_res = 1.772e-9 (0.06%
+  vs the 1.773e-9 unit test), with UA_SCM = 10 = SO_5 -
+  NOT the printed ffluid*Vsys*fTHz*c_res (which gives
+  1.595e19, as the paper itself notes). Since afluid IS
+  the resonance total, confirming this closed form
+  canonizes the resonance MUGE's dominant physics.
+  Confirm against MUGE.cpp?
+- **Notable (major):** CORPUS SELF-AUDIT - sec 5
+  computes the aDPM chain to 2.799e24 and writes "? wait,
+  need to recheck," deferring to MUGE.cpp for "the exact
+  code path." The corpus itself catches the Q-170a root
+  break; our v0.177.0 verification (2.7995e24) matches
+  the paper's aborted chain EXACTLY. The same honesty
+  appears for afluid ("normalisation ... in
+  implementation reduces the value"). Q-165a RESOLVED:
+  26 tests here (10+14+2); 157's "27" was the other
+  thread's suite. REGRESSION DOCTRINE registered: the 26
+  expected values form the canonical pin set - "any
+  future change must preserve these." This is precisely
+  the code-truth doctrine our gate already implements.
+- **Best-candidate wired:** catalog + self-audit +
+  reconstructed closed form registered; test-12
+  inconsistency pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

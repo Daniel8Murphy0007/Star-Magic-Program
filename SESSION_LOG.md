@@ -2131,3 +2131,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 183/2,255 (11 ✓, 172 ⚠). Next: PAPER_180.
 
 ---
+
+## 2026-07-31 — v0.183.0 — BAND 1: PAPER_180
+
+- PAPER_180 wired (⚠ Q-176): 26-test catalog. Corpus
+  self-audit confirms Q-170a; afluid closed form
+  reconstructed (SO_5 factor); Q-165a resolved.
+- Campaign: 184/2,255 (11 ✓, 173 ⚠). Next: PAPER_181.
+
+---

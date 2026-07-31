@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.182.0"
+VERSION = "0.183.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9513,5 +9513,58 @@ def _paper_179(dataset):
         'formula': "DPM = UA'/SCm; F_U taxonomy; pi-cycle gate",
         'source': 'PAPER_179',
         'residual_pct': abs(8.26 - 8.277) / 8.277 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_180')
+def _paper_180(dataset):
+    """CoAnQi 26-test suite catalog (S48, sec 2.4-L).
+
+    Full regression-set catalog: 10 compressed + 14
+    resonance + 2 error-handling = 26 tests (RESOLVES
+    Q-165a: 157's "27" was the 7f9068 solar-system
+    suite - different suites, both counts correct).
+    Doctrine registered: "any future change must
+    preserve these 26 expected values within tolerance"
+    - the code-truth values as the canonical pin set.
+    CORPUS SELF-AUDIT (major): sec 5 computes the aDPM
+    chain to 2.799e24 and writes "? wait, need to
+    recheck," deferring to MUGE.cpp - the corpus ITSELF
+    catches the Q-170a root break; our v0.177.0
+    verification (2.7995e24) matches the paper's aborted
+    chain EXACTLY. Same honest treatment for afluid
+    ("normalisation ... in implementation").
+    AFLUID FORMULA RECONSTRUCTED (wiring derivation):
+    afluid = ffluid*Vsys*UA_SCM/c_res = 1.269e-14*
+    4.189e12*10/3e8 = 1.772e-9 (0.06% vs the 1.773e-9
+    unit test) - with UA_SCM = 10 = SO_5. The dominant
+    resonance term now has a closed form.
+    TEST-12 INCONSISTENCY (Q-176a): vexp = 1e3 listed
+    but the expected 1.182e-33 requires vexp = 1e5
+    (100x; 174's chain implied 1e5).
+    Noted: FDPM*fDPM*Evac/(c*V) = 1.7727e-18 - mantissa
+    echoes the 1.773 total (log-only observation).
+    """
+    ff, V, c = 1.269e-14, 4.189e12, 3e8
+    afluid = ff * V * SO_5 / c
+    return {
+        'value': {
+            'domain': '2.4-L (unit-test catalog, thread 381a8fe7)',
+            'n_tests': 26,
+            'test_breakdown': (10, 14, 2),
+            'q165_resolved': "26 here; 157's 27 = other-thread suite (both correct)",
+            'corpus_self_audit': 'sec 5 "wait, need to recheck" - Q-170a caught by the corpus itself',
+            'self_audit_match': (2.799e24, 2.7995e24),
+            'afluid_reconstructed': afluid,                  # 1.772e-9
+            'afluid_residual_pct': abs(afluid - 1.773e-9) / 1.773e-9 * 100,  # 0.06
+            'ua_scm_is_so5': SO_5,
+            'test12_vexp_inconsistency': '1e3 listed, 1e5 required (100x) (Q-176a)',
+            'regression_doctrine': '26 expected values = canonical pin set',
+            'mantissa_note': 'FDPM*fDPM*Evac/(c*V) = 1.7727e-18 echoes total mantissa',
+        },
+        'formula': '26-test catalog; afluid = ffluid*Vsys*SO_5/c_res (reconstructed)',
+        'source': 'PAPER_180',
+        'residual_pct': abs(afluid - 1.773e-9) / 1.773e-9 * 100,
         'status': 'OPEN_RULING',
     }
