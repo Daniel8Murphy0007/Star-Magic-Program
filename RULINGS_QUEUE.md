@@ -4739,6 +4739,28 @@ RESOLVED section with the ruling recorded.
   as the umbrella canonical-F_U question.
 - **Daniel's ruling:** (pending)
 
+### Q-190 — PAPER_194 Graphics3D mesh I/O — minimal entry
+- **Question:** none of substance - pure Graphics3D
+  implementation reference (Assimp/VTK mesh I/O). The
+  only carry-over is Q-174a: 194's abstract says the
+  procedural landscape uses "Perlin noise" (matching
+  168) while 178 implements an octaved sine-cosine
+  heightmap - the doc/impl mismatch persists across
+  three papers now (168 Perlin / 178 sine / 194 Perlin).
+  Cosmetic doc-fix.
+- **Notable:** sound graphics engineering - proper
+  vertexOffset accumulation across multiple meshes,
+  default up-normal and zero-UV fallbacks, correct
+  triangulate-then-index flow. Eight operations
+  cataloged (loadOBJ/exportToSTL/exportOBJ/loadTexture/
+  landscape/extrude/booleanUnion/LaTeX-texture). No
+  numeric physics beyond the standard headers. The
+  CoAnQi/S-C software documentation block continues
+  through sec 2.5.
+- **Best-candidate wired:** Graphics3D reference
+  registered.
+- **Daniel's ruling:** (pending - or fold into batch)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

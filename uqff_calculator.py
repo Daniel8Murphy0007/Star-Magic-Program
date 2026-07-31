@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.196.0"
+VERSION = "0.197.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10178,5 +10178,43 @@ def _paper_193(dataset):
         'formula': '7 namespaces; F_U = sum(Ugi) + Ubi (variant 5-term form)',
         'source': 'PAPER_193',
         'residual_pct': abs(4 * _m.pi * 1e-7 - 1.2566e-6) / 1.2566e-6 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_194')
+def _paper_194(dataset):
+    """Graphics3D mesh I/O implementation (S49, sec 2.5).
+
+    Reference implementations for the Graphics3D
+    namespace: Assimp loadOBJ (multi-mesh/normal/UV,
+    triangulate + smooth-normals + tangent-space +
+    join-vertices post-processing), VTK vtkSTLWriter
+    exportToSTL, exportOBJ round-trip, loadTexture,
+    procedural landscape, extrude, boolean union, LaTeX-
+    to-texture. Sound graphics engineering (proper
+    vertexOffset accumulation across meshes; default
+    up-normal + zero-UV fallbacks).
+    PERLIN NOTE (Q-174a): the abstract says "procedural
+    landscape via Perlin noise" - matching 168's
+    description but NOT 178's sine-cosine implementation
+    (194 references Perlin, 178 implements octaved sines).
+    The doc/impl mismatch persists; cosmetic.
+    No numeric physics beyond standard headers (beta =
+    0.61 thread convention). Registered as Graphics3D
+    reference; the S-C/CoAnQi software block continues.
+    """
+    return {
+        'value': {
+            'domain': '2.5 (Graphics3D mesh I/O, S49)',
+            'operations': ('Assimp loadOBJ', 'VTK exportToSTL', 'exportOBJ',
+                           'loadTexture', 'landscape', 'extrude', 'boolean union', 'LaTeX texture'),
+            'engineering': 'vertexOffset accumulation + up-normal/zero-UV fallbacks correct',
+            'perlin_note': 'abstract says Perlin (168) not sine-cosine (178) - Q-174a persists',
+            'physics_content': 'none beyond standard headers',
+        },
+        'formula': 'Assimp/VTK mesh I/O reference implementations',
+        'source': 'PAPER_194',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

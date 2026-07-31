@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.197.0] — 2026-07-31 — BAND 1: PAPER_194 — GRAPHICS3D MESH I/O
+
+### Added
+- **PAPER_194 dispatch** (Assimp loadOBJ / VTK
+  exportToSTL, S49, sec 2.5): Graphics3D mesh-I/O
+  reference (8 operations); sound engineering
+  (vertexOffset accumulation, up-normal/zero-UV
+  fallbacks). Perlin-vs-sine landscape doc/impl mismatch
+  persists (168 Perlin / 178 sine / 194 Perlin). No
+  numeric physics beyond headers.
+- OPEN_RULING Q-190 (minimal).
+- Gate: 1,288 assertions, 0 failures. Registry: 457 rows / 978 edges / 198 ledgers (measured).
+
+---
+
 ## [0.196.0] — 2026-07-31 — BAND 1: PAPER_193 — 7-NAMESPACE ARCHITECTURE
 
 ### Added

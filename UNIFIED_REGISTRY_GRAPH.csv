@@ -975,3 +975,5 @@ observable,sc_collaboration_protocol,paper,PAPER_189,S-C component
 observable,coanqi_7namespace_arch,paper,PAPER_193,7 namespaces
 observable,coanqi_7namespace_arch,paper,PAPER_172,F_U term divergence
 observable,coanqi_7namespace_arch,paper,PAPER_171,Ug form variance
+observable,graphics3d_mesh_io,paper,PAPER_194,mesh I/O
+observable,graphics3d_mesh_io,paper,PAPER_178,Perlin mismatch

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.196.0", "uqff_calculator.VERSION = 0.196.0")
+assert_that(C.VERSION == "0.197.0", "uqff_calculator.VERSION = 0.197.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2807,6 +2807,13 @@ assert_that(_r193['fu_term_count_here'] == 5,
 assert_that('variant' in _r193['canonical_field_set_needed'],
             "PAPER_193: architecture-doc field equations are a variant set - canonical set needed")
 assert_that(C.wired_count() >= 197, "wired_count >= 197")
+
+_r194 = C.calc('PAPER_194')['value']
+assert_that(len(_r194['operations']) == 8,
+            "PAPER_194: 8 Graphics3D mesh-I/O operations cataloged")
+assert_that('Q-174a persists' in _r194['perlin_note'],
+            "PAPER_194: Perlin-vs-sine landscape doc/impl mismatch persists (Q-174a)")
+assert_that(C.wired_count() >= 198, "wired_count >= 198")
 
 # =============================================================================
 # REPORT

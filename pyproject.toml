@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.196.0"
-description = "UQFF Star-Magic-Program v0.196.0: PAPER_193 wired - CoAnQi 7-namespace modular architecture; constants EXACT; FIELD-EQUATION FORM DIVERGENCE - namespace docs restate Ug1/Ug2/Ug4 in variant forms and F_U = sum(Ugi)+Ubi (5 terms) drops Um+tr(A) vs 172 ten-term; umbrella canonical-F_U ruling proposed. Q-189. Wired 197/2255, gate 1285/0. Registry 456 rows / 976 edges / 197 ledgers (measured)."
+version = "0.197.0"
+description = "UQFF Star-Magic-Program v0.197.0: PAPER_194 wired - Graphics3D mesh I/O (Assimp loadOBJ / VTK exportToSTL + 6 ops); sound engineering; Perlin-vs-sine landscape doc/impl mismatch persists; infrastructure only. Q-190 minimal. Wired 198/2255, gate 1288/0. Registry 457 rows / 978 edges / 198 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

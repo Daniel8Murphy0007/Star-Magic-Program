@@ -1,26 +1,28 @@
-v0.196.0 BAND 1: PAPER_193 wired - 7-NAMESPACE ARCHITECTURE
+v0.197.0 BAND 1: PAPER_194 wired - GRAPHICS3D MESH I/O
 
-PAPER_193 CoAnQi Namespaced Modular C++ Architecture
-(OPEN_RULING Q-189) - Session 49, sec 2.5:
-  The codebase refactored into 7 sub-namespaces -
-  Physics, MUGE, Fluid, Testing, Graphics3D, Plugins,
-  Utils - a clean concern-separation view of 169's
-  6-tier system. Constants EXACT (mu0 = 4pi*1e-7 =
-  1.2566e-6; PI to 14 digits; G/c standard).
+PAPER_194 Assimp LoadOBJ and VTK ExportToSTL
+(OPEN_RULING Q-190, minimal) - Session 49, sec 2.5:
+  Graphics3D namespace mesh-I/O reference: Assimp
+  loadOBJ (multi-mesh, triangulate/smooth-normals/
+  tangent-space/join-vertices post-processing), VTK
+  vtkSTLWriter exportToSTL, exportOBJ round-trip,
+  loadTexture, procedural landscape, extrude, boolean
+  union, LaTeX-to-texture - eight operations.
 
-  FIELD-EQUATION FORM DIVERGENCE (the substantive find):
-  the namespace documentation restates the UQFF field
-  equations in DIFFERENT forms than the operational
-  papers - Ug1 = k1*mu_s^2/r^3 (squared moment, 1/r^3)
-  vs 171's k1*mu_s*grad(M/r); Ug2 and Ug4 likewise
-  variant; and F_U = sum(Ugi) + Ubi here is FIVE terms,
-  dropping Um and tr(A_mu_nu) that appear in 172's
-  ten-term compute_FU. I've flagged this as the UMBRELLA
-  canonical-F_U ruling - it subsumes the outstanding Ubi
-  four-form (Q-168a) and Ug4i four-form (Q-142b)
-  questions into a single "declare the canonical field
-  set" decision.
+  Sound graphics engineering: proper vertexOffset
+  accumulation across meshes, default up-normal and
+  zero-UV fallbacks, correct triangulate-then-index
+  flow. The only carry-over defect is Q-174a: the
+  abstract says the landscape uses "Perlin noise"
+  (matching 168) while 178 implements octaved
+  sine-cosine - the doc/impl mismatch now spans three
+  papers. Cosmetic.
 
-Q-189 queued. Gate 1,285 assertions 0 failures. Registry
-456 rows / 976 edges / 197 ledgers (measured). Wired
-197/2,255 (11 clean, 186 OPEN_RULING). Next: PAPER_194.
+  No numeric physics beyond the standard headers.
+  Thinnest-tier wire; the CoAnQi/S-C software block
+  continues through sec 2.5.
+
+Q-190 queued (minimal). Gate 1,288 assertions 0
+failures. Registry 457 rows / 978 edges / 198 ledgers
+(measured). Wired 198/2,255 (11 clean, 187 OPEN_RULING).
+Next: PAPER_195.

@@ -2257,3 +2257,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 197/2,255 (11 ✓, 186 ⚠). Next: PAPER_194.
 
 ---
+
+## 2026-07-31 — v0.197.0 — BAND 1: PAPER_194
+
+- PAPER_194 wired (⚠ Q-190 minimal): Graphics3D mesh I/O.
+  Infrastructure; Perlin mismatch persists.
+- Campaign: 198/2,255 (11 ✓, 187 ⚠). Next: PAPER_195.
+
+---
