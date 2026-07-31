@@ -941,3 +941,7 @@ observable,uqff_variable_dictionary,paper,PAPER_182,dictionary
 primitive,BETA_I,observable,uqff_variable_dictionary,0.603 comparison
 observable,dictionary_forks_slips,paper,PAPER_182,forks + slips
 observable,uqff_variable_dictionary,paper,PAPER_172,wind couplings confirmed
+observable,ym_hamiltonian_decomp,paper,PAPER_183,3-term H
+observable,ym_fifth_transposition_propagation,paper,PAPER_183,5th construct
+observable,ym_fifth_transposition_propagation,paper,PAPER_182,transposition source
+observable,ym_fifth_transposition_propagation,paper,PAPER_156,YM fork family

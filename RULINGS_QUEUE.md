@@ -4383,6 +4383,42 @@ RESOLVED section with the ruling recorded.
   registered; new forks and the layered slips pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-179 — PAPER_183 YM Hamiltonian — fifth construct + transposition propagation
+- **Question:** (a) YM FIFTH CONSTRUCT: m_gap^2 =
+  2*gamma*H_SCm(0)/v_SCm^2 joins the gap-fork family
+  (roadmap 5.2e-11 eV / 300 MeV / predecessor 1.736 GeV
+  / E_react(0) / now this) - AND its own chain breaks:
+  2*5e-5*4.37e30/(0.99c)^2 = 4.95e9, printed 4.87e13
+  (1e4). The five-way Q-152a adjudication is the
+  corpus's largest outstanding fork.
+  (b) TRANSPOSITION PROPAGATION (forensically
+  important): H_SCm printed 4.37e30 - the mantissa
+  4.375 arises EXACTLY from 182's transposed v_SCm =
+  2.958e8 (the correct 2.968e8 gives 4.40), with a 10x
+  exponent slip on top. 182's digit transposition is
+  load-bearing ACROSS papers - evidence the S49 papers
+  were derived from a common (already-transposed)
+  source table rather than independently.
+  (c) UNRECONSTRUCTABLE: H_Ug3 = 3.14e22 (pi mantissa;
+  requires B = 2.09e8 T matching no SGR value - assigned?);
+  H_UA printed 4.05e-30 vs chain 4.5e-37 (9e6); Gamma =
+  alpha + gamma + kappa mixes s^-1 with day^-1; footer
+  U_bi arithmetic garbled.
+- **Notable:** the STRUCTURAL mapping is the paper's
+  real content: Ug3 strings = SU(2) kinetic sector, SCm
+  = Higgs-like condensate, UA tensor = U(1) conformal
+  vacuum, pi-cycle quantization as Bohr-Sommerfeld
+  analogy - and the mass-gap claim is honestly hedged
+  "at the classical level" (not claiming the quantum
+  Millennium requirement). The "8 orders" SCm-dominance
+  claim is internally consistent with the printed
+  values (1.4e8) and physically motivated by the HTSC
+  hierarchy.
+- **Best-candidate wired:** Hamiltonian decomposition +
+  gauge mapping + hedged claim registered; fifth
+  construct, propagation, and breaks pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.185.0"
+VERSION = "0.186.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9670,5 +9670,60 @@ def _paper_182(dataset):
         'formula': 'canonical variable dictionary; E_react = rho_SCm*v^2/rho_A*e^-kt',
         'source': 'PAPER_182',
         'residual_pct': abs(0.603 - BETA_I) / BETA_I * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_183')
+def _paper_183(dataset):
+    """Yang-Mills Hamiltonian via SCm/UA (S49, sec 2.5).
+
+    H_UQFF = H_Ug3 + H_SCm + H_UA decomposition mapping
+    UQFF to an SU(2)xU(1) effective gauge theory: Ug3
+    strings = SU(2) kinetic term (B^2/2mu0), SCm = Higgs-
+    like condensate, UA tensor = U(1) conformal vacuum;
+    pi-cycle quantization H(t_n) = H(0)*cos(pi t_n)*
+    e^-Gamma*t (Bohr-Sommerfeld analogy, honest); hedged
+    claim "at the classical level" for the gap.
+    TRANSPOSITION PROPAGATES (Q-179b): H_SCm printed
+    4.37e30 - the mantissa 4.375 comes EXACTLY from
+    182's transposed v = 2.958e8 (correct v gives 4.40),
+    with a 10x exponent slip on top (chain = 4.37e31).
+    182's digit transposition is load-bearing ACROSS
+    papers.
+    FIFTH YM CONSTRUCT (Q-179a): m_gap^2 = 2*gamma*
+    H_SCm(0)/v^2 - chain evaluates to 4.95e9, printed
+    4.87e13 (1e4 break); joins the four prior gap
+    constructs (fork now FIVE-way).
+    UNRECONSTRUCTABLE VALUES (Q-179c): H_Ug3 = 3.14e22
+    (pi mantissa; needs B = 2.09e8 T matching no SGR
+    value); H_UA printed 4.05e-30 vs chain 4.5e-37
+    (9e6). INTERNAL consistency note: the "8 orders"
+    dominance claim IS consistent with the printed
+    values (1.4e8). Gamma = alpha + gamma + kappa mixes
+    s^-1 and day^-1 units. Footer U_bi arithmetic
+    garbled (uses 5.7e-4 for kappa*SSq and unsquared R).
+    """
+    import math as _m
+    mu0 = 4 * _m.pi * 1e-7
+    h_chain_transposed = 1e15 * (2.958e8)**2 / 2
+    return {
+        'value': {
+            'domain': '2.5 (YM Hamiltonian, S49)',
+            'decomposition': 'H = H_Ug3 (SU(2)) + H_SCm (Higgs-like) + H_UA (U(1))',
+            'h_scm_printed': 4.37e30,
+            'h_scm_chain_transposed_v': h_chain_transposed,  # 4.375e31
+            'transposition_propagates': 'mantissa 4.375 = 182 transposed v; 10x exp slip',
+            'm_gap_chain': 2 * 5e-5 * 4.37e30 / (0.99 * 3e8)**2,  # 4.95e9
+            'm_gap_printed': 4.87e13,                        # 1e4 break
+            'ym_fifth_construct': 'm_gap^2 = 2*gamma*H/v^2 - fork now FIVE-way',
+            'h_ug3_pi_mantissa': 3.14e22,
+            'h_ua_break': (1e-22 * 1e-23 * (3e4)**2 / 2, 4.05e-30),  # 9e6
+            'dominance_internal_ok': 4.37e30 / 3.14e22,      # 1.4e8 ('8 orders' consistent)
+            'hedge': 'gap claim hedged "at the classical level" (honest)',
+        },
+        'formula': 'H_UQFF = k3*B^2/2mu0*cos + rho*v^2/2*e^-gt + eta*rho_A*v_UA^2/2*cos',
+        'source': 'PAPER_183',
+        'residual_pct': abs(h_chain_transposed / 10 - 4.37e30) / 4.37e30 * 100,
         'status': 'OPEN_RULING',
     }

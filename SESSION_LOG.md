@@ -2159,3 +2159,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 186/2,255 (11 ✓, 175 ⚠). Next: PAPER_183.
 
 ---
+
+## 2026-07-31 — v0.186.0 — BAND 1: PAPER_183
+
+- PAPER_183 wired (⚠ Q-179): YM Hamiltonian. Fifth gap
+  construct; 182 transposition propagates cross-paper
+  (common-source evidence); gauge mapping registered.
+- Campaign: 187/2,255 (11 ✓, 176 ⚠). Next: PAPER_184.
+
+---

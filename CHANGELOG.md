@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.186.0] — 2026-07-31 — BAND 1: PAPER_183 — YM HAMILTONIAN
+
+### Added
+- **PAPER_183 dispatch** (YM Hamiltonian via SCm/UA, S49,
+  sec 2.5): H = H_Ug3 + H_SCm + H_UA mapping UQFF to an
+  SU(2)×U(1) effective gauge theory (strings = SU(2)
+  kinetic, SCm = Higgs-like condensate, UA = U(1)
+  conformal vacuum); pi-cycle Bohr-Sommerfeld
+  quantization; gap claim HONESTLY hedged "at the
+  classical level"; "8 orders" dominance internally
+  consistent. PINNED: FIFTH YM gap construct (m_gap² =
+  2γH/v², with its own 1e4 chain break — Q-152a now
+  five-way); TRANSPOSITION PROPAGATION — H_SCm's
+  mantissa 4.375 arises exactly from 182's transposed
+  v = 2.958e8 (common-source evidence for the S49
+  papers), plus a 10× exponent slip; H_Ug3 = 3.14e22
+  pi-mantissa unreconstructable; H_UA 9e6 off chain;
+  Gamma unit mixing.
+- OPEN_RULING Q-179.
+- Gate: 1,234 assertions, 0 failures. Registry: 442 rows / 946 edges / 187 ledgers (measured).
+
+---
+
 ## [0.185.0] — 2026-07-31 — BAND 1: PAPER_182 — VARIABLE DICTIONARY
 
 ### Added

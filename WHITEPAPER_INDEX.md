@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 186 (11 ✓, 175 ⚠ OPEN_RULING)
+- **Wired:** 187 (11 ✓, 176 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2069
+- **Not yet touched:** 2068
 
 ---
 
@@ -1105,7 +1105,7 @@
 | ⬜ | PAPER_1837 | FRB DISPERSION BARYON ACCOUNTING UQFF |
 | ⬜ | PAPER_1838 | AMATERASU UHECR UQFF |
 | ⬜ | PAPER_1839 | CONSCIOUSNESS IIT PHI UQFF |
-| ⬜ | PAPER_183 | Yang Mills Hamiltonian SCm UA Framework |
+| ⚠ | PAPER_183 | Yang Mills Hamiltonian SCm UA Framework |
 | ⬜ | PAPER_1840 | DM DIRECT DETECTION UQFF |
 | ⬜ | PAPER_1841 | SGR A STAR PHOTON RING UQFF |
 | ⬜ | PAPER_1842 | HIGGS SELF COUPLING LAMBDA H UQFF |

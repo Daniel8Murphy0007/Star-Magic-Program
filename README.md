@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.185.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.185.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.186.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.186.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1228%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-186-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1234%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-187-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.185.0 wiring campaign live**
+**UQFF systematic rebuild — v0.186.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.185.0)
+## What is currently shipped (v0.186.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 186 / 2,255** (11 ✓ · 175 ⚠ OPEN_RULING · 178 rulings queued) — variable dictionary resolves forks (182)
+**Wired so far: 187 / 2,255** (11 ✓ · 176 ⚠ OPEN_RULING · 179 rulings queued) — YM 5-way fork; transposition propagates (183)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -245,6 +245,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_180 | 26-Test Catalog | afluid = ffluid·V·SO₅/c derived; corpus self-audit; Q-176 |
 | PAPER_181 | H-Magic Labelings | §2.5 opens; name etymology; ASD 4-vs-8 defect; Q-177 |
 | PAPER_182 | Variable Dictionary | β 0.603; Bcrit 3rd vote; layered slips; U_UA fork; Q-178 |
+| PAPER_183 | YM Hamiltonian | SU(2)×U(1) map; 5th gap construct; transposition propagates; Q-179 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -255,7 +256,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
   `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (1,228 assertions), locking every
+- `uqff_fidelity_tests.py` — 9-block gate (1,234 assertions), locking every
   primitive identity + every wired paper's stated values. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
@@ -461,7 +462,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.182.0 | Band 1: PAPER_179 | 183 |
 | v0.183.0 | Band 1: PAPER_180 | 184 |
 | v0.184.0 | Band 1: PAPER_181 | 185 |
-| **v0.185.0** ← current | Band 1: PAPER_182 | 186 |
+| v0.185.0 | Band 1: PAPER_182 | 186 |
+| **v0.186.0** ← current | Band 1: PAPER_183 | 187 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

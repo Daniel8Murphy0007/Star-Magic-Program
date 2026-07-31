@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.185.0", "uqff_calculator.VERSION = 0.185.0")
+assert_that(C.VERSION == "0.186.0", "uqff_calculator.VERSION = 0.186.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2682,6 +2682,19 @@ assert_that(_r182['u_ua_fork'] == (1e-4, 1.0),
 assert_that(_r182['k_constants_confirmed']['k4'] == 2.0,
             "PAPER_182: k1-k4 source-doc set confirmed by the dictionary")
 assert_that(C.wired_count() >= 186, "wired_count >= 186")
+
+_r183 = C.calc('PAPER_183')['value']
+assert_that(abs(_r183['h_scm_chain_transposed_v'] / 10 - 4.37e30) / 4.37e30 < 0.01,
+            "PAPER_183: H_SCm mantissa = 182's TRANSPOSED v chain / 10 - transposition propagates (Q-179b)")
+assert_that(9000 < _r183['m_gap_printed'] / _r183['m_gap_chain'] < 11000,
+            "PAPER_183: m_gap chain 4.95e9 vs printed 4.87e13 - 1e4 break; FIFTH YM construct (Q-179a)")
+assert_that(8e6 < _r183['h_ua_break'][1] / _r183['h_ua_break'][0] < 1e7,
+            "PAPER_183: H_UA printed 9e6 x its own chain (Q-179c)")
+assert_that(1.3e8 < _r183['dominance_internal_ok'] < 1.5e8,
+            "PAPER_183: '8 orders' dominance claim internally consistent with printed values")
+assert_that('classical level' in _r183['hedge'],
+            "PAPER_183: mass-gap claim honestly hedged to classical level")
+assert_that(C.wired_count() >= 187, "wired_count >= 187")
 
 # =============================================================================
 # REPORT

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.185.0"
-description = "UQFF Star-Magic-Program v0.185.0: PAPER_182 wired - canonical variable dictionary RESOLVES forks (beta 0.603 over 0.61; Bcrit 4.4e13 3rd vote; two wind couplings confirmed; H_SCm 0.99; rho_A 1e-23) and surfaces new ones (U_UA 1e4 fork, normalization forks, k_eta 1e-113); LAYERED SLIPS: load-bearing v transposition + 1e9/1e18 exponent slips. Q-178. Wired 186/2255, gate 1228/0. Registry 440 rows / 942 edges / 186 ledgers (measured)."
+version = "0.186.0"
+description = "UQFF Star-Magic-Program v0.186.0: PAPER_183 wired - YM Hamiltonian H = H_Ug3 + H_SCm + H_UA mapping UQFF to SU(2)xU(1); gap claim hedged classical; FIFTH YM construct (fork five-way); 182 TRANSPOSITION PROPAGATES (H_SCm mantissa = transposed-v chain) - common-source evidence; H_Ug3 pi-mantissa unreconstructable. Q-179. Wired 187/2255, gate 1234/0. Registry 442 rows / 946 edges / 187 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
