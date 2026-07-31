@@ -9,6 +9,25 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-215 — PAPER_219 — M16 section-2 worked-example arithmetic errors
+- **Question:** PAPER_219 sec 2 has the same worked-example drift family as
+  PAPER_218 (Q-214) — the structural dual form (1+M_sf)*g_base - E_rad and the
+  physical duality are correct, but the numbers are off:
+  (a) E_rad stated 2.71e-22 J/m^3, but L_UV/(4*pi*r^2*c) with L_UV=1.5e31 W and
+  r=5.4e16 m gives 1.37e-12 (~10 OOM off);
+  (b) g_base stated 5.00e-50 m/s^2, but G*M/r^2 = 6.674e-11*2.19e33/(5.4e16)^2 =
+  5.01e-11 (~39 OOM off, same exponent-transcription pattern as Q-214);
+  (c) the M_sf = SFR/M_tot * t_dyn formula with the stated params (SFR=2e-3
+  M_sun/yr, M_tot=2000 M_sun, t_dyn=10 Myr) gives 10, not the used/"CP3 default"
+  value 0.08;
+  (d) sec-2.4 uses M = 2.19e33 kg = 1101 M_sun, but sec-2.1 states M_total ~ 2000
+  M_sun.
+  Confirm the corrected values (E_rad 1.37e-12, g_base 5.01e-11, M_sf 0.08) and
+  which M is canonical (1101 vs 2000 M_sun).
+- **Best-candidate wired:** E_rad and g_base recomputed from the formula
+  (registry c, G); M_sf=0.08; paper's stated values flagged, not wired.
+- **Daniel's ruling:** (pending)
+
 ### Q-214 — PAPER_218 — NGC 3603 section-4 worked-example arithmetic errors
 - **Question:** PAPER_218 sec 4 has three numerical errors in the g_base worked
   example (the structural (1-P(t)) term and P(t)=0.15 are correct):

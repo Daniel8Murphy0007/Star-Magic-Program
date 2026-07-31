@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 222 (11 ✓, 211 ⚠ OPEN_RULING)
+- **Wired:** 223 (11 ✓, 212 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2033
+- **Not yet touched:** 2032
 
 ---
 
@@ -1475,7 +1475,7 @@
 | ⚠ | PAPER_216 | Triadic UQFF Numerical Validation Westerlund2 Pillars |
 | ⚠ | PAPER_217 | DeepSearch FUBii Polynomial Rare Mathematical Discoveries |
 | ⚠ | PAPER_218 | NGC3603 Stellar Pressure Dispersal UQFF |
-| ⬜ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
+| ⚠ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
 | ⬜ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
 | ⬜ | PAPER_221 | Bubble Nebula Positive Enhancement UQFF |
 | ⬜ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |

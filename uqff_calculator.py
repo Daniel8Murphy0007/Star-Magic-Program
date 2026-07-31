@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.222.0"
+VERSION = "0.223.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11584,6 +11584,71 @@ def _paper_218(dataset):
         },
         'formula': 'g = G*M/r^2 * (1+H_0*t) * (1-B/B_crit) * (1-P(t)); P=0.15 -> (1-P)=0.85',
         'source': 'PAPER_218',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_219')
+def _paper_219(dataset):
+    """M16 Eagle Nebula: SFR enhancement + radiation subtraction (S55).
+
+    M16 uniquely combines a multiplicative SFR-enhancement (1+M_sf(t))
+    on the DPM-seeded term with an ADDITIVE radiation subtraction
+    -E_rad from the total sum - the only 29-document system with both.
+    Wired observables:
+    * Dual structure g_M16 = g_base*(1+M_sf) - E_rad; (1+M_sf) scales
+      the base gravity up, -E_rad subtracts the radiation energy density
+      from the total.
+    * M_sf = 0.08 (CP3 default) -> (1+M_sf) = 1.08; the forming stellar
+      mass adds to the gravitational potential.
+    * Radiation energy density E_rad = L_UV/(4*pi*r^2*c) (= radiation
+      pressure); for M16 (L_UV = 1.5e31 W NGC 6611, r = 5.4e16 m ~5.7
+      ly EGG pillar depth) = 1.37e-12 J/m^3 (registry c).
+    * g_base = G*M/r^2 = 5.01e-11 m/s^2 (M = 2.19e33 kg).
+    * Photoevaporation: when E_rad > g_base*(1+M_sf), g_M16 < 0 -> net
+      outward force; radiation dominates at pillar-tip scales, driving
+      EGG (Evaporating Gaseous Globule) photoevaporation seen by HST.
+    * Duality vs Pillars (Doc 7): Pillars use (1-E(t)) MULTIPLIER
+      (gravity stays positive - gravity-protected sub-structure), M16
+      uses -E_rad ADDITIVE (total can go negative - radiation-dominated
+      environment). Proves Pillars are gravity-protected structures
+      within a radiation-dominated nebula, matching HST imaging.
+    Q-215: PAPER_219 sec 2 worked-example drift (same family as
+    PAPER_218 Q-214) - (a) E_rad stated 2.71e-22 J/m^3 but the formula
+    with r=5.4e16 gives 1.37e-12 (~10 OOM); (b) g_base stated 5.00e-50
+    m/s^2 but G*M/r^2 = 5.01e-11 (~39 OOM); (c) the M_sf = SFR/M_tot*t_dyn
+    formula with stated params (2e-3, 2000 M_sun, 10 Myr) gives 10, not
+    the used 0.08; (d) sec-2.4 M = 2.19e33 kg = 1101 M_sun vs sec-2.1
+    stated 2000 M_sun. Corrected values wired. Appendix drift
+    auto-corrected per charter.
+    """
+    import math as _m
+    L_uv = 1.5e31                                        # W, NGC 6611 OB stars
+    r_m16 = 5.4e16                                       # m, ~5.7 ly pillar depth
+    M_m16 = 2.19e33                                      # kg (sec 2.4)
+    m_sf = 0.08                                          # CP3 default
+    e_rad = L_uv / (4 * _m.pi * r_m16 ** 2 * C_OBSERVED)  # 1.37e-12 J/m^3
+    g_base = G_OBSERVED * M_m16 / r_m16 ** 2             # 5.01e-11 m/s^2
+    return {
+        'value': {
+            'domain': '2.17 (M16 Eagle Nebula SFR + radiation)',
+            'dual_structure': '(1+M_sf)*g_base - E_rad',
+            'unique_both_mult_and_additive': True,
+            'm_sf': m_sf,
+            'one_plus_msf': 1 + m_sf,                    # 1.08
+            'L_uv_W': L_uv,
+            'r_m': r_m16,
+            'e_rad_J_m3': e_rad,                         # 1.37e-12
+            'g_base_m_s2': g_base,                       # 5.01e-11
+            'photoevaporation_condition': 'E_rad > g_base*(1+M_sf) -> g_M16 < 0 (net outward)',
+            'pillars_term': '(1-E(t)) multiplier (gravity-protected)',
+            'm16_term': '-E_rad additive (radiation-dominated)',
+            'duality': 'Pillars = gravity-protected sub-structures within radiation-dominated M16',
+            'sec2_arithmetic_fork': 'E_rad 2.71e-22 (correct 1.37e-12), g_base 5e-50 (correct 5.01e-11), M_sf formula 10 vs 0.08, M 1101 vs 2000 M_sun (Q-215)',
+        },
+        'formula': 'g_M16 = G*M/r^2*(1+H*t)*(1-B/B_crit)*(1+M_sf) - E_rad; E_rad = L_UV/(4*pi*r^2*c)',
+        'source': 'PAPER_219',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

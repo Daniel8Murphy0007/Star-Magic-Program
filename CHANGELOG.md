@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.223.0] — 2026-07-31 — BAND 1: PAPER_219 — M16 EAGLE NEBULA SFR + RADIATION
+
+### Added
+- **PAPER_219 wired** (⚠ Q-215): M16 Eagle Nebula — the only 29-document system
+  combining a multiplicative SFR-enhancement (1+M_sf) on the DPM-seeded term with
+  an ADDITIVE radiation subtraction -E_rad from the total: g_M16 = g_base·(1+M_sf)
+  − E_rad. M_sf = 0.08 (CP3 default) → (1+M_sf) = 1.08. Radiation energy density
+  E_rad = L_UV/(4π·r²·c) = 1.37e-12 J/m³ (L_UV = 1.5e31 W, r = 5.4e16 m,
+  registry c); g_base = G·M/r² = 5.01e-11 m/s² (M = 2.19e33 kg). Photoevaporation:
+  when E_rad > g_base·(1+M_sf), g_M16 < 0 (net outward), driving EGG
+  photoevaporation seen by HST. Duality vs the Pillars (Doc 7), which use a
+  (1-E(t)) MULTIPLIER (gravity stays positive) — proving the Pillars are
+  gravity-protected sub-structures within a radiation-dominated M16.
+- Q-215: section-2 worked-example drift (same family as PAPER_218 Q-214) —
+  E_rad stated 2.71e-22 (correct 1.37e-12, ~10 OOM), g_base stated 5.00e-50
+  (correct 5.01e-11, ~39 OOM), M_sf formula gives 10 not the used 0.08, and
+  M = 1101 M_sun (sec 2.4) vs 2000 M_sun (sec 2.1). Corrected values wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1430 → 1435 (+5). Registry 499 rows / 1058 edges / 223 ledgers.
+
+---
+
 ## [0.222.0] — 2026-07-31 — BAND 1: PAPER_218 — NGC 3603 PRESSURE DISPERSAL
 
 ### Added

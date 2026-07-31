@@ -2454,3 +2454,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1430/0. Registry 497 rows / 1055 edges / 222 ledgers. Campaign: 222/2,255 (11 ✓, 211 ⚠). Next: PAPER_219.
 
 ---
+
+## 2026-07-31 — v0.223.0 — BAND 1: PAPER_219
+
+- PAPER_219 wired (⚠ Q-215): M16 Eagle Nebula — only 29-doc system with both multiplicative (1+M_sf) enhancement + additive -E_rad subtraction. g_M16=g_base·(1+M_sf)-E_rad; M_sf=0.08 -> 1.08; E_rad=L/(4πr²c)=1.37e-12 J/m³; g_base=G·M/r²=5.01e-11 m/s². Photoevap E_rad>g_base·(1+M_sf) -> g<0 (EGG evaporation, HST); Pillars (1-E) multiplier gravity-protected duality. Appendix drift auto-corrected.
+- Q-215: sec-2 drift (PAPER_218 family) — E_rad 2.71e-22 (correct 1.37e-12), g_base 5e-50 (correct 5.01e-11), M_sf formula 10 vs 0.08, M 1101 vs 2000 M_sun.
+- Gate 1435/0. Registry 499 rows / 1058 edges / 223 ledgers. Campaign: 223/2,255 (11 ✓, 212 ⚠). Next: PAPER_220.
+
+---

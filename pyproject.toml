@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.222.0"
-description = "UQFF Star-Magic-Program v0.222.0: PAPER_218 wired - NGC 3603 stellar pressure dispersal (1-P(t)); P=0.15 -> (1-P)=0.85 (15% reduction); g_base=G*M/r^2*(1-P)=7.22e-14 m/s^2 (M=1.6e4 M_sun); 5-term suppressor taxonomy; e_SFE 30-35%; sec-4 arithmetic drift (8.52e-52, 5% vs 15%) Q-214. Wired 222/2255, gate 1430/0. Registry 497 rows / 1055 edges / 222 ledgers (measured)."
+version = "0.223.0"
+description = "UQFF Star-Magic-Program v0.223.0: PAPER_219 wired - M16 Eagle Nebula SFR enhancement + radiation subtraction; unique dual (1+M_sf)*g_base - E_rad; M_sf=0.08; E_rad=L/(4pi r^2 c)=1.37e-12 J/m^3; g_base=5.01e-11 m/s^2; photoevap E_rad>g_base -> g<0; Pillars gravity-protected duality; sec-2 arithmetic drift Q-215. Wired 223/2255, gate 1435/0. Registry 499 rows / 1058 edges / 223 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

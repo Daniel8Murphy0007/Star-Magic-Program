@@ -1054,3 +1054,6 @@ observable,rare_math_discoveries_cgm,observable,triadic_validation_westerlund_pi
 primitive,B_CRIT,observable,ngc3603_pressure_dispersal,1-B/B_crit magnetic suppressor
 observable,ngc3603_pressure_dispersal,paper,PAPER_218,(1-P(t)) term
 observable,suppressor_term_taxonomy,paper,PAPER_218,5-term taxonomy
+observable,m16_sfr_radiation_dual,paper,PAPER_219,dual SFR+radiation
+observable,m16_pillars_photoevap_duality,paper,PAPER_219,photoevap duality
+observable,m16_sfr_radiation_dual,observable,ngc3603_pressure_dispersal,suppressor taxonomy tie PAPER_218

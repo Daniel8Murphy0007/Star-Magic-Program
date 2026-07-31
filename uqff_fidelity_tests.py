@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.222.0", "uqff_calculator.VERSION = 0.222.0")
+assert_that(C.VERSION == "0.223.0", "uqff_calculator.VERSION = 0.223.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3139,6 +3139,17 @@ assert_that(len(_r218['suppressor_taxonomy']) == 5 and _r218['suppressor_taxonom
 assert_that(_r218['one_minus_b_bcrit'] == 1.0,
             "PAPER_218: B/B_crit = 1e-8/4.4e13 = 2.3e-22 -> (1-B/B_crit) ~ 1.0 (paper 0.9999977 drift)")
 assert_that(C.wired_count() >= 222, "wired_count >= 222")
+
+_r219 = C.calc('PAPER_219')['value']
+assert_that(_r219['m_sf'] == 0.08 and _r219['one_plus_msf'] == 1.08 and _r219['unique_both_mult_and_additive'],
+            "PAPER_219: M16 M_sf=0.08 -> (1+M_sf)=1.08; unique dual mult-enhance + additive-subtract")
+assert_that(abs(_r219['e_rad_J_m3'] - 1.3654417332500376e-12) < 1e-18,
+            "PAPER_219: E_rad = L_UV/(4*pi*r^2*c) = 1.37e-12 J/m^3 (paper's 2.71e-22 is ~10 OOM off)")
+assert_that(abs(_r219['g_base_m_s2'] - 5.012366255144033e-11) < 1e-16,
+            "PAPER_219: g_base = G*M/r^2 = 5.01e-11 m/s^2 (paper's 5.00e-50 is ~39 OOM off)")
+assert_that('gravity-protected' in _r219['duality'],
+            "PAPER_219: Pillars (1-E) multiplier gravity-protected vs M16 -E_rad additive radiation-dominated")
+assert_that(C.wired_count() >= 223, "wired_count >= 223")
 
 
 # =============================================================================
