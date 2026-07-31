@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.183.0"
-description = "UQFF Star-Magic-Program v0.183.0: PAPER_180 wired - 26-test regression catalog (Q-165a resolved); CORPUS SELF-AUDIT (sec 5 wait-need-to-recheck matches our Q-170a verification EXACTLY); afluid CLOSED FORM RECONSTRUCTED = ffluid*Vsys*SO_5/c_res (0.06%) - the dominant resonance term derived; test-12 vexp 100x pinned. Q-176. Wired 184/2255, gate 1216/0. Registry 436 rows / 936 edges / 184 ledgers (measured)."
+version = "0.184.0"
+description = "UQFF Star-Magic-Program v0.184.0: PAPER_181 wired - graph-theory H-magic labelings OPEN sec 2.5; project-name etymology (Star Magic = K_1,n star-graph labeling); honestly declared orthogonal to physics; ASD Theorem-4 discriminant defect (4-vs-8) with verified counterexamples. Q-177. Wired 185/2255, gate 1221/0. Registry 438 rows / 938 edges / 185 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

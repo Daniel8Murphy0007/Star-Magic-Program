@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.184.0] — 2026-07-31 — BAND 1: PAPER_181 — SEC 2.5 OPENS (COMBINATORICS)
+
+### Added
+- **PAPER_181 dispatch** (H-magic labelings, S49 — sec
+  2.5 opener): 30+ graph-theory results, HONESTLY
+  declared orthogonal to UQFF physics. PROJECT-NAME
+  ETYMOLOGY registered: "Star Magic" = the star graph
+  K_{1,n} of magic-labeling theory (dual with the
+  central-mass + n-orbiters picture). Standard results
+  (tw/pw, NP-completeness) correct; footer Jeans EXACT.
+  PINNED: ASD Theorem-4 discriminant defect — printed
+  sqrt(1+4E), triangular inversion needs sqrt(1+8E);
+  counterexamples VERIFIED (n=4: paper 2 vs correct 3;
+  n=10: 6 vs 9); Theorem-2 exact-cover assumption
+  unstated.
+- OPEN_RULING Q-177.
+- Gate: 1,221 assertions, 0 failures. Registry: 438 rows / 938 edges / 185 ledgers (measured).
+
+---
+
 ## [0.183.0] — 2026-07-31 — BAND 1: PAPER_180 — TEST CATALOG + SELF-AUDIT
 
 ### Added

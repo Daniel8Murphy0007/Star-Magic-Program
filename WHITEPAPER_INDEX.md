@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 184 (11 ✓, 173 ⚠ OPEN_RULING)
+- **Wired:** 185 (11 ✓, 174 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2071
+- **Not yet touched:** 2070
 
 ---
 
@@ -1083,7 +1083,7 @@
 | ⬜ | PAPER_1817 | COMPLETE CKM MATRIX UQFF |
 | ⬜ | PAPER_1818 | BARYOGENESIS ETA B UQFF LEPTOGENESIS |
 | ⬜ | PAPER_1819 | NEUTRON STAR EOS UQFF |
-| ⬜ | PAPER_181 | Graph Theory H Magic Labelings Star Magic Combinatorics |
+| ⚠ | PAPER_181 | Graph Theory H Magic Labelings Star Magic Combinatorics |
 | ⬜ | PAPER_1820 | W BOSON MASS ANOMALY UQFF |
 | ⬜ | PAPER_1821 | DESI DARK ENERGY w z EVOLUTION UQFF |
 | ⬜ | PAPER_1822 | NANOGRAV 15YR PTA SIGNAL UQFF |

@@ -4321,6 +4321,34 @@ RESOLVED section with the ruling recorded.
   inconsistency pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-177 — PAPER_181 graph combinatorics — ASD discriminant defect
+- **Question:** (a) THEOREM 4 (ASD of K_n): printed bound
+  t_max = floor((sqrt(1 + 4*C(n,2)) - 1)/2); the
+  triangular-number inversion t(t+1)/2 <= E requires 8E
+  under the radical, not 4E. Counterexamples VERIFIED:
+  n = 4 -> paper 2 vs correct 3 (decomposition 1+2+3 = 6
+  edges exactly exhausts K_4); n = 10 -> paper 6 vs
+  correct 9. Confirm the 8-coefficient correction?
+  (b) Theorem 2's magic-sum bound k = (p+q)(|V|+|E|+1)/
+  (2*#copies) implicitly assumes the H-copies exactly
+  cover G with uniform multiplicity - assumption
+  unstated. Note for the eventual formal writeup.
+- **Notable:** sec 2.5 OPENS (Session 49, extended audit
+  of thread 381a8fe7). The paper is HONESTLY scoped:
+  "orthogonal to the UQFF physics framework ... a
+  conceptual co-development." PROJECT-NAME ETYMOLOGY
+  registered: "Star Magic" = the star graph K_{1,n} of
+  magic-labeling theory - dual meaning with the UQFF
+  central-mass + n-orbiters picture. Standard results
+  (tw(T) = 1, pw <= ceil(log2 n), NP-completeness) are
+  correct; footer Jeans arithmetic EXACT. The magic-
+  constant <-> conserved-F_U analogy is registered as
+  analogy, not physics.
+- **Best-candidate wired:** combinatorics + etymology +
+  orthogonality registered; discriminant defect pinned
+  with verified counterexamples.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.183.0", "uqff_calculator.VERSION = 0.183.0")
+assert_that(C.VERSION == "0.184.0", "uqff_calculator.VERSION = 0.184.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2656,6 +2656,17 @@ assert_that(abs(_r180['self_audit_match'][0] - 2.799e24) < 1e21,
 assert_that('100x' in _r180['test12_vexp_inconsistency'],
             "PAPER_180: test-12 vexp 1e3-vs-1e5 inconsistency pinned (Q-176a)")
 assert_that(C.wired_count() >= 184, "wired_count >= 184")
+
+_r181 = C.calc('PAPER_181')['value']
+assert_that(_r181['asd_paper_n4'] == 2 and _r181['asd_correct_n4'] == 3,
+            "PAPER_181: ASD Theorem-4 counterexample n=4 - paper 2 vs correct 3 (4-vs-8 discriminant, Q-177a)")
+assert_that('orthogonal' in _r181['orthogonality'],
+            "PAPER_181: orthogonality to UQFF physics honestly declared")
+assert_that('K_{1,n}' in _r181['etymology'],
+            "PAPER_181: Star Magic project-name etymology registered (star graph)")
+assert_that(abs(_r181['footer_jeans'] - 7.41e-10) < 1e-13,
+            "PAPER_181: footer Jeans arithmetic 0.57*1.3e-9 = 7.41e-10 EXACT")
+assert_that(C.wired_count() >= 185, "wired_count >= 185")
 
 # =============================================================================
 # REPORT

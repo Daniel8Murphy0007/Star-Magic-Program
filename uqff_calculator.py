@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.183.0"
+VERSION = "0.184.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9566,5 +9566,54 @@ def _paper_180(dataset):
         'formula': '26-test catalog; afluid = ffluid*Vsys*SO_5/c_res (reconstructed)',
         'source': 'PAPER_180',
         'residual_pct': abs(afluid - 1.773e-9) / 1.773e-9 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_181')
+def _paper_181(dataset):
+    """Graph theory H-magic labelings (S49) - OPENS sec 2.5.
+
+    Combinatorics paper, HONESTLY declared "orthogonal to
+    the UQFF physics framework": H-magic labelings, tree
+    decompositions, sumset partitions, ascending subgraph
+    decompositions (30+ thesis-level results).
+    PROJECT-NAME ETYMOLOGY registered: "Star Magic" =
+    the star graph K_{1,n} of magic-labeling theory
+    (central vertex + n leaves), dual-meaning with the
+    central-mass + n-orbiters UQFF picture.
+    VERIFIED: tw(T) = 1 and pw(T) <= ceil(log2 n) are
+    standard results (correct); footer Jeans arithmetic
+    0.57*1.3e-9 = 7.41e-10 EXACT; complexity table
+    plausible (H-magic NP-complete general).
+    THEOREM-4 DEFECT (Q-177a): the ASD bound uses
+    sqrt(1 + 4*C(n,2)); the triangular-number inversion
+    t(t+1)/2 <= E requires sqrt(1 + 8E). Counterexamples
+    verified: n = 4 gives paper t_max = 2 vs correct 3
+    (1+2+3 = 6 = E exactly); n = 10 gives 6 vs 9. The
+    discriminant coefficient is 4-vs-8 (factor-2 slip
+    inside the radical).
+    Theorem 2's magic-sum bound implicitly assumes the
+    H-copies exactly cover G (Q-177b - assumption not
+    stated).
+    """
+    import math as _m
+    e4 = 6
+    return {
+        'value': {
+            'domain': '2.5 opener (graph combinatorics, S49 extended audit)',
+            'orthogonality': 'declared orthogonal to UQFF physics (honest scoping)',
+            'etymology': 'Star Magic = star graph K_{1,n} magic labeling (name origin)',
+            'asd_paper_n4': int((_m.sqrt(1 + 4 * e4) - 1) / 2),   # 2
+            'asd_correct_n4': int((_m.sqrt(1 + 8 * e4) - 1) / 2), # 3
+            'asd_defect': 'discriminant 4 should be 8 - counterexample n=4 (Q-177a)',
+            'tw_pw_standard': 'tw(T) = 1, pw <= ceil(log2 n) - correct standard results',
+            'footer_jeans': 0.57 * 1.3e-9,                        # 7.41e-10 EXACT
+            'theorem2_assumption': 'exact-cover by H-copies implicit (Q-177b)',
+            'analogy': 'magic constant k <-> conserved F_U sum (registered as analogy)',
+        },
+        'formula': 'H-magic: sum over H-copy of f(v) + f(e) = k; ASD t_max inversion',
+        'source': 'PAPER_181',
+        'residual_pct': abs(0.57 * 1.3e-9 - 7.4e-10) / 7.4e-10 * 100,
         'status': 'OPEN_RULING',
     }

@@ -935,3 +935,5 @@ observable,coanqi_26test_catalog,paper,PAPER_180,26-test set
 observable,afluid_formula_reconstructed,paper,PAPER_180,closed form
 primitive,SO_5,observable,afluid_formula_reconstructed,UA_SCM = 10
 observable,afluid_formula_reconstructed,paper,PAPER_174,dominant term
+observable,h_magic_combinatorics,paper,PAPER_181,combinatorics set
+observable,asd_theorem_defect,paper,PAPER_181,4-vs-8 discriminant

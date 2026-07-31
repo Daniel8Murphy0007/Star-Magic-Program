@@ -2140,3 +2140,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 184/2,255 (11 ✓, 173 ⚠). Next: PAPER_181.
 
 ---
+
+## 2026-07-31 — v0.184.0 — BAND 1: PAPER_181
+
+- PAPER_181 wired (⚠ Q-177): H-magic combinatorics opens
+  sec 2.5. Name etymology registered; ASD discriminant
+  defect verified by counterexample.
+- Campaign: 185/2,255 (11 ✓, 174 ⚠). Next: PAPER_182.
+
+---
