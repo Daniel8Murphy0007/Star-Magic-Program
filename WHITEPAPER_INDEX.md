@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 166 (11 ✓, 155 ⚠ OPEN_RULING)
+- **Wired:** 167 (11 ✓, 156 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2089
+- **Not yet touched:** 2088
 
 ---
 
@@ -885,7 +885,7 @@
 | ⬜ | PAPER_1637 | NEUTRINO MASS SUM 0 0639 |
 | ⬜ | PAPER_1638 | N FERMION GENERATIONS 3 |
 | ⬜ | PAPER_1639 | GLUEBALL 0PP 1 736 GEV |
-| ⬜ | PAPER_163 | UQFF Modular Compressed MUGE Decomposed Functions |
+| ⚠ | PAPER_163 | UQFF Modular Compressed MUGE Decomposed Functions |
 | ⬜ | PAPER_1640 | HIGGS TRILINEAR KAPPA LAMBDA |
 | ⬜ | PAPER_1641 | TOP YUKAWA Y T NATURAL |
 | ⬜ | PAPER_1642 | CKM UNITARITY SUM 1 |

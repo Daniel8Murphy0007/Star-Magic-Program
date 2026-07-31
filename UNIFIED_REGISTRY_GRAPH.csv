@@ -855,3 +855,8 @@ observable,solar_cycle_omega_c,paper,PAPER_162,omega_c foundation
 observable,solar_cycle_omega_c,paper,PAPER_157,per-body usage
 primitive,SSQ,observable,solar_cycle_omega_c,footer solar wind
 observable,solar_cycle_defect_trio,paper,PAPER_162,3 defects
+observable,compressed_muge_modular,paper,PAPER_163,8 functions
+observable,compressed_muge_modular,paper,PAPER_090,9-term source
+primitive,A_5,observable,modular_defect_trio,H0 canonical comparison
+primitive,SO_5,observable,modular_defect_trio,H0 canonical comparison
+observable,modular_defect_trio,paper,PAPER_163,slip/fork/mixing

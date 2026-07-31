@@ -3713,6 +3713,37 @@ RESOLVED section with the ruling recorded.
   prediction registered; defect trio pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-159 — PAPER_163 modular MUGE — base-test slip + H0 fork + dimensional mixing
+- **Question:** (a) BASE-TEST SLIP: unit-test matrix
+  expects "6.67e8" for compute_base(M=1e30, r=1e11);
+  actual G*M/r^2 = 6.674e-3 m/s^2. The exponent is off by
+  1e11 with the mantissa EXACT - the most extreme member
+  yet of the mantissa-exponent-slip family. Confirm
+  expected = 6.674e-3?
+  (b) H0 FORK: Function 2 hardcodes H_0 = 67.4 km/s/Mpc =
+  2.185e-18 s^-1 (Planck 2018), joining 152's usage - vs
+  the corpus-canonical H_0 = A_5 + SO_5 = 70 EXACT
+  (PAPER_1573, upgraded route PAPER_2144). Wire the
+  modular expansion function on 70 or preserve 67.4 as
+  the paper's literal?
+  (c) DIMENSIONAL MIXING (now function-explicit): the
+  additive tail sums g_cosm [s^-2] + g_fluid = rho*V*g [N]
+  + g_pert [kg] onto the multiplicative core [m/s^2]. The
+  modular decomposition EXPOSES the recurring mixing class
+  precisely - each function's output unit is now
+  individually visible. Per-term normalization constants,
+  or accept as UQFF structural units?
+- **Notable:** the decomposition itself is good
+  engineering - 8 auditable functions with a clean test
+  matrix; cosm = 3.296e-36 verifies at 0.08%; the fluid
+  bench is literal Archimedes (air 1.29 kg/m^3 * 9.81);
+  expansion/super limits EXACT. Forward reference:
+  PAPER_164 calibrates the quantum term from CERN data
+  (next in sequence). 158's blend consumes this g_comp.
+- **Best-candidate wired:** architecture + verified matrix
+  registered; slip/fork/mixing pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

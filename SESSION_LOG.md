@@ -1976,3 +1976,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 166/2,255 (11 ✓, 155 ⚠). Next: PAPER_163.
 
 ---
+
+## 2026-07-30 — v0.166.0 — BAND 1: PAPER_163
+
+- PAPER_163 wired (⚠ Q-159): modular compressed MUGE.
+  8 functions verified; 1e11 base-test slip; H0 fork;
+  dimensional mixing exposed by the decomposition.
+- Campaign: 167/2,255 (11 ✓, 156 ⚠). Next: PAPER_164.
+
+---

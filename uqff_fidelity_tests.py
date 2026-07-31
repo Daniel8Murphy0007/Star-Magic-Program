@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.165.0", "uqff_calculator.VERSION = 0.165.0")
+assert_that(C.VERSION == "0.166.0", "uqff_calculator.VERSION = 0.166.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2408,6 +2408,19 @@ assert_that(_r162['scm_contrib_sun_T'] == 1e5,
 assert_that(abs(_r162['footer_solar_wind'] - 0.5688) < 0.001,
             "PAPER_162: footer solar-wind correction 0.5688 ~ 5.7e-1 (exponent 2.16e-3 vs paper 3.2e-3)")
 assert_that(C.wired_count() >= 166, "wired_count >= 166")
+
+_r163 = C.calc('PAPER_163')['value']
+assert_that(_r163['n_functions'] == 8,
+            "PAPER_163: 8 decomposed compressed-MUGE functions cataloged")
+assert_that(abs(_r163['cosm_term'] - 3.293e-36) / 3.293e-36 < 0.001,
+            "PAPER_163: cosm = Lambda*c^2/3 = 3.296e-36 (table 3.293e-36, 0.08%)")
+assert_that(abs(_r163['fluid_bench'] - 12.66) < 0.01,
+            "PAPER_163: fluid bench 1.29*1*9.81 = 12.655 (table 12.66)")
+assert_that(_r163['base_table_expected'] / _r163['base_actual'] > 1e10,
+            "PAPER_163: base-test expected 6.67e8 vs actual 6.674e-3 - 1e11 slip, mantissa EXACT (Q-159a)")
+assert_that(_r163['h0_canonical'] > _r163['h0_paper'],
+            "PAPER_163: H0 fork - 67.4 hardcoded vs canonical A_5+SO_5 = 70 (Q-159b)")
+assert_that(C.wired_count() >= 167, "wired_count >= 167")
 
 # =============================================================================
 # REPORT

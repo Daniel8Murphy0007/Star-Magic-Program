@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.165.0"
-description = "UQFF Star-Magic-Program v0.165.0: PAPER_162 wired - solar-cycle omega_c foundation for 157; B(t) time-varying + delta_def; 2.33x cycle modulation testable prediction; DEFECT TRIO pinned (0.4 T absolute-vs-relative amplitude, 6.3 s vs 6283 s period slip, SCm_contrib 1e9 x B_s not perturbative). Q-158. Wired 166/2255, gate 1101/0. Registry 401 rows / 856 edges / 166 ledgers (measured)."
+version = "0.166.0"
+description = "UQFF Star-Magic-Program v0.166.0: PAPER_163 wired - modular decomposition of the 9-term compressed MUGE into 8 auditable functions; test matrix verified (cosm 0.08%, Archimedes fluid bench); base-test 1e11 exponent slip with EXACT mantissa pinned; H0 = 67.4 fork vs canonical 70; additive-tail dimensional mixing now function-explicit. Q-159. Wired 167/2255, gate 1107/0. Registry 403 rows / 861 edges / 167 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

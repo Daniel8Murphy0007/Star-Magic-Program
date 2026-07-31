@@ -1,31 +1,29 @@
-v0.165.0 BAND 1: PAPER_162 wired - SOLAR-CYCLE FOUNDATION
+v0.166.0 BAND 1: PAPER_163 wired - MODULAR COMPRESSED MUGE
 
-PAPER_162 Solar Cycle UQFF (OPEN_RULING Q-158) - Session
-47, thread 7f9068, sec 2.3:
-  Establishes per-body cycle frequency omega_c as a
-  first-class UQFF parameter - the theoretical foundation
-  for 157's per-body table (periods 11/1/11.86/164.8 yr
-  match EXACT). B(t) = B_s + 0.4*sin(omega_c*t) +
-  SCm_contrib; Ug1 defect factor delta_def = 0.01; Ug3
-  rotation modulation. omega_c(Sun) = 1.810e-8 rad/s
-  verified.
+PAPER_163 Modular Architecture (OPEN_RULING Q-159) -
+Session 47, thread 7f9068, sec 2.3:
+  Decomposes 090's 9-term compressed MUGE into 8 callable
+  auditable functions: master = base*exp*super*env + cosm
+  + quant + fluid + pert. Test matrix verified: cosm =
+  Lambda*c^2/3 = 3.296e-36 (table 3.293e-36, 0.08%);
+  fluid bench is literal Archimedes (air 1.29 * 9.81 =
+  12.655); expansion(0) and super_adj limits EXACT. This
+  is the g_comp that 158's blend consumes.
 
-  TESTABLE PREDICTION: 2.33x UQFF field modulation over
-  the 11-year solar cycle, claimed to correlate with
-  cosmic-ray flux (~10-20%% observed) - one of the
-  corpus's cleaner falsifiable statements.
+  PINNED FOR RULING: (a) the base test expects "6.67e8"
+  for M = 1e30, r = 1e11 - actual G*M/r^2 = 6.674e-3, a
+  1e11 exponent slip with EXACT mantissa (the most
+  extreme slip-family member yet); (b) H_0 = 67.4 =
+  2.185e-18 s^-1 hardcoded (joins 152) vs the canonical
+  H_0 = A_5 + SO_5 = 70 (PAPER_1573/2144); (c) the
+  additive tail mixes s^-2 (cosm) + Newtons (fluid) + kg
+  (pert) onto m/s^2 - and the modular decomposition
+  EXPOSES this recurring class function-by-function,
+  which is exactly what good architecture should do.
 
-  DEFECT TRIO PINNED: (1) the 0.4 oscillation amplitude
-  is ABSOLUTE Tesla in the formula and C++ (0.4 T = 4000x
-  the 1e-4 T mean) but RELATIVE in sec 6's own arithmetic
-  and the +-40%% motivation - intent B_s*(1 + 0.4*sin);
-  (2) delta_def period "~6.3 second" vs actual 2pi/0.001
-  = 6283 s - a 1000x slip with EXACT mantissa 6.28
-  (mantissa-exponent family); (3) SCm_contrib =
-  SCm_density*1e-10 = 1e5 T for the Sun = 1e9 x B_s -
-  the "perturbative ~B_s/100" claim is false with 157's
-  struct values (ties to 157's mu_s "+1e3" term).
+  Forward reference: PAPER_164 calibrates the quantum
+  term from CERN data - next in sequence.
 
-Q-158 queued. Gate 1,101 assertions 0 failures. Registry
-401 rows / 856 edges / 166 ledgers (measured). Wired
-166/2,255 (11 clean, 155 OPEN_RULING). Next: PAPER_163.
+Q-159 queued. Gate 1,107 assertions 0 failures. Registry
+403 rows / 861 edges / 167 ledgers (measured). Wired
+167/2,255 (11 clean, 156 OPEN_RULING). Next: PAPER_164.

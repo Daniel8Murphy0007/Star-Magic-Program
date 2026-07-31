@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.165.0"
+VERSION = "0.166.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8650,5 +8650,55 @@ def _paper_162(dataset):
         'formula': 'B(t) = B_s + 0.4*sin(omega_c*t) + SCm_contrib; delta_def = 0.01',
         'source': 'PAPER_162',
         'residual_pct': abs(1.4 / 0.6 - 2.33) / 2.33 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_163')
+def _paper_163(dataset):
+    """Modular compressed-MUGE decomposition (S47, sec 2.3).
+
+    Decomposes 090's 9-term compressed MUGE into 8 callable
+    functions (base/expansion/super_adj/envelope/cosm/
+    quantum/fluid/perturbation) - auditable unit-testable
+    architecture; master = base*exp*super*env + cosm +
+    quant + fluid + pert (multiplicative core + additive
+    tail). VERIFIED test matrix: cosm = Lambda*c^2/3 =
+    3.296e-36 (table 3.293e-36, 0.08%); fluid = 1.29*1*
+    9.81 = 12.655 (table 12.66); expansion(0) = 1 EXACT;
+    super_adj limits EXACT.
+    BASE-TEST DEFECT (Q-159a): expected "6.67e8" for
+    M = 1e30, r = 1e11; actual G*M/r^2 = 6.674e-3 - the
+    table exponent is off by 1e11 (mantissa EXACT again -
+    the slip family's most extreme member yet).
+    H0 FORK CONTINUES (Q-159b): H_0 = 67.4 km/s/Mpc =
+    2.185e-18 s^-1 hardcoded (with 152) vs canonical
+    H_0 = A_5 + SO_5 = 70 (PAPER_1573/2144).
+    DIMENSIONAL MIXING (Q-159c): additive tail mixes
+    s^-2 (cosm) + N (fluid = rho*V*g) + kg (pert) onto
+    m/s^2 (recurring class, now function-explicit thanks
+    to the decomposition - the modularity EXPOSES it).
+    Forward ref: 164 calibrates the quantum term (CERN).
+    """
+    h0_paper = 67.4 * 1000 / 3.0857e22
+    h0_canon = (A_5 + SO_5) * 1000 / 3.0857e22
+    return {
+        'value': {
+            'domain': '2.3 (modular architecture, thread 7f9068)',
+            'n_functions': 8,
+            'master_structure': 'base*exp*super*env + cosm + quant + fluid + pert',
+            'cosm_term': 1.1e-52 * (2.998e8)**2 / 3,         # 3.296e-36
+            'fluid_bench': 1.29 * 1 * 9.81,                  # 12.655 (Archimedes air)
+            'base_actual': 6.674e-11 * 1e30 / (1e11)**2,     # 6.674e-3
+            'base_table_expected': 6.67e8,                   # 1e11 slip (Q-159a)
+            'h0_paper': h0_paper,                            # 2.184e-18
+            'h0_canonical': h0_canon,                        # 2.269e-18 (PAPER_1573)
+            'h0_fork': '67.4 hardcoded (with 152) vs A_5+SO_5 = 70 canonical',
+            'dimensional_mixing': 's^-2 + N + kg summed onto m/s^2 - exposed by modularity',
+            'forward_ref': 'PAPER_164 quantum-term CERN calibration',
+        },
+        'formula': 'g_comp = g_base*g_exp*g_super*g_env + g_cosm + g_quant + g_fluid + g_pert',
+        'source': 'PAPER_163',
+        'residual_pct': abs(1.1e-52 * (2.998e8)**2 / 3 - 3.293e-36) / 3.293e-36 * 100,
         'status': 'OPEN_RULING',
     }

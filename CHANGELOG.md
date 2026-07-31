@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.166.0] — 2026-07-30 — BAND 1: PAPER_163 — MODULAR COMPRESSED MUGE
+
+### Added
+- **PAPER_163 dispatch** (modular decomposition, S47, sec
+  2.3): 090's 9-term compressed MUGE decomposed into 8
+  callable functions; master = base·exp·super·env + cosm +
+  quant + fluid + pert. Test matrix verified: cosm =
+  Lambda·c²/3 = 3.296e-36 (0.08%); fluid bench = literal
+  Archimedes (1.29·9.81 = 12.655); expansion/super limits
+  EXACT. PINNED: base-test expects "6.67e8" vs actual
+  6.674e-3 — a 1e11 exponent slip with EXACT mantissa (the
+  family's most extreme member); H0 = 67.4 hardcoded
+  (joins 152) vs canonical A_5+SO_5 = 70; the additive
+  tail's dimensional mixing (s⁻² + N + kg onto m/s²) is
+  now function-explicit — the modularity EXPOSES the
+  recurring class. Forward ref: 164 calibrates the quantum
+  term from CERN.
+- OPEN_RULING Q-159.
+- Gate: 1,107 assertions, 0 failures. Registry: 403 rows / 861 edges / 167 ledgers (measured).
+
+---
+
 ## [0.165.0] — 2026-07-30 — BAND 1: PAPER_162 — SOLAR-CYCLE FOUNDATION
 
 ### Added
