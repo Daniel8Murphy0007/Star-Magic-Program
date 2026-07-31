@@ -838,3 +838,8 @@ primitive,SSQ,observable,hybrid_muge_blend,footer ratio
 primitive,KAPPA_PER_DAY,observable,hybrid_muge_blend,footer ratio
 observable,blend_underflow_artifact,paper,PAPER_158,table artifact
 observable,blend_underflow_artifact,paper,PAPER_152,g_res magnitudes
+observable,muge_13th_term_wormhole,paper,PAPER_159,13th term
+primitive,SO_FIVE,observable,muge_13th_term_wormhole,"E_vac,neb = SO_5*rho_SCm"
+primitive,RHO_SCM,observable,muge_13th_term_wormhole,"E_vac,neb identity"
+observable,wormhole_throat_fork,paper,PAPER_159,b = 1.0 m
+observable,wormhole_throat_fork,paper,PAPER_153,r_0 = 2.32 mm derived

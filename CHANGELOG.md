@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.162.0] — 2026-07-30 — BAND 1: PAPER_159 — 13TH RESONANCE TERM
+
+### Added
+- **PAPER_159 dispatch** (Morris-Thorne wormhole 13th term,
+  S47, sec 2.3): a_worm = f_worm·E_vac,neb/(b²+r²) extends
+  146's 12-term resonance MUGE. a_worm(1 AU) = 3.168e-58
+  verified (0.06%); large-r 1/r² decay structural match.
+  PRIMITIVE IDENTITY: E_vac,neb = SO_5·rho_SCm = rho_UA
+  EXACT. THROAT FORK: b = 1.0 m calibration vs 153's
+  genuinely derived 2.32 mm (431×; throat acceleration
+  1.9e5×). MAGNITUDE SLIP: "1e58× smaller than DPM" vs
+  actual 1.87e55 (534×, mantissa-exponent-slip family).
+  fTRZ persists additive as term 12 (Q-142/149 doctrine
+  now applies to the 13-term set). In-flight fix: stray
+  ×10 in first dispatch draft caught by the gate itself.
+- OPEN_RULING Q-155.
+- Gate: 1,083 assertions, 0 failures. Registry: 395 rows / 844 edges / 163 ledgers (measured).
+
+---
+
 ## [0.161.0] — 2026-07-30 — BAND 1: PAPER_158 — BLEND UNDERFLOW ARTIFACT
 
 ### Added

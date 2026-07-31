@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 162 (11 ✓, 151 ⚠ OPEN_RULING)
+- **Wired:** 163 (11 ✓, 152 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2093
+- **Not yet touched:** 2092
 
 ---
 
@@ -841,7 +841,7 @@
 | ⬜ | PAPER_1597 | ATM PRESSURE 101 325 KPA |
 | ⬜ | PAPER_1598 | STANDARD GRAVITY 9 81 |
 | ⬜ | PAPER_1599 | CARBON STEEL DENSITY 7850 |
-| ⬜ | PAPER_159 | 13th Resonance Term MorrisThorne Wormhole MUGE |
+| ⚠ | PAPER_159 | 13th Resonance Term MorrisThorne Wormhole MUGE |
 | ⬜ | PAPER_1600 | ALUMINUM DENSITY 2700 |
 | ⬜ | PAPER_1601 | PINE WOOD DENSITY 500 |
 | ⬜ | PAPER_1602 | MOON DISTANCE 60 336 |

@@ -1940,3 +1940,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 162/2,255 (11 ✓, 151 ⚠). Next: PAPER_159.
 
 ---
+
+## 2026-07-30 — v0.162.0 — BAND 1: PAPER_159
+
+- PAPER_159 wired (⚠ Q-155): 13th wormhole resonance term.
+  E_vac,neb = rho_UA identity; throat fork vs 153; 534x
+  magnitude slip. Gate caught a stray x10 in my own draft.
+- Campaign: 163/2,255 (11 ✓, 152 ⚠). Next: PAPER_160.
+
+---

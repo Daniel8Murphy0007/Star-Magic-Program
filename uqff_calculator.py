@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.161.0"
+VERSION = "0.162.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8456,5 +8456,51 @@ def _paper_158(dataset):
         'formula': 'g_hybrid = beta*g_comp + (1-beta)*g_res; beta = exp(-B/B_crit)',
         'source': 'PAPER_158',
         'residual_pct': abs(_m.exp(-3e11 / b_crit) - 0.9933) / 0.9933 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_159')
+def _paper_159(dataset):
+    """13th resonance term - Morris-Thorne wormhole in MUGE (S47, sec 2.3).
+
+    Extends 146's 12-term resonance MUGE with a_worm =
+    f_worm*E_vac,neb/(b^2+r^2) (throat tidal acceleration;
+    distinct from 153's metric treatment). VERIFIED: a_worm
+    (1 AU) = 3.168e-58 (paper 3.17e-58, 0.06%); large-r
+    limit ~ E_vac/r^2 matches DPM-seeded decay structurally.
+    PRIMITIVE IDENTITY: E_vac,neb = 7.09e-36 = SO_5*rho_SCm
+    = rho_UA EXACT - the nebular vacuum energy IS the UA
+    density.
+    THROAT FORK (Q-155a): b = 1.0 m calibration here vs
+    153's GENUINELY DERIVED r_0 = 2.32 mm (431x; throat
+    acceleration differs by 1.9e5) - the paired wormhole
+    papers disagree on the throat radius.
+    MAGNITUDE SLIP (Q-155b): "1e58x smaller than DPM at
+    1 AU" - actual ratio 5.93e-3/3.17e-58 = 1.87e55, a
+    534x (~3-order) slip; mantissa-exponent-slip family.
+    UNIT SLIP: J/m^3 used directly as m/s^2 (recurring
+    class). fTRZ persists ADDITIVE as term 12 in the
+    13-term sum (Q-142/Q-149 scoped doctrine applies).
+    """
+    e_vac_neb = SO_5 * RHO_SCM  # = rho_UA = 7.09e-36 J/m3 (paper table)
+    b, r_au = 1.0, 1.496e11  # paper throat calibration; 153 derived 2.32e-3 m
+    a_worm_au = e_vac_neb / (b * b + r_au * r_au)
+    return {
+        'value': {
+            'domain': '2.3 (13-term resonance MUGE, thread 7f9068)',
+            'term_form': 'a_worm = f_worm*E_vac,neb/(b^2+r^2)',
+            'e_vac_neb_identity': 'E_vac,neb = SO_5*rho_SCm = rho_UA EXACT',
+            'e_vac_neb_over_rho_scm': (SO_5 * RHO_SCM) / RHO_SCM,  # 10
+            'a_worm_1au': a_worm_au,
+            'a_worm_throat': e_vac_neb,                    # 7.09e-36 at b=1
+            'throat_fork': 'b = 1.0 m here vs 153 derived 2.32 mm (431x) - Q-155a',
+            'magnitude_slip': (5.93e-3 / a_worm_au, 1e58),  # actual 1.87e55 vs claimed
+            'ftrz_additive_persists': 'term 12 of 13 - Q-142/Q-149 doctrine',
+            'n_terms': 13,
+        },
+        'formula': 'g_res(13) = sum(12 terms) + f_worm*E_vac,neb/(b^2+r^2)',
+        'source': 'PAPER_159',
+        'residual_pct': abs(a_worm_au - 3.17e-58) / 3.17e-58 * 100,
         'status': 'OPEN_RULING',
     }

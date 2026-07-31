@@ -1,29 +1,28 @@
-v0.161.0 BAND 1: PAPER_158 wired - BLEND UNDERFLOW ARTIFACT
+v0.162.0 BAND 1: PAPER_159 wired - 13TH RESONANCE TERM
 
-PAPER_158 Hybrid MUGE Blending Model (OPEN_RULING Q-154) -
-Session 47, thread 7f9068, sec 2.3:
-  g_hybrid = beta*g_comp + (1-beta)*g_res with beta =
-  exp(-B/B_crit) - the first algebraic bridge between the
-  compressed (090, 9-term) and resonance (146, 12-term)
-  MUGE frameworks, extending 155's fTRZ->0 keystone to
-  intermediate magnetic fields. Limiting cases verified:
-  beta_SGR = 0.99321 (paper 0.9933), beta_NS = 0.97753
-  (paper 0.977), Sun ~ 1.
+PAPER_159 Morris-Thorne Wormhole 13th MUGE Term
+(OPEN_RULING Q-155) - Session 47, thread 7f9068, sec 2.3:
+  a_worm = f_worm*E_vac,neb/(b^2+r^2) extends PAPER_146's
+  12-term resonance MUGE to 13 terms (the g_res that 158's
+  blend references). a_worm(1 AU) = 3.168e-58 verified to
+  0.06%; large-r limit reproduces 1/r^2 DPM-seeded decay.
 
-  FLOAT-UNDERFLOW ARTIFACT: the 7-system validation
-  table's "g_hybrid ~ g_comp" conclusion holds ONLY
-  because float64 exp(-x) == 1.0 exactly for x < 1.1e-16
-  (the paper's own implementation). Analytically (1-beta)
-  = B/B_crit, and the resonance term DOMINATES every row -
-  SGR 1745 by 6.4e3, SgrA* by 1.6e47, Student's Guide by
-  1.4e85 - because g_res carries the cascade-inverted
-  1e100-1e156 magnitudes (Q-143a). The blend algebra is
-  sound; the table conclusion masks the g_res problem.
+  PRIMITIVE IDENTITY: E_vac,neb = 7.09e-36 = SO_5*rho_SCm
+  = rho_UA EXACT - the nebular vacuum energy IS the UA
+  density.
 
-  B_CRIT FORK VOTE: 4.4e13 T here vs 148's Schwinger
-  4.4e9 vote - at 4.4e9, beta_SGR = e^-68 ~ 0, the
-  OPPOSITE regime assignment for SGR 1745. Q-002 deepens.
+  THROAT FORK: b = 1.0 m calibration here vs PAPER_153's
+  GENUINELY DERIVED r_0 = 2.32 mm from SCm parameters -
+  the paired wormhole papers disagree by 431x in throat
+  radius (1.9e5x in throat acceleration). Which is
+  canonical? (Q-155a)
 
-Q-154 queued. Gate 1,077 assertions 0 failures. Registry
-393 rows / 839 edges / 162 ledgers (measured). Wired
-162/2,255 (11 clean, 151 OPEN_RULING). Next: PAPER_159.
+  MAGNITUDE SLIP: "1e58x smaller than DPM at 1 AU" vs
+  actual 1.87e55 - a 534x slip (mantissa-exponent family).
+  fTRZ persists ADDITIVE as term 12 (Q-142/149 doctrine
+  now covers the 13-term set). The gate caught a stray x10
+  in my own first dispatch draft - fixed before sync.
+
+Q-155 queued. Gate 1,083 assertions 0 failures. Registry
+395 rows / 844 edges / 163 ledgers (measured). Wired
+163/2,255 (11 clean, 152 OPEN_RULING). Next: PAPER_160.

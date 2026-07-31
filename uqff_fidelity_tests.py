@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.161.0", "uqff_calculator.VERSION = 0.161.0")
+assert_that(C.VERSION == "0.162.0", "uqff_calculator.VERSION = 0.162.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2356,6 +2356,19 @@ assert_that(abs(_r158['footer_ubi_ratio'] - 2.85e-4) < 1e-9,
 assert_that('4.4e13' in _r158['b_crit_fork_vote'],
             "PAPER_158: B_crit = 4.4e13 vote pinned (Q-002 fork deepens)")
 assert_that(C.wired_count() >= 162, "wired_count >= 162")
+
+_r159 = C.calc('PAPER_159')['value']
+assert_that(abs(_r159['a_worm_1au'] - 3.17e-58) / 3.17e-58 < 0.001,
+            "PAPER_159: a_worm(1 AU) = 3.168e-58 matches paper 3.17e-58 (0.06%)")
+assert_that(_r159['e_vac_neb_over_rho_scm'] == 10,
+            "PAPER_159: E_vac,neb = SO_5*rho_SCm = rho_UA EXACT (primitive identity)")
+assert_that(_r159['n_terms'] == 13,
+            "PAPER_159: 13-term resonance MUGE (extends 146's 12-term)")
+assert_that(400 < 1.0 / 2.32e-3 < 460,
+            "PAPER_159: throat fork b = 1.0 m vs 153's derived 2.32 mm = 431x (Q-155a)")
+assert_that(_r159['magnitude_slip'][1] / _r159['magnitude_slip'][0] > 500,
+            "PAPER_159: '1e58x smaller' claim is a 534x slip vs actual 1.87e55 (Q-155b)")
+assert_that(C.wired_count() >= 163, "wired_count >= 163")
 
 # =============================================================================
 # REPORT

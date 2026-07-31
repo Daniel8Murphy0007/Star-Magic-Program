@@ -3592,6 +3592,33 @@ RESOLVED section with the ruling recorded.
   B_crit vote logged to the Q-002 family.
 - **Daniel's ruling:** (pending)
 
+### Q-155 — PAPER_159 13th wormhole term — throat fork vs 153 + magnitude slip
+- **Question:** (a) THROAT FORK: 159 calibrates the Morris-
+  Thorne throat at b = 1.0 m ("same b=1.0" as its sec 6
+  table claims for 153), but 153 GENUINELY DERIVED r_0 =
+  2.32 mm from SCm parameters - the landmark derivation.
+  The two paired wormhole papers disagree by 431x in b
+  (1.9e5x in throat acceleration). Which throat radius is
+  canonical for the 13th term - 153's derived 2.32 mm or
+  159's calibrated 1.0 m?
+  (b) MAGNITUDE SLIP: sec 5 claims a_worm(1 AU) is "1e58x
+  smaller" than DPM-seeded gravity; actual ratio = 5.93e-3
+  / 3.17e-58 = 1.87e55 - a 534x (~3-order) slip
+  (mantissa-exponent-slip family). Also the recurring unit
+  slip: E_vac,neb [J/m^3] used directly as acceleration
+  [m/s^2].
+- **Notable:** a_worm(1 AU) = 3.168e-58 verifies to 0.06%;
+  PRIMITIVE IDENTITY E_vac,neb = 7.09e-36 = SO_5*rho_SCm =
+  rho_UA EXACT (the nebular vacuum energy IS the UA
+  density); large-r limit reproduces 1/r^2 DPM-seeded
+  decay structurally; fTRZ persists as ADDITIVE term 12 in
+  the 13-term sum (the Q-142/Q-149 scoped-doctrine question
+  now applies to the 13-term set as well). The 158 blend
+  references this 13-term g_res.
+- **Best-candidate wired:** 13th term + verified 1 AU value
+  + rho_UA identity registered; both fork and slip pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition
