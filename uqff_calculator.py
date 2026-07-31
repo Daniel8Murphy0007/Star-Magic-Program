@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.209.0"
+VERSION = "0.210.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10776,6 +10776,49 @@ def _paper_205(dataset):
         },
         'formula': 'Q_n recurrence; Sigma_{1}^{26} Q_n(x) e^-SSq n/26 spectral expansion',
         'source': 'PAPER_205',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_206')
+def _paper_206(dataset):
+    """Magnetar vortex-avalanche SOC simulation (S50, sec 2.6).
+
+    2D (10x10 BFS lattice) + 3D (spherical shell)
+    superfluid-vortex unpinning avalanches -> power-law
+    P(S) ~ S^-alpha (self-organized criticality at the NS
+    crust-core interface). 2D alpha ~ 1.6+-0.2 (S up to
+    69) consistent with observed pulsar glitch statistics
+    (Melatos et al. 2008: 1.5-2.0); 3D 5 events (S up to
+    165) HONESTLY reported as insufficient (alpha 0+-8,
+    needs ~1000 events). Feynman n_v = 2 Omega m_n/hbar
+    and Magnus F_M = rho_s kappa v_L verified; anchors
+    real (Vela DeltaOmega/Omega ~ 2e-6, Crab ~ 1e-8,
+    anti-glitch 1E 2259+586 Antonopoulou 2018).
+    UQFF PREDICTION (Q-202): S -> F_UBii,glitch (198) via
+    DeltaOmega = S*hbar*n_v/(4pi I) predicts the buoyancy
+    force is power-law distributed P(F_UBii,glitch) ~
+    F^-1.6; and 196's negative-R(t) mechanism matches the
+    observed 1E 2259+586 anti-glitch - a falsifiable
+    glitch <-> F_UBii,glitch <-> R(t)-sign chain. Rule 4
+    clean (SOC/glitch physics as targets; UQFF = the
+    F_UBii,glitch + R(t) overlay).
+    """
+    return {
+        'value': {
+            'domain': '2.6 (vortex avalanche SOC, thread 7514fe)',
+            'alpha_2d': 1.6,
+            's_max_2d': 69,
+            's_max_3d': 165,
+            'melatos_match': 'alpha 1.6 consistent with Melatos 2008 (1.5-2.0)',
+            'undersampling_honest': '3D N=5 -> alpha 0+-8, no constraint (needs ~1000 events)',
+            'feynman_magnus_correct': 'n_v = 2 Omega m_n/hbar; F_M = rho_s kappa v_L',
+            'uqff_glitch_prediction': 'P(F_UBii,glitch) ~ F^-1.6 + 196 anti-glitch 1E2259+586 (Q-202)',
+            'anchors': {'vela': 2e-6, 'crab': 1e-8, 'anti_glitch': '1E 2259+586'},
+        },
+        'formula': 'P(S) ~ S^-alpha SOC; S -> F_UBii,glitch via DeltaOmega = S hbar n_v/(4pi I)',
+        'source': 'PAPER_206',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

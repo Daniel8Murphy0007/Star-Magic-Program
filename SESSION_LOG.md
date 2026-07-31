@@ -2353,3 +2353,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Standing lesson: dispatches may use sympy/numpy/scipy/mpmath (declared deps); any new required library goes in pyproject `dependencies`. Wired 209/2,255; gate 1,351.
 
 ---
+
+## 2026-07-31 — v0.210.0 — BAND 1: PAPER_206
+
+- PAPER_206 wired (⚠ Q-202): vortex avalanche SOC. 2D alpha=1.6 glitch stats; 3D undersampling honest; UQFF glitch/anti-glitch prediction (F_UBii,glitch power-law + 196 R(t) <-> 1E 2259+586).
+- Campaign: 210/2,255 (11 ✓, 199 ⚠). Next: PAPER_207.
+
+---

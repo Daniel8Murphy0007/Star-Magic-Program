@@ -1010,3 +1010,6 @@ observable,dark_matter_structure,paper,PAPER_200,Um channel
 observable,ramanujan_hermite_q26,paper,PAPER_205,Q_n basis
 observable,ramanujan_hermite_q26,paper,PAPER_196,26-layer gravity
 observable,q26_constant_correction,paper,PAPER_205,computed corrections
+observable,vortex_avalanche_soc,paper,PAPER_206,SOC simulation
+observable,vortex_avalanche_soc,paper,PAPER_198,"F_UBii,glitch variant"
+observable,vortex_avalanche_soc,paper,PAPER_196,R(t) anti-glitch

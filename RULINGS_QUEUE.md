@@ -5116,6 +5116,26 @@ RESOLVED section with the ruling recorded.
   corrected via direct computation.
 - **Daniel's ruling:** (pending)
 
+### Q-202 — PAPER_206 vortex avalanche SOC — UQFF glitch/anti-glitch prediction
+- **Question:** the paper maps avalanche size S to
+  F_UBii,glitch (198) via DeltaOmega = S*hbar*n_v/(4pi I),
+  predicting the UQFF buoyancy force is power-law
+  distributed P(F_UBii,glitch) ~ F^-1.6; combined with
+  196's negative-R(t) anti-glitch mechanism matching the
+  observed 1E 2259+586 anti-glitch (Antonopoulou 2018),
+  this is a falsifiable glitch <-> F_UBii,glitch <->
+  R(t)-sign chain. Register it?
+- **Notable:** honest simulation - 2D alpha = 1.6+-0.2
+  (S<=69) consistent with Melatos 2008 (1.5-2.0); 3D
+  (5 events, S<=165) candidly reported as insufficient
+  (alpha 0+-8, needs ~1000 events). Feynman n_v = 2
+  Omega m_n/hbar and Magnus F_M = rho_s kappa v_L
+  verified; SOC P(S) = C S^-a exp(-S/S*) standard;
+  anchors real (Vela 2e-6, Crab 1e-8, 1E 2259+586).
+- **Best-candidate wired:** SOC + verified physics +
+  UQFF glitch/anti-glitch prediction registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

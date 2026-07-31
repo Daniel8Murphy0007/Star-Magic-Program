@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 209 (11 ✓, 198 ⚠ OPEN_RULING)
+- **Wired:** 210 (11 ✓, 199 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2046
+- **Not yet touched:** 2045
 
 ---
 
@@ -1374,7 +1374,7 @@
 | ⬜ | PAPER_2067 | CANONICAL ANCHORED CATEGORY POPULATION AUDIT UQFF |
 | ⬜ | PAPER_2068 | ROUND 193 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2069 | SOLAR SYSTEM PLANETARY R MAG 9 OBJECT FAMILY UQFF |
-| ⬜ | PAPER_206 | Magnetar Vortex Avalanche Simulation 2D 3D Power Law Glitch |
+| ⚠ | PAPER_206 | Magnetar Vortex Avalanche Simulation 2D 3D Power Law Glitch |
 | ⬜ | PAPER_2070 | ROUND 194 PENTAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2071 | ROUND 195 DIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2072 | ROUND 196 DIAD BACKBONE FIRST UQFF |

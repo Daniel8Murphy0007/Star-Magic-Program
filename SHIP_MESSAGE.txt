@@ -1,23 +1,17 @@
-v0.209.0 PAPER_205 DO-OVER + DEPENDENCY SUPPORT (re-ship of failed v0.208.0)
+v0.210.0 BAND 1: PAPER_206 wired - VORTEX AVALANCHE SOC
 
-This ships PAPER_205 ALONE - the do-over of v0.208.0, which failed CI and Release. Per the
-one-paper-per-ship rule, PAPER_206 is NOT in this release; it ships next as v0.210.0.
+PAPER_206 Magnetar Vortex Avalanche Simulation (OPEN_RULING Q-202) - Session 50, thread 7514fe,
+sec 2.6: 2D (10x10 BFS lattice) + 3D (spherical shell) superfluid-vortex unpinning avalanches ->
+power-law P(S) ~ S^-alpha (self-organized criticality). 2D alpha ~ 1.6+-0.2 (S up to 69)
+consistent with observed pulsar glitch statistics (Melatos 2008: 1.5-2.0); 3D (5 events, S up to
+165) HONESTLY reported as insufficient (alpha 0+-8, needs ~1000 events). Feynman n_v =
+2 Omega m_n/hbar and Magnus F_M = rho_s kappa v_L verified; anchors real (Vela DeltaOmega/Omega ~
+2e-6, Crab ~ 1e-8, anti-glitch 1E 2259+586 Antonopoulou 2018).
 
-ROOT CAUSE (verified, not guessed): PAPER_205 imports sympy, but pyproject declared ZERO
-dependencies and neither workflow installed anything - so sympy was absent on the runners. The
-framework legitimately needs the scientific stack (sympy for symbolic derivations; numpy/scipy/
-mpmath for numerics), and many more papers will too.
+UQFF PREDICTION: mapping avalanche size S to F_UBii,glitch (198) via DeltaOmega = S*hbar*n_v/(4pi I)
+predicts the UQFF buoyancy force is power-law distributed, P(F_UBii,glitch) ~ F^-1.6; and 196's
+negative-R(t) anti-glitch mechanism matches the observed 1E 2259+586 anti-glitch - a falsifiable
+glitch <-> F_UBii,glitch <-> R(t)-sign chain.
 
-FIX (support it, do not work around it):
-  (1) declared dependencies = [sympy>=1.12, mpmath>=1.3, numpy>=1.24, scipy>=1.10] in pyproject
-      (verified present in the built Requires-Dist metadata);
-  (2) ci.yml and release-to-pypi.yml now `pip install .` before running the gate;
-  (3) the gate fails fast with a clear message if a declared dependency is ever missing.
-PAPER_205 keeps its sympy implementation - Q_n = x*Q_{n-1} + (n-1)*Q_{n-2} (probabilist Hermite);
-the 26-state sum is an orthogonal spectral expansion of compressed gravity; Q_26(0) = 25!! =
-7,905,853,580,625 (printed 17!! corrected), and the false "roots on unit circle" claim corrected
-to real roots.
-
-v0.208.0 skipped on PyPI; v0.209.0 supersedes it. Gate 1,351 assertions 0 failures (passes under
--W error; fails fast + clear if a dep is missing; build + twine green with Requires-Dist).
-Registry 472 rows / 1011 edges / 209 ledgers (measured). Wired 209/2,255 (11 clean, 198 OPEN_RULING). Next: PAPER_206 as v0.210.0.
+Gate 1,357 assertions 0 failures. Registry 473 rows / 1014 edges / 210 ledgers (measured). Wired 210/2,255 (11 clean, 199 OPEN_RULING).
+Next: PAPER_207.

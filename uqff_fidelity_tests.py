@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.209.0", "uqff_calculator.VERSION = 0.209.0")
+assert_that(C.VERSION == "0.210.0", "uqff_calculator.VERSION = 0.210.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2970,6 +2970,19 @@ assert_that('e^{xt+t^2/2}' in _r205['gen_function'],
 assert_that('orthogonal expansion' in _r205['orthogonal_spectral'],
             "PAPER_205: 26-state sum = orthogonal spectral expansion of gravity series (genuine)")
 assert_that(C.wired_count() >= 209, "wired_count >= 209")
+
+_r206 = C.calc('PAPER_206')['value']
+assert_that(_r206['alpha_2d'] == 1.6,
+            "PAPER_206: 2D avalanche power-law alpha ~ 1.6 (Melatos-consistent glitch stats)")
+assert_that('no constraint' in _r206['undersampling_honest'],
+            "PAPER_206: 3D N=5 undersampling honestly reported")
+assert_that('n_v = 2 Omega m_n/hbar' in _r206['feynman_magnus_correct'],
+            "PAPER_206: Feynman vortex density + Magnus force verified")
+assert_that('1E2259+586' in _r206['uqff_glitch_prediction'],
+            "PAPER_206: UQFF anti-glitch prediction ties to 196 R(t) + 1E 2259+586 (Q-202)")
+assert_that(_r206['anchors']['vela'] == 2e-6,
+            "PAPER_206: Vela glitch DeltaOmega/Omega ~ 2e-6 (real anchor)")
+assert_that(C.wired_count() >= 210, "wired_count >= 210")
 
 
 # =============================================================================

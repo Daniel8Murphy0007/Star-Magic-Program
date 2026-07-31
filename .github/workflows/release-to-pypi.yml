@@ -57,6 +57,10 @@ jobs:
 
       - name: Publish to PyPI (Trusted Publisher, OIDC)
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # Idempotent: if this version is already on PyPI (e.g. a tag was moved /
+          # re-pushed after a history cleanup), skip instead of failing on 409.
+          skip-existing: true
         # No 'password' — Trusted Publisher / OIDC authentication.
         # Configure at: https://pypi.org/manage/account/publishing/
         #   PyPI Project Name : star-magic-program

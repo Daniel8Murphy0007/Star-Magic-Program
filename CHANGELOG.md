@@ -7,7 +7,16 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [0.209.0] — 2026-07-31 — PAPER_205 DO-OVER + DEPENDENCY SUPPORT
+## [0.210.0] — 2026-07-31 — BAND 1: PAPER_206 — VORTEX AVALANCHE SOC
+
+### Added
+- **PAPER_206 dispatch** (magnetar vortex avalanche, S50, sec 2.6): 2D/3D self-organized-criticality simulation of superfluid vortex unpinning. 2D power-law alpha ~ 1.6+-0.2 (S<=69) consistent with Melatos 2008 pulsar glitch stats; 3D (5 events) honestly reported as undersampled. Feynman vortex density + Magnus force verified; real anchors (Vela 2e-6, Crab 1e-8, 1E 2259+586 anti-glitch). UQFF PREDICTION: P(F_UBii,glitch) ~ F^-1.6 + the 196 negative-R(t) anti-glitch mechanism matching 1E 2259+586 - a falsifiable glitch/anti-glitch chain.
+- OPEN_RULING Q-202.
+- Gate: 1,357 assertions, 0 failures. Registry: 473 rows / 1014 edges / 210 ledgers (measured).
+
+---
+
+## [0.209.0] — 2026-07-31 — BAND 1: PAPER_205 wired — RAMANUJAN/HERMITE Q_n (+ dependency support)
 
 ### Fixed / Added
 - **Re-ships PAPER_205** after v0.208.0 failed CI and Release. Root cause: PAPER_205 imports sympy, but the package declared ZERO dependencies and the workflows never installed anything, so sympy was absent on the runners. The framework legitimately needs the scientific stack (sympy for symbolic derivations; numpy/scipy/mpmath for numerics) and more papers will too — the fix SUPPORTS it rather than working around it.
