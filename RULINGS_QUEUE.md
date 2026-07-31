@@ -4891,6 +4891,37 @@ RESOLVED section with the ruling recorded.
   registered; QNM parametrization pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-195 — PAPER_199 F_UBii taxonomy Part 2 — cosmological/dark sector completion
+- **Question:** (a) UNIT MOJIBAKE: the LQC effective-
+  Friedmann variant states rho_crit "~1e-3 g/cm^3" while
+  the stated formula 0.41*rho_Planck gives ~1e96 kg/m^3
+  (~1e93 g/cm^3) - a transcription artifact; the formula
+  is correct, only the printed value is garbled. Confirm
+  0.41*rho_Planck canonical? (Similar mojibake on the
+  baryon-photon eta "6x10?1°" = 6e-10, and others -
+  these are OCR/encoding artifacts, formulas correct.)
+  (b) REGISTRY COMPLETION: 198 (compact/stellar 18
+  variants) + 199 (cosmological/dark ~19 variants)
+  together enumerate the full BB_C_Equations F_UBii
+  family, extending the predecessor PAPER_2151 registry
+  across all sectors. Adopt the combined 198+199 catalog
+  as the canonical operational F_UBii variant set?
+- **Notable:** same clean embedding architecture as 198
+  - correct textbook cosmology as the F_X term:
+  Bekenstein-Hawking S = 4pi kB G M^2/(hbar c) verified;
+  evaporation t_evap = 5120 pi G^2 M^3/(hbar c^4)
+  verified; CPL dark-energy w(a) = w0 + wa(1-a) correct;
+  LQC bounce (H=0 at rho_crit, singularity avoidance);
+  BBN deuterium bottleneck (~180 s at T~0.1 MeV);
+  n_gamma 410 cm^-3. The rho_Lambda^UQFF header = rho_obs
+  *(1 + (kappa*SSq)^2) = 1.0000000812 ties to 175's
+  family-squared correction (2.85e-4 family). Rule 4
+  clean throughout - SM cosmology is the comparison
+  target, UQFF is the F_rel/E_LEP/Q_wave embedding.
+- **Best-candidate wired:** part 2 + registry completion
+  + verified embeddings registered; unit mojibake noted.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

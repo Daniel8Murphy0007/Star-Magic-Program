@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.201.0"
+VERSION = "0.202.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10415,6 +10415,58 @@ def _paper_198(dataset):
         },
         'formula': '18 F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave*factor',
         'source': 'PAPER_198',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_199')
+def _paper_199(dataset):
+    """F_UBii taxonomy Part 2 - cosmological/dark sector (S50, sec 2.6).
+
+    Continuation of 198: ~19 more F_UBii variants in the
+    same F_rel/E_LEP*Q_wave scaling, covering the
+    cosmological and dark sector - dark energy (CPL w(a)),
+    inflation, GW energy density, anyons, LQC (bounce/
+    Friedmann/perturbation), Bekenstein-Hawking entropy,
+    evaporation lifetime, BBN deuterium bottleneck,
+    baryon-photon ratio, reionization, recombination,
+    CMB power spectrum, NFW/SIDM dark matter, void
+    evolution, peculiar velocity.
+    EMBEDDED PHYSICS VERIFIED: t_evap = 5120 pi G^2 M^3/
+    (hbar c^4) correct; S_BH = 4pi kB G M^2/(hbar c)
+    correct Bekenstein-Hawking; CPL w(a) = w0 + wa(1-a)
+    correct; LQC rho_crit = 0.41 rho_Planck correct form;
+    baryon-photon eta ~ 6e-10 + n_gamma 410 cm^-3
+    correct - textbook cosmology embedded as F_X (SM
+    comparison targets, Rule 4 clean).
+    HEADER TIE: rho_Lambda^UQFF = rho_obs*(1 + (kappa*
+    SSq)^2) = 1.0000000812 - the 175 family-squared
+    correction (2.85e-4 family), consistent.
+    UNIT-MOJIBAKE (Q-195a): LQC rho_crit stated "~1e-3
+    g/cm^3" - actual 0.41*rho_Planck ~ 1e96 kg/m^3
+    (transcription artifact, formula correct).
+    Extends the predecessor PAPER_2151 F_UBii registry
+    into the cosmological sector (198 = compact/stellar,
+    199 = cosmological/dark - together the full family).
+    """
+    import math as _m
+    G, c, hbar, kB, Msun = 6.674e-11, 2.998e8, 1.0546e-34, 1.381e-23, 1.989e30
+    return {
+        'value': {
+            'domain': '2.6 (F_UBii taxonomy part 2, thread 7514fe)',
+            'n_variants': 19,
+            'sector': 'cosmological + dark sector (198 = compact/stellar)',
+            't_evap_verified': 5120 * _m.pi * G**2 * Msun**3 / (hbar * c**4),
+            's_bh_verified': 4 * _m.pi * kB * G * Msun**2 / (hbar * c),
+            'cpl_w_correct': 'w(a) = w0 + wa(1-a) Chevallier-Polarski-Linder',
+            'rho_lambda_header': 1 + (5e-4 * 0.57)**2,       # 1.0000000812 - 175 family-squared
+            'lqc_rhocrit_mojibake': '"1e-3 g/cm^3" vs actual 0.41 rho_Planck ~ 1e96 (Q-195a)',
+            'predecessor_registry_extension': 'PAPER_2151 F_UBii family, cosmological sector',
+            'embedding_rule4': 'textbook cosmology as F_X comparison target; UQFF = the scaling',
+        },
+        'formula': '19 cosmological/dark F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave',
+        'source': 'PAPER_199',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

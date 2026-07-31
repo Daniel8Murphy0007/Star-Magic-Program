@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.202.0] — 2026-07-31 — BAND 1: PAPER_199 — F_UBII TAXONOMY PART 2
+
+### Added
+- **PAPER_199 dispatch** (F_UBii taxonomy Part 2, S50, sec 2.6): 19 cosmological/dark-sector buoyancy variants (dark energy CPL, inflation, GW, anyons, LQC bounce/Friedmann/perturbation, Bekenstein-Hawking, evaporation, BBN, baryon-photon, reionization, recombination, CMB, NFW/SIDM, voids, peculiar velocity). Embedded physics verified (t_evap, S_BH, CPL w(a) correct); rho_Lambda header = 1+(kappa·SSq)² (175 family-squared). Together 198+199 complete the predecessor PAPER_2151 F_UBii registry across compact/stellar + cosmological sectors. PINNED: LQC rho_crit unit mojibake (formula correct, printed value garbled).
+- OPEN_RULING Q-195.
+- Gate: 1,316 assertions, 0 failures. Registry: 465 rows / 994 edges / 203 ledgers (measured).
+
+---
+
 ## [0.201.0] — 2026-07-31 — BAND 1: PAPER_198 — F_UBII TAXONOMY PART 1
 
 ### Added

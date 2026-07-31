@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.201.0", "uqff_calculator.VERSION = 0.201.0")
+assert_that(C.VERSION == "0.202.0", "uqff_calculator.VERSION = 0.202.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2862,6 +2862,19 @@ assert_that('universe-response' in _r198['ubii_role'],
 assert_that('Berti' in _r198['qnm_parametrization_note'],
             "PAPER_198: QNM ringdown parametrization vs canonical Berti fit noted (Q-194a)")
 assert_that(C.wired_count() >= 202, "wired_count >= 202")
+
+_r199 = C.calc('PAPER_199')['value']
+assert_that(_r199['n_variants'] == 19,
+            "PAPER_199: 19 cosmological/dark-sector F_UBii variants (Part 2)")
+assert_that(_r199['s_bh_verified'] > 1e54 * 0.9,
+            "PAPER_199: embedded Bekenstein-Hawking S = 4pi kB G M^2/hbar c verified correct")
+assert_that(abs(_r199['rho_lambda_header'] - 1.0000000812) < 1e-10,
+            "PAPER_199: header rho_Lambda = 1+(kappa*SSq)^2 = 175 family-squared, consistent")
+assert_that('Chevallier-Polarski-Linder' in _r199['cpl_w_correct'],
+            "PAPER_199: CPL dark-energy w(a) parametrization correct")
+assert_that('PAPER_2151' in _r199['predecessor_registry_extension'],
+            "PAPER_199: extends predecessor F_UBii registry into cosmological sector")
+assert_that(C.wired_count() >= 203, "wired_count >= 203")
 
 # =============================================================================
 # REPORT

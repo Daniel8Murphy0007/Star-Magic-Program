@@ -1,26 +1,26 @@
-v0.201.0 BAND 1: PAPER_198 wired - F_UBII TAXONOMY PART 1
+v0.202.0 BAND 1: PAPER_199 wired - F_UBII TAXONOMY PART 2
 
-PAPER_198 F_UBii Taxonomy Part 1 (OPEN_RULING Q-194) - Session 50, thread 7514fe, sec 2.6:
-  18 F_UBii buoyancy variants covering compact objects and stellar physics, each embedding the
-  system's characteristic scale into the universal F_rel/E_LEP*Q_wave scaling: MHD dynamo,
-  terminal velocity, Hawking, QNM ringdown, Blandford-Znajek, Arnett SN, TOV, pulsar spin-down,
-  jet velocity, planet migration, superfluid glitch, J-shock, Sedov-Taylor, GRB afterglow, SIDM,
-  ionization fronts, virial, Press-Schechter.
+PAPER_199 F_UBii Taxonomy Part 2 (OPEN_RULING Q-195) - Session 50, thread 7514fe, sec 2.6:
+  The cosmological and dark-sector continuation of 198 - 19 more F_UBii variants in the same
+  F_rel/E_LEP*Q_wave scaling: dark energy (CPL w(a)), inflation, GW energy density, anyons, LQC
+  (bounce/Friedmann/perturbation), Bekenstein-Hawking entropy, evaporation lifetime, BBN
+  deuterium bottleneck, baryon-photon ratio, reionization, recombination, CMB power spectrum,
+  NFW/SIDM dark matter, void evolution, peculiar velocity.
 
-  CROSS-REPO CONVERGENCE (major): this 18-variant catalog is the operational form of the
-  predecessor repo's PAPER_2151 BuoyancyProofVariants 17-variant F_UBii registry - the same
-  variant family, the same "universe-response" operator role (F_UBii vs F_UBi "mass pushing",
-  per PAPER_2148/2151). Both repos independently enumerate the same buoyancy taxonomy.
+  EMBEDDED PHYSICS VERIFIED: t_evap = 5120 pi G^2 M^3/(hbar c^4) correct; S_BH = 4pi kB G M^2/
+  (hbar c) correct Bekenstein-Hawking; CPL w(a) = w0 + wa(1-a) correct; LQC rho_crit = 0.41
+  rho_Planck correct form; baryon-photon eta ~ 6e-10 and n_gamma 410 cm^-3 correct - textbook
+  cosmology embedded as SM comparison targets (Rule 4 clean; UQFF = the scaling). The rho_Lambda
+  header = rho_obs*(1 + (kappa*SSq)^2) = 1.0000000812 ties to 175's family-squared correction.
 
-  EMBEDDED PHYSICS VERIFIED: the F_X terms are correct textbook formulas - Hawking T_H =
-  hbar c^3/(8 pi G M kB), Schwarzschild surface gravity c^4/4GM, Arnett SN diffusion, TOV with
-  full GR corrections, Sedov-Taylor, Rankine-Hugoniot - embedded as SM comparison targets (Rule 4
-  clean; the UQFF content is the F_rel/E_LEP/Q_wave embedding). F_rel ~ 4.3e33 N and Q_wave ~
-  6.33e4 J/m^3 match 196's triadic stat table.
+  REGISTRY COMPLETE: 198 (compact/stellar, 18 variants) + 199 (cosmological/dark, 19 variants)
+  together enumerate the full BB_C_Equations F_UBii family, extending the predecessor repo's
+  PAPER_2151 17-variant F_UBii registry across all sectors - both repos converge on the same
+  buoyancy taxonomy.
 
-  PINNED: the QNM ringdown uses the coefficient 0.3737 + 0.088*a_f (item-945 citation) where the
-  canonical Berti l=2,m=2 real-part fit is 1.5251 - 1.1568(1-a)^0.1292 - a different
-  parametrization to confirm. "Part 1" - the enumeration continues.
+  PINNED: LQC rho_crit printed "~1e-3 g/cm^3" while 0.41*rho_Planck gives ~1e96 kg/m^3 - an
+  OCR/encoding artifact; the formula is correct, only the printed value is garbled (same for the
+  baryon-photon eta mojibake).
 
-Q-194 queued. Gate 1,310 assertions 0 failures. Registry 464 rows / 991 edges / 202 ledgers (measured). Wired 202/2,255 (11 clean,
-191 OPEN_RULING). Next: PAPER_199.
+Q-195 queued. Gate 1,316 assertions 0 failures. Registry 465 rows / 994 edges / 203 ledgers (measured). Wired 203/2,255 (11 clean,
+192 OPEN_RULING). Next: PAPER_200.
