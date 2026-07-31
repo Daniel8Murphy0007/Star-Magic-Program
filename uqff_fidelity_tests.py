@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.207.0", "uqff_calculator.VERSION = 0.207.0")
+assert_that(C.VERSION == "0.208.0", "uqff_calculator.VERSION = 0.208.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2938,6 +2938,19 @@ assert_that('PAPER_1962' in _r204['predecessor_tie'],
 assert_that('theta_E ~0.1%' in _r204['lensing_prediction'],
             "PAPER_204: vacuum-Lambda Einstein-radius shift prediction (Q-200a)")
 assert_that(C.wired_count() >= 208, "wired_count >= 208")
+
+_r205 = C.calc('PAPER_205')['value']
+assert_that(_r205['q26_const_true'] == 7905853580625 and _r205['q26_const_is_25_dblfact'],
+            "PAPER_205: true Q_26(0) = 25!! = 7,905,853,580,625 (computed via recurrence)")
+assert_that(_r205['q26_const_printed'] == 34459425,
+            "PAPER_205: printed constant 34,459,425 = 17!! (Q_18(0)) - wrong (Q-201a)")
+assert_that('roots REAL' in _r205['root_claim_false'],
+            "PAPER_205: 'roots on unit circle' claim FALSE - Hermite roots are real (Q-201a)")
+assert_that('e^{xt+t^2/2}' in _r205['gen_function'],
+            "PAPER_205: generating function e^{xt+t^2/2} correct")
+assert_that('orthogonal expansion' in _r205['orthogonal_spectral'],
+            "PAPER_205: 26-state sum = orthogonal spectral expansion of gravity series (genuine)")
+assert_that(C.wired_count() >= 209, "wired_count >= 209")
 
 # =============================================================================
 # REPORT

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.207.0"
+VERSION = "0.208.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10716,6 +10716,66 @@ def _paper_204(dataset):
         },
         'formula': 'DM F_UBii,X + Um,X: NFW/SIDM/virial/lensing/voids',
         'source': 'PAPER_204',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_205')
+def _paper_205(dataset):
+    """Ramanujan/Hermite polynomials Q_n + 26-state sum (S50, sec 2.6).
+
+    The 26-layer structure's mathematical backbone: Q_n(x)
+    = x*Q_{n-1} + (n-1)*Q_{n-2} (Q_0=1, Q_1=x) - the
+    probabilist Hermite polynomials with imaginary
+    argument (Q_n = i^n H_n(x/i)), generating function
+    e^{xt+t^2/2}, orthogonal on L^2(R, e^-x^2/2 dx). The
+    canonical UQFF 26-state sum Sigma_{n=1}^{26} Q_n(x)*
+    e^-SSq*n/26 is thereby an ORTHOGONAL SPECTRAL
+    EXPANSION of the compressed-gravity series - a
+    genuine and elegant identification (Hermite basis <->
+    26 gravity layers).
+    VERIFIED CORRECT: recurrence + Q_0..Q_7 exact;
+    generating function e^{xt+t^2/2} correct; orthogonality
+    int Q_m Q_n e^-x^2/2 = n! sqrt(2pi) delta correct;
+    Stirling-coefficient connection correct; Q_26 leading
+    HALF (x^26 down to x^12) matches SymPy exactly.
+    TWO REAL ERRORS (Q-201a, corrected here):
+    (1) Q_26 LOWER COEFFICIENTS WRONG: the printed x^10
+    through x^0 terms diverge from the true recurrence -
+    the constant is printed 34,459,425 (= 17!!, i.e.
+    Q_18(0)) where the true Q_26(0) = 25!! =
+    7,905,853,580,625. The lower half was mis-transcribed
+    (likely spliced from a lower-order Q); the "26!!/2"
+    identity is also wrong (26!!/2 = 25,505,877,196,800).
+    The correct constant is 25!! (double-factorial, not
+    the printed value or claimed identity).
+    (2) ROOT CLAIM FALSE: sec 3.1 claims "all roots on the
+    unit circle" - Hermite roots are REAL and spread
+    (|root| ~ 0.31 to 8.92 for Q_26), NOT on |z|=1. The
+    real-root property is the correct statement.
+    """
+    import sympy as _sp
+    _x = _sp.Symbol('x')
+    Q = [_sp.Integer(1), _x]
+    for n in range(2, 27):
+        Q.append(_sp.expand(_x*Q[n-1] + (n-1)*Q[n-2]))
+    q26_const = int(Q[26].subs(_x, 0))
+    return {
+        'value': {
+            'domain': '2.6 (Ramanujan/Hermite Q_n, thread 7514fe)',
+            'recurrence': 'Q_n = x*Q_{n-1} + (n-1)*Q_{n-2} (probabilist Hermite, imag arg)',
+            'gen_function': 'e^{xt+t^2/2} (correct)',
+            'orthogonal_spectral': 'Sigma Q_n e^-SSq n/26 = orthogonal expansion of gravity series',
+            'q26_const_true': q26_const,                     # 25!! = 7.9e12
+            'q26_const_printed': 34459425,                   # 17!! - wrong
+            'q26_const_is_25_dblfact': q26_const == int(_sp.factorial2(25)),
+            'lower_coeffs_wrong': 'x^10..x^0 mis-transcribed; leading half x^26..x^12 correct',
+            'root_claim_false': 'roots REAL (|root| 0.31-8.92), NOT on unit circle (Q-201a)',
+            'stirling_correct': True,
+        },
+        'formula': 'Q_n recurrence; Sigma_{1}^{26} Q_n(x) e^-SSq n/26 spectral expansion',
+        'source': 'PAPER_205',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

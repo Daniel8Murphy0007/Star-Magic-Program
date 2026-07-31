@@ -5076,6 +5076,46 @@ RESOLVED section with the ruling recorded.
   lensing prediction + core-cusp honesty registered.
 - **Daniel's ruling:** (pending)
 
+### Q-201 — PAPER_205 Ramanujan/Hermite Q_n — two computed corrections
+- **Question:** two real mathematical errors, both
+  corrected in the wiring via direct SymPy recurrence
+  computation:
+  (a) Q_26(x) LOWER COEFFICIENTS: the printed x^10
+  through x^0 terms diverge from the true recurrence
+  Q_n = x Q_{n-1} + (n-1) Q_{n-2}. The leading half
+  (x^26 down to x^12) matches EXACTLY, but the constant
+  term is printed 34,459,425 = 17!! (which is Q_18(0),
+  not Q_26(0)); the TRUE Q_26(0) = 25!! =
+  7,905,853,580,625. The claimed identity "34,459,425 =
+  26!!/2" is also wrong (26!!/2 = 25,505,877,196,800).
+  The lower half was evidently mis-transcribed/spliced
+  from a lower-order polynomial. Adopt the recurrence-
+  computed Q_26 (constant = 25!! double factorial) as
+  canonical?
+  (b) ROOT STRUCTURE: sec 3.1 claims "all roots of Q_n
+  lie on the unit circle" - this is FALSE. Q_n are
+  (imaginary-argument) Hermite polynomials whose roots
+  are REAL and spread (Q_26 roots |z| ~ 0.31 to 8.92),
+  definitely not on |z|=1. The correct statement is
+  that the roots are real. Replace the claim?
+- **Notable (the paper's core idea is GENUINE and
+  elegant):** the recurrence, Q_0..Q_7, the generating
+  function e^{xt+t^2/2}, the orthogonality int Q_m Q_n
+  e^-x^2/2 dx = n! sqrt(2pi) delta_mn, and the Stirling-
+  number coefficient connection are ALL CORRECT standard
+  probabilist-Hermite results. The real content - that
+  the UQFF 26-state summation Sigma_{n=1}^{26} Q_n(x)*
+  e^-SSq*n/26 is an ORTHOGONAL SPECTRAL EXPANSION of the
+  compressed-gravity series in L^2(R, e^-x^2/2 dx),
+  mapping the Hermite basis to the 26 gravity layers -
+  is a genuine and mathematically sound identification,
+  independent of the two transcription errors. [SSq]
+  appears here again in the log-formula (Q-192a) form.
+- **Best-candidate wired:** Q_n basis + spectral-
+  expansion identification registered; both errors
+  corrected via direct computation.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

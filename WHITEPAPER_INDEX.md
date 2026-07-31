@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 208 (11 ✓, 197 ⚠ OPEN_RULING)
+- **Wired:** 209 (11 ✓, 198 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2047
+- **Not yet touched:** 2046
 
 ---
 
@@ -1363,7 +1363,7 @@
 | ⬜ | PAPER_2057 | ROUND 187 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2058 | R100 R149 RETROSPECTIVE SWEEP SINGLE UQFF |
 | ⬜ | PAPER_2059 | ROUND 188 SINGLE BACKBONE FIRST UQFF |
-| ⬜ | PAPER_205 | Ramanujan Polynomials Q26 UQFF 26State Summations |
+| ⚠ | PAPER_205 | Ramanujan Polynomials Q26 UQFF 26State Summations |
 | ⬜ | PAPER_2060 | TON618 QUAD 4 OBJECT AGN FAMILY UQFF |
 | ⬜ | PAPER_2061 | ROUND 189 200TH NOVEL MILESTONE UQFF |
 | ⬜ | PAPER_2062 | ROUND 190 DIAD BACKBONE FIRST UQFF |

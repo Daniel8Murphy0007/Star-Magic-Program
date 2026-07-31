@@ -2337,3 +2337,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 208/2,255 (11 ✓, 197 ⚠). Next: PAPER_205.
 
 ---
+
+## 2026-07-31 — v0.208.0 — BAND 1: PAPER_205
+
+- PAPER_205 wired (⚠ Q-201): Ramanujan/Hermite Q_n. 26-state sum = genuine orthogonal spectral expansion; two math errors corrected via direct SymPy computation (Q_26 constant 25!! vs printed 17!!; false unit-circle root claim -> real roots).
+- Campaign: 209/2,255 (11 ✓, 198 ⚠). Next: PAPER_206.
+
+---

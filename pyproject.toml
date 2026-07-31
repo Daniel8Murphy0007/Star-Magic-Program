@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.207.0"
-description = "UQFF Star-Magic-Program v0.207.0: PAPER_204 wired - dark-matter structural physics (NFW/SIDM/virial/lensing/voids) under both channels; real anchors verified (MW NFW, Coma virial, Bullet Cluster SIDM, SDP.81 lens); core-cusp tension stated honestly; ~0.1% lensing prediction; predecessor PAPER_1962 tie. Q-200. Wired 208/2255, gate 1345/0. Registry 470 rows / 1008 edges / 208 ledgers (measured)."
+version = "0.208.0"
+description = "UQFF Star-Magic-Program v0.208.0: PAPER_205 wired - Ramanujan/Hermite Q_n polynomials backing the 26-layer structure; 26-state sum = GENUINE orthogonal spectral expansion of compressed gravity; recurrence/gen-func/orthogonality verified; TWO errors corrected via direct computation (Q_26 constant 25!! not printed 17!!; false unit-circle root claim). Q-201. Wired 209/2255, gate 1351/0. Registry 472 rows / 1011 edges / 209 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

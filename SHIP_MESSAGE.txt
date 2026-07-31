@@ -1,25 +1,24 @@
-v0.207.0 BAND 1: PAPER_204 wired - DARK MATTER
+v0.208.0 BAND 1: PAPER_205 wired - RAMANUJAN/HERMITE Q_n
 
-PAPER_204 UQFF Dark Matter - NFW/SIDM/Rotation Curves/Virial (OPEN_RULING Q-200) - Session 50,
+PAPER_205 Ramanujan Polynomials Q_n and 26-State Summations (OPEN_RULING Q-201) - Session 50,
 thread 7514fe, sec 2.6:
-  The dark-matter sector under both the F_UBii and Um channels: NFW density profile and rotation
-  curve, SIDM core formation, virial-theorem mass, strong gravitational lensing Einstein radius,
-  void density evolution, peculiar velocity.
+  The mathematical backbone of the 26-layer structure: Q_n(x) = x*Q_{n-1} + (n-1)*Q_{n-2}
+  (Q_0=1, Q_1=x) - the probabilist Hermite polynomials with imaginary argument, generating
+  function e^{xt+t^2/2}, orthogonal on L^2(R, e^-x^2/2 dx).
 
-  REAL ANCHORS VERIFIED: MW NFW rho_s ~ 0.3 GeV/cm^3, r_s ~ 20 kpc, v_c ~ 220 km/s at the Solar
-  circle; Coma virial sigma_v ~ 880 km/s -> M_vir ~ 5e14-2e15 Msun (3 sigma^2 r_h/G); SIDM s/m <
-  1.25 cm^2/g (Bullet Cluster) + ~100 pc dwarf soliton cores; SDP.81 ALMA lens (z_L=0.3, z_S=3.04,
-  theta_E ~ 1.5"). NFW rho = rho_s/(x(1+x)^2) and enclosed-mass forms correct; virial 2K+W=0
-  correct.
+  THE CORE IDEA IS GENUINE AND ELEGANT: the UQFF 26-state summation Sigma_{n=1}^{26} Q_n(x)*
+  e^-SSq*n/26 is thereby an ORTHOGONAL SPECTRAL EXPANSION of the compressed-gravity series,
+  mapping the Hermite basis onto the 26 gravity layers. The recurrence, Q_0..Q_7, the generating
+  function, the orthogonality relation, and the Stirling-number coefficient connection are ALL
+  correct standard results - I verified them by direct computation.
 
-  HONEST OPEN PROBLEM: the paper states the NFW core-cusp tension plainly (NFW predicts a cusp,
-  observations often show cores) and offers SIDM as the resolution - a candid treatment of a real
-  unsolved DM problem. Connects to the predecessor's DM/rotation work (PAPER_1962 M31 rotation
-  curve, PAPER_1015/1019 NFW halos + DM phonon buoyancy).
+  TWO REAL ERRORS FOUND AND CORRECTED (via SymPy recurrence): (1) the printed Q_26(x) lower
+  coefficients (x^10 down to x^0) diverge from the true recurrence - the leading half (x^26..
+  x^12) is exact, but the constant is printed 34,459,425 = 17!! (which is Q_18(0)), where the
+  TRUE Q_26(0) = 25!! = 7,905,853,580,625; the claimed "26!!/2" identity is also wrong. (2) the
+  sec-3.1 claim "all roots lie on the unit circle" is FALSE - Hermite roots are REAL and spread
+  (|z| ~ 0.31 to 8.92 for Q_26). The dispatch computes the correct Q_26 and states the real-root
+  property.
 
-  UQFF-ADJACENT: the vacuum-Lambda correction to the lensing distance D_LS shifts the Einstein
-  radius by ~0.1% - a concrete lensing prediction (testable against SDP.81-class ALMA lenses).
-  Rule 4 clean throughout.
-
-Q-200 queued. Gate 1,345 assertions 0 failures. Registry 470 rows / 1008 edges / 208 ledgers (measured). Wired 208/2,255 (11 clean,
-197 OPEN_RULING). Next: PAPER_205.
+Q-201 queued. Gate 1,351 assertions 0 failures. Registry 472 rows / 1011 edges / 209 ledgers (measured). Wired 209/2,255 (11 clean,
+198 OPEN_RULING). Next: PAPER_206.

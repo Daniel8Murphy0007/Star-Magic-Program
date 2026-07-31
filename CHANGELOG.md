@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.208.0] — 2026-07-31 — BAND 1: PAPER_205 — RAMANUJAN/HERMITE Q_n
+
+### Added
+- **PAPER_205 dispatch** (Ramanujan/Hermite Q_n + 26-state sum, S50, sec 2.6): the recurrence Q_n = x·Q_{n-1} + (n-1)·Q_{n-2} (probabilist Hermite, imaginary argument) backing the 26-layer structure. The UQFF 26-state sum is a GENUINE orthogonal spectral expansion of the compressed-gravity series on L^2(R, e^-x^2/2) — recurrence, Q_0..Q_7, generating function e^{xt+t^2/2}, orthogonality, and Stirling connection all VERIFIED. TWO ERRORS CORRECTED via direct SymPy computation: (1) Q_26 lower coefficients mis-transcribed — printed constant 34,459,425 = 17!! (Q_18(0)); true Q_26(0) = 25!! = 7,905,853,580,625 (the "26!!/2" identity also wrong); (2) the sec-3.1 "roots on unit circle" claim is FALSE — Hermite roots are real (|z| 0.31-8.92).
+- OPEN_RULING Q-201.
+- Gate: 1,351 assertions, 0 failures. Registry: 472 rows / 1011 edges / 209 ledgers (measured).
+
+---
+
 ## [0.207.0] — 2026-07-31 — BAND 1: PAPER_204 — DARK MATTER
 
 ### Added
