@@ -885,3 +885,8 @@ observable,coanqi_architecture,paper,PAPER_169,6-tier framework
 primitive,KAPPA_PER_DAY,observable,coanqi_architecture,delta_P factor
 primitive,SSQ,observable,coanqi_architecture,delta_P factor
 observable,coanqi_prediction,paper,PAPER_169,GPU/JWST prediction
+observable,celestialbody_12field,paper,PAPER_170,12-field struct
+primitive,KAPPA_PER_DAY,observable,celestialbody_12field,compact Ubi law
+primitive,SSQ,observable,celestialbody_12field,compact Ubi law
+observable,celestialbody_forks,paper,PAPER_170,forks vs 157/162
+observable,celestialbody_forks,paper,PAPER_162,omega_c regression

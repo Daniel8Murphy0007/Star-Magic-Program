@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.172.0"
+VERSION = "0.173.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -8990,5 +8990,53 @@ def _paper_169(dataset):
         'formula': 'NS + F_U/rho body force; delta_P = kappa*SSq*U_bi = 2.85e-4*U_bi',
         'source': 'PAPER_169',
         'residual_pct': abs(KAPPA_PER_DAY * SSQ - 2.85e-4) / 2.85e-4 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_170')
+def _paper_170(dataset):
+    """CelestialBody 12-field parameter space (S48, sec 2.4-B).
+
+    Documents the fundamental body descriptor consumed by
+    Ug1-Ug4/Um/F_U (fields-to-parameters dependency map).
+    VERIFIED: real spin rates EXACT (Earth 7.292e-5,
+    Jupiter 1.758e-4 = 9.925 h, Neptune 1.083e-4 =
+    16.11 h); Sun omega_s = 2.5e-6 = the PREDECESSOR
+    CANONICAL omega_s_Sun EXACT (primitive convergence);
+    QUA Sun/Earth = 10 consistent with its own sec 5.
+    NEW COMPACT BUOYANCY LAW (header): U_bi(r) = kappa*
+    SSq*G*M_s/r^2 = 2.85e-4 * g_Newton - a second Ubi
+    form vs the full 148/157 chain (Q-166a fork; but
+    consistent with the 2.85e-4 family: 158 footer, 169
+    delta_P).
+    OMEGA_C REGRESSION (Q-166b): "all bodies currently
+    share the Solar 11-yr cycle" - contradicts 162's
+    per-body omega_c foundation (11/1/11.86/164.8 yr) one
+    thread later. Supersession direction needed.
+    NEPTUNE FORKS (Q-166c): Bs 2e-5 here vs 157's 1e-4
+    (5x); SCm_density 1e12 vs 157's 1e11 (10x).
+    PLACEHOLDER CONFESSION: "SCm_contrib = 1e3
+    (placeholder constant)" - the corpus itself declares
+    157/162's +1e3 mu_s term a placeholder (Q-158c
+    partially self-resolved).
+    """
+    import math as _m
+    return {
+        'value': {
+            'domain': '2.4-B (CelestialBody struct, thread 381a8fe7)',
+            'n_fields': 12,
+            'ubi_compact_law': 'U_bi = kappa*SSq*G*M/r^2 = 2.85e-4*g_Newton (2nd Ubi form)',
+            'ubi_factor': KAPPA_PER_DAY * SSQ,               # 2.85e-4
+            'omega_s_sun_canonical': 2.5e-6,                 # = predecessor omega_s_Sun EXACT
+            'spin_rates_exact': {'earth': 7.292e-5, 'jupiter': 1.758e-4, 'neptune': 1.083e-4},
+            'omega_c_regression': 'shared 11-yr for ALL bodies vs 162 per-body (Q-166b)',
+            'neptune_forks': 'Bs 2e-5 vs 1e-4 (5x); SCm 1e12 vs 1e11 (10x) vs 157',
+            'placeholder_confessed': 'SCm_contrib = 1e3 declared placeholder (Q-158c)',
+            'qua_ratio_sun_earth': 1e-11 / 1e-12,            # 10 consistent
+        },
+        'formula': '12-field struct -> Ug1-Ug4/Um/F_U; U_bi = kappa*SSq*GM/r^2',
+        'source': 'PAPER_170',
+        'residual_pct': abs(2 * _m.pi / (11 * 3.156e7) - 1.81e-8) / 1.81e-8 * 100,
         'status': 'OPEN_RULING',
     }

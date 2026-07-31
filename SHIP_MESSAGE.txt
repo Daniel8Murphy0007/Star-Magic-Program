@@ -1,33 +1,32 @@
-v0.172.0 BAND 1: PAPER_169 wired - SEC 2.4 OPENS (COANQI)
+v0.173.0 BAND 1: PAPER_170 wired - CELESTIALBODY STRUCT
 
-PAPER_169 CoAnQi Multi-Tier Architecture (OPEN_RULING
-Q-165) - Session 48, thread 381a8fe7, sec 2.4-A opener.
-SEC 2.3 BLOCK (157-168, 12 papers) IS CLOSED.
+PAPER_170 CelestialBody 12-Field Parameter Space
+(OPEN_RULING Q-166) - Session 48, thread 381a8fe7, sec
+2.4-B:
+  The fundamental body descriptor for all UQFF field
+  calculations, with the field-dependency map (which
+  params feed Ug1-Ug4/Um/Ubi).
 
-  Six-tier framework: Qt6 GUI -> 446-module C++
-  calculator (107k lines) -> Python parallel calculators
-  -> REST API on port 3141 (a pi-digits echo) -> VR/VM
-  GPU backend -> headless CPU server; SIMPlugin
-  cross-platform loader; Navier-Stokes body-force
-  coupling with F_U/rho at N = 32, dt = 0.1.
+  CONVERGENCES: real spin rates EXACT (Earth 7.292e-5,
+  Jupiter 9.925 h, Neptune 16.11 h); Sun omega_s =
+  2.5e-6 rad/s EQUALS the predecessor repo's canonical
+  omega_s_Sun primitive EXACTLY (cross-repo convergence);
+  QUA Sun/Earth = 10 internally consistent. And a
+  CONFESSION: "SCm_contrib = 1e3 (placeholder constant)"
+  - the corpus itself declares the +1e3 mu_s term a
+  placeholder, partially self-resolving Q-158c.
 
-  CORPUS-CONSISTENT: delta_P = kappa*SSq*U_bi with
-  kappa*SSq = 2.85e-4 EXACT - the same product as 158's
-  footer; the F_U minus-buoyancy sign convention appears
-  for the 3rd consecutive paper (PAPER_2152 provenance
-  echo). TESTABLE PREDICTION registered: >1e7 UQFF
-  evals/s on GPU enabling JWST NIRCam cube fitting to
-  discriminate the 2.85e-4 buoyancy correction from LCDM
-  at z < 0.1 (2026 target - concrete and dated).
+  PINNED FOR RULING: (a) SECOND UBI FORM - the header's
+  compact U_bi = kappa*SSq*GM/r^2 = 2.85e-4*g_Newton
+  (consistent with the 2.85e-4 family from 158/169) vs
+  the full 148/157 buoyancy chain - limit or competing
+  definition? (b) OMEGA_C REGRESSION - all bodies share
+  the solar 11-yr cycle here, contradicting 162's
+  per-body foundation; supersession direction needed;
+  (c) NEPTUNE FORKS - Bs 2e-5 vs 157's 1e-4 (5x),
+  SCm_density 1e12 vs 1e11 (10x).
 
-  SEC 2.3 BLOCK SUMMARY: F_U = -13*Ug3 derived (157);
-  k4 = 2 confirmed by corpus (160 - self-rectification
-  validated); blend underflow artifact (158); E_react
-  three-route fork; SGR B fork; YM gap third value (167);
-  two clean testable predictions (2.33x solar cycle,
-  GW231123 quantization). Gate caught a float-exact
-  comparison on registry-derived kappa - fixed in-flight.
-
-Q-165 queued. Gate 1,144 assertions 0 failures. Registry
-415 rows / 886 edges / 173 ledgers (measured). Wired
-173/2,255 (11 clean, 162 OPEN_RULING). Next: PAPER_170.
+Q-166 queued; Q-158 annotated. Gate 1,151 assertions 0
+failures. Registry 417 rows / 891 edges / 174 ledgers
+(measured). Wired 174/2,255 (11 clean, 163 OPEN_RULING).
+Next: PAPER_171.

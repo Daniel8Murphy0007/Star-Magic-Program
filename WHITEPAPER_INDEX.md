@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 173 (11 ✓, 162 ⚠ OPEN_RULING)
+- **Wired:** 174 (11 ✓, 163 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2082
+- **Not yet touched:** 2081
 
 ---
 
@@ -962,7 +962,7 @@
 | ⬜ | PAPER_1707 | BOHM PREFACTOR 1 16 |
 | ⬜ | PAPER_1708 | Q EDGE 2 |
 | ⬜ | PAPER_1709 | ITER Q 10 |
-| ⬜ | PAPER_170 | CelestialBody 12Field UQFF Parameter Space |
+| ⚠ | PAPER_170 | CelestialBody 12Field UQFF Parameter Space |
 | ⬜ | PAPER_1710 | DT E SIGMA 64 KEV |
 | ⬜ | PAPER_1711 | TROYON BETA N 2 8 |
 | ⬜ | PAPER_1712 | TRIPLE PRODUCT N T TAU 3 |

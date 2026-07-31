@@ -3700,6 +3700,10 @@ RESOLVED section with the ruling recorded.
   1e5-1e9 x B_s, NOT the stated "~B_s/100". Should
   SCm_contrib scale be per-body-calibrated or is the
   1e-10 coefficient wrong?
+  UPDATE (PAPER_170, v0.173.0): the corpus itself now
+  declares "SCm_contrib = 1e3 (placeholder constant)" -
+  item (c) partially self-resolved; the placeholder status
+  is confessed, its replacement value still open.
 - **Notable:** omega_c(Sun) = 1.810e-8 rad/s verified;
   the four per-body periods (11/1/11.86/164.8 yr) match
   157's table EXACT; sec 6 ratio 1.4/0.6 = 2.333 EXACT;
@@ -3920,6 +3924,40 @@ RESOLVED section with the ruling recorded.
   quantization).
 - **Best-candidate wired:** architecture + block
   transition + prediction registered.
+- **Daniel's ruling:** (pending)
+
+### Q-166 — PAPER_170 CelestialBody struct — Ubi second form + omega_c regression + Neptune forks
+- **Question:** (a) SECOND UBI FORM: the header introduces
+  the compact law U_bi(r) = kappa*SSq*G*M_s/r^2 =
+  2.85e-4 * g_Newton - vs the full chain form
+  -beta*Ugi*Omega_g*(Mbh/dg)*wind_mod*U_UA*cos(pi t_n)
+  used in 148/157/166. Both are corpus-active. Is the
+  compact form a small-field limit of the full chain, or
+  a competing definition needing supersession? (It IS
+  consistent with the 2.85e-4 family - 158's footer and
+  169's delta_P.)
+  (b) OMEGA_C REGRESSION: sec 6 says "all bodies
+  currently share the Solar magnetic cycle period" -
+  directly contradicting 162's foundation (per-body
+  omega_c: 11/1/11.86/164.8 yr) established one thread
+  earlier. Which direction supersedes - is 170
+  documenting an older codebase state (381a8fe7) that
+  157/162 (7f9068) later upgraded, or a deliberate
+  regression?
+  (c) NEPTUNE FORKS vs 157: Bs = 2e-5 here vs 1e-4 (5x);
+  SCm_density = 1e12 vs 1e11 (10x). Which values are
+  canonical for Neptune?
+- **Notable:** real spin rates are EXACT (Earth
+  7.292e-5, Jupiter 9.925 h, Neptune 16.11 h) - genuine
+  observational anchors; Sun omega_s = 2.5e-6 rad/s
+  EQUALS the predecessor repo's canonical omega_s_Sun
+  primitive EXACTLY (cross-repo convergence); QUA
+  Sun/Earth = 10 internally consistent; and the paper
+  CONFESSES "SCm_contrib = 1e3 (placeholder constant)" -
+  self-resolving the placeholder status of the +1e3 term
+  flagged in Q-158c.
+- **Best-candidate wired:** struct + compact law +
+  convergences registered; regression and forks pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

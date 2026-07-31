@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.172.0"
-description = "UQFF Star-Magic-Program v0.172.0: PAPER_169 wired - CoAnQi six-tier architecture OPENS sec 2.4 (thread 381a8fe7); sec 2.3 block (157-168) CLOSED; kappa*SSq = 2.85e-4 EXACT corpus-consistent; minus-buoyancy convention 3rd consecutive; GPU/JWST discrimination prediction registered. Q-165. Wired 173/2255, gate 1144/0. Registry 415 rows / 886 edges / 173 ledgers (measured)."
+version = "0.173.0"
+description = "UQFF Star-Magic-Program v0.173.0: PAPER_170 wired - CelestialBody 12-field struct; Sun omega_s = 2.5e-6 = predecessor canonical EXACT (cross-repo convergence); NEW compact Ubi law kappa*SSq*GM/r^2 (2nd form fork); omega_c regression vs 162; Neptune 5x/10x forks; SCm_contrib = 1e3 CONFESSED placeholder. Q-166. Wired 174/2255, gate 1151/0. Registry 417 rows / 891 edges / 174 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

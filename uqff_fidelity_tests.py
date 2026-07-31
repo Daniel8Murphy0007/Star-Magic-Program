@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.172.0", "uqff_calculator.VERSION = 0.172.0")
+assert_that(C.VERSION == "0.173.0", "uqff_calculator.VERSION = 0.173.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2501,6 +2501,21 @@ assert_that(_r169['port_pi_echo'] == 3141,
 assert_that('157-168' in _r169['block_closed'],
             "PAPER_169: sec 2.3 block (157-168) CLOSED; sec 2.4 opens")
 assert_that(C.wired_count() >= 173, "wired_count >= 173")
+
+_r170 = C.calc('PAPER_170')['value']
+assert_that(_r170['n_fields'] == 12,
+            "PAPER_170: 12-field CelestialBody struct registered")
+assert_that(_r170['omega_s_sun_canonical'] == 2.5e-6,
+            "PAPER_170: Sun omega_s = 2.5e-6 = predecessor canonical omega_s_Sun EXACT")
+assert_that(abs(_r170['ubi_factor'] - 2.85e-4) < 1e-12,
+            "PAPER_170: compact Ubi law factor kappa*SSq = 2.85e-4 (2nd Ubi form, Q-166a)")
+assert_that(_r170['qua_ratio_sun_earth'] == 10.0,
+            "PAPER_170: QUA Sun/Earth = 10 internally consistent")
+assert_that('placeholder' in _r170['placeholder_confessed'],
+            "PAPER_170: SCm_contrib = 1e3 confessed as placeholder (Q-158c self-resolution)")
+assert_that('5x' in _r170['neptune_forks'],
+            "PAPER_170: Neptune Bs/SCm forks vs 157 pinned (Q-166c)")
+assert_that(C.wired_count() >= 174, "wired_count >= 174")
 
 # =============================================================================
 # REPORT

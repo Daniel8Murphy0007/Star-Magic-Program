@@ -2039,3 +2039,13 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 173/2,255 (11 ✓, 162 ⚠). Next: PAPER_170.
 
 ---
+
+## 2026-07-30 — v0.173.0 — BAND 1: PAPER_170
+
+- PAPER_170 wired (⚠ Q-166): CelestialBody struct.
+  omega_s_Sun predecessor convergence; compact Ubi form;
+  omega_c regression + Neptune forks; placeholder
+  confessed (Q-158 annotated).
+- Campaign: 174/2,255 (11 ✓, 163 ⚠). Next: PAPER_171.
+
+---

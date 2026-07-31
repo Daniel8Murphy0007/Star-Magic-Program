@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.173.0] — 2026-07-30 — BAND 1: PAPER_170 — CELESTIALBODY STRUCT
+
+### Added
+- **PAPER_170 dispatch** (12-field parameter space, S48,
+  sec 2.4-B): the fundamental body descriptor + field-
+  dependency map. VERIFIED: real spin rates EXACT; Sun
+  omega_s = 2.5e-6 rad/s EQUALS the predecessor repo's
+  canonical omega_s_Sun primitive (cross-repo
+  convergence); QUA ratio consistent. NEW compact
+  buoyancy law U_bi = kappa·SSq·GM/r² = 2.85e-4·g_Newton
+  (second Ubi form — 2.85e-4 family consistent; fork vs
+  the full 148/157 chain queued). PINNED: omega_c
+  regression (shared 11-yr vs 162's per-body foundation);
+  Neptune Bs 5× / SCm 10× forks vs 157; "SCm_contrib =
+  1e3 (placeholder constant)" CONFESSED — Q-158c
+  partially self-resolved by the corpus.
+- OPEN_RULING Q-166; Q-158 annotated.
+- Gate: 1,151 assertions, 0 failures. Registry: 417 rows / 891 edges / 174 ledgers (measured).
+
+---
+
 ## [0.172.0] — 2026-07-30 — BAND 1: PAPER_169 — SEC 2.4 OPENS (COANQI)
 
 ### Added
