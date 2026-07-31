@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 174 (11 ✓, 163 ⚠ OPEN_RULING)
+- **Wired:** 175 (11 ✓, 164 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2081
+- **Not yet touched:** 2080
 
 ---
 
@@ -973,7 +973,7 @@
 | ⬜ | PAPER_1717 | LITHIUM 7 FACTOR 3 |
 | ⬜ | PAPER_1718 | HODGE D PLUS DBSFG OVER SO5 1 |
 | ⬜ | PAPER_1719 | ATIYAH SINGER DIRAC INDEX 22 |
-| ⬜ | PAPER_171 | UniversalGravity Ug1 Ug4 Full Decomposition |
+| ⚠ | PAPER_171 | UniversalGravity Ug1 Ug4 Full Decomposition |
 | ⬜ | PAPER_1720 | BH 4 LAWS PREFACTOR 3 125 |
 | ⬜ | PAPER_1721 | HIERARCHY EXPONENT 21 |
 | ⬜ | PAPER_1722 | DPM PAIR K MEX MINUS 2 |

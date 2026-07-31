@@ -2049,3 +2049,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 174/2,255 (11 ✓, 163 ⚠). Next: PAPER_171.
 
 ---
+
+## 2026-07-30 — v0.174.0 — BAND 1: PAPER_171
+
+- PAPER_171 wired (⚠ Q-167): Ug decomposition. k1/k2/k3 =
+  source-doc EXACT (2152 provenance); third Ubi form +
+  wind instability pinned.
+- Campaign: 175/2,255 (11 ✓, 164 ⚠). Next: PAPER_172.
+
+---

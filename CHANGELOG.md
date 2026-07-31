@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.174.0] — 2026-07-30 — BAND 1: PAPER_171 — UG DECOMPOSITION
+
+### Added
+- **PAPER_171 dispatch** (Ug1-Ug4 + Um full decomposition,
+  S48, sec 2.4-C): implementation reference with all
+  helper functions and constants. MAJOR PROVENANCE
+  CONVERGENCE: k1 = 1.5, k2 = 1.2, k3 = 1.8 EXACTLY match
+  Daniel's May 2025 Final Equations source document
+  (PAPER_2152 chain) — the CoAnQi codebase carries the
+  original couplings verbatim; k4 = 2.0 third
+  confirmation. Ug4 assigned energy levels 20-26.
+  PINNED: THIRD Ubi form (kappa·SSq·mu_s·grad(M/r)) in
+  three consecutive papers; beta_i = 0.61 drift
+  (auto-corrected per charter); wind factor 5001 vs
+  166's 1.4/401 (3600× instability); Bj placeholder
+  dominates baseline by 1e6; H_SCm 1.0 vs 0.99.
+- OPEN_RULING Q-167.
+- Gate: 1,158 assertions, 0 failures. Registry: 419 rows / 896 edges / 175 ledgers (measured).
+
+---
+
 ## [0.173.0] — 2026-07-30 — BAND 1: PAPER_170 — CELESTIALBODY STRUCT
 
 ### Added

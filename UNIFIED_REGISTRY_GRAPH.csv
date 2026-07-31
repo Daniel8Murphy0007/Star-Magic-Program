@@ -890,3 +890,8 @@ primitive,KAPPA_PER_DAY,observable,celestialbody_12field,compact Ubi law
 primitive,SSQ,observable,celestialbody_12field,compact Ubi law
 observable,celestialbody_forks,paper,PAPER_170,forks vs 157/162
 observable,celestialbody_forks,paper,PAPER_162,omega_c regression
+observable,ug_decomposition_full,paper,PAPER_171,Ug1-4 + Um
+observable,ug_decomposition_full,paper,PAPER_170,struct consumer
+primitive,KAPPA_PER_DAY,observable,ug_decomposition_full,E_react decay
+observable,ubi_third_form_wind_fork,paper,PAPER_171,3rd Ubi form
+observable,ubi_third_form_wind_fork,paper,PAPER_166,wind-factor fork

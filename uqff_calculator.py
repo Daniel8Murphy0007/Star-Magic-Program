@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.173.0"
+VERSION = "0.174.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9038,5 +9038,56 @@ def _paper_170(dataset):
         'formula': '12-field struct -> Ug1-Ug4/Um/F_U; U_bi = kappa*SSq*GM/r^2',
         'source': 'PAPER_170',
         'residual_pct': abs(2 * _m.pi / (11 * 3.156e7) - 1.81e-8) / 1.81e-8 * 100,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_171')
+def _paper_171(dataset):
+    """Ug1-Ug4 + Um full decomposition (S48, sec 2.4-C).
+
+    Implementation reference for the four Universal Gravity
+    ranges + Universal Magnetism, with all helpers
+    (step_function, E_react, mu_s, Bj, omega_s_t, mu_j)
+    and calibrated constants.
+    PROVENANCE CONVERGENCE (major): k1 = 1.5, k2 = 1.2,
+    k3 = 1.8 EXACTLY match Daniel's May 2025 Final
+    Equations source-document coupling constants
+    (PAPER_2152 provenance chain) - the sec 2.4 codebase
+    carries the original couplings verbatim; k4 = 2.0
+    third confirmation (157-derived, 160-canonical).
+    Scale table assigns Ug4 to energy levels 20-26
+    (26-level structure touchpoint).
+    THIRD UBI FORM (Q-167a): header U_bi = kappa*SSq*
+    mu_s*grad(M_s/r) - joins 170's compact GM/r^2 form
+    and the full 148 chain (three forms in three papers).
+    beta_i = 0.61 drift -> canonical BETA_I (PAPER_1203,
+    charter auto-correction).
+    WIND-FACTOR INSTABILITY (Q-167b): delta_sw = 0.01,
+    v_sw = 5e5 -> factor 5001 - vs 166's 1.4 (km/s
+    reading) / 401 (m/s reading). Three values spanning
+    3600x across two papers.
+    PLACEHOLDER DOMINANCE: Bj(t) = 1e-3 + 0.4 sin + 1e3 -
+    the confessed placeholder is 1e6 x the baseline
+    field. H_SCm = 1.0 here vs 0.99 canonical (minor).
+    """
+    return {
+        'value': {
+            'domain': '2.4-C (Ug decomposition, thread 381a8fe7)',
+            'k_constants': {'k1': 1.5, 'k2': 1.2, 'k3': 1.8, 'k4': 2.0},
+            'k123_provenance': 'EXACT match to May 2025 Final Equations (PAPER_2152 chain)',
+            'k4_third_confirmation': True,
+            'ubi_third_form': 'kappa*SSq*mu_s*grad(M_s/r) (Q-167a; vs 170 compact + 148 full)',
+            'beta_drift': '0.61 -> canonical BETA_I per PAPER_1203',
+            'wind_factor_171': 1 + 0.01 * 5e5,               # 5001
+            'wind_factor_fork': '5001 vs 166 readings 1.4/401 - 3600x span (Q-167b)',
+            'bj_placeholder_dominance': 1e3 / 1e-3,          # 1e6
+            'h_scm_fork': '1.0 here vs 0.99 canonical',
+            'ug4_energy_levels': (20, 26),
+            'new_constants': 'QA = 1e-10; lambda_recip = 5e-5; N_strings = 1e9',
+        },
+        'formula': 'Ug1..Ug4 + Um closed forms with k = (1.5, 1.2, 1.8, 2.0)',
+        'source': 'PAPER_171',
+        'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

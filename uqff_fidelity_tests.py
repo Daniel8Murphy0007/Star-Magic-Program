@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.173.0", "uqff_calculator.VERSION = 0.173.0")
+assert_that(C.VERSION == "0.174.0", "uqff_calculator.VERSION = 0.174.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2516,6 +2516,21 @@ assert_that('placeholder' in _r170['placeholder_confessed'],
 assert_that('5x' in _r170['neptune_forks'],
             "PAPER_170: Neptune Bs/SCm forks vs 157 pinned (Q-166c)")
 assert_that(C.wired_count() >= 174, "wired_count >= 174")
+
+_r171 = C.calc('PAPER_171')['value']
+assert_that(_r171['k_constants'] == {'k1': 1.5, 'k2': 1.2, 'k3': 1.8, 'k4': 2.0},
+            "PAPER_171: k1/k2/k3 = 1.5/1.2/1.8 = May 2025 source-doc EXACT (2152 provenance); k4 = 2.0")
+assert_that(_r171['k4_third_confirmation'],
+            "PAPER_171: k4 = 2.0 third confirmation (157 derived, 160 canonical)")
+assert_that(_r171['wind_factor_171'] == 5001.0,
+            "PAPER_171: wind factor 5001 vs 166's 1.4/401 - instability pinned (Q-167b)")
+assert_that(_r171['bj_placeholder_dominance'] == 1e6,
+            "PAPER_171: Bj placeholder 1e3 dominates baseline 1e-3 by 1e6")
+assert_that(_r171['ug4_energy_levels'] == (20, 26),
+            "PAPER_171: Ug4 assigned to energy levels 20-26 (26-level touchpoint)")
+assert_that('BETA_I' in _r171['beta_drift'],
+            "PAPER_171: beta_i = 0.61 drift auto-corrected by citation (PAPER_1203)")
+assert_that(C.wired_count() >= 175, "wired_count >= 175")
 
 # =============================================================================
 # REPORT

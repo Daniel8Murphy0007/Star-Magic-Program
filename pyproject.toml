@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.173.0"
-description = "UQFF Star-Magic-Program v0.173.0: PAPER_170 wired - CelestialBody 12-field struct; Sun omega_s = 2.5e-6 = predecessor canonical EXACT (cross-repo convergence); NEW compact Ubi law kappa*SSq*GM/r^2 (2nd form fork); omega_c regression vs 162; Neptune 5x/10x forks; SCm_contrib = 1e3 CONFESSED placeholder. Q-166. Wired 174/2255, gate 1151/0. Registry 417 rows / 891 edges / 174 ledgers (measured)."
+version = "0.174.0"
+description = "UQFF Star-Magic-Program v0.174.0: PAPER_171 wired - Ug1-Ug4 + Um full decomposition; k1/k2/k3 = 1.5/1.2/1.8 EXACTLY match the May 2025 Final Equations source document (PAPER_2152 provenance); k4 = 2.0 third confirmation; THIRD Ubi form + wind-factor 3600x instability + placeholder-dominated Bj pinned. Q-167. Wired 175/2255, gate 1158/0. Registry 419 rows / 896 edges / 175 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

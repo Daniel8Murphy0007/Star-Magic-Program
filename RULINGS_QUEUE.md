@@ -3960,6 +3960,43 @@ RESOLVED section with the ruling recorded.
   convergences registered; regression and forks pinned.
 - **Daniel's ruling:** (pending)
 
+### Q-167 — PAPER_171 Ug decomposition — third Ubi form + wind-factor instability
+- **Question:** (a) THIRD UBI FORM in three consecutive
+  papers: 171 header U_bi = kappa*SSq*mu_s*grad(M_s/r);
+  170 header U_bi = kappa*SSq*G*M_s/r^2; 148/157 full
+  chain -beta*Ugi*Omega_g*(Mbh/dg)*...*cos(pi t_n).
+  (With mu_s containing the 1e3 placeholder, form 171
+  and form 170 differ by a factor of mu_s ~ 1e3*Rs^3.)
+  One canonical Ubi needed - or a scoping rule (local
+  compact form vs galactic full chain?). Also beta_i =
+  0.61 appears (drift; auto-corrected to 0.6029 per the
+  charter table).
+  (b) WIND-FACTOR INSTABILITY: 171 uses delta_sw = 0.01,
+  v_sw = 5e5 m/s -> (1 + d*v) = 5001; 166 gave 1.4
+  (km/s reading) or 401 (m/s reading) with delta_sw =
+  0.001, v_sw = 4e5. Three candidate wind factors
+  spanning 3600x across two consecutive papers. Which
+  (delta_sw, v_sw, units) triple is canonical?
+  (c) Bj(t) = 1e-3 + 0.4 sin + 1e3: the CONFESSED
+  placeholder (170) dominates the baseline string field
+  by 1e6 - Ug3 and Um are placeholder-dominated until
+  Q-158c's replacement value is ruled.
+- **Notable:** MAJOR PROVENANCE CONVERGENCE - k1 = 1.5,
+  k2 = 1.2, k3 = 1.8 match Daniel's May 2025 "Final
+  Equations" source document EXACTLY (the PAPER_2152
+  provenance chain); the sec 2.4 CoAnQi codebase carries
+  the original coupling constants verbatim. k4 = 2.0 gets
+  its third corpus confirmation. The five-term scale
+  table assigns Ug4 to energy levels 20-26, touching the
+  26-level structure. Physical interpretations are the
+  clearest yet (DPM internal dipole / heliosphere bubble
+  / magnetic string disk / star-BH interaction / string
+  network).
+- **Best-candidate wired:** decomposition + provenance +
+  scale table registered; form fork and instabilities
+  pinned.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

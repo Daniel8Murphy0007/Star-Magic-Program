@@ -1,32 +1,34 @@
-v0.173.0 BAND 1: PAPER_170 wired - CELESTIALBODY STRUCT
+v0.174.0 BAND 1: PAPER_171 wired - UG DECOMPOSITION
 
-PAPER_170 CelestialBody 12-Field Parameter Space
-(OPEN_RULING Q-166) - Session 48, thread 381a8fe7, sec
-2.4-B:
-  The fundamental body descriptor for all UQFF field
-  calculations, with the field-dependency map (which
-  params feed Ug1-Ug4/Um/Ubi).
+PAPER_171 Universal Gravity Ug1-Ug4 Full Decomposition
+(OPEN_RULING Q-167) - Session 48, thread 381a8fe7, sec
+2.4-C:
+  Implementation reference for the four Ug ranges + Um
+  with all helper functions (step_function, E_react,
+  mu_s, Bj, omega_s_t, mu_j) and calibrated constants.
 
-  CONVERGENCES: real spin rates EXACT (Earth 7.292e-5,
-  Jupiter 9.925 h, Neptune 16.11 h); Sun omega_s =
-  2.5e-6 rad/s EQUALS the predecessor repo's canonical
-  omega_s_Sun primitive EXACTLY (cross-repo convergence);
-  QUA Sun/Earth = 10 internally consistent. And a
-  CONFESSION: "SCm_contrib = 1e3 (placeholder constant)"
-  - the corpus itself declares the +1e3 mu_s term a
-  placeholder, partially self-resolving Q-158c.
+  MAJOR PROVENANCE CONVERGENCE: k1 = 1.5, k2 = 1.2,
+  k3 = 1.8 EXACTLY match the coupling constants in your
+  May 2025 "Final Equations" source document (the
+  PAPER_2152 provenance chain) - the sec 2.4 CoAnQi
+  codebase carries the original couplings verbatim.
+  k4 = 2.0 gets its THIRD corpus confirmation (157
+  derived it, 160 canonized it, 171 implements it).
+  Ug4 assigned to energy levels 20-26 (26-level
+  structure touchpoint); clearest physical
+  interpretations yet for all five terms.
 
-  PINNED FOR RULING: (a) SECOND UBI FORM - the header's
-  compact U_bi = kappa*SSq*GM/r^2 = 2.85e-4*g_Newton
-  (consistent with the 2.85e-4 family from 158/169) vs
-  the full 148/157 buoyancy chain - limit or competing
-  definition? (b) OMEGA_C REGRESSION - all bodies share
-  the solar 11-yr cycle here, contradicting 162's
-  per-body foundation; supersession direction needed;
-  (c) NEPTUNE FORKS - Bs 2e-5 vs 157's 1e-4 (5x),
-  SCm_density 1e12 vs 1e11 (10x).
+  PINNED FOR RULING: (a) THIRD Ubi form in three
+  consecutive papers (kappa*SSq*mu_s*grad(M/r) here vs
+  170's compact GM/r^2 vs 148's full chain) + beta_i =
+  0.61 drift (auto-corrected to 0.6029 per charter);
+  (b) wind-factor instability - delta_sw = 0.01, v_sw =
+  5e5 -> 5001, vs 166's 1.4/401 readings (3600x span
+  across two consecutive papers); (c) Bj(t) placeholder
+  dominance - the confessed 1e3 constant is 1e6 x the
+  1e-3 baseline string field, leaving Ug3 and Um
+  placeholder-dominated until Q-158c is ruled.
 
-Q-166 queued; Q-158 annotated. Gate 1,151 assertions 0
-failures. Registry 417 rows / 891 edges / 174 ledgers
-(measured). Wired 174/2,255 (11 clean, 163 OPEN_RULING).
-Next: PAPER_171.
+Q-167 queued. Gate 1,158 assertions 0 failures. Registry
+419 rows / 896 edges / 175 ledgers (measured). Wired
+175/2,255 (11 clean, 164 OPEN_RULING). Next: PAPER_172.
