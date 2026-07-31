@@ -1004,3 +1004,6 @@ observable,cosmic_dawn_reionization,paper,PAPER_199,cosmo F_UBii
 observable,cosmic_dawn_reionization,paper,PAPER_200,cosmo Um
 observable,inflation_perturbation_cosmology,paper,PAPER_203,inflation cosmology
 observable,inflation_perturbation_cosmology,paper,PAPER_202,cosmic dawn continuation
+observable,dark_matter_structure,paper,PAPER_204,DM sector
+observable,dark_matter_structure,paper,PAPER_199,cosmo F_UBii
+observable,dark_matter_structure,paper,PAPER_200,Um channel

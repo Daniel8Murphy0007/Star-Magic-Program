@@ -7,6 +7,15 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.207.0] — 2026-07-31 — BAND 1: PAPER_204 — DARK MATTER
+
+### Added
+- **PAPER_204 dispatch** (dark matter, S50, sec 2.6): NFW profile+rotation curve, SIDM core formation, virial mass, strong lensing, void evolution, peculiar velocity under both F_UBii+Um. Real anchors verified (MW NFW rho_s 0.3 GeV/cm^3 r_s 20 kpc v_c 220 km/s, Coma M_vir ~5e14, SIDM s/m<1.25 Bullet Cluster, SDP.81 ALMA lens). NFW/virial forms correct; core-cusp tension stated honestly with SIDM resolution; ties to predecessor PAPER_1962 M31 rotation + 1015/1019 NFW/DM buoyancy. UQFF-adjacent: vacuum-Lambda shifts Einstein radius ~0.1%.
+- OPEN_RULING Q-200.
+- Gate: 1,345 assertions, 0 failures. Registry: 470 rows / 1008 edges / 208 ledgers (measured).
+
+---
+
 ## [0.206.0] — 2026-07-31 — BAND 1: PAPER_203 — INFLATION COSMOLOGY
 
 ### Added

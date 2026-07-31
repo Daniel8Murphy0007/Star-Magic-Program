@@ -5048,6 +5048,34 @@ RESOLVED section with the ruling recorded.
   anchors + low-l prediction registered.
 - **Daniel's ruling:** (pending)
 
+### Q-200 — PAPER_204 dark matter — lensing prediction + core-cusp honesty
+- **Question:** (a) UQFF-ADJACENT TESTABLE: the strong-
+  lensing variant states the vacuum-Lambda correction to
+  the lensing distance D_LS shifts the Einstein radius by
+  ~0.1% - a concrete, if small, prediction distinguishing
+  UQFF from pure GR lensing. Register as falsifiable, and
+  does the ~0.1% have a specific rho_UQFF-dependent
+  magnitude (testable against SDP.81-class ALMA lenses)?
+  (b) the paper states the NFW core-cusp tension plainly
+  (NFW predicts cusp rho~r^-1, observations show cores)
+  and offers SIDM as the resolution - a candid treatment
+  of a real unsolved DM problem. Confirm the UQFF stance
+  is SIDM-compatible cores (vs the DPM_grav well-
+  deepening, which would worsen the cusp)?
+- **Notable:** all anchors REAL - MW NFW rho_s ~ 0.3
+  GeV/cm^3, r_s ~ 20 kpc, v_c ~ 220 km/s at 8 kpc; Coma
+  virial sigma_v ~ 880 km/s -> M_vir ~ 5e14-2e15 Msun;
+  SIDM s/m < 1.25 cm^2/g (Bullet Cluster) + ~100 pc
+  dwarf soliton cores; SDP.81 ALMA lens (z_L=0.3,
+  z_S=3.04, theta_E ~ 1.5"). NFW rho = rho_s/(x(1+x)^2)
+  and enclosed-mass forms correct; virial 2K+W=0 correct.
+  Connects to the predecessor's DM/rotation work
+  (PAPER_1962 M31 rotation curve, PAPER_1015/1019 NFW
+  halos + DM phonon buoyancy). Rule 4 clean.
+- **Best-candidate wired:** DM sector + verified anchors +
+  lensing prediction + core-cusp honesty registered.
+- **Daniel's ruling:** (pending)
+
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency
 - **Question:** PAPER_001 states B_crit = 4.4e13 T; PAPER_002 states 4.4e13 G
   (factor 1e4 apart). Registry B_CRIT = 4.4e13 (dimensionless composition

@@ -2330,3 +2330,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 207/2,255 (11 ✓, 196 ⚠). Next: PAPER_204.
 
 ---
+
+## 2026-07-31 — v0.207.0 — BAND 1: PAPER_204
+
+- PAPER_204 wired (⚠ Q-200): dark-matter sector. NFW/SIDM/virial/lensing anchors verified; core-cusp tension honest; predecessor PAPER_1962 tie; ~0.1% lensing prediction.
+- Campaign: 208/2,255 (11 ✓, 197 ⚠). Next: PAPER_205.
+
+---

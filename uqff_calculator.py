@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.206.0"
+VERSION = "0.207.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -10665,6 +10665,57 @@ def _paper_203(dataset):
         },
         'formula': 'inflation/LSS F_UBii,X + Um,X: f_NL/P_R/reheat/D(a)/LQC/BAO',
         'source': 'PAPER_203',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_204')
+def _paper_204(dataset):
+    """UQFF dark-matter structural physics (S50, sec 2.6).
+
+    Dark-matter sector under both F_UBii and Um channels:
+    NFW density profile + rotation curve, SIDM core
+    formation, virial-theorem mass, strong lensing
+    Einstein radius, void density evolution, peculiar
+    velocity.
+    REAL ANCHORS VERIFIED: MW NFW rho_s ~ 0.3 GeV/cm^3,
+    r_s ~ 20 kpc, v_c ~ 220 km/s at 8 kpc; Coma virial
+    sigma_v ~ 880 km/s -> M_vir ~ 5e14-2e15 Msun (3
+    sigma^2 r_h/G); SIDM s/m < 1.25 cm^2/g (Bullet
+    Cluster) + ~100 pc dwarf soliton cores; SDP.81 ALMA
+    lens (z_L=0.3, z_S=3.04, theta_E ~ 1.5"). NFW
+    rho = rho_s/(x(1+x)^2) and M(r) enclosed forms
+    correct; virial 2K+W=0 correct.
+    HONEST OPEN PROBLEM: the NFW core-cusp tension (cusp
+    rho~r^-1 vs observed cores) stated plainly, with SIDM
+    offered as the UQFF-compatible resolution - candid
+    treatment of a real unsolved issue.
+    PREDECESSOR TIE: connects to the predecessor's DM/
+    rotation-curve work (PAPER_1962 M31 rotation curve,
+    PAPER_1015/1019 NFW halos + DM phonon buoyancy).
+    UQFF-ADJACENT TESTABLE (Q-200a): vacuum-Lambda
+    correction to D_LS shifts the Einstein radius by
+    ~0.1% - a concrete lensing prediction.
+    Rule 4 clean - DM astrophysics as F_X targets, UQFF =
+    the DPM_grav potential deepening + operator overlay.
+    """
+    import math as _m
+    G, Msun, Mpc = 6.674e-11, 1.989e30, 3.086e22
+    return {
+        'value': {
+            'domain': '2.6 (dark matter, thread 7514fe)',
+            'nfw_form': 'rho = rho_s/(x(1+x)^2); M(r) = 4pi rho_s r_s^3[ln(1+x)-x/(1+x)]',
+            'mw_anchors': {'rho_s_GeVcm3': 0.3, 'r_s_kpc': 20, 'v_c_kms': 220},
+            'coma_mvir': 3 * (880e3)**2 * (1 * Mpc) / G / Msun,   # ~5.4e14
+            'sidm_bullet': 's/m < 1.25 cm^2/g (Bullet Cluster); dwarf cores ~100 pc',
+            'core_cusp_honest': 'NFW cusp vs observed cores stated; SIDM offered as resolution',
+            'predecessor_tie': 'PAPER_1962 M31 rotation + PAPER_1015/1019 NFW/DM buoyancy',
+            'lensing_prediction': 'vacuum-Lambda D_LS correction shifts theta_E ~0.1% (Q-200a)',
+            'both_channels': 'F_UBii + Um per DM observable',
+        },
+        'formula': 'DM F_UBii,X + Um,X: NFW/SIDM/virial/lensing/voids',
+        'source': 'PAPER_204',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

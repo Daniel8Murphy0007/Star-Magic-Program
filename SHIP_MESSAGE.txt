@@ -1,24 +1,25 @@
-v0.206.0 BAND 1: PAPER_203 wired - INFLATION COSMOLOGY
+v0.207.0 BAND 1: PAPER_204 wired - DARK MATTER
 
-PAPER_203 UQFF CMB/Structure Growth/Non-Gaussianity/Curvature (OPEN_RULING Q-199) - Session 50,
+PAPER_204 UQFF Dark Matter - NFW/SIDM/Rotation Curves/Virial (OPEN_RULING Q-200) - Session 50,
 thread 7514fe, sec 2.6:
-  The inflationary and post-inflationary continuation of 202 - non-Gaussianity f_NL, primordial
-  curvature power spectrum, reheating, structure growth D(a), LQC pre-bounce modification, and
-  BAO/Sakharov oscillations - under both the F_UBii and Um channels.
+  The dark-matter sector under both the F_UBii and Um channels: NFW density profile and rotation
+  curve, SIDM core formation, virial-theorem mass, strong gravitational lensing Einstein radius,
+  void density evolution, peculiar velocity.
 
-  REAL ANCHORS VERIFIED: f_NL,local = -0.9+-5.1 (Planck, no detection); n_s = 0.9649+-0.0042
-  (>5sigma tilt); r < 0.036 (BICEP/Keck 2021); P_R ~ 2.1e-9 at k0 = 0.05 Mpc^-1; sigma_8 = 0.811;
-  f = Om^0.55 (Linder 2005); D(z=1)/D(z=0) ~ 0.76; r_s ~ 147 Mpc + z_drag ~ 1020; f*sigma_8 ~
-  0.46 (RSD). Slow-roll relations n_s = 1-6eps+2eta and r = 16eps correct.
+  REAL ANCHORS VERIFIED: MW NFW rho_s ~ 0.3 GeV/cm^3, r_s ~ 20 kpc, v_c ~ 220 km/s at the Solar
+  circle; Coma virial sigma_v ~ 880 km/s -> M_vir ~ 5e14-2e15 Msun (3 sigma^2 r_h/G); SIDM s/m <
+  1.25 cm^2/g (Bullet Cluster) + ~100 pc dwarf soliton cores; SDP.81 ALMA lens (z_L=0.3, z_S=3.04,
+  theta_E ~ 1.5"). NFW rho = rho_s/(x(1+x)^2) and enclosed-mass forms correct; virial 2K+W=0
+  correct.
 
-  UQFF-ADJACENT TESTABLE (the notable part): unlike the pure-embedding variants, this paper offers
-  a concrete prediction - P_R,UQFF(k) = P_R(k)*(1 + rho_UQFF*c^2/(3H^2)) modifies large-scale
-  power at low multipoles, and the LQC (1+k/k*)^-a term provides natural large-scale suppression -
-  both proposed as the mechanism for the observed low-l CMB power deficit (the quadrupole/octupole
-  anomaly). Registered as a falsifiable UQFF/LQC prediction.
+  HONEST OPEN PROBLEM: the paper states the NFW core-cusp tension plainly (NFW predicts a cusp,
+  observations often show cores) and offers SIDM as the resolution - a candid treatment of a real
+  unsolved DM problem. Connects to the predecessor's DM/rotation work (PAPER_1962 M31 rotation
+  curve, PAPER_1015/1019 NFW halos + DM phonon buoyancy).
 
-  BUCKET C overlap continues (Q-198): n_s, sigma_8, r_s are also in the predecessor PAPER_1156
-  cosmology suite. Rule 4 clean throughout.
+  UQFF-ADJACENT: the vacuum-Lambda correction to the lensing distance D_LS shifts the Einstein
+  radius by ~0.1% - a concrete lensing prediction (testable against SDP.81-class ALMA lenses).
+  Rule 4 clean throughout.
 
-Q-199 queued. Gate 1,339 assertions 0 failures. Registry 469 rows / 1005 edges / 207 ledgers (measured). Wired 207/2,255 (11 clean,
-196 OPEN_RULING). Next: PAPER_204.
+Q-200 queued. Gate 1,345 assertions 0 failures. Registry 470 rows / 1008 edges / 208 ledgers (measured). Wired 208/2,255 (11 clean,
+197 OPEN_RULING). Next: PAPER_205.

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 207 (11 ✓, 196 ⚠ OPEN_RULING)
+- **Wired:** 208 (11 ✓, 197 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2048
+- **Not yet touched:** 2047
 
 ---
 
@@ -1352,7 +1352,7 @@
 | ⬜ | PAPER_2047 | COMPOSED PREFIX CLASSES POPULATION AUDIT UQFF |
 | ⬜ | PAPER_2048 | ROUND 179 TRIAD BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2049 | ROUND 180 SINGLE BACKBONE FIRST UQFF |
-| ⬜ | PAPER_204 | UQFF Dark Matter NFW SIDM Rotation Curves Virial Theorem |
+| ⚠ | PAPER_204 | UQFF Dark Matter NFW SIDM Rotation Curves Virial Theorem |
 | ⬜ | PAPER_2050 | ROUND 181 40 ROUND MILESTONE SINGLE BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2051 | ROUND 182 SINGLE BACKBONE FIRST UQFF |
 | ⬜ | PAPER_2052 | LANDMARK D PHYS MINUS 1 FAMILY AUDIT UQFF |

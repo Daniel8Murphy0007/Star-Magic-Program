@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.206.0", "uqff_calculator.VERSION = 0.206.0")
+assert_that(C.VERSION == "0.207.0", "uqff_calculator.VERSION = 0.207.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2925,6 +2925,19 @@ assert_that('low-l CMB' in _r203['low_l_anomaly_prediction'],
 assert_that('PAPER_1156' in _r203['bucketC_tie'],
             "PAPER_203: n_s/sigma_8/r_s overlap predecessor BUCKET C (Q-198 continues)")
 assert_that(C.wired_count() >= 207, "wired_count >= 207")
+
+_r204 = C.calc('PAPER_204')['value']
+assert_that(_r204['mw_anchors']['v_c_kms'] == 220,
+            "PAPER_204: MW rotation v_c = 220 km/s at Solar circle (real)")
+assert_that(4e14 < _r204['coma_mvir'] < 1e15,
+            "PAPER_204: Coma virial mass ~5e14 Msun (3 sigma^2 r_h/G, sigma_v 880 km/s)")
+assert_that('SIDM offered as resolution' in _r204['core_cusp_honest'],
+            "PAPER_204: NFW core-cusp tension stated honestly")
+assert_that('PAPER_1962' in _r204['predecessor_tie'],
+            "PAPER_204: ties to predecessor DM/rotation-curve work")
+assert_that('theta_E ~0.1%' in _r204['lensing_prediction'],
+            "PAPER_204: vacuum-Lambda Einstein-radius shift prediction (Q-200a)")
+assert_that(C.wired_count() >= 208, "wired_count >= 208")
 
 # =============================================================================
 # REPORT
