@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.218.0", "uqff_calculator.VERSION = 0.218.0")
+assert_that(C.VERSION == "0.219.0", "uqff_calculator.VERSION = 0.219.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3087,6 +3087,19 @@ assert_that(_r214['mhd_equation_types'] == 6 and len(_r214['mhd_types']) == 6,
 assert_that(_r214['benchmark_f_env']['perseus'] == 0.85 and _r214['error_metrics']['chandra'] == 99.98,
             "PAPER_214: MHD benchmark F_env (Perseus 0.85); Chandra 99.98% alignment")
 assert_that(C.wired_count() >= 218, "wired_count >= 218")
+
+_r215 = C.calc('PAPER_215')['value']
+assert_that(_r215['dsa_index'] == 2.0,
+            "PAPER_215: DSA Fermi-I index alpha = (r+2)/(r-1) = 2 EXACT (r=4 strong shock)")
+assert_that(_r215['a_ug1_is_3_ftrz2'] and abs(_r215['a_ug1_knee_shift'] - 0.03) < 1e-12,
+            "PAPER_215: CR knee UQFF shift a_Ug1 = 3*F_TRZ^2 = 0.03 EXACT (Q-211a)")
+assert_that(abs(_r215['knee_uqff_ev']['proton'] - 3.09e15) < 1e9 and abs(_r215['knee_uqff_ev']['iron'] - 8.034e16) < 1e11,
+            "PAPER_215: knee(UQFF) = Z*3e15*1.03 - proton 3.09e15, iron 8.034e16 eV")
+assert_that(_r215['diffusion_1pev_cm2_s'] == 1e31,
+            "PAPER_215: CR diffusion D(1 PeV) = 1e28*(1e6)^0.5 = 1e31 cm^2/s (beta=0.5)")
+assert_that(abs(_r215['kazantsev_gamma_dynamo_s'] - 3.2362459546925564e-17) < 1e-25,
+            "PAPER_215: Kazantsev WHIM dynamo gamma = 1e5/3.09e21 = 3.24e-17 s^-1")
+assert_that(C.wired_count() >= 219, "wired_count >= 219")
 
 
 # =============================================================================

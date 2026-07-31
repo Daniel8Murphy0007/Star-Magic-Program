@@ -9,6 +9,20 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-211 — PAPER_215 — CR knee Ug1 shift primitive origin + CPL/PAPER_209 tie
+- **Question (a):** PAPER_215 sec 3/8 gives the UQFF CR-knee shift a_Ug1 ~ 0.03
+  (from Ug1 magnetic enhancement), applied as E_knee(UQFF) = Z*3e15*(1+0.03).
+  0.03 = 3*F_TRZ^2 EXACTLY (3*0.1^2). Is a_Ug1 = 3*F_TRZ^2 the intended primitive
+  origin, or is 0.03 an empirical fit? (Wired as 3*F_TRZ^2 and gate-pinned.)
+- **Question (b):** PAPER_215 sec 9 gives the CPL dark-energy running
+  w(a) = -1 + Ug4(a)/(rho_L*c^2), fit to DESI 2024 (w0~-0.7, w_a~-1.1). This is
+  the same running-vacuum Ug4 discriminator as PAPER_209 (Q-205,
+  rho_L^UQFF = rho_L^obs*(1+kappa^2*SSq^2)). Should these share one canonical
+  Ug4 running-vacuum surface, or stay per-paper?
+- **Best-candidate wired:** a_Ug1 = 3*F_TRZ^2 = 0.03 (gate EXACT); CPL running
+  cross-linked to PAPER_209 in the registry graph.
+- **Daniel's ruling:** (pending)
+
 ### Q-210 — PAPER_214 — Type-3 Alfvén velocity worked-example errors
 - **Question:** PAPER_214 sec 1 Type-3 computes the Perseus Alfvén velocity as
   v_A = B/√(μ0·ρ) = 30e-10 / √(4π×10⁻⁷ × 10⁻²⁶) "≈ 8.5×10⁷ m/s = 85 km/s".

@@ -2422,3 +2422,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1406/0. Registry 489 rows / 1041 edges / 218 ledgers. Campaign: 218/2,255 (11 ✓, 207 ⚠). Next: PAPER_215.
 
 ---
+
+## 2026-07-31 — v0.219.0 — BAND 1: PAPER_215
+
+- PAPER_215 wired (⚠ Q-211): cosmic rays / WHIM / Fermi / CR knee. DSA index α=(r+2)/(r-1)=2 EXACT (r=4); Hillas E_max proton ~1 PeV; knee shift a_Ug1=3·F_TRZ²=0.03 EXACT (p 3.09e15..Fe 8.04e16 eV, +/-5% obs); D(1 PeV)=1e31 cm²/s (β=0.5); WHIM 40-50% baryons; Kazantsev dynamo γ=3.24e-17/s; CPL DESI w0=-0.7 w_a=-1.1 ties PAPER_209 running-vacuum. Appendix drift auto-corrected.
+- Q-211: a_Ug1=3·F_TRZ² origin; CPL/PAPER_209 Ug4 running-vacuum shared surface.
+- Gate 1412/0. Registry 491 rows / 1045 edges / 219 ledgers. Campaign: 219/2,255 (11 ✓, 208 ⚠). Next: PAPER_216.
+
+---

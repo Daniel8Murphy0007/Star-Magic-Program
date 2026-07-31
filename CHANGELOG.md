@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.219.0] — 2026-07-31 — BAND 1: PAPER_215 — COSMIC RAYS / WHIM / CR KNEE
+
+### Added
+- **PAPER_215 wired** (⚠ Q-211): cosmic rays, WHIM, Fermi acceleration, and the
+  CR knee. Diffusive shock acceleration (Fermi-I) power-law index
+  `α = (r+2)/(r-1) = 2` EXACT for strong-shock r=4 (observed E^-2.7 is
+  propagation-steepened). CR knee via Hillas `E_max = Z·e·B·u_s·R`: proton
+  ~9.27e14 eV ~ 1 PeV, scaling as Z. UQFF knee shift **a_Ug1 = 0.03 = 3·F_TRZ²
+  EXACT** (Ug1 magnetic enhancement) — E_knee(UQFF) = Z·3e15·1.03: p 3.09e15,
+  He 6.18e15, CNO 2.16e16, Si 4.33e16, Fe 8.04e16 eV. ISM/IGM diffusion
+  D(1 PeV) = 1e28·(1e6)^0.5 = 1e31 cm²/s (β=0.5). WHIM holds 40-50% of z<2
+  baryons; Kazantsev small-scale dynamo γ = 1e5/3.09e21 = 3.24e-17 s⁻¹. CPL
+  dark-energy running w(a)=-1+Ug4/(ρ_Λc²) fits DESI 2024 (w0~-0.7, w_a~-1.1),
+  tying PAPER_209's running-vacuum discriminator.
+- Q-211: (a) a_Ug1 = 3·F_TRZ² primitive origin confirmation; (b) CPL running
+  shares PAPER_209's Ug4 running-vacuum surface.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1406 → 1412 (+6). Registry 491 rows / 1045 edges / 219 ledgers.
+
+---
+
 ## [0.218.0] — 2026-07-31 — BAND 1: PAPER_214 — MHD CLUSTERS/JETS/ACCRETION
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.218.0"
+VERSION = "0.219.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11323,6 +11323,72 @@ def _paper_214(dataset):
         },
         'formula': 'rho2/rho1 = (gamma+1)/(gamma-1) = 4; cycle2 = 38/(38*12) = 8.33%',
         'source': 'PAPER_214',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_215')
+def _paper_215(dataset):
+    """Cosmic rays / WHIM / Fermi acceleration / CR knee (S50, thread 7514fe).
+
+    UQFF high-energy cosmic-ray sector: DSA (Fermi-I), Fermi-II
+    stochastic, the CR knee, ISM/IGM diffusion, WHIM, Kazantsev dynamo.
+    Wired observables:
+    * DSA (Fermi-I) power-law index alpha = (r+2)/(r-1) = 2 EXACT for
+      strong-shock compression r=4 (gamma=5/3); observed E^-2.7 at Earth
+      is propagation-steepened, intrinsic E^-2 confirmed by gamma-rays.
+    * CR knee via Hillas E_max = Z*e*B*u_s*R: proton (B=300uG=3e-10 T,
+      u_s=1e7 m/s, R=10 pc=3.09e17 m) = 9.27e14 eV ~ 1 PeV; scales as Z.
+    * UQFF knee shift a_Ug1 = 0.03 = 3*F_TRZ^2 EXACT (Ug1 magnetic
+      enhancement, Q-211a); E_knee(UQFF) = Z*3e15 eV*1.03 - table:
+      p 3.09e15, He 6.18e15, CNO 2.16e16, Si 4.33e16, Fe 8.04e16;
+      consistent with +/-5% observations.
+    * Fermi-II: dE/dt = (4/3)*(v_c^2/c^2)*(E/lambda), quadratic in V/c.
+    * Diffusion D(E) = D0*(E/E0)^beta, D0=1e28 cm^2/s at 10 GeV;
+      D(1 PeV) = 1e28*(1e6)^0.5 = 1e31 cm^2/s (beta=0.5, Kraichnan).
+    * WHIM: 40-50% of baryons at z<2, T~1e5-1e7 K, Z~0.1 Z_sun;
+      Kazantsev small-scale dynamo growth gamma = v_turb/l_turb =
+      1e5/(3.09e21) = 3.24e-17 s^-1, saturating at uG level in ~1 Gyr.
+    * CPL dark energy w(a)=w0+w_a(1-a); DESI 2024 w0~-0.7 w_a~-1.1
+      (2-sigma LCDM tension); UQFF w(a)=-1+Ug4(a)/(rho_L c^2) gives
+      natural CPL-like running (ties PAPER_209 running-vacuum, Q-211b).
+    * 3 Galactic B-field reversals (NE2001) from Ug2 charge nodes.
+    Appendix drift auto-corrected per charter (VDS 1.894 -> F_TRZ=0.1;
+    kg/m^3 -> J/m^3; beta_i -> BETA_I).
+    """
+    r_shock = 4.0
+    dsa_index = (r_shock + 2) / (r_shock - 1)             # 2.0 EXACT
+    a_ug1 = 3 * (F_TRZ ** 2)                              # 0.03 EXACT
+    e_max_pev = 9.27e14                                   # eV, Hillas proton
+    d_1pev_cm2_s = 1e28 * (1e6 ** 0.5)                    # 1e31
+    gamma_dynamo = 1e5 / 3.09e21                          # 3.24e-17 s^-1
+    knee_std = {'proton': 3e15, 'helium': 6e15, 'cno': 2.1e16,
+                'silicon': 4.2e16, 'iron': 7.8e16}
+    knee_uqff = {k: v * (1 + a_ug1) for k, v in knee_std.items()}
+    return {
+        'value': {
+            'domain': '2.13 (cosmic rays / WHIM / CR knee)',
+            'dsa_index': dsa_index,                       # 2.0
+            'dsa_index_formula': '(r+2)/(r-1), r=4 strong shock',
+            'cr_observed_index': 2.7,
+            'e_max_hillas_proton_ev': e_max_pev,          # 9.27e14 ~1 PeV
+            'a_ug1_knee_shift': a_ug1,                     # 0.03
+            'a_ug1_is_3_ftrz2': abs(a_ug1 - 0.03) < 1e-12, # 3*F_TRZ^2 EXACT
+            'knee_std_ev': knee_std,
+            'knee_uqff_ev': knee_uqff,
+            'diffusion_d0_cm2_s': 1e28,
+            'diffusion_1pev_cm2_s': d_1pev_cm2_s,         # 1e31
+            'diffusion_beta': 0.5,
+            'whim_baryon_fraction_pct': '40-50',
+            'kazantsev_gamma_dynamo_s': gamma_dynamo,     # 3.24e-17
+            'cpl_desi_w0': -0.7,
+            'cpl_desi_wa': -1.1,
+            'cpl_ties_paper_209': True,
+            'mw_field_reversals': 3,
+        },
+        'formula': 'alpha = (r+2)/(r-1) = 2; a_Ug1 = 3*F_TRZ^2 = 0.03; E_max = Z*e*B*u_s*R',
+        'source': 'PAPER_215',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

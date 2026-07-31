@@ -1,31 +1,32 @@
-v0.218.0 BAND 1: PAPER_214 wired - MHD CLUSTERS/JETS/ACCRETION
+v0.219.0 BAND 1: PAPER_215 wired - COSMIC RAYS / WHIM / CR KNEE
 
-PAPER_214 (MHD Clusters, Jets, and Accretion in the UQFF Framework,
-S50) wired as one dispatch (Q-210, OPEN_RULING).
+PAPER_215 (Cosmic Rays, WHIM, Fermi Acceleration, and CR Knee in
+UQFF, S50) wired as one dispatch (Q-211, OPEN_RULING).
 
 Physics:
-- Six MHD cluster equation types feed the UQFF master as F_env,cluster
-  contributions: (1) jet termination shock, (2) angular-momentum
-  transport, (3) disk MHD / Alfven velocity, (4) Rankine-Hugoniot jump
-  conditions, (5) Press-Schechter mass function (B-modified), (6) star-
-  formation-rate coupling.
-- Strong-shock compression ratio rho2/rho1 = (gamma+1)/(gamma-1) = 4
-  EXACT for gamma = 5/3 (M_s >> 1); post-shock v2 = v1/4. Verified.
-- Compression Cycle 2: 38 systems x 12 terms = 456 raw terms -> 38
-  F_env(t) functions = 8.33% of original (net 85% unification); drives
-  Cycle 3 (99 systems, PAPER_211).
-- Error metrics after Cycle 2: JWST 99.87%, Chandra 99.98%, ALMA
-  99.94%; UQFF non-ideal MHD gives +0.13% over pure MHD (99.87% vs
-  99.74%).
-- 6-system MHD benchmark F_env: Perseus 0.85, Westerlund-2 0.80,
-  M87 0.95, SGR A* 0.72, Cassiopeia A 0.91, ESO 137-001 0.68.
+- Diffusive shock acceleration (Fermi-I) power-law index
+  alpha = (r+2)/(r-1) = 2 EXACT for strong-shock compression r=4
+  (gamma=5/3); observed E^-2.7 at Earth is propagation-steepened,
+  intrinsic E^-2 confirmed by gamma-rays. Verified.
+- CR knee via Hillas E_max = Z*e*B*u_s*R: proton (B=300uG=3e-10 T,
+  u_s=1e7 m/s, R=10 pc=3.09e17 m) = 9.27e14 eV ~ 1 PeV; scales as Z.
+- UQFF knee shift a_Ug1 = 0.03 = 3*F_TRZ^2 EXACT (Ug1 magnetic
+  enhancement); E_knee(UQFF) = Z*3e15 eV*1.03: proton 3.09e15,
+  He 6.18e15, CNO 2.16e16, Si 4.33e16, Fe 8.04e16 eV (+/-5% obs).
+- ISM/IGM diffusion D(E) = D0*(E/E0)^beta, D0=1e28 cm^2/s at 10 GeV;
+  D(1 PeV) = 1e28*(1e6)^0.5 = 1e31 cm^2/s (beta=0.5, Kraichnan).
+- WHIM: 40-50% of baryons at z<2, T~1e5-1e7 K, Z~0.1 Z_sun; Kazantsev
+  small-scale dynamo growth gamma = v_turb/l_turb = 1e5/3.09e21 =
+  3.24e-17 s^-1 (uG in ~1 Gyr).
+- CPL dark energy w(a)=w0+w_a(1-a); DESI 2024 w0~-0.7 w_a~-1.1
+  (2-sigma LCDM tension); UQFF w(a)=-1+Ug4(a)/(rho_L c^2) gives
+  natural CPL-like running, tying PAPER_209 running-vacuum.
 
-Q-210: the Type-3 Alfven worked example is internally inconsistent -
-it writes rho_ICM = 1e-26 kg/m^3 but uses 1e-27 in the sqrt, and
-labels 8.5e7 m/s as "85 km/s" (a 1000x unit error; 8.46e7 m/s =
-84,628 km/s). The benchmark-table v_A = 85 km/s is the physically
-sensible value and is what was wired. Appendix boilerplate drift
-(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Q-211: (a) the knee shift a_Ug1 = 0.03 matches 3*F_TRZ^2 exactly -
+primitive origin confirmation. (b) The CPL running w(a)=-1+Ug4 shares
+PAPER_209's Ug4 running-vacuum discriminator (Q-205) - one canonical
+surface or per-paper? Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
 
-Gate: 1406/0. Registry 489 rows / 1041 edges / 218 ledgers (measured).
-Campaign: 218/2,255. Next: PAPER_215.
+Gate: 1412/0. Registry 491 rows / 1045 edges / 219 ledgers (measured).
+Campaign: 219/2,255. Next: PAPER_216.
