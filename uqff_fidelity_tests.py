@@ -98,7 +98,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.188.0", "uqff_calculator.VERSION = 0.188.0")
+assert_that(C.VERSION == "0.189.0", "uqff_calculator.VERSION = 0.189.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -2723,6 +2723,19 @@ assert_that('3-way' in _r185['riemann_fork'],
 assert_that('proof' in _r185['honest_hedge'],
             "PAPER_185: honest non-proof hedge registered")
 assert_that(C.wired_count() >= 189, "wired_count >= 189")
+
+_r186 = C.calc('PAPER_186')['value']
+assert_that('162/157 doctrine canonical' in _r186['q166b_resolved'],
+            "PAPER_186: per-body omega_c restored - Q-166b RESOLVED by v2 rewrite")
+assert_that('157 values' in _r186['q166c_resolved'],
+            "PAPER_186: Neptune forks resolved to 157's values - Q-166c RESOLVED")
+assert_that(_r186['mu_s_with_placeholder'] / _r186['mu_s_printed'] > 1e6,
+            "PAPER_186: placeholder form 7 orders off printed mu_s - SCm_contrib DROPPED in v2 (Q-182a)")
+assert_that(_r186['mu_s_printed'] / _r186['mu_s_no_placeholder'] > 0.5,
+            "PAPER_186: printed mu_s matches no-placeholder form within 1.7x")
+assert_that('e45' in _r186['e_react_slip_persists'],
+            "PAPER_186: E_react transposed-mantissa + exponent slip persists in v2 (Q-182b)")
+assert_that(C.wired_count() >= 190, "wired_count >= 190")
 
 # =============================================================================
 # REPORT

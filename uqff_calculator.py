@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.188.0"
+VERSION = "0.189.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -9827,5 +9827,58 @@ def _paper_185(dataset):
         'formula': 'F_hat(omega) = FT[F_U(t_n)]; alternation -> eta character -> zeta zeros',
         'source': 'PAPER_185',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_186')
+def _paper_186(dataset):
+    """Solar System canonical body reference v2 (S49, sec 2.5).
+
+    The v2-rewrite authoritative four-body parameter set -
+    a FORK-RESOLUTION paper:
+    Q-166b RESOLVED: per-body omega_c RESTORED (Earth
+    1 yr, Jupiter 11.86, Neptune 164.8) - 162/157
+    doctrine canonical; 170's shared-11-yr was an older
+    codebase state, superseded by this "standalone
+    codebase rewrite v2."
+    Q-166c RESOLVED: Neptune returns to 157's values
+    (SCm_density 1e11, Bs 1e-4) - 170's 1e12/2e-5 were
+    the outliers.
+    Q-178a ADDRESSED: Pcore/PSCm normalization now
+    DOCUMENTED with physical anchors inline (Sun 2.5e16
+    Pa, Earth 3.6e11 Pa - the latter EXACT vs 176).
+    PLACEHOLDER DROPPED (Q-182a): mu_s(0) printed
+    2.03e22 T*m^3 matches Bs*Rs^3 = 3.37e22 within 1.7x;
+    the +1e3 SCm_contrib form would give 3.37e29 (7
+    orders off) - the v2 reference implies the confessed
+    placeholder is REMOVED from mu_s (major Q-158c/167c
+    development).
+    PERSISTS (Q-182b): E_react printed 8.74e45 again
+    (transposed-v mantissa + e45-vs-e54 exponent slip
+    carried into v2); Neptune Bs_avg = 100 uT used while
+    the paper's own comment says the real field is
+    14-16 uT (honest inline acknowledgment); mu_s 1.66x
+    residual unexplained. Jupiter 11.86 ~ solar 11 yr
+    resonance observation registered.
+    """
+    rs3 = (6.96e8)**3
+    return {
+        'value': {
+            'domain': '2.5 (canonical body reference v2, S49)',
+            'q166b_resolved': 'per-body omega_c restored - 162/157 doctrine canonical',
+            'q166c_resolved': 'Neptune SCm 1e11 + Bs 1e-4 (157 values) - 170 outlier',
+            'normalization_documented': 'Sun Pcore 2.5e16 Pa, Earth 3.6e11 Pa inline',
+            'mu_s_printed': 2.03e22,
+            'mu_s_no_placeholder': 1e-4 * rs3,               # 3.37e22
+            'mu_s_with_placeholder': 1e3 * rs3,              # 3.37e29
+            'placeholder_dropped': 'v2 mu_s matches no-placeholder form (7-order test)',
+            'e_react_slip_persists': '8.74e45 again (transposed mantissa + e45 slip)',
+            'neptune_b_honesty': 'uses 100 uT; own comment says real 14-16 uT',
+            'jupiter_resonance': '11.86 yr ~ solar 11 yr coupling observation',
+        },
+        'formula': 'four-body canonical struct set; mu_s = Bs*Rs^3 (placeholder dropped)',
+        'source': 'PAPER_186',
+        'residual_pct': abs(2.03e22 - 1e-4 * rs3) / (1e-4 * rs3) * 100,
         'status': 'OPEN_RULING',
     }

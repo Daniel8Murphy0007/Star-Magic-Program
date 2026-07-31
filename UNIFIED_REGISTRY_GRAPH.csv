@@ -952,3 +952,7 @@ observable,prodi_serrin_defects,paper,PAPER_182,transposition chain
 observable,pi_cycle_riemann_bridge,paper,PAPER_185,spectral bridge
 observable,eta_correction_riemann_fork,paper,PAPER_185,eta correction
 observable,eta_correction_riemann_fork,paper,PAPER_156,Riemann fork family
+observable,canonical_body_reference_v2,paper,PAPER_186,v2 four-body set
+observable,canonical_body_reference_v2,paper,PAPER_162,omega_c doctrine confirmed
+observable,placeholder_dropped_v2,paper,PAPER_186,mu_s form test
+observable,placeholder_dropped_v2,paper,PAPER_182,slip persistence

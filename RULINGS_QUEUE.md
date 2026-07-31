@@ -3961,6 +3961,12 @@ RESOLVED section with the ruling recorded.
   CONFESSES "SCm_contrib = 1e3 (placeholder constant)" -
   self-resolving the placeholder status of the +1e3 term
   flagged in Q-158c.
+- **UPDATE (PAPER_186, v0.189.0):** items (b) and (c)
+  RESOLVED by the v2 codebase rewrite - per-body omega_c
+  RESTORED (162/157 doctrine canonical; 170 documented an
+  older state) and Neptune returns to 157's SCm 1e11 +
+  Bs 1e-4 (170's values were the outliers). Item (a)
+  compact-Ubi form remains open.
 - **Best-candidate wired:** struct + compact law +
   convergences registered; regression and forks pinned.
 - **Daniel's ruling:** (pending)
@@ -4490,6 +4496,42 @@ RESOLVED section with the ruling recorded.
 - **Best-candidate wired:** bridge + honest hedge +
   correct standard math registered; eta correction
   proposed; fork and weak evidence pinned.
+- **Daniel's ruling:** (pending)
+
+### Q-182 — PAPER_186 canonical reference v2 — placeholder dropped + slip persistence
+- **Question:** (a) PLACEHOLDER DROPPED (confirm): the
+  v2 reference prints mu_s(0) = 2.03e22 T*m^3, which
+  matches the NO-placeholder form Bs*Rs^3 = 3.37e22
+  within 1.7x - the +1e3 SCm_contrib form would give
+  3.37e29 (7 orders off). The v2 rewrite has evidently
+  REMOVED the confessed placeholder from mu_s. Confirm
+  as the canonical mu_s form (closing Q-158c/Q-167c's
+  replacement-value question with "no placeholder"),
+  and what accounts for the residual 1.66x (2.03 vs
+  3.37)?
+  (b) SLIP PERSISTENCE: E_react(0) prints 8.74e45 again
+  - the transposed-v mantissa AND the e45-vs-e54
+  exponent slip both carried into the v2 reference.
+  Also Neptune Bs_avg = 100 uT is used while the
+  paper's own inline comment says the real field is
+  14-16 uT at 1 R_N (honest acknowledgment, value
+  unchanged). Ruling on both values?
+- **Notable (fork-resolution paper):** Q-166b RESOLVED
+  - per-body omega_c restored (Earth 1 yr, Jupiter
+  11.86, Neptune 164.8): the 162/157 doctrine is
+  canonical and 170 documented an older codebase state,
+  exactly as the supersession question suspected.
+  Q-166c RESOLVED - Neptune returns to 157's SCm 1e11
+  and Bs 1e-4. Q-178a ADDRESSED - the Pcore/PSCm
+  normalization is now documented with inline physical
+  anchors (Sun 2.5e16 Pa; Earth 3.6e11 Pa EXACT vs
+  176). Jupiter's 11.86-yr omega_c ~ solar 11-yr cycle
+  resonance observation registered (tidal-forcing
+  adjacent). The v2 rewrite is the corpus self-
+  rectifying in real time.
+- **Best-candidate wired:** v2 reference + resolutions
+  registered; placeholder-drop evidence + persisting
+  slips pinned.
 - **Daniel's ruling:** (pending)
 
 ### Q-002 — PAPER_002 vs PAPER_001 — B_crit unit inconsistency

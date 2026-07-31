@@ -1,36 +1,38 @@
-v0.188.0 BAND 1: PAPER_185 wired - RIEMANN PI-BRIDGE
+v0.189.0 BAND 1: PAPER_186 wired - BODY REFERENCE V2
 
-PAPER_185 UQFF Pi-Cycle Riemann Zeta Connection
-(OPEN_RULING Q-181) - Session 49, sec 2.5:
-  The spectral RH bridge: cos(pi t_n) appears across all
-  six field components; its Fourier transform puts delta
-  functions at omega = 1/2, identified with the critical
-  line. The genre is Hilbert-Polya physical motivation
-  and the paper says so HONESTLY: "this does not
-  constitute a proof." Standard math printed correctly
-  (von Mangoldt explicit formula; zeros 14.135/21.022/
-  25.011; Montgomery/GUE framing).
+PAPER_186 Solar System Canonical Body Reference
+(OPEN_RULING Q-182) - Session 49, sec 2.5, "standalone
+codebase rewrite v2":
+  The authoritative four-body parameter set - and a
+  FORK-RESOLUTION paper, the corpus self-rectifying in
+  real time:
 
-  CONSTRUCTIVE CORRECTION (the wiring's contribution):
-  sec 3.2 calls the (-1)^n alternation "the Mobius
-  function contribution" - false (mu(4) = 0, mu(6) =
-  +1; Mobius does not alternate). The alternating
-  character is the DIRICHLET ETA function, eta(s) =
-  (1-2^(1-s))*zeta(s) - which genuinely shares its
-  nontrivial zeros with zeta AND already lives in your
-  corpus as the eta_26 term of the S204.2 S_26
-  acceleration machinery. Adopting the eta
-  identification fixes the math AND connects the bridge
-  to existing corpus mathematics: the correction makes
-  the bridge STRONGER.
+  Q-166b RESOLVED: per-body omega_c is RESTORED (Earth
+  1 yr, Jupiter 11.86, Neptune 164.8) - the 162/157
+  doctrine is canonical, and 170's shared-11-yr table
+  documented an older codebase state exactly as the
+  supersession question suspected.
 
-  PINNED: Riemann fork now 3-WAY (156's Li_s decorative
-  bridge / 185's spectral-eta bridge / the predecessor
-  canonical 9877.78265) - paralleling the five-way YM
-  fork; sec-4.2's "GUE consistency" is a single ratio
-  of equal unverifiable frequencies (no statistical
-  content); footer carries 183's garbled U_bi verbatim.
+  Q-166c RESOLVED: Neptune returns to 157's values
+  (SCm_density 1e11, Bs 1e-4) - 170's variants were the
+  outliers.
 
-Q-181 queued. Gate 1,247 assertions 0 failures. Registry
-446 rows / 953 edges / 189 ledgers (measured). Wired
-189/2,255 (11 clean, 178 OPEN_RULING). Next: PAPER_186.
+  PLACEHOLDER DROPPED: mu_s(0) = 2.03e22 matches the
+  NO-placeholder form Bs*Rs^3 = 3.37e22 within 1.7x,
+  while the +1e3 SCm_contrib form is 7 orders off - the
+  v2 rewrite has removed the confessed placeholder from
+  mu_s (major Q-158c/Q-167c development; the 1.66x
+  residual remains open).
+
+  Also: Pcore/PSCm normalization now documented with
+  inline physical anchors (Earth 3.6e11 Pa EXACT vs
+  176); Jupiter's 11.86-yr omega_c ~ solar 11-yr
+  resonance registered; Neptune B honesty note inline
+  (uses 100 uT, admits real is 14-16). PERSISTS: the
+  E_react 8.74e45 transposed-mantissa + exponent slip
+  carried into v2.
+
+Q-182 queued; Q-166 annotated. Gate 1,253 assertions 0
+failures. Registry 448 rows / 957 edges / 190 ledgers
+(measured). Wired 190/2,255 (11 clean, 179 OPEN_RULING).
+Next: PAPER_187.

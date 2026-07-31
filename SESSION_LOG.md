@@ -2186,3 +2186,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Campaign: 189/2,255 (11 ✓, 178 ⚠). Next: PAPER_186.
 
 ---
+
+## 2026-07-31 — v0.189.0 — BAND 1: PAPER_186
+
+- PAPER_186 wired (⚠ Q-182): body reference v2. Q-166b/c
+  RESOLVED; placeholder dropped from mu_s; E_react slip
+  persists. Corpus self-rectifying in real time.
+- Campaign: 190/2,255 (11 ✓, 179 ⚠). Next: PAPER_187.
+
+---

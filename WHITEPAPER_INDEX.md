@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 189 (11 ✓, 178 ⚠ OPEN_RULING)
+- **Wired:** 190 (11 ✓, 179 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2066
+- **Not yet touched:** 2065
 
 ---
 
@@ -1138,7 +1138,7 @@
 | ⬜ | PAPER_1867 | COSMIC NEUTRINO BACKGROUND UQFF |
 | ⬜ | PAPER_1868 | SOLAR PHYSICS COMPLETE UQFF |
 | ⬜ | PAPER_1869 | QUANTUM MEASUREMENT PROBLEM UQFF |
-| ⬜ | PAPER_186 | Solar System Canonical Body Reference |
+| ⚠ | PAPER_186 | Solar System Canonical Body Reference |
 | ⬜ | PAPER_1870 | NUCLEAR FISSION FRAGMENTS UQFF |
 | ⬜ | PAPER_1871 | COSMOLOGICAL STRUCTURE FORMATION UQFF |
 | ⬜ | PAPER_1872 | POSITRONIUM MUONIUM HYPERFINE UQFF |

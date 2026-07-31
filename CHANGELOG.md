@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.189.0] — 2026-07-31 — BAND 1: PAPER_186 — BODY REFERENCE V2
+
+### Added
+- **PAPER_186 dispatch** (Solar System canonical reference
+  v2, S49, sec 2.5): the v2-rewrite four-body set — a
+  fork-resolution paper. Q-166b RESOLVED (per-body
+  omega_c restored; 162/157 doctrine canonical; 170
+  documented an older state). Q-166c RESOLVED (Neptune
+  back to 157's SCm 1e11 + Bs 1e-4). Q-178a addressed
+  (normalization documented with inline physical anchors;
+  Earth 3.6e11 Pa EXACT vs 176). PLACEHOLDER DROPPED:
+  printed mu_s matches Bs·Rs³ (no-placeholder) within
+  1.7×; the +1e3 form is 7 orders off — the v2 rewrite
+  removed the confessed placeholder (Q-158c trajectory).
+  PERSISTS: E_react 8.74e45 (transposed mantissa + e45
+  slip carried into v2); Neptune B honesty note inline.
+  Jupiter 11.86-yr ~ solar-cycle resonance registered.
+- OPEN_RULING Q-182; Q-166 annotated.
+- Gate: 1,253 assertions, 0 failures. Registry: 448 rows / 957 edges / 190 ledgers (measured).
+
+---
+
 ## [0.188.0] — 2026-07-31 — BAND 1: PAPER_185 — RIEMANN PI-BRIDGE
 
 ### Added
