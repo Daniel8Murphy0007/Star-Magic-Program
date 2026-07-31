@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.216.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.216.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.217.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.217.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1394%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-216-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1400%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-217-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.216.0 wiring campaign live**
+**UQFF systematic rebuild — v0.217.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.216.0)
+## What is currently shipped (v0.217.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 216 / 2,255** (11 ✓ · 205 ⚠ OPEN_RULING · 208 rulings queued) — 48-scale framework + H2O-H2 CIA refit; ~61-decade span (212)
+**Wired so far: 217 / 2,255** (11 ✓ · 206 ⚠ OPEN_RULING · 209 rulings queued) — H_res suite + D_universe master equations; 93.016 Gly (213)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -275,6 +275,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_210 | UQFF vs MOND | a0 = c*H0/6 emergent; k_UA = F_TRZ^4 EXACT; Abell 2744 +9%; Q-206 |
 | PAPER_211 | 99-System Compression Cycle 3 | 1287 raw -> 11 backbone (0.855%); 89.5% unification; Q_wave 6.33e4; Q-207 |
 | PAPER_212 | 48-Scale + CIA Refit | 48 scales / ~61-decade span; CIA sigma(400)=11.65 A^2 (+5.9%); k_phi ~1e-113; Q-208 |
+| PAPER_213 | H_res Suite + D_universe | 7 sub-eqs; S_shell 208Pb=0.832 MeV; D_universe 93.016 Gly (dD/D 0.002%); Q-209 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -522,7 +523,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.213.0 | Band 1: PAPER_209 | 213 |
 | v0.214.0 | Band 1: PAPER_210 | 214 |
 | v0.215.0 | Band 1: PAPER_211 | 215 |
-| **v0.216.0** ← current | Band 1: PAPER_212 | 216 |
+| v0.216.0 | Band 1: PAPER_212 | 216 |
+| **v0.217.0** ← current | Band 1: PAPER_213 | 217 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

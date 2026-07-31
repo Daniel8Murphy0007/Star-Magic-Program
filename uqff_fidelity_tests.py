@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.216.0", "uqff_calculator.VERSION = 0.216.0")
+assert_that(C.VERSION == "0.217.0", "uqff_calculator.VERSION = 0.217.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3061,6 +3061,19 @@ assert_that(_r212['ratio_rotor_universe'] == 1e61 and _r212['ratio_nuclear_hubbl
 assert_that(_r212['b_h2_cm1'] == 60.853,
             "PAPER_212: H2 rotational constant B = 60.853 cm^-1 (J-conversion drift Q-208)")
 assert_that(C.wired_count() >= 216, "wired_count >= 216")
+
+_r213 = C.calc('PAPER_213')['value']
+assert_that(abs(_r213['a_res_sgr1745'] - 1.0550625711035268e-15) < 1e-24,
+            "PAPER_213: A_res(SGR1745) = mu_B*B/E_bind = 1.055e-15 (paper 1.06e-15)")
+assert_that(abs(_r213['f_res_fe56_hz'] - 2.7056340325622208e26) < 1e18,
+            "PAPER_213: omega_res(56Fe) 1.7e27 rad/s -> f = 2.706e26 Hz")
+assert_that(abs(_r213['s_shell_pb208_mev'] - 0.8320502943378437) < 1e-9,
+            "PAPER_213: S_shell 208Pb E_pairing = 12/sqrt(208) = 0.832 MeV")
+assert_that(abs(_r213['dd_over_d_pct'] - 0.0021502139462979226) < 1e-12,
+            "PAPER_213: D_universe 93.014 -> 93.016 Gly, dD/D = 0.00215% (paper 0.002%)")
+assert_that(_r213['n_magic_neutron'] == [2, 8, 20, 28, 50, 82, 126] and _r213['h_res_sub_equations'] == 7,
+            "PAPER_213: H_res 7 sub-equations; neutron magic {2,8,20,28,50,82,126} (proton 7th=114, Q-209a)")
+assert_that(C.wired_count() >= 217, "wired_count >= 217")
 
 
 # =============================================================================

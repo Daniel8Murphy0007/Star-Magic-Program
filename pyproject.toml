@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.216.0"
-description = "UQFF Star-Magic-Program v0.216.0: PAPER_212 wired - 48-scale framework + H2O-H2 CIA refit; 48 scales / 5 regimes / ~61-decade span single master eq; CIA b=0.004997, sigma(400)=11.649 A^2 (+5.90% vs 11.0); k_phi ~1e-113 shifts -5.9%; B(H2)=60.853 cm^-1 (J-conv drift Q-208); ratios 1e61/1e41/1e-103. Q-208. Wired 216/2255, gate 1394/0. Registry 485 rows / 1035 edges / 216 ledgers (measured)."
+version = "0.217.0"
+description = "UQFF Star-Magic-Program v0.217.0: PAPER_213 wired - H_res suite + D_universe master equations; H_res 7 sub-eqs A_res(SGR1745)=1.055e-15, f(56Fe)=2.706e26 Hz, [SCm] tanh(1)=0.762 reversed-buoyancy, S_shell 208Pb=12/sqrt(208)=0.832 MeV; D_universe 93.014->93.016 Gly (dD/D=0.00215%); proton magic 114 vs 126 + D_u (1+z) drift Q-209. Wired 217/2255, gate 1400/0. Registry 487 rows / 1038 edges / 217 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

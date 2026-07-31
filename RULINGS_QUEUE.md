@@ -9,6 +9,21 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-209 — PAPER_213 — proton 7th magic number + D_universe (1+z) drift
+- **Question (a):** PAPER_213 sec 2.7 lists proton magic numbers as {2, 8, 20,
+  28, 50, 82, 114} — ending in 114 (the predicted island-of-stability proton
+  shell) rather than the UQFF-canonical 126. Neutron magic {2,8,20,28,50,82,126}
+  is unchanged. Is the 7th proton magic 114 intended (standard nuclear physics)
+  or should it be the UQFF-canonical 126 for both? (The UQFF integer-primitive
+  magic-number derivation in the predecessor gives 126 = D_crit + SO_5^2.)
+- **Question (b):** The D_universe diameter is written as D_u = 2*(1+z_rec)*D_c,rec
+  ~ 2*1101*14.0 Gpc, which evaluates to 30828 Gpc — a spurious (1+z_rec) factor.
+  The correct proper diameter today is 2*D_c,rec ~ 28 Gpc ~ 91-93 Gly (which is
+  what recovers the stated 93 Gly). Confirm the (1+z_rec) factor is a typo.
+- **Best-candidate wired:** neutron magic {…126} and D_universe = 93.016 Gly
+  (from 2*D_c,rec + corrections) wired as headline; both forks recorded.
+- **Daniel's ruling:** (pending)
+
 ### Q-208 — PAPER_212 — H2 rotational constant J-conversion drift
 - **Question:** PAPER_212 sec 6 gives the H2 rotational constant B = 60.853
   cm^-1 (correct) but converts it to "7.55e-23 J". The correct conversion is

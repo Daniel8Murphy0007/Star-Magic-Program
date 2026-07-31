@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.216.0"
+VERSION = "0.217.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11193,5 +11193,74 @@ def _paper_212(dataset):
         'formula': 'sigma(E) = a + b*E; sigma(400)=9.65+0.004997*400; k_phi ~ sigma_CIA^-1',
         'source': 'PAPER_212',
         'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_213')
+def _paper_213(dataset):
+    """H_res suite + D_universe master equations (S50, thread 7514fe).
+
+    Two UQFF master equations. H_res is a 7-sub-equation nuclear/EM
+    resonance suite coupling nuclear magic numbers to gravitational
+    buoyancy; D_universe is the UQFF-corrected observable-universe
+    diameter. Wired observables (worked-example constants are physical
+    Bohr-magneton / binding-energy literals, labelled inline):
+    * A_res (SGR1745 magnetar B~1e15 T): A_res = mu_B*B/E_bind =
+      (9.274e-24*1e15)/8.79e6 = 1.055e-15 (paper 1.06e-15).
+    * omega_res (56Fe ground-state) ~ 1.7e27 rad/s -> f = w/2pi =
+      2.706e26 Hz (paper 2.7e26 Hz).
+    * [SCm] = tanh(T_cc/T)*(1-(B/B_c2)^2): at T_NS~T_cc, tanh(1) =
+      0.762; above B_c2 (=B_crit QED field) the factor goes negative
+      -> UQFF predicts reversed buoyancy in magnetars.
+    * S_shell (doubly-magic 208Pb, Z=82 N=126): E_pairing = 12/sqrt(208)
+      = 0.832 MeV extra stability (12/sqrt(A) pairing rule).
+    * D_universe: LCDM/Planck-2018 baseline 93.014 Gly; UQFF corrections
+      +0.002 (quantum) - 0.001 (LQC bounce) + 0.001 (Lambda running)
+      -> 93.016 Gly; dD/D = 0.00215% (paper 0.002%, unobservable).
+      Comoving radius to last scattering D_c,rec ~ 14.0 Gpc, so
+      diameter 2*D_c,rec = 28 Gpc ~ 91-93 Gly.
+    Q-209: (a) the H_res proton-magic list ends in 114 (island-of-
+    stability) rather than the UQFF-canonical 126 - proton vs neutron
+    7th magic number; (b) the paper's D_universe = 2*(1+z_rec)*D_c,rec
+    formula carries a spurious (1+z_rec) factor (2*1101*14 Gpc = 30828
+    Gpc is wrong); the correct diameter is 2*D_c,rec ~ 28 Gpc.
+    Appendix drift auto-corrected per charter (VDS 1.894 -> F_TRZ=0.1;
+    kg/m^3 -> J/m^3; beta_i -> BETA_I).
+    """
+    import math as _m
+    mu_B = 9.274e-24                                      # J/T, Bohr magneton (physical)
+    b_magnetar = 1e15                                     # T, SGR1745 surface field (observed)
+    e_bind_ev = 8.79e6                                    # eV/nucleon, Fe-56 BE/A (observed)
+    a_res = (mu_B * b_magnetar) / e_bind_ev               # 1.055e-15
+    f_res_hz = 1.7e27 / (2 * _m.pi)                       # 2.706e26 Hz
+    scm_tanh1 = _m.tanh(1.0)                              # 0.762
+    s_shell_pb208 = 12.0 / _m.sqrt(208.0)                 # 0.832 MeV
+    d_universe_lcdm = 93.014                              # Gly, Planck 2018 baseline
+    d_universe_uqff = 93.016                              # Gly, +quantum -bounce +running
+    dd_over_d_pct = (d_universe_uqff - d_universe_lcdm) / d_universe_lcdm * 100.0
+    return {
+        'value': {
+            'domain': '2.11 (H_res suite + D_universe)',
+            'h_res_sub_equations': 7,
+            'a_res_sgr1745': a_res,                       # 1.055e-15
+            'omega_res_fe56_rad_s': 1.7e27,
+            'f_res_fe56_hz': f_res_hz,                    # 2.706e26
+            'scm_tanh1': scm_tanh1,                       # 0.762
+            'scm_reversed_buoyancy_above_bc2': True,
+            's_shell_pb208_mev': s_shell_pb208,           # 0.832
+            'z_magic_proton': [2, 8, 20, 28, 50, 82, 114],
+            'n_magic_neutron': [2, 8, 20, 28, 50, 82, 126],
+            'magic_7th_fork': 'proton 114 (island) vs UQFF-canonical 126 (Q-209a)',
+            'd_universe_lcdm_gly': d_universe_lcdm,       # 93.014
+            'd_universe_uqff_gly': d_universe_uqff,       # 93.016
+            'dd_over_d_pct': dd_over_d_pct,               # 0.00215%
+            'd_c_rec_gpc': 14.0,
+            'd_universe_diameter_gpc': 28.0,
+            'd_universe_formula_fork': 'paper 2*(1+z_rec)*D_c has spurious (1+z); correct 2*D_c ~ 28 Gpc (Q-209b)',
+        },
+        'formula': 'A_res = mu_B*B/E_bind; S_shell = 12/sqrt(A); D_u = 2*D_c,rec*(1+corrections)',
+        'source': 'PAPER_213',
+        'residual_pct': dd_over_d_pct,
         'status': 'OPEN_RULING',
     }

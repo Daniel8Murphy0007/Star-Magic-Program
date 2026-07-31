@@ -1,31 +1,33 @@
-v0.216.0 BAND 1: PAPER_212 wired - 48-SCALE + CIA REFIT
+v0.217.0 BAND 1: PAPER_213 wired - H_res SUITE + D_universe
 
-PAPER_212 (UQFF 48-Scale Molecular Rotor and CIA Cross-Section
-Framework, S50) wired as one dispatch (Q-208, OPEN_RULING).
+PAPER_213 (H_res Suite and D_universe Master Equations, S50) wired as
+one dispatch (Q-209, OPEN_RULING).
 
 Physics:
-- UQFF spans 48 physical scales from the H2 molecular rotor torque
-  (~1e-34 N.m) to the observable-universe diameter (~1e27 m) under a
-  single master equation. 5 physical regimes (quantum/molecular,
-  compact/stellar, galactic ISM/disk, large-scale structure,
-  cosmological); ~61-decade span. Key ratios: rotor:D_universe ~1e61,
-  nuclear:Hubble ~1e41, k_phi:G ~1e-103.
-- H2O-H2 collision-induced-absorption refit (arXiv:2506.09257,
-  Dj=2 quadrupolar): slope b = 0.004997 A^2/cm^-1,
-  sigma(400 cm^-1) = 9.65 + b*400 = 11.649 A^2 (paper 11.65),
-  a +5.90% update over Borysow-Frommhold 1987 (11.0 A^2). This is
-  the source detail for the CIA figures cited in PAPER_208.
-  Verified in Python.
-- UQFF vacuum-CIA coupling k_phi ~ 1e-113 (ties the k_eta deep-vacuum
-  thread); k_phi ~ sigma_CIA^-1 so dk_phi/k_phi = -5.9%; planetary
-  atmosphere (Uranus/Neptune) opacity shifts ~0.06% in g(r,t).
-- H2 rotational constant B = 60.853 cm^-1; torque tau_rot ~ 1e-34 N.m.
+- H_res: a 7-sub-equation nuclear/EM resonance suite coupling nuclear
+  magic numbers to gravitational buoyancy.
+  * A_res(SGR1745 magnetar B~1e15 T) = mu_B*B/E_bind =
+    (9.274e-24*1e15)/8.79e6 = 1.055e-15 (paper 1.06e-15).
+  * omega_res(56Fe ground state) ~ 1.7e27 rad/s -> f = w/2pi =
+    2.706e26 Hz (paper 2.7e26 Hz).
+  * [SCm] = tanh(T_cc/T)*(1-(B/B_c2)^2): tanh(1) = 0.762; above B_c2
+    (= B_crit QED field) the factor goes negative -> UQFF predicts
+    reversed buoyancy in magnetars.
+  * S_shell (doubly-magic 208Pb, Z=82 N=126): E_pairing = 12/sqrt(208)
+    = 0.832 MeV extra stability. All verified in Python.
+- D_universe: LCDM/Planck-2018 baseline 93.014 Gly; UQFF corrections
+  +0.002 (quantum) -0.001 (LQC bounce) +0.001 (Lambda running) ->
+  93.016 Gly; dD/D = 0.00215% (paper 0.002%, unobservable). Comoving
+  radius to last scattering D_c,rec ~ 14.0 Gpc, so diameter
+  2*D_c,rec = 28 Gpc ~ 91-93 Gly.
 
-Q-208: the paper's B->J conversion 7.55e-23 J is ~16x low (hc*60.853
-cm^-1 = 1.209e-21 J; 7.55e-23 J corresponds to ~3.8 cm^-1). The
-rotational constant 60.853 cm^-1 itself is correct and is what was
-wired. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i, YM gap)
-auto-corrected per charter, not in wired physics.
+Q-209: (a) the H_res proton-magic list ends in 114 (island-of-
+stability) rather than the UQFF-canonical 126; neutron magic
+{2,8,20,28,50,82,126} unchanged. (b) The paper's D_universe =
+2*(1+z_rec)*D_c,rec formula carries a spurious (1+z_rec) factor
+(2*1101*14 Gpc = 30828 Gpc is wrong); correct is 2*D_c,rec ~ 28 Gpc.
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected
+per charter, not in wired physics.
 
-Gate: 1394/0. Registry 485 rows / 1035 edges / 216 ledgers (measured).
-Campaign: 216/2,255. Next: PAPER_213.
+Gate: 1400/0. Registry 487 rows / 1038 edges / 217 ledgers (measured).
+Campaign: 217/2,255. Next: PAPER_214.

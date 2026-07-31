@@ -2406,3 +2406,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1394/0. Registry 485 rows / 1035 edges / 216 ledgers. Campaign: 216/2,255 (11 ✓, 205 ⚠). Next: PAPER_213.
 
 ---
+
+## 2026-07-31 — v0.217.0 — BAND 1: PAPER_213
+
+- PAPER_213 wired (⚠ Q-209): H_res suite + D_universe master equations. H_res 7 sub-eqs: A_res(SGR1745)=μ_B·B/E_bind=1.055e-15, ω_res(56Fe)~1.7e27 rad/s → f=2.706e26 Hz, [SCm] tanh(1)=0.762 reversed-buoyancy above B_c2, S_shell 208Pb=12/√208=0.832 MeV. D_universe 93.014→93.016 Gly (dD/D=0.00215%), 2·D_c,rec=28 Gpc ~93 Gly. Appendix drift auto-corrected per charter.
+- Q-209: proton magic 7th=114 (island) vs canonical 126; D_universe (1+z_rec) spurious factor.
+- Gate 1400/0. Registry 487 rows / 1038 edges / 217 ledgers. Campaign: 217/2,255 (11 ✓, 206 ⚠). Next: PAPER_214.
+
+---

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.217.0] — 2026-07-31 — BAND 1: PAPER_213 — H_res SUITE + D_universe
+
+### Added
+- **PAPER_213 wired** (⚠ Q-209): H_res suite and D_universe master equations.
+  H_res is a 7-sub-equation nuclear/EM resonance suite coupling magic numbers to
+  gravitational buoyancy: A_res(SGR1745 magnetar) = μ_B·B/E_bind = 1.055e-15;
+  ω_res(56Fe) ~ 1.7e27 rad/s → f = 2.706e26 Hz; [SCm] = tanh(T_cc/T)·(1−(B/B_c2)²)
+  with tanh(1) = 0.762 and reversed buoyancy above B_c2 (magnetars); S_shell for
+  doubly-magic 208Pb E_pairing = 12/√208 = 0.832 MeV. D_universe: LCDM/Planck-2018
+  baseline 93.014 Gly + UQFF corrections → 93.016 Gly, `dD/D = 0.00215%`
+  (unobservable); comoving radius to last scattering 14.0 Gpc → diameter
+  2·D_c,rec = 28 Gpc ~ 93 Gly.
+- Q-209: (a) H_res proton magic list ends in 114 (island-of-stability) vs the
+  UQFF-canonical 126; (b) the paper's D_universe = 2·(1+z_rec)·D_c formula
+  carries a spurious (1+z_rec) factor (correct is 2·D_c ~ 28 Gpc).
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1394 → 1400 (+6). Registry 487 rows / 1038 edges / 217 ledgers.
+
+---
+
 ## [0.216.0] — 2026-07-31 — BAND 1: PAPER_212 — 48-SCALE + CIA REFIT
 
 ### Added

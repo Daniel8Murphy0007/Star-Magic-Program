@@ -1034,3 +1034,6 @@ observable,q_wave_47system_calibration,observable,q_wave,PAPER_208 canonical tie
 observable,scale_48_framework,paper,PAPER_212,48-scale table
 observable,cia_h2o_h2_refit,paper,PAPER_212,CIA refit
 observable,cia_h2o_h2_refit,observable,variable_calibration_status,PAPER_208 CIA source
+observable,h_res_resonance_suite,paper,PAPER_213,H_res 7 sub-eqs
+observable,d_universe_master_equation,paper,PAPER_213,D_universe
+primitive,B_CRIT,observable,h_res_resonance_suite,B_c2 QED critical field
