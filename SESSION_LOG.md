@@ -2462,3 +2462,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1435/0. Registry 499 rows / 1058 edges / 223 ledgers. Campaign: 223/2,255 (11 ✓, 212 ⚠). Next: PAPER_220.
 
 ---
+
+## 2026-07-31 — v0.224.0 — BAND 1: PAPER_220
+
+- PAPER_220 wired (⚠ Q-216): Crab Nebula PWN — F_wind + M_mag additive terms, only UQFF system with expanding r(t)=r0+v_exp*t. E_sd=4π²·I·Ṗ/P³=4.42e31 W (Hester 4.6e31); F_wind=E_sd/(c·4πr²)=1.36e-10 vs g_base=G·4.6Msun/r²=6.82e-12 -> F_wind/g_base=20.0 (wind-dominated torus); m=(4π/μ0)·Bs·Rns³=3.8e27 A·m² (registry μ0), M_mag=4.49e-28 r⁻³ dilution; r0_initial=5.99e15 m. Clean arithmetic (no drift). Appendix drift auto-corrected.
+- Q-216: consolidated dimensional normalization — F_wind (Pa)/M_mag (T)/E_rad (J/m³) added to g (m/s²) without stated conversion (PAPER_218/219/220).
+- Gate 1441/0. Registry 501 rows / 1061 edges / 224 ledgers. Campaign: 224/2,255 (11 ✓, 213 ⚠). Next: PAPER_221.
+
+---

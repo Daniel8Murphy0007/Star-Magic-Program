@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.223.0", "uqff_calculator.VERSION = 0.223.0")
+assert_that(C.VERSION == "0.224.0", "uqff_calculator.VERSION = 0.224.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3150,6 +3150,19 @@ assert_that(abs(_r219['g_base_m_s2'] - 5.012366255144033e-11) < 1e-16,
 assert_that('gravity-protected' in _r219['duality'],
             "PAPER_219: Pillars (1-E) multiplier gravity-protected vs M16 -E_rad additive radiation-dominated")
 assert_that(C.wired_count() >= 223, "wired_count >= 223")
+
+_r220 = C.calc('PAPER_220')['value']
+assert_that(abs(_r220['f_wind_over_g_base'] - 19.996244925740612) < 1e-6,
+            "PAPER_220: F_wind/g_base = 20.0 at Crab inner radius (wind-dominated torus)")
+assert_that(abs(_r220['e_sd_formula_W'] - 4.420866612298581e31) < 1e25,
+            "PAPER_220: spindown E_sd = 4*pi^2*I*Pdot/P^3 = 4.42e31 W (Hester 2008 obs 4.6e31)")
+assert_that(abs(_r220['m_dipole_A_m2'] - 3.8e27) < 1e24 and abs(_r220['m_mag'] - 4.488592582140559e-28) < 1e-34,
+            "PAPER_220: dipole moment m = (4pi/mu0)*B_s*R_ns^3 = 3.8e27 A m^2; M_mag = 4.49e-28")
+assert_that(abs(_r220['r0_initial_m'] - 5.98552e15) < 1e12 and _r220['unique_expanding_domain'],
+            "PAPER_220: expanding r(t)=r0+v_exp*t, r0_initial=5.99e15 m (~0.2 pc SN ejecta)")
+assert_that(abs(_r220['f_wind'] - 1.3644103083881766e-10) < 1e-16,
+            "PAPER_220: F_wind = E_sd/(c*4pi*r^2) = 1.36e-10 at r=9.46e15 m")
+assert_that(C.wired_count() >= 224, "wired_count >= 224")
 
 
 # =============================================================================

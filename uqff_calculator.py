@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.223.0"
+VERSION = "0.224.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11649,6 +11649,80 @@ def _paper_219(dataset):
         },
         'formula': 'g_M16 = G*M/r^2*(1+H*t)*(1-B/B_crit)*(1+M_sf) - E_rad; E_rad = L_UV/(4*pi*r^2*c)',
         'source': 'PAPER_219',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_220')
+def _paper_220(dataset):
+    """Crab Nebula PWN: F_wind + M_mag in expanding r(t) (S55).
+
+    The Crab Nebula (M1) introduces two additive terms unique to the
+    isolated pulsar-wind-nebula context and the only UQFF system with an
+    analytically expanding spatial domain r(t) = r0 + v_exp*t. Wired
+    observables (all reproduce cleanly):
+    * Expanding radius: v_exp = 1.5e6 m/s (1500 km/s filaments), r0 =
+      5.20e16 m (5.5 ly half-radius), age 972 yr (SN 1054 -> 2026);
+      back-projected r0_initial = r0 - v_exp*t_age = 5.99e15 m (~0.2 pc,
+      consistent with SN ejecta).
+    * Spindown luminosity E_sd = 4*pi^2*I*Pdot/P^3 (PSR J0534+2200:
+      P=33.5 ms, Pdot=4.21e-13, I=1e38 kg m^2) = 4.42e31 W (matches the
+      canonical Hester-2008 4.6e31 W).
+    * Pulsar spindown ram pressure F_wind = E_sd/(c*4*pi*r^2); at the
+      inner computational radius r=9.46e15 m (1 ly), F_wind = 1.36e-10;
+      base gravity g_base = G*M/r^2 (M_ejecta=4.6 M_sun) = 6.82e-12;
+      F_wind/g_base = 20.0 -> wind-dominated inner torus/jets.
+    * Magnetic-moment dipole dilution M_mag = mu0*m/(4*pi*r^3), with
+      m = (4*pi/mu0)*B_s*R_ns^3 = 3.8e27 A m^2 (B_s=3.8e8 T, R_ns=1e4 m,
+      registry mu0); M_mag(9.46e15 m) = 4.49e-28. M_mag falls as r^-3
+      (dipole), faster than F_wind and g_base (r^-2), so it is negligible
+      at large r - matching Crab PWN morphology.
+    * Distinct from the SGR 1745 magnetar (binary orbit, ~1e15 G) - Crab
+      is an isolated PWN with canonical 3.8e12 G.
+    Q-216: F_wind (pressure N/m^2), M_mag (T^2 m / field), and the
+    PAPER_219 E_rad (energy density J/m^3) are all added to g (m/s^2)
+    "in UQFF normalization" - the dimensional bridge that lets these
+    terms sum with acceleration is not stated. Recurs across
+    PAPER_218/219/220; consolidated dimensional-normalization ruling.
+    Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    v_exp = 1.5e6                                         # m/s, 1500 km/s
+    r0 = 5.20e16                                          # m, 5.5 ly
+    age_s = 972 * 3.156e7                                 # s, SN 1054 -> 2026
+    r0_initial = r0 - v_exp * age_s                       # 5.99e15
+    I_crab = 1e38; Pdot = 4.21e-13; P = 33.5e-3
+    e_sd_formula = 4 * _m.pi ** 2 * I_crab * Pdot / P ** 3  # 4.42e31
+    e_sd_obs = 4.6e31                                     # Hester 2008
+    r_inner = 9.46e15                                     # m, 1 ly computational default
+    f_wind = e_sd_obs / (C_OBSERVED * 4 * _m.pi * r_inner ** 2)  # 1.36e-10
+    g_base = G_OBSERVED * 4.6 * M_SUN_OBSERVED / r_inner ** 2    # 6.82e-12
+    wind_ratio = f_wind / g_base                          # 20.0
+    m_dipole = (4 * _m.pi / MU_0) * 3.8e8 * (1e4) ** 3    # 3.8e27
+    m_mag = MU_0 * m_dipole / (4 * _m.pi * r_inner ** 3)  # 4.49e-28
+    return {
+        'value': {
+            'domain': '2.18 (Crab Nebula PWN)',
+            'unique_expanding_domain': True,
+            'v_exp_m_s': v_exp,
+            'r0_m': r0,
+            'age_yr': 972,
+            'r0_initial_m': r0_initial,                   # 5.99e15
+            'e_sd_formula_W': e_sd_formula,               # 4.42e31
+            'e_sd_observed_W': e_sd_obs,                  # 4.6e31 Hester
+            'f_wind': f_wind,                             # 1.36e-10
+            'g_base': g_base,                             # 6.82e-12
+            'f_wind_over_g_base': wind_ratio,             # 20.0
+            'm_dipole_A_m2': m_dipole,                    # 3.8e27
+            'm_mag': m_mag,                               # 4.49e-28
+            'm_mag_scaling': 'r^-3 (dipole, faster than F_wind/g_base r^-2)',
+            'crab_B_field_G': 3.8e12,
+            'sgr1745_B_field_G': 1e15,
+            'dimensional_normalization_fork': 'F_wind/M_mag/E_rad added to g in m/s^2 via unstated UQFF normalization (Q-216)',
+        },
+        'formula': 'F_wind = E_sd/(c*4*pi*r^2); M_mag = mu0*m/(4*pi*r^3); r(t) = r0 + v_exp*t',
+        'source': 'PAPER_220',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

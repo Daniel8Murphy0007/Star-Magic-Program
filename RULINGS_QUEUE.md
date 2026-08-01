@@ -9,6 +9,24 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-216 — PAPER_218/219/220 — dimensional normalization of additive terms
+- **Question:** Several fourth-pass system papers add terms with non-acceleration
+  units directly to the base gravity g (units m/s^2), each with a hand-wave note
+  ("treated as acceleration in UQFF normalization"):
+  * PAPER_220 F_wind = E_sd/(c*4pi*r^2) has units W/(m/s * m^2) = N/m^2 = Pa;
+  * PAPER_220 M_mag = mu0*m/(4pi*r^3) has units T (or "T^2 m" per the paper);
+  * PAPER_219 E_rad = L_UV/(4pi*r^2*c) has units J/m^3 = Pa.
+  The dimensional bridge that lets a pressure / energy-density / field term be
+  summed with an acceleration is not stated in any of the three papers. Is there
+  a canonical UQFF normalization constant (e.g. divide by rho*something, or by a
+  mass-per-area) that converts these to m/s^2, or should the master equation
+  carry explicit conversion factors? This recurs across PAPER_218/219/220 and
+  likely later system papers - a single consolidated ruling would settle it.
+- **Best-candidate wired:** F_wind, M_mag, E_rad wired in their natural units
+  (Pa, T, J/m^3) with the normalization gap flagged; the ratios that ARE
+  dimensionally clean (F_wind/g_base = 20 is pressure/accel, still mixed) noted.
+- **Daniel's ruling:** (pending)
+
 ### Q-215 — PAPER_219 — M16 section-2 worked-example arithmetic errors
 - **Question:** PAPER_219 sec 2 has the same worked-example drift family as
   PAPER_218 (Q-214) — the structural dual form (1+M_sf)*g_base - E_rad and the

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 223 (11 ✓, 212 ⚠ OPEN_RULING)
+- **Wired:** 224 (11 ✓, 213 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2032
+- **Not yet touched:** 2031
 
 ---
 
@@ -1476,7 +1476,7 @@
 | ⚠ | PAPER_217 | DeepSearch FUBii Polynomial Rare Mathematical Discoveries |
 | ⚠ | PAPER_218 | NGC3603 Stellar Pressure Dispersal UQFF |
 | ⚠ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
-| ⬜ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
+| ⚠ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
 | ⬜ | PAPER_221 | Bubble Nebula Positive Enhancement UQFF |
 | ⬜ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |
 | ⬜ | PAPER_221b | Bubble Nebula Positive Enhancement UQFF |

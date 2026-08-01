@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.224.0] — 2026-07-31 — BAND 1: PAPER_220 — CRAB NEBULA PWN
+
+### Added
+- **PAPER_220 wired** (⚠ Q-216): Crab Nebula (M1) pulsar-wind-nebula — two additive
+  terms unique to the isolated PWN context and the only UQFF system with an
+  analytically expanding domain r(t) = r0 + v_exp·t. Spindown luminosity
+  E_sd = 4π²·I·Ṗ/P³ = 4.42e31 W (PSR J0534+2200: P=33.5 ms, Ṗ=4.21e-13, I=1e38;
+  matches Hester-2008 4.6e31). Spindown ram pressure F_wind = E_sd/(c·4π·r²) =
+  1.36e-10 vs base gravity g_base = G·M/r² = 6.82e-12 (M_ejecta=4.6 M_sun) →
+  **F_wind/g_base = 20.0**, confirming the wind-dominated inner torus/jets.
+  Magnetic-moment dilution M_mag = μ0·m/(4π·r³) with m = (4π/μ0)·B_s·R_ns³ =
+  3.8e27 A·m² (registry μ0), M_mag(9.46e15 m) = 4.49e-28, falling as r⁻³ (dipole,
+  faster than F_wind/g_base r⁻²). Back-projected r0_initial = 5.99e15 m (~0.2 pc
+  SN ejecta). Distinct from the SGR 1745 binary magnetar (~1e15 G).
+- Q-216: consolidated dimensional-normalization question — F_wind (Pa), M_mag (T),
+  and PAPER_219's E_rad (J/m³) are all added to g (m/s²) "in UQFF normalization"
+  with no stated conversion factor. Recurs across PAPER_218/219/220.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1435 → 1441 (+6). Registry 501 rows / 1061 edges / 224 ledgers.
+
+---
+
 ## [0.223.0] — 2026-07-31 — BAND 1: PAPER_219 — M16 EAGLE NEBULA SFR + RADIATION
 
 ### Added

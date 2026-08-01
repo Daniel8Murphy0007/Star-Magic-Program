@@ -1057,3 +1057,6 @@ observable,suppressor_term_taxonomy,paper,PAPER_218,5-term taxonomy
 observable,m16_sfr_radiation_dual,paper,PAPER_219,dual SFR+radiation
 observable,m16_pillars_photoevap_duality,paper,PAPER_219,photoevap duality
 observable,m16_sfr_radiation_dual,observable,ngc3603_pressure_dispersal,suppressor taxonomy tie PAPER_218
+primitive,MU_0,observable,crab_pwn_fwind_mmag,M_mag = mu0*m/(4pi r^3)
+observable,crab_pwn_fwind_mmag,paper,PAPER_220,F_wind + M_mag
+observable,crab_pwn_expanding_domain,paper,PAPER_220,expanding r(t)
