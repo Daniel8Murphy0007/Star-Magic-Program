@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.232.0] — 2026-07-31 — BAND 1: PAPER_228 — WESTERLUND 2 OB-WIND MUGE (CLEAN)
+
+### Added
+- **PAPER_228 wired** (✓ CLEAN): Westerlund 2, the most massive super star cluster
+  in the Milky Way, 9-term MUGE with the highest wind density in the family:
+  ρ_wind = 1e-20 kg/m³ (10× the LMC Tapestry; ~300 O/B stars including the WR 20a
+  83+82 M_sun WN binary). Gas-ratio amplitude M_dot_factor = M_gas/M_init =
+  100000/30000 = 3.33. Wind ram acceleration a_wind = ρ_wind·v_wind²/ρ_fluid =
+  4e4 m/s² (ambient ρ_fluid = 1e-12 kg/m³). Comparative ratios vs Tapestry:
+  M_init 125×, ρ_wind 10×, τ_SF 0.4×, a_wind 10×. Doc 6 of the grok_share_8d951e12
+  thread.
+- **Self-rectification of Q-220:** the shared a_wind convention across both
+  comparative tables uses ρ_fluid = 1e-12 kg/m³, giving 4e3 (Tapestry) and 4e4
+  (Wd2) — a clean 10× ratio. So PAPER_227's *abstract* (4e3) was correct; its
+  sec-2 ρ_fluid = 1e-21 (yielding 4e12) was the outlier. PAPER_228 canonizes
+  ρ_fluid = 1e-12; Q-220 residual (whether to update PAPER_227's dispatch)
+  queued for Daniel.
+- Clean arithmetic — no ruling filed for PAPER_228 itself.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1477 → 1482 (+5). Registry 513 rows / 1081 edges / 232 ledgers.
+
+---
+
 ## [0.231.0] — 2026-07-31 — BAND 1: PAPER_227 — TAPESTRY STARBIRTH LMC MUGE
 
 ### Added

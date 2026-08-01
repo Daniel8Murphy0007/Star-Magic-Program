@@ -9,15 +9,19 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
-### Q-220 — PAPER_227 — Tapestry a_wind abstract vs body (4e3 vs 4e12)
-- **Question:** PAPER_227's abstract states the stellar-wind ram-pressure
-  acceleration a_wind ~ 4e3 m/s^2, but sec-2 and the conclusion give 4e12 m/s^2:
-  with rho_wind = rho_fluid = 1e-21 kg/m^3 and v_wind = 2000 km/s, a_wind =
-  rho_wind*v_wind^2/rho_fluid = v_wind^2 = (2e6)^2 = 4e12 m/s^2. The abstract's
-  4e3 is a typo (off by 10^9). Confirm 4e12 is canonical (the body value was
-  wired).
-- **Best-candidate wired:** a_wind = 4e12 m/s^2 (body/conclusion value);
-  abstract's 4e3 flagged as typo.
+### Q-220 — PAPER_227 — Tapestry a_wind (SELF-RECTIFIED by PAPER_228)
+- **Original question:** PAPER_227's abstract states a_wind ~ 4e3 m/s^2 but its
+  sec-2 gives 4e12 (using rho_fluid = rho_wind = 1e-21). Which is canonical?
+- **RESOLVED by PAPER_228:** The shared a_wind convention across BOTH comparative
+  tables (PAPER_227 and PAPER_228) uses ambient rho_fluid = 1e-12 kg/m^3, giving
+  a_wind = rho_wind*v_wind^2/rho_fluid = 4e3 (Tapestry, rho_wind=1e-21) and 4e4
+  (Wd2, rho_wind=1e-20) - a clean 10x ratio matching the density ratio. So the
+  PAPER_227 ABSTRACT (4e3) was CORRECT; its sec-2 rho_fluid=1e-21 (yielding 4e12)
+  was the outlier/error. Canonical: rho_fluid=1e-12 ambient ISM. PAPER_228 wired
+  a_wind=4e4 on this basis. PAPER_227's dispatch retains 4e12 with the fork noted
+  (self-rectification doctrine: not re-edited without Daniel's request).
+- **Residual question for Daniel:** should PAPER_227's dispatch a_wind be updated
+  from 4e12 to 4e3 (rho_fluid 1e-21 -> 1e-12) to match the canonical convention?
 - **Daniel's ruling:** (pending)
 
 ### Q-219 — PAPER_226 — SGR 0501 11-term MUGE reconstruction + new source thread

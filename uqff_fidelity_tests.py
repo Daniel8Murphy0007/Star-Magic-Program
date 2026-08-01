@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.231.0", "uqff_calculator.VERSION = 0.231.0")
+assert_that(C.VERSION == "0.232.0", "uqff_calculator.VERSION = 0.232.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3242,6 +3242,17 @@ assert_that(_r227['terms'] == 9 and len(_r227['novel_methods']) == 2,
 assert_that(_r227['wind_family']['westerlund2'] == 1e-20 and _r227['wind_family']['tapestry_lmc'] == 1e-21,
             "PAPER_227: wind family - Westerlund 2 rho_wind 10x denser than Tapestry LMC")
 assert_that(C.wired_count() >= 231, "wired_count >= 231")
+
+_r228 = C.calc('PAPER_228')['value']
+assert_that(abs(_r228['m_dot_factor'] - 3.3333333333333335) < 1e-9,
+            "PAPER_228: Westerlund 2 M_dot_factor = M_gas/M_init = 100000/30000 = 3.33")
+assert_that(_r228['rho_wind'] == 1e-20 and _r228['rho_wind_ratio_vs_tapestry'] == 10 and _r228['highest_wind_density_in_family'],
+            "PAPER_228: rho_wind = 1e-20 kg/m^3 (10x Tapestry) - highest wind density in MUGE family")
+assert_that(_r228['a_wind_m_s2'] == 4e4 and _r228['rho_fluid'] == 1e-12,
+            "PAPER_228: a_wind = rho_wind*v^2/rho_fluid = 4e4 m/s^2 (rho_fluid=1e-12 ambient, self-rectifies Q-220)")
+assert_that(_r228['comparative_ratios_vs_tapestry']['M_init'] == 125 and _r228['comparative_ratios_vs_tapestry']['a_wind'] == 10,
+            "PAPER_228: Wd2 vs Tapestry ratios M_init 125x, rho_wind 10x, a_wind 10x")
+assert_that(C.wired_count() >= 232, "wired_count >= 232")
 
 
 # =============================================================================

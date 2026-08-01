@@ -1,29 +1,32 @@
-v0.231.0 BAND 1: PAPER_227 wired - TAPESTRY STARBIRTH LMC MUGE
+v0.232.0 BAND 1: PAPER_228 wired - WESTERLUND 2 OB-WIND MUGE (CLEAN)
 
-PAPER_227 (Tapestry of Blazing Starbirth (NGC 2014/2020, LMC) - MUGE
-with Gas-Accreting Mass M(t) and Stellar Wind Ram Pressure, S58) wired
-as one dispatch (Q-220, OPEN_RULING).
+PAPER_228 (Westerlund 2 Super Star Cluster - MUGE with High-Density
+OB-Supergiant Wind Feedback (10x LMC), S58) wired as one dispatch
+(CLEAN, WIRED).
 
-Physics:
-- 9-term MUGE for the Tapestry of Blazing Starbirth (two giant HII
-  regions in the LMC ~300 ly apart) with two novel methods.
-- Gas-ratio-amplitude mass growth M(t) = M_init*(1 + (M_gas/M_init)*
-  e^-t/tau_SF): the amplitude M_dot_factor = M_gas/M_init = 10000/240 =
-  41.67 encodes the gas-to-stellar mass ratio; M returns to M_init by
-  t = 5*tau_SF.
-- Stellar-wind ram-pressure acceleration a_wind = rho_wind*v_wind^2/
-  rho_fluid; with rho_wind = rho_fluid = 1e-21 kg/m^3 and v_wind =
-  2000 km/s = 2e6 m/s, a_wind = v_wind^2 = 4e12 m/s^2 - numerically
-  dominant during the O/B-star-active phase. Verified.
-- Parametric wind family: Tapestry LMC (rho_wind=1e-21), Westerlund 2
-  (1e-20, 10x denser OB-supergiant, PAPER_228), NGC 1792 SN (1e-21);
-  all v_wind=2000 km/s.
-- Doc 4 of the grok_share_8d951e12 thread.
+Physics (clean arithmetic - all reproduce):
+- Westerlund 2 (Wd2), the most massive super star cluster in the Milky
+  Way (Carina arm, ~10 kly), 9-term MUGE with the highest wind density
+  in the family: rho_wind = 1e-20 kg/m^3 - 10x the LMC Tapestry
+  (~300 O/B stars incl. WR 20a, an 83+82 M_sun WN binary; stellar
+  mass-loss 1e-5 to 1e-4 M_sun/yr).
+- Gas-ratio amplitude M_dot_factor = M_gas/M_init = 100000/30000 = 3.33
+  (smaller fractional gas reservoir vs Tapestry's 41.7).
+- Wind ram acceleration a_wind = rho_wind*v_wind^2/rho_fluid = 4e4 m/s^2
+  (v_wind=2000 km/s; ambient rho_fluid=1e-12 kg/m^3).
+- Comparative ratios Wd2 vs Tapestry: M_init 125x, rho_wind 10x,
+  tau_SF 0.4x, a_wind 10x. Doc 6 of the grok_share_8d951e12 thread.
 
-Q-220: the abstract states a_wind ~ 4e3 m/s^2, but sec-2 and the
-conclusion give 4e12 m/s^2 (= v_wind^2 when rho_wind = rho_fluid); the
-abstract 4e3 is a typo (off by 10^9). Body value 4e12 wired. Appendix
-boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+SELF-RECTIFICATION of Q-220: the shared a_wind convention across BOTH
+comparative tables uses ambient rho_fluid = 1e-12 kg/m^3, giving
+a_wind = 4e3 (Tapestry) and 4e4 (Wd2) - a clean 10x ratio matching the
+density ratio. So PAPER_227's ABSTRACT (4e3) was CORRECT; its sec-2
+rho_fluid=1e-21 (yielding 4e12) was the outlier/error. This paper
+canonizes rho_fluid=1e-12. The Q-220 residual (whether to update
+PAPER_227's dispatch a_wind from 4e12 to 4e3) is queued for Daniel;
+PAPER_227's dispatch is not re-edited without instruction (self-
+rectification doctrine). No new ruling for PAPER_228 - marked CLEAN.
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
 
-Gate: 1477/0. Registry 512 rows / 1079 edges / 231 ledgers (measured).
-Campaign: 231/2,255. Next: PAPER_228.
+Gate: 1482/0. Registry 513 rows / 1081 edges / 232 ledgers (measured).
+Campaign: 232/2,255. Next: PAPER_229.

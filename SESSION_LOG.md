@@ -2527,3 +2527,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1477/0. Registry 512 rows / 1079 edges / 231 ledgers. Campaign: 231/2,255 (12 ✓, 219 ⚠). Next: PAPER_228.
 
 ---
+
+## 2026-07-31 — v0.232.0 — BAND 1: PAPER_228 (CLEAN)
+
+- PAPER_228 wired (✓ CLEAN): Westerlund 2 super star cluster 9-term MUGE, highest wind density in family ρ_wind=1e-20 (10× Tapestry; WR 20a 83+82 M_sun binary, ~300 O/B). M_dot_factor=100000/30000=3.33; a_wind=ρ_wind·v²/ρ_fluid=4e4 m/s² (ρ_fluid=1e-12 ambient ISM). Ratios vs Tapestry: M_init 125×, ρ_wind 10×, τ_SF 0.4×, a_wind 10×. Doc 6 of 8d951e12 thread.
+- SELF-RECTIFIES Q-220: comparative tables use ρ_fluid=1e-12 → Tapestry 4e3 (abstract was correct) / Wd2 4e4; PAPER_227 sec-2's ρ_fluid=1e-21 (4e12) was the outlier. Residual (update PAPER_227 dispatch?) queued.
+- Gate 1482/0. Registry 513 rows / 1081 edges / 232 ledgers. Campaign: 232/2,255 (13 ✓, 219 ⚠). Next: PAPER_229.
+
+---

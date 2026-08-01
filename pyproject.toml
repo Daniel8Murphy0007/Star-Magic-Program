@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.231.0"
-description = "UQFF Star-Magic-Program v0.231.0: PAPER_227 wired - Tapestry of Blazing Starbirth (NGC 2014/2020 LMC) 9-term MUGE; 2 novel methods gas-ratio M(t) (M_dot_factor=M_gas/M_init=41.67) + stellar-wind ram a_wind=rho_wind*v^2/rho_fluid=4e12 m/s^2 (=v_wind^2); wind family LMC/Wd2/NGC1792; abstract 4e3 typo Q-220. Wired 231/2255, gate 1477/0. Registry 512 rows / 1079 edges / 231 ledgers (measured)."
+version = "0.232.0"
+description = "UQFF Star-Magic-Program v0.232.0: PAPER_228 wired (CLEAN) - Westerlund 2 super star cluster 9-term MUGE, highest wind density in family rho_wind=1e-20 (10x Tapestry); M_dot_factor=3.33; a_wind=rho_wind*v^2/rho_fluid=4e4 m/s^2 (rho_fluid=1e-12 ambient, SELF-RECTIFIES Q-220 - Tapestry 4e3 canonical); ratios 125x/10x/0.4x/10x. Wired 232/2255, gate 1482/0. Registry 513 rows / 1081 edges / 232 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

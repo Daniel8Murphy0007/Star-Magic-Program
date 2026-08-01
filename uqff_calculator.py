@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.231.0"
+VERSION = "0.232.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12166,4 +12166,61 @@ def _paper_227(dataset):
         'source': 'PAPER_227',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_228')
+def _paper_228(dataset):
+    """Westerlund 2 super star cluster: high-density OB wind MUGE (S58).
+
+    Westerlund 2 (Wd2), the most massive super star cluster in the Milky
+    Way (Carina arm, ~10 kly), 9-term MUGE with the highest wind density
+    in the family. Doc 6 of the grok_share_8d951e12 thread; direct
+    companion to PAPER_227 (Tapestry LMC). Wired observables:
+    * OB-supergiant wind density rho_wind = 1e-20 kg/m^3 - 10x the LMC
+      Tapestry (1e-21); the highest-wind-density entry in the MUGE
+      stellar-wind family (~300 O/B stars incl. WR 20a, an 83+82 M_sun
+      WN binary; stellar mass-loss 1e-5 to 1e-4 M_sun/yr).
+    * Gas-ratio-amplitude M(t) = M_init*(1 + (M_gas/M_init)*e^-t/tau_SF):
+      M_dot_factor = M_gas/M_init = 100000/30000 = 3.33 (smaller
+      fractional gas reservoir vs Tapestry's 41.7).
+    * Wind ram acceleration a_wind = rho_wind*v_wind^2/rho_fluid = 4e4
+      m/s^2 (v_wind=2000 km/s; ambient rho_fluid=1e-12 kg/m^3).
+    * Comparative ratios Wd2 vs Tapestry: M_init 125x, rho_wind 10x,
+      tau_SF 0.4x, a_wind 10x.
+    Self-rectification of Q-220: the shared a_wind convention across both
+    comparative tables uses rho_fluid=1e-12 kg/m^3 (ambient ISM), giving
+    a_wind = 4e3 (Tapestry, PAPER_227) and 4e4 (Wd2) - the PAPER_227
+    abstract 4e3 was CORRECT; PAPER_227 sec-2's rho_fluid=1e-21 (yielding
+    4e12) was the outlier. This paper canonizes rho_fluid=1e-12.
+    Appendix drift auto-corrected per charter.
+    """
+    M_init = 30000.0; M_gas = 100000.0                    # M_sun
+    m_dot_factor = M_gas / M_init                         # 3.33
+    rho_wind = 1e-20; v_wind = 2e6; rho_fluid = 1e-12     # ambient ISM
+    a_wind = rho_wind * v_wind ** 2 / rho_fluid           # 4e4
+    return {
+        'value': {
+            'domain': '2.26 (Westerlund 2 OB-wind MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 6',
+            'terms': 9,
+            'rho_wind': rho_wind,                         # 1e-20
+            'rho_wind_ratio_vs_tapestry': 10,
+            'highest_wind_density_in_family': True,
+            'M_init_solar': M_init,
+            'M_gas_solar': M_gas,
+            'm_dot_factor': m_dot_factor,                 # 3.33
+            'v_wind_m_s': v_wind,
+            'rho_fluid': rho_fluid,                       # 1e-12 ambient ISM
+            'a_wind_m_s2': a_wind,                        # 4e4
+            'comparative_ratios_vs_tapestry': {'M_init': 125, 'rho_wind': 10,
+                                               'tau_SF': 0.4, 'a_wind': 10},
+            'wr20a_binary_M_sun': [83, 82],
+            'n_ob_stars': 300,
+            'q220_self_rectification': 'a_wind convention uses rho_fluid=1e-12 (ambient ISM) -> Tapestry 4e3 / Wd2 4e4; PAPER_227 sec-2 rho_fluid=1e-21 (4e12) was the outlier',
+        },
+        'formula': 'a_wind = rho_wind*v_wind^2/rho_fluid (rho_fluid=1e-12); M(t) gas-ratio amplitude',
+        'source': 'PAPER_228',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

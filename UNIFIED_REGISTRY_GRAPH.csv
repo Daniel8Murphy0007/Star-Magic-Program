@@ -1078,3 +1078,5 @@ primitive,MU_0,observable,sgr0501_11term_muge,a_mag = B^2 V/(2 mu0 M r)
 observable,sgr0501_11term_muge,paper,PAPER_226,11-term MUGE
 observable,tapestry_lmc_muge,paper,PAPER_227,9-term MUGE
 observable,tapestry_lmc_muge,observable,sgr0501_11term_muge,MUGE family (thread 8d951e12)
+observable,westerlund2_ob_wind_muge,paper,PAPER_228,Wd2 9-term MUGE
+observable,westerlund2_ob_wind_muge,observable,tapestry_lmc_muge,"wind family (10x, self-rectifies Q-220)"
