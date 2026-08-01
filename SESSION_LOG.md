@@ -2495,3 +2495,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1456/0. Registry 507 rows / 1070 edges / 227 ledgers. Campaign: 227/2,255 (11 ✓, 216 ⚠). Next: PAPER_224.
 
 ---
+
+## 2026-07-31 — v0.228.0 — BAND 1: PAPER_224
+
+- PAPER_224 wired (⚠ Q-218): Saturn — only 29-doc system with two gravitational potentials + DIFFERENT modifiers. g=G·M_Sun/r_orbit²·(1+H·t) + G·M_Saturn/r²·(1-B/B_crit); H·t on solar only (screening principle), B/B_crit on Saturn only. g_saturn=10.44 m/s² (correct), g_sun=6.53e-5 m/s² (correct; paper 6.53e-3 100× high), B/B_crit=4.5e-19; T_ring=2.043e-7 m/s² CP1 (Roche met, 2000:1, rings ~10 m thin). Appendix drift auto-corrected.
+- Q-218: g_sun 100× scale error + 0.06% claim; T_ring 2.043e-7 CP1 vs formula 6.02e-4 at Δr=10 km.
+- Gate 1461/0. Registry 509 rows / 1073 edges / 228 ledgers. Campaign: 228/2,255 (11 ✓, 217 ⚠). Next: PAPER_225.
+
+---

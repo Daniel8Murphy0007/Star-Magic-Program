@@ -9,6 +9,24 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-218 — PAPER_224 — Saturn g_sun scale error + T_ring benchmark mismatch
+- **Question (a):** PAPER_224 sec 4 states g_sun = G*M_Sun/r_orbit^2 = 6.53e-3
+  m/s^2, but with M_Sun=1.989e30 kg and r_orbit=1.426e12 m (9.54 AU) the value is
+  6.53e-5 m/s^2 (~100x smaller; 6.5e-5 is the physically correct solar
+  gravitational acceleration at Saturn). The paper's "0.06% solar correction"
+  claim uses the inflated 6.53e-3 (correct fraction is 0.000625%). Confirm g_sun
+  = 6.53e-5 is canonical.
+- **Question (b):** T_ring = 2.043e-7 m/s^2 is stored as the CP1 benchmark and
+  said to "correspond to dr ~ 10 km", but the stated tidal formula
+  2*G*M_Saturn*dr/r_ring^3 at dr=10 km, r_ring=1.8 R_Saturn=1.08e8 m gives
+  6.02e-4 m/s^2 (~3000x larger than 2.043e-7). The two are irreconcilable with
+  the stated parameters. Is T_ring=2.043e-7 the canonical benchmark (implying a
+  different dr or r_ring), or should it be recomputed from the formula?
+- **Best-candidate wired:** g_sun recomputed = 6.53e-5 (registry G, M_Sun);
+  g_saturn=10.44 (correct); T_ring=2.043e-7 preserved as the CP1 benchmark with
+  the formula mismatch flagged.
+- **Daniel's ruling:** (pending)
+
 ### Q-217 — PAPER_221 — dual source files with two NGC 7635 models
 - **Question:** There are TWO whitepaper files for PAPER_221, both modelling the
   Bubble Nebula NGC 7635 but with different physics and inconsistent parameters:

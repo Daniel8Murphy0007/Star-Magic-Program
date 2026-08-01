@@ -1069,3 +1069,6 @@ observable,radiation_term_three_way,observable,m16_sfr_radiation_dual,P_rad vs E
 primitive,G_OBSERVED,observable,ngc1275_cold_filaments_mfil,g_fil = G*M_fil/r^2
 observable,ngc1275_agn_feedback_fbh,paper,PAPER_223,F_BH jet feedback
 observable,ngc1275_cold_filaments_mfil,paper,PAPER_223,M_fil filaments
+primitive,B_CRIT,observable,saturn_dual_source_gravity,(1-B/B_crit) on Saturn
+observable,saturn_dual_source_gravity,paper,PAPER_224,dual-source gravity
+observable,saturn_ring_tidal_tension,paper,PAPER_224,T_ring

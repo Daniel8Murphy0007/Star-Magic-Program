@@ -1,34 +1,33 @@
-v0.227.0 BAND 1: PAPER_223 wired - NGC 1275 PERSEUS AGN
+v0.228.0 BAND 1: PAPER_224 wired - SATURN DUAL-SOURCE GRAVITY
 
-PAPER_223 (NGC 1275 Perseus AGN UQFF - F_BH Jet Feedback and M_fil Cold
-Filaments, S56) wired as one dispatch (Q-216, OPEN_RULING).
+PAPER_224 (Saturn UQFF - Dual-Source Gravity and Ring Tidal Tension
+T_ring, S56) wired as one dispatch (Q-218, OPEN_RULING).
 
-Physics (clean arithmetic - all worked examples reproduce):
-- NGC 1275 (Perseus A), the Perseus-cluster BCG, is the only 29-doc
-  system with BOTH an AGN jet-feedback force (F_BH) and a cold
-  filamentary-gas term (M_fil).
-- F_BH = P_jet/r_jet AGN jet reaction force on the ICM; P_jet ~ 1e35 W
-  (Chandra X-ray cavities, Fabian 2003), r_jet = 10 kpc = 3.086e20 m:
-  F_BH = 3.24e14; normalized F_BH/rho_ICM = 3.24e14/3e-26 = 1.08e40
-  m/s^2 -> AGN feedback vastly exceeds local gravity, preventing
-  runaway cooling.
-- Feedback-balance theorem: P_jet ~ L_X_cooling ~ 1e35 W (Chandra) ->
-  self-regulated AGN feedback (the BH modulates jet power to match the
-  cooling luminosity).
-- M_fil cold filaments: ~100 optical Halpha filaments (Lynds 1970,
-  Fabian 2008), total mass ~1e8 M_sun = 2e38 kg, +/-300 km/s, T
-  1e4-1e5 K (vs 3e7 K ICM), up to 50 kpc; g_fil = G*M_fil/r^2 =
-  1.40e-13 m/s^2 (~1000x below base gravity, aiding re-accretion).
-- Perseus feedback cycle: filaments fall -> feed AGN -> P_jet up ->
-  F_BH up -> heating up -> cooling slows.
+Physics:
+- Saturn is the only 29-doc system with two independent gravitational
+  potentials carrying DIFFERENT UQFF modifiers:
+  g = G*M_Sun/r_orbit^2*(1+H*t) + G*M_Saturn/r^2*(1-B/B_crit).
+  H*t applies to the SOLAR (heliocentric orbit) term only via the
+  screening principle (local bound systems do not join Hubble flow);
+  (1-B/B_crit) applies to Saturn's SELF-gravity only (planetary B~20 uT
+  resists internal compression; the external solar tide is unaffected).
+- g_saturn = G*M_Saturn/r^2 = 10.44 m/s^2 (surface gravity, dominant;
+  M=5.683e26 kg, r=6.0268e7 m). g_sun = G*M_Sun/r_orbit^2 = 6.53e-5
+  m/s^2 (r_orbit=1.426e12 m, 9.54 AU; a 0.000625% correction).
+  B/B_crit = 2e-5/4.4e13 = 4.5e-19 ~ 0.
+- Ring tidal tension T_ring = 2.043e-7 m/s^2 (CP1 benchmark) keeps ring
+  particles in thin shells (rings ~10 m thick vs 280,000 km radius);
+  T_ring/g_particle ~ 2000:1 -> Roche criterion met, particles cannot
+  accrete in the main rings.
 
-Q-216 extends: F_BH/rho_ICM Pa->m/s^2 is the same unstated dimensional
-bridge as F_wind/M_mag/E_rad/P_rad (PAPER_218-222).
+Q-218: (a) the paper states g_sun = 6.53e-3 m/s^2 (100x too high; the
+correct solar gravitational acceleration at Saturn is 6.53e-5) and a
+"0.06% correction" (correct fraction 0.000625%); (b) the T_ring CP1
+benchmark 2.043e-7 does not reconcile with the stated tidal formula
+2*G*M_Saturn*dr/r_ring^3 at dr=10 km, r_ring=1.8 R_Saturn=1.08e8 m
+(which gives 6.02e-4, ~3000x larger). Corrected g_sun wired; T_ring
+benchmark preserved with the mismatch flagged. Appendix boilerplate
+drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Also fixed: an invalid "\_" escape sequence in the PAPER_139-era
-dispatch docstring ("f_{sc\\_300K}") that emitted a SyntaxWarning on
-import; the module now imports warning-free. Appendix boilerplate drift
-(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
-
-Gate: 1456/0. Registry 507 rows / 1070 edges / 227 ledgers (measured).
-Campaign: 227/2,255. Next: PAPER_224.
+Gate: 1461/0. Registry 509 rows / 1073 edges / 228 ledgers (measured).
+Campaign: 228/2,255. Next: PAPER_225.

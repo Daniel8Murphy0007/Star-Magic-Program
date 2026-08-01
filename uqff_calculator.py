@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.227.0"
+VERSION = "0.228.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11913,6 +11913,71 @@ def _paper_223(dataset):
         },
         'formula': 'F_BH = P_jet/r_jet; g_fil = G*M_fil/r^2; balance P_jet ~ L_cooling',
         'source': 'PAPER_223',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_224')
+def _paper_224(dataset):
+    """Saturn: dual-source gravity + ring tidal tension T_ring (S56).
+
+    Saturn is the only 29-doc system with TWO independent gravitational
+    potentials carrying DIFFERENT UQFF modifiers - a multi-body
+    hierarchical gravity structure. Wired observables:
+    * Dual-source, asymmetric modifiers: g = G*M_Sun/r_orbit^2*(1+H*t)
+      + G*M_Saturn/r^2*(1-B/B_crit). H*t on the SOLAR term only
+      (heliocentric orbit sits in cosmological background) via the
+      screening principle (local bound systems do not join Hubble flow);
+      (1-B/B_crit) on SATURN's self-gravity only (planetary B ~ 20 uT
+      resists internal compression; the external solar tide is unaffected).
+    * g_saturn = G*M_Saturn/r^2 = 10.44 m/s^2 (Saturn surface gravity,
+      M=5.683e26 kg, r=6.0268e7 m) - dominant term.
+    * g_sun = G*M_Sun/r_orbit^2 = 6.53e-5 m/s^2 (r_orbit=1.426e12 m,
+      9.54 AU) - a 0.000625% correction (Q-218: paper states 6.53e-3
+      and "0.06% correction", ~100x high).
+    * B/B_crit = 2e-5/4.4e13 = 4.5e-19 ~ 0.
+    * Ring tidal tension T_ring = 2.043e-7 m/s^2 (CP1 benchmark) - the
+      differential acceleration across the ring width that keeps particles
+      in thin shells (rings ~10 m thick despite 280,000 km radius);
+      T_ring/g_particle ~ 2000:1 -> Roche criterion met, particles cannot
+      accrete in the main rings. (Q-218: the tidal formula
+      2*G*M_Saturn*dr/r_ring^3 at dr=10 km, r_ring=1.8 R_Sat=1.08e8 m
+      gives 6.02e-4, ~3000x the 2.043e-7 CP1 value - benchmark preserved.)
+    * g_total ~ 10.442 m/s^2, dominated by Saturn self-gravity.
+    Closest analogues (SGR1745, NGC2525, NGC1275) add an unmodified BH
+    term; Saturn is unique in asymmetric per-source modifiers.
+    Appendix drift auto-corrected per charter.
+    """
+    r_orbit = 1.426e12                                    # m, 9.54 AU
+    M_saturn = 5.683e26                                   # kg
+    r_saturn = 6.0268e7                                   # m, equatorial radius
+    g_sun = G_OBSERVED * M_SUN_OBSERVED / r_orbit ** 2    # 6.53e-5
+    g_saturn = G_OBSERVED * M_saturn / r_saturn ** 2      # 10.44
+    b_over_bcrit = 2e-5 / B_CRIT                          # 4.5e-19
+    t_ring = 2.043e-7                                     # m/s^2, CP1 benchmark
+    g_total = g_saturn + g_sun + t_ring                  # 10.442
+    return {
+        'value': {
+            'domain': '2.22 (Saturn dual-source gravity)',
+            'dual_source_asymmetric_modifiers': True,
+            'unique_among_29_docs': True,
+            'g_sun_m_s2': g_sun,                          # 6.53e-5
+            'g_saturn_m_s2': g_saturn,                    # 10.44
+            'b_over_bcrit': b_over_bcrit,                 # 4.5e-19
+            't_ring_m_s2': t_ring,                        # 2.043e-7
+            'g_total_m_s2': g_total,                      # 10.442
+            'solar_correction_pct': g_sun / g_saturn * 100,  # 0.000625%
+            'ht_on_solar_only': True,
+            'b_bcrit_on_saturn_only': True,
+            'screening_principle': 'local bound systems do not participate in Hubble flow',
+            't_ring_over_g_particle': 2000,
+            'roche_criterion_met': True,
+            'ring_thickness_m': 10,
+            'worked_example_fork': 'g_sun paper 6.53e-3 (correct 6.53e-5, 100x); T_ring 2.043e-7 CP1 vs formula 6.02e-4 at dr=10km (Q-218)',
+        },
+        'formula': 'g = G*M_Sun/r_orbit^2*(1+H*t) + G*M_Saturn/r^2*(1-B/B_crit) + T_ring',
+        'source': 'PAPER_224',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

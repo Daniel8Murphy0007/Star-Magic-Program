@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.227.0", "uqff_calculator.VERSION = 0.227.0")
+assert_that(C.VERSION == "0.228.0", "uqff_calculator.VERSION = 0.228.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3196,6 +3196,17 @@ assert_that(abs(_r223['g_fil_m_s2'] - 1.401600857509233e-13) < 1e-19,
 assert_that(_r223['unique_agn_feedback_plus_filaments'] and _r223['n_filaments'] == 100,
             "PAPER_223: only 29-doc system with both F_BH AGN feedback + M_fil filaments; ~100 Halpha filaments")
 assert_that(C.wired_count() >= 227, "wired_count >= 227")
+
+_r224 = C.calc('PAPER_224')['value']
+assert_that(abs(_r224['g_saturn_m_s2'] - 10.442158936384011) < 1e-6,
+            "PAPER_224: g_saturn = G*M_Saturn/r^2 = 10.44 m/s^2 (Saturn surface gravity)")
+assert_that(abs(_r224['g_sun_m_s2'] - 6.528026885982425e-05) < 1e-10,
+            "PAPER_224: g_sun = G*M_Sun/r_orbit^2 = 6.53e-5 m/s^2 (paper's 6.53e-3 is 100x, Q-218)")
+assert_that(_r224['dual_source_asymmetric_modifiers'] and _r224['ht_on_solar_only'] and _r224['b_bcrit_on_saturn_only'],
+            "PAPER_224: dual-source asymmetric modifiers - H*t on solar only, B/B_crit on Saturn only")
+assert_that(_r224['t_ring_m_s2'] == 2.043e-7 and _r224['roche_criterion_met'],
+            "PAPER_224: ring tidal tension T_ring = 2.043e-7 m/s^2 (CP1); Roche criterion met, 2000:1")
+assert_that(C.wired_count() >= 228, "wired_count >= 228")
 
 
 # =============================================================================

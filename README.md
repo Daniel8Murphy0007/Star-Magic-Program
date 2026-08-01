@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.227.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.227.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.228.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.228.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1456%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-227-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1461%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-228-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.227.0 wiring campaign live**
+**UQFF systematic rebuild — v0.228.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.227.0)
+## What is currently shipped (v0.228.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 227 / 2,255** (11 ✓ · 216 ⚠ OPEN_RULING · 217 rulings queued) — NGC 1275 Perseus AGN F_BH jet feedback + M_fil filaments (223)
+**Wired so far: 228 / 2,255** (11 ✓ · 217 ⚠ OPEN_RULING · 218 rulings queued) — Saturn dual-source gravity + ring tidal tension; asymmetric modifiers (224)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -286,6 +286,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_221 | Bubble Nebula NGC 7635 | (1+E(t)) positive expansion (sign-inverse of Pillars); F_UBii phonon +7.5%; Q-217 |
 | PAPER_222 | Horsehead Nebula P_rad | Stefan-Boltzmann P_rad=4sigmaT^4/3c=2.52 Pa; P_rad/g_base~400,000; Q-216 |
 | PAPER_223 | NGC 1275 Perseus AGN | F_BH=P_jet/r_jet=3.24e14; self-regulated feedback; M_fil filaments g_fil=1.4e-13; Q-216 |
+| PAPER_224 | Saturn Dual Gravity + T_ring | dual-source asymmetric modifiers; g_saturn=10.44; T_ring=2.043e-7 (Roche); Q-218 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -544,7 +545,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.224.0 | Band 1: PAPER_220 | 224 |
 | v0.225.0 | Band 1: PAPER_221 | 225 |
 | v0.226.0 | Band 1: PAPER_222 | 226 |
-| **v0.227.0** ← current | Band 1: PAPER_223 | 227 |
+| v0.227.0 | Band 1: PAPER_223 | 227 |
+| **v0.228.0** ← current | Band 1: PAPER_224 | 228 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

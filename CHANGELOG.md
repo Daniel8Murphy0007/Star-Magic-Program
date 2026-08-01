@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.228.0] — 2026-07-31 — BAND 1: PAPER_224 — SATURN DUAL-SOURCE GRAVITY
+
+### Added
+- **PAPER_224 wired** (⚠ Q-218): Saturn — the only 29-document system with two
+  independent gravitational potentials carrying DIFFERENT UQFF modifiers:
+  g = G·M_Sun/r_orbit²·(1+H·t) + G·M_Saturn/r²·(1-B/B_crit). The Hubble term
+  applies to the SOLAR (heliocentric orbit) source only via the screening
+  principle (local bound systems don't join Hubble flow); (1-B/B_crit) applies to
+  Saturn's SELF-gravity only (planetary B~20 µT resists internal compression; the
+  external solar tide is unaffected). g_saturn = G·M_Saturn/r² = 10.44 m/s²
+  (surface gravity, dominant); g_sun = G·M_Sun/r_orbit² = 6.53e-5 m/s²
+  (0.000625% correction); B/B_crit = 4.5e-19 ~ 0. Ring tidal tension T_ring =
+  2.043e-7 m/s² (CP1 benchmark) keeps particles in thin shells (rings ~10 m thick
+  vs 280,000 km radius); T_ring/g_particle ~ 2000:1 → Roche criterion met.
+- Q-218: (a) paper states g_sun = 6.53e-3 (100× too high; correct 6.53e-5) and a
+  "0.06% correction" (correct 0.000625%); (b) the T_ring CP1 benchmark 2.043e-7
+  doesn't reconcile with the tidal formula 2·G·M_Saturn·Δr/r_ring³ at Δr=10 km
+  (which gives 6.02e-4, ~3000× larger). Corrected g_sun wired; T_ring benchmark
+  preserved with the mismatch flagged.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1456 → 1461 (+5). Registry 509 rows / 1073 edges / 228 ledgers.
+
+---
+
 ## [0.227.0] — 2026-07-31 — BAND 1: PAPER_223 — NGC 1275 PERSEUS AGN
 
 ### Added
