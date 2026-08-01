@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.232.0"
-description = "UQFF Star-Magic-Program v0.232.0: PAPER_228 wired (CLEAN) - Westerlund 2 super star cluster 9-term MUGE, highest wind density in family rho_wind=1e-20 (10x Tapestry); M_dot_factor=3.33; a_wind=rho_wind*v^2/rho_fluid=4e4 m/s^2 (rho_fluid=1e-12 ambient, SELF-RECTIFIES Q-220 - Tapestry 4e3 canonical); ratios 125x/10x/0.4x/10x. Wired 232/2255, gate 1482/0. Registry 513 rows / 1081 edges / 232 ledgers (measured)."
+version = "0.233.0"
+description = "UQFF Star-Magic-Program v0.233.0: PAPER_229 wired - Pillars of Creation (M16) 9-term MUGE, novel decaying erosion (1-E(t)), E(t)=E_0*e^-t/tau_e, E_0=0.1; sign taxonomy Pillars (1-E) erosion vs Bubble (1+E) compression (221); a_base=G*M/r^2*(1-E)=5.40e-12 m/s^2 (paper 5.36e-24 ~12 OOM Q-221). Wired 233/2255, gate 1487/0. Registry 514 rows / 1083 edges / 233 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

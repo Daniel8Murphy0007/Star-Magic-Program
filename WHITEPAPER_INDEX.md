@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 232 (13 ✓, 219 ⚠ OPEN_RULING)
+- **Wired:** 233 (13 ✓, 220 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2022
+- **Not yet touched:** 2021
 
 ---
 
@@ -1487,7 +1487,7 @@
 | ⚠ | PAPER_226 | MagnetarSGR0501 11Term MUGE UQFF |
 | ⚠ | PAPER_227 | Tapestry LMC Stellar Wind UQFF |
 | ✓ | PAPER_228 | Westerlund2 OB StellarWind MUGE |
-| ⬜ | PAPER_229 | Pillars Creation Erosion MUGE |
+| ⚠ | PAPER_229 | Pillars Creation Erosion MUGE |
 | ⬜ | PAPER_230 | NGC2525 SN2018gv Negative MassLoss MUGE |
 | ⬜ | PAPER_231 | HUDF Cosmic Field z3p5 MUGE |
 | ⬜ | PAPER_232 | NGC1792 Stellar Forge Starburst MUGE |

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.232.0"
+VERSION = "0.233.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12223,4 +12223,63 @@ def _paper_228(dataset):
         'source': 'PAPER_228',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_229')
+def _paper_229(dataset):
+    """Pillars of Creation (M16): decaying erosion (1-E(t)) MUGE (S58).
+
+    The Pillars of Creation (Eagle Nebula M16, NGC 6611, ~6500 ly) 9-term
+    MUGE with a novel decaying photoevaporation erosion factor
+    E(t) = E_0*e^-t/tau_e applied as a MULTIPLICATIVE suppression
+    (1 - E(t)) on the base gravity. Doc 7 of grok_share_8d951e12;
+    companion to the Bubble Nebula (PAPER_221) sign taxonomy. Wired:
+    * Decaying erosion E(t) = E_0*e^-t/tau_e, E_0=0.1 (10% peak erosion
+      suppression), tau_e=1 Myr; a_base = G*M(t)/r^2*(1+H_0*t)*
+      (1-B/B_crit)*(1-E(t)). At t=0: E=0.1 -> 10% suppression (max
+      erosion); at t>>tau_e: E->0 -> gravity recovers as pillar material
+      disperses. (1-E(t)) = fractional mass remaining after EUV ablation.
+    * Sign taxonomy (erosion vs compression): Pillars (1-E), E_0=0.1,
+      NEGATIVE sign - EUV ablation removes mass -> less gravity; Bubble
+      Nebula (1+E), POSITIVE - shock compression -> more gravity
+      (PAPER_221); Orion - none (pre-dispersal). Sign set by whether the
+      process removes or adds mass to the gravitating region.
+    * Canonical result at t=0.1 Myr (M(0)=100 M_sun, r=5 ly=4.73e16 m -
+      same M16 radius as PAPER_219): E=0.0905, (1-E)=0.9095;
+      a_base = G*M/r^2*(1-E) = 5.933e-12*0.9095 = 5.40e-12 m/s^2.
+    * M_dot_factor = M_gas/M_init = 10000/100 = 100.
+    Q-221: the paper's canonical a_base 5.36e-24 m/s^2 is ~12 OOM off
+    (G*M/r^2 = 5.93e-12, same exponent-drift family as Q-214/215/218);
+    correct a_base = 5.40e-12 m/s^2 wired. Appendix drift auto-corrected.
+    """
+    import math as _m
+    E0 = 0.1; tau_e = 1.0; t = 0.1                        # Myr
+    E_t = E0 * _m.exp(-t / tau_e)                         # 0.0905
+    one_minus_e = 1 - E_t                                 # 0.9095
+    M = 100 * M_SUN_OBSERVED; r = 4.73e16
+    g_Mr2 = G_OBSERVED * M / r ** 2                       # 5.93e-12
+    a_base = g_Mr2 * one_minus_e                          # 5.40e-12
+    return {
+        'value': {
+            'domain': '2.27 (Pillars of Creation erosion MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 7',
+            'terms': 9,
+            'erosion_term': '(1-E(t)), E(t)=E_0*e^-t/tau_e',
+            'E0': E0, 'tau_e_Myr': tau_e,
+            'E_at_0p1Myr': E_t,                           # 0.0905
+            'one_minus_e': one_minus_e,                   # 0.9095
+            'a_base_m_s2': a_base,                        # 5.40e-12
+            'g_Mr2_m_s2': g_Mr2,                          # 5.93e-12
+            'sign_taxonomy': {'pillars': '(1-E) erosion removes mass -> less gravity',
+                              'bubble': '(1+E) compression adds mass -> more gravity',
+                              'orion': 'none (pre-dispersal)'},
+            'm_dot_factor': 100,
+            'r_m': r,
+            'a_base_exponent_fork': 'paper 5.36e-24 (correct 5.40e-12, ~12 OOM, Q-221)',
+        },
+        'formula': 'a_base = G*M/r^2*(1+H_0*t)*(1-B/B_crit)*(1-E(t)); E(t)=E_0*e^-t/tau_e',
+        'source': 'PAPER_229',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

@@ -1080,3 +1080,5 @@ observable,tapestry_lmc_muge,paper,PAPER_227,9-term MUGE
 observable,tapestry_lmc_muge,observable,sgr0501_11term_muge,MUGE family (thread 8d951e12)
 observable,westerlund2_ob_wind_muge,paper,PAPER_228,Wd2 9-term MUGE
 observable,westerlund2_ob_wind_muge,observable,tapestry_lmc_muge,"wind family (10x, self-rectifies Q-220)"
+observable,pillars_creation_erosion_muge,paper,PAPER_229,(1-E(t)) erosion MUGE
+observable,pillars_creation_erosion_muge,observable,bubble_nebula_positive_expansion,(1-E) vs (1+E) sign taxonomy PAPER_221

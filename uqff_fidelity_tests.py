@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.232.0", "uqff_calculator.VERSION = 0.232.0")
+assert_that(C.VERSION == "0.233.0", "uqff_calculator.VERSION = 0.233.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3253,6 +3253,17 @@ assert_that(_r228['a_wind_m_s2'] == 4e4 and _r228['rho_fluid'] == 1e-12,
 assert_that(_r228['comparative_ratios_vs_tapestry']['M_init'] == 125 and _r228['comparative_ratios_vs_tapestry']['a_wind'] == 10,
             "PAPER_228: Wd2 vs Tapestry ratios M_init 125x, rho_wind 10x, a_wind 10x")
 assert_that(C.wired_count() >= 232, "wired_count >= 232")
+
+_r229 = C.calc('PAPER_229')['value']
+assert_that(abs(_r229['one_minus_e'] - 0.909516258196404) < 1e-9,
+            "PAPER_229: erosion (1-E(t)) at t=0.1 Myr = 1-0.1*e^-0.1 = 0.9095 (E_0=0.1, tau_e=1 Myr)")
+assert_that(abs(_r229['a_base_m_s2'] - 5.396462589930841e-12) < 1e-18,
+            "PAPER_229: a_base = G*M/r^2*(1-E) = 5.40e-12 m/s^2 (paper's 5.36e-24 is ~12 OOM, Q-221)")
+assert_that(len(_r229['sign_taxonomy']) == 3 and 'erosion' in _r229['sign_taxonomy']['pillars'],
+            "PAPER_229: sign taxonomy - Pillars (1-E) erosion vs Bubble (1+E) compression vs Orion none")
+assert_that(_r229['m_dot_factor'] == 100 and _r229['E0'] == 0.1,
+            "PAPER_229: M_dot_factor = M_gas/M_init = 10000/100 = 100; E_0 = 0.1")
+assert_that(C.wired_count() >= 233, "wired_count >= 233")
 
 
 # =============================================================================

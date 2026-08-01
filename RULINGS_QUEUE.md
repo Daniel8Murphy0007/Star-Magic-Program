@@ -9,6 +9,17 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-221 — PAPER_229 — Pillars canonical a_base exponent drift
+- **Question:** PAPER_229 sec 4 states the canonical a_base ~ 5.36e-24 m/s^2 at
+  t=0.1 Myr, but G*M/r^2 with M=100 M_sun=1.989e32 kg and r=5 ly=4.73e16 m is
+  5.93e-12 m/s^2, so a_base = 5.93e-12 * (1-E) = 5.93e-12 * 0.9095 = 5.40e-12
+  m/s^2. The stated 5.36e-24 is ~12 orders of magnitude off (same exponent-drift
+  family as Q-214/215/218/224). The (1-E) factor 0.905 is correct (=1-0.1*e^-0.1
+  = 0.9095, rounded). Confirm a_base = 5.40e-12 m/s^2 is canonical.
+- **Best-candidate wired:** a_base recomputed = 5.40e-12 m/s^2 (registry G, M_Sun);
+  paper's 5.36e-24 flagged as exponent drift.
+- **Daniel's ruling:** (pending)
+
 ### Q-220 — PAPER_227 — Tapestry a_wind (SELF-RECTIFIED by PAPER_228)
 - **Original question:** PAPER_227's abstract states a_wind ~ 4e3 m/s^2 but its
   sec-2 gives 4e12 (using rho_fluid = rho_wind = 1e-21). Which is canonical?

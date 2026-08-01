@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.233.0] — 2026-07-31 — BAND 1: PAPER_229 — PILLARS OF CREATION (M16) MUGE
+
+### Added
+- **PAPER_229 wired** (⚠ Q-221): Pillars of Creation (Eagle Nebula M16, NGC 6611,
+  ~6500 ly) 9-term MUGE with a novel decaying photoevaporation erosion factor
+  `E(t) = E_0·e^-t/τ_e` (E_0=0.1, τ_e=1 Myr) applied as a multiplicative
+  suppression `(1 - E(t))` on the base gravity. At t=0: E=0.1 → 10% suppression
+  (max erosion); at t≫τ_e: E→0 → gravity recovers. Establishes the erosion/
+  compression sign taxonomy vs the Bubble Nebula (PAPER_221): Pillars (1-E),
+  negative — EUV ablation removes mass → less gravity; Bubble (1+E), positive —
+  shock compression → more gravity; Orion — none. Canonical result at t=0.1 Myr
+  (M=100 M_sun, r=5 ly=4.73e16 m, same M16 radius as PAPER_219): (1-E)=0.9095,
+  a_base = G·M/r²·(1-E) = 5.40e-12 m/s². M_dot_factor = 10000/100 = 100. Doc 7 of
+  the grok_share_8d951e12 thread.
+- Q-221: the paper's canonical a_base 5.36e-24 m/s² is ~12 OOM off (G·M/r²=5.93e-12,
+  same exponent-drift family as Q-214/215/218); correct a_base=5.40e-12 wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1482 → 1487 (+5). Registry 514 rows / 1083 edges / 233 ledgers.
+
+---
+
 ## [0.232.0] — 2026-07-31 — BAND 1: PAPER_228 — WESTERLUND 2 OB-WIND MUGE (CLEAN)
 
 ### Added

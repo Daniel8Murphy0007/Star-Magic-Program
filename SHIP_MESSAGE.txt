@@ -1,32 +1,32 @@
-v0.232.0 BAND 1: PAPER_228 wired - WESTERLUND 2 OB-WIND MUGE (CLEAN)
+v0.233.0 BAND 1: PAPER_229 wired - PILLARS OF CREATION (M16) MUGE
 
-PAPER_228 (Westerlund 2 Super Star Cluster - MUGE with High-Density
-OB-Supergiant Wind Feedback (10x LMC), S58) wired as one dispatch
-(CLEAN, WIRED).
+PAPER_229 (Pillars of Creation (Eagle Nebula M16) - MUGE with Decaying
+Photoevaporation Erosion Factor E(t), S58) wired as one dispatch
+(Q-221, OPEN_RULING).
 
-Physics (clean arithmetic - all reproduce):
-- Westerlund 2 (Wd2), the most massive super star cluster in the Milky
-  Way (Carina arm, ~10 kly), 9-term MUGE with the highest wind density
-  in the family: rho_wind = 1e-20 kg/m^3 - 10x the LMC Tapestry
-  (~300 O/B stars incl. WR 20a, an 83+82 M_sun WN binary; stellar
-  mass-loss 1e-5 to 1e-4 M_sun/yr).
-- Gas-ratio amplitude M_dot_factor = M_gas/M_init = 100000/30000 = 3.33
-  (smaller fractional gas reservoir vs Tapestry's 41.7).
-- Wind ram acceleration a_wind = rho_wind*v_wind^2/rho_fluid = 4e4 m/s^2
-  (v_wind=2000 km/s; ambient rho_fluid=1e-12 kg/m^3).
-- Comparative ratios Wd2 vs Tapestry: M_init 125x, rho_wind 10x,
-  tau_SF 0.4x, a_wind 10x. Doc 6 of the grok_share_8d951e12 thread.
+Physics:
+- The Pillars of Creation (M16, NGC 6611, ~6500 ly) 9-term MUGE with a
+  novel decaying photoevaporation erosion factor E(t) = E_0*e^-t/tau_e
+  (E_0=0.1, tau_e=1 Myr) applied as a multiplicative suppression
+  (1 - E(t)) on the base gravity.
+- At t=0: E=0.1 -> 10% suppression (max erosion); at t>>tau_e: E->0 ->
+  gravity recovers as pillar material disperses / EUV source weakens.
+  (1-E(t)) = fractional mass remaining after EUV ablation.
+- Sign taxonomy (erosion vs compression): Pillars (1-E), E_0=0.1,
+  NEGATIVE - EUV ablation removes mass -> less gravity; Bubble Nebula
+  (1+E), POSITIVE - shock compression -> more gravity (PAPER_221);
+  Orion - none (pre-dispersal). Sign set by whether the process removes
+  or adds mass to the gravitating region.
+- Canonical result at t=0.1 Myr (M=100 M_sun, r=5 ly=4.73e16 m, same
+  M16 radius as PAPER_219): E=0.0905, (1-E)=0.9095;
+  a_base = G*M/r^2*(1-E) = 5.933e-12*0.9095 = 5.40e-12 m/s^2. Verified.
+- M_dot_factor = M_gas/M_init = 10000/100 = 100. Doc 7 of the
+  grok_share_8d951e12 thread.
 
-SELF-RECTIFICATION of Q-220: the shared a_wind convention across BOTH
-comparative tables uses ambient rho_fluid = 1e-12 kg/m^3, giving
-a_wind = 4e3 (Tapestry) and 4e4 (Wd2) - a clean 10x ratio matching the
-density ratio. So PAPER_227's ABSTRACT (4e3) was CORRECT; its sec-2
-rho_fluid=1e-21 (yielding 4e12) was the outlier/error. This paper
-canonizes rho_fluid=1e-12. The Q-220 residual (whether to update
-PAPER_227's dispatch a_wind from 4e12 to 4e3) is queued for Daniel;
-PAPER_227's dispatch is not re-edited without instruction (self-
-rectification doctrine). No new ruling for PAPER_228 - marked CLEAN.
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+Q-221: the paper's canonical a_base 5.36e-24 m/s^2 is ~12 orders of
+magnitude off (G*M/r^2 = 5.93e-12, same exponent-drift family as
+Q-214/215/218/224); correct a_base = 5.40e-12 m/s^2 wired. Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1482/0. Registry 513 rows / 1081 edges / 232 ledgers (measured).
-Campaign: 232/2,255. Next: PAPER_229.
+Gate: 1487/0. Registry 514 rows / 1083 edges / 233 ledgers (measured).
+Campaign: 233/2,255. Next: PAPER_230.

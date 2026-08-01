@@ -2535,3 +2535,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1482/0. Registry 513 rows / 1081 edges / 232 ledgers. Campaign: 232/2,255 (13 ✓, 219 ⚠). Next: PAPER_229.
 
 ---
+
+## 2026-07-31 — v0.233.0 — BAND 1: PAPER_229
+
+- PAPER_229 wired (⚠ Q-221): Pillars of Creation (M16) 9-term MUGE, novel decaying erosion E(t)=E_0·e^-t/τ_e (E_0=0.1, τ_e=1 Myr) as (1-E(t)) suppression on base gravity. Sign taxonomy: Pillars (1-E) erosion (removes mass) vs Bubble (1+E) compression (PAPER_221) vs Orion none. At t=0.1 Myr (M=100 M_sun, r=4.73e16 m = same M16 as PAPER_219): (1-E)=0.9095, a_base=G·M/r²·(1-E)=5.40e-12 m/s². M_dot_factor=10000/100=100. Doc 7 of 8d951e12. Appendix drift auto-corrected.
+- Q-221: canonical a_base 5.36e-24 stated vs G·M/r²=5.93e-12 (~12 OOM drift); correct 5.40e-12 wired.
+- Gate 1487/0. Registry 514 rows / 1083 edges / 233 ledgers. Campaign: 233/2,255 (13 ✓, 220 ⚠). Next: PAPER_230.
+
+---
