@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 226 (11 ✓, 215 ⚠ OPEN_RULING)
+- **Wired:** 227 (11 ✓, 216 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2028
+- **Not yet touched:** 2027
 
 ---
 
@@ -1481,7 +1481,7 @@
 | ⚠ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |
 | ⬜ | PAPER_221b | Bubble Nebula Positive Enhancement UQFF |
 | ⚠ | PAPER_222 | Horsehead Nebula Prad Blackbody UQFF |
-| ⬜ | PAPER_223 | NGC1275 Perseus AGN Filament UQFF |
+| ⚠ | PAPER_223 | NGC1275 Perseus AGN Filament UQFF |
 | ⬜ | PAPER_224 | Saturn Dual Gravity Ring Tension UQFF |
 | ⬜ | PAPER_225 | Early Universe Relativistic UV UQFF |
 | ⬜ | PAPER_226 | MagnetarSGR0501 11Term MUGE UQFF |

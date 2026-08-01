@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.226.0", "uqff_calculator.VERSION = 0.226.0")
+assert_that(C.VERSION == "0.227.0", "uqff_calculator.VERSION = 0.227.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3185,6 +3185,17 @@ assert_that(abs(_r222['p_rad_over_g_base'] - 395465.80592914706) < 1e-3,
 assert_that(_r222['only_stefan_boltzmann_in_29_docs'] and len(_r222['three_way_distinction']) == 3,
             "PAPER_222: only SB blackbody P_rad in 29 docs; 3-way distinction P_rad/E_rad/rho_v2")
 assert_that(C.wired_count() >= 226, "wired_count >= 226")
+
+_r223 = C.calc('PAPER_223')['value']
+assert_that(abs(_r223['f_bh'] - 324044069993519.1) < 1e6,
+            "PAPER_223: F_BH = P_jet/r_jet = 3.24e14 (P_jet=1e35 W, r_jet=10 kpc)")
+assert_that(abs(_r223['f_bh_accel_m_s2'] - 1.0801468999783971e40) < 1e34,
+            "PAPER_223: F_BH/rho_ICM = 1.08e40 m/s^2 (AGN feedback dominates gravity)")
+assert_that(abs(_r223['g_fil_m_s2'] - 1.401600857509233e-13) < 1e-19,
+            "PAPER_223: g_fil = G*M_fil/r^2 = 1.40e-13 m/s^2 (M_fil=2e38 kg ~1e8 M_sun)")
+assert_that(_r223['unique_agn_feedback_plus_filaments'] and _r223['n_filaments'] == 100,
+            "PAPER_223: only 29-doc system with both F_BH AGN feedback + M_fil filaments; ~100 Halpha filaments")
+assert_that(C.wired_count() >= 227, "wired_count >= 227")
 
 
 # =============================================================================

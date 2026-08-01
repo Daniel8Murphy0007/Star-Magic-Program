@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.226.0"
+VERSION = "0.227.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -7581,7 +7581,7 @@ def _paper_143(dataset):
     g_UQFF = 2.2e34 is UNDERIVED, and the code literally
     hardcodes g_UQFF_nuc = 0.67*g_QM_nuc - the split is
     inserted, not derived. AND the code block contains
-    "f_{sc\_300K}" (LaTeX braces in Python) - SYNTAX ERROR,
+    "f_{sc\\_300K}" (LaTeX braces in Python) - SYNTAX ERROR,
     cannot run at all (broken code block No. 8).
     VERIFIED EXACT: g_QM(Bohr) = 4.52e22; f_sc(300K) =
     4.98e-3; f_sc(10K) = 0.0905; neutron gap 8.4 s real.
@@ -11851,6 +11851,68 @@ def _paper_222(dataset):
         },
         'formula': 'g_HH = G*M/r^2*(1+H*t)*(1-B/B_crit)*(1-E(t)) + P_rad; P_rad = 4*sigma*T^4/(3c)',
         'source': 'PAPER_222',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_223')
+def _paper_223(dataset):
+    """NGC 1275 Perseus AGN: F_BH jet feedback + M_fil filaments (S56).
+
+    NGC 1275 (Perseus A), the Perseus-cluster BCG, is the only 29-doc
+    system with BOTH an AGN jet-feedback force (F_BH) and a cold
+    filamentary-gas term (M_fil). Wired observables (clean arithmetic):
+    * F_BH = P_jet/r_jet AGN jet reaction force on the ICM; P_jet ~ 1e35
+      W (Chandra X-ray cavities, Fabian 2003), r_jet = 10 kpc = 3.086e20
+      m (inner cavity radius): F_BH = 3.24e14; normalized to
+      acceleration F_BH/rho_ICM = 3.24e14/3e-26 = 1.08e40 m/s^2 (Q-216
+      dimensional bridge) - vastly exceeds local gravity, so AGN
+      feedback dominates and prevents runaway cooling.
+    * Feedback-balance theorem: P_jet ~ L_X_cooling ~ 1e35 W (Chandra)
+      -> self-regulated AGN feedback (the BH modulates jet power to match
+      the cooling luminosity).
+    * M_fil cold filaments: ~100 optical Halpha filaments (Lynds 1970,
+      Fabian 2008), total mass ~1e8 M_sun = 2e38 kg, velocity +/-300
+      km/s, T 1e4-1e5 K (vs 3e7 K ICM), length up to 50 kpc; g_fil =
+      G*M_fil/r^2 = 1.40e-13 m/s^2 (~1000x below base gravity) - filament
+      self-gravity aiding re-accretion.
+    * Three competing forces: g_base (ICM binding), F_BH (AGN outward
+      heating, strongly positive), g_fil (filament inward, mildly
+      positive). Perseus feedback cycle: filaments fall -> feed AGN ->
+      P_jet up -> F_BH up -> heating up -> cooling slows.
+    F_BH/rho_ICM normalization is the same unstated Pa->m/s^2 bridge as
+    F_wind/M_mag/E_rad/P_rad (Q-216). Appendix drift auto-corrected.
+    """
+    P_jet = 1e35                                          # W, Chandra Fabian 2003
+    r_jet = 3.086e20                                      # m, 10 kpc
+    rho_icm = 3e-26                                       # kg/m^3
+    f_bh = P_jet / r_jet                                  # 3.24e14
+    f_bh_accel = f_bh / rho_icm                           # 1.08e40
+    M_fil = 2e38                                          # kg, ~1e8 M_sun
+    g_fil = G_OBSERVED * M_fil / r_jet ** 2               # 1.40e-13
+    return {
+        'value': {
+            'domain': '2.21 (NGC 1275 Perseus AGN)',
+            'unique_agn_feedback_plus_filaments': True,
+            'p_jet_W': P_jet,
+            'r_jet_m': r_jet,
+            'f_bh': f_bh,                                 # 3.24e14
+            'f_bh_accel_m_s2': f_bh_accel,                # 1.08e40
+            'l_x_cooling_W': 1e35,
+            'self_regulated_feedback': 'P_jet ~ L_cooling',
+            'n_filaments': 100,
+            'm_fil_kg': M_fil,
+            'm_fil_solar': 1e8,
+            'g_fil_m_s2': g_fil,                          # 1.40e-13
+            'filament_velocity_km_s': 300,
+            'filament_T_K': '1e4-1e5',
+            'three_forces': ['g_base ICM binding', 'F_BH AGN outward', 'g_fil filament inward'],
+            'feedback_cycle': 'filaments fall -> feed AGN -> P_jet up -> F_BH up -> heating up -> cooling slows',
+            'normalization_note': 'F_BH/rho_ICM Pa->m/s^2 (Q-216 dimensional bridge)',
+        },
+        'formula': 'F_BH = P_jet/r_jet; g_fil = G*M_fil/r^2; balance P_jet ~ L_cooling',
+        'source': 'PAPER_223',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.227.0] — 2026-07-31 — BAND 1: PAPER_223 — NGC 1275 PERSEUS AGN
+
+### Added
+- **PAPER_223 wired** (⚠ Q-216): NGC 1275 (Perseus A) — the only 29-document
+  system with BOTH an AGN jet-feedback force (F_BH) and a cold filamentary-gas
+  term (M_fil). F_BH = P_jet/r_jet = 3.24e14 (P_jet~1e35 W Chandra cavities,
+  r_jet=10 kpc); normalized F_BH/ρ_ICM = 1.08e40 m/s² — AGN feedback dominates
+  gravity, preventing runaway cooling. Feedback-balance theorem P_jet ~ L_X_cooling
+  ~ 1e35 W → self-regulated AGN feedback. M_fil: ~100 optical Hα filaments (Lynds
+  1970, Fabian 2008), total mass ~1e8 M_sun = 2e38 kg, ±300 km/s, T 1e4-1e5 K,
+  up to 50 kpc; g_fil = G·M_fil/r² = 1.40e-13 m/s² (~1000× below base gravity).
+  Perseus feedback cycle: filaments fall → feed AGN → P_jet up → F_BH up →
+  heating up → cooling slows.
+- Q-216 extends: F_BH/ρ_ICM Pa→m/s² normalization (same bridge as
+  F_wind/M_mag/E_rad/P_rad).
+- **Fix:** escaped an invalid `\_` escape sequence in the PAPER_139-era dispatch
+  docstring (`"f_{sc\\_300K}"`) that was emitting a SyntaxWarning on import.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1451 → 1456 (+5). Registry 507 rows / 1070 edges / 227 ledgers.
+
+---
+
 ## [0.226.0] — 2026-07-31 — BAND 1: PAPER_222 — HORSEHEAD NEBULA P_rad
 
 ### Added

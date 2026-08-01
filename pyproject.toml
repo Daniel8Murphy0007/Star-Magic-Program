@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.226.0"
-description = "UQFF Star-Magic-Program v0.226.0: PAPER_222 wired - Horsehead Nebula P_rad Stefan-Boltzmann blackbody radiation pressure (only SB term in 29 docs); P_rad=4*sigma*T^4/(3c)=2.52 Pa (T=1e4 K); dual (1-E(t))+P_rad; g_base=1.10e-10 m/s^2; P_rad/g_base=395000 (radiation-dominated PDR); 3-way P_rad/E_rad/rho_v2. Q-216. Wired 226/2255, gate 1451/0. Registry 505 rows / 1067 edges / 226 ledgers (measured)."
+version = "0.227.0"
+description = "UQFF Star-Magic-Program v0.227.0: PAPER_223 wired - NGC 1275 Perseus AGN F_BH jet feedback + M_fil filaments (only 29-doc with both); F_BH=P_jet/r_jet=3.24e14, F_BH/rho_ICM=1.08e40 (feedback dominates); P_jet~L_cooling self-regulated; g_fil=G*M_fil/r^2=1.40e-13 (~100 Halpha filaments); + \\_ syntax-warning fix. Q-216. Wired 227/2255, gate 1456/0. Registry 507 rows / 1070 edges / 227 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

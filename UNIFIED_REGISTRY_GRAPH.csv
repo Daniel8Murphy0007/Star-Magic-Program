@@ -1066,3 +1066,6 @@ observable,bubble_nebula_positive_expansion,observable,m16_sfr_radiation_dual,(1
 observable,horsehead_prad_stefan_boltzmann,paper,PAPER_222,P_rad SB blackbody
 observable,radiation_term_three_way,paper,PAPER_222,3-way distinction
 observable,radiation_term_three_way,observable,m16_sfr_radiation_dual,P_rad vs E_rad PAPER_219
+primitive,G_OBSERVED,observable,ngc1275_cold_filaments_mfil,g_fil = G*M_fil/r^2
+observable,ngc1275_agn_feedback_fbh,paper,PAPER_223,F_BH jet feedback
+observable,ngc1275_cold_filaments_mfil,paper,PAPER_223,M_fil filaments

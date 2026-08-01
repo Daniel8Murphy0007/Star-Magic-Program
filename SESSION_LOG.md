@@ -2486,3 +2486,12 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1451/0. Registry 505 rows / 1067 edges / 226 ledgers. Campaign: 226/2,255 (11 ✓, 215 ⚠). Next: PAPER_223.
 
 ---
+
+## 2026-07-31 — v0.227.0 — BAND 1: PAPER_223
+
+- PAPER_223 wired (⚠ Q-216): NGC 1275 Perseus AGN — only 29-doc system with both F_BH jet feedback AND M_fil filaments. F_BH=P_jet/r_jet=3.24e14 (P_jet~1e35 W, r_jet=10 kpc), F_BH/ρ_ICM=1.08e40 m/s² (feedback dominates); P_jet~L_cooling self-regulated; M_fil ~100 Hα filaments ~1e8 M_sun=2e38 kg, g_fil=G·M_fil/r²=1.40e-13 m/s²; Perseus feedback cycle. Clean arithmetic. Appendix drift auto-corrected.
+- Also fixed the `\_` SyntaxWarning in the PAPER_139-era docstring (`"f_{sc\\_300K}"`); import now warning-free.
+- Q-216 extends: F_BH/ρ_ICM Pa->m/s² normalization.
+- Gate 1456/0. Registry 507 rows / 1070 edges / 227 ledgers. Campaign: 227/2,255 (11 ✓, 216 ⚠). Next: PAPER_224.
+
+---
