@@ -9,6 +9,26 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-217 — PAPER_221 — dual source files with two NGC 7635 models
+- **Question:** There are TWO whitepaper files for PAPER_221, both modelling the
+  Bubble Nebula NGC 7635 but with different physics and inconsistent parameters:
+  * `PAPER_221_Bubble_Nebula_Positive_Expansion_UQFF.md` (canonical front-matter,
+    405 lines): (1+E(t)) positive shell-expansion multiplier, sign-inverse of the
+    Pillars (1-E(t)); E(t)~0.05 (5% enhancement); r=3 ly=2.84e16 m, M=1.5e31 kg,
+    v_wind=1500 km/s.
+  * `PAPER_221_Bubble_Nebula_Positive_Enhancement_UQFF.md` (no front-matter,
+    104 lines): F_U_Bi_i buoyancy + 1.25 THz phonon resonance; dv~0.3 km/s ->
+    shell 4.0->4.3 km/s (+7.5%); r=3 pc=9.26e16 m, M=40 M_sun=7.96e31 kg,
+    v_wind=2500 km/s.
+  Which file is canonical, and are the two enhancement values (5% multiplier vs
+  7.5% phonon) two mechanisms in one system or a conflict? Also the "Expansion"
+  file's g_base = 1.23e-52 m/s^2 is ~40 OOM off (correct 1.24e-12, same drift
+  family as Q-214/215).
+- **Best-candidate wired:** both treatments wired in one dispatch — (1+E)=1.05
+  and F_UBii dv=0.3 km/s (4.0->4.3, +7.5%); g_base recomputed = 1.24e-12; dual
+  source and param conflict flagged.
+- **Daniel's ruling:** (pending)
+
 ### Q-216 — PAPER_218/219/220 — dimensional normalization of additive terms
 - **Question:** Several fourth-pass system papers add terms with non-acceleration
   units directly to the base gravity g (units m/s^2), each with a hand-wave note

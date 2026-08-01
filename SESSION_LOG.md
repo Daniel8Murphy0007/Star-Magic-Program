@@ -2470,3 +2470,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1441/0. Registry 501 rows / 1061 edges / 224 ledgers. Campaign: 224/2,255 (11 ✓, 213 ⚠). Next: PAPER_221.
 
 ---
+
+## 2026-07-31 — v0.225.0 — BAND 1: PAPER_221
+
+- PAPER_221 wired (⚠ Q-217): Bubble Nebula NGC 7635 (1+E(t)) POSITIVE shell-expansion multiplier — exact sign-inverse of Pillars (1-E(t)) erosion. E=0.05 -> 1.05; g_base=G·M/r²=1.24e-12 m/s²; only 29-doc positive wind-compression multiplier. 2nd file: F_UBii 1.25 THz phonon (Φ_res=0.84) dv=0.3 km/s -> shell 4.0->4.3 (+7.5%), ion-front 0.28 pc. Appendix drift auto-corrected.
+- Q-217: two PAPER_221 files (Expansion 5% (1+E) vs Enhancement 7.5% F_UBii), inconsistent params (r 3ly/3pc, v_wind 1500/2500); Expansion g_base 1.23e-52 ~40 OOM drift.
+- Gate 1446/0. Registry 503 rows / 1064 edges / 225 ledgers. Campaign: 225/2,255 (11 ✓, 214 ⚠). Next: PAPER_222.
+
+---

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.224.0"
-description = "UQFF Star-Magic-Program v0.224.0: PAPER_220 wired - Crab Nebula PWN F_wind + M_mag, expanding r(t)=r0+v_exp*t; E_sd=4pi^2*I*Pdot/P^3=4.42e31 W; F_wind/g_base=20.0 (wind-dominated torus); m=(4pi/mu0)*Bs*Rns^3=3.8e27 A m^2, M_mag r^-3; r0_initial=5.99e15 m. Dimensional-normalization Q-216. Wired 224/2255, gate 1441/0. Registry 501 rows / 1061 edges / 224 ledgers (measured)."
+version = "0.225.0"
+description = "UQFF Star-Magic-Program v0.225.0: PAPER_221 wired - Bubble Nebula NGC 7635 (1+E(t)) positive shell-expansion multiplier (sign-inverse of Pillars (1-E)); E=0.05 -> 1.05; g_base=1.24e-12 m/s^2; F_UBii 1.25 THz phonon dv=0.3 km/s -> shell 4.0->4.3 (+7.5%); dual source files Q-217. Wired 225/2255, gate 1446/0. Registry 503 rows / 1064 edges / 225 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

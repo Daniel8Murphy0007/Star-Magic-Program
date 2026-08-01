@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.225.0] — 2026-07-31 — BAND 1: PAPER_221 — BUBBLE NEBULA NGC 7635
+
+### Added
+- **PAPER_221 wired** (⚠ Q-217): Bubble Nebula NGC 7635 — the (1+E(t)) POSITIVE
+  shell-expansion multiplier, the exact sign-inverse of the Pillars (1-E(t))
+  erosion multiplier. The O6.5 star BD+60°2522 wind COMPRESSES the swept-up shell
+  (increases g), where the Pillars' UV irradiation ERODES the surface (decreases
+  g). E(t)~0.05 (5%), g_base = G·M/r² = 1.24e-12 m/s² (M=1.5e31 kg, r=3 ly), g_shell
+  = g_base·1.05. The only 29-doc system with a positive wind-compression
+  multiplier. Second source file adds the F_U_Bi_i phonon-buoyancy treatment: the
+  1.25 THz SCm resonance (Φ_res=0.84) contributes Δv~0.3 km/s → shell velocity
+  4.0→4.3 km/s (+7.5%), ionization-front thickness 0.28 pc (obs 0.3 pc).
+- Q-217: two whitepaper files both labelled PAPER_221 model NGC 7635 differently
+  — (1+E) multiplier (5%, "Expansion") vs F_UBii phonon (7.5%, "Enhancement") —
+  with inconsistent params (r 3 ly vs 3 pc, v_wind 1500 vs 2500 km/s); "Expansion"
+  g_base 1.23e-52 is ~40 OOM off (correct 1.24e-12, same drift family as Q-214/215).
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1441 → 1446 (+5). Registry 503 rows / 1064 edges / 225 ledgers.
+
+---
+
 ## [0.224.0] — 2026-07-31 — BAND 1: PAPER_220 — CRAB NEBULA PWN
 
 ### Added

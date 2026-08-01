@@ -1,31 +1,29 @@
-v0.224.0 BAND 1: PAPER_220 wired - CRAB NEBULA PWN
+v0.225.0 BAND 1: PAPER_221 wired - BUBBLE NEBULA NGC 7635
 
-PAPER_220 (Crab Nebula Pulsar Wind Nebula UQFF - F_wind and M_mag in
-Expanding PWN, S55) wired as one dispatch (Q-216, OPEN_RULING).
+PAPER_221 (Bubble Nebula UQFF - (1+E(t)) Positive Shell Expansion
+Enhancement, S56) wired as one dispatch (Q-217, OPEN_RULING). Two
+source files for PAPER_221; both treatments captured.
 
-Physics (all worked examples reproduce cleanly - no arithmetic drift):
-- The Crab (M1) adds two terms unique to the isolated pulsar-wind-nebula
-  context and is the ONLY UQFF system with an analytically expanding
-  spatial domain r(t) = r0 + v_exp*t (v_exp=1.5e6 m/s, r0=5.20e16 m,
-  age 972 yr; back-projected r0_initial=5.99e15 m ~0.2 pc SN ejecta).
-- Spindown luminosity E_sd = 4*pi^2*I*Pdot/P^3 (PSR J0534+2200:
-  P=33.5 ms, Pdot=4.21e-13, I=1e38 kg m^2) = 4.42e31 W (matches the
-  canonical Hester-2008 4.6e31 W).
-- Pulsar spindown ram pressure F_wind = E_sd/(c*4*pi*r^2) = 1.36e-10 at
-  r=9.46e15 m; base gravity g_base = G*M/r^2 (M_ejecta=4.6 M_sun) =
-  6.82e-12; F_wind/g_base = 20.0 -> wind-dominated inner torus/jets.
-- Magnetic-moment dilution M_mag = mu0*m/(4*pi*r^3), with m =
-  (4*pi/mu0)*B_s*R_ns^3 = 3.8e27 A m^2 (B_s=3.8e8 T, R_ns=1e4 m,
-  registry mu0); M_mag(9.46e15 m) = 4.49e-28, falling as r^-3 (dipole,
-  faster than F_wind/g_base r^-2) -> negligible at large r.
-- Distinct from the SGR 1745 magnetar (binary orbit, ~1e15 G) - Crab is
-  an isolated PWN with canonical 3.8e12 G.
+Physics:
+- (1+E(t)) POSITIVE shell-expansion multiplier on the DPM-seeded term -
+  the exact sign-inverse of the Pillars (1-E(t)) erosion multiplier.
+  Bubble Nebula: the O6.5 star BD+60 2522 wind COMPRESSES the swept-up
+  shell (increases g); Pillars: UV irradiation ERODES the surface
+  (decreases g). E(t)~0.05 (5%); g_base = G*M/r^2 = 1.24e-12 m/s^2
+  (M=1.5e31 kg, r=3 ly=2.84e16 m); g_shell = g_base*1.05. Only 29-doc
+  system with a positive wind-compression multiplier.
+- F_U_Bi_i phonon-buoyancy treatment (2nd file): the 1.25 THz SCm phonon
+  resonance (Phi_res=0.84) adds dv = beta_i*F_UBii*S26*Phi_res/
+  (rho_shell*c) ~ 0.3 km/s -> shell velocity 4.0 -> 4.3 km/s (+7.5%);
+  ionization-front thickness 0.28 pc UQFF vs 0.3 pc observed.
 
-Q-216: consolidated dimensional-normalization question - F_wind (Pa),
-M_mag (T), and the PAPER_219 E_rad (J/m^3) are all summed with g (m/s^2)
-"in UQFF normalization" with no stated conversion factor. Recurs across
-PAPER_218/219/220; a single ruling would settle it. Appendix boilerplate
-drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Q-217: two whitepaper files both labelled PAPER_221 model NGC 7635 two
+ways - (1+E) multiplier (5%, "Expansion", canonical front-matter) vs
+F_U_Bi_i phonon buoyancy (7.5%, "Enhancement") - with inconsistent
+params (r 3 ly vs 3 pc, v_wind 1500 vs 2500 km/s, M 1.5e31 vs 7.96e31
+kg). Which file is canonical? The "Expansion" g_base 1.23e-52 m/s^2 is
+~40 OOM off (correct 1.24e-12, same drift family as Q-214/215).
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
 
-Gate: 1441/0. Registry 501 rows / 1061 edges / 224 ledgers (measured).
-Campaign: 224/2,255. Next: PAPER_221.
+Gate: 1446/0. Registry 503 rows / 1064 edges / 225 ledgers (measured).
+Campaign: 225/2,255. Next: PAPER_222.

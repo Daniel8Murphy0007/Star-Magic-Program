@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 224 (11 ✓, 213 ⚠ OPEN_RULING)
+- **Wired:** 225 (11 ✓, 214 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2031
+- **Not yet touched:** 2029
 
 ---
 
@@ -1477,8 +1477,8 @@
 | ⚠ | PAPER_218 | NGC3603 Stellar Pressure Dispersal UQFF |
 | ⚠ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
 | ⚠ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
-| ⬜ | PAPER_221 | Bubble Nebula Positive Enhancement UQFF |
-| ⬜ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |
+| ⚠ | PAPER_221 | Bubble Nebula Positive Enhancement UQFF |
+| ⚠ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |
 | ⬜ | PAPER_221b | Bubble Nebula Positive Enhancement UQFF |
 | ⬜ | PAPER_222 | Horsehead Nebula Prad Blackbody UQFF |
 | ⬜ | PAPER_223 | NGC1275 Perseus AGN Filament UQFF |

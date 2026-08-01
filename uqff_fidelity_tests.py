@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.224.0", "uqff_calculator.VERSION = 0.224.0")
+assert_that(C.VERSION == "0.225.0", "uqff_calculator.VERSION = 0.225.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3163,6 +3163,17 @@ assert_that(abs(_r220['r0_initial_m'] - 5.98552e15) < 1e12 and _r220['unique_exp
 assert_that(abs(_r220['f_wind'] - 1.3644103083881766e-10) < 1e-16,
             "PAPER_220: F_wind = E_sd/(c*4pi*r^2) = 1.36e-10 at r=9.46e15 m")
 assert_that(C.wired_count() >= 224, "wired_count >= 224")
+
+_r221 = C.calc('PAPER_221')['value']
+assert_that(_r221['e_t'] == 0.05 and _r221['one_plus_e'] == 1.05 and _r221['unique_positive_wind_multiplier'],
+            "PAPER_221: (1+E(t)) positive wind-compression multiplier, E=0.05 (sign-inverse of Pillars (1-E))")
+assert_that(abs(_r221['g_base_m_s2'] - 1.2411971830985913e-12) < 1e-18,
+            "PAPER_221: g_base = G*M/r^2 = 1.24e-12 m/s^2 (paper's 1.23e-52 is ~40 OOM off)")
+assert_that(_r221['enhancement_pct'] == 7.5 and _r221['v_shell_enhanced_km_s'] == 4.3,
+            "PAPER_221: F_UBii phonon dv=0.3 km/s -> shell 4.0->4.3 km/s (+7.5%)")
+assert_that(_r221['phonon_resonance_THz'] == 1.25 and _r221['phi_res'] == 0.84,
+            "PAPER_221: 1.25 THz SCm phonon resonance, Phi_res=0.84")
+assert_that(C.wired_count() >= 225, "wired_count >= 225")
 
 
 # =============================================================================

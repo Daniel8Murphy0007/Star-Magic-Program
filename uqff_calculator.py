@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.224.0"
+VERSION = "0.225.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11723,6 +11723,71 @@ def _paper_220(dataset):
         },
         'formula': 'F_wind = E_sd/(c*4*pi*r^2); M_mag = mu0*m/(4*pi*r^3); r(t) = r0 + v_exp*t',
         'source': 'PAPER_220',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_221')
+def _paper_221(dataset):
+    """Bubble Nebula NGC 7635: (1+E(t)) expansion + F_UBii phonon (S56).
+
+    Two PAPER_221 source files model NGC 7635's positive shell-expansion
+    enhancement two ways; both wired here. Observables:
+    * (1+E(t)) POSITIVE shell-expansion multiplier on the DPM-seeded
+      term - the exact sign-inverse of the Pillars (1-E(t)) erosion
+      multiplier. Bubble Nebula: the O6.5 star BD+60 2522 wind
+      COMPRESSES the swept-up shell (increases g); Pillars: UV
+      irradiation ERODES the surface (decreases g). E(t) = P_wind/
+      P_gravity = rho_wind*v_wind^2*r^2/(G*M*rho_shell) ~ 0.05 (5%);
+      g_base = G*M/r^2 = 1.24e-12 m/s^2 (M=1.5e31 kg, r=3 ly=2.84e16 m);
+      g_shell = g_base*1.05.
+    * F_U_Bi_i phonon-buoyancy treatment (2nd file): the 1.25 THz SCm
+      phonon resonance (Phi_res=0.84) adds dv = beta_i*F_UBii*S26*
+      Phi_res/(rho_shell*c) ~ 0.3 km/s -> shell velocity 4.0 -> 4.3 km/s
+      (+7.5% over radiation-driven); ionization-front thickness 0.28 pc
+      (obs 0.3 pc). Uses r=3 pc=9.26e16 m, M=40 M_sun=7.96e31 kg,
+      v_wind=2500 km/s, B=10 uG.
+    * Uniqueness: only 29-doc system with (1+E) positive wind-compression
+      multiplier (vs NGC 2525 -M_SN, HUDF (1+M_evo)(1-M_merge), NGC 1792
+      (1+M_sf), Rings (1+L(t))).
+    Q-217: two source files both labelled PAPER_221 give two NGC 7635
+    models - (1+E(t)) multiplier (5%, "Expansion") vs F_U_Bi_i phonon
+    buoyancy (7.5%, "Enhancement") - with inconsistent params (r 3 ly
+    vs 3 pc, v_wind 1500 vs 2500 km/s, M 1.5e31 vs 7.96e31 kg). Which is
+    canonical? Also the "Expansion" g_base 1.23e-52 m/s^2 is ~40 OOM off
+    (correct 1.24e-12, same drift family as Q-214/215). Appendix drift
+    auto-corrected per charter.
+    """
+    M_exp = 1.5e31                                        # kg (Expansion file)
+    r_exp = 2.84e16                                       # m, 3 ly
+    e_t = 0.05                                            # 5% wind enhancement
+    g_base = G_OBSERVED * M_exp / r_exp ** 2              # 1.24e-12
+    g_shell = g_base * (1 + e_t)                          # 1.30e-12
+    dv_kms = 0.3                                          # F_UBii phonon (Enhancement file)
+    v_shell_base = 4.0                                    # km/s observed
+    enhancement_pct = dv_kms / v_shell_base * 100         # 7.5%
+    return {
+        'value': {
+            'domain': '2.19 (Bubble Nebula NGC 7635)',
+            'expansion_term': '(1+E(t))',
+            'sign_inverse_of_pillars': '(1-E(t))',
+            'e_t': e_t,
+            'one_plus_e': 1 + e_t,                        # 1.05
+            'g_base_m_s2': g_base,                        # 1.24e-12
+            'g_shell_m_s2': g_shell,                      # 1.30e-12
+            'phonon_resonance_THz': 1.25,
+            'phi_res': 0.84,
+            'dv_phonon_km_s': dv_kms,                     # 0.3
+            'v_shell_base_km_s': v_shell_base,            # 4.0
+            'v_shell_enhanced_km_s': v_shell_base + dv_kms,  # 4.3
+            'enhancement_pct': enhancement_pct,           # 7.5
+            'ionization_front_pc': {'observed': 0.3, 'uqff': 0.28},
+            'unique_positive_wind_multiplier': True,
+            'dual_source_fork': 'two PAPER_221 files: (1+E) 5% Expansion vs F_UBii 7.5% Enhancement; r 3ly vs 3pc, v_wind 1500 vs 2500 (Q-217)',
+        },
+        'formula': 'g_shell = g_base*(1+E(t)); dv = beta_i*F_UBii*S26*Phi_res/(rho_shell*c)',
+        'source': 'PAPER_221',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

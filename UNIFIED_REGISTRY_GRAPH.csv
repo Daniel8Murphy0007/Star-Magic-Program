@@ -1060,3 +1060,6 @@ observable,m16_sfr_radiation_dual,observable,ngc3603_pressure_dispersal,suppress
 primitive,MU_0,observable,crab_pwn_fwind_mmag,M_mag = mu0*m/(4pi r^3)
 observable,crab_pwn_fwind_mmag,paper,PAPER_220,F_wind + M_mag
 observable,crab_pwn_expanding_domain,paper,PAPER_220,expanding r(t)
+observable,bubble_nebula_positive_expansion,paper,PAPER_221,(1+E(t)) multiplier
+observable,bubble_nebula_phonon_enhancement,paper,PAPER_221,F_UBii phonon
+observable,bubble_nebula_positive_expansion,observable,m16_sfr_radiation_dual,(1+E) vs (1-E) sign-inverse
