@@ -7,6 +7,28 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.230.0] — 2026-07-31 — BAND 1: PAPER_226 — SGR 0501+4516 11-TERM MUGE
+
+### Added
+- **PAPER_226 wired** (⚠ Q-219): SGR 0501+4516 magnetar — the complete 11-term
+  MUGE (Modified Unified Gravitational Equation), the most term-rich magnetar
+  model in the UQFF library, with three novel acceleration terms: (1) GW spin-down
+  back-reaction a_GW = G·M²/(c⁴·r)·(dΩ/dt)²; (2) magnetic stored-energy
+  a_mag = B(t)²/(2μ0)·(4πr³/3)/(M·r); (3) cumulative burst-decay
+  a_decay = L0·τ_d·(1-e^-t/τ_d)/(M·r). Params: M=1.4 M_sun=2.785e30 kg, r=20 km,
+  B0=1e10 T (τ_B=4000 yr), L0=1e28 W. At t=5000 yr: B(t)=2.865e9 T, a_grav=4.65e11
+  m/s², a_mag=1965 m/s², a_decay_sat=1.8e-4 m/s²; full 11-term g_0501 = 4.474e12
+  m/s² (documented simulation output; a_grav is 10.4%).
+- **New source thread:** PAPER_226 is the first paper from grok_share_8d951e12
+  (Doc 2); the prior grok_share_7514fe thread closed at PAPER_225 (fully extracted,
+  Session 57).
+- Q-219: (a) g_0501=4.474e12 is a sim output not reconstructable from the wired
+  terms (dominant a_Ug/a_EM/a_Λ unspecified); (b) new thread continuation confirmed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1466 → 1472 (+6). Registry 511 rows / 1077 edges / 230 ledgers.
+
+---
+
 ## [0.229.0] — 2026-07-31 — BAND 1: PAPER_225 — EARLY-UNIVERSE RELATIVISTIC UV (CLEAN)
 
 ### Added

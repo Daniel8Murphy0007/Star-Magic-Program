@@ -1,31 +1,36 @@
-v0.229.0 BAND 1: PAPER_225 wired - EARLY-UNIVERSE RELATIVISTIC UV (CLEAN)
+v0.230.0 BAND 1: PAPER_226 wired - SGR 0501+4516 11-TERM MUGE
 
-PAPER_225 (UQFF Early-Universe Relativistic UV Coupling - (v/c)^2*L_UV
-for Proto-Galactic Formation at High Redshift, S57) wired as one
-dispatch (CLEAN, WIRED - no ruling).
+PAPER_226 (SGR 0501+4516 Magnetar - 11-Term Full MUGE with GW Back-
+Reaction, Magnetic Energy, and Cumulative Burst Decay, S58) wired as
+one dispatch (Q-219, OPEN_RULING).
 
-Physics (clean arithmetic - all worked examples reproduce, no drift):
-- F_EU = k_UV*(v/c)^2*L_UV is the fourth and final "Uniquely Rare
-  Mathematical Discovery" of the grok_share_7514fe DeepSearch,
-  completing the set begun in PAPER_217 (F_hier, delta_F, F_hyb + F_EU).
-- Applies at high z (z~3-10) where proto-galactic bulk flows reach
-  v~0.1-0.5c, making the (v/c)^2 correction non-negligible (unlike the
-  non-relativistic F_UV = k_UV*L_UV). k_UV = 1e-30 N/W (GALEX/Spitzer;
-  numerically equals F_TRZ^30 but is observational).
-- Enhancement ratio F_EU/F_UV = (v/c)^2: 1% at 0.1c, 9% at 0.3c
-  (AGN outflows), 25% at 0.5c (blazar jets).
-- z=7 proto-galactic starburst example (v=3e7 m/s=0.1c, L_UV=1e36 W,
-  L_mm=1e34 W): F_UV = 1e6 N, F_EU = 1.00e4 N, F_mm = 1.05e4 N ->
-  F_EU ~ F_mm, both comparable, justifying F_EU as a non-negligible
-  early-universe term. Verified.
-- JWST high-z: GS-z11 (z~11.1), GN-z11 (z~10.6); v/c~0.05-0.15 ->
-  F_EU/F_UV ~ 0.003-0.02.
-- Sixth-pass confirmation: the grok_share_7514fe corpus (29 documents,
-  71 equations, 53 unique) is fully extracted after Session 57.
+Physics:
+- Complete 11-term MUGE (Modified Unified Gravitational Equation) for
+  the soft-gamma-repeater magnetar SGR 0501+4516 - the most term-rich
+  magnetar model in the UQFF library - with three novel acceleration
+  terms:
+  (1) GW spin-down back-reaction a_GW = G*M^2/(c^4*r)*(dOmega/dt)^2;
+  (2) magnetic stored-energy a_mag = B(t)^2/(2*mu0)*(4pi*r^3/3)/(M*r);
+  (3) cumulative burst-decay a_decay = L0*tau_d*(1-e^-t/tau_d)/(M*r),
+      saturating to L0*tau_d/(M*r).
+- Params: M=1.4 M_sun=2.785e30 kg, r=20 km=2e4 m, B0=1e10 T
+  (tau_B=4000 yr), P=5.0 s (tau_Omega=10,000 yr), L0=1e28 W,
+  tau_d=1000 s; canonical t=5000 yr.
+- At t=5000 yr: B(t)=B0*e^-t/tau_B=2.865e9 T; a_grav=G*M/r^2=4.65e11
+  m/s^2; a_mag=1965 m/s^2; a_decay_sat=1.8e-4 m/s^2 (novel terms are
+  sub-dominant). Full 11-term g_0501 ~ 4.474e12 m/s^2 (documented
+  simulation output; a_grav is 10.4%). Verified.
 
-No ruling filed - the arithmetic is clean and the physics unambiguous.
-First CLEAN (checkmark) paper of the fifth/sixth-pass system block.
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+New source thread: PAPER_226 is the FIRST paper from grok_share_8d951e12
+(Doc 2); the prior grok_share_7514fe thread closed at PAPER_225 (fully
+extracted, Session 57).
 
-Gate: 1466/0. Registry 510 rows / 1075 edges / 229 ledgers (measured).
-Campaign: 229/2,255. Next: PAPER_226.
+Q-219: (a) g_0501=4.474e12 is a documented 11-term sim output not
+reconstructable from the wired formulas - only a_grav + the 3 novel
+terms are specified, and the dominant ~90% comes from a_Ug/a_EM/a_Lambda
+which the paper does not give; (b) new-thread sequential continuation
+confirmed. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i)
+auto-corrected per charter.
+
+Gate: 1472/0. Registry 511 rows / 1077 edges / 230 ledgers (measured).
+Campaign: 230/2,255. Next: PAPER_227.

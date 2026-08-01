@@ -2511,3 +2511,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1466/0. Registry 510 rows / 1075 edges / 229 ledgers. Campaign: 229/2,255 (12 ✓, 217 ⚠). Next: PAPER_226.
 
 ---
+
+## 2026-07-31 — v0.230.0 — BAND 1: PAPER_226
+
+- PAPER_226 wired (⚠ Q-219): SGR 0501+4516 magnetar 11-term MUGE (most term-rich magnetar in library). 3 novel terms: a_GW=G·M²/(c⁴r)·(dΩ/dt)², a_mag=B²(4πr³/3)/(2μ0·M·r), a_decay=L0·τ_d(1-e^-t/τ_d)/(M·r). M=1.4 M_sun, r=20 km, B0=1e10 T; at t=5000 yr B(t)=2.865e9 T, a_grav=4.65e11, a_mag=1965, a_decay_sat=1.8e-4; g_0501=4.474e12 m/s² (11-term sim, a_grav 10.4%). NEW source thread grok_share_8d951e12 opens (7514fe closed at 225). Appendix drift auto-corrected.
+- Q-219: g_0501 sim-output reconstruction gap (a_Ug/a_EM/a_Λ unspecified); new thread continuation.
+- Gate 1472/0. Registry 511 rows / 1077 edges / 230 ledgers. Campaign: 230/2,255 (12 ✓, 218 ⚠). Next: PAPER_227.
+
+---

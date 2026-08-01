@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.229.0"
-description = "UQFF Star-Magic-Program v0.229.0: PAPER_225 wired (CLEAN) - early-universe relativistic UV coupling F_EU=k_UV*(v/c)^2*L_UV, 4th rare discovery completing PAPER_217 set; enhancement (v/c)^2 = 1%/9%/25% at 0.1c/0.3c/0.5c; z=7 example F_EU~F_mm~1e4 N; 6th-pass corpus fully extracted (29 docs/53 unique eqs). Wired 229/2255, gate 1466/0. Registry 510 rows / 1075 edges / 229 ledgers (measured)."
+version = "0.230.0"
+description = "UQFF Star-Magic-Program v0.230.0: PAPER_226 wired - SGR 0501+4516 magnetar 11-term MUGE (most term-rich); 3 novel terms a_GW/a_mag/a_decay; a_grav=G*M/r^2=4.65e11, B(5000yr)=2.865e9 T; g_0501=4.474e12 m/s^2 (11-term sim). NEW source thread grok_share_8d951e12 opens (7514fe closed at 225). Q-219. Wired 230/2255, gate 1472/0. Registry 511 rows / 1077 edges / 230 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

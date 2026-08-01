@@ -1074,3 +1074,5 @@ observable,saturn_dual_source_gravity,paper,PAPER_224,dual-source gravity
 observable,saturn_ring_tidal_tension,paper,PAPER_224,T_ring
 observable,early_universe_relativistic_uv_feu,paper,PAPER_225,F_EU 4th rare discovery
 observable,early_universe_relativistic_uv_feu,observable,rare_math_discoveries_cgm,completes PAPER_217 set
+primitive,MU_0,observable,sgr0501_11term_muge,a_mag = B^2 V/(2 mu0 M r)
+observable,sgr0501_11term_muge,paper,PAPER_226,11-term MUGE

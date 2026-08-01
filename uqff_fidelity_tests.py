@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.229.0", "uqff_calculator.VERSION = 0.229.0")
+assert_that(C.VERSION == "0.230.0", "uqff_calculator.VERSION = 0.230.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3218,6 +3218,19 @@ assert_that(_r225['fourth_rare_discovery'] and len(_r225['completes_paper_217_se
 assert_that(_r225['k_uv_equals_ftrz30'] and _r225['sixth_pass_corpus_fully_extracted'],
             "PAPER_225: k_UV=1e-30 N/W (=F_TRZ^30 numerically); 6th-pass corpus fully extracted")
 assert_that(C.wired_count() >= 229, "wired_count >= 229")
+
+_r226 = C.calc('PAPER_226')['value']
+assert_that(_r226['terms'] == 11 and len(_r226['novel_terms']) == 3,
+            "PAPER_226: 11-term MUGE with 3 novel terms (a_GW, a_mag, a_decay)")
+assert_that(abs(_r226['a_grav_m_s2'] - 464610509999.9999) < 1e6,
+            "PAPER_226: a_grav = G*M/r^2 = 4.65e11 m/s^2 (M=1.4 M_sun, r=20 km)")
+assert_that(abs(_r226['b_t_5000yr_T'] - 2865047968.601901) < 1e3,
+            "PAPER_226: B(5000 yr) = B0*e^-t/tau_B = 2.865e9 T (B0=1e10 T, tau_B=4000 yr)")
+assert_that(_r226['g_0501_m_s2'] == 4.474e12 and abs(_r226['a_grav_fraction'] - 0.10384678363880194) < 1e-9,
+            "PAPER_226: g_0501 = 4.474e12 m/s^2 (11-term sim; a_grav 10.4%, Q-219)")
+assert_that('8d951e12' in _r226['source_thread'],
+            "PAPER_226: first paper from new source thread grok_share_8d951e12")
+assert_that(C.wired_count() >= 230, "wired_count >= 230")
 
 
 # =============================================================================

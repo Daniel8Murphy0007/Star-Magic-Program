@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.229.0"
+VERSION = "0.230.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12041,4 +12041,73 @@ def _paper_225(dataset):
         'source': 'PAPER_225',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_226')
+def _paper_226(dataset):
+    """SGR 0501+4516 magnetar: 11-term full MUGE (S58, thread 8d951e12).
+
+    Complete 11-term MUGE (Modified Unified Gravitational Equation) for
+    the soft-gamma-repeater magnetar SGR 0501+4516 (~2 kpc), with three
+    novel acceleration terms. FIRST paper from the new source thread
+    grok_share_8d951e12 (Doc 2); the prior 7514fe thread closed at
+    PAPER_225. Wired observables:
+    * Three novel MUGE terms (no other magnetar system uses them):
+      (1) GW spin-down back-reaction a_GW = G*M^2/(c^4*r)*(dOmega/dt)^2,
+          dOmega/dt = -(2pi/P)/tau_Omega * e^-t/tau_Omega;
+      (2) magnetic stored-energy acceleration a_mag = B(t)^2/(2*mu0) *
+          (4pi*r^3/3)/(M*r) - distinct from the f_sc = 1-B/B_crit
+          suppression factor;
+      (3) cumulative burst-decay a_decay = L0*tau_d*(1-e^-t/tau_d)/(M*r),
+          saturating to L0*tau_d/(M*r) at large t.
+    * Parameters: M=1.4 M_sun=2.785e30 kg, r=20 km=2e4 m, B0=1e10 T
+      (tau_B=4000 yr), P=5.0 s (tau_Omega=10,000 yr), L0=1e28 W,
+      tau_d=1000 s; canonical t=5000 yr.
+    * At t=5000 yr: B(t)=B0*e^-t/tau_B=2.865e9 T; a_grav=G*M/r^2=4.65e11
+      m/s^2; a_mag=1965 m/s^2; a_decay_sat=1.8e-4 m/s^2 (novel terms are
+      sub-dominant). Full 11-term g_0501 ~ 4.474e12 m/s^2 (documented
+      simulation output; a_grav is 10.4% - the balance comes from the
+      UQFF/EM/Lambda terms which the paper does not specify, Q-219).
+    * 11 terms: a_grav + a_Ug + a_Lambda + a_EM + a_GW + a_q + a_f +
+      a_osc + a_DM + a_mag + a_decay - the most term-rich magnetar MUGE
+      in the UQFF library.
+    Q-219: (a) g_0501=4.474e12 is a documented 11-term sim output not
+    reconstructable from the wired formulas (dominant a_Ug/a_EM/a_Lambda
+    unspecified); (b) new source thread grok_share_8d951e12 opens here.
+    Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    M = 1.4 * M_SUN_OBSERVED                              # 2.785e30 kg
+    r = 2e4                                               # m, 20 km
+    B0 = 1e10; tau_B = 4000.0; t_canonical = 5000.0
+    L0 = 1e28; tau_d = 1000.0
+    b_t = B0 * _m.exp(-t_canonical / tau_B)               # 2.865e9 T
+    a_grav = G_OBSERVED * M / r ** 2                      # 4.65e11
+    V = 4 * _m.pi * r ** 3 / 3
+    a_mag = b_t ** 2 * V / (2 * MU_0 * M * r)             # 1965
+    a_decay_sat = L0 * tau_d / (M * r)                    # 1.8e-4
+    g_0501 = 4.474e12                                     # 11-term sim output
+    return {
+        'value': {
+            'domain': '2.24 (SGR 0501+4516 11-term MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 2 (new thread)',
+            'terms': 11,
+            'novel_terms': ['a_GW', 'a_mag', 'a_decay'],
+            'M_kg': M,
+            'r_m': r,
+            'B0_T': B0,
+            'b_t_5000yr_T': b_t,                          # 2.865e9
+            'a_grav_m_s2': a_grav,                        # 4.65e11
+            'a_mag_m_s2': a_mag,                          # 1965
+            'a_decay_sat_m_s2': a_decay_sat,             # 1.8e-4
+            'g_0501_m_s2': g_0501,                        # 4.474e12
+            'a_grav_fraction': a_grav / g_0501,           # 0.104
+            'most_term_rich_magnetar': True,
+            'g_0501_reconstruction_fork': 'g_0501=4.474e12 sim output; a_Ug/a_EM/a_Lambda unspecified (Q-219)',
+        },
+        'formula': 'g_0501 = a_grav + a_Ug + a_L + a_EM + a_GW + a_q + a_f + a_osc + a_DM + a_mag + a_decay (11 terms)',
+        'source': 'PAPER_226',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

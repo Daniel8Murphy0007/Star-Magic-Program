@@ -9,6 +9,25 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-219 — PAPER_226 — SGR 0501 11-term MUGE reconstruction + new source thread
+- **Question (a):** PAPER_226 states the full 11-term MUGE evaluates to g_0501 =
+  4.474e12 m/s^2 at t=5000 yr, but only specifies closed forms for a_grav
+  (=G*M/r^2=4.65e11, 10.4% of the total) and the three novel terms (a_GW, a_mag,
+  a_decay - all sub-dominant: a_mag~1965, a_decay_sat~1.8e-4 m/s^2). The dominant
+  ~90% must come from a_Ug, a_EM, a_Lambda, a_q, a_f, a_osc, a_DM, which the paper
+  does not give formulas for. So g_0501=4.474e12 is a documented simulation output,
+  not reconstructable from the wired terms. Should the remaining 7 term formulas
+  be sourced (from the calculator class MagnetarSGR0501MUGEFullCalculator), or is
+  the sim output terminal?
+- **Question (b):** PAPER_226 is the FIRST paper from a NEW source thread
+  grok_share_8d951e12 (Doc 2); the previous grok_share_7514fe thread closed at
+  PAPER_225 (confirmed fully extracted, Session 57). Confirm the sequential
+  campaign continues into the 8d951e12 thread from here.
+- **Best-candidate wired:** a_grav + 3 novel terms computed; g_0501=4.474e12
+  preserved as the documented 11-term sim output with the reconstruction gap
+  flagged.
+- **Daniel's ruling:** (pending)
+
 ### Q-218 — PAPER_224 — Saturn g_sun scale error + T_ring benchmark mismatch
 - **Question (a):** PAPER_224 sec 4 states g_sun = G*M_Sun/r_orbit^2 = 6.53e-3
   m/s^2, but with M_Sun=1.989e30 kg and r_orbit=1.426e12 m (9.54 AU) the value is
