@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.225.0", "uqff_calculator.VERSION = 0.225.0")
+assert_that(C.VERSION == "0.226.0", "uqff_calculator.VERSION = 0.226.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3174,6 +3174,17 @@ assert_that(_r221['enhancement_pct'] == 7.5 and _r221['v_shell_enhanced_km_s'] =
 assert_that(_r221['phonon_resonance_THz'] == 1.25 and _r221['phi_res'] == 0.84,
             "PAPER_221: 1.25 THz SCm phonon resonance, Phi_res=0.84")
 assert_that(C.wired_count() >= 225, "wired_count >= 225")
+
+_r222 = C.calc('PAPER_222')['value']
+assert_that(abs(_r222['p_rad_Pa'] - 2.5219224605488018) < 1e-9,
+            "PAPER_222: P_rad = 4*sigma*T^4/(3c) = 2.52 Pa at T=1e4 K (Stefan-Boltzmann)")
+assert_that(abs(_r222['g_base_m_s2'] - 1.099210079563446e-10) < 1e-16,
+            "PAPER_222: g_base = G*M*(1-E)/r^2 = 1.10e-10 m/s^2 (clean, no drift)")
+assert_that(abs(_r222['p_rad_over_g_base'] - 395465.80592914706) < 1e-3,
+            "PAPER_222: P_rad/g_base = 395,000 -> radiation-dominated PDR (~400,000x)")
+assert_that(_r222['only_stefan_boltzmann_in_29_docs'] and len(_r222['three_way_distinction']) == 3,
+            "PAPER_222: only SB blackbody P_rad in 29 docs; 3-way distinction P_rad/E_rad/rho_v2")
+assert_that(C.wired_count() >= 226, "wired_count >= 226")
 
 
 # =============================================================================

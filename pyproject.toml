@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.225.0"
-description = "UQFF Star-Magic-Program v0.225.0: PAPER_221 wired - Bubble Nebula NGC 7635 (1+E(t)) positive shell-expansion multiplier (sign-inverse of Pillars (1-E)); E=0.05 -> 1.05; g_base=1.24e-12 m/s^2; F_UBii 1.25 THz phonon dv=0.3 km/s -> shell 4.0->4.3 (+7.5%); dual source files Q-217. Wired 225/2255, gate 1446/0. Registry 503 rows / 1064 edges / 225 ledgers (measured)."
+version = "0.226.0"
+description = "UQFF Star-Magic-Program v0.226.0: PAPER_222 wired - Horsehead Nebula P_rad Stefan-Boltzmann blackbody radiation pressure (only SB term in 29 docs); P_rad=4*sigma*T^4/(3c)=2.52 Pa (T=1e4 K); dual (1-E(t))+P_rad; g_base=1.10e-10 m/s^2; P_rad/g_base=395000 (radiation-dominated PDR); 3-way P_rad/E_rad/rho_v2. Q-216. Wired 226/2255, gate 1451/0. Registry 505 rows / 1067 edges / 226 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

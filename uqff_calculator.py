@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.225.0"
+VERSION = "0.226.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11788,6 +11788,69 @@ def _paper_221(dataset):
         },
         'formula': 'g_shell = g_base*(1+E(t)); dv = beta_i*F_UBii*S26*Phi_res/(rho_shell*c)',
         'source': 'PAPER_221',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_222')
+def _paper_222(dataset):
+    """Horsehead Nebula: Stefan-Boltzmann blackbody P_rad (S56).
+
+    The Horsehead (Barnard 33) introduces P_rad = 4*sigma*T^4/(3c), the
+    only Stefan-Boltzmann blackbody radiation-pressure term across the 29
+    UQFF documents, as an additive correction. Wired observables (clean
+    arithmetic, all reproduce):
+    * Dual radiation mechanism: (1-E(t)) UV-irradiation MULTIPLIER
+      (erosion, reduces base gravity) + additive +P_rad blackbody thermal
+      pressure. Together they model complete photodissociation: gravity
+      holds the dense core, (1-E) weakens the hold, P_rad pushes gas away.
+    * P_rad = 4*sigma*T^4/(3c) with sigma = 5.6704e-8 W/m^2/K^4, ionization
+      -front T = 1e4 K (sigma-Orionis PDR at 3.5 pc): 2.522 Pa; CP1
+      benchmark normalizes to 4.347e-5 m/s^2 (divide by rho, see Q-216
+      dimensional normalization).
+    * g_base = G*M*(1-E)/r^2 = 1.10e-10 m/s^2 (M=2.387e32 kg, E=0.036,
+      r=1.182e16 m); P_rad/g_base = 395,000 -> radiation pressure exceeds
+      gravity by ~400,000x -> radiation-dominated PDR (gravity structural
+      only, dense core survives because rho_core >> rho_surface).
+    * Three-way radiation-term distinction: P_rad (Horsehead, blackbody
+      SB, Pa), E_rad (M16, UV photon energy density L_UV/(4*pi*r^2*c),
+      J/m^3), rho*v_wind^2 (Westerlund2/Tapestry, kinetic ram, Pa) - NOT
+      interchangeable, three different mechanisms. Horsehead uses P_rad
+      because its PDR is thermalized (T~1e4 K); M16 uses E_rad because its
+      UV photons are directional/un-thermalized.
+    Q-216 extends here: the P_rad (Pa) -> 4.35e-5 m/s^2 CP1 normalization
+    ("divide by rho") is the same unstated dimensional bridge as
+    F_wind/M_mag/E_rad. Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    sigma_sb = 5.6704e-8                                  # W/m^2/K^4, Stefan-Boltzmann
+    T_pdr = 1e4                                           # K, ionization front
+    p_rad_pa = 4 * sigma_sb * T_pdr ** 4 / (3 * C_OBSERVED)  # 2.522 Pa
+    p_rad_cp1 = 4.347e-5                                  # m/s^2, CP1 normalized
+    M_hh = 2.387e32; E_t = 0.036; r_hh = 1.182e16
+    g_base = G_OBSERVED * M_hh * (1 - E_t) / r_hh ** 2    # 1.10e-10
+    ratio = p_rad_cp1 / g_base                            # 395,000
+    return {
+        'value': {
+            'domain': '2.20 (Horsehead Nebula P_rad)',
+            'p_rad_term': 'P_rad = 4*sigma*T^4/(3c)',
+            'only_stefan_boltzmann_in_29_docs': True,
+            'sigma_sb': sigma_sb,
+            'T_pdr_K': T_pdr,
+            'p_rad_Pa': p_rad_pa,                         # 2.522
+            'p_rad_cp1_m_s2': p_rad_cp1,                  # 4.347e-5
+            'g_base_m_s2': g_base,                        # 1.10e-10
+            'p_rad_over_g_base': ratio,                   # 395,000
+            'radiation_dominated_pdr': True,
+            'dual_mechanism': '(1-E(t)) UV erosion multiplier + P_rad additive blackbody',
+            'three_way_distinction': {'p_rad': '4*sigma*T^4/(3c) SB blackbody Pa',
+                                      'e_rad': 'L_UV/(4*pi*r^2*c) UV energy density J/m^3',
+                                      'rho_v2': 'rho*v_wind^2 kinetic ram Pa'},
+            'normalization_note': 'P_rad Pa -> m/s^2 via /rho (Q-216 dimensional bridge)',
+        },
+        'formula': 'g_HH = G*M/r^2*(1+H*t)*(1-B/B_crit)*(1-E(t)) + P_rad; P_rad = 4*sigma*T^4/(3c)',
+        'source': 'PAPER_222',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

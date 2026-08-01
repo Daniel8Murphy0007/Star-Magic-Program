@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.226.0] — 2026-07-31 — BAND 1: PAPER_222 — HORSEHEAD NEBULA P_rad
+
+### Added
+- **PAPER_222 wired** (⚠ Q-216): Horsehead Nebula (Barnard 33) — introduces
+  P_rad = 4σT⁴/(3c), the only Stefan-Boltzmann blackbody radiation-pressure term
+  across the 29 UQFF documents, as an additive correction. Dual radiation
+  mechanism: (1-E(t)) UV-irradiation MULTIPLIER (erosion, reduces base gravity) +
+  additive +P_rad blackbody thermal pressure. P_rad = 2.52 Pa at the σ-Orionis PDR
+  temperature T=1e4 K (CP1 normalizes to 4.347e-5 m/s²); g_base = G·M·(1-E)/r² =
+  1.10e-10 m/s² (clean, no drift) → **P_rad/g_base = 395,000** (radiation exceeds
+  gravity ~400,000×, radiation-dominated PDR). Three-way radiation-term distinction:
+  P_rad (blackbody SB, Pa), E_rad (M16 UV energy density, J/m³), ρ·v_wind²
+  (kinetic ram, Pa) — not interchangeable.
+- Q-216 extends: the P_rad (Pa) → 4.35e-5 m/s² CP1 normalization ("÷ρ") is the
+  same unstated dimensional bridge as F_wind/M_mag/E_rad (PAPER_218/219/220).
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1446 → 1451 (+5). Registry 505 rows / 1067 edges / 226 ledgers.
+
+---
+
 ## [0.225.0] — 2026-07-31 — BAND 1: PAPER_221 — BUBBLE NEBULA NGC 7635
 
 ### Added

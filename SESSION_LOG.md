@@ -2478,3 +2478,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1446/0. Registry 503 rows / 1064 edges / 225 ledgers. Campaign: 225/2,255 (11 ✓, 214 ⚠). Next: PAPER_222.
 
 ---
+
+## 2026-07-31 — v0.226.0 — BAND 1: PAPER_222
+
+- PAPER_222 wired (⚠ Q-216): Horsehead Nebula P_rad = 4σT⁴/(3c) Stefan-Boltzmann blackbody radiation pressure — only SB term in 29 docs. Dual (1-E(t)) UV erosion multiplier + additive P_rad. P_rad=2.52 Pa (T=1e4 K), CP1 4.347e-5 m/s²; g_base=G·M·(1-E)/r²=1.10e-10 (clean); P_rad/g_base=395,000 (~400,000× radiation-dominated PDR). 3-way P_rad/E_rad/ρv² distinction. Clean arithmetic. Appendix drift auto-corrected.
+- Q-216 extends: P_rad Pa -> m/s² /ρ normalization (same bridge as F_wind/M_mag/E_rad).
+- Gate 1451/0. Registry 505 rows / 1067 edges / 226 ledgers. Campaign: 226/2,255 (11 ✓, 215 ⚠). Next: PAPER_223.
+
+---

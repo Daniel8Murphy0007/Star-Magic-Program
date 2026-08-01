@@ -1,29 +1,32 @@
-v0.225.0 BAND 1: PAPER_221 wired - BUBBLE NEBULA NGC 7635
+v0.226.0 BAND 1: PAPER_222 wired - HORSEHEAD NEBULA P_rad
 
-PAPER_221 (Bubble Nebula UQFF - (1+E(t)) Positive Shell Expansion
-Enhancement, S56) wired as one dispatch (Q-217, OPEN_RULING). Two
-source files for PAPER_221; both treatments captured.
+PAPER_222 (Horsehead Nebula UQFF - P_rad Stefan-Boltzmann Blackbody
+Radiation Pressure, S56) wired as one dispatch (Q-216, OPEN_RULING).
 
-Physics:
-- (1+E(t)) POSITIVE shell-expansion multiplier on the DPM-seeded term -
-  the exact sign-inverse of the Pillars (1-E(t)) erosion multiplier.
-  Bubble Nebula: the O6.5 star BD+60 2522 wind COMPRESSES the swept-up
-  shell (increases g); Pillars: UV irradiation ERODES the surface
-  (decreases g). E(t)~0.05 (5%); g_base = G*M/r^2 = 1.24e-12 m/s^2
-  (M=1.5e31 kg, r=3 ly=2.84e16 m); g_shell = g_base*1.05. Only 29-doc
-  system with a positive wind-compression multiplier.
-- F_U_Bi_i phonon-buoyancy treatment (2nd file): the 1.25 THz SCm phonon
-  resonance (Phi_res=0.84) adds dv = beta_i*F_UBii*S26*Phi_res/
-  (rho_shell*c) ~ 0.3 km/s -> shell velocity 4.0 -> 4.3 km/s (+7.5%);
-  ionization-front thickness 0.28 pc UQFF vs 0.3 pc observed.
+Physics (clean arithmetic - all worked examples reproduce):
+- The Horsehead (Barnard 33) introduces P_rad = 4*sigma*T^4/(3c), the
+  only Stefan-Boltzmann blackbody radiation-pressure term across the 29
+  UQFF documents, as an additive correction.
+- Dual radiation mechanism: (1-E(t)) UV-irradiation MULTIPLIER (erosion,
+  reduces base gravity) + additive +P_rad blackbody thermal pressure.
+  Gravity holds the dense core, (1-E) weakens the hold, P_rad pushes gas
+  away thermally; the Horsehead survives because gravity > P_rad in the
+  dense core (rho_core >> rho_surface).
+- P_rad = 4*sigma*T^4/(3c) with sigma=5.6704e-8 W/m^2/K^4, ionization-
+  front T=1e4 K (sigma-Orionis PDR at 3.5 pc): 2.52 Pa; CP1 benchmark
+  normalizes to 4.347e-5 m/s^2. Verified.
+- g_base = G*M*(1-E)/r^2 = 1.10e-10 m/s^2 (M=2.387e32 kg, E=0.036,
+  r=1.182e16 m); P_rad/g_base = 395,000 -> radiation pressure exceeds
+  gravity by ~400,000x -> radiation-dominated photodissociation region.
+- Three-way radiation-term distinction (not interchangeable): P_rad
+  (blackbody SB, Pa), E_rad (M16 UV energy density L_UV/(4*pi*r^2*c),
+  J/m^3), rho*v_wind^2 (kinetic ram, Pa). Horsehead uses P_rad because
+  its PDR is thermalized (T~1e4 K); M16 uses E_rad (directional UV).
 
-Q-217: two whitepaper files both labelled PAPER_221 model NGC 7635 two
-ways - (1+E) multiplier (5%, "Expansion", canonical front-matter) vs
-F_U_Bi_i phonon buoyancy (7.5%, "Enhancement") - with inconsistent
-params (r 3 ly vs 3 pc, v_wind 1500 vs 2500 km/s, M 1.5e31 vs 7.96e31
-kg). Which file is canonical? The "Expansion" g_base 1.23e-52 m/s^2 is
-~40 OOM off (correct 1.24e-12, same drift family as Q-214/215).
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+Q-216 extends here: the P_rad (Pa) -> 4.35e-5 m/s^2 CP1 normalization
+("divide by rho") is the same unstated dimensional bridge as
+F_wind/M_mag/E_rad (PAPER_218/219/220). Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1446/0. Registry 503 rows / 1064 edges / 225 ledgers (measured).
-Campaign: 225/2,255. Next: PAPER_222.
+Gate: 1451/0. Registry 505 rows / 1067 edges / 226 ledgers (measured).
+Campaign: 226/2,255. Next: PAPER_223.
