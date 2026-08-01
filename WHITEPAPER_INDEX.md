@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 230 (12 ✓, 218 ⚠ OPEN_RULING)
+- **Wired:** 231 (12 ✓, 219 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2024
+- **Not yet touched:** 2023
 
 ---
 
@@ -1485,7 +1485,7 @@
 | ⚠ | PAPER_224 | Saturn Dual Gravity Ring Tension UQFF |
 | ✓ | PAPER_225 | Early Universe Relativistic UV UQFF |
 | ⚠ | PAPER_226 | MagnetarSGR0501 11Term MUGE UQFF |
-| ⬜ | PAPER_227 | Tapestry LMC Stellar Wind UQFF |
+| ⚠ | PAPER_227 | Tapestry LMC Stellar Wind UQFF |
 | ⬜ | PAPER_228 | Westerlund2 OB StellarWind MUGE |
 | ⬜ | PAPER_229 | Pillars Creation Erosion MUGE |
 | ⬜ | PAPER_230 | NGC2525 SN2018gv Negative MassLoss MUGE |

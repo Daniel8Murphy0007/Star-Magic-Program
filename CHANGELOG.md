@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.231.0] — 2026-07-31 — BAND 1: PAPER_227 — TAPESTRY STARBIRTH LMC MUGE
+
+### Added
+- **PAPER_227 wired** (⚠ Q-220): Tapestry of Blazing Starbirth (NGC 2014/2020, LMC)
+  9-term MUGE with two novel methods. (1) Gas-ratio-amplitude mass growth
+  `M(t) = M_init·(1 + (M_gas/M_init)·e^-t/τ_SF)`, where the amplitude
+  `M_dot_factor = M_gas/M_init = 10000/240 = 41.67` encodes the gas-to-stellar
+  ratio (M returns to M_init by t=5τ_SF). (2) Stellar-wind ram-pressure
+  acceleration `a_wind = ρ_wind·v_wind²/ρ_fluid`; with ρ_wind = ρ_fluid = 1e-21
+  kg/m³ and v_wind = 2000 km/s, a_wind = v_wind² = 4e12 m/s² — numerically
+  dominant during O/B-star formation. Parametric wind family: Tapestry LMC
+  (ρ_wind=1e-21), Westerlund 2 (1e-20, 10× denser, PAPER_228), NGC 1792 SN
+  (1e-21). Doc 4 of the grok_share_8d951e12 thread.
+- Q-220: the abstract states a_wind ~ 4e3 m/s², but sec-2/conclusion give 4e12
+  (= v_wind²); the abstract 4e3 is a typo (off by 10⁹). Body value 4e12 wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1472 → 1477 (+5). Registry 512 rows / 1079 edges / 231 ledgers.
+
+---
+
 ## [0.230.0] — 2026-07-31 — BAND 1: PAPER_226 — SGR 0501+4516 11-TERM MUGE
 
 ### Added

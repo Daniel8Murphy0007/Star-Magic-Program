@@ -9,6 +9,17 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-220 — PAPER_227 — Tapestry a_wind abstract vs body (4e3 vs 4e12)
+- **Question:** PAPER_227's abstract states the stellar-wind ram-pressure
+  acceleration a_wind ~ 4e3 m/s^2, but sec-2 and the conclusion give 4e12 m/s^2:
+  with rho_wind = rho_fluid = 1e-21 kg/m^3 and v_wind = 2000 km/s, a_wind =
+  rho_wind*v_wind^2/rho_fluid = v_wind^2 = (2e6)^2 = 4e12 m/s^2. The abstract's
+  4e3 is a typo (off by 10^9). Confirm 4e12 is canonical (the body value was
+  wired).
+- **Best-candidate wired:** a_wind = 4e12 m/s^2 (body/conclusion value);
+  abstract's 4e3 flagged as typo.
+- **Daniel's ruling:** (pending)
+
 ### Q-219 — PAPER_226 — SGR 0501 11-term MUGE reconstruction + new source thread
 - **Question (a):** PAPER_226 states the full 11-term MUGE evaluates to g_0501 =
   4.474e12 m/s^2 at t=5000 yr, but only specifies closed forms for a_grav

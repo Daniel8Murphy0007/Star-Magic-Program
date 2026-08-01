@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.230.0"
-description = "UQFF Star-Magic-Program v0.230.0: PAPER_226 wired - SGR 0501+4516 magnetar 11-term MUGE (most term-rich); 3 novel terms a_GW/a_mag/a_decay; a_grav=G*M/r^2=4.65e11, B(5000yr)=2.865e9 T; g_0501=4.474e12 m/s^2 (11-term sim). NEW source thread grok_share_8d951e12 opens (7514fe closed at 225). Q-219. Wired 230/2255, gate 1472/0. Registry 511 rows / 1077 edges / 230 ledgers (measured)."
+version = "0.231.0"
+description = "UQFF Star-Magic-Program v0.231.0: PAPER_227 wired - Tapestry of Blazing Starbirth (NGC 2014/2020 LMC) 9-term MUGE; 2 novel methods gas-ratio M(t) (M_dot_factor=M_gas/M_init=41.67) + stellar-wind ram a_wind=rho_wind*v^2/rho_fluid=4e12 m/s^2 (=v_wind^2); wind family LMC/Wd2/NGC1792; abstract 4e3 typo Q-220. Wired 231/2255, gate 1477/0. Registry 512 rows / 1079 edges / 231 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

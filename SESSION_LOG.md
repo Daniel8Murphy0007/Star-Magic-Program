@@ -2519,3 +2519,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1472/0. Registry 511 rows / 1077 edges / 230 ledgers. Campaign: 230/2,255 (12 ✓, 218 ⚠). Next: PAPER_227.
 
 ---
+
+## 2026-07-31 — v0.231.0 — BAND 1: PAPER_227
+
+- PAPER_227 wired (⚠ Q-220): Tapestry of Blazing Starbirth (NGC 2014/2020 LMC) 9-term MUGE. 2 novel methods: gas-ratio-amplitude M(t)=M_init·(1+(M_gas/M_init)·e^-t/τ_SF), M_dot_factor=10000/240=41.67; stellar-wind ram a_wind=ρ_wind·v²/ρ_fluid=4e12 m/s² (=v_wind² since ρ_wind=ρ_fluid). Wind family LMC 1e-21 / Wd2 1e-20 (10×) / NGC1792 1e-21. Doc 4 of 8d951e12 thread. Appendix drift auto-corrected.
+- Q-220: abstract a_wind 4e3 vs body/conclusion 4e12 (typo, off by 10⁹).
+- Gate 1477/0. Registry 512 rows / 1079 edges / 231 ledgers. Campaign: 231/2,255 (12 ✓, 219 ⚠). Next: PAPER_228.
+
+---

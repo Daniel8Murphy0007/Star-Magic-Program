@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.230.0"
+VERSION = "0.231.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12108,6 +12108,62 @@ def _paper_226(dataset):
         },
         'formula': 'g_0501 = a_grav + a_Ug + a_L + a_EM + a_GW + a_q + a_f + a_osc + a_DM + a_mag + a_decay (11 terms)',
         'source': 'PAPER_226',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_227')
+def _paper_227(dataset):
+    """Tapestry of Blazing Starbirth (NGC 2014/2020, LMC) MUGE (S58).
+
+    9-term MUGE for the Tapestry of Blazing Starbirth (two giant HII
+    regions in the LMC, ~300 ly apart) with two novel methods. Doc 4 of
+    the grok_share_8d951e12 thread. Wired observables:
+    * Gas-ratio-amplitude mass growth M(t) = M_init*(1 + (M_gas/M_init)*
+      e^-t/tau_SF): the amplitude M_dot_factor = M_gas/M_init = 10000/240
+      = 41.67 encodes the gas-to-stellar mass ratio; captures rapid
+      initial mass increase as gas accretes onto young stellar objects;
+      by t = 5*tau_SF, M returns to M_init.
+    * Stellar-wind ram-pressure acceleration a_wind = rho_wind*v_wind^2/
+      rho_fluid; with rho_wind=1e-21 kg/m^3, v_wind=2000 km/s=2e6 m/s,
+      rho_fluid=1e-21 kg/m^3 (rho_wind = rho_fluid), a_wind = v_wind^2 =
+      4e12 m/s^2 - numerically dominant during the O/B-star-active phase.
+    * Parametric wind family: Tapestry LMC (rho_wind=1e-21), Westerlund 2
+      (1e-20, 10x denser OB-supergiant, PAPER_228), NGC 1792 SN (1e-21);
+      all v_wind=2000 km/s.
+    * Params: distance ~160,000 ly (LMC), M_init=240 M_sun, M_gas=10,000
+      M_sun, r=10 ly, B=1 uT, tau_SF=5 Myr, canonical t=1 Myr; no erosion
+      term (that is the Pillars, PAPER_229).
+    Q-220: the abstract states a_wind ~ 4e3 m/s^2, but sec-2 and the
+    conclusion give 4e12 m/s^2 (= v_wind^2 when rho_wind=rho_fluid); the
+    abstract 4e3 is a typo. Body value 4e12 wired. Appendix drift
+    auto-corrected per charter.
+    """
+    M_init = 240.0; M_gas = 10000.0                       # M_sun
+    m_dot_factor = M_gas / M_init                         # 41.67
+    rho_wind = 1e-21; v_wind = 2e6; rho_fluid = 1e-21
+    a_wind = rho_wind * v_wind ** 2 / rho_fluid           # 4e12
+    return {
+        'value': {
+            'domain': '2.25 (Tapestry Starbirth LMC MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 4',
+            'terms': 9,
+            'novel_methods': ['gas_ratio_amplitude_M(t)', 'stellar_wind_ram_pressure'],
+            'M_init_solar': M_init,
+            'M_gas_solar': M_gas,
+            'm_dot_factor': m_dot_factor,                 # 41.67
+            'rho_wind': rho_wind,
+            'v_wind_m_s': v_wind,
+            'rho_fluid': rho_fluid,
+            'a_wind_m_s2': a_wind,                        # 4e12
+            'a_wind_equals_v2_when_equal_rho': True,
+            'wind_family': {'tapestry_lmc': 1e-21, 'westerlund2': 1e-20, 'ngc1792_sn': 1e-21},
+            'r_ly': 10, 'B_uT': 1, 'tau_sf_Myr': 5,
+            'a_wind_abstract_fork': 'abstract 4e3 vs body/conclusion 4e12 = v_wind^2 (Q-220)',
+        },
+        'formula': 'M(t) = M_init*(1 + (M_gas/M_init)*e^-t/tau_SF); a_wind = rho_wind*v_wind^2/rho_fluid',
+        'source': 'PAPER_227',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

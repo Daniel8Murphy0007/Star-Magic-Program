@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.230.0", "uqff_calculator.VERSION = 0.230.0")
+assert_that(C.VERSION == "0.231.0", "uqff_calculator.VERSION = 0.231.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3231,6 +3231,17 @@ assert_that(_r226['g_0501_m_s2'] == 4.474e12 and abs(_r226['a_grav_fraction'] - 
 assert_that('8d951e12' in _r226['source_thread'],
             "PAPER_226: first paper from new source thread grok_share_8d951e12")
 assert_that(C.wired_count() >= 230, "wired_count >= 230")
+
+_r227 = C.calc('PAPER_227')['value']
+assert_that(abs(_r227['m_dot_factor'] - 41.666666666666664) < 1e-9,
+            "PAPER_227: gas-ratio amplitude M_dot_factor = M_gas/M_init = 10000/240 = 41.67")
+assert_that(_r227['a_wind_m_s2'] == 4e12 and _r227['a_wind_equals_v2_when_equal_rho'],
+            "PAPER_227: a_wind = rho_wind*v^2/rho_fluid = 4e12 m/s^2 = v_wind^2 (rho_wind=rho_fluid; abstract 4e3 typo Q-220)")
+assert_that(_r227['terms'] == 9 and len(_r227['novel_methods']) == 2,
+            "PAPER_227: 9-term MUGE with 2 novel methods (gas-ratio M(t), stellar-wind ram pressure)")
+assert_that(_r227['wind_family']['westerlund2'] == 1e-20 and _r227['wind_family']['tapestry_lmc'] == 1e-21,
+            "PAPER_227: wind family - Westerlund 2 rho_wind 10x denser than Tapestry LMC")
+assert_that(C.wired_count() >= 231, "wired_count >= 231")
 
 
 # =============================================================================
