@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 228 (11 ✓, 217 ⚠ OPEN_RULING)
+- **Wired:** 229 (12 ✓, 217 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2026
+- **Not yet touched:** 2025
 
 ---
 
@@ -1483,7 +1483,7 @@
 | ⚠ | PAPER_222 | Horsehead Nebula Prad Blackbody UQFF |
 | ⚠ | PAPER_223 | NGC1275 Perseus AGN Filament UQFF |
 | ⚠ | PAPER_224 | Saturn Dual Gravity Ring Tension UQFF |
-| ⬜ | PAPER_225 | Early Universe Relativistic UV UQFF |
+| ✓ | PAPER_225 | Early Universe Relativistic UV UQFF |
 | ⬜ | PAPER_226 | MagnetarSGR0501 11Term MUGE UQFF |
 | ⬜ | PAPER_227 | Tapestry LMC Stellar Wind UQFF |
 | ⬜ | PAPER_228 | Westerlund2 OB StellarWind MUGE |

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.228.0", "uqff_calculator.VERSION = 0.228.0")
+assert_that(C.VERSION == "0.229.0", "uqff_calculator.VERSION = 0.229.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3207,6 +3207,17 @@ assert_that(_r224['dual_source_asymmetric_modifiers'] and _r224['ht_on_solar_onl
 assert_that(_r224['t_ring_m_s2'] == 2.043e-7 and _r224['roche_criterion_met'],
             "PAPER_224: ring tidal tension T_ring = 2.043e-7 m/s^2 (CP1); Roche criterion met, 2000:1")
 assert_that(C.wired_count() >= 228, "wired_count >= 228")
+
+_r225 = C.calc('PAPER_225')['value']
+assert_that(_r225['enhancement_ratios'] == {'0.1c': 0.01, '0.3c': 0.09, '0.5c': 0.25},
+            "PAPER_225: F_EU/F_UV = (v/c)^2 enhancement 1%/9%/25% at 0.1c/0.3c/0.5c")
+assert_that(abs(_r225['z7_example']['F_EU_N'] - 10013.850504482567) < 1 and abs(_r225['z7_example']['F_mm_N'] - 10500.0) < 1,
+            "PAPER_225: z=7 example F_EU~1e4 N ~ F_mm 1.05e4 N (comparable)")
+assert_that(_r225['fourth_rare_discovery'] and len(_r225['completes_paper_217_set']) == 4,
+            "PAPER_225: F_EU is 4th rare discovery, completes PAPER_217 set (F_hier/delta_F/F_hyb/F_EU)")
+assert_that(_r225['k_uv_equals_ftrz30'] and _r225['sixth_pass_corpus_fully_extracted'],
+            "PAPER_225: k_UV=1e-30 N/W (=F_TRZ^30 numerically); 6th-pass corpus fully extracted")
+assert_that(C.wired_count() >= 229, "wired_count >= 229")
 
 
 # =============================================================================

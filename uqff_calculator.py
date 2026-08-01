@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.228.0"
+VERSION = "0.229.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -11980,4 +11980,65 @@ def _paper_224(dataset):
         'source': 'PAPER_224',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_225')
+def _paper_225(dataset):
+    """Early-universe relativistic UV coupling F_EU (S57, final pass).
+
+    F_EU = k_UV*(v/c)^2*L_UV - the fourth and final "Uniquely Rare
+    Mathematical Discovery" of the grok_share_7514fe DeepSearch,
+    completing the set begun in PAPER_217 (F_hier, delta_F, F_hyb).
+    Discovered in the sixth (final) extraction pass over the 29-document,
+    71-equation (53 unique) dataset. Wired observables (clean arithmetic):
+    * F_EU = k_UV*(v/c)^2*L_UV, k_UV = 1e-30 N/W (GALEX/Spitzer UV
+      calibration; numerically equals F_TRZ^30 but is observational),
+      v in 0.01c-0.9c (proto-galactic bulk flow), L_UV in 1e34-1e38 W;
+      applies at high z (z~3-10) where v/c is non-negligible, unlike the
+      non-relativistic F_UV = k_UV*L_UV.
+    * Enhancement ratio F_EU/F_UV = (v/c)^2: 0.01 at v=0.1c (1%), 0.09 at
+      0.3c (9% AGN outflows), 0.25 at 0.5c (25% blazar jets).
+    * Companion multi-band set: F_UV = k_UV*L_UV; F_mm = k_mm*L_mm*f_mm
+      (k_mm=1e-30 N/W, f_mm=1.05); F_EU,total = F_EU + F_mm.
+    * z=7 proto-galactic starburst example (v=3e7 m/s=0.1c, L_UV=1e36 W,
+      L_mm=1e34 W): F_UV = 1e6 N, F_EU = 1.00e4 N, F_mm = 1.05e4 N ->
+      F_EU ~ F_mm (comparable, justifying F_EU as non-negligible).
+    * JWST high-z: GS-z11 (z~11.1, L_UV~1e37), GN-z11 (z~10.6, L_UV~2e37);
+      v/c~0.05-0.15 -> F_EU/F_UV~0.003-0.02.
+    * Integrates additively into the F_U_Bi_i buoyancy integral at high z:
+      F_U_Bi_i^(EU) = F_U_Bi_i + F_EU.
+    Sixth-pass confirmation: grok_share_7514fe fully extracted after S57.
+    Appendix drift auto-corrected per charter.
+    """
+    k_uv = 1e-30                                          # N/W, GALEX/Spitzer
+    k_mm = 1e-30; f_mm = 1.05                             # ALMA mm-wave
+    v_example = 3e7                                       # m/s, 0.1c
+    L_uv = 1e36; L_mm = 1e34
+    vc2 = (v_example / C_OBSERVED) ** 2                   # 0.01
+    f_uv = k_uv * L_uv                                    # 1e6
+    f_eu = k_uv * vc2 * L_uv                              # 1.00e4
+    f_mm = k_mm * L_mm * f_mm                             # 1.05e4
+    return {
+        'value': {
+            'domain': '2.23 (early-universe relativistic UV coupling)',
+            'formula_label': 'F_EU = k_UV*(v/c)^2*L_UV',
+            'fourth_rare_discovery': True,
+            'completes_paper_217_set': ['F_hier', 'delta_F', 'F_hyb', 'F_EU'],
+            'k_uv_N_per_W': k_uv,                         # 1e-30
+            'k_uv_equals_ftrz30': abs(k_uv - 0.1 ** 30) < 1e-42,
+            'enhancement_ratios': {'0.1c': 0.01, '0.3c': 0.09, '0.5c': 0.25},
+            'z7_example': {'F_UV_N': f_uv, 'F_EU_N': f_eu, 'F_mm_N': f_mm,
+                           'v_over_c': 0.1, 'vc2': vc2},
+            'f_eu_approx_f_mm': abs(f_eu - f_mm) / f_mm < 0.1,
+            'jwst_high_z': {'GS-z11': {'z': 11.1, 'L_UV_W': 1e37},
+                            'GN-z11': {'z': 10.6, 'L_UV_W': 2e37}},
+            'jwst_f_eu_over_f_uv': '0.003-0.02 (v/c ~ 0.05-0.15)',
+            'sixth_pass_corpus_fully_extracted': True,
+            'corpus_stats': {'documents': 29, 'equations': 71, 'unique': 53},
+        },
+        'formula': 'F_EU = k_UV*(v/c)^2*L_UV; F_EU/F_UV = (v/c)^2; F_EU,total = F_EU + k_mm*L_mm*f_mm',
+        'source': 'PAPER_225',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

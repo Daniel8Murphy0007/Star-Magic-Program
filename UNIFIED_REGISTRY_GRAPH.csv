@@ -1072,3 +1072,5 @@ observable,ngc1275_cold_filaments_mfil,paper,PAPER_223,M_fil filaments
 primitive,B_CRIT,observable,saturn_dual_source_gravity,(1-B/B_crit) on Saturn
 observable,saturn_dual_source_gravity,paper,PAPER_224,dual-source gravity
 observable,saturn_ring_tidal_tension,paper,PAPER_224,T_ring
+observable,early_universe_relativistic_uv_feu,paper,PAPER_225,F_EU 4th rare discovery
+observable,early_universe_relativistic_uv_feu,observable,rare_math_discoveries_cgm,completes PAPER_217 set

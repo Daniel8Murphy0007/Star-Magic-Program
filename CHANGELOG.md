@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.229.0] — 2026-07-31 — BAND 1: PAPER_225 — EARLY-UNIVERSE RELATIVISTIC UV (CLEAN)
+
+### Added
+- **PAPER_225 wired** (✓ CLEAN, no ruling): early-universe relativistic UV
+  coupling `F_EU = k_UV·(v/c)²·L_UV` — the fourth and final "Uniquely Rare
+  Mathematical Discovery" of the DeepSearch, completing the set begun in
+  PAPER_217 (F_hier, ΔF, F_hyb + now F_EU). Applies at high z (z~3-10) where
+  proto-galactic bulk flows reach v~0.1-0.5c, making the (v/c)² correction
+  non-negligible (unlike the non-relativistic F_UV = k_UV·L_UV). Enhancement
+  F_EU/F_UV = (v/c)²: 1% at 0.1c, 9% at 0.3c, 25% at 0.5c. z=7 starburst example:
+  F_UV = 1e6 N, F_EU = 1.00e4 N, F_mm = 1.05e4 N (F_EU ≈ F_mm — comparable,
+  justifying inclusion). k_UV = 1e-30 N/W (GALEX/Spitzer; numerically = F_TRZ³⁰).
+  Sixth-pass confirmation: the grok_share_7514fe corpus (29 docs, 71 equations,
+  53 unique) is fully extracted after Session 57.
+- Clean arithmetic throughout — no worked-example drift, no ruling filed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1461 → 1466 (+5). Registry 510 rows / 1075 edges / 229 ledgers.
+
+---
+
 ## [0.228.0] — 2026-07-31 — BAND 1: PAPER_224 — SATURN DUAL-SOURCE GRAVITY
 
 ### Added

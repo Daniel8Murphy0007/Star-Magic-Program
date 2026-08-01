@@ -2503,3 +2503,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1461/0. Registry 509 rows / 1073 edges / 228 ledgers. Campaign: 228/2,255 (11 ✓, 217 ⚠). Next: PAPER_225.
 
 ---
+
+## 2026-07-31 — v0.229.0 — BAND 1: PAPER_225 (CLEAN)
+
+- PAPER_225 wired (✓ CLEAN, no ruling): early-universe relativistic UV coupling F_EU=k_UV·(v/c)²·L_UV — 4th and final rare discovery completing PAPER_217 set (F_hier/ΔF/F_hyb/F_EU). High-z (z~3-10) where v~0.1-0.5c; enhancement (v/c)²=1%/9%/25% at 0.1c/0.3c/0.5c. z=7 example F_UV=1e6, F_EU=1.00e4, F_mm=1.05e4 N (F_EU≈F_mm). k_UV=1e-30 N/W (=F_TRZ³⁰ numerically). 6th-pass corpus (29 docs/71 eqs/53 unique) fully extracted after S57. Clean arithmetic. Appendix drift auto-corrected.
+- First ✓ CLEAN paper of the fifth/sixth-pass system block (12th overall ✓).
+- Gate 1466/0. Registry 510 rows / 1075 edges / 229 ledgers. Campaign: 229/2,255 (12 ✓, 217 ⚠). Next: PAPER_226.
+
+---

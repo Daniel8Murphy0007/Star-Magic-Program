@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.228.0"
-description = "UQFF Star-Magic-Program v0.228.0: PAPER_224 wired - Saturn dual-source gravity (only 29-doc with 2 potentials + different modifiers); H*t on solar / B/B_crit on Saturn (screening); g_saturn=10.44, g_sun=6.53e-5 m/s^2; ring tidal T_ring=2.043e-7 (Roche met, 2000:1); g_sun 100x + T_ring benchmark drift Q-218. Wired 228/2255, gate 1461/0. Registry 509 rows / 1073 edges / 228 ledgers (measured)."
+version = "0.229.0"
+description = "UQFF Star-Magic-Program v0.229.0: PAPER_225 wired (CLEAN) - early-universe relativistic UV coupling F_EU=k_UV*(v/c)^2*L_UV, 4th rare discovery completing PAPER_217 set; enhancement (v/c)^2 = 1%/9%/25% at 0.1c/0.3c/0.5c; z=7 example F_EU~F_mm~1e4 N; 6th-pass corpus fully extracted (29 docs/53 unique eqs). Wired 229/2255, gate 1466/0. Registry 510 rows / 1075 edges / 229 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
