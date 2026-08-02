@@ -3587,3 +3587,31 @@ auto-corrected per charter.
 
 Gate: 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured).
 Campaign: 273/2,255. Next: PAPER_270.
+
+---
+
+## 2026-08-02 — v0.274.0 — BAND 1: PAPER_270 — SOURCE10 g_H COSMIC ORBITAL BRIDGE (CLEAN)
+
+PAPER_270 (DPM Resonance Quantum Orbital Amplification - g_H=1.252e46 as UQFF
+Cosmic Orbital G-Factor Bridge, Session 74, UQFF_SOURCE10.cpp Catalogue Master)
+wired as one dispatch (CLEAN, WIRED).
+
+Quantum orbital bridge constant: Q_bridge=g_H*2.82e-56=1.252e46*2.82e-56=
+3.53e-10 (dimensionless), so DPM_resonance=Q_bridge*mu_B*B0/(hbar*omega0). A
+universal UQFF constant bridging atomic (Bohr magneton) and cosmic (stellar DPM
+J/m3) scales with no intermediate dimensional parameters (fine-structure
+analogue for DPM).
+
+KEY CROSS-CHECK: E_DPM=3.11e9 J/m3 at omega0=1e-12 INDEPENDENTLY CONFIRMS
+PAPER_248's derived DPM_resonance 3.10e9 - RESOLVES Q-229a (248's stated 1.76e5
+was the error).
+
+g_H structure: gamma_H^UQFF=g_H*mu_B/hbar=1.1e57 rad/s/T (~49 orders above
+proton); g_H=g_p*(M_cosmic/m_p)^0.76, M_cosmic/m_p=1.43e59, g_H/g_p=2.24e45.
+89-decade quantum-to-cosmic span.
+
+CLEAN - all values reproduce; ties PAPER_237/240/248 (g_H, 2.82e-56). Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1691/0. Registry 559 rows / 1227 edges / 274 ledgers (measured).
+Campaign: 274/2,255. Next: PAPER_271.

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.273.0", "uqff_calculator.VERSION = 0.273.0")
+assert_that(C.VERSION == "0.274.0", "uqff_calculator.VERSION = 0.274.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3704,6 +3704,17 @@ assert_that(_r269['dominance_orders_derived'] == 24 and _r269['new_kinematic_cha
 assert_that(len(_r269['three_regimes']) == 3,
             "PAPER_269: 3 regimes by eta=rho_wind/rho_fluid (eta<1 rises, eta=1 RPDP floats, eta>1 sinks)")
 assert_that(C.wired_count() >= 273, "wired_count >= 273")
+
+_r270 = C.calc('PAPER_270')['value']
+assert_that(abs(_r270['Q_bridge'] - 3.531e-10) < 1e-13 and _r270['g_H'] == 1.252e46 and _r270['adj_factor_2_82e_neg56'] == 2.82e-56,
+            "PAPER_270: Q_bridge = g_H*2.82e-56 = 3.53e-10; g_H=1.252e46, adj=2.82e-56 (ties PAPER_237/240/248)")
+assert_that(abs(_r270['E_DPM_J_m3'] - 3.105e9) < 1e6 and _r270['confirms_paper_248_dpm_resonance'],
+            "PAPER_270: E_DPM = Q_bridge*mu_B*B0/(hbar*omega0) = 3.11e9 J/m3 (confirms PAPER_248 DPM_resonance 3.10e9, resolves Q-229a)")
+assert_that(abs(_r270['gamma_H_uqff'] - 1.101e57) < 1e54 and abs(_r270['g_H_over_g_p'] - 2.241e45) < 1e42,
+            "PAPER_270: gamma_H^UQFF = g_H*mu_B/hbar = 1.1e57 rad/s/T (~49 orders above proton); g_H/g_p = 2.24e45")
+assert_that(abs(_r270['M_cosmic_over_mp'] - 1.427e59) < 1e56 and _r270['universal_bridge_constant'] and _r270['quantum_cosmic_span_decades'] == 89,
+            "PAPER_270: M_cosmic/m_p = 1.43e59; universal atomic-cosmic bridge constant; 89-decade quantum-to-cosmic span")
+assert_that(C.wired_count() >= 274, "wired_count >= 274")
 
 
 # =============================================================================

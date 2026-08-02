@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.274.0] — 2026-08-02 — BAND 1: PAPER_270 — SOURCE10 g_H COSMIC ORBITAL BRIDGE (CLEAN)
+
+### Added
+- **PAPER_270 dispatch** — Source10 DPM resonance g_H cosmic orbital bridge constant (Session 74, UQFF_SOURCE10.cpp).
+  - **Quantum orbital bridge constant:** Q_bridge = g_H·2.82e-56 = 1.252e46·2.82e-56 = 3.53e-10 (dimensionless), so DPM_resonance = Q_bridge·μ_B·B0/(ℏ·ω0). A universal UQFF constant bridging atomic (Bohr magneton) and cosmic (stellar DPM J/m³) scales with no intermediate dimensional parameters — a fine-structure-constant analogue for DPM.
+  - **Key cross-check:** E_DPM = 3.11e9 J/m³ at ω0=1e-12 **independently confirms PAPER_248's derived DPM_resonance 3.10e9 — resolving Q-229(a)** (248's stated 1.76e5 was the error).
+  - **g_H structure:** γ_H^UQFF = g_H·μ_B/ℏ = 1.1e57 rad/s/T (~49 orders above the proton); g_H = g_p·(M_cosmic/m_p)^0.76, with M_cosmic/m_p = 1.43e59, g_H/g_p = 2.24e45. Total 89-decade quantum-to-cosmic span.
+- Gate +4 assertions (1686 → 1691, 0 failures).
+- Registry: +1 row (559), +3 edges (1227), +1 citation (274).
+
+### Notes
+- CLEAN — all values reproduce; ties PAPER_237/240/248 (g_H, 2.82e-56).
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.273.0] — 2026-08-02 — BAND 1: PAPER_269 — NGC 1792 RAM-PRESSURE DEGENERACY POINT (Q-243)
 
 ### Added

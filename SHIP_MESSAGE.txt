@@ -1,20 +1,22 @@
-v0.273.0 BAND 1: PAPER_269 wired - NGC 1792 RAM-PRESSURE DEGENERACY POINT (Q-243)
+v0.274.0 BAND 1: PAPER_270 wired - SOURCE10 g_H COSMIC ORBITAL BRIDGE (CLEAN)
 
-PAPER_269 (Supernova Ram Pressure Degeneracy Point - Kinematic Invariant in NGC
-1792 Starburst Gravity, S73, GALAXY_NGC_1792.cpp Module 19 Stellar Forge) wired
-as one dispatch (OPEN_RULING, Q-243). Third NGC 1792 paper.
+PAPER_270 (DPM Resonance Quantum Orbital Amplification - g_H=1.252e46 as UQFF
+Cosmic Orbital G-Factor Bridge, S74, UQFF_SOURCE10.cpp Catalogue Master) wired
+as one dispatch (CLEAN, WIRED).
 
-RPDP: when rho_wind=rho_fluid, term_feedback=rho_wind*v_wind^2/rho_fluid
-collapses to a density-INDEPENDENT kinematic invariant v_wind^2. For v_wind=2e6
--> g_feedback=4e12 m/s^2 (dominant MUGE term).
+Quantum orbital bridge constant: Q_bridge=g_H*2.82e-56=3.53e-10 (dimensionless),
+so DPM_resonance=Q_bridge*mu_B*B0/(hbar*omega0). Universal UQFF constant bridging
+atomic (Bohr magneton) and cosmic (stellar DPM J/m3) scales with no intermediate
+dimensional params (fine-structure analogue for DPM).
 
-Buoyancy neutrality at RPDP (F_buoy=0, ejecta floats); new UQFF channel pure
-kinematic momentum transfer. Three regimes by eta=rho_wind/rho_fluid.
+KEY CROSS-CHECK: E_DPM=3.11e9 J/m3 at omega0=1e-12 CONFIRMS PAPER_248's derived
+DPM_resonance 3.10e9 - RESOLVES Q-229a (248's stated 1.76e5 was the error).
 
-Q-243 (extends Q-242): dominance ratio uses term1=G*M0/r^2, stated ~7.35e-11
-(same NGC 1792 error as Q-242); correct 2.32e-12 -> R_RPDP=1.73e24 (24 orders)
-not paper's 5.4e22. The invariant g=v_wind^2=4e12 is exact/clean. Wired
-derived-correct values. Appendix drift auto-corrected.
+g_H: gamma_H^UQFF=g_H*mu_B/hbar=1.1e57 (~49 orders above proton); g_H=g_p*
+(M_cosmic/m_p)^0.76, M_cosmic/m_p=1.43e59, g_H/g_p=2.24e45; 89-decade span.
 
-Gate: 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured).
-Campaign: 273/2,255. Next: PAPER_270.
+CLEAN - all values reproduce; ties PAPER_237/240/248. Appendix drift
+auto-corrected per charter.
+
+Gate: 1691/0. Registry 559 rows / 1227 edges / 274 ledgers (measured).
+Campaign: 274/2,255. Next: PAPER_271.

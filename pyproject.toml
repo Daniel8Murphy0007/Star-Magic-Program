@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.273.0"
-description = "UQFF Star-Magic-Program v0.273.0: PAPER_269 wired (Q-243) - NGC 1792 SN Ram Pressure Degeneracy Point; at rho_wind=rho_fluid the feedback becomes density-independent kinematic invariant g=v_wind^2=4e12 m/s^2 (dominant term); buoyancy neutral, 3 regimes. Wired 273/2255, gate 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured)."
+version = "0.274.0"
+description = "UQFF Star-Magic-Program v0.274.0: PAPER_270 wired (CLEAN) - Source10 g_H cosmic orbital bridge; Q_bridge=g_H*2.82e-56=3.53e-10, E_DPM=3.11e9 J/m3 (confirms PAPER_248, resolves Q-229a); gamma_H=1.1e57, 89-decade span. Wired 274/2255, gate 1691/0. Registry 559 rows / 1227 edges / 274 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
