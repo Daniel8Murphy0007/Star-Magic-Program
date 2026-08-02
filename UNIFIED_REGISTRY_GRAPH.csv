@@ -1087,3 +1087,5 @@ observable,ngc2525_negative_sn_massloss,paper,PAPER_230,only negative MUGE term
 primitive,H0_KM_PER_S_PER_MPC,observable,hudf_z35_double_interaction_muge,H(z=3.5)
 primitive,F_TRZ,observable,hudf_z35_double_interaction_muge,(1+f_TRZ) in a_Ug
 observable,hudf_z35_double_interaction_muge,paper,PAPER_231,HUDF z=3.5 MUGE
+observable,ngc1792_stellar_forge_starburst,paper,PAPER_232,sSFR + SN wind MUGE
+observable,ngc1792_stellar_forge_starburst,observable,tapestry_lmc_muge,wind-feedback family (Q-220 cross-ref)

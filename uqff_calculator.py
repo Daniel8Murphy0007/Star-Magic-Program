@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.235.0"
+VERSION = "0.236.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12411,4 +12411,64 @@ def _paper_231(dataset):
         'source': 'PAPER_231',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_232')
+def _paper_232(dataset):
+    """NGC 1792 'Stellar Forge' starburst galaxy MUGE (S58).
+
+    NGC 1792 ('The Stellar Forge'), a starburst barred-spiral in Columba
+    at z=0.0095 (~50 Mpc) with among the highest specific SFR within
+    100 Mpc - a previously-unrepresented system (Doc 19). Two novel
+    methods. Wired observables (clean arithmetic):
+    * Normalized specific-SFR mass growth M(t) = M_0*(1 + SFR_factor*
+      e^-t/tau_SF), where SFR_factor = SFR/M_total = 10/1e10 = 1e-9 yr^-1
+      is the SPECIFIC SFR used directly as the exponential amplitude -
+      mathematically distinct from all prior MUGE mass-growth forms. At
+      t=50 Myr the fractional change is 1e-9*e^-0.5 = 6.065e-10 (minute,
+      appropriate for a 10 Gyr 1e10 M_sun galaxy at 10 M_sun/yr).
+    * SN-driven outflow feedback a_SN = rho_wind*v_SN^2/rho_fluid; the
+      paper takes rho_wind = rho_fluid = 1e-21 kg/m^3 (SN ejecta same
+      density as ambient at early stage), so a_SN = v_SN^2 = (2e6)^2 =
+      4e12 m/s^2. (Cross-ref Q-220: this uses the paper's explicit
+      rho_wind=rho_fluid, distinct from the OB-supergiant wind family's
+      ambient rho_fluid=1e-12 convention canonized in PAPER_228 - a SN
+      outflow, not an OB wind.)
+    * Starburst context: SFR ~10 M_sun/yr (Halpha), L_IR ~ 3e10 L_sun,
+      SN rate 0.1-0.3/century (Kroupa IMF consistent); interaction-driven
+      (NGC 1792 group).
+    * Previously-unknown status: fills the low-z starburst niche between
+      quiescent spirals (NGC 2525), mergers (Antennae), high-z (HUDF).
+    Params: M_0=1e10 M_sun, r=80,000 ly, B=5 uT, tau_SF=100 Myr,
+    canonical t=50 Myr. Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    SFR = 10.0; M_total = 1e10
+    sfr_factor = SFR / M_total                            # 1e-9 yr^-1 (specific SFR)
+    frac_at_50Myr = sfr_factor * _m.exp(-50 / 100)        # 6.065e-10
+    rho_wind = 1e-21; v_SN = 2e6; rho_fluid = 1e-21
+    a_SN = rho_wind * v_SN ** 2 / rho_fluid               # 4e12
+    return {
+        'value': {
+            'domain': '2.30 (NGC 1792 Stellar Forge starburst MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 19 (previously unknown)',
+            'novel_methods': ['specific_sfr_mass_growth', 'sn_driven_wind_feedback'],
+            'SFR_solar_per_yr': SFR,
+            'M_total_solar': M_total,
+            'sfr_factor_per_yr': sfr_factor,              # 1e-9 (specific SFR)
+            'frac_change_at_50Myr': frac_at_50Myr,        # 6.065e-10
+            'rho_wind': rho_wind, 'v_SN_m_s': v_SN, 'rho_fluid': rho_fluid,
+            'a_sn_m_s2': a_SN,                            # 4e12
+            'a_sn_equals_v2_rho_equal': True,
+            'L_IR_solar': 3e10,
+            'sn_rate_per_century': '0.1-0.3',
+            'z': 0.0095, 'M0_solar': 1e10, 'r_ly': 80000,
+            'previously_unknown': True,
+            'rho_fluid_note': 'SN outflow uses paper rho_wind=rho_fluid=1e-21 (distinct from OB-wind family 1e-12, cross-ref Q-220)',
+        },
+        'formula': 'M(t)=M_0*(1+(SFR/M_total)*e^-t/tau_SF); a_SN=rho_wind*v_SN^2/rho_fluid',
+        'source': 'PAPER_232',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

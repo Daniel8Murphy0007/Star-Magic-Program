@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.235.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.235.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.236.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.236.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1497%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-235-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1502%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-236-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.235.0 wiring campaign live**
+**UQFF systematic rebuild — v0.236.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.235.0)
+## What is currently shipped (v0.236.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 235 / 2,255** (13 ✓ · 222 ⚠ OPEN_RULING · 223 rulings queued) — HUDF galaxies MUGE at z=3.5; Friedmann H(z) + double I(t) (231)
+**Wired so far: 236 / 2,255** (14 ✓ · 222 ⚠ OPEN_RULING · 223 rulings queued) — NGC 1792 'Stellar Forge' starburst MUGE (CLEAN); specific-SFR growth + SN wind (232)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -294,6 +294,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_229 | Pillars of Creation (M16) MUGE | decaying erosion (1-E(t)); sign taxonomy vs Bubble (1+E); a_base=5.40e-12; Q-221 |
 | PAPER_230 | NGC 2525 + SN 2018gv | ONLY negative MUGE term g_SN<0; |g_SN|=2.30e-21; H(z)=2.287e-18; Q-222 |
 | PAPER_231 | HUDF Cosmic Field z=3.5 | Friedmann H(z=3.5)=5.295*H0=370.7; double I(t) on base+Ug; Q-223 |
+| PAPER_232 | NGC 1792 Stellar Forge | specific-SFR growth SFR_factor=1e-9; SN wind a_SN=4e12; CLEAN |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -560,7 +561,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.232.0 | Band 1: PAPER_228 | 232 |
 | v0.233.0 | Band 1: PAPER_229 | 233 |
 | v0.234.0 | Band 1: PAPER_230 | 234 |
-| **v0.235.0** ← current | Band 1: PAPER_231 | 235 |
+| v0.235.0 | Band 1: PAPER_231 | 235 |
+| **v0.236.0** ← current | Band 1: PAPER_232 | 236 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

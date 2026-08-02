@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.235.0", "uqff_calculator.VERSION = 0.235.0")
+assert_that(C.VERSION == "0.236.0", "uqff_calculator.VERSION = 0.236.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3286,6 +3286,17 @@ assert_that(abs(_r231['hz_t_dominant'] - 4.549476062856132) < 1e-9,
 assert_that(_r231['double_interaction_modulation'] and abs(_r231['I_at_0p5gyr'] - 0.030326532985631673) < 1e-9,
             "PAPER_231: double I(t) on base+Ug (novel); I(0.5 Gyr)=0.05*e^-0.5=0.0303")
 assert_that(C.wired_count() >= 235, "wired_count >= 235")
+
+_r232 = C.calc('PAPER_232')['value']
+assert_that(_r232['sfr_factor_per_yr'] == 1e-9,
+            "PAPER_232: specific-SFR amplitude SFR_factor = SFR/M_total = 10/1e10 = 1e-9 yr^-1")
+assert_that(abs(_r232['frac_change_at_50Myr'] - 6.065306597126334e-10) < 1e-18,
+            "PAPER_232: M(t) fractional change at 50 Myr = 1e-9*e^-0.5 = 6.065e-10")
+assert_that(_r232['a_sn_m_s2'] == 4e12 and _r232['a_sn_equals_v2_rho_equal'],
+            "PAPER_232: a_SN = rho_wind*v_SN^2/rho_fluid = v_SN^2 = 4e12 m/s^2 (rho_wind=rho_fluid=1e-21)")
+assert_that(len(_r232['novel_methods']) == 2 and _r232['previously_unknown'],
+            "PAPER_232: 2 novel methods (specific-SFR growth, SN wind feedback); previously-unknown system")
+assert_that(C.wired_count() >= 236, "wired_count >= 236")
 
 
 # =============================================================================

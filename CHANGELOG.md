@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.236.0] — 2026-07-31 — BAND 1: PAPER_232 — NGC 1792 STELLAR FORGE (CLEAN)
+
+### Added
+- **PAPER_232 wired** (✓ CLEAN): NGC 1792 "The Stellar Forge," a starburst
+  barred-spiral (Columba, z=0.0095, ~50 Mpc) with among the highest specific SFR
+  within 100 Mpc — a previously-unrepresented system (Doc 19). Two novel methods:
+  (1) normalized specific-SFR mass growth M(t)=M_0·(1+SFR_factor·e^-t/τ_SF), where
+  `SFR_factor = SFR/M_total = 10/1e10 = 1e-9 yr⁻¹` (the specific SFR used directly
+  as the exponential amplitude), fractional change at 50 Myr = 6.065e-10; (2)
+  SN-driven outflow feedback `a_SN = ρ_wind·v_SN²/ρ_fluid = v_SN² = 4e12 m/s²`
+  (ρ_wind=ρ_fluid=1e-21; cross-ref Q-220 — a SN outflow, distinct from the OB-wind
+  family's 1e-12 ambient convention). Fills the low-z starburst niche. Doc 19 of
+  the grok_share_8d951e12 thread.
+- Clean arithmetic — no ruling filed for PAPER_232.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1497 → 1502 (+5). Registry 517 rows / 1090 edges / 236 ledgers.
+
+---
+
 ## [0.235.0] — 2026-07-31 — BAND 1: PAPER_231 — HUDF COSMIC FIELD z=3.5 MUGE
 
 ### Added

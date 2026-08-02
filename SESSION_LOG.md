@@ -2559,3 +2559,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1497/0. Registry 516 rows / 1088 edges / 235 ledgers. Campaign: 235/2,255 (13 ✓, 222 ⚠). Next: PAPER_232.
 
 ---
+
+## 2026-07-31 — v0.236.0 — BAND 1: PAPER_232 (CLEAN)
+
+- PAPER_232 wired (✓ CLEAN): NGC 1792 'Stellar Forge' starburst barred-spiral (Columba z=0.0095), previously-unknown Doc 19. 2 novel methods: (1) specific-SFR mass growth SFR_factor=SFR/M_total=10/1e10=1e-9 yr⁻¹ (sSFR as amplitude), frac change 50 Myr=6.065e-10; (2) SN outflow a_SN=ρ_wind·v_SN²/ρ_fluid=v_SN²=4e12 m/s² (ρ_wind=ρ_fluid=1e-21, cross-ref Q-220 — SN outflow ≠ OB-wind family). Fills low-z starburst niche. Doc 19 of 8d951e12. Clean arithmetic. Appendix drift auto-corrected.
+- Gate 1502/0. Registry 517 rows / 1090 edges / 236 ledgers. Campaign: 236/2,255 (14 ✓, 222 ⚠). Next: PAPER_233.
+
+---
