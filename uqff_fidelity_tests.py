@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.272.0", "uqff_calculator.VERSION = 0.272.0")
+assert_that(C.VERSION == "0.273.0", "uqff_calculator.VERSION = 0.273.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3693,6 +3693,17 @@ assert_that(abs(_r268['eps_mod'] - 5.797e-6) < 1e-8 and _r268['eps_mod_ppm'] == 
 assert_that(_r268['corrects_paper_246_gyr_form'] and _r268['gw_band_hz'] == 1e-17,
             "PAPER_268: corrects PAPER_246's Gyr-number traveling-wave form; ultra-low-freq 1e-17 Hz GW band")
 assert_that(C.wired_count() >= 272, "wired_count >= 272")
+
+_r269 = C.calc('PAPER_269')['value']
+assert_that(_r269['g_feedback_rpdp'] == 4e12 and _r269['density_cancels_exactly'] and _r269['buoyancy_neutral_at_rpdp'],
+            "PAPER_269: RPDP kinematic invariant g_feedback = v_wind^2 = (2e6)^2 = 4e12 m/s^2 (density cancels; buoyancy neutral)")
+assert_that(abs(_r269['term1_derived'] - 2.317e-12) < 1e-14 and abs(_r269['dominance_ratio_derived'] - 1.73e24) < 1e22,
+            "PAPER_269: term1 = G*M0/r^2 = 2.32e-12 (paper 7.35e-11, extends Q-242); R_RPDP = 4e12/2.32e-12 = 1.73e24 (24 orders)")
+assert_that(_r269['dominance_orders_derived'] == 24 and _r269['new_kinematic_channel'],
+            "PAPER_269: RPDP dominates by 24 orders (paper claims 22 via wrong term1); new pure-kinematic gravitational channel")
+assert_that(len(_r269['three_regimes']) == 3,
+            "PAPER_269: 3 regimes by eta=rho_wind/rho_fluid (eta<1 rises, eta=1 RPDP floats, eta>1 sinks)")
+assert_that(C.wired_count() >= 273, "wired_count >= 273")
 
 
 # =============================================================================

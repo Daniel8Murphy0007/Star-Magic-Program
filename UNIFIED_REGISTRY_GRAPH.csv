@@ -1220,3 +1220,6 @@ primitive,C_OBSERVED,observable,ngc1792_dual_oscillatory_hubble_slowmode,omega_o
 observable,ngc1792_dual_oscillatory_hubble_slowmode,paper,PAPER_268,dual oscillatory mode Hubble slow mode
 observable,ngc1792_dual_oscillatory_hubble_slowmode,observable,ngc1792_ssfr_starburst_buoyancy_coherence,NGC 1792 companion (PAPER_267)
 observable,ngc1792_dual_oscillatory_hubble_slowmode,observable,muge_dualmode_oscillatory_gravity,corrects Gyr traveling-wave form (PAPER_246)
+primitive,G_OBSERVED,observable,ngc1792_ram_pressure_degeneracy_point,term1=G*M0/r^2 comparison
+observable,ngc1792_ram_pressure_degeneracy_point,paper,PAPER_269,RPDP kinematic invariant g=v_wind^2
+observable,ngc1792_ram_pressure_degeneracy_point,observable,ngc1792_ssfr_starburst_buoyancy_coherence,same NGC 1792 term1 error (PAPER_267 Q-242)

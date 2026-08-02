@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.273.0] — 2026-08-02 — BAND 1: PAPER_269 — NGC 1792 RAM-PRESSURE DEGENERACY POINT (Q-243)
+
+### Added
+- **PAPER_269 dispatch** — NGC 1792 SN Ram Pressure Degeneracy Point kinematic invariant (Session 73, third NGC 1792 paper).
+  - **RPDP:** when ρ_wind = ρ_fluid, the SN feedback term term_feedback = ρ_wind·v_wind²/ρ_fluid collapses to a density-INDEPENDENT kinematic invariant v_wind². For v_wind=2e6 → g_feedback = 4e12 m/s² — the numerically dominant MUGE term.
+  - **Buoyancy neutrality:** at the RPDP Archimedes F_buoy = (ρ_fluid−ρ_wind)·V·g = 0; ejecta "floats", driven purely by kinematic ram pressure. New UQFF channel: pure kinematic momentum transfer.
+  - **Three regimes** by η=ρ_wind/ρ_fluid: η<1 rises, η=1 RPDP floats, η>1 sinks.
+- Gate +4 assertions (1681 → 1686, 0 failures).
+- Registry: +1 row (558), +3 edges (1224), +1 citation (273).
+
+### Ruling filed
+- **Q-243 (extends Q-242)** — the dominance-ratio comparison uses term1=G·M0/r², which the paper states ~7.35e-11 (same NGC 1792 error as PAPER_267 Q-242); the correct value is 2.32e-12, so R_RPDP = 4e12/2.32e-12 = 1.73e24 (24 orders), not the paper's 5.4e22 (22 orders). The RPDP kinematic invariant g=v_wind²=4e12 is exact/clean. Wired the derived-correct values.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.272.0] — 2026-08-02 — BAND 1: PAPER_268 — NGC 1792 DUAL OSCILLATORY HUBBLE SLOW MODE (CLEAN)
 
 ### Added

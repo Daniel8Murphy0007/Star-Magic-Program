@@ -1,21 +1,20 @@
-v0.272.0 BAND 1: PAPER_268 wired - NGC 1792 DUAL OSCILLATORY HUBBLE SLOW MODE (CLEAN)
+v0.273.0 BAND 1: PAPER_269 wired - NGC 1792 RAM-PRESSURE DEGENERACY POINT (Q-243)
 
-PAPER_268 (Dual Oscillatory Mode Superposition - Hubble Slow Mode Starburst GW
-Amplitude Modulation in NGC 1792, S73, GALAXY_NGC_1792.cpp term_osc2 dimensional
-fix) wired as one dispatch (CLEAN, WIRED). Companion to PAPER_267.
+PAPER_269 (Supernova Ram Pressure Degeneracy Point - Kinematic Invariant in NGC
+1792 Starburst Gravity, S73, GALAXY_NGC_1792.cpp Module 19 Stellar Forge) wired
+as one dispatch (OPEN_RULING, Q-243). Third NGC 1792 paper.
 
-Corrects a dimensional bug in term_osc2: t_Hubble_gyr=13.8 (dimensionless) ->
-t_Hubble=13.8e9*3.15576e7=4.352e17 s, giving omega_H=2pi/t_Hubble=1.44e-17 rad/s.
+RPDP: when rho_wind=rho_fluid, term_feedback=rho_wind*v_wind^2/rho_fluid
+collapses to a density-INDEPENDENT kinematic invariant v_wind^2. For v_wind=2e6
+-> g_feedback=4e12 m/s^2 (dominant MUGE term).
 
-Two modes: fast standing wave omega_osc=2pi*c/r=2.49e-12 (T_fast~80000 yr) +
-Hubble slow mode omega_H=1.44e-17. Superposition -> amplitude envelope
-E(t)=A_osc*[2+eps_mod*cos(omega_H t)], modulation depth eps_mod=omega_H/omega_osc
-=5.8e-6 (~5.8 ppm). Detectable 1e-17 Hz GW band. Corrects PAPER_246 Gyr form.
+Buoyancy neutrality at RPDP (F_buoy=0, ejecta floats); new UQFF channel pure
+kinematic momentum transfer. Three regimes by eta=rho_wind/rho_fluid.
 
-Reproducible: t_Hubble=4.355e17 s; omega_H=1.44e-17; omega_osc=2.49e-12; T_fast=
-80000 yr; eps_mod=5.8e-6.
+Q-243 (extends Q-242): dominance ratio uses term1=G*M0/r^2, stated ~7.35e-11
+(same NGC 1792 error as Q-242); correct 2.32e-12 -> R_RPDP=1.73e24 (24 orders)
+not paper's 5.4e22. The invariant g=v_wind^2=4e12 is exact/clean. Wired
+derived-correct values. Appendix drift auto-corrected.
 
-CLEAN - all numerics reproduce. Appendix drift auto-corrected per charter.
-
-Gate: 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured).
-Campaign: 272/2,255. Next: PAPER_269.
+Gate: 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured).
+Campaign: 273/2,255. Next: PAPER_270.

@@ -3559,3 +3559,31 @@ beta_i) auto-corrected per charter.
 
 Gate: 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured).
 Campaign: 272/2,255. Next: PAPER_269.
+
+---
+
+## 2026-08-02 — v0.273.0 — BAND 1: PAPER_269 — NGC 1792 RAM-PRESSURE DEGENERACY POINT (Q-243)
+
+PAPER_269 (Supernova Ram Pressure Degeneracy Point - Kinematic Invariant in NGC
+1792 Starburst Gravity, Session 73, GALAXY_NGC_1792.cpp Module 19 Stellar Forge)
+wired as one dispatch (OPEN_RULING, Q-243). Third NGC 1792 paper.
+
+RPDP: when rho_wind=rho_fluid, the SN feedback term term_feedback=rho_wind*
+v_wind^2/rho_fluid collapses to a density-INDEPENDENT kinematic invariant
+v_wind^2. For v_wind=2e6 -> g_feedback=4e12 m/s^2 - the numerically dominant
+MUGE term.
+
+Buoyancy neutrality: at the RPDP Archimedes F_buoy=(rho_f-rho_w)*V*g=0; ejecta
+"floats", driven purely by kinematic ram pressure. New UQFF channel: pure
+kinematic momentum transfer. Three regimes by eta=rho_wind/rho_fluid (eta<1
+rises, eta=1 RPDP floats, eta>1 sinks).
+
+Q-243 (extends Q-242): the dominance-ratio comparison uses term1=G*M0/r^2, which
+the paper states ~7.35e-11 (same NGC 1792 error as PAPER_267 Q-242); the correct
+value is 2.32e-12, so R_RPDP=4e12/2.32e-12=1.73e24 (24 orders) not the paper's
+5.4e22 (22 orders). The RPDP invariant g=v_wind^2=4e12 is exact/clean. Wired the
+derived-correct values. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i)
+auto-corrected per charter.
+
+Gate: 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured).
+Campaign: 273/2,255. Next: PAPER_270.

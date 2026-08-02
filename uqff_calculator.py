@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.272.0"
+VERSION = "0.273.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15034,4 +15034,73 @@ def _paper_268(dataset):
         'source': 'PAPER_268',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_269')
+def _paper_269(dataset):
+    """NGC 1792 SN Ram Pressure Degeneracy Point - kinematic invariant (S73).
+
+    In NGC 1792 (Module 19) the SN wind density is set equal to the ISM fluid
+    density: rho_wind = rho_fluid = 1e-21 kg/m^3 - the Ram Pressure Degeneracy
+    Point (RPDP). At the RPDP the SN feedback gravity term simplifies to a
+    density-INDEPENDENT KINEMATIC INVARIANT:
+        term_feedback = rho_wind*v_wind^2/rho_fluid |_{rho_w=rho_f} = v_wind^2
+    The density ratio cancels exactly; only the outflow kinematics survive.
+
+    KINEMATIC INVARIANT (exact): g_feedback^RPDP = v_wind^2. For NGC 1792 with
+    v_wind = 2e6 m/s -> g_feedback = (2e6)^2 = 4e12 m/s^2 - the numerically
+    DOMINANT term in the full MUGE.
+
+    Buoyancy neutrality: at the RPDP, Archimedes F_buoy = (rho_fluid-rho_wind)*
+    V*g = 0 - the SN ejecta neither floats nor sinks by density contrast; the
+    only driving force is the kinematic ram pressure = v_wind^2. A new UQFF
+    channel: pure kinematic momentum transfer to the gravitational field.
+
+    Three regimes by density ratio eta = rho_wind/rho_fluid:
+      eta < 1 underdense wind -> g_feedback < v^2 (ejecta rises, outflow-quenched)
+      eta = 1 RPDP -> g_feedback = v^2 (kinematic invariant, ejecta floats)
+      eta > 1 overdense wind -> g_feedback > v^2 (ram-pressure enhanced, sinks)
+    Generalized: g_feedback(rho_SN = rho_ISM) = v_SN^2, for any density value.
+
+    Reproducible: g_feedback = v_wind^2 = 4e12 m/s^2 (exact kinematic invariant);
+    the density cancels (rho*v^2/rho = v^2 for any rho).
+
+    Q-243 (extends Q-242): the dominance-ratio comparison uses term1 = G*M0/r^2,
+    which the paper states ~7.35e-11 m/s^2 (same NGC 1792 error as PAPER_267
+    Q-242); the correct value from M0=1e10 M_sun, r=7.569e20 m is 2.32e-12, so
+    the true dominance ratio R_RPDP = 4e12/2.32e-12 = 1.73e24 (24 orders), not
+    the paper's 5.4e22 (22 orders). The RPDP kinematic invariant g_feedback =
+    v_wind^2 = 4e12 is exact and clean; only the term1-based ratio inherits the
+    Q-242 error. Wired the derived-correct term1/ratio + the exact invariant.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    v_wind = 2e6
+    g_feedback_rpdp = v_wind ** 2                         # 4e12 exact invariant
+    M0 = 1e10 * 1.989e30; r = 7.569e20
+    term1 = G * M0 / r ** 2                               # 2.32e-12 derived
+    R_rpdp = g_feedback_rpdp / term1                     # 1.73e24 derived
+    return {
+        'value': {
+            'domain': '2.67 (NGC 1792 SN ram-pressure degeneracy point kinematic invariant)',
+            'source_thread': 'Session 73 GALAXY_NGC_1792.cpp Module 19 Stellar Forge',
+            'system': 'NGC 1792',
+            'rpdp_condition': 'rho_wind = rho_fluid (both 1e-21 kg/m^3)',
+            'kinematic_invariant': 'g_feedback = v_wind^2 (density-independent)',
+            'v_wind': v_wind,
+            'g_feedback_rpdp': g_feedback_rpdp,          # 4e12 exact
+            'density_cancels_exactly': True,
+            'buoyancy_neutral_at_rpdp': True,            # F_buoy = 0
+            'term1_derived': term1,                      # 2.32e-12 (paper 7.35e-11)
+            'dominance_ratio_derived': R_rpdp,           # 1.73e24 (paper 5.4e22)
+            'dominance_orders_derived': 24,              # (paper claims 22)
+            'three_regimes': ['eta<1 rises', 'eta=1 RPDP floats', 'eta>1 sinks'],
+            'new_kinematic_channel': True,               # pure momentum transfer
+            'value_drift': 'term1 2.32e-12 vs paper 7.35e-11 (extends Q-242); R_RPDP 1.73e24 vs paper 5.4e22; invariant g=v^2=4e12 exact (Q-243)',
+        },
+        'formula': 'RPDP (rho_wind=rho_fluid): g_feedback = v_wind^2 = 4e12 m/s^2 (density-independent kinematic invariant)',
+        'source': 'PAPER_269',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

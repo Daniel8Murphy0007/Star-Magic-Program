@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.272.0"
-description = "UQFF Star-Magic-Program v0.272.0: PAPER_268 wired (CLEAN) - NGC 1792 dual oscillatory mode; term_osc2 dimensional fix -> Hubble slow mode omega_H=1.44e-17 vs fast omega_osc=2.49e-12; GW amplitude envelope modulation depth 5.8 ppm. Wired 272/2255, gate 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured)."
+version = "0.273.0"
+description = "UQFF Star-Magic-Program v0.273.0: PAPER_269 wired (Q-243) - NGC 1792 SN Ram Pressure Degeneracy Point; at rho_wind=rho_fluid the feedback becomes density-independent kinematic invariant g=v_wind^2=4e12 m/s^2 (dominant term); buoyancy neutral, 3 regimes. Wired 273/2255, gate 1686/0. Registry 558 rows / 1224 edges / 273 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

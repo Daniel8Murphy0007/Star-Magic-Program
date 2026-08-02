@@ -5675,3 +5675,11 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct ug1_base=2.32e-12 + coherence physics + reproducing params; ug1_base discrepancy flagged.
 - **Ruling needed:** confirm ug1_base=2.32e-12 (derived from stated M0/r) vs stated 7.35e-11; the sSFR coupling and coherence physics are clean.
 - Wired v0.271.0, status OPEN_RULING.
+
+## Q-243 — PAPER_269 NGC 1792 RPDP: term1 dominance ratio (extends Q-242; invariant clean)
+- Ram Pressure Degeneracy Point (rho_wind=rho_fluid): the SN feedback term becomes a density-independent kinematic invariant term_feedback = rho_wind*v_wind^2/rho_fluid = v_wind^2. For v_wind=2e6: g_feedback = 4e12 m/s^2 (exact, clean, density cancels).
+- **Drift (extends Q-242):** the dominance-ratio comparison uses term1 = G*M0/r^2, stated ~7.35e-11 m/s^2 (SAME NGC 1792 error as PAPER_267 Q-242), but the correct value from M0=1e10 M_sun (1.989e40 kg), r=7.569e20 m is 2.32e-12. So the true dominance ratio R_RPDP = 4e12/2.32e-12 = 1.73e24 (24 orders), not the paper's 5.4e22 (22 orders).
+- Reproducible and locked: g_feedback = v_wind^2 = 4e12 (exact kinematic invariant); density cancels for any rho; buoyancy neutral at RPDP (F_buoy=0); 3 regimes by eta=rho_wind/rho_fluid.
+- Wired the exact RPDP invariant + derived-correct term1 (2.32e-12) + R_RPDP (1.73e24); term1 error flagged (extends Q-242).
+- **Ruling needed:** same as Q-242 (confirm term1=2.32e-12 for NGC 1792, correcting the 7.35e-11 that appears in PAPER_267/269); the RPDP kinematic invariant g=v^2=4e12 is exact.
+- Wired v0.273.0, status OPEN_RULING.

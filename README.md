@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.272.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.272.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.273.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.273.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1681%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-272-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1686%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-273-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.272.0 wiring campaign live**
+**UQFF systematic rebuild — v0.273.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.272.0)
+## What is currently shipped (v0.273.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 272 / 2,255** (31 ✓ · 241 ⚠ OPEN_RULING · 242 rulings queued) — NGC 1792 dual oscillatory mode; dimensional fix → Hubble slow mode ω_H=1.44e-17 GW envelope modulation (5.8 ppm) (268)
+**Wired so far: 273 / 2,255** (31 ✓ · 242 ⚠ OPEN_RULING · 243 rulings queued) — NGC 1792 SN Ram Pressure Degeneracy Point; at ρ_wind=ρ_fluid feedback → density-independent invariant g=v_wind²=4e12 (269)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -331,6 +331,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_266 | HUDF Gravitational Meissner Effect | corr_B=1-B/B_crit quenches UQFF gravity at B_crit=1e11 T (SC analogy, distinct from Schwinger); HUDF unquenched benchmark; CLEAN |
 | PAPER_267 | NGC 1792 sSFR Coupling Coherence | sSFR=SFR/M0=1e-9 couples to all 3 buoyancy tiers; peak SF = peak buoyancy (same τ_SF); C=sSFR=1e-9; Q-242 |
 | PAPER_268 | NGC 1792 Dual Oscillatory Hubble Slow Mode | dimensional fix → ω_H=1.44e-17 (Hubble) vs ω_osc=2.49e-12 (fast); GW envelope modulation 5.8 ppm; CLEAN |
+| PAPER_269 | NGC 1792 Ram-Pressure Degeneracy Point | at ρ_wind=ρ_fluid feedback → density-independent invariant g=v_wind²=4e12; buoyancy neutral, 3 regimes; Q-243 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -634,7 +635,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.269.0 | Band 1: PAPER_265 | 269 |
 | v0.270.0 | Band 1: PAPER_266 | 270 |
 | v0.271.0 | Band 1: PAPER_267 | 271 |
-| **v0.272.0** ← current | Band 1: PAPER_268 | 272 |
+| v0.272.0 | Band 1: PAPER_268 | 272 |
+| **v0.273.0** ← current | Band 1: PAPER_269 | 273 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |
