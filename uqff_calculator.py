@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.271.0"
+VERSION = "0.272.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14964,4 +14964,74 @@ def _paper_267(dataset):
         'source': 'PAPER_267',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_268')
+def _paper_268(dataset):
+    """NGC 1792 dual oscillatory mode - Hubble slow mode GW modulation (S73).
+
+    Identifies and corrects a dimensional bug in GALAXY_NGC_1792.cpp term_osc2:
+    the original used t_Hubble_gyr = 13.8 (a dimensionless Gyr NUMBER) giving
+    2*pi/13.8 = 0.455 rad/Gyr - a dimensionally incorrect angular frequency.
+    Canonical fix: t_Hubble = 13.8e9 yr * 3.15576e7 s/yr = 4.352e17 s, so
+        omega_H = 2*pi/t_Hubble = 1.44e-17 rad/s (Hubble angular frequency).
+
+    After the fix, the two oscillatory terms produce modes at DISTINCT frequency
+    scales:
+      term_osc1 (fast standing wave): 2*A_osc*cos(k_osc x)*cos(omega_osc t),
+        omega_osc = 2*pi*c/r = 2.49e-12 rad/s; period T_fast = 2*pi/omega_osc =
+        2.53e12 s ~= 80,000 yr (galactic light-crossing).
+      term_osc2 (Hubble slow mode traveling wave): omega_H*A_osc*cos(k_osc x -
+        omega_osc t), amplitude modulated at omega_H = 1.44e-17 rad/s.
+
+    DUAL-MODE SUPERPOSITION -> Hubble-timescale amplitude envelope modulation on
+    starburst gravitational waves:
+        E(t) = A_osc*[2 + eps_mod*cos(omega_H t)]
+    with modulation depth eps_mod = omega_H/omega_osc = 1.44e-17/2.49e-12 =
+    5.8e-6 (~5.8 ppm at the Hubble frequency). Beat period T_beat ~= T_fast ~=
+    80,000 yr (since omega_H << omega_osc). Predicted detectable in the 1e-17 Hz
+    ultra-low-frequency GW band by future nano-Hertz observatories.
+
+    (Cross-reference: this corrects the "2*pi/T_H_gyr Gyr traveling wave" that
+    appeared in PAPER_246's dual-mode oscillatory gravity - the Gyr-number form
+    was the dimensional bug; the seconds-based 2*pi/t_Hubble is canonical.)
+
+    Reproducible (all clean): t_Hubble = 4.355e17 s; omega_H = 1.44e-17 rad/s;
+    omega_osc = 2*pi*c/r = 2.49e-12 rad/s (r=7.569e20 m); T_fast = 80,000 yr;
+    eps_mod = 5.8e-6.
+
+    CLEAN - all numerics reproduce. Companion to PAPER_267. Appendix boilerplate
+    drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+    """
+    import math
+    c = C_OBSERVED
+    t_Hubble_s = 13.8e9 * 3.15576e7                       # 4.352e17 s
+    omega_H = 2 * math.pi / t_Hubble_s                    # 1.44e-17
+    r = 7.569e20
+    omega_osc = 2 * math.pi * c / r                       # 2.49e-12
+    T_fast_s = 2 * math.pi / omega_osc                    # 2.53e12 s
+    T_fast_yr = T_fast_s / 3.156e7                        # 80,000 yr
+    eps_mod = omega_H / omega_osc                         # 5.8e-6
+    return {
+        'value': {
+            'domain': '2.66 (NGC 1792 dual oscillatory mode Hubble slow mode)',
+            'source_thread': 'Session 73 GALAXY_NGC_1792.cpp term_osc2 dimensional fix',
+            'system': 'NGC 1792',
+            'dimensional_bug_fixed': 't_Hubble_gyr (13.8 number) -> t_Hubble (seconds)',
+            't_Hubble_s': t_Hubble_s,                    # 4.352e17
+            'omega_H': omega_H,                          # 1.44e-17 Hubble slow mode
+            'omega_osc': omega_osc,                      # 2.49e-12 fast standing wave
+            'T_fast_s': T_fast_s, 'T_fast_yr': T_fast_yr,   # 80,000 yr
+            'eps_mod': eps_mod,                          # 5.8e-6 modulation depth
+            'eps_mod_ppm': 5.8,
+            'beat_period_yr': T_fast_yr,                 # ~80,000 (omega_H<<omega_osc)
+            'dual_mode_envelope': 'E(t) = A_osc*[2 + eps_mod*cos(omega_H t)]',
+            'gw_band_hz': 1e-17,                         # ultra-low-freq detection
+            'corrects_paper_246_gyr_form': True,
+        },
+        'formula': 'omega_H = 2*pi/t_Hubble = 1.44e-17; eps_mod = omega_H/omega_osc = 5.8e-6 (Hubble slow-mode GW amplitude modulation)',
+        'source': 'PAPER_268',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

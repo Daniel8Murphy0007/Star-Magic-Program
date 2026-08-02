@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.271.0", "uqff_calculator.VERSION = 0.271.0")
+assert_that(C.VERSION == "0.272.0", "uqff_calculator.VERSION = 0.272.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3682,6 +3682,17 @@ assert_that(abs(_r267['M_Fornax_kg'] - 1.3923e44) < 1e41 and abs(_r267['r_Fornax
 assert_that(abs(_r267['ug1_base_derived'] - 2.317e-12) < 1e-14 and _r267['starburst_buoyancy_coherence'] and _r267['same_decay_timescale'],
             "PAPER_267: ug1_base = G*M0/r^2 = 2.32e-12 derived (paper 7.35e-11 Q-242); starburst-buoyancy coherence, same tau_SF decay")
 assert_that(C.wired_count() >= 271, "wired_count >= 271")
+
+_r268 = C.calc('PAPER_268')['value']
+assert_that(abs(_r268['t_Hubble_s'] - 4.3549e17) < 1e14 and abs(_r268['omega_H'] - 1.443e-17) < 1e-20,
+            "PAPER_268: dimensional fix t_Hubble = 13.8e9*3.15576e7 = 4.355e17 s; omega_H = 2pi/t_Hubble = 1.44e-17 rad/s")
+assert_that(abs(_r268['omega_osc'] - 2.489e-12) < 1e-15 and abs(_r268['T_fast_yr'] - 79998) < 200,
+            "PAPER_268: omega_osc = 2pi*c/r = 2.49e-12 rad/s; T_fast = 2pi/omega_osc = ~80000 yr (galactic light-crossing)")
+assert_that(abs(_r268['eps_mod'] - 5.797e-6) < 1e-8 and _r268['eps_mod_ppm'] == 5.8,
+            "PAPER_268: modulation depth eps_mod = omega_H/omega_osc = 5.8e-6 (~5.8 ppm Hubble slow-mode GW envelope)")
+assert_that(_r268['corrects_paper_246_gyr_form'] and _r268['gw_band_hz'] == 1e-17,
+            "PAPER_268: corrects PAPER_246's Gyr-number traveling-wave form; ultra-low-freq 1e-17 Hz GW band")
+assert_that(C.wired_count() >= 272, "wired_count >= 272")
 
 
 # =============================================================================

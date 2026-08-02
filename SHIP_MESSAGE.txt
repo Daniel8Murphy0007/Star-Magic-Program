@@ -1,23 +1,21 @@
-v0.271.0 BAND 1: PAPER_267 wired - NGC 1792 sSFR COUPLING COHERENCE (Q-242)
+v0.272.0 BAND 1: PAPER_268 wired - NGC 1792 DUAL OSCILLATORY HUBBLE SLOW MODE (CLEAN)
 
-PAPER_267 (SFR Normalization as Dimensionless Coupling Constant - Starburst-
-Buoyancy Coherence in NGC 1792, S73, GALAXY_NGC_1792.cpp Module 19 Stellar
-Forge) wired as one dispatch (OPEN_RULING, Q-242). Companion to PAPER_232.
+PAPER_268 (Dual Oscillatory Mode Superposition - Hubble Slow Mode Starburst GW
+Amplitude Modulation in NGC 1792, S73, GALAXY_NGC_1792.cpp term_osc2 dimensional
+fix) wired as one dispatch (CLEAN, WIRED). Companion to PAPER_267.
 
-sSFR coupling: SFR_factor=SFR/M0=10/1e10=1e-9 yr^-1 (specific SFR) scales
-M(t)=M0(1+sSFR*e^-t/tau_SF); via UQFF 2.0's 3-tier buoyancy (PAPER_198), Ug1_t
-propagates into all three tiers.
+Corrects a dimensional bug in term_osc2: t_Hubble_gyr=13.8 (dimensionless) ->
+t_Hubble=13.8e9*3.15576e7=4.352e17 s, giving omega_H=2pi/t_Hubble=1.44e-17 rad/s.
 
-Starburst-buoyancy coherence: peak SF and peak buoyancy simultaneous, same
-tau_SF=100 Myr decay. Coherence ratio C=sSFR=1e-9 (encoded in buoyancy field,
-absent in DPM-seeded).
+Two modes: fast standing wave omega_osc=2pi*c/r=2.49e-12 (T_fast~80000 yr) +
+Hubble slow mode omega_H=1.44e-17. Superposition -> amplitude envelope
+E(t)=A_osc*[2+eps_mod*cos(omega_H t)], modulation depth eps_mod=omega_H/omega_osc
+=5.8e-6 (~5.8 ppm). Detectable 1e-17 Hz GW band. Corrects PAPER_246 Gyr form.
 
-Reproducible: sSFR=1e-9; tau_SF=3.156e15 s; Fornax frame M_Fornax=1.393e44 kg /
-r_Fornax=6.17e23 m.
+Reproducible: t_Hubble=4.355e17 s; omega_H=1.44e-17; omega_osc=2.49e-12; T_fast=
+80000 yr; eps_mod=5.8e-6.
 
-Q-242: ug1_base stated ~7.35e-11 but G*M0/r^2=2.32e-12 (32x, M0/r
-inconsistency); Delta_Tier1 derived 1.16e-21 vs paper 3.7e-20. sSFR + coherence
-reproduce. Wired derived-correct values. Appendix drift auto-corrected.
+CLEAN - all numerics reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured).
-Campaign: 271/2,255. Next: PAPER_268.
+Gate: 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured).
+Campaign: 272/2,255. Next: PAPER_269.

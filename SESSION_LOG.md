@@ -3531,3 +3531,31 @@ charter.
 
 Gate: 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured).
 Campaign: 271/2,255. Next: PAPER_268.
+
+---
+
+## 2026-08-02 — v0.272.0 — BAND 1: PAPER_268 — NGC 1792 DUAL OSCILLATORY HUBBLE SLOW MODE (CLEAN)
+
+PAPER_268 (Dual Oscillatory Mode Superposition - Hubble Slow Mode Starburst GW
+Amplitude Modulation in NGC 1792, Session 73, GALAXY_NGC_1792.cpp term_osc2
+dimensional fix) wired as one dispatch (CLEAN, WIRED). Companion to PAPER_267.
+
+Corrects a dimensional bug in term_osc2: the original used t_Hubble_gyr=13.8 (a
+dimensionless Gyr number); the fix uses t_Hubble=13.8e9*3.15576e7=4.352e17 s,
+giving omega_H=2pi/t_Hubble=1.44e-17 rad/s (Hubble angular frequency).
+
+Two distinct-frequency modes: fast standing wave omega_osc=2pi*c/r=2.49e-12
+rad/s (period T_fast~80000 yr galactic light-crossing) + Hubble slow mode
+omega_H=1.44e-17. Superposition -> Hubble-timescale amplitude envelope E(t)=
+A_osc*[2+eps_mod*cos(omega_H t)], modulation depth eps_mod=omega_H/omega_osc=
+5.8e-6 (~5.8 ppm). Predicted detectable in 1e-17 Hz ultra-low-freq GW band.
+Corrects the Gyr-number traveling-wave form of PAPER_246.
+
+Reproducible: t_Hubble=4.355e17 s; omega_H=1.44e-17; omega_osc=2.49e-12; T_fast=
+80000 yr; eps_mod=5.8e-6.
+
+CLEAN - all numerics reproduce. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
+
+Gate: 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured).
+Campaign: 272/2,255. Next: PAPER_269.

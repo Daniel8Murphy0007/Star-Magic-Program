@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.272.0] — 2026-08-02 — BAND 1: PAPER_268 — NGC 1792 DUAL OSCILLATORY HUBBLE SLOW MODE (CLEAN)
+
+### Added
+- **PAPER_268 dispatch** — NGC 1792 dual oscillatory mode / Hubble slow mode GW amplitude modulation (Session 73, companion to PAPER_267). Corrects a dimensional bug in term_osc2.
+  - **Dimensional fix:** the original used t_Hubble_gyr=13.8 (a dimensionless Gyr number); the fix uses t_Hubble = 13.8e9·3.15576e7 = 4.352e17 s, giving ω_H = 2π/t_Hubble = 1.44e-17 rad/s (the Hubble angular frequency).
+  - **Two distinct-frequency modes:** fast standing wave ω_osc = 2πc/r = 2.49e-12 rad/s (period T_fast ≈ 80,000 yr, galactic light-crossing) + Hubble slow mode ω_H = 1.44e-17. Superposition → Hubble-timescale amplitude envelope E(t)=A_osc[2+ε_mod·cos(ω_H t)], modulation depth ε_mod = ω_H/ω_osc = 5.8e-6 (~5.8 ppm). Predicted detectable in the 1e-17 Hz ultra-low-frequency GW band.
+  - Corrects the Gyr-number traveling-wave form that appeared in PAPER_246.
+- Gate +4 assertions (1676 → 1681, 0 failures).
+- Registry: +1 row (557), +4 edges (1221), +1 citation (272).
+
+### Notes
+- CLEAN — all numerics reproduce.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.271.0] — 2026-08-02 — BAND 1: PAPER_267 — NGC 1792 sSFR COUPLING COHERENCE (Q-242)
 
 ### Added

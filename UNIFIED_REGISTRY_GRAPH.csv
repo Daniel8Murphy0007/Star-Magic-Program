@@ -1216,3 +1216,7 @@ primitive,G_OBSERVED,observable,ngc1792_ssfr_starburst_buoyancy_coherence,ug1_ba
 primitive,BETA_I,observable,ngc1792_ssfr_starburst_buoyancy_coherence,beta_i canonical Tier-2/3
 observable,ngc1792_ssfr_starburst_buoyancy_coherence,paper,PAPER_267,sSFR coupling starburst-buoyancy coherence
 observable,ngc1792_ssfr_starburst_buoyancy_coherence,observable,ngc1792_full_muge,NGC 1792 Stellar Forge companion (PAPER_232)
+primitive,C_OBSERVED,observable,ngc1792_dual_oscillatory_hubble_slowmode,omega_osc=2pi*c/r
+observable,ngc1792_dual_oscillatory_hubble_slowmode,paper,PAPER_268,dual oscillatory mode Hubble slow mode
+observable,ngc1792_dual_oscillatory_hubble_slowmode,observable,ngc1792_ssfr_starburst_buoyancy_coherence,NGC 1792 companion (PAPER_267)
+observable,ngc1792_dual_oscillatory_hubble_slowmode,observable,muge_dualmode_oscillatory_gravity,corrects Gyr traveling-wave form (PAPER_246)

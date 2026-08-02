@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.271.0"
-description = "UQFF Star-Magic-Program v0.271.0: PAPER_267 wired (Q-242) - NGC 1792 sSFR as dimensionless coupling; starburst-buoyancy coherence (sSFR couples to all 3 tiers, peak SF = peak buoyancy, same tau_SF); coherence ratio C=sSFR=1e-9. Wired 271/2255, gate 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured)."
+version = "0.272.0"
+description = "UQFF Star-Magic-Program v0.272.0: PAPER_268 wired (CLEAN) - NGC 1792 dual oscillatory mode; term_osc2 dimensional fix -> Hubble slow mode omega_H=1.44e-17 vs fast omega_osc=2.49e-12; GW amplitude envelope modulation depth 5.8 ppm. Wired 272/2255, gate 1681/0. Registry 557 rows / 1221 edges / 272 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
