@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.237.0] — 2026-07-31 — BAND 1: PAPER_233 — SGR 1745-2900 ENHANCED (CLEAN)
+
+### Added
+- **PAPER_233 wired** (✓ CLEAN): SGR 1745-2900 — the closest known magnetar to a
+  supermassive black hole (~0.92 pc deprojected from Sgr A*) — gets three MUGE
+  terms absent from the Session-53 calculator: (1) SMBH tidal coupling
+  `a_BH = G·M_SgrA*/r_BH² = 6.63e-7 m/s²` (M_SgrA*=4e6 M_sun, r_BH=0.92 pc),
+  dominant over the magnetar's self-gravity (G·M_NS/r_NS² = 4.65e11 m/s², at the
+  NS surface only); (2) static (non-decaying) magnetic stored energy
+  `a_mag = B²/(2μ0)·V_NS/(Mr) = 9.58e4 m/s²` with B=2e10 T (stable since 2013
+  activation); (3) ATNF-catalogued pulse period P=3.76 s. Refined superconductive
+  suppression `f_sc = 1 - B/B_crit = 0.99955` (~0.05%). The most complete
+  Galactic-Centre magnetar MUGE in the library. Doc 14 enhanced of the
+  grok_share_8d951e12 thread.
+- Clean arithmetic — no ruling filed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1502 → 1507 (+5). Registry 518 rows / 1093 edges / 237 ledgers.
+
+---
+
 ## [0.236.0] — 2026-07-31 — BAND 1: PAPER_232 — NGC 1792 STELLAR FORGE (CLEAN)
 
 ### Added

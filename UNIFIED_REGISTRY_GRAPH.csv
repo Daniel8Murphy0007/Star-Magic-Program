@@ -1089,3 +1089,6 @@ primitive,F_TRZ,observable,hudf_z35_double_interaction_muge,(1+f_TRZ) in a_Ug
 observable,hudf_z35_double_interaction_muge,paper,PAPER_231,HUDF z=3.5 MUGE
 observable,ngc1792_stellar_forge_starburst,paper,PAPER_232,sSFR + SN wind MUGE
 observable,ngc1792_stellar_forge_starburst,observable,tapestry_lmc_muge,wind-feedback family (Q-220 cross-ref)
+primitive,B_CRIT,observable,sgr1745_bh_proximity_enhanced,f_sc = 1-B/B_crit
+primitive,MU_0,observable,sgr1745_bh_proximity_enhanced,a_mag = B^2/(2mu0)*V/(Mr)
+observable,sgr1745_bh_proximity_enhanced,paper,PAPER_233,enhanced SGR 1745 MUGE

@@ -2566,3 +2566,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1502/0. Registry 517 rows / 1090 edges / 236 ledgers. Campaign: 236/2,255 (14 ✓, 222 ⚠). Next: PAPER_233.
 
 ---
+
+## 2026-07-31 — v0.237.0 — BAND 1: PAPER_233 (CLEAN)
+
+- PAPER_233 wired (✓ CLEAN): SGR 1745-2900 enhanced MUGE (closest magnetar to a SMBH, ~0.92 pc from Sgr A*), 3 new terms vs Session 53: (1) SMBH tidal a_BH=G·M_SgrA*/r_BH²=6.63e-7 m/s² (dominant at 0.92 pc); (2) static magnetic energy a_mag=B²/(2μ0)·V/(Mr)=9.58e4 m/s² (B=2e10 T static since 2013); (3) ATNF P=3.76 s. Refined f_sc=1-B/B_crit=0.99955 (0.05% suppression). Most complete GC magnetar MUGE. Doc 14 enhanced of 8d951e12. Clean arithmetic. Appendix drift auto-corrected.
+- Gate 1507/0. Registry 518 rows / 1093 edges / 237 ledgers. Campaign: 237/2,255 (15 ✓, 222 ⚠). Next: PAPER_234.
+
+---

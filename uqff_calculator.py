@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.236.0"
+VERSION = "0.237.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12469,6 +12469,69 @@ def _paper_232(dataset):
         },
         'formula': 'M(t)=M_0*(1+(SFR/M_total)*e^-t/tau_SF); a_SN=rho_wind*v_SN^2/rho_fluid',
         'source': 'PAPER_232',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_233')
+def _paper_233(dataset):
+    """SGR 1745-2900 enhanced: SMBH proximity + static B-field MUGE (S58).
+
+    SGR 1745-2900 - the closest known magnetar to a supermassive black
+    hole (~0.09 pc projected, ~0.92 pc deprojected from Sgr A*) - gets
+    three MUGE terms absent from the Session-53 dynamic-modulation
+    calculator. Doc 14 enhanced. Wired observables (clean arithmetic):
+    * SMBH tidal coupling a_BH = G*M_SgrA*/r_BH^2 = 6.674e-11*4e6*
+      1.989e30/(2.83e16)^2 = 6.63e-7 m/s^2 (M_SgrA*=4e6 M_sun, r_BH=
+      0.92 pc=2.83e16 m) - dominant over the magnetar's self-gravity at
+      0.92 pc (self-gravity G*M_NS/r_NS^2 = 4.65e11 m/s^2 only at the NS
+      surface; paper's rough figure ~2e12).
+    * Static (non-decaying) magnetic stored energy a_mag = B^2/(2*mu0)*
+      V_NS/(M*r) with B=2e10 T static (field stable since 2013 activation,
+      unlike Session-53's decaying B(t)); V_NS=(4pi/3)(20 km)^3;
+      a_mag = 9.58e4 m/s^2 (registry mu0).
+    * ATNF-catalogued pulse period P=3.76 s (2024; more precise than the
+      inferred ~3.8 s), feeding the spin-down back-reaction
+      dOmega/dt = -2pi/(P*tau_Omega)*e^-t/tau_Omega.
+    * Refined superconductive suppression f_sc = 1 - B/B_crit =
+      1 - 2e10/4.4e13 = 0.99955 (~0.05% suppression from near-critical
+      field), applied as a_base = mu_s*grad(M_s/r)*(1+H_0*t)*f_sc.
+    * Six-way Session-53 -> Session-58 enhancement: BH proximity (added),
+      static vs decaying B, f_sc vs generic f_TRZ, ATNF P, mag energy
+      (added), burst decay (added). Most complete Galactic-Centre
+      magnetar MUGE in the library.
+    Params: M=1.4 M_sun, r=20 km, B_crit=4.4e13 T, tau_Omega=8000 yr,
+    L_0=5e28 W, tau_d=1000 s. Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    M_bh = 4e6 * M_SUN_OBSERVED; r_bh = 2.83e16
+    a_bh = G_OBSERVED * M_bh / r_bh ** 2                  # 6.63e-7
+    B = 2e10
+    f_sc = 1 - B / B_CRIT                                 # 0.99955
+    M = 1.4 * M_SUN_OBSERVED; r = 2e4
+    V_ns = (4 * _m.pi / 3) * r ** 3
+    a_mag = B ** 2 / (2 * MU_0) * V_ns / (M * r)          # 9.58e4
+    g_self_surface = G_OBSERVED * M / r ** 2             # 4.65e11
+    return {
+        'value': {
+            'domain': '2.31 (SGR 1745-2900 enhanced MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 14 enhanced',
+            'new_terms_vs_session53': 3,
+            'a_bh_smbh_tidal_m_s2': a_bh,                 # 6.63e-7
+            'a_bh_dominant_at_0p92pc': True,
+            'M_SgrA_solar': 4e6, 'r_bh_pc': 0.92,
+            'B_static_T': B,
+            'a_mag_m_s2': a_mag,                          # 9.58e4
+            'f_sc': f_sc,                                 # 0.99955
+            'f_sc_suppression_pct': (1 - f_sc) * 100,     # 0.045%
+            'atnf_pulse_period_s': 3.76,
+            'g_self_surface_m_s2': g_self_surface,        # 4.65e11
+            'tau_omega_yr': 8000, 'L0_W': 5e28,
+            'most_complete_gc_magnetar': True,
+        },
+        'formula': 'a_BH = G*M_SgrA*/r_BH^2; a_mag = B^2/(2*mu0)*V/(Mr); f_sc = 1-B/B_crit',
+        'source': 'PAPER_233',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

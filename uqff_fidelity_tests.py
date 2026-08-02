@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.236.0", "uqff_calculator.VERSION = 0.236.0")
+assert_that(C.VERSION == "0.237.0", "uqff_calculator.VERSION = 0.237.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3297,6 +3297,17 @@ assert_that(_r232['a_sn_m_s2'] == 4e12 and _r232['a_sn_equals_v2_rho_equal'],
 assert_that(len(_r232['novel_methods']) == 2 and _r232['previously_unknown'],
             "PAPER_232: 2 novel methods (specific-SFR growth, SN wind feedback); previously-unknown system")
 assert_that(C.wired_count() >= 236, "wired_count >= 236")
+
+_r233 = C.calc('PAPER_233')['value']
+assert_that(abs(_r233['a_bh_smbh_tidal_m_s2'] - 6.629917217095979e-07) < 1e-13,
+            "PAPER_233: SMBH tidal a_BH = G*M_SgrA*/r_BH^2 = 6.63e-7 m/s^2 (dominant at 0.92 pc)")
+assert_that(abs(_r233['f_sc'] - 0.9995454545454545) < 1e-9,
+            "PAPER_233: superconductive f_sc = 1 - B/B_crit = 1 - 2e10/4.4e13 = 0.99955")
+assert_that(abs(_r233['a_mag_m_s2'] - 95764.80164715454) < 1e-3,
+            "PAPER_233: static magnetic energy a_mag = B^2/(2mu0)*V/(Mr) = 9.58e4 m/s^2 (B=2e10 T)")
+assert_that(_r233['atnf_pulse_period_s'] == 3.76 and _r233['new_terms_vs_session53'] == 3,
+            "PAPER_233: ATNF pulse period P=3.76 s; 3 new MUGE terms vs Session 53")
+assert_that(C.wired_count() >= 237, "wired_count >= 237")
 
 
 # =============================================================================

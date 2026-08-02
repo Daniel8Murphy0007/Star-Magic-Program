@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.236.0"
-description = "UQFF Star-Magic-Program v0.236.0: PAPER_232 wired (CLEAN) - NGC 1792 'Stellar Forge' starburst MUGE (previously-unknown); specific-SFR mass growth SFR_factor=SFR/M_total=1e-9 yr^-1; SN-driven outflow a_SN=rho_wind*v_SN^2/rho_fluid=4e12 m/s^2 (rho=rho, cross-ref Q-220); fills low-z starburst niche. Wired 236/2255, gate 1502/0. Registry 517 rows / 1090 edges / 236 ledgers (measured)."
+version = "0.237.0"
+description = "UQFF Star-Magic-Program v0.237.0: PAPER_233 wired (CLEAN) - SGR 1745-2900 enhanced MUGE (closest magnetar to a SMBH), 3 new terms vs Session 53: SMBH tidal a_BH=6.63e-7 m/s^2 (dominant at 0.92 pc), static magnetic energy a_mag=9.58e4 (B=2e10 T), ATNF P=3.76 s; f_sc=1-B/B_crit=0.99955. Wired 237/2255, gate 1507/0. Registry 518 rows / 1093 edges / 237 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
