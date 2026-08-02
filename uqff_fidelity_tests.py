@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.259.0", "uqff_calculator.VERSION = 0.259.0")
+assert_that(C.VERSION == "0.260.0", "uqff_calculator.VERSION = 0.260.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3550,6 +3550,17 @@ assert_that(_r255['neutron_dominant'] and _r255['F_neutron_over_F_LENR_orders'] 
 assert_that(_r255['fubi_positive_N'] == 2.53e208 and _r255['sn_range_orders'] == 53 and _r255['class_extended_to_ns'],
             "PAPER_255: F_U_Bi = +2.53e208 N NS-regime positive; class extends across 53 orders s_n (omega0 sole determinant, Q-235)")
 assert_that(C.wired_count() >= 259, "wired_count >= 259")
+
+_r256 = C.calc('PAPER_256')['value']
+assert_that(abs(_r256['term_gravity_crab'] - 1.858e12) < 1e9 and abs(_r256['term_gravity_sgra'] - 1.395e-11) < 1e-13,
+            "PAPER_256: term_gravity Crab G*M/r^2 = 1.86e12; Sgr A* = 1.395e-11 m/s^2 (radius overwhelms mass)")
+assert_that(abs(_r256['scale_ratio_sgra_crab'] - 6.17e14) < 1e12 and round(_r256['F_magnitude_ratio']) == 1568,
+            "PAPER_256: r_SgrA/r_Crab = 6.17e14; |F_SgrA*|/|F_Crab| = 8.31e211/5.30e208 = 1568 (~1570)")
+assert_that(_r256['radius_determines_sign'] and _r256['fubi_crab_positive'] == 5.30e208 and _r256['fubi_sgra_negative'] == -8.31e211,
+            "PAPER_256: Radius Sign-Determination - same omega0=1e-15, Crab +5.30e208 (positive), Sgr A* -8.31e211 (negative)")
+assert_that(_r256['dpm_geometry_flag'] == 'compact_visible' and abs(_r256['F_LENR'] - 6.169e45) < 1e42,
+            "PAPER_256: dpm_geometry_flag = compact_visible (DPM not universally invisible); F_LENR(omega0=1e-15) = 6.17e45 (Q-236)")
+assert_that(C.wired_count() >= 260, "wired_count >= 260")
 
 
 # =============================================================================

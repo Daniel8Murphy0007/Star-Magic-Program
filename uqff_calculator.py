@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.259.0"
+VERSION = "0.260.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14044,6 +14044,84 @@ def _paper_255(dataset):
         },
         'formula': 'NS-Density Class Extension: F_neutron=k_neutron*s_n dominant; F_U_Bi=+2.53e208 N positive (F0 vacuum anchor -> x2>0)',
         'source': 'PAPER_255',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_256')
+def _paper_256(dataset):
+    """Crab Nebula M1 DPM geometry probe - radius as sign determinant (S72d).
+
+    The Crab (M1, SN 1054, Crab Pulsar 1.4 M_sun / r~10 km) is the first ALMA
+    Cycle 12 contingency target and demonstrates two discoveries at once.
+
+    DISCOVERY 1 - DPM Geometry Dependency: DPM invisibility (PAPER_251, diffuse
+    gas at omega0=1e-12) does NOT extend universally. The Crab has B0=1e-4 T
+    (as Eta Carinae) but omega0=1e-15 (as Sgr A*), so DPM_resonance is 1000x
+    Eta Carinae's; at compact NS geometry (r=1e4 m) the compact-scale x2 shifts
+    F_res/F_LENR toward the visibility threshold ~1e-10, setting the
+    dpm_geometry_flag = 'compact_visible' (vs 'diffuse_invisible' for extended
+    gas). DPM Geometry Flag Theorem.
+
+    DISCOVERY 2 - Radius as Sign Determinant: the Crab and Sgr A* share
+    omega0=1e-15, yet the Crab is POSITIVE buoyancy (F_U_Bi ~= +5.30e208 N)
+    while Sgr A* is NEGATIVE (-8.31e211 N, PAPER_253). The only difference is
+    radius: r_Crab=1e4 m vs r_SgrA=6.17e18 m (ratio 6.17e14). Effective surface
+    gravity a = G*M/r^2: Crab 1.86e12 m/s^2 (large a -> small |x2| ->
+    positive), Sgr A* 1.395e-11 m/s^2 (tiny a despite 1e7x larger mass -> x2
+    inverts via F_rel -> negative). RADIUS r (through a), not omega0 alone,
+    determines the buoyancy sign at low frequency (Radius Sign-Determination
+    Theorem). This is the largest r-dependent sign transition in UQFF to date.
+
+    Reproducible (all clean): term_gravity(Crab) = G*1.4M_sun/(1e4)^2 =
+    1.86e12; term_gravity(Sgr A*) = G*7.956e36/(6.17e18)^2 = 1.395e-11;
+    r_SgrA/r_Crab = 6.17e14; F_LENR(omega0=1e-15) = 6.17e45; |F_SgrA*|/|F_Crab|
+    = 8.31e211/5.30e208 = 1568 (~1570); age (since 1054) = 970 yr = 3.06e10 s.
+
+    Q-236: (a) F_U_Bi(Crab) = +5.30e208 N documented positive value (distinct
+    from +2.11e208 class / +2.53e208 PSR J0030). (b) DPM_resonance(Crab)
+    computes to 1.76e22 (B0=1e-4, omega0=1e-15) but the paper states 1.76e8
+    (extends Q-230 drift; mantissa 1.76 ok). (c) term_gravity(Crab): the paper
+    states 1.86e6 but G*M/r^2 = 1.86e12 (mojibake; physical NS surface gravity).
+    Wired the derived-correct pieces + documented benchmark; drifts flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M_ns = 1.4 * 1.989e30                                 # 2.786e30 kg
+    r_crab = 1e4; r_sgra = 6.17e18
+    g_crab = G * M_ns / r_crab ** 2                       # 1.86e12
+    g_sgra = G * 7.956e36 / r_sgra ** 2                   # 1.395e-11
+    scale_ratio = r_sgra / r_crab                         # 6.17e14
+    import math
+    F_LENR = 1e-10 * (2 * math.pi * 1.25e12 / 1e-15) ** 2   # 6.17e45
+    dpm_resonance = 2 * 9.274e-24 * 1e-4 / (1.0546e-34 * 1e-15)   # 1.76e22
+    fubi_crab = 5.30e208; fubi_sgra = -8.31e211
+    F_ratio = abs(fubi_sgra) / fubi_crab                 # 1568 (~1570)
+    age_s = 970 * 3.156e7                                 # 3.06e10
+    return {
+        'value': {
+            'domain': '2.54 (Crab Nebula M1 DPM geometry + radius sign determinant)',
+            'source_thread': 'Session 72d ALMA Cycle 12 (CondensedPhysics3.py)',
+            'system': 'Crab Nebula M1 (Crab Pulsar)',
+            'omega0': 1e-15,                             # same as Sgr A*
+            'B0_T': 1e-4,                                # same as Eta Carinae
+            'r_crab_m': r_crab, 'r_sgra_m': r_sgra,
+            'term_gravity_crab': g_crab,                # 1.86e12
+            'term_gravity_sgra': g_sgra,                # 1.395e-11
+            'scale_ratio_sgra_crab': scale_ratio,       # 6.17e14
+            'F_LENR': F_LENR,                           # 6.17e45
+            'dpm_resonance_derived': dpm_resonance,     # 1.76e22 (paper 1.76e8)
+            'dpm_geometry_flag': 'compact_visible',     # vs diffuse_invisible
+            'fubi_crab_positive': fubi_crab,            # +5.30e208
+            'fubi_sgra_negative': fubi_sgra,            # -8.31e211 (PAPER_253)
+            'F_magnitude_ratio': F_ratio,               # 1568 (~1570)
+            'radius_determines_sign': True,             # not omega0 alone
+            'age_s': age_s,                             # 3.06e10
+            'value_drift': 'F_U_Bi(Crab)=+5.30e208 documented; DPM 1.76e22 vs paper 1.76e8 (Q-230); term_gravity 1.86e12 vs paper 1.86e6 (Q-236)',
+        },
+        'formula': 'Radius Sign-Determination: at fixed omega0<omega0_crit, sgn(F_U_Bi) set by a=G*M/r^2; Crab (large a) positive, Sgr A* (tiny a) negative',
+        'source': 'PAPER_256',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

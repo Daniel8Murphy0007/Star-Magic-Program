@@ -1,25 +1,23 @@
-v0.259.0 BAND 1: PAPER_255 wired - PSR J0030 NS-DENSITY BUOYANCY (Q-235)
+v0.260.0 BAND 1: PAPER_256 wired - CRAB NEBULA RADIUS SIGN-DETERMINANT (Q-236)
 
-PAPER_255 (PSR J0030+0451 Isolated Neutron Star - Density Regime Positive
-Buoyancy and F_neutron Dominance, S72d, ALMA Cycle 12, CondensedPhysics3.py)
-wired as one dispatch (OPEN_RULING, Q-235). First isolated-pulsar class;
-introduces the neutron-star-density regime.
+PAPER_256 (Crab Nebula M1 DPM Geometry Probe - Compact-Object DPM Visibility vs
+Diffuse-Gas Invisibility, S72d, ALMA Cycle 12, CondensedPhysics3.py) wired as
+one dispatch (OPEN_RULING, Q-236). Two discoveries:
 
-Neutron-dominant hierarchy: NS-density cross-section s_n makes F_neutron=
-k_neutron*s_n the dominant term (~9 orders above F_LENR) - hierarchy shifts
-LENR-dominant -> neutron-dominant.
+1. DPM Geometry Dependency: DPM invisibility (PAPER_251) does NOT extend
+   universally; at omega0=1e-15 + compact r=1e4 m, dpm_geometry_flag=
+   compact_visible (vs diffuse_invisible).
+2. Radius as Sign Determinant: Crab and Sgr A* share omega0=1e-15 but Crab
+   (r=1e4, a=G*M/r^2=1.86e12) POSITIVE +5.30e208 vs Sgr A* (r=6.17e18,
+   a=1.395e-11) NEGATIVE -8.31e211. Radius r through a sets the sign, not
+   omega0 alone. r_SgrA/r_Crab=6.17e14.
 
-Positive buoyancy preserved: despite ~9-order F_neutron dominance and compact
-r=1e4 m, F_U_Bi ~ +2.53e208 N (F0=1.83e71 vacuum anchor keeps x2>0). Class
-extends 14 orders in radius, ~53 orders in s_n (omega0 sole determinant).
+Reproducible: term_gravity both; r ratio 6.17e14; F_LENR=6.17e45; |F_SgrA*|/
+|F_Crab|=8.31e211/5.30e208=1568(~1570); age 970 yr=3.06e10 s.
 
-Reproducible: M=1.4 M_sun=2.786e30 kg; surface gravity G*M/r^2=1.86e12 m/s^2;
-DPM_resonance=2*mu_B*1e8/(hbar*1e-12)=1.76e31 (reproduces here, no drift).
+Q-236: (a) F_U_Bi(Crab)=+5.30e208 documented (third positive value); (b) DPM
+1.76e22 vs paper 1.76e8 (Q-230); (c) term_gravity 1.86e12 (paper 1.86e6
+mojibake). Wired derived-correct + benchmark. Appendix drift auto-corrected.
 
-Q-235: (a) F_U_Bi=+2.53e208 documented NS-regime value (vs class +2.11e208);
-(b) term_gravity 1.86e12 (paper 1.86e6 mojibake); (c) s_n/F_neutron exponents
-mojibake-inconsistent (anchor F_neutron/F_LENR ~9 orders). DPM reproduces.
-Wired derived-correct + benchmark. Appendix drift auto-corrected per charter.
-
-Gate: 1616/0. Registry 544 rows / 1172 edges / 259 ledgers (measured).
-Campaign: 259/2,255. Next: PAPER_256.
+Gate: 1621/0. Registry 545 rows / 1176 edges / 260 ledgers (measured).
+Campaign: 260/2,255. Next: PAPER_257.

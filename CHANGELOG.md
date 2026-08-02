@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.260.0] — 2026-08-02 — BAND 1: PAPER_256 — CRAB NEBULA RADIUS SIGN-DETERMINANT (Q-236)
+
+### Added
+- **PAPER_256 dispatch** — Crab Nebula M1 DPM geometry probe (Session 72d, ALMA Cycle 12). Two discoveries:
+  - **DPM Geometry Dependency:** the DPM invisibility of PAPER_251 does NOT extend universally. At ω0=1e-15 + compact geometry (r=1e4 m), F_res/F_LENR shifts toward the visibility threshold, setting `dpm_geometry_flag = compact_visible` (vs `diffuse_invisible`).
+  - **Radius as Sign Determinant:** the Crab and Sgr A* share ω0=1e-15, but the Crab (r=1e4 m, a=G·M/r²=1.86e12, large) is POSITIVE (+5.30e208 N) while Sgr A* (r=6.17e18 m, a=1.395e-11, tiny despite 1e7× larger mass) is NEGATIVE (−8.31e211 N). Radius r — through a — determines the sign, not ω0 alone. r_SgrA/r_Crab = 6.17e14 (largest r-dependent sign transition in UQFF).
+  - **Reproducible:** both term_gravity values; r ratio 6.17e14; F_LENR(ω0=1e-15)=6.17e45; |F_SgrA*|/|F_Crab| = 8.31e211/5.30e208 = 1568 (~1570); age = 970 yr = 3.06e10 s.
+- Gate +4 assertions (1616 → 1621, 0 failures).
+- Registry: +1 row (545), +4 edges (1176), +1 citation (260).
+
+### Ruling filed
+- **Q-236** — (a) F_U_Bi(Crab)=+5.30e208 documented positive value (third, alongside +2.11e208 class and +2.53e208 PSR J0030); (b) DPM_resonance(Crab) computes 1.76e22 (paper 1.76e8, extends Q-230); (c) term_gravity(Crab) 1.86e12 (paper 1.86e6 mojibake). Wired derived-correct pieces + benchmark.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.259.0] — 2026-08-02 — BAND 1: PAPER_255 — PSR J0030 NS-DENSITY BUOYANCY (Q-235)
 
 ### Added

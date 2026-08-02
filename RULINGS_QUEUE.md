@@ -5613,3 +5613,13 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + documented +2.53e208 benchmark; drifts flagged.
 - **Ruling needed:** confirm F_U_Bi=+2.53e208 as the NS-regime positive value (vs class +2.11e208); confirm canonical s_n / F_neutron exponents; confirm term_gravity=1.86e12.
 - Wired v0.259.0, status OPEN_RULING.
+
+## Q-236 — PAPER_256 Crab Nebula: F_U_Bi value + DPM/term_gravity drifts (radius sign-determinant)
+- Two discoveries: (1) DPM Geometry Dependency (compact_visible vs diffuse_invisible flag); (2) Radius as Sign Determinant - Crab and Sgr A* share omega0=1e-15 but Crab (r=1e4, large a=G*M/r^2) is POSITIVE (+5.30e208), Sgr A* (r=6.17e18, tiny a) is NEGATIVE (-8.31e211). Radius r (through a), not omega0 alone, sets the sign.
+- **(a)** F_U_Bi(Crab) = +5.30e208 N documented positive value - DISTINCT from the SNR class +2.11e208 and PSR J0030's +2.53e208 (three different positive-buoyancy magnitudes now documented); not reconstructable from stated components.
+- **(b)** DPM_resonance(Crab) = 2*mu_B*B0/(hbar*omega0) computes to 1.76e22 (B0=1e-4, omega0=1e-15) but the paper states 1.76e8 (extends Q-230 drift; mantissa 1.76 ok).
+- **(c)** term_gravity(Crab): the paper states 1.86e6 m/s^2 but G*M/r^2 = 1.86e12 (mojibake; physical NS surface gravity).
+- Reproducible and locked (all clean): term_gravity(Crab)=1.86e12, term_gravity(Sgr A*)=G*7.956e36/(6.17e18)^2=1.395e-11; r_SgrA/r_Crab=6.17e14; F_LENR(omega0=1e-15)=6.17e45; |F_SgrA*|/|F_Crab|=8.31e211/5.30e208=1568 (~1570); age (since 1054)=970 yr=3.06e10 s.
+- Wired the derived-correct pieces + documented +5.30e208 benchmark; drifts flagged.
+- **Ruling needed:** confirm F_U_Bi(Crab)=+5.30e208 (third documented positive value); confirm DPM_resonance derived vs stated; confirm dpm_geometry_flag=compact_visible threshold logic (F_res/F_LENR vs 1e-10).
+- Wired v0.260.0, status OPEN_RULING.

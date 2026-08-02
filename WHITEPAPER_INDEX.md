@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 259 (25 ✓, 234 ⚠ OPEN_RULING)
+- **Wired:** 260 (25 ✓, 235 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1995
+- **Not yet touched:** 1994
 
 ---
 
@@ -1514,7 +1514,7 @@
 | ⚠ | PAPER_253 | SgrA Negative Buoyancy Inversion omega0 Critical | Q-233
 | ⚠ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor | Q-234
 | ⚠ | PAPER_255 | PSRJ0030 NeutronStar Density Regime Positive Buoyancy | Q-235
-| ⬜ | PAPER_256 | CrabNebula M1 DPM Geometry Compact Visible Diffuse Invisible |
+| ⚠ | PAPER_256 | CrabNebula M1 DPM Geometry Compact Visible Diffuse Invisible | Q-236
 | ⬜ | PAPER_257 | CassiopeiaA SNR Force Equivalence Class 53Order Extension |
 | ⬜ | PAPER_258 | MultiMessenger UQFF Validator ALMA EHT Chandra Observational |
 | ⬜ | PAPER_259 | NGC1275 AGN Feedback Buoyancy Equilibrium Cooling Flow BCG |

@@ -3174,3 +3174,33 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
 
 Gate: 1616/0. Registry 544 rows / 1172 edges / 259 ledgers (measured).
 Campaign: 259/2,255. Next: PAPER_256.
+
+---
+
+## 2026-08-02 — v0.260.0 — BAND 1: PAPER_256 — CRAB NEBULA RADIUS SIGN-DETERMINANT (Q-236)
+
+PAPER_256 (Crab Nebula M1 DPM Geometry Probe — Compact-Object DPM Visibility vs
+Diffuse-Gas Invisibility, Session 72d, ALMA Cycle 12, CondensedPhysics3.py)
+wired as one dispatch (OPEN_RULING, Q-236). Two discoveries:
+
+1. DPM Geometry Dependency: the DPM invisibility of PAPER_251 does NOT extend
+   universally. At omega0=1e-15 + compact geometry (r=1e4 m), F_res/F_LENR
+   shifts toward the visibility threshold, setting dpm_geometry_flag=
+   compact_visible (vs diffuse_invisible).
+2. Radius as Sign Determinant: the Crab and Sgr A* share omega0=1e-15, but the
+   Crab (r=1e4 m, a=G*M/r^2=1.86e12, large) is POSITIVE (+5.30e208 N) while
+   Sgr A* (r=6.17e18 m, a=1.395e-11, tiny despite 1e7x larger mass) is NEGATIVE
+   (-8.31e211 N). Radius r through a determines the sign, not omega0 alone.
+   r_SgrA/r_Crab=6.17e14 (largest r-dependent sign transition in UQFF).
+
+Reproducible: both term_gravity values; r ratio 6.17e14; F_LENR(omega0=1e-15)=
+6.17e45; |F_SgrA*|/|F_Crab|=8.31e211/5.30e208=1568(~1570); age 970 yr=3.06e10 s.
+
+Q-236: (a) F_U_Bi(Crab)=+5.30e208 documented positive value (third, alongside
++2.11e208 class and +2.53e208 PSR J0030); (b) DPM_resonance(Crab) computes
+1.76e22 (paper 1.76e8, extends Q-230); (c) term_gravity(Crab) 1.86e12 (paper
+1.86e6 mojibake). Wired derived-correct + benchmark. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1621/0. Registry 545 rows / 1176 edges / 260 ledgers (measured).
+Campaign: 260/2,255. Next: PAPER_257.

@@ -1171,3 +1171,7 @@ primitive,G_OBSERVED,observable,psr_j0030_ns_density_buoyancy,term_gravity G*M/r
 observable,psr_j0030_ns_density_buoyancy,paper,PAPER_255,PSR J0030 NS-density positive buoyancy
 observable,psr_j0030_ns_density_buoyancy,observable,sn1006_typeia_snr_fubi,class extension across 53 orders s_n (PAPER_250)
 observable,psr_j0030_ns_density_buoyancy,observable,eta_carinae_dpm_invisibility,DPM Invisibility extends to NS regime (PAPER_251)
+primitive,G_OBSERVED,observable,crab_nebula_radius_sign_determinant,term_gravity a=G*M/r^2 sign determinant
+observable,crab_nebula_radius_sign_determinant,paper,PAPER_256,Crab radius sign-determinant + DPM geometry flag
+observable,crab_nebula_radius_sign_determinant,observable,sgra_negative_buoyancy_inversion,same omega0=1e-15 opposite sign via radius (PAPER_253)
+observable,crab_nebula_radius_sign_determinant,observable,psr_j0030_ns_density_buoyancy,NS-scale compact geometry (PAPER_255)
