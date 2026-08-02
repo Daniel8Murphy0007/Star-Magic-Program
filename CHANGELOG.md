@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.270.0] — 2026-08-02 — BAND 1: PAPER_266 — HUDF GRAVITATIONAL MEISSNER EFFECT (CLEAN)
+
+### Added
+- **PAPER_266 dispatch** — HUDF gravitational Meissner effect + superconducting critical boundary (Session 72g, third HUDF paper). Identifies the magnetic suppression factor corr_B = 1−B/B_crit as a Type-II-superconductor-like quench.
+  - **B_crit = 1e11 T** = UQFF Gravitational Meissner Boundary — above it, corr_B < 0 and UQFF gravity is quenched, analogous to flux expulsion at H_c2. Distinct from the registry B_CRIT = 4.4e13 T (QED Schwinger field); the paper explicitly separates them.
+  - **Meissner Effect Theorem:** G(B) = G0·(1−B/B_crit); gravitational quench at B=B_crit. Corollaries: HUDF (B=1e-10 T → corr_B≈1) is the unquenched benchmark; NS critical zone (B~1e11 T); magnetars (B>B_crit) → corr_B<0 reversal.
+  - **Reproducible corr_B phase diagram:** HUDF ~1 (fully active), Cas A 0.999, PSR J0030 0.997, boundary 0 (quench), magnetar −99.
+- Gate +4 assertions (1666 → 1671, 0 failures).
+- Registry: +1 row (555), +3 edges (1213), +1 citation (270).
+
+### Notes
+- CLEAN — the corr_B phase diagram reproduces exactly. (The sec-2.4 Landau/pion-mass aside is a muddled peripheral estimate — ℏω_c at 1e11 T = 11.6 MeV, not the stated 72 MeV — but not core to the Meissner result.)
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=6.1e-1) auto-corrected per charter.
+
+---
+
 ## [0.269.0] — 2026-08-02 — BAND 1: PAPER_265 — HUDF DUAL-CHANNEL CASCADE BUOYANCY (CLEAN)
 
 ### Added

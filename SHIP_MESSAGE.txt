@@ -1,23 +1,23 @@
-v0.269.0 BAND 1: PAPER_265 wired - HUDF DUAL-CHANNEL CASCADE BUOYANCY (CLEAN)
+v0.270.0 BAND 1: PAPER_266 wired - HUDF GRAVITATIONAL MEISSNER EFFECT (CLEAN)
 
-PAPER_265 (HUDF Dual-Channel Interaction Cascade Buoyancy - Quadratic I(t)
-Amplification at Cosmic Merger Peak, S72g, HUDFGalaxies.cpp
-HUDFInteractionCascadeTerm) wired as one dispatch (CLEAN, WIRED). Companion to
-PAPER_264.
+PAPER_266 (HUDF Primordial IGM Magnetic Field - UQFF Gravitational Meissner
+Effect and Superconducting Critical Boundary at B_crit=1e11 T, S72g,
+HUDFGalaxies.cpp HUDFCriticalMagneticTerm) wired as one dispatch (CLEAN, WIRED).
+Third HUDF paper.
 
-I(t)=I0*exp(-t/tau_inter) applied to BOTH base term1 and UQFF term2 -> quadratic
-(1+I0)^2 amplification (vs linear single-channel); Delta_cascade=I0^2*U_g1*
-(1+f_TRZ). Cascade excess = I0 = 5%.
+Identifies corr_B=1-B/B_crit (B_crit=1e11 T) as the UQFF Gravitational Meissner
+Boundary - above it UQFF gravity is quenched, analogous to flux expulsion from a
+Type II superconductor at H_c2. B_crit=1e11 T DISTINCT from registry B_CRIT=
+4.4e13 T (QED Schwinger).
 
-Cascade Buoyancy Universality Theorem: N channels -> (1+I(t))^N; HUDF first
-proven N=2.
+Meissner Effect Theorem G(B)=G0*(1-B/B_crit); quench at B=B_crit. HUDF (B=1e-10)
+unquenched benchmark; NS critical zone (B~1e11); magnetar (B>B_crit) corr_B<0.
 
-Reproducible: I0=0.05, (1+I0)^2=1.1025; U_g1=G*M0/r^2=8.77e-23 (CONFIRMS correct
-PAPER_264 U_g1, RESOLVES Q-241a - 264's 2.88e-15 was the error); Delta_I_cascade
-=2.41e-25; I(1 Gyr)=0.0184 (86% reduction), I(2 Gyr)=0.0068 (98%).
+Reproducible corr_B: HUDF ~1, Cas A 0.999, PSR J0030 0.997, boundary 0 (quench),
+magnetar -99.
 
-CLEAN - all numerics reproduce; f_TRZ from canonical F_TRZ. Appendix drift
-auto-corrected per charter.
+CLEAN - corr_B phase diagram reproduces exactly. Appendix drift (VDS 1.894,
+kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1666/0. Registry 554 rows / 1210 edges / 269 ledgers (measured).
-Campaign: 269/2,255. Next: PAPER_266.
+Gate: 1671/0. Registry 555 rows / 1213 edges / 270 ledgers (measured).
+Campaign: 270/2,255. Next: PAPER_267.

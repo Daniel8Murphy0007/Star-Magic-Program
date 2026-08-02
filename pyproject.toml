@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.269.0"
-description = "UQFF Star-Magic-Program v0.269.0: PAPER_265 wired (CLEAN) - HUDF dual-channel interaction cascade; I(t) applied to both channels -> quadratic (1+I0)^2 amplification; U_g1=8.77e-23 confirms PAPER_264 (resolves Q-241a); N=2 cascade. Wired 269/2255, gate 1666/0. Registry 554 rows / 1210 edges / 269 ledgers (measured)."
+version = "0.270.0"
+description = "UQFF Star-Magic-Program v0.270.0: PAPER_266 wired (CLEAN) - HUDF gravitational Meissner effect; corr_B=1-B/B_crit (B_crit=1e11 T UQFF boundary, distinct from Schwinger); quench at B=B_crit; HUDF unquenched benchmark. Wired 270/2255, gate 1671/0. Registry 555 rows / 1213 edges / 270 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -1209,3 +1209,6 @@ primitive,F_TRZ,observable,hudf_dual_channel_cascade_buoyancy,(1+f_TRZ)=1.1 in c
 primitive,G_OBSERVED,observable,hudf_dual_channel_cascade_buoyancy,U_g1=G*M0/r^2
 observable,hudf_dual_channel_cascade_buoyancy,paper,PAPER_265,dual-channel quadratic cascade buoyancy
 observable,hudf_dual_channel_cascade_buoyancy,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp; confirms U_g1 (PAPER_264 Q-241a)
+observable,hudf_gravitational_meissner_bcrit,paper,PAPER_266,gravitational Meissner effect B_crit=1e11
+observable,hudf_gravitational_meissner_bcrit,observable,cassiopeia_a_class_completeness,NS critical zone (Cas A B~boundary, PAPER_257)
+observable,hudf_gravitational_meissner_bcrit,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp corr_B in U_g4 (PAPER_264)

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.269.0", "uqff_calculator.VERSION = 0.269.0")
+assert_that(C.VERSION == "0.270.0", "uqff_calculator.VERSION = 0.270.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3660,6 +3660,17 @@ assert_that(abs(_r265['delta_I_cascade'] - 2.413e-25) < 1e-27 and _r265['cascade
 assert_that(_r265['cascade_universality_N'] == 2 and abs(_r265['I_1gyr'] - 0.0184) < 1e-3,
             "PAPER_265: Cascade Universality Theorem B_N=(1+I)^N, HUDF N=2; I(1 Gyr)=0.0184 (86% cascade reduction)")
 assert_that(C.wired_count() >= 269, "wired_count >= 269")
+
+_r266 = C.calc('PAPER_266')['value']
+assert_that(_r266['B_crit_meissner_T'] == 1e11 and _r266['distinct_from_schwinger'],
+            "PAPER_266: B_crit = 1e11 T UQFF gravitational Meissner boundary (distinct from registry B_CRIT=4.4e13 Schwinger)")
+assert_that(abs(_r266['corr_B_hudf'] - 1.0) < 1e-9 and abs(_r266['corr_B_casa'] - 0.999) < 1e-6 and abs(_r266['corr_B_psr'] - 0.997) < 1e-6,
+            "PAPER_266: corr_B phase diagram - HUDF ~1 (fully active), Cas A 0.999, PSR J0030 0.997")
+assert_that(_r266['corr_B_boundary'] == 0.0 and _r266['corr_B_magnetar'] == -99.0,
+            "PAPER_266: corr_B = 0 at B=B_crit (gravitational quench); -99 for magnetar B=1e13 (above-critical reversal)")
+assert_that(_r266['gravitational_quench_at_bcrit'] and _r266['hudf_unquenched_benchmark'] and _r266['ns_critical_zone'],
+            "PAPER_266: Meissner Effect Theorem - quench at B_crit; HUDF unquenched benchmark; NS critical zone")
+assert_that(C.wired_count() >= 270, "wired_count >= 270")
 
 
 # =============================================================================

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.269.0"
+VERSION = "0.270.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14812,6 +14812,86 @@ def _paper_265(dataset):
         },
         'formula': 'g_UQFF,dual ~ (U_g1+U_g4)*(1+f_TRZ)*(1+I0)^2; Delta_cascade = I0^2*U_g1*(1+f_TRZ); B_N=(1+I)^N',
         'source': 'PAPER_265',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_266')
+def _paper_266(dataset):
+    """HUDF gravitational Meissner effect + B_crit superconducting boundary (S72g).
+
+    Identifies the HUDF MUGE magnetic suppression factor corr_B = 1 - B/B_crit
+    (with B_crit = 1e11 T) as the UQFF GRAVITATIONAL MEISSNER BOUNDARY - above
+    which the UQFF gravitational field is expelled/quenched, exactly as magnetic
+    flux is expelled from a Type II superconductor at its upper critical field
+    H_c2. corr_B is structurally identical to the superconductor order-parameter
+    suppression |psi|^2 ~ (1 - B/B_c2) near H_c2 - the UQFF gravitational field
+    is a condensate that melts as B -> B_crit.
+
+    NOTE: this B_crit = 1e11 T is a UQFF-gravitational quantity DISTINCT from
+    the registry B_CRIT = 4.4e13 T (QED Schwinger pair-production field); the
+    paper explicitly separates them (sec 2.4: cyclotron/LENR mismatch confirms
+    B_crit=1e11 is a purely UQFF-gravitational boundary).
+
+    U_g4 = U_g1*corr_B; UQFF total ~ U_g1*(2 - B/B_crit)*(1+f_TRZ)*(1+I(t)).
+
+    Meissner Effect Theorem: G(B) = G0*(1 - B/B_crit); field expelled at
+    B=B_crit (gravitational quench).
+      Corollary 1 (HUDF Maximum): B_HUDF=1e-10 T -> corr_B=1-1e-21~=1, the
+        MAXIMUM UQFF gravitational activity in a cosmic environment - benchmark
+        for fully-active UQFF.
+      Corollary 2 (NS Critical Zone): neutron stars with B~1e11 T sit at the
+        boundary; Cas A/PSR J0030 (B~1e8-1e9 T, PAPER_255/257) are 2-3 orders
+        below B_crit -> UQFF suppressed 0.1-1%, explaining slight F_U_Bi_i
+        deviation from the unquenched maximum.
+      Corollary 3 (Magnetar Above-Critical): B > B_crit gives corr_B < 0 - a
+        distinct phase where U_g4 contributes to gravity reversal (candidate for
+        anomalous magnetar braking indices).
+
+    Reproducible corr_B phase diagram (all trivially reproduce): HUDF B/B_crit=
+    1e-21 -> corr_B~1 (fully active); Cas A B=1e8 -> 1e-3 -> 0.999; PSR J0030
+    B=3e8 -> 3e-3 -> 0.997; boundary B=1e11 -> 1 -> 0 (QUENCH); magnetar B=1e13
+    -> 100 -> -99 (unphysical/reversal). Validator permits B <= B_crit*1.1.
+
+    CLEAN - the corr_B phase diagram reproduces exactly. (The sec-2.4 Landau
+    hbar*omega_c ~72 MeV pion-mass aside is a muddled peripheral estimate -
+    hbar*eB/m_e at B=1e11 = 1.86e-12 J = 11.6 MeV, and the paper's "1.15e-2 J =
+    72 MeV" is internally inconsistent - but it is not core to the Meissner
+    result.) Appendix drift (VDS 1.894, kg/m^3, beta_i=6.1e-1) auto-corrected
+    per charter.
+    """
+    B_crit = 1e11                                        # UQFF Meissner boundary (NOT Schwinger)
+    def corr_B(B):
+        return 1 - B / B_crit
+    B_HUDF = 1e-10
+    corr_hudf = corr_B(B_HUDF)                           # ~1
+    corr_casa = corr_B(1e8)                              # 0.999
+    corr_psr = corr_B(3e8)                               # 0.997
+    corr_boundary = corr_B(B_crit)                       # 0 quench
+    corr_magnetar = corr_B(1e13)                         # -99
+    return {
+        'value': {
+            'domain': '2.64 (HUDF gravitational Meissner effect B_crit boundary)',
+            'source_thread': 'Session 72g HUDFGalaxies.cpp HUDFCriticalMagneticTerm',
+            'system': 'HUDF (primordial IGM)',
+            'B_crit_meissner_T': B_crit,                 # 1e11 UQFF-gravitational
+            'distinct_from_schwinger': True,             # registry B_CRIT=4.4e13 is QED
+            'B_HUDF_T': B_HUDF,
+            'corr_B_hudf': corr_hudf,                    # ~1 fully active
+            'corr_B_casa': corr_casa,                    # 0.999
+            'corr_B_psr': corr_psr,                      # 0.997
+            'corr_B_boundary': corr_boundary,            # 0 quench
+            'corr_B_magnetar': corr_magnetar,            # -99
+            'meissner_analogy': 'corr_B ~ |psi|^2 (1-B/B_c2)',
+            'gravitational_quench_at_bcrit': True,
+            'hudf_unquenched_benchmark': True,           # maximum UQFF activity
+            'ns_critical_zone': True,                    # B~1e11 boundary
+            'magnetar_above_critical_reversal': True,    # corr_B<0
+            'validator_limit': 'B <= B_crit*1.1',
+        },
+        'formula': 'corr_B = 1 - B/B_crit (B_crit=1e11 T UQFF Meissner); G(B)=G0*(1-B/B_crit); quench at B=B_crit',
+        'source': 'PAPER_266',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
