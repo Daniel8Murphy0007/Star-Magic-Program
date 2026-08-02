@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.244.0", "uqff_calculator.VERSION = 0.244.0")
+assert_that(C.VERSION == "0.245.0", "uqff_calculator.VERSION = 0.245.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3385,6 +3385,17 @@ assert_that(_r240['g_H'] == 1.252e46 and _r240['ties_paper_237'] and _r240['g_p_
 assert_that(abs(_r240['Q_wave_J_m3'] - 3.1036e-15) < 1e-18,
             "PAPER_240: Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*omega_0) = 3.10e-15 J/m3 (mantissa 3.11 vs paper 3.11e9, 24-order exp drift Q-226)")
 assert_that(C.wired_count() >= 244, "wired_count >= 244")
+
+_r241 = C.calc('PAPER_241')['value']
+assert_that(abs(_r241['overall_alignment_pct'] - 95.2767) < 0.01 and abs(_r241['experimental_pass_rate_pct'] - 93.3333) < 0.01,
+            "PAPER_241: overall = (92.53+93.3+100)/3 = 95.28%; exp pass 14/15 = 93.33% (reproduce)")
+assert_that(_r241['arxiv_papers'] == 16 and _r241['arxiv_categories'] == 10 and _r241['arxiv_mean_alignment_pct'] == 92.53,
+            "PAPER_241: ArXiv stream = 16 papers / 10 categories / 92.53% mean alignment")
+assert_that(_r241['computational_systems'] == 100 and _r241['computational_finite'] == 100 and _r241['validation_streams'] == 3,
+            "PAPER_241: computational 100/100 finite (0 NaN/Inf); 3 verification streams")
+assert_that(_r241['higgs_alignment_pct'] == 99.79 and _r241['thz_deviation_pct'] == 1.7 and _r241['lenr_cop'] == 1.12 and _r241['chi2_nu'] == 1.03,
+            "PAPER_241: Higgs 99.79%, THz 1.7% dev, LENR COP 1.12, chi^2_nu=1.03 (N=9)")
+assert_that(C.wired_count() >= 245, "wired_count >= 245")
 
 
 # =============================================================================

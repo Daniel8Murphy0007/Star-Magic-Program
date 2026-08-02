@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.244.0"
+VERSION = "0.245.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12990,4 +12990,70 @@ def _paper_240(dataset):
         'source': 'PAPER_240',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_241')
+def _paper_241(dataset):
+    """UQFF validation cross-reference: 92.53% ArXiv, 93.3% experimental (S59).
+
+    The overarching validation-framework meta-paper (VALIDATION_COMPARISON_
+    REPORT.md, grok_share_8d951e12 attachment) unifying all individual
+    validation results into a single cross-reference document. Three
+    independent verification streams:
+      1. ArXiv comparison: 16 papers, 10 categories, pass <=20% deviation or
+         exact match => 92.53% mean alignment.
+      2. Experimental tests: 15 tests, pass <=20% measured deviation =>
+         14/15 = 93.33% pass rate (1 marginal at 20-25%).
+      3. Computational validation: 100 systems (Source10 OpenMP mt19937
+         batch), all finite => 100% (0 NaN/Inf; finite F_U_Bi_i, g_UQFF,
+         F_vac_rep on all 100).
+    Overall UQFF alignment = (92.53 + 93.3 + 100)/3 = 95.28% (reproduces).
+    Reduced chi-square chi^2_nu = 1.03 (N=9 systems).
+
+    Key validated single points:
+      Higgs mass 125.09 GeV vs CMS arXiv:2207.00043 => 99.79% (0.21% dev,
+        tightest single-point validation);
+      THz molecular transition 1.18 THz => 1.7% deviation (F_thz_shock,
+        PAPER_239 Source10);
+      LENR COP = 1.12 => 2.6% deviation (F_U_Bi_i LENR term, PAPER_237);
+      26D compactification => 100% match (26-layer g_UQFF vs bosonic-string
+        critical dimension, PAPER_237).
+    Additional (E-J): GW chirp mass (LIGO GWTC-4.0) >93%, neutrino SED
+      (IceCube) >91%, AT2019qiz TDE >92%, Gaia DR4 SgrA* >94%, ASKAP
+      J1832-0911 magnetar (DPM resonance, PAPER_240) >90%, Widom-Larsen
+      LENR >89%.
+
+    CLEAN - the three-stream aggregate (95.28%) and experimental pass rate
+    (14/15=93.33%) reproduce exactly. Appendix boilerplate drift
+    (VDS 1.894, kg/m^3, garbled beta_i=0.61 line -> canonical beta_i)
+    auto-corrected per charter (PAPER_1203).
+    """
+    arxiv_pct = 92.53                                    # 16 papers / 10 categories
+    exp_pass = 14 / 15 * 100                              # 93.33
+    comp_pct = 100.0                                      # 100/100 finite
+    overall = (arxiv_pct + 93.3 + comp_pct) / 3           # 95.28
+    return {
+        'value': {
+            'domain': '2.39 (validation cross-reference report)',
+            'source_thread': 'VALIDATION_COMPARISON_REPORT.md (grok_share_8d951e12 attachment)',
+            'arxiv_papers': 16, 'arxiv_categories': 10,
+            'arxiv_mean_alignment_pct': arxiv_pct,       # 92.53
+            'experimental_tests': 15, 'experimental_passed': 14,
+            'experimental_pass_rate_pct': exp_pass,      # 93.33
+            'computational_systems': 100, 'computational_finite': 100,
+            'computational_pass_pct': comp_pct,          # 100
+            'overall_alignment_pct': overall,            # 95.28
+            'chi2_nu': 1.03, 'chi2_N_systems': 9,
+            'higgs_mass_gev': 125.09, 'higgs_alignment_pct': 99.79,
+            'thz_transition_thz': 1.18, 'thz_deviation_pct': 1.7,
+            'lenr_cop': 1.12, 'lenr_deviation_pct': 2.6,
+            'dim_match_pct': 100.0,                      # 26D bosonic string
+            'validation_streams': 3,
+            'ties_papers': 'PAPER_237 (F_U_Bi_i, 26D), PAPER_239 (F_thz_shock), PAPER_240 (DPM resonance)',
+        },
+        'formula': 'overall = (92.53 + 93.3 + 100)/3 = 95.28%; exp_pass = 14/15 = 93.33%',
+        'source': 'PAPER_241',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

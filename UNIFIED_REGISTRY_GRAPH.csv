@@ -1118,3 +1118,7 @@ observable,spooky_action_force_quantum,paper,PAPER_240,F_spooky linear-in-omega 
 observable,dpm_resonance_energy_density,paper,PAPER_240,Q_wave g_H DPM resonance
 observable,dpm_resonance_energy_density,observable,master_buoyancy_fubii_catalogue,DPM resonance sub-term + g_H (PAPER_237)
 observable,spooky_action_force_quantum,observable,thz_shock_force_starformation,linear-omega vs omega^2 scaling laws (PAPER_239)
+observable,uqff_validation_cross_reference,paper,PAPER_241,3-stream validation overall 95.28%
+observable,uqff_validation_cross_reference,observable,master_buoyancy_fubii_catalogue,validates F_U_Bi_i + 26D (PAPER_237)
+observable,uqff_validation_cross_reference,observable,thz_shock_force_starformation,validates THz 1.18 THz 1.7% (PAPER_239)
+observable,uqff_validation_cross_reference,observable,dpm_resonance_energy_density,validates DPM resonance magnetar (PAPER_240)

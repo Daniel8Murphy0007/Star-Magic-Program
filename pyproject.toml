@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.244.0"
-description = "UQFF Star-Magic-Program v0.244.0: PAPER_240 wired (Q-226) - spooky action force F_spooky=k_spooky*(omega/omega_0) linear-in-omega (5.55e-30 N reproduces) + DPM resonance Q_wave; g_H=1.252e46 UQFF hydrogen g-factor (ties PAPER_237). Wired 244/2255, gate 1541/0. Registry 528 rows / 1119 edges / 244 ledgers (measured)."
+version = "0.245.0"
+description = "UQFF Star-Magic-Program v0.245.0: PAPER_241 wired (CLEAN) - validation cross-reference meta-paper; 3 streams (ArXiv 92.53%, experimental 93.3% 14/15, computational 100/100 finite) => overall 95.28%; Higgs 99.79%, 26D 100%, chi2_nu=1.03. Wired 245/2255, gate 1546/0. Registry 529 rows / 1123 edges / 245 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
