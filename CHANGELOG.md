@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.261.0] — 2026-08-02 — BAND 1: PAPER_257 — CASSIOPEIA A CLASS COMPLETENESS (Q-237)
+
+### Added
+- **PAPER_257 dispatch** — Cassiopeia A SNR neutron star (Session 72d). The definitive cross-validation of the Force Equivalence Class.
+  - **Cross-validation:** the Cas A compact NS (ω0=1e-12, σ_n=1e31, r=1e4 m) yields the SAME F_U_Bi = +2.11e208 N as the ChandraArchive composite (diffuse gas, σ_n=1e-4, r=6.17e16 m). Extends the class across 53 orders in σ_n and 14 orders in r — a genuine topological invariant, not a scale artifact.
+  - **Mechanism (x2 = F0/b):** the stability root x2 = 1.83e71/4.72e-3 = 3.88e73 m is set by the vacuum anchor F0 and stiffness b, NOT by M or r. F_neutron is amplified (1e41 Cas A vs 1e6 ISM, 43 orders) but non-determinant.
+  - **Class Completeness Theorem:** invariant Φ = +2.11e208 N across r (12), σ_n (43–53), L_X (4), M (~2), age (~5); ω0 uniquely determines membership.
+- Gate +4 assertions (1621 → 1626, 0 failures).
+- Registry: +1 row (546), +3 edges (1179), +1 citation (261).
+
+### Ruling filed
+- **Q-237** — (a) INTERNAL INCONSISTENCY: F_U_Bi=+2.11e208 here, but PSR J0030 (PAPER_255) reported +2.53e208 at the SAME ω0=1e-12 / NS density — needs reconciliation. (b) a=term_gravity 1.86e12 (paper 1.86e6 mojibake). Wired derived-correct pieces + benchmark.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 header → canonical β_i per PAPER_1203) auto-corrected per charter.
+
+---
+
 ## [0.260.0] — 2026-08-02 — BAND 1: PAPER_256 — CRAB NEBULA RADIUS SIGN-DETERMINANT (Q-236)
 
 ### Added

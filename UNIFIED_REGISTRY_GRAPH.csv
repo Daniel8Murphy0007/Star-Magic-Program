@@ -1175,3 +1175,6 @@ primitive,G_OBSERVED,observable,crab_nebula_radius_sign_determinant,term_gravity
 observable,crab_nebula_radius_sign_determinant,paper,PAPER_256,Crab radius sign-determinant + DPM geometry flag
 observable,crab_nebula_radius_sign_determinant,observable,sgra_negative_buoyancy_inversion,same omega0=1e-15 opposite sign via radius (PAPER_253)
 observable,crab_nebula_radius_sign_determinant,observable,psr_j0030_ns_density_buoyancy,NS-scale compact geometry (PAPER_255)
+observable,cassiopeia_a_class_completeness,paper,PAPER_257,Cas A class completeness cross-validation
+observable,cassiopeia_a_class_completeness,observable,chandra_composite_equivalence_class,SAME F_U_Bi as ChandraArchive (PAPER_252)
+observable,cassiopeia_a_class_completeness,observable,psr_j0030_ns_density_buoyancy,NS-regime value inconsistency +2.11 vs +2.53e208 (PAPER_255)

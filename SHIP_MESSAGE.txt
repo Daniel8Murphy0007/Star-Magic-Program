@@ -1,23 +1,21 @@
-v0.260.0 BAND 1: PAPER_256 wired - CRAB NEBULA RADIUS SIGN-DETERMINANT (Q-236)
+v0.261.0 BAND 1: PAPER_257 wired - CASSIOPEIA A CLASS COMPLETENESS (Q-237)
 
-PAPER_256 (Crab Nebula M1 DPM Geometry Probe - Compact-Object DPM Visibility vs
-Diffuse-Gas Invisibility, S72d, ALMA Cycle 12, CondensedPhysics3.py) wired as
-one dispatch (OPEN_RULING, Q-236). Two discoveries:
+PAPER_257 (Cassiopeia A SNR Neutron Star - Force Equivalence Class Extension
+Across 53 Orders in sigma_n and 14 Orders in r, S72d, ALMA Cycle 12,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-237). Definitive
+cross-validation of the Force Equivalence Class.
 
-1. DPM Geometry Dependency: DPM invisibility (PAPER_251) does NOT extend
-   universally; at omega0=1e-15 + compact r=1e4 m, dpm_geometry_flag=
-   compact_visible (vs diffuse_invisible).
-2. Radius as Sign Determinant: Crab and Sgr A* share omega0=1e-15 but Crab
-   (r=1e4, a=G*M/r^2=1.86e12) POSITIVE +5.30e208 vs Sgr A* (r=6.17e18,
-   a=1.395e-11) NEGATIVE -8.31e211. Radius r through a sets the sign, not
-   omega0 alone. r_SgrA/r_Crab=6.17e14.
+Cross-validation: Cas A compact NS (omega0=1e-12, sigma_n=1e31, r=1e4 m) yields
+the SAME F_U_Bi=+2.11e208 N as the ChandraArchive composite (diffuse). Extends
+the class 53 orders sigma_n / 14 orders r - topological invariant.
 
-Reproducible: term_gravity both; r ratio 6.17e14; F_LENR=6.17e45; |F_SgrA*|/
-|F_Crab|=8.31e211/5.30e208=1568(~1570); age 970 yr=3.06e10 s.
+Mechanism (x2=F0/b): x2=1.83e71/4.72e-3=3.88e73 m set by vacuum anchor F0 +
+stiffness b, NOT M or r. F_neutron amplified (1e41 Cas A vs 1e6 ISM) but
+non-determinant. Class Completeness Theorem, invariant Phi=+2.11e208 N.
 
-Q-236: (a) F_U_Bi(Crab)=+5.30e208 documented (third positive value); (b) DPM
-1.76e22 vs paper 1.76e8 (Q-230); (c) term_gravity 1.86e12 (paper 1.86e6
+Q-237: (a) INTERNAL INCONSISTENCY - +2.11e208 here vs PSR J0030 (PAPER_255)
++2.53e208 at same omega0/NS - needs reconciliation. (b) a=1.86e12 (paper 1.86e6
 mojibake). Wired derived-correct + benchmark. Appendix drift auto-corrected.
 
-Gate: 1621/0. Registry 545 rows / 1176 edges / 260 ledgers (measured).
-Campaign: 260/2,255. Next: PAPER_257.
+Gate: 1626/0. Registry 546 rows / 1179 edges / 261 ledgers (measured).
+Campaign: 261/2,255. Next: PAPER_258.

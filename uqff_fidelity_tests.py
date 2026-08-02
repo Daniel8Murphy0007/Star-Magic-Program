@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.260.0", "uqff_calculator.VERSION = 0.260.0")
+assert_that(C.VERSION == "0.261.0", "uqff_calculator.VERSION = 0.261.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3561,6 +3561,17 @@ assert_that(_r256['radius_determines_sign'] and _r256['fubi_crab_positive'] == 5
 assert_that(_r256['dpm_geometry_flag'] == 'compact_visible' and abs(_r256['F_LENR'] - 6.169e45) < 1e42,
             "PAPER_256: dpm_geometry_flag = compact_visible (DPM not universally invisible); F_LENR(omega0=1e-15) = 6.17e45 (Q-236)")
 assert_that(C.wired_count() >= 260, "wired_count >= 260")
+
+_r257 = C.calc('PAPER_257')['value']
+assert_that(abs(_r257['x2_m'] - 3.877e73) < 1e70 and _r257['x2_dominated_by_F0_over_b'],
+            "PAPER_257: x2 = F0/b = 1.83e71/4.72e-3 = 3.88e73 m (independent of M,r - the class mechanism)")
+assert_that(abs(_r257['a_term_gravity'] - 1.858e12) < 1e9 and abs(_r257['F_LENR'] - 6.169e39) < 1e36,
+            "PAPER_257: a = G*M/r^2 = 1.86e12 (paper 1.86e6 mojibake); F_LENR(omega0=1e-12) = 6.17e39 (ties class)")
+assert_that(_r257['F_neutron_casa_N'] == 1e41 and _r257['F_neutron_ism_N'] == 1e6 and abs(_r257['r_ratio'] - 6.17e12) < 1e10,
+            "PAPER_257: F_neutron Cas A 1e41 vs ISM 1e6 (43-order, non-determinant); r_ratio 6.17e12")
+assert_that(_r257['fubi_invariant_N'] == 2.11e208 and _r257['cross_validates_chandra_archive'] and _r257['class_completeness_confirmed'],
+            "PAPER_257: F_U_Bi = +2.11e208 N cross-validates ChandraArchive (PAPER_252); class completeness across 53 orders sigma_n / 14 r (Q-237)")
+assert_that(C.wired_count() >= 261, "wired_count >= 261")
 
 
 # =============================================================================

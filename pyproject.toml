@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.260.0"
-description = "UQFF Star-Magic-Program v0.260.0: PAPER_256 wired (Q-236) - Crab Nebula radius-as-sign-determinant; same omega0=1e-15, Crab (r=1e4) positive +5.30e208 vs Sgr A* (r=6.17e18) negative -8.31e211; |F| ratio 1568, r ratio 6.17e14 reproduce; DPM geometry flag. Wired 260/2255, gate 1621/0. Registry 545 rows / 1176 edges / 260 ledgers (measured)."
+version = "0.261.0"
+description = "UQFF Star-Magic-Program v0.261.0: PAPER_257 wired (Q-237) - Cassiopeia A definitive Force Equivalence Class completeness; same F_U_Bi=+2.11e208 N as ChandraArchive across 53 orders sigma_n/14 r; mechanism x2=F0/b=3.88e73 (independent of M,r). Wired 261/2255, gate 1626/0. Registry 546 rows / 1179 edges / 261 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

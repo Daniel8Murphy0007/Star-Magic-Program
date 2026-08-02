@@ -5623,3 +5623,13 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + documented +5.30e208 benchmark; drifts flagged.
 - **Ruling needed:** confirm F_U_Bi(Crab)=+5.30e208 (third documented positive value); confirm DPM_resonance derived vs stated; confirm dpm_geometry_flag=compact_visible threshold logic (F_res/F_LENR vs 1e-10).
 - Wired v0.260.0, status OPEN_RULING.
+
+## Q-237 — PAPER_257 Cas A: class completeness + NS-regime value inconsistency vs PAPER_255
+- Cas A (compact NS, omega0=1e-12, sigma_n=1e31, r=1e4 m) is the definitive cross-validation: yields the SAME F_U_Bi as the ChandraArchive composite (diffuse, sigma_n=1e-4, r=6.17e16 m) = +2.11e208 N, extending the class across 53 orders sigma_n / 14 orders r. Class Completeness Theorem.
+- **Mechanism (clean):** x2 = F0/b = 1.83e71/4.72e-3 = 3.88e73 m - determined by the vacuum anchor F0 and stiffness b, NOT by M or r. This is why the class holds across all scales. F_neutron amplified (1e41 Cas A vs 1e6 ISM, 43 orders) but non-determinant.
+- **(a) INTERNAL INCONSISTENCY:** F_U_Bi = +2.11e208 N here (class value), but PSR J0030 (PAPER_255) reported +2.53e208 N at the SAME omega0=1e-12 / NS density sigma_n regime. Two papers give different NS-regime positive values for what should be the same class - needs reconciliation (is NS-density F_U_Bi exactly the class +2.11e208, or the slightly different +2.53e208?).
+- **(b)** a=term_gravity: paper states 1.86e6 but G*M/r^2 = 1.86e12 (mojibake; physical NS surface gravity).
+- Reproducible and locked: x2=F0/b=3.88e73; a=1.86e12; F_LENR(omega0=1e-12)=6.17e39; F_neutron 1e41/1e6; r_ratio 6.17e12; age (since 1680) 330 yr=1.041e10 s.
+- Wired the derived-correct pieces + documented +2.11e208 benchmark; drift + inconsistency flagged.
+- **Ruling needed:** reconcile PSR J0030 +2.53e208 vs Cas A +2.11e208 at same omega0/NS density; confirm x2=F0/b class mechanism; confirm a=1.86e12.
+- Wired v0.261.0, status OPEN_RULING.

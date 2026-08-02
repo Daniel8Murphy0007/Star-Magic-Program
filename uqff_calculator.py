@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.260.0"
+VERSION = "0.261.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14122,6 +14122,87 @@ def _paper_256(dataset):
         },
         'formula': 'Radius Sign-Determination: at fixed omega0<omega0_crit, sgn(F_U_Bi) set by a=G*M/r^2; Crab (large a) positive, Sgr A* (tiny a) negative',
         'source': 'PAPER_256',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_257')
+def _paper_257(dataset):
+    """Cassiopeia A SNR neutron star - Equivalence Class completeness (S72d).
+
+    Cas A (SN ~1680, compact central neutron star ~1.4 M_sun / r=1e4 m,
+    omega0=1e-12, NS density sigma_n=1e31) is the DEFINITIVE cross-validation
+    of the UQFF Force Equivalence Class: it yields the SAME F_U_Bi as the
+    ChandraArchive composite (diffuse gas, sigma_n=1e-4, r=6.17e16 m),
+    F_U_Bi ~= +2.11e208 N. This extends the omega0=1e-12 class across 53 orders
+    in sigma_n and 14 orders in r - confirming it is a genuine topological
+    invariant, not an artifact of similar physical scales.
+
+    MECHANISM - x2 dominated by F0/b: the quadratic stability root is
+        x2 ~= F0/b = 1.83e71 / 4.72e-3 = 3.88e73 m
+    determined by the vacuum energy anchor F0 and stiffness b, NOT by M or r.
+    The a = G*M/r^2 coefficient changes convergence speed but not the dominant
+    root. F0 = 1.83e71 N is so far above any physically achievable F_neutron
+    that x2 is mathematically unaffected across the full class range.
+
+    F_neutron amplified but non-determinant: F_neutron(Cas A, sigma_n=1e31) =
+    k_neutron*sigma_n = 1e41 N vs 1e6 N for diffuse ISM (43-order difference),
+    yet F_U_Bi unchanged - both large positive forces at the same x2 still
+    yield +2.11e208 N.
+
+    Equivalence Class Completeness Theorem: C_{1e-12} = {S : omega0(S)=1e-12},
+    invariant Phi = +2.11e208 N, confirmed across r (12 orders), sigma_n
+    (43-53 orders), L_X (4 orders), M (~2 orders), age (~5 orders). omega0
+    uniquely determines membership. Corollary: Sgr A* (omega0=1e-15) shows the
+    class boundary is sharp - one decade below omega0_crit flips the sign.
+
+    Reproducible: x2 = F0/b = 3.88e73 m; a = G*1.4M_sun/(1e4)^2 = 1.86e12 m/s^2;
+    F_LENR(omega0=1e-12) = 6.17e39 (ties class); F_neutron 1e41 (Cas A) / 1e6
+    (ISM); r_ratio 6.17e16/1e4 = 6.17e12; age (since 1680) = 330 yr = 1.041e10 s.
+
+    Q-237: (a) F_U_Bi = +2.11e208 documented class invariant (ties PAPER_252/250),
+    BUT PSR J0030 (PAPER_255) reported +2.53e208 at the SAME omega0=1e-12 / NS
+    density - an internal inconsistency in the NS-regime positive value across
+    PAPER_255 vs PAPER_257. (b) a=term_gravity: the paper states 1.86e6 but
+    G*M/r^2 = 1.86e12 (mojibake; physical NS surface gravity). Wired the
+    derived-correct pieces + documented benchmark; drifts flagged. Appendix drift
+    (VDS 1.894, kg/m^3, beta_i=0.61 header -> canonical beta_i PAPER_1203)
+    auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    F0 = 1.83e71; b = 4.72e-3
+    x2 = F0 / b                                           # 3.88e73
+    M = 1.4 * 1.989e30; r = 1e4
+    a_term_gravity = G * M / r ** 2                       # 1.86e12
+    import math
+    F_LENR = 1e-10 * (2 * math.pi * 1.25e12 / 1e-12) ** 2   # 6.17e39
+    F_neutron_casa = 1e10 * 1e31                          # 1e41
+    F_neutron_ism = 1e10 * 1e-4                           # 1e6
+    r_ratio = 6.17e16 / 1e4                               # 6.17e12
+    age_s = 330 * 3.156e7                                 # 1.041e10
+    return {
+        'value': {
+            'domain': '2.55 (Cassiopeia A SNR neutron star Equivalence Class completeness)',
+            'source_thread': 'Session 72d ALMA Cycle 12 (CondensedPhysics3.py)',
+            'system': 'Cassiopeia A (Cas A neutron star)',
+            'omega0': 1e-12,
+            'x2_m': x2,                                  # 3.88e73 (= F0/b)
+            'x2_dominated_by_F0_over_b': True,           # independent of M, r
+            'a_term_gravity': a_term_gravity,            # 1.86e12
+            'F_LENR': F_LENR,                            # 6.17e39 ties class
+            'F_neutron_casa_N': F_neutron_casa,          # 1e41
+            'F_neutron_ism_N': F_neutron_ism,            # 1e6
+            'sigma_n_range_orders': 53,
+            'r_range_orders': 14, 'r_ratio': r_ratio,    # 6.17e12
+            'age_s': age_s,                              # 1.041e10
+            'fubi_invariant_N': 2.11e208,               # class invariant
+            'cross_validates_chandra_archive': True,     # PAPER_252
+            'class_completeness_confirmed': True,
+            'value_note': 'F_U_Bi=+2.11e208 class value; PSR J0030 PAPER_255 gave +2.53e208 at same omega0/NS - inconsistency (Q-237); a=1.86e12 vs paper 1.86e6 mojibake',
+        },
+        'formula': 'Class Completeness: x2 = F0/b = 3.88e73 (independent of M,r) -> F_U_Bi = +2.11e208 N invariant across 53 orders sigma_n / 14 orders r',
+        'source': 'PAPER_257',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

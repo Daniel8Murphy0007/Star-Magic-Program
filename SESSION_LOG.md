@@ -3204,3 +3204,33 @@ Q-236: (a) F_U_Bi(Crab)=+5.30e208 documented positive value (third, alongside
 
 Gate: 1621/0. Registry 545 rows / 1176 edges / 260 ledgers (measured).
 Campaign: 260/2,255. Next: PAPER_257.
+
+---
+
+## 2026-08-02 — v0.261.0 — BAND 1: PAPER_257 — CASSIOPEIA A CLASS COMPLETENESS (Q-237)
+
+PAPER_257 (Cassiopeia A SNR Neutron Star — Force Equivalence Class Extension
+Across 53 Orders in sigma_n and 14 Orders in r, Session 72d, ALMA Cycle 12,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-237). Definitive
+cross-validation of the Force Equivalence Class.
+
+Cross-validation: the Cas A compact NS (omega0=1e-12, sigma_n=1e31, r=1e4 m)
+yields the SAME F_U_Bi=+2.11e208 N as the ChandraArchive composite (diffuse,
+sigma_n=1e-4, r=6.17e16 m). Extends the class across 53 orders sigma_n / 14
+orders r - genuine topological invariant, not a scale artifact.
+
+Mechanism (x2=F0/b): the stability root x2=1.83e71/4.72e-3=3.88e73 m is set by
+the vacuum anchor F0 and stiffness b, NOT by M or r. F_neutron amplified
+(1e41 Cas A vs 1e6 ISM, 43 orders) but non-determinant.
+
+Class Completeness Theorem: invariant Phi=+2.11e208 N across r (12), sigma_n
+(43-53), L_X (4), M (~2), age (~5); omega0 uniquely determines membership.
+
+Q-237: (a) INTERNAL INCONSISTENCY - F_U_Bi=+2.11e208 here, but PSR J0030
+(PAPER_255) reported +2.53e208 at the SAME omega0=1e-12 / NS density - needs
+reconciliation. (b) a=term_gravity 1.86e12 (paper 1.86e6 mojibake). Wired
+derived-correct + benchmark. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.61 header -> canonical beta_i per PAPER_1203) auto-corrected per charter.
+
+Gate: 1626/0. Registry 546 rows / 1179 edges / 261 ledgers (measured).
+Campaign: 261/2,255. Next: PAPER_258.
