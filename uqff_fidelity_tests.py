@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.237.0", "uqff_calculator.VERSION = 0.237.0")
+assert_that(C.VERSION == "0.238.0", "uqff_calculator.VERSION = 0.238.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3308,6 +3308,17 @@ assert_that(abs(_r233['a_mag_m_s2'] - 95764.80164715454) < 1e-3,
 assert_that(_r233['atnf_pulse_period_s'] == 3.76 and _r233['new_terms_vs_session53'] == 3,
             "PAPER_233: ATNF pulse period P=3.76 s; 3 new MUGE terms vs Session 53")
 assert_that(C.wired_count() >= 237, "wired_count >= 237")
+
+_r234 = C.calc('PAPER_234')['value']
+assert_that(abs(_r234['growth_over_hubble'] - 0.0021581508339868975) < 1e-9,
+            "PAPER_234: secular accretion growth over Hubble = 0.01*e^-13.8/9 = 0.00216 (~0.22%)")
+assert_that(abs(_r234['a_grav_canonical_m_s2'] - 3571908.0539661474) < 1e-3,
+            "PAPER_234: canonical a_grav = G*1.01*M_init/r_s^2 = 3.57e6 m/s^2 (M_init=4.297e6 M_sun)")
+assert_that(abs(_r234['pert2_factor'] - 1.5) < 1e-9 and _r234['b_tesla_at_t0'] == 1.0,
+            "PAPER_234: Kerr pert_2 = 3*sin(30)=1.5*G*M/r^3; Gauss->Tesla 1e4 G = 1 T")
+assert_that(_r234['new_terms_vs_session53'] == 3 and _r234['M_init_solar'] == 4.297e6,
+            "PAPER_234: 3 new MUGE terms vs Session 53; Sgr A* M_init = 4.297e6 M_sun")
+assert_that(C.wired_count() >= 238, "wired_count >= 238")
 
 
 # =============================================================================

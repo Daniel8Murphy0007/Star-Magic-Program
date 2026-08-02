@@ -1092,3 +1092,5 @@ observable,ngc1792_stellar_forge_starburst,observable,tapestry_lmc_muge,wind-fee
 primitive,B_CRIT,observable,sgr1745_bh_proximity_enhanced,f_sc = 1-B/B_crit
 primitive,MU_0,observable,sgr1745_bh_proximity_enhanced,a_mag = B^2/(2mu0)*V/(Mr)
 observable,sgr1745_bh_proximity_enhanced,paper,PAPER_233,enhanced SGR 1745 MUGE
+observable,sgra_accretion_precession_enhanced,paper,PAPER_234,Sgr A* enhanced MUGE
+observable,sgra_accretion_precession_enhanced,observable,sgr1745_bh_proximity_enhanced,Galactic-Centre pair (Doc 3/14 enhanced)

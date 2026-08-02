@@ -2573,3 +2573,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1507/0. Registry 518 rows / 1093 edges / 237 ledgers. Campaign: 237/2,255 (15 ✓, 222 ⚠). Next: PAPER_234.
 
 ---
+
+## 2026-07-31 — v0.238.0 — BAND 1: PAPER_234 (CLEAN)
+
+- PAPER_234 wired (✓ CLEAN): Sgr A* (4.297e6 M_sun SMBH) enhanced MUGE, 3 new terms vs Session 53: (1) secular accretion M(t)=M_init·(1+Ṁ_0·e^-t/τ_acc) Ṁ_0=0.01 τ_acc=9 Gyr, growth over Hubble=0.00216 (~0.22%); (2) Gauss→Tesla B_T=B_G·1e-4 (1e4 G=1 T); (3) Kerr precession pert_2=3·G·M/r³·sin(30)=1.5·G·M/r³ (a*~0.9). Canonical a_grav=3.57e6 m/s² (r_s=1.27e10 m). Doc 3 enhanced of 8d951e12. Clean arithmetic. Appendix drift auto-corrected.
+- Gate 1512/0. Registry 519 rows / 1095 edges / 238 ledgers. Campaign: 238/2,255 (16 ✓, 222 ⚠). Next: PAPER_235.
+
+---

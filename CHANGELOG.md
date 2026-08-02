@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.238.0] — 2026-07-31 — BAND 1: PAPER_234 — SGR A* ENHANCED (CLEAN)
+
+### Added
+- **PAPER_234 wired** (✓ CLEAN): Sagittarius A* (4.297e6 M_sun SMBH at the Galactic
+  Centre) gets three MUGE terms absent from the Session-53 spin-drag calculator:
+  (1) secular accretion mass growth M(t)=M_init·(1+Ṁ_0·e^-t/τ_acc) with Ṁ_0=0.01,
+  τ_acc=9 Gyr — Sgr A* has grown ~0.22% over the Hubble time (0.01·e^-13.8/9 =
+  0.00216, VLBI/S-star consistent); (2) Gauss→Tesla unit conversion
+  B_T=B_G·1e-4 (1e4 G = 1 T), fixing a unit inconsistency; (3) Kerr precession DM
+  perturbation pert_2 = 3·G·M/r³·sin(30°) = 1.5·G·M/r³ (Lense-Thirring frame-drag
+  projected onto the DM gradient, spin a*~0.9). Canonical a_grav = G·1.01·M_init/
+  r_s² = 3.57e6 m/s² (r_s=1.27e10 m). Doc 3 enhanced of the grok_share_8d951e12
+  thread.
+- Clean arithmetic — no ruling filed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1507 → 1512 (+5). Registry 519 rows / 1095 edges / 238 ledgers.
+
+---
+
 ## [0.237.0] — 2026-07-31 — BAND 1: PAPER_233 — SGR 1745-2900 ENHANCED (CLEAN)
 
 ### Added

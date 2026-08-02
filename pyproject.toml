@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.237.0"
-description = "UQFF Star-Magic-Program v0.237.0: PAPER_233 wired (CLEAN) - SGR 1745-2900 enhanced MUGE (closest magnetar to a SMBH), 3 new terms vs Session 53: SMBH tidal a_BH=6.63e-7 m/s^2 (dominant at 0.92 pc), static magnetic energy a_mag=9.58e4 (B=2e10 T), ATNF P=3.76 s; f_sc=1-B/B_crit=0.99955. Wired 237/2255, gate 1507/0. Registry 518 rows / 1093 edges / 237 ledgers (measured)."
+version = "0.238.0"
+description = "UQFF Star-Magic-Program v0.238.0: PAPER_234 wired (CLEAN) - Sgr A* enhanced MUGE, 3 new terms vs Session 53: secular accretion M(t) (0.22% growth over Hubble, tau_acc=9 Gyr), Gauss->Tesla B_T=B_G*1e-4 (1e4 G=1 T), Kerr precession pert_2=1.5*G*M/r^3 (sin30); a_grav=3.57e6 m/s^2. Wired 238/2255, gate 1512/0. Registry 519 rows / 1095 edges / 238 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
