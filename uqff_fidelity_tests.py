@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.233.0", "uqff_calculator.VERSION = 0.233.0")
+assert_that(C.VERSION == "0.234.0", "uqff_calculator.VERSION = 0.234.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3264,6 +3264,17 @@ assert_that(len(_r229['sign_taxonomy']) == 3 and 'erosion' in _r229['sign_taxono
 assert_that(_r229['m_dot_factor'] == 100 and _r229['E0'] == 0.1,
             "PAPER_229: M_dot_factor = M_gas/M_init = 10000/100 = 100; E_0 = 0.1")
 assert_that(C.wired_count() >= 233, "wired_count >= 233")
+
+_r230 = C.calc('PAPER_230')['value']
+assert_that(_r230['only_negative_term_in_catalogue'] and _r230['g_sn_sign'] == 'negative',
+            "PAPER_230: g_SN is the ONLY negative acceleration term in the MUGE catalogue")
+assert_that(abs(_r230['g_sn_magnitude_m_s2'] - 2.3041584507042247e-21) < 1e-27,
+            "PAPER_230: |g_SN| = G*M_SN0/r^2 = 2.30e-21 m/s^2 (paper's 2.3e-33 is ~12 OOM, Q-222)")
+assert_that(abs(_r230['h_z_s'] - 2.2867559880052767e-18) < 1e-24,
+            "PAPER_230: Friedmann H(z=0.0162) = H0*sqrt(0.3*(1+z)^3+0.7) = 2.287e-18 s^-1 (registry H0)")
+assert_that(abs(_r230['a_bh_m_s2'] - 133456.67993437042) < 1.0,
+            "PAPER_230: a_BH = G*M_BH/r_BH^2 = 1.335e5 m/s^2 (M_BH=2.25e7 M_sun; paper's 1.34e6 is 10x, Q-222)")
+assert_that(C.wired_count() >= 234, "wired_count >= 234")
 
 
 # =============================================================================

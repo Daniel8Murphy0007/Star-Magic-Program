@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.234.0] — 2026-07-31 — BAND 1: PAPER_230 — NGC 2525 + SN 2018gv (NEGATIVE MUGE TERM)
+
+### Added
+- **PAPER_230 wired** (⚠ Q-222): NGC 2525 (barred spiral, ~65 Mpc, z=0.0162)
+  hosting Type-Ia SN 2018gv — introduces the ONLY negative acceleration term in
+  the entire MUGE catalogue (19 docs + full CP1/CP2/CP3 library):
+  `g_SN(t) = -(G·M_SN0·e^-t/τ_SN)/r²`, the declining SN ejecta mass as it
+  disperses. At t=0: g_SN = -G·M_SN0/r² (full Chandrasekhar 1.4 M_sun); at
+  t→∞: →0; dg_SN/dt > 0 (the negative correction becomes less negative as the
+  ejecta leaves the system). |g_SN| = 2.30e-21 m/s² at r=30,000 ly. Friedmann
+  H(z=0.0162) = H0·√(0.3(1+z)³+0.7) = 2.287e-18 s⁻¹ (registry H0=70); central-BH
+  a_BH = G·M_BH/r_BH² = 1.335e5 m/s² (M_BH=2.25e7 M_sun). Doc 10 of the
+  grok_share_8d951e12 thread.
+- Q-222: two worked-example scale errors — |g_SN| stated 2.3e-33 (~12 OOM off,
+  correct 2.30e-21); a_BH stated 1.34e6 (10× high, correct 1.335e5). Corrected
+  values wired.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1487 → 1492 (+5). Registry 515 rows / 1085 edges / 234 ledgers.
+
+---
+
 ## [0.233.0] — 2026-07-31 — BAND 1: PAPER_229 — PILLARS OF CREATION (M16) MUGE
 
 ### Added

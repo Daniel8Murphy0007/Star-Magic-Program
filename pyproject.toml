@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.233.0"
-description = "UQFF Star-Magic-Program v0.233.0: PAPER_229 wired - Pillars of Creation (M16) 9-term MUGE, novel decaying erosion (1-E(t)), E(t)=E_0*e^-t/tau_e, E_0=0.1; sign taxonomy Pillars (1-E) erosion vs Bubble (1+E) compression (221); a_base=G*M/r^2*(1-E)=5.40e-12 m/s^2 (paper 5.36e-24 ~12 OOM Q-221). Wired 233/2255, gate 1487/0. Registry 514 rows / 1083 edges / 233 ledgers (measured)."
+version = "0.234.0"
+description = "UQFF Star-Magic-Program v0.234.0: PAPER_230 wired - NGC 2525 + SN 2018gv, ONLY negative MUGE term g_SN=-(G*M_SN0*e^-t/tau_SN)/r^2 (whole catalogue); |g_SN|=2.30e-21 m/s^2, dg_SN/dt>0 dispersal; H(z=0.0162)=2.287e-18 (registry H0); a_BH=1.335e5; |g_SN| 2.3e-33 + a_BH 1.34e6 drift Q-222. Wired 234/2255, gate 1492/0. Registry 515 rows / 1085 edges / 234 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

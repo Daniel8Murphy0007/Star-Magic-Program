@@ -2543,3 +2543,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1487/0. Registry 514 rows / 1083 edges / 233 ledgers. Campaign: 233/2,255 (13 ✓, 220 ⚠). Next: PAPER_230.
 
 ---
+
+## 2026-07-31 — v0.234.0 — BAND 1: PAPER_230
+
+- PAPER_230 wired (⚠ Q-222): NGC 2525 + SN 2018gv — ONLY negative MUGE term in the whole catalogue. g_SN(t)=-(G·M_SN0·e^-t/τ_SN)/r², declining ejecta mass; t=0 -G·M_SN0/r² (Chandrasekhar 1.4 M_sun), t→∞ →0, dg_SN/dt>0 (dispersal). |g_SN|=2.30e-21 m/s² at 30,000 ly; H(z=0.0162)=H0·√(0.3(1+z)³+0.7)=2.287e-18 (registry H0=70); a_BH=1.335e5 (M_BH=2.25e7 M_sun). Doc 10 of 8d951e12. Appendix drift auto-corrected.
+- Q-222: |g_SN| 2.3e-33 stated (correct 2.30e-21, 12 OOM); a_BH 1.34e6 (correct 1.335e5, 10x).
+- Gate 1492/0. Registry 515 rows / 1085 edges / 234 ledgers. Campaign: 234/2,255 (13 ✓, 221 ⚠). Next: PAPER_231.
+
+---

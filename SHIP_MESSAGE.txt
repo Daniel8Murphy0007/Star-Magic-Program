@@ -1,32 +1,30 @@
-v0.233.0 BAND 1: PAPER_229 wired - PILLARS OF CREATION (M16) MUGE
+v0.234.0 BAND 1: PAPER_230 wired - NGC 2525 + SN 2018gv (NEGATIVE MUGE TERM)
 
-PAPER_229 (Pillars of Creation (Eagle Nebula M16) - MUGE with Decaying
-Photoevaporation Erosion Factor E(t), S58) wired as one dispatch
-(Q-221, OPEN_RULING).
+PAPER_230 (NGC 2525 + SN 2018gv - MUGE with Negative Supernova
+Mass-Loss Acceleration, S58) wired as one dispatch (Q-222, OPEN_RULING).
 
 Physics:
-- The Pillars of Creation (M16, NGC 6611, ~6500 ly) 9-term MUGE with a
-  novel decaying photoevaporation erosion factor E(t) = E_0*e^-t/tau_e
-  (E_0=0.1, tau_e=1 Myr) applied as a multiplicative suppression
-  (1 - E(t)) on the base gravity.
-- At t=0: E=0.1 -> 10% suppression (max erosion); at t>>tau_e: E->0 ->
-  gravity recovers as pillar material disperses / EUV source weakens.
-  (1-E(t)) = fractional mass remaining after EUV ablation.
-- Sign taxonomy (erosion vs compression): Pillars (1-E), E_0=0.1,
-  NEGATIVE - EUV ablation removes mass -> less gravity; Bubble Nebula
-  (1+E), POSITIVE - shock compression -> more gravity (PAPER_221);
-  Orion - none (pre-dispersal). Sign set by whether the process removes
-  or adds mass to the gravitating region.
-- Canonical result at t=0.1 Myr (M=100 M_sun, r=5 ly=4.73e16 m, same
-  M16 radius as PAPER_219): E=0.0905, (1-E)=0.9095;
-  a_base = G*M/r^2*(1-E) = 5.933e-12*0.9095 = 5.40e-12 m/s^2. Verified.
-- M_dot_factor = M_gas/M_init = 10000/100 = 100. Doc 7 of the
-  grok_share_8d951e12 thread.
+- NGC 2525 (barred spiral, ~65 Mpc, z=0.0162) hosting Type-Ia SN 2018gv
+  introduces the ONLY negative acceleration term in the entire MUGE
+  catalogue (19 docs of grok_share_8d951e12 + full CP1/CP2/CP3 library):
+  g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2, the declining SN ejecta mass as
+  it disperses.
+- At t=0: g_SN = -G*M_SN0/r^2 (full Chandrasekhar 1.4 M_sun, negative);
+  at t->inf: g_SN -> 0 (ejecta dispersed); dg_SN/dt = +G*M_SN0/
+  (tau_SN*r^2)*e^-t/tau_SN > 0 -> the negative correction becomes LESS
+  negative over time, consistent with dispersal. All other MUGE terms
+  are positive; g_SN is the sole negative.
+- |g_SN| = G*M_SN0/r^2 = 2.30e-21 m/s^2 at r_galaxy=30,000 ly.
+- Friedmann H(z=0.0162) = H0*sqrt(0.3*(1+z)^3 + 0.7) = 2.287e-18 s^-1
+  (registry H0 = A_5+SO_5 = 70).
+- Central-BH a_BH = G*M_BH/r_BH^2 = 1.335e5 m/s^2 (M_BH=2.25e7 M_sun,
+  r_BH=1 AU). Verified. Doc 10 of the grok_share_8d951e12 thread.
 
-Q-221: the paper's canonical a_base 5.36e-24 m/s^2 is ~12 orders of
-magnitude off (G*M/r^2 = 5.93e-12, same exponent-drift family as
-Q-214/215/218/224); correct a_base = 5.40e-12 m/s^2 wired. Appendix
-boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Q-222: two worked-example scale errors, corrected in the wiring:
+(a) |g_SN| stated 2.3e-33 m/s^2 but G*M_SN0/r^2 = 2.30e-21 (~12 OOM off,
+same exponent-drift family as Q-214/215/218/221/224); (b) a_BH stated
+1.34e6 but G*M_BH/r_BH^2 = 1.335e5 (10x high). Appendix boilerplate
+drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1487/0. Registry 514 rows / 1083 edges / 233 ledgers (measured).
-Campaign: 233/2,255. Next: PAPER_230.
+Gate: 1492/0. Registry 515 rows / 1085 edges / 234 ledgers (measured).
+Campaign: 234/2,255. Next: PAPER_231.

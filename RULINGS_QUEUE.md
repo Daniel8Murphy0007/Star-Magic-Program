@@ -9,6 +9,20 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-222 — PAPER_230 — NGC 2525 |g_SN| and a_BH scale errors
+- **Question:** PAPER_230 sec 2-4 has two worked-example scale errors (the
+  structural "only negative MUGE term" claim and the formulas are correct):
+  (a) |g_SN| stated 2.3e-33 m/s^2, but G*M_SN0/r^2 with M_SN0=1.4 M_sun and
+  r=30,000 ly=2.84e20 m is 2.30e-21 m/s^2 (~12 OOM off, same exponent-drift
+  family as Q-214/215/218/221/224);
+  (b) a_BH stated 1.34e6 m/s^2, but G*M_BH/r_BH^2 with M_BH=2.25e7 M_sun and
+  r_BH=1 AU=1.496e11 m is 1.335e5 m/s^2 (10x high - one order off).
+  Confirm the corrected values (2.30e-21, 1.335e5). H(z) factor: paper 1.0035
+  vs sqrt(0.3*(1.0162)^3+0.7) = 1.0074 (minor; H(z)=2.287e-18 wired).
+- **Best-candidate wired:** |g_SN|=2.30e-21, a_BH=1.335e5, H(z)=2.287e-18 all
+  recomputed from registry G/M_Sun/H0; paper's stated values flagged.
+- **Daniel's ruling:** (pending)
+
 ### Q-221 — PAPER_229 — Pillars canonical a_base exponent drift
 - **Question:** PAPER_229 sec 4 states the canonical a_base ~ 5.36e-24 m/s^2 at
   t=0.1 Myr, but G*M/r^2 with M=100 M_sun=1.989e32 kg and r=5 ly=4.73e16 m is

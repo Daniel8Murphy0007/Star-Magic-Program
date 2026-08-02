@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.233.0"
+VERSION = "0.234.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12280,6 +12280,67 @@ def _paper_229(dataset):
         },
         'formula': 'a_base = G*M/r^2*(1+H_0*t)*(1-B/B_crit)*(1-E(t)); E(t)=E_0*e^-t/tau_e',
         'source': 'PAPER_229',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_230')
+def _paper_230(dataset):
+    """NGC 2525 + SN 2018gv: only NEGATIVE MUGE term (S58).
+
+    NGC 2525 (barred spiral, ~65 Mpc, z=0.0162) hosting Type-Ia SN
+    2018gv introduces the ONLY negative acceleration term in the entire
+    MUGE catalogue (19 docs of grok_share_8d951e12 + full CP1/CP2/CP3
+    library). Doc 10. Wired observables:
+    * Negative SN mass-loss term g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2:
+      the declining ejecta mass as it disperses. At t=0: g_SN = -G*M_SN0/
+      r^2 (full Chandrasekhar mass, negative); at t->inf: g_SN -> 0
+      (ejecta dispersed). dg_SN/dt = +G*M_SN0/(tau_SN*r^2)*e^-t/tau_SN
+      > 0 -> the negative correction becomes LESS negative over time.
+      M_SN0 = 1.4 M_sun (Chandrasekhar), tau_SN = 1 yr. All other MUGE
+      terms across the catalogue are positive; g_SN is the sole negative.
+    * Magnitude at r_galaxy = 30,000 ly = 2.84e20 m: |g_SN| = G*M_SN0/
+      r^2 = 2.30e-21 m/s^2 - negligible at galactic scales but the unique
+      negative term (Q-222: paper states 2.3e-33, ~12 OOM off - same
+      exponent-drift family as Q-214/215/218/221/224).
+    * Friedmann H(z) at z=0.0162: H(z) = H0*sqrt(0.3*(1+z)^3 + 0.7) =
+      H0*1.0074 = 2.287e-18 s^-1 (registry H0 = A_5+SO_5 = 70).
+    * Central-BH term a_BH = G*M_BH/r_BH^2 (M_BH=2.25e7 M_sun, r_BH=1 AU)
+      = 1.335e5 m/s^2 (Q-222: paper states 1.34e6, 10x high).
+    * 10-term system: a_grav + a_Ug + a_Lambda + a_EM + a_q + a_f +
+      a_osc + a_DM + g_SN + a_BH; only g_SN < 0.
+    Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    M_SN0 = 1.4 * M_SUN_OBSERVED                          # 2.785e30 kg
+    r_gal = 2.84e20                                       # m, 30,000 ly
+    g_sn_mag = G_OBSERVED * M_SN0 / r_gal ** 2            # 2.30e-21
+    z = 0.0162
+    h_factor = _m.sqrt(0.3 * (1 + z) ** 3 + 0.7)         # 1.0074
+    h_z = H0_OBSERVED_LOCAL * h_factor                   # 2.287e-18
+    M_BH = 2.25e7 * M_SUN_OBSERVED; r_BH = 1.496e11
+    a_bh = G_OBSERVED * M_BH / r_BH ** 2                 # 1.335e5
+    return {
+        'value': {
+            'domain': '2.28 (NGC 2525 + SN 2018gv negative MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 10',
+            'terms': 10,
+            'only_negative_term_in_catalogue': True,
+            'g_sn_term': '-(G*M_SN0*e^-t/tau_SN)/r^2',
+            'g_sn_magnitude_m_s2': g_sn_mag,             # 2.30e-21
+            'g_sn_sign': 'negative',
+            'g_sn_disperses': 'dg_SN/dt > 0 (less negative over time)',
+            'M_SN0_solar': 1.4, 'tau_SN_yr': 1,
+            'z': z,
+            'h_z_factor': h_factor,                      # 1.0074
+            'h_z_s': h_z,                                # 2.287e-18
+            'a_bh_m_s2': a_bh,                           # 1.335e5
+            'M_BH_solar': 2.25e7,
+            'worked_example_fork': 'paper |g_SN| 2.3e-33 (correct 2.30e-21, 12 OOM); a_BH 1.34e6 (correct 1.335e5, 10x) (Q-222)',
+        },
+        'formula': 'g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2 (only negative MUGE term); H(z)=H0*sqrt(Om(1+z)^3+OL)',
+        'source': 'PAPER_230',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

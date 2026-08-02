@@ -1082,3 +1082,5 @@ observable,westerlund2_ob_wind_muge,paper,PAPER_228,Wd2 9-term MUGE
 observable,westerlund2_ob_wind_muge,observable,tapestry_lmc_muge,"wind family (10x, self-rectifies Q-220)"
 observable,pillars_creation_erosion_muge,paper,PAPER_229,(1-E(t)) erosion MUGE
 observable,pillars_creation_erosion_muge,observable,bubble_nebula_positive_expansion,(1-E) vs (1+E) sign taxonomy PAPER_221
+primitive,H0_OBSERVED_LOCAL,observable,ngc2525_negative_sn_massloss,H(z) Friedmann
+observable,ngc2525_negative_sn_massloss,paper,PAPER_230,only negative MUGE term
