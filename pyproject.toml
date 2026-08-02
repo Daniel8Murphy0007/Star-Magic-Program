@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.250.0"
-description = "UQFF Star-Magic-Program v0.250.0: PAPER_246 wired (CLEAN) - universal MUGE dual-mode oscillatory gravity g_osc = standing 2A cos(kx)cos(wt) + Hubble traveling (2pi/T_H)A cos(kx-wt); Mode-2 factor 0.455, resonance T_H=2pi=6.28 Gyr, <g_osc>=0. Wired 250/2255, gate 1571/0. Registry 535 rows / 1142 edges / 250 ledgers (measured)."
+version = "0.251.0"
+description = "UQFF Star-Magic-Program v0.251.0: PAPER_247 wired (CLEAN) - MUGE merger interaction modulation g_merger=g_base*(1+I0*exp(-t/t_merger)); I0=0.1, peak 2.42*Ug1, t_half=277 Myr, t_relax=921 Myr; f_TRZ=0.1 canonical; Antennae+HUDF. Wired 251/2255, gate 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

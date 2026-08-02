@@ -1,24 +1,23 @@
-v0.250.0 BAND 1: PAPER_246 wired - MUGE DUAL-MODE OSCILLATORY GRAVITY (CLEAN)
+v0.251.0 BAND 1: PAPER_247 wired - MUGE MERGER INTERACTION MODULATION (CLEAN)
 
-PAPER_246 (MUGE Dual-Mode Oscillatory Gravity - Standing Wave and
-Hubble-Normalised Traveling Wave, S62, grok_share_8d951e12 4th-pass,
-CondensedPhysics3.py) wired as one dispatch (CLEAN, WIRED). Third universal MUGE
-sub-term (with g_Q PAPER_244, g_fluid PAPER_245).
+PAPER_247 (MUGE Merger Interaction Modulation - Tidal Gravity Boost with
+Exponential Decay, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
+wired as one dispatch (CLEAN, WIRED).
 
-The universal MUGE dual-mode oscillatory gravity sub-term g_osc:
-- Mode 1 standing wave: g_osc1 = 2*A*cos(kx)*cos(wt)
-- Mode 2 Hubble-normalised traveling wave: g_osc2 = (2pi/T_H_gyr)*A*cos(kx-wt)
-- Total <g_osc> = 0 (Dual-Mode Zero-Mean Theorem); |g_osc|_max = A*(2+2pi/T_H)
+The MUGE merger interaction modulation sub-term: transient tidal gravity boost
+with exponential decay.
+  I(t) = I0*exp(-t/t_merger); g_merger = g_base*(1+I(t)).
+I0=0.1 (10% boost at t=0); t_merger=400 Myr=1.262e16 s.
 
-k=1/r, omega=2pi c/r => T_osc = r/c (light-crossing time).
+Base gravity: g_base=(Ug1+Ug4)*(1+f_TRZ), Ug4=Ug1*(1-B/B_crit), f_TRZ=0.1
+(canonical F_TRZ). For B<<B_crit: g_base=2.2*Ug1, peak g_merger(0)=2.42*Ug1.
 
-Numerics (reproduce): Mode-2 factor 2pi/13.8 = 0.455 (z=0); Hubble resonance
-T_H_gyr = 2pi = 6.28 Gyr; |g_osc|_max = 2.455*A; T_osc = 3.3 kyr (1 kpc),
-3.3 Myr (1 Mpc).
+Characteristic times (reproduce): t_half=400*ln2=277 Myr; t_relax=400*ln(10)=
+921 Myr; I(t_merger)=I0/e=0.037. Integrated boost=40 Myr*g_base. Antennae +
+HUDF modules.
 
-CLEAN - all numerics reproduce. MILESTONE: 250/2,255 wired (quarter-way to the
-PAPER_500 audit stop). Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected
-per charter.
+CLEAN - all numerics reproduce; f_TRZ=0.1 from canonical F_TRZ. Appendix drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1571/0. Registry 535 rows / 1142 edges / 250 ledgers (measured).
-Campaign: 250/2,255. Next: PAPER_247.
+Gate: 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured).
+Campaign: 251/2,255. Next: PAPER_248.

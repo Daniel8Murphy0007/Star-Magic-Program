@@ -1141,3 +1141,7 @@ primitive,C_OBSERVED,observable,muge_dualmode_oscillatory_gravity,omega=2pi c/r,
 observable,muge_dualmode_oscillatory_gravity,paper,PAPER_246,dual-mode oscillatory g_osc standing+traveling
 observable,muge_dualmode_oscillatory_gravity,observable,muge_fluid_selfgravity_archimedes,companion universal MUGE sub-term (PAPER_245)
 observable,muge_dualmode_oscillatory_gravity,observable,muge_quantum_uncertainty_gQ,companion universal MUGE sub-term (PAPER_244)
+primitive,F_TRZ,observable,muge_merger_interaction_modulation,f_TRZ=0.1 in g_base
+primitive,G_OBSERVED,observable,muge_merger_interaction_modulation,Ug1=G*M/r^2
+observable,muge_merger_interaction_modulation,paper,PAPER_247,g_merger tidal boost exp decay
+observable,muge_merger_interaction_modulation,observable,muge_dualmode_oscillatory_gravity,universal MUGE sub-term series (PAPER_246)

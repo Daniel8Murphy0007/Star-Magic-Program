@@ -2895,3 +2895,31 @@ beta_i=0.603) auto-corrected per charter.
 
 Gate: 1571/0. Registry 535 rows / 1142 edges / 250 ledgers (measured).
 Campaign: 250/2,255. Next: PAPER_247.
+
+---
+
+## 2026-08-02 — v0.251.0 — BAND 1: PAPER_247 — MUGE MERGER INTERACTION MODULATION (CLEAN)
+
+PAPER_247 (MUGE Merger Interaction Modulation — Tidal Gravity Boost with
+Exponential Decay, Session 62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (CLEAN, WIRED).
+
+The MUGE merger interaction modulation sub-term: transient tidal gravity boost
+with exponential decay.
+  I(t) = I0*exp(-t/t_merger); g_merger = g_base*(1+I(t)).
+I0=0.1 (10% boost at t=0); t_merger=400 Myr=1.262e16 s.
+
+Base gravity: g_base=(Ug1+Ug4)*(1+f_TRZ), Ug4=Ug1*(1-B/B_crit), f_TRZ=0.1
+(canonical F_TRZ). For B<<B_crit: g_base=2.2*Ug1, peak g_merger(0)=2.42*Ug1
+(~2.4x DPM-seeded, Antennae tidal amplitude).
+
+Characteristic times (reproduce): t_half=400*ln2=277 Myr; t_relax=400*ln(10)=
+921 Myr; I(t_merger)=I0/e=0.037. Integrated boost=g_base*I0*t_merger=
+40 Myr*g_base. Grounded in Antennae (NGC 4038/4039) + HUDF MUGE modules.
+
+CLEAN - all numerics reproduce; f_TRZ=0.1 composed from canonical F_TRZ.
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per
+charter.
+
+Gate: 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured).
+Campaign: 251/2,255. Next: PAPER_248.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.250.0"
+VERSION = "0.251.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13389,6 +13389,72 @@ def _paper_246(dataset):
         },
         'formula': 'g_osc = 2*A*cos(kx)*cos(wt) + (2*pi/T_H_gyr)*A*cos(kx-wt); <g_osc>=0; T_osc=r/c',
         'source': 'PAPER_246',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_247')
+def _paper_247(dataset):
+    """MUGE merger interaction modulation: tidal gravity boost + decay (S62).
+
+    Captures the transient gravitational boost during and after a galaxy-merger
+    tidal encounter via an exponentially decaying interaction function:
+        I(t) = I0 * exp(-t / t_merger)
+        g_merger = g_base * (1 + I(t))
+    peaking at (1+I0) times base MUGE gravity at closest approach (t=0) and
+    relaxing to unity on the merger timescale t_merger. I0 = 0.1 (10% boost);
+    t_merger = 400 Myr = 1.262e16 s.
+
+    Base gravity from UQFF sub-terms:
+        Ug1 = G*M/r^2 (magnetic-dipole gravity)
+        Ug4 = Ug1*(1 - B/B_crit) (vacuum-field correction; Ug4 < Ug1 for B>0)
+        g_base = (Ug1 + Ug4)*(1 + f_TRZ) = Ug1*(2 - B/B_crit)*(1 + f_TRZ)
+    with f_TRZ = 0.1 (canonical F_TRZ triadic-resonance-zone factor). For
+    B << B_crit (galactic ~1e-10 T): g_base ~ 2*Ug1*(1+f_TRZ) = 2.2*Ug1, so
+    peak g_merger(0) = 2.2*Ug1*1.1 = 2.42*Ug1 (~2.4x DPM-seeded gravity,
+    matching Antennae-class tidal-distortion amplitudes).
+
+    Characteristic times (reproduce):
+      t_half  = t_merger*ln(2) = 400*0.693 = 277 Myr;
+      t_relax = t_merger*ln(I0/0.01) = 400*ln(10) = 921 Myr (I drops below 1%);
+      I(400 Myr) = I0/e = 0.037 (current Antennae 3.7% boost).
+    Integrated boost: integral_0^inf [g_merger-g_base] dt = g_base*I0*t_merger =
+    40 Myr*g_base (total gravitational impulse; orbital-energy deficit).
+
+    Appears in the Antennae Galaxies and HUDF MUGE modules (astrophysical
+    grounding). CLEAN - all numerics reproduce. Appendix boilerplate drift
+    (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    I0 = 0.1
+    t_merger_myr = 400
+    f_TRZ = F_TRZ                                         # 0.1 canonical
+    g_base_over_Ug1 = 2 * (1 + f_TRZ)                     # 2.2 (B<<B_crit)
+    peak_over_Ug1 = g_base_over_Ug1 * (1 + I0)            # 2.42
+    t_half_myr = t_merger_myr * math.log(2)              # 277
+    t_relax_myr = t_merger_myr * math.log(I0 / 0.01)     # 921
+    I_at_tmerger = I0 * math.exp(-1)                      # 0.0368
+    t_merger_s = 400e6 * 3.156e7                          # 1.262e16
+    integrated_boost_myr = I0 * t_merger_myr             # 40 Myr*g_base
+    return {
+        'value': {
+            'domain': '2.45 (MUGE merger interaction modulation)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'formula_symbolic': 'g_merger = g_base*(1 + I0*exp(-t/t_merger))',
+            'I0': I0, 't_merger_myr': t_merger_myr, 't_merger_s': t_merger_s,
+            'f_TRZ': f_TRZ,                               # 0.1 canonical
+            'g_base_over_Ug1': g_base_over_Ug1,           # 2.2
+            'peak_g_merger_over_Ug1': peak_over_Ug1,      # 2.42
+            't_half_myr': t_half_myr,                     # 277
+            't_relax_myr': t_relax_myr,                   # 921
+            'I_at_t_merger': I_at_tmerger,                # 0.037
+            'integrated_boost_myr_g_base': integrated_boost_myr,  # 40
+            'systems': ['Antennae (NGC 4038/4039)', 'HUDF'],
+            'universal_muge_term': True,
+        },
+        'formula': 'I(t)=I0*exp(-t/t_merger); g_merger=g_base*(1+I(t)); t_half=t_merger*ln2; t_relax=t_merger*ln(I0/0.01)',
+        'source': 'PAPER_247',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

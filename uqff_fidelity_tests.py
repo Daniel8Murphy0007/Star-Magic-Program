@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.250.0", "uqff_calculator.VERSION = 0.250.0")
+assert_that(C.VERSION == "0.251.0", "uqff_calculator.VERSION = 0.251.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3451,6 +3451,17 @@ assert_that(abs(_r246['T_osc_1kpc_kyr'] - 3.26) < 0.05 and abs(_r246['T_osc_1mpc
 assert_that(_r246['universal_muge_term'] and _r246['zero_mean_bounded'],
             "PAPER_246: universal MUGE sub-term (with g_Q PAPER_244, g_fluid PAPER_245); zero-mean bounded")
 assert_that(C.wired_count() >= 250, "wired_count >= 250")
+
+_r247 = C.calc('PAPER_247')['value']
+assert_that(_r247['f_TRZ'] == 0.1 and abs(_r247['peak_g_merger_over_Ug1'] - 2.42) < 1e-6,
+            "PAPER_247: f_TRZ=0.1 (canonical); peak g_merger(0) = 2.2*Ug1*1.1 = 2.42*Ug1 (B<<B_crit)")
+assert_that(abs(_r247['t_half_myr'] - 277.3) < 0.5 and abs(_r247['t_relax_myr'] - 921.0) < 0.5,
+            "PAPER_247: t_half = 400*ln(2) = 277 Myr; t_relax = 400*ln(10) = 921 Myr (reproduce)")
+assert_that(abs(_r247['I_at_t_merger'] - 0.0368) < 1e-3 and abs(_r247['integrated_boost_myr_g_base'] - 40) < 1e-6,
+            "PAPER_247: I(t_merger) = I0/e = 0.037; integrated boost = g_base*I0*t_merger = 40 Myr*g_base")
+assert_that(abs(_r247['t_merger_s'] - 1.2624e16) < 1e13 and _r247['universal_muge_term'],
+            "PAPER_247: t_merger = 400 Myr = 1.262e16 s; universal MUGE merger term (Antennae + HUDF)")
+assert_that(C.wired_count() >= 251, "wired_count >= 251")
 
 
 # =============================================================================

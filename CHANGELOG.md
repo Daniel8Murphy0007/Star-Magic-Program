@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.251.0] — 2026-08-02 — BAND 1: PAPER_247 — MUGE MERGER INTERACTION MODULATION (CLEAN)
+
+### Added
+- **PAPER_247 dispatch** — the MUGE merger interaction modulation sub-term (Session 62, grok_share_8d951e12 4th-pass). Transient tidal gravity boost with exponential decay.
+  - **Formula:** I(t) = I0·e^(−t/t_merger); g_merger = g_base·(1+I(t)). I0 = 0.1 (10% boost at t=0); t_merger = 400 Myr = 1.262e16 s.
+  - **Base gravity:** g_base = (Ug1+Ug4)·(1+f_TRZ), Ug4 = Ug1·(1−B/B_crit), f_TRZ = 0.1 (canonical F_TRZ). For B≪B_crit: g_base = 2.2·Ug1, peak g_merger(0) = 2.42·Ug1 (~2.4× DPM-seeded).
+  - **Characteristic times (reproduce):** t_half = 400·ln2 = 277 Myr; t_relax = 400·ln(10) = 921 Myr; I(t_merger) = I0/e = 0.037. Integrated boost = g_base·I0·t_merger = 40 Myr·g_base.
+  - Grounded in the Antennae Galaxies (NGC 4038/4039) and HUDF MUGE modules.
+- Gate +4 assertions (1571 → 1576, 0 failures).
+- Registry: +1 row (536), +4 edges (1146), +1 citation (251).
+
+### Notes
+- CLEAN — all numerics reproduce; f_TRZ = 0.1 composed from canonical F_TRZ.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.250.0] — 2026-08-02 — BAND 1: PAPER_246 — MUGE DUAL-MODE OSCILLATORY GRAVITY (CLEAN)
 
 ### Added
