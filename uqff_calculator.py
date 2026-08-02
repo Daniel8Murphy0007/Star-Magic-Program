@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.245.0"
+VERSION = "0.246.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13056,4 +13056,70 @@ def _paper_241(dataset):
         'source': 'PAPER_241',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_242')
+def _paper_242(dataset):
+    """Rings of Relativity GAL-CLUS-022058s: Einstein-ring lensing MUGE (S60).
+
+    Full 9-term Master Universal Gravity Equation for the GAL-CLUS-022058s
+    gravitational lens ("Rings of Relativity"). Novel term: the STATIC
+    Einstein-ring lensing amplification factor
+        L_t = (G*M / (c^2 * r)) * L_factor,   L_factor = D_LS/D_S = 0.67
+        corr_L = 1 + L_t
+    where G*M/(c^2*r) is the Schwarzschild-radius-to-Einstein-radius ratio and
+    L_factor = D_LS/D_S is the single-lens single-source distance ratio.
+    Distinct from CP3 class-81's DYNAMIC lensing L(t)=L_0*e^-t/tau*cos(w t):
+    this is a geometry-driven constant (no time dependence).
+
+    9-term MUGE: T1 base(1+H(z)t)(1-B/B_crit)(1+L_t) + T2 UQFF(U_g1+U_g4)
+    (1+f_TRZ) + T3 Lambda*c^2/3 + T4 EM(1+rho_UA/rho_SCm)*s_EM + T5 quantum +
+    T6 fluid + T7 two-mode osc (standing 2cos + Gyr traveling) + T8 DM
+    (delta rho/rho + delta_2), delta_2 = 3*mu_s*grad(M_s/r)/r tidal correction +
+    T9 stellar wind rho_w*v_w^2/rho_fl.
+    T4 vacuum ratio rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT (canonical).
+
+    Numerical (M=1.989e44 kg [1e14 M_sun], r=3.086e20 m [~10 kpc], z=0.5):
+      GM/(c^2 r) = 4.79e-4; L_t = 4.79e-4 * 0.67 = 3.21e-4 (derived-correct);
+      corr_L = 1.00032 (~0.032% amplification);
+      H(z=0.5)/H0 = sqrt(0.3*(1.5)^3 + 0.7) = sqrt(1.7125) = 1.309.
+
+    Q-227: (a) the paper states L_t ~= 1.6e-3 (corr_L ~= 1.0016, ~0.16%) but
+    the formula yields 3.21e-4 (corr_L 1.00032) - ~5x off. (b) H(z=0.5) is
+    stated ~1.27*H0 but sqrt(0.3*3.375+0.7)=1.309*H0. Wired the derived-correct
+    values; both stated figures flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    G = G_OBSERVED; c = C_OBSERVED
+    M = 1.989e44; r = 3.086e20                            # 1e14 M_sun, ~10 kpc
+    L_factor = 0.67                                       # D_LS/D_S given
+    schwarz_ratio = G * M / (c ** 2 * r)                  # 4.79e-4
+    L_t = schwarz_ratio * L_factor                        # 3.21e-4
+    corr_L = 1 + L_t                                      # 1.00032
+    ua_scm_ratio = 1.0 / F_TRZ                            # 10 EXACT (T4)
+    Om = 0.3; OL = 0.7; z = 0.5
+    Hz_over_H0 = (Om * (1 + z) ** 3 + OL) ** 0.5          # 1.309
+    return {
+        'value': {
+            'domain': '2.40 (GAL-CLUS-022058s Einstein-ring lensing MUGE)',
+            'source_thread': 'Doc 8 Rings of Relativity MUGE (Oct 2025)',
+            'system': 'GAL-CLUS-022058s (Rings of Relativity)',
+            'muge_terms': 9,
+            'M_kg': M, 'einstein_radius_m': r, 'z_lens': z,
+            'L_factor': L_factor,                         # D_LS/D_S
+            'schwarz_to_einstein_ratio': schwarz_ratio,  # 4.79e-4
+            'L_t': L_t,                                   # 3.21e-4 derived
+            'corr_L': corr_L,                             # 1.00032
+            'ua_scm_ratio': ua_scm_ratio,                # 10 EXACT (T4)
+            'Hz_over_H0_z0p5': Hz_over_H0,                # 1.309 derived
+            'lensing_static_geometric': True,            # vs class-81 dynamic L(t)
+            'dm_pert2_tidal': '3*mu_s*grad(M_s/r)/r',    # T8 second-order
+            'two_mode_osc': 'standing 2cos + Gyr traveling',  # T7
+            'value_drift': 'L_t 1.6e-3 stated vs 3.21e-4 computed (~5x); H(z=0.5) 1.27 stated vs 1.309 computed (Q-227)',
+        },
+        'formula': 'L_t = (G*M/(c^2*r))*L_factor; corr_L = 1+L_t; H(z)=H0*sqrt(Om(1+z)^3+OL)',
+        'source': 'PAPER_242',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

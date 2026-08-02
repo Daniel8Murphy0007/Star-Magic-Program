@@ -5528,3 +5528,13 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct values (F_spooky=5.55e-30, Q_wave=3.10e-15); Q_wave exponent + abstract flagged.
 - **Ruling needed:** confirm Q_wave=3.10e-15 J/m^3 (derived) vs the stated 3.11e9; if 3.11e9 is intended, supply the corrected C_DPM/omega_0 or the scale behind it.
 - Wired v0.244.0, status OPEN_RULING.
+
+## Q-227 — PAPER_242 Rings of Relativity: L_t and H(z=0.5) numerical mismatches
+- Novel term: L_t = (G*M/(c^2*r))*L_factor, L_factor = D_LS/D_S = 0.67 (static Einstein-ring lensing amplification).
+- **(a)** With M=1.989e44 kg, r=3.086e20 m: GM/(c^2 r)=4.79e-4, so L_t = 4.79e-4*0.67 = 3.21e-4 (corr_L=1.00032, ~0.032%). The paper (sec 6) states L_t ≈ 1.6e-3 and corr_L ≈ 1.0016 (~0.16%) — the computed value is ~5× smaller.
+- **(b)** H(z=0.5)/H0 = sqrt(0.3*(1.5)^3 + 0.7) = sqrt(1.7125) = 1.309. The paper (sec 6) states ≈1.27*H0. Minor arithmetic slip.
+- Reproducible and locked: L_factor=0.67 (given D_LS/D_S); T4 rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT; 9-term MUGE structure; δ_2 = 3μ_s∇(M_s/r)/r tidal perturbation.
+- Wired the derived-correct values (L_t=3.21e-4, H(z=0.5)=1.309*H0); both stated figures flagged.
+- **Ruling needed:** confirm L_t=3.21e-4 (derived) vs stated 1.6e-3, and H(z=0.5)=1.309*H0 vs stated 1.27; if the stated values are intended, supply the corrected parameters.
+- New source thread: Doc 8 "Rings of Relativity MUGE" (Grok/xAI, October 2025) — Session 60 opens.
+- Wired v0.246.0, status OPEN_RULING.

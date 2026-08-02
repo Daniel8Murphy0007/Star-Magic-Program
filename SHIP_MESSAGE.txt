@@ -1,21 +1,22 @@
-v0.245.0 BAND 1: PAPER_241 wired - VALIDATION CROSS-REFERENCE (CLEAN)
+v0.246.0 BAND 1: PAPER_242 wired - RINGS OF RELATIVITY LENSING MUGE (Q-227)
 
-PAPER_241 (UQFF Validation Cross-Reference Report - 92.53% ArXiv Alignment,
-93.3% Experimental Pass Rate, S59, VALIDATION_COMPARISON_REPORT.md,
-grok_share_8d951e12 attachment) wired as one dispatch (CLEAN, WIRED).
+PAPER_242 (Rings of Relativity: Einstein Ring Lensing Amplification in the
+Full MUGE, GAL-CLUS-022058s, S60, Doc 8, Grok/xAI Oct 2025) wired as one
+dispatch (OPEN_RULING, Q-227). New source thread opens (Doc 8).
 
-The overarching validation-framework meta-paper. Three verification streams:
-- ArXiv: 16 papers / 10 categories => 92.53% mean alignment
-- Experimental: 15 tests => 14/15 = 93.33% pass rate
-- Computational: 100 systems (Source10 OpenMP mt19937) => 100% finite
-- Overall = (92.53+93.3+100)/3 = 95.28% (reproduces); chi^2_nu = 1.03 (N=9)
+Novel static lensing term: L_t = (G*M/(c^2*r))*L_factor, L_factor=D_LS/D_S=0.67;
+corr_L = 1+L_t. Geometry-driven constant, distinct from CP3 class-81's dynamic
+L(t)=L_0*e^-t/tau*cos(w t).
 
-Key single points: Higgs 125.09 GeV = 99.79% (tightest); THz 1.18 THz 1.7% dev;
-LENR COP 1.12 2.6% dev; 26D 100% match. Ties PAPER_237/239/240.
+9-term MUGE g_Rings with T4 rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT; T8 DM tidal
+delta_2 = 3*mu_s*grad(M_s/r)/r; T7 two-mode osc (standing 2cos + Gyr traveling).
 
-CLEAN - the 3-stream aggregate (95.28%) and experimental pass rate (14/15) both
-reproduce exactly. Appendix drift (VDS 1.894, kg/m^3, garbled beta_i=0.61 line
--> canonical beta_i per PAPER_1203) auto-corrected per charter.
+Derived-correct: L_t=3.21e-4 (corr_L 1.00032); H(z=0.5)/H0=sqrt(0.3*(1.5)^3
++0.7)=1.309.
 
-Gate: 1546/0. Registry 529 rows / 1123 edges / 245 ledgers (measured).
-Campaign: 245/2,255. Next: PAPER_242.
+Q-227: (a) paper L_t~1.6e-3 (corr_L~1.0016) vs formula 3.21e-4 ~5x off;
+(b) H(z=0.5) stated ~1.27 vs computed 1.309 H0. Wired derived-correct values.
+Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured).
+Campaign: 246/2,255. Next: PAPER_243.

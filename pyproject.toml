@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.245.0"
-description = "UQFF Star-Magic-Program v0.245.0: PAPER_241 wired (CLEAN) - validation cross-reference meta-paper; 3 streams (ArXiv 92.53%, experimental 93.3% 14/15, computational 100/100 finite) => overall 95.28%; Higgs 99.79%, 26D 100%, chi2_nu=1.03. Wired 245/2255, gate 1546/0. Registry 529 rows / 1123 edges / 245 ledgers (measured)."
+version = "0.246.0"
+description = "UQFF Star-Magic-Program v0.246.0: PAPER_242 wired (Q-227) - Rings of Relativity GAL-CLUS-022058s 9-term Einstein-ring lensing MUGE; static L_t=(GM/c^2r)*0.67=3.21e-4, T4 rho_UA/rho_SCm=1/F_TRZ=10 EXACT, H(z=0.5)=1.309 H0. Wired 246/2255, gate 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

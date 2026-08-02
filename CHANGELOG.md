@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.246.0] — 2026-08-02 — BAND 1: PAPER_242 — RINGS OF RELATIVITY LENSING MUGE (Q-227)
+
+### Added
+- **PAPER_242 dispatch** — GAL-CLUS-022058s "Rings of Relativity" 9-term Einstein-ring lensing MUGE (Session 60, Doc 8, Grok/xAI October 2025 — new source thread).
+  - **Novel static lensing term:** L_t = (G·M/(c²·r))·L_factor, L_factor = D_LS/D_S = 0.67; corr_L = 1+L_t. Geometry-driven constant, distinct from CP3 class-81's dynamic L(t)=L₀·e^-t/τ·cos(ωt).
+  - **T4 vacuum ratio:** ρ_UA/ρ_SCm = 1/F_TRZ = 10 EXACT.
+  - **9-term MUGE:** base+H(z)+B+L / UQFF(1+f_TRZ) / Λc²/3 / EM / quantum / fluid / two-mode osc (standing 2cos + Gyr traveling) / DM (δρ/ρ + δ₂=3μ_s∇(M_s/r)/r tidal) / stellar wind.
+  - **Derived-correct values:** L_t = 3.21e-4 (corr_L 1.00032); H(z=0.5)/H0 = √(0.3·(1.5)³+0.7) = 1.309.
+- Gate +4 assertions (1546 → 1551, 0 failures).
+- Registry: +2 rows (531), +6 edges (1129), +1 citation (246).
+
+### Ruling filed
+- **Q-227** — (a) the paper states L_t ≈ 1.6e-3 (corr_L ≈ 1.0016) but the formula yields 3.21e-4 (corr_L 1.00032) — ~5× off; (b) H(z=0.5) is stated ≈1.27·H0 but computes to 1.309·H0. Wired the derived-correct values; both stated figures flagged. New source thread (Doc 8, Session 60).
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.245.0] — 2026-08-02 — BAND 1: PAPER_241 — VALIDATION CROSS-REFERENCE (CLEAN)
 
 ### Added

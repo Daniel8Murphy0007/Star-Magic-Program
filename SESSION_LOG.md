@@ -2747,3 +2747,32 @@ auto-corrected per charter.
 
 Gate: 1546/0. Registry 529 rows / 1123 edges / 245 ledgers (measured).
 Campaign: 245/2,255. Next: PAPER_242.
+
+---
+
+## 2026-08-02 — v0.246.0 — BAND 1: PAPER_242 — RINGS OF RELATIVITY LENSING MUGE (Q-227)
+
+PAPER_242 (Rings of Relativity: Einstein Ring Lensing Amplification in the
+Full MUGE, GAL-CLUS-022058s, Session 60, Doc 8, Grok/xAI October 2025) wired
+as one dispatch (OPEN_RULING, Q-227). New source thread opens (Doc 8).
+
+Novel static lensing term: L_t = (G*M/(c^2*r))*L_factor, L_factor = D_LS/D_S =
+0.67; corr_L = 1+L_t. Geometry-driven constant, distinct from CP3 class-81's
+dynamic L(t)=L_0*e^-t/tau*cos(w t).
+
+9-term MUGE g_Rings: T1 base(1+H(z)t)(1-B/B_crit)(1+L_t) + T2 UQFF(U_g1+U_g4)
+(1+f_TRZ) + T3 Lambda*c^2/3 + T4 EM(1+rho_UA/rho_SCm)*s_EM + T5 quantum + T6
+fluid + T7 two-mode osc (standing 2cos + Gyr traveling) + T8 DM(delta rho/rho +
+3*mu_s*grad(M_s/r)/r tidal delta_2) + T9 wind. T4 rho_UA/rho_SCm = 1/F_TRZ = 10
+EXACT.
+
+Derived-correct: L_t = 3.21e-4 (corr_L 1.00032); H(z=0.5)/H0 = sqrt(0.3*(1.5)^3
++0.7) = 1.309.
+
+Q-227: (a) paper states L_t~1.6e-3 (corr_L~1.0016) vs formula 3.21e-4
+(corr_L 1.00032) ~5x off; (b) H(z=0.5) stated ~1.27*H0 vs computed 1.309*H0.
+Wired derived-correct values; both flagged. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured).
+Campaign: 246/2,255. Next: PAPER_243.

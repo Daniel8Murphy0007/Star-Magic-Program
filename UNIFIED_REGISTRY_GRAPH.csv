@@ -1122,3 +1122,9 @@ observable,uqff_validation_cross_reference,paper,PAPER_241,3-stream validation o
 observable,uqff_validation_cross_reference,observable,master_buoyancy_fubii_catalogue,validates F_U_Bi_i + 26D (PAPER_237)
 observable,uqff_validation_cross_reference,observable,thz_shock_force_starformation,validates THz 1.18 THz 1.7% (PAPER_239)
 observable,uqff_validation_cross_reference,observable,dpm_resonance_energy_density,validates DPM resonance magnetar (PAPER_240)
+primitive,G_OBSERVED,observable,einstein_ring_lensing_factor,GM/(c^2 r) Schwarzschild ratio
+primitive,C_OBSERVED,observable,einstein_ring_lensing_factor,c^2 in Schwarzschild ratio
+primitive,F_TRZ,observable,rings_relativity_muge_9term,T4 rho_UA/rho_SCm = 1/F_TRZ = 10
+observable,einstein_ring_lensing_factor,paper,PAPER_242,static L_t 3.21e-4
+observable,rings_relativity_muge_9term,paper,PAPER_242,9-term MUGE g_Rings
+observable,einstein_ring_lensing_factor,observable,rings_relativity_muge_9term,L_t is T1 lensing correction

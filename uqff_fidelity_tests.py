@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.245.0", "uqff_calculator.VERSION = 0.245.0")
+assert_that(C.VERSION == "0.246.0", "uqff_calculator.VERSION = 0.246.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3396,6 +3396,17 @@ assert_that(_r241['computational_systems'] == 100 and _r241['computational_finit
 assert_that(_r241['higgs_alignment_pct'] == 99.79 and _r241['thz_deviation_pct'] == 1.7 and _r241['lenr_cop'] == 1.12 and _r241['chi2_nu'] == 1.03,
             "PAPER_241: Higgs 99.79%, THz 1.7% dev, LENR COP 1.12, chi^2_nu=1.03 (N=9)")
 assert_that(C.wired_count() >= 245, "wired_count >= 245")
+
+_r242 = C.calc('PAPER_242')['value']
+assert_that(abs(_r242['L_t'] - 3.2067e-4) < 1e-7 and abs(_r242['corr_L'] - 1.000321) < 1e-5,
+            "PAPER_242: L_t = (GM/c^2r)*0.67 = 3.21e-4 derived (corr_L 1.00032); paper 1.6e-3 Q-227")
+assert_that(_r242['ua_scm_ratio'] == 10.0 and _r242['L_factor'] == 0.67,
+            "PAPER_242: T4 rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT; L_factor = D_LS/D_S = 0.67")
+assert_that(abs(_r242['Hz_over_H0_z0p5'] - 1.3086) < 1e-3,
+            "PAPER_242: H(z=0.5)/H0 = sqrt(0.3*(1.5)^3+0.7) = 1.309 derived (paper 1.27 Q-227)")
+assert_that(_r242['muge_terms'] == 9 and _r242['lensing_static_geometric'],
+            "PAPER_242: 9-term MUGE; static geometric Einstein-ring lensing (vs class-81 dynamic L(t))")
+assert_that(C.wired_count() >= 246, "wired_count >= 246")
 
 
 # =============================================================================
