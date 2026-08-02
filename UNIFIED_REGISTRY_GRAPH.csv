@@ -1212,3 +1212,7 @@ observable,hudf_dual_channel_cascade_buoyancy,observable,hudf_trz_cpt_phase_tran
 observable,hudf_gravitational_meissner_bcrit,paper,PAPER_266,gravitational Meissner effect B_crit=1e11
 observable,hudf_gravitational_meissner_bcrit,observable,cassiopeia_a_class_completeness,NS critical zone (Cas A B~boundary, PAPER_257)
 observable,hudf_gravitational_meissner_bcrit,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp corr_B in U_g4 (PAPER_264)
+primitive,G_OBSERVED,observable,ngc1792_ssfr_starburst_buoyancy_coherence,ug1_base=G*M0/r^2
+primitive,BETA_I,observable,ngc1792_ssfr_starburst_buoyancy_coherence,beta_i canonical Tier-2/3
+observable,ngc1792_ssfr_starburst_buoyancy_coherence,paper,PAPER_267,sSFR coupling starburst-buoyancy coherence
+observable,ngc1792_ssfr_starburst_buoyancy_coherence,observable,ngc1792_full_muge,NGC 1792 Stellar Forge companion (PAPER_232)

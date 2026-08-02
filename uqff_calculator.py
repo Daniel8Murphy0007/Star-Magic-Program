@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.270.0"
+VERSION = "0.271.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14894,4 +14894,74 @@ def _paper_266(dataset):
         'source': 'PAPER_266',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_267')
+def _paper_267(dataset):
+    """NGC 1792 sSFR as dimensionless coupling - starburst-buoyancy coherence (S73).
+
+    Identifies the NGC 1792 SFR_factor = SFR[M_sun/yr]/M0[M_sun] = 10/1e10 =
+    1e-9 yr^-1 as the SPECIFIC star-formation rate (sSFR) - a dimensionless
+    coupling constant that scales the time-evolving mass:
+        M(t) = M0*(1 + sSFR*e^(-t/tau_SF))
+        Ug1_t = G*M(t)/r^2 = ug1_base*(1 + sSFR*e^(-t/tau_SF))
+    In UQFF 2.0 (PAPER_198 3-tier buoyancy), Ug1_t propagates into ALL three
+    buoyancy tiers, so sSFR couples directly to the complete buoyancy structure:
+      T1 = 0.5*Ug1_t
+      T2 = -beta_i*Ug1_t*omega_g*(M(t)/r)*[UA]*cos(pi t)
+      T3 = -beta_i*Ug1_t*omega_g*(M_Fornax/r_Fornax)*[UA]*cos(pi t)  (Fornax frame)
+
+    STARBURST-BUOYANCY COHERENCE: since all tiers carry the sSFR factor, the
+    total coherent buoyancy boost is
+        Delta_g_buoy_total = sSFR * (T1^inf + T2^inf + T3^inf) * e^(-t/tau_SF)
+    so peak star formation and peak gravitational buoyancy occur SIMULTANEOUSLY
+    and decay with the SAME timescale tau_SF = 100 Myr. Coherence ratio
+    C = Delta_g_buoy_total(0)/g_buoy_static = sSFR = 1e-9 - the sSFR is encoded
+    in the gravitational buoyancy field (absent in standard DPM-seeded gravity).
+    Universal sSFR-buoyancy scaling: g_enhanced = g_passive*(1 + sSFR*tau_obs).
+
+    Reproducible: sSFR = 10/1e10 = 1e-9 yr^-1; tau_SF = 100 Myr = 3.156e15 s;
+    Fornax outer frame M_Fornax = 7e13 M_sun = 1.393e44 kg / r_Fornax = 20 Mpc
+    = 6.17e23 m; coherence ratio C = sSFR = 1e-9. beta_i canonical (BETA_I).
+
+    Q-242: ug1_base: the paper states ~7.35e-11 m/s^2 (and Delta_Tier1(0) =
+    0.5*ug1_base*sSFR = 3.7e-20), but G*M0/r^2 with the stated M0=1e10 M_sun,
+    r=7.569e20 m yields 2.32e-12 (32x off; 7.35e-11 would need M0~3e11 M_sun or
+    smaller r). Delta_Tier1 derived-correct = 1.16e-21. The sSFR coupling,
+    coherence ratio, and other params reproduce. Wired the derived-correct
+    values; ug1_base discrepancy flagged. Appendix drift (VDS 1.894, kg/m^3,
+    beta_i=0.61 -> canonical BETA_I) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    sSFR = 10.0 / 1e10                                    # 1e-9 yr^-1
+    M0 = 1e10 * 1.989e30; r = 7.569e20
+    ug1_base = G * M0 / r ** 2                            # 2.32e-12 derived
+    delta_tier1_t0 = 0.5 * ug1_base * sSFR                # 1.16e-21 derived
+    tau_SF_s = 100e6 * 3.156e7                            # 3.156e15 s
+    M_Fornax = 7e13 * 1.989e30                            # 1.393e44 kg
+    r_Fornax = 20 * 3.086e22                              # 6.17e23 m
+    coherence_ratio = sSFR                               # C = sSFR = 1e-9
+    return {
+        'value': {
+            'domain': '2.65 (NGC 1792 sSFR coupling starburst-buoyancy coherence)',
+            'source_thread': 'Session 73 GALAXY_NGC_1792.cpp Module 19 Stellar Forge',
+            'system': 'NGC 1792 (starburst disk galaxy)',
+            'sSFR': sSFR,                                # 1e-9 yr^-1
+            'sSFR_dimensionless_coupling': True,
+            'ug1_base_derived': ug1_base,               # 2.32e-12 (paper 7.35e-11)
+            'delta_tier1_t0_derived': delta_tier1_t0,   # 1.16e-21
+            'tau_SF_s': tau_SF_s, 'tau_SF_myr': 100,
+            'buoyancy_tiers': 3,
+            'M_Fornax_kg': M_Fornax, 'r_Fornax_m': r_Fornax,  # Tier-3 frame
+            'coherence_ratio': coherence_ratio,         # C = sSFR = 1e-9
+            'starburst_buoyancy_coherence': True,       # peak SF = peak buoyancy
+            'same_decay_timescale': True,               # both tau_SF
+            'ssfr_buoyancy_scaling': 'g_enhanced = g_passive*(1 + sSFR*tau_obs)',
+            'value_drift': 'ug1_base 2.32e-12 derived vs paper 7.35e-11 (32x, M0/r inconsistency); Delta_Tier1 1.16e-21 vs paper 3.7e-20 (Q-242); sSFR/coherence reproduce',
+        },
+        'formula': 'sSFR = SFR/M0 = 1e-9; Delta_g_buoy_total = sSFR*(tiers^inf)*e^(-t/tau_SF); coherence C = sSFR',
+        'source': 'PAPER_267',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

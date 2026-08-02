@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 270 (30 ✓, 240 ⚠ OPEN_RULING)
+- **Wired:** 271 (30 ✓, 241 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1984
+- **Not yet touched:** 1983
 
 ---
 
@@ -1525,7 +1525,7 @@
 | ⚠ | PAPER_264 | HUDF TRZ CPT Asymmetric Gravitational Phase Transition NegativeTime | Q-241
 | ✓ | PAPER_265 | HUDF DualChannel Interaction Cascade Buoyancy Quadratic Merger Amplification | CLEAN |
 | ✓ | PAPER_266 | HUDF Primordial IGM Superconducting Gravitational Meissner Effect Bcrit | CLEAN |
-| ⬜ | PAPER_267 | NGC1792 SFR Normalization Starburst Buoyancy Coherence |
+| ⚠ | PAPER_267 | NGC1792 SFR Normalization Starburst Buoyancy Coherence | Q-242
 | ⬜ | PAPER_268 | NGC1792 Dual OscillatoryMode Hubble SlowMode StarburstGW Amplitude Modulation |
 | ⬜ | PAPER_269 | NGC1792 SN RamPressure Degeneracy Point Kinematic Invariant StarburstGravity |
 | ⬜ | PAPER_270 | Source10 DPM ResonanceQuantumOrbitalAmplification gH CosmicBridgeConstant |

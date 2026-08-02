@@ -1,23 +1,23 @@
-v0.270.0 BAND 1: PAPER_266 wired - HUDF GRAVITATIONAL MEISSNER EFFECT (CLEAN)
+v0.271.0 BAND 1: PAPER_267 wired - NGC 1792 sSFR COUPLING COHERENCE (Q-242)
 
-PAPER_266 (HUDF Primordial IGM Magnetic Field - UQFF Gravitational Meissner
-Effect and Superconducting Critical Boundary at B_crit=1e11 T, S72g,
-HUDFGalaxies.cpp HUDFCriticalMagneticTerm) wired as one dispatch (CLEAN, WIRED).
-Third HUDF paper.
+PAPER_267 (SFR Normalization as Dimensionless Coupling Constant - Starburst-
+Buoyancy Coherence in NGC 1792, S73, GALAXY_NGC_1792.cpp Module 19 Stellar
+Forge) wired as one dispatch (OPEN_RULING, Q-242). Companion to PAPER_232.
 
-Identifies corr_B=1-B/B_crit (B_crit=1e11 T) as the UQFF Gravitational Meissner
-Boundary - above it UQFF gravity is quenched, analogous to flux expulsion from a
-Type II superconductor at H_c2. B_crit=1e11 T DISTINCT from registry B_CRIT=
-4.4e13 T (QED Schwinger).
+sSFR coupling: SFR_factor=SFR/M0=10/1e10=1e-9 yr^-1 (specific SFR) scales
+M(t)=M0(1+sSFR*e^-t/tau_SF); via UQFF 2.0's 3-tier buoyancy (PAPER_198), Ug1_t
+propagates into all three tiers.
 
-Meissner Effect Theorem G(B)=G0*(1-B/B_crit); quench at B=B_crit. HUDF (B=1e-10)
-unquenched benchmark; NS critical zone (B~1e11); magnetar (B>B_crit) corr_B<0.
+Starburst-buoyancy coherence: peak SF and peak buoyancy simultaneous, same
+tau_SF=100 Myr decay. Coherence ratio C=sSFR=1e-9 (encoded in buoyancy field,
+absent in DPM-seeded).
 
-Reproducible corr_B: HUDF ~1, Cas A 0.999, PSR J0030 0.997, boundary 0 (quench),
-magnetar -99.
+Reproducible: sSFR=1e-9; tau_SF=3.156e15 s; Fornax frame M_Fornax=1.393e44 kg /
+r_Fornax=6.17e23 m.
 
-CLEAN - corr_B phase diagram reproduces exactly. Appendix drift (VDS 1.894,
-kg/m^3, beta_i) auto-corrected per charter.
+Q-242: ug1_base stated ~7.35e-11 but G*M0/r^2=2.32e-12 (32x, M0/r
+inconsistency); Delta_Tier1 derived 1.16e-21 vs paper 3.7e-20. sSFR + coherence
+reproduce. Wired derived-correct values. Appendix drift auto-corrected.
 
-Gate: 1671/0. Registry 555 rows / 1213 edges / 270 ledgers (measured).
-Campaign: 270/2,255. Next: PAPER_267.
+Gate: 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured).
+Campaign: 271/2,255. Next: PAPER_268.

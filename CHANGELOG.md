@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.271.0] — 2026-08-02 — BAND 1: PAPER_267 — NGC 1792 sSFR COUPLING COHERENCE (Q-242)
+
+### Added
+- **PAPER_267 dispatch** — NGC 1792 sSFR as a dimensionless coupling constant, starburst-buoyancy coherence (Session 73, GALAXY_NGC_1792.cpp "Stellar Forge", companion to PAPER_232).
+  - **sSFR coupling:** SFR_factor = SFR/M0 = 10/1e10 = 1e-9 yr⁻¹ (specific SFR) scales M(t)=M0(1+sSFR·e^(−t/τ_SF)); via UQFF 2.0's 3-tier buoyancy (PAPER_198), Ug1_t propagates into all three tiers.
+  - **Starburst-buoyancy coherence:** peak star formation and peak gravitational buoyancy occur simultaneously and decay with the same τ_SF=100 Myr. Coherence ratio C = Δg_buoy(0)/g_buoy_static = sSFR = 1e-9 — the sSFR is encoded in the buoyancy field (absent in DPM-seeded gravity).
+  - **Reproducible:** sSFR=1e-9; τ_SF=100 Myr=3.156e15 s; Fornax outer frame M_Fornax=7e13 M_sun=1.393e44 kg / r_Fornax=20 Mpc=6.17e23 m.
+- Gate +4 assertions (1671 → 1676, 0 failures).
+- Registry: +1 row (556), +4 edges (1217), +1 citation (271).
+
+### Ruling filed
+- **Q-242** — ug1_base: the paper states ~7.35e-11 m/s² (and Δ_Tier1(0)=3.7e-20), but G·M0/r² with the stated M0=1e10 M_sun, r=7.569e20 m yields 2.32e-12 (32× off; M0/r inconsistency). Δ_Tier1 derived-correct = 1.16e-21. sSFR coupling and coherence physics reproduce. Wired the derived-correct values; ug1_base flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 → canonical BETA_I) auto-corrected per charter.
+
+---
+
 ## [0.270.0] — 2026-08-02 — BAND 1: PAPER_266 — HUDF GRAVITATIONAL MEISSNER EFFECT (CLEAN)
 
 ### Added

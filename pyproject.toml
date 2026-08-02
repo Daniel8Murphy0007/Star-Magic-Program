@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.270.0"
-description = "UQFF Star-Magic-Program v0.270.0: PAPER_266 wired (CLEAN) - HUDF gravitational Meissner effect; corr_B=1-B/B_crit (B_crit=1e11 T UQFF boundary, distinct from Schwinger); quench at B=B_crit; HUDF unquenched benchmark. Wired 270/2255, gate 1671/0. Registry 555 rows / 1213 edges / 270 ledgers (measured)."
+version = "0.271.0"
+description = "UQFF Star-Magic-Program v0.271.0: PAPER_267 wired (Q-242) - NGC 1792 sSFR as dimensionless coupling; starburst-buoyancy coherence (sSFR couples to all 3 tiers, peak SF = peak buoyancy, same tau_SF); coherence ratio C=sSFR=1e-9. Wired 271/2255, gate 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

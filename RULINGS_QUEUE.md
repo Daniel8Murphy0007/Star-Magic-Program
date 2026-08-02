@@ -5667,3 +5667,11 @@ RESOLVED section with the ruling recorded.
 - Wired the phase structure + derived U_g1=8.77e-23; discrepancies flagged.
 - **Ruling needed:** confirm U_g1 (which M/r pair is intended); clarify the f_TRZ↔w mapping / de Sitter identification. The phase-transition structure is clean.
 - Wired v0.268.0, status OPEN_RULING.
+
+## Q-242 — PAPER_267 NGC 1792: ug1_base value mismatch (coherence physics clean)
+- sSFR as dimensionless coupling constant driving starburst-buoyancy coherence: sSFR=SFR/M0=10/1e10=1e-9 yr^-1 couples to all 3 buoyancy tiers via M(t); peak SF = peak buoyancy, same decay timescale tau_SF=100 Myr; coherence ratio C=sSFR=1e-9.
+- **Drift:** ug1_base: the paper states ~7.35e-11 m/s^2 (and Delta_Tier1(0)=0.5*ug1_base*sSFR=3.7e-20), but G*M0/r^2 with the stated M0=1e10 M_sun (1.989e40 kg), r=7.569e20 m yields 2.32e-12 (32x off). For 7.35e-11 you'd need M0~3e11 M_sun or a smaller r (~1.34e20 m). M0/r inconsistency. Delta_Tier1 derived-correct = 1.16e-21.
+- Reproducible and locked: sSFR=1e-9; tau_SF=100 Myr=3.156e15 s; Fornax outer frame M_Fornax=7e13 M_sun=1.393e44 kg / r_Fornax=20 Mpc=6.17e23 m; coherence ratio C=sSFR=1e-9.
+- Wired the derived-correct ug1_base=2.32e-12 + coherence physics + reproducing params; ug1_base discrepancy flagged.
+- **Ruling needed:** confirm ug1_base=2.32e-12 (derived from stated M0/r) vs stated 7.35e-11; the sSFR coupling and coherence physics are clean.
+- Wired v0.271.0, status OPEN_RULING.

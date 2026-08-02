@@ -3500,3 +3500,34 @@ kg/m^3, beta_i=6.1e-1) auto-corrected per charter.
 
 Gate: 1671/0. Registry 555 rows / 1213 edges / 270 ledgers (measured).
 Campaign: 270/2,255. Next: PAPER_267.
+
+---
+
+## 2026-08-02 — v0.271.0 — BAND 1: PAPER_267 — NGC 1792 sSFR COUPLING COHERENCE (Q-242)
+
+PAPER_267 (SFR Normalization as Dimensionless Coupling Constant - Starburst-
+Buoyancy Coherence in NGC 1792, Session 73, GALAXY_NGC_1792.cpp Module 19
+Stellar Forge) wired as one dispatch (OPEN_RULING, Q-242). Companion to
+PAPER_232.
+
+sSFR coupling: SFR_factor=SFR/M0=10/1e10=1e-9 yr^-1 (specific SFR) scales
+M(t)=M0(1+sSFR*e^-t/tau_SF); via UQFF 2.0's 3-tier buoyancy (PAPER_198), Ug1_t
+propagates into all three tiers.
+
+Starburst-buoyancy coherence: peak star formation and peak gravitational
+buoyancy occur simultaneously and decay with the same tau_SF=100 Myr. Coherence
+ratio C=Delta_g_buoy(0)/g_buoy_static=sSFR=1e-9 (sSFR encoded in the buoyancy
+field, absent in DPM-seeded gravity).
+
+Reproducible: sSFR=1e-9; tau_SF=100 Myr=3.156e15 s; Fornax outer frame M_Fornax=
+7e13 M_sun=1.393e44 kg / r_Fornax=20 Mpc=6.17e23 m.
+
+Q-242: ug1_base: the paper states ~7.35e-11 m/s^2 (Delta_Tier1(0)=3.7e-20) but
+G*M0/r^2 with stated M0=1e10 M_sun, r=7.569e20 m yields 2.32e-12 (32x off, M0/r
+inconsistency). Delta_Tier1 derived-correct=1.16e-21. sSFR coupling + coherence
+reproduce. Wired derived-correct values; ug1_base flagged. Appendix boilerplate
+drift (VDS 1.894, kg/m^3, beta_i=0.61 -> canonical BETA_I) auto-corrected per
+charter.
+
+Gate: 1676/0. Registry 556 rows / 1217 edges / 271 ledgers (measured).
+Campaign: 271/2,255. Next: PAPER_268.

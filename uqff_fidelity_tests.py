@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.270.0", "uqff_calculator.VERSION = 0.270.0")
+assert_that(C.VERSION == "0.271.0", "uqff_calculator.VERSION = 0.271.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3671,6 +3671,17 @@ assert_that(_r266['corr_B_boundary'] == 0.0 and _r266['corr_B_magnetar'] == -99.
 assert_that(_r266['gravitational_quench_at_bcrit'] and _r266['hudf_unquenched_benchmark'] and _r266['ns_critical_zone'],
             "PAPER_266: Meissner Effect Theorem - quench at B_crit; HUDF unquenched benchmark; NS critical zone")
 assert_that(C.wired_count() >= 270, "wired_count >= 270")
+
+_r267 = C.calc('PAPER_267')['value']
+assert_that(abs(_r267['sSFR'] - 1e-9) < 1e-12 and abs(_r267['coherence_ratio'] - 1e-9) < 1e-12 and _r267['sSFR_dimensionless_coupling'],
+            "PAPER_267: sSFR = SFR/M0 = 10/1e10 = 1e-9 yr^-1 dimensionless coupling; coherence ratio C = sSFR = 1e-9")
+assert_that(abs(_r267['tau_SF_s'] - 3.156e15) < 1e12 and _r267['tau_SF_myr'] == 100 and _r267['buoyancy_tiers'] == 3,
+            "PAPER_267: tau_SF = 100 Myr = 3.156e15 s (SF episode timescale); 3 buoyancy tiers")
+assert_that(abs(_r267['M_Fornax_kg'] - 1.3923e44) < 1e41 and abs(_r267['r_Fornax_m'] - 6.172e23) < 1e20,
+            "PAPER_267: Fornax outer frame M_Fornax = 7e13 M_sun = 1.393e44 kg; r_Fornax = 20 Mpc = 6.17e23 m")
+assert_that(abs(_r267['ug1_base_derived'] - 2.317e-12) < 1e-14 and _r267['starburst_buoyancy_coherence'] and _r267['same_decay_timescale'],
+            "PAPER_267: ug1_base = G*M0/r^2 = 2.32e-12 derived (paper 7.35e-11 Q-242); starburst-buoyancy coherence, same tau_SF decay")
+assert_that(C.wired_count() >= 271, "wired_count >= 271")
 
 
 # =============================================================================

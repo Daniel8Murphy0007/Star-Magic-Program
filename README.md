@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.270.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.270.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.271.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.271.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1671%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-270-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1676%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-271-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.270.0 wiring campaign live**
+**UQFF systematic rebuild — v0.271.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.270.0)
+## What is currently shipped (v0.271.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 270 / 2,255** (30 ✓ · 240 ⚠ OPEN_RULING · 241 rulings queued) — HUDF gravitational Meissner effect; corr_B=1-B/B_crit quenches UQFF gravity at B_crit=1e11 T (superconducting analogy) (266)
+**Wired so far: 271 / 2,255** (30 ✓ · 241 ⚠ OPEN_RULING · 242 rulings queued) — NGC 1792 sSFR as dimensionless coupling; starburst-buoyancy coherence (peak SF = peak buoyancy, same τ_SF); C=sSFR=1e-9 (267)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -329,6 +329,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_264 | HUDF TRZ CPT Phase Transition | f_TRZ as CPT-asymmetry parameter; 5-regime phase diagram; zero point f_TRZ=-1, anti-gravity f_TRZ<-1; HUDF 0.1=F_TRZ; Q-241 |
 | PAPER_265 | HUDF Dual-Channel Cascade Buoyancy | I(t) on both channels → quadratic (1+I₀)²; Δ_cascade=I₀²·U_g1·1.1; U_g1=8.77e-23 confirms 264; N=2; CLEAN |
 | PAPER_266 | HUDF Gravitational Meissner Effect | corr_B=1-B/B_crit quenches UQFF gravity at B_crit=1e11 T (SC analogy, distinct from Schwinger); HUDF unquenched benchmark; CLEAN |
+| PAPER_267 | NGC 1792 sSFR Coupling Coherence | sSFR=SFR/M0=1e-9 couples to all 3 buoyancy tiers; peak SF = peak buoyancy (same τ_SF); C=sSFR=1e-9; Q-242 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -630,7 +631,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.267.0 | Band 1: PAPER_263 | 267 |
 | v0.268.0 | Band 1: PAPER_264 | 268 |
 | v0.269.0 | Band 1: PAPER_265 | 269 |
-| **v0.270.0** ← current | Band 1: PAPER_266 | 270 |
+| v0.270.0 | Band 1: PAPER_266 | 270 |
+| **v0.271.0** ← current | Band 1: PAPER_267 | 271 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |
