@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.241.0", "uqff_calculator.VERSION = 0.241.0")
+assert_that(C.VERSION == "0.242.0", "uqff_calculator.VERSION = 0.242.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3352,6 +3352,17 @@ assert_that(_r237['fubii_benchmark_N'] == 2.11e208 and _r237['fubii_ties_paper_2
 assert_that(_r237['g_H'] == 1.252e46 and len(_r237['force_classes']) == 5,
             "PAPER_237: g_H = 1.252e46 UQFF hydrogen g-factor; 5 UQFF force classes")
 assert_that(C.wired_count() >= 241, "wired_count >= 241")
+
+_r238 = C.calc('PAPER_238')['value']
+assert_that(abs(_r238['F_vac_rep_N'] - 1.9915e15) < 1e12,
+            "PAPER_238: CP3 F_vac_rep = G*5e-13*2.984e31*2e6 = 1.99e15 N (reproduces)")
+assert_that(_r238['k_vac_equals_G'] and abs(_r238['k_vac'] - C.G_OBSERVED) < 1e-20,
+            "PAPER_238: k_vac = G (novel contribution 4, dimensional consistency)")
+assert_that(abs(_r238['delta_rho_vac_J_m3'] - 5e-13) < 1e-15 and _r238['velocity_coupled'],
+            "PAPER_238: delta_rho_vac = 5e-13 J/m3; velocity-coupled (only UQFF force linear in v)")
+assert_that(_r238['third_repulsive_force'] and _r238['vanishes_at_rest'] and _r238['r_independent'],
+            "PAPER_238: 3rd repulsive force (after F_DE, F_rel); vanishes at v=0; r-independent")
+assert_that(C.wired_count() >= 242, "wired_count >= 242")
 
 
 # =============================================================================

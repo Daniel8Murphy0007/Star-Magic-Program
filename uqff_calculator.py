@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.241.0"
+VERSION = "0.242.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12785,4 +12785,64 @@ def _paper_237(dataset):
         'source': 'PAPER_237',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_238')
+def _paper_238(dataset):
+    """Vacuum repulsion force F_vac_rep - surface-tension analogy (S59).
+
+    Third distinct UQFF repulsive force (after F_DE and F_rel) and the only
+    one that couples to instantaneous velocity. Modelled on surface tension,
+    which scales with density-contrast at a phase boundary:
+        F_vac_rep = k_vac * delta_rho_vac * M * v
+    where k_vac = G (novel contribution 4: reuses the gravitational constant
+    as coupling, establishing dimensional consistency with the DPM-seeded
+    sector), and delta_rho_vac = rho_vac_local - rho_vac_ref is the local vs
+    reference vacuum energy density contrast (J/m^3).
+
+    Distinct from F_DE = (Lambda*c^2/3)*r: F_DE is purely radial and
+    velocity-independent (Hubble-flow analogy); F_vac_rep is r-independent
+    (surface effect), scales linearly with v, and vanishes at rest (v=0) or
+    in uniform vacuum (delta_rho_vac=0).
+
+    CP3 example (Eta Carinae stellar-wind boundary) - reproduces exactly:
+      M = 2.984e31 kg, v = 2e6 m/s (wind outflow),
+      rho_vac_local = 1e-9 + 5e-13, rho_vac_ref = 1e-9 J/m^3
+      => delta_rho_vac = 5e-13, F_vac_rep = G*5e-13*2.984e31*2e6 = 1.99e15 N.
+
+    Relative strength vs DPM-seeded gravity: F_vac_rep/F_grav =
+    k_vac*delta_rho_vac*v*r^2/(G*M) = delta_rho_vac*v*r^2/M (since k_vac=G);
+    the paper's "~1e18 at extreme scales" is an illustrative figure with an
+    unspecified system mass (not a canonical observable). Abstract 1.23e45 N
+    is likewise an unspecified-parameter illustrative value.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    M = 2.984e31; v = 2e6                                 # CP3 Eta Carinae wind
+    rho_local = 1e-9 + 5e-13; rho_ref = 1e-9              # J/m^3
+    k_vac = G_OBSERVED                                    # novel contribution 4: k_vac = G
+    delta_rho = rho_local - rho_ref                       # 5e-13
+    F_vac_rep = k_vac * delta_rho * M * v                 # 1.99e15
+    return {
+        'value': {
+            'domain': '2.36 (vacuum repulsion surface-tension analogy)',
+            'source_thread': 'grok_share_8d951e12 Source10 lines ~5950-5980',
+            'formula_symbolic': 'F_vac_rep = k_vac * delta_rho_vac * M * v',
+            'k_vac': k_vac,                               # = G (dimensional consistency)
+            'k_vac_equals_G': True,
+            'delta_rho_vac_J_m3': delta_rho,             # 5e-13
+            'M_kg': M, 'v_m_s': v,
+            'rho_vac_ref_J_m3': rho_ref,
+            'F_vac_rep_N': F_vac_rep,                     # 1.99e15
+            'third_repulsive_force': True,                # after F_DE, F_rel
+            'velocity_coupled': True,                     # only UQFF force linear in v
+            'vanishes_at_rest': True,
+            'r_independent': True,
+            'novel_contributions': 4,
+            'distinct_from_F_DE': 'F_DE radial/velocity-independent; F_vac_rep r-independent/linear in v',
+        },
+        'formula': 'F_vac_rep = G * (rho_vac_local - rho_vac_ref) * M * v',
+        'source': 'PAPER_238',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

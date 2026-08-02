@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.242.0] — 2026-08-02 — BAND 1: PAPER_238 — VACUUM REPULSION SURFACE-TENSION (CLEAN)
+
+### Added
+- **PAPER_238 dispatch** — vacuum repulsion force F_vac_rep (Session 59, grok_share_8d951e12 Source10). The third distinct UQFF repulsive force (after F_DE and F_rel) and the only one that couples to instantaneous velocity.
+  - **Formula:** F_vac_rep = k_vac·Δρ_vac·M·v, with k_vac = G (novel contribution 4 — reuses the gravitational constant as coupling for dimensional consistency with the DPM-seeded sector); Δρ_vac = ρ_vac_local − ρ_vac_ref.
+  - **Surface-tension analogy:** r-independent (surface effect), linear in v, vanishes at rest (v=0) and in uniform vacuum. Distinct from F_DE = (Λc²/3)·r (radial, velocity-independent).
+  - **CP3 Eta Carinae wind (reproduces exactly):** M=2.984e31 kg, v=2e6 m/s, Δρ_vac=5e-13 J/m³ → F_vac_rep = 1.99e15 N.
+- Gate +4 assertions (1526 → 1531, 0 failures).
+- Registry: +1 row (524), +3 edges (1111), +1 citation (242).
+
+### Notes
+- CLEAN — CP3 example arithmetic reproduces from the formula. The §3 ratio "~1e18" and abstract "1.23e45 N" are illustrative figures with unspecified system mass (not canonical observables), so no ruling filed.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.241.0] — 2026-08-02 — BAND 1: PAPER_237 — UQFFSource10 CATALOGUE (Q-224)
 
 ### Added

@@ -1107,3 +1107,6 @@ primitive,LAMBDA_SIMPLE,observable,triadic_gravity_26layer_catalogue,F_DE Lambda
 observable,master_buoyancy_fubii_catalogue,paper,PAPER_237,benchmark F_U_Bi_i=2.11e208 ties PAPER_217 Branch1
 observable,triadic_gravity_26layer_catalogue,paper,PAPER_237,26-layer M_i=M/26
 observable,master_buoyancy_fubii_catalogue,observable,f_u_bi_i_two_branch,PAPER_217 Branch1 cross-ref
+primitive,G_OBSERVED,observable,vacuum_repulsion_surface_tension,k_vac = G coupling
+observable,vacuum_repulsion_surface_tension,paper,PAPER_238,F_vac_rep = G*delta_rho*M*v
+observable,vacuum_repulsion_surface_tension,observable,master_buoyancy_fubii_catalogue,third repulsive force vs F_DE/F_rel (PAPER_237)

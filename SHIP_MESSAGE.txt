@@ -1,30 +1,26 @@
-v0.241.0 BAND 1: PAPER_237 wired - UQFFSource10 CATALOGUE MASTER BUOYANCY (Q-224)
+v0.242.0 BAND 1: PAPER_238 wired - VACUUM REPULSION SURFACE-TENSION (CLEAN)
 
-PAPER_237 (UQFFSource10 Catalogue - Master Buoyancy F_U_Bi_i and 26-Layer
-Triadic g_UQFF, S59, grok_share_8d951e12 Source10 second-pass) wired as one
-dispatch (OPEN_RULING, Q-224).
+PAPER_238 (UQFF Vacuum Repulsion Force - Surface-Tension Analogy F_vac_rep,
+S59, grok_share_8d951e12 Source10) wired as one dispatch (CLEAN, WIRED).
 
-The UQFFSource10 central catalogue - primary reference implementation of all
-five UQFF force classes (LENR, dark-energy expansion, magnetic resonance,
-relativistic buoyancy, 26-layer gravitational hierarchy).
+The third distinct UQFF repulsive force (after F_DE and F_rel) and the only
+one that couples to instantaneous velocity:
 
-Verified base terms (M=2.984e31 kg, r=1e14 m):
-- I_grav = G*M/r^2 = 1.99e-7 m/s^2
-- M_i = M/26 = 1.148e30 kg (uniform 26-layer mass)
-- F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34
-- Lambda*c^2/3 = 3.30e-36 per length (F_DE de Sitter growth)
+    F_vac_rep = k_vac * delta_rho_vac * M * v
 
-Documented benchmarks:
-- F_U_Bi_i = 2.11e208 N (Eta Carinae) - IDENTICAL to PAPER_217 Branch-1
-  creation value; cross-reference wired. Not reconstructable from the stated
-  5-component formula (scaling factors s_* + intermediate params unspecified).
-- g_H = 1.252e46 UQFF hydrogen g-factor.
+- k_vac = G (novel contribution 4: reuses the gravitational constant as
+  coupling for dimensional consistency with the DPM-seeded sector)
+- delta_rho_vac = rho_vac_local - rho_vac_ref (J/m^3)
+- r-independent (surface effect), linear in v, vanishes at v=0 and at
+  uniform vacuum; distinct from F_DE = (Lambda*c^2/3)*r (radial,
+  velocity-independent)
 
-Q-224: (a) 2.11e208 benchmark not reconstructable + ties PAPER_217;
-(b) Eta Carinae M "150 M_sun" vs 2.984e31 kg (=15 M_sun; 150 M_sun=2.984e32),
-10x mismatch - wired M=2.984e31 per the CP3 example.
+CP3 Eta Carinae wind (reproduces exactly): M=2.984e31, v=2e6,
+delta_rho_vac=5e-13 => F_vac_rep = 1.99e15 N.
 
-Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+CLEAN - no ruling. The sec-3 "~1e18" ratio and abstract "1.23e45 N" are
+illustrative figures with unspecified mass (not canonical observables).
+Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
 
-Gate: 1526/0. Registry 523 rows / 1108 edges / 241 ledgers (measured).
-Campaign: 241/2,255. Next: PAPER_238.
+Gate: 1531/0. Registry 524 rows / 1111 edges / 242 ledgers (measured).
+Campaign: 242/2,255. Next: PAPER_239.

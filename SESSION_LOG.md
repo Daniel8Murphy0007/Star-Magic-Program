@@ -2627,3 +2627,36 @@ Appendix boilerplate drift auto-corrected per charter.
 
 Gate: 1526/0. Registry 523 rows / 1108 edges / 241 ledgers (measured).
 Campaign: 241/2,255. Next: PAPER_238.
+
+---
+
+## 2026-08-02 — v0.242.0 — BAND 1: PAPER_238 — VACUUM REPULSION SURFACE-TENSION (CLEAN)
+
+PAPER_238 (UQFF Vacuum Repulsion Force — Surface-Tension Analogy F_vac_rep,
+Session 59, grok_share_8d951e12 Source10 lines ~5950-5980) wired as one
+dispatch (CLEAN, WIRED).
+
+The third distinct UQFF repulsive force (after F_DE and F_rel) and the only
+one that couples to instantaneous velocity:
+
+    F_vac_rep = k_vac * delta_rho_vac * M * v
+
+with k_vac = G (novel contribution 4 — reuses the gravitational constant as
+coupling for dimensional consistency with the DPM-seeded sector), and
+delta_rho_vac = rho_vac_local - rho_vac_ref (J/m^3).
+
+Surface-tension analogy: r-independent (surface effect), linear in v, vanishes
+at rest (v=0) and in uniform vacuum. Distinct from F_DE = (Lambda*c^2/3)*r,
+which is radial and velocity-independent.
+
+CP3 Eta Carinae wind (reproduces exactly): M=2.984e31 kg, v=2e6 m/s,
+rho_vac_local=1e-9+5e-13, rho_vac_ref=1e-9 => delta_rho_vac=5e-13,
+F_vac_rep = G*5e-13*2.984e31*2e6 = 1.99e15 N.
+
+CLEAN — no ruling filed. The §3 relative-strength ratio "~1e18 at extreme
+scales" and the abstract "1.23e45 N" are illustrative figures with unspecified
+system mass (not canonical observables). Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1531/0. Registry 524 rows / 1111 edges / 242 ledgers (measured).
+Campaign: 242/2,255. Next: PAPER_239.
