@@ -1151,3 +1151,7 @@ observable,source10_batch_dpm_calibration,observable,muge_quantum_uncertainty_gQ
 observable,source10_batch_dpm_calibration,observable,master_buoyancy_fubii_catalogue,F_U_Bi_i integral Eta Carinae anchor (PAPER_237)
 observable,uqff_cuda_gpu_tiled_gemm,paper,PAPER_249,CUDA GPU tiled GEMM 26-layer acceleration
 observable,uqff_cuda_gpu_tiled_gemm,observable,source10_batch_dpm_calibration,GPU acceleration of 104N batch (PAPER_248)
+observable,sn1006_typeia_snr_fubi,paper,PAPER_250,SN 1006 Force Equivalence Class founder
+observable,sn1006_typeia_snr_fubi,observable,master_buoyancy_fubii_catalogue,F_U_Bi 2.11e208 ties PAPER_237
+observable,sn1006_typeia_snr_fubi,observable,f_u_bi_i_two_branch,2.11e208 = PAPER_217 Branch1
+observable,sn1006_typeia_snr_fubi,observable,source10_batch_dpm_calibration,DPM_resonance omega0=1e-12 class (PAPER_248)

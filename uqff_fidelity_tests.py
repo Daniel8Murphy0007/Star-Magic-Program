@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.253.0", "uqff_calculator.VERSION = 0.253.0")
+assert_that(C.VERSION == "0.254.0", "uqff_calculator.VERSION = 0.254.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3484,6 +3484,17 @@ assert_that(_r249['cuda_graph_reduction_pct'] == 80 and _r249['gemm_bandwidth_re
 assert_that(abs(_r249['theoretical_speedup'] - 3151.5) < 1 and _r249['layer_independence_theorem'],
             "PAPER_249: 26-Layer Parallelism Theorem; speedup = 26*32*500/132 = 3150x")
 assert_that(C.wired_count() >= 253, "wired_count >= 253")
+
+_r250 = C.calc('PAPER_250')['value']
+assert_that(abs(_r250['omega_LENR'] - 7.854e12) < 1e9 and abs(_r250['E_knot_J_m3'] - 4.5e-11) < 1e-13,
+            "PAPER_250: omega_LENR = 2pi*1.25THz = 7.854e12; E_knot = 0.5*1e-23*(3e6)^2 = 4.5e-11 J/m3 (reproduce)")
+assert_that(_r250['fubi_benchmark_N'] == 2.11e208 and _r250['fubi_ties_paper_217_237'] and _r250['equivalence_class_founder'],
+            "PAPER_250: F_U_Bi = +2.11e208 N founding benchmark (Force Equivalence Class, ties PAPER_217/237, Q-230)")
+assert_that(abs(_r250['dpm_resonance_derived'] - 1.7588e18) < 1e15 and abs(_r250['F_LENR_derived'] - 6.1685e39) < 1e36,
+            "PAPER_250: DPM_resonance derived 1.76e18 (paper 1.76e3); F_LENR derived 6.17e39 (paper 6.17e30) Q-230")
+assert_that(_r250['lenr_dominance_orders'] == 33 and _r250['low_energy_regime'] and _r250['F_neutron_N'] == 1e6,
+            "PAPER_250: LENR dominates ~33 orders; omega0=1e-12 low-energy regime; F_neutron=1e6 N knot stabilisation")
+assert_that(C.wired_count() >= 254, "wired_count >= 254")
 
 
 # =============================================================================

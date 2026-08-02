@@ -2985,3 +2985,37 @@ per charter.
 
 Gate: 1586/0. Registry 538 rows / 1152 edges / 253 ledgers (measured).
 Campaign: 253/2,255. Next: PAPER_250.
+
+---
+
+## 2026-08-02 — v0.254.0 — BAND 1: PAPER_250 — SN 1006 TYPE Ia SNR F_U_Bi_i (Q-230)
+
+PAPER_250 (SN 1006 Type Ia SNR F_U_Bi_i — Ejecta Knot Stabilisation and Force
+Equivalence Class Founding Member, Session 72c, CondensedPhysics3.py) wired as
+one dispatch (OPEN_RULING, Q-230).
+
+SN 1006 (Type Ia remnant, ~1019 yr, ~7000 ly) is the FOUNDING MEMBER of the
+UQFF Force Equivalence Class: the first system establishing F_U_Bi ~ +2.11e208 N
+for all omega0=1e-12 systems (IDENTICAL to PAPER_217 Branch1 + PAPER_237).
+
+Force Equivalence Class Theorem: any system with omega0=1e-12 produces F_U_Bi
+~+2.11e208 N regardless of M/L/age/B0/rho, because F_LENR=k_LENR*(omega_LENR/
+omega0)^2 overwhelms all terms by ~33 orders. PAPER_251/252/254 confirm;
+PAPER_253 (Sgr A*, omega0=1e-15) departs.
+
+F_neutron ejecta-knot stabilisation: F_neutron=k_neutron*s_n=1e6 N (Kozima
+phonon coupling holds filamentary knots coherent over 1019 yr at v_knot=3000
+km/s).
+
+Reproducible: omega_LENR=2pi*1.25THz=7.854e12; E_knot=0.5*1e-23*(3e6)^2=
+4.5e-11 J/m3; age 1019 yr=3.213e10 s.
+
+Q-230: (a) DPM_resonance=2*mu_B*B0/(hbar*omega0) computes 1.76e18 (paper 1.76e3,
+15 OOM; mantissa ok); (b) F_LENR computes 6.17e39 (paper 6.17e30; paper's
+(7.854e24)^2=6.17e40 intermediate wrong, should be 6.17e49); (c) F_U_Bi=+2.11e208
+documented founding benchmark not reconstructable (ties PAPER_217/237). Wired
+derived-correct pieces + benchmark; drifts flagged. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1591/0. Registry 539 rows / 1156 edges / 254 ledgers (measured).
+Campaign: 254/2,255. Next: PAPER_251.

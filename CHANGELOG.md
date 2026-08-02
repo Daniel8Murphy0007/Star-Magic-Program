@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.254.0] — 2026-08-02 — BAND 1: PAPER_250 — SN 1006 TYPE Ia SNR F_U_Bi_i (Q-230)
+
+### Added
+- **PAPER_250 dispatch** — SN 1006 Type Ia SNR F_U_Bi_i (Session 72c). The FOUNDING MEMBER of the UQFF Force Equivalence Class.
+  - **Force Equivalence Class Theorem:** any system with ω0 = 1e-12 rad/s produces F_U_Bi ≈ +2.11e208 N regardless of mass, luminosity, age, B0, or ejecta density — because F_LENR = k_LENR·(ω_LENR/ω0)² overwhelms all terms by ~33 orders. F_U_Bi = +2.11e208 N is IDENTICAL to PAPER_217 Branch-1 and PAPER_237's benchmark. PAPER_251/252/254 confirm membership; PAPER_253 (Sgr A*, ω0=1e-15) departs.
+  - **F_neutron ejecta-knot stabilisation:** F_neutron = k_neutron·s_n = 1e6 N (Kozima phonon coupling holds filamentary knots coherent over 1019 yr at v_knot=3000 km/s).
+  - **Reproducible:** ω_LENR = 2π·1.25 THz = 7.854e12; E_knot = 0.5·1e-23·(3e6)² = 4.5e-11 J/m³; age = 1019 yr = 3.213e10 s.
+- Gate +4 assertions (1586 → 1591, 0 failures).
+- Registry: +1 row (539), +4 edges (1156), +1 citation (254).
+
+### Ruling filed
+- **Q-230** — (a) DPM_resonance = 2·μ_B·B0/(ℏ·ω0) computes to 1.76e18 (paper 1.76e3, 15-order drift; mantissa ok); (b) F_LENR computes to 6.17e39 (paper 6.17e30; the paper's (7.854e24)²=6.17e40 intermediate is wrong, should be 6.17e49); (c) F_U_Bi=+2.11e208 documented founding benchmark not reconstructable (ties PAPER_217/237). Wired derived-correct pieces + benchmark; drifts flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.253.0] — 2026-08-02 — BAND 1: PAPER_249 — CUDA GPU TILED GEMM ACCELERATION (CLEAN)
 
 ### Added

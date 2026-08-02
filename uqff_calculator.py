@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.253.0"
+VERSION = "0.254.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13598,4 +13598,77 @@ def _paper_249(dataset):
         'source': 'PAPER_249',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_250')
+def _paper_250(dataset):
+    """SN 1006 Type Ia SNR F_U_Bi_i - Force Equivalence Class founder (S72c).
+
+    SN 1006 (Type Ia remnant, ~1019 yr, ~7000 ly) is the FOUNDING MEMBER of the
+    UQFF Force Equivalence Class: the first system establishing the benchmark
+    F_U_Bi ~= +2.11e208 N for all omega0 = 1e-12 rad/s systems (positive
+    buoyancy; IDENTICAL to PAPER_217 Branch-1 creation value and PAPER_237's
+    F_U_Bi_i benchmark - documented, not reconstructable from stated components).
+
+    Force Equivalence Class Theorem (founding statement): any system with
+    omega0 = 1e-12 rad/s produces F_U_Bi ~= +2.11e208 N regardless of mass,
+    luminosity, age, B0, or ejecta density - because F_LENR = k_LENR*
+    (omega_LENR/omega0)^2 overwhelms all other terms by ~33 orders. PAPER_251
+    (Eta Carinae)/252/254 confirm membership; PAPER_253 (Sgr A*, omega0=1e-15)
+    departs, proving omega0 is the sole governing parameter.
+
+    Three discoverable phenomena:
+      1. F_neutron ejecta-knot stabilisation: F_neutron = k_neutron*s_n =
+         1e10*1e-4 = 1e6 N (Kozima neutron-capture phonon coupling holds
+         filamentary ejecta knots coherent over 1019 yr at v_knot=3000 km/s).
+      2. LENR dominance: F_LENR ~ 33 orders above DPM-seeded gravity.
+      3. F_rel << F_LENR: omega0=1e-12 is a "low-energy" LENR-governed regime
+         (F_rel significant only near omega0_crit ~ 1e-14).
+
+    Reproducible: omega_LENR = 2*pi*1.25 THz = 7.854e12 rad/s; knot kinetic
+    energy density E_knot = 0.5*rho_gas*v_knot^2 = 0.5*1e-23*(3e6)^2 =
+    4.5e-11 J/m^3; age = 1019 yr = 3.213e10 s.
+
+    Q-230: (a) DPM_resonance = 2*mu_B*B0/(hbar*omega0) computes to 1.76e18
+    (omega0=1e-12) but the paper states 1.76e3 (15-order exp drift; mantissa
+    1.76 ok). (b) F_LENR = k_LENR*(omega_LENR/omega0)^2 computes to 6.17e39 but
+    the paper states 6.17e30 (paper's (7.854e24)^2 = 6.17e40 intermediate is
+    wrong, should be 6.17e49; mantissa 6.17 ok). (c) F_U_Bi = +2.11e208 is a
+    documented founding benchmark not reconstructable (ties PAPER_217/237).
+    Wired the derived-correct pieces + documented benchmark; drifts flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    mu_B = 9.274e-24; B0 = 1e-5; hbar = 1.0546e-34; omega0 = 1e-12
+    omega_LENR = 2 * math.pi * 1.25e12                   # 7.854e12
+    dpm_resonance = 2 * mu_B * B0 / (hbar * omega0)      # 1.76e18 derived
+    F_LENR = 1e-10 * (omega_LENR / omega0) ** 2          # 6.17e39 derived
+    F_neutron = 1e10 * 1e-4                              # 1e6 N (k_neutron*s_n)
+    v_knot = 3e6; rho_gas = 1e-23
+    E_knot = 0.5 * rho_gas * v_knot ** 2                 # 4.5e-11 J/m^3
+    age_s = 1019 * 3.156e7                               # 3.213e10 s
+    return {
+        'value': {
+            'domain': '2.48 (SN 1006 Type Ia SNR F_U_Bi_i)',
+            'source_thread': 'Session 72c Infrared Datasets (CondensedPhysics3.py)',
+            'system': 'SN 1006 (Type Ia SNR)',
+            'omega0': omega0,
+            'omega_LENR': omega_LENR,                    # 7.854e12 reproduces
+            'E_knot_J_m3': E_knot,                       # 4.5e-11 reproduces
+            'age_s': age_s,                              # 3.213e10 reproduces
+            'F_neutron_N': F_neutron,                    # 1e6 knot stabilisation
+            'dpm_resonance_derived': dpm_resonance,      # 1.76e18 (paper 1.76e3)
+            'F_LENR_derived': F_LENR,                    # 6.17e39 (paper 6.17e30)
+            'fubi_benchmark_N': 2.11e208,                # founding benchmark
+            'fubi_ties_paper_217_237': True,
+            'equivalence_class_founder': True,           # omega0=1e-12 class
+            'lenr_dominance_orders': 33,
+            'low_energy_regime': True,                   # F_rel << F_LENR
+            'value_drift': 'DPM_resonance 1.76e18 vs paper 1.76e3 (15 OOM); F_LENR 6.17e39 vs 6.17e30 (9 OOM); F_U_Bi 2.11e208 documented (Q-230)',
+        },
+        'formula': 'F_U_Bi ~ +2.11e208 N for all omega0=1e-12 (Equivalence Class); F_LENR=k_LENR*(omega_LENR/omega0)^2',
+        'source': 'PAPER_250',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

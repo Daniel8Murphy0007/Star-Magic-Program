@@ -1,23 +1,25 @@
-v0.253.0 BAND 1: PAPER_249 wired - CUDA GPU TILED GEMM ACCELERATION (CLEAN)
+v0.254.0 BAND 1: PAPER_250 wired - SN 1006 TYPE Ia SNR F_U_Bi_i (Q-230)
 
-PAPER_249 (UQFF CUDA GPU Tiled GEMM - Multi-System 26-Layer Acceleration, S62,
-grok_share_8d951e12 4th-pass, CondensedPhysics3.py) wired as one dispatch
-(CLEAN, WIRED).
+PAPER_250 (SN 1006 Type Ia SNR F_U_Bi_i - Ejecta Knot Stabilisation and Force
+Equivalence Class Founding Member, S72c, CondensedPhysics3.py) wired as one
+dispatch (OPEN_RULING, Q-230).
 
-GPU acceleration pattern for the N*26*4 = 104N F_U_Bi_i batch workload
-(PAPER_248). Three CUDA strategies: tiled 32x32 shared-memory GEMM (32x
-reduction), CUDA Graph capture (30000 launches 150ms->30ms = 80% reduction),
-NCCL 8x H100 all-reduce.
+SN 1006 (Type Ia remnant, ~1019 yr, ~7000 ly) is the FOUNDING MEMBER of the
+UQFF Force Equivalence Class: F_U_Bi ~ +2.11e208 N for all omega0=1e-12 systems
+(IDENTICAL to PAPER_217 Branch1 + PAPER_237).
 
-H100 SXM: 132 SMs, 989 TFLOPS FP32, 3.35 TB/s HBM3 => machine balance
-989e12/3.35e12 = 295 FLOP/byte. Benchmark 26*500*10000 = 1.3e8 ops; H100 O(1ms)
-vs O(1s) CPU.
+Force Equivalence Class Theorem: any omega0=1e-12 system -> F_U_Bi ~+2.11e208 N
+regardless of M/L/age/B0/rho (F_LENR overwhelms by ~33 orders). PAPER_251/252/254
+confirm; PAPER_253 (Sgr A*) departs.
 
-26-Layer Parallelism Theorem (layers independent, no data deps); speedup
-26*32*500/132 = 3150x (practical 1000-2000x).
+F_neutron ejecta-knot stabilisation = k_neutron*s_n = 1e6 N (Kozima coupling).
 
-CLEAN - all compute claims reproduce. Appendix drift (VDS 1.894, kg/m^3,
-beta_i) auto-corrected per charter.
+Reproducible: omega_LENR=2pi*1.25THz=7.854e12; E_knot=4.5e-11 J/m3; age=3.213e10 s.
 
-Gate: 1586/0. Registry 538 rows / 1152 edges / 253 ledgers (measured).
-Campaign: 253/2,255. Next: PAPER_250.
+Q-230: (a) DPM_resonance 1.76e18 vs paper 1.76e3 (15 OOM); (b) F_LENR 6.17e39
+vs 6.17e30 (paper's (7.854e24)^2 intermediate wrong); (c) F_U_Bi=2.11e208
+documented benchmark (ties PAPER_217/237). Wired derived-correct + benchmark.
+Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1591/0. Registry 539 rows / 1156 edges / 254 ledgers (measured).
+Campaign: 254/2,255. Next: PAPER_251.

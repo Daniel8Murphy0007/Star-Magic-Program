@@ -5556,3 +5556,13 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct DPM_resonance=3.10e9 (paper's omega0=1e-12); the 1.76e5 flagged.
 - **Ruling needed:** confirm DPM_resonance=3.10e9 (derived, omega0=1e-12) vs stated 1.76e5, or supply the corrected omega0/params/adj_factor behind 1.76e5.
 - Wired v0.252.0, status OPEN_RULING.
+
+## Q-230 — PAPER_250 SN 1006: DPM/F_LENR exponent drift + F_U_Bi founding benchmark
+- **(a)** DPM_resonance = 2*mu_B*B0/(hbar*omega0), with mu_B=9.274e-24, B0=1e-5, hbar=1.0546e-34, omega0=1e-12. The formula yields 1.76e18, but the paper states ≈1.76e3 — a 15-order exponent drift (mantissa 1.76 correct).
+- **(b)** F_LENR = k_LENR*(omega_LENR/omega0)^2, with k_LENR=1e-10, omega_LENR=7.854e12, omega0=1e-12. The formula yields 6.17e39, but the paper states ≈6.17e30 — the paper's intermediate (7.854e24)^2 = 6.17e40 is wrong (should be 6.17e49); the correct final is 6.17e39 (mantissa 6.17 correct).
+- **(c)** F_U_Bi = +2.11e208 N is the founding benchmark of the omega0=1e-12 Force Equivalence Class — IDENTICAL to PAPER_217 Branch-1 creation value and PAPER_237's F_U_Bi_i benchmark (documented, not reconstructable from the stated components).
+- Reproducible and locked: omega_LENR = 2pi*1.25 THz = 7.854e12; E_knot = 0.5*1e-23*(3e6)^2 = 4.5e-11 J/m3; age = 1019 yr = 3.213e10 s; F_neutron = k_neutron*s_n = 1e10*1e-4 = 1e6 N.
+- Force Equivalence Class Theorem: all omega0=1e-12 systems -> F_U_Bi ≈ +2.11e208 N (PAPER_251/252/254 confirm; PAPER_253 Sgr A* omega0=1e-15 departs).
+- Wired the derived-correct pieces + documented F_U_Bi=2.11e208 founding benchmark; drifts flagged.
+- **Ruling needed:** confirm the derived-correct DPM_resonance (1.76e18) and F_LENR (6.17e39) vs stated 1.76e3/6.17e30; confirm F_U_Bi=2.11e208 as the shared equivalence-class benchmark with PAPER_217/237.
+- Wired v0.254.0, status OPEN_RULING.

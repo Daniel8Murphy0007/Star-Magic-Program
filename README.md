@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.253.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.253.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.254.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.254.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1586%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-253-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1591%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-254-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.253.0 wiring campaign live**
+**UQFF systematic rebuild — v0.254.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.253.0)
+## What is currently shipped (v0.254.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 253 / 2,255** (25 ✓ · 228 ⚠ OPEN_RULING · 229 rulings queued) — CUDA GPU tiled GEMM 26-layer acceleration; H100 295 FLOP/byte, benchmark 1.3e8 ops, speedup 3150× (249)
+**Wired so far: 254 / 2,255** (25 ✓ · 229 ⚠ OPEN_RULING · 230 rulings queued) — SN 1006 Type Ia SNR, founding member of the ω₀=1e-12 Force Equivalence Class (F_U_Bi=+2.11e208 N, ties PAPER_217/237) (250)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -312,6 +312,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_247 | MUGE Merger Interaction Modulation | g_merger=g_base·(1+I₀e^-t/τ); peak 2.42·Ug1; t_half=277 Myr, t_relax=921 Myr; f_TRZ=0.1; Antennae+HUDF; CLEAN |
 | PAPER_248 | Source10 Batch OpenMP DPM Calibration | adj_factor=2.82e-56=C_DPM Eta Carinae anchor (ties PAPER_240); 26-layer g_UQFF, 104N=52000 ops; DPM_resonance 3.10e9; Q-229 |
 | PAPER_249 | CUDA GPU Tiled GEMM Acceleration | H100 295 FLOP/byte; benchmark 26·500·10000=1.3e8 ops; CUDA Graph 80% reduction; 26-Layer Parallelism, speedup 3150×; CLEAN |
+| PAPER_250 | SN 1006 Type Ia SNR F_U_Bi_i | founding member of ω₀=1e-12 Force Equivalence Class; F_U_Bi=+2.11e208 N (ties PAPER_217/237); ω_LENR=7.854e12, E_knot=4.5e-11; Q-230 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -596,7 +597,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.250.0 | Band 1: PAPER_246 | 250 |
 | v0.251.0 | Band 1: PAPER_247 | 251 |
 | v0.252.0 | Band 1: PAPER_248 | 252 |
-| **v0.253.0** ← current | Band 1: PAPER_249 | 253 |
+| v0.253.0 | Band 1: PAPER_249 | 253 |
+| **v0.254.0** ← current | Band 1: PAPER_250 | 254 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |
