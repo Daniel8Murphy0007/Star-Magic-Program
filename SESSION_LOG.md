@@ -3615,3 +3615,30 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
 Gate: 1691/0. Registry 559 rows / 1227 edges / 274 ledgers (measured).
 Campaign: 274/2,255. Next: PAPER_271.
+
+---
+
+## 2026-08-02 — v0.275.0 — BAND 1: PAPER_271 — SOURCE10 THz DOUBLE-GATE STAR FORMATION (CLEAN)
+
+PAPER_271 (THz Double-Gate Star Formation - Dual Binary Conditions for Maximum
+UQFF Conduit Force, Session 74, UQFF_SOURCE10.cpp Catalogue Master) wired as one
+dispatch (CLEAN, WIRED). Reframes PAPER_239's two SF force channels as a
+dual-binary-gate architecture.
+
+Double gate: F_conduit=k_conduit*(H_abundance*water_state)*neutron_factor gated
+by BOTH water_state (Gate 1 water incompressibility classical fluid) AND
+neutron_factor (Gate 2 neutron stability quantum Kozima). F_thz_shock shares
+Gate 2. Maximum SF requires BOTH gates open (AND, not OR) -> explaining episodic
++ spatially-localized star formation. Orthogonality: gates in orthogonal domains,
+d(Gate1)/d(Gate2)=0 exactly.
+
+Reproducible: F_conduit^max=8.99e9*0.74=6.65e9 N (confirms PAPER_239 F_conduit);
+(omega_thz/omega0)^2=1.44 (44% Colman-Gillespie enhancement, omega_thz/omega0=
+1.2~1.25); omega_CG=2pi*1.25THz=7.854e12; F_thz^max=1.99e-11 N; scale separation
+3.3e20 (~20 orders).
+
+CLEAN - all values reproduce; ties PAPER_239. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1696/0. Registry 560 rows / 1230 edges / 275 ledgers (measured).
+Campaign: 275/2,255. Next: PAPER_272.

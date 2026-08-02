@@ -1226,3 +1226,6 @@ observable,ngc1792_ram_pressure_degeneracy_point,observable,ngc1792_ssfr_starbur
 observable,source10_gh_cosmic_orbital_bridge,paper,PAPER_270,g_H cosmic orbital bridge constant Q_bridge
 observable,source10_gh_cosmic_orbital_bridge,observable,source10_batch_dpm_calibration,confirms E_DPM=3.11e9 (PAPER_248 resolves Q-229a)
 observable,source10_gh_cosmic_orbital_bridge,observable,dpm_resonance_energy_density,g_H + 2.82e-56 = C_DPM (PAPER_240)
+observable,source10_thz_double_gate_star_formation,paper,PAPER_271,THz double-gate star formation
+observable,source10_thz_double_gate_star_formation,observable,thz_shock_force_starformation,confirms F_conduit=6.65e9 (PAPER_239)
+observable,source10_thz_double_gate_star_formation,observable,h2o_conduit_force_starformation,double-gate reframing of conduit (PAPER_239)

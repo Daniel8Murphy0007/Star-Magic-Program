@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.275.0] — 2026-08-02 — BAND 1: PAPER_271 — SOURCE10 THz DOUBLE-GATE STAR FORMATION (CLEAN)
+
+### Added
+- **PAPER_271 dispatch** — Source10 THz double-gate star formation (Session 74). Reframes PAPER_239's two SF force channels as a dual-binary-gate architecture.
+  - **Double gate:** F_conduit = k_conduit·(H_abundance·water_state)·neutron_factor is gated by both water_state (Gate 1, water incompressibility, classical fluid) AND neutron_factor (Gate 2, neutron stability, quantum Kozima). F_thz_shock shares Gate 2. Maximum SF requires BOTH gates open (AND, not OR) — explaining episodic and spatially-localized star formation.
+  - **Orthogonality:** the gates operate in orthogonal physical domains, so ∂(Gate1)/∂(Gate2)=0 exactly.
+  - **Reproducible:** F_conduit^max = 8.99e9·0.74 = 6.65e9 N (confirms PAPER_239 F_conduit); (ω_thz/ω0)²=1.44 (44% Colman-Gillespie enhancement, ω_thz/ω0=1.2≈1.25); ω_CG=2π·1.25 THz=7.854e12; F_thz^max=1.99e-11 N; scale separation 3.3e20 (~20 orders, conduit macroscopic vs THz quantum).
+- Gate +4 assertions (1691 → 1696, 0 failures).
+- Registry: +1 row (560), +3 edges (1230), +1 citation (275).
+
+### Notes
+- CLEAN — all values reproduce; ties PAPER_239.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.274.0] — 2026-08-02 — BAND 1: PAPER_270 — SOURCE10 g_H COSMIC ORBITAL BRIDGE (CLEAN)
 
 ### Added

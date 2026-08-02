@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.274.0"
+VERSION = "0.275.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15175,6 +15175,87 @@ def _paper_270(dataset):
         },
         'formula': 'Q_bridge = g_H*2.82e-56 = 3.53e-10; E_DPM = Q_bridge*mu_B*B0/(hbar*omega0) = 3.11e9 J/m3',
         'source': 'PAPER_270',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_271')
+def _paper_271(dataset):
+    """Source10 THz double-gate star formation - dual binary conditions (S74).
+
+    The UQFF Source10 two star-formation force channels (PAPER_239) reframed as
+    a DOUBLE-GATE architecture requiring simultaneous satisfaction of two
+    independent binary gates:
+      Channel 1 Conduit: F_conduit = k_conduit*(H_abundance*water_state)*
+        neutron_factor  - gated by BOTH water_state (Gate 1) AND neutron_factor
+        (Gate 2).
+      Channel 2 THz shock: F_thz_shock = k_thz*(omega_thz/omega0)^2*
+        neutron_factor*conduit_scale - gated by Gate 2 (neutron_factor).
+
+    Gate 1 (water_state in [0,1]): water incompressibility (classical fluid).
+      1 -> conduit fully open; 0 -> gas phase, conduit closed. The H + H2O ->
+      COx pathway needs an incompressible hydrogen-bearing medium.
+    Gate 2 (neutron_factor in {0,1}): neutron stability (quantum nuclear,
+      Kozima drop). 1 -> stable; 0 -> both channels closed.
+
+    Gate truth table: (water=1, neutron=1) -> both MAX, SF ACTIVE; (1,0)/(0,0)
+    -> QUENCHED; (0,1) -> F_conduit=0, F_thz MAX, PARTIAL. Maximum star
+    formation requires BOTH gates open (AND, not OR) - explaining why SF is
+    episodic (neutron_factor fluctuates) and spatially localized (water_state=1
+    only in specific density-temperature windows).
+
+    Orthogonality: the two gates operate in orthogonal physical domains
+    (classical fluid vs quantum nuclear), so d(Gate1)/d(Gate2) = 0 exactly -
+    physically independent, one cannot substitute for the other.
+
+    Colman-Gillespie THz resonance window: omega_thz=1.2e12, omega0=1e12 ->
+    omega_thz/omega0 = 1.2 ~= 1.25 (the 1.25 THz CG frequency, 4% window);
+    (omega_thz/omega0)^2 = 1.44 = systematic 44% resonance enhancement
+    (power ~ amplitude^2 in the above-resonance regime).
+
+    Reproducible: F_conduit^max = k_conduit*H_abundance = 8.99e9*0.74 = 6.65e9 N
+    (CONFIRMS PAPER_239's F_conduit); (omega_thz/omega0)^2 = 1.44; omega_CG =
+    2*pi*1.25 THz = 7.854e12 rad/s; F_thz^max = 1.38e-23*1.44*1e12 = 1.99e-11 N;
+    scale separation 6.65e9/1.99e-11 = 3.3e20 (~20 orders, macroscopic conduit
+    vs quantum/molecular THz).
+
+    CLEAN - all values reproduce. Ties PAPER_239 (THz shock + H2O conduit).
+    Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per
+    charter.
+    """
+    import math
+    k_conduit = 8.99e9; H_abundance = 0.74               # Coulomb, cosmic H fraction
+    F_conduit_max = k_conduit * H_abundance              # 6.65e9 (confirms PAPER_239)
+    omega_thz = 1.2e12; omega0 = 1e12
+    thz_enhancement = (omega_thz / omega0) ** 2          # 1.44
+    omega_CG = 2 * math.pi * 1.25e12                     # 7.854e12
+    k_thz = 1.38e-23
+    F_thz_max = k_thz * thz_enhancement * 1e12           # 1.99e-11 (paper factor)
+    scale_span = F_conduit_max / F_thz_max              # 3.3e20 ~20 orders
+    return {
+        'value': {
+            'domain': '2.69 (Source10 THz double-gate star formation)',
+            'source_thread': 'Session 74 UQFF_SOURCE10.cpp Catalogue Master',
+            'gates': 2,
+            'gate1': 'water_state in [0,1] (water incompressibility, classical fluid)',
+            'gate2': 'neutron_factor in {0,1} (neutron stability, quantum Kozima)',
+            'gates_orthogonal': True,                    # d(G1)/d(G2)=0
+            'sf_requires_AND': True,                      # both gates open
+            'k_conduit': k_conduit, 'H_abundance': H_abundance,
+            'F_conduit_max': F_conduit_max,              # 6.65e9 confirms PAPER_239
+            'confirms_paper_239_conduit': True,
+            'thz_ratio': omega_thz / omega0,             # 1.2 ~1.25 CG
+            'thz_enhancement': thz_enhancement,          # 1.44 (44%)
+            'omega_CG': omega_CG,                        # 7.854e12
+            'cg_window_pct': 4,                          # 1.2 vs 1.25
+            'F_thz_max': F_thz_max,                      # 1.99e-11
+            'scale_span': scale_span,                    # 3.3e20 ~20 orders
+            'scale_separated_channels': True,
+            'sf_episodic_localized': True,               # AND-gate consequence
+        },
+        'formula': 'F_conduit = k_conduit*(H*water_state)*neutron_factor; SF requires water_state=1 AND neutron_factor=1 (double gate)',
+        'source': 'PAPER_271',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

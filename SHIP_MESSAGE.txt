@@ -1,22 +1,20 @@
-v0.274.0 BAND 1: PAPER_270 wired - SOURCE10 g_H COSMIC ORBITAL BRIDGE (CLEAN)
+v0.275.0 BAND 1: PAPER_271 wired - SOURCE10 THz DOUBLE-GATE STAR FORMATION (CLEAN)
 
-PAPER_270 (DPM Resonance Quantum Orbital Amplification - g_H=1.252e46 as UQFF
-Cosmic Orbital G-Factor Bridge, S74, UQFF_SOURCE10.cpp Catalogue Master) wired
-as one dispatch (CLEAN, WIRED).
+PAPER_271 (THz Double-Gate Star Formation - Dual Binary Conditions for Maximum
+UQFF Conduit Force, S74, UQFF_SOURCE10.cpp Catalogue Master) wired as one
+dispatch (CLEAN, WIRED). Reframes PAPER_239's two SF force channels as a
+dual-binary-gate architecture.
 
-Quantum orbital bridge constant: Q_bridge=g_H*2.82e-56=3.53e-10 (dimensionless),
-so DPM_resonance=Q_bridge*mu_B*B0/(hbar*omega0). Universal UQFF constant bridging
-atomic (Bohr magneton) and cosmic (stellar DPM J/m3) scales with no intermediate
-dimensional params (fine-structure analogue for DPM).
+Double gate: F_conduit=k_conduit*(H_abundance*water_state)*neutron_factor gated
+by BOTH water_state (Gate 1 classical fluid) AND neutron_factor (Gate 2 quantum
+Kozima). F_thz_shock shares Gate 2. Max SF requires BOTH gates open (AND not OR)
+-> episodic + spatially-localized SF. Gates orthogonal, d(G1)/d(G2)=0.
 
-KEY CROSS-CHECK: E_DPM=3.11e9 J/m3 at omega0=1e-12 CONFIRMS PAPER_248's derived
-DPM_resonance 3.10e9 - RESOLVES Q-229a (248's stated 1.76e5 was the error).
+Reproducible: F_conduit^max=8.99e9*0.74=6.65e9 N (confirms PAPER_239);
+(omega_thz/omega0)^2=1.44 (44% CG enhancement); omega_CG=7.854e12; F_thz^max=
+1.99e-11 N; scale separation 3.3e20 (~20 orders).
 
-g_H: gamma_H^UQFF=g_H*mu_B/hbar=1.1e57 (~49 orders above proton); g_H=g_p*
-(M_cosmic/m_p)^0.76, M_cosmic/m_p=1.43e59, g_H/g_p=2.24e45; 89-decade span.
+CLEAN - all values reproduce; ties PAPER_239. Appendix drift auto-corrected.
 
-CLEAN - all values reproduce; ties PAPER_237/240/248. Appendix drift
-auto-corrected per charter.
-
-Gate: 1691/0. Registry 559 rows / 1227 edges / 274 ledgers (measured).
-Campaign: 274/2,255. Next: PAPER_271.
+Gate: 1696/0. Registry 560 rows / 1230 edges / 275 ledgers (measured).
+Campaign: 275/2,255. Next: PAPER_272.
