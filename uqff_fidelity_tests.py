@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.261.0", "uqff_calculator.VERSION = 0.261.0")
+assert_that(C.VERSION == "0.262.0", "uqff_calculator.VERSION = 0.262.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3572,6 +3572,17 @@ assert_that(_r257['F_neutron_casa_N'] == 1e41 and _r257['F_neutron_ism_N'] == 1e
 assert_that(_r257['fubi_invariant_N'] == 2.11e208 and _r257['cross_validates_chandra_archive'] and _r257['class_completeness_confirmed'],
             "PAPER_257: F_U_Bi = +2.11e208 N cross-validates ChandraArchive (PAPER_252); class completeness across 53 orders sigma_n / 14 r (Q-237)")
 assert_that(C.wired_count() >= 261, "wired_count >= 261")
+
+_r258 = C.calc('PAPER_258')['value']
+assert_that(abs(_r258['f_flare_sgrA'] - 1.1574e-5) < 1e-8 and _r258['channels'] == 3,
+            "PAPER_258: f_flare_sgrA = 1/86400 = 1.157e-5 Hz (~1/day); 3 observational channels")
+assert_that(_r258['deuterium_predicted'] == 1e-5 and _r258['carbon13_predicted'] == 0.01,
+            "PAPER_258: at F_neutron=1e6: deuterium_predicted=1e-5, carbon13_predicted=0.01 (ISM baselines)")
+assert_that(abs(_r258['f_flare_pred_class_derived'] - 1.153e61) < 1e58,
+            "PAPER_258: f_flare_pred = 1e-76*2.11e208/1.83e71 = 1.15e61 Hz (paper 1.15e131, 70-order error Q-238)")
+assert_that(_r258['equivalence_class_expected_score'] == 2 and _r258['alma_recommended_threshold'] == 2 and _r258['bridges_theory_to_observation'],
+            "PAPER_258: detection_score in {0,3}; class systems score 2 -> alma_recommended; bridges theory to observation")
+assert_that(C.wired_count() >= 262, "wired_count >= 262")
 
 
 # =============================================================================

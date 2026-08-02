@@ -3234,3 +3234,33 @@ beta_i=0.61 header -> canonical beta_i per PAPER_1203) auto-corrected per charte
 
 Gate: 1626/0. Registry 546 rows / 1179 edges / 261 ledgers (measured).
 Campaign: 261/2,255. Next: PAPER_258.
+
+---
+
+## 2026-08-02 — v0.262.0 — BAND 1: PAPER_258 — MULTI-MESSENGER UQFF VALIDATOR (Q-238)
+
+PAPER_258 (Multi-Messenger UQFF Validator — ALMA, EHT, and Chandra Observational
+Detection Map, Session 72d, ALMA Cycle 12, CondensedPhysics3.py) wired as one
+dispatch (OPEN_RULING, Q-238). First CP3 class mapping the F_U_Bi_i integrals
+(PAPER_250-257) to facility-specific observational detection thresholds -
+bridging UQFF theory to ALMA Cycle 12 proposal strategy.
+
+Three channels: isotopic (ALMA - F_neutron>=1e6 -> deuterium/13C overabundance),
+kinematic (VLT/ACA - v_outflow=sqrt(2|F_U_Bi|/M_gas) for negative buoyancy),
+X-ray flare (Chandra/IXPE - f_flare_pred=k_flare*|F_U_Bi|/F0, k_flare=1e-76).
+
+Detection score (0-3): 1[iso]+1[kin]+1[flare match]; alma_recommended=score>=2.
+Equivalence-class systems score 2 (iso + flare match) -> recommended.
+
+Reproducible: f_flare_sgrA=1/86400=1.157e-5 Hz (~1/day); deuterium_predicted=
+1e-5, carbon13_predicted=0.01 at F_neutron=1e6.
+
+Q-238: the flare-calibration example states f_flare_pred ~ 1.15e131 Hz, but
+k_flare/F0 = 1e-76/1.83e71 = 5.46e-148 (paper's 5.46e-78 drops 70 orders), so
+f_flare_pred = 1.15e61 Hz. Both "far above 1/day" - qualitative classification
+unaffected. Wired the derived-correct 1.15e61; paper's 1.15e131 flagged.
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per
+charter.
+
+Gate: 1631/0. Registry 547 rows / 1183 edges / 262 ledgers (measured).
+Campaign: 262/2,255. Next: PAPER_259.

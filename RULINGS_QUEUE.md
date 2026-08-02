@@ -5633,3 +5633,11 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + documented +2.11e208 benchmark; drift + inconsistency flagged.
 - **Ruling needed:** reconcile PSR J0030 +2.53e208 vs Cas A +2.11e208 at same omega0/NS density; confirm x2=F0/b class mechanism; confirm a=1.86e12.
 - Wired v0.261.0, status OPEN_RULING.
+
+## Q-238 — PAPER_258 Multi-Messenger Validator: flare-calibration arithmetic error
+- Observational classification post-processor for PAPER_250-257; maps F_U_Bi to 3 detection channels (isotopic/kinematic/X-ray flare) + a detection_score (0-3), alma_recommended = score>=2.
+- **Drift:** the flare-calibration example states f_flare_pred = 1e-76*2.11e208/1.83e71 ≈ 1.15e131 Hz, but k_flare/F0 = 1e-76/1.83e71 = 5.46e-148 (the paper's intermediate 5.46e-78 drops 70 orders), so the correct f_flare_pred = 1.15e61 Hz. Both values are "far above 1/day", so the qualitative classification (equivalence-class systems = strong sources) is unaffected.
+- Reproducible and locked (all clean): f_flare_sgrA = 1/86400 = 1.157e-5 Hz (~1/day); deuterium_predicted = 1e-5, carbon13_predicted = 0.01 at F_neutron=1e6; detection_score {0,1,2,3}; alma_recommended threshold 2; equivalence-class expected score 2 (isotopic True + flare match True, kinematic False since F_U_Bi>0).
+- Wired the derived-correct f_flare_pred=1.15e61 + scoring logic; paper's 1.15e131 flagged.
+- **Ruling needed:** confirm f_flare_pred=1.15e61 (derived) vs stated 1.15e131; confirm k_flare=1e-76 Hz/N calibration constant.
+- Wired v0.262.0, status OPEN_RULING.

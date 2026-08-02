@@ -1,21 +1,24 @@
-v0.261.0 BAND 1: PAPER_257 wired - CASSIOPEIA A CLASS COMPLETENESS (Q-237)
+v0.262.0 BAND 1: PAPER_258 wired - MULTI-MESSENGER UQFF VALIDATOR (Q-238)
 
-PAPER_257 (Cassiopeia A SNR Neutron Star - Force Equivalence Class Extension
-Across 53 Orders in sigma_n and 14 Orders in r, S72d, ALMA Cycle 12,
-CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-237). Definitive
-cross-validation of the Force Equivalence Class.
+PAPER_258 (Multi-Messenger UQFF Validator - ALMA, EHT, and Chandra Observational
+Detection Map, S72d, ALMA Cycle 12, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-238). First CP3 class mapping the F_U_Bi_i integrals
+(PAPER_250-257) to facility-specific observational detection thresholds.
 
-Cross-validation: Cas A compact NS (omega0=1e-12, sigma_n=1e31, r=1e4 m) yields
-the SAME F_U_Bi=+2.11e208 N as the ChandraArchive composite (diffuse). Extends
-the class 53 orders sigma_n / 14 orders r - topological invariant.
+Three channels: isotopic (ALMA - F_neutron>=1e6 -> deuterium/13C), kinematic
+(VLT/ACA - v_outflow=sqrt(2|F_U_Bi|/M_gas) negative buoyancy), X-ray flare
+(Chandra/IXPE - f_flare_pred=k_flare*|F_U_Bi|/F0, k_flare=1e-76).
 
-Mechanism (x2=F0/b): x2=1.83e71/4.72e-3=3.88e73 m set by vacuum anchor F0 +
-stiffness b, NOT M or r. F_neutron amplified (1e41 Cas A vs 1e6 ISM) but
-non-determinant. Class Completeness Theorem, invariant Phi=+2.11e208 N.
+Detection score (0-3): 1[iso]+1[kin]+1[flare]; alma_recommended=score>=2.
+Class systems score 2 -> recommended.
 
-Q-237: (a) INTERNAL INCONSISTENCY - +2.11e208 here vs PSR J0030 (PAPER_255)
-+2.53e208 at same omega0/NS - needs reconciliation. (b) a=1.86e12 (paper 1.86e6
-mojibake). Wired derived-correct + benchmark. Appendix drift auto-corrected.
+Reproducible: f_flare_sgrA=1/86400=1.157e-5 Hz (~1/day); deuterium=1e-5,
+carbon13=0.01 at F_neutron=1e6.
 
-Gate: 1626/0. Registry 546 rows / 1179 edges / 261 ledgers (measured).
-Campaign: 261/2,255. Next: PAPER_258.
+Q-238: flare-calibration f_flare_pred ~1.15e131 stated but k_flare/F0=5.46e-148
+(paper's 5.46e-78 drops 70 orders) -> 1.15e61 Hz. Both far above 1/day,
+classification unaffected. Wired derived-correct 1.15e61. Appendix drift
+auto-corrected per charter.
+
+Gate: 1631/0. Registry 547 rows / 1183 edges / 262 ledgers (measured).
+Campaign: 262/2,255. Next: PAPER_259.

@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.262.0] — 2026-08-02 — BAND 1: PAPER_258 — MULTI-MESSENGER UQFF VALIDATOR (Q-238)
+
+### Added
+- **PAPER_258 dispatch** — the Multi-Messenger UQFF Validator (Session 72d). First CP3 class that maps the F_U_Bi_i integrals (PAPER_250–257) to facility-specific observational detection thresholds, bridging UQFF theory to ALMA Cycle 12 proposal strategy.
+  - **Three channels:** isotopic (ALMA — F_neutron≥1e6 → deuterium/13C overabundance), kinematic (VLT/ACA — v_outflow=√(2|F_U_Bi|/M_gas) for negative buoyancy), X-ray flare (Chandra/IXPE — f_flare_pred=k_flare·|F_U_Bi|/F0, k_flare=1e-76).
+  - **Detection score (0–3):** 1[isotopic]+1[kinematic]+1[flare match]; alma_recommended = score≥2. Equivalence-class systems score 2 (isotopic + flare match) → recommended.
+  - **Reproducible:** f_flare_sgrA = 1/86400 = 1.157e-5 Hz (~1/day); deuterium_predicted=1e-5, carbon13_predicted=0.01 at F_neutron=1e6.
+- Gate +4 assertions (1626 → 1631, 0 failures).
+- Registry: +1 row (547), +4 edges (1183), +1 citation (262).
+
+### Ruling filed
+- **Q-238** — the flare-calibration example states f_flare_pred ≈ 1.15e131 Hz, but k_flare/F0 = 1e-76/1.83e71 = 5.46e-148 (paper's 5.46e-78 drops 70 orders), so f_flare_pred = 1.15e61 Hz. Both are "far above 1/day" — the qualitative classification is unaffected. Wired the derived-correct value; paper's 1.15e131 flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.261.0] — 2026-08-02 — BAND 1: PAPER_257 — CASSIOPEIA A CLASS COMPLETENESS (Q-237)
 
 ### Added
