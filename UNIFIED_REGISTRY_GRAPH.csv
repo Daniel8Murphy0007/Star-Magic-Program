@@ -1194,3 +1194,6 @@ primitive,G_OBSERVED,observable,ngc3603_scale_invariant_feedback,G*M0/r^2 gravit
 primitive,BETA_I,observable,ngc3603_scale_invariant_feedback,beta_i canonical Tier-2/3
 observable,ngc3603_scale_invariant_feedback,paper,PAPER_261,Scale-Invariant Feedback Theorem
 observable,ngc3603_scale_invariant_feedback,observable,ngc3603_full_muge_10term,dual M(t)+additive P(t) vs PAPER_243 additive-only
+primitive,G_OBSERVED,observable,ngc2525_sn_negative_mass_loss,term_SN = -G*M_SN/r^2
+observable,ngc2525_sn_negative_mass_loss,paper,PAPER_262,SN negative-mass-loss sign reversal
+observable,ngc2525_sn_negative_mass_loss,observable,sgra_negative_buoyancy_inversion,second negative-g channel vs field inversion (PAPER_253)

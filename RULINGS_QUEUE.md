@@ -5650,3 +5650,11 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct values (6.57e-9, 8.988e16) + the analytic theorem; mojibake flagged.
 - **Ruling needed:** confirm G*M0/r^2=6.57e-9 (derived) vs stated 6.60e-16; confirm r=8.988e16 (9.5 ly); the theorem is clean.
 - Wired v0.265.0, status OPEN_RULING.
+
+## Q-240 — PAPER_262 NGC 2525: illustrative-value discrepancies (mechanism clean)
+- New mechanism: SN Type Ia negative-mass-loss gravitational sign reversal - term_SN = -G*M_ej*(1-e^-t/tau_SN)/r^2 growing negative term from ejecta permanently escaping the galaxy potential. Second UQFF path to negative g (mass removal at the DPM-seeded kernel level), distinct from PAPER_253's field-inversion channel (omega0 regime change). Irreversible.
+- **Reproduces cleanly:** eps_SN(inf) = M_ej/M_gal = 1.2/1e10 = 1.2e-10; eps_cumulative = 1.2e4/1e10 = 1.2e-6 (ppm-level secular weakening over 10 Gyr, ~1e4 SNe); Virgo outer frame M_ext_ngc=1.2e15 M_sun=2.387e45 kg / r_ext_ngc=72 Mpc=2.222e24 m.
+- **Drift (illustrative figures):** (a) t_cross = r/v_ej = 2.836e20/1e7 = 0.9 Myr (paper states ~28 Myr); (b) |term_SN(inf)| = G*1.2 M_sun/r^2 = 1.98e-21 m/s^2 (paper comparison table states ~1e-27); (c) r = 2.836e20 m = 9.2 kpc (paper labels ~30 kpc, would be 9.26e20); (d) SN-rate "0.1/century (~10 SNe/Myr)" internally inconsistent (0.1/century = 1e3/Myr).
+- Wired the derived-correct values (t_cross=0.9 Myr, term_SN=1.98e-21) + the mechanism + reproducing eps ratios; discrepancies flagged.
+- **Ruling needed:** confirm t_cross=0.9 Myr (derived) vs ~28 Myr; confirm |term_SN|~1.98e-21 vs ~1e-27; confirm r label (9.2 vs 30 kpc); the mechanism and eps ratios are clean.
+- Wired v0.266.0, status OPEN_RULING.

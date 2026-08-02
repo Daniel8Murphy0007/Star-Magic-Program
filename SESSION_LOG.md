@@ -3353,3 +3353,32 @@ kg/m^3, beta_i=0.61 -> canonical BETA_I) auto-corrected per charter.
 
 Gate: 1646/0. Registry 550 rows / 1195 edges / 265 ledgers (measured).
 Campaign: 265/2,255. Next: PAPER_262.
+
+---
+
+## 2026-08-02 — v0.266.0 — BAND 1: PAPER_262 — NGC 2525 SN NEGATIVE-MASS-LOSS (Q-240)
+
+PAPER_262 (Galaxy NGC 2525 - SN Type Ia Negative-Mass-Loss Gravitational Sign
+Reversal: A New UQFF Mechanism Distinct from Buoyancy-Inversion, Session 71b,
+GalaxyNGC2525.cpp UQFF 2.0 upgrade) wired as one dispatch (OPEN_RULING, Q-240).
+
+13-term MUGE introducing the SECOND UQFF path to negative gravity. New
+mechanism: term_SN = -G*M_ej*(1-e^(-t/tau_SN))/r^2 - a growing negative term
+from SN ejecta permanently escaping the galaxy potential (mass removal at the
+DPM-seeded G*M/r^2 kernel level). Irreversible; distinct from PAPER_253's
+field-inversion channel (omega0 regime change). Two independent negative-g
+channels.
+
+Reproducible: eps_SN(inf)=M_ej/M_gal=1.2/1e10=1.2e-10; eps_cumulative=1.2e4/
+1e10=1.2e-6 (ppm secular weakening over 10 Gyr ~1e4 SNe); Virgo frame
+M_ext_ngc=2.387e45 kg / r_ext_ngc=72 Mpc=2.222e24 m.
+
+Q-240: illustrative-value discrepancies - (a) t_cross=r/v_ej=0.9 Myr (paper
+~28 Myr); (b) |term_SN(inf)|=G*1.2 M_sun/r^2=1.98e-21 (paper's table ~1e-27);
+(c) r=2.836e20 m=9.2 kpc (paper labels ~30 kpc); (d) SN-rate figures internally
+inconsistent. Mechanism + eps ratios reproduce. Wired derived-correct values;
+discrepancies flagged. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=
+0.61 -> canonical BETA_I) auto-corrected per charter.
+
+Gate: 1651/0. Registry 551 rows / 1198 edges / 266 ledgers (measured).
+Campaign: 266/2,255. Next: PAPER_263.

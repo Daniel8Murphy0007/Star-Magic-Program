@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.265.0"
+VERSION = "0.266.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14522,6 +14522,83 @@ def _paper_261(dataset):
         },
         'formula': 'Scale-Invariant: Phi(t)=const*e^(-t/tau); Delta_Phi/Phi = 1-e^(-Delta_t/tau) independent of t -> universal ~30% SFE',
         'source': 'PAPER_261',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_262')
+def _paper_262(dataset):
+    """NGC 2525 SN Type Ia negative-mass-loss gravitational sign reversal (S71b).
+
+    NGC 2525 (barred spiral, ~70 Mpc, host of SN 2018gv) introduces the SECOND
+    UQFF path to negative gravity - a NEW mechanism distinct from the Sgr A*
+    Negative Buoyancy Inversion (PAPER_253). Here negative g arises from SN
+    ejecta mass PERMANENTLY ESCAPING the galaxy potential:
+        term_SN = -G*M_SN(t)/r^2,  M_SN(t) = M_ej*(1 - e^(-t/tau_SN))
+    a GROWING NEGATIVE term (0 at t=0 -> -G*M_ej/r^2 asymptotically) that
+    permanently and irreversibly reduces the galaxy's gravitational confinement.
+
+    Two independent channels to negative g:
+      PAPER_253 (Sgr A*): FIELD INVERSION - omega0 regime change -> F_LENR
+        dominance -> F_U_Bi_i sign flip; reversible; ~1e208 N magnitude.
+      PAPER_262 (NGC 2525): MASS REMOVAL - SN ejecta escape at the DPM-seeded
+        kernel G*M/r^2 level; irreversible; tiny magnitude; ~10-100 Myr ejecta
+        crossing timescale. First UQFF sign contribution from mass removal
+        rather than field inversion. term_SN unique among mass-loss terms in
+        arising from a single thermonuclear event (cleanest observational
+        anchor: SN 2018gv 2018-Jan, Li et al. 2019).
+
+    Mass-loss suppression ratio eps_SN(t) = |term_SN|/|term1| = M_ej(1-e^-t/
+    tau_SN)/(M_gal(1+Hz t)(1-B/B_crit)). For M_ej~1.2 M_sun, M_gal~1e10 M_sun:
+        eps_SN(inf) = 1.2/1e10 = 1.2e-10 (fractionally tiny, 1 part in 1e10).
+    Cumulatively over 10 Gyr (~1e4 Type Ia SNe -> 1.2e4 M_sun lost):
+        eps_cumulative = 1.2e4/1e10 = 1.2e-6 (ppm-level secular gravitational
+        weakening, potentially detectable in precision galactic dynamics).
+
+    Reproducible: eps_SN(inf) = 1.2e-10; eps_cumulative = 1.2e-6; Virgo outer
+    frame M_ext_ngc = 1.2e15 M_sun = 2.387e45 kg / r_ext_ngc = 72 Mpc =
+    2.222e24 m. beta_i canonical (registry BETA_I).
+
+    Q-240: (a) t_cross = r/v_ej = 2.836e20/1e7 = 0.9 Myr (paper states ~28 Myr);
+    (b) |term_SN(inf)| = G*1.2 M_sun/r^2 = 1.98e-21 m/s^2 (paper's comparison
+    table states ~1e-27); (c) r = 2.836e20 m = 9.2 kpc (paper labels ~30 kpc);
+    (d) SN-rate "0.1/century (~10 SNe/Myr)" internally inconsistent. The eps
+    ratios, mechanism, and Virgo frame reproduce. Wired the derived-correct
+    values; discrepancies flagged. Appendix drift (VDS 1.894, kg/m^3,
+    beta_i=0.61 -> canonical BETA_I) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    r = 2.836e20; v_ej = 1e7                              # 9.2 kpc, 10000 km/s
+    M_gal_msun = 1e10; M_ej_msun = 1.2
+    eps_SN_inf = M_ej_msun / M_gal_msun                  # 1.2e-10
+    n_sne_10gyr = 1e4
+    eps_cumulative = (n_sne_10gyr * M_ej_msun) / M_gal_msun   # 1.2e-6
+    M_ext_ngc = 1.2e15 * 1.989e30                         # 2.387e45 kg (Virgo)
+    r_ext_ngc = 72 * 3.086e22                             # 2.222e24 m
+    t_cross_myr = (r / v_ej) / 3.156e7 / 1e6             # 0.9 Myr derived
+    term_SN_inf = G * M_ej_msun * 1.989e30 / r ** 2      # 1.98e-21 derived
+    return {
+        'value': {
+            'domain': '2.60 (NGC 2525 SN Type Ia negative-mass-loss sign reversal)',
+            'source_thread': 'Session 71b GalaxyNGC2525.cpp UQFF 2.0 upgrade',
+            'system': 'NGC 2525 (barred spiral, host SN 2018gv)',
+            'muge_terms': 13,
+            'mechanism': 'term_SN = -G*M_ej*(1-e^(-t/tau_SN))/r^2 (growing negative)',
+            'negative_g_channel': 'mass removal (vs PAPER_253 field inversion)',
+            'irreversible': True,                        # mass permanently lost
+            'eps_SN_inf': eps_SN_inf,                    # 1.2e-10
+            'eps_cumulative_10gyr': eps_cumulative,      # 1.2e-6 (ppm)
+            'n_sne_10gyr': n_sne_10gyr,                  # 1e4
+            'M_ext_ngc_kg': M_ext_ngc, 'r_ext_ngc_m': r_ext_ngc,  # Virgo frame
+            't_cross_myr_derived': t_cross_myr,          # 0.9 (paper 28)
+            'term_SN_inf_derived': term_SN_inf,          # 1.98e-21 (paper 1e-27)
+            'first_mass_removal_sign_reversal': True,
+            'ties_paper_253_field_inversion': True,      # two independent channels
+            'value_drift': 't_cross 0.9 Myr vs paper 28; |term_SN| 1.98e-21 vs paper 1e-27; r 9.2 kpc vs labeled 30 (Q-240); eps ratios reproduce',
+        },
+        'formula': 'term_SN = -G*M_ej*(1-e^(-t/tau_SN))/r^2; eps_SN=M_ej/M_gal=1.2e-10; second negative-g channel (mass removal)',
+        'source': 'PAPER_262',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

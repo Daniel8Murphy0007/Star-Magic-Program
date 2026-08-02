@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.266.0] — 2026-08-02 — BAND 1: PAPER_262 — NGC 2525 SN NEGATIVE-MASS-LOSS (Q-240)
+
+### Added
+- **PAPER_262 dispatch** — NGC 2525 SN Type Ia negative-mass-loss gravitational sign reversal (Session 71b, GalaxyNGC2525.cpp). A 13-term MUGE introducing the SECOND UQFF path to negative gravity.
+  - **New mechanism:** term_SN = −G·M_ej·(1−e^(−t/τ_SN))/r² — a growing negative term from SN ejecta permanently escaping the galaxy potential (mass removal at the DPM-seeded G·M/r² kernel level). Irreversible; distinct from PAPER_253's field-inversion channel (ω0 regime change). Two independent negative-g channels.
+  - **Reproducible:** ε_SN(∞) = M_ej/M_gal = 1.2/1e10 = 1.2e-10; ε_cumulative = 1.2e4/1e10 = 1.2e-6 (ppm-level secular weakening over 10 Gyr, ~1e4 SNe); Virgo frame M_ext_ngc = 2.387e45 kg / r_ext_ngc = 72 Mpc = 2.222e24 m.
+- Gate +4 assertions (1646 → 1651, 0 failures).
+- Registry: +1 row (551), +3 edges (1198), +1 citation (266).
+
+### Ruling filed
+- **Q-240** — illustrative-value discrepancies: (a) t_cross = r/v_ej = 0.9 Myr (paper ~28 Myr); (b) |term_SN(∞)| = G·1.2 M_sun/r² = 1.98e-21 (paper's table ~1e-27); (c) r = 2.836e20 m = 9.2 kpc (paper labels ~30 kpc); (d) SN-rate figures internally inconsistent. The mechanism and ε ratios reproduce. Wired derived-correct values; discrepancies flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 → canonical BETA_I) auto-corrected per charter.
+
+---
+
 ## [0.265.0] — 2026-08-02 — BAND 1: PAPER_261 — NGC 3603 SCALE-INVARIANT FEEDBACK (Q-239)
 
 ### Added

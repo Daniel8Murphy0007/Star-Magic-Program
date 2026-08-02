@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 265 (27 ✓, 238 ⚠ OPEN_RULING)
+- **Wired:** 266 (27 ✓, 239 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1989
+- **Not yet touched:** 1988
 
 ---
 
@@ -1520,7 +1520,7 @@
 | ✓ | PAPER_259 | NGC1275 AGN Feedback Buoyancy Equilibrium Cooling Flow BCG | CLEAN
 | ✓ | PAPER_260 | HorseheadNebula Universal Erosion Buoyancy Coupling PDR Structural Form Independ | CLEAN
 | ⚠ | PAPER_261 | NGC3603 Dual Dynamic Feedback Equilibrium Timescale Scale Invariant Theorem YMC | Q-239
-| ⬜ | PAPER_262 | NGC2525 SN TypeIa Negative Mass Loss Gravitational Sign Reversal UQFF |
+| ⚠ | PAPER_262 | NGC2525 SN TypeIa Negative Mass Loss Gravitational Sign Reversal UQFF | Q-240
 | ⬜ | PAPER_263 | UQFF Simultaneous CoAction Universality Dissipative Buoyancy Pair Master Theorem |
 | ⬜ | PAPER_264 | HUDF TRZ CPT Asymmetric Gravitational Phase Transition NegativeTime |
 | ⬜ | PAPER_265 | HUDF DualChannel Interaction Cascade Buoyancy Quadratic Merger Amplification |

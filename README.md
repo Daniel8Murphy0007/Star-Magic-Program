@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.265.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.265.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.266.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.266.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1646%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-265-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1651%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-266-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.265.0 wiring campaign live**
+**UQFF systematic rebuild — v0.266.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.265.0)
+## What is currently shipped (v0.266.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 265 / 2,255** (27 ✓ · 238 ⚠ OPEN_RULING · 239 rulings queued) — NGC 3603 dual-dynamic feedback + Scale-Invariant Feedback Theorem; ΔΦ/Φ=1-e^(-Δt/τ) independent of t → universal 30-35% SFE (261)
+**Wired so far: 266 / 2,255** (27 ✓ · 239 ⚠ OPEN_RULING · 240 rulings queued) — NGC 2525 SN negative-mass-loss gravitational sign reversal; second negative-g channel (mass removal vs field inversion) (262)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -324,6 +324,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_259 | NGC 1275 AGN Feedback Equilibrium | 13-term MUGE; cooling-flow term co-acts with 3 buoyancy tiers (shared G·M/r²); AFET; filament period 272 Myr; CLEAN |
 | PAPER_260 | Horsehead Erosion-Buoyancy Universality | Structural-Form Independence: E(t)=E₀(1-e^-t/τ) same across all PDR geometries; static-M asymmetric; CLEAN |
 | PAPER_261 | NGC 3603 Scale-Invariant Feedback | dual M(t)+additive P(t); ΔΦ/Φ=1-e^(-Δt/τ) independent of t → universal 30-35% SFE; Q-239 |
+| PAPER_262 | NGC 2525 SN Negative-Mass-Loss | term_SN=-G·M_ej(1-e^-t/τ)/r²; second negative-g channel (mass removal vs field inversion); ε_SN=1.2e-10; Q-240 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -620,7 +621,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.262.0 | Band 1: PAPER_258 | 262 |
 | v0.263.0 | Band 1: PAPER_259 | 263 |
 | v0.264.0 | Band 1: PAPER_260 | 264 |
-| **v0.265.0** ← current | Band 1: PAPER_261 | 265 |
+| v0.265.0 | Band 1: PAPER_261 | 265 |
+| **v0.266.0** ← current | Band 1: PAPER_262 | 266 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.265.0", "uqff_calculator.VERSION = 0.265.0")
+assert_that(C.VERSION == "0.266.0", "uqff_calculator.VERSION = 0.266.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3616,6 +3616,17 @@ assert_that(_r261['scale_invariant_theorem'] and abs(_r261['frac_change_at_tau']
 assert_that(abs(_r261['M_GC_kg'] - 7.956e36) < 1e33 and abs(_r261['r_GC_m'] - 2.1602e20) < 1e17,
             "PAPER_261: Sgr A* frame M_GC = 4e6 M_sun = 7.956e36 kg; r_GC = 7 kpc = 2.16e20 m")
 assert_that(C.wired_count() >= 265, "wired_count >= 265")
+
+_r262 = C.calc('PAPER_262')['value']
+assert_that(abs(_r262['eps_SN_inf'] - 1.2e-10) < 1e-13 and abs(_r262['eps_cumulative_10gyr'] - 1.2e-6) < 1e-9,
+            "PAPER_262: eps_SN(inf) = M_ej/M_gal = 1.2/1e10 = 1.2e-10; cumulative 1e4 SNe = 1.2e-6 (ppm/10 Gyr)")
+assert_that(abs(_r262['M_ext_ngc_kg'] - 2.3868e45) < 1e42 and abs(_r262['r_ext_ngc_m'] - 2.2219e24) < 1e21,
+            "PAPER_262: Virgo outer frame M_ext_ngc = 1.2e15 M_sun = 2.387e45 kg; r_ext_ngc = 72 Mpc = 2.222e24 m")
+assert_that(abs(_r262['t_cross_myr_derived'] - 0.90) < 0.05 and abs(_r262['term_SN_inf_derived'] - 1.981e-21) < 1e-24,
+            "PAPER_262: t_cross = r/v_ej = 0.9 Myr (paper 28); |term_SN(inf)| = G*1.2 M_sun/r^2 = 1.98e-21 (paper 1e-27) Q-240")
+assert_that(_r262['first_mass_removal_sign_reversal'] and _r262['ties_paper_253_field_inversion'] and _r262['irreversible'],
+            "PAPER_262: first UQFF mass-removal negative-g channel (irreversible); second channel vs PAPER_253 field inversion")
+assert_that(C.wired_count() >= 266, "wired_count >= 266")
 
 
 # =============================================================================
