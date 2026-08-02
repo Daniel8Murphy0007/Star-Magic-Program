@@ -1145,3 +1145,7 @@ primitive,F_TRZ,observable,muge_merger_interaction_modulation,f_TRZ=0.1 in g_bas
 primitive,G_OBSERVED,observable,muge_merger_interaction_modulation,Ug1=G*M/r^2
 observable,muge_merger_interaction_modulation,paper,PAPER_247,g_merger tidal boost exp decay
 observable,muge_merger_interaction_modulation,observable,muge_dualmode_oscillatory_gravity,universal MUGE sub-term series (PAPER_246)
+observable,source10_batch_dpm_calibration,paper,PAPER_248,Source10 batch + DPM resonance calibration
+observable,source10_batch_dpm_calibration,observable,dpm_resonance_energy_density,adj_factor=C_DPM identical (PAPER_240)
+observable,source10_batch_dpm_calibration,observable,muge_quantum_uncertainty_gQ,g_UQFF 26-layer includes g_Q (PAPER_244)
+observable,source10_batch_dpm_calibration,observable,master_buoyancy_fubii_catalogue,F_U_Bi_i integral Eta Carinae anchor (PAPER_237)

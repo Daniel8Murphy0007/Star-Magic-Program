@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.251.0"
-description = "UQFF Star-Magic-Program v0.251.0: PAPER_247 wired (CLEAN) - MUGE merger interaction modulation g_merger=g_base*(1+I0*exp(-t/t_merger)); I0=0.1, peak 2.42*Ug1, t_half=277 Myr, t_relax=921 Myr; f_TRZ=0.1 canonical; Antennae+HUDF. Wired 251/2255, gate 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured)."
+version = "0.252.0"
+description = "UQFF Star-Magic-Program v0.252.0: PAPER_248 wired (Q-229) - Source10 batch OpenMP + DPM resonance calibration; adj_factor=2.82e-56=C_DPM Eta Carinae anchor (ties PAPER_240); 26-layer g_UQFF, 104N=52000 ops; DPM_resonance derived 3.10e9. Wired 252/2255, gate 1581/0. Registry 537 rows / 1150 edges / 252 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

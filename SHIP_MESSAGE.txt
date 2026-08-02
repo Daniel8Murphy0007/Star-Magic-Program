@@ -1,23 +1,25 @@
-v0.251.0 BAND 1: PAPER_247 wired - MUGE MERGER INTERACTION MODULATION (CLEAN)
+v0.252.0 BAND 1: PAPER_248 wired - SOURCE10 BATCH OpenMP + DPM CALIBRATION (Q-229)
 
-PAPER_247 (MUGE Merger Interaction Modulation - Tidal Gravity Boost with
-Exponential Decay, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
-wired as one dispatch (CLEAN, WIRED).
+PAPER_248 (UQFF Source10 Batch OpenMP Profiling - DPM Resonance Calibration and
+Parallel Architecture, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
+wired as one dispatch (OPEN_RULING, Q-229).
 
-The MUGE merger interaction modulation sub-term: transient tidal gravity boost
-with exponential decay.
-  I(t) = I0*exp(-t/t_merger); g_merger = g_base*(1+I(t)).
-I0=0.1 (10% boost at t=0); t_merger=400 Myr=1.262e16 s.
+Third-generation F_U_Bi_i integral calculator (mt19937 sampling, scaling_factors
+overrides, OpenMP batch + chrono profiling).
 
-Base gravity: g_base=(Ug1+Ug4)*(1+f_TRZ), Ug4=Ug1*(1-B/B_crit), f_TRZ=0.1
-(canonical F_TRZ). For B<<B_crit: g_base=2.2*Ug1, peak g_merger(0)=2.42*Ug1.
+DPM resonance, Eta Carinae calibrated:
+  DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor
+adj_factor = 2.82e-56 = Eta Carinae DPM anchor (IDENTICAL to C_DPM PAPER_240);
+g_H=1.252e46 (ties PAPER_237/240). Framework-wide DPM anchor.
 
-Characteristic times (reproduce): t_half=400*ln2=277 Myr; t_relax=400*ln(10)=
-921 Myr; I(t_merger)=I0/e=0.037. Integrated boost=40 Myr*g_base. Antennae +
-HUDF modules.
+26-layer g_UQFF = sum_26(Ug1..Ug4) + Lambda*c^2/3 + g_Q (g_Q from PAPER_244).
+26-Layer Completeness: N*26*4 = 104N = 52000 ops (N=500).
 
-CLEAN - all numerics reproduce; f_TRZ=0.1 from canonical F_TRZ. Appendix drift
-(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Sister-paper self-consistency: omega0=1e12 gives 3.10e-15 = PAPER_240 Q_wave.
 
-Gate: 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured).
-Campaign: 251/2,255. Next: PAPER_248.
+Q-229: paper DPM_resonance ~1.76e5 (omega0=1e-12) not reproducible; formula/
+params give 3.10e9. Formula and constants otherwise correct. Wired 3.10e9;
+1.76e5 flagged. Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+
+Gate: 1581/0. Registry 537 rows / 1150 edges / 252 ledgers (measured).
+Campaign: 252/2,255. Next: PAPER_249.

@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.252.0] — 2026-08-02 — BAND 1: PAPER_248 — SOURCE10 BATCH OpenMP + DPM CALIBRATION (Q-229)
+
+### Added
+- **PAPER_248 dispatch** — UQFF Source10 batch OpenMP profiling + DPM resonance calibration (Session 62, grok_share_8d951e12 4th-pass). Third-generation F_U_Bi_i integral calculator (mt19937 sampling, scaling_factors overrides, OpenMP batch).
+  - **DPM resonance:** DPM_resonance = g_H·μ_B·B0/(ℏ·ω0)·adj_factor, with adj_factor = 2.82e-56 — the Eta Carinae DPM anchor, IDENTICAL to PAPER_240's C_DPM (derived from L_X~1e35 W, Chandra 2023). g_H = 1.252e46 (ties PAPER_237/240).
+  - **26-layer total gravity:** g_UQFF = Σ_{l=1..26}(Ug1..Ug4)_l + Λc²/3 + g_Q (g_Q from PAPER_244). 26-Layer Completeness: N·26·4 = 104N = 52,000 ops (N=500).
+  - **Sister-paper self-consistency:** with ω0=1e12 the formula gives 3.10e-15 = PAPER_240's Q_wave (B0/ω0 ratio cancels).
+- Gate +4 assertions (1576 → 1581, 0 failures).
+- Registry: +1 row (537), +4 edges (1150), +1 citation (252).
+
+### Ruling filed
+- **Q-229** — the paper states DPM_resonance ≈ 1.76e5 (ω0=1e-12) and ≈1.76e8 (ω0=1e-15) but the stated formula/params give 3.10e9; the 1.76 mantissa and magnitudes do not reproduce. The formula and constants are otherwise correct (ω0=1e12 → PAPER_240 Q_wave). Wired the derived-correct 3.10e9; the 1.76e5 flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.251.0] — 2026-08-02 — BAND 1: PAPER_247 — MUGE MERGER INTERACTION MODULATION (CLEAN)
 
 ### Added

@@ -2923,3 +2923,35 @@ charter.
 
 Gate: 1576/0. Registry 536 rows / 1146 edges / 251 ledgers (measured).
 Campaign: 251/2,255. Next: PAPER_248.
+
+---
+
+## 2026-08-02 — v0.252.0 — BAND 1: PAPER_248 — SOURCE10 BATCH OpenMP + DPM CALIBRATION (Q-229)
+
+PAPER_248 (UQFF Source10 Batch OpenMP Profiling — DPM Resonance Calibration and
+Parallel Architecture, Session 62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-229).
+
+Third-generation F_U_Bi_i integral calculator (mt19937 reproducible sampling,
+scaling_factors per-system overrides, OpenMP batch + chrono profiling).
+
+DPM resonance, Eta Carinae calibrated:
+  DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor
+adj_factor = 2.82e-56 = Eta Carinae DPM anchor (IDENTICAL to C_DPM PAPER_240,
+from matching F_U_Bi_i to L_X~1e35 W Chandra 2023); g_H=1.252e46 (ties
+PAPER_237/240). All UQFF systems reuse this adj_factor (framework DPM anchor).
+
+26-layer g_UQFF = sum_{l=1..26}(Ug1..Ug4)_l + Lambda*c^2/3 + g_Q (g_Q from
+PAPER_244). 26-Layer Completeness: N*26*4 = 104N = 52000 ops (N=500).
+
+Sister-paper self-consistency: with omega0=1e12 the formula gives 3.10e-15 =
+PAPER_240's Q_wave (B0/omega0 ratio cancels).
+
+Q-229: paper states DPM_resonance ~1.76e5 (omega0=1e-12) and ~1.76e8 (Sgr A*)
+but the stated formula/params give 3.10e9; the 1.76 mantissa/magnitudes do not
+reproduce. Formula and constants are otherwise correct. Wired the
+derived-correct 3.10e9; 1.76e5 flagged. Appendix boilerplate drift (VDS 1.894,
+kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1581/0. Registry 537 rows / 1150 edges / 252 ledgers (measured).
+Campaign: 252/2,255. Next: PAPER_249.

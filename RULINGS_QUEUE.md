@@ -5547,3 +5547,12 @@ RESOLVED section with the ruling recorded.
 - **Ruling needed:** confirm g_Q_min = 2.10e-34 m/s^2 (derived) vs stated 3.0e-34.
 - Universal Presence Theorem (term_q identical in all 19 MUGE modules) is the paper's primary structural result; not a numeric issue.
 - Wired v0.248.0, status OPEN_RULING.
+
+## Q-229 — PAPER_248 DPM_resonance value not reproducible (1.76e5 stated vs 3.10e9 computed)
+- DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor, with g_H=1.252e46, mu_B=9.274e-24, B0=1e-4, hbar=1.0546e-34, adj_factor=2.82e-56 (=C_DPM PAPER_240).
+- **Drift:** with the paper's stated omega0=1e-12 rad/s, the formula yields DPM_resonance = 3.10e9, but the paper states ≈1.76e5 (and ≈1.76e8 at omega0=1e-15 for Sgr A*). The 1.76 mantissa and 1e5/1e8 magnitudes do not reproduce from the stated formula/params.
+- Note: with omega0=1e12 (positive) the formula gives 3.10e-15 — IDENTICAL to PAPER_240's Q_wave (B0/omega0 ratio cancels), confirming sister-paper self-consistency. So the formula and constants are correct; only the stated example value 1.76e5 is anomalous.
+- Reproducible and locked: adj_factor=2.82e-56=C_DPM (Eta Carinae DPM anchor, ties PAPER_240); g_H=1.252e46; 26-Layer Completeness N*26*4=104N=52000 (N=500); inverse-omega0 scaling; 1e6 s (~11.6 day) LENR Kozima decay.
+- Wired the derived-correct DPM_resonance=3.10e9 (paper's omega0=1e-12); the 1.76e5 flagged.
+- **Ruling needed:** confirm DPM_resonance=3.10e9 (derived, omega0=1e-12) vs stated 1.76e5, or supply the corrected omega0/params/adj_factor behind 1.76e5.
+- Wired v0.252.0, status OPEN_RULING.

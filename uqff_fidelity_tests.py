@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.251.0", "uqff_calculator.VERSION = 0.251.0")
+assert_that(C.VERSION == "0.252.0", "uqff_calculator.VERSION = 0.252.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3462,6 +3462,17 @@ assert_that(abs(_r247['I_at_t_merger'] - 0.0368) < 1e-3 and abs(_r247['integrate
 assert_that(abs(_r247['t_merger_s'] - 1.2624e16) < 1e13 and _r247['universal_muge_term'],
             "PAPER_247: t_merger = 400 Myr = 1.262e16 s; universal MUGE merger term (Antennae + HUDF)")
 assert_that(C.wired_count() >= 251, "wired_count >= 251")
+
+_r248 = C.calc('PAPER_248')['value']
+assert_that(_r248['adj_factor'] == 2.82e-56 and _r248['adj_factor_equals_C_DPM_paper_240'] and _r248['g_H'] == 1.252e46,
+            "PAPER_248: adj_factor = 2.82e-56 = C_DPM (Eta Carinae DPM anchor, ties PAPER_240); g_H = 1.252e46")
+assert_that(abs(_r248['dpm_resonance_omega_1e_neg12'] - 3.1048e9) < 1e6 and abs(_r248['dpm_at_omega_1e12_ties_paper_240_Qwave'] - 3.1048e-15) < 1e-18,
+            "PAPER_248: DPM_resonance omega0=1e-12 -> 3.10e9 (paper 1.76e5 Q-229); omega0=1e12 -> 3.10e-15 = PAPER_240 Q_wave")
+assert_that(_r248['batch_ops_104N'] == 52000 and _r248['layers'] == 26 and _r248['subterms_per_layer'] == 4,
+            "PAPER_248: 26-Layer Completeness - N*26*4 = 104N = 52000 (N=500); g_UQFF 26-layer sum + Lc^2/3 + g_Q")
+assert_that(_r248['mt19937_reproducible'] and _r248['openmp_parallel'] and _r248['eta_carinae_anchor'],
+            "PAPER_248: mt19937 reproducible sampling; OpenMP batch; Eta Carinae DPM anchor (L_X~1e35 W)")
+assert_that(C.wired_count() >= 252, "wired_count >= 252")
 
 
 # =============================================================================

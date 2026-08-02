@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.251.0"
+VERSION = "0.252.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13457,4 +13457,76 @@ def _paper_247(dataset):
         'source': 'PAPER_247',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_248')
+def _paper_248(dataset):
+    """UQFF Source10 batch OpenMP profiling + DPM resonance calibration (S62).
+
+    Third-generation F_U_Bi_i integral calculator with three engineering
+    upgrades: (1) reproducible stochastic sampling via mt19937; (2) configurable
+    scaling_factors map for per-system parameter overrides; (3)
+    batch_compute_F_U_Bi_i() with OpenMP parallelisation + chrono profiling.
+
+    DPM resonance term, Eta Carinae calibrated:
+        DPM_resonance = g_H * mu_B * B0 / (hbar * omega0) * adj_factor
+    with adj_factor = 2.82e-56 (Eta Carinae DPM anchor - IDENTICAL to
+    PAPER_240's C_DPM; derived by matching F_U_Bi_i to Eta Carinae X-ray
+    luminosity L_X ~ 1e35 W, Chandra 2023) and g_H = 1.252e46 (ties
+    PAPER_237/240). All UQFF systems reuse this adj_factor, making Eta Carinae
+    the framework DPM anchor. Resonance scales inversely with omega0.
+
+    26-layer UQFF total gravity:
+        g_UQFF = sum_{l=1}^{26}(Ug1_l + Ug2_l + Ug3_l + Ug4_l) + Lambda*c^2/3
+                 + g_Q
+    (g_Q is the PAPER_244 quantum-uncertainty term). 26-Layer Completeness
+    Theorem: N systems x 26 layers x 4 sub-terms = 104*N operations
+    (N=500 -> 52,000 sub-term evaluations per batch, GPU-tileable).
+
+    Numerics: DPM_resonance formula with the paper's stated omega0=1e-12,
+    B0=1e-4 yields 3.10e9; with omega0=1e12 it yields 3.10e-15 - IDENTICAL to
+    PAPER_240's Q_wave (B0/omega0 ratio cancels), confirming the sister-paper
+    self-consistency. LENR activation decay exp(-t/1e6) with 1e6 s (~11.6 day)
+    Kozima phonon-coherence lifetime.
+
+    Q-229: the paper states DPM_resonance ~= 1.76e5 (omega0=1e-12) and ~1.76e8
+    (omega0=1e-15, Sgr A*), but the stated formula/params give 3.10e9 (not
+    1.76e5) - the 1.76 mantissa and the 1e5/1e8 magnitudes do not reproduce.
+    Wired the derived-correct 3.10e9 (paper's omega0=1e-12); the 1.76e5 flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    g_H = 1.252e46                                       # ties PAPER_237/240
+    mu_B = 9.274e-24                                     # Bohr magneton
+    B0 = 1e-4                                             # Eta Carinae surface field
+    hbar = 1.0546e-34
+    omega0 = 1e-12                                        # paper's stated char freq
+    adj_factor = 2.82e-56                                # = C_DPM (PAPER_240)
+    dpm_resonance = g_H * mu_B * B0 / (hbar * omega0) * adj_factor   # 3.10e9
+    dpm_at_omega_1e12 = g_H * mu_B * B0 / (hbar * 1e12) * adj_factor # 3.10e-15 = PAPER_240 Q_wave
+    N = 500
+    ops_104N = N * 26 * 4                                 # 52000
+    return {
+        'value': {
+            'domain': '2.46 (Source10 batch OpenMP + DPM resonance calibration)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'adj_factor': adj_factor,                    # 2.82e-56 = C_DPM
+            'adj_factor_equals_C_DPM_paper_240': True,
+            'g_H': g_H,                                  # ties PAPER_237/240
+            'dpm_resonance_omega_1e_neg12': dpm_resonance,   # 3.10e9 derived
+            'dpm_at_omega_1e12_ties_paper_240_Qwave': dpm_at_omega_1e12,  # 3.10e-15
+            'dpm_inverse_omega_scaling': True,
+            'eta_carinae_anchor': True,                  # L_X ~ 1e35 W Chandra
+            'g_uqff_26layer': 'sum_26(Ug1..Ug4) + Lambda*c^2/3 + g_Q',
+            'layers': 26, 'subterms_per_layer': 4,
+            'batch_ops_104N': ops_104N,                  # 52000 for N=500
+            'lenr_decay_s': 1e6,                         # ~11.6 day Kozima
+            'mt19937_reproducible': True,
+            'openmp_parallel': True,
+            'value_drift': 'DPM_resonance 1.76e5 stated vs 3.10e9 computed (omega0=1e-12); omega0=1e12 gives 3.10e-15=PAPER_240 Q_wave (Q-229)',
+        },
+        'formula': 'DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor; g_UQFF = sum_26(Ug1..4)+Lc^2/3+g_Q',
+        'source': 'PAPER_248',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

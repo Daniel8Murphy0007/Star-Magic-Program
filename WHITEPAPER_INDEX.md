@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 251 (24 ✓, 227 ⚠ OPEN_RULING)
+- **Wired:** 252 (24 ✓, 228 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2003
+- **Not yet touched:** 2002
 
 ---
 
@@ -1506,7 +1506,7 @@
 | ✓ | PAPER_245 | MUGE Fluid Self Gravity Archimedes Buoyancy SubTerm | CLEAN
 | ✓ | PAPER_246 | MUGE Dual Mode Oscillatory Gravity Standing Traveling Wave | CLEAN
 | ✓ | PAPER_247 | MUGE Merger Interaction Modulation Tidal Gravity Boost | CLEAN
-| ⬜ | PAPER_248 | UQFF Source10 Batch OpenMP DPM Resonance Profiling |
+| ⚠ | PAPER_248 | UQFF Source10 Batch OpenMP DPM Resonance Profiling | Q-229
 | ⬜ | PAPER_249 | UQFF CUDA GPU Tiled GEMM Multi System Acceleration |
 | ⬜ | PAPER_250 | SN1006 TypeIa SNR FUBi Ejecta Knot Stabilisation |
 | ⬜ | PAPER_251 | EtaCarina Homunculus DPM Invisibility LENR Resonance |
