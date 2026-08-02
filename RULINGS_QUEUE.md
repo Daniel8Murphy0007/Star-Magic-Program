@@ -5658,3 +5658,12 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct values (t_cross=0.9 Myr, term_SN=1.98e-21) + the mechanism + reproducing eps ratios; discrepancies flagged.
 - **Ruling needed:** confirm t_cross=0.9 Myr (derived) vs ~28 Myr; confirm |term_SN|~1.98e-21 vs ~1e-27; confirm r label (9.2 vs 30 kpc); the mechanism and eps ratios are clean.
 - Wired v0.266.0, status OPEN_RULING.
+
+## Q-241 — PAPER_264 HUDF TRZ: U_g1 value mismatch + f_TRZ↔w mapping inconsistency
+- Reinterprets f_TRZ as a CPT-asymmetry / phase-transition parameter: U_g,UQFF=(U_g1+U_g4)*(1+f_TRZ)*(1+I(t)); phase diagram with 5 regimes; zero point at f_TRZ=-1 (UQFF vanishes), anti-gravity at f_TRZ<-1. HUDF f_TRZ=0.1=canonical F_TRZ. CPT Phase Transition Theorem (first-order at f_TRZ=-1).
+- **(a)** U_g1: the paper states ~2.88e-15 m/s^2, but G*M/r^2 with the stated M=1e12 M_sun (1.989e42 kg) and r=1.23e27 m (13 Glyr) yields 8.77e-23 (8 orders off). 2.88e-15 corresponds to r~2.15e23 m (~7 Mpc), not the stated cosmic radius - r/M inconsistency.
+- **(b)** The f_TRZ ~ -(1+w) dark-energy mapping is inconsistent: the paper claims "TRZ zero-point (f_TRZ=-1) corresponds exactly to de Sitter (w=-1)", but f_TRZ=-(1+w) gives f_TRZ=0 at w=-1, not -1. The mapping and the zero-point identification don't align.
+- Reproducible and locked: (1+f_TRZ)=1.1 at HUDF (f_TRZ=0.1=canonical F_TRZ); (1+f_TRZ)=0 at zero point (f_TRZ=-1); 5-regime phase diagram; CPT first-order phase transition structure.
+- Wired the phase structure + derived U_g1=8.77e-23; discrepancies flagged.
+- **Ruling needed:** confirm U_g1 (which M/r pair is intended); clarify the f_TRZ↔w mapping / de Sitter identification. The phase-transition structure is clean.
+- Wired v0.268.0, status OPEN_RULING.

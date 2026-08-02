@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 267 (28 ✓, 239 ⚠ OPEN_RULING)
+- **Wired:** 268 (28 ✓, 240 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1987
+- **Not yet touched:** 1986
 
 ---
 
@@ -1522,7 +1522,7 @@
 | ⚠ | PAPER_261 | NGC3603 Dual Dynamic Feedback Equilibrium Timescale Scale Invariant Theorem YMC | Q-239
 | ⚠ | PAPER_262 | NGC2525 SN TypeIa Negative Mass Loss Gravitational Sign Reversal UQFF | Q-240
 | ✓ | PAPER_263 | UQFF Simultaneous CoAction Universality Dissipative Buoyancy Pair Master Theorem | CLEAN |
-| ⬜ | PAPER_264 | HUDF TRZ CPT Asymmetric Gravitational Phase Transition NegativeTime |
+| ⚠ | PAPER_264 | HUDF TRZ CPT Asymmetric Gravitational Phase Transition NegativeTime | Q-241
 | ⬜ | PAPER_265 | HUDF DualChannel Interaction Cascade Buoyancy Quadratic Merger Amplification |
 | ⬜ | PAPER_266 | HUDF Primordial IGM Superconducting Gravitational Meissner Effect Bcrit |
 | ⬜ | PAPER_267 | NGC1792 SFR Normalization Starburst Buoyancy Coherence |

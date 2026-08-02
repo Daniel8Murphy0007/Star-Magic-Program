@@ -1,23 +1,21 @@
-v0.267.0 BAND 1: PAPER_263 wired - CO-ACTION UNIVERSALITY MASTER THEOREM (CLEAN)
+v0.268.0 BAND 1: PAPER_264 wired - HUDF TRZ CPT PHASE TRANSITION (Q-241)
 
-PAPER_263 (UQFF Simultaneous Co-action Universality - The Dissipative-Buoyancy
-Pair as a Universal MUGE Pattern Across All Astrophysical Environments, S72f
-cross-system synthesis) wired as one dispatch (CLEAN, WIRED).
+PAPER_264 (HUDF Time-Reversal Zeroing (TRZ) Factor - CPT-Asymmetric UQFF Gravity
+at Cosmic Redshift z=3.5, S72g, HUDFGalaxies.cpp HUDFTRZNegativeTimeTerm) wired
+as one dispatch (OPEN_RULING, Q-241).
 
-Master theorem unifying the four preceding module upgrades (PAPER_259/260/261/
-262) plus Rings of Relativity (242). Universal MUGE form: g_UQFF = g_base +
-g_diss(t) + g_buoy^(3)(t).
+Reinterprets the HUDF f_TRZ factor as a CPT-asymmetry / phase-transition
+parameter: U_g,UQFF=(U_g1+U_g4)*(1+f_TRZ)*(1+I(t)). 5-regime phase diagram with
+Time-Reversal Zero Point at f_TRZ=-1 (UQFF vanishes) and negative-time
+anti-gravity at f_TRZ<-1 (UQFF reverses sign). CPT Phase Transition Theorem
+(first-order at f_TRZ=-1).
 
-Universality Theorem: any dissipative D(t) and the 3-tier buoyancy B^(3) are
-simultaneously active for all t>=0 - they share only kernel K(r)=G*M/r^2 but are
-parametrically orthogonal (d g_diss/d{beta_i,omega_g,U_UA}=0; d g_buoy/d
-Gamma_D=0). Corollary: sequential feedback cycles = thermodynamic approximation
-valid only t>>tau_D.
+Reproducible: HUDF f_TRZ=0.1=canonical F_TRZ -> (1+0.1)=1.1 enhancement;
+(1+f_TRZ)=0 at zero point.
 
-Unifies 4 sub-theorems (260/261/259/262); 7 dissipative-buoyancy classes; master
-eq with N_D terms (NGC 3603 N_D=2).
+Q-241: (a) U_g1 stated ~2.88e-15 but G*M/r^2=8.77e-23 (8-order mismatch, r/M
+inconsistency); (b) f_TRZ~-(1+w) de Sitter mapping inconsistent. Phase structure
+clean. Wired phase structure + derived U_g1. Appendix drift auto-corrected.
 
-CLEAN - master synthesis theorem. Appendix drift auto-corrected per charter.
-
-Gate: 1656/0. Registry 552 rows / 1203 edges / 267 ledgers (measured).
-Campaign: 267/2,255. Next: PAPER_264.
+Gate: 1661/0. Registry 553 rows / 1206 edges / 268 ledgers (measured).
+Campaign: 268/2,255. Next: PAPER_265.

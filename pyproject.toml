@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.267.0"
-description = "UQFF Star-Magic-Program v0.267.0: PAPER_263 wired (CLEAN) - Simultaneous Co-action Universality master theorem; g_UQFF=g_base+g_diss+g_buoy^(3), dissipation and buoyancy parametrically orthogonal -> simultaneous; unifies 4 sub-theorems / 7 classes / 5 systems. Wired 267/2255, gate 1656/0. Registry 552 rows / 1203 edges / 267 ledgers (measured)."
+version = "0.268.0"
+description = "UQFF Star-Magic-Program v0.268.0: PAPER_264 wired (Q-241) - HUDF TRZ factor as CPT-asymmetry phase-transition parameter; 5-regime phase diagram, zero point at f_TRZ=-1, anti-gravity f_TRZ<-1; HUDF f_TRZ=0.1=canonical F_TRZ. Wired 268/2255, gate 1661/0. Registry 553 rows / 1206 edges / 268 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

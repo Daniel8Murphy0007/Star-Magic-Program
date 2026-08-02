@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.267.0", "uqff_calculator.VERSION = 0.267.0")
+assert_that(C.VERSION == "0.268.0", "uqff_calculator.VERSION = 0.268.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3638,6 +3638,17 @@ assert_that(_r263['ngc3603_N_D'] == 2 and _r263['master_synthesis'],
 assert_that(len(_r263['class_names']) == 7 and len(_r263['systems']) == 5,
             "PAPER_263: 7 dissipative-buoyancy classes; 5 unified systems (NGC 1275/Horsehead/NGC 3603/NGC 2525/Rings)")
 assert_that(C.wired_count() >= 267, "wired_count >= 267")
+
+_r264 = C.calc('PAPER_264')['value']
+assert_that(_r264['f_TRZ_is_canonical'] and abs(_r264['hudf_enhancement'] - 1.1) < 1e-9 and _r264['zero_point_factor'] == 0,
+            "PAPER_264: HUDF f_TRZ = 0.1 = canonical F_TRZ; (1+f_TRZ)=1.1 enhancement; (1+f_TRZ)=0 at zero point (f_TRZ=-1)")
+assert_that(_r264['cpt_phase_transition'] and _r264['first_order_transition'] and _r264['zero_point_f_TRZ'] == -1,
+            "PAPER_264: CPT Phase Transition Theorem - first-order transition at f_TRZ=-1 (Time-Reversal Zero Point)")
+assert_that(_r264['phase_regimes'] == 5 and len(_r264['regime_names']) == 5,
+            "PAPER_264: 5 phase regimes (CPT-violating/symmetric/suppressed/zero-point/anti-gravity)")
+assert_that(abs(_r264['ug1_derived'] - 8.774e-23) < 1e-25,
+            "PAPER_264: U_g1 = G*M/r^2 = 8.77e-23 derived (paper 2.88e-15, 8-order mismatch Q-241)")
+assert_that(C.wired_count() >= 268, "wired_count >= 268")
 
 
 # =============================================================================

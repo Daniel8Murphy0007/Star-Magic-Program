@@ -1202,3 +1202,6 @@ observable,uqff_coaction_universality_master,observable,ngc1275_agn_feedback_equ
 observable,uqff_coaction_universality_master,observable,horsehead_erosion_buoyancy_universality,unifies morphology-independence (PAPER_260)
 observable,uqff_coaction_universality_master,observable,ngc3603_scale_invariant_feedback,unifies scale-invariant feedback (PAPER_261)
 observable,uqff_coaction_universality_master,observable,ngc2525_sn_negative_mass_loss,unifies dual sign-reversal (PAPER_262)
+primitive,F_TRZ,observable,hudf_trz_cpt_phase_transition,f_TRZ=0.1 canonical (1+f_TRZ)=1.1
+observable,hudf_trz_cpt_phase_transition,paper,PAPER_264,TRZ CPT phase transition
+observable,hudf_trz_cpt_phase_transition,observable,rings_relativity_muge_9term,f_TRZ (1+f_TRZ) UQFF term (PAPER_242)

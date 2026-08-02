@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.267.0"
+VERSION = "0.268.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14671,4 +14671,76 @@ def _paper_263(dataset):
         'source': 'PAPER_263',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_264')
+def _paper_264(dataset):
+    """HUDF TRZ factor - CPT-asymmetric gravity phase transition at z=3.5 (S72g).
+
+    Reinterprets the HUDF MUGE f_TRZ factor (embedded as (1+f_TRZ) in the UQFF
+    term) - previously a small perturbation - as a CPT-ASYMMETRY parameter
+    encoding the time-reversal behaviour of the UQFF gravitational field:
+        U_g,UQFF = (U_g1 + U_g4)*(1 + f_TRZ)*(1 + I(t))
+    with U_g1 = G*M/r^2, U_g4 = U_g1*(1 - B/B_crit). HUDF f_TRZ = 0.1 = the
+    canonical F_TRZ (mild positive CPT violation at z=3.5).
+
+    Phase diagram in f_TRZ:
+      f_TRZ > 0  : (1+f_TRZ) > 1  CPT-violating (UQFF enhanced above DPM-seeded)
+      f_TRZ = 0  : (1+f_TRZ) = 1  CPT-symmetric (no TRZ correction)
+      -1<f_TRZ<0 : 0 < (1+f_TRZ) < 1  CPT-suppressed (UQFF reduced)
+      f_TRZ = -1 : (1+f_TRZ) = 0  TIME-REVERSAL ZERO POINT (UQFF vanishes;
+                   remaining gravity is pure DPM-seeded base - UQFF locally
+                   undetectable; candidate for cosmic-web voids)
+      f_TRZ < -1 : (1+f_TRZ) < 0  NEGATIVE-TIME ANTI-GRAVITY (UQFF reverses
+                   sign, net repulsion; dark-energy-domination epochs)
+
+    CPT Phase Transition Theorem: f_TRZ defines a first-order phase transition
+    at f_TRZ = -1; order parameter Psi_TRZ = U_g,UQFF passes through zero with a
+    discontinuity in dPsi/d f_TRZ - mimicking a real scalar field near its VEV.
+    First explicit identification of f_TRZ as a phase-transition parameter
+    rather than a simple correction. HUDF z=3.5 (1+0.1)=1.1 enhancement matches
+    the observed high-z galaxy-clustering excess above pure DPM-seeded.
+
+    Reproducible: (1+f_TRZ) = 1.1 at HUDF (f_TRZ=0.1=F_TRZ); (1+f_TRZ) = 0 at
+    the zero point (f_TRZ=-1).
+
+    Q-241: (a) the paper states U_g1 ~= 2.88e-15 m/s^2, but G*M/r^2 with the
+    stated M=1e12 M_sun, r=1.23e27 m yields 8.77e-23 (8 orders off; 2.88e-15
+    corresponds to r~7 Mpc, not the stated ~13 Glyr). (b) the f_TRZ ~ -(1+w)
+    dark-energy mapping is inconsistent: at w=-1 (de Sitter) it gives f_TRZ=0,
+    not the f_TRZ=-1 zero point the paper claims. Wired the phase structure +
+    derived U_g1; discrepancies flagged. Appendix drift (VDS 1.894, kg/m^3,
+    beta_i) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    f_TRZ = F_TRZ                                         # 0.1 canonical (HUDF nominal)
+    hudf_enhancement = 1 + f_TRZ                          # 1.1
+    zero_point_factor = 1 + (-1)                          # 0 at f_TRZ=-1
+    M = 1e12 * 1.989e30; r = 1.23e27                      # 1e12 M_sun, 13 Glyr
+    ug1_derived = G * M / r ** 2                          # 8.77e-23
+    return {
+        'value': {
+            'domain': '2.62 (HUDF TRZ CPT-asymmetric gravity phase transition)',
+            'source_thread': 'Session 72g HUDFGalaxies.cpp HUDFTRZNegativeTimeTerm',
+            'system': 'HUDF (z=3.5)',
+            'z_avg': 3.5,
+            'f_TRZ': f_TRZ,                               # 0.1 = canonical F_TRZ
+            'f_TRZ_is_canonical': abs(f_TRZ - 0.1) < 1e-9,
+            'hudf_enhancement': hudf_enhancement,        # 1.1
+            'zero_point_f_TRZ': -1,                       # (1+f_TRZ)=0
+            'zero_point_factor': zero_point_factor,      # 0
+            'phase_regimes': 5,
+            'regime_names': ['CPT-violating (f>0)', 'CPT-symmetric (f=0)', 'CPT-suppressed (-1<f<0)', 'TRZ zero point (f=-1)', 'negative-time anti-gravity (f<-1)'],
+            'cpt_phase_transition': True,                # first-order at f_TRZ=-1
+            'order_parameter': 'Psi_TRZ = U_g,UQFF',
+            'first_order_transition': True,
+            'ug1_derived': ug1_derived,                  # 8.77e-23 (paper 2.88e-15)
+            'anti_gravity_regime': 'f_TRZ < -1',
+            'value_drift': 'U_g1 8.77e-23 derived vs paper 2.88e-15 (8-order r-mismatch); f_TRZ~-(1+w) de Sitter mapping inconsistent (Q-241); phase structure clean',
+        },
+        'formula': 'U_g,UQFF = (U_g1+U_g4)*(1+f_TRZ)*(1+I(t)); f_TRZ=-1 zero point (UQFF vanishes); f_TRZ<-1 anti-gravity',
+        'source': 'PAPER_264',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

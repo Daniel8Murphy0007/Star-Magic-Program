@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.268.0] — 2026-08-02 — BAND 1: PAPER_264 — HUDF TRZ CPT PHASE TRANSITION (Q-241)
+
+### Added
+- **PAPER_264 dispatch** — HUDF TRZ factor reinterpreted as a CPT-asymmetric gravity phase-transition parameter (Session 72g, HUDFGalaxies.cpp). U_g,UQFF = (U_g1+U_g4)·(1+f_TRZ)·(1+I(t)).
+  - **5-regime phase diagram:** f_TRZ>0 CPT-violating (enhanced), f_TRZ=0 CPT-symmetric, −1<f_TRZ<0 CPT-suppressed, **f_TRZ=−1 Time-Reversal Zero Point** (UQFF vanishes → pure DPM-seeded; cosmic-web void candidate), f_TRZ<−1 negative-time anti-gravity (UQFF reverses sign).
+  - **CPT Phase Transition Theorem:** first-order transition at f_TRZ=−1; order parameter Ψ_TRZ=U_g,UQFF passes through zero with a discontinuity in ∂Ψ/∂f_TRZ. First explicit identification of f_TRZ as a phase-transition parameter.
+  - **Reproducible:** HUDF f_TRZ=0.1 = canonical F_TRZ → (1+0.1)=1.1 enhancement (matches high-z clustering excess); (1+f_TRZ)=0 at the zero point.
+- Gate +4 assertions (1656 → 1661, 0 failures).
+- Registry: +1 row (553), +3 edges (1206), +1 citation (268).
+
+### Ruling filed
+- **Q-241** — (a) U_g1 stated ~2.88e-15 but G·M/r² with the stated M=1e12 M_sun, r=1.23e27 m = 8.77e-23 (8-order mismatch; 2.88e-15 implies r~7 Mpc, not 13 Glyr); (b) the f_TRZ ≈ −(1+w) de Sitter mapping is inconsistent (w=−1 gives f_TRZ=0, not the −1 zero point). Phase structure is clean. Wired the phase structure + derived U_g1.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.267.0] — 2026-08-02 — BAND 1: PAPER_263 — CO-ACTION UNIVERSALITY MASTER THEOREM (CLEAN)
 
 ### Added
