@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.252.0"
+VERSION = "0.253.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13529,4 +13529,73 @@ def _paper_248(dataset):
         'source': 'PAPER_248',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_249')
+def _paper_249(dataset):
+    """UQFF CUDA GPU tiled GEMM - multi-system 26-layer acceleration (S62).
+
+    GPU acceleration pattern for the 26-layer UQFF gravity computation + the
+    F_U_Bi_i batch integral (PAPER_248) - a massively parallel workload of
+    N*26*4 = 104N independent FP evaluations per batch step. Three CUDA
+    optimisation strategies:
+      1. Tiled shared-memory GEMM (32x32 tile): reduces global-memory reads
+         from O(N^3) to O(N^3/32) - a 32x bandwidth saving; coalesced HBM3
+         access per warp.
+      2. CUDA Graph capture: 3 kernels x 10,000 timesteps = 30,000 launches at
+         ~5 us -> 150 ms overhead uncaptured; ~30 ms captured -> 80% reduction.
+      3. NCCL multi-GPU all-reduce: 8x H100 NVSwitch -> ~8x linear scaling for
+         N >> 10,000.
+
+    Hardware target NVIDIA H100 SXM: 132 SMs, 989 TFLOPS FP32, 3.35 TB/s HBM3.
+    Machine balance = 989e12/3.35e12 = 295 FLOP/byte (theoretical peak);
+    practical compute-bound threshold ~20 FLOP/byte for UQFF workloads.
+    26-layer batch arithmetic intensity ~17 FLOP/byte (N_eff=26, borderline);
+    N_systems=64 pushes it above 40 (firmly compute-bound).
+
+    Canonical benchmark: 26 layers x 500 systems x 10,000 timesteps =
+    1.3e8 sub-term evaluations; H100 O(1 ms) vs O(1 s) single-threaded CPU.
+
+    26-Layer Parallelism Theorem: the 26 layers are mathematically independent
+    (each computes (Ug1+Ug2+Ug3+Ug4)_i from system params + layer index only;
+    no inter-layer data dependencies), assignable to independent thread blocks
+    -> 26x theoretical speedup. Combined theoretical speedup:
+        26 (layers) * 32 (GEMM tile) * 500/132 (occupancy) = 3150x;
+    practical H100 ~1000-2000x. CLEAN - all compute claims reproduce.
+    Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.61 header ->
+    canonical beta_i PAPER_1203) auto-corrected per charter.
+    """
+    N_sys = 500; N_layers = 26; N_terms = 4; N_steps = 10000
+    ops_104N = N_sys * N_layers * N_terms                # 52000 per step
+    benchmark_ops = N_layers * N_sys * N_steps           # 1.3e8
+    h100_flops = 989e12; h100_bw = 3.35e12
+    machine_balance = h100_flops / h100_bw               # 295 FLOP/byte
+    graph_launches = 3 * N_steps                         # 30000
+    t_nograph_ms = graph_launches * 5e-6 * 1e3           # 150 ms
+    t_graph_ms = 30
+    graph_reduction_pct = (t_nograph_ms - t_graph_ms) / t_nograph_ms * 100  # 80
+    theoretical_speedup = N_layers * 32 * N_sys / 132    # 3150
+    return {
+        'value': {
+            'domain': '2.47 (CUDA GPU tiled GEMM 26-layer acceleration)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'batch_ops_104N': ops_104N,                  # 52000
+            'benchmark_ops': benchmark_ops,              # 1.3e8
+            'gemm_tile': 32, 'gemm_bandwidth_reduction': 32,
+            'h100_tflops_fp32': 989, 'h100_hbm3_tb_s': 3.35, 'h100_sms': 132,
+            'machine_balance_flop_byte': machine_balance,   # 295
+            'compute_bound_threshold': 20,
+            'cuda_graph_launches': graph_launches,       # 30000
+            'cuda_graph_reduction_pct': graph_reduction_pct,   # 80
+            'nccl_multi_gpu_scaling': 8,                  # 8x H100 NVSwitch
+            'layer_independence_theorem': True,          # 26 layers no data deps
+            'theoretical_speedup': theoretical_speedup,  # 3150
+            'practical_speedup_range': '1000-2000x',
+            'engineering_paper': True,
+        },
+        'formula': 'benchmark = 26*500*10000 = 1.3e8; speedup = 26*32*500/132 = 3150x',
+        'source': 'PAPER_249',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

@@ -1149,3 +1149,5 @@ observable,source10_batch_dpm_calibration,paper,PAPER_248,Source10 batch + DPM r
 observable,source10_batch_dpm_calibration,observable,dpm_resonance_energy_density,adj_factor=C_DPM identical (PAPER_240)
 observable,source10_batch_dpm_calibration,observable,muge_quantum_uncertainty_gQ,g_UQFF 26-layer includes g_Q (PAPER_244)
 observable,source10_batch_dpm_calibration,observable,master_buoyancy_fubii_catalogue,F_U_Bi_i integral Eta Carinae anchor (PAPER_237)
+observable,uqff_cuda_gpu_tiled_gemm,paper,PAPER_249,CUDA GPU tiled GEMM 26-layer acceleration
+observable,uqff_cuda_gpu_tiled_gemm,observable,source10_batch_dpm_calibration,GPU acceleration of 104N batch (PAPER_248)

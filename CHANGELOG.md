@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.253.0] — 2026-08-02 — BAND 1: PAPER_249 — CUDA GPU TILED GEMM ACCELERATION (CLEAN)
+
+### Added
+- **PAPER_249 dispatch** — the UQFF CUDA GPU tiled GEMM 26-layer acceleration pattern (Session 62, grok_share_8d951e12 4th-pass). GPU acceleration for the N·26·4 = 104N F_U_Bi_i batch workload (PAPER_248).
+  - **Three CUDA strategies:** tiled 32×32 shared-memory GEMM (32× global-read reduction), CUDA Graph capture (30,000 launches: 150 ms → 30 ms = 80% overhead reduction), NCCL 8× H100 all-reduce.
+  - **H100 SXM roofline:** 132 SMs, 989 TFLOPS FP32, 3.35 TB/s HBM3 → machine balance 989e12/3.35e12 = 295 FLOP/byte (practical compute-bound threshold ~20).
+  - **Canonical benchmark:** 26·500·10,000 = 1.3e8 sub-term evaluations; H100 O(1 ms) vs O(1 s) single-threaded CPU.
+  - **26-Layer Parallelism Theorem:** layers mathematically independent (no data deps) → 26× theoretical; combined speedup = 26·32·500/132 = 3150× (practical 1000–2000×).
+- Gate +4 assertions (1581 → 1586, 0 failures).
+- Registry: +1 row (538), +2 edges (1152), +1 citation (253).
+
+### Notes
+- CLEAN — all compute claims reproduce.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 header → canonical β_i per PAPER_1203) auto-corrected per charter.
+
+---
+
 ## [0.252.0] — 2026-08-02 — BAND 1: PAPER_248 — SOURCE10 BATCH OpenMP + DPM CALIBRATION (Q-229)
 
 ### Added

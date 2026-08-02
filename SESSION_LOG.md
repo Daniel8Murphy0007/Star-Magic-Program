@@ -2955,3 +2955,33 @@ kg/m^3, beta_i=0.603) auto-corrected per charter.
 
 Gate: 1581/0. Registry 537 rows / 1150 edges / 252 ledgers (measured).
 Campaign: 252/2,255. Next: PAPER_249.
+
+---
+
+## 2026-08-02 — v0.253.0 — BAND 1: PAPER_249 — CUDA GPU TILED GEMM ACCELERATION (CLEAN)
+
+PAPER_249 (UQFF CUDA GPU Tiled GEMM — Multi-System 26-Layer Acceleration,
+Session 62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py) wired as one
+dispatch (CLEAN, WIRED).
+
+GPU acceleration pattern for the N*26*4 = 104N F_U_Bi_i batch workload
+(PAPER_248). Three CUDA strategies: tiled 32x32 shared-memory GEMM (32x
+global-read reduction), CUDA Graph capture (30000 launches: 150ms->30ms = 80%
+overhead reduction), NCCL 8x H100 all-reduce.
+
+H100 SXM roofline: 132 SMs, 989 TFLOPS FP32, 3.35 TB/s HBM3 => machine balance
+989e12/3.35e12 = 295 FLOP/byte (practical compute-bound threshold ~20).
+
+Canonical benchmark: 26*500*10000 = 1.3e8 sub-term evaluations; H100 O(1ms) vs
+O(1s) single-threaded CPU.
+
+26-Layer Parallelism Theorem: layers mathematically independent (no data deps)
+=> 26x theoretical; combined speedup = 26*32*500/132 = 3150x (practical
+1000-2000x).
+
+CLEAN - all compute claims reproduce. Appendix boilerplate drift (VDS 1.894,
+kg/m^3, beta_i=0.61 header -> canonical beta_i per PAPER_1203) auto-corrected
+per charter.
+
+Gate: 1586/0. Registry 538 rows / 1152 edges / 253 ledgers (measured).
+Campaign: 253/2,255. Next: PAPER_250.

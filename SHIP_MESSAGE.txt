@@ -1,25 +1,23 @@
-v0.252.0 BAND 1: PAPER_248 wired - SOURCE10 BATCH OpenMP + DPM CALIBRATION (Q-229)
+v0.253.0 BAND 1: PAPER_249 wired - CUDA GPU TILED GEMM ACCELERATION (CLEAN)
 
-PAPER_248 (UQFF Source10 Batch OpenMP Profiling - DPM Resonance Calibration and
-Parallel Architecture, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
-wired as one dispatch (OPEN_RULING, Q-229).
+PAPER_249 (UQFF CUDA GPU Tiled GEMM - Multi-System 26-Layer Acceleration, S62,
+grok_share_8d951e12 4th-pass, CondensedPhysics3.py) wired as one dispatch
+(CLEAN, WIRED).
 
-Third-generation F_U_Bi_i integral calculator (mt19937 sampling, scaling_factors
-overrides, OpenMP batch + chrono profiling).
+GPU acceleration pattern for the N*26*4 = 104N F_U_Bi_i batch workload
+(PAPER_248). Three CUDA strategies: tiled 32x32 shared-memory GEMM (32x
+reduction), CUDA Graph capture (30000 launches 150ms->30ms = 80% reduction),
+NCCL 8x H100 all-reduce.
 
-DPM resonance, Eta Carinae calibrated:
-  DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor
-adj_factor = 2.82e-56 = Eta Carinae DPM anchor (IDENTICAL to C_DPM PAPER_240);
-g_H=1.252e46 (ties PAPER_237/240). Framework-wide DPM anchor.
+H100 SXM: 132 SMs, 989 TFLOPS FP32, 3.35 TB/s HBM3 => machine balance
+989e12/3.35e12 = 295 FLOP/byte. Benchmark 26*500*10000 = 1.3e8 ops; H100 O(1ms)
+vs O(1s) CPU.
 
-26-layer g_UQFF = sum_26(Ug1..Ug4) + Lambda*c^2/3 + g_Q (g_Q from PAPER_244).
-26-Layer Completeness: N*26*4 = 104N = 52000 ops (N=500).
+26-Layer Parallelism Theorem (layers independent, no data deps); speedup
+26*32*500/132 = 3150x (practical 1000-2000x).
 
-Sister-paper self-consistency: omega0=1e12 gives 3.10e-15 = PAPER_240 Q_wave.
+CLEAN - all compute claims reproduce. Appendix drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
 
-Q-229: paper DPM_resonance ~1.76e5 (omega0=1e-12) not reproducible; formula/
-params give 3.10e9. Formula and constants otherwise correct. Wired 3.10e9;
-1.76e5 flagged. Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
-
-Gate: 1581/0. Registry 537 rows / 1150 edges / 252 ledgers (measured).
-Campaign: 252/2,255. Next: PAPER_249.
+Gate: 1586/0. Registry 538 rows / 1152 edges / 253 ledgers (measured).
+Campaign: 253/2,255. Next: PAPER_250.

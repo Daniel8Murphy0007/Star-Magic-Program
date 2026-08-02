@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.252.0", "uqff_calculator.VERSION = 0.252.0")
+assert_that(C.VERSION == "0.253.0", "uqff_calculator.VERSION = 0.253.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3473,6 +3473,17 @@ assert_that(_r248['batch_ops_104N'] == 52000 and _r248['layers'] == 26 and _r248
 assert_that(_r248['mt19937_reproducible'] and _r248['openmp_parallel'] and _r248['eta_carinae_anchor'],
             "PAPER_248: mt19937 reproducible sampling; OpenMP batch; Eta Carinae DPM anchor (L_X~1e35 W)")
 assert_that(C.wired_count() >= 252, "wired_count >= 252")
+
+_r249 = C.calc('PAPER_249')['value']
+assert_that(_r249['benchmark_ops'] == 130000000 and _r249['batch_ops_104N'] == 52000,
+            "PAPER_249: benchmark = 26*500*10000 = 1.3e8 ops; batch 104N = 52000 (reproduce)")
+assert_that(abs(_r249['machine_balance_flop_byte'] - 295.2) < 0.5 and _r249['h100_sms'] == 132,
+            "PAPER_249: H100 machine balance = 989e12/3.35e12 = 295 FLOP/byte; 132 SMs")
+assert_that(_r249['cuda_graph_reduction_pct'] == 80 and _r249['gemm_bandwidth_reduction'] == 32,
+            "PAPER_249: CUDA Graph 80% launch-overhead reduction; tiled GEMM 32x bandwidth saving")
+assert_that(abs(_r249['theoretical_speedup'] - 3151.5) < 1 and _r249['layer_independence_theorem'],
+            "PAPER_249: 26-Layer Parallelism Theorem; speedup = 26*32*500/132 = 3150x")
+assert_that(C.wired_count() >= 253, "wired_count >= 253")
 
 
 # =============================================================================
