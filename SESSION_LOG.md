@@ -2594,3 +2594,36 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1522/0. Registry 521 rows / 1101 edges / 240 ledgers. Campaign: 240/2,255 (18 ✓, 222 ⚠). Next: PAPER_237.
 
 ---
+
+---
+
+## 2026-08-02 — v0.241.0 — BAND 1: PAPER_237 — UQFFSource10 CATALOGUE (Q-224)
+
+PAPER_237 (UQFFSource10 Catalogue — Master Buoyancy F_U_Bi_i and 26-Layer
+Triadic g_UQFF, Session 59, grok_share_8d951e12 Source10 second-pass) wired
+as one dispatch (OPEN_RULING, Q-224).
+
+The UQFFSource10 central catalogue — the primary reference implementation of
+all five UQFF force classes (LENR, dark-energy expansion, magnetic resonance,
+relativistic buoyancy, 26-layer gravitational hierarchy).
+
+Verified components (M=2.984e31 kg, r=1e14 m):
+- I_grav = G*M/r^2 = 1.99e-7 m/s^2 (base gravitational term)
+- M_i = M/26 = 1.148e30 kg (uniform 26-layer mass)
+- F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34 (relativistic buoyancy term)
+- Lambda*c^2/3 = 3.30e-36 per length (de Sitter radial growth, F_DE)
+
+Documented (not reconstructable):
+- F_U_Bi_i = 2.11e208 N Eta Carinae benchmark — IDENTICAL to PAPER_217's
+  Branch-1 creation value (cross-reference wired). The 5-component formula's
+  scaling factors s_LENR/s_DE/s_res/s_rel and intermediate params are unspecified.
+- g_H = 1.252e46 UQFF hydrogen g-factor (~46 orders above proton g_p).
+
+Q-224 filed: (a) 2.11e208 benchmark not reconstructable + ties PAPER_217;
+(b) Eta Carinae M labelled "150 M_sun" but given 2.984e31 kg (=~15 M_sun;
+150 M_sun = 2.984e32) — 10× mismatch; wired M=2.984e31 per the CP3 example.
+
+Appendix boilerplate drift auto-corrected per charter.
+
+Gate: 1526/0. Registry 523 rows / 1108 edges / 241 ledgers (measured).
+Campaign: 241/2,255. Next: PAPER_238.

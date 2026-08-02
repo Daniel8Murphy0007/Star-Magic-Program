@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.240.0"
-description = "UQFF Star-Magic-Program v0.240.0: PAPER_236 wired (CLEAN) - UQFF Learning Assessment, first framework-level meta-assessment calculator (models UQFF's own progression, not an object); advancement=(diversity+dynamic+scalability)/3*100=226.67% (>100% super-linear); aggregates Wd2/Pillars/Rings. Wired 240/2255, gate 1522/0. Registry 521 rows / 1101 edges / 240 ledgers (measured)."
+version = "0.241.0"
+description = "UQFF Star-Magic-Program v0.241.0: PAPER_237 wired (Q-224) - UQFFSource10 catalogue, primary reference for all 5 UQFF force classes; 5-component master buoyancy F_U_Bi_i, Eta Carinae benchmark 2.11e208 N (ties PAPER_217 Branch1); 26-layer Triadic gravity M_i=M/26. Wired 241/2255, gate 1526/0. Registry 523 rows / 1108 edges / 241 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

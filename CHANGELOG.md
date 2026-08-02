@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.241.0] — 2026-08-02 — BAND 1: PAPER_237 — UQFFSource10 CATALOGUE (Q-224)
+
+### Added
+- **PAPER_237 dispatch** — UQFFSource10 central catalogue (Session 59, grok_share_8d951e12 Source10 second-pass). The primary reference implementation of all five UQFF force classes (LENR, dark-energy expansion, magnetic resonance, relativistic buoyancy, 26-layer gravitational hierarchy).
+  - **5-component master buoyancy:** F_U_Bi_i = I_grav*x_2 + F_LENR + F_DE + F_res + F_rel. Computable base terms verified (M=2.984e31 kg, r=1e14 m): I_grav = G*M/r^2 = 1.99e-7 m/s^2; M_i = M/26 = 1.148e30 kg; F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34.
+  - **26-layer Triadic gravity:** g_UQFF = sum_26(U_g1..U_g4 per layer) + Lambda*c^2/3 + Heisenberg quantum term; M_i = M/26 uniform layer mass.
+  - **Eta Carinae benchmark:** F_U_Bi_i = 2.11e208 N — IDENTICAL to PAPER_217's Branch-1 creation value (cross-reference); g_H = 1.252e46 UQFF hydrogen g-factor.
+- Gate +4 assertions (1522 → 1526, 0 failures).
+- Registry: +2 rows (523), +7 edges (1108), +1 citation (241).
+
+### Ruling filed
+- **Q-224** — (a) F_U_Bi_i=2.11e208 is a documented benchmark not reconstructable from stated components (scaling factors unspecified), ties PAPER_217 Branch 1; (b) Eta Carinae M labelled "150 M_sun" but given 2.984e31 kg (=~15 M_sun; 150 M_sun=2.984e32), a 10× label/value mismatch — wired M=2.984e31 to match the CP3 example.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.240.0] — 2026-07-31 — BAND 1: PAPER_236 — UQFF LEARNING META-ASSESSMENT (CLEAN)
 
 ### Added

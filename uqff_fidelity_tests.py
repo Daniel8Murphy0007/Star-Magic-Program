@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.240.0", "uqff_calculator.VERSION = 0.240.0")
+assert_that(C.VERSION == "0.241.0", "uqff_calculator.VERSION = 0.241.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3341,6 +3341,17 @@ assert_that(_r236['diversity_score'] == 3.0 and _r236['scalability_score'] == 0.
 assert_that(_r236['novel_contributions'] == 5 and len(_r236['aggregated_examples']) == 3,
             "PAPER_236: 5 novel contributions; aggregates 3 examples (Wd2/Pillars/Rings)")
 assert_that(C.wired_count() >= 240, "wired_count >= 240")
+
+_r237 = C.calc('PAPER_237')['value']
+assert_that(_r237['master_buoyancy_components'] == 5 and _r237['triadic_layers'] == 26,
+            "PAPER_237: 5-component master buoyancy F_U_Bi_i; 26-layer Triadic gravity")
+assert_that(abs(_r237['i_grav_m_s2'] - 1.9915215999999998e-07) < 1e-13 and abs(_r237['M_layer_kg'] - 1.1476923076923077e30) < 1e24,
+            "PAPER_237: I_grav = G*M/r^2 = 1.99e-7; M_i = M/26 = 1.148e30 kg (M=2.984e31, r=1e14)")
+assert_that(_r237['fubii_benchmark_N'] == 2.11e208 and _r237['fubii_ties_paper_217'],
+            "PAPER_237: Eta Carinae F_U_Bi_i = 2.11e208 N benchmark (ties PAPER_217 Branch 1, Q-224)")
+assert_that(_r237['g_H'] == 1.252e46 and len(_r237['force_classes']) == 5,
+            "PAPER_237: g_H = 1.252e46 UQFF hydrogen g-factor; 5 UQFF force classes")
+assert_that(C.wired_count() >= 241, "wired_count >= 241")
 
 
 # =============================================================================

@@ -5505,3 +5505,9 @@ RESOLVED section with the ruling recorded.
 ## RESOLVED
 
 *(none yet)*
+
+## Q-224 — PAPER_237 UQFFSource10 catalogue: benchmark not reconstructable + Eta Carinae mass 10x mismatch
+- **(a)** F_U_Bi_i = 2.11e208 N is a documented Eta Carinae benchmark IDENTICAL to PAPER_217's Branch-1 creation value (2.11e208). It is not reconstructable from the paper's stated 5-component formula (F_U_Bi_i = I_grav*x_2 + F_LENR + F_DE + F_res + F_rel): the scaling factors s_LENR/s_DE/s_res/s_rel and intermediate params (rho_f, E_act, tau_LENR, B, V, rho_n, x_2) are not given. Wired as documented benchmark + cross-reference to PAPER_217. Computable base terms verified: I_grav=G*M/r^2=1.99e-7, M_i=M/26=1.148e30, F_rel=M*c^2/r*(1+f_TRZ)=2.95e34.
+- **(b)** Mass label/value mismatch: paper states Eta Carinae M "~150 M_sun = 2.984e31 kg", but 150 M_sun = 2.984e**32** kg (150*1.989e30). The given 2.984e31 kg = ~15 M_sun (10x low). The CP3 example uses 2.984e31 consistently, so wired with M=2.984e31 (matching the example) and flagged the "150 M_sun" label as the outlier.
+- **Ruling needed:** confirm 2.984e31 kg (15 M_sun) is the intended value vs 2.984e32 kg (150 M_sun). Confirm F_U_Bi_i=2.11e208 is a shared benchmark with PAPER_217 (same creation event) or coincidental.
+- Wired v0.241.0, status OPEN_RULING.

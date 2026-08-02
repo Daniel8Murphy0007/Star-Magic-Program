@@ -1,33 +1,30 @@
-v0.240.0 BAND 1: PAPER_236 wired - UQFF LEARNING META-ASSESSMENT (CLEAN)
+v0.241.0 BAND 1: PAPER_237 wired - UQFFSource10 CATALOGUE MASTER BUOYANCY (Q-224)
 
-PAPER_236 (UQFF Learning Assessment Evolution_B - Framework
-Meta-Assessment Advancement Score, S59) wired as one dispatch
-(CLEAN, WIRED).
+PAPER_237 (UQFFSource10 Catalogue - Master Buoyancy F_U_Bi_i and 26-Layer
+Triadic g_UQFF, S59, grok_share_8d951e12 Source10 second-pass) wired as one
+dispatch (OPEN_RULING, Q-224).
 
-Physics/meta (clean arithmetic - reproduces):
-- The UQFF Learning Assessment Evolution_B module - the FIRST
-  framework-level META-ASSESSMENT calculator in the CP1/CP2/CP3
-  pipeline. Unlike every prior module (which targets a specific
-  astrophysical object), this one models the UQFF framework's own
-  learning progression, giving a quantitative advancement measure per
-  development session (Doc 9 second-pass).
-- Advancement score = (diversity_score + dynamic_score +
-  scalability_score)/3.0 * 100%. Defaults: diversity=3 (distinct
-  physical regimes: stellar wind, erosion, lensing), dynamic=3 (novel
-  dynamic terms: a_wind, E(t) erosion, lensing modulation),
-  scalability=0.8 (adaptability across scales, [0,1]). advancement =
-  (3+3+0.8)/3*100 = 226.67%. Verified.
-- Values > 100% indicate multi-regime SIMULTANEOUS coverage - the
-  framework demonstrating super-linear progression (intentionally
-  beyond binary pass/fail).
-- Aggregates parameters from three consecutive UQFF examples:
-  Westerlund 2 stellar wind (PAPER_228, M=30,000 M_sun=5.967e34 kg),
-  Pillars of Creation erosion (PAPER_229), Rings of Relativity lensing
-  (r=1.54e22 m, L_factor=1.2, H_z=2.18e-18 s^-1). Five novel
-  contributions incl. per-git-commit session comparison.
+The UQFFSource10 central catalogue - primary reference implementation of all
+five UQFF force classes (LENR, dark-energy expansion, magnetic resonance,
+relativistic buoyancy, 26-layer gravitational hierarchy).
 
-No ruling filed - the arithmetic is clean. Appendix boilerplate drift
-(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Verified base terms (M=2.984e31 kg, r=1e14 m):
+- I_grav = G*M/r^2 = 1.99e-7 m/s^2
+- M_i = M/26 = 1.148e30 kg (uniform 26-layer mass)
+- F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34
+- Lambda*c^2/3 = 3.30e-36 per length (F_DE de Sitter growth)
 
-Gate: 1522/0. Registry 521 rows / 1101 edges / 240 ledgers (measured).
-Campaign: 240/2,255. Next: PAPER_237.
+Documented benchmarks:
+- F_U_Bi_i = 2.11e208 N (Eta Carinae) - IDENTICAL to PAPER_217 Branch-1
+  creation value; cross-reference wired. Not reconstructable from the stated
+  5-component formula (scaling factors s_* + intermediate params unspecified).
+- g_H = 1.252e46 UQFF hydrogen g-factor.
+
+Q-224: (a) 2.11e208 benchmark not reconstructable + ties PAPER_217;
+(b) Eta Carinae M "150 M_sun" vs 2.984e31 kg (=15 M_sun; 150 M_sun=2.984e32),
+10x mismatch - wired M=2.984e31 per the CP3 example.
+
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1526/0. Registry 523 rows / 1108 edges / 241 ledgers (measured).
+Campaign: 241/2,255. Next: PAPER_238.

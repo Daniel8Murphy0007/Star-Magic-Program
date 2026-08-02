@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 240 (18 ✓, 222 ⚠ OPEN_RULING)
+- **Wired:** 241 (18 ✓, 223 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2014
+- **Not yet touched:** 2013
 
 ---
 
@@ -1495,7 +1495,7 @@
 | ✓ | PAPER_234 | SgrAStar Accretion Precession Enhanced MUGE |
 | ✓ | PAPER_235 | Antennae NGC4038 Double Merger Interaction MUGE |
 | ✓ | PAPER_236 | UQFF Learning Advancement Meta Assessment |
-| ⬜ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF |
+| ⚠ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF | Q-224
 | ⬜ | PAPER_238 | UQFF Vacuum Repulsion Surface Tension Analogy |
 | ⬜ | PAPER_239 | UQFF THz Conduit Shock StarFormation Forces |
 | ⬜ | PAPER_240 | UQFF Spooky Action DPM Resonance gH Hydrogen |

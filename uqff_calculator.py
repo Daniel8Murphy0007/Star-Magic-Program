@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.240.0"
+VERSION = "0.241.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12715,4 +12715,74 @@ def _paper_236(dataset):
         'source': 'PAPER_236',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_237')
+def _paper_237(dataset):
+    """UQFFSource10 catalogue: master buoyancy F_U_Bi_i + 26-layer gravity (S59).
+
+    The UQFFSource10 central catalogue module - the primary reference
+    implementation for all five UQFF force classes (LENR, dark-energy
+    expansion, magnetic resonance, relativistic buoyancy, 26-layer
+    gravitational hierarchy). Source10 second-pass. Wired observables:
+    * Master buoyancy force (5-component): F_U_Bi_i = I_grav*x_2 + F_LENR
+      + F_DE + F_res + F_rel, where I_grav = G*M/r^2 (base);
+      F_LENR = s_LENR*(rho_f*v^2)*[1+E_act/(k_B*T)]*e^-t/tau_LENR;
+      F_DE = s_DE*(Lambda*c^2/3)*r (de Sitter radial growth);
+      F_res = s_res*(B^2*V/2mu0)*(rho_n/rho_ref);
+      F_rel = s_rel*(M*c^2/r)*(1+f_TRZ).
+    * 26-layer Triadic gravity g_UQFF(r,t) = sum_{i=1}^{26}(U_g1,i +
+      U_g2,i + U_g3,i + U_g4,i) + Lambda*c^2/3 + quantum term, with
+      M_i = M/26 (uniform layer mass); U_g1,i=G*M_i/r^2,
+      U_g2,i=Q^2/(4*pi*eps0*M_i*r^2), U_g3,i=omega_i^2*r,
+      U_g4,i=f_vac*c^2; quantum Heisenberg term hbar/sqrt(dx*dp)*
+      integral(psi)*2pi/t_H.
+    * Eta Carinae validation: F_U_Bi_i ~ 2.11e208 N (documented benchmark
+      - identical to PAPER_217's Branch-1 creation value; not
+      reconstructable from the 5 component formulas, whose scaling
+      factors s_* and intermediate params are unspecified, Q-224a).
+      g_H = 1.252e46 UQFF hydrogen g-factor (~46 orders above the
+      standard proton g_p).
+    * Computable base terms (paper's M=2.984e31 kg, r=1e14 m):
+      I_grav = G*M/r^2 = 1.99e-7 m/s^2; M_i = M/26 = 1.148e30 kg;
+      F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34.
+    * Configurable architecture: scaling_factors map (per-system s_*
+      overrides), mt19937 RNG batch, OpenMP 1000+ system parallel,
+      loadConfig.
+    Q-224: (a) F_U_Bi_i=2.11e208 is a documented benchmark; (b) M labelled
+    "150 M_sun" but given as 2.984e31 kg (= ~15 M_sun; 150 M_sun =
+    2.984e32) - a 10x label/value mismatch; the CP3 example uses 2.984e31.
+    Appendix drift auto-corrected per charter.
+    """
+    M = 2.984e31; r = 1e14                                # kg value from CP3 example
+    I_grav = G_OBSERVED * M / r ** 2                      # 1.99e-7
+    M_i = M / 26                                          # 1.148e30
+    F_rel = M * C_OBSERVED ** 2 / r * (1 + F_TRZ)         # 2.95e34
+    lambda_de = LAMBDA_SIMPLE * C_OBSERVED ** 2 / 3       # Lambda*c^2/3 per length
+    return {
+        'value': {
+            'domain': '2.35 (UQFFSource10 catalogue master buoyancy)',
+            'source_thread': 'grok_share_8d951e12 Source10 second-pass',
+            'master_buoyancy_components': 5,
+            'components': ['I_grav base', 'F_LENR', 'F_DE', 'F_res', 'F_rel'],
+            'force_classes': ['LENR', 'dark_energy', 'magnetic_resonance',
+                              'relativistic_buoyancy', '26_layer_hierarchy'],
+            'triadic_layers': 26,
+            'layer_terms': ['U_g1', 'U_g2', 'U_g3', 'U_g4'],
+            'M_kg': M, 'r_m': r,
+            'M_layer_kg': M_i,                            # 1.148e30
+            'i_grav_m_s2': I_grav,                        # 1.99e-7
+            'f_rel': F_rel,                               # 2.95e34
+            'lambda_de_per_length': lambda_de,
+            'fubii_benchmark_N': 2.11e208,                # ties PAPER_217 Branch 1
+            'fubii_ties_paper_217': True,
+            'g_H': 1.252e46,
+            'novel_contributions': 5,
+            'benchmark_fork': 'F_U_Bi_i 2.11e208 documented (PAPER_217 Branch 1); M "150 M_sun" vs 2.984e31 kg=15 M_sun (Q-224)',
+        },
+        'formula': 'F_U_Bi_i = I_grav*x_2 + F_LENR + F_DE + F_res + F_rel; g_UQFF = sum_26(Ug1..4) + Lc^2/3 + quantum',
+        'source': 'PAPER_237',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }
