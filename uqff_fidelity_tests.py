@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.243.0", "uqff_calculator.VERSION = 0.243.0")
+assert_that(C.VERSION == "0.244.0", "uqff_calculator.VERSION = 0.244.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3374,6 +3374,17 @@ assert_that(abs(_r239['ratio_thz_over_conduit'] - 2.21e-29) < 1e-31 and _r239['c
 assert_that(_r239['water_gate_binary'] and _r239['dual_neutron_coupling'],
             "PAPER_239: binary water phase gate (w=0 => both vanish); dual rho_n/rho_ref coupling")
 assert_that(C.wired_count() >= 243, "wired_count >= 243")
+
+_r240 = C.calc('PAPER_240')['value']
+assert_that(_r240['freq_ratio'] == 5e4 and abs(_r240['F_spooky_N'] - 5.55e-30) < 1e-33,
+            "PAPER_240: F_spooky = k_spooky*(5e14/1e10) = 1.11e-34*5e4 = 5.55e-30 N (sec 1.3 reproduces)")
+assert_that(_r240['spooky_linear_in_omega'],
+            "PAPER_240: F_spooky linear in omega (vs THz omega^2 PAPER_239, DE ~r, LENR ~e^-t/tau)")
+assert_that(_r240['g_H'] == 1.252e46 and _r240['ties_paper_237'] and _r240['g_p_nuclear'] == 5.586,
+            "PAPER_240: g_H = 1.252e46 UQFF hydrogen g-factor (~46 orders above nuclear g_p=5.586; ties PAPER_237)")
+assert_that(abs(_r240['Q_wave_J_m3'] - 3.1036e-15) < 1e-18,
+            "PAPER_240: Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*omega_0) = 3.10e-15 J/m3 (mantissa 3.11 vs paper 3.11e9, 24-order exp drift Q-226)")
+assert_that(C.wired_count() >= 244, "wired_count >= 244")
 
 
 # =============================================================================

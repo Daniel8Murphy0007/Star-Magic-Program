@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.243.0"
+VERSION = "0.244.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12916,6 +12916,78 @@ def _paper_239(dataset):
         },
         'formula': 'F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w); F_conduit = k_conduit*(H_abund*w)*(rho_n/rho_ref)',
         'source': 'PAPER_239',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_240')
+def _paper_240(dataset):
+    """Spooky action force + DPM resonance energy density, g_H (S59).
+
+    Two quantum-scale UQFF terms from the Source10 catalogue.
+
+    1. Quantum spooky action force (linear in frequency):
+         F_spooky = k_spooky * (omega_string / omega_0)
+       k_spooky = 1.11e-34 J*s (Planck-scale string coupling ~= hbar);
+       omega_string = 5e14 Hz (optical, ~600 nm); omega_0 = 1e10 rad/s.
+       Ratio = 5e14/1e10 = 5e4 (dimensionless frequency amplification).
+       F_spooky = 1.11e-34 * 5e4 = 5.55e-30 N (sec 1.3, reproduces exactly).
+       Linear-in-omega distinguishes it from the THz shock term (~omega^2,
+       PAPER_239) and the DE (~r) / LENR (~e^-t/tau) forces.
+
+    2. DPM magnetic resonance energy density:
+         Q_wave = (g_H * mu_B * B_0 * C_DPM) / (hbar * omega_0)
+       g_H = 1.252e46 UQFF hydrogen g-factor (~47 orders above nuclear
+       g_p=5.586; encodes the 26-layer buoyancy field response per hydrogen
+       nucleus, ties PAPER_237 g_H); mu_B = 9.274e-24 J/T (Bohr magneton);
+       C_DPM = 2.82e-56 (DPM coupling constant); hbar = 1.055e-34 J*s;
+       B_0 = 1e-6 T (1 uT ambient). Serves as a sub-term of the DPM
+       resonance component of the master buoyancy integral (PAPER_237).
+
+    CP3 (string_wave=5e14, omega_0=1e10, B_0=1e-6):
+      F_spooky = 5.55e-30 N (reproduces exactly).
+      Q_wave (derived-correct) = 3.10e-15 J/m^3.
+
+    Q-226: the paper states Q_wave ~= 3.11e9 J/m^3, but the formula yields
+    3.10e-15 J/m^3 - the mantissa 3.11 reproduces, the exponent is off by 24
+    orders (+9 stated vs -15 computed). The abstract F_spooky ~= 2.71e89 N is
+    an illustrative astronomical-scale value (the paper itself, sec 1.3,
+    notes it applies at unspecified collective-coherent string frequencies).
+    Wired the derived-correct values; the Q_wave exponent + abstract flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    k_spooky = 1.11e-34                                  # ~= hbar (J*s)
+    omega_string = 5.0e14; omega_0 = 1.0e10              # Hz, rad/s
+    freq_ratio = omega_string / omega_0                  # 5e4
+    F_spooky = k_spooky * freq_ratio                     # 5.55e-30
+    g_H = 1.252e46                                       # UQFF hydrogen g-factor (ties PAPER_237)
+    mu_B = 9.274e-24                                     # Bohr magneton (J/T)
+    C_DPM = 2.82e-56                                     # DPM coupling constant
+    hbar = 1.055e-34                                     # reduced Planck (J*s)
+    B_0 = 1e-6                                           # 1 uT ambient
+    Q_wave = (g_H * mu_B * B_0 * C_DPM) / (hbar * omega_0)   # 3.10e-15 (mantissa 3.11)
+    g_p = 5.586                                          # nuclear proton g-factor (comparison)
+    return {
+        'value': {
+            'domain': '2.38 (spooky action force + DPM resonance energy density)',
+            'source_thread': 'grok_share_8d951e12 Source10 lines ~6040-6100',
+            'k_spooky_hbar': k_spooky,
+            'omega_string': omega_string, 'omega_0': omega_0,
+            'freq_ratio': freq_ratio,                    # 5e4
+            'F_spooky_N': F_spooky,                       # 5.55e-30 reproduces
+            'spooky_linear_in_omega': True,              # vs THz omega^2 (PAPER_239)
+            'g_H': g_H,                                  # 1.252e46 ties PAPER_237
+            'g_p_nuclear': g_p,                          # 5.586
+            'g_H_orders_above_nuclear': 46,
+            'mu_B': mu_B, 'C_DPM': C_DPM, 'hbar': hbar, 'B_0_T': B_0,
+            'Q_wave_J_m3': Q_wave,                        # 3.10e-15 derived (mantissa 3.11)
+            'novel_contributions': 5,
+            'ties_paper_237': True,                      # g_H + DPM resonance sub-term of F_U_Bi_i
+            'value_drift': 'Q_wave 3.11e9 stated vs 3.10e-15 computed (24-order exp, mantissa 3.11 ok); abstract F_spooky 2.71e89 illustrative (Q-226)',
+        },
+        'formula': 'F_spooky = k_spooky*(omega_string/omega_0); Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*omega_0)',
+        'source': 'PAPER_240',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

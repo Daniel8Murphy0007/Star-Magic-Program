@@ -5520,3 +5520,11 @@ RESOLVED section with the ruling recorded.
 - Wired the DERIVED-CORRECT CP3 values (1.47e-19, 6.65e9) computed from the stated formulas; example/ratio-exponent flagged.
 - **Ruling needed:** confirm the derived-correct CP3 values, or supply the params behind the 4.56e78/3.45e67 example figures and the intended ratio exponent.
 - Wired v0.243.0, status OPEN_RULING.
+
+## Q-226 — PAPER_240 DPM resonance Q_wave exponent drift + abstract F_spooky illustrative
+- **(a)** Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*omega_0), with g_H=1.252e46, mu_B=9.274e-24, B_0=1e-6, C_DPM=2.82e-56, hbar=1.055e-34, omega_0=1e10. The formula yields Q_wave = 3.10e-15 J/m^3, but the paper states 3.11e9 J/m^3 — the mantissa 3.11 reproduces, the exponent is off by 24 orders (+9 stated vs -15 computed).
+- **(b)** The abstract F_spooky example ~2.71e89 N is an illustrative astronomical-scale value: sec 1.3 states the CP3-param computation gives F_spooky = 5.55e-30 N (which reproduces exactly), and that 2.71e89 applies only at unspecified "collective coherent string-field excitation" frequencies.
+- Reproducible and locked: F_spooky sec-1.3 value 5.55e-30 N (= k_spooky*5e4); omega ratio 5e4; g_H=1.252e46 (ties PAPER_237); linear-in-omega scaling law.
+- Wired the derived-correct values (F_spooky=5.55e-30, Q_wave=3.10e-15); Q_wave exponent + abstract flagged.
+- **Ruling needed:** confirm Q_wave=3.10e-15 J/m^3 (derived) vs the stated 3.11e9; if 3.11e9 is intended, supply the corrected C_DPM/omega_0 or the scale behind it.
+- Wired v0.244.0, status OPEN_RULING.

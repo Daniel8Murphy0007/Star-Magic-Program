@@ -2689,3 +2689,32 @@ values; example/ratio-exponent flagged. Appendix boilerplate drift
 
 Gate: 1536/0. Registry 526 rows / 1115 edges / 243 ledgers (measured).
 Campaign: 243/2,255. Next: PAPER_240.
+
+---
+
+## 2026-08-02 — v0.244.0 — BAND 1: PAPER_240 — SPOOKY ACTION + DPM RESONANCE, g_H (Q-226)
+
+PAPER_240 (UQFF Spooky Action Force and DPM Resonance Energy — Quantum
+String-Wave Coupling and Hydrogen g-Factor, Session 59, grok_share_8d951e12
+Source10 lines ~6040-6100) wired as one dispatch (OPEN_RULING, Q-226).
+
+Two quantum-scale UQFF terms:
+- Spooky action force (linear in frequency): F_spooky = k_spooky*(omega_string/
+  omega_0); k_spooky=1.11e-34 (~hbar); omega_string=5e14 Hz (optical),
+  omega_0=1e10 => ratio 5e4 => F_spooky = 5.55e-30 N (sec 1.3, reproduces
+  exactly). Linear-in-omega distinguishes it from THz shock (~omega^2,
+  PAPER_239), DE (~r), LENR (~e^-t/tau).
+- DPM magnetic resonance energy density: Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*
+  omega_0); g_H=1.252e46 UQFF hydrogen g-factor (~47 orders above nuclear
+  g_p=5.586; ties PAPER_237); C_DPM=2.82e-56 DPM coupling constant.
+  Derived-correct Q_wave = 3.10e-15 J/m^3.
+
+Q-226: (a) paper states Q_wave~3.11e9 J/m^3 but formula yields 3.10e-15
+(mantissa 3.11 reproduces; exponent off by 24 orders). (b) abstract F_spooky
+~2.71e89 N is illustrative astronomical-scale (sec 1.3's CP3 computation gives
+5.55e-30 N, which reproduces). Wired the derived-correct values; Q_wave
+exponent + abstract flagged. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.603) auto-corrected per charter.
+
+Gate: 1541/0. Registry 528 rows / 1119 edges / 244 ledgers (measured).
+Campaign: 244/2,255. Next: PAPER_241.

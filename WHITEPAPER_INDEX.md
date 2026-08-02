@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 243 (19 ✓, 224 ⚠ OPEN_RULING)
+- **Wired:** 244 (19 ✓, 225 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2011
+- **Not yet touched:** 2010
 
 ---
 
@@ -1498,7 +1498,7 @@
 | ⚠ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF | Q-224
 | ✓ | PAPER_238 | UQFF Vacuum Repulsion Surface Tension Analogy | CLEAN
 | ⚠ | PAPER_239 | UQFF THz Conduit Shock StarFormation Forces | Q-225
-| ⬜ | PAPER_240 | UQFF Spooky Action DPM Resonance gH Hydrogen |
+| ⚠ | PAPER_240 | UQFF Spooky Action DPM Resonance gH Hydrogen | Q-226
 | ⬜ | PAPER_241 | UQFF Validation CrossReference ArXiv Experimental 92pct |
 | ⬜ | PAPER_242 | RingsOfRelativityEinsteinLensingMUGE |
 | ⬜ | PAPER_243 | NGC3603FullMUGECavityPressure |

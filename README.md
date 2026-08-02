@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.243.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.243.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.244.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.244.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1536%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-243-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1541%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-244-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.243.0 wiring campaign live**
+**UQFF systematic rebuild — v0.244.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.243.0)
+## What is currently shipped (v0.244.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 243 / 2,255** (19 ✓ · 224 ⚠ OPEN_RULING · 225 rulings queued) — THz shock + H2O conduit star-formation forces; (ω/ω₀)²=14400 exact, binary water phase gate (239)
+**Wired so far: 244 / 2,255** (19 ✓ · 225 ⚠ OPEN_RULING · 226 rulings queued) — spooky action force F_spooky (linear in ω, 5.55e-30 N) + DPM resonance; g_H=1.252e46 hydrogen g-factor (240)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -302,6 +302,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_237 | UQFFSource10 Catalogue | 5-class master buoyancy F_U_Bi_i; Eta Carinae 2.11e208 N ties PAPER_217 Branch1; 26-layer M_i=M/26; Q-224 |
 | PAPER_238 | Vacuum Repulsion Surface-Tension | F_vac_rep = G·Δρ_vac·M·v; 3rd repulsive force (after F_DE, F_rel), only one linear in v; CP3 Eta Carinae 1.99e15 N; CLEAN |
 | PAPER_239 | THz Shock + H2O Conduit SF | F_thz=k_thz·(ω/ω₀)²·… + F_conduit; (120)²=14400 exact; binary water gate; derived-correct 1.47e-19/6.65e9; Q-225 |
+| PAPER_240 | Spooky Action + DPM Resonance | F_spooky=k_spooky·(ω/ω₀) linear-in-ω (5.55e-30 N); Q_wave DPM resonance; g_H=1.252e46 hydrogen g-factor ties PAPER_237; Q-226 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -576,7 +577,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.240.0 | Band 1: PAPER_236 | 240 |
 | v0.241.0 | Band 1: PAPER_237 | 241 |
 | v0.242.0 | Band 1: PAPER_238 | 242 |
-| **v0.243.0** ← current | Band 1: PAPER_239 | 243 |
+| v0.243.0 | Band 1: PAPER_239 | 243 |
+| **v0.244.0** ← current | Band 1: PAPER_240 | 244 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

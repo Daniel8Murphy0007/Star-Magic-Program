@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.243.0"
-description = "UQFF Star-Magic-Program v0.243.0: PAPER_239 wired (Q-225) - THz shock + H2O conduit star-formation forces; (omega/omega_0)^2=14400 EXACT, binary water phase gate, H_abund=0.74; derived-correct CP3 F_thz=1.47e-19/F_conduit=6.65e9 (paper examples not reproducible). Wired 243/2255, gate 1536/0. Registry 526 rows / 1115 edges / 243 ledgers (measured)."
+version = "0.244.0"
+description = "UQFF Star-Magic-Program v0.244.0: PAPER_240 wired (Q-226) - spooky action force F_spooky=k_spooky*(omega/omega_0) linear-in-omega (5.55e-30 N reproduces) + DPM resonance Q_wave; g_H=1.252e46 UQFF hydrogen g-factor (ties PAPER_237). Wired 244/2255, gate 1541/0. Registry 528 rows / 1119 edges / 244 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

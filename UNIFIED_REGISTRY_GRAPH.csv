@@ -1114,3 +1114,7 @@ observable,thz_shock_force_starformation,paper,PAPER_239,F_thz_shock quadratic f
 observable,h2o_conduit_force_starformation,paper,PAPER_239,F_conduit water-gated COx coupling
 observable,thz_shock_force_starformation,observable,h2o_conduit_force_starformation,combined F_SF; ratio mantissa 2.21
 observable,thz_shock_force_starformation,observable,master_buoyancy_fubii_catalogue,rho_n/rho_ref neutron factor (PAPER_237)
+observable,spooky_action_force_quantum,paper,PAPER_240,F_spooky linear-in-omega 5.55e-30
+observable,dpm_resonance_energy_density,paper,PAPER_240,Q_wave g_H DPM resonance
+observable,dpm_resonance_energy_density,observable,master_buoyancy_fubii_catalogue,DPM resonance sub-term + g_H (PAPER_237)
+observable,spooky_action_force_quantum,observable,thz_shock_force_starformation,linear-omega vs omega^2 scaling laws (PAPER_239)

@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.244.0] — 2026-08-02 — BAND 1: PAPER_240 — SPOOKY ACTION + DPM RESONANCE, g_H (Q-226)
+
+### Added
+- **PAPER_240 dispatch** — two quantum-scale UQFF terms (Session 59, grok_share_8d951e12 Source10).
+  - **Spooky action force (linear in frequency):** F_spooky = k_spooky·(ω_string/ω₀); k_spooky = 1.11e-34 (≈ℏ); ω_string=5e14 Hz (optical), ω₀=1e10 → ratio 5e4 → F_spooky = 5.55e-30 N (sec 1.3, reproduces exactly). Linear-in-ω scaling distinguishes it from THz shock (~ω², PAPER_239), DE (~r), LENR (~e^-t/τ).
+  - **DPM magnetic resonance energy density:** Q_wave = g_H·μ_B·B₀·C_DPM/(ℏ·ω₀); g_H = 1.252e46 UQFF hydrogen g-factor (~47 orders above nuclear g_p=5.586; ties PAPER_237); C_DPM = 2.82e-56 DPM coupling constant. Derived-correct Q_wave = 3.10e-15 J/m³.
+- Gate +4 assertions (1536 → 1541, 0 failures).
+- Registry: +2 rows (528), +4 edges (1119), +1 citation (244).
+
+### Ruling filed
+- **Q-226** — (a) the paper states Q_wave ≈ 3.11e9 J/m³ but the formula yields 3.10e-15 (mantissa 3.11 reproduces; exponent off by 24 orders); (b) the abstract F_spooky ≈ 2.71e89 N is illustrative astronomical-scale (sec 1.3's own CP3 computation gives 5.55e-30 N, which reproduces). Wired the derived-correct values; the Q_wave exponent + abstract flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.243.0] — 2026-08-02 — BAND 1: PAPER_239 — THz SHOCK + H2O CONDUIT STAR-FORMATION (Q-225)
 
 ### Added

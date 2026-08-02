@@ -1,24 +1,22 @@
-v0.243.0 BAND 1: PAPER_239 wired - THz SHOCK + H2O CONDUIT STAR-FORMATION (Q-225)
+v0.244.0 BAND 1: PAPER_240 wired - SPOOKY ACTION + DPM RESONANCE, g_H (Q-226)
 
-PAPER_239 (UQFF THz Shock Force and H2O Conduit Force - 26-Layer
-Star-Formation Coupling, S59, grok_share_8d951e12 Source10) wired as one
-dispatch (OPEN_RULING, Q-225).
+PAPER_240 (UQFF Spooky Action Force and DPM Resonance Energy - Quantum
+String-Wave Coupling and Hydrogen g-Factor, S59, grok_share_8d951e12 Source10)
+wired as one dispatch (OPEN_RULING, Q-226).
 
-Two coupled star-formation force terms:
-- F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w_state);
-  k_thz=1.38e-23 (Boltzmann); (1.2e12/1e10)^2 = 120^2 = 14400 EXACT
-- F_conduit = k_conduit*(H_abund*w_state)*(rho_n/rho_ref); k_conduit=8.99e9
-  (Coulomb constant, COx conduit coupling)
-- Binary water phase gate w_state{0,1}: at w=0 both vanish; H_abund=0.74
+Two quantum-scale UQFF terms:
+- Spooky action force (linear in frequency): F_spooky = k_spooky*(omega_string/
+  omega_0); k_spooky=1.11e-34 (~hbar); omega_string=5e14, omega_0=1e10 =>
+  ratio 5e4 => F_spooky = 5.55e-30 N (sec 1.3, reproduces exactly). Linear-in-
+  omega distinguishes it from THz shock (~omega^2 PAPER_239), DE (~r), LENR.
+- DPM magnetic resonance energy density: Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*
+  omega_0); g_H=1.252e46 UQFF hydrogen g-factor (~47 orders above nuclear
+  g_p=5.586; ties PAPER_237); C_DPM=2.82e-56. Derived-correct Q_wave=3.10e-15.
 
-CP3 derived-correct (rho_ratio=1, w=1): F_thz_shock=1.47e-19 N,
-F_conduit=6.65e9 N.
+Q-226: (a) paper Q_wave~3.11e9 J/m^3 vs formula 3.10e-15 (mantissa 3.11 ok;
+24-order exp drift); (b) abstract F_spooky~2.71e89 N illustrative (sec 1.3 CP3
+gives 5.55e-30 N, reproduces). Wired derived-correct values. Appendix drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Q-225: (a) paper example values F_thz~4.56e78 / F_conduit~3.45e67 not
-reproducible from CP3 params (~97 and ~58 OOM off); (b) sec-3 ratio stated
-2.21e-17 vs computed 2.21e-29 (12-order exponent drift, mantissa 2.21 correct).
-Wired derived-correct CP3 values. Appendix drift (VDS 1.894, kg/m^3, beta_i)
-auto-corrected per charter.
-
-Gate: 1536/0. Registry 526 rows / 1115 edges / 243 ledgers (measured).
-Campaign: 243/2,255. Next: PAPER_240.
+Gate: 1541/0. Registry 528 rows / 1119 edges / 244 ledgers (measured).
+Campaign: 244/2,255. Next: PAPER_241.
