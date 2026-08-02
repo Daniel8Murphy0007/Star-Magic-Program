@@ -2836,3 +2836,32 @@ beta_i=0.603) auto-corrected per charter.
 
 Gate: 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured).
 Campaign: 248/2,255. Next: PAPER_245.
+
+---
+
+## 2026-08-02 — v0.249.0 — BAND 1: PAPER_245 — MUGE FLUID SELF-GRAVITY ARCHIMEDES (CLEAN)
+
+PAPER_245 (MUGE Fluid Self-Gravity Archimedes Buoyancy Sub-Term — Universal
+Gravitational Buoyancy, Session 62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (CLEAN, WIRED). Companion universal
+term to g_Q (PAPER_244).
+
+The universal MUGE fluid self-gravity Archimedes buoyancy sub-term:
+  g_fluid = (rho_fluid*V*g_grav)/M, V=(4/3)pi r^3, g_grav=GM/r^2
+which simplifies (mass cancels) to the mass-independent
+  g_fluid = (4*pi*G/3)*rho_fluid*r
+identical to the surface gravity of a uniform sphere of density rho_fluid
+(shell theorem). Linear Radius Theorem: linear in rho_fluid and r, independent
+of body mass; Archimedes fraction phi=rho_fluid*V/M is the only mass-dependent
+quantity. Crossover radius r_c=(3M/(4pi*rho_fluid))^(1/3): below r_c DPM-seeded
+gravity dominates, above r_c fluid self-gravity dominates.
+
+Numerics (reproduce): solar M, rho=1e-20 => r_c=3.62e16 m=1.17 pc; cluster ICM
+rho=1e-26, r=3e22 => g_fluid=8.39e-14 m/s^2 (~1% of MUGE gravity at Mpc).
+4*pi*G/3 = 2.796e-10.
+
+CLEAN - r_c and cluster g_fluid reproduce. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1566/0. Registry 534 rows / 1138 edges / 249 ledgers (measured).
+Campaign: 249/2,255. Next: PAPER_246.

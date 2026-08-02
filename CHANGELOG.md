@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.249.0] — 2026-08-02 — BAND 1: PAPER_245 — MUGE FLUID SELF-GRAVITY ARCHIMEDES (CLEAN)
+
+### Added
+- **PAPER_245 dispatch** — the universal MUGE fluid self-gravity Archimedes buoyancy sub-term g_fluid (Session 62, grok_share_8d951e12 4th-pass). Companion universal term to g_Q (PAPER_244).
+  - **Formula:** g_fluid = (ρ_fluid·V·g_grav)/M with V=(4/3)πr³ and g_grav=GM/r², which simplifies (mass cancels) to the mass-independent g_fluid = (4πG/3)·ρ_fluid·r — identical to the surface gravity of a uniform sphere of density ρ_fluid (shell theorem).
+  - **Linear Radius Theorem:** g_fluid linear in ρ_fluid and r, independent of body mass; Archimedes fraction φ = ρ_fluid·V/M is the only mass-dependent quantity.
+  - **Crossover radius:** r_c = (3M/(4π·ρ_fluid))^(1/3); below r_c DPM-seeded gravity dominates, above r_c fluid self-gravity dominates.
+  - **Numerics (reproduce):** solar M, ρ=1e-20 → r_c = 3.62e16 m = 1.17 pc; cluster ICM ρ=1e-26, r=3e22 → g_fluid = 8.39e-14 m/s² (~1% of MUGE gravity at Mpc scale). 4πG/3 = 2.796e-10.
+- Gate +4 assertions (1561 → 1566, 0 failures).
+- Registry: +1 row (534), +3 edges (1138), +1 citation (249).
+
+### Notes
+- CLEAN — r_c and cluster g_fluid reproduce.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.248.0] — 2026-08-02 — BAND 1: PAPER_244 — MUGE QUANTUM UNCERTAINTY SUB-TERM (Q-228)
 
 ### Added

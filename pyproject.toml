@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.248.0"
-description = "UQFF Star-Magic-Program v0.248.0: PAPER_244 wired (Q-228) - universal MUGE quantum-uncertainty gravity sub-term g_Q=(hbar/sqrt(dx*dp))*beta*(2pi/t_H); present in all 19 MUGE modules; t_H=4.355e17 s, 2pi/t_H=1.443e-17, g_Q_min=2.10e-34 m/s^2 cosmological floor. Wired 248/2255, gate 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured)."
+version = "0.249.0"
+description = "UQFF Star-Magic-Program v0.249.0: PAPER_245 wired (CLEAN) - universal MUGE fluid self-gravity Archimedes buoyancy sub-term g_fluid=(4piG/3)*rho_fluid*r (mass-independent, linear); crossover r_c=3.62e16 m=1.17 pc, cluster g_fluid=8.39e-14 m/s^2. Wired 249/2255, gate 1566/0. Registry 534 rows / 1138 edges / 249 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

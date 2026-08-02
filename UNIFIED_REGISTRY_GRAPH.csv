@@ -1134,3 +1134,6 @@ observable,ngc3603_full_muge_10term,observable,rings_relativity_muge_9term,compa
 observable,muge_quantum_uncertainty_gQ,paper,PAPER_244,g_Q universal MUGE sub-term term_q
 observable,muge_quantum_uncertainty_gQ,observable,ngc3603_full_muge_10term,term_q universal in all 19 MUGE modules (T5 quantum)
 observable,muge_quantum_uncertainty_gQ,observable,rings_relativity_muge_9term,term_q universal (T5 quantum, PAPER_242)
+primitive,G_OBSERVED,observable,muge_fluid_selfgravity_archimedes,4*pi*G/3 coefficient
+observable,muge_fluid_selfgravity_archimedes,paper,PAPER_245,g_fluid Archimedes buoyancy sub-term
+observable,muge_fluid_selfgravity_archimedes,observable,muge_quantum_uncertainty_gQ,companion universal MUGE sub-term (PAPER_244)

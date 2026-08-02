@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.248.0", "uqff_calculator.VERSION = 0.248.0")
+assert_that(C.VERSION == "0.249.0", "uqff_calculator.VERSION = 0.249.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3429,6 +3429,17 @@ assert_that(_r244['universal_muge_modules'] == 19 and _r244['cosmological_floor'
 assert_that(_r244['g_Q_over_g_newt'] == 1e-34,
             "PAPER_244: g_Q/g_Newt ~ 1e-34 for stellar systems (perturbative correction)")
 assert_that(C.wired_count() >= 248, "wired_count >= 248")
+
+_r245 = C.calc('PAPER_245')['value']
+assert_that(abs(_r245['crossover_radius_m'] - 3.621e16) < 1e13 and abs(_r245['crossover_radius_pc'] - 1.17) < 0.02,
+            "PAPER_245: r_c = (3M/(4*pi*rho_fluid))^(1/3) = 3.62e16 m = 1.17 pc (M_sun, rho=1e-20; reproduce)")
+assert_that(abs(_r245['g_fluid_cluster_m_s2'] - 8.387e-14) < 1e-16 and abs(_r245['four_piG_over_3'] - 2.7956e-10) < 1e-13,
+            "PAPER_245: cluster g_fluid = (4piG/3)*1e-26*3e22 = 8.39e-14 m/s^2; 4piG/3 = 2.796e-10 (reproduce)")
+assert_that(_r245['mass_independent'] and _r245['linear_in_rho_and_r'] and _r245['universal_muge_term'],
+            "PAPER_245: g_fluid = (4piG/3)*rho*r mass-independent, linear (Linear Radius Theorem); universal MUGE term")
+assert_that(_r245['cluster_contribution_pct'] == 1,
+            "PAPER_245: fluid self-gravity ~1% of MUGE gravity at cluster (Mpc) scale")
+assert_that(C.wired_count() >= 249, "wired_count >= 249")
 
 
 # =============================================================================

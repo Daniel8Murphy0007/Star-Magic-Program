@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.248.0"
+VERSION = "0.249.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13261,4 +13261,69 @@ def _paper_244(dataset):
         'source': 'PAPER_244',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_245')
+def _paper_245(dataset):
+    """MUGE fluid self-gravity Archimedes buoyancy sub-term g_fluid (S62).
+
+    Extends Archimedes' principle to the gravitational domain: the gravitating
+    body's own gravity acts on the surrounding fluid to produce an effective
+    buoyancy correction (companion universal term to g_Q, PAPER_244).
+        g_fluid = (rho_fluid * V * g_grav) / M,  V = (4/3)*pi*r^3, g_grav=G*M/r^2
+    which simplifies (mass cancels) to the mass-INDEPENDENT form:
+        g_fluid = (4*pi*G/3) * rho_fluid * r
+    identical to the surface gravity of a uniform sphere of density rho_fluid
+    (shell theorem applied to the surrounding medium). Linear in both
+    rho_fluid and r (Linear Radius Theorem).
+
+    Archimedes fraction: phi = rho_fluid*V/M (fluid-sphere mass / body mass);
+    g_fluid = phi * g_grav. Crossover radius (phi=1, g_fluid=g_Newt):
+        r_c = (3*M / (4*pi*rho_fluid))^(1/3)
+    Below r_c DPM-seeded gravity dominates; above r_c fluid self-gravity
+    dominates. Rayleigh-Taylor growth s=sqrt(g_fluid*k*d_rho/rho_total) and
+    density-gradient coupling d g_fluid/d rho = 4*pi*G*r/3 also provided.
+
+    Numerical (all reproduce):
+      Solar M=1.989e30 kg, rho_fluid=1e-20 kg/m^3 (low ISM):
+        r_c = (3*1.989e30/(4*pi*1e-20))^(1/3) = 3.62e16 m = 1.17 pc (~1.2 pc).
+      Cluster ICM rho=1e-26 kg/m^3, r=3e22 m (~Mpc):
+        g_fluid = (4*pi*G/3)*1e-26*3e22 = 8.39e-14 m/s^2 (~1% of MUGE gravity,
+        non-negligible for cluster mass reconstruction).
+      4*pi*G/3 = 2.796e-10.
+
+    CLEAN - r_c and cluster g_fluid reproduce. Universal in all MUGE modules
+    (Linear Radius Theorem). Appendix boilerplate drift (VDS 1.894, kg/m^3,
+    beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    G = G_OBSERVED
+    four_piG_3 = 4 * math.pi * G / 3                      # 2.796e-10
+    M_sun = 1.989e30; rho_ism = 1e-20                     # solar, low-ISM default
+    r_c = (3 * M_sun / (4 * math.pi * rho_ism)) ** (1.0 / 3.0)   # 3.62e16 m
+    r_c_pc = r_c / 3.086e16                               # 1.17 pc
+    rho_icm = 1e-26; r_cluster = 3e22                     # ICM, ~Mpc
+    g_fluid_cluster = four_piG_3 * rho_icm * r_cluster    # 8.39e-14
+    return {
+        'value': {
+            'domain': '2.43 (MUGE fluid self-gravity Archimedes buoyancy)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'formula_symbolic': 'g_fluid = (4*pi*G/3)*rho_fluid*r',
+            'four_piG_over_3': four_piG_3,               # 2.796e-10
+            'mass_independent': True,                     # M cancels
+            'linear_in_rho_and_r': True,
+            'crossover_radius_m': r_c,                   # 3.62e16
+            'crossover_radius_pc': r_c_pc,               # 1.17 pc
+            'g_fluid_cluster_m_s2': g_fluid_cluster,     # 8.39e-14
+            'archimedes_fraction': 'phi = rho_fluid*V/M',
+            'universal_muge_term': True,                 # like g_Q PAPER_244
+            'rayleigh_taylor': 's = sqrt(g_fluid*k*d_rho/rho_total)',
+            'density_gradient_coupling': '4*pi*G*r/3',
+            'cluster_contribution_pct': 1,               # ~1% of MUGE gravity at Mpc
+        },
+        'formula': 'g_fluid = (4*pi*G/3)*rho_fluid*r; r_c = (3M/(4*pi*rho_fluid))^(1/3)',
+        'source': 'PAPER_245',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

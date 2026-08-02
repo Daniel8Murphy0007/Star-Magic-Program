@@ -1,25 +1,21 @@
-v0.248.0 BAND 1: PAPER_244 wired - MUGE QUANTUM UNCERTAINTY SUB-TERM (Q-228)
+v0.249.0 BAND 1: PAPER_245 wired - MUGE FLUID SELF-GRAVITY ARCHIMEDES (CLEAN)
 
-PAPER_244 (MUGE Quantum Uncertainty Gravity Sub-Term - Universal
-Cosmological-Scale Coupling, S62, grok_share_8d951e12 4th-pass,
-CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-228).
+PAPER_245 (MUGE Fluid Self-Gravity Archimedes Buoyancy Sub-Term - Universal
+Gravitational Buoyancy, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
+wired as one dispatch (CLEAN, WIRED). Companion universal term to g_Q (PAPER_244).
 
-The universal MUGE quantum-uncertainty gravity sub-term g_Q / term_q:
-  g_Q = (hbar/sqrt(dx*dp))*beta_integral*(2*pi/t_Hubble)
-bridges Heisenberg zero-point fluctuations to the cosmological horizon.
+The universal MUGE fluid self-gravity Archimedes buoyancy sub-term:
+  g_fluid = (rho_fluid*V*g_grav)/M, V=(4/3)pi r^3, g_grav=GM/r^2
+simplifies (mass cancels) to mass-independent g_fluid = (4*pi*G/3)*rho_fluid*r
+(shell theorem). Linear Radius Theorem: linear in rho_fluid and r. Crossover
+radius r_c=(3M/(4pi*rho_fluid))^(1/3): below DPM-seeded dominates, above fluid.
 
-Universal Presence Theorem: term_q appears IDENTICALLY in all 19 MUGE modules -
-a structural element of MUGE, not a system-specific correction.
+Numerics (reproduce): solar M, rho=1e-20 => r_c=3.62e16 m=1.17 pc; cluster ICM
+rho=1e-26, r=3e22 => g_fluid=8.39e-14 m/s^2 (~1% MUGE gravity at Mpc).
+4*pi*G/3 = 2.796e-10.
 
-Heisenberg minimum g_Q_min = sqrt(2*hbar)*beta*(2*pi/t_Hubble) - non-zero
-cosmological floor.
+CLEAN - r_c and cluster g_fluid reproduce. Appendix drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
 
-Reproducible: t_Hubble = 4.355e17 s; 2*pi/t_Hubble = 1.443e-17 rad/s.
-Derived-correct g_Q_min = 2.10e-34 m/s^2. g_Q~1/t_Hubble; g_Q/g_Newt~1e-34.
-
-Q-228: paper g_Q_min ~3.0e-34 vs formula 2.10e-34 (sqrt(2hbar)=2.1e-17 written
-vs correct 1.45e-17). Wired derived-correct 2.10e-34. Appendix drift (VDS 1.894,
-kg/m^3, beta_i) auto-corrected per charter.
-
-Gate: 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured).
-Campaign: 248/2,255. Next: PAPER_245.
+Gate: 1566/0. Registry 534 rows / 1138 edges / 249 ledgers (measured).
+Campaign: 249/2,255. Next: PAPER_246.
