@@ -1158,3 +1158,6 @@ observable,sn1006_typeia_snr_fubi,observable,source10_batch_dpm_calibration,DPM_
 observable,eta_carinae_dpm_invisibility,paper,PAPER_251,Eta Carinae DPM Invisibility
 observable,eta_carinae_dpm_invisibility,observable,sn1006_typeia_snr_fubi,equivalence-class 2.11e208 identical (PAPER_250 founder)
 observable,eta_carinae_dpm_invisibility,observable,source10_batch_dpm_calibration,Eta Carinae is PAPER_248 DPM anchor
+observable,chandra_composite_equivalence_class,paper,PAPER_252,Chandra composite equivalence-class confirmation
+observable,chandra_composite_equivalence_class,observable,sn1006_typeia_snr_fubi,confirms PAPER_250 founder 2.11e208
+observable,chandra_composite_equivalence_class,observable,eta_carinae_dpm_invisibility,confirms PAPER_251 member 2.11e208

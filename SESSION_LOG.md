@@ -3049,3 +3049,34 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
 
 Gate: 1596/0. Registry 540 rows / 1159 edges / 255 ledgers (measured).
 Campaign: 255/2,255. Next: PAPER_252.
+
+---
+
+## 2026-08-02 — v0.256.0 — BAND 1: PAPER_252 — CHANDRA COMPOSITE EQUIVALENCE CLASS (Q-232)
+
+PAPER_252 (Chandra Archive Multi-System Composite F_U_Bi_i — Force Equivalence
+Class Confirmation, Session 72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-232). Third confirmation of the omega0=1e-12 Force Equivalence
+Class (PAPER_250 founder, PAPER_251 second member).
+
+Composite Chandra dataset (SN 1987A + Eta Carinae + Helix Nebula) spanning 4
+orders L_X, 3 T, 3 rho. Force Equivalence Conservation Theorem: F_U_Bi is a
+conserved topological invariant determined SOLELY by omega0 - value +2.11e208 N
+confirmed by 5 systems across 4 decades L_X, 3 decades rho, 4 decades age.
+Mass/L_X/T/rho/age all irrelevant within a class (new conservation law).
+Corollary: averaging preserves the class.
+
+Reproducible (all clean): composite geometric-mean L_X=(1e31*1e35)^0.5=1e33 W;
+F_DE=k_DE*L_X (Helix 10 N, EtaCar 1e5 N, composite 1e3 N); F_LENR/F_DE range
+6.17e34 to 6.17e38 (uses correct F_LENR=6.17e39); omega_act=2pi*300=1885 rad/s
+age-independence.
+
+Q-232 (extends Q-230/231): all new computable content reproduces; only the
+documented F_U_Bi=+2.11e208 invariant (ties PAPER_250/251/217/237) and the
+isolated F_LENR "6.17e30" label carry over from Q-230/231 (the paper's own
+ratios use correct 6.17e39). No new independent issue. Appendix boilerplate
+drift (VDS 1.894, kg/m^3, beta_i=0.61 header -> canonical beta_i per PAPER_1203)
+auto-corrected per charter.
+
+Gate: 1601/0. Registry 541 rows / 1162 edges / 256 ledgers (measured).
+Campaign: 256/2,255. Next: PAPER_253.

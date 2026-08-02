@@ -5575,3 +5575,11 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + DPM Invisibility + documented F_U_Bi=2.11e208; drift flagged (extends Q-230).
 - **Ruling needed:** same as Q-230 (confirm derived DPM_resonance/F_LENR vs stated); plus adjudicate which DPM_resonance formula variant is canonical (PAPER_248 g_H-form vs PAPER_250/251 2*mu_B-form).
 - Wired v0.255.0, status OPEN_RULING.
+
+## Q-232 — PAPER_252 Chandra composite: equivalence-class confirmation (extends Q-230/231)
+- Confirms the omega0=1e-12 Force Equivalence Class via a Chandra composite (SN 1987A + Eta Carinae + Helix), asserting F_U_Bi = +2.11e208 N invariant across 4 decades L_X, 3 decades rho, 4 decades age (5 systems total with PAPER_250/251).
+- All NEW computable content reproduces cleanly: composite geometric-mean L_X = (1e31*1e35)^0.5 = 1e33 W; F_DE = k_DE*L_X (Helix 10 N, Eta Car 1e5 N, composite 1e3 N); F_LENR/F_DE range 6.17e34 to 6.17e38 (the paper's ratios correctly use F_LENR=6.17e39); omega_act = 2pi*300 = 1885 rad/s (age independence via time-averaging).
+- **Carryover only:** (a) F_U_Bi=+2.11e208 is the documented class invariant (ties PAPER_250/251/217/237, not reconstructable) — already under Q-230/231; (b) the isolated F_LENR label "6.17e30" repeats the Q-230 exponent drift, but the paper's own ratios use the correct 6.17e39.
+- Wired the equivalence-class confirmation with all computable pieces locked; benchmark/drift are already-known (Q-230/231).
+- **Ruling needed:** same as Q-230/231 (confirm the 2.11e208 equivalence-class invariant + derived F_LENR); no new independent issue.
+- Wired v0.256.0, status OPEN_RULING.

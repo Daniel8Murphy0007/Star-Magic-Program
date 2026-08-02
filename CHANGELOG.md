@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.256.0] — 2026-08-02 — BAND 1: PAPER_252 — CHANDRA COMPOSITE EQUIVALENCE CLASS (Q-232)
+
+### Added
+- **PAPER_252 dispatch** — Chandra archive composite F_U_Bi_i (SN 1987A + Eta Carinae + Helix Nebula), Session 72c. Third confirmation of the ω0=1e-12 Force Equivalence Class.
+  - **Force Equivalence Conservation Theorem:** F_U_Bi is a conserved topological invariant determined solely by ω0 — value +2.11e208 N confirmed by 5 systems across 4 decades L_X, 3 decades ρ, 4 decades age. Mass/L_X/T/ρ/age all irrelevant within a class — a new conservation law. Corollary: averaging preserves the class.
+  - **Reproducible (all clean):** composite geometric-mean L_X = (1e31·1e35)^0.5 = 1e33 W; F_DE = k_DE·L_X (Helix 10 N, Eta Car 1e5 N, composite 1e3 N); F_LENR/F_DE range 6.17e34–6.17e38 (uses correct F_LENR=6.17e39); ω_act = 2π·300 = 1885 rad/s (age independence via time-averaging).
+- Gate +4 assertions (1596 → 1601, 0 failures).
+- Registry: +1 row (541), +3 edges (1162), +1 citation (256).
+
+### Ruling filed
+- **Q-232 (extends Q-230/231)** — all new computable content reproduces; only the documented F_U_Bi=+2.11e208 invariant (ties PAPER_250/251/217/237) and the isolated F_LENR "6.17e30" label carry over from Q-230/231 (the paper's own ratios use the correct 6.17e39). No new independent issue.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 header → canonical β_i per PAPER_1203) auto-corrected per charter.
+
+---
+
 ## [0.255.0] — 2026-08-02 — BAND 1: PAPER_251 — ETA CARINAE DPM INVISIBILITY (Q-231)
 
 ### Added

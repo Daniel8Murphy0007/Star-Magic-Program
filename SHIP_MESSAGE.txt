@@ -1,22 +1,23 @@
-v0.255.0 BAND 1: PAPER_251 wired - ETA CARINAE DPM INVISIBILITY (Q-231)
+v0.256.0 BAND 1: PAPER_252 wired - CHANDRA COMPOSITE EQUIVALENCE CLASS (Q-232)
 
-PAPER_251 (Eta Carinae Homunculus F_U_Bi_i - DPM Invisibility and LENR Force
-Hierarchy Discovery, S72c, CondensedPhysics3.py) wired as one dispatch
-(OPEN_RULING, Q-231). Second member of the omega0=1e-12 Force Equivalence Class.
+PAPER_252 (Chandra Archive Multi-System Composite F_U_Bi_i - Force Equivalence
+Class Confirmation, S72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-232). Third confirmation of the omega0=1e-12 Force Equivalence
+Class.
 
-DPM Invisibility (key discovery): despite B0=1e-4 (100x SN 1006), DPM resonance
-100x, F_res ~ B0^2 amplified 10000x, the total F_U_Bi remains IDENTICAL to SN
-1006 at +2.11e208 N - because F_LENR is B0-INDEPENDENT and dominates by ~33
-orders. Magnetic field invisible to buoyancy.
+Composite Chandra dataset (SN 1987A + Eta Carinae + Helix) spanning 4 orders
+L_X. Force Equivalence Conservation Theorem: F_U_Bi is a conserved topological
+invariant determined SOLELY by omega0 - +2.11e208 N confirmed by 5 systems
+across 4 decades L_X, 3 decades rho, 4 decades age. Corollary: averaging
+preserves the class.
 
-Force hierarchy: LENR > neutron > DPM-seeded >> DPM_res > DE > rel.
+Reproducible (all clean): composite geometric-mean L_X=(1e31*1e35)^0.5=1e33 W;
+F_DE=k_DE*L_X (Helix 10 N / EtaCar 1e5 N / composite 1e3 N); F_LENR/F_DE range
+6.17e34 to 6.17e38 (correct F_LENR=6.17e39); omega_act=1885 rad/s age-independence.
 
-Reproducible: M=120 M_sun=2.387e32 kg; age 180 yr=5.681e9 s; F_DE=1e5 N.
+Q-232 (extends Q-230/231): only documented F_U_Bi=2.11e208 invariant + isolated
+F_LENR "6.17e30" label carry over; the paper's own ratios use correct 6.17e39.
+Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Q-231 (extends Q-230): DPM_resonance 1.76e19 vs paper 1.76e5 (same 15-order
-drift); F_LENR 6.17e39 vs 6.17e30. Two DPM formula variants coexist (PAPER_248
-g_H-form vs 250/251 2*mu_B-form). F_U_Bi=2.11e208 documented benchmark. Wired
-derived-correct + DPM Invisibility. Appendix drift auto-corrected per charter.
-
-Gate: 1596/0. Registry 540 rows / 1159 edges / 255 ledgers (measured).
-Campaign: 255/2,255. Next: PAPER_252.
+Gate: 1601/0. Registry 541 rows / 1162 edges / 256 ledgers (measured).
+Campaign: 256/2,255. Next: PAPER_253.

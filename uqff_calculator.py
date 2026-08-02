@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.255.0"
+VERSION = "0.256.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13745,6 +13745,78 @@ def _paper_251(dataset):
         },
         'formula': 'DPM Invisibility: F_U_Bi = +2.11e208 N invariant under B0 (F_LENR B0-independent dominates)',
         'source': 'PAPER_251',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_252')
+def _paper_252(dataset):
+    """Chandra archive composite F_U_Bi_i - Force Equivalence Class (S72c).
+
+    Composite Chandra dataset (SN 1987A + Eta Carinae + Helix Nebula) - three
+    systems spanning 4 orders in L_X ([1e31, 1e35] W), 3 in T ([1e4, 1e6] K),
+    3 in rho ([1e-23, 1e-20] kg/m^3) - CONFIRMS the omega0=1e-12 Force
+    Equivalence Class (PAPER_250 founder, PAPER_251 second member).
+
+    Force Equivalence Conservation Theorem: F_U_Bi is a conserved topological
+    invariant determined SOLELY by omega0. The omega0=1e-12 class has invariant
+    value +2.11e208 N, now confirmed by FIVE independent systems (SN 1006,
+    Eta Carinae, SN 1987A, Helix, composite) across 4 decades L_X, 3 decades
+    rho, 4 decades age. Mass, luminosity, temperature, density, age all
+    irrelevant to F_U_Bi within a class - a new conservation law.
+    Corollary (Averaging Preservation): any weighted average of within-class
+    systems produces a composite also in the class.
+
+    Reproducible (all clean):
+      Composite geometric-mean L_X = (1e31*1e35)^(1/2) = 1e33 W;
+      F_DE = k_DE*L_X: Helix 1e-30*1e31 = 10 N, Eta Car 1e-30*1e35 = 1e5 N,
+        composite 1e-30*1e33 = 1e3 N;
+      F_LENR (L_X-independent) = 6.17e39; F_LENR/F_DE range 6.17e34 (Eta Car)
+        to 6.17e38 (Helix) - confirms F_DE negligible in all cases;
+      F_act = k_act*cos(omega_act*t), omega_act = 2*pi*300 Hz = 1885 rad/s -
+        oscillates billions of times over any astrophysical age -> time-averages
+        to zero (age independence).
+
+    Q-232 (extends Q-230/231): F_U_Bi = +2.11e208 N is the documented
+    equivalence-class invariant (ties PAPER_250/251/217/237, not reconstructable
+    from stated components); the isolated F_LENR label "6.17e30" repeats the
+    Q-230 drift (the paper's own ratios correctly use 6.17e39). All new
+    computable content (geometric mean, F_DE, ratios) reproduces.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.61 header -> canonical beta_i
+    PAPER_1203) auto-corrected per charter.
+    """
+    import math
+    Lx_composite = (1e31 * 1e35) ** 0.5                  # 1e33 geometric mean
+    F_DE_helix = 1e-30 * 1e31                            # 10 N
+    F_DE_etacar = 1e-30 * 1e35                           # 1e5 N
+    F_DE_composite = 1e-30 * Lx_composite               # 1e3 N
+    omega_LENR = 2 * math.pi * 1.25e12; omega0 = 1e-12
+    F_LENR = 1e-10 * (omega_LENR / omega0) ** 2          # 6.17e39
+    ratio_etacar = F_LENR / F_DE_etacar                  # 6.17e34
+    ratio_helix = F_LENR / F_DE_helix                    # 6.17e38
+    omega_act = 2 * math.pi * 300                         # 1885 rad/s
+    return {
+        'value': {
+            'domain': '2.50 (Chandra archive composite F_U_Bi_i, Equivalence Class)',
+            'source_thread': 'Session 72c Infrared Datasets (CondensedPhysics3.py)',
+            'systems': ['SN 1987A', 'Eta Carinae', 'Helix Nebula'],
+            'Lx_composite_geometric_mean': Lx_composite,   # 1e33
+            'F_DE_helix_N': F_DE_helix,                   # 10
+            'F_DE_etacar_N': F_DE_etacar,                 # 1e5
+            'F_DE_composite_N': F_DE_composite,           # 1e3
+            'F_LENR': F_LENR,                             # 6.17e39
+            'F_LENR_over_F_DE_min': ratio_etacar,         # 6.17e34
+            'F_LENR_over_F_DE_max': ratio_helix,          # 6.17e38
+            'omega_act': omega_act,                       # 1885 (age independence)
+            'fubi_invariant_N': 2.11e208,                # class invariant
+            'equivalence_class_confirmed': True,
+            'independent_systems_confirming': 5,          # SN1006/EtaCar/SN1987A/Helix/composite
+            'averaging_preserves_class': True,
+            'conservation_law': 'F_U_Bi invariant under M/L_X/T/rho/age; gated only by omega0',
+        },
+        'formula': 'Equivalence Class [omega0=1e-12]: F_U_Bi = +2.11e208 N invariant; F[S1]=F[S2] iff omega0(S1)=omega0(S2)',
+        'source': 'PAPER_252',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 255 (25 ✓, 230 ⚠ OPEN_RULING)
+- **Wired:** 256 (25 ✓, 231 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1999
+- **Not yet touched:** 1998
 
 ---
 
@@ -1510,7 +1510,7 @@
 | ✓ | PAPER_249 | UQFF CUDA GPU Tiled GEMM Multi System Acceleration | CLEAN
 | ⚠ | PAPER_250 | SN1006 TypeIa SNR FUBi Ejecta Knot Stabilisation | Q-230
 | ⚠ | PAPER_251 | EtaCarina Homunculus DPM Invisibility LENR Resonance | Q-231
-| ⬜ | PAPER_252 | Chandra Archive Force Equivalence Class UQFF |
+| ⚠ | PAPER_252 | Chandra Archive Force Equivalence Class UQFF | Q-232
 | ⬜ | PAPER_253 | SgrA Negative Buoyancy Inversion omega0 Critical |
 | ⬜ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor |
 | ⬜ | PAPER_255 | PSRJ0030 NeutronStar Density Regime Positive Buoyancy |

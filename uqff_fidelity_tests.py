@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.255.0", "uqff_calculator.VERSION = 0.255.0")
+assert_that(C.VERSION == "0.256.0", "uqff_calculator.VERSION = 0.256.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3506,6 +3506,17 @@ assert_that(_r251['F_LENR_B0_independent'] and _r251['dpm_ratio_to_sn1006'] == 1
 assert_that(abs(_r251['dpm_resonance_derived'] - 1.7588e19) < 1e16 and abs(_r251['F_LENR_derived'] - 6.1685e39) < 1e36,
             "PAPER_251: DPM_resonance derived 1.76e19 (paper 1.76e5, extends Q-230/231); F_LENR 6.17e39")
 assert_that(C.wired_count() >= 255, "wired_count >= 255")
+
+_r252 = C.calc('PAPER_252')['value']
+assert_that(_r252['Lx_composite_geometric_mean'] == 1e33 and _r252['F_DE_composite_N'] == 1e3,
+            "PAPER_252: composite geometric-mean L_X = (1e31*1e35)^0.5 = 1e33 W; F_DE_composite = 1e3 N (reproduce)")
+assert_that(_r252['F_DE_helix_N'] == 10 and _r252['F_DE_etacar_N'] == 1e5,
+            "PAPER_252: F_DE Helix = 10 N, Eta Car = 1e5 N (k_DE*L_X, 4-decade range)")
+assert_that(abs(_r252['F_LENR_over_F_DE_min'] - 6.17e34) < 1e32 and abs(_r252['F_LENR_over_F_DE_max'] - 6.17e38) < 1e36,
+            "PAPER_252: F_LENR/F_DE range 6.17e34 to 6.17e38 (uses correct F_LENR=6.17e39; F_DE negligible)")
+assert_that(_r252['fubi_invariant_N'] == 2.11e208 and _r252['equivalence_class_confirmed'] and _r252['independent_systems_confirming'] == 5,
+            "PAPER_252: F_U_Bi = +2.11e208 N class invariant confirmed by 5 systems (Conservation Theorem, Q-232)")
+assert_that(C.wired_count() >= 256, "wired_count >= 256")
 
 
 # =============================================================================
