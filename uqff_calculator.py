@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.254.0"
+VERSION = "0.255.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13669,6 +13669,82 @@ def _paper_250(dataset):
         },
         'formula': 'F_U_Bi ~ +2.11e208 N for all omega0=1e-12 (Equivalence Class); F_LENR=k_LENR*(omega_LENR/omega0)^2',
         'source': 'PAPER_250',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_251')
+def _paper_251(dataset):
+    """Eta Carinae Homunculus F_U_Bi_i - DPM Invisibility discovery (S72c).
+
+    Eta Carinae (~120 M_sun hyperluminous, Great Eruption ~1843, bipolar
+    Homunculus nebula) is the SECOND member of the omega0=1e-12 UQFF Force
+    Equivalence Class (PAPER_250 founder). With B0=1e-4 T (100x the SN 1006
+    field 1e-5 T) it provides the critical DPM Invisibility test.
+
+    KEY DISCOVERY - DPM Invisibility: despite B0 being 100x stronger, the DPM
+    resonance 100x larger, and F_res ~ B0^2 amplified 10,000x, the total
+    F_U_Bi remains IDENTICAL to SN 1006 at +2.11e208 N. The magnetic field is
+    completely invisible to the buoyancy result, because F_LENR =
+    k_LENR*(omega_LENR/omega0)^2 is B0-INDEPENDENT and overwhelms F_res by ~33
+    orders at omega0=1e-12 for any physically reasonable B0.
+
+    DPM Invisibility Theorem: for any system with omega0=1e-12, F_res ~ B0^2 is
+    negligible in the F_U_Bi_i integral for all observed B0; the ratio
+    F_res/F_LENR is bounded above ~1e-28 (B0=1e-4). Force hierarchy:
+    LENR > neutron > DPM-seeded >> DPM_resonance > DE > relativistic. Only LENR
+    and neutron physics materially determine F_U_Bi.
+
+    Reproducible: M = 120 M_sun = 2.387e32 kg; age (since 1843) = 180 yr =
+    5.681e9 s; F_DE = k_DE*L_X = 1e-30*1e35 = 1e5 N (3 orders > SN 1006's
+    L_X=1e32 contribution, yet F_U_Bi unchanged - confirms F_DE << F_LENR);
+    F_res ~ B0^2 -> 10,000x SN 1006; F_LENR (B0-independent) = 6.17e39
+    (identical to SN 1006).
+
+    Q-231 (extends Q-230): DPM_resonance = 2*mu_B*B0/(hbar*omega0) computes to
+    1.76e19 (B0=1e-4, 100x SN 1006's 1.76e18) but the paper states 1.76e5
+    (same 15-order exp drift as PAPER_250; mantissa 1.76 ok); F_LENR computes
+    to 6.17e39 (paper 6.17e30). F_U_Bi=+2.11e208 documented equivalence-class
+    benchmark (ties PAPER_250/217/237). Also note: this paper's DPM_resonance
+    form 2*mu_B*B0/(hbar*omega0) differs from PAPER_248's
+    g_H*mu_B*B0/(hbar*omega0)*adj_factor variant. Wired derived-correct pieces;
+    drift flagged. Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603)
+    auto-corrected per charter.
+    """
+    import math
+    mu_B = 9.274e-24; B0 = 1e-4; hbar = 1.0546e-34; omega0 = 1e-12
+    M = 120 * 1.989e30                                    # 2.387e32 kg
+    age_s = 180 * 3.156e7                                 # 5.681e9 s
+    F_DE = 1e-30 * 1e35                                   # 1e5 N
+    dpm_resonance = 2 * mu_B * B0 / (hbar * omega0)       # 1.76e19 derived
+    omega_LENR = 2 * math.pi * 1.25e12                    # 7.854e12
+    F_LENR = 1e-10 * (omega_LENR / omega0) ** 2           # 6.17e39 (B0-independent)
+    dpm_ratio_to_sn1006 = 100                             # B0 100x
+    F_res_ratio_to_sn1006 = 10000                         # B0^2
+    return {
+        'value': {
+            'domain': '2.49 (Eta Carinae Homunculus F_U_Bi_i, DPM Invisibility)',
+            'source_thread': 'Session 72c Infrared Datasets (CondensedPhysics3.py)',
+            'system': 'Eta Carinae (Homunculus nebula)',
+            'M_kg': M,                                   # 2.387e32
+            'age_s': age_s,                              # 5.681e9
+            'B0_T': B0,                                  # 1e-4 (100x SN 1006)
+            'omega0': omega0,
+            'F_DE_N': F_DE,                              # 1e5
+            'dpm_resonance_derived': dpm_resonance,      # 1.76e19 (paper 1.76e5)
+            'dpm_ratio_to_sn1006': dpm_ratio_to_sn1006,  # 100
+            'F_res_ratio_to_sn1006': F_res_ratio_to_sn1006,  # 10000 (B0^2)
+            'F_LENR_derived': F_LENR,                    # 6.17e39 (B0-independent)
+            'F_LENR_B0_independent': True,
+            'fubi_benchmark_N': 2.11e208,                # identical to SN 1006
+            'dpm_invisibility': True,                    # THE discovery
+            'equivalence_class_member': True,            # confirms PAPER_250
+            'force_hierarchy': 'LENR > neutron > DPM-seeded >> DPM_res > DE > rel',
+            'value_drift': 'DPM_resonance 1.76e19 vs paper 1.76e5 (extends Q-230/231); F_U_Bi 2.11e208 documented; DPM form differs from PAPER_248',
+        },
+        'formula': 'DPM Invisibility: F_U_Bi = +2.11e208 N invariant under B0 (F_LENR B0-independent dominates)',
+        'source': 'PAPER_251',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

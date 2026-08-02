@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.255.0] — 2026-08-02 — BAND 1: PAPER_251 — ETA CARINAE DPM INVISIBILITY (Q-231)
+
+### Added
+- **PAPER_251 dispatch** — Eta Carinae Homunculus F_U_Bi_i, DPM Invisibility discovery (Session 72c). Second member of the ω0=1e-12 Force Equivalence Class (PAPER_250 founder).
+  - **DPM Invisibility (key discovery):** despite B0=1e-4 (100× SN 1006), DPM resonance 100× larger, and F_res ~ B0² amplified 10,000×, the total F_U_Bi remains IDENTICAL to SN 1006 at +2.11e208 N — because F_LENR = k_LENR·(ω_LENR/ω0)² is B0-INDEPENDENT and dominates by ~33 orders. Magnetic field is invisible to buoyancy.
+  - **Force hierarchy:** LENR > neutron > DPM-seeded ≫ DPM_resonance > DE > relativistic.
+  - **Reproducible:** M = 120 M_sun = 2.387e32 kg; age = 180 yr = 5.681e9 s; F_DE = k_DE·L_X = 1e5 N (3 orders > SN 1006's, yet F_U_Bi unchanged → confirms F_DE ≪ F_LENR).
+- Gate +4 assertions (1591 → 1596, 0 failures).
+- Registry: +1 row (540), +3 edges (1159), +1 citation (255).
+
+### Ruling filed
+- **Q-231 (extends Q-230)** — DPM_resonance = 2·μ_B·B0/(ℏ·ω0) computes to 1.76e19 (B0=1e-4) but the paper states 1.76e5 (same 15-order drift as PAPER_250); F_LENR = 6.17e39 (paper 6.17e30). Also flags that this paper's DPM_resonance form (2·μ_B·B0/…) differs from PAPER_248's g_H·adj_factor variant — two DPM formulas coexist. F_U_Bi=+2.11e208 documented equivalence-class benchmark.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.254.0] — 2026-08-02 — BAND 1: PAPER_250 — SN 1006 TYPE Ia SNR F_U_Bi_i (Q-230)
 
 ### Added

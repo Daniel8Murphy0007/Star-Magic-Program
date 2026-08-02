@@ -1155,3 +1155,6 @@ observable,sn1006_typeia_snr_fubi,paper,PAPER_250,SN 1006 Force Equivalence Clas
 observable,sn1006_typeia_snr_fubi,observable,master_buoyancy_fubii_catalogue,F_U_Bi 2.11e208 ties PAPER_237
 observable,sn1006_typeia_snr_fubi,observable,f_u_bi_i_two_branch,2.11e208 = PAPER_217 Branch1
 observable,sn1006_typeia_snr_fubi,observable,source10_batch_dpm_calibration,DPM_resonance omega0=1e-12 class (PAPER_248)
+observable,eta_carinae_dpm_invisibility,paper,PAPER_251,Eta Carinae DPM Invisibility
+observable,eta_carinae_dpm_invisibility,observable,sn1006_typeia_snr_fubi,equivalence-class 2.11e208 identical (PAPER_250 founder)
+observable,eta_carinae_dpm_invisibility,observable,source10_batch_dpm_calibration,Eta Carinae is PAPER_248 DPM anchor

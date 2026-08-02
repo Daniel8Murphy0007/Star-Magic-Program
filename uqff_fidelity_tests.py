@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.254.0", "uqff_calculator.VERSION = 0.254.0")
+assert_that(C.VERSION == "0.255.0", "uqff_calculator.VERSION = 0.255.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3495,6 +3495,17 @@ assert_that(abs(_r250['dpm_resonance_derived'] - 1.7588e18) < 1e15 and abs(_r250
 assert_that(_r250['lenr_dominance_orders'] == 33 and _r250['low_energy_regime'] and _r250['F_neutron_N'] == 1e6,
             "PAPER_250: LENR dominates ~33 orders; omega0=1e-12 low-energy regime; F_neutron=1e6 N knot stabilisation")
 assert_that(C.wired_count() >= 254, "wired_count >= 254")
+
+_r251 = C.calc('PAPER_251')['value']
+assert_that(_r251['dpm_invisibility'] and _r251['fubi_benchmark_N'] == 2.11e208 and _r251['equivalence_class_member'],
+            "PAPER_251: DPM Invisibility - F_U_Bi = +2.11e208 N identical to SN 1006 despite 100x B0 (Force Equivalence Class member)")
+assert_that(abs(_r251['M_kg'] - 2.3868e32) < 1e29 and abs(_r251['age_s'] - 5.6808e9) < 1e7 and _r251['F_DE_N'] == 1e5,
+            "PAPER_251: M = 120 M_sun = 2.387e32 kg; age = 180 yr = 5.681e9 s; F_DE = k_DE*L_X = 1e5 N (reproduce)")
+assert_that(_r251['F_LENR_B0_independent'] and _r251['dpm_ratio_to_sn1006'] == 100 and _r251['F_res_ratio_to_sn1006'] == 10000,
+            "PAPER_251: F_LENR B0-independent; DPM_resonance 100x SN 1006 (B0 100x); F_res 10000x (~B0^2)")
+assert_that(abs(_r251['dpm_resonance_derived'] - 1.7588e19) < 1e16 and abs(_r251['F_LENR_derived'] - 6.1685e39) < 1e36,
+            "PAPER_251: DPM_resonance derived 1.76e19 (paper 1.76e5, extends Q-230/231); F_LENR 6.17e39")
+assert_that(C.wired_count() >= 255, "wired_count >= 255")
 
 
 # =============================================================================

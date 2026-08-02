@@ -3019,3 +3019,33 @@ derived-correct pieces + benchmark; drifts flagged. Appendix boilerplate drift
 
 Gate: 1591/0. Registry 539 rows / 1156 edges / 254 ledgers (measured).
 Campaign: 254/2,255. Next: PAPER_251.
+
+---
+
+## 2026-08-02 — v0.255.0 — BAND 1: PAPER_251 — ETA CARINAE DPM INVISIBILITY (Q-231)
+
+PAPER_251 (Eta Carinae Homunculus F_U_Bi_i — DPM Invisibility and LENR Force
+Hierarchy Discovery, Session 72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-231). Second member of the omega0=1e-12 Force Equivalence Class
+(PAPER_250 founder).
+
+DPM Invisibility (key discovery): despite B0=1e-4 (100x SN 1006), DPM resonance
+100x larger, and F_res ~ B0^2 amplified 10000x, the total F_U_Bi remains
+IDENTICAL to SN 1006 at +2.11e208 N — because F_LENR=k_LENR*(omega_LENR/
+omega0)^2 is B0-INDEPENDENT and dominates by ~33 orders. Magnetic field is
+invisible to buoyancy.
+
+Force hierarchy: LENR > neutron > DPM-seeded >> DPM_resonance > DE > rel.
+
+Reproducible: M=120 M_sun=2.387e32 kg; age 180 yr=5.681e9 s; F_DE=k_DE*L_X=
+1e-30*1e35=1e5 N (3 orders > SN 1006, yet F_U_Bi unchanged => F_DE << F_LENR).
+
+Q-231 (extends Q-230): DPM_resonance=2*mu_B*B0/(hbar*omega0) computes 1.76e19
+(B0=1e-4) but paper states 1.76e5 (same 15-order drift); F_LENR 6.17e39 (paper
+6.17e30). Also flags that this paper's DPM form (2*mu_B*B0/...) differs from
+PAPER_248's g_H*adj_factor variant. F_U_Bi=2.11e208 documented equivalence-class
+benchmark. Wired derived-correct + DPM Invisibility; drift flagged. Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1596/0. Registry 540 rows / 1159 edges / 255 ledgers (measured).
+Campaign: 255/2,255. Next: PAPER_252.

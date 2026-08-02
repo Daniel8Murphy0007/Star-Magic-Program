@@ -5566,3 +5566,12 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + documented F_U_Bi=2.11e208 founding benchmark; drifts flagged.
 - **Ruling needed:** confirm the derived-correct DPM_resonance (1.76e18) and F_LENR (6.17e39) vs stated 1.76e3/6.17e30; confirm F_U_Bi=2.11e208 as the shared equivalence-class benchmark with PAPER_217/237.
 - Wired v0.254.0, status OPEN_RULING.
+
+## Q-231 — PAPER_251 Eta Carinae: DPM Invisibility + same drift as Q-230 (extends Q-230)
+- Eta Carinae is the SECOND member of the omega0=1e-12 Force Equivalence Class (PAPER_250 founder). Key discovery: DPM Invisibility — F_U_Bi = +2.11e208 N identical to SN 1006 despite B0=1e-4 (100x SN 1006's 1e-5), because F_LENR is B0-independent and dominates by ~33 orders.
+- **Same drift as Q-230:** DPM_resonance = 2*mu_B*B0/(hbar*omega0) computes to 1.76e19 (B0=1e-4, 100x SN 1006's 1.76e18) but the paper states 1.76e5 (15-order exp drift, mantissa 1.76 ok). F_LENR computes to 6.17e39 (paper 6.17e30). Identical systematic drift to PAPER_250.
+- **Formula-variant note:** this paper's DPM_resonance form is 2*mu_B*B0/(hbar*omega0), which DIFFERS from PAPER_248's g_H*mu_B*B0/(hbar*omega0)*adj_factor variant. Two DPM_resonance formulas coexist in the corpus.
+- Reproducible and locked: M = 120 M_sun = 2.387e32 kg; age (since 1843) = 180 yr = 5.681e9 s; F_DE = k_DE*L_X = 1e-30*1e35 = 1e5 N; F_res ~ B0^2 -> 10000x SN 1006.
+- Wired the derived-correct pieces + DPM Invisibility + documented F_U_Bi=2.11e208; drift flagged (extends Q-230).
+- **Ruling needed:** same as Q-230 (confirm derived DPM_resonance/F_LENR vs stated); plus adjudicate which DPM_resonance formula variant is canonical (PAPER_248 g_H-form vs PAPER_250/251 2*mu_B-form).
+- Wired v0.255.0, status OPEN_RULING.

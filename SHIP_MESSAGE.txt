@@ -1,25 +1,22 @@
-v0.254.0 BAND 1: PAPER_250 wired - SN 1006 TYPE Ia SNR F_U_Bi_i (Q-230)
+v0.255.0 BAND 1: PAPER_251 wired - ETA CARINAE DPM INVISIBILITY (Q-231)
 
-PAPER_250 (SN 1006 Type Ia SNR F_U_Bi_i - Ejecta Knot Stabilisation and Force
-Equivalence Class Founding Member, S72c, CondensedPhysics3.py) wired as one
-dispatch (OPEN_RULING, Q-230).
+PAPER_251 (Eta Carinae Homunculus F_U_Bi_i - DPM Invisibility and LENR Force
+Hierarchy Discovery, S72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-231). Second member of the omega0=1e-12 Force Equivalence Class.
 
-SN 1006 (Type Ia remnant, ~1019 yr, ~7000 ly) is the FOUNDING MEMBER of the
-UQFF Force Equivalence Class: F_U_Bi ~ +2.11e208 N for all omega0=1e-12 systems
-(IDENTICAL to PAPER_217 Branch1 + PAPER_237).
+DPM Invisibility (key discovery): despite B0=1e-4 (100x SN 1006), DPM resonance
+100x, F_res ~ B0^2 amplified 10000x, the total F_U_Bi remains IDENTICAL to SN
+1006 at +2.11e208 N - because F_LENR is B0-INDEPENDENT and dominates by ~33
+orders. Magnetic field invisible to buoyancy.
 
-Force Equivalence Class Theorem: any omega0=1e-12 system -> F_U_Bi ~+2.11e208 N
-regardless of M/L/age/B0/rho (F_LENR overwhelms by ~33 orders). PAPER_251/252/254
-confirm; PAPER_253 (Sgr A*) departs.
+Force hierarchy: LENR > neutron > DPM-seeded >> DPM_res > DE > rel.
 
-F_neutron ejecta-knot stabilisation = k_neutron*s_n = 1e6 N (Kozima coupling).
+Reproducible: M=120 M_sun=2.387e32 kg; age 180 yr=5.681e9 s; F_DE=1e5 N.
 
-Reproducible: omega_LENR=2pi*1.25THz=7.854e12; E_knot=4.5e-11 J/m3; age=3.213e10 s.
+Q-231 (extends Q-230): DPM_resonance 1.76e19 vs paper 1.76e5 (same 15-order
+drift); F_LENR 6.17e39 vs 6.17e30. Two DPM formula variants coexist (PAPER_248
+g_H-form vs 250/251 2*mu_B-form). F_U_Bi=2.11e208 documented benchmark. Wired
+derived-correct + DPM Invisibility. Appendix drift auto-corrected per charter.
 
-Q-230: (a) DPM_resonance 1.76e18 vs paper 1.76e3 (15 OOM); (b) F_LENR 6.17e39
-vs 6.17e30 (paper's (7.854e24)^2 intermediate wrong); (c) F_U_Bi=2.11e208
-documented benchmark (ties PAPER_217/237). Wired derived-correct + benchmark.
-Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
-
-Gate: 1591/0. Registry 539 rows / 1156 edges / 254 ledgers (measured).
-Campaign: 254/2,255. Next: PAPER_251.
+Gate: 1596/0. Registry 540 rows / 1159 edges / 255 ledgers (measured).
+Campaign: 255/2,255. Next: PAPER_252.
