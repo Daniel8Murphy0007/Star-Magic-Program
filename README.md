@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.257.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.257.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.258.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.258.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1606%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-257-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1611%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-258-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.257.0 wiring campaign live**
+**UQFF systematic rebuild — v0.258.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.257.0)
+## What is currently shipped (v0.258.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 257 / 2,255** (25 ✓ · 232 ⚠ OPEN_RULING · 233 rulings queued) — Sgr A* negative buoyancy inversion (class departure); F_U_Bi=-8.31e211 N = PAPER_217 Branch2 (asymmetry 3938 ties 3940) (253)
+**Wired so far: 258 / 2,255** (25 ✓ · 233 ⚠ OPEN_RULING · 234 rulings queued) — Kepler SNR 1604 distance-independence anchor; 4th positive Force Equivalence Class member; completes 5-system Chandra series (254)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -316,6 +316,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_251 | Eta Carinae DPM Invisibility | 2nd Equiv-Class member; F_U_Bi=+2.11e208 N invariant under 100× B0 (F_LENR B0-independent); M=2.387e32, F_DE=1e5; Q-231 |
 | PAPER_252 | Chandra Composite Equivalence Class | SN 1987A+Eta Car+Helix confirm ω₀=1e-12 class; F_U_Bi=+2.11e208 N invariant (5 systems); geom-mean L_X=1e33, ratios reproduce; Q-232 |
 | PAPER_253 | Sgr A* Negative Buoyancy Inversion | class departure (ω₀=1e-15); first NEGATIVE F_U_Bi=-8.31e211 N = PAPER_217 Branch2 (asym 3938≈3940); Fermi Bubble t=48.9 Myr; Q-233 |
+| PAPER_254 | Kepler SNR 1604 Distance-Independence | 4th positive Equiv-Class member; F_U_Bi=+2.11e208 N invariant vs 3× distance; L_X inverse-square, E_shock=8e-11; 5-system series complete; Q-234 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -604,7 +605,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.254.0 | Band 1: PAPER_250 | 254 |
 | v0.255.0 | Band 1: PAPER_251 | 255 |
 | v0.256.0 | Band 1: PAPER_252 | 256 |
-| **v0.257.0** ← current | Band 1: PAPER_253 | 257 |
+| v0.257.0 | Band 1: PAPER_253 | 257 |
+| **v0.258.0** ← current | Band 1: PAPER_254 | 258 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

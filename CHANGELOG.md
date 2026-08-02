@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.258.0] — 2026-08-02 — BAND 1: PAPER_254 — KEPLER SNR 1604 DISTANCE-INDEPENDENCE (Q-234)
+
+### Added
+- **PAPER_254 dispatch** — Kepler SNR 1604 (SN 1604, ~20,000 ly), Session 72c. 4th positive member and historical/distance-independence anchor of the ω0=1e-12 Force Equivalence Class; completes the 5-system Chandra series.
+  - **Distance-Independence Theorem:** F_U_Bi = +2.11e208 N identical to SN 1006 despite 3× distance, 2.4× age, 10× lower L_X, and the fastest Type Ia ejecta (4000 km/s).
+  - **Reproducible (all clean):** L_X inverse-square ratio (2.15/6.4)² = 0.11; F_DE = k_DE·L_X (Kepler 10 N, SN 1006 100 N); F_LENR/F_DE (Kepler 6.17e38 > SN 1006 6.17e37 — fainter ⇒ more LENR-dominant); E_shock = 0.5·1e-23·(4e6)² = 8e-11 J/m³ (1.8× SN 1006); age = 420 yr = 1.325e10 s.
+  - **5-system Chandra series (complete):** SN 1006 / Eta Carinae / Chandra Archive / Kepler (ω0=1e-12) → +2.11e208 N; Sgr A* (ω0=1e-15) → −8.31e211 N.
+- Gate +4 assertions (1606 → 1611, 0 failures).
+- Registry: +1 row (543), +3 edges (1168), +1 citation (258).
+
+### Ruling filed
+- **Q-234 (extends Q-230/232)** — all new computable content reproduces; only the documented F_U_Bi=+2.11e208 equivalence-class invariant (ties PAPER_250–252/217/237) carries over. No new independent issue.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 header → canonical β_i per PAPER_1203) auto-corrected per charter.
+
+---
+
 ## [0.257.0] — 2026-08-02 — BAND 1: PAPER_253 — SGR A* NEGATIVE BUOYANCY INVERSION (Q-233)
 
 ### Added

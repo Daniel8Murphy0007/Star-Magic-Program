@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.257.0"
-description = "UQFF Star-Magic-Program v0.257.0: PAPER_253 wired (Q-233) - Sgr A* negative buoyancy inversion (class departure, omega0=1e-15); first NEGATIVE F_U_Bi=-8.31e211 N = PAPER_217 Branch2 (asymmetry 3938 ties 3940); Fermi Bubble t=48.9 Myr, F_LENR=6.17e45 reproduce. Wired 257/2255, gate 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured)."
+version = "0.258.0"
+description = "UQFF Star-Magic-Program v0.258.0: PAPER_254 wired (Q-234) - Kepler SNR 1604 distance-independence anchor; 4th positive Force Equivalence Class member (F_U_Bi=+2.11e208 N); L_X inverse-square, E_shock=8e-11 reproduce; completes 5-system Chandra series. Wired 258/2255, gate 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

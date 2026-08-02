@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.257.0"
+VERSION = "0.258.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13897,6 +13897,80 @@ def _paper_253(dataset):
         },
         'formula': 'omega0 < omega0_crit ~1e-13 -> x2 sign inverts -> F_U_Bi ~ -8.31e211 N (negative buoyancy, Fermi Bubble driver)',
         'source': 'PAPER_253',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_254')
+def _paper_254(dataset):
+    """Kepler SNR 1604 - Force Equivalence Class historical anchor (S72c).
+
+    Kepler's Supernova Remnant (SN 1604, last naked-eye MW supernova, ~20,000
+    ly - most distant in the 5-system Chandra dataset) is the 4th positive
+    member of the omega0=1e-12 Force Equivalence Class and its HISTORICAL /
+    DISTANCE-INDEPENDENCE anchor: F_U_Bi ~= +2.11e208 N, identical to SN 1006
+    (~7000 ly) despite 3x distance, 2.4x age, 10x lower L_X, and the fastest
+    Type Ia ejecta in the dataset.
+
+    Distance-Independence Theorem: F_U_Bi for omega0=1e-12 systems is
+    independent of distance. L_X faded by inverse-square (L_X ratio =
+    (d_SN1006/d_Kepler)^2 = (2.15/6.4)^2 = 0.11); F_DE proportional to L_X
+    (Kepler 10 N, SN 1006 100 N); F_LENR/F_DE INCREASES with distance
+    (Kepler 6.17e38, SN 1006 6.17e37 - fainter => more LENR-dominant), so UQFF
+    physics becomes MORE robust as parameters deviate from the Eta Carinae
+    calibration. F_U_Bi identical for all such SNRs.
+
+    Fastest ejecta (v_shock=4000 km/s vs 3000 for SN 1006): E_shock =
+    0.5*rho_ISM*v_shock^2 = 0.5*1e-23*(4e6)^2 = 8e-11 J/m^3 (1.8x SN 1006's
+    4.5e-11); F_neutron = k_neutron*s_n = 1e6 N maintains knot coherence (same
+    universal mechanism as SN 1006). Age (since 1604) = 420 yr = 1.325e10 s.
+
+    Five-system Chandra confirmation (completes the series):
+      SN 1006 / Eta Carinae / Chandra Archive / Kepler (omega0=1e-12) ->
+        F_U_Bi = +2.11e208 N (positive class);
+      Sgr A* (omega0=1e-15) -> F_U_Bi = -8.31e211 N (NEGATIVE, departure).
+
+    Q-234 (extends Q-230/232): all new computable content reproduces (L_X
+    ratio, F_DE, F_LENR/F_DE ratios using the correct 6.17e39, E_shock, age).
+    Only the documented F_U_Bi=+2.11e208 equivalence-class invariant (ties
+    PAPER_250-252/217/237) carries over. Appendix drift (VDS 1.894, kg/m^3,
+    beta_i=0.61 header -> canonical beta_i PAPER_1203) auto-corrected per charter.
+    """
+    import math
+    d_sn1006 = 2.15; d_kepler = 6.4                       # kpc
+    Lx_ratio = (d_sn1006 / d_kepler) ** 2                 # 0.11 inverse-square
+    F_DE_kepler = 1e-30 * 1e31                            # 10 N
+    F_DE_sn1006 = 1e-30 * 1e32                            # 100 N
+    omega_LENR = 2 * math.pi * 1.25e12
+    F_LENR = 1e-10 * (omega_LENR / 1e-12) ** 2            # 6.17e39
+    ratio_kepler = F_LENR / F_DE_kepler                  # 6.17e38
+    ratio_sn1006 = F_LENR / F_DE_sn1006                  # 6.17e37
+    E_shock = 0.5 * 1e-23 * (4e6) ** 2                    # 8e-11 J/m^3
+    E_shock_ratio = E_shock / 4.5e-11                     # 1.8x SN 1006
+    age_s = 420 * 3.156e7                                 # 1.325e10 s
+    return {
+        'value': {
+            'domain': '2.52 (Kepler SNR 1604 Force Equivalence Class anchor)',
+            'source_thread': 'Session 72c Infrared Datasets (CondensedPhysics3.py)',
+            'system': 'Kepler SNR (SN 1604)',
+            'omega0': 1e-12,
+            'Lx_ratio_vs_sn1006': Lx_ratio,              # 0.11
+            'F_DE_kepler_N': F_DE_kepler,                # 10
+            'F_DE_sn1006_N': F_DE_sn1006,                # 100
+            'F_LENR_over_F_DE_kepler': ratio_kepler,     # 6.17e38
+            'F_LENR_over_F_DE_sn1006': ratio_sn1006,     # 6.17e37
+            'E_shock_J_m3': E_shock,                     # 8e-11
+            'E_shock_ratio_vs_sn1006': E_shock_ratio,    # 1.8
+            'age_s': age_s,                              # 1.325e10
+            'fubi_invariant_N': 2.11e208,               # 4th positive member
+            'positive_class_member': True,
+            'distance_independence': True,
+            'five_system_series_complete': True,         # 4 positive + Sgr A* negative
+            'historical_anchor': True,                   # SN 1604 Kepler/Galileo
+        },
+        'formula': 'Distance-Independence: F_U_Bi = +2.11e208 N for omega0=1e-12 regardless of distance/L_X/velocity',
+        'source': 'PAPER_254',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

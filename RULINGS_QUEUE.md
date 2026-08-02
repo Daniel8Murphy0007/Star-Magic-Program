@@ -5593,3 +5593,12 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct pieces + documented -8.31e211 benchmark; drifts flagged.
 - **Ruling needed:** confirm F_U_Bi=-8.31e211 = PAPER_217 Branch 2 (negative-buoyancy branch of the two-branch integral); confirm DPM_resonance derived vs stated; confirm M=8.155e36 kg (4.1e6 M_sun canonical).
 - Wired v0.257.0, status OPEN_RULING.
+
+## Q-234 — PAPER_254 Kepler SNR 1604: distance-independence confirmation (extends Q-230/232)
+- 4th positive member + historical/distance-independence anchor of the omega0=1e-12 Force Equivalence Class; completes the 5-system Chandra series (4 positive +2.11e208 at omega0=1e-12, Sgr A* negative -8.31e211 at omega0=1e-15).
+- All NEW computable content reproduces cleanly: L_X inverse-square ratio (2.15/6.4)^2 = 0.11; F_DE = k_DE*L_X (Kepler 10 N, SN 1006 100 N); F_LENR/F_DE (Kepler 6.17e38 > SN 1006 6.17e37, fainter = more LENR-dominant, uses correct F_LENR=6.17e39); E_shock = 0.5*1e-23*(4e6)^2 = 8e-11 J/m3 (1.8x SN 1006, fastest ejecta 4000 km/s); age = 420 yr = 1.325e10 s.
+- **Carryover only:** F_U_Bi=+2.11e208 documented equivalence-class invariant (ties PAPER_250-252/217/237) — already under Q-230/232. No new independent issue.
+- Distance-Independence Theorem: F_U_Bi for omega0=1e-12 is independent of distance/L_X/velocity.
+- Wired the distance-independence confirmation with all computable pieces locked.
+- **Ruling needed:** same as Q-230/232 (confirm the 2.11e208 equivalence-class invariant).
+- Wired v0.258.0, status OPEN_RULING.

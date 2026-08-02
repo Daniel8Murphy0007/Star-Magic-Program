@@ -1164,3 +1164,6 @@ observable,chandra_composite_equivalence_class,observable,eta_carinae_dpm_invisi
 observable,sgra_negative_buoyancy_inversion,paper,PAPER_253,Sgr A* negative buoyancy class departure
 observable,sgra_negative_buoyancy_inversion,observable,f_u_bi_i_two_branch,-8.31e211 = PAPER_217 Branch2 (asym 3938 ties 3940)
 observable,sgra_negative_buoyancy_inversion,observable,chandra_composite_equivalence_class,omega0<omega0_crit departs class (PAPER_252)
+observable,kepler_snr1604_distance_independence,paper,PAPER_254,Kepler SNR distance-independence anchor
+observable,kepler_snr1604_distance_independence,observable,sn1006_typeia_snr_fubi,identical F_U_Bi despite 3x distance (PAPER_250)
+observable,kepler_snr1604_distance_independence,observable,sgra_negative_buoyancy_inversion,completes 5-system series (Sgr A* negative PAPER_253)

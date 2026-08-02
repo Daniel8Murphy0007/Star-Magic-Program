@@ -1,23 +1,23 @@
-v0.257.0 BAND 1: PAPER_253 wired - SGR A* NEGATIVE BUOYANCY INVERSION (Q-233)
+v0.258.0 BAND 1: PAPER_254 wired - KEPLER SNR 1604 DISTANCE-INDEPENDENCE (Q-234)
 
-PAPER_253 (Sgr A* Galactic Center Negative Buoyancy Inversion - omega0 Critical
-Frequency and Fermi Bubble Link, S72c, CondensedPhysics3.py) wired as one
-dispatch (OPEN_RULING, Q-233). The deliberate DEPARTURE from the omega0=1e-12
-Force Equivalence Class.
+PAPER_254 (Kepler's Supernova Remnant 1604 CE - Force Equivalence Class
+Historical Anchor, S72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-234). 4th positive member + distance-independence anchor of the
+omega0=1e-12 Force Equivalence Class; completes the 5-system Chandra series.
 
-Negative Buoyancy Inversion: omega0=1e-15 (3 orders below class) -> F_LENR up
-6 orders (6.17e45) -> F_rel=4.30e33 significant -> x2 sign inverts -> F_U_Bi ~
--8.31e211 N (first negative buoyancy; Fermi Bubble driver).
+Distance-Independence Theorem: F_U_Bi=+2.11e208 N identical to SN 1006 despite
+3x distance, 2.4x age, 10x lower L_X, fastest ejecta (4000 km/s).
 
-KEY TIE: F_U_Bi=-8.31e211 IS PAPER_217 Branch-2, +2.11e208 IS Branch-1;
-asymmetry |8.31e211/2.11e208|=3938 reproduces PAPER_217's 3940.
+Reproducible (all clean): L_X inverse-square (2.15/6.4)^2=0.11; F_DE=k_DE*L_X
+(Kepler 10 N / SN 1006 100 N); F_LENR/F_DE Kepler 6.17e38 > SN 1006 6.17e37;
+E_shock=8e-11 J/m3 (1.8x SN 1006); age 420 yr=1.325e10 s.
 
-Inversion Theorem: sign(F_U_Bi) step function of omega0 about omega0_crit~1e-13.
-Reproducible: F_LENR=6.17e45; E_outflow=5e-11 J/m3; Fermi Bubble t=48.9 Myr.
+5-system Chandra series complete: SN 1006 / Eta Carinae / Chandra Archive /
+Kepler (omega0=1e-12) -> +2.11e208 N; Sgr A* (omega0=1e-15) -> -8.31e211 N.
 
-Q-233: (a) F_U_Bi=-8.31e211=PAPER_217 Branch2 (asym 3938~3940); (b) DPM 1.76e21
-vs paper 1.76e6 (Q-230); (c) M 8.155e36 vs stated 7.956e36. Wired derived-correct
-+ benchmark. Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+Q-234 (extends Q-230/232): only documented F_U_Bi=+2.11e208 invariant carries
+over; all new computable content reproduces. Appendix drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
 
-Gate: 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured).
-Campaign: 257/2,255. Next: PAPER_254.
+Gate: 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured).
+Campaign: 258/2,255. Next: PAPER_255.

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.257.0", "uqff_calculator.VERSION = 0.257.0")
+assert_that(C.VERSION == "0.258.0", "uqff_calculator.VERSION = 0.258.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3528,6 +3528,17 @@ assert_that(abs(_r253['F_LENR_sgra'] - 6.169e45) < 1e42 and _r253['omega0'] == 1
 assert_that(abs(_r253['E_outflow_J_m3'] - 5e-11) < 1e-13 and abs(_r253['t_bubble_myr'] - 48.9) < 0.5 and _r253['sign_step_function_of_omega0'],
             "PAPER_253: E_outflow = 5e-11 J/m3; Fermi Bubble t_bubble = 48.9 Myr; sign(F_U_Bi) step function of omega0 (Q-233)")
 assert_that(C.wired_count() >= 257, "wired_count >= 257")
+
+_r254 = C.calc('PAPER_254')['value']
+assert_that(abs(_r254['Lx_ratio_vs_sn1006'] - 0.1129) < 1e-3 and abs(_r254['F_DE_kepler_N'] - 10) < 1e-6 and abs(_r254['F_DE_sn1006_N'] - 100) < 1e-6,
+            "PAPER_254: L_X ratio (2.15/6.4)^2 = 0.11 (inverse-square); F_DE Kepler 10 N, SN 1006 100 N (reproduce)")
+assert_that(abs(_r254['F_LENR_over_F_DE_kepler'] - 6.17e38) < 1e36 and abs(_r254['F_LENR_over_F_DE_sn1006'] - 6.17e37) < 1e35,
+            "PAPER_254: F_LENR/F_DE Kepler 6.17e38 > SN 1006 6.17e37 (fainter = more LENR-dominant, uses correct 6.17e39)")
+assert_that(abs(_r254['E_shock_J_m3'] - 8e-11) < 1e-13 and abs(_r254['E_shock_ratio_vs_sn1006'] - 1.8) < 0.05,
+            "PAPER_254: E_shock = 0.5*1e-23*(4e6)^2 = 8e-11 J/m3 (1.8x SN 1006, fastest ejecta 4000 km/s)")
+assert_that(_r254['fubi_invariant_N'] == 2.11e208 and _r254['distance_independence'] and _r254['five_system_series_complete'],
+            "PAPER_254: F_U_Bi = +2.11e208 N (4th positive member, distance-independence); 5-system Chandra series complete (Q-234)")
+assert_that(C.wired_count() >= 258, "wired_count >= 258")
 
 
 # =============================================================================

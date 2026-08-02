@@ -3112,3 +3112,33 @@ Wired derived-correct + benchmark; drifts flagged. Appendix boilerplate drift
 
 Gate: 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured).
 Campaign: 257/2,255. Next: PAPER_254.
+
+---
+
+## 2026-08-02 — v0.258.0 — BAND 1: PAPER_254 — KEPLER SNR 1604 DISTANCE-INDEPENDENCE (Q-234)
+
+PAPER_254 (Kepler's Supernova Remnant 1604 CE — Force Equivalence Class
+Historical Anchor, Session 72c, CondensedPhysics3.py) wired as one dispatch
+(OPEN_RULING, Q-234). 4th positive member + historical/distance-independence
+anchor of the omega0=1e-12 Force Equivalence Class; completes the 5-system
+Chandra series.
+
+Distance-Independence Theorem: F_U_Bi=+2.11e208 N identical to SN 1006 despite
+3x distance, 2.4x age, 10x lower L_X, and the fastest Type Ia ejecta (4000
+km/s).
+
+Reproducible (all clean): L_X inverse-square ratio (2.15/6.4)^2=0.11; F_DE=
+k_DE*L_X (Kepler 10 N / SN 1006 100 N); F_LENR/F_DE Kepler 6.17e38 > SN 1006
+6.17e37 (fainter=more LENR-dominant, correct F_LENR=6.17e39); E_shock=0.5*
+1e-23*(4e6)^2=8e-11 J/m3 (1.8x SN 1006); age 420 yr=1.325e10 s.
+
+5-system Chandra series (complete): SN 1006 / Eta Carinae / Chandra Archive /
+Kepler (omega0=1e-12) -> +2.11e208 N; Sgr A* (omega0=1e-15) -> -8.31e211 N.
+
+Q-234 (extends Q-230/232): only the documented F_U_Bi=+2.11e208 equivalence-
+class invariant (ties PAPER_250-252/217/237) carries over; all new computable
+content reproduces. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.61
+header -> canonical beta_i per PAPER_1203) auto-corrected per charter.
+
+Gate: 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured).
+Campaign: 258/2,255. Next: PAPER_255.

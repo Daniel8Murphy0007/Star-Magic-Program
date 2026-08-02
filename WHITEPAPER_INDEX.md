@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 257 (25 ✓, 232 ⚠ OPEN_RULING)
+- **Wired:** 258 (25 ✓, 233 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1997
+- **Not yet touched:** 1996
 
 ---
 
@@ -1512,7 +1512,7 @@
 | ⚠ | PAPER_251 | EtaCarina Homunculus DPM Invisibility LENR Resonance | Q-231
 | ⚠ | PAPER_252 | Chandra Archive Force Equivalence Class UQFF | Q-232
 | ⚠ | PAPER_253 | SgrA Negative Buoyancy Inversion omega0 Critical | Q-233
-| ⬜ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor |
+| ⚠ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor | Q-234
 | ⬜ | PAPER_255 | PSRJ0030 NeutronStar Density Regime Positive Buoyancy |
 | ⬜ | PAPER_256 | CrabNebula M1 DPM Geometry Compact Visible Diffuse Invisible |
 | ⬜ | PAPER_257 | CassiopeiaA SNR Force Equivalence Class 53Order Extension |
