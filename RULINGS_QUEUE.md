@@ -5538,3 +5538,12 @@ RESOLVED section with the ruling recorded.
 - **Ruling needed:** confirm L_t=3.21e-4 (derived) vs stated 1.6e-3, and H(z=0.5)=1.309*H0 vs stated 1.27; if the stated values are intended, supply the corrected parameters.
 - New source thread: Doc 8 "Rings of Relativity MUGE" (Grok/xAI, October 2025) — Session 60 opens.
 - Wired v0.246.0, status OPEN_RULING.
+
+## Q-228 — PAPER_244 g_Q_min arithmetic slip (paper 3.0e-34 vs derived 2.10e-34)
+- g_Q = (hbar/sqrt(dx*dp))*beta_integral*(2*pi/t_Hubble); Heisenberg minimum g_Q_min = sqrt(2*hbar)*beta_integral*(2*pi/t_Hubble).
+- Reproducible and locked: t_Hubble = 13.8 Gyr*3.156e7 = 4.355e17 s; 2*pi/t_Hubble = 1.443e-17 rad/s.
+- **Drift:** sec 2.2 computes g_Q_min "≈ sqrt(2*1.0546e-34) × 1.0 × (2pi/4.354e17) ≈ 2.1e-17 × 1.44e-17 ≈ 3.0e-34 m/s^2". But sqrt(2*1.0546e-34) = 1.452e-17, NOT 2.1e-17. The correct product is 1.452e-17 × 1.443e-17 = 2.10e-34 m/s^2. The paper used the wrong root (2.1e-17) for sqrt(2*hbar), inflating g_Q_min from 2.10e-34 to 3.0e-34.
+- Wired the derived-correct g_Q_min = 2.10e-34; paper's 3.0e-34 flagged.
+- **Ruling needed:** confirm g_Q_min = 2.10e-34 m/s^2 (derived) vs stated 3.0e-34.
+- Universal Presence Theorem (term_q identical in all 19 MUGE modules) is the paper's primary structural result; not a numeric issue.
+- Wired v0.248.0, status OPEN_RULING.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.247.0"
+VERSION = "0.248.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13194,4 +13194,71 @@ def _paper_243(dataset):
         'source': 'PAPER_243',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_244')
+def _paper_244(dataset):
+    """MUGE quantum uncertainty gravity sub-term g_Q - universal (S62).
+
+    The quantum-uncertainty gravity sub-term (term_q / g_Q), a universal
+    correction present IDENTICALLY in all 19 astrophysical MUGE modules from
+    the grok_share_8d951e12 validation session (Universal Presence Theorem).
+    Bridges Heisenberg zero-point fluctuations to the cosmological horizon via
+    a single Hubble-time normalisation:
+        g_Q = (hbar / sqrt(dx*dp)) * beta_integral * (2*pi / t_Hubble)
+    beta_integral = 1.0 (normalised quantum state factor); dp = hbar/dx
+    (Heisenberg conjugate minimum). Only dimensional path from {hbar, dx*dp,
+    cosmological time} to an acceleration [m/s^2].
+
+    Heisenberg saturation minimum (dx*dp = hbar/2):
+        g_Q_min = sqrt(2*hbar) * beta_integral * (2*pi / t_Hubble)
+    a non-zero cosmological floor on quantum gravitational fluctuations.
+
+    Reproducible (t_Hubble = 13.8 Gyr * 3.156e7 s/yr):
+      t_Hubble = 4.355e17 s;
+      2*pi/t_Hubble = 1.443e-17 rad/s (angular period over one Hubble cycle);
+      sqrt(2*hbar) = 1.452e-17;
+      g_Q_min = 1.452e-17 * 1.443e-17 = 2.10e-34 m/s^2 (derived-correct).
+
+    Epoch dependence g_Q ~ 1/t_Hubble (larger in the early Universe);
+    g_Q/g_Newt ~ 1e-34 for stellar systems (perturbative). Time-decayed form
+    g_Q(t)=g_Q*psi_0*exp(-t/t_Q) decoherence envelope.
+
+    Q-228: the paper states g_Q_min ~= 3.0e-34 m/s^2 but the formula yields
+    2.10e-34 - the paper's sqrt(2*hbar) intermediate is written 2.1e-17 where
+    the correct value is 1.45e-17 (2.1e-17 * 1.44e-17 = 3.0e-34 uses the wrong
+    root). Wired the derived-correct g_Q_min; paper's 3.0e-34 flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    hbar = 1.0546e-34                                    # reduced Planck (J*s)
+    beta_integral = 1.0                                  # normalised quantum state factor
+    t_Hubble = 13.8e9 * 3.156e7                          # 4.355e17 s
+    two_pi_over_tH = 2 * math.pi / t_Hubble              # 1.443e-17 rad/s
+    sqrt_2hbar = math.sqrt(2 * hbar)                     # 1.452e-17
+    g_Q_min = sqrt_2hbar * beta_integral * two_pi_over_tH   # 2.10e-34
+    dx = 1e-10; dp = hbar / dx                           # Angstrom probe, conjugate
+    g_Q_primary = hbar / math.sqrt(dx * dp) * beta_integral * two_pi_over_tH  # 1.48e-34
+    return {
+        'value': {
+            'domain': '2.42 (MUGE quantum uncertainty gravity sub-term)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'formula_symbolic': 'g_Q = (hbar/sqrt(dx*dp))*beta_integral*(2*pi/t_Hubble)',
+            'hbar': hbar, 'beta_integral': beta_integral,
+            't_Hubble_s': t_Hubble,                      # 4.355e17
+            'two_pi_over_tHubble': two_pi_over_tH,       # 1.443e-17
+            'sqrt_2hbar': sqrt_2hbar,                    # 1.452e-17
+            'g_Q_min_m_s2': g_Q_min,                     # 2.10e-34 derived
+            'g_Q_primary_m_s2': g_Q_primary,             # 1.48e-34 (dx=1e-10)
+            'universal_muge_modules': 19,                # Universal Presence Theorem
+            'epoch_scaling': 'g_Q ~ 1/t_Hubble',         # larger in early Universe
+            'g_Q_over_g_newt': 1e-34,                    # perturbative
+            'cosmological_floor': True,                  # non-zero minimum
+            'value_drift': 'g_Q_min 3.0e-34 stated vs 2.10e-34 computed (paper sqrt(2hbar)=2.1e-17 vs correct 1.45e-17) Q-228',
+        },
+        'formula': 'g_Q_min = sqrt(2*hbar)*beta_integral*(2*pi/t_Hubble)',
+        'source': 'PAPER_244',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

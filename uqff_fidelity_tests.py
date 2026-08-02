@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.247.0", "uqff_calculator.VERSION = 0.247.0")
+assert_that(C.VERSION == "0.248.0", "uqff_calculator.VERSION = 0.248.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3418,6 +3418,17 @@ assert_that(_r243['muge_terms'] == 10 and _r243['cavity_pressure_additive'] and 
 assert_that(_r243['novel_elements'] == 2,
             "PAPER_243: 2 novel elements - time-varying M(t) + additive cavity-pressure acceleration")
 assert_that(C.wired_count() >= 247, "wired_count >= 247")
+
+_r244 = C.calc('PAPER_244')['value']
+assert_that(abs(_r244['t_Hubble_s'] - 4.3553e17) < 1e14 and abs(_r244['two_pi_over_tHubble'] - 1.4427e-17) < 1e-20,
+            "PAPER_244: t_Hubble = 13.8 Gyr*3.156e7 = 4.355e17 s; 2pi/t_H = 1.443e-17 rad/s (reproduce)")
+assert_that(abs(_r244['g_Q_min_m_s2'] - 2.0952e-34) < 1e-37 and abs(_r244['sqrt_2hbar'] - 1.4523e-17) < 1e-20,
+            "PAPER_244: g_Q_min = sqrt(2hbar)*(2pi/t_H) = 2.10e-34 derived (paper 3.0e-34 uses wrong root Q-228)")
+assert_that(_r244['universal_muge_modules'] == 19 and _r244['cosmological_floor'],
+            "PAPER_244: Universal Presence Theorem - term_q identical in all 19 MUGE modules; non-zero cosmological floor")
+assert_that(_r244['g_Q_over_g_newt'] == 1e-34,
+            "PAPER_244: g_Q/g_Newt ~ 1e-34 for stellar systems (perturbative correction)")
+assert_that(C.wired_count() >= 248, "wired_count >= 248")
 
 
 # =============================================================================

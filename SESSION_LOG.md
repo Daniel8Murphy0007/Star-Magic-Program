@@ -2803,3 +2803,36 @@ CLEAN - all three sec-7 numerics reproduce exactly. Appendix boilerplate drift
 
 Gate: 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured).
 Campaign: 247/2,255. Next: PAPER_244.
+
+---
+
+## 2026-08-02 — v0.248.0 — BAND 1: PAPER_244 — MUGE QUANTUM UNCERTAINTY SUB-TERM (Q-228)
+
+PAPER_244 (MUGE Quantum Uncertainty Gravity Sub-Term — Universal
+Cosmological-Scale Coupling, Session 62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-228).
+
+The universal MUGE quantum-uncertainty gravity sub-term g_Q / term_q:
+  g_Q = (hbar/sqrt(dx*dp))*beta_integral*(2*pi/t_Hubble)
+bridges Heisenberg zero-point fluctuations to the cosmological horizon via a
+single Hubble-time normalisation.
+
+Universal Presence Theorem: term_q appears IDENTICALLY in all 19 astrophysical
+MUGE modules — a structural element of MUGE, not a system-specific correction
+(the paper's primary result).
+
+Heisenberg minimum g_Q_min = sqrt(2*hbar)*beta*(2*pi/t_Hubble), a non-zero
+cosmological floor on quantum gravitational fluctuations.
+
+Reproducible: t_Hubble = 13.8 Gyr*3.156e7 = 4.355e17 s; 2*pi/t_Hubble =
+1.443e-17 rad/s. Derived-correct g_Q_min = 2.10e-34 m/s^2. Epoch scaling
+g_Q ~ 1/t_Hubble; g_Q/g_Newt ~ 1e-34 (perturbative).
+
+Q-228: paper states g_Q_min ~= 3.0e-34 m/s^2 but the formula yields 2.10e-34 —
+its sqrt(2*hbar) intermediate is written 2.1e-17 where the correct root is
+1.45e-17 (3.0e-34 = 2.1e-17*1.44e-17). Wired the derived-correct 2.10e-34;
+paper's 3.0e-34 flagged. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.603) auto-corrected per charter.
+
+Gate: 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured).
+Campaign: 248/2,255. Next: PAPER_245.

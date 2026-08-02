@@ -1,23 +1,25 @@
-v0.247.0 BAND 1: PAPER_243 wired - NGC 3603 FULL MUGE CAVITY PRESSURE (CLEAN)
+v0.248.0 BAND 1: PAPER_244 wired - MUGE QUANTUM UNCERTAINTY SUB-TERM (Q-228)
 
-PAPER_243 (NGC 3603 Full MUGE: Time-Varying Mass M(t) and Additive Cavity
-Pressure P(t)/rho, S60, Doc 11, Grok/xAI October 2025) wired as one dispatch
-(CLEAN, WIRED). Companion to PAPER_242.
+PAPER_244 (MUGE Quantum Uncertainty Gravity Sub-Term - Universal
+Cosmological-Scale Coupling, S62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-228).
 
-Complete 10-term MUGE for the NGC 3603 extreme young star cluster. Two novel
-elements vs CP3 class-88's 4-term multiplicative-pressure form:
-1. Time-varying cluster mass M(t)=M_0(1+M_dot_factor*e^-t/tau_SF); SFE
-   eps_SF=M_dot_factor*e^-t/tau_SF.
-2. Additive cavity pressure T_pressure=P(t)/rho_fluid, P(t)=P_0*e^-t/tau_exp -
-   independent additive acceleration, NOT a multiplicative (1-P) suppressor.
+The universal MUGE quantum-uncertainty gravity sub-term g_Q / term_q:
+  g_Q = (hbar/sqrt(dx*dp))*beta_integral*(2*pi/t_Hubble)
+bridges Heisenberg zero-point fluctuations to the cosmological horizon.
 
-T8 DM tidal 3*G*M(t)/r^3; T4 rho_UA/rho_SCm=1/F_TRZ=10 EXACT.
+Universal Presence Theorem: term_q appears IDENTICALLY in all 19 MUGE modules -
+a structural element of MUGE, not a system-specific correction.
 
-Sec-7 numerics (t=0.5 Myr, all reproduce): M(t)/M_0=1.607; P(t)=2.43e-8 Pa;
-T_pressure=2.43e12 m/s^2 (dominates early; natal cloud dispersal ~3 Myr).
+Heisenberg minimum g_Q_min = sqrt(2*hbar)*beta*(2*pi/t_Hubble) - non-zero
+cosmological floor.
 
-CLEAN - all three sec-7 numerics reproduce exactly. Appendix drift (VDS 1.894,
+Reproducible: t_Hubble = 4.355e17 s; 2*pi/t_Hubble = 1.443e-17 rad/s.
+Derived-correct g_Q_min = 2.10e-34 m/s^2. g_Q~1/t_Hubble; g_Q/g_Newt~1e-34.
+
+Q-228: paper g_Q_min ~3.0e-34 vs formula 2.10e-34 (sqrt(2hbar)=2.1e-17 written
+vs correct 1.45e-17). Wired derived-correct 2.10e-34. Appendix drift (VDS 1.894,
 kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured).
-Campaign: 247/2,255. Next: PAPER_244.
+Gate: 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured).
+Campaign: 248/2,255. Next: PAPER_245.

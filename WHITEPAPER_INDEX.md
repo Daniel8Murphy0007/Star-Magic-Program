@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 247 (21 ✓, 226 ⚠ OPEN_RULING)
+- **Wired:** 248 (21 ✓, 227 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2007
+- **Not yet touched:** 2006
 
 ---
 
@@ -1502,7 +1502,7 @@
 | ✓ | PAPER_241 | UQFF Validation CrossReference ArXiv Experimental 92pct | CLEAN
 | ⚠ | PAPER_242 | RingsOfRelativityEinsteinLensingMUGE | Q-227
 | ✓ | PAPER_243 | NGC3603FullMUGECavityPressure | CLEAN
-| ⬜ | PAPER_244 | MUGE Quantum Uncertainty Gravity SubTerm Universal |
+| ⚠ | PAPER_244 | MUGE Quantum Uncertainty Gravity SubTerm Universal | Q-228
 | ⬜ | PAPER_245 | MUGE Fluid Self Gravity Archimedes Buoyancy SubTerm |
 | ⬜ | PAPER_246 | MUGE Dual Mode Oscillatory Gravity Standing Traveling Wave |
 | ⬜ | PAPER_247 | MUGE Merger Interaction Modulation Tidal Gravity Boost |

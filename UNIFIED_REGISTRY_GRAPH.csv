@@ -1131,3 +1131,6 @@ observable,einstein_ring_lensing_factor,observable,rings_relativity_muge_9term,L
 primitive,F_TRZ,observable,ngc3603_full_muge_10term,T4 rho_UA/rho_SCm = 1/F_TRZ = 10
 observable,ngc3603_full_muge_10term,paper,PAPER_243,10-term MUGE M(t) + additive cavity pressure
 observable,ngc3603_full_muge_10term,observable,rings_relativity_muge_9term,companion MUGE (PAPER_242, Session 60)
+observable,muge_quantum_uncertainty_gQ,paper,PAPER_244,g_Q universal MUGE sub-term term_q
+observable,muge_quantum_uncertainty_gQ,observable,ngc3603_full_muge_10term,term_q universal in all 19 MUGE modules (T5 quantum)
+observable,muge_quantum_uncertainty_gQ,observable,rings_relativity_muge_9term,term_q universal (T5 quantum, PAPER_242)

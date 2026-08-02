@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.247.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.247.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.248.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.248.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1556%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-247-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1561%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-248-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.247.0 wiring campaign live**
+**UQFF systematic rebuild — v0.248.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.247.0)
+## What is currently shipped (v0.248.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 247 / 2,255** (21 ✓ · 226 ⚠ OPEN_RULING · 227 rulings queued) — NGC 3603 full 10-term MUGE; time-varying mass M(t)=1.607 M₀ + additive cavity pressure 2.43e12 m/s² (243)
+**Wired so far: 248 / 2,255** (21 ✓ · 227 ⚠ OPEN_RULING · 228 rulings queued) — universal MUGE quantum-uncertainty sub-term g_Q; in all 19 MUGE modules; g_Q_min=2.10e-34 m/s² cosmological floor (244)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -306,6 +306,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_241 | Validation Cross-Reference | 3 streams (ArXiv 92.53% / exp 93.3% / comp 100%) → 95.28% overall; Higgs 99.79%, 26D 100%, χ²ᵥ=1.03; CLEAN |
 | PAPER_242 | Rings of Relativity Lensing MUGE | GAL-CLUS-022058s 9-term MUGE; static Einstein-ring L_t=(GM/c²r)·0.67=3.21e-4; T4 ρ_UA/ρ_SCm=10 exact; Q-227 |
 | PAPER_243 | NGC 3603 Full MUGE Cavity Pressure | 10-term MUGE; M(t)=M₀(1+Ṁ·e^-t/τ)=1.607 M₀; additive P(t)/ρ_fl=2.43e12 m/s²; T4 ρ_UA/ρ_SCm=10 exact; CLEAN |
+| PAPER_244 | MUGE Quantum Uncertainty Sub-Term | universal g_Q=(ℏ/√(Δx·Δp))·β·(2π/t_H); in all 19 MUGE modules; g_Q_min=2.10e-34 m/s² floor; Q-228 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -584,7 +585,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.244.0 | Band 1: PAPER_240 | 244 |
 | v0.245.0 | Band 1: PAPER_241 | 245 |
 | v0.246.0 | Band 1: PAPER_242 | 246 |
-| **v0.247.0** ← current | Band 1: PAPER_243 | 247 |
+| v0.247.0 | Band 1: PAPER_243 | 247 |
+| **v0.248.0** ← current | Band 1: PAPER_244 | 248 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

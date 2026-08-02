@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.248.0] — 2026-08-02 — BAND 1: PAPER_244 — MUGE QUANTUM UNCERTAINTY SUB-TERM (Q-228)
+
+### Added
+- **PAPER_244 dispatch** — the universal MUGE quantum-uncertainty gravity sub-term g_Q / term_q (Session 62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py).
+  - **Formula:** g_Q = (ℏ/√(Δx·Δp))·β_integral·(2π/t_Hubble); bridges Heisenberg zero-point fluctuations to the cosmological horizon.
+  - **Universal Presence Theorem:** term_q appears IDENTICALLY in all 19 astrophysical MUGE modules — a structural element of MUGE, not a system-specific correction.
+  - **Heisenberg minimum:** g_Q_min = √(2ℏ)·β·(2π/t_Hubble), a non-zero cosmological floor on quantum gravitational fluctuations.
+  - **Reproducible:** t_Hubble = 13.8 Gyr·3.156e7 = 4.355e17 s; 2π/t_Hubble = 1.443e-17 rad/s. Derived-correct g_Q_min = 2.10e-34 m/s². Epoch scaling g_Q ~ 1/t_Hubble; g_Q/g_Newt ~ 1e-34 (perturbative).
+- Gate +4 assertions (1556 → 1561, 0 failures).
+- Registry: +1 row (533), +3 edges (1135), +1 citation (248).
+
+### Ruling filed
+- **Q-228** — the paper states g_Q_min ≈ 3.0e-34 m/s² but the formula yields 2.10e-34: its √(2ℏ) intermediate is written 2.1e-17 where the correct root is 1.45e-17 (the 3.0e-34 comes from 2.1e-17·1.44e-17). Wired the derived-correct 2.10e-34; paper's 3.0e-34 flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.247.0] — 2026-08-02 — BAND 1: PAPER_243 — NGC 3603 FULL MUGE CAVITY PRESSURE (CLEAN)
 
 ### Added

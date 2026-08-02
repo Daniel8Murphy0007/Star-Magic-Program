@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.247.0"
-description = "UQFF Star-Magic-Program v0.247.0: PAPER_243 wired (CLEAN) - NGC 3603 full 10-term MUGE; time-varying mass M(t)=M_0(1+M_dot*e^-t/tau_SF)=1.607 M_0 + additive cavity pressure T_pressure=P(t)/rho_fl=2.43e12 m/s^2 (all sec-7 numerics reproduce). Wired 247/2255, gate 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured)."
+version = "0.248.0"
+description = "UQFF Star-Magic-Program v0.248.0: PAPER_244 wired (Q-228) - universal MUGE quantum-uncertainty gravity sub-term g_Q=(hbar/sqrt(dx*dp))*beta*(2pi/t_H); present in all 19 MUGE modules; t_H=4.355e17 s, 2pi/t_H=1.443e-17, g_Q_min=2.10e-34 m/s^2 cosmological floor. Wired 248/2255, gate 1561/0. Registry 533 rows / 1135 edges / 248 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
