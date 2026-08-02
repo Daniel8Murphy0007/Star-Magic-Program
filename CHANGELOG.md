@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.250.0] — 2026-08-02 — BAND 1: PAPER_246 — MUGE DUAL-MODE OSCILLATORY GRAVITY (CLEAN)
+
+### Added
+- **PAPER_246 dispatch** — the universal MUGE dual-mode oscillatory gravity sub-term g_osc (Session 62, grok_share_8d951e12 4th-pass). Third universal MUGE sub-term (with g_Q PAPER_244, g_fluid PAPER_245).
+  - **Mode 1 (standing wave):** g_osc1 = 2A·cos(kx)·cos(ωt) — counter-propagating superposition.
+  - **Mode 2 (Hubble-normalised traveling wave):** g_osc2 = (2π/T_H_gyr)·A·cos(kx−ωt) — amplitude suppressed by inverse Hubble time.
+  - **Dual-Mode Zero-Mean Theorem:** ⟨g_osc⟩ = 0, a bounded zero-mean perturbation with no secular drift. Max amplitude |g_osc|_max = A·(2+2π/T_H_gyr).
+  - **Scale coupling:** k=1/r, ω=2πc/r → T_osc = r/c (light-crossing time).
+  - **Numerics (reproduce):** Mode-2 factor 2π/13.8 = 0.455 (z=0); Hubble resonance T_H_gyr = 2π = 6.28 Gyr; |g_osc|_max = 2.455·A; T_osc = 3.3 kyr (1 kpc), 3.3 Myr (1 Mpc).
+- Gate +4 assertions (1566 → 1571, 0 failures).
+- Registry: +1 row (535), +4 edges (1142), +1 citation (250).
+
+### Notes
+- CLEAN — all numerics reproduce. **Milestone: 250/2,255 wired (quarter-way to PAPER_500 audit stop).**
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.249.0] — 2026-08-02 — BAND 1: PAPER_245 — MUGE FLUID SELF-GRAVITY ARCHIMEDES (CLEAN)
 
 ### Added

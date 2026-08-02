@@ -2865,3 +2865,33 @@ CLEAN - r_c and cluster g_fluid reproduce. Appendix boilerplate drift
 
 Gate: 1566/0. Registry 534 rows / 1138 edges / 249 ledgers (measured).
 Campaign: 249/2,255. Next: PAPER_246.
+
+---
+
+## 2026-08-02 — v0.250.0 — BAND 1: PAPER_246 — MUGE DUAL-MODE OSCILLATORY GRAVITY (CLEAN)
+
+PAPER_246 (MUGE Dual-Mode Oscillatory Gravity — Standing Wave and
+Hubble-Normalised Traveling Wave, Session 62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (CLEAN, WIRED). Third universal MUGE
+sub-term (with g_Q PAPER_244, g_fluid PAPER_245).
+
+The universal MUGE dual-mode oscillatory gravity sub-term g_osc:
+- Mode 1 (standing wave): g_osc1 = 2*A*cos(kx)*cos(wt) - counter-propagating
+  superposition (nodes kx=(n+1/2)pi, antinodes kx=n*pi).
+- Mode 2 (Hubble-normalised traveling wave): g_osc2 = (2pi/T_H_gyr)*A*
+  cos(kx-wt) - amplitude suppressed by inverse Hubble time in Gyr.
+- Total g_osc = g_osc1 + g_osc2; time-average <g_osc> = 0 (Dual-Mode Zero-Mean
+  Theorem); max |g_osc|_max = A*(2 + 2pi/T_H_gyr).
+
+k=1/r, omega=2pi c/r => T_osc = 2pi/omega = r/c (light-crossing time).
+
+Numerics (reproduce): Mode-2 factor 2pi/13.8 = 0.455 (z=0); Hubble resonance
+T_H_gyr = 2pi = 6.28 Gyr (z~0.5, equal-amplitude modes); |g_osc|_max = 2.455*A;
+T_osc = 3.3 kyr (1 kpc), 3.3 Myr (1 Mpc, cluster merger scale).
+
+CLEAN - all numerics reproduce. MILESTONE: 250/2,255 wired (quarter-way to the
+PAPER_500 audit stop). Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.603) auto-corrected per charter.
+
+Gate: 1571/0. Registry 535 rows / 1142 edges / 250 ledgers (measured).
+Campaign: 250/2,255. Next: PAPER_247.

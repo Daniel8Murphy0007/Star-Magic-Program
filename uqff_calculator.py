@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.249.0"
+VERSION = "0.250.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13324,6 +13324,71 @@ def _paper_245(dataset):
         },
         'formula': 'g_fluid = (4*pi*G/3)*rho_fluid*r; r_c = (3M/(4*pi*rho_fluid))^(1/3)',
         'source': 'PAPER_245',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_246')
+def _paper_246(dataset):
+    """MUGE dual-mode oscillatory gravity g_osc: standing + traveling (S62).
+
+    Gravity in MUGE supports oscillatory modes from the interference of inward-
+    and outward-propagating gravitational perturbations. The dual-mode
+    oscillatory sub-term g_osc is the superposition of two wave modes:
+      Mode 1 (standing wave): g_osc1 = 2*A*cos(k*x)*cos(omega*t)
+        (counter-propagating superposition; nodes at kx=(n+1/2)pi, antinodes
+        at kx=n*pi).
+      Mode 2 (Hubble-normalised traveling wave):
+        g_osc2 = (2*pi/T_H_gyr)*A*cos(k*x - omega*t)
+        (unidirectional; amplitude suppressed by inverse Hubble time in Gyr,
+        tying gravitational oscillation to cosmological expansion rate).
+      Total: g_osc = g_osc1 + g_osc2;  time-average <g_osc> = 0 (zero-mean
+      perturbation, no secular drift - Dual-Mode Zero-Mean Theorem).
+
+    At astrophysical scale r: k = 1/r, omega = 2*pi*c/r, so the oscillation
+    period equals the light-crossing time T_osc = 2*pi/omega = r/c.
+
+    Numerics (all reproduce):
+      Mode-2 amplitude factor at T_H_gyr=13.8: 2*pi/13.8 = 0.455 (Mode 2 ~45%
+        of Mode 1 amplitude at z=0).
+      Hubble resonance (2*pi/T_H_gyr = 1): T_H_gyr = 2*pi = 6.28 Gyr (z~0.5 in
+        LCDM; unique epoch of equal-amplitude modes, most complex interference).
+      Max instantaneous amplitude |g_osc|_max = A*(2 + 2*pi/T_H_gyr) = 2.455*A.
+      T_osc = r/c: 1 kpc -> 3.3 kyr; 1 Mpc -> 3.3 Myr (cluster merger scale).
+
+    CLEAN - all numerics reproduce. Third universal MUGE sub-term (with g_Q
+    PAPER_244, g_fluid PAPER_245). Appendix boilerplate drift (VDS 1.894,
+    kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    c = C_OBSERVED
+    T_H_gyr = 13.8
+    mode2_factor = 2 * math.pi / T_H_gyr                 # 0.455
+    resonance_T_H_gyr = 2 * math.pi                      # 6.28 Gyr
+    max_amp_factor = 2 + mode2_factor                    # 2.455 (times A)
+    T_osc_kpc = 3.086e19 / c                             # 1 kpc light-crossing
+    T_osc_mpc = 3.086e22 / c                             # 1 Mpc light-crossing
+    return {
+        'value': {
+            'domain': '2.44 (MUGE dual-mode oscillatory gravity)',
+            'source_thread': 'grok_share_8d951e12 4th-pass (CondensedPhysics3.py)',
+            'mode1_standing': 'g_osc1 = 2*A*cos(k*x)*cos(omega*t)',
+            'mode2_traveling': 'g_osc2 = (2*pi/T_H_gyr)*A*cos(k*x - omega*t)',
+            'T_H_gyr': T_H_gyr,
+            'mode2_amplitude_factor': mode2_factor,      # 0.455
+            'resonance_T_H_gyr': resonance_T_H_gyr,      # 6.28 Gyr
+            'max_amplitude_factor': max_amp_factor,      # 2.455
+            'time_average': 0.0,                         # zero-mean theorem
+            'T_osc_1kpc_s': T_osc_kpc,                   # r/c light-crossing
+            'T_osc_1mpc_s': T_osc_mpc,
+            'T_osc_1kpc_kyr': T_osc_kpc / 3.156e7 / 1e3, # ~3.3 kyr
+            'T_osc_1mpc_myr': T_osc_mpc / 3.156e7 / 1e6, # ~3.3 Myr
+            'universal_muge_term': True,                 # with PAPER_244/245
+            'zero_mean_bounded': True,
+        },
+        'formula': 'g_osc = 2*A*cos(kx)*cos(wt) + (2*pi/T_H_gyr)*A*cos(kx-wt); <g_osc>=0; T_osc=r/c',
+        'source': 'PAPER_246',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

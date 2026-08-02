@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.249.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.249.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.250.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.250.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1566%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-249-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1571%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-250-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.249.0 wiring campaign live**
+**UQFF systematic rebuild — v0.250.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.249.0)
+## What is currently shipped (v0.250.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 249 / 2,255** (22 ✓ · 227 ⚠ OPEN_RULING · 228 rulings queued) — universal MUGE fluid self-gravity Archimedes sub-term g_fluid=(4πG/3)·ρ·r; crossover r_c=1.17 pc (245)
+**Wired so far: 250 / 2,255** (23 ✓ · 227 ⚠ OPEN_RULING · 228 rulings queued) — universal MUGE dual-mode oscillatory gravity g_osc (standing + Hubble traveling); Mode-2 factor 0.455, ⟨g_osc⟩=0 (246)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -308,6 +308,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_243 | NGC 3603 Full MUGE Cavity Pressure | 10-term MUGE; M(t)=M₀(1+Ṁ·e^-t/τ)=1.607 M₀; additive P(t)/ρ_fl=2.43e12 m/s²; T4 ρ_UA/ρ_SCm=10 exact; CLEAN |
 | PAPER_244 | MUGE Quantum Uncertainty Sub-Term | universal g_Q=(ℏ/√(Δx·Δp))·β·(2π/t_H); in all 19 MUGE modules; g_Q_min=2.10e-34 m/s² floor; Q-228 |
 | PAPER_245 | MUGE Fluid Self-Gravity Archimedes | universal g_fluid=(4πG/3)·ρ_fl·r (mass-independent, linear); crossover r_c=1.17 pc; cluster 8.39e-14 m/s²; CLEAN |
+| PAPER_246 | MUGE Dual-Mode Oscillatory Gravity | universal g_osc = standing 2A·cos(kx)cos(ωt) + Hubble traveling; Mode-2 0.455, resonance 2π Gyr, ⟨g_osc⟩=0; CLEAN |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -588,7 +589,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.246.0 | Band 1: PAPER_242 | 246 |
 | v0.247.0 | Band 1: PAPER_243 | 247 |
 | v0.248.0 | Band 1: PAPER_244 | 248 |
-| **v0.249.0** ← current | Band 1: PAPER_245 | 249 |
+| v0.249.0 | Band 1: PAPER_245 | 249 |
+| **v0.250.0** ← current | Band 1: PAPER_246 | 250 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

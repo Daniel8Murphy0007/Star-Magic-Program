@@ -1,21 +1,24 @@
-v0.249.0 BAND 1: PAPER_245 wired - MUGE FLUID SELF-GRAVITY ARCHIMEDES (CLEAN)
+v0.250.0 BAND 1: PAPER_246 wired - MUGE DUAL-MODE OSCILLATORY GRAVITY (CLEAN)
 
-PAPER_245 (MUGE Fluid Self-Gravity Archimedes Buoyancy Sub-Term - Universal
-Gravitational Buoyancy, S62, grok_share_8d951e12 4th-pass, CondensedPhysics3.py)
-wired as one dispatch (CLEAN, WIRED). Companion universal term to g_Q (PAPER_244).
+PAPER_246 (MUGE Dual-Mode Oscillatory Gravity - Standing Wave and
+Hubble-Normalised Traveling Wave, S62, grok_share_8d951e12 4th-pass,
+CondensedPhysics3.py) wired as one dispatch (CLEAN, WIRED). Third universal MUGE
+sub-term (with g_Q PAPER_244, g_fluid PAPER_245).
 
-The universal MUGE fluid self-gravity Archimedes buoyancy sub-term:
-  g_fluid = (rho_fluid*V*g_grav)/M, V=(4/3)pi r^3, g_grav=GM/r^2
-simplifies (mass cancels) to mass-independent g_fluid = (4*pi*G/3)*rho_fluid*r
-(shell theorem). Linear Radius Theorem: linear in rho_fluid and r. Crossover
-radius r_c=(3M/(4pi*rho_fluid))^(1/3): below DPM-seeded dominates, above fluid.
+The universal MUGE dual-mode oscillatory gravity sub-term g_osc:
+- Mode 1 standing wave: g_osc1 = 2*A*cos(kx)*cos(wt)
+- Mode 2 Hubble-normalised traveling wave: g_osc2 = (2pi/T_H_gyr)*A*cos(kx-wt)
+- Total <g_osc> = 0 (Dual-Mode Zero-Mean Theorem); |g_osc|_max = A*(2+2pi/T_H)
 
-Numerics (reproduce): solar M, rho=1e-20 => r_c=3.62e16 m=1.17 pc; cluster ICM
-rho=1e-26, r=3e22 => g_fluid=8.39e-14 m/s^2 (~1% MUGE gravity at Mpc).
-4*pi*G/3 = 2.796e-10.
+k=1/r, omega=2pi c/r => T_osc = r/c (light-crossing time).
 
-CLEAN - r_c and cluster g_fluid reproduce. Appendix drift (VDS 1.894, kg/m^3,
-beta_i) auto-corrected per charter.
+Numerics (reproduce): Mode-2 factor 2pi/13.8 = 0.455 (z=0); Hubble resonance
+T_H_gyr = 2pi = 6.28 Gyr; |g_osc|_max = 2.455*A; T_osc = 3.3 kyr (1 kpc),
+3.3 Myr (1 Mpc).
 
-Gate: 1566/0. Registry 534 rows / 1138 edges / 249 ledgers (measured).
-Campaign: 249/2,255. Next: PAPER_246.
+CLEAN - all numerics reproduce. MILESTONE: 250/2,255 wired (quarter-way to the
+PAPER_500 audit stop). Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected
+per charter.
+
+Gate: 1571/0. Registry 535 rows / 1142 edges / 250 ledgers (measured).
+Campaign: 250/2,255. Next: PAPER_247.

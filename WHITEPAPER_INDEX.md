@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 249 (22 ✓, 227 ⚠ OPEN_RULING)
+- **Wired:** 250 (23 ✓, 227 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2005
+- **Not yet touched:** 2004
 
 ---
 
@@ -1504,7 +1504,7 @@
 | ✓ | PAPER_243 | NGC3603FullMUGECavityPressure | CLEAN
 | ⚠ | PAPER_244 | MUGE Quantum Uncertainty Gravity SubTerm Universal | Q-228
 | ✓ | PAPER_245 | MUGE Fluid Self Gravity Archimedes Buoyancy SubTerm | CLEAN
-| ⬜ | PAPER_246 | MUGE Dual Mode Oscillatory Gravity Standing Traveling Wave |
+| ✓ | PAPER_246 | MUGE Dual Mode Oscillatory Gravity Standing Traveling Wave | CLEAN
 | ⬜ | PAPER_247 | MUGE Merger Interaction Modulation Tidal Gravity Boost |
 | ⬜ | PAPER_248 | UQFF Source10 Batch OpenMP DPM Resonance Profiling |
 | ⬜ | PAPER_249 | UQFF CUDA GPU Tiled GEMM Multi System Acceleration |

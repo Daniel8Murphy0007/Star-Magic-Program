@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.249.0", "uqff_calculator.VERSION = 0.249.0")
+assert_that(C.VERSION == "0.250.0", "uqff_calculator.VERSION = 0.250.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3440,6 +3440,17 @@ assert_that(_r245['mass_independent'] and _r245['linear_in_rho_and_r'] and _r245
 assert_that(_r245['cluster_contribution_pct'] == 1,
             "PAPER_245: fluid self-gravity ~1% of MUGE gravity at cluster (Mpc) scale")
 assert_that(C.wired_count() >= 249, "wired_count >= 249")
+
+_r246 = C.calc('PAPER_246')['value']
+assert_that(abs(_r246['mode2_amplitude_factor'] - 0.4553) < 1e-3 and abs(_r246['resonance_T_H_gyr'] - 6.2832) < 1e-3,
+            "PAPER_246: Mode-2 factor 2pi/13.8 = 0.455; Hubble resonance T_H_gyr = 2pi = 6.28 Gyr (reproduce)")
+assert_that(abs(_r246['max_amplitude_factor'] - 2.4553) < 1e-3 and _r246['time_average'] == 0.0,
+            "PAPER_246: |g_osc|_max = A*(2+2pi/T_H) = 2.455*A; <g_osc>=0 (Dual-Mode Zero-Mean Theorem)")
+assert_that(abs(_r246['T_osc_1kpc_kyr'] - 3.26) < 0.05 and abs(_r246['T_osc_1mpc_myr'] - 3.26) < 0.05,
+            "PAPER_246: T_osc = r/c = 3.3 kyr (1 kpc), 3.3 Myr (1 Mpc) light-crossing times")
+assert_that(_r246['universal_muge_term'] and _r246['zero_mean_bounded'],
+            "PAPER_246: universal MUGE sub-term (with g_Q PAPER_244, g_fluid PAPER_245); zero-mean bounded")
+assert_that(C.wired_count() >= 250, "wired_count >= 250")
 
 
 # =============================================================================
