@@ -1,23 +1,25 @@
-v0.258.0 BAND 1: PAPER_254 wired - KEPLER SNR 1604 DISTANCE-INDEPENDENCE (Q-234)
+v0.259.0 BAND 1: PAPER_255 wired - PSR J0030 NS-DENSITY BUOYANCY (Q-235)
 
-PAPER_254 (Kepler's Supernova Remnant 1604 CE - Force Equivalence Class
-Historical Anchor, S72c, CondensedPhysics3.py) wired as one dispatch
-(OPEN_RULING, Q-234). 4th positive member + distance-independence anchor of the
-omega0=1e-12 Force Equivalence Class; completes the 5-system Chandra series.
+PAPER_255 (PSR J0030+0451 Isolated Neutron Star - Density Regime Positive
+Buoyancy and F_neutron Dominance, S72d, ALMA Cycle 12, CondensedPhysics3.py)
+wired as one dispatch (OPEN_RULING, Q-235). First isolated-pulsar class;
+introduces the neutron-star-density regime.
 
-Distance-Independence Theorem: F_U_Bi=+2.11e208 N identical to SN 1006 despite
-3x distance, 2.4x age, 10x lower L_X, fastest ejecta (4000 km/s).
+Neutron-dominant hierarchy: NS-density cross-section s_n makes F_neutron=
+k_neutron*s_n the dominant term (~9 orders above F_LENR) - hierarchy shifts
+LENR-dominant -> neutron-dominant.
 
-Reproducible (all clean): L_X inverse-square (2.15/6.4)^2=0.11; F_DE=k_DE*L_X
-(Kepler 10 N / SN 1006 100 N); F_LENR/F_DE Kepler 6.17e38 > SN 1006 6.17e37;
-E_shock=8e-11 J/m3 (1.8x SN 1006); age 420 yr=1.325e10 s.
+Positive buoyancy preserved: despite ~9-order F_neutron dominance and compact
+r=1e4 m, F_U_Bi ~ +2.53e208 N (F0=1.83e71 vacuum anchor keeps x2>0). Class
+extends 14 orders in radius, ~53 orders in s_n (omega0 sole determinant).
 
-5-system Chandra series complete: SN 1006 / Eta Carinae / Chandra Archive /
-Kepler (omega0=1e-12) -> +2.11e208 N; Sgr A* (omega0=1e-15) -> -8.31e211 N.
+Reproducible: M=1.4 M_sun=2.786e30 kg; surface gravity G*M/r^2=1.86e12 m/s^2;
+DPM_resonance=2*mu_B*1e8/(hbar*1e-12)=1.76e31 (reproduces here, no drift).
 
-Q-234 (extends Q-230/232): only documented F_U_Bi=+2.11e208 invariant carries
-over; all new computable content reproduces. Appendix drift (VDS 1.894, kg/m^3,
-beta_i) auto-corrected per charter.
+Q-235: (a) F_U_Bi=+2.53e208 documented NS-regime value (vs class +2.11e208);
+(b) term_gravity 1.86e12 (paper 1.86e6 mojibake); (c) s_n/F_neutron exponents
+mojibake-inconsistent (anchor F_neutron/F_LENR ~9 orders). DPM reproduces.
+Wired derived-correct + benchmark. Appendix drift auto-corrected per charter.
 
-Gate: 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured).
-Campaign: 258/2,255. Next: PAPER_255.
+Gate: 1616/0. Registry 544 rows / 1172 edges / 259 ledgers (measured).
+Campaign: 259/2,255. Next: PAPER_256.

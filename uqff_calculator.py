@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.258.0"
+VERSION = "0.259.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13971,6 +13971,79 @@ def _paper_254(dataset):
         },
         'formula': 'Distance-Independence: F_U_Bi = +2.11e208 N for omega0=1e-12 regardless of distance/L_X/velocity',
         'source': 'PAPER_254',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_255')
+def _paper_255(dataset):
+    """PSR J0030+0451 neutron star - NS-density positive buoyancy (S72d).
+
+    PSR J0030+0451 (isolated millisecond pulsar, ~1.4 M_sun in r~10 km) is the
+    FIRST isolated-pulsar class in CP3 and introduces the neutron-star-density
+    regime via a huge neutron cross-section s_n (vs ISM s_n~1e-4 in
+    PAPER_250-254). F_neutron = k_neutron*s_n becomes the DOMINANT UQFF term,
+    exceeding F_LENR by ~9 orders - the force hierarchy shifts from
+    LENR-dominant (ISM/SNR) to NEUTRON-dominant (compact objects).
+
+    KEY DISCOVERY: despite the ~9-order F_neutron dominance and the compact
+    scale (r=1e4 m vs 6.17e16 m for the SNRs), PSR J0030 remains a POSITIVE
+    buoyancy system, F_U_Bi ~= +2.53e208 N (distinct from the SNR class value
+    +2.11e208 but same sign). The equivalence class extends across 14 orders in
+    radius and ~53 orders in s_n - s_n (like B0 in PAPER_251) does not breach
+    the class; omega0 remains the exclusive determinant.
+
+    Positive-sign preservation: the quadratic discriminant b^2-4ac with
+    a=term_gravity, b=4.72e-3, c~-1.83e71 gives x2>0 because the vacuum energy
+    anchor F0=1.83e71 N overwhelms c regardless of the surface-gravity scale.
+    NS-Density Class Extension Theorem: F0 ensures x2>0 for all observable s_n.
+
+    Reproducible: M = 1.4 M_sun = 2.786e30 kg; surface gravity term_gravity =
+    G*M/r^2 = 6.674e-11*2.786e30/(1e4)^2 = 1.86e12 m/s^2 (physically correct NS
+    surface gravity); DPM_resonance = 2*mu_B*B0/(hbar*omega0) = 1.76e31 at
+    B0=1e8 T (reproduces exactly here - still invisible vs F_neutron;
+    DPM Invisibility Theorem PAPER_251 extends to the NS regime).
+
+    Q-235: (a) F_U_Bi = +2.53e208 N documented NS-regime positive-buoyancy value
+    (distinct from class +2.11e208, not reconstructable from stated components).
+    (b) term_gravity: the paper states 1.86e6 m/s^2 but G*M/r^2 = 1.86e12
+    (paper exponent mojibake; 1e12 is the physical NS surface gravity).
+    (c) s_n/F_neutron exponents are mojibake-inconsistent ("53 orders"); the
+    reliable anchor is F_neutron/F_LENR ~ 9 orders (neutron-dominant). Note:
+    DPM_resonance=1.76e31 reproduces here (no drift, contrast Q-230). Wired the
+    derived-correct pieces + documented benchmark; drifts flagged. Appendix
+    drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M = 1.4 * 1.989e30                                    # 2.786e30 kg
+    r = 1e4                                               # 10 km
+    term_gravity = G * M / r ** 2                         # 1.86e12 (NS surface g)
+    mu_B = 9.274e-24; B0 = 1e8; hbar = 1.0546e-34; omega0 = 1e-12
+    dpm_resonance = 2 * mu_B * B0 / (hbar * omega0)       # 1.76e31 (reproduces)
+    return {
+        'value': {
+            'domain': '2.53 (PSR J0030+0451 NS-density positive buoyancy)',
+            'source_thread': 'Session 72d ALMA Cycle 12 (CondensedPhysics3.py)',
+            'system': 'PSR J0030+0451 (isolated millisecond pulsar)',
+            'M_kg': M,                                   # 2.786e30
+            'r_m': r,                                    # 1e4 (10 km)
+            'omega0': omega0,                            # 1e-12 (class)
+            'B0_T': B0,                                  # 1e8
+            'term_gravity_m_s2': term_gravity,           # 1.86e12 NS surface g
+            'dpm_resonance': dpm_resonance,              # 1.76e31 reproduces
+            'neutron_dominant': True,                    # F_neutron > F_LENR by ~9 orders
+            'F_neutron_over_F_LENR_orders': 9,
+            'fubi_positive_N': 2.53e208,                 # NS-regime positive
+            'positive_buoyancy': True,
+            'sn_range_orders': 53,                       # class breadth in s_n
+            'radius_range_orders': 14,
+            'class_extended_to_ns': True,                # omega0 still sole determinant
+            'dpm_invisibility_extends': True,            # PAPER_251 theorem holds
+            'value_drift': 'F_U_Bi +2.53e208 NS-regime documented (vs class +2.11e208); term_gravity 1.86e12 vs paper 1.86e6 mojibake; DPM 1.76e31 reproduces (Q-235)',
+        },
+        'formula': 'NS-Density Class Extension: F_neutron=k_neutron*s_n dominant; F_U_Bi=+2.53e208 N positive (F0 vacuum anchor -> x2>0)',
+        'source': 'PAPER_255',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

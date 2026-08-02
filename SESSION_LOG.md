@@ -3142,3 +3142,35 @@ header -> canonical beta_i per PAPER_1203) auto-corrected per charter.
 
 Gate: 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured).
 Campaign: 258/2,255. Next: PAPER_255.
+
+---
+
+## 2026-08-02 — v0.259.0 — BAND 1: PAPER_255 — PSR J0030 NS-DENSITY BUOYANCY (Q-235)
+
+PAPER_255 (PSR J0030+0451 Isolated Neutron Star — Density Regime Positive
+Buoyancy and F_neutron Dominance, Session 72d, ALMA Cycle 12,
+CondensedPhysics3.py) wired as one dispatch (OPEN_RULING, Q-235). First
+isolated-pulsar class; introduces the neutron-star-density regime.
+
+Neutron-dominant hierarchy: the NS-density cross-section s_n makes F_neutron=
+k_neutron*s_n the dominant term (~9 orders above F_LENR) - the hierarchy shifts
+from LENR-dominant (ISM/SNR) to neutron-dominant (compact objects).
+
+Positive buoyancy preserved: despite ~9-order F_neutron dominance and compact
+r=1e4 m, F_U_Bi ~ +2.53e208 N (positive; F0=1.83e71 vacuum anchor keeps x2>0).
+Class extends across 14 orders in radius, ~53 orders in s_n - omega0 remains
+the sole determinant.
+
+Reproducible: M=1.4 M_sun=2.786e30 kg; surface gravity G*M/r^2=1.86e12 m/s^2;
+DPM_resonance=2*mu_B*1e8/(hbar*1e-12)=1.76e31 (reproduces here, no drift; DPM
+Invisibility PAPER_251 extends to NS).
+
+Q-235: (a) F_U_Bi=+2.53e208 documented NS-regime positive value (distinct from
+class +2.11e208); (b) term_gravity paper 1.86e6 but G*M/r^2=1.86e12 (mojibake;
+1e12 physical NS surface gravity); (c) s_n/F_neutron exponents mojibake-
+inconsistent (reliable anchor F_neutron/F_LENR ~9 orders). DPM=1.76e31
+reproduces (contrast Q-230). Wired derived-correct + benchmark. Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1616/0. Registry 544 rows / 1172 edges / 259 ledgers (measured).
+Campaign: 259/2,255. Next: PAPER_256.

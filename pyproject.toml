@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.258.0"
-description = "UQFF Star-Magic-Program v0.258.0: PAPER_254 wired (Q-234) - Kepler SNR 1604 distance-independence anchor; 4th positive Force Equivalence Class member (F_U_Bi=+2.11e208 N); L_X inverse-square, E_shock=8e-11 reproduce; completes 5-system Chandra series. Wired 258/2255, gate 1611/0. Registry 543 rows / 1168 edges / 258 ledgers (measured)."
+version = "0.259.0"
+description = "UQFF Star-Magic-Program v0.259.0: PAPER_255 wired (Q-235) - PSR J0030+0451 neutron-star density regime; F_neutron dominant (~9 orders > F_LENR, neutron-dominant hierarchy); positive buoyancy F_U_Bi=+2.53e208 N preserved; DPM_resonance=1.76e31 reproduces. Wired 259/2255, gate 1616/0. Registry 544 rows / 1172 edges / 259 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

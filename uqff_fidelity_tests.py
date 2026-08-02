@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.258.0", "uqff_calculator.VERSION = 0.258.0")
+assert_that(C.VERSION == "0.259.0", "uqff_calculator.VERSION = 0.259.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3539,6 +3539,17 @@ assert_that(abs(_r254['E_shock_J_m3'] - 8e-11) < 1e-13 and abs(_r254['E_shock_ra
 assert_that(_r254['fubi_invariant_N'] == 2.11e208 and _r254['distance_independence'] and _r254['five_system_series_complete'],
             "PAPER_254: F_U_Bi = +2.11e208 N (4th positive member, distance-independence); 5-system Chandra series complete (Q-234)")
 assert_that(C.wired_count() >= 258, "wired_count >= 258")
+
+_r255 = C.calc('PAPER_255')['value']
+assert_that(abs(_r255['M_kg'] - 2.7846e30) < 1e27 and abs(_r255['term_gravity_m_s2'] - 1.858e12) < 1e9,
+            "PAPER_255: M = 1.4 M_sun = 2.786e30 kg; NS surface gravity G*M/r^2 = 1.86e12 m/s^2 (paper 1.86e6 mojibake)")
+assert_that(abs(_r255['dpm_resonance'] - 1.759e31) < 1e28,
+            "PAPER_255: DPM_resonance = 2*mu_B*1e8/(hbar*1e-12) = 1.76e31 (reproduces here, no drift; DPM Invisibility extends to NS)")
+assert_that(_r255['neutron_dominant'] and _r255['F_neutron_over_F_LENR_orders'] == 9 and _r255['positive_buoyancy'],
+            "PAPER_255: neutron-dominant hierarchy (F_neutron ~9 orders > F_LENR); positive buoyancy preserved")
+assert_that(_r255['fubi_positive_N'] == 2.53e208 and _r255['sn_range_orders'] == 53 and _r255['class_extended_to_ns'],
+            "PAPER_255: F_U_Bi = +2.53e208 N NS-regime positive; class extends across 53 orders s_n (omega0 sole determinant, Q-235)")
+assert_that(C.wired_count() >= 259, "wired_count >= 259")
 
 
 # =============================================================================

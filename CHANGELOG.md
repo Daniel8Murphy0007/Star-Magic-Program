@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.259.0] — 2026-08-02 — BAND 1: PAPER_255 — PSR J0030 NS-DENSITY BUOYANCY (Q-235)
+
+### Added
+- **PAPER_255 dispatch** — PSR J0030+0451 isolated millisecond pulsar (Session 72d, ALMA Cycle 12). First isolated-pulsar class; introduces the neutron-star-density regime.
+  - **Neutron-dominant hierarchy:** the NS-density cross-section s_n makes F_neutron = k_neutron·s_n the dominant term (~9 orders above F_LENR) — the hierarchy shifts from LENR-dominant (ISM/SNR) to neutron-dominant (compact objects).
+  - **Positive buoyancy preserved:** despite ~9-order F_neutron dominance and compact r=1e4 m, F_U_Bi ≈ +2.53e208 N (positive; the F0=1.83e71 vacuum anchor keeps x2>0). Class extends across 14 orders in radius, ~53 orders in s_n — ω0 remains the sole determinant.
+  - **Reproducible:** M = 1.4 M_sun = 2.786e30 kg; surface gravity G·M/r² = 1.86e12 m/s²; DPM_resonance = 2·μ_B·1e8/(ℏ·1e-12) = 1.76e31 (reproduces here — no drift, DPM Invisibility extends to NS).
+- Gate +4 assertions (1611 → 1616, 0 failures).
+- Registry: +1 row (544), +4 edges (1172), +1 citation (259).
+
+### Ruling filed
+- **Q-235** — (a) F_U_Bi=+2.53e208 documented NS-regime positive value (distinct from class +2.11e208); (b) term_gravity paper states 1.86e6 but G·M/r² = 1.86e12 (mojibake; 1e12 is physical NS surface gravity); (c) s_n/F_neutron exponents mojibake-inconsistent (reliable anchor: F_neutron/F_LENR ~9 orders). DPM_resonance=1.76e31 reproduces here (contrast Q-230). Wired derived-correct pieces + benchmark.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.258.0] — 2026-08-02 — BAND 1: PAPER_254 — KEPLER SNR 1604 DISTANCE-INDEPENDENCE (Q-234)
 
 ### Added

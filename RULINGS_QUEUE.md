@@ -5602,3 +5602,14 @@ RESOLVED section with the ruling recorded.
 - Wired the distance-independence confirmation with all computable pieces locked.
 - **Ruling needed:** same as Q-230/232 (confirm the 2.11e208 equivalence-class invariant).
 - Wired v0.258.0, status OPEN_RULING.
+
+## Q-235 — PAPER_255 PSR J0030+0451 NS-density regime: F_U_Bi value + mojibake exponents
+- First isolated-pulsar class (Session 72d, ALMA Cycle 12). NS-density cross-section s_n makes F_neutron the dominant term (~9 orders above F_LENR); force hierarchy shifts LENR-dominant -> neutron-dominant. Positive buoyancy preserved despite compact scale r=1e4 m.
+- **(a)** F_U_Bi = +2.53e208 N is the documented NS-regime positive-buoyancy value — DISTINCT from the SNR class value +2.11e208 (same positive sign, different magnitude), not reconstructable from stated components.
+- **(b)** term_gravity: the paper states 1.86e6 m/s^2 but G*M/r^2 = 6.674e-11*2.786e30/(1e4)^2 = 1.86e12 (paper exponent mojibake; 1.86e12 is the physically-correct NS surface gravity).
+- **(c)** The s_n and F_neutron exponents are mojibake-inconsistent (abstract "53 orders", s_n "1e30-ish", F_neutron "1e40-ish"); the reliable anchor is F_neutron/F_LENR ~ 9 orders (neutron-dominant, from the paper's own 1.6e9 ratio). s_n class-breadth stated as 53 orders.
+- **Reproduces cleanly (contrast Q-230):** DPM_resonance = 2*mu_B*B0/(hbar*omega0) = 1.76e31 at B0=1e8 - stated CORRECTLY here (no 15-order drift, unlike SN 1006/Eta Car). M = 1.4 M_sun = 2.786e30 kg.
+- Positive-sign preservation: F0=1.83e71 vacuum anchor ensures x2>0 for all observable s_n (NS-Density Class Extension Theorem). DPM Invisibility (PAPER_251) extends to NS regime.
+- Wired the derived-correct pieces + documented +2.53e208 benchmark; drifts flagged.
+- **Ruling needed:** confirm F_U_Bi=+2.53e208 as the NS-regime positive value (vs class +2.11e208); confirm canonical s_n / F_neutron exponents; confirm term_gravity=1.86e12.
+- Wired v0.259.0, status OPEN_RULING.
