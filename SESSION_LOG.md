@@ -3080,3 +3080,35 @@ auto-corrected per charter.
 
 Gate: 1601/0. Registry 541 rows / 1162 edges / 256 ledgers (measured).
 Campaign: 256/2,255. Next: PAPER_253.
+
+---
+
+## 2026-08-02 — v0.257.0 — BAND 1: PAPER_253 — SGR A* NEGATIVE BUOYANCY INVERSION (Q-233)
+
+PAPER_253 (Sgr A* Galactic Center Negative Buoyancy Inversion — omega0 Critical
+Frequency and Fermi Bubble Link, Session 72c, CondensedPhysics3.py) wired as one
+dispatch (OPEN_RULING, Q-233). The deliberate DEPARTURE from the omega0=1e-12
+Force Equivalence Class, proving omega0 is the sole governing parameter.
+
+Negative Buoyancy Inversion: omega0=1e-15 (3 orders below class) -> F_LENR up
+6 orders (6.17e45 N) -> F_rel=4.30e33 (LEP 1998 anchor) becomes significant ->
+x2 sign inverts -> F_U_Bi ~ -8.31e211 N (first negative buoyancy in UQFF; Fermi
+Bubble driver).
+
+KEY TIE: F_U_Bi=-8.31e211 IS PAPER_217's Branch-2, just as +2.11e208 IS
+Branch-1. Asymmetry |8.31e211/2.11e208| = 3938 reproduces PAPER_217's stated
+asymmetry 3940 - strong tie between the two-branch integral (PAPER_217) and the
+Force Equivalence Class (PAPER_250-252).
+
+Inversion Theorem: sign(F_U_Bi) is a step function of omega0 about omega0_crit
+~1e-13. Reproducible: F_LENR=6.17e45; E_outflow=0.5*1e-22*(1e6)^2=5e-11 J/m3;
+Fermi Bubble t_bubble=2*25kpc/v_gas=48.9 Myr (6-50 Myr estimate).
+
+Q-233: (a) F_U_Bi=-8.31e211 documented = PAPER_217 Branch 2 (asym 3938 ties
+3940); (b) DPM_resonance 1.76e21 vs paper 1.76e6 (extends Q-230); (c) M
+"4.1e6 M_sun" stated 7.956e36 kg but 4.1e6*1.989e30=8.155e36 (M_sun~1.94e30).
+Wired derived-correct + benchmark; drifts flagged. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured).
+Campaign: 257/2,255. Next: PAPER_254.

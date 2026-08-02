@@ -1161,3 +1161,6 @@ observable,eta_carinae_dpm_invisibility,observable,source10_batch_dpm_calibratio
 observable,chandra_composite_equivalence_class,paper,PAPER_252,Chandra composite equivalence-class confirmation
 observable,chandra_composite_equivalence_class,observable,sn1006_typeia_snr_fubi,confirms PAPER_250 founder 2.11e208
 observable,chandra_composite_equivalence_class,observable,eta_carinae_dpm_invisibility,confirms PAPER_251 member 2.11e208
+observable,sgra_negative_buoyancy_inversion,paper,PAPER_253,Sgr A* negative buoyancy class departure
+observable,sgra_negative_buoyancy_inversion,observable,f_u_bi_i_two_branch,-8.31e211 = PAPER_217 Branch2 (asym 3938 ties 3940)
+observable,sgra_negative_buoyancy_inversion,observable,chandra_composite_equivalence_class,omega0<omega0_crit departs class (PAPER_252)

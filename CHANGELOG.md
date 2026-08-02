@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.257.0] — 2026-08-02 — BAND 1: PAPER_253 — SGR A* NEGATIVE BUOYANCY INVERSION (Q-233)
+
+### Added
+- **PAPER_253 dispatch** — Sgr A* Galactic-Centre negative buoyancy inversion (Session 72c). The deliberate DEPARTURE from the ω0=1e-12 Force Equivalence Class, proving ω0 is the sole governing parameter.
+  - **Negative Buoyancy Inversion:** ω0=1e-15 (3 orders below class) → F_LENR up 6 orders (6.17e45 N) → F_rel=4.30e33 (LEP 1998 anchor) becomes significant → x2 sign inverts → F_U_Bi ≈ **−8.31e211 N** (first negative buoyancy in UQFF; Fermi Bubble driver).
+  - **KEY TIE:** F_U_Bi=−8.31e211 IS PAPER_217's Branch-2, just as +2.11e208 IS Branch-1. The asymmetry |8.31e211/2.11e208| = 3938 reproduces PAPER_217's stated asymmetry 3940 — a strong tie between the two-branch integral (PAPER_217) and the Force Equivalence Class (PAPER_250–252).
+  - **Inversion Theorem:** sign(F_U_Bi) is a step function of ω0 about ω0_crit ~ 1e-13.
+  - **Reproducible:** F_LENR=6.17e45; E_outflow=0.5·1e-22·(1e6)²=5e-11 J/m³; Fermi Bubble t_bubble=2·25 kpc/v_gas=48.9 Myr (matches 6–50 Myr estimate).
+- Gate +4 assertions (1601 → 1606, 0 failures).
+- Registry: +1 row (542), +3 edges (1165), +1 citation (257).
+
+### Ruling filed
+- **Q-233** — (a) F_U_Bi=−8.31e211 documented benchmark = PAPER_217 Branch 2 (asymmetry 3938 ties 3940); (b) DPM_resonance computes 1.76e21 (paper 1.76e6, extends Q-230); (c) M "4.1e6 M_sun" stated 7.956e36 kg but 4.1e6·1.989e30 = 8.155e36 (paper used M_sun~1.94e30). Wired derived-correct pieces + benchmark; drifts flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.256.0] — 2026-08-02 — BAND 1: PAPER_252 — CHANDRA COMPOSITE EQUIVALENCE CLASS (Q-232)
 
 ### Added

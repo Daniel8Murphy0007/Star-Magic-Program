@@ -5583,3 +5583,13 @@ RESOLVED section with the ruling recorded.
 - Wired the equivalence-class confirmation with all computable pieces locked; benchmark/drift are already-known (Q-230/231).
 - **Ruling needed:** same as Q-230/231 (confirm the 2.11e208 equivalence-class invariant + derived F_LENR); no new independent issue.
 - Wired v0.256.0, status OPEN_RULING.
+
+## Q-233 — PAPER_253 Sgr A* negative buoyancy: ties PAPER_217 Branch 2 + minor drifts
+- Sgr A* (omega0=1e-15, 3 orders below the class) is the class DEPARTURE: F_LENR jumps 6 orders (6.17e45), F_rel=4.30e33 becomes significant, x2 sign inverts -> F_U_Bi ~ -8.31e211 N (first NEGATIVE buoyancy in UQFF, Fermi Bubble driver).
+- **(a) KEY TIE:** F_U_Bi = -8.31e211 N documented benchmark IS PAPER_217's Branch-2 (negative creation) value, just as +2.11e208 IS PAPER_217 Branch-1. The Sgr A*/class asymmetry |8.31e211/2.11e208| = 3938 reproduces PAPER_217's stated asymmetry 3940 - strong internal-consistency tie between two-branch F_U_Bi_i (PAPER_217) and the Force Equivalence Class (PAPER_250-252).
+- **(b)** DPM_resonance = 2*mu_B*B0/(hbar*omega0) computes to 1.76e21 (omega0=1e-15) but the paper states 1.76e6 (extends Q-230 drift; mantissa 1.76 ok).
+- **(c)** M "4.1e6 M_sun" stated as 7.956e36 kg, but 4.1e6*1.989e30 = 8.155e36 (paper used M_sun~1.94e30). Minor mass-label mismatch.
+- Reproducible and locked (all clean): F_LENR(Sgr A*) = 1e-10*(7.854e12/1e-15)^2 = 6.17e45 (paper states correctly here); E_outflow = 0.5*1e-22*(1e6)^2 = 5e-11 J/m3; t_bubble = 2*25kpc/v_gas = 48.9 Myr; F_rel = 4.30e33 LEP 1998 anchor; sign(F_U_Bi) step function of omega0 about omega0_crit~1e-13.
+- Wired the derived-correct pieces + documented -8.31e211 benchmark; drifts flagged.
+- **Ruling needed:** confirm F_U_Bi=-8.31e211 = PAPER_217 Branch 2 (negative-buoyancy branch of the two-branch integral); confirm DPM_resonance derived vs stated; confirm M=8.155e36 kg (4.1e6 M_sun canonical).
+- Wired v0.257.0, status OPEN_RULING.

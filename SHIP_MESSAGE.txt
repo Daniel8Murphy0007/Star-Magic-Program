@@ -1,23 +1,23 @@
-v0.256.0 BAND 1: PAPER_252 wired - CHANDRA COMPOSITE EQUIVALENCE CLASS (Q-232)
+v0.257.0 BAND 1: PAPER_253 wired - SGR A* NEGATIVE BUOYANCY INVERSION (Q-233)
 
-PAPER_252 (Chandra Archive Multi-System Composite F_U_Bi_i - Force Equivalence
-Class Confirmation, S72c, CondensedPhysics3.py) wired as one dispatch
-(OPEN_RULING, Q-232). Third confirmation of the omega0=1e-12 Force Equivalence
-Class.
+PAPER_253 (Sgr A* Galactic Center Negative Buoyancy Inversion - omega0 Critical
+Frequency and Fermi Bubble Link, S72c, CondensedPhysics3.py) wired as one
+dispatch (OPEN_RULING, Q-233). The deliberate DEPARTURE from the omega0=1e-12
+Force Equivalence Class.
 
-Composite Chandra dataset (SN 1987A + Eta Carinae + Helix) spanning 4 orders
-L_X. Force Equivalence Conservation Theorem: F_U_Bi is a conserved topological
-invariant determined SOLELY by omega0 - +2.11e208 N confirmed by 5 systems
-across 4 decades L_X, 3 decades rho, 4 decades age. Corollary: averaging
-preserves the class.
+Negative Buoyancy Inversion: omega0=1e-15 (3 orders below class) -> F_LENR up
+6 orders (6.17e45) -> F_rel=4.30e33 significant -> x2 sign inverts -> F_U_Bi ~
+-8.31e211 N (first negative buoyancy; Fermi Bubble driver).
 
-Reproducible (all clean): composite geometric-mean L_X=(1e31*1e35)^0.5=1e33 W;
-F_DE=k_DE*L_X (Helix 10 N / EtaCar 1e5 N / composite 1e3 N); F_LENR/F_DE range
-6.17e34 to 6.17e38 (correct F_LENR=6.17e39); omega_act=1885 rad/s age-independence.
+KEY TIE: F_U_Bi=-8.31e211 IS PAPER_217 Branch-2, +2.11e208 IS Branch-1;
+asymmetry |8.31e211/2.11e208|=3938 reproduces PAPER_217's 3940.
 
-Q-232 (extends Q-230/231): only documented F_U_Bi=2.11e208 invariant + isolated
-F_LENR "6.17e30" label carry over; the paper's own ratios use correct 6.17e39.
-Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Inversion Theorem: sign(F_U_Bi) step function of omega0 about omega0_crit~1e-13.
+Reproducible: F_LENR=6.17e45; E_outflow=5e-11 J/m3; Fermi Bubble t=48.9 Myr.
 
-Gate: 1601/0. Registry 541 rows / 1162 edges / 256 ledgers (measured).
-Campaign: 256/2,255. Next: PAPER_253.
+Q-233: (a) F_U_Bi=-8.31e211=PAPER_217 Branch2 (asym 3938~3940); (b) DPM 1.76e21
+vs paper 1.76e6 (Q-230); (c) M 8.155e36 vs stated 7.956e36. Wired derived-correct
++ benchmark. Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected.
+
+Gate: 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured).
+Campaign: 257/2,255. Next: PAPER_254.

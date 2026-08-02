@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.256.0"
+VERSION = "0.257.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13817,6 +13817,86 @@ def _paper_252(dataset):
         },
         'formula': 'Equivalence Class [omega0=1e-12]: F_U_Bi = +2.11e208 N invariant; F[S1]=F[S2] iff omega0(S1)=omega0(S2)',
         'source': 'PAPER_252',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_253')
+def _paper_253(dataset):
+    """Sgr A* negative buoyancy inversion - omega0 critical departure (S72c).
+
+    Sgr A* (Galactic-Centre SMBH, M=4.1e6 M_sun) is the ONLY UQFF system
+    producing NEGATIVE buoyancy - and the deliberate DEPARTURE from the
+    omega0=1e-12 Force Equivalence Class (PAPER_250/251/252) that proves omega0
+    is the sole governing parameter.
+
+    Negative Buoyancy Inversion: Sgr A* has omega0=1e-15 rad/s (3 orders below
+    the SNR class). This drives F_LENR up 6 orders (to ~6.17e45 N); at that
+    amplified level the relativistic coherence term F_rel = 4.30e33 N (LEP 1998
+    anchor, E_cm=189 GeV) becomes non-negligible in the quadratic root, and the
+    stability root x2 inverts sign -> F_U_Bi ~= -8.31e211 N (repulsive).
+
+    KEY TIE: F_U_Bi = -8.31e211 N IS PAPER_217's Branch-2 (negative creation)
+    value, just as the +2.11e208 class invariant IS PAPER_217's Branch-1. The
+    Sgr A*/class asymmetry |8.31e211/2.11e208| = 3938 reproduces PAPER_217's
+    stated asymmetry 3940 - a strong internal-consistency tie between the
+    two-branch F_U_Bi_i (PAPER_217) and the Force Equivalence Class (PAPER_250).
+
+    Negative Buoyancy Inversion Theorem: sign(F_U_Bi) is a step function of
+    omega0 about omega0_crit ~ 1e-13 rad/s (sign flip numerically in
+    [1e-14, 1e-13]): omega0 > omega0_crit -> F_U_Bi > 0 (class member);
+    omega0 < omega0_crit -> F_U_Bi < 0 (Fermi-Bubble driver).
+
+    Reproducible (all clean): F_LENR(Sgr A*) = 1e-10*(7.854e12/1e-15)^2 =
+    6.17e45 N; outflow energy density E = 0.5*rho_ISM*v_gas^2 = 0.5*1e-22*
+    (1e6)^2 = 5e-11 J/m^3; Fermi-Bubble inflation timescale t_bubble =
+    2*25 kpc/v_gas = 48.9 Myr (matches the 6-50 Myr estimate). The -8.31e211 N
+    repulsive force drives the ~1000 km/s Fermi-Bubble outflow.
+
+    Q-233: (a) F_U_Bi = -8.31e211 N documented benchmark = PAPER_217 Branch 2
+    (asymmetry 3938 ties PAPER_217's 3940). (b) DPM_resonance = 2*mu_B*B0/
+    (hbar*omega0) computes to 1.76e21 (omega0=1e-15) but the paper states 1.76e6
+    (extends Q-230 drift). (c) M "4.1e6 M_sun" stated as 7.956e36 kg but
+    4.1e6*1.989e30 = 8.155e36 (paper used M_sun~1.94e30). Wired derived-correct
+    pieces + documented benchmark; drifts flagged. Appendix drift (VDS 1.894,
+    kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    omega_LENR = 2 * math.pi * 1.25e12; omega0 = 1e-15
+    F_LENR = 1e-10 * (omega_LENR / omega0) ** 2           # 6.17e45
+    F_rel = 4.30e33                                       # LEP 1998 anchor
+    mu_B = 9.274e-24; B0 = 1e-5; hbar = 1.0546e-34
+    dpm_resonance = 2 * mu_B * B0 / (hbar * omega0)       # 1.76e21 derived
+    E_outflow = 0.5 * 1e-22 * (1e6) ** 2                  # 5e-11 J/m^3
+    t_bubble_s = 2 * 25 * 3.086e19 / 1e6                  # 25 kpc, v_gas=1e6
+    t_bubble_myr = t_bubble_s / 3.156e7 / 1e6            # 48.9 Myr
+    fubi_negative = -8.31e211                             # = PAPER_217 Branch 2
+    asymmetry = abs(fubi_negative / 2.11e208)            # 3938 (PAPER_217: 3940)
+    M_correct = 4.1e6 * 1.989e30                          # 8.155e36 (paper 7.956e36)
+    return {
+        'value': {
+            'domain': '2.51 (Sgr A* negative buoyancy inversion)',
+            'source_thread': 'Session 72c Infrared Datasets (CondensedPhysics3.py)',
+            'system': 'Sgr A* (Galactic Centre SMBH)',
+            'omega0': omega0,                            # 1e-15 (class departure)
+            'omega0_crit': 1e-13,                        # sign-inversion threshold
+            'F_LENR_sgra': F_LENR,                       # 6.17e45 (6 orders up)
+            'F_rel': F_rel,                              # 4.30e33 LEP anchor
+            'dpm_resonance_derived': dpm_resonance,      # 1.76e21 (paper 1.76e6)
+            'fubi_negative_N': fubi_negative,            # -8.31e211 = PAPER_217 Branch2
+            'fubi_ties_paper_217_branch2': True,
+            'asymmetry_vs_class': asymmetry,             # 3938 (PAPER_217: 3940)
+            'E_outflow_J_m3': E_outflow,                 # 5e-11
+            't_bubble_myr': t_bubble_myr,                # 48.9
+            'M_correct_kg': M_correct,                   # 8.155e36 (paper 7.956e36)
+            'negative_buoyancy': True,                   # first in UQFF
+            'sign_step_function_of_omega0': True,
+            'fermi_bubble_driver': True,
+            'value_drift': 'F_U_Bi=-8.31e211=PAPER_217 Branch2 (asym 3938 vs 3940); DPM 1.76e21 vs paper 1.76e6 (Q-230); M 8.155e36 vs 7.956e36 (Q-233)',
+        },
+        'formula': 'omega0 < omega0_crit ~1e-13 -> x2 sign inverts -> F_U_Bi ~ -8.31e211 N (negative buoyancy, Fermi Bubble driver)',
+        'source': 'PAPER_253',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

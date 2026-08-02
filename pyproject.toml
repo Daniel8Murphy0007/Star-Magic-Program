@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.256.0"
-description = "UQFF Star-Magic-Program v0.256.0: PAPER_252 wired (Q-232) - Chandra composite (SN 1987A+Eta Car+Helix) confirms omega0=1e-12 Force Equivalence Class; F_U_Bi=+2.11e208 N invariant across 4 decades L_X (5 systems); geometric-mean L_X, F_DE, ratios reproduce. Wired 256/2255, gate 1601/0. Registry 541 rows / 1162 edges / 256 ledgers (measured)."
+version = "0.257.0"
+description = "UQFF Star-Magic-Program v0.257.0: PAPER_253 wired (Q-233) - Sgr A* negative buoyancy inversion (class departure, omega0=1e-15); first NEGATIVE F_U_Bi=-8.31e211 N = PAPER_217 Branch2 (asymmetry 3938 ties 3940); Fermi Bubble t=48.9 Myr, F_LENR=6.17e45 reproduce. Wired 257/2255, gate 1606/0. Registry 542 rows / 1165 edges / 257 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

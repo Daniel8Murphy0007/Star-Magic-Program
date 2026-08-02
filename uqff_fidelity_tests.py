@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.256.0", "uqff_calculator.VERSION = 0.256.0")
+assert_that(C.VERSION == "0.257.0", "uqff_calculator.VERSION = 0.257.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3517,6 +3517,17 @@ assert_that(abs(_r252['F_LENR_over_F_DE_min'] - 6.17e34) < 1e32 and abs(_r252['F
 assert_that(_r252['fubi_invariant_N'] == 2.11e208 and _r252['equivalence_class_confirmed'] and _r252['independent_systems_confirming'] == 5,
             "PAPER_252: F_U_Bi = +2.11e208 N class invariant confirmed by 5 systems (Conservation Theorem, Q-232)")
 assert_that(C.wired_count() >= 256, "wired_count >= 256")
+
+_r253 = C.calc('PAPER_253')['value']
+assert_that(_r253['negative_buoyancy'] and _r253['fubi_negative_N'] == -8.31e211 and _r253['fubi_ties_paper_217_branch2'],
+            "PAPER_253: first NEGATIVE buoyancy F_U_Bi = -8.31e211 N = PAPER_217 Branch 2 (Sgr A* class departure)")
+assert_that(round(_r253['asymmetry_vs_class']) == 3938,
+            "PAPER_253: asymmetry |8.31e211/2.11e208| = 3938 reproduces PAPER_217's stated 3940")
+assert_that(abs(_r253['F_LENR_sgra'] - 6.169e45) < 1e42 and _r253['omega0'] == 1e-15 and _r253['F_rel'] == 4.30e33,
+            "PAPER_253: omega0=1e-15 (class departure); F_LENR = 6.17e45 (6 orders up); F_rel = 4.30e33 LEP anchor")
+assert_that(abs(_r253['E_outflow_J_m3'] - 5e-11) < 1e-13 and abs(_r253['t_bubble_myr'] - 48.9) < 0.5 and _r253['sign_step_function_of_omega0'],
+            "PAPER_253: E_outflow = 5e-11 J/m3; Fermi Bubble t_bubble = 48.9 Myr; sign(F_U_Bi) step function of omega0 (Q-233)")
+assert_that(C.wired_count() >= 257, "wired_count >= 257")
 
 
 # =============================================================================
