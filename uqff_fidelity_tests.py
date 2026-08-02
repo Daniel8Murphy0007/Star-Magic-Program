@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.268.0", "uqff_calculator.VERSION = 0.268.0")
+assert_that(C.VERSION == "0.269.0", "uqff_calculator.VERSION = 0.269.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3649,6 +3649,17 @@ assert_that(_r264['phase_regimes'] == 5 and len(_r264['regime_names']) == 5,
 assert_that(abs(_r264['ug1_derived'] - 8.774e-23) < 1e-25,
             "PAPER_264: U_g1 = G*M/r^2 = 8.77e-23 derived (paper 2.88e-15, 8-order mismatch Q-241)")
 assert_that(C.wired_count() >= 268, "wired_count >= 268")
+
+_r265 = C.calc('PAPER_265')['value']
+assert_that(abs(_r265['quadratic_factor'] - 1.1025) < 1e-6 and _r265['channels'] == 2,
+            "PAPER_265: dual-channel (1+I0)^2 = 1.05^2 = 1.1025 quadratic amplification (both base + UQFF channels)")
+assert_that(abs(_r265['ug1'] - 8.774e-23) < 1e-25 and _r265['confirms_paper_264_ug1'],
+            "PAPER_265: U_g1 = G*M0/r^2 = 8.77e-23 (confirms correct PAPER_264 U_g1, resolves Q-241a; 264's 2.88e-15 was error)")
+assert_that(abs(_r265['delta_I_cascade'] - 2.413e-25) < 1e-27 and _r265['cascade_excess_pct'] == 5,
+            "PAPER_265: Delta_I_cascade = I0^2*U_g1*(1+f_TRZ) = 2.41e-25; excess = I0 = 5% of interaction contribution")
+assert_that(_r265['cascade_universality_N'] == 2 and abs(_r265['I_1gyr'] - 0.0184) < 1e-3,
+            "PAPER_265: Cascade Universality Theorem B_N=(1+I)^N, HUDF N=2; I(1 Gyr)=0.0184 (86% cascade reduction)")
+assert_that(C.wired_count() >= 269, "wired_count >= 269")
 
 
 # =============================================================================

@@ -1205,3 +1205,7 @@ observable,uqff_coaction_universality_master,observable,ngc2525_sn_negative_mass
 primitive,F_TRZ,observable,hudf_trz_cpt_phase_transition,f_TRZ=0.1 canonical (1+f_TRZ)=1.1
 observable,hudf_trz_cpt_phase_transition,paper,PAPER_264,TRZ CPT phase transition
 observable,hudf_trz_cpt_phase_transition,observable,rings_relativity_muge_9term,f_TRZ (1+f_TRZ) UQFF term (PAPER_242)
+primitive,F_TRZ,observable,hudf_dual_channel_cascade_buoyancy,(1+f_TRZ)=1.1 in cascade
+primitive,G_OBSERVED,observable,hudf_dual_channel_cascade_buoyancy,U_g1=G*M0/r^2
+observable,hudf_dual_channel_cascade_buoyancy,paper,PAPER_265,dual-channel quadratic cascade buoyancy
+observable,hudf_dual_channel_cascade_buoyancy,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp; confirms U_g1 (PAPER_264 Q-241a)

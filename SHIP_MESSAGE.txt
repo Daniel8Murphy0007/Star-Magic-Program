@@ -1,21 +1,23 @@
-v0.268.0 BAND 1: PAPER_264 wired - HUDF TRZ CPT PHASE TRANSITION (Q-241)
+v0.269.0 BAND 1: PAPER_265 wired - HUDF DUAL-CHANNEL CASCADE BUOYANCY (CLEAN)
 
-PAPER_264 (HUDF Time-Reversal Zeroing (TRZ) Factor - CPT-Asymmetric UQFF Gravity
-at Cosmic Redshift z=3.5, S72g, HUDFGalaxies.cpp HUDFTRZNegativeTimeTerm) wired
-as one dispatch (OPEN_RULING, Q-241).
+PAPER_265 (HUDF Dual-Channel Interaction Cascade Buoyancy - Quadratic I(t)
+Amplification at Cosmic Merger Peak, S72g, HUDFGalaxies.cpp
+HUDFInteractionCascadeTerm) wired as one dispatch (CLEAN, WIRED). Companion to
+PAPER_264.
 
-Reinterprets the HUDF f_TRZ factor as a CPT-asymmetry / phase-transition
-parameter: U_g,UQFF=(U_g1+U_g4)*(1+f_TRZ)*(1+I(t)). 5-regime phase diagram with
-Time-Reversal Zero Point at f_TRZ=-1 (UQFF vanishes) and negative-time
-anti-gravity at f_TRZ<-1 (UQFF reverses sign). CPT Phase Transition Theorem
-(first-order at f_TRZ=-1).
+I(t)=I0*exp(-t/tau_inter) applied to BOTH base term1 and UQFF term2 -> quadratic
+(1+I0)^2 amplification (vs linear single-channel); Delta_cascade=I0^2*U_g1*
+(1+f_TRZ). Cascade excess = I0 = 5%.
 
-Reproducible: HUDF f_TRZ=0.1=canonical F_TRZ -> (1+0.1)=1.1 enhancement;
-(1+f_TRZ)=0 at zero point.
+Cascade Buoyancy Universality Theorem: N channels -> (1+I(t))^N; HUDF first
+proven N=2.
 
-Q-241: (a) U_g1 stated ~2.88e-15 but G*M/r^2=8.77e-23 (8-order mismatch, r/M
-inconsistency); (b) f_TRZ~-(1+w) de Sitter mapping inconsistent. Phase structure
-clean. Wired phase structure + derived U_g1. Appendix drift auto-corrected.
+Reproducible: I0=0.05, (1+I0)^2=1.1025; U_g1=G*M0/r^2=8.77e-23 (CONFIRMS correct
+PAPER_264 U_g1, RESOLVES Q-241a - 264's 2.88e-15 was the error); Delta_I_cascade
+=2.41e-25; I(1 Gyr)=0.0184 (86% reduction), I(2 Gyr)=0.0068 (98%).
 
-Gate: 1661/0. Registry 553 rows / 1206 edges / 268 ledgers (measured).
-Campaign: 268/2,255. Next: PAPER_265.
+CLEAN - all numerics reproduce; f_TRZ from canonical F_TRZ. Appendix drift
+auto-corrected per charter.
+
+Gate: 1666/0. Registry 554 rows / 1210 edges / 269 ledgers (measured).
+Campaign: 269/2,255. Next: PAPER_266.

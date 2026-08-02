@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.269.0] — 2026-08-02 — BAND 1: PAPER_265 — HUDF DUAL-CHANNEL CASCADE BUOYANCY (CLEAN)
+
+### Added
+- **PAPER_265 dispatch** — HUDF dual-channel interaction cascade buoyancy (Session 72g, companion to PAPER_264). The interaction factor I(t)=I0·e^(−t/τ_inter) is applied to BOTH the base MUGE term1 and the UQFF term2.
+  - **Quadratic amplification:** the double application gives (1+I0)² rather than linear (1+I0); Δ_cascade = I0²·U_g1·(1+f_TRZ). The cascade excess is I0 (5%) of the interaction contribution.
+  - **Cascade Buoyancy Universality Theorem:** N channels → (1+I(t))^N; HUDF is the first proven N=2 configuration.
+  - **Reproducible:** I0=0.05, (1+I0)²=1.1025; U_g1=G·M0/r²=8.77e-23 (independently confirms the correct PAPER_264 U_g1, **resolving Q-241a** — 264's stated 2.88e-15 was the error); Δ_I_cascade=2.41e-25 m/s²; I(1 Gyr)=0.0184 (86% cascade reduction), I(2 Gyr)=0.0068 (98%).
+- Gate +4 assertions (1661 → 1666, 0 failures).
+- Registry: +1 row (554), +4 edges (1210), +1 citation (269).
+
+### Notes
+- CLEAN — all numerics reproduce; f_TRZ composed from canonical F_TRZ.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.268.0] — 2026-08-02 — BAND 1: PAPER_264 — HUDF TRZ CPT PHASE TRANSITION (Q-241)
 
 ### Added

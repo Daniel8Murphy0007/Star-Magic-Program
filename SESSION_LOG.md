@@ -3442,3 +3442,31 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
 Gate: 1661/0. Registry 553 rows / 1206 edges / 268 ledgers (measured).
 Campaign: 268/2,255. Next: PAPER_265.
+
+---
+
+## 2026-08-02 — v0.269.0 — BAND 1: PAPER_265 — HUDF DUAL-CHANNEL CASCADE BUOYANCY (CLEAN)
+
+PAPER_265 (HUDF Dual-Channel Interaction Cascade Buoyancy - Quadratic I(t)
+Amplification at Cosmic Merger Peak, Session 72g, HUDFGalaxies.cpp
+HUDFInteractionCascadeTerm) wired as one dispatch (CLEAN, WIRED). Companion to
+PAPER_264.
+
+The interaction factor I(t)=I0*exp(-t/tau_inter) is applied to BOTH the base
+MUGE term1 and the UQFF term2. Quadratic amplification: the double application
+gives (1+I0)^2 rather than linear (1+I0); Delta_cascade=I0^2*U_g1*(1+f_TRZ).
+Cascade excess = I0 (5%) of the interaction contribution.
+
+Cascade Buoyancy Universality Theorem: N channels -> (1+I(t))^N; HUDF first
+proven N=2 config.
+
+Reproducible: I0=0.05, (1+I0)^2=1.1025; U_g1=G*M0/r^2=8.77e-23 (INDEPENDENTLY
+CONFIRMS correct PAPER_264 U_g1, RESOLVES Q-241a - 264's stated 2.88e-15 was the
+error); Delta_I_cascade=2.41e-25 m/s^2; I(1 Gyr)=0.0184 (86% reduction),
+I(2 Gyr)=0.0068 (98%).
+
+CLEAN - all numerics reproduce; f_TRZ composed from canonical F_TRZ. Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1666/0. Registry 554 rows / 1210 edges / 269 ledgers (measured).
+Campaign: 269/2,255. Next: PAPER_266.
