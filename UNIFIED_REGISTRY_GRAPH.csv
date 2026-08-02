@@ -1190,3 +1190,7 @@ primitive,G_OBSERVED,observable,horsehead_erosion_buoyancy_universality,ug1_base
 primitive,BETA_I,observable,horsehead_erosion_buoyancy_universality,beta_i canonical in Tier-2/3
 observable,horsehead_erosion_buoyancy_universality,paper,PAPER_260,structural-form independence E(t)
 observable,horsehead_erosion_buoyancy_universality,observable,ngc1275_agn_feedback_equilibrium,same 13-term MUGE + g_buoy^(3) (PAPER_259)
+primitive,G_OBSERVED,observable,ngc3603_scale_invariant_feedback,G*M0/r^2 gravitational confinement
+primitive,BETA_I,observable,ngc3603_scale_invariant_feedback,beta_i canonical Tier-2/3
+observable,ngc3603_scale_invariant_feedback,paper,PAPER_261,Scale-Invariant Feedback Theorem
+observable,ngc3603_scale_invariant_feedback,observable,ngc3603_full_muge_10term,dual M(t)+additive P(t) vs PAPER_243 additive-only

@@ -1,24 +1,23 @@
-v0.264.0 BAND 1: PAPER_260 wired - HORSEHEAD EROSION-BUOYANCY UNIVERSALITY (CLEAN)
+v0.265.0 BAND 1: PAPER_261 wired - NGC 3603 SCALE-INVARIANT FEEDBACK (Q-239)
 
-PAPER_260 (Horsehead Nebula - Universal Erosion-Buoyancy Coupling: Structural-
-Form Independence in Photodissociation Regions, S72e, HorseheadNebula.cpp UQFF
-2.0 upgrade) wired as one dispatch (CLEAN, WIRED).
+PAPER_261 (NGC 3603 - Dual-Dynamic Feedback Equilibrium Timescale and
+Scale-Invariant Feedback Theorem in Young Massive Star Clusters, S72,
+NGC3603.cpp UQFF 2.0 upgrade) wired as one dispatch (OPEN_RULING, Q-239).
 
-Barnard 33 (Horsehead) 13-term MUGE. Structural-Form Independence Theorem: the
-erosion envelope E(t)=E0*(1-e^(-t/tau_erosion)) has the SAME form regardless of
-PDR geometry (pillar tip, dark-lane edge, cometary head, ionization front) -
-proven identical to the Pillars of Creation (PAPER_229) despite the pillar-less
-dark-nebula morphology. Geometry modifies {E0, tau_erosion} only.
+13-term MUGE. Dual-dynamic: SIMULTANEOUS additive M(t)=M0(1+M_dot*e^-t/tau_SF)
+mass growth AND P(t)=P0*e^-t/tau_exp cavity pressure as additive term P(t)/
+rho_fluid (distinct from PAPER_218 multiplicative; combines both unlike PAPER_243).
 
-Static-M asymmetric regime: M=const, ug1_base=G*M/r^2 frozen (unlike Pillars'
-ug1_t); E(t) increases (confinement -> 1-E0=0.9) while buoyancy tiers oscillate
-at fixed amplitude.
+Scale-Invariant Feedback Theorem: when tau_SF=tau_exp=tau and M_dot<<1, Phi(t)~
+const*e^-t/tau, so Delta_Phi/Phi=1-e^(-Delta_t/tau) INDEPENDENT of absolute t
+(verified Phi(t)/Phi(t+tau)=e). Basis for universal ~30-35% SFE.
 
-Reproducible: M=1000 M_sun=1.989e33 kg; r=2.5 ly=2.365e16 m; Sgr A* frame
-M_GC=7.956e36 kg / r_GC=2.623e20 m; ug1_base=2.37e-10; E(tau)=0.0632.
+Reproducible: M0=400000 M_sun=7.956e35 kg; tau_SF=3.156e13 s; Sgr A* frame
+M_GC=7.956e36 kg / r_GC=2.16e20 m; fractional change 0.632 at Delta_t=tau.
 
-CLEAN - all params reproduce; beta_i from canonical registry BETA_I. Appendix
-drift auto-corrected per charter.
+Q-239: illustrative G*M0/r^2 "6.60e-16"/term_Ubi "3.30e-16" mojibake exponents
+(correct 6.57e-9/3.29e-9); r "8.998e15" -> 8.988e16 (9.5 ly). Theorem + params
+reproduce. Wired derived-correct values. Appendix drift auto-corrected.
 
-Gate: 1641/0. Registry 549 rows / 1191 edges / 264 ledgers (measured).
-Campaign: 264/2,255. Next: PAPER_261.
+Gate: 1646/0. Registry 550 rows / 1195 edges / 265 ledgers (measured).
+Campaign: 265/2,255. Next: PAPER_262.

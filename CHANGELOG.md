@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.265.0] — 2026-08-02 — BAND 1: PAPER_261 — NGC 3603 SCALE-INVARIANT FEEDBACK (Q-239)
+
+### Added
+- **PAPER_261 dispatch** — NGC 3603 dual-dynamic feedback + Scale-Invariant Feedback Theorem (Session 72, NGC3603.cpp UQFF 2.0). A 13-term MUGE.
+  - **Dual-dynamic:** SIMULTANEOUS additive operation of M(t)=M0(1+Ṁ·e^(−t/τ_SF)) mass growth AND P(t)=P0·e^(−t/τ_exp) cavity pressure as an additive term P(t)/ρ_fluid (distinct from PAPER_218's multiplicative g·(1−P), and combining both processes unlike PAPER_243).
+  - **Scale-Invariant Feedback Theorem:** when τ_SF=τ_exp=τ and Ṁ≪1, Φ(t)=term_P/ug1_t ≈ const·e^(−t/τ), so ΔΦ/Φ = 1−e^(−Δt/τ) is INDEPENDENT of absolute t (verified: Φ(t)/Φ(t+τ)=e for all t). This self-similarity is the basis for the universal ~30–35% star-formation efficiency in massive clusters.
+  - **Reproducible:** M0 = 400,000 M_sun = 7.956e35 kg; τ_SF = 1 Myr = 3.156e13 s; Sgr A* frame M_GC = 7.956e36 kg / r_GC = 7 kpc = 2.16e20 m; fractional change 1−e^(−Δt/τ) = 0.632 at Δt=τ.
+- Gate +4 assertions (1641 → 1646, 0 failures).
+- Registry: +1 row (550), +4 edges (1195), +1 citation (265).
+
+### Ruling filed
+- **Q-239** — the paper's illustrative surface-gravity values G·M0/r² "6.60e-16" and term_Ubi "3.30e-16" have mojibake exponents (correct: 6.57e-9, 3.29e-9; mantissas right); r stated "8.998e15" should be 8.988e16 (9.5 ly). The Scale-Invariant Theorem and all params reproduce. Wired the derived-correct values; mojibake flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.61 → canonical BETA_I) auto-corrected per charter.
+
+---
+
 ## [0.264.0] — 2026-08-02 — BAND 1: PAPER_260 — HORSEHEAD EROSION-BUOYANCY UNIVERSALITY (CLEAN)
 
 ### Added

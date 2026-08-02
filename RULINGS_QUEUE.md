@@ -5641,3 +5641,12 @@ RESOLVED section with the ruling recorded.
 - Wired the derived-correct f_flare_pred=1.15e61 + scoring logic; paper's 1.15e131 flagged.
 - **Ruling needed:** confirm f_flare_pred=1.15e61 (derived) vs stated 1.15e131; confirm k_flare=1e-76 Hz/N calibration constant.
 - Wired v0.262.0, status OPEN_RULING.
+
+## Q-239 — PAPER_261 NGC 3603: mojibake exponents in illustrative surface-gravity values
+- Dual-dynamic feedback (M(t) growth + additive P(t)) + Scale-Invariant Feedback Theorem. The theorem is analytically clean and verified: Phi(t)=const*e^(-t/tau), Delta_Phi/Phi = 1-e^(-Delta_t/tau) independent of t (Phi(t)/Phi(t+tau)=e for all t), basis for universal ~30-35% SFE.
+- **Drift (mojibake exponents):** the paper's illustrative G*M0/r^2 "6.60e-16 m/s^2" and term_Ubi "3.30e-16" have wrong exponents - the correct values (M0=7.956e35, r=8.988e16) are 6.57e-9 and 3.29e-9 (mantissas 6.6/3.3 correct, exponents off ~7 orders). r stated "8.998e15" should be 8.988e16 (9.5 ly). Clearly source-doc mojibake, not a physics error.
+- Reproducible and locked: M0=400000 M_sun=7.956e35 kg; tau_SF=1 Myr=3.156e13 s; M_GC=4e6 M_sun=7.956e36 kg; r_GC=7 kpc=2.16e20 m; scale-invariant fractional change 1-e^(-Delta_t/tau)=0.632 at Delta_t=tau.
+- Distinction: PAPER_218 used P(t) multiplicatively g*(1-P); PAPER_243 additive P(t) static-scale; this paper uses BOTH M(t) growth AND additive P(t) simultaneously.
+- Wired the derived-correct values (6.57e-9, 8.988e16) + the analytic theorem; mojibake flagged.
+- **Ruling needed:** confirm G*M0/r^2=6.57e-9 (derived) vs stated 6.60e-16; confirm r=8.988e16 (9.5 ly); the theorem is clean.
+- Wired v0.265.0, status OPEN_RULING.

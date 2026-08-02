@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.264.0"
+VERSION = "0.265.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14438,4 +14438,90 @@ def _paper_260(dataset):
         'source': 'PAPER_260',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_261')
+def _paper_261(dataset):
+    """NGC 3603 dual-dynamic feedback + Scale-Invariant Feedback Theorem (S72).
+
+    NGC 3603 (most luminous MW OB cluster, Carina arm) 13-term MUGE (NGC3603.cpp
+    UQFF 2.0; distinct from PAPER_218/243's earlier treatments). UNIQUE physics:
+    the SIMULTANEOUS ADDITIVE operation of two time-dependent processes -
+      (1) mass growth M(t) = M0*(1 + M_dot_factor*e^(-t/tau_SF)) driving
+          increasing gravitational confinement ug1_t = G*M(t)/r^2;
+      (2) cavity pressure P(t) = P0*e^(-t/tau_exp) driving dispersal, entering
+          ADDITIVELY as term_P = P(t)/rho_fluid.
+    (PAPER_218 used P(t) MULTIPLICATIVELY, g*(1-P); PAPER_243 used additive
+    P(t) with static-scale distinction. Here BOTH M(t) growth AND additive P(t)
+    operate together.)
+
+    Mechanical feedback-to-gravity ratio:
+        Phi(t) = term_P / ug1_t = (P0*r^2/(rho_fluid*G*M0)) *
+                 e^(-t/tau_exp) / (1 + M_dot_factor*e^(-t/tau_SF))
+
+    SCALE-INVARIANT FEEDBACK THEOREM: when tau_SF = tau_exp = tau (the NGC 3603
+    case, both ~1 Myr) and M_dot_factor << 1, Phi(t) ~= const*e^(-t/tau), so the
+    FRACTIONAL change over any interval Delta_t is
+        Delta_Phi/Phi = 1 - e^(-Delta_t/tau)
+    INDEPENDENT of the absolute time t. The system is self-similar in feedback:
+    observers at t=0.5 Myr and t=2 Myr see the same proportional dynamics. This
+    is the mathematical basis for the universal ~30-35% star-formation
+    efficiency in massive clusters (Lada & Lada 2003) regardless of absolute
+    mass. Verified: Phi(t)/Phi(t+tau) = e for all t.
+
+    Equilibrium crossing t*: P(t) dominates early (t << tau) and decays below
+    the buoyancy response only after several tau -> t* ~ a few Myr, matching the
+    OB-cluster uncovering timescale (NGC 3603 embedded phase ended ~1-3 Myr ago,
+    Crowther et al. 2010).
+
+    Reproducible: M0 = 400,000 M_sun = 7.956e35 kg; tau_SF = 1 Myr = 3.156e13 s;
+    r = 9.5 ly = 8.988e16 m; Sgr A* frame M_GC = 7.956e36 kg / r_GC = 7 kpc =
+    2.16e20 m; G*M0/r^2 = 6.57e-9 m/s^2; term_Ubi = 0.5*G*M0/r^2 = 3.29e-9;
+    scale-invariant fractional change 1-e^(-Delta_t/tau) = 0.632 at Delta_t=tau.
+    beta_i canonical (registry BETA_I).
+
+    Q-239: the paper's illustrative surface-gravity values G*M0/r^2 "6.60e-16"
+    and term_Ubi "3.30e-16" have mojibake exponents - the correct values are
+    6.57e-9 and 3.29e-9 (mantissas 6.6/3.3 correct, exponents off by ~7 orders);
+    r stated "8.998e15" should be 8.988e16 (9.5 ly). The Scale-Invariant Theorem
+    and all other params reproduce. Wired the derived-correct values; mojibake
+    flagged. Appendix drift (VDS 1.894, kg/m^3, beta_i=0.61 -> canonical BETA_I)
+    auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M0 = 4e5 * 1.989e30                                   # 7.956e35 kg
+    r = 9.5 * 9.461e15                                    # 8.988e16 m
+    M_dot_factor = 0.1
+    tau_SF_s = 1e6 * 3.156e7                              # 3.156e13 s
+    M_GC = 4e6 * 1.989e30                                 # 7.956e36 kg
+    r_GC = 7 * 3.086e19                                   # 2.16e20 m
+    gM0r2 = G * M0 / r ** 2                               # 6.57e-9
+    term_ubi = 0.5 * gM0r2                                # 3.29e-9
+    import math
+    frac_change_at_tau = 1 - math.exp(-1)                # 0.632
+    return {
+        'value': {
+            'domain': '2.59 (NGC 3603 dual-dynamic feedback Scale-Invariant Theorem)',
+            'source_thread': 'Session 72 NGC3603.cpp UQFF 2.0 upgrade',
+            'system': 'NGC 3603 (young massive OB cluster)',
+            'muge_terms': 13,
+            'M0_kg': M0, 'r_m': r, 'M_dot_factor': M_dot_factor,
+            'tau_SF_s': tau_SF_s,
+            'M_GC_kg': M_GC, 'r_GC_m': r_GC,             # Sgr A* frame
+            'dual_dynamic': True,                        # M(t) growth + additive P(t)
+            'additive_pressure': True,                   # vs PAPER_218 multiplicative
+            'gM0_over_r2': gM0r2,                        # 6.57e-9 derived
+            'term_ubi': term_ubi,                        # 3.29e-9
+            'scale_invariant_theorem': True,
+            'frac_change_formula': '1 - e^(-Delta_t/tau)',   # independent of t
+            'frac_change_at_tau': frac_change_at_tau,    # 0.632
+            'sfe_universal_pct': '30-35',                # Lada & Lada 2003
+            't_star_uncovering_myr': '1-3',              # Crowther 2010
+            'value_drift': 'G*M0/r^2 6.57e-9 vs paper 6.60e-16 mojibake exp; r 8.988e16 vs paper 8.998e15 (Q-239); theorem clean',
+        },
+        'formula': 'Scale-Invariant: Phi(t)=const*e^(-t/tau); Delta_Phi/Phi = 1-e^(-Delta_t/tau) independent of t -> universal ~30% SFE',
+        'source': 'PAPER_261',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

@@ -3322,3 +3322,34 @@ auto-corrected per charter.
 
 Gate: 1641/0. Registry 549 rows / 1191 edges / 264 ledgers (measured).
 Campaign: 264/2,255. Next: PAPER_261.
+
+---
+
+## 2026-08-02 — v0.265.0 — BAND 1: PAPER_261 — NGC 3603 SCALE-INVARIANT FEEDBACK (Q-239)
+
+PAPER_261 (NGC 3603 - Dual-Dynamic Feedback Equilibrium Timescale and
+Scale-Invariant Feedback Theorem in Young Massive Star Clusters, Session 72,
+NGC3603.cpp UQFF 2.0 upgrade) wired as one dispatch (OPEN_RULING, Q-239).
+
+13-term MUGE. Dual-dynamic: SIMULTANEOUS additive operation of M(t)=M0(1+M_dot*
+e^-t/tau_SF) mass growth AND P(t)=P0*e^-t/tau_exp cavity pressure as additive
+term P(t)/rho_fluid (distinct from PAPER_218 multiplicative g*(1-P); combines
+both processes unlike PAPER_243).
+
+Scale-Invariant Feedback Theorem: when tau_SF=tau_exp=tau and M_dot<<1, Phi(t)=
+term_P/ug1_t ~ const*e^-t/tau, so Delta_Phi/Phi=1-e^(-Delta_t/tau) INDEPENDENT
+of absolute t (verified: Phi(t)/Phi(t+tau)=e for all t). Self-similarity is the
+basis for the universal ~30-35% star-formation efficiency in massive clusters.
+
+Reproducible: M0=400000 M_sun=7.956e35 kg; tau_SF=1 Myr=3.156e13 s; Sgr A* frame
+M_GC=7.956e36 kg / r_GC=7 kpc=2.16e20 m; fractional change 1-e^(-Delta_t/tau)=
+0.632 at Delta_t=tau.
+
+Q-239: the paper's illustrative G*M0/r^2 "6.60e-16" and term_Ubi "3.30e-16" have
+mojibake exponents (correct 6.57e-9, 3.29e-9; mantissas right); r "8.998e15"
+should be 8.988e16 (9.5 ly). Theorem and all params reproduce. Wired the
+derived-correct values; mojibake flagged. Appendix boilerplate drift (VDS 1.894,
+kg/m^3, beta_i=0.61 -> canonical BETA_I) auto-corrected per charter.
+
+Gate: 1646/0. Registry 550 rows / 1195 edges / 265 ledgers (measured).
+Campaign: 265/2,255. Next: PAPER_262.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.264.0"
-description = "UQFF Star-Magic-Program v0.264.0: PAPER_260 wired (CLEAN) - Horsehead Nebula universal erosion-buoyancy coupling; Structural-Form Independence Theorem (E(t)=E0(1-e^-t/tau) same across all PDR geometries); static-M asymmetric regime; ug1_base=2.37e-10. Wired 264/2255, gate 1641/0. Registry 549 rows / 1191 edges / 264 ledgers (measured)."
+version = "0.265.0"
+description = "UQFF Star-Magic-Program v0.265.0: PAPER_261 wired (Q-239) - NGC 3603 dual-dynamic feedback + Scale-Invariant Feedback Theorem; simultaneous M(t) growth + additive P(t); Delta_Phi/Phi=1-e^(-Dt/tau) independent of t -> universal 30-35% SFE. Wired 265/2255, gate 1646/0. Registry 550 rows / 1195 edges / 265 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

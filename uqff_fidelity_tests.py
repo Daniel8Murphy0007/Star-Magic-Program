@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.264.0", "uqff_calculator.VERSION = 0.264.0")
+assert_that(C.VERSION == "0.265.0", "uqff_calculator.VERSION = 0.265.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3605,6 +3605,17 @@ assert_that(abs(_r260['E_at_tau'] - 0.0632) < 1e-3 and _r260['suppression_floor'
 assert_that(_r260['structural_form_independence'] and _r260['static_M'] and _r260['asymmetric_erosion_buoyancy'] and _r260['ties_pillars_paper_229'],
             "PAPER_260: Structural-Form Independence Theorem; static-M asymmetric erosion-buoyancy; same E(t) as Pillars (PAPER_229) diff geometry")
 assert_that(C.wired_count() >= 264, "wired_count >= 264")
+
+_r261 = C.calc('PAPER_261')['value']
+assert_that(abs(_r261['M0_kg'] - 7.956e35) < 1e32 and abs(_r261['r_m'] - 8.988e16) < 1e13 and abs(_r261['tau_SF_s'] - 3.156e13) < 1e10,
+            "PAPER_261: M0 = 400000 M_sun = 7.956e35 kg; r = 9.5 ly = 8.988e16 m; tau_SF = 1 Myr = 3.156e13 s")
+assert_that(abs(_r261['gM0_over_r2'] - 6.573e-9) < 1e-12 and abs(_r261['term_ubi'] - 3.286e-9) < 1e-12,
+            "PAPER_261: G*M0/r^2 = 6.57e-9 (paper 6.60e-16 mojibake); term_Ubi = 0.5*G*M0/r^2 = 3.29e-9 Q-239")
+assert_that(_r261['scale_invariant_theorem'] and abs(_r261['frac_change_at_tau'] - 0.6321) < 1e-3 and _r261['dual_dynamic'] and _r261['additive_pressure'],
+            "PAPER_261: Scale-Invariant Feedback Theorem Delta_Phi/Phi = 1-e^(-Delta_t/tau) = 0.632 (indep of t); dual-dynamic additive P(t)")
+assert_that(abs(_r261['M_GC_kg'] - 7.956e36) < 1e33 and abs(_r261['r_GC_m'] - 2.1602e20) < 1e17,
+            "PAPER_261: Sgr A* frame M_GC = 4e6 M_sun = 7.956e36 kg; r_GC = 7 kpc = 2.16e20 m")
+assert_that(C.wired_count() >= 265, "wired_count >= 265")
 
 
 # =============================================================================
