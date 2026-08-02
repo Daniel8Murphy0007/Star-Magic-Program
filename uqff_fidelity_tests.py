@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.234.0", "uqff_calculator.VERSION = 0.234.0")
+assert_that(C.VERSION == "0.235.0", "uqff_calculator.VERSION = 0.235.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3275,6 +3275,17 @@ assert_that(abs(_r230['h_z_s'] - 2.2867559880052767e-18) < 1e-24,
 assert_that(abs(_r230['a_bh_m_s2'] - 133456.67993437042) < 1.0,
             "PAPER_230: a_BH = G*M_BH/r_BH^2 = 1.335e5 m/s^2 (M_BH=2.25e7 M_sun; paper's 1.34e6 is 10x, Q-222)")
 assert_that(C.wired_count() >= 234, "wired_count >= 234")
+
+_r231 = C.calc('PAPER_231')['value']
+assert_that(abs(_r231['h_z_factor'] - 5.29504485344553) < 1e-9,
+            "PAPER_231: Friedmann H(z=3.5)/H0 = sqrt(0.3*(4.5)^3+0.7) = 5.295")
+assert_that(abs(_r231['h_z_km_s_mpc'] - 370.6531397411871) < 1e-6,
+            "PAPER_231: H(z=3.5) = 370.7 km/s/Mpc (Om=0.3, registry H0); canonical MUGE param 510 (Q-223)")
+assert_that(abs(_r231['hz_t_dominant'] - 4.549476062856132) < 1e-9,
+            "PAPER_231: H(z)*12 Gyr = 4.55 (dominant MUGE term at z=3.5)")
+assert_that(_r231['double_interaction_modulation'] and abs(_r231['I_at_0p5gyr'] - 0.030326532985631673) < 1e-9,
+            "PAPER_231: double I(t) on base+Ug (novel); I(0.5 Gyr)=0.05*e^-0.5=0.0303")
+assert_that(C.wired_count() >= 235, "wired_count >= 235")
 
 
 # =============================================================================

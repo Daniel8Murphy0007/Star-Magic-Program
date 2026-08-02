@@ -1,30 +1,34 @@
-v0.234.0 BAND 1: PAPER_230 wired - NGC 2525 + SN 2018gv (NEGATIVE MUGE TERM)
+v0.235.0 BAND 1: PAPER_231 wired - HUDF COSMIC FIELD z=3.5 MUGE
 
-PAPER_230 (NGC 2525 + SN 2018gv - MUGE with Negative Supernova
-Mass-Loss Acceleration, S58) wired as one dispatch (Q-222, OPEN_RULING).
+PAPER_231 (Hubble Ultra Deep Field Galaxies - MUGE at Cosmic Scale
+z=3.5 with Double I(t) Interaction Modulation, S58) wired as one
+dispatch (Q-223, OPEN_RULING).
 
 Physics:
-- NGC 2525 (barred spiral, ~65 Mpc, z=0.0162) hosting Type-Ia SN 2018gv
-  introduces the ONLY negative acceleration term in the entire MUGE
-  catalogue (19 docs of grok_share_8d951e12 + full CP1/CP2/CP3 library):
-  g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2, the declining SN ejecta mass as
-  it disperses.
-- At t=0: g_SN = -G*M_SN0/r^2 (full Chandrasekhar 1.4 M_sun, negative);
-  at t->inf: g_SN -> 0 (ejecta dispersed); dg_SN/dt = +G*M_SN0/
-  (tau_SN*r^2)*e^-t/tau_SN > 0 -> the negative correction becomes LESS
-  negative over time, consistent with dispersal. All other MUGE terms
-  are positive; g_SN is the sole negative.
-- |g_SN| = G*M_SN0/r^2 = 2.30e-21 m/s^2 at r_galaxy=30,000 ly.
-- Friedmann H(z=0.0162) = H0*sqrt(0.3*(1+z)^3 + 0.7) = 2.287e-18 s^-1
-  (registry H0 = A_5+SO_5 = 70).
-- Central-BH a_BH = G*M_BH/r_BH^2 = 1.335e5 m/s^2 (M_BH=2.25e7 M_sun,
-  r_BH=1 AU). Verified. Doc 10 of the grok_share_8d951e12 thread.
+- The HUDF (~10,000 galaxies in 11.5 sq arcmin) modelled as a single
+  aggregate MUGE system at z_avg=3.5 (~12 Gyr lookback) - a previously-
+  unrepresented system (Doc 18). Two novel methods.
+- Friedmann expansion at early cosmic epoch:
+  H(z=3.5) = H0*sqrt(0.3*(1+z)^3 + 0.7) = H0*sqrt(28.04) = 5.295*H0
+  = 1.202e-17 s^-1 = 370.7 km/s/Mpc (Omega_m=0.3, registry H0=70).
+  The H(z)*t term dominates: H(z=3.5)*12 Gyr = 4.55 -> cosmological
+  expansion supplies ~4.5x the base velocity to all structures.
+- Double interaction modulation (novel): the factor I(t)=I_0*e^-t/tau
+  (I_0=0.05, tau_inter=1 Gyr) is applied SIMULTANEOUSLY to both the
+  base gravity a_base and the UQFF correction a_Ug - double application
+  absent in all prior MUGE systems (at z=3.5 mergers were ~10x more
+  frequent). At t=0.5 Gyr: I=0.05*e^-0.5=0.0303. (1+f_TRZ)=1.1
+  (registry F_TRZ=0.1). Verified.
+- Previously-unknown status: highest-z aggregate, largest single-MUGE
+  spatial scale (r=1.3e11 ly comoving), most extreme Friedmann term
+  (H(z)/H0 ~ 5.3-7.3x). Doc 18 of the grok_share_8d951e12 thread.
 
-Q-222: two worked-example scale errors, corrected in the wiring:
-(a) |g_SN| stated 2.3e-33 m/s^2 but G*M_SN0/r^2 = 2.30e-21 (~12 OOM off,
-same exponent-drift family as Q-214/215/218/221/224); (b) a_BH stated
-1.34e6 but G*M_BH/r_BH^2 = 1.335e5 (10x high). Appendix boilerplate
-drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+Q-223: the paper computes H(z=3.5)=370.7 km/s/Mpc from standard
+Omega_m=0.3, but states the canonical MUGE parameter is 510 km/s/Mpc
+(= 7.3*H0, higher-Omega_m early-universe/JWST scenario). Which is
+canonical for the dispatch? Both recorded - 370.7 as the computed
+Friedmann value, 510 as the MUGE param. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1492/0. Registry 515 rows / 1085 edges / 234 ledgers (measured).
-Campaign: 234/2,255. Next: PAPER_231.
+Gate: 1497/0. Registry 516 rows / 1088 edges / 235 ledgers (measured).
+Campaign: 235/2,255. Next: PAPER_232.

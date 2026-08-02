@@ -9,6 +9,18 @@ RESOLVED section with the ruling recorded.
 
 ## OPEN
 
+### Q-223 — PAPER_231 — HUDF H(z=3.5): computed 370 vs MUGE param 510
+- **Question:** PAPER_231 computes H(z=3.5) = H0*sqrt(0.3*(1+z)^3+0.7) = 5.295*H0
+  = 370.7 km/s/Mpc from standard Omega_m=0.3, but then states the canonical MUGE
+  parameter is H_z35 = 510 km/s/Mpc (= 7.3*H0), "reflecting a higher-Omega_m
+  early-universe scenario consistent with JWST data suggesting denser early
+  structures." Which is canonical for the dispatch - the standard-cosmology 370
+  or the higher-Omega_m 510? (Both wired; 370 as the computed Friedmann value,
+  510 recorded as the MUGE param.)
+- **Best-candidate wired:** H(z=3.5) = 370.7 km/s/Mpc (registry H0, Om=0.3) as
+  the computed value; h_z_canonical_param_km_s_mpc = 510 recorded alongside.
+- **Daniel's ruling:** (pending)
+
 ### Q-222 — PAPER_230 — NGC 2525 |g_SN| and a_BH scale errors
 - **Question:** PAPER_230 sec 2-4 has two worked-example scale errors (the
   structural "only negative MUGE term" claim and the formulas are correct):

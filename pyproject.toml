@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.234.0"
-description = "UQFF Star-Magic-Program v0.234.0: PAPER_230 wired - NGC 2525 + SN 2018gv, ONLY negative MUGE term g_SN=-(G*M_SN0*e^-t/tau_SN)/r^2 (whole catalogue); |g_SN|=2.30e-21 m/s^2, dg_SN/dt>0 dispersal; H(z=0.0162)=2.287e-18 (registry H0); a_BH=1.335e5; |g_SN| 2.3e-33 + a_BH 1.34e6 drift Q-222. Wired 234/2255, gate 1492/0. Registry 515 rows / 1085 edges / 234 ledgers (measured)."
+version = "0.235.0"
+description = "UQFF Star-Magic-Program v0.235.0: PAPER_231 wired - HUDF galaxies aggregate MUGE at z=3.5 (previously-unknown); Friedmann H(z=3.5)=5.295*H0=370.7 km/s/Mpc (canonical param 510 Q-223), H(z)*12Gyr=4.55 dominant; double I(t) modulation on base+Ug (novel), I(0.5Gyr)=0.0303; highest-z aggregate, r=1.3e11 ly. Q-223. Wired 235/2255, gate 1497/0. Registry 516 rows / 1088 edges / 235 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

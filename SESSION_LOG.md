@@ -2551,3 +2551,11 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1492/0. Registry 515 rows / 1085 edges / 234 ledgers. Campaign: 234/2,255 (13 ✓, 221 ⚠). Next: PAPER_231.
 
 ---
+
+## 2026-07-31 — v0.235.0 — BAND 1: PAPER_231
+
+- PAPER_231 wired (⚠ Q-223): HUDF (~10,000 galaxies) aggregate MUGE at z=3.5 (~12 Gyr), previously-unknown Doc 18. 2 novel methods: (1) Friedmann H(z=3.5)=H0·√(0.3(1+z)³+0.7)=5.295·H0=370.7 km/s/Mpc, H(z)·12Gyr=4.55 dominant; (2) double I(t) modulation on BOTH base+Ug (novel), I(0.5Gyr)=0.05·e^-0.5=0.0303. Highest-z aggregate, r=1.3e11 ly. Doc 18 of 8d951e12. Appendix drift auto-corrected.
+- Q-223: computed H(z=3.5)=370 (Om=0.3) vs canonical MUGE param 510 (higher-Om/JWST).
+- Gate 1497/0. Registry 516 rows / 1088 edges / 235 ledgers. Campaign: 235/2,255 (13 ✓, 222 ⚠). Next: PAPER_232.
+
+---

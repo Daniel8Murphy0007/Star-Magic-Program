@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.234.0"
+VERSION = "0.235.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12341,6 +12341,74 @@ def _paper_230(dataset):
         },
         'formula': 'g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2 (only negative MUGE term); H(z)=H0*sqrt(Om(1+z)^3+OL)',
         'source': 'PAPER_230',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_231')
+def _paper_231(dataset):
+    """HUDF galaxies: MUGE at z=3.5 with double I(t) modulation (S58).
+
+    The Hubble Ultra Deep Field (~10,000 galaxies) modelled as a single
+    aggregate MUGE system at z_avg=3.5 (~12 Gyr lookback) - a previously
+    unrepresented system (Doc 18, grok_share_8d951e12). Two novel methods.
+    Wired observables:
+    * Friedmann expansion at early cosmic epoch H(z=3.5) = H0*sqrt(0.3*
+      (1+z)^3 + 0.7) = H0*sqrt(28.04) = 5.295*H0 = 1.202e-17 s^-1 =
+      370.7 km/s/Mpc (standard Omega_m=0.3, registry H0=70). Canonical
+      MUGE parameter uses H_z35 = 510 km/s/Mpc = 7.3*H0 (higher-Omega_m
+      early-universe/JWST scenario, Q-223).
+    * The H(z)*t term dominates: H(z=3.5)*12 Gyr = 1.202e-17*3.785e17 =
+      4.55 -> cosmological expansion supplies ~4.5x the base velocity to
+      all structures; the numerically dominant MUGE term for this system.
+    * Double interaction modulation (novel): the interaction factor
+      I(t) = I_0*e^-t/tau_inter (I_0=0.05, tau_inter=1 Gyr) is applied
+      SIMULTANEOUSLY to both the base gravity a_base = U_g1*(1+H(z)*t)*
+      (1-B/B_crit)*(1+I(t)) AND the UQFF correction a_Ug = (U_g1+U_g4)*
+      (1+f_TRZ)*(1+I(t)) - double application absent in all prior MUGE
+      systems. At z=3.5 mergers were ~10x more frequent, driving both the
+      large-scale potential and the local UQFF buoyancy field. At
+      t=0.5 Gyr: I = 0.05*e^-0.5 = 0.0303 (3% modulation on both terms).
+      (1+f_TRZ) = 1.1 (registry F_TRZ=0.1).
+    * Previously-unknown status: highest-z aggregate, largest single-MUGE
+      spatial scale (r=1.3e11 ly comoving), most extreme Friedmann term
+      (H(z)/H0 ~ 5.3-7.3x). M_0=1e12 M_sun, ~10,000 galaxies.
+    Q-223: computed H(z=3.5)=370 km/s/Mpc (Omega_m=0.3) vs the MUGE
+    canonical param 510 km/s/Mpc (higher-Omega_m/JWST scenario) - which
+    is canonical? Both recorded. Appendix drift auto-corrected.
+    """
+    import math as _m
+    z = 3.5
+    h_factor = _m.sqrt(0.3 * (1 + z) ** 3 + 0.7)          # 5.295
+    h_z_s = H0_OBSERVED_LOCAL * h_factor                  # 1.202e-17
+    h_z_kms_mpc = H0_KM_PER_S_PER_MPC * h_factor          # 370.7
+    t_12gyr = 3.785e17                                    # s
+    hz_t = h_z_s * t_12gyr                                # 4.55
+    i_at_0p5 = 0.05 * _m.exp(-0.5)                        # 0.0303
+    return {
+        'value': {
+            'domain': '2.29 (HUDF cosmic field z=3.5 MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 18 (previously unknown)',
+            'z_avg': z,
+            'lookback_gyr': 12,
+            'n_galaxies': 10000,
+            'h_z_factor': h_factor,                       # 5.295
+            'h_z_s': h_z_s,                               # 1.202e-17
+            'h_z_km_s_mpc': h_z_kms_mpc,                  # 370.7
+            'h_z_canonical_param_km_s_mpc': 510,          # higher-Omega_m/JWST
+            'h_z_over_h0': h_factor,                      # 5.295
+            'hz_t_dominant': hz_t,                        # 4.55
+            'double_interaction_modulation': True,
+            'I0': 0.05, 'tau_inter_gyr': 1,
+            'I_at_0p5gyr': i_at_0p5,                      # 0.0303
+            'one_plus_ftrz': 1 + F_TRZ,                   # 1.1
+            'r_comoving_ly': 1.3e11,
+            'previously_unknown': True,
+            'h_z_fork': 'computed 370 km/s/Mpc (Om=0.3) vs MUGE param 510 (higher-Om/JWST) (Q-223)',
+        },
+        'formula': 'H(z)=H0*sqrt(Om(1+z)^3+OL); a_base & a_Ug both carry (1+I(t)); I(t)=I_0*e^-t/tau',
+        'source': 'PAPER_231',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
     }

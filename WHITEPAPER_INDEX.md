@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 234 (13 ✓, 221 ⚠ OPEN_RULING)
+- **Wired:** 235 (13 ✓, 222 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2020
+- **Not yet touched:** 2019
 
 ---
 
@@ -1489,7 +1489,7 @@
 | ✓ | PAPER_228 | Westerlund2 OB StellarWind MUGE |
 | ⚠ | PAPER_229 | Pillars Creation Erosion MUGE |
 | ⚠ | PAPER_230 | NGC2525 SN2018gv Negative MassLoss MUGE |
-| ⬜ | PAPER_231 | HUDF Cosmic Field z3p5 MUGE |
+| ⚠ | PAPER_231 | HUDF Cosmic Field z3p5 MUGE |
 | ⬜ | PAPER_232 | NGC1792 Stellar Forge Starburst MUGE |
 | ⬜ | PAPER_233 | SGR1745 BH Proximity Enhanced MUGE |
 | ⬜ | PAPER_234 | SgrAStar Accretion Precession Enhanced MUGE |

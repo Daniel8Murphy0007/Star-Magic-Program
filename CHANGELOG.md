@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.235.0] — 2026-07-31 — BAND 1: PAPER_231 — HUDF COSMIC FIELD z=3.5 MUGE
+
+### Added
+- **PAPER_231 wired** (⚠ Q-223): the Hubble Ultra Deep Field (~10,000 galaxies)
+  modelled as a single aggregate MUGE system at z_avg=3.5 (~12 Gyr lookback) — a
+  previously-unrepresented system (Doc 18). Two novel methods: (1) early-epoch
+  Friedmann expansion `H(z=3.5) = H0·√(0.3(1+z)³+0.7) = 5.295·H0 = 370.7 km/s/Mpc`,
+  with `H(z)·12 Gyr = 4.55` the numerically dominant MUGE term; (2) double
+  interaction modulation — the factor `I(t) = I_0·e^-t/τ_inter` (I_0=0.05,
+  τ_inter=1 Gyr) applied simultaneously to **both** the base gravity and the UQFF
+  U_g correction (absent in all prior MUGE systems); I(0.5 Gyr)=0.0303. Highest-z
+  aggregate, largest single-MUGE scale (r=1.3e11 ly). Doc 18 of the
+  grok_share_8d951e12 thread.
+- Q-223: computed H(z=3.5)=370.7 km/s/Mpc (Ω_m=0.3) vs the canonical MUGE param
+  510 km/s/Mpc (higher-Ω_m/JWST scenario) — which is canonical? Both recorded.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1492 → 1497 (+5). Registry 516 rows / 1088 edges / 235 ledgers.
+
+---
+
 ## [0.234.0] — 2026-07-31 — BAND 1: PAPER_230 — NGC 2525 + SN 2018gv (NEGATIVE MUGE TERM)
 
 ### Added
