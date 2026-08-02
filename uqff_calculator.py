@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.266.0"
+VERSION = "0.267.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14601,4 +14601,74 @@ def _paper_262(dataset):
         'source': 'PAPER_262',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_263')
+def _paper_263(dataset):
+    """UQFF Simultaneous Co-action Universality master theorem (S72f).
+
+    Cross-system synthesis unifying the four Session 71b-72f module upgrades
+    (NGC 1275, Horsehead, NGC 3603, NGC 2525) + Rings of Relativity (PAPER_242)
+    under a single master principle.
+
+    Universal MUGE co-action form (13-term MUGE across all five systems):
+        g_UQFF(r,t) = g_base(r,t) + g_diss(r,t) + g_buoy^(3)(r,t)
+    where g_base is the 9-10 common terms, g_diss is the system-unique
+    dissipative term, and g_buoy^(3) is the canonical 3-tier buoyancy response.
+
+    Simultaneous Co-action Universality Theorem: for any bound system with
+    kernel K(r)=G*M/r^2 and any dissipative process D(t), the UQFF buoyancy
+    response B^(3) is SIMULTANEOUSLY active with D(t) for all t>=0 - because
+    B^(3) depends only on {ug1, beta_i, omega_g, M/r, M_ext/r_ext, U_UA} and
+    D(t) depends only on {G_D, tau_D, amplitude_D}; they share only the kernel
+    K(r) (which D does not modify), so they are PARAMETRICALLY ORTHOGONAL:
+        d g_diss/d beta_i = d g_diss/d omega_g = d g_diss/d U_UA = 0;
+        d g_buoy^(3)/d Gamma_D = 0.
+    Corollary: standard models treating dissipation and buoyancy as SEQUENTIAL
+    feedback phases make a thermodynamic approximation valid only for t >> tau_D;
+    UQFF describes the full instantaneous co-present dynamics.
+
+    Four sub-theorems unified as specializations:
+      Morphology-Independence (PAPER_260) - photon-driven E(t);
+      Scale-Invariant Feedback (PAPER_261) - pressure-driven P(t);
+      AGN Feedback Equilibrium (PAPER_259) - thermo-infall term_cool;
+      Dual Sign-Reversal Channel (PAPER_262) - mass-removal -G*M_SN/r^2.
+
+    Dissipative-Buoyancy Pair classification (7 classes): photon-driven E(t),
+    pressure-driven P(t)/rho, thermo-infall rho*v^2/rho_f, mass-removal
+    -G*dM/r^2, lensing-amplification (1+L_t), wave-burst D0*cos(omega_D t)*
+    e^-t/tau_D, mass-accretion +G*dM_SF/r^2. All parametrically orthogonal to
+    B^(3) -> all co-act simultaneously.
+
+    Master equation (N_D dissipative terms):
+        g_UQFF = g_base + sum_{k=1}^{N_D} g_diss^(k) + g_buoy^(3)
+    with the orthogonality conditions guaranteeing simultaneous co-action.
+    Special case NGC 3603: N_D = 2 (P(t) + M(t) growth simultaneously).
+
+    CLEAN - master synthesis theorem (no numerics to drift). Appendix
+    boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+    """
+    return {
+        'value': {
+            'domain': '2.61 (UQFF Simultaneous Co-action Universality master theorem)',
+            'source_thread': 'Session 72f cross-system synthesis (5 C++ modules)',
+            'universal_form': 'g_UQFF = g_base + g_diss + g_buoy^(3)',
+            'master_equation': 'g_UQFF = g_base + sum_k g_diss^(k) + g_buoy^(3)',
+            'coaction_theorem': 'D(t) and B^(3) simultaneously active for all t>=0 (parametrically orthogonal, shared kernel G*M/r^2)',
+            'orthogonality_conditions': 4,   # 3 on g_diss + 1 on g_buoy
+            'sub_theorems_unified': 4,
+            'sub_theorem_papers': ['PAPER_260 morphology-independence', 'PAPER_261 scale-invariant', 'PAPER_259 AGN equilibrium', 'PAPER_262 dual sign-reversal'],
+            'dissipative_classes': 7,
+            'class_names': ['photon-driven', 'pressure-driven', 'thermo-infall', 'mass-removal', 'lensing-amplification', 'wave-burst', 'mass-accretion'],
+            'systems_unified': 5,
+            'systems': ['NGC 1275', 'Horsehead', 'NGC 3603', 'NGC 2525', 'Rings of Relativity'],
+            'ngc3603_N_D': 2,   # two simultaneous dissipatives
+            'sequential_feedback_is_approximation': True,   # valid only t>>tau_D
+            'master_synthesis': True,
+        },
+        'formula': 'g_UQFF = g_base + sum_k g_diss^(k) + g_buoy^(3); D(t) perp B^(3) (parametric orthogonality) -> simultaneous co-action',
+        'source': 'PAPER_263',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

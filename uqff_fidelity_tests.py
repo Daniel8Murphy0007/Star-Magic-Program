@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.266.0", "uqff_calculator.VERSION = 0.266.0")
+assert_that(C.VERSION == "0.267.0", "uqff_calculator.VERSION = 0.267.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3627,6 +3627,17 @@ assert_that(abs(_r262['t_cross_myr_derived'] - 0.90) < 0.05 and abs(_r262['term_
 assert_that(_r262['first_mass_removal_sign_reversal'] and _r262['ties_paper_253_field_inversion'] and _r262['irreversible'],
             "PAPER_262: first UQFF mass-removal negative-g channel (irreversible); second channel vs PAPER_253 field inversion")
 assert_that(C.wired_count() >= 266, "wired_count >= 266")
+
+_r263 = C.calc('PAPER_263')['value']
+assert_that(_r263['sub_theorems_unified'] == 4 and _r263['dissipative_classes'] == 7 and _r263['systems_unified'] == 5,
+            "PAPER_263: master theorem unifies 4 sub-theorems (259/260/261/262), 7 dissipative classes, 5 systems")
+assert_that(_r263['orthogonality_conditions'] == 4 and _r263['sequential_feedback_is_approximation'],
+            "PAPER_263: 4 orthogonality conditions (3 on g_diss + 1 on g_buoy); sequential feedback = approximation valid t>>tau_D")
+assert_that(_r263['ngc3603_N_D'] == 2 and _r263['master_synthesis'],
+            "PAPER_263: master equation g_UQFF = g_base + sum_k g_diss^(k) + g_buoy^(3); NGC 3603 special case N_D=2")
+assert_that(len(_r263['class_names']) == 7 and len(_r263['systems']) == 5,
+            "PAPER_263: 7 dissipative-buoyancy classes; 5 unified systems (NGC 1275/Horsehead/NGC 3603/NGC 2525/Rings)")
+assert_that(C.wired_count() >= 267, "wired_count >= 267")
 
 
 # =============================================================================

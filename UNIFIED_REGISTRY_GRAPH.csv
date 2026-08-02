@@ -1197,3 +1197,8 @@ observable,ngc3603_scale_invariant_feedback,observable,ngc3603_full_muge_10term,
 primitive,G_OBSERVED,observable,ngc2525_sn_negative_mass_loss,term_SN = -G*M_SN/r^2
 observable,ngc2525_sn_negative_mass_loss,paper,PAPER_262,SN negative-mass-loss sign reversal
 observable,ngc2525_sn_negative_mass_loss,observable,sgra_negative_buoyancy_inversion,second negative-g channel vs field inversion (PAPER_253)
+observable,uqff_coaction_universality_master,paper,PAPER_263,Simultaneous Co-action Universality master theorem
+observable,uqff_coaction_universality_master,observable,ngc1275_agn_feedback_equilibrium,unifies AGN equilibrium (PAPER_259)
+observable,uqff_coaction_universality_master,observable,horsehead_erosion_buoyancy_universality,unifies morphology-independence (PAPER_260)
+observable,uqff_coaction_universality_master,observable,ngc3603_scale_invariant_feedback,unifies scale-invariant feedback (PAPER_261)
+observable,uqff_coaction_universality_master,observable,ngc2525_sn_negative_mass_loss,unifies dual sign-reversal (PAPER_262)
