@@ -5511,3 +5511,12 @@ RESOLVED section with the ruling recorded.
 - **(b)** Mass label/value mismatch: paper states Eta Carinae M "~150 M_sun = 2.984e31 kg", but 150 M_sun = 2.984e**32** kg (150*1.989e30). The given 2.984e31 kg = ~15 M_sun (10x low). The CP3 example uses 2.984e31 consistently, so wired with M=2.984e31 (matching the example) and flagged the "150 M_sun" label as the outlier.
 - **Ruling needed:** confirm 2.984e31 kg (15 M_sun) is the intended value vs 2.984e32 kg (150 M_sun). Confirm F_U_Bi_i=2.11e208 is a shared benchmark with PAPER_217 (same creation event) or coincidental.
 - Wired v0.241.0, status OPEN_RULING.
+
+## Q-225 — PAPER_239 THz shock + H2O conduit: example values and ratio exponent not reproducible
+- Formulas: F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w_state); F_conduit = k_conduit*(H_abund*w_state)*(rho_n/rho_ref). Constants k_thz=1.38e-23 (Boltzmann), k_conduit=8.99e9 (Coulomb).
+- **(a)** Stated example values F_thz_shock~4.56e78 N and F_conduit~3.45e67 N do NOT reproduce from the CP3 params (rho_neutron=rho_ref=1e14 => rho_n/rho_ref=1, H_abund=0.74, w_state=1). The formulas yield F_thz_shock=1.47e-19 N and F_conduit=6.65e9 N — ~97 and ~58 orders of magnitude off respectively. No single rho_n/rho_ref or scale reconciles both stated values.
+- **(b)** The sec-3 ratio F_thz_shock/F_conduit = k_thz/k_conduit*(omega_thz/omega_0)^2 is stated as "≈2.21e-17" but computes to 2.21e-29 — a 12-order exponent drift; the mantissa 2.21 is correct.
+- Reproducible and locked: (omega_thz/omega_0)^2 = 120^2 = 14400 EXACT (sec 1.3); conduit_scale = H_abund*w = 0.74; ratio mantissa 2.21.
+- Wired the DERIVED-CORRECT CP3 values (1.47e-19, 6.65e9) computed from the stated formulas; example/ratio-exponent flagged.
+- **Ruling needed:** confirm the derived-correct CP3 values, or supply the params behind the 4.56e78/3.45e67 example figures and the intended ratio exponent.
+- Wired v0.243.0, status OPEN_RULING.

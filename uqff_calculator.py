@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.242.0"
+VERSION = "0.243.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12845,4 +12845,77 @@ def _paper_238(dataset):
         'source': 'PAPER_238',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_239')
+def _paper_239(dataset):
+    """THz shock force + H2O conduit force - 26-layer star-formation (S59).
+
+    Two coupled star-formation force terms from the UQFFSource10 catalogue:
+      F_thz_shock = k_thz * (omega_thz/omega_0)^2 * (rho_n/rho_ref)
+                    * (H_abund * w_state)
+      F_conduit   = k_conduit * (H_abund * w_state) * (rho_n/rho_ref)
+    with F_SF = F_thz_shock + F_conduit.
+
+    Constants (paper-specified physical values):
+      k_thz     = 1.38e-23 J/K  (Boltzmann k_B - THz amplitude coupling)
+      k_conduit = 8.99e9 N*m^2/C^2 (Coulomb constant - COx conduit coupling,
+                  reflecting electrostatic H-O bond formation)
+      H_abund   = 0.74 cosmic hydrogen mass fraction
+      w_state   = 0 (vapour) or 1 (liquid/ice) - binary water phase gate:
+                  at w_state=0 both forces vanish (conduit scale = 0).
+
+    Reproducible: (omega_thz/omega_0)^2 = (1.2e12/1e10)^2 = 120^2 = 14400
+    EXACT (quadratic frequency amplification, sec 1.3). Ratio
+    F_thz_shock/F_conduit = k_thz/k_conduit * (omega_thz/omega_0)^2; mantissa
+    2.21 reproduces (see Q-225 on the exponent).
+
+    CP3 example (rho_neutron=rho_ref=1e14 => rho_n/rho_ref=1, w_state=1),
+    DERIVED-CORRECT from the stated formulas:
+      F_thz_shock = 1.38e-23*14400*1*0.74 = 1.47e-19 N
+      F_conduit   = 8.99e9*0.74*1         = 6.65e9  N
+
+    Q-225: the paper's stated example values F_thz_shock~4.56e78 N and
+    F_conduit~3.45e67 N do NOT reproduce from the CP3 params (formula yields
+    1.47e-19 and 6.65e9 - ~97 and ~58 orders off); no rho_n/rho_ref or scale
+    reconciles both. The sec-3 ratio is stated 2.21e-17 but computes to
+    2.21e-29 (12-order exponent drift; mantissa 2.21 correct). Wired the
+    derived-correct CP3 values; example/ratio-exponent flagged.
+    Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+    """
+    k_thz = 1.38e-23                                     # Boltzmann k_B (J/K)
+    k_conduit = 8.99e9                                   # Coulomb constant (N*m^2/C^2)
+    omega_thz = 1.2e12; omega_0 = 1.0e10                 # rad/s
+    H_abund = 0.74; w_state = 1                          # water phase gate active
+    rho_ratio = 1e14 / 1e14                              # CP3 rho_n/rho_ref = 1
+    freq_sq = (omega_thz / omega_0) ** 2                 # 14400 EXACT
+    conduit_scale = H_abund * w_state                    # 0.74
+    F_thz_shock = k_thz * freq_sq * rho_ratio * conduit_scale   # 1.47e-19
+    F_conduit = k_conduit * conduit_scale * rho_ratio           # 6.65e9
+    ratio = k_thz / k_conduit * freq_sq                  # 2.21e-29
+    return {
+        'value': {
+            'domain': '2.37 (THz shock + H2O conduit star-formation forces)',
+            'source_thread': 'grok_share_8d951e12 Source10 lines ~5980-6050',
+            'k_thz_boltzmann': k_thz,
+            'k_conduit_coulomb': k_conduit,
+            'omega_thz': omega_thz, 'omega_0': omega_0,
+            'freq_ratio_sq': freq_sq,                    # 14400 EXACT
+            'H_abund': H_abund, 'water_state': w_state,
+            'conduit_scale': conduit_scale,              # 0.74
+            'rho_n_over_ref': rho_ratio,
+            'F_thz_shock_N': F_thz_shock,                # 1.47e-19 derived
+            'F_conduit_N': F_conduit,                    # 6.65e9 derived
+            'F_SF_N': F_thz_shock + F_conduit,
+            'ratio_thz_over_conduit': ratio,             # 2.21e-29
+            'water_gate_binary': True,                   # w=0 -> both vanish
+            'dual_neutron_coupling': True,               # both scale rho_n/rho_ref
+            'novel_contributions': 5,
+            'example_drift': 'paper F_thz~4.56e78 / F_conduit~3.45e67 not reproducible (Q-225); ratio 2.21e-17 stated vs 2.21e-29 computed',
+        },
+        'formula': 'F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w); F_conduit = k_conduit*(H_abund*w)*(rho_n/rho_ref)',
+        'source': 'PAPER_239',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

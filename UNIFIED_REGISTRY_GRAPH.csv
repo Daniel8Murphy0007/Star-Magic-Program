@@ -1110,3 +1110,7 @@ observable,master_buoyancy_fubii_catalogue,observable,f_u_bi_i_two_branch,PAPER_
 primitive,G_OBSERVED,observable,vacuum_repulsion_surface_tension,k_vac = G coupling
 observable,vacuum_repulsion_surface_tension,paper,PAPER_238,F_vac_rep = G*delta_rho*M*v
 observable,vacuum_repulsion_surface_tension,observable,master_buoyancy_fubii_catalogue,third repulsive force vs F_DE/F_rel (PAPER_237)
+observable,thz_shock_force_starformation,paper,PAPER_239,F_thz_shock quadratic freq amplification 14400
+observable,h2o_conduit_force_starformation,paper,PAPER_239,F_conduit water-gated COx coupling
+observable,thz_shock_force_starformation,observable,h2o_conduit_force_starformation,combined F_SF; ratio mantissa 2.21
+observable,thz_shock_force_starformation,observable,master_buoyancy_fubii_catalogue,rho_n/rho_ref neutron factor (PAPER_237)

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.242.0", "uqff_calculator.VERSION = 0.242.0")
+assert_that(C.VERSION == "0.243.0", "uqff_calculator.VERSION = 0.243.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3363,6 +3363,17 @@ assert_that(abs(_r238['delta_rho_vac_J_m3'] - 5e-13) < 1e-15 and _r238['velocity
 assert_that(_r238['third_repulsive_force'] and _r238['vanishes_at_rest'] and _r238['r_independent'],
             "PAPER_238: 3rd repulsive force (after F_DE, F_rel); vanishes at v=0; r-independent")
 assert_that(C.wired_count() >= 242, "wired_count >= 242")
+
+_r239 = C.calc('PAPER_239')['value']
+assert_that(_r239['freq_ratio_sq'] == 14400.0,
+            "PAPER_239: (omega_thz/omega_0)^2 = (120)^2 = 14400 EXACT (quadratic freq amplification)")
+assert_that(abs(_r239['F_thz_shock_N'] - 1.4705e-19) < 1e-22 and abs(_r239['F_conduit_N'] - 6.6526e9) < 1e6,
+            "PAPER_239: CP3 derived-correct F_thz=1.47e-19, F_conduit=6.65e9 (rho_ratio=1, w=1); example 4.56e78/3.45e67 not reproducible Q-225")
+assert_that(abs(_r239['ratio_thz_over_conduit'] - 2.21e-29) < 1e-31 and _r239['conduit_scale'] == 0.74,
+            "PAPER_239: ratio mantissa 2.21 (computed 2.21e-29 vs paper 2.21e-17 Q-225); conduit_scale=H_abund*w=0.74")
+assert_that(_r239['water_gate_binary'] and _r239['dual_neutron_coupling'],
+            "PAPER_239: binary water phase gate (w=0 => both vanish); dual rho_n/rho_ref coupling")
+assert_that(C.wired_count() >= 243, "wired_count >= 243")
 
 
 # =============================================================================

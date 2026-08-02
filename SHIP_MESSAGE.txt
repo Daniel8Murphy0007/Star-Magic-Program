@@ -1,26 +1,24 @@
-v0.242.0 BAND 1: PAPER_238 wired - VACUUM REPULSION SURFACE-TENSION (CLEAN)
+v0.243.0 BAND 1: PAPER_239 wired - THz SHOCK + H2O CONDUIT STAR-FORMATION (Q-225)
 
-PAPER_238 (UQFF Vacuum Repulsion Force - Surface-Tension Analogy F_vac_rep,
-S59, grok_share_8d951e12 Source10) wired as one dispatch (CLEAN, WIRED).
+PAPER_239 (UQFF THz Shock Force and H2O Conduit Force - 26-Layer
+Star-Formation Coupling, S59, grok_share_8d951e12 Source10) wired as one
+dispatch (OPEN_RULING, Q-225).
 
-The third distinct UQFF repulsive force (after F_DE and F_rel) and the only
-one that couples to instantaneous velocity:
+Two coupled star-formation force terms:
+- F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w_state);
+  k_thz=1.38e-23 (Boltzmann); (1.2e12/1e10)^2 = 120^2 = 14400 EXACT
+- F_conduit = k_conduit*(H_abund*w_state)*(rho_n/rho_ref); k_conduit=8.99e9
+  (Coulomb constant, COx conduit coupling)
+- Binary water phase gate w_state{0,1}: at w=0 both vanish; H_abund=0.74
 
-    F_vac_rep = k_vac * delta_rho_vac * M * v
+CP3 derived-correct (rho_ratio=1, w=1): F_thz_shock=1.47e-19 N,
+F_conduit=6.65e9 N.
 
-- k_vac = G (novel contribution 4: reuses the gravitational constant as
-  coupling for dimensional consistency with the DPM-seeded sector)
-- delta_rho_vac = rho_vac_local - rho_vac_ref (J/m^3)
-- r-independent (surface effect), linear in v, vanishes at v=0 and at
-  uniform vacuum; distinct from F_DE = (Lambda*c^2/3)*r (radial,
-  velocity-independent)
+Q-225: (a) paper example values F_thz~4.56e78 / F_conduit~3.45e67 not
+reproducible from CP3 params (~97 and ~58 OOM off); (b) sec-3 ratio stated
+2.21e-17 vs computed 2.21e-29 (12-order exponent drift, mantissa 2.21 correct).
+Wired derived-correct CP3 values. Appendix drift (VDS 1.894, kg/m^3, beta_i)
+auto-corrected per charter.
 
-CP3 Eta Carinae wind (reproduces exactly): M=2.984e31, v=2e6,
-delta_rho_vac=5e-13 => F_vac_rep = 1.99e15 N.
-
-CLEAN - no ruling. The sec-3 "~1e18" ratio and abstract "1.23e45 N" are
-illustrative figures with unspecified mass (not canonical observables).
-Appendix drift (VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
-
-Gate: 1531/0. Registry 524 rows / 1111 edges / 242 ledgers (measured).
-Campaign: 242/2,255. Next: PAPER_239.
+Gate: 1536/0. Registry 526 rows / 1115 edges / 243 ledgers (measured).
+Campaign: 243/2,255. Next: PAPER_240.

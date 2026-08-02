@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.243.0] — 2026-08-02 — BAND 1: PAPER_239 — THz SHOCK + H2O CONDUIT STAR-FORMATION (Q-225)
+
+### Added
+- **PAPER_239 dispatch** — two coupled star-formation force terms (Session 59, grok_share_8d951e12 Source10).
+  - **THz shock force:** F_thz_shock = k_thz·(ω_thz/ω₀)²·(ρ_n/ρ_ref)·(H_abund·w_state); k_thz = 1.38e-23 (Boltzmann); (1.2e12/1e10)² = 120² = 14400 EXACT (quadratic frequency amplification).
+  - **H₂O conduit force:** F_conduit = k_conduit·(H_abund·w_state)·(ρ_n/ρ_ref); k_conduit = 8.99e9 (Coulomb constant, COx conduit coupling).
+  - **Binary water phase gate:** w_state ∈ {0,1}; at w=0 both forces vanish. H_abund = 0.74 cosmic hydrogen fraction.
+  - **CP3 derived-correct values** (ρ_n/ρ_ref=1, w=1): F_thz_shock = 1.47e-19 N, F_conduit = 6.65e9 N.
+- Gate +4 assertions (1531 → 1536, 0 failures).
+- Registry: +2 rows (526), +4 edges (1115), +1 citation (243).
+
+### Ruling filed
+- **Q-225** — (a) the paper's stated example values F_thz_shock~4.56e78 N and F_conduit~3.45e67 N do NOT reproduce from the CP3 params (formula yields 1.47e-19 and 6.65e9 — ~97 and ~58 orders off); (b) the sec-3 ratio is stated 2.21e-17 but computes to 2.21e-29 (12-order exponent drift; mantissa 2.21 correct). Wired the derived-correct CP3 values; example/ratio-exponent flagged.
+
+### Notes
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.242.0] — 2026-08-02 — BAND 1: PAPER_238 — VACUUM REPULSION SURFACE-TENSION (CLEAN)
 
 ### Added

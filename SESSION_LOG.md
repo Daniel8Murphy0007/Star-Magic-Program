@@ -2660,3 +2660,32 @@ system mass (not canonical observables). Appendix boilerplate drift
 
 Gate: 1531/0. Registry 524 rows / 1111 edges / 242 ledgers (measured).
 Campaign: 242/2,255. Next: PAPER_239.
+
+---
+
+## 2026-08-02 — v0.243.0 — BAND 1: PAPER_239 — THz SHOCK + H2O CONDUIT STAR-FORMATION (Q-225)
+
+PAPER_239 (UQFF THz Shock Force and H2O Conduit Force — 26-Layer
+Star-Formation Coupling, Session 59, grok_share_8d951e12 Source10 lines
+~5980-6050) wired as one dispatch (OPEN_RULING, Q-225).
+
+Two coupled star-formation force terms:
+- F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w_state);
+  k_thz=1.38e-23 (Boltzmann); (1.2e12/1e10)^2 = 120^2 = 14400 EXACT
+  (quadratic frequency amplification, sec 1.3).
+- F_conduit = k_conduit*(H_abund*w_state)*(rho_n/rho_ref); k_conduit=8.99e9
+  (Coulomb constant, COx conduit coupling, electrostatic H-O bond formation).
+- Binary water phase gate w_state{0,1}: at w=0 both vanish. H_abund=0.74.
+
+CP3 derived-correct (rho_n/rho_ref=1, w=1): F_thz_shock=1.47e-19 N,
+F_conduit=6.65e9 N.
+
+Q-225: (a) stated example values F_thz~4.56e78 N / F_conduit~3.45e67 N do NOT
+reproduce from the CP3 params (~97 and ~58 OOM off); no single rho_ratio/scale
+reconciles both. (b) sec-3 ratio stated 2.21e-17 but computes to 2.21e-29
+(12-order exponent drift; mantissa 2.21 correct). Wired the derived-correct CP3
+values; example/ratio-exponent flagged. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1536/0. Registry 526 rows / 1115 edges / 243 ledgers (measured).
+Campaign: 243/2,255. Next: PAPER_240.
