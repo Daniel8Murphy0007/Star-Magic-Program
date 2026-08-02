@@ -1,31 +1,31 @@
-v0.238.0 BAND 1: PAPER_234 wired - SGR A* ENHANCED (CLEAN)
+v0.239.0 BAND 1: PAPER_235 wired - ANTENNAE DOUBLE-I(t) MERGER (CLEAN)
 
-PAPER_234 (Sagittarius A* Enhanced - Secular SMBH Accretion Mass Growth
-M(t), Gauss->Tesla B-Field Conversion, Kerr Precession DM Correction,
-S58) wired as one dispatch (CLEAN, WIRED).
+PAPER_235 (Antennae Galaxies (NGC 4038/4039) Enhanced - Double I(t)
+Merger Modulation Applied to Both Base Gravity and UQFF Term, S58)
+wired as one dispatch (CLEAN, WIRED).
 
 Physics (clean arithmetic - all reproduce):
-- Sagittarius A* (4.297e6 M_sun SMBH at the Galactic Centre) gets three
-  MUGE terms absent from the Session-53 spin-drag calculator (Doc 3
-  enhanced).
-- Secular accretion mass growth M(t) = M_init*(1 + Mdot0*e^-t/tau_acc)
-  with Mdot0=0.01, tau_acc=9 Gyr. Over the Hubble time (13.8 Gyr):
-  growth = 0.01*e^-13.8/9 = 0.00216 -> Sgr A* has grown ~0.22% over its
-  lifetime (VLBI/S-star consistent, current mass within 2% of mean).
-- Gauss->Tesla unit conversion B_T(t) = B_G(t)*1e-4: at t=0, B_G=1e4 G
-  -> B_T=1 T, correcting a Gauss-vs-Tesla inconsistency in earlier
-  implementations; decaying B_G, tau_B=10 Gyr.
-- Kerr precession DM perturbation pert_2 = 3*G*M/r^3*sin(theta_prec) =
-  3*G*M/r^3*sin(30 deg) = 1.5*G*M/r^3 (theta_prec=30 deg for Kerr spin
-  a*~0.9) - the Lense-Thirring frame-drag projected onto the DM density
-  gradient.
-- Canonical result at t=1 Myr (M ~ 1.01*M_init): a_grav = G*1.01*
-  M_init/r_s^2 = 3.57e6 m/s^2 (M_init=8.547e36 kg, r_s=1.27e10 m).
-  Verified. Full observational fidelity with current multi-wavelength
-  data. Doc 3 enhanced of the grok_share_8d951e12 thread.
+- The Antennae (NGC 4038 + NGC 4039), the nearest major galaxy merger
+  (z=0.0105, ~22 Mpc) and the archetype of tidal-interaction physics,
+  with a novel double-interaction scheme (Doc 14 enhanced).
+- Double interaction modulation: the tidal factor I(t)=I_0*e^-t/
+  tau_merger is applied DOUBLY and INDEPENDENTLY - to both the base
+  gravity a_base=U_g1*(1+H_z*t)*(1-B/B_crit)*(1+I(t)) AND the UQFF
+  correction a_Ug=(U_g1+U_g4)*(1+f_TRZ)*(1+I(t)). In the standard scheme
+  a_Ug does NOT carry I(t); here the large-scale potential and the local
+  UQFF buoyancy field are independently disturbed by the tidal encounter.
+- At the canonical merger epoch t=300 Myr: I=0.1*e^-300/400=0.1*e^-0.75
+  =0.0472 (~4.7% modulation on both term1 and U_g); I_0=0.1,
+  tau_merger=400 Myr. Verified.
+- Specific-SFR amplitude SFR_factor=SFR/M_total=20/(2e11)=1e-10 yr^-1
+  (PAPER_232 method); (1+f_TRZ)=1.1 (registry F_TRZ=0.1).
+- Local companion to the HUDF double-I(t) (PAPER_231): Antennae local
+  z=0.0105, I_0=0.1, tau=400 Myr (single major merger), H(z)~H0; HUDF
+  cosmic z=3.5, I_0=0.05, tau=1 Gyr, H(z) dominant. M_0=2e11 M_sun.
+  Doc 14 enhanced of the grok_share_8d951e12 thread.
 
 No ruling filed - the arithmetic is clean. Appendix boilerplate drift
 (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1512/0. Registry 519 rows / 1095 edges / 238 ledgers (measured).
-Campaign: 238/2,255. Next: PAPER_235.
+Gate: 1517/0. Registry 520 rows / 1098 edges / 239 ledgers (measured).
+Campaign: 239/2,255. Next: PAPER_236.

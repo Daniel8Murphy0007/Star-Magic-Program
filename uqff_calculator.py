@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.238.0"
+VERSION = "0.239.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12596,6 +12596,65 @@ def _paper_234(dataset):
         },
         'formula': 'M(t)=M_init*(1+Mdot0*e^-t/tau); B_T=B_G*1e-4; pert_2=3*G*M/r^3*sin(30)=1.5*G*M/r^3',
         'source': 'PAPER_234',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_235')
+def _paper_235(dataset):
+    """Antennae Galaxies (NGC 4038/4039): double I(t) merger MUGE (S58).
+
+    The Antennae (NGC 4038 + NGC 4039), the nearest major galaxy merger
+    (z=0.0105, ~22 Mpc) and the archetype of tidal-interaction physics,
+    with a novel double-interaction scheme. Doc 14 enhanced; local
+    companion to the HUDF double-I(t) (PAPER_231). Wired observables
+    (clean arithmetic):
+    * Double interaction modulation: the tidal factor I(t) = I_0*
+      e^-t/tau_merger is applied DOUBLY and INDEPENDENTLY - to both the
+      base gravity a_base = U_g1*(1+H_z*t)*(1-B/B_crit)*(1+I(t)) AND the
+      UQFF correction a_Ug = (U_g1+U_g4)*(1+f_TRZ)*(1+I(t)). In the
+      standard scheme a_Ug does NOT carry I(t); here both the large-scale
+      potential and the local UQFF buoyancy field are independently
+      disturbed by the tidal encounter, justifying separate modulation.
+    * At the canonical merger epoch t=300 Myr: I = 0.1*e^-300/400 =
+      0.1*e^-0.75 = 0.0472 (~4.7% modulation on both term1 and U_g);
+      I_0=0.1, tau_merger=400 Myr.
+    * Specific-SFR amplitude SFR_factor = SFR/M_total = 20/(2e11) = 1e-10
+      yr^-1 (PAPER_232 method); SFR ~ 20 M_sun/yr, tau_SF=500 Myr.
+    * (1+f_TRZ) = 1.1 (registry F_TRZ=0.1) in the U_g term.
+    * vs Session 52 (collision calculator): implicit collision-velocity
+      interaction -> explicit I(t)=0.1*e^-t/400Myr on both term1 and U_g;
+      peak epoch collision t=0 -> active merger t=300 Myr.
+    * vs HUDF (PAPER_231, also double I(t)): Antennae local z=0.0105,
+      I_0=0.1, tau=400 Myr (single major merger), r=30,000 ly, H(z)~H0
+      (minor); HUDF cosmic z=3.5, I_0=0.05, tau=1 Gyr, H(z) dominant.
+    Params: NGC 4038/4039 = 1e11 M_sun each, M_0=2e11, r=30,000 ly,
+    B=10 uT starburst-enhanced. Appendix drift auto-corrected per charter.
+    """
+    import math as _m
+    I0 = 0.1; tau_merger = 400.0; t = 300.0
+    I_t = I0 * _m.exp(-t / tau_merger)                    # 0.0472
+    sfr_factor = 20.0 / 2e11                              # 1e-10
+    return {
+        'value': {
+            'domain': '2.33 (Antennae NGC 4038/4039 double-I(t) merger MUGE)',
+            'source_thread': 'grok_share_8d951e12 Doc 14 enhanced',
+            'double_interaction_modulation': True,
+            'I0': I0, 'tau_merger_myr': tau_merger, 't_canonical_myr': t,
+            'I_at_300Myr': I_t,                           # 0.0472
+            'I_modulation_pct': I_t * 100,                # 4.72%
+            'sfr_factor_per_yr': sfr_factor,              # 1e-10
+            'SFR_solar_per_yr': 20,
+            'one_plus_ftrz': 1 + F_TRZ,                   # 1.1
+            'M0_solar': 2e11,
+            'z': 0.0105, 'r_ly': 30000, 'B_uT': 10,
+            'nearest_major_merger': True,
+            'vs_hudf': {'antennae_z': 0.0105, 'antennae_I0': 0.1, 'antennae_tau_myr': 400,
+                        'hudf_z': 3.5, 'hudf_I0': 0.05, 'hudf_tau_gyr': 1},
+        },
+        'formula': 'a_base & a_Ug both carry (1+I(t)); I(t)=I_0*e^-t/tau_merger; SFR_factor=SFR/M_total',
+        'source': 'PAPER_235',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 238 (16 ✓, 222 ⚠ OPEN_RULING)
+- **Wired:** 239 (17 ✓, 222 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 2016
+- **Not yet touched:** 2015
 
 ---
 
@@ -1493,7 +1493,7 @@
 | ✓ | PAPER_232 | NGC1792 Stellar Forge Starburst MUGE |
 | ✓ | PAPER_233 | SGR1745 BH Proximity Enhanced MUGE |
 | ✓ | PAPER_234 | SgrAStar Accretion Precession Enhanced MUGE |
-| ⬜ | PAPER_235 | Antennae NGC4038 Double Merger Interaction MUGE |
+| ✓ | PAPER_235 | Antennae NGC4038 Double Merger Interaction MUGE |
 | ⬜ | PAPER_236 | UQFF Learning Advancement Meta Assessment |
 | ⬜ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF |
 | ⬜ | PAPER_238 | UQFF Vacuum Repulsion Surface Tension Analogy |

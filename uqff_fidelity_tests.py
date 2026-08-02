@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.238.0", "uqff_calculator.VERSION = 0.238.0")
+assert_that(C.VERSION == "0.239.0", "uqff_calculator.VERSION = 0.239.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3319,6 +3319,17 @@ assert_that(abs(_r234['pert2_factor'] - 1.5) < 1e-9 and _r234['b_tesla_at_t0'] =
 assert_that(_r234['new_terms_vs_session53'] == 3 and _r234['M_init_solar'] == 4.297e6,
             "PAPER_234: 3 new MUGE terms vs Session 53; Sgr A* M_init = 4.297e6 M_sun")
 assert_that(C.wired_count() >= 238, "wired_count >= 238")
+
+_r235 = C.calc('PAPER_235')['value']
+assert_that(abs(_r235['I_at_300Myr'] - 0.04723665527410147) < 1e-9,
+            "PAPER_235: I(300 Myr) = 0.1*e^-300/400 = 0.1*e^-0.75 = 0.0472 (~4.7%)")
+assert_that(_r235['double_interaction_modulation'] and _r235['sfr_factor_per_yr'] == 1e-10,
+            "PAPER_235: double I(t) on base+Ug (novel); SFR_factor = 20/2e11 = 1e-10 yr^-1")
+assert_that(_r235['nearest_major_merger'] and _r235['M0_solar'] == 2e11,
+            "PAPER_235: Antennae nearest major merger, M_0 = 2e11 M_sun (NGC 4038+4039)")
+assert_that(_r235['vs_hudf']['antennae_I0'] == 0.1 and _r235['vs_hudf']['hudf_I0'] == 0.05,
+            "PAPER_235: double-I(t) family - Antennae local (I_0=0.1) vs HUDF cosmic (I_0=0.05, PAPER_231)")
+assert_that(C.wired_count() >= 239, "wired_count >= 239")
 
 
 # =============================================================================

@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.239.0] — 2026-07-31 — BAND 1: PAPER_235 — ANTENNAE DOUBLE-I(t) MERGER (CLEAN)
+
+### Added
+- **PAPER_235 wired** (✓ CLEAN): the Antennae Galaxies (NGC 4038/4039), the nearest
+  major galaxy merger (z=0.0105, ~22 Mpc), with a novel double-interaction scheme.
+  The tidal factor `I(t) = I_0·e^-t/τ_merger` is applied doubly and independently
+  to both the base gravity `a_base = U_g1·(1+H_z·t)·(1-B/B_crit)·(1+I(t))` and the
+  UQFF correction `a_Ug = (U_g1+U_g4)·(1+f_TRZ)·(1+I(t))` — in the standard scheme
+  a_Ug does not carry I(t). At the canonical merger epoch t=300 Myr:
+  `I = 0.1·e^-0.75 = 0.0472` (~4.7% modulation on both terms). Specific-SFR
+  amplitude SFR_factor = 20/(2e11) = 1e-10 yr⁻¹ (PAPER_232 method). Local companion
+  to the HUDF double-I(t) (PAPER_231): Antennae I_0=0.1, τ=400 Myr (single merger),
+  H(z)~H0; HUDF I_0=0.05, τ=1 Gyr, H(z) dominant. Doc 14 enhanced of the
+  grok_share_8d951e12 thread.
+- Clean arithmetic — no ruling filed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1512 → 1517 (+5). Registry 520 rows / 1098 edges / 239 ledgers.
+
+---
+
 ## [0.238.0] — 2026-07-31 — BAND 1: PAPER_234 — SGR A* ENHANCED (CLEAN)
 
 ### Added

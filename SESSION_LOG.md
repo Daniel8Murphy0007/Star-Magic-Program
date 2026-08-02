@@ -2580,3 +2580,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1512/0. Registry 519 rows / 1095 edges / 238 ledgers. Campaign: 238/2,255 (16 ✓, 222 ⚠). Next: PAPER_235.
 
 ---
+
+## 2026-07-31 — v0.239.0 — BAND 1: PAPER_235 (CLEAN)
+
+- PAPER_235 wired (✓ CLEAN): Antennae (NGC 4038/4039), nearest major merger (z=0.0105), double-interaction MUGE. I(t)=I_0·e^-t/τ_merger applied DOUBLY to both a_base and a_Ug (novel; standard scheme has a_Ug without I(t)). I(300 Myr)=0.1·e^-0.75=0.0472 (~4.7%), I_0=0.1 τ=400 Myr. SFR_factor=20/2e11=1e-10 (PAPER_232 method), (1+f_TRZ)=1.1. Local companion to HUDF double-I(t) (PAPER_231). Doc 14 enhanced of 8d951e12. Clean arithmetic. Appendix drift auto-corrected.
+- Gate 1517/0. Registry 520 rows / 1098 edges / 239 ledgers. Campaign: 239/2,255 (17 ✓, 222 ⚠). Next: PAPER_236.
+
+---

@@ -1094,3 +1094,6 @@ primitive,MU_0,observable,sgr1745_bh_proximity_enhanced,a_mag = B^2/(2mu0)*V/(Mr
 observable,sgr1745_bh_proximity_enhanced,paper,PAPER_233,enhanced SGR 1745 MUGE
 observable,sgra_accretion_precession_enhanced,paper,PAPER_234,Sgr A* enhanced MUGE
 observable,sgra_accretion_precession_enhanced,observable,sgr1745_bh_proximity_enhanced,Galactic-Centre pair (Doc 3/14 enhanced)
+primitive,F_TRZ,observable,antennae_double_interaction_merger,(1+f_TRZ) in a_Ug
+observable,antennae_double_interaction_merger,paper,PAPER_235,double I(t) merger
+observable,antennae_double_interaction_merger,observable,hudf_z35_double_interaction_muge,double-I(t) family (local vs cosmic)
