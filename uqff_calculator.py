@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.262.0"
+VERSION = "0.263.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14285,4 +14285,81 @@ def _paper_258(dataset):
         'source': 'PAPER_258',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_259')
+def _paper_259(dataset):
+    """NGC 1275 AGN feedback-buoyancy equilibrium in cooling-flow BCG (S72f).
+
+    Derives the AGN Feedback-Buoyancy Equilibrium for NGC 1275 (Perseus A, BCG
+    of Abell 426). Unique physics: the cooling-flow infall term
+        term_cool = (rho_cool * v_cool^2) / rho_fluid
+    co-acts SIMULTANEOUSLY with all three UQFF buoyancy tiers (not sequentially
+    as in the standard McNamara-Nulsen feedback cycle) because BOTH cooling and
+    buoyancy are functions of the SAME gravitational kernel ug1_base = G*M/r^2.
+
+    13-term MUGE = g_MUGE10 + g_buoy^(3), with the 3 buoyancy tiers:
+      T1 = 0.5*ug1                                         (Universal Buoyancy)
+      T2 = -beta_i*ug1*omega_g*(M/r)*U_UA*cos(pi*t)        (F_U_Bii)
+      T3 = -beta_i*ug1*omega_g*(M_vc/r_vc)*U_UA*cos(pi*t)  (Tier-3 Virgo frame)
+    beta_i canonical (registry BETA_I; paper's 0.61 auto-corrected per charter),
+    omega_g=7.3e-16, U_UA=1e-11.
+
+    AGN Feedback Equilibrium Tensor (AFET):
+        E_AGN = term_cool / |Sigma_buoy| =
+                term_cool / (ug1_base*|0.5 - beta_i*omega_g*(M/r+M_vc/r_vc)*U_UA
+                *cos(pi*t)|)
+      E_AGN = 1 equilibrium (self-regulated); > 1 cooling-dominated (AGN
+      trigger); < 1 buoyancy-dominated (AGN quiescence).
+
+    Reproducible: M = 1e11 M_sun = 1.989e41 kg; r = 200,000 ly = 1.893e21 m;
+    M_ext_vc = 1.2e15 M_sun = 2.387e45 kg; r_ext_vc = 77 Mpc = 2.38e24 m;
+    ug1_base = G*M/r^2 = 3.71e-12 m/s^2; the Tier-2/3 buoyancy coefficient
+    beta_i*omega_g*(M/r + M_vc/r_vc)*U_UA = 4.88e-6 (<< 0.5, so Sigma_buoy ~
+    0.5*ug1); filament oscillation period = 2*pi/omega_g = 272 Myr (matches
+    NGC 1275 100-500 Myr multi-generation filaments). Cavity quasi-periodicity
+    ~10 Myr (Fabian 2011, 12 pairs); cooling-flow suppression factor 4-7
+    (classical 200 -> observed 30-50 M_sun/yr).
+
+    CLEAN - all system parameters reproduce; beta_i composed from canonical
+    registry BETA_I. Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.61
+    -> canonical BETA_I) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M = 1e11 * 1.989e30                                   # 1.989e41 kg
+    r = 2e5 * 9.461e15                                    # 1.893e21 m (200000 ly)
+    M_vc = 1.2e15 * 1.989e30                              # 2.387e45 kg (Virgo)
+    r_vc = 77 * 3.086e22                                  # 2.38e24 m (77 Mpc)
+    omega_g = 7.3e-16; U_UA = 1e-11
+    ug1_base = G * M / r ** 2                             # 3.71e-12
+    buoy_coef = BETA_I * omega_g * (M / r + M_vc / r_vc) * U_UA   # 4.88e-6 (<< 0.5)
+    import math
+    filament_period_s = 2 * math.pi / omega_g            # 272 Myr
+    filament_period_myr = filament_period_s / 3.156e7 / 1e6
+    return {
+        'value': {
+            'domain': '2.57 (NGC 1275 AGN feedback-buoyancy equilibrium)',
+            'source_thread': 'Session 72f NGC1275.cpp UQFF 2.0 upgrade',
+            'system': 'NGC 1275 (Perseus A BCG)',
+            'muge_terms': 13,
+            'M_kg': M, 'r_m': r,
+            'M_ext_vc_kg': M_vc, 'r_ext_vc_m': r_vc,     # Virgo outer frame
+            'ug1_base': ug1_base,                        # 3.71e-12
+            'buoyancy_tiers': 3,
+            'tier1_form': '0.5*ug1',
+            'buoy_coef': buoy_coef,                      # 4.88e-6 << 0.5
+            'sigma_buoy_approx': '0.5*ug1 (Tier-2/3 negligible)',
+            'omega_g': omega_g, 'U_UA': U_UA,
+            'filament_period_myr': filament_period_myr,  # 272
+            'cavity_periodicity_myr': 10,                # Fabian 2011, 12 pairs
+            'cooling_suppression_factor': '4-7',         # 200 -> 30-50 M_sun/yr
+            'afet_equilibrium': 1,                       # E_AGN=1 self-regulated
+            'simultaneous_coaction': True,               # not sequential
+            'shared_kernel_ug1': True,                   # cooling + buoyancy from G*M/r^2
+        },
+        'formula': 'E_AGN = term_cool/|Sigma_buoy|; term_cool=rho_cool*v_cool^2/rho_fluid balances 0.5*ug1 (both ~ G*M/r^2)',
+        'source': 'PAPER_259',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

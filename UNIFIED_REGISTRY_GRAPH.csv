@@ -1182,3 +1182,7 @@ observable,multimessenger_uqff_validator,paper,PAPER_258,Multi-Messenger observa
 observable,multimessenger_uqff_validator,observable,sn1006_typeia_snr_fubi,classifies F_U_Bi from PAPER_250-257
 observable,multimessenger_uqff_validator,observable,sgra_negative_buoyancy_inversion,kinematic channel for negative buoyancy (PAPER_253)
 observable,multimessenger_uqff_validator,observable,cassiopeia_a_class_completeness,ALMA cross-validation of Cas A (PAPER_257)
+primitive,G_OBSERVED,observable,ngc1275_agn_feedback_equilibrium,ug1_base = G*M/r^2 shared kernel
+primitive,BETA_I,observable,ngc1275_agn_feedback_equilibrium,beta_i canonical in Tier-2/3 buoyancy
+observable,ngc1275_agn_feedback_equilibrium,paper,PAPER_259,AGN feedback-buoyancy equilibrium AFET
+observable,ngc1275_agn_feedback_equilibrium,observable,ngc3603_full_muge_10term,cooling term unique vs NGC3603 pressure term (PAPER_243)

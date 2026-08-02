@@ -1,24 +1,23 @@
-v0.262.0 BAND 1: PAPER_258 wired - MULTI-MESSENGER UQFF VALIDATOR (Q-238)
+v0.263.0 BAND 1: PAPER_259 wired - NGC 1275 AGN FEEDBACK EQUILIBRIUM (CLEAN)
 
-PAPER_258 (Multi-Messenger UQFF Validator - ALMA, EHT, and Chandra Observational
-Detection Map, S72d, ALMA Cycle 12, CondensedPhysics3.py) wired as one dispatch
-(OPEN_RULING, Q-238). First CP3 class mapping the F_U_Bi_i integrals
-(PAPER_250-257) to facility-specific observational detection thresholds.
+PAPER_259 (NGC 1275 - AGN Feedback-Buoyancy Equilibrium in Cooling-Flow BCGs,
+S72f, NGC1275.cpp UQFF 2.0 upgrade) wired as one dispatch (CLEAN, WIRED). New
+Session 72f module thread.
 
-Three channels: isotopic (ALMA - F_neutron>=1e6 -> deuterium/13C), kinematic
-(VLT/ACA - v_outflow=sqrt(2|F_U_Bi|/M_gas) negative buoyancy), X-ray flare
-(Chandra/IXPE - f_flare_pred=k_flare*|F_U_Bi|/F0, k_flare=1e-76).
+NGC 1275 (Perseus A BCG) 13-term MUGE. Simultaneous co-action: the cooling-flow
+term term_cool=(rho_cool*v_cool^2)/rho_fluid co-acts SIMULTANEOUSLY (not
+sequentially) with all 3 UQFF buoyancy tiers - both cooling and buoyancy are
+functions of the same kernel ug1_base=G*M/r^2.
 
-Detection score (0-3): 1[iso]+1[kin]+1[flare]; alma_recommended=score>=2.
-Class systems score 2 -> recommended.
+AFET: E_AGN=term_cool/|Sigma_buoy|; =1 equilibrium, >1 cooling-dominated
+(AGN trigger), <1 buoyancy-dominated (quiescence).
 
-Reproducible: f_flare_sgrA=1/86400=1.157e-5 Hz (~1/day); deuterium=1e-5,
-carbon13=0.01 at F_neutron=1e6.
+Reproducible: M=1e11 M_sun=1.989e41 kg; r=200000 ly=1.893e21 m; Virgo frame
+M_ext_vc=2.387e45 kg / r_ext_vc=2.38e24 m; ug1_base=3.71e-12; buoy coef 4.88e-6
+(<<0.5); filament period 272 Myr; cooling suppression 4-7.
 
-Q-238: flare-calibration f_flare_pred ~1.15e131 stated but k_flare/F0=5.46e-148
-(paper's 5.46e-78 drops 70 orders) -> 1.15e61 Hz. Both far above 1/day,
-classification unaffected. Wired derived-correct 1.15e61. Appendix drift
-auto-corrected per charter.
+CLEAN - all params reproduce; beta_i from canonical registry BETA_I. Appendix
+drift auto-corrected per charter.
 
-Gate: 1631/0. Registry 547 rows / 1183 edges / 262 ledgers (measured).
-Campaign: 262/2,255. Next: PAPER_259.
+Gate: 1636/0. Registry 548 rows / 1187 edges / 263 ledgers (measured).
+Campaign: 263/2,255. Next: PAPER_260.

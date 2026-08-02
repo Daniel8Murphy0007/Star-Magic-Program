@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 262 (25 ✓, 237 ⚠ OPEN_RULING)
+- **Wired:** 263 (26 ✓, 237 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1992
+- **Not yet touched:** 1991
 
 ---
 
@@ -1517,7 +1517,7 @@
 | ⚠ | PAPER_256 | CrabNebula M1 DPM Geometry Compact Visible Diffuse Invisible | Q-236
 | ⚠ | PAPER_257 | CassiopeiaA SNR Force Equivalence Class 53Order Extension | Q-237
 | ⚠ | PAPER_258 | MultiMessenger UQFF Validator ALMA EHT Chandra Observational | Q-238
-| ⬜ | PAPER_259 | NGC1275 AGN Feedback Buoyancy Equilibrium Cooling Flow BCG |
+| ✓ | PAPER_259 | NGC1275 AGN Feedback Buoyancy Equilibrium Cooling Flow BCG | CLEAN
 | ⬜ | PAPER_260 | HorseheadNebula Universal Erosion Buoyancy Coupling PDR Structural Form Independ |
 | ⬜ | PAPER_261 | NGC3603 Dual Dynamic Feedback Equilibrium Timescale Scale Invariant Theorem YMC |
 | ⬜ | PAPER_262 | NGC2525 SN TypeIa Negative Mass Loss Gravitational Sign Reversal UQFF |

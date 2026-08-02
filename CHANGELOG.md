@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.263.0] — 2026-08-02 — BAND 1: PAPER_259 — NGC 1275 AGN FEEDBACK EQUILIBRIUM (CLEAN)
+
+### Added
+- **PAPER_259 dispatch** — NGC 1275 (Perseus A BCG) AGN feedback-buoyancy equilibrium (Session 72f, NGC1275.cpp). A 13-term MUGE.
+  - **Simultaneous co-action:** the cooling-flow term term_cool = (ρ_cool·v_cool²)/ρ_fluid co-acts SIMULTANEOUSLY (not sequentially) with all three UQFF buoyancy tiers — because both cooling and buoyancy are functions of the same kernel ug1_base = G·M/r².
+  - **AGN Feedback Equilibrium Tensor (AFET):** E_AGN = term_cool/|Σ_buoy|; =1 equilibrium (self-regulated), >1 cooling-dominated (AGN trigger), <1 buoyancy-dominated (quiescence).
+  - **Reproducible:** M = 1e11 M_sun = 1.989e41 kg; r = 200,000 ly = 1.893e21 m; Virgo outer frame M_ext_vc = 2.387e45 kg / r_ext_vc = 77 Mpc = 2.38e24 m; ug1_base = 3.71e-12 m/s²; Tier-2/3 buoy coefficient 4.88e-6 (≪0.5); filament oscillation period 2π/ω_g = 272 Myr (matches 100–500 Myr filaments); cooling suppression factor 4–7.
+- Gate +4 assertions (1631 → 1636, 0 failures).
+- Registry: +1 row (548), +4 edges (1187), +1 citation (263).
+
+### Notes
+- CLEAN — all system parameters reproduce; β_i composed from canonical registry BETA_I (paper's 0.61 auto-corrected per charter).
+- Appendix boilerplate drift (VDS 1.894, kg/m³) auto-corrected per charter.
+
+---
+
 ## [0.262.0] — 2026-08-02 — BAND 1: PAPER_258 — MULTI-MESSENGER UQFF VALIDATOR (Q-238)
 
 ### Added

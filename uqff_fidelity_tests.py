@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.262.0", "uqff_calculator.VERSION = 0.262.0")
+assert_that(C.VERSION == "0.263.0", "uqff_calculator.VERSION = 0.263.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3583,6 +3583,17 @@ assert_that(abs(_r258['f_flare_pred_class_derived'] - 1.153e61) < 1e58,
 assert_that(_r258['equivalence_class_expected_score'] == 2 and _r258['alma_recommended_threshold'] == 2 and _r258['bridges_theory_to_observation'],
             "PAPER_258: detection_score in {0,3}; class systems score 2 -> alma_recommended; bridges theory to observation")
 assert_that(C.wired_count() >= 262, "wired_count >= 262")
+
+_r259 = C.calc('PAPER_259')['value']
+assert_that(abs(_r259['M_kg'] - 1.989e41) < 1e38 and abs(_r259['r_m'] - 1.8922e21) < 1e18 and abs(_r259['ug1_base'] - 3.708e-12) < 1e-15,
+            "PAPER_259: M = 1e11 M_sun = 1.989e41 kg; r = 200000 ly = 1.893e21 m; ug1_base = G*M/r^2 = 3.71e-12 (reproduce)")
+assert_that(abs(_r259['M_ext_vc_kg'] - 2.3868e45) < 1e42 and abs(_r259['r_ext_vc_m'] - 2.3762e24) < 1e21,
+            "PAPER_259: Virgo outer frame M_ext_vc = 1.2e15 M_sun = 2.387e45 kg; r_ext_vc = 77 Mpc = 2.38e24 m")
+assert_that(abs(_r259['filament_period_myr'] - 272.7) < 1 and abs(_r259['buoy_coef'] - 4.883e-6) < 1e-8,
+            "PAPER_259: filament period 2pi/omega_g = 272 Myr; Tier-2/3 buoy coef = 4.88e-6 (<<0.5, beta_i canonical)")
+assert_that(_r259['muge_terms'] == 13 and _r259['buoyancy_tiers'] == 3 and _r259['simultaneous_coaction'] and _r259['afet_equilibrium'] == 1,
+            "PAPER_259: 13-term MUGE; 3 buoyancy tiers; simultaneous cooling+buoyancy co-action (shared ug1); AFET E_AGN=1 equilibrium")
+assert_that(C.wired_count() >= 263, "wired_count >= 263")
 
 
 # =============================================================================

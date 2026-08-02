@@ -3264,3 +3264,32 @@ charter.
 
 Gate: 1631/0. Registry 547 rows / 1183 edges / 262 ledgers (measured).
 Campaign: 262/2,255. Next: PAPER_259.
+
+---
+
+## 2026-08-02 — v0.263.0 — BAND 1: PAPER_259 — NGC 1275 AGN FEEDBACK EQUILIBRIUM (CLEAN)
+
+PAPER_259 (NGC 1275 — AGN Feedback-Buoyancy Equilibrium in Cooling-Flow BCGs,
+Session 72f, NGC1275.cpp UQFF 2.0 upgrade) wired as one dispatch (CLEAN,
+WIRED). New Session 72f module thread.
+
+NGC 1275 (Perseus A BCG) 13-term MUGE. Simultaneous co-action: the cooling-flow
+term term_cool=(rho_cool*v_cool^2)/rho_fluid co-acts SIMULTANEOUSLY (not
+sequentially, contra McNamara-Nulsen) with all 3 UQFF buoyancy tiers - because
+both cooling and buoyancy are functions of the same kernel ug1_base=G*M/r^2.
+
+AGN Feedback Equilibrium Tensor (AFET): E_AGN=term_cool/|Sigma_buoy|; =1
+equilibrium (self-regulated), >1 cooling-dominated (AGN trigger), <1
+buoyancy-dominated (quiescence).
+
+Reproducible: M=1e11 M_sun=1.989e41 kg; r=200000 ly=1.893e21 m; Virgo outer
+frame M_ext_vc=2.387e45 kg / r_ext_vc=77 Mpc=2.38e24 m; ug1_base=3.71e-12 m/s^2;
+Tier-2/3 buoy coef 4.88e-6 (<<0.5); filament period 2pi/omega_g=272 Myr (matches
+100-500 Myr filaments); cooling suppression factor 4-7.
+
+CLEAN - all system parameters reproduce; beta_i composed from canonical registry
+BETA_I (paper's 0.61 auto-corrected per charter). Appendix boilerplate drift
+(VDS 1.894, kg/m^3) auto-corrected per charter.
+
+Gate: 1636/0. Registry 548 rows / 1187 edges / 263 ledgers (measured).
+Campaign: 263/2,255. Next: PAPER_260.
