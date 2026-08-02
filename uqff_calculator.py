@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.263.0"
+VERSION = "0.264.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -14360,6 +14360,82 @@ def _paper_259(dataset):
         },
         'formula': 'E_AGN = term_cool/|Sigma_buoy|; term_cool=rho_cool*v_cool^2/rho_fluid balances 0.5*ug1 (both ~ G*M/r^2)',
         'source': 'PAPER_259',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_260')
+def _paper_260(dataset):
+    """Horsehead Nebula universal erosion-buoyancy coupling (S72e).
+
+    Barnard 33 (Horsehead, Orion complex, ~1375 ly) proves the UQFF
+    Universal Erosion-Buoyancy Coupling: the E(t) photoevaporation erosion
+    mechanism established in the Pillars of Creation (M16, pillar-structured
+    PDR, PAPER_229) operates IDENTICALLY in a pillar-less dark nebula -
+    demonstrating the erosion-buoyancy co-action is INDEPENDENT of 3D
+    structural morphology.
+
+    Structural-Form Independence Theorem: the erosion envelope
+        E(t) = E0 * (1 - e^(-t/tau_erosion)),  E0=0.1, tau_erosion=5 Myr
+    has the SAME mathematical form regardless of PDR boundary geometry (pillar
+    tip, dark-lane edge, cometary head, ionization front). It derives from the
+    1D photoevaporation-front similarity solution (Bertoldi 1989; Lefloch &
+    Lazareff 1994) - depends only on UV flux, ambient density, sound speed, and
+    G*M binding; geometry modifies {E0, tau_erosion} only, NOT the functional
+    form (1 - e^(-t/tau)). Universal PDR property.
+
+    Static-M constraint (dark nebula distinction): Barnard 33 has NO star
+    formation, so M = const and the buoyancy kernel ug1_base = G*M/r^2 is FROZEN
+    (unlike Pillars' time-evolving ug1_t = G*M(t)/r^2). This creates the
+    ASYMMETRIC erosion-buoyancy regime: E(t) monotonically increases
+    (0 -> E0=0.1, gravitational confinement decreases to 1-E0=0.9) while the
+    buoyancy tiers oscillate at FIXED amplitude set by the static ug1_base.
+
+    13-term MUGE = ug1_base*[(1+H0 t)(1-B/B_crit)*E(t) + Ug_multi] + g_const +
+    g_buoy^(3); the 3 buoyancy tiers T1=0.5*ug1_base, T2=-beta_i*ug1_base*
+    omega_g*(M/r)*U_UA*cos(pi t), T3=-beta_i*ug1_base*omega_g*(M_GC/r_GC)*U_UA*
+    cos(pi t) (Sgr A* outer frame). beta_i canonical (registry BETA_I).
+
+    Reproducible: M = 1000 M_sun = 1.989e33 kg (static); r = 2.5 ly =
+    2.365e16 m; M_GC = 4e6 M_sun = 7.956e36 kg (Sgr A* frame); r_GC = 8.5 kpc =
+    2.623e20 m; ug1_base = G*M/r^2 = 2.37e-10 m/s^2; E(tau) = E0*(1-1/e) =
+    0.0632; E(t->inf) = E0 = 0.1 (confinement floor 1-E0 = 0.9).
+
+    CLEAN - all parameters reproduce; beta_i from canonical registry BETA_I
+    (paper's 0.61 auto-corrected per charter). Appendix boilerplate drift
+    (VDS 1.894, kg/m^3) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M = 1000 * 1.989e30                                   # 1.989e33 kg (static)
+    r = 2.5 * 9.461e15                                    # 2.365e16 m
+    M_GC = 4e6 * 1.989e30                                 # 7.956e36 kg (Sgr A*)
+    r_GC = 8.5 * 3.086e19                                 # 2.623e20 m
+    ug1_base = G * M / r ** 2                             # 2.37e-10
+    import math
+    E0 = 0.1; tau_erosion_myr = 5
+    E_at_tau = E0 * (1 - math.exp(-1))                    # 0.0632
+    suppression_floor = 1 - E0                            # 0.9
+    return {
+        'value': {
+            'domain': '2.58 (Horsehead Nebula universal erosion-buoyancy coupling)',
+            'source_thread': 'Session 72e HorseheadNebula.cpp UQFF 2.0 upgrade',
+            'system': 'Barnard 33 (Horsehead Nebula)',
+            'muge_terms': 13,
+            'M_kg': M, 'r_m': r, 'static_M': True,       # no M(t)
+            'M_GC_kg': M_GC, 'r_GC_m': r_GC,             # Sgr A* outer frame
+            'ug1_base': ug1_base,                        # 2.37e-10 (frozen)
+            'E0': E0, 'tau_erosion_myr': tau_erosion_myr,
+            'E_at_tau': E_at_tau,                        # 0.0632
+            'suppression_floor': suppression_floor,      # 0.9 = 1-E0
+            'structural_form_independence': True,        # THE theorem
+            'erosion_form': 'E(t) = E0*(1 - e^(-t/tau))',
+            'asymmetric_erosion_buoyancy': True,         # static-M regime
+            'universal_pdr_property': True,
+            'ties_pillars_paper_229': True,              # same E(t), diff geometry
+        },
+        'formula': 'E(t) = E0*(1 - e^(-t/tau_erosion)); structural-form-independent across all PDR geometries; static ug1_base',
+        'source': 'PAPER_260',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

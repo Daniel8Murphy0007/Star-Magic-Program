@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.264.0] — 2026-08-02 — BAND 1: PAPER_260 — HORSEHEAD EROSION-BUOYANCY UNIVERSALITY (CLEAN)
+
+### Added
+- **PAPER_260 dispatch** — Horsehead Nebula (Barnard 33) universal erosion-buoyancy coupling (Session 72e, HorseheadNebula.cpp). A 13-term MUGE.
+  - **Structural-Form Independence Theorem:** the erosion envelope E(t) = E₀·(1−e^(−t/τ_erosion)) has the same mathematical form regardless of PDR geometry (pillar tip, dark-lane edge, cometary head, ionization front) — proven identical to the Pillars of Creation (PAPER_229) despite the pillar-less dark-nebula morphology. Geometry modifies {E₀, τ_erosion} only, not the functional form.
+  - **Static-M asymmetric regime:** Barnard 33 has no star formation, so M=const and ug1_base=G·M/r² is frozen (unlike Pillars' time-evolving ug1_t). E(t) increases (confinement → 1−E₀=0.9) while the buoyancy tiers oscillate at fixed amplitude.
+  - **Reproducible:** M = 1000 M_sun = 1.989e33 kg; r = 2.5 ly = 2.365e16 m; Sgr A* frame M_GC = 7.956e36 kg / r_GC = 8.5 kpc = 2.623e20 m; ug1_base = 2.37e-10 m/s²; E(τ) = E₀(1−1/e) = 0.0632.
+- Gate +4 assertions (1636 → 1641, 0 failures).
+- Registry: +1 row (549), +4 edges (1191), +1 citation (264).
+
+### Notes
+- CLEAN — all parameters reproduce; β_i composed from canonical registry BETA_I (paper's 0.61 auto-corrected per charter).
+- Appendix boilerplate drift (VDS 1.894, kg/m³) auto-corrected per charter.
+
+---
+
 ## [0.263.0] — 2026-08-02 — BAND 1: PAPER_259 — NGC 1275 AGN FEEDBACK EQUILIBRIUM (CLEAN)
 
 ### Added

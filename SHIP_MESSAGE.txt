@@ -1,23 +1,24 @@
-v0.263.0 BAND 1: PAPER_259 wired - NGC 1275 AGN FEEDBACK EQUILIBRIUM (CLEAN)
+v0.264.0 BAND 1: PAPER_260 wired - HORSEHEAD EROSION-BUOYANCY UNIVERSALITY (CLEAN)
 
-PAPER_259 (NGC 1275 - AGN Feedback-Buoyancy Equilibrium in Cooling-Flow BCGs,
-S72f, NGC1275.cpp UQFF 2.0 upgrade) wired as one dispatch (CLEAN, WIRED). New
-Session 72f module thread.
+PAPER_260 (Horsehead Nebula - Universal Erosion-Buoyancy Coupling: Structural-
+Form Independence in Photodissociation Regions, S72e, HorseheadNebula.cpp UQFF
+2.0 upgrade) wired as one dispatch (CLEAN, WIRED).
 
-NGC 1275 (Perseus A BCG) 13-term MUGE. Simultaneous co-action: the cooling-flow
-term term_cool=(rho_cool*v_cool^2)/rho_fluid co-acts SIMULTANEOUSLY (not
-sequentially) with all 3 UQFF buoyancy tiers - both cooling and buoyancy are
-functions of the same kernel ug1_base=G*M/r^2.
+Barnard 33 (Horsehead) 13-term MUGE. Structural-Form Independence Theorem: the
+erosion envelope E(t)=E0*(1-e^(-t/tau_erosion)) has the SAME form regardless of
+PDR geometry (pillar tip, dark-lane edge, cometary head, ionization front) -
+proven identical to the Pillars of Creation (PAPER_229) despite the pillar-less
+dark-nebula morphology. Geometry modifies {E0, tau_erosion} only.
 
-AFET: E_AGN=term_cool/|Sigma_buoy|; =1 equilibrium, >1 cooling-dominated
-(AGN trigger), <1 buoyancy-dominated (quiescence).
+Static-M asymmetric regime: M=const, ug1_base=G*M/r^2 frozen (unlike Pillars'
+ug1_t); E(t) increases (confinement -> 1-E0=0.9) while buoyancy tiers oscillate
+at fixed amplitude.
 
-Reproducible: M=1e11 M_sun=1.989e41 kg; r=200000 ly=1.893e21 m; Virgo frame
-M_ext_vc=2.387e45 kg / r_ext_vc=2.38e24 m; ug1_base=3.71e-12; buoy coef 4.88e-6
-(<<0.5); filament period 272 Myr; cooling suppression 4-7.
+Reproducible: M=1000 M_sun=1.989e33 kg; r=2.5 ly=2.365e16 m; Sgr A* frame
+M_GC=7.956e36 kg / r_GC=2.623e20 m; ug1_base=2.37e-10; E(tau)=0.0632.
 
 CLEAN - all params reproduce; beta_i from canonical registry BETA_I. Appendix
 drift auto-corrected per charter.
 
-Gate: 1636/0. Registry 548 rows / 1187 edges / 263 ledgers (measured).
-Campaign: 263/2,255. Next: PAPER_260.
+Gate: 1641/0. Registry 549 rows / 1191 edges / 264 ledgers (measured).
+Campaign: 264/2,255. Next: PAPER_261.

@@ -1186,3 +1186,7 @@ primitive,G_OBSERVED,observable,ngc1275_agn_feedback_equilibrium,ug1_base = G*M/
 primitive,BETA_I,observable,ngc1275_agn_feedback_equilibrium,beta_i canonical in Tier-2/3 buoyancy
 observable,ngc1275_agn_feedback_equilibrium,paper,PAPER_259,AGN feedback-buoyancy equilibrium AFET
 observable,ngc1275_agn_feedback_equilibrium,observable,ngc3603_full_muge_10term,cooling term unique vs NGC3603 pressure term (PAPER_243)
+primitive,G_OBSERVED,observable,horsehead_erosion_buoyancy_universality,ug1_base = G*M/r^2 (static)
+primitive,BETA_I,observable,horsehead_erosion_buoyancy_universality,beta_i canonical in Tier-2/3
+observable,horsehead_erosion_buoyancy_universality,paper,PAPER_260,structural-form independence E(t)
+observable,horsehead_erosion_buoyancy_universality,observable,ngc1275_agn_feedback_equilibrium,same 13-term MUGE + g_buoy^(3) (PAPER_259)

@@ -3293,3 +3293,32 @@ BETA_I (paper's 0.61 auto-corrected per charter). Appendix boilerplate drift
 
 Gate: 1636/0. Registry 548 rows / 1187 edges / 263 ledgers (measured).
 Campaign: 263/2,255. Next: PAPER_260.
+
+---
+
+## 2026-08-02 — v0.264.0 — BAND 1: PAPER_260 — HORSEHEAD EROSION-BUOYANCY UNIVERSALITY (CLEAN)
+
+PAPER_260 (Horsehead Nebula - Universal Erosion-Buoyancy Coupling: Structural-
+Form Independence in Photodissociation Regions, Session 72e, HorseheadNebula.cpp
+UQFF 2.0 upgrade) wired as one dispatch (CLEAN, WIRED).
+
+Barnard 33 (Horsehead) 13-term MUGE. Structural-Form Independence Theorem: the
+erosion envelope E(t)=E0*(1-e^(-t/tau_erosion)) has the SAME form regardless of
+PDR geometry (pillar tip, dark-lane edge, cometary head, ionization front) -
+proven identical to the Pillars of Creation (PAPER_229) despite the pillar-less
+dark-nebula morphology. Geometry modifies {E0, tau_erosion} only, NOT the form.
+
+Static-M asymmetric regime: Barnard 33 has no star formation, so M=const and
+ug1_base=G*M/r^2 is frozen (unlike Pillars' time-evolving ug1_t). E(t) increases
+(confinement -> 1-E0=0.9) while buoyancy tiers oscillate at fixed amplitude.
+
+Reproducible: M=1000 M_sun=1.989e33 kg; r=2.5 ly=2.365e16 m; Sgr A* frame
+M_GC=7.956e36 kg / r_GC=8.5 kpc=2.623e20 m; ug1_base=2.37e-10 m/s^2; E(tau)=
+E0*(1-1/e)=0.0632.
+
+CLEAN - all parameters reproduce; beta_i from canonical registry BETA_I (paper's
+0.61 auto-corrected per charter). Appendix boilerplate drift (VDS 1.894, kg/m^3)
+auto-corrected per charter.
+
+Gate: 1641/0. Registry 549 rows / 1191 edges / 264 ledgers (measured).
+Campaign: 264/2,255. Next: PAPER_261.

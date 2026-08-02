@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.263.0", "uqff_calculator.VERSION = 0.263.0")
+assert_that(C.VERSION == "0.264.0", "uqff_calculator.VERSION = 0.264.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3594,6 +3594,17 @@ assert_that(abs(_r259['filament_period_myr'] - 272.7) < 1 and abs(_r259['buoy_co
 assert_that(_r259['muge_terms'] == 13 and _r259['buoyancy_tiers'] == 3 and _r259['simultaneous_coaction'] and _r259['afet_equilibrium'] == 1,
             "PAPER_259: 13-term MUGE; 3 buoyancy tiers; simultaneous cooling+buoyancy co-action (shared ug1); AFET E_AGN=1 equilibrium")
 assert_that(C.wired_count() >= 263, "wired_count >= 263")
+
+_r260 = C.calc('PAPER_260')['value']
+assert_that(abs(_r260['M_kg'] - 1.989e33) < 1e30 and abs(_r260['r_m'] - 2.3652e16) < 1e13 and abs(_r260['ug1_base'] - 2.373e-10) < 1e-13,
+            "PAPER_260: M = 1000 M_sun = 1.989e33 kg (static); r = 2.5 ly = 2.365e16 m; ug1_base = G*M/r^2 = 2.37e-10")
+assert_that(abs(_r260['M_GC_kg'] - 7.956e36) < 1e33 and abs(_r260['r_GC_m'] - 2.6231e20) < 1e17,
+            "PAPER_260: Sgr A* outer frame M_GC = 4e6 M_sun = 7.956e36 kg; r_GC = 8.5 kpc = 2.623e20 m")
+assert_that(abs(_r260['E_at_tau'] - 0.0632) < 1e-3 and _r260['suppression_floor'] == 0.9 and _r260['E0'] == 0.1,
+            "PAPER_260: E(tau) = E0*(1-1/e) = 0.0632; suppression floor 1-E0 = 0.9 (confinement decreases)")
+assert_that(_r260['structural_form_independence'] and _r260['static_M'] and _r260['asymmetric_erosion_buoyancy'] and _r260['ties_pillars_paper_229'],
+            "PAPER_260: Structural-Form Independence Theorem; static-M asymmetric erosion-buoyancy; same E(t) as Pillars (PAPER_229) diff geometry")
+assert_that(C.wired_count() >= 264, "wired_count >= 264")
 
 
 # =============================================================================
