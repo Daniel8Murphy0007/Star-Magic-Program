@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.247.0] — 2026-08-02 — BAND 1: PAPER_243 — NGC 3603 FULL MUGE CAVITY PRESSURE (CLEAN)
+
+### Added
+- **PAPER_243 dispatch** — NGC 3603 extreme young star cluster, complete 10-term MUGE (Session 60, Doc 11, Grok/xAI October 2025). Companion to PAPER_242. Two novel elements vs CP3 class-88:
+  - **Time-varying cluster mass:** M(t) = M₀(1 + Ṁ_factor·e^(−t/τ_SF)) exponential star-formation inflow; SFE ε_SF(t) = Ṁ_factor·e^(−t/τ_SF).
+  - **Additive cavity pressure:** T_pressure = P(t)/ρ_fluid with P(t) = P₀·e^(−t/τ_exp) — independent additive acceleration, NOT a multiplicative (1−P) suppressor like class-88.
+  - **10-term MUGE** with T8 DM tidal 3·G·M(t)/r³ and T4 ρ_UA/ρ_SCm = 1/F_TRZ = 10 EXACT.
+  - **Sec-7 numerics (t=0.5 Myr, all reproduce):** M(t)/M₀ = 1+1.0·e^-0.5 = 1.607; P(t) = 4e-8·e^-0.5 = 2.43e-8 Pa; T_pressure = 2.43e-8/1e-20 = 2.43e12 m/s² (dominates early; natal cloud dispersal ~3 Myr).
+- Gate +4 assertions (1551 → 1556, 0 failures).
+- Registry: +1 row (532), +3 edges (1132), +1 citation (247).
+
+### Notes
+- CLEAN — all three sec-7 numerics reproduce exactly.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603) auto-corrected per charter.
+
+---
+
 ## [0.246.0] — 2026-08-02 — BAND 1: PAPER_242 — RINGS OF RELATIVITY LENSING MUGE (Q-227)
 
 ### Added

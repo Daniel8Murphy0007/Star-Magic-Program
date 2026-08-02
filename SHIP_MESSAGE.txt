@@ -1,22 +1,23 @@
-v0.246.0 BAND 1: PAPER_242 wired - RINGS OF RELATIVITY LENSING MUGE (Q-227)
+v0.247.0 BAND 1: PAPER_243 wired - NGC 3603 FULL MUGE CAVITY PRESSURE (CLEAN)
 
-PAPER_242 (Rings of Relativity: Einstein Ring Lensing Amplification in the
-Full MUGE, GAL-CLUS-022058s, S60, Doc 8, Grok/xAI Oct 2025) wired as one
-dispatch (OPEN_RULING, Q-227). New source thread opens (Doc 8).
+PAPER_243 (NGC 3603 Full MUGE: Time-Varying Mass M(t) and Additive Cavity
+Pressure P(t)/rho, S60, Doc 11, Grok/xAI October 2025) wired as one dispatch
+(CLEAN, WIRED). Companion to PAPER_242.
 
-Novel static lensing term: L_t = (G*M/(c^2*r))*L_factor, L_factor=D_LS/D_S=0.67;
-corr_L = 1+L_t. Geometry-driven constant, distinct from CP3 class-81's dynamic
-L(t)=L_0*e^-t/tau*cos(w t).
+Complete 10-term MUGE for the NGC 3603 extreme young star cluster. Two novel
+elements vs CP3 class-88's 4-term multiplicative-pressure form:
+1. Time-varying cluster mass M(t)=M_0(1+M_dot_factor*e^-t/tau_SF); SFE
+   eps_SF=M_dot_factor*e^-t/tau_SF.
+2. Additive cavity pressure T_pressure=P(t)/rho_fluid, P(t)=P_0*e^-t/tau_exp -
+   independent additive acceleration, NOT a multiplicative (1-P) suppressor.
 
-9-term MUGE g_Rings with T4 rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT; T8 DM tidal
-delta_2 = 3*mu_s*grad(M_s/r)/r; T7 two-mode osc (standing 2cos + Gyr traveling).
+T8 DM tidal 3*G*M(t)/r^3; T4 rho_UA/rho_SCm=1/F_TRZ=10 EXACT.
 
-Derived-correct: L_t=3.21e-4 (corr_L 1.00032); H(z=0.5)/H0=sqrt(0.3*(1.5)^3
-+0.7)=1.309.
+Sec-7 numerics (t=0.5 Myr, all reproduce): M(t)/M_0=1.607; P(t)=2.43e-8 Pa;
+T_pressure=2.43e12 m/s^2 (dominates early; natal cloud dispersal ~3 Myr).
 
-Q-227: (a) paper L_t~1.6e-3 (corr_L~1.0016) vs formula 3.21e-4 ~5x off;
-(b) H(z=0.5) stated ~1.27 vs computed 1.309 H0. Wired derived-correct values.
-Appendix drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+CLEAN - all three sec-7 numerics reproduce exactly. Appendix drift (VDS 1.894,
+kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured).
-Campaign: 246/2,255. Next: PAPER_243.
+Gate: 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured).
+Campaign: 247/2,255. Next: PAPER_244.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.246.0"
-description = "UQFF Star-Magic-Program v0.246.0: PAPER_242 wired (Q-227) - Rings of Relativity GAL-CLUS-022058s 9-term Einstein-ring lensing MUGE; static L_t=(GM/c^2r)*0.67=3.21e-4, T4 rho_UA/rho_SCm=1/F_TRZ=10 EXACT, H(z=0.5)=1.309 H0. Wired 246/2255, gate 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured)."
+version = "0.247.0"
+description = "UQFF Star-Magic-Program v0.247.0: PAPER_243 wired (CLEAN) - NGC 3603 full 10-term MUGE; time-varying mass M(t)=M_0(1+M_dot*e^-t/tau_SF)=1.607 M_0 + additive cavity pressure T_pressure=P(t)/rho_fl=2.43e12 m/s^2 (all sec-7 numerics reproduce). Wired 247/2255, gate 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

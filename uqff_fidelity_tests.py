@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.246.0", "uqff_calculator.VERSION = 0.246.0")
+assert_that(C.VERSION == "0.247.0", "uqff_calculator.VERSION = 0.247.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3407,6 +3407,17 @@ assert_that(abs(_r242['Hz_over_H0_z0p5'] - 1.3086) < 1e-3,
 assert_that(_r242['muge_terms'] == 9 and _r242['lensing_static_geometric'],
             "PAPER_242: 9-term MUGE; static geometric Einstein-ring lensing (vs class-81 dynamic L(t))")
 assert_that(C.wired_count() >= 246, "wired_count >= 246")
+
+_r243 = C.calc('PAPER_243')['value']
+assert_that(abs(_r243['Mt_over_M0'] - 1.6065) < 1e-3 and abs(_r243['sf_efficiency'] - 0.6065) < 1e-3,
+            "PAPER_243: M(t)/M0 = 1+1.0*e^-0.5 = 1.607; SFE eps_SF = 0.607 (t=0.5 Myr, reproduce)")
+assert_that(abs(_r243['Pt_pa'] - 2.4261e-8) < 1e-11 and abs(_r243['T_pressure_m_s2'] - 2.4261e12) < 1e9,
+            "PAPER_243: P(t)=4e-8*e^-0.5=2.43e-8 Pa; T_pressure=P(t)/rho_fl=2.43e12 m/s^2 (reproduce)")
+assert_that(_r243['muge_terms'] == 10 and _r243['cavity_pressure_additive'] and _r243['ua_scm_ratio'] == 10.0,
+            "PAPER_243: 10-term MUGE; additive cavity pressure (vs class-88 multiplicative); T4 rho_UA/rho_SCm=10 EXACT")
+assert_that(_r243['novel_elements'] == 2,
+            "PAPER_243: 2 novel elements - time-varying M(t) + additive cavity-pressure acceleration")
+assert_that(C.wired_count() >= 247, "wired_count >= 247")
 
 
 # =============================================================================

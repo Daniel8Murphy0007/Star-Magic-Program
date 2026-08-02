@@ -2776,3 +2776,30 @@ Wired derived-correct values; both flagged. Appendix boilerplate drift
 
 Gate: 1551/0. Registry 531 rows / 1129 edges / 246 ledgers (measured).
 Campaign: 246/2,255. Next: PAPER_243.
+
+---
+
+## 2026-08-02 — v0.247.0 — BAND 1: PAPER_243 — NGC 3603 FULL MUGE CAVITY PRESSURE (CLEAN)
+
+PAPER_243 (NGC 3603 Full MUGE: Time-Varying Mass M(t) and Additive Cavity
+Pressure P(t)/rho, Session 60, Doc 11, Grok/xAI October 2025) wired as one
+dispatch (CLEAN, WIRED). Companion to PAPER_242.
+
+Complete 10-term MUGE for the NGC 3603 extreme young star cluster. Two novel
+elements vs CP3 class-88's 4-term multiplicative-pressure form:
+1. Time-varying cluster mass M(t)=M_0(1+M_dot_factor*e^-t/tau_SF) exponential
+   star-formation inflow; SFE eps_SF(t)=M_dot_factor*e^-t/tau_SF.
+2. Additive cavity pressure T_pressure=P(t)/rho_fluid, P(t)=P_0*e^-t/tau_exp -
+   independent additive acceleration, NOT a multiplicative (1-P) suppressor.
+
+10-term MUGE with T8 DM tidal 3*G*M(t)/r^3; T4 rho_UA/rho_SCm=1/F_TRZ=10 EXACT.
+
+Sec-7 numerics (t=0.5 Myr, all reproduce): M(t)/M_0 = 1+1.0*e^-0.5 = 1.607;
+P(t) = 4e-8*e^-0.5 = 2.43e-8 Pa; T_pressure = 2.43e-8/1e-20 = 2.43e12 m/s^2
+(dominates all terms at early times; natal cloud dispersal ~3 Myr).
+
+CLEAN - all three sec-7 numerics reproduce exactly. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603) auto-corrected per charter.
+
+Gate: 1556/0. Registry 532 rows / 1132 edges / 247 ledgers (measured).
+Campaign: 247/2,255. Next: PAPER_244.

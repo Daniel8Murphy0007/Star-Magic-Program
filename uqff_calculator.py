@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.246.0"
+VERSION = "0.247.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -13122,4 +13122,76 @@ def _paper_242(dataset):
         'source': 'PAPER_242',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_243')
+def _paper_243(dataset):
+    """NGC 3603 full 10-term MUGE: time-varying mass + cavity pressure (S60).
+
+    Complete 10-term Master Universal Gravity Equation for the NGC 3603
+    extreme young star cluster (Doc 11, Grok/xAI October 2025). Two novel
+    elements vs CP3 class-88's 4-term multiplicative-pressure form:
+
+    1. Time-varying cluster mass (exponential star-formation inflow):
+         M(t) = M_0 * (1 + M_dot_factor * e^(-t/tau_SF))
+       At t=0: M(0)=M_0*(1+M_dot_factor) (max infall); at t>>tau_SF: M->M_0.
+       dM/dt = -M_0*M_dot_factor/tau_SF * e^(-t/tau_SF);
+       star-formation efficiency eps_SF(t) = (M(t)-M_0)/M_0 =
+       M_dot_factor*e^(-t/tau_SF).
+
+    2. Additive cavity-pressure acceleration (NOT a multiplicative modifier,
+       unlike class-88's (1-P(t))):
+         P(t) = P_0 * e^(-t/tau_exp);   T_pressure = P(t)/rho_fluid
+       Dispersal condition: t_disp = tau_exp*ln(P_0/(rho_fluid*T_1)) when the
+       cavity-pressure acceleration exceeds local gravity T_1.
+
+    10-term MUGE: T1 base G*M(t)/r^2*(1+H_0 t)(1-B/B_crit) + T2 UQFF(U_g1(t)+
+    U_g4(t))(1+f_TRZ) + T3 Lambda*c^2/3 + T4 EM(1+rho_UA/rho_SCm)*s_EM + T5
+    quantum + T6 fluid + T7 two-mode osc + T8 DM(delta rho/rho + 3*G*M(t)/r^3
+    tidal) + T9 wind rho_w*v_w^2/rho_fl + T10 cavity pressure P(t)/rho_fl.
+    T4 rho_UA/rho_SCm = 1/F_TRZ = 10 EXACT.
+
+    Numerical example (t=0.5 Myr, tau_SF=tau_exp=1 Myr => t/tau=0.5,
+    M_dot_factor=1.0, P_0=4e-8 Pa, rho_fluid=1e-20) - all reproduce:
+      e^(-0.5) = 0.6065; M(t)/M_0 = 1 + 1.0*0.6065 = 1.607;
+      P(t) = 4e-8*0.6065 = 2.43e-8 Pa;
+      T_pressure = 2.43e-8/1e-20 = 2.43e12 m/s^2 (dominates all terms at
+      early times - NGC 3603 disperses its natal cloud within ~3 Myr).
+
+    CLEAN - the three sec-7 numerics reproduce exactly. Companion to PAPER_242
+    (Rings of Relativity). Appendix boilerplate drift (VDS 1.894, kg/m^3,
+    beta_i=0.603) auto-corrected per charter.
+    """
+    import math
+    decay = math.exp(-0.5)                                # t/tau = 0.5
+    M_dot_factor = 1.0
+    Mt_over_M0 = 1 + M_dot_factor * decay                 # 1.607
+    P0 = 4e-8; Pt = P0 * decay                            # 2.43e-8 Pa
+    rho_fluid = 1e-20
+    T_pressure = Pt / rho_fluid                           # 2.43e12
+    eps_SF = M_dot_factor * decay                         # 0.607
+    ua_scm_ratio = 1.0 / F_TRZ                            # 10 EXACT (T4)
+    return {
+        'value': {
+            'domain': '2.41 (NGC 3603 full 10-term MUGE cavity pressure)',
+            'source_thread': 'Doc 11 NGC 3603 MUGE (Oct 2025)',
+            'system': 'NGC 3603 (extreme young star cluster)',
+            'muge_terms': 10,
+            'M_dot_factor': M_dot_factor,
+            'decay_e_neg_half': decay,                    # 0.6065
+            'Mt_over_M0': Mt_over_M0,                     # 1.607
+            'sf_efficiency': eps_SF,                      # 0.607
+            'P0_pa': P0, 'Pt_pa': Pt,                     # 4e-8, 2.43e-8
+            'T_pressure_m_s2': T_pressure,                # 2.43e12
+            'cavity_pressure_additive': True,            # vs class-88 multiplicative (1-P)
+            'ua_scm_ratio': ua_scm_ratio,                # 10 EXACT (T4)
+            'dm_pert2_tidal': '3*G*M(t)/r^3',            # T8 second-order
+            'dispersal_timescale_myr': 3,                # natal cloud dispersal
+            'novel_elements': 2,                         # M(t), additive P(t)
+        },
+        'formula': 'M(t)=M_0(1+M_dot*e^-t/tau_SF); T_pressure=P_0*e^-t/tau_exp/rho_fl',
+        'source': 'PAPER_243',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

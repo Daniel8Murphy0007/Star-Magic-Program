@@ -1128,3 +1128,6 @@ primitive,F_TRZ,observable,rings_relativity_muge_9term,T4 rho_UA/rho_SCm = 1/F_T
 observable,einstein_ring_lensing_factor,paper,PAPER_242,static L_t 3.21e-4
 observable,rings_relativity_muge_9term,paper,PAPER_242,9-term MUGE g_Rings
 observable,einstein_ring_lensing_factor,observable,rings_relativity_muge_9term,L_t is T1 lensing correction
+primitive,F_TRZ,observable,ngc3603_full_muge_10term,T4 rho_UA/rho_SCm = 1/F_TRZ = 10
+observable,ngc3603_full_muge_10term,paper,PAPER_243,10-term MUGE M(t) + additive cavity pressure
+observable,ngc3603_full_muge_10term,observable,rings_relativity_muge_9term,companion MUGE (PAPER_242, Session 60)
