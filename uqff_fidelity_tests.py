@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.239.0", "uqff_calculator.VERSION = 0.239.0")
+assert_that(C.VERSION == "0.240.0", "uqff_calculator.VERSION = 0.240.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3330,6 +3330,17 @@ assert_that(_r235['nearest_major_merger'] and _r235['M0_solar'] == 2e11,
 assert_that(_r235['vs_hudf']['antennae_I0'] == 0.1 and _r235['vs_hudf']['hudf_I0'] == 0.05,
             "PAPER_235: double-I(t) family - Antennae local (I_0=0.1) vs HUDF cosmic (I_0=0.05, PAPER_231)")
 assert_that(C.wired_count() >= 239, "wired_count >= 239")
+
+_r236 = C.calc('PAPER_236')['value']
+assert_that(abs(_r236['advancement_pct'] - 226.66666666666666) < 1e-9,
+            "PAPER_236: advancement = (3+3+0.8)/3*100 = 226.67% (diversity/dynamic/scalability)")
+assert_that(_r236['first_meta_assessment_calculator'] and _r236['super_linear'],
+            "PAPER_236: first framework-level meta-assessment calculator; advancement >100% (super-linear)")
+assert_that(_r236['diversity_score'] == 3.0 and _r236['scalability_score'] == 0.8,
+            "PAPER_236: three metrics - diversity 3, dynamic 3, scalability 0.8")
+assert_that(_r236['novel_contributions'] == 5 and len(_r236['aggregated_examples']) == 3,
+            "PAPER_236: 5 novel contributions; aggregates 3 examples (Wd2/Pillars/Rings)")
+assert_that(C.wired_count() >= 240, "wired_count >= 240")
 
 
 # =============================================================================

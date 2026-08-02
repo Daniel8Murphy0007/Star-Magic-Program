@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.239.0"
-description = "UQFF Star-Magic-Program v0.239.0: PAPER_235 wired (CLEAN) - Antennae Galaxies (NGC 4038/4039) double-interaction merger MUGE; tidal I(t) applied doubly to base+Ug (novel); I(300 Myr)=0.1*e^-0.75=0.0472; SFR_factor=1e-10; local companion to HUDF double-I(t) (231). Wired 239/2255, gate 1517/0. Registry 520 rows / 1098 edges / 239 ledgers (measured)."
+version = "0.240.0"
+description = "UQFF Star-Magic-Program v0.240.0: PAPER_236 wired (CLEAN) - UQFF Learning Assessment, first framework-level meta-assessment calculator (models UQFF's own progression, not an object); advancement=(diversity+dynamic+scalability)/3*100=226.67% (>100% super-linear); aggregates Wd2/Pillars/Rings. Wired 240/2255, gate 1522/0. Registry 521 rows / 1101 edges / 240 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

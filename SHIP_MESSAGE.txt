@@ -1,31 +1,33 @@
-v0.239.0 BAND 1: PAPER_235 wired - ANTENNAE DOUBLE-I(t) MERGER (CLEAN)
+v0.240.0 BAND 1: PAPER_236 wired - UQFF LEARNING META-ASSESSMENT (CLEAN)
 
-PAPER_235 (Antennae Galaxies (NGC 4038/4039) Enhanced - Double I(t)
-Merger Modulation Applied to Both Base Gravity and UQFF Term, S58)
-wired as one dispatch (CLEAN, WIRED).
+PAPER_236 (UQFF Learning Assessment Evolution_B - Framework
+Meta-Assessment Advancement Score, S59) wired as one dispatch
+(CLEAN, WIRED).
 
-Physics (clean arithmetic - all reproduce):
-- The Antennae (NGC 4038 + NGC 4039), the nearest major galaxy merger
-  (z=0.0105, ~22 Mpc) and the archetype of tidal-interaction physics,
-  with a novel double-interaction scheme (Doc 14 enhanced).
-- Double interaction modulation: the tidal factor I(t)=I_0*e^-t/
-  tau_merger is applied DOUBLY and INDEPENDENTLY - to both the base
-  gravity a_base=U_g1*(1+H_z*t)*(1-B/B_crit)*(1+I(t)) AND the UQFF
-  correction a_Ug=(U_g1+U_g4)*(1+f_TRZ)*(1+I(t)). In the standard scheme
-  a_Ug does NOT carry I(t); here the large-scale potential and the local
-  UQFF buoyancy field are independently disturbed by the tidal encounter.
-- At the canonical merger epoch t=300 Myr: I=0.1*e^-300/400=0.1*e^-0.75
-  =0.0472 (~4.7% modulation on both term1 and U_g); I_0=0.1,
-  tau_merger=400 Myr. Verified.
-- Specific-SFR amplitude SFR_factor=SFR/M_total=20/(2e11)=1e-10 yr^-1
-  (PAPER_232 method); (1+f_TRZ)=1.1 (registry F_TRZ=0.1).
-- Local companion to the HUDF double-I(t) (PAPER_231): Antennae local
-  z=0.0105, I_0=0.1, tau=400 Myr (single major merger), H(z)~H0; HUDF
-  cosmic z=3.5, I_0=0.05, tau=1 Gyr, H(z) dominant. M_0=2e11 M_sun.
-  Doc 14 enhanced of the grok_share_8d951e12 thread.
+Physics/meta (clean arithmetic - reproduces):
+- The UQFF Learning Assessment Evolution_B module - the FIRST
+  framework-level META-ASSESSMENT calculator in the CP1/CP2/CP3
+  pipeline. Unlike every prior module (which targets a specific
+  astrophysical object), this one models the UQFF framework's own
+  learning progression, giving a quantitative advancement measure per
+  development session (Doc 9 second-pass).
+- Advancement score = (diversity_score + dynamic_score +
+  scalability_score)/3.0 * 100%. Defaults: diversity=3 (distinct
+  physical regimes: stellar wind, erosion, lensing), dynamic=3 (novel
+  dynamic terms: a_wind, E(t) erosion, lensing modulation),
+  scalability=0.8 (adaptability across scales, [0,1]). advancement =
+  (3+3+0.8)/3*100 = 226.67%. Verified.
+- Values > 100% indicate multi-regime SIMULTANEOUS coverage - the
+  framework demonstrating super-linear progression (intentionally
+  beyond binary pass/fail).
+- Aggregates parameters from three consecutive UQFF examples:
+  Westerlund 2 stellar wind (PAPER_228, M=30,000 M_sun=5.967e34 kg),
+  Pillars of Creation erosion (PAPER_229), Rings of Relativity lensing
+  (r=1.54e22 m, L_factor=1.2, H_z=2.18e-18 s^-1). Five novel
+  contributions incl. per-git-commit session comparison.
 
 No ruling filed - the arithmetic is clean. Appendix boilerplate drift
 (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
-Gate: 1517/0. Registry 520 rows / 1098 edges / 239 ledgers (measured).
-Campaign: 239/2,255. Next: PAPER_236.
+Gate: 1522/0. Registry 521 rows / 1101 edges / 240 ledgers (measured).
+Campaign: 240/2,255. Next: PAPER_237.

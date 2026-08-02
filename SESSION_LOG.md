@@ -2587,3 +2587,10 @@ Wired 7/2,255 (2 ✓, 5 ⚠). Rulings Q-001..Q-007 open. Next: PAPER_008.
 - Gate 1517/0. Registry 520 rows / 1098 edges / 239 ledgers. Campaign: 239/2,255 (17 ✓, 222 ⚠). Next: PAPER_236.
 
 ---
+
+## 2026-07-31 — v0.240.0 — BAND 1: PAPER_236 (CLEAN)
+
+- PAPER_236 wired (✓ CLEAN): UQFF Learning Assessment Evolution_B — FIRST framework-level meta-assessment calculator (models UQFF's own learning progression, not an astrophysical object). advancement=(diversity+dynamic+scalability)/3.0*100=(3+3+0.8)/3*100=226.67% (>100% = multi-regime super-linear coverage). Aggregates 3 examples: Wd2 (PAPER_228), Pillars (PAPER_229), Rings lensing. 5 novel contributions. Doc 9 second-pass of 8d951e12. Clean arithmetic. Appendix drift auto-corrected.
+- Gate 1522/0. Registry 521 rows / 1101 edges / 240 ledgers. Campaign: 240/2,255 (18 ✓, 222 ⚠). Next: PAPER_237.
+
+---

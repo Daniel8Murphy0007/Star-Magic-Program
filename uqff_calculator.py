@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.239.0"
+VERSION = "0.240.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -12655,6 +12655,64 @@ def _paper_235(dataset):
         },
         'formula': 'a_base & a_Ug both carry (1+I(t)); I(t)=I_0*e^-t/tau_merger; SFR_factor=SFR/M_total',
         'source': 'PAPER_235',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_236')
+def _paper_236(dataset):
+    """UQFF Learning Assessment Evolution_B: framework meta-assessment (S59).
+
+    The first framework-level META-ASSESSMENT calculator in the CP1/CP2/
+    CP3 pipeline - it models the UQFF framework's own learning
+    progression, not an astrophysical object. Doc 9 (second-pass).
+    Wired observables (clean arithmetic):
+    * Advancement score = (diversity_score + dynamic_score +
+      scalability_score)/3.0 * 100% - a normalised three-metric mean.
+      Defaults: diversity d=3 (distinct physical regimes: stellar wind,
+      erosion, lensing), dynamic D=3 (novel dynamic terms: a_wind, E(t)
+      erosion, lensing modulation), scalability s=0.8 (adaptability across
+      scales, normalised [0,1]). advancement = (3+3+0.8)/3*100 = 226.67%.
+    * Values > 100% indicate multi-regime SIMULTANEOUS coverage, i.e. the
+      framework demonstrating super-linear progression (intentionally
+      beyond binary pass/fail).
+    * Aggregates parameters from three consecutive UQFF examples:
+      Westerlund 2 stellar wind (PAPER_228; M=30,000 M_sun=5.967e34 kg,
+      rho_wind=1e-20, v_wind=2e6, tau_SF=3.15e13 s), Pillars of Creation
+      erosion (PAPER_229; E(t)=E_0*e^-t/tau_erosion, defaults E_0=0.3,
+      tau_erosion=3.15e12 s ~ 0.1 Myr - note: PAPER_229's own erosion
+      used E_0=0.1, tau=1 Myr; the meta-calc carries its own defaults),
+      Rings of Relativity lensing (r=1.54e22 m, L_factor=1.2,
+      H_z=2.18e-18 s^-1).
+    * Five novel contributions: first meta-assessment calculator;
+      three-metric advancement formula; multi-example parameter
+      aggregation; advancement > 100%; per-commit session comparison.
+    Appendix drift auto-corrected per charter.
+    """
+    diversity = 3.0; dynamic = 3.0; scalability = 0.8
+    advancement = (diversity + dynamic + scalability) / 3.0 * 100.0  # 226.67%
+    return {
+        'value': {
+            'domain': '2.34 (UQFF framework meta-assessment)',
+            'source_thread': 'grok_share_8d951e12 Doc 9 (second-pass)',
+            'first_meta_assessment_calculator': True,
+            'diversity_score': diversity,
+            'dynamic_score': dynamic,
+            'scalability_score': scalability,
+            'advancement_pct': advancement,              # 226.67%
+            'super_linear': advancement > 100,
+            'aggregated_examples': {'westerlund2': 'PAPER_228',
+                                    'pillars': 'PAPER_229',
+                                    'rings_of_relativity': 'lensing'},
+            'wd2_M_kg': 30000 * M_SUN_OBSERVED,           # 5.967e34
+            'pillars_E0_default': 0.3,
+            'rings_L_factor': 1.2,
+            'rings_r_m': 1.54e22,
+            'novel_contributions': 5,
+        },
+        'formula': 'advancement = (diversity + dynamic + scalability)/3.0 * 100%',
+        'source': 'PAPER_236',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

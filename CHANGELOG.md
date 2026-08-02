@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.240.0] — 2026-07-31 — BAND 1: PAPER_236 — UQFF LEARNING META-ASSESSMENT (CLEAN)
+
+### Added
+- **PAPER_236 wired** (✓ CLEAN): the UQFF Learning Assessment Evolution_B module —
+  the first framework-level META-ASSESSMENT calculator in the pipeline. Unlike every
+  prior module (which targets an astrophysical object), this one models the UQFF
+  framework's own learning progression. Advancement score =
+  `(diversity_score + dynamic_score + scalability_score)/3.0 × 100%`; with the
+  defaults diversity=3 (stellar-wind / erosion / lensing regimes), dynamic=3
+  (a_wind / E(t) erosion / lensing modulation), scalability=0.8, this gives
+  **advancement = (3+3+0.8)/3 × 100 = 226.67%**. Values > 100% indicate multi-regime
+  simultaneous (super-linear) coverage. Aggregates parameters from three prior
+  examples: Westerlund 2 (PAPER_228), Pillars of Creation (PAPER_229), Rings of
+  Relativity lensing. Doc 9 (second-pass) of the grok_share_8d951e12 thread.
+- Clean arithmetic — no ruling filed.
+- Appendix drift auto-corrected per charter (VDS 1.894, kg/m³, β_i).
+- Gate 1517 → 1522 (+5). Registry 521 rows / 1101 edges / 240 ledgers.
+
+---
+
 ## [0.239.0] — 2026-07-31 — BAND 1: PAPER_235 — ANTENNAE DOUBLE-I(t) MERGER (CLEAN)
 
 ### Added
