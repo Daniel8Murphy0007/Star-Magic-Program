@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.284.0"
+VERSION = "0.286.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15795,3 +15795,70 @@ def _paper_280(dataset):
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
+
+
+@_register('PAPER_008b')
+def _paper_008b(dataset):
+    D = 0.90 * 0.37
+    return {'value': {'domain': 'GW170817 full inspiral waveform (23-300 Hz)', 'D_suppression': D, 'reduction_pct': (1 - D) * 100.0, 'f_range_Hz': '23-300', 'h_form': 'h_UQFF=h_GR*(1-U_bi/F_U)*exp(-kappa*t)'}, 'formula': 'D=f_TRZ*beta_string=0.90*0.37=0.333 (66.7% strain reduction) across full GW170817 chirp', 'source': 'PAPER_008b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_009b')
+def _paper_009b(dataset):
+    D = 0.90 * 0.37
+    d_true = 410.0; d_apparent = 1231.0
+    return {'value': {'domain': 'Aether/String/TRZ/SCm damping decomposition (GW150914)', 'D_suppression': D, 'reduction_pct': (1 - D) * 100.0, 'd_true_Mpc': d_true, 'd_apparent_Mpc': d_apparent, 'apparent_distance_factor': round(d_apparent / d_true, 2)}, 'formula': 'D=0.333 damping; GR-template inference gives apparent 1231 Mpc vs true 410 Mpc (factor 3)', 'source': 'PAPER_009b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_010b')
+def _paper_010b(dataset):
+    D = 0.90 * 0.37
+    rms_gr = 1.3728e-21; rms_uqff = rms_gr * D
+    return {'value': {'domain': 'Time-domain chirp 23 Hz onset -> 250 Hz', 'D_suppression': D, 'rms_strain_gr': rms_gr, 'rms_strain_uqff': rms_uqff, 'f_onset_Hz': 23.0}, 'formula': 'D=0.333; RMS strain 1.3728e-21 (GR) -> 4.57e-22 (UQFF) over 23-250 Hz chirp', 'source': 'PAPER_010b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_011b')
+def _paper_011b(dataset):
+    f_TRZ = 0.90; beta_string = 0.37
+    D = f_TRZ * beta_string
+    return {'value': {'domain': 'UQFF amplitude reduction factor derivation/calibration', 'f_TRZ': f_TRZ, 'beta_string': beta_string, 'D_universal': D, 'reduction_pct': (1 - D) * 100.0, 'universal_above_23Hz': True, 'source_independent': True}, 'formula': 'D=f_TRZ*beta_string=0.90*0.37=0.333: universal GW strain reduction (z<0.5, f>23Hz, any source)', 'source': 'PAPER_011b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_012b')
+def _paper_012b(dataset):
+    damping_ratio = 0.6691; f_TRZ = 0.90; f_SCm = 0.990
+    return {'value': {'domain': 'GW150914 waveform validation', 'damping_ratio': damping_ratio, 'f_TRZ': f_TRZ, 'f_SCm': f_SCm, 'M_chirp_Msun': 28.0, 'd_L_Mpc': 410.0, 'sub_unity_all_freq': True}, 'formula': 'GW150914 M_c=28 Msun d=410 Mpc; damping ratio 0.6691 sub-unity all freq; f_TRZ=0.90 f_SCm=0.990', 'source': 'PAPER_012b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_013b')
+def _paper_013b(dataset):
+    factor = 0.6194; h_gr = 6.9526e-19; h_uqff = h_gr * factor
+    return {'value': {'domain': 'LISA SMBH merger rate predictions', 'uqff_factor': factor, 'reduction_pct': round((1 - factor) * 100.0, 1), 'h_gr': h_gr, 'h_uqff': h_uqff, 'z': 1.0, 'M_total_Msun': 1e6, 'd_L_Gpc': 6.42, 'both_detectable': True}, 'formula': 'SMBH z=1 M=1e6 Msun D_L=6.42 Gpc; UQFF factor 0.6194 (38.1% reduction); h_GR 6.95e-19 -> h_UQFF 4.31e-19', 'source': 'PAPER_013b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_014b')
+def _paper_014b(dataset):
+    f_isco = 2.931
+    harmonics = [round(f_isco * k, 3) for k in (0.1, 0.2, 0.3)]
+    return {'value': {'domain': 'EMRI signal modification by Aether damping + string harmonics', 'f_isco_mHz': f_isco, 'harmonics_mHz': harmonics, 'stability_factor': 1.15, 'M_SMBH_Msun': 1e6, 'M_compact_Msun': 10.0, 'q': 1e-5, 'd_L_Gpc': 2.68}, 'formula': 'EMRI q=1e-5 D_L=2.68 Gpc; f_ISCO=2.931 mHz, harmonics 0.293/0.586/0.879 mHz; U_A stability factor 1.15', 'source': 'PAPER_014b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_026c')
+def _paper_026c(dataset):
+    rho_SCm = RHO_SCM; S26 = 1.4531e26; phi_res = PHI_RES_RESONANCE
+    E_formula_J = rho_SCm * S26 * phi_res
+    m_keV_formula = E_formula_J / 1.602e-19 / 1e3
+    m_keV_claimed = 5.4
+    return {'value': {'domain': 'Sterile neutrino mass derivation (SCm vacuum mass-generation)', 'm_s_claimed_keV': m_keV_claimed, 'formula': 'm_s*c^2 = rho_SCm*S_26^(3)*Phi_res', 'E_formula_J': E_formula_J, 'm_s_formula_keV': m_keV_formula, 'mojibake_flag': 'formula yields ~540 MeV; paper headline 5.4 keV (dark-matter candidate, ~3.5 keV X-ray line) - exponent mojibake, Q-244b', 'tremaine_gunn_bound_keV': 0.5, 'xray_line_keV': 3.5}, 'formula': 'm_s*c^2=rho_SCm*S26*Phi_res; headline m_s=5.4 keV (keV sterile-nu DM); formula product mojibake (540 MeV) - flagged', 'source': 'PAPER_026c', 'residual_pct': None, 'status': 'OPEN_RULING'}
+
+
+@_register('PAPER_221b')
+def _paper_221b(dataset):
+    SSq = SSQ
+    return {'value': {'domain': 'Bubble Nebula NGC 7635 (1+E(t)) positive irradiation enhancement', 'enhancement_form': '(1+E(t)) positive multiplier', 'M_J_form': 'M_J^UQFF = M_J^Jeans*(1 - [SSq]*B^2/(8*pi*rho*c_s^2))', 'SSq': SSq, 'first_positive_irradiation_multiplier': True}, 'formula': 'Bubble Nebula (1+E(t)) POSITIVE enhancement multiplier; M_J^UQFF=M_J^Jeans*(1-[SSq]*B^2/(8pi rho c_s^2))', 'source': 'PAPER_221b', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_221c')
+def _paper_221c(dataset):
+    SSq = SSQ
+    return {'value': {'domain': 'Bubble Nebula NGC 7635 (1+E(t)) positive shell expansion enhancement', 'enhancement_form': '(1+E(t)) positive shell expansion', 'SSq': SSq, 'companion_of': 'PAPER_221/221b'}, 'formula': 'Bubble Nebula (1+E(t)) POSITIVE shell expansion enhancement (expansion variant of PAPER_221)', 'source': 'PAPER_221c', 'residual_pct': 0.0, 'status': 'WIRED'}

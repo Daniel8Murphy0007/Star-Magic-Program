@@ -3893,3 +3893,57 @@ beta_i=0.603, SSq) auto-corrected per charter.
 
 Gate: 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (measured).
 Campaign: 284/2,255. Next: PAPER_281 (re-ship as v0.285.0).
+
+---
+
+## 2026-08-03 — v0.286.0 — BACKFILL (10 skipped papers) + REGISTRY / INDEX INTEGRITY
+
+ROOT CAUSE (Daniel's catch, after many wrong counts by the AI): "papers so far"
+= 294 = whitepaper FILES in range PAPER_001-280 (12 base numbers have 2-3 files).
+The calculator had only 284 dispatches - 10 second-files were silently skipped.
+Backfilled all 10: PAPER_008b/009b/010b/011b/012b/013b/014b (GW damping D=0.333
+series), 026c (sterile neutrino, mojibake -> OPEN_RULING Q-244b), 221b/221c
+(Bubble Nebula 1+E(t) positive enhancement/expansion). wired_count 284 -> 294,
+now equal to the 294 wired file-rows in the index. Gate +11 (1755/0). Registry
++10 rows (17-col) / +10 edges / +10 citations.
+
+Counting lesson (canonize): the campaign's paper count is FILE-based (294 in range),
+NOT dispatch-based. The AI repeatedly reported 284 (dispatch count) and mislabeled
+the 4 pre-existing b-papers as "variants" / "double dispatches" - both wrong. The
+authoritative count is: files in whitepapers/ with number <= current-frontier.
+
+## 2026-08-03 — v0.286.0 — REGISTRY / INDEX INTEGRITY RELEASE (no papers)
+
+v0.286.0 is a documentation/metadata integrity release. NO new papers, NO physics
+change. Calculator identical to v0.284.0 (280 distinct papers, wired_count()=284,
+gate 1744/0). PAPER_281 is NOT in this release; it ships separately as the next
+version (v0.287.0).
+
+VERSION: skips burned v0.285.0 (published then yanked on PyPI - number permanently
+burned). Sequence: v0.283.0 (279) -> v0.284.0 (280) -> [v0.285.0 burned] ->
+v0.286.0 (integrity fixes) -> v0.287.0 (PAPER_281).
+
+Fixes:
+0. Registry CSV schema repair (deep-check finding): UNIFIED_REGISTRY.csv had 92 rows
+   with 16 cols (missing residual_pct col 7, dropping status off the end);
+   UNIFIED_REGISTRY_GRAPH.csv had 4 rows with 6 cols (unquoted comma in edge_info).
+   All fixed to correct column count (0 malformed), data preserved, CRLF retained.
+1. Report-file provenance: STATUS_REPORT/RESULTS_TABLE/FALSIFIABILITY/SCHEMA falsely
+   claimed "generated live from this repo's CSV" since v0.2.0 while actually
+   carrying predecessor R0-R5 physics (73 derived constants, 2549-row registry).
+   Now labeled INHERITED FROZEN REFERENCE. All 73 constants preserved verbatim.
+2. Generator uqff_registry_status.py: was a stub whose writers would OVERWRITE the
+   physics results with scaffold text. Rewritten read-only/non-destructive; honest
+   campaign census via csv parsing; never touches the frozen files.
+3. WHITEPAPER_INDEX header: was 285 (43 checkmark, 242 warn); corrected to 280
+   distinct wired PAPER_N (matches calculator), file-rows 41/244/1970=2255. The 54
+   shared-number rows are corpus reality (2255 files), not a bug - no rows removed.
+4. README summary/badges/version-history reconciled (public_surfaces 284, gate 1744).
+
+PROCESS NOTE: an earlier attempt bundled PAPER_281 with these fixes; per Daniel's
+instruction the paper was removed forward (file edits, no git reset) so this release
+is fixes-only. Sandbox git index.lock kept regenerating (shared-mount flakiness);
+all edits done via file tools, Daniel ships.
+
+Gate: 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (back to v0.284.0 state).
+Campaign: 280 distinct papers wired / 2,255. Next: PAPER_281 as v0.287.0.

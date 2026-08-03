@@ -1130,14 +1130,14 @@ observable,rings_relativity_muge_9term,paper,PAPER_242,9-term MUGE g_Rings
 observable,einstein_ring_lensing_factor,observable,rings_relativity_muge_9term,L_t is T1 lensing correction
 primitive,F_TRZ,observable,ngc3603_full_muge_10term,T4 rho_UA/rho_SCm = 1/F_TRZ = 10
 observable,ngc3603_full_muge_10term,paper,PAPER_243,10-term MUGE M(t) + additive cavity pressure
-observable,ngc3603_full_muge_10term,observable,rings_relativity_muge_9term,companion MUGE (PAPER_242, Session 60)
+observable,ngc3603_full_muge_10term,observable,rings_relativity_muge_9term,"companion MUGE (PAPER_242, Session 60)"
 observable,muge_quantum_uncertainty_gQ,paper,PAPER_244,g_Q universal MUGE sub-term term_q
 observable,muge_quantum_uncertainty_gQ,observable,ngc3603_full_muge_10term,term_q universal in all 19 MUGE modules (T5 quantum)
-observable,muge_quantum_uncertainty_gQ,observable,rings_relativity_muge_9term,term_q universal (T5 quantum, PAPER_242)
+observable,muge_quantum_uncertainty_gQ,observable,rings_relativity_muge_9term,"term_q universal (T5 quantum, PAPER_242)"
 primitive,G_OBSERVED,observable,muge_fluid_selfgravity_archimedes,4*pi*G/3 coefficient
 observable,muge_fluid_selfgravity_archimedes,paper,PAPER_245,g_fluid Archimedes buoyancy sub-term
 observable,muge_fluid_selfgravity_archimedes,observable,muge_quantum_uncertainty_gQ,companion universal MUGE sub-term (PAPER_244)
-primitive,C_OBSERVED,observable,muge_dualmode_oscillatory_gravity,omega=2pi c/r, T_osc=r/c
+primitive,C_OBSERVED,observable,muge_dualmode_oscillatory_gravity,"omega=2pi c/r, T_osc=r/c"
 observable,muge_dualmode_oscillatory_gravity,paper,PAPER_246,dual-mode oscillatory g_osc standing+traveling
 observable,muge_dualmode_oscillatory_gravity,observable,muge_fluid_selfgravity_archimedes,companion universal MUGE sub-term (PAPER_245)
 observable,muge_dualmode_oscillatory_gravity,observable,muge_quantum_uncertainty_gQ,companion universal MUGE sub-term (PAPER_244)
@@ -1210,7 +1210,7 @@ primitive,G_OBSERVED,observable,hudf_dual_channel_cascade_buoyancy,U_g1=G*M0/r^2
 observable,hudf_dual_channel_cascade_buoyancy,paper,PAPER_265,dual-channel quadratic cascade buoyancy
 observable,hudf_dual_channel_cascade_buoyancy,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp; confirms U_g1 (PAPER_264 Q-241a)
 observable,hudf_gravitational_meissner_bcrit,paper,PAPER_266,gravitational Meissner effect B_crit=1e11
-observable,hudf_gravitational_meissner_bcrit,observable,cassiopeia_a_class_completeness,NS critical zone (Cas A B~boundary, PAPER_257)
+observable,hudf_gravitational_meissner_bcrit,observable,cassiopeia_a_class_completeness,"NS critical zone (Cas A B~boundary, PAPER_257)"
 observable,hudf_gravitational_meissner_bcrit,observable,hudf_trz_cpt_phase_transition,same HUDFGalaxies.cpp corr_B in U_g4 (PAPER_264)
 primitive,G_OBSERVED,observable,ngc1792_ssfr_starburst_buoyancy_coherence,ug1_base=G*M0/r^2
 primitive,BETA_I,observable,ngc1792_ssfr_starburst_buoyancy_coherence,beta_i canonical Tier-2/3
@@ -1247,3 +1247,13 @@ observable,sombrero_uqff_recession_damping_kappa,observable,andromeda_blueshift_
 observable,sombrero_dust_ring_uqff_gravitational_ring_resonator,observable,andromeda_hi_ring_decaying_resonator,pure oscillatory vs decaying (PAPER_275 contrast); first stable UQFF ring resonator
 observable,sombrero_smbh_dominance_ratio_gamma_bh_sphere_of_influence,observable,sombrero_dust_ring_uqff_gravitational_ring_resonator,Sombrero module companion (277/278/279); g_BH~A_ring at reference radius
 observable,saturn_uqff_solar_tidal_perturbation_ratio_tau_sun,primitive,G_OBSERVED,tau_Sun=(M_Sun/M_planet)*(r_planet/r_orbit)^2; first planetary-scale UQFF module (Saturn)
+observable,gw170817_full_inspiral_damping_D,paper,PAPER_008b,GW170817 full inspiral 23-300 Hz; strain reduced b
+observable,gw150914_aether_string_trz_scm_damping,paper,PAPER_009b,Aether/String/TRZ/SCm damping decomposition GW1509
+observable,gw_time_domain_chirp_23hz_D,paper,PAPER_010b,Time-domain chirp 23 Hz onset -> 250 Hz; D=0.333; 
+observable,uqff_gw_amplitude_reduction_factor_D,paper,PAPER_011b,Universal GW amplitude reduction D=f_TRZ*beta_stri
+observable,gw150914_waveform_validation_damping_ratio,paper,PAPER_012b,GW150914 validation M_c=28 Msun d=410 Mpc; damping
+observable,lisa_smbh_merger_rate_uqff_factor,paper,PAPER_013b,LISA SMBH merger z=1 M=1e6 Msun D_L=6.42 Gpc; UQFF
+observable,emri_aether_damping_string_harmonics,paper,PAPER_014b,EMRI q=1e-5 D_L=2.68 Gpc; f_ISCO=2.931 mHz; harmon
+observable,sterile_neutrino_mass_scm_vacuum,paper,PAPER_026c,Sterile neutrino mass m_s*c^2=rho_SCm*S_26^(3)*Phi
+observable,bubble_nebula_positive_irradiation_enhancement,paper,PAPER_221b,Bubble Nebula NGC 7635 (1+E(t)) POSITIVE irradiati
+observable,bubble_nebula_positive_shell_expansion,paper,PAPER_221c,Bubble Nebula NGC 7635 (1+E(t)) POSITIVE shell exp

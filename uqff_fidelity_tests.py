@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.284.0", "uqff_calculator.VERSION = 0.284.0")
+assert_that(C.VERSION == "0.286.0", "uqff_calculator.VERSION = 0.286.0 (v0.285.0 burned/yanked on PyPI - skipped)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3833,6 +3833,29 @@ assert_that(abs(_r280['planet_tau_table']['Mercury'] - 1.07e-2) < 1e-4 and abs(_
 assert_that(_r280['first_uqff_solar_coupling'] and _r280['tau_constant_not_oscillatory'],
             "PAPER_280: first UQFF solar tidal coupling (planetary framework); g_Sun_tidal constant not oscillatory (quasi-static at Saturn orbit)")
 assert_that(C.wired_count() >= 284, "wired_count >= 284")
+
+# --- BACKFILL: 10 previously-skipped second-files in range PAPER_001-280 (brings wired to true 294) ---
+assert_that(abs(C.calc('PAPER_008b')['value']['D_suppression'] - 0.333) < 1e-3,
+            "PAPER_008b: GW170817 full inspiral D=0.90*0.37=0.333 (66.7% reduction)")
+assert_that(abs(C.calc('PAPER_009b')['value']['apparent_distance_factor'] - 3.0) < 0.05,
+            "PAPER_009b: GW150914 damping decomp; apparent 1231 Mpc vs true 410 Mpc = factor 3")
+assert_that(abs(C.calc('PAPER_010b')['value']['D_suppression'] - 0.333) < 1e-3,
+            "PAPER_010b: time-domain chirp 23 Hz; D=0.333 RMS strain reduction")
+assert_that(abs(C.calc('PAPER_011b')['value']['D_universal'] - 0.333) < 1e-3 and C.calc('PAPER_011b')['value']['universal_above_23Hz'],
+            "PAPER_011b: amplitude reduction D=f_TRZ*beta_string=0.90*0.37=0.333 universal")
+assert_that(abs(C.calc('PAPER_012b')['value']['damping_ratio'] - 0.6691) < 1e-4,
+            "PAPER_012b: GW150914 validation damping ratio 0.6691 sub-unity")
+assert_that(abs(C.calc('PAPER_013b')['value']['uqff_factor'] - 0.6194) < 1e-4 and C.calc('PAPER_013b')['value']['reduction_pct'] == 38.1,
+            "PAPER_013b: LISA SMBH factor 0.6194 (38.1% reduction)")
+assert_that(C.calc('PAPER_014b')['value']['harmonics_mHz'] == [0.293, 0.586, 0.879] and C.calc('PAPER_014b')['value']['stability_factor'] == 1.15,
+            "PAPER_014b: EMRI f_ISCO=2.931 mHz harmonics 0.293/0.586/0.879; stability 1.15")
+assert_that(C.calc('PAPER_026c')['status'] == 'OPEN_RULING' and C.calc('PAPER_026c')['value']['m_s_claimed_keV'] == 5.4,
+            "PAPER_026c: sterile neutrino m_s=5.4 keV headline; formula mojibake (540 MeV) OPEN_RULING Q-244b")
+assert_that('positive' in C.calc('PAPER_221b')['value']['enhancement_form'].lower(),
+            "PAPER_221b: Bubble Nebula (1+E(t)) positive irradiation enhancement")
+assert_that('expansion' in C.calc('PAPER_221c')['value']['enhancement_form'].lower(),
+            "PAPER_221c: Bubble Nebula (1+E(t)) positive shell expansion")
+assert_that(C.wired_count() >= 294, "wired_count >= 294 (backfill complete; 294 = files in range PAPER_001-280)")
 
 
 # =============================================================================

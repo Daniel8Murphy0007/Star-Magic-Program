@@ -1,11 +1,11 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.284.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.284.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.286.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.286.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1744%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-284-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1755%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-294-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.280.0 wiring campaign live**
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 284 / 2,255** (42 ✓ · 242 ⚠ OPEN_RULING · 244 rulings queued) — Saturn solar tidal ratio τ_Sun=(M_Sun/M_pl)(r_pl/r_orbit)²=6.22e-6; first planetary-scale UQFF module (g_base=10.44 m/s²) (280)
+**Wired so far: 294 distinct papers** (`wired_count()`=294 = 280 base-numbered + 14 suffixed) — this **matches the 294 whitepaper files in the campaign range PAPER_001–280**. 50 ✓ CLEAN · 244 ⚠ OPEN_RULING file-rows · 245 rulings queued. **v0.286.0** backfills **10 previously-skipped papers** (008b–014b GW damping, 026c sterile neutrino, 221b/221c Bubble Nebula) that brought the calculator to the true 294, **and** repairs 92+4 malformed registry-CSV rows, corrects report-file provenance, repairs the census generator, and fixes the index header counts. *(v0.285.0 burned/yanked on PyPI — skipped.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -658,7 +658,9 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.281.0 | Band 1: PAPER_277 | 281 |
 | v0.282.0 | Band 1: PAPER_278 | 282 |
 | v0.283.0 | Band 1: PAPER_279 | 283 |
-| **v0.284.0** ← current | Band 1: PAPER_280 | 284 |
+| v0.284.0 | Band 1: PAPER_280 | 284 |
+| ~~v0.285.0~~ | *burned / yanked on PyPI — skipped* | — |
+| **v0.286.0** ← current | Backfill 10 skipped papers (008b–014b, 026c, 221b/c) + registry/index integrity fixes | 294 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

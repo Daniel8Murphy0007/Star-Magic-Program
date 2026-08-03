@@ -10,10 +10,11 @@
 
 ## Summary
 
-- **Total papers:** 2255
-- **Wired:** 284 (42 ✓, 242 ⚠ OPEN_RULING)
+- **Total whitepaper files:** 2255
+- **Papers covered through PAPER_280 (campaign "so far"): 294 files** — the wired range PAPER_001–280 contains 294 whitepaper files, because 12 base numbers ([8,9,10,11,12,13,14,15,16,25,26,221]) have 2–3 files each.
+- **Distinct wired papers: 294** = `wired_count()` = `len(DISPATCH)` — this now **matches** the 294 files in range. Composed of **280** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **50 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1961 ⬜** not-touched (50 + 244 + 1961 = 2255 ✓). Wired file-rows (50 + 244 = **294**) now equal `wired_count()`.
 - **OPEN targets:** 0
-- **Not yet touched:** 1970
 
 ---
 
@@ -30,19 +31,19 @@
 | ✓ | PAPER_006 | GW170817 Multi Messenger Full Inspiral |
 | ⚠ | PAPER_007 | Tidal Deformability Constraints BNS UQFF |
 | ⚠ | PAPER_008 | UQFF Waveform Phase Evolution Template Mismatch |
-| ⬜ | PAPER_008b | Full Inspiral Waveform UQFF |
+| ✓ | PAPER_008b | Full Inspiral Waveform UQFF | CLEAN — D=0.90*0.37=0.333 (66.7% GW strain reduction); backfill v0.286.0 |
 | ⚠ | PAPER_009 | Damping Mechanism Decomposition UQFF |
-| ⬜ | PAPER_009b | Aether String TRZ Damping GW |
+| ✓ | PAPER_009b | Aether String TRZ Damping GW | CLEAN — D=0.333; apparent 1231 vs true 410 Mpc (factor 3); backfill v0.286.0 |
 | ✓ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF |
-| ⬜ | PAPER_010b | Time Domain Chirp 23Hz UQFF |
+| ✓ | PAPER_010b | Time Domain Chirp 23Hz UQFF | CLEAN — D=0.333 RMS strain reduction; backfill v0.286.0 |
 | ✓ | PAPER_011 | Stochastic GW Background UQFF Implications |
-| ⬜ | PAPER_011b | Amplitude Reduction Factor UQFF |
+| ✓ | PAPER_011b | Amplitude Reduction Factor UQFF | CLEAN — D=f_TRZ*beta_string=0.90*0.37=0.333 universal; backfill v0.286.0 |
 | ✓ | PAPER_012 | Eccentric Binary Circularization UQFF |
-| ⬜ | PAPER_012b | GW150914 Waveform Validation |
+| ✓ | PAPER_012b | GW150914 Waveform Validation | CLEAN — damping ratio 0.6691; backfill v0.286.0 |
 | ⚠ | PAPER_013 | Magnetar Spin Down UQFF Framework |
-| ⬜ | PAPER_013b | LISA SMBH Merger Rate UQFF |
+| ✓ | PAPER_013b | LISA SMBH Merger Rate UQFF | CLEAN — factor 0.6194 (38.1% reduction); backfill v0.286.0 |
 | ⚠ | PAPER_014 | Primordial Black Holes UQFF Formation |
-| ⬜ | PAPER_014b | EMRI Aether Damping UQFF |
+| ✓ | PAPER_014b | EMRI Aether Damping UQFF | CLEAN — f_ISCO=2.931 mHz harmonics; stability 1.15; backfill v0.286.0 |
 | ⚠ | PAPER_015 | Cosmological Implications UQFF Modified GW Propagation |
 | ✓ | PAPER_015b | Multiband GW LISA LIGO UQFF |
 | ✓ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations |
@@ -58,7 +59,7 @@
 | ⚠ | PAPER_025 | Dark Matter Direct Detection UQFF |
 | ⚠ | PAPER_025b | Neutrino Polarizability UQFF |
 | ⚠ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
-| ⬜ | PAPER_026 | Sterile Neutrino Mass UQFF |
+| ⚠ | PAPER_026c | Sterile Neutrino Mass UQFF | OPEN_RULING — m_s=5.4 keV headline; formula mojibake 540 MeV (Q-244b); backfill v0.286.0 |
 | ⚠ | PAPER_026b | Vector Like Quarks UQFF |
 | ⚠ | PAPER_027 | Lepton Flavor Violation UQFF |
 | ⚠ | PAPER_028 | BSM Coupling Constants UQFF |
@@ -1478,8 +1479,8 @@
 | ⚠ | PAPER_219 | M16 Eagle Nebula Radiation SFR UQFF |
 | ⚠ | PAPER_220 | Crab Nebula PWN UQFF F wind M mag |
 | ⚠ | PAPER_221 | Bubble Nebula Positive Enhancement UQFF |
-| ⚠ | PAPER_221 | Bubble Nebula Positive Expansion UQFF |
-| ⬜ | PAPER_221b | Bubble Nebula Positive Enhancement UQFF |
+| ✓ | PAPER_221c | Bubble Nebula Positive Expansion UQFF | CLEAN — (1+E(t)) positive shell expansion; backfill v0.286.0 |
+| ✓ | PAPER_221b | Bubble Nebula Positive Enhancement UQFF | CLEAN — (1+E(t)) positive irradiation enhancement; backfill v0.286.0 |
 | ⚠ | PAPER_222 | Horsehead Nebula Prad Blackbody UQFF |
 | ⚠ | PAPER_223 | NGC1275 Perseus AGN Filament UQFF |
 | ⚠ | PAPER_224 | Saturn Dual Gravity Ring Tension UQFF |

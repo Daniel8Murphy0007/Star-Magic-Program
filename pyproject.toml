@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.284.0"
-description = "UQFF Star-Magic-Program v0.284.0: PAPER_280 wired (CLEAN) - Saturn Solar Tidal Perturbation Ratio tau_Sun=(M_Sun/M_planet)*(r_planet/r_orbit)^2=6.22e-6; first planetary-scale UQFF module (g_base=10.44 m/s2); g_Sun_tidal=6.49e-5; universal planetary formula. Wired 284/2255, gate 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (measured)."
+version = "0.286.0"
+description = "UQFF Star-Magic-Program v0.286.0: BACKFILL + INTEGRITY. Wires 10 previously-skipped papers (008b-014b GW damping D=0.333, 026c sterile neutrino, 221b/221c Bubble Nebula) bringing wired_count to the true 294 = whitepaper files in range PAPER_001-280. Also repairs 92+4 malformed registry-CSV rows, corrects report-file provenance (73 predecessor constants preserved as inherited reference), repairs the census generator, fixes index counts. gate 1755/0. (v0.285.0 burned/yanked - skipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

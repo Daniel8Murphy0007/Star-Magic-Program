@@ -7,6 +7,34 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.286.0] — 2026-08-03 — BACKFILL (10 skipped papers) + REGISTRY / INDEX INTEGRITY
+
+> **Version note:** v0.285.0 was published then **yanked from PyPI**, so that number is permanently burned. This release skips to **v0.286.0**. There is no v0.285.0 in this project's usable history. PAPER_281 is **not** in this release; it ships separately as the next version.
+
+> **Root-cause found (Daniel's catch):** the campaign's "papers so far" count is **294** = the number of whitepaper *files* in range PAPER_001–280 (12 base numbers have 2–3 files each). The calculator had only 284 dispatches — **10 second-files had been silently skipped.** This release wires them, bringing `wired_count()` to the true **294**, which now equals the wired file-rows in the index.
+
+### Added — 10 backfilled papers (previously skipped in range PAPER_001–280)
+- **PAPER_008b** Full Inspiral Waveform (GW170817) — D = f_TRZ·β_string = 0.90·0.37 = **0.333** (66.7% strain reduction), 23–300 Hz. CLEAN.
+- **PAPER_009b** Aether/String/TRZ/SCm Damping (GW150914) — D=0.333; GR-template inference gives apparent 1231 Mpc vs true 410 Mpc (factor 3). CLEAN.
+- **PAPER_010b** Time-Domain Chirp 23 Hz — D=0.333; RMS strain 1.3728e-21 → 4.57e-22. CLEAN.
+- **PAPER_011b** Amplitude Reduction Factor — D=0.90·0.37=0.333, universal (z<0.5, f>23 Hz, any source). CLEAN.
+- **PAPER_012b** GW150914 Validation — damping ratio 0.6691 sub-unity; f_TRZ=0.90, f_SCm=0.990. CLEAN.
+- **PAPER_013b** LISA SMBH Merger Rate — UQFF factor 0.6194 (38.1% reduction); h_GR 6.95e-19 → h_UQFF 4.31e-19. CLEAN.
+- **PAPER_014b** EMRI Aether Damping — f_ISCO=2.931 mHz; harmonics 0.293/0.586/0.879 mHz; U_A stability 1.15. CLEAN.
+- **PAPER_026c** Sterile Neutrino Mass — headline m_s=5.4 keV (keV DM, ~3.5 keV X-ray line); the closed form ρ_SCm·S₂₆·Φ_res yields ~540 MeV → **exponent mojibake, wired OPEN_RULING (Q-244b)**.
+- **PAPER_221b** Bubble Nebula (1+E(t)) positive irradiation enhancement. CLEAN.
+- **PAPER_221c** Bubble Nebula (1+E(t)) positive shell expansion. CLEAN.
+- Gate +11 assertions; registry +10 rows (17-col schema) / +10 edges / +10 citations; index rows flipped (7 ✓, 026c ⚠, 221b/c ✓).
+
+### Fixed
+- **Registry CSV schema violations repaired (92 + 4 malformed rows).** `UNIFIED_REGISTRY.csv` had **92 rows with 16 columns instead of 17** — the campaign row-format regressed at some point and omitted the `residual_pct` column (position 7), which shifted every later field left and dropped `status` off the end. All 92 rows now have the `residual_pct` field inserted (value `n/a`; precise residuals live in the calculator dispatches) → 17 columns, 0 malformed. `UNIFIED_REGISTRY_GRAPH.csv` had **4 rows with 6 columns instead of 5** — an unquoted comma inside `edge_info` (e.g. "companion MUGE (PAPER_242, Session 60)") split the field; now merged and properly quoted → 0 malformed. Data preserved; `csv`-module round-trip; CRLF retained.
+- **Report-file provenance corrected.** `UNIFIED_REGISTRY_STATUS_REPORT.md`, `RESULTS_TABLE.md`, `FALSIFIABILITY.md`, `SCHEMA.md` falsely claimed to be "generated live from this repo's `UNIFIED_REGISTRY.csv`" since v0.2.0, while actually carrying the **predecessor** Star-Magic R0–R5 physics results (9-primitive → 73-derived-constant table, 2,549-row registry). Each now carries an honest **INHERITED FROZEN REFERENCE** banner. **All 73 derived constants preserved verbatim — no physics deleted.**
+- **Census generator repaired.** `uqff_registry_status.py` was a scaffold stub whose writers would have *overwritten* the inherited physics results with "no rows wired yet" boilerplate. Rewritten to be read-only and non-destructive: it computes an honest live census of the campaign registry (parsed with the csv module) and never touches the frozen reference files.
+- **`WHITEPAPER_INDEX.md` header counts corrected.** Previously claimed `285 (43 ✓, 242 ⚠)`; the verified count is **284 distinct wired papers** = `wired_count()` = `len(DISPATCH)` = **280 base-numbered `PAPER_NNN` + 4 `b`-suffixed distinct papers** (PAPER_015b Multi-Band GW v0.15.0, 016b LISA WD Foreground v0.17.0, 025b Neutrino Polarizability v0.27.0, 026b Vector-Like Quarks v0.29.0 — separate whitepapers that collided on a base number, **not** variants or duplicate dispatches). Index file-row marks **41 ✓ / 244 ⚠ / 1970 ⬜ = 2255**. The 54 same-number rows are **not** a bug — the corpus genuinely has 2,255 files with 54 numbers shared across two files; no rows removed.
+- **README** summary line, badges (public_surfaces 284, fidelity_gate 1744), and version-history reconciled to the same verified counts.
+
+---
+
 ## [0.284.0] — 2026-08-03 — BAND 1: PAPER_280 — SATURN UQFF SOLAR TIDAL PERTURBATION RATIO (CLEAN)
 
 ### Added
