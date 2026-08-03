@@ -1,21 +1,22 @@
-v0.279.0 BAND 1: PAPER_275 wired - ANDROMEDA DM 80/20 SHELL PARTITION (CLEAN)
+v0.280.0 BAND 1: PAPER_276 wired - ANDROMEDA FRIEDMANN-UQFF EXPANSION (CLEAN)
 
-PAPER_275 (UQFF Dark Matter 80/20 Shell Partition - f_DM^(1/3) NFW Coupling
-Exponent and the xi_DM Interaction Term, S75, ANDROMEDA_UQFF_MODULE.cpp M31
-Master) wired as one dispatch (CLEAN, WIRED).
+PAPER_276 (Andromeda Friedmann-UQFF Gravity Coupling: H(z)t Expansion Term and
+H_UQFF Near-Unity Resonance, S76, ANDROMEDA_UQFF_MODULE.cpp M31 Master) wired as
+one dispatch (CLEAN, WIRED). Completes the M31 series (273-276).
 
-Shell partition: replaces monolithic G*M/r^2 with 3 sub-terms - g_vis=G*(1-f_DM)*
-M/r^2, g_dm=G*f_DM*M/r^2, g_int=xi_DM*g_vis - retaining DM-halo/visible-disk
-structural coupling. xi_DM=f_DM^(1/3); M31 (f_DM=0.80) -> xi_DM=0.9283.
+Friedmann coupling: g_expansion=(G*M/r^2)*H(z)*t; H(z)=H0*sqrt(Om*(1+z)^3+OL),
+H0=70 (canonical A_5+SO_5), Om=0.3, OL=0.7, z=-0.001 -> H(z)=69.969 km/s/Mpc=
+2.269e-18 s^-1.
 
-NFW basis: rho~r^-1 -> M~r^2 -> f_DM~(r/r_vir)^2 -> f_DM^(1/3)~(r/r_vir)^(2/3),
-reproduces NFW radial coupling from global f_DM alone.
+H_UQFF near-unity resonance: H_UQFF=H(z)*t_H=0.987 (~1) - over a Hubble timescale
+adds 98.7% of g_base (gravitational doubling). Flat LCDM H_UQFF=H0*t_H~1.
+Blueshift suppresses 0.15% (0.987 vs 0.9985).
 
-Reproducible: g_base=1.227e-10; g_vis=2.455e-11; g_dm=9.818e-11; g_int=2.279e-11;
-g_DM_total=1.210e-10 (~1.4% reduction vs monolithic). xi table 0.10->0.4642 ...
-0.95->0.9830.
+Minor terms: dust drag a_dust=4.29e-19; M split M_visible=3.978e41, M_DM=1.591e42
+(f_DM=0.80).
 
-CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
+CLEAN - all values reproduce; H0 from canonical registry. Appendix drift
+auto-corrected per charter.
 
-Gate: 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured).
-Campaign: 279/2,255. Next: PAPER_276.
+Gate: 1721/0. Registry 565 rows / 1244 edges / 280 ledgers (measured).
+Campaign: 280/2,255. Next: PAPER_277.

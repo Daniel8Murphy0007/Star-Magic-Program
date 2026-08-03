@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.280.0] — 2026-08-02 — BAND 1: PAPER_276 — ANDROMEDA FRIEDMANN-UQFF EXPANSION (CLEAN)
+
+### Added
+- **PAPER_276 dispatch** — Andromeda Friedmann-UQFF H(z)t expansion coupling, H_UQFF near-unity (Session 76). Completes the M31 series (273–276).
+  - **Friedmann coupling:** g_expansion = (G·M/r²)·H(z)·t, with H(z)=H0·√(Ω_m(1+z)³+Ω_Λ), H0=70 (canonical A_5+SO_5), Ω_m=0.3, Ω_Λ=0.7. For z=−0.001 → H(z)=69.969 km/s/Mpc = 2.269e-18 s⁻¹.
+  - **H_UQFF near-unity resonance:** H_UQFF = H(z)·t_H = 0.987 (~1) — over a Hubble timescale the expansion coupling adds 98.7% of g_base (gravitational doubling). In a flat ΛCDM universe, H_UQFF = H0·t_H ~ 1 (the dimensionless Hubble number). Blueshift suppresses it 0.15% (0.987 vs flat 0.9985).
+  - **Two minor terms:** ISM dust drag a_dust = 4.29e-19 m/s² (~9 orders below g_base); M split M_visible=3.978e41 kg, M_DM=1.591e42 kg (f_DM=0.80, consistent with PAPER_275).
+- Gate +4 assertions (1716 → 1721, 0 failures).
+- Registry: +1 row (565), +4 edges (1244), +1 citation (280).
+
+### Notes
+- CLEAN — all values reproduce; H0 composed from canonical registry.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.279.0] — 2026-08-02 — BAND 1: PAPER_275 — ANDROMEDA DM 80/20 SHELL PARTITION (CLEAN)
 
 ### Added

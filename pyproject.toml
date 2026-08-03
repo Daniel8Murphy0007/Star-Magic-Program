@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.279.0"
-description = "UQFF Star-Magic-Program v0.279.0: PAPER_275 wired (CLEAN) - Andromeda DM 80/20 shell partition; xi_DM=f_DM^(1/3)=0.9283 NFW coupling; g_DM_total=1.210e-10 (~1.4% reduction vs monolithic). Wired 279/2255, gate 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured)."
+version = "0.280.0"
+description = "UQFF Star-Magic-Program v0.280.0: PAPER_276 wired (CLEAN) - Andromeda Friedmann-UQFF H(z)t expansion coupling; H_UQFF=H(z)*t_H=0.987 near-unity resonance (gravitational doubling over Hubble time); completes M31 series 273-276. Wired 280/2255, gate 1721/0. Registry 565 rows / 1244 edges / 280 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

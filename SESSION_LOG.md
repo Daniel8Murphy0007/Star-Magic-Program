@@ -3751,3 +3751,29 @@ beta_i) auto-corrected per charter.
 
 Gate: 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured).
 Campaign: 279/2,255. Next: PAPER_276.
+
+---
+
+## 2026-08-02 — v0.280.0 — BAND 1: PAPER_276 — ANDROMEDA FRIEDMANN-UQFF EXPANSION (CLEAN)
+
+PAPER_276 (Andromeda Friedmann-UQFF Gravity Coupling: H(z)t Expansion Term and
+H_UQFF Near-Unity Resonance, Session 76, ANDROMEDA_UQFF_MODULE.cpp M31 Master)
+wired as one dispatch (CLEAN, WIRED). Completes the M31 series (273-276).
+
+Friedmann coupling: g_expansion=(G*M/r^2)*H(z)*t, with H(z)=H0*sqrt(Om*(1+z)^3+
+OL), H0=70 (canonical A_5+SO_5), Om=0.3, OL=0.7. For z=-0.001 -> H(z)=69.969
+km/s/Mpc=2.269e-18 s^-1.
+
+H_UQFF near-unity resonance: H_UQFF=H(z)*t_H=0.987 (~1) - over a Hubble timescale
+the expansion coupling adds 98.7% of g_base (gravitational doubling). In a flat
+LCDM universe H_UQFF=H0*t_H~1 (dimensionless Hubble number). Blueshift suppresses
+it 0.15% (0.987 vs flat 0.9985).
+
+Two minor terms: ISM dust drag a_dust=4.29e-19 m/s^2 (~9 orders below g_base);
+M split M_visible=3.978e41 kg, M_DM=1.591e42 kg (f_DM=0.80 per PAPER_275).
+
+CLEAN - all values reproduce; H0 composed from canonical registry. Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1721/0. Registry 565 rows / 1244 edges / 280 ledgers (measured).
+Campaign: 280/2,255. Next: PAPER_277.

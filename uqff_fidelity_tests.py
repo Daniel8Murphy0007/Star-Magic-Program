@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.279.0", "uqff_calculator.VERSION = 0.279.0")
+assert_that(C.VERSION == "0.280.0", "uqff_calculator.VERSION = 0.280.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3770,6 +3770,17 @@ assert_that(abs(_r275['g_DM_total'] - 1.210e-10) < 1e-13 and abs(_r275['reductio
 assert_that(_r275['nfw_exponent_third'] and _r275['shell_partition_terms'] == 3 and abs(_r275['xi_at_f0p50'] - 0.7937) < 1e-3,
             "PAPER_275: 3-term shell partition; NFW 1/3 exponent (rho~r^-1 -> f^(1/3)~r^(2/3)); xi(0.5)=0.7937")
 assert_that(C.wired_count() >= 279, "wired_count >= 279")
+
+_r276 = C.calc('PAPER_276')['value']
+assert_that(abs(_r276['Hz_km_s_mpc'] - 69.969) < 0.01 and abs(_r276['Hz_SI'] - 2.269e-18) < 1e-20 and _r276['H0_km_s_mpc'] == 70,
+            "PAPER_276: H(z=-0.001) = 70*sqrt(0.3*0.999^3+0.7) = 69.969 km/s/Mpc = 2.269e-18 s^-1 (H0=70 canonical)")
+assert_that(abs(_r276['H_UQFF'] - 0.987) < 1e-3 and _r276['H_UQFF_near_unity'],
+            "PAPER_276: H_UQFF = H(z)*t_H = 2.269e-18*4.352e17 = 0.987 (~1, Friedmann-UQFF near-unity resonance)")
+assert_that(abs(_r276['g_expansion_tH'] - 1.211e-10) < 1e-13 and _r276['g_exp_over_base_pct'] == 98.7,
+            "PAPER_276: g_expansion(t_H) = g_base*H_UQFF = 1.211e-10 (98.7% of g_base, gravitational doubling)")
+assert_that(abs(_r276['a_dust'] - 4.291e-19) < 1e-21 and abs(_r276['M_visible_kg'] - 3.978e41) < 1e38 and _r276['completes_m31_series'],
+            "PAPER_276: ISM dust drag a_dust = 4.29e-19; M_visible=3.978e41 kg (f_DM=0.80); completes M31 series 273-276")
+assert_that(C.wired_count() >= 280, "wired_count >= 280")
 
 
 # =============================================================================
