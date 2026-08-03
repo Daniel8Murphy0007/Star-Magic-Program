@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.288.0] — 2026-08-03 — BAND 1: PAPER_281 — SATURN RING UQFF TIDAL GRAVITY RESONANCE (CLEAN)
+
+### Added
+- **PAPER_281 dispatch** — Saturn Ring UQFF Tidal Gravity Resonance (Session 78, SATURN_UQFF_MODULE.cpp). The first **planetary ring** UQFF module — distinct from PAPER_278 (Sombrero galactic dust ring): Saturn's rings sit *outside* the body (r_ring ≈ 2·r_Saturn), so the classical first-order tidal form applies.
+  - ω_ring_kep = √(G·M_Saturn/r_ring³) = 1.481e-4 rad/s; T_ring = 2π/ω_ring_kep = 11.78 h — consistent with observed Saturn B-ring Keplerian periods (10.5–14.4 h).
+  - g_ring_tidal = G·M_ring·r_Saturn/r_ring³ = 3.49e-8 m/s² (3.34e-9 of g_base). F_ring(t)=g_ring_tidal·cos(ω_ring_kep·t), pure oscillatory. Proximity ratio r_ring/r_Saturn = 2.0.
+- Gate +5 assertions (→ 1760, 0 failures). wired_count 294 → **295**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_281 → ✓.
+- Campaign frontier advances to PAPER_281 (was PAPER_280).
+
+### Notes
+- CLEAN — all values reproduce. (v0.285.0 burned/yanked; v0.286.0 backfilled 10 skipped papers to reach 294; v0.287.0 doc-correction.)
+
+---
+
 ## [0.287.0] — 2026-08-03 — DOC CORRECTION (stale version strings that shipped in v0.286.0)
 
 > **No code or physics change** from v0.286.0. Calculator is byte-identical (294 wired papers, gate 1755/0). This release only fixes stale version strings that were carried in v0.286.0 because they were never part of the per-ship version-sync routine.

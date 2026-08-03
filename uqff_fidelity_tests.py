@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.287.0", "uqff_calculator.VERSION = 0.287.0 (v0.285.0 and v0.286.0 both shipped/burned; this is doc-correction release)")
+assert_that(C.VERSION == "0.288.0", "uqff_calculator.VERSION = 0.288.0 (v0.285.0 burned, v0.286.0/0.287.0 shipped; PAPER_281 = v0.288.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3856,6 +3856,17 @@ assert_that('positive' in C.calc('PAPER_221b')['value']['enhancement_form'].lowe
 assert_that('expansion' in C.calc('PAPER_221c')['value']['enhancement_form'].lower(),
             "PAPER_221c: Bubble Nebula (1+E(t)) positive shell expansion")
 assert_that(C.wired_count() >= 294, "wired_count >= 294 (backfill complete; 294 = files in range PAPER_001-280)")
+
+_r281 = C.calc('PAPER_281')['value']
+assert_that(abs(_r281['omega_ring_kep'] - 1.481e-4) < 1e-6 and _r281['omega_ring_kep_formula'] == 'sqrt(G*M_Saturn/r_ring^3)',
+            "PAPER_281: omega_ring_kep = sqrt(G*M_Saturn/r_ring^3) = 1.481e-4 rad/s (Saturn ring Keplerian resonance)")
+assert_that(abs(_r281['T_ring_h'] - 11.78) < 0.05 and _r281['T_ring_obs_consistent'],
+            "PAPER_281: T_ring = 2pi/omega_ring_kep = 11.78 hours (consistent with Saturn B ring 10.5-14.4 h)")
+assert_that(abs(_r281['g_ring_tidal'] - 3.49e-8) < 1e-10 and _r281['g_ring_tidal_formula'] == 'G*M_ring*r_Saturn/r_ring^3 (first-order tidal, r_ring>r_Saturn)',
+            "PAPER_281: g_ring_tidal = G*M_ring*r_Saturn/r_ring^3 = 3.49e-8 m/s2 (first-order tidal, ring outside body)")
+assert_that(_r281['proximity_clean_2x'] and _r281['pure_oscillatory_no_decay'] and _r281['distinct_from_paper_278'] and _r281['first_planetary_ring_module'],
+            "PAPER_281: proximity r_ring/r_Saturn=2.0; F_ring pure oscillatory; distinct from PAPER_278; first planetary ring module")
+assert_that(C.wired_count() >= 295, "wired_count >= 295 (PAPER_281 wired)")
 
 
 # =============================================================================

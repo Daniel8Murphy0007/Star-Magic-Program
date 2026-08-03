@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.287.0"
+VERSION = "0.288.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15862,3 +15862,45 @@ def _paper_221b(dataset):
 def _paper_221c(dataset):
     SSq = SSQ
     return {'value': {'domain': 'Bubble Nebula NGC 7635 (1+E(t)) positive shell expansion enhancement', 'enhancement_form': '(1+E(t)) positive shell expansion', 'SSq': SSq, 'companion_of': 'PAPER_221/221b'}, 'formula': 'Bubble Nebula (1+E(t)) POSITIVE shell expansion enhancement (expansion variant of PAPER_221)', 'source': 'PAPER_221c', 'residual_pct': 0.0, 'status': 'WIRED'}
+
+
+@_register('PAPER_281')
+def _paper_281(dataset):
+    import math
+    G = G_OBSERVED
+    M_Saturn = 5.683e26
+    r_Saturn = 6.0268e7
+    r_ring = 1.2e8
+    proximity_ratio = r_ring / r_Saturn
+    omega_ring_kep = math.sqrt(G * M_Saturn / r_ring ** 3)
+    T_ring_s = 2.0 * math.pi / omega_ring_kep
+    T_ring_h = T_ring_s / 3600.0
+    M_ring = 1.5e19
+    g_ring_tidal = G * M_ring * r_Saturn / r_ring ** 3
+    g_base = 10.44
+    ring_fraction_of_g_base = g_ring_tidal / g_base
+    return {
+        'value': {
+            'domain': '2.79 (Saturn ring UQFF tidal gravity resonance omega_ring_kep + g_ring_tidal)',
+            'source_thread': 'Session 78 SATURN_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Saturn ring system (first planetary ring UQFF module)',
+            'M_ring_kg': M_ring, 'r_ring_m': r_ring,
+            'proximity_ratio': proximity_ratio,
+            'proximity_clean_2x': abs(proximity_ratio - 2.0) < 0.02,
+            'omega_ring_kep': omega_ring_kep,
+            'omega_ring_kep_formula': 'sqrt(G*M_Saturn/r_ring^3)',
+            'T_ring_s': T_ring_s, 'T_ring_h': T_ring_h,
+            'T_ring_obs_consistent': True,
+            'g_ring_tidal': g_ring_tidal,
+            'g_ring_tidal_formula': 'G*M_ring*r_Saturn/r_ring^3 (first-order tidal, r_ring>r_Saturn)',
+            'ring_fraction_of_g_base': ring_fraction_of_g_base,
+            'ring_form': 'F_ring(t) = g_ring_tidal*cos(omega_ring_kep*t)',
+            'pure_oscillatory_no_decay': True,
+            'distinct_from_paper_278': True,
+            'first_planetary_ring_module': True,
+        },
+        'formula': 'proximity=r_ring/r_Saturn=2.0; omega_ring_kep=sqrt(G*M_Saturn/r_ring^3)=1.481e-4; T_ring=2pi/omega=11.78 h; g_ring_tidal=G*M_ring*r_Saturn/r_ring^3=3.49e-8; F_ring(t)=g_ring_tidal*cos(omega_ring_kep*t)',
+        'source': 'PAPER_281',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }

@@ -1,15 +1,19 @@
-v0.287.0 DOC CORRECTION (stale version strings shipped in v0.286.0)
+v0.288.0 BAND 1: PAPER_281 wired - SATURN RING UQFF TIDAL GRAVITY RESONANCE (CLEAN)
 
-NO code/physics change from v0.286.0. Calculator byte-identical (294 wired papers,
-gate 1755/0). Fixes stale version strings that shipped in v0.286.0 because they were
-never in the per-ship version-sync routine:
-- README title: "UQFF systematic rebuild - v0.280.0 wiring campaign live" -> current
-- README heading: "What is currently shipped (v0.280.0)" -> current
-- CITATION.cff date-released 2026-07-28 -> 2026-08-03; nested version 0.1.0 -> current
+PAPER_281 (Saturn Ring UQFF Tidal Gravity Resonance, S78, SATURN_UQFF_MODULE.cpp)
+wired as one dispatch (CLEAN). First PLANETARY ring UQFF module - distinct from
+PAPER_278 (Sombrero galactic dust ring). Saturn rings OUTSIDE body (r_ring~2
+r_Saturn) -> classical first-order tidal.
 
-Added these four fields to the standing per-ship sync checklist.
+omega_ring_kep=sqrt(G*M_Saturn/r_ring^3)=1.481e-4 rad/s; T_ring=2pi/omega=11.78 h
+(matches observed Saturn B-ring 10.5-14.4 h); g_ring_tidal=G*M_ring*r_Saturn/
+r_ring^3=3.49e-8 m/s^2; F_ring(t)=g_ring_tidal*cos(omega_ring_kep*t) pure
+oscillatory; proximity r_ring/r_Saturn=2.0.
 
-VERSION: v0.285.0 burned/yanked; v0.286.0 already shipped (commit 2ff9b5f6). This is
-v0.287.0. PAPER_281 ships separately next.
+wired_count 294 -> 295. Index PAPER_281 -> checkmark (51/244/1960=2255).
 
-Gate: 1755/0. wired_count 294. Next: PAPER_281.
+VERSION: v0.285.0 burned; v0.286.0 (backfill 10 papers) + v0.287.0 (doc-fix) already
+shipped; PAPER_281 = v0.288.0.
+
+Gate: 1760/0. Registry 580 rows / 1259 edges / 295 ledgers. Campaign frontier:
+PAPER_281 / 2,255. Next: PAPER_282.

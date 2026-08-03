@@ -1257,3 +1257,4 @@ observable,emri_aether_damping_string_harmonics,paper,PAPER_014b,EMRI q=1e-5 D_L
 observable,sterile_neutrino_mass_scm_vacuum,paper,PAPER_026c,Sterile neutrino mass m_s*c^2=rho_SCm*S_26^(3)*Phi
 observable,bubble_nebula_positive_irradiation_enhancement,paper,PAPER_221b,Bubble Nebula NGC 7635 (1+E(t)) POSITIVE irradiati
 observable,bubble_nebula_positive_shell_expansion,paper,PAPER_221c,Bubble Nebula NGC 7635 (1+E(t)) POSITIVE shell exp
+observable,saturn_ring_uqff_tidal_gravity_resonance_omega_ring_kep,observable,saturn_uqff_solar_tidal_perturbation_ratio_tau_sun,Saturn module companion (280/281); ring tidal < solar tidal

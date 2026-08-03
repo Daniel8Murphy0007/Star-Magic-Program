@@ -3970,3 +3970,25 @@ Standing lesson: the sandbox mount does NOT track Daniel's ships - always confir
 the latest shipped commit/version before stamping (git cat-file / git log <hash>).
 
 Gate: 1755/0. wired_count 294 (unchanged). Next: PAPER_281.
+
+---
+
+## 2026-08-03 — v0.288.0 — BAND 1: PAPER_281 — SATURN RING UQFF TIDAL GRAVITY RESONANCE (CLEAN)
+
+PAPER_281 (Saturn Ring UQFF Tidal Gravity Resonance omega_ring_kep/T_ring/
+g_ring_tidal, Session 78, SATURN_UQFF_MODULE.cpp) wired as one dispatch (CLEAN).
+First PLANETARY ring UQFF module - distinct from PAPER_278 (Sombrero galactic dust
+ring). Saturn rings OUTSIDE body (r_ring~2 r_Saturn) -> classical first-order tidal.
+omega_ring_kep=sqrt(G*M_Saturn/r_ring^3)=1.481e-4 rad/s; T_ring=2pi/omega=11.78 h
+(matches Saturn B-ring 10.5-14.4 h); g_ring_tidal=G*M_ring*r_Saturn/r_ring^3=3.49e-8
+m/s^2; F_ring pure oscillatory; proximity=2.0.
+
+wired_count 294 -> 295. Gate +5 (1760/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_281 -> ✓ (51 ✓ / 244 ⚠ / 1960 ⬜ = 2255; wired file-rows 295
+= wired_count). Campaign frontier PAPER_280 -> PAPER_281.
+
+VERSION: v0.285.0 burned; v0.286.0 (backfill 10) and v0.287.0 (doc-fix) shipped;
+PAPER_281 = v0.288.0. Confirmed real HEAD via Daniel's ships, not stale sandbox.
+
+Gate: 1760/0. Registry 580 rows / 1259 edges / 295 ledgers. Campaign frontier:
+PAPER_281 / 2,255. Next: PAPER_282.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.287.0"
-description = "UQFF Star-Magic-Program v0.287.0: DOC CORRECTION. Fixes stale version strings that shipped in v0.286.0 - README title/heading (v0.280.0 -> current), CITATION date-released (2026-08-03) and nested version. No code/physics change from v0.286.0: 294 wired papers (= whitepaper files in range PAPER_001-280), gate 1755/0. (v0.285.0 burned/yanked; v0.286.0 already shipped.)"
+version = "0.288.0"
+description = "UQFF Star-Magic-Program v0.288.0: PAPER_281 wired (CLEAN) - Saturn Ring Tidal Gravity Resonance omega_ring_kep=sqrt(GM/r_ring^3)=1.481e-4 rad/s, T_ring=11.78 h (matches observed B ring); g_ring_tidal=3.49e-8; first planetary ring UQFF module; proximity=2.0. wired_count 295, gate 1760/0. Campaign frontier PAPER_281 of 2255. (v0.285.0 burned; v0.286.0/0.287.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
