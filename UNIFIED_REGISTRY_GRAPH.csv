@@ -1245,3 +1245,4 @@ observable,andromeda_friedmann_uqff_expansion_coupling,paper,PAPER_276,Friedmann
 observable,andromeda_friedmann_uqff_expansion_coupling,observable,andromeda_dm_8020_shell_partition,completes M31 series + M split (PAPER_275)
 observable,sombrero_uqff_recession_damping_kappa,observable,andromeda_blueshift_approach_amplifier,complements PAPER_273 -> Universal Bidirectional Redshift Law kappa(z)=1/(1+z)
 observable,sombrero_dust_ring_uqff_gravitational_ring_resonator,observable,andromeda_hi_ring_decaying_resonator,pure oscillatory vs decaying (PAPER_275 contrast); first stable UQFF ring resonator
+observable,sombrero_smbh_dominance_ratio_gamma_bh_sphere_of_influence,observable,sombrero_dust_ring_uqff_gravitational_ring_resonator,Sombrero module companion (277/278/279); g_BH~A_ring at reference radius

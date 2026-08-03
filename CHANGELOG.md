@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.283.0] — 2026-08-03 — BAND 1: PAPER_279 — SOMBRERO SMBH DOMINANCE RATIO + SPHERE OF INFLUENCE (CLEAN)
+
+### Added
+- **PAPER_279 dispatch** — Sombrero SMBH Dominance Ratio γ_BH and UQFF Sphere of Influence r_SOI (Session 77, SOMBRERO_UQFF_MODULE.cpp, UQFF 2.0). Completes the Sombrero module (277–279).
+  - **SMBH Dominance Ratio:** γ_BH = M_BH/M = 1e9/1e11 M_sun = 0.01 (1%) — the highest of any nearby well-measured galaxy in the UQFF catalogue.
+  - **BH contribution:** g_BH = γ_BH·g_base = G·M_BH/r² = 0.01·2.382e-10 = 2.382e-12 m/s² (~0.019% of the 26-layer Triadic sum at the reference radius).
+  - **UQFF Sphere of Influence:** r_SOI = r·√(γ_BH), the radius where g_BH(r_SOI) = g_base(r). r_SOI = 2.36e20·0.1 = 2.36e19 m = 2.49 kly — the boundary inside which BH gravity exceeds galaxy-mean gravity.
+  - **Comparative dominance:** Sombrero γ_BH is 250× Milky Way Sgr A* (4e-5), 9.09× M87, 71.4× Andromeda. γ_BH + r_SOI define a universal UQFF BH-dominance prescription for any galaxy module with known M_BH/M.
+- Gate +5 assertions (1731 → 1736, 0 failures).
+- Registry: +1 row (568), +1 edge (1247), +1 citation (283).
+
+### Notes
+- CLEAN — all values reproduce. Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603, SSq) auto-corrected per charter.
+
+---
+
 ## [0.282.0] — 2026-08-03 — BAND 1: PAPER_278 — SOMBRERO DUST RING GRAVITATIONAL RESONATOR (derived-correct)
 
 ### Added

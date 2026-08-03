@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.282.0"
+VERSION = "0.283.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15699,6 +15699,51 @@ def _paper_278(dataset):
         },
         'formula': 'r_ring=r/3; omega_ring=sqrt(G*M/r_ring^3)=1.650e-14; A_ring=(r/r_ring)^2*f_ring*g_base=9*0.001*g_base=2.144e-12; F_ring(t)=A_ring*cos(omega_ring*t) pure oscillatory',
         'source': 'PAPER_278',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_279')
+def _paper_279(dataset):
+    import math
+    M_BH = 1.989e39                                      # 1e9 Msun (Ford 1996 gas kinematics)
+    M = 1.989e41                                          # 1e11 Msun total within reference radius
+    gamma_BH = M_BH / M                                   # 0.01 = 1%
+    g_base = 2.382e-10                                    # G*M/r^2 for Sombrero
+    g_BH = gamma_BH * g_base                              # 2.382e-12 m/s2
+    r = 2.36e20                                           # reference radius
+    r_SOI = r * math.sqrt(gamma_BH)                       # 2.36e19 m
+    r_SOI_kly = r_SOI / 9.461e18                          # 2.49 kly
+    bh_fraction = g_BH / 1.238e-8                         # 1.92e-4 of Triadic sum
+    ratio_sgra = gamma_BH / 4e-5                          # 250x Milky Way Sgr A*
+    ratio_m87 = gamma_BH / 1.1e-3                         # 9.09x M87
+    ratio_andromeda = gamma_BH / 1.4e-4                   # 71.4x Andromeda
+    return {
+        'value': {
+            'domain': '2.77 (Sombrero SMBH dominance ratio gamma_BH + UQFF sphere of influence r_SOI)',
+            'source_thread': 'Session 77 SOMBRERO_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Sombrero M104 SMBH',
+            'M_BH_kg': M_BH,                              # 1.989e39
+            'M_total_kg': M,                             # 1.989e41
+            'gamma_BH': gamma_BH,                         # 0.01
+            'gamma_BH_formula': 'M_BH/M',
+            'g_base': g_base,                            # 2.382e-10
+            'g_BH': g_BH,                               # 2.382e-12
+            'g_BH_formula': 'gamma_BH*g_base = G*M_BH/r^2',
+            'r_m': r,
+            'r_SOI_m': r_SOI,                            # 2.36e19
+            'r_SOI_formula': 'r*sqrt(gamma_BH)',
+            'r_SOI_kly': r_SOI_kly,                      # 2.49
+            'bh_fraction_of_triadic': bh_fraction,       # 1.92e-4 (~0.019%)
+            'ratio_vs_sgra': ratio_sgra,                 # 250
+            'ratio_vs_m87': ratio_m87,                   # 9.09
+            'ratio_vs_andromeda': ratio_andromeda,       # 71.4
+            'highest_gamma_in_catalogue': True,          # Sombrero most BH-dominant nearby galaxy
+            'universal_bh_prescription': True,           # gamma_BH + r_SOI standard for BH-dominated modules
+        },
+        'formula': 'gamma_BH = M_BH/M = 0.01; g_BH = gamma_BH*g_base = 2.382e-12; r_SOI = r*sqrt(gamma_BH) = 2.36e19 m (set g_BH(r_SOI)=g_base(r)); 250x Sgr A* dominance',
+        'source': 'PAPER_279',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -3837,3 +3837,28 @@ per charter.
 
 Gate: 1731/0. Registry 567 rows / 1246 edges / 282 ledgers (measured).
 Campaign: 282/2,255. Next: PAPER_279 (Sombrero SMBH dominance ratio, companion).
+
+---
+
+## 2026-08-03 — v0.283.0 — BAND 1: PAPER_279 — SOMBRERO SMBH DOMINANCE RATIO + SPHERE OF INFLUENCE (CLEAN)
+
+PAPER_279 (Sombrero SMBH Dominance Ratio gamma_BH and UQFF Sphere of Influence
+r_SOI, Session 77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one dispatch
+(CLEAN, WIRED). Completes the Sombrero module (277-279).
+
+SMBH Dominance Ratio: gamma_BH = M_BH/M = 1e9/1e11 Msun = 0.01 (1%) - highest of
+any nearby well-measured galaxy in UQFF catalogue. BH contribution: g_BH =
+gamma_BH*g_base = G*M_BH/r^2 = 0.01*2.382e-10 = 2.382e-12 m/s^2 (~0.019% of
+26-layer Triadic sum at reference radius). UQFF Sphere of Influence: r_SOI =
+r*sqrt(gamma_BH) defined by g_BH(r_SOI)=g_base(r) -> r_SOI = 2.36e20*0.1 =
+2.36e19 m = 2.49 kly (boundary inside which BH gravity exceeds galaxy-mean).
+
+Comparative dominance: Sombrero gamma_BH is 250x Milky Way Sgr A* (4e-5), 9.09x
+M87, 71.4x Andromeda. gamma_BH + r_SOI = universal UQFF BH-dominance prescription
+for any galaxy module with known M_BH/M.
+
+CLEAN - all values reproduce. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.603, SSq) auto-corrected per charter.
+
+Gate: 1736/0. Registry 568 rows / 1247 edges / 283 ledgers (measured).
+Campaign: 283/2,255. Next: PAPER_280.

@@ -1,21 +1,19 @@
-v0.282.0 BAND 1: PAPER_278 wired - SOMBRERO DUST RING GRAVITATIONAL RESONATOR (derived-correct)
+v0.283.0 BAND 1: PAPER_279 wired - SOMBRERO SMBH DOMINANCE RATIO + SPHERE OF INFLUENCE (CLEAN)
 
-PAPER_278 (Sombrero Dust Ring UQFF Gravitational Ring Resonator omega_ring and
-r_ring, S77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one dispatch (WIRED,
-derived-correct). Models M104's equatorial dust lane as an annular resonator.
+PAPER_279 (Sombrero SMBH Dominance Ratio gamma_BH and UQFF Sphere of Influence
+r_SOI, S77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one dispatch (CLEAN,
+WIRED). Completes the Sombrero module (277-279).
 
-Ring geometry: r_ring=r/3=7.867e19 m; proximity (r/r_ring)^2=9. Orbital
-resonance: omega_ring=sqrt(G*M/r_ring^3)=1.650e-14 rad/s; T_ring=2pi/omega_ring=
-12.08 Myr. Amplitude: A_ring=9*f_ring*g_base=9*0.001*2.382e-10=2.144e-12 m/s^2.
-F_ring(t)=A_ring*cos(omega_ring*t) - PURE oscillatory, NO exp decay (vs PAPER_275
-decaying HI ring). First stable UQFF Gravitational Ring Resonator; A_ring~g_BH.
+SMBH Dominance Ratio: gamma_BH = M_BH/M = 1e9/1e11 Msun = 0.01 (1%) - highest of
+any nearby well-measured galaxy in UQFF catalogue. BH contribution: g_BH =
+gamma_BH*g_base = 0.01*2.382e-10 = 2.382e-12 m/s^2 (~0.019% of Triadic sum).
+UQFF Sphere of Influence: r_SOI = r*sqrt(gamma_BH) = 2.36e20*0.1 = 2.36e19 m =
+2.49 kly (g_BH(r_SOI)=g_base(r)).
 
-Q-244 (derived-correct): headline omega=1.650e-14/T=12.08 Myr self-consistent
-with M=1.989e42 kg (~1e12 Msun). Sec 2.2's 1.989e41/1.327e31 is a dropped-exponent
-typo (would give omega=5.22e-15/T=38 Myr, contradicting all 4 paper tables).
-Wired headline values.
+Comparative: Sombrero gamma_BH is 250x Sgr A*, 9.09x M87, 71.4x Andromeda.
+gamma_BH + r_SOI = universal UQFF BH-dominance prescription.
 
-Appendix drift auto-corrected per charter.
+CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1731/0. Registry 567 rows / 1246 edges / 282 ledgers (measured).
-Campaign: 282/2,255. Next: PAPER_279.
+Gate: 1736/0. Registry 568 rows / 1247 edges / 283 ledgers (measured).
+Campaign: 283/2,255. Next: PAPER_280.

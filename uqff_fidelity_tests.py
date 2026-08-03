@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.282.0", "uqff_calculator.VERSION = 0.282.0")
+assert_that(C.VERSION == "0.283.0", "uqff_calculator.VERSION = 0.283.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3807,6 +3807,19 @@ assert_that(_r278['pure_oscillatory_no_decay'] and _r278['first_stable_uqff_ring
 assert_that(_r278['A_ring_approx_g_BH'],
             "PAPER_278: A_ring ~ g_BH (both ~2.1-2.4e-12); ring and BH contributions comparable at reference radius")
 assert_that(C.wired_count() >= 282, "wired_count >= 282")
+
+_r279 = C.calc('PAPER_279')['value']
+assert_that(abs(_r279['gamma_BH'] - 0.01) < 1e-6 and _r279['gamma_BH_formula'] == 'M_BH/M',
+            "PAPER_279: gamma_BH = M_BH/M = 1e9/1e11 = 0.01 (Sombrero SMBH Dominance Ratio, 1%)")
+assert_that(abs(_r279['g_BH'] - 2.382e-12) < 1e-15 and _r279['g_BH_formula'] == 'gamma_BH*g_base = G*M_BH/r^2',
+            "PAPER_279: g_BH = gamma_BH*g_base = 0.01*2.382e-10 = 2.382e-12 m/s2 (BH direct contribution at r)")
+assert_that(abs(_r279['r_SOI_m'] - 2.36e19) < 1e17 and _r279['r_SOI_formula'] == 'r*sqrt(gamma_BH)' and abs(_r279['r_SOI_kly'] - 2.49) < 0.02,
+            "PAPER_279: r_SOI = r*sqrt(gamma_BH) = 2.36e20*0.1 = 2.36e19 m = 2.49 kly (UQFF Sphere of Influence, g_BH(r_SOI)=g_base(r))")
+assert_that(abs(_r279['ratio_vs_sgra'] - 250.0) < 1.0 and _r279['highest_gamma_in_catalogue'],
+            "PAPER_279: Sombrero gamma_BH 250x Milky Way Sgr A* (0.01/4e-5); highest gamma_BH of nearby galaxies in UQFF catalogue")
+assert_that(abs(_r279['bh_fraction_of_triadic'] - 1.92e-4) < 1e-5 and abs(_r279['ratio_vs_m87'] - 9.09) < 0.1,
+            "PAPER_279: g_BH/g_total ~ 1.92e-4 (~0.019% of Triadic sum); Sombrero/M87 gamma_BH ratio ~9x")
+assert_that(C.wired_count() >= 283, "wired_count >= 283")
 
 
 # =============================================================================

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.282.0"
-description = "UQFF Star-Magic-Program v0.282.0: PAPER_278 wired (derived-correct) - Sombrero dust ring gravitational resonator omega_ring=sqrt(GM/r_ring^3)=1.650e-14 rad/s, T_ring=12.08 Myr, A_ring=9*f_ring*g_base=2.144e-12; first stable UQFF ring resonator (pure oscillatory, no decay). Wired 282/2255, gate 1731/0. Registry 567 rows / 1246 edges / 282 ledgers (measured)."
+version = "0.283.0"
+description = "UQFF Star-Magic-Program v0.283.0: PAPER_279 wired (CLEAN) - Sombrero SMBH Dominance Ratio gamma_BH=M_BH/M=0.01 (250x Sgr A*); UQFF Sphere of Influence r_SOI=r*sqrt(gamma_BH)=2.36e19 m; g_BH=gamma_BH*g_base=2.382e-12; universal BH-dominance prescription. Wired 283/2255, gate 1736/0. Registry 568 rows / 1247 edges / 283 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
