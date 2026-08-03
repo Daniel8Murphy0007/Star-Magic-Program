@@ -1,19 +1,17 @@
-v0.288.0 BAND 1: PAPER_281 wired - SATURN RING UQFF TIDAL GRAVITY RESONANCE (CLEAN)
+v0.289.0 BAND 1: PAPER_282 wired - SATURN UQFF ATMOSPHERIC WIND KINETIC PRESSURE (CLEAN)
 
-PAPER_281 (Saturn Ring UQFF Tidal Gravity Resonance, S78, SATURN_UQFF_MODULE.cpp)
-wired as one dispatch (CLEAN). First PLANETARY ring UQFF module - distinct from
-PAPER_278 (Sombrero galactic dust ring). Saturn rings OUTSIDE body (r_ring~2
-r_Saturn) -> classical first-order tidal.
+PAPER_282 (Saturn UQFF Atmospheric Wind Kinetic Pressure a_wind/eta_wind, S78,
+SATURN_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). FIRST UQFF gas-giant
+atmospheric-physics term.
 
-omega_ring_kep=sqrt(G*M_Saturn/r_ring^3)=1.481e-4 rad/s; T_ring=2pi/omega=11.78 h
-(matches observed Saturn B-ring 10.5-14.4 h); g_ring_tidal=G*M_ring*r_Saturn/
-r_ring^3=3.49e-8 m/s^2; F_ring(t)=g_ring_tidal*cos(omega_ring_kep*t) pure
-oscillatory; proximity r_ring/r_Saturn=2.0.
+eta_wind = v_wind/c = 500/2.998e8 = 1.668e-6. a_wind = eta_wind^2*g_base =
+(v_wind/c)^2*g_base = 2.904e-11 m/s^2 (constant additive term, mean-field bulk
+flow, not oscillatory). Universal gas-giant formula: Saturn 2.904e-11, Jupiter
+5.79e-12, Uranus 6.17e-12, Neptune 4.47e-11 (Saturn 500 m/s = 2nd fastest). Wind
+escape fraction v_wind/v_esc = 1.41e-2 (gravitationally bound).
 
-wired_count 294 -> 295. Index PAPER_281 -> checkmark (51/244/1960=2255).
+wired_count 295 -> 296. Index PAPER_282 -> checkmark (52/244/1959=2255).
+Version: PAPER_282 = v0.289.0.
 
-VERSION: v0.285.0 burned; v0.286.0 (backfill 10 papers) + v0.287.0 (doc-fix) already
-shipped; PAPER_281 = v0.288.0.
-
-Gate: 1760/0. Registry 580 rows / 1259 edges / 295 ledgers. Campaign frontier:
-PAPER_281 / 2,255. Next: PAPER_282.
+Gate: 1765/0. Registry 581 rows / 1260 edges / 296 ledgers. Campaign frontier:
+PAPER_282 / 2,255. Next: PAPER_283.

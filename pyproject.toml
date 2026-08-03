@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.288.0"
-description = "UQFF Star-Magic-Program v0.288.0: PAPER_281 wired (CLEAN) - Saturn Ring Tidal Gravity Resonance omega_ring_kep=sqrt(GM/r_ring^3)=1.481e-4 rad/s, T_ring=11.78 h (matches observed B ring); g_ring_tidal=3.49e-8; first planetary ring UQFF module; proximity=2.0. wired_count 295, gate 1760/0. Campaign frontier PAPER_281 of 2255. (v0.285.0 burned; v0.286.0/0.287.0 shipped.)"
+version = "0.289.0"
+description = "UQFF Star-Magic-Program v0.289.0: PAPER_282 wired (CLEAN) - Saturn Atmospheric Wind Kinetic Pressure a_wind=(v_wind/c)^2*g_base=2.904e-11 m/s2; eta_wind=v_wind/c=1.668e-6; first UQFF gas-giant wind term; universal formula (Saturn/Jupiter/Uranus/Neptune). wired_count 296, gate 1765/0. Campaign frontier PAPER_282 of 2255. (v0.285.0 burned; v0.286.0/0.287.0/0.288.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.288.0"
+VERSION = "0.289.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15901,6 +15901,43 @@ def _paper_281(dataset):
         },
         'formula': 'proximity=r_ring/r_Saturn=2.0; omega_ring_kep=sqrt(G*M_Saturn/r_ring^3)=1.481e-4; T_ring=2pi/omega=11.78 h; g_ring_tidal=G*M_ring*r_Saturn/r_ring^3=3.49e-8; F_ring(t)=g_ring_tidal*cos(omega_ring_kep*t)',
         'source': 'PAPER_281',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_282')
+def _paper_282(dataset):
+    c = 2.998e8
+    g_base = 10.44
+    r_Saturn = 6.0268e7
+    v_wind = 500.0
+    eta_wind = v_wind / c
+    a_wind = eta_wind ** 2 * g_base
+    import math
+    v_esc = math.sqrt(2.0 * g_base * r_Saturn)
+    wind_escape_fraction = v_wind / v_esc
+    gas_giants = {'Saturn': (500.0, 10.44), 'Jupiter': (150.0, 23.12),
+                  'Uranus': (250.0, 8.87), 'Neptune': (600.0, 11.15)}
+    a_wind_table = {p: (vw / c) ** 2 * gb for p, (vw, gb) in gas_giants.items()}
+    return {
+        'value': {
+            'domain': '2.80 (Saturn UQFF atmospheric wind kinetic pressure a_wind, eta_wind)',
+            'source_thread': 'Session 78 SATURN_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Saturn atmosphere (first gas-giant wind UQFF term)',
+            'v_wind_m_s': v_wind,
+            'eta_wind': eta_wind, 'eta_wind_formula': 'v_wind/c',
+            'a_wind': a_wind, 'a_wind_formula': '(v_wind/c)^2 * g_base',
+            'a_wind_fraction_of_g_base': eta_wind ** 2,
+            'v_esc_m_s': v_esc, 'wind_escape_fraction': wind_escape_fraction,
+            'a_wind_constant_not_oscillatory': True,
+            'a_wind_gas_giant_table': a_wind_table,
+            'saturn_2nd_fastest_wind': True,
+            'first_uqff_gas_giant_wind_term': True,
+            'universal_gas_giant_formula': True,
+        },
+        'formula': 'eta_wind=v_wind/c=1.668e-6; a_wind=(v_wind/c)^2*g_base=2.904e-11 (relativistic kinetic ratio); constant additive; universal gas-giant formula',
+        'source': 'PAPER_282',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

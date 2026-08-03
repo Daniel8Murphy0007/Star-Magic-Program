@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_281** (Saturn ring resonance, wired v0.288.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281 = **295 wired**.
-- **Distinct wired papers: 295** = `wired_count()` = `len(DISPATCH)`. Composed of **281** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **51 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1960 ⬜** not-touched (51 + 244 + 1960 = 2255 ✓). Wired file-rows (51 + 244 = **295**) equal `wired_count()`.
+- **Campaign frontier: PAPER_282** (Saturn atmospheric wind, wired v0.289.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281, PAPER_282 = **296 wired**.
+- **Distinct wired papers: 296** = `wired_count()` = `len(DISPATCH)`. Composed of **282** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **52 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1959 ⬜** not-touched (52 + 244 + 1959 = 2255 ✓). Wired file-rows (52 + 244 = **296**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1541,7 +1541,7 @@
 | ✓ | PAPER_279 | Sombrero SMBH Dominance Ratio gamma BH SphereOfInfluence r SOI | CLEAN — gamma_BH=M_BH/M=0.01; r_SOI=r*sqrt(gamma_BH)=2.36e19 m; 250x Sgr A* dominance; universal BH prescription |
 | ✓ | PAPER_280 | Saturn UQFF SolarTidalPerturbationRatio tau Sun g Sun tidal | CLEAN — first planetary module; tau_Sun=(M_Sun/M_pl)(r_pl/r_orbit)^2=6.22e-6; g_base=10.44; universal planetary formula |
 | ✓ | PAPER_281 | Saturn Ring UQFF TidalGravityResonance omega ring kep T ring | CLEAN — first planetary ring module; omega_ring_kep=sqrt(GM/r_ring^3)=1.481e-4, T_ring=11.78 h; g_ring_tidal=3.49e-8; proximity=2.0; v0.288.0 |
-| ⬜ | PAPER_282 | Saturn UQFF AtmosphericWind KineticPressure a wind eta wind |
+| ✓ | PAPER_282 | Saturn UQFF AtmosphericWind KineticPressure a wind eta wind | CLEAN — first gas-giant wind term; a_wind=(v_wind/c)^2*g_base=2.904e-11; eta_wind=1.668e-6; universal formula; v0.289.0 |
 | ⬜ | PAPER_283 | Saturn UQFF SolarTidalHubbleExpansionCoupling g ST HE hubble tidal factor |
 | ⬜ | PAPER_284 | M16 UQFF DualMassCoActionProduct Phi dm SFR Erosion |
 | ⬜ | PAPER_285 | M16 UQFF ErosionSaturationHalfTime t half DeltaGMax |

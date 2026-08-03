@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.289.0] — 2026-08-03 — BAND 1: PAPER_282 — SATURN UQFF ATMOSPHERIC WIND KINETIC PRESSURE (CLEAN)
+
+### Added
+- **PAPER_282 dispatch** — Saturn UQFF Atmospheric Wind Kinetic Pressure term (Session 78, SATURN_UQFF_MODULE.cpp). The **first UQFF gas-giant atmospheric-physics term**.
+  - Wind–light-speed ratio η_wind = v_wind/c = 500/2.998e8 = 1.668e-6.
+  - a_wind = η_wind²·g_base = (v_wind/c)²·g_base = 2.904e-11 m/s² — a **constant** additive term (mean-field bulk flow, not oscillatory).
+  - Universal gas-giant formula a_wind = (v_wind/c)²·g_base: Saturn 2.904e-11, Jupiter 5.79e-12, Uranus 6.17e-12, Neptune 4.47e-11 (Saturn's 500 m/s wind is 2nd-fastest in the Solar System). Wind escape fraction v_wind/v_esc = 1.41e-2 (gravitationally bound).
+- Gate +5 assertions (→ 1765, 0 failures). wired_count 295 → **296**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_282 → ✓.
+- Campaign frontier advances to PAPER_282.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.288.0] — 2026-08-03 — BAND 1: PAPER_281 — SATURN RING UQFF TIDAL GRAVITY RESONANCE (CLEAN)
 
 ### Added

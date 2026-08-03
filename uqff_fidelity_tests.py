@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.288.0", "uqff_calculator.VERSION = 0.288.0 (v0.285.0 burned, v0.286.0/0.287.0 shipped; PAPER_281 = v0.288.0)")
+assert_that(C.VERSION == "0.289.0", "uqff_calculator.VERSION = 0.289.0 (PAPER_282 = v0.289.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3867,6 +3867,17 @@ assert_that(abs(_r281['g_ring_tidal'] - 3.49e-8) < 1e-10 and _r281['g_ring_tidal
 assert_that(_r281['proximity_clean_2x'] and _r281['pure_oscillatory_no_decay'] and _r281['distinct_from_paper_278'] and _r281['first_planetary_ring_module'],
             "PAPER_281: proximity r_ring/r_Saturn=2.0; F_ring pure oscillatory; distinct from PAPER_278; first planetary ring module")
 assert_that(C.wired_count() >= 295, "wired_count >= 295 (PAPER_281 wired)")
+
+_r282 = C.calc('PAPER_282')['value']
+assert_that(abs(_r282['eta_wind'] - 1.668e-6) < 1e-8 and _r282['eta_wind_formula'] == 'v_wind/c',
+            "PAPER_282: eta_wind = v_wind/c = 500/2.998e8 = 1.668e-6 (wind-light-speed ratio)")
+assert_that(abs(_r282['a_wind'] - 2.904e-11) < 1e-13 and _r282['a_wind_formula'] == '(v_wind/c)^2 * g_base',
+            "PAPER_282: a_wind = (v_wind/c)^2*g_base = 2.904e-11 m/s2 (relativistic kinetic pressure)")
+assert_that(abs(_r282['a_wind_gas_giant_table']['Neptune'] - 4.466e-11) < 1e-13 and abs(_r282['a_wind_gas_giant_table']['Jupiter'] - 5.788e-12) < 1e-14,
+            "PAPER_282: universal gas-giant formula: Neptune 4.47e-11 (2nd fastest), Jupiter 5.79e-12")
+assert_that(_r282['first_uqff_gas_giant_wind_term'] and _r282['a_wind_constant_not_oscillatory'],
+            "PAPER_282: first UQFF gas-giant atmospheric wind term; constant additive (not oscillatory)")
+assert_that(C.wired_count() >= 296, "wired_count >= 296 (PAPER_282 wired)")
 
 
 # =============================================================================
