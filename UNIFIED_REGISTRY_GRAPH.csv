@@ -1229,3 +1229,6 @@ observable,source10_gh_cosmic_orbital_bridge,observable,dpm_resonance_energy_den
 observable,source10_thz_double_gate_star_formation,paper,PAPER_271,THz double-gate star formation
 observable,source10_thz_double_gate_star_formation,observable,thz_shock_force_starformation,confirms F_conduit=6.65e9 (PAPER_239)
 observable,source10_thz_double_gate_star_formation,observable,h2o_conduit_force_starformation,double-gate reframing of conduit (PAPER_239)
+primitive,G_OBSERVED,observable,source10_vacuum_gravitational_duality,k_vac = G exact identification
+observable,source10_vacuum_gravitational_duality,paper,PAPER_272,vacuum-gravitational duality k_vac=G
+observable,source10_vacuum_gravitational_duality,observable,vacuum_repulsion_surface_tension,confirms F_vac_rep k_vac=G (PAPER_238)

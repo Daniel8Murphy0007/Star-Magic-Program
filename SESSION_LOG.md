@@ -3642,3 +3642,30 @@ CLEAN - all values reproduce; ties PAPER_239. Appendix boilerplate drift
 
 Gate: 1696/0. Registry 560 rows / 1230 edges / 275 ledgers (measured).
 Campaign: 275/2,255. Next: PAPER_272.
+
+---
+
+## 2026-08-02 — v0.276.0 — BAND 1: PAPER_272 — SOURCE10 VACUUM-GRAVITATIONAL DUALITY (CLEAN)
+
+PAPER_272 (Gravitational Vacuum Drag - k_vac=G, Velocity-Dependent
+Gravitational Force, and UQFF Vacuum-Gravitational Duality, Session 74,
+UQFF_SOURCE10.cpp Catalogue Master) wired as one dispatch (CLEAN, WIRED). Ties
+PAPER_238.
+
+k_vac=G exactly: the vacuum repulsion coupling k_vac=6.674e-11 IS Newton's G -
+physical identification, making F_vac_rep a velocity-dependent gravitational
+force absent from DPM-seeded gravity and GR.
+
+Vacuum-Gravitational Duality: the same G governs static gravity (G*M*M'/r^2,
+1/r^2 conservative) AND vacuum drag (G*Delta_rho_vac*M*v, ~v dissipative). UQFF
+unification analogous to alpha unifying charge/hbar/c.
+
+Effective gravitational viscosity eta_UQFF=G*Delta_rho_vac*M/(6pi r)=1.19e-25
+Pa*s for Eta Carinae (25 orders below air). F_vac(1kg,1m/s)=G*1e-26=6.67e-37 N
+(~1e16x below Earth surface g, explains non-detection).
+
+CLEAN - all values reproduce; confirms PAPER_238 (F_vac_rep k_vac=G). Appendix
+boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+
+Gate: 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured).
+Campaign: 276/2,255. Next: PAPER_273.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.275.0"
-description = "UQFF Star-Magic-Program v0.275.0: PAPER_271 wired (CLEAN) - Source10 THz double-gate star formation; F_conduit + F_thz_shock require water_state AND neutron_factor (orthogonal gates); F_conduit=6.65e9 confirms PAPER_239; (omega/omega0)^2=1.44 CG enhancement. Wired 275/2255, gate 1696/0. Registry 560 rows / 1230 edges / 275 ledgers (measured)."
+version = "0.276.0"
+description = "UQFF Star-Magic-Program v0.276.0: PAPER_272 wired (CLEAN) - Source10 gravitational vacuum drag; k_vac=G exactly -> Vacuum-Gravitational Duality (same G: static gravity + vacuum momentum drag); eta_UQFF=1.19e-25 Pa*s; confirms PAPER_238. Wired 276/2255, gate 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

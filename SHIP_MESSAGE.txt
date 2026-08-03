@@ -1,20 +1,19 @@
-v0.275.0 BAND 1: PAPER_271 wired - SOURCE10 THz DOUBLE-GATE STAR FORMATION (CLEAN)
+v0.276.0 BAND 1: PAPER_272 wired - SOURCE10 VACUUM-GRAVITATIONAL DUALITY (CLEAN)
 
-PAPER_271 (THz Double-Gate Star Formation - Dual Binary Conditions for Maximum
-UQFF Conduit Force, S74, UQFF_SOURCE10.cpp Catalogue Master) wired as one
-dispatch (CLEAN, WIRED). Reframes PAPER_239's two SF force channels as a
-dual-binary-gate architecture.
+PAPER_272 (Gravitational Vacuum Drag - k_vac=G, Velocity-Dependent Gravitational
+Force, and UQFF Vacuum-Gravitational Duality, S74, UQFF_SOURCE10.cpp Catalogue
+Master) wired as one dispatch (CLEAN, WIRED). Ties PAPER_238.
 
-Double gate: F_conduit=k_conduit*(H_abundance*water_state)*neutron_factor gated
-by BOTH water_state (Gate 1 classical fluid) AND neutron_factor (Gate 2 quantum
-Kozima). F_thz_shock shares Gate 2. Max SF requires BOTH gates open (AND not OR)
--> episodic + spatially-localized SF. Gates orthogonal, d(G1)/d(G2)=0.
+k_vac=G exactly: the vacuum repulsion coupling k_vac=6.674e-11 IS Newton's G -
+physical identification, making F_vac_rep a velocity-dependent gravitational
+force absent from DPM-seeded/GR.
 
-Reproducible: F_conduit^max=8.99e9*0.74=6.65e9 N (confirms PAPER_239);
-(omega_thz/omega0)^2=1.44 (44% CG enhancement); omega_CG=7.854e12; F_thz^max=
-1.99e-11 N; scale separation 3.3e20 (~20 orders).
+Vacuum-Gravitational Duality: same G governs static gravity (G*M*M'/r^2) AND
+vacuum drag (G*Delta_rho_vac*M*v). Effective gravitational viscosity
+eta_UQFF=G*Delta_rho_vac*M/(6pi r)=1.19e-25 Pa*s (Eta Carinae, 25 orders below
+air). F_vac(1kg,1m/s)=6.67e-37 N (~1e16x below Earth surface g).
 
-CLEAN - all values reproduce; ties PAPER_239. Appendix drift auto-corrected.
+CLEAN - all values reproduce; confirms PAPER_238. Appendix drift auto-corrected.
 
-Gate: 1696/0. Registry 560 rows / 1230 edges / 275 ledgers (measured).
-Campaign: 275/2,255. Next: PAPER_272.
+Gate: 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured).
+Campaign: 276/2,255. Next: PAPER_273.

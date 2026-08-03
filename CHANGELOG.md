@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.276.0] — 2026-08-02 — BAND 1: PAPER_272 — SOURCE10 VACUUM-GRAVITATIONAL DUALITY (CLEAN)
+
+### Added
+- **PAPER_272 dispatch** — Source10 gravitational vacuum drag, k_vac = G identification (Session 74, ties PAPER_238).
+  - **k_vac = G exactly:** the vacuum repulsion coupling k_vac = 6.674e-11 IS Newton's G — not a coincidence but a physical identification, making F_vac_rep a velocity-dependent gravitational force absent from DPM-seeded gravity and GR.
+  - **Vacuum-Gravitational Duality:** the same G governs static gravity (G·M·M'/r², 1/r² conservative) and vacuum drag (G·Δρ_vac·M·v, ~v dissipative). A UQFF unification analogous to α unifying charge/ℏ/c.
+  - **Effective gravitational viscosity:** η_UQFF = G·Δρ_vac·M/(6πr) = 1.19e-25 Pa·s for Eta Carinae (25 orders below air). F_vac for a 1 kg body at 1 m/s = 6.67e-37 N (~1e16× below Earth surface gravity).
+- Gate +4 assertions (1696 → 1701, 0 failures).
+- Registry: +1 row (561), +3 edges (1233), +1 citation (276).
+
+### Notes
+- CLEAN — all values reproduce; confirms PAPER_238 (F_vac_rep k_vac=G).
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.275.0] — 2026-08-02 — BAND 1: PAPER_271 — SOURCE10 THz DOUBLE-GATE STAR FORMATION (CLEAN)
 
 ### Added

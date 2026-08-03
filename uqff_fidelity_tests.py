@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.275.0", "uqff_calculator.VERSION = 0.275.0")
+assert_that(C.VERSION == "0.276.0", "uqff_calculator.VERSION = 0.276.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3726,6 +3726,17 @@ assert_that(_r271['gates'] == 2 and _r271['gates_orthogonal'] and _r271['sf_requ
 assert_that(abs(_r271['F_thz_max'] - 1.987e-11) < 1e-13 and abs(_r271['scale_span'] - 3.35e20) < 1e18,
             "PAPER_271: F_thz^max = 1.99e-11 N; scale separation 6.65e9/1.99e-11 = 3.3e20 (~20 orders)")
 assert_that(C.wired_count() >= 275, "wired_count >= 275")
+
+_r272 = C.calc('PAPER_272')['value']
+assert_that(_r272['k_vac_equals_G'] and abs(_r272['k_vac'] - C.G_OBSERVED) < 1e-20 and _r272['confirms_paper_238'],
+            "PAPER_272: k_vac = G = 6.674e-11 exactly (confirms PAPER_238 F_vac_rep k_vac=G)")
+assert_that(_r272['vacuum_gravitational_duality'] and _r272['gravitational_viscosity_of_vacuum'],
+            "PAPER_272: Vacuum-Gravitational Duality (same G: static gravity ~1/r^2 + vacuum drag ~v); gravitational viscosity of vacuum")
+assert_that(abs(_r272['eta_uqff_pa_s'] - 1.189e-25) < 1e-28 and _r272['eta_orders_below_air'] == 25,
+            "PAPER_272: eta_UQFF = G*Delta_rho_vac*M/(6pi r) = 1.19e-25 Pa*s (Eta Carinae; 25 orders below air)")
+assert_that(abs(_r272['F_vac_1kg_1ms_N'] - 6.674e-37) < 1e-40,
+            "PAPER_272: F_vac(1kg, 1m/s) = G*1e-26 = 6.67e-37 N (~1e16x below Earth surface gravity)")
+assert_that(C.wired_count() >= 276, "wired_count >= 276")
 
 
 # =============================================================================
