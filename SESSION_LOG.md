@@ -3696,3 +3696,30 @@ beta_i) auto-corrected per charter.
 
 Gate: 1706/0. Registry 562 rows / 1235 edges / 277 ledgers (measured).
 Campaign: 277/2,255. Next: PAPER_274.
+
+---
+
+## 2026-08-02 — v0.278.0 — BAND 1: PAPER_274 — ANDROMEDA HI 21-CM BUOYANCY RESONANCE (CLEAN)
+
+PAPER_274 (HI 21-cm Line as UQFF Galactic Buoyancy Resonance Frequency -
+omega_HI Bridges Atomic Hyperfine Physics to Galaxy-Scale Dynamics, Session 75,
+ANDROMEDA_UQFF_MODULE.cpp M31 Master) wired as one dispatch (CLEAN, WIRED).
+Companion to PAPER_273.
+
+The neutral-hydrogen spin-flip nu_HI=1.42040575 GHz (12 sig figs) appears
+naturally as the galactic resonance frequency in F_res(t)=A_res*cos(omega_HI*t)
+*e^(-t/tau_gal) - simultaneously consistent with atomic hyperfine E_HF=h*nu_HI=
+9.41e-25 J AND galaxy-scale buoyancy. omega_HI=8.925e9 rad/s, T_HI=7.04e-10 s.
+
+HI-UQFF bridging constant Omega_bridge=omega_HI/omega_g=1.223e25 - encodes the
+atomic (1e-10 m) to galactic (1e21 m) scale separation via a single frequency;
+extreme multi-scale temporal (sub-ns oscillation, Gyr envelope). omega_HI unique:
+observationally anchored (12 sig figs), cosmically universal, mass-traced (HI
+~74% baryonic), quantum-derived (no free param).
+
+CLEAN - all values reproduce (omega_HI 8.925e9 vs paper's rounded 8.92819e9,
+0.04%). Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per
+charter.
+
+Gate: 1711/0. Registry 563 rows / 1237 edges / 278 ledgers (measured).
+Campaign: 278/2,255. Next: PAPER_275.

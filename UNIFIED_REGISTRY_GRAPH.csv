@@ -1234,3 +1234,5 @@ observable,source10_vacuum_gravitational_duality,paper,PAPER_272,vacuum-gravitat
 observable,source10_vacuum_gravitational_duality,observable,vacuum_repulsion_surface_tension,confirms F_vac_rep k_vac=G (PAPER_238)
 observable,andromeda_blueshift_approach_amplifier,paper,PAPER_273,blueshift kappa_approach=1/(1+z) amplifier
 observable,andromeda_blueshift_approach_amplifier,observable,source10_vacuum_gravitational_duality,velocity as gravitational DOF (PAPER_272)
+observable,andromeda_hi21cm_buoyancy_resonance,paper,PAPER_274,HI 21-cm galactic buoyancy resonance omega_HI
+observable,andromeda_hi21cm_buoyancy_resonance,observable,andromeda_blueshift_approach_amplifier,same M31 module (PAPER_273)

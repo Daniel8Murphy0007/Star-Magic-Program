@@ -1,18 +1,20 @@
-v0.277.0 BAND 1: PAPER_273 wired - ANDROMEDA BLUESHIFT APPROACH AMPLIFIER (CLEAN)
+v0.278.0 BAND 1: PAPER_274 wired - ANDROMEDA HI 21-CM BUOYANCY RESONANCE (CLEAN)
 
-PAPER_273 (Blueshift UQFF Gravitational Approach Amplifier - kappa_approach=
-1/(1+z) for Negative Redshift Systems, S75, ANDROMEDA_UQFF_MODULE.cpp M31
-Master) wired as one dispatch (CLEAN, WIRED). New M31 module thread.
+PAPER_274 (HI 21-cm Line as UQFF Galactic Buoyancy Resonance Frequency -
+omega_HI Bridges Atomic Hyperfine Physics to Galaxy-Scale Dynamics, S75,
+ANDROMEDA_UQFF_MODULE.cpp M31 Master) wired as one dispatch (CLEAN, WIRED).
+Companion to PAPER_273.
 
-First UQFF treatment of negative redshift as a gravitational degree of freedom.
-kappa_approach=1/(1+z): M31 z=-0.001 -> kappa=1.001001 (0.1% amplification).
-z>0 suppresses (kappa<1), z=0 static, z<0 amplifies (kappa>1). Resonance
-cascade: z=-0.5->2.0, z=-0.9->10, z->-1->inf.
+nu_HI=1.42040575 GHz appears naturally as the galactic resonance frequency in
+F_res(t)=A_res*cos(omega_HI*t)*e^(-t/tau_gal), simultaneously consistent with
+atomic hyperfine E_HF=h*nu_HI=9.41e-25 J AND galaxy buoyancy. omega_HI=8.925e9
+rad/s, T_HI=7.04e-10 s.
 
-Reproducible: kappa=1.001001; v_approach=|z|*c=3.0e5 m/s (~300 km/s); delta_g=
-6.6e-12 m/s^2; M_BH=1.4e8 M_sun=2.7846e38 kg. First velocity->gravity amplifier.
+HI-UQFF bridging constant Omega_bridge=omega_HI/omega_g=1.223e25 (atomic 1e-10 m
+to galactic 1e21 m). omega_HI unique: 12 sig figs, cosmically universal,
+mass-traced, quantum-derived.
 
 CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1706/0. Registry 562 rows / 1235 edges / 277 ledgers (measured).
-Campaign: 277/2,255. Next: PAPER_274.
+Gate: 1711/0. Registry 563 rows / 1237 edges / 278 ledgers (measured).
+Campaign: 278/2,255. Next: PAPER_275.

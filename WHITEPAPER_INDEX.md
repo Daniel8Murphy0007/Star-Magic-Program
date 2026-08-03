@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 277 (35 ✓, 242 ⚠ OPEN_RULING)
+- **Wired:** 278 (36 ✓, 242 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1977
+- **Not yet touched:** 1976
 
 ---
 
@@ -1532,7 +1532,7 @@
 | ✓ | PAPER_271 | Source10 THz DoubleGate StarFormation DualBinaryConditions MaxConduitForce | CLEAN |
 | ✓ | PAPER_272 | Source10 GravitationalVacuumDrag kVac equals G VacuumGravitationalDuality | CLEAN |
 | ✓ | PAPER_273 | Andromeda BlueshiftUQFF kappa approach NegativeRedshiftGravitationalAmplifier | CLEAN |
-| ⬜ | PAPER_274 | Andromeda HI21cm UQFF GalacticBuoyancyResonanceFrequency omegaHI Bridging |
+| ✓ | PAPER_274 | Andromeda HI21cm UQFF GalacticBuoyancyResonanceFrequency omegaHI Bridging | CLEAN |
 | ⬜ | PAPER_275 | Andromeda DarkMatter 8020 UQFF ShellPartition fDM NFWCouplingExponent xiDM |
 | ⬜ | PAPER_276 | Andromeda FriedmannUQFF HzExpansionCoupling H UQFF NearUnityResonance |
 | ⬜ | PAPER_277 | Sombrero UQFF Gravitational Recession Damping kappa recession z positive |

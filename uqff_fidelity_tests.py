@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.277.0", "uqff_calculator.VERSION = 0.277.0")
+assert_that(C.VERSION == "0.278.0", "uqff_calculator.VERSION = 0.278.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3748,6 +3748,17 @@ assert_that(abs(_r273['v_approach_m_s'] - 2.998e5) < 1e2 and abs(_r273['delta_g'
 assert_that(abs(_r273['M_BH_kg'] - 2.7846e38) < 1e35 and _r273['first_velocity_gravitational_amplifier'],
             "PAPER_273: M_BH = 1.4e8 M_sun = 2.7846e38 kg; first UQFF velocity->gravitational-magnitude amplifier")
 assert_that(C.wired_count() >= 277, "wired_count >= 277")
+
+_r274 = C.calc('PAPER_274')['value']
+assert_that(abs(_r274['omega_HI'] - 8.9247e9) < 1e6 and _r274['nu_HI_hz'] == 1.42040575e9,
+            "PAPER_274: omega_HI = 2pi*1.42040575 GHz = 8.925e9 rad/s (galactic buoyancy resonance frequency)")
+assert_that(abs(_r274['T_HI_s'] - 7.040e-10) < 1e-12 and abs(_r274['E_HF_J'] - 9.412e-25) < 1e-27,
+            "PAPER_274: T_HI = 2pi/omega_HI = 7.04e-10 s; E_HF = h*nu_HI = 9.41e-25 J (hyperfine energy)")
+assert_that(abs(_r274['Omega_bridge'] - 1.223e25) < 1e22 and _r274['hi_uqff_bridging_frequency'],
+            "PAPER_274: HI-UQFF bridging constant Omega_bridge = omega_HI/omega_g = 1.223e25 (atomic-galactic scale)")
+assert_that(_r274['F_res_0'] == 1e-12 and _r274['omega_HI_quantum_derived'] and _r274['atomic_galactic_scale_ratio'] == 1e31,
+            "PAPER_274: F_res(0) = A_res = 1e-12; omega_HI quantum-derived (no free param); atomic-galactic ratio ~1e31")
+assert_that(C.wired_count() >= 278, "wired_count >= 278")
 
 
 # =============================================================================

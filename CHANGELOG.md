@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.278.0] — 2026-08-02 — BAND 1: PAPER_274 — ANDROMEDA HI 21-CM BUOYANCY RESONANCE (CLEAN)
+
+### Added
+- **PAPER_274 dispatch** — Andromeda HI 21-cm as UQFF galactic buoyancy resonance frequency (Session 75, companion to PAPER_273).
+  - **ω_HI as galactic resonance:** the neutral-hydrogen spin-flip nu_HI=1.42040575 GHz (12 sig figs) appears naturally as the galactic resonance frequency in F_res(t)=A_res·cos(ω_HI·t)·e^(−t/τ_gal) — simultaneously consistent with the atomic hyperfine energy E_HF=h·ν_HI=9.41e-25 J and galaxy-scale buoyancy. ω_HI = 8.925e9 rad/s, T_HI=7.04e-10 s.
+  - **HI-UQFF bridging constant:** Ω_bridge = ω_HI/ω_g = 1.223e25 — encodes the atomic (1e-10 m) to galactic (1e21 m) scale separation via a single frequency. Extreme multi-scale temporal structure (sub-ns oscillation, Gyr envelope).
+  - **Uniqueness of ω_HI:** observationally anchored (12 sig figs), cosmically universal, mass-traced (HI ~74% baryonic), quantum-derived (no free parameter).
+- Gate +4 assertions (1706 → 1711, 0 failures).
+- Registry: +1 row (563), +2 edges (1237), +1 citation (278).
+
+### Notes
+- CLEAN — all values reproduce (ω_HI 8.925e9 vs paper's rounded 8.92819e9, 0.04%).
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.277.0] — 2026-08-02 — BAND 1: PAPER_273 — ANDROMEDA BLUESHIFT APPROACH AMPLIFIER (CLEAN)
 
 ### Added
