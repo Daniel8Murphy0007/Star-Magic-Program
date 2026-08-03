@@ -3723,3 +3723,31 @@ charter.
 
 Gate: 1711/0. Registry 563 rows / 1237 edges / 278 ledgers (measured).
 Campaign: 278/2,255. Next: PAPER_275.
+
+---
+
+## 2026-08-02 — v0.279.0 — BAND 1: PAPER_275 — ANDROMEDA DM 80/20 SHELL PARTITION (CLEAN)
+
+PAPER_275 (UQFF Dark Matter 80/20 Shell Partition - f_DM^(1/3) NFW Coupling
+Exponent and the xi_DM Interaction Term, Session 75, ANDROMEDA_UQFF_MODULE.cpp
+M31 Master) wired as one dispatch (CLEAN, WIRED).
+
+Shell partition: replaces the monolithic G*M/r^2 with three sub-terms - g_vis=
+G*(1-f_DM)*M/r^2, g_dm=G*f_DM*M/r^2, g_int=xi_DM*g_vis - retaining the
+DM-halo/visible-disk structural coupling. The UQFF DM shell coupling constant
+xi_DM=f_DM^(1/3); for M31 (f_DM=0.80) -> xi_DM=0.9283.
+
+NFW basis of the 1/3 exponent: rho~r^-1 (NFW small-r core) -> M(r)~r^2 ->
+f_DM(r)~(r/r_vir)^2 -> f_DM^(1/3)~(r/r_vir)^(2/3), reproducing the NFW radial
+coupling from the global DM fraction alone.
+
+Reproducible: g_base=1.227e-10; g_vis=2.455e-11; g_dm=9.818e-11; g_int=2.279e-11;
+g_DM_total=1.210e-10 m/s^2 (~1.4% reduction vs monolithic, measurable Shell-
+Partition prediction). xi table: 0.10->0.4642, 0.50->0.7937, 0.80->0.9283,
+0.95->0.9830.
+
+CLEAN - all values reproduce. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
+
+Gate: 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured).
+Campaign: 279/2,255. Next: PAPER_276.

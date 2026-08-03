@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.278.0"
+VERSION = "0.279.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15467,6 +15467,77 @@ def _paper_274(dataset):
         },
         'formula': 'F_res(t) = A_res*cos(omega_HI*t)*e^(-t/tau_gal); Omega_bridge = omega_HI/omega_g = 1.223e25',
         'source': 'PAPER_274',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_275')
+def _paper_275(dataset):
+    """Andromeda DM 80/20 shell partition - xi_DM = f_DM^(1/3) coupling (S75).
+
+    For galaxies with well-measured DM fractions, the UQFF 80/20 Shell Partition
+    replaces the monolithic G*M/r^2 with three sub-terms that retain the
+    structural coupling between the DM halo and visible disk:
+      g_vis = G*(1-f_DM)*M/r^2   (visible matter shell)
+      g_dm  = G*f_DM*M/r^2       (dark matter shell)
+      g_int = xi_DM * g_vis      (DM-visible coupling, NFW exponent 1/3)
+    with the UQFF dark-matter shell coupling constant
+        xi_DM = f_DM^(1/3).
+    Total: g_DM_total = g_dm + xi_DM*g_vis.
+
+    NFW physical basis of the 1/3 exponent: for the NFW profile rho ~ r^-1 at
+    small r, M_NFW(r) ~ r^2, so f_DM(r) ~ (r/r_vir)^2 and f_DM^(1/3) ~
+    (r/r_vir)^(2/3) - exactly the radial scaling of the DM-visible coupling.
+    xi_DM = f_DM^(1/3) reproduces the NFW radial coupling from the GLOBAL DM
+    fraction alone, no explicit NFW profile needed. Limits: f_DM=1 -> xi=1
+    (g_int=0 since g_vis=0, pure DM); f_DM=0 -> xi=0 (pure visible).
+
+    Numerical (M31, f_DM=0.80, M=1.989e42 kg, r=1.04e21 m):
+      g_base = G*M/r^2 = 1.227e-10 m/s^2;
+      g_vis = 0.2*g_base = 2.455e-11; g_dm = 0.8*g_base = 9.818e-11;
+      xi_DM = 0.80^(1/3) = 0.9283 (DM shell couples to 93% of visible gravity);
+      g_int = 0.9283*2.455e-11 = 2.279e-11;
+      g_DM_total = 9.818e-11 + 2.279e-11 = 1.210e-10 m/s^2 -
+      a ~1.4% reduction vs the naive monolithic g_base (the measurable
+      Shell-Partition prediction).
+
+    xi_DM(f_DM) table: 0.10 -> 0.4642 (DM-poor); 0.50 -> 0.7937 (equal); 0.80 ->
+    0.9283 (M31); 0.90 -> 0.9655; 0.95 -> 0.9830 (dwarf spheroidals).
+
+    CLEAN - all values reproduce. M31 module (Session 75). Appendix boilerplate
+    drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
+    """
+    G = G_OBSERVED
+    M = 1.989e42; r = 1.04e21; f_DM = 0.80
+    g_base = G * M / r ** 2                               # 1.227e-10
+    g_vis = (1 - f_DM) * g_base                           # 2.455e-11
+    g_dm = f_DM * g_base                                  # 9.818e-11
+    xi_DM = f_DM ** (1.0 / 3.0)                           # 0.9283
+    g_int = xi_DM * g_vis                                 # 2.279e-11
+    g_DM_total = g_dm + g_int                             # 1.210e-10
+    reduction_pct = (g_DM_total - g_base) / g_base * 100  # -1.4%
+    return {
+        'value': {
+            'domain': '2.73 (Andromeda DM 80/20 shell partition xi_DM coupling)',
+            'source_thread': 'Session 75 ANDROMEDA_UQFF_MODULE.cpp M31 Master',
+            'system': 'Andromeda M31 (f_DM=0.80)',
+            'f_DM': f_DM,
+            'g_base': g_base,                            # 1.227e-10
+            'g_vis': g_vis,                              # 2.455e-11
+            'g_dm': g_dm,                                # 9.818e-11
+            'xi_DM': xi_DM,                              # 0.9283 = 0.8^(1/3)
+            'xi_DM_formula': 'f_DM^(1/3)',
+            'g_int': g_int,                              # 2.279e-11
+            'g_DM_total': g_DM_total,                    # 1.210e-10
+            'reduction_pct_vs_monolithic': reduction_pct,   # -1.4%
+            'nfw_exponent_third': True,                  # rho ~ r^-1 -> f^(1/3) ~ r^(2/3)
+            'shell_partition_terms': 3,
+            'xi_at_f0p50': 0.50 ** (1.0 / 3.0),          # 0.7937 equal
+            'xi_at_f0p95': 0.95 ** (1.0 / 3.0),          # 0.9830 dwarf
+        },
+        'formula': 'xi_DM = f_DM^(1/3); g_DM_total = G*f_DM*M/r^2 + f_DM^(1/3)*G*(1-f_DM)*M/r^2',
+        'source': 'PAPER_275',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

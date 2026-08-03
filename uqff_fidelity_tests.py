@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.278.0", "uqff_calculator.VERSION = 0.278.0")
+assert_that(C.VERSION == "0.279.0", "uqff_calculator.VERSION = 0.279.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3759,6 +3759,17 @@ assert_that(abs(_r274['Omega_bridge'] - 1.223e25) < 1e22 and _r274['hi_uqff_brid
 assert_that(_r274['F_res_0'] == 1e-12 and _r274['omega_HI_quantum_derived'] and _r274['atomic_galactic_scale_ratio'] == 1e31,
             "PAPER_274: F_res(0) = A_res = 1e-12; omega_HI quantum-derived (no free param); atomic-galactic ratio ~1e31")
 assert_that(C.wired_count() >= 278, "wired_count >= 278")
+
+_r275 = C.calc('PAPER_275')['value']
+assert_that(abs(_r275['g_base'] - 1.227e-10) < 1e-13 and _r275['f_DM'] == 0.80,
+            "PAPER_275: g_base = GM/r^2 = 1.227e-10 m/s^2 (M31, M=1.989e42, r=1.04e21); f_DM=0.80")
+assert_that(abs(_r275['xi_DM'] - 0.9283) < 1e-3 and _r275['xi_DM_formula'] == 'f_DM^(1/3)',
+            "PAPER_275: xi_DM = f_DM^(1/3) = 0.80^(1/3) = 0.9283 (DM shell coupling constant, NFW exponent 1/3)")
+assert_that(abs(_r275['g_DM_total'] - 1.210e-10) < 1e-13 and abs(_r275['reduction_pct_vs_monolithic'] - (-1.4)) < 0.2,
+            "PAPER_275: g_DM_total = g_dm + xi_DM*g_vis = 1.210e-10 m/s^2 (~1.4% reduction vs monolithic)")
+assert_that(_r275['nfw_exponent_third'] and _r275['shell_partition_terms'] == 3 and abs(_r275['xi_at_f0p50'] - 0.7937) < 1e-3,
+            "PAPER_275: 3-term shell partition; NFW 1/3 exponent (rho~r^-1 -> f^(1/3)~r^(2/3)); xi(0.5)=0.7937")
+assert_that(C.wired_count() >= 279, "wired_count >= 279")
 
 
 # =============================================================================

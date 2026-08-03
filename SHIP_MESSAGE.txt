@@ -1,20 +1,21 @@
-v0.278.0 BAND 1: PAPER_274 wired - ANDROMEDA HI 21-CM BUOYANCY RESONANCE (CLEAN)
+v0.279.0 BAND 1: PAPER_275 wired - ANDROMEDA DM 80/20 SHELL PARTITION (CLEAN)
 
-PAPER_274 (HI 21-cm Line as UQFF Galactic Buoyancy Resonance Frequency -
-omega_HI Bridges Atomic Hyperfine Physics to Galaxy-Scale Dynamics, S75,
-ANDROMEDA_UQFF_MODULE.cpp M31 Master) wired as one dispatch (CLEAN, WIRED).
-Companion to PAPER_273.
+PAPER_275 (UQFF Dark Matter 80/20 Shell Partition - f_DM^(1/3) NFW Coupling
+Exponent and the xi_DM Interaction Term, S75, ANDROMEDA_UQFF_MODULE.cpp M31
+Master) wired as one dispatch (CLEAN, WIRED).
 
-nu_HI=1.42040575 GHz appears naturally as the galactic resonance frequency in
-F_res(t)=A_res*cos(omega_HI*t)*e^(-t/tau_gal), simultaneously consistent with
-atomic hyperfine E_HF=h*nu_HI=9.41e-25 J AND galaxy buoyancy. omega_HI=8.925e9
-rad/s, T_HI=7.04e-10 s.
+Shell partition: replaces monolithic G*M/r^2 with 3 sub-terms - g_vis=G*(1-f_DM)*
+M/r^2, g_dm=G*f_DM*M/r^2, g_int=xi_DM*g_vis - retaining DM-halo/visible-disk
+structural coupling. xi_DM=f_DM^(1/3); M31 (f_DM=0.80) -> xi_DM=0.9283.
 
-HI-UQFF bridging constant Omega_bridge=omega_HI/omega_g=1.223e25 (atomic 1e-10 m
-to galactic 1e21 m). omega_HI unique: 12 sig figs, cosmically universal,
-mass-traced, quantum-derived.
+NFW basis: rho~r^-1 -> M~r^2 -> f_DM~(r/r_vir)^2 -> f_DM^(1/3)~(r/r_vir)^(2/3),
+reproduces NFW radial coupling from global f_DM alone.
+
+Reproducible: g_base=1.227e-10; g_vis=2.455e-11; g_dm=9.818e-11; g_int=2.279e-11;
+g_DM_total=1.210e-10 (~1.4% reduction vs monolithic). xi table 0.10->0.4642 ...
+0.95->0.9830.
 
 CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1711/0. Registry 563 rows / 1237 edges / 278 ledgers (measured).
-Campaign: 278/2,255. Next: PAPER_275.
+Gate: 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured).
+Campaign: 279/2,255. Next: PAPER_276.

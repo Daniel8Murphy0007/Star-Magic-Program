@@ -1236,3 +1236,6 @@ observable,andromeda_blueshift_approach_amplifier,paper,PAPER_273,blueshift kapp
 observable,andromeda_blueshift_approach_amplifier,observable,source10_vacuum_gravitational_duality,velocity as gravitational DOF (PAPER_272)
 observable,andromeda_hi21cm_buoyancy_resonance,paper,PAPER_274,HI 21-cm galactic buoyancy resonance omega_HI
 observable,andromeda_hi21cm_buoyancy_resonance,observable,andromeda_blueshift_approach_amplifier,same M31 module (PAPER_273)
+primitive,G_OBSERVED,observable,andromeda_dm_8020_shell_partition,g_base=G*M/r^2
+observable,andromeda_dm_8020_shell_partition,paper,PAPER_275,DM 80/20 shell partition xi_DM=f_DM^(1/3)
+observable,andromeda_dm_8020_shell_partition,observable,andromeda_hi21cm_buoyancy_resonance,same M31 module (PAPER_274)

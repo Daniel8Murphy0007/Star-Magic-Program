@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.278.0"
-description = "UQFF Star-Magic-Program v0.278.0: PAPER_274 wired (CLEAN) - Andromeda HI 21-cm as galactic buoyancy resonance frequency; omega_HI=8.925e9 rad/s bridges atomic hyperfine to galaxy dynamics; Omega_bridge=omega_HI/omega_g=1.223e25. Wired 278/2255, gate 1711/0. Registry 563 rows / 1237 edges / 278 ledgers (measured)."
+version = "0.279.0"
+description = "UQFF Star-Magic-Program v0.279.0: PAPER_275 wired (CLEAN) - Andromeda DM 80/20 shell partition; xi_DM=f_DM^(1/3)=0.9283 NFW coupling; g_DM_total=1.210e-10 (~1.4% reduction vs monolithic). Wired 279/2255, gate 1716/0. Registry 564 rows / 1240 edges / 279 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

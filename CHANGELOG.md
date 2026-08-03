@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.279.0] — 2026-08-02 — BAND 1: PAPER_275 — ANDROMEDA DM 80/20 SHELL PARTITION (CLEAN)
+
+### Added
+- **PAPER_275 dispatch** — Andromeda DM 80/20 shell partition, ξ_DM = f_DM^(1/3) NFW coupling (Session 75, M31 module).
+  - **Shell partition:** replaces the monolithic G·M/r² with three sub-terms — g_vis = G(1−f_DM)M/r², g_dm = G·f_DM·M/r², g_int = ξ_DM·g_vis — retaining the DM-halo/visible-disk structural coupling. The UQFF DM shell coupling constant ξ_DM = f_DM^(1/3); for M31 (f_DM=0.80) → ξ_DM = 0.9283.
+  - **NFW basis of the 1/3 exponent:** for ρ~r^−1 (NFW small-r core), M(r)~r² and f_DM(r)~(r/r_vir)² so f_DM^(1/3)~(r/r_vir)^(2/3) — reproducing the NFW radial coupling from the global DM fraction alone.
+  - **Reproducible:** g_base=1.227e-10; g_vis=2.455e-11; g_dm=9.818e-11; g_int=2.279e-11; g_DM_total=1.210e-10 m/s² (~1.4% reduction vs monolithic — the measurable Shell-Partition prediction). ξ table: 0.10→0.4642, 0.50→0.7937, 0.80→0.9283, 0.95→0.9830.
+- Gate +4 assertions (1711 → 1716, 0 failures).
+- Registry: +1 row (564), +3 edges (1240), +1 citation (279).
+
+### Notes
+- CLEAN — all values reproduce.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.278.0] — 2026-08-02 — BAND 1: PAPER_274 — ANDROMEDA HI 21-CM BUOYANCY RESONANCE (CLEAN)
 
 ### Added
