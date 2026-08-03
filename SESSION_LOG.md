@@ -3777,3 +3777,33 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
 Gate: 1721/0. Registry 565 rows / 1244 edges / 280 ledgers (measured).
 Campaign: 280/2,255. Next: PAPER_277.
+
+---
+
+## 2026-08-03 — v0.281.0 — BAND 1: PAPER_277 — SOMBRERO UQFF RECESSION DAMPING (CLEAN)
+
+PAPER_277 (UQFF Gravitational Recession Damping Factor kappa_recession for
+Positive Redshift, Session 77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one
+dispatch (CLEAN, WIRED).
+
+Recession damping: kappa_recession = 1/(1+z) = 1/1.0063 = 0.99374 for Sombrero
+M104 (z=+0.0063) - attenuates total UQFF gravitational output by 0.626% vs
+rest-frame. Enters Sombrero Master Gravity Equation as OUTER multiplier:
+g_total = g_sum * kappa_recession * sigma_SC (sigma_SC = 1 - B/B_crit; Sombrero
+is FIRST UQFF module with two outer multipliers - dual outer multiply).
+
+Universal Bidirectional Redshift Law: with PAPER_273 (Andromeda blueshift
+amplifier, z<0 -> kappa>1), the single analytic function kappa(z)=1/(1+z)
+covers all z in (-1,+inf): approach amplified, rest unmodified, recession
+damped. Precise complement of PAPER_273.
+
+Absolute attenuation: Delta_g = (1-kappa)*52*g_base = 0.00626*1.238e-8 =
+7.75e-11 m/s2 (g_base=2.382e-10). Cosmological limits: z->inf kappa->0
+early-universe gravitational switchoff; z->-1 kappa->inf merger singularity.
+kappa(z) table: z=0.5->0.667, z=1.0->0.5 halfway epoch, z=3.5->0.222 reionisation.
+
+CLEAN - all values reproduce; complements PAPER_273. Appendix boilerplate drift
+(VDS 1.894, kg/m^3, beta_i=0.603, SSq) auto-corrected per charter.
+
+Gate: 1726/0. Registry 566 rows / 1245 edges / 281 ledgers (measured).
+Campaign: 281/2,255. Next: PAPER_278.

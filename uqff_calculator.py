@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.280.0"
+VERSION = "0.281.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15618,6 +15618,44 @@ def _paper_276(dataset):
         },
         'formula': 'g_expansion = G*M/r^2*H(z)*t; H_UQFF = H(z)*t_H = 0.987 (~1, gravitational doubling over Hubble time)',
         'source': 'PAPER_276',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_277')
+def _paper_277(dataset):
+    z = 0.0063                                           # Sombrero M104 heliocentric redshift
+    kappa_recession = 1.0 / (1.0 + z)                    # 0.99374
+    damping_pct = (1.0 - kappa_recession) * 100.0        # 0.626%
+    g_base = 2.382e-10                                   # G*M/r^2 stated for Sombrero
+    pre_sum_Ug = 52.0 * g_base                           # 1.238e-8
+    delta_g_recession = (1.0 - kappa_recession) * pre_sum_Ug  # 7.75e-11
+    sigma_SC = 1.0 - 1e-20                               # superconductivity outer multiplier (unique dual)
+    kappa_table = {zz: 1.0 / (1.0 + zz) for zz in
+                   (-0.001, 0.0, 0.0063, 0.1, 0.5, 1.0, 3.5)}
+    return {
+        'value': {
+            'domain': '2.75 (Sombrero UQFF gravitational recession damping, positive z branch)',
+            'source_thread': 'Session 77 SOMBRERO_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Sombrero M104',
+            'z': z,
+            'kappa_recession': kappa_recession,          # 0.99374
+            'kappa_law': '1/(1+z)',
+            'damping_pct': damping_pct,                  # 0.626
+            'g_base': g_base,                            # 2.382e-10
+            'pre_sum_Ug': pre_sum_Ug,                    # 1.238e-8
+            'delta_g_recession': delta_g_recession,      # 7.75e-11
+            'sigma_SC': sigma_SC,
+            'dual_outer_multiplier': True,               # kappa_recession * sigma_SC (unique to Sombrero)
+            'bidirectional_law': 'kappa(z)=1/(1+z), z in (-1,+inf)',
+            'complements_paper_273': True,               # blueshift amplifier z<0
+            'kappa_z_table': kappa_table,
+            'early_universe_limit': 0.0,                 # z->inf gravity switchoff
+            'merger_singularity_limit': 'inf',           # z->-1
+        },
+        'formula': 'kappa_recession = 1/(1+z); g_total = g_sum * kappa_recession * sigma_SC (Universal Bidirectional Redshift Law)',
+        'source': 'PAPER_277',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

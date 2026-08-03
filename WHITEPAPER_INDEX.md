@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 280 (38 ✓, 242 ⚠ OPEN_RULING)
+- **Wired:** 281 (39 ✓, 242 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1974
+- **Not yet touched:** 1973
 
 ---
 
@@ -1535,7 +1535,7 @@
 | ✓ | PAPER_274 | Andromeda HI21cm UQFF GalacticBuoyancyResonanceFrequency omegaHI Bridging | CLEAN |
 | ✓ | PAPER_275 | Andromeda DarkMatter 8020 UQFF ShellPartition fDM NFWCouplingExponent xiDM | CLEAN |
 | ✓ | PAPER_276 | Andromeda FriedmannUQFF HzExpansionCoupling H UQFF NearUnityResonance | CLEAN |
-| ⬜ | PAPER_277 | Sombrero UQFF Gravitational Recession Damping kappa recession z positive |
+| ✓ | PAPER_277 | Sombrero UQFF Gravitational Recession Damping kappa recession z positive | CLEAN — kappa_recession=1/(1+z)=0.99374; Universal Bidirectional Redshift Law; completes with PAPER_273 |
 | ⬜ | PAPER_278 | Sombrero DustRing UQFF GravitationalRingResonator omega ring r ring |
 | ⬜ | PAPER_279 | Sombrero SMBH Dominance Ratio gamma BH SphereOfInfluence r SOI |
 | ⬜ | PAPER_280 | Saturn UQFF SolarTidalPerturbationRatio tau Sun g Sun tidal |

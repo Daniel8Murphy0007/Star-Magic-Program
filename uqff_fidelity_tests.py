@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.280.0", "uqff_calculator.VERSION = 0.280.0")
+assert_that(C.VERSION == "0.281.0", "uqff_calculator.VERSION = 0.281.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3781,6 +3781,19 @@ assert_that(abs(_r276['g_expansion_tH'] - 1.211e-10) < 1e-13 and _r276['g_exp_ov
 assert_that(abs(_r276['a_dust'] - 4.291e-19) < 1e-21 and abs(_r276['M_visible_kg'] - 3.978e41) < 1e38 and _r276['completes_m31_series'],
             "PAPER_276: ISM dust drag a_dust = 4.29e-19; M_visible=3.978e41 kg (f_DM=0.80); completes M31 series 273-276")
 assert_that(C.wired_count() >= 280, "wired_count >= 280")
+
+_r277 = C.calc('PAPER_277')['value']
+assert_that(abs(_r277['kappa_recession'] - 0.99374) < 1e-4 and _r277['kappa_law'] == '1/(1+z)',
+            "PAPER_277: kappa_recession = 1/(1+z) = 1/1.0063 = 0.99374 (Sombrero M104 recession damping; z>0 -> kappa<1)")
+assert_that(abs(_r277['damping_pct'] - 0.626) < 1e-2 and abs(_r277['delta_g_recession'] - 7.75e-11) < 1e-12,
+            "PAPER_277: damping 0.626%; Delta_g = (1-kappa)*52*g_base = 7.75e-11 m/s2")
+assert_that(_r277['complements_paper_273'] and _r277['bidirectional_law'] == 'kappa(z)=1/(1+z), z in (-1,+inf)',
+            "PAPER_277: complements PAPER_273 blueshift amplifier -> Universal Bidirectional Redshift Law kappa(z)=1/(1+z)")
+assert_that(_r277['dual_outer_multiplier'] and _r277['early_universe_limit'] == 0.0,
+            "PAPER_277: dual outer multiplier kappa*sigma_SC (unique to Sombrero); z->inf gravity switchoff (kappa->0)")
+assert_that(abs(_r277['kappa_z_table'][0.5] - 0.66667) < 1e-4 and abs(_r277['kappa_z_table'][1.0] - 0.5) < 1e-9,
+            "PAPER_277: kappa(z) table: z=0.5->0.6667, z=1.0->0.5 (halfway epoch gravity)")
+assert_that(C.wired_count() >= 281, "wired_count >= 281")
 
 
 # =============================================================================

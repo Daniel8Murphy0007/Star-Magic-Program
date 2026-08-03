@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.281.0] — 2026-08-03 — BAND 1: PAPER_277 — SOMBRERO UQFF RECESSION DAMPING (CLEAN)
+
+### Added
+- **PAPER_277 dispatch** — Sombrero UQFF Gravitational Recession Damping Factor κ_recession for positive redshift (Session 77, SOMBRERO_UQFF_MODULE.cpp, UQFF 2.0).
+  - **Recession damping:** κ_recession = 1/(1+z) = 1/1.0063 = 0.99374 for Sombrero M104 (z=+0.0063) — attenuates total UQFF gravitational output by 0.626% vs rest-frame. Enters as OUTER multiplier: g_total = g_sum · κ_recession · σ_SC.
+  - **Universal Bidirectional Redshift Law:** with PAPER_273 (Andromeda blueshift amplifier, z<0 → κ>1), the single analytic function κ(z)=1/(1+z) covers all z∈(−1,+∞): approach amplified, rest unmodified, recession damped.
+  - **Absolute attenuation:** Δg = (1−κ)·52·g_base = 0.00626·1.238e-8 = 7.75e-11 m/s² (g_base=2.382e-10).
+  - **Cosmological limits:** z→∞ ⇒ κ→0 (early-universe gravitational switchoff); z→−1 ⇒ κ→∞ (merger/coalescence singularity). κ(z) table: z=0.5→0.667, z=1.0→0.5 (halfway epoch), z=3.5→0.222 (reionisation).
+  - **Dual outer multiplier:** Sombrero is the first UQFF module to use two outer multipliers (κ_recession · σ_SC, σ_SC=1−B/B_crit).
+- Gate +5 assertions (1721 → 1726, 0 failures).
+- Registry: +1 row (566), +1 edge (1245), +1 citation (281).
+
+### Notes
+- CLEAN — all values reproduce; complements PAPER_273. Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603, SSq) auto-corrected per charter.
+
+---
+
 ## [0.280.0] — 2026-08-02 — BAND 1: PAPER_276 — ANDROMEDA FRIEDMANN-UQFF EXPANSION (CLEAN)
 
 ### Added

@@ -1,22 +1,22 @@
-v0.280.0 BAND 1: PAPER_276 wired - ANDROMEDA FRIEDMANN-UQFF EXPANSION (CLEAN)
+v0.281.0 BAND 1: PAPER_277 wired - SOMBRERO UQFF RECESSION DAMPING (CLEAN)
 
-PAPER_276 (Andromeda Friedmann-UQFF Gravity Coupling: H(z)t Expansion Term and
-H_UQFF Near-Unity Resonance, S76, ANDROMEDA_UQFF_MODULE.cpp M31 Master) wired as
-one dispatch (CLEAN, WIRED). Completes the M31 series (273-276).
+PAPER_277 (UQFF Gravitational Recession Damping Factor kappa_recession for
+Positive Redshift, S77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one dispatch
+(CLEAN, WIRED).
 
-Friedmann coupling: g_expansion=(G*M/r^2)*H(z)*t; H(z)=H0*sqrt(Om*(1+z)^3+OL),
-H0=70 (canonical A_5+SO_5), Om=0.3, OL=0.7, z=-0.001 -> H(z)=69.969 km/s/Mpc=
-2.269e-18 s^-1.
+Recession damping: kappa_recession = 1/(1+z) = 1/1.0063 = 0.99374 (Sombrero M104,
+z=+0.0063) - attenuates total UQFF gravitational output by 0.626% vs rest-frame.
+Enters as OUTER multiplier: g_total = g_sum * kappa_recession * sigma_SC
+(sigma_SC=1-B/B_crit; Sombrero is FIRST UQFF module with dual outer multiply).
 
-H_UQFF near-unity resonance: H_UQFF=H(z)*t_H=0.987 (~1) - over a Hubble timescale
-adds 98.7% of g_base (gravitational doubling). Flat LCDM H_UQFF=H0*t_H~1.
-Blueshift suppresses 0.15% (0.987 vs 0.9985).
+Universal Bidirectional Redshift Law: with PAPER_273 (blueshift amplifier z<0 ->
+kappa>1), the single function kappa(z)=1/(1+z) covers all z in (-1,+inf).
+Complement of PAPER_273.
 
-Minor terms: dust drag a_dust=4.29e-19; M split M_visible=3.978e41, M_DM=1.591e42
-(f_DM=0.80).
+Delta_g = (1-kappa)*52*g_base = 7.75e-11 m/s2. Limits: z->inf kappa->0
+(switchoff), z->-1 kappa->inf (merger singularity).
 
-CLEAN - all values reproduce; H0 from canonical registry. Appendix drift
-auto-corrected per charter.
+CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1721/0. Registry 565 rows / 1244 edges / 280 ledgers (measured).
-Campaign: 280/2,255. Next: PAPER_277.
+Gate: 1726/0. Registry 566 rows / 1245 edges / 281 ledgers (measured).
+Campaign: 281/2,255. Next: PAPER_278.

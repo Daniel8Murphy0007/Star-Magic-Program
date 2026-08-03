@@ -1243,3 +1243,4 @@ primitive,H0_KM_PER_S_PER_MPC,observable,andromeda_friedmann_uqff_expansion_coup
 primitive,MPC_TO_M,observable,andromeda_friedmann_uqff_expansion_coupling,H(z)_SI conversion
 observable,andromeda_friedmann_uqff_expansion_coupling,paper,PAPER_276,Friedmann H(z)t coupling H_UQFF near-unity
 observable,andromeda_friedmann_uqff_expansion_coupling,observable,andromeda_dm_8020_shell_partition,completes M31 series + M split (PAPER_275)
+observable,sombrero_uqff_recession_damping_kappa,observable,andromeda_blueshift_approach_amplifier,complements PAPER_273 -> Universal Bidirectional Redshift Law kappa(z)=1/(1+z)
