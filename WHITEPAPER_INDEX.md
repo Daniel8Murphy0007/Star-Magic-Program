@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total papers:** 2255
-- **Wired:** 283 (41 ✓, 242 ⚠ OPEN_RULING)
+- **Wired:** 284 (42 ✓, 242 ⚠ OPEN_RULING)
 - **OPEN targets:** 0
-- **Not yet touched:** 1971
+- **Not yet touched:** 1970
 
 ---
 
@@ -1538,7 +1538,7 @@
 | ✓ | PAPER_277 | Sombrero UQFF Gravitational Recession Damping kappa recession z positive | CLEAN — kappa_recession=1/(1+z)=0.99374; Universal Bidirectional Redshift Law; completes with PAPER_273 |
 | ✓ | PAPER_278 | Sombrero DustRing UQFF GravitationalRingResonator omega ring r ring | CLEAN (derived-correct) — omega_ring=sqrt(GM/r_ring^3)=1.650e-14, T=12.08 Myr, A_ring=2.144e-12; first stable UQFF ring resonator; sec-2.2 mass-exponent typo Q-244 |
 | ✓ | PAPER_279 | Sombrero SMBH Dominance Ratio gamma BH SphereOfInfluence r SOI | CLEAN — gamma_BH=M_BH/M=0.01; r_SOI=r*sqrt(gamma_BH)=2.36e19 m; 250x Sgr A* dominance; universal BH prescription |
-| ⬜ | PAPER_280 | Saturn UQFF SolarTidalPerturbationRatio tau Sun g Sun tidal |
+| ✓ | PAPER_280 | Saturn UQFF SolarTidalPerturbationRatio tau Sun g Sun tidal | CLEAN — first planetary module; tau_Sun=(M_Sun/M_pl)(r_pl/r_orbit)^2=6.22e-6; g_base=10.44; universal planetary formula |
 | ⬜ | PAPER_281 | Saturn Ring UQFF TidalGravityResonance omega ring kep T ring |
 | ⬜ | PAPER_282 | Saturn UQFF AtmosphericWind KineticPressure a wind eta wind |
 | ⬜ | PAPER_283 | Saturn UQFF SolarTidalHubbleExpansionCoupling g ST HE hubble tidal factor |

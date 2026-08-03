@@ -3862,3 +3862,34 @@ beta_i=0.603, SSq) auto-corrected per charter.
 
 Gate: 1736/0. Registry 568 rows / 1247 edges / 283 ledgers (measured).
 Campaign: 283/2,255. Next: PAPER_280.
+
+---
+
+## 2026-08-03 — v0.284.0 — BAND 1: PAPER_280 — SATURN UQFF SOLAR TIDAL PERTURBATION RATIO (CLEAN) [ORDER-RESTORE]
+
+PAPER_280 (Saturn UQFF Solar Tidal Perturbation Ratio tau_Sun, Session 78,
+SATURN_UQFF_MODULE.cpp) wired as one dispatch (CLEAN, WIRED). SATURN module is
+the 21st C++ module and the FIRST planetary-scale UQFF module - all prior 20 were
+stellar/NS/galactic. Establishes the UQFF Solar System planetary framework.
+
+Planetary surface gravity: g_base = G*M_Saturn/r_Saturn^2 = 10.44 m/s^2 (14 orders
+larger than typical galactic ~1e-10; first module where pre_sum_Ug=52*g_base=543
+m/s^2 > 1). Solar tidal acceleration: g_Sun_tidal = G*M_Sun/r_orbit^2 = 6.49e-5
+m/s^2 (constant additive, quasi-static at Saturn orbit - not oscillatory). Solar
+Tidal Perturbation Ratio: tau_Sun = g_Sun_tidal/g_base = (M_Sun/M_planet)*
+(r_planet/r_orbit)^2 = 6.22e-6 (ppm perturbation). FIRST UQFF solar coupling
+constant. Universal formula: Mercury 1.07e-2, Earth 6.03e-4, Jupiter 8.85e-6,
+Saturn 6.22e-6.
+
+ORDER-RESTORE: PAPER_280 was inadvertently skipped in an earlier session - PAPER_281
+shipped as v0.285.0 BEFORE PAPER_280 ever shipped (no v0.284.0 existed). Daniel
+yanked v0.285.0 from PyPI and hard-reset local to v0.283.0 (24069e9). This release
+restores PAPER_280 to its correct slot v0.284.0, branched cleanly from v0.283.0.
+PAPER_281 re-ships next as v0.285.0, then PAPER_282 as v0.286.0. Sandbox git had
+diverged during the incident; re-synced to the reset v0.283.0 base before wiring.
+
+CLEAN - all values reproduce. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i=0.603, SSq) auto-corrected per charter.
+
+Gate: 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (measured).
+Campaign: 284/2,255. Next: PAPER_281 (re-ship as v0.285.0).

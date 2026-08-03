@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.283.0", "uqff_calculator.VERSION = 0.283.0")
+assert_that(C.VERSION == "0.284.0", "uqff_calculator.VERSION = 0.284.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3820,6 +3820,19 @@ assert_that(abs(_r279['ratio_vs_sgra'] - 250.0) < 1.0 and _r279['highest_gamma_i
 assert_that(abs(_r279['bh_fraction_of_triadic'] - 1.92e-4) < 1e-5 and abs(_r279['ratio_vs_m87'] - 9.09) < 0.1,
             "PAPER_279: g_BH/g_total ~ 1.92e-4 (~0.019% of Triadic sum); Sombrero/M87 gamma_BH ratio ~9x")
 assert_that(C.wired_count() >= 283, "wired_count >= 283")
+
+_r280 = C.calc('PAPER_280')['value']
+assert_that(abs(_r280['tau_Sun'] - 6.22e-6) < 1e-8 and _r280['tau_Sun_formula'] == '(M_Sun/M_planet)*(r_planet/r_orbit)^2',
+            "PAPER_280: tau_Sun = g_Sun_tidal/g_base = (M_Sun/M_Saturn)*(r_Saturn/r_orbit)^2 = 6.22e-6 (Solar UQFF Tidal Perturbation Ratio)")
+assert_that(abs(_r280['g_base'] - 10.44) < 0.05 and _r280['pre_sum_Ug'] > 1.0,
+            "PAPER_280: g_base = G*M_Saturn/r_Saturn^2 = 10.44 m/s2 (first planetary module, g_base>1; pre_sum_Ug=52*g_base=543)")
+assert_that(abs(_r280['g_Sun_tidal'] - 6.49e-5) < 1e-6 and _r280['g_Sun_tidal_formula'] == 'G*M_Sun/r_orbit^2',
+            "PAPER_280: g_Sun_tidal = G*M_Sun/r_orbit^2 = 6.49e-5 m/s2 (raw solar acceleration at Saturn orbit)")
+assert_that(abs(_r280['planet_tau_table']['Mercury'] - 1.07e-2) < 1e-4 and abs(_r280['planet_tau_table']['Earth'] - 6.03e-4) < 1e-5,
+            "PAPER_280: universal formula: Mercury tau=1.07e-2 (~1% surface gravity), Earth tau=6.03e-4, Jupiter tau=8.85e-6")
+assert_that(_r280['first_uqff_solar_coupling'] and _r280['tau_constant_not_oscillatory'],
+            "PAPER_280: first UQFF solar tidal coupling (planetary framework); g_Sun_tidal constant not oscillatory (quasi-static at Saturn orbit)")
+assert_that(C.wired_count() >= 284, "wired_count >= 284")
 
 
 # =============================================================================

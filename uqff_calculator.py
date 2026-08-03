@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.283.0"
+VERSION = "0.284.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15744,6 +15744,54 @@ def _paper_279(dataset):
         },
         'formula': 'gamma_BH = M_BH/M = 0.01; g_BH = gamma_BH*g_base = 2.382e-12; r_SOI = r*sqrt(gamma_BH) = 2.36e19 m (set g_BH(r_SOI)=g_base(r)); 250x Sgr A* dominance',
         'source': 'PAPER_279',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_280')
+def _paper_280(dataset):
+    G = G_OBSERVED
+    M_Saturn = 5.683e26
+    r_Saturn = 6.0268e7
+    g_base = G * M_Saturn / r_Saturn ** 2                # 10.44 m/s2
+    pre_sum_Ug = 52.0 * g_base                           # 542.99 m/s2 (>1, first planetary module)
+    M_Sun = 1.989e30
+    r_orbit = 1.43e12
+    g_Sun_tidal = G * M_Sun / r_orbit ** 2               # 6.49e-5 m/s2
+    tau_Sun = g_Sun_tidal / g_base                       # 6.22e-6
+    tau_Sun_ratio_form = (M_Sun / M_Saturn) * (r_Saturn / r_orbit) ** 2
+    planets = {
+        'Mercury': (3.30e23, 2.44e6, 5.79e10),
+        'Earth':   (5.97e24, 6.37e6, 1.496e11),
+        'Jupiter': (1.898e27, 7.15e7, 7.78e11),
+        'Saturn':  (M_Saturn, r_Saturn, r_orbit),
+    }
+    tau_table = {p: (M_Sun / m) * (rp / ro) ** 2 for p, (m, rp, ro) in planets.items()}
+    return {
+        'value': {
+            'domain': '2.78 (Saturn UQFF solar tidal perturbation ratio tau_Sun)',
+            'source_thread': 'Session 78 SATURN_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Saturn (first planetary-scale UQFF module, 21st C++ module)',
+            'M_Saturn_kg': M_Saturn,
+            'r_Saturn_m': r_Saturn,
+            'g_base': g_base,                            # 10.44 m/s2
+            'g_base_note': 'first module with g_base>1 (14 orders above galactic ~1e-10)',
+            'pre_sum_Ug': pre_sum_Ug,                    # 542.99 m/s2
+            'M_Sun_kg': M_Sun,
+            'r_orbit_m': r_orbit,
+            'g_Sun_tidal': g_Sun_tidal,                  # 6.49e-5 m/s2
+            'g_Sun_tidal_formula': 'G*M_Sun/r_orbit^2',
+            'tau_Sun': tau_Sun,                          # 6.22e-6
+            'tau_Sun_formula': '(M_Sun/M_planet)*(r_planet/r_orbit)^2',
+            'tau_Sun_ratio_form': tau_Sun_ratio_form,
+            'tau_constant_not_oscillatory': True,        # quasi-static at Saturn's orbit
+            'planet_tau_table': tau_table,               # Mercury 1.07e-2 ... Saturn 6.22e-6
+            'first_uqff_solar_coupling': True,
+            'universal_planetary_formula': True,
+        },
+        'formula': 'g_base=G*M_Saturn/r_Saturn^2=10.44; g_Sun_tidal=G*M_Sun/r_orbit^2=6.49e-5; tau_Sun=g_Sun_tidal/g_base=(M_Sun/M_planet)*(r_planet/r_orbit)^2=6.22e-6',
+        'source': 'PAPER_280',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

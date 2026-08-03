@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.283.0"
-description = "UQFF Star-Magic-Program v0.283.0: PAPER_279 wired (CLEAN) - Sombrero SMBH Dominance Ratio gamma_BH=M_BH/M=0.01 (250x Sgr A*); UQFF Sphere of Influence r_SOI=r*sqrt(gamma_BH)=2.36e19 m; g_BH=gamma_BH*g_base=2.382e-12; universal BH-dominance prescription. Wired 283/2255, gate 1736/0. Registry 568 rows / 1247 edges / 283 ledgers (measured)."
+version = "0.284.0"
+description = "UQFF Star-Magic-Program v0.284.0: PAPER_280 wired (CLEAN) - Saturn Solar Tidal Perturbation Ratio tau_Sun=(M_Sun/M_planet)*(r_planet/r_orbit)^2=6.22e-6; first planetary-scale UQFF module (g_base=10.44 m/s2); g_Sun_tidal=6.49e-5; universal planetary formula. Wired 284/2255, gate 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

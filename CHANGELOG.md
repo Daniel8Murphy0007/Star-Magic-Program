@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.284.0] — 2026-08-03 — BAND 1: PAPER_280 — SATURN UQFF SOLAR TIDAL PERTURBATION RATIO (CLEAN)
+
+### Added
+- **PAPER_280 dispatch** — Saturn UQFF Solar Tidal Perturbation Ratio τ_Sun (Session 78, SATURN_UQFF_MODULE.cpp — the 21st C++ module and the **first planetary-scale UQFF module**; all prior 20 were stellar/NS/galactic).
+  - **Planetary surface gravity:** g_base = G·M_Saturn/r_Saturn² = 10.44 m/s² — 14 orders larger than typical galactic g_base (~1e-10); first module where pre_sum_Ug = 52·g_base = 543 m/s² > 1.
+  - **Solar tidal acceleration:** g_Sun_tidal = G·M_Sun/r_orbit² = 6.49e-5 m/s² (constant additive term, quasi-static at Saturn's orbit — not oscillatory).
+  - **Solar Tidal Perturbation Ratio:** τ_Sun = g_Sun_tidal/g_base = (M_Sun/M_planet)·(r_planet/r_orbit)² = 6.22e-6 (parts-per-million perturbation). First UQFF solar coupling constant.
+  - **Universal planetary formula:** τ_planet = (M_star/M_planet)·(r_planet/r_orbit)². Solar System values: Mercury 1.07e-2 (~1% surface gravity), Earth 6.03e-4, Jupiter 8.85e-6, Saturn 6.22e-6.
+- Gate +5 assertions (→ 1744, 0 failures).
+- Registry: +1 row (569), +1 edge (1248), +1 citation (284).
+
+### Notes
+- CLEAN — all values reproduce. Establishes the UQFF Solar System planetary framework. Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603, SSq) auto-corrected per charter.
+- **Ordering note:** PAPER_280 was inadvertently skipped in an earlier session (PAPER_281 shipped as v0.285.0 first; v0.285.0 was yanked from PyPI). This release restores PAPER_280 to its correct slot, v0.284.0, branched from v0.283.0. PAPER_281 re-ships next as v0.285.0.
+
+---
+
 ## [0.283.0] — 2026-08-03 — BAND 1: PAPER_279 — SOMBRERO SMBH DOMINANCE RATIO + SPHERE OF INFLUENCE (CLEAN)
 
 ### Added
