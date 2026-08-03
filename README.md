@@ -1,11 +1,11 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.281.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.281.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.282.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.282.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1726%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-281-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1731%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-282-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.280.0 wiring campaign live**
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 281 / 2,255** (39 ✓ · 242 ⚠ OPEN_RULING · 243 rulings queued) — Sombrero recession damping κ_recession=1/(1+z)=0.99374; complements PAPER_273 → Universal Bidirectional Redshift Law κ(z)=1/(1+z) (277)
+**Wired so far: 282 / 2,255** (40 ✓ · 242 ⚠ OPEN_RULING · 244 rulings queued) — Sombrero dust ring gravitational resonator ω_ring=√(GM/r_ring³)=1.650e-14, T=12.08 Myr; first stable UQFF ring resonator (pure oscillatory) (278)
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -340,6 +340,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | PAPER_275 | Andromeda DM 80/20 Shell Partition | ξ_DM=f_DM^(1/3)=0.9283 NFW coupling; g_DM_total=1.210e-10 (~1.4% reduction vs monolithic); CLEAN |
 | PAPER_276 | Andromeda Friedmann-UQFF Expansion | g_exp=G·M/r²·H(z)·t; H_UQFF=H(z)·t_H=0.987 near-unity (gravitational doubling); completes M31 series; CLEAN |
 | PAPER_277 | Sombrero UQFF Recession Damping | κ_recession=1/(1+z)=0.99374 (z=+0.0063); complements PAPER_273 → Universal Bidirectional Redshift Law κ(z)=1/(1+z); dual outer multiplier κ·σ_SC; CLEAN |
+| PAPER_278 | Sombrero Dust Ring Gravitational Resonator | ω_ring=√(GM/r_ring³)=1.650e-14 rad/s, T_ring=12.08 Myr, A_ring=(r/r_ring)²·f_ring·g_base=9·0.001·g_base=2.144e-12; first stable UQFF ring resonator (pure oscillatory); sec-2.2 mass-exponent typo Q-244 |
 
 ### Corpus (2,419 files)
 - `whitepapers/` — 2,255 `.md` files + 1 `.bak` — physics source of truth
@@ -652,7 +653,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.278.0 | Band 1: PAPER_274 | 278 |
 | v0.279.0 | Band 1: PAPER_275 | 279 |
 | v0.280.0 | Band 1: PAPER_276 | 280 |
-| **v0.281.0** ← current | Band 1: PAPER_277 | 281 |
+| v0.281.0 | Band 1: PAPER_277 | 281 |
+| **v0.282.0** ← current | Band 1: PAPER_278 | 282 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

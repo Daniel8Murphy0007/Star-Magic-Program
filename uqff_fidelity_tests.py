@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.281.0", "uqff_calculator.VERSION = 0.281.0")
+assert_that(C.VERSION == "0.282.0", "uqff_calculator.VERSION = 0.282.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3794,6 +3794,19 @@ assert_that(_r277['dual_outer_multiplier'] and _r277['early_universe_limit'] == 
 assert_that(abs(_r277['kappa_z_table'][0.5] - 0.66667) < 1e-4 and abs(_r277['kappa_z_table'][1.0] - 0.5) < 1e-9,
             "PAPER_277: kappa(z) table: z=0.5->0.6667, z=1.0->0.5 (halfway epoch gravity)")
 assert_that(C.wired_count() >= 281, "wired_count >= 281")
+
+_r278 = C.calc('PAPER_278')['value']
+assert_that(abs(_r278['omega_ring'] - 1.650e-14) < 5e-17 and _r278['omega_ring_formula'] == 'sqrt(G*M/r_ring^3)',
+            "PAPER_278: omega_ring = sqrt(G*M/r_ring^3) = 1.650e-14 rad/s (Sombrero dust ring Keplerian frequency)")
+assert_that(abs(_r278['T_ring_Myr'] - 12.08) < 0.1 and abs(_r278['r_ring_m'] - 7.867e19) < 1e17,
+            "PAPER_278: r_ring=r/3=7.867e19 m; T_ring=2pi/omega=12.08 Myr ring orbital period")
+assert_that(_r278['proximity_factor'] == 9.0 and abs(_r278['A_ring'] - 2.144e-12) < 1e-15,
+            "PAPER_278: proximity factor (r/r_ring)^2=9; A_ring=9*f_ring*g_base=9*0.001*2.382e-10=2.144e-12 m/s2")
+assert_that(_r278['pure_oscillatory_no_decay'] and _r278['first_stable_uqff_ring_resonator'],
+            "PAPER_278: F_ring=A_ring*cos(omega_ring*t) pure oscillatory (no exp decay); first stable UQFF ring resonator (vs PAPER_275 decaying)")
+assert_that(_r278['A_ring_approx_g_BH'],
+            "PAPER_278: A_ring ~ g_BH (both ~2.1-2.4e-12); ring and BH contributions comparable at reference radius")
+assert_that(C.wired_count() >= 282, "wired_count >= 282")
 
 
 # =============================================================================

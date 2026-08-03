@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.282.0] — 2026-08-03 — BAND 1: PAPER_278 — SOMBRERO DUST RING GRAVITATIONAL RESONATOR (derived-correct)
+
+### Added
+- **PAPER_278 dispatch** — Sombrero Dust Ring UQFF Gravitational Ring Resonator ω_ring and r_ring (Session 77, SOMBRERO_UQFF_MODULE.cpp, UQFF 2.0). Models M104's equatorial dust lane as an annular resonator.
+  - **Ring geometry:** r_ring = r/3 = 7.867e19 m; proximity enhancement (r/r_ring)² = 3² = 9.
+  - **Orbital resonance:** ω_ring = √(G·M/r_ring³) = 1.650e-14 rad/s; T_ring = 2π/ω_ring = 12.08 Myr.
+  - **Amplitude:** A_ring = 9·f_ring·g_base = 9·0.001·2.382e-10 = 2.144e-12 m/s² (f_ring=0.001 dust mass fraction).
+  - **Pure oscillatory resonator:** F_ring(t) = A_ring·cos(ω_ring·t) — NO exponential decay, distinct from PAPER_275's decaying Andromeda HI ring. First stable UQFF Gravitational Ring Resonator in the catalogue. A_ring ≈ g_BH (both ~2.1–2.4e-12).
+- Gate +5 assertions (1726 → 1731, 0 failures).
+- Registry: +1 row (567), +1 edge (1246), +1 citation (282).
+
+### Notes
+- **derived-correct (Q-244):** headline ω_ring=1.650e-14 / T_ring=12.08 Myr are self-consistent with M=1.989e42 kg (~1e12 M_sun, physical for Sombrero). Section 2.2's "M=1.989e41 / GM=1.327e31" is a dropped-exponent mojibake typo (would give ω=5.22e-15 / T=38 Myr, contradicting all four of the paper's own tables). Wired the self-consistent headline values.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i=0.603, SSq) auto-corrected per charter.
+
+---
+
 ## [0.281.0] — 2026-08-03 — BAND 1: PAPER_277 — SOMBRERO UQFF RECESSION DAMPING (CLEAN)
 
 ### Added

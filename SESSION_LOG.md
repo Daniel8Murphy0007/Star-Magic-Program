@@ -3807,3 +3807,33 @@ CLEAN - all values reproduce; complements PAPER_273. Appendix boilerplate drift
 
 Gate: 1726/0. Registry 566 rows / 1245 edges / 281 ledgers (measured).
 Campaign: 281/2,255. Next: PAPER_278.
+
+---
+
+## 2026-08-03 — v0.282.0 — BAND 1: PAPER_278 — SOMBRERO DUST RING GRAVITATIONAL RESONATOR (derived-correct)
+
+PAPER_278 (Sombrero Dust Ring UQFF Gravitational Ring Resonator omega_ring and
+r_ring, Session 77, SOMBRERO_UQFF_MODULE.cpp UQFF 2.0) wired as one dispatch
+(WIRED, derived-correct). Models M104's prominent equatorial dust lane as an
+annular gravitational resonator.
+
+Ring geometry: r_ring = r/3 = 7.867e19 m; proximity enhancement (r/r_ring)^2 =
+3^2 = 9 (ring exerts 9x gravitational influence per unit mass at reference r).
+Orbital resonance: omega_ring = sqrt(G*M/r_ring^3) = 1.650e-14 rad/s; T_ring =
+2pi/omega_ring = 12.08 Myr. Amplitude: A_ring = 9*f_ring*g_base = 9*0.001*
+2.382e-10 = 2.144e-12 m/s^2. F_ring(t) = A_ring*cos(omega_ring*t) - PURE
+oscillatory, NO exponential decay (distinct from PAPER_275 decaying Andromeda HI
+ring). First stable UQFF Gravitational Ring Resonator in catalogue; A_ring ~
+g_BH (both ~2.1-2.4e-12).
+
+Q-244 (derived-correct): headline omega_ring=1.650e-14 / T_ring=12.08 Myr are
+self-consistent with M=1.989e42 kg (~1e12 Msun, physical for Sombrero). Sec 2.2's
+"M=1.989e41 / GM=1.327e31" is a dropped-exponent mojibake typo (would give
+omega=5.22e-15 / T=38 Myr, contradicting all four of the paper's own tables).
+Wired the self-consistent headline values. Ruling queued to confirm mass.
+
+Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i=0.603, SSq) auto-corrected
+per charter.
+
+Gate: 1731/0. Registry 567 rows / 1246 edges / 282 ledgers (measured).
+Campaign: 282/2,255. Next: PAPER_279 (Sombrero SMBH dominance ratio, companion).

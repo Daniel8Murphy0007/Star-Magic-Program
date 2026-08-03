@@ -5683,3 +5683,11 @@ RESOLVED section with the ruling recorded.
 - Wired the exact RPDP invariant + derived-correct term1 (2.32e-12) + R_RPDP (1.73e24); term1 error flagged (extends Q-242).
 - **Ruling needed:** same as Q-242 (confirm term1=2.32e-12 for NGC 1792, correcting the 7.35e-11 that appears in PAPER_267/269); the RPDP kinematic invariant g=v^2=4e12 is exact.
 - Wired v0.273.0, status OPEN_RULING.
+
+### Q-244 — PAPER_278 Sombrero dust ring ω_ring mass-exponent typo (derived-correct)
+- **Paper:** PAPER_278 (Sombrero Dust Ring UQFF Gravitational Ring Resonator, S77).
+- **Issue:** Section 2.2 shows M=1.989e41 and intermediate GM=1.327e31, which give ω_ring=sqrt(1.327e31/4.868e59)=5.22e-15 rad/s and T_ring=38 Myr — contradicting the paper's own headline values (ω_ring=1.650e-14, T_ring=12.08 Myr repeated in sec 2.2 box, 2.3, tables in sec 4 and 5).
+- **Resolution:** The headline ω_ring=1.650e-14 / T_ring=12.08 Myr are self-consistent with M=1.989e42 kg (~1e12 M_sun, physical for Sombrero's full dynamical mass). Section 2.2's "1.989e41 / 1.327e31" is a dropped-exponent mojibake typo. Wired the self-consistent headline values with M=1.989e42.
+- Clean parts (independent of M): r_ring=r/3=7.867e19, proximity factor (r/r_ring)^2=9, A_ring=9*f_ring*g_base=2.144e-12, pure-oscillatory form F_ring=A_ring*cos(ω_ring*t).
+- **Ruling needed:** confirm Sombrero galaxy mass M=1.989e42 kg (1e12 M_sun) as the intended ω_ring input (headline values reproduce exactly), and that sec 2.2's 1.989e41/1.327e31 is the typo.
+- Wired v0.282.0, status WIRED (derived-correct; headline values self-consistent).

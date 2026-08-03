@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.281.0"
-description = "UQFF Star-Magic-Program v0.281.0: PAPER_277 wired (CLEAN) - Sombrero recession damping kappa_recession=1/(1+z)=0.99374 (z=+0.0063); complements PAPER_273 blueshift amplifier -> Universal Bidirectional Redshift Law kappa(z)=1/(1+z) for all z in (-1,inf). Wired 281/2255, gate 1726/0. Registry 566 rows / 1245 edges / 281 ledgers (measured)."
+version = "0.282.0"
+description = "UQFF Star-Magic-Program v0.282.0: PAPER_278 wired (derived-correct) - Sombrero dust ring gravitational resonator omega_ring=sqrt(GM/r_ring^3)=1.650e-14 rad/s, T_ring=12.08 Myr, A_ring=9*f_ring*g_base=2.144e-12; first stable UQFF ring resonator (pure oscillatory, no decay). Wired 282/2255, gate 1731/0. Registry 567 rows / 1246 edges / 282 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
