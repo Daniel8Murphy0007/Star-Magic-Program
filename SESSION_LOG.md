@@ -3947,3 +3947,26 @@ all edits done via file tools, Daniel ships.
 
 Gate: 1744/0. Registry 569 rows / 1248 edges / 284 ledgers (back to v0.284.0 state).
 Campaign: 280 distinct papers wired / 2,255. Next: PAPER_281 as v0.287.0.
+
+---
+
+## 2026-08-03 — v0.287.0 — DOC CORRECTION (stale version strings shipped in v0.286.0)
+
+Daniel caught that shipped v0.286.0 (commit 2ff9b5f6) carried stale "v0.280.0"
+in the README title ("UQFF systematic rebuild - v0.280.0 wiring campaign live")
+and the "What is currently shipped (v0.280.0)" heading, plus CITATION
+date-released 2026-07-28 and nested preferred-citation version 0.1.0. These four
+fields were NEVER in the per-ship version-sync routine, so they went stale over
+~6 version bumps.
+
+v0.287.0 fixes them. NO code/physics change - calculator byte-identical to
+v0.286.0 (294 wired, gate 1755/0). Added the four fields to the standing sync
+checklist.
+
+PROCESS NOTE: my sandbox git HEAD stayed at v0.284.0 (9bf385e) even though Daniel
+had shipped v0.286.0 (2ff9b5f6). I initially re-stamped the fix as 0.286.0 (already
+burned); Daniel pointed me at commit 2ff9b5f6 and I re-stamped correctly to 0.287.0.
+Standing lesson: the sandbox mount does NOT track Daniel's ships - always confirm
+the latest shipped commit/version before stamping (git cat-file / git log <hash>).
+
+Gate: 1755/0. wired_count 294 (unchanged). Next: PAPER_281.

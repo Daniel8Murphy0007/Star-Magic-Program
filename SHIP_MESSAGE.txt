@@ -1,28 +1,15 @@
-v0.286.0 BACKFILL (10 skipped papers) + REGISTRY/INDEX INTEGRITY
+v0.287.0 DOC CORRECTION (stale version strings shipped in v0.286.0)
 
-ROOT CAUSE: "papers so far" = 294 = whitepaper FILES in range PAPER_001-280 (12
-base numbers have 2-3 files each). The calculator had only 284 dispatches - 10
-second-files were silently skipped. This release wires them -> true 294.
+NO code/physics change from v0.286.0. Calculator byte-identical (294 wired papers,
+gate 1755/0). Fixes stale version strings that shipped in v0.286.0 because they were
+never in the per-ship version-sync routine:
+- README title: "UQFF systematic rebuild - v0.280.0 wiring campaign live" -> current
+- README heading: "What is currently shipped (v0.280.0)" -> current
+- CITATION.cff date-released 2026-07-28 -> 2026-08-03; nested version 0.1.0 -> current
 
-VERSION: skips burned v0.285.0 (published then yanked on PyPI). PAPER_281 ships
-separately next.
+Added these four fields to the standing per-ship sync checklist.
 
-Added (10 backfilled papers, range PAPER_001-280):
-- 008b Full Inspiral (GW170817) D=0.90*0.37=0.333 (66.7% reduction)  [CLEAN]
-- 009b Aether/String/TRZ/SCm damping (GW150914); apparent 1231 vs 410 Mpc x3 [CLEAN]
-- 010b Time-domain chirp 23 Hz; D=0.333 RMS strain reduction  [CLEAN]
-- 011b Amplitude reduction D=f_TRZ*beta_string=0.90*0.37=0.333 universal  [CLEAN]
-- 012b GW150914 validation; damping ratio 0.6691 sub-unity  [CLEAN]
-- 013b LISA SMBH factor 0.6194 (38.1% reduction)  [CLEAN]
-- 014b EMRI f_ISCO=2.931 mHz harmonics; U_A stability 1.15  [CLEAN]
-- 026c Sterile neutrino m_s=5.4 keV headline; formula mojibake 540 MeV [OPEN_RULING Q-244b]
-- 221b Bubble Nebula (1+E(t)) positive irradiation enhancement  [CLEAN]
-- 221c Bubble Nebula (1+E(t)) positive shell expansion  [CLEAN]
+VERSION: v0.285.0 burned/yanked; v0.286.0 already shipped (commit 2ff9b5f6). This is
+v0.287.0. PAPER_281 ships separately next.
 
-Also: 92+4 malformed registry-CSV rows repaired; report-file provenance corrected
-(73 predecessor constants preserved as inherited reference); census generator
-repaired; index counts fixed. wired_count 294 now = 294 wired file-rows = 294 files
-in range.
-
-Gate: 1755/0. Registry 579 rows / 1258 edges / 294 ledgers. Campaign: 294 papers
-wired (range PAPER_001-280) / 2,255. Next: PAPER_281.
+Gate: 1755/0. wired_count 294. Next: PAPER_281.

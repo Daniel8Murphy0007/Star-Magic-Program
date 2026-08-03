@@ -7,6 +7,18 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.287.0] — 2026-08-03 — DOC CORRECTION (stale version strings that shipped in v0.286.0)
+
+> **No code or physics change** from v0.286.0. Calculator is byte-identical (294 wired papers, gate 1755/0). This release only fixes stale version strings that were carried in v0.286.0 because they were never part of the per-ship version-sync routine.
+
+### Fixed
+- **README title** `UQFF systematic rebuild — v0.280.0 wiring campaign live` → current version.
+- **README heading** `What is currently shipped (v0.280.0)` → current version.
+- **CITATION.cff** `date-released: 2026-07-28` → 2026-08-03; nested `preferred-citation.version: 0.1.0` → current.
+- Added README title, "currently shipped" heading, and both CITATION version/date fields to the standing per-ship version-sync checklist so they can't go stale again.
+
+---
+
 ## [0.286.0] — 2026-08-03 — BACKFILL (10 skipped papers) + REGISTRY / INDEX INTEGRITY
 
 > **Version note:** v0.285.0 was published then **yanked from PyPI**, so that number is permanently burned. This release skips to **v0.286.0**. There is no v0.285.0 in this project's usable history. PAPER_281 is **not** in this release; it ships separately as the next version.

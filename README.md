@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.286.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.286.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.287.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.287.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1755%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-294-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.280.0 wiring campaign live**
+**UQFF systematic rebuild — v0.287.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.280.0)
+## What is currently shipped (v0.287.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -660,7 +660,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.283.0 | Band 1: PAPER_279 | 283 |
 | v0.284.0 | Band 1: PAPER_280 | 284 |
 | ~~v0.285.0~~ | *burned / yanked on PyPI — skipped* | — |
-| **v0.286.0** ← current | Backfill 10 skipped papers (008b–014b, 026c, 221b/c) + registry/index integrity fixes | 294 |
+| v0.286.0 | Backfill 10 skipped papers (008b–014b, 026c, 221b/c) + registry/index integrity fixes | 294 |
+| **v0.287.0** ← current | Doc correction (stale version strings in README title/heading + CITATION that shipped in v0.286.0) | 294 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

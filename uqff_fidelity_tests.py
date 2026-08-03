@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.286.0", "uqff_calculator.VERSION = 0.286.0 (v0.285.0 burned/yanked on PyPI - skipped)")
+assert_that(C.VERSION == "0.287.0", "uqff_calculator.VERSION = 0.287.0 (v0.285.0 and v0.286.0 both shipped/burned; this is doc-correction release)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
