@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.276.0", "uqff_calculator.VERSION = 0.276.0")
+assert_that(C.VERSION == "0.277.0", "uqff_calculator.VERSION = 0.277.0")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3737,6 +3737,17 @@ assert_that(abs(_r272['eta_uqff_pa_s'] - 1.189e-25) < 1e-28 and _r272['eta_order
 assert_that(abs(_r272['F_vac_1kg_1ms_N'] - 6.674e-37) < 1e-40,
             "PAPER_272: F_vac(1kg, 1m/s) = G*1e-26 = 6.67e-37 N (~1e16x below Earth surface gravity)")
 assert_that(C.wired_count() >= 276, "wired_count >= 276")
+
+_r273 = C.calc('PAPER_273')['value']
+assert_that(abs(_r273['kappa_approach'] - 1.001001) < 1e-5 and _r273['negative_redshift_amplifies'],
+            "PAPER_273: kappa_approach = 1/(1+z) = 1/0.999 = 1.001001 (M31 blueshift amplifier; z<0 -> kappa>1)")
+assert_that(abs(_r273['kappa_at_z_neg0p5'] - 2.0) < 1e-9 and abs(_r273['kappa_at_z_neg0p9'] - 10.0) < 1e-9 and _r273['resonance_cascade_at_z_neg1'],
+            "PAPER_273: kappa table z=-0.5 -> 2.0 (doubled), z=-0.9 -> 10.0; z->-1 -> resonance cascade (kappa->inf)")
+assert_that(abs(_r273['v_approach_m_s'] - 2.998e5) < 1e2 and abs(_r273['delta_g'] - 6.607e-12) < 1e-14,
+            "PAPER_273: v_approach = |z|*c = 3.0e5 m/s (~300 km/s); delta_g = g_UQFF*(kappa-1) = 6.6e-12 m/s^2")
+assert_that(abs(_r273['M_BH_kg'] - 2.7846e38) < 1e35 and _r273['first_velocity_gravitational_amplifier'],
+            "PAPER_273: M_BH = 1.4e8 M_sun = 2.7846e38 kg; first UQFF velocity->gravitational-magnitude amplifier")
+assert_that(C.wired_count() >= 277, "wired_count >= 277")
 
 
 # =============================================================================

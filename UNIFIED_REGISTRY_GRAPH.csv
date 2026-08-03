@@ -1232,3 +1232,5 @@ observable,source10_thz_double_gate_star_formation,observable,h2o_conduit_force_
 primitive,G_OBSERVED,observable,source10_vacuum_gravitational_duality,k_vac = G exact identification
 observable,source10_vacuum_gravitational_duality,paper,PAPER_272,vacuum-gravitational duality k_vac=G
 observable,source10_vacuum_gravitational_duality,observable,vacuum_repulsion_surface_tension,confirms F_vac_rep k_vac=G (PAPER_238)
+observable,andromeda_blueshift_approach_amplifier,paper,PAPER_273,blueshift kappa_approach=1/(1+z) amplifier
+observable,andromeda_blueshift_approach_amplifier,observable,source10_vacuum_gravitational_duality,velocity as gravitational DOF (PAPER_272)

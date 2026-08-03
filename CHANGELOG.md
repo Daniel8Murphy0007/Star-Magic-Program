@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.277.0] — 2026-08-02 — BAND 1: PAPER_273 — ANDROMEDA BLUESHIFT APPROACH AMPLIFIER (CLEAN)
+
+### Added
+- **PAPER_273 dispatch** — Andromeda M31 blueshift gravitational approach amplifier (Session 75, new ANDROMEDA_UQFF_MODULE.cpp). First UQFF treatment of negative redshift as a gravitational degree of freedom.
+  - **κ_approach = 1/(1+z):** for M31 (z=−0.001, blueshift) → κ = 1/0.999 = 1.001001 (0.1% amplification). z>0 (receding) suppresses (κ<1); z=0 static (κ=1); z<0 (approaching) amplifies (κ>1). Multiplies all UQFF gravitational terms.
+  - **Resonance cascade:** κ table — z=−0.5→2.0 (doubled), z=−0.9→10, z→−1→∞. Self-reinforcing merger feedback (more negative z → higher κ → faster approach).
+  - **Reproducible:** κ=1.001001; v_approach=|z|·c=3.0e5 m/s (~300 km/s); δg=g_UQFF·(κ−1)=6.6e-12 m/s²; M_BH=1.4e8 M_sun=2.7846e38 kg. M31-MW merger t~+4.5 Gyr.
+  - First UQFF instance of velocity contributing directly to gravitational magnitude (beyond the Lorentz sub-term).
+- Gate +4 assertions (1701 → 1706, 0 failures).
+- Registry: +1 row (562), +2 edges (1235), +1 citation (277).
+
+### Notes
+- CLEAN — all values reproduce.
+- Appendix boilerplate drift (VDS 1.894, kg/m³, β_i) auto-corrected per charter.
+
+---
+
 ## [0.276.0] — 2026-08-02 — BAND 1: PAPER_272 — SOURCE10 VACUUM-GRAVITATIONAL DUALITY (CLEAN)
 
 ### Added

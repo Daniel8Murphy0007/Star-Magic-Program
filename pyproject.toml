@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.276.0"
-description = "UQFF Star-Magic-Program v0.276.0: PAPER_272 wired (CLEAN) - Source10 gravitational vacuum drag; k_vac=G exactly -> Vacuum-Gravitational Duality (same G: static gravity + vacuum momentum drag); eta_UQFF=1.19e-25 Pa*s; confirms PAPER_238. Wired 276/2255, gate 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured)."
+version = "0.277.0"
+description = "UQFF Star-Magic-Program v0.277.0: PAPER_273 wired (CLEAN) - Andromeda M31 blueshift gravitational approach amplifier; kappa_approach=1/(1+z), z=-0.001 -> 1.001; z->-1 -> resonance cascade; first velocity->gravity amplifier. Wired 277/2255, gate 1706/0. Registry 562 rows / 1235 edges / 277 ledgers (measured)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

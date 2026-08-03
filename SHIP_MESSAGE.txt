@@ -1,19 +1,18 @@
-v0.276.0 BAND 1: PAPER_272 wired - SOURCE10 VACUUM-GRAVITATIONAL DUALITY (CLEAN)
+v0.277.0 BAND 1: PAPER_273 wired - ANDROMEDA BLUESHIFT APPROACH AMPLIFIER (CLEAN)
 
-PAPER_272 (Gravitational Vacuum Drag - k_vac=G, Velocity-Dependent Gravitational
-Force, and UQFF Vacuum-Gravitational Duality, S74, UQFF_SOURCE10.cpp Catalogue
-Master) wired as one dispatch (CLEAN, WIRED). Ties PAPER_238.
+PAPER_273 (Blueshift UQFF Gravitational Approach Amplifier - kappa_approach=
+1/(1+z) for Negative Redshift Systems, S75, ANDROMEDA_UQFF_MODULE.cpp M31
+Master) wired as one dispatch (CLEAN, WIRED). New M31 module thread.
 
-k_vac=G exactly: the vacuum repulsion coupling k_vac=6.674e-11 IS Newton's G -
-physical identification, making F_vac_rep a velocity-dependent gravitational
-force absent from DPM-seeded/GR.
+First UQFF treatment of negative redshift as a gravitational degree of freedom.
+kappa_approach=1/(1+z): M31 z=-0.001 -> kappa=1.001001 (0.1% amplification).
+z>0 suppresses (kappa<1), z=0 static, z<0 amplifies (kappa>1). Resonance
+cascade: z=-0.5->2.0, z=-0.9->10, z->-1->inf.
 
-Vacuum-Gravitational Duality: same G governs static gravity (G*M*M'/r^2) AND
-vacuum drag (G*Delta_rho_vac*M*v). Effective gravitational viscosity
-eta_UQFF=G*Delta_rho_vac*M/(6pi r)=1.19e-25 Pa*s (Eta Carinae, 25 orders below
-air). F_vac(1kg,1m/s)=6.67e-37 N (~1e16x below Earth surface g).
+Reproducible: kappa=1.001001; v_approach=|z|*c=3.0e5 m/s (~300 km/s); delta_g=
+6.6e-12 m/s^2; M_BH=1.4e8 M_sun=2.7846e38 kg. First velocity->gravity amplifier.
 
-CLEAN - all values reproduce; confirms PAPER_238. Appendix drift auto-corrected.
+CLEAN - all values reproduce. Appendix drift auto-corrected per charter.
 
-Gate: 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured).
-Campaign: 276/2,255. Next: PAPER_273.
+Gate: 1706/0. Registry 562 rows / 1235 edges / 277 ledgers (measured).
+Campaign: 277/2,255. Next: PAPER_274.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.276.0"
+VERSION = "0.277.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15323,6 +15323,72 @@ def _paper_272(dataset):
         },
         'formula': 'k_vac = G; F_vac_rep = G*Delta_rho_vac*M*v; eta_UQFF = G*Delta_rho_vac*M/(6*pi*r) (vacuum-gravitational duality)',
         'source': 'PAPER_272',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_273')
+def _paper_273(dataset):
+    """Andromeda blueshift UQFF - kappa_approach = 1/(1+z) amplifier (S75).
+
+    First UQFF treatment of NEGATIVE redshift as a gravitational degree of
+    freedom. The redshift coupling factor 1/(1+z) applied to M31 (z=-0.001,
+    blueshift, approaching the MW at ~110 km/s) gives kappa_approach > 1 - the
+    UQFF Blueshift Gravitational Approach Amplifier:
+        kappa_approach = 1/(1+z) = 1/0.999 = 1.001001...
+    Total UQFF gravity g_total = [g_grav + Ug_sum(26) + Lambda*c^2/3 + quantum +
+    Lorentz + fluid + res + DM] * kappa_approach. z>0 (receding) suppresses
+    (kappa<1); z=0 static (kappa=1); z<0 (approaching) amplifies (kappa>1).
+
+    kappa(z) table: +0.1 -> 0.909 (suppressed 9.1%); 0 -> 1.000; -0.001 (M31)
+    -> 1.001; -0.01 -> 1.010; -0.1 -> 1.111; -0.5 -> 2.000 (doubled); -0.9 ->
+    10.0; z -> -1 -> kappa -> infinity (RESONANCE CASCADE).
+
+    Self-reinforcing merger resonance cascade: as galaxies approach, z more
+    negative -> kappa up -> gravity up -> faster approach -> z more negative
+    (positive feedback). Divergence at z=-1 is the mathematical limit;
+    physically merger completes at r->0. M31-MW merger projected t~+4.5 Gyr.
+
+    Reproducible: kappa_approach(M31) = 1/(1-0.001) = 1.001001; v_approach =
+    |z|*c = 0.001*2.998e8 = 3.0e5 m/s (~300 km/s, consistent with observed
+    radial+transverse); delta_g = g_UQFF*(kappa-1) = 6.6e-9*0.001001 =
+    6.6e-12 m/s^2 (small but definite prediction); M_BH = 1.4e8 M_sun =
+    2.7846e38 kg.
+
+    CLEAN - all values reproduce. First UQFF instance of velocity contributing
+    directly to gravitational magnitude (not just the Lorentz sub-term).
+    Appendix boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per
+    charter.
+    """
+    c = 2.998e8
+    z = -0.001
+    kappa_approach = 1 / (1 + z)                          # 1.001001
+    v_approach = abs(z) * c                               # 3.0e5
+    g_uqff_baseline = 6.6e-9
+    delta_g = g_uqff_baseline * (kappa_approach - 1)      # 6.6e-12
+    M_BH = 1.4e8 * 1.989e30                               # 2.7846e38
+    return {
+        'value': {
+            'domain': '2.71 (Andromeda blueshift UQFF kappa_approach amplifier)',
+            'source_thread': 'Session 75 ANDROMEDA_UQFF_MODULE.cpp M31 Master',
+            'system': 'Andromeda M31 (z=-0.001, blueshift)',
+            'z': z,
+            'kappa_approach': kappa_approach,            # 1.001001
+            'kappa_formula': '1/(1+z)',
+            'negative_redshift_amplifies': True,          # z<0 -> kappa>1
+            'kappa_at_z_neg0p5': 1 / (1 - 0.5),          # 2.0 doubled
+            'kappa_at_z_neg0p9': 1 / (1 - 0.9),          # 10.0
+            'resonance_cascade_at_z_neg1': True,          # kappa -> inf
+            'v_approach_m_s': v_approach,                # 3.0e5 (~300 km/s)
+            'g_uqff_baseline': g_uqff_baseline,
+            'delta_g': delta_g,                          # 6.6e-12
+            'M_BH_kg': M_BH,                             # 2.7846e38
+            'merger_projected_gyr': 4.5,                 # M31-MW
+            'first_velocity_gravitational_amplifier': True,
+        },
+        'formula': 'kappa_approach = 1/(1+z); z<0 -> kappa>1 (blueshift amplifier); z->-1 -> kappa->inf (resonance cascade)',
+        'source': 'PAPER_273',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

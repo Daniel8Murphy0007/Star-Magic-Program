@@ -3669,3 +3669,30 @@ boilerplate drift (VDS 1.894, kg/m^3, beta_i) auto-corrected per charter.
 
 Gate: 1701/0. Registry 561 rows / 1233 edges / 276 ledgers (measured).
 Campaign: 276/2,255. Next: PAPER_273.
+
+---
+
+## 2026-08-02 — v0.277.0 — BAND 1: PAPER_273 — ANDROMEDA BLUESHIFT APPROACH AMPLIFIER (CLEAN)
+
+PAPER_273 (Blueshift UQFF Gravitational Approach Amplifier - kappa_approach=
+1/(1+z) for Negative Redshift Systems, Session 75, ANDROMEDA_UQFF_MODULE.cpp M31
+Master) wired as one dispatch (CLEAN, WIRED). New M31 module thread.
+
+First UQFF treatment of negative redshift as a gravitational degree of freedom.
+kappa_approach=1/(1+z): for M31 (z=-0.001 blueshift) -> kappa=1/0.999=1.001001
+(0.1% amplification). z>0 receding suppresses (kappa<1), z=0 static (kappa=1),
+z<0 approaching amplifies (kappa>1). Multiplies all UQFF gravitational terms.
+
+Resonance cascade: kappa table z=-0.5->2.0 (doubled), z=-0.9->10, z->-1->inf.
+Self-reinforcing merger feedback (more negative z -> higher kappa -> faster
+approach).
+
+Reproducible: kappa=1.001001; v_approach=|z|*c=3.0e5 m/s (~300 km/s); delta_g=
+g_UQFF*(kappa-1)=6.6e-12 m/s^2; M_BH=1.4e8 M_sun=2.7846e38 kg; M31-MW merger
+t~+4.5 Gyr. First UQFF velocity->gravitational-magnitude amplifier.
+
+CLEAN - all values reproduce. Appendix boilerplate drift (VDS 1.894, kg/m^3,
+beta_i) auto-corrected per charter.
+
+Gate: 1706/0. Registry 562 rows / 1235 edges / 277 ledgers (measured).
+Campaign: 277/2,255. Next: PAPER_274.
