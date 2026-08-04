@@ -1365,3 +1365,10 @@ observable,tau_spiral_torque,paper,PAPER_308,wired
 observable,T_pattern_spiral,paper,PAPER_308,wired
 observable,dtau_over_H0_spiral,paper,PAPER_308,wired
 anchor,H0_SH0ES_73,observable,dtau_over_H0_spiral,SH0ES obs comparison (not UQFF H0)
+primitive,C_OBSERVED,observable,a_SN_radiation_pressure,c in denominator
+primitive,G_OBSERVED,observable,eta_SN_dominance,g_base=GM/r^2
+observable,a_SN_radiation_pressure,observable,eta_SN_dominance,a_SN/g_base
+observable,a_SN_radiation_pressure,paper,PAPER_309,wired
+observable,eta_SN_dominance,paper,PAPER_309,wired
+observable,dSN_hubble_tension_imprint,paper,PAPER_309,wired
+anchor,H0_SH0ES_73_Planck_67p4,observable,dSN_hubble_tension_imprint,obs anchors (not UQFF H0)

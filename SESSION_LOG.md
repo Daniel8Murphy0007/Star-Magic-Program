@@ -4476,3 +4476,20 @@ spiral + SN Ia). New galaxy-dynamics sector.
 
 CLEAN. Gate: 1909/0. Registry 636 rows / 1367 edges / 336 ledgers.
 Campaign frontier: PAPER_308 / 2,255. Next: PAPER_309.
+
+---
+
+## v0.316.0 — 2026-08-04 — PAPER_309 (SN Ia Hubble-tension gravitational imprint)
+
+Wired PAPER_309 (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp; second spiral term).
+Carries the SH0ES-vs-Planck H0 tension into the gravitational field via SN Ia radiation.
+
+- a_SN = L_SN/(4*pi*r^2*c*rho_ISM) = 3.096e5 m/s2 (L_SN=1e36, r=30 kpc, rho_ISM=1e-21).
+- eta_SN = a_SN/g_base = 2.0e16 (16 orders; independent additive term).
+- d_H0 = (73-67.4)/67.4 = 8.31% imprints Delta_SN/SN = 2.52% at z=0.5 (E(z)=1.3086), t=5 Gyr.
+  All verified in Python.
+- NOTE: H0_SH0ES=73, H0_Planck=67.4 are external obs anchors (Riess 2022 / Planck 2018) for
+  the tension comparison, NOT UQFF's own H0 (70 = A_5+SO_5); H0->70 drift rule does not apply.
+
+CLEAN. Gate: 1915/0. Registry 639 rows / 1374 edges / 337 ledgers.
+Campaign frontier: PAPER_309 / 2,255. Next: PAPER_310.

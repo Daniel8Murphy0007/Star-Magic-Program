@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.315.0"
+VERSION = "0.316.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16903,6 +16903,57 @@ def _paper_308(dataset):
         },
         'formula': 'tau_spiral(10Gyr)=(M_gas/M)*Omega_p*t=2.046 -> g_amp=1+tau=3.046 (3x gravity at 10 Gyr); T_pattern=2pi/Omega_p=307 Myr; dtau/dt=f_gas*Omega_p=6.483e-18 = 2.741*H0_SH0ES (torque evolves 2.7x faster than cosmic expansion)',
         'source': 'PAPER_308',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_309')
+def _paper_309(dataset):
+    import math as _m
+    G = G_OBSERVED
+    c = C_OBSERVED
+    L_SN = 1.0e36                                         # SN Ia peak bolometric luminosity (W), anchor
+    r = 9.258e20                                          # galactic half-radius (m ~30 kpc), anchor
+    rho_ISM = 1.0e-21                                     # galactic ISM density (kg/m^3), anchor
+    M = 1.989e41                                          # galaxy mass 1e11 M_sun (kg), anchor
+    Omega_m = 0.3                                         # matter density parameter, obs anchor
+    Omega_L = 0.7                                         # dark-energy density parameter, obs anchor
+    z = 0.5                                               # typical SN Ia redshift, anchor
+    Mpc = 3.086e22                                        # Mpc in m
+    H0_SH0ES = 73.0e3 / Mpc                               # SH0ES obs anchor (Riess 2022; NOT UQFF H0)
+    H0_Planck = 67.4e3 / Mpc                              # Planck 2018 CMB obs anchor (NOT UQFF H0)
+    t = 5.0e9 * 3.15576e7                                 # 1.578e17 s (5 Gyr)
+    flux_SN = L_SN / (4.0 * _m.pi * r ** 2 * c)           # 3.096e-16 Pa
+    a_SN = flux_SN / rho_ISM                              # 3.096e5 m/s^2
+    g_base = G * M / r ** 2                               # 1.549e-11 m/s^2
+    eta_SN = a_SN / g_base                                # 2.0e16 SN-to-gravity dominance
+    d_H0 = (73.0 - 67.4) / 67.4                           # 0.0831 Hubble tension (8.31%)
+    E_z = _m.sqrt(Omega_m * (1.0 + z) ** 3 + Omega_L)     # 1.3086 E(z=0.5)
+    factor_SH0ES = 1.0 + H0_SH0ES * E_z * t               # 1.4887
+    factor_Planck = 1.0 + H0_Planck * E_z * t             # 1.4512
+    dSN_over_SN = (factor_SH0ES - factor_Planck) / factor_SH0ES  # 0.0252 (2.52%)
+    return {
+        'value': {
+            'domain': '3.07 (SN Ia Hubble-tension gravitational imprint in spiral pipeline)',
+            'source_thread': 'Session 88 SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp (30th C++ module)',
+            'system': 'Type Ia supernova radiation pressure in Milky-Way-class spiral',
+            'L_SN_W': L_SN, 'r_m': r, 'rho_ISM': rho_ISM, 'z': z,
+            'flux_SN_Pa': flux_SN,                      # 3.096e-16
+            'a_SN': a_SN,                               # 3.096e5
+            'a_SN_formula': 'L_SN/(4*pi*r^2*c*rho_ISM)',
+            'g_base': g_base,                           # 1.549e-11
+            'eta_SN': eta_SN,                           # 2.0e16 (16 orders)
+            'd_H0_tension': d_H0,                       # 0.0831 (8.31%)
+            'E_z_0p5': E_z,                             # 1.3086
+            'factor_SH0ES': factor_SH0ES,               # 1.4887
+            'factor_Planck': factor_Planck,             # 1.4512
+            'dSN_over_SN': dSN_over_SN,                 # 0.0252 (2.52%)
+            'dSN_note': '8.31% H0 tension imprints 2.52% fractional SN Ia field difference at z=0.5, t=5 Gyr',
+            'H0_anchors_observational': True,           # SH0ES 73 + Planck 67.4 are obs anchors, not UQFF H0
+        },
+        'formula': 'a_SN=L_SN/(4*pi*r^2*c*rho_ISM)=3.096e5 m/s2; eta_SN=a_SN/g_base=2.0e16 (16 orders); d_H0=(73-67.4)/67.4=8.31% imprints Delta_SN/SN=(factor_SH0ES-factor_Planck)/factor_SH0ES=2.52% at z=0.5, t=5 Gyr',
+        'source': 'PAPER_309',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

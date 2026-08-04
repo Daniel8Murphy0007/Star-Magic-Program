@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.316.0] — 2026-08-04 — BAND 1: PAPER_309 — SN Ia HUBBLE-TENSION GRAVITATIONAL IMPRINT (CLEAN)
+
+### Added
+- **PAPER_309 dispatch** — SN Ia Hubble Tension Gravitational Imprint (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp; second spiral term). Carries the SH0ES-vs-Planck H0 tension into the gravitational field via SN Ia radiation pressure.
+  - SN Ia radiation pressure a_SN = L_SN/(4πr²c·ρ_ISM) = **3.096e5 m/s²** (L_SN = 1e36 W, r = 30 kpc, ρ_ISM = 1e-21).
+  - η_SN = a_SN/g_base = **2.0e16** — SN Ia radiation exceeds galactic gravity by 16 orders (justifies embedding a_SN as an independent additive pipeline term, not a perturbation).
+  - Hubble tension d_H0 = (73−67.4)/67.4 = **8.31%**; via the expansion factor (1 + H(z)·t) at z=0.5 (E(z)=1.3086), t=5 Gyr, this imprints Δ_SN/SN = (factor_SH0ES − factor_Planck)/factor_SH0ES = **2.52%** on the SN Ia field — a novel H0-sensitive dynamical probe independent of light-curve photometry.
+  - **Note:** H0_SH0ES = 73 and H0_Planck = 67.4 km/s/Mpc are external observational anchors (Riess 2022 / Planck 2018) used only for the tension comparison — not UQFF's own H0 (70 = A_5+SO_5); the H0→70 drift rule does not apply.
+- 3 registry observables, 7 graph edges, 1 corpus citation (PAPER_308).
+- 6 gate assertions (a_SN, η_SN, d_H0, Δ_SN/obs-anchors, E(z), wired_count ≥ 323). Gate 1909 → **1915/0**.
+
+### Wiring status
+- `wired_count()` = **323** (CLEAN). Campaign frontier PAPER_309 of 2255. Index: 76 ✓ / 247 ⚠ / 1932 ⬜ = 2255.
+
+---
+
 ## [0.315.0] — 2026-08-04 — BAND 1: PAPER_308 — SPIRAL ARM TORQUE GRAVITATIONAL AMPLIFIER (CLEAN)
 
 ### Added

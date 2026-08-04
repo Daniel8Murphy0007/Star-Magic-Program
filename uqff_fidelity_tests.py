@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.315.0", "uqff_calculator.VERSION = 0.315.0 (PAPER_308 = v0.315.0)")
+assert_that(C.VERSION == "0.316.0", "uqff_calculator.VERSION = 0.316.0 (PAPER_309 = v0.316.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4193,6 +4193,19 @@ assert_that(abs(_r308['dtau_over_H0'] - 2.741) < 0.005 and _r308['torque_faster_
 assert_that(abs(_r308['Omega_p_rad_s'] - 6.483e-16) / 6.483e-16 < 0.005,
             "PAPER_308: Omega_p = 20 km/s/kpc = 6.483e-16 rad/s (pattern speed)")
 assert_that(C.wired_count() >= 322, "wired_count >= 322 (PAPER_308 wired)")
+
+_r309 = C.calc('PAPER_309')['value']
+assert_that(abs(_r309['a_SN'] - 3.096e5) / 3.096e5 < 0.005 and _r309['a_SN_formula'] == 'L_SN/(4*pi*r^2*c*rho_ISM)',
+            "PAPER_309: a_SN = L_SN/(4*pi*r^2*c*rho_ISM) = 3.096e5 m/s2 (SN Ia radiation pressure)")
+assert_that(abs(_r309['eta_SN'] - 2.0e16) / 2.0e16 < 0.005,
+            "PAPER_309: eta_SN = a_SN/g_base = 2.0e16 (SN Ia exceeds galactic gravity by 16 orders)")
+assert_that(abs(_r309['d_H0_tension'] - 0.0831) < 5e-4,
+            "PAPER_309: d_H0 = (73-67.4)/67.4 = 8.31% (SH0ES vs Planck Hubble tension)")
+assert_that(abs(_r309['dSN_over_SN'] - 0.0252) < 5e-4 and _r309['H0_anchors_observational'],
+            "PAPER_309: Delta_SN/SN = 2.52% at z=0.5, t=5 Gyr (8.31% H0 tension imprinted on SN Ia field; H0s are obs anchors)")
+assert_that(abs(_r309['E_z_0p5'] - 1.3086) < 5e-4,
+            "PAPER_309: E(z=0.5) = sqrt(0.3*1.5^3+0.7) = 1.3086 (Hubble function)")
+assert_that(C.wired_count() >= 323, "wired_count >= 323 (PAPER_309 wired)")
 
 
 # =============================================================================
