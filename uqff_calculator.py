@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.294.0"
+VERSION = "0.295.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16127,6 +16127,42 @@ def _paper_287(dataset):
         },
         'formula': 'Gamma_THz=10*(f_THz*v_exp)/c=10*(1e12*1e3)/3e8=3.33e7; a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=3.545e-18; a_THz=Gamma_THz*a_DPM=1.182e-10 (7 orders above DPM seed)',
         'source': 'PAPER_287',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_288')
+def _paper_288(dataset):
+    import math
+    T_cosmic_Gyr = 13.8                                  # universe age (Planck 2018)
+    A = 1e-10
+    TS_ratio = math.pi / T_cosmic_Gyr                    # 0.2277
+    standing_peak = 2.0 * A                              # 2e-10
+    travel_amp = (2.0 * math.pi / T_cosmic_Gyr) * A      # 4.553e-11
+    combined_peak = standing_peak + travel_amp           # 2.455e-10
+    omega = 1e15
+    f_osc = omega / (2.0 * math.pi)                       # 1.592e14 Hz
+    phi_cosmic = 2.0 * math.pi / T_cosmic_Gyr            # cosmic-age feedback frequency
+    return {
+        'value': {
+            'domain': '2.86 (cosmic-age standing-traveling wave bridge, 2pi/13.8)',
+            'source_thread': 'Session 81 RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp (23rd C++, RSC)',
+            'system': 'vacuum quantum oscillation cosmic-age normalization',
+            'T_cosmic_Gyr': T_cosmic_Gyr, 'A': A,
+            'TS_ratio': TS_ratio,                        # 0.2277
+            'TS_ratio_formula': 'pi/13.8',
+            'TS_pct': round(TS_ratio * 100.0, 2),        # 22.77
+            'standing_peak': standing_peak,              # 2e-10
+            'travel_amp': travel_amp,                    # 4.553e-11
+            'combined_peak': combined_peak,              # 2.455e-10
+            'phi_cosmic': phi_cosmic,                    # 2pi/13.8
+            'f_osc_Hz': f_osc,                           # 1.592e14
+            'first_cosmic_age_normalization': True,      # first UQFF term encoding T_universe=13.8 Gyr
+            'a_osc_formula': '2A*cos(kx)*cos(wt) + (2pi/13.8)*A*Re[exp(i(kx-wt))]',
+        },
+        'formula': 'T/S=pi/13.8=0.2277 (traveling wave = 22.77% of standing); standing peak 2A=2e-10, travel (2pi/13.8)A=4.553e-11, combined 2.455e-10; f_osc=w/2pi=1.592e14 Hz',
+        'source': 'PAPER_288',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

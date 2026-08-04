@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.294.0", "uqff_calculator.VERSION = 0.294.0 (PAPER_287 = v0.294.0)")
+assert_that(C.VERSION == "0.295.0", "uqff_calculator.VERSION = 0.295.0 (PAPER_288 = v0.295.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3933,6 +3933,17 @@ assert_that(abs(_r287['a_THz'] - 1.182e-10) < 1e-12 and _r287['thz_orders_above_
 assert_that(_r287['first_cascaded_resonance_chain'] and _r287['dpm_universal_seed'],
             "PAPER_287: first UQFF cascaded resonance chain (DPM seeds THz seeds Aether/SC); DPM universal seed")
 assert_that(C.wired_count() >= 301, "wired_count >= 301 (PAPER_287 wired)")
+
+_r288 = C.calc('PAPER_288')['value']
+assert_that(abs(_r288['TS_ratio'] - 0.2277) < 1e-4 and _r288['TS_ratio_formula'] == 'pi/13.8',
+            "PAPER_288: T/S = pi/13.8 = 0.2277 (traveling wave 22.77% of standing; cosmic age 13.8 Gyr)")
+assert_that(abs(_r288['travel_amp'] - 4.553e-11) < 1e-13 and abs(_r288['combined_peak'] - 2.455e-10) < 1e-12,
+            "PAPER_288: travel amp=(2pi/13.8)A=4.553e-11; combined peak 2A+(2pi/13.8)A=2.455e-10")
+assert_that(abs(_r288['f_osc_Hz'] - 1.592e14) < 1e12 and _r288['standing_peak'] == 2e-10,
+            "PAPER_288: f_osc = omega/2pi = 1e15/2pi = 1.592e14 Hz; standing peak 2A=2e-10")
+assert_that(_r288['first_cosmic_age_normalization'],
+            "PAPER_288: first UQFF term encoding T_universe=13.8 Gyr as quantum oscillation normalization")
+assert_that(C.wired_count() >= 302, "wired_count >= 302 (PAPER_288 wired)")
 
 
 # =============================================================================

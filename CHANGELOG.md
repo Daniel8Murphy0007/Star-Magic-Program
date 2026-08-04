@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.295.0] — 2026-08-03 — BAND 1: PAPER_288 — COSMIC-AGE STANDING-TRAVELING WAVE BRIDGE (CLEAN)
+
+### Added
+- **PAPER_288 dispatch** — Cosmic-Age Standing-Traveling Wave Bridge (Session 81, RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp). The **first UQFF term to encode the universe age T = 13.8 Gyr as a quantum-oscillation normalization constant**.
+  - a_osc(x,t) = 2A·cos(kx)·cos(ωt) [standing] + (2π/13.8)·A·Re[e^(i(kx−ωt))] [traveling].
+  - Traveling/standing amplitude ratio T/S = π/13.8 = **0.2277** (traveling wave carries 22.77% of the standing amplitude).
+  - At x=0,t=0 with A=1e-10: standing peak 2A = 2e-10, traveling (2π/13.8)A = 4.553e-11, combined 2.455e-10. Oscillation frequency f_osc = ω/2π = 1e15/2π = 1.592e14 Hz. φ_cosmic = 2π/T_universe is the cosmic-age feedback frequency on quantum modes.
+- Gate +5 assertions (→ 1795, 0 failures). wired_count 301 → **302**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_288 → ✓.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.294.0] — 2026-08-03 — BAND 1: PAPER_287 — DPM-THz PLASMOTIC VACUUM CASCADE AMPLIFICATION (CLEAN)
 
 ### Added

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.294.0"
-description = "UQFF Star-Magic-Program v0.294.0: PAPER_287 wired (CLEAN) - DPM-THz Plasmotic Vacuum Cascade Amplification Gamma_THz=10*(f_THz*v_exp)/c=3.33e7; DPM seed a_DPM=3.545e-18 -> a_THz=Gamma_THz*a_DPM=1.182e-10 (7 orders above seed); first UQFF cascaded resonance chain (23rd C++ module, first RSC). wired_count 301, gate 1790/0. Campaign frontier PAPER_287 of 2255. (v0.285.0 burned; v0.286.0-0.293.0 shipped.)"
+version = "0.295.0"
+description = "UQFF Star-Magic-Program v0.295.0: PAPER_288 wired (CLEAN) - Cosmic-Age Standing-Traveling Wave Bridge; ratio T/S=pi/13.8=0.2277 (traveling wave 22.77% of standing); first UQFF term encoding T_universe=13.8 Gyr as quantum oscillation normalization; a_osc=2A*cos(kx)cos(wt)+(2pi/13.8)*A*Re[exp(i(kx-wt))]. wired_count 302, gate 1795/0. Campaign frontier PAPER_288 of 2255. (v0.285.0 burned; v0.286.0-0.294.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
