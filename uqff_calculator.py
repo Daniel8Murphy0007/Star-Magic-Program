@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.289.0"
+VERSION = "0.290.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15938,6 +15938,43 @@ def _paper_282(dataset):
         },
         'formula': 'eta_wind=v_wind/c=1.668e-6; a_wind=(v_wind/c)^2*g_base=2.904e-11 (relativistic kinetic ratio); constant additive; universal gas-giant formula',
         'source': 'PAPER_282',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_283')
+def _paper_283(dataset):
+    H0_SI = H0_KM_PER_S_PER_MPC * 1000.0 / MPC_TO_M          # 2.268e-18 s^-1 (canonical A_5+SO_5=70)
+    t_age = 4.5e9 * 3.156e7                                  # 4.5 Gyr = 1.420e17 s
+    H0_t = H0_SI * t_age                                     # 0.3222
+    xi_HT = 1.0 + H0_t                                       # 1.3222 (universal)
+    g_Sun_tidal_0 = 6.49e-5                                  # static Solar tidal (PAPER_280)
+    g_ST_HE = g_Sun_tidal_0 * xi_HT                          # 8.58e-5
+    delta_g = g_Sun_tidal_0 * H0_t                           # 2.09e-5
+    gas_giants = {'Jupiter': 2.20e-4, 'Saturn': 6.49e-5, 'Uranus': 1.61e-5, 'Neptune': 6.56e-6}
+    delta_g_table = {p: gt * H0_t for p, gt in gas_giants.items()}
+    return {
+        'value': {
+            'domain': '2.81 (Saturn UQFF solar-tidal Hubble expansion coupling g_ST_HE)',
+            'source_thread': 'Session 79 SATURN_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'Saturn-Sun-cosmos three-body channel',
+            'H0_SI': H0_SI, 'H0_km_s_mpc': H0_KM_PER_S_PER_MPC,
+            't_age_s': t_age, 't_age_Gyr': 4.5,
+            'H0_times_t_age': H0_t,                          # 0.3222
+            'xi_HT': xi_HT,                                  # 1.3222
+            'xi_HT_universal': True,                         # depends only on age + H0, not planet
+            'fractional_boost_pct': round(H0_t * 100.0, 1),  # 32.2
+            'g_Sun_tidal_0': g_Sun_tidal_0,                  # 6.49e-5
+            'g_ST_HE': g_ST_HE,                              # 8.58e-5
+            'g_ST_HE_formula': 'g_Sun_tidal*(1 + H0*t)',
+            'delta_g': delta_g,                             # 2.09e-5
+            'multiplicative_not_additive': True,            # distinct from g_exp self-gravity Hubble term
+            'first_tidal_hubble_coupling': True,            # planetary-stellar-cosmological three-body
+            'delta_g_gas_giant_table': delta_g_table,
+        },
+        'formula': 'g_ST_HE(t)=G*M_Sun/r_orbit^2*(1+H0*t); xi_HT=1+H0*t_age=1.3222 (32.2% boost, universal); delta_g=g_Sun_tidal*H0*t_age=2.09e-5',
+        'source': 'PAPER_283',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

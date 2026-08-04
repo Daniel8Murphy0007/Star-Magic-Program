@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.289.0", "uqff_calculator.VERSION = 0.289.0 (PAPER_282 = v0.289.0)")
+assert_that(C.VERSION == "0.290.0", "uqff_calculator.VERSION = 0.290.0 (PAPER_283 = v0.290.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3878,6 +3878,17 @@ assert_that(abs(_r282['a_wind_gas_giant_table']['Neptune'] - 4.466e-11) < 1e-13 
 assert_that(_r282['first_uqff_gas_giant_wind_term'] and _r282['a_wind_constant_not_oscillatory'],
             "PAPER_282: first UQFF gas-giant atmospheric wind term; constant additive (not oscillatory)")
 assert_that(C.wired_count() >= 296, "wired_count >= 296 (PAPER_282 wired)")
+
+_r283 = C.calc('PAPER_283')['value']
+assert_that(abs(_r283['xi_HT'] - 1.3222) < 1e-3 and _r283['xi_HT_universal'],
+            "PAPER_283: xi_HT = 1 + H0*t_age = 1.3222 (32.2% boost; universal - age+H0 only)")
+assert_that(abs(_r283['H0_times_t_age'] - 0.3222) < 1e-3 and abs(_r283['H0_SI'] - 2.268e-18) < 1e-21,
+            "PAPER_283: H0*t_age = 2.268e-18*1.420e17 = 0.3222 (H0=70 canonical A_5+SO_5)")
+assert_that(abs(_r283['delta_g'] - 2.09e-5) < 1e-7 and _r283['g_ST_HE_formula'] == 'g_Sun_tidal*(1 + H0*t)',
+            "PAPER_283: delta_g = g_Sun_tidal*H0*t_age = 6.49e-5*0.3222 = 2.09e-5 m/s2")
+assert_that(_r283['multiplicative_not_additive'] and _r283['first_tidal_hubble_coupling'] and abs(_r283['delta_g_gas_giant_table']['Jupiter'] - 7.09e-5) < 1e-7,
+            "PAPER_283: first multiplicative tidal-Hubble coupling (planetary-stellar-cosmological); Jupiter delta_g 7.09e-5")
+assert_that(C.wired_count() >= 297, "wired_count >= 297 (PAPER_283 wired)")
 
 
 # =============================================================================

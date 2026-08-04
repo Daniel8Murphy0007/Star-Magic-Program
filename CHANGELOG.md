@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.290.0] — 2026-08-03 — BAND 1: PAPER_283 — SATURN UQFF SOLAR-TIDAL HUBBLE EXPANSION COUPLING (CLEAN)
+
+### Added
+- **PAPER_283 dispatch** — Saturn UQFF Solar-Tidal Hubble Expansion Coupling (Session 79, SATURN_UQFF_MODULE.cpp). The **first UQFF term where a local inter-body tidal field couples multiplicatively to the cosmological Hubble expansion** — a planetary-stellar-cosmological three-body channel.
+  - g_ST_HE(t) = (G·M_Sun/r_orbit²)·(1 + H0·t), with H0 = 70 km/s/Mpc = 2.268e-18 s⁻¹ (canonical A_5+SO_5).
+  - Hubble tidal factor ξ_HT = 1 + H0·t_age = 1 + 0.3222 = **1.3222** at t_age = 4.5 Gyr — a 32.2% boost that is **universal** (depends only on age and H0, not on the planet).
+  - g_Sun_tidal,0 = 6.49e-5 (PAPER_280) → g_ST_HE = 8.58e-5; net Hubble correction Δg = 2.09e-5 m/s². Distinct from the additive self-gravity Hubble term g_exp = g_grav·H·t.
+  - Universal gas-giant Δg: Jupiter 7.09e-5, Saturn 2.09e-5, Uranus 5.19e-6, Neptune 2.11e-6.
+- Gate +5 assertions (→ 1770, 0 failures). wired_count 296 → **297**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_283 → ✓.
+
+### Notes
+- CLEAN — all values reproduce with the canonical H0 (A_5+SO_5=70).
+
+---
+
 ## [0.289.0] — 2026-08-03 — BAND 1: PAPER_282 — SATURN UQFF ATMOSPHERIC WIND KINETIC PRESSURE (CLEAN)
 
 ### Added

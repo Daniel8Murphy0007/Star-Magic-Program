@@ -4010,3 +4010,23 @@ Frontier PAPER_281 -> PAPER_282. Version: PAPER_282 = v0.289.0.
 
 Gate: 1765/0. Registry 581 rows / 1260 edges / 296 ledgers. Campaign frontier:
 PAPER_282 / 2,255. Next: PAPER_283.
+
+---
+
+## 2026-08-03 — v0.290.0 — BAND 1: PAPER_283 — SATURN UQFF SOLAR-TIDAL HUBBLE EXPANSION COUPLING (CLEAN)
+
+PAPER_283 (Saturn UQFF Solar Tidal Hubble Expansion Coupling g_ST_HE, Session 79,
+SATURN_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First UQFF term where a local
+inter-body tidal field couples MULTIPLICATIVELY to cosmological Hubble expansion
+(planetary-stellar-cosmological three-body channel). g_ST_HE(t)=G*M_Sun/r_orbit^2*
+(1+H0*t); H0=70 km/s/Mpc=2.268e-18 s^-1 (canonical A_5+SO_5); t_age=4.5 Gyr=1.420e17
+s; H0*t_age=0.3222; xi_HT=1.3222 (32.2% boost, UNIVERSAL - age+H0 only); g_Sun_tidal_0
+=6.49e-5 (PAPER_280) -> g_ST_HE=8.58e-5; delta_g=2.09e-5. Gas-giant delta_g: Jupiter
+7.09e-5, Saturn 2.09e-5, Uranus 5.19e-6, Neptune 2.11e-6.
+
+wired_count 296 -> 297. Gate +5 (1770/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_283 -> checkmark (53 / 244 / 1958 = 2255; wired 297 = count).
+Frontier PAPER_282 -> PAPER_283. Version PAPER_283 = v0.290.0.
+
+Gate: 1770/0. Registry 582 rows / 1261 edges / 297 ledgers. Campaign frontier:
+PAPER_283 / 2,255. Next: PAPER_284.

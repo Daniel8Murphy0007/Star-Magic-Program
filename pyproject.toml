@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.289.0"
-description = "UQFF Star-Magic-Program v0.289.0: PAPER_282 wired (CLEAN) - Saturn Atmospheric Wind Kinetic Pressure a_wind=(v_wind/c)^2*g_base=2.904e-11 m/s2; eta_wind=v_wind/c=1.668e-6; first UQFF gas-giant wind term; universal formula (Saturn/Jupiter/Uranus/Neptune). wired_count 296, gate 1765/0. Campaign frontier PAPER_282 of 2255. (v0.285.0 burned; v0.286.0/0.287.0/0.288.0 shipped.)"
+version = "0.290.0"
+description = "UQFF Star-Magic-Program v0.290.0: PAPER_283 wired (CLEAN) - Saturn Solar-Tidal Hubble Expansion Coupling g_ST_HE=g_Sun_tidal*(1+H0*t); Hubble tidal factor xi_HT=1+H0*t_age=1.3222 (32.2% boost, universal); delta_g=2.09e-5; first multiplicative tidal-Hubble coupling (three-body channel). wired_count 297, gate 1770/0. Campaign frontier PAPER_283 of 2255. (v0.285.0 burned; v0.286.0-0.289.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
