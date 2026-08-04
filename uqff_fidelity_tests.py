@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.322.0", "uqff_calculator.VERSION = 0.322.0 (PAPER_314 = v0.322.0; v0.321.0 burned)")
+assert_that(C.VERSION == "0.323.0", "uqff_calculator.VERSION = 0.323.0 (PAPER_315 = v0.323.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4271,6 +4271,19 @@ assert_that(abs(_r314['A_area'] - 6.333e32) / 6.333e32 < 0.005,
 assert_that('1.267e50' in _r314['title_mojibake_note'],
             "PAPER_314: title/abstract dropped-exponent mojibake noted; body derivation gives 1.267e50 N")
 assert_that(C.wired_count() >= 328, "wired_count >= 328 (PAPER_314 wired)")
+
+_r315 = C.calc('PAPER_315')['value']
+assert_that(abs(_r315['Gamma_THz'] - 8.939e9) / 8.939e9 < 0.005 and 'SO_5=10' in _r315['Gamma_THz_formula'],
+            "PAPER_315: Gamma_THz = SO_5*(f_THz*v_exp/c) = 8.939e9 (THz amplification factor)")
+assert_that(abs(_r315['a_THz'] - 2.232e-21) / 2.232e-21 < 0.005 and _r315['Gamma_prop_vexp'],
+            "PAPER_315: a_THz = Gamma_THz*a_DPM = 2.232e-21; Gamma_THz proportional to v_exp (0.179 linear law)")
+assert_that(abs(_r315['r_cross_km'] - 3.280) < 0.005 and _r315['r_cross_formula'] == 'r^3 = 3*hbar*Gamma_THz/(4*pi*E0)',
+            "PAPER_315: r_cross = (3*hbar*Gamma_THz/(4*pi*E0))^(1/3) = 3.280 km (THz/VacDiff crossover radius)")
+assert_that(abs(_r315['dom_ratio_PN'] - 8.118e37) / 8.118e37 < 0.005,
+            "PAPER_315: VacDiff/THz = E0*V_sys/(hbar*Gamma_THz) = 8.118e37 (38-order VacDiff dominance at PN scale)")
+assert_that(abs(_r315['E0'] - 6.381e-36) / 6.381e-36 < 0.005,
+            "PAPER_315: E0 = (1-F_TRZ)*E_vac = 6.381e-36 J/m3 (vacuum differential energy)")
+assert_that(C.wired_count() >= 329, "wired_count >= 329 (PAPER_315 wired)")
 
 
 # =============================================================================

@@ -1403,3 +1403,11 @@ observable,F_DPM_ngc6302_lobe,observable,eta_PN_cpt_amplification,F_DPM/F_compac
 observable,F_DPM_ngc6302_lobe,paper,PAPER_314,wired
 observable,a_DPM_ngc6302_seed,paper,PAPER_314,wired
 observable,eta_PN_cpt_amplification,paper,PAPER_314,wired
+primitive,SO_5,observable,Gamma_THz_ngc6302_res,vac_ratio=SO_5=10
+primitive,C_OBSERVED,observable,Gamma_THz_ngc6302_res,c in denominator
+primitive,HBAR_UQFF_S629,observable,r_cross_vacdiff_thz,hbar factor
+observable,Gamma_THz_ngc6302_res,observable,r_cross_vacdiff_thz,crossover from Gamma_THz
+observable,Gamma_THz_ngc6302_res,observable,vacdiff_thz_dominance_PN,dominance ratio
+observable,Gamma_THz_ngc6302_res,paper,PAPER_315,wired
+observable,r_cross_vacdiff_thz,paper,PAPER_315,wired
+observable,vacdiff_thz_dominance_PN,paper,PAPER_315,wired

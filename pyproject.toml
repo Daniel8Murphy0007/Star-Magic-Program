@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.322.0"
-description = "UQFF Star-Magic-Program v0.322.0: PAPER_314 wired (CLEAN) - NGC 6302 bipolar-PN lobe DPM macro-antenna force; the ~1.5 ly lobe cross-section A_area=pi*r^2=6.333e32 m2 acts as a DPM antenna: F_DPM=I_wind*A_area*d_omega=1.267e50 N and seed a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=2.497e-31 m/s2; 13-order PN-to-compact amplification eta=F_DPM/F_DPM_compact=2.017e13 (macro-antenna scaling F_DPM~r^2). wired_count 328, gate 1945/0. Frontier PAPER_314 of 2255. (v0.321.0 burned.)"
+version = "0.323.0"
+description = "UQFF Star-Magic-Program v0.323.0: PAPER_315 wired (CLEAN) - NGC 6302 resonance VacDiff-THz crossover radius; Gamma_THz=SO_5*(f_THz*v_exp/c)=8.939e9 (proportional to HST expansion velocity, linear law), a_THz=Gamma_THz*a_DPM=2.232e-21 m/s2; crossover r_cross=(3*hbar*Gamma_THz/(4*pi*E0))^(1/3)=3.280 km separates compact THz-dominant from extended VacDiff-dominant regimes; VacDiff/THz=8.118e37 (38-order dominance at PN lobe scale). wired_count 329, gate 1951/0. Frontier PAPER_315 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

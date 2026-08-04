@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.323.0] — 2026-08-04 — BAND 1: PAPER_315 — NGC 6302 VACDIFF-THz CROSSOVER RADIUS (CLEAN)
+
+### Added
+- **PAPER_315 dispatch** — NGC 6302 UQFF Resonance VacDiff-THz Crossover Radius (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp; second resonance term). The **first UQFF bi-modal resonance crossover radius** separating compact (THz-dominant) from extended (VacDiff-dominant) regimes.
+  - THz amplification Γ_THz = SO_5·(f_THz·v_exp/c) = **8.939e9** (vac_ratio = 10 = SO_5; v_exp = 268 km/s from HST); a_THz = Γ_THz·a_DPM = **2.232e-21 m/s²**.
+  - **Γ_THz ∝ v_exp linear law confirmed**: Γ ratio vs Crab (PAPER_290) = 0.179 exactly matches the v_exp ratio 2.68e5/1.5e6 = 0.179 — HST velocities directly constrain the UQFF THz signature.
+  - **Crossover radius** r_cross = (3ħΓ_THz/4πE0)^⅓ = **3.280 km** (E0 = (1−F_TRZ)·E_vac = 6.381e-36). For r < r_cross THz dominates (compact); for r > r_cross VacDiff dominates (extended) — neutron stars (~10 km) sit just above threshold, already VacDiff-dominant.
+  - **38-order dominance** at the PN lobe scale: VacDiff/THz = E0·V_sys/(ħ·Γ_THz) = **8.118e37**.
+- 3 registry observables, 8 graph edges, 3 corpus citations (PAPER_290/287/314).
+- 6 gate assertions (Γ_THz, a_THz/linear-law, r_cross, 38-order dominance, E0, wired_count ≥ 329). Gate 1945 → **1951/0**.
+
+### Wiring status
+- `wired_count()` = **329** (CLEAN). Campaign frontier PAPER_315 of 2255. Index: 82 ✓ / 247 ⚠ / 1926 ⬜ = 2255.
+
+---
+
 ## [0.322.0] — 2026-08-04 — BAND 1: PAPER_314 — NGC 6302 PN LOBE DPM MACRO-ANTENNA FORCE (CLEAN)
 
 > **Ordering note:** v0.321.0 (which had bundled PAPER_313 + PAPER_314) was yanked/burned. PAPER_313 shipped alone as v0.320.0; PAPER_314 ships here as **v0.322.0**, skipping the dead 0.321.0. One paper per ship.

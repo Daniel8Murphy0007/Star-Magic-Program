@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.322.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.322.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.323.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.323.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1945%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-328-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1951%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-329-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.322.0 wiring campaign live**
+**UQFF systematic rebuild — v0.323.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.322.0)
+## What is currently shipped (v0.323.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 328 distinct papers** (`wired_count()`=328 = 314 base-numbered + 14 suffixed) — 81 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_314** (NGC 6302 bipolar-PN lobe DPM macro-antenna force: the ~1.5 ly lobe cross-section A_area=πr²=6.333e32 m² acts as a DPM antenna, F_DPM=I_wind·A_area·Δω=1.267e50 N and seed a_DPM=F_DPM·f_DPM·E_vac/(c·V_sys)=2.497e-31 m/s²; a 13-order PN-to-compact amplification η=2.017e13 from the macro-antenna scaling F_DPM~r²), wired v0.322.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 329 distinct papers** (`wired_count()`=329 = 315 base-numbered + 14 suffixed) — 82 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_315** (NGC 6302 resonance VacDiff-THz crossover radius: Γ_THz=SO_5·(f_THz·v_exp/c)=8.939e9 (∝ HST expansion velocity — linear law), a_THz=Γ_THz·a_DPM=2.232e-21 m/s²; crossover r_cross=(3ħΓ_THz/4πE0)^⅓=3.280 km separates compact THz-dominant from extended VacDiff-dominant regimes; VacDiff/THz=8.118e37, a 38-order dominance at PN lobe scale), wired v0.323.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -695,7 +695,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.318.0** | Band 1: PAPER_311 (NGC 6302 bipolar-PN wind-shock dominance η_wind=7.127e5) | 325 |
 | **v0.319.0** | Band 1: PAPER_312 (NGC 6302 central-WD UV radiation pressure η_rad=1.913e20) | 326 |
 | **v0.320.0** | Band 1: PAPER_313 (NGC 6302 equatorial-torus magnetic confinement η_B=3.979e5) | 327 |
-| **v0.322.0** ← current | Band 1: PAPER_314 (NGC 6302 PN lobe DPM macro-antenna F_DPM=1.267e50 N); v0.321.0 burned | 328 |
+| **v0.322.0** | Band 1: PAPER_314 (NGC 6302 PN lobe DPM macro-antenna F_DPM=1.267e50 N); v0.321.0 burned | 328 |
+| **v0.323.0** ← current | Band 1: PAPER_315 (NGC 6302 VacDiff-THz crossover r_cross=3.280 km) | 329 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

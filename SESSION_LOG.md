@@ -4570,3 +4570,19 @@ PN lobe scale (r ~ 1.5 ly). Ships as v0.322.0 (v0.321.0 yanked/burned; PAPER_313
 
 CLEAN. Gate: 1945/0. Registry 654 rows / 1405 edges / 345 ledgers.
 Campaign frontier: PAPER_314 / 2,255. Next: PAPER_315.
+
+---
+
+## v0.323.0 — 2026-08-04 — PAPER_315 (NGC 6302 VacDiff-THz crossover radius)
+
+Wired PAPER_315 (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp; second resonance term).
+First UQFF bi-modal resonance crossover radius (compact THz vs extended VacDiff).
+
+- Gamma_THz = SO_5*(f_THz*v_exp/c) = 8.939e9 (vac_ratio=10=SO_5; v_exp=268 km/s HST).
+- a_THz = Gamma_THz*a_DPM = 2.232e-21. Gamma_THz proportional to v_exp: 0.179 vs Crab (PAPER_290) = exact.
+- r_cross = (3*hbar*Gamma_THz/(4*pi*E0))^(1/3) = 3.280 km (E0=(1-F_TRZ)*E_vac=6.381e-36).
+  r<r_cross THz dominates; r>r_cross VacDiff dominates. NS ~10 km already VacDiff.
+- VacDiff/THz = E0*V_sys/(hbar*Gamma_THz) = 8.118e37 (38-order dominance at PN lobe). Verified in Python.
+
+CLEAN. Gate: 1951/0. Registry 657 rows / 1413 edges / 348 ledgers.
+Campaign frontier: PAPER_315 / 2,255. Next: PAPER_316.
