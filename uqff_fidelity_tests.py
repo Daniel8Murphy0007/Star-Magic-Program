@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.298.0", "uqff_calculator.VERSION = 0.298.0 (PAPER_291 = v0.298.0)")
+assert_that(C.VERSION == "0.299.0", "uqff_calculator.VERSION = 0.299.0 (PAPER_292 = v0.299.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3977,6 +3977,17 @@ assert_that(abs(_r291['a_fluid'] - 1.596e-75) < 1e-77 and _r291['first_volumetri
 assert_that(abs(_r291['fluid_quantum_ratio'] - 8.785e5) < 1e3,
             "PAPER_291: a_fluid/a_quantum = f_fluid*V_knot/f_quantum = 8.785e5")
 assert_that(C.wired_count() >= 305, "wired_count >= 305 (PAPER_291 wired)")
+
+_r292 = C.calc('PAPER_292')['value']
+assert_that(_r292['f_osc_Hz'] == 1812.0 and abs(_r292['omega_pulsar'] - 11385.0) < 1.0,
+            "PAPER_292: f_osc = 30.2*60 = 1812 Hz; omega_pulsar = 2pi*1812 = 11385 rad/s")
+assert_that(abs(_r292['pulse_lock'] - 1.812e-9) < 1e-12 and _r292['pulse_lock_formula'] == 'f_osc/f_DPM',
+            "PAPER_292: pulse_lock = f_osc/f_DPM = 1812/1e12 = 1.812e-9 (DPM vacuum lock ratio)")
+assert_that(abs(_r292['dpm_pulsar_octaves'] - 29.0) < 0.1 and abs(_r292['A_pulsar_m'] - 1.812e-19) < 1e-21,
+            "PAPER_292: log2(f_DPM/f_osc) = 29 octaves; A_pulsar = pulse_lock*A_amp = 1.812e-19 m (sub-nuclear)")
+assert_that(abs(_r292['sync_ratio'] - 8.785e10) < 1e8 and _r292['first_pulsar_spin_vacuum_coupling'],
+            "PAPER_292: omega_osc/omega_pulsar = 8.785e10 (synchrotron 88 billion x); first pulsar spin-vacuum coupling")
+assert_that(C.wired_count() >= 306, "wired_count >= 306 (PAPER_292 wired)")
 
 
 # =============================================================================

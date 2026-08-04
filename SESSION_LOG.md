@@ -4181,3 +4181,22 @@ Frontier PAPER_290 -> PAPER_291. Version PAPER_291 = v0.298.0.
 
 Gate: 1810/0. Registry 590 rows / 1269 edges / 305 ledgers. Campaign frontier:
 PAPER_291 / 2,255. Next: PAPER_292.
+
+---
+
+## 2026-08-03 — v0.299.0 — BAND 1: PAPER_292 — CRAB PULSAR 60-SECOND RESONANCE WINDOW (CLEAN)
+
+PAPER_292 (Crab Pulsar 60-Second UQFF Resonance Window f_osc=1812 Hz spin-to-vacuum
+DPM lock, Session 82, CRAB_RESONANCE_UQFF_MODULE.cpp) wired as one dispatch (CLEAN).
+First UQFF pulsar spin-to-vacuum coupling. Crab pulsar 30.2 Hz -> N=30.2*60=1812
+pulses/60s -> f_osc=1812 Hz, omega_pulsar=2pi*1812=11385 rad/s; pulse_lock=f_osc/
+f_DPM=1812/1e12=1.812e-9; log2(f_DPM/f_osc)=29 octaves; omega_osc/omega_pulsar=
+8.785e10 (synchrotron 88 billion x); A_pulsar=pulse_lock*A_amp=1.812e-19 m (sub-nuclear).
+Augments PAPER_288 oscillatory term.
+
+wired_count 305 -> 306. Gate +5 (1815/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_292 -> checkmark (61 / 245 / 1949 = 2255; wired 306 = count).
+Frontier PAPER_291 -> PAPER_292. Version PAPER_292 = v0.299.0.
+
+Gate: 1815/0. Registry 591 rows / 1270 edges / 306 ledgers. Campaign frontier:
+PAPER_292 / 2,255. Next: PAPER_293.

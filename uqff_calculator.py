@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.298.0"
+VERSION = "0.299.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16282,6 +16282,43 @@ def _paper_291(dataset):
         },
         'formula': 'triad a_i=10*f_i*a_DPM/c (a_fluid*V_knot); f_quantum 1.445e-17->a 1.817e-81, f_fluid 1.269e-14 (V_knot=1e3)->a 1.596e-75, f_exp 1.373e-8->a 1.726e-72; span 9.0 decades',
         'source': 'PAPER_291',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_292')
+def _paper_292(dataset):
+    import math
+    f_pulsar = 30.2                                      # Crab pulsar spin (P=33.1 ms)
+    window_s = 60.0                                       # standard timing window
+    f_osc = f_pulsar * window_s                           # 1812 pulses/Hz
+    omega_pulsar = 2.0 * math.pi * f_osc                  # 11385 rad/s
+    f_DPM = 1e12
+    pulse_lock = f_osc / f_DPM                            # 1.812e-9
+    ladder = f_DPM / f_osc                                # 5.517e8
+    octaves = math.log2(ladder)                           # 29.0
+    omega_osc = 1e15
+    sync_ratio = omega_osc / omega_pulsar                 # 8.785e10
+    A_amp = 1e-10
+    A_pulsar = pulse_lock * A_amp                          # 1.812e-19 m
+    return {
+        'value': {
+            'domain': '2.90 (Crab pulsar 60s resonance window, spin-to-vacuum DPM lock)',
+            'source_thread': 'Session 82 CRAB_RESONANCE_UQFF_MODULE.cpp (24th C++)',
+            'system': 'Crab Pulsar PSR J0534+2200 (30.2 Hz)',
+            'f_pulsar_Hz': f_pulsar, 'window_s': window_s,
+            'N_pulses': f_osc, 'f_osc_Hz': f_osc,        # 1812
+            'omega_pulsar': omega_pulsar,                # 11385
+            'pulse_lock': pulse_lock,                    # 1.812e-9
+            'pulse_lock_formula': 'f_osc/f_DPM',
+            'dpm_pulsar_octaves': octaves,               # 29.0
+            'sync_ratio': sync_ratio,                    # 8.785e10 (synchrotron 88 billion x)
+            'A_pulsar_m': A_pulsar,                      # 1.812e-19 (sub-nuclear)
+            'first_pulsar_spin_vacuum_coupling': True,
+        },
+        'formula': 'f_osc=f_pulsar*60=30.2*60=1812 Hz; omega_pulsar=2pi*1812=11385 rad/s; pulse_lock=f_osc/f_DPM=1.812e-9; log2(f_DPM/f_osc)=29 octaves; A_pulsar=pulse_lock*A_amp=1.812e-19 m',
+        'source': 'PAPER_292',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

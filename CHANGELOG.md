@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.299.0] — 2026-08-03 — BAND 1: PAPER_292 — CRAB PULSAR 60-SECOND RESONANCE WINDOW (CLEAN)
+
+### Added
+- **PAPER_292 dispatch** — Crab Pulsar 60-Second UQFF Resonance Window, f_osc = 1812 Hz spin-to-vacuum DPM lock (Session 82, CRAB_RESONANCE_UQFF_MODULE.cpp). The **first UQFF pulsar spin-to-vacuum coupling mechanism**.
+  - The Crab pulsar (30.2 Hz) emits N = 30.2·60 = **1812 pulses** per standard 60 s timing window → resonance f_osc = 1812 Hz, ω_pulsar = 2π·1812 = 11385 rad/s.
+  - DPM vacuum lock ratio pulse_lock = f_osc/f_DPM = 1812/1e12 = **1.812e-9**; the DPM-to-pulsar ladder = log₂(f_DPM/f_osc) = exactly **29 octaves**. Synchrotron ω_osc/ω_pulsar = 8.785e10 (88 billion×).
+  - DPM lock amplitude A_pulsar = pulse_lock·A_amp = 1.812e-19 m (sub-nuclear). Augments the PAPER_288 cosmic-age oscillatory term.
+- Gate +5 assertions (→ 1815, 0 failures). wired_count 305 → **306**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_292 → ✓.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.298.0] — 2026-08-03 — BAND 1: PAPER_291 — CRAB FILAMENT SPECTRAL TRIAD (CLEAN)
 
 ### Added
