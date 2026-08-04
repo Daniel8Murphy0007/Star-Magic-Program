@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.326.0] — 2026-08-04 — BAND 1: PAPER_318 — ORION M42 TRAPEZIUM OB UV RADIATION DOMINANCE (CLEAN)
+
+### Added
+- **PAPER_318 dispatch** — Trapezium OB Cluster UV Radiation Dominance / Champagne Flow (Session 91, ORION_UQFF_MODULE.cpp; second Orion term). The **first UQFF sub-pc compact-HII Trapezium OB-cluster UV radiation parameter**, and the second entry in the UQFF OB-cluster radiation class (after Lagoon, PAPER_306).
+  - L_trap = 2e5 L_sun = **7.656e31 W** (θ¹ Ori C, O6V + cluster); A_trap = 4πr² = 1.748e35 m².
+  - P_rad = L_trap/(4πr²c) = **1.461e-12 Pa**; a_rad = P_rad/ρ_fluid = **1.461e8 m/s²**.
+  - η_rad = a_rad/g_base = **7.664e18** — 18 orders; satisfies the **champagne-flow condition** (η_rad ≫ 1): ionized gas escapes freely along the density gradient (the Orion face-on blister).
+  - Radiation also dominates the wind-shock term (PAPER_317): a_rad/a_wind = **2.7e17**. Orion η_rad ≈ 5× Lagoon (PAPER_306), confirming the UQFF η_rad ∝ L/M scaling (higher OB multiplicity, lower mass).
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_306/317).
+- 6 gate assertions (P_rad, a_rad, η_rad/champagne, a_rad/a_wind, A_trap, wired_count ≥ 332). Gate 1963 → **1969/0**.
+
+### Wiring status
+- `wired_count()` = **332** (CLEAN). Campaign frontier PAPER_318 of 2255. Index: 84 ✓ / 248 ⚠ / 1923 ⬜ = 2255.
+
+---
+
 ## [0.325.0] — 2026-08-04 — BAND 1: PAPER_317 — ORION M42 TRAPEZIUM WIND RAM-PRESSURE DOMINANCE (CLEAN)
 
 ### Added

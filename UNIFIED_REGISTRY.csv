@@ -660,3 +660,6 @@ a_super_ngc6302,PAPER_316 superconductive-term accel,derived_acceleration,A_sc*a
 a_wind_orion_m42,PAPER_317 Orion Trapezium wind ram accel,derived_acceleration,v_wind^2/r*(1+t/t_age),ionization-front ram pressure,5.424e-10 m/s2,PAPER_317,0.0,astro/HII-region,resonance,PAPER_317,1,1,0,0,PAPER_311,WIRED
 eta_wind_orion,PAPER_317 wind-gravity dominance,derived_ratio,P_ram/P_grav = a_wind/g_base,28.47 birth -> 56.9 at t_age,28.47,PAPER_317,0.0,astro/HII-region,resonance,PAPER_317,1,1,0,0,PAPER_311,WIRED
 t_erosion_orion,PAPER_317 HII erosion timescale,derived_time,r/v_wind,467 kyr > t_age 300 kyr (proplyd survival),467 kyr,PAPER_317,0.0,astro/HII-region,resonance,PAPER_317,1,1,0,0,PAPER_317,WIRED
+P_rad_orion_trapezium,PAPER_318 Trapezium OB UV radiation pressure,derived_pressure,L_trap/(4*pi*r^2*c),OB cluster (4+ O-stars),1.461e-12 Pa,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_306;PAPER_317,WIRED
+a_rad_orion,PAPER_318 UV radiation acceleration,derived_acceleration,P_rad/rho_fluid,champagne-flow driver,1.461e8 m/s2,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_317,WIRED
+eta_rad_orion,PAPER_318 UV-gravity dominance,derived_ratio,a_rad/g_base,"champagne-flow eta>>1, 18 orders",7.664e18,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_306,WIRED

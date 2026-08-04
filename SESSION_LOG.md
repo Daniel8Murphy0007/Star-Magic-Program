@@ -4620,3 +4620,20 @@ ram-pressure dominance ratio. New Orion HII-region sector.
 
 CLEAN. Gate: 1963/0. Registry 662 rows / 1425 edges / 352 ledgers.
 Campaign frontier: PAPER_317 / 2,255. Next: PAPER_318.
+
+---
+
+## v0.326.0 — 2026-08-04 — PAPER_318 (Orion M42 Trapezium OB UV radiation dominance)
+
+Wired PAPER_318 (Session 91, ORION_UQFF_MODULE.cpp; second Orion term). First UQFF sub-pc
+compact-HII Trapezium OB-cluster UV radiation parameter; 2nd in the OB-cluster radiation class
+(after Lagoon PAPER_306).
+
+- L_trap = 2e5 L_sun = 7.656e31 W; A_trap = 4*pi*r^2 = 1.748e35 m^2.
+- P_rad = L_trap/(4*pi*r^2*c) = 1.461e-12 Pa; a_rad = P_rad/rho_fluid = 1.461e8 m/s2.
+- eta_rad = a_rad/g_base = 7.664e18 (18 orders; champagne-flow condition eta>>1, free escape).
+- a_rad/a_wind = 2.7e17 (radiation > wind PAPER_317). Orion eta_rad ~ 5x Lagoon (L/M scaling).
+  All verified in Python.
+
+CLEAN. Gate: 1969/0. Registry 665 rows / 1431 edges / 354 ledgers.
+Campaign frontier: PAPER_318 / 2,255. Next: PAPER_319.

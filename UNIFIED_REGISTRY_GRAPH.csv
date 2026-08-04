@@ -1423,3 +1423,9 @@ observable,a_wind_orion_m42,paper,PAPER_317,wired
 observable,eta_wind_orion,paper,PAPER_317,wired
 observable,t_erosion_orion,paper,PAPER_317,wired
 paper,PAPER_317,paper,PAPER_311,HII vs bipolar-PN wind dominance
+primitive,C_OBSERVED,observable,P_rad_orion_trapezium,c in denominator
+observable,P_rad_orion_trapezium,observable,a_rad_orion,a_rad=P_rad/rho
+observable,a_rad_orion,observable,eta_rad_orion,a_rad/g_base
+observable,P_rad_orion_trapezium,paper,PAPER_318,wired
+observable,a_rad_orion,paper,PAPER_318,wired
+observable,eta_rad_orion,paper,PAPER_318,wired

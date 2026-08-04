@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.325.0", "uqff_calculator.VERSION = 0.325.0 (PAPER_317 = v0.325.0)")
+assert_that(C.VERSION == "0.326.0", "uqff_calculator.VERSION = 0.326.0 (PAPER_318 = v0.326.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4311,6 +4311,19 @@ assert_that(abs(_r317['t_erosion_kyr'] - 467.0) < 1.0,
 assert_that(abs(_r317['P_ram_Pa'] - 6.4e-13) / 6.4e-13 < 0.005 and abs(_r317['P_grav_Pa'] - 2.248e-14) / 2.248e-14 < 0.005,
             "PAPER_317: P_ram = rho*v^2 = 6.4e-13 Pa; P_grav = GM*rho/r = 2.248e-14 Pa")
 assert_that(C.wired_count() >= 331, "wired_count >= 331 (PAPER_317 wired)")
+
+_r318 = C.calc('PAPER_318')['value']
+assert_that(abs(_r318['P_rad_Pa'] - 1.461e-12) / 1.461e-12 < 0.005 and _r318['a_rad_formula'] == 'L_trap/(4*pi*r^2*c*rho_fluid)',
+            "PAPER_318: P_rad = L_trap/(4*pi*r^2*c) = 1.461e-12 Pa (Trapezium OB UV radiation pressure)")
+assert_that(abs(_r318['a_rad'] - 1.461e8) / 1.461e8 < 0.005,
+            "PAPER_318: a_rad = P_rad/rho_fluid = 1.461e8 m/s2 (UV radiation acceleration)")
+assert_that(abs(_r318['eta_rad'] - 7.664e18) / 7.664e18 < 0.005 and _r318['champagne_flow'],
+            "PAPER_318: eta_rad = a_rad/g_base = 7.664e18 (18 orders; champagne-flow condition eta>>1)")
+assert_that(abs(_r318['a_rad_over_a_wind'] - 2.7e17) / 2.7e17 < 0.02,
+            "PAPER_318: a_rad/a_wind = 2.7e17 (radiation dominates wind ram pressure PAPER_317)")
+assert_that(abs(_r318['A_trap'] - 1.748e35) / 1.748e35 < 0.005,
+            "PAPER_318: A_trap = 4*pi*r^2 = 1.748e35 m^2 (surface area at r)")
+assert_that(C.wired_count() >= 332, "wired_count >= 332 (PAPER_318 wired)")
 
 
 # =============================================================================

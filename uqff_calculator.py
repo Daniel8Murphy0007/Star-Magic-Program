@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.325.0"
+VERSION = "0.326.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17259,6 +17259,42 @@ def _paper_317(dataset):
         },
         'formula': 'g_base=G*M/r^2=1.907e-11; a_wind(t)=v_wind^2/r*(1+t/t_age); eta_wind=P_ram/P_grav=a_wind/g_base=28.47 at birth, 56.9 at t_age (wind-dominated/unbound); t_erosion=r/v_wind=467 kyr > t_age 300 kyr (proplyds survive)',
         'source': 'PAPER_317',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_318')
+def _paper_318(dataset):
+    import math as _m
+    c = C_OBSERVED
+    L_trap = 7.656e31                                     # Trapezium cluster luminosity 2e5 L_sun (W), anchor
+    r = 1.18e17                                           # HII region half-span (m), anchor
+    rho_fluid = 1.0e-20                                   # HII gas density (kg/m^3), anchor
+    g_base = 1.907e-11                                    # DPM-seeded self-gravity (PAPER_317)
+    a_wind = 5.424e-10                                    # wind ram accel (PAPER_317)
+    A_trap = 4.0 * _m.pi * r ** 2                         # 1.748e35 m^2 surface area at r
+    P_rad = L_trap / (A_trap * c)                         # 1.461e-12 Pa UV radiation pressure
+    a_rad = P_rad / rho_fluid                             # 1.461e8 m/s^2 radiation acceleration
+    eta_rad = a_rad / g_base                              # 7.664e18 UV-gravity dominance
+    a_rad_over_a_wind = a_rad / a_wind                    # 2.7e17 (radiation >> wind)
+    return {
+        'value': {
+            'domain': '3.16 (Orion M42 Trapezium OB UV radiation; champagne-flow condition)',
+            'source_thread': 'Session 91 ORION_UQFF_MODULE.cpp (33rd C++ module)',
+            'system': 'Orion Nebula M42, Trapezium theta1 Ori C OB cluster (4+ O-stars)',
+            'L_trap_W': L_trap, 'r_m': r, 'rho_fluid': rho_fluid,
+            'A_trap': A_trap,                           # 1.748e35
+            'P_rad_Pa': P_rad,                          # 1.461e-12
+            'a_rad': a_rad,                             # 1.461e8
+            'a_rad_formula': 'L_trap/(4*pi*r^2*c*rho_fluid)',
+            'eta_rad': eta_rad,                         # 7.664e18 (18 orders)
+            'champagne_flow': eta_rad > 1.0,            # ionized gas escapes freely
+            'a_rad_over_a_wind': a_rad_over_a_wind,      # 2.7e17 (radiation dominates wind PAPER_317)
+            'OB_cluster_class': 'Orion eta_rad ~ 5x Lagoon (PAPER_306); eta_rad ~ L/M scaling',
+        },
+        'formula': 'a_rad=L_trap/(4*pi*r^2*c*rho_fluid)=1.461e8 m/s2; eta_rad=a_rad/g_base=7.664e18 (18 orders, champagne-flow condition eta>>1); a_rad/a_wind=2.7e17 (radiation dominates wind); Orion eta_rad ~ 5x Lagoon (L/M scaling)',
+        'source': 'PAPER_318',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

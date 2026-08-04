@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.325.0"
-description = "UQFF Star-Magic-Program v0.325.0: PAPER_317 wired (CLEAN) - Orion M42 Trapezium wind ram-pressure dominance (33rd C++ module, first HII-region ram-pressure ratio); g_base=G*M/r^2=1.907e-11; ram-pressure a_wind=v_wind^2/r*(1+t/t_age) gives eta_wind=P_ram/P_grav=a_wind/g_base=28.47 at birth (wind-dominated/unbound), doubling to 56.9 at t_age; erosion timescale t_erosion=r/v_wind=467 kyr > t_age 300 kyr, so proplyds survive. wired_count 331, gate 1963/0. Frontier PAPER_317 of 2255."
+version = "0.326.0"
+description = "UQFF Star-Magic-Program v0.326.0: PAPER_318 wired (CLEAN) - Orion M42 Trapezium OB-cluster UV radiation dominance; L_trap=2e5 L_sun=7.656e31 W gives P_rad=L/(4*pi*r^2*c)=1.461e-12 Pa and a_rad=P_rad/rho_fluid=1.461e8 m/s2, exceeding gravity by eta_rad=7.664e18 (18 orders, champagne-flow condition eta>>1 -> ionized gas escapes freely); a_rad/a_wind=2.7e17; Orion eta_rad ~ 5x Lagoon (L/M scaling). wired_count 332, gate 1969/0. Frontier PAPER_318 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

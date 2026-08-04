@@ -1,11 +1,12 @@
-v0.325.0 BAND 1: PAPER_317 wired - ORION M42 TRAPEZIUM WIND RAM-PRESSURE DOMINANCE (CLEAN)
+v0.326.0 BAND 1: PAPER_318 wired - ORION M42 TRAPEZIUM OB UV RADIATION DOMINANCE (CLEAN)
 
-PAPER_317 (Orion M42 Trapezium Wind Ram Pressure Dominance, Session 91,
-ORION_UQFF_MODULE.cpp, 33rd C++ module). First UQFF HII-region ram-pressure dominance ratio.
+PAPER_318 (Trapezium OB Cluster UV Radiation Dominance / Champagne Flow, Session 91,
+ORION_UQFF_MODULE.cpp; second Orion term). First UQFF sub-pc compact-HII Trapezium OB-cluster
+UV radiation parameter; second in the UQFF OB-cluster radiation class (after Lagoon, PAPER_306).
 
-- g_base = G*M/r^2 = 1.907e-11 m/s2 (M=2000 M_sun, r~12.5 ly)
-- a_wind(t) = v_wind^2/r*(1+t/t_age): 5.424e-10 at t=0, 1.085e-9 m/s2 at 300 kyr
-- eta_wind = P_ram/P_grav = a_wind/g_base = 28.47 at birth (wind-dominated/unbound), 56.9 at t_age
-- t_erosion = r/v_wind = 467 kyr > t_age 300 kyr (proplyds survive, consistent with ~150-180 HST proplyds)
+- L_trap = 2e5 L_sun = 7.656e31 W; A_trap = 4*pi*r^2 = 1.748e35 m^2
+- P_rad = L_trap/(4*pi*r^2*c) = 1.461e-12 Pa; a_rad = P_rad/rho_fluid = 1.461e8 m/s2
+- eta_rad = a_rad/g_base = 7.664e18 (18 orders; champagne-flow condition eta>>1 -> free escape)
+- a_rad/a_wind = 2.7e17 (radiation dominates wind PAPER_317); Orion eta_rad ~ 5x Lagoon (L/M scaling)
 
-CLEAN. wired_count 331, gate 1963/0. Campaign frontier PAPER_317 of 2255.
+CLEAN. wired_count 332, gate 1969/0. Campaign frontier PAPER_318 of 2255.
