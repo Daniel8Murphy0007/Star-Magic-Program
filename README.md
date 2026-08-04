@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.306.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.306.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.307.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.307.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1855%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-313-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1861%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-314-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.306.0 wiring campaign live**
+**UQFF systematic rebuild — v0.307.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.306.0)
+## What is currently shipped (v0.307.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 313 distinct papers** (`wired_count()`=313 = 299 base-numbered + 14 suffixed) — 67 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_299** (first atomic-scale UQFF module, hydrogen ground state: g_base=G·M_p/r_Bohr²=3.99e-17 m/s² — the smallest of all modules; electron Lorentz a_Lorentz=q·v_orb·B/m_e=3.85e13 m/s² dominates; electrogravitational dominance ratio η_EM=a_Lorentz/g_base=9.65e29, the largest force asymmetry in UQFF — EM over gravity by ~30 orders at the Bohr radius), wired v0.306.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 314 distinct papers** (`wired_count()`=314 = 300 base-numbered + 14 suffixed) — 68 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_300** (hydrogen Lyman-α cosmic bridge: ω_Lyman=2πc/λ=1.549e16 rad/s; the universal traveling/standing ratio T/S=π/T_U,gyr=π/13.8=0.2277 reappears at atomic scale identical to PAPER_288 — frequency-independent across 34 orders, a cosmic-age constant; coupling χ_bridge=ω_Lyman·t_H=6.745e33), wired v0.307.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -680,7 +680,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.303.0** | Band 1: PAPER_296 (first explicit UQFF cosmological-constant vacuum acceleration a_Λ=Λc²/3) | 310 |
 | **v0.304.0** | Band 1: PAPER_297 (first UQFF superluminal expansion module η_exp=3.328>1) | 311 |
 | **v0.305.0** | Band 1: PAPER_298 (first UQFF GR-dominant regime ε_GR=5.056>1) | 312 |
-| **v0.306.0** ← current | Band 1: PAPER_299 (first atomic UQFF module, electrogravitational dominance η_EM=9.65e29) | 313 |
+| **v0.306.0** | Band 1: PAPER_299 (first atomic UQFF module, electrogravitational dominance η_EM=9.65e29) | 313 |
+| **v0.307.0** ← current | Band 1: PAPER_300 (Lyman-α cosmic bridge, universal T/S=π/13.8=0.2277) | 314 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

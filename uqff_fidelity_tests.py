@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.306.0", "uqff_calculator.VERSION = 0.306.0 (PAPER_299 = v0.306.0)")
+assert_that(C.VERSION == "0.307.0", "uqff_calculator.VERSION = 0.307.0 (PAPER_300 = v0.307.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4075,6 +4075,19 @@ assert_that(_r299['smallest_g_base'] and _r299['largest_force_asymmetry'],
 assert_that(abs(_r299['v_orb'] - 2.1877e6) < 1e3,
             "PAPER_299: v_orb = alpha*c = 2.1877e6 m/s (electron orbital velocity)")
 assert_that(C.wired_count() >= 313, "wired_count >= 313 (PAPER_299 wired)")
+
+_r300 = C.calc('PAPER_300')['value']
+assert_that(abs(_r300['omega_Lyman'] - 1.549e16) < 5e13 and _r300['omega_Lyman_formula'] == '2*pi*c/lambda',
+            "PAPER_300: omega_Lyman = 2*pi*c/lambda = 1.549e16 rad/s (Lyman-alpha UV line)")
+assert_that(abs(_r300['T_over_S'] - 0.2277) < 5e-4 and _r300['matches_PAPER_288'],
+            "PAPER_300: T/S = pi/T_U,gyr = pi/13.8 = 0.2277 (universal, identical to PAPER_288)")
+assert_that(abs(_r300['chi_bridge'] - 6.745e33) / 6.745e33 < 0.005,
+            "PAPER_300: chi_bridge = omega_Lyman*t_H = 6.745e33 (Lyman-Universe coupling factor)")
+assert_that(abs(_r300['a_standing'] - 2.000e-10) < 1e-13 and abs(_r300['a_traveling'] - 4.553e-11) < 5e-14,
+            "PAPER_300: standing peak 2A = 2.000e-10; traveling peak (2pi/T_U)*A = 4.553e-11 m/s2")
+assert_that(abs(_r300['k_Lyman'] - 5.166e7) < 5e4,
+            "PAPER_300: k_Lyman = 2*pi/lambda = 5.166e7 m^-1 (UV wave vector)")
+assert_that(C.wired_count() >= 314, "wired_count >= 314 (PAPER_300 wired)")
 
 
 # =============================================================================

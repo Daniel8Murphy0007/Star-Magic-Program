@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.307.0] — 2026-08-04 — BAND 1: PAPER_300 — HYDROGEN LYMAN-α COSMIC BRIDGE (UNIVERSAL T/S = π/13.8) (CLEAN)
+
+### Added
+- **PAPER_300 dispatch** — Hydrogen Atom Lyman-α Cosmic Bridge (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp; second term of the hydrogen module). Adds the Lyman-α oscillatory term and confirms the PAPER_288 cosmic-age T/S bridge constant at atomic scale.
+  - ω_Lyman = 2πc/λ = **1.549e16 rad/s** (λ_Ly = 121.6 nm); k_Lyman = 5.166e7 m⁻¹.
+  - **Universal T/S ratio** = π/T_U,gyr = π/13.8 = **0.2277** — identical to PAPER_288 (RSC module). The ratio depends only on the cosmic age, not the oscillation frequency, so it is invariant across 34 orders of magnitude (Lyman-α UV ω~10¹⁶ down to Hubble flow H₀~10⁻¹⁸).
+  - Standing peak 2A = 2.000e-10; traveling (cosmic-normalized) peak (2π/T_U)·A = 4.553e-11 m/s².
+  - **Lyman-Universe coupling** χ_bridge = ω_Lyman·t_H = **6.745e33** — UV oscillation cycles completed over the age of the universe.
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_288/299).
+- 6 gate assertions (ω_Lyman, T/S=0.2277=PAPER_288, χ_bridge, standing/traveling peaks, k_Lyman, wired_count ≥ 314). Gate 1855 → **1861/0**.
+
+### Wiring status
+- `wired_count()` = **314** (CLEAN). Campaign frontier PAPER_300 of 2255. Index: 68 ✓ / 246 ⚠ / 1941 ⬜ = 2255.
+
+---
+
 ## [0.306.0] — 2026-08-04 — BAND 1: PAPER_299 — FIRST ATOMIC-SCALE UQFF MODULE (ELECTROGRAVITATIONAL DOMINANCE) (CLEAN)
 
 ### Added

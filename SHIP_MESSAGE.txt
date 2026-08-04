@@ -1,13 +1,13 @@
-v0.306.0 BAND 1: PAPER_299 wired - FIRST ATOMIC-SCALE UQFF MODULE (ELECTROGRAVITATIONAL DOMINANCE) (CLEAN)
+v0.307.0 BAND 1: PAPER_300 wired - HYDROGEN LYMAN-ALPHA COSMIC BRIDGE (UNIVERSAL T/S = pi/13.8) (CLEAN)
 
-PAPER_299 (Hydrogen Atom UQFF Electrogravitational Dominance Ratio, Session 85,
-HYDROGEN_ATOM_UQFF_MODULE.cpp, 27th C++ module, FIRST atomic-scale UQFF module).
-Hydrogen ground state, Bohr model.
+PAPER_300 (Hydrogen Atom Lyman-alpha Cosmic Bridge, Session 85,
+HYDROGEN_ATOM_UQFF_MODULE.cpp; second hydrogen module term). Confirms the PAPER_288
+cosmic-age T/S bridge constant at atomic scale.
 
-- g_base = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (smallest g_base across all 27 modules)
-- a_Lorentz = q*v_orb*B/m_e = 3.848e13 m/s2 (v_orb=alpha*c=2.1877e6); dominant EM term
-- eta_EM = a_Lorentz/g_base = 9.65e29 (largest force asymmetry in UQFF; EM over gravity
-  ~30 orders at the Bohr radius)
-- Atomic constants (M_p, r_Bohr, m_e, q, B, alpha) observed anchors; G, c from registry
+- omega_Lyman = 2*pi*c/lambda = 1.549e16 rad/s (lambda_Ly=121.6 nm)
+- T/S = pi/T_U,gyr = pi/13.8 = 0.2277 (identical to PAPER_288; frequency-independent across
+  34 orders, from Lyman UV ~1e16 to Hubble flow H0 ~1e-18 -- a cosmic-age constant)
+- standing 2A=2.000e-10; traveling (2pi/T_U)*A=4.553e-11 m/s2
+- chi_bridge = omega_Lyman*t_H = 6.745e33 (UV oscillation cycles over the age of the universe)
 
-CLEAN. wired_count 313, gate 1855/0. Campaign frontier PAPER_299 of 2255.
+CLEAN. wired_count 314, gate 1861/0. Campaign frontier PAPER_300 of 2255.

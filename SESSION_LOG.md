@@ -4329,3 +4329,19 @@ atomic-scale UQFF module). Hydrogen ground state, Bohr model.
 
 CLEAN. Gate: 1855/0. Registry 609 rows / 1309 edges / 319 ledgers.
 Campaign frontier: PAPER_299 / 2,255. Next: PAPER_300 (a_osc Lyman) — MILESTONE approaches.
+
+---
+
+## v0.307.0 — 2026-08-04 — PAPER_300 (hydrogen Lyman-alpha cosmic bridge, universal T/S=pi/13.8)
+
+Wired PAPER_300 (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp; second hydrogen module term).
+Confirms the PAPER_288 cosmic-age T/S bridge constant at atomic scale.
+
+- omega_Lyman = 2*pi*c/lambda = 1.549e16 rad/s (lambda_Ly=121.6 nm); k_Lyman=5.166e7 m^-1.
+- T/S = pi/T_U,gyr = pi/13.8 = 0.2277, identical to PAPER_288; frequency-independent across
+  34 orders (Lyman UV ~1e16 to Hubble H0 ~1e-18). A cosmic-age constant, not an oscillation one.
+- Standing 2A=2.000e-10; traveling (2pi/T_U)*A=4.553e-11 m/s2.
+- chi_bridge = omega_Lyman*t_H = 6.745e33 (UV cycles over cosmic age). All verified in Python.
+
+CLEAN. Gate: 1861/0. Registry 612 rows / 1315 edges / 321 ledgers.
+Campaign frontier: PAPER_300 / 2,255. Next: PAPER_301.

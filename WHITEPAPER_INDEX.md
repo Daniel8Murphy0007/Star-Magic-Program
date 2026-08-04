@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_299** (first atomic-scale UQFF module; electrogravitational dominance η_EM=a_Lorentz/g_base=9.65e29, wired v0.306.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–299 = **313 wired**.
-- **Distinct wired papers: 313** = `wired_count()` = `len(DISPATCH)`. Composed of **299** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **67 ✓ CLEAN**, **246 ⚠ OPEN_RULING**, **1942 ⬜** not-touched (67 + 246 + 1942 = 2255 ✓). Wired file-rows (67 + 246 = **313**) equal `wired_count()`.
+- **Campaign frontier: PAPER_300** (Lyman-α cosmic bridge; universal T/S=π/13.8=0.2277 confirmed at atomic scale, wired v0.307.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–300 = **314 wired**.
+- **Distinct wired papers: 314** = `wired_count()` = `len(DISPATCH)`. Composed of **300** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **68 ✓ CLEAN**, **246 ⚠ OPEN_RULING**, **1941 ⬜** not-touched (68 + 246 + 1941 = 2255 ✓). Wired file-rows (68 + 246 = **314**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1559,7 +1559,7 @@
 | ✓ | PAPER_297 | UniverseDiameter SuperluminalHubbleExpansionRatio etaExpGreaterThan1 |
 | ✓ | PAPER_298 | UniverseDiameter GRCurvatureDominance epsilonGRGreaterThan1 |
 | ✓ | PAPER_299 | HydrogenAtom ElectrogravitationalDominanceRatio etaEM 9p65e29 |
-| ⬜ | PAPER_300 | HydrogenAtom LymanAlphaCosmicBridge ToverS pi over 13p8 |
+| ✓ | PAPER_300 | HydrogenAtom LymanAlphaCosmicBridge ToverS pi over 13p8 |
 | ⬜ | PAPER_301 | HydrogenAtom ProtonGRSpectralMinimum epsilonGR 7p04e44 |
 | ⬜ | PAPER_302 | HydrogenPToE Ug4iReactiveResonanceVacuumBridge Gamma 4p704e36 |
 | ⬜ | PAPER_303 | HydrogenPToE LymanAlphaTripleFrequencyResonanceLock freqRatio 1p000 |

@@ -1307,3 +1307,9 @@ observable,g_base_hydrogen_bohr,observable,eta_EM_electrograv_dominance,denomina
 observable,g_base_hydrogen_bohr,paper,PAPER_299,wired
 observable,a_Lorentz_hydrogen,paper,PAPER_299,wired
 observable,eta_EM_electrograv_dominance,paper,PAPER_299,wired
+primitive,C_OBSERVED,observable,omega_Lyman_alpha,c factor
+observable,omega_Lyman_alpha,observable,chi_bridge_lyman_universe,omega*t_H
+observable,T_over_S_cosmic_bridge,paper,PAPER_288,universal T/S = PAPER_288
+observable,omega_Lyman_alpha,paper,PAPER_300,wired
+observable,T_over_S_cosmic_bridge,paper,PAPER_300,wired
+observable,chi_bridge_lyman_universe,paper,PAPER_300,wired

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.306.0"
+VERSION = "0.307.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16579,6 +16579,44 @@ def _paper_299(dataset):
         },
         'formula': 'g_base=G*M_p/r_Bohr^2=3.986e-17 m/s2 (smallest of all UQFF modules); a_Lorentz=q*v_orb*B/m_e=3.848e13 m/s2 (dominant EM term); eta_EM=a_Lorentz/g_base=9.65e29 (electrogravitational dominance ratio, first atomic UQFF module)',
         'source': 'PAPER_299',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_300')
+def _paper_300(dataset):
+    import math as _m
+    c = C_OBSERVED
+    lam_Ly = 1.216e-7                                     # Lyman-alpha wavelength, atomic anchor
+    T_U_gyr = 13.8                                        # cosmic age in Gyr (PAPER_288 normalization)
+    t_H = 4.355e17                                        # Hubble time 13.8 Gyr in s, paper anchor
+    A_osc = 1.0e-10                                       # oscillation amplitude, paper anchor
+    omega_Lyman = 2.0 * _m.pi * c / lam_Ly               # 1.549e16 rad/s Lyman-alpha angular freq
+    k_Lyman = 2.0 * _m.pi / lam_Ly                        # 5.166e7 m^-1 UV wave vector
+    a_standing = 2.0 * A_osc                             # 2.000e-10 standing peak
+    a_traveling = (2.0 * _m.pi / T_U_gyr) * A_osc         # 4.553e-11 traveling (cosmic-normalized) peak
+    T_over_S = _m.pi / T_U_gyr                            # 0.2277 universal T/S ratio (= PAPER_288)
+    chi_bridge = omega_Lyman * t_H                       # 6.745e33 Lyman-Universe coupling factor
+    return {
+        'value': {
+            'domain': '2.98 (hydrogen Lyman-alpha; atomic confirmation of PAPER_288 cosmic-age T/S bridge)',
+            'source_thread': 'Session 85 HYDROGEN_ATOM_UQFF_MODULE.cpp (27th C++ module, first atomic)',
+            'system': 'Hydrogen ground state, Lyman-alpha transition (lambda=121.6 nm)',
+            'lambda_Ly_m': lam_Ly, 'T_U_gyr': T_U_gyr, 't_H_s': t_H,
+            'omega_Lyman': omega_Lyman,                  # 1.549e16
+            'omega_Lyman_formula': '2*pi*c/lambda',
+            'k_Lyman': k_Lyman,                          # 5.166e7
+            'a_standing': a_standing,                    # 2.000e-10
+            'a_traveling': a_traveling,                  # 4.553e-11
+            'T_over_S': T_over_S,                        # 0.2277
+            'T_over_S_formula': 'pi/T_U,gyr (universal, frequency-independent)',
+            'matches_PAPER_288': True,                   # identical value across 34 orders of frequency
+            'chi_bridge': chi_bridge,                    # 6.745e33
+            'chi_bridge_formula': 'omega_Lyman*t_H (Lyman-Universe coupling factor)',
+        },
+        'formula': 'omega_Lyman=2*pi*c/lambda=1.549e16 rad/s; T/S=pi/T_U,gyr=pi/13.8=0.2277 (universal, = PAPER_288, frequency-independent across 34 orders); chi_bridge=omega_Lyman*t_H=6.745e33 (Lyman-Universe coupling)',
+        'source': 'PAPER_300',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

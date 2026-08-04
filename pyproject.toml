@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.306.0"
-description = "UQFF Star-Magic-Program v0.306.0: PAPER_299 wired (CLEAN) - first atomic-scale UQFF module (hydrogen ground state); g_base=G*M_p/r_Bohr^2=3.986e-17 m/s2 (smallest of all modules); electron Lorentz a_Lorentz=q*v_orb*B/m_e=3.848e13 m/s2 dominates; electrogravitational dominance ratio eta_EM=a_Lorentz/g_base=9.65e29 (largest force asymmetry in UQFF, EM over gravity ~30 orders at the Bohr radius). wired_count 313, gate 1855/0. Campaign frontier PAPER_299 of 2255."
+version = "0.307.0"
+description = "UQFF Star-Magic-Program v0.307.0: PAPER_300 wired (CLEAN) - hydrogen Lyman-alpha cosmic bridge; omega_Lyman=2*pi*c/lambda=1.549e16 rad/s; universal traveling/standing ratio T/S=pi/T_U,gyr=pi/13.8=0.2277 identical to PAPER_288 across 34 orders of frequency (frequency-independent, a cosmic-age constant); Lyman-Universe coupling chi_bridge=omega_Lyman*t_H=6.745e33 UV cycles over cosmic age. wired_count 314, gate 1861/0. Campaign frontier PAPER_300 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
