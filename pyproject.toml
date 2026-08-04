@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.304.0"
-description = "UQFF Star-Magic-Program v0.304.0: PAPER_297 wired (CLEAN) - first UQFF superluminal expansion module; v_exp=H0*r_obs=9.984e8 m/s at observable-universe boundary, eta_exp=v_exp/c=3.328>1 (r_obs=3.328 Hubble lengths); H0=70 km/s/Mpc (A_5+SO_5, PAPER_1573); Hubble coupling xi_H=1+H0*t_H=1.988 near-doubles DPM-seeded base gravity over cosmic time; superluminal is coordinate (metric-expansion) velocity, not an SR violation. wired_count 311, gate 1843/0. Campaign frontier PAPER_297 of 2255."
+version = "0.305.0"
+description = "UQFF Star-Magic-Program v0.305.0: PAPER_298 wired (CLEAN) - first UQFF GR-dominant regime; post-Newtonian curvature eps_GR=3GM/(rc^2)=5.056>1 at observable-universe scale, so a_GR=g_base*eps_GR=1.743e-9 m/s2 is the dominant term (GR exceeds DPM-seeded base 5x); Schwarzschild r_S=2GM/c^2=1.483e27 m puts the universe at r_obs/r_S=0.297 (~30% of its own Schwarzschild radius), consistent with critical density. wired_count 312, gate 1849/0. Campaign frontier PAPER_298 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

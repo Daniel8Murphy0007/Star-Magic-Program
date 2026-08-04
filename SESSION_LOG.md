@@ -4297,3 +4297,19 @@ as system; first UQFF module where boundary recession velocity exceeds c.
 
 CLEAN. Gate: 1843/0. Registry 603 rows / 1295 edges / 316 ledgers.
 Campaign frontier: PAPER_297 / 2,255. Next: PAPER_298.
+
+---
+
+## v0.305.0 — 2026-08-04 — PAPER_298 (first UQFF GR-dominant regime, eps_GR>1)
+
+Wired PAPER_298 (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Third/final term of
+the universe-diameter trilogy (296/297/298). First UQFF module where the post-Newtonian
+GR correction exceeds the DPM-seeded base.
+
+- eps_GR = 3*G*M/(r*c^2) = 5.056 > 1 (M=1e54 kg, r_obs=4.4e26 m paper anchors).
+- a_GR = g_base*eps_GR = 1.743e-9 m/s2 (dominant term in 9-term sum, 5x the DPM base).
+- r_S = 2GM/c^2 = 1.483e27 m; r_obs/r_S = 0.297 (~30% of own Schwarzschild radius),
+  consistent with critical density. All verified in Python.
+
+CLEAN. Gate: 1849/0. Registry 606 rows / 1302 edges / 317 ledgers.
+Campaign frontier: PAPER_298 / 2,255. Next: PAPER_299.

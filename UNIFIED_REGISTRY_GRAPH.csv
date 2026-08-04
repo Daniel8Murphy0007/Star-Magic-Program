@@ -1293,3 +1293,10 @@ observable,v_exp_boundary_recession,observable,eta_exp_superluminal_ratio,v_exp/
 observable,v_exp_boundary_recession,paper,PAPER_297,wired
 observable,eta_exp_superluminal_ratio,paper,PAPER_297,wired
 observable,xi_H_hubble_coupling,paper,PAPER_297,wired
+primitive,G_OBSERVED,observable,eps_GR_curvature_param,G factor
+primitive,C_OBSERVED,observable,eps_GR_curvature_param,c^2 denominator
+observable,eps_GR_curvature_param,observable,a_GR_curvature_accel,a_GR=g_base*eps_GR
+observable,eps_GR_curvature_param,observable,r_S_schwarzschild_universe,r_S/r_obs=2*eps/3
+observable,eps_GR_curvature_param,paper,PAPER_298,wired
+observable,a_GR_curvature_accel,paper,PAPER_298,wired
+observable,r_S_schwarzschild_universe,paper,PAPER_298,wired

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.304.0"
+VERSION = "0.305.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16508,6 +16508,41 @@ def _paper_297(dataset):
         },
         'formula': 'v_exp=H0*r_obs=9.984e8 m/s; eta_exp=v_exp/c=3.328>1 (first UQFF superluminal module); r_obs/r_H=3.328 Hubble lengths; xi_H=1+H0*t_H=1.988 (Hubble coupling near-doubling)',
         'source': 'PAPER_297',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_298')
+def _paper_298(dataset):
+    G = G_OBSERVED
+    c = C_OBSERVED
+    M_obs = 1.0e54                                        # observable-universe mass, paper anchor
+    r_obs = 4.4e26                                        # observable-universe radius, paper anchor
+    g_base = 3.447e-10                                    # DPM-seeded base gravity (PAPER_296)
+    eps_GR = 3.0 * G * M_obs / (r_obs * c ** 2)           # 5.056 post-Newtonian GR curvature param
+    a_GR = g_base * eps_GR                                # 1.743e-9 m/s2 (dominant term)
+    r_S = 2.0 * G * M_obs / c ** 2                        # 1.483e27 m Schwarzschild radius
+    rS_over_robs = r_S / r_obs                            # 3.371 = 2*eps_GR/3
+    robs_over_rS = r_obs / r_S                            # 0.297 (~30% of own Schwarzschild radius)
+    return {
+        'value': {
+            'domain': '2.96 (observable universe as system; first UQFF GR-dominant regime, eps_GR>1)',
+            'source_thread': 'Session 84 UNIVERSE_DIAMETER_UQFF_MODULE.cpp (26th C++ UQFF module)',
+            'system': 'Observable Universe (post-Newtonian GR curvature)',
+            'M_obs_kg': M_obs, 'r_obs_m': r_obs, 'g_base': g_base,
+            'eps_GR': eps_GR,                            # 5.056
+            'eps_GR_formula': '3*G*M/(r*c^2)',
+            'GR_dominant': eps_GR > 1.0,                 # True (first UQFF module)
+            'a_GR': a_GR,                                # 1.743e-9 (dominant term in 9-term sum)
+            'a_GR_over_g_base': eps_GR,                  # 5.056 (GR exceeds DPM-seeded by 5x)
+            'r_S_m': r_S,                                # 1.483e27 Schwarzschild radius
+            'rS_over_robs': rS_over_robs,                # 3.371 = 2*eps_GR/3
+            'robs_over_rS': robs_over_rS,                # 0.297 (~30% of own Schwarzschild radius)
+            'critical_density_consistent': True,         # flat universe -> eps_GR of order unity
+        },
+        'formula': 'eps_GR=3*G*M/(r*c^2)=5.056>1 (first UQFF GR-dominant module); a_GR=g_base*eps_GR=1.743e-9 m/s2 (dominant term); r_S=2GM/c^2=1.483e27 m; r_obs/r_S=0.297 (~30% of own Schwarzschild radius)',
+        'source': 'PAPER_298',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

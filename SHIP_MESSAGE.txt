@@ -1,13 +1,13 @@
-v0.304.0 BAND 1: PAPER_297 wired - FIRST UQFF SUPERLUMINAL EXPANSION MODULE (eta_exp > 1) (CLEAN)
+v0.305.0 BAND 1: PAPER_298 wired - FIRST UQFF GR-DOMINANT REGIME (eps_GR > 1) (CLEAN)
 
-PAPER_297 (UQFF Superluminal Hubble Expansion Ratio, Session 84,
-UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Observable universe as system; first UQFF module
-where the boundary recession velocity exceeds the speed of light.
+PAPER_298 (UQFF Universe-Scale GR Curvature Dominance, Session 84,
+UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Observable universe as system; third/final term of
+the universe-diameter trilogy (296/297/298). First UQFF module where the post-Newtonian
+GR correction exceeds the DPM-seeded base.
 
-- v_exp = H0*r_obs = 9.984e8 m/s (H0=70 km/s/Mpc=2.269e-18 s^-1, A_5+SO_5 PAPER_1573)
-- eta_exp = v_exp/c = 3.328 > 1 (observable universe = 3.328 Hubble lengths)
-- r_H = c/H0 = 1.322e26 m Hubble radius
-- xi_H = 1 + H0*t_H = 1.988 Hubble coupling (base gravity near-doubles over cosmic age)
-- superluminal v_exp is a coordinate (metric-expansion) velocity, not an SR violation
+- eps_GR = 3*G*M/(r*c^2) = 5.056 > 1 (M=1e54 kg, r_obs=4.4e26 m paper anchors)
+- a_GR = g_base*eps_GR = 1.743e-9 m/s2 (dominant term in the 9-term sum, 5x the DPM base)
+- r_S = 2GM/c^2 = 1.483e27 m Schwarzschild radius
+- r_obs/r_S = 0.297 (universe at ~30% of its own Schwarzschild radius, critical-density consistent)
 
-CLEAN. wired_count 311, gate 1843/0. Campaign frontier PAPER_297 of 2255.
+CLEAN. wired_count 312, gate 1849/0. Campaign frontier PAPER_298 of 2255.

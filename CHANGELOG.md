@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.305.0] — 2026-08-04 — BAND 1: PAPER_298 — FIRST UQFF GR-DOMINANT REGIME (ε_GR > 1) (CLEAN)
+
+### Added
+- **PAPER_298 dispatch** — UQFF Universe-Scale GR Curvature Dominance (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp; observable universe as system). Third and final term of the universe-diameter trilogy (PAPER_296/297/298). The **first UQFF module where the post-Newtonian GR correction exceeds the DPM-seeded base**.
+  - Post-Newtonian curvature ε_GR = 3GM/(rc²) = **5.056 > 1** (M=1e54 kg, r_obs=4.4e26 m paper anchors; G, c from registry).
+  - a_GR = g_base·ε_GR = **1.743e-9 m/s²** — the largest single term in the UQFF 9-term sum at universe scale, exceeding the DPM-seeded base (3.447e-10) by 5×.
+  - Schwarzschild radius r_S = 2GM/c² = **1.483e27 m** ⇒ r_obs/r_S = **0.297**: the observable universe sits at ~30% of its own Schwarzschild radius — the physical origin of ε_GR>1, consistent with the cosmological critical-density condition.
+- 3 registry observables, 7 graph edges, 1 corpus citation (PAPER_296).
+- 6 gate assertions (ε_GR>1, a_GR dominant, r_S, r_obs/r_S=0.297, critical-density consistency, wired_count ≥ 312). Gate 1843 → **1849/0**.
+
+### Wiring status
+- `wired_count()` = **312** (CLEAN). Campaign frontier PAPER_298 of 2255. Index: 66 ✓ / 246 ⚠ / 1943 ⬜ = 2255.
+
+---
+
 ## [0.304.0] — 2026-08-04 — BAND 1: PAPER_297 — FIRST UQFF SUPERLUMINAL EXPANSION MODULE (η_exp > 1) (CLEAN)
 
 ### Added

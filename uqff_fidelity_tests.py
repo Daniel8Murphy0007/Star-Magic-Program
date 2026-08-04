@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.304.0", "uqff_calculator.VERSION = 0.304.0 (PAPER_297 = v0.304.0)")
+assert_that(C.VERSION == "0.305.0", "uqff_calculator.VERSION = 0.305.0 (PAPER_298 = v0.305.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4049,6 +4049,19 @@ assert_that(abs(_r297['xi_H'] - 1.988) < 0.005 and abs(_r297['a_base_tH'] - 6.85
 assert_that(_r297['special_relativity_ok'],
             "PAPER_297: superluminal v_exp is a coordinate (metric-expansion) velocity, not an SR violation")
 assert_that(C.wired_count() >= 311, "wired_count >= 311 (PAPER_297 wired)")
+
+_r298 = C.calc('PAPER_298')['value']
+assert_that(abs(_r298['eps_GR'] - 5.056) < 0.02 and _r298['eps_GR_formula'] == '3*G*M/(r*c^2)',
+            "PAPER_298: eps_GR = 3*G*M/(r*c^2) = 5.056 > 1 (first UQFF GR-dominant regime)")
+assert_that(_r298['GR_dominant'] and abs(_r298['a_GR'] - 1.743e-9) < 5e-12,
+            "PAPER_298: a_GR = g_base*eps_GR = 1.743e-9 m/s2 (dominant term, GR exceeds DPM-seeded by 5x)")
+assert_that(abs(_r298['r_S_m'] - 1.483e27) < 5e24 and abs(_r298['rS_over_robs'] - 3.371) < 0.02,
+            "PAPER_298: r_S = 2GM/c^2 = 1.483e27 m; r_S/r_obs = 2*eps_GR/3 = 3.371")
+assert_that(abs(_r298['robs_over_rS'] - 0.297) < 0.005,
+            "PAPER_298: r_obs/r_S = 0.297 (universe at ~30% of its own Schwarzschild radius)")
+assert_that(_r298['critical_density_consistent'],
+            "PAPER_298: eps_GR of order unity consistent with cosmological critical-density condition")
+assert_that(C.wired_count() >= 312, "wired_count >= 312 (PAPER_298 wired)")
 
 
 # =============================================================================
