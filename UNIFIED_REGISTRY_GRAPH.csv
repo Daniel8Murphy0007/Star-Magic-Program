@@ -1457,3 +1457,8 @@ primitive,RHO_SCM,observable,kappa_aether_freq_cr34b,E_ISM (E_neb/E_ISM=1/F_TRZ)
 primitive,C_OBSERVED,observable,kappa_aether_freq_cr34b,c in denominator
 observable,kappa_aether_freq_cr34b,paper,PAPER_323,wired
 observable,F_AETHER_period_cr34b,paper,PAPER_323,wired
+observable,a_DPM_saturn,observable,a_vac_diff_saturn,a_vac_diff scales with a_DPM
+observable,a_DPM_saturn,observable,a_super_saturn,a_super=A_sc*a_DPM
+observable,a_vac_diff_saturn,paper,PAPER_324,wired
+observable,a_DPM_saturn,paper,PAPER_324,wired
+observable,a_super_saturn,paper,PAPER_324,open_ruling Q-248 tie

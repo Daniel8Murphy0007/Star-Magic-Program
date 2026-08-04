@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.332.0] — 2026-08-04 — BAND 1: PAPER_324 — CR34b SATURN: FIRST PLANETARY BODY IN DUAL-CHANNEL FRAMEWORK (CLEAN)
+
+### Added
+- **PAPER_324 dispatch** — CR34b Saturn, the **first planetary body** computed in the UQFF dual-channel (compressed + resonance) framework (Session 93, CompressedResonanceUQFF34bModule.cpp, system 22). Saturn fills the 54-order V_sys gap between atomic (4.189e-31 m³) and nebular scales.
+  - F_DPM = I·A_vort·ω_diff = **6.284e31 N**; a_DPM = F_DPM·f_DPM·E_vac/(c·V_sys) = **1.62e-24 m/s²** (seed).
+  - **a_vac_diff = E0·f_vac_diff·V_sys·a_DPM/ħ = 1.29e-2 m/s²** — the **dominant** compressed-channel term (92%), establishing vacuum diffusion as the primary UQFF driver at planetary scales.
+  - a_super = A_sc·a_DPM = **1.13e-3 m/s²** (8% of compressed). *Note:* A_sc uses f_super=1.411e16 (the same value flagged under **Q-248**; the canonical 1.411e15 would give A_sc/10). The headline a_vac_diff result is independent of f_super.
+  - Saturn's f_DPM = 1e12 (THz boundary) is shared with the Crab Nebula and NGC 6302 — the same THz-regime DPM governs planetary magnetospheres and high-energy nebulae.
+- 3 registry observables, 5 graph edges, 3 corpus citations (PAPER_294/316/323).
+- 6 gate assertions (a_vac_diff dominant, 92% fraction, F_DPM/a_DPM, a_super/Q-248, THz regime, wired_count ≥ 338). Gate 1999 → **2005/0**.
+
+### Wiring status
+- `wired_count()` = **338** (CLEAN). Campaign frontier PAPER_324 of 2255. Index: 90 ✓ / 248 ⚠ / 1917 ⬜ = 2255.
+
+---
+
 ## [0.331.0] — 2026-08-04 — BAND 1: PAPER_323 — CR34b VACUUM AETHER FREQUENCY MODE (11th UQFF TERM) (CLEAN)
 
 ### Added

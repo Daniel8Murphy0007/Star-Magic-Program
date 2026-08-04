@@ -4719,3 +4719,20 @@ Wired PAPER_323 (Session 93, CompressedResonanceUQFF34bModule.cpp, 35th C++ modu
 
 CLEAN. Gate: 1999/0. Registry 677 rows / 1459 edges / 367 ledgers.
 Campaign frontier: PAPER_323 / 2,255. Next: PAPER_324.
+
+---
+
+## v0.332.0 — 2026-08-04 — PAPER_324 (CR34b Saturn, first planetary body in dual-channel framework)
+
+Wired PAPER_324 (Session 93, CompressedResonanceUQFF34bModule.cpp, system 22). First planetary
+body in the UQFF dual-channel framework. Fills the 54-order atomic-to-nebular V_sys gap.
+
+- F_DPM = I*A_vort*omega_diff = 6.284e31 N; a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 1.62e-24 (seed).
+- a_vac_diff = E0*f_vac_diff*V_sys*a_DPM/hbar = 1.29e-2 m/s2 (dominant, 92% of compressed;
+  vacuum diffusion primary at planetary scale).
+- a_super = A_sc*a_DPM = 1.13e-3 (8%); A_sc uses f_super=1.411e16 (Q-248 family). Headline
+  a_vac_diff independent of f_super. All verified in Python.
+- f_DPM=1e12 shared with Crab, NGC6302 (THz-regime DPM).
+
+CLEAN. Gate: 2005/0. Registry 680 rows / 1464 edges / 370 ledgers.
+Campaign frontier: PAPER_324 / 2,255. Next: PAPER_325.

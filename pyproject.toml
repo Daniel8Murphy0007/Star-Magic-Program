@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.331.0"
-description = "UQFF Star-Magic-Program v0.331.0: PAPER_323 wired (CLEAN) - CR34b vacuum aether frequency mode, the 11th UQFF accelerative term; coupling kappa_aether_freq=F_AETHER*E_neb/(E_ISM*c)=5.253e-43 (smallest UQFF coupling; E_neb/E_ISM=rho_UA/rho_SCm=1/F_TRZ=10); F_AETHER=1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble oscillation). Completes the UQFF aether doublet (resonance + frequency). wired_count 337, gate 1999/0. Frontier PAPER_323 of 2255."
+version = "0.332.0"
+description = "UQFF Star-Magic-Program v0.332.0: PAPER_324 wired (CLEAN) - CR34b Saturn, the first planetary body in the UQFF dual-channel framework; vacuum diffusion a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=1.29e-2 m/s2 dominates the compressed channel (92%), establishing vacuum diffusion as the primary UQFF driver at planetary scales; a_DPM=1.62e-24 seed, a_super=1.13e-3 (8%). Saturn fills the 54-order atomic-to-nebular V_sys gap. wired_count 338, gate 2005/0. Frontier PAPER_324 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

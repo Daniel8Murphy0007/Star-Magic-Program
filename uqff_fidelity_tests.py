@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.331.0", "uqff_calculator.VERSION = 0.331.0 (PAPER_323 = v0.331.0)")
+assert_that(C.VERSION == "0.332.0", "uqff_calculator.VERSION = 0.332.0 (PAPER_324 = v0.332.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4389,6 +4389,19 @@ assert_that(abs(_r323['a_aether_freq_sombrero'] - 4.20e-77) / 4.20e-77 < 0.01,
 assert_that('resonance mode' in _r323['aether_doublet'] and 'frequency mode' in _r323['aether_doublet'],
             "PAPER_323: UQFF aether doublet = a_aether_res (resonance) + a_aether_freq (frequency) co-sum")
 assert_that(C.wired_count() >= 337, "wired_count >= 337 (PAPER_323 wired)")
+
+_r324 = C.calc('PAPER_324')['value']
+assert_that(abs(_r324['a_vac_diff'] - 1.29e-2) / 1.29e-2 < 0.01 and _r324['a_vac_diff_formula'] == 'E0*f_vac_diff*V_sys*a_DPM/hbar',
+            "PAPER_324: a_vac_diff = E0*f_vac_diff*V_sys*a_DPM/hbar = 1.29e-2 m/s2 (dominant compressed term, planetary scale)")
+assert_that(_r324['a_vac_diff_dominant'] and abs(_r324['a_vac_diff_frac'] - 0.92) < 0.02,
+            "PAPER_324: a_vac_diff dominant = 92% of compressed channel (vacuum diffusion primary at planetary scale)")
+assert_that(abs(_r324['a_DPM'] - 1.62e-24) / 1.62e-24 < 0.01 and abs(_r324['F_DPM'] - 6.284e31) / 6.284e31 < 0.005,
+            "PAPER_324: F_DPM = I*A_vort*omega_diff = 6.284e31 N; a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 1.62e-24")
+assert_that(abs(_r324['a_super'] - 1.13e-3) / 1.13e-3 < 0.01 and 'Q-248' in _r324['a_super_note'],
+            "PAPER_324: a_super = A_sc*a_DPM = 1.13e-3 (8% of compressed; A_sc uses f_super=1.411e16, Q-248 family)")
+assert_that('f_DPM=1e12' in _r324['THz_regime_shared'],
+            "PAPER_324: Saturn f_DPM=1e12 shared with Crab/NGC6302 (THz-regime DPM, first planetary body)")
+assert_that(C.wired_count() >= 338, "wired_count >= 338 (PAPER_324 wired)")
 
 
 # =============================================================================

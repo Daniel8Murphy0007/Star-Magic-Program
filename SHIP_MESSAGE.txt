@@ -1,13 +1,13 @@
-v0.331.0 BAND 1: PAPER_323 wired - CR34b VACUUM AETHER FREQUENCY MODE (11th UQFF TERM) (CLEAN)
+v0.332.0 BAND 1: PAPER_324 wired - CR34b SATURN: FIRST PLANETARY BODY IN DUAL-CHANNEL FRAMEWORK (CLEAN)
 
-PAPER_323 (CR34b Vacuum Aether Frequency Mode, Session 93,
-CompressedResonanceUQFF34bModule.cpp, 35th C++ module). The 11th UQFF accelerative term
-(a_aether_freq), driven by the vacuum aether frequency constant F_AETHER = 1.576e-35 Hz.
+PAPER_324 (CR34b Saturn, Session 93, CompressedResonanceUQFF34bModule.cpp, system 22).
+First planetary body computed in the UQFF dual-channel (compressed + resonance) framework.
+Fills the 54-order V_sys gap between atomic and nebular scales.
 
-- kappa_aether_freq = F_AETHER*E_neb/(E_ISM*c) = 5.253e-43 (smallest UQFF coupling; 7 orders below
-  prior min). E_neb/E_ISM = rho_UA/rho_SCm = 1/F_TRZ = 10 (composed from registry).
-- F_AETHER = 1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble oscillation)
-- a_aether_freq = kappa_aether_freq * a_DPM (4.20e-77 for Sombrero); completes the UQFF aether doublet
-  (a_aether_res resonance + a_aether_freq frequency co-sum)
+- F_DPM = I*A_vort*omega_diff = 6.284e31 N; a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 1.62e-24 m/s2 (seed)
+- a_vac_diff = E0*f_vac_diff*V_sys*a_DPM/hbar = 1.29e-2 m/s2 (dominant, 92% of compressed channel;
+  vacuum diffusion primary at planetary scale)
+- a_super = A_sc*a_DPM = 1.13e-3 (8%); A_sc uses f_super=1.411e16 (Q-248 family; headline independent)
+- f_DPM=1e12 (THz boundary) shared with Crab, NGC6302
 
-CLEAN. wired_count 337, gate 1999/0. Campaign frontier PAPER_323 of 2255.
+CLEAN. wired_count 338, gate 2005/0. Campaign frontier PAPER_324 of 2255.

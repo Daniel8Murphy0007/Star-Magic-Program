@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.331.0"
+VERSION = "0.332.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17476,6 +17476,49 @@ def _paper_323(dataset):
         },
         'formula': 'a_aether_freq = kappa_aether_freq*a_DPM; kappa_aether_freq=F_AETHER*E_neb/(E_ISM*c)=5.253e-43 (smallest UQFF coupling, E_neb/E_ISM=1/F_TRZ=10); F_AETHER=1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble); 11th UQFF accelerative term (aether doublet)',
         'source': 'PAPER_323',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_324')
+def _paper_324(dataset):
+    c = C_OBSERVED
+    hbar = HBAR_UQFF_S629
+    E_vac = RHO_UA                                        # nebular vacuum energy density
+    E0 = (1.0 - F_TRZ) * RHO_UA                           # 6.381e-36 vacuum differential energy
+    f_vac_diff = 0.143                                    # vacuum differential beat freq (PAPER_294)
+    I = 1.0e19                                            # magnetospheric current proxy (A), anchor
+    A_vort = 3.142e15                                     # polar vortex area (m^2), anchor
+    w_diff = 2.0e-3                                        # DPM frequency spread (rad/s), anchor
+    f_DPM = 1.0e12                                        # THz-boundary DPM freq (Hz), anchor
+    V_sys = 9.184e23                                      # Saturn equatorial volume (m^3), anchor
+    f_super = 1.411e16                                    # Cooper freq for A_sc (Q-248 family; paper uses 10x canonical 1.411e15)
+    F_DPM = I * A_vort * w_diff                           # 6.284e31 N
+    a_DPM = F_DPM * f_DPM * E_vac / (c * V_sys)           # 1.62e-24 seed
+    a_vac_diff = E0 * f_vac_diff * V_sys * a_DPM / hbar   # 1.29e-2 dominant compressed term
+    A_sc = hbar * f_super * f_DPM / (E_vac * c)           # 6.99e20 (Q-248 f_super)
+    a_super = A_sc * a_DPM                                # 1.13e-3 (8% of compressed)
+    frac_vac_diff = a_vac_diff / (a_vac_diff + a_super)   # ~0.92
+    return {
+        'value': {
+            'domain': '3.22 (CR34b Saturn; first planetary body in UQFF dual-channel framework)',
+            'source_thread': 'Session 93 CompressedResonanceUQFF34bModule.cpp (system 22)',
+            'system': 'Saturn (planetary, V_sys=9.184e23 m^3), f_DPM=1e12 THz-boundary',
+            'V_sys': V_sys, 'f_DPM_Hz': f_DPM,
+            'F_DPM': F_DPM,                             # 6.284e31
+            'a_DPM': a_DPM,                             # 1.62e-24
+            'a_vac_diff': a_vac_diff,                   # 1.29e-2 HEADLINE dominant
+            'a_vac_diff_formula': 'E0*f_vac_diff*V_sys*a_DPM/hbar',
+            'a_vac_diff_dominant': frac_vac_diff > 0.5, # vacuum diffusion primary at planetary scale
+            'a_vac_diff_frac': frac_vac_diff,          # 0.92 (92% of compressed channel)
+            'a_super': a_super,                        # 1.13e-3 (8%)
+            'a_super_note': 'a_super uses A_sc with f_super=1.411e16 (Q-248 family; canonical 1.411e15 -> A_sc/10)',
+            'saturn_gap_bridge': '54 orders between atomic (4.189e-31) and nebular V_sys - now filled',
+            'THz_regime_shared': 'f_DPM=1e12 shared with Crab, NGC6302 (THz-regime DPM governs planetary magnetospheres and nebulae)',
+        },
+        'formula': 'a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=1.29e-2 m/s2 (dominant, 92% of compressed channel; vacuum diffusion primary at planetary scale); a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=1.62e-24; a_super=A_sc*a_DPM=1.13e-3 (8%, A_sc uses f_super=1.411e16, Q-248)',
+        'source': 'PAPER_324',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
