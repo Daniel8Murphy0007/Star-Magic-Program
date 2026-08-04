@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.290.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.290.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.291.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.291.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1770%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-297-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1775%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-298-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.290.0 wiring campaign live**
+**UQFF systematic rebuild — v0.291.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.290.0)
+## What is currently shipped (v0.291.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 297 distinct papers** (`wired_count()`=297 = 283 base-numbered + 14 suffixed) — 53 ✓ CLEAN · 244 ⚠ OPEN_RULING file-rows · 245 rulings queued. Campaign frontier: **PAPER_283** (Saturn solar-tidal Hubble coupling g_ST_HE=g_Sun_tidal·(1+H0·t); ξ_HT=1.3222 32.2% boost, universal — first multiplicative tidal-Hubble coupling), wired v0.290.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 298 distinct papers** (`wired_count()`=298 = 284 base-numbered + 14 suffixed) — 54 ✓ CLEAN · 244 ⚠ OPEN_RULING file-rows · 245 rulings queued. Campaign frontier: **PAPER_284** (M16 Eagle Nebula dual mass co-action product Φ_dm=(1+SFR_rate·t)(1−E_rad) — first UQFF multiplicative gain-saturation product), wired v0.291.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -664,7 +664,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.287.0 | Doc correction (stale version strings in README title/heading + CITATION that shipped in v0.286.0) | 294 |
 | v0.288.0 | Band 1: PAPER_281 (Saturn ring tidal resonance) | 295 |
 | v0.289.0 | Band 1: PAPER_282 (Saturn atmospheric wind) | 296 |
-| **v0.290.0** ← current | Band 1: PAPER_283 (Saturn solar-tidal Hubble coupling) | 297 |
+| v0.290.0 | Band 1: PAPER_283 (Saturn solar-tidal Hubble coupling) | 297 |
+| **v0.291.0** ← current | Band 1: PAPER_284 (M16 Eagle Nebula dual mass co-action) | 298 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

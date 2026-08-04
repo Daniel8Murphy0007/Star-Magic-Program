@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_283** (Saturn solar-tidal Hubble coupling, wired v0.290.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–283 = **297 wired**.
-- **Distinct wired papers: 297** = `wired_count()` = `len(DISPATCH)`. Composed of **283** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **53 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1958 ⬜** not-touched (53 + 244 + 1958 = 2255 ✓). Wired file-rows (53 + 244 = **297**) equal `wired_count()`.
+- **Campaign frontier: PAPER_284** (M16 Eagle Nebula dual mass co-action, wired v0.291.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–284 = **298 wired**.
+- **Distinct wired papers: 298** = `wired_count()` = `len(DISPATCH)`. Composed of **284** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **54 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1957 ⬜** not-touched (54 + 244 + 1957 = 2255 ✓). Wired file-rows (54 + 244 = **298**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1543,7 +1543,7 @@
 | ✓ | PAPER_281 | Saturn Ring UQFF TidalGravityResonance omega ring kep T ring | CLEAN — first planetary ring module; omega_ring_kep=sqrt(GM/r_ring^3)=1.481e-4, T_ring=11.78 h; g_ring_tidal=3.49e-8; proximity=2.0; v0.288.0 |
 | ✓ | PAPER_282 | Saturn UQFF AtmosphericWind KineticPressure a wind eta wind | CLEAN — first gas-giant wind term; a_wind=(v_wind/c)^2*g_base=2.904e-11; eta_wind=1.668e-6; universal formula; v0.289.0 |
 | ✓ | PAPER_283 | Saturn UQFF SolarTidalHubbleExpansionCoupling g ST HE hubble tidal factor | CLEAN — first multiplicative tidal-Hubble coupling; xi_HT=1+H0*t_age=1.3222 (32.2% boost, universal); delta_g=2.09e-5; v0.290.0 |
-| ⬜ | PAPER_284 | M16 UQFF DualMassCoActionProduct Phi dm SFR Erosion |
+| ✓ | PAPER_284 | M16 UQFF DualMassCoActionProduct Phi dm SFR Erosion | CLEAN — Phi_dm=(1+SFR_rate*t)*(1-E_rad); mult 3151.9 vs add 4165.6; gap -1013.3 (24.3% less); first multiplicative gain-saturation product; v0.291.0 |
 | ⬜ | PAPER_285 | M16 UQFF ErosionSaturationHalfTime t half DeltaGMax |
 | ⬜ | PAPER_286 | M16 UQFF NebularFriedmannRedshift kappa neb z0p0015 |
 | ⬜ | PAPER_287 | ResonanceSC UQFF DPMTHz PlasmoticVacuumCascadeAmplification |

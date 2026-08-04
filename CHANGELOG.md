@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.291.0] — 2026-08-03 — BAND 1: PAPER_284 — M16 EAGLE NEBULA DUAL MASS CO-ACTION PRODUCT (CLEAN)
+
+### Added
+- **PAPER_284 dispatch** — M16 Eagle Nebula (IC 4703, "Pillars of Creation") Dual Mass Co-Action Product Φ_dm (Session 80, M16_UQFF_MODULE.cpp — 22nd C++ module). The **first UQFF module to apply an additive-gain and a saturation-subtractive product on the same gravity term** — multiplicatively, not additively.
+  - Φ_dm(t) = (1 + SFR_rate·t)·(1 − E_rad), coupling star-formation mass accretion and photoevaporation erosion. E_rad = E0·(1 − e^(−t/τ)).
+  - At t = 5 Myr: M_sf = 4164.8, E_rad = 0.2433 → Φ_mult = 3151.9 vs additive Φ_add = 4165.6. Gap = −(M_sf·E_rad) = −1013.3 (a **24.3% reduction**, always-negative cross-term) — erosion is drawn from the *same growing reservoir* (physically correct for pillar-geometry star formation).
+  - g_dyn = g_base·Φ_dm = 4.583e-9 m/s².
+- Gate +5 assertions (→ 1775, 0 failures). wired_count 297 → **298**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_284 → ✓.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.290.0] — 2026-08-03 — BAND 1: PAPER_283 — SATURN UQFF SOLAR-TIDAL HUBBLE EXPANSION COUPLING (CLEAN)
 
 ### Added

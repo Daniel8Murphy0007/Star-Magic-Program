@@ -4030,3 +4030,23 @@ Frontier PAPER_282 -> PAPER_283. Version PAPER_283 = v0.290.0.
 
 Gate: 1770/0. Registry 582 rows / 1261 edges / 297 ledgers. Campaign frontier:
 PAPER_283 / 2,255. Next: PAPER_284.
+
+---
+
+## 2026-08-03 — v0.291.0 — BAND 1: PAPER_284 — M16 EAGLE NEBULA DUAL MASS CO-ACTION PRODUCT (CLEAN)
+
+PAPER_284 (M16 Eagle Nebula Dual Mass Co-Action Product Phi_dm, Session 80,
+M16_UQFF_MODULE.cpp 22nd C++ module) wired as one dispatch (CLEAN). First UQFF
+module applying additive-gain AND saturation-subtractive product on same gravity
+term via MULTIPLICATIVE coupling. Phi_dm(t)=(1+SFR_rate*t)*(1-E_rad); at t=5 Myr
+M_sf=4164.8, E_rad=E0*(1-exp(-t/tau))=0.3*0.811=0.2433, Phi_mult=3151.9 vs
+Phi_add=4165.6; gap=-(M_sf*E_rad)=-1013.3 (24.3% less, always-negative cross-term
+- erosion from SAME growing reservoir, correct for M16 Pillars pillar-geometry);
+g_dyn=g_base*Phi_dm=4.583e-9.
+
+wired_count 297 -> 298. Gate +5 (1775/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_284 -> checkmark (54 / 244 / 1957 = 2255; wired 298 = count).
+Frontier PAPER_283 -> PAPER_284. Version PAPER_284 = v0.291.0.
+
+Gate: 1775/0. Registry 583 rows / 1262 edges / 298 ledgers. Campaign frontier:
+PAPER_284 / 2,255. Next: PAPER_285.

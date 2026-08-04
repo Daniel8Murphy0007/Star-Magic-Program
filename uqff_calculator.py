@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.290.0"
+VERSION = "0.291.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -15975,6 +15975,45 @@ def _paper_283(dataset):
         },
         'formula': 'g_ST_HE(t)=G*M_Sun/r_orbit^2*(1+H0*t); xi_HT=1+H0*t_age=1.3222 (32.2% boost, universal); delta_g=g_Sun_tidal*H0*t_age=2.09e-5',
         'source': 'PAPER_283',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_284')
+def _paper_284(dataset):
+    import math
+    SFR_rate = 2.639e-11
+    t = 5e6 * 3.156e7                                    # 5 Myr
+    M_sf = SFR_rate * t                                  # 4164.8
+    E0 = 0.3
+    tau_erode = 9.468e13                                 # 3 Myr e-folding
+    E_rad = E0 * (1.0 - math.exp(-t / tau_erode))        # 0.2433
+    phi_dm_mult = (1.0 + M_sf) * (1.0 - E_rad)           # 3151.9
+    phi_dm_add = (1.0 + M_sf) - E_rad                    # 4165.6
+    gap = phi_dm_mult - phi_dm_add                       # -1013.3 (= -M_sf*E_rad)
+    g_base = 1.454e-12
+    g_dyn = g_base * phi_dm_mult                         # 4.583e-9
+    return {
+        'value': {
+            'domain': '2.82 (M16 Eagle Nebula dual mass co-action product Phi_dm)',
+            'source_thread': 'Session 80 M16_UQFF_MODULE.cpp UQFF 2.0 (22nd C++ module)',
+            'system': 'M16 Eagle Nebula (IC 4703, Pillars of Creation)',
+            'SFR_rate': SFR_rate, 'E0': E0, 'tau_erode_s': tau_erode,
+            't_s': t, 't_Myr': 5.0,
+            'M_sf': M_sf,                                # 4164.8
+            'E_rad': E_rad,                              # 0.2433
+            'phi_dm_mult': phi_dm_mult,                  # 3151.9
+            'phi_dm_add': phi_dm_add,                    # 4165.6
+            'phi_dm_formula': '(1 + SFR_rate*t) * (1 - E_rad)',
+            'gap_mult_add': gap,                         # -1013.3
+            'gap_pct': round(-gap / phi_dm_add * 100.0, 1),  # 24.3
+            'gap_is_negative_cross_term': True,          # -(M_sf*E_rad), erosion from growing reservoir
+            'g_base': g_base, 'g_dyn': g_dyn,            # 4.583e-9
+            'first_multiplicative_gain_saturation_product': True,
+        },
+        'formula': 'Phi_dm(t)=(1+SFR_rate*t)*(1-E_rad); M_sf=4164.8, E_rad=0.2433 -> Phi_mult=3151.9 vs Phi_add=4165.6; gap=-(M_sf*E_rad)=-1013.3 (24.3% less); g_dyn=g_base*Phi_dm=4.583e-9',
+        'source': 'PAPER_284',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

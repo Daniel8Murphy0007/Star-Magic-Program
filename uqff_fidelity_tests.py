@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.290.0", "uqff_calculator.VERSION = 0.290.0 (PAPER_283 = v0.290.0)")
+assert_that(C.VERSION == "0.291.0", "uqff_calculator.VERSION = 0.291.0 (PAPER_284 = v0.291.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3889,6 +3889,17 @@ assert_that(abs(_r283['delta_g'] - 2.09e-5) < 1e-7 and _r283['g_ST_HE_formula'] 
 assert_that(_r283['multiplicative_not_additive'] and _r283['first_tidal_hubble_coupling'] and abs(_r283['delta_g_gas_giant_table']['Jupiter'] - 7.09e-5) < 1e-7,
             "PAPER_283: first multiplicative tidal-Hubble coupling (planetary-stellar-cosmological); Jupiter delta_g 7.09e-5")
 assert_that(C.wired_count() >= 297, "wired_count >= 297 (PAPER_283 wired)")
+
+_r284 = C.calc('PAPER_284')['value']
+assert_that(abs(_r284['E_rad'] - 0.2433) < 1e-3 and _r284['phi_dm_formula'] == '(1 + SFR_rate*t) * (1 - E_rad)',
+            "PAPER_284: E_rad = E0*(1-exp(-t/tau)) = 0.3*0.811 = 0.2433 at t=5 Myr")
+assert_that(abs(_r284['phi_dm_mult'] - 3151.9) < 1.0 and abs(_r284['phi_dm_add'] - 4165.6) < 1.0,
+            "PAPER_284: Phi_dm mult=(1+M_sf)*(1-E_rad)=3151.9 vs additive=4165.6")
+assert_that(abs(_r284['gap_mult_add'] + 1013.3) < 1.0 and _r284['gap_pct'] == 24.3 and _r284['gap_is_negative_cross_term'],
+            "PAPER_284: gap = -(M_sf*E_rad) = -1013.3 (24.3% less than additive); negative cross-term")
+assert_that(abs(_r284['g_dyn'] - 4.583e-9) < 1e-11 and _r284['first_multiplicative_gain_saturation_product'],
+            "PAPER_284: g_dyn = g_base*Phi_dm = 4.583e-9; first UQFF multiplicative gain-saturation product")
+assert_that(C.wired_count() >= 298, "wired_count >= 298 (PAPER_284 wired)")
 
 
 # =============================================================================

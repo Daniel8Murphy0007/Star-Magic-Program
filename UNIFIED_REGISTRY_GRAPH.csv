@@ -1260,3 +1260,4 @@ observable,bubble_nebula_positive_shell_expansion,paper,PAPER_221c,Bubble Nebula
 observable,saturn_ring_uqff_tidal_gravity_resonance_omega_ring_kep,observable,saturn_uqff_solar_tidal_perturbation_ratio_tau_sun,Saturn module companion (280/281); ring tidal < solar tidal
 observable,saturn_uqff_atmospheric_wind_kinetic_pressure_a_wind,primitive,C_OBSERVED,a_wind=(v_wind/c)^2*g_base; first gas-giant wind term; Saturn amplitude hierarchy
 observable,saturn_uqff_solar_tidal_hubble_expansion_coupling_g_st_he,observable,saturn_uqff_solar_tidal_perturbation_ratio_tau_sun,g_ST_HE=g_Sun_tidal*(1+H0*t); Hubble modulation of PAPER_280 solar tidal
+observable,m16_eagle_nebula_dual_mass_coaction_product_phi_dm,primitive,G_OBSERVED,Phi_dm=(1+SFR_rate*t)*(1-E_rad); first multiplicative gain-saturation product

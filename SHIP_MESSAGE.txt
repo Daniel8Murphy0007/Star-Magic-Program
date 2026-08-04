@@ -1,18 +1,17 @@
-v0.290.0 BAND 1: PAPER_283 wired - SATURN UQFF SOLAR-TIDAL HUBBLE EXPANSION COUPLING (CLEAN)
+v0.291.0 BAND 1: PAPER_284 wired - M16 EAGLE NEBULA DUAL MASS CO-ACTION PRODUCT (CLEAN)
 
-PAPER_283 (Saturn UQFF Solar Tidal Hubble Expansion Coupling g_ST_HE, S79,
-SATURN_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First UQFF term where a local
-inter-body tidal field couples MULTIPLICATIVELY to cosmological Hubble expansion
-(planetary-stellar-cosmological three-body channel).
+PAPER_284 (M16 Eagle Nebula Dual Mass Co-Action Product Phi_dm, S80,
+M16_UQFF_MODULE.cpp 22nd C++ module) wired as one dispatch (CLEAN). First UQFF
+module applying additive-gain AND saturation-subtractive product on same gravity
+term via MULTIPLICATIVE coupling (not additive).
 
-g_ST_HE(t)=G*M_Sun/r_orbit^2*(1+H0*t); H0=70 km/s/Mpc=2.268e-18 s^-1 (canonical
-A_5+SO_5); t_age=4.5 Gyr; xi_HT=1+H0*t_age=1.3222 (32.2% boost, universal - age+H0
-only); g_Sun_tidal_0=6.49e-5 -> g_ST_HE=8.58e-5; delta_g=2.09e-5 m/s^2. Distinct
-from additive self-gravity Hubble term g_exp. Gas-giant delta_g: Jupiter 7.09e-5,
-Saturn 2.09e-5, Uranus 5.19e-6, Neptune 2.11e-6.
+Phi_dm(t)=(1+SFR_rate*t)*(1-E_rad) couples star-formation accretion + photoevaporation
+erosion. At t=5 Myr: M_sf=4164.8, E_rad=0.3*(1-exp(-5/3))=0.2433, Phi_mult=3151.9
+vs Phi_add=4165.6; gap=-(M_sf*E_rad)=-1013.3 (24.3% less, always negative - erosion
+from same growing reservoir, correct for M16 Pillars); g_dyn=g_base*Phi_dm=4.583e-9.
 
-wired_count 296 -> 297. Index PAPER_283 -> checkmark (53/244/1958=2255).
-Version PAPER_283 = v0.290.0.
+wired_count 297 -> 298. Index PAPER_284 -> checkmark (54/244/1957=2255).
+Version PAPER_284 = v0.291.0.
 
-Gate: 1770/0. Registry 582 rows / 1261 edges / 297 ledgers. Campaign frontier:
-PAPER_283 / 2,255. Next: PAPER_284.
+Gate: 1775/0. Registry 583 rows / 1262 edges / 298 ledgers. Campaign frontier:
+PAPER_284 / 2,255. Next: PAPER_285.
