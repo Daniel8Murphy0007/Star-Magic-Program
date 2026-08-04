@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.297.0] — 2026-08-03 — BAND 1: PAPER_290 — CRAB SNR DPM VACUUM DILUTION (CLEAN)
+
+### Added
+- **PAPER_290 dispatch** — Crab SNR DPM Vacuum Dilution, a_DPM(t) ∝ r(t)⁻³ (Session 82, CRAB_RESONANCE_UQFF_MODULE.cpp — 24th C++ module, first UQFF Pulsar Wind Nebula module).
+  - The **first UQFF module with a time-dependent system volume** V_sys(t) = (4/3)π(r0+v_exp·t)³. So a_DPM(t) = F_DPM·f_DPM·E_vac/(c·V_sys(t)) dilutes as 1/r(t)³ as the Crab remnant expands (v_exp = 1.5e6 m/s).
+  - Dilution law D = a_DPM(0)/a_DPM(971 yr) = (r_now/r0)³ = (9.796/5.2)³ = **6.69** over the nebula's 971-year life. a_DPM: 2.521e-56 (SN 1054) → 3.772e-57 (now).
+  - Crab-specific THz cascade Γ_THz = 10·f_DPM·v_exp/c = **5.0e10** — 1500× the RSC module (PAPER_287) and the highest Γ_THz in the catalog, driven by the SNR shock velocity.
+- Gate +5 assertions (→ 1805, 0 failures). wired_count 303 → **304**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_290 → ✓.
+
+### Notes
+- CLEAN — all values reproduce; E_vac composed from ρ_UA.
+
+---
+
 ## [0.296.0] — 2026-08-03 — BAND 1: PAPER_289 — COOPER-DPM DUAL-FREQUENCY SC SYNTHESIS (OPEN_RULING Q-245)
 
 ### Added

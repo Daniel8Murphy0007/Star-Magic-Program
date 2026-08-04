@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.296.0"
+VERSION = "0.297.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16209,4 +16209,42 @@ def _paper_289(dataset):
         'source': 'PAPER_289',
         'residual_pct': None,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_290')
+def _paper_290(dataset):
+    import math
+    I = 1e21; A_vort = 3.142e8; dw = 2e-3
+    f_DPM = 1e12; c = 3e8
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic vacuum
+    r0 = 5.2e16; v_exp = 1.5e6; t_age = 3.064e10          # Crab SN 1054, 971 yr
+    F_DPM = I * A_vort * dw                               # 6.284e26 N
+    V0 = (4.0 / 3.0) * math.pi * r0 ** 3                  # 5.889e50
+    a_DPM_0 = F_DPM * f_DPM * E_vac / (c * V0)            # 2.521e-56
+    r_now = r0 + v_exp * t_age                            # 9.796e16
+    V_now = (4.0 / 3.0) * math.pi * r_now ** 3            # 3.936e51
+    a_DPM_now = F_DPM * f_DPM * E_vac / (c * V_now)       # 3.772e-57
+    D_dilution = a_DPM_0 / a_DPM_now                      # 6.69 = (r_now/r0)^3
+    Gamma_THz = 10.0 * f_DPM * v_exp / c                  # 5.0e10 (1500x RSC)
+    return {
+        'value': {
+            'domain': '2.88 (Crab SNR DPM vacuum dilution a_DPM(t) prop r(t)^-3)',
+            'source_thread': 'Session 82 CRAB_RESONANCE_UQFF_MODULE.cpp (24th C++, first PWN module)',
+            'system': 'Crab Nebula M1 (SN 1054 CE, pulsar-wind nebula, ~2 kpc)',
+            'F_DPM': F_DPM, 'r0_m': r0, 'v_exp_m_s': v_exp, 't_age_s': t_age, 't_age_yr': 971,
+            'V0': V0, 'a_DPM_0': a_DPM_0,                 # 2.521e-56
+            'r_now_m': r_now, 'V_now': V_now, 'a_DPM_now': a_DPM_now,  # 3.772e-57
+            'V_sys_time_dependent': True,                # FIRST module with V_sys(t)
+            'a_DPM_dilution_law': 'a_DPM(t) prop 1/r(t)^3',
+            'D_dilution': D_dilution,                    # 6.69
+            'D_dilution_formula': '(r_now/r0)^3 = V_now/V0',
+            'Gamma_THz': Gamma_THz,                      # 5.0e10
+            'Gamma_THz_vs_RSC': '1500x larger than PAPER_287 RSC (3.33e7) due to v_exp=1.5e6',
+            'highest_gamma_thz_in_catalog': True,
+        },
+        'formula': 'a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3; D=a(0)/a(971)=(r_now/r0)^3=(9.796/5.2)^3=6.69; a(0)=2.521e-56 -> a(971)=3.772e-57; Gamma_THz=10*f_DPM*v_exp/c=5.0e10',
+        'source': 'PAPER_290',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.296.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.296.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.297.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.297.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1800%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-303-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1805%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-304-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.296.0 wiring campaign live**
+**UQFF systematic rebuild — v0.297.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.296.0)
+## What is currently shipped (v0.297.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 303 distinct papers** (`wired_count()`=303 = 289 base-numbered + 14 suffixed) — 58 ✓ CLEAN · 245 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_289** (Cooper-DPM dual-freq SC synthesis; E_Cooper=9.29 eV + resonance-channel Meissner quench SCm=1−B/B_crit; A_sc has a 10× discrepancy — OPEN_RULING Q-245), wired v0.296.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 304 distinct papers** (`wired_count()`=304 = 290 base-numbered + 14 suffixed) — 59 ✓ CLEAN · 245 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_290** (Crab SNR DPM vacuum dilution a_DPM(t)∝1/r(t)³; D=6.69 over 971 yr; first UQFF module with time-dependent V_sys(t)), wired v0.297.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -670,7 +670,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.293.0 | Band 1: PAPER_286 (M16 nebular Friedmann redshift) | 300 |
 | v0.294.0 | Band 1: PAPER_287 (DPM-THz plasmotic vacuum cascade) | 301 |
 | v0.295.0 | Band 1: PAPER_288 (cosmic-age standing-traveling wave bridge) | 302 |
-| **v0.296.0** ← current | Band 1: PAPER_289 (Cooper-DPM SC synthesis, OPEN_RULING Q-245) | 303 |
+| v0.296.0 | Band 1: PAPER_289 (Cooper-DPM SC synthesis, OPEN_RULING Q-245) | 303 |
+| **v0.297.0** ← current | Band 1: PAPER_290 (Crab SNR DPM vacuum dilution) | 304 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

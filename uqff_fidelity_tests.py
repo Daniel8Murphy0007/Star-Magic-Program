@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.296.0", "uqff_calculator.VERSION = 0.296.0 (PAPER_289 = v0.296.0)")
+assert_that(C.VERSION == "0.297.0", "uqff_calculator.VERSION = 0.297.0 (PAPER_290 = v0.297.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3955,6 +3955,17 @@ assert_that(_r289['meissner_quench_at_Bcrit'] and _r289['meissner_table']['B_1e+
 assert_that(_r289['first_resonance_specific_meissner_quench'] and C.calc('PAPER_289')['status'] == 'OPEN_RULING',
             "PAPER_289: first resonance-specific Meissner quench (vs PAPER_266 galactic); OPEN_RULING (A_sc 10x discrepancy Q-245)")
 assert_that(C.wired_count() >= 303, "wired_count >= 303 (PAPER_289 wired)")
+
+_r290 = C.calc('PAPER_290')['value']
+assert_that(abs(_r290['D_dilution'] - 6.69) < 0.02 and _r290['D_dilution_formula'] == '(r_now/r0)^3 = V_now/V0',
+            "PAPER_290: DPM dilution D = (r_now/r0)^3 = (9.796/5.2)^3 = 6.69 over 971 yr")
+assert_that(abs(_r290['a_DPM_0'] - 2.521e-56) < 1e-58 and abs(_r290['a_DPM_now'] - 3.772e-57) < 1e-59,
+            "PAPER_290: a_DPM(0)=2.521e-56 -> a_DPM(971 yr)=3.772e-57 (prop 1/r(t)^3)")
+assert_that(_r290['V_sys_time_dependent'] and _r290['a_DPM_dilution_law'] == 'a_DPM(t) prop 1/r(t)^3',
+            "PAPER_290: first UQFF module with time-dependent V_sys(t); a_DPM(t) prop 1/r(t)^3")
+assert_that(abs(_r290['Gamma_THz'] - 5.0e10) < 1e8 and _r290['highest_gamma_thz_in_catalog'],
+            "PAPER_290: Gamma_THz = 10*f_DPM*v_exp/c = 5.0e10 (1500x RSC; highest in catalog)")
+assert_that(C.wired_count() >= 304, "wired_count >= 304 (PAPER_290 wired)")
 
 
 # =============================================================================

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.296.0"
-description = "UQFF Star-Magic-Program v0.296.0: PAPER_289 wired (OPEN_RULING Q-245) - Cooper-DPM Dual-Frequency SC Synthesis; E_Cooper=hbar*f_super=9.29 eV + resonance-channel Meissner quench SCm=1-B/B_crit->0 at B_crit (first resonance-specific SC quench). A_sc has a 10x discrepancy: 6.994e20 self-consistent (E_vac=RHO_UA) vs paper headline 6.994e21 (needs E_vac=RHO_SCM). wired_count 303, gate 1800/0. Campaign frontier PAPER_289 of 2255. (v0.285.0 burned; v0.286.0-0.295.0 shipped.)"
+version = "0.297.0"
+description = "UQFF Star-Magic-Program v0.297.0: PAPER_290 wired (CLEAN) - Crab SNR DPM Vacuum Dilution; a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3; first UQFF module with time-dependent V_sys(t); dilution D=(r_now/r0)^3=6.69 over 971 yr; Gamma_THz=10*f_DPM*v_exp/c=5.0e10 (highest in catalog). wired_count 304, gate 1805/0. Campaign frontier PAPER_290 of 2255. (v0.285.0 burned; v0.286.0-0.296.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

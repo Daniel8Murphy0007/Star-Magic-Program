@@ -4145,3 +4145,21 @@ OPEN_RULING since 281 (clean run 281-288).
 
 Gate: 1800/0. Registry 588 rows / 1267 edges / 303 ledgers. Campaign frontier:
 PAPER_289 / 2,255. Next: PAPER_290.
+
+---
+
+## 2026-08-03 — v0.297.0 — BAND 1: PAPER_290 — CRAB SNR DPM VACUUM DILUTION (CLEAN)
+
+PAPER_290 (Crab SNR DPM Vacuum Dilution a_DPM(t) prop r(t)^-3, Session 82,
+CRAB_RESONANCE_UQFF_MODULE.cpp 24th C++ module, first PWN) wired as one dispatch
+(CLEAN). First UQFF module with TIME-DEPENDENT V_sys(t)=(4/3)pi(r0+v_exp*t)^3.
+a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3, E_vac=rho_UA. Crab SN 1054,
+v_exp=1.5e6 m/s. D=a(0)/a(971)=(r_now/r0)^3=(9.796/5.2)^3=6.69; a(0)=2.521e-56 ->
+a(971)=3.772e-57. Gamma_THz=10*f_DPM*v_exp/c=5.0e10 (1500x RSC, highest in catalog).
+
+wired_count 303 -> 304. Gate +5 (1805/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_290 -> checkmark (59 / 245 / 1951 = 2255; wired 304 = count).
+Frontier PAPER_289 -> PAPER_290. Version PAPER_290 = v0.297.0.
+
+Gate: 1805/0. Registry 589 rows / 1268 edges / 304 ledgers. Campaign frontier:
+PAPER_290 / 2,255. Next: PAPER_291.

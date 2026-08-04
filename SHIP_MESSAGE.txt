@@ -1,19 +1,16 @@
-v0.296.0 BAND 1: PAPER_289 wired - COOPER-DPM DUAL-FREQUENCY SC SYNTHESIS (OPEN_RULING Q-245)
+v0.297.0 BAND 1: PAPER_290 wired - CRAB SNR DPM VACUUM DILUTION (CLEAN)
 
-PAPER_289 (Cooper-DPM Dual-Frequency SC Synthesis A_sc, S81,
-RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp) wired as one dispatch (OPEN_RULING).
-First UQFF module applying the Meissner quench to a PURE resonance channel (vs
-PAPER_266 galactic full-sum).
+PAPER_290 (Crab SNR DPM Vacuum Dilution a_DPM(t) prop r(t)^-3, S82,
+CRAB_RESONANCE_UQFF_MODULE.cpp 24th C++ module, first PWN) wired as one dispatch
+(CLEAN). First UQFF module with TIME-DEPENDENT V_sys(t).
 
-CLEAN: E_Cooper=hbar*f_super=1.488e-18 J=9.29 eV; Meissner SCm=1-B/B_crit->0 at
-B_crit (quench); (1+F_TRZ)=1.1. OPEN_RULING (Q-245): A_sc=hbar*f_super*f_DPM/
-(E_vac*c); stated E_vac=RHO_UA=7.09e-36 gives A_sc=6.994e20 self-consistent, but
-paper title/WOLFRAM/abstract say 6.994e21 (needs E_vac=RHO_SCM; paper boxed
-denominator 2.127e-28 is a 10x error, should be 2.127e-27). Both values recorded.
-Secondary: B_crit=1e11 T magnetar (vs registry Schwinger 4.4e13).
+V_sys(t)=(4/3)pi(r0+v_exp*t)^3; a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3
+(E_vac=rho_UA). Crab SN 1054, v_exp=1.5e6 m/s. DPM dilution D=a(0)/a(971)=(r_now/r0)^3
+=(9.796/5.2)^3=6.69; a(0)=2.521e-56 -> a(971)=3.772e-57. Gamma_THz=10*f_DPM*v_exp/c=
+5.0e10 (1500x RSC 3.33e7, highest in catalog - driven by SNR shock velocity).
 
-wired_count 302 -> 303. Index PAPER_289 -> OPEN_RULING (58/245/1952=2255).
-Version PAPER_289 = v0.296.0.
+wired_count 303 -> 304. Index PAPER_290 -> checkmark (59/245/1951=2255).
+Version PAPER_290 = v0.297.0.
 
-Gate: 1800/0. Registry 588 rows / 1267 edges / 303 ledgers. Campaign frontier:
-PAPER_289 / 2,255. Next: PAPER_290.
+Gate: 1805/0. Registry 589 rows / 1268 edges / 304 ledgers. Campaign frontier:
+PAPER_290 / 2,255. Next: PAPER_291.
