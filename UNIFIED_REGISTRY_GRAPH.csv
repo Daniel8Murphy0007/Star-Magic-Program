@@ -1320,3 +1320,10 @@ observable,eps_GR_hydrogen_min,observable,r_S_proton_schwarzschild,r_Bohr/r_S
 observable,eps_GR_hydrogen_min,paper,PAPER_301,wired
 observable,r_S_proton_schwarzschild,paper,PAPER_301,wired
 observable,gr_spectral_span_H_to_universe,paper,PAPER_301,wired
+primitive,RHO_UA,observable,Gamma_u4i_vacuum_bridge,E_vac in denominator
+primitive,C_OBSERVED,observable,Gamma_u4i_vacuum_bridge,c in denominator
+observable,Gamma_u4i_vacuum_bridge,observable,a_u4i_reactive_resonance,a_u4i=Gamma*a_DPM
+observable,a_u4i_reactive_resonance,observable,u4i_over_THz_dominance,a_u4i/a_THz
+observable,a_u4i_reactive_resonance,paper,PAPER_302,wired
+observable,Gamma_u4i_vacuum_bridge,paper,PAPER_302,wired
+observable,u4i_over_THz_dominance,paper,PAPER_302,wired

@@ -4360,3 +4360,19 @@ Mirror of PAPER_298 (universe eps_GR max = 5.056); this is the eps_GR minimum.
 
 CLEAN. Gate: 1867/0. Registry 615 rows / 1322 edges / 323 ledgers.
 Campaign frontier: PAPER_301 / 2,255. Next: PAPER_302.
+
+---
+
+## v0.309.0 — 2026-08-04 — PAPER_302 (hydrogen PToE U_g4i reactive-resonance vacuum bridge)
+
+Wired PAPER_302 (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp, 28th C++ module,
+first PToE-resonance module). Resonance-channel architecture at atomic scale.
+
+- a_u4i = f_sc*f_react*a_DPM/(E_vac*c) = 3.155e33 m/s2 (dominates 6-term resonance sum).
+- Gamma_u4i = f_react/(E_vac*c) = 4.704e36 (universal U_g4i vacuum bridge, frequency-independent,
+  E_vac=RHO_UA).
+- a_u4i/a_THz = 6.446e22 (first UQFF U_g4i > THz resonance, 22 orders). All verified in Python.
+- Bridge denom E_vac*c=2.126e-27 registry-composed; f_react/a_DPM/a_THz paper anchors.
+
+CLEAN. Gate: 1873/0. Registry 618 rows / 1329 edges / 325 ledgers.
+Campaign frontier: PAPER_302 / 2,255. Next: PAPER_303.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.308.0"
-description = "UQFF Star-Magic-Program v0.308.0: PAPER_301 wired (CLEAN) - hydrogen proton GR spectral minimum; eps_GR=3*G*M_p/(r_Bohr*c^2)=7.040e-44 (smallest of all 27 modules); proton Schwarzschild r_S=2GM_p/c^2=2.484e-54 m, r_Bohr/r_S=2.131e43; a_GR_min=g_base*eps_GR=2.81e-60 m/s2 (smallest individual UQFF term); with PAPER_298 (5.056) completes the GR spectral span 7.18e43 (~44 orders, hydrogen to observable universe). wired_count 315, gate 1867/0. Campaign frontier PAPER_301 of 2255."
+version = "0.309.0"
+description = "UQFF Star-Magic-Program v0.309.0: PAPER_302 wired (CLEAN) - hydrogen PToE U_g4i reactive-resonance vacuum bridge (28th C++ module, first PToE resonance); a_u4i=f_sc*f_react*a_DPM/(E_vac*c)=3.155e33 m/s2 dominates the 6-term resonance sum; universal bridge constant Gamma_u4i=f_react/(E_vac*c)=4.704e36 (frequency-independent, E_vac=RHO_UA); first UQFF instance where U_g4i reactive resonance supersedes THz by 22 orders (a_u4i/a_THz=6.446e22). wired_count 316, gate 1873/0. Campaign frontier PAPER_302 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

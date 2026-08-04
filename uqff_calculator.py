@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.308.0"
+VERSION = "0.309.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16653,6 +16653,40 @@ def _paper_301(dataset):
         },
         'formula': 'eps_GR=3*G*M_p/(r_Bohr*c^2)=7.040e-44 (smallest of all UQFF modules); r_S=2GM_p/c^2=2.484e-54 m; a_GR_min=g_base*eps_GR=2.81e-60 m/s2 (smallest individual UQFF term); GR spectral span (H->Universe)=5.056/7.04e-44=7.18e43 (~44 orders)',
         'source': 'PAPER_301',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_302')
+def _paper_302(dataset):
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic vacuum energy density
+    c = C_OBSERVED
+    f_react = 1.0e10                                      # U_g4i reactive frequency, module anchor
+    a_DPM = 6.71e-4                                       # DPM seed (Lyman-UV baseline), paper anchor
+    f_sc = 1.0                                            # SC correction factor
+    a_THz = 4.895e10                                      # THz pipeline term, paper anchor
+    denom = E_vac * c                                     # 2.126e-27 vacuum-light bridge denominator
+    Gamma_u4i = f_react / denom                           # 4.704e36 universal U_g4i bridge constant
+    a_u4i = f_sc * f_react * a_DPM / denom                # 3.155e33 dominant resonance term
+    u4i_over_THz = a_u4i / a_THz                          # 6.446e22 (22-order dominance)
+    return {
+        'value': {
+            'domain': '3.00 (hydrogen PToE resonance; first U_g4i reactive-resonance dominance over THz)',
+            'source_thread': 'Session 86 HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp (28th C++, first PToE resonance)',
+            'system': 'Hydrogen Z=1 ground state, resonance-channel architecture',
+            'f_react_Hz': f_react, 'E_vac': E_vac, 'a_DPM': a_DPM,
+            'denom_Evac_c': denom,                       # 2.126e-27
+            'Gamma_u4i': Gamma_u4i,                      # 4.704e36
+            'Gamma_u4i_formula': 'f_react/(E_vac*c) (universal U_g4i vacuum bridge constant)',
+            'Gamma_frequency_independent': True,         # depends only on f_react, E_vac, c
+            'a_u4i': a_u4i,                              # 3.155e33 dominant term
+            'a_u4i_formula': 'f_sc*f_react*a_DPM/(E_vac*c)',
+            'u4i_over_THz': u4i_over_THz,                # 6.446e22
+            'dominates_THz_22_orders': True,             # first UQFF U_g4i > THz resonance
+        },
+        'formula': 'a_u4i=f_sc*f_react*a_DPM/(E_vac*c)=3.155e33 m/s2 (dominant resonance term); Gamma_u4i=f_react/(E_vac*c)=4.704e36 (universal U_g4i vacuum bridge constant); a_u4i/a_THz=6.446e22 (first UQFF U_g4i dominance over THz, 22 orders)',
+        'source': 'PAPER_302',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

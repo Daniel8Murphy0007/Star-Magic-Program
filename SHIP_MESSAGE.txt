@@ -1,12 +1,12 @@
-v0.308.0 BAND 1: PAPER_301 wired - HYDROGEN PROTON GR SPECTRAL MINIMUM (eps_GR = 7.04e-44) (CLEAN)
+v0.309.0 BAND 1: PAPER_302 wired - HYDROGEN PToE U_g4i REACTIVE-RESONANCE VACUUM BRIDGE (CLEAN)
 
-PAPER_301 (Hydrogen Atom Proton GR Spectral Minimum, Session 85,
-HYDROGEN_ATOM_UQFF_MODULE.cpp; third/final hydrogen module term). Mirror of PAPER_298
-(universe eps_GR max = 5.056); this is the eps_GR minimum.
+PAPER_302 (Hydrogen PToE U_g4i Reactive-Resonance Vacuum Bridge, Session 86,
+HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp, 28th C++ module, first PToE-resonance module).
+Resonance-channel architecture at atomic scale.
 
-- eps_GR = 3*G*M_p/(r_Bohr*c^2) = 7.040e-44 (smallest of all 27 modules)
-- r_S = 2GM_p/c^2 = 2.484e-54 m proton Schwarzschild radius; r_Bohr/r_S = 2.131e43
-- a_GR_min = g_base*eps_GR = 2.81e-60 m/s2 (smallest individual UQFF term)
-- GR spectral span (H->Universe) = 5.056/7.04e-44 = 7.18e43 (~44 orders, with PAPER_298)
+- a_u4i = f_sc*f_react*a_DPM/(E_vac*c) = 3.155e33 m/s2 (dominates the 6-term resonance sum)
+- Gamma_u4i = f_react/(E_vac*c) = 4.704e36 (universal U_g4i vacuum bridge, frequency-independent)
+- a_u4i/a_THz = 6.446e22 (first UQFF U_g4i dominance over THz resonance, 22 orders)
+- vacuum-light bridge denom E_vac*c=2.126e-27 registry-composed (E_vac=RHO_UA)
 
-CLEAN. wired_count 315, gate 1867/0. Campaign frontier PAPER_301 of 2255.
+CLEAN. wired_count 316, gate 1873/0. Campaign frontier PAPER_302 of 2255.

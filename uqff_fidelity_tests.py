@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.308.0", "uqff_calculator.VERSION = 0.308.0 (PAPER_301 = v0.308.0)")
+assert_that(C.VERSION == "0.309.0", "uqff_calculator.VERSION = 0.309.0 (PAPER_302 = v0.309.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4101,6 +4101,19 @@ assert_that(abs(_r301['gr_spectral_span'] - 7.18e43) / 7.18e43 < 0.005 and _r301
 assert_that(abs(_r301['eps_GR_universe_ref'] - 5.056) < 0.01,
             "PAPER_301: spectral range anchored to PAPER_298 universe-scale eps_GR = 5.056 (max)")
 assert_that(C.wired_count() >= 315, "wired_count >= 315 (PAPER_301 wired)")
+
+_r302 = C.calc('PAPER_302')['value']
+assert_that(abs(_r302['Gamma_u4i'] - 4.704e36) / 4.704e36 < 0.005 and _r302['Gamma_u4i_formula'] == 'f_react/(E_vac*c) (universal U_g4i vacuum bridge constant)',
+            "PAPER_302: Gamma_u4i = f_react/(E_vac*c) = 4.704e36 (universal U_g4i vacuum bridge constant)")
+assert_that(abs(_r302['a_u4i'] - 3.155e33) / 3.155e33 < 0.005 and _r302['a_u4i_formula'] == 'f_sc*f_react*a_DPM/(E_vac*c)',
+            "PAPER_302: a_u4i = f_sc*f_react*a_DPM/(E_vac*c) = 3.155e33 m/s2 (dominant resonance term)")
+assert_that(abs(_r302['u4i_over_THz'] - 6.446e22) / 6.446e22 < 0.005 and _r302['dominates_THz_22_orders'],
+            "PAPER_302: a_u4i/a_THz = 6.446e22 (first UQFF U_g4i dominance over THz resonance, 22 orders)")
+assert_that(abs(_r302['denom_Evac_c'] - 2.126e-27) / 2.126e-27 < 0.005,
+            "PAPER_302: vacuum-light bridge denominator E_vac*c = 2.126e-27 (E_vac = RHO_UA)")
+assert_that(_r302['Gamma_frequency_independent'],
+            "PAPER_302: Gamma_u4i depends only on f_react, E_vac, c (frequency-independent bridge constant)")
+assert_that(C.wired_count() >= 316, "wired_count >= 316 (PAPER_302 wired)")
 
 
 # =============================================================================

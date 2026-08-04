@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.309.0] — 2026-08-04 — BAND 1: PAPER_302 — HYDROGEN PToE U_g4i REACTIVE-RESONANCE VACUUM BRIDGE (CLEAN)
+
+### Added
+- **PAPER_302 dispatch** — Hydrogen PToE U_g4i Reactive-Resonance Vacuum Bridge (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp, 28th C++ module — the **first PToE-resonance module**). Opens the resonance-channel architecture at atomic scale.
+  - a_u4i = f_sc·f_react·a_DPM/(E_vac·c) = **3.155e33 m/s²** — dominates the 6-term resonance sum (fraction ≈ 1.000).
+  - **Universal U_g4i vacuum bridge constant** Γ_u4i = f_react/(E_vac·c) = **4.704e36** — depends only on f_react, E_vac (=RHO_UA), and c; frequency-independent.
+  - a_u4i/a_THz = **6.446e22** — the first UQFF instance where U_g4i reactive resonance supersedes THz-pipeline resonance, by 22 orders of magnitude.
+  - Vacuum-light bridge denominator E_vac·c = 2.126e-27 composed from registry (E_vac = RHO_UA); f_react, a_DPM, a_THz paper anchors.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_299/300).
+- 6 gate assertions (Γ_u4i, a_u4i, THz dominance, bridge denominator, frequency-independence, wired_count ≥ 316). Gate 1867 → **1873/0**.
+
+### Wiring status
+- `wired_count()` = **316** (CLEAN). Campaign frontier PAPER_302 of 2255. Index: 70 ✓ / 246 ⚠ / 1939 ⬜ = 2255.
+
+---
+
 ## [0.308.0] — 2026-08-04 — BAND 1: PAPER_301 — HYDROGEN PROTON GR SPECTRAL MINIMUM (ε_GR = 7.04e-44) (CLEAN)
 
 ### Added

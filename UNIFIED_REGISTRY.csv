@@ -613,3 +613,6 @@ chi_bridge_lyman_universe,PAPER_300 Lyman-Universe coupling,derived_factor,omega
 eps_GR_hydrogen_min,PAPER_301 hydrogen proton GR minimum,derived_ratio,3*G*M_p/(r_Bohr*c^2),smallest eps_GR of all modules,7.040e-44,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_298;PAPER_299,WIRED
 r_S_proton_schwarzschild,PAPER_301 proton Schwarzschild radius,derived_length,2*G*M_p/c^2,r_Bohr/r_S=2.131e43,2.484e-54 m,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_301,WIRED
 gr_spectral_span_H_to_universe,PAPER_301 GR spectral range,derived_ratio,eps_GR(Universe)/eps_GR(H),~44 orders (PAPER_298 to PAPER_301),7.18e43,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_298,WIRED
+a_u4i_reactive_resonance,PAPER_302 hydrogen PToE,derived_acceleration,f_sc*f_react*a_DPM/(E_vac*c),dominant resonance term,3.155e33 m/s2,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_299;PAPER_300,WIRED
+Gamma_u4i_vacuum_bridge,PAPER_302 universal U_g4i bridge,derived_factor,f_react/(E_vac*c),frequency-independent,4.704e36,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_302,WIRED
+u4i_over_THz_dominance,PAPER_302 U_g4i over THz,derived_ratio,a_u4i/a_THz,"first U_g4i > THz, 22 orders",6.446e22,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_302,WIRED
