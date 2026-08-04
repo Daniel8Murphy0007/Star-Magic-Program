@@ -7,23 +7,9 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [0.321.0] — 2026-08-04 — BAND 1: PAPER_314 — NGC 6302 PN LOBE DPM MACRO-ANTENNA FORCE (CLEAN)
-
-### Added
-- **PAPER_314 dispatch** — NGC 6302 Bipolar PN Lobe DPM Macro-Antenna Force (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp). The **first UQFF DPM force at planetary-nebula lobe scale** (r ~ 1.5 ly).
-  - The ~1.5 ly lobe cross-section A_area = π·r² = **6.333e32 m²** acts as a macroscopic DPM antenna. F_DPM = I_wind·A_area·Δω = **1.267e50 N** (I_wind = 1e20 A, Δω = 2e-3 rad/s).
-  - Seed resonance acceleration a_DPM = F_DPM·f_DPM·E_vac/(c·V_sys) = **2.497e-31 m/s²** (V_sys = (4/3)π·r³ = 1.199e49 m³; E_vac = RHO_UA), which cascades to the THz/VacDiff pipelines (PAPER_315/316).
-  - **13-order PN-to-compact amplification** η_PN/cpt = F_DPM/F_DPM_compact = **2.017e13** (vs compact systems 18-24, PAPER_293) — the macro-antenna scaling law F_DPM ~ A_area ~ r² at fixed I_wind, Δω.
-  - **Mojibake note:** the title/abstract render F_DPM as "1.267e5" (dropped exponent); the body derivation and force-hierarchy table give the correct 1.267e50 N. Wired to the body value.
-- 3 registry observables, 7 graph edges, 3 corpus citations (PAPER_293/315/316).
-- 6 gate assertions (F_DPM, a_DPM, η_PN/cpt, A_area, mojibake note, wired_count ≥ 328). Gate 1939 → **1945/0**.
-
-### Wiring status
-- `wired_count()` = **328** (CLEAN). Campaign frontier PAPER_314 of 2255. Index: 81 ✓ / 247 ⚠ / 1927 ⬜ = 2255.
-
----
-
 ## [0.320.0] — 2026-08-04 — BAND 1: PAPER_313 — NGC 6302 EQUATORIAL-TORUS MAGNETIC CONFINEMENT (CLEAN)
+
+> **Ordering note:** v0.320.0 was never uploaded to PyPI, so PAPER_313 reclaims it here as **v0.320.0** (one paper per ship). v0.321.0 previously bundled PAPER_313 + PAPER_314 and has been yanked (burned). PAPER_314 will follow as **v0.322.0** (skipping the dead 0.321.0).
 
 ### Added
 - **PAPER_313 dispatch** — NGC 6302 Equatorial Torus Magnetic Confinement (Session 89, NGC6302_UQFF_MODULE.cpp; third/final NGC 6302 term). Completes the bipolar-PN force budget with the confinement geometry.

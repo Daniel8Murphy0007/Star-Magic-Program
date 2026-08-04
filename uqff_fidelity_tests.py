@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.321.0", "uqff_calculator.VERSION = 0.321.0 (PAPER_314 = v0.321.0)")
+assert_that(C.VERSION == "0.320.0", "uqff_calculator.VERSION = 0.320.0 (PAPER_313 = v0.320.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4258,19 +4258,6 @@ assert_that(abs(_r313['v_Alfven'] - 8.921e7) / 8.921e7 < 0.005 and _r313['v_Alfv
 assert_that(abs(_r313['vA_over_vwind'] - 892.1) < 1.0,
             "PAPER_313: v_A/v_wind = 892.1 (magnetic signals propagate ~892x faster than the wind)")
 assert_that(C.wired_count() >= 327, "wired_count >= 327 (PAPER_313 wired)")
-
-_r314 = C.calc('PAPER_314')['value']
-assert_that(abs(_r314['F_DPM'] - 1.267e50) / 1.267e50 < 0.005 and _r314['F_DPM_formula'] == 'I_wind*A_area*d_omega',
-            "PAPER_314: F_DPM = I_wind*A_area*d_omega = 1.267e50 N (PN lobe DPM macro-antenna force)")
-assert_that(abs(_r314['a_DPM'] - 2.497e-31) / 2.497e-31 < 0.005 and _r314['a_DPM_formula'] == 'F_DPM*f_DPM*E_vac/(c*V_sys)',
-            "PAPER_314: a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 2.497e-31 m/s2 (seed resonance accel)")
-assert_that(abs(_r314['eta_PN_cpt'] - 2.017e13) / 2.017e13 < 0.005,
-            "PAPER_314: eta_PN/cpt = F_DPM/F_DPM_compact = 2.017e13 (13-order PN-to-compact amplification)")
-assert_that(abs(_r314['A_area'] - 6.333e32) / 6.333e32 < 0.005,
-            "PAPER_314: A_area = pi*r^2 = 6.333e32 m^2 (lobe cross-section, DPM antenna area)")
-assert_that('1.267e50' in _r314['title_mojibake_note'],
-            "PAPER_314: title/abstract dropped-exponent mojibake noted; body derivation gives 1.267e50 N")
-assert_that(C.wired_count() >= 328, "wired_count >= 328 (PAPER_314 wired)")
 
 
 # =============================================================================
