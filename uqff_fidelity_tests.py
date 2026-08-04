@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.330.0", "uqff_calculator.VERSION = 0.330.0 (PAPER_322 = v0.330.0)")
+assert_that(C.VERSION == "0.331.0", "uqff_calculator.VERSION = 0.331.0 (PAPER_323 = v0.331.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4376,6 +4376,19 @@ assert_that('3.333e7' in _r322['Gamma_THz_printed_typo'],
 assert_that('surface density' in _r322['geometry_modulator'],
             "PAPER_322: DPM surface density A_vort/V_sys is the primary THz modulator (geometry, not f_DPM/f_THz/v_exp)")
 assert_that(C.wired_count() >= 336, "wired_count >= 336 (PAPER_322 wired)")
+
+_r323 = C.calc('PAPER_323')['value']
+assert_that(abs(_r323['kappa_aether_freq'] - 5.253e-43) / 5.253e-43 < 0.005 and 'F_AETHER*E_neb/(E_ISM*c)' in _r323['kappa_formula'],
+            "PAPER_323: kappa_aether_freq = F_AETHER*E_neb/(E_ISM*c) = 5.253e-43 (smallest UQFF coupling; E_neb/E_ISM = 1/F_TRZ = 10)")
+assert_that(_r323['smallest_UQFF_coupling'] and _r323['eleventh_term'],
+            "PAPER_323: 11th UQFF accelerative term, smallest coupling (7 orders below prior min); completes aether doublet")
+assert_that(abs(_r323['period_yr'] - 2.01e27) / 2.01e27 < 0.01 and abs(_r323['period_s'] - 6.35e34) / 6.35e34 < 0.01,
+            "PAPER_323: F_AETHER = 1.576e-35 Hz -> period = 6.35e34 s = 2.01e27 yr (super-Hubble oscillation)")
+assert_that(abs(_r323['a_aether_freq_sombrero'] - 4.20e-77) / 4.20e-77 < 0.01,
+            "PAPER_323: a_aether_freq = kappa*a_DPM = 4.20e-77 m/s2 for Sombrero (sys18)")
+assert_that('resonance mode' in _r323['aether_doublet'] and 'frequency mode' in _r323['aether_doublet'],
+            "PAPER_323: UQFF aether doublet = a_aether_res (resonance) + a_aether_freq (frequency) co-sum")
+assert_that(C.wired_count() >= 337, "wired_count >= 337 (PAPER_323 wired)")
 
 
 # =============================================================================

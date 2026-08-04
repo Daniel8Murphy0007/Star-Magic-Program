@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.331.0] — 2026-08-04 — BAND 1: PAPER_323 — CR34b VACUUM AETHER FREQUENCY MODE (11th UQFF TERM) (CLEAN)
+
+### Added
+- **PAPER_323 dispatch** — CR34b Vacuum Aether Frequency Mode (Session 93, CompressedResonanceUQFF34bModule.cpp, 35th C++ module). The **11th UQFF accelerative term** (a_aether_freq), driven by the vacuum aether frequency constant F_AETHER = 1.576e-35 Hz.
+  - Coupling coefficient κ_aether_freq = F_AETHER·E_neb/(E_ISM·c) = **5.253e-43** — the smallest coupling in the UQFF expansion (7 orders below the previous minimum). E_neb/E_ISM = ρ_UA/ρ_SCm = 1/F_TRZ = 10 (composed from registry).
+  - F_AETHER period T = 1/F_AETHER = **6.35e34 s = 2.01e27 yr** — a super-Hubble oscillation, the characteristic vacuum-aether frequency at cosmological scales.
+  - a_aether_freq = κ_aether_freq·a_DPM (e.g. 4.20e-77 for Sombrero). Physically distinct from the resonance-channel a_aether_res; together they form the **UQFF aether doublet** (resonance + frequency co-sum).
+- 2 registry observables, 5 graph edges, 2 corpus citations (PAPER_294/295).
+- 6 gate assertions (κ, 11th-term/smallest coupling, period, Sombrero value, aether doublet, wired_count ≥ 337). Gate 1993 → **1999/0**.
+
+### Wiring status
+- `wired_count()` = **337** (CLEAN). Campaign frontier PAPER_323 of 2255. Index: 89 ✓ / 248 ⚠ / 1918 ⬜ = 2255.
+
+---
+
 ## [0.330.0] — 2026-08-04 — BAND 1: PAPER_322 — CR34 INTRA-HII THz GEOMETRIC DIFFERENTIAL (CLEAN)
 
 ### Added

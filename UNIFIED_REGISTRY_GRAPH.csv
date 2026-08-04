@@ -1452,3 +1452,8 @@ primitive,SO_5,observable,thz_ratio_orion_lagoon,Gamma_THz=SO_5*... (cancels)
 observable,thz_ratio_orion_lagoon,paper,PAPER_322,wired
 observable,dpm_surface_density_thz,paper,PAPER_322,wired
 paper,PAPER_322,paper,PAPER_320,shared CR34 systems
+primitive,RHO_UA,observable,kappa_aether_freq_cr34b,E_neb
+primitive,RHO_SCM,observable,kappa_aether_freq_cr34b,E_ISM (E_neb/E_ISM=1/F_TRZ)
+primitive,C_OBSERVED,observable,kappa_aether_freq_cr34b,c in denominator
+observable,kappa_aether_freq_cr34b,paper,PAPER_323,wired
+observable,F_AETHER_period_cr34b,paper,PAPER_323,wired

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_322** (CR34 intra-HII THz geometric differential Orion/Lagoon ratio=8.59, wired v0.330.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–322 = **336 wired**.
-- **Distinct wired papers: 336** = `wired_count()` = `len(DISPATCH)`. Composed of **322** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **88 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1919 ⬜** not-touched (88 + 248 + 1919 = 2255 ✓). Wired file-rows (88 + 248 = **336**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note covering PAPER_320/322 CR34-table typos.)
+- **Campaign frontier: PAPER_323** (CR34b vacuum aether frequency mode κ=5.253e-43, 11th UQFF accelerative term, wired v0.331.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–323 = **337 wired**.
+- **Distinct wired papers: 337** = `wired_count()` = `len(DISPATCH)`. Composed of **323** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **89 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1918 ⬜** not-touched (89 + 248 + 1918 = 2255 ✓). Wired file-rows (89 + 248 = **337**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note covering PAPER_320/322 CR34-table typos.)
 - **OPEN targets:** 0
 
 ---
@@ -1582,7 +1582,7 @@
 | ✓ | PAPER_320 | CR34 DPMForceDensitySpectralAtlas xiSpan 1e35 7systems |
 | ✓ | PAPER_321 | CR34 CrossChannelDominanceCrossover Vf 5p43e28 CompressedResonanceReversal |
 | ✓ | PAPER_322 | CR34 HiIRegionTHzGeometricDifferential ratio 8p59 OrionLagoon |
-| ⬜ | PAPER_323 | CR34b VacuumAetherFrequencyMode FAether 1p576e35 11thUQFFTerm |
+| ✓ | PAPER_323 | CR34b VacuumAetherFrequencyMode FAether 1p576e35 11thUQFFTerm |
 | ⬜ | PAPER_324 | CR34b SaturnFirstPlanetaryDualChannel g vac diff 1p29e-2 |
 | ⬜ | PAPER_325 | CR34b RhoISMFluidDensityCoupling ffluid rho 1p269e-35 |
 | ⬜ | PAPER_326 | TriadicMasterUQFF 26State Ramanujan CoSumArchitecture FUg1 Rt FUBi |

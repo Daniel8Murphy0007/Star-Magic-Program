@@ -4703,3 +4703,19 @@ First UQFF intra-HII THz geometric amplification differential.
 
 CLEAN. Gate: 1993/0. Registry 675 rows / 1454 edges / 365 ledgers. CR34 module (320/321/322) complete.
 Campaign frontier: PAPER_322 / 2,255. Next: PAPER_323.
+
+---
+
+## v0.331.0 — 2026-08-04 — PAPER_323 (CR34b vacuum aether frequency mode, 11th UQFF term)
+
+Wired PAPER_323 (Session 93, CompressedResonanceUQFF34bModule.cpp, 35th C++ module).
+11th UQFF accelerative term (a_aether_freq). New CR34b module.
+
+- kappa_aether_freq = F_AETHER*E_neb/(E_ISM*c) = 5.253e-43 (smallest UQFF coupling; E_neb/E_ISM =
+  rho_UA/rho_SCm = 1/F_TRZ = 10, composed from registry).
+- F_AETHER = 1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble oscillation).
+- a_aether_freq = kappa*a_DPM (4.20e-77 Sombrero). Completes the UQFF aether doublet (res + freq).
+  All verified in Python.
+
+CLEAN. Gate: 1999/0. Registry 677 rows / 1459 edges / 367 ledgers.
+Campaign frontier: PAPER_323 / 2,255. Next: PAPER_324.

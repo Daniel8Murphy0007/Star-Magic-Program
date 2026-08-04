@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.330.0"
+VERSION = "0.331.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17442,6 +17442,40 @@ def _paper_322(dataset):
         },
         'formula': 'ratio=a_THz_34/a_THz_30=(A_vort_34/V_sys_34)/(A_vort_30/V_sys_30)=8.59 (Gamma_THz cancels); Orion produces 8.59x more THz accel than Lagoon from geometry (DPM surface density) alone, same DPM class',
         'source': 'PAPER_322',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_323')
+def _paper_323(dataset):
+    c = C_OBSERVED
+    F_AETHER = 1.576e-35                                  # vacuum aether frequency constant (Hz), anchor
+    E_neb = RHO_UA                                        # nebular vacuum energy density
+    E_ISM = RHO_SCM                                       # ISM vacuum energy density (E_neb/E_ISM = 1/F_TRZ = 10)
+    kappa_aether_freq = F_AETHER * E_neb / (E_ISM * c)    # 5.253e-43 smallest UQFF coupling
+    period_s = 1.0 / F_AETHER                             # 6.35e34 s super-Hubble oscillation
+    period_yr = period_s / 3.15576e7                      # 2.01e27 yr
+    a_DPM_sombrero = 7.99e-35                             # example system a_DPM (sys18)
+    a_aether_freq_sombrero = kappa_aether_freq * a_DPM_sombrero  # 4.20e-77
+    return {
+        'value': {
+            'domain': '3.21 (CR34b vacuum aether frequency mode; 11th UQFF accelerative term)',
+            'source_thread': 'Session 93 CompressedResonanceUQFF34bModule.cpp (35th C++ module)',
+            'system': 'CR34b vacuum aether frequency mode (cosmological-scale aether background)',
+            'F_AETHER_Hz': F_AETHER,
+            'kappa_aether_freq': kappa_aether_freq,     # 5.253e-43
+            'kappa_formula': 'F_AETHER*E_neb/(E_ISM*c), E_neb/E_ISM = 1/F_TRZ = 10',
+            'smallest_UQFF_coupling': True,             # 7 orders below previous minimum
+            'a_aether_freq_formula': 'kappa_aether_freq * a_DPM',
+            'a_aether_freq_sombrero': a_aether_freq_sombrero,  # 4.20e-77
+            'period_s': period_s,                       # 6.35e34
+            'period_yr': period_yr,                     # 2.01e27 (super-Hubble oscillation)
+            'aether_doublet': 'a_aether_res (resonance mode) + a_aether_freq (frequency mode) co-sum',
+            'eleventh_term': True,                      # completes the UQFF aether doublet
+        },
+        'formula': 'a_aether_freq = kappa_aether_freq*a_DPM; kappa_aether_freq=F_AETHER*E_neb/(E_ISM*c)=5.253e-43 (smallest UQFF coupling, E_neb/E_ISM=1/F_TRZ=10); F_AETHER=1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble); 11th UQFF accelerative term (aether doublet)',
+        'source': 'PAPER_323',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

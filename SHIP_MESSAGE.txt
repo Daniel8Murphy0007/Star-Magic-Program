@@ -1,15 +1,13 @@
-v0.330.0 BAND 1: PAPER_322 wired - CR34 INTRA-HII THz GEOMETRIC DIFFERENTIAL (CLEAN)
+v0.331.0 BAND 1: PAPER_323 wired - CR34b VACUUM AETHER FREQUENCY MODE (11th UQFF TERM) (CLEAN)
 
-PAPER_322 (CR34 Intra-HII THz Geometric Amplification Differential, Session 92,
-COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; third/final CR34 term). First UQFF intra-HII THz
-geometric amplification differential - same DPM class, different THz accel from geometry alone.
+PAPER_323 (CR34b Vacuum Aether Frequency Mode, Session 93,
+CompressedResonanceUQFF34bModule.cpp, 35th C++ module). The 11th UQFF accelerative term
+(a_aether_freq), driven by the vacuum aether frequency constant F_AETHER = 1.576e-35 Hz.
 
-- Orion (sys34) and Lagoon (sys30) share DPM class (f_DPM=f_THz=1e11 Hz, v_exp=1e4) -> Gamma_THz
-  identical, cancels in ratio
-- ratio = (A_vort/V_sys)_Orion / (A_vort/V_sys)_Lagoon = 4.562e-18/5.313e-19 = 8.59 (geometry only)
-- DPM surface density A_vort/V_sys is the primary THz modulator (independent of f_DPM/f_THz/v_exp)
+- kappa_aether_freq = F_AETHER*E_neb/(E_ISM*c) = 5.253e-43 (smallest UQFF coupling; 7 orders below
+  prior min). E_neb/E_ISM = rho_UA/rho_SCm = 1/F_TRZ = 10 (composed from registry).
+- F_AETHER = 1.576e-35 Hz -> period 6.35e34 s = 2.01e27 yr (super-Hubble oscillation)
+- a_aether_freq = kappa_aether_freq * a_DPM (4.20e-77 for Sombrero); completes the UQFF aether doublet
+  (a_aether_res resonance + a_aether_freq frequency co-sum)
 
-NOTE: paper prints Gamma_THz=3.333e6; formula 10*f_THz*v_exp/c=3.333e7 (dropped-exponent typo,
-CR34-table family Q-249); cancels in ratio, 8.59 unaffected.
-
-CLEAN. wired_count 336, gate 1993/0. Campaign frontier PAPER_322 of 2255.
+CLEAN. wired_count 337, gate 1999/0. Campaign frontier PAPER_323 of 2255.

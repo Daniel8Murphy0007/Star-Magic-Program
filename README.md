@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.330.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.330.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.331.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.331.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1993%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-336-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1999%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-337-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.330.0 wiring campaign live**
+**UQFF systematic rebuild — v0.331.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.330.0)
+## What is currently shipped (v0.331.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 336 distinct papers** (`wired_count()`=336 = 322 base-numbered + 14 suffixed) — 88 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_322** (CR34 intra-HII THz geometric amplification differential: Orion M42 and Lagoon M8 share the same DPM class (f_DPM=f_THz=1e11 Hz, v_exp=1e4) so Γ_THz is identical and cancels, yet Orion produces 8.59× more THz acceleration — the ratio = (A_vort/V_sys)_Orion / (A_vort/V_sys)_Lagoon = 8.59 comes entirely from DPM surface-density geometry), wired v0.330.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 337 distinct papers** (`wired_count()`=337 = 323 base-numbered + 14 suffixed) — 89 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_323** (CR34b vacuum aether frequency mode — the 11th UQFF accelerative term: coupling κ_aether_freq=F_AETHER·E_neb/(E_ISM·c)=5.253e-43, the smallest UQFF coupling (E_neb/E_ISM=ρ_UA/ρ_SCm=1/F_TRZ=10); F_AETHER=1.576e-35 Hz gives a period 6.35e34 s = 2.01e27 yr, a super-Hubble oscillation; completes the UQFF aether doublet (resonance + frequency)), wired v0.331.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -703,7 +703,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.327.0** | Band 1: PAPER_319 (Orion M42 SFR binding transition t_cross=67.7 kyr) | 333 |
 | **v0.328.0** | Band 1: PAPER_320 (CR34 DPM force-density atlas, ξ-span=1e35) | 334 |
 | **v0.329.0** | Band 1: PAPER_321 (CR34 cross-channel reversal V_f=5.43e28, 113-order spread) | 335 |
-| **v0.330.0** ← current | Band 1: PAPER_322 (CR34 intra-HII THz geometric differential Orion/Lagoon=8.59) | 336 |
+| **v0.330.0** | Band 1: PAPER_322 (CR34 intra-HII THz geometric differential Orion/Lagoon=8.59) | 336 |
+| **v0.331.0** ← current | Band 1: PAPER_323 (CR34b vacuum aether frequency mode, 11th UQFF term) | 337 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |
