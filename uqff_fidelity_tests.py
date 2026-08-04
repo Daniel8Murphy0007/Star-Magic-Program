@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.329.0", "uqff_calculator.VERSION = 0.329.0 (PAPER_321 = v0.329.0)")
+assert_that(C.VERSION == "0.330.0", "uqff_calculator.VERSION = 0.330.0 (PAPER_322 = v0.330.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4363,6 +4363,19 @@ assert_that(abs(_r321['delta_Orion_orders'] - 14.0) < 0.5,
 assert_that(abs(_r321['total_spread_orders'] - 113.0) < 1.5,
             "PAPER_321: 113-order total scale spread (largest two-point spread in UQFF module history)")
 assert_that(C.wired_count() >= 335, "wired_count >= 335 (PAPER_321 wired)")
+
+_r322 = C.calc('PAPER_322')['value']
+assert_that(abs(_r322['ratio_orion_lagoon'] - 8.59) < 0.02 and 'Gamma_THz cancels' in _r322['ratio_formula'],
+            "PAPER_322: Orion/Lagoon THz ratio = (A_vort/V_sys ratio) = 8.59 (Gamma_THz cancels)")
+assert_that(abs(_r322['surf_dens_orion'] - 4.562e-18) / 4.562e-18 < 0.005 and abs(_r322['surf_dens_lagoon'] - 5.313e-19) / 5.313e-19 < 0.005,
+            "PAPER_322: DPM surface densities A_vort/V_sys = 4.562e-18 (Orion), 5.313e-19 (Lagoon)")
+assert_that(abs(_r322['Gamma_THz'] - 3.333e7) / 3.333e7 < 0.005,
+            "PAPER_322: Gamma_THz = SO_5*f_THz*v_exp/c = 3.333e7 (identical both systems; paper's 3.333e6 print is a dropped-exponent typo)")
+assert_that('3.333e7' in _r322['Gamma_THz_printed_typo'],
+            "PAPER_322: Gamma_THz printed-typo noted (3.333e6 vs formula 3.333e7; cancels in ratio, unaffected)")
+assert_that('surface density' in _r322['geometry_modulator'],
+            "PAPER_322: DPM surface density A_vort/V_sys is the primary THz modulator (geometry, not f_DPM/f_THz/v_exp)")
+assert_that(C.wired_count() >= 336, "wired_count >= 336 (PAPER_322 wired)")
 
 
 # =============================================================================

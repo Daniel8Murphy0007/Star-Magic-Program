@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.329.0"
+VERSION = "0.330.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17408,6 +17408,40 @@ def _paper_321(dataset):
         },
         'formula': 'V_f_crossover=hbar/(E0*f_vac_diff*E_vac*c)=5.43e28 m^3/Hz (compressed a_vac_diff = resonance a_u_g4i); H atom -69 orders (resonance-dominant), Universe +44 orders (compressed-dominant), 113-order total spread',
         'source': 'PAPER_321',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_322')
+def _paper_322(dataset):
+    c = C_OBSERVED
+    f_THz = 1.0e11                                        # THz resonance freq (both systems), anchor
+    v_exp = 1.0e4                                         # expansion velocity (both systems), anchor
+    A_vort_34 = 3.142e34                                  # Orion vortex cross-section (m^2), anchor
+    V_sys_34 = 6.887e51                                   # Orion system volume (m^3), anchor
+    A_vort_30 = 3.142e35                                  # Lagoon vortex cross-section (m^2), anchor
+    V_sys_30 = 5.913e53                                   # Lagoon system volume (m^3), anchor
+    Gamma_THz = float(SO_5) * f_THz * v_exp / c           # 3.333e7 (identical for both; cancels in ratio)
+    surf_dens_orion = A_vort_34 / V_sys_34                # 4.562e-18 DPM surface density
+    surf_dens_lagoon = A_vort_30 / V_sys_30               # 5.313e-19
+    ratio = surf_dens_orion / surf_dens_lagoon            # 8.59 Orion/Lagoon THz differential
+    return {
+        'value': {
+            'domain': '3.20 (CR34 intra-HII THz geometric amplification differential; Orion vs Lagoon)',
+            'source_thread': 'Session 92 COMPRESSED_RESONANCE_UQFF34_MODULE.cpp',
+            'system': 'Orion M42 (sys34) vs Lagoon M8 (sys30), identical DPM class, different geometry',
+            'f_THz_Hz': f_THz, 'v_exp': v_exp,
+            'Gamma_THz': Gamma_THz,                     # 3.333e7 (identical, cancels in ratio)
+            'surf_dens_orion': surf_dens_orion,         # 4.562e-18 = A_vort/V_sys
+            'surf_dens_lagoon': surf_dens_lagoon,       # 5.313e-19
+            'ratio_orion_lagoon': ratio,                # 8.59
+            'ratio_formula': '(A_vort_34/V_sys_34)/(A_vort_30/V_sys_30) [Gamma_THz cancels]',
+            'geometry_modulator': 'DPM surface density A_vort/V_sys is the primary THz modulator, independent of f_DPM/f_THz/v_exp',
+            'Gamma_THz_printed_typo': 'paper prints Gamma_THz=3.333e6; formula 10*f_THz*v_exp/c=3.333e7 (dropped-exponent, cancels in ratio; CR34 table-typo family Q-249)',
+        },
+        'formula': 'ratio=a_THz_34/a_THz_30=(A_vort_34/V_sys_34)/(A_vort_30/V_sys_30)=8.59 (Gamma_THz cancels); Orion produces 8.59x more THz accel than Lagoon from geometry (DPM surface density) alone, same DPM class',
+        'source': 'PAPER_322',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

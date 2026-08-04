@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.330.0] — 2026-08-04 — BAND 1: PAPER_322 — CR34 INTRA-HII THz GEOMETRIC DIFFERENTIAL (CLEAN)
+
+### Added
+- **PAPER_322 dispatch** — CR34 Intra-HII THz Geometric Amplification Differential (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; third/final CR34 term). The **first UQFF intra-HII THz geometric amplification differential** — the same DPM class yields different THz acceleration from geometry alone.
+  - Orion M42 (sys34) and Lagoon M8 (sys30) share the DPM class (f_DPM = f_THz = 1e11 Hz, v_exp = 1e4 m/s), so their THz amplification Γ_THz = SO_5·f_THz·v_exp/c is identical and **cancels** in the ratio.
+  - Yet Orion produces **8.59× more THz acceleration** — the ratio = (A_vort/V_sys)_Orion / (A_vort/V_sys)_Lagoon = 4.562e-18/5.313e-19 = **8.59**, determined entirely by **DPM surface-density geometry**.
+  - Demonstrates DPM surface density (A_vort/V_sys) is the primary THz modulator within an HII DPM class, independent of f_DPM/f_THz/v_exp.
+  - **Note:** the paper prints Γ_THz = 3.333e6, but its own formula 10·f_THz·v_exp/c = 3.333e7 (dropped-exponent typo, CR34-table family Q-249); Γ_THz cancels so the 8.59 result is unaffected.
+- 2 registry observables, 5 graph edges, 3 corpus citations (PAPER_320/317/305).
+- 6 gate assertions (ratio 8.59, surface densities, Γ_THz=3.333e7, Γ-typo note, geometry modulator, wired_count ≥ 336). Gate 1987 → **1993/0**.
+
+### Wiring status
+- `wired_count()` = **336** (CLEAN). Campaign frontier PAPER_322 of 2255. Index: 88 ✓ / 248 ⚠ / 1919 ⬜ = 2255. CR34 module (320/321/322) complete.
+
+---
+
 ## [0.329.0] — 2026-08-04 — BAND 1: PAPER_321 — CR34 CROSS-CHANNEL DOMINANCE REVERSAL (CLEAN)
 
 ### Added

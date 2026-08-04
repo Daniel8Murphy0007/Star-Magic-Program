@@ -1,14 +1,15 @@
-v0.329.0 BAND 1: PAPER_321 wired - CR34 CROSS-CHANNEL DOMINANCE REVERSAL (CLEAN)
+v0.330.0 BAND 1: PAPER_322 wired - CR34 INTRA-HII THz GEOMETRIC DIFFERENTIAL (CLEAN)
 
-PAPER_321 (CR34 Cross-Channel Dominance Reversal, Session 92,
-COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; second CR34 term). First UQFF cross-channel
-dominance-reversal threshold separating atomic (resonance-dominant) from nebular/cosmic
-(compressed-dominant) systems.
+PAPER_322 (CR34 Intra-HII THz Geometric Amplification Differential, Session 92,
+COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; third/final CR34 term). First UQFF intra-HII THz
+geometric amplification differential - same DPM class, different THz accel from geometry alone.
 
-- V_f_crossover = hbar/(E0*f_vac_diff*E_vac*c) = 5.43e28 m^3/Hz (E0=(1-F_TRZ)*rho_UA, E_vac=rho_UA)
-- compressed (a_vac_diff) = resonance (a_u_g4i) at this V_sys/f_react ratio
-- H atom 69 orders below (resonance-dominant, extreme quantum limit)
-- Universe 44 orders above (compressed-dominant, extreme cosmological limit); Orion +14
-- 113-order total scale spread (largest two-point spread in UQFF module history)
+- Orion (sys34) and Lagoon (sys30) share DPM class (f_DPM=f_THz=1e11 Hz, v_exp=1e4) -> Gamma_THz
+  identical, cancels in ratio
+- ratio = (A_vort/V_sys)_Orion / (A_vort/V_sys)_Lagoon = 4.562e-18/5.313e-19 = 8.59 (geometry only)
+- DPM surface density A_vort/V_sys is the primary THz modulator (independent of f_DPM/f_THz/v_exp)
 
-CLEAN. wired_count 335, gate 1987/0. Campaign frontier PAPER_321 of 2255.
+NOTE: paper prints Gamma_THz=3.333e6; formula 10*f_THz*v_exp/c=3.333e7 (dropped-exponent typo,
+CR34-table family Q-249); cancels in ratio, 8.59 unaffected.
+
+CLEAN. wired_count 336, gate 1993/0. Campaign frontier PAPER_322 of 2255.

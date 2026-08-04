@@ -1447,3 +1447,8 @@ primitive,C_OBSERVED,observable,V_f_crossover_cr34,c in denominator
 observable,V_f_crossover_cr34,observable,channel_spread_cr34,deltas measured from crossover
 observable,V_f_crossover_cr34,paper,PAPER_321,wired
 observable,channel_spread_cr34,paper,PAPER_321,wired
+observable,dpm_surface_density_thz,observable,thz_ratio_orion_lagoon,ratio of surface densities
+primitive,SO_5,observable,thz_ratio_orion_lagoon,Gamma_THz=SO_5*... (cancels)
+observable,thz_ratio_orion_lagoon,paper,PAPER_322,wired
+observable,dpm_surface_density_thz,paper,PAPER_322,wired
+paper,PAPER_322,paper,PAPER_320,shared CR34 systems

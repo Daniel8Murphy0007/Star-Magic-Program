@@ -4685,3 +4685,21 @@ First UQFF cross-channel dominance-reversal threshold (atomic resonance -> cosmi
 
 CLEAN. Gate: 1987/0. Registry 673 rows / 1449 edges / 362 ledgers.
 Campaign frontier: PAPER_321 / 2,255. Next: PAPER_322.
+
+---
+
+## v0.330.0 — 2026-08-04 — PAPER_322 (CR34 intra-HII THz geometric differential)
+
+Wired PAPER_322 (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; third/final CR34 term).
+First UQFF intra-HII THz geometric amplification differential.
+
+- Orion (sys34) and Lagoon (sys30) share DPM class (f_DPM=f_THz=1e11 Hz, v_exp=1e4), so Gamma_THz
+  is identical and cancels in the ratio.
+- ratio = (A_vort/V_sys)_Orion / (A_vort/V_sys)_Lagoon = 4.562e-18/5.313e-19 = 8.59 (geometry only).
+- DPM surface density A_vort/V_sys is the primary THz modulator (independent of f_DPM/f_THz/v_exp).
+  All verified in Python.
+- NOTE: paper prints Gamma_THz=3.333e6; formula 10*f_THz*v_exp/c=3.333e7 (dropped-exponent typo,
+  CR34-table family Q-249; cancels in ratio, 8.59 unaffected).
+
+CLEAN. Gate: 1993/0. Registry 675 rows / 1454 edges / 365 ledgers. CR34 module (320/321/322) complete.
+Campaign frontier: PAPER_322 / 2,255. Next: PAPER_323.
