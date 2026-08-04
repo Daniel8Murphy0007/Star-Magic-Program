@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.307.0", "uqff_calculator.VERSION = 0.307.0 (PAPER_300 = v0.307.0)")
+assert_that(C.VERSION == "0.308.0", "uqff_calculator.VERSION = 0.308.0 (PAPER_301 = v0.308.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4088,6 +4088,19 @@ assert_that(abs(_r300['a_standing'] - 2.000e-10) < 1e-13 and abs(_r300['a_travel
 assert_that(abs(_r300['k_Lyman'] - 5.166e7) < 5e4,
             "PAPER_300: k_Lyman = 2*pi/lambda = 5.166e7 m^-1 (UV wave vector)")
 assert_that(C.wired_count() >= 314, "wired_count >= 314 (PAPER_300 wired)")
+
+_r301 = C.calc('PAPER_301')['value']
+assert_that(abs(_r301['eps_GR'] - 7.040e-44) / 7.040e-44 < 0.005 and _r301['eps_GR_formula'] == '3*G*M_p/(r_Bohr*c^2)',
+            "PAPER_301: eps_GR = 3*G*M_p/(r_Bohr*c^2) = 7.040e-44 (smallest eps_GR of all UQFF modules)")
+assert_that(abs(_r301['r_S_m'] - 2.484e-54) / 2.484e-54 < 0.005 and abs(_r301['rBohr_over_rS'] - 2.131e43) / 2.131e43 < 0.005,
+            "PAPER_301: r_S = 2GM_p/c^2 = 2.484e-54 m; r_Bohr/r_S = 2.131e43")
+assert_that(abs(_r301['a_GR_min'] - 2.81e-60) / 2.81e-60 < 0.01,
+            "PAPER_301: a_GR_min = g_base*eps_GR = 2.81e-60 m/s2 (smallest individual UQFF term)")
+assert_that(abs(_r301['gr_spectral_span'] - 7.18e43) / 7.18e43 < 0.005 and _r301['smallest_eps_GR'],
+            "PAPER_301: GR spectral span (H->Universe) = 5.056/eps_GR = 7.18e43 (~44 orders, min-to-max with PAPER_298)")
+assert_that(abs(_r301['eps_GR_universe_ref'] - 5.056) < 0.01,
+            "PAPER_301: spectral range anchored to PAPER_298 universe-scale eps_GR = 5.056 (max)")
+assert_that(C.wired_count() >= 315, "wired_count >= 315 (PAPER_301 wired)")
 
 
 # =============================================================================

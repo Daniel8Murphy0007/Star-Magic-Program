@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.308.0] — 2026-08-04 — BAND 1: PAPER_301 — HYDROGEN PROTON GR SPECTRAL MINIMUM (ε_GR = 7.04e-44) (CLEAN)
+
+### Added
+- **PAPER_301 dispatch** — Hydrogen Atom Proton GR Spectral Minimum (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp; third/final hydrogen module term). Mirror of PAPER_298: the ε_GR *minimum* to PAPER_298's maximum.
+  - ε_GR = 3GM_p/(r_Bohr·c²) = **7.040e-44** — the smallest GR curvature parameter across all 27 modules.
+  - Proton Schwarzschild radius r_S = 2GM_p/c² = **2.484e-54 m** ⇒ r_Bohr/r_S = **2.131e43**.
+  - a_GR_min = g_base·ε_GR = **2.81e-60 m/s²** — the smallest individual UQFF term ever computed.
+  - **UQFF GR spectral range**: with PAPER_298 (universe, ε_GR=5.056) the span is 5.056/7.04e-44 = **7.18e43** — ~44 orders of magnitude from the hydrogen atom to the observable universe.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_298/299).
+- 6 gate assertions (ε_GR min, r_S/ratio, a_GR_min, spectral span, PAPER_298 anchor, wired_count ≥ 315). Gate 1861 → **1867/0**.
+
+### Wiring status
+- `wired_count()` = **315** (CLEAN). Campaign frontier PAPER_301 of 2255. Index: 69 ✓ / 246 ⚠ / 1940 ⬜ = 2255.
+
+---
+
 ## [0.307.0] — 2026-08-04 — BAND 1: PAPER_300 — HYDROGEN LYMAN-α COSMIC BRIDGE (UNIVERSAL T/S = π/13.8) (CLEAN)
 
 ### Added

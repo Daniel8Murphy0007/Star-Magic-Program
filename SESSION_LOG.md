@@ -4345,3 +4345,18 @@ Confirms the PAPER_288 cosmic-age T/S bridge constant at atomic scale.
 
 CLEAN. Gate: 1861/0. Registry 612 rows / 1315 edges / 321 ledgers.
 Campaign frontier: PAPER_300 / 2,255. Next: PAPER_301.
+
+---
+
+## v0.308.0 — 2026-08-04 — PAPER_301 (hydrogen proton GR spectral minimum, eps_GR=7.04e-44)
+
+Wired PAPER_301 (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp; third/final hydrogen term).
+Mirror of PAPER_298 (universe eps_GR max = 5.056); this is the eps_GR minimum.
+
+- eps_GR = 3*G*M_p/(r_Bohr*c^2) = 7.040e-44 (smallest of all 27 modules).
+- r_S = 2GM_p/c^2 = 2.484e-54 m (proton); r_Bohr/r_S = 2.131e43.
+- a_GR_min = g_base*eps_GR = 2.81e-60 m/s2 (smallest individual UQFF term).
+- GR spectral span (H->Universe) = 5.056/7.04e-44 = 7.18e43 (~44 orders). Verified in Python.
+
+CLEAN. Gate: 1867/0. Registry 615 rows / 1322 edges / 323 ledgers.
+Campaign frontier: PAPER_301 / 2,255. Next: PAPER_302.

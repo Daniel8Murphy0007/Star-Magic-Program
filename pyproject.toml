@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.307.0"
-description = "UQFF Star-Magic-Program v0.307.0: PAPER_300 wired (CLEAN) - hydrogen Lyman-alpha cosmic bridge; omega_Lyman=2*pi*c/lambda=1.549e16 rad/s; universal traveling/standing ratio T/S=pi/T_U,gyr=pi/13.8=0.2277 identical to PAPER_288 across 34 orders of frequency (frequency-independent, a cosmic-age constant); Lyman-Universe coupling chi_bridge=omega_Lyman*t_H=6.745e33 UV cycles over cosmic age. wired_count 314, gate 1861/0. Campaign frontier PAPER_300 of 2255."
+version = "0.308.0"
+description = "UQFF Star-Magic-Program v0.308.0: PAPER_301 wired (CLEAN) - hydrogen proton GR spectral minimum; eps_GR=3*G*M_p/(r_Bohr*c^2)=7.040e-44 (smallest of all 27 modules); proton Schwarzschild r_S=2GM_p/c^2=2.484e-54 m, r_Bohr/r_S=2.131e43; a_GR_min=g_base*eps_GR=2.81e-60 m/s2 (smallest individual UQFF term); with PAPER_298 (5.056) completes the GR spectral span 7.18e43 (~44 orders, hydrogen to observable universe). wired_count 315, gate 1867/0. Campaign frontier PAPER_301 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

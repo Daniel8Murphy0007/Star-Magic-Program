@@ -610,3 +610,6 @@ eta_EM_electrograv_dominance,PAPER_299 electrogravitational dominance,derived_ra
 omega_Lyman_alpha,PAPER_300 hydrogen Lyman-alpha,derived_frequency,2*pi*c/lambda,UV Lyman-alpha line,1.549e16 rad/s,PAPER_300,0.0,atomic/oscillation,resonance,PAPER_300,1,1,0,0,PAPER_288;PAPER_299,WIRED
 T_over_S_cosmic_bridge,PAPER_300 universal T/S ratio,derived_ratio,"pi/T_U,gyr","frequency-independent, = PAPER_288",0.2277,PAPER_300,0.0,atomic/cosmology,resonance,PAPER_300,1,1,0,0,PAPER_288,WIRED
 chi_bridge_lyman_universe,PAPER_300 Lyman-Universe coupling,derived_factor,omega_Lyman*t_H,UV cycles over cosmic age,6.745e33,PAPER_300,0.0,atomic/cosmology,resonance,PAPER_300,1,1,0,0,PAPER_300,WIRED
+eps_GR_hydrogen_min,PAPER_301 hydrogen proton GR minimum,derived_ratio,3*G*M_p/(r_Bohr*c^2),smallest eps_GR of all modules,7.040e-44,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_298;PAPER_299,WIRED
+r_S_proton_schwarzschild,PAPER_301 proton Schwarzschild radius,derived_length,2*G*M_p/c^2,r_Bohr/r_S=2.131e43,2.484e-54 m,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_301,WIRED
+gr_spectral_span_H_to_universe,PAPER_301 GR spectral range,derived_ratio,eps_GR(Universe)/eps_GR(H),~44 orders (PAPER_298 to PAPER_301),7.18e43,PAPER_301,0.0,atomic/GR,resonance,PAPER_301,1,1,0,0,PAPER_298,WIRED

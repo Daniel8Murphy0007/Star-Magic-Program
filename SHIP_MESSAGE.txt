@@ -1,13 +1,12 @@
-v0.307.0 BAND 1: PAPER_300 wired - HYDROGEN LYMAN-ALPHA COSMIC BRIDGE (UNIVERSAL T/S = pi/13.8) (CLEAN)
+v0.308.0 BAND 1: PAPER_301 wired - HYDROGEN PROTON GR SPECTRAL MINIMUM (eps_GR = 7.04e-44) (CLEAN)
 
-PAPER_300 (Hydrogen Atom Lyman-alpha Cosmic Bridge, Session 85,
-HYDROGEN_ATOM_UQFF_MODULE.cpp; second hydrogen module term). Confirms the PAPER_288
-cosmic-age T/S bridge constant at atomic scale.
+PAPER_301 (Hydrogen Atom Proton GR Spectral Minimum, Session 85,
+HYDROGEN_ATOM_UQFF_MODULE.cpp; third/final hydrogen module term). Mirror of PAPER_298
+(universe eps_GR max = 5.056); this is the eps_GR minimum.
 
-- omega_Lyman = 2*pi*c/lambda = 1.549e16 rad/s (lambda_Ly=121.6 nm)
-- T/S = pi/T_U,gyr = pi/13.8 = 0.2277 (identical to PAPER_288; frequency-independent across
-  34 orders, from Lyman UV ~1e16 to Hubble flow H0 ~1e-18 -- a cosmic-age constant)
-- standing 2A=2.000e-10; traveling (2pi/T_U)*A=4.553e-11 m/s2
-- chi_bridge = omega_Lyman*t_H = 6.745e33 (UV oscillation cycles over the age of the universe)
+- eps_GR = 3*G*M_p/(r_Bohr*c^2) = 7.040e-44 (smallest of all 27 modules)
+- r_S = 2GM_p/c^2 = 2.484e-54 m proton Schwarzschild radius; r_Bohr/r_S = 2.131e43
+- a_GR_min = g_base*eps_GR = 2.81e-60 m/s2 (smallest individual UQFF term)
+- GR spectral span (H->Universe) = 5.056/7.04e-44 = 7.18e43 (~44 orders, with PAPER_298)
 
-CLEAN. wired_count 314, gate 1861/0. Campaign frontier PAPER_300 of 2255.
+CLEAN. wired_count 315, gate 1867/0. Campaign frontier PAPER_301 of 2255.

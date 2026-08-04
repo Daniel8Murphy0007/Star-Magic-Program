@@ -1313,3 +1313,10 @@ observable,T_over_S_cosmic_bridge,paper,PAPER_288,universal T/S = PAPER_288
 observable,omega_Lyman_alpha,paper,PAPER_300,wired
 observable,T_over_S_cosmic_bridge,paper,PAPER_300,wired
 observable,chi_bridge_lyman_universe,paper,PAPER_300,wired
+primitive,G_OBSERVED,observable,eps_GR_hydrogen_min,G factor
+primitive,C_OBSERVED,observable,eps_GR_hydrogen_min,c^2 denominator
+observable,eps_GR_hydrogen_min,observable,gr_spectral_span_H_to_universe,5.056/eps_GR
+observable,eps_GR_hydrogen_min,observable,r_S_proton_schwarzschild,r_Bohr/r_S
+observable,eps_GR_hydrogen_min,paper,PAPER_301,wired
+observable,r_S_proton_schwarzschild,paper,PAPER_301,wired
+observable,gr_spectral_span_H_to_universe,paper,PAPER_301,wired

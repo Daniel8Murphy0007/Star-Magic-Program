@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.307.0"
+VERSION = "0.308.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16617,6 +16617,42 @@ def _paper_300(dataset):
         },
         'formula': 'omega_Lyman=2*pi*c/lambda=1.549e16 rad/s; T/S=pi/T_U,gyr=pi/13.8=0.2277 (universal, = PAPER_288, frequency-independent across 34 orders); chi_bridge=omega_Lyman*t_H=6.745e33 (Lyman-Universe coupling)',
         'source': 'PAPER_300',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_301')
+def _paper_301(dataset):
+    G = G_OBSERVED
+    c = C_OBSERVED
+    M_p = 1.6726e-27                                      # proton mass, atomic anchor
+    r_Bohr = 5.2918e-11                                   # Bohr radius, atomic anchor
+    g_base = 3.986e-17                                    # hydrogen g_base (PAPER_299)
+    eps_GR_universe = 5.056                               # universe-scale eps_GR (PAPER_298)
+    eps_GR = 3.0 * G * M_p / (r_Bohr * c ** 2)            # 7.040e-44 minimum eps_GR of all modules
+    r_S = 2.0 * G * M_p / c ** 2                          # 2.484e-54 m proton Schwarzschild radius
+    rBohr_over_rS = r_Bohr / r_S                          # 2.131e43 Bohr-to-Schwarzschild ratio
+    gr_spectral_span = eps_GR_universe / eps_GR           # 7.18e43 (44 orders, H -> Universe)
+    a_GR_min = g_base * eps_GR                            # 2.81e-60 smallest individual UQFF term
+    return {
+        'value': {
+            'domain': '2.99 (hydrogen proton GR minimum; completes UQFF GR spectral range with PAPER_298)',
+            'source_thread': 'Session 85 HYDROGEN_ATOM_UQFF_MODULE.cpp (27th C++ module, first atomic)',
+            'system': 'Hydrogen ground state, proton at Bohr radius',
+            'M_p_kg': M_p, 'r_Bohr_m': r_Bohr, 'g_base': g_base,
+            'eps_GR': eps_GR,                            # 7.040e-44
+            'eps_GR_formula': '3*G*M_p/(r_Bohr*c^2)',
+            'smallest_eps_GR': True,                     # minimum across all 27 modules
+            'r_S_m': r_S,                                # 2.484e-54 proton Schwarzschild radius
+            'rBohr_over_rS': rBohr_over_rS,              # 2.131e43
+            'a_GR_min': a_GR_min,                        # 2.81e-60 smallest individual UQFF term
+            'gr_spectral_span': gr_spectral_span,        # 7.18e43
+            'gr_spectral_orders': 43.9,                  # log10(span) H -> Universe
+            'eps_GR_universe_ref': eps_GR_universe,      # 5.056 (PAPER_298 max)
+        },
+        'formula': 'eps_GR=3*G*M_p/(r_Bohr*c^2)=7.040e-44 (smallest of all UQFF modules); r_S=2GM_p/c^2=2.484e-54 m; a_GR_min=g_base*eps_GR=2.81e-60 m/s2 (smallest individual UQFF term); GR spectral span (H->Universe)=5.056/7.04e-44=7.18e43 (~44 orders)',
+        'source': 'PAPER_301',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
