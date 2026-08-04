@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.291.0"
-description = "UQFF Star-Magic-Program v0.291.0: PAPER_284 wired (CLEAN) - M16 Eagle Nebula Dual Mass Co-Action Product Phi_dm=(1+SFR_rate*t)*(1-E_rad); multiplicative gain-saturation coupling of star formation + photoevaporation; at t=5 Myr Phi_mult=3151.9 vs additive 4165.6 (gap -1013.3 = 24.3% less); first UQFF multiplicative gain-saturation product. wired_count 298, gate 1775/0. Campaign frontier PAPER_284 of 2255. (v0.285.0 burned; v0.286.0-0.290.0 shipped.)"
+version = "0.292.0"
+description = "UQFF Star-Magic-Program v0.292.0: PAPER_285 wired (CLEAN) - M16 Eagle Nebula Erosion Saturation Half-Time t_half=tau*ln(2)=2.079 Myr and DeltagMax=E0*g_base=4.36e-13 m/s2; photoevaporation E_rad=E0*(1-exp(-t/tau)) reaches only 63.2% at tau (pillars survive); first UQFF photoevaporation half-time catalog. wired_count 299, gate 1780/0. Campaign frontier PAPER_285 of 2255. (v0.285.0 burned; v0.286.0-0.291.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

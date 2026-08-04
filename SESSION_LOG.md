@@ -4050,3 +4050,22 @@ Frontier PAPER_283 -> PAPER_284. Version PAPER_284 = v0.291.0.
 
 Gate: 1775/0. Registry 583 rows / 1262 edges / 298 ledgers. Campaign frontier:
 PAPER_284 / 2,255. Next: PAPER_285.
+
+---
+
+## 2026-08-03 — v0.292.0 — BAND 1: PAPER_285 — M16 EAGLE NEBULA EROSION SATURATION HALF-TIME (CLEAN)
+
+PAPER_285 (M16 Erosion Saturation Half-Time t_half + DeltagMax, Session 80,
+M16_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First UQFF module cataloguing
+photoevaporation half-time + asymptotic erosion. E_rad(t)=E0*(1-exp(-t/tau)),
+E0=0.3, tau=3 Myr. t_half=tau*ln(2)=6.561e13 s=2.079 Myr (E_rad=E0/2). DeltagMax=
+E0*g_base=0.3*1.454e-12=4.36e-13 (asymptotic). dg/dt|0=E0/tau*g_base=4.61e-27. KEY:
+at tau erosion only 63.2% not 100%; M16 Pillars survive because erosion saturates;
+t_half = inflection in g_dyn(t).
+
+wired_count 298 -> 299. Gate +5 (1780/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_285 -> checkmark (55 / 244 / 1956 = 2255; wired 299 = count).
+Frontier PAPER_284 -> PAPER_285. Version PAPER_285 = v0.292.0.
+
+Gate: 1780/0. Registry 584 rows / 1263 edges / 299 ledgers. Campaign frontier:
+PAPER_285 / 2,255. Next: PAPER_286.

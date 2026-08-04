@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.291.0"
+VERSION = "0.292.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16014,6 +16014,43 @@ def _paper_284(dataset):
         },
         'formula': 'Phi_dm(t)=(1+SFR_rate*t)*(1-E_rad); M_sf=4164.8, E_rad=0.2433 -> Phi_mult=3151.9 vs Phi_add=4165.6; gap=-(M_sf*E_rad)=-1013.3 (24.3% less); g_dyn=g_base*Phi_dm=4.583e-9',
         'source': 'PAPER_284',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_285')
+def _paper_285(dataset):
+    import math
+    tau = 9.468e13                                       # 3 Myr e-folding
+    E0 = 0.3
+    g_base = 1.454e-12
+    t_half = tau * math.log(2.0)                          # 6.561e13 s = 2.079 Myr
+    t_half_Myr = t_half / 3.156e13
+    dg_max = E0 * g_base                                  # 4.36e-13
+    dg_dt_0 = E0 / tau * g_base                           # 4.61e-27
+    profile = {}
+    for lbl, t in [('t_half', t_half), ('tau', tau), ('t_5Myr', 1.578e14)]:
+        E = E0 * (1.0 - math.exp(-t / tau))
+        profile[lbl] = {'E_rad_over_E0_pct': round(E / E0 * 100.0, 1), 'E_rad': E, 'g_erode': E * g_base}
+    return {
+        'value': {
+            'domain': '2.83 (M16 erosion saturation half-time t_half + DeltagMax)',
+            'source_thread': 'Session 80 M16_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'M16 Eagle Nebula (photoevaporation, NGC 6611 O-stars)',
+            'tau_s': tau, 'E0': E0, 'g_base': g_base,
+            't_half_s': t_half,                          # 6.561e13
+            't_half_Myr': t_half_Myr,                    # 2.079
+            't_half_formula': 'tau*ln(2)',
+            'dg_max': dg_max,                            # 4.36e-13
+            'dg_max_formula': 'E0*g_base',
+            'dg_dt_at_0': dg_dt_0,                       # 4.61e-27
+            'saturation_profile': profile,
+            'tau_only_63pct_not_100': True,              # at tau erosion=63.2%, not complete
+            'first_photoevaporation_halftime_catalog': True,
+        },
+        'formula': 't_half=tau*ln(2)=9.468e13*0.6931=6.561e13 s=2.079 Myr; DeltagMax=E0*g_base=0.3*1.454e-12=4.36e-13; saturation: t_half 50%, tau 63.2%, 5 Myr 81.1%, inf 100%',
+        'source': 'PAPER_285',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

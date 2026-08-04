@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.292.0] — 2026-08-03 — BAND 1: PAPER_285 — M16 EAGLE NEBULA EROSION SATURATION HALF-TIME (CLEAN)
+
+### Added
+- **PAPER_285 dispatch** — M16 Eagle Nebula Erosion Saturation Half-Time t_half and ΔgMax (Session 80, M16_UQFF_MODULE.cpp). The **first UQFF module to catalogue the photoevaporation half-time and asymptotic erosion**.
+  - Photoevaporation E_rad(t) = E0·(1 − e^(−t/τ)), E0 = 0.3, τ = 3 Myr.
+  - Half-erosion time t_half = τ·ln(2) = 6.561e13 s = **2.079 Myr** (E_rad = E0/2).
+  - Maximum erosion gravity ΔgMax = E0·g_base = 0.3·1.454e-12 = **4.36e-13 m/s²** (asymptotic t→∞). Peak rate dg/dt|₀ = E0/τ·g_base = 4.61e-27 m/s²/s.
+  - Key: at τ = 3 Myr erosion has reached only **63.2%**, not 100% — half occurs earlier at 2.079 Myr, so the M16 "Pillars of Creation" survive because erosion saturates. t_half is the inflection in g_dyn(t).
+- Gate +5 assertions (→ 1780, 0 failures). wired_count 298 → **299**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_285 → ✓.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.291.0] — 2026-08-03 — BAND 1: PAPER_284 — M16 EAGLE NEBULA DUAL MASS CO-ACTION PRODUCT (CLEAN)
 
 ### Added

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.291.0", "uqff_calculator.VERSION = 0.291.0 (PAPER_284 = v0.291.0)")
+assert_that(C.VERSION == "0.292.0", "uqff_calculator.VERSION = 0.292.0 (PAPER_285 = v0.292.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3900,6 +3900,17 @@ assert_that(abs(_r284['gap_mult_add'] + 1013.3) < 1.0 and _r284['gap_pct'] == 24
 assert_that(abs(_r284['g_dyn'] - 4.583e-9) < 1e-11 and _r284['first_multiplicative_gain_saturation_product'],
             "PAPER_284: g_dyn = g_base*Phi_dm = 4.583e-9; first UQFF multiplicative gain-saturation product")
 assert_that(C.wired_count() >= 298, "wired_count >= 298 (PAPER_284 wired)")
+
+_r285 = C.calc('PAPER_285')['value']
+assert_that(abs(_r285['t_half_Myr'] - 2.079) < 1e-2 and _r285['t_half_formula'] == 'tau*ln(2)',
+            "PAPER_285: t_half = tau*ln(2) = 6.561e13 s = 2.079 Myr (erosion half-time)")
+assert_that(abs(_r285['dg_max'] - 4.36e-13) < 1e-15 and _r285['dg_max_formula'] == 'E0*g_base',
+            "PAPER_285: DeltagMax = E0*g_base = 0.3*1.454e-12 = 4.36e-13 m/s2 (asymptotic max erosion gravity)")
+assert_that(_r285['saturation_profile']['t_half']['E_rad_over_E0_pct'] == 50.0 and _r285['saturation_profile']['tau']['E_rad_over_E0_pct'] == 63.2,
+            "PAPER_285: saturation: E_rad/E0 = 50% at t_half, 63.2% at tau (not 100%)")
+assert_that(_r285['tau_only_63pct_not_100'] and _r285['first_photoevaporation_halftime_catalog'],
+            "PAPER_285: at tau erosion only 63.2% (pillars survive); first photoevaporation half-time catalog")
+assert_that(C.wired_count() >= 299, "wired_count >= 299 (PAPER_285 wired)")
 
 
 # =============================================================================
