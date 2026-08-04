@@ -1359,3 +1359,9 @@ observable,a_rad_lagoon,observable,aEM_over_arad_dual_barrier,a_rad from PAPER_3
 observable,a_EM_turbulent_lagoon,paper,PAPER_307,wired
 observable,eta_EM_lagoon,paper,PAPER_307,wired
 observable,aEM_over_arad_dual_barrier,paper,PAPER_307,wired
+observable,tau_spiral_torque,observable,dtau_over_H0_spiral,dtau/dt=f_gas*Omega_p
+observable,tau_spiral_torque,observable,T_pattern_spiral,both from Omega_p
+observable,tau_spiral_torque,paper,PAPER_308,wired
+observable,T_pattern_spiral,paper,PAPER_308,wired
+observable,dtau_over_H0_spiral,paper,PAPER_308,wired
+anchor,H0_SH0ES_73,observable,dtau_over_H0_spiral,SH0ES obs comparison (not UQFF H0)

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.314.0", "uqff_calculator.VERSION = 0.314.0 (PAPER_307 = v0.314.0)")
+assert_that(C.VERSION == "0.315.0", "uqff_calculator.VERSION = 0.315.0 (PAPER_308 = v0.315.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4180,6 +4180,19 @@ assert_that(_r307['dual_barrier'],
 assert_that(abs(_r307['net_nongrav_support'] - 8.84e7) / 8.84e7 < 0.01,
             "PAPER_307: net a_EM - a_rad = 8.84e7 m/s2 (EM dominates, net outward support)")
 assert_that(C.wired_count() >= 321, "wired_count >= 321 (PAPER_307 wired)")
+
+_r308 = C.calc('PAPER_308')['value']
+assert_that(abs(_r308['tau_spiral_10Gyr'] - 2.046) < 0.005 and _r308['tau_spiral_formula'] == '(M_gas/M)*Omega_p*t',
+            "PAPER_308: tau_spiral(10 Gyr) = (M_gas/M)*Omega_p*t = 2.046 (dimensionless spiral torque)")
+assert_that(abs(_r308['g_amp'] - 3.046) < 0.005,
+            "PAPER_308: g_amp = 1 + tau_spiral = 3.046 (3x gravity at 10 Gyr vs formation)")
+assert_that(abs(_r308['T_pattern_Myr'] - 307.0) < 1.0,
+            "PAPER_308: T_pattern = 2*pi/Omega_p = 307 Myr (spiral arm pattern period)")
+assert_that(abs(_r308['dtau_over_H0'] - 2.741) < 0.005 and _r308['torque_faster_than_hubble'],
+            "PAPER_308: dtau/dt = 6.483e-18 = 2.741*H0_SH0ES (torque evolves 2.7x faster than cosmic expansion)")
+assert_that(abs(_r308['Omega_p_rad_s'] - 6.483e-16) / 6.483e-16 < 0.005,
+            "PAPER_308: Omega_p = 20 km/s/kpc = 6.483e-16 rad/s (pattern speed)")
+assert_that(C.wired_count() >= 322, "wired_count >= 322 (PAPER_308 wired)")
 
 
 # =============================================================================

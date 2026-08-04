@@ -4458,3 +4458,21 @@ dual-barrier H II module: both a_EM and a_rad independently exceed self-gravity.
 
 CLEAN. Gate: 1903/0. Registry 633 rows / 1361 edges / 334 ledgers.
 Campaign frontier: PAPER_307 / 2,255. Next: PAPER_308.
+
+---
+
+## v0.315.0 — 2026-08-04 — PAPER_308 (spiral arm torque gravitational amplifier)
+
+Wired PAPER_308 (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp, 30th C++ module, first
+spiral + SN Ia). New galaxy-dynamics sector.
+
+- tau_spiral = (M_gas/M)*Omega_p*t = 2.046 at 10 Gyr (f_gas=0.01, Omega_p=6.483e-16).
+- g_amp = 1 + tau = 3.046 (3x gravity at 10 Gyr vs formation).
+- T_pattern = 2pi/Omega_p = 307 Myr.
+- dtau/dt = f_gas*Omega_p = 6.483e-18 = 2.741*H0_SH0ES (galactic evolution 2.7x faster than
+  cosmic expansion). All verified in Python.
+- NOTE: H0_SH0ES=73 km/s/Mpc is an external observational comparison anchor (Riess 2022),
+  NOT UQFF's own H0 (which remains 70 = A_5+SO_5); H0->70 drift rule does not apply here.
+
+CLEAN. Gate: 1909/0. Registry 636 rows / 1367 edges / 336 ledgers.
+Campaign frontier: PAPER_308 / 2,255. Next: PAPER_309.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.314.0"
+VERSION = "0.315.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16868,6 +16868,41 @@ def _paper_307(dataset):
         },
         'formula': 'a_EM=q*v_gas*B/m_H=9.59e7 m/s2; eta_EM=a_EM/g_base=1.96e19 (19 orders); a_EM/a_rad=12.77 (dual-barrier signature, EM leads radiation); net a_EM-a_rad=8.84e7 (net outward support); first UQFF dual radiation-EM barrier',
         'source': 'PAPER_307',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_308')
+def _paper_308(dataset):
+    import math as _m
+    f_gas = 0.01                                          # gas arm mass fraction M_gas/M, anchor
+    Omega_p = 20.0e3 / 3.086e19                            # 6.483e-16 rad/s pattern speed (20 km/s/kpc)
+    t_10Gyr = 10.0e9 * 3.15576e7                           # 3.156e17 s (10 Gyr)
+    H0_SH0ES = 73.0e3 / 3.086e22                           # 2.366e-18 s^-1 SH0ES obs anchor (Riess 2022; NOT UQFF H0)
+    tau_spiral = f_gas * Omega_p * t_10Gyr                 # 2.046 dimensionless spiral torque
+    g_amp = 1.0 + tau_spiral                               # 3.046 gravity amplification factor
+    T_pattern = 2.0 * _m.pi / Omega_p                      # 9.695e15 s = 307 Myr pattern period
+    dtau_dt = f_gas * Omega_p                              # 6.483e-18 s^-1 torque rate
+    dtau_over_H0 = dtau_dt / H0_SH0ES                      # 2.741 torque rate vs Hubble rate
+    return {
+        'value': {
+            'domain': '3.06 (spiral galaxy arm torque gravitational amplifier; first UQFF spiral+SN Ia module)',
+            'source_thread': 'Session 88 SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp (30th C++ module)',
+            'system': 'Milky-Way-class spiral galaxy (1e11 M_sun, 30 kpc), pattern-speed torque',
+            'f_gas': f_gas, 'Omega_p_rad_s': Omega_p, 't_10Gyr_s': t_10Gyr,
+            'tau_spiral_10Gyr': tau_spiral,             # 2.046
+            'tau_spiral_formula': '(M_gas/M)*Omega_p*t',
+            'g_amp': g_amp,                             # 3.046 (3x gravity at 10 Gyr vs formation)
+            'T_pattern_s': T_pattern,                   # 9.695e15
+            'T_pattern_Myr': T_pattern / (3.15576e7 * 1e6),  # 307
+            'dtau_dt': dtau_dt,                         # 6.483e-18
+            'H0_SH0ES_s^-1': H0_SH0ES,                  # 2.366e-18 (observational comparison anchor)
+            'dtau_over_H0': dtau_over_H0,               # 2.741
+            'torque_faster_than_hubble': dtau_over_H0 > 1.0,  # internal galactic evolution > cosmic expansion
+        },
+        'formula': 'tau_spiral(10Gyr)=(M_gas/M)*Omega_p*t=2.046 -> g_amp=1+tau=3.046 (3x gravity at 10 Gyr); T_pattern=2pi/Omega_p=307 Myr; dtau/dt=f_gas*Omega_p=6.483e-18 = 2.741*H0_SH0ES (torque evolves 2.7x faster than cosmic expansion)',
+        'source': 'PAPER_308',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

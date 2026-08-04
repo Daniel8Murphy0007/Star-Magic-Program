@@ -631,3 +631,6 @@ eta_rad_lagoon,PAPER_306 radiation-to-gravity dominance,derived_ratio,a_rad/g_ba
 a_EM_turbulent_lagoon,PAPER_307 Lagoon EM turbulence,derived_acceleration,q*v_gas*B/m_H,Lorentz on turbulent ions,9.59e7 m/s2,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306;PAPER_299,WIRED
 eta_EM_lagoon,PAPER_307 EM-to-gravity dominance,derived_ratio,a_EM/g_base,19 orders,1.96e19,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306,WIRED
 aEM_over_arad_dual_barrier,PAPER_307 dual-barrier signature,derived_ratio,a_EM/a_rad,EM leads radiation,12.77,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306,WIRED
+tau_spiral_torque,PAPER_308 spiral arm torque,derived_factor,(M_gas/M)*Omega_p*t,running torque accumulation,2.046 at 10 Gyr,PAPER_308,0.0,astro/galaxy-dynamics,resonance,PAPER_308,1,1,0,0,PAPER_309;PAPER_310,WIRED
+T_pattern_spiral,PAPER_308 spiral pattern period,derived_time,2*pi/Omega_p,grand-design arm lifetime,307 Myr,PAPER_308,0.0,astro/galaxy-dynamics,resonance,PAPER_308,1,1,0,0,PAPER_308,WIRED
+dtau_over_H0_spiral,PAPER_308 torque vs Hubble rate,derived_ratio,(f_gas*Omega_p)/H0_SH0ES,internal evolution > cosmic expansion,2.741,PAPER_308,0.0,astro/galaxy-dynamics,resonance,PAPER_308,1,1,0,0,PAPER_308,WIRED

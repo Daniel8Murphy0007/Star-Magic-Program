@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.315.0] — 2026-08-04 — BAND 1: PAPER_308 — SPIRAL ARM TORQUE GRAVITATIONAL AMPLIFIER (CLEAN)
+
+### Added
+- **PAPER_308 dispatch** — Spiral Arm Torque Gravitational Amplifier (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp, 30th C++ module — the **first spiral + SN Ia module**). Opens a galaxy-dynamics sector.
+  - Dimensionless spiral torque τ_spiral = (M_gas/M)·Ω_p·t = **2.046** at 10 Gyr (f_gas = 0.01, Ω_p = 20 km/s/kpc = 6.483e-16 rad/s), a running accumulation of pattern momentum applied as a multiplicative pipeline stage.
+  - Gravity amplification g_amp = 1 + τ = **3.046** — effective gravity 3× stronger at 10 Gyr than at formation, driven purely by spiral-arm pattern-momentum accumulation.
+  - Pattern period T_pattern = 2π/Ω_p = **307 Myr** (consistent with grand-design arm lifetimes).
+  - Torque rate dτ/dt = f_gas·Ω_p = **6.483e-18 s⁻¹** = **2.741·H0_SH0ES** — galactic internal structure evolves 2.7× faster than cosmic expansion. (H0_SH0ES = 73 km/s/Mpc is used here only as an external observational comparison anchor, Riess et al. 2022 — not UQFF's own H0, which remains 70 = A_5+SO_5.)
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_309/310).
+- 6 gate assertions (τ_spiral, g_amp, T_pattern, dτ/H0, Ω_p, wired_count ≥ 322). Gate 1903 → **1909/0**.
+
+### Wiring status
+- `wired_count()` = **322** (CLEAN). Campaign frontier PAPER_308 of 2255. Index: 75 ✓ / 247 ⚠ / 1933 ⬜ = 2255.
+
+---
+
 ## [0.314.0] — 2026-08-04 — BAND 1: PAPER_307 — LAGOON NEBULA DUAL RADIATION-EM BARRIER (CLEAN)
 
 ### Added
