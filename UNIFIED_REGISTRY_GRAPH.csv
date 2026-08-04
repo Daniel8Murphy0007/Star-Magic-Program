@@ -1334,3 +1334,9 @@ observable,freq_lock_ratio_triple,observable,a_THz_lyman_resonance,lock enables 
 observable,Gamma_THz_lyman_lock,paper,PAPER_303,wired
 observable,a_THz_lyman_resonance,paper,PAPER_303,wired
 observable,freq_lock_ratio_triple,paper,PAPER_303,wired
+primitive,G_OBSERVED,observable,g_DPM_hydrogen_proton,G factor
+observable,a_aether_bohr,observable,xi_aether_dominance,a_aether/g_DPM
+observable,g_DPM_hydrogen_proton,observable,xi_aether_dominance,denominator
+observable,g_DPM_hydrogen_proton,paper,PAPER_304,wired
+observable,xi_aether_dominance,paper,PAPER_304,open_ruling Q-247
+observable,a_aether_bohr,paper,PAPER_304,open_ruling Q-247

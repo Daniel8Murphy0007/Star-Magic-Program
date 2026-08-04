@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.310.0", "uqff_calculator.VERSION = 0.310.0 (PAPER_303 = v0.310.0)")
+assert_that(C.VERSION == "0.311.0", "uqff_calculator.VERSION = 0.311.0 (PAPER_304 = v0.311.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4127,6 +4127,20 @@ assert_that(_r303['frequency_degeneracy'] and abs(_r303['a_qorb'] - _r303['a_THz
 assert_that(abs(_r303['combined_pair'] - 9.790e10) / 9.790e10 < 0.005,
             "PAPER_303: combined degenerate pair a_THz + a_qorb = 9.790e10 m/s2")
 assert_that(C.wired_count() >= 317, "wired_count >= 317 (PAPER_303 wired)")
+
+_r304 = C.calc('PAPER_304')
+_r304v = _r304['value']
+assert_that(_r304['status'] == 'OPEN_RULING' and 'Q-247' in _r304v['formula_discrepancy'],
+            "PAPER_304: OPEN_RULING Q-247 - stated a_aether derivation formula disagrees with module output by 24 orders")
+assert_that(abs(_r304v['g_DPM'] - 3.986e-17) / 3.986e-17 < 0.005,
+            "PAPER_304: g_DPM = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (proton DPM-seeded surface gravity)")
+assert_that(abs(_r304v['V_sys'] - 6.207e-31) / 6.207e-31 < 0.005,
+            "PAPER_304: V_sys = (4/3)*pi*r_Bohr^3 = 6.207e-31 m^3 (Bohr-sphere volume)")
+assert_that(abs(_r304v['xi_aether'] - 1.852e24) / 1.852e24 < 0.005 and _r304v['xi_aether_formula'] == 'a_aether/g_DPM (aether-to-Newton ratio)',
+            "PAPER_304: xi_aether = a_aether/g_DPM = 1.852e24 (aether over DPM-seeded gravity at Bohr radius)")
+assert_that('rung 3' in _r304v['vacuum_driver_hierarchy'],
+            "PAPER_304: 3rd rung of vacuum-driver hierarchy (atom aether; universe Lambda PAPER_296; neutron-star EM PAPER_299)")
+assert_that(C.wired_count() >= 318, "wired_count >= 318 (PAPER_304 wired)")
 
 
 # =============================================================================

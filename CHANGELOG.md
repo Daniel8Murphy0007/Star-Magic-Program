@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.311.0] — 2026-08-04 — BAND 1: PAPER_304 — HYDROGEN PToE AETHER-GRAVITATIONAL DOMINANCE (OPEN_RULING Q-247)
+
+### Added
+- **PAPER_304 dispatch** — Aether-Gravitational Dominance at Atomic Scale (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp; third PToE-resonance term). Establishes the **3rd rung of the UQFF vacuum-driver hierarchy**: at the Bohr radius the aether channel (seeded by E_vac) dominates, complementing Λ at universe scale (PAPER_296) and EM at the neutron-star surface (PAPER_299).
+  - g_DPM = G·M_p/r_Bohr² = **3.986e-17 m/s²** (reproduced); V_sys = (4/3)π·r_Bohr³ = **6.207e-31 m³** (reproduced).
+  - Aether-to-Newton ratio ξ_aether = a_aether/g_DPM = **1.852e24** (reproduced exactly from the module's a_aether=7.38e7).
+
+### Open ruling
+- **Q-247** — the paper's stated a_aether derivation, E_vac·f_res·V_sys/ħ, computes to **4.17e-17** (and is dimensionally 1/s², not m/s²), NOT the module's a_aether = 7.38e7 — a ~24-order discrepancy. The value 7.38e7 is used consistently by the module (and appears in PAPER_302's resonance-sum table), and ξ_aether reproduces from it, so a_aether=7.38e7 is wired as module output with the derivation formula flagged. No {·c, ·c², /r, ·r, ·a_DPM} correction on the 4.17e-17 base recovers 7.38e7; the true generating formula is not recoverable from the stated constants.
+
+### Wiring status
+- `wired_count()` = **318** (OPEN_RULING). Campaign frontier PAPER_304 of 2255. Index: 71 ✓ / 247 ⚠ / 1937 ⬜ = 2255. Gate 1879 → **1885/0**.
+
+---
+
 ## [0.310.0] — 2026-08-04 — BAND 1: PAPER_303 — HYDROGEN PToE TRIPLE LYMAN-α FREQUENCY RESONANCE LOCK (CLEAN)
 
 ### Added

@@ -619,3 +619,6 @@ u4i_over_THz_dominance,PAPER_302 U_g4i over THz,derived_ratio,a_u4i/a_THz,"first
 Gamma_THz_lyman_lock,PAPER_303 hydrogen PToE,derived_factor,SO_5*f_THz*v_exp/c,highest atomic Gamma_THz,7.298e13,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_302,WIRED
 a_THz_lyman_resonance,PAPER_303 THz resonance accel,derived_acceleration,Gamma_THz*a_DPM,degenerate with a_qorb,4.895e10 m/s2,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_302,WIRED
 freq_lock_ratio_triple,PAPER_303 triple Lyman lock,derived_ratio,f_THz/f_DPM,first unity lock,1.000,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_303,WIRED
+g_DPM_hydrogen_proton,PAPER_304 proton surface gravity,derived_acceleration,G*M_p/r_Bohr^2,gravity reference at Bohr radius,3.986e-17 m/s2,PAPER_304,0.0,atomic/gravity,resonance,PAPER_304,1,1,0,0,PAPER_296;PAPER_299,WIRED
+xi_aether_dominance,PAPER_304 aether-to-Newton ratio,derived_ratio,a_aether/g_DPM,3rd rung vacuum-driver hierarchy,1.852e24,PAPER_304,0.0,atomic/aether,resonance,PAPER_304,1,1,0,0,PAPER_302,OPEN_RULING
+a_aether_bohr,PAPER_304 aether resonance accel,module_output,module output (Q-247 formula broken),stated E_vac*f_res*V_sys/hbar gives 4.17e-17 not 7.38e7,7.38e7 m/s2,PAPER_304,0.0,atomic/aether,resonance,PAPER_304,1,1,0,0,PAPER_302,OPEN_RULING

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.310.0"
+VERSION = "0.311.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16724,4 +16724,41 @@ def _paper_303(dataset):
         'source': 'PAPER_303',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_304')
+def _paper_304(dataset):
+    import math as _m
+    G = G_OBSERVED
+    E_vac = RHO_UA                                        # 7.09e-36 plasmonic vacuum energy density
+    hbar = HBAR_UQFF_S629
+    r_Bohr = 5.2918e-11                                   # Bohr radius, atomic anchor
+    M_p = 1.6726e-27                                      # proton mass, atomic anchor
+    f_res = 1.0e15                                        # Lyman resonance freq, module anchor
+    g_DPM = G * M_p / r_Bohr ** 2                         # 3.986e-17 proton DPM-seeded surface gravity
+    V_sys = (4.0 / 3.0) * _m.pi * r_Bohr ** 3             # 6.207e-31 m^3 Bohr-sphere volume
+    a_aether = 7.38e7                                     # module output (see OPEN_RULING Q-247)
+    a_aether_formula_value = E_vac * f_res * V_sys / hbar  # 4.17e-17 (stated formula; disagrees w/ 7.38e7)
+    xi_aether = a_aether / g_DPM                          # 1.852e24 aether-to-Newton ratio
+    return {
+        'value': {
+            'domain': '3.02 (hydrogen PToE; aether-gravitational dominance, 3rd rung of vacuum-driver hierarchy)',
+            'source_thread': 'Session 86 HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp (28th C++, first PToE resonance)',
+            'system': 'Hydrogen Z=1 ground state, aether channel at Bohr radius',
+            'r_Bohr_m': r_Bohr, 'E_vac': E_vac, 'f_res_Hz': f_res,
+            'g_DPM': g_DPM,                              # 3.986e-17
+            'V_sys': V_sys,                             # 6.207e-31
+            'a_aether': a_aether,                       # 7.38e7 (module output)
+            'xi_aether': xi_aether,                     # 1.852e24
+            'xi_aether_formula': 'a_aether/g_DPM (aether-to-Newton ratio)',
+            'vacuum_driver_hierarchy': 'rung 3 (atom, aether E_vac); rung 1 Lambda (universe, PAPER_296); rung 2 EM (neutron star, PAPER_299)',
+            'formula_discrepancy': ('stated derivation a_aether=E_vac*f_res*V_sys/hbar gives %.3e '
+                '(dimensionally 1/s^2), not the module output 7.38e7 m/s2 -- 24-order paper error; '
+                'xi_aether reproduced from the module output -> Q-247 OPEN_RULING' % a_aether_formula_value),
+        },
+        'formula': 'xi_aether=a_aether/g_DPM=1.852e24 (aether over DPM-seeded gravity at Bohr radius; 3rd rung of vacuum-driver hierarchy); g_DPM=G*M_p/r_Bohr^2=3.986e-17; a_aether=7.38e7 (module output; stated derivation formula E_vac*f_res*V_sys/hbar is broken, Q-247)',
+        'source': 'PAPER_304',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

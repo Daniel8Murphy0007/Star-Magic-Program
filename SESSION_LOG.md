@@ -4392,3 +4392,22 @@ First UQFF module where f_DPM = f_THz = f_quantum_orbital.
 
 CLEAN. Gate: 1879/0. Registry 621 rows / 1336 edges / 326 ledgers.
 Campaign frontier: PAPER_303 / 2,255. Next: PAPER_304.
+
+---
+
+## v0.311.0 — 2026-08-04 — PAPER_304 (hydrogen PToE aether-gravitational dominance, Q-247)
+
+Wired PAPER_304 (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp; third PToE term).
+3rd rung of the UQFF vacuum-driver hierarchy: atom aether / universe Lambda (PAPER_296) /
+neutron-star EM (PAPER_299).
+
+- g_DPM = G*M_p/r_Bohr^2 = 3.986e-17 (reproduced); V_sys=(4/3)pi*r_Bohr^3=6.207e-31 (reproduced).
+- xi_aether = a_aether/g_DPM = 1.852e24 (reproduced exactly from module a_aether=7.38e7).
+
+OPEN_RULING Q-247: stated a_aether = E_vac*f_res*V_sys/hbar computes to 4.17e-17 (dimensionally
+1/s^2), NOT the module's 7.38e7 -- ~24-order discrepancy. 7.38e7 used consistently in the module
+and PAPER_302's resonance table; xi reproduces from it. Wired a_aether=7.38e7 as module output,
+formula flagged; true generating formula not recoverable from stated constants.
+
+Gate: 1885/0. Registry 624 rows / 1342 edges / 329 ledgers.
+Campaign frontier: PAPER_304 / 2,255. Next: PAPER_305.
