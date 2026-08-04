@@ -1327,3 +1327,10 @@ observable,a_u4i_reactive_resonance,observable,u4i_over_THz_dominance,a_u4i/a_TH
 observable,a_u4i_reactive_resonance,paper,PAPER_302,wired
 observable,Gamma_u4i_vacuum_bridge,paper,PAPER_302,wired
 observable,u4i_over_THz_dominance,paper,PAPER_302,wired
+primitive,SO_5,observable,Gamma_THz_lyman_lock,SO_5=10 coefficient
+primitive,C_OBSERVED,observable,Gamma_THz_lyman_lock,c denominator
+observable,Gamma_THz_lyman_lock,observable,a_THz_lyman_resonance,a_THz=Gamma*a_DPM
+observable,freq_lock_ratio_triple,observable,a_THz_lyman_resonance,lock enables degeneracy
+observable,Gamma_THz_lyman_lock,paper,PAPER_303,wired
+observable,a_THz_lyman_resonance,paper,PAPER_303,wired
+observable,freq_lock_ratio_triple,paper,PAPER_303,wired

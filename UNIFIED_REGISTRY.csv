@@ -616,3 +616,6 @@ gr_spectral_span_H_to_universe,PAPER_301 GR spectral range,derived_ratio,eps_GR(
 a_u4i_reactive_resonance,PAPER_302 hydrogen PToE,derived_acceleration,f_sc*f_react*a_DPM/(E_vac*c),dominant resonance term,3.155e33 m/s2,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_299;PAPER_300,WIRED
 Gamma_u4i_vacuum_bridge,PAPER_302 universal U_g4i bridge,derived_factor,f_react/(E_vac*c),frequency-independent,4.704e36,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_302,WIRED
 u4i_over_THz_dominance,PAPER_302 U_g4i over THz,derived_ratio,a_u4i/a_THz,"first U_g4i > THz, 22 orders",6.446e22,PAPER_302,0.0,atomic/resonance,resonance,PAPER_302,1,1,0,0,PAPER_302,WIRED
+Gamma_THz_lyman_lock,PAPER_303 hydrogen PToE,derived_factor,SO_5*f_THz*v_exp/c,highest atomic Gamma_THz,7.298e13,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_302,WIRED
+a_THz_lyman_resonance,PAPER_303 THz resonance accel,derived_acceleration,Gamma_THz*a_DPM,degenerate with a_qorb,4.895e10 m/s2,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_302,WIRED
+freq_lock_ratio_triple,PAPER_303 triple Lyman lock,derived_ratio,f_THz/f_DPM,first unity lock,1.000,PAPER_303,0.0,atomic/resonance,resonance,PAPER_303,1,1,0,0,PAPER_303,WIRED

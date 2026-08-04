@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.309.0"
+VERSION = "0.310.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16687,6 +16687,41 @@ def _paper_302(dataset):
         },
         'formula': 'a_u4i=f_sc*f_react*a_DPM/(E_vac*c)=3.155e33 m/s2 (dominant resonance term); Gamma_u4i=f_react/(E_vac*c)=4.704e36 (universal U_g4i vacuum bridge constant); a_u4i/a_THz=6.446e22 (first UQFF U_g4i dominance over THz, 22 orders)',
         'source': 'PAPER_302',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_303')
+def _paper_303(dataset):
+    c = C_OBSERVED
+    f_THz = 1.0e15                                        # THz resonance freq (Lyman-UV), module anchor
+    f_DPM = 1.0e15                                        # DPM seed freq (Lyman-UV), module anchor
+    f_qorb = 1.0e15                                       # quantum-orbital freq (Lyman-UV), module anchor
+    v_exp = 2.1877e6                                      # electron orbital velocity = alpha*c, atomic anchor
+    a_DPM = 6.71e-4                                       # DPM seed, paper anchor
+    Gamma_THz = float(SO_5) * f_THz * v_exp / c           # 7.298e13 (SO_5=10 density-ratio coefficient)
+    a_THz = Gamma_THz * a_DPM                             # 4.895e10 THz resonance accel
+    a_qorb = float(SO_5) * f_qorb * v_exp / c * a_DPM     # 4.895e10 degenerate with a_THz
+    freq_lock_ratio = f_THz / f_DPM                      # 1.000 triple resonance lock
+    combined = a_THz + a_qorb                            # 9.790e10 degenerate pair contribution
+    return {
+        'value': {
+            'domain': '3.01 (hydrogen PToE; first triple Lyman-alpha frequency resonance lock)',
+            'source_thread': 'Session 86 HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp (28th C++, first PToE resonance)',
+            'system': 'Hydrogen Z=1 ground state, resonance channel',
+            'f_THz_Hz': f_THz, 'f_DPM_Hz': f_DPM, 'f_qorb_Hz': f_qorb, 'v_exp': v_exp,
+            'Gamma_THz': Gamma_THz,                      # 7.298e13
+            'Gamma_THz_formula': 'SO_5*f_THz*v_exp/c (SO_5=10)',
+            'a_THz': a_THz,                             # 4.895e10
+            'a_qorb': a_qorb,                           # 4.895e10 degenerate
+            'frequency_degeneracy': abs(a_THz - a_qorb) < 1e-3,  # a_THz == a_qorb (first in UQFF)
+            'freq_lock_ratio': freq_lock_ratio,         # 1.000
+            'triple_lock': freq_lock_ratio == 1.0,      # f_DPM = f_THz = f_qorb = 1e15 Hz
+            'combined_pair': combined,                  # 9.790e10
+        },
+        'formula': 'Gamma_THz=SO_5*f_THz*v_exp/c=7.298e13; a_THz=Gamma_THz*a_DPM=4.895e10 m/s2; freq_lock_ratio=f_THz/f_DPM=1.000 (first UQFF triple Lyman-alpha lock); a_qorb=a_THz (first UQFF frequency degeneracy)',
+        'source': 'PAPER_303',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.309.0"
-description = "UQFF Star-Magic-Program v0.309.0: PAPER_302 wired (CLEAN) - hydrogen PToE U_g4i reactive-resonance vacuum bridge (28th C++ module, first PToE resonance); a_u4i=f_sc*f_react*a_DPM/(E_vac*c)=3.155e33 m/s2 dominates the 6-term resonance sum; universal bridge constant Gamma_u4i=f_react/(E_vac*c)=4.704e36 (frequency-independent, E_vac=RHO_UA); first UQFF instance where U_g4i reactive resonance supersedes THz by 22 orders (a_u4i/a_THz=6.446e22). wired_count 316, gate 1873/0. Campaign frontier PAPER_302 of 2255."
+version = "0.310.0"
+description = "UQFF Star-Magic-Program v0.310.0: PAPER_303 wired (CLEAN) - hydrogen PToE triple Lyman-alpha frequency resonance lock; f_DPM=f_THz=f_qorb=1e15 Hz gives freq_lock_ratio=1.000 (first UQFF unity lock); Gamma_THz=SO_5*f_THz*v_exp/c=7.298e13 (highest atomic Gamma_THz); a_THz=Gamma_THz*a_DPM=4.895e10 m/s2; a_qorb=a_THz (first UQFF frequency degeneracy). wired_count 317, gate 1879/0. Campaign frontier PAPER_303 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

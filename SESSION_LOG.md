@@ -4376,3 +4376,19 @@ first PToE-resonance module). Resonance-channel architecture at atomic scale.
 
 CLEAN. Gate: 1873/0. Registry 618 rows / 1329 edges / 325 ledgers.
 Campaign frontier: PAPER_302 / 2,255. Next: PAPER_303.
+
+---
+
+## v0.310.0 — 2026-08-04 — PAPER_303 (hydrogen PToE triple Lyman-alpha frequency resonance lock)
+
+Wired PAPER_303 (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp; second PToE term).
+First UQFF module where f_DPM = f_THz = f_quantum_orbital.
+
+- All three channels locked to Lyman-alpha UV = 1e15 Hz; freq_lock_ratio = f_THz/f_DPM = 1.000
+  (first UQFF unity lock).
+- Gamma_THz = SO_5*f_THz*v_exp/c = 7.298e13 (SO_5=10; v_exp=alpha*c). Highest atomic Gamma_THz.
+- a_THz = Gamma_THz*a_DPM = 4.895e10 m/s2; a_qorb = a_THz (first UQFF frequency degeneracy).
+  Combined pair = 9.790e10. All verified in Python.
+
+CLEAN. Gate: 1879/0. Registry 621 rows / 1336 edges / 326 ledgers.
+Campaign frontier: PAPER_303 / 2,255. Next: PAPER_304.

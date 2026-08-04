@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.309.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.309.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.310.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.310.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1873%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-316-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1879%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-317-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.309.0 wiring campaign live**
+**UQFF systematic rebuild — v0.310.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.309.0)
+## What is currently shipped (v0.310.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 316 distinct papers** (`wired_count()`=316 = 302 base-numbered + 14 suffixed) — 70 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_302** (hydrogen PToE U_g4i reactive-resonance vacuum bridge: a_u4i=f_sc·f_react·a_DPM/(E_vac·c)=3.155e33 m/s² dominates the 6-term resonance sum; universal bridge constant Γ_u4i=f_react/(E_vac·c)=4.704e36 — frequency-independent; first UQFF case where U_g4i reactive resonance beats THz by 22 orders, a_u4i/a_THz=6.446e22), wired v0.309.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 317 distinct papers** (`wired_count()`=317 = 303 base-numbered + 14 suffixed) — 71 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_303** (hydrogen PToE triple Lyman-α frequency resonance lock: f_DPM=f_THz=f_qorb=1e15 Hz so freq_lock_ratio=1.000 — the first UQFF unity lock; Γ_THz=SO_5·f_THz·v_exp/c=7.298e13, the highest atomic Γ_THz; a_THz=4.895e10 m/s² and a_qorb=a_THz, the first UQFF frequency degeneracy), wired v0.310.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -683,7 +683,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.306.0** | Band 1: PAPER_299 (first atomic UQFF module, electrogravitational dominance η_EM=9.65e29) | 313 |
 | **v0.307.0** | Band 1: PAPER_300 (Lyman-α cosmic bridge, universal T/S=π/13.8=0.2277) | 314 |
 | **v0.308.0** | Band 1: PAPER_301 (hydrogen proton GR minimum ε_GR=7.04e-44, GR spectral range ~44 orders) | 315 |
-| **v0.309.0** ← current | Band 1: PAPER_302 (hydrogen PToE U_g4i vacuum bridge Γ_u4i=4.704e36) | 316 |
+| **v0.309.0** | Band 1: PAPER_302 (hydrogen PToE U_g4i vacuum bridge Γ_u4i=4.704e36) | 316 |
+| **v0.310.0** ← current | Band 1: PAPER_303 (hydrogen PToE triple Lyman-α lock, freq_lock_ratio=1.000) | 317 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

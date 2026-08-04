@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.309.0", "uqff_calculator.VERSION = 0.309.0 (PAPER_302 = v0.309.0)")
+assert_that(C.VERSION == "0.310.0", "uqff_calculator.VERSION = 0.310.0 (PAPER_303 = v0.310.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4114,6 +4114,19 @@ assert_that(abs(_r302['denom_Evac_c'] - 2.126e-27) / 2.126e-27 < 0.005,
 assert_that(_r302['Gamma_frequency_independent'],
             "PAPER_302: Gamma_u4i depends only on f_react, E_vac, c (frequency-independent bridge constant)")
 assert_that(C.wired_count() >= 316, "wired_count >= 316 (PAPER_302 wired)")
+
+_r303 = C.calc('PAPER_303')['value']
+assert_that(abs(_r303['Gamma_THz'] - 7.298e13) / 7.298e13 < 0.005 and _r303['Gamma_THz_formula'] == 'SO_5*f_THz*v_exp/c (SO_5=10)',
+            "PAPER_303: Gamma_THz = SO_5*f_THz*v_exp/c = 7.298e13 (highest atomic Gamma_THz in UQFF)")
+assert_that(abs(_r303['a_THz'] - 4.895e10) / 4.895e10 < 0.005,
+            "PAPER_303: a_THz = Gamma_THz*a_DPM = 4.895e10 m/s2 (Lyman-alpha THz resonance)")
+assert_that(_r303['freq_lock_ratio'] == 1.0 and _r303['triple_lock'],
+            "PAPER_303: freq_lock_ratio = f_THz/f_DPM = 1.000 (first UQFF triple Lyman-alpha lock)")
+assert_that(_r303['frequency_degeneracy'] and abs(_r303['a_qorb'] - _r303['a_THz']) < 1e-3,
+            "PAPER_303: a_qorb = a_THz = 4.895e10 (first UQFF frequency degeneracy at locked freqs)")
+assert_that(abs(_r303['combined_pair'] - 9.790e10) / 9.790e10 < 0.005,
+            "PAPER_303: combined degenerate pair a_THz + a_qorb = 9.790e10 m/s2")
+assert_that(C.wired_count() >= 317, "wired_count >= 317 (PAPER_303 wired)")
 
 
 # =============================================================================

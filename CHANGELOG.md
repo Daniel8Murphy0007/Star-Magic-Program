@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.310.0] — 2026-08-04 — BAND 1: PAPER_303 — HYDROGEN PToE TRIPLE LYMAN-α FREQUENCY RESONANCE LOCK (CLEAN)
+
+### Added
+- **PAPER_303 dispatch** — Hydrogen PToE Lyman-α Triple-Frequency Resonance Lock (Session 86, HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp; second PToE-resonance term). The **first UQFF module where f_DPM = f_THz = f_quantum_orbital**.
+  - All three resonance channels locked to the Lyman-α UV frequency (1.0e15 Hz), giving **freq_lock_ratio = f_THz/f_DPM = 1.000** — the first unity lock in UQFF (prior modules had THz~1e12, DPM~1e11–1e15, ratio ≠ 1).
+  - THz enhancement Γ_THz = SO_5·f_THz·v_exp/c = **7.298e13** (SO_5=10 density-ratio coefficient; v_exp = α·c) — the highest atomic Γ_THz in the framework.
+  - a_THz = Γ_THz·a_DPM = **4.895e10 m/s²**; because f_qorb = f_THz, a_qorb = a_THz — the **first UQFF frequency degeneracy** (two channels producing identical output). Combined pair = 9.790e10.
+- 3 registry observables, 7 graph edges, 1 corpus citation (PAPER_302).
+- 6 gate assertions (Γ_THz, a_THz, unity lock, degeneracy, combined pair, wired_count ≥ 317). Gate 1873 → **1879/0**.
+
+### Wiring status
+- `wired_count()` = **317** (CLEAN). Campaign frontier PAPER_303 of 2255. Index: 71 ✓ / 246 ⚠ / 1938 ⬜ = 2255.
+
+---
+
 ## [0.309.0] — 2026-08-04 — BAND 1: PAPER_302 — HYDROGEN PToE U_g4i REACTIVE-RESONANCE VACUUM BRIDGE (CLEAN)
 
 ### Added

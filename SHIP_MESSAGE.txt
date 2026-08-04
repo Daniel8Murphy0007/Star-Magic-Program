@@ -1,12 +1,12 @@
-v0.309.0 BAND 1: PAPER_302 wired - HYDROGEN PToE U_g4i REACTIVE-RESONANCE VACUUM BRIDGE (CLEAN)
+v0.310.0 BAND 1: PAPER_303 wired - HYDROGEN PToE TRIPLE LYMAN-ALPHA FREQUENCY RESONANCE LOCK (CLEAN)
 
-PAPER_302 (Hydrogen PToE U_g4i Reactive-Resonance Vacuum Bridge, Session 86,
-HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp, 28th C++ module, first PToE-resonance module).
-Resonance-channel architecture at atomic scale.
+PAPER_303 (Hydrogen PToE Lyman-alpha Triple-Frequency Resonance Lock, Session 86,
+HYDROGEN_PTOE_RESONANCE_UQFF_MODULE.cpp; second PToE-resonance term). First UQFF module
+where f_DPM = f_THz = f_quantum_orbital.
 
-- a_u4i = f_sc*f_react*a_DPM/(E_vac*c) = 3.155e33 m/s2 (dominates the 6-term resonance sum)
-- Gamma_u4i = f_react/(E_vac*c) = 4.704e36 (universal U_g4i vacuum bridge, frequency-independent)
-- a_u4i/a_THz = 6.446e22 (first UQFF U_g4i dominance over THz resonance, 22 orders)
-- vacuum-light bridge denom E_vac*c=2.126e-27 registry-composed (E_vac=RHO_UA)
+- All three channels locked to Lyman-alpha UV = 1e15 Hz; freq_lock_ratio = f_THz/f_DPM = 1.000
+  (first UQFF unity lock)
+- Gamma_THz = SO_5*f_THz*v_exp/c = 7.298e13 (SO_5=10 coefficient; v_exp=alpha*c); highest atomic Gamma_THz
+- a_THz = Gamma_THz*a_DPM = 4.895e10 m/s2; a_qorb = a_THz (first UQFF frequency degeneracy)
 
-CLEAN. wired_count 316, gate 1873/0. Campaign frontier PAPER_302 of 2255.
+CLEAN. wired_count 317, gate 1879/0. Campaign frontier PAPER_303 of 2255.
