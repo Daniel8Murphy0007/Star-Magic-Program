@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.334.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.334.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.335.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.335.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2017%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-340-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2023%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-341-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.334.0 wiring campaign live**
+**UQFF systematic rebuild — v0.335.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.334.0)
+## What is currently shipped (v0.335.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 340 distinct papers** (`wired_count()`=340 = 326 base-numbered + 14 suffixed) — 92 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_326** (Triadic Master UQFF 26-state Ramanujan co-sum architecture — the first formal statement of the triple co-sum FU_g1 (primary quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy) over n=1..26 vacuum states (= D_crit); the 26-state [SSq] suppression = exp(−SSQ) = 0.5655 (canonical 0.57, auto-corrected from the papers drifted 0.507 per PAPER_1154); vacuum cascade base ρ_SCm/ρ_UA = F_TRZ = 0.1), wired v0.334.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 341 distinct papers** (`wired_count()`=341 = 327 base-numbered + 14 suffixed) — 93 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_327** (Q_wave_47 non-parametric distribution survey — the Q_wave energy density across 47 astrophysical scales (atomic 8.13e-10 to quasar 2.11e5 J/m³, ~15-order range) is strongly non-Gaussian: mean=3.97e4 J/m³, CV=std/mean>1, Shapiro-Wilk W=0.644 (p=1.21e-9, normality rejected at 99.9999%), bimodal with a heavy positive tail from the [SSq] suppression cascade), wired v0.335.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -707,7 +707,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.331.0** | Band 1: PAPER_323 (CR34b vacuum aether frequency mode, 11th UQFF term) | 337 |
 | **v0.332.0** | Band 1: PAPER_324 (CR34b Saturn first planetary dual-channel, a_vac_diff=1.29e-2) | 338 |
 | **v0.333.0** | Band 1: PAPER_325 (CR34b ρ-ISM fluid density coupling ξ_fluid=1.269e-35) | 339 |
-| **v0.334.0** ← current | Band 1: PAPER_326 (Triadic Master UQFF 26-state co-sum architecture) | 340 |
+| **v0.334.0** | Band 1: PAPER_326 (Triadic Master UQFF 26-state co-sum architecture) | 340 |
+| **v0.335.0** ← current | Band 1: PAPER_327 (Q_wave_47 non-Gaussian distribution, Shapiro-Wilk W=0.644) | 341 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

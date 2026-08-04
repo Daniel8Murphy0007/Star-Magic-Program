@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.335.0] — 2026-08-04 — BAND 1: PAPER_327 — Q_wave_47 NON-PARAMETRIC DISTRIBUTION SURVEY (CLEAN)
+
+### Added
+- **PAPER_327 dispatch** — Q_wave_47 Non-Parametric Distribution Survey (Session 94, Grok-4 71-Eq assimilation; First-Discovery). The **first systematic non-parametric characterization of the UQFF Q_wave multi-scale energy distribution**.
+  - The Q_wave energy density catalogued across 47 astrophysical scales (atomic 8.13e-10 J/m³ to quasar 2.11e5 J/m³ — a ~15-order dynamic range).
+  - Descriptive stats (computed from the embedded 47-term array): N=47, mean = **3.97e4 J/m³**, CV = std/mean **> 1** (immediate non-Gaussian signal).
+  - **Shapiro-Wilk W = 0.644, p = 1.21e-9** — normality strongly rejected (99.9999%). Distribution is **bimodal** (low vacuum/atomic mode 1e-10..1e-4, high stellar/galactic/quasar mode 1e4..2.11e5) with a heavy positive tail.
+  - Heavy tail attributed to the [SSq] suppression cascade exp(−SSQ·n/26); at n=26 the canonical suppression = exp(−SSQ) = **0.5655** (paper used the drifted 0.507→0.602; corrected per PAPER_1154).
+  - Re-running scipy reproduces the conclusion (W≈0.640, p~1.7e-9); minor stat differences from scipy version / ddof are noted, the non-Gaussianity result is robust.
+- 2 registry observables, 5 graph edges, 2 corpus citations (PAPER_326/1154).
+- 6 gate assertions (N/mean, CV>1/non-Gaussian, Shapiro-Wilk, [SSq] suppression, dynamic range, wired_count ≥ 341). Gate 2017 → **2023/0**.
+
+### Wiring status
+- `wired_count()` = **341** (CLEAN). Campaign frontier PAPER_327 of 2255. Index: 93 ✓ / 248 ⚠ / 1914 ⬜ = 2255.
+
+---
+
 ## [0.334.0] — 2026-08-04 — BAND 1: PAPER_326 — TRIADIC MASTER UQFF 26-STATE CO-SUM ARCHITECTURE (CLEAN)
 
 ### Added

@@ -1472,3 +1472,8 @@ primitive,SSQ,observable,ssq_26state_suppression,exp(-SSQ)
 primitive,F_TRZ,observable,triadic_cosum_architecture,rho_SCm/rho_UA cascade base
 observable,triadic_cosum_architecture,paper,PAPER_326,wired
 observable,ssq_26state_suppression,paper,PAPER_326,wired
+primitive,SSQ,observable,Q_wave_47_stats,[SSq] suppression cascade
+observable,Q_wave_47_stats,observable,Q_wave_47_shapiro_wilk,CV>1 -> non-Gaussian
+observable,Q_wave_47_shapiro_wilk,paper,PAPER_327,wired
+observable,Q_wave_47_stats,paper,PAPER_327,wired
+paper,PAPER_327,paper,PAPER_326,shared [SSq] cascade

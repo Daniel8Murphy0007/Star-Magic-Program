@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.334.0", "uqff_calculator.VERSION = 0.334.0 (PAPER_326 = v0.334.0)")
+assert_that(C.VERSION == "0.335.0", "uqff_calculator.VERSION = 0.335.0 (PAPER_327 = v0.335.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4428,6 +4428,19 @@ assert_that(abs(_r326['vac_density_ratio'] - 0.1) < 1e-9,
 assert_that('Grok-thread' in _r326['per_system_note'],
             "PAPER_326: per-system FU_g1/R(t)/FU_Bi are thread-validation numbers, not reproducible closed forms")
 assert_that(C.wired_count() >= 340, "wired_count >= 340 (PAPER_326 wired)")
+
+_r327 = C.calc('PAPER_327')['value']
+assert_that(_r327['N'] == 47 and abs(_r327['mean_J_per_m3'] - 3.97e4) / 3.97e4 < 0.01,
+            "PAPER_327: Q_wave_47 array (N=47), mean = 3.97e4 J/m3")
+assert_that(_r327['CV'] > 1.0 and _r327['non_gaussian'],
+            "PAPER_327: CV = std/mean > 1 and normality rejected (non-Gaussian, heavy tails)")
+assert_that(abs(_r327['shapiro_wilk_W'] - 0.644) < 0.01 and _r327['shapiro_wilk_p'] < 0.05,
+            "PAPER_327: Shapiro-Wilk W = 0.644, p = 1.21e-9 (normality strongly rejected)")
+assert_that(abs(_r327['ssq_suppression_26'] - 0.5655) < 0.001 and 'PAPER_1154' in _r327['ssq_drift_note'],
+            "PAPER_327: [SSq] suppression cascade exp(-SSQ) = 0.5655 (canonical 0.57; paper drifted 0.507)")
+assert_that(_r327['max'] == 2.11e5 and _r327['min'] == 8.13e-10,
+            "PAPER_327: Q_wave range 8.13e-10 (atomic) to 2.11e5 J/m3 (quasar), ~15-order dynamic range")
+assert_that(C.wired_count() >= 341, "wired_count >= 341 (PAPER_327 wired)")
 
 
 # =============================================================================

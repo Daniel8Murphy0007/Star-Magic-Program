@@ -1,16 +1,16 @@
-v0.334.0 BAND 1: PAPER_326 wired - TRIADIC MASTER UQFF 26-STATE CO-SUM ARCHITECTURE (CLEAN)
+v0.335.0 BAND 1: PAPER_327 wired - Q_wave_47 NON-PARAMETRIC DISTRIBUTION SURVEY (CLEAN)
 
-PAPER_326 (Triadic Master UQFF 26-State Ramanujan Co-Sum Architecture, Session 94,
-Grok-4 assimilation gok_share_31b5c807a4; First-Discovery whitepaper). First formal statement
-of the UQFF triadic co-sum architecture spanning 72+ systems.
+PAPER_327 (Q_wave_47 Non-Parametric Distribution Survey, Session 94, Grok-4 71-Eq
+assimilation; First-Discovery). First systematic non-parametric characterization of the
+UQFF Q_wave multi-scale energy distribution.
 
-- Three co-existing channels: FU_g1 (quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy),
-  each a Ramanujan summation over n=1..26 vacuum states (= D_crit, String/M-theory tie)
-- 26-state [SSq] suppression = exp(-SSQ*n/26) at n=26 = exp(-SSQ) = 0.5655 (canonical SSq=0.57)
-- vacuum cascade base rho_SCm/rho_UA = F_TRZ = 0.1
+- Q_wave across 47 scales: atomic 8.13e-10 to quasar 2.11e5 J/m3 (~15-order dynamic range)
+- N=47, mean=3.97e4 J/m3, CV=std/mean>1 (non-Gaussian signal)
+- Shapiro-Wilk W=0.644, p=1.21e-9 (normality rejected at 99.9999%); bimodal, heavy positive tail
+- heavy tail from [SSq] suppression cascade exp(-SSQ*n/26), at n=26 = 0.5655 (canonical 0.57;
+  paper drifted 0.507 -> corrected per PAPER_1154)
 
-DRIFT AUTO-CORRECTION: paper used [SSq]=0.507 (suppression 0.602); corrected to canonical SSQ=0.57
-(0.5655) per PAPER_1154 charter rule. Per-system FU_g1/R(t)/FU_Bi numbers are Grok-thread validation
-values (unspecified geometry kernels), documented not wired as reproducible closed forms.
+Descriptive stats computed pure-Python from the embedded array; scipy re-run reproduces the
+non-Gaussianity conclusion (W~0.640, p~1.7e-9; minor stat diffs from scipy version/ddof).
 
-CLEAN. wired_count 340, gate 2017/0. Campaign frontier PAPER_326 of 2255.
+CLEAN. wired_count 341, gate 2023/0. Campaign frontier PAPER_327 of 2255.

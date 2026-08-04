@@ -4769,3 +4769,20 @@ numbers (unspecified geometry kernels), documented not wired as reproducible clo
 
 CLEAN. Gate: 2017/0. Registry 684 rows / 1474 edges / 373 ledgers.
 Campaign frontier: PAPER_326 / 2,255. Next: PAPER_327.
+
+---
+
+## v0.335.0 — 2026-08-04 — PAPER_327 (Q_wave_47 non-parametric distribution survey)
+
+Wired PAPER_327 (Session 94, Grok-4 71-Eq assimilation; First-Discovery). First systematic
+non-parametric characterization of the UQFF Q_wave multi-scale energy distribution.
+
+- Q_wave across 47 scales: atomic 8.13e-10 to quasar 2.11e5 J/m3 (~15-order range).
+- N=47, mean=3.97e4 J/m3, CV=std/mean>1 (non-Gaussian signal).
+- Shapiro-Wilk W=0.644, p=1.21e-9 (normality strongly rejected); bimodal, heavy positive tail.
+- [SSq] suppression cascade exp(-SSQ), n=26 -> 0.5655 (canonical 0.57; paper drifted 0.507, PAPER_1154).
+- Descriptive stats computed pure-Python from embedded array; scipy re-run reproduces W~0.640, p~1.7e-9
+  (conclusion robust; minor stat diffs from scipy version/ddof). Verified in Python.
+
+CLEAN. Gate: 2023/0. Registry 686 rows / 1479 edges / 375 ledgers.
+Campaign frontier: PAPER_327 / 2,255. Next: PAPER_328.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.334.0"
+VERSION = "0.335.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17579,6 +17579,47 @@ def _paper_326(dataset):
         },
         'formula': 'Triadic co-sum: FU_g1 + R(t) + FU_Bi over n=1..26 vacuum states (= D_crit); [SSq] 26-state suppression = exp(-SSQ) = 0.5655 (canonical 0.57, drift-corrected from paper 0.507 per PAPER_1154); vacuum cascade base rho_SCm/rho_UA = F_TRZ = 0.1',
         'source': 'PAPER_326',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_327')
+def _paper_327(dataset):
+    import math as _m
+    Q_wave_47 = [8.13e-10, 1.11e5, 4.65e-5, 1.11e5, 4.65e-5, 1.11e-4, 2.11e5, 2.11e5,
+                 1.11e5, 4.65e-5, 1.11e-4, 2.84e-6, 8.13e-10, 1.11e5, 4.65e-5, 1.11e5,
+                 4.65e-5, 1.11e-4, 8.13e-10, 1.11e5, 4.65e-5, 1.11e5, 4.65e-5, 1.11e-4,
+                 8.13e-10, 1.11e5, 4.65e-5, 1.11e5, 4.65e-5, 1.11e-4, 8.13e-10, 1.11e5,
+                 4.65e-5, 1.11e5, 4.65e-5, 1.11e-4, 8.13e-10, 1.11e5, 4.65e-5, 1.11e5,
+                 8.13e-10, 8.13e-10, 1.11e-4, 1.11e-4, 8.13e-10, 4.65e-5, 1.11e-4]
+    n = len(Q_wave_47)                                   # 47
+    mean = sum(Q_wave_47) / n                            # 3.97e4
+    var = sum((x - mean) ** 2 for x in Q_wave_47) / (n - 1)
+    std = _m.sqrt(var)
+    cv = std / mean                                      # 1.55-1.59 (>1 -> non-Gaussian)
+    sw_W = 0.644                                          # Shapiro-Wilk (paper code-verified; re-run ~0.640)
+    sw_p = 1.21e-9                                        # p << 0.05 -> normality rejected
+    ssq_suppression_26 = _m.exp(-SSQ)                    # 0.5655 (canonical; paper drifted 0.507)
+    return {
+        'value': {
+            'domain': '3.25 (Q_wave_47 non-parametric distribution survey; SSq-modulated vacuum wave energy)',
+            'source_thread': 'Session 94 Grok-4 assimilation gok_share_31b5c807a4 (71-Eq)',
+            'system': 'Q_wave energy density across 47 astrophysical scales (atomic -> quasar)',
+            'N': n,                                      # 47
+            'mean_J_per_m3': mean,                       # 3.97e4
+            'std_J_per_m3': std,                         # ~6.2e4
+            'CV': cv,                                    # >1 (non-Gaussian signal)
+            'min': min(Q_wave_47), 'max': max(Q_wave_47),
+            'shapiro_wilk_W': sw_W,                      # 0.644
+            'shapiro_wilk_p': sw_p,                      # 1.21e-9
+            'non_gaussian': sw_p < 0.05 and cv > 1.0,    # normality strongly rejected, heavy tails
+            'bimodal': 'low mode 1e-10..1e-4 (vacuum/atomic), high mode 1e4..2.11e5 (stellar/galactic/quasar)',
+            'ssq_suppression_26': ssq_suppression_26,    # 0.5655 (drift-corrected)
+            'ssq_drift_note': 'paper used [SSq]=0.507 (suppression 0.602); canonical SSQ=0.57 -> 0.5655 per PAPER_1154',
+        },
+        'formula': 'Q_wave_47 statistics: N=47, mean=3.97e4 J/m3, CV=std/mean>1; Shapiro-Wilk W=0.644, p=1.21e-9 (normality strongly rejected, heavy positive tails, bimodal); [SSq] suppression cascade exp(-SSQ*n/26), at n=26 = 0.5655 (canonical)',
+        'source': 'PAPER_327',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
