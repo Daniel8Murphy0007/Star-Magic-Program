@@ -1279,3 +1279,10 @@ observable,a_super_compressed,observable,f_DPM2_scaling_law,quadratic f_DPM^2
 observable,a_super_compressed,paper,PAPER_295,wired
 observable,A_sc_cooper_amplitude,paper,PAPER_295,wired
 observable,f_DPM2_scaling_law,paper,PAPER_295,wired
+primitive,LAMBDA_SIMPLE,observable,a_Lambda_dark_energy,Lambda=(SO_5+1)*F_TRZ^53
+primitive,C_OBSERVED,observable,a_Lambda_dark_energy,c^2 factor
+observable,a_Lambda_dark_energy,observable,Gamma_Lambda_screening,a_Lambda/g_base
+observable,a_Lambda_dark_energy,observable,d_Lambda_cosmic_displacement,0.5*a*t_H^2
+observable,a_Lambda_dark_energy,paper,PAPER_296,wired
+observable,Gamma_Lambda_screening,paper,PAPER_296,wired
+observable,d_Lambda_cosmic_displacement,paper,PAPER_296,wired

@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.303.0] — 2026-08-04 — BAND 1: PAPER_296 — FIRST EXPLICIT UQFF COSMOLOGICAL-CONSTANT VACUUM ACCELERATION (CLEAN)
+
+### Added
+- **PAPER_296 dispatch** — UQFF Cosmological Constant Direct Vacuum Acceleration (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp, 26th C++ module; observable universe treated as the gravitating system). The **first UQFF module to extract Λ explicitly** as an additive dark-energy acceleration term — all prior 25 modules folded it into the Friedmann H(z).
+  - a_Λ = Λc²/3 = **3.30e-36 m/s²**, with Λ = (SO_5+1)·F_TRZ⁵³ = 1.1e-52 m⁻² (PAPER_2094 canonical geometric Λ, registry `LAMBDA_SIMPLE`), c = C_OBSERVED.
+  - DPM-seeded base gravity g_base = GM/r² = **3.447e-10 m/s²** (M=1e54 kg observable-universe mass, r=4.4e26 m co-moving half-diameter — paper anchors).
+  - **UQFF Cosmological Vacuum Screening Constant** Γ_Λ = a_Λ/g_base = **9.57e-27** — dark energy is 27 orders below gravity at universe scale.
+  - **Cosmic displacement** d_Λ = ½·a_Λ·t_H² = **0.313 m** over the Hubble age (t_H=4.355e17 s) — first UQFF cosmic-displacement calculation, a macroscopic bridge between cosmological dark energy and laboratory scales.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_2094/1573).
+- 6 gate assertions (a_Λ, Λ value, Γ_Λ, d_Λ, explicit-term flag, wired_count ≥ 310). Gate 1831 → **1837/0**.
+
+### Wiring status
+- `wired_count()` = **310** (CLEAN). Campaign frontier PAPER_296 of 2255. Index: 64 ✓ / 246 ⚠ / 1945 ⬜ = 2255.
+
+---
+
 ## [0.302.0] — 2026-08-04 — BAND 1: PAPER_295 — COMPRESSED COOPER SUPER-SEEDING (f_DPM² QUADRATIC CLASS SCALING LAW) (OPEN_RULING Q-246)
 
 ### Added

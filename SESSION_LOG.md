@@ -4262,3 +4262,22 @@ Dispatch WIRED on the clean compressed result; magnetar row flagged.
 
 Gate: 1831/0. Registry 596 rows / 1280 edges / 311 ledgers. Campaign frontier:
 PAPER_295 / 2,255. Next: PAPER_296.
+
+---
+
+## v0.303.0 — 2026-08-04 — PAPER_296 (first explicit UQFF cosmological-constant vacuum acceleration)
+
+Wired PAPER_296 (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp, 26th C++ module).
+Observable universe as the gravitating system; first UQFF module to extract Λ
+explicitly as an additive dark-energy acceleration term (prior 25 folded it into H(z)).
+
+- a_Λ = Λc²/3 = 3.30e-36 m/s² with Λ = (SO_5+1)·F_TRZ⁵³ = 1.1e-52 m⁻² (LAMBDA_SIMPLE,
+  PAPER_2094). NOTE: used LAMBDA_SIMPLE (geometric m⁻²), not LAMBDA_VAC (energy-density
+  successor form = (SO_5+1)·RHO_SCM). Reproduced exactly.
+- g_base = GM/r² = 3.447e-10 m/s² (M=1e54 kg, r=4.4e26 m — paper anchors).
+- Γ_Λ = a_Λ/g_base = 9.57e-27 cosmological vacuum screening constant.
+- d_Λ = 0.5·a_Λ·t_H² = 0.313 m cosmic displacement over Hubble age. All verified in Python.
+- H0=70 km/s/Mpc consistent with A_5+SO_5 (PAPER_1573).
+
+CLEAN — no ruling. Gate: 1837/0. Registry 600 rows / 1288 edges / 314 ledgers.
+Campaign frontier: PAPER_296 / 2,255. Next: PAPER_297.

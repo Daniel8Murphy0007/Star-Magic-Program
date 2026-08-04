@@ -595,3 +595,6 @@ vacuum_differential_harmonic_hbar_denominator_a_vac_diff,PAPER_294 S83,derived,P
 a_super_compressed,PAPER_295 CR24 compressed channel,derived_acceleration,A_sc*a_DPM,A_sc=hbar*f_super*f_DPM/(E_vac*c); a_super=A_sc*a_DPM,2.479e4 m/s2,PAPER_295,0.0,vacuum/DPM,resonance,PAPER_295,1,1,0,0,PAPER_289;PAPER_293;PAPER_294,WIRED
 A_sc_cooper_amplitude,PAPER_295 Cooper-vacuum coupling,derived_amplitude,hbar*f_super*f_DPM/(E_vac*c),linear in f_DPM,6.994e18,PAPER_295,0.0,vacuum/DPM,resonance,PAPER_295,1,1,0,0,PAPER_289,WIRED
 f_DPM2_scaling_law,PAPER_295 quadratic class scaling,scaling_law,a_super ∝ f_DPM^2,A_sc linear + a_DPM linear = quadratic,x100 per f_DPM decade,PAPER_295,0.0,vacuum/DPM,resonance,PAPER_295,1,1,0,0,PAPER_294,WIRED
+a_Lambda_dark_energy,PAPER_296 observable universe,derived_acceleration,Lambda*c^2/3,LAMBDA_SIMPLE*C_OBSERVED^2/3,3.30e-36 m/s2,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_2094;PAPER_1573,WIRED
+Gamma_Lambda_screening,PAPER_296 vacuum screening constant,derived_ratio,a_Lambda/g_base,dark-energy vs DPM-seeded gravity,9.57e-27,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_296,WIRED
+d_Lambda_cosmic_displacement,PAPER_296 cosmic displacement,derived_length,0.5*a_Lambda*t_H^2,over Hubble age,0.313 m,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_296,WIRED

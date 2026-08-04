@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.302.0", "uqff_calculator.VERSION = 0.302.0 (PAPER_295 = v0.302.0)")
+assert_that(C.VERSION == "0.303.0", "uqff_calculator.VERSION = 0.303.0 (PAPER_296 = v0.303.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4023,6 +4023,19 @@ assert_that('compressed' in _r295['channel'] and 'resonance' in _r295['contrast_
 assert_that('Q-246' in _r295['magnetar_row_discrepancy'],
             "PAPER_295: magnetar illustration row (quartic vs quadratic, 100x) flagged Q-246 OPEN_RULING")
 assert_that(C.wired_count() >= 309, "wired_count >= 309 (PAPER_295 wired)")
+
+_r296 = C.calc('PAPER_296')['value']
+assert_that(abs(_r296['a_Lambda'] - 3.30e-36) < 1e-38 and _r296['a_Lambda_formula'] == 'Lambda*c^2/3',
+            "PAPER_296: a_Lambda = Lambda*c^2/3 = 3.30e-36 m/s2 (first explicit UQFF dark-energy term)")
+assert_that(abs(_r296['Lambda_m^-2'] - 1.1e-52) < 1e-54,
+            "PAPER_296: Lambda = (SO_5+1)*F_TRZ^53 = 1.1e-52 m^-2 (PAPER_2094 canonical geometric Lambda)")
+assert_that(abs(_r296['g_base'] - 3.447e-10) < 1e-12 and abs(_r296['Gamma_Lambda'] - 9.57e-27) < 5e-29,
+            "PAPER_296: Gamma_Lambda = a_Lambda/g_base = 9.57e-27 (cosmological vacuum screening constant)")
+assert_that(abs(_r296['d_Lambda_m'] - 0.313) < 0.005,
+            "PAPER_296: d_Lambda = 0.5*a_Lambda*t_H^2 = 0.313 m (first UQFF cosmic-displacement calc)")
+assert_that(_r296['first_explicit_dark_energy_term'],
+            "PAPER_296: first UQFF module to extract Lambda explicitly (prior 25 folded it into H(z))")
+assert_that(C.wired_count() >= 310, "wired_count >= 310 (PAPER_296 wired)")
 
 
 # =============================================================================

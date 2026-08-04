@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.302.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.302.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.303.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.303.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1831%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-309-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1837%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.302.0 wiring campaign live**
+**UQFF systematic rebuild — v0.303.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.302.0)
+## What is currently shipped (v0.303.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 309 distinct papers** (`wired_count()`=309 = 295 base-numbered + 14 suffixed) — 63 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_295** (compressed Cooper super-seeding, f_DPM² quadratic class scaling law: A_sc=ħ·f_super·f_DPM/(E_vac·c)=6.994e18, a_super=A_sc·a_DPM=2.479e4 m/s², a_super∝f_DPM² — x100 per f_DPM decade), wired v0.302.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 310 distinct papers** (`wired_count()`=310 = 296 base-numbered + 14 suffixed) — 64 ✓ CLEAN · 246 ⚠ OPEN_RULING file-rows · 246 rulings queued. Campaign frontier: **PAPER_296** (first explicit UQFF cosmological-constant vacuum acceleration: a_Λ=Λc²/3=3.30e-36 m/s², Λ=(SO_5+1)·F_TRZ⁵³=1.1e-52 m⁻²; observable universe as system; screening constant Γ_Λ=9.57e-27; cosmic displacement d_Λ=0.313 m over the Hubble age), wired v0.303.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -676,7 +676,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | v0.299.0 | Band 1: PAPER_292 (Crab pulsar 60s resonance window) | 306 |
 | v0.300.0 | Band 1: PAPER_293 (Compressed+Resonance dual-channel co-sum) | 307 |
 | **v0.301.0** | Band 1: PAPER_294 (vacuum differential harmonic ħ-denominator) | 308 |
-| **v0.302.0** ← current | Band 1: PAPER_295 (compressed Cooper super-seeding, f_DPM² quadratic law) | 309 |
+| **v0.302.0** | Band 1: PAPER_295 (compressed Cooper super-seeding, f_DPM² quadratic law) | 309 |
+| **v0.303.0** ← current | Band 1: PAPER_296 (first explicit UQFF cosmological-constant vacuum acceleration a_Λ=Λc²/3) | 310 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

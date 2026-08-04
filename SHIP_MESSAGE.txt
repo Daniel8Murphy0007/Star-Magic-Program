@@ -1,19 +1,14 @@
-v0.302.0 BAND 1: PAPER_295 wired - COMPRESSED COOPER SUPER-SEEDING (f_DPM^2 QUADRATIC CLASS SCALING LAW) (OPEN_RULING Q-246)
+v0.303.0 BAND 1: PAPER_296 wired - FIRST EXPLICIT UQFF COSMOLOGICAL-CONSTANT VACUUM ACCELERATION (CLEAN)
 
-PAPER_295 (UQFF Compressed Cooper Super-Seeding, Session 83,
-COMPRESSED_RESONANCE_UQFF24_MODULE.cpp). Places the Cooper super-seeding a_super
-term in the CR24 compressed channel (pre-oscillatory DPM-seeded Cooper injector),
-architecturally distinct from PAPER_289's resonance-channel placement of the same
-A_sc*a_DPM form.
+PAPER_296 (UQFF Cosmological Constant Direct Vacuum Acceleration, Session 84,
+UNIVERSE_DIAMETER_UQFF_MODULE.cpp, 26th C++ module). Observable universe as the
+gravitating system; first UQFF module to extract Lambda explicitly as an additive
+dark-energy acceleration term (prior 25 folded it into the Friedmann H(z)).
 
-- A_sc = hbar*f_super*f_DPM/(E_vac*c) = 6.994e18 (linear in f_DPM)
-- a_super = A_sc*a_DPM = 2.479e4 m/s2 (compressed, systems 18-24, f_DPM=1e11)
-- f_DPM^2 quadratic class scaling law (first identified): a_super proportional to
-  f_DPM^2, x100 per f_DPM decade. Verified in Python.
-- All constants registry-composed (E_vac=RHO_UA, hbar=HBAR_UQFF_S629, c=C_OBSERVED).
+- a_Lambda = Lambda*c^2/3 = 3.30e-36 m/s2, Lambda=(SO_5+1)*F_TRZ^53=1.1e-52 m^-2
+  (PAPER_2094 canonical geometric Lambda, registry LAMBDA_SIMPLE)
+- g_base = GM/r^2 = 3.447e-10 m/s2 (M=1e54 kg, r=4.4e26 m paper anchors)
+- Gamma_Lambda = a_Lambda/g_base = 9.57e-27 (cosmological vacuum screening constant)
+- d_Lambda = 0.5*a_Lambda*t_H^2 = 0.313 m cosmic displacement over Hubble age
 
-OPEN_RULING Q-246: magnetar illustration row shows quartic (4-order) behavior while
-labeled quadratic; same magnetar factor-10 family as Q-245. Dispatch WIRED on the
-clean compressed result; magnetar row flagged.
-
-wired_count 309, gate 1831/0. Campaign frontier PAPER_295 of 2255.
+CLEAN - no ruling. wired_count 310, gate 1837/0. Campaign frontier PAPER_296 of 2255.

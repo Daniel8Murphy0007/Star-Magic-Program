@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_295** (compressed Cooper super-seeding, f_DPM² quadratic class scaling law, wired v0.302.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–295 = **309 wired**.
-- **Distinct wired papers: 309** = `wired_count()` = `len(DISPATCH)`. Composed of **295** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **63 ✓ CLEAN**, **246 ⚠ OPEN_RULING**, **1946 ⬜** not-touched (63 + 246 + 1946 = 2255 ✓). Wired file-rows (63 + 246 = **309**) equal `wired_count()`.
+- **Campaign frontier: PAPER_296** (first explicit UQFF cosmological-constant vacuum acceleration a_Λ=Λc²/3, wired v0.303.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–296 = **310 wired**.
+- **Distinct wired papers: 310** = `wired_count()` = `len(DISPATCH)`. Composed of **296** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **64 ✓ CLEAN**, **246 ⚠ OPEN_RULING**, **1945 ⬜** not-touched (64 + 246 + 1945 = 2255 ✓). Wired file-rows (64 + 246 = **310**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1555,7 +1555,7 @@
 | ✓ | PAPER_293 | CompressedResonanceUQFF24 DualChannelCoSumArchitecture 10TermCR | CLEAN — first dual-channel co-sum (4 compressed + 6 resonance); R_CR=Sigma_comp/Sigma_res=1.490e-17 (~17 orders); v0.300.0 milestone |
 | ✓ | PAPER_294 | CompressedResonanceUQFF24 VacuumDifferentialHarmonic hbarDenominatorCoupling | CLEAN — first hbar-denominator term; a_vac_diff=E0*f*V_sys*a_DPM/hbar=128.4; T_vac=6.993s (~7s ELF); v0.301.0 |
 | ⚠ | PAPER_295 | CompressedResonanceUQFF24 CompressedCooperSuperSeeding fDPMSquaredScalingLaw |
-| ⬜ | PAPER_296 | UniverseDiameter CosmologicalConstantDirectVacuumAcceleration LambdaC2Over3 |
+| ✓ | PAPER_296 | UniverseDiameter CosmologicalConstantDirectVacuumAcceleration LambdaC2Over3 |
 | ⬜ | PAPER_297 | UniverseDiameter SuperluminalHubbleExpansionRatio etaExpGreaterThan1 |
 | ⬜ | PAPER_298 | UniverseDiameter GRCurvatureDominance epsilonGRGreaterThan1 |
 | ⬜ | PAPER_299 | HydrogenAtom ElectrogravitationalDominanceRatio etaEM 9p65e29 |

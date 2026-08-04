@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.302.0"
-description = "UQFF Star-Magic-Program v0.302.0: PAPER_295 wired (OPEN_RULING Q-246) - Compressed Cooper Super-Seeding f_DPM^2 quadratic class scaling law; A_sc=hbar*f_super*f_DPM/(E_vac*c)=6.994e18, a_super=A_sc*a_DPM=2.479e4 m/s2 (compressed pre-oscillatory channel, systems 18-24); a_super proportional to f_DPM^2 (x100 per f_DPM decade); magnetar illustration row flagged quartic-vs-quadratic (Q-246). wired_count 309, gate 1831/0. Campaign frontier PAPER_295 of 2255."
+version = "0.303.0"
+description = "UQFF Star-Magic-Program v0.303.0: PAPER_296 wired (CLEAN) - first explicit UQFF cosmological-constant vacuum acceleration; a_Lambda=Lambda*c^2/3=3.30e-36 m/s2 with Lambda=(SO_5+1)*F_TRZ^53=1.1e-52 m^-2 (PAPER_2094); observable universe as system; Gamma_Lambda=a_Lambda/g_base=9.57e-27 (cosmological vacuum screening constant); cosmic displacement d_Lambda=0.5*a_Lambda*t_H^2=0.313 m over Hubble age. wired_count 310, gate 1837/0. Campaign frontier PAPER_296 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.302.0"
+VERSION = "0.303.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16434,6 +16434,43 @@ def _paper_295(dataset):
         },
         'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac*c)=6.994e18; a_super=A_sc*a_DPM=2.479e4 m/s2; a_super ∝ f_DPM^2 (quadratic class scaling law, PAPER_295)',
         'source': 'PAPER_295',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_296')
+def _paper_296(dataset):
+    Lam = LAMBDA_SIMPLE                                    # 1.1e-52 m^-2 geometric Lambda (PAPER_2094)
+    c = C_OBSERVED
+    G = G_OBSERVED
+    M_obs = 1.0e54                                         # observable-universe mass (matter+DM), paper anchor
+    r_obs = 4.4e26                                         # co-moving half-diameter ~46.5 Gly, paper anchor
+    t_H = 4.355e17                                         # Hubble age 13.8 Gyr in s, paper anchor
+    a_Lambda = Lam * c ** 2 / 3.0                          # 3.30e-36 m/s2 direct dark-energy accel
+    g_base = G * M_obs / r_obs ** 2                        # 3.447e-10 m/s2 DPM-seeded base gravity
+    Gamma_Lambda = a_Lambda / g_base                       # 9.57e-27 cosmological vacuum screening constant
+    d_Lambda = 0.5 * a_Lambda * t_H ** 2                    # 0.313 m cumulative cosmic displacement
+    a_edge = a_Lambda * r_obs                              # 1.45e-9 m/s2 radius-dependent edge repulsion
+    return {
+        'value': {
+            'domain': '2.94 (observable universe as system; first explicit UQFF cosmological-constant vacuum acceleration)',
+            'source_thread': 'Session 84 UNIVERSE_DIAMETER_UQFF_MODULE.cpp (26th C++ UQFF module)',
+            'system': 'Observable Universe (universe as the gravitating body)',
+            'Lambda_m^-2': Lam, 'r_obs_m': r_obs, 'M_obs_kg': M_obs, 't_H_s': t_H,
+            'a_Lambda': a_Lambda,                         # 3.30e-36
+            'a_Lambda_formula': 'Lambda*c^2/3',
+            'g_base': g_base,                            # 3.447e-10
+            'Gamma_Lambda': Gamma_Lambda,                # 9.57e-27
+            'Gamma_Lambda_formula': 'a_Lambda/g_base (cosmological vacuum screening constant)',
+            'd_Lambda_m': d_Lambda,                      # 0.313 m cosmic displacement over t_Hubble
+            'd_Lambda_formula': '0.5*a_Lambda*t_H^2',
+            'a_edge': a_edge,                            # 1.45e-9 radius-dependent form Lambda*c^2*r/3
+            'first_explicit_dark_energy_term': True,     # prior 25 modules folded Lambda into H(z)
+            'H0_consistent': 'H0=70 km/s/Mpc=2.269e-18 (A_5+SO_5, PAPER_1573)',
+        },
+        'formula': 'a_Lambda=Lambda*c^2/3=3.30e-36 m/s2 (first explicit UQFF dark-energy term); Gamma_Lambda=a_Lambda/g_base=9.57e-27; d_Lambda=0.5*a_Lambda*t_H^2=0.313 m cosmic displacement; Lambda=(SO_5+1)*F_TRZ^53=1.1e-52 m^-2',
+        'source': 'PAPER_296',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
