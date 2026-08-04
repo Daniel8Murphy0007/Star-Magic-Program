@@ -5716,3 +5716,12 @@ RESOLVED section with the ruling recorded.
 - **Reverse-engineering attempts:** none of {*c, *c^2, /r_Bohr, *r_Bohr, *a_DPM} on the 4.17e-17 base reproduce 7.38e7. The true generating formula for a_aether=7.38e7 is not recoverable from the paper's stated constants.
 - **Question for Daniel:** what is the correct closed form for a_aether that yields 7.38e7 m/s^2 (and is dimensionally m/s^2)? The module clearly uses 7.38e7 consistently; only the written derivation is broken. Dispatch wired with a_aether=7.38e7 as module output and xi_aether reproduced from it; formula flagged.
 - **Status:** OPEN_RULING (dispatch WIRED on self-consistent module output; derivation formula flagged).
+
+## Q-248 — PAPER_316 Cooper-DPM A_sc requires f_super=1.411e16 (10x canonical Cooper frequency)
+- **Paper:** PAPER_316 (NGC 6302 Cooper-DPM f_DPM=1e12 Class Confirmation), Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp.
+- **Self-consistent (WIRED as OPEN_RULING):** the paper's stated formula A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) reproduces exactly (A_sc=6.994e21, a_super=A_sc*a_DPM=1.747e-9) using E_vac_ISM=RHO_SCM=7.09e-37 and f_super=1.411e16.
+- **E_vac_ISM=RHO_SCM is CORRECT:** the paper distinguishes ISM vacuum (7.09e-37 = rho_SCm) from nebular vacuum (7.09e-36 = rho_UA, used in PAPER_302/314); this is the canonical UQFF vacuum hierarchy rho_SCm/rho_UA = F_TRZ = 0.1. Not an error.
+- **Issue:** f_super = 1.411e16 Hz is 10x the PAPER_295/302 canonical Cooper superconductive frequency (f_super = 1.411e15 Hz, explicitly stated in both papers' body). With the canonical 1.411e15, A_sc = 6.994e20 (not 6.994e21). The paper needs the 10x-larger f_super to reach 6.994e21.
+- **Relation:** this is the same A_sc-magnitude family as Q-246 (PAPER_295 magnetar branch claimed 6.994e21 for f_DPM=1e12 while its systems-18-24 constants predict 6.994e19-20). PAPER_316 "confirms" the Q-246 magnetar-branch value, reached here via f_super=1.411e16 + E_vac_ISM=rho_SCm.
+- **Question for Daniel:** is the canonical Cooper superconductive frequency f_super = 1.411e15 Hz (PAPER_295/302) or 1.411e16 Hz (PAPER_316)? If 1.411e15, PAPER_316's A_sc should be 6.994e20 and the "confirmation" of 6.994e21 is spurious. If 1.411e16, then PAPER_295/302 used the wrong value. Wired to the paper's stated 6.994e21 (f_super=1.411e16) with the discrepancy flagged.
+- **Status:** OPEN_RULING (dispatch wired on paper's self-consistent values; f_super value flagged).

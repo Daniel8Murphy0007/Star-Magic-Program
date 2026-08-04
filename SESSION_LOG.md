@@ -4586,3 +4586,22 @@ First UQFF bi-modal resonance crossover radius (compact THz vs extended VacDiff)
 
 CLEAN. Gate: 1951/0. Registry 657 rows / 1413 edges / 348 ledgers.
 Campaign frontier: PAPER_315 / 2,255. Next: PAPER_316.
+
+---
+
+## v0.324.0 — 2026-08-04 — PAPER_316 (NGC 6302 Cooper-DPM A_sc confirmation, Q-248)
+
+Wired PAPER_316 (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp; third resonance term).
+First astrophysical PN in the PAPER_295 f_DPM=1e12 Cooper-DPM class.
+
+- A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) = 6.994e21 (E_vac_ISM=RHO_SCM, the ISM vacuum =
+  F_TRZ*rho_UA hierarchy; canonically correct, distinct from nebular rho_UA in PAPER_302/314).
+- a_super = A_sc*a_DPM = 1.747e-9 (second-dominant PN tier: a_vac_diff >> a_super >> a_THz >> a_DPM).
+
+OPEN_RULING Q-248: A_sc=6.994e21 requires f_super=1.411e16, 10x the PAPER_295/302 canonical Cooper
+frequency 1.411e15; with canonical value A_sc=6.994e20. Same A_sc-magnitude family as Q-246.
+E_vac_ISM=RHO_SCM is correct; only f_super in question. Wired to paper's self-consistent 6.994e21,
+f_super flagged. All verified in Python.
+
+Gate: 1957/0. Registry 659 rows / 1419 edges / 351 ledgers. NGC 6302 resonance module (314/315/316) complete.
+Campaign frontier: PAPER_316 / 2,255. Next: PAPER_317.

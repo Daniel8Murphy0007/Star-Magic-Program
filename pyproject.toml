@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.323.0"
-description = "UQFF Star-Magic-Program v0.323.0: PAPER_315 wired (CLEAN) - NGC 6302 resonance VacDiff-THz crossover radius; Gamma_THz=SO_5*(f_THz*v_exp/c)=8.939e9 (proportional to HST expansion velocity, linear law), a_THz=Gamma_THz*a_DPM=2.232e-21 m/s2; crossover r_cross=(3*hbar*Gamma_THz/(4*pi*E0))^(1/3)=3.280 km separates compact THz-dominant from extended VacDiff-dominant regimes; VacDiff/THz=8.118e37 (38-order dominance at PN lobe scale). wired_count 329, gate 1951/0. Frontier PAPER_315 of 2255."
+version = "0.324.0"
+description = "UQFF Star-Magic-Program v0.324.0: PAPER_316 wired (OPEN_RULING Q-248) - NGC 6302 Cooper-DPM f_DPM=1e12 class; A_sc=hbar*f_super*f_DPM/(E_vac_ISM*c)=6.994e21 (E_vac_ISM=RHO_SCM, the ISM vacuum = F_TRZ*rho_UA hierarchy), a_super=A_sc*a_DPM=1.747e-9 m/s2, the second-dominant PN resonance tier (a_vac_diff >> a_super >> a_THz >> a_DPM); reproducing A_sc needs f_super=1.411e16 (10x the PAPER_295/302 canonical 1.411e15) -> Q-248. wired_count 330, gate 1957/0. Frontier PAPER_316 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

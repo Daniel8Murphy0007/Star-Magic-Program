@@ -1411,3 +1411,9 @@ observable,Gamma_THz_ngc6302_res,observable,vacdiff_thz_dominance_PN,dominance r
 observable,Gamma_THz_ngc6302_res,paper,PAPER_315,wired
 observable,r_cross_vacdiff_thz,paper,PAPER_315,wired
 observable,vacdiff_thz_dominance_PN,paper,PAPER_315,wired
+primitive,RHO_SCM,observable,A_sc_cooper_dpm_ngc6302,E_vac_ISM in denominator
+primitive,HBAR_UQFF_S629,observable,A_sc_cooper_dpm_ngc6302,hbar numerator
+observable,A_sc_cooper_dpm_ngc6302,observable,a_super_ngc6302,a_super=A_sc*a_DPM
+observable,A_sc_cooper_dpm_ngc6302,paper,PAPER_316,open_ruling Q-248
+observable,a_super_ngc6302,paper,PAPER_316,open_ruling Q-248
+paper,PAPER_316,paper,PAPER_295,confirms f_DPM=1e12 A_sc class

@@ -1,13 +1,15 @@
-v0.323.0 BAND 1: PAPER_315 wired - NGC 6302 VACDIFF-THz CROSSOVER RADIUS (CLEAN)
+v0.324.0 BAND 1: PAPER_316 wired - NGC 6302 COOPER-DPM A_sc CONFIRMATION (OPEN_RULING Q-248)
 
-PAPER_315 (NGC 6302 UQFF Resonance VacDiff-THz Crossover Radius, Session 90,
-NGC6302_RESONANCE_UQFF_MODULE.cpp; second resonance term). First UQFF bi-modal resonance
-crossover radius (compact THz-dominant vs extended VacDiff-dominant).
+PAPER_316 (NGC 6302 Cooper-DPM f_DPM=1e12 Class Confirmation, Session 90,
+NGC6302_RESONANCE_UQFF_MODULE.cpp; third resonance term). First astrophysical PN in the
+PAPER_295 f_DPM=1e12 Cooper-DPM class.
 
-- Gamma_THz = SO_5*(f_THz*v_exp/c) = 8.939e9 (vac_ratio=10=SO_5; v_exp=268 km/s from HST)
-- a_THz = Gamma_THz*a_DPM = 2.232e-21 m/s2; Gamma_THz proportional to v_exp (0.179 vs Crab = exact, linear law)
-- r_cross = (3*hbar*Gamma_THz/(4*pi*E0))^(1/3) = 3.280 km (E0=(1-F_TRZ)*E_vac=6.381e-36)
-  r<r_cross THz dominates (compact); r>r_cross VacDiff dominates (extended)
-- VacDiff/THz = E0*V_sys/(hbar*Gamma_THz) = 8.118e37 (38-order VacDiff dominance at PN lobe scale)
+- A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) = 6.994e21 (E_vac_ISM=RHO_SCM = ISM vacuum, F_TRZ*rho_UA
+  hierarchy; canonically correct, distinct from nebular rho_UA)
+- a_super = A_sc*a_DPM = 1.747e-9 m/s2 (second-dominant PN tier: a_vac_diff >> a_super >> a_THz >> a_DPM)
 
-CLEAN. wired_count 329, gate 1951/0. Campaign frontier PAPER_315 of 2255.
+OPEN_RULING Q-248: A_sc=6.994e21 requires f_super=1.411e16, 10x the PAPER_295/302 canonical Cooper
+frequency 1.411e15 (with canonical value A_sc=6.994e20). Same A_sc-magnitude family as Q-246.
+E_vac_ISM=RHO_SCM is correct; only f_super in question. Wired to paper's self-consistent value; f_super flagged.
+
+wired_count 330, gate 1957/0. Campaign frontier PAPER_316 of 2255.

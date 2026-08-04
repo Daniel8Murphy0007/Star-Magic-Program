@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.323.0"
+VERSION = "0.324.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17182,4 +17182,42 @@ def _paper_315(dataset):
         'source': 'PAPER_315',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_316')
+def _paper_316(dataset):
+    hbar = HBAR_UQFF_S629
+    c = C_OBSERVED
+    E_vac_ISM = RHO_SCM                                   # ISM vacuum (= F_TRZ*rho_UA hierarchy)
+    f_super = 1.411e16                                    # Cooper superconductive freq, paper anchor (see Q-248)
+    f_super_canonical = 1.411e15                          # PAPER_295/302 canonical Cooper frequency
+    f_DPM = 1.0e12                                        # wind-aligned DPM (1e12 class), anchor
+    a_DPM = 2.497e-31                                     # DPM seed (PAPER_314)
+    a_THz = 2.232e-21                                     # THz term (PAPER_315)
+    A_sc = hbar * f_super * f_DPM / (E_vac_ISM * c)       # 6.994e21 Cooper-DPM amplitude
+    a_super = A_sc * a_DPM                                # 1.747e-9 superconductive-term accel
+    a_super_over_a_THz = a_super / a_THz                  # ~7.8e11 (a_super second-dominant above THz)
+    A_sc_canonical = hbar * f_super_canonical * f_DPM / (E_vac_ISM * c)  # 6.994e20 with canonical f_super
+    return {
+        'value': {
+            'domain': '3.14 (NGC 6302 Cooper-DPM; first PN confirmation of PAPER_295 f_DPM=1e12 A_sc class)',
+            'source_thread': 'Session 90 NGC6302_RESONANCE_UQFF_MODULE.cpp',
+            'system': 'NGC 6302 bipolar PN, Cooper-DPM superconductive resonance channel',
+            'f_super_Hz': f_super, 'f_DPM_Hz': f_DPM, 'E_vac_ISM': E_vac_ISM,
+            'A_sc': A_sc,                               # 6.994e21
+            'A_sc_formula': 'hbar*f_super*f_DPM/(E_vac_ISM*c)',
+            'a_super': a_super,                         # 1.747e-9
+            'a_super_formula': 'A_sc*a_DPM',
+            'a_super_over_a_THz': a_super_over_a_THz,    # a_super >> a_THz (second-dominant tier)
+            'PN_hierarchy': 'a_vac_diff >> a_super >> a_THz >> a_DPM',
+            'quadratic_law': 'a_super ~ f_DPM^2 (PAPER_295): A_sc linear + a_DPM linear',
+            'f_super_discrepancy': ('paper A_sc=6.994e21 requires f_super=1.411e16 (10x the PAPER_295/302 '
+                'canonical Cooper freq 1.411e15); with canonical value A_sc=%.3e -> same A_sc-magnitude '
+                'family as Q-246 -> Q-248 OPEN_RULING' % A_sc_canonical),
+        },
+        'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac_ISM*c)=6.994e21 (E_vac_ISM=RHO_SCM, ISM vacuum); a_super=A_sc*a_DPM=1.747e-9 m/s2 (second-dominant PN tier, a_vac_diff>>a_super>>a_THz>>a_DPM); confirms PAPER_295 f_DPM=1e12 A_sc class (f_super=1.411e16 vs canonical 1.411e15, Q-248)',
+        'source': 'PAPER_316',
+        'residual_pct': 0.0,
+        'status': 'OPEN_RULING',
     }

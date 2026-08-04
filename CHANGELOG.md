@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.324.0] — 2026-08-04 — BAND 1: PAPER_316 — NGC 6302 COOPER-DPM A_sc CONFIRMATION (OPEN_RULING Q-248)
+
+### Added
+- **PAPER_316 dispatch** — NGC 6302 Cooper-DPM f_DPM=1e12 Class Confirmation (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp; third resonance term). First astrophysical PN system operating in the PAPER_295 f_DPM=1e12 Cooper-DPM class.
+  - A_sc = ħ·f_super·f_DPM/(E_vac_ISM·c) = **6.994e21** — with E_vac_ISM = RHO_SCM (the **ISM vacuum**, = F_TRZ·ρ_UA hierarchy; distinct from the nebular ρ_UA used in PAPER_302/314 — this is canonically correct).
+  - a_super = A_sc·a_DPM = **1.747e-9 m/s²** — the **second-dominant PN resonance tier**: a_vac_diff ≫ a_super ≫ a_THz ≫ a_DPM.
+  - Confirms the PAPER_295 quadratic law (a_super ∝ f_DPM²: A_sc linear + a_DPM linear).
+
+### Open ruling
+- **Q-248** — reproducing A_sc = 6.994e21 requires **f_super = 1.411e16**, which is **10× the PAPER_295/302 canonical Cooper superconductive frequency (1.411e15)**. With the canonical value A_sc = 6.994e20. Same A_sc-magnitude family as Q-246 (the PAPER_295 magnetar-branch factor discrepancy). E_vac_ISM = RHO_SCM is correct; only f_super is in question. Dispatch wired on the paper's self-consistent 6.994e21 with the f_super discrepancy flagged.
+
+### Wiring status
+- `wired_count()` = **330** (OPEN_RULING). Campaign frontier PAPER_316 of 2255. Index: 82 ✓ / 248 ⚠ / 1925 ⬜ = 2255. Gate 1951 → **1957/0**.
+
+---
+
 ## [0.323.0] — 2026-08-04 — BAND 1: PAPER_315 — NGC 6302 VACDIFF-THz CROSSOVER RADIUS (CLEAN)
 
 ### Added

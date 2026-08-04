@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.323.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.323.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.324.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.324.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1951%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-329-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1957%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-330-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.323.0 wiring campaign live**
+**UQFF systematic rebuild — v0.324.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.323.0)
+## What is currently shipped (v0.324.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 329 distinct papers** (`wired_count()`=329 = 315 base-numbered + 14 suffixed) — 82 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_315** (NGC 6302 resonance VacDiff-THz crossover radius: Γ_THz=SO_5·(f_THz·v_exp/c)=8.939e9 (∝ HST expansion velocity — linear law), a_THz=Γ_THz·a_DPM=2.232e-21 m/s²; crossover r_cross=(3ħΓ_THz/4πE0)^⅓=3.280 km separates compact THz-dominant from extended VacDiff-dominant regimes; VacDiff/THz=8.118e37, a 38-order dominance at PN lobe scale), wired v0.323.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 330 distinct papers** (`wired_count()`=330 = 316 base-numbered + 14 suffixed) — 82 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 248 rulings queued. Campaign frontier: **PAPER_316** (NGC 6302 Cooper-DPM f_DPM=1e12 class: A_sc=ħ·f_super·f_DPM/(E_vac_ISM·c)=6.994e21 with E_vac_ISM=RHO_SCM (the ISM vacuum, F_TRZ·ρ_UA hierarchy), a_super=A_sc·a_DPM=1.747e-9 m/s² — the second-dominant PN resonance tier a_vac_diff≫a_super≫a_THz≫a_DPM. Reaching A_sc=6.994e21 needs f_super=1.411e16, 10× the PAPER_295/302 canonical 1.411e15 — Q-248), wired v0.324.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -696,7 +696,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.319.0** | Band 1: PAPER_312 (NGC 6302 central-WD UV radiation pressure η_rad=1.913e20) | 326 |
 | **v0.320.0** | Band 1: PAPER_313 (NGC 6302 equatorial-torus magnetic confinement η_B=3.979e5) | 327 |
 | **v0.322.0** | Band 1: PAPER_314 (NGC 6302 PN lobe DPM macro-antenna F_DPM=1.267e50 N); v0.321.0 burned | 328 |
-| **v0.323.0** ← current | Band 1: PAPER_315 (NGC 6302 VacDiff-THz crossover r_cross=3.280 km) | 329 |
+| **v0.323.0** | Band 1: PAPER_315 (NGC 6302 VacDiff-THz crossover r_cross=3.280 km) | 329 |
+| **v0.324.0** ← current | Band 1: PAPER_316 (NGC 6302 Cooper-DPM A_sc=6.994e21, Q-248) | 330 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

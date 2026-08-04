@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.323.0", "uqff_calculator.VERSION = 0.323.0 (PAPER_315 = v0.323.0)")
+assert_that(C.VERSION == "0.324.0", "uqff_calculator.VERSION = 0.324.0 (PAPER_316 = v0.324.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4284,6 +4284,20 @@ assert_that(abs(_r315['dom_ratio_PN'] - 8.118e37) / 8.118e37 < 0.005,
 assert_that(abs(_r315['E0'] - 6.381e-36) / 6.381e-36 < 0.005,
             "PAPER_315: E0 = (1-F_TRZ)*E_vac = 6.381e-36 J/m3 (vacuum differential energy)")
 assert_that(C.wired_count() >= 329, "wired_count >= 329 (PAPER_315 wired)")
+
+_r316full = C.calc('PAPER_316')
+_r316 = _r316full['value']
+assert_that(_r316full['status'] == 'OPEN_RULING' and 'Q-248' in _r316['f_super_discrepancy'],
+            "PAPER_316: OPEN_RULING Q-248 - A_sc=6.994e21 requires f_super=1.411e16 (10x canonical 1.411e15)")
+assert_that(abs(_r316['A_sc'] - 6.994e21) / 6.994e21 < 0.005 and _r316['A_sc_formula'] == 'hbar*f_super*f_DPM/(E_vac_ISM*c)',
+            "PAPER_316: A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) = 6.994e21 (E_vac_ISM=RHO_SCM, ISM vacuum)")
+assert_that(abs(_r316['a_super'] - 1.747e-9) / 1.747e-9 < 0.005 and _r316['a_super_formula'] == 'A_sc*a_DPM',
+            "PAPER_316: a_super = A_sc*a_DPM = 1.747e-9 m/s2 (second-dominant PN resonance tier)")
+assert_that(_r316['a_super_over_a_THz'] > 1.0 and 'a_vac_diff >> a_super >> a_THz >> a_DPM' == _r316['PN_hierarchy'],
+            "PAPER_316: PN hierarchy a_vac_diff >> a_super >> a_THz >> a_DPM (a_super second-dominant above THz)")
+assert_that(abs(_r316['E_vac_ISM'] - 7.09e-37) < 1e-39,
+            "PAPER_316: E_vac_ISM = 7.09e-37 (ISM vacuum = F_TRZ*rho_UA hierarchy, composed from RHO_SCM)")
+assert_that(C.wired_count() >= 330, "wired_count >= 330 (PAPER_316 wired)")
 
 
 # =============================================================================
