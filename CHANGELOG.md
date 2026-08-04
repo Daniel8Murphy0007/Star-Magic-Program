@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.317.0] — 2026-08-04 — BAND 1: PAPER_310 — SPIRAL DM/VISIBLE MASS PARTITION (ROTATION-CURVE EXCESS) (CLEAN)
+
+### Added
+- **PAPER_310 dispatch** — Dark Matter / Visible Mass Partition Rotation Curve Excess (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp; third/final spiral term). Explicitly partitions galactic gravity into g_vis and g_DM.
+  - η_DM/vis = f_DM/f_vis = 0.85/0.15 = **5.667** — DM contributes 5.7× more gravitational pull than visible matter (a first-order partition, not a halo correction).
+  - Partitioned accelerations: g_vis = G·M_vis/r² = 2.324e-12, g_DM = G·M_DM/r² = **1.316e-11 m/s²** (= 5.667·g_vis); total g_base = g_vis + g_DM = 1.549e-11.
+  - Keplerian v_circ = √(GM/r) = **1.197e5 m/s** vs observed flat v_rot = 2.0e5 ⇒ v_excess = v_rot/v_circ = **1.671** — the canonical **67.1% rotation-curve excess**, here derived directly from the DM/visible partition (testable against SPARC / McGaugh et al. 2016, which show 4–8× DM at large radii).
+- 3 registry observables, 6 graph edges, 1 corpus citation (PAPER_308).
+- 6 gate assertions (η_DM/vis, g_DM=5.667·g_vis, g_base total, v_circ, v_excess, wired_count ≥ 324). Gate 1915 → **1921/0**.
+
+### Wiring status
+- `wired_count()` = **324** (CLEAN). Campaign frontier PAPER_310 of 2255. Index: 77 ✓ / 247 ⚠ / 1931 ⬜ = 2255.
+
+---
+
 ## [0.316.0] — 2026-08-04 — BAND 1: PAPER_309 — SN Ia HUBBLE-TENSION GRAVITATIONAL IMPRINT (CLEAN)
 
 ### Added

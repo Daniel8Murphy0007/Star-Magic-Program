@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_309** (SN Ia Hubble-tension gravitational imprint η_SN=2.0e16, Δ_SN/SN=2.52%, wired v0.316.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–309 = **323 wired**.
-- **Distinct wired papers: 323** = `wired_count()` = `len(DISPATCH)`. Composed of **309** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **76 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1932 ⬜** not-touched (76 + 247 + 1932 = 2255 ✓). Wired file-rows (76 + 247 = **323**) equal `wired_count()`.
+- **Campaign frontier: PAPER_310** (spiral DM/visible partition η_DM/vis=5.667, rotation-curve excess 67.1%, wired v0.317.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–310 = **324 wired**.
+- **Distinct wired papers: 324** = `wired_count()` = `len(DISPATCH)`. Composed of **310** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **77 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1931 ⬜** not-touched (77 + 247 + 1931 = 2255 ✓). Wired file-rows (77 + 247 = **324**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1569,7 +1569,7 @@
 | ✓ | PAPER_307 | LagoonNebula DualRadiationEMBarrier aEM over aRad 12p77 |
 | ✓ | PAPER_308 | SpiralGalaxy TorqueGravitationalAmplifier tau 2p046 307Myr |
 | ✓ | PAPER_309 | SpiralSNIa HubbleTensionImprint deltaSN 2p52pct etaSN 2e16 |
-| ⬜ | PAPER_310 | SpiralGalaxy DMVisiblePartition etaDM 5p667 vExcess 67pct |
+| ✓ | PAPER_310 | SpiralGalaxy DMVisiblePartition etaDM 5p667 vExcess 67pct |
 | ⬜ | PAPER_311 | NGC6302 BipolarPN WindShockDominance eta wind 7p127e5 KE 3p564e5 |
 | ⬜ | PAPER_312 | NGC6302 CentralWD UVRadiationPressure eta rad 1p913e20 arad 5p672e8 |
 | ⬜ | PAPER_313 | NGC6302 EquatorialTorus MagneticConfinement etaB 3p979e5 vAlfven 8p921e7 |

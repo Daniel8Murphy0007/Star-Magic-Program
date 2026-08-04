@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.316.0", "uqff_calculator.VERSION = 0.316.0 (PAPER_309 = v0.316.0)")
+assert_that(C.VERSION == "0.317.0", "uqff_calculator.VERSION = 0.317.0 (PAPER_310 = v0.317.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4206,6 +4206,19 @@ assert_that(abs(_r309['dSN_over_SN'] - 0.0252) < 5e-4 and _r309['H0_anchors_obse
 assert_that(abs(_r309['E_z_0p5'] - 1.3086) < 5e-4,
             "PAPER_309: E(z=0.5) = sqrt(0.3*1.5^3+0.7) = 1.3086 (Hubble function)")
 assert_that(C.wired_count() >= 323, "wired_count >= 323 (PAPER_309 wired)")
+
+_r310 = C.calc('PAPER_310')['value']
+assert_that(abs(_r310['eta_DM_vis'] - 5.667) < 0.005 and _r310['eta_DM_vis_formula'] == 'f_DM/f_vis',
+            "PAPER_310: eta_DM/vis = f_DM/f_vis = 0.85/0.15 = 5.667 (DM/visible partition ratio)")
+assert_that(abs(_r310['g_DM'] - 1.316e-11) / 1.316e-11 < 0.005 and abs(_r310['g_DM'] / _r310['g_vis'] - 5.667) < 0.005,
+            "PAPER_310: g_DM = G*M_DM/r^2 = 1.316e-11 m/s2 = 5.667*g_vis")
+assert_that(abs(_r310['g_base_total'] - 1.549e-11) / 1.549e-11 < 0.005,
+            "PAPER_310: g_base = g_vis + g_DM = 1.549e-11 m/s2 (total partitioned gravity)")
+assert_that(abs(_r310['v_circ_keplerian'] - 1.197e5) / 1.197e5 < 0.005,
+            "PAPER_310: v_circ = sqrt(GM/r) = 1.197e5 m/s (Keplerian circular velocity)")
+assert_that(abs(_r310['v_excess'] - 1.671) < 0.005 and _r310['rotation_curve_problem'],
+            "PAPER_310: v_excess = v_rot/v_circ = 1.671 (67.1% above Keplerian, rotation-curve excess)")
+assert_that(C.wired_count() >= 324, "wired_count >= 324 (PAPER_310 wired)")
 
 
 # =============================================================================

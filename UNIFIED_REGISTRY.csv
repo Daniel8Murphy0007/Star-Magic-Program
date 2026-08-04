@@ -637,3 +637,6 @@ dtau_over_H0_spiral,PAPER_308 torque vs Hubble rate,derived_ratio,(f_gas*Omega_p
 a_SN_radiation_pressure,PAPER_309 SN Ia radiation pressure,derived_acceleration,L_SN/(4*pi*r^2*c*rho_ISM),additive pipeline term,3.096e5 m/s2,PAPER_309,0.0,astro/supernova,resonance,PAPER_309,1,1,0,0,PAPER_308,WIRED
 eta_SN_dominance,PAPER_309 SN-to-gravity dominance,derived_ratio,a_SN/g_base,16 orders,2.0e16,PAPER_309,0.0,astro/supernova,resonance,PAPER_309,1,1,0,0,PAPER_308,WIRED
 dSN_hubble_tension_imprint,PAPER_309 H0-tension field imprint,derived_ratio,(factor_SH0ES-factor_Planck)/factor_SH0ES,8.31% H0 tension -> 2.52% field,2.52% at z=0.5,PAPER_309,0.0,cosmology/hubble-tension,resonance,PAPER_309,1,1,0,0,PAPER_308,WIRED
+eta_DM_vis_partition,PAPER_310 DM/visible partition,derived_ratio,f_DM/f_vis,0.85/0.15,5.667,PAPER_310,0.0,astro/dark-matter,resonance,PAPER_310,1,1,0,0,PAPER_308,WIRED
+g_DM_spiral,PAPER_310 dark-matter gravity,derived_acceleration,G*M_DM/r^2,"additive pipeline term, 5.667*g_vis",1.316e-11 m/s2,PAPER_310,0.0,astro/dark-matter,resonance,PAPER_310,1,1,0,0,PAPER_308,WIRED
+v_excess_rotation_curve,PAPER_310 rotation-curve excess,derived_ratio,v_rot/v_circ,67.1% above Keplerian,1.671,PAPER_310,0.0,astro/dark-matter,resonance,PAPER_310,1,1,0,0,PAPER_310,WIRED

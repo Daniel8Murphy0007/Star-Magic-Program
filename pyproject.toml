@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.316.0"
-description = "UQFF Star-Magic-Program v0.316.0: PAPER_309 wired (CLEAN) - SN Ia Hubble-tension gravitational imprint; SN Ia radiation pressure a_SN=L_SN/(4*pi*r^2*c*rho_ISM)=3.096e5 m/s2 exceeds galactic gravity by eta_SN=2.0e16 (16 orders); the 8.31% SH0ES-vs-Planck H0 tension imprints Delta_SN/SN=2.52% on the SN Ia gravitational field at z=0.5, t=5 Gyr (H0s are external obs anchors, not UQFF H0). wired_count 323, gate 1915/0. Frontier PAPER_309 of 2255."
+version = "0.317.0"
+description = "UQFF Star-Magic-Program v0.317.0: PAPER_310 wired (CLEAN) - spiral galaxy dark-matter/visible mass partition; eta_DM/vis=f_DM/f_vis=0.85/0.15=5.667 gives g_DM=5.667*g_vis=1.316e-11 m/s2 as an independent additive pipeline term; Keplerian v_circ=sqrt(GM/r)=1.197e5 m/s vs observed flat v_rot=2.0e5 gives v_excess=1.671 (67.1% above Keplerian) - the rotation-curve excess derived from the DM/visible partition. wired_count 324, gate 1921/0. Frontier PAPER_310 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

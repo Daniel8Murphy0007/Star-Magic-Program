@@ -4493,3 +4493,18 @@ Carries the SH0ES-vs-Planck H0 tension into the gravitational field via SN Ia ra
 
 CLEAN. Gate: 1915/0. Registry 639 rows / 1374 edges / 337 ledgers.
 Campaign frontier: PAPER_309 / 2,255. Next: PAPER_310.
+
+---
+
+## v0.317.0 — 2026-08-04 — PAPER_310 (spiral DM/visible mass partition, rotation-curve excess)
+
+Wired PAPER_310 (Session 88, SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp; third/final spiral term).
+Explicitly partitions galactic gravity into g_vis and g_DM.
+
+- eta_DM/vis = f_DM/f_vis = 0.85/0.15 = 5.667.
+- g_vis = G*M_vis/r^2 = 2.324e-12; g_DM = G*M_DM/r^2 = 1.316e-11 (= 5.667*g_vis); g_base = 1.549e-11.
+- v_circ = sqrt(GM/r) = 1.197e5 m/s vs observed flat v_rot = 2.0e5 -> v_excess = 1.671 (67.1% above
+  Keplerian, rotation-curve excess from DM/visible partition). All verified in Python.
+
+CLEAN. Gate: 1921/0. Registry 642 rows / 1380 edges / 338 ledgers. Spiral module (308/309/310) complete.
+Campaign frontier: PAPER_310 / 2,255. Next: PAPER_311.
