@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.301.0] — 2026-08-03 — BAND 1: PAPER_294 — VACUUM DIFFERENTIAL HARMONIC (ħ-DENOMINATOR) (CLEAN)
+
+### Added
+- **PAPER_294 dispatch** — UQFF Vacuum Differential Harmonic (VDH), ħ-denominator quantum-volume diffusion coupling (Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp). Supplies the a_vac_diff term of the PAPER_293 CR co-sum. The **first UQFF acceleration term with the reduced Planck constant ħ in the *denominator*** (all prior ħ terms, e.g. PAPER_289's A_sc, put it in the numerator).
+  - a_vac_diff = E0·f_vac_diff·V_sys·a_DPM/ħ = **128.4 m/s²**, with E0 = (1−F_TRZ)·E_vac = 6.381e-36 J/m³ (a 10% plasmotic-vacuum deficit, E0/E_vac = 0.9), f_vac_diff = 0.143 Hz, V_sys = 4.189e18 m³, a_DPM = 3.543e-15.
+  - Quantum-volume coupling V_sys/ħ = 3.973e52 m³/(J·s) — a dimensional lever arm amplifying the J/m³-scale signal to m/s².
+  - Vacuum beat period T_vac = 1/f_vac_diff = **6.993 s ≈ 7 s** — an ELF-band vacuum oscillation, a Schumann-resonance analog (~7.83 Hz) at the vacuum-differential level.
+- Gate +5 assertions (→ 1825, 0 failures). wired_count 307 → **308**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_294 → ✓.
+
+### Notes
+- CLEAN — all values reproduce; E0 and ħ composed from registry (E0 = (1−F_TRZ)·ρ_UA).
+
+---
+
 ## [0.300.0] — 2026-08-03 — BAND 1: PAPER_293 — COMPRESSED+RESONANCE DUAL-CHANNEL CO-SUM (CLEAN) · v0.300.0 MILESTONE
 
 ### Added

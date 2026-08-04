@@ -4220,3 +4220,22 @@ Frontier PAPER_292 -> PAPER_293. Version PAPER_293 = v0.300.0 MILESTONE.
 
 Gate: 1820/0. Registry 592 rows / 1271 edges / 307 ledgers. Campaign frontier:
 PAPER_293 / 2,255. Next: PAPER_294.
+
+---
+
+## 2026-08-03 — v0.301.0 — BAND 1: PAPER_294 — VACUUM DIFFERENTIAL HARMONIC (hbar-DENOMINATOR) (CLEAN)
+
+PAPER_294 (UQFF Vacuum Differential Harmonic hbar-denominator quantum-volume
+diffusion, Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp) wired as one dispatch
+(CLEAN). Supplies a_vac_diff term of PAPER_293 CR co-sum. FIRST UQFF term with hbar in
+the DENOMINATOR (prior e.g. PAPER_289 A_sc had hbar in numerator). a_vac_diff=E0*
+f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2; E0=(1-F_TRZ)*E_vac=6.381e-36 (10% deficit,
+E0/E_vac=0.9); f_vac_diff=0.143 Hz, V_sys=4.189e18, a_DPM=3.543e-15; V_sys/hbar=
+3.973e52 lever arm; T_vac=1/0.143=6.993 s ~7s (ELF, Schumann-analog).
+
+wired_count 307 -> 308. Gate +5 (1825/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_294 -> checkmark (63 / 245 / 1947 = 2255; wired 308 = count).
+Frontier PAPER_293 -> PAPER_294. Version PAPER_294 = v0.301.0.
+
+Gate: 1825/0. Registry 593 rows / 1272 edges / 308 ledgers. Campaign frontier:
+PAPER_294 / 2,255. Next: PAPER_295.

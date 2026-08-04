@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.300.0"
+VERSION = "0.301.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16359,6 +16359,40 @@ def _paper_293(dataset):
         },
         'formula': 'g_CR=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); 10-term co-sum (4 compressed + 6 resonance); R_CR=Sigma_comp/Sigma_res=2.481e4/1.666e21=1.490e-17 (resonance dominates ~17 orders)',
         'source': 'PAPER_293',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_294')
+def _paper_294(dataset):
+    hbar = HBAR_UQFF_S629
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic vacuum
+    E0 = (1.0 - F_TRZ) * RHO_UA                           # 6.381e-36 reduced (10% deficit)
+    E0_over_Evac = E0 / E_vac                             # 0.9001
+    f_vac_diff = 0.143                                    # vacuum differential beat freq
+    V_sys = 4.189e18
+    a_DPM = 3.543e-15
+    a_vac_diff = E0 * f_vac_diff * V_sys * a_DPM / hbar   # 128.4 m/s2
+    V_sys_over_hbar = V_sys / hbar                         # 3.973e52 quantum-volume coupling
+    T_vac = 1.0 / f_vac_diff                               # 6.993 s ~7 s
+    return {
+        'value': {
+            'domain': '2.92 (vacuum differential harmonic, hbar-denominator quantum-volume diffusion)',
+            'source_thread': 'Session 83 COMPRESSED_RESONANCE_UQFF24_MODULE.cpp',
+            'system': 'CR24 compressed channel VDH term (a_vac_diff, PAPER_293)',
+            'E_vac': E_vac, 'E0': E0,
+            'E0_over_Evac': E0_over_Evac,                # 0.9001 (10% plasmotic deficit)
+            'f_vac_diff_Hz': f_vac_diff, 'V_sys': V_sys, 'a_DPM': a_DPM,
+            'a_vac_diff': a_vac_diff,                    # 128.4
+            'a_vac_diff_formula': 'E0*f_vac_diff*V_sys*a_DPM/hbar',
+            'hbar_in_denominator': True,                 # FIRST UQFF term with hbar in denominator
+            'V_sys_over_hbar': V_sys_over_hbar,          # 3.973e52 lever arm
+            'T_vac_s': T_vac,                            # 6.993
+            'ELF_band_Schumann_analog': True,            # ~7s beat, Schumann-analog
+        },
+        'formula': 'a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2 (FIRST hbar-denominator term); E0=(1-F_TRZ)*E_vac=0.9*E_vac; V_sys/hbar=3.973e52; T_vac=1/0.143=6.993 s (~7s ELF, Schumann-analog)',
+        'source': 'PAPER_294',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.300.0"
-description = "UQFF Star-Magic-Program v0.300.0: PAPER_293 wired (CLEAN) - Compressed+Resonance Dual-Channel Co-Sum Architecture (10-term CR module); g_CR=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); first UQFF merge of 4 compressed + 6 resonance terms; dominance ratio R_CR=Sigma_comp/Sigma_res=2.481e4/1.666e21=1.490e-17 (resonance dominates ~17 orders). wired_count 307, gate 1820/0. Campaign frontier PAPER_293 of 2255. (v0.285.0 burned; v0.286.0-0.299.0 shipped.)"
+version = "0.301.0"
+description = "UQFF Star-Magic-Program v0.301.0: PAPER_294 wired (CLEAN) - Vacuum Differential Harmonic hbar-denominator quantum-volume diffusion; a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2 (FIRST UQFF term with hbar in the denominator); E0=(1-F_TRZ)*E_vac (10% deficit); V_sys/hbar=3.973e52 lever arm; vacuum beat T_vac=1/0.143=6.993 s (~7s ELF, Schumann-analog). wired_count 308, gate 1825/0. Campaign frontier PAPER_294 of 2255. (v0.285.0 burned; v0.286.0-0.300.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

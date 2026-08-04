@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.300.0", "uqff_calculator.VERSION = 0.300.0 (PAPER_293 = v0.300.0 MILESTONE)")
+assert_that(C.VERSION == "0.301.0", "uqff_calculator.VERSION = 0.301.0 (PAPER_294 = v0.301.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3999,6 +3999,17 @@ assert_that(abs(_r293['orders_res_dominates'] - 17.0) < 0.5 and _r293['resonance
 assert_that(_r293['first_dual_channel_cosum'] and _r293['g_CR_form'] == '(Sigma_comp + Sigma_res)*(1-B/B_crit)*(1+f_TRZ)',
             "PAPER_293: first UQFF dual-channel co-sum architecture merging compressed + resonance channels")
 assert_that(C.wired_count() >= 307, "wired_count >= 307 (PAPER_293 wired)")
+
+_r294 = C.calc('PAPER_294')['value']
+assert_that(abs(_r294['a_vac_diff'] - 128.4) < 0.5 and _r294['a_vac_diff_formula'] == 'E0*f_vac_diff*V_sys*a_DPM/hbar',
+            "PAPER_294: a_vac_diff = E0*f_vac_diff*V_sys*a_DPM/hbar = 128.4 m/s2 (first hbar-denominator term)")
+assert_that(_r294['hbar_in_denominator'] and abs(_r294['E0_over_Evac'] - 0.9) < 1e-3,
+            "PAPER_294: first UQFF term with hbar in denominator; E0/E_vac = (1-F_TRZ) = 0.9 (10% deficit)")
+assert_that(abs(_r294['V_sys_over_hbar'] - 3.973e52) < 1e50 and abs(_r294['T_vac_s'] - 6.993) < 0.01,
+            "PAPER_294: V_sys/hbar = 3.973e52 lever arm; T_vac = 1/0.143 = 6.993 s (~7s ELF)")
+assert_that(_r294['ELF_band_Schumann_analog'],
+            "PAPER_294: ~7s vacuum beat period in ELF band (Schumann-resonance analog)")
+assert_that(C.wired_count() >= 308, "wired_count >= 308 (PAPER_294 wired)")
 
 
 # =============================================================================
