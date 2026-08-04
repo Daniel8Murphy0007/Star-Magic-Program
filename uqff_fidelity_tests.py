@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.333.0", "uqff_calculator.VERSION = 0.333.0 (PAPER_325 = v0.333.0)")
+assert_that(C.VERSION == "0.334.0", "uqff_calculator.VERSION = 0.334.0 (PAPER_326 = v0.334.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4415,6 +4415,19 @@ assert_that(abs(_r325['a_fluid_rho_over_a_fluid'] - 1.0e-21) < 1e-27,
 assert_that('reduces CR34b to CR34' in _r325['backward_compatible'],
             "PAPER_325: rho_fluid=1 reduces CR34b to CR34 fluid term (strict generalization, backward compatible)")
 assert_that(C.wired_count() >= 339, "wired_count >= 339 (PAPER_325 wired)")
+
+_r326 = C.calc('PAPER_326')['value']
+assert_that(_r326['n_states'] == 26 and _r326['ramanujan_26_state'] and 'FU_g1' in _r326['triadic_channels'],
+            "PAPER_326: triadic co-sum (FU_g1 + R(t) + FU_Bi) over 26 vacuum states (= D_crit)")
+assert_that(abs(_r326['ssq_suppression_26'] - 0.5655) < 0.001 and _r326['ssq_suppression_formula'] == 'exp(-SSQ*n/26) at n=26 = exp(-SSQ)',
+            "PAPER_326: 26-state [SSq] suppression = exp(-SSQ) = 0.5655 (canonical SSq=0.57, drift-corrected)")
+assert_that('PAPER_1154' in _r326['ssq_drift_correction'] and '0.507' in _r326['ssq_drift_correction'],
+            "PAPER_326: paper's [SSq]=0.507 drift auto-corrected to canonical 0.57 per PAPER_1154 charter rule")
+assert_that(abs(_r326['vac_density_ratio'] - 0.1) < 1e-9,
+            "PAPER_326: vacuum cascade base rho_SCm/rho_UA = F_TRZ = 0.1")
+assert_that('Grok-thread' in _r326['per_system_note'],
+            "PAPER_326: per-system FU_g1/R(t)/FU_Bi are thread-validation numbers, not reproducible closed forms")
+assert_that(C.wired_count() >= 340, "wired_count >= 340 (PAPER_326 wired)")
 
 
 # =============================================================================

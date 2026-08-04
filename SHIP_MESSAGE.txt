@@ -1,11 +1,16 @@
-v0.333.0 BAND 1: PAPER_325 wired - CR34b RHO-ISM FLUID DENSITY COUPLING (CLEAN)
+v0.334.0 BAND 1: PAPER_326 wired - TRIADIC MASTER UQFF 26-STATE CO-SUM ARCHITECTURE (CLEAN)
 
-PAPER_325 (CR34b Rho-ISM Fluid Density Coupling, Session 93,
-CompressedResonanceUQFF34bModule.cpp). First UQFF mass-density-weighted fluid accelerative
-term (a_fluid_rho), extending the CR34 volumetric fluid term by the ISM ambient density.
+PAPER_326 (Triadic Master UQFF 26-State Ramanujan Co-Sum Architecture, Session 94,
+Grok-4 assimilation gok_share_31b5c807a4; First-Discovery whitepaper). First formal statement
+of the UQFF triadic co-sum architecture spanning 72+ systems.
 
-- xi_fluid = f_fluid*rho_ISM = 1.269e-14*1e-21 = 1.269e-35 (ISM fluid coupling constant)
-- kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m (density ratio = 1/F_TRZ = 10)
-- a_fluid_rho/a_fluid = rho_ISM; rho_fluid=1 recovers CR34 fluid term (strict generalization)
+- Three co-existing channels: FU_g1 (quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy),
+  each a Ramanujan summation over n=1..26 vacuum states (= D_crit, String/M-theory tie)
+- 26-state [SSq] suppression = exp(-SSQ*n/26) at n=26 = exp(-SSQ) = 0.5655 (canonical SSq=0.57)
+- vacuum cascade base rho_SCm/rho_UA = F_TRZ = 0.1
 
-CLEAN. wired_count 339, gate 2011/0. Campaign frontier PAPER_325 of 2255.
+DRIFT AUTO-CORRECTION: paper used [SSq]=0.507 (suppression 0.602); corrected to canonical SSQ=0.57
+(0.5655) per PAPER_1154 charter rule. Per-system FU_g1/R(t)/FU_Bi numbers are Grok-thread validation
+values (unspecified geometry kernels), documented not wired as reproducible closed forms.
+
+CLEAN. wired_count 340, gate 2017/0. Campaign frontier PAPER_326 of 2255.

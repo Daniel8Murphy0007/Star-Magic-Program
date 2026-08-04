@@ -4751,3 +4751,21 @@ against the clean formulas.
 
 CLEAN. Gate: 2011/0. Registry 682 rows / 1469 edges / 371 ledgers.
 Campaign frontier: PAPER_325 / 2,255. Next: PAPER_326.
+
+---
+
+## v0.334.0 — 2026-08-04 — PAPER_326 (Triadic Master UQFF 26-state co-sum architecture)
+
+Wired PAPER_326 (Session 94, Grok-4 assimilation gok_share_31b5c807a4; First-Discovery). First
+formal statement of the UQFF triadic co-sum architecture (72+ systems).
+
+- Three channels: FU_g1 (quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy),
+  each summed over n=1..26 vacuum states (= D_crit, String/M-theory tie).
+- 26-state [SSq] suppression = exp(-SSQ) = 0.5655 (canonical 0.57). Cascade base rho_SCm/rho_UA = F_TRZ = 0.1.
+
+DRIFT AUTO-CORRECTION: paper used [SSq]=0.507 (suppression 0.602); corrected to canonical SSQ=0.57
+(0.5655) per PAPER_1154 charter rule. Per-system FU_g1/R(t)/FU_Bi values are Grok-thread validation
+numbers (unspecified geometry kernels), documented not wired as reproducible closed forms. Verified in Python.
+
+CLEAN. Gate: 2017/0. Registry 684 rows / 1474 edges / 373 ledgers.
+Campaign frontier: PAPER_326 / 2,255. Next: PAPER_327.

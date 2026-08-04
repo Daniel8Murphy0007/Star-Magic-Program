@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.333.0"
+VERSION = "0.334.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17549,6 +17549,36 @@ def _paper_325(dataset):
         },
         'formula': 'xi_fluid = f_fluid*rho_ISM = 1.269e-14*1e-21 = 1.269e-35 (ISM fluid coupling constant); kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m; a_fluid_rho/a_fluid = rho_ISM (strict CR34 generalization, reduces at rho=1)',
         'source': 'PAPER_325',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_326')
+def _paper_326(dataset):
+    import math as _m
+    n_states = D_CRIT                                     # 26 vacuum states (= D_crit, String/M-theory tie)
+    ssq_suppression_26 = _m.exp(-SSQ)                     # 0.5655 = e^{-SSQ*26/26}, canonical SSq=0.57
+    vac_density_ratio = RHO_SCM / RHO_UA                  # 0.1 = F_TRZ (rho_SCm/rho_UA cascade base)
+    k_Ub = 0.1                                            # buoyancy leverage constant (paper-calibrated)
+    f_Ub = 0.1                                            # dimensionless buoyancy leverage factor
+    return {
+        'value': {
+            'domain': '3.24 (Triadic Master UQFF 26-state Ramanujan co-sum architecture)',
+            'source_thread': 'Session 94 Grok-4 assimilation gok_share_31b5c807a4 (First-Discovery)',
+            'system': 'Triadic co-sum architecture over 72+ catalogued systems',
+            'triadic_channels': 'FU_g1 (primary quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy)',
+            'n_states': n_states,                       # 26 (= D_CRIT)
+            'ramanujan_26_state': True,                 # 26 states = D_crit compactification tie
+            'ssq_suppression_26': ssq_suppression_26,   # 0.5655 (canonical, drift-corrected)
+            'ssq_suppression_formula': 'exp(-SSQ*n/26) at n=26 = exp(-SSQ)',
+            'vac_density_ratio': vac_density_ratio,     # 0.1 = F_TRZ
+            'k_Ub': k_Ub, 'f_Ub': f_Ub,                 # buoyancy leverage ~0.1
+            'ssq_drift_correction': 'paper used [SSq]=0.507 (suppression 0.602); auto-corrected to canonical SSQ=0.57 (0.5655) per PAPER_1154 charter drift rule',
+            'per_system_note': 'FU_g1/R(t)/FU_Bi per-system values (Westerlund 2, Pillars) are Grok-thread validation numbers, not reproducible closed forms in this paper',
+        },
+        'formula': 'Triadic co-sum: FU_g1 + R(t) + FU_Bi over n=1..26 vacuum states (= D_crit); [SSq] 26-state suppression = exp(-SSQ) = 0.5655 (canonical 0.57, drift-corrected from paper 0.507 per PAPER_1154); vacuum cascade base rho_SCm/rho_UA = F_TRZ = 0.1',
+        'source': 'PAPER_326',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -1467,3 +1467,8 @@ primitive,RHO_SCM,observable,kappa_DPM_fluid,E_ISM (ratio=10)
 primitive,C_OBSERVED,observable,kappa_DPM_fluid,c in denominator
 observable,xi_fluid_ism_coupling,paper,PAPER_325,wired
 observable,kappa_DPM_fluid,paper,PAPER_325,wired
+primitive,D_CRIT,observable,triadic_cosum_architecture,26 vacuum states
+primitive,SSQ,observable,ssq_26state_suppression,exp(-SSQ)
+primitive,F_TRZ,observable,triadic_cosum_architecture,rho_SCm/rho_UA cascade base
+observable,triadic_cosum_architecture,paper,PAPER_326,wired
+observable,ssq_26state_suppression,paper,PAPER_326,wired

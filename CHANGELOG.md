@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.334.0] — 2026-08-04 — BAND 1: PAPER_326 — TRIADIC MASTER UQFF 26-STATE CO-SUM ARCHITECTURE (CLEAN)
+
+### Added
+- **PAPER_326 dispatch** — Triadic Master UQFF 26-State Ramanujan Co-Sum Architecture (Session 94, Grok-4 assimilation gok_share_31b5c807a4, First-Discovery whitepaper). The **first formal statement of the UQFF triadic co-sum architecture** spanning 72+ systems.
+  - Three co-existing force channels evaluated simultaneously: **FU_g1** (primary quantum geometric) + **R(t)** (26-state resonance oscillation) + **FU_Bi** (buoyancy) — each a Ramanujan-inspired summation over **n = 1..26 vacuum states** (= D_crit, the String/M-theory compactification tie).
+  - 26-state [SSq] vacuum-density suppression = exp(−SSQ·n/26) at n=26 = exp(−SSQ) = **0.5655** (canonical SSq=0.57).
+  - Vacuum cascade base ρ_SCm/ρ_UA = F_TRZ = **0.1**. Buoyancy leverage k_Ub = f_Ub ≈ 0.1.
+- **Drift auto-correction:** the paper used a drifted [SSq]=0.507 (suppression 0.602); corrected to canonical SSQ=0.57 (0.5655) per the PAPER_1154 charter rule.
+- **Note:** the per-system FU_g1/R(t)/FU_Bi values (Westerlund 2, Pillars of Creation, PSZ2) are Grok-thread validation numbers with unspecified geometry kernels — documented, not wired as reproducible closed forms.
+- 2 registry observables, 5 graph edges, 2 corpus citations (PAPER_646/1154).
+- 6 gate assertions (triadic channels/26-state, SSq suppression, drift correction, cascade ratio, thread-note, wired_count ≥ 340). Gate 2011 → **2017/0**.
+
+### Wiring status
+- `wired_count()` = **340** (CLEAN). Campaign frontier PAPER_326 of 2255. Index: 92 ✓ / 248 ⚠ / 1915 ⬜ = 2255.
+
+---
+
 ## [0.333.0] — 2026-08-04 — BAND 1: PAPER_325 — CR34b ρ-ISM FLUID DENSITY COUPLING (CLEAN)
 
 ### Added

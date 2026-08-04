@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.333.0"
-description = "UQFF Star-Magic-Program v0.333.0: PAPER_325 wired (CLEAN) - CR34b rho-ISM fluid density coupling, the first UQFF mass-density-weighted fluid accelerative term; ISM fluid coupling constant xi_fluid=f_fluid*rho_ISM=1.269e-14*1e-21=1.269e-35, with DPM coupling kappa_DPM=E_neb/(E_ISM*c)=(rho_UA/rho_SCm)/c=10/c=3.333e-8 s/m. The rho-weighted term strictly generalizes the CR34 fluid term (reduces at rho=1). wired_count 339, gate 2011/0. Frontier PAPER_325 of 2255."
+version = "0.334.0"
+description = "UQFF Star-Magic-Program v0.334.0: PAPER_326 wired (CLEAN) - Triadic Master UQFF 26-state Ramanujan co-sum architecture; first formal statement of the triple co-sum FU_g1 (quantum geometric) + R(t) (26-state resonance) + FU_Bi (buoyancy) over n=1..26 vacuum states (= D_crit); 26-state [SSq] suppression = exp(-SSQ) = 0.5655 (canonical 0.57, auto-corrected from the paper's drifted 0.507 per PAPER_1154); cascade base rho_SCm/rho_UA = F_TRZ = 0.1. wired_count 340, gate 2017/0. Frontier PAPER_326 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
