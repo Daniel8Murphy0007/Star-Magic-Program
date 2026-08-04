@@ -1,13 +1,12 @@
-v0.313.0 BAND 1: PAPER_306 wired - LAGOON NEBULA HERSCHEL 36 RADIATION EROSION (CLEAN)
+v0.314.0 BAND 1: PAPER_307 wired - LAGOON NEBULA DUAL RADIATION-EM BARRIER (CLEAN)
 
-PAPER_306 (Lagoon Nebula Herschel 36 Radiation Erosion, Session 87,
-LAGOON_UQFF_MODULE.cpp; second Lagoon term). First UQFF single-point-source
-radiation-pressure parameter.
+PAPER_307 (Lagoon Nebula Dual Radiation-EM Barrier, Session 87, LAGOON_UQFF_MODULE.cpp;
+third/final Lagoon term). First UQFF dual-barrier H II module: both a_EM and a_rad
+independently exceed self-gravity.
 
-- F_rad = L_H36/(4*pi*r^2*c) = 7.511e-14 Pa (single O7V star Herschel 36, L=7.65e31 W)
-- a_rad = F_rad/rho_fluid = 7.51e6 m/s2 (rho_fluid=1e-20 kg/m3)
-- g_base = G*M0/r^2 = 4.91e-12 m/s2 (nebula self-gravity)
-- eta_rad = a_rad/g_base = 1.53e18 (18 orders; highest single-source vs M16 ensemble ~1e16)
-- P_rad subtracted from g_total (radiation opposes collapse, drives blister H II morphology)
+- a_EM = q*v_gas*B/m_H = 9.59e7 m/s2 (turbulent-gas Lorentz; v_gas=1e5 m/s, B=1e-5 T; bulk MHD EM)
+- eta_EM = a_EM/g_base = 1.96e19 (EM exceeds self-gravity by 19 orders)
+- a_EM/a_rad = 12.77 (dual-barrier signature, EM leads radiation from PAPER_306)
+- net a_EM - a_rad = 8.84e7 m/s2 (EM dominates, net outward support; extended H II morphology)
 
-CLEAN. wired_count 320, gate 1897/0. Campaign frontier PAPER_306 of 2255.
+CLEAN. wired_count 321, gate 1903/0. Campaign frontier PAPER_307 of 2255.

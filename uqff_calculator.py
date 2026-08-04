@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.313.0"
+VERSION = "0.314.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16834,6 +16834,40 @@ def _paper_306(dataset):
         },
         'formula': 'F_rad=L_H36/(4*pi*r^2*c)=7.511e-14 Pa; a_rad=F_rad/rho_fluid=7.51e6 m/s2; g_base=G*M0/r^2=4.91e-12; eta_rad=a_rad/g_base=1.53e18 (first UQFF single-source radiation pressure, 18-order dominance; drives blister H II morphology)',
         'source': 'PAPER_306',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_307')
+def _paper_307(dataset):
+    q = 1.602e-19                                         # proton charge, anchor
+    v_gas = 1.0e5                                         # turbulent gas velocity (m/s), anchor
+    B = 1.0e-5                                            # nebula magnetic field (T), anchor
+    m_H = 1.6726e-27                                      # hydrogen atom mass (kg), anchor
+    a_rad = 7.51e6                                        # radiation pressure accel (PAPER_306)
+    g_base = 4.91e-12                                     # nebula self-gravity (PAPER_306)
+    a_EM = q * v_gas * B / m_H                            # 9.59e7 m/s^2 Lorentz turbulent accel
+    eta_EM = a_EM / g_base                                # 1.96e19 EM-to-gravity dominance
+    aEM_over_arad = a_EM / a_rad                          # 12.77 dual-barrier signature
+    net_nongrav = a_EM - a_rad                            # 8.84e7 net outward support
+    return {
+        'value': {
+            'domain': '3.05 (Lagoon Nebula; first UQFF dual radiation-EM barrier H II module)',
+            'source_thread': 'Session 87 LAGOON_UQFF_MODULE.cpp (29th C++ module, first H II region)',
+            'system': 'Lagoon Nebula (M8 / NGC 6523), turbulent-gas MHD EM barrier',
+            'v_gas': v_gas, 'B_T': B, 'm_H_kg': m_H,
+            'a_EM': a_EM,                               # 9.59e7
+            'a_EM_formula': 'q*v_gas*B/m_H',
+            'eta_EM': eta_EM,                          # 1.96e19 (19 orders)
+            'a_rad': a_rad,                            # 7.51e6 (PAPER_306)
+            'aEM_over_arad': aEM_over_arad,            # 12.77 dual-barrier signature
+            'dual_barrier': (a_EM > g_base) and (a_rad > g_base),  # both exceed g_base (first in UQFF)
+            'net_nongrav_support': net_nongrav,        # 8.84e7 (EM dominates, net outward)
+            'mechanism': 'bulk turbulent gas Lorentz (MHD), distinct from PAPER_299 orbital quantum EM',
+        },
+        'formula': 'a_EM=q*v_gas*B/m_H=9.59e7 m/s2; eta_EM=a_EM/g_base=1.96e19 (19 orders); a_EM/a_rad=12.77 (dual-barrier signature, EM leads radiation); net a_EM-a_rad=8.84e7 (net outward support); first UQFF dual radiation-EM barrier',
+        'source': 'PAPER_307',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

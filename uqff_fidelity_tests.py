@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.313.0", "uqff_calculator.VERSION = 0.313.0 (PAPER_306 = v0.313.0)")
+assert_that(C.VERSION == "0.314.0", "uqff_calculator.VERSION = 0.314.0 (PAPER_307 = v0.314.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4167,6 +4167,19 @@ assert_that(abs(_r306['eta_rad'] - 1.53e18) / 1.53e18 < 0.005 and _r306['single_
 assert_that(_r306['radiation_subtracted'],
             "PAPER_306: P_rad subtracted from g_total (radiation opposes collapse, drives blister H II morphology)")
 assert_that(C.wired_count() >= 320, "wired_count >= 320 (PAPER_306 wired)")
+
+_r307 = C.calc('PAPER_307')['value']
+assert_that(abs(_r307['a_EM'] - 9.59e7) / 9.59e7 < 0.005 and _r307['a_EM_formula'] == 'q*v_gas*B/m_H',
+            "PAPER_307: a_EM = q*v_gas*B/m_H = 9.59e7 m/s2 (Lorentz turbulent-gas acceleration)")
+assert_that(abs(_r307['eta_EM'] - 1.96e19) / 1.96e19 < 0.01,
+            "PAPER_307: eta_EM = a_EM/g_base = 1.96e19 (EM exceeds self-gravity by 19 orders)")
+assert_that(abs(_r307['aEM_over_arad'] - 12.77) < 0.05,
+            "PAPER_307: a_EM/a_rad = 12.77 (dual-barrier signature, EM leads radiation)")
+assert_that(_r307['dual_barrier'],
+            "PAPER_307: both a_EM and a_rad exceed g_base (first UQFF dual radiation-EM barrier)")
+assert_that(abs(_r307['net_nongrav_support'] - 8.84e7) / 8.84e7 < 0.01,
+            "PAPER_307: net a_EM - a_rad = 8.84e7 m/s2 (EM dominates, net outward support)")
+assert_that(C.wired_count() >= 321, "wired_count >= 321 (PAPER_307 wired)")
 
 
 # =============================================================================

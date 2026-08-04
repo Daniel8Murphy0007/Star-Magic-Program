@@ -628,3 +628,6 @@ dg_dt_lagoon,PAPER_305 gravity rate of change,derived_jerk,G*SFR_kg_s/r^2,mass-r
 F_rad_herschel36,PAPER_306 Lagoon radiation pressure,derived_pressure,L_H36/(4*pi*r^2*c),Herschel 36 O7V single source,7.511e-14 Pa,PAPER_306,0.0,astro/radiation,resonance,PAPER_306,1,1,0,0,PAPER_305,WIRED
 a_rad_lagoon,PAPER_306 radiation acceleration,derived_acceleration,F_rad/rho_fluid,opposes gravitational collapse,7.51e6 m/s2,PAPER_306,0.0,astro/radiation,resonance,PAPER_306,1,1,0,0,PAPER_305,WIRED
 eta_rad_lagoon,PAPER_306 radiation-to-gravity dominance,derived_ratio,a_rad/g_base,"first UQFF single-source, 18 orders",1.53e18,PAPER_306,0.0,astro/radiation,resonance,PAPER_306,1,1,0,0,PAPER_284,WIRED
+a_EM_turbulent_lagoon,PAPER_307 Lagoon EM turbulence,derived_acceleration,q*v_gas*B/m_H,Lorentz on turbulent ions,9.59e7 m/s2,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306;PAPER_299,WIRED
+eta_EM_lagoon,PAPER_307 EM-to-gravity dominance,derived_ratio,a_EM/g_base,19 orders,1.96e19,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306,WIRED
+aEM_over_arad_dual_barrier,PAPER_307 dual-barrier signature,derived_ratio,a_EM/a_rad,EM leads radiation,12.77,PAPER_307,0.0,astro/EM,resonance,PAPER_307,1,1,0,0,PAPER_306,WIRED

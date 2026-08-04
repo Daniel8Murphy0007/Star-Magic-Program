@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.314.0] — 2026-08-04 — BAND 1: PAPER_307 — LAGOON NEBULA DUAL RADIATION-EM BARRIER (CLEAN)
+
+### Added
+- **PAPER_307 dispatch** — Lagoon Nebula Dual Radiation-EM Barrier (Session 87, LAGOON_UQFF_MODULE.cpp; third/final Lagoon term). The **first UQFF dual-barrier H II module** — both a_EM and a_rad independently exceed self-gravity.
+  - Turbulent-gas Lorentz acceleration a_EM = q·v_gas·B/m_H = **9.59e7 m/s²** (v_gas = 1e5 m/s, B = 1e-5 T) — bulk MHD EM, distinct from PAPER_299's orbital quantum EM.
+  - η_EM = a_EM/g_base = **1.96e19** — EM turbulence exceeds self-gravity by 19 orders.
+  - **Dual-barrier signature** a_EM/a_rad = **12.77** (EM leads the radiation barrier of PAPER_306); net non-gravitational support a_EM − a_rad = **8.84e7 m/s²** (net outward).
+  - Explains M8's extended H II morphology: two independent non-gravitational channels prevent collapse.
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_306/299).
+- 6 gate assertions (a_EM, η_EM, a_EM/a_rad, dual-barrier, net support, wired_count ≥ 321). Gate 1897 → **1903/0**.
+
+### Wiring status
+- `wired_count()` = **321** (CLEAN). Campaign frontier PAPER_307 of 2255. Index: 74 ✓ / 247 ⚠ / 1934 ⬜ = 2255.
+
+---
+
 ## [0.313.0] — 2026-08-04 — BAND 1: PAPER_306 — LAGOON NEBULA HERSCHEL 36 RADIATION EROSION (CLEAN)
 
 ### Added

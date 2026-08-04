@@ -4442,3 +4442,19 @@ single-point-source radiation-pressure parameter.
 
 CLEAN. Gate: 1897/0. Registry 630 rows / 1355 edges / 332 ledgers.
 Campaign frontier: PAPER_306 / 2,255. Next: PAPER_307.
+
+---
+
+## v0.314.0 — 2026-08-04 — PAPER_307 (Lagoon Nebula dual radiation-EM barrier)
+
+Wired PAPER_307 (Session 87, LAGOON_UQFF_MODULE.cpp; third/final Lagoon term). First UQFF
+dual-barrier H II module: both a_EM and a_rad independently exceed self-gravity.
+
+- a_EM = q*v_gas*B/m_H = 9.59e7 m/s2 (turbulent-gas Lorentz; v_gas=1e5, B=1e-5). Bulk MHD EM,
+  distinct from PAPER_299 orbital quantum EM.
+- eta_EM = a_EM/g_base = 1.96e19 (19 orders).
+- a_EM/a_rad = 12.77 (dual-barrier signature, EM leads radiation); net a_EM-a_rad = 8.84e7 outward.
+  All verified in Python.
+
+CLEAN. Gate: 1903/0. Registry 633 rows / 1361 edges / 334 ledgers.
+Campaign frontier: PAPER_307 / 2,255. Next: PAPER_308.

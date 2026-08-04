@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_306** (Lagoon Nebula Herschel 36 radiation erosion η_rad=1.53e18, wired v0.313.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–306 = **320 wired**.
-- **Distinct wired papers: 320** = `wired_count()` = `len(DISPATCH)`. Composed of **306** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **73 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1935 ⬜** not-touched (73 + 247 + 1935 = 2255 ✓). Wired file-rows (73 + 247 = **320**) equal `wired_count()`.
+- **Campaign frontier: PAPER_307** (Lagoon Nebula dual radiation-EM barrier a_EM/a_rad=12.77, wired v0.314.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–307 = **321 wired**.
+- **Distinct wired papers: 321** = `wired_count()` = `len(DISPATCH)`. Composed of **307** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **74 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1934 ⬜** not-touched (74 + 247 + 1934 = 2255 ✓). Wired file-rows (74 + 247 = **321**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1566,7 +1566,7 @@
 | ⚠ | PAPER_304 | HydrogenPToE AetherGravitationalDominanceAtomicScale xiAether 1p852e24 |
 | ✓ | PAPER_305 | LagoonNebula SFRMassRunawayAmplifier DeltaM 10 100kyr |
 | ✓ | PAPER_306 | LagoonNebula HerschelRadiationErosion etaRad 1p53e18 |
-| ⬜ | PAPER_307 | LagoonNebula DualRadiationEMBarrier aEM over aRad 12p77 |
+| ✓ | PAPER_307 | LagoonNebula DualRadiationEMBarrier aEM over aRad 12p77 |
 | ⬜ | PAPER_308 | SpiralGalaxy TorqueGravitationalAmplifier tau 2p046 307Myr |
 | ⬜ | PAPER_309 | SpiralSNIa HubbleTensionImprint deltaSN 2p52pct etaSN 2e16 |
 | ⬜ | PAPER_310 | SpiralGalaxy DMVisiblePartition etaDM 5p667 vExcess 67pct |

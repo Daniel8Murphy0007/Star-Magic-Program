@@ -1353,3 +1353,9 @@ observable,a_rad_lagoon,observable,eta_rad_lagoon,a_rad/g_base
 observable,F_rad_herschel36,paper,PAPER_306,wired
 observable,a_rad_lagoon,paper,PAPER_306,wired
 observable,eta_rad_lagoon,paper,PAPER_306,wired
+observable,a_EM_turbulent_lagoon,observable,eta_EM_lagoon,a_EM/g_base
+observable,a_EM_turbulent_lagoon,observable,aEM_over_arad_dual_barrier,a_EM/a_rad
+observable,a_rad_lagoon,observable,aEM_over_arad_dual_barrier,a_rad from PAPER_306
+observable,a_EM_turbulent_lagoon,paper,PAPER_307,wired
+observable,eta_EM_lagoon,paper,PAPER_307,wired
+observable,aEM_over_arad_dual_barrier,paper,PAPER_307,wired

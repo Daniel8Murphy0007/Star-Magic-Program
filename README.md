@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.313.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.313.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.314.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.314.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1897%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-320-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1903%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-321-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.313.0 wiring campaign live**
+**UQFF systematic rebuild — v0.314.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.313.0)
+## What is currently shipped (v0.314.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 320 distinct papers** (`wired_count()`=320 = 306 base-numbered + 14 suffixed) — 73 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_306** (Lagoon Nebula Herschel 36 radiation erosion: a single O7V star produces radiation pressure F_rad=L/(4πr²c)=7.511e-14 Pa → a_rad=F_rad/ρ_fluid=7.51e6 m/s², exceeding nebula self-gravity g_base=4.91e-12 by η_rad=1.53e18 — 18 orders; the first UQFF single-point-source radiation-pressure parameter, driving the blister H II morphology), wired v0.313.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 321 distinct papers** (`wired_count()`=321 = 307 base-numbered + 14 suffixed) — 74 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_307** (Lagoon Nebula dual radiation-EM barrier: turbulent-gas Lorentz a_EM=q·v_gas·B/m_H=9.59e7 m/s² beats self-gravity by η_EM=1.96e19; both a_EM and a_rad [PAPER_306] independently exceed g_base and a_EM/a_rad=12.77, giving net a_EM−a_rad=8.84e7 outward support — the first UQFF dual-barrier H II module), wired v0.314.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -687,7 +687,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.310.0** | Band 1: PAPER_303 (hydrogen PToE triple Lyman-α lock, freq_lock_ratio=1.000) | 317 |
 | **v0.311.0** | Band 1: PAPER_304 (hydrogen PToE aether dominance ξ_aether=1.852e24, Q-247) | 318 |
 | **v0.312.0** | Band 1: PAPER_305 (Lagoon Nebula SFR mass-runaway, ΔM/M0=10 at 1 Myr) | 319 |
-| **v0.313.0** ← current | Band 1: PAPER_306 (Lagoon Nebula Herschel 36 radiation erosion η_rad=1.53e18) | 320 |
+| **v0.313.0** | Band 1: PAPER_306 (Lagoon Nebula Herschel 36 radiation erosion η_rad=1.53e18) | 320 |
+| **v0.314.0** ← current | Band 1: PAPER_307 (Lagoon Nebula dual radiation-EM barrier a_EM/a_rad=12.77) | 321 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |
