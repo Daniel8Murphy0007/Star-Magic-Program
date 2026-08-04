@@ -1,17 +1,18 @@
-v0.299.0 BAND 1: PAPER_292 wired - CRAB PULSAR 60-SECOND RESONANCE WINDOW (CLEAN)
+v0.300.0 BAND 1: PAPER_293 wired - COMPRESSED+RESONANCE DUAL-CHANNEL CO-SUM (CLEAN) [MILESTONE]
 
-PAPER_292 (Crab Pulsar 60-Second UQFF Resonance Window f_osc=1812 Hz spin-to-vacuum
-DPM lock, S82, CRAB_RESONANCE_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First
-UQFF pulsar spin-to-vacuum coupling mechanism.
+PAPER_293 (UQFF Compressed+Resonance Dual-Channel Co-Sum Architecture 10-term CR,
+S83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp 25th C++ module) wired as one dispatch
+(CLEAN). First UQFF module merging compressed + resonance channel families into a
+single co-sum operator.
 
-Crab pulsar 30.2 Hz -> N=30.2*60=1812 pulses/60s window -> f_osc=1812 Hz;
-omega_pulsar=2pi*1812=11385 rad/s; DPM vacuum lock pulse_lock=f_osc/f_DPM=1812/1e12=
-1.812e-9; log2(f_DPM/f_osc)=29 octaves; omega_osc/omega_pulsar=8.785e10 (synchrotron
-88 billion x); A_pulsar=pulse_lock*A_amp=1.812e-19 m (sub-nuclear). Augments PAPER_288
-oscillatory term.
+g_CR(t,B)=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); Sigma_comp (4 compressed:
+a_DPM/a_THz/a_vac_diff/a_super)=2.481e4 m/s2; Sigma_res (6 resonance, dominated by
+a_U_g4i)=1.666e21 m/s2; dual-channel dominance ratio R_CR=Sigma_comp/Sigma_res=
+2.481e4/1.666e21=1.490e-17 (resonance dominates ~17 orders; co-sum resonance-dominated).
+Systems 18-24 class f_DPM=1e11 Hz. a_vac_diff/a_super -> PAPER_294/295.
 
-wired_count 305 -> 306. Index PAPER_292 -> checkmark (61/245/1949=2255).
-Version PAPER_292 = v0.299.0.
+wired_count 306 -> 307. Index PAPER_293 -> checkmark (62/245/1948=2255).
+Version PAPER_293 = v0.300.0 (MILESTONE).
 
-Gate: 1815/0. Registry 591 rows / 1270 edges / 306 ledgers. Campaign frontier:
-PAPER_292 / 2,255. Next: PAPER_293.
+Gate: 1820/0. Registry 592 rows / 1271 edges / 307 ledgers. Campaign frontier:
+PAPER_293 / 2,255. Next: PAPER_294.

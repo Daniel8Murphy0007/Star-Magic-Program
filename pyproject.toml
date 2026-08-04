@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.299.0"
-description = "UQFF Star-Magic-Program v0.299.0: PAPER_292 wired (CLEAN) - Crab Pulsar 60-Second Resonance Window; f_osc=f_pulsar*60=30.2*60=1812 Hz, omega_pulsar=11385 rad/s; DPM vacuum lock pulse_lock=f_osc/f_DPM=1.812e-9 = 29 octaves; A_pulsar=1.812e-19 m; first UQFF pulsar spin-to-vacuum coupling. wired_count 306, gate 1815/0. Campaign frontier PAPER_292 of 2255. (v0.285.0 burned; v0.286.0-0.298.0 shipped.)"
+version = "0.300.0"
+description = "UQFF Star-Magic-Program v0.300.0: PAPER_293 wired (CLEAN) - Compressed+Resonance Dual-Channel Co-Sum Architecture (10-term CR module); g_CR=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); first UQFF merge of 4 compressed + 6 resonance terms; dominance ratio R_CR=Sigma_comp/Sigma_res=2.481e4/1.666e21=1.490e-17 (resonance dominates ~17 orders). wired_count 307, gate 1820/0. Campaign frontier PAPER_293 of 2255. (v0.285.0 burned; v0.286.0-0.299.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

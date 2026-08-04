@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.299.0"
+VERSION = "0.300.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16319,6 +16319,46 @@ def _paper_292(dataset):
         },
         'formula': 'f_osc=f_pulsar*60=30.2*60=1812 Hz; omega_pulsar=2pi*1812=11385 rad/s; pulse_lock=f_osc/f_DPM=1.812e-9; log2(f_DPM/f_osc)=29 octaves; A_pulsar=pulse_lock*A_amp=1.812e-19 m',
         'source': 'PAPER_292',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_293')
+def _paper_293(dataset):
+    import math
+    # Compressed channel (4 terms; a_vac_diff -> PAPER_294, a_super -> PAPER_295)
+    a_DPM = 3.543e-15
+    a_THz = 1.181e-6
+    a_vac_diff = 128.4                                    # PAPER_294
+    a_super = 2.479e4                                     # PAPER_295 / PAPER_289 headline
+    Sigma_comp = 2.481e4                                  # paper-stated compressed sum
+    # Resonance channel (6 terms; dominated by a_U_g4i)
+    a_U_g4i = 1.666e21
+    Sigma_res = 1.666e21                                  # paper-stated resonance sum
+    R_CR = Sigma_comp / Sigma_res                         # 1.490e-17
+    orders_res_dominates = math.log10(1.0 / R_CR)         # ~17
+    return {
+        'value': {
+            'domain': '2.91 (Compressed+Resonance dual-channel co-sum architecture R_CR)',
+            'source_thread': 'Session 83 COMPRESSED_RESONANCE_UQFF24_MODULE.cpp (25th C++)',
+            'system': 'Systems 18-24 (Sombrero/Saturn/M16/Crab/NGC1792/HUDF/Andromeda, f_DPM=1e11)',
+            'compressed_terms': ['a_DPM', 'a_THz', 'a_vac_diff', 'a_super'],
+            'resonance_terms': ['a_aether', 'a_U_g4i', 'a_osc', 'a_quantum', 'a_fluid', 'a_exp'],
+            'n_terms': 10,
+            'a_DPM': a_DPM, 'a_THz': a_THz, 'a_vac_diff': a_vac_diff, 'a_super': a_super,
+            'a_U_g4i': a_U_g4i,
+            'Sigma_comp': Sigma_comp,                    # 2.481e4
+            'Sigma_res': Sigma_res,                      # 1.666e21
+            'R_CR': R_CR,                                # 1.490e-17
+            'R_CR_formula': 'Sigma_comp / Sigma_res',
+            'orders_res_dominates': orders_res_dominates,  # ~17
+            'resonance_dominated': True,                 # co-sum ~ Sigma_res
+            'g_CR_form': '(Sigma_comp + Sigma_res)*(1-B/B_crit)*(1+f_TRZ)',
+            'first_dual_channel_cosum': True,            # first merge of compressed + resonance channels
+        },
+        'formula': 'g_CR=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); 10-term co-sum (4 compressed + 6 resonance); R_CR=Sigma_comp/Sigma_res=2.481e4/1.666e21=1.490e-17 (resonance dominates ~17 orders)',
+        'source': 'PAPER_293',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

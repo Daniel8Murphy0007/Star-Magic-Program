@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.299.0", "uqff_calculator.VERSION = 0.299.0 (PAPER_292 = v0.299.0)")
+assert_that(C.VERSION == "0.300.0", "uqff_calculator.VERSION = 0.300.0 (PAPER_293 = v0.300.0 MILESTONE)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3988,6 +3988,17 @@ assert_that(abs(_r292['dpm_pulsar_octaves'] - 29.0) < 0.1 and abs(_r292['A_pulsa
 assert_that(abs(_r292['sync_ratio'] - 8.785e10) < 1e8 and _r292['first_pulsar_spin_vacuum_coupling'],
             "PAPER_292: omega_osc/omega_pulsar = 8.785e10 (synchrotron 88 billion x); first pulsar spin-vacuum coupling")
 assert_that(C.wired_count() >= 306, "wired_count >= 306 (PAPER_292 wired)")
+
+_r293 = C.calc('PAPER_293')['value']
+assert_that(abs(_r293['R_CR'] - 1.490e-17) < 1e-19 and _r293['R_CR_formula'] == 'Sigma_comp / Sigma_res',
+            "PAPER_293: R_CR = Sigma_comp/Sigma_res = 2.481e4/1.666e21 = 1.490e-17 (dual-channel dominance ratio)")
+assert_that(_r293['n_terms'] == 10 and len(_r293['compressed_terms']) == 4 and len(_r293['resonance_terms']) == 6,
+            "PAPER_293: 10-term co-sum = 4 compressed + 6 resonance terms")
+assert_that(abs(_r293['orders_res_dominates'] - 17.0) < 0.5 and _r293['resonance_dominated'],
+            "PAPER_293: resonance channel dominates compressed by ~17 orders; co-sum ~ Sigma_res")
+assert_that(_r293['first_dual_channel_cosum'] and _r293['g_CR_form'] == '(Sigma_comp + Sigma_res)*(1-B/B_crit)*(1+f_TRZ)',
+            "PAPER_293: first UQFF dual-channel co-sum architecture merging compressed + resonance channels")
+assert_that(C.wired_count() >= 307, "wired_count >= 307 (PAPER_293 wired)")
 
 
 # =============================================================================

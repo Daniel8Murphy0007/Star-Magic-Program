@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_292** (Crab pulsar 60s resonance window, wired v0.299.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–292 = **306 wired**.
-- **Distinct wired papers: 306** = `wired_count()` = `len(DISPATCH)`. Composed of **292** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **61 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1949 ⬜** not-touched (61 + 245 + 1949 = 2255 ✓). Wired file-rows (61 + 245 = **306**) equal `wired_count()`.
+- **Campaign frontier: PAPER_293** (Compressed+Resonance dual-channel co-sum, wired v0.300.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–293 = **307 wired**.
+- **Distinct wired papers: 307** = `wired_count()` = `len(DISPATCH)`. Composed of **293** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **62 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1948 ⬜** not-touched (62 + 245 + 1948 = 2255 ✓). Wired file-rows (62 + 245 = **307**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1552,7 +1552,7 @@
 | ✓ | PAPER_290 | CrabResonance UQFF SNRDPMDilution DynamicVolumeExpansion | CLEAN — first time-dependent V_sys(t); a_DPM prop 1/r(t)^3; D=6.69 over 971 yr; Gamma_THz=5.0e10 (highest); v0.297.0 |
 | ✓ | PAPER_291 | CrabResonance UQFF FilamentSpectralTriad QuantumFluidExpansion9Decades | CLEAN — 9-decade triad (f_quantum/fluid/exp); a_i=10*f_i*a_DPM/c; first V_knot volumetric coupling; v0.298.0 |
 | ✓ | PAPER_292 | CrabResonance UQFF Pulsar30Hz60sResonanceWindow SpinVacuumDPMLock | CLEAN — f_osc=30.2*60=1812 Hz; pulse_lock=1.812e-9 (29 octaves); A_pulsar=1.812e-19; first pulsar spin-vacuum coupling; v0.299.0 |
-| ⬜ | PAPER_293 | CompressedResonanceUQFF24 DualChannelCoSumArchitecture 10TermCR |
+| ✓ | PAPER_293 | CompressedResonanceUQFF24 DualChannelCoSumArchitecture 10TermCR | CLEAN — first dual-channel co-sum (4 compressed + 6 resonance); R_CR=Sigma_comp/Sigma_res=1.490e-17 (~17 orders); v0.300.0 milestone |
 | ⬜ | PAPER_294 | CompressedResonanceUQFF24 VacuumDifferentialHarmonic hbarDenominatorCoupling |
 | ⬜ | PAPER_295 | CompressedResonanceUQFF24 CompressedCooperSuperSeeding fDPMSquaredScalingLaw |
 | ⬜ | PAPER_296 | UniverseDiameter CosmologicalConstantDirectVacuumAcceleration LambdaC2Over3 |

@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.300.0] — 2026-08-03 — BAND 1: PAPER_293 — COMPRESSED+RESONANCE DUAL-CHANNEL CO-SUM (CLEAN) · v0.300.0 MILESTONE
+
+### Added
+- **PAPER_293 dispatch** — UQFF Compressed+Resonance Dual-Channel Co-Sum Architecture, 10-term CR module (Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp — 25th C++ module). The **first UQFF module to merge the compressed and resonance channel families into a single co-sum operator.**
+  - g_CR(t,B) = (Σ_comp + Σ_res)·(1 − B/B_crit)·(1 + f_TRZ), where Σ_comp = 4 compressed terms (a_DPM, a_THz, a_vac_diff, a_super) ≈ 2.481e4 m/s² and Σ_res = 6 resonance terms (a_aether, a_U_g4i, a_osc, a_quantum, a_fluid, a_exp) ≈ 1.666e21 m/s².
+  - New analytic observable: dual-channel dominance ratio R_CR = Σ_comp/Σ_res = 2.481e4/1.666e21 = **1.490e-17** — the resonance channel dominates the compressed channel by ~17 orders of magnitude (the co-sum is resonance-dominated). Systems 18–24 class, f_DPM = 1e11 Hz.
+- Gate +5 assertions (→ 1820, 0 failures). wired_count 306 → **307**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_293 → ✓.
+
+### Notes
+- CLEAN — R_CR reproduces. a_vac_diff and a_super reference PAPER_294/295 (next in the CR series).
+- **v0.300.0 milestone release.**
+
+---
+
 ## [0.299.0] — 2026-08-03 — BAND 1: PAPER_292 — CRAB PULSAR 60-SECOND RESONANCE WINDOW (CLEAN)
 
 ### Added

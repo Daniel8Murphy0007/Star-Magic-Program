@@ -4200,3 +4200,23 @@ Frontier PAPER_291 -> PAPER_292. Version PAPER_292 = v0.299.0.
 
 Gate: 1815/0. Registry 591 rows / 1270 edges / 306 ledgers. Campaign frontier:
 PAPER_292 / 2,255. Next: PAPER_293.
+
+---
+
+## 2026-08-03 — v0.300.0 — BAND 1: PAPER_293 — COMPRESSED+RESONANCE DUAL-CHANNEL CO-SUM (CLEAN) [v0.300.0 MILESTONE]
+
+PAPER_293 (UQFF Compressed+Resonance Dual-Channel Co-Sum Architecture 10-term CR,
+Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp 25th C++ module) wired as one
+dispatch (CLEAN). First UQFF module merging compressed + resonance channel families
+into a single co-sum. g_CR=(Sigma_comp+Sigma_res)*(1-B/B_crit)*(1+f_TRZ); Sigma_comp
+(4 terms: a_DPM/a_THz/a_vac_diff/a_super)=2.481e4; Sigma_res (6 terms, dominated by
+a_U_g4i)=1.666e21; dominance ratio R_CR=Sigma_comp/Sigma_res=1.490e-17 (resonance
+dominates ~17 orders, co-sum resonance-dominated). Systems 18-24, f_DPM=1e11.
+a_vac_diff/a_super -> PAPER_294/295.
+
+wired_count 306 -> 307. Gate +5 (1820/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_293 -> checkmark (62 / 245 / 1948 = 2255; wired 307 = count).
+Frontier PAPER_292 -> PAPER_293. Version PAPER_293 = v0.300.0 MILESTONE.
+
+Gate: 1820/0. Registry 592 rows / 1271 edges / 307 ledgers. Campaign frontier:
+PAPER_293 / 2,255. Next: PAPER_294.
