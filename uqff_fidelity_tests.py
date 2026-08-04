@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.324.0", "uqff_calculator.VERSION = 0.324.0 (PAPER_316 = v0.324.0)")
+assert_that(C.VERSION == "0.325.0", "uqff_calculator.VERSION = 0.325.0 (PAPER_317 = v0.325.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4298,6 +4298,19 @@ assert_that(_r316['a_super_over_a_THz'] > 1.0 and 'a_vac_diff >> a_super >> a_TH
 assert_that(abs(_r316['E_vac_ISM'] - 7.09e-37) < 1e-39,
             "PAPER_316: E_vac_ISM = 7.09e-37 (ISM vacuum = F_TRZ*rho_UA hierarchy, composed from RHO_SCM)")
 assert_that(C.wired_count() >= 330, "wired_count >= 330 (PAPER_316 wired)")
+
+_r317 = C.calc('PAPER_317')['value']
+assert_that(abs(_r317['g_base'] - 1.907e-11) / 1.907e-11 < 0.005 and abs(_r317['a_wind_0'] - 5.424e-10) / 5.424e-10 < 0.005,
+            "PAPER_317: g_base = G*M/r^2 = 1.907e-11; a_wind(0) = v_wind^2/r = 5.424e-10 m/s2")
+assert_that(abs(_r317['eta_wind_0'] - 28.47) < 0.05 and _r317['wind_dominated'],
+            "PAPER_317: eta_wind(0) = a_wind/g_base = 28.47 (wind-dominated/unbound at birth)")
+assert_that(abs(_r317['eta_wind_age'] - 56.9) < 0.1,
+            "PAPER_317: eta_wind(t_age) = 56.9 (wind dominance doubles over t_age)")
+assert_that(abs(_r317['t_erosion_kyr'] - 467.0) < 1.0,
+            "PAPER_317: t_erosion = r/v_wind = 467 kyr > t_age 300 kyr (proplyds survive)")
+assert_that(abs(_r317['P_ram_Pa'] - 6.4e-13) / 6.4e-13 < 0.005 and abs(_r317['P_grav_Pa'] - 2.248e-14) / 2.248e-14 < 0.005,
+            "PAPER_317: P_ram = rho*v^2 = 6.4e-13 Pa; P_grav = GM*rho/r = 2.248e-14 Pa")
+assert_that(C.wired_count() >= 331, "wired_count >= 331 (PAPER_317 wired)")
 
 
 # =============================================================================

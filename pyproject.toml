@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.324.0"
-description = "UQFF Star-Magic-Program v0.324.0: PAPER_316 wired (OPEN_RULING Q-248) - NGC 6302 Cooper-DPM f_DPM=1e12 class; A_sc=hbar*f_super*f_DPM/(E_vac_ISM*c)=6.994e21 (E_vac_ISM=RHO_SCM, the ISM vacuum = F_TRZ*rho_UA hierarchy), a_super=A_sc*a_DPM=1.747e-9 m/s2, the second-dominant PN resonance tier (a_vac_diff >> a_super >> a_THz >> a_DPM); reproducing A_sc needs f_super=1.411e16 (10x the PAPER_295/302 canonical 1.411e15) -> Q-248. wired_count 330, gate 1957/0. Frontier PAPER_316 of 2255."
+version = "0.325.0"
+description = "UQFF Star-Magic-Program v0.325.0: PAPER_317 wired (CLEAN) - Orion M42 Trapezium wind ram-pressure dominance (33rd C++ module, first HII-region ram-pressure ratio); g_base=G*M/r^2=1.907e-11; ram-pressure a_wind=v_wind^2/r*(1+t/t_age) gives eta_wind=P_ram/P_grav=a_wind/g_base=28.47 at birth (wind-dominated/unbound), doubling to 56.9 at t_age; erosion timescale t_erosion=r/v_wind=467 kyr > t_age 300 kyr, so proplyds survive. wired_count 331, gate 1963/0. Frontier PAPER_317 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

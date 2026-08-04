@@ -1,15 +1,11 @@
-v0.324.0 BAND 1: PAPER_316 wired - NGC 6302 COOPER-DPM A_sc CONFIRMATION (OPEN_RULING Q-248)
+v0.325.0 BAND 1: PAPER_317 wired - ORION M42 TRAPEZIUM WIND RAM-PRESSURE DOMINANCE (CLEAN)
 
-PAPER_316 (NGC 6302 Cooper-DPM f_DPM=1e12 Class Confirmation, Session 90,
-NGC6302_RESONANCE_UQFF_MODULE.cpp; third resonance term). First astrophysical PN in the
-PAPER_295 f_DPM=1e12 Cooper-DPM class.
+PAPER_317 (Orion M42 Trapezium Wind Ram Pressure Dominance, Session 91,
+ORION_UQFF_MODULE.cpp, 33rd C++ module). First UQFF HII-region ram-pressure dominance ratio.
 
-- A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) = 6.994e21 (E_vac_ISM=RHO_SCM = ISM vacuum, F_TRZ*rho_UA
-  hierarchy; canonically correct, distinct from nebular rho_UA)
-- a_super = A_sc*a_DPM = 1.747e-9 m/s2 (second-dominant PN tier: a_vac_diff >> a_super >> a_THz >> a_DPM)
+- g_base = G*M/r^2 = 1.907e-11 m/s2 (M=2000 M_sun, r~12.5 ly)
+- a_wind(t) = v_wind^2/r*(1+t/t_age): 5.424e-10 at t=0, 1.085e-9 m/s2 at 300 kyr
+- eta_wind = P_ram/P_grav = a_wind/g_base = 28.47 at birth (wind-dominated/unbound), 56.9 at t_age
+- t_erosion = r/v_wind = 467 kyr > t_age 300 kyr (proplyds survive, consistent with ~150-180 HST proplyds)
 
-OPEN_RULING Q-248: A_sc=6.994e21 requires f_super=1.411e16, 10x the PAPER_295/302 canonical Cooper
-frequency 1.411e15 (with canonical value A_sc=6.994e20). Same A_sc-magnitude family as Q-246.
-E_vac_ISM=RHO_SCM is correct; only f_super in question. Wired to paper's self-consistent value; f_super flagged.
-
-wired_count 330, gate 1957/0. Campaign frontier PAPER_316 of 2255.
+CLEAN. wired_count 331, gate 1963/0. Campaign frontier PAPER_317 of 2255.

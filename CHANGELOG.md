@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.325.0] — 2026-08-04 — BAND 1: PAPER_317 — ORION M42 TRAPEZIUM WIND RAM-PRESSURE DOMINANCE (CLEAN)
+
+### Added
+- **PAPER_317 dispatch** — Orion M42 Trapezium Wind Ram Pressure Dominance (Session 91, ORION_UQFF_MODULE.cpp, 33rd C++ module). The **first UQFF HII-region ram-pressure dominance ratio**.
+  - g_base = G·M/r² = **1.907e-11 m/s²** (M = 2000 M_sun, r ≈ 12.5 ly).
+  - Ram-pressure acceleration a_wind(t) = v_wind²/r·(1+t/t_age): **5.424e-10** at t=0, **1.085e-9 m/s²** at 300 kyr.
+  - **Wind-gravity dominance** η_wind = P_ram/P_grav = a_wind/g_base = **28.47** at birth (wind-dominated / unbound), doubling to **56.9** at t_age — the HII region was born unbound.
+  - Erosion timescale t_erosion = r/v_wind = **467 kyr** > t_age 300 kyr — explains why the ~150–180 HST proplyds survive (not yet fully ablated). Contrast with bipolar-PN wind shocks (η_wind ~ 7e5, PAPER_311): Orion is wind-dominant via HII ionization physics, not stellar-wind shocks.
+- 3 registry observables, 6 graph edges, 1 corpus citation (PAPER_311).
+- 6 gate assertions (g_base/a_wind, η_wind birth, η_wind t_age, t_erosion, P_ram/P_grav, wired_count ≥ 331). Gate 1957 → **1963/0**.
+
+### Wiring status
+- `wired_count()` = **331** (CLEAN). Campaign frontier PAPER_317 of 2255. Index: 83 ✓ / 248 ⚠ / 1924 ⬜ = 2255.
+
+---
+
 ## [0.324.0] — 2026-08-04 — BAND 1: PAPER_316 — NGC 6302 COOPER-DPM A_sc CONFIRMATION (OPEN_RULING Q-248)
 
 ### Added

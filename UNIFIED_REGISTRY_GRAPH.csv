@@ -1417,3 +1417,9 @@ observable,A_sc_cooper_dpm_ngc6302,observable,a_super_ngc6302,a_super=A_sc*a_DPM
 observable,A_sc_cooper_dpm_ngc6302,paper,PAPER_316,open_ruling Q-248
 observable,a_super_ngc6302,paper,PAPER_316,open_ruling Q-248
 paper,PAPER_316,paper,PAPER_295,confirms f_DPM=1e12 A_sc class
+primitive,G_OBSERVED,observable,eta_wind_orion,g_base=GM/r^2
+observable,a_wind_orion_m42,observable,eta_wind_orion,a_wind/g_base
+observable,a_wind_orion_m42,paper,PAPER_317,wired
+observable,eta_wind_orion,paper,PAPER_317,wired
+observable,t_erosion_orion,paper,PAPER_317,wired
+paper,PAPER_317,paper,PAPER_311,HII vs bipolar-PN wind dominance

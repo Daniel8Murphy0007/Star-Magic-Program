@@ -4605,3 +4605,18 @@ f_super flagged. All verified in Python.
 
 Gate: 1957/0. Registry 659 rows / 1419 edges / 351 ledgers. NGC 6302 resonance module (314/315/316) complete.
 Campaign frontier: PAPER_316 / 2,255. Next: PAPER_317.
+
+---
+
+## v0.325.0 — 2026-08-04 — PAPER_317 (Orion M42 Trapezium wind ram-pressure dominance)
+
+Wired PAPER_317 (Session 91, ORION_UQFF_MODULE.cpp, 33rd C++ module). First UQFF HII-region
+ram-pressure dominance ratio. New Orion HII-region sector.
+
+- g_base = G*M/r^2 = 1.907e-11 (M=2000 M_sun, r~12.5 ly).
+- a_wind(t) = v_wind^2/r*(1+t/t_age): 5.424e-10 at t=0, 1.085e-9 at 300 kyr.
+- eta_wind = P_ram/P_grav = a_wind/g_base = 28.47 at birth (unbound), 56.9 at t_age.
+- t_erosion = r/v_wind = 467 kyr > t_age 300 kyr (proplyds survive). All verified in Python.
+
+CLEAN. Gate: 1963/0. Registry 662 rows / 1425 edges / 352 ledgers.
+Campaign frontier: PAPER_317 / 2,255. Next: PAPER_318.

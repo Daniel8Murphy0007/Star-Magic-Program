@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.324.0"
+VERSION = "0.325.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17220,4 +17220,45 @@ def _paper_316(dataset):
         'source': 'PAPER_316',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_317')
+def _paper_317(dataset):
+    G = G_OBSERVED
+    M = 3.978e33                                          # total nebular mass 2000 M_sun (kg), anchor
+    r = 1.18e17                                           # half-span ~12.5 ly (m), anchor
+    rho_fluid = 1.0e-20                                   # HII gas density (kg/m^3), anchor
+    v_wind = 8.0e3                                        # ionization front expansion (m/s), anchor
+    g_base = G * M / r ** 2                               # 1.907e-11 DPM-seeded self-gravity
+    a_wind_0 = v_wind ** 2 / r                            # 5.424e-10 ram-pressure accel at t=0
+    a_wind_age = 2.0 * v_wind ** 2 / r                    # 1.085e-9 at t=t_age
+    eta_wind_0 = a_wind_0 / g_base                        # 28.47 wind-gravity dominance at birth
+    eta_wind_age = a_wind_age / g_base                    # 56.9 at 300 kyr
+    P_ram = rho_fluid * v_wind ** 2                       # 6.4e-13 Pa
+    P_grav = G * M * rho_fluid / r                        # 2.248e-14 Pa
+    t_erosion_s = r / v_wind                              # 4.675e13 s = 467 kyr
+    return {
+        'value': {
+            'domain': '3.15 (Orion M42 Trapezium; first UQFF HII-region wind ram-pressure dominance)',
+            'source_thread': 'Session 91 ORION_UQFF_MODULE.cpp (33rd C++ module)',
+            'system': 'Orion Nebula M42/NGC 1976, Trapezium OB cluster HII region',
+            'M_kg': M, 'r_m': r, 'v_wind': v_wind, 'rho_fluid': rho_fluid,
+            'g_base': g_base,                           # 1.907e-11
+            'a_wind_0': a_wind_0,                        # 5.424e-10
+            'a_wind_age': a_wind_age,                    # 1.085e-9
+            'a_wind_formula': 'v_wind^2/r*(1+t/t_age)',
+            'eta_wind_0': eta_wind_0,                    # 28.47
+            'eta_wind_age': eta_wind_age,               # 56.9 (doubles over t_age)
+            'eta_wind_formula': 'P_ram/P_grav = a_wind/g_base',
+            'wind_dominated': eta_wind_0 > 1.0,         # unbound at birth
+            'P_ram_Pa': P_ram,                          # 6.4e-13
+            'P_grav_Pa': P_grav,                        # 2.248e-14
+            't_erosion_kyr': t_erosion_s / (3.15576e7 * 1e3),  # 467
+            'proplyd_survival': 't_erosion 467 kyr > t_age 300 kyr (proplyds not yet ablated)',
+        },
+        'formula': 'g_base=G*M/r^2=1.907e-11; a_wind(t)=v_wind^2/r*(1+t/t_age); eta_wind=P_ram/P_grav=a_wind/g_base=28.47 at birth, 56.9 at t_age (wind-dominated/unbound); t_erosion=r/v_wind=467 kyr > t_age 300 kyr (proplyds survive)',
+        'source': 'PAPER_317',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }
