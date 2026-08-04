@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.327.0", "uqff_calculator.VERSION = 0.327.0 (PAPER_319 = v0.327.0)")
+assert_that(C.VERSION == "0.328.0", "uqff_calculator.VERSION = 0.328.0 (PAPER_320 = v0.328.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4337,6 +4337,19 @@ assert_that(abs(_r319['binding_ratio_1Myr'] - 4.069) < 0.01,
 assert_that(abs(_r319['t_consume_yr'] - 2000.0) < 1.0,
             "PAPER_319: t_consume = M/SFR = 2000 yr (shortest gas depletion in UQFF series)")
 assert_that(C.wired_count() >= 333, "wired_count >= 333 (PAPER_319 wired)")
+
+_r320 = C.calc('PAPER_320')['value']
+assert_that(abs(_r320['f_max_H_atom'] - 1.500e25) / 1.500e25 < 0.005 and _r320['f_density_formula'] == 'I*A_vort*omega_diff/V_sys [N/m^3]',
+            "PAPER_320: f_density = I*A_vort*omega_diff/V_sys; H atom max = 1.500e25 N/m^3 (quantum-confined vortex)")
+assert_that(abs(_r320['f_min_Universe'] - 1.500e-10) / 1.500e-10 < 0.005,
+            "PAPER_320: Universe min f_density = 1.500e-10 N/m^3 (cosmological dilution)")
+assert_that(abs(_r320['xi_span'] - 1e35) / 1e35 < 0.01,
+            "PAPER_320: xi_span = f_max/f_min = 1e35 (35-order DPM force-density span, atomic->cosmic)")
+assert_that(abs(_r320['f_orion_balance'] - 9.12) < 0.02,
+            "PAPER_320: Orion M42 f_density = 9.12 N/m^3 (macroscopic HII balance point)")
+assert_that('Q-249' in _r320['table_typo_note'],
+            "PAPER_320: 3 intermediate atlas rows have power-of-10 exponent typos flagged (Q-249; span/anchors unaffected)")
+assert_that(C.wired_count() >= 334, "wired_count >= 334 (PAPER_320 wired)")
 
 
 # =============================================================================

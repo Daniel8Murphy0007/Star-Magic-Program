@@ -5725,3 +5725,14 @@ RESOLVED section with the ruling recorded.
 - **Relation:** this is the same A_sc-magnitude family as Q-246 (PAPER_295 magnetar branch claimed 6.994e21 for f_DPM=1e12 while its systems-18-24 constants predict 6.994e19-20). PAPER_316 "confirms" the Q-246 magnetar-branch value, reached here via f_super=1.411e16 + E_vac_ISM=rho_SCm.
 - **Question for Daniel:** is the canonical Cooper superconductive frequency f_super = 1.411e15 Hz (PAPER_295/302) or 1.411e16 Hz (PAPER_316)? If 1.411e15, PAPER_316's A_sc should be 6.994e20 and the "confirmation" of 6.994e21 is spurious. If 1.411e16, then PAPER_295/302 used the wrong value. Wired to the paper's stated 6.994e21 (f_super=1.411e16) with the discrepancy flagged.
 - **Status:** OPEN_RULING (dispatch wired on paper's self-consistent values; f_super value flagged).
+
+## Q-249 — PAPER_320 CR34 atlas: 3 of 7 table rows have power-of-10 exponent typos (non-blocking, dispatch WIRED)
+- **Paper:** PAPER_320 (CR34 7-System DPM Force Density Spectral Atlas), Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp.
+- **Result reproduces (WIRED/CLEAN):** f_density = I*A_vort*omega_diff/V_sys. The headline result xi_span = f_max/f_min = 1.500e25 (H atom) / 1.500e-10 (Universe) = 1e35 reproduces exactly, as do all three named anchor points: H atom max = 1.500e25, Universe min = 1.500e-10, Orion balance = 9.12 N/m^3. 4 of 7 rows (H atom, H PToE, Orion, Universe) match the formula exactly.
+- **Issue:** the 3 intermediate rows disagree with the formula-applied-to-table-columns by pure powers of 10:
+  - sys32 NGC 6302: printed 4.316e6, formula gives 43.1 (x1e5)
+  - sys30 Lagoon M8: printed 1.063e-2, formula gives 1.063 (x1e-2)
+  - sys31 Spirals+SN Ia: printed 4.068e-5, formula gives 4.073e-2 (x1e-3)
+  These are power-of-10 mojibake typos in the A_vort or V_sys exponent columns of the atlas table. They do NOT affect xi_span (uses only H-atom max and Universe min) or the 3 named anchors.
+- **Question for Daniel (low priority):** should the 3 intermediate atlas rows' printed f_density values be corrected to the formula results (43.1 / 1.063 / 4.073e-2), or are the intended A_vort/V_sys column values different from what's printed? Dispatch wired the reproducing headline result (span + 3 anchors); intermediate rows not wired as primary values.
+- **Status:** NON-BLOCKING table-cleanup note; dispatch WIRED (result clean). Filed for corpus-table hygiene.

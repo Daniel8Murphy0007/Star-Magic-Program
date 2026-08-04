@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.327.0"
+VERSION = "0.328.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17335,6 +17335,43 @@ def _paper_319(dataset):
         },
         'formula': 'sSFR=SFR/M=1/2000=5e-4 yr^-1 (50x Lagoon); t_cross=(a_wind0-g_base)/(g_base*sSFR-a_wind0/t_age_yr)=67,730 yr (unbound->bound); m_factor(t_age)=1+sSFR*t=151 -> binding_ratio=g_SFR/a_wind=2.654 (bound); t_consume=M/SFR=2000 yr',
         'source': 'PAPER_319',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_320')
+def _paper_320(dataset):
+    def f_density(I, A_vort, w_diff, V_sys):
+        return I * A_vort * w_diff / V_sys
+    atlas = {
+        'sys27_H_Atom':    f_density(1e18, 3.142e-21, 2e-3, 4.189e-31),   # 1.500e25 max
+        'sys28_H_PToE':    f_density(1e18, 3.142e-21, 2e-3, 4.189e-31),   # 1.500e25
+        'sys34_Orion_M42': f_density(1e20, 3.142e34, 2e-2, 6.887e51),     # 9.12 HII balance
+        'sys26_Universe':  f_density(1e24, 3.142e52, 2e-6, 4.189e80),     # 1.500e-10 min
+    }
+    f_max = atlas['sys27_H_Atom']                         # 1.500e25 (quantum-confined vortex)
+    f_min = atlas['sys26_Universe']                       # 1.500e-10 (cosmological dilution)
+    xi_span = f_max / f_min                               # 1e35 (35 orders)
+    f_orion = atlas['sys34_Orion_M42']                    # 9.12 macroscopic HII balance point
+    return {
+        'value': {
+            'domain': '3.18 (CR34 7-system DPM force-density spectral atlas, atomic->cosmic)',
+            'source_thread': 'Session 92 COMPRESSED_RESONANCE_UQFF34_MODULE.cpp',
+            'system': 'CR34 module systems 26-28,30-32,34 (H atom -> Universe diameter)',
+            'f_density_formula': 'I*A_vort*omega_diff/V_sys [N/m^3]',
+            'f_max_H_atom': f_max,                      # 1.500e25
+            'f_min_Universe': f_min,                    # 1.500e-10
+            'f_orion_balance': f_orion,                 # 9.12
+            'xi_span': xi_span,                         # 1e35 (35 orders)
+            'atlas': atlas,
+            'span_note': 'H atom (max, quantum-confined) to Universe (min, cosmological dilution); Orion = human-scale HII balance',
+            'table_typo_note': ('3 of 7 printed atlas rows disagree with the formula by pure powers of 10 '
+                '(NGC6302 x1e5, Lagoon x1e-2, Spirals x1e-3) - A_vort/V_sys exponent mojibake; the span '
+                'and 3 named anchors (H atom, Universe, Orion) are unaffected -> Q-249'),
+        },
+        'formula': 'f_density=I*A_vort*omega_diff/V_sys [N/m^3]; xi_span=f_max/f_min=1.500e25(H atom)/1.500e-10(Universe)=1e35 (35 orders, atomic->cosmic); Orion=9.12 N/m^3 macroscopic HII balance point',
+        'source': 'PAPER_320',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

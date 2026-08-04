@@ -1,12 +1,16 @@
-v0.327.0 BAND 1: PAPER_319 wired - ORION M42 COMPACT-HII SFR BINDING PHASE TRANSITION (CLEAN)
+v0.328.0 BAND 1: PAPER_320 wired - CR34 7-SYSTEM DPM FORCE-DENSITY SPECTRAL ATLAS (CLEAN)
 
-PAPER_319 (Compact HII SFR Gravitational Binding Phase Transition, Session 91,
-ORION_UQFF_MODULE.cpp; third/final Orion term). First UQFF compact-HII SFR-runaway
-gravitational-binding phase transition.
+PAPER_320 (CR34 7-System DPM Force Density Spectral Atlas, Session 92,
+COMPRESSED_RESONANCE_UQFF34_MODULE.cpp). First UQFF 35-order DPM force-density atlas
+spanning 7 systems from atomic to cosmic scale.
 
-- sSFR = SFR/M = 1/2000 = 5e-4 yr^-1 (50x Lagoon PAPER_305, "ultra-compact HII" class)
-- t_cross = (a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr) = 67,730 yr (unbound -> bound transition)
-- m_factor(t_age)=1+sSFR*t=151 -> binding_ratio = g_SFR/a_wind = 2.654 (bound by 300 kyr); 1 Myr -> 4.069
-- t_consume = M/SFR = 2000 yr (shortest gas depletion in the UQFF series)
+- f_density = I*A_vort*omega_diff/V_sys [N/m^3]
+- H atom max = 1.500e25 N/m^3 (quantum-confined vortex); Universe min = 1.500e-10 (cosmological dilution)
+- xi_span = f_max/f_min = 1e35 (35 orders of magnitude)
+- Orion M42 = 9.12 N/m^3 (macroscopic HII balance point)
 
-CLEAN. wired_count 333, gate 1975/0. Campaign frontier PAPER_319 of 2255.
+Q-249 (non-blocking): 3 of 7 intermediate table rows (NGC6302 x1e5, Lagoon x1e-2, Spirals x1e-3)
+have power-of-10 A_vort/V_sys exponent typos in the printed table; xi_span and the 3 named anchors
+are unaffected. Dispatch WIRED on the reproducing headline result.
+
+wired_count 334, gate 1981/0. Campaign frontier PAPER_320 of 2255.

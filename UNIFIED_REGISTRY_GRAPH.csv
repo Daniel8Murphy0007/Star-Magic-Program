@@ -1435,3 +1435,9 @@ observable,sSFR_orion,paper,PAPER_319,wired
 observable,t_cross_binding_orion,paper,PAPER_319,wired
 observable,binding_ratio_orion,paper,PAPER_319,wired
 paper,PAPER_319,paper,PAPER_305,sSFR 50x Lagoon comparison
+observable,f_density_H_atom_max,observable,f_density_span_cr34,f_max in span
+observable,f_density_orion_balance,observable,f_density_span_cr34,mid-atlas anchor
+observable,f_density_span_cr34,paper,PAPER_320,wired
+observable,f_density_H_atom_max,paper,PAPER_320,wired
+observable,f_density_orion_balance,paper,PAPER_320,wired
+paper,PAPER_320,paper,PAPER_321,shared CR34 systems

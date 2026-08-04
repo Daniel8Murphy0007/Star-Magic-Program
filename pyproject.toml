@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.327.0"
-description = "UQFF Star-Magic-Program v0.327.0: PAPER_319 wired (CLEAN) - Orion M42 compact-HII SFR gravitational-binding phase transition; specific SFR sSFR=SFR/M=1/2000=5e-4 yr^-1 is 50x Lagoon; SFR-amplified gravity crosses the wind ram pressure at t_cross=67,730 yr (unbound->bound); m_factor(t_age)=1+sSFR*t=151 gives binding_ratio=g_SFR/a_wind=2.654 (bound by 300 kyr); t_consume=M/SFR=2000 yr, shortest in the series. wired_count 333, gate 1975/0. Frontier PAPER_319 of 2255."
+version = "0.328.0"
+description = "UQFF Star-Magic-Program v0.328.0: PAPER_320 wired (CLEAN) - CR34 7-system DPM force-density spectral atlas; f_density=I*A_vort*omega_diff/V_sys [N/m^3] spans 35 orders from the hydrogen atom (1.500e25, quantum-confined max) to the Universe diameter (1.500e-10, cosmological-dilution min), xi_span=1e35; Orion M42 = 9.12 N/m^3 HII balance point. (Q-249: 3 intermediate table rows have power-of-10 typos, span/anchors unaffected.) wired_count 334, gate 1981/0. Frontier PAPER_320 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

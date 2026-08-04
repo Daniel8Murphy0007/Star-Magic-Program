@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.327.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.327.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.328.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.328.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1975%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-333-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1981%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-334-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.327.0 wiring campaign live**
+**UQFF systematic rebuild — v0.328.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.327.0)
+## What is currently shipped (v0.328.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 333 distinct papers** (`wired_count()`=333 = 319 base-numbered + 14 suffixed) — 85 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 248 rulings queued. Campaign frontier: **PAPER_319** (Orion M42 compact-HII SFR gravitational-binding phase transition: specific SFR sSFR=SFR/M=1/2000=5e-4 yr⁻¹ is 50× Lagoon; the SFR-amplified gravity crosses the wind ram pressure at t_cross=67,730 yr (unbound→bound); m_factor(t_age)=1+sSFR·t=151 gives binding_ratio=g_SFR/a_wind=2.654 by 300 kyr; t_consume=M/SFR=2000 yr — shortest in the series), wired v0.327.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 334 distinct papers** (`wired_count()`=334 = 320 base-numbered + 14 suffixed) — 86 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_320** (CR34 7-system DPM force-density spectral atlas: f_density=I·A_vort·ω_diff/V_sys [N/m³] spans 35 orders from the hydrogen atom (1.500e25, quantum-confined vortex max) to the Universe diameter (1.500e-10, cosmological-dilution min), ξ_span=1e35; Orion M42 = 9.12 N/m³ macroscopic HII balance point. Q-249: 3 intermediate table rows have power-of-10 exponent typos, span/anchors unaffected), wired v0.328.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -700,7 +700,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.324.0** | Band 1: PAPER_316 (NGC 6302 Cooper-DPM A_sc=6.994e21, Q-248) | 330 |
 | **v0.325.0** | Band 1: PAPER_317 (Orion M42 Trapezium wind ram-pressure η_wind=28.47) | 331 |
 | **v0.326.0** | Band 1: PAPER_318 (Orion M42 Trapezium OB UV radiation η_rad=7.664e18, champagne flow) | 332 |
-| **v0.327.0** ← current | Band 1: PAPER_319 (Orion M42 SFR binding transition t_cross=67.7 kyr) | 333 |
+| **v0.327.0** | Band 1: PAPER_319 (Orion M42 SFR binding transition t_cross=67.7 kyr) | 333 |
+| **v0.328.0** ← current | Band 1: PAPER_320 (CR34 DPM force-density atlas, ξ-span=1e35) | 334 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

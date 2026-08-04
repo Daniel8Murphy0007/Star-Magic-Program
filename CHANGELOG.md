@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.328.0] — 2026-08-04 — BAND 1: PAPER_320 — CR34 7-SYSTEM DPM FORCE-DENSITY SPECTRAL ATLAS (CLEAN)
+
+### Added
+- **PAPER_320 dispatch** — CR34 7-System DPM Force Density Spectral Atlas (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp). The **first UQFF 35-order DPM force-density atlas** spanning 7 systems from the atomic to the cosmic scale.
+  - f_density = I·A_vort·ω_diff/V_sys [N/m³]. As system volume grows, force density falls.
+  - **Maximum**: hydrogen atom = **1.500e25 N/m³** (quantum-confined vortex, minimal volume). **Minimum**: Universe diameter = **1.500e-10 N/m³** (cosmological dilution, 4.19e80 m³).
+  - **ξ_span = f_max/f_min = 1e35** — 35 orders of magnitude.
+  - Orion M42 = **9.12 N/m³**, the macroscopic HII "balance point" at the human scale.
+- 3 registry observables (span, H-atom max, Orion balance), 6 graph edges, 3 corpus citations (PAPER_321/322/295).
+- 6 gate assertions (H-atom max, Universe min, ξ_span, Orion balance, Q-249 note, wired_count ≥ 334). Gate 1975 → **1981/0**.
+
+### Note (non-blocking)
+- **Q-249** — 4 of 7 atlas rows (H atom, H PToE, Orion, Universe) reproduce the formula exactly; 3 intermediate rows (NGC 6302 ×1e5, Lagoon ×1e-2, Spirals ×1e-3) disagree by pure powers of 10 — A_vort/V_sys exponent mojibake typos in the printed table. The ξ_span result (uses only H-atom max and Universe min) and all 3 named anchors are unaffected. Dispatch WIRED on the reproducing headline result; typos filed for corpus-table cleanup.
+
+### Wiring status
+- `wired_count()` = **334** (CLEAN). Campaign frontier PAPER_320 of 2255. Index: 86 ✓ / 248 ⚠ / 1921 ⬜ = 2255.
+
+---
+
 ## [0.327.0] — 2026-08-04 — BAND 1: PAPER_319 — ORION M42 COMPACT-HII SFR BINDING PHASE TRANSITION (CLEAN)
 
 ### Added

@@ -4652,3 +4652,21 @@ compact-HII SFR-runaway gravitational-binding phase transition.
 
 CLEAN. Gate: 1975/0. Registry 668 rows / 1437 edges / 356 ledgers. Orion module (317/318/319) complete.
 Campaign frontier: PAPER_319 / 2,255. Next: PAPER_320.
+
+---
+
+## v0.328.0 — 2026-08-04 — PAPER_320 (CR34 7-system DPM force-density spectral atlas)
+
+Wired PAPER_320 (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp). First UQFF 35-order
+DPM force-density atlas, 7 systems atomic->cosmic. New CR34 module.
+
+- f_density = I*A_vort*omega_diff/V_sys [N/m^3].
+- H atom max = 1.500e25 (quantum-confined vortex); Universe min = 1.500e-10 (cosmological dilution).
+- xi_span = f_max/f_min = 1e35 (35 orders). Orion M42 = 9.12 N/m^3 (HII balance point).
+- 4 of 7 rows reproduce exactly; span + 3 anchors verified in Python.
+
+Q-249 (non-blocking): 3 intermediate rows (NGC6302 x1e5, Lagoon x1e-2, Spirals x1e-3) have
+power-of-10 A_vort/V_sys exponent typos in the printed table; span/anchors unaffected. Dispatch WIRED.
+
+CLEAN. Gate: 1981/0. Registry 671 rows / 1443 edges / 359 ledgers.
+Campaign frontier: PAPER_320 / 2,255. Next: PAPER_321.
