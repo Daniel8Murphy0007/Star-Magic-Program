@@ -1,12 +1,13 @@
-v0.312.0 BAND 1: PAPER_305 wired - LAGOON NEBULA SFR MASS-RUNAWAY AMPLIFIER (CLEAN)
+v0.313.0 BAND 1: PAPER_306 wired - LAGOON NEBULA HERSCHEL 36 RADIATION EROSION (CLEAN)
 
-PAPER_305 (Lagoon Nebula M8/NGC 6523 SFR Mass Runaway Amplifier, Session 87,
-LAGOON_UQFF_MODULE.cpp, 29th C++ module, first H II region). New astrophysical sector:
-star-forming-region mass growth.
+PAPER_306 (Lagoon Nebula Herschel 36 Radiation Erosion, Session 87,
+LAGOON_UQFF_MODULE.cpp; second Lagoon term). First UQFF single-point-source
+radiation-pressure parameter.
 
-- dM/M0 at 1 Myr = SFR*1e6yr/M0 = 10.0 -> mass-runaway factor m_factor = 11.0 (gravity 11x in 1 Myr)
-- t_consume = M0/SFR = 100 kyr cloud depletion; SFR/M0 = 1e-5 yr^-1
-- dg/dt = G*SFR_kg_s/r^2 = 1.553e-24 m/s3 (SFR_kg_s=6.303e21); dg over 1 Myr = 4.90e-11 m/s2
-- first UQFF SFR runaway (dM>M0 within 1 Myr); vs M16 (PAPER_284) dM/M0 << 1
+- F_rad = L_H36/(4*pi*r^2*c) = 7.511e-14 Pa (single O7V star Herschel 36, L=7.65e31 W)
+- a_rad = F_rad/rho_fluid = 7.51e6 m/s2 (rho_fluid=1e-20 kg/m3)
+- g_base = G*M0/r^2 = 4.91e-12 m/s2 (nebula self-gravity)
+- eta_rad = a_rad/g_base = 1.53e18 (18 orders; highest single-source vs M16 ensemble ~1e16)
+- P_rad subtracted from g_total (radiation opposes collapse, drives blister H II morphology)
 
-CLEAN. wired_count 319, gate 1891/0. Campaign frontier PAPER_305 of 2255.
+CLEAN. wired_count 320, gate 1897/0. Campaign frontier PAPER_306 of 2255.

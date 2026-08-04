@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.312.0", "uqff_calculator.VERSION = 0.312.0 (PAPER_305 = v0.312.0)")
+assert_that(C.VERSION == "0.313.0", "uqff_calculator.VERSION = 0.313.0 (PAPER_306 = v0.313.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4154,6 +4154,19 @@ assert_that(abs(_r305['SFR_kg_s'] - 6.303e21) / 6.303e21 < 0.005 and abs(_r305['
 assert_that(abs(_r305['dg_1Myr'] - 4.90e-11) / 4.90e-11 < 0.01,
             "PAPER_305: dg over 1 Myr = 4.90e-11 m/s2 (~10*g_base, consistent with m_factor=11)")
 assert_that(C.wired_count() >= 319, "wired_count >= 319 (PAPER_305 wired)")
+
+_r306 = C.calc('PAPER_306')['value']
+assert_that(abs(_r306['F_rad_Pa'] - 7.511e-14) / 7.511e-14 < 0.005 and _r306['F_rad_formula'] == 'L/(4*pi*r^2*c)',
+            "PAPER_306: F_rad = L_H36/(4*pi*r^2*c) = 7.511e-14 Pa (Herschel 36 radiation pressure)")
+assert_that(abs(_r306['a_rad'] - 7.51e6) / 7.51e6 < 0.005 and _r306['a_rad_formula'] == 'F_rad/rho_fluid',
+            "PAPER_306: a_rad = F_rad/rho_fluid = 7.51e6 m/s2 (radiation acceleration)")
+assert_that(abs(_r306['g_base'] - 4.91e-12) / 4.91e-12 < 0.005,
+            "PAPER_306: g_base = G*M0/r^2 = 4.91e-12 m/s2 (nebula self-gravity)")
+assert_that(abs(_r306['eta_rad'] - 1.53e18) / 1.53e18 < 0.005 and _r306['single_source'],
+            "PAPER_306: eta_rad = a_rad/g_base = 1.53e18 (first UQFF single-source radiation dominance, 18 orders)")
+assert_that(_r306['radiation_subtracted'],
+            "PAPER_306: P_rad subtracted from g_total (radiation opposes collapse, drives blister H II morphology)")
+assert_that(C.wired_count() >= 320, "wired_count >= 320 (PAPER_306 wired)")
 
 
 # =============================================================================

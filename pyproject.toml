@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.312.0"
-description = "UQFF Star-Magic-Program v0.312.0: PAPER_305 wired (CLEAN) - Lagoon Nebula (M8/NGC 6523) SFR mass-runaway amplifier (29th C++ module, first H II region); dM/M0 at 1 Myr = SFR*1e6yr/M0 = 10.0, so the mass runaway factor m_factor = 11.0 (gravity amplified 11-fold in 1 Myr); cloud depletion t_consume = M0/SFR = 100 kyr; dg/dt = G*SFR_kg_s/r^2 = 1.553e-24 m/s3; first UQFF SFR runaway (dM>M0 within 1 Myr). wired_count 319, gate 1891/0. Frontier PAPER_305 of 2255."
+version = "0.313.0"
+description = "UQFF Star-Magic-Program v0.313.0: PAPER_306 wired (CLEAN) - Lagoon Nebula Herschel 36 radiation erosion; single O7V star radiation pressure F_rad=L/(4*pi*r^2*c)=7.511e-14 Pa gives a_rad=F_rad/rho_fluid=7.51e6 m/s2, exceeding nebula self-gravity g_base=G*M0/r^2=4.91e-12 by eta_rad=a_rad/g_base=1.53e18 (18 orders); first UQFF single-point-source radiation-pressure parameter, drives the blister H II morphology. wired_count 320, gate 1897/0. Frontier PAPER_306 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

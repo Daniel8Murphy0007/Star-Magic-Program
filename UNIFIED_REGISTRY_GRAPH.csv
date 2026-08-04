@@ -1346,3 +1346,10 @@ observable,dM_over_M0_lagoon,paper,PAPER_305,wired
 observable,t_consume_lagoon,paper,PAPER_305,wired
 observable,dg_dt_lagoon,paper,PAPER_305,wired
 paper,PAPER_305,paper,PAPER_284,M8 vs M16 SFR comparison
+primitive,C_OBSERVED,observable,F_rad_herschel36,c denominator
+primitive,G_OBSERVED,observable,eta_rad_lagoon,g_base=G*M0/r^2
+observable,F_rad_herschel36,observable,a_rad_lagoon,a_rad=F_rad/rho
+observable,a_rad_lagoon,observable,eta_rad_lagoon,a_rad/g_base
+observable,F_rad_herschel36,paper,PAPER_306,wired
+observable,a_rad_lagoon,paper,PAPER_306,wired
+observable,eta_rad_lagoon,paper,PAPER_306,wired

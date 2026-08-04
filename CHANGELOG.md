@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.313.0] — 2026-08-04 — BAND 1: PAPER_306 — LAGOON NEBULA HERSCHEL 36 RADIATION EROSION (CLEAN)
+
+### Added
+- **PAPER_306 dispatch** — Lagoon Nebula Herschel 36 Radiation Erosion (Session 87, LAGOON_UQFF_MODULE.cpp; second Lagoon term). The **first UQFF single-point-source radiation-pressure parameter**.
+  - Radiation pressure from the single O7V star Herschel 36: F_rad = L_H36/(4πr²c) = **7.511e-14 Pa** (L_H36 = 7.65e31 W).
+  - a_rad = F_rad/ρ_fluid = **7.51e6 m/s²** (ρ_fluid = 1e-20 kg/m³).
+  - Nebula self-gravity g_base = G·M0/r² = **4.91e-12 m/s²**; radiation-to-gravity dominance η_rad = a_rad/g_base = **1.53e18** — 18 orders, the highest single-source η_rad across all systems (vs M16 OB-cluster ensemble ~1e16).
+  - In the 9-term pipeline P_rad is *subtracted* from g_total — radiation opposes collapse, sculpting the one-sided blister H II morphology.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_305/284).
+- 6 gate assertions (F_rad, a_rad, g_base, η_rad/single-source, radiation-subtracted, wired_count ≥ 320). Gate 1891 → **1897/0**.
+
+### Wiring status
+- `wired_count()` = **320** (CLEAN). Campaign frontier PAPER_306 of 2255. Index: 73 ✓ / 247 ⚠ / 1935 ⬜ = 2255.
+
+---
+
 ## [0.312.0] — 2026-08-04 — BAND 1: PAPER_305 — LAGOON NEBULA SFR MASS-RUNAWAY AMPLIFIER (CLEAN)
 
 ### Added

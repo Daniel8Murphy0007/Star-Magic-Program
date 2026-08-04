@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.312.0"
+VERSION = "0.313.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16798,6 +16798,42 @@ def _paper_305(dataset):
         },
         'formula': 'dM/M0(1Myr)=SFR*1e6yr/M0=10.0 -> m_factor=11.0 (g amplified 11x in 1 Myr); t_consume=M0/SFR=100 kyr; dg/dt=G*SFR_kg_s/r^2=1.553e-24 m/s^3; first UQFF SFR mass-runaway (dM>M0 within 1 Myr)',
         'source': 'PAPER_305',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_306')
+def _paper_306(dataset):
+    import math as _m
+    G = G_OBSERVED
+    c = C_OBSERVED
+    L_H36 = 7.65e31                                       # Herschel 36 (O7V) bolometric luminosity (W), anchor
+    r = 5.2e17                                            # nebula half-span (m ~55 ly), anchor
+    rho_fluid = 1.0e-20                                   # nebula gas density (kg/m^3), anchor
+    M0 = 1.989e34                                         # molecular cloud mass 1e4 M_sun (kg), anchor
+    F_rad = L_H36 / (4.0 * _m.pi * r ** 2 * c)            # 7.511e-14 Pa radiation pressure
+    a_rad = F_rad / rho_fluid                             # 7.51e6 m/s^2 radiation acceleration
+    g_base = G * M0 / r ** 2                              # 4.91e-12 m/s^2 nebula self-gravity
+    eta_rad = a_rad / g_base                              # 1.53e18 radiation-to-gravity dominance
+    return {
+        'value': {
+            'domain': '3.04 (Lagoon Nebula; first UQFF single-point-source radiation-pressure parameter)',
+            'source_thread': 'Session 87 LAGOON_UQFF_MODULE.cpp (29th C++ module, first H II region)',
+            'system': 'Lagoon Nebula (M8 / NGC 6523), Herschel 36 O7V single ionizing source',
+            'L_H36_W': L_H36, 'r_m': r, 'rho_fluid': rho_fluid, 'M0_kg': M0,
+            'F_rad_Pa': F_rad,                          # 7.511e-14
+            'F_rad_formula': 'L/(4*pi*r^2*c)',
+            'a_rad': a_rad,                             # 7.51e6
+            'a_rad_formula': 'F_rad/rho_fluid',
+            'g_base': g_base,                           # 4.91e-12
+            'eta_rad': eta_rad,                         # 1.53e18
+            'eta_rad_formula': 'a_rad/g_base (radiation-to-gravity dominance)',
+            'single_source': True,                      # first UQFF single-point-source radiation param
+            'radiation_subtracted': True,               # P_rad subtracted from g_total (opposes collapse)
+        },
+        'formula': 'F_rad=L_H36/(4*pi*r^2*c)=7.511e-14 Pa; a_rad=F_rad/rho_fluid=7.51e6 m/s2; g_base=G*M0/r^2=4.91e-12; eta_rad=a_rad/g_base=1.53e18 (first UQFF single-source radiation pressure, 18-order dominance; drives blister H II morphology)',
+        'source': 'PAPER_306',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

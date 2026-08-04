@@ -4426,3 +4426,19 @@ New astrophysical sector: star-forming-region mass growth.
 
 CLEAN. Gate: 1891/0. Registry 627 rows / 1348 edges / 330 ledgers.
 Campaign frontier: PAPER_305 / 2,255. Next: PAPER_306.
+
+---
+
+## v0.313.0 — 2026-08-04 — PAPER_306 (Lagoon Nebula Herschel 36 radiation erosion)
+
+Wired PAPER_306 (Session 87, LAGOON_UQFF_MODULE.cpp; second Lagoon term). First UQFF
+single-point-source radiation-pressure parameter.
+
+- F_rad = L_H36/(4*pi*r^2*c) = 7.511e-14 Pa (Herschel 36 O7V, L=7.65e31 W).
+- a_rad = F_rad/rho_fluid = 7.51e6 m/s2 (rho_fluid=1e-20).
+- g_base = G*M0/r^2 = 4.91e-12; eta_rad = a_rad/g_base = 1.53e18 (18 orders, highest single-source
+  vs M16 ensemble ~1e16). All verified in Python.
+- P_rad subtracted from g_total (opposes collapse, drives blister H II morphology).
+
+CLEAN. Gate: 1897/0. Registry 630 rows / 1355 edges / 332 ledgers.
+Campaign frontier: PAPER_306 / 2,255. Next: PAPER_307.
