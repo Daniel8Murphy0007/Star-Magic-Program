@@ -7,6 +7,38 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.321.0] — 2026-08-04 — BAND 1: PAPER_314 — NGC 6302 PN LOBE DPM MACRO-ANTENNA FORCE (CLEAN)
+
+### Added
+- **PAPER_314 dispatch** — NGC 6302 Bipolar PN Lobe DPM Macro-Antenna Force (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp). The **first UQFF DPM force at planetary-nebula lobe scale** (r ~ 1.5 ly).
+  - The ~1.5 ly lobe cross-section A_area = π·r² = **6.333e32 m²** acts as a macroscopic DPM antenna. F_DPM = I_wind·A_area·Δω = **1.267e50 N** (I_wind = 1e20 A, Δω = 2e-3 rad/s).
+  - Seed resonance acceleration a_DPM = F_DPM·f_DPM·E_vac/(c·V_sys) = **2.497e-31 m/s²** (V_sys = (4/3)π·r³ = 1.199e49 m³; E_vac = RHO_UA), which cascades to the THz/VacDiff pipelines (PAPER_315/316).
+  - **13-order PN-to-compact amplification** η_PN/cpt = F_DPM/F_DPM_compact = **2.017e13** (vs compact systems 18-24, PAPER_293) — the macro-antenna scaling law F_DPM ~ A_area ~ r² at fixed I_wind, Δω.
+  - **Mojibake note:** the title/abstract render F_DPM as "1.267e5" (dropped exponent); the body derivation and force-hierarchy table give the correct 1.267e50 N. Wired to the body value.
+- 3 registry observables, 7 graph edges, 3 corpus citations (PAPER_293/315/316).
+- 6 gate assertions (F_DPM, a_DPM, η_PN/cpt, A_area, mojibake note, wired_count ≥ 328). Gate 1939 → **1945/0**.
+
+### Wiring status
+- `wired_count()` = **328** (CLEAN). Campaign frontier PAPER_314 of 2255. Index: 81 ✓ / 247 ⚠ / 1927 ⬜ = 2255.
+
+---
+
+## [0.320.0] — 2026-08-04 — BAND 1: PAPER_313 — NGC 6302 EQUATORIAL-TORUS MAGNETIC CONFINEMENT (CLEAN)
+
+### Added
+- **PAPER_313 dispatch** — NGC 6302 Equatorial Torus Magnetic Confinement (Session 89, NGC6302_UQFF_MODULE.cpp; third/final NGC 6302 term). Completes the bipolar-PN force budget with the confinement geometry.
+  - Torus magnetic pressure P_mag = B²/(2μ₀) = **3.979e-5 Pa** (B = 1e-5 T; μ₀ from registry); wind ram pressure P_ram = ρ·v_wind² = 1.0e-10 Pa.
+  - Magnetic confinement ratio η_B_conf = P_mag/P_ram = **3.979e5** — magnetic pressure exceeds ram pressure by ~4e5, preventing the torus from being blown away and channeling the outflow into two polar lobes.
+  - Plasma β = P_ram/P_mag = **2.513e-6 ≪ 1** — magnetically dominated regime.
+  - Alfvén velocity v_A = B/√(μ₀ρ) = **8.921e7 m/s** (~0.3c) = 892× v_wind — magnetic signals restructure the torus ~892× faster than the wind, sustaining the stable morphology over ~2000 yr.
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_311/312).
+- 6 gate assertions (P_mag, η_B_conf, β/dominated, v_Alfvén, v_A/v_wind, wired_count ≥ 327). Gate 1933 → **1939/0**.
+
+### Wiring status
+- `wired_count()` = **327** (CLEAN). Campaign frontier PAPER_313 of 2255. Index: 80 ✓ / 247 ⚠ / 1928 ⬜ = 2255. NGC 6302 module (311/312/313) complete.
+
+---
+
 ## [0.319.0] — 2026-08-04 — BAND 1: PAPER_312 — NGC 6302 CENTRAL-WD UV RADIATION PRESSURE (CLEAN)
 
 ### Added

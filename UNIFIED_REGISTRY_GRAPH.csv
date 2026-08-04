@@ -1390,3 +1390,16 @@ observable,a_rad_ngc6302,observable,eta_rad_ngc6302,a_rad/g_base
 observable,P_rad_ngc6302_uv,paper,PAPER_312,wired
 observable,a_rad_ngc6302,paper,PAPER_312,wired
 observable,eta_rad_ngc6302,paper,PAPER_312,wired
+primitive,MU_0,observable,P_mag_ngc6302_torus,B^2/(2*mu0)
+primitive,MU_0,observable,v_Alfven_ngc6302,B/sqrt(mu0*rho)
+observable,P_mag_ngc6302_torus,observable,eta_B_conf_ngc6302,P_mag/P_ram
+observable,P_mag_ngc6302_torus,paper,PAPER_313,wired
+observable,eta_B_conf_ngc6302,paper,PAPER_313,wired
+observable,v_Alfven_ngc6302,paper,PAPER_313,wired
+primitive,RHO_UA,observable,a_DPM_ngc6302_seed,E_vac factor
+primitive,C_OBSERVED,observable,a_DPM_ngc6302_seed,c in denominator
+observable,F_DPM_ngc6302_lobe,observable,a_DPM_ngc6302_seed,a_DPM from F_DPM
+observable,F_DPM_ngc6302_lobe,observable,eta_PN_cpt_amplification,F_DPM/F_compact
+observable,F_DPM_ngc6302_lobe,paper,PAPER_314,wired
+observable,a_DPM_ngc6302_seed,paper,PAPER_314,wired
+observable,eta_PN_cpt_amplification,paper,PAPER_314,wired

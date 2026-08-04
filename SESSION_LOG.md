@@ -4537,3 +4537,34 @@ channel of the Bug Nebula's ultra-hot WD (T_eff ~ 200,000 K).
 
 CLEAN. Gate: 1933/0. Registry 648 rows / 1392 edges / 340 ledgers.
 Campaign frontier: PAPER_312 / 2,255. Next: PAPER_313.
+
+---
+
+## v0.320.0 — 2026-08-04 — PAPER_313 (NGC 6302 equatorial-torus magnetic confinement)
+
+Wired PAPER_313 (Session 89, NGC6302_UQFF_MODULE.cpp; third/final NGC 6302 term).
+Completes the bipolar-PN force budget with the confinement geometry.
+
+- P_mag = B^2/(2*mu0) = 3.979e-5 Pa (B=1e-5, mu0 from registry); P_ram = rho*v_wind^2 = 1.0e-10.
+- eta_B_conf = P_mag/P_ram = 3.979e5 (magnetic confinement dominates).
+- beta_plasma = P_ram/P_mag = 2.513e-6 << 1 (magnetically dominated regime).
+- v_Alfven = B/sqrt(mu0*rho) = 8.921e7 m/s (~0.3c) = 892x v_wind. All verified in Python.
+
+CLEAN. Gate: 1939/0. Registry 651 rows / 1398 edges / 342 ledgers. NGC 6302 module (311/312/313) complete.
+Campaign frontier: PAPER_313 / 2,255. Next: PAPER_314.
+
+---
+
+## v0.321.0 — 2026-08-04 — PAPER_314 (NGC 6302 PN lobe DPM macro-antenna force)
+
+Wired PAPER_314 (Session 90, NGC6302_RESONANCE_UQFF_MODULE.cpp). First UQFF DPM force at
+PN lobe scale (r ~ 1.5 ly).
+
+- A_area = pi*r^2 = 6.333e32 m^2 (lobe DPM antenna); F_DPM = I_wind*A_area*d_omega = 1.267e50 N.
+- a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 2.497e-31 m/s2 (V_sys=1.199e49; E_vac=RHO_UA).
+- eta_PN/cpt = F_DPM/F_DPM_compact = 2.017e13 (13-order macro-antenna scaling F_DPM~r^2, vs PAPER_293).
+  All verified in Python against the body equations.
+- MOJIBAKE: title/abstract show F_DPM=1.267e5 (dropped exponent); body gives 1.267e50 N. Wired to body value.
+
+CLEAN. Gate: 1945/0. Registry 654 rows / 1405 edges / 345 ledgers.
+Campaign frontier: PAPER_314 / 2,255. Next: PAPER_315.

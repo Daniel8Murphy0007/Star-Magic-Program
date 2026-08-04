@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.319.0"
+VERSION = "0.321.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17065,6 +17065,80 @@ def _paper_312(dataset):
         },
         'formula': 'P_rad=L_star/(4*pi*r^2*c)=5.672e-12 Pa; a_rad=P_rad/rho_fluid=5.672e8 m/s2; eta_rad=a_rad/g_base=1.913e20 (20 orders, UV radiation dominates); a_rad/a_wind=2.684e14 (radiation at apex of NGC 6302 force hierarchy)',
         'source': 'PAPER_312',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_313')
+def _paper_313(dataset):
+    import math as _m
+    B = 1.0e-5                                            # equatorial torus magnetic field (T), anchor
+    mu0 = MU_0                                            # permeability of free space (H/m)
+    rho_fluid = 1.0e-20                                   # ionized torus/lobe gas (kg/m^3), anchor
+    v_wind = 1.0e5                                        # stellar wind (m/s), anchor
+    P_mag = B ** 2 / (2.0 * mu0)                          # 3.979e-5 Pa magnetic pressure
+    P_ram = rho_fluid * v_wind ** 2                       # 1.0e-10 Pa wind ram pressure
+    eta_B_conf = P_mag / P_ram                            # 3.979e5 magnetic confinement ratio
+    beta_plasma = P_ram / P_mag                           # 2.513e-6 plasma beta (<<1)
+    v_Alfven = B / _m.sqrt(mu0 * rho_fluid)               # 8.921e7 Alfven velocity
+    vA_over_vwind = v_Alfven / v_wind                     # 892.1
+    return {
+        'value': {
+            'domain': '3.11 (NGC 6302 equatorial torus magnetic confinement; magnetically dominated regime)',
+            'source_thread': 'Session 89 NGC6302_UQFF_MODULE.cpp (31st C++ module)',
+            'system': 'NGC 6302 equatorial dust/gas torus, magnetic confinement (beta << 1)',
+            'B_T': B, 'rho_fluid': rho_fluid, 'v_wind': v_wind,
+            'P_mag_Pa': P_mag,                          # 3.979e-5
+            'P_mag_formula': 'B^2/(2*mu0)',
+            'P_ram_Pa': P_ram,                          # 1.0e-10
+            'eta_B_conf': eta_B_conf,                   # 3.979e5
+            'beta_plasma': beta_plasma,                 # 2.513e-6
+            'magnetically_dominated': beta_plasma < 1.0,  # beta << 1
+            'v_Alfven': v_Alfven,                       # 8.921e7 (~0.3c)
+            'v_Alfven_formula': 'B/sqrt(mu0*rho)',
+            'vA_over_vwind': vA_over_vwind,             # 892.1
+        },
+        'formula': 'P_mag=B^2/(2*mu0)=3.979e-5 Pa; P_ram=rho*v_wind^2=1.0e-10; eta_B_conf=P_mag/P_ram=3.979e5 (magnetic confinement); beta_plasma=P_ram/P_mag=2.513e-6 (<<1, magnetically dominated); v_Alfven=B/sqrt(mu0*rho)=8.921e7 m/s (892x v_wind)',
+        'source': 'PAPER_313',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_314')
+def _paper_314(dataset):
+    import math as _m
+    c = C_OBSERVED
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic nebular vacuum
+    r = 1.42e16                                           # lobe half-span ~1.5 ly (m), anchor
+    I_wind = 1.0e20                                       # wind current proxy (A), anchor
+    d_omega = 2.0e-3                                      # DPM frequency spread (rad/s), anchor
+    f_DPM = 1.0e12                                        # DPM frequency (Hz, 1e12 class), anchor
+    F_compact = 6.284e36                                  # compact-system F_DPM (PAPER_293)
+    A_area = _m.pi * r ** 2                               # 6.333e32 m^2 lobe cross-section (DPM antenna)
+    V_sys = (4.0 / 3.0) * _m.pi * r ** 3                  # 1.199e49 m^3 lobe sphere
+    F_DPM = I_wind * A_area * d_omega                     # 1.267e50 N DPM macro-antenna force
+    a_DPM = F_DPM * f_DPM * E_vac / (c * V_sys)           # 2.497e-31 m/s^2 seed resonance accel
+    eta_PN_cpt = F_DPM / F_compact                        # 2.017e13 PN-to-compact amplification
+    return {
+        'value': {
+            'domain': '3.12 (NGC 6302 PN lobe DPM macro-antenna; first UQFF DPM force at PN lobe scale)',
+            'source_thread': 'Session 90 NGC6302_RESONANCE_UQFF_MODULE.cpp',
+            'system': 'NGC 6302 bipolar PN lobe (r ~ 1.5 ly), DPM resonance channel',
+            'r_m': r, 'I_wind_A': I_wind, 'd_omega': d_omega, 'f_DPM_Hz': f_DPM,
+            'A_area': A_area,                           # 6.333e32
+            'V_sys': V_sys,                             # 1.199e49
+            'F_DPM': F_DPM,                             # 1.267e50 N
+            'F_DPM_formula': 'I_wind*A_area*d_omega',
+            'a_DPM': a_DPM,                             # 2.497e-31
+            'a_DPM_formula': 'F_DPM*f_DPM*E_vac/(c*V_sys)',
+            'eta_PN_cpt': eta_PN_cpt,                   # 2.017e13 (13-order amplification vs PAPER_293)
+            'macro_antenna_scaling': 'F_DPM ~ A_area ~ r^2 at fixed I_wind, d_omega',
+            'title_mojibake_note': 'title/abstract show F_DPM=1.267e5 (dropped exponent); body derivation gives 1.267e50 N',
+        },
+        'formula': 'F_DPM=I_wind*A_area*d_omega=1.267e50 N (A_area=pi*r^2 lobe antenna); a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=2.497e-31 m/s2; eta_PN/cpt=F_DPM/F_DPM_compact=2.017e13 (13-order PN-to-compact amplification, macro-antenna scaling F_DPM~r^2)',
+        'source': 'PAPER_314',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
