@@ -4087,3 +4087,22 @@ wired_count 299 -> 300 (300-DISPATCH MILESTONE). Gate +5 (1785/0). Registry +1 r
 
 Gate: 1785/0. Registry 585 rows / 1264 edges / 300 ledgers. Campaign frontier:
 PAPER_286 / 2,255. Next: PAPER_287.
+
+---
+
+## 2026-08-03 — v0.294.0 — BAND 1: PAPER_287 — DPM-THz PLASMOTIC VACUUM CASCADE AMPLIFICATION (CLEAN)
+
+PAPER_287 (DPM-THz Plasmotic Vacuum Cascade Amplification G_THz, Session 81,
+RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp 23rd C++ module, first RSC) wired as one
+dispatch (CLEAN). First UQFF cascaded resonance chain - DPM seeds THz seeds Aether/SC.
+DPM seed a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=3.545e-18 (F_DPM=I*A_vort*(w1-w2)=6.284e26 N,
+E_vac=rho_UA=7.09e-36 plasmotic=10*rho_SCm); Gamma_THz=(E_vac/E_vac_ISM)*(f_THz*v_exp)/c
+=10*(1e12*1e3)/3e8=3.33e7 (ratio 10=SO_5); a_THz=Gamma_THz*a_DPM=1.182e-10 (7 orders
+above seed). DPM = universal seed (UQFF Cascade Principle).
+
+wired_count 300 -> 301. Gate +5 (1790/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_287 -> checkmark (57 / 244 / 1954 = 2255; wired 301 = count).
+Frontier PAPER_286 -> PAPER_287. Version PAPER_287 = v0.294.0.
+
+Gate: 1790/0. Registry 586 rows / 1265 edges / 301 ledgers. Campaign frontier:
+PAPER_287 / 2,255. Next: PAPER_288.

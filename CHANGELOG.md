@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.294.0] — 2026-08-03 — BAND 1: PAPER_287 — DPM-THz PLASMOTIC VACUUM CASCADE AMPLIFICATION (CLEAN)
+
+### Added
+- **PAPER_287 dispatch** — DPM-THz Plasmotic Vacuum Cascade Amplification (Session 81, RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp — 23rd C++ module, first universal RSC module). The **first UQFF cascaded resonance chain**: the DPM mode seeds the THz mode, which seeds Aether/SC modes.
+  - DPM seed: a_DPM = F_DPM·f_DPM·E_vac/(c·V_sys) = 3.545e-18 m/s², with F_DPM = I·A_vort·(ω1−ω2) = 6.284e26 N and E_vac = ρ_UA = 7.09e-36 J/m³ (plasmotic vacuum = 10·ρ_SCm).
+  - THz cascade factor Γ_THz = (E_vac/E_vac_ISM)·(f_THz·v_exp)/c = 10·(1e12·1e3)/3e8 = **3.33e7** (plasmotic-to-ISM vacuum ratio = 10 = SO_5).
+  - a_THz = Γ_THz·a_DPM = **1.182e-10 m/s²** — 7 orders above the DPM seed. DPM is the universal seed; all higher modes are multiplicative in a_DPM (UQFF Cascade Principle).
+- Gate +5 assertions (→ 1790, 0 failures). wired_count 300 → **301**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_287 → ✓.
+
+### Notes
+- CLEAN — all values reproduce; E_vac composed from ρ_UA.
+
+---
+
 ## [0.293.0] — 2026-08-03 — BAND 1: PAPER_286 — M16 EAGLE NEBULA NEBULAR FRIEDMANN REDSHIFT (CLEAN) · 300-DISPATCH MILESTONE
 
 ### Added

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.293.0"
-description = "UQFF Star-Magic-Program v0.293.0: PAPER_286 wired (CLEAN) - M16 Eagle Nebula Nebular Friedmann Redshift kappa_neb=(H(0.0015)-H(0))/H(0)=6.71e-4; H(z=0.0015)=70.047 km/s/Mpc via Friedmann H(z)=H0*sqrt(Om*(1+z)^3+OL) with canonical H0=70; first UQFF nebular (sub-galactic) module with z>0. wired_count 300 (300-dispatch milestone), gate 1785/0. Campaign frontier PAPER_286 of 2255. (v0.285.0 burned; v0.286.0-0.292.0 shipped.)"
+version = "0.294.0"
+description = "UQFF Star-Magic-Program v0.294.0: PAPER_287 wired (CLEAN) - DPM-THz Plasmotic Vacuum Cascade Amplification Gamma_THz=10*(f_THz*v_exp)/c=3.33e7; DPM seed a_DPM=3.545e-18 -> a_THz=Gamma_THz*a_DPM=1.182e-10 (7 orders above seed); first UQFF cascaded resonance chain (23rd C++ module, first RSC). wired_count 301, gate 1790/0. Campaign frontier PAPER_287 of 2255. (v0.285.0 burned; v0.286.0-0.293.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

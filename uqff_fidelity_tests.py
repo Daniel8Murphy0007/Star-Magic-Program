@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.293.0", "uqff_calculator.VERSION = 0.293.0 (PAPER_286 = v0.293.0)")
+assert_that(C.VERSION == "0.294.0", "uqff_calculator.VERSION = 0.294.0 (PAPER_287 = v0.294.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3922,6 +3922,17 @@ assert_that(abs(_r286['g_exp_5Myr'] - 5.21e-16) < 1e-18 and abs(_r286['H_SI'] - 
 assert_that(_r286['first_nebular_module_z_gt_0'] and _r286['distinct_from_kappa_recession'],
             "PAPER_286: first UQFF nebular (sub-galactic) module with z>0; kappa_neb distinct class from kappa_recession")
 assert_that(C.wired_count() >= 300, "wired_count >= 300 (PAPER_286 wired; 300-dispatch milestone)")
+
+_r287 = C.calc('PAPER_287')['value']
+assert_that(abs(_r287['Gamma_THz'] - 3.333e7) < 1e5 and _r287['plasmotic_ism_ratio'] == 10.0,
+            "PAPER_287: Gamma_THz = 10*(f_THz*v_exp)/c = 3.33e7 (THz cascade amplification; plasmotic/ISM vacuum ratio=10)")
+assert_that(abs(_r287['a_DPM'] - 3.545e-18) < 1e-20 and _r287['a_DPM_formula'] == 'F_DPM*f_DPM*E_vac/(c*V_sys)',
+            "PAPER_287: a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 3.545e-18 m/s2 (DPM seed; E_vac=rho_UA)")
+assert_that(abs(_r287['a_THz'] - 1.182e-10) < 1e-12 and _r287['thz_orders_above_dpm'] == 7,
+            "PAPER_287: a_THz = Gamma_THz*a_DPM = 1.182e-10 m/s2 (7 orders above DPM seed)")
+assert_that(_r287['first_cascaded_resonance_chain'] and _r287['dpm_universal_seed'],
+            "PAPER_287: first UQFF cascaded resonance chain (DPM seeds THz seeds Aether/SC); DPM universal seed")
+assert_that(C.wired_count() >= 301, "wired_count >= 301 (PAPER_287 wired)")
 
 
 # =============================================================================

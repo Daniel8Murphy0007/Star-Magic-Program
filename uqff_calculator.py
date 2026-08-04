@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.293.0"
+VERSION = "0.294.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16088,6 +16088,45 @@ def _paper_286(dataset):
         },
         'formula': 'kappa_neb=(H(0.0015)-H(0))/H(0)=(70.047-70.000)/70.000=6.71e-4; H(z)=H0*sqrt(Om*(1+z)^3+OL); g_exp=g_base*H(z)_SI*t=5.21e-16 at 5 Myr',
         'source': 'PAPER_286',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_287')
+def _paper_287(dataset):
+    E_vac = RHO_UA                                       # 7.09e-36 plasmotic vacuum (= 10*RHO_SCM)
+    E_vac_ISM = E_vac / 10.0                             # ISM vacuum (one order depleted)
+    plasmotic_ism_ratio = E_vac / E_vac_ISM              # 10 (= SO_5)
+    f_THz = 1e12
+    v_exp = 1e3
+    c = 3e8
+    Gamma_THz = plasmotic_ism_ratio * (f_THz * v_exp) / c   # 3.33e7
+    I = 1e21; A_vort = 3.142e8; dw = 2e-3
+    F_DPM = I * A_vort * dw                              # 6.284e26 N
+    f_DPM = 1e12; V_sys = 4.189e12
+    a_DPM = F_DPM * f_DPM * E_vac / (c * V_sys)          # 3.545e-18
+    a_THz = Gamma_THz * a_DPM                            # 1.182e-10
+    return {
+        'value': {
+            'domain': '2.85 (DPM-THz plasmotic vacuum cascade amplification G_THz)',
+            'source_thread': 'Session 81 RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp (23rd C++, first RSC module)',
+            'system': 'magnetar-proxy plasmotic vacuum resonance cascade',
+            'E_vac': E_vac, 'E_vac_ISM': E_vac_ISM,
+            'plasmotic_ism_ratio': plasmotic_ism_ratio,  # 10
+            'F_DPM': F_DPM,                              # 6.284e26
+            'a_DPM': a_DPM,                              # 3.545e-18 (seed)
+            'a_DPM_formula': 'F_DPM*f_DPM*E_vac/(c*V_sys)',
+            'Gamma_THz': Gamma_THz,                      # 3.33e7
+            'Gamma_THz_formula': '(E_vac/E_vac_ISM)*(f_THz*v_exp)/c = 10*(f_THz*v_exp)/c',
+            'a_THz': a_THz,                             # 1.182e-10
+            'a_THz_formula': 'Gamma_THz*a_DPM',
+            'thz_orders_above_dpm': 7,                   # THz ~7 orders larger than DPM seed
+            'first_cascaded_resonance_chain': True,      # DPM seeds THz seeds Aether/SC
+            'dpm_universal_seed': True,
+        },
+        'formula': 'Gamma_THz=10*(f_THz*v_exp)/c=10*(1e12*1e3)/3e8=3.33e7; a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=3.545e-18; a_THz=Gamma_THz*a_DPM=1.182e-10 (7 orders above DPM seed)',
+        'source': 'PAPER_287',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

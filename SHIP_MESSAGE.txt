@@ -1,15 +1,16 @@
-v0.293.0 BAND 1: PAPER_286 wired - M16 NEBULAR FRIEDMANN REDSHIFT (CLEAN) [300-DISPATCH MILESTONE]
+v0.294.0 BAND 1: PAPER_287 wired - DPM-THz PLASMOTIC VACUUM CASCADE AMPLIFICATION (CLEAN)
 
-PAPER_286 (M16 Nebular Friedmann Redshift kappa_neb, S80, M16_UQFF_MODULE.cpp) wired
-as one dispatch (CLEAN). First UQFF nebular (sub-galactic) module carrying z>0.
+PAPER_287 (DPM-THz Plasmotic Vacuum Cascade Amplification G_THz, S81,
+RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp 23rd C++ module, first RSC) wired as one
+dispatch (CLEAN). First UQFF cascaded resonance chain - DPM seeds THz seeds Aether/SC.
 
-M16 ~5700 ly -> z=0.0015. H(z)=H0*sqrt(Om*(1+z)^3+OL), H0=70 canonical (A_5+SO_5),
-Om=0.3, OL=0.7 -> H(0)=70.000, H(0.0015)=70.047 km/s/Mpc; kappa_neb=(70.047-70.000)/
-70.000=6.71e-4 (distinct parameter class from galactic/extragalactic kappa_recession);
-g_exp(5Myr)=g_base*H_SI*t=1.454e-12*2.270e-18*1.578e14=5.21e-16 m/s^2.
+DPM seed a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=3.545e-18 m/s^2 (F_DPM=I*A_vort*(w1-w2)=
+6.284e26 N, E_vac=rho_UA=7.09e-36 plasmotic vacuum=10*rho_SCm); THz cascade factor
+Gamma_THz=(E_vac/E_vac_ISM)*(f_THz*v_exp)/c=10*(1e12*1e3)/3e8=3.33e7; a_THz=Gamma_THz*
+a_DPM=1.182e-10 m/s^2 (7 orders above seed). DPM = universal seed (UQFF Cascade Principle).
 
-wired_count 299 -> 300 (300-DISPATCH MILESTONE). Index PAPER_286 -> checkmark
-(56/244/1955=2255). Version PAPER_286 = v0.293.0.
+wired_count 300 -> 301. Index PAPER_287 -> checkmark (57/244/1954=2255).
+Version PAPER_287 = v0.294.0.
 
-Gate: 1785/0. Registry 585 rows / 1264 edges / 300 ledgers. Campaign frontier:
-PAPER_286 / 2,255. Next: PAPER_287.
+Gate: 1790/0. Registry 586 rows / 1265 edges / 301 ledgers. Campaign frontier:
+PAPER_287 / 2,255. Next: PAPER_288.

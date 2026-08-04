@@ -1263,3 +1263,4 @@ observable,saturn_uqff_solar_tidal_hubble_expansion_coupling_g_st_he,observable,
 observable,m16_eagle_nebula_dual_mass_coaction_product_phi_dm,primitive,G_OBSERVED,Phi_dm=(1+SFR_rate*t)*(1-E_rad); first multiplicative gain-saturation product
 observable,m16_eagle_nebula_erosion_saturation_half_time_t_half,observable,m16_eagle_nebula_dual_mass_coaction_product_phi_dm,t_half=tau*ln2 governs g_dyn(t) shape of PAPER_284 Phi_dm
 observable,m16_eagle_nebula_nebular_friedmann_redshift_kappa_neb,primitive,H0_KM_PER_S_PER_MPC,kappa_neb via Friedmann H(z); first nebular z>0 module; canonical H0=70
+observable,dpm_thz_plasmotic_vacuum_cascade_amplification_gamma_thz,primitive,RHO_UA,Gamma_THz=10*(f_THz*v_exp)/c; E_vac=rho_UA plasmotic; first cascaded resonance chain

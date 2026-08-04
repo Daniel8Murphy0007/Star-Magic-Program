@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_286** (M16 nebular Friedmann redshift, wired v0.293.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–286 = **300 wired**.
-- **Distinct wired papers: 300** = `wired_count()` = `len(DISPATCH)`. Composed of **286** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **56 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1955 ⬜** not-touched (56 + 244 + 1955 = 2255 ✓). Wired file-rows (56 + 244 = **300**) equal `wired_count()`.
+- **Campaign frontier: PAPER_287** (DPM-THz plasmotic vacuum cascade, wired v0.294.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–287 = **301 wired**.
+- **Distinct wired papers: 301** = `wired_count()` = `len(DISPATCH)`. Composed of **287** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **57 ✓ CLEAN**, **244 ⚠ OPEN_RULING**, **1954 ⬜** not-touched (57 + 244 + 1954 = 2255 ✓). Wired file-rows (57 + 244 = **301**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1546,7 +1546,7 @@
 | ✓ | PAPER_284 | M16 UQFF DualMassCoActionProduct Phi dm SFR Erosion | CLEAN — Phi_dm=(1+SFR_rate*t)*(1-E_rad); mult 3151.9 vs add 4165.6; gap -1013.3 (24.3% less); first multiplicative gain-saturation product; v0.291.0 |
 | ✓ | PAPER_285 | M16 UQFF ErosionSaturationHalfTime t half DeltaGMax | CLEAN — t_half=tau*ln2=2.079 Myr; DeltagMax=E0*g_base=4.36e-13; erosion 63.2% at tau (pillars survive); v0.292.0 |
 | ✓ | PAPER_286 | M16 UQFF NebularFriedmannRedshift kappa neb z0p0015 | CLEAN — first nebular z>0 module; H(0.0015)=70.047 km/s/Mpc; kappa_neb=6.71e-4; canonical H0=70; v0.293.0 |
-| ⬜ | PAPER_287 | ResonanceSC UQFF DPMTHz PlasmoticVacuumCascadeAmplification |
+| ✓ | PAPER_287 | ResonanceSC UQFF DPMTHz PlasmoticVacuumCascadeAmplification | CLEAN — first cascaded resonance chain; Gamma_THz=10*(f_THz*v_exp)/c=3.33e7; a_DPM=3.545e-18 seed -> a_THz=1.182e-10 (7 orders); v0.294.0 |
 | ⬜ | PAPER_288 | ResonanceSC UQFF CosmicAgeStandingWaveBridge 2pi13p8 |
 | ⬜ | PAPER_289 | ResonanceSC UQFF CooperDPM DualFreqSCSynthesis Asc6p994e21 |
 | ⬜ | PAPER_290 | CrabResonance UQFF SNRDPMDilution DynamicVolumeExpansion |
