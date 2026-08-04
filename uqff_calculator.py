@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.332.0"
+VERSION = "0.333.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17519,6 +17519,36 @@ def _paper_324(dataset):
         },
         'formula': 'a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=1.29e-2 m/s2 (dominant, 92% of compressed channel; vacuum diffusion primary at planetary scale); a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=1.62e-24; a_super=A_sc*a_DPM=1.13e-3 (8%, A_sc uses f_super=1.411e16, Q-248)',
         'source': 'PAPER_324',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_325')
+def _paper_325(dataset):
+    c = C_OBSERVED
+    f_fluid = 1.269e-14                                   # fluid term frequency (Hz), anchor
+    rho_ISM = 1.0e-21                                     # ISM ambient mass density (kg/m^3), anchor
+    xi_fluid = f_fluid * rho_ISM                          # 1.269e-35 ISM fluid coupling constant
+    kappa_DPM = (RHO_UA / RHO_SCM) / c                    # 3.333e-8 s/m (E_neb/(E_ISM*c) = 10/c)
+    density_ratio = RHO_UA / RHO_SCM                      # 10 (= 1/F_TRZ)
+    return {
+        'value': {
+            'domain': '3.23 (CR34b rho-ISM fluid density coupling; first mass-density-weighted fluid term)',
+            'source_thread': 'Session 93 CompressedResonanceUQFF34bModule.cpp',
+            'system': 'CR34b mass-density-weighted fluid accelerative term a_fluid_rho',
+            'f_fluid_Hz': f_fluid, 'rho_ISM': rho_ISM,
+            'xi_fluid': xi_fluid,                       # 1.269e-35
+            'xi_fluid_formula': 'f_fluid * rho_ISM',
+            'kappa_DPM': kappa_DPM,                     # 3.333e-8 s/m
+            'kappa_DPM_formula': 'E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c',
+            'density_ratio': density_ratio,             # 10 (= 1/F_TRZ)
+            'a_fluid_rho_over_a_fluid': rho_ISM,        # ratio = rho_ISM (CR34b/CR34)
+            'backward_compatible': 'rho_fluid=1 reduces CR34b to CR34 fluid term (strict generalization)',
+            'interpretation': 'DPM force couples to ISM mass density; CR34 omission of rho = massless-medium approximation',
+        },
+        'formula': 'xi_fluid = f_fluid*rho_ISM = 1.269e-14*1e-21 = 1.269e-35 (ISM fluid coupling constant); kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m; a_fluid_rho/a_fluid = rho_ISM (strict CR34 generalization, reduces at rho=1)',
+        'source': 'PAPER_325',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

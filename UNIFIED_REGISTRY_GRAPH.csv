@@ -1462,3 +1462,8 @@ observable,a_DPM_saturn,observable,a_super_saturn,a_super=A_sc*a_DPM
 observable,a_vac_diff_saturn,paper,PAPER_324,wired
 observable,a_DPM_saturn,paper,PAPER_324,wired
 observable,a_super_saturn,paper,PAPER_324,open_ruling Q-248 tie
+primitive,RHO_UA,observable,kappa_DPM_fluid,E_neb
+primitive,RHO_SCM,observable,kappa_DPM_fluid,E_ISM (ratio=10)
+primitive,C_OBSERVED,observable,kappa_DPM_fluid,c in denominator
+observable,xi_fluid_ism_coupling,paper,PAPER_325,wired
+observable,kappa_DPM_fluid,paper,PAPER_325,wired

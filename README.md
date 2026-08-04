@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.332.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.332.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.333.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.333.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2005%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-338-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2011%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-339-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.332.0 wiring campaign live**
+**UQFF systematic rebuild — v0.333.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.332.0)
+## What is currently shipped (v0.333.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 338 distinct papers** (`wired_count()`=338 = 324 base-numbered + 14 suffixed) — 90 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_324** (CR34b Saturn — the first planetary body in the UQFF dual-channel framework: vacuum diffusion a_vac_diff=E0·f_vac_diff·V_sys·a_DPM/ħ=1.29e-2 m/s² dominates the compressed channel (92%), establishing vacuum diffusion as the primary UQFF driver at planetary scales; a_DPM=1.62e-24 seed, a_super=1.13e-3 (8%). Saturn fills the 54-order atomic-to-nebular V_sys gap; f_DPM=1e12 shared with Crab/NGC6302), wired v0.332.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 339 distinct papers** (`wired_count()`=339 = 325 base-numbered + 14 suffixed) — 91 ✓ CLEAN · 248 ⚠ OPEN_RULING file-rows · 249 rulings/notes queued. Campaign frontier: **PAPER_325** (CR34b ρ-ISM fluid density coupling — the first UQFF mass-density-weighted fluid accelerative term: ISM fluid coupling constant ξ_fluid=f_fluid·ρ_ISM=1.269e-14·1e-21=1.269e-35, with DPM coupling κ_DPM=E_neb/(E_ISM·c)=(ρ_UA/ρ_SCm)/c=10/c=3.333e-8 s/m; the ρ-weighted term strictly generalizes the CR34 fluid term, reducing to it at ρ=1), wired v0.333.0. *(v0.285.0 and v0.321.0 burned/yanked on PyPI; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -705,7 +705,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.329.0** | Band 1: PAPER_321 (CR34 cross-channel reversal V_f=5.43e28, 113-order spread) | 335 |
 | **v0.330.0** | Band 1: PAPER_322 (CR34 intra-HII THz geometric differential Orion/Lagoon=8.59) | 336 |
 | **v0.331.0** | Band 1: PAPER_323 (CR34b vacuum aether frequency mode, 11th UQFF term) | 337 |
-| **v0.332.0** ← current | Band 1: PAPER_324 (CR34b Saturn first planetary dual-channel, a_vac_diff=1.29e-2) | 338 |
+| **v0.332.0** | Band 1: PAPER_324 (CR34b Saturn first planetary dual-channel, a_vac_diff=1.29e-2) | 338 |
+| **v0.333.0** ← current | Band 1: PAPER_325 (CR34b ρ-ISM fluid density coupling ξ_fluid=1.269e-35) | 339 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

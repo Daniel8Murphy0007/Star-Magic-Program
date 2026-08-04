@@ -4736,3 +4736,18 @@ body in the UQFF dual-channel framework. Fills the 54-order atomic-to-nebular V_
 
 CLEAN. Gate: 2005/0. Registry 680 rows / 1464 edges / 370 ledgers.
 Campaign frontier: PAPER_324 / 2,255. Next: PAPER_325.
+
+---
+
+## v0.333.0 — 2026-08-04 — PAPER_325 (CR34b rho-ISM fluid density coupling)
+
+Wired PAPER_325 (Session 93, CompressedResonanceUQFF34bModule.cpp). First UQFF
+mass-density-weighted fluid accelerative term (a_fluid_rho). Heavy mojibake in source; verified
+against the clean formulas.
+
+- xi_fluid = f_fluid*rho_ISM = 1.269e-14*1e-21 = 1.269e-35 (ISM fluid coupling constant).
+- kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m (density ratio = 1/F_TRZ = 10).
+- a_fluid_rho/a_fluid = rho_ISM; rho_fluid=1 recovers CR34 (strict generalization). Verified in Python.
+
+CLEAN. Gate: 2011/0. Registry 682 rows / 1469 edges / 371 ledgers.
+Campaign frontier: PAPER_325 / 2,255. Next: PAPER_326.

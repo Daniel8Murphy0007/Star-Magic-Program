@@ -1,13 +1,11 @@
-v0.332.0 BAND 1: PAPER_324 wired - CR34b SATURN: FIRST PLANETARY BODY IN DUAL-CHANNEL FRAMEWORK (CLEAN)
+v0.333.0 BAND 1: PAPER_325 wired - CR34b RHO-ISM FLUID DENSITY COUPLING (CLEAN)
 
-PAPER_324 (CR34b Saturn, Session 93, CompressedResonanceUQFF34bModule.cpp, system 22).
-First planetary body computed in the UQFF dual-channel (compressed + resonance) framework.
-Fills the 54-order V_sys gap between atomic and nebular scales.
+PAPER_325 (CR34b Rho-ISM Fluid Density Coupling, Session 93,
+CompressedResonanceUQFF34bModule.cpp). First UQFF mass-density-weighted fluid accelerative
+term (a_fluid_rho), extending the CR34 volumetric fluid term by the ISM ambient density.
 
-- F_DPM = I*A_vort*omega_diff = 6.284e31 N; a_DPM = F_DPM*f_DPM*E_vac/(c*V_sys) = 1.62e-24 m/s2 (seed)
-- a_vac_diff = E0*f_vac_diff*V_sys*a_DPM/hbar = 1.29e-2 m/s2 (dominant, 92% of compressed channel;
-  vacuum diffusion primary at planetary scale)
-- a_super = A_sc*a_DPM = 1.13e-3 (8%); A_sc uses f_super=1.411e16 (Q-248 family; headline independent)
-- f_DPM=1e12 (THz boundary) shared with Crab, NGC6302
+- xi_fluid = f_fluid*rho_ISM = 1.269e-14*1e-21 = 1.269e-35 (ISM fluid coupling constant)
+- kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m (density ratio = 1/F_TRZ = 10)
+- a_fluid_rho/a_fluid = rho_ISM; rho_fluid=1 recovers CR34 fluid term (strict generalization)
 
-CLEAN. wired_count 338, gate 2005/0. Campaign frontier PAPER_324 of 2255.
+CLEAN. wired_count 339, gate 2011/0. Campaign frontier PAPER_325 of 2255.

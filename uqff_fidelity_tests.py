@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.332.0", "uqff_calculator.VERSION = 0.332.0 (PAPER_324 = v0.332.0)")
+assert_that(C.VERSION == "0.333.0", "uqff_calculator.VERSION = 0.333.0 (PAPER_325 = v0.333.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4402,6 +4402,19 @@ assert_that(abs(_r324['a_super'] - 1.13e-3) / 1.13e-3 < 0.01 and 'Q-248' in _r32
 assert_that('f_DPM=1e12' in _r324['THz_regime_shared'],
             "PAPER_324: Saturn f_DPM=1e12 shared with Crab/NGC6302 (THz-regime DPM, first planetary body)")
 assert_that(C.wired_count() >= 338, "wired_count >= 338 (PAPER_324 wired)")
+
+_r325 = C.calc('PAPER_325')['value']
+assert_that(abs(_r325['xi_fluid'] - 1.269e-35) / 1.269e-35 < 0.005 and _r325['xi_fluid_formula'] == 'f_fluid * rho_ISM',
+            "PAPER_325: xi_fluid = f_fluid*rho_ISM = 1.269e-35 (ISM fluid coupling constant)")
+assert_that(abs(_r325['kappa_DPM'] - 3.333e-8) / 3.333e-8 < 0.005 and 'rho_UA/rho_SCm' in _r325['kappa_DPM_formula'],
+            "PAPER_325: kappa_DPM = E_neb/(E_ISM*c) = (rho_UA/rho_SCm)/c = 10/c = 3.333e-8 s/m")
+assert_that(abs(_r325['density_ratio'] - 10.0) < 1e-6,
+            "PAPER_325: E_neb/E_ISM = rho_UA/rho_SCm = 10 (= 1/F_TRZ, from registry)")
+assert_that(abs(_r325['a_fluid_rho_over_a_fluid'] - 1.0e-21) < 1e-27,
+            "PAPER_325: a_fluid_rho/a_fluid = rho_ISM (mass-density weighting ratio vs CR34)")
+assert_that('reduces CR34b to CR34' in _r325['backward_compatible'],
+            "PAPER_325: rho_fluid=1 reduces CR34b to CR34 fluid term (strict generalization, backward compatible)")
+assert_that(C.wired_count() >= 339, "wired_count >= 339 (PAPER_325 wired)")
 
 
 # =============================================================================

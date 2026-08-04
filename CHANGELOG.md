@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.333.0] — 2026-08-04 — BAND 1: PAPER_325 — CR34b ρ-ISM FLUID DENSITY COUPLING (CLEAN)
+
+### Added
+- **PAPER_325 dispatch** — CR34b ρ-ISM Fluid Density Coupling (Session 93, CompressedResonanceUQFF34bModule.cpp). The **first UQFF mass-density-weighted fluid accelerative term** (a_fluid_rho), extending the CR34 volumetric fluid term by the ISM ambient density ρ_ISM.
+  - ISM fluid coupling constant ξ_fluid = f_fluid·ρ_ISM = 1.269e-14·1e-21 = **1.269e-35** — governs the mass-coupling of DPM force density to the interstellar medium.
+  - DPM coupling κ_DPM = E_neb/(E_ISM·c) = (ρ_UA/ρ_SCm)/c = **10/c = 3.333e-8 s/m** (density ratio = 1/F_TRZ = 10, composed from registry).
+  - Ratio a_fluid_rho/a_fluid = ρ_ISM. Setting ρ_fluid = 1 recovers the CR34 fluid term exactly — CR34b is a **strict generalization** (CR34 = the massless-medium unit-density approximation).
+- 2 registry observables, 5 graph edges, 1 corpus citation (PAPER_324).
+- 6 gate assertions (ξ_fluid, κ_DPM, density ratio, mass-weighting ratio, backward compatibility, wired_count ≥ 339). Gate 2005 → **2011/0**.
+
+### Wiring status
+- `wired_count()` = **339** (CLEAN). Campaign frontier PAPER_325 of 2255. Index: 91 ✓ / 248 ⚠ / 1916 ⬜ = 2255.
+
+---
+
 ## [0.332.0] — 2026-08-04 — BAND 1: PAPER_324 — CR34b SATURN: FIRST PLANETARY BODY IN DUAL-CHANNEL FRAMEWORK (CLEAN)
 
 ### Added

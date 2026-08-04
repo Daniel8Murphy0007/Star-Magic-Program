@@ -678,3 +678,5 @@ F_AETHER_period_cr34b,PAPER_323 aether frequency period,derived_time,1/F_AETHER,
 a_vac_diff_saturn,PAPER_324 Saturn vacuum diffusion,derived_acceleration,E0*f_vac_diff*V_sys*a_DPM/hbar,dominant 92% compressed (first planetary),1.29e-2 m/s2,PAPER_324,0.0,planetary/DPM,resonance,PAPER_324,1,1,0,0,PAPER_294;PAPER_323,WIRED
 a_DPM_saturn,PAPER_324 Saturn DPM seed,derived_acceleration,F_DPM*f_DPM*E_vac/(c*V_sys),seed term (F_DPM=6.284e31 N),1.62e-24 m/s2,PAPER_324,0.0,planetary/DPM,resonance,PAPER_324,1,1,0,0,PAPER_314,WIRED
 a_super_saturn,PAPER_324 Saturn superconductive term,derived_acceleration,A_sc*a_DPM,"8% of compressed (A_sc uses f_super=1.411e16, Q-248)",1.13e-3 m/s2,PAPER_324,0.0,planetary/DPM,resonance,PAPER_324,1,1,0,0,PAPER_316,WIRED
+xi_fluid_ism_coupling,PAPER_325 ISM fluid coupling constant,derived_coefficient,f_fluid*rho_ISM,mass-density-weighted fluid term,1.269e-35,PAPER_325,0.0,vacuum/fluid,resonance,PAPER_325,1,1,0,0,PAPER_324,WIRED
+kappa_DPM_fluid,PAPER_325 DPM fluid coupling,derived_coefficient,(rho_UA/rho_SCm)/c,10/c ISM mass-coupling,3.333e-8 s/m,PAPER_325,0.0,vacuum/fluid,resonance,PAPER_325,1,1,0,0,PAPER_325,WIRED

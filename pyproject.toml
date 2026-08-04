@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.332.0"
-description = "UQFF Star-Magic-Program v0.332.0: PAPER_324 wired (CLEAN) - CR34b Saturn, the first planetary body in the UQFF dual-channel framework; vacuum diffusion a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=1.29e-2 m/s2 dominates the compressed channel (92%), establishing vacuum diffusion as the primary UQFF driver at planetary scales; a_DPM=1.62e-24 seed, a_super=1.13e-3 (8%). Saturn fills the 54-order atomic-to-nebular V_sys gap. wired_count 338, gate 2005/0. Frontier PAPER_324 of 2255."
+version = "0.333.0"
+description = "UQFF Star-Magic-Program v0.333.0: PAPER_325 wired (CLEAN) - CR34b rho-ISM fluid density coupling, the first UQFF mass-density-weighted fluid accelerative term; ISM fluid coupling constant xi_fluid=f_fluid*rho_ISM=1.269e-14*1e-21=1.269e-35, with DPM coupling kappa_DPM=E_neb/(E_ISM*c)=(rho_UA/rho_SCm)/c=10/c=3.333e-8 s/m. The rho-weighted term strictly generalizes the CR34 fluid term (reduces at rho=1). wired_count 339, gate 2011/0. Frontier PAPER_325 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
