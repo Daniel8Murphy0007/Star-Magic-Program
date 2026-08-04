@@ -4637,3 +4637,18 @@ compact-HII Trapezium OB-cluster UV radiation parameter; 2nd in the OB-cluster r
 
 CLEAN. Gate: 1969/0. Registry 665 rows / 1431 edges / 354 ledgers.
 Campaign frontier: PAPER_318 / 2,255. Next: PAPER_319.
+
+---
+
+## v0.327.0 — 2026-08-04 — PAPER_319 (Orion M42 compact-HII SFR binding phase transition)
+
+Wired PAPER_319 (Session 91, ORION_UQFF_MODULE.cpp; third/final Orion term). First UQFF
+compact-HII SFR-runaway gravitational-binding phase transition.
+
+- sSFR = SFR/M = 1/2000 = 5e-4 yr^-1 (50x Lagoon PAPER_305, ultra-compact HII class).
+- t_cross = (a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr) = 67,730 yr (unbound->bound).
+- m_factor(t_age)=151 -> g_SFR=2.878e-9, binding_ratio=g_SFR/a_wind=2.654 (bound); 1 Myr -> 4.069.
+- t_consume = M/SFR = 2000 yr (shortest in UQFF series). All verified in Python.
+
+CLEAN. Gate: 1975/0. Registry 668 rows / 1437 edges / 356 ledgers. Orion module (317/318/319) complete.
+Campaign frontier: PAPER_319 / 2,255. Next: PAPER_320.

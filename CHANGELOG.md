@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.327.0] — 2026-08-04 — BAND 1: PAPER_319 — ORION M42 COMPACT-HII SFR BINDING PHASE TRANSITION (CLEAN)
+
+### Added
+- **PAPER_319 dispatch** — Compact HII SFR Gravitational Binding Phase Transition (Session 91, ORION_UQFF_MODULE.cpp; third/final Orion term). The **first UQFF compact-HII SFR-runaway gravitational-binding phase transition**.
+  - Specific SFR sSFR = SFR/M = 1/2000 = **5e-4 yr⁻¹** — **50× the Lagoon Nebula** (PAPER_305), the "ultra-compact HII" class.
+  - Orion is born **wind-dominated (unbound)**, but continuous SFR mass growth amplifies gravity (g_SFR = g_base·m_factor, m_factor = 1 + sSFR·t) until it crosses the growing wind ram pressure at **t_cross = 67,730 yr** — the unbound→bound transition.
+  - By t_age = 300 kyr: m_factor = **151**, g_SFR = 2.878e-9, binding_ratio = g_SFR/a_wind = **2.654** (gravitationally bound); by 1 Myr binding_ratio = **4.069**.
+  - Gas depletion t_consume = M/SFR = **2000 yr** — the shortest in the UQFF series (sustained only by continuous OMC-1 replenishment).
+- 3 registry observables, 6 graph edges, 2 corpus citations (PAPER_305/317).
+- 6 gate assertions (sSFR/50×, t_cross, m_factor/binding_ratio, binding 1 Myr, t_consume, wired_count ≥ 333). Gate 1969 → **1975/0**.
+
+### Wiring status
+- `wired_count()` = **333** (CLEAN). Campaign frontier PAPER_319 of 2255. Index: 85 ✓ / 248 ⚠ / 1922 ⬜ = 2255. Orion module (317/318/319) complete.
+
+---
+
 ## [0.326.0] — 2026-08-04 — BAND 1: PAPER_318 — ORION M42 TRAPEZIUM OB UV RADIATION DOMINANCE (CLEAN)
 
 ### Added

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.326.0"
+VERSION = "0.327.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17295,6 +17295,46 @@ def _paper_318(dataset):
         },
         'formula': 'a_rad=L_trap/(4*pi*r^2*c*rho_fluid)=1.461e8 m/s2; eta_rad=a_rad/g_base=7.664e18 (18 orders, champagne-flow condition eta>>1); a_rad/a_wind=2.7e17 (radiation dominates wind); Orion eta_rad ~ 5x Lagoon (L/M scaling)',
         'source': 'PAPER_318',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_319')
+def _paper_319(dataset):
+    M_sun_count = 2000.0                                  # initial mass in M_sun, anchor
+    SFR_yr = 1.0                                          # star formation rate M_sun/yr, anchor
+    g_base = 1.907e-11                                    # base gravity (PAPER_317)
+    a_wind0 = 5.424e-10                                   # initial wind accel (PAPER_317)
+    t_age_yr = 3.0e5                                      # nebula age (yr), anchor
+    sSFR = SFR_yr / M_sun_count                           # 5e-4 yr^-1 specific SFR (50x Lagoon)
+    t_cross = (a_wind0 - g_base) / (g_base * sSFR - a_wind0 / t_age_yr)  # 67,730 yr unbound->bound
+    m_factor_age = 1.0 + sSFR * t_age_yr                  # 151 SFR mass factor at t_age
+    g_SFR_age = g_base * m_factor_age                     # 2.878e-9 SFR-amplified gravity
+    a_wind_age = a_wind0 * (1.0 + t_age_yr / t_age_yr)    # 1.085e-9 wind at t_age
+    binding_ratio_age = g_SFR_age / a_wind_age            # 2.654 gravitationally bound
+    m_factor_1Myr = 1.0 + sSFR * 1.0e6                    # 501
+    binding_ratio_1Myr = (g_base * m_factor_1Myr) / (a_wind0 * (1.0 + 1.0e6 / t_age_yr))  # 4.069
+    t_consume_yr = M_sun_count / SFR_yr                   # 2000 yr gas depletion
+    return {
+        'value': {
+            'domain': '3.17 (Orion M42; first UQFF compact-HII SFR gravitational-binding phase transition)',
+            'source_thread': 'Session 91 ORION_UQFF_MODULE.cpp (33rd C++ module)',
+            'system': 'Orion Nebula M42, compact HII with active star formation',
+            'M_sun_count': M_sun_count, 'SFR_yr': SFR_yr, 't_age_yr': t_age_yr,
+            'sSFR': sSFR,                               # 5e-4
+            'sSFR_vs_Lagoon': sSFR / 1.0e-5,            # 50x (PAPER_305)
+            't_cross_yr': t_cross,                      # 67,730 (unbound->bound transition)
+            't_cross_formula': '(a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr)',
+            'm_factor_age': m_factor_age,               # 151
+            'g_SFR_age': g_SFR_age,                     # 2.878e-9
+            'binding_ratio_age': binding_ratio_age,     # 2.654 (bound)
+            'bound_at_t_age': binding_ratio_age > 1.0,  # gravitationally bound by 300 kyr
+            'binding_ratio_1Myr': binding_ratio_1Myr,   # 4.069 (increasingly bound)
+            't_consume_yr': t_consume_yr,               # 2000 (shortest in UQFF series)
+        },
+        'formula': 'sSFR=SFR/M=1/2000=5e-4 yr^-1 (50x Lagoon); t_cross=(a_wind0-g_base)/(g_base*sSFR-a_wind0/t_age_yr)=67,730 yr (unbound->bound); m_factor(t_age)=1+sSFR*t=151 -> binding_ratio=g_SFR/a_wind=2.654 (bound); t_consume=M/SFR=2000 yr',
+        'source': 'PAPER_319',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

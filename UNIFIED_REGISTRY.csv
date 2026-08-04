@@ -663,3 +663,6 @@ t_erosion_orion,PAPER_317 HII erosion timescale,derived_time,r/v_wind,467 kyr > 
 P_rad_orion_trapezium,PAPER_318 Trapezium OB UV radiation pressure,derived_pressure,L_trap/(4*pi*r^2*c),OB cluster (4+ O-stars),1.461e-12 Pa,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_306;PAPER_317,WIRED
 a_rad_orion,PAPER_318 UV radiation acceleration,derived_acceleration,P_rad/rho_fluid,champagne-flow driver,1.461e8 m/s2,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_317,WIRED
 eta_rad_orion,PAPER_318 UV-gravity dominance,derived_ratio,a_rad/g_base,"champagne-flow eta>>1, 18 orders",7.664e18,PAPER_318,0.0,astro/HII-region,resonance,PAPER_318,1,1,0,0,PAPER_306,WIRED
+sSFR_orion,PAPER_319 Orion specific SFR,derived_rate,SFR/M,50x Lagoon (ultra-compact HII),5e-4 yr^-1,PAPER_319,0.0,astro/star-formation,resonance,PAPER_319,1,1,0,0,PAPER_305,WIRED
+t_cross_binding_orion,PAPER_319 SFR binding crossover time,derived_time,(a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr),unbound->bound phase transition,67730 yr,PAPER_319,0.0,astro/star-formation,resonance,PAPER_319,1,1,0,0,PAPER_317,WIRED
+binding_ratio_orion,PAPER_319 SFR gravitational binding ratio,derived_ratio,g_SFR/a_wind,2.654 bound at t_age,2.654,PAPER_319,0.0,astro/star-formation,resonance,PAPER_319,1,1,0,0,PAPER_317,WIRED

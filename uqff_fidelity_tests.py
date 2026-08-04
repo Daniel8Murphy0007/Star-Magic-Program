@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.326.0", "uqff_calculator.VERSION = 0.326.0 (PAPER_318 = v0.326.0)")
+assert_that(C.VERSION == "0.327.0", "uqff_calculator.VERSION = 0.327.0 (PAPER_319 = v0.327.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4324,6 +4324,19 @@ assert_that(abs(_r318['a_rad_over_a_wind'] - 2.7e17) / 2.7e17 < 0.02,
 assert_that(abs(_r318['A_trap'] - 1.748e35) / 1.748e35 < 0.005,
             "PAPER_318: A_trap = 4*pi*r^2 = 1.748e35 m^2 (surface area at r)")
 assert_that(C.wired_count() >= 332, "wired_count >= 332 (PAPER_318 wired)")
+
+_r319 = C.calc('PAPER_319')['value']
+assert_that(abs(_r319['sSFR'] - 5e-4) < 1e-6 and abs(_r319['sSFR_vs_Lagoon'] - 50.0) < 0.5,
+            "PAPER_319: sSFR = SFR/M = 1/2000 = 5e-4 yr^-1 (50x Lagoon Nebula PAPER_305)")
+assert_that(abs(_r319['t_cross_yr'] - 67730.0) / 67730.0 < 0.005 and _r319['t_cross_formula'] == '(a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr)',
+            "PAPER_319: t_cross = 67,730 yr (SFR-driven unbound->bound gravitational binding transition)")
+assert_that(abs(_r319['m_factor_age'] - 151.0) < 0.5 and abs(_r319['binding_ratio_age'] - 2.654) < 0.005 and _r319['bound_at_t_age'],
+            "PAPER_319: m_factor(t_age) = 151; binding_ratio = g_SFR/a_wind = 2.654 (gravitationally bound by 300 kyr)")
+assert_that(abs(_r319['binding_ratio_1Myr'] - 4.069) < 0.01,
+            "PAPER_319: binding_ratio(1 Myr) = 4.069 (increasingly bound)")
+assert_that(abs(_r319['t_consume_yr'] - 2000.0) < 1.0,
+            "PAPER_319: t_consume = M/SFR = 2000 yr (shortest gas depletion in UQFF series)")
+assert_that(C.wired_count() >= 333, "wired_count >= 333 (PAPER_319 wired)")
 
 
 # =============================================================================

@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_318** (Orion M42 Trapezium OB UV radiation dominance η_rad=7.664e18, champagne-flow condition, wired v0.326.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–318 = **332 wired**.
-- **Distinct wired papers: 332** = `wired_count()` = `len(DISPATCH)`. Composed of **318** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **84 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1923 ⬜** not-touched (84 + 248 + 1923 = 2255 ✓). Wired file-rows (84 + 248 = **332**) equal `wired_count()`.
+- **Campaign frontier: PAPER_319** (Orion M42 compact-HII SFR binding phase transition t_cross=67.7 kyr, sSFR=50× Lagoon, wired v0.327.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–319 = **333 wired**.
+- **Distinct wired papers: 333** = `wired_count()` = `len(DISPATCH)`. Composed of **319** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **85 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1922 ⬜** not-touched (85 + 248 + 1922 = 2255 ✓). Wired file-rows (85 + 248 = **333**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1578,7 +1578,7 @@
 | ⚠ | PAPER_316 | NGC6302Resonance CooperDPM Asc 6p994e21 asuper 1p747e9 P295confirm |
 | ✓ | PAPER_317 | OrionM42 TrapeziumWindRamPressure etaWind 28p47 tErosion 467kyr |
 | ✓ | PAPER_318 | OrionM42 TrapeziumOBUV etaRad 7p664e18 champagneFlow |
-| ⬜ | PAPER_319 | OrionM42 CompactHII SFRBindingCrossover tCross 67p7kyr sSFR 50xLagoon |
+| ✓ | PAPER_319 | OrionM42 CompactHII SFRBindingCrossover tCross 67p7kyr sSFR 50xLagoon |
 | ⬜ | PAPER_320 | CR34 DPMForceDensitySpectralAtlas xiSpan 1e35 7systems |
 | ⬜ | PAPER_321 | CR34 CrossChannelDominanceCrossover Vf 5p43e28 CompressedResonanceReversal |
 | ⬜ | PAPER_322 | CR34 HiIRegionTHzGeometricDifferential ratio 8p59 OrionLagoon |

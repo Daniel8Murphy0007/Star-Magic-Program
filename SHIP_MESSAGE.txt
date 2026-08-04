@@ -1,12 +1,12 @@
-v0.326.0 BAND 1: PAPER_318 wired - ORION M42 TRAPEZIUM OB UV RADIATION DOMINANCE (CLEAN)
+v0.327.0 BAND 1: PAPER_319 wired - ORION M42 COMPACT-HII SFR BINDING PHASE TRANSITION (CLEAN)
 
-PAPER_318 (Trapezium OB Cluster UV Radiation Dominance / Champagne Flow, Session 91,
-ORION_UQFF_MODULE.cpp; second Orion term). First UQFF sub-pc compact-HII Trapezium OB-cluster
-UV radiation parameter; second in the UQFF OB-cluster radiation class (after Lagoon, PAPER_306).
+PAPER_319 (Compact HII SFR Gravitational Binding Phase Transition, Session 91,
+ORION_UQFF_MODULE.cpp; third/final Orion term). First UQFF compact-HII SFR-runaway
+gravitational-binding phase transition.
 
-- L_trap = 2e5 L_sun = 7.656e31 W; A_trap = 4*pi*r^2 = 1.748e35 m^2
-- P_rad = L_trap/(4*pi*r^2*c) = 1.461e-12 Pa; a_rad = P_rad/rho_fluid = 1.461e8 m/s2
-- eta_rad = a_rad/g_base = 7.664e18 (18 orders; champagne-flow condition eta>>1 -> free escape)
-- a_rad/a_wind = 2.7e17 (radiation dominates wind PAPER_317); Orion eta_rad ~ 5x Lagoon (L/M scaling)
+- sSFR = SFR/M = 1/2000 = 5e-4 yr^-1 (50x Lagoon PAPER_305, "ultra-compact HII" class)
+- t_cross = (a_wind0-g_base)/(g_base*sSFR - a_wind0/t_age_yr) = 67,730 yr (unbound -> bound transition)
+- m_factor(t_age)=1+sSFR*t=151 -> binding_ratio = g_SFR/a_wind = 2.654 (bound by 300 kyr); 1 Myr -> 4.069
+- t_consume = M/SFR = 2000 yr (shortest gas depletion in the UQFF series)
 
-CLEAN. wired_count 332, gate 1969/0. Campaign frontier PAPER_318 of 2255.
+CLEAN. wired_count 333, gate 1975/0. Campaign frontier PAPER_319 of 2255.

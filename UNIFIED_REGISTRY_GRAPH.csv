@@ -1429,3 +1429,9 @@ observable,a_rad_orion,observable,eta_rad_orion,a_rad/g_base
 observable,P_rad_orion_trapezium,paper,PAPER_318,wired
 observable,a_rad_orion,paper,PAPER_318,wired
 observable,eta_rad_orion,paper,PAPER_318,wired
+observable,sSFR_orion,observable,t_cross_binding_orion,sSFR drives crossover
+observable,t_cross_binding_orion,observable,binding_ratio_orion,post-crossover bound
+observable,sSFR_orion,paper,PAPER_319,wired
+observable,t_cross_binding_orion,paper,PAPER_319,wired
+observable,binding_ratio_orion,paper,PAPER_319,wired
+paper,PAPER_319,paper,PAPER_305,sSFR 50x Lagoon comparison
