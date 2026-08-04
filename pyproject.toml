@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.301.0"
-description = "UQFF Star-Magic-Program v0.301.0: PAPER_294 wired (CLEAN) - Vacuum Differential Harmonic hbar-denominator quantum-volume diffusion; a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2 (FIRST UQFF term with hbar in the denominator); E0=(1-F_TRZ)*E_vac (10% deficit); V_sys/hbar=3.973e52 lever arm; vacuum beat T_vac=1/0.143=6.993 s (~7s ELF, Schumann-analog). wired_count 308, gate 1825/0. Campaign frontier PAPER_294 of 2255. (v0.285.0 burned; v0.286.0-0.300.0 shipped.)"
+version = "0.302.0"
+description = "UQFF Star-Magic-Program v0.302.0: PAPER_295 wired (OPEN_RULING Q-246) - Compressed Cooper Super-Seeding f_DPM^2 quadratic class scaling law; A_sc=hbar*f_super*f_DPM/(E_vac*c)=6.994e18, a_super=A_sc*a_DPM=2.479e4 m/s2 (compressed pre-oscillatory channel, systems 18-24); a_super proportional to f_DPM^2 (x100 per f_DPM decade); magnetar illustration row flagged quartic-vs-quadratic (Q-246). wired_count 309, gate 1831/0. Campaign frontier PAPER_295 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

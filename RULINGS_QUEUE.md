@@ -5700,3 +5700,11 @@ RESOLVED section with the ruling recorded.
 - Secondary note: paper B_crit = 1e11 T (magnetar) differs from the registry Schwinger B_CRIT = 4.4e13. Wired 1e11 as the paper's magnetar scale.
 - **Ruling needed:** is E_vac in the A_sc formula RHO_UA (plasmotic, 6.994e20, consistent with PAPER_287) or RHO_SCM (headline, 6.994e21)? And confirm B_crit=1e11 magnetar vs Schwinger 4.4e13.
 - Wired v0.296.0, status OPEN_RULING.
+
+## Q-246 — PAPER_295 magnetar illustration row: quartic vs quadratic (magnetar factor-10 family)
+- **Paper:** PAPER_295 (f_DPM2 Quadratic Class Scaling Law), Session 83.
+- **Clean primary result (WIRED):** compressed channel, systems 18-24, f_DPM=1e11 → A_sc=6.994e18, a_super=2.479e4 m/s2. Reproduced exactly; f_DPM^2 quadratic law confirmed (x100 per f_DPM decade).
+- **Issue:** the abstract's magnetar illustration (f_DPM=1e12) states A_sc=6.994e21 and a_super=2.479e8, calling the a_super jump ("4 orders" from 2.479e4) "confirming quadratic." That is quartic, not quadratic. Linear/quadratic scaling predicts A_sc=6.994e19 and a_super=2.479e6 (2 orders). The stated magnetar A_sc is 100x high and a_super is 100x high.
+- **Relation:** same magnetar factor-10 discrepancy family as Q-245 (PAPER_289 A_sc E_vac=ρ_UA vs ρ_SCm). Suggests the magnetar branch across PAPER_289/295 carries a persistent 10x–100x denominator/scaling confusion in the illustrative rows only; the primary compressed result is clean.
+- **Question for Daniel:** should the magnetar illustration numbers be corrected to the quadratic prediction (A_sc=6.994e19, a_super=2.479e6), or does the magnetar branch use a different E_vac (ρ_SCm) that changes A_sc — and if so is the "4 orders" claim a typo for "2 orders"? Wired dispatch uses the clean quadratic law regardless.
+- **Status:** OPEN_RULING (dispatch WIRED on primary result; magnetar row flagged).

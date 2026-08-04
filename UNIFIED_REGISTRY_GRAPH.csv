@@ -1271,3 +1271,11 @@ observable,crab_filament_spectral_triad_9decade_dpm_seeding_vknot,observable,cra
 observable,crab_pulsar_60s_resonance_window_spin_vacuum_dpm_lock,observable,cosmic_age_standing_traveling_wave_bridge_ts_ratio,pulsar modulation augments PAPER_288 oscillatory term; DPM lock 29 octaves
 observable,compressed_resonance_dual_channel_cosum_R_CR,observable,dpm_thz_plasmotic_vacuum_cascade_amplification_gamma_thz,CR co-sum merges compressed (PAPER_287) + resonance channels; R_CR dominance ratio
 observable,vacuum_differential_harmonic_hbar_denominator_a_vac_diff,observable,compressed_resonance_dual_channel_cosum_R_CR,a_vac_diff is CR24 compressed term (PAPER_293); first hbar-denominator
+primitive,HBAR_UQFF_S629,observable,A_sc_cooper_amplitude,hbar numerator
+primitive,RHO_UA,observable,A_sc_cooper_amplitude,E_vac denominator
+primitive,C_OBSERVED,observable,A_sc_cooper_amplitude,c denominator
+observable,A_sc_cooper_amplitude,observable,a_super_compressed,a_super=A_sc*a_DPM
+observable,a_super_compressed,observable,f_DPM2_scaling_law,quadratic f_DPM^2
+observable,a_super_compressed,paper,PAPER_295,wired
+observable,A_sc_cooper_amplitude,paper,PAPER_295,wired
+observable,f_DPM2_scaling_law,paper,PAPER_295,wired

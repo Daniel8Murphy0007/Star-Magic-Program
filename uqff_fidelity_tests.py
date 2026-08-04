@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.301.0", "uqff_calculator.VERSION = 0.301.0 (PAPER_294 = v0.301.0)")
+assert_that(C.VERSION == "0.302.0", "uqff_calculator.VERSION = 0.302.0 (PAPER_295 = v0.302.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4010,6 +4010,19 @@ assert_that(abs(_r294['V_sys_over_hbar'] - 3.973e52) < 1e50 and abs(_r294['T_vac
 assert_that(_r294['ELF_band_Schumann_analog'],
             "PAPER_294: ~7s vacuum beat period in ELF band (Schumann-resonance analog)")
 assert_that(C.wired_count() >= 308, "wired_count >= 308 (PAPER_294 wired)")
+
+_r295 = C.calc('PAPER_295')['value']
+assert_that(abs(_r295['A_sc'] - 6.994e18) < 5e15 and _r295['A_sc_formula'] == 'hbar*f_super*f_DPM/(E_vac*c)',
+            "PAPER_295: A_sc = hbar*f_super*f_DPM/(E_vac*c) = 6.994e18 (Cooper amplitude, linear in f_DPM)")
+assert_that(abs(_r295['a_super'] - 2.479e4) < 50.0,
+            "PAPER_295: a_super = A_sc*a_DPM = 2.479e4 m/s2 (compressed channel, systems 18-24)")
+assert_that(abs(_r295['a_super_1e12_quadratic'] / _r295['a_super_1e11'] - 100.0) < 1e-6,
+            "PAPER_295: f_DPM^2 quadratic law -> +1 order f_DPM gives +2 orders a_super (x100 per decade)")
+assert_that('compressed' in _r295['channel'] and 'resonance' in _r295['contrast_PAPER_289'],
+            "PAPER_295: compressed pre-oscillatory channel, distinct from PAPER_289 resonance placement")
+assert_that('Q-246' in _r295['magnetar_row_discrepancy'],
+            "PAPER_295: magnetar illustration row (quartic vs quadratic, 100x) flagged Q-246 OPEN_RULING")
+assert_that(C.wired_count() >= 309, "wired_count >= 309 (PAPER_295 wired)")
 
 
 # =============================================================================

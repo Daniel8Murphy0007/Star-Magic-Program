@@ -1,17 +1,19 @@
-v0.301.0 BAND 1: PAPER_294 wired - VACUUM DIFFERENTIAL HARMONIC (hbar-DENOMINATOR) (CLEAN)
+v0.302.0 BAND 1: PAPER_295 wired - COMPRESSED COOPER SUPER-SEEDING (f_DPM^2 QUADRATIC CLASS SCALING LAW) (OPEN_RULING Q-246)
 
-PAPER_294 (UQFF Vacuum Differential Harmonic hbar-denominator quantum-volume
-diffusion, S83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp) wired as one dispatch (CLEAN).
-Supplies a_vac_diff term of PAPER_293 CR co-sum. FIRST UQFF term with hbar in the
-DENOMINATOR (all prior hbar terms e.g. PAPER_289 A_sc were numerator).
+PAPER_295 (UQFF Compressed Cooper Super-Seeding, Session 83,
+COMPRESSED_RESONANCE_UQFF24_MODULE.cpp). Places the Cooper super-seeding a_super
+term in the CR24 compressed channel (pre-oscillatory DPM-seeded Cooper injector),
+architecturally distinct from PAPER_289's resonance-channel placement of the same
+A_sc*a_DPM form.
 
-a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2; E0=(1-F_TRZ)*E_vac=6.381e-36 J/m3
-(10% plasmotic deficit, E0/E_vac=0.9); f_vac_diff=0.143 Hz, V_sys=4.189e18, a_DPM=
-3.543e-15; quantum-volume coupling V_sys/hbar=3.973e52 lever arm; vacuum beat
-T_vac=1/0.143=6.993 s ~7s (ELF band, Schumann-resonance analog).
+- A_sc = hbar*f_super*f_DPM/(E_vac*c) = 6.994e18 (linear in f_DPM)
+- a_super = A_sc*a_DPM = 2.479e4 m/s2 (compressed, systems 18-24, f_DPM=1e11)
+- f_DPM^2 quadratic class scaling law (first identified): a_super proportional to
+  f_DPM^2, x100 per f_DPM decade. Verified in Python.
+- All constants registry-composed (E_vac=RHO_UA, hbar=HBAR_UQFF_S629, c=C_OBSERVED).
 
-wired_count 307 -> 308. Index PAPER_294 -> checkmark (63/245/1947=2255).
-Version PAPER_294 = v0.301.0.
+OPEN_RULING Q-246: magnetar illustration row shows quartic (4-order) behavior while
+labeled quadratic; same magnetar factor-10 family as Q-245. Dispatch WIRED on the
+clean compressed result; magnetar row flagged.
 
-Gate: 1825/0. Registry 593 rows / 1272 edges / 308 ledgers. Campaign frontier:
-PAPER_294 / 2,255. Next: PAPER_295.
+wired_count 309, gate 1831/0. Campaign frontier PAPER_295 of 2255.

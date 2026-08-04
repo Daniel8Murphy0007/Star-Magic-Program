@@ -4239,3 +4239,26 @@ Frontier PAPER_293 -> PAPER_294. Version PAPER_294 = v0.301.0.
 
 Gate: 1825/0. Registry 593 rows / 1272 edges / 308 ledgers. Campaign frontier:
 PAPER_294 / 2,255. Next: PAPER_295.
+
+---
+
+## v0.302.0 — 2026-08-04 — PAPER_295 (Compressed Cooper Super-Seeding, f_DPM² quadratic class scaling law)
+
+Wired PAPER_295 (Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp). Places the
+Cooper super-seeding a_super term in the CR24 compressed channel (pre-oscillatory
+DPM-seeded Cooper injector) — distinct from PAPER_289's resonance-channel placement
+of the same A_sc·a_DPM form.
+
+- A_sc = ħ·f_super·f_DPM/(E_vac·c) = 6.994e18 (linear in f_DPM); reproduced exactly.
+- a_super = A_sc·a_DPM = 2.479e4 m/s² (compressed, systems 18-24, f_DPM=1e11).
+- f_DPM² quadratic class scaling law: A_sc linear × a_DPM linear ⇒ a_super ∝ f_DPM²
+  (×100 per f_DPM decade), first identified in PAPER_295. Verified in Python.
+- E_vac = ρ_UA, ħ = HBAR_UQFF_S629, c = C_OBSERVED — all registry-composed.
+
+OPEN_RULING Q-246: the magnetar illustration row (f_DPM=1e12) states A_sc=6.994e21,
+a_super=2.479e8 ("4 orders" = quartic) while calling it quadratic; the quadratic law
+predicts A_sc=6.994e19, a_super=2.479e6. Same magnetar factor-10 family as Q-245.
+Dispatch WIRED on the clean compressed result; magnetar row flagged.
+
+Gate: 1831/0. Registry 596 rows / 1280 edges / 311 ledgers. Campaign frontier:
+PAPER_295 / 2,255. Next: PAPER_296.

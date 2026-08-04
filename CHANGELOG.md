@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.302.0] — 2026-08-04 — BAND 1: PAPER_295 — COMPRESSED COOPER SUPER-SEEDING (f_DPM² QUADRATIC CLASS SCALING LAW) (OPEN_RULING Q-246)
+
+### Added
+- **PAPER_295 dispatch** — UQFF Compressed Cooper Super-Seeding, f_DPM² quadratic class scaling law (Session 83, COMPRESSED_RESONANCE_UQFF24_MODULE.cpp). Places the Cooper super-seeding term a_super in the CR24 **compressed** channel (pre-oscillatory DPM-seeded Cooper injector), architecturally distinct from PAPER_289's placement of the same A_sc·a_DPM form in the **resonance** channel (post-THz synthesis).
+  - Cooper amplitude A_sc = ħ·f_super·f_DPM/(E_vac·c) = **6.994e18** (f_super = 1.411e15 Hz, f_DPM = 1e11 Hz systems 18-24, E_vac = ρ_UA, c). Linear in f_DPM.
+  - a_super = A_sc·a_DPM = **2.479e4 m/s²** (a_DPM = 3.543e-15 base from PAPER_294, linear in f_DPM).
+  - **f_DPM² quadratic class scaling law** (first identified here): A_sc linear × a_DPM linear ⇒ a_super ∝ f_DPM². Verified: +1 order f_DPM → +2 orders a_super (×100 per decade; 2.479e4 → 2.479e6).
+- 3 registry observables (a_super_compressed, A_sc_cooper_amplitude, f_DPM2_scaling_law), 8 graph edges, 3 corpus citations (PAPER_289/293/294).
+- 6 gate assertions (A_sc, a_super, quadratic-law ratio, compressed-channel distinction, Q-246 flag, wired_count ≥ 309). Gate 1825 → **1831/0**.
+
+### Open ruling
+- **Q-246** — the paper's magnetar illustration row (f_DPM=1e12) states A_sc=6.994e21, a_super=2.479e8, calling a **4-order** a_super jump "quadratic." That is quartic; the quadratic law predicts A_sc=6.994e19, a_super=2.479e6 (2 orders). Same magnetar factor-10 family as Q-245 (PAPER_289). Dispatch WIRED on the clean compressed result; magnetar row flagged OPEN_RULING.
+
+### Wiring status
+- `wired_count()` = **309**. Campaign frontier PAPER_295 of 2255. Index: 63 ✓ / 246 ⚠ / 1946 ⬜ = 2255.
+
+---
+
 ## [0.301.0] — 2026-08-03 — BAND 1: PAPER_294 — VACUUM DIFFERENTIAL HARMONIC (ħ-DENOMINATOR) (CLEAN)
 
 ### Added

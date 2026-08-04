@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.301.0"
+VERSION = "0.302.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16393,6 +16393,47 @@ def _paper_294(dataset):
         },
         'formula': 'a_vac_diff=E0*f_vac_diff*V_sys*a_DPM/hbar=128.4 m/s2 (FIRST hbar-denominator term); E0=(1-F_TRZ)*E_vac=0.9*E_vac; V_sys/hbar=3.973e52; T_vac=1/0.143=6.993 s (~7s ELF, Schumann-analog)',
         'source': 'PAPER_294',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_295')
+def _paper_295(dataset):
+    hbar = HBAR_UQFF_S629
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic vacuum
+    c = C_OBSERVED
+    f_super = 1.411e15                                     # Cooper pair frequency (RSC module)
+    a_DPM_base = 3.543e-15                                 # DPM base accel at f_DPM=1e11 (PAPER_294)
+    f_DPM_comp = 1.0e11                                    # systems 18-24 compressed class
+    A_sc = hbar * f_super * f_DPM_comp / (E_vac * c)       # 6.994e18 Cooper amplitude (linear in f_DPM)
+    a_super = A_sc * a_DPM_base                            # 2.479e4 m/s2 (compressed channel)
+    # quadratic class scaling: a_super = K_super * f_DPM^2 (A_sc linear, a_DPM linear)
+    K_super = a_super / (f_DPM_comp ** 2)                  # per-Hz^2 prefactor
+    a_super_at = lambda fd: K_super * fd ** 2
+    return {
+        'value': {
+            'domain': '2.93 (compressed Cooper super-seeding, f_DPM^2 quadratic class scaling law)',
+            'source_thread': 'Session 83 COMPRESSED_RESONANCE_UQFF24_MODULE.cpp',
+            'system': 'CR24 compressed channel a_super (pre-oscillatory DPM-seeded Cooper injector)',
+            'f_super_Hz': f_super, 'f_DPM_Hz': f_DPM_comp, 'E_vac': E_vac,
+            'A_sc': A_sc,                                 # 6.994e18
+            'A_sc_formula': 'hbar*f_super*f_DPM/(E_vac*c)',
+            'a_super': a_super,                           # 2.479e4
+            'a_super_formula': 'A_sc*a_DPM  ->  A_sc linear in f_DPM, a_DPM linear in f_DPM',
+            'K_super': K_super,
+            'scaling_law': 'a_super ∝ f_DPM^2 (quadratic DPM-class scaling, first identified PAPER_295)',
+            'a_super_1e11': a_super_at(1e11),            # 2.479e4
+            'a_super_1e12_quadratic': a_super_at(1e12),  # 2.479e6 (+2 orders per +1 order f_DPM)
+            'channel': 'compressed (pre-oscillatory)',
+            'contrast_PAPER_289': 'same A_sc*a_DPM form placed in resonance channel (post-THz synthesis)',
+            'magnetar_row_discrepancy': ('paper illustrates f_DPM=1e12 with A_sc=6.994e21 and '
+                'a_super=2.479e8 ("4 orders"), which is quartic and 100x the linear/quadratic '
+                'prediction (A_sc=6.994e19, a_super=2.479e6); same magnetar factor-10 family as Q-245 '
+                '-> Q-246 OPEN_RULING'),
+        },
+        'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac*c)=6.994e18; a_super=A_sc*a_DPM=2.479e4 m/s2; a_super ∝ f_DPM^2 (quadratic class scaling law, PAPER_295)',
+        'source': 'PAPER_295',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
