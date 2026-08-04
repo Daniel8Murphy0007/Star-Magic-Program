@@ -1,14 +1,14 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.317.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.317.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.318.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.318.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1921%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-324-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-1927%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-325-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.317.0 wiring campaign live**
+**UQFF systematic rebuild — v0.318.0 wiring campaign live**
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -47,7 +47,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.317.0)
+## What is currently shipped (v0.318.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -55,7 +55,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired so far: 324 distinct papers** (`wired_count()`=324 = 310 base-numbered + 14 suffixed) — 77 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_310** (spiral galaxy dark-matter/visible mass partition: η_DM/vis=f_DM/f_vis=0.85/0.15=5.667 so g_DM=5.667·g_vis=1.316e-11 m/s² enters as an independent additive term; Keplerian v_circ=√(GM/r)=1.197e5 m/s vs observed flat v_rot=2.0e5 gives v_excess=1.671 — the 67.1% rotation-curve excess derived from the partition), wired v0.317.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
+**Wired so far: 325 distinct papers** (`wired_count()`=325 = 311 base-numbered + 14 suffixed) — 78 ✓ CLEAN · 247 ⚠ OPEN_RULING file-rows · 247 rulings queued. Campaign frontier: **PAPER_311** (NGC 6302 Bug Nebula bipolar-PN wind-shock dominance: g_base=G·M/r²=2.967e-12; wind-shock a_wind=v_wind²/r·(1+t/t_eject)=2.114e-6 m/s² at lobe age exceeds gravity by η_wind=7.127e5, and wind KE/gravitational-well = v_wind²/(GM/r) = 3.564e5 — so wind dynamics, not gravity, set the bipolar kinematics), wired v0.318.0. *(v0.285.0 burned/yanked on PyPI — skipped; v0.286.0 backfilled 10 papers, v0.287.0 doc-correction.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -691,7 +691,8 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 | **v0.314.0** | Band 1: PAPER_307 (Lagoon Nebula dual radiation-EM barrier a_EM/a_rad=12.77) | 321 |
 | **v0.315.0** | Band 1: PAPER_308 (spiral arm torque amplifier τ_spiral=2.046, T_pattern=307 Myr) | 322 |
 | **v0.316.0** | Band 1: PAPER_309 (SN Ia Hubble-tension imprint η_SN=2.0e16, Δ_SN/SN=2.52%) | 323 |
-| **v0.317.0** ← current | Band 1: PAPER_310 (spiral DM/visible partition η_DM/vis=5.667, rotation excess 67.1%) | 324 |
+| **v0.317.0** | Band 1: PAPER_310 (spiral DM/visible partition η_DM/vis=5.667, rotation excess 67.1%) | 324 |
+| **v0.318.0** ← current | Band 1: PAPER_311 (NGC 6302 bipolar-PN wind-shock dominance η_wind=7.127e5) | 325 |
 | v0.4.0+ | One band per session (~20-80 papers each) | growing |
 | PAPER_500 milestone | FULL STOP — Daniel's manual review | 500 |
 | v1.0.0 | Full whitepaper coverage | 2,255 |

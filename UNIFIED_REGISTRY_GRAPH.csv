@@ -1378,3 +1378,9 @@ observable,g_DM_spiral,observable,v_excess_rotation_curve,partition -> flat curv
 observable,eta_DM_vis_partition,paper,PAPER_310,wired
 observable,g_DM_spiral,paper,PAPER_310,wired
 observable,v_excess_rotation_curve,paper,PAPER_310,wired
+primitive,G_OBSERVED,observable,eta_wind_ngc6302,g_base=GM/r^2
+primitive,G_OBSERVED,observable,KE_over_Phi_ngc6302,Phi=GM/r
+observable,a_wind_ngc6302,observable,eta_wind_ngc6302,a_wind/g_base
+observable,a_wind_ngc6302,paper,PAPER_311,wired
+observable,eta_wind_ngc6302,paper,PAPER_311,wired
+observable,KE_over_Phi_ngc6302,paper,PAPER_311,wired

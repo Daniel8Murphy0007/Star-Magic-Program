@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.317.0", "uqff_calculator.VERSION = 0.317.0 (PAPER_310 = v0.317.0)")
+assert_that(C.VERSION == "0.318.0", "uqff_calculator.VERSION = 0.318.0 (PAPER_311 = v0.318.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4219,6 +4219,19 @@ assert_that(abs(_r310['v_circ_keplerian'] - 1.197e5) / 1.197e5 < 0.005,
 assert_that(abs(_r310['v_excess'] - 1.671) < 0.005 and _r310['rotation_curve_problem'],
             "PAPER_310: v_excess = v_rot/v_circ = 1.671 (67.1% above Keplerian, rotation-curve excess)")
 assert_that(C.wired_count() >= 324, "wired_count >= 324 (PAPER_310 wired)")
+
+_r311 = C.calc('PAPER_311')['value']
+assert_that(abs(_r311['g_base'] - 2.967e-12) / 2.967e-12 < 0.005,
+            "PAPER_311: g_base = G*M/r^2 = 2.967e-12 m/s2 (NGC 6302 gravitational base)")
+assert_that(abs(_r311['a_wind_te'] - 2.114e-6) / 2.114e-6 < 0.005 and _r311['a_wind_formula'] == 'v_wind^2/r*(1+t/t_eject)',
+            "PAPER_311: a_wind(t_eject) = v_wind^2/r*(1+t/t_eject) = 2.114e-6 m/s2")
+assert_that(abs(_r311['eta_wind'] - 7.127e5) / 7.127e5 < 0.005 and _r311['wind_dominates'],
+            "PAPER_311: eta_wind = a_wind(t_eject)/g_base = 7.127e5 (wind exceeds gravity, bipolar expansion)")
+assert_that(abs(_r311['KE_over_Phi'] - 3.564e5) / 3.564e5 < 0.005,
+            "PAPER_311: KE/Phi_grav = v_wind^2/(GM/r) = 3.564e5 (wind outflow thermodynamically guaranteed)")
+assert_that(abs(_r311['a_wind_0'] - 1.057e-6) / 1.057e-6 < 0.005,
+            "PAPER_311: a_wind(0) = v_wind^2/r = 1.057e-6 m/s2 (wind acceleration at t=0)")
+assert_that(C.wired_count() >= 325, "wired_count >= 325 (PAPER_311 wired)")
 
 
 # =============================================================================

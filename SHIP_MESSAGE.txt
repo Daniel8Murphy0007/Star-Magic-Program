@@ -1,12 +1,11 @@
-v0.317.0 BAND 1: PAPER_310 wired - SPIRAL DM/VISIBLE MASS PARTITION (ROTATION-CURVE EXCESS) (CLEAN)
+v0.318.0 BAND 1: PAPER_311 wired - NGC 6302 BIPOLAR-PN WIND-SHOCK DOMINANCE (CLEAN)
 
-PAPER_310 (Dark Matter / Visible Mass Partition Rotation Curve Excess, Session 88,
-SPIRAL_SUPERNOVAE_UQFF_MODULE.cpp; third/final spiral term). Explicitly partitions
-galactic gravity into g_vis and g_DM.
+PAPER_311 (NGC 6302 Bug Nebula Bipolar Planetary Nebula Wind-Shock Gravitational
+Dominance, Session 89, NGC6302_UQFF_MODULE.cpp, 31st C++ module). New planetary-nebula sector.
 
-- eta_DM/vis = f_DM/f_vis = 0.85/0.15 = 5.667 (DM contributes 5.7x more pull than visible)
-- g_vis=2.324e-12, g_DM=G*M_DM/r^2=1.316e-11 m/s2 (=5.667*g_vis); g_base=g_vis+g_DM=1.549e-11
-- v_circ = sqrt(GM/r) = 1.197e5 m/s (Keplerian) vs observed flat v_rot = 2.0e5
-- v_excess = v_rot/v_circ = 1.671 (67.1% above Keplerian; rotation-curve excess from DM/visible partition)
+- g_base = G*M/r^2 = 2.967e-12 m/s2 (M=2 M_sun, r~1 ly)
+- a_wind(t) = v_wind^2/r*(1+t/t_eject): 1.057e-6 at t=0, 2.114e-6 m/s2 at 2000 yr lobe age
+- eta_wind = a_wind(t_eject)/g_base = 7.127e5 (wind exceeds gravity ~712,700x -> bipolar expansion)
+- KE/Phi_grav = v_wind^2/(GM/r) = 3.564e5 (wind outflow thermodynamically guaranteed)
 
-CLEAN. wired_count 324, gate 1921/0. Campaign frontier PAPER_310 of 2255.
+CLEAN. wired_count 325, gate 1927/0. Campaign frontier PAPER_311 of 2255.

@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.317.0"
+VERSION = "0.318.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16994,6 +16994,42 @@ def _paper_310(dataset):
         },
         'formula': 'eta_DM/vis=f_DM/f_vis=0.85/0.15=5.667 -> g_DM=5.667*g_vis=1.316e-11 m/s2; v_circ=sqrt(GM/r)=1.197e5 m/s; v_excess=v_rot/v_circ=1.671 (67.1% above Keplerian, rotation-curve excess from DM/visible partition)',
         'source': 'PAPER_310',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_311')
+def _paper_311(dataset):
+    G = G_OBSERVED
+    M = 3.978e30                                          # total PN ejected mass 2 M_sun (kg), anchor
+    r = 9.46e15                                           # half-lobe radius ~1 ly (m), anchor
+    v_wind = 1.0e5                                        # central star fast wind 100 km/s (m/s), anchor
+    t_eject = 6.312e10                                    # bipolar lobe age 2000 yr (s), anchor
+    g_base = G * M / r ** 2                               # 2.967e-12 gravitational base
+    a_wind_0 = v_wind ** 2 / r                            # 1.057e-6 wind accel at t=0
+    a_wind_te = (v_wind ** 2 / r) * (1.0 + t_eject / t_eject)  # 2.114e-6 at t=t_eject
+    eta_wind = a_wind_te / g_base                         # 7.127e5 wind-to-gravity dominance
+    Phi_grav = G * M / r                                  # 2.806e4 gravitational well depth
+    KE_over_Phi = v_wind ** 2 / Phi_grav                  # 3.564e5 KE vs gravitational well
+    return {
+        'value': {
+            'domain': '3.09 (NGC 6302 Bug Nebula; first UQFF bipolar PN wind-shock dominance)',
+            'source_thread': 'Session 89 NGC6302_UQFF_MODULE.cpp (31st C++ module)',
+            'system': 'NGC 6302 (Bug Nebula) bipolar planetary nebula, wind-shock kinematics',
+            'M_kg': M, 'r_m': r, 'v_wind': v_wind, 't_eject_s': t_eject,
+            'g_base': g_base,                           # 2.967e-12
+            'a_wind_0': a_wind_0,                        # 1.057e-6
+            'a_wind_te': a_wind_te,                      # 2.114e-6
+            'a_wind_formula': 'v_wind^2/r*(1+t/t_eject)',
+            'eta_wind': eta_wind,                       # 7.127e5
+            'eta_wind_formula': 'a_wind(t_eject)/g_base',
+            'Phi_grav': Phi_grav,                       # 2.806e4
+            'KE_over_Phi': KE_over_Phi,                 # 3.564e5
+            'wind_dominates': eta_wind > 1.0,           # wind sets kinematics, not gravity
+        },
+        'formula': 'g_base=G*M/r^2=2.967e-12; a_wind(t)=v_wind^2/r*(1+t/t_eject); eta_wind=a_wind(t_eject)/g_base=7.127e5 (wind exceeds gravity by ~7e5); KE/Phi_grav=v_wind^2/(GM/r)=3.564e5 (wind outflow thermodynamically guaranteed)',
+        'source': 'PAPER_311',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

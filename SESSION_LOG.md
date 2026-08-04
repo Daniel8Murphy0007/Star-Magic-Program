@@ -4508,3 +4508,17 @@ Explicitly partitions galactic gravity into g_vis and g_DM.
 
 CLEAN. Gate: 1921/0. Registry 642 rows / 1380 edges / 338 ledgers. Spiral module (308/309/310) complete.
 Campaign frontier: PAPER_310 / 2,255. Next: PAPER_311.
+
+---
+
+## v0.318.0 — 2026-08-04 — PAPER_311 (NGC 6302 Bug Nebula bipolar-PN wind-shock dominance)
+
+Wired PAPER_311 (Session 89, NGC6302_UQFF_MODULE.cpp, 31st C++ module). New planetary-nebula sector.
+
+- g_base = G*M/r^2 = 2.967e-12 (M=2 M_sun, r~1 ly).
+- a_wind(t) = v_wind^2/r*(1+t/t_eject): 1.057e-6 at t=0, 2.114e-6 at 2000 yr lobe age.
+- eta_wind = a_wind(t_eject)/g_base = 7.127e5 (wind exceeds gravity ~7e5, drives bipolar expansion).
+- KE/Phi = v_wind^2/(GM/r) = 3.564e5 (outflow thermodynamically guaranteed). All verified in Python.
+
+CLEAN. Gate: 1927/0. Registry 645 rows / 1386 edges / 339 ledgers.
+Campaign frontier: PAPER_311 / 2,255. Next: PAPER_312.

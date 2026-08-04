@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.318.0] — 2026-08-04 — BAND 1: PAPER_311 — NGC 6302 BIPOLAR-PN WIND-SHOCK DOMINANCE (CLEAN)
+
+### Added
+- **PAPER_311 dispatch** — NGC 6302 (Bug Nebula) Bipolar Planetary Nebula Wind-Shock Gravitational Dominance (Session 89, NGC6302_UQFF_MODULE.cpp, 31st C++ module). Opens a planetary-nebula sector.
+  - g_base = G·M/r² = **2.967e-12 m/s²** (M = 2 M_sun, r ≈ 1 ly).
+  - Wind-shock acceleration a_wind(t) = v_wind²/r·(1+t/t_eject): **1.057e-6** at t=0, **2.114e-6 m/s²** at the 2000 yr lobe age (dimensionally the kinematic gradient of wind momentum deposition).
+  - η_wind = a_wind(t_eject)/g_base = **7.127e5** — the stellar wind exceeds gravitational binding by ~712,700×, guaranteeing outward bipolar expansion.
+  - Wind KE vs gravitational well KE/Φ = v_wind²/(GM/r) = **3.564e5** — wind outflow is thermodynamically guaranteed regardless of mass. Wind dynamics, not gravity, set the bipolar kinematics.
+- 3 registry observables, 6 graph edges, 1 corpus citation (PAPER_305).
+- 6 gate assertions (g_base, a_wind(t_eject), η_wind/dominates, KE/Φ, a_wind(0), wired_count ≥ 325). Gate 1921 → **1927/0**.
+
+### Wiring status
+- `wired_count()` = **325** (CLEAN). Campaign frontier PAPER_311 of 2255. Index: 78 ✓ / 247 ⚠ / 1930 ⬜ = 2255.
+
+---
+
 ## [0.317.0] — 2026-08-04 — BAND 1: PAPER_310 — SPIRAL DM/VISIBLE MASS PARTITION (ROTATION-CURVE EXCESS) (CLEAN)
 
 ### Added
