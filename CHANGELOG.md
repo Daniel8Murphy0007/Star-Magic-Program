@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.306.0] — 2026-08-04 — BAND 1: PAPER_299 — FIRST ATOMIC-SCALE UQFF MODULE (ELECTROGRAVITATIONAL DOMINANCE) (CLEAN)
+
+### Added
+- **PAPER_299 dispatch** — Hydrogen Atom UQFF Electrogravitational Dominance Ratio (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp, 27th C++ module — the **first atomic-scale UQFF module**). Hydrogen ground state (Bohr model).
+  - g_base = G·M_p/r_Bohr² = **3.986e-17 m/s²** — the smallest base-gravity value across all 27 modules (5 orders below the prior minimum, M16 Eagle Nebula).
+  - Electron Lorentz acceleration a_Lorentz = q·v_orb·B/m_e = **3.848e13 m/s²** (v_orb = α·c = 2.1877e6 m/s) — completely dominates the UQFF total.
+  - **Electrogravitational dominance ratio** η_EM = a_Lorentz/g_base = **9.65e29** — the largest force asymmetry computed in UQFF: EM exceeds gravity by ~30 orders at the Bohr radius.
+  - Atomic constants (M_p, r_Bohr, m_e, q, B_atom, α) are observed anchors; G, c from registry.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_300/301, forward references for a_osc/a_GR_min).
+- 6 gate assertions (g_base smallest, a_Lorentz, η_EM, dominance flags, v_orb, wired_count ≥ 313). Gate 1849 → **1855/0**.
+
+### Wiring status
+- `wired_count()` = **313** (CLEAN). Campaign frontier PAPER_299 of 2255. Index: 67 ✓ / 246 ⚠ / 1942 ⬜ = 2255.
+
+---
+
 ## [0.305.0] — 2026-08-04 — BAND 1: PAPER_298 — FIRST UQFF GR-DOMINANT REGIME (ε_GR > 1) (CLEAN)
 
 ### Added

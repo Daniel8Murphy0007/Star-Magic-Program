@@ -604,3 +604,6 @@ xi_H_hubble_coupling,PAPER_297 Hubble coupling factor,derived_factor,1+H0*t_H,ne
 eps_GR_curvature_param,PAPER_298 observable universe,derived_ratio,3*G*M/(r*c^2),post-Newtonian GR curvature,5.056,PAPER_298,0.0,cosmology/GR,resonance,PAPER_298,1,1,0,0,PAPER_296,WIRED
 a_GR_curvature_accel,PAPER_298 GR-dominant term,derived_acceleration,g_base*eps_GR,dominant term in 9-term sum,1.743e-9 m/s2,PAPER_298,0.0,cosmology/GR,resonance,PAPER_298,1,1,0,0,PAPER_296,WIRED
 r_S_schwarzschild_universe,PAPER_298 universe Schwarzschild radius,derived_length,2*G*M/c^2,r_obs/r_S=0.297,1.483e27 m,PAPER_298,0.0,cosmology/GR,resonance,PAPER_298,1,1,0,0,PAPER_298,WIRED
+g_base_hydrogen_bohr,PAPER_299 hydrogen atom,derived_acceleration,G*M_p/r_Bohr^2,smallest g_base of all modules,3.986e-17 m/s2,PAPER_299,0.0,atomic/gravity,resonance,PAPER_299,1,1,0,0,PAPER_300;PAPER_301,WIRED
+a_Lorentz_hydrogen,PAPER_299 electron Lorentz accel,derived_acceleration,q*v_orb*B/m_e,dominant EM term,3.848e13 m/s2,PAPER_299,0.0,atomic/EM,resonance,PAPER_299,1,1,0,0,PAPER_299,WIRED
+eta_EM_electrograv_dominance,PAPER_299 electrogravitational dominance,derived_ratio,a_Lorentz/g_base,largest force asymmetry,9.65e29,PAPER_299,0.0,atomic/EM,resonance,PAPER_299,1,1,0,0,PAPER_299,WIRED

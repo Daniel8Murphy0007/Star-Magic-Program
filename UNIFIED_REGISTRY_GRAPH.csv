@@ -1300,3 +1300,10 @@ observable,eps_GR_curvature_param,observable,r_S_schwarzschild_universe,r_S/r_ob
 observable,eps_GR_curvature_param,paper,PAPER_298,wired
 observable,a_GR_curvature_accel,paper,PAPER_298,wired
 observable,r_S_schwarzschild_universe,paper,PAPER_298,wired
+primitive,G_OBSERVED,observable,g_base_hydrogen_bohr,G factor
+primitive,C_OBSERVED,observable,a_Lorentz_hydrogen,v_orb=alpha*c
+observable,a_Lorentz_hydrogen,observable,eta_EM_electrograv_dominance,a_Lorentz/g_base
+observable,g_base_hydrogen_bohr,observable,eta_EM_electrograv_dominance,denominator
+observable,g_base_hydrogen_bohr,paper,PAPER_299,wired
+observable,a_Lorentz_hydrogen,paper,PAPER_299,wired
+observable,eta_EM_electrograv_dominance,paper,PAPER_299,wired

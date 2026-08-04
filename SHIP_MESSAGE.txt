@@ -1,13 +1,13 @@
-v0.305.0 BAND 1: PAPER_298 wired - FIRST UQFF GR-DOMINANT REGIME (eps_GR > 1) (CLEAN)
+v0.306.0 BAND 1: PAPER_299 wired - FIRST ATOMIC-SCALE UQFF MODULE (ELECTROGRAVITATIONAL DOMINANCE) (CLEAN)
 
-PAPER_298 (UQFF Universe-Scale GR Curvature Dominance, Session 84,
-UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Observable universe as system; third/final term of
-the universe-diameter trilogy (296/297/298). First UQFF module where the post-Newtonian
-GR correction exceeds the DPM-seeded base.
+PAPER_299 (Hydrogen Atom UQFF Electrogravitational Dominance Ratio, Session 85,
+HYDROGEN_ATOM_UQFF_MODULE.cpp, 27th C++ module, FIRST atomic-scale UQFF module).
+Hydrogen ground state, Bohr model.
 
-- eps_GR = 3*G*M/(r*c^2) = 5.056 > 1 (M=1e54 kg, r_obs=4.4e26 m paper anchors)
-- a_GR = g_base*eps_GR = 1.743e-9 m/s2 (dominant term in the 9-term sum, 5x the DPM base)
-- r_S = 2GM/c^2 = 1.483e27 m Schwarzschild radius
-- r_obs/r_S = 0.297 (universe at ~30% of its own Schwarzschild radius, critical-density consistent)
+- g_base = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (smallest g_base across all 27 modules)
+- a_Lorentz = q*v_orb*B/m_e = 3.848e13 m/s2 (v_orb=alpha*c=2.1877e6); dominant EM term
+- eta_EM = a_Lorentz/g_base = 9.65e29 (largest force asymmetry in UQFF; EM over gravity
+  ~30 orders at the Bohr radius)
+- Atomic constants (M_p, r_Bohr, m_e, q, B, alpha) observed anchors; G, c from registry
 
-CLEAN. wired_count 312, gate 1849/0. Campaign frontier PAPER_298 of 2255.
+CLEAN. wired_count 313, gate 1855/0. Campaign frontier PAPER_299 of 2255.

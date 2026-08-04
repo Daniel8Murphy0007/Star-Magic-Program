@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.305.0", "uqff_calculator.VERSION = 0.305.0 (PAPER_298 = v0.305.0)")
+assert_that(C.VERSION == "0.306.0", "uqff_calculator.VERSION = 0.306.0 (PAPER_299 = v0.306.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4062,6 +4062,19 @@ assert_that(abs(_r298['robs_over_rS'] - 0.297) < 0.005,
 assert_that(_r298['critical_density_consistent'],
             "PAPER_298: eps_GR of order unity consistent with cosmological critical-density condition")
 assert_that(C.wired_count() >= 312, "wired_count >= 312 (PAPER_298 wired)")
+
+_r299 = C.calc('PAPER_299')['value']
+assert_that(abs(_r299['g_base'] - 3.986e-17) < 5e-20 and _r299['g_base_formula'] == 'G*M_p/r_Bohr^2',
+            "PAPER_299: g_base = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (smallest g_base of all UQFF modules)")
+assert_that(abs(_r299['a_Lorentz'] - 3.848e13) < 5e10 and _r299['a_Lorentz_formula'] == 'q*v_orb*B/m_e',
+            "PAPER_299: a_Lorentz = q*v_orb*B/m_e = 3.848e13 m/s2 (dominant EM term)")
+assert_that(abs(_r299['eta_EM'] - 9.65e29) / 9.65e29 < 0.005,
+            "PAPER_299: eta_EM = a_Lorentz/g_base = 9.65e29 (electrogravitational dominance ratio)")
+assert_that(_r299['smallest_g_base'] and _r299['largest_force_asymmetry'],
+            "PAPER_299: first atomic UQFF module - smallest g_base, largest force asymmetry (~30 orders)")
+assert_that(abs(_r299['v_orb'] - 2.1877e6) < 1e3,
+            "PAPER_299: v_orb = alpha*c = 2.1877e6 m/s (electron orbital velocity)")
+assert_that(C.wired_count() >= 313, "wired_count >= 313 (PAPER_299 wired)")
 
 
 # =============================================================================

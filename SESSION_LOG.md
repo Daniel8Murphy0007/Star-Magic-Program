@@ -4313,3 +4313,19 @@ GR correction exceeds the DPM-seeded base.
 
 CLEAN. Gate: 1849/0. Registry 606 rows / 1302 edges / 317 ledgers.
 Campaign frontier: PAPER_298 / 2,255. Next: PAPER_299.
+
+---
+
+## v0.306.0 — 2026-08-04 — PAPER_299 (first atomic-scale UQFF module, electrogravitational dominance)
+
+Wired PAPER_299 (Session 85, HYDROGEN_ATOM_UQFF_MODULE.cpp, 27th C++ module, first
+atomic-scale UQFF module). Hydrogen ground state, Bohr model.
+
+- g_base = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (smallest g_base of all 27 modules).
+- a_Lorentz = q*v_orb*B/m_e = 3.848e13 m/s2 (v_orb=alpha*c=2.1877e6); dominant EM term.
+- eta_EM = a_Lorentz/g_base = 9.65e29 (largest force asymmetry in UQFF, EM over gravity
+  ~30 orders at Bohr radius). All verified in Python.
+- Atomic constants observed anchors; G, c from registry. New atomic sector opened.
+
+CLEAN. Gate: 1855/0. Registry 609 rows / 1309 edges / 319 ledgers.
+Campaign frontier: PAPER_299 / 2,255. Next: PAPER_300 (a_osc Lyman) — MILESTONE approaches.

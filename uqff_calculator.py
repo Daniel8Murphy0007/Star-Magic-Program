@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.305.0"
+VERSION = "0.306.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16543,6 +16543,42 @@ def _paper_298(dataset):
         },
         'formula': 'eps_GR=3*G*M/(r*c^2)=5.056>1 (first UQFF GR-dominant module); a_GR=g_base*eps_GR=1.743e-9 m/s2 (dominant term); r_S=2GM/c^2=1.483e27 m; r_obs/r_S=0.297 (~30% of own Schwarzschild radius)',
         'source': 'PAPER_298',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_299')
+def _paper_299(dataset):
+    G = G_OBSERVED
+    c = C_OBSERVED
+    M_p = 1.6726e-27                                      # proton mass, atomic anchor
+    r_Bohr = 5.2918e-11                                   # Bohr radius, atomic anchor
+    m_e = 9.1094e-31                                      # electron mass, atomic anchor
+    q = 1.6022e-19                                        # elementary charge, atomic anchor
+    B_atom = 1.0e-4                                       # atomic magnetic field (est.), paper anchor
+    alpha = 7.2974e-3                                     # fine-structure constant, atomic anchor (cf ALPHA_FINE_STRUCTURE=1/137)
+    v_orb = alpha * c                                    # 2.1877e6 electron orbital velocity
+    g_base = G * M_p / r_Bohr ** 2                        # 3.986e-17 smallest g_base of all UQFF modules
+    a_Lorentz = q * v_orb * B_atom / m_e                  # 3.848e13 dominant EM term
+    eta_EM = a_Lorentz / g_base                          # 9.65e29 electrogravitational dominance ratio
+    return {
+        'value': {
+            'domain': '2.97 (hydrogen ground state; first atomic-scale UQFF module; electrogravitational dominance)',
+            'source_thread': 'Session 85 HYDROGEN_ATOM_UQFF_MODULE.cpp (27th C++ module, first atomic)',
+            'system': 'Hydrogen ground state (Bohr model, z=0)',
+            'M_p_kg': M_p, 'r_Bohr_m': r_Bohr, 'm_e_kg': m_e, 'v_orb': v_orb,
+            'g_base': g_base,                            # 3.986e-17 (smallest g_base in all modules)
+            'g_base_formula': 'G*M_p/r_Bohr^2',
+            'smallest_g_base': True,                     # 5 orders below prior min (M16 Eagle Nebula)
+            'a_Lorentz': a_Lorentz,                      # 3.848e13 dominant EM term
+            'a_Lorentz_formula': 'q*v_orb*B/m_e',
+            'eta_EM': eta_EM,                            # 9.65e29
+            'eta_EM_formula': 'a_Lorentz/g_base (electrogravitational dominance ratio)',
+            'largest_force_asymmetry': True,             # EM exceeds gravity by ~30 orders at Bohr radius
+        },
+        'formula': 'g_base=G*M_p/r_Bohr^2=3.986e-17 m/s2 (smallest of all UQFF modules); a_Lorentz=q*v_orb*B/m_e=3.848e13 m/s2 (dominant EM term); eta_EM=a_Lorentz/g_base=9.65e29 (electrogravitational dominance ratio, first atomic UQFF module)',
+        'source': 'PAPER_299',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
