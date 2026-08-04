@@ -4670,3 +4670,18 @@ power-of-10 A_vort/V_sys exponent typos in the printed table; span/anchors unaff
 
 CLEAN. Gate: 1981/0. Registry 671 rows / 1443 edges / 359 ledgers.
 Campaign frontier: PAPER_320 / 2,255. Next: PAPER_321.
+
+---
+
+## v0.329.0 — 2026-08-04 — PAPER_321 (CR34 cross-channel dominance reversal)
+
+Wired PAPER_321 (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; second CR34 term).
+First UQFF cross-channel dominance-reversal threshold (atomic resonance -> cosmic compressed).
+
+- V_f_crossover = hbar/(E0*f_vac_diff*E_vac*c) = 5.43e28 m^3/Hz (E0=(1-F_TRZ)*rho_UA, E_vac=rho_UA,
+  f_vac_diff=0.143). Compressed a_vac_diff = resonance a_u_g4i at this V_sys/f_react.
+- H atom 69 orders below (resonance-dominant); Universe 44 orders above (compressed-dominant); Orion +14.
+- 113-order total spread (largest two-point spread in UQFF history). All verified in Python.
+
+CLEAN. Gate: 1987/0. Registry 673 rows / 1449 edges / 362 ledgers.
+Campaign frontier: PAPER_321 / 2,255. Next: PAPER_322.

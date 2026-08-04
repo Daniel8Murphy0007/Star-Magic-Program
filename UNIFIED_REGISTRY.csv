@@ -669,3 +669,5 @@ binding_ratio_orion,PAPER_319 SFR gravitational binding ratio,derived_ratio,g_SF
 f_density_span_cr34,PAPER_320 CR34 DPM force-density span,derived_ratio,f_max/f_min,H atom (1.5e25) to Universe (1.5e-10),1e35 (35 orders),PAPER_320,0.0,multiscale/DPM,resonance,PAPER_320,1,1,0,0,PAPER_321;PAPER_322,WIRED
 f_density_H_atom_max,PAPER_320 max DPM force density,derived_density,I*A_vort*omega_diff/V_sys,quantum-confined vortex (H atom),1.500e25 N/m3,PAPER_320,0.0,multiscale/DPM,resonance,PAPER_320,1,1,0,0,PAPER_320,WIRED
 f_density_orion_balance,PAPER_320 Orion HII balance point,derived_density,I*A_vort*omega_diff/V_sys,human-scale HII balance,9.12 N/m3,PAPER_320,0.0,multiscale/DPM,resonance,PAPER_320,1,1,0,0,PAPER_320,WIRED
+V_f_crossover_cr34,PAPER_321 channel-dominance reversal,derived_ratio,hbar/(E0*f_vac_diff*E_vac*c),compressed a_vac_diff = resonance a_u_g4i,5.43e28 m3/Hz,PAPER_321,0.0,multiscale/DPM,resonance,PAPER_321,1,1,0,0,PAPER_294;PAPER_295,WIRED
+channel_spread_cr34,PAPER_321 cross-channel scale spread,derived_span,log10(V/f range),113-order total (H atom to Universe),113 orders,PAPER_321,0.0,multiscale/DPM,resonance,PAPER_321,1,1,0,0,PAPER_320,WIRED

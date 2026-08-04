@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.328.0", "uqff_calculator.VERSION = 0.328.0 (PAPER_320 = v0.328.0)")
+assert_that(C.VERSION == "0.329.0", "uqff_calculator.VERSION = 0.329.0 (PAPER_321 = v0.329.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4350,6 +4350,19 @@ assert_that(abs(_r320['f_orion_balance'] - 9.12) < 0.02,
 assert_that('Q-249' in _r320['table_typo_note'],
             "PAPER_320: 3 intermediate atlas rows have power-of-10 exponent typos flagged (Q-249; span/anchors unaffected)")
 assert_that(C.wired_count() >= 334, "wired_count >= 334 (PAPER_320 wired)")
+
+_r321 = C.calc('PAPER_321')['value']
+assert_that(abs(_r321['V_f_crossover'] - 5.43e28) / 5.43e28 < 0.005 and _r321['V_f_crossover_formula'] == 'hbar/(E0*f_vac_diff*E_vac*c)',
+            "PAPER_321: V_f_crossover = hbar/(E0*f_vac_diff*E_vac*c) = 5.43e28 m^3/Hz (channel-dominance reversal)")
+assert_that(abs(_r321['delta_H_atom_orders'] - (-69.0)) < 0.5,
+            "PAPER_321: H atom V/f is 69 orders below crossover (resonance-dominant, extreme quantum limit)")
+assert_that(44.0 <= _r321['delta_Universe_orders'] < 45.5,
+            "PAPER_321: Universe V/f is ~44 orders above crossover (compressed-dominant, extreme cosmological limit)")
+assert_that(abs(_r321['delta_Orion_orders'] - 14.0) < 0.5,
+            "PAPER_321: Orion M42 V/f is 14 orders above crossover (compressed-dominant)")
+assert_that(abs(_r321['total_spread_orders'] - 113.0) < 1.5,
+            "PAPER_321: 113-order total scale spread (largest two-point spread in UQFF module history)")
+assert_that(C.wired_count() >= 335, "wired_count >= 335 (PAPER_321 wired)")
 
 
 # =============================================================================

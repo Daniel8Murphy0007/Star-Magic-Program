@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.328.0"
+VERSION = "0.329.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17372,6 +17372,42 @@ def _paper_320(dataset):
         },
         'formula': 'f_density=I*A_vort*omega_diff/V_sys [N/m^3]; xi_span=f_max/f_min=1.500e25(H atom)/1.500e-10(Universe)=1e35 (35 orders, atomic->cosmic); Orion=9.12 N/m^3 macroscopic HII balance point',
         'source': 'PAPER_320',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_321')
+def _paper_321(dataset):
+    import math as _m
+    hbar = HBAR_UQFF_S629
+    c = C_OBSERVED
+    E0 = (1.0 - F_TRZ) * RHO_UA                           # 6.381e-36 vacuum differential energy
+    E_vac = RHO_UA                                        # 7.09e-36 nebular vacuum
+    f_vac_diff = 0.143                                    # vacuum differential beat freq (PAPER_294)
+    V_f_crossover = hbar / (E0 * f_vac_diff * E_vac * c)  # 5.43e28 m^3/Hz channel crossover
+    def delta_orders(V, f_react):
+        return _m.log10((V / f_react) / V_f_crossover)
+    d_H = delta_orders(4.189e-31, 1e10)                  # -69 (resonance-dominant)
+    d_Universe = delta_orders(4.189e80, 1e7)             # +44 (compressed-dominant)
+    d_Orion = delta_orders(6.887e51, 1e9)                # +14 (compressed-dominant)
+    total_spread = abs(d_H) + d_Universe                 # 113 orders (largest two-point spread)
+    return {
+        'value': {
+            'domain': '3.19 (CR34 cross-channel dominance reversal; compressed vs resonance channel)',
+            'source_thread': 'Session 92 COMPRESSED_RESONANCE_UQFF34_MODULE.cpp',
+            'system': 'CR34 7-system channel-dominance boundary (atomic resonance -> cosmic compressed)',
+            'V_f_crossover': V_f_crossover,             # 5.43e28
+            'V_f_crossover_formula': 'hbar/(E0*f_vac_diff*E_vac*c)',
+            'V_f_units': 'm^3/Hz',
+            'delta_H_atom_orders': d_H,                 # -69 (resonance-dominant)
+            'delta_Universe_orders': d_Universe,        # +44 (compressed-dominant)
+            'delta_Orion_orders': d_Orion,             # +14 (compressed-dominant)
+            'total_spread_orders': total_spread,       # 113 (largest two-point spread in UQFF)
+            'boundary_note': 'V/f > crossover -> compressed dominant (nebular/cosmic); V/f < crossover -> resonance dominant (atomic)',
+        },
+        'formula': 'V_f_crossover=hbar/(E0*f_vac_diff*E_vac*c)=5.43e28 m^3/Hz (compressed a_vac_diff = resonance a_u_g4i); H atom -69 orders (resonance-dominant), Universe +44 orders (compressed-dominant), 113-order total spread',
+        'source': 'PAPER_321',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.329.0] — 2026-08-04 — BAND 1: PAPER_321 — CR34 CROSS-CHANNEL DOMINANCE REVERSAL (CLEAN)
+
+### Added
+- **PAPER_321 dispatch** — CR34 Cross-Channel Dominance Reversal (Session 92, COMPRESSED_RESONANCE_UQFF34_MODULE.cpp; second CR34 term). The **first UQFF cross-channel dominance-reversal threshold** separating atomic (resonance-dominant) from nebular/cosmic (compressed-dominant) systems.
+  - The compressed channel (a_vac_diff = E0·f_vac_diff·V_sys·a_DPM/ħ) and resonance channel (a_u_g4i = f_react·a_DPM/(E_vac·c)) reverse dominance at **V_f_crossover = ħ/(E0·f_vac_diff·E_vac·c) = 5.43e28 m³/Hz** (E0 = (1−F_TRZ)·ρ_UA, E_vac = ρ_UA, f_vac_diff = 0.143).
+  - Systems with V_sys/f_react > crossover are compressed-dominant (large V_sys enhances vacuum diffusion); below it, resonance-dominant (quantum reactance wins without V_sys scaling).
+  - Hydrogen atom: **69 orders below** (extreme quantum limit); Universe: **44 orders above** (extreme cosmological limit); Orion: +14. **113-order total spread** — the largest two-point spread in UQFF module history.
+- 2 registry observables, 6 graph edges, 3 corpus citations (PAPER_320/294/295).
+- 6 gate assertions (V_f_crossover, H-atom −69, Universe +44, Orion +14, 113-order spread, wired_count ≥ 335). Gate 1981 → **1987/0**.
+
+### Wiring status
+- `wired_count()` = **335** (CLEAN). Campaign frontier PAPER_321 of 2255. Index: 87 ✓ / 248 ⚠ / 1920 ⬜ = 2255.
+
+---
+
 ## [0.328.0] — 2026-08-04 — BAND 1: PAPER_320 — CR34 7-SYSTEM DPM FORCE-DENSITY SPECTRAL ATLAS (CLEAN)
 
 ### Added

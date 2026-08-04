@@ -1441,3 +1441,9 @@ observable,f_density_span_cr34,paper,PAPER_320,wired
 observable,f_density_H_atom_max,paper,PAPER_320,wired
 observable,f_density_orion_balance,paper,PAPER_320,wired
 paper,PAPER_320,paper,PAPER_321,shared CR34 systems
+primitive,HBAR_UQFF_S629,observable,V_f_crossover_cr34,hbar numerator
+primitive,RHO_UA,observable,V_f_crossover_cr34,E0 and E_vac from rho_UA
+primitive,C_OBSERVED,observable,V_f_crossover_cr34,c in denominator
+observable,V_f_crossover_cr34,observable,channel_spread_cr34,deltas measured from crossover
+observable,V_f_crossover_cr34,paper,PAPER_321,wired
+observable,channel_spread_cr34,paper,PAPER_321,wired

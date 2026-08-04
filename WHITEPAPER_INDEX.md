@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_320** (CR34 7-system DPM force-density spectral atlas, ξ-span=1e35 atomic→cosmic, wired v0.328.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–320 = **334 wired**.
-- **Distinct wired papers: 334** = `wired_count()` = `len(DISPATCH)`. Composed of **320** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **86 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1921 ⬜** not-touched (86 + 248 + 1921 = 2255 ✓). Wired file-rows (86 + 248 = **334**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note on the WIRED PAPER_320.)
+- **Campaign frontier: PAPER_321** (CR34 cross-channel dominance reversal V_f_crossover=5.43e28 m³/Hz, 113-order spread, wired v0.329.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–321 = **335 wired**.
+- **Distinct wired papers: 335** = `wired_count()` = `len(DISPATCH)`. Composed of **321** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **87 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1920 ⬜** not-touched (87 + 248 + 1920 = 2255 ✓). Wired file-rows (87 + 248 = **335**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note on the WIRED PAPER_320.)
 - **OPEN targets:** 0
 
 ---
@@ -1580,7 +1580,7 @@
 | ✓ | PAPER_318 | OrionM42 TrapeziumOBUV etaRad 7p664e18 champagneFlow |
 | ✓ | PAPER_319 | OrionM42 CompactHII SFRBindingCrossover tCross 67p7kyr sSFR 50xLagoon |
 | ✓ | PAPER_320 | CR34 DPMForceDensitySpectralAtlas xiSpan 1e35 7systems |
-| ⬜ | PAPER_321 | CR34 CrossChannelDominanceCrossover Vf 5p43e28 CompressedResonanceReversal |
+| ✓ | PAPER_321 | CR34 CrossChannelDominanceCrossover Vf 5p43e28 CompressedResonanceReversal |
 | ⬜ | PAPER_322 | CR34 HiIRegionTHzGeometricDifferential ratio 8p59 OrionLagoon |
 | ⬜ | PAPER_323 | CR34b VacuumAetherFrequencyMode FAether 1p576e35 11thUQFFTerm |
 | ⬜ | PAPER_324 | CR34b SaturnFirstPlanetaryDualChannel g vac diff 1p29e-2 |
