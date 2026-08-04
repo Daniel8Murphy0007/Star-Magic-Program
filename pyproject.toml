@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.311.0"
-description = "UQFF Star-Magic-Program v0.311.0: PAPER_304 wired (OPEN_RULING Q-247) - hydrogen PToE aether-gravitational dominance; xi_aether=a_aether/g_DPM=1.852e24 (aether over DPM-seeded gravity at Bohr radius, 3rd rung of the vacuum-driver hierarchy: atom / universe Lambda / neutron-star EM); g_DPM=G*M_p/r_Bohr^2=3.986e-17 reproduced; stated a_aether derivation is broken (gives 4.17e-17, dimensionally 1/s^2) so a_aether=7.38e7 wired as module output, Q-247. wired_count 318, gate 1885/0. Frontier PAPER_304 of 2255."
+version = "0.312.0"
+description = "UQFF Star-Magic-Program v0.312.0: PAPER_305 wired (CLEAN) - Lagoon Nebula (M8/NGC 6523) SFR mass-runaway amplifier (29th C++ module, first H II region); dM/M0 at 1 Myr = SFR*1e6yr/M0 = 10.0, so the mass runaway factor m_factor = 11.0 (gravity amplified 11-fold in 1 Myr); cloud depletion t_consume = M0/SFR = 100 kyr; dg/dt = G*SFR_kg_s/r^2 = 1.553e-24 m/s3; first UQFF SFR runaway (dM>M0 within 1 Myr). wired_count 319, gate 1891/0. Frontier PAPER_305 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

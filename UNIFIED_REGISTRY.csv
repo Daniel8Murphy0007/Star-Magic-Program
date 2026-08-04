@@ -622,3 +622,6 @@ freq_lock_ratio_triple,PAPER_303 triple Lyman lock,derived_ratio,f_THz/f_DPM,fir
 g_DPM_hydrogen_proton,PAPER_304 proton surface gravity,derived_acceleration,G*M_p/r_Bohr^2,gravity reference at Bohr radius,3.986e-17 m/s2,PAPER_304,0.0,atomic/gravity,resonance,PAPER_304,1,1,0,0,PAPER_296;PAPER_299,WIRED
 xi_aether_dominance,PAPER_304 aether-to-Newton ratio,derived_ratio,a_aether/g_DPM,3rd rung vacuum-driver hierarchy,1.852e24,PAPER_304,0.0,atomic/aether,resonance,PAPER_304,1,1,0,0,PAPER_302,OPEN_RULING
 a_aether_bohr,PAPER_304 aether resonance accel,module_output,module output (Q-247 formula broken),stated E_vac*f_res*V_sys/hbar gives 4.17e-17 not 7.38e7,7.38e7 m/s2,PAPER_304,0.0,atomic/aether,resonance,PAPER_304,1,1,0,0,PAPER_302,OPEN_RULING
+dM_over_M0_lagoon,PAPER_305 Lagoon SFR runaway,derived_ratio,SFR*1e6yr/M0,first UQFF SFR runaway,10.0 at 1 Myr,PAPER_305,0.0,astro/star-formation,resonance,PAPER_305,1,1,0,0,PAPER_284,WIRED
+t_consume_lagoon,PAPER_305 cloud depletion time,derived_time,M0/SFR,runaway regime,100 kyr,PAPER_305,0.0,astro/star-formation,resonance,PAPER_305,1,1,0,0,PAPER_305,WIRED
+dg_dt_lagoon,PAPER_305 gravity rate of change,derived_jerk,G*SFR_kg_s/r^2,mass-runaway amplifier,1.553e-24 m/s3,PAPER_305,0.0,astro/star-formation,resonance,PAPER_305,1,1,0,0,PAPER_305,WIRED

@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.312.0] — 2026-08-04 — BAND 1: PAPER_305 — LAGOON NEBULA SFR MASS-RUNAWAY AMPLIFIER (CLEAN)
+
+### Added
+- **PAPER_305 dispatch** — Lagoon Nebula (M8 / NGC 6523) SFR Mass Runaway Amplifier (Session 87, LAGOON_UQFF_MODULE.cpp, 29th C++ module — the **first H II region module**). Opens a new astrophysical sector: star-forming-region mass growth.
+  - ΔM/M0 at 1 Myr = SFR·1e6yr/M0 = **10.0** (SFR = 0.1 M_sun/yr, M0 = 1e4 M_sun) ⇒ mass-runaway factor m_factor = 1 + ΔM/M0 = **11.0** — gravity amplified 11-fold in 1 Myr.
+  - Cloud depletion t_consume = M0/SFR = **100 kyr**; specific rate SFR/M0 = 1e-5 yr⁻¹.
+  - Gravity rate of change dg/dt = G·SFR_kg_s/r² = **1.553e-24 m/s³** (SFR_kg_s = 6.303e21 kg/s); Δg over 1 Myr = 4.90e-11 m/s² (~10·g_base, consistent with m_factor).
+  - **First UQFF SFR runaway** (ΔM > M0 within 1 Myr) — distinguishes M8 from M16 (PAPER_284, ΔM/M0 ≪ 1 at 5 Myr).
+- 3 registry observables, 6 graph edges, 1 corpus citation (PAPER_284).
+- 6 gate assertions (ΔM/M0, m_factor/runaway, t_consume, SFR_kg_s+dg/dt, Δg, wired_count ≥ 319). Gate 1885 → **1891/0**.
+
+### Wiring status
+- `wired_count()` = **319** (CLEAN). Campaign frontier PAPER_305 of 2255. Index: 72 ✓ / 247 ⚠ / 1936 ⬜ = 2255.
+
+---
+
 ## [0.311.0] — 2026-08-04 — BAND 1: PAPER_304 — HYDROGEN PToE AETHER-GRAVITATIONAL DOMINANCE (OPEN_RULING Q-247)
 
 ### Added

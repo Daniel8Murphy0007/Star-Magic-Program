@@ -4411,3 +4411,18 @@ formula flagged; true generating formula not recoverable from stated constants.
 
 Gate: 1885/0. Registry 624 rows / 1342 edges / 329 ledgers.
 Campaign frontier: PAPER_304 / 2,255. Next: PAPER_305.
+
+---
+
+## v0.312.0 — 2026-08-04 — PAPER_305 (Lagoon Nebula SFR mass-runaway amplifier)
+
+Wired PAPER_305 (Session 87, LAGOON_UQFF_MODULE.cpp, 29th C++ module, first H II region).
+New astrophysical sector: star-forming-region mass growth.
+
+- dM/M0 at 1 Myr = SFR*1e6yr/M0 = 10.0 -> m_factor = 11.0 (gravity amplified 11x in 1 Myr).
+- t_consume = M0/SFR = 100 kyr; SFR/M0 = 1e-5 yr^-1.
+- dg/dt = G*SFR_kg_s/r^2 = 1.553e-24 m/s3 (SFR_kg_s=6.303e21); dg over 1 Myr = 4.90e-11 (~10*g_base).
+- First UQFF SFR runaway (dM>M0 within 1 Myr); vs M16 (PAPER_284) dM/M0 << 1. All verified in Python.
+
+CLEAN. Gate: 1891/0. Registry 627 rows / 1348 edges / 330 ledgers.
+Campaign frontier: PAPER_305 / 2,255. Next: PAPER_306.

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.311.0", "uqff_calculator.VERSION = 0.311.0 (PAPER_304 = v0.311.0)")
+assert_that(C.VERSION == "0.312.0", "uqff_calculator.VERSION = 0.312.0 (PAPER_305 = v0.312.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4141,6 +4141,19 @@ assert_that(abs(_r304v['xi_aether'] - 1.852e24) / 1.852e24 < 0.005 and _r304v['x
 assert_that('rung 3' in _r304v['vacuum_driver_hierarchy'],
             "PAPER_304: 3rd rung of vacuum-driver hierarchy (atom aether; universe Lambda PAPER_296; neutron-star EM PAPER_299)")
 assert_that(C.wired_count() >= 318, "wired_count >= 318 (PAPER_304 wired)")
+
+_r305 = C.calc('PAPER_305')['value']
+assert_that(abs(_r305['dM_over_M0_1Myr'] - 10.0) < 1e-6 and _r305['dM_over_M0_formula'] == 'SFR*1e6yr/M0',
+            "PAPER_305: dM/M0 at 1 Myr = SFR*1e6yr/M0 = 10.0 (first UQFF SFR runaway)")
+assert_that(abs(_r305['m_factor_1Myr'] - 11.0) < 1e-6 and _r305['runaway'],
+            "PAPER_305: m_factor(1 Myr) = 1 + dM/M0 = 11.0 (gravity amplified 11-fold in 1 Myr)")
+assert_that(abs(_r305['t_consume_yr'] - 1.0e5) < 1.0,
+            "PAPER_305: t_consume = M0/SFR = 100 kyr (cloud depletion time)")
+assert_that(abs(_r305['SFR_kg_s'] - 6.303e21) / 6.303e21 < 0.005 and abs(_r305['dg_dt'] - 1.553e-24) / 1.553e-24 < 0.005,
+            "PAPER_305: SFR_kg_s = 6.303e21; dg/dt = G*SFR_kg_s/r^2 = 1.553e-24 m/s^3")
+assert_that(abs(_r305['dg_1Myr'] - 4.90e-11) / 4.90e-11 < 0.01,
+            "PAPER_305: dg over 1 Myr = 4.90e-11 m/s2 (~10*g_base, consistent with m_factor=11)")
+assert_that(C.wired_count() >= 319, "wired_count >= 319 (PAPER_305 wired)")
 
 
 # =============================================================================

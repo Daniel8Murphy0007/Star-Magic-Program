@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_304** (hydrogen PToE aether-gravitational dominance ξ_aether=1.852e24; OPEN_RULING Q-247, wired v0.311.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–304 = **318 wired**.
-- **Distinct wired papers: 318** = `wired_count()` = `len(DISPATCH)`. Composed of **304** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **71 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1937 ⬜** not-touched (71 + 247 + 1937 = 2255 ✓). Wired file-rows (71 + 247 = **318**) equal `wired_count()`.
+- **Campaign frontier: PAPER_305** (Lagoon Nebula SFR mass-runaway amplifier ΔM/M0=10 at 1 Myr, wired v0.312.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–305 = **319 wired**.
+- **Distinct wired papers: 319** = `wired_count()` = `len(DISPATCH)`. Composed of **305** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **72 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1936 ⬜** not-touched (72 + 247 + 1936 = 2255 ✓). Wired file-rows (72 + 247 = **319**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1564,7 +1564,7 @@
 | ✓ | PAPER_302 | HydrogenPToE Ug4iReactiveResonanceVacuumBridge Gamma 4p704e36 |
 | ✓ | PAPER_303 | HydrogenPToE LymanAlphaTripleFrequencyResonanceLock freqRatio 1p000 |
 | ⚠ | PAPER_304 | HydrogenPToE AetherGravitationalDominanceAtomicScale xiAether 1p852e24 |
-| ⬜ | PAPER_305 | LagoonNebula SFRMassRunawayAmplifier DeltaM 10 100kyr |
+| ✓ | PAPER_305 | LagoonNebula SFRMassRunawayAmplifier DeltaM 10 100kyr |
 | ⬜ | PAPER_306 | LagoonNebula HerschelRadiationErosion etaRad 1p53e18 |
 | ⬜ | PAPER_307 | LagoonNebula DualRadiationEMBarrier aEM over aRad 12p77 |
 | ⬜ | PAPER_308 | SpiralGalaxy TorqueGravitationalAmplifier tau 2p046 307Myr |

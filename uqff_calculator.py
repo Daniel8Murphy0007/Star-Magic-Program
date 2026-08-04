@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.311.0"
+VERSION = "0.312.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16761,4 +16761,43 @@ def _paper_304(dataset):
         'source': 'PAPER_304',
         'residual_pct': 0.0,
         'status': 'OPEN_RULING',
+    }
+
+
+@_register('PAPER_305')
+def _paper_305(dataset):
+    G = G_OBSERVED
+    M_sun = 1.989e30                                      # solar mass, astro anchor
+    yr = 3.15576e7                                        # seconds per year, anchor
+    M0_sun = 1.0e4                                        # M8 molecular cloud mass (M_sun), anchor
+    SFR_sun = 0.1                                         # star formation rate (M_sun/yr), anchor
+    r = 5.2e17                                            # nebula half-span (m ~55 ly), anchor
+    SFR_kg_s = SFR_sun * M_sun / yr                       # 6.303e21 kg/s
+    dM_over_M0 = SFR_sun * 1.0e6 / M0_sun                 # 10.0 at 1 Myr
+    m_factor = 1.0 + dM_over_M0                           # 11.0 gravity amplification at 1 Myr
+    t_consume_yr = M0_sun / SFR_sun                       # 1e5 yr = 100 kyr cloud depletion
+    SFR_specific = SFR_sun / M0_sun                       # 1e-5 yr^-1
+    dg_dt = G * SFR_kg_s / r ** 2                         # 1.553e-24 m/s^3 gravity rate of change
+    dg_1Myr = dg_dt * (1.0e6 * yr)                        # 4.90e-11 m/s^2 over 1 Myr
+    return {
+        'value': {
+            'domain': '3.03 (Lagoon Nebula M8/NGC 6523; first UQFF SFR mass-runaway amplifier)',
+            'source_thread': 'Session 87 LAGOON_UQFF_MODULE.cpp (29th C++ module, first H II region)',
+            'system': 'Lagoon Nebula (M8 / NGC 6523), H II region at 1.25 kpc',
+            'M0_sun': M0_sun, 'SFR_sun_per_yr': SFR_sun, 'r_m': r,
+            'SFR_kg_s': SFR_kg_s,                        # 6.303e21
+            'dM_over_M0_1Myr': dM_over_M0,               # 10.0
+            'dM_over_M0_formula': 'SFR*1e6yr/M0',
+            'm_factor_1Myr': m_factor,                  # 11.0
+            'runaway': dM_over_M0 > 1.0,                 # True (first UQFF SFR runaway)
+            't_consume_yr': t_consume_yr,               # 1e5 = 100 kyr
+            'SFR_specific_per_yr': SFR_specific,        # 1e-5
+            'dg_dt': dg_dt,                             # 1.553e-24
+            'dg_dt_formula': 'G*SFR_kg_s/r^2',
+            'dg_1Myr': dg_1Myr,                         # 4.90e-11 (~10*g_base, consistent w/ m_factor)
+        },
+        'formula': 'dM/M0(1Myr)=SFR*1e6yr/M0=10.0 -> m_factor=11.0 (g amplified 11x in 1 Myr); t_consume=M0/SFR=100 kyr; dg/dt=G*SFR_kg_s/r^2=1.553e-24 m/s^3; first UQFF SFR mass-runaway (dM>M0 within 1 Myr)',
+        'source': 'PAPER_305',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
     }

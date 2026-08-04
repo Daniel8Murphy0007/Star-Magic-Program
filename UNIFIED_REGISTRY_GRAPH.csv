@@ -1340,3 +1340,9 @@ observable,g_DPM_hydrogen_proton,observable,xi_aether_dominance,denominator
 observable,g_DPM_hydrogen_proton,paper,PAPER_304,wired
 observable,xi_aether_dominance,paper,PAPER_304,open_ruling Q-247
 observable,a_aether_bohr,paper,PAPER_304,open_ruling Q-247
+observable,dM_over_M0_lagoon,observable,t_consume_lagoon,both from SFR/M0
+primitive,G_OBSERVED,observable,dg_dt_lagoon,G factor
+observable,dM_over_M0_lagoon,paper,PAPER_305,wired
+observable,t_consume_lagoon,paper,PAPER_305,wired
+observable,dg_dt_lagoon,paper,PAPER_305,wired
+paper,PAPER_305,paper,PAPER_284,M8 vs M16 SFR comparison
