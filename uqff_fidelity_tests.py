@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.303.0", "uqff_calculator.VERSION = 0.303.0 (PAPER_296 = v0.303.0)")
+assert_that(C.VERSION == "0.304.0", "uqff_calculator.VERSION = 0.304.0 (PAPER_297 = v0.304.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4036,6 +4036,19 @@ assert_that(abs(_r296['d_Lambda_m'] - 0.313) < 0.005,
 assert_that(_r296['first_explicit_dark_energy_term'],
             "PAPER_296: first UQFF module to extract Lambda explicitly (prior 25 folded it into H(z))")
 assert_that(C.wired_count() >= 310, "wired_count >= 310 (PAPER_296 wired)")
+
+_r297 = C.calc('PAPER_297')['value']
+assert_that(abs(_r297['v_exp'] - 9.984e8) < 1e6 and _r297['v_exp_formula'] == 'H0*r_obs',
+            "PAPER_297: v_exp = H0*r_obs = 9.984e8 m/s (observable-universe boundary recession velocity)")
+assert_that(abs(_r297['eta_exp'] - 3.328) < 0.005 and _r297['superluminal'],
+            "PAPER_297: eta_exp = v_exp/c = 3.328 > 1 (first UQFF superluminal expansion module)")
+assert_that(abs(_r297['r_H_m'] - 1.322e26) < 1e24 and abs(_r297['r_obs_over_rH'] - 3.328) < 0.005,
+            "PAPER_297: r_H = c/H0 = 1.322e26 m; r_obs = 3.328 Hubble lengths")
+assert_that(abs(_r297['xi_H'] - 1.988) < 0.005 and abs(_r297['a_base_tH'] - 6.854e-10) < 1e-12,
+            "PAPER_297: xi_H = 1 + H0*t_H = 1.988 Hubble coupling; a_base(t_H) = 6.854e-10 (near-doubling)")
+assert_that(_r297['special_relativity_ok'],
+            "PAPER_297: superluminal v_exp is a coordinate (metric-expansion) velocity, not an SR violation")
+assert_that(C.wired_count() >= 311, "wired_count >= 311 (PAPER_297 wired)")
 
 
 # =============================================================================

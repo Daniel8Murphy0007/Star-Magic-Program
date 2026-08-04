@@ -1286,3 +1286,10 @@ observable,a_Lambda_dark_energy,observable,d_Lambda_cosmic_displacement,0.5*a*t_
 observable,a_Lambda_dark_energy,paper,PAPER_296,wired
 observable,Gamma_Lambda_screening,paper,PAPER_296,wired
 observable,d_Lambda_cosmic_displacement,paper,PAPER_296,wired
+primitive,H0_KM_PER_S_PER_MPC,observable,v_exp_boundary_recession,H0 factor
+primitive,MPC_TO_M,observable,v_exp_boundary_recession,Mpc->m conversion
+primitive,C_OBSERVED,observable,eta_exp_superluminal_ratio,c denominator
+observable,v_exp_boundary_recession,observable,eta_exp_superluminal_ratio,v_exp/c
+observable,v_exp_boundary_recession,paper,PAPER_297,wired
+observable,eta_exp_superluminal_ratio,paper,PAPER_297,wired
+observable,xi_H_hubble_coupling,paper,PAPER_297,wired

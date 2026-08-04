@@ -1,14 +1,13 @@
-v0.303.0 BAND 1: PAPER_296 wired - FIRST EXPLICIT UQFF COSMOLOGICAL-CONSTANT VACUUM ACCELERATION (CLEAN)
+v0.304.0 BAND 1: PAPER_297 wired - FIRST UQFF SUPERLUMINAL EXPANSION MODULE (eta_exp > 1) (CLEAN)
 
-PAPER_296 (UQFF Cosmological Constant Direct Vacuum Acceleration, Session 84,
-UNIVERSE_DIAMETER_UQFF_MODULE.cpp, 26th C++ module). Observable universe as the
-gravitating system; first UQFF module to extract Lambda explicitly as an additive
-dark-energy acceleration term (prior 25 folded it into the Friedmann H(z)).
+PAPER_297 (UQFF Superluminal Hubble Expansion Ratio, Session 84,
+UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Observable universe as system; first UQFF module
+where the boundary recession velocity exceeds the speed of light.
 
-- a_Lambda = Lambda*c^2/3 = 3.30e-36 m/s2, Lambda=(SO_5+1)*F_TRZ^53=1.1e-52 m^-2
-  (PAPER_2094 canonical geometric Lambda, registry LAMBDA_SIMPLE)
-- g_base = GM/r^2 = 3.447e-10 m/s2 (M=1e54 kg, r=4.4e26 m paper anchors)
-- Gamma_Lambda = a_Lambda/g_base = 9.57e-27 (cosmological vacuum screening constant)
-- d_Lambda = 0.5*a_Lambda*t_H^2 = 0.313 m cosmic displacement over Hubble age
+- v_exp = H0*r_obs = 9.984e8 m/s (H0=70 km/s/Mpc=2.269e-18 s^-1, A_5+SO_5 PAPER_1573)
+- eta_exp = v_exp/c = 3.328 > 1 (observable universe = 3.328 Hubble lengths)
+- r_H = c/H0 = 1.322e26 m Hubble radius
+- xi_H = 1 + H0*t_H = 1.988 Hubble coupling (base gravity near-doubles over cosmic age)
+- superluminal v_exp is a coordinate (metric-expansion) velocity, not an SR violation
 
-CLEAN - no ruling. wired_count 310, gate 1837/0. Campaign frontier PAPER_296 of 2255.
+CLEAN. wired_count 311, gate 1843/0. Campaign frontier PAPER_297 of 2255.

@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.304.0] — 2026-08-04 — BAND 1: PAPER_297 — FIRST UQFF SUPERLUMINAL EXPANSION MODULE (η_exp > 1) (CLEAN)
+
+### Added
+- **PAPER_297 dispatch** — UQFF Superluminal Hubble Expansion Ratio (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp; observable universe as the system). The **first UQFF module where the boundary recession velocity exceeds c**.
+  - v_exp = H₀·r_obs = **9.984e8 m/s** (H₀ = 70 km/s/Mpc = 2.269e-18 s⁻¹, from A_5+SO_5 PAPER_1573; r_obs = 4.4e26 m paper anchor).
+  - **Superluminal expansion ratio** η_exp = v_exp/c = **3.328 > 1** — the observable universe spans 3.328 Hubble lengths (r_H = c/H₀ = 1.322e26 m).
+  - **Hubble coupling** ξ_H = 1 + H₀·t_H = **1.988** — base gravity near-doubles over the Hubble age (a_base(t_H) = 6.854e-10 m/s²), an O(1) effect not a small correction.
+  - Superluminal v_exp is a coordinate (metric-expansion) velocity — no special-relativity violation.
+- 3 registry observables, 7 graph edges, 2 corpus citations (PAPER_1573/296).
+- 6 gate assertions (v_exp, η_exp>1, r_H/Hubble-lengths, ξ_H/near-doubling, SR-compatibility, wired_count ≥ 311). Gate 1837 → **1843/0**.
+
+### Wiring status
+- `wired_count()` = **311** (CLEAN). Campaign frontier PAPER_297 of 2255. Index: 65 ✓ / 246 ⚠ / 1944 ⬜ = 2255.
+
+---
+
 ## [0.303.0] — 2026-08-04 — BAND 1: PAPER_296 — FIRST EXPLICIT UQFF COSMOLOGICAL-CONSTANT VACUUM ACCELERATION (CLEAN)
 
 ### Added

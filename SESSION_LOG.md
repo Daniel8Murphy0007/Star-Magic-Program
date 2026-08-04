@@ -4281,3 +4281,19 @@ explicitly as an additive dark-energy acceleration term (prior 25 folded it into
 
 CLEAN — no ruling. Gate: 1837/0. Registry 600 rows / 1288 edges / 314 ledgers.
 Campaign frontier: PAPER_296 / 2,255. Next: PAPER_297.
+
+---
+
+## v0.304.0 — 2026-08-04 — PAPER_297 (first UQFF superluminal expansion module, eta_exp>1)
+
+Wired PAPER_297 (Session 84, UNIVERSE_DIAMETER_UQFF_MODULE.cpp). Observable universe
+as system; first UQFF module where boundary recession velocity exceeds c.
+
+- v_exp = H0*r_obs = 9.984e8 m/s (H0=70 km/s/Mpc=2.269e-18, A_5+SO_5 PAPER_1573; r_obs=4.4e26 m).
+- eta_exp = v_exp/c = 3.328 > 1; r_obs = 3.328 Hubble lengths (r_H = c/H0 = 1.322e26 m).
+- xi_H = 1 + H0*t_H = 1.988 Hubble coupling; base gravity near-doubles over cosmic age
+  (a_base(t_H)=6.854e-10). All verified in Python.
+- Superluminal v_exp is coordinate (metric-expansion) velocity, not SR violation.
+
+CLEAN. Gate: 1843/0. Registry 603 rows / 1295 edges / 316 ledgers.
+Campaign frontier: PAPER_297 / 2,255. Next: PAPER_298.

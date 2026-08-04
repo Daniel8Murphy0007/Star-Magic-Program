@@ -598,3 +598,6 @@ f_DPM2_scaling_law,PAPER_295 quadratic class scaling,scaling_law,a_super ∝ f_D
 a_Lambda_dark_energy,PAPER_296 observable universe,derived_acceleration,Lambda*c^2/3,LAMBDA_SIMPLE*C_OBSERVED^2/3,3.30e-36 m/s2,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_2094;PAPER_1573,WIRED
 Gamma_Lambda_screening,PAPER_296 vacuum screening constant,derived_ratio,a_Lambda/g_base,dark-energy vs DPM-seeded gravity,9.57e-27,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_296,WIRED
 d_Lambda_cosmic_displacement,PAPER_296 cosmic displacement,derived_length,0.5*a_Lambda*t_H^2,over Hubble age,0.313 m,PAPER_296,0.0,cosmology/dark-energy,resonance,PAPER_296,1,1,0,0,PAPER_296,WIRED
+v_exp_boundary_recession,PAPER_297 observable universe,derived_velocity,H0*r_obs,H0_KM_PER_S_PER_MPC*1000/MPC_TO_M * r_obs,9.984e8 m/s,PAPER_297,0.0,cosmology/hubble,resonance,PAPER_297,1,1,0,0,PAPER_1573;PAPER_296,WIRED
+eta_exp_superluminal_ratio,PAPER_297 superluminal expansion,derived_ratio,v_exp/c,r_obs/r_H,3.328,PAPER_297,0.0,cosmology/hubble,resonance,PAPER_297,1,1,0,0,PAPER_297,WIRED
+xi_H_hubble_coupling,PAPER_297 Hubble coupling factor,derived_factor,1+H0*t_H,near-doubling over Hubble age,1.988,PAPER_297,0.0,cosmology/hubble,resonance,PAPER_297,1,1,0,0,PAPER_297,WIRED

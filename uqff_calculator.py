@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.303.0"
+VERSION = "0.304.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16471,6 +16471,43 @@ def _paper_296(dataset):
         },
         'formula': 'a_Lambda=Lambda*c^2/3=3.30e-36 m/s2 (first explicit UQFF dark-energy term); Gamma_Lambda=a_Lambda/g_base=9.57e-27; d_Lambda=0.5*a_Lambda*t_H^2=0.313 m cosmic displacement; Lambda=(SO_5+1)*F_TRZ^53=1.1e-52 m^-2',
         'source': 'PAPER_296',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_297')
+def _paper_297(dataset):
+    H0 = H0_KM_PER_S_PER_MPC * 1000.0 / MPC_TO_M          # 2.269e-18 s^-1 (A_5+SO_5=70, PAPER_1573)
+    c = C_OBSERVED
+    r_obs = 4.4e26                                        # observable-universe radius, paper anchor
+    t_H = 4.355e17                                        # Hubble age 13.8 Gyr in s, paper anchor
+    g_base = 3.447e-10                                    # DPM-seeded base gravity (PAPER_296)
+    v_exp = H0 * r_obs                                    # 9.984e8 m/s boundary recession velocity
+    eta_exp = v_exp / c                                  # 3.328 superluminal expansion ratio (>1)
+    r_H = c / H0                                          # 1.322e26 m Hubble radius
+    r_obs_over_rH = r_obs / r_H                           # 3.328 (= eta_exp)
+    xi_H = 1.0 + H0 * t_H                                 # 1.988 Hubble-expansion coupling (~near-doubling)
+    a_base_tH = g_base * xi_H                             # 6.854e-10 base gravity with Hubble coupling
+    return {
+        'value': {
+            'domain': '2.95 (observable universe as system; first UQFF superluminal expansion parameter eta_exp>1)',
+            'source_thread': 'Session 84 UNIVERSE_DIAMETER_UQFF_MODULE.cpp (26th C++ UQFF module)',
+            'system': 'Observable Universe (boundary recession velocity)',
+            'H0_s^-1': H0, 'r_obs_m': r_obs, 't_H_s': t_H,
+            'v_exp': v_exp,                              # 9.984e8
+            'v_exp_formula': 'H0*r_obs',
+            'eta_exp': eta_exp,                          # 3.328 = v_exp/c > 1
+            'eta_exp_formula': 'v_exp/c (superluminal Hubble expansion ratio)',
+            'superluminal': eta_exp > 1.0,               # True (first UQFF module)
+            'r_H_m': r_H,                                # 1.322e26 Hubble radius
+            'r_obs_over_rH': r_obs_over_rH,              # 3.328 Hubble lengths
+            'xi_H': xi_H,                                # 1.988 Hubble coupling factor
+            'a_base_tH': a_base_tH,                      # 6.854e-10 near-doubling over cosmic time
+            'special_relativity_ok': True,               # coordinate (metric-expansion) velocity, not proper
+        },
+        'formula': 'v_exp=H0*r_obs=9.984e8 m/s; eta_exp=v_exp/c=3.328>1 (first UQFF superluminal module); r_obs/r_H=3.328 Hubble lengths; xi_H=1+H0*t_H=1.988 (Hubble coupling near-doubling)',
+        'source': 'PAPER_297',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }
