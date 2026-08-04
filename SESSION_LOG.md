@@ -4163,3 +4163,21 @@ Frontier PAPER_289 -> PAPER_290. Version PAPER_290 = v0.297.0.
 
 Gate: 1805/0. Registry 589 rows / 1268 edges / 304 ledgers. Campaign frontier:
 PAPER_290 / 2,255. Next: PAPER_291.
+
+---
+
+## 2026-08-03 — v0.298.0 — BAND 1: PAPER_291 — CRAB FILAMENT SPECTRAL TRIAD (CLEAN)
+
+PAPER_291 (Crab Filament Spectral Triad 9-decade DPM seeding + V_knot, Session 82,
+CRAB_RESONANCE_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). Three DPM-seeded terms
+a_i=10*f_i*a_DPM/c (a_DPM=3.772e-57 from PAPER_290) spanning 9.0 decades: f_quantum=
+1.445e-17 Hz (2.19 Gyr)->1.817e-81, f_fluid=1.269e-14 Hz (2.49 Myr, V_knot=1e3)->
+1.596e-75, f_exp=1.373e-8 Hz (2.31 yr)->1.726e-72. FIRST UQFF volumetric filament knot
+coupling V_knot=1e3 m3 (vs V_sys); a_fluid/a_quantum=8.785e5.
+
+wired_count 304 -> 305. Gate +5 (1810/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_291 -> checkmark (60 / 245 / 1950 = 2255; wired 305 = count).
+Frontier PAPER_290 -> PAPER_291. Version PAPER_291 = v0.298.0.
+
+Gate: 1810/0. Registry 590 rows / 1269 edges / 305 ledgers. Campaign frontier:
+PAPER_291 / 2,255. Next: PAPER_292.

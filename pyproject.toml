@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.297.0"
-description = "UQFF Star-Magic-Program v0.297.0: PAPER_290 wired (CLEAN) - Crab SNR DPM Vacuum Dilution; a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3; first UQFF module with time-dependent V_sys(t); dilution D=(r_now/r0)^3=6.69 over 971 yr; Gamma_THz=10*f_DPM*v_exp/c=5.0e10 (highest in catalog). wired_count 304, gate 1805/0. Campaign frontier PAPER_290 of 2255. (v0.285.0 burned; v0.286.0-0.296.0 shipped.)"
+version = "0.298.0"
+description = "UQFF Star-Magic-Program v0.298.0: PAPER_291 wired (CLEAN) - Crab Filament Spectral Triad; three DPM-seeded terms a_i=10*f_i*a_DPM/c spanning 9.0 decades (f_quantum 1.445e-17 -> f_exp 1.373e-8 Hz); first UQFF volumetric filament knot coupling V_knot=1e3 in the fluid term. wired_count 305, gate 1810/0. Campaign frontier PAPER_291 of 2255. (v0.285.0 burned; v0.286.0-0.297.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

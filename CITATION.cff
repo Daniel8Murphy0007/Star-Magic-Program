@@ -3,7 +3,7 @@ message: "If you use Star-Magic-Program (UQFF systematic rebuild) in your resear
 type: software
 title: "Star-Magic-Program: UQFF Systematic Rebuild"
 abbreviation: "UQFF"
-version: "0.297.0"
+version: "0.298.0"
 date-released: "2026-08-03"
 authors:
   - family-names: "Murphy"
@@ -53,7 +53,7 @@ preferred-citation:
     - family-names: "Murphy"
       given-names: "Daniel T."
   year: 2026
-  version: "0.297.0"
+  version: "0.298.0"
   url: "https://github.com/Daniel8Murphy0007/Star-Magic-Program"
   notes: >-
     Cite both the software and the relevant whitepapers by PAPER_N

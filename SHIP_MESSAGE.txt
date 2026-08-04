@@ -1,16 +1,17 @@
-v0.297.0 BAND 1: PAPER_290 wired - CRAB SNR DPM VACUUM DILUTION (CLEAN)
+v0.298.0 BAND 1: PAPER_291 wired - CRAB FILAMENT SPECTRAL TRIAD (CLEAN)
 
-PAPER_290 (Crab SNR DPM Vacuum Dilution a_DPM(t) prop r(t)^-3, S82,
-CRAB_RESONANCE_UQFF_MODULE.cpp 24th C++ module, first PWN) wired as one dispatch
-(CLEAN). First UQFF module with TIME-DEPENDENT V_sys(t).
+PAPER_291 (Crab Filament Spectral Triad 9-decade DPM seeding + V_knot, S82,
+CRAB_RESONANCE_UQFF_MODULE.cpp) wired as one dispatch (CLEAN).
 
-V_sys(t)=(4/3)pi(r0+v_exp*t)^3; a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3
-(E_vac=rho_UA). Crab SN 1054, v_exp=1.5e6 m/s. DPM dilution D=a(0)/a(971)=(r_now/r0)^3
-=(9.796/5.2)^3=6.69; a(0)=2.521e-56 -> a(971)=3.772e-57. Gamma_THz=10*f_DPM*v_exp/c=
-5.0e10 (1500x RSC 3.33e7, highest in catalog - driven by SNR shock velocity).
+Three DPM-seeded terms a_i=10*f_i*a_DPM/c (a_DPM=3.772e-57 from PAPER_290) spanning
+9.0 decades: f_quantum=1.445e-17 Hz (de Broglie, 2.19 Gyr)->1.817e-81; f_fluid=
+1.269e-14 Hz (Kelvin-Helmholtz, 2.49 Myr, V_knot=1e3)->1.596e-75; f_exp=1.373e-8 Hz
+(free expansion, 2.31 yr, matches HST wisp variability)->1.726e-72. FIRST UQFF
+volumetric filament knot coupling V_knot=1e3 m3 (vs full V_sys); a_fluid/a_quantum=
+f_fluid*V_knot/f_quantum=8.785e5.
 
-wired_count 303 -> 304. Index PAPER_290 -> checkmark (59/245/1951=2255).
-Version PAPER_290 = v0.297.0.
+wired_count 304 -> 305. Index PAPER_291 -> checkmark (60/245/1950=2255).
+Version PAPER_291 = v0.298.0.
 
-Gate: 1805/0. Registry 589 rows / 1268 edges / 304 ledgers. Campaign frontier:
-PAPER_290 / 2,255. Next: PAPER_291.
+Gate: 1810/0. Registry 590 rows / 1269 edges / 305 ledgers. Campaign frontier:
+PAPER_291 / 2,255. Next: PAPER_292.

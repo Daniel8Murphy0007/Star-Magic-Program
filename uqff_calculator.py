@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.297.0"
+VERSION = "0.298.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16245,6 +16245,43 @@ def _paper_290(dataset):
         },
         'formula': 'a_DPM(t)=F_DPM*f_DPM*E_vac/(c*V_sys(t)) prop 1/r(t)^3; D=a(0)/a(971)=(r_now/r0)^3=(9.796/5.2)^3=6.69; a(0)=2.521e-56 -> a(971)=3.772e-57; Gamma_THz=10*f_DPM*v_exp/c=5.0e10',
         'source': 'PAPER_290',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_291')
+def _paper_291(dataset):
+    import math
+    c = 3e8
+    a_DPM = 3.772e-57                                     # Crab a_DPM at 971 yr (PAPER_290)
+    V_knot = 1e3                                          # filament vortical knot volume (~10 m cell)
+    f_quantum = 1.445e-17                                 # de Broglie mode (T~2.19 Gyr)
+    f_fluid = 1.269e-14                                   # Kelvin-Helmholtz turbulence (T~2.49 Myr)
+    f_exp = 1.373e-8                                      # free expansion mode (T~2.31 yr)
+    a_quantum = 10.0 * f_quantum * a_DPM / c              # 1.817e-81
+    a_fluid = 10.0 * f_fluid * V_knot * a_DPM / c         # 1.596e-75 (with V_knot)
+    a_exp = 10.0 * f_exp * a_DPM / c                      # 1.726e-72
+    freq_span_decades = math.log10(f_exp / f_quantum)     # 9.0
+    fluid_quantum_ratio = a_fluid / a_quantum             # 8.785e5
+    return {
+        'value': {
+            'domain': '2.89 (Crab filament spectral triad, quantum-fluid-expansion 9 decades)',
+            'source_thread': 'Session 82 CRAB_RESONANCE_UQFF_MODULE.cpp (24th C++)',
+            'system': 'Crab Nebula filament triad (HST/Chandra structure)',
+            'a_DPM_ref': a_DPM,
+            'f_quantum_Hz': f_quantum, 'a_quantum': a_quantum,   # de Broglie, 2.19 Gyr
+            'f_fluid_Hz': f_fluid, 'a_fluid': a_fluid,           # KH turbulence, 2.49 Myr
+            'f_exp_Hz': f_exp, 'a_exp': a_exp,                   # free expansion, 2.31 yr
+            'V_knot_m3': V_knot,
+            'first_volumetric_knot_coupling': True,      # first V_knot term (vs V_sys)
+            'a_i_formula': '10*f_i*a_DPM/c (fluid: *V_knot)',
+            'freq_span_decades': freq_span_decades,      # 9.0
+            'accel_span_decades': freq_span_decades,     # linear proportionality preserved
+            'fluid_quantum_ratio': fluid_quantum_ratio,  # 8.785e5
+        },
+        'formula': 'triad a_i=10*f_i*a_DPM/c (a_fluid*V_knot); f_quantum 1.445e-17->a 1.817e-81, f_fluid 1.269e-14 (V_knot=1e3)->a 1.596e-75, f_exp 1.373e-8->a 1.726e-72; span 9.0 decades',
+        'source': 'PAPER_291',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

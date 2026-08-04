@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.297.0", "uqff_calculator.VERSION = 0.297.0 (PAPER_290 = v0.297.0)")
+assert_that(C.VERSION == "0.298.0", "uqff_calculator.VERSION = 0.298.0 (PAPER_291 = v0.298.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3966,6 +3966,17 @@ assert_that(_r290['V_sys_time_dependent'] and _r290['a_DPM_dilution_law'] == 'a_
 assert_that(abs(_r290['Gamma_THz'] - 5.0e10) < 1e8 and _r290['highest_gamma_thz_in_catalog'],
             "PAPER_290: Gamma_THz = 10*f_DPM*v_exp/c = 5.0e10 (1500x RSC; highest in catalog)")
 assert_that(C.wired_count() >= 304, "wired_count >= 304 (PAPER_290 wired)")
+
+_r291 = C.calc('PAPER_291')['value']
+assert_that(abs(_r291['freq_span_decades'] - 9.0) < 0.05,
+            "PAPER_291: filament triad spans 9.0 decades (f_quantum 1.445e-17 to f_exp 1.373e-8 Hz)")
+assert_that(abs(_r291['a_quantum'] - 1.817e-81) < 1e-83 and abs(_r291['a_exp'] - 1.726e-72) < 1e-74,
+            "PAPER_291: a_quantum=10*f_q*a_DPM/c=1.817e-81; a_exp=1.726e-72 (linear proportionality)")
+assert_that(abs(_r291['a_fluid'] - 1.596e-75) < 1e-77 and _r291['first_volumetric_knot_coupling'] and _r291['V_knot_m3'] == 1e3,
+            "PAPER_291: a_fluid=10*f_fl*V_knot*a_DPM/c=1.596e-75; first UQFF volumetric knot coupling (V_knot=1e3)")
+assert_that(abs(_r291['fluid_quantum_ratio'] - 8.785e5) < 1e3,
+            "PAPER_291: a_fluid/a_quantum = f_fluid*V_knot/f_quantum = 8.785e5")
+assert_that(C.wired_count() >= 305, "wired_count >= 305 (PAPER_291 wired)")
 
 
 # =============================================================================

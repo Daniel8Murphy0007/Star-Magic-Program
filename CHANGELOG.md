@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.298.0] — 2026-08-03 — BAND 1: PAPER_291 — CRAB FILAMENT SPECTRAL TRIAD (CLEAN)
+
+### Added
+- **PAPER_291 dispatch** — Crab Filament Spectral Triad, 9-decade quantum-fluid-expansion DPM seeding (Session 82, CRAB_RESONANCE_UQFF_MODULE.cpp).
+  - Three DPM-seeded acceleration terms a_i = 10·f_i·a_DPM/c (with a_DPM = 3.772e-57 from PAPER_290) spanning **9.0 decades**: f_quantum = 1.445e-17 Hz (de Broglie, ~2.19 Gyr) → 1.817e-81; f_fluid = 1.269e-14 Hz (Kelvin-Helmholtz, ~2.49 Myr) → 1.596e-75; f_exp = 1.373e-8 Hz (free expansion, ~2.31 yr, matches HST wisp variability) → 1.726e-72.
+  - **First UQFF volumetric filament knot coupling:** the fluid term multiplies by V_knot = 1e3 m³ (an individual filament vortical knot), giving a_fluid/a_quantum = f_fluid·V_knot/f_quantum = 8.785e5 — distinct from all prior terms that use the full V_sys.
+- Gate +5 assertions (→ 1810, 0 failures). wired_count 304 → **305**. Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_291 → ✓.
+
+### Notes
+- CLEAN — all values reproduce.
+
+---
+
 ## [0.297.0] — 2026-08-03 — BAND 1: PAPER_290 — CRAB SNR DPM VACUUM DILUTION (CLEAN)
 
 ### Added
