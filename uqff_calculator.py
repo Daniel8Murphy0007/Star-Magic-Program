@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.292.0"
+VERSION = "0.293.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16051,6 +16051,43 @@ def _paper_285(dataset):
         },
         'formula': 't_half=tau*ln(2)=9.468e13*0.6931=6.561e13 s=2.079 Myr; DeltagMax=E0*g_base=0.3*1.454e-12=4.36e-13; saturation: t_half 50%, tau 63.2%, 5 Myr 81.1%, inf 100%',
         'source': 'PAPER_285',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_286')
+def _paper_286(dataset):
+    import math
+    H0 = H0_KM_PER_S_PER_MPC                              # 70 canonical (A_5+SO_5)
+    Om = 0.3; OL = 0.7
+    z = 0.0015                                            # M16 ~5700 ly
+    H_z0 = H0 * math.sqrt(Om * 1.0 + OL)                  # 70.000
+    H_z = H0 * math.sqrt(Om * (1.0 + z) ** 3 + OL)        # 70.047
+    kappa_neb = (H_z - H_z0) / H_z0                        # 6.76e-4 (~6.71e-4 paper rounding)
+    H_SI = H_z * 1000.0 / MPC_TO_M                         # 2.270e-18 s^-1
+    g_base = 1.454e-12
+    t = 1.578e14                                          # 5 Myr
+    g_exp = g_base * H_SI * t                             # 5.21e-16
+    return {
+        'value': {
+            'domain': '2.84 (M16 nebular Friedmann redshift parameter kappa_neb)',
+            'source_thread': 'Session 80 M16_UQFF_MODULE.cpp UQFF 2.0',
+            'system': 'M16 Eagle Nebula (IC 4703, z=0.0015, ~5700 ly)',
+            'z': z, 'H0_km_s_mpc': H0, 'Om': Om, 'OL': OL,
+            'H_z0_km_s_mpc': H_z0,                       # 70.000
+            'H_z_km_s_mpc': H_z,                         # 70.047
+            'H_z_formula': 'H0*sqrt(Om*(1+z)^3 + OL)',
+            'kappa_neb': kappa_neb,                      # 6.76e-4
+            'kappa_neb_formula': '(H(z)-H(0))/H(0)',
+            'kappa_neb_paper': 6.71e-4,
+            'H_SI': H_SI,                                # 2.270e-18
+            'g_exp_5Myr': g_exp,                         # 5.21e-16
+            'first_nebular_module_z_gt_0': True,         # first sub-galactic z>0
+            'distinct_from_kappa_recession': True,       # nebular vs galactic/extragalactic class
+        },
+        'formula': 'kappa_neb=(H(0.0015)-H(0))/H(0)=(70.047-70.000)/70.000=6.71e-4; H(z)=H0*sqrt(Om*(1+z)^3+OL); g_exp=g_base*H(z)_SI*t=5.21e-16 at 5 Myr',
+        'source': 'PAPER_286',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

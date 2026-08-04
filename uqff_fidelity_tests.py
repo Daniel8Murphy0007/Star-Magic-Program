@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.292.0", "uqff_calculator.VERSION = 0.292.0 (PAPER_285 = v0.292.0)")
+assert_that(C.VERSION == "0.293.0", "uqff_calculator.VERSION = 0.293.0 (PAPER_286 = v0.293.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3911,6 +3911,17 @@ assert_that(_r285['saturation_profile']['t_half']['E_rad_over_E0_pct'] == 50.0 a
 assert_that(_r285['tau_only_63pct_not_100'] and _r285['first_photoevaporation_halftime_catalog'],
             "PAPER_285: at tau erosion only 63.2% (pillars survive); first photoevaporation half-time catalog")
 assert_that(C.wired_count() >= 299, "wired_count >= 299 (PAPER_285 wired)")
+
+_r286 = C.calc('PAPER_286')['value']
+assert_that(abs(_r286['H_z_km_s_mpc'] - 70.047) < 0.01 and _r286['H_z_formula'] == 'H0*sqrt(Om*(1+z)^3 + OL)',
+            "PAPER_286: H(z=0.0015) = 70*sqrt(0.3*(1.0015)^3+0.7) = 70.047 km/s/Mpc (canonical H0=70)")
+assert_that(abs(_r286['kappa_neb'] - 6.71e-4) < 1e-5 and _r286['kappa_neb_formula'] == '(H(z)-H(0))/H(0)',
+            "PAPER_286: kappa_neb = (70.047-70.000)/70.000 = 6.71e-4 (nebular Friedmann redshift parameter)")
+assert_that(abs(_r286['g_exp_5Myr'] - 5.21e-16) < 1e-18 and abs(_r286['H_SI'] - 2.270e-18) < 1e-21,
+            "PAPER_286: H_SI=2.270e-18 s^-1; g_exp(5Myr)=g_base*H_SI*t=5.21e-16 m/s2")
+assert_that(_r286['first_nebular_module_z_gt_0'] and _r286['distinct_from_kappa_recession'],
+            "PAPER_286: first UQFF nebular (sub-galactic) module with z>0; kappa_neb distinct class from kappa_recession")
+assert_that(C.wired_count() >= 300, "wired_count >= 300 (PAPER_286 wired; 300-dispatch milestone)")
 
 
 # =============================================================================

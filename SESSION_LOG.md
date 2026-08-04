@@ -4069,3 +4069,21 @@ Frontier PAPER_284 -> PAPER_285. Version PAPER_285 = v0.292.0.
 
 Gate: 1780/0. Registry 584 rows / 1263 edges / 299 ledgers. Campaign frontier:
 PAPER_285 / 2,255. Next: PAPER_286.
+
+---
+
+## 2026-08-03 — v0.293.0 — BAND 1: PAPER_286 — M16 NEBULAR FRIEDMANN REDSHIFT (CLEAN) [300-DISPATCH MILESTONE]
+
+PAPER_286 (M16 Nebular Friedmann Redshift kappa_neb, Session 80, M16_UQFF_MODULE.cpp)
+wired as one dispatch (CLEAN). First UQFF nebular/sub-galactic module carrying z>0.
+M16 ~5700 ly -> z=0.0015. H(z)=H0*sqrt(Om*(1+z)^3+OL), H0=70 canonical (A_5+SO_5),
+Om=0.3, OL=0.7 -> H(0)=70.000, H(0.0015)=70.047 km/s/Mpc; kappa_neb=(70.047-70.000)/
+70.000=6.71e-4 (distinct class from kappa_recession); g_exp(5Myr)=g_base*H_SI*t=
+5.21e-16.
+
+wired_count 299 -> 300 (300-DISPATCH MILESTONE). Gate +5 (1785/0). Registry +1 row
+(17-col) / +1 edge / +1 citation. Index PAPER_286 -> checkmark (56 / 244 / 1955 =
+2255; wired 300 = count). Frontier PAPER_285 -> PAPER_286. Version PAPER_286 = v0.293.0.
+
+Gate: 1785/0. Registry 585 rows / 1264 edges / 300 ledgers. Campaign frontier:
+PAPER_286 / 2,255. Next: PAPER_287.

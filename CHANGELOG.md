@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.293.0] — 2026-08-03 — BAND 1: PAPER_286 — M16 EAGLE NEBULA NEBULAR FRIEDMANN REDSHIFT (CLEAN) · 300-DISPATCH MILESTONE
+
+### Added
+- **PAPER_286 dispatch** — M16 Eagle Nebula Nebular Friedmann Redshift Parameter κ_neb (Session 80, M16_UQFF_MODULE.cpp). The **first UQFF nebular (sub-galactic) module to carry a cosmological redshift z > 0**.
+  - M16 at ~5700 ly → z = 0.0015. Friedmann H(z) = H0·√(Ω_m(1+z)³ + Ω_Λ) with canonical H0 = 70 (A_5+SO_5), Ω_m=0.3, Ω_Λ=0.7 → H(0) = 70.000, H(0.0015) = **70.047 km/s/Mpc**.
+  - κ_neb = (H(z) − H(0))/H(0) = 0.047/70 = **6.71e-4** — a distinct parameter class from the galactic/extragalactic κ_recession.
+  - g_exp(5 Myr) = g_base·H_SI·t = 1.454e-12·2.270e-18·1.578e14 = 5.21e-16 m/s² — first time catalogued in UQFF nebular physics.
+- Gate +5 assertions (→ 1785, 0 failures). **wired_count 299 → 300 (300-dispatch milestone).** Registry +1 row (17-col) / +1 edge / +1 citation. Index PAPER_286 → ✓.
+
+### Notes
+- CLEAN — all values reproduce with the canonical H0.
+
+---
+
 ## [0.292.0] — 2026-08-03 — BAND 1: PAPER_285 — M16 EAGLE NEBULA EROSION SATURATION HALF-TIME (CLEAN)
 
 ### Added

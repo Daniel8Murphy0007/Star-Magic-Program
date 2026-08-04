@@ -1,16 +1,15 @@
-v0.292.0 BAND 1: PAPER_285 wired - M16 EAGLE NEBULA EROSION SATURATION HALF-TIME (CLEAN)
+v0.293.0 BAND 1: PAPER_286 wired - M16 NEBULAR FRIEDMANN REDSHIFT (CLEAN) [300-DISPATCH MILESTONE]
 
-PAPER_285 (M16 Erosion Saturation Half-Time t_half + DeltagMax, S80,
-M16_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First UQFF module cataloguing
-photoevaporation half-time + asymptotic erosion.
+PAPER_286 (M16 Nebular Friedmann Redshift kappa_neb, S80, M16_UQFF_MODULE.cpp) wired
+as one dispatch (CLEAN). First UQFF nebular (sub-galactic) module carrying z>0.
 
-E_rad(t)=E0*(1-exp(-t/tau)), E0=0.3, tau=3 Myr. t_half=tau*ln(2)=6.561e13 s=2.079
-Myr (E_rad=E0/2). DeltagMax=E0*g_base=0.3*1.454e-12=4.36e-13 m/s^2 (asymptotic).
-dg/dt|0=E0/tau*g_base=4.61e-27. KEY: at tau erosion only 63.2% not 100% - M16
-Pillars of Creation survive because erosion saturates; t_half = inflection in g_dyn(t).
+M16 ~5700 ly -> z=0.0015. H(z)=H0*sqrt(Om*(1+z)^3+OL), H0=70 canonical (A_5+SO_5),
+Om=0.3, OL=0.7 -> H(0)=70.000, H(0.0015)=70.047 km/s/Mpc; kappa_neb=(70.047-70.000)/
+70.000=6.71e-4 (distinct parameter class from galactic/extragalactic kappa_recession);
+g_exp(5Myr)=g_base*H_SI*t=1.454e-12*2.270e-18*1.578e14=5.21e-16 m/s^2.
 
-wired_count 298 -> 299. Index PAPER_285 -> checkmark (55/244/1956=2255).
-Version PAPER_285 = v0.292.0.
+wired_count 299 -> 300 (300-DISPATCH MILESTONE). Index PAPER_286 -> checkmark
+(56/244/1955=2255). Version PAPER_286 = v0.293.0.
 
-Gate: 1780/0. Registry 584 rows / 1263 edges / 299 ledgers. Campaign frontier:
-PAPER_285 / 2,255. Next: PAPER_286.
+Gate: 1785/0. Registry 585 rows / 1264 edges / 300 ledgers. Campaign frontier:
+PAPER_286 / 2,255. Next: PAPER_287.
