@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.335.0", "uqff_calculator.VERSION = 0.335.0 (PAPER_327 = v0.335.0)")
+assert_that(C.VERSION == "0.336.0", "uqff_calculator.VERSION = 0.336.0 (PAPER_328 = v0.336.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4441,6 +4441,19 @@ assert_that(abs(_r327['ssq_suppression_26'] - 0.5655) < 0.001 and 'PAPER_1154' i
 assert_that(_r327['max'] == 2.11e5 and _r327['min'] == 8.13e-10,
             "PAPER_327: Q_wave range 8.13e-10 (atomic) to 2.11e5 J/m3 (quasar), ~15-order dynamic range")
 assert_that(C.wired_count() >= 341, "wired_count >= 341 (PAPER_327 wired)")
+
+_r328 = C.calc('PAPER_328')['value']
+assert_that(abs(_r328['N_B_40Ca'] - 29.75) < 0.1 and _r328['N_B_formula'] == '1/(exp(dE/T_BEC)-1)',
+            "PAPER_328: N_B = 1/(exp(dE/T_BEC)-1) = 29.75 (40Ca alpha-BEC occupancy, T_BEC=14.52 MeV)")
+assert_that(abs(_r328['sigma_CS_300'] - 10.50) < 0.05 and 'a=15.28' in _r328['sigma_CS_formula'],
+            "PAPER_328: sigma_CS(300) = a(1-exp(-b*300)) = 10.50 A^2 (H2O-H2 rotor scattering)")
+assert_that(abs(_r328['A_res_even_Z'] - 1.1) < 1e-6 and abs(_r328['A_res_odd'] - 0.9) < 1e-6,
+            "PAPER_328: delta_pair=0.1 -> A_res*1.1 (10% enhancement, even-Z) / *0.9 (pair-blocking, odd)")
+assert_that(abs(_r328['N_B_12C_Hoyle'] - 19.67) < 0.5 and abs(_r328['N_B_8Be'] - 15.29) < 0.5,
+            "PAPER_328: system N_B values (12C Hoyle ~19.7, 8Be ~15.3) from Bose-Einstein occupancy")
+assert_that(abs(_r328['T_BEC_MeV'] - 14.52) < 1e-6,
+            "PAPER_328: T_BEC = 14.52 MeV (AMD/NIMROD nuclear cluster data)")
+assert_that(C.wired_count() >= 342, "wired_count >= 342 (PAPER_328 wired)")
 
 
 # =============================================================================

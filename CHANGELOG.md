@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.336.0] — 2026-08-04 — BAND 1: PAPER_328 — NUCLEAR α-BEC LENR ENHANCEMENT (CLEAN)
+
+### Added
+- **PAPER_328 dispatch** — Nuclear α-BEC LENR Enhancement (Session 94, Grok-4 71-Eq assimilation; First-Discovery). The **first UQFF coupling of Bose-Einstein condensate nuclear α-clustering to LENR resonance amplitudes**.
+  - Bose-Einstein occupancy N_B = 1/(exp(ΔE/T_BEC)−1) = **29.75** for 40Ca (N_α=10) — T_BEC = 14.52 MeV, ΔE = 0.48 MeV from AMD/NIMROD nuclear-cluster data. System values: 12C Hoyle ~19.7, 20Ne ~24.5, 8Be ~15.3.
+  - Pairing correction δ_pair = 0.1 modifies the hadronic resonance amplitude: A_res·**1.1** (10% LENR enhancement, even-Z α-conjugate) or ·0.9 (pair-blocking, odd-Z/N).
+  - Rotor cross-section σ_CS(E) = a(1−exp(−b·E)) with a = 15.28 Å², b = 0.00387 cm⁻¹ gives σ_CS(300 cm⁻¹) = **10.50 Å²**, matching H2O–H2 scattering data.
+  - Predicted LENR enhancement from BEC α-clustering ~10%.
+- 3 registry observables, 5 graph edges, 1 corpus citation (PAPER_1061, Kozima LENR).
+- 6 gate assertions (N_B 40Ca, σ_CS, δ_pair, system N_B, T_BEC, wired_count ≥ 342). Gate 2023 → **2029/0**.
+
+### Wiring status
+- `wired_count()` = **342** (CLEAN). Campaign frontier PAPER_328 of 2255. Index: 94 ✓ / 248 ⚠ / 1913 ⬜ = 2255.
+
+---
+
 ## [0.335.0] — 2026-08-04 — BAND 1: PAPER_327 — Q_wave_47 NON-PARAMETRIC DISTRIBUTION SURVEY (CLEAN)
 
 ### Added

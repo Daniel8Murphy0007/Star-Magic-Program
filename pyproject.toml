@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.335.0"
-description = "UQFF Star-Magic-Program v0.335.0: PAPER_327 wired (CLEAN) - Q_wave_47 non-parametric distribution survey; the Q_wave energy density across 47 astrophysical scales (atomic 8.13e-10 to quasar 2.11e5 J/m3, ~15-order range) is strongly non-Gaussian: mean=3.97e4 J/m3, CV=std/mean>1, Shapiro-Wilk W=0.644 (p=1.21e-9, normality rejected at 99.9999%), bimodal with heavy positive tail from the [SSq] suppression cascade. wired_count 341, gate 2023/0. Frontier PAPER_327 of 2255."
+version = "0.336.0"
+description = "UQFF Star-Magic-Program v0.336.0: PAPER_328 wired (CLEAN) - nuclear alpha-BEC LENR enhancement; Bose-Einstein occupancy N_B=1/(exp(dE/T_BEC)-1)=29.75 for 40Ca alpha-clustering (T_BEC=14.52 MeV, dE=0.48 MeV from AMD/NIMROD); pairing correction delta_pair=0.1 gives a 10% resonance-amplitude enhancement (even-Z), pair-blocking (odd); rotor cross-section sigma_CS(300)=a(1-exp(-b*E))=10.50 A^2 matches H2O-H2 scattering. wired_count 342, gate 2029/0. Frontier PAPER_328 of 2255."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -1477,3 +1477,8 @@ observable,Q_wave_47_stats,observable,Q_wave_47_shapiro_wilk,CV>1 -> non-Gaussia
 observable,Q_wave_47_shapiro_wilk,paper,PAPER_327,wired
 observable,Q_wave_47_stats,paper,PAPER_327,wired
 paper,PAPER_327,paper,PAPER_326,shared [SSq] cascade
+observable,N_B_alpha_bec,paper,PAPER_328,wired
+observable,sigma_CS_rotor,paper,PAPER_328,wired
+observable,delta_pair_lenr,paper,PAPER_328,wired
+observable,delta_pair_lenr,observable,N_B_alpha_bec,both alpha-conjugate BEC
+paper,PAPER_328,paper,PAPER_1061,LENR / Kozima nuclear coupling

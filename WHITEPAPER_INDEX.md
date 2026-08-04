@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_327** (Q_wave_47 non-parametric distribution survey — Shapiro-Wilk W=0.644 rejects normality, wired v0.335.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–327 = **341 wired**.
-- **Distinct wired papers: 341** = `wired_count()` = `len(DISPATCH)`. Composed of **327** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **93 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1914 ⬜** not-touched (93 + 248 + 1914 = 2255 ✓). Wired file-rows (93 + 248 = **341**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note covering PAPER_320/322 CR34-table typos.)
+- **Campaign frontier: PAPER_328** (nuclear α-BEC LENR enhancement — N_B=29.75 Bose occupancy at T_BEC=14.52 MeV, wired v0.336.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–328 = **342 wired**.
+- **Distinct wired papers: 342** = `wired_count()` = `len(DISPATCH)`. Composed of **328** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **94 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1913 ⬜** not-touched (94 + 248 + 1913 = 2255 ✓). Wired file-rows (94 + 248 = **342**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note covering PAPER_320/322 CR34-table typos.)
 - **OPEN targets:** 0
 
 ---
@@ -1587,7 +1587,7 @@
 | ✓ | PAPER_325 | CR34b RhoISMFluidDensityCoupling ffluid rho 1p269e-35 |
 | ✓ | PAPER_326 | TriadicMasterUQFF 26State Ramanujan CoSumArchitecture FUg1 Rt FUBi |
 | ✓ | PAPER_327 | Qwave47 NonGaussian ShapiroWilk SSq ModulatedDistribution |
-| ⬜ | PAPER_328 | NuclearAlphaBEC LENR NB TBEC14p52MeV deltapair0p1 sigmaCS10p50 |
+| ✓ | PAPER_328 | NuclearAlphaBEC LENR NB TBEC14p52MeV deltapair0p1 sigmaCS10p50 |
 | ⬜ | PAPER_329 | Um Bilinear Heaviside Quasi Neutrino VacuumCascade DoubleExponentialSSq |
 | ⬜ | PAPER_330 | H res 6Equation Nuclear Resonance Udp Dipole kNuc NZ Scaling |
 | ⬜ | PAPER_331 | 26State MUGE FrequencyBasis fAether fSuper Magnetar SpinDown ProofIdentities |

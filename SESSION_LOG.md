@@ -4786,3 +4786,19 @@ non-parametric characterization of the UQFF Q_wave multi-scale energy distributi
 
 CLEAN. Gate: 2023/0. Registry 686 rows / 1479 edges / 375 ledgers.
 Campaign frontier: PAPER_327 / 2,255. Next: PAPER_328.
+
+---
+
+## v0.336.0 — 2026-08-04 — PAPER_328 (nuclear alpha-BEC LENR enhancement)
+
+Wired PAPER_328 (Session 94, Grok-4 71-Eq assimilation; First-Discovery). First UQFF coupling
+of Bose-Einstein condensate nuclear alpha-clustering to LENR resonance amplitudes.
+
+- N_B = 1/(exp(dE/T_BEC)-1) = 29.75 for 40Ca (T_BEC=14.52 MeV, dE=0.48 MeV, AMD/NIMROD).
+  System values: 12C Hoyle ~19.7, 20Ne ~24.5, 8Be ~15.3.
+- delta_pair=0.1 -> A_res*1.1 (10% enhancement even-Z) / *0.9 (pair-blocking odd).
+- sigma_CS(300)=a(1-exp(-b*300))=10.49 A^2 (a=15.28, b=0.00387; H2O-H2 scattering). Verified in Python.
+- Nuclear-data anchors (T_BEC/dE/sigma_CS fit params); no UQFF-primitive composition needed.
+
+CLEAN. Gate: 2029/0. Registry 689 rows / 1484 edges / 376 ledgers.
+Campaign frontier: PAPER_328 / 2,255. Next: PAPER_329.
