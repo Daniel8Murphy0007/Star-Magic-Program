@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.295.0", "uqff_calculator.VERSION = 0.295.0 (PAPER_288 = v0.295.0)")
+assert_that(C.VERSION == "0.296.0", "uqff_calculator.VERSION = 0.296.0 (PAPER_289 = v0.296.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3944,6 +3944,17 @@ assert_that(abs(_r288['f_osc_Hz'] - 1.592e14) < 1e12 and _r288['standing_peak'] 
 assert_that(_r288['first_cosmic_age_normalization'],
             "PAPER_288: first UQFF term encoding T_universe=13.8 Gyr as quantum oscillation normalization")
 assert_that(C.wired_count() >= 302, "wired_count >= 302 (PAPER_288 wired)")
+
+_r289 = C.calc('PAPER_289')['value']
+assert_that(abs(_r289['E_Cooper_eV'] - 9.29) < 0.05 and _r289['A_sc_formula'] == 'hbar*f_super*f_DPM/(E_vac*c)',
+            "PAPER_289: E_Cooper = hbar*f_super = 1.488e-18 J = 9.29 eV (Cooper-pair UV quantum)")
+assert_that(abs(_r289['A_sc_self_consistent'] - 6.994e20) < 1e18 and abs(_r289['A_sc_paper_headline'] - 6.994e21) < 1e19,
+            "PAPER_289: A_sc self-consistent (E_vac=RHO_UA) = 6.994e20; paper headline 6.994e21 needs E_vac=RHO_SCM (10x, Q-245)")
+assert_that(_r289['meissner_quench_at_Bcrit'] and _r289['meissner_table']['B_1e+11']['SCm'] == 0.0 and _r289['trz_enhancement'] == 1.1,
+            "PAPER_289: Meissner SCm=1-B/B_crit -> 0 at B=B_crit (quench); (1+F_TRZ)=1.1")
+assert_that(_r289['first_resonance_specific_meissner_quench'] and C.calc('PAPER_289')['status'] == 'OPEN_RULING',
+            "PAPER_289: first resonance-specific Meissner quench (vs PAPER_266 galactic); OPEN_RULING (A_sc 10x discrepancy Q-245)")
+assert_that(C.wired_count() >= 303, "wired_count >= 303 (PAPER_289 wired)")
 
 
 # =============================================================================

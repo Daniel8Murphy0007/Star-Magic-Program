@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.295.0"
-description = "UQFF Star-Magic-Program v0.295.0: PAPER_288 wired (CLEAN) - Cosmic-Age Standing-Traveling Wave Bridge; ratio T/S=pi/13.8=0.2277 (traveling wave 22.77% of standing); first UQFF term encoding T_universe=13.8 Gyr as quantum oscillation normalization; a_osc=2A*cos(kx)cos(wt)+(2pi/13.8)*A*Re[exp(i(kx-wt))]. wired_count 302, gate 1795/0. Campaign frontier PAPER_288 of 2255. (v0.285.0 burned; v0.286.0-0.294.0 shipped.)"
+version = "0.296.0"
+description = "UQFF Star-Magic-Program v0.296.0: PAPER_289 wired (OPEN_RULING Q-245) - Cooper-DPM Dual-Frequency SC Synthesis; E_Cooper=hbar*f_super=9.29 eV + resonance-channel Meissner quench SCm=1-B/B_crit->0 at B_crit (first resonance-specific SC quench). A_sc has a 10x discrepancy: 6.994e20 self-consistent (E_vac=RHO_UA) vs paper headline 6.994e21 (needs E_vac=RHO_SCM). wired_count 303, gate 1800/0. Campaign frontier PAPER_289 of 2255. (v0.285.0 burned; v0.286.0-0.295.0 shipped.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

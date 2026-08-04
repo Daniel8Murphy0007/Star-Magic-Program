@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.296.0] — 2026-08-03 — BAND 1: PAPER_289 — COOPER-DPM DUAL-FREQUENCY SC SYNTHESIS (OPEN_RULING Q-245)
+
+### Added
+- **PAPER_289 dispatch** — Cooper-DPM Dual-Frequency SC Synthesis + resonance-channel Meissner quench (Session 81, RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp). The **first UQFF module to apply the Meissner gravity quench to a *pure resonance channel*** (vs PAPER_266's galactic full-sum).
+  - **Clean:** Cooper-pair quantum E_Cooper = ħ·f_super = 1.488e-18 J = **9.29 eV**. Meissner factor SCm = 1 − B/B_crit → 0 at B → B_crit (quench); (1 + F_TRZ) = 1.1 time-reversal enhancement.
+  - **OPEN_RULING (Q-245):** A_sc = ħ·f_super·f_DPM/(E_vac·c). With the stated E_vac = 7.09e-36 (ρ_UA, PAPER_287-consistent) → A_sc = **6.994e20** (self-consistent). The paper's title/WOLFRAM/abstract say **6.994e21** — but that requires E_vac = ρ_SCm; the paper's boxed denominator 2.127e-28 is a 10× error (7.09e-36·3e8 = 2.127e-27). Both values recorded; ruling queued. Secondary: paper B_crit = 1e11 T (magnetar) differs from the registry Schwinger B_CRIT = 4.4e13.
+- Gate +5 assertions (→ 1800, 0 failures). wired_count 302 → **303** (index mark ⚠). Registry +1 row (17-col) / +1 edge / +1 citation.
+
+### Notes
+- First OPEN_RULING since the Saturn/M16 clean run (281–288); A_sc discrepancy is a paper-internal arithmetic inconsistency, not a wiring error.
+
+---
+
 ## [0.295.0] — 2026-08-03 — BAND 1: PAPER_288 — COSMIC-AGE STANDING-TRAVELING WAVE BRIDGE (CLEAN)
 
 ### Added

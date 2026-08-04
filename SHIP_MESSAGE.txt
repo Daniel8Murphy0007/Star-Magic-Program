@@ -1,15 +1,19 @@
-v0.295.0 BAND 1: PAPER_288 wired - COSMIC-AGE STANDING-TRAVELING WAVE BRIDGE (CLEAN)
+v0.296.0 BAND 1: PAPER_289 wired - COOPER-DPM DUAL-FREQUENCY SC SYNTHESIS (OPEN_RULING Q-245)
 
-PAPER_288 (Cosmic-Age Standing-Traveling Wave Bridge 2pi/13.8, S81,
-RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp) wired as one dispatch (CLEAN). First UQFF
-term encoding T_universe=13.8 Gyr as quantum oscillation normalization.
+PAPER_289 (Cooper-DPM Dual-Frequency SC Synthesis A_sc, S81,
+RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp) wired as one dispatch (OPEN_RULING).
+First UQFF module applying the Meissner quench to a PURE resonance channel (vs
+PAPER_266 galactic full-sum).
 
-a_osc=2A*cos(kx)cos(wt) [standing] + (2pi/13.8)*A*Re[exp(i(kx-wt))] [traveling].
-T/S=pi/13.8=0.2277 (traveling wave 22.77% of standing). A=1e-10: standing 2A=2e-10,
-travel (2pi/13.8)A=4.553e-11, combined 2.455e-10; f_osc=w/2pi=1.592e14 Hz.
+CLEAN: E_Cooper=hbar*f_super=1.488e-18 J=9.29 eV; Meissner SCm=1-B/B_crit->0 at
+B_crit (quench); (1+F_TRZ)=1.1. OPEN_RULING (Q-245): A_sc=hbar*f_super*f_DPM/
+(E_vac*c); stated E_vac=RHO_UA=7.09e-36 gives A_sc=6.994e20 self-consistent, but
+paper title/WOLFRAM/abstract say 6.994e21 (needs E_vac=RHO_SCM; paper boxed
+denominator 2.127e-28 is a 10x error, should be 2.127e-27). Both values recorded.
+Secondary: B_crit=1e11 T magnetar (vs registry Schwinger 4.4e13).
 
-wired_count 301 -> 302. Index PAPER_288 -> checkmark (58/244/1953=2255).
-Version PAPER_288 = v0.295.0.
+wired_count 302 -> 303. Index PAPER_289 -> OPEN_RULING (58/245/1952=2255).
+Version PAPER_289 = v0.296.0.
 
-Gate: 1795/0. Registry 587 rows / 1266 edges / 302 ledgers. Campaign frontier:
-PAPER_288 / 2,255. Next: PAPER_289.
+Gate: 1800/0. Registry 588 rows / 1267 edges / 303 ledgers. Campaign frontier:
+PAPER_289 / 2,255. Next: PAPER_290.

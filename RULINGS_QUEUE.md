@@ -5691,3 +5691,12 @@ RESOLVED section with the ruling recorded.
 - Clean parts (independent of M): r_ring=r/3=7.867e19, proximity factor (r/r_ring)^2=9, A_ring=9*f_ring*g_base=2.144e-12, pure-oscillatory form F_ring=A_ring*cos(ω_ring*t).
 - **Ruling needed:** confirm Sombrero galaxy mass M=1.989e42 kg (1e12 M_sun) as the intended ω_ring input (headline values reproduce exactly), and that sec 2.2's 1.989e41/1.327e31 is the typo.
 - Wired v0.282.0, status WIRED (derived-correct; headline values self-consistent).
+
+### Q-245 — PAPER_289 A_sc 10x discrepancy (E_vac = RHO_UA vs RHO_SCM)
+- **Paper:** PAPER_289 (Cooper-DPM Dual-Frequency SC Synthesis, S81).
+- **Issue:** A_sc = hbar*f_super*f_DPM/(E_vac*c). Paper title, abstract, and WOLFRAM_TERM all state A_sc = 6.994e21. But the stated inputs (E_vac = 7.09e-36 = RHO_UA plasmotic vacuum, consistent with PAPER_287; f_super=1.411e16; f_DPM=1e12; c=3e8) give A_sc = 6.994e20 (self-consistent). The paper's boxed denominator "2.127e-28" is a 10x arithmetic error — 7.09e-36 x 3e8 = 2.127e-27, not 2.127e-28. The headline 6.994e21 only holds if E_vac = RHO_SCM (7.09e-37) instead of RHO_UA.
+- **Wired:** A_sc = 6.994e20 (self-consistent with stated E_vac=RHO_UA); a_sc_freq = 2.479e3. Both the self-consistent and the paper-headline (6.994e21) values are recorded. Status OPEN_RULING.
+- Clean parts (WIRED-quality): E_Cooper = hbar*f_super = 9.29 eV; Meissner quench SCm=1-B/B_crit -> 0 at B_crit; (1+F_TRZ)=1.1; first resonance-specific Meissner quench.
+- Secondary note: paper B_crit = 1e11 T (magnetar) differs from the registry Schwinger B_CRIT = 4.4e13. Wired 1e11 as the paper's magnetar scale.
+- **Ruling needed:** is E_vac in the A_sc formula RHO_UA (plasmotic, 6.994e20, consistent with PAPER_287) or RHO_SCM (headline, 6.994e21)? And confirm B_crit=1e11 magnetar vs Schwinger 4.4e13.
+- Wired v0.296.0, status OPEN_RULING.

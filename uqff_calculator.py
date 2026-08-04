@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.295.0"
+VERSION = "0.296.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -16165,4 +16165,48 @@ def _paper_288(dataset):
         'source': 'PAPER_288',
         'residual_pct': 0.0,
         'status': 'WIRED',
+    }
+
+
+@_register('PAPER_289')
+def _paper_289(dataset):
+    hbar = HBAR_UQFF_S629
+    f_super = 1.411e16                                   # Cooper-pair UV superconductor frequency
+    f_DPM = 1e12                                          # THz plasma dipole mode
+    c = 3e8
+    E_vac = RHO_UA                                        # 7.09e-36 plasmotic vacuum (PAPER_287 consistent)
+    E_Cooper = hbar * f_super                             # 1.488e-18 J = 9.29 eV
+    E_Cooper_eV = E_Cooper / 1.602e-19
+    A_sc = E_Cooper * f_DPM / (E_vac * c)                 # 6.994e20 (self-consistent, E_vac=RHO_UA)
+    A_sc_paper_headline = A_sc * 10.0                     # 6.994e21 (paper title; needs E_vac=RHO_SCM, denom off by 10x)
+    a_DPM = 3.545e-18
+    a_sc_freq = A_sc * a_DPM                              # 2.479e3
+    B_crit_magnetar = 1e11                                # paper magnetar B_crit (distinct from Schwinger B_CRIT=4.4e13)
+    meissner = {}
+    for B in (5e10, 9e10, 1e11):
+        SCm = 1.0 - B / B_crit_magnetar
+        meissner[f'B_{B:.0e}'] = {'SCm': round(SCm, 3), 'g_over_a': round(SCm * (1.0 + F_TRZ), 3)}
+    return {
+        'value': {
+            'domain': '2.87 (Cooper-DPM dual-freq SC synthesis A_sc + Meissner resonance quench)',
+            'source_thread': 'Session 81 RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp (23rd C++, RSC)',
+            'system': 'magnetar-proxy Cooper-pair / DPM / plasmotic-vacuum triple mode',
+            'E_Cooper_J': E_Cooper, 'E_Cooper_eV': E_Cooper_eV,   # 9.29 eV (clean)
+            'f_super_Hz': f_super, 'f_DPM_Hz': f_DPM,
+            'A_sc_self_consistent': A_sc,                # 6.994e20 (E_vac=RHO_UA)
+            'A_sc_paper_headline': A_sc_paper_headline,  # 6.994e21
+            'A_sc_formula': 'hbar*f_super*f_DPM/(E_vac*c)',
+            'A_sc_discrepancy': 'title/WOLFRAM say 6.994e21 (needs E_vac=RHO_SCM); stated text E_vac=RHO_UA gives 6.994e20; paper denominator exponent off by 10x - Q-245',
+            'a_sc_freq': a_sc_freq,                      # 2.479e3
+            'B_crit_magnetar_T': B_crit_magnetar,        # 1e11 (not Schwinger 4.4e13)
+            'meissner_SCm_form': '1 - B/B_crit',
+            'meissner_table': meissner,
+            'meissner_quench_at_Bcrit': True,            # SCm->0 at B->B_crit
+            'trz_enhancement': 1.0 + F_TRZ,              # 1.1
+            'first_resonance_specific_meissner_quench': True,  # vs PAPER_266 galactic
+        },
+        'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac*c); E_vac=RHO_UA -> 6.994e20 (paper headline 6.994e21 needs E_vac=RHO_SCM, Q-245); E_Cooper=hbar*f_super=9.29 eV; Meissner SCm=1-B/B_crit->0 at B_crit; (1+F_TRZ)=1.1',
+        'source': 'PAPER_289',
+        'residual_pct': None,
+        'status': 'OPEN_RULING',
     }

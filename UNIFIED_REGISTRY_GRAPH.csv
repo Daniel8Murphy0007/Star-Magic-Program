@@ -1265,3 +1265,4 @@ observable,m16_eagle_nebula_erosion_saturation_half_time_t_half,observable,m16_e
 observable,m16_eagle_nebula_nebular_friedmann_redshift_kappa_neb,primitive,H0_KM_PER_S_PER_MPC,kappa_neb via Friedmann H(z); first nebular z>0 module; canonical H0=70
 observable,dpm_thz_plasmotic_vacuum_cascade_amplification_gamma_thz,primitive,RHO_UA,Gamma_THz=10*(f_THz*v_exp)/c; E_vac=rho_UA plasmotic; first cascaded resonance chain
 observable,cosmic_age_standing_traveling_wave_bridge_ts_ratio,observable,dpm_thz_plasmotic_vacuum_cascade_amplification_gamma_thz,RSC oscillatory term; T/S=pi/13.8; companion of PAPER_287 cascade
+observable,cooper_dpm_dualfreq_sc_synthesis_A_sc_meissner_quench,observable,dpm_thz_plasmotic_vacuum_cascade_amplification_gamma_thz,A_sc uses a_DPM seed from PAPER_287; Meissner quench on resonance channel

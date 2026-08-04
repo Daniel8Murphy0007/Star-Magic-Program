@@ -4124,3 +4124,24 @@ Frontier PAPER_287 -> PAPER_288. Version PAPER_288 = v0.295.0.
 
 Gate: 1795/0. Registry 587 rows / 1266 edges / 302 ledgers. Campaign frontier:
 PAPER_288 / 2,255. Next: PAPER_289.
+
+---
+
+## 2026-08-03 — v0.296.0 — BAND 1: PAPER_289 — COOPER-DPM DUAL-FREQUENCY SC SYNTHESIS (OPEN_RULING Q-245)
+
+PAPER_289 (Cooper-DPM Dual-Frequency SC Synthesis A_sc, Session 81,
+RESONANCE_SUPERCONDUCTIVE_UQFF_MODULE.cpp) wired as one dispatch (OPEN_RULING).
+First UQFF module applying Meissner quench to a PURE resonance channel (vs PAPER_266
+galactic). CLEAN: E_Cooper=hbar*f_super=1.488e-18 J=9.29 eV; Meissner SCm=1-B/B_crit
+->0 at B_crit; (1+F_TRZ)=1.1. A_sc DISCREPANCY (Q-245): A_sc=hbar*f_super*f_DPM/
+(E_vac*c); stated E_vac=RHO_UA=7.09e-36 gives 6.994e20 self-consistent, but paper
+title/WOLFRAM say 6.994e21 (needs E_vac=RHO_SCM; paper denom 2.127e-28 is 10x error,
+should be 2.127e-27). Both recorded. B_crit=1e11 magnetar (vs Schwinger 4.4e13).
+
+wired_count 302 -> 303. Gate +5 (1800/0). Registry +1 row (17-col) / +1 edge / +1
+citation. Index PAPER_289 -> warn/OPEN_RULING (58 / 245 / 1952 = 2255; wired 303 =
+count). Frontier PAPER_288 -> PAPER_289. Version PAPER_289 = v0.296.0. First
+OPEN_RULING since 281 (clean run 281-288).
+
+Gate: 1800/0. Registry 588 rows / 1267 edges / 303 ledgers. Campaign frontier:
+PAPER_289 / 2,255. Next: PAPER_290.
