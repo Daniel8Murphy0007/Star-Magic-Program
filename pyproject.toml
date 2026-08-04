@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.320.0"
-description = "UQFF Star-Magic-Program v0.320.0: PAPER_313 wired (CLEAN) - NGC 6302 equatorial-torus magnetic confinement; torus magnetic pressure P_mag=B^2/(2*mu0)=3.979e-5 Pa exceeds wind ram pressure by eta_B_conf=P_mag/P_ram=3.979e5, and plasma beta=P_ram/P_mag=2.513e-6 << 1 (magnetically dominated); Alfven velocity v_A=B/sqrt(mu0*rho)=8.921e7 m/s (~0.3c, 892x v_wind). wired_count 327, gate 1939/0. Frontier PAPER_313 of 2255."
+version = "0.322.0"
+description = "UQFF Star-Magic-Program v0.322.0: PAPER_314 wired (CLEAN) - NGC 6302 bipolar-PN lobe DPM macro-antenna force; the ~1.5 ly lobe cross-section A_area=pi*r^2=6.333e32 m2 acts as a DPM antenna: F_DPM=I_wind*A_area*d_omega=1.267e50 N and seed a_DPM=F_DPM*f_DPM*E_vac/(c*V_sys)=2.497e-31 m/s2; 13-order PN-to-compact amplification eta=F_DPM/F_DPM_compact=2.017e13 (macro-antenna scaling F_DPM~r^2). wired_count 328, gate 1945/0. Frontier PAPER_314 of 2255. (v0.321.0 burned.)"
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

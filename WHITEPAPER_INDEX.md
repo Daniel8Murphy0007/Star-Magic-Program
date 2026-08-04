@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_313** (NGC 6302 equatorial-torus magnetic confinement η_B=3.979e5, β_plasma=2.513e-6, wired v0.320.0; v0.321.0 burned/yanked, PAPER_314 next as v0.322.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–313 = **327 wired**.
-- **Distinct wired papers: 327** = `wired_count()` = `len(DISPATCH)`. Composed of **313** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **80 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1928 ⬜** not-touched (80 + 247 + 1928 = 2255 ✓). Wired file-rows (80 + 247 = **327**) equal `wired_count()`.
+- **Campaign frontier: PAPER_314** (NGC 6302 PN lobe DPM macro-antenna force F_DPM=1.267e50 N, 13-order amplification, wired v0.322.0; v0.320.0=PAPER_313, v0.321.0 burned/yanked). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–314 = **328 wired**.
+- **Distinct wired papers: 328** = `wired_count()` = `len(DISPATCH)`. Composed of **314** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **81 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1927 ⬜** not-touched (81 + 247 + 1927 = 2255 ✓). Wired file-rows (81 + 247 = **328**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1573,7 +1573,7 @@
 | ✓ | PAPER_311 | NGC6302 BipolarPN WindShockDominance eta wind 7p127e5 KE 3p564e5 |
 | ✓ | PAPER_312 | NGC6302 CentralWD UVRadiationPressure eta rad 1p913e20 arad 5p672e8 |
 | ✓ | PAPER_313 | NGC6302 EquatorialTorus MagneticConfinement etaB 3p979e5 vAlfven 8p921e7 |
-| ⬜ | PAPER_314 | NGC6302Resonance PN DPM MacroAntenna F DPM 1p267e50 ratio 2p017e13 |
+| ✓ | PAPER_314 | NGC6302Resonance PN DPM MacroAntenna F DPM 1p267e50 ratio 2p017e13 |
 | ⬜ | PAPER_315 | NGC6302Resonance VacDiffTHz CrossoverRadius 3p280km domRatio 8p118e37 |
 | ⬜ | PAPER_316 | NGC6302Resonance CooperDPM Asc 6p994e21 asuper 1p747e9 P295confirm |
 | ⬜ | PAPER_317 | OrionM42 TrapeziumWindRamPressure etaWind 28p47 tErosion 467kyr |
