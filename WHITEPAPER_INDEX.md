@@ -11,9 +11,9 @@
 ## Summary
 
 - **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_311** (NGC 6302 Bug Nebula bipolar-PN wind-shock dominance η_wind=7.127e5, wired v0.318.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–311 = **325 wired**.
-- **Distinct wired papers: 325** = `wired_count()` = `len(DISPATCH)`. Composed of **311** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **78 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1930 ⬜** not-touched (78 + 247 + 1930 = 2255 ✓). Wired file-rows (78 + 247 = **325**) equal `wired_count()`.
+- **Campaign frontier: PAPER_312** (NGC 6302 central-WD UV radiation pressure η_rad=1.913e20, wired v0.319.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–312 = **326 wired**.
+- **Distinct wired papers: 326** = `wired_count()` = `len(DISPATCH)`. Composed of **312** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
+- **Index table file-row marks:** **79 ✓ CLEAN**, **247 ⚠ OPEN_RULING**, **1929 ⬜** not-touched (79 + 247 + 1929 = 2255 ✓). Wired file-rows (79 + 247 = **326**) equal `wired_count()`.
 - **OPEN targets:** 0
 
 ---
@@ -1571,7 +1571,7 @@
 | ✓ | PAPER_309 | SpiralSNIa HubbleTensionImprint deltaSN 2p52pct etaSN 2e16 |
 | ✓ | PAPER_310 | SpiralGalaxy DMVisiblePartition etaDM 5p667 vExcess 67pct |
 | ✓ | PAPER_311 | NGC6302 BipolarPN WindShockDominance eta wind 7p127e5 KE 3p564e5 |
-| ⬜ | PAPER_312 | NGC6302 CentralWD UVRadiationPressure eta rad 1p913e20 arad 5p672e8 |
+| ✓ | PAPER_312 | NGC6302 CentralWD UVRadiationPressure eta rad 1p913e20 arad 5p672e8 |
 | ⬜ | PAPER_313 | NGC6302 EquatorialTorus MagneticConfinement etaB 3p979e5 vAlfven 8p921e7 |
 | ⬜ | PAPER_314 | NGC6302Resonance PN DPM MacroAntenna F DPM 1p267e50 ratio 2p017e13 |
 | ⬜ | PAPER_315 | NGC6302Resonance VacDiffTHz CrossoverRadius 3p280km domRatio 8p118e37 |

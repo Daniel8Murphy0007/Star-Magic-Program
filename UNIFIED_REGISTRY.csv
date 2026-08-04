@@ -643,3 +643,6 @@ v_excess_rotation_curve,PAPER_310 rotation-curve excess,derived_ratio,v_rot/v_ci
 a_wind_ngc6302,PAPER_311 NGC 6302 wind shock,derived_acceleration,v_wind^2/r*(1+t/t_eject),ram-pressure kinematic gradient,2.114e-6 m/s2,PAPER_311,0.0,astro/planetary-nebula,resonance,PAPER_311,1,1,0,0,PAPER_311,WIRED
 eta_wind_ngc6302,PAPER_311 wind-to-gravity dominance,derived_ratio,a_wind(t_eject)/g_base,bipolar expansion driver,7.127e5,PAPER_311,0.0,astro/planetary-nebula,resonance,PAPER_311,1,1,0,0,PAPER_311,WIRED
 KE_over_Phi_ngc6302,PAPER_311 wind KE vs gravity well,derived_ratio,v_wind^2/(GM/r),outflow thermodynamically guaranteed,3.564e5,PAPER_311,0.0,astro/planetary-nebula,resonance,PAPER_311,1,1,0,0,PAPER_311,WIRED
+P_rad_ngc6302_uv,PAPER_312 NGC 6302 UV radiation pressure,derived_pressure,L_star/(4*pi*r^2*c),hot WD T_eff~200000 K,5.672e-12 Pa,PAPER_312,0.0,astro/planetary-nebula,resonance,PAPER_312,1,1,0,0,PAPER_311,WIRED
+a_rad_ngc6302,PAPER_312 UV radiation acceleration,derived_acceleration,P_rad/rho_fluid,apex of force hierarchy,5.672e8 m/s2,PAPER_312,0.0,astro/planetary-nebula,resonance,PAPER_312,1,1,0,0,PAPER_311,WIRED
+eta_rad_ngc6302,PAPER_312 radiation-to-gravity dominance,derived_ratio,a_rad/g_base,20 orders,1.913e20,PAPER_312,0.0,astro/planetary-nebula,resonance,PAPER_312,1,1,0,0,PAPER_311,WIRED

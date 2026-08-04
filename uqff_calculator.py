@@ -58,7 +58,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.318.0"
+VERSION = "0.319.0"
 
 # =============================================================================
 # DISPATCH TABLE — grown one whitepaper at a time.
@@ -17030,6 +17030,41 @@ def _paper_311(dataset):
         },
         'formula': 'g_base=G*M/r^2=2.967e-12; a_wind(t)=v_wind^2/r*(1+t/t_eject); eta_wind=a_wind(t_eject)/g_base=7.127e5 (wind exceeds gravity by ~7e5); KE/Phi_grav=v_wind^2/(GM/r)=3.564e5 (wind outflow thermodynamically guaranteed)',
         'source': 'PAPER_311',
+        'residual_pct': 0.0,
+        'status': 'WIRED',
+    }
+
+
+@_register('PAPER_312')
+def _paper_312(dataset):
+    import math as _m
+    c = C_OBSERVED
+    L_sun = 3.828e26                                      # solar luminosity (W), anchor
+    L_star = 5000.0 * L_sun                               # 1.914e30 W (5000 L_sun, Zanstra), anchor
+    r = 9.46e15                                           # PN half-lobe radius ~1 ly (m), anchor
+    rho_fluid = 1.0e-20                                   # ionized lobe gas density (kg/m^3), anchor
+    g_base = 2.967e-12                                    # NGC 6302 gravitational base (PAPER_311)
+    a_wind = 2.114e-6                                     # wind-shock accel (PAPER_311)
+    P_rad = L_star / (4.0 * _m.pi * r ** 2 * c)           # 5.672e-12 Pa UV radiation pressure
+    a_rad = P_rad / rho_fluid                             # 5.672e8 m/s^2 radiation acceleration
+    eta_rad = a_rad / g_base                              # 1.913e20 radiation-to-gravity dominance
+    a_rad_over_a_wind = a_rad / a_wind                    # 2.684e14 (radiation apex of force hierarchy)
+    return {
+        'value': {
+            'domain': '3.10 (NGC 6302 hot-WD UV radiation pressure; apex of the bipolar-PN force hierarchy)',
+            'source_thread': 'Session 89 NGC6302_UQFF_MODULE.cpp (31st C++ module)',
+            'system': 'NGC 6302 central white dwarf (T_eff ~ 200,000 K), UV photon pressure',
+            'L_star_W': L_star, 'r_m': r, 'rho_fluid': rho_fluid,
+            'P_rad_Pa': P_rad,                          # 5.672e-12
+            'P_rad_formula': 'L_star/(4*pi*r^2*c)',
+            'a_rad': a_rad,                             # 5.672e8
+            'a_rad_formula': 'P_rad/rho_fluid',
+            'eta_rad': eta_rad,                         # 1.913e20 (20 orders)
+            'a_rad_over_a_wind': a_rad_over_a_wind,      # 2.684e14 (dominates wind by 14 orders)
+            'radiation_apex': True,                     # a_rad > a_wind (P311) > g_base force hierarchy
+        },
+        'formula': 'P_rad=L_star/(4*pi*r^2*c)=5.672e-12 Pa; a_rad=P_rad/rho_fluid=5.672e8 m/s2; eta_rad=a_rad/g_base=1.913e20 (20 orders, UV radiation dominates); a_rad/a_wind=2.684e14 (radiation at apex of NGC 6302 force hierarchy)',
+        'source': 'PAPER_312',
         'residual_pct': 0.0,
         'status': 'WIRED',
     }

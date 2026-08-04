@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.318.0", "uqff_calculator.VERSION = 0.318.0 (PAPER_311 = v0.318.0)")
+assert_that(C.VERSION == "0.319.0", "uqff_calculator.VERSION = 0.319.0 (PAPER_312 = v0.319.0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4232,6 +4232,19 @@ assert_that(abs(_r311['KE_over_Phi'] - 3.564e5) / 3.564e5 < 0.005,
 assert_that(abs(_r311['a_wind_0'] - 1.057e-6) / 1.057e-6 < 0.005,
             "PAPER_311: a_wind(0) = v_wind^2/r = 1.057e-6 m/s2 (wind acceleration at t=0)")
 assert_that(C.wired_count() >= 325, "wired_count >= 325 (PAPER_311 wired)")
+
+_r312 = C.calc('PAPER_312')['value']
+assert_that(abs(_r312['P_rad_Pa'] - 5.672e-12) / 5.672e-12 < 0.005 and _r312['P_rad_formula'] == 'L_star/(4*pi*r^2*c)',
+            "PAPER_312: P_rad = L_star/(4*pi*r^2*c) = 5.672e-12 Pa (hot-WD UV radiation pressure)")
+assert_that(abs(_r312['a_rad'] - 5.672e8) / 5.672e8 < 0.005 and _r312['a_rad_formula'] == 'P_rad/rho_fluid',
+            "PAPER_312: a_rad = P_rad/rho_fluid = 5.672e8 m/s2 (UV radiation acceleration)")
+assert_that(abs(_r312['eta_rad'] - 1.913e20) / 1.913e20 < 0.005,
+            "PAPER_312: eta_rad = a_rad/g_base = 1.913e20 (UV radiation exceeds gravity by 20 orders)")
+assert_that(abs(_r312['a_rad_over_a_wind'] - 2.684e14) / 2.684e14 < 0.005 and _r312['radiation_apex'],
+            "PAPER_312: a_rad/a_wind = 2.684e14 (radiation at apex of NGC 6302 force hierarchy, > wind > gravity)")
+assert_that(abs(_r312['L_star_W'] - 1.914e30) / 1.914e30 < 0.005,
+            "PAPER_312: L_star = 5000 L_sun = 1.914e30 W (Zanstra hydrogen luminosity)")
+assert_that(C.wired_count() >= 326, "wired_count >= 326 (PAPER_312 wired)")
 
 
 # =============================================================================

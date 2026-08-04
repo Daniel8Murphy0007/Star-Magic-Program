@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [0.319.0] — 2026-08-04 — BAND 1: PAPER_312 — NGC 6302 CENTRAL-WD UV RADIATION PRESSURE (CLEAN)
+
+### Added
+- **PAPER_312 dispatch** — NGC 6302 Central Star UV Radiation Pressure (Session 89, NGC6302_UQFF_MODULE.cpp; second NGC 6302 term). The photoionization channel of the Bug Nebula's ultra-hot white dwarf (T_eff ≈ 200,000 K).
+  - L_star = 5000 L_sun = **1.914e30 W** (Zanstra hydrogen luminosity).
+  - UV radiation pressure P_rad = L_star/(4πr²c) = **5.672e-12 Pa**; a_rad = P_rad/ρ_fluid = **5.672e8 m/s²**.
+  - η_rad = a_rad/g_base = **1.913e20** — UV radiation exceeds gravity by 20 orders.
+  - a_rad/a_wind = **2.684e14** — radiation dominates even the wind-shock term (PAPER_311) by 14 orders, placing UV radiation at the **apex of the NGC 6302 force hierarchy** (radiation > wind > gravity), the first three-component force budget for a bipolar PN in UQFF.
+- 3 registry observables, 6 graph edges, 1 corpus citation (PAPER_311).
+- 6 gate assertions (P_rad, a_rad, η_rad, a_rad/a_wind apex, L_star, wired_count ≥ 326). Gate 1927 → **1933/0**.
+
+### Wiring status
+- `wired_count()` = **326** (CLEAN). Campaign frontier PAPER_312 of 2255. Index: 79 ✓ / 247 ⚠ / 1929 ⬜ = 2255.
+
+---
+
 ## [0.318.0] — 2026-08-04 — BAND 1: PAPER_311 — NGC 6302 BIPOLAR-PN WIND-SHOCK DOMINANCE (CLEAN)
 
 ### Added

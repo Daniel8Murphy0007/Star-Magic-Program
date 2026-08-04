@@ -1384,3 +1384,9 @@ observable,a_wind_ngc6302,observable,eta_wind_ngc6302,a_wind/g_base
 observable,a_wind_ngc6302,paper,PAPER_311,wired
 observable,eta_wind_ngc6302,paper,PAPER_311,wired
 observable,KE_over_Phi_ngc6302,paper,PAPER_311,wired
+primitive,C_OBSERVED,observable,P_rad_ngc6302_uv,c in denominator
+observable,P_rad_ngc6302_uv,observable,a_rad_ngc6302,a_rad=P_rad/rho
+observable,a_rad_ngc6302,observable,eta_rad_ngc6302,a_rad/g_base
+observable,P_rad_ngc6302_uv,paper,PAPER_312,wired
+observable,a_rad_ngc6302,paper,PAPER_312,wired
+observable,eta_rad_ngc6302,paper,PAPER_312,wired

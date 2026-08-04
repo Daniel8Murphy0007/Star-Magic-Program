@@ -4522,3 +4522,18 @@ Wired PAPER_311 (Session 89, NGC6302_UQFF_MODULE.cpp, 31st C++ module). New plan
 
 CLEAN. Gate: 1927/0. Registry 645 rows / 1386 edges / 339 ledgers.
 Campaign frontier: PAPER_311 / 2,255. Next: PAPER_312.
+
+---
+
+## v0.319.0 — 2026-08-04 — PAPER_312 (NGC 6302 central-WD UV radiation pressure)
+
+Wired PAPER_312 (Session 89, NGC6302_UQFF_MODULE.cpp; second NGC 6302 term). Photoionization
+channel of the Bug Nebula's ultra-hot WD (T_eff ~ 200,000 K).
+
+- L_star = 5000 L_sun = 1.914e30 W (Zanstra).
+- P_rad = L_star/(4*pi*r^2*c) = 5.672e-12 Pa; a_rad = P_rad/rho_fluid = 5.672e8 m/s2.
+- eta_rad = a_rad/g_base = 1.913e20 (20 orders); a_rad/a_wind = 2.684e14 (radiation apex of
+  force hierarchy: radiation > wind (P311) > gravity). All verified in Python.
+
+CLEAN. Gate: 1933/0. Registry 648 rows / 1392 edges / 340 ledgers.
+Campaign frontier: PAPER_312 / 2,255. Next: PAPER_313.
