@@ -1,16 +1,17 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.344.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.344.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.345.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.345.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2148%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2159%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.342.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.345.0 complete-compile campaign live**
 
-**This release (v0.342.0):** batch PAPER_071-080 — stellar superflare / red-dwarf reactor TRZ / Gaia-DR4 / NED-SIMBAD / X-ray binaries / Fermi-LAT / LIGO GWTC-4.0 ringdown / Hubble-tension / HEASARC magnetars / multi-wavelength capstone. 5 new equations; §B DVP ladder 37-73.
+**This release (v0.345.0):** ALL 1,272 predecessor-registry derived constants are now **individual named callable functions** (`uqff_derived_functions.py`, `dc_*` — e.g. `dc_alpha_inverse()` → 137.0, `dc_mp_me_ratio()` → 1836.1). Physics content re-expressed per Rule E; the 15 values equal to a registry primitive compose from that primitive (no banned literals). Combined with the 494-function equation library, the package now exposes **2,119 Python functions / 1,766 named callables**. Also mines universal MUGE/buoyancy terms, MOND, all 7 nuclear magic numbers, cosmology + BSM + GW forms.
+
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
@@ -49,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.342.0)
+## What is currently shipped (v0.345.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -57,7 +58,13 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-080** (+ b-variants) fully captured over a 454-function primitive-sourced equation library — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain. Shipped through v0.339.0 (v0.337.0/v0.338.0/v0.339.0 batches 024-030/031-040/041-050). *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-080** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+
+**Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
+
+**Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
+
+Registry: **2,509 rows**. Fidelity gate: **2152 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -354,9 +361,12 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 - `uqff_registry_primitives.py` — 96 canonical constants (from predecessor
   v5.86.0 UNIFIED_REGISTRY R5 baseline). **Registry-clean.**
 - `uqff_calculator.py` — `DISPATCH` grows one paper at a time;
-  `calc(paper_id, dataset)` public interface.
-- `uqff_fidelity_tests.py` — 9-block gate (1,369 assertions), locking every
-  primitive identity + every wired paper's stated values. Runs on every ship.
+  `calc(paper_id, dataset)` public interface; 1766-function primitive-sourced
+  equation library + derived-constant accessors.
+- `uqff_derived_constants.py` — 1,272-constant catalog (predecessor-registry
+  derived constants re-expressed as data per Rule E; callable via `derived_constant()`).
+- `uqff_fidelity_tests.py` — gate (2153 assertions), locking every
+  primitive identity + every wired paper's stated values + the catalog. Runs on every ship.
 
 ### Registry pantheon (live, grows per band)
 - `UNIFIED_REGISTRY.csv` — master registry (17-col schema), +rows per paper
@@ -740,6 +750,18 @@ print(f"Papers wired: {wired_count()}")
 # Look up a specific paper (returns OPEN if not yet wired)
 result = calc('PAPER_646')
 print(result)
+
+# Flagship UQFF closed forms (individually callable)
+import uqff_calculator as C
+print(C.cosmological_constant_26fact())   # 5.957e-10 J/m^3  (Planck Lambda)
+print(C.proton_electron_ratio())          # 1836  (m_p/m_e from integers)
+print(C.yang_mills_mass_gap())            # 1.736 GeV  (Millennium)
+
+# Derived-constants catalog — 1,272 predecessor-registry constants by name
+print(C.derived_constants_count())                  # 1272
+print(C.derived_constant('alpha_inverse'))          # 137.0
+print(C.derived_constant_record('alpha_inverse'))   # {value, formula, route, paper: PAPER_1167, ...}
+print(C.list_derived_constants(sector='SI')[:5])    # filter by sector or paper
 ```
 
 ## Fidelity gate

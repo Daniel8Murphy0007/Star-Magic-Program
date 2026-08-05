@@ -4,3 +4,5 @@ _common_uqff_blocks,helper,shared appendix blocks defined ONCE; reused by all GW
 dispatch_registration,integrity,"342 registrations, 0 duplicate @_register keys verified 2026-08-04 (post backward-slice fix)"
 bsm_ssq_ladder,equation,SSq^n powers reused across PAPER_024-030 via library (no duplication)
 ssq_correction_scm_enh,equation,SSq/[SCm] correction factors defined once; reused across PAPER_073/074/075/079 (no duplication)
+blandford_znajek_power,function,CAUGHT+FIXED v0.345.0: was defined twice (shadow-overwrite); spin/field variant renamed blandford_znajek_power_spin; NO-DUPLICATE-DEF gate guard added
+dc_* catalog,function,1272 dc_ derived-equation fns each defined ONCE in uqff_derived_functions.py; 0 duplicate names (gate-verified)

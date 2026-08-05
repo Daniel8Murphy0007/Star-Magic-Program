@@ -47,3 +47,6 @@ ug1_magfactor_q062c,open_ruling,Q-062c: Ug1 mu0 B^2/8pi magnetic factor (PAPER_0
 ua_weight_q060b_3rd,open_ruling,Q-060b: Omega_g=[UA]=1e-4 3rd/6th appearances (PAPER_072/078)
 astrometry_coeff_q070a,open_ruling,Q-070a: correction coeff 0.034 vs 0.032 (PAPER_073/074)
 scm099_namespace_q075a,open_ruling,Q-075a: [SCm]=0.99 vs H_SCm=0.99 namespace (PAPER_079)
+G_uqff_cosmic_593,rule7_disclosed,parameter-free G transcription does not reproduce with paper scale-conventions; returns canonical G_UQFF (PAPER_593)
+holmlid_ker_630eV,rule7_disclosed,KER chain xi-normalization not restated in paper; returns 630 eV calibration anchor (PAPER_1133)
+s26_third_order,rule7_disclosed,Ramanujan-series computation not re-derived; returns stated 1.4531e26 (PAPER_1080)

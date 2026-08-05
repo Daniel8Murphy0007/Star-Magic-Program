@@ -3153,3 +3153,187 @@ equation,fermi_null_modulation,paper,PAPER_076,wires
 equation,ringdown_correction,paper,PAPER_077,wires
 equation,hubble_ua_correction,paper,PAPER_078,wires
 equation,suite_completeness,paper,PAPER_065,wires
+primitive,RHO_SCM,observable,kozima_neutron_drop,kozima_neutron_drop composes from RHO_SCM
+primitive,N_CH,observable,kozima_neutron_drop,kozima_neutron_drop composes from N_CH
+observable,kozima_neutron_drop,paper,PAPER_1061,derived in PAPER_1061
+observable,bekenstein_hawking_entropy,paper,PAPER_084,derived in PAPER_084
+primitive,RHO_SCM,observable,widom_larsen_gamma_suppression,widom_larsen_gamma_suppression composes from RHO_SCM
+observable,widom_larsen_gamma_suppression,paper,PAPER_062,derived in PAPER_062
+primitive,SSQ,observable,omega_lambda_ssq,omega_lambda_ssq composes from SSQ
+observable,omega_lambda_ssq,paper,PAPER_1156,derived in PAPER_1156
+observable,star_magic_reactor_cop,paper,PAPER_1141,derived in PAPER_1141
+observable,void_buoyancy,paper,PAPER_589,derived in PAPER_589
+observable,dark_sector_suppression,paper,PAPER_030,derived in PAPER_030
+observable,scm_thermal_activation,paper,PAPER_1072,derived in PAPER_1072
+primitive,RHO_SCM,observable,vacuum_zeropoint_density,vacuum_zeropoint_density composes from RHO_SCM
+observable,vacuum_zeropoint_density,paper,PAPER_1198,derived in PAPER_1198
+primitive,D_PHYS,observable,proton_electron_ratio,proton_electron_ratio composes from D_PHYS
+primitive,A_5,observable,proton_electron_ratio,proton_electron_ratio composes from A_5
+primitive,D_CRIT,observable,proton_electron_ratio,proton_electron_ratio composes from D_CRIT
+primitive,N_CH,observable,proton_electron_ratio,proton_electron_ratio composes from N_CH
+observable,proton_electron_ratio,paper,PAPER_1209,derived in PAPER_1209
+observable,cosmic_ray_knee_energy,paper,PAPER_215,derived in PAPER_215
+primitive,RHO_SCM,observable,universal_inertial_operator,universal_inertial_operator composes from RHO_SCM
+primitive,RHO_UA,observable,universal_inertial_operator,universal_inertial_operator composes from RHO_UA
+primitive,F_TRZ,observable,universal_inertial_operator,universal_inertial_operator composes from F_TRZ
+observable,universal_inertial_operator,paper,PAPER_700,derived in PAPER_700
+observable,m_sigma_phonon,paper,PAPER_1048,derived in PAPER_1048
+observable,thz_shock_force,paper,PAPER_239,derived in PAPER_239
+observable,ug3_disk_field,paper,PAPER_401,derived in PAPER_401
+primitive,S_26,observable,gw_strain_damping,gw_strain_damping composes from S_26
+observable,gw_strain_damping,paper,PAPER_915,derived in PAPER_915
+observable,spooky_action_force,paper,PAPER_240,derived in PAPER_240
+observable,expansion_erosion_dual,paper,PAPER_883,derived in PAPER_883
+primitive,S_26,observable,ramanujan_polynomial_Qn,ramanujan_polynomial_Qn composes from S_26
+observable,ramanujan_polynomial_Qn,paper,PAPER_205,derived in PAPER_205
+observable,higgs_vev_integer,paper,PAPER_1270,derived in PAPER_1270
+observable,qgp_deconfinement_temp,paper,PAPER_1004,derived in PAPER_1004
+observable,negative_time_tneg,paper,PAPER_597,derived in PAPER_597
+observable,m_sigma_exponent,paper,PAPER_1048,derived in PAPER_1048
+primitive,S_26,observable,holmlid_ker_630eV,holmlid_ker_630eV composes from S_26
+observable,holmlid_ker_630eV,paper,PAPER_1133,derived in PAPER_1133
+primitive,F_TRZ,observable,monopole_ratio,monopole_ratio composes from F_TRZ
+observable,monopole_ratio,paper,PAPER_140,derived in PAPER_140
+observable,bbh_apparent_distance_bias,paper,PAPER_003,derived in PAPER_003
+primitive,F_TRZ,observable,proton_mass_integer,proton_mass_integer composes from F_TRZ
+primitive,D_PHYS,observable,proton_mass_integer,proton_mass_integer composes from D_PHYS
+primitive,SO_5,observable,proton_mass_integer,proton_mass_integer composes from SO_5
+primitive,N_CH,observable,proton_mass_integer,proton_mass_integer composes from N_CH
+primitive,PHI_RES_RESONANCE,observable,proton_mass_integer,proton_mass_integer composes from PHI_RES_RESONANCE
+observable,proton_mass_integer,paper,PAPER_1209,derived in PAPER_1209
+observable,quantum_uncertainty_gravity,paper,PAPER_244,derived in PAPER_244
+primitive,G_UQFF,observable,vacuum_repulsion_force,vacuum_repulsion_force composes from G_UQFF
+observable,vacuum_repulsion_force,paper,PAPER_238,derived in PAPER_238
+observable,lenr_lagrangian,paper,PAPER_102,derived in PAPER_102
+primitive,C_UQFF_DERIVED,observable,radiation_energy_density,radiation_energy_density composes from C_UQFF_DERIVED
+observable,radiation_energy_density,paper,PAPER_219,derived in PAPER_219
+observable,icecube_neutrino_flux,paper,PAPER_108,derived in PAPER_108
+primitive,C_UQFF_DERIVED,observable,beta_i_onset,beta_i_onset composes from C_UQFF_DERIVED
+observable,beta_i_onset,paper,PAPER_108,derived in PAPER_108
+observable,nfw_dark_matter_profile,paper,PAPER_204,derived in PAPER_204
+observable,agn_jet_feedback_force,paper,PAPER_223,derived in PAPER_223
+observable,cmb_temperature,paper,PAPER_098,derived in PAPER_098
+primitive,D_CRIT,observable,dpm_26layer_amplification,dpm_26layer_amplification composes from D_CRIT
+observable,dpm_26layer_amplification,paper,PAPER_1155,derived in PAPER_1155
+observable,parkhomov_power,paper,PAPER_1137,derived in PAPER_1137
+observable,um_magnetism_base,paper,PAPER_200,derived in PAPER_200
+primitive,F_TRZ,observable,pnp_bound,pnp_bound composes from F_TRZ
+observable,pnp_bound,paper,PAPER_1182,derived in PAPER_1182
+observable,oscillatory_gravity,paper,PAPER_246,derived in PAPER_246
+observable,fe56_be_per_a,paper,PAPER_1203,derived in PAPER_1203
+primitive,F_TRZ,observable,proton_mass_alt_1209,proton_mass_alt_1209 composes from F_TRZ
+primitive,SO_5,observable,proton_mass_alt_1209,proton_mass_alt_1209 composes from SO_5
+primitive,PHI_RES_RESONANCE,observable,proton_mass_alt_1209,proton_mass_alt_1209 composes from PHI_RES_RESONANCE
+observable,proton_mass_alt_1209,paper,PAPER_1209,derived in PAPER_1209
+primitive,G_UQFF,observable,blandford_znajek_power_spin,blandford_znajek_power_spin composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,blandford_znajek_power_spin,blandford_znajek_power_spin composes from C_UQFF_DERIVED
+observable,blandford_znajek_power_spin,paper,PAPER_1037,derived in PAPER_1037
+primitive,SSQ,observable,sterile_neutrino_mass_gut,sterile_neutrino_mass_gut composes from SSQ
+observable,sterile_neutrino_mass_gut,paper,PAPER_026,derived in PAPER_026
+observable,meson_cascade_step,paper,PAPER_648,derived in PAPER_648
+observable,bsd_rank_ordinal,paper,PAPER_599,derived in PAPER_599
+observable,buoyancy_eom_variational,paper,PAPER_1183,derived in PAPER_1183
+observable,nlevel_energy,paper,PAPER_116,derived in PAPER_116
+primitive,F_TRZ,observable,mond_k_ua,mond_k_ua composes from F_TRZ
+observable,mond_k_ua,paper,PAPER_210,derived in PAPER_210
+observable,speed_of_light_sqrt,paper,PAPER_592,derived in PAPER_592
+observable,planck_ladder_energy,paper,PAPER_044,derived in PAPER_044
+observable,dsa_spectral_index,paper,PAPER_215,derived in PAPER_215
+observable,erosion_energy,paper,PAPER_260,derived in PAPER_260
+observable,scm_reaction_energy,paper,PAPER_176,derived in PAPER_176
+primitive,RHO_SCM,observable,scm_condensate_potential_min,scm_condensate_potential_min composes from RHO_SCM
+observable,scm_condensate_potential_min,paper,PAPER_1002,derived in PAPER_1002
+observable,hubble_reion_growth,paper,PAPER_202,derived in PAPER_202
+observable,scm_activation_temp,paper,PAPER_1072,derived in PAPER_1072
+observable,hubble_evolution_Ez,paper,PAPER_202,derived in PAPER_202
+observable,alpha_binding_energy,paper,PAPER_1203,derived in PAPER_1203
+observable,yang_mills_mass_gap,paper,PAPER_1318,derived in PAPER_1318
+primitive,F_TRZ,observable,wormhole_throat_radius,wormhole_throat_radius composes from F_TRZ
+observable,wormhole_throat_radius,paper,PAPER_153,derived in PAPER_153
+observable,cosmic_ray_spectrum,paper,PAPER_130,derived in PAPER_130
+observable,pta_gw_amplitude,paper,PAPER_019,derived in PAPER_019
+observable,qnm_ringdown_shift,paper,PAPER_010,derived in PAPER_010
+observable,fine_structure_alpha,paper,PAPER_652,derived in PAPER_652
+primitive,SSQ,observable,lfv_suppression,lfv_suppression composes from SSQ
+observable,lfv_suppression,paper,PAPER_027,derived in PAPER_027
+primitive,SSQ,observable,neutron_separation_energy,neutron_separation_energy composes from SSQ
+observable,neutron_separation_energy,paper,PAPER_124,derived in PAPER_124
+observable,h0_anchor_asymmetry,paper,PAPER_1157,derived in PAPER_1157
+primitive,SO_5,observable,h0_hubble_integer,h0_hubble_integer composes from SO_5
+primitive,A_5,observable,h0_hubble_integer,h0_hubble_integer composes from A_5
+observable,h0_hubble_integer,paper,PAPER_1573,derived in PAPER_1573
+observable,cmb_spectral_index_ns,paper,PAPER_203,derived in PAPER_203
+primitive,F_TRZ,observable,planetary_scm_pressure,planetary_scm_pressure composes from F_TRZ
+observable,planetary_scm_pressure,paper,PAPER_136,derived in PAPER_136
+observable,photoevaporation_balance,paper,PAPER_219,derived in PAPER_219
+primitive,C_UQFF_DERIVED,observable,radiation_pressure,radiation_pressure composes from C_UQFF_DERIVED
+observable,radiation_pressure,paper,PAPER_222,derived in PAPER_222
+observable,inflation_scale_factor,paper,PAPER_587,derived in PAPER_587
+observable,rossi_ecat_cop,paper,PAPER_1141,derived in PAPER_1141
+primitive,F_TRZ,observable,riemann_rho_uqff,riemann_rho_uqff composes from F_TRZ
+primitive,PHI_RES_RESONANCE,observable,riemann_rho_uqff,riemann_rho_uqff composes from PHI_RES_RESONANCE
+observable,riemann_rho_uqff,paper,PAPER_1182,derived in PAPER_1182
+primitive,F_TRZ,observable,poincare_ricci_ratio,poincare_ricci_ratio composes from F_TRZ
+primitive,PHI_RES_RESONANCE,observable,poincare_ricci_ratio,poincare_ricci_ratio composes from PHI_RES_RESONANCE
+observable,poincare_ricci_ratio,paper,PAPER_1182,derived in PAPER_1182
+observable,coulomb_lenr_energy,paper,PAPER_648,derived in PAPER_648
+primitive,RHO_SCM,observable,cosmological_constant_26fact,cosmological_constant_26fact composes from RHO_SCM
+observable,cosmological_constant_26fact,paper,PAPER_589,derived in PAPER_589
+observable,reionization_bubble_growth,paper,PAPER_1026,derived in PAPER_1026
+observable,baryon_asymmetry,paper,PAPER_098,derived in PAPER_098
+primitive,G_UQFF,observable,saturn_ring_tidal,saturn_ring_tidal composes from G_UQFF
+observable,saturn_ring_tidal,paper,PAPER_224,derived in PAPER_224
+primitive,F_TRZ,observable,neutrino_detectability_fork,neutrino_detectability_fork composes from F_TRZ
+observable,neutrino_detectability_fork,paper,PAPER_088,derived in PAPER_088
+observable,hodge_identity,paper,PAPER_1182,derived in PAPER_1182
+primitive,S_26,observable,s26_third_order,s26_third_order composes from S_26
+observable,s26_third_order,paper,PAPER_1080,derived in PAPER_1080
+primitive,F_TRZ,observable,ym_gap_kmex,ym_gap_kmex composes from F_TRZ
+observable,ym_gap_kmex,paper,PAPER_1182,derived in PAPER_1182
+observable,sgra_total_gravity,paper,PAPER_110,derived in PAPER_110
+primitive,C_UQFF_DERIVED,observable,pwn_wind_force,pwn_wind_force composes from C_UQFF_DERIVED
+observable,pwn_wind_force,paper,PAPER_220,derived in PAPER_220
+primitive,SSQ,observable,omega_baryon_dm_ratio,omega_baryon_dm_ratio composes from SSQ
+observable,omega_baryon_dm_ratio,paper,PAPER_118,derived in PAPER_118
+primitive,G_UQFF,observable,G_uqff_cosmic_593,G_uqff_cosmic_593 composes from G_UQFF
+observable,G_uqff_cosmic_593,paper,PAPER_593,derived in PAPER_593
+primitive,RHO_SCM,observable,dark_energy_gamma_density,dark_energy_gamma_density composes from RHO_SCM
+observable,dark_energy_gamma_density,paper,PAPER_1086,derived in PAPER_1086
+primitive,SSQ,observable,vacuum_energy_header_identity,vacuum_energy_header_identity composes from SSQ
+observable,vacuum_energy_header_identity,paper,PAPER_106,derived in PAPER_106
+primitive,S_26,observable,tidal_deformability_phonon,tidal_deformability_phonon composes from S_26
+observable,tidal_deformability_phonon,paper,PAPER_914,derived in PAPER_914
+primitive,SSQ,observable,sterile_neutrino_mass_ew,sterile_neutrino_mass_ew composes from SSQ
+observable,sterile_neutrino_mass_ew,paper,PAPER_026,derived in PAPER_026
+primitive,G_UQFF,observable,archimedes_fluid_gravity,archimedes_fluid_gravity composes from G_UQFF
+observable,archimedes_fluid_gravity,paper,PAPER_245,derived in PAPER_245
+primitive,C_UQFF_DERIVED,observable,friedmann_lambda,friedmann_lambda composes from C_UQFF_DERIVED
+observable,friedmann_lambda,paper,PAPER_1156,derived in PAPER_1156
+observable,cmb_acoustic_peak,paper,PAPER_1092,derived in PAPER_1092
+observable,cool_core_buoyancy,paper,PAPER_1041,derived in PAPER_1041
+observable,gw_wave_phonon_source,paper,PAPER_1022,derived in PAPER_1022
+primitive,D_PHYS,observable,nuclear_magic_numbers,nuclear_magic_numbers composes from D_PHYS
+primitive,SO_5,observable,nuclear_magic_numbers,nuclear_magic_numbers composes from SO_5
+primitive,A_5,observable,nuclear_magic_numbers,nuclear_magic_numbers composes from A_5
+primitive,D_CRIT,observable,nuclear_magic_numbers,nuclear_magic_numbers composes from D_CRIT
+observable,nuclear_magic_numbers,paper,PAPER_1203,derived in PAPER_1203
+observable,navier_stokes_fluid_boundary,paper,PAPER_102,derived in PAPER_102
+observable,universe_diameter_gly,paper,PAPER_213,derived in PAPER_213
+observable,navier_stokes_enstrophy_cap,paper,PAPER_1182,derived in PAPER_1182
+observable,kaluza_klein_mass,paper,PAPER_022,derived in PAPER_022
+primitive,F_TRZ,observable,bbh_energy_retention,bbh_energy_retention composes from F_TRZ
+observable,bbh_energy_retention,paper,PAPER_005,derived in PAPER_005
+observable,electron_g2_anomaly,paper,PAPER_652,derived in PAPER_652
+observable,higgs_top_coupling,paper,PAPER_034,derived in PAPER_034
+observable,mizuno_lenr_power,paper,PAPER_1140,derived in PAPER_1140
+primitive,SSQ,observable,muge_ubi_ratio,muge_ubi_ratio composes from SSQ
+observable,muge_ubi_ratio,paper,PAPER_090,derived in PAPER_090
+observable,stress_energy_coupling,paper,PAPER_165,derived in PAPER_165
+observable,f_u_master_equation,paper,PAPER_090,derived in PAPER_090
+primitive,G_UQFF,observable,gravitational_self_energy,gravitational_self_energy composes from G_UQFF
+observable,gravitational_self_energy,paper,PAPER_173,derived in PAPER_173
+observable,ug4_coupling_k4,paper,PAPER_172,derived in PAPER_172
+observable,qgp_critical_temp,paper,PAPER_1004,derived in PAPER_1004
+observable,qgp_viscosity_kss,paper,PAPER_1008,derived in PAPER_1008
+observable,higgs_cp_asymmetry,paper,PAPER_035,derived in PAPER_035
+observable,new_physics_tev_br,paper,PAPER_029,derived in PAPER_029

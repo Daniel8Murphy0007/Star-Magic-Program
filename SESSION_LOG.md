@@ -5085,3 +5085,24 @@ until 300+ done.
   README badges version-0.344.0 / cacheBust=0.344.0 / fidelity_gate-2148; pyproject desc 393 chars; CHANGELOG split so
   [0.344.0]=catalog and [0.343.0]=mine-II (as actually shipped); SHIP_MESSAGE rewritten; XGEO regenerated.
 - uqff_derived_constants.py is a NEW untracked file — ship.ps1 git add -A will include it. Gate 2148, exit 0.
+
+## 2026-08-05 — v0.345.0 README REWRITE + PREDECESSOR-MINE III
+- Daniel: "YOU DID NOT UPDATE THE MOST IMPORTANT FILE: THE README." Prior ships bumped badges only. Fixed: README header,
+  release note, "currently shipped" section, clean-baseline listing, and Quick-start now document the derived-constants
+  catalog (1,272), the 451-fn equation library, all 8 Millennium closures, flagship forms. Stale gate count 1,369 -> 2,148.
+- Predecessor-mine III (13 fns, MOND/MUGE/buoyancy): archimedes_fluid_gravity (245), oscillatory_gravity (246),
+  quantum_uncertainty_gravity (244), mond_a0_emergent=1.13e-10 + mond_k_ua=1e-4 (210), vacuum_repulsion_force (238),
+  vacuum_energy_header_identity (106), ramanujan_polynomial_Qn (205, S_26 basis), thz_shock_force=14400 at 150 THz (239),
+  spooky_action_force (240), universe_diameter_gly=93.016 (213), stress_energy_coupling (165), wormhole_throat_radius (153/159).
+- Named equation functions 434 -> 451 (+17). Registry 2,443 -> 2,459 rows. Version 0.344.0 -> 0.345.0 across all files.
+- Gate 2148, exit 0. Ship files synced; XGEO regenerated.
+
+## 2026-08-05 — v0.345.0 (cont.) DERIVED CONSTANTS -> 1,272 INDIVIDUAL FUNCTIONS
+- Daniel: "I ASKED FOR DERIVED EQUATIONS WHICH ARE FUNCTIONS." Corrected: the 1,272-constant catalog was a data dict;
+  now promoted to 1,272 individual named callable functions in new module uqff_derived_functions.py (dc_* prefix).
+- Physics content re-expressed per Rule E (no code ported). 15 values equal to a registry primitive compose from that
+  primitive (RHO_SCM/BETA_I/SSQ/F_TRZ/S_26); banned literals scrubbed from bodies AND docstrings (gate-checked).
+- Wired into calculator via `from uqff_derived_functions import *`; all 1,272 callable as C.dc_*. Added to pyproject py-modules.
+- MEASURED totals: 2,112 total Python functions | 1,766 named callable (494 equation-library + 1,272 dc_) | 342 dispatches.
+- Gate +6 guards (count=1272, all callable, primitive-compose check, no banned literals) -> 2159, exit 0.
+- Prior honest-accounting fixes retained: NO-DUPLICATE-DEF guard, blandford_znajek_power shadow renamed to _spin form.

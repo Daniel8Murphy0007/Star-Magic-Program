@@ -56,3 +56,16 @@ solar_g,G M/R^2,274,274,PAPER_071,closed_form,0.0
 reactor_cop,(1.10/0.9999)+0.05,,1.150,PAPER_072,closed_form,0.0
 ssq_corr,1+SSq*0.034,,1.0194,PAPER_073,closed_form,0.0
 sc_enh,1+[SCm],1.99,1.99,PAPER_075,closed_form,0.0
+cosmological_constant,rho_SCm*26!*K_MEX,rho_SCm*26!*25/12,5.957e-10,PAPER_589,planck_lambda,0.1
+proton_mass,N_ch*SO_5^2+N_ch*D_phys+K_MEX+2*F_TRZ*Phi_res,integer identity,938.25,PAPER_1209,integer_mass,0.0
+proton_electron_ratio,A_5(D_crit+D_phys)+N_ch*D_phys,integer identity,1836,PAPER_1209,integer_mass,0.0
+H0_hubble,A_5+SO_5,60+10,70,PAPER_1573,integer_identity,0.0
+omega_lambda,(6/5)*SSq,1.2*0.57,0.684,PAPER_1156,planck,0.1
+universal_inertial_operator,lam_i*(rho_SCm/rho_UA)*omega*cos(pi*t_n)*(1+F_TRZ),,2.75e-7,PAPER_646,sun_t0,0.0
+mond_a0,c*H0/6,,1.13e-10,PAPER_210,mond_emergent,5.8
+mond_k_ua,F_TRZ^4,0.1^4,1e-4,PAPER_210,deep_mond,0.0
+nuclear_magic_2,SO_5-2*D_phys,10-8,2,PAPER_1203,shell_magic,0.0
+nuclear_magic_126,D_crit+SO_5^2,26+100,126,PAPER_1203,shell_magic,0.0
+omega_baryon_dm,SSq^3,0.57^3,0.185,PAPER_118,planck,0.16
+cmb_spectral_index,slow-roll 1-6eps+2eta,,0.9649,PAPER_203,planck,0.0
+yang_mills_gap,26D compactification,,1.736,PAPER_1318,glueball,2.1

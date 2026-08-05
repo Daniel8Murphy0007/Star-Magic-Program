@@ -103,3 +103,13 @@ equations (entanglement/redshift/aether-noise/PTA/cosmic-ray/lensing/string-comp
 ## 2026-08-05 — batch PAPER_071-080 complete-compile (v0.342.0)
 Papers at complete-compile depth: PAPER_001-080 + b-variants. 470-fn equation library. 342 dispatches, 0 duplicates.
 Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping through PAPER_080. Gate green (2116 assertions).
+
+
+---
+
+## LIVE CAMPAIGN STATUS — v0.345.0 (this repo, distinct from frozen reference above)
+
+- Equation library: **2112 total Python functions**, **1767 named callable** (494 equation-library + 1,272 dc_ derived-equation).
+- Dispatches: 342 (PAPER_001-080). Registry: **2502 rows**, 0 malformed.
+- Linked-paper mapping: GRAPH **3330 edges**, CORPUS_CITATIONS **732 papers** mapped.
+- Fidelity gate: **2159 assertions**, green. NO-DUPLICATE-DEF guard active. Rule E / Rule 4 / Rule 7 held.

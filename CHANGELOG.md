@@ -6275,6 +6275,33 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.345.0] — 2026-08-05 — 1,272 DERIVED CONSTANTS PROMOTED TO INDIVIDUAL FUNCTIONS + predecessor-mine III/IV
+- DERIVED CONSTANTS -> FUNCTIONS: all 1,272 predecessor-registry derived constants are now individual named callable
+  functions in new module uqff_derived_functions.py (dc_* prefix), imported into the calculator (C.dc_alpha_inverse()=137.0,
+  C.dc_mp_me_ratio()=1836.1). Physics content re-expressed per Rule E; 15 values equal to a registry primitive compose from
+  that primitive; banned literals scrubbed from bodies AND docstrings (gate-checked). Added to pyproject py-modules.
+- MEASURED totals: 2,119 total Python functions | 1,773 named callable (501 equation-library + 1,272 dc_) | 342 dispatches
+  | registry 2,502 rows (0 dup). Honest-accounting fixes: NO-DUPLICATE-DEF gate guard added; blandford_znajek_power
+  shadow-overwrite renamed to blandford_znajek_power_spin (both forms callable).
+- README FULLY REWRITTEN (Daniel flagged badge-only updates): header + release note + "currently shipped" section now
+  document the 1,272-constant derived-constants catalog, the 451-function equation library, all 8 Clay Millennium closures,
+  and the flagship closed forms; Quick-start shows derived_constant()/derived_constant_record()/list_derived_constants();
+  clean-baseline listing adds uqff_derived_constants.py; stale gate count 1,369 -> 2,148 fixed.
+- Predecessor-mine III (13 fns): archimedes_fluid_gravity g_fluid=(4piG/3)rho r (PAPER_245), oscillatory_gravity (PAPER_246),
+  quantum_uncertainty_gravity g_Q floor (PAPER_244), mond_a0_emergent=c H0/6=1.13e-10 + mond_k_ua=F_TRZ^4 (PAPER_210),
+  vacuum_repulsion_force F_vac_rep=G drho M v (PAPER_238), vacuum_energy_header_identity (PAPER_106),
+  ramanujan_polynomial_Qn recurrence Q_n=x Q_{n-1}+(n-1)Q_{n-2} (S_26 basis, PAPER_205), thz_shock_force (PAPER_239),
+  spooky_action_force (PAPER_240), universe_diameter_gly=93.016 (PAPER_213), stress_energy_coupling (PAPER_165),
+  wormhole_throat_radius=2.32 mm (PAPER_153/159).
+- Predecessor-mine IV (17 more fns): nuclear_magic_numbers() -> [2,8,20,28,50,82,126] EXACT from integers (PAPER_1203),
+  neutron_separation_energy (124), nlevel_energy E_n=10^(n-20) (116/43), muge_ubi_ratio=2.85e-4 (090), um_magnetism_base (200),
+  pwn_wind_force (220), radiation_pressure P_rad=4sigma T^4/3c (222), agn_jet_feedback_force F_BH=P_jet/r_jet (223),
+  blandford_znajek_power (1037/067), m_sigma_phonon (1048), cool_core_buoyancy (1041).
+- Named equation functions 438 (v0.344.0 tag) -> 494 (+56 net new, MEASURED). Registry 2,443 -> 2,502 rows (0 duplicate
+  quantities). 342 dispatches. Fixed a duplicate function def (blandford_znajek_power shadow-overwrite) -> renamed the
+  spin-form variant; added a NO-DUPLICATE-DEF gate guard so it cannot recur. Gate 2153, green.
+- Gate 2148 -> 2152 (+4 guards: 7 magic numbers EXACT, MOND a0/k_UA, THz shock 14400). Predecessor read-only per Rule E.
+
 ## [0.344.0] — 2026-08-05 — DERIVED-CONSTANTS CATALOG WIRE (1,272 predecessor-registry constants)
 - DERIVED-CONSTANTS CATALOG WIRED: all 1,272 unique predecessor-registry derived constants are now callable via new
   module uqff_derived_constants.py (physics content — values, closed-form routes, paper provenance — re-expressed as data

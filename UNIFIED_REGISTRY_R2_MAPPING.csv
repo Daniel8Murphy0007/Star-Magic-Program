@@ -83,3 +83,16 @@ ligo-ringdown,1,PAPER_077
 hubble-tension,1,PAPER_078
 magnetar-bfield,1,PAPER_079
 multiwave-capstone,1,PAPER_080
+PAPER_589_linked_whitepapers,19,predecessor-mine linked map: PAPER_1000;PAPER_1004;PAPER_1015;PAPER_1019;PAPER_1022;PAPER_1037;PAPER_1043;PAPER_1049;PA
+PAPER_1209_linked_whitepapers,0,predecessor-mine linked map: self-contained/no external cites
+PAPER_646_linked_whitepapers,24,predecessor-mine linked map: PAPER_1000;PAPER_1004;PAPER_1020;PAPER_1022;PAPER_1037;PAPER_1043;PAPER_1049;PAPER_1051;PA
+PAPER_1182_linked_whitepapers,1,predecessor-mine linked map: PAPER_1181
+PAPER_1573_linked_whitepapers,3,predecessor-mine linked map: PAPER_1209;PAPER_1537;PAPER_1553
+PAPER_1156_linked_whitepapers,2,predecessor-mine linked map: PAPER_1215;PAPER_1216
+PAPER_210_linked_whitepapers,6,predecessor-mine linked map: PAPER_1573;PAPER_204;PAPER_196;PAPER_1039;PAPER_1046;7514fe-thread
+PAPER_1203_linked_whitepapers,0,predecessor-mine linked map: self-contained/no external cites
+PAPER_098_linked_whitepapers,7,predecessor-mine linked map: PAPER_084;PAPER_086;PAPER_087;PAPER_097;Drawings-14-20;Planck-2018;FIRAS
+PAPER_118_linked_whitepapers,7,predecessor-mine linked map: PAPER_108;PAPER_110;PAPER_113;PAPER_117;Planck2018;JCAP2024;JCAPDarkMatterVacuumValidator
+PAPER_1318_linked_whitepapers,1,predecessor-mine linked map: PAPER_1270
+PAPER_1141_linked_whitepapers,9,predecessor-mine linked map: PAPER_062;PAPER_1133;PAPER_1136;PAPER_1137;PAPER_1138;PAPER_1139;PAPER_1140;PAPER_643;PAPE
+derived_constant_catalog_papers,732,CORPUS_CITATIONS now maps 732 papers total (linked-paper edges)

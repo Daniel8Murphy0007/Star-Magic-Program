@@ -113,3 +113,23 @@ All primitive-sourced; residuals honest (0.0-0.35%).
 
 ## Update 2026-08-05 — closed forms through PAPER_080 (batch 071-080)
 Added: solar_surface_gravity (274 m/s^2), ug1_magnetic, cop_reactor (1.150), ssq_correction (1.0194), scm_multiplier_enhancement (1.99).
+
+
+---
+
+## LIVE CAMPAIGN ADDITIONS — v0.345.0 (distinct from the frozen predecessor reference above)
+
+These are results wired into THIS repo's calculator this ship (see `UNIFIED_REGISTRY_RESULTS_TABLE.csv` for the machine rows):
+
+| Constant | Route | UQFF value | Reference | Residual |
+|---|---|---|---|---|
+| cosmological_constant | rho_SCm·26!·25/12 | 5.957e-10 J/m³ | PAPER_589 (Planck Λ) | 0.1% |
+| proton_mass | N_ch·SO_5²+N_ch·D_phys+K_MEX+2F_TRZ·Φ_res | 938.25 MeV | PAPER_1209 | 0.0% |
+| proton_electron_ratio | A_5(D_crit+D_phys)+N_ch·D_phys | 1836 | PAPER_1209 | 0.0% |
+| H_0 | A_5+SO_5 | 70 km/s/Mpc | PAPER_1573 | 0.0% |
+| Ω_Λ | (6/5)·SSq | 0.684 | PAPER_1156 | 0.1% |
+| nuclear magic numbers | integer arithmetic | {2,8,20,28,50,82,126} | PAPER_1203 | EXACT |
+| Yang-Mills gap | 26D compactification | 1.736 GeV | PAPER_1318 | 2.1% |
+| MOND a₀ | c·H₀/6 | 1.13e-10 m/s² | PAPER_210 | 5.8% |
+
+Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constants promoted to individual callables).

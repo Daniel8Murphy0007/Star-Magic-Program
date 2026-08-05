@@ -169,3 +169,15 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - 075/079: SC-mode enhancement != 1+[SCm]=1.99 falsifies eta_Edd / B_field multiplier.
 - 078: H0 tension correction H0*[UA]*0.5=0.0034 (honest null) - UQFF does NOT resolve tension via [UA].
 - §B DVP ladder 071-080: 37,41,43,47,53,59,61,67,71,73 (paper-specific, gate-guarded).
+
+
+---
+
+## LIVE CAMPAIGN FALSIFIABLE PREDICTIONS — v0.345.0 (this repo)
+
+Mined this ship as individually-callable, primitive-sourced functions — each falsifiable against observation:
+- **H_0 = A_5 + SO_5 = 70 km/s/Mpc** (PAPER_1573): next-gen JWST/Roman/LSST central value lands at/near 70; falsified if outside 68.5-71.5.
+- **m_p/m_e = A_5(D_crit+D_phys)+N_ch·D_phys = 1836** (PAPER_1209): integer identity; any precision drift from 1836.15 stresses the primitive lattice.
+- **Ω_b/Ω_DM = SSq³ = 0.185** (PAPER_118): falsified if the ratio departs measurably from 0.185.
+- **MOND a₀ = c·H₀/6** (PAPER_210): ties the MOND scale to H_0; falsified if a₀ and H_0 decouple.
+- **k_UA = F_TRZ⁴ = 1e-4 EXACT** (PAPER_210): deep-MOND interpolation coupling; falsified by any non-1e-4 measurement.

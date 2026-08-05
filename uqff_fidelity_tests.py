@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.344.0", "uqff_calculator.VERSION = 0.344.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.345.0", "uqff_calculator.VERSION = 0.345.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -321,6 +321,27 @@ assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['e
             "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
+# === NO DUPLICATE FUNCTION DEFINITIONS GUARD (prevents shadow-overwrite drift) ===
+import re as _re, collections as _coll
+_srcguard = open("uqff_calculator.py", encoding="utf-8").read()
+_defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
+_defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
+assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === NUCLEAR MAGIC NUMBERS + MOND LANDMARK GUARD (predecessor mine III) ===
+assert_that(C.nuclear_magic_numbers() == [2, 8, 20, 28, 50, 82, 126], "PAPER_1203: all 7 shell-model magic numbers EXACT from integer primitives")
+assert_that(abs(C.mond_a0_emergent() - 1.13e-10) < 0.1e-10, "PAPER_210: MOND a0 = c H0/6 = 1.13e-10 m/s^2 emergent")
+assert_that(abs(C.mond_k_ua() - 1.0e-4) < 1e-12, "PAPER_210: MOND k_UA = F_TRZ^4 = 1e-4 EXACT")
+assert_that(abs(C.thz_shock_force(1.0, 150e12) - 14400.0) < 1.0, "PAPER_239: THz shock (150/1.25 THz)^2 = 14400 EXACT")
+# === 1,272 DERIVED-EQUATION FUNCTIONS GUARD (catalog promoted to individual callables) ===
+import uqff_derived_functions as _dcf_guard
+assert_that(_dcf_guard.DERIVED_FUNCTION_COUNT == 1272, "1,272 derived-equation functions generated")
+_dcfns = [n for n in dir(_dcf_guard) if n.startswith("dc_")]
+assert_that(len(_dcfns) == 1272, "1,272 dc_* functions present in module (found %d)" % len(_dcfns))
+assert_that(all(callable(getattr(_dcf_guard, n)) for n in _dcfns), "all 1,272 dc_* are callable")
+assert_that(C.dc_alpha_inverse() == 137.0, "dc_alpha_inverse() = 137.0 (promoted from catalog)")
+assert_that(abs(C.dc_flat_rotation_beta_i() - 0.6029) < 1e-9, "dc_flat_rotation_beta_i composes from BETA_I primitive")
+_dcfsrc = open("uqff_derived_functions.py", encoding="utf-8").read()
+assert_that("7.09e-37" not in _dcfsrc and "1.453162" not in _dcfsrc, "no banned registry-duplicating literals in derived-functions module")
 # === DERIVED-CONSTANTS CATALOG GUARD (predecessor-registry wire, 1,272 constants) ===
 assert_that(C.derived_constants_count() == 1272, "Derived-constants catalog: 1,272 predecessor-registry constants wired")
 assert_that(len(C.list_derived_constants()) == 1272, "Derived-constants catalog: all 1,272 listable")

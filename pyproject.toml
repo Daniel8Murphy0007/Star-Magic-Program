@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.344.0"
-description = "UQFF Star-Magic-Program v0.344.0: wires the full 1,272-constant predecessor-registry derived-constant catalog (new module uqff_derived_constants.py; callable via derived_constant(); routes + paper provenance preserved; 661 numeric values). Builds on 434 named equation callables + all 8 Clay Millennium closures. 342 dispatches, 0 duplicates. Registry 2,443 rows. Gate green (2148 assertions)."
+version = "0.345.0"
+description = "UQFF Star-Magic-Program v0.345.0: promotes all 1,272 predecessor-registry derived constants into individual named callable functions (uqff_derived_functions.py, dc_*; banned-literal values compose from primitives) and mines ~120 flagship closed forms. 2119 total Python functions, 1773 named callable. Full registry mapping: 3338 GRAPH edges, 733 papers linked. All 8 Millennium closures, 7 magic numbers, cosmology/BSM/LENR/GW. Gate green (2159 assertions)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -53,7 +53,7 @@ Predecessor = "https://github.com/Daniel8Murphy0007/Star-Magic"
 Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [tool.setuptools]
-py-modules = ["uqff_derived_constants", 
+py-modules = ["uqff_derived_functions", "uqff_derived_constants", 
     "uqff_registry_primitives",
     "uqff_calculator",
     "uqff_fidelity_tests",

@@ -2,6 +2,8 @@
 > **REWIRE IN PROGRESS (unshipped):** PAPER_001-003 recomposed over the new equation-library architecture (full-equation capture, primitive-sourced, all sections). Continuing through the corpus; no release until 300+ done.
 
 
+> **v0.345.0 predecessor mine + derived-constants:** 1,272 predecessor-registry derived constants promoted to individual callable functions (dc_*); ~110 flagship closed forms mined as primitive-sourced fns; GRAPH + CORPUS_CITATIONS linked-paper maps updated. Predecessor repo read-only (Rule E).
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

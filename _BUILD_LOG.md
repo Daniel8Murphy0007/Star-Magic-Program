@@ -51,3 +51,8 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — batch 071-080 (v0.342.0)
 - 470 library fns | 342 dispatches | 0 duplicates | §B ladder 37-73 gate-guarded | XGEO queue 154 | gate green
+
+## 2026-08-05 — derived-constants promoted to functions + predecessor mine (v0.345.0)
+[2026-08-05] GATE_PASS v0.345.0 — 2159 assertions: OK
+- 2112 total Python fns (1767 named callable incl. 1272 dc_ derived-equation fns) | 342 dispatches | 0 duplicates (gate-guarded)
+- registry 2502 rows | GRAPH 3330 edges | CORPUS_CITATIONS 732 linked-paper maps | XGEO regenerated | gate green
