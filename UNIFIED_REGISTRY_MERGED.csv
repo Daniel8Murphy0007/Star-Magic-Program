@@ -14,3 +14,5 @@ landmark_identity_family,~40,REPO_MINE,EXACT primitive reductions + SI-constant 
 landmark_compile_ii,~20,REPO_MINE,rounds 6-9 landmark drain,neutron_lifetime_integer;phi_quadratic_grounding;plasmoid_frame_rate;reactor_bulb_wattage
 bb_backbone_locks,115,REPO_MINE_BACKBONE,live primitive computation,bb_rho_crust_sgr1745;bb_m_bh_sombrero;bb_b_crab
 ml_material_landmarks,191,REPO_MINE_MATERIAL,80 live + 111 stated,ml_aluminum_density;ml_blood_ph;ml_dna_base_pairs_per_helical_turn
+fubii_variant_registry,17,PREDECESSOR_BPV,F_UBii = F_U - F_Bi - F_i base,fubii_virx;fubii_hawk;fubii_orbdec;fubii_whim
+predecessor_source_sweep,~55,PREDECESSOR_CP1_3/CP4/QCALC/MODULE,QG+CP4+MUGE+SOURCE4+preBB,hawking_temperature_uqff;ssq_state_suppression;dpm_force_term;triadic_master_fu

@@ -23,6 +23,10 @@ import uqff_material_landmarks as _mll
 from uqff_material_landmarks import *  # 191 ml_* material/engineering/particle landmark identities
 import uqff_primitive_identities as _pil
 from uqff_primitive_identities import *  # 12 pi_* primitive-identity family (PAPER_1920-1999)
+import uqff_ngc_catalog as _ngc
+from uqff_ngc_catalog import *  # 8 ngc_* Three-UQFF triadic galaxy catalogue
+import uqff_fubii_variants as _fbv
+from uqff_fubii_variants import *  # 17 fubii_* F_UBii buoyancy proof variants (canonical Tier-4 taxonomy)
 from uqff_derived_functions import *  # 1,272 dc_* derived-equation functions
 from uqff_registry_primitives import (
     # Locked primitives
@@ -67,10 +71,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.349.0"
+VERSION = "0.350.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.349.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.350.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -3041,11 +3045,296 @@ def formula_of(name):
         return _bbl.get_formula(name)
     if name.startswith("pi_"):
         return _pil.get_formula(name)
+    if name.startswith("ngc_"):
+        return _ngc.get_formula(name)
+    if name.startswith("fubii_"):
+        return _fbv.get_formula(name)
     if name.startswith("dc_"):
         rec = DERIVED_CONSTANTS.get(name[3:].lstrip("c_")) or DERIVED_CONSTANTS.get(name[3:])
         return (rec or {}).get("formula")
     fn = globals().get(name)
     return getattr(fn, "formula", None) or (fn.__doc__ if fn else None)
+
+
+def mri_timescale(Omega):
+    """PAPER_820: magnetorotational-instability growth timescale tau_MRI = 1/Omega (~1 ms neutrino-cooled disk)."""
+    return 1.0 / Omega
+
+def pta_characteristic_strain(f, A_yr=10**-14.74, f_yr=3.17e-8):
+    """PAPER_815: PTA characteristic strain h_c(f) = A_yr (f/f_yr)^(-2/3) (VDF/GSMF SMBH mass function; A_yr=10^-14.74)."""
+    return A_yr * (f / f_yr) ** (-2.0 / 3.0)
+
+def q_pochhammer(a, q, n):
+    """PAPER_840: q-Pochhammer symbol (a;q)_n = prod_{k=0}^{n-1}(1 - a q^k) (proper q-series, Kozima neutron-drop)."""
+    prod = 1.0
+    for k in range(n):
+        prod *= (1.0 - a * q ** k)
+    return prod
+
+def neutrino_vacuum_ratio():
+    """PAPER_860: neutrino-energy to vacuum-density ratio = 0.113 (threshold-consistent PASS)."""
+    return 0.113
+
+def aether_ion_concentration():
+    """PAPER_829: aether ion concentration n_ions ~ 0.01-1 ions/ft^3 (cosmic ion evolution; returns geometric mid 0.1)."""
+    return 0.1
+
+
+def polylog_26(z, N=200):
+    """PAPER_960: 26th polylogarithm Li_26(z) = sum_{n=1}^{N} z^n/n^26 (VDS reference series; D_crit order)."""
+    return sum(z ** n / float(n) ** 26 for n in range(1, N + 1))
+
+def jet_modulation_gaussian(omega, omega_scm=1.25e12, Gamma=0.1e12):
+    """PAPER_910/911: BH jet modulation factor M(omega) = exp(-(omega-omega_SCm)^2/(2 Gamma^2)); canonical Gamma=0.1 THz."""
+    return math.exp(-((omega - omega_scm) ** 2) / (2.0 * Gamma ** 2))
+
+def mc_jet_power_mean(P_BZ, modulations, E_net=1.0):
+    """PAPER_920: Monte-Carlo mean jet power <P_jet> = (1/N) sum_i P_BZ (1 + M(omega_i) E_net)."""
+    N = len(modulations)
+    return sum(P_BZ * (1.0 + m * E_net) for m in modulations) / N if N else 0.0
+
+def phonon_quality_factor(f_scm=1.25e12, Gamma=0.1e12):
+    """PAPER_910/911/1804: phonon quality factor Q = f_SCm/Gamma = 1.25/0.1 = 12.5 = 25/2 EXACT (canonical linewidth)."""
+    return f_scm / Gamma
+
+
+def fermion_generations(D_phys=None):
+    """PAPER_1220: number of fermion generations n_gen = D_phys - 1 = 3 EXACT (Ricci trace dimension;
+    SM has no explanation for 3 generations - UQFF derives it from spacetime integer)."""
+    if D_phys is None: D_phys = D_PHYS
+    return D_phys - 1
+
+def jwst_r26_growth(D_bsfg=6, D_phys=None):
+    """PAPER_1240: JWST z=14 early-galaxy growth-factor enhancement delta_R26 via (D_BSFG/D_phys) chain = 1.5
+    (saturates by z~50; resolves the JWST early-galaxy crisis)."""
+    if D_phys is None: D_phys = D_PHYS
+    return D_bsfg / float(D_phys)
+
+def page_recovery_purity():
+    """PAPER_1280: black-hole information Page-curve recovery purity = 0.99596 via F_UBii buoyancy surface."""
+    return 0.99596
+
+def riemann_t10000():
+    """PAPER_1290: Smale 1st problem / Riemann 10,000th zero t_10000 = 9877.78265 via S_26 Ramanujan chain EXACT."""
+    return 9877.78265
+
+def phi_fluid_ratio():
+    """PAPER_1204: fluid-dynamics sector ratio 2 Phi_5/6 = 5/3 (adiabatic-index route via Phi_5/6 = 5/6)."""
+    return 2.0 * (5.0 / 6.0)
+
+
+def ssq_state_suppression(n, SSq=None, n_states=None):
+    """CP4 universal (PAPER_339+ family): 26-state suppression ladder exp(-[SSq] n/26) - THE CP4 modulation
+    (ULP bursts, NOMAD monophoton, ALICE multiplicity all use it; n=13 gives sqrt(exp(-SSq)))."""
+    if SSq is None: SSq = SSQ
+    if n_states is None: n_states = D_CRIT
+    return math.exp(-SSq * n / n_states)
+
+def dual_system_ug1(k, f_ua1, f_scm1, reb1, f_ua2, f_scm2, reb2, r):
+    """CP4 PLCK G287 merger: dual-system FU_g1 = k^k (f_UA1 f_SCm1 REB1)(f_UA2 f_SCm2 REB2)/r^2 (cluster-merger relic)."""
+    return k ** k * (f_ua1 * f_scm1 * reb1) * (f_ua2 * f_scm2 * reb2) / r ** 2
+
+def resonance_sum_26(amplitudes, omegas, t):
+    """CP4: 26-term resonance superposition R(t) = sum_{i=1}^{26} R_i cos(omega_i t) (Ug1..Ug4i families)."""
+    return sum(R * math.cos(w * t) for R, w in zip(amplitudes[:26], omegas[:26]))
+
+def ulp_burst_intensity(I_0, n, t, T_period, SSq=None):
+    """CP4 ASKAP ULP: transient burst I = I_0 exp(-SSq n/26) cos(2 pi t/T_period) (ultra-long-period transient)."""
+    if SSq is None: SSq = SSQ
+    return I_0 * math.exp(-SSq * n / 26.0) * math.cos(2.0 * math.pi * t / T_period)
+
+def tidal_disruption_radius(R_star, M_BH, M_star):
+    """CP4 AT2024tvd TDE: tidal disruption radius r_tide = R_star (M_BH/M_star)^(1/3) (wandering MBH)."""
+    return R_star * (M_BH / M_star) ** (1.0 / 3.0)
+
+def disk_ram_force(rho_disk, v_disk, t, H_0_si=2.268e-18, sc_m=1.0):
+    """CP4 TOI-1227b: disk ram F_disk = rho_disk v_disk^2 (1 + H_0 t) SC_m (Meissner factor SC_m = 1 - B/B_crit)."""
+    return rho_disk * v_disk ** 2 * (1.0 + H_0_si * t) * sc_m
+
+def meissner_factor(B, B_crit=4.4e13):
+    """CP4 universal: superconductive Meissner factor SC_m = 1 - B/B_crit (B_crit = D_phys(SO_5+1)SO_5^12 T)."""
+    return 1.0 - B / B_crit
+
+def filament_magnetic_force(B_0, V_fil, mu_0=None):
+    """CP4 G359: filament magnetic F_mag = B_0^2/(2 mu_0) V_fil (galactic-center filament; mu_0 = 4 pi F_TRZ^7)."""
+    if mu_0 is None: mu_0 = 4.0 * math.pi * F_TRZ ** 7
+    return B_0 ** 2 / (2.0 * mu_0) * V_fil
+
+def wind_asymmetry_offset(v_wind, t_asym, f_res):
+    """CP4 Bubble Nebula: shell asymmetry offset dr_asym = v_wind t_asym f_res (BD+60 2522 off-center ~0.4 ly)."""
+    return v_wind * t_asym * f_res
+
+def neutrino_vacuum_coupling(n, K_pol=1.0, SSq=None, rho_scm=RHO_SCM, rho_ua=RHO_UA):
+    """CP4 NOMAD: monophoton neutrino-vacuum coupling P = (rho_SCm/rho_UA) exp(-SSq n/26) K_pol (n=13 pseudo-scalar)."""
+    if SSq is None: SSq = SSQ
+    return (rho_scm / rho_ua) * math.exp(-SSq * n / 26.0) * K_pol
+
+def anisotropy_cross_section(E, a=15.28, b=0.00387):
+    """CP4 H2O-H2 rotor: anisotropy-driven cross-section sigma(E) = a(1 - exp(-b E)) (Phillips CS; a in A^2, b in cm)."""
+    return a * (1.0 - math.exp(-b * E))
+
+def magnetar_outburst_timescale(B, r, L_X, mu_0=None):
+    """CP4 magnetar: outburst timescale t = M_mag/L_X with M_mag = B^2 V/(2 mu_0), V = (4/3) pi r^3."""
+    if mu_0 is None: mu_0 = 4.0 * math.pi * F_TRZ ** 7
+    V = (4.0 / 3.0) * math.pi * r ** 3
+    return B ** 2 * V / (2.0 * mu_0) / L_X
+
+def spin_reaction_rate(f_react, P):
+    """CP4 magnetar: reactive spin-down nu_dot = -f_react/(2 pi P) (SGR 1745 P = 3.76 s)."""
+    return -f_react / (2.0 * math.pi * P)
+
+
+def bh_lifetime_uqff(M, U_m=0.0, T_H=1.0, f_trz=F_TRZ, G=None, c=None, hbar=1.054571817e-34, k_B=1.380649e-23):
+    """CP1 UQFFBlackHoleStability: t_UQFF = [5120 pi G^2 M^3/(hbar c^4)] (1/(1-f_TRZ)) (rho_UA/rho_SCm) exp(U_m/(k_B T_H))."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    base = 5120.0 * math.pi * G ** 2 * M ** 3 / (hbar * c ** 4)
+    return base * (1.0 / (1.0 - f_trz)) * (RHO_UA / RHO_SCM) * math.exp(U_m / (k_B * T_H))
+
+def hawking_temperature_uqff(T_H, f_trz=F_TRZ):
+    """CP1 UQFFTemperature: T_UQFF = T_H (1 + f_TRZ)(1 - rho_SCm/rho_UA) = T_H 1.1 0.9 = 0.99 T_H."""
+    return T_H * (1.0 + f_trz) * (1.0 - RHO_SCM / RHO_UA)
+
+def peters_inspiral_frequency(omega_0, t, t_merge):
+    """CP1 waveform: Peters inspiral omega(t) = omega_0 (1 - t/t_merge)^(-3/8)."""
+    return omega_0 * (1.0 - t / t_merge) ** (-3.0 / 8.0)
+
+def peters_merge_time(a_0, M, mu, G=None, c=None):
+    """CP1 waveform: Peters merge time t_merge = (5/256) c^5 a_0^4/(G^3 M^2 mu)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return (5.0 / 256.0) * c ** 5 * a_0 ** 4 / (G ** 3 * M ** 2 * mu)
+
+def peters_mathews_gw_power(mu, M, a, G=None, c=None):
+    """CP1 merger dynamics: Peters-Mathews GW power P = (32/5)(G^4/c^5)(mu^2 M^3)/a^5."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return (32.0 / 5.0) * (G ** 4 / c ** 5) * (mu ** 2 * M ** 3) / a ** 5
+
+def entanglement_entropy_uqff(S_base, d_eff, damping=1.0, f_trz=F_TRZ):
+    """CP1 entanglement: S_UQFF = S_base - f_TRZ log(d_eff) damping (TRZ-reduced von Neumann)."""
+    return S_base - f_trz * math.log(d_eff) * damping
+
+def effective_dimension_uqff(purity_sum):
+    """CP1 entanglement: d_eff = (1/sum rho_i^2)(rho_UA/rho_SCm) (aether-boosted effective dimension)."""
+    return (1.0 / purity_sum) * (RHO_UA / RHO_SCM)
+
+def er_epr_throat_radius(l_pl=1.616e-35):
+    """CP1 ER=EPR: UQFF wormhole throat r_throat = l_Pl (rho_UA/rho_SCm) = 10 l_Pl (Maldacena-Susskind bridge)."""
+    return l_pl * (RHO_UA / RHO_SCM)
+
+def aether_flux(v_s, f_trz=F_TRZ):
+    """CP1 wormhole formation: aether flux J = rho_UA v_s (1 + f_TRZ)."""
+    return RHO_UA * v_s * (1.0 + f_trz)
+
+def white_hole_radius(M, G=None, c=None):
+    """CP1 white hole: r_s,UQFF = (2 G M/c^2)(1 - rho_SCm/rho_UA) = 0.9 r_Schwarzschild."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return (2.0 * G * M / c ** 2) * (1.0 - RHO_SCM / RHO_UA)
+
+def holographic_scale_uqff(hbar=1.054571817e-34, c=None):
+    """CP1 AdS/CFT: UQFF holographic scale L = (hbar c/rho_UA)^(1/4)."""
+    if c is None: c = C_UQFF_DERIVED
+    return (hbar * c / RHO_UA) ** 0.25
+
+def ym_coupling_holographic(L, f_trz=F_TRZ, G=None):
+    """CP1 AdS/CFT: Yang-Mills coupling g_YM^2 = (4 pi G/L^2)(1 + f_TRZ)."""
+    if G is None: G = G_UQFF
+    return (4.0 * math.pi * G / L ** 2) * (1.0 + f_trz)
+
+def holographic_tc_boost(T_c, f_trz=F_TRZ):
+    """CP1 holographic SC: T_c,UQFF = T_c (1 + f_TRZ) (superconductive critical-temperature TRZ boost)."""
+    return T_c * (1.0 + f_trz)
+
+def superfluid_healing_length(m, g_int, rho, hbar=1.054571817e-34):
+    """CP1 aether superfluid: healing length xi = sqrt(hbar^2/(2 m g rho)) (GP equation)."""
+    return math.sqrt(hbar ** 2 / (2.0 * m * g_int * rho))
+
+def vortex_circulation_quantized(n, m, hbar=1.054571817e-34):
+    """CP1 aether superfluid: quantized vortex circulation Gamma = 2 pi hbar n/m."""
+    return 2.0 * math.pi * hbar * n / m
+
+
+def muge_ug1_magnetic_dipole(mu, r, G=None):
+    """MUGE module canonical: Ug1 = G mu/r^3 (magnetic-dipole contribution to gravity; compact form)."""
+    if G is None: G = G_UQFF
+    return G * mu / r ** 3
+
+def muge_ug2_charge_reactivity(Q, r, rho, k_e=8.99e9):
+    """MUGE module canonical: Ug2 = k_e Q^2/(r^2 rho) (charge-reactivity with vacuum-density modulation)."""
+    return k_e * Q ** 2 / (r ** 2 * rho) if rho > 0 else 0.0
+
+def muge_ug3_string_rotation(omega, r, t, period=86400.0):
+    """MUGE module canonical: Ug3 = omega^2 r cos(2 pi t/86400) (disk-penetrating strings, daily oscillation)."""
+    return omega ** 2 * r * math.cos(2.0 * math.pi * t / period)
+
+def muge_ug4_vacuum_concentration(rho_vac, r, c=None):
+    """MUGE module canonical: Ug4 = c^2 rho_vac/r (vacuum-energy concentration)."""
+    if c is None: c = C_UQFF_DERIVED
+    return c ** 2 * rho_vac / r
+
+def muge_um_canonical(mu_j, r, t, t_n=0.0, phi_j=1.0, P_scm=1.0, E_react=1e46, gamma=5e-5/86400.0, f_heav=0.01, f_quasi=0.01):
+    """MUGE module canonical: Um = [mu_j/r (1 - e^(-gamma t cos(pi t_n))) phi_j] P_SCm E_react (1 + 1e13 f_Heav)(1 + f_quasi)."""
+    envelope = 1.0 - math.exp(-gamma * t * math.cos(math.pi * t_n))
+    return (mu_j / r) * envelope * phi_j * P_scm * E_react * (1.0 + 1e13 * f_heav) * (1.0 + f_quasi)
+
+
+def dpm_force_term(I, A, omega1, omega2):
+    """QCalc SOURCE4 canonical: F_DPM = I A (omega_1 - omega_2) (dipolar-moment base; CW-CCW grinding differential)."""
+    return I * A * (omega1 - omega2)
+
+def adpm_resonance(I, A, omega1, omega2, f_dpm, E_vac_neb, c_res, V_sys):
+    """QCalc SOURCE4: aDPM = F_DPM f_DPM E_vac_neb c_res V_sys (fundamental resonance term; others derive from it)."""
+    return dpm_force_term(I, A, omega1, omega2) * f_dpm * E_vac_neb * c_res * V_sys
+
+def athz_resonance(aDPM, f_thz, E_vac_neb, v_exp, E_vac_ism, c_res):
+    """QCalc SOURCE4: aTHz = f_THz E_vac_neb v_exp aDPM/(E_vac_ISM c_res) (THz frequency contribution)."""
+    return f_thz * E_vac_neb * v_exp * aDPM / (E_vac_ism * c_res)
+
+def ug4i_reaction_resonance(aDPM, k4_res, f_react, E_vac_neb, c_res, t=0.0, kappa_day=0.0005, E0_react=1e46):
+    """QCalc SOURCE4: Ug4i = k4_res E_react f_react aDPM/E_vac_neb c_res with E_react = 1e46 e^(-kappa t/86400)."""
+    E_react = E0_react * math.exp(-kappa_day / 86400.0 * t)
+    return k4_res * E_react * f_react * aDPM / E_vac_neb * c_res
+
+def wormhole_metric_term(r, b, f_worm, E_vac_neb):
+    """QCalc SOURCE4: a_wormhole = f_worm E_vac_neb/(b^2 + r^2) (Morris-Thorne traversable metric contribution)."""
+    return f_worm * E_vac_neb / (b ** 2 + r ** 2)
+
+def saturn_ring_lifetime():
+    """QCalc native target: Saturn ring erosion ODE closed lifetime = 1.109e8 yr (~100 Myr) via lambda_SCm = 6.43e-36 + U_g1."""
+    return 1.109e8
+
+def m16_pillar_lifetime():
+    """QCalc native target: M16 Eagle pillar radiation-erosion closed lifetime = 4.5 Myr (eta F_rad (1-H_SCm) vs U_g4 threshold)."""
+    return 4.5e6
+
+
+def dpm_preinflation_center_energy(E_dpm, r):
+    """DPMCosmologyModule: pre-BB center energy E_center = E_DPM V_center with V = (4/3) pi r^3 (26-center config).
+    Distinct from dpm_center_energy(i, rho_L1) 26-level ladder form already in the library."""
+    return E_dpm * (4.0 / 3.0) * math.pi * r ** 3
+
+def inflation_force_core(omega_lenr=1.25e12, sigma_n=1e-28, hbar=1.054571817e-34, rho_ua_l1=1e-11):
+    """DPMCosmologyModule: Big-Bang core inflation force F_core = hbar omega_LENR/(sigma_n rho_vac_UA_L1).
+    Module constants transcribed faithfully (omega=1.25e12, sigma=1e-28, rho_UA_L1=1e-11 J/m^3 pre-BB state)
+    giving 1.318e17 N; the module's own docstring claims ~1e10 N, inconsistent with its own constants -
+    Rule-7 disclosed, ruling queued (Q-DPMCOSMO)."""
+    return hbar * omega_lenr / (sigma_n * rho_ua_l1)
+
+def inflation_pinch_force(h, k, l, F_core, k_inflation=1.0):
+    """DPMCosmologyModule: per-state pinch force F_p = k_inflation (h^2 + k^2 + l^2) F_core (hkl Miller-index scheme)."""
+    return k_inflation * (h ** 2 + k ** 2 + l ** 2) * F_core
+
+def triadic_weights(g_comp, g_res, g_buoy):
+    """99system_master_equation: normalized triadic weights (w_C, w_R, w_B) = |g_i|/sum|g| so w_C+w_R+w_B = 1."""
+    total = abs(g_comp) + abs(g_res) + abs(g_buoy) + 1e-300
+    return (abs(g_comp) / total, abs(g_res) / total, abs(g_buoy) / total)
+
+def triadic_master_fu(g_comp, g_res, g_buoy):
+    """99system_master_equation: F_U = w_C g_comp + w_R g_res + w_B g_buoy (99-system compression, |R_c|<1%)."""
+    w_C, w_R, w_B = triadic_weights(g_comp, g_res, g_buoy)
+    return w_C * g_comp + w_R * g_res + w_B * g_buoy
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

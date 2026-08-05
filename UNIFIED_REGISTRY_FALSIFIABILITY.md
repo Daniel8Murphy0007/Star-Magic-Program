@@ -213,3 +213,10 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **Material landmarks (191)**: engineering/biology constants as primitive chains (aluminum 2700 EXACT,
   blood pH 7.4 EXACT, DNA 10.5); any revised standard value breaking the chain falsifies that identity.
 - **Sgr A* JWST 2025 flare = 1/1800 Hz** (pi_ir_flare_frequency): live JWST cadence data tests the triple-integer.
+
+
+## v0.350.0 falsifiable additions
+- **T_UQFF/T_H = 1 - F_TRZ^2 = 0.99** (CP1): Hawking-temperature deficit of exactly 1%; testable against analogue-gravity Hawking experiments.
+- **n_generations = D_phys - 1 = 3** (PAPER_1220): a 4th fermion generation at any energy falsifies the identity.
+- **exp(-SSq n/26) ladder** (CP4): 26-state suppression; NOMAD n=13 sqrt-identity + ALICE n=18 multiplicity test it at colliders.
+- **Saturn ring lifetime 110.9 Myr** (QCalc ODE): Cassini-era erosion-rate extrapolations test the closed lifetime.

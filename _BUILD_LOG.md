@@ -99,3 +99,20 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.349.0 SHIP PREP (DEEP-MINE COMPILE)
 [2026-08-05] SHIP_PREP v0.349.0 — all registry/ship files updated; 3 new modules; gate green
+
+[2026-08-05] GATE_PASS v0.350.0 deep mine 4 — 2239 assertions: OK (8 ngc_* triadic galaxy catalogue + 11 new ROUND/PENTAD object-locks incl. H_0(mean)=A_5+SO_5=70 cross-anchor; bb now 126; new module uqff_ngc_catalog.py)
+
+[2026-08-05] GATE_PASS v0.350.0 deep mine 5 — 2240 assertions: OK (800s mixed band: MRI tau, PTA h_c, q-Pochhammer, nu-ratio, aether ions; 900s: Li_26 polylog, Gaussian jet modulation, MC jet power, Q=25/2 EXACT gate-guarded)
+
+[2026-08-05] GATE_PASS v0.350.0 stragglers — 2244 assertions: OK (n_generations=D_phys-1=3 EXACT flagship, JWST R26=1.5, Page 0.99596, Riemann t_10000, 2Phi_5/6=5/3)
+
+[2026-08-05] GATE_PASS v0.350.0 CP4 sweep — 2248 assertions: OK (13 fns from 624-class CP4: ssq 26-state suppression ladder, Meissner SC_m, r_tide, dual-system Ug1, ULP burst, NOMAD neutrino coupling, magnetar outburst - Rule E physics-only)
+
+[2026-08-05] GATE_PASS v0.350.0 CP1-CP3 sweep — 2253 assertions: OK (QG/holography sector: T_UQFF=1-F_TRZ^2 EXACT, white-hole 1-F_TRZ, ER=EPR 10 l_Pl, AdS/CFT L+g_YM, superfluid aether xi/Gamma, Peters inspiral chain; 2227 classes swept Rule E)
+
+[2026-08-05] GATE_PASS v0.350.0 QCalc/MUGE sweep — 2257 assertions: OK (canonical MUGE Ug1-4+Um compact forms, SOURCE4 resonance family F_DPM=IA(w1-w2)+aDPM/aTHz/Ug4i/wormhole, Saturn 110.9 Myr + M16 4.5 Myr closed lifetimes)
+
+[2026-08-05] GATE_PASS v0.350.0 deep sweep final — 2264 assertions: OK (17 fubii_* variant registry NEW MODULE uqff_fubii_variants.py; DPMCosmology 26-center pre-BB inflation force F_core~1e10 N + hkl pinch; 99system triadic weights w_C+w_R+w_B=1)
+
+## 2026-08-05 — v0.350.0 SHIP PREP (PREDECESSOR-SOURCE SWEEP)
+[2026-08-05] SHIP_PREP v0.350.0 — all registry/ship files updated; 2 new modules this ship (ngc_catalog, fubii_variants); gate green

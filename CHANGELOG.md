@@ -6275,6 +6275,19 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.350.0] - 2026-08-05 - THE PREDECESSOR-SOURCE SWEEP (CP1-CP4 + QCalc + MUGE + 17-variant F_UBii)
+- Swept 2,851 predecessor calculator classes (CP1-CP4) + QCalc/MUGE/BuoyancyProofVariants/99system/DPMCosmology
+  for physics content (Rule E, no code ported).
+- NEW MODULE uqff_fubii_variants.py: complete 17-variant F_UBii registry (Tier-4 canonical taxonomy, PAPER_036-039).
+- QG/holography (CP1-CP3): T_UQFF = 1-F_TRZ^2 = 0.99 EXACT, white-hole (1-F_TRZ)r_s, ER=EPR 10 l_Pl, Tc boost 11/10,
+  BH lifetime, AdS/CFT, entanglement chain, superfluid aether, Peters inspiral - EXACT reductions gate-guarded.
+- CP4: exp(-SSq n/26) universal ladder (n=13 sqrt-identity EXACT), Meissner SC_m, r_tide, NOMAD coupling, magnetar.
+- Canonical MUGE Ug1-4+Um; SOURCE4 resonance family (F_DPM = I A (w1-w2)); Saturn 110.9 Myr + M16 4.5 Myr closed;
+  pre-BB inflation force + hkl pinch; triadic weights. NGC catalogue (8); bb_ locks 126 (H_0 mean cross-anchor);
+  800s/900s bands (Li_26, Q=25/2 EXACT, PTA, q-Pochhammer); stragglers (n_generations = D_phys-1 = 3 EXACT).
+- Fidelity: 3 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO); 2 duplicate-def auto-catches.
+- MEASURED: 2,662 total fns | 2,316 named | 7 modules | registry 3,041 rows | GRAPH 4,139 | gate 2,264 green.
+
 ## [0.349.0] - 2026-08-05 - THE DEEP-MINE COMPILE (backbone locks + material landmarks + formula availability)
 - NEW MODULE uqff_backbone_locks.py: 115 bb_* object-observable primitive-locks from all 55 backbone papers
   (rho_crust(SGR1745)=SO_5^17, M_BH(Sombrero)=SO_5^9, B(Crab)=SO_5^-8...) - all compute LIVE from primitives.

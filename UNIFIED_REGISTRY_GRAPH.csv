@@ -3985,3 +3985,156 @@ observable,pi_d_bsfg_d_phys,paper,PAPER_1962,derived in PAPER_1962
 primitive,SO_5,observable,pi_antennae_coalescence,pi_antennae_coalescence composes from SO_5
 primitive,D_PHYS,observable,pi_antennae_coalescence,pi_antennae_coalescence composes from D_PHYS
 observable,pi_antennae_coalescence,paper,PAPER_1982,derived in PAPER_1982
+observable,ngc_ngc_4826_black_eye_galaxy,paper,PAPER_786,triadic catalogue PAPER_786
+observable,ngc_ngc_1805_lmc_star_cluster,paper,PAPER_787,triadic catalogue PAPER_787
+observable,ngc_ngc_685,paper,PAPER_800,triadic catalogue PAPER_800
+observable,ngc_ngc_3507,paper,PAPER_801,triadic catalogue PAPER_801
+observable,ngc_ngc_3511,paper,PAPER_802,triadic catalogue PAPER_802
+observable,ngc_ngc_3596,paper,PAPER_803,triadic catalogue PAPER_803
+observable,ngc_ngc_1961,paper,PAPER_804,triadic catalogue PAPER_804
+observable,ngc_ngc_5335,paper,PAPER_805,triadic catalogue PAPER_805
+primitive,F_TRZ,observable,bb_b_ism_pillars,bb_b_ism_pillars composes from F_TRZ
+observable,bb_b_ism_pillars,paper,PAPER_1985,derived in PAPER_1985
+primitive,F_TRZ,observable,bb_b_j_jets,bb_b_j_jets composes from F_TRZ
+observable,bb_b_j_jets,paper,PAPER_1985,derived in PAPER_1985
+primitive,F_TRZ,observable,bb_m_magnetar,bb_m_magnetar composes from F_TRZ
+observable,bb_m_magnetar,paper,PAPER_1995,derived in PAPER_1995
+primitive,F_TRZ,observable,bb_m_total_sombrero_galaxy,bb_m_total_sombrero_galaxy composes from F_TRZ
+observable,bb_m_total_sombrero_galaxy,paper,PAPER_1995,derived in PAPER_1995
+primitive,F_TRZ,observable,bb_bubble,bb_bubble composes from F_TRZ
+observable,bb_bubble,paper,PAPER_1995,derived in PAPER_1995
+primitive,F_TRZ,observable,bb_b_crit_sgr_1745,bb_b_crit_sgr_1745 composes from F_TRZ
+observable,bb_b_crit_sgr_1745,paper,PAPER_2001,derived in PAPER_2001
+primitive,SO_5,observable,bb_h_0_cmb,bb_h_0_cmb composes from SO_5
+primitive,A_5,observable,bb_h_0_cmb,bb_h_0_cmb composes from A_5
+observable,bb_h_0_cmb,paper,PAPER_2005,derived in PAPER_2005
+primitive,SO_5,observable,bb_h_0_sh0es,bb_h_0_sh0es composes from SO_5
+primitive,A_5,observable,bb_h_0_sh0es,bb_h_0_sh0es composes from A_5
+observable,bb_h_0_sh0es,paper,PAPER_2005,derived in PAPER_2005
+primitive,SO_5,observable,bb_h_0_mean,bb_h_0_mean composes from SO_5
+primitive,A_5,observable,bb_h_0_mean,bb_h_0_mean composes from A_5
+observable,bb_h_0_mean,paper,PAPER_2005,derived in PAPER_2005
+primitive,SO_5,observable,bb_h_0_planck_cmb_near_value,bb_h_0_planck_cmb_near_value composes from SO_5
+primitive,A_5,observable,bb_h_0_planck_cmb_near_value,bb_h_0_planck_cmb_near_value composes from A_5
+observable,bb_h_0_planck_cmb_near_value,paper,PAPER_2007,derived in PAPER_2007
+primitive,SO_5,observable,bb_h_0_planck,bb_h_0_planck composes from SO_5
+primitive,A_5,observable,bb_h_0_planck,bb_h_0_planck composes from A_5
+observable,bb_h_0_planck,paper,PAPER_2007,derived in PAPER_2007
+observable,mri_timescale,paper,PAPER_820,derived in PAPER_820
+observable,pta_characteristic_strain,paper,PAPER_815,derived in PAPER_815
+observable,q_pochhammer,paper,PAPER_840,derived in PAPER_840
+observable,neutrino_vacuum_ratio,paper,PAPER_860,derived in PAPER_860
+observable,aether_ion_concentration,paper,PAPER_829,derived in PAPER_829
+observable,polylog_26,paper,PAPER_960,derived in PAPER_960
+observable,jet_modulation_gaussian,paper,PAPER_910,derived in PAPER_910
+observable,mc_jet_power_mean,paper,PAPER_920,derived in PAPER_920
+observable,phonon_quality_factor,paper,PAPER_911,derived in PAPER_911
+primitive,D_PHYS,observable,fermion_generations,fermion_generations composes from D_PHYS
+observable,fermion_generations,paper,PAPER_1220,derived in PAPER_1220
+primitive,D_PHYS,observable,jwst_r26_growth,jwst_r26_growth composes from D_PHYS
+observable,jwst_r26_growth,paper,PAPER_1240,derived in PAPER_1240
+observable,page_recovery_purity,paper,PAPER_1280,derived in PAPER_1280
+observable,riemann_t10000,paper,PAPER_1290,derived in PAPER_1290
+observable,phi_fluid_ratio,paper,PAPER_1204,derived in PAPER_1204
+primitive,SSQ,observable,ssq_state_suppression,ssq_state_suppression composes from SSQ
+primitive,D_CRIT,observable,ssq_state_suppression,ssq_state_suppression composes from D_CRIT
+observable,ssq_state_suppression,paper,CP4_PAPER_339,CP4 sweep CP4_PAPER_339
+observable,dual_system_ug1,paper,CP4_PLCK_G287,CP4 sweep CP4_PLCK_G287
+observable,resonance_sum_26,paper,CP4_PLCK_G287,CP4 sweep CP4_PLCK_G287
+primitive,SSQ,observable,ulp_burst_intensity,ulp_burst_intensity composes from SSQ
+observable,ulp_burst_intensity,paper,CP4_ASKAP_ULP,CP4 sweep CP4_ASKAP_ULP
+observable,tidal_disruption_radius,paper,CP4_AT2024tvd,CP4 sweep CP4_AT2024tvd
+observable,disk_ram_force,paper,CP4_TOI1227b,CP4 sweep CP4_TOI1227b
+primitive,SO_5,observable,meissner_factor,meissner_factor composes from SO_5
+observable,meissner_factor,paper,CP4_universal,CP4 sweep CP4_universal
+primitive,F_TRZ,observable,filament_magnetic_force,filament_magnetic_force composes from F_TRZ
+observable,filament_magnetic_force,paper,CP4_G359,CP4 sweep CP4_G359
+observable,wind_asymmetry_offset,paper,CP4_PAPER_361,CP4 sweep CP4_PAPER_361
+primitive,RHO_SCM,observable,neutrino_vacuum_coupling,neutrino_vacuum_coupling composes from RHO_SCM
+primitive,RHO_UA,observable,neutrino_vacuum_coupling,neutrino_vacuum_coupling composes from RHO_UA
+primitive,SSQ,observable,neutrino_vacuum_coupling,neutrino_vacuum_coupling composes from SSQ
+observable,neutrino_vacuum_coupling,paper,CP4_NOMAD,CP4 sweep CP4_NOMAD
+observable,anisotropy_cross_section,paper,CP4_H2O_H2,CP4 sweep CP4_H2O_H2
+primitive,F_TRZ,observable,magnetar_outburst_timescale,magnetar_outburst_timescale composes from F_TRZ
+observable,magnetar_outburst_timescale,paper,CP4_magnetar,CP4 sweep CP4_magnetar
+observable,spin_reaction_rate,paper,CP4_SGR1745,CP4 sweep CP4_SGR1745
+primitive,RHO_SCM,observable,bh_lifetime_uqff,bh_lifetime_uqff composes from RHO_SCM
+primitive,RHO_UA,observable,bh_lifetime_uqff,bh_lifetime_uqff composes from RHO_UA
+primitive,F_TRZ,observable,bh_lifetime_uqff,bh_lifetime_uqff composes from F_TRZ
+primitive,G_UQFF,observable,bh_lifetime_uqff,bh_lifetime_uqff composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,bh_lifetime_uqff,bh_lifetime_uqff composes from C_UQFF_DERIVED
+observable,bh_lifetime_uqff,paper,CP1_BHStability,CP1-3 sweep CP1_BHStability
+primitive,RHO_SCM,observable,hawking_temperature_uqff,hawking_temperature_uqff composes from RHO_SCM
+primitive,RHO_UA,observable,hawking_temperature_uqff,hawking_temperature_uqff composes from RHO_UA
+primitive,F_TRZ,observable,hawking_temperature_uqff,hawking_temperature_uqff composes from F_TRZ
+observable,hawking_temperature_uqff,paper,CP1_Temperature,CP1-3 sweep CP1_Temperature
+observable,peters_inspiral_frequency,paper,CP1_Waveform,CP1-3 sweep CP1_Waveform
+primitive,G_UQFF,observable,peters_merge_time,peters_merge_time composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,peters_merge_time,peters_merge_time composes from C_UQFF_DERIVED
+observable,peters_merge_time,paper,CP1_Waveform,CP1-3 sweep CP1_Waveform
+primitive,G_UQFF,observable,peters_mathews_gw_power,peters_mathews_gw_power composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,peters_mathews_gw_power,peters_mathews_gw_power composes from C_UQFF_DERIVED
+observable,peters_mathews_gw_power,paper,CP1_MergerDynamics,CP1-3 sweep CP1_MergerDynamics
+primitive,F_TRZ,observable,entanglement_entropy_uqff,entanglement_entropy_uqff composes from F_TRZ
+observable,entanglement_entropy_uqff,paper,CP1_Entanglement,CP1-3 sweep CP1_Entanglement
+primitive,RHO_SCM,observable,effective_dimension_uqff,effective_dimension_uqff composes from RHO_SCM
+primitive,RHO_UA,observable,effective_dimension_uqff,effective_dimension_uqff composes from RHO_UA
+observable,effective_dimension_uqff,paper,CP1_Entanglement,CP1-3 sweep CP1_Entanglement
+primitive,RHO_SCM,observable,er_epr_throat_radius,er_epr_throat_radius composes from RHO_SCM
+primitive,RHO_UA,observable,er_epr_throat_radius,er_epr_throat_radius composes from RHO_UA
+observable,er_epr_throat_radius,paper,CP1_ER_EPR,CP1-3 sweep CP1_ER_EPR
+primitive,RHO_UA,observable,aether_flux,aether_flux composes from RHO_UA
+primitive,F_TRZ,observable,aether_flux,aether_flux composes from F_TRZ
+observable,aether_flux,paper,CP1_Wormhole,CP1-3 sweep CP1_Wormhole
+primitive,RHO_SCM,observable,white_hole_radius,white_hole_radius composes from RHO_SCM
+primitive,RHO_UA,observable,white_hole_radius,white_hole_radius composes from RHO_UA
+primitive,G_UQFF,observable,white_hole_radius,white_hole_radius composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,white_hole_radius,white_hole_radius composes from C_UQFF_DERIVED
+observable,white_hole_radius,paper,CP1_WhiteHole,CP1-3 sweep CP1_WhiteHole
+primitive,RHO_UA,observable,holographic_scale_uqff,holographic_scale_uqff composes from RHO_UA
+primitive,C_UQFF_DERIVED,observable,holographic_scale_uqff,holographic_scale_uqff composes from C_UQFF_DERIVED
+observable,holographic_scale_uqff,paper,CP1_AdSCFT,CP1-3 sweep CP1_AdSCFT
+primitive,F_TRZ,observable,ym_coupling_holographic,ym_coupling_holographic composes from F_TRZ
+primitive,G_UQFF,observable,ym_coupling_holographic,ym_coupling_holographic composes from G_UQFF
+observable,ym_coupling_holographic,paper,CP1_AdSCFT,CP1-3 sweep CP1_AdSCFT
+primitive,F_TRZ,observable,holographic_tc_boost,holographic_tc_boost composes from F_TRZ
+observable,holographic_tc_boost,paper,CP1_HolographicSC,CP1-3 sweep CP1_HolographicSC
+observable,superfluid_healing_length,paper,CP1_AetherSuperfluid,CP1-3 sweep CP1_AetherSuperfluid
+observable,vortex_circulation_quantized,paper,CP1_AetherSuperfluid,CP1-3 sweep CP1_AetherSuperfluid
+observable,dpm_force_term,paper,QCalc_SOURCE4,QCalc/MUGE sweep
+observable,adpm_resonance,paper,QCalc_SOURCE4,QCalc/MUGE sweep
+observable,athz_resonance,paper,QCalc_SOURCE4,QCalc/MUGE sweep
+observable,ug4i_reaction_resonance,paper,QCalc_SOURCE4,QCalc/MUGE sweep
+observable,wormhole_metric_term,paper,QCalc_SOURCE4,QCalc/MUGE sweep
+observable,saturn_ring_lifetime,paper,QCalc_native,QCalc/MUGE sweep
+observable,m16_pillar_lifetime,paper,QCalc_native,QCalc/MUGE sweep
+primitive,G_UQFF,observable,muge_ug1_magnetic_dipole,muge_ug1_magnetic_dipole composes from G_UQFF
+observable,muge_ug1_magnetic_dipole,paper,MUGE_module,QCalc/MUGE sweep
+observable,muge_ug2_charge_reactivity,paper,MUGE_module,QCalc/MUGE sweep
+observable,muge_ug3_string_rotation,paper,MUGE_module,QCalc/MUGE sweep
+primitive,C_UQFF_DERIVED,observable,muge_ug4_vacuum_concentration,muge_ug4_vacuum_concentration composes from C_UQFF_DERIVED
+observable,muge_ug4_vacuum_concentration,paper,MUGE_module,QCalc/MUGE sweep
+observable,muge_um_canonical,paper,MUGE_module,QCalc/MUGE sweep
+observable,fubii_virx,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_termv,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_upar,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_coup,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_dec,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_ent,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_fermi,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_hawk,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_kn,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_kne,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_lobe,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_orbdec,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_ps,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_roche,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_sfe,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_bd,paper,PAPER_036-039,Tier-4 variant registry
+observable,fubii_whim,paper,PAPER_036-039,Tier-4 variant registry
+observable,dpm_center_energy,paper,DPMCosmologyModule,module sweep
+primitive,RHO_UA,observable,inflation_force_core,inflation_force_core composes from RHO_UA
+observable,inflation_force_core,paper,DPMCosmologyModule,module sweep
+observable,inflation_pinch_force,paper,DPMCosmologyModule,module sweep
+observable,triadic_weights,paper,99system_master,module sweep
+observable,triadic_master_fu,paper,99system_master,module sweep

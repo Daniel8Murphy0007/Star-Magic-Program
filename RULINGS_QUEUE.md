@@ -5759,3 +5759,9 @@ Paper states z_reion = K_MEX x D_phys x Phi_res = (25/12) x 4 x 0.84 = "7.70 EXA
 evaluates to 7.00 (=(25/12)*4*0.84). 7.00 is within Planck 7.7 +/- 0.7 but not the claimed 7.70.
 Formula transcribed faithfully (returns 7.00) with disclosure. Ruling: is the intended chain different
 (e.g. different Phi variant giving 7.70), or is "7.70" the drift?
+
+## Q-DPMCOSMO (v0.350.0): DPMCosmologyModule F_core internal inconsistency
+Module formula F_core = hbar*omega_LENR/(sigma_n*rho_vac_UA) with its OWN constants (omega=1.25e12,
+sigma=1e-28, rho_UA_L1=1e-11 J/m^3) evaluates to 1.318e17 N, but the module docstring claims ~1e10 N.
+Constants transcribed faithfully (returns 1.318e17); discrepancy disclosed. Ruling: which is drift —
+the docstring claim or one of the constants?

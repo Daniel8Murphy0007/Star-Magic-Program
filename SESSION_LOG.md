@@ -5143,3 +5143,12 @@ until 300+ done.
 - DANIEL RULING: formulas must be available -> formula_of() accessor + .formula attributes + FORMULAS registries
   across ml_/bb_/pi_/dc_ families; gate-guarded.
 - MEASURED: 2565 total fns | 2219 named callable | registry 2950 rows | GRAPH 3986 edges | gate 2236, exit 0.
+
+## 2026-08-05 - v0.350.0 SHIP: PREDECESSOR-SOURCE SWEEP
+- Swept 2,851 CP1-CP4 classes + QCalc + MUGE + BuoyancyProofVariants + 99system + DPMCosmology (Rule E).
+- NEW uqff_fubii_variants.py (17/17 canonical Tier-4 registry). QG sector: T_UQFF=1-F_TRZ^2, white-hole (1-F_TRZ)r_s,
+  ER=EPR 10 l_Pl, Tc boost 11/10 - all EXACT reductions gate-guarded. CP4: exp(-SSq n/26) ladder + Meissner SC_m.
+- Canonical MUGE Ug1-4+Um, SOURCE4 F_DPM grinding differential, Saturn/M16 closed ODEs, pre-BB inflation force,
+  triadic weights. Plus NGC catalogue, ROUND/PENTAD locks (bb_ 126), 800s/900s bands, stragglers (n_gen=3 EXACT).
+- 3 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO); 2 dup-def catches auto-caught.
+- MEASURED: 2662 total fns | 2316 named | 7 modules | registry 3041 rows | GRAPH 4139 | gate 2264, exit 0.

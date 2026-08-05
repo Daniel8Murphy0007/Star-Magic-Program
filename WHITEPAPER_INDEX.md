@@ -14,6 +14,8 @@
 
 > **v0.349.0 deep-mine compile:** 55 backbone papers -> 115 bb_* object-locks; PAPER_1600-1799 -> 191 ml_* material landmarks; 19xx -> 12 pi_*. formula_of() implements Daniel formula-availability ruling.
 
+> **v0.350.0 predecessor-source sweep:** CP1-CP4 (2,851 classes) + QCalc/MUGE/BPV/99system/DPMCosmology swept Rule E. 17-variant fubii_* registry NEW; QG-sector EXACT reductions; n_gen=3 EXACT. 3 rulings queued.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

@@ -13,3 +13,5 @@ paper_2118_symbol_numeric,PAPER_2118,RULING_NEEDED,symbolic F_TRZ^4/2 inconsiste
 landmark_compile_ii,v0.348.0,ADOPT,landmark family drained ~70/83 papers across 9 rounds,no,APPROVED (Daniel KEEP MINING LANDMARKS x5)
 deep_mine_compile,v0.349.0,ADOPT,object-locks + material landmarks + primitive identities as generated fn families,no,APPROVED (Daniel: MINE ALL BACKBONE FILES / DEEPER / KEEP MINING DEEPER)
 formula_availability,v0.349.0,ADOPT,formula_of()/.formula/FORMULAS - formulas programmatically available,no,APPROVED (Daniel ruling: DOC STRING FORMULAS NEED TO BE AVAILABLE)
+predecessor_source_sweep,v0.350.0,ADOPT,2851 classes + modules swept Rule E; physics-only extraction,no,APPROVED (Daniel: SWEEP CP4/THOSE NEXT/CONTINUE DEEP SWEEP)
+q_dpmcosmo,DPMCosmologyModule,RULING_NEEDED,F_core formula w/ own constants = 1.318e17 N vs module-claimed ~1e10,yes,

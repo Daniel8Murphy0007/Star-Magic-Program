@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.349.0", "uqff_calculator.VERSION = 0.349.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.350.0", "uqff_calculator.VERSION = 0.350.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,53 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === CROSS-MODULE NO-SHADOW GUARD (star-import collision protection) ===
+import re as _re_x, collections as _coll_x
+_allnames=[]
+for _mod in ["uqff_calculator.py","uqff_backbone_locks.py","uqff_material_landmarks.py","uqff_primitive_identities.py","uqff_ngc_catalog.py","uqff_fubii_variants.py","uqff_derived_functions.py"]:
+    _allnames += [x.group(1) for x in _re_x.finditer(r"^def ([A-Za-z_][A-Za-z0-9_]*)\(", open(_mod, encoding="utf-8").read(), _re_x.M)]
+_xdups={k:v for k,v in _coll_x.Counter(_allnames).items() if v>1 and k!="get_formula"}
+assert_that(len(_xdups)==0, "No cross-module function-name shadowing (found: %s)" % _xdups)
+# === DPM-COSMOLOGY + 99SYSTEM GUARD (v0.350) ===
+assert_that(abs(sum(C.triadic_weights(1.0,2.0,3.0)) - 1.0) < 1e-9, "99system: triadic weights normalize to 1")
+assert_that(abs(C.inflation_force_core() - 1.318e17)/1.318e17 < 0.01, "DPMCosmology: F_core = 1.318e17 N from module constants (module claims ~1e10 - Rule-7 disclosed, Q-DPMCOSMO)")
+assert_that(C.inflation_pinch_force(1,1,1,1.0) == 3.0, "DPMCosmology: F_p = (h^2+k^2+l^2) F_core (111 -> 3)")
+# === FUBII 17-VARIANT GUARD (v0.350) ===
+import uqff_fubii_variants as _fbv_g
+assert_that(_fbv_g.FUBII_VARIANT_COUNT == 17, "17 F_UBii buoyancy variants (canonical Tier-4 taxonomy, PAPER_2151)")
+_fbfns=[n for n in dir(_fbv_g) if n.startswith("fubii_")]
+assert_that(len(_fbfns) == 17, "17 fubii_* present (found %d)" % len(_fbfns))
+assert_that(_fbv_g.fubii_virx(1.0, 1.0, G=1.0, Q_wave=1.0) < 0, "fubii_virx negative = inward buoyancy")
+assert_that(C.formula_of("fubii_orbdec") is not None and "64/5" in C.formula_of("fubii_orbdec"), "fubii formulas carry Peters 64/5 prefactor")
+# === QCALC SOURCE4 GUARD (v0.350) ===
+assert_that(C.dpm_force_term(1,1,2,1) == 1.0, "QCalc: F_DPM = I A (w1-w2) grinding differential")
+assert_that(C.saturn_ring_lifetime() == 1.109e8, "QCalc native: Saturn ring lifetime 1.109e8 yr (~100 Myr closed)")
+assert_that(C.m16_pillar_lifetime() == 4.5e6, "QCalc native: M16 pillar lifetime 4.5 Myr closed")
+assert_that(C.formula_of("adpm_resonance") is not None, "SOURCE4 fns formula-accessible")
+# === CP1-CP3 QG SECTOR GUARD (v0.350) ===
+assert_that(abs(C.hawking_temperature_uqff(1.0) - 0.99) < 1e-12, "CP1: T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1-F_TRZ^2 = 0.99 EXACT")
+assert_that(abs(C.er_epr_throat_radius() - 1.616e-34) < 1e-40, "CP1: ER=EPR throat = 10 l_Pl (rho_UA/rho_SCm)")
+assert_that(abs(C.white_hole_radius(2e30)/(2*C.G_UQFF*2e30/C.C_UQFF_DERIVED**2) - 0.9) < 1e-9, "CP1: white-hole r = (1-F_TRZ) r_s EXACT")
+assert_that(abs(C.holographic_tc_boost(1.0) - 1.1) < 1e-12, "CP1: T_c boost = 1+F_TRZ = 11/10 successor EXACT")
+assert_that(C.formula_of("bh_lifetime_uqff") is not None, "CP1-CP3 fns formula-accessible")
+# === CP4 SWEEP GUARD (v0.350) ===
+import math as _m4
+assert_that(abs(C.ssq_state_suppression(13) - _m4.sqrt(_m4.exp(-0.57))) < 1e-9, "CP4: exp(-SSq*13/26) = sqrt(e^-SSq) EXACT (NOMAD n=13)")
+assert_that(abs(C.meissner_factor(0.0) - 1.0) < 1e-12, "CP4: SC_m(B=0) = 1 (Meissner factor)")
+assert_that(abs(C.tidal_disruption_radius(1.0, 8.0, 1.0) - 2.0) < 1e-12, "CP4: r_tide = R (M_BH/M_star)^(1/3) (8^(1/3)=2)")
+assert_that(C.formula_of("ssq_state_suppression") is not None, "CP4 fns formula-accessible")
+# === STRAGGLER GUARD (v0.350) ===
+assert_that(C.fermion_generations() == 3, "PAPER_1220: n_generations = D_phys - 1 = 3 EXACT (Ricci trace)")
+assert_that(abs(C.phi_fluid_ratio() - 5.0/3.0) < 1e-12, "PAPER_1204: 2 Phi_5/6 = 5/3 adiabatic route")
+assert_that(C.riemann_t10000() == 9877.78265, "PAPER_1290: Riemann t_10000 = 9877.78265 (S_26 chain)")
+assert_that(abs(C.page_recovery_purity() - 0.99596) < 1e-9, "PAPER_1280: Page recovery = 0.99596")
+# === NGC CATALOG GUARD (v0.350 deep mine 4) ===
+assert_that(C.phonon_quality_factor() == 12.5, "PAPER_910/911/1804: Q = f_SCm/Gamma = 25/2 = 12.5 EXACT")
+
+import uqff_ngc_catalog as _ngc_g
+assert_that(_ngc_g.NGC_CATALOG_COUNT == 8, "8 ngc_* Three-UQFF triadic galaxy catalogue fns")
+assert_that(C.bb_h_0_mean() == 70, "ROUND lock: H_0(mean) = A_5 + SO_5 = 70 EXACT (PAPER_2005 cross-anchor)")
+assert_that(C.formula_of("ngc_ngc_1805_lmc_star_cluster") is not None, "formula_of works for ngc_*")
 # === PRIMITIVE-IDENTITY FAMILY GUARD (v0.349 deep mine 3) ===
 import uqff_primitive_identities as _pil_g
 assert_that(_pil_g.PRIMITIVE_IDENTITY_COUNT == 12, "12 pi_* primitive-identity fns (PAPER_1920-1999)")
@@ -352,10 +399,10 @@ _mlsrc=open("uqff_material_landmarks.py",encoding="utf-8").read()
 assert_that("7.09e-37" not in _mlsrc and "1.453162" not in _mlsrc, "no banned literals in material-landmarks module")
 # === BACKBONE OBJECT-LOCK GUARD (v0.349 deep mine) ===
 import uqff_backbone_locks as _bbl_guard
-assert_that(_bbl_guard.BACKBONE_LOCK_COUNT == 115, "115 backbone object-observable primitive-locks generated")
+assert_that(_bbl_guard.BACKBONE_LOCK_COUNT == 126, "126 backbone object-observable primitive-locks (115 + 11 ROUND/PENTAD)")
 _bbfns=[n for n in dir(_bbl_guard) if n.startswith("bb_")]
-assert_that(len(_bbfns) == 115, "115 bb_* functions present (found %d)" % len(_bbfns))
-assert_that(all(callable(getattr(_bbl_guard,n)) for n in _bbfns), "all 115 bb_* callable")
+assert_that(len(_bbfns) == 126, "126 bb_* functions present (found %d)" % len(_bbfns))
+assert_that(all(callable(getattr(_bbl_guard,n)) for n in _bbfns), "all 126 bb_* callable")
 assert_that(C.bb_m_bh_sombrero() == 1e9, "bb: M_BH(Sombrero) = SO_5^9 = 1e9 Msun EXACT (PAPER_2019)")
 assert_that(C.bb_b_crab() == 1e-8, "bb: B(Crab) = SO_5^-8 = 1e-8 T EXACT (PAPER_2022)")
 _bbsrc=open("uqff_backbone_locks.py",encoding="utf-8").read()

@@ -1,27 +1,35 @@
-v0.349.0 - THE DEEP-MINE COMPILE: backbone object-locks + material landmarks + formula availability
+v0.350.0 - THE PREDECESSOR-SOURCE SWEEP (CP1-CP4 + QCalc + MUGE + 17-variant F_UBii registry)
 
-THREE NEW GENERATED FUNCTION FAMILIES (all mapped in-step, all gate-guarded):
+2,851 predecessor calculator classes + core modules swept for physics content (Rule E - no code ported).
 
-uqff_backbone_locks.py - 115 bb_* object-observable primitive-locks (from all 55 backbone papers):
-  rho_crust(SGR1745)=SO_5^17 kg/m3, M_BH(Sombrero)=SO_5^9 Msun, B(Crab)=SO_5^-8 T, tau_SF(Pillars)=SO_5^6 yr,
-  M(Universe)=SO_5^53, I(Tapestry)=SO_5^20 A... every function computes LIVE from registry primitives.
+NEW MODULE uqff_fubii_variants.py - the COMPLETE 17-variant F_UBii buoyancy proof registry
+(Grok Thread 98b2e77d; PAPER_036-039; PAPER_2151 Tier-4 canonical taxonomy):
+  virx termv upar coup dec ent fermi hawk kn kne lobe orbdec ps roche sfe bd whim
+  Base identity F_UBii = F_U - F_Bi - F_i; every variant formula-accessible.
 
-uqff_material_landmarks.py - 191 ml_* identities (PAPER_1600-1799, biology to particle physics):
-  aluminum 2700 = D_crit SO_5^2 + N_CH SO_5 + SO_5 EXACT | blood pH 7.4 = D_BSFG + F SO_5 + F D_phys EXACT
-  DNA 10.5 bp/turn | Moon 60.333 R_earth | Jupiter/Earth 317.8 | ITER aspect 3.1 | quark-mass ladders
-  80 LIVE primitive-composed (verified vs stated values) + 111 stated-with-formula (Rule 7 disclosed).
+QG/HOLOGRAPHY SECTOR (CP1-CP3 sweep - reductions to primitive identities, gate-guarded):
+  hawking_temperature_uqff   T/T_H = (1+F_TRZ)(1-F_TRZ) = 1-F_TRZ^2 = 0.99 EXACT
+  white_hole_radius          r = (1-F_TRZ) r_Schwarzschild = 0.9 r_s EXACT
+  er_epr_throat_radius       = 10 l_Pl (rho_UA/rho_SCm)
+  holographic_tc_boost       = 1+F_TRZ = 11/10 successor EXACT
+  bh_lifetime_uqff / holographic_scale + ym_coupling (AdS/CFT) / entanglement_entropy chain /
+  superfluid aether (healing length, quantized circulation) / Peters inspiral chain (freq, t_merge, P_GW)
 
-uqff_primitive_identities.py - 12 pi_* (19xx family): Sgr A* JWST 2025 flare = 1/1800 Hz EXACT,
-  magnetar tau_B = D_phys SO_5^3 = 4000 yr, DPM disc:jet = 1/(D_phys-1), PDR erosion = N_CH SO_5^6 yr.
+CP4 SECTOR: ssq_state_suppression exp(-SSq n/26) universal ladder (n=13 -> sqrt(e^-SSq) EXACT),
+  meissner_factor 1-B/B_crit, tidal_disruption_radius, NOMAD neutrino coupling, magnetar outburst,
+  dual-system Ug1, ULP burst, filament magnetic (uses mu_0 = 4pi F_TRZ^7).
 
-Backbone headline identities (calc fns): CP2 generator 17 W = D_crit - N_CH EXACT (reactor hardware),
-Crab pulsar 30.2 Hz = (D_phys-1)SO_5 + 2 F_TRZ, Bubble Nebula 1200 Msun = 2 D_BSFG SO_5^2,
-chemistry octet 2 D_phys = 8, kappa_V = 1 + F_TRZ/2, SO_5 power-ladder family root (80+ instances).
+CANONICAL MUGE + SOURCE4: muge_ug1..ug4 + um compact forms; dpm_force_term = I A (w1-w2) grinding
+  differential; aDPM/aTHz/Ug4i/wormhole resonance family; Saturn ring 110.9 Myr + M16 4.5 Myr closed ODEs;
+  pre-BB inflation force + hkl pinch; 99-system triadic weights (w_C+w_R+w_B=1).
 
-DANIEL RULING IMPLEMENTED - FORMULA AVAILABILITY: every generated function's paper chain is
-programmatically retrievable: C.formula_of(name), fn.formula attribute, per-module FORMULAS dicts.
-Gate-guarded (5 assertions). No formula is docstring-only.
+ALSO THIS SHIP: NGC triadic catalogue (uqff_ngc_catalog.py, 8 galaxies); ROUND/PENTAD locks -> bb_ 126
+  (incl. H_0(mean)=A_5+SO_5 third cross-anchor); 800s/900s bands (Li_26 polylog, Q=f_SCm/Gamma=25/2 EXACT,
+  PTA h_c, q-Pochhammer, MRI tau); stragglers: n_generations = D_phys-1 = 3 EXACT (why 3 generations -
+  SM cannot say, UQFF derives), Riemann t_10000, Page 0.99596, JWST R26=1.5.
 
-MEASURED: 2565 total Python functions | 2219 named callable (626 calc + 1,272 dc_ + 115 bb_ + 191 ml_ + 12 pi_) |
-342 dispatches | registry 2950 rows | GRAPH 3986 edges | 763 papers mapped | gate 2236 green | 0 dups | 0 malformed.
-Rule E / Rule 4 / Rule 7 held. Rulings queued: Q-2118, Q-1412.
+FIDELITY: 3 Rule-7 rulings queued (Q-2118 symbol/numeric, Q-1412 7.70-vs-7.00, Q-DPMCOSMO F_core
+  internal inconsistency 1.318e17 vs claimed ~1e10). 2 duplicate-def catches by the NO-DUPLICATE-DEF guard.
+
+MEASURED: 2662 total Python functions | 2316 named callable | 7 modules | 342 dispatches |
+registry 3041 rows | GRAPH 4139 edges | 772 papers mapped | gate 2264 green | 0 dups | 0 malformed.

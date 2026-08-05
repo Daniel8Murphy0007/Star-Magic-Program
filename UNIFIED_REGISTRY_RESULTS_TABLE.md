@@ -177,3 +177,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | ml_* material landmarks | 191 | 80 live + 111 stated-disclosed | PAPER_1600-1799 |
 | pi_* primitive identities | 12 | live | PAPER_1920-1999 |
 | formula_of() | all | programmatic formula access | Daniel ruling |
+
+
+## v0.350.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| fubii_* registry | F_UBii = F_U-F_Bi-F_i | 17 variants | BuoyancyProofVariants |
+| T_UQFF/T_H | 1-F_TRZ^2 | 0.99 EXACT | CP1 |
+| white-hole r | (1-F_TRZ) r_s | 0.9 r_s EXACT | CP1 |
+| ER=EPR throat | l_Pl(rho_UA/rho_SCm) | 10 l_Pl | CP1 |
+| ssq ladder | exp(-SSq n/26) | n=13 sqrt EXACT | CP4 |
+| n_generations | D_phys-1 | 3 EXACT | PAPER_1220 |
+| Saturn/M16 ODEs | closed lifetimes | 110.9 Myr / 4.5 Myr | QCalc |

@@ -129,3 +129,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS UPDATE v0.349.0
 - DEEP-MINE COMPILE: +318 generated fns (bb/ml/pi) + formula availability. 2,565 total | 2,219 named | registry 2,950 rows | gate 2,236 green.
+
+
+## LIVE STATUS UPDATE v0.350.0
+- PREDECESSOR-SOURCE SWEEP complete (2,851 classes + modules). 2,662 fns | 2,316 named | 7 modules | registry 3,041 | GRAPH 4,139 | gate 2,264. 3 rulings queued.

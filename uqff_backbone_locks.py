@@ -464,7 +464,51 @@ def bb_m_dm_m51_whirlpool_dm_halo():
     """PAPER_backbone: M_DM(M51 Whirlpool DM halo) = D_phys SO_5^10 M_sun = 4e10 Msun (backbone primitive-lock; M_sun=1.989e30 kg anchor)."""
     return D_PHYS * SO_5 ** 10 * 1.989e30
 
-BACKBONE_LOCK_COUNT = 115
+BACKBONE_LOCK_COUNT = 126
+
+def bb_b_ism_pillars():
+    """PAPER_1985: B_ISM(Pillars) = F_TRZ^6 = 1e-06 (ROUND/PENTAD object-lock)."""
+    return F_TRZ**(6)
+
+def bb_b_j_jets():
+    """PAPER_1985: B_j(jets) = F_TRZ^3 = 0.001 (ROUND/PENTAD object-lock)."""
+    return F_TRZ**(3)
+
+def bb_m_magnetar():
+    """PAPER_1995: M(magnetar) = F_TRZ = 0.1 (ROUND/PENTAD object-lock)."""
+    return F_TRZ
+
+def bb_m_total_sombrero_galaxy():
+    """PAPER_1995: M_total(Sombrero galaxy) = 2·F_TRZ = 0.2 (ROUND/PENTAD object-lock)."""
+    return 2*F_TRZ
+
+def bb_bubble():
+    """PAPER_1995: ρ(Bubble) = F_TRZ⁵ = 1e-05 (ROUND/PENTAD object-lock)."""
+    return F_TRZ**(5)
+
+def bb_b_crit_sgr_1745():
+    """PAPER_2001: B_crit(SGR 1745) = 2·F_TRZ = 0.2 (ROUND/PENTAD object-lock)."""
+    return 2*F_TRZ
+
+def bb_h_0_cmb():
+    """PAPER_2005: H_0(CMB) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock)."""
+    return A_5 + SO_5
+
+def bb_h_0_sh0es():
+    """PAPER_2005: H_0(SH0ES) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock)."""
+    return A_5 + SO_5
+
+def bb_h_0_mean():
+    """PAPER_2005: H_0(mean) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock)."""
+    return A_5 + SO_5
+
+def bb_h_0_planck_cmb_near_value():
+    """PAPER_2007: H_0(Planck CMB near-value) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock)."""
+    return A_5 + SO_5
+
+def bb_h_0_planck():
+    """PAPER_2007: H_0(Planck) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock)."""
+    return A_5 + SO_5
 
 
 # === PROGRAMMATIC FORMULA REGISTRY (Daniel ruling 2026-08-05: docstring formulas must be AVAILABLE) ===
@@ -584,6 +628,17 @@ FORMULAS = {
     "bb_b_crit_sombrero": "B_crit(Sombrero) = F_TRZ²  = 0.01 (backbone primitive-lock).",
     "bb_v_tesla": "V(Tesla) = SO_5^6 V = 1e+06 (backbone primitive-lock).",
     "bb_m_dm_m51_whirlpool_dm_halo": "M_DM(M51 Whirlpool DM halo) = D_phys SO_5^10 M_sun = 4e10 Msun (backbone primitive-lock; M_sun=1.989e30 kg anchor).",
+    "bb_b_ism_pillars": "PAPER_1985: B_ISM(Pillars) = F_TRZ^6 = 1e-06 (ROUND/PENTAD object-lock).",
+    "bb_b_j_jets": "PAPER_1985: B_j(jets) = F_TRZ^3 = 0.001 (ROUND/PENTAD object-lock).",
+    "bb_m_magnetar": "PAPER_1995: M(magnetar) = F_TRZ = 0.1 (ROUND/PENTAD object-lock).",
+    "bb_m_total_sombrero_galaxy": "PAPER_1995: M_total(Sombrero galaxy) = 2·F_TRZ = 0.2 (ROUND/PENTAD object-lock).",
+    "bb_bubble": "PAPER_1995: ρ(Bubble) = F_TRZ⁵ = 1e-05 (ROUND/PENTAD object-lock).",
+    "bb_b_crit_sgr_1745": "PAPER_2001: B_crit(SGR 1745) = 2·F_TRZ = 0.2 (ROUND/PENTAD object-lock).",
+    "bb_h_0_cmb": "PAPER_2005: H_0(CMB) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock).",
+    "bb_h_0_sh0es": "PAPER_2005: H_0(SH0ES) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock).",
+    "bb_h_0_mean": "PAPER_2005: H_0(mean) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock).",
+    "bb_h_0_planck_cmb_near_value": "PAPER_2007: H_0(Planck CMB near-value) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock).",
+    "bb_h_0_planck": "PAPER_2007: H_0(Planck) = A_5 + SO_5 = 70 (ROUND/PENTAD object-lock).",
 }
 
 for _n, _f in FORMULAS.items():
