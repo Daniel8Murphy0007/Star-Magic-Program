@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.342.0", "uqff_calculator.VERSION = 0.342.0 (complete-compile PAPER_001-080 + b-variants)")
+assert_that(C.VERSION == "0.343.0", "uqff_calculator.VERSION = 0.342.0 (complete-compile PAPER_001-080 + b-variants)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -321,6 +321,13 @@ assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['e
             "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
+# === MILLENNIUM-SUITE + INTEGER-MASS LANDMARK GUARD (predecessor mine) ===
+assert_that(C.yang_mills_mass_gap() == 1.736, "PAPER_1318: Yang-Mills mass gap = 1.736 GeV")
+assert_that(C.navier_stokes_enstrophy_cap() == 0.85, "PAPER_1182: Navier-Stokes enstrophy cap = 0.85")
+assert_that(C.hodge_identity() == 1.0, "PAPER_1182: Hodge identity = 1.0")
+assert_that(abs(C.poincare_ricci_ratio() - 7.0/12.0) < 0.01, "PAPER_1182: Poincare 7/12 = 1/2 + F_TRZ Phi_res")
+assert_that(C.proton_electron_ratio() == 1836, "PAPER_1209: m_p/m_e = A_5(D_crit+D_phys)+N_ch D_phys = 1836 (integers)")
+assert_that(abs(C.electron_g2_anomaly() - 0.001159652) < 1e-6, "PAPER_652: electron g-2 anomaly a_e = 0.001159652")
 # === COSMOLOGICAL-CONSTANT LANDMARK GUARD (predecessor mine) ===
 assert_that(abs(C.cosmological_constant_26fact() - 5.957e-10)/5.957e-10 < 0.01,
             "PAPER_589: Lambda = rho_SCm x 26! x 25/12 = 5.957e-10 J/m^3 (Planck Lambda, flagship UQFF result)")

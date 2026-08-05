@@ -5046,3 +5046,21 @@ until 300+ done.
   description rewritten batch-distinctive (502 chars, version present); README badges fidelity_gate-2136 /
   public_surfaces-342 / cacheBust=0.342.0; CHANGELOG + SHIP_MESSAGE + VERSION.txt updated; XGEO chain regenerated.
 - Fidelity gate: 2136 assertions, exit 0. 342 dispatches, 0 duplicates. Predecessor repo read-only per Rule E.
+
+## 2026-08-05 — v0.343.0 PREDECESSOR-MINE II (ship)
+- NOTE: v0.342.0 was shipped/tagged previously (commit a459e0a, 410 named callables). This session's post-ship mining
+  (410 -> 434) ships as v0.343.0.
+- SI-derivation / LENR / QGP block (12 fns): speed_of_light_sqrt (c=sqrt(g SCm/UA)=2.998e8, PAPER_592), G_uqff_cosmic_593
+  (parameter-free G, Rule-7 canonical, PAPER_593), bsd_rank_ordinal (PAPER_599), m_sigma_exponent (PAPER_1048),
+  gw_wave_phonon_source (PAPER_1022), qgp_deconfinement_temp (PAPER_1004/1007), scm_thermal_activation + scm_activation_temp
+  (T_SCm=59.99 K, PAPER_1072), holmlid_ker_630eV (PAPER_1133), coulomb_lenr_energy=626 eV @2.3 pm (PAPER_648),
+  widom_larsen_gamma_suppression (PAPER_062), mizuno_lenr_power (PAPER_1140).
+- Integer-mass / Millennium block (12 fns): proton_electron_ratio=1836 EXACT (PAPER_1209), electron_g2_anomaly=0.001159652
+  (PAPER_652), fine_structure_alpha, vacuum_zeropoint_density->rho_SCm (PAPER_1198), reionization_bubble_growth (PAPER_1026),
+  dpm_26layer_amplification (PAPER_1155), poincare_ricci_ratio=7/12, navier_stokes_enstrophy_cap=0.85, hodge_identity=1.0,
+  bekenstein_hawking_entropy (PAPER_084), negative_time_tneg=-2512 s (PAPER_597), yang_mills_mass_gap=1.736 (PAPER_1318).
+- ALL 8 Clay Millennium closures now individually callable (Riemann/P!=NP/YM/Poincare/NS/Hodge/BSD/BH-info).
+- SHIP v0.343.0: all version strings bumped 0.342.0 -> 0.343.0 (calculator/pyproject/CITATION/gate-pin/VERSION.txt);
+  pyproject description rewritten (490 chars, version present); README badges version-0.343.0 / cacheBust=0.343.0 /
+  fidelity_gate-2142 / public_surfaces-342; CHANGELOG + SHIP_MESSAGE rewritten for v0.343.0; XGEO regenerated.
+- Named equation functions 410 -> 434 (+24). Registry 382 -> 406 equation rows. Gate 2136 -> 2142, exit 0.

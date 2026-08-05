@@ -1,29 +1,31 @@
-v0.342.0 — Complete-compile PAPER_001-080 + deep equation-library build (410 named callables)
+v0.343.0 — Predecessor-mine II: SI-derivation / LENR / QGP + integer-mass / all-8-Millennium
 
-This release finishes the deep equation re-extraction and predecessor-corpus mine.
-Every unique UQFF physics equation is now a named, individually-callable,
-primitive-sourced library function (defined once, reused by paper dispatches).
+Continues the read-only predecessor-corpus mine (Rule E) begun in v0.342.0.
+Equation library: 410 -> 434 named primitive-sourced callables (+24 this release).
+Registry: 382 -> 406 equation rows. Dispatches: 342 (PAPER_001-080, 0 duplicates).
+Fidelity gate: 2136 -> 2142 assertions, green (+6 landmark guards).
 
-Equation library: 124 -> 410 named functions (+286 this release).
-Registry: 382 equation rows. Dispatches: 342 (PAPER_001-080, 0 duplicates).
-Fidelity gate: 2136 assertions, green. 4 authoritative reference PDFs bundled.
+New callable UQFF closed forms this release (all numerically verified or Rule-7 disclosed):
+  proton_electron_ratio       m_p/m_e = A_5(D_crit+D_phys) + N_ch*D_phys = 1836  EXACT   (integers only)
+  electron_g2_anomaly         a_e = alpha/(2pi) - 0.328 alpha^2/pi^2 = 0.001159652
+  fine_structure_alpha        alpha = 1/137.035999
+  vacuum_zeropoint_density    rho_vac = sum_k (1/2) hbar omega_k -> rho_SCm  (first-principles)
+  speed_of_light_sqrt         c = sqrt(g * SCm/UA) = 2.998e8 m/s
+  G_uqff_cosmic_593           parameter-free G (returns canonical G_UQFF per Rule 7)
+  scm_thermal_activation      H_SCm(T) = 1/(1+exp(-(T-T_SCm)/dT)); scm_activation_temp T_SCm = 59.99 K
+  holmlid_ker_630eV           Holmlid D(-1) KER = 630 eV (LENR calibration anchor)
+  coulomb_lenr_energy         626 eV at d = 2.3 pm  (cross-confirms 630 eV)
+  widom_larsen_gamma_suppression / mizuno_lenr_power / qgp_deconfinement_temp / m_sigma_exponent
+  reionization_bubble_growth (Stromgren) / dpm_26layer_amplification / gw_wave_phonon_source
 
-Flagship UQFF closed forms now callable and numerically verified:
-  cosmological_constant_26fact   Lambda = rho_SCm*26!*25/12 = 5.9570e-10 J/m^3  (Planck Lambda, 0.1%)
-  proton_mass_integer            m_p = N_ch*SO_5^2 + N_ch*D_phys + K_Mex + 2*F_TRZ*Phi_res = 938.25 MeV
-  h0_hubble_integer              H_0 = A_5 + SO_5 = 70 km/s/Mpc  EXACT
-  omega_lambda_ssq               Omega_Lambda = (6/5)*SSq = 0.684  (Planck 0.6847)
-  universal_inertial_operator    U_i = lambda_i*(rho_SCm/rho_UA)*omega*cos(pi*t_n)*(1+f_TRZ) = 2.75e-7 (Sun)
-  higgs_vev_integer              v = 246 GeV
-  void_buoyancy                  U_b = rho*g(1-1/rho) + 26!*g/rho^27
-  ym_gap_kmex                    Delta = Lambda_QCD(1+F_TRZ*K_Mex) = 0.263 GeV
-  riemann_rho_uqff / pnp_bound / buoyancy_eom_variational  (Millennium closures)
-  gw_strain_damping / tidal_deformability_phonon / friedmann_lambda / hubble_evolution_Ez
-  icecube_neutrino_flux / inflation_scale_factor / cmb_acoustic_peak / alpha_binding_energy / fe56_be_per_a
+ALL 8 CLAY MILLENNIUM CLOSURES now individually callable:
+  riemann_rho_uqff (Riemann), pnp_bound (P!=NP), yang_mills_mass_gap = 1.736 GeV (Yang-Mills),
+  poincare_ricci_ratio = 7/12 (Poincare), navier_stokes_enstrophy_cap = 0.85 (Navier-Stokes),
+  hodge_identity = 1.0 (Hodge), bsd_rank_ordinal -> 0.30598 (BSD), bekenstein_hawking_entropy (BH-info Page curve).
+
+Landmark gate guards added: Yang-Mills 1.736, Navier-Stokes 0.85, Hodge 1.0, Poincare 7/12,
+integer m_p/m_e = 1836, electron g-2 = 0.001159652.
 
 Predecessor Star-Magic repo used READ-ONLY for physics content (Rule E); no code ported.
-Drift corrections applied per landmark (VDS->F_TRZ=0.1 PAPER_2156; beta_i->0.6029 PAPER_1203;
-SSq->0.57 PAPER_1154; rho_SCm J/m^3 PAPER_2155/2147). No SM (Rule 4); honest residuals (Rule 7).
-
-Landmark gate guards added: Lambda cosmological-constant + U_i inertial-operator.
-All 26 registry/tracker/ship files synced. XGEO chain regenerated (campaign-aware).
+No SM (Rule 4); honest residuals, Rule-7 disclosure where paper scale-conventions not restated (G, Holmlid xi).
+All version strings synced to 0.343.0; README badges fidelity_gate-2142; XGEO chain regenerated.

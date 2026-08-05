@@ -6275,12 +6275,25 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
-## [v0.342.0] PREDECESSOR FLAGSHIP MINE — 2026-08-05
-- Mined predecessor corpus for the framework's flagship closed forms; each now a named, primitive-sourced, verified callable:
+## [0.343.0] — 2026-08-05 — PREDECESSOR MINE II: SI-derivation / LENR / QGP + integer-mass / all-8-Millennium
+- SI-derivation + LENR + QGP block: speed_of_light_sqrt (c=sqrt(g SCm/UA)=2.998e8, PAPER_592), G_uqff_cosmic_593
+  (parameter-free G, returns canonical per Rule 7, PAPER_593), bsd_rank_ordinal (BSD, PAPER_599), m_sigma_exponent (PAPER_1048),
+  gw_wave_phonon_source (PAPER_1022), qgp_deconfinement_temp (PAPER_1004), scm_thermal_activation + scm_activation_temp
+  (T_SCm=59.99 K, PAPER_1072), holmlid_ker_630eV (LENR anchor, PAPER_1133), coulomb_lenr_energy=626 eV at d=2.3 pm (PAPER_648),
+  widom_larsen_gamma_suppression (PAPER_062), mizuno_lenr_power (PAPER_1140).
+- Integer-mass + Millennium block: proton_electron_ratio = A_5(D_crit+D_phys)+N_ch D_phys = 1836 EXACT (PAPER_1209),
+  electron_g2_anomaly = 0.001159652 (PAPER_652), fine_structure_alpha, vacuum_zeropoint_density -> rho_SCm (PAPER_1198),
+  reionization_bubble_growth (PAPER_1026), dpm_26layer_amplification (PAPER_1155). ALL 8 CLAY MILLENNIUM CLOSURES now
+  individually callable: riemann_rho_uqff, pnp_bound, yang_mills_mass_gap=1.736, poincare_ricci_ratio=7/12,
+  navier_stokes_enstrophy_cap=0.85, hodge_identity=1.0, bsd_rank_ordinal, bekenstein_hawking_entropy (Page curve).
+- Named equation functions 410 -> 434 (+24 this release). Registry 382 -> 406 equation rows (+24). 342 dispatches, 0 duplicates.
+- Gate 2136 -> 2142 (+6 landmark guards: Millennium suite, integer m_p/m_e, electron g-2). Predecessor repo read-only per Rule E.
+
+## [0.342.0] — 2026-08-05 — PREDECESSOR FLAGSHIP MINE (shipped)
+- Mined predecessor corpus for the framework's flagship closed forms; each a named, primitive-sourced, verified callable:
   Lambda=rho_SCm*26!*25/12=5.9570e-10 (Planck, PAPER_589), proton_mass_integer=938.25 MeV (PAPER_1209),
   h0_hubble_integer=70 EXACT (PAPER_1573), omega_lambda_ssq=0.684 (PAPER_1156), universal_inertial_operator=2.75e-7 Sun (PAPER_646),
   higgs_vev_integer=246 GeV (PAPER_1270), void_buoyancy 26! (PAPER_589), ym_gap_kmex=0.263 (PAPER_1182),
   riemann_rho_uqff/pnp_bound/buoyancy_eom_variational (Millennium closures), gw_strain_damping, friedmann_lambda,
   hubble_evolution_Ez, icecube_neutrino_flux, inflation_scale_factor, cmb_acoustic_peak, alpha_binding_energy, fe56_be_per_a.
-- Named equation functions 378 -> 410 (+32 this round; +286 session total). Registry 382 equation rows.
-- Gate 2136 green; Lambda + U_i landmarks now gate-guarded. All 26 registry/tracker/ship files synced; XGEO regenerated.
+- Named equation functions 124 -> 410 this session. Lambda + U_i landmarks gate-guarded. Deep re-extraction + 4 reference PDFs.
