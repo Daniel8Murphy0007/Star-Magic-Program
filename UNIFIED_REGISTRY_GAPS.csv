@@ -36,3 +36,7 @@ yinyang_ratio_q041,open_ruling,Q-041b: rho_SCm/rho_UA=1000 inverted vs canonical
 semf_rowshift_q044,open_ruling,Q-044: coupling-table row shift Pb-208/U-238 (PAPER_047)
 ug4_1894_q045,open_ruling,Q-045: 1.8937 Ug4 validator = predecessor 1.894 origin candidate (PAPER_048)
 lambda_unit_q046,open_ruling,Q-046: rho_Lambda J/m^3 vs kg/m^3 unit direction (PAPER_049)
+scm_level13_q041e,open_ruling,Q-041e: rho_SCm+beta_i as Level-13/plasma 26-ladder values (PAPER_051)
+e18_projection_q041d,open_ruling,Q-041d: E18 energy scale vs 125 GeV resonance freq (PAPER_052)
+hubble_invert_q050,open_ruling,Q-050: Hubble-factor column inverted across systems (PAPER_054)
+carina_2x_q051a,open_ruling,"Q-051a: Mice ""2x Carina"" claim fails (true 0.89x) (PAPER_057)"

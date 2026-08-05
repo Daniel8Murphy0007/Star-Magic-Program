@@ -1,18 +1,15 @@
-v0.339.0 — Complete-compile PAPER_041-050 (26-level framework / DPM manifold / nuclear / vacuum)
+v0.340.0 — Complete-compile PAPER_051-060 (cross-validation / astrophysical models / alpha-BEC)
 
-Papers 041-050 fully captured over the equation library (now 454 functions):
-- 041 ICM thermostat; 042 26-layer compressed gravity (MC); 043 26-level polynomial energy hierarchy
-  (E_n=10^(n-20) J); 044 pre-Big-Bang 26-center DPM manifold (r_i=10^(-35+i/3)); 045 matter-state phase
-  transitions (levels 10-13); 046 Yin-Yang cosmology + nuclear core coupling g(A)=1000(A/56)^(1/3);
-  047 nuclear binding (SEMF Fe-56); 048 Ug4 BH vacuum pressure; 049 three-component vacuum energy;
-  050 26D->3+1 compactification (9+4+13).
+Papers 051-060 fully captured over the equation library (now 460 functions):
+- 051/052 UQFF vs 2024/2025 arXiv cross-validation; 053 NGC 2264; 054 UGC 10214 Tadpole; 055 NGC 4676 Mice
+  (10x merger compression); 056 Red Spider NGC 6537 (2x wind); 057 Carina complex; 058 M42 Orion (suite ranking);
+  059 alpha-BEC in Ca-40+Ca-40 heavy-ion; 060 Bose-Einstein occupancy N_B=1/(exp(dE/kT)-1).
 
 Each dispatch composes over _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH +
 Kozima-LENR K.1-K.6) plus paper-specific core and library equations.
 
-- Paper-specific §B DVP prime ladder (37,41,43,47,53,59,61,67,71,73), gate-guarded via _DVP_LADDER_LOCKED.
-- Linked-paper mapping 041-050 (139 graph edges + full citations). XGEO chain regenerated (108 queue, 40 confirmations).
-- README fully refreshed (badges, header, currently-shipped summary).
-- 342 dispatches, 0 duplicate registrations, gate green (2101 assertions), 0 malformed CSVs.
+- Paper-specific §B DVP prime ladder (79,83,89,97,101,103,107,109,113,2), gate-guarded.
+- Linked-paper mapping (115 edges). XGEO chain regenerated (124 queue, 50 confirmations).
+- 342 dispatches, 0 duplicate registrations, gate green, 0 malformed CSVs.
 
-Campaign progress: 50 base papers + b-variants of 300+ target.
+Campaign progress: 60 base papers + b-variants of 300+ target.

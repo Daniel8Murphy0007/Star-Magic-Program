@@ -43,3 +43,8 @@ g_fe56,1000(56/56)^(1/3),1000,1000,PAPER_046,closed_form,0.0
 g_u238,1000(238/56)^(1/3),,1620,PAPER_047,closed_form,0.0
 ug4_sgra,M rho/(d^2 E_LEP),,1.246e28,PAPER_048,closed_form,0.0
 semf_fe56,SEMF,490.9 MeV,490.9,PAPER_047,closed_form,0.3
+resonance_ssq,SSq/(1+SSq),0.57/1.57,0.3631,PAPER_053,closed_form,0.0
+merger_comp,(1.3)^2.3,,1.828,PAPER_055,closed_form,0.0
+pn_wind_v,v_esc sqrt(256),100*16,1600,PAPER_056,closed_form,0.0
+alpha_prob,0.10+0.85(8)/8,,0.95,PAPER_059,closed_form,0.0
+be_nb,1/(exp(0.4766/5)-1),,10.0,PAPER_060,closed_form,0.0

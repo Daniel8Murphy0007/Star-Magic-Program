@@ -58,11 +58,11 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.339.0"
+VERSION = "0.340.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.339.0: complete-compile PAPER_001-050 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
-# batch 041-050 (26-level/DPM/nuclear/vacuum); linked-paper mapping 50/50; XGEO queue 108; 342 dispatches, 0 dup.
+# STATE v0.340.0: complete-compile PAPER_001-060 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
+# batch 051-060 (crossval/astro-models/alpha-BEC); linked-paper mapping 60/60; XGEO queue 124; 342 dispatches, 0 dup.
 # Windows-side save to trigger VS Code file-watcher refresh.
 
 # =============================================================================
@@ -644,6 +644,31 @@ def nuclear_core_coupling(A, ratio=1000.0, A_ref=56.0):
 def ug4_bh_pressure(M_BH, rho_vac, d, E_LEP, alpha_t=0.0, t_n=0.0):
     """PAPER_048: Ug4 BH vacuum pressure = M_BH*rho_vac/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n)."""
     return M_BH * rho_vac / (d ** 2 * E_LEP) * math.exp(-alpha_t) * math.cos(math.pi * t_n)
+
+
+def resonance_factor_ssq(ssq=SSQ):
+    """PAPER_053: resonance normalization factor SSq/(1+SSq) = 0.3631."""
+    return ssq / (1.0 + ssq)
+
+def merger_compression(overlap, exponent=2.3):
+    """PAPER_055: major-merger geometric compression (1 + overlap)^2.3."""
+    return (1.0 + overlap) ** exponent
+
+def wind_velocity(v_esc, Ug2, g):
+    """PAPER_056: PN fast-wind velocity v = v_esc*sqrt(Ug2/g)."""
+    return v_esc * math.sqrt(Ug2 / g)
+
+def alpha_bec_prob(E_star):
+    """PAPER_059: alpha-BEC formation probability P_alpha = 0.10 + 0.85*(E*-1)/8."""
+    return 0.10 + 0.85 * (E_star - 1.0) / 8.0
+
+def be_occupancy(dE, kT):
+    """PAPER_060: Bose-Einstein occupancy N_B = 1/(exp(dE/kT) - 1)."""
+    return 1.0 / (math.exp(dE / kT) - 1.0)
+
+def be_de_ladder(n, kT):
+    """PAPER_060: 26-level threshold ladder dE(n) = kT*ln(1 + 1/n)."""
+    return kT * math.log(1.0 + 1.0 / n)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)
@@ -3652,9 +3677,13 @@ def _paper_051(dataset):
     conflates 1.2/1.18/1.25.
     """
     align = lambda pred, obs: max(0.0, min(100.0, (1.0 - abs(pred - obs) / abs(obs)) * 100.0))
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'crossval-2024')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.139, 'DVP_prime_paper': 79, 'DVP_n_channel_paper': 26/26.0,
+        'DVP_primes': (79, 26/26.0), 'DVP_resonant': True,
+
             'mean_alignment_pct': 92.02,
+            'eqlib': ['resonance_factor_ssq'],
             'std_pct': 9.27,
             'median_pct': 96.11,
             'mean_2024_pct': 94.07,
@@ -3672,7 +3701,9 @@ def _paper_051(dataset):
             'origin_709_l13': 'canonical rho_SCm number family at PLASMA level (with beta_13 = 0.60)',
             'ngc2841_hubble_factor': 1.7154,         # Q-048b vs z ~ 0.002
             'hawking_ratio_005': 0.05,               # Q-048c third ratio value
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('alignment = max(0, min(100, (1 - |pred-obs|/|obs|)*100)); '
                     'final parsec: [SCm] viscous Ug4 sink; DM: [SCm]+[UA] opposition'),
         'source': 'PAPER_051',
@@ -3706,9 +3737,13 @@ def _paper_052(dataset):
     throughout both 051/052.
     """
     align = lambda pred, obs: (1.0 - abs(pred - obs) / abs(obs)) * 100.0
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'crossval-2025')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.056, 'DVP_prime_paper': 83, 'DVP_n_channel_paper': 1/26.0,
+        'DVP_primes': (83, 1/26.0), 'DVP_resonant': True,
+
             'higgs_alignment': align(125.09, 125.35),    # 99.79 VERIFIED
+            'eqlib': ['kappa_18_level'],
             'higgs_uqff_gev': 125.09,
             'higgs_cms_gev': 125.35,
             'kv_kf': (1.0, 1.01),
@@ -3726,7 +3761,9 @@ def _paper_052(dataset):
             'models': 10,
             'ngc2841_hubble': 1.7154,                # Q-048b carries
             'self_referential_flag': 'Page source arXiv:2501.xxxxx is a UQFF paper (Q-049b)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('alignment = (1 - |pred-obs|/|obs|)*100; Page: delta = (1/26)*sum(lambda_i*dS_i/S)'),
         'source': 'PAPER_052',
         'residual_pct': abs(align(125.09, 125.35) - 99.79),
@@ -3762,9 +3799,14 @@ def _paper_053(dataset):
         'r_amplitude': (1.1586e-2, 1.1610e-2),
     }
     ratios = {k: p / e for k, (p, e) in tests.items()}
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'ngc2264')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.192, 'DVP_prime_paper': 89, 'DVP_n_channel_paper': 2/26.0,
+        'DVP_primes': (89, 2/26.0), 'DVP_resonant': True,
+
             'system': 'NGC 2264 (Cone Nebula / Christmas Tree Cluster)',
+            'resonance_factor_lib': resonance_factor_ssq(),
+            'eqlib': ['resonance_factor_ssq'],
             'distance_pc': 720.0,
             'age_myr': 2.0,
             'tests': tests,
@@ -3776,7 +3818,9 @@ def _paper_053(dataset):
             'suite_crosscheck': 'matches PAPER_052 row exactly',
             'calibration_note': 'expected = calibration targets (regression, not independent obs)',
             'ssq_uncertainty_pct': 0.5,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g_grav = G*M/r^2; R = R0*sqrt(rho_r)*SSq/(1+SSq); '
                     'g_compressed = sum_26 lambda_i*(Ug1+Ug2+Ug3+Ug4)_i'),
         'source': 'PAPER_053',
@@ -3804,9 +3848,13 @@ def _paper_054(dataset):
     "10 M?" exponent mojibake (1e11 Msun implied by context).
     """
     ug3_boost = 280.0 / 200.0 - 1.0                  # 0.4
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'tadpole')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.173, 'DVP_prime_paper': 97, 'DVP_n_channel_paper': 3/26.0,
+        'DVP_primes': (97, 3/26.0), 'DVP_resonant': True,
+
             'system': 'UGC 10214 (Tadpole, Arp 188)',
+            'eqlib': ['resonance_factor_ssq'],
             'distance_mpc': 420.0,
             'z': 0.0312,
             'g_grav': 7.8551e-12,
@@ -3822,7 +3870,9 @@ def _paper_054(dataset):
             'score': (4, 4),
             'ngc2264_ratio_claimed': 9.3,            # Q-050b vs computed 7.55
             'ngc2264_ratio_computed': 5.9336e-11 / 7.8551e-12,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('L_tail = v_enc*t_peri*(1 + Ug3/Ug1_tidal); '
                     'Ug3 = M*omega_string*r*t*exp(-kappa*t)'),
         'source': 'PAPER_054',
@@ -3854,9 +3904,14 @@ def _paper_055(dataset):
     1.83 printed as ~1.7; (c) enhancement-value exponents mojibaked.
     """
     geom = 1.3 ** 2.3                                # 1.83 (paper ~1.7)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'mice-merger')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.098, 'DVP_prime_paper': 101, 'DVP_n_channel_paper': 4/26.0,
+        'DVP_primes': (101, 4/26.0), 'DVP_resonant': True,
+
             'system': 'NGC 4676 A+B (The Mice, Arp 242)',
+            'merger_compression_lib': merger_compression(0.3),
+            'eqlib': ['merger_compression'],
             'distance_mpc': 87.0,
             'z': 0.0220,
             'g_grav': 2.9500e-10,
@@ -3872,7 +3927,9 @@ def _paper_055(dataset):
             'ifu_falsifiable': 'merger shock-zone spectroscopy distinguishes the two',
             'timeline_myr': {'pericenter': -160, 'today_factor': '5-7', 'coalesce': 2500},
             'score': (4, 4),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g_merger = g_isolated*(1 + dM_overlap/M)^2.3 * [SCm]-spike; '
                     '(1.3)^2.3 * ~5.5 ~ 10'),
         'source': 'PAPER_055',
@@ -3907,9 +3964,14 @@ def _paper_056(dataset):
     r_2264 = 5.9336e-11 / 1.3275e-12                 # 44.70
     r_mice = 2.9500e-10 / 1.3275e-12                 # 222.2 (= the "222" claim)
     r_m42 = 6.6376e-10 / 1.3275e-12                  # 500.0 true
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'red-spider')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.157, 'DVP_prime_paper': 103, 'DVP_n_channel_paper': 5/26.0,
+        'DVP_primes': (103, 5/26.0), 'DVP_resonant': True,
+
             'system': 'Red Spider Nebula (NGC 6537)',
+            'wind_velocity_lib': wind_velocity(100.0, 256.0, 1.0),
+            'eqlib': ['wind_velocity'],
             'distance_kpc': 1.5,
             't_star_k': 4.0e5,
             'g_grav': 1.3275e-12,
@@ -3925,7 +3987,9 @@ def _paper_056(dataset):
             'ratio_m42_true': r_m42,                 # 500.0
             'euv_formula_status': 'calibrated to 2.0; closed form OPEN (disclosed in-paper)',
             'score': (4, 4),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('v_wind = v_esc*sqrt(Ug2/g_grav) = 100*sqrt(256) = 1600 km/s; '
                     'tier: 1x / 2x / 10x compression classes'),
         'source': 'PAPER_056',
@@ -3958,9 +4022,13 @@ def _paper_057(dataset):
     (c) mass-ratio figures mojibaked (1538x etc).
     """
     g_3372, g_agcar, g_mm, g_m42 = 3.3188e-10, 2.6550e-11, 1.3275e-10, 6.6376e-10
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'carina')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.126, 'DVP_prime_paper': 107, 'DVP_n_channel_paper': 6/26.0,
+        'DVP_primes': (107, 6/26.0), 'DVP_resonant': True,
+
             'systems': ('NGC 3372', 'AG Carinae', 'Mystic Mountain'),
+            'eqlib': ['resonance_factor_ssq'],
             'g_3372': g_3372, 'g_agcar': g_agcar, 'g_mm': g_mm,
             'ratio_3372_agcar': g_3372 / g_agcar,    # 12.50 EXACT
             'ratio_3372_m42': g_3372 / g_m42,        # 0.50
@@ -3974,7 +4042,9 @@ def _paper_057(dataset):
             'mantissa_collision': 'Red Spider 1.3275e-12 vs Mystic Mtn 1.3275e-10 (Q-053a)',
             'honest_mass_gap': '226x expected vs 12.5 measured - local dynamical mass reading',
             'score': (12, 12),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g ratios pin suite exponents; standard class = no [SCm] point compression'),
         'source': 'PAPER_057',
         'residual_pct': abs(g_3372 / g_agcar - 12.5) / 12.5 * 100,
@@ -4009,9 +4079,13 @@ def _paper_058(dataset):
                'mystic': 1.3275e-10, 'ngc2264': 5.9336e-11, 'ngc2841': 5.3101e-11,
                'agcar': 2.6550e-11, 'ugc10214': 7.8551e-12, 'redspider': 1.3275e-12,
                'tarantula': 3.5099e-13}
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'orion-m42')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.071, 'DVP_prime_paper': 109, 'DVP_n_channel_paper': 7/26.0,
+        'DVP_primes': (109, 7/26.0), 'DVP_resonant': True,
+
             'system': 'M42 Great Orion Nebula (NGC 1976)',
+            'eqlib': ['resonance_factor_ssq'],
             'distance_pc': 410.0,
             'g_grav': ranking['m42'],
             'suite_ranking': ranking,
@@ -4025,7 +4099,9 @@ def _paper_058(dataset):
             'shock_bridge_kms': (48.0, 50.0),        # matches 051 arXiv within 3 pct
             'hubble_factor': 1.0002,                 # Q-054b local non-monotonicity
             'score': (4, 4),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g_grav ~ M_eff/d^2 (local dynamical mass); '
                     'v_shock = v_Alfven*(1 + Ug1/g_grav)^0.5'),
         'source': 'PAPER_058',
@@ -4062,9 +4138,14 @@ def _paper_059(dataset):
     p_alpha = lambda e_star: 0.10 + 0.85 * (e_star - 1.0) / 8.0
     v_frag = 8.0 * (1.0 - 0.5 * 20.0 / 40.0)         # 6.0 VERIFIED
     ns_scale = -4.8e6 * 3.5e9 * 1.0e-10              # -1.68e6 VERIFIED
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'alpha-bec')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.182, 'DVP_prime_paper': 113, 'DVP_n_channel_paper': 8/26.0,
+        'DVP_primes': (113, 8/26.0), 'DVP_resonant': True,
+
             'system': 'Ca-40 + Ca-40 at 35 MeV/nucleon (NIMROD-ISiS)',
+            'alpha_prob_lib': alpha_bec_prob(9.0),
+            'eqlib': ['alpha_bec_prob'],
             'doi': '10.1393/ncc/i2016-16394-6',
             'ikeda_channels': 10,
             'p_alpha_mid': p_alpha(5.0),             # 0.525
@@ -4080,7 +4161,9 @@ def _paper_059(dataset):
             'ns_pasta_force_n': ns_scale,            # -1.68e6 chain verified
             'lowest_channel': ('alpha + Ar-36', 15.67),
             'highest_channel': ('9alpha + 4n', 95.63),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('P_alpha = 0.10 + 0.85*(E*-1)/8; v_frag = v_beam*(1 - 0.5*A/A_proj); '
                     'F_UBii = -F_rel*(E_cm/E_LEP)*Q_wave*g_local/1e30'),
         'source': 'PAPER_059',
@@ -4118,9 +4201,14 @@ def _paper_060(dataset):
     ladder = {n: kt * math.log(1.0 + 1.0 / n) for n in (4, 8, 12, 16, 20, 26)}
     supp_printed = {n: math.exp(-0.50 * n / 26.0) for n in (4, 8, 12, 16, 20, 26)}
     supp_ssq_26 = math.exp(-SSQ)                      # 0.5655 what formula would give
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'be-occupancy')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.067, 'DVP_prime_paper': 2, 'DVP_n_channel_paper': 9/26.0,
+        'DVP_primes': (2, 9/26.0), 'DVP_resonant': False,
+
             'system': 'Ca-40 + Ca-40 alpha multiplicities (NIMROD-ISiS, mock-data fit)',
+            'be_occupancy_lib': be_occupancy(be_de_ladder(10, 5.0), 5.0), 'be_de_ladder_lib': be_de_ladder(10, 5.0),
+            'eqlib': ['be_occupancy','be_de_ladder'],
             't_bec_mev': kt,
             'de_bec_mev': de_bec,                     # 0.4766 EXACT
             'n_b_at_threshold': n_b(de_bec),          # 10.000
@@ -4134,7 +4222,9 @@ def _paper_060(dataset):
             'hoyle_3alpha_de_mev': kt * math.log(1.0 + 1.0 / 3.0),   # 1.438
             'o16_4alpha_de_mev': kt * math.log(1.25),                # 1.116
             'alpha_cluster_n': 4,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('N_B = 1/(exp(dE/kT)-1); dE(n) = kT*ln(1+1/n); '
                     'dE_BEC = 5.0*ln(1.1) = 0.4766 MeV'),
         'source': 'PAPER_060',

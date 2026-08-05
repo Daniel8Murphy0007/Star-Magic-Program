@@ -4926,3 +4926,9 @@ until 300+ done.
 - Gate: loop+DVP guard extended to 050; +6 batch assertions. Registry +16 UNIFIED, +8 graph, +6 R2/R3/RESULTS/GAPS.
 - Linked-paper mapping 041-050: 139 edges. XGEO regen: queue 108, confirmations 40. 0 malformed.
 - README fully refreshed (badges 0.339.0/2101, header, shipped summary). 342 dispatches, 0 duplicates. Ship v0.339.0.
+
+### 2026-08-05 — Batch PAPER_051-060 (cross-validation/astro-models/alpha-BEC) ship v0.340.0
+- 10 papers merged + §B (DVP 79,83,89,97,101,103,107,109,113,2). 6 library eqs: resonance_factor_ssq,
+  merger_compression, wind_velocity, alpha_bec_prob, be_occupancy, be_de_ladder. Library 460 fns.
+- Gate loop+guard to 060; +5 assertions. Registry +16 UNIFIED, +6 graph, +5 R2/R3/RESULTS, +4 GAPS.
+- Mapping 115 edges. XGEO regen queue 124/confirmations 50. 0 malformed. Ship v0.340.0.

@@ -6228,3 +6228,8 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   cross-scale coupling, nuclear core coupling, Ug4 BH pressure) + paper §B DVP ladder (37-73); gate-guarded.
 - Linked-paper mapping 041-050 (139 edges). XGEO regen (queue 108, confirmations 40). README fully refreshed.
 - Registry pantheon advanced through PAPER_050. 342 dispatches, 0 duplicates, gate green (2101 assertions).
+
+## [v0.340.0] — 2026-08-05 batch 051-060 (cross-validation / astro models / alpha-BEC)
+- Complete-compile PAPER_051-060: 6 library eqs (resonance factor, merger compression, PN wind, alpha-BEC prob,
+  BE occupancy, dE ladder) + paper §B DVP ladder (79-113,2); gate-guarded. Mapping 115 edges; XGEO 124 queue.
+- Registry pantheon advanced through PAPER_060. 342 dispatches, 0 duplicates, gate green.

@@ -802,3 +802,19 @@ dvp_prime_paper_047,PAPER_047,observable,p_DVP=61,§B.2,61,paper §B.2,0.0,vds-d
 dvp_prime_paper_048,PAPER_048,observable,p_DVP=67,§B.2,67,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_048,1,1,0,0,1,WIRED
 dvp_prime_paper_049,PAPER_049,observable,p_DVP=71,§B.2,71,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_049,1,1,0,0,1,WIRED
 dvp_prime_paper_050,PAPER_050,observable,p_DVP=73,§B.2,73,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_050,1,1,0,0,1,WIRED
+resonance_factor_ssq,PAPER_053,equation,SSq/(1+SSq),SSq/(1+SSq),compiled,resonance norm,0.0,ngc2264,0.84,PAPER_053,1,1,0,0,1,WIRED
+merger_compression,PAPER_055,equation,(1+overlap)^2.3,(1+overlap)^2.3,compiled,merger spike,0.0,mice-merger,0.84,PAPER_055,1,1,0,0,1,WIRED
+wind_velocity,PAPER_056,equation,v_esc sqrt(Ug2/g),v_esc sqrt(Ug2/g),compiled,PN wind,0.0,red-spider,0.84,PAPER_056,1,1,0,0,1,WIRED
+alpha_bec_prob,PAPER_059,equation,0.10+0.85(E*-1)/8,0.10+0.85(E*-1)/8,compiled,alpha-BEC prob,0.0,alpha-bec,0.84,PAPER_059,1,1,0,0,1,WIRED
+be_occupancy,PAPER_060,equation,1/(exp(dE/kT)-1),1/(exp(dE/kT)-1),compiled,BE occupancy,0.0,be-occupancy,0.84,PAPER_060,1,1,0,0,1,WIRED
+be_de_ladder,PAPER_060,equation,kT ln(1+1/n),kT ln(1+1/n),compiled,threshold ladder,0.0,be-occupancy,0.84,PAPER_060,1,1,0,0,1,WIRED
+dvp_prime_paper_051,PAPER_051,observable,p_DVP=79,§B.2,79,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_051,1,1,0,0,1,WIRED
+dvp_prime_paper_052,PAPER_052,observable,p_DVP=83,§B.2,83,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_052,1,1,0,0,1,WIRED
+dvp_prime_paper_053,PAPER_053,observable,p_DVP=89,§B.2,89,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_053,1,1,0,0,1,WIRED
+dvp_prime_paper_054,PAPER_054,observable,p_DVP=97,§B.2,97,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_054,1,1,0,0,1,WIRED
+dvp_prime_paper_055,PAPER_055,observable,p_DVP=101,§B.2,101,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_055,1,1,0,0,1,WIRED
+dvp_prime_paper_056,PAPER_056,observable,p_DVP=103,§B.2,103,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_056,1,1,0,0,1,WIRED
+dvp_prime_paper_057,PAPER_057,observable,p_DVP=107,§B.2,107,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_057,1,1,0,0,1,WIRED
+dvp_prime_paper_058,PAPER_058,observable,p_DVP=109,§B.2,109,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_058,1,1,0,0,1,WIRED
+dvp_prime_paper_059,PAPER_059,observable,p_DVP=113,§B.2,113,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_059,1,1,0,0,1,WIRED
+dvp_prime_paper_060,PAPER_060,observable,p_DVP=2,§B.2,2,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_060,1,1,0,0,1,WIRED

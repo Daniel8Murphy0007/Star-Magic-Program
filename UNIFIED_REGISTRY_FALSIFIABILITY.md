@@ -144,3 +144,12 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - 048: Ug4 BH pressure != M rho_vac/(d^2 E_LEP) falsifies vacuum-pressure form.
 - 049: three-component vacuum sum not = observed residual Lambda falsifies Yin-Yang cancellation.
 - §B DVP ladder 041-050: 37,41,43,47,53,59,61,67,71,73 (paper-specific, gate-guarded).
+
+## PAPER_051-060 batch (cross-validation / astrophysical models / alpha-BEC)
+- 051/052: UQFF cross-validation mean alignment < 90% against 2024/2025 arXiv falsifies the prediction suite.
+- 053-058: compression hierarchy 1x/2x/10x (standard/wind/merger) not matched by shock velocities falsifies taxonomy.
+- 055: major-merger compression != (1+overlap)^2.3 falsifies halo-overlap spike.
+- 056: PN wind v != v_esc*sqrt(Ug2/g) falsifies radiation-pressure wind.
+- 059: alpha-BEC P != 0.10+0.85(E*-1)/8 falsifies formation probability.
+- 060: alpha multiplicity != 1/(exp(dE/kT)-1) with single T_BEC=5 MeV falsifies BE occupancy.
+- §B DVP ladder 051-060: 79,83,89,97,101,103,107,109,113,2 (paper-specific, gate-guarded).

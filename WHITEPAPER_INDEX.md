@@ -87,16 +87,16 @@
 | ⚠ | PAPER_048 | Black Hole Interaction Energy 26D UQFF | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
 | ⚠ | PAPER_049 | Vacuum Density Contributions UQFF 26Layer | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
 | ⚠ | PAPER_050 | 26D Manifold Compactification 3plus1 Spacetime | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
-| ⚠ | PAPER_051 | UQFF Predictions vs arXiv 2024 |
-| ⚠ | PAPER_052 | UQFF Predictions vs arXiv 2025 |
-| ✓ | PAPER_053 | NGC2264 Star Formation UQFF |
-| ⚠ | PAPER_054 | Tadpole Galaxy UGC10214 UQFF |
-| ⚠ | PAPER_055 | Mice Galaxies NGC4676 UQFF |
-| ⚠ | PAPER_056 | Red Spider Nebula UQFF |
-| ⚠ | PAPER_057 | Carina Nebula Multi Scale UQFF |
-| ⚠ | PAPER_058 | M42 Orion Nebula UQFF |
-| ⚠ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF |
-| ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF |
+| ⚠ | PAPER_051 | UQFF Predictions vs arXiv 2024 | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_052 | UQFF Predictions vs arXiv 2025 | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ✓ | PAPER_053 | NGC2264 Star Formation UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_054 | Tadpole Galaxy UGC10214 UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_055 | Mice Galaxies NGC4676 UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_056 | Red Spider Nebula UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_057 | Carina Nebula Multi Scale UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_058 | M42 Orion Nebula UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
+| ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
 | ⚠ | PAPER_061 | Nuclear BEC Formation UQFF |
 | ⚠ | PAPER_062 | Widom Larsen LENR UQFF |
 | ⚠ | PAPER_063 | F U Bi i Integral UQFF |
