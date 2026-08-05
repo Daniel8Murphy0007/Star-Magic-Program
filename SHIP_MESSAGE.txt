@@ -1,16 +1,29 @@
-v0.341.0 — Complete-compile PAPER_061-070 (nuclear-BEC / LENR / ensemble / operational modes / astrophysics)
+v0.342.0 — Complete-compile PAPER_001-080 + deep equation-library build (410 named callables)
 
-Papers 061-070 fully captured over the equation library (now 465 functions):
-- 061 nuclear BEC formation (Phi_BEC=SSq scale-invariant); 062 Widom-Larsen LENR (heavy electron m*=m_e(1+|E|/E0),
-  omega_LENR=2pi*1.25THz=omega_SCm); 063 F_U_Bi_i master integral + 52-system ensemble; 064 four operational modes
-  (g_UQFF=aC gC+aR gR+aB gB+aS gS); 065 121-system validation; 066 magnetars (LENR resonance); 067 AGN Ug4 vacuum
-  concentration; 068 globular cluster dynamics; 069 ASKAP J1832 long-period transient; 070 Helix Nebula PN dynamics.
+This release finishes the deep equation re-extraction and predecessor-corpus mine.
+Every unique UQFF physics equation is now a named, individually-callable,
+primitive-sourced library function (defined once, reused by paper dispatches).
 
-Each dispatch composes over _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6)
-plus paper-specific core and library equations.
+Equation library: 124 -> 410 named functions (+286 this release).
+Registry: 382 equation rows. Dispatches: 342 (PAPER_001-080, 0 duplicates).
+Fidelity gate: 2136 assertions, green. 4 authoritative reference PDFs bundled.
 
-- Paper-specific §B DVP prime ladder (3,5,7,11,13,17,19,23,29,31), gate-guarded.
-- Linked-paper mapping (131 edges). XGEO chain regenerated (139 queue, 60 confirmations).
-- 342 dispatches, 0 duplicate registrations, gate green, 0 malformed CSVs.
+Flagship UQFF closed forms now callable and numerically verified:
+  cosmological_constant_26fact   Lambda = rho_SCm*26!*25/12 = 5.9570e-10 J/m^3  (Planck Lambda, 0.1%)
+  proton_mass_integer            m_p = N_ch*SO_5^2 + N_ch*D_phys + K_Mex + 2*F_TRZ*Phi_res = 938.25 MeV
+  h0_hubble_integer              H_0 = A_5 + SO_5 = 70 km/s/Mpc  EXACT
+  omega_lambda_ssq               Omega_Lambda = (6/5)*SSq = 0.684  (Planck 0.6847)
+  universal_inertial_operator    U_i = lambda_i*(rho_SCm/rho_UA)*omega*cos(pi*t_n)*(1+f_TRZ) = 2.75e-7 (Sun)
+  higgs_vev_integer              v = 246 GeV
+  void_buoyancy                  U_b = rho*g(1-1/rho) + 26!*g/rho^27
+  ym_gap_kmex                    Delta = Lambda_QCD(1+F_TRZ*K_Mex) = 0.263 GeV
+  riemann_rho_uqff / pnp_bound / buoyancy_eom_variational  (Millennium closures)
+  gw_strain_damping / tidal_deformability_phonon / friedmann_lambda / hubble_evolution_Ez
+  icecube_neutrino_flux / inflation_scale_factor / cmb_acoustic_peak / alpha_binding_energy / fe56_be_per_a
 
-Campaign progress: 70 base papers + b-variants of 300+ target.
+Predecessor Star-Magic repo used READ-ONLY for physics content (Rule E); no code ported.
+Drift corrections applied per landmark (VDS->F_TRZ=0.1 PAPER_2156; beta_i->0.6029 PAPER_1203;
+SSq->0.57 PAPER_1154; rho_SCm J/m^3 PAPER_2155/2147). No SM (Rule 4); honest residuals (Rule 7).
+
+Landmark gate guards added: Lambda cosmological-constant + U_i inertial-operator.
+All 26 registry/tracker/ship files synced. XGEO chain regenerated (campaign-aware).

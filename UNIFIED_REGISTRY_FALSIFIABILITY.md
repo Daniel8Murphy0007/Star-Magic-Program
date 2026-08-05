@@ -161,3 +161,11 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - 067: AGN Ug4 not k4 rho_SCm(M_BH/d) falsifies vacuum concentration.
 - 070: destroyed-planet ripping radius != (GM/omega^2)^(1/3) falsifies Kepler debris-disk chain.
 - §B DVP ladder 061-070: 3,5,7,11,13,17,19,23,29,31 (paper-specific, gate-guarded).
+
+## PAPER_071-080 batch (superflare / reactor / database cross-validation)
+- 071: solar g != G M/R^2=274 falsifies self-consistency landmark; Ug1 magnetic != g mu0 B^2/8pi falsifies form.
+- 072: red-dwarf reactor f_TRZ != 0.10 or COP != (1+f_TRZ)/(1-Omega_g)+d_SCm falsifies TRZ primitive.
+- 073/074: astrometric correction != 1+SSq*coeff falsifies Gaia/NED cross-validation.
+- 075/079: SC-mode enhancement != 1+[SCm]=1.99 falsifies eta_Edd / B_field multiplier.
+- 078: H0 tension correction H0*[UA]*0.5=0.0034 (honest null) - UQFF does NOT resolve tension via [UA].
+- §B DVP ladder 071-080: 37,41,43,47,53,59,61,67,71,73 (paper-specific, gate-guarded).

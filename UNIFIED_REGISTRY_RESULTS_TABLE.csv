@@ -52,3 +52,7 @@ heavy_electron,1+|E|/E0,1+2e11/1e11,3.0,PAPER_062,closed_form,0.0
 op_mode_g,aC gC+...,,superpos,PAPER_064,closed_form,0.0
 agn_ug4_sgra,k4 rho(M/d),,2.26e-5,PAPER_067,closed_form,0.0
 kepler_r_helix,(GM/omega^2)^(1/3),,6.17e8,PAPER_070,closed_form,0.0
+solar_g,G M/R^2,274,274,PAPER_071,closed_form,0.0
+reactor_cop,(1.10/0.9999)+0.05,,1.150,PAPER_072,closed_form,0.0
+ssq_corr,1+SSq*0.034,,1.0194,PAPER_073,closed_form,0.0
+sc_enh,1+[SCm],1.99,1.99,PAPER_075,closed_form,0.0

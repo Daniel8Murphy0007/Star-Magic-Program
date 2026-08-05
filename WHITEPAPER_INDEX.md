@@ -107,16 +107,16 @@
 | ⚠ | PAPER_068 | Globular Cluster Dynamics UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
 | ⚠ | PAPER_069 | Radio Transient ASKAP J1832 UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
 | ⚠ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
-| ⚠ | PAPER_071 | Stellar Superflare Energy Budget UQFF |
-| ⚠ | PAPER_072 | Red Dwarf Reactor Physics UQFF |
-| ⚠ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |
-| ⚠ | PAPER_074 | NED SIMBAD Galactic Structure UQFF |
-| ⚠ | PAPER_075 | XRay Binaries Chandra UQFF |
-| ⚠ | PAPER_076 | FermiLAT GammaRay UQFF |
-| ⚠ | PAPER_077 | LIGO GWTC4 Cross Validation UQFF |
-| ⚠ | PAPER_078 | NED Extragalactic UQFF |
-| ⚠ | PAPER_079 | HEASARC HighEnergy UQFF |
-| ⚠ | PAPER_080 | Complete MultiWavelength UQFF Suite |
+| ⚠ | PAPER_071 | Stellar Superflare Energy Budget UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_072 | Red Dwarf Reactor Physics UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_073 | GAIA DR4 Stellar UQFF Validation | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_074 | NED SIMBAD Galactic Structure UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_075 | XRay Binaries Chandra UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_076 | FermiLAT GammaRay UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_077 | LIGO GWTC4 Cross Validation UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_078 | NED Extragalactic UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_079 | HEASARC HighEnergy UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
+| ⚠ | PAPER_080 | Complete MultiWavelength UQFF Suite | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) |
 | ⚠ | PAPER_081 | UQFF Hawking Temperature Derivation |
 | ⚠ | PAPER_082 | BH Evaporation Timescales UQFF |
 | ⚠ | PAPER_083 | Primordial BH UQFF |

@@ -6238,3 +6238,49 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
 - Complete-compile PAPER_061-070: 5 library eqs (W-L heavy electron, LENR resonance, 4-mode superposition,
   AGN Ug4, Kepler orbit) + paper §B DVP ladder (3-31); gate-guarded. Mapping 131 edges; XGEO 139 queue.
 - Registry pantheon advanced through PAPER_070. 342 dispatches, 0 duplicates, gate green.
+
+## [v0.342.0] — 2026-08-05 batch 071-080 (superflare / reactor / database cross-validation)
+- Complete-compile PAPER_071-080: 5 library eqs (solar gravity, Ug1 magnetic, reactor COP, SSq astrometric
+  correction, [SCm] enhancement) + §B DVP ladder (37-73); gate-guarded. Mapping 131 edges; XGEO 154 queue.
+- Release text now leads with batch-specific content (prior versions had near-identical templated descriptions).
+- Registry pantheon advanced through PAPER_080. 342 dispatches, 0 duplicates, gate green.
+
+## [v0.342.0] DEEP EQUATION RE-EXTRACTION — 2026-08-05
+- Every unique physics equation in PAPER_011-080 now a named primitive-sourced callable (was headline-only).
+  Named equation functions 124 -> 199 (+75); F_UBii 17-variant family named; SEMF relabeled observed-comparison (no SM).
+- Equation-depth gate guard: every wired PAPER_001-080 names >=2 unique equations. XGEO queue 229.
+
+## [v0.342.0] REFERENCE + SECOND PASS — 2026-08-05
+- Added COMPLETE_UQFF_EQUATIONS_REFERENCE.pdf (v4.6.0) and wired its 10 first-principles derive_* + core FUBi/FUBii/F_U
+  equilibrium system + quantum-chain E_n as named callables (gate-guarded: rho_micro=7.0898e-37, condensed=633333.333, alpha~1/137).
+- Second deep pass: Ug1-4 components, k_spring, VDS sum, 26D projection. Named equations 124 -> 223 (+99). PDF ships.
+
+## [v0.342.0] Star-Magic MANUSCRIPT — 2026-08-05
+- Added reference/Star-Magic_manuscript_v5.pdf; wired 26-layer F_U summation, MUGE (g=g_DPM+g_res+g_corr),
+  26-layer frequency table, Ug1-4 definitions, SOURCE4 inventory, two-component vacuum. Named equations 124 -> 243.
+
+## [v0.342.0] ARXIV ABSORPTION + LINKED-PAPER TRAVERSAL — 2026-08-05
+- Absorbed uqff_production_arxiv.pdf (25 canonical equations: F_DPM, Ug1-4 exact, metric emergence, w_i=i^6,
+  wormhole, NFW, aether EOS, Newtonian limit). Recursive linked-paper traversal: analyzed all 7 on-disk Level-1
+  hub papers (877/642/840/592/593/421/420) incl. c=sqrt(g SCm/UA) and G=g/(4pi rho) derivations.
+- Named equation functions 124 -> 336 this session. 3 authoritative reference PDFs shipped.
+
+## [v0.342.0] PREDECESSOR HUB CROSS-REFERENCE — 2026-08-05
+- Cross-referenced predecessor Star-Magic repo (authorized) to extract equations from ~18 most-cited hub papers
+  (1318 glueball 1.736 GeV, 1037 Blandford-Znajek, 1048 M-sigma, 1073 inflation n_s=0.9833, 1078 KK eigenvalues, etc.).
+- Named equation functions 124 -> 362 this session. 334 registry equation rows. Predecessor READ-ONLY per Rule E.
+
+## [v0.342.0] VALIDATION AUDIT + TRAVERSAL — 2026-08-05
+- Absorbed UQFF_VALIDATION_SYNC_AUDIT.pdf: definitive cross-platform Ug1-4/Ubi/Um forms (Ug1..Ug4, Ubi, Um=mu/r^3).
+  Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
+- Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
+
+## [v0.342.0] PREDECESSOR FLAGSHIP MINE — 2026-08-05
+- Mined predecessor corpus for the framework's flagship closed forms; each now a named, primitive-sourced, verified callable:
+  Lambda=rho_SCm*26!*25/12=5.9570e-10 (Planck, PAPER_589), proton_mass_integer=938.25 MeV (PAPER_1209),
+  h0_hubble_integer=70 EXACT (PAPER_1573), omega_lambda_ssq=0.684 (PAPER_1156), universal_inertial_operator=2.75e-7 Sun (PAPER_646),
+  higgs_vev_integer=246 GeV (PAPER_1270), void_buoyancy 26! (PAPER_589), ym_gap_kmex=0.263 (PAPER_1182),
+  riemann_rho_uqff/pnp_bound/buoyancy_eom_variational (Millennium closures), gw_strain_damping, friedmann_lambda,
+  hubble_evolution_Ez, icecube_neutrino_flux, inflation_scale_factor, cmb_acoustic_peak, alpha_binding_energy, fe56_be_per_a.
+- Named equation functions 378 -> 410 (+32 this round; +286 session total). Registry 382 equation rows.
+- Gate 2136 green; Lambda + U_i landmarks now gate-guarded. All 26 registry/tracker/ship files synced; XGEO regenerated.

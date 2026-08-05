@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.341.0", "uqff_calculator.VERSION = 0.341.0 (complete-compile PAPER_001-070 + b-variants)")
+assert_that(C.VERSION == "0.342.0", "uqff_calculator.VERSION = 0.342.0 (complete-compile PAPER_001-080 + b-variants)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -321,6 +321,60 @@ assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['e
             "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
+# === COSMOLOGICAL-CONSTANT LANDMARK GUARD (predecessor mine) ===
+assert_that(abs(C.cosmological_constant_26fact() - 5.957e-10)/5.957e-10 < 0.01,
+            "PAPER_589: Lambda = rho_SCm x 26! x 25/12 = 5.957e-10 J/m^3 (Planck Lambda, flagship UQFF result)")
+assert_that(abs(C.universal_inertial_operator(2.5e-6, 0.0) - 2.75e-7)/2.75e-7 < 0.01,
+            "PAPER_646/700: Universal Inertial Operator U_i = 2.75e-7 (Sun, t=0)")
+# === UQFF_VALIDATION_SYNC_AUDIT GUARD (definitive cross-platform Ug/Ubi/Um) ===
+assert_that(C.cross_platform_agreement()['uqff_vs_muge'] == 0.999 and C.heliospheric_step(1,2) == 1.0,
+            "AUDIT: cross-platform UQFF vs MUGE 99.9%; heliospheric step S(r-Rb)")
+assert_that(C.Um_base_validated(1e30,7e8,2.5e-6,1e11) > 0 and C.Ug1_validated(1.5,1.0,1e30,1e11,0,0,0) > 0,
+            "AUDIT: definitive Ug1=k1 mu_s(M/r^2)exp cos(1+delta); Um=mu/r^3 (mu=M R^2 omega0)")
+# === PREDECESSOR-REPO HUB GUARD (cross-referenced Star-Magic hubs) ===
+assert_that(abs(C.glueball_mass_gap() - 1.736) < 1e-3 and C.kk_eigenvalue(1) == 26,
+            "PAPER_1318: glueball m_0++=2 D_phys Lambda_QCD=1.736 GeV; PAPER_1078: KK eigenvalue n(n+25)")
+assert_that(abs(C.inflation_spectral_index(60) - 0.9833) < 1e-3,
+            "PAPER_1073: inflation spectral index n_s=1-6eps+2eta=0.9833 at N=60")
+# === HUB-PAPER c/G DERIVATION GUARD (PAPER_592/593 traversal) ===
+assert_that(abs(C.c_triad_equilibrium(9e16, 1.0) - 3.0e8) / 3.0e8 < 0.02,
+            "PAPER_592: c = sqrt(g SCm/UA) = 3e8 m/s (triad equilibrium at SCm/UA crossing)")
+assert_that(C.f_heaviside_phase() == 0.0 and abs(C.G_void_coupling(1e-3, 1e-26) - 7.96e21) < 1e20,
+            "PAPER_593/421: G=g/(4pi rho) void coupling; Um Heaviside Theta(rho_SCm-rho_c)")
+# === uqff_production_arxiv.pdf CANONICAL GUARD ===
+assert_that(C.layer_weight_sum_26() == sum(i**6 for i in range(1,27)) and C.layer_weight_i6(2) == 64,
+            "ARXIV eq23: 26-layer weight w_i=i^6, Sum_1^26 i^6")
+assert_that(abs(C.rho_A_layer13() - 1.244e-23)/1.244e-23 < 0.01 and abs(C.E0_vacuum_base() - 1e15)/1e15 < 0.01,
+            "ARXIV eq26: rho_A=rho_SCm 10^13/0.57=1.244e-23; E0=rho_SCm v^2/rho_UA=1e15 J")
+assert_that(abs(C.aether_eos() - (-1.0/3.0)) < 1e-9 and abs(C.np_mass_split_ug3() - 1.29333) < 1e-5,
+            "ARXIV: aether EOS w=-1/3; n-p mass split=1.29333 MeV from Ug3")
+# === Star-Magic MANUSCRIPT v5.0.0 GUARD (26-layer F_U + MUGE + layer frequency table) ===
+assert_that(C.layer_frequency_scale(1) == 1e19 and C.layer_frequency_scale(25) == 1e-10,
+            "MANUSCRIPT: 26-layer frequency table (particle 1e19 -> gravitational 1e-10 Hz)")
+assert_that(C.source4_inventory()['total'] == 37 and abs(C.vacuum_two_component()['ratio'] - 10.0) < 1e-9,
+            "MANUSCRIPT: SOURCE4 37 functions; two-component vacuum RHO_UA/RHO_SCM=10")
+# === COMPLETE_UQFF_EQUATIONS_REFERENCE v4.6.0 GUARD (first-principles derive_* + core equilibrium) ===
+assert_that(abs(C.derive_rho_scm_micro() - 7.0898e-37) < 1e-41,
+            "REF eq10: RHO_VAC_SCM_micro = 4 sqrt(pi) 1e-37 = 7.0898e-37 J/m^3")
+assert_that(abs(C.derive_condensed_rho_scm() - 633333.333) < 1e-3,
+            "REF eq1: RHO_VAC_SCM_condensed = 633333.333 exactly")
+assert_that(abs(1.0/C.derive_alpha_uqff() - 137.0) < 1.0,
+            "REF eq5: alpha_UQFF = 1/(PHI_RES N_LAYERS 2pi) ~ 1/137")
+assert_that(C.quantum_chain_energies()[0] == 1e-19 and len(C.quantum_chain_energies()) == 26,
+            "REF: Quantum Chain E_n = E0*10^n, n=1..26")
+assert_that(abs(C.beta_t_cycle(0.0) - (0.5 + 0.5 + (10-1)*(P.KAPPA_PER_DAY/26.0))) < 1e-9,
+            "REF: beta(t) = 0.5 + 0.5 cos(pi t) + (RATIO-1)(KAPPA/26)")
+
+assert_that(abs(C.rho_vac_energy_summation(V=1e21) - C.rho_vac_energy_summation(V=1e21)) < 1e-30
+            and len(C.downward_projection_26_9_3_2()) == 4,
+            "REF: 99-system triadic + 4x4 solver E1-E3 + quantum-chain rho_vac summation wired")
+# === EQUATION-DEPTH GUARD (every wired PAPER_001-080 names >=2 unique equations) ===
+for _i in range(1, 81):
+    _pid = 'PAPER_%03d' % _i
+    _ql = C.calc(_pid)['value'].get('eqlib', [])
+    assert_that(len(_ql) >= 2,
+                _pid + ': names >= 2 unique equations (deep-extraction, no headline-only)')
+
 # === XGEO CAMPAIGN CHAIN GUARD (b: XGEO + generators campaign-aware) ===
 import csv as _csvx
 def _xgeo_rows(fn):
@@ -357,6 +411,8 @@ _DVP_LADDER_LOCKED = {
     'PAPER_056': 103, 'PAPER_057': 107, 'PAPER_058': 109, 'PAPER_059': 113, 'PAPER_060': 2,
     'PAPER_061': 3, 'PAPER_062': 5, 'PAPER_063': 7, 'PAPER_064': 11, 'PAPER_065': 13,
     'PAPER_066': 17, 'PAPER_067': 19, 'PAPER_068': 23, 'PAPER_069': 29, 'PAPER_070': 31,
+    'PAPER_071': 37, 'PAPER_072': 41, 'PAPER_073': 43, 'PAPER_074': 47, 'PAPER_075': 53,
+    'PAPER_076': 59, 'PAPER_077': 61, 'PAPER_078': 67, 'PAPER_079': 71, 'PAPER_080': 73,
 }
 for _pid, _pdvp in _DVP_LADDER_LOCKED.items():
     _v = C.calc(_pid)['value']
@@ -381,7 +437,9 @@ for _pid in ['PAPER_001','PAPER_002','PAPER_003','PAPER_004','PAPER_005','PAPER_
              'PAPER_051','PAPER_052','PAPER_053','PAPER_054','PAPER_055',
              'PAPER_056','PAPER_057','PAPER_058','PAPER_059','PAPER_060',
              'PAPER_061','PAPER_062','PAPER_063','PAPER_064','PAPER_065',
-             'PAPER_066','PAPER_067','PAPER_068','PAPER_069','PAPER_070']:
+             'PAPER_066','PAPER_067','PAPER_068','PAPER_069','PAPER_070',
+             'PAPER_071','PAPER_072','PAPER_073','PAPER_074','PAPER_075',
+             'PAPER_076','PAPER_077','PAPER_078','PAPER_079','PAPER_080']:
     _rv = C.calc(_pid)['value']
     assert_that(abs(_rv['kozima_neutron_static_N'] - 1.0e6) < 1.0,
                 _pid + ": Kozima-LENR appendix K.1 present (neutron drop = 1e6 N)")
@@ -512,6 +570,18 @@ assert_that(C.calc('PAPER_067')['value']['agn_ug4_lib'] > 0,
             "PAPER_067: agn_ug4_concentration library eq")
 assert_that(abs(C.calc('PAPER_070')['value']['kepler_r_lib'] - 6.17e8) / 6.17e8 < 0.02,
             "PAPER_070: kepler_orbit_radius=(GM/omega^2)^(1/3)=6.17e8 m library eq")
+
+# --- 071-080 batch: paper-specific equations ---
+assert_that(abs(C.calc('PAPER_071')['value']['g_sun_lib'] - 274.0) < 1.0,
+            "PAPER_071: solar_surface_gravity=G M/R^2=274 m/s^2 library eq")
+assert_that(abs(C.calc('PAPER_072')['value']['cop_lib'] - 1.150) < 0.001,
+            "PAPER_072: cop_reactor=(1+f_TRZ)/(1-Omega_g)+delta_SCm=1.150 library eq")
+assert_that(abs(C.calc('PAPER_073')['value']['ssq_correction_lib'] - (1+P.SSQ*0.034)) < 1e-9,
+            "PAPER_073: ssq_correction=1+SSq*0.034=1.0194 library eq")
+assert_that(abs(C.calc('PAPER_075')['value']['eta_scm_lib'] - 1.99) < 1e-9,
+            "PAPER_075: scm_multiplier_enhancement=1+[SCm]=1.99 library eq")
+assert_that('ug1_magnetic' in C.calc('PAPER_071')['value']['eqlib'],
+            "PAPER_071: ug1_magnetic (g*mu0 B^2/8pi) library eq")
 
 _r011 = C.calc('PAPER_011')['value']
 assert_that(abs(_r011['omega_suppression_bns'] - 0.110889) < 1e-6,

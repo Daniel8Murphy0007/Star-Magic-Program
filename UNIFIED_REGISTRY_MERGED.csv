@@ -5,3 +5,4 @@ kozima_lenr_appendix,12,PAPER_001..015,K.1-K.6 neutron drop->polylog,kozima_neut
 cosmogenesis_lagrangian,12,PAPER_001..015,L_cosmo+V_phi_NS+E-L EOM,L_cosmo;V_phi_NS;euler_lagrange_eom
 dvp_prime_ladder_015b_023,10,PAPER_015b..023,paper-specific §B.2 prime ladder 53-89 (NOT generic 3),p_DVP 53;59;61;67;71;73;79;83;89
 dvp_prime_ladder_024_030,10,PAPER_024..030,§B.2 prime ladder 97-113,p_DVP 97;101;103;107;109;113;2
+dvp_prime_ladder_071_080,10,PAPER_071..080,§B.2 prime ladder 37-73,p_DVP 37;41;43;47;53;59;61;67;71;73

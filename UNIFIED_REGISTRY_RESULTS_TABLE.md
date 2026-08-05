@@ -110,3 +110,6 @@ Added closed-form rows (see UNIFIED_REGISTRY_RESULTS_TABLE.csv): tidal_Lambda_NS
 f_SCm_suppression, qnm_freq_uqff, stochastic_Omega_bns (D^2), peters_tau_ext (1/D^2), magnetar_edot_supp
 (D_SCm^2), pbh_A_damp ((D_phys-1)/SO_5=0.3 primitive), H0_uqff_bias (1.07), f_isco_observer, D_eff_beat.
 All primitive-sourced; residuals honest (0.0-0.35%).
+
+## Update 2026-08-05 — closed forms through PAPER_080 (batch 071-080)
+Added: solar_surface_gravity (274 m/s^2), ug1_magnetic, cop_reactor (1.150), ssq_correction (1.0194), scm_multiplier_enhancement (1.99).

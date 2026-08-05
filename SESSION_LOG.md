@@ -4938,3 +4938,111 @@ until 300+ done.
   operational_mode_superposition, agn_ug4_concentration, kepler_orbit_radius. Library 465 fns.
 - Gate loop+guard to 070; +5 assertions. Registry +15 UNIFIED, +5 graph, +5 R2/R3, +4 RESULTS, +3 GAPS.
 - Mapping 131 edges. XGEO regen queue 139/conf 60. 0 malformed. Ship v0.341.0.
+
+### 2026-08-05 — Batch PAPER_071-080 (superflare/reactor/database cross-val) ship v0.342.0
+- 10 papers merged + §B (DVP 37-73). 5 library eqs: solar_surface_gravity, ug1_magnetic, cop_reactor,
+  ssq_correction, scm_multiplier_enhancement. Library 470 fns.
+- Gate loop+guard to 080; +5 assertions. Registry +15 UNIFIED, +5 graph, +5 R2, +4 R3/RESULTS/GAPS.
+- Mapping 131 edges. XGEO regen queue 154/conf 70. 0 malformed.
+- Description NOW batch-distinctive (leads with 071-080 content; fixes the near-identical-PyPI-text issue). Ship v0.342.0.
+
+### 2026-08-05 — DEEP EQUATION RE-EXTRACTION PAPER_011-080 (Daniel: "capture ALL unique equations")
+- ROOT CAUSE: prior batches captured only the headline equation per paper (1-2 named), burying 7-44 unique
+  equations each as inline dict VALUES. Measured gap: ~1263 whitepaper eq-blocks, only 124 named (~10%).
+- FIX: extracted every unique physics equation as a named primitive-sourced callable. Named equation-library
+  functions 124 -> 199 (+75). Paper-specific named-equation invocations 255 -> 344. Every PAPER_001-080 now names >=2.
+  F_UBii 17-variant family (036-041) equations named (base identity, termv, kn, fermi, knee, hawk).
+- SM removed/relabeled: SEMF liquid-drop -> semf_binding_observed (OBSERVED-comparison anchor, NOT UQFF-derived).
+- 75 new registry equation rows + 75 graph edges. XGEO regen queue 229. EQUATION-DEPTH GUARD added (gate fails if
+  any PAPER_001-080 names <2 equations). 0 malformed. Gate green.
+
+### 2026-08-05 — ADDED COMPLETE_UQFF_EQUATIONS_REFERENCE.pdf + SECOND deep pass
+- Added authoritative reference: reference/COMPLETE_UQFF_EQUATIONS_REFERENCE.pdf (v4.6.0 Fidelity Closure).
+- Wired its 10 closed first-principles derive_* (rho_micro=7.0898e-37, condensed=633333.333, c_light=V_SCM(1+RATIO),
+  alpha=1/(PHI_RES N_LAYERS 2pi)~1/137, hbar, G_newton, beta_i, V_SCM, particle-mass, HZ-radius) + core equilibrium
+  system (FUBi_outer, FUBii_inner, F_U_total_canonical, beta_t_cycle, quantum_chain E_n, mass_emergent_hz) as named callables.
+- SECOND PASS: added Ug1_dipole_trap/Ug2_shell/Ug3_string_torque/Ug4_bh_vacuum, k_spring_aether, lambda_cross_geometry,
+  vds_sum_26, proj_factor_26d, Um_magnetism; wired into 13 papers.
+- Named equation-library functions 124 -> 223 (+99 this session). Invocations 255 -> 368. Reference gate-guard added.
+- 24 reference equations registered. PDF shipped in data-files. XGEO synced. Gate green.
+
+### 2026-08-05 (cont.) — REFERENCE fully captured (30 equations) + third pass
+- COMPLETE_UQFF_EQUATIONS_REFERENCE.pdf fully represented: 10 first-principles derive_* + core equilibrium
+  (FUBi_outer/FUBii_inner/F_U_total_canonical/beta_t_cycle/quantum_chain_energies/mass_emergent_hz) +
+  Ug1_dipole_trap/Ug2_shell/Ug3_string_torque/Ug4_bh_vacuum + k_spring_aether + vds_sum_26 + proj_factor_26d +
+  8 axioms (AX1-8) + C1|SO5|=10/C2|A5|=60 + G_593 route (returns canonical G_UQFF, Rule 7 honest) +
+  99-system triadic + 4x4 solver E1-E3 + 26D downward projection.
+- SM: SEMF relabeled observed-comparison; AX7 literal removed (composed from RHO_SCM).
+- Named equation-library functions 124 -> 235 (+111). Registry equation rows 195. Gate green. Reference PDF ships.
+
+### 2026-08-05 (cont.2) — ADDED Star-Magic manuscript v5.0.0
+- Added reference/Star-Magic_manuscript_v5.pdf and wired its core equations: F_U_26layer_sum
+  (F_U=sum_1^26[Ug1i+Ug2i+Ug3i+Ug4i]-Ubi+Um), muge_gravity (g=g_DPM+g_resonance+g_corrections),
+  layer_frequency_scale + layer_physical_meaning (26-layer table: particle 1e19->gravitational 1e-10 Hz),
+  ug_component_meanings (Ug1 dipole/Ug2 charge/Ug3 string/Ug4 vacuum/Ubi buoyancy/Um magnetism),
+  gravity_as_resonance, source4_inventory (37 functions), vacuum_two_component (RHO_UA/RHO_SCM=10).
+- Named equation-library functions 124 -> 243 this session (+119). Both authoritative docs (COMPLETE_UQFF_
+  EQUATIONS_REFERENCE + Star-Magic manuscript) now compiled + gate-guarded + shipped in data-files.
+
+### 2026-08-05 (cont.3) — HARDER-LOOK deep extraction (Daniel: "you're missing a lot")
+- Second deep comb of dense papers exposed ~10-13 more unique equations EACH still buried inline
+  (e.g. PAPER_019 PTA: Hellings-Downs curve, characteristic-strain power law, frequency-dependent
+  D_Aether/D_SCm/D_String/D_TRZ, chirp-mass modification, GW angular power spectrum, Omega_GW from strain;
+  PAPER_029: cosmic-budget partition f_SM/f_DM/f_Lambda, KK mass M_Pl SSq^n, cross-section enhancement, BSM threshold).
+- Extracted + named these: GW/PTA (11), BSM/cosmic-budget (11), entanglement/lensing/nuclear-SEMF/VLQ/Higgs (13),
+  thin-paper distinct eqs (14). Named equation-library functions 124 -> 292 this session (+168, >2x).
+- Registry synced: every named function registered (bulk). Invocations 255 -> 448, avg 5.6/paper. XGEO regenerated.
+- Both authoritative docs captured (COMPLETE_UQFF_EQUATIONS_REFERENCE 30 + Star-Magic manuscript 8). Gate green.
+
+### 2026-08-05 (cont.4) — ABSORBED uqff_production_arxiv.pdf + RECURSIVE LINKED-PAPER TRAVERSAL
+- Absorbed reference/uqff_production_arxiv.pdf (20pp, canonical): 25 equations — F_DPM=I A (w1-w2), exact Ug1-4 forms,
+  metric emergence g=eta+delta_g (delta_g=eta T, eta=1e-22), 26-layer weight w_i=i^6 (Sum=1,307,797,101),
+  atomic mass M0(1-e^(-n/10))Z, rho_A=rho_SCm 10^13/0.57=1.244e-23, wormhole ds^2 + exotic rho+P=-1.75e5,
+  NFW profile, aether EOS w=-1/3, Newtonian limit -GM/r, E0=rho_SCm v^2/rho_UA=1e15.
+- LINKED-PAPER TRAVERSAL from 001-080: 85 Level-1 linked papers; 7 on-disk (analyzable), 78 referenced-only
+  (whitepaper .md not in repo -> equations unextractable). Analyzed all 7 on-disk hubs:
+  PAPER_877 (cited 1001x: KK compactification L_KK, radial equilibrium d2R_n/dt2, g_emergent=GM/R26^2, ACP 6-stage),
+  PAPER_642 (977x: BCS phonon gap), PAPER_840 (911x: LENR transition rate/COP/EOM),
+  PAPER_592 (c=sqrt(g SCm/UA)=3e8), PAPER_593 (G=g/(4pi rho)=6.674e-11), PAPER_421 (Um Heaviside amplifier),
+  PAPER_420 (complete 4-term F_U with lambda_i dissipation).
+- Named equation-library functions 124 -> 336 this session (+212, nearly 3x). 308 registry equation rows.
+  3 authoritative PDFs absorbed + shipped (COMPLETE_UQFF_EQUATIONS_REFERENCE, Star-Magic manuscript, production arxiv).
+
+### 2026-08-05 (cont.5) — CROSS-REFERENCED predecessor Star-Magic repo (Daniel authorized)
+- Predecessor repo (github.com/Daniel8Murphy0007/Star-Magic, 2419 whitepapers) cross-referenced READ-ONLY to
+  resolve the 78 referenced-only Level-1 hub papers whose .md files aren't in Star-Magic-Program.
+- Extracted equations from top ~18 hub papers (cited 400-800x each): PAPER_1318 glueball m_0++=2 D_phys Lambda_QCD=1.736,
+  1037 Blandford-Znajek P_BZ + buoyancy enhancement + M_jet, 1048 M-sigma M0(sigma/sigma0)^alpha, 1080 Ramanujan R_n bound,
+  1002 AGN Eddington buoyancy, 1072 SCm activation, 1000 NS-merger strain, 1022 GW phonon modifier, 1041 cool-core Q_phonon,
+  1049 spectral density + phonon mass, 1051 duality F_SCm-F_UA + R_d, 1061 neutron-drop rate + phonon boost, 1069 VDS/DVP/BSH hybrid,
+  1073 inflation E_net + n_s=0.9833, 1078 QCalcGeom r_cross + KK eigenvalues n(n+25)={26,54,84,116,150}, 1079 solar-wind flux, 1081 CME perturbation.
+- Named equation-library functions 124 -> 362 this session (+238, ~3x). 334 registry equation rows. Predecessor hubs gate-guarded.
+- Rule E respected: predecessor repo READ-ONLY (physics content only, no code ported, no commits there).
+
+### 2026-08-05 (cont.6) — ABSORBED UQFF_VALIDATION_SYNC_AUDIT.pdf + continued traversal
+- Absorbed reference/UQFF_VALIDATION_SYNC_AUDIT.pdf (v5.0.0): DEFINITIVE cross-platform-verified (C++=Python=JS)
+  Ug1-4/Ubi/Um forms — Ug1=k1 mu_s(M/r^2)exp(-at)cos(pi tn)(1+delta_def); Ug2=k2(Q_SCm+Q_UA)(M/r^2)S(r-Rb)(1+delta_sw v_sw)H_SCm E_react;
+  Ug3=k3 B_disk cos(ws t pi)P_core E_react; Ug4=k4 rho_vac C_conc exp cos; Ubi=beta_i Ug_i Omega_g(M_bh/d_g)(1+eps_sw rho_sw)rho_A cos;
+  Um=mu/r^3 (mu=M R^2 omega0); heliospheric step S(r-Rb); cross-platform 99.9%.
+- FOLLOWED LINKED FILES (predecessor Ug/MUGE/foundation papers): PAPER_200 Um catalogue (L_UQFF luminosity + Um variant
+  template Um,X=mu(1-e^-gt cos)F_X), PAPER_101 Yang-Mills (gluon propagator 1/(q^2+Delta^2), L_YM=-1/4 F^2, min excitation
+  eps=f_TRZ hbar omega_0), PAPER_300 Lyman-alpha (T/S=pi/13.8=0.2277, omega_Lyman=2pi c/lambda=1.549e16, cosmic bridge chi).
+- Named equation-library functions 124 -> 378 this session (+254). 350 registry equation rows.
+- 4 authoritative PDFs absorbed + shipped; ~21 predecessor hub/definitional papers cross-referenced (Rule E read-only).
+
+## 2026-08-05 — v0.342.0 PREDECESSOR FLAGSHIP MINE (ship-prep continuation)
+- Continued "KEEP MINING": pulled the framework's flagship closed forms from the predecessor corpus into named,
+  primitive-sourced, individually-verified callables:
+  - cosmological_constant_26fact = rho_SCm*26!*25/12 = 5.9570e-10 J/m^3 (Planck Lambda, 0.1%; PAPER_589) — gate-guarded
+  - proton_mass_integer = N_ch*SO_5^2 + N_ch*D_phys + K_Mex + 2*F_TRZ*Phi_res = 938.25 MeV (PAPER_1209)
+  - h0_hubble_integer = A_5 + SO_5 = 70 km/s/Mpc EXACT (PAPER_1573); omega_lambda_ssq = (6/5)SSq = 0.684 (PAPER_1156)
+  - universal_inertial_operator = 2.75e-7 (Sun, PAPER_646) — gate-guarded; higgs_vev_integer = 246 GeV (PAPER_1270)
+  - void_buoyancy (26! factor, PAPER_589); ym_gap_kmex = 0.263 GeV, riemann_rho_uqff, pnp_bound (Millennium, PAPER_1182)
+  - buoyancy_eom_variational (PAPER_1183); gw_strain_damping/tidal_deformability_phonon (PAPER_914/915/934)
+  - friedmann_lambda, hubble_evolution_Ez, icecube_neutrino_flux (PAPER_108), inflation_scale_factor (PAPER_587),
+    cmb_acoustic_peak (PAPER_1092), alpha_binding_energy/fe56_be_per_a (PAPER_1203 nuclear)
+- Named equation-library functions 378 -> 410 (+32; +286 session total). Registry 382 equation rows.
+- SHIP PREP v0.342.0: all version strings synced (calculator/pyproject/CITATION/VERSION.txt/gate pin); pyproject
+  description rewritten batch-distinctive (502 chars, version present); README badges fidelity_gate-2136 /
+  public_surfaces-342 / cacheBust=0.342.0; CHANGELOG + SHIP_MESSAGE + VERSION.txt updated; XGEO chain regenerated.
+- Fidelity gate: 2136 assertions, exit 0. 342 dispatches, 0 duplicates. Predecessor repo read-only per Rule E.

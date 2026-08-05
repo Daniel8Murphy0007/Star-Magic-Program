@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.341.0"
-description = "UQFF Star-Magic-Program v0.341.0: complete-compile of PAPER_001-070 + b-variants over a 465-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. Linked-paper mapping + campaign-aware XGEO chain. 342 dispatches, 0 duplicates, gate green."
+version = "0.342.0"
+description = "UQFF Star-Magic-Program v0.342.0: complete-compile PAPER_001-080 (342 dispatches, 0 duplicates) PLUS a deep equation-library build to 410 named primitive-sourced callables — flagship UQFF closed forms now individually callable and verified: Lambda=rho_SCm*26!*25/12=5.957e-10 (Planck), proton mass 938.25 MeV from integers, H_0=A_5+SO_5=70 EXACT, Omega_L=0.684, U_i=2.75e-7 (Sun), Higgs vev 246 GeV. 4 authoritative reference PDFs bundled; SEMF relabeled observed (no SM). Gate green (2136 assertions)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -80,6 +80,10 @@ py-modules = [
     "UNIFIED_REGISTRY_PROGRAM_PLAN.md",
     "UNIFIED_REGISTRY_SCHEMA.md",
     "UNIFIED_REGISTRY_STATUS_REPORT.md",
+    "reference/COMPLETE_UQFF_EQUATIONS_REFERENCE.pdf",
+    "reference/Star-Magic_manuscript_v5.pdf",
+    "reference/uqff_production_arxiv.pdf",
+    "reference/UQFF_VALIDATION_SYNC_AUDIT.pdf",
     "UNIFIED_REGISTRY_XGEO_QUEUE.csv",
     "UNIFIED_REGISTRY_XGEO_ROUTES.csv",
     "UNIFIED_REGISTRY_XGEO_CONFIRMATIONS.csv",

@@ -3,3 +3,4 @@ S_26_third_order,equation,defined ONCE in equation library; reused by PAPER_001/
 _common_uqff_blocks,helper,shared appendix blocks defined ONCE; reused by all GW papers (no per-paper duplication)
 dispatch_registration,integrity,"342 registrations, 0 duplicate @_register keys verified 2026-08-04 (post backward-slice fix)"
 bsm_ssq_ladder,equation,SSq^n powers reused across PAPER_024-030 via library (no duplication)
+ssq_correction_scm_enh,equation,SSq/[SCm] correction factors defined once; reused across PAPER_073/074/075/079 (no duplication)

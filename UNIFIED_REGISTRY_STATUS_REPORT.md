@@ -99,3 +99,7 @@ FALSIFIABILITY — all advanced through PAPER_015. 0 malformed CSVs.
 Papers at complete-compile depth now: PAPER_001-023 + b-variants (32 dispatches). 13 new paper-specific library
 equations (entanglement/redshift/aether-noise/PTA/cosmic-ray/lensing/string-compactification/tau-g2). Registry R0
 745 rows, 31 R2 sectors. 342 dispatches, 0 duplicates. Gate green. NOT SHIPPED (300+ mandate).
+
+## 2026-08-05 — batch PAPER_071-080 complete-compile (v0.342.0)
+Papers at complete-compile depth: PAPER_001-080 + b-variants. 470-fn equation library. 342 dispatches, 0 duplicates.
+Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping through PAPER_080. Gate green (2116 assertions).
