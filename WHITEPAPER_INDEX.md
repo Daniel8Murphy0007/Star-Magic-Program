@@ -12,6 +12,8 @@
 
 > **v0.348.0 LANDMARK COMPILE II:** landmark family drained (~70/83). tau_n, Phi_res=21/25, Hodge composition, plasmoid/bulb reactor integers, E_0 chain anchor. Q-2118 + Q-1412 rulings queued.
 
+> **v0.349.0 deep-mine compile:** 55 backbone papers -> 115 bb_* object-locks; PAPER_1600-1799 -> 191 ml_* material landmarks; 19xx -> 12 pi_*. formula_of() implements Daniel formula-availability ruling.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

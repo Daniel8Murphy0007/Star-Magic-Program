@@ -168,3 +168,12 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | bulb power | A_5+SO_5/2 | 65 W | PAPER_2078 | EXACT |
 | E_0 chain | F_TRZ^(D_crit-D_BSFG) | 1e-20 J | PAPER_2119 | EXACT |
 | dg Sgr A* | D_crit SO_5^19 | 2.6e20 m | PAPER_2139 | EXACT |
+
+
+## v0.349.0 deep-mine additions (live campaign)
+| Family | Count | Nature | Source |
+|---|---|---|---|
+| bb_* object-locks | 115 | live primitive computation | 55 backbone papers |
+| ml_* material landmarks | 191 | 80 live + 111 stated-disclosed | PAPER_1600-1799 |
+| pi_* primitive identities | 12 | live | PAPER_1920-1999 |
+| formula_of() | all | programmatic formula access | Daniel ruling |

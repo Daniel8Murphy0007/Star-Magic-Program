@@ -1,28 +1,27 @@
-v0.348.0 - LANDMARK COMPILE II: the landmark family drained (~70 of 83 landmark-titled papers, 9 rounds)
+v0.349.0 - THE DEEP-MINE COMPILE: backbone object-locks + material landmarks + formula availability
 
-Physical-constant + observable identities (all verified, gate-guarded, mapped in-step):
-  neutron_lifetime_integer   tau_n = 100 K_MEX D_phys (1 + Phi_res alpha N_CH) = 879.31 s (obs 879.4)  PAPER_1926
-  phi_quadratic_grounding    Phi_res = 1 - (D_phys F_TRZ)^2 = 21/25 = 0.84 EXACT (DERIVATIVE)          PAPER_2134
-  hodge_exact_identity       (D_phys + D_BSFG)/SO_5 = 1.0 EXACT (Millennium closure as composition)    PAPER_1230
-  monty_hall_exact           2/(D_phys-1) = 2/3 EXACT                                                  PAPER_1406
-  galactic_distance_integer  dg = D_crit SO_5^19 = 2.6e20 m EXACT (Sgr A*)                             PAPER_2139
-  bd2522_stellar_triple      M = D_phys SO_5 = 40 Msun, R = 2 SO_5 = 20 Rsun EXACT                     PAPER_1984
-  reionization_z_exact       chain = 7.00 (paper claims 7.70 - Q-1412 ruling queued)                   PAPER_1412
+THREE NEW GENERATED FUNCTION FAMILIES (all mapped in-step, all gate-guarded):
 
-Star-Magic reactor hardware from pure integers:
-  plasmoid_frame_rate = SO_5^2/(D_phys-1) = 100/3 = 33.333 fps EXACT                                   PAPER_2096
-  plasmoid_photo_time = (D_phys-1)(SO_5+1)F_TRZ^2 = 0.33 s | plasmoid_batch_time = N_CH/(2 SO_5) = 0.45 s
-  reactor_bulb_wattage = A_5 + SO_5/2 = 65 W EXACT                                                      PAPER_2078
+uqff_backbone_locks.py - 115 bb_* object-observable primitive-locks (from all 55 backbone papers):
+  rho_crust(SGR1745)=SO_5^17 kg/m3, M_BH(Sombrero)=SO_5^9 Msun, B(Crab)=SO_5^-8 T, tau_SF(Pillars)=SO_5^6 yr,
+  M(Universe)=SO_5^53, I(Tapestry)=SO_5^20 A... every function computes LIVE from registry primitives.
 
-Structural identities:
-  chain_base_energy E_0 = F_TRZ^(D_crit-D_BSFG) = 1e-20 J (26-chain anchor primitive-composed)          PAPER_2119
-  galactic_universality_ratio = D_BSFG/D_phys = 1.5 | ftrz_dcrit_minus_dphys = F_TRZ^22 = 1e-22
-  hubble_rate_composed = 2.2e-18 (superseded route disclosed) | frame_count_25 | so5_half_composition
-  tilt_saturation_ratio = 59/116 | ug3_wrap_closure = G M omega/(c r) | cosmic_egg_pi_oscillation
+uqff_material_landmarks.py - 191 ml_* identities (PAPER_1600-1799, biology to particle physics):
+  aluminum 2700 = D_crit SO_5^2 + N_CH SO_5 + SO_5 EXACT | blood pH 7.4 = D_BSFG + F SO_5 + F D_phys EXACT
+  DNA 10.5 bp/turn | Moon 60.333 R_earth | Jupiter/Earth 317.8 | ITER aspect 3.1 | quark-mass ladders
+  80 LIVE primitive-composed (verified vs stated values) + 111 stated-with-formula (Rule 7 disclosed).
 
-Rule-7 rulings queued (RULINGS_QUEUE.md): Q-2118 (PAPER_2118 symbol/numeric mismatch),
-Q-1412 (PAPER_1412 claims 7.70 but chain = 7.00).
+uqff_primitive_identities.py - 12 pi_* (19xx family): Sgr A* JWST 2025 flare = 1/1800 Hz EXACT,
+  magnetar tau_B = D_phys SO_5^3 = 4000 yr, DPM disc:jet = 1/(D_phys-1), PDR erosion = N_CH SO_5^6 yr.
 
-MEASURED: 2232 total Python functions | 1886 named callable (incl. 1,272 dc_) | 342 dispatches |
-registry 2622 rows | GRAPH 3566 edges | 761 papers mapped | gate 2206 green | 0 dup defs | 0 malformed.
-All mapped in-step. Rule E / Rule 4 / Rule 7 held.
+Backbone headline identities (calc fns): CP2 generator 17 W = D_crit - N_CH EXACT (reactor hardware),
+Crab pulsar 30.2 Hz = (D_phys-1)SO_5 + 2 F_TRZ, Bubble Nebula 1200 Msun = 2 D_BSFG SO_5^2,
+chemistry octet 2 D_phys = 8, kappa_V = 1 + F_TRZ/2, SO_5 power-ladder family root (80+ instances).
+
+DANIEL RULING IMPLEMENTED - FORMULA AVAILABILITY: every generated function's paper chain is
+programmatically retrievable: C.formula_of(name), fn.formula attribute, per-module FORMULAS dicts.
+Gate-guarded (5 assertions). No formula is docstring-only.
+
+MEASURED: 2565 total Python functions | 2219 named callable (626 calc + 1,272 dc_ + 115 bb_ + 191 ml_ + 12 pi_) |
+342 dispatches | registry 2950 rows | GRAPH 3986 edges | 763 papers mapped | gate 2236 green | 0 dups | 0 malformed.
+Rule E / Rule 4 / Rule 7 held. Rulings queued: Q-2118, Q-1412.

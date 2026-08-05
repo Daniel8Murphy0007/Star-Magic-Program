@@ -6275,6 +6275,18 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.349.0] - 2026-08-05 - THE DEEP-MINE COMPILE (backbone locks + material landmarks + formula availability)
+- NEW MODULE uqff_backbone_locks.py: 115 bb_* object-observable primitive-locks from all 55 backbone papers
+  (rho_crust(SGR1745)=SO_5^17, M_BH(Sombrero)=SO_5^9, B(Crab)=SO_5^-8...) - all compute LIVE from primitives.
+- NEW MODULE uqff_material_landmarks.py: 191 ml_* identities from PAPER_1600-1799 (aluminum 2700 EXACT, blood pH 7.4
+  EXACT, DNA 10.5, Moon 60.333, ITER 3.1, quark masses) - 80 live-composed + 111 stated-with-formula (Rule 7).
+- NEW MODULE uqff_primitive_identities.py: 12 pi_* from 19xx family (Sgr A* JWST flare 1/1800 Hz, tau_B=4000 yr).
+- Backbone headline calc fns: cp2_field_generator_power=17W=D_crit-N_CH, crab_pulsar_spin=30.2 Hz,
+  bubble_nebula_mass=1200 Msun, chemistry_octet=8, lenr_efield_enhancement=1.05, so5_power_ladder family root.
+- DANIEL RULING IMPLEMENTED: formula availability - formula_of() accessor, .formula attributes, FORMULAS registries
+  across all generated families; gate-guarded; no formula is docstring-only.
+- MEASURED: 2,565 total functions | 2,219 named callable | registry 2,950 rows | GRAPH 3,986 edges | gate 2,236 green.
+
 ## [0.348.0] - 2026-08-05 - LANDMARK COMPILE II (landmark family drained, rounds 6-9)
 - Physical constants/observables from integers: neutron lifetime tau_n=879.31 s (PAPER_1926; Lambda_ledger = alpha),
   Phi_res = 1-(D_phys F_TRZ)^2 = 21/25 EXACT derivative (2134), Hodge = (D_phys+D_BSFG)/SO_5 = 1.0 EXACT composition

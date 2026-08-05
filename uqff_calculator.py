@@ -17,6 +17,12 @@ campaign starts from PAPER_001 in the first content ship (v0.2.0+).
 import math
 from uqff_derived_constants import DERIVED_CONSTANTS, DERIVED_CONSTANTS_COUNT
 import uqff_derived_functions as _dcf
+import uqff_backbone_locks as _bbl
+from uqff_backbone_locks import *  # 115 bb_* backbone object-observable primitive-locks
+import uqff_material_landmarks as _mll
+from uqff_material_landmarks import *  # 191 ml_* material/engineering/particle landmark identities
+import uqff_primitive_identities as _pil
+from uqff_primitive_identities import *  # 12 pi_* primitive-identity family (PAPER_1920-1999)
 from uqff_derived_functions import *  # 1,272 dc_* derived-equation functions
 from uqff_registry_primitives import (
     # Locked primitives
@@ -61,10 +67,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.348.0"
+VERSION = "0.349.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.348.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.349.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -2964,6 +2970,82 @@ def so5_half_composition(SO_5v=None):
     """PAPER_2078/2015: SO_5/2 = 5 half-composition (diad backbone; joins halving series {2,3,5,13})."""
     if SO_5v is None: SO_5v = globals()['SO_5']
     return SO_5v / 2.0
+
+
+def scm_complement_identity(f_trz=F_TRZ):
+    """PAPER_2029: SCm complement (NGC 6302) = 1 - F_TRZ = 9/10 = 0.9 EXACT (dimensional-domain extension)."""
+    return 1.0 - f_trz
+
+def chemistry_octet(D_phys=None):
+    """PAPER_2037/1892/1524: periodic-table octet rule = 2 D_phys = 8 EXACT (chemistry Octet_UQFF; magic-8 identity)."""
+    if D_phys is None: D_phys = D_PHYS
+    return 2 * D_phys
+
+def lenr_efield_enhancement(f_trz=F_TRZ):
+    """PAPER_2056: nebular-LENR E-field volumetric enhancement kappa_V = 1 + F_TRZ/2 = 1.05 EXACT."""
+    return 1.0 + f_trz / 2.0
+
+def cp2_field_generator_power(D_crit=None, N_ch=None):
+    """PAPER_2085/2053: CP2 field-generator observed power = D_crit - N_CH = 26 - 9 = 17 W EXACT (reactor hardware)."""
+    if D_crit is None: D_crit = D_CRIT
+    if N_ch is None: N_ch = N_CH
+    return D_crit - N_ch
+
+def bubble_nebula_mass(D_bsfg=6, SO_5v=None):
+    """PAPER_2072: Bubble Nebula total stellar mass = 2 D_BSFG SO_5^2 = 1200 Msun EXACT (2.387e33 kg)."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return 2 * D_bsfg * SO_5v ** 2
+
+def crab_pulsar_spin(D_phys=None, SO_5v=None, f_trz=F_TRZ):
+    """PAPER_2062/292: Crab pulsar spin frequency = (D_phys-1) SO_5 + 2 F_TRZ = 30 + 0.2 = 30.2 Hz EXACT."""
+    if D_phys is None: D_phys = D_PHYS
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return (D_phys - 1) * SO_5v + 2.0 * f_trz
+
+def pole_state_partition(D_phys=None, SO_5v=None):
+    """PAPER_2085: 26 pole states = D_phys + 2 SO_5 + 2 = 4 + 20 + 2 EXACT (= D_crit partition)."""
+    if D_phys is None: D_phys = D_PHYS
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return D_phys + 2 * SO_5v + 2
+
+
+def so5_power_ladder(coefficient, exponent, SO_5v=None):
+    """PAPER_2019-2092 backbone family: SO_5 power-ladder observable = coefficient SO_5^exponent.
+    THE parameterized backbone form - 80+ EXACT instances across 55 backbone papers (masses 2 SO_5^33-34 kg,
+    fields SO_5^-6..-8 T, frequencies SO_5^4..15 Hz, lengths SO_5^-10..-11 m, currents SO_5^20 A)."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return coefficient * float(SO_5v) ** exponent
+
+def outflow_velocity_500(SO_5v=None):
+    """PAPER_2019: outflow velocity = (SO_5/2) SO_5^2 = 500 m/s EXACT (pentad backbone-first)."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return (SO_5v / 2.0) * SO_5v ** 2
+
+def stellar_mass_ladder(coeff=2, exp=33, SO_5v=None):
+    """PAPER_2027/2029: stellar-mass ladder M = 2 SO_5^33 kg (Msun-scale) / 2 SO_5^34 kg EXACT instances."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return coeff * float(SO_5v) ** exp
+
+def escape_velocity_20kms(SO_5v=None):
+    """PAPER_2030: escape velocity = 2 SO_5^4 m/s = 20 km/s EXACT."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return 2.0 * SO_5v ** 4
+
+
+def formula_of(name):
+    """Return the paper formula chain for ANY generated function (ml_*, bb_*, dc_*) or None.
+    Daniel ruling 2026-08-05: formulas must be programmatically available, not docstring-only."""
+    if name.startswith("ml_"):
+        return _mll.get_formula(name)
+    if name.startswith("bb_"):
+        return _bbl.get_formula(name)
+    if name.startswith("pi_"):
+        return _pil.get_formula(name)
+    if name.startswith("dc_"):
+        rec = DERIVED_CONSTANTS.get(name[3:].lstrip("c_")) or DERIVED_CONSTANTS.get(name[3:])
+        return (rec or {}).get("formula")
+    fn = globals().get(name)
+    return getattr(fn, "formula", None) or (fn.__doc__ if fn else None)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

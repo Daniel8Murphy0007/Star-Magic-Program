@@ -205,3 +205,11 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **Plasmoid timings** (PAPER_2096): reactor camera/photo/batch observables = integer identities; falsified by
   recalibrated hardware measurements departing 100/3 fps, 0.33 s, 0.45 s.
 - **dg = 2.6e20 m** (PAPER_2139): Sgr A* distance identity vs VLBI parallax (~2.55e20 m); watch the residual.
+
+
+## v0.349.0 deep-mine falsifiable additions
+- **Object primitive-locks (115)**: each bb_* is a falsifiable claim that the object observable equals a pure
+  primitive power (e.g. B(Crab) = SO_5^-8 T); improved measurements departing the lock falsify per-object.
+- **Material landmarks (191)**: engineering/biology constants as primitive chains (aluminum 2700 EXACT,
+  blood pH 7.4 EXACT, DNA 10.5); any revised standard value breaking the chain falsifies that identity.
+- **Sgr A* JWST 2025 flare = 1/1800 Hz** (pi_ir_flare_frequency): live JWST cadence data tests the triple-integer.

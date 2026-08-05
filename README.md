@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.348.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.348.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.349.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.349.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2206%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2236%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.348.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.349.0 complete-compile campaign live**
 
-**This release (v0.348.0): LANDMARK COMPILE II — the corpus's landmark family drained.** Nine landmark-mining rounds complete (~70 of 83 landmark-titled papers): **neutron lifetime τ_n = 100·K_MEX·D_phys·(1+Φ_res·α·N_CH) = 879.31 s** (obs 879.4, PAPER_1926), **Φ_res = 1−(D_phys·F_TRZ)² = 21/25 EXACT** — Φ_res joins the derivative family (PAPER_2134), **Hodge = (D_phys+D_BSFG)/SO_5 = 1.0 EXACT** as primitive composition (PAPER_1230), Monty Hall 2/(D_phys−1)=2/3 (PAPER_1406), Sgr A* distance dg = D_crit·SO_5¹⁹ = 2.6e20 m EXACT (PAPER_2139), BD+60 2522 M=40/R=20 integers (PAPER_1984), **Star-Magic reactor plasmoid observables from pure integers** — fps = SO_5²/(D_phys−1) = 100/3, t_photo = 0.33 s, t_batch = 0.45 s, bulb = A_5+SO_5/2 = 65 W (PAPER_2096/2078), 26-chain base E_0 = F_TRZ^(D_crit−D_BSFG) = 1e-20 J (PAPER_2119), galactic 1.5 = D_BSFG/D_phys, F_TRZ²² rung, frame-count 25, tilt saturation 59/116, U_g3 wrap closure, Cosmic Egg π(t). Two Rule-7 rulings queued: Q-2118 (symbol/numeric mismatch), Q-1412 (7.70-vs-7.00 arithmetic). All identities gate-guarded and mapped in-step. The package now exposes **2,232 Python functions / 1,886 named callables** (614 equation-library + 1,272 `dc_` derived-equation functions).
+**This release (v0.349.0): THE DEEP-MINE COMPILE — backbone object-locks, material landmarks, formula availability.** Three new generated function families: **`uqff_backbone_locks.py`** — 115 `bb_*` object-observable primitive-locks mined from all 55 backbone papers (ρ_crust(SGR1745)=SO_5¹⁷, M_BH(Sombrero)=SO_5⁹, B(Crab)=SO_5⁻⁸, τ_SF(Pillars)=SO_5⁶...), every one computing **live from primitives**; **`uqff_material_landmarks.py`** — 191 `ml_*` identities from PAPER_1600-1799 spanning biology/engineering/astronomy/particles (aluminum 2700=D_crit·SO_5²+N_CH·SO_5+SO_5, blood pH 7.4, DNA 10.5 bp/turn, Moon 60.333 R⊕, ITER 3.1, quark masses — 80 live-composed + 111 stated-with-formula); **`uqff_primitive_identities.py`** — 12 `pi_*` from the 19xx family (Sgr A* JWST flare 1/1800 Hz, magnetar τ_B=4000 yr, DPM disc:jet 1/3). Backbone headline identities: CP2 generator 17 W = D_crit−N_CH, Crab spin 30.2 Hz, Bubble Nebula 1200 M☉, chemistry octet 2·D_phys, κ_V=1.05, SO_5 power-ladder family (80+ instances). **Daniel's formula ruling implemented:** every generated function's paper chain is programmatically available via `formula_of(name)`, `.formula` attributes, and per-module `FORMULAS` registries — gate-guarded. The package now exposes **2,565 Python functions / 2,219 named callables** (626 calc + 1,272 `dc_` + 115 `bb_` + 191 `ml_` + 12 `pi_`).
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.348.0)
+## What is currently shipped (v0.349.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

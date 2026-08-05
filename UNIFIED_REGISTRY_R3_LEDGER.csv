@@ -85,3 +85,7 @@ landmark,phi_quadratic_grounding,CLOSED,Phi_res=21/25 EXACT derivative (PAPER_21
 landmark,plasmoid_reactor_family,CLOSED,fps/t_photo/t_batch/bulb from integers (PAPER_2096/2078)
 landmark,chain_base_energy,CLOSED,E_0=F_TRZ^(D_crit-D_BSFG) (PAPER_2119)
 open_ruling,reionization_z_exact,OPEN_RULING,Q-1412: paper 7.70 vs chain 7.00
+backbone,bb_object_locks_115,CLOSED,115 live primitive-locks (55 backbone papers)
+material,ml_landmarks_191,CLOSED,80 live + 111 stated-disclosed (PAPER_1600-1799)
+primid,pi_identities_12,CLOSED,19xx family (PAPER_1920-1999)
+infrastructure,formula_of,CLOSED,formula availability per Daniel ruling 2026-08-05

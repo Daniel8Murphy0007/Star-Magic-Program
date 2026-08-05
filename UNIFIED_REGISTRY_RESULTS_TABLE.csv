@@ -108,3 +108,10 @@ reactor_bulb_W,A_5+SO_5/2,60+5,65,PAPER_2078,EXACT_hardware,0.0
 galactic_ratio,D_BSFG/D_phys,6/4,1.5,PAPER_2077,EXACT,0.0
 ftrz_22_rung,F_TRZ^(D_crit-D_phys),0.1^22,1e-22,PAPER_2095,EXACT,0.0
 frame_count,SO_5^2/D_phys,100/4,25,PAPER_2065,EXACT,0.0
+cp2_generator_W,D_crit-N_CH,26-9,17,PAPER_2085,EXACT_hardware,0.0
+crab_spin_Hz,(D_phys-1)SO_5+2F_TRZ,30+0.2,30.2,PAPER_2062,EXACT,0.0
+bubble_nebula_Msun,2*D_BSFG*SO_5^2,2*6*100,1200,PAPER_2072,EXACT,0.0
+chemistry_octet,2*D_phys,8,8,PAPER_2037,EXACT,0.0
+so5_backbone_family,coeff*SO_5^n,80+ instances,various,PAPER_2019-2092,EXACT_family,0.0
+backbone_object_locks,"coeff*PRIM^n per (object,observable)",115 live-computed fns,various,PAPER_2019-2092,EXACT_family,0.0
+material_landmark_family,integer/real primitive chains,191 fns (80 live-composed + 111 stated-disclosed),various,PAPER_1600-1799,EXACT_family,0.0

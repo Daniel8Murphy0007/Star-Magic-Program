@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.348.0"
-description = "UQFF Star-Magic-Program v0.348.0: LANDMARK COMPILE II - neutron lifetime 879.31 s from integers, Phi_res=1-(D_phys F_TRZ)^2=21/25 EXACT (derivative), Hodge=(D_phys+D_BSFG)/SO_5=1 EXACT, Star-Magic reactor plasmoid observables from pure integers (fps=100/3, t_photo=0.33s, bulb=65W=A_5+SO_5/2), E_0=F_TRZ^(D_crit-D_BSFG), Sgr A* dg=2.6e20 EXACT, Monty Hall 2/3. Landmark family drained (~70/83 papers). 2232 functions, 1886 named callable. Registry 2622 rows. Gate green (2206)."
+version = "0.349.0"
+description = "UQFF Star-Magic-Program v0.349.0: DEEP-MINE COMPILE - 115 bb_ backbone object-locks (live from primitives), 191 ml_ material landmarks (aluminum 2700, blood pH 7.4, DNA 10.5, quark masses), 12 pi_ primitive identities, SO_5 power-ladder family. Formula availability: formula_of()/.formula/FORMULAS registries (Daniel ruling). CP2 17W + Crab 30.2Hz + Bubble 1200Msun EXACT. 2565 functions, 2219 named callable. Registry 2950 rows. Gate green (2236)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -53,7 +53,7 @@ Predecessor = "https://github.com/Daniel8Murphy0007/Star-Magic"
 Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [tool.setuptools]
-py-modules = ["uqff_derived_functions", "uqff_derived_constants", 
+py-modules = ["uqff_primitive_identities", "uqff_material_landmarks", "uqff_backbone_locks", "uqff_derived_functions", "uqff_derived_constants", 
     "uqff_registry_primitives",
     "uqff_calculator",
     "uqff_fidelity_tests",

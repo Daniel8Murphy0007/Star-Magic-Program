@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.348.0", "uqff_calculator.VERSION = 0.348.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.349.0", "uqff_calculator.VERSION = 0.349.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,49 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === PRIMITIVE-IDENTITY FAMILY GUARD (v0.349 deep mine 3) ===
+import uqff_primitive_identities as _pil_g
+assert_that(_pil_g.PRIMITIVE_IDENTITY_COUNT == 12, "12 pi_* primitive-identity fns (PAPER_1920-1999)")
+assert_that(abs(C.pi_d_bsfg_d_phys() - 1.5) < 1e-12, "pi: D_BSFG/D_phys = 1.5 EXACT")
+assert_that(abs(C.pi_ir_flare_frequency() - 1.0/1800.0) < 1e-12, "pi: Sgr A* IR flare = 1/1800 Hz EXACT (JWST 2025)")
+assert_that(C.formula_of("pi_e_0") is not None, "formula_of works for pi_*")
+# === FORMULA-AVAILABILITY GUARD (Daniel ruling 2026-08-05: formulas must be programmatically available) ===
+assert_that(C.formula_of("ml_blood_ph") is not None and "D_BSFG" in C.formula_of("ml_blood_ph"), "formula_of(ml_*) returns paper chain")
+assert_that(C.formula_of("bb_b_crab") is not None and "SO_5" in C.formula_of("bb_b_crab"), "formula_of(bb_*) returns paper chain")
+assert_that(hasattr(C.ml_aluminum_density, "formula"), "ml_* functions carry .formula attribute")
+assert_that(hasattr(C.bb_m_bh_sombrero, "formula"), "bb_* functions carry .formula attribute")
+import uqff_material_landmarks as _mlf_g
+assert_that(len(_mlf_g.FORMULAS) == 191, "FORMULAS registry complete for ml_ (191)")
+# === MATERIAL-LANDMARK GUARD (v0.349 deep mine 2) ===
+import uqff_material_landmarks as _mll_guard
+assert_that(_mll_guard.MATERIAL_LANDMARK_COUNT == 191, "191 material/engineering/particle landmark fns generated (PAPER_1600-1799)")
+_mlfns=[n for n in dir(_mll_guard) if n.startswith("ml_")]
+assert_that(len(_mlfns) == 191, "191 ml_* present (found %d)" % len(_mlfns))
+assert_that(C.ml_aluminum_density() == 2700, "ml: aluminum = D_crit SO_5^2 + N_CH SO_5 + SO_5 = 2700 EXACT (PAPER_1600)")
+assert_that(abs(C.ml_blood_ph() - 7.4) < 1e-9, "ml: blood pH = D_BSFG + F SO_5 + F D_phys = 7.4 EXACT (PAPER_1604)")
+assert_that(abs(C.ml_dna_base_pairs_per_helical_turn() - 10.5) < 1e-9, "ml: DNA bp/turn = 10.5 EXACT (PAPER_1605)")
+_mlsrc=open("uqff_material_landmarks.py",encoding="utf-8").read()
+assert_that("7.09e-37" not in _mlsrc and "1.453162" not in _mlsrc, "no banned literals in material-landmarks module")
+# === BACKBONE OBJECT-LOCK GUARD (v0.349 deep mine) ===
+import uqff_backbone_locks as _bbl_guard
+assert_that(_bbl_guard.BACKBONE_LOCK_COUNT == 115, "115 backbone object-observable primitive-locks generated")
+_bbfns=[n for n in dir(_bbl_guard) if n.startswith("bb_")]
+assert_that(len(_bbfns) == 115, "115 bb_* functions present (found %d)" % len(_bbfns))
+assert_that(all(callable(getattr(_bbl_guard,n)) for n in _bbfns), "all 115 bb_* callable")
+assert_that(C.bb_m_bh_sombrero() == 1e9, "bb: M_BH(Sombrero) = SO_5^9 = 1e9 Msun EXACT (PAPER_2019)")
+assert_that(C.bb_b_crab() == 1e-8, "bb: B(Crab) = SO_5^-8 = 1e-8 T EXACT (PAPER_2022)")
+_bbsrc=open("uqff_backbone_locks.py",encoding="utf-8").read()
+assert_that("7.09e-37" not in _bbsrc and "0.6029" not in _bbsrc, "no banned literals in backbone-locks module")
+# === BACKBONE FAMILY GUARD (v0.349) ===
+assert_that(C.cp2_field_generator_power() == 17, "PAPER_2085: CP2 generator = D_crit - N_CH = 17 W EXACT")
+assert_that(abs(C.crab_pulsar_spin() - 30.2) < 1e-9, "PAPER_2062: Crab spin = (D_phys-1)SO_5 + 2 F_TRZ = 30.2 Hz EXACT")
+assert_that(C.bubble_nebula_mass() == 1200, "PAPER_2072: Bubble Nebula = 2 D_BSFG SO_5^2 = 1200 Msun EXACT")
+assert_that(C.chemistry_octet() == 8, "PAPER_2037: octet = 2 D_phys = 8 EXACT")
+assert_that(abs(C.lenr_efield_enhancement() - 1.05) < 1e-12, "PAPER_2056: kappa_V = 1 + F_TRZ/2 = 1.05 EXACT")
+assert_that(C.pole_state_partition() == 26, "PAPER_2085: pole states 4+20+2 = 26 EXACT")
+assert_that(C.outflow_velocity_500() == 500.0, "PAPER_2019: outflow = (SO_5/2)SO_5^2 = 500 m/s EXACT")
+assert_that(C.so5_power_ladder(2, 33) == 2e33, "PAPER_2029: mass ladder 2 SO_5^33 = 2e33 kg EXACT")
+assert_that(abs(C.scm_complement_identity() - 0.9) < 1e-12, "PAPER_2029: 1 - F_TRZ = 0.9 EXACT")
 # === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.348 part 4 REMAINDER) ===
 assert_that(C.reactor_bulb_wattage() == 65.0, "PAPER_2078: reactor bulb = A_5 + SO_5/2 = 65 W EXACT")
 assert_that(C.galactic_universality_ratio() == 1.5, "PAPER_2077/1962: D_BSFG/D_phys = 1.5 EXACT")

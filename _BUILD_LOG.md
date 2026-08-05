@@ -88,3 +88,14 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.348.0 SHIP PREP (LANDMARK COMPILE II)
 [2026-08-05] SHIP_PREP v0.348.0 — all 27 registry/ship files updated; gate 2206 green
+
+[2026-08-05] GATE_PASS v0.349.0 backbone mine — 2215 assertions: OK (55 backbone papers swept: CP2 17W=D_crit-N_CH, Crab 30.2 Hz, Bubble 1200 Msun, octet 2*D_phys, kappa_V=1.05, SO_5 power-ladder family 80+ instances via so5_power_ladder)
+
+[2026-08-05] GATE_PASS v0.349.0 backbone DEEP mine — 2221 assertions: OK (115 bb_* object-observable primitive-locks generated from 55 backbone papers; all compute LIVE from primitives; new module uqff_backbone_locks.py)
+
+[2026-08-05] GATE_PASS v0.349.0 deep mine 2 — 2227 assertions: OK (191 ml_* material/engineering/particle landmarks from PAPER_1600-1799: 80 LIVE primitive-composed + 111 stated-disclosed; new module uqff_material_landmarks.py)
+
+[2026-08-05] GATE_PASS v0.349.0 deep mine 3 + FORMULA AVAILABILITY — 2236 assertions: OK (Daniel ruling implemented: FORMULAS registries + .formula attributes + formula_of() accessor across ml_/bb_/pi_/dc_; 12 pi_* fns from 19xx family)
+
+## 2026-08-05 — v0.349.0 SHIP PREP (DEEP-MINE COMPILE)
+[2026-08-05] SHIP_PREP v0.349.0 — all registry/ship files updated; 3 new modules; gate green

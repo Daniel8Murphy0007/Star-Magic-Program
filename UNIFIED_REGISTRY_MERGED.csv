@@ -12,3 +12,5 @@ v0346_mine_family,17,PREDECESSOR_MINE,solar/QGP/quantum/wormhole/MUGE closed for
 lenr_validation_family,7,UPLOAD_MINE,Holmlid/Rossi/Mizuno/PF reactor forms,cluster_efficiency_j;rossi_ecat_cop_formula;mizuno_transmutation_power
 landmark_identity_family,~40,REPO_MINE,EXACT primitive reductions + SI-constant compositions,mu0_vacuum_permeability;boltzmann_k_composition;b_critical_schwinger;tilt_factor_1_12
 landmark_compile_ii,~20,REPO_MINE,rounds 6-9 landmark drain,neutron_lifetime_integer;phi_quadratic_grounding;plasmoid_frame_rate;reactor_bulb_wattage
+bb_backbone_locks,115,REPO_MINE_BACKBONE,live primitive computation,bb_rho_crust_sgr1745;bb_m_bh_sombrero;bb_b_crab
+ml_material_landmarks,191,REPO_MINE_MATERIAL,80 live + 111 stated,ml_aluminum_density;ml_blood_ph;ml_dna_base_pairs_per_helical_turn

@@ -5134,3 +5134,12 @@ until 300+ done.
   galactic 1.5 (2077), F_TRZ^22 (2095), frame 25 (2065), tilt saturation 59/116 (2135), Ug3 wrap (2121), egg pi(t) (2115).
 - Rule-7 catches: Q-1412 (paper claims 7.70, chain=7.00) + Q-2118 queued in RULINGS_QUEUE.md.
 - ~19 landmark gate guards this arc (parts v0.348 1-4). MEASURED: 2232 total fns | 1886 named | registry 2622 rows | gate 2206.
+
+## 2026-08-05 - v0.349.0 SHIP: DEEP-MINE COMPILE (backbone locks + material landmarks + formula availability)
+- Backbone sweep 1: 55 backbone papers -> headline identities (CP2 17W, Crab 30.2 Hz, Bubble 1200 Msun, octet,
+  kappa_V, SO_5 power-ladder root). Deep sweep 2: 116 object-observable locks -> uqff_backbone_locks.py (115 bb_*,
+  live primitive computation). Deep sweep 3: PAPER_1600-1799 -> uqff_material_landmarks.py (191 ml_*: 80 live-verified
+  + 111 stated-disclosed). Deep sweep 4: 19xx family -> uqff_primitive_identities.py (12 pi_*).
+- DANIEL RULING: formulas must be available -> formula_of() accessor + .formula attributes + FORMULAS registries
+  across ml_/bb_/pi_/dc_ families; gate-guarded.
+- MEASURED: 2565 total fns | 2219 named callable | registry 2950 rows | GRAPH 3986 edges | gate 2236, exit 0.

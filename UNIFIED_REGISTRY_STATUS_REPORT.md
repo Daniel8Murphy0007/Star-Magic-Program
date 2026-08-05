@@ -125,3 +125,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS UPDATE v0.348.0
 - LANDMARK COMPILE II complete: landmark family drained (~70/83 papers, 9 rounds). 2,232 fns | 1,886 named | registry 2,622 rows | gate 2,206 green. 2 rulings queued (Q-2118, Q-1412).
+
+
+## LIVE STATUS UPDATE v0.349.0
+- DEEP-MINE COMPILE: +318 generated fns (bb/ml/pi) + formula availability. 2,565 total | 2,219 named | registry 2,950 rows | gate 2,236 green.
