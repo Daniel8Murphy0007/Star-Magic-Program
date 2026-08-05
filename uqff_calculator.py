@@ -15,6 +15,7 @@ STATE at v0.1.0 (2026-07-28): scaffold only. Dispatch table is empty; the wiring
 campaign starts from PAPER_001 in the first content ship (v0.2.0+).
 """
 import math
+from uqff_derived_constants import DERIVED_CONSTANTS, DERIVED_CONSTANTS_COUNT
 from uqff_registry_primitives import (
     # Locked primitives
     D_PHYS, D_CRIT, N_CH, SO_5, A_5, D_BSFG,
@@ -58,10 +59,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.343.0"
+VERSION = "0.344.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.343.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.344.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -2098,6 +2099,29 @@ def negative_time_tneg():
 def yang_mills_mass_gap():
     """PAPER_1318: Yang-Mills mass gap m_gap = 1.736 GeV (glueball, UQFF 26D compactification)."""
     return 1.736
+
+
+def derived_constant(name):
+    """Return the derived-constant value for `name` from the 1,272-entry predecessor-registry catalog (None if unknown/structural)."""
+    rec = DERIVED_CONSTANTS.get(name)
+    return rec["value"] if rec else None
+
+def derived_constant_record(name):
+    """Return the full catalog record {value, formula, route, paper, sector, residual_pct, status} for a derived constant."""
+    return DERIVED_CONSTANTS.get(name)
+
+def list_derived_constants(sector=None, paper=None):
+    """List derived-constant names, optionally filtered by sector or paper_source."""
+    out = []
+    for k, v in DERIVED_CONSTANTS.items():
+        if sector and v.get("sector") != sector: continue
+        if paper and v.get("paper") != paper: continue
+        out.append(k)
+    return sorted(out)
+
+def derived_constants_count():
+    """Total number of wired derived constants in the catalog."""
+    return DERIVED_CONSTANTS_COUNT
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

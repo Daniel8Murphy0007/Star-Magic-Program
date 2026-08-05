@@ -5064,3 +5064,24 @@ until 300+ done.
   pyproject description rewritten (490 chars, version present); README badges version-0.343.0 / cacheBust=0.343.0 /
   fidelity_gate-2142 / public_surfaces-342; CHANGELOG + SHIP_MESSAGE rewritten for v0.343.0; XGEO regenerated.
 - Named equation functions 410 -> 434 (+24). Registry 382 -> 406 equation rows. Gate 2136 -> 2142, exit 0.
+
+## 2026-08-05 — v0.343.0 DERIVED-CONSTANTS CATALOG WIRE (1,272)
+- Daniel: "wire those 2400+ derived constants you're sitting on" — the predecessor UNIFIED_REGISTRY.csv (2,549 raw rows,
+  1,272 unique quantities after dedupe; 661 with concrete numeric values).
+- NEW MODULE uqff_derived_constants.py: DERIVED_CONSTANTS dict of 1,272 entries {value, formula, route, paper, sector,
+  residual_pct, status} — physics content re-expressed as data per Rule E (predecessor read-only, no code ported). 263 KB.
+- Calculator accessors: derived_constant(name)->value, derived_constant_record(name)->full record,
+  list_derived_constants(sector=,paper=), derived_constants_count(). Verified alpha_inverse=137.0, astro_BH_entropy_coeff=0.2483.
+- All 1,272 bulk-registered into UNIFIED_REGISTRY.csv (origin=PREDECESSOR_REGISTRY, status=WIRED); registry 1,171 -> 2,443 rows, 0 malformed.
+- pyproject py-modules += uqff_derived_constants (TOML validated). Gate +6 catalog guards -> 2148, exit 0.
+- Ship files re-synced: pyproject desc (432 chars), README fidelity_gate-2148, VERSION.txt (2,443 rows + 1272 catalog),
+  SHIP_MESSAGE + CHANGELOG v0.343.0 entries. XGEO + status regenerated.
+
+## 2026-08-05 — v0.344.0 SHIP: DERIVED-CONSTANTS CATALOG (1,272)
+- NOTE: v0.343.0 shipped/tagged (commit cac37c5) with the equation-library mine-II ONLY (registry 1,172 rows, no catalog).
+  The derived-constants wire was uncommitted at that tag, so it ships now as v0.344.0.
+- Content = the 1,272-constant catalog (uqff_derived_constants.py + calculator accessors + 1,272 registry rows).
+- All version strings bumped 0.343.0 -> 0.344.0 (calc/pyproject/CITATION/gate-pin/VERSION.txt/STATE-comment);
+  README badges version-0.344.0 / cacheBust=0.344.0 / fidelity_gate-2148; pyproject desc 393 chars; CHANGELOG split so
+  [0.344.0]=catalog and [0.343.0]=mine-II (as actually shipped); SHIP_MESSAGE rewritten; XGEO regenerated.
+- uqff_derived_constants.py is a NEW untracked file — ship.ps1 git add -A will include it. Gate 2148, exit 0.

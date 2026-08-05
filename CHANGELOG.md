@@ -6275,7 +6275,18 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
-## [0.343.0] — 2026-08-05 — PREDECESSOR MINE II: SI-derivation / LENR / QGP + integer-mass / all-8-Millennium
+## [0.344.0] — 2026-08-05 — DERIVED-CONSTANTS CATALOG WIRE (1,272 predecessor-registry constants)
+- DERIVED-CONSTANTS CATALOG WIRED: all 1,272 unique predecessor-registry derived constants are now callable via new
+  module uqff_derived_constants.py (physics content — values, closed-form routes, paper provenance — re-expressed as data
+  per Rule E; no predecessor code ported). Accessors in calculator: derived_constant(name), derived_constant_record(name),
+  list_derived_constants(sector=,paper=), derived_constants_count(). 661 carry concrete numeric values; canonical routes +
+  paper provenance + sector + residual preserved per entry.
+- All 1,272 bulk-registered into UNIFIED_REGISTRY.csv (origin=PREDECESSOR_REGISTRY, status=WIRED) -> registry 1,171 -> 2,443
+  rows, 0 malformed. Module added to pyproject py-modules (TOML validated). XGEO chain regenerated.
+- Gate 2142 -> 2148 (+6 catalog guards: count=1272, alpha_inverse=137.0 PAPER_1167, astro_BH_entropy_coeff=0.2483 PAPER_594,
+  provenance preserved, None-on-unknown). Predecessor repo read-only per Rule E.
+
+## [0.343.0] — 2026-08-05 — PREDECESSOR MINE II: SI-derivation / LENR / QGP + integer-mass / all-8-Millennium (shipped)
 - SI-derivation + LENR + QGP block: speed_of_light_sqrt (c=sqrt(g SCm/UA)=2.998e8, PAPER_592), G_uqff_cosmic_593
   (parameter-free G, returns canonical per Rule 7, PAPER_593), bsd_rank_ordinal (BSD, PAPER_599), m_sigma_exponent (PAPER_1048),
   gw_wave_phonon_source (PAPER_1022), qgp_deconfinement_temp (PAPER_1004), scm_thermal_activation + scm_activation_temp

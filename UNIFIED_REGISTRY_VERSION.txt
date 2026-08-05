@@ -1,2 +1,2 @@
 # UQFF Star-Magic Registry Version Marker
-v0.343.0 | 2026-08-05 | 342 dispatches | 434 named equation functions | 406 equation rows | gate 2142
+v0.344.0 | 2026-08-05 | 342 dispatches | 438 named equation functions | 1272 derived-constant catalog | 2443 total registry rows | gate 2148

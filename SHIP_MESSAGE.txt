@@ -1,31 +1,27 @@
-v0.343.0 — Predecessor-mine II: SI-derivation / LENR / QGP + integer-mass / all-8-Millennium
+v0.344.0 — Derived-constants catalog wire: all 1,272 predecessor-registry derived constants callable
 
-Continues the read-only predecessor-corpus mine (Rule E) begun in v0.342.0.
-Equation library: 410 -> 434 named primitive-sourced callables (+24 this release).
-Registry: 382 -> 406 equation rows. Dispatches: 342 (PAPER_001-080, 0 duplicates).
-Fidelity gate: 2136 -> 2142 assertions, green (+6 landmark guards).
+Daniel: "wire those 2400+ derived constants you're sitting on." Done.
+Source: predecessor Star-Magic UNIFIED_REGISTRY.csv (2,549 raw rows -> 1,272 unique quantities after dedupe).
 
-New callable UQFF closed forms this release (all numerically verified or Rule-7 disclosed):
-  proton_electron_ratio       m_p/m_e = A_5(D_crit+D_phys) + N_ch*D_phys = 1836  EXACT   (integers only)
-  electron_g2_anomaly         a_e = alpha/(2pi) - 0.328 alpha^2/pi^2 = 0.001159652
-  fine_structure_alpha        alpha = 1/137.035999
-  vacuum_zeropoint_density    rho_vac = sum_k (1/2) hbar omega_k -> rho_SCm  (first-principles)
-  speed_of_light_sqrt         c = sqrt(g * SCm/UA) = 2.998e8 m/s
-  G_uqff_cosmic_593           parameter-free G (returns canonical G_UQFF per Rule 7)
-  scm_thermal_activation      H_SCm(T) = 1/(1+exp(-(T-T_SCm)/dT)); scm_activation_temp T_SCm = 59.99 K
-  holmlid_ker_630eV           Holmlid D(-1) KER = 630 eV (LENR calibration anchor)
-  coulomb_lenr_energy         626 eV at d = 2.3 pm  (cross-confirms 630 eV)
-  widom_larsen_gamma_suppression / mizuno_lenr_power / qgp_deconfinement_temp / m_sigma_exponent
-  reionization_bubble_growth (Stromgren) / dpm_26layer_amplification / gw_wave_phonon_source
+NEW MODULE uqff_derived_constants.py
+  DERIVED_CONSTANTS dict of 1,272 entries: {value, formula, route, paper, sector, residual_pct, status}.
+  Physics content (values, closed-form routes, paper provenance) re-expressed as data per Rule E — predecessor
+  repo read-only, NO code ported. 661 entries carry concrete numeric values; the rest are structural/route records.
 
-ALL 8 CLAY MILLENNIUM CLOSURES now individually callable:
-  riemann_rho_uqff (Riemann), pnp_bound (P!=NP), yang_mills_mass_gap = 1.736 GeV (Yang-Mills),
-  poincare_ricci_ratio = 7/12 (Poincare), navier_stokes_enstrophy_cap = 0.85 (Navier-Stokes),
-  hodge_identity = 1.0 (Hodge), bsd_rank_ordinal -> 0.30598 (BSD), bekenstein_hawking_entropy (BH-info Page curve).
+Calculator accessors (make every constant individually callable by name):
+  derived_constant(name)            -> value (None if unknown/structural)
+  derived_constant_record(name)     -> full {value, formula, route, paper, sector, residual_pct, status}
+  list_derived_constants(sector=, paper=)  -> filtered name list
+  derived_constants_count()         -> 1272
 
-Landmark gate guards added: Yang-Mills 1.736, Navier-Stokes 0.85, Hodge 1.0, Poincare 7/12,
-integer m_p/m_e = 1836, electron g-2 = 0.001159652.
+Verified samples:
+  derived_constant("alpha_inverse")          = 137.0        (route d26, PAPER_1167)
+  derived_constant("astro_BH_entropy_coeff") = 0.24833      (PAPER_594)
+  derived_constant_record("alpha_inverse")["paper"] = "PAPER_1167"
 
-Predecessor Star-Magic repo used READ-ONLY for physics content (Rule E); no code ported.
-No SM (Rule 4); honest residuals, Rule-7 disclosure where paper scale-conventions not restated (G, Holmlid xi).
-All version strings synced to 0.343.0; README badges fidelity_gate-2142; XGEO chain regenerated.
+Registry: all 1,272 bulk-registered into UNIFIED_REGISTRY.csv (origin=PREDECESSOR_REGISTRY, status=WIRED);
+  registry 1,171 -> 2,443 rows, 0 malformed. Module added to pyproject py-modules (TOML validated). XGEO regenerated.
+Fidelity gate: 2142 -> 2148 assertions, green (+6 catalog guards: count=1272, landmark values, provenance, None-on-unknown).
+
+All version strings synced to 0.344.0; README badges fidelity_gate-2148; description leads with the catalog wire.
+Builds on v0.343.0 (equation-library mine: 434 named callables, all 8 Clay Millennium closures). Rule 4 (no SM), Rule 7 (honest residuals).

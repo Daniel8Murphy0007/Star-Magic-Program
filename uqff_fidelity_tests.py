@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.343.0", "uqff_calculator.VERSION = 0.342.0 (complete-compile PAPER_001-080 + b-variants)")
+assert_that(C.VERSION == "0.344.0", "uqff_calculator.VERSION = 0.344.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -321,6 +321,13 @@ assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['e
             "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
+# === DERIVED-CONSTANTS CATALOG GUARD (predecessor-registry wire, 1,272 constants) ===
+assert_that(C.derived_constants_count() == 1272, "Derived-constants catalog: 1,272 predecessor-registry constants wired")
+assert_that(len(C.list_derived_constants()) == 1272, "Derived-constants catalog: all 1,272 listable")
+assert_that(C.derived_constant("alpha_inverse") == 137.0, "Derived constant alpha_inverse = 137.0 (PAPER_1167)")
+assert_that(abs(C.derived_constant("astro_BH_entropy_coeff") - 0.24833333) < 1e-6, "Derived constant astro_BH_entropy_coeff = 0.2483 (PAPER_594)")
+assert_that(C.derived_constant_record("alpha_inverse")["paper"] == "PAPER_1167", "Derived-constant provenance preserved (alpha_inverse -> PAPER_1167)")
+assert_that(C.derived_constant("__nonexistent__") is None, "Derived-constant accessor returns None for unknown names")
 # === MILLENNIUM-SUITE + INTEGER-MASS LANDMARK GUARD (predecessor mine) ===
 assert_that(C.yang_mills_mass_gap() == 1.736, "PAPER_1318: Yang-Mills mass gap = 1.736 GeV")
 assert_that(C.navier_stokes_enstrophy_cap() == 0.85, "PAPER_1182: Navier-Stokes enstrophy cap = 0.85")
