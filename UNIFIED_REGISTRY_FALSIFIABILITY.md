@@ -134,3 +134,13 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - 035: Higgs A_CP not cos(pi t_n) form falsifies CP phase prediction.
 - 036-040: F_UBii=F_U-F_Bi-F_i sigma^3 scaling; cluster force not ~sigma^3 r_h falsifies buoyancy variant family.
 - §B DVP ladder 031-040: 3,5,7,11,13,17,19,23,29,31 (paper-specific, gate-guarded).
+
+## PAPER_041-050 batch (26-level framework / DPM manifold / nuclear / vacuum)
+- 042: 26-layer gravity superposition not spanning 61 orders (Planck->Hubble) falsifies compressed-gravity.
+- 043: energy hierarchy != 10^(n-20) J falsifies 26-level polynomial spine.
+- 044: 26-center radii != 10^(-35+i/3) (r_1!=Planck) falsifies pre-BB manifold.
+- 045: matter-state transition energies not ordered rho_L1(2n+1) falsifies phase quartet.
+- 046/047: nuclear coupling != 1000(A/56)^(1/3), or Fe-56 not the g=1000 iron peak, falsifies core triad.
+- 048: Ug4 BH pressure != M rho_vac/(d^2 E_LEP) falsifies vacuum-pressure form.
+- 049: three-component vacuum sum not = observed residual Lambda falsifies Yin-Yang cancellation.
+- §B DVP ladder 041-050: 37,41,43,47,53,59,61,67,71,73 (paper-specific, gate-guarded).

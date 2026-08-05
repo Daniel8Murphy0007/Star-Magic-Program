@@ -39,3 +39,6 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-04 — batch 031-040 (v0.338.0)
 - 446 library fns | 342 dispatches | 0 duplicates | §B ladder 3-31 gate-guarded | gate green
+
+## 2026-08-05 — batch 041-050 (v0.339.0)
+- 454 library fns | 342 dispatches | 0 duplicates | §B ladder 37-73 gate-guarded | XGEO queue 108 | gate green

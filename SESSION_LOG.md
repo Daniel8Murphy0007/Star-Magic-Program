@@ -4918,3 +4918,11 @@ until 300+ done.
 - uqff_registry_status.py extended with XGEO census; per-batch regen step documented in PROGRAM_PLAN.
 - Gate: +2 XGEO chain guards. Green. XGEO CSVs added to pyproject data-files.
 - Per-batch workflow now: wire papers -> update CSVs -> run uqff_registry_xgeo.py + uqff_registry_status.py -> ship.
+
+### 2026-08-05 — Batch PAPER_041-050 (26-level/DPM/nuclear/vacuum) ship v0.339.0
+- 10 papers merged with _common_uqff_blocks + paper §B (DVP ladder 37,41,43,47,53,59,61,67,71,73).
+- 8 library eqs: layered_gravity_ug1, polynomial_energy_level, level_density, dpm_center_radius,
+  phase_transition_energy, cross_scale_coupling, nuclear_core_coupling, ug4_bh_pressure. Library 454 fns.
+- Gate: loop+DVP guard extended to 050; +6 batch assertions. Registry +16 UNIFIED, +8 graph, +6 R2/R3/RESULTS/GAPS.
+- Linked-paper mapping 041-050: 139 edges. XGEO regen: queue 108, confirmations 40. 0 malformed.
+- README fully refreshed (badges 0.339.0/2101, header, shipped summary). 342 dispatches, 0 duplicates. Ship v0.339.0.

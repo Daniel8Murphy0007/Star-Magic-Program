@@ -77,16 +77,16 @@
 | ⚠ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
 | ⚠ | PAPER_039 | FUBii Buoyancy Variants12to17 ICM | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
 | ⚠ | PAPER_040 | XRay Cluster Buoyancy Perseus Coma Virgo | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
-| ⚠ | PAPER_041 | Intracluster Medium Physics UQFF |
-| ⚠ | PAPER_042 | Monte Carlo 26Layer Compressed Gravity |
-| ⚠ | PAPER_043 | 26D Energy Structure Mathematical Foundation |
-| ⚠ | PAPER_044 | Pre Big Bang Configuration 26D UQFF |
-| ✓ | PAPER_045 | Quantum Phase Transitions UQFF 26D |
-| ⚠ | PAPER_046 | DPM Cosmology Dark Photon Manifold |
-| ⚠ | PAPER_047 | Nuclear Binding Energy 26Level Polynomial |
-| ⚠ | PAPER_048 | Black Hole Interaction Energy 26D UQFF |
-| ⚠ | PAPER_049 | Vacuum Density Contributions UQFF 26Layer |
-| ⚠ | PAPER_050 | 26D Manifold Compactification 3plus1 Spacetime |
+| ⚠ | PAPER_041 | Intracluster Medium Physics UQFF | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_042 | Monte Carlo 26Layer Compressed Gravity | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_043 | 26D Energy Structure Mathematical Foundation | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_044 | Pre Big Bang Configuration 26D UQFF | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ✓ | PAPER_045 | Quantum Phase Transitions UQFF 26D | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_046 | DPM Cosmology Dark Photon Manifold | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_047 | Nuclear Binding Energy 26Level Polynomial | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_048 | Black Hole Interaction Energy 26D UQFF | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_049 | Vacuum Density Contributions UQFF 26Layer | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
+| ⚠ | PAPER_050 | 26D Manifold Compactification 3plus1 Spacetime | COMPLETE-COMPILE (helper+§B ladder 37-73; 26-level/DPM/nuclear/vacuum; batch 041-050) |
 | ⚠ | PAPER_051 | UQFF Predictions vs arXiv 2024 |
 | ⚠ | PAPER_052 | UQFF Predictions vs arXiv 2025 |
 | ✓ | PAPER_053 | NGC2264 Star Formation UQFF |

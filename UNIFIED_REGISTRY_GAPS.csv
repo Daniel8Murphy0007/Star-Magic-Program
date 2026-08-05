@@ -30,3 +30,9 @@ ew_abstract_q032,open_ruling,Q-032: delta_T abstract vs text /alpha_EM (PAPER_03
 kappa_c_q033,open_ruling,Q-033: kappa_c 42.0 vs derived 18.8; 028 cross-lock V_cb (PAPER_034)
 higgs_tn_q034,open_ruling,Q-034: t_n 0.353 arccos slip + decomposition artifact (PAPER_035)
 fubii_moji_q035,open_ruling,Q-035..038: F_UBii exponent mojibake in worked examples (PAPER_037-040)
+thermostat_q039,open_ruling,Q-039: ICM thermostat Q_wave scaling (PAPER_041)
+dpm_naming_q042,open_ruling,"Q-042c: DPM ""Duality of Plasmatic Medium"" vs ""Di-Pseudo-Monopole"" (PAPER_044)"
+yinyang_ratio_q041,open_ruling,Q-041b: rho_SCm/rho_UA=1000 inverted vs canonical 0.1 (PAPER_046)
+semf_rowshift_q044,open_ruling,Q-044: coupling-table row shift Pb-208/U-238 (PAPER_047)
+ug4_1894_q045,open_ruling,Q-045: 1.8937 Ug4 validator = predecessor 1.894 origin candidate (PAPER_048)
+lambda_unit_q046,open_ruling,Q-046: rho_Lambda J/m^3 vs kg/m^3 unit direction (PAPER_049)

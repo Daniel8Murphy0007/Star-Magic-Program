@@ -1,26 +1,18 @@
-v0.338.0 — Complete-compile PAPER_031-040 (BSM flavor/EW/Higgs + F_UBii buoyancy)
+v0.339.0 — Complete-compile PAPER_041-050 (26-level framework / DPM manifold / nuclear / vacuum)
 
-Papers 031-040 fully captured over the equation library (now 446 functions):
-- 031 flavor anomalies R(D)/R(D*); 032 BSM scalar sectors (VLQ/2HDM); 033 electroweak
-  oblique corrections + m_W (CDF-direction); 034 Higgs kappa_t Level-18; 035 Higgs CP A_CP.
-- 036-040 F_UBii buoyancy family (17-variant thermodynamic series + virial cluster applications),
-  base identity F_UBii = F_U - F_Bi - F_i, sigma^3 scaling.
+Papers 041-050 fully captured over the equation library (now 454 functions):
+- 041 ICM thermostat; 042 26-layer compressed gravity (MC); 043 26-level polynomial energy hierarchy
+  (E_n=10^(n-20) J); 044 pre-Big-Bang 26-center DPM manifold (r_i=10^(-35+i/3)); 045 matter-state phase
+  transitions (levels 10-13); 046 Yin-Yang cosmology + nuclear core coupling g(A)=1000(A/56)^(1/3);
+  047 nuclear binding (SEMF Fe-56); 048 Ug4 BH vacuum pressure; 049 three-component vacuum energy;
+  050 26D->3+1 compactification (9+4+13).
 
-Each dispatch composes over _common_uqff_blocks (Session-225 + Production Framework + Cosmogenesis
-Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) plus paper-specific core and library equations.
+Each dispatch composes over _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH +
+Kozima-LENR K.1-K.6) plus paper-specific core and library equations.
 
-- Paper-specific §B DVP prime ladder (3,5,7,11,13,17,19,23,29,31) extracted per-whitepaper and
-  gate-guarded via _DVP_LADDER_LOCKED.
-- 342 dispatches, 0 duplicate registrations, gate green.
-- Registry pantheon advanced through PAPER_040; 0 malformed CSVs.
+- Paper-specific §B DVP prime ladder (37,41,43,47,53,59,61,67,71,73), gate-guarded via _DVP_LADDER_LOCKED.
+- Linked-paper mapping 041-050 (139 graph edges + full citations). XGEO chain regenerated (108 queue, 40 confirmations).
+- README fully refreshed (badges, header, currently-shipped summary).
+- 342 dispatches, 0 duplicate registrations, gate green (2101 assertions), 0 malformed CSVs.
 
-Campaign progress: 40 base papers + b-variants of 300+ target.
-
-Also in v0.338.0 (registry completeness):
-- Linked-paper mapping completed 40/40: 597 paper->linked-whitepaper graph edges + full citation
-  rows for PAPER_011-040 (was 10/40).
-- XGEO chain made campaign-aware and populated: uqff_registry_xgeo.py reads UNIFIED_REGISTRY.csv and
-  emits 92 QUEUE tasks + 92 ROUTES (native-paper -> DPM-common-block) + 30 CONFIRMATIONS (paper-specific
-  DVP two-route, 0% residual). Idempotent; R1 numerology discipline preserved. XGEO CSVs now shipped.
-- Per-batch regen chain documented: run uqff_registry_xgeo.py + uqff_registry_status.py before each ship.
-- Two new gate guards lock the XGEO chain.
+Campaign progress: 50 base papers + b-variants of 300+ target.

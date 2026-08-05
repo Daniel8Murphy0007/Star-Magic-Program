@@ -6222,3 +6222,9 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   DPM-common-block) + 30 CONFIRMATIONS (paper-specific DVP two-route, 0% residual); idempotent; XGEO CSVs shipped.
 - uqff_registry_status.py reports XGEO census; per-batch regen chain documented (PROGRAM_PLAN).
 - Gate 2095 assertions (incl. 2 XGEO chain guards), green.
+
+## [v0.339.0] — 2026-08-05 batch 041-050 (26-level framework / DPM manifold / nuclear / vacuum)
+- Complete-compile PAPER_041-050: 8 library eqs (26-layer gravity, energy hierarchy, DPM radii, phase transitions,
+  cross-scale coupling, nuclear core coupling, Ug4 BH pressure) + paper §B DVP ladder (37-73); gate-guarded.
+- Linked-paper mapping 041-050 (139 edges). XGEO regen (queue 108, confirmations 40). README fully refreshed.
+- Registry pantheon advanced through PAPER_050. 342 dispatches, 0 duplicates, gate green (2101 assertions).

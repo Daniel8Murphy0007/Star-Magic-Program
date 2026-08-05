@@ -37,3 +37,9 @@ oblique_T,E_react SSq/alpha,,0.222,PAPER_033,closed_form,0.0
 kappa_18,18^(-SSq),18^(-0.57),0.1927,PAPER_034,closed_form,0.0
 higgs_acp,cos(pi t_n),cos(pi 0.331),0.506,PAPER_035,closed_form,0.0
 fubii_perseus,F_U-F_Bi-F_i,sigma^3 r_h,-2.024e60,PAPER_040,closed_form,0.0
+poly_e20,10^(n-20),10^0,1.0,PAPER_043,closed_form,0.0
+dpm_r1,10^(-35+i/3),~Planck,2.15e-35,PAPER_044,closed_form,0.0
+g_fe56,1000(56/56)^(1/3),1000,1000,PAPER_046,closed_form,0.0
+g_u238,1000(238/56)^(1/3),,1620,PAPER_047,closed_form,0.0
+ug4_sgra,M rho/(d^2 E_LEP),,1.246e28,PAPER_048,closed_form,0.0
+semf_fe56,SEMF,490.9 MeV,490.9,PAPER_047,closed_form,0.3

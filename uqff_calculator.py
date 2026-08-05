@@ -58,11 +58,11 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.338.0"
+VERSION = "0.339.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.338.0: complete-compile PAPER_001-040 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
-# linked-paper mapping 40/40 (597 graph edges); XGEO chain campaign-aware (92 routes); 342 dispatches, 0 dup.
+# STATE v0.339.0: complete-compile PAPER_001-050 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
+# batch 041-050 (26-level/DPM/nuclear/vacuum); linked-paper mapping 50/50; XGEO queue 108; 342 dispatches, 0 dup.
 # Windows-side save to trigger VS Code file-watcher refresh.
 
 # =============================================================================
@@ -611,6 +611,39 @@ def kappa_18_level(ssq=SSQ):
 def higgs_cp_acp(t_n):
     """PAPER_035: Higgs CP asymmetry A_CP read as cos(pi*t_n)."""
     return math.cos(math.pi * t_n)
+
+
+def layered_gravity_ug1(E_DPM, r, rho_ua=RHO_UA, f_trz=F_TRZ):
+    """PAPER_042: 26-layer compressed gravity Ug1_i = E_DPM/r^2 * rho_UA * f_TRZ_i."""
+    return E_DPM / r ** 2 * rho_ua * f_trz
+
+def polynomial_energy_level(n):
+    """PAPER_043: 26-level polynomial energy hierarchy E_n = 10^(n-20) J (level 20 = 1 J Ug4 anchor)."""
+    return 10.0 ** (n - 20)
+
+def level_density(n, rho_L1):
+    """PAPER_043: parabolic level density rho_n = rho_level1 * n^2."""
+    return rho_L1 * n ** 2
+
+def dpm_center_radius(i):
+    """PAPER_044: 26-center DPM manifold radii ladder r_i = 10^(-35 + i/3) m (r_1 ~ Planck length)."""
+    return 10.0 ** (-35.0 + i / 3.0)
+
+def phase_transition_energy(n, rho_L1):
+    """PAPER_045: matter-state phase-transition energy density Delta_rho = rho_L1*(2n+1)."""
+    return rho_L1 * (2.0 * n + 1.0)
+
+def cross_scale_coupling(lam_i, lam_j, n_i, n_j):
+    """PAPER_045: cross-scale coupling C_ij = lambda_i*lambda_j*sqrt(min(n)/max(n))."""
+    return lam_i * lam_j * math.sqrt(min(n_i, n_j) / max(n_i, n_j))
+
+def nuclear_core_coupling(A, ratio=1000.0, A_ref=56.0):
+    """PAPER_046/047: nuclear-core triad coupling g(A) = 1000*(A/56)^(1/3) (Fe-56 = reference iron peak)."""
+    return ratio * (A / A_ref) ** (1.0 / 3.0)
+
+def ug4_bh_pressure(M_BH, rho_vac, d, E_LEP, alpha_t=0.0, t_n=0.0):
+    """PAPER_048: Ug4 BH vacuum pressure = M_BH*rho_vac/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n)."""
+    return M_BH * rho_vac / (d ** 2 * E_LEP) * math.exp(-alpha_t) * math.cos(math.pi * t_n)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)
@@ -3011,9 +3044,13 @@ def _paper_041(dataset):
     import math as _m
     s_min = (1.0e-13 * 1.0e60 * (1.616e-35) ** 2) / (1.381e-23 * 9.0e40)   # 2.1e-41
     sfe_runaway = (0.01 * _m.sqrt(0.01)) / (0.001 * _m.sqrt(0.001))        # 31.6
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'icm-thermo')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.052, 'DVP_prime_paper': 37, 'DVP_n_channel_paper': 16/26.0,
+        'DVP_primes': (37, 16/26.0), 'DVP_resonant': True,
+
             'thermostat_equation': 'P*V*(rho_ICM/rho_lobe)*(v_rise/c) = 3*sigma_X^3*r_h/G',
+            'eqlib': ['_fubii_virx'],
             's_ent_min': s_min,                      # 2.1e-41 VERIFIED
             'k_floor_factor_obs': (2.0, 3.0),        # observed above cooling prediction
             'sfe_runaway_ratio': sfe_runaway,        # 31.6 per 10x drop VERIFIED
@@ -3028,7 +3065,9 @@ def _paper_041(dataset):
             'n_b_used_m3': 1.0e-12,                  # Q-039a 1e12 gap
             'cooling_flow_deficit': 100.0,           # observed SFR vs predicted
             'unified_variant_count': 5,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('thermostat: P*V*(rho_r)*(v/c) = 3*sigma^3*r_h/G; '
                     'S_min = P*V*l_P^2/(k_B*A); F_sfe ~ eps^(3/2); '
                     'F_whim ~ T^(3/2)*n_b*r_fil'),
@@ -3066,9 +3105,14 @@ def _paper_042(dataset):
     e_phonon = 6.626e-34 * 1.25e12                   # 8.28e-22 J = omega_SCm anchor
     f_planck = (3.0e8) ** 4 / 6.674e-11              # 1.21e44 N
     layers_span = 61.0 / 25.0                        # 2.44 orders/layer implied
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, '26layer-gravity')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.159, 'DVP_prime_paper': 41, 'DVP_n_channel_paper': 17/26.0,
+        'DVP_primes': (41, 17/26.0), 'DVP_resonant': True,
+
             'n_layers': D_CRIT,                      # 26 registry-composed
+            'ug1_layer_lib': layered_gravity_ug1(1.0, 1.0),
+            'eqlib': ['layered_gravity_ug1'],
             'span_orders': 61,
             'implied_orders_per_layer': layers_span, # Q-040a
             'amplification_stated': (10.0, 1.0e12),
@@ -3087,7 +3131,9 @@ def _paper_042(dataset):
             'f_rel_family_n': 1.0e-10,               # Q-040b vs "4.30e?"
             'sgr_a_rs_m': 1.27e10,                   # layer 22
             'astro_layers': {'sn1006': 19, 'sgr_a': 22},
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g = sum_26 (Ug1+Ug2+Ug3+Ug4)_i; Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i; '
                     'E_LENR = h * 1.25 THz'),
         'source': 'PAPER_042',
@@ -3128,9 +3174,14 @@ def _paper_043(dataset):
     v_n = lambda n: 10.0 ** (n - 12) / n ** 2
     ui_10 = 0.75 * 1.0e3 * 1.25e12 * 1.0 * 1.01      # 9.47e14 VERIFIED
     e8_mev = e_n(8) / 1.602e-19 / 1.0e6              # 6.24 MeV
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'energy-hierarchy')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.056, 'DVP_prime_paper': 43, 'DVP_n_channel_paper': 18/26.0,
+        'DVP_primes': (43, 18/26.0), 'DVP_resonant': True,
+
             'polynomial_e1_j': e_n(1),               # 1e-19
+            'poly_e20_lib': polynomial_energy_level(20), 'level_density_lib': level_density(10, 7e-11),
+            'eqlib': ['polynomial_energy_level','level_density'],
             'polynomial_e20_j': e_n(20),             # 1.0 (Ug4 anchor)
             'polynomial_e26_j': e_n(26),             # 1e6
             'span_orders': 25,
@@ -3146,7 +3197,9 @@ def _paper_043(dataset):
             'density_ratio_used': 1.0e3,             # Q-041b three-way
             'f_trz_paper_default': 0.01,             # Q-041c vs F_TRZ = 0.1
             'ug3_harmonic': 'sin(i*pi/26)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('E_n = 10^(n-20) J; rho_n = rho_1*n^2; V_n = 10^(n-12)/n^2; '
                     'U_i = lambda_i*(rho_r)*omega_LENR*cos(pi*t_n)*(1+f_TRZ)'),
         'source': 'PAPER_043',
@@ -3182,9 +3235,14 @@ def _paper_044(dataset):
     h_i = lambda i: (i - 1) % 7
     k_i = lambda i: (i - 1) // 7
     e_center = lambda i: 1.0e-8 * i**2 * (4.0/3.0) * _m.pi * r_i(i)**3
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'dpm-manifold')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.063, 'DVP_prime_paper': 47, 'DVP_n_channel_paper': 19/26.0,
+        'DVP_primes': (47, 19/26.0), 'DVP_resonant': True,
+
             'n_centers': D_CRIT,
+            'r_center_lib': dpm_center_radius(1),
+            'eqlib': ['dpm_center_radius'],
             'quantum_numbers_check': {8: (h_i(8), k_i(8)), 26: (h_i(26), k_i(26))},   # (0,1),(4,3) EXACT
             'r_1_m': r_i(1),                         # 2.15e-35 ~ Planck
             'r_26_m': r_i(26),                       # 4.64e-27 (label slip Q-042a)
@@ -3198,7 +3256,9 @@ def _paper_044(dataset):
             'validator_score': (12, 12),
             'dpm_naming': ('Duality of Plasmatic Medium (here)',
                            'Di-Pseudo-Monopole (predecessor canonical)'),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('h_i = (i-1) mod 7; k_i = floor((i-1)/7); l_i = i; '
                     'r_i = 10^(-35+i/3); E_i = rho_L1*i^2*(4pi/3)*r_i^3'),
         'source': 'PAPER_044',
@@ -3233,9 +3293,14 @@ def _paper_045(dataset):
     lam = {10: 0.75, 11: 0.70, 12: 0.65, 13: 0.60, 26: 0.05}
     c_ij = lambda i, j: lam[i] * lam[j] * _m.sqrt(min(rho(i), rho(j)) / max(rho(i), rho(j)))
     d_rho = lambda n: 1.0e-8 * (2 * n + 1)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'phase-transitions')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.119, 'DVP_prime_paper': 53, 'DVP_n_channel_paper': 20/26.0,
+        'DVP_primes': (53, 20/26.0), 'DVP_resonant': True,
+
             'phase_levels': {'solid': 10, 'liquid': 11, 'gas': 12, 'plasma': 13},
+            'phase_energy_lib': phase_transition_energy(10, 7e-11), 'coupling_lib': cross_scale_coupling(0.75, 0.70, 10, 11),
+            'eqlib': ['phase_transition_energy','cross_scale_coupling'],
             'melting_j_m3': d_rho(10),               # 2.1e-7 VERIFIED
             'vaporization_j_m3': d_rho(11),          # 2.3e-7 VERIFIED
             'ionization_j_m3': d_rho(12),            # 2.5e-7 VERIFIED
@@ -3248,7 +3313,9 @@ def _paper_045(dataset):
             'plasma_beta': 0.60,                     # supports Q-041e BETA_I origin
             'validator_score': (10, 11),
             'failure_analysis': 'strict-vs-nonstrict lookup inequality, root-caused + fixed in-paper',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('Delta_rho = rho_L1*(2n+1); C_ij = lambda_i*lambda_j*sqrt(min/max); '
                     'rho_n = rho_L1*n^2'),
         'source': 'PAPER_045',
@@ -3283,9 +3350,14 @@ def _paper_046(dataset):
     vs half-life labeling (3.2 yr = 1/gamma).
     """
     g_coupling = lambda a: 1000.0 * (a / 56.0) ** (1.0 / 3.0)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'yinyang-cosmology')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.086, 'DVP_prime_paper': 59, 'DVP_n_channel_paper': 21/26.0,
+        'DVP_primes': (59, 21/26.0), 'DVP_resonant': True,
+
             'rho_ratio_framework': 1000.0,           # Q-041b direction datum
+            'g_fe56_lib': nuclear_core_coupling(56), 'g_u238_lib': nuclear_core_coupling(238),
+            'eqlib': ['nuclear_core_coupling'],
             'g_h1': g_coupling(1),                   # 260 VERIFIED
             'g_fe56': g_coupling(56),                # 1000 reference (iron peak)
             'g_u238': g_coupling(238),               # 1619 VERIFIED
@@ -3303,7 +3375,9 @@ def _paper_046(dataset):
                                'Duality of Plasmatic Medium (044)',
                                'Dark Photon Manifold (here)'),
             'validator_score': (12, 12),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g(A) = 1000*(A/56)^(1/3); f_bb = exp(-gamma*t)*cos(2pi*300*t); '
                     'E_universe ~ E_prebb * k_eta * tau_infl/t_Planck (gap disclosed)'),
         'source': 'PAPER_046',
@@ -3339,9 +3413,14 @@ def _paper_047(dataset):
     v_nuc_fe = 7.24e-45 * 56                          # 4.05e-43 m^3
     b_uqff = 1000.0 * v_nuc_fe * 1.0e-8 * 6.242e12    # 2.53e-35 MeV
     g = lambda a: 1000.0 * (a / 56.0) ** (1.0 / 3.0)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'nuclear-be')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.149, 'DVP_prime_paper': 61, 'DVP_n_channel_paper': 22/26.0,
+        'DVP_primes': (61, 22/26.0), 'DVP_resonant': True,
+
             'semf_fe56_mev': semf,                    # 490.9 VERIFIED
+            'g_coupling_lib': nuclear_core_coupling(56),
+            'eqlib': ['nuclear_core_coupling'],
             'literature_fe56_mev': 492.3,
             'semf_error_pct': abs(semf - 492.3) / 492.3 * 100,   # 0.3
             'b_uqff_fe56_mev': b_uqff,                # 2.53e-35 negligible (honest)
@@ -3354,7 +3433,9 @@ def _paper_047(dataset):
             'leaked_artifact': 'conversation-summary sentence in prose (Q-044b)',
             'semf_coeffs': {'a_v': 15.75, 'a_s': 17.80, 'a_c': 0.711,
                             'a_a': 23.70, 'a_p': 11.18},
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('B_SEMF = a_v*A - a_s*A^(2/3) - a_c*Z^2/A^(1/3) - a_a*(A-2Z)^2/A '
                     '+ a_p/sqrt(A); B_UQFF = g(A)*V_nuc*rho_L1*k_conv'),
         'source': 'PAPER_047',
@@ -3395,9 +3476,14 @@ def _paper_048(dataset):
     d_g = 2.44e20
     ug4_peak = m_bh * rho_dense_j / d_g ** 2         # 1.246e28 VERIFIED
     alpha_t = 164.36
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'ug4-bh-pressure')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.164, 'DVP_prime_paper': 67, 'DVP_n_channel_paper': 23/26.0,
+        'DVP_primes': (67, 23/26.0), 'DVP_resonant': True,
+
             'ug4_peak_n_m2': ug4_peak,               # 1.246e28
+            'ug4_lib': ug4_bh_pressure(8.2543e36, 8.988e31, 2.44e20, 1.0e-10),
+            'eqlib': ['ug4_bh_pressure'],
             'ug4_validator_n_m2': 1.8937e-23,        # THE 1.894 forensic number
             'ug4_eff_l24': 0.10 * 1.8937e-23,        # 1.894e-24
             'lambda_24': 0.10,                       # 043 beta-table EXACT
@@ -3412,7 +3498,9 @@ def _paper_048(dataset):
             'off_scale_n': 73.87,                    # honest disclosure -> channel index
             'early_universe_role': 'BH-seeded [SCm] concentration in galaxy formation',
             'forensic_1894': 'predecessor PAPER_2156 unknown-origin 1.894 = this Ug4 validator value (candidate)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('Ug4 = M_BH*rho_vac[SCm]/(d^2*E_LEP)*exp(-alpha*t)*cos(pi*t_n); '
                     'rho_vac[SCm] = rho_c*c^2 near BH'),
         'source': 'PAPER_048',
@@ -3451,9 +3539,14 @@ def _paper_049(dataset):
     rho_lambda_kg = 5.96e-27                         # the value the paper quoted as J/m^3
     ratio_paper = 7.0e-11 / rho_lambda_kg            # 1.17e16 (units artifact)
     ratio_consistent = 7.0e-11 / rho_lambda_j        # 0.117
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'vacuum-energy')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.058, 'DVP_prime_paper': 71, 'DVP_n_channel_paper': 24/26.0,
+        'DVP_primes': (71, 24/26.0), 'DVP_resonant': True,
+
             'scm_dense_j_m3': 8.988e31,
+            'level_density_lib': level_density(26, 7e-11),
+            'eqlib': ['level_density','polynomial_energy_level'],
             'ua_trapped_j_m3': 5.6472e-12,
             'lambda_vac_validator_j_m3': 7.0e-11,
             'sum_n2_20_26': sum_n2,                  # 3731 EXACT
@@ -3466,7 +3559,9 @@ def _paper_049(dataset):
             'cosmic_dominant_levels': (20, 26),
             'lambda_identification': 'residual lowest-frequency [UA] after Yin-Yang cancellation',
             'forensic_2147_root': 'Session-0 origin of the kg/m3-vs-J/m3 drift (predecessor PAPER_2147)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('lambda_vac ~ rho_L1*sum(n^2, 20..26)/7 (stated; validator opaque); '
                     'rho_SCm_dense = rho_c*c^2; observed Lambda = residual [UA]'),
         'source': 'PAPER_049',
@@ -3502,9 +3597,14 @@ def _paper_050(dataset):
     """
     partition = (9, 4, 13)
     c_ratio = 0.0144 / 0.477                         # 0.0302 coupling length scale
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'compactification')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.18, 'DVP_prime_paper': 73, 'DVP_n_channel_paper': 25/26.0,
+        'DVP_primes': (73, 25/26.0), 'DVP_resonant': True,
+
             'partition_9_4_13': partition,
+            'poly_level_lib': polynomial_energy_level(26),
+            'eqlib': ['polynomial_energy_level'],
             'partition_sum': sum(partition),         # 26 = D_CRIT
             'spacetime_identification': {'x': 'solid L10', 'y': 'liquid L11',
                                          'z': 'gas L12', 'ct': 'plasma L13'},
@@ -3518,7 +3618,9 @@ def _paper_050(dataset):
             'source115_systems': 19,
             'cp2_score': (4, 4),
             'predecessor_flow': '26->10->6->4 (PAPER_1160)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('26 = 9 (compact) + 4 (observable = matter states) + 13 (channels); '
                     'C_10,26/C_10,11 = 0.0302; g_j = sum_26 sum_4 alpha_ijk*phi_k*lambda_i*exp(-kappa*t)'),
         'source': 'PAPER_050',

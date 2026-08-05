@@ -43,3 +43,13 @@ ew-precision,1,PAPER_033 oblique STU
 higgs-kappa-t,1,PAPER_034 kappa_t
 higgs-cp,1,PAPER_035 A_CP
 fubii-buoyancy,5,PAPER_036-040 F_UBii 17-variant family + clusters
+26layer-gravity,1,PAPER_042 26-layer MC gravity
+energy-hierarchy,2,PAPER_043/049 26-level polynomial
+dpm-manifold,1,PAPER_044 26-center pre-BB
+phase-transitions,2,PAPER_045 matter-state quartet
+yinyang-cosmology,1,PAPER_046 Yin-Yang + nuclear coupling
+nuclear-be,1,PAPER_047 SEMF
+ug4-bh-pressure,1,PAPER_048 Ug4 BH
+vacuum-energy,1,PAPER_049 3-component vacuum
+compactification,1,PAPER_050 26D->3+1
+icm-thermo,1,PAPER_041 thermostat

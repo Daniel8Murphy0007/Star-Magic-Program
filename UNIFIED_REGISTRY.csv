@@ -786,3 +786,19 @@ dvp_prime_paper_037,PAPER_037,observable,p_DVP=19,§B.2,19,paper §B.2,0.0,vds-d
 dvp_prime_paper_038,PAPER_038,observable,p_DVP=23,§B.2,23,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_038,1,1,0,0,1,WIRED
 dvp_prime_paper_039,PAPER_039,observable,p_DVP=29,§B.2,29,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_039,1,1,0,0,1,WIRED
 dvp_prime_paper_040,PAPER_040,observable,p_DVP=31,§B.2,31,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_040,1,1,0,0,1,WIRED
+layered_gravity_ug1,PAPER_042,equation,E_DPM/r^2 rho_UA f_TRZ,E_DPM/r^2 rho_UA f_TRZ,compiled,26-layer gravity,0.0,26layer-gravity,0.84,PAPER_042,1,1,0,0,1,WIRED
+polynomial_energy_level,PAPER_043,equation,10^(n-20) J,10^(n-20) J,compiled,energy hierarchy,0.0,energy-hierarchy,0.84,PAPER_043,1,1,0,0,1,WIRED
+level_density,PAPER_043,equation,rho_L1 n^2,rho_L1 n^2,compiled,parabolic density,0.0,energy-hierarchy,0.84,PAPER_043,1,1,0,0,1,WIRED
+dpm_center_radius,PAPER_044,equation,10^(-35+i/3) m,10^(-35+i/3) m,compiled,26-center radii,0.0,dpm-manifold,0.84,PAPER_044,1,1,0,0,1,WIRED
+phase_transition_energy,PAPER_045,equation,rho_L1(2n+1),rho_L1(2n+1),compiled,matter-state,0.0,phase-transitions,0.84,PAPER_045,1,1,0,0,1,WIRED
+ug4_bh_pressure,PAPER_048,equation,M rho_vac/(d^2 E_LEP)exp cos,M rho_vac/(d^2 E_LEP)exp cos,compiled,BH pressure,0.0,ug4-bh-pressure,0.84,PAPER_048,1,1,0,0,1,WIRED
+dvp_prime_paper_041,PAPER_041,observable,p_DVP=37,§B.2,37,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_041,1,1,0,0,1,WIRED
+dvp_prime_paper_042,PAPER_042,observable,p_DVP=41,§B.2,41,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_042,1,1,0,0,1,WIRED
+dvp_prime_paper_043,PAPER_043,observable,p_DVP=43,§B.2,43,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_043,1,1,0,0,1,WIRED
+dvp_prime_paper_044,PAPER_044,observable,p_DVP=47,§B.2,47,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_044,1,1,0,0,1,WIRED
+dvp_prime_paper_045,PAPER_045,observable,p_DVP=53,§B.2,53,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_045,1,1,0,0,1,WIRED
+dvp_prime_paper_046,PAPER_046,observable,p_DVP=59,§B.2,59,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_046,1,1,0,0,1,WIRED
+dvp_prime_paper_047,PAPER_047,observable,p_DVP=61,§B.2,61,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_047,1,1,0,0,1,WIRED
+dvp_prime_paper_048,PAPER_048,observable,p_DVP=67,§B.2,67,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_048,1,1,0,0,1,WIRED
+dvp_prime_paper_049,PAPER_049,observable,p_DVP=71,§B.2,71,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_049,1,1,0,0,1,WIRED
+dvp_prime_paper_050,PAPER_050,observable,p_DVP=73,§B.2,73,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_050,1,1,0,0,1,WIRED
