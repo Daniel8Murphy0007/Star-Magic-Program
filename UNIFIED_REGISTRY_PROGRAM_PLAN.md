@@ -170,3 +170,9 @@ Interim discoveries during any phase are recorded as **numbered amendments** in 
 ---
 
 **This plan executes nothing by itself. R0 is read-only and can start on your word; everything irreversible waits behind the adjudicated registry and your §6 decisions.**
+
+## Progress note 2026-08-04
+COMPLETE-COMPILE standard adopted (Daniel: "compile ALL physics/equations"): each paper dispatch composes over the
+equation library capturing every equation and every section, not just headline results. PAPER_001-015 + 008b-014b done.
+Standing lesson: slice a paper to the NEXT @_register that occurs AFTER it (never an assumed numeric-next id) —
+a backward slice duplicated 276 papers before detection/repair. 342 dispatches, 0 duplicates. NOT shipped (300+ mandate).

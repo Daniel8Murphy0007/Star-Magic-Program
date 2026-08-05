@@ -94,3 +94,19 @@ predecessor program.
 - Falsifiability graph edges: **658**
 - Live derived constants: 73 (50 EXACT); residuals best 0.0000% / median 0.0000% / worst 6.8569% (worst = Lambda PAPER_2094 pure-primitive; H_0 route upgraded PAPER_2093 -> PAPER_1573 A_5+SO_5=70 km/s/Mpc EXACT 47.6x tighter than prior; PAPER_2125 tension doctrine REVISED per PAPER_2144)
 - Independent primitives: **9**
+
+### Equation-library rewire (PAPER_001-003)
+| Equation | Route | Value | Origin |
+|---|---|---|---|
+| D_TRZ | 1-F_TRZ | 0.9 | PAPER_001 |
+| D_total_gw | 1-D_phys/D_BSFG | 1/3 | PAPER_001/2154 |
+| D_String | D_total/D_TRZ | 0.37037 | PAPER_001 |
+| VDS_ratio | rho_SCm/rho_UA=F_TRZ | 0.1 | PAPER_2156 (drift 1.894) |
+| Delta_YM | integer-primitive | 1.736 GeV | PAPER_1318 |
+
+## Update 2026-08-04 — closed forms through PAPER_015
+
+Added closed-form rows (see UNIFIED_REGISTRY_RESULTS_TABLE.csv): tidal_Lambda_NS (2/3 k2 (R/M)^5),
+f_SCm_suppression, qnm_freq_uqff, stochastic_Omega_bns (D^2), peters_tau_ext (1/D^2), magnetar_edot_supp
+(D_SCm^2), pbh_A_damp ((D_phys-1)/SO_5=0.3 primitive), H0_uqff_bias (1.07), f_isco_observer, D_eff_beat.
+All primitive-sourced; residuals honest (0.0-0.35%).

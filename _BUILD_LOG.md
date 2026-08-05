@@ -25,3 +25,14 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 [2026-07-28T19:30:00Z] VERSION_BUMPED v0.2.0 — pyproject.toml, uqff_calculator.py, uqff_fidelity_tests.py, CITATION.cff → 0.2.0
 
 *(subsequent events append; do not rewrite history)*
+
+## 2026-08-04 — COMPLETE-COMPILE build (PAPER_001-015 + b-variants)
+- gate: green | dispatches: 342 | duplicate @_register: 0 | calculator lines: 18,222
+- equation library: 408 primitive-sourced callable functions
+- shared appendix helper: _common_uqff_blocks() (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6)
+- registry: R0 master 733 rows, GRAPH 1916 edges, 0 malformed CSVs across pantheon
+- NOT SHIPPED (300+ mandate); working version 0.337.0
+- [Windows-side save 2026-08-04 to trigger VS Code file-watcher refresh]
+
+## 2026-08-04 — batch 024-030 BSM complete-compile
+- 441 library fns | 342 dispatches | 0 duplicates | §B ladder 97-113 gate-guarded | gate green | NOT shipped

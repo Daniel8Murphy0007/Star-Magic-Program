@@ -1,1 +1,39 @@
 category,count,detail
+PAPER_001_linked_whitepapers,54,GW170817 damping links: 002/003/006/017 + S225 imports 1000-1081 + closure 1159-1175/1318 + refs 420/421/642/840/877
+PAPER_002_linked_whitepapers,37,GW190425 mass-gap links: S225 GW/AGN/YM + Production Framework + Cosmogenesis 877 + closure chain
+PAPER_003_linked_whitepapers,32,GW150914 BBH links: S225 GW/9-sector + Production Framework + Cosmogenesis 877 + VDS/DVP/BSH
+PAPER_004_linked_whitepapers,35,GW170817 chirp phase: S225 GW/9-sector/ICM + Production Framework + Cosmogenesis + VDS/DVP/BSH
+PAPER_005_linked_whitepapers,35,BBH energy retention: S225 + Production Framework + Cosmogenesis + VDS/DVP/BSH
+PAPER_006_linked_whitepapers,43,Multi-messenger GW170817: S225 + Production Framework + Cosmogenesis + VDS/DVP/BSH
+GW-tidal,1,PAPER_007 tidal deformability + SCm suppression
+GW-waveform,1,PAPER_008 phase evolution + template mismatch
+GW-inspiral,1,PAPER_008b full 100s inspiral waveform
+GW-damping,2,PAPER_009 4-mechanism damping decomposition
+GW-postmerger,1,PAPER_010 post-merger QNM + remnant mass
+kozima-lenr,5,"K.1-K.6 neutron drop->SCm cross-section->polylog coupling (PAPER_001 appendix, all GW papers)"
+cosmogenesis,3,L_cosmo + V_phi_NS + Euler-Lagrange EOM (PAPER_877 linkage)
+ramanujan,3,"W_26 + R_n^(26,3) + Li_26 polylog (26D summation)"
+vds-dvp-bsh,2,DVP primes + BSH saturation (VDS profile drift-corrected)
+icm-buoyancy,3,beta-model density + hydrostatic bias + cooling flow
+stochastic-bg,1,PAPER_011 SGWB Omega D^2
+eccentric-binary,1,PAPER_012 Peters circularization
+magnetar-spindown,2,PAPER_013 Edot D_SCm^2 + braking index
+primordial-bh,3,PAPER_014 modified Friedmann + mass fn
+gw-cosmology,2,PAPER_015 propagation damping + H0 bias
+lisa-smbh,1,PAPER_013b f_ISCO
+time-domain-chirp,1,PAPER_010b D_eff beat
+entanglement,2,PAPER_016 CHSH + range extension
+redshift-gw,2,PAPER_017 F_combined 0.622 origin + phase lag
+aether-noise,1,PAPER_018 LISA aether noise comb
+pta,1,PAPER_019 TRZ resonance inversion
+cosmic-ray,2,PAPER_020 UHECR aether drag + Z^1/3
+lensing,1,PAPER_021 sigma8 rho_TRZ
+string-compactification,2,PAPER_022 D_String origin + KK scale
+tau-g2,2,PAPER_023 KK + string loops
+tau-edm,2,PAPER_024 CP phases
+dark-matter,2,PAPER_025 ACP/ACP2 DM
+sterile-neutrino,1,PAPER_026 sterile spectrum
+lfv,1,PAPER_027 temporal reversal
+bsm-couplings,1,PAPER_028 CKM vacuum density
+tev-newphysics,1,PAPER_029 cosmic budget
+dark-mediators,1,PAPER_030 mediator suppression

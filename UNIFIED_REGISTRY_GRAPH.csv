@@ -2,31 +2,14 @@ src_kind,src,dst_kind,dst,edge_info
 primitive,F_TRZ,observable,gw170817_D_total,D_TRZ = 1-F_TRZ
 primitive,D_GW_EROSION,observable,gw170817_mismatch,mismatch ~ 2/3 EXACT
 primitive,B_CRIT,observable,gw170817_D_total,D_SCm = f(B_NS/B_CRIT)
-observable,gw170817_D_total,paper,PAPER_001,primary derivation
-observable,gw170817_h_uqff_strain,paper,PAPER_001,primary derivation
-observable,gw170817_snr_uqff,paper,PAPER_001,primary derivation
-observable,gw170817_mismatch,paper,PAPER_001,primary derivation
 primitive,B_CRIT,observable,gw190425_a_scm_function,A_SCm=exp[-(B/B_crit)^2]
-observable,gw190425_F_uqff,paper,PAPER_002,primary derivation
-observable,gw190425_a_scm_function,paper,PAPER_002,primary derivation
-observable,gw190425_mass_gap_classification,paper,PAPER_002,primary derivation
 primitive,F_TRZ,observable,gw150914_D_total,D_TRZ = 1-F_TRZ
 primitive,D_GW_EROSION,observable,gw150914_distance_bias,bias = 1/(1-D_GW_EROSION) ~ 3
 primitive,KAPPA_PER_DAY,observable,gw150914_phase_lag,kappa in stated formula
 primitive,SSQ,observable,gw150914_phase_lag,SSq in stated formula
-observable,gw150914_D_total,paper,PAPER_003,primary derivation
-observable,gw150914_distance_bias,paper,PAPER_003,primary derivation
-observable,gw150914_phase_lag,paper,PAPER_003,primary derivation
 primitive,F_TRZ,observable,gw170817_chirp_D_total,(1-f_TRZ) explicit in paper formula
-observable,gw170817_chirp_D_total,paper,PAPER_004,primary derivation
-observable,gw170817_chirp_h_uqff_peak,paper,PAPER_004,primary derivation
 primitive,F_TRZ,observable,bbh_merger_F_combined,(1-F_TRZ)^2 composition
-observable,bbh_merger_F_combined,paper,PAPER_005,primary derivation
-observable,bbh_merger_energy_retention,paper,PAPER_005,primary derivation
 primitive,F_TRZ,observable,gw170817_multimessenger_D_total,(1-F_TRZ) in chain
-observable,gw170817_multimessenger_D_total,paper,PAPER_006,primary derivation
-observable,gw170817_gw_speed_preservation,paper,PAPER_006,primary derivation
-observable,gw170817_detection_volume_shrink,paper,PAPER_006,primary derivation
 primitive,B_CRIT,observable,bns_f_scm_suppression,f_SCm(B) threshold at B_crit
 observable,bns_tidal_deformability_lambda,paper,PAPER_007,primary derivation
 observable,bns_f_scm_suppression,paper,PAPER_007,primary derivation
@@ -99,7 +82,6 @@ observable,trz_spectral_dip,paper,PAPER_018,primary derivation
 primitive,SSQ,observable,trz_resonance_inversion,D_TRZ = 1 + SSq*Phi_TRZ
 primitive,SSQ,observable,pta_amplitude_resolution,D_total(f_yr) = 1 + SSq*1.053
 observable,trz_resonance_inversion,paper,PAPER_019,primary derivation
-observable,trz_resonance_inversion,paper,PAPER_001,100 Hz BNS 0.333 consistency
 observable,trz_resonance_inversion,paper,PAPER_009,D_String 0.37 calibrated source
 observable,pta_amplitude_resolution,paper,PAPER_019,primary derivation
 observable,pta_spectral_tilt,paper,PAPER_019,primary derivation
@@ -115,7 +97,6 @@ primitive,RHO_CRITICAL_KG_PER_M3,observable,uqff_vacuum_lensing_density,registry
 observable,sigma8_tension_resolution,paper,PAPER_021,primary derivation
 observable,uqff_vacuum_lensing_density,paper,PAPER_021,primary derivation
 observable,gw_lensing_deficit,paper,PAPER_021,primary derivation
-observable,gw_lensing_deficit,paper,PAPER_001,D_total = 0.333 input
 primitive,SSQ,observable,d_string_bns_origin,1 - SSq^2*N_eff
 primitive,SSQ,observable,gw_polarization_ssq_ladder,"amps = SSq^2, SSq^3, SSq^4"
 primitive,D_CRIT,observable,kk_compactification_scale,N_compact = D_crit - D_phys = 22
@@ -381,7 +362,6 @@ observable,fubii_master_integral,paper,PAPER_036,17-variant family root
 observable,kappa_mcmc_validation,paper,PAPER_063,MCMC calibration
 primitive,KAPPA_PER_DAY,observable,kappa_mcmc_validation,validated primitive
 observable,q_wave_magnetic_energy,paper,PAPER_063,chain verification
-observable,q_wave_magnetic_energy,paper,PAPER_001,B_crit identification
 observable,four_mode_superposition,paper,PAPER_064,primary derivation
 primitive,KAPPA_PER_DAY,observable,four_mode_superposition,alpha_C weight
 primitive,SSQ,observable,four_mode_superposition,alpha_R weight
@@ -396,7 +376,6 @@ observable,mc_stability_suite,paper,PAPER_065,MC protocol
 observable,l26_lambda_inversion,paper,PAPER_065,label inversion
 primitive,RHO_SCM,observable,l26_lambda_inversion,measured-vs-primitive row
 observable,sgr1745_source4_anchors,paper,PAPER_066,chain verification
-observable,sgr1745_source4_anchors,paper,PAPER_001,system return
 observable,lenr_resonance_ratios,paper,PAPER_066,ratio^2 chains
 primitive,OMEGA_SCM_HZ,observable,lenr_resonance_ratios,omega_LENR clear print
 observable,lenr_resonance_ratios,paper,PAPER_062,identity pin confirmation
@@ -542,7 +521,6 @@ primitive,KAPPA_PER_DAY,observable,kappa_ssq_origins,burst-statistics origin
 primitive,SSQ,observable,kappa_ssq_origins,spin-down origin
 observable,bcrit_schwinger_resolution,paper,PAPER_094,Schwinger identification
 observable,bcrit_schwinger_resolution,paper,PAPER_063,Q_wave pin revision
-observable,bcrit_schwinger_resolution,paper,PAPER_002,Q-002 information
 observable,solvability_999_provenance,paper,PAPER_095,claim provenance
 observable,solvability_999_provenance,paper,PAPER_065,quoted claim
 primitive,SSQ,observable,solvability_999_provenance,superflare boost
@@ -793,7 +771,6 @@ observable,fdpm_cascade_inversion,paper,PAPER_146,dominance-map contradiction
 observable,sgr1745_afluid_validation,paper,PAPER_148,system validation
 observable,sgr1745_afluid_validation,paper,PAPER_146,12-term application
 observable,sgr1745_structural_votes,paper,PAPER_148,structural votes
-observable,sgr1745_structural_votes,paper,PAPER_002,B_crit vote
 observable,sgra_adpm_validation,paper,PAPER_149,system validation
 observable,sgra_adpm_validation,paper,PAPER_148,scope consistency
 observable,sgra_inversion_confirmation,paper,PAPER_149,inversion confirmation
@@ -1482,3 +1459,480 @@ observable,sigma_CS_rotor,paper,PAPER_328,wired
 observable,delta_pair_lenr,paper,PAPER_328,wired
 observable,delta_pair_lenr,observable,N_B_alpha_bec,both alpha-conjugate BEC
 paper,PAPER_328,paper,PAPER_1061,LENR / Kozima nuclear coupling
+primitive,F_TRZ,observable,D_TRZ,1-F_TRZ
+primitive,D_PHYS,observable,D_GW_erosion,D_phys/D_BSFG
+primitive,D_BSFG,observable,D_GW_erosion,D_phys/D_BSFG
+observable,D_GW_erosion,observable,D_total_gw,1-D_GW_erosion
+observable,D_TRZ,observable,D_String,D_total/D_TRZ
+primitive,OMEGA_SCM_HZ,observable,omega_SCm,2*pi*f
+primitive,SSQ,observable,S_26_third_order,26-state SSq product
+observable,S_26_third_order,observable,phonon_strain,1-0.47*Phi/S_26
+primitive,RHO_SCM,observable,L_Edd_UQFF,rho_SCm buoyancy
+observable,D_total_gw,observable,h_uqff_strain,D_total*h_GR
+observable,D_TRZ,paper,PAPER_001,wired
+observable,D_GW_erosion,paper,PAPER_001,wired
+observable,D_total_gw,paper,PAPER_001,wired
+observable,D_String,paper,PAPER_001,wired
+observable,D_SCm,paper,PAPER_001,wired
+observable,omega_SCm,paper,PAPER_001,wired
+observable,S_26_third_order,paper,PAPER_001,wired
+observable,phonon_strain,paper,PAPER_001,wired
+observable,h_uqff_strain,paper,PAPER_001,wired
+observable,snr_uqff,paper,PAPER_001,wired
+observable,mismatch_gw170817,paper,PAPER_001,wired
+observable,L_Edd_UQFF,paper,PAPER_001,wired
+observable,P_jet_UQFF,paper,PAPER_001,wired
+observable,F_buoy_ICM,paper,PAPER_001,wired
+paper,PAPER_001,paper,PAPER_017,links
+paper,PAPER_001,paper,PAPER_1000,links
+paper,PAPER_001,paper,PAPER_1001,links
+paper,PAPER_001,paper,PAPER_1002,links
+paper,PAPER_001,paper,PAPER_1004,links
+paper,PAPER_001,paper,PAPER_1007,links
+paper,PAPER_001,paper,PAPER_1009,links
+paper,PAPER_001,paper,PAPER_1010,links
+paper,PAPER_001,paper,PAPER_1011,links
+paper,PAPER_001,paper,PAPER_1012,links
+paper,PAPER_001,paper,PAPER_1014,links
+paper,PAPER_001,paper,PAPER_1022,links
+paper,PAPER_001,paper,PAPER_1033,links
+paper,PAPER_001,paper,PAPER_1035,links
+paper,PAPER_001,paper,PAPER_1037,links
+paper,PAPER_001,paper,PAPER_1039,links
+paper,PAPER_001,paper,PAPER_1040,links
+paper,PAPER_001,paper,PAPER_1041,links
+paper,PAPER_001,paper,PAPER_1042,links
+paper,PAPER_001,paper,PAPER_1044,links
+paper,PAPER_001,paper,PAPER_1046,links
+paper,PAPER_001,paper,PAPER_1048,links
+paper,PAPER_001,paper,PAPER_1051,links
+paper,PAPER_001,paper,PAPER_1052,links
+paper,PAPER_001,paper,PAPER_1059,links
+paper,PAPER_001,paper,PAPER_1061,links
+paper,PAPER_001,paper,PAPER_1064,links
+paper,PAPER_001,paper,PAPER_1065,links
+paper,PAPER_001,paper,PAPER_1066,links
+paper,PAPER_001,paper,PAPER_1069,links
+paper,PAPER_001,paper,PAPER_1070,links
+paper,PAPER_001,paper,PAPER_1072,links
+paper,PAPER_001,paper,PAPER_1073,links
+paper,PAPER_001,paper,PAPER_1078,links
+paper,PAPER_001,paper,PAPER_1079,links
+paper,PAPER_001,paper,PAPER_1080,links
+paper,PAPER_001,paper,PAPER_1081,links
+paper,PAPER_001,paper,PAPER_1159,links
+paper,PAPER_001,paper,PAPER_1162,links
+paper,PAPER_001,paper,PAPER_1163,links
+paper,PAPER_001,paper,PAPER_1165,links
+paper,PAPER_001,paper,PAPER_1167,links
+paper,PAPER_001,paper,PAPER_1170,links
+paper,PAPER_001,paper,PAPER_1171,links
+paper,PAPER_001,paper,PAPER_1175,links
+paper,PAPER_001,paper,PAPER_1318,links
+paper,PAPER_001,paper,PAPER_420,links
+paper,PAPER_001,paper,PAPER_421,links
+paper,PAPER_001,paper,PAPER_642,links
+paper,PAPER_001,paper,PAPER_840,links
+paper,PAPER_001,paper,PAPER_877,links
+observable,D_SCm,paper,PAPER_002,reused
+observable,D_TRZ,paper,PAPER_002,reused
+observable,D_String,paper,PAPER_002,reused
+observable,S_26_third_order,paper,PAPER_002,reused
+observable,F_uqff_gw190425,paper,PAPER_002,wired
+observable,F_chain_gw190425,paper,PAPER_002,wired
+observable,mass_gap_classification,paper,PAPER_002,wired
+paper,PAPER_002,paper,PAPER_1000,links
+paper,PAPER_002,paper,PAPER_1001,links
+paper,PAPER_002,paper,PAPER_1002,links
+paper,PAPER_002,paper,PAPER_1004,links
+paper,PAPER_002,paper,PAPER_1007,links
+paper,PAPER_002,paper,PAPER_1009,links
+paper,PAPER_002,paper,PAPER_1010,links
+paper,PAPER_002,paper,PAPER_1011,links
+paper,PAPER_002,paper,PAPER_1012,links
+paper,PAPER_002,paper,PAPER_1014,links
+paper,PAPER_002,paper,PAPER_1021,links
+paper,PAPER_002,paper,PAPER_1022,links
+paper,PAPER_002,paper,PAPER_1024,links
+paper,PAPER_002,paper,PAPER_1035,links
+paper,PAPER_002,paper,PAPER_1037,links
+paper,PAPER_002,paper,PAPER_1041,links
+paper,PAPER_002,paper,PAPER_1048,links
+paper,PAPER_002,paper,PAPER_1059,links
+paper,PAPER_002,paper,PAPER_1064,links
+paper,PAPER_002,paper,PAPER_1070,links
+paper,PAPER_002,paper,PAPER_1072,links
+paper,PAPER_002,paper,PAPER_1073,links
+paper,PAPER_002,paper,PAPER_1079,links
+paper,PAPER_002,paper,PAPER_1159,links
+paper,PAPER_002,paper,PAPER_1162,links
+paper,PAPER_002,paper,PAPER_1163,links
+paper,PAPER_002,paper,PAPER_1165,links
+paper,PAPER_002,paper,PAPER_1167,links
+paper,PAPER_002,paper,PAPER_1170,links
+paper,PAPER_002,paper,PAPER_1171,links
+paper,PAPER_002,paper,PAPER_1175,links
+paper,PAPER_002,paper,PAPER_1318,links
+paper,PAPER_002,paper,PAPER_420,links
+paper,PAPER_002,paper,PAPER_421,links
+paper,PAPER_002,paper,PAPER_642,links
+paper,PAPER_002,paper,PAPER_840,links
+paper,PAPER_002,paper,PAPER_877,links
+observable,D_TRZ,paper,PAPER_003,reused
+observable,D_String,paper,PAPER_003,reused
+primitive,KAPPA_PER_DAY,observable,uqff_phase_lag,kappa factor
+primitive,SSQ,observable,uqff_phase_lag,SSq factor
+primitive,G_UQFF,observable,gw_inspiral_strain,UQFF G
+primitive,C_UQFF_DERIVED,observable,gw_inspiral_strain,UQFF c
+observable,F_combined_bbh,paper,PAPER_003,wired
+observable,gw_inspiral_strain,paper,PAPER_003,wired
+observable,apparent_distance_bias,paper,PAPER_003,wired
+observable,uqff_phase_lag,paper,PAPER_003,wired
+paper,PAPER_003,paper,PAPER_1000,links
+paper,PAPER_003,paper,PAPER_1001,links
+paper,PAPER_003,paper,PAPER_1004,links
+paper,PAPER_003,paper,PAPER_1011,links
+paper,PAPER_003,paper,PAPER_1012,links
+paper,PAPER_003,paper,PAPER_1014,links
+paper,PAPER_003,paper,PAPER_1022,links
+paper,PAPER_003,paper,PAPER_1035,links
+paper,PAPER_003,paper,PAPER_1049,links
+paper,PAPER_003,paper,PAPER_1051,links
+paper,PAPER_003,paper,PAPER_1061,links
+paper,PAPER_003,paper,PAPER_1065,links
+paper,PAPER_003,paper,PAPER_1066,links
+paper,PAPER_003,paper,PAPER_1069,links
+paper,PAPER_003,paper,PAPER_1072,links
+paper,PAPER_003,paper,PAPER_1073,links
+paper,PAPER_003,paper,PAPER_1080,links
+paper,PAPER_003,paper,PAPER_1081,links
+paper,PAPER_003,paper,PAPER_1159,links
+paper,PAPER_003,paper,PAPER_1162,links
+paper,PAPER_003,paper,PAPER_1163,links
+paper,PAPER_003,paper,PAPER_1165,links
+paper,PAPER_003,paper,PAPER_1167,links
+paper,PAPER_003,paper,PAPER_1170,links
+paper,PAPER_003,paper,PAPER_1171,links
+paper,PAPER_003,paper,PAPER_1175,links
+paper,PAPER_003,paper,PAPER_1318,links
+paper,PAPER_003,paper,PAPER_420,links
+paper,PAPER_003,paper,PAPER_421,links
+paper,PAPER_003,paper,PAPER_642,links
+paper,PAPER_003,paper,PAPER_840,links
+paper,PAPER_003,paper,PAPER_877,links
+primitive,G_UQFF,observable,chirp_frequency_evolution,UQFF G
+primitive,C_UQFF_DERIVED,observable,chirp_frequency_evolution,UQFF c
+observable,D_TRZ,paper,PAPER_004,reused
+observable,D_String,paper,PAPER_004,reused
+observable,chirp_frequency_evolution,paper,PAPER_004,wired
+observable,h_uqff_chirp,paper,PAPER_004,wired
+paper,PAPER_004,paper,PAPER_1000,links
+paper,PAPER_004,paper,PAPER_1001,links
+paper,PAPER_004,paper,PAPER_1011,links
+paper,PAPER_004,paper,PAPER_1012,links
+paper,PAPER_004,paper,PAPER_1014,links
+paper,PAPER_004,paper,PAPER_1022,links
+paper,PAPER_004,paper,PAPER_1035,links
+paper,PAPER_004,paper,PAPER_1039,links
+paper,PAPER_004,paper,PAPER_1040,links
+paper,PAPER_004,paper,PAPER_1041,links
+paper,PAPER_004,paper,PAPER_1044,links
+paper,PAPER_004,paper,PAPER_1046,links
+paper,PAPER_004,paper,PAPER_1051,links
+paper,PAPER_004,paper,PAPER_1061,links
+paper,PAPER_004,paper,PAPER_1065,links
+paper,PAPER_004,paper,PAPER_1066,links
+paper,PAPER_004,paper,PAPER_1072,links
+paper,PAPER_004,paper,PAPER_1079,links
+paper,PAPER_004,paper,PAPER_1080,links
+paper,PAPER_004,paper,PAPER_1081,links
+paper,PAPER_004,paper,PAPER_1159,links
+paper,PAPER_004,paper,PAPER_1162,links
+paper,PAPER_004,paper,PAPER_1163,links
+paper,PAPER_004,paper,PAPER_1165,links
+paper,PAPER_004,paper,PAPER_1167,links
+paper,PAPER_004,paper,PAPER_1170,links
+paper,PAPER_004,paper,PAPER_1171,links
+paper,PAPER_004,paper,PAPER_1176,links
+paper,PAPER_004,paper,PAPER_1178,links
+paper,PAPER_004,paper,PAPER_1318,links
+paper,PAPER_004,paper,PAPER_420,links
+paper,PAPER_004,paper,PAPER_421,links
+paper,PAPER_004,paper,PAPER_642,links
+paper,PAPER_004,paper,PAPER_840,links
+paper,PAPER_004,paper,PAPER_877,links
+primitive,F_TRZ,observable,F_combined_bbh_005,(1-F_TRZ)^2
+primitive,G_UQFF,observable,gw_power_peters,UQFF G
+primitive,C_UQFF_DERIVED,observable,gw_power_peters,UQFF c
+observable,F_combined_bbh_005,paper,PAPER_005,wired
+observable,gw_power_peters,paper,PAPER_005,wired
+observable,mass_retention_bbh,paper,PAPER_005,wired
+paper,PAPER_005,paper,PAPER_004,links
+paper,PAPER_005,paper,PAPER_1000,links
+paper,PAPER_005,paper,PAPER_1001,links
+paper,PAPER_005,paper,PAPER_1011,links
+paper,PAPER_005,paper,PAPER_1012,links
+paper,PAPER_005,paper,PAPER_1014,links
+paper,PAPER_005,paper,PAPER_1022,links
+paper,PAPER_005,paper,PAPER_1035,links
+paper,PAPER_005,paper,PAPER_1039,links
+paper,PAPER_005,paper,PAPER_1040,links
+paper,PAPER_005,paper,PAPER_1041,links
+paper,PAPER_005,paper,PAPER_1044,links
+paper,PAPER_005,paper,PAPER_1046,links
+paper,PAPER_005,paper,PAPER_1051,links
+paper,PAPER_005,paper,PAPER_1061,links
+paper,PAPER_005,paper,PAPER_1065,links
+paper,PAPER_005,paper,PAPER_1066,links
+paper,PAPER_005,paper,PAPER_1072,links
+paper,PAPER_005,paper,PAPER_1079,links
+paper,PAPER_005,paper,PAPER_1080,links
+paper,PAPER_005,paper,PAPER_1081,links
+paper,PAPER_005,paper,PAPER_1159,links
+paper,PAPER_005,paper,PAPER_1162,links
+paper,PAPER_005,paper,PAPER_1163,links
+paper,PAPER_005,paper,PAPER_1165,links
+paper,PAPER_005,paper,PAPER_1166,links
+paper,PAPER_005,paper,PAPER_1167,links
+paper,PAPER_005,paper,PAPER_1170,links
+paper,PAPER_005,paper,PAPER_1171,links
+paper,PAPER_005,paper,PAPER_1318,links
+paper,PAPER_005,paper,PAPER_420,links
+paper,PAPER_005,paper,PAPER_421,links
+paper,PAPER_005,paper,PAPER_642,links
+paper,PAPER_005,paper,PAPER_840,links
+paper,PAPER_005,paper,PAPER_877,links
+observable,D_total_gw,observable,detection_volume_ratio,1/F^3
+observable,detection_volume_ratio,paper,PAPER_006,wired
+observable,multi_messenger_consistency,paper,PAPER_006,wired
+observable,D_TRZ,paper,PAPER_006,reused
+paper,PAPER_006,paper,PAPER_1000,links
+paper,PAPER_006,paper,PAPER_1001,links
+paper,PAPER_006,paper,PAPER_1002,links
+paper,PAPER_006,paper,PAPER_1009,links
+paper,PAPER_006,paper,PAPER_1010,links
+paper,PAPER_006,paper,PAPER_1011,links
+paper,PAPER_006,paper,PAPER_1012,links
+paper,PAPER_006,paper,PAPER_1014,links
+paper,PAPER_006,paper,PAPER_1022,links
+paper,PAPER_006,paper,PAPER_1033,links
+paper,PAPER_006,paper,PAPER_1035,links
+paper,PAPER_006,paper,PAPER_1037,links
+paper,PAPER_006,paper,PAPER_1039,links
+paper,PAPER_006,paper,PAPER_1040,links
+paper,PAPER_006,paper,PAPER_1041,links
+paper,PAPER_006,paper,PAPER_1044,links
+paper,PAPER_006,paper,PAPER_1046,links
+paper,PAPER_006,paper,PAPER_1048,links
+paper,PAPER_006,paper,PAPER_1051,links
+paper,PAPER_006,paper,PAPER_1052,links
+paper,PAPER_006,paper,PAPER_1061,links
+paper,PAPER_006,paper,PAPER_1065,links
+paper,PAPER_006,paper,PAPER_1066,links
+paper,PAPER_006,paper,PAPER_1072,links
+paper,PAPER_006,paper,PAPER_1073,links
+paper,PAPER_006,paper,PAPER_1079,links
+paper,PAPER_006,paper,PAPER_1080,links
+paper,PAPER_006,paper,PAPER_1081,links
+paper,PAPER_006,paper,PAPER_1159,links
+paper,PAPER_006,paper,PAPER_1162,links
+paper,PAPER_006,paper,PAPER_1163,links
+paper,PAPER_006,paper,PAPER_1165,links
+paper,PAPER_006,paper,PAPER_1167,links
+paper,PAPER_006,paper,PAPER_1170,links
+paper,PAPER_006,paper,PAPER_1171,links
+paper,PAPER_006,paper,PAPER_1174,links
+paper,PAPER_006,paper,PAPER_1175,links
+paper,PAPER_006,paper,PAPER_1318,links
+paper,PAPER_006,paper,PAPER_420,links
+paper,PAPER_006,paper,PAPER_421,links
+paper,PAPER_006,paper,PAPER_642,links
+paper,PAPER_006,paper,PAPER_840,links
+paper,PAPER_006,paper,PAPER_877,links
+primitive,K2_LOVE,equation,tidal_deformability_Lambda,love-number
+primitive,B_CRIT,equation,f_SCm_suppression,critical-field
+primitive,F_TRZ,equation,f_SCm_suppression,SCm-suppression
+equation,tidal_deformability_Lambda,paper,PAPER_007,wires
+equation,f_SCm_suppression,paper,PAPER_007,wires
+paper,PAPER_007,paper,PAPER_001,map-link
+paper,PAPER_007,paper,PAPER_002,map-link
+paper,PAPER_007,paper,PAPER_010,map-link
+paper,PAPER_007,paper,PAPER_100,map-link
+paper,PAPER_007,paper,PAPER_101,map-link
+paper,PAPER_007,paper,PAPER_102,map-link
+paper,PAPER_007,paper,PAPER_103,map-link
+paper,PAPER_007,paper,PAPER_104,map-link
+paper,PAPER_007,paper,PAPER_105,map-link
+paper,PAPER_007,paper,PAPER_106,map-link
+paper,PAPER_007,paper,PAPER_107,map-link
+paper,PAPER_007,paper,PAPER_108,map-link
+paper,PAPER_007,paper,PAPER_115,map-link
+paper,PAPER_007,paper,PAPER_116,map-link
+paper,PAPER_007,paper,PAPER_117,map-link
+paper,PAPER_007,paper,PAPER_131,map-link
+paper,PAPER_007,paper,PAPER_420,map-link
+paper,PAPER_007,paper,PAPER_421,map-link
+paper,PAPER_007,paper,PAPER_642,map-link
+paper,PAPER_007,paper,PAPER_840,map-link
+paper,PAPER_007,paper,PAPER_877,map-link
+primitive,G_UQFF,equation,gw_frequency_chirp_rate,chirp
+primitive,C_UQFF_DERIVED,equation,gw_frequency_chirp_rate,chirp
+primitive,F_TRZ,equation,waveform_phase_lag_full,D_total
+equation,gw_frequency_chirp_rate,paper,PAPER_008,wires
+equation,waveform_phase_lag_full,paper,PAPER_008,wires
+paper,PAPER_008,paper,PAPER_001,map-link
+paper,PAPER_008,paper,PAPER_007,map-link
+paper,PAPER_008,paper,PAPER_009,map-link
+paper,PAPER_008,paper,PAPER_100,map-link
+paper,PAPER_008,paper,PAPER_101,map-link
+paper,PAPER_008,paper,PAPER_102,map-link
+paper,PAPER_008,paper,PAPER_103,map-link
+paper,PAPER_008,paper,PAPER_104,map-link
+paper,PAPER_008,paper,PAPER_105,map-link
+paper,PAPER_008,paper,PAPER_106,map-link
+paper,PAPER_008,paper,PAPER_107,map-link
+paper,PAPER_008,paper,PAPER_108,map-link
+paper,PAPER_008,paper,PAPER_115,map-link
+paper,PAPER_008,paper,PAPER_116,map-link
+paper,PAPER_008,paper,PAPER_117,map-link
+paper,PAPER_008,paper,PAPER_118,map-link
+paper,PAPER_008,paper,PAPER_131,map-link
+paper,PAPER_008,paper,PAPER_420,map-link
+paper,PAPER_008,paper,PAPER_421,map-link
+paper,PAPER_008,paper,PAPER_642,map-link
+paper,PAPER_008,paper,PAPER_840,map-link
+paper,PAPER_008,paper,PAPER_877,map-link
+primitive,KAPPA_PER_DAY,equation,h_uqff_damped,kappa-decay
+primitive,F_TRZ,equation,gw_inspiral_frequency,D_total
+equation,gw_inspiral_frequency,paper,PAPER_008b,wires
+equation,h_uqff_damped,paper,PAPER_008b,wires
+paper,PAPER_008b,paper,PAPER_100,map-link
+paper,PAPER_008b,paper,PAPER_101,map-link
+paper,PAPER_008b,paper,PAPER_102,map-link
+paper,PAPER_008b,paper,PAPER_103,map-link
+paper,PAPER_008b,paper,PAPER_104,map-link
+paper,PAPER_008b,paper,PAPER_105,map-link
+paper,PAPER_008b,paper,PAPER_106,map-link
+paper,PAPER_008b,paper,PAPER_107,map-link
+paper,PAPER_008b,paper,PAPER_108,map-link
+paper,PAPER_008b,paper,PAPER_115,map-link
+paper,PAPER_008b,paper,PAPER_116,map-link
+paper,PAPER_008b,paper,PAPER_117,map-link
+paper,PAPER_008b,paper,PAPER_131,map-link
+paper,PAPER_008b,paper,PAPER_420,map-link
+paper,PAPER_008b,paper,PAPER_421,map-link
+paper,PAPER_008b,paper,PAPER_642,map-link
+paper,PAPER_008b,paper,PAPER_840,map-link
+paper,PAPER_008b,paper,PAPER_877,map-link
+primitive,KAPPA_PER_DAY,equation,D_aether_damping,aether
+primitive,C_UQFF_DERIVED,equation,D_aether_damping,aether
+equation,D_aether_damping,equation,D_total_4mech,factor
+equation,D_total_4mech,paper,PAPER_009,wires
+equation,D_aether_damping,paper,PAPER_009,wires
+paper,PAPER_009,paper,PAPER_001,map-link
+paper,PAPER_009,paper,PAPER_003,map-link
+paper,PAPER_009,paper,PAPER_013,map-link
+paper,PAPER_009,paper,PAPER_100,map-link
+paper,PAPER_009,paper,PAPER_101,map-link
+paper,PAPER_009,paper,PAPER_102,map-link
+paper,PAPER_009,paper,PAPER_103,map-link
+paper,PAPER_009,paper,PAPER_104,map-link
+paper,PAPER_009,paper,PAPER_105,map-link
+paper,PAPER_009,paper,PAPER_106,map-link
+paper,PAPER_009,paper,PAPER_107,map-link
+paper,PAPER_009,paper,PAPER_108,map-link
+paper,PAPER_009,paper,PAPER_115,map-link
+paper,PAPER_009,paper,PAPER_116,map-link
+paper,PAPER_009,paper,PAPER_117,map-link
+paper,PAPER_009,paper,PAPER_131,map-link
+paper,PAPER_009,paper,PAPER_420,map-link
+paper,PAPER_009,paper,PAPER_421,map-link
+paper,PAPER_009,paper,PAPER_642,map-link
+paper,PAPER_009,paper,PAPER_840,map-link
+paper,PAPER_009,paper,PAPER_877,map-link
+primitive,F_TRZ,equation,gw_distance_bias_009b,D_total
+equation,gw_distance_bias_009b,paper,PAPER_009b,wires
+paper,PAPER_009b,paper,PAPER_100,map-link
+paper,PAPER_009b,paper,PAPER_101,map-link
+paper,PAPER_009b,paper,PAPER_102,map-link
+paper,PAPER_009b,paper,PAPER_103,map-link
+paper,PAPER_009b,paper,PAPER_104,map-link
+paper,PAPER_009b,paper,PAPER_105,map-link
+paper,PAPER_009b,paper,PAPER_106,map-link
+paper,PAPER_009b,paper,PAPER_107,map-link
+paper,PAPER_009b,paper,PAPER_108,map-link
+paper,PAPER_009b,paper,PAPER_116,map-link
+paper,PAPER_009b,paper,PAPER_117,map-link
+paper,PAPER_009b,paper,PAPER_131,map-link
+paper,PAPER_009b,paper,PAPER_420,map-link
+paper,PAPER_009b,paper,PAPER_421,map-link
+paper,PAPER_009b,paper,PAPER_642,map-link
+paper,PAPER_009b,paper,PAPER_840,map-link
+paper,PAPER_009b,paper,PAPER_877,map-link
+equation,qnm_freq_uqff,paper,PAPER_010,wires
+equation,qnm_damping_time,paper,PAPER_010,wires
+paper,PAPER_010,paper,PAPER_100,map-link
+paper,PAPER_010,paper,PAPER_101,map-link
+paper,PAPER_010,paper,PAPER_102,map-link
+paper,PAPER_010,paper,PAPER_103,map-link
+paper,PAPER_010,paper,PAPER_105,map-link
+paper,PAPER_010,paper,PAPER_106,map-link
+paper,PAPER_010,paper,PAPER_107,map-link
+paper,PAPER_010,paper,PAPER_108,map-link
+paper,PAPER_010,paper,PAPER_116,map-link
+paper,PAPER_010,paper,PAPER_117,map-link
+paper,PAPER_010,paper,PAPER_131,map-link
+paper,PAPER_010,paper,PAPER_420,map-link
+paper,PAPER_010,paper,PAPER_421,map-link
+paper,PAPER_010,paper,PAPER_642,map-link
+paper,PAPER_010,paper,PAPER_840,map-link
+paper,PAPER_010,paper,PAPER_877,map-link
+equation,beta_model_density,paper,PAPER_001,wires
+equation,hydrostatic_bias_uqff,paper,PAPER_001,wires
+equation,cooling_flow_uqff,paper,PAPER_001,wires
+equation,W_26,paper,PAPER_001,wires
+equation,ramanujan_R_n,paper,PAPER_001,wires
+equation,s26_polylog,paper,PAPER_001,wires
+equation,A_SCm_activation,paper,PAPER_001,wires
+equation,kozima_neutron_static,paper,PAPER_001,wires
+equation,kozima_cross_section_scm,paper,PAPER_001,wires
+equation,kozima_buoyancy_coupled,paper,PAPER_001,wires
+equation,kozima_s26_coupling,paper,PAPER_001,wires
+equation,L_cosmo,paper,PAPER_001,wires
+equation,V_phi_NS,paper,PAPER_001,wires
+equation,euler_lagrange_eom_NS,paper,PAPER_001,wires
+equation,dvp_primes,paper,PAPER_001,wires
+equation,bsh_saturation,paper,PAPER_001,wires
+equation,stochastic_gw_omega,paper,PAPER_011,wires
+equation,peters_ecc_tau_extension,paper,PAPER_012,wires
+equation,magnetar_edot_suppression,paper,PAPER_013,wires
+equation,braking_index_uqff,paper,PAPER_013,wires
+equation,pbh_critical_overdensity,paper,PAPER_014,wires
+equation,pbh_mass_function,paper,PAPER_014,wires
+equation,modified_friedmann_uqff,paper,PAPER_014,wires
+equation,gw_propagation_damping,paper,PAPER_015,wires
+equation,H0_uqff_bias,paper,PAPER_015,wires
+equation,f_isco_observer,paper,PAPER_013b,wires
+equation,D_eff_beat,paper,PAPER_010b,wires
+equation,chsh_suppression,paper,PAPER_016,wires
+equation,entanglement_range_extension,paper,PAPER_016,wires
+equation,f_combined_redshift,paper,PAPER_017,wires
+equation,phase_lag_trz,paper,PAPER_017,wires
+equation,aether_noise_spectrum,paper,PAPER_018,wires
+equation,pta_trz_resonance,paper,PAPER_019,wires
+equation,cosmic_ray_aether_drag,paper,PAPER_020,wires
+equation,charge_drag_scaling,paper,PAPER_020,wires
+equation,lensing_rho_trz,paper,PAPER_021,wires
+equation,d_string_composed,paper,PAPER_022,wires
+equation,kk_mass_scale,paper,PAPER_022,wires
+equation,g2_kk_loop,paper,PAPER_023,wires
+equation,g2_string_loop,paper,PAPER_023,wires
+equation,dpm_cp_phase,paper,PAPER_024,wires
+equation,dpm_trz_cp_phase,paper,PAPER_024,wires
+equation,ultralight_dm_mass_ev,paper,PAPER_025,wires
+equation,heavy_dm_mass_tev,paper,PAPER_025,wires
+equation,sterile_mass_ladder,paper,PAPER_026,wires
+equation,lfv_temporal_suppression,paper,PAPER_027,wires
+equation,ckm_vacuum_density,paper,PAPER_028,wires
+equation,cosmic_budget_fsm,paper,PAPER_029,wires
+equation,dark_mediator_suppression,paper,PAPER_030,wires

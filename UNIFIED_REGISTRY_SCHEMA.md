@@ -57,3 +57,9 @@ Companion outputs: `UNIFIED_REGISTRY_GAPS.csv` (1,044 rows — odmap GAP-status 
 ## Idempotency contract
 
 Two consecutive runs produce byte-identical output (verified 2026-07-22). No timestamps in CSV. Run metadata lives here and in SESSION_LOG only.
+
+## Note 2026-08-04 — equation-library layer
+Beneath the paper dispatches sits a 408-function equation library (named, individually-callable, primitive-sourced).
+Shared appendix blocks are factored into `_common_uqff_blocks()` so every GW paper captures the full section set
+(Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6). R0 master =
+UNIFIED_REGISTRY.csv; derived pantheon (RESULTS_TABLE/R3_LEDGER/MERGED/GAPS/R1_QUEUE) advanced through PAPER_015.

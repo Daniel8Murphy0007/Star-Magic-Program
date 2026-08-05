@@ -62,3 +62,40 @@ from the campaign CSV — that would overwrite the physics results table.
 | R3 | uqff_registry_primitives single source + 24-attribute rewire + Python=C++=Lean pins | DONE |
 | R4 | UNIFIED_REGISTRY_GRAPH.csv (656 edges) + falsifiability report | DONE |
 | R5 | This status backend + preprint results table + program landmark paper | DONE |
+
+## EQUATION-LIBRARY REWIRE (working, not shipped) — PAPER_001-003 full-capture
+- Architecture: equation-library layer beneath paper dispatches; every equation an individually-callable, primitive-sourced function; papers are compositions.
+- PAPER_001: 35 fields (all 40 equations). PAPER_002: 55 fields (all sections incl. YM BCS, Production Framework, VDS/DVP/BSH). PAPER_003: 45 fields (9-sector Lagrangian, Cosmogenesis, VDS/DVP/BSH).
+- Drift corrections gate-pinned: VDS 1.894->F_TRZ (PAPER_2156), rho_vac->LAMBDA_VAC (PAPER_2155), beta_i->BETA_I.
+- Full linked-whitepaper maps recorded (54/37/32). Gate 2047/0. NOT SHIPPED until 300+ papers rewired.
+
+---
+
+## 2026-08-04 — COMPLETE-COMPILE campaign status (PAPER_001-015 + b-variants)
+
+**Papers at complete-compile depth:** PAPER_001-015 base + 008b, 009b, 010b, 011b, 012b, 013b, 014b (22 dispatches).
+Each invokes the full equation library: core physics + Session-225 phonon upgrades + Production Framework +
+Cosmogenesis-Linked Lagrangian (L_cosmo + V_phi_NS + Euler-Lagrange EOM) + VDS/DVP/BSH synthesis +
+Kozima-LENR appendix K.1-K.6. 51-85 fields per paper.
+
+**Equation library:** 408 named, individually-callable, primitive-sourced functions. Shared appendix blocks
+factored into `_common_uqff_blocks()` (defined once, reused by every GW paper — guarantees no section is dropped).
+
+**Calculator integrity:** 342 registrations, 0 duplicate @_register keys, 18,222 lines. (A backward-slice bug
+that duplicated 276 papers was detected and fully reverted via PRE_FULLEQ_BACKUP + safe forward-boundary re-apply.)
+
+**Fidelity gate:** green. Complete-compile verification loop asserts Kozima K.1-K.6 + cosmogenesis EOM + VDS=F_TRZ +
+DVP primes + BSH saturation + >=30 shared equations for each of PAPER_001-015.
+
+**Registry (R0 master + derived pantheon):** UNIFIED_REGISTRY.csv (R0, 733 rows), GRAPH (1916 edges),
+CORPUS_CITATIONS, R1_QUEUE, R2_MAPPING (24 sectors), R3_LEDGER, RESULTS_TABLE, MERGED, GAPS, DUPLICATES,
+FALSIFIABILITY — all advanced through PAPER_015. 0 malformed CSVs.
+
+**NOT SHIPPED** — holding per the 300+ paper mandate. Working version 0.337.0.
+
+*(Windows-side save 2026-08-04 to trigger VS Code file-watcher refresh.)*
+
+## 2026-08-04 (cont.) — batch PAPER_015b-023 complete-compile
+Papers at complete-compile depth now: PAPER_001-023 + b-variants (32 dispatches). 13 new paper-specific library
+equations (entanglement/redshift/aether-noise/PTA/cosmic-ray/lensing/string-compactification/tau-g2). Registry R0
+745 rows, 31 R2 sectors. 342 dispatches, 0 duplicates. Gate green. NOT SHIPPED (300+ mandate).

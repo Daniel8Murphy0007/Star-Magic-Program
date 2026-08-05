@@ -5736,3 +5736,14 @@ RESOLVED section with the ruling recorded.
   These are power-of-10 mojibake typos in the A_vort or V_sys exponent columns of the atlas table. They do NOT affect xi_span (uses only H-atom max and Universe min) or the 3 named anchors.
 - **Question for Daniel (low priority):** should the 3 intermediate atlas rows' printed f_density values be corrected to the formula results (43.1 / 1.063 / 4.073e-2), or are the intended A_vort/V_sys column values different from what's printed? Dispatch wired the reproducing headline result (span + 3 anchors); intermediate rows not wired as primary values.
 - **Status:** NON-BLOCKING table-cleanup note; dispatch WIRED (result clean). Filed for corpus-table hygiene.
+
+## Batch PAPER_001-015 open rulings (2026-08-04)
+- Q-005 (PAPER_004): chirp phase evolution convention.
+- Q-006 (PAPER_005): F_combined=(1-F_TRZ)^2=0.81 BBH energy retention.
+- Q-007 (PAPER_007): B_crit unit T vs G family (with Q-002/009/010).
+- Q-008 (PAPER_008): D^2 power convention vs PAPER_005 linear.
+- Q-009 (PAPER_009): 17 Gpc aether scale from kappa unit reading.
+- Q-010 (PAPER_013): t_sd=3x (abstract) vs t_GR/D^2 (sec 2.3).
+- Q-011 (PAPER_014): delta_c 0.333 (key-results) vs 0.45 (sec 2.2).
+- Q-012 (PAPER_015): H0 70->75 correction vs PAPER_1573 canonical 70.
+- RESOLVED (Daniel 2026-08-04): capture ALL equations/sections per paper (no cutting corners); no variants; hybrid solutions allowed; UQFF-only.

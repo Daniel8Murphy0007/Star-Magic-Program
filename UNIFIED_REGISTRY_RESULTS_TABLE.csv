@@ -1,1 +1,33 @@
 constant,canonical_route,closed_form,uqff_value,reference,reference_kind,residual_pct
+D_TRZ,1-F_TRZ,1-0.1,0.9,PAPER_001,primitive_identity,0.0
+D_total_gw,1-D_phys/D_BSFG,1-2/3,0.3333,PAPER_001,primitive_identity,0.0
+D_String,D_total/D_TRZ,(1-2/3)/(1-0.1),0.37037,PAPER_001,derived,0.0
+VDS_ratio,rho_SCm/rho_UA,F_TRZ,0.1,PAPER_2156,drift_corrected,0.0
+Delta_YM,integer-primitive,1.736 GeV,1.736,PAPER_1318,closed_form,0.0
+tidal_Lambda_NS,(2/3)k2(1/C)^5,(2/3)*0.09*(1/0.172)^5,398.6,PAPER_007,closed_form,0.35
+f_SCm_suppression,1-exp(-B_crit/B),1-exp(-1),0.632,PAPER_007,closed_form,0.0
+qnm_freq_uqff,f_GR(1+alpha_Q-beta_damp),2500*0.95,2375.0,PAPER_010,closed_form,0.0
+stochastic_Omega_bns,D^2*Omega_GR,0.333^2,0.111,PAPER_011,primitive_identity,0.0
+peters_tau_ext,1/D^2,1/0.333^2,9.02,PAPER_012,primitive_identity,0.2
+magnetar_edot_supp,D_SCm^2,0.0218^2,4.7e-4,PAPER_013,closed_form,0.0
+pbh_A_damp,(D_phys-1)/SO_5,3/10,0.3,PAPER_014,primitive_identity,0.0
+H0_uqff_bias,1.07*H0_obs,1.07*70,74.9,PAPER_015,closed_form,0.13
+f_isco_observer,c^3/(6^1.5 pi G M(1+z)),SMBH 1e6 Msun,depends,PAPER_013b,closed_form,0.0
+D_eff_beat,D*(1+dbeta cos),0.333*(1+0.05),0.35,PAPER_010b,closed_form,0.0
+multiband_D,cross-band average,0.622,0.622,PAPER_015b,anchor,0.0
+chsh_suppression,S_QM(1-eps),2sqrt2*(1-0.028),2.749,PAPER_016,closed_form,0.0
+f_combined_0622,F_TRZ*F_aether*F_Um,0.90*1*0.6907,0.6216,PAPER_017,closed_form,0.0
+phase_lag_trz,2 pi F_TRZ,2pi*0.1,0.6283,PAPER_017,primitive_identity,0.0
+aether_noise,S_GR[1+P_aether]F_TRZ,comb envelope,0.1,PAPER_018,closed_form,0.0
+pta_resonance,1+SSq*Phi_TRZ,1+0.57*1.053,1.600,PAPER_019,closed_form,0.0
+cosmic_ray_drag,kappa(E/E_ref)^0.37,UHECR,2.75e-3,PAPER_020,closed_form,0.0
+lensing_rho_trz,SSq^2 f_TRZ rho_crit,0.325*0.1*rho_c,sigma8,PAPER_021,closed_form,0.0
+d_string_origin,1-SSq^2 N_eff,1-0.325*1.94,0.3697,PAPER_022,primitive_identity,0.0
+g2_tau_kk,(m^2/8pi M_KK^2)(2/3)(1/SSq^2),KK loop,1.92e-9,PAPER_023,closed_form,0.0
+tau_edm_cp,SSq*pi,0.57*pi,1.7907,PAPER_024,primitive_identity,0.0
+acp_dm_mass,kappa*hbar,3.81e-24 eV,3.81e-24,PAPER_025,closed_form,0.0
+sterile_ms2,SSq*M_W,0.57*80.377,45.81,PAPER_026,closed_form,0.0
+lfv_suppress,exp(-SSq),exp(-0.57),0.5655,PAPER_027,closed_form,0.0
+ckm_vacuum,|V_cb|^2,0.0392^2,1.537e-3,PAPER_028,closed_form,0.0
+fsm_budget,SSq^4,0.57^4,0.1056,PAPER_029,primitive_identity,0.0
+dark_med_suppress,cos^2(pi t_n),cos^2(pi*3.833),0.749,PAPER_030,closed_form,0.0

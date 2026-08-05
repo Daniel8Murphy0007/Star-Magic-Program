@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [UNSHIPPED — WORKING] — 2026-08-04 — EQUATION-LIBRARY ARCHITECTURE + PAPER_001-003 FULL-CAPTURE REWIRE
+
+> **Not shipped.** Full-corpus rewire in progress (all 300+ papers) before next release, per Daniel's directive.
+
+### Changed (architecture)
+- Added an **equation library** beneath the paper dispatches: every UQFF equation is now an individually-callable, primitive-sourced function (D_TRZ, D_GW_erosion, D_String, D_SCm, S_26_third_order, phonon_strain, gw_inspiral_strain, uqff_phase_lag, L_Edd_UQFF, P_jet_UQFF, F_buoy, V_phi0, Delta_YM, alpha_s_running, Um_heaviside, F_U_master, VDS_ratio, rho_vac_total, VDS_profile, BSH_harmonics, U_b_seed, ...). Defined once, reused across papers.
+- **PAPER_001/002/003 recomposed** over the library at full depth: every equation captured (40/all-sections/45 fields) including Session-225 upgrade blocks, Production Framework, Cosmogenesis Lagrangian, VDS/DVP/BSH synthesis.
+- Drift corrections applied & gate-pinned: VDS 1.894 -> F_TRZ=0.1 (PAPER_2156), rho_vac -> LAMBDA_VAC (PAPER_2155), beta_i -> BETA_I, YM -> 1.736 GeV registry.
+- Registry pantheon updated for 001-003: REGISTRY rows, GRAPH edges + linked-whitepaper maps (54/37/32), CITATIONS, FALSIFIABILITY, R2_MAPPING, RESULTS_TABLE, R3_LEDGER, DUPLICATES, GAPS, MERGED, R1_QUEUE, STATUS_REPORT.
+- Gate 2043/0. VERSION marker 0.337.0 (working; not released).
+
+---
+
 ## [0.336.0] — 2026-08-04 — BAND 1: PAPER_328 — NUCLEAR α-BEC LENR ENHANCEMENT (CLEAN)
 
 ### Added
@@ -6183,3 +6196,19 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
 ---
 
 *Every entry above is append-only. History does not get rewritten.*
+
+## [UNSHIPPED-WORKING 0.337.0] — 2026-08-04 (cont.) COMPLETE-COMPILE PAPER_001-015
+
+- Full-physics compile of PAPER_001-015 + 008b/009b/010b-014b: every equation/section captured, including the
+  previously-dropped Kozima-LENR appendix (K.1-K.6), cosmogenesis Lagrangian EOM, DVP primes, BSH saturation, Ramanujan R_n.
+- Equation library grown to 408 callable primitive-sourced functions; shared appendix blocks factored into
+  `_common_uqff_blocks()` (one definition, reused by all GW papers).
+- Fixed a backward-slice duplication bug (276 papers duplicated, file 18k->33.5k lines) — reverted cleanly to
+  342 registrations / 0 duplicates / 18,222 lines via PRE_FULLEQ_BACKUP + safe forward-boundary re-apply.
+- Derived registry pantheon (RESULTS_TABLE, R3_LEDGER, MERGED, GAPS, R1_QUEUE, DUPLICATES, STATUS_REPORT)
+  advanced through PAPER_015. Gate green (2140-tier assertions). NOT shipped (300+ mandate).
+- [Windows-side save 2026-08-04 to trigger VS Code file-watcher refresh.]
+
+## [UNSHIPPED-WORKING 0.337.0] — 2026-08-04 batch 024-030 (BSM)
+- Complete-compile PAPER_024-030: 9 BSM library equations + paper-specific §B DVP ladder (97-113); gate-guarded.
+- Registry pantheon advanced through PAPER_030. 342 dispatches, 0 duplicates. NOT shipped (300+ mandate).

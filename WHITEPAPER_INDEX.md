@@ -1,4 +1,6 @@
 # WHITEPAPER_INDEX — Star-Magic-Program
+> **REWIRE IN PROGRESS (unshipped):** PAPER_001-003 recomposed over the new equation-library architecture (full-equation capture, primitive-sourced, all sections). Continuing through the corpus; no release until 300+ done.
+
 
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
@@ -23,18 +25,18 @@
 | Status | Paper ID | Title fragment |
 |---|---|---|
 | ⬜ | COMPLETE_UQFF_EQUATIONS_REFERENCE | (no PAPER_N prefix) |
-| ✓ | PAPER_001 | GW170817 UQFF Damping Analysis |
+| ✓ | PAPER_001 | GW170817 UQFF Damping Analysis | COMPLETE-COMPILE (full Kozima K.1-K.6 + cosmogenesis EOM + VDS/DVP/BSH; helper-merged) |
 | ⚠ | PAPER_002 | GW190425 Mass Gap Interpretation |
 | ⚠ | PAPER_003 | GW150914 UQFF vs LIGO Strain |
 | ⚠ | PAPER_004 | GW170817 BNS Chirp Phase Evolution |
 | ⚠ | PAPER_005 | BH Merger Energy Retention UQFF |
-| ✓ | PAPER_006 | GW170817 Multi Messenger Full Inspiral |
-| ⚠ | PAPER_007 | Tidal Deformability Constraints BNS UQFF |
-| ⚠ | PAPER_008 | UQFF Waveform Phase Evolution Template Mismatch |
-| ✓ | PAPER_008b | Full Inspiral Waveform UQFF | CLEAN — D=0.90*0.37=0.333 (66.7% GW strain reduction); backfill v0.286.0 |
-| ⚠ | PAPER_009 | Damping Mechanism Decomposition UQFF |
-| ✓ | PAPER_009b | Aether String TRZ Damping GW | CLEAN — D=0.333; apparent 1231 vs true 410 Mpc (factor 3); backfill v0.286.0 |
-| ✓ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF |
+| ✓ | PAPER_006 | GW170817 Multi Messenger Full Inspiral | COMPLETE-COMPILE (full Kozima K.1-K.6 + cosmogenesis EOM + VDS/DVP/BSH; helper-merged) |
+| ✓ | PAPER_007 | Tidal Deformability Constraints BNS UQFF | REWIRED full-depth — tidal_deformability + f_SCm_suppression lib fns; 9-sector+Production+Cosmogenesis+VDS/DVP/BSH; VDS=F_TRZ |
+| ✓ | PAPER_008 | UQFF Waveform Phase Evolution Template Mismatch | REWIRED full-depth — gw_frequency_chirp_rate lib fn; D^2 power; full-inspiral 2310.8 rad; VDS=F_TRZ |
+| ✓ | PAPER_008b | Full Inspiral Waveform UQFF | REWIRED full-depth — gw_inspiral_frequency + h_uqff_damped lib fns; 38 fields; VDS=F_TRZ |
+| ✓ | PAPER_009 | Damping Mechanism Decomposition UQFF | REWIRED full-depth — D_aether_damping + D_total_4mech lib fns; 4-mechanism; VDS=F_TRZ |
+| ✓ | PAPER_009b | Aether String TRZ Damping GW | REWIRED full-depth — apparent_distance lib fn; SNR 24->8; 37 fields; VDS=F_TRZ |
+| ✓ | PAPER_010 | Post Merger Oscillations Remnant Mass UQFF | REWIRED full-depth — qnm_freq_uqff + qnm_damping_time lib fns; 2.375kHz; VDS=F_TRZ |
 | ✓ | PAPER_010b | Time Domain Chirp 23Hz UQFF | CLEAN — D=0.333 RMS strain reduction; backfill v0.286.0 |
 | ✓ | PAPER_011 | Stochastic GW Background UQFF Implications |
 | ✓ | PAPER_011b | Amplitude Reduction Factor UQFF | CLEAN — D=f_TRZ*beta_string=0.90*0.37=0.333 universal; backfill v0.286.0 |
@@ -45,26 +47,26 @@
 | ⚠ | PAPER_014 | Primordial Black Holes UQFF Formation |
 | ✓ | PAPER_014b | EMRI Aether Damping UQFF | CLEAN — f_ISCO=2.931 mHz harmonics; stability 1.15; backfill v0.286.0 |
 | ⚠ | PAPER_015 | Cosmological Implications UQFF Modified GW Propagation |
-| ✓ | PAPER_015b | Multiband GW LISA LIGO UQFF |
-| ✓ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations |
-| ⚠ | PAPER_016b | White Dwarf Foreground UQFF |
-| ⚠ | PAPER_017 | Redshift Corrections z1 in UQFF GW Propagation |
-| ⚠ | PAPER_018 | Aether Noise Spectrum Characterization for LISA |
-| ⚠ | PAPER_019 | Pulsar Timing Array Anomalies UQFF |
-| ⚠ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime |
-| ⚠ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density |
-| ⚠ | PAPER_022 | String Compactification Signatures GW Background |
-| ⚠ | PAPER_023 | Tau Anomalous Magnetic Moment g2 UQFF |
-| ⚠ | PAPER_024 | Tau Electric Dipole Moment UQFF |
-| ⚠ | PAPER_025 | Dark Matter Direct Detection UQFF |
-| ⚠ | PAPER_025b | Neutrino Polarizability UQFF |
-| ⚠ | PAPER_026 | Sterile Neutrino Mass Generation UQFF |
-| ⚠ | PAPER_026c | Sterile Neutrino Mass UQFF | OPEN_RULING — m_s=5.4 keV headline; formula mojibake 540 MeV (Q-244b); backfill v0.286.0 |
-| ⚠ | PAPER_026b | Vector Like Quarks UQFF |
-| ⚠ | PAPER_027 | Lepton Flavor Violation UQFF |
-| ⚠ | PAPER_028 | BSM Coupling Constants UQFF |
-| ⚠ | PAPER_029 | New Physics TeV Scale UQFF |
-| ⚠ | PAPER_030 | Dark Sector Mediators UQFF |
+| ✓ | PAPER_015b | Multiband GW LISA LIGO UQFF | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ✓ | PAPER_016 | Quantum Entanglement UQFF Nonlocal Correlations | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_016b | White Dwarf Foreground UQFF | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_017 | Redshift Corrections z1 in UQFF GW Propagation | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_018 | Aether Noise Spectrum Characterization for LISA | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_019 | Pulsar Timing Array Anomalies UQFF | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_020 | Cosmic Ray Propagation UQFF Spacetime | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_021 | Gravitational Lensing Corrections UQFF Vacuum Density | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_022 | String Compactification Signatures GW Background | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_023 | Tau Anomalous Magnetic Moment g2 UQFF | COMPLETE-COMPILE (helper-merged; paper-specific lib eqs; batch 015b-023) |
+| ⚠ | PAPER_024 | Tau Electric Dipole Moment UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_025 | Dark Matter Direct Detection UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_025b | Neutrino Polarizability UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_026 | Sterile Neutrino Mass Generation UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_026c | Sterile Neutrino Mass UQFF | OPEN_RULING — m_s=5.4 keV headline; formula mojibake 540 MeV (Q-244b); backfill v0.286.0 | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_026b | Vector Like Quarks UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_027 | Lepton Flavor Violation UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_028 | BSM Coupling Constants UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_029 | New Physics TeV Scale UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
+| ⚠ | PAPER_030 | Dark Sector Mediators UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
 | ⚠ | PAPER_031 | Flavor Anomalies Resolution UQFF |
 | ⚠ | PAPER_032 | BSM Scalar Sectors UQFF |
 | ⚠ | PAPER_033 | Electroweak Precision UQFF |

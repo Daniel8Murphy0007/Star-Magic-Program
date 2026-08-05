@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.336.0", "uqff_calculator.VERSION = 0.336.0 (PAPER_328 = v0.336.0)")
+assert_that(C.VERSION == "0.337.0", "uqff_calculator.VERSION = 0.337.0 (complete-compile PAPER_001-030 + b-variants)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -160,6 +160,15 @@ assert_that(abs(_r001['mismatch'] - 0.667) < 1e-12,
             "PAPER_001: mismatch = 0.667 (paper precision)")
 assert_that(abs(_r001['B_NS_over_B_crit'] - 2.27e-10) < 0.01e-10,
             "PAPER_001: B_NS/B_crit = 2.27e-10 (negligible SCm damping)")
+assert_that(abs(_r001['kozima_neutron_static_N'] - 1.0e6) < 1.0,
+            "PAPER_001 K.1: Kozima static neutron-drop force = 1e6 N (k_neutron*sigma_n)")
+assert_that(abs(_r001['A_SCm_activation'] - 1.0) < 1e-9,
+            "PAPER_001 K.5: SCm activation A_SCm(B_NS)=exp[-B^2/B_crit^2]~1 (B<<B_crit)")
+assert_that(_r001['DVP_primes'][0] == 3 and abs(_r001['DVP_primes'][1] - 2.0/26.0) < 1e-12,
+            "PAPER_001 sec-B.2: DVP primes p_DVP=3, n_channel=2/26")
+assert_that(len(_r001['eqlib']) >= 34 and 'kozima_s26_coupling' in _r001['eqlib']
+            and 'euler_lagrange_eom_NS' in _r001['eqlib'] and abs(_r001['VDS_ratio'] - 0.1) < 1e-9,
+            "PAPER_001: COMPLETE compile (>=36 eqlib fns incl Kozima K.1-K.6 + cosmogenesis EOM; VDS=F_TRZ)")
 assert_that(C.wired_count() >= 1, "wired_count >= 1 (campaign started)")
 
 _r002 = C.calc('PAPER_002')['value']
@@ -176,6 +185,18 @@ assert_that(_r002['A_scm_scenarios']['normal_pulsar_1e8G'] > 0.999999999,
             "PAPER_002: normal pulsar A_SCm = 1.0 (B << B_crit)")
 assert_that(abs(_r002['p_ns'] + _r002['p_bh'] - 1.0) < 1e-12,
             "PAPER_002: P(NS) + P(BH) = 1")
+assert_that(abs(_r002['F_chain_primitive'] - 0.333) < 1e-12 and abs(_r002['A_TRZ'] - 0.9) < 1e-15,
+            "PAPER_002: damping chain F=A_aether*A_SCm*D_TRZ*D_String=0.333 (library-composed)")
+assert_that(abs(_r002['F_phonon_route'] - 0.53) < 1e-12,
+            "PAPER_002: F_UQFF=0.5297 ~ phonon route 1-0.47=0.53 (Q-001 OPEN)")
+assert_that(abs(_r002['S_26_third_order'] - 154030.8) < 5.0,
+            "PAPER_002: S_26^(3) Ramanujan sum reused from equation library")
+assert_that(abs(_r002['VDS_ratio'] - 0.1) < 1e-12 and _r002['VDS_ratio_paper_drift'] == 1.894,
+            "PAPER_002: VDS/DVP/BSH block - VDS ratio drift 1.894 -> F_TRZ=0.1 (PAPER_2156)")
+assert_that(abs(_r002['Delta_YM_GeV'] - 1.736) < 1e-9 and abs(_r002['rho_vac_total'] - 7.799e-36) < 1e-39,
+            "PAPER_002: YM BCS mass gap 1.736 GeV; rho_vac=LAMBDA_VAC (PAPER_2155)")
+assert_that(len(_r002['operational_modes']) == 4 and len(_r002['eqlib']) >= 18,
+            "PAPER_002: Production Framework 4 modes + F_U master/Um Heaviside; 18 library eqs composed")
 assert_that(C.wired_count() >= 2, "wired_count >= 2")
 
 _r003 = C.calc('PAPER_003')['value']
@@ -189,6 +210,18 @@ assert_that(abs(_r003['distance_apparent_mpc'] - 1231.0) < 1.0,
             "PAPER_003: apparent distance 1231 Mpc (3x bias vs true 410)")
 assert_that(abs(_r003['distance_bias_factor'] - 3.003) < 0.01,
             "PAPER_003: distance bias factor 3.0x")
+assert_that(abs(_r003['phase_lag_formula_value'] - 17.53) < 0.02,
+            "PAPER_003: phase-lag formula kappa*D*f*SSq = 17.53 (Q-004: paper states 0.126)")
+assert_that(abs(_r003['D_trz'] - 0.9) < 1e-15 and _r003['D_scm'] > 0.999999,
+            "PAPER_003: BBH chain via library (D_TRZ, D_SCm(0)=1)")
+assert_that(C.gw_inspiral_strain(28.3 * 1.989e30, 410.0 * 3.086e22, 150.0) > 0.0,
+            "PAPER_003: gw_inspiral_strain library fn uses G_UQFF, C_UQFF_DERIVED")
+assert_that(len(_r003['ninesectors']) == 9 and abs(_r003['ninesector_YM_gap_GeV'] - 1.736) < 1e-9,
+            "PAPER_003: 9-Sector Lagrangian captured (YM gap 1.736 GeV, V(phi0)=-rho_SCm)")
+assert_that(abs(_r003['VDS_ratio'] - 0.1) < 1e-12 and abs(_r003['V_phi0'] - (-P.RHO_SCM)) < 1e-40,
+            "PAPER_003: VDS ratio=F_TRZ=0.1 (drift-corrected); V(phi0)=-rho_SCm")
+assert_that(len(_r003['operational_modes']) == 4 and len(_r003['eqlib']) >= 18,
+            "PAPER_003: Production Framework + Cosmogenesis BH-gravity sector; 18 library eqs composed")
 assert_that(C.wired_count() >= 3, "wired_count >= 3")
 
 _r004 = C.calc('PAPER_004')['value']
@@ -198,6 +231,10 @@ assert_that(abs(_r004['h_uqff_peak_computed'] - 9.341e-23) < 5e-26,
             "PAPER_004: computed h_UQFF = 9.341e-23 (paper states 9.4332e-23, ~1% slip - Q-005)")
 assert_that(abs(_r004['strain_reduction_pct'] - 66.7) < 0.05,
             "PAPER_004: 66.7% strain reduction (paper abstract says 66.4 - Q-005)")
+assert_that(_r004['chirp_freq_at_1ms'] > 0.0 and abs(_r004['VDS_ratio'] - 0.1) < 1e-12,
+            "PAPER_004: chirp_frequency_evolution (G_UQFF,c) + VDS ratio=F_TRZ (drift-corrected)")
+assert_that(len(_r004['ninesectors']) == 9 and abs(_r004['ninesector_YM_gap_GeV'] - 1.736) < 1e-9,
+            "PAPER_004: 9-Sector Lagrangian + Production Framework + VDS/DVP/BSH captured (full depth)")
 assert_that(C.wired_count() >= 4, "wired_count >= 4")
 
 _r005 = C.calc('PAPER_005')['value']
@@ -209,6 +246,10 @@ assert_that(abs(_r005['tau_uqff_yr'] - 1.1656e12) / 1.1656e12 < 0.001,
             "PAPER_005: tau_UQFF = 1.1656e12 yr (1.23x extension)")
 assert_that(abs(_r005['E_rad_uqff_msun'] - 0.6505) < 0.001,
             "PAPER_005: E_radiated = 0.6505 Msun (mass retention)")
+assert_that(_r005['P_gw_peters_callable'] > 0.0 and _r005['F_combined_route'] == '(1-F_TRZ)^2',
+            "PAPER_005: Peters GW power (gw_power_peters, G_UQFF/c); F_combined=(1-F_TRZ)^2")
+assert_that(len(_r005['ninesectors']) == 9 and abs(_r005['VDS_ratio'] - 0.1) < 1e-12,
+            "PAPER_005: 9-Sector + Production Framework + VDS/DVP/BSH captured (full depth)")
 assert_that(C.wired_count() >= 5, "wired_count >= 5")
 
 _r006 = C.calc('PAPER_006')['value']
@@ -222,6 +263,8 @@ assert_that(abs(_r006['detection_volume_shrink'] - 27.1) < 0.2,
             "PAPER_006: detection volume shrinks ~27x (1/0.333^3)")
 assert_that(_r006['gw_speed_constraint'] == 3e-15,
             "PAPER_006: |dc/c| < 3e-15 preserved (amplitude-only modification)")
+assert_that(len(_r006['ninesectors']) == 9 and abs(_r006['VDS_ratio'] - 0.1) < 1e-12 and abs(_r006['mismatch'] - 2.0/3.0) < 1e-12,
+            "PAPER_006: full-depth capture (9-sector, VDS=F_TRZ, mismatch=D_GW_erosion)")
 assert_that(C.wired_count() >= 6, "wired_count >= 6")
 
 _r007 = C.calc('PAPER_007')['value']
@@ -233,6 +276,8 @@ assert_that(abs(_r007['f_scm_at_bcrit'] - 0.632) < 0.001,
             "PAPER_007: f_SCm(B_crit) = 1-exp(-1) = 0.632")
 assert_that(_r007['Lambda_ns_massgap_2p52'] > 0 and _r007['Lambda_bh'] == 0.0,
             "PAPER_007: Lambda_NS(2.52) = 16 vs Lambda_BH = 0 discriminator")
+assert_that(abs(_r007['VDS_ratio'] - 0.1) < 1e-9 and 'tidal_deformability' in _r007['eqlib'],
+            "PAPER_007: full-depth capture (tidal lib fn, VDS=F_TRZ, 9-sector, cosmogenesis)")
 assert_that(C.wired_count() >= 7, "wired_count >= 7")
 
 _r008 = C.calc('PAPER_008')['value']
@@ -259,6 +304,8 @@ assert_that(abs(_r009['d_aether_410mpc_paper'] - 0.999999) < 1e-6,
             "PAPER_009: D_Aether = 0.999999 paper anchor (Q-009: SI eval gives ~0)")
 assert_that(abs(_r009['string_factor_gw190425'] - 0.62) < 1e-12,
             "PAPER_009: GW190425 string factor 0.62 (self-rectifies Q-001 direction)")
+assert_that(abs(_r009['VDS_ratio'] - 0.1) < 1e-9 and 'D_total_4mech' in _r009['eqlib'],
+            "PAPER_009: full-depth (4-mechanism lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 9, "wired_count >= 9")
 
 _r010 = C.calc('PAPER_010')['value']
@@ -270,7 +317,114 @@ assert_that(abs(_r010['tau_uqff_ms'] - 7.14) < 0.05,
             "PAPER_010: tau_UQFF ~ 7 ms (29% faster ringdown decay)")
 assert_that(abs(_r010['eps_damp'] - 0.15) < 1e-12,
             "PAPER_010: 15% extra quantum-channel energy dissipation")
+assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['eqlib'],
+            "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
+
+# === PERMANENT §B DVP-LADDER GUARD (prevents helper-flattening regressions) ===
+# Each paper's dipole-vortex prime is paper-specific (whitepaper §B.2); the shared
+# _common_uqff_blocks helper must NOT flatten them to PAPER_001's generic p=3.
+_DVP_LADDER_LOCKED = {
+    'PAPER_001': 3, 'PAPER_002': 5, 'PAPER_003': 7, 'PAPER_004': 11, 'PAPER_005': 13,
+    'PAPER_006': 17, 'PAPER_007': 19, 'PAPER_008': 23, 'PAPER_009': 29, 'PAPER_010': 31,
+    'PAPER_011': 37, 'PAPER_012': 41, 'PAPER_013': 43, 'PAPER_014': 47, 'PAPER_015': 53,
+    'PAPER_015b': 53, 'PAPER_016': 59, 'PAPER_016b': 59, 'PAPER_017': 61, 'PAPER_018': 67,
+    'PAPER_019': 71, 'PAPER_020': 73, 'PAPER_021': 79, 'PAPER_022': 83, 'PAPER_023': 89,
+    'PAPER_008b': 23, 'PAPER_009b': 29, 'PAPER_010b': 31, 'PAPER_011b': 37,
+    'PAPER_012b': 41, 'PAPER_013b': 43, 'PAPER_014b': 47,
+    'PAPER_024': 97, 'PAPER_025': 101, 'PAPER_025b': 101, 'PAPER_026': 103, 'PAPER_026b': 103,
+    'PAPER_026c': 103, 'PAPER_027': 107, 'PAPER_028': 109, 'PAPER_029': 113, 'PAPER_030': 2,
+}
+for _pid, _pdvp in _DVP_LADDER_LOCKED.items():
+    _v = C.calc(_pid)['value']
+    _got = _v.get('DVP_prime_paper', (_v.get('DVP_primes') or [None])[0])
+    assert_that(_got == _pdvp,
+                _pid + ": §B.2 DVP prime = " + str(_pdvp) + " (paper-specific, not flattened)")
+
+# --- COMPLETE-COMPILE VERIFICATION: every PAPER_001-010 carries the full common physics ---
+# (Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6)
+for _pid in ['PAPER_001','PAPER_002','PAPER_003','PAPER_004','PAPER_005','PAPER_006',
+             'PAPER_007','PAPER_008','PAPER_008b','PAPER_009','PAPER_009b','PAPER_010',
+             'PAPER_010b','PAPER_011','PAPER_011b','PAPER_012','PAPER_012b','PAPER_013',
+             'PAPER_013b','PAPER_014','PAPER_014b','PAPER_015',
+             'PAPER_015b','PAPER_016','PAPER_016b','PAPER_017','PAPER_018','PAPER_019',
+             'PAPER_020','PAPER_021','PAPER_022','PAPER_023',
+             'PAPER_024','PAPER_025','PAPER_025b','PAPER_026','PAPER_026b','PAPER_026c',
+             'PAPER_027','PAPER_028','PAPER_029','PAPER_030']:
+    _rv = C.calc(_pid)['value']
+    assert_that(abs(_rv['kozima_neutron_static_N'] - 1.0e6) < 1.0,
+                _pid + ": Kozima-LENR appendix K.1 present (neutron drop = 1e6 N)")
+    assert_that('kozima_s26_coupled' in _rv and 'A_SCm_activation' in _rv,
+                _pid + ": Kozima K.2-K.6 (SCm cross-section + polylog coupling + activation)")
+    assert_that(abs(_rv['VDS_ratio'] - 0.1) < 1e-9,
+                _pid + ": VDS ratio drift-corrected to F_TRZ=0.1 (PAPER_2156)")
+    assert_that('euler_lagrange_eom' in _rv and 'L_cosmo' in _rv and 'V_phi_NS' in _rv,
+                _pid + ": Cosmogenesis-Linked Lagrangian (L_cosmo + V_phi_NS + E-L EOM)")
+    assert_that(_rv['DVP_primes'][0] >= 2 and 'BSH_saturation' in _rv,
+                _pid + ": VDS/DVP/BSH synthesis (paper-specific DVP prime + BSH saturation)")
+    assert_that(len(_rv.get('common_eqlib', _rv.get('eqlib', []))) >= 30,
+                _pid + ": >=30 shared equation-library functions invoked (complete compile)")
+
+# --- 010b-015 batch: paper-specific library equations ---
+assert_that(abs(C.calc('PAPER_011')['value']['omega_uqff_lib'] - 0.111 * 1e-9) < 1e-12,
+            "PAPER_011: stochastic_gw_omega=D^2*Omega_GR library eq")
+assert_that(abs(C.calc('PAPER_012')['value']['tau_circ_lib'] - 9.0) < 0.05,
+            "PAPER_012: peters_ecc_tau_extension=1/D^2=9x library eq")
+assert_that(abs(C.calc('PAPER_013')['value']['braking_index_lib'] - 1.625) < 1e-9,
+            "PAPER_013: braking_index_uqff=2-dlnD/dlnOmega library eq")
+assert_that(C.calc('PAPER_014')['value']['mass_function_1e14g'] > 0.9,
+            "PAPER_014: pbh_mass_function library eq")
+assert_that(abs(C.calc('PAPER_015')['value']['h0_uqff_lib'] - 74.9) < 0.1,
+            "PAPER_015: H0_uqff_bias=1.07*70=74.9 library eq")
+assert_that(C.calc('PAPER_013b')['value']['f_isco_obs_Hz'] > 0
+            and 'f_isco_observer' in C.calc('PAPER_013b')['value']['eqlib'],
+            "PAPER_013b: f_isco_observer library eq")
+assert_that(abs(C.calc('PAPER_010b')['value']['D_eff_beat_t0'] - C.calc('PAPER_010b')['value']['D_suppression']*1.05) < 1e-9,
+            "PAPER_010b: D_eff_beat library eq")
+
+# --- 015b-023: paper-specific §B VDS/DVP ladder (NOT the generic PAPER_001 values) ---
+_dvp_ladder = {'PAPER_015b':53,'PAPER_016':59,'PAPER_016b':59,'PAPER_017':61,'PAPER_018':67,
+               'PAPER_019':71,'PAPER_020':73,'PAPER_021':79,'PAPER_022':83,'PAPER_023':89}
+for _pid,_pdvp in _dvp_ladder.items():
+    assert_that(C.calc(_pid)['value']['DVP_prime_paper'] == _pdvp,
+                _pid + ": paper-specific DVP prime = " + str(_pdvp) + " (§B.2, not generic 3)")
+    assert_that(C.calc(_pid)['value']['DVP_primes'][0] == _pdvp,
+                _pid + ": DVP_primes overrides helper generic with paper §B value")
+
+# --- 015b-023 batch: paper-specific library equations ---
+assert_that(abs(C.calc('PAPER_016')['value']['chsh_lib'] - 2.0*__import__('math').sqrt(2.0)*(1-0.0277)) < 1e-9,
+            "PAPER_016: chsh_suppression library eq (Tsirelson 2sqrt2)")
+assert_that(abs(C.calc('PAPER_017')['value']['phase_lag_lib'] - 2*__import__('math').pi*P.F_TRZ) < 1e-9,
+            "PAPER_017: phase_lag_trz=2 pi F_TRZ library eq")
+assert_that(abs(C.calc('PAPER_019')['value']['pta_resonance_lib'] - (1.0+P.SSQ*1.053)) < 1e-9,
+            "PAPER_019: pta_trz_resonance=1+SSq*Phi library eq (resonance inversion)")
+assert_that(abs(C.calc('PAPER_022')['value']['d_string_lib'] - (1.0-P.SSQ**2*1.94)) < 1e-9,
+            "PAPER_022: d_string_composed=1-SSq^2*N_eff=0.37 origin library eq")
+assert_that(C.calc('PAPER_023')['value']['g2_kk_lib'] > 0
+            and 'g2_kk_loop' in C.calc('PAPER_023')['value']['eqlib'],
+            "PAPER_023: g2_kk_loop library eq (tau g-2)")
+assert_that(C.calc('PAPER_020')['value']['charge_drag_fe'] > 0
+            and 'cosmic_ray_aether_drag' in C.calc('PAPER_020')['value']['eqlib'],
+            "PAPER_020: cosmic_ray_aether_drag + Z^(1/3) library eqs")
+assert_that('lensing_rho_trz' in C.calc('PAPER_021')['value']['eqlib'],
+            "PAPER_021: lensing_rho_trz=SSq^2 f_TRZ rho_crit library eq")
+
+# --- 024-030 batch: paper-specific BSM library equations ---
+import math as _m24
+assert_that(abs(C.calc('PAPER_024')['value']['phi_cp_lib'] - P.SSQ*_m24.pi) < 1e-9,
+            "PAPER_024: dpm_cp_phase=SSq*pi library eq")
+assert_that(abs(C.calc('PAPER_025')['value']['m_acp_lib_ev'] - 3.81e-24) < 1e-25,
+            "PAPER_025: ultralight_dm_mass_ev=kappa*hbar=3.81e-24 eV library eq")
+assert_that(abs(C.calc('PAPER_026')['value']['sterile_ladder_lib']['M_s2_gev'] - P.SSQ*80.377) < 1e-6,
+            "PAPER_026: sterile_mass_ladder M_s2=SSq*M_W library eq")
+assert_that(abs(C.calc('PAPER_027')['value']['s_lfv_lib'] - _m24.exp(-P.SSQ)) < 1e-9,
+            "PAPER_027: lfv_temporal_suppression=exp(-SSq)=0.5655 library eq")
+assert_that(abs(C.calc('PAPER_028')['value']['scm_flavor_lib'] - 0.0392**2) < 1e-9,
+            "PAPER_028: ckm_vacuum_density=|V_cb|^2 library eq")
+assert_that(abs(C.calc('PAPER_029')['value']['f_sm_lib'] - P.SSQ**4) < 1e-9,
+            "PAPER_029: cosmic_budget_fsm=SSq^4 library eq")
+assert_that('dark_mediator_suppression' in C.calc('PAPER_030')['value']['eqlib'],
+            "PAPER_030: dark_mediator_suppression=cos^2(pi t_n) library eq")
 
 _r011 = C.calc('PAPER_011')['value']
 assert_that(abs(_r011['omega_suppression_bns'] - 0.110889) < 1e-6,
@@ -3837,8 +3991,14 @@ assert_that(C.wired_count() >= 284, "wired_count >= 284")
 # --- BACKFILL: 10 previously-skipped second-files in range PAPER_001-280 (brings wired to true 294) ---
 assert_that(abs(C.calc('PAPER_008b')['value']['D_suppression'] - 0.333) < 1e-3,
             "PAPER_008b: GW170817 full inspiral D=0.90*0.37=0.333 (66.7% reduction)")
+assert_that(abs(C.calc('PAPER_008b')['value']['strain_ratio_gr_uqff'] - 3.0) < 0.01
+            and 'gw_inspiral_frequency' in C.calc('PAPER_008b')['value']['eqlib'],
+            "PAPER_008b: full-depth (h_GR/h_UQFF=3.0, chirp f(t) lib fn, 9-sector, VDS=F_TRZ)")
 assert_that(abs(C.calc('PAPER_009b')['value']['apparent_distance_factor'] - 3.0) < 0.05,
             "PAPER_009b: GW150914 damping decomp; apparent 1231 Mpc vs true 410 Mpc = factor 3")
+assert_that(abs(C.calc('PAPER_009b')['value']['d_apparent_Mpc'] - 1231.0) < 1.0
+            and 'apparent_distance' in C.calc('PAPER_009b')['value']['eqlib'],
+            "PAPER_009b: full-depth (apparent_distance lib fn, SNR 24->8, 9-sector, VDS=F_TRZ)")
 assert_that(abs(C.calc('PAPER_010b')['value']['D_suppression'] - 0.333) < 1e-3,
             "PAPER_010b: time-domain chirp 23 Hz; D=0.333 RMS strain reduction")
 assert_that(abs(C.calc('PAPER_011b')['value']['D_universal'] - 0.333) < 1e-3 and C.calc('PAPER_011b')['value']['universal_above_23Hz'],

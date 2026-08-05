@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.336.0"
-description = "UQFF Star-Magic-Program v0.336.0: PAPER_328 wired (CLEAN) - nuclear alpha-BEC LENR enhancement; Bose-Einstein occupancy N_B=1/(exp(dE/T_BEC)-1)=29.75 for 40Ca alpha-clustering (T_BEC=14.52 MeV, dE=0.48 MeV from AMD/NIMROD); pairing correction delta_pair=0.1 gives a 10% resonance-amplitude enhancement (even-Z), pair-blocking (odd); rotor cross-section sigma_CS(300)=a(1-exp(-b*E))=10.50 A^2 matches H2O-H2 scattering. wired_count 342, gate 2029/0. Frontier PAPER_328 of 2255."
+version = "0.337.0"
+description = "UQFF Star-Magic-Program v0.337.0: complete-compile of PAPER_001-030 + b-variants over a 441-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. 342 dispatches, 0 duplicates, gate green. Drift-corrected (VDS->F_TRZ, rho_vac->total, beta_i->0.6029)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

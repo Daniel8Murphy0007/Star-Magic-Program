@@ -1,1 +1,6 @@
 quantity,origin,proposed_verdict,basis,needs_daniel,daniel_verdict
+eqlib_architecture,PAPER_001-003,ADOPT,equation-library layer beneath paper dispatches,no,APPROVED (Daniel 2026-08-04)
+common_blocks_helper,PAPER_001-015,ADOPT,_common_uqff_blocks emits every appendix block; guarantees no paper drops a section,no,APPROVED (Daniel 2026-08-04 compile-all-physics)
+kozima_appendix_capture,PAPER_001,ADOPT,K.1-K.6 neutron-drop LENR chain now callable (was dropped),no,APPROVED (Daniel 2026-08-04 no-cutting-corners)
+safe_forward_boundary,PAPER_010b-015b,ADOPT,slice boundary = next @_register AFTER current (fixes backward-slice duplication),no,STANDING LESSON
+bsm_batch_024_030,PAPER_024-030,ADOPT,BSM SSq-ladder equations (CP/DM/sterile/LFV/CKM/budget/mediator) + §B ladder,no,APPROVED (Daniel 2026-08-04 extract 024-030)

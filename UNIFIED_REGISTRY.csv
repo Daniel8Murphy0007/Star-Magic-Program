@@ -1,32 +1,4 @@
 quantity,origin,kind,canonical_route,formula,value,reference,residual_pct,sector,phi_variant,paper_source,confirmations,py_sites,cpp_sites,lean_sites,corpus_citations,status
-gw170817_D_total,PAPER_001 S1,derived,PAPER_001 sec 2.2.5,D_Aether*D_SCm*(1-F_TRZ)*D_String = 1*1*0.9*0.37,0.333,1/3 primitive identity (PAPER_2154),0.100,gw,n/a,PAPER_001,PAPER_1011;PAPER_2154,1,0,0,19,WIRED
-gw170817_h_uqff_strain,PAPER_001 S1,derived,PAPER_001 sec 3.3,D_total * h_GR,1.8041e-22,LIGO GR 5.4176e-22,n/a,gw,n/a,PAPER_001,PAPER_1011,1,0,0,19,WIRED
-gw170817_snr_uqff,PAPER_001 S1,derived,PAPER_001 sec 3.4,D_total * SNR_GR,10.79,detection threshold 8,n/a,gw,n/a,PAPER_001,,1,0,0,19,WIRED
-gw170817_mismatch,PAPER_001 S1,derived,PAPER_001 sec 4.1,1 - D_total ~ D_GW_EROSION,0.667,2/3 EXACT (PAPER_2154),0.050,gw,n/a,PAPER_001,PAPER_2154,1,0,0,19,WIRED
-gw190425_F_uqff,PAPER_002 S0,derived,PAPER_002 sec 2,A_aether*A_SCm(B)*A_TRZ*A_string (paper headline 0.5297; chain gives 0.333 - Q-001),0.5297,none,n/a,gw,n/a,PAPER_002,PAPER_1012,1,0,0,8,OPEN_RULING
-gw190425_a_scm_function,PAPER_002 S0,derived,PAPER_002 sec 2,"A_SCm(B) = exp[-(B/B_crit)^2], B_crit=4.4e13 G (unit vs PAPER_001 T - Q-002)",threshold fn,5-scenario table sec 4,n/a,gw,n/a,PAPER_002,PAPER_001,1,0,0,8,OPEN_RULING
-gw190425_mass_gap_classification,PAPER_002 S0,derived,PAPER_002 sec 5,"P(NS)=0.49, P(BH)=0.51 for m1=2.52 Msun",0.51 BH,no kilonova observed,n/a,gw,n/a,PAPER_002,,1,0,0,8,WIRED
-gw150914_D_total,PAPER_003 S0,derived,PAPER_003 sec 2,1*1*(1-F_TRZ)*0.37 universal BBH chain,0.333,1/3 primitive identity (PAPER_2154),0.100,gw,n/a,PAPER_003,PAPER_001;PAPER_2154,1,0,0,8,WIRED
-gw150914_distance_bias,PAPER_003 S0,derived,PAPER_003 sec 5,D_apparent = D_true/D_total = 410/0.333,1231 Mpc (3.0x),true 410 Mpc (host galaxy),n/a,gw,n/a,PAPER_003,,1,0,0,8,WIRED
-gw150914_phase_lag,PAPER_003 S0,derived,PAPER_003 sec 4,kappa*D*f*SSq (formula evaluates 17.53 vs paper 0.126 - Q-004),0.126 rad,none,n/a,gw,n/a,PAPER_003,,1,0,0,8,OPEN_RULING
-gw170817_chirp_D_total,PAPER_004 S0,derived,PAPER_004 sec 3,D_aether*D_SCm*(1-f_TRZ)*D_string - paper's own explicit (1-F_TRZ) form,0.333,corpus-internal confirmation of primitive composition,0.100,gw,n/a,PAPER_004,PAPER_001;PAPER_2154,1,0,0,5,WIRED
-gw170817_chirp_h_uqff_peak,PAPER_004 S0,derived,PAPER_004 sec 3,0.333 * h_GR(2.8051e-22) = 9.341e-23 computed (paper states 9.4332e-23 - Q-005),9.341e-23,LIGO h_obs ~ 1e-22,1.0,gw,n/a,PAPER_004,,1,0,0,5,OPEN_RULING
-bbh_merger_F_combined,PAPER_005 S0,derived,PAPER_005 sec 3,"(1-F_TRZ)^2 = 0.81 EXACT (B-factor*TRZ, string deactivated for BBH)",0.81,sec-2 states 0.903 (Q-006),n/a,gw,n/a,PAPER_005,PAPER_003,1,0,0,3,OPEN_RULING
-bbh_merger_energy_retention,PAPER_005 S0,derived,PAPER_005 sec 4,E_rad_UQFF = 0.81*E_rad_GR; remnant 64.35 Msun vs GR 64.20,0.6505 Msun,GW150914 remnant ~62 Msun,n/a,gw,n/a,PAPER_005,,1,0,0,3,WIRED
-gw170817_multimessenger_D_total,PAPER_006 S0,derived,PAPER_006 sec 3,1*1*(1-F_TRZ)*0.37 - consistent with PAPER_001,0.333,PAPER_001 cross-check,0.100,gw,n/a,PAPER_006,PAPER_001;PAPER_004,1,0,0,4,WIRED
-gw170817_gw_speed_preservation,PAPER_006 S0,derived,PAPER_006 sec 5,UQFF amplitude-only modification; c_GW = c,|dc/c| < 3e-15,GRB 170817A delay 1.74 s,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED
-gw170817_detection_volume_shrink,PAPER_006 S0,derived,PAPER_006 sec 7,V ~ 1/D_total^3 = 27x shrink (O4/O5 BNS rate prediction),27.1,none,n/a,gw,n/a,PAPER_006,,1,0,0,4,WIRED
-bns_tidal_deformability_lambda,PAPER_007 S143,derived,PAPER_007 sec 2,Lambda = (2/3)*k2*(R/M)^5; lambda_UQFF = lambda_GR*f_SCm(B),~400 typical NS,LIGO GW170817 190-600,n/a,gw,n/a,PAPER_007,PAPER_001;PAPER_002;PAPER_010,1,0,0,3,OPEN_RULING
-bns_f_scm_suppression,PAPER_007 S143,derived,PAPER_007 sec 2.2,f_SCm(B) = 1 - exp[-(B_crit/B)] (threshold suppression),0.632 at B_crit,regime table (mojibake exponents - Q-007),n/a,gw,n/a,PAPER_007,PAPER_002,1,0,0,3,OPEN_RULING
-massgap_ns_bh_discriminator,PAPER_007 S143,derived,PAPER_007 abstract,Lambda_NS(2.52 Msun) ~ 16 vs Lambda_BH = 0,16 vs 0,GW190425 m1 classification,n/a,gw,n/a,PAPER_007,PAPER_002,1,0,0,3,WIRED
-gw_phase_lag_growth,PAPER_008 S143,derived,PAPER_008 sec 2,dphi ~ (1/D_total^2 - 1)*phi_GR ~ 8x; full 100s inspiral 2310.8 rad,8.02x,PAPER_006 2310.8 rad cross-check,0.25,gw,n/a,PAPER_008,PAPER_001;PAPER_006;PAPER_009,1,0,0,3,OPEN_RULING
-gw_tau_extension_d_squared,PAPER_008 S143,derived,PAPER_008 sec 2.1,tau_UQFF = tau_GR/D_total^2 = 9.0x (BNS),9.018,Q-008: PAPER_005 uses linear 1/F convention,0.2,gw,n/a,PAPER_008,PAPER_005,1,0,0,3,OPEN_RULING
-gw_damping_mechanism_decomposition,PAPER_009 S143,derived,PAPER_009 sec 1,D_total = D_Aether*D_SCm*(1-F_TRZ)*D_String; per-system String 0.37/0.62/off,0.333/0.530/0.81,PAPER_001/002/003 cross-checks,n/a,gw,n/a,PAPER_009,PAPER_001;PAPER_002;PAPER_003;PAPER_005,1,0,0,3,OPEN_RULING
-gw_aether_damping_negligible,PAPER_009 S143,derived,PAPER_009 sec 2,D_Aether = exp(-kappa*r/c) ~ 1 for r < observable universe,1.000,Q-009: 17 Gpc scale irreproducible from kappa=5e-4/day,n/a,gw,n/a,PAPER_009,,1,0,0,3,OPEN_RULING
-bns_bbh_damping_ratio,PAPER_009 S143,derived,PAPER_009 sec 1.2,0.81/0.333 = 2.43 (matter presence strengthens damping),2.43,paper states 2.4x,1.3,gw,n/a,PAPER_009,,1,0,0,3,WIRED
-bns_postmerger_qnm_shift,PAPER_010 S0,derived,PAPER_010 sec 2.1,f_UQFF = f_GR*(1+alpha_Q-beta_damp) ~ 0.95*f_GR,2375 Hz (125 Hz shift),3G-detectable,n/a,gw,n/a,PAPER_010,PAPER_007,1,0,0,2,WIRED
-bns_postmerger_ringdown_decay,PAPER_010 S0,derived,PAPER_010 sec 2.2,"tau_UQFF = tau_GR/(1+gamma_damp), gamma=0.4",0.714*tau_GR (~7 ms),stated 0.71,0.60,gw,n/a,PAPER_010,,1,0,0,2,WIRED
-bns_remnant_extra_dissipation,PAPER_010 S0,derived,PAPER_010 sec 3,E_rad_UQFF = (1+0.15)*E_rad_GR (quantum channels; ringdown context),1.15x,note: PAPER_005 inspiral context reduces E_rad - different mechanism,n/a,gw,n/a,PAPER_010,PAPER_005,1,0,0,2,WIRED
 sgwb_omega_suppression,PAPER_011 S0,derived,PAPER_011 sec 2,Omega_UQFF = D_total^2 * Omega_GR (energy ~ h^2),BNS 0.111 / BBH 0.656,corroborates Q-008 D^2 convention (2nd corpus data point),n/a,gw,n/a,PAPER_011,PAPER_008,1,0,0,2,WIRED
 sgwb_mixed_population_factor,PAPER_011 S0,derived,PAPER_011 sec 2.4,0.5*0.111 + 0.4*0.656 + 0.1*0.5 = 0.37 (63% SGWB reduction),0.37,detection delay 2028 -> 2032-2035,0.13,gw,n/a,PAPER_011,,1,0,0,2,WIRED
 eccentric_circularization_tau,PAPER_012 S143,derived,PAPER_012 sec 2,de/dt|UQFF = D^2 * de/dt|GR (modified Peters); tau_circ = 9.0x,9.02,3rd D^2 corpus data point (Q-008),0.2,gw,n/a,PAPER_012,PAPER_008;PAPER_011,1,0,0,3,WIRED
@@ -568,8 +540,6 @@ sombrero_uqff_recession_damping_kappa,PAPER_277 S77,derived,PAPER_277 sec 2,"Som
 sombrero_dust_ring_uqff_gravitational_ring_resonator,PAPER_278 S77,derived,PAPER_278 sec 2,"Sombrero Dust Ring UQFF Gravitational Ring Resonator omega_ring and r_ring (Sombrero M104 equatorial dust lane); annular mass at r_ring=r/3=7.867e19 m whose orbital motion generates a PURE oscillatory gravitational perturbation F_ring(t)=A_ring*cos(omega_ring*t) at reference r; omega_ring=sqrt(G*M/r_ring^3)=sqrt(6.674e-11*1.989e42/(7.867e19)^3)=1.650e-14 rad/s (M=1.989e42~1e12 Msun headline-consistent; sec 2.2 shows M=1.989e41/GM=1.327e31, a dropped-exponent mojibake typo contradicting all 4 paper tables - Q-244); ring orbital period T_ring=2pi/omega_ring=3.806e14 s=12.08 Myr; proximity enhancement factor (r/r_ring)^2=3^2=9 (ring exerts 9x more gravitational influence per unit mass at reference point); ring amplitude A_ring=9*f_ring*g_base=9*0.001*2.382e-10=2.144e-12 m/s2 (f_ring=0.001 dust mass fraction, g_base=2.382e-10); PURE oscillatory - NO exponential decay (distinct from PAPER_275 Andromeda HI ring A*exp(-alpha t)*cos(wt)), reflecting settled gravitationally-stable dust ring; FIRST stable UQFF Gravitational Ring Resonator in catalogue; A_ring~g_BH (both ~2.1-2.4e-12) ring and BH comparable at reference radius; Session 77 SOMBRERO_UQFF_MODULE.cpp UQFF 2.0",1.650e-14,omega_ring,n/a,galaxy,n/a,PAPER_278,PAPER_275,1,0,0,1,WIRED
 sombrero_smbh_dominance_ratio_gamma_bh_sphere_of_influence,PAPER_279 S77,derived,PAPER_279 sec 2,"Sombrero SMBH Dominance Ratio gamma_BH and UQFF Sphere of Influence r_SOI (Sombrero M104 harbours one of most massive BHs relative to host: M_BH=1e9 Msun=1.989e39 kg in M=1e11 Msun=1.989e41 kg galaxy); SMBH Dominance Ratio gamma_BH=M_BH/M=0.01=1% (highest of any nearby well-measured galaxy in UQFF catalogue); BH direct contribution g_BH=gamma_BH*g_base=G*M_BH/r^2=0.01*2.382e-10=2.382e-12 m/s2; UQFF Sphere of Influence r_SOI=r*sqrt(gamma_BH) defined by setting g_BH(r')=g_base(r) -> r'^2=r^2*gamma_BH -> r_SOI=2.36e20*sqrt(0.01)=2.36e20*0.1=2.36e19 m=2.49 kly (boundary inside which BH gravity exceeds galaxy-mean gravity); BH fractional contribution g_BH/g_total~2.382e-12/1.238e-8~1.92e-4 (~0.019% of 26-layer Triadic sum); comparative dominance Sombrero/Sgr A*=0.01/4e-5=250x, Sombrero/M87=0.01/1.1e-3=9.09x, Sombrero/Andromeda=0.01/1.4e-4=71.4x; gamma_BH + r_SOI = universal UQFF BH dominance prescription for any galaxy module with known M_BH/M; Session 77 SOMBRERO_UQFF_MODULE.cpp UQFF 2.0",0.01,gamma_BH,n/a,black-hole,n/a,PAPER_279,PAPER_277,1,0,0,1,WIRED
 saturn_uqff_solar_tidal_perturbation_ratio_tau_sun,PAPER_280 S78,derived,PAPER_280 sec 3,"Saturn UQFF Solar Tidal Perturbation Ratio tau_Sun and g_Sun_tidal (Saturn is FIRST planetary-scale body in UQFF catalogue; all prior 20 C++ modules were stellar/NS/galactic; SATURN_UQFF_MODULE.cpp is 21st C++ module); transition to Solar System planet (z=0, f_DM=0, r=6.0268e7 m) introduces external gravitational coupling absent from stellar/galactic modules - the host-star tidal perturbation on planetary surface gravity; Saturn surface gravity g_base=G*M_Saturn/r_Saturn^2=6.674e-11*5.683e26/(6.0268e7)^2=10.44 m/s2 (14 orders larger than typical galactic ~1e-10; FIRST module where pre_sum_Ug=52*g_base=543 m/s2 > 1); solar tidal acceleration at Saturn orbit g_Sun_tidal=G*M_Sun/r_orbit^2=6.674e-11*1.989e30/(1.43e12)^2=6.49e-5 m/s2; Solar UQFF Tidal Perturbation Ratio tau_Sun=g_Sun_tidal/g_base=(M_Sun/M_Saturn)*(r_Saturn/r_orbit)^2=3500*1.776e-9=6.22e-6 (parts-per-million perturbation); g_Sun_tidal is CONSTANT additive (not oscillatory) because quasi-static at Saturn orbit; universal planetary formula tau_planet=(M_star/M_planet)*(r_planet/r_orbit)^2 - Mercury 1.07e-2 (~1% surface gravity), Earth 6.03e-4, Jupiter 8.85e-6, Saturn 6.22e-6 (tau decreases with orbital radius and planet mass); FIRST UQFF solar coupling constant, establishes UQFF Solar System framework; Session 78 SATURN_UQFF_MODULE.cpp UQFF 2.0",6.22e-6,tau_Sun,n/a,planetary,n/a,PAPER_280,PAPER_279,1,0,0,1,WIRED
-gw170817_full_inspiral_damping_D,PAPER_008b S0,derived,PAPER_008b,GW170817 full inspiral 23-300 Hz; strain reduced by D=f_TRZ*beta_string=0.90*0.37=0.333 (66.7%) across full chirp; h_UQFF=h_GR*(1-U_bi/F_U)*exp(-kappa t),0.333,D_suppression,0,gravitational-wave,n/a,PAPER_008b,PAPER_011b,1,0,0,1,WIRED
-gw150914_aether_string_trz_scm_damping,PAPER_009b S0,derived,PAPER_009b,Aether/String/TRZ/SCm damping decomposition GW150914; D=0.333; GR-template inference gives apparent 1231 Mpc vs true 410 Mpc (factor 3),3.0,apparent_distance_factor,0,gravitational-wave,n/a,PAPER_009b,PAPER_008b,1,0,0,1,WIRED
 gw_time_domain_chirp_23hz_D,PAPER_010b S0,derived,PAPER_010b,Time-domain chirp 23 Hz onset -> 250 Hz; D=0.333; RMS strain 1.3728e-21 (GR) -> 4.57e-22 (UQFF),0.333,D_suppression,0,gravitational-wave,n/a,PAPER_010b,PAPER_011b,1,0,0,1,WIRED
 uqff_gw_amplitude_reduction_factor_D,PAPER_011b S0,derived,PAPER_011b,"Universal GW amplitude reduction D=f_TRZ*beta_string=0.90*0.37=0.333 (66.7% reduction); universal for z<0.5, f>23 Hz, any source",0.333,D_universal,0,gravitational-wave,n/a,PAPER_011b,PAPER_008b;PAPER_010b,1,0,0,1,WIRED
 gw150914_waveform_validation_damping_ratio,PAPER_012b S0,derived,PAPER_012b,GW150914 validation M_c=28 Msun d=410 Mpc; damping ratio 0.6691 sub-unity all freq; f_TRZ=0.90 f_SCm=0.990,0.6691,damping_ratio,0,gravitational-wave,n/a,PAPER_012b,PAPER_011b,1,0,0,1,WIRED
@@ -687,3 +657,117 @@ Q_wave_47_stats,PAPER_327 Q_wave distribution stats,statistical_summary,mean/std
 N_B_alpha_bec,PAPER_328 alpha-BEC Bose occupancy,derived_occupancy,1/(exp(dE/T_BEC)-1),40Ca alpha-clustering (T_BEC=14.52 MeV),29.75,PAPER_328,0.0,nuclear/LENR,resonance,PAPER_328,1,1,0,0,PAPER_1061,WIRED
 sigma_CS_rotor,PAPER_328 rotor cross-section,derived_cross_section,a*(1-exp(-b*E)),"H2O-H2 scattering (a=15.28, b=0.00387)",10.49 A^2 at 300 cm-1,PAPER_328,0.0,nuclear/LENR,resonance,PAPER_328,1,1,0,0,PAPER_328,WIRED
 delta_pair_lenr,PAPER_328 pairing correction,derived_factor,1+delta_pair,10% LENR enhancement (even-Z alpha-conjugate),1.1,PAPER_328,0.0,nuclear/LENR,resonance,PAPER_328,1,1,0,0,PAPER_328,WIRED
+D_TRZ,PAPER_001 eq10,damping_factor,1-F_TRZ,1-F_TRZ,0.9,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,PAPER_002;PAPER_003,WIRED
+D_GW_erosion,PAPER_001/2154,damping_factor,D_phys/D_BSFG,D_PHYS/D_BSFG,0.6667,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,PAPER_2154,WIRED
+D_total_gw,PAPER_001 eq2/12,damping_factor,1-D_GW_erosion,1-D_PHYS/D_BSFG,0.3333,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,,WIRED
+D_String,PAPER_001 eq11,damping_factor,D_total/D_TRZ,(1-D_GW_erosion)/(1-F_TRZ),0.37037,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,,WIRED
+D_SCm,PAPER_001 eq5,damping_factor,exp(-(B/B_crit)^2),exp(-(B/B_CRIT)^2),~1.0,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,PAPER_002,WIRED
+omega_SCm,PAPER_001 eq31,frequency,2*pi*OMEGA_SCM_HZ,2*pi*1.25THz,7.854e12 rad/s,PAPER_001,0.0,phonon,resonance,PAPER_001,1,1,0,0,,WIRED
+S_26_third_order,PAPER_001 eq32,ramanujan_sum,third-order 26-state,Ramanujan double sum,154030.8,PAPER_001,0.0,phonon,resonance,PAPER_001,1,1,0,0,PAPER_1080,WIRED
+phonon_strain,PAPER_001 eq29,strain,h_GR*(1-0.47*Phi/S_26),h_GR*(1-0.47*Phi/S_26),0.53*h_GR peak,PAPER_001,0.0,phonon,resonance,PAPER_001,1,1,0,0,PAPER_1022,WIRED
+h_uqff_strain,PAPER_001 eq1,strain,D_total*h_GR,D_total*h_GR,1.8041e-22,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,,WIRED
+snr_uqff,PAPER_001 eq17,snr,D_total*SNR_GR,D_total*SNR_GR,10.79,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,,WIRED
+mismatch_gw170817,PAPER_001 eq18,tension,D_GW_erosion,1-D_total,0.667,PAPER_001,0.0,gw/damping,resonance,PAPER_001,1,1,0,0,,WIRED
+L_Edd_UQFF,PAPER_001 eq35,luminosity,L_Edd*(1+rho_SCm*V*S26^2/(GM/rH^2)),buoyancy-corrected Eddington,library,PAPER_001,0.0,agn/buoyancy,resonance,PAPER_001,1,1,0,0,PAPER_1002,WIRED
+P_jet_UQFF,PAPER_001 eq37,jet_power,P_BZ*(1+beta_i*Phi*(B/B_crit)^2),phonon Blandford-Znajek,library,PAPER_001,0.0,agn/jet,resonance,PAPER_001,1,1,0,0,PAPER_1037,WIRED
+F_buoy_ICM,PAPER_001 eq40,force,rho*V*g*beta_i*S_26*Phi,ICM buoyancy profile,library,PAPER_001,0.0,cluster/buoyancy,resonance,PAPER_001,1,1,0,0,PAPER_1039,WIRED
+F_uqff_gw190425,PAPER_002 sec2,damping_factor,"1-0.47 (phonon route, Q-001)",A_aether*A_SCm*A_TRZ*A_string,0.5297,PAPER_002,0.0,gw/damping,resonance,PAPER_002,1,1,0,0,PAPER_001;PAPER_1022,WIRED
+F_chain_gw190425,PAPER_002 sec2,damping_factor,A_aether*A_SCm*D_TRZ*D_String,1*1*0.9*0.37,0.333,PAPER_002,0.0,gw/damping,resonance,PAPER_002,1,1,0,0,PAPER_001,WIRED
+A_SCm_scenarios,PAPER_002 sec4,damping_factor,exp(-(B/B_crit)^2),5-field magnetic table,1.0..0.0,PAPER_002,0.0,gw/damping,resonance,PAPER_002,1,1,0,0,,WIRED
+mass_gap_classification,PAPER_002 sec5,probability,SCm regime factors,"P(NS)=0.49,P(BH)=0.51",0.51 BH,PAPER_002,0.0,gw/mass-gap,resonance,PAPER_002,1,1,0,0,,WIRED
+snr_deficit_gw190425,PAPER_002 sec7,snr,1-SNR_UQFF/SNR_obs,1-3.6/12.9,72.1%,PAPER_002,0.0,gw/damping,resonance,PAPER_002,1,1,0,0,,WIRED
+F_combined_bbh,PAPER_003 sec2,damping_factor,1*1*D_TRZ*D_String,universal BBH chain,0.333,PAPER_003,0.0,gw/damping,resonance,PAPER_003,1,1,0,0,PAPER_001,WIRED
+gw_inspiral_strain,PAPER_003 sec3,strain,(4G*Mc/c^2 D_L)*(pi G Mc f/c^3)^(2/3),"uses G_UQFF,C_UQFF_DERIVED",1.25e-21,PAPER_003,0.0,gw/strain,resonance,PAPER_003,1,1,0,0,,WIRED
+apparent_distance_bias,PAPER_003 sec5,distance,D_true/F_combined,410/0.333,1231 Mpc (3x),PAPER_003,0.0,gw/hubble,resonance,PAPER_003,1,1,0,0,,WIRED
+uqff_phase_lag,PAPER_003 sec4,phase,kappa*D*f_GW*SSq,Q-004 (17.53 vs 0.126),0.126 rad stated,PAPER_003,0.0,gw/propagation,resonance,PAPER_003,1,1,0,0,,WIRED
+VDS_ratio,PAPER_2156 (drift fix),ratio,rho_SCm/rho_UA=F_TRZ,1.894 drift -> 0.1,0.1,PAPER_002,0.0,vacuum/VDS,resonance,PAPER_002,2,1,0,0,PAPER_003;PAPER_2156,WIRED
+rho_vac_total,PAPER_2155/2120,energy_density,rho_UA+rho_SCm=LAMBDA_VAC,J/m^3-native,7.799e-36,PAPER_002,0.0,vacuum/VDS,resonance,PAPER_002,2,1,0,0,PAPER_003;PAPER_2155,WIRED
+Delta_YM,PAPER_1318,mass_gap,Yang-Mills BCS phonon gap,integer-primitive closure,1.736 GeV,PAPER_002,0.0,yang-mills,resonance,PAPER_002,2,1,0,0,PAPER_003;PAPER_1318,WIRED
+F_U_master,PAPER_420,master_equation,Ug1..4+Ubi+Um-sum(lam*U*E),4-term dissipation,library,PAPER_002,0.0,master,resonance,PAPER_002,2,1,0,0,PAPER_003;PAPER_420,WIRED
+Um_heaviside,PAPER_421,magnetism,Um_base*(1+1e13*Theta)*(1+A_q*cos),phase-transition amplifier,library,PAPER_002,0.0,magnetism,resonance,PAPER_002,2,1,0,0,PAPER_003;PAPER_421,WIRED
+V_phi0,PAPER_1066,potential,SCm condensate min = -rho_SCm,9-sector L_SCm,-7.09e-37,PAPER_003,0.0,lagrangian,resonance,PAPER_003,2,1,0,0,PAPER_002;PAPER_1066,WIRED
+BSH_harmonics,PAPER_877 (bulk),harmonic_sum,sum_{j=1}^{26}(1/j)f_Ub(1-exp(-SSq m/M))cos(2pij/26),buoyancy saturation,library,PAPER_002,0.0,buoyancy/BSH,resonance,PAPER_002,2,1,0,0,PAPER_003,WIRED
+chirp_frequency_evolution,PAPER_004 sec2,frequency,(1/pi)[5/256tau]^(3/8)(G Mc/c^3)^(-5/8),"uses G_UQFF,C_UQFF_DERIVED",PN chirp,PAPER_004,0.0,gw/chirp,resonance,PAPER_004,1,1,0,0,,WIRED
+h_uqff_chirp,PAPER_004 sec3,strain,D_aether*D_SCm*(1-F_TRZ)*D_string*h_GR,0.333*h_GR,9.341e-23,PAPER_004,1.0,gw/chirp,resonance,PAPER_004,1,1,0,0,,WIRED
+F_combined_bbh_005,PAPER_005 sec3,damping_factor,(1-F_TRZ)^2,B-factor*TRZ,0.81,PAPER_005,0.0,gw/damping,resonance,PAPER_005,1,1,0,0,,WIRED
+gw_power_peters,PAPER_005 sec2,power,(32/5)(G^4/c^5)(m1m2)^2(m1+m2)/r^5,"uses G_UQFF,C_UQFF_DERIVED",8.945e-11 W,PAPER_005,0.0,gw/power,resonance,PAPER_005,1,1,0,0,,WIRED
+mass_retention_bbh,PAPER_005 sec4,mass,M_tot-F*E_rad,99% retention,64.35 Msun,PAPER_005,0.0,gw/energy,resonance,PAPER_005,1,1,0,0,,WIRED
+detection_volume_ratio,PAPER_006 sec7,volume,1/F_combined^3,1/0.333^3,27x,PAPER_006,0.0,gw/detection,resonance,PAPER_006,1,1,0,0,,WIRED
+multi_messenger_consistency,PAPER_006 sec2,constraint,"amplitude-only, c_GW=c","GRB delay 1.74s, |dc/c|<3e-15",preserved,PAPER_006,0.0,gw/multi-messenger,resonance,PAPER_006,1,1,0,0,PAPER_001,WIRED
+tidal_deformability_Lambda,PAPER_007,equation,Lambda=(2/3)k2(1/C)^5,(2/3)*k2*(1/C)^5,398.6,GW170817 LIGO 190-600,0.35,GW-tidal,0.84,PAPER_007,1,1,0,0,21,WIRED
+f_SCm_suppression,PAPER_007,equation,f_SCm(B)=1-exp[-(B_crit/B)],1-exp(-B_crit/B),0.632@Bcrit,BCS Cooper-pair screening,0.0,GW-tidal,0.84,PAPER_007,1,1,0,0,21,WIRED
+gw_frequency_chirp_rate,PAPER_008,equation,df/dt=(96/5pi)(piMf)^(11/3)/c,GR chirp scaled by D_total,2.316e26,GR waveform,0.84,GW-waveform,0.84,PAPER_008,1,1,0,0,22,WIRED
+waveform_phase_lag_full,PAPER_008,equation,dphi=(1/D^2-1)phi_GR,2310.8 rad @100s,2310.8,GW170817 inspiral,0.2,GW-waveform,0.84,PAPER_008,1,1,0,0,22,WIRED
+gw_inspiral_frequency,PAPER_008b,equation,f(t)=f0*[1-t/t_chirp]^(-3/8),leading-PN chirp,28.6@50s,GW170817,0.1,GW-inspiral,0.84,PAPER_008b,1,1,0,0,18,WIRED
+h_uqff_damped,PAPER_008b,equation,h_UQFF=h_GR*(1-U_bi/F_U)*exp(-kappa t),strain damping,0.333,GW170817 40Mpc,0.0,GW-inspiral,0.84,PAPER_008b,1,1,0,0,18,WIRED
+D_aether_damping,PAPER_009,equation,D_Aether=exp(-kappa r/c),~1 all observed GW,0.0@410Mpc,GW damping,0.84,GW-damping,0.84,PAPER_009,1,1,0,0,21,WIRED
+D_total_4mech,PAPER_009,equation,D_total=D_Aether*D_SCm*D_TRZ*D_String,4-mechanism product,0.333 BNS,GW170817/190425/150914,0.0,GW-damping,0.84,PAPER_009,1,1,0,0,21,WIRED
+gw_distance_bias_009b,PAPER_009b,equation,d_apparent=d_true/D,GR-template distance bias,1231 Mpc,GW150914 410Mpc true,0.0,GW-damping,0.84,PAPER_009b,1,1,0,0,17,WIRED
+qnm_freq_uqff,PAPER_010,equation,f_UQFF=f_GR*(1+alpha_Q-beta_damp),QNM freq shift,2375 Hz,BNS post-merger 2.5kHz,0.0,GW-postmerger,0.84,PAPER_010,1,1,0,0,16,WIRED
+qnm_damping_time,PAPER_010,equation,tau_UQFF=tau_GR/(1+gamma_damp),QNM decay,7.14 ms,10ms GR,0.6,GW-postmerger,0.84,PAPER_010,1,1,0,0,16,WIRED
+beta_model_density,PAPER_001,equation,rho(r)=rho0*(1+(r/rc)^2)^(-3beta/2),rho(r)=rho0*(1+(r/rc)^2)^(-3beta/2),compiled,ICM density,0.0,icm-buoyancy,0.84,PAPER_001,1,1,0,0,1,WIRED
+hydrostatic_bias_uqff,PAPER_001,equation,b=1-M_HSE/M_true=0.17,b=1-M_HSE/M_true=0.17,compiled,cluster-mass bias,0.0,icm-buoyancy,0.84,PAPER_001,1,1,0,0,1,WIRED
+cooling_flow_uqff,PAPER_001,equation,Mdot=Mdot0*(1-beta_i*S26^3*Phi),Mdot=Mdot0*(1-beta_i*S26^3*Phi),compiled,cooling suppression,0.0,icm-buoyancy,0.84,PAPER_001,1,1,0,0,1,WIRED
+W_26,PAPER_001,equation,prod_{i=1}^26[1+SSq*exp(-kappa i n/26)],prod_{i=1}^26[1+SSq*exp(-kappa i n/26)],compiled,26-state weight,0.0,ramanujan,0.84,PAPER_001,1,1,0,0,1,WIRED
+ramanujan_R_n,PAPER_001,equation,"C(4n,n)*W_26(n)/4^(4n)","C(4n,n)*W_26(n)/4^(4n)",compiled,26D Ramanujan term,0.0,ramanujan,0.84,PAPER_001,1,1,0,0,1,WIRED
+s26_polylog,PAPER_001,equation,Li_26(z)=sum z^k/k^26,Li_26(z)=sum z^k/k^26,compiled,26D polylog,0.0,ramanujan,0.84,PAPER_001,1,1,0,0,1,WIRED
+A_SCm_activation,PAPER_001,equation,exp[-B^2/B_crit^2],exp[-B^2/B_crit^2],compiled,SCm Gaussian gate,0.0,kozima-lenr,0.84,PAPER_001,1,1,0,0,1,WIRED
+kozima_neutron_static,PAPER_001,equation,k_neutron*sigma_n=1e6 N,k_neutron*sigma_n=1e6 N,compiled,static neutron drop,0.0,kozima-lenr,0.84,PAPER_001,1,1,0,0,1,WIRED
+kozima_cross_section_scm,PAPER_001,equation,sigma0*exp[-(w-w_SCm)^2/2G^2]*(1+SSq n/26),sigma0*exp[-(w-w_SCm)^2/2G^2]*(1+SSq n/26),compiled,SCm cross-section,0.0,kozima-lenr,0.84,PAPER_001,1,1,0,0,1,WIRED
+kozima_buoyancy_coupled,PAPER_001,equation,N_n*sigma*Phi*(F_UBi/F_U-1),N_n*sigma*Phi*(F_UBi/F_U-1),compiled,buoyancy-coupled neutron,0.0,kozima-lenr,0.84,PAPER_001,1,1,0,0,1,WIRED
+kozima_s26_coupling,PAPER_001,equation,sum_{n=0}^26 F(n)*S26(SSq(1+n/26)),sum_{n=0}^26 F(n)*S26(SSq(1+n/26)),compiled,polylog coupling,0.0,kozima-lenr,0.84,PAPER_001,1,1,0,0,1,WIRED
+L_cosmo,PAPER_001,equation,rho_vac*f_scm*(1-e^-gt),rho_vac*f_scm*(1-e^-gt),compiled,ACP cosmogenesis density,0.0,cosmogenesis,0.84,PAPER_001,1,1,0,0,1,WIRED
+V_phi_NS,PAPER_001,equation,1/2 m^2 phi^2+lam/4! phi^4+kappa rho_vac phi,1/2 m^2 phi^2+lam/4! phi^4+kappa rho_vac phi,compiled,NS-sector potential,0.0,cosmogenesis,0.84,PAPER_001,1,1,0,0,1,WIRED
+euler_lagrange_eom_NS,PAPER_001,equation,del^2 phi-(4piG rho/c^2)phi+Omega d_t phi=0,del^2 phi-(4piG rho/c^2)phi+Omega d_t phi=0,compiled,E-L EOM,0.0,cosmogenesis,0.84,PAPER_001,1,1,0,0,1,WIRED
+dvp_primes,PAPER_001,equation,"p_DVP=3, n_channel=2/26","p_DVP=3, n_channel=2/26",compiled,dipole vortex primes,0.0,vds-dvp-bsh,0.84,PAPER_001,1,1,0,0,1,WIRED
+bsh_saturation,PAPER_001,equation,F_bsh*(1-tanh((t-t_sat)/tau)),F_bsh*(1-tanh((t-t_sat)/tau)),compiled,BSH saturation,0.0,vds-dvp-bsh,0.84,PAPER_001,1,1,0,0,1,WIRED
+stochastic_gw_omega,PAPER_011,equation,"Omega_GW,UQFF=D^2*Omega_GR","Omega_GW,UQFF=D^2*Omega_GR",compiled,SGWB energy,0.0,stochastic-bg,0.84,PAPER_011,1,1,0,0,1,WIRED
+peters_ecc_tau_extension,PAPER_012,equation,tau_circ=1/D^2,tau_circ=1/D^2,compiled,circularization,0.0,eccentric-binary,0.84,PAPER_012,1,1,0,0,1,WIRED
+magnetar_edot_suppression,PAPER_013,equation,Edot=D_SCm^2*Edot_GR,Edot=D_SCm^2*Edot_GR,compiled,dipole radiation,0.0,magnetar-spindown,0.84,PAPER_013,1,1,0,0,1,WIRED
+braking_index_uqff,PAPER_013,equation,n=2-dlnD/dlnOmega,n=2-dlnD/dlnOmega,compiled,braking index,0.0,magnetar-spindown,0.84,PAPER_013,1,1,0,0,1,WIRED
+pbh_mass_function,PAPER_014,equation,exp[-(M/M_Q)^g]*(1+A sin),exp[-(M/M_Q)^g]*(1+A sin),compiled,PBH mass fn,0.0,primordial-bh,0.84,PAPER_014,1,1,0,0,1,WIRED
+modified_friedmann_uqff,PAPER_014,equation,H^2=8piG/3 rho-k/a^2+Lam/3+xi H,H^2=8piG/3 rho-k/a^2+Lam/3+xi H,compiled,modified Friedmann,0.0,primordial-bh,0.84,PAPER_014,1,1,0,0,1,WIRED
+gw_propagation_damping,PAPER_015,equation,Gamma_0*(f/f_ref)^a*[(1+z)/H]^b,Gamma_0*(f/f_ref)^a*[(1+z)/H]^b,compiled,GW damping,0.0,gw-cosmology,0.84,PAPER_015,1,1,0,0,1,WIRED
+H0_uqff_bias,PAPER_015,equation,factor*H0_obs,factor*H0_obs,compiled,standard-siren H0,0.0,gw-cosmology,0.84,PAPER_015,1,1,0,0,1,WIRED
+f_isco_observer,PAPER_013b,equation,c^3/(6^1.5 pi G M(1+z)),c^3/(6^1.5 pi G M(1+z)),compiled,ISCO frequency,0.0,lisa-smbh,0.84,PAPER_013b,1,1,0,0,1,WIRED
+D_eff_beat,PAPER_010b,equation,D*[1+dbeta*cos(2pi f_beat t)],D*[1+dbeta*cos(2pi f_beat t)],compiled,beat-modulated damping,0.0,time-domain-chirp,0.84,PAPER_010b,1,1,0,0,1,WIRED
+chsh_suppression,PAPER_016,equation,S_QM*(1-eps_damp),S_QM*(1-eps_damp),compiled,CHSH/Tsirelson,0.0,entanglement,0.84,PAPER_016,1,1,0,0,1,WIRED
+f_combined_redshift,PAPER_017,equation,F_TRZ*F_aether*F_Um,F_TRZ*F_aether*F_Um,compiled,0.622 origin,0.0,redshift-gw,0.84,PAPER_017,1,1,0,0,1,WIRED
+phase_lag_trz,PAPER_017,equation,2 pi F_TRZ,2 pi F_TRZ,compiled,phase lag,0.0,redshift-gw,0.84,PAPER_017,1,1,0,0,1,WIRED
+aether_noise_spectrum,PAPER_018,equation,S_GR*[1+P_aether]*F_TRZ,S_GR*[1+P_aether]*F_TRZ,compiled,LISA noise,0.0,aether-noise,0.84,PAPER_018,1,1,0,0,1,WIRED
+pta_trz_resonance,PAPER_019,equation,1+SSq*Phi_TRZ,1+SSq*Phi_TRZ,compiled,PTA inversion,0.0,pta,0.84,PAPER_019,1,1,0,0,1,WIRED
+cosmic_ray_aether_drag,PAPER_020,equation,kappa*(E/E_ref)^0.37,kappa*(E/E_ref)^0.37,compiled,UHECR drag,0.0,cosmic-ray,0.84,PAPER_020,1,1,0,0,1,WIRED
+charge_drag_scaling,PAPER_020,equation,Z^(1/3),Z^(1/3),compiled,charge drag,0.0,cosmic-ray,0.84,PAPER_020,1,1,0,0,1,WIRED
+lensing_rho_trz,PAPER_021,equation,SSq^2*f_TRZ*rho_crit,SSq^2*f_TRZ*rho_crit,compiled,sigma8 tension,0.0,lensing,0.84,PAPER_021,1,1,0,0,1,WIRED
+d_string_composed,PAPER_022,equation,1-SSq^2*N_eff=0.37,1-SSq^2*N_eff=0.37,compiled,string origin,0.0,string-compactification,0.84,PAPER_022,1,1,0,0,1,WIRED
+kk_mass_scale,PAPER_022,equation,hbar c/R_c,hbar c/R_c,compiled,KK scale,0.0,string-compactification,0.84,PAPER_022,1,1,0,0,1,WIRED
+g2_kk_loop,PAPER_023,equation,(m^2/8pi M_KK^2)(2/3)(1/SSq^2),(m^2/8pi M_KK^2)(2/3)(1/SSq^2),compiled,tau g-2 KK,0.0,tau-g2,0.84,PAPER_023,1,1,0,0,1,WIRED
+g2_string_loop,PAPER_023,equation,(SSq^2/pi)(m^2/M_KK^2)(pi^2/6),(SSq^2/pi)(m^2/M_KK^2)(pi^2/6),compiled,tau g-2 string,0.0,tau-g2,0.84,PAPER_023,1,1,0,0,1,WIRED
+dvp_prime_paper_015b,PAPER_015b,observable,p_DVP=53 n_channel=16/26,§B.2 resonant,53,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_015b,1,1,0,0,1,WIRED
+dvp_prime_paper_016,PAPER_016,observable,p_DVP=59 n_channel=17/26,§B.2 resonant,59,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_016,1,1,0,0,1,WIRED
+dvp_prime_paper_016b,PAPER_016b,observable,p_DVP=59 n_channel=17/26,§B.2 resonant,59,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_016b,1,1,0,0,1,WIRED
+dvp_prime_paper_017,PAPER_017,observable,p_DVP=61 n_channel=18/26,§B.2 resonant,61,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_017,1,1,0,0,1,WIRED
+dvp_prime_paper_018,PAPER_018,observable,p_DVP=67 n_channel=19/26,§B.2 resonant,67,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_018,1,1,0,0,1,WIRED
+dvp_prime_paper_019,PAPER_019,observable,p_DVP=71 n_channel=20/26,§B.2 resonant,71,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_019,1,1,0,0,1,WIRED
+dvp_prime_paper_020,PAPER_020,observable,p_DVP=73 n_channel=21/26,§B.2 resonant,73,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_020,1,1,0,0,1,WIRED
+dvp_prime_paper_021,PAPER_021,observable,p_DVP=79 n_channel=22/26,§B.2 resonant,79,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_021,1,1,0,0,1,WIRED
+dvp_prime_paper_022,PAPER_022,observable,p_DVP=83 n_channel=23/26,§B.2 resonant,83,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_022,1,1,0,0,1,WIRED
+dvp_prime_paper_023,PAPER_023,observable,p_DVP=89 n_channel=24/26,§B.2 resonant,89,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_023,1,1,0,0,1,WIRED
+dpm_cp_phase,PAPER_024,equation,SSq*pi,SSq*pi,compiled,CP phase,0.0,tau-edm,0.84,PAPER_024,1,1,0,0,1,WIRED
+dpm_trz_cp_phase,PAPER_024,equation,(1-F_TRZ)F_TRZ*pi,(1-F_TRZ)F_TRZ*pi,compiled,TRZ CP,0.0,tau-edm,0.84,PAPER_024,1,1,0,0,1,WIRED
+ultralight_dm_mass_ev,PAPER_025,equation,kappa*hbar,kappa*hbar,compiled,ACP mass,0.0,dark-matter,0.84,PAPER_025,1,1,0,0,1,WIRED
+heavy_dm_mass_tev,PAPER_025,equation,M_KK*SSq^2,M_KK*SSq^2,compiled,ACP2 mass,0.0,dark-matter,0.84,PAPER_025,1,1,0,0,1,WIRED
+sterile_mass_ladder,PAPER_026,equation,SSq*M_W; M_KK/SSq,SSq*M_W; M_KK/SSq,compiled,sterile spectrum,0.0,sterile-neutrino,0.84,PAPER_026,1,1,0,0,1,WIRED
+lfv_temporal_suppression,PAPER_027,equation,exp(-SSq),exp(-SSq),compiled,LFV suppress,0.0,lfv,0.84,PAPER_027,1,1,0,0,1,WIRED
+ckm_vacuum_density,PAPER_028,equation,|V_cb|^2,|V_cb|^2,compiled,CKM vacuum,0.0,bsm-couplings,0.84,PAPER_028,1,1,0,0,1,WIRED
+cosmic_budget_fsm,PAPER_029,equation,SSq^4,SSq^4,compiled,SM fraction,0.0,tev-newphysics,0.84,PAPER_029,1,1,0,0,1,WIRED
+dvp_prime_paper_024,PAPER_024,observable,p_DVP=97,§B.2,97,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_024,1,1,0,0,1,WIRED
+dvp_prime_paper_025,PAPER_025,observable,p_DVP=101,§B.2,101,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_025,1,1,0,0,1,WIRED
+dvp_prime_paper_025b,PAPER_025b,observable,p_DVP=101,§B.2,101,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_025b,1,1,0,0,1,WIRED
+dvp_prime_paper_026,PAPER_026,observable,p_DVP=103,§B.2,103,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_026,1,1,0,0,1,WIRED
+dvp_prime_paper_026b,PAPER_026b,observable,p_DVP=103,§B.2,103,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_026b,1,1,0,0,1,WIRED
+dvp_prime_paper_026c,PAPER_026c,observable,p_DVP=103,§B.2,103,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_026c,1,1,0,0,1,WIRED
+dvp_prime_paper_027,PAPER_027,observable,p_DVP=107,§B.2,107,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_027,1,1,0,0,1,WIRED
+dvp_prime_paper_028,PAPER_028,observable,p_DVP=109,§B.2,109,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_028,1,1,0,0,1,WIRED
+dvp_prime_paper_029,PAPER_029,observable,p_DVP=113,§B.2,113,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_029,1,1,0,0,1,WIRED
+dvp_prime_paper_030,PAPER_030,observable,p_DVP=2,§B.2,2,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_030,1,1,0,0,1,WIRED

@@ -1,1 +1,7 @@
 quantity_key,n_rows,origins,canonical_route,row_names_sample
+gw_strain_damping,3,PAPER_001;PAPER_002;PAPER_003,D_total=1-D_GW_erosion,D_total;F_uqff;F_combined_bbh
+D_total_gw_family,13,PAPER_001..013,D_total=1-D_GW_erosion=1/3,D_total;F_uqff;omega_supp;tau_ext
+kozima_lenr_appendix,12,PAPER_001..015,K.1-K.6 neutron drop->polylog,kozima_neutron_static;kozima_s26_coupled
+cosmogenesis_lagrangian,12,PAPER_001..015,L_cosmo+V_phi_NS+E-L EOM,L_cosmo;V_phi_NS;euler_lagrange_eom
+dvp_prime_ladder_015b_023,10,PAPER_015b..023,paper-specific §B.2 prime ladder 53-89 (NOT generic 3),p_DVP 53;59;61;67;71;73;79;83;89
+dvp_prime_ladder_024_030,10,PAPER_024..030,§B.2 prime ladder 97-113,p_DVP 97;101;103;107;109;113;2
