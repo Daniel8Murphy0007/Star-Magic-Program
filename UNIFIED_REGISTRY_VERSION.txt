@@ -7,7 +7,7 @@
 # other registry artifacts (UNIFIED_REGISTRY*.csv/.md) only diff when their
 # content changes. This file diffs every ship.
 #
-SHIP_VERSION 0.340.0
+SHIP_VERSION 0.341.0
 
 GENERATOR: registry_generator.py + uqff_registry_graph.py + uqff_registry_status.py + uqff_registry_xgeo.py
 BUILD_NOTE: 2026-08-04 batch 024-030 BSM complete-compile; 342 dispatches 0 dup

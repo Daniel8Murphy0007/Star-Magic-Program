@@ -153,3 +153,11 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - 059: alpha-BEC P != 0.10+0.85(E*-1)/8 falsifies formation probability.
 - 060: alpha multiplicity != 1/(exp(dE/kT)-1) with single T_BEC=5 MeV falsifies BE occupancy.
 - §B DVP ladder 051-060: 79,83,89,97,101,103,107,109,113,2 (paper-specific, gate-guarded).
+
+## PAPER_061-070 batch (nuclear-BEC / LENR / ensemble / operational modes / astro)
+- 062: W-L heavy-electron m*<2.53 m_e (no e+p->n) falsifies neutron-catalysis; omega_LENR!=2pi*1.25THz falsifies SCm-phonon identity.
+- 064: g_UQFF weights != {KAPPA, SSq, [UA], H_SCm} falsifies 4-mode superposition.
+- 066/069: magnetar LENR term != (omega_SCm/omega_0)^2 falsifies resonance coupling.
+- 067: AGN Ug4 not k4 rho_SCm(M_BH/d) falsifies vacuum concentration.
+- 070: destroyed-planet ripping radius != (GM/omega^2)^(1/3) falsifies Kepler debris-disk chain.
+- §B DVP ladder 061-070: 3,5,7,11,13,17,19,23,29,31 (paper-specific, gate-guarded).

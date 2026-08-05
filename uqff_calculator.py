@@ -58,11 +58,11 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.340.0"
+VERSION = "0.341.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.340.0: complete-compile PAPER_001-060 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
-# batch 051-060 (crossval/astro-models/alpha-BEC); linked-paper mapping 60/60; XGEO queue 124; 342 dispatches, 0 dup.
+# STATE v0.341.0: complete-compile PAPER_001-070 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
+# batch 061-070 (nuclear-BEC/LENR/ensemble/modes/astro); linked-paper mapping 70/70; XGEO queue 139; 342 dispatches.
 # Windows-side save to trigger VS Code file-watcher refresh.
 
 # =============================================================================
@@ -669,6 +669,27 @@ def be_occupancy(dE, kT):
 def be_de_ladder(n, kT):
     """PAPER_060: 26-level threshold ladder dE(n) = kT*ln(1 + 1/n)."""
     return kT * math.log(1.0 + 1.0 / n)
+
+
+def heavy_electron_mass_ratio(E, E0=1.0e11):
+    """PAPER_062: Widom-Larsen heavy-electron mass ratio m*/m_e = 1 + |E|/E0 (>2.53 -> e+p->n+nu)."""
+    return 1.0 + abs(E) / E0
+
+def lenr_resonance_term(omega_0, coeff=1.0e-10):
+    """PAPER_062/066/069: LENR resonance term = coeff*(omega_LENR/omega_0)^2, omega_LENR=2pi*1.25THz=omega_SCm."""
+    return coeff * (omega_SCm() / omega_0) ** 2
+
+def operational_mode_superposition(g_C, g_R, g_B, g_S, aC=KAPPA_PER_DAY, aR=SSQ, aB=1.0e-4, aS=0.99):
+    """PAPER_064: g_UQFF = aC*g_Compressed + aR*g_Resonant + aB*g_Buoyant + aS*g_Super (weights=registry constants)."""
+    return aC * g_C + aR * g_R + aB * g_B + aS * g_S
+
+def agn_ug4_concentration(M_over_d, k4=1.0e15, f_fb=0.05, t_n=0.0, rho_scm=RHO_SCM):
+    """PAPER_067: Ug4 = k4*rho_SCm*(M_BH/d_g)*exp(-kappa t)*cos(pi t_n)*(1+f_fb)."""
+    return k4 * rho_scm * M_over_d * math.cos(math.pi * t_n) * (1.0 + f_fb)
+
+def kepler_orbit_radius(M, omega, G=G_UQFF):
+    """PAPER_070: destroyed-planet Kepler radius r = (G*M/omega^2)^(1/3)."""
+    return (G * M / omega ** 2) ** (1.0 / 3.0)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)
@@ -4259,9 +4280,13 @@ def _paper_061(dataset):
     f_thermal_mev_chain = 7.5 * 1.602e-13 / 1e-15    # 1.2e3 N correct MeV/fm
     f_thermal_printed = 1.2e6                        # requires GeV/fm (slip)
     f_ubii = 4.77e6
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'nuclear-bec')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.15, 'DVP_prime_paper': 3, 'DVP_n_channel_paper': 10/26.0,
+        'DVP_primes': (3, 10/26.0), 'DVP_resonant': False,
+
             'system': 'Hoyle 3-alpha -> Ca-40 10-alpha -> NS crust -> NS surface',
+            'eqlib': ['resonance_factor_ssq'],
             'hoyle_e_star_mev': 7.654,
             'n_b_hoyle': 3,
             'n_b_ca40': 10,
@@ -4275,7 +4300,9 @@ def _paper_061(dataset):
             'stability_margin_corrected': f_ubii / f_thermal_mev_chain,  # ~4000
             'e_scaler': 3.5e9,
             'ns_force_n': -4.77e6 * 3.5e9 * 1e-10,   # -1.67e6 VERIFIED
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('Phi_BEC = SSq (scale-invariant); F_thermal = N_B*kT/r; '
                     'dT_c_micro = rho_SCm*V/(N*k_B); F_NS = F_nuc*S*sqrt(rho-ratio)'),
         'source': 'PAPER_061',
@@ -4313,10 +4340,15 @@ def _paper_062(dataset):
     omega_lenr = 2.0 * _m.pi * OMEGA_SCM_HZ              # 7.854e12 = omega_SCm
     e_raw = 1.71e86 * 7.09e-36 / 1.0e-10   # paper's rho_UA anchor as printed
     k_eta_inferred = 1.21e6 / e_raw                      # ~1e-55
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'widom-larsen')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.199, 'DVP_prime_paper': 5, 'DVP_n_channel_paper': 11/26.0,
+        'DVP_primes': (5, 11/26.0), 'DVP_resonant': False,
+
             'system': 'Pd-D metallic hydride (W-L 2006 PRB; GrokThread system_49)',
             'm_star_ratio': m_star_ratio,                # 3.0 EXACT
+            'm_star_lib': heavy_electron_mass_ratio(2e11), 'lenr_term_lib': lenr_resonance_term(1.671),
+            'eqlib': ['heavy_electron_mass_ratio','lenr_resonance_term'],
             'threshold_m_star': threshold,               # 2.530
             'eta_enhanced_cm2s': 1.0e13 * m_star_ratio,  # 3e13
             'omega_lenr_rad_s': omega_lenr,              # = 2*pi*omega_SCm PINNED
@@ -4329,7 +4361,9 @@ def _paper_062(dataset):
             'q_dd_mev': 3.27,
             'solar_corona_m_star': 1.1,
             'solar_rate_orders_below': 16,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('m* = m_e*(1+|E|/E0); eta = eta_0*m*/m_e; '
                     'E_raw = Um*rho_UA/r; E_phys = E_raw*k_eta; omega_LENR = 2*pi*f_SCm'),
         'source': 'PAPER_062',
@@ -4368,9 +4402,13 @@ def _paper_063(dataset):
     kappa_mcmc = 0.00052
     mu0_paper = 1.26e-6
     q_wave = lambda b: b * b / (2.0 * mu0_paper)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'ensemble-master')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.118, 'DVP_prime_paper': 7, 'DVP_n_channel_paper': 12/26.0,
+        'DVP_primes': (7, 12/26.0), 'DVP_resonant': False,
+
             'system': '52-system ensemble (GrokThread UQFF_0904_Validation)',
+            'eqlib': ['F_U_master'],
             'n_systems': 52,
             'n_mcmc': 47,
             'f_ubii_mean_n': -6.05e7,                 # PINNED by ratio closure
@@ -4387,7 +4425,9 @@ def _paper_063(dataset):
             'residual_shape': 'leptokurtic-lognormal',
             'x2_cosmic_m_large_reading': -3.40e172,   # Q-059b
             'x2_cosmic_m_abstract_reading': -3.40e-7, # Q-059b
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('C-1: Omega_g*(M_bh/d_g)*Sum(Ug+Ub); C-2: F_Bi*(1+f_TRZ)/(1-Omega_g); '
                     'Master: M*(Ug_i - Ub_i + Ui_i); Q_wave = B^2/(2*mu0)'),
         'source': 'PAPER_063',
@@ -4424,8 +4464,11 @@ def _paper_064(dataset):
     import math as _m
     weights = {'alpha_C': KAPPA_PER_DAY, 'alpha_R': SSQ,
                'alpha_B': 1.0e-4, 'alpha_S': 0.99}
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'operational-modes')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.097, 'DVP_prime_paper': 11, 'DVP_n_channel_paper': 13/26.0,
+        'DVP_primes': (11, 13/26.0), 'DVP_resonant': False,
+
             'system': 'Batch 23 four-mode formalization (446 modules)',
             'modes': {
                 'compressed': '(M/r)*1e-10',
@@ -4438,12 +4481,16 @@ def _paper_064(dataset):
             'g_super_t0': 1e46 * 1e-30,                # 1e16 VERIFIED
             'crab_omega_rad_s': 2 * _m.pi * 30.2,      # 189.75 ~ printed 190
             'mode_evaluations': 446 * 4,               # 1784 EXACT
+            'mode_superpos_lib': operational_mode_superposition(1.0, 1.0, 7.09e19, 1e16),
+            'eqlib': ['operational_mode_superposition'],
             'gaia_dr4_residual_pct': 7.0,
             'dpm_dm_halo_residual_pct': 12.0,
             'gwtc4_ringdown_residual_pct': 0.5,
             'gwtc4_n_events': 3,
             'self_consistency_sigma_pct': 3.0,         # from PAPER_063
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('g_UQFF = KAPPA*g_C + SSQ*g_R + 1e-4*g_B + 0.99*g_S; '
                     'consistency |g_C - g_UQFF| <= 3*sigma_bootstrap'),
         'source': 'PAPER_064',
@@ -4479,9 +4526,13 @@ def _paper_065(dataset):
     """
     devs = [2.00, 2.61, 4.33, 1.67, 0.10, 1.67, 1.63,
             2.25, 2.75, 5.00, 2.01, 0.21, 9.40]
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, '121-system')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.197, 'DVP_prime_paper': 13, 'DVP_n_channel_paper': 14/26.0,
+        'DVP_primes': (13, 14/26.0), 'DVP_resonant': False,
+
             'system': '121-system validation suite (Domain 1.9)',
+            'eqlib': ['resonance_factor_ssq'],
             'n_systems': 121,
             'category_sum_check': 121,                 # EXACT
             'n_tests': 15,
@@ -4499,7 +4550,9 @@ def _paper_065(dataset):
             'lambda_predicted_row': 5.4e-10,
             'lambda_measured_row': 5.96e-10,           # inversion Q-061b
             'higgs_dev_pct': 0.21,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('Stability = 1 - sigma_F/|mu_F|; pass rate = (pass+accept)/tests; '
                     'category census sums to 121'),
         'source': 'PAPER_065',
@@ -4544,9 +4597,14 @@ def _paper_066(dataset):
                      ('askap_j1832', 2.0 * _m.pi / 2640.0), ('sgr1745', 2.0 * _m.pi / 3.76)):
         r = w_lenr / w0
         systems[name] = {'omega0_rad_s': w0, 'lenr_ratio': r, 'lenr_term': r * r}
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'magnetar')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.148, 'DVP_prime_paper': 17, 'DVP_n_channel_paper': 15/26.0,
+        'DVP_primes': (17, 15/26.0), 'DVP_resonant': False,
+
             'sgr1745_mass_kg': 1.4 * 1.989e30,           # 2.785e30 EXACT
+            'lenr_term_vela_lib': lenr_resonance_term(1.671),
+            'eqlib': ['lenr_resonance_term'],
             'sgr1745_omega_rad_s': 2.0 * _m.pi / 3.76,   # 1.671 EXACT
             'sgr1745_r_m': 8.5 * 3.086e19,               # 2.62e20 EXACT
             'sgr1745_b_t': 2.3e10,
@@ -4558,7 +4616,9 @@ def _paper_066(dataset):
             'vela_kick_product_ns': 2.96e5 * 2.8e30,     # 8.29e35 fixed
             'vela_kick_observed_range': (60.0, 350.0),
             'eddington_correction': 1.0 - SSQ * _m.exp(-2.9e-4),   # 0.4302
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('LENR = (omega_LENR/omega_0)^2, omega_LENR = 2*pi*1.25 THz; '
                     'v_kick = F*dt/M; Edd corr = 1 - SSq*exp(-kappa*t)'),
         'source': 'PAPER_066',
@@ -4603,9 +4663,14 @@ def _paper_067(dataset):
         md = m * msun / d
         agn[n] = {'m_over_d': md, 'ug4': k4 * RHO_SCM * md * 1.05}
     g_dpm = 6.674e-11 * 2e7 * msun / (3.086e15) ** 2
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'agn-ug4')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.158, 'DVP_prime_paper': 19, 'DVP_n_channel_paper': 16/26.0,
+        'DVP_primes': (19, 16/26.0), 'DVP_resonant': False,
+
             'k4_pinned': k4,
+            'agn_ug4_lib': agn_ug4_concentration(3.04e16),
+            'eqlib': ['agn_ug4_concentration'],
             'agn': agn,
             's2_omega_rad_s': 2 * _m.pi / (16 * 3.156e7),      # 1.244e-8
             'sgra_lenr_term': 1e-10 * (7.854e12 / 1.25e-8) ** 2,   # 3.95e31 EXACT
@@ -4616,7 +4681,9 @@ def _paper_067(dataset):
             'm87_gc_printed': 1.29e20,
             'm87_gc_chain': 6.5e9 * msun / 6.5e10 * 1e-10,     # 1.99e19 slip caught
             'f_fb': 0.05,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('Ug4 = k4*rho_SCm*(M_BH/d_g)*exp(-kappa t)*cos(pi t_n)*(1+f_fb); '
                     'LENR = 1e-10*(omega_LENR/omega_0)^2'),
         'source': 'PAPER_067',
@@ -4654,9 +4721,13 @@ def _paper_068(dataset):
     """
     import math as _m
     sigma_vir = _m.sqrt(6.674e-11 * 6e5 * 1.989e30 / (1.49 * 3.086e16))  # 41.6 km/s
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'globular-cluster')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.171, 'DVP_prime_paper': 23, 'DVP_n_channel_paper': 17/26.0,
+        'DVP_primes': (23, 17/26.0), 'DVP_resonant': False,
+
             'delta_g_fraction': 2.3e-4,
+            'eqlib': ['kepler_orbit_radius'],
             'm13_sigma_vir_km_s': sigma_vir / 1e3,        # 41.62 EXACT
             'm13_sigma_uqff_km_s': sigma_vir / 1e3 * 0.293,   # 12.19
             'm13_sigma_measured_km_s': 12.1,
@@ -4671,7 +4742,9 @@ def _paper_068(dataset):
             'v_uqff_km_s': 0.62,                          # echoes 0.622 family
             'omega_cen_bec_fraction': SSQ,                # 13th SSq role
             'predictions_km_s': {'47tuc': 11.4, 'ngc6397': 5.4, 'm15': 13.9},
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('sigma = sqrt(G*M/r_half); sigma_UQFF = sigma*sqrt(1-beta_iso); '
                     'delta_G = G*2.3e-4; IMBH M-sigma OPEN'),
         'source': 'PAPER_068',
@@ -4708,9 +4781,14 @@ def _paper_069(dataset):
     import math as _m
     w0 = 2.0 * _m.pi / 2640.0                            # 2.380e-3 EXACT
     ratio = 7.854e12 / w0
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'askap-lpt')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.136, 'DVP_prime_paper': 29, 'DVP_n_channel_paper': 18/26.0,
+        'DVP_primes': (29, 18/26.0), 'DVP_resonant': True,
+
             'system': 'ASKAP J1832-0911 (LPT, Chandra + ASKAP May 2025)',
+            'lenr_term_lib': lenr_resonance_term(2.380e-3),
+            'eqlib': ['lenr_resonance_term'],
             'period_s': 2640.0,
             'omega0_rad_s': w0,
             'lenr_ratio': ratio,                          # 3.30e15
@@ -4726,7 +4804,9 @@ def _paper_069(dataset):
             'mc_stability': 0.970,
             'mc_valid': 100,
             'lpt_min_period_prediction_min': 44.0,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2, omega_0 = 2*pi/P; '
                     'alternation = cos(omega_0 t) sign flip at P/2'),
         'source': 'PAPER_069',
@@ -4765,9 +4845,14 @@ def _paper_070(dataset):
     w0 = 2.0 * _m.pi / 10440.0
     ratio = 7.854e12 / w0
     r_orb = (6.674e-11 * 1.27e30 / w0 ** 2) ** (1.0 / 3.0)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'helix-pn')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.056, 'DVP_prime_paper': 31, 'DVP_n_channel_paper': 19/26.0,
+        'DVP_primes': (31, 19/26.0), 'DVP_resonant': True,
+
             'helix_wd_mass_kg': 0.64 * 1.989e30,          # 1.273e30 EXACT
+            'kepler_r_lib': kepler_orbit_radius(1.273e30, 6.018e-4),
+            'eqlib': ['kepler_orbit_radius'],
             'helix_omega0_rad_s': w0,                     # 6.018e-4 EXACT
             'helix_lenr': 1e-10 * ratio * ratio,          # 1.70e22 EXACT
             'r_orb_m': r_orb,                             # 6.16e8 EXACT
@@ -4783,7 +4868,9 @@ def _paper_070(dataset):
             'pn_f_n': -8.33e203,
             'radiation_claim_lx_needed_w': 0.7 * 4 * _m.pi * (6.15e15) ** 2 * 3e8,
             'mc_stability': (0.971, 0.970),
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2; r_orb = (GM/omega^2)^(1/3); '
                     'F/V = rho_shell*g_Buoyant'),
         'source': 'PAPER_070',

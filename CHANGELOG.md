@@ -6233,3 +6233,8 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
 - Complete-compile PAPER_051-060: 6 library eqs (resonance factor, merger compression, PN wind, alpha-BEC prob,
   BE occupancy, dE ladder) + paper §B DVP ladder (79-113,2); gate-guarded. Mapping 115 edges; XGEO 124 queue.
 - Registry pantheon advanced through PAPER_060. 342 dispatches, 0 duplicates, gate green.
+
+## [v0.341.0] — 2026-08-05 batch 061-070 (nuclear-BEC / LENR / ensemble / operational modes / astro)
+- Complete-compile PAPER_061-070: 5 library eqs (W-L heavy electron, LENR resonance, 4-mode superposition,
+  AGN Ug4, Kepler orbit) + paper §B DVP ladder (3-31); gate-guarded. Mapping 131 edges; XGEO 139 queue.
+- Registry pantheon advanced through PAPER_070. 342 dispatches, 0 duplicates, gate green.

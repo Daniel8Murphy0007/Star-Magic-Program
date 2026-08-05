@@ -818,3 +818,18 @@ dvp_prime_paper_057,PAPER_057,observable,p_DVP=107,§B.2,107,paper §B.2,0.0,vds
 dvp_prime_paper_058,PAPER_058,observable,p_DVP=109,§B.2,109,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_058,1,1,0,0,1,WIRED
 dvp_prime_paper_059,PAPER_059,observable,p_DVP=113,§B.2,113,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_059,1,1,0,0,1,WIRED
 dvp_prime_paper_060,PAPER_060,observable,p_DVP=2,§B.2,2,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_060,1,1,0,0,1,WIRED
+heavy_electron_mass_ratio,PAPER_062,equation,1+|E|/E0,1+|E|/E0,compiled,W-L heavy electron,0.0,widom-larsen,0.84,PAPER_062,1,1,0,0,1,WIRED
+lenr_resonance_term,PAPER_062,equation,coeff(omega_SCm/omega_0)^2,coeff(omega_SCm/omega_0)^2,compiled,LENR resonance,0.0,widom-larsen,0.84,PAPER_062,1,1,0,0,1,WIRED
+operational_mode_superposition,PAPER_064,equation,aC gC+aR gR+aB gB+aS gS,aC gC+aR gR+aB gB+aS gS,compiled,4-mode g,0.0,operational-modes,0.84,PAPER_064,1,1,0,0,1,WIRED
+agn_ug4_concentration,PAPER_067,equation,k4 rho_SCm(M/d)exp cos(1+f_fb),k4 rho_SCm(M/d)exp cos(1+f_fb),compiled,AGN Ug4,0.0,agn-ug4,0.84,PAPER_067,1,1,0,0,1,WIRED
+kepler_orbit_radius,PAPER_070,equation,(GM/omega^2)^(1/3),(GM/omega^2)^(1/3),compiled,destroyed-planet,0.0,helix-pn,0.84,PAPER_070,1,1,0,0,1,WIRED
+dvp_prime_paper_061,PAPER_061,observable,p_DVP=3,§B.2,3,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_061,1,1,0,0,1,WIRED
+dvp_prime_paper_062,PAPER_062,observable,p_DVP=5,§B.2,5,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_062,1,1,0,0,1,WIRED
+dvp_prime_paper_063,PAPER_063,observable,p_DVP=7,§B.2,7,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_063,1,1,0,0,1,WIRED
+dvp_prime_paper_064,PAPER_064,observable,p_DVP=11,§B.2,11,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_064,1,1,0,0,1,WIRED
+dvp_prime_paper_065,PAPER_065,observable,p_DVP=13,§B.2,13,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_065,1,1,0,0,1,WIRED
+dvp_prime_paper_066,PAPER_066,observable,p_DVP=17,§B.2,17,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_066,1,1,0,0,1,WIRED
+dvp_prime_paper_067,PAPER_067,observable,p_DVP=19,§B.2,19,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_067,1,1,0,0,1,WIRED
+dvp_prime_paper_068,PAPER_068,observable,p_DVP=23,§B.2,23,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_068,1,1,0,0,1,WIRED
+dvp_prime_paper_069,PAPER_069,observable,p_DVP=29,§B.2,29,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_069,1,1,0,0,1,WIRED
+dvp_prime_paper_070,PAPER_070,observable,p_DVP=31,§B.2,31,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_070,1,1,0,0,1,WIRED

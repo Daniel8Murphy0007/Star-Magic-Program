@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.340.0", "uqff_calculator.VERSION = 0.340.0 (complete-compile PAPER_001-060 + b-variants)")
+assert_that(C.VERSION == "0.341.0", "uqff_calculator.VERSION = 0.341.0 (complete-compile PAPER_001-070 + b-variants)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -355,6 +355,8 @@ _DVP_LADDER_LOCKED = {
     'PAPER_046': 59, 'PAPER_047': 61, 'PAPER_048': 67, 'PAPER_049': 71, 'PAPER_050': 73,
     'PAPER_051': 79, 'PAPER_052': 83, 'PAPER_053': 89, 'PAPER_054': 97, 'PAPER_055': 101,
     'PAPER_056': 103, 'PAPER_057': 107, 'PAPER_058': 109, 'PAPER_059': 113, 'PAPER_060': 2,
+    'PAPER_061': 3, 'PAPER_062': 5, 'PAPER_063': 7, 'PAPER_064': 11, 'PAPER_065': 13,
+    'PAPER_066': 17, 'PAPER_067': 19, 'PAPER_068': 23, 'PAPER_069': 29, 'PAPER_070': 31,
 }
 for _pid, _pdvp in _DVP_LADDER_LOCKED.items():
     _v = C.calc(_pid)['value']
@@ -377,7 +379,9 @@ for _pid in ['PAPER_001','PAPER_002','PAPER_003','PAPER_004','PAPER_005','PAPER_
              'PAPER_041','PAPER_042','PAPER_043','PAPER_044','PAPER_045',
              'PAPER_046','PAPER_047','PAPER_048','PAPER_049','PAPER_050',
              'PAPER_051','PAPER_052','PAPER_053','PAPER_054','PAPER_055',
-             'PAPER_056','PAPER_057','PAPER_058','PAPER_059','PAPER_060']:
+             'PAPER_056','PAPER_057','PAPER_058','PAPER_059','PAPER_060',
+             'PAPER_061','PAPER_062','PAPER_063','PAPER_064','PAPER_065',
+             'PAPER_066','PAPER_067','PAPER_068','PAPER_069','PAPER_070']:
     _rv = C.calc(_pid)['value']
     assert_that(abs(_rv['kozima_neutron_static_N'] - 1.0e6) < 1.0,
                 _pid + ": Kozima-LENR appendix K.1 present (neutron drop = 1e6 N)")
@@ -495,6 +499,19 @@ assert_that(abs(C.calc('PAPER_060')['value']['be_occupancy_lib'] - 10.0) < 0.01,
             "PAPER_060: be_occupancy N_B=1/(exp(dE/kT)-1)=10 library eq")
 assert_that(abs(C.calc('PAPER_055')['value']['merger_compression_lib'] - (1.3)**2.3) < 1e-6,
             "PAPER_055: merger_compression=(1+overlap)^2.3 library eq")
+
+# --- 061-070 batch: paper-specific equations ---
+assert_that(abs(C.calc('PAPER_062')['value']['m_star_lib'] - 3.0) < 1e-9,
+            "PAPER_062: heavy_electron_mass_ratio(2e11)=3.0 (>2.53 threshold) library eq")
+assert_that(C.calc('PAPER_062')['value']['lenr_term_lib'] > 0
+            and 'lenr_resonance_term' in C.calc('PAPER_062')['value']['eqlib'],
+            "PAPER_062: lenr_resonance_term=(omega_SCm/omega_0)^2 library eq")
+assert_that('operational_mode_superposition' in C.calc('PAPER_064')['value']['eqlib'],
+            "PAPER_064: operational_mode_superposition (4-mode g_UQFF) library eq")
+assert_that(C.calc('PAPER_067')['value']['agn_ug4_lib'] > 0,
+            "PAPER_067: agn_ug4_concentration library eq")
+assert_that(abs(C.calc('PAPER_070')['value']['kepler_r_lib'] - 6.17e8) / 6.17e8 < 0.02,
+            "PAPER_070: kepler_orbit_radius=(GM/omega^2)^(1/3)=6.17e8 m library eq")
 
 _r011 = C.calc('PAPER_011')['value']
 assert_that(abs(_r011['omega_suppression_bns'] - 0.110889) < 1e-6,

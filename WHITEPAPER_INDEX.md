@@ -97,16 +97,16 @@
 | ⚠ | PAPER_058 | M42 Orion Nebula UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
 | ⚠ | PAPER_059 | Alpha BEC Heavy Ion Collisions UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
 | ⚠ | PAPER_060 | Bose Occupancy NIMROD ISiS UQFF | COMPLETE-COMPILE (helper+§B ladder 79-113; crossval/astro/alpha-BEC; batch 051-060) |
-| ⚠ | PAPER_061 | Nuclear BEC Formation UQFF |
-| ⚠ | PAPER_062 | Widom Larsen LENR UQFF |
-| ⚠ | PAPER_063 | F U Bi i Integral UQFF |
-| ⚠ | PAPER_064 | 4 UQFF Operational Modes |
-| ⚠ | PAPER_065 | 121 System UQFF Validation Statistical Summary |
-| ⚠ | PAPER_066 | Magnetar Systems SGR1745 Crab Vela UQFF |
-| ⚠ | PAPER_067 | AGN SgrA M87 CentaurusA UQFF |
-| ⚠ | PAPER_068 | Globular Cluster Dynamics UQFF |
-| ⚠ | PAPER_069 | Radio Transient ASKAP J1832 UQFF |
-| ⚠ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF |
+| ⚠ | PAPER_061 | Nuclear BEC Formation UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_062 | Widom Larsen LENR UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_063 | F U Bi i Integral UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_064 | 4 UQFF Operational Modes | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_065 | 121 System UQFF Validation Statistical Summary | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_066 | Magnetar Systems SGR1745 Crab Vela UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_067 | AGN SgrA M87 CentaurusA UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_068 | Globular Cluster Dynamics UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_069 | Radio Transient ASKAP J1832 UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
+| ⚠ | PAPER_070 | Planetary Nebula Dynamics Helix UQFF | COMPLETE-COMPILE (helper+§B 3-31; nuclear-BEC/LENR/ensemble/modes/astro; batch 061-070) |
 | ⚠ | PAPER_071 | Stellar Superflare Energy Budget UQFF |
 | ⚠ | PAPER_072 | Red Dwarf Reactor Physics UQFF |
 | ⚠ | PAPER_073 | GAIA DR4 Stellar UQFF Validation |

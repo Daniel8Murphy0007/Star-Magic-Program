@@ -40,3 +40,6 @@ scm_level13_q041e,open_ruling,Q-041e: rho_SCm+beta_i as Level-13/plasma 26-ladde
 e18_projection_q041d,open_ruling,Q-041d: E18 energy scale vs 125 GeV resonance freq (PAPER_052)
 hubble_invert_q050,open_ruling,Q-050: Hubble-factor column inverted across systems (PAPER_054)
 carina_2x_q051a,open_ruling,"Q-051a: Mice ""2x Carina"" claim fails (true 0.89x) (PAPER_057)"
+ua_weight_q060b,open_ruling,Q-060b: [UA]=1e-4 buoyant weight canonization (PAPER_064/068)
+k4_namespace_q063a,open_ruling,Q-063a: k4=1e15 scaling vs k4=2.0 coupling namespace (PAPER_067)
+e172_family_q059b,open_ruling,Q-059b: -1.35e172 factor 3rd appearance (PAPER_069)

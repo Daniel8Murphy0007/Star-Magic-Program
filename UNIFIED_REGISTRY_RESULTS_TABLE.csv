@@ -48,3 +48,7 @@ merger_comp,(1.3)^2.3,,1.828,PAPER_055,closed_form,0.0
 pn_wind_v,v_esc sqrt(256),100*16,1600,PAPER_056,closed_form,0.0
 alpha_prob,0.10+0.85(8)/8,,0.95,PAPER_059,closed_form,0.0
 be_nb,1/(exp(0.4766/5)-1),,10.0,PAPER_060,closed_form,0.0
+heavy_electron,1+|E|/E0,1+2e11/1e11,3.0,PAPER_062,closed_form,0.0
+op_mode_g,aC gC+...,,superpos,PAPER_064,closed_form,0.0
+agn_ug4_sgra,k4 rho(M/d),,2.26e-5,PAPER_067,closed_form,0.0
+kepler_r_helix,(GM/omega^2)^(1/3),,6.17e8,PAPER_070,closed_form,0.0

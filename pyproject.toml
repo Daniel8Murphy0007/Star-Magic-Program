@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.340.0"
-description = "UQFF Star-Magic-Program v0.340.0: complete-compile of PAPER_001-060 + b-variants over a 460-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. Linked-paper mapping + campaign-aware XGEO chain. 342 dispatches, 0 duplicates, gate green."
+version = "0.341.0"
+description = "UQFF Star-Magic-Program v0.341.0: complete-compile of PAPER_001-070 + b-variants over a 465-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. Linked-paper mapping + campaign-aware XGEO chain. 342 dispatches, 0 duplicates, gate green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

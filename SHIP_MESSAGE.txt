@@ -1,15 +1,16 @@
-v0.340.0 — Complete-compile PAPER_051-060 (cross-validation / astrophysical models / alpha-BEC)
+v0.341.0 — Complete-compile PAPER_061-070 (nuclear-BEC / LENR / ensemble / operational modes / astrophysics)
 
-Papers 051-060 fully captured over the equation library (now 460 functions):
-- 051/052 UQFF vs 2024/2025 arXiv cross-validation; 053 NGC 2264; 054 UGC 10214 Tadpole; 055 NGC 4676 Mice
-  (10x merger compression); 056 Red Spider NGC 6537 (2x wind); 057 Carina complex; 058 M42 Orion (suite ranking);
-  059 alpha-BEC in Ca-40+Ca-40 heavy-ion; 060 Bose-Einstein occupancy N_B=1/(exp(dE/kT)-1).
+Papers 061-070 fully captured over the equation library (now 465 functions):
+- 061 nuclear BEC formation (Phi_BEC=SSq scale-invariant); 062 Widom-Larsen LENR (heavy electron m*=m_e(1+|E|/E0),
+  omega_LENR=2pi*1.25THz=omega_SCm); 063 F_U_Bi_i master integral + 52-system ensemble; 064 four operational modes
+  (g_UQFF=aC gC+aR gR+aB gB+aS gS); 065 121-system validation; 066 magnetars (LENR resonance); 067 AGN Ug4 vacuum
+  concentration; 068 globular cluster dynamics; 069 ASKAP J1832 long-period transient; 070 Helix Nebula PN dynamics.
 
-Each dispatch composes over _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH +
-Kozima-LENR K.1-K.6) plus paper-specific core and library equations.
+Each dispatch composes over _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6)
+plus paper-specific core and library equations.
 
-- Paper-specific §B DVP prime ladder (79,83,89,97,101,103,107,109,113,2), gate-guarded.
-- Linked-paper mapping (115 edges). XGEO chain regenerated (124 queue, 50 confirmations).
+- Paper-specific §B DVP prime ladder (3,5,7,11,13,17,19,23,29,31), gate-guarded.
+- Linked-paper mapping (131 edges). XGEO chain regenerated (139 queue, 60 confirmations).
 - 342 dispatches, 0 duplicate registrations, gate green, 0 malformed CSVs.
 
-Campaign progress: 60 base papers + b-variants of 300+ target.
+Campaign progress: 70 base papers + b-variants of 300+ target.

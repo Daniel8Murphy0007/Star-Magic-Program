@@ -4932,3 +4932,9 @@ until 300+ done.
   merger_compression, wind_velocity, alpha_bec_prob, be_occupancy, be_de_ladder. Library 460 fns.
 - Gate loop+guard to 060; +5 assertions. Registry +16 UNIFIED, +6 graph, +5 R2/R3/RESULTS, +4 GAPS.
 - Mapping 115 edges. XGEO regen queue 124/confirmations 50. 0 malformed. Ship v0.340.0.
+
+### 2026-08-05 — Batch PAPER_061-070 (nuclear-BEC/LENR/ensemble/modes/astro) ship v0.341.0
+- 10 papers merged + §B (DVP 3-31). 5 library eqs: heavy_electron_mass_ratio, lenr_resonance_term,
+  operational_mode_superposition, agn_ug4_concentration, kepler_orbit_radius. Library 465 fns.
+- Gate loop+guard to 070; +5 assertions. Registry +15 UNIFIED, +5 graph, +5 R2/R3, +4 RESULTS, +3 GAPS.
+- Mapping 131 edges. XGEO regen queue 139/conf 60. 0 malformed. Ship v0.341.0.
