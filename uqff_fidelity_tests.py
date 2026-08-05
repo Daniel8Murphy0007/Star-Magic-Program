@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.346.0", "uqff_calculator.VERSION = 0.346.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.347.0", "uqff_calculator.VERSION = 0.347.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,42 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.347 part 5) ===
+assert_that(abs(C.planck_length_ftrz() - 1e-35) < 1e-45, "PAPER_2104: Planck length F_TRZ^35 = 1e-35 m")
+assert_that(abs(C.ftrz_primitive_exponent('N_CH') - 1e-9) < 1e-19, "PAPER_2117: F_TRZ^N_CH = 1e-9 EXACT (quintuplet complete)")
+assert_that(abs(C.ftrz_primitive_exponent('D_CRIT') - 1e-26) < 1e-36, "PAPER_2107: F_TRZ^D_crit = 1e-26 primitive-as-exponent")
+assert_that(abs(C.three_ftrz_prefix() - 0.3) < 1e-12, "PAPER_2102: 3*F_TRZ = 0.3 composed prefix EXACT")
+assert_that(abs(C.sphere_from_chaos_variance() - 5e-9) < 1e-19, "PAPER_2118: per-offset variance = 5e-9 (F_TRZ^8/2 numeric chain; symbol/numeric mismatch disclosed)")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.347 part 4) ===
+assert_that(abs(C.boltzmann_k_composition() - 1.380649e-23)/1.380649e-23 < 0.002, "PAPER_2129: k_B live composition 0.0011% vs SI (honest residual)")
+assert_that(C.vacuum_coupling_kernel() == 19.0/160.0, "PAPER_2132: vacuum-coupling kernel K = 19/160 EXACT")
+assert_that(abs(C.alpha_s_kernel() - 0.11875) < 1e-9, "PAPER_2131: alpha_s kernel F_TRZ*K_MEX*SSq = 0.11875")
+assert_that(C.frame_cadence_62() == 62, "PAPER_2137: frame cadence 62 = 2*D_crit + SO_5 EXACT")
+assert_that(C.cosmic_egg_triad()["D_crit"] == 26, "PAPER_2114: Cosmic Egg triad D_crit = 26 EXACT")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.347 part 3) ===
+import math as _mg
+assert_that(abs(C.mu0_vacuum_permeability() - 4.0*_mg.pi*1e-7) < 1e-18, "PAPER_2108: mu_0 = 4 pi F_TRZ^7 = Maxwell vacuum permeability EXACT")
+assert_that(C.full_circle_degrees() == 360, "PAPER_2116: 360 deg = D_BSFG*A_5 EXACT")
+assert_that(abs(C.b_critical_schwinger() - 4.4e13) < 1e6, "PAPER_2126: B_crit = D_phys*(SO_5+1)*SO_5^12 = 4.4e13 T EXACT")
+assert_that(abs(C.successor_ratio_identity() - 1.1) < 1e-12, "PAPER_2128: (1+F_TRZ) = 11/10 successor ratio EXACT")
+assert_that(abs(C.tilt_factor_1_12() - 1.0/12.0) < 1e-12, "PAPER_2133: F_TRZ*Phi_5/6 = 1/12 tilt factor EXACT")
+assert_that(abs(C.kappa_derivative() - 5.0e-4) < 1e-12, "PAPER_2112: kappa = (SO_5/2)*F_TRZ^4 = 5e-4 EXACT (derivative)")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.347 part 2) ===
+assert_that(abs(C.a5_kmex_125() - 125.0) < 1e-9, "PAPER_1954: A_5*K_MEX = 125 EXACT (float-epsilon per Rule 7 float-arithmetic disclosure)")
+assert_that(C.omega_matter_exact() == 0.3, "PAPER_1956: Omega_m = (D_phys-1)/SO_5 = 0.3 EXACT")
+assert_that(C.half_identity_dphys() == 0.5, "PAPER_1958: 1/(D_phys-2) = 0.5 EXACT")
+assert_that(C.ftrz_so5_derivative() == 0.1, "PAPER_1960: F_TRZ = 1/SO_5 = 0.1 EXACT (structural derivative)")
+assert_that(C.starburst_mass_fraction() == 0.15, "PAPER_1966: M_SF = 3/(2 SO_5) = 0.15 EXACT")
+assert_that(abs(C.two_thirds_supercomposite() - 2.0/3.0) < 1e-12, "PAPER_1987: D_phys/D_BSFG = 2/3 EXACT")
+assert_that(C.eta_penetration_conservation() == 1.0, "PAPER_2098: 15/85 mass conservation = 1.0 EXACT")
+assert_that(C.so5_power15_reactor() == 1.0e15, "PAPER_2099: SO_5^15 = 1e15 reactor invariant")
+# === INTEGER-IDENTITY LANDMARK GUARD (repo mine v0.347) ===
+assert_that(C.bh_seed_mass_integer() == 56160, "PAPER_1650: BH seed = A_5*D_BSFG^2*D_crit = 56160 EXACT")
+assert_that(abs(C.smbh_flare_frequency() - 1.0/1800.0) < 1e-12, "PAPER_1950: f_flare = 1/((D_phys-1)*A_5*SO_5) = 1/1800 EXACT")
+assert_that(C.so5_successor_identity() == 11, "PAPER_2120: SO_5+1 = 11 successor identity EXACT")
+assert_that(C.a5_dphys_ratio() == 15, "PAPER_2143: A_5/D_phys = 15 EXACT")
+assert_that(C.halving_series_closure() == [2, 3, 5, 13], "PAPER_2138: halving series {2,3,5,13} EXACT")
+assert_that(C.kk_eigenvalue_spectrum(1) == 26, "PAPER_1800: KK lambda_1 = 1*(1+25) = 26 EXACT")
 # === NUCLEAR MAGIC NUMBERS + MOND LANDMARK GUARD (predecessor mine III) ===
 assert_that(C.nuclear_magic_numbers() == [2, 8, 20, 28, 50, 82, 126], "PAPER_1203: all 7 shell-model magic numbers EXACT from integer primitives")
 assert_that(abs(C.mond_a0_emergent() - 1.13e-10) < 0.1e-10, "PAPER_210: MOND a0 = c H0/6 = 1.13e-10 m/s^2 emergent")

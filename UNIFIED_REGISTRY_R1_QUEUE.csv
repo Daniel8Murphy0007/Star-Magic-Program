@@ -8,3 +8,5 @@ batch_071_080,PAPER_071-080,ADOPT,"superflare/reactor/database-crossval eqs (sol
 derived_constants_as_functions,predecessor-registry,ADOPT,1272 derived constants promoted from data catalog to individual named callable functions (dc_*),no,"APPROVED (Daniel 2026-08-05 ""derived equations which are functions"")"
 predecessor_flagship_mine,predecessor-Star-Magic,ADOPT,flagship closed forms (Lambda/m_p/H0/Millennium/magic numbers) as primitive-sourced callables,no,APPROVED (Daniel 2026-08-05 KEEP MINING)
 in_step_mapping,v0.346.0,ADOPT,every mined fn registered+GRAPH-edged+linked-paper-cited in the same step (not deferred),no,APPROVED (Daniel 2026-08-05 map linked papers as we mine)
+landmark_identity_compile,v0.347.0,ADOPT,"83 landmark-titled papers surveyed; EXACT identities as callables, gate-guarded",no,APPROVED (Daniel 2026-08-05 KEEP MINING LANDMARKS x3)
+paper_2118_symbol_numeric,PAPER_2118,RULING_NEEDED,symbolic F_TRZ^4/2 inconsistent with numeric 1e-8/2=5e-9 chain (F_TRZ^8/2); numeric transcribed per Rule 7,yes,

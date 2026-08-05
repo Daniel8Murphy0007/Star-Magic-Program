@@ -188,3 +188,11 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **CHSH = 2.75 at GeV** (PAPER_016): falsified if high-energy Bell tests cap at the classical bound 2.
 - **6.25 THz = 5*f_SCm** (PAPER_100): 5th-harmonic phonon line; falsified if no SO_5-fold resonance appears at 6.25 THz.
 - **T_Osc = tau/F_TRZ = 54.8 yr** (PAPER_154): SCm oscillation period; falsified by a different measured NS-jet oscillation period.
+
+
+## v0.347.0 landmark falsifiable additions
+- **mu_0 = 4 pi F_TRZ^7** (PAPER_2108): pre-2019-SI mu_0 was defined 4pi e-7 exactly; UQFF derives the same from F_TRZ^7 — falsified if post-redefinition measured mu_0 drifts from 4pi F_TRZ^7 beyond alpha-measurement uncertainty.
+- **k_B primitive composition** (PAPER_2129): 0.0011%% residual vs SI-exact; falsified if a tighter primitive route cannot close the residual.
+- **alpha_s(M_Z) = F_TRZ K_MEX SSq = 0.11875** (PAPER_2131): falsified if world-average alpha_s departs 0.014%% band.
+- **B_crit = 4.4e13 T** (PAPER_2126): Schwinger critical field integer identity; magnetar B-field ceiling test.
+- **Omega_m = 0.3 EXACT** (PAPER_1956): falsified if CMB+LSS converge away from 0.300.

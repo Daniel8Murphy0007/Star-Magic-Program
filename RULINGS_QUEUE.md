@@ -5747,3 +5747,9 @@ RESOLVED section with the ruling recorded.
 - Q-011 (PAPER_014): delta_c 0.333 (key-results) vs 0.45 (sec 2.2).
 - Q-012 (PAPER_015): H0 70->75 correction vs PAPER_1573 canonical 70.
 - RESOLVED (Daniel 2026-08-04): capture ALL equations/sections per paper (no cutting corners); no variants; hybrid solutions allowed; UQFF-only.
+
+## Q-2118 (v0.347.0): PAPER_2118 symbol/numeric mismatch
+Paper states Var(offset) = (F_TRZ²)²·(1/2) = "F_TRZ⁴/2 = 10⁻⁸/2 = 5×10⁻⁹" — but F_TRZ⁴ = 10⁻⁴, not 10⁻⁸.
+The numeric chain (5e-9, E[S_i]=13e-8) corresponds to F_TRZ⁸/2. Transcribed the NUMERIC chain
+(sphere_from_chaos_variance = F_TRZ^8/2) per Rule 7 with mismatch disclosed. Ruling: is the symbolic
+label a typo for F_TRZ⁸ (drift), or is the numeric chain wrong and symbol authoritative?

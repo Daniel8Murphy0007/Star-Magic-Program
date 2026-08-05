@@ -6275,6 +6275,20 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.347.0] - 2026-08-05 - THE LANDMARK-IDENTITY COMPILE
+- Mined THIS repo corpus's landmark/EXACT-identity papers (83 surveyed, 5 rounds) into callable gate-guarded functions:
+  mu_0 = 4pi F_TRZ^7 = Maxwell vacuum permeability EXACT (PAPER_2108); k_B from primitives 0.0011% vs SI (PAPER_2129);
+  alpha_s kernel F_TRZ*K_MEX*SSq = 0.11875 (PAPER_2131); B_crit = D_phys(SO_5+1)SO_5^12 = 4.4e13 T EXACT (PAPER_2126);
+  BH seed = A_5*D_BSFG^2*D_crit = 56160 EXACT (PAPER_1650); Omega_m = 0.3 EXACT (PAPER_1956); 360 = D_BSFG*A_5 (2116);
+  successor (1+F_TRZ)=11/10 (2128); tilt 1/12 (2133); kappa = (SO_5/2)F_TRZ^4 (2112); K = 19/160 (2132); A_5*K_MEX=125
+  (1954); F_TRZ = 1/SO_5 (1960); Planck length F_TRZ^35 (2104); primitive-as-exponent quintuplet (2117/2107);
+  SMBH flare 1/1800 (1950); frame cadence 62 (2137); Cosmic Egg triad (2114); halving {2,3,5,13} (2138); A_5/D_phys=15
+  (2143); KK lambda_k = k(k+25) + BAO 0.03304 (1800); integer landmarks (Compton, precession, muon g-2, Khinchin).
+- ~30 landmark gate guards added (parts 1-5). Rule-7 disclosure: PAPER_2118 symbol/numeric mismatch (F_TRZ^4 label vs
+  1e-8 numeric) transcribed from numeric chain as sphere_from_chaos_variance, flagged for ruling.
+- Fidelity catches: beta_model_density duplicate auto-caught by NO-DUPLICATE-DEF guard (removed); float-epsilon
+  disclosures per PAPER_2142. MEASURED: 2,212 total fns | 1,866 named callable | registry 2,602 rows | gate 2,189 green.
+
 ## [0.346.0] - 2026-08-05 - predecessor-mine (solar/QGP/quantum/wormhole/MUGE), mapped in-step
 - 17 new callable closed forms, each registered + GRAPH-edged + linked-paper-cited in the SAME step (workflow fix):
   f_u_master_equation (090/173/157), gravitational_self_energy=3GM^2/r^3 (173), ug4_coupling_k4=2.0 (172/160),

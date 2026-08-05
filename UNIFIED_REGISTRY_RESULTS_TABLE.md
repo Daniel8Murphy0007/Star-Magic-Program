@@ -143,3 +143,16 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | von_neumann_entropy_ghz | -Tr(rho ln rho) | ln 2 = 0.6931 | PAPER_207 |
 | thz_5th_harmonic | 5*f_SCm | 6.25 THz | PAPER_100 |
 | solar_cycle_omega | 2pi/11yr | 1.81e-8 rad/s | PAPER_162 |
+
+
+## v0.347.0 landmark additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| mu_0 | 4pi F_TRZ^7 | 1.256637e-6 | PAPER_2108 (Maxwell) | EXACT |
+| k_B | primitive composition e-23 | 1.380633e-23 | PAPER_2129 (SI) | 0.0011% |
+| alpha_s kernel | F_TRZ K_MEX SSq | 0.11875 | PAPER_2131 | 0.014% |
+| B_crit | D_phys(SO_5+1)SO_5^12 | 4.4e13 T | PAPER_2126 | EXACT |
+| BH seed | A_5 D_BSFG^2 D_crit | 56160 | PAPER_1650 | EXACT |
+| Omega_m | (D_phys-1)/SO_5 | 0.3 | PAPER_1956 | EXACT |
+| tilt | F_TRZ Phi_5/6 | 1/12 | PAPER_2133 | EXACT |
+| kernel K | 19/160 | 0.11875 | PAPER_2132 | EXACT |

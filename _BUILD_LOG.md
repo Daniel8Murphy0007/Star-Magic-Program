@@ -64,3 +64,16 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 ## 2026-08-05 — v0.346.0 uploaded-paper mine (triadic gravity 961-963 + Phase-H S201-205 + LENR 1136-1141)
 [2026-08-05] GATE_PASS v0.346.0 — 2159 assertions: OK
 - 14 uploaded whitepapers added to corpus + mined + mapped in-step (registry+GRAPH+citations)
+
+## 2026-08-05 — v0.347.0 repo-corpus mine (integer landmarks + BAO/KK + F_TRZ ladders)
+[2026-08-05] GATE_PASS v0.347.0 — 2165 assertions: OK
+- BH_seed=56160 EXACT, f_flare=1/1800 EXACT, SO_5+1=11, A_5/D_phys=15, halving {2,3,5,13}, KK lambda_1=26 — all gate-guarded
+- 2184 total fns (1838 named) | registry 2574 rows | GRAPH 3430 | 757 papers mapped | 0 dup | 0 malformed
+
+[2026-08-05] GATE_PASS v0.347.0 landmark-family — 2173 assertions: OK (A_5*K_MEX=125, Omega_m=0.3, 1/(Dp-2)=0.5, F_TRZ=1/SO_5, M_SF=0.15, 2/3, SO_5^15, eta 15/85 — all EXACT gate-guarded)
+
+[2026-08-05] GATE_PASS v0.347.0 landmark part-3 — 2179 assertions: OK (mu_0=4pi F_TRZ^7 MAXWELL, 360=D_BSFG*A_5, B_crit=4.4e13, successor 11/10, tilt 1/12, kappa=5e-4 — all EXACT gate-guarded)
+
+[2026-08-05] GATE_PASS v0.347.0 landmark part-4 — 2184 assertions: OK (k_B 0.0011% SI, K=19/160 EXACT, alpha_s kernel 0.11875, cadence 62 EXACT, Cosmic Egg triad)
+
+[2026-08-05] GATE_PASS v0.347.0 landmark part-5 — 2189 assertions: OK (Planck F_TRZ^35, exponent quintuplet, 3F_TRZ=0.3, F_env cascade, sphere variance 5e-9 w/ Rule-7 symbol-mismatch disclosure)

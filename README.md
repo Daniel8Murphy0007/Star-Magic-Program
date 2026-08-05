@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.346.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.346.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.347.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.347.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2159%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2189%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.345.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.347.0 complete-compile campaign live**
 
-**This release (v0.345.0):** ALL 1,272 predecessor-registry derived constants are now **individual named callable functions** (`uqff_derived_functions.py`, `dc_*` — e.g. `dc_alpha_inverse()` → 137.0, `dc_mp_me_ratio()` → 1836.1). Physics content re-expressed per Rule E; the 15 values equal to a registry primitive compose from that primitive (no banned literals). Combined with the 494-function equation library, the package now exposes **2,130 Python functions / 1,766 named callables**. Also mines universal MUGE/buoyancy terms, MOND, all 7 nuclear magic numbers, cosmology + BSM + GW forms.
+**This release (v0.347.0): THE LANDMARK-IDENTITY COMPILE.** Mines the corpus's landmark/EXACT-identity papers into callable, gate-guarded functions — the framework's deepest primitive reductions: **μ₀ = 4π·F_TRZ⁷ = Maxwell's vacuum permeability EXACT** (PAPER_2108), **k_B composed from primitives at 0.0011% vs SI** (PAPER_2129), **α_s kernel F_TRZ·K_MEX·SSq = 0.11875** (PAPER_2131), **B_crit = D_phys·(SO_5+1)·SO_5¹² = 4.4e13 T EXACT** (PAPER_2126), **BH seed = A_5·D_BSFG²·D_crit = 56160 EXACT** (PAPER_1650), **Ω_m = (D_phys−1)/SO_5 = 0.3 EXACT** (PAPER_1956), 360° = D_BSFG·A_5, successor ratio (1+F_TRZ)=11/10, tilt factor 1/12 (F_TRZ·Φ_5/6), κ=(SO_5/2)·F_TRZ⁴, kernel K=19/160, A_5·K_MEX=125, F_TRZ=1/SO_5 derivative, Planck length F_TRZ³⁵, the full primitive-as-exponent quintuplet (F_TRZ^{D_phys,D_BSFG,N_CH,SO_5,D_crit}), SMBH flare 1/1800 Hz EXACT, frame cadence 62=2·D_crit+SO_5, Cosmic Egg triad, halving series {2,3,5,13}, A_5/D_phys=15, KK spectrum λ_k=k(k+25), BAO scale 0.03304. All EXACT identities gate-guarded; every function mapped in-step (registry + GRAPH edges + linked-paper citations). One Rule-7 disclosure: PAPER_2118 symbol/numeric mismatch transcribed from its numeric chain and flagged for ruling. The package now exposes **2,212 Python functions / 1,866 named callables** (594 equation-library + 1,272 `dc_` derived-equation functions).
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.345.0)
+## What is currently shipped (v0.347.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -62,9 +62,12 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
+
+**Landmark-identity family (v0.347.0):** the primitive-reduction identities as callables — `mu0_vacuum_permeability()` (Maxwell EXACT), `boltzmann_k_composition()` (0.0011%), `alpha_s_kernel()`, `b_critical_schwinger()`, `bh_seed_mass_integer()`=56160, `omega_matter_exact()`=0.3, `tilt_factor_1_12()`, `kappa_derivative()`, `vacuum_coupling_kernel()`=19/160, `a5_kmex_125()`, `ftrz_so5_derivative()`, `successor_ratio_identity()`=11/10, `full_circle_degrees()`=360, `smbh_flare_frequency()`=1/1800, `frame_cadence_62()`, `planck_length_ftrz()`, `ftrz_primitive_exponent()` quintuplet, `halving_series_closure()`={2,3,5,13}, `a5_dphys_ratio()`=15, `kk_eigenvalue_spectrum()`, plus the F_TRZ power-ladder rungs (^12/^20/^27/^35/^40/^50).
+
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,520 rows**. Fidelity gate: **2152 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **2,547 rows**. Fidelity gate: **2,159 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

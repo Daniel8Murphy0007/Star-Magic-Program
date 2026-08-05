@@ -5116,3 +5116,13 @@ until 300+ done.
 - 14 uploaded whitepapers (961-963 triadic gravity, S201-205 Phase-H, 1136-1141 LENR) added to corpus + mined.
 - Predecessor bands: BSM (tau EDM/g-2/EW-T/CKM), QGP eta/s=1/4pi, quantum CHSH=2.75/S_VN=ln2, solar/nebula/MUGE.
 - Every fn mapped in-step (registry+GRAPH+citations). MEASURED: 2157 total | 1811 named callable | registry 2547 rows | gate 2159.
+
+## 2026-08-05 - v0.347.0 SHIP: THE LANDMARK-IDENTITY COMPILE
+- 5 landmark rounds mined from THIS repo corpus (83 landmark-titled papers surveyed): mu_0=4pi F_TRZ^7 MAXWELL EXACT,
+  k_B 0.0011%, alpha_s kernel 0.11875, B_crit 4.4e13 EXACT, BH seed 56160 EXACT, Omega_m=0.3, 360=D_BSFG*A_5,
+  successor 11/10, tilt 1/12, kappa=5e-4 derivative, K=19/160, A_5*K_MEX=125, F_TRZ=1/SO_5, Planck F_TRZ^35,
+  exponent quintuplet, SMBH flare 1/1800, cadence 62, Cosmic Egg triad, halving {2,3,5,13}, KK k(k+25), integer-mass band.
+- ~30 landmark-family gate guards added across parts 1-5. Rule-7 catch: PAPER_2118 symbol/numeric mismatch disclosed.
+- Fidelity catches this arc: beta_model_density dup (banned literal) auto-caught by NO-DUPLICATE-DEF guard; A_5*K_MEX
+  float-epsilon disclosure per PAPER_2142 standing lesson.
+- MEASURED: 2212 total fns | 1866 named callable | registry 2602 rows | GRAPH 3506 | 759 papers mapped | gate 2189, exit 0.

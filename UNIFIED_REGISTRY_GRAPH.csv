@@ -3385,3 +3385,123 @@ observable,stellar_wind_mass_growth,paper,PAPER_227,derived in PAPER_227
 primitive,G_UQFF,observable,sn_negative_mass_loss,sn_negative_mass_loss composes from G_UQFF
 observable,sn_negative_mass_loss,paper,PAPER_230,derived in PAPER_230
 observable,carina_erosion_ratio,paper,PAPER_057,derived in PAPER_057
+observable,beta_model_density,paper,PAPER_500,derived in PAPER_500
+observable,betti_number_bound,paper,PAPER_600,derived in PAPER_600
+observable,lqg_area_operator,paper,PAPER_1100,derived in PAPER_1100
+observable,lorentzian_resonance,paper,PAPER_1100,derived in PAPER_1100
+observable,lyman_alpha_bridge,paper,PAPER_300,derived in PAPER_300
+observable,effective_charge_coupling,paper,PAPER_400,derived in PAPER_400
+observable,charge_coupled_force,paper,PAPER_400,derived in PAPER_400
+primitive,S_26,observable,ns_merger_strain_reduction,ns_merger_strain_reduction composes from S_26
+observable,ns_merger_strain_reduction,paper,PAPER_1000,derived in PAPER_1000
+observable,hodge_pi_confinement,paper,PAPER_600,derived in PAPER_600
+observable,kk_eigenvalue_spectrum,paper,PAPER_1800,derived in PAPER_1800
+observable,bao_scale,paper,PAPER_1800,derived in PAPER_1800
+observable,aluminum_density,paper,PAPER_1600,derived in PAPER_1600
+observable,factorial_26_landmark,paper,PAPER_1700,derived in PAPER_1700
+observable,cabibbo_angle,paper,PAPER_1800,derived in PAPER_1800
+primitive,F_TRZ,observable,ftrz_ism_density_ladder,ftrz_ism_density_ladder composes from F_TRZ
+observable,ftrz_ism_density_ladder,paper,PAPER_2100,derived in PAPER_2100
+primitive,F_TRZ,observable,ftrz_nonlocality_ladder,ftrz_nonlocality_ladder composes from F_TRZ
+observable,ftrz_nonlocality_ladder,paper,PAPER_2000,derived in PAPER_2000
+primitive,D_PHYS,observable,a5_dphys_ratio,a5_dphys_ratio composes from D_PHYS
+primitive,A_5,observable,a5_dphys_ratio,a5_dphys_ratio composes from A_5
+observable,a5_dphys_ratio,paper,PAPER_2143,derived in PAPER_2143
+primitive,D_PHYS,observable,halving_series_closure,halving_series_closure composes from D_PHYS
+primitive,SO_5,observable,halving_series_closure,halving_series_closure composes from SO_5
+primitive,D_CRIT,observable,halving_series_closure,halving_series_closure composes from D_CRIT
+observable,halving_series_closure,paper,PAPER_2138,derived in PAPER_2138
+observable,f_ubii_causal_role,paper,PAPER_2150,derived in PAPER_2150
+primitive,A_5,observable,bh_seed_mass_integer,bh_seed_mass_integer composes from A_5
+primitive,D_CRIT,observable,bh_seed_mass_integer,bh_seed_mass_integer composes from D_CRIT
+observable,bh_seed_mass_integer,paper,PAPER_1650,derived in PAPER_1650
+observable,compton_wavelength_pm,paper,PAPER_1550,derived in PAPER_1550
+primitive,D_PHYS,observable,smbh_flare_frequency,smbh_flare_frequency composes from D_PHYS
+primitive,SO_5,observable,smbh_flare_frequency,smbh_flare_frequency composes from SO_5
+primitive,A_5,observable,smbh_flare_frequency,smbh_flare_frequency composes from A_5
+observable,smbh_flare_frequency,paper,PAPER_1950,derived in PAPER_1950
+observable,earth_axial_precession_yr,paper,PAPER_2110,derived in PAPER_2110
+primitive,SO_5,observable,so5_successor_identity,so5_successor_identity composes from SO_5
+observable,so5_successor_identity,paper,PAPER_2120,derived in PAPER_2120
+primitive,F_TRZ,observable,muon_g2_anomaly,muon_g2_anomaly composes from F_TRZ
+primitive,SO_5,observable,muon_g2_anomaly,muon_g2_anomaly composes from SO_5
+observable,muon_g2_anomaly,paper,PAPER_1850,derived in PAPER_1850
+observable,khinchin_constant,paper,PAPER_1750,derived in PAPER_1750
+observable,spin_liquid_frustration,paper,PAPER_1350,derived in PAPER_1350
+observable,buoyancy_efficiency_ratio,paper,PAPER_1050,derived in PAPER_1050
+primitive,A_5,observable,a5_kmex_125,a5_kmex_125 composes from A_5
+primitive,K_MEX,observable,a5_kmex_125,a5_kmex_125 composes from K_MEX
+observable,a5_kmex_125,paper,PAPER_1954,derived in PAPER_1954
+primitive,D_PHYS,observable,omega_matter_exact,omega_matter_exact composes from D_PHYS
+primitive,SO_5,observable,omega_matter_exact,omega_matter_exact composes from SO_5
+observable,omega_matter_exact,paper,PAPER_1956,derived in PAPER_1956
+primitive,D_PHYS,observable,half_identity_dphys,half_identity_dphys composes from D_PHYS
+observable,half_identity_dphys,paper,PAPER_1958,derived in PAPER_1958
+primitive,F_TRZ,observable,ftrz_so5_derivative,ftrz_so5_derivative composes from F_TRZ
+primitive,SO_5,observable,ftrz_so5_derivative,ftrz_so5_derivative composes from SO_5
+observable,ftrz_so5_derivative,paper,PAPER_1960,derived in PAPER_1960
+primitive,SO_5,observable,starburst_mass_fraction,starburst_mass_fraction composes from SO_5
+observable,starburst_mass_fraction,paper,PAPER_1966,derived in PAPER_1966
+primitive,D_PHYS,observable,two_thirds_supercomposite,two_thirds_supercomposite composes from D_PHYS
+observable,two_thirds_supercomposite,paper,PAPER_1987,derived in PAPER_1987
+primitive,D_PHYS,observable,dphys_minus_1_prefix,dphys_minus_1_prefix composes from D_PHYS
+primitive,SO_5,observable,dphys_minus_1_prefix,dphys_minus_1_prefix composes from SO_5
+observable,dphys_minus_1_prefix,paper,PAPER_2004,derived in PAPER_2004
+observable,eta_penetration_conservation,paper,PAPER_2098,derived in PAPER_2098
+primitive,SO_5,observable,so5_power15_reactor,so5_power15_reactor composes from SO_5
+observable,so5_power15_reactor,paper,PAPER_2099,derived in PAPER_2099
+primitive,F_TRZ,observable,hubble_ftrz19_route,hubble_ftrz19_route composes from F_TRZ
+primitive,D_PHYS,observable,hubble_ftrz19_route,hubble_ftrz19_route composes from D_PHYS
+primitive,SO_5,observable,hubble_ftrz19_route,hubble_ftrz19_route composes from SO_5
+primitive,A_5,observable,hubble_ftrz19_route,hubble_ftrz19_route composes from A_5
+primitive,D_CRIT,observable,hubble_ftrz19_route,hubble_ftrz19_route composes from D_CRIT
+observable,hubble_ftrz19_route,paper,PAPER_2093,derived in PAPER_2093
+primitive,F_TRZ,observable,mu0_vacuum_permeability,mu0_vacuum_permeability composes from F_TRZ
+observable,mu0_vacuum_permeability,paper,PAPER_2108,derived in PAPER_2108
+primitive,A_5,observable,full_circle_degrees,full_circle_degrees composes from A_5
+observable,full_circle_degrees,paper,PAPER_2116,derived in PAPER_2116
+primitive,D_PHYS,observable,b_critical_schwinger,b_critical_schwinger composes from D_PHYS
+primitive,SO_5,observable,b_critical_schwinger,b_critical_schwinger composes from SO_5
+observable,b_critical_schwinger,paper,PAPER_2126,derived in PAPER_2126
+primitive,F_TRZ,observable,successor_ratio_identity,successor_ratio_identity composes from F_TRZ
+primitive,SO_5,observable,successor_ratio_identity,successor_ratio_identity composes from SO_5
+observable,successor_ratio_identity,paper,PAPER_2128,derived in PAPER_2128
+primitive,F_TRZ,observable,tilt_factor_1_12,tilt_factor_1_12 composes from F_TRZ
+observable,tilt_factor_1_12,paper,PAPER_2133,derived in PAPER_2133
+primitive,F_TRZ,observable,kappa_derivative,kappa_derivative composes from F_TRZ
+primitive,SO_5,observable,kappa_derivative,kappa_derivative composes from SO_5
+observable,kappa_derivative,paper,PAPER_2112,derived in PAPER_2112
+primitive,F_TRZ,observable,dbsfg_ftrz27_vacuum,dbsfg_ftrz27_vacuum composes from F_TRZ
+observable,dbsfg_ftrz27_vacuum,paper,PAPER_2106,derived in PAPER_2106
+primitive,F_TRZ,observable,ftrz50_deepest_rung,ftrz50_deepest_rung composes from F_TRZ
+observable,ftrz50_deepest_rung,paper,PAPER_2113,derived in PAPER_2113
+primitive,SSQ,observable,boltzmann_k_composition,boltzmann_k_composition composes from SSQ
+primitive,F_TRZ,observable,boltzmann_k_composition,boltzmann_k_composition composes from F_TRZ
+primitive,D_PHYS,observable,boltzmann_k_composition,boltzmann_k_composition composes from D_PHYS
+observable,boltzmann_k_composition,paper,PAPER_2129,derived in PAPER_2129
+observable,vacuum_coupling_kernel,paper,PAPER_2132,derived in PAPER_2132
+primitive,SSQ,observable,alpha_s_kernel,alpha_s_kernel composes from SSQ
+primitive,F_TRZ,observable,alpha_s_kernel,alpha_s_kernel composes from F_TRZ
+primitive,K_MEX,observable,alpha_s_kernel,alpha_s_kernel composes from K_MEX
+observable,alpha_s_kernel,paper,PAPER_2131,derived in PAPER_2131
+primitive,SO_5,observable,frame_cadence_62,frame_cadence_62 composes from SO_5
+primitive,D_CRIT,observable,frame_cadence_62,frame_cadence_62 composes from D_CRIT
+observable,frame_cadence_62,paper,PAPER_2137,derived in PAPER_2137
+primitive,F_TRZ,observable,cosmic_egg_triad,cosmic_egg_triad composes from F_TRZ
+primitive,D_CRIT,observable,cosmic_egg_triad,cosmic_egg_triad composes from D_CRIT
+observable,cosmic_egg_triad,paper,PAPER_2114,derived in PAPER_2114
+primitive,F_TRZ,observable,planck_length_ftrz,planck_length_ftrz composes from F_TRZ
+observable,planck_length_ftrz,paper,PAPER_2104,derived in PAPER_2104
+primitive,F_TRZ,observable,ftrz_primitive_exponent,ftrz_primitive_exponent composes from F_TRZ
+primitive,D_PHYS,observable,ftrz_primitive_exponent,ftrz_primitive_exponent composes from D_PHYS
+primitive,SO_5,observable,ftrz_primitive_exponent,ftrz_primitive_exponent composes from SO_5
+primitive,D_CRIT,observable,ftrz_primitive_exponent,ftrz_primitive_exponent composes from D_CRIT
+primitive,N_CH,observable,ftrz_primitive_exponent,ftrz_primitive_exponent composes from N_CH
+observable,ftrz_primitive_exponent,paper,PAPER_2117,derived in PAPER_2117
+primitive,F_TRZ,observable,three_ftrz_prefix,three_ftrz_prefix composes from F_TRZ
+primitive,SO_5,observable,three_ftrz_prefix,three_ftrz_prefix composes from SO_5
+observable,three_ftrz_prefix,paper,PAPER_2102,derived in PAPER_2102
+primitive,SO_5,observable,environmental_force_cascade,environmental_force_cascade composes from SO_5
+observable,environmental_force_cascade,paper,PAPER_2111,derived in PAPER_2111
+primitive,F_TRZ,observable,sphere_from_chaos_half,sphere_from_chaos_half composes from F_TRZ
+observable,sphere_from_chaos_half,paper,PAPER_2118,derived in PAPER_2118

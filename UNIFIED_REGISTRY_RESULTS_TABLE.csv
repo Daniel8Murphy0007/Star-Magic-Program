@@ -76,3 +76,21 @@ thz_5th_harmonic,5*f_SCm,5*1.25THz,6.25e12,PAPER_100,SO5_phonon,0.0
 solar_cycle_omega,2pi/11yr,,1.81e-8,PAPER_162,solar,0.0
 cluster_efficiency,630 eV in J,630*1.602e-19,1.009e-16,PAPER_1141,holmlid_anchor,0.0
 holmlid_ker,D(-1) KER,,630,PAPER_1136,lenr_anchor,0.0
+a5_kmex,A_5*K_MEX,60*(25/12),125,PAPER_1954,EXACT,0.0
+omega_matter,(D_phys-1)/SO_5,3/10,0.3,PAPER_1956,EXACT,0.0
+half_identity,1/(D_phys-2),1/2,0.5,PAPER_1958,EXACT,0.0
+ftrz_derivative,1/SO_5,1/10,0.1,PAPER_1960,EXACT,0.0
+starburst_msf,3/(2*SO_5),3/20,0.15,PAPER_1966,EXACT,0.0
+two_thirds,D_phys/D_BSFG,4/6,0.6667,PAPER_1987,EXACT,0.0
+so5_pow15,SO_5^15,10^15,1e15,PAPER_2099,EXACT,0.0
+bh_seed,A_5*D_BSFG^2*D_crit,60*36*26,56160,PAPER_1650,EXACT,0.0
+mu_0_permeability,4*pi*F_TRZ^7,4pi*1e-7,1.256637e-6,PAPER_2108,maxwell_EXACT,0.0
+full_circle,D_BSFG*A_5,6*60,360,PAPER_2116,EXACT,0.0
+B_crit_schwinger,D_phys*(SO_5+1)*SO_5^12,4*11*1e12,4.4e13,PAPER_2126,EXACT,0.0
+successor_ratio,(SO_5+1)/SO_5,11/10,1.1,PAPER_2128,EXACT,0.0
+tilt_factor,F_TRZ*Phi_5/6,(1/10)(5/6),0.08333,PAPER_2133,EXACT,0.0
+kappa,(SO_5/2)*F_TRZ^4,5*1e-4,5e-4,PAPER_2112,EXACT_derivative,0.0
+k_B_boltzmann,(SSq+Phi_5/6-F_TRZ*SSq+F_TRZ^2*D_phys-F_TRZ^2*SSq)*1e-23,,1.380633e-23,PAPER_2129,SI_1.380649e-23,0.0011
+vacuum_kernel_K,19/160,,0.11875,PAPER_2132,EXACT,0.0
+alpha_s_kernel,F_TRZ*K_MEX*SSq,(1/10)(25/12)(0.57),0.11875,PAPER_2131,alpha_s_MZ,0.014
+frame_cadence,2*D_crit+SO_5,52+10,62,PAPER_2137,EXACT,0.0

@@ -117,3 +117,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS UPDATE v0.346.0
 - 2130 total functions | 1784 named callable | registry 2520 rows | gate 2159 green. Mining mapped in-step (GRAPH+citations).
+
+
+## LIVE STATUS UPDATE v0.347.0
+- LANDMARK-IDENTITY COMPILE: ~40 landmark fns, ~30 gate guards. 2,212 total fns | 1,866 named | registry 2,602 rows | gate 2,189 green.

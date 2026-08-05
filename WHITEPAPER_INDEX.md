@@ -8,6 +8,8 @@
 
 > **v0.346.0 uploaded 14 papers into corpus:** triadic gravity (961/962/963), Phase-H (S201-S205), LENR validation (1136-1141) — all mined + mapped.
 
+> **v0.347.0 landmark-identity compile:** 83 landmark-titled papers surveyed; ~40 EXACT identities mined as gate-guarded callables (mu_0 Maxwell, k_B, alpha_s, B_crit, BH seed, Omega_m, tilt 1/12, exponent quintuplet). PAPER_2118 symbol/numeric mismatch queued for ruling.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.
