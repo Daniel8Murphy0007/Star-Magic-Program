@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.345.0"
-description = "UQFF Star-Magic-Program v0.345.0: promotes all 1,272 predecessor-registry derived constants into individual named callable functions (uqff_derived_functions.py, dc_*; banned-literal values compose from primitives) and mines ~120 flagship closed forms. 2119 total Python functions, 1773 named callable. Full registry mapping: 3338 GRAPH edges, 733 papers linked. All 8 Millennium closures, 7 magic numbers, cosmology/BSM/LENR/GW. Gate green (2159 assertions)."
+version = "0.346.0"
+description = "UQFF Star-Magic-Program v0.346.0: mines 14 uploaded whitepapers into the corpus (triadic gravity 961-963, Phase-H S201-S205, LENR validation 1136-1141) plus predecessor bands (BSM tau EDM/g-2, QGP eta/s=1/4pi, quantum CHSH/von-Neumann, solar/nebula) - each mapped in-step (registry+GRAPH+citations). 2157 total functions, 1811 named callable (incl. 1,272 dc_). 342 dispatches. Registry 2547 rows. Gate green (2159 assertions)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

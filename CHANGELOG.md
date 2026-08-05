@@ -6275,6 +6275,16 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.346.0] - 2026-08-05 - predecessor-mine (solar/QGP/quantum/wormhole/MUGE), mapped in-step
+- 17 new callable closed forms, each registered + GRAPH-edged + linked-paper-cited in the SAME step (workflow fix):
+  f_u_master_equation (090/173/157), gravitational_self_energy=3GM^2/r^3 (173), ug4_coupling_k4=2.0 (172/160),
+  qgp_critical_temp=1.5e12K (1004), qgp_viscosity_kss=1/4pi (1008), higgs_cp_asymmetry=cos(pi t_n) (035),
+  solar_cycle_frequency (162), scm_jet_fraction/scm_oscillation_period=54.8yr (154), thz_resonance_q=62.4 +
+  thz_fifth_harmonic=6.25THz (100), wormhole_vacuum_energy=rho_UA (159), chsh_parameter=2.75 +
+  von_neumann_entropy=ln2 + bell_classical_bound=2 (016/207), glitch_soc_index=1.6 (206), fuzzy_dm_mass (025).
+- Mapping in-step: GRAPH +23 edges, CORPUS_CITATIONS linked-paper maps for all source papers.
+- MEASURED: 2,130 total functions | 1,784 named callable (519 equation-library + 1,272 dc_) | 342 dispatches | registry 2,520 rows.
+
 ## [0.345.0] — 2026-08-05 — 1,272 DERIVED CONSTANTS PROMOTED TO INDIVIDUAL FUNCTIONS + predecessor-mine III/IV
 - DERIVED CONSTANTS -> FUNCTIONS: all 1,272 predecessor-registry derived constants are now individual named callable
   functions in new module uqff_derived_functions.py (dc_* prefix), imported into the calculator (C.dc_alpha_inverse()=137.0,

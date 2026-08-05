@@ -133,3 +133,13 @@ These are results wired into THIS repo's calculator this ship (see `UNIFIED_REGI
 | MOND a₀ | c·H₀/6 | 1.13e-10 m/s² | PAPER_210 | 5.8% |
 
 Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constants promoted to individual callables).
+
+
+## v0.346.0 additions (live campaign)
+| Constant | Route | UQFF value | Reference |
+|---|---|---|---|
+| qgp_viscosity | 1/(4pi) | 0.0796 | PAPER_1008 (KSS) |
+| chsh_parameter | GeV entanglement | 2.75 | PAPER_016 |
+| von_neumann_entropy_ghz | -Tr(rho ln rho) | ln 2 = 0.6931 | PAPER_207 |
+| thz_5th_harmonic | 5*f_SCm | 6.25 THz | PAPER_100 |
+| solar_cycle_omega | 2pi/11yr | 1.81e-8 rad/s | PAPER_162 |

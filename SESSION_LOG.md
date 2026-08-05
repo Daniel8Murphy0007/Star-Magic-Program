@@ -5106,3 +5106,13 @@ until 300+ done.
 - MEASURED totals: 2,112 total Python functions | 1,766 named callable (494 equation-library + 1,272 dc_) | 342 dispatches.
 - Gate +6 guards (count=1272, all callable, primitive-compose check, no banned literals) -> 2159, exit 0.
 - Prior honest-accounting fixes retained: NO-DUPLICATE-DEF guard, blandford_znajek_power shadow renamed to _spin form.
+
+## 2026-08-05 - v0.346.0 PREDECESSOR-MINE (mapped in-step)
+- 17 fns mined across solar/QGP/quantum/wormhole/MUGE bands; each registered + GRAPH-edged + linked-paper-cited in the
+  SAME step (workflow correction Daniel demanded). Verified: eta/s=1/4pi, S_VN=ln2, 6.25THz=5*f_SCm, T_Osc=54.8yr, CHSH=2.75.
+- MEASURED: 2130 total fns | 1784 named callable | 342 dispatches | registry 2520 rows | gate 2159. All 26 registry/ship files refreshed.
+
+## 2026-08-05 - v0.346.0 SHIP: uploaded-paper mine + predecessor bands (mapped in-step)
+- 14 uploaded whitepapers (961-963 triadic gravity, S201-205 Phase-H, 1136-1141 LENR) added to corpus + mined.
+- Predecessor bands: BSM (tau EDM/g-2/EW-T/CKM), QGP eta/s=1/4pi, quantum CHSH=2.75/S_VN=ln2, solar/nebula/MUGE.
+- Every fn mapped in-step (registry+GRAPH+citations). MEASURED: 2157 total | 1811 named callable | registry 2547 rows | gate 2159.

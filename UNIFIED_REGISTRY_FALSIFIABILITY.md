@@ -181,3 +181,10 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **Ω_b/Ω_DM = SSq³ = 0.185** (PAPER_118): falsified if the ratio departs measurably from 0.185.
 - **MOND a₀ = c·H₀/6** (PAPER_210): ties the MOND scale to H_0; falsified if a₀ and H_0 decouple.
 - **k_UA = F_TRZ⁴ = 1e-4 EXACT** (PAPER_210): deep-MOND interpolation coupling; falsified by any non-1e-4 measurement.
+
+
+## v0.346.0 falsifiable additions
+- **eta/s = 1/(4pi) = 0.0796** (PAPER_1008): QGP shear-viscosity KSS bound; falsified if measured eta/s drops below 1/4pi.
+- **CHSH = 2.75 at GeV** (PAPER_016): falsified if high-energy Bell tests cap at the classical bound 2.
+- **6.25 THz = 5*f_SCm** (PAPER_100): 5th-harmonic phonon line; falsified if no SO_5-fold resonance appears at 6.25 THz.
+- **T_Osc = tau/F_TRZ = 54.8 yr** (PAPER_154): SCm oscillation period; falsified by a different measured NS-jet oscillation period.

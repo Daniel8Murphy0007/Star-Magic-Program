@@ -113,3 +113,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 - Dispatches: 342 (PAPER_001-080). Registry: **2502 rows**, 0 malformed.
 - Linked-paper mapping: GRAPH **3330 edges**, CORPUS_CITATIONS **732 papers** mapped.
 - Fidelity gate: **2159 assertions**, green. NO-DUPLICATE-DEF guard active. Rule E / Rule 4 / Rule 7 held.
+
+
+## LIVE STATUS UPDATE v0.346.0
+- 2130 total functions | 1784 named callable | registry 2520 rows | gate 2159 green. Mining mapped in-step (GRAPH+citations).

@@ -69,3 +69,10 @@ nuclear_magic_126,D_crit+SO_5^2,26+100,126,PAPER_1203,shell_magic,0.0
 omega_baryon_dm,SSq^3,0.57^3,0.185,PAPER_118,planck,0.16
 cmb_spectral_index,slow-roll 1-6eps+2eta,,0.9649,PAPER_203,planck,0.0
 yang_mills_gap,26D compactification,,1.736,PAPER_1318,glueball,2.1
+qgp_viscosity,1/(4pi),KSS bound,0.0796,PAPER_1008,holographic,0.0
+chsh_parameter,GeV entanglement,,2.75,PAPER_016,bell_violation,0.0
+von_neumann_entropy_ghz,-Tr(rho ln rho),ln 2,0.6931,PAPER_207,maximal_entangle,0.0
+thz_5th_harmonic,5*f_SCm,5*1.25THz,6.25e12,PAPER_100,SO5_phonon,0.0
+solar_cycle_omega,2pi/11yr,,1.81e-8,PAPER_162,solar,0.0
+cluster_efficiency,630 eV in J,630*1.602e-19,1.009e-16,PAPER_1141,holmlid_anchor,0.0
+holmlid_ker,D(-1) KER,,630,PAPER_1136,lenr_anchor,0.0

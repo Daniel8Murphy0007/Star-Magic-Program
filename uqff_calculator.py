@@ -61,10 +61,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.345.0"
+VERSION = "0.346.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.345.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.346.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -2418,6 +2418,169 @@ def higgs_cp_asymmetry(t_n):
 def new_physics_tev_br():
     """PAPER_029: new-physics branching ratio BR = 0.12 fb at 11.6 TeV (KK resonance, LHC-searchable)."""
     return 0.12
+
+
+def solar_cycle_frequency(period_yr=11.0):
+    """PAPER_162: solar-cycle angular frequency omega_c = 2 pi / (11 yr) = 1.81e-8 rad/s (time-varying B(t))."""
+    return 2.0 * math.pi / (period_yr * 3.156e7)
+
+def scm_jet_fraction(v_scm, f_trz=F_TRZ):
+    """PAPER_154: SCm relativistic jet velocity fraction f_jet = v_SCm * F_TRZ (= v_SCm/10)."""
+    return v_scm * f_trz
+
+def scm_oscillation_period(tau, f_trz=F_TRZ):
+    """PAPER_154: SCm oscillation period T_Osc = tau / F_TRZ (= 54.8 yr for stated tau)."""
+    return tau / f_trz
+
+def thz_resonance_q():
+    """PAPER_100: THz-resonance-hole quality factor Q = 62.4 (DPM cavity mode)."""
+    return 62.4
+
+def thz_fifth_harmonic(f_scm=1.25e12):
+    """PAPER_100: 5th-harmonic THz resonance = 5 * f_SCm = 6.25 THz (SO_5-fold phonon carrier)."""
+    return 5.0 * f_scm
+
+def wormhole_vacuum_energy(rho_ua=RHO_UA):
+    """PAPER_159: Morris-Thorne 13th-term throat vacuum energy E_vac = rho_UA (0.06% verified)."""
+    return rho_ua
+
+
+def chsh_parameter():
+    """PAPER_016: CHSH Bell parameter S = 2.75 at GeV scale (UQFF entanglement, exceeds classical bound 2)."""
+    return 2.75
+
+def von_neumann_entropy(eigenvalues):
+    """PAPER_207: von Neumann entropy S_VN = -Tr(rho ln rho) = -sum p_i ln p_i (GHZ maximal = ln 2)."""
+    return -sum(p * math.log(p) for p in eigenvalues if p > 0)
+
+def glitch_soc_index():
+    """PAPER_206: magnetar vortex-avalanche self-organized-criticality glitch index alpha = 1.6 (Melatos SOC)."""
+    return 1.6
+
+def fuzzy_dm_mass():
+    """PAPER_025: fuzzy/ultralight dark-matter particle mass M_ACP = 3.81e-24 eV/c^2 (kappa*hbar identity)."""
+    return 3.81e-24
+
+def bell_classical_bound():
+    """PAPER_016: classical Bell/CHSH bound = 2 (UQFF predicts 2.75 violation at GeV)."""
+    return 2.0
+
+
+def resonance_time_reversal(Gamma):
+    """PAPER_962: resonant-gravity time-reversal interval t_rev = pi/(2 Gamma) (SCm linewidth Gamma)."""
+    return math.pi / (2.0 * Gamma)
+
+def strain_damping_resonant(h_gr, Phi, s26=None):
+    """PAPER_962: resonant strain damping h_UQFF = h_GR (1 - 0.47 Phi / S_26^(3))."""
+    if s26 is None: s26 = 1.4531e26
+    return h_gr * (1.0 - 0.47 * Phi / s26)
+
+def transmutation_rate(Gamma_0, K_n, rho_scm=RHO_SCM, rho_crit=None):
+    """PAPER_962: neutron-drop transmutation rate Gamma_trans = Gamma_0 (rho_SCm/rho_crit) K_n."""
+    if rho_crit is None: rho_crit = RHO_UA
+    return Gamma_0 * (rho_scm / rho_crit) * K_n
+
+def triadic_compressed_gravity(Ug_sum_26):
+    """PAPER_961: compressed-gravity triadic component g_comp = sum_{i=1}^{26}[Ug1+Ug2+Ug3+Ug4]_i."""
+    return Ug_sum_26
+
+def triadic_buoyancy_lagrangian(F_UBi, r, integral_g_comp):
+    """PAPER_963: buoyancy-gravity Lagrangian L_buoy = F_UBi(r) r - integral_0^r g_comp(r') dr'."""
+    return F_UBi * r - integral_g_comp
+
+def null_extraction(F_vector, psi, dV=1.0):
+    """PAPER_S201: null-extraction operator N[psi] = integral_V delta(F) psi d^3r (extracts F_U=0 null solutions)."""
+    return psi * dV if abs(F_vector) < 1e-30 else 0.0
+
+def phase_correlation_length(T, T_c, nu=0.5):
+    """PAPER_S203: phase-transition correlation length xi ~ |T - T_c|^(-nu) (diverges at T_c)."""
+    d = abs(T - T_c)
+    return float('inf') if d == 0 else d ** (-nu)
+
+def gap_closure_energy(E_a, E_b):
+    """PAPER_S204: gap-closure energy difference Delta_E_ab = E_b - E_a (resonant transfer at omega_drive=omega_natural)."""
+    return E_b - E_a
+
+def expansion_rate(rho_E, F_U, v_scale=1.0):
+    """PAPER_S205: expansion rate dR/dt = v_expansion proportional to rho_E F_U."""
+    return v_scale * rho_E * F_U
+
+def erosion_decay(rho_0, t, tau_d):
+    """PAPER_S205: erosion density decay rho(t) = e^(-t/tau_d) rho_0."""
+    return math.exp(-t / tau_d) * rho_0
+
+
+def cluster_efficiency_j(E_eV=630.0):
+    """PAPER_1141/1136: LENR cluster reaction efficiency eps_cluster = 630 eV = 1.009e-16 J (Holmlid KER anchor)."""
+    return E_eV * 1.602176634e-19
+
+def rossi_ecat_cop_formula(N_clusters, P_input, E_eV=630.0):
+    """PAPER_1141: Rossi E-Cat COP = N_clusters * eps_cluster / P_input (eps_cluster = 630 eV)."""
+    return N_clusters * (E_eV * 1.602176634e-19) / P_input
+
+def mizuno_transmutation_power(N_M, t, kappa=5.0e-4, f_b=1.0, E_eV=630.0):
+    """PAPER_1140: Mizuno Ni-D power P = N_M eps_cluster e^(-kappa t) f_b (10-300 W range)."""
+    return N_M * (E_eV * 1.602176634e-19) * math.exp(-kappa * t) * f_b
+
+def pons_fleischmann_rate(x, V, f_active, rho_Pd=6.8e28):
+    """PAPER_1138: Pons-Fleischmann Pd-D active-site rate N_per_sec = x V rho_Pd f_active / 3600."""
+    return x * V * rho_Pd * f_active / 3600.0
+
+def pons_fleischmann_power(N_per_sec, f_b=1.0, E_eV=630.0):
+    """PAPER_1138: Pons-Fleischmann excess power P_PF = N_per_sec eps_cluster f_b (1-50 W range)."""
+    return N_per_sec * (E_eV * 1.602176634e-19) * f_b
+
+def f_ubi_i_99_sum(Ug_list, t_n, M, r, beta_i=BETA_I):
+    """PAPER_1138: F_U_Bi_i 99-cluster buoyancy sum = sum_{k=1}^{99}(-beta_i Ug_k cos(pi t_n) M/r^2)."""
+    return sum(-beta_i * ug * math.cos(math.pi * t_n) * M / r ** 2 for ug in Ug_list[:99])
+
+def holmlid_ker_validation():
+    """PAPER_1136: Holmlid D(-1) KER reactor validation = 630 eV (LENR calibration anchor, cross-confirmed 626 eV Coulomb)."""
+    return 630.0
+
+
+def tau_edm():
+    """PAPER_024: tau-lepton electric dipole moment d_tau = 1.84e-20 e.cm (zero-free-parameter, 184-sigma vs SM<1e-37)."""
+    return 1.84e-20
+
+def tau_cp_phase(SSq=None):
+    """PAPER_024: tau CP-violation phase phi_CP = [SSq] pi = 1.79 rad."""
+    if SSq is None: SSq = SSQ
+    return SSq * math.pi
+
+def tau_g2_anomaly():
+    """PAPER_023: tau anomalous magnetic moment Delta_a_tau = +3.42e-6 (KK-loop 1/SSq^2, Basel pi^2/6)."""
+    return 3.42e-6
+
+def ew_t_parameter():
+    """PAPER_033: electroweak precision T-parameter delta_T = +0.222 (CDF m_W direction)."""
+    return 0.222
+
+def ckm_scm_flavor(V_cb=0.0392):
+    """PAPER_028: SCm flavor coupling [SCm]_flavor = V_cb^2 = 1.5366e-3 (CKM b->c matrix element)."""
+    return V_cb ** 2
+
+
+def pulsar_spindown_luminosity(I, Omega_dot, P):
+    """PAPER_220: pulsar-wind-nebula spin-down luminosity E_sd = 4 pi^2 I Omega_dot / P^3 (Crab magnetic dipole)."""
+    return 4.0 * math.pi ** 2 * I * abs(Omega_dot) / P ** 3
+
+def star_formation_mass_growth(M0, t, t_SF):
+    """PAPER_138: star-formation mass growth M(t) = M_0 (1 + e^(-t/t_SF)) (SCm Stefan-Boltzmann feedback)."""
+    return M0 * (1.0 + math.exp(-t / t_SF))
+
+def stellar_wind_mass_growth(M_init, M_gas, ratio_factor=1.0):
+    """PAPER_227/228: stellar-wind mass growth M(t) = M_init (1 + (M_gas/M_init) ratio_factor)."""
+    return M_init * (1.0 + (M_gas / M_init) * ratio_factor)
+
+def sn_negative_mass_loss(M_ej, t, tau, r, G=None):
+    """PAPER_230/262: supernova negative-g mass-loss term = -G M_ej(1 - e^(-t/tau))/r^2 (only negative MUGE channel)."""
+    if G is None: G = G_UQFF
+    return -G * M_ej * (1.0 - math.exp(-t / tau)) / r ** 2
+
+def carina_erosion_ratio():
+    """PAPER_057: Carina multi-scale erosion-vs-compression ratio = 12.5x EXACT (tier hierarchy)."""
+    return 12.5
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

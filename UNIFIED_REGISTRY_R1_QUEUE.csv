@@ -7,3 +7,4 @@ bsm_batch_024_030,PAPER_024-030,ADOPT,BSM SSq-ladder equations (CP/DM/sterile/LF
 batch_071_080,PAPER_071-080,ADOPT,"superflare/reactor/database-crossval eqs (solar g, Ug1 mag, COP, SSq correction, [SCm] enh) + §B",no,APPROVED (Daniel 2026-08-05)
 derived_constants_as_functions,predecessor-registry,ADOPT,1272 derived constants promoted from data catalog to individual named callable functions (dc_*),no,"APPROVED (Daniel 2026-08-05 ""derived equations which are functions"")"
 predecessor_flagship_mine,predecessor-Star-Magic,ADOPT,flagship closed forms (Lambda/m_p/H0/Millennium/magic numbers) as primitive-sourced callables,no,APPROVED (Daniel 2026-08-05 KEEP MINING)
+in_step_mapping,v0.346.0,ADOPT,every mined fn registered+GRAPH-edged+linked-paper-cited in the same step (not deferred),no,APPROVED (Daniel 2026-08-05 map linked papers as we mine)

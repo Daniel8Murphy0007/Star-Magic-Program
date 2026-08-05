@@ -1,2 +1,2 @@
 # UQFF Star-Magic Registry Version Marker
-v0.345.0 | 2026-08-05 | 342 dispatches | 2119 total Python functions (1773 named callable incl. 1272 dc_) | 2509 registry rows | GRAPH 3338 edges | 733 papers mapped | gate 2159
+v0.346.0 | 2026-08-05 | 342 dispatches | 2157 total Python functions (1811 named callable incl. 1272 dc_) | 2547 registry rows | GRAPH 3386 edges | 745 papers mapped | 2256 corpus whitepapers | gate 2159

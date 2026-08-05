@@ -56,3 +56,11 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 [2026-08-05] GATE_PASS v0.345.0 — 2159 assertions: OK
 - 2112 total Python fns (1767 named callable incl. 1272 dc_ derived-equation fns) | 342 dispatches | 0 duplicates (gate-guarded)
 - registry 2502 rows | GRAPH 3330 edges | CORPUS_CITATIONS 732 linked-paper maps | XGEO regenerated | gate green
+
+## 2026-08-05 — v0.346.0 predecessor-mine (solar/QGP/quantum/wormhole, mapped in-step)
+[2026-08-05] GATE_PASS v0.346.0 — 2159 assertions: OK
+- 2130 total fns (1784 named incl 1272 dc_) | 342 dispatches | 0 dup | registry 2520 rows | GRAPH 3353 edges | 733 papers mapped | gate green
+
+## 2026-08-05 — v0.346.0 uploaded-paper mine (triadic gravity 961-963 + Phase-H S201-205 + LENR 1136-1141)
+[2026-08-05] GATE_PASS v0.346.0 — 2159 assertions: OK
+- 14 uploaded whitepapers added to corpus + mined + mapped in-step (registry+GRAPH+citations)

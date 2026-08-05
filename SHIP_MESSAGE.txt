@@ -1,29 +1,22 @@
-v0.345.0 — 1,272 derived constants promoted to individual named functions (+ predecessor-mine III/IV)
+v0.346.0 - uploaded-paper mine (triadic gravity + Phase-H + LENR) + predecessor bands, mapped in-step
 
-Daniel: "I ASKED FOR DERIVED EQUATIONS WHICH ARE FUNCTIONS." Fixed.
-The 1,272-constant catalog was a data dict; it is now 1,272 individual named callable
-functions in a new module, plus the ongoing equation-library mine.
+14 whitepapers Daniel uploaded were added to the corpus and mined; every function was registered +
+GRAPH-edged + linked-paper-cited in the SAME step (the workflow correction from v0.345.0).
 
-NEW MODULE uqff_derived_functions.py
-  1,272 dc_* functions, one per predecessor-registry derived constant. Physics content
-  (values, routes, paper provenance) re-expressed per Rule E - no predecessor code ported.
-  The 15 values equal to a registry-canonical primitive compose from that primitive
-  (RHO_SCM / RHO_UA / BETA_I / SSQ / F_TRZ / S_26); zero banned literals in bodies or docstrings.
-  Imported into the calculator via `from uqff_derived_functions import *` - all callable as C.dc_*.
-  Examples: C.dc_alpha_inverse()=137.0, C.dc_mp_me_ratio()=1836.1, C.dc_BH_seed_mass()=56160.
+Uploaded papers added to corpus + mined:
+  PAPER_961/962/963  triadic gravity (g_comp / g_res / g_buoy): resonance_time_reversal=pi/2Gamma,
+                     strain_damping_resonant, transmutation_rate, triadic_buoyancy_lagrangian
+  PAPER_S201-S205    Phase-H series: null_extraction, phase_correlation_length, gap_closure_energy,
+                     expansion_rate, erosion_decay (=1/e at t=tau)
+  PAPER_1136-1141    LENR validation: cluster_efficiency_j=630eV, rossi_ecat_cop_formula,
+                     mizuno_transmutation_power, pons_fleischmann_rate/power, f_ubi_i_99_sum (99-cluster buoyancy)
 
-MEASURED totals (verified, not templated):
-  2,2119 total Python functions
-  1773 named callable functions (501 equation-library + 1,272 dc_ derived-equation)
-  342 dispatches | registry 2,509 rows (0 duplicate quantities) | gate 2159 assertions, green
+Predecessor bands mined (in-step mapped):
+  BSM: tau_edm=1.84e-20, tau_cp_phase=SSq*pi, tau_g2_anomaly=3.42e-6, ew_t_parameter=0.222, ckm_scm_flavor=V_cb^2
+  QGP: qgp_viscosity_kss=1/4pi; quantum: chsh_parameter=2.75, von_neumann_entropy=ln2
+  solar/nebula: solar_cycle_frequency, pulsar_spindown_luminosity, star_formation_mass_growth, sn_negative_mass_loss
+  MUGE: f_u_master_equation, gravitational_self_energy=3GM^2/r^3
 
-Honest-accounting fixes this ship:
-  - Added NO-DUPLICATE-DEF gate guard (catches shadow-overwrites structurally).
-  - Fixed blandford_znajek_power double-definition: renamed the spin/field variant to
-    blandford_znajek_power_spin; both physics forms now callable, no collision.
-  - Corrected fabricated "session start 124" baseline; now report measured deltas vs last tag only.
-
-Also: predecessor-mine III/IV added universal MUGE/buoyancy terms, MOND a0=c H0/6 & k_UA=F_TRZ^4,
-all 7 nuclear magic numbers from integers, AGN/PWN forces, cosmology (T_CMB, n_s, Omega_b/Omega_DM=SSq^3),
-BSM (sterile-nu, KK, LFV), GW/PTA forms. Predecessor repo read-only (Rule E); no SM (Rule 4); honest residuals (Rule 7).
-All version strings synced to 0.345.0.
+MEASURED: 2157 total functions | 1811 named callable (incl. 1,272 dc_) | 342 dispatches | registry 2547 rows |
+GRAPH 3386 edges | 745 papers mapped | 2256 corpus whitepapers | gate 2159, green.
+26/27 registry+ship files refreshed (XGEO_CONFIRMATIONS unchanged by nature). Rule E / Rule 4 / Rule 7 held.

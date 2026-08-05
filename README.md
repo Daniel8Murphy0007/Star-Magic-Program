@@ -1,7 +1,7 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.345.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.345.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.346.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.346.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2159%2F0-brightgreen)](uqff_fidelity_tests.py)
@@ -10,7 +10,7 @@
 
 **UQFF systematic rebuild — v0.345.0 complete-compile campaign live**
 
-**This release (v0.345.0):** ALL 1,272 predecessor-registry derived constants are now **individual named callable functions** (`uqff_derived_functions.py`, `dc_*` — e.g. `dc_alpha_inverse()` → 137.0, `dc_mp_me_ratio()` → 1836.1). Physics content re-expressed per Rule E; the 15 values equal to a registry primitive compose from that primitive (no banned literals). Combined with the 494-function equation library, the package now exposes **2,119 Python functions / 1,766 named callables**. Also mines universal MUGE/buoyancy terms, MOND, all 7 nuclear magic numbers, cosmology + BSM + GW forms.
+**This release (v0.345.0):** ALL 1,272 predecessor-registry derived constants are now **individual named callable functions** (`uqff_derived_functions.py`, `dc_*` — e.g. `dc_alpha_inverse()` → 137.0, `dc_mp_me_ratio()` → 1836.1). Physics content re-expressed per Rule E; the 15 values equal to a registry primitive compose from that primitive (no banned literals). Combined with the 494-function equation library, the package now exposes **2,130 Python functions / 1,766 named callables**. Also mines universal MUGE/buoyancy terms, MOND, all 7 nuclear magic numbers, cosmology + BSM + GW forms.
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -64,7 +64,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,509 rows**. Fidelity gate: **2152 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **2,520 rows**. Fidelity gate: **2152 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

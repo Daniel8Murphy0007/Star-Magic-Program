@@ -4,6 +4,10 @@
 
 > **v0.345.0 predecessor mine + derived-constants:** 1,272 predecessor-registry derived constants promoted to individual callable functions (dc_*); ~110 flagship closed forms mined as primitive-sourced fns; GRAPH + CORPUS_CITATIONS linked-paper maps updated. Predecessor repo read-only (Rule E).
 
+> **v0.346.0 mine:** solar/QGP/quantum/wormhole/MUGE closed forms mined + mapped in-step (GRAPH+citations). Predecessor read-only (Rule E).
+
+> **v0.346.0 uploaded 14 papers into corpus:** triadic gravity (961/962/963), Phase-H (S201-S205), LENR validation (1136-1141) — all mined + mapped.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

@@ -3337,3 +3337,51 @@ observable,qgp_critical_temp,paper,PAPER_1004,derived in PAPER_1004
 observable,qgp_viscosity_kss,paper,PAPER_1008,derived in PAPER_1008
 observable,higgs_cp_asymmetry,paper,PAPER_035,derived in PAPER_035
 observable,new_physics_tev_br,paper,PAPER_029,derived in PAPER_029
+observable,solar_cycle_frequency,paper,PAPER_162,derived in PAPER_162
+primitive,F_TRZ,observable,scm_jet_fraction,scm_jet_fraction composes from F_TRZ
+observable,scm_jet_fraction,paper,PAPER_154,derived in PAPER_154
+primitive,F_TRZ,observable,scm_oscillation_period,scm_oscillation_period composes from F_TRZ
+observable,scm_oscillation_period,paper,PAPER_154,derived in PAPER_154
+observable,thz_resonance_q,paper,PAPER_100,derived in PAPER_100
+primitive,SO_5,observable,thz_fifth_harmonic,thz_fifth_harmonic composes from SO_5
+observable,thz_fifth_harmonic,paper,PAPER_100,derived in PAPER_100
+primitive,RHO_UA,observable,wormhole_vacuum_energy,wormhole_vacuum_energy composes from RHO_UA
+observable,wormhole_vacuum_energy,paper,PAPER_159,derived in PAPER_159
+observable,chsh_parameter,paper,PAPER_016,derived in PAPER_016
+observable,von_neumann_entropy,paper,PAPER_207,derived in PAPER_207
+observable,glitch_soc_index,paper,PAPER_206,derived in PAPER_206
+observable,fuzzy_dm_mass,paper,PAPER_025,derived in PAPER_025
+observable,bell_classical_bound,paper,PAPER_016,derived in PAPER_016
+observable,resonance_time_reversal,paper,PAPER_962,derived in PAPER_962
+primitive,S_26,observable,strain_damping_resonant,strain_damping_resonant composes from S_26
+observable,strain_damping_resonant,paper,PAPER_962,derived in PAPER_962
+primitive,RHO_SCM,observable,transmutation_rate,transmutation_rate composes from RHO_SCM
+primitive,RHO_UA,observable,transmutation_rate,transmutation_rate composes from RHO_UA
+observable,transmutation_rate,paper,PAPER_962,derived in PAPER_962
+observable,triadic_compressed_gravity,paper,PAPER_961,derived in PAPER_961
+observable,triadic_buoyancy_lagrangian,paper,PAPER_963,derived in PAPER_963
+observable,null_extraction,paper,PAPER_S201,derived in PAPER_S201
+observable,phase_correlation_length,paper,PAPER_S203,derived in PAPER_S203
+observable,gap_closure_energy,paper,PAPER_S204,derived in PAPER_S204
+observable,expansion_rate,paper,PAPER_S205,derived in PAPER_S205
+observable,erosion_decay,paper,PAPER_S205,derived in PAPER_S205
+observable,cluster_efficiency_j,paper,PAPER_1141,derived in PAPER_1141
+observable,rossi_ecat_cop_formula,paper,PAPER_1141,derived in PAPER_1141
+observable,mizuno_transmutation_power,paper,PAPER_1140,derived in PAPER_1140
+observable,pons_fleischmann_rate,paper,PAPER_1139,derived in PAPER_1139
+observable,pons_fleischmann_power,paper,PAPER_1139,derived in PAPER_1139
+primitive,BETA_I,observable,f_ubi_i_99_sum,f_ubi_i_99_sum composes from BETA_I
+observable,f_ubi_i_99_sum,paper,PAPER_1138,derived in PAPER_1138
+observable,holmlid_ker_validation,paper,PAPER_1136,derived in PAPER_1136
+observable,tau_edm,paper,PAPER_024,derived in PAPER_024
+primitive,SSQ,observable,tau_cp_phase,tau_cp_phase composes from SSQ
+observable,tau_cp_phase,paper,PAPER_024,derived in PAPER_024
+observable,tau_g2_anomaly,paper,PAPER_023,derived in PAPER_023
+observable,ew_t_parameter,paper,PAPER_033,derived in PAPER_033
+observable,ckm_scm_flavor,paper,PAPER_028,derived in PAPER_028
+observable,pulsar_spindown_luminosity,paper,PAPER_220,derived in PAPER_220
+observable,star_formation_mass_growth,paper,PAPER_138,derived in PAPER_138
+observable,stellar_wind_mass_growth,paper,PAPER_227,derived in PAPER_227
+primitive,G_UQFF,observable,sn_negative_mass_loss,sn_negative_mass_loss composes from G_UQFF
+observable,sn_negative_mass_loss,paper,PAPER_230,derived in PAPER_230
+observable,carina_erosion_ratio,paper,PAPER_057,derived in PAPER_057

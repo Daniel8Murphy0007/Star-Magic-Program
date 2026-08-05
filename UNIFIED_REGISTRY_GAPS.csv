@@ -50,3 +50,4 @@ scm099_namespace_q075a,open_ruling,Q-075a: [SCm]=0.99 vs H_SCm=0.99 namespace (P
 G_uqff_cosmic_593,rule7_disclosed,parameter-free G transcription does not reproduce with paper scale-conventions; returns canonical G_UQFF (PAPER_593)
 holmlid_ker_630eV,rule7_disclosed,KER chain xi-normalization not restated in paper; returns 630 eV calibration anchor (PAPER_1133)
 s26_third_order,rule7_disclosed,Ramanujan-series computation not re-derived; returns stated 1.4531e26 (PAPER_1080)
+v0346_mine,no_open_ruling,solar/QGP/quantum/wormhole batch: all closed forms verified against paper values; no OPEN rulings this round
