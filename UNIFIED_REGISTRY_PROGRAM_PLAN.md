@@ -176,3 +176,14 @@ COMPLETE-COMPILE standard adopted (Daniel: "compile ALL physics/equations"): eac
 equation library capturing every equation and every section, not just headline results. PAPER_001-015 + 008b-014b done.
 Standing lesson: slice a paper to the NEXT @_register that occurs AFTER it (never an assumed numeric-next id) —
 a backward slice duplicated 276 papers before detection/repair. 342 dispatches, 0 duplicates. NOT shipped (300+ mandate).
+
+## 2026-08-05 — (b) CAMPAIGN-AWARE XGEO + GENERATORS (per-batch regen chain)
+Per Daniel's ruling (b): the XGEO chain and status generator are now campaign-driven.
+PER-BATCH REGEN STEP (run after each batch's registry updates, before ship):
+  1. python3 uqff_registry_xgeo.py     -> regenerates XGEO_QUEUE/ROUTES/CONFIRMATIONS from UNIFIED_REGISTRY.csv
+                                           (native-paper -> DPM-common-block routing; DVP two-route confirmations)
+  2. python3 uqff_registry_status.py   -> live campaign census (registry rows, graph edges, citations, XGEO counts)
+XGEO discipline preserved: routes are structural re-expressions DISCLOSED as XGEO_CAMPAIGN_ROUTED
+(not value-coincidence); DVP two-route confirmations are exact (0% residual). Idempotent, read-only inputs.
+registry_generator.py remains the R0-R5 scaffold for the frozen predecessor reference (STATUS_REPORT);
+the campaign drives hand-appended CSVs + the live XGEO chain + status census.

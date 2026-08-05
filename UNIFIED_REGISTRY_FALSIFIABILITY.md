@@ -125,3 +125,12 @@ falsifiability mechanism: wrong values cannot hide (see PAPER_2119/2126/2128).
 - PAPER_029: cosmic budget f_SM != SSq^n falsifies 100%-theory partition.
 - PAPER_030: dark-mediator BR without cos^2(pi t_n) suppression falsifies mediator channel.
 - §B DVP ladder 024-030: 97/101/101/103/103/103/107/109/113/2 (paper-specific, gate-guarded).
+
+## PAPER_031-040 batch (BSM flavor/EW/Higgs + F_UBii buoyancy)
+- 031: R(D)!=R_SM/(1-(m_tau/m_b)^2 SSq) falsifies flavor-anomaly resolution.
+- 032: no extended scalar (VLQ mass) / tan_beta!=1/sqrt(k_eta) falsifies BSM scalar sector.
+- 033: m_W shift opposite CDF direction, or delta_T!=E_react SSq/alpha, falsifies oblique corrections.
+- 034: kappa_t outside [0.922,0.974] at FCC-hh falsifies Level-18 field.
+- 035: Higgs A_CP not cos(pi t_n) form falsifies CP phase prediction.
+- 036-040: F_UBii=F_U-F_Bi-F_i sigma^3 scaling; cluster force not ~sigma^3 r_h falsifies buoyancy variant family.
+- §B DVP ladder 031-040: 3,5,7,11,13,17,19,23,29,31 (paper-specific, gate-guarded).

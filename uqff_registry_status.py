@@ -29,6 +29,9 @@ from typing import Any
 REGISTRY_CSV = "UNIFIED_REGISTRY.csv"
 GRAPH_CSV = "UNIFIED_REGISTRY_GRAPH.csv"
 CITATIONS_CSV = "UNIFIED_REGISTRY_CORPUS_CITATIONS.csv"
+XGEO_QUEUE_CSV = "UNIFIED_REGISTRY_XGEO_QUEUE.csv"
+XGEO_ROUTES_CSV = "UNIFIED_REGISTRY_XGEO_ROUTES.csv"
+XGEO_CONFIRMATIONS_CSV = "UNIFIED_REGISTRY_XGEO_CONFIRMATIONS.csv"
 
 
 def _load_registry_rows() -> list[dict[str, Any]]:
@@ -66,6 +69,9 @@ def calculate_status_report(dataset: dict | None = None) -> dict:
             "status_breakdown": statuses,
             "graph_edges": _count_data_lines(GRAPH_CSV),
             "corpus_citation_rows": _count_data_lines(CITATIONS_CSV),
+            "xgeo_queue_tasks": _count_data_lines(XGEO_QUEUE_CSV),
+            "xgeo_routes": _count_data_lines(XGEO_ROUTES_CSV),
+            "xgeo_confirmations": _count_data_lines(XGEO_CONFIRMATIONS_CSV),
             "note": "campaign census; physics results table is a frozen inherited reference, not derived here",
         }
     }

@@ -67,16 +67,16 @@
 | ⚠ | PAPER_028 | BSM Coupling Constants UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
 | ⚠ | PAPER_029 | New Physics TeV Scale UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
 | ⚠ | PAPER_030 | Dark Sector Mediators UQFF | COMPLETE-COMPILE (helper+§B ladder 97-113; BSM lib eqs; batch 024-030) |
-| ⚠ | PAPER_031 | Flavor Anomalies Resolution UQFF |
-| ⚠ | PAPER_032 | BSM Scalar Sectors UQFF |
-| ⚠ | PAPER_033 | Electroweak Precision UQFF |
-| ⚠ | PAPER_034 | Higgs Kappa t Coupling UQFF |
-| ⚠ | PAPER_035 | Higgs CP Violation UQFF |
-| ✓ | PAPER_036 | FUBii Buoyancy Variant1 Archimedes UQFF |
-| ⚠ | PAPER_037 | FUBii Buoyancy Variants2to6 Thermodynamic |
-| ⚠ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum |
-| ⚠ | PAPER_039 | FUBii Buoyancy Variants12to17 ICM |
-| ⚠ | PAPER_040 | XRay Cluster Buoyancy Perseus Coma Virgo |
+| ⚠ | PAPER_031 | Flavor Anomalies Resolution UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_032 | BSM Scalar Sectors UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_033 | Electroweak Precision UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_034 | Higgs Kappa t Coupling UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_035 | Higgs CP Violation UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ✓ | PAPER_036 | FUBii Buoyancy Variant1 Archimedes UQFF | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_037 | FUBii Buoyancy Variants2to6 Thermodynamic | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_038 | FUBii Buoyancy Variants7to11 Quantum | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_039 | FUBii Buoyancy Variants12to17 ICM | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
+| ⚠ | PAPER_040 | XRay Cluster Buoyancy Perseus Coma Virgo | COMPLETE-COMPILE (helper+§B ladder 3-31; flavor/EW/Higgs/F_UBii; batch 031-040) |
 | ⚠ | PAPER_041 | Intracluster Medium Physics UQFF |
 | ⚠ | PAPER_042 | Monte Carlo 26Layer Compressed Gravity |
 | ⚠ | PAPER_043 | 26D Energy Structure Mathematical Foundation |

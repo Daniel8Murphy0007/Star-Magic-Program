@@ -771,3 +771,18 @@ dvp_prime_paper_027,PAPER_027,observable,p_DVP=107,§B.2,107,paper §B.2,0.0,vds
 dvp_prime_paper_028,PAPER_028,observable,p_DVP=109,§B.2,109,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_028,1,1,0,0,1,WIRED
 dvp_prime_paper_029,PAPER_029,observable,p_DVP=113,§B.2,113,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_029,1,1,0,0,1,WIRED
 dvp_prime_paper_030,PAPER_030,observable,p_DVP=2,§B.2,2,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_030,1,1,0,0,1,WIRED
+flavor_RD_uqff,PAPER_031,equation,R_SM/(1-(m_tau/m_b)^2 SSq),R_SM/(1-(m_tau/m_b)^2 SSq),compiled,R(D) anomaly,0.0,flavor-anomaly,0.84,PAPER_031,1,1,0,0,1,WIRED
+vlq_tan_beta,PAPER_032,equation,1/sqrt(k_eta),1/sqrt(k_eta),compiled,2HDM tan beta,0.0,bsm-scalar,0.84,PAPER_032,1,1,0,0,1,WIRED
+oblique_T_param,PAPER_033,equation,E_react*SSq/alpha_EM,E_react*SSq/alpha_EM,compiled,oblique T,0.0,ew-precision,0.84,PAPER_033,1,1,0,0,1,WIRED
+kappa_18_level,PAPER_034,equation,18^(-SSq),18^(-SSq),compiled,UH level-18,0.0,higgs-kappa-t,0.84,PAPER_034,1,1,0,0,1,WIRED
+higgs_cp_acp,PAPER_035,equation,cos(pi t_n),cos(pi t_n),compiled,Higgs CP,0.0,higgs-cp,0.84,PAPER_035,1,1,0,0,1,WIRED
+dvp_prime_paper_031,PAPER_031,observable,p_DVP=3,§B.2,3,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_031,1,1,0,0,1,WIRED
+dvp_prime_paper_032,PAPER_032,observable,p_DVP=5,§B.2,5,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_032,1,1,0,0,1,WIRED
+dvp_prime_paper_033,PAPER_033,observable,p_DVP=7,§B.2,7,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_033,1,1,0,0,1,WIRED
+dvp_prime_paper_034,PAPER_034,observable,p_DVP=11,§B.2,11,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_034,1,1,0,0,1,WIRED
+dvp_prime_paper_035,PAPER_035,observable,p_DVP=13,§B.2,13,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_035,1,1,0,0,1,WIRED
+dvp_prime_paper_036,PAPER_036,observable,p_DVP=17,§B.2,17,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_036,1,1,0,0,1,WIRED
+dvp_prime_paper_037,PAPER_037,observable,p_DVP=19,§B.2,19,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_037,1,1,0,0,1,WIRED
+dvp_prime_paper_038,PAPER_038,observable,p_DVP=23,§B.2,23,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_038,1,1,0,0,1,WIRED
+dvp_prime_paper_039,PAPER_039,observable,p_DVP=29,§B.2,29,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_039,1,1,0,0,1,WIRED
+dvp_prime_paper_040,PAPER_040,observable,p_DVP=31,§B.2,31,paper §B.2,0.0,vds-dvp-bsh,0.84,PAPER_040,1,1,0,0,1,WIRED

@@ -31,3 +31,9 @@ lfv_suppress,exp(-SSq),exp(-0.57),0.5655,PAPER_027,closed_form,0.0
 ckm_vacuum,|V_cb|^2,0.0392^2,1.537e-3,PAPER_028,closed_form,0.0
 fsm_budget,SSq^4,0.57^4,0.1056,PAPER_029,primitive_identity,0.0
 dark_med_suppress,cos^2(pi t_n),cos^2(pi*3.833),0.749,PAPER_030,closed_form,0.0
+flavor_RD,R_SM/(1-c SSq),0.298/0.897,0.332,PAPER_031,closed_form,0.0
+vlq_tanbeta,1/sqrt(k_eta),1/sqrt(0.1369),2.70,PAPER_032,closed_form,0.0
+oblique_T,E_react SSq/alpha,,0.222,PAPER_033,closed_form,0.0
+kappa_18,18^(-SSq),18^(-0.57),0.1927,PAPER_034,closed_form,0.0
+higgs_acp,cos(pi t_n),cos(pi 0.331),0.506,PAPER_035,closed_form,0.0
+fubii_perseus,F_U-F_Bi-F_i,sigma^3 r_h,-2.024e60,PAPER_040,closed_form,0.0

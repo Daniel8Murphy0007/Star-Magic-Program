@@ -58,11 +58,11 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.337.0"
+VERSION = "0.338.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE 2026-08-04: complete-compile PAPER_001-030 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
-# batch 024-030 (BSM: CP/DM/sterile/LFV/CKM/budget/mediator); 342 dispatches, 0 duplicates.
+# STATE v0.338.0: complete-compile PAPER_001-040 (+b-variants); §B DVP ladder paper-specific + gate-guarded;
+# linked-paper mapping 40/40 (597 graph edges); XGEO chain campaign-aware (92 routes); 342 dispatches, 0 dup.
 # Windows-side save to trigger VS Code file-watcher refresh.
 
 # =============================================================================
@@ -590,6 +590,27 @@ def cosmic_budget_fsm(ssq=SSQ):
 def dark_mediator_suppression(t_n):
     """PAPER_030: dark-mediator amplitude suppression F = cos^2(pi*t_n)."""
     return math.cos(math.pi * t_n) ** 2
+
+
+def flavor_RD_uqff(R_sm, m_tau, m_frac_denom, ssq=SSQ):
+    """PAPER_031: R(D)_UQFF = R_SM/(1 - (m_tau/m_b)^2 * SSq) flavor-anomaly resolution."""
+    return R_sm / (1.0 - (m_tau / m_frac_denom) ** 2 * ssq)
+
+def vlq_tan_beta(k_eta):
+    """PAPER_032: 2HDM tan(beta) = 1/sqrt(k_eta); sin^2(alpha)=k_eta (Ug2 scalar mapping)."""
+    return 1.0 / math.sqrt(k_eta)
+
+def oblique_T_param(E_react, ssq=SSQ, alpha_em=1.0/137.0):
+    """PAPER_033: electroweak oblique delta_T = E_react*SSq/alpha_EM."""
+    return E_react * ssq / alpha_em
+
+def kappa_18_level(ssq=SSQ):
+    """PAPER_034: UH Level-18 field kappa_18 = 18^(-SSq) = 0.1927."""
+    return 18.0 ** (-ssq)
+
+def higgs_cp_acp(t_n):
+    """PAPER_035: Higgs CP asymmetry A_CP read as cos(pi*t_n)."""
+    return math.cos(math.pi * t_n)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)
@@ -2383,9 +2404,14 @@ def _paper_031(dataset):
     c_dstar = (m_tau / m_dstar) ** 2 * 1.25          # 0.977
     r_dstar = 0.254 / (1.0 - c_dstar * SSQ * F_TRZ)  # 0.269 (F_TRZ candidate)
     scm_flavor = 39.2e-3 ** 2
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'flavor-anomaly')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.147, 'DVP_prime_paper': 3, 'DVP_n_channel_paper': 6/26.0,
+        'DVP_primes': (3, 6/26.0), 'DVP_resonant': False,
+
             'r_d_sm': 0.298, 'r_d_measured': 0.356,
+            'r_d_uqff_lib': flavor_RD_uqff(0.298, 1.777, 4.18),
+            'eqlib': ['flavor_RD_uqff'],
             'r_d_uqff': r_d,                         # 0.332: 1.9 -> 0.9 sigma
             'r_dstar_sm': 0.254, 'r_dstar_measured': 0.291,
             'r_dstar_uqff': r_dstar,                 # 0.269: 3.3 -> 1.2 sigma
@@ -2398,7 +2424,9 @@ def _paper_031(dataset):
             'lfu_uqff': 1.0 + m_mu / m_tau,          # 1.060 (Belle II 1.020)
             'kappa_tau_correction': scm_flavor * (m_tau / 246.0)**2,         # 8.0e-8
             'tension_reduction': {'r_d': (1.9, 0.9), 'r_dstar': (3.3, 1.2)},
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('R(D) = R_SM/(1 - (m_tau/m_b)^2*SSq); '
                     'R(D*) = R_SM/(1 - C*SSq*F_TRZ); LFU = 1 + m_mu/m_tau; '
                     'Delta_CKM = 2*[SCm]_flavor*K_CKM'),
@@ -2440,9 +2468,14 @@ def _paper_032(dataset):
     m_s0_trz = m_scalar_used_gev / 3.0               # 840 ~ 845 (D = 1/3)
     triplet_split = 80.4 * ((D_PHYS - 1) / SO_5) / _m.sqrt(2.0)   # 17.05
     v_s = 845.0 / _m.sqrt(2.0 * SSQ)                 # 791
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'bsm-scalar')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.093, 'DVP_prime_paper': 5, 'DVP_n_channel_paper': 7/26.0,
+        'DVP_primes': (5, 7/26.0), 'DVP_resonant': False,
+
             'k_eta': k_eta,
+            'tan_beta_lib': vlq_tan_beta(0.1369),
+            'eqlib': ['vlq_tan_beta'],
             'sin2_alpha': k_eta,
             'alpha_deg': alpha_deg,                  # 21.7
             'cos2_alpha': 1.0 - k_eta,               # 0.863 WW/ZZ suppression
@@ -2460,7 +2493,9 @@ def _paper_032(dataset):
             'vlq_bare_mass_gev': (1500.0**2 - 555.0**2) ** 0.5,   # 1394
             'third_companion_candidates_gev': (1000.0, 500.0, 313.0),   # Q-031b
             'br_hierarchy': (0.50, 0.25, 0.25),      # Wb : Zt : Ht singlet limit
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('sin^2(alpha) = k_eta = 0.37^2; tan(beta) = 1/sqrt(k_eta); '
                     'f = v/sqrt(xi); M_S0 = (m_scalar/1000?)*D_TRZ ~ 845; '
                     'split = m_W*0.30/sqrt(2)'),
@@ -2501,9 +2536,14 @@ def _paper_033(dataset):
     dm_w_gev = 80.4 * (0.769 / (0.769 - 0.231)) * (alpha_em / 2.0) * delta_t
     dcs = (5.23e-3, 4.22e-3, 6.79e-3)
     geo_mean = (dcs[0] * dcs[1] * dcs[2]) ** (1.0 / 3.0)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'ew-precision')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.099, 'DVP_prime_paper': 7, 'DVP_n_channel_paper': 8/26.0,
+        'DVP_primes': (7, 8/26.0), 'DVP_resonant': False,
+
             'e_react': e_react,
+            'oblique_T_lib': oblique_T_param(2.846e-3),
+            'eqlib': ['oblique_T_param'],
             'delta_t_uqff': delta_t,                 # 0.222
             'delta_rho_uqff': delta_rho,
             'rho_uqff': 1.00037 + delta_rho,         # 1.00322
@@ -2519,7 +2559,9 @@ def _paper_033(dataset):
             'bes_br': {'k_pi0': 1.45e-4, 'k_eta': 1.17e-4, 'k_etap': 1.88e-4},
             'su3_ratio': (1.56, 1.239),              # predicted vs measured (Q-032d)
             'etap_enhancement_estimate': 8.5e-9,     # Q-032c: 4 orders short
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('E_react = tan^4(theta_C); delta_T = E_react*SSq/alpha_EM; '
                     'delta_S suppressed by exp(-kappa*t_EW)*D_TRZ; '
                     'Delta_m_W = m_W*(c^2/(c^2-s^2))*(alpha/2)*delta_T'),
@@ -2556,9 +2598,14 @@ def _paper_034(dataset):
     kt_high = 1.0 - kappa_18 * k_eta                 # 0.9736
     kt_central = _m.sqrt(kt_low * kt_high)           # 0.9474
     mu_th = kt_central ** 2                          # 0.898
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'higgs-kappa-t')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.172, 'DVP_prime_paper': 11, 'DVP_n_channel_paper': 9/26.0,
+        'DVP_primes': (11, 9/26.0), 'DVP_resonant': False,
+
             'kappa_18_uh': kappa_18,
+            'kappa_18_lib': kappa_18_level(),
+            'eqlib': ['kappa_18_level'],
             'kt_bracket': (kt_low, kt_high),
             'kt_central': kt_central,                # 0.948
             'kt_trz_range': (0.862, 0.974),
@@ -2575,7 +2622,9 @@ def _paper_034(dataset):
             'hl_lhc_significance': (1.0 - kt_central) / 0.04,     # 1.3
             'fcc_hh_significance': (1.0 - kt_central) / 0.005,    # 10.5
             'cross_lock_028': 'kappa_Higgs = 1.0 (028) vs kappa_t = 0.948 (here)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('kappa_18 = 18^(-SSq); kappa_t = 1 - [SSq or kappa_18]*k_eta; '
                     'mu = kappa_t^2; FCC-hh sigma = (1-kt)/0.005'),
         'source': 'PAPER_034',
@@ -2611,9 +2660,14 @@ def _paper_035(dataset):
     cos_paper = abs(_m.cos(_m.pi * t_n_paper))       # 0.4456
     g_cp = (7.30e-3 / (4 * _m.pi)) * (1.0/3.0) * t_n_paper ** 2   # 2.41e-5
     a_cp_hgg = 2.0 * g_cp / 6.49e-3                  # 7.4e-3
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'higgs-cp')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.113, 'DVP_prime_paper': 13, 'DVP_n_channel_paper': 10/26.0,
+        'DVP_primes': (13, 10/26.0), 'DVP_resonant': False,
+
             'a_cp_cms': (a_cp, 0.064),
+            'a_cp_lib': higgs_cp_acp(0.331),
+            'eqlib': ['higgs_cp_acp'],
             't_n_self_consistent': t_n_self_consistent,   # 0.331 (Q-034a)
             't_n_paper': t_n_paper,
             'cos_pi_tn_paper': cos_paper,            # 0.4456
@@ -2627,7 +2681,9 @@ def _paper_035(dataset):
             'gamma_h_sm_mev': 4.1,
             'gamma_h_cern_limit_gev': 3.6,
             'width_enhancement': 3.2 / 4.1e-3,       # 780
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('t_n = arccos(A_CP)/pi; g_CP = (alpha/4pi)*D_TRZ*t_n^2; '
                     'A_CP(Hgg) = 2*g_CP/g_SM'),
         'source': 'PAPER_035',
@@ -2658,9 +2714,13 @@ def _paper_036(dataset):
     CLEAN wiring.
     """
     perseus = _fubii_virx(1.3e6, 2.5e22, 1.0)        # -2.024e60 N
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'fubii-virial')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.054, 'DVP_prime_paper': 17, 'DVP_n_channel_paper': 11/26.0,
+        'DVP_primes': (17, 11/26.0), 'DVP_resonant': False,
+
             'base_identity': 'F_UBii = F_U - F_Bi - F_i',
+            'eqlib': ['_fubii_virx','_fubii_scale'],
             'f_ubii_virx_perseus_n': perseus,
             'paper_value_n': -2.024e60,
             'f_rel_n': 1.0e-10,
@@ -2672,7 +2732,9 @@ def _paper_036(dataset):
             'clusters': {'perseus': (1.3e6, 2.5e22), 'coma': (1.0e6, 6.8e22),
                          'virgo': (6.0e5, 4.6e22)},
             'variant_count_family': 17,
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('F_UBii = F_U - F_Bi - F_i; '
                     'virx: F = -F_rel*(3*sigma^2*r_h/(G*E_LEP))*Q_wave*sigma'),
         'source': 'PAPER_036',
@@ -2711,9 +2773,13 @@ def _paper_037(dataset):
     kn = _fubii_scale(5.0e40 * 86400.0, 1.0, 0.05 ** (1.0 / 3.0))    # 1.303e54
     termv_true = _fubii_scale(1.0e-3 * 1.0e44 / 3.0e8, 1.0, 2.94e8)  # 8.0e49 formula-true
     coup_true = _fubii_scale(0.05 * 1.0e44, 1.0, 0.05 ** 0.5)        # 9.2e50 formula-true
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'fubii-thermo')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.099, 'DVP_prime_paper': 19, 'DVP_n_channel_paper': 12/26.0,
+        'DVP_primes': (19, 12/26.0), 'DVP_resonant': False,
+
             'variants': ('termv', 'upar', 'coup', 'orbdec', 'kn'),
+            'eqlib': ['_fubii_virx'],
             'kn_at2017gfo_n': kn,                    # 1.303e54 ~ paper 1.305e54 VERIFIED
             'kn_paper_n': 1.305e54,
             'kn_l_peak_w': 5.0e40,                   # Q-035d vs physical ~5e34
@@ -2727,7 +2793,9 @@ def _paper_037(dataset):
             'upar_scaling': 'U^(3/2)',
             'coup_scaling': 'eps^(3/2)',
             'kn_grav_ratio_true': kn / 2.1e36,       # 6.2e17 (paper prints 6.2e-7 - Q-035e)
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('F = F_rel*(numerator/E_LEP)*Q_wave*tail; '
                     'kn: numerator = L_peak*t_peak, tail = (M_ej/M_sun)^(1/3); '
                     'termv: tau*L/c, v_term; coup: eps*Edot, sqrt(eps); '
@@ -2765,9 +2833,13 @@ def _paper_038(dataset):
     kne_ratio = 26.0 * ln_fe / ln_p                  # 28.4 (paper 27.5)
     ps_chain = 1.0e-10 * 4.2e57 * (1.686 / 1.22e-19) * 0.15        # 8.7e65 (paper 8.7e68)
     sfe_chain = 1.0e-10 * 7.68e31 * _m.sqrt(0.05)    # 1.72e21 (paper 1.72e22)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'fubii-quantum')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.165, 'DVP_prime_paper': 23, 'DVP_n_channel_paper': 13/26.0,
+        'DVP_primes': (23, 13/26.0), 'DVP_resonant': False,
+
             'variants': ('fermi', 'kne', 'whim', 'ps', 'sfe'),
+            'eqlib': ['_fubii_virx'],
             'fermi_cena_n': fermi,                   # 0.82 VERIFIED
             'whim_filament_n': whim,                 # 7.4e-13 VERIFIED
             'knee_energy_ev': 3.0e15,
@@ -2782,7 +2854,9 @@ def _paper_038(dataset):
             'sfe_orion_paper_n': 1.72e22,
             'whim_baryon_fraction': (0.40, 0.50),
             'sfe_scaling': 'eps^(3/2) * M*c^2/r^2 (Bekenstein-like area)',
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('fermi: F_rel*(beta*E_p/E_LEP)*(v/c)^2; kne: stationary point of '
                     '-(E/E_GUT)*(Ze/E_LEP)*ln(E/E_LEP); whim: (kT/E_LEP)*n*sigma_T*r*'
                     'sqrt(T/T_vir); ps: (M/M_P^2)*(delta_c/E_LEP)*|dlnsigma/dlnM|; '
@@ -2823,9 +2897,13 @@ def _paper_039(dataset):
     bd = f_rel * 0.41 * (1.0e43 ** 2 / e_lep) * (1.0e-32) ** 3       # 0.0336 N VERIFIED
     lobe = f_rel * (1.0e-11 * 3.7e62 / e_lep) * 1.0e4 * (5.0e5 / 3.0e8)   # 5.06e61 VERIFIED
     roche_chain = f_rel * (g_n * 1.193e30 * 3.580e30 / ((1.5e9)**2 * e_lep)) * 1.893e13
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'fubii-icm')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.141, 'DVP_prime_paper': 29, 'DVP_n_channel_paper': 14/26.0,
+        'DVP_primes': (29, 14/26.0), 'DVP_resonant': True,
+
             'variants': ('hawk', 'bd', 'roche', 'ent', 'dec', 'lobe'),
+            'eqlib': ['_fubii_virx'],
             'family_complete': 17,
             'hawk_5msun_n': hawk,                    # -2.45 VERIFIED (lab-scale!)
             'hawk_paper_n': -2.452,
@@ -2838,7 +2916,9 @@ def _paper_039(dataset):
             'dec_scaling': 'exp(-t/tau_dec) quantum-to-classical force diminution',
             'dec_molecule_paper_n': 8.6e-10,         # Q-037b (1e6 intermediate slip)
             'rho_bounce_over_planck': 0.41,          # LQC quantum-geometry factor
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('hawk: -F_rel*(hbar*c^3/(8pi*G*M*k_B*E_LEP))*(r_s/r)^2; '
                     'bd: F_rel*(rho/rho_P)*(H^2/E_LEP)*(a_b/a)^3; '
                     'roche: F_rel*(G*M1*M2/(R_L^2*E_LEP))*dM/dt; '
@@ -2875,9 +2955,13 @@ def _paper_040(dataset):
     coma = _fubii_virx(1.0e6, 6.8e22, 1.0)           # -2.51e60
     virgo = _fubii_virx(6.0e5, 4.6e22, 1.0)          # -3.66e59
     lobe_perseus = 1.0e-10 * (1.0e-13 * 2.4e61 / 1.22e-19) * 1.0e3 * (5.0e5 / 3.0e8)
-    return {
-        'value': {
+    _v = _common_uqff_blocks(1.4, 1.0e4, 'fubii-clusters')
+    _v.update({
+        'VDS_sub_ratio_paper': 0.123, 'DVP_prime_paper': 31, 'DVP_n_channel_paper': 15/26.0,
+        'DVP_primes': (31, 15/26.0), 'DVP_resonant': True,
+
             'perseus_n': perseus,
+            'eqlib': ['_fubii_virx'],
             'coma_n': coma,
             'virgo_closed_form_n': virgo,
             'virgo_validator_n': -7.2e59,            # Q-038a
@@ -2891,7 +2975,9 @@ def _paper_040(dataset):
             'cluster_params': {'perseus': (1.3e6, 2.5e22, 6.0),
                                'coma': (1.0e6, 6.8e22, 8.0),
                                'virgo': (6.0e5, 4.6e22, 2.5)},
-        },
+    })
+    return {
+        'value': _v,
         'formula': ('F_virx = -F_rel*(3*sigma^2*r_h/(G*E_LEP))*Q*sigma (PAPER_036 helper); '
                     'scaling F ~ sigma^3*r_h'),
         'source': 'PAPER_040',

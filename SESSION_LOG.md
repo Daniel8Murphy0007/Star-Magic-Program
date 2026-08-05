@@ -4902,3 +4902,19 @@ until 300+ done.
 - Gate: verification loop extended to 001-030; DVP guard +10; +7 batch equation assertions. Green.
 - Registry: +18 UNIFIED rows, +9 graph, +7 R2, +7 R3, +7 RESULTS_TABLE, +7 GAPS, falsifiability. 0 malformed.
 - 342 dispatches, 0 duplicates. Library 441 functions. NOT SHIPPED (300+ mandate).
+
+### 2026-08-04 (cont.8) — Batch PAPER_031-040 (BSM flavor/EW/Higgs + F_UBii buoyancy) ship v0.338.0
+- 10 papers merged with _common_uqff_blocks + paper §B (DVP ladder 3,5,7,11,13,17,19,23,29,31).
+- 5 BSM library eqs: flavor_RD_uqff, vlq_tan_beta, oblique_T_param, kappa_18_level, higgs_cp_acp; F_UBii via _fubii_virx.
+- Gate: loop+DVP guard extended to 040; +6 batch assertions. Registry: +15 UNIFIED, +5 graph, +6 R2/R3/RESULTS/GAPS.
+- 342 dispatches, 0 duplicates. Library 446 fns. Ship v0.338.0 prepared. 0 malformed CSVs.
+
+### 2026-08-05 — (b) linked-paper mapping fix + campaign-aware XGEO/generators
+- LINKED-PAPER MAPPING: was 10/40 (only 001-010 had graph map-link edges); extracted full linked-whitepaper
+  lists from each whitepaper -> 597 paper->paper map-link edges + full CITATIONS rows for 011-040. Now 40/40 mapped.
+- XGEO CHAIN LIVE (b): rewrote uqff_registry_xgeo.py campaign-aware -> reads UNIFIED_REGISTRY.csv, emits
+  92 QUEUE tasks + 92 ROUTES (native-paper->DPM-common-block) + 30 CONFIRMATIONS (DVP two-route, 0% residual).
+  Idempotent (byte-identical re-run), 0 malformed.
+- uqff_registry_status.py extended with XGEO census; per-batch regen step documented in PROGRAM_PLAN.
+- Gate: +2 XGEO chain guards. Green. XGEO CSVs added to pyproject data-files.
+- Per-batch workflow now: wire papers -> update CSVs -> run uqff_registry_xgeo.py + uqff_registry_status.py -> ship.

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.337.0", "uqff_calculator.VERSION = 0.337.0 (complete-compile PAPER_001-030 + b-variants)")
+assert_that(C.VERSION == "0.338.0", "uqff_calculator.VERSION = 0.338.0 (complete-compile PAPER_001-040 + b-variants)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -321,6 +321,21 @@ assert_that(abs(_r010['VDS_ratio'] - 0.1) < 1e-9 and 'qnm_freq_uqff' in _r010['e
             "PAPER_010: full-depth (QNM lib fns, 9-sector, VDS=F_TRZ, cosmogenesis)")
 assert_that(C.wired_count() >= 10, "wired_count >= 10")
 
+# === XGEO CAMPAIGN CHAIN GUARD (b: XGEO + generators campaign-aware) ===
+import csv as _csvx
+def _xgeo_rows(fn):
+    try:
+        with open(fn, newline='', encoding='utf-8') as _f:
+            return list(_csvx.reader(_f))[1:]
+    except FileNotFoundError:
+        return []
+_xq = _xgeo_rows('UNIFIED_REGISTRY_XGEO_QUEUE.csv')
+_xc = _xgeo_rows('UNIFIED_REGISTRY_XGEO_CONFIRMATIONS.csv')
+assert_that(len(_xq) >= 90 and all(r[9] == 'XGEO_CAMPAIGN_ROUTED' for r in _xq if len(r) > 9),
+            "XGEO QUEUE: campaign equations routed native->DPM-common-block (>=90, all XGEO_CAMPAIGN_ROUTED)")
+assert_that(len(_xc) >= 30 and all(r[8] == 'XGEO_CONFIRMED_EXACT' for r in _xc if len(r) > 8),
+            "XGEO CONFIRMATIONS: paper-specific DVP two-route agreement (0% residual, >=30 confirmed)")
+
 # === PERMANENT §B DVP-LADDER GUARD (prevents helper-flattening regressions) ===
 # Each paper's dipole-vortex prime is paper-specific (whitepaper §B.2); the shared
 # _common_uqff_blocks helper must NOT flatten them to PAPER_001's generic p=3.
@@ -334,6 +349,8 @@ _DVP_LADDER_LOCKED = {
     'PAPER_012b': 41, 'PAPER_013b': 43, 'PAPER_014b': 47,
     'PAPER_024': 97, 'PAPER_025': 101, 'PAPER_025b': 101, 'PAPER_026': 103, 'PAPER_026b': 103,
     'PAPER_026c': 103, 'PAPER_027': 107, 'PAPER_028': 109, 'PAPER_029': 113, 'PAPER_030': 2,
+    'PAPER_031': 3, 'PAPER_032': 5, 'PAPER_033': 7, 'PAPER_034': 11, 'PAPER_035': 13,
+    'PAPER_036': 17, 'PAPER_037': 19, 'PAPER_038': 23, 'PAPER_039': 29, 'PAPER_040': 31,
 }
 for _pid, _pdvp in _DVP_LADDER_LOCKED.items():
     _v = C.calc(_pid)['value']
@@ -350,7 +367,9 @@ for _pid in ['PAPER_001','PAPER_002','PAPER_003','PAPER_004','PAPER_005','PAPER_
              'PAPER_015b','PAPER_016','PAPER_016b','PAPER_017','PAPER_018','PAPER_019',
              'PAPER_020','PAPER_021','PAPER_022','PAPER_023',
              'PAPER_024','PAPER_025','PAPER_025b','PAPER_026','PAPER_026b','PAPER_026c',
-             'PAPER_027','PAPER_028','PAPER_029','PAPER_030']:
+             'PAPER_027','PAPER_028','PAPER_029','PAPER_030',
+             'PAPER_031','PAPER_032','PAPER_033','PAPER_034','PAPER_035',
+             'PAPER_036','PAPER_037','PAPER_038','PAPER_039','PAPER_040']:
     _rv = C.calc(_pid)['value']
     assert_that(abs(_rv['kozima_neutron_static_N'] - 1.0e6) < 1.0,
                 _pid + ": Kozima-LENR appendix K.1 present (neutron drop = 1e6 N)")
@@ -425,6 +444,21 @@ assert_that(abs(C.calc('PAPER_029')['value']['f_sm_lib'] - P.SSQ**4) < 1e-9,
             "PAPER_029: cosmic_budget_fsm=SSq^4 library eq")
 assert_that('dark_mediator_suppression' in C.calc('PAPER_030')['value']['eqlib'],
             "PAPER_030: dark_mediator_suppression=cos^2(pi t_n) library eq")
+
+# --- 031-040 batch: paper-specific equations ---
+assert_that(abs(C.calc('PAPER_031')['value']['r_d_uqff_lib'] - 0.298/(1-(1.777/4.18)**2*P.SSQ)) < 1e-6,
+            "PAPER_031: flavor_RD_uqff library eq (R(D) anomaly)")
+assert_that(abs(C.calc('PAPER_032')['value']['tan_beta_lib'] - 1.0/(0.1369**0.5)) < 1e-6,
+            "PAPER_032: vlq_tan_beta=1/sqrt(k_eta) library eq")
+assert_that(abs(C.calc('PAPER_033')['value']['oblique_T_lib'] - 2.846e-3*P.SSQ/(1/137.0)) < 1e-4,
+            "PAPER_033: oblique_T_param library eq")
+assert_that(abs(C.calc('PAPER_034')['value']['kappa_18_lib'] - 18.0**(-P.SSQ)) < 1e-6,
+            "PAPER_034: kappa_18_level=18^(-SSq) library eq")
+assert_that(abs(C.calc('PAPER_035')['value']['a_cp_lib'] - __import__('math').cos(__import__('math').pi*0.331)) < 1e-6,
+            "PAPER_035: higgs_cp_acp=cos(pi t_n) library eq")
+assert_that('_fubii_virx' in C.calc('PAPER_036')['value']['eqlib']
+            and C.calc('PAPER_040')['value']['perseus_n'] < 0,
+            "PAPER_036/040: F_UBii virial buoyancy library (Perseus < 0)")
 
 _r011 = C.calc('PAPER_011')['value']
 assert_that(abs(_r011['omega_suppression_bns'] - 0.110889) < 1e-6,

@@ -6209,6 +6209,16 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   advanced through PAPER_015. Gate green (2140-tier assertions). NOT shipped (300+ mandate).
 - [Windows-side save 2026-08-04 to trigger VS Code file-watcher refresh.]
 
-## [UNSHIPPED-WORKING 0.337.0] — 2026-08-04 batch 024-030 (BSM)
+## [v0.337.0] — 2026-08-04 batch 024-030 (BSM) [SHIPPED]
 - Complete-compile PAPER_024-030: 9 BSM library equations + paper-specific §B DVP ladder (97-113); gate-guarded.
-- Registry pantheon advanced through PAPER_030. 342 dispatches, 0 duplicates. NOT shipped (300+ mandate).
+- Registry pantheon advanced through PAPER_030. 342 dispatches, 0 duplicates. Shipped as v0.337.0.
+
+## [v0.338.0] — 2026-08-04 batch 031-040 (BSM flavor/EW/Higgs + F_UBii buoyancy)
+- Complete-compile PAPER_031-040: 5 BSM library eqs + F_UBii family + paper §B DVP ladder (3-31); gate-guarded.
+- Registry pantheon advanced through PAPER_040. 342 dispatches, 0 duplicates, gate green.
+- Linked-paper mapping completed 40/40: 597 paper->linked-whitepaper graph edges + full CITATIONS rows
+  for PAPER_011-040 (was 10/40).
+- XGEO chain made campaign-aware (uqff_registry_xgeo.py): 92 QUEUE tasks + 92 ROUTES (native-paper ->
+  DPM-common-block) + 30 CONFIRMATIONS (paper-specific DVP two-route, 0% residual); idempotent; XGEO CSVs shipped.
+- uqff_registry_status.py reports XGEO census; per-batch regen chain documented (PROGRAM_PLAN).
+- Gate 2095 assertions (incl. 2 XGEO chain guards), green.

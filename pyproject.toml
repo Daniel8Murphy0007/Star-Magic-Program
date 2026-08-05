@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.337.0"
-description = "UQFF Star-Magic-Program v0.337.0: complete-compile of PAPER_001-030 + b-variants over a 441-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. 342 dispatches, 0 duplicates, gate green. Drift-corrected (VDS->F_TRZ, rho_vac->total, beta_i->0.6029)."
+version = "0.338.0"
+description = "UQFF Star-Magic-Program v0.338.0: complete-compile of PAPER_001-040 + b-variants over a 446-function primitive-sourced equation library (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6, via _common_uqff_blocks). Paper-specific §B DVP prime ladder, gate-guarded. 342 dispatches, 0 duplicates, gate green. Drift-corrected (VDS->F_TRZ, rho_vac->total, beta_i->0.6029)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -80,6 +80,10 @@ py-modules = [
     "UNIFIED_REGISTRY_PROGRAM_PLAN.md",
     "UNIFIED_REGISTRY_SCHEMA.md",
     "UNIFIED_REGISTRY_STATUS_REPORT.md",
+    "UNIFIED_REGISTRY_XGEO_QUEUE.csv",
+    "UNIFIED_REGISTRY_XGEO_ROUTES.csv",
+    "UNIFIED_REGISTRY_XGEO_CONFIRMATIONS.csv",
+    "UNIFIED_REGISTRY_XGEO_EXTRACTED.csv",
     "UNIFIED_REGISTRY_FALSIFIABILITY.md",
     "UNIFIED_REGISTRY_RESULTS_TABLE.md",
 ]
