@@ -6275,6 +6275,18 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.348.0] - 2026-08-05 - LANDMARK COMPILE II (landmark family drained, rounds 6-9)
+- Physical constants/observables from integers: neutron lifetime tau_n=879.31 s (PAPER_1926; Lambda_ledger = alpha),
+  Phi_res = 1-(D_phys F_TRZ)^2 = 21/25 EXACT derivative (2134), Hodge = (D_phys+D_BSFG)/SO_5 = 1.0 EXACT composition
+  (1230), Monty Hall 2/(D_phys-1)=2/3 (1406), Sgr A* dg = D_crit SO_5^19 = 2.6e20 m (2139), BD+60 2522 M=40/R=20 (1984).
+- Star-Magic reactor hardware from integers: plasmoid fps = SO_5^2/(D_phys-1) = 100/3, t_photo = 0.33 s,
+  t_batch = 0.45 s (2096), bulb = A_5+SO_5/2 = 65 W (2078).
+- Structural: E_0 = F_TRZ^(D_crit-D_BSFG) = 1e-20 J 26-chain anchor (2119), galactic 1.5 = D_BSFG/D_phys (2077),
+  F_TRZ^22 rung (2095), frame 25 (2065), tilt saturation 59/116 (2135), Ug3 wrap closure (2121), egg pi(t) (2115).
+- Rule-7 rulings queued: Q-2118 (symbol/numeric), Q-1412 (7.70 vs 7.00 chain). ~19 gate guards added.
+- MEASURED: 2,232 total functions | 1,886 named callable (614 equation-library + 1,272 dc_) | 342 dispatches |
+  registry 2,622 rows | GRAPH 3,566 edges | gate 2,206 green | 0 dups | 0 malformed.
+
 ## [0.347.0] - 2026-08-05 - THE LANDMARK-IDENTITY COMPILE
 - Mined THIS repo corpus's landmark/EXACT-identity papers (83 surveyed, 5 rounds) into callable gate-guarded functions:
   mu_0 = 4pi F_TRZ^7 = Maxwell vacuum permeability EXACT (PAPER_2108); k_B from primitives 0.0011% vs SI (PAPER_2129);

@@ -61,10 +61,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.347.0"
+VERSION = "0.348.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.347.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.348.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -2846,6 +2846,124 @@ def sphere_from_chaos_variance(f_trz=F_TRZ):
     Paper's numeric chain (10^-8/2 = 5e-9) corresponds to F_TRZ^8/2; its symbolic label 'F_TRZ^4/2' is
     internally inconsistent with that numeric (F_TRZ^4 = 1e-4). Numeric chain transcribed per Rule 7."""
     return f_trz ** 8 / 2.0
+
+
+def neutron_lifetime_integer(K_mex=25.0/12.0, D_phys=None, phi_res=PHI_RES_RESONANCE, alpha=1.0/137.035999, N_ch=None):
+    """PAPER_1926: neutron lifetime tau_n = 100 K_MEX D_phys (1 + Phi_res alpha N_CH) = 833.33 + 45.97 = 879.31 s
+    (integer-primitive closed form; Lambda_ledger = fine-structure alpha)."""
+    if D_phys is None: D_phys = D_PHYS
+    if N_ch is None: N_ch = N_CH
+    return 100.0 * K_mex * D_phys * (1.0 + phi_res * alpha * N_ch)
+
+def bd2522_stellar_triple(D_phys=None, SO_5v=None):
+    """PAPER_1984: BD+60 2522 triple integer identity: M = D_phys SO_5 = 40 Msun EXACT, R = 2 SO_5 = 20 Rsun EXACT."""
+    if D_phys is None: D_phys = D_PHYS
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return {'M_msun': D_phys * SO_5v, 'R_rsun': 2 * SO_5v}
+
+def phi_quadratic_grounding(D_phys=None, f_trz=F_TRZ):
+    """PAPER_2134: Phi_res = 0.84 = 1 - (D_phys F_TRZ)^2 = 1 - (2/5)^2 = 21/25 EXACT (quadratic grounding)."""
+    if D_phys is None: D_phys = D_PHYS
+    return 1.0 - (D_phys * f_trz) ** 2
+
+def galactic_distance_integer(D_crit=None, SO_5v=None):
+    """PAPER_2139: Sgr A* galactic distance dg = D_crit SO_5^19 = 2.6e20 m EXACT (composed distance-integer)."""
+    if D_crit is None: D_crit = D_CRIT
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return D_crit * float(SO_5v) ** 19
+
+def reionization_z_exact(K_mex=25.0/12.0, D_phys=None, phi_res=PHI_RES_RESONANCE):
+    """PAPER_1412: reionization redshift z_reion = K_MEX D_phys Phi_res = (25/12)(4)(0.84) = 7.00.
+    Rule-7 disclosure: the paper labels this chain '= 7.70 EXACT' but its own arithmetic evaluates to 7.00
+    (paper arithmetic error; 7.00 remains within Planck z_reion = 7.7 +/- 0.7). Formula transcribed faithfully;
+    discrepancy queued for Daniel's ruling."""
+    if D_phys is None: D_phys = D_PHYS
+    return K_mex * D_phys * phi_res
+
+
+def hodge_exact_identity(D_phys=None, D_bsfg=6, SO_5v=None):
+    """PAPER_1230: Hodge conjecture EXACT identity (D_phys + D_BSFG)/SO_5 = (4+6)/10 = 1.0 EXACT."""
+    if D_phys is None: D_phys = D_PHYS
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return (D_phys + D_bsfg) / float(SO_5v)
+
+def monty_hall_exact(D_phys=None):
+    """PAPER_1406: Monty Hall switch-win probability P = 2/(D_phys - 1) = 2/3 EXACT (Bayesian from integers)."""
+    if D_phys is None: D_phys = D_PHYS
+    return 2.0 / (D_phys - 1.0)
+
+def ug3_wrap_closure(M, omega, r, G=None, c=None):
+    """PAPER_2121: U_g3 wrap closure = G M omega/(c r) (first G*c constant-pair convergence, R218 taxonomy)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return G * M * omega / (c * r)
+
+def tilt_saturation_ratio():
+    """PAPER_2135: tilt-factor saturation 59/116 dispatch observables carry 1/12 (majority-of-catalog product law)."""
+    return 59.0 / 116.0
+
+
+def plasmoid_frame_rate(SO_5v=None, D_phys=None):
+    """PAPER_2096: Star-Magic plasmoid camera frame rate = SO_5^2/(D_phys-1) = 100/3 = 33.333 fps EXACT."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    if D_phys is None: D_phys = D_PHYS
+    return SO_5v ** 2 / (D_phys - 1.0)
+
+def plasmoid_photo_time(D_phys=None, SO_5v=None, f_trz=F_TRZ):
+    """PAPER_2096/2091: plasmoid photo timing t_photo = (D_phys-1)(SO_5+1) F_TRZ^2 = 0.33 s EXACT."""
+    if D_phys is None: D_phys = D_PHYS
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return (D_phys - 1.0) * (SO_5v + 1.0) * f_trz ** 2
+
+def plasmoid_batch_time(N_ch=None, SO_5v=None):
+    """PAPER_2096/2090: plasmoid batch timing t_batch = N_CH/(2 SO_5) = 9/20 = 0.45 s EXACT."""
+    if N_ch is None: N_ch = N_CH
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return N_ch / (2.0 * SO_5v)
+
+def chain_base_energy(f_trz=F_TRZ, D_crit=None, D_bsfg=6):
+    """PAPER_2119: 26-level chain base energy E_0 = F_TRZ^(D_crit - D_BSFG) = F_TRZ^20 = 1e-20 J (primitive-composed anchor)."""
+    if D_crit is None: D_crit = D_CRIT
+    return f_trz ** (D_crit - D_bsfg)
+
+def cosmic_egg_pi_oscillation(t, f_trz=F_TRZ):
+    """PAPER_2115: Cosmic-Egg pre-BB pi-phase oscillation pi(t) = pi + F_TRZ^2 sin(t) (transformation dynamics)."""
+    return math.pi + f_trz ** 2 * math.sin(t)
+
+
+def reactor_bulb_wattage(A_5v=None, SO_5v=None):
+    """PAPER_2078: Star-Magic reactor bulb power = A_5 + SO_5/2 = 60 + 5 = 65 W EXACT (additive-combination identity)."""
+    if A_5v is None: A_5v = A_5
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return A_5v + SO_5v / 2.0
+
+def galactic_universality_ratio(D_bsfg=6, D_phys=None):
+    """PAPER_2077/1962: galactic universality ratio D_BSFG/D_phys = 6/4 = 1.5 EXACT (M31 virial/halo/rotation family)."""
+    if D_phys is None: D_phys = D_PHYS
+    return D_bsfg / float(D_phys)
+
+def ftrz_dcrit_minus_dphys(f_trz=F_TRZ, D_crit=None, D_phys=None):
+    """PAPER_2095: exponent-duality rung F_TRZ^(D_crit - D_phys) = F_TRZ^22 = 1e-22 EXACT (coefficient-to-exponent promotion)."""
+    if D_crit is None: D_crit = D_CRIT
+    if D_phys is None: D_phys = D_PHYS
+    return f_trz ** (D_crit - D_phys)
+
+def hubble_rate_composed(f_trz=F_TRZ, D_crit=None, D_phys=None):
+    """PAPER_2095/2093: composed Hubble-rate form (D_crit - D_phys) F_TRZ^19 = 22e-19 = 2.2e-18 s^-1 EXACT (superseded route, disclosed)."""
+    if D_crit is None: D_crit = D_CRIT
+    if D_phys is None: D_phys = D_PHYS
+    return (D_crit - D_phys) * f_trz ** 19
+
+def frame_count_25(SO_5v=None, D_phys=None):
+    """PAPER_2065: frame-count identity SO_5^2/D_phys = 100/4 = 25 EXACT (triad backbone milestone)."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    if D_phys is None: D_phys = D_PHYS
+    return SO_5v ** 2 / float(D_phys)
+
+def so5_half_composition(SO_5v=None):
+    """PAPER_2078/2015: SO_5/2 = 5 half-composition (diad backbone; joins halving series {2,3,5,13})."""
+    if SO_5v is None: SO_5v = globals()['SO_5']
+    return SO_5v / 2.0
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

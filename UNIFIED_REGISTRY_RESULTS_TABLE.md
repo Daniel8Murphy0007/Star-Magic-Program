@@ -156,3 +156,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | Omega_m | (D_phys-1)/SO_5 | 0.3 | PAPER_1956 | EXACT |
 | tilt | F_TRZ Phi_5/6 | 1/12 | PAPER_2133 | EXACT |
 | kernel K | 19/160 | 0.11875 | PAPER_2132 | EXACT |
+
+
+## v0.348.0 landmark additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| tau_n | 100 K_MEX D_phys (1+Phi alpha N_CH) | 879.31 s | PAPER_1926 (obs 879.4) | 0.010% |
+| Phi_res | 1-(D_phys F_TRZ)^2 | 21/25 = 0.84 | PAPER_2134 | EXACT |
+| Hodge | (D_phys+D_BSFG)/SO_5 | 1.0 | PAPER_1230 | EXACT |
+| plasmoid fps | SO_5^2/(D_phys-1) | 100/3 | PAPER_2096 | EXACT |
+| bulb power | A_5+SO_5/2 | 65 W | PAPER_2078 | EXACT |
+| E_0 chain | F_TRZ^(D_crit-D_BSFG) | 1e-20 J | PAPER_2119 | EXACT |
+| dg Sgr A* | D_crit SO_5^19 | 2.6e20 m | PAPER_2139 | EXACT |

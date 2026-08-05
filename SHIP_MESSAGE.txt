@@ -1,31 +1,28 @@
-v0.347.0 - THE LANDMARK-IDENTITY COMPILE (repo-corpus landmark/EXACT papers -> callable gate-guarded functions)
+v0.348.0 - LANDMARK COMPILE II: the landmark family drained (~70 of 83 landmark-titled papers, 9 rounds)
 
-The corpus's landmark-identity papers mined into the equation library - the framework's deepest
-primitive reductions, all EXACT (or honest-residual), all gate-guarded, all mapped in-step:
+Physical-constant + observable identities (all verified, gate-guarded, mapped in-step):
+  neutron_lifetime_integer   tau_n = 100 K_MEX D_phys (1 + Phi_res alpha N_CH) = 879.31 s (obs 879.4)  PAPER_1926
+  phi_quadratic_grounding    Phi_res = 1 - (D_phys F_TRZ)^2 = 21/25 = 0.84 EXACT (DERIVATIVE)          PAPER_2134
+  hodge_exact_identity       (D_phys + D_BSFG)/SO_5 = 1.0 EXACT (Millennium closure as composition)    PAPER_1230
+  monty_hall_exact           2/(D_phys-1) = 2/3 EXACT                                                  PAPER_1406
+  galactic_distance_integer  dg = D_crit SO_5^19 = 2.6e20 m EXACT (Sgr A*)                             PAPER_2139
+  bd2522_stellar_triple      M = D_phys SO_5 = 40 Msun, R = 2 SO_5 = 20 Rsun EXACT                     PAPER_1984
+  reionization_z_exact       chain = 7.00 (paper claims 7.70 - Q-1412 ruling queued)                   PAPER_1412
 
-SI constants from primitives:
-  mu0_vacuum_permeability   = 4 pi F_TRZ^7 = 1.256637e-6  MAXWELL EXACT (machine precision)  PAPER_2108
-  boltzmann_k_composition   = (SSq+Phi_5/6-F_TRZ SSq+F_TRZ^2 D_phys-F_TRZ^2 SSq)e-23 = 0.0011% vs SI  PAPER_2129
-  planck_length_ftrz        = F_TRZ^35 = 1e-35 m  PAPER_2104
+Star-Magic reactor hardware from pure integers:
+  plasmoid_frame_rate = SO_5^2/(D_phys-1) = 100/3 = 33.333 fps EXACT                                   PAPER_2096
+  plasmoid_photo_time = (D_phys-1)(SO_5+1)F_TRZ^2 = 0.33 s | plasmoid_batch_time = N_CH/(2 SO_5) = 0.45 s
+  reactor_bulb_wattage = A_5 + SO_5/2 = 65 W EXACT                                                      PAPER_2078
 
-EXACT integer/rational identities (gate-guarded):
-  b_critical_schwinger      = D_phys(SO_5+1)SO_5^12 = 4.4e13 T          PAPER_2126
-  bh_seed_mass_integer      = A_5 D_BSFG^2 D_crit = 56160               PAPER_1650
-  omega_matter_exact        = (D_phys-1)/SO_5 = 0.3                     PAPER_1956
-  full_circle_degrees       = D_BSFG A_5 = 360                          PAPER_2116
-  successor_ratio_identity  = (1+F_TRZ) = 11/10                         PAPER_2128
-  tilt_factor_1_12          = F_TRZ Phi_5/6 = 1/12                      PAPER_2133
-  kappa_derivative          = (SO_5/2) F_TRZ^4 = 5e-4                   PAPER_2112
-  vacuum_coupling_kernel    = 19/160                                    PAPER_2132
-  alpha_s_kernel            = F_TRZ K_MEX SSq = 0.11875 (0.014%)        PAPER_2131
-  a5_kmex_125 = 125 | ftrz_so5_derivative = 1/SO_5 | half_identity = 0.5 | starburst 0.15 | 2/3 supercomposite
-  smbh_flare_frequency = 1/1800 | frame_cadence_62 = 2 D_crit+SO_5 | a5_dphys_ratio = 15 | halving {2,3,5,13}
-  ftrz_primitive_exponent quintuplet {D_phys,D_BSFG,N_CH,SO_5,D_crit} | F_TRZ ladder ^12/^20/^27/^35/^40/^50
-  kk_eigenvalue_spectrum k(k+25) | bao_scale 0.03304 | cosmic_egg_triad | so5_power15 = 1e15
+Structural identities:
+  chain_base_energy E_0 = F_TRZ^(D_crit-D_BSFG) = 1e-20 J (26-chain anchor primitive-composed)          PAPER_2119
+  galactic_universality_ratio = D_BSFG/D_phys = 1.5 | ftrz_dcrit_minus_dphys = F_TRZ^22 = 1e-22
+  hubble_rate_composed = 2.2e-18 (superseded route disclosed) | frame_count_25 | so5_half_composition
+  tilt_saturation_ratio = 59/116 | ug3_wrap_closure = G M omega/(c r) | cosmic_egg_pi_oscillation
 
-Rule-7 disclosure: PAPER_2118 symbolic 'F_TRZ^4/2' inconsistent with its own numeric chain (1e-8/2=5e-9);
-numeric chain transcribed as sphere_from_chaos_variance = F_TRZ^8/2, mismatch flagged for Daniel's ruling.
+Rule-7 rulings queued (RULINGS_QUEUE.md): Q-2118 (PAPER_2118 symbol/numeric mismatch),
+Q-1412 (PAPER_1412 claims 7.70 but chain = 7.00).
 
-MEASURED: 2212 total Python functions | 1866 named callable (incl. 1,272 dc_) | 342 dispatches |
-registry 2602 rows | GRAPH 3506 edges | 759 papers mapped | gate 2189 green | 0 dup defs | 0 malformed CSVs.
-All mapped in-step (registry+GRAPH+citations per batch). Rule E / Rule 4 / Rule 7 held.
+MEASURED: 2232 total Python functions | 1886 named callable (incl. 1,272 dc_) | 342 dispatches |
+registry 2622 rows | GRAPH 3566 edges | 761 papers mapped | gate 2206 green | 0 dup defs | 0 malformed.
+All mapped in-step. Rule E / Rule 4 / Rule 7 held.

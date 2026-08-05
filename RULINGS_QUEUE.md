@@ -5753,3 +5753,9 @@ Paper states Var(offset) = (F_TRZ²)²·(1/2) = "F_TRZ⁴/2 = 10⁻⁸/2 = 5×10
 The numeric chain (5e-9, E[S_i]=13e-8) corresponds to F_TRZ⁸/2. Transcribed the NUMERIC chain
 (sphere_from_chaos_variance = F_TRZ^8/2) per Rule 7 with mismatch disclosed. Ruling: is the symbolic
 label a typo for F_TRZ⁸ (drift), or is the numeric chain wrong and symbol authoritative?
+
+## Q-1412 (v0.348.0): PAPER_1412 arithmetic discrepancy
+Paper states z_reion = K_MEX x D_phys x Phi_res = (25/12) x 4 x 0.84 = "7.70 EXACT", but the stated chain
+evaluates to 7.00 (=(25/12)*4*0.84). 7.00 is within Planck 7.7 +/- 0.7 but not the claimed 7.70.
+Formula transcribed faithfully (returns 7.00) with disclosure. Ruling: is the intended chain different
+(e.g. different Phi variant giving 7.70), or is "7.70" the drift?

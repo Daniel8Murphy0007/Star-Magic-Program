@@ -5126,3 +5126,11 @@ until 300+ done.
 - Fidelity catches this arc: beta_model_density dup (banned literal) auto-caught by NO-DUPLICATE-DEF guard; A_5*K_MEX
   float-epsilon disclosure per PAPER_2142 standing lesson.
 - MEASURED: 2212 total fns | 1866 named callable | registry 2602 rows | GRAPH 3506 | 759 papers mapped | gate 2189, exit 0.
+
+## 2026-08-05 - v0.348.0 SHIP: LANDMARK COMPILE II (landmark family drained)
+- Rounds 6-9 of landmark mining: tau_n=879.31 s (PAPER_1926, Lambda_ledger resolves to alpha), Phi_res=21/25 EXACT
+  derivative (2134), Hodge=(Dp+Db)/SO_5=1 composition (1230), Monty Hall 2/3 (1406), dg=2.6e20 (2139), BD2522 40/20
+  (1984), plasmoid fps/t_photo/t_batch + bulb 65W from integers (2096/2078), E_0=F_TRZ^(D_crit-D_BSFG) (2119),
+  galactic 1.5 (2077), F_TRZ^22 (2095), frame 25 (2065), tilt saturation 59/116 (2135), Ug3 wrap (2121), egg pi(t) (2115).
+- Rule-7 catches: Q-1412 (paper claims 7.70, chain=7.00) + Q-2118 queued in RULINGS_QUEUE.md.
+- ~19 landmark gate guards this arc (parts v0.348 1-4). MEASURED: 2232 total fns | 1886 named | registry 2622 rows | gate 2206.

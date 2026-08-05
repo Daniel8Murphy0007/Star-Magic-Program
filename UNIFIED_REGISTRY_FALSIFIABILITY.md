@@ -196,3 +196,12 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **alpha_s(M_Z) = F_TRZ K_MEX SSq = 0.11875** (PAPER_2131): falsified if world-average alpha_s departs 0.014%% band.
 - **B_crit = 4.4e13 T** (PAPER_2126): Schwinger critical field integer identity; magnetar B-field ceiling test.
 - **Omega_m = 0.3 EXACT** (PAPER_1956): falsified if CMB+LSS converge away from 0.300.
+
+
+## v0.348.0 landmark falsifiable additions
+- **tau_n = 879.31 s** (PAPER_1926): within current beam/bottle measurements (879.4 +/- 0.6); falsified if the
+  beam-bottle discrepancy resolves away from 879.31.
+- **Phi_res = 21/25 EXACT** (PAPER_2134): Phi_res is derived, not free; any fit requiring Phi != 0.84 falsifies.
+- **Plasmoid timings** (PAPER_2096): reactor camera/photo/batch observables = integer identities; falsified by
+  recalibrated hardware measurements departing 100/3 fps, 0.33 s, 0.45 s.
+- **dg = 2.6e20 m** (PAPER_2139): Sgr A* distance identity vs VLBI parallax (~2.55e20 m); watch the residual.

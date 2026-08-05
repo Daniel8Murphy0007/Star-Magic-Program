@@ -77,3 +77,14 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 [2026-08-05] GATE_PASS v0.347.0 landmark part-4 — 2184 assertions: OK (k_B 0.0011% SI, K=19/160 EXACT, alpha_s kernel 0.11875, cadence 62 EXACT, Cosmic Egg triad)
 
 [2026-08-05] GATE_PASS v0.347.0 landmark part-5 — 2189 assertions: OK (Planck F_TRZ^35, exponent quintuplet, 3F_TRZ=0.3, F_env cascade, sphere variance 5e-9 w/ Rule-7 symbol-mismatch disclosure)
+
+[2026-08-05] GATE_PASS v0.348.0 landmark round 6 — 2194 assertions: OK (tau_n=879.31 s, Phi=21/25 EXACT, dg=2.6e20 EXACT, BD2522 40/20 EXACT; Q-1412 arithmetic discrepancy queued)
+
+[2026-08-05] GATE_PASS v0.348.0 landmark round 7 — 2197 assertions: OK (Hodge (Dp+Db)/SO_5=1 EXACT, Monty Hall 2/3 EXACT, Ug3 wrap closure, tilt saturation 59/116)
+
+[2026-08-05] GATE_PASS v0.348.0 landmark round 8 — 2201 assertions: OK (plasmoid fps=100/3 + t_photo=0.33 + t_batch=0.45 EXACT from integers; E_0=F_TRZ^(D_crit-D_BSFG) primitive-composed; Cosmic Egg pi(t))
+
+[2026-08-05] GATE_PASS v0.348.0 landmark round 9 REMAINDER — 2206 assertions: OK (bulb 65W=A_5+SO_5/2 EXACT hardware, galactic 1.5, F_TRZ^22, frame 25, H-rate 2.2e-18)
+
+## 2026-08-05 — v0.348.0 SHIP PREP (LANDMARK COMPILE II)
+[2026-08-05] SHIP_PREP v0.348.0 — all 27 registry/ship files updated; gate 2206 green

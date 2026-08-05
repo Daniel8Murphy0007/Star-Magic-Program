@@ -52,3 +52,4 @@ holmlid_ker_630eV,rule7_disclosed,KER chain xi-normalization not restated in pap
 s26_third_order,rule7_disclosed,Ramanujan-series computation not re-derived; returns stated 1.4531e26 (PAPER_1080)
 v0346_mine,no_open_ruling,solar/QGP/quantum/wormhole batch: all closed forms verified against paper values; no OPEN rulings this round
 sphere_from_chaos_variance,open_ruling,"PAPER_2118 symbol/numeric mismatch: label F_TRZ^4/2 but chain 1e-8/2=5e-9 (=F_TRZ^8/2); numeric transcribed, awaiting Daniel"
+reionization_z_exact,open_ruling,PAPER_1412 claims 7.70 EXACT but stated chain (25/12)*4*0.84 = 7.00; Q-1412 queued

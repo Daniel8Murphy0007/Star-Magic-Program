@@ -121,3 +121,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS UPDATE v0.347.0
 - LANDMARK-IDENTITY COMPILE: ~40 landmark fns, ~30 gate guards. 2,212 total fns | 1,866 named | registry 2,602 rows | gate 2,189 green.
+
+
+## LIVE STATUS UPDATE v0.348.0
+- LANDMARK COMPILE II complete: landmark family drained (~70/83 papers, 9 rounds). 2,232 fns | 1,886 named | registry 2,622 rows | gate 2,206 green. 2 rulings queued (Q-2118, Q-1412).

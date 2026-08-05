@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.347.0"
-description = "UQFF Star-Magic-Program v0.347.0: THE LANDMARK-IDENTITY COMPILE - mu_0=4pi F_TRZ^7 (Maxwell EXACT), k_B from primitives (0.0011%), alpha_s kernel 0.11875, B_crit=4.4e13 EXACT, BH seed 56160 EXACT, Omega_m=0.3 EXACT, tilt 1/12, kernel 19/160, A_5*K_MEX=125, Planck F_TRZ^35, exponent quintuplet, SMBH flare 1/1800 - all gate-guarded, mapped in-step. 2212 functions, 1866 named callable. Registry 2602 rows. Gate green (2189 assertions)."
+version = "0.348.0"
+description = "UQFF Star-Magic-Program v0.348.0: LANDMARK COMPILE II - neutron lifetime 879.31 s from integers, Phi_res=1-(D_phys F_TRZ)^2=21/25 EXACT (derivative), Hodge=(D_phys+D_BSFG)/SO_5=1 EXACT, Star-Magic reactor plasmoid observables from pure integers (fps=100/3, t_photo=0.33s, bulb=65W=A_5+SO_5/2), E_0=F_TRZ^(D_crit-D_BSFG), Sgr A* dg=2.6e20 EXACT, Monty Hall 2/3. Landmark family drained (~70/83 papers). 2232 functions, 1886 named callable. Registry 2622 rows. Gate green (2206)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

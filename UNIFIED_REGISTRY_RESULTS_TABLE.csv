@@ -94,3 +94,17 @@ k_B_boltzmann,(SSq+Phi_5/6-F_TRZ*SSq+F_TRZ^2*D_phys-F_TRZ^2*SSq)*1e-23,,1.380633
 vacuum_kernel_K,19/160,,0.11875,PAPER_2132,EXACT,0.0
 alpha_s_kernel,F_TRZ*K_MEX*SSq,(1/10)(25/12)(0.57),0.11875,PAPER_2131,alpha_s_MZ,0.014
 frame_cadence,2*D_crit+SO_5,52+10,62,PAPER_2137,EXACT,0.0
+neutron_lifetime,100*K_MEX*D_phys*(1+Phi*alpha*N_CH),833.33+45.97,879.31,PAPER_1926,obs_879.4s,0.010
+phi_res_grounding,1-(D_phys*F_TRZ)^2,21/25,0.84,PAPER_2134,EXACT,0.0
+galactic_distance,D_crit*SO_5^19,26e19,2.6e20,PAPER_2139,EXACT,0.0
+bd2522_mass,D_phys*SO_5,4*10,40,PAPER_1984,EXACT,0.0
+hodge_identity_exact,(D_phys+D_BSFG)/SO_5,10/10,1.0,PAPER_1230,EXACT,0.0
+monty_hall,2/(D_phys-1),2/3,0.6667,PAPER_1406,EXACT,0.0
+plasmoid_fps,SO_5^2/(D_phys-1),100/3,33.333,PAPER_2096,EXACT,0.0
+plasmoid_t_photo,(D_phys-1)(SO_5+1)F_TRZ^2,3*11*0.01,0.33,PAPER_2096,EXACT,0.0
+plasmoid_t_batch,N_CH/(2*SO_5),9/20,0.45,PAPER_2096,EXACT,0.0
+chain_E_0,F_TRZ^(D_crit-D_BSFG),0.1^20,1e-20,PAPER_2119,EXACT,0.0
+reactor_bulb_W,A_5+SO_5/2,60+5,65,PAPER_2078,EXACT_hardware,0.0
+galactic_ratio,D_BSFG/D_phys,6/4,1.5,PAPER_2077,EXACT,0.0
+ftrz_22_rung,F_TRZ^(D_crit-D_phys),0.1^22,1e-22,PAPER_2095,EXACT,0.0
+frame_count,SO_5^2/D_phys,100/4,25,PAPER_2065,EXACT,0.0

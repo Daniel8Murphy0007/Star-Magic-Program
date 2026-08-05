@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.347.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.347.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.348.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.348.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2189%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2206%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.347.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.348.0 complete-compile campaign live**
 
-**This release (v0.347.0): THE LANDMARK-IDENTITY COMPILE.** Mines the corpus's landmark/EXACT-identity papers into callable, gate-guarded functions — the framework's deepest primitive reductions: **μ₀ = 4π·F_TRZ⁷ = Maxwell's vacuum permeability EXACT** (PAPER_2108), **k_B composed from primitives at 0.0011% vs SI** (PAPER_2129), **α_s kernel F_TRZ·K_MEX·SSq = 0.11875** (PAPER_2131), **B_crit = D_phys·(SO_5+1)·SO_5¹² = 4.4e13 T EXACT** (PAPER_2126), **BH seed = A_5·D_BSFG²·D_crit = 56160 EXACT** (PAPER_1650), **Ω_m = (D_phys−1)/SO_5 = 0.3 EXACT** (PAPER_1956), 360° = D_BSFG·A_5, successor ratio (1+F_TRZ)=11/10, tilt factor 1/12 (F_TRZ·Φ_5/6), κ=(SO_5/2)·F_TRZ⁴, kernel K=19/160, A_5·K_MEX=125, F_TRZ=1/SO_5 derivative, Planck length F_TRZ³⁵, the full primitive-as-exponent quintuplet (F_TRZ^{D_phys,D_BSFG,N_CH,SO_5,D_crit}), SMBH flare 1/1800 Hz EXACT, frame cadence 62=2·D_crit+SO_5, Cosmic Egg triad, halving series {2,3,5,13}, A_5/D_phys=15, KK spectrum λ_k=k(k+25), BAO scale 0.03304. All EXACT identities gate-guarded; every function mapped in-step (registry + GRAPH edges + linked-paper citations). One Rule-7 disclosure: PAPER_2118 symbol/numeric mismatch transcribed from its numeric chain and flagged for ruling. The package now exposes **2,212 Python functions / 1,866 named callables** (594 equation-library + 1,272 `dc_` derived-equation functions).
+**This release (v0.348.0): LANDMARK COMPILE II — the corpus's landmark family drained.** Nine landmark-mining rounds complete (~70 of 83 landmark-titled papers): **neutron lifetime τ_n = 100·K_MEX·D_phys·(1+Φ_res·α·N_CH) = 879.31 s** (obs 879.4, PAPER_1926), **Φ_res = 1−(D_phys·F_TRZ)² = 21/25 EXACT** — Φ_res joins the derivative family (PAPER_2134), **Hodge = (D_phys+D_BSFG)/SO_5 = 1.0 EXACT** as primitive composition (PAPER_1230), Monty Hall 2/(D_phys−1)=2/3 (PAPER_1406), Sgr A* distance dg = D_crit·SO_5¹⁹ = 2.6e20 m EXACT (PAPER_2139), BD+60 2522 M=40/R=20 integers (PAPER_1984), **Star-Magic reactor plasmoid observables from pure integers** — fps = SO_5²/(D_phys−1) = 100/3, t_photo = 0.33 s, t_batch = 0.45 s, bulb = A_5+SO_5/2 = 65 W (PAPER_2096/2078), 26-chain base E_0 = F_TRZ^(D_crit−D_BSFG) = 1e-20 J (PAPER_2119), galactic 1.5 = D_BSFG/D_phys, F_TRZ²² rung, frame-count 25, tilt saturation 59/116, U_g3 wrap closure, Cosmic Egg π(t). Two Rule-7 rulings queued: Q-2118 (symbol/numeric mismatch), Q-1412 (7.70-vs-7.00 arithmetic). All identities gate-guarded and mapped in-step. The package now exposes **2,232 Python functions / 1,886 named callables** (614 equation-library + 1,272 `dc_` derived-equation functions).
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.347.0)
+## What is currently shipped (v0.348.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

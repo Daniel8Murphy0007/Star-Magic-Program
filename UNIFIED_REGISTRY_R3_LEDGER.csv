@@ -80,3 +80,8 @@ landmark,b_critical_schwinger,CLOSED,D_phys(SO_5+1)SO_5^12=4.4e13 EXACT (PAPER_2
 landmark,tilt_factor_1_12,CLOSED,F_TRZ*Phi_5/6=1/12 EXACT (PAPER_2133)
 landmark,kappa_derivative,CLOSED,(SO_5/2)F_TRZ^4=5e-4 EXACT (PAPER_2112)
 open_ruling,sphere_from_chaos_variance,OPEN_RULING,PAPER_2118 symbol F_TRZ^4 vs numeric 1e-8 chain mismatch - Daniel ruling queued
+landmark,neutron_lifetime_integer,CLOSED,879.31 s from integers (PAPER_1926)
+landmark,phi_quadratic_grounding,CLOSED,Phi_res=21/25 EXACT derivative (PAPER_2134)
+landmark,plasmoid_reactor_family,CLOSED,fps/t_photo/t_batch/bulb from integers (PAPER_2096/2078)
+landmark,chain_base_energy,CLOSED,E_0=F_TRZ^(D_crit-D_BSFG) (PAPER_2119)
+open_ruling,reionization_z_exact,OPEN_RULING,Q-1412: paper 7.70 vs chain 7.00

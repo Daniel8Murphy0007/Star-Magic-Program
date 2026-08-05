@@ -3505,3 +3505,63 @@ primitive,SO_5,observable,environmental_force_cascade,environmental_force_cascad
 observable,environmental_force_cascade,paper,PAPER_2111,derived in PAPER_2111
 primitive,F_TRZ,observable,sphere_from_chaos_half,sphere_from_chaos_half composes from F_TRZ
 observable,sphere_from_chaos_half,paper,PAPER_2118,derived in PAPER_2118
+primitive,D_PHYS,observable,neutron_lifetime_integer,neutron_lifetime_integer composes from D_PHYS
+primitive,N_CH,observable,neutron_lifetime_integer,neutron_lifetime_integer composes from N_CH
+primitive,PHI_RES_RESONANCE,observable,neutron_lifetime_integer,neutron_lifetime_integer composes from PHI_RES_RESONANCE
+primitive,K_MEX,observable,neutron_lifetime_integer,neutron_lifetime_integer composes from K_MEX
+observable,neutron_lifetime_integer,paper,PAPER_1926,derived in PAPER_1926
+primitive,D_PHYS,observable,bd2522_stellar_triple,bd2522_stellar_triple composes from D_PHYS
+primitive,SO_5,observable,bd2522_stellar_triple,bd2522_stellar_triple composes from SO_5
+observable,bd2522_stellar_triple,paper,PAPER_1984,derived in PAPER_1984
+primitive,F_TRZ,observable,phi_quadratic_grounding,phi_quadratic_grounding composes from F_TRZ
+primitive,D_PHYS,observable,phi_quadratic_grounding,phi_quadratic_grounding composes from D_PHYS
+observable,phi_quadratic_grounding,paper,PAPER_2134,derived in PAPER_2134
+primitive,SO_5,observable,galactic_distance_integer,galactic_distance_integer composes from SO_5
+primitive,D_CRIT,observable,galactic_distance_integer,galactic_distance_integer composes from D_CRIT
+observable,galactic_distance_integer,paper,PAPER_2139,derived in PAPER_2139
+primitive,D_PHYS,observable,reionization_z_exact,reionization_z_exact composes from D_PHYS
+primitive,PHI_RES_RESONANCE,observable,reionization_z_exact,reionization_z_exact composes from PHI_RES_RESONANCE
+primitive,K_MEX,observable,reionization_z_exact,reionization_z_exact composes from K_MEX
+observable,reionization_z_exact,paper,PAPER_1412,derived in PAPER_1412
+primitive,D_PHYS,observable,hodge_exact_identity,hodge_exact_identity composes from D_PHYS
+primitive,SO_5,observable,hodge_exact_identity,hodge_exact_identity composes from SO_5
+observable,hodge_exact_identity,paper,PAPER_1230,derived in PAPER_1230
+primitive,D_PHYS,observable,monty_hall_exact,monty_hall_exact composes from D_PHYS
+observable,monty_hall_exact,paper,PAPER_1406,derived in PAPER_1406
+primitive,G_UQFF,observable,ug3_wrap_closure,ug3_wrap_closure composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,ug3_wrap_closure,ug3_wrap_closure composes from C_UQFF_DERIVED
+observable,ug3_wrap_closure,paper,PAPER_2121,derived in PAPER_2121
+observable,tilt_saturation_ratio,paper,PAPER_2135,derived in PAPER_2135
+primitive,D_PHYS,observable,plasmoid_frame_rate,plasmoid_frame_rate composes from D_PHYS
+primitive,SO_5,observable,plasmoid_frame_rate,plasmoid_frame_rate composes from SO_5
+observable,plasmoid_frame_rate,paper,PAPER_2096,derived in PAPER_2096
+primitive,F_TRZ,observable,plasmoid_photo_time,plasmoid_photo_time composes from F_TRZ
+primitive,D_PHYS,observable,plasmoid_photo_time,plasmoid_photo_time composes from D_PHYS
+primitive,SO_5,observable,plasmoid_photo_time,plasmoid_photo_time composes from SO_5
+observable,plasmoid_photo_time,paper,PAPER_2096,derived in PAPER_2096
+primitive,SO_5,observable,plasmoid_batch_time,plasmoid_batch_time composes from SO_5
+primitive,N_CH,observable,plasmoid_batch_time,plasmoid_batch_time composes from N_CH
+observable,plasmoid_batch_time,paper,PAPER_2096,derived in PAPER_2096
+primitive,F_TRZ,observable,chain_base_energy,chain_base_energy composes from F_TRZ
+primitive,D_CRIT,observable,chain_base_energy,chain_base_energy composes from D_CRIT
+observable,chain_base_energy,paper,PAPER_2119,derived in PAPER_2119
+primitive,F_TRZ,observable,cosmic_egg_pi_oscillation,cosmic_egg_pi_oscillation composes from F_TRZ
+observable,cosmic_egg_pi_oscillation,paper,PAPER_2115,derived in PAPER_2115
+primitive,SO_5,observable,reactor_bulb_wattage,reactor_bulb_wattage composes from SO_5
+primitive,A_5,observable,reactor_bulb_wattage,reactor_bulb_wattage composes from A_5
+observable,reactor_bulb_wattage,paper,PAPER_2078,derived in PAPER_2078
+primitive,D_PHYS,observable,galactic_universality_ratio,galactic_universality_ratio composes from D_PHYS
+observable,galactic_universality_ratio,paper,PAPER_2077,derived in PAPER_2077
+primitive,F_TRZ,observable,ftrz_dcrit_minus_dphys,ftrz_dcrit_minus_dphys composes from F_TRZ
+primitive,D_PHYS,observable,ftrz_dcrit_minus_dphys,ftrz_dcrit_minus_dphys composes from D_PHYS
+primitive,D_CRIT,observable,ftrz_dcrit_minus_dphys,ftrz_dcrit_minus_dphys composes from D_CRIT
+observable,ftrz_dcrit_minus_dphys,paper,PAPER_2095,derived in PAPER_2095
+primitive,F_TRZ,observable,hubble_rate_composed,hubble_rate_composed composes from F_TRZ
+primitive,D_PHYS,observable,hubble_rate_composed,hubble_rate_composed composes from D_PHYS
+primitive,D_CRIT,observable,hubble_rate_composed,hubble_rate_composed composes from D_CRIT
+observable,hubble_rate_composed,paper,PAPER_2095,derived in PAPER_2095
+primitive,D_PHYS,observable,frame_count_25,frame_count_25 composes from D_PHYS
+primitive,SO_5,observable,frame_count_25,frame_count_25 composes from SO_5
+observable,frame_count_25,paper,PAPER_2065,derived in PAPER_2065
+primitive,SO_5,observable,so5_half_composition,so5_half_composition composes from SO_5
+observable,so5_half_composition,paper,PAPER_2078,derived in PAPER_2078

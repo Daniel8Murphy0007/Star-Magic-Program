@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.347.0", "uqff_calculator.VERSION = 0.347.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.348.0", "uqff_calculator.VERSION = 0.348.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,27 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.348 part 4 REMAINDER) ===
+assert_that(C.reactor_bulb_wattage() == 65.0, "PAPER_2078: reactor bulb = A_5 + SO_5/2 = 65 W EXACT")
+assert_that(C.galactic_universality_ratio() == 1.5, "PAPER_2077/1962: D_BSFG/D_phys = 1.5 EXACT")
+assert_that(abs(C.ftrz_dcrit_minus_dphys() - 1e-22) < 1e-32, "PAPER_2095: F_TRZ^(D_crit-D_phys) = 1e-22 EXACT")
+assert_that(abs(C.hubble_rate_composed() - 2.2e-18) < 1e-28, "PAPER_2095/2093: (D_crit-D_phys)F_TRZ^19 = 2.2e-18 (superseded route disclosed)")
+assert_that(C.frame_count_25() == 25.0, "PAPER_2065: SO_5^2/D_phys = 25 EXACT")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.348 part 3) ===
+assert_that(abs(C.plasmoid_frame_rate() - 100.0/3.0) < 1e-9, "PAPER_2096: plasmoid fps = SO_5^2/(D_phys-1) = 100/3 EXACT")
+assert_that(abs(C.plasmoid_photo_time() - 0.33) < 1e-9, "PAPER_2096: t_photo = (D_phys-1)(SO_5+1)F_TRZ^2 = 0.33 s EXACT")
+assert_that(abs(C.plasmoid_batch_time() - 0.45) < 1e-12, "PAPER_2096: t_batch = N_CH/(2 SO_5) = 0.45 s EXACT")
+assert_that(abs(C.chain_base_energy() - 1e-20) < 1e-30, "PAPER_2119: E_0 = F_TRZ^(D_crit-D_BSFG) = 1e-20 J primitive-composed")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.348 part 2) ===
+assert_that(C.hodge_exact_identity() == 1.0, "PAPER_1230: Hodge (D_phys+D_BSFG)/SO_5 = 1.0 EXACT")
+assert_that(abs(C.monty_hall_exact() - 2.0/3.0) < 1e-12, "PAPER_1406: Monty Hall 2/(D_phys-1) = 2/3 EXACT")
+assert_that(abs(C.tilt_saturation_ratio() - 59.0/116.0) < 1e-12, "PAPER_2135: tilt saturation 59/116")
+# === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.348) ===
+assert_that(abs(C.neutron_lifetime_integer() - 879.31) < 0.05, "PAPER_1926: tau_n = 100 K_MEX D_phys (1+Phi alpha N_CH) = 879.31 s")
+assert_that(C.bd2522_stellar_triple() == {'M_msun': 40, 'R_rsun': 20}, "PAPER_1984: BD+60 2522 M=40, R=20 integer EXACT")
+assert_that(abs(C.phi_quadratic_grounding() - 0.84) < 1e-12, "PAPER_2134: Phi_res = 1-(D_phys F_TRZ)^2 = 21/25 EXACT")
+assert_that(abs(C.galactic_distance_integer() - 2.6e20) < 1e10, "PAPER_2139: dg = D_crit SO_5^19 = 2.6e20 m EXACT")
+assert_that(abs(C.reionization_z_exact() - 7.0) < 1e-9, "PAPER_1412: z_reion chain evaluates 7.00 (paper claims 7.70 - Rule-7 disclosed, Q-1412)")
 # === LANDMARK-IDENTITY FAMILY GUARD (repo mine v0.347 part 5) ===
 assert_that(abs(C.planck_length_ftrz() - 1e-35) < 1e-45, "PAPER_2104: Planck length F_TRZ^35 = 1e-35 m")
 assert_that(abs(C.ftrz_primitive_exponent('N_CH') - 1e-9) < 1e-19, "PAPER_2117: F_TRZ^N_CH = 1e-9 EXACT (quintuplet complete)")
