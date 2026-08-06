@@ -220,3 +220,10 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **n_generations = D_phys - 1 = 3** (PAPER_1220): a 4th fermion generation at any energy falsifies the identity.
 - **exp(-SSq n/26) ladder** (CP4): 26-state suppression; NOMAD n=13 sqrt-identity + ALICE n=18 multiplicity test it at colliders.
 - **Saturn ring lifetime 110.9 Myr** (QCalc ODE): Cassini-era erosion-rate extrapolations test the closed lifetime.
+
+
+## v0.351.0 falsifiable additions (scrape-complete)
+- **Chandrasekhar = F_TRZ D_phys^2 (1-F_TRZ) = 1.44 Msun EXACT**: any WD-mass revision off 1.44 falsifies the triple-primitive identity.
+- **ISCO = D_BSFG = 6 r_g**: EHT/X-ray ISCO measurements departing 6 r_g (Schwarzschild) falsify.
+- **top Yukawa y_t = 1 - F_TRZ^2 = 0.99**: PDG 0.9936; tighter m_t/v measurements test the 0.36% band.
+- **alpha_s = F_TRZ K_Mex SSq - F_TRZ^3 Phi_res = 0.11791**: 0.008% vs world average; lattice tightening tests it.

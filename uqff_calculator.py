@@ -27,6 +27,8 @@ import uqff_ngc_catalog as _ngc
 from uqff_ngc_catalog import *  # 8 ngc_* Three-UQFF triadic galaxy catalogue
 import uqff_fubii_variants as _fbv
 from uqff_fubii_variants import *  # 17 fubii_* F_UBii buoyancy proof variants (canonical Tier-4 taxonomy)
+import uqff_session_closures as _scl
+from uqff_session_closures import *  # 73 sc_* session-script observable closures
 from uqff_derived_functions import *  # 1,272 dc_* derived-equation functions
 from uqff_registry_primitives import (
     # Locked primitives
@@ -71,10 +73,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.350.0"
+VERSION = "0.351.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.350.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.351.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -3049,6 +3051,8 @@ def formula_of(name):
         return _ngc.get_formula(name)
     if name.startswith("fubii_"):
         return _fbv.get_formula(name)
+    if name.startswith("sc_"):
+        return _scl.get_formula(name)
     if name.startswith("dc_"):
         rec = DERIVED_CONSTANTS.get(name[3:].lstrip("c_")) or DERIVED_CONSTANTS.get(name[3:])
         return (rec or {}).get("formula")
@@ -3335,6 +3339,110 @@ def triadic_master_fu(g_comp, g_res, g_buoy):
     """99system_master_equation: F_U = w_C g_comp + w_R g_res + w_B g_buoy (99-system compression, |R_c|<1%)."""
     w_C, w_R, w_B = triadic_weights(g_comp, g_res, g_buoy)
     return w_C * g_comp + w_R * g_res + w_B * g_buoy
+
+
+def level26_energy_density(level, rho_scm=RHO_SCM):
+    """QuantumLevel26Framework: per-level energy density E_i = rho_vac_SCm level^2 (level 1-26 quadratic ladder)."""
+    return rho_scm * level ** 2
+
+def level26_transition_energy(level_i, level_f, rho_scm=RHO_SCM):
+    """QuantumLevel26Framework: transition barrier dE = rho_SCm |level_f^2 - level_i^2| (quadratic-ladder gap)."""
+    return rho_scm * abs(level_f ** 2 - level_i ** 2)
+
+def level26_total_field_energy(rho_scm=RHO_SCM, n_levels=None):
+    """QuantumLevel26Framework: total field energy = rho_SCm sum_{i=1}^{26} i^2 = rho_SCm 6201 (26-level quadratic sum)."""
+    if n_levels is None: n_levels = D_CRIT
+    return rho_scm * sum(i ** 2 for i in range(1, n_levels + 1))
+
+def lorentz_factor(v, c=None):
+    """RelativisticUQFF: Lorentz factor gamma = 1/sqrt(1 - v^2/c^2)."""
+    if c is None: c = C_UQFF_DERIVED
+    return 1.0 / math.sqrt(1.0 - (v / c) ** 2)
+
+def doppler_factor(v, theta=0.0, c=None):
+    """RelativisticUQFF: Doppler factor D = 1/[gamma (1 - beta cos theta)] (0 = approaching)."""
+    if c is None: c = C_UQFF_DERIVED
+    beta = v / c
+    g = 1.0 / math.sqrt(1.0 - beta ** 2)
+    return 1.0 / (g * (1.0 - beta * math.cos(theta)))
+
+def relativistic_beaming(gamma, theta=0.0):
+    """RelativisticUQFF: jet beaming B = delta^3 with delta = 1/[gamma(1 - beta cos theta)] (AGN/knot boosting)."""
+    beta = math.sqrt(1.0 - 1.0 / gamma ** 2)
+    delta = 1.0 / (gamma * (1.0 - beta * math.cos(theta)))
+    return delta ** 3
+
+
+def osc_term_snap_polarity(omega, Omega_g, t, t_n=0.0, theta_band=0.0, A=1.0):
+    """GrokThreadUQFF: snap-polarity oscillation Osc = A cos(omega t) sin(Omega_g t) cos(pi t_n) sin(theta_band)
+    (a/b/e/q banded-shock feedback)."""
+    return A * math.cos(omega * t) * math.sin(Omega_g * t) * math.cos(math.pi * t_n) * math.sin(theta_band)
+
+def gravitational_plasticity(F_ubi_i, ug_sum, ug4i_um_ubi_geom, F_bui_i, abeq_sum, gamma_t, rho_ua_p=RHO_UA, rho_scm=RHO_SCM):
+    """GrokThreadUQFF: gravitational plasticity a_plast = (rho_UA' rho_SCm/F_UBi_i) Sum(UG_Ubi)
+    + (UG4i Um U_Bi geom/F_BUi_i)(1 + a+b+e+q)(1 - e^(-gamma t)) (buoyancy/resilience elastic duality)."""
+    duality = (rho_ua_p * rho_scm / F_ubi_i) if F_ubi_i != 0 else 0.0
+    return duality * ug_sum + (ug4i_um_ubi_geom / F_bui_i) * (1.0 + abeq_sum) * (1.0 - math.exp(-gamma_t)) if F_bui_i else 0.0
+
+def capacitor_rotated_width(x, p_Q=1.0):
+    """GrokThreadUQFF: quantum-distance capacitor rotated plate width r_w = cos(x) p_Q (thrust integral basis; x~pi/4)."""
+    return math.cos(x) * p_Q
+
+
+def crack_energy(rho, v_dpm, SSq=None):
+    """Gold_Standard: crack energy E_crack = rho v_DPM^2/SSQ (NO c^2 - replaces the legacy SM sub-equation;
+    v_DPM from the 26D grinding differential, all pre-BB)."""
+    if SSq is None: SSq = SSQ
+    return rho * v_dpm ** 2 / SSq
+
+def sigma_scm_frequency(omega, n=13, sigma_0=1e-28, omega_scm=7.85e12, gamma=None, SSq=None):
+    """Phase8/Kozima: frequency-dependent SCm cross-section sigma(omega,n) = sigma_0 exp(-(omega-omega_SCm)^2/(2 gamma^2))(1 + SSq n/26)."""
+    if gamma is None: gamma = 2.0 * math.pi * 50e9
+    if SSq is None: SSq = SSQ
+    gaussian = math.exp(-((omega - omega_scm) ** 2) / (2.0 * gamma ** 2))
+    return sigma_0 * gaussian * (1.0 + SSq * n / 26.0)
+
+def neutron_production_force(N_n, omega=7.85e12, n=13, phi_phonon=1e20, beta_ratio=None):
+    """Phase8/Kozima: buoyancy-coupled neutron production F = N_n sigma(omega,n) phi_phonon (beta_i - 1)
+    (coupling = beta reversal; negative = buoyancy-reversed)."""
+    if beta_ratio is None: beta_ratio = BETA_I
+    return N_n * sigma_scm_frequency(omega, n) * phi_phonon * (beta_ratio - 1.0)
+
+def rho_r26_component(v_ua=1e8, rho_scm=RHO_SCM):
+    """FirstPrinciplesCompressor/PAPER_1172: R26 ledger component rho_R26 = (13/2) v_UA^2 rho_SCm (= D_crit/2 factor)."""
+    return (13.0 / 2.0) * v_ua ** 2 * rho_scm
+
+def lambda_friedmann_ssq(H0_si=2.184e-18, c=None, SSq=None):
+    """FirstPrinciplesCompressor/PAPER_1156: Lambda = (18/5) SSq H0^2/c^2 (Friedmann closure; observational cross-check form)."""
+    if c is None: c = C_UQFF_DERIVED
+    if SSq is None: SSq = SSQ
+    return (18.0 / 5.0) * SSq * H0_si ** 2 / c ** 2
+
+def zeta5_series(N=100):
+    """FirstPrinciplesCompressor: zeta(5) approximation = sum 1/n^5 (Ramanujan-chain ingredient)."""
+    return sum(1.0 / n ** 5 for n in range(1, N + 1))
+
+
+def em_base_acceleration(v_orbit, B, q=1.602176634e-19, m_p=1.67262192e-27):
+    """Phase7: electromagnetic base acceleration a_EM = q v B/m_p (Lorentz force per proton mass)."""
+    return q * v_orbit * B / m_p
+
+def dust_ram_acceleration(rho_dust, v_orbit, rho_mass, scale_macro=1.0):
+    """Phase7: dust ram-pressure acceleration a_dust = (rho_dust v_orbit^2/rho_mass) scale_macro."""
+    return (rho_dust * v_orbit ** 2 / rho_mass) * scale_macro
+
+def bigbang_mass_evolution(M_total, t, t_hubble):
+    """Phase5: Big-Bang mass evolution M(t) = M_total (t/t_Hubble) (linear assembly)."""
+    return M_total * (t / t_hubble)
+
+def bigbang_qg_term(t, t_p=5.391e-44, l_p=1.616e-35, hbar=1.054571817e-34, c=None):
+    """Phase5: Big-Bang quantum-gravity term QG = (hbar c/l_p^2)(t/t_p) (Planck-scale seed force)."""
+    if c is None: c = C_UQFF_DERIVED
+    return (hbar * c / l_p ** 2) * (t / t_p)
+
+def dark_matter_fraction_term(g_base, omega_dm=0.268):
+    """Phase5: dark-matter gravity fraction DM_term = 0.268 g_base (Planck Omega_DM)."""
+    return omega_dm * g_base
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

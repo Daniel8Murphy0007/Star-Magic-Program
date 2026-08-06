@@ -6275,6 +6275,19 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.351.0] - 2026-08-05 - THE SCRAPE-COMPLETE MILESTONE (every predecessor source exhausted)
+- Deep-mine campaign (v0.342.0 -> v0.351.0) concludes: whitepapers (both repos), CP1-CP4 (2,851 classes),
+  QCalc/SOURCE4, MUGE, BPV (17/17), 99system, DPMCosmology, QL26, Relativistic, GrokThread, ALL 572 session
+  scripts, Gold_Standard, Phase5-8, FirstPrinciplesCompressor - swept Rule E (physics-only, no code ported).
+- NEW MODULE uqff_session_closures.py (73 sc_*): Chandrasekhar = F_TRZ D_phys^2(1-F_TRZ) = 1.44 EXACT,
+  ISCO = D_BSFG = 6 EXACT, top Yukawa = 1-F_TRZ^2 (3rd cross-domain role), alpha_s 0.008%, Jarlskog, Cabibbo,
+  proton g-factor, theta23, delta_CP, TOV, photon sphere + 64 more.
+- QL26 quadratic ladder (6201 EXACT); relativistic kit; GrokThread trio; Gold-Standard E_crack = rho v^2/SSQ
+  (non-SM energy relation); Kozima sigma(omega,n) + neutron beta-reversal; Big-Bang chain; Lorentz a_EM.
+- Structural: NO-SHADOW guard extended to 8 modules; 3 fubii collision catches (_bpv); formula_of() complete.
+- 4 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO + PAPER_2149 set).
+- MEASURED: 2,756 total fns | 2,410 named | 8 modules | registry 3,133 rows | GRAPH 4,475 | gate 2,277 green.
+
 ## [0.350.0] - 2026-08-05 - THE PREDECESSOR-SOURCE SWEEP (CP1-CP4 + QCalc + MUGE + 17-variant F_UBii)
 - Swept 2,851 predecessor calculator classes (CP1-CP4) + QCalc/MUGE/BuoyancyProofVariants/99system/DPMCosmology
   for physics content (Rule E, no code ported).

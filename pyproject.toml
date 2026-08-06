@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.350.0"
-description = "UQFF Star-Magic-Program v0.350.0: PREDECESSOR-SOURCE SWEEP - 2,851 CP1-CP4 classes + QCalc/MUGE swept (Rule E). NEW: 17-variant F_UBii registry (uqff_fubii_variants.py). QG sector: T_UQFF=1-F_TRZ^2 EXACT, ER=EPR 10 l_Pl, white-hole (1-F_TRZ)r_s. CP4: exp(-SSq n/26) ladder, Meissner SC_m. n_generations=D_phys-1=3 EXACT. MUGE Ug1-4+Um canonical, SOURCE4 F_DPM=IA(w1-w2). 2662 functions, 2316 named, 7 modules. Registry 3041 rows. Gate 2264."
+version = "0.351.0"
+description = "UQFF Star-Magic-Program v0.351.0: SCRAPE-COMPLETE - every predecessor source exhausted (whitepapers, CP1-CP4, QCalc, MUGE, 572 session scripts, Gold_Standard, Phase5-8). NEW: 73 sc_ session closures - Chandrasekhar = F_TRZ D_phys^2(1-F_TRZ) = 1.44 EXACT, ISCO = D_BSFG = 6 EXACT, top Yukawa 1-F_TRZ^2, alpha_s 0.008%. E_crack = rho v^2/SSQ non-SM energy. 2756 functions, 2410 named, 8 modules. Registry 3133 rows. Gate 2277."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -53,7 +53,7 @@ Predecessor = "https://github.com/Daniel8Murphy0007/Star-Magic"
 Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [tool.setuptools]
-py-modules = ["uqff_fubii_variants", "uqff_ngc_catalog", "uqff_primitive_identities", "uqff_material_landmarks", "uqff_backbone_locks", "uqff_derived_functions", "uqff_derived_constants", 
+py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog", "uqff_primitive_identities", "uqff_material_landmarks", "uqff_backbone_locks", "uqff_derived_functions", "uqff_derived_constants", 
     "uqff_registry_primitives",
     "uqff_calculator",
     "uqff_fidelity_tests",

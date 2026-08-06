@@ -128,3 +128,8 @@ n_generations,D_phys - 1,4-1,3,PAPER_1220,EXACT_flagship,0.0
 hawking_ratio,1-F_TRZ^2,0.99,0.99,CP1,EXACT,0.0
 phonon_Q,f_SCm/Gamma,25/2,12.5,PAPER_910/911,EXACT,0.0
 fubii_registry,F_U - F_Bi - F_i,17 variants,module,PAPER_036-039,Tier4_canonical,0.0
+chandrasekhar_mass,F_TRZ*D_phys^2*(1-F_TRZ),0.1*16*0.9,1.44,SESSION_383,EXACT_flagship,0.0
+isco_radius,D_BSFG,6,6,SESSION_386,EXACT,0.0
+top_yukawa,1-F_TRZ^2,0.99,0.99,SESSION_376,PDG_0.9936,0.36
+alpha_s_composed,F_TRZ K_Mex SSq - F_TRZ^3 Phi_res,,0.11791,SESSION_378,PDG_0.1179,0.008
+jarlskog,F_TRZ^5 D_BSFG SSq (1-F_TRZ K_Mex SSq),,3.014e-5,SESSION_374,obs_3.00e-5,0.46

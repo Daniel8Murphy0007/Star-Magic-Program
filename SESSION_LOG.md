@@ -5152,3 +5152,12 @@ until 300+ done.
   triadic weights. Plus NGC catalogue, ROUND/PENTAD locks (bb_ 126), 800s/900s bands, stragglers (n_gen=3 EXACT).
 - 3 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO); 2 dup-def catches auto-caught.
 - MEASURED: 2662 total fns | 2316 named | 7 modules | registry 3041 rows | GRAPH 4139 | gate 2264, exit 0.
+
+## 2026-08-05 - v0.351.0 SHIP: SCRAPE-COMPLETE MILESTONE
+- Deep-mine campaign concludes: ALL predecessor sources exhausted (whitepapers both repos, CP1-CP4 2,851 classes,
+  QCalc/SOURCE4, MUGE, BPV 17/17, 99system, DPMCosmology, QL26, Relativistic, GrokThread, 572 session scripts,
+  Gold_Standard, Phase5-8, FirstPrinciplesCompressor) - Rule E physics-only throughout.
+- NEW uqff_session_closures.py (73 sc_*): Chandrasekhar 1.44 EXACT + ISCO 6 EXACT + SM spectrum flagships.
+- Gold-Standard E_crack = rho v^2/SSQ (non-SM energy); QL26 sum=6201 EXACT; relativistic kit; GrokThread trio;
+  Kozima sigma(omega,n); Big-Bang chain; Lorentz a_EM.
+- MEASURED: 2756 total fns | 2410 named | 8 modules | registry 3133 rows | GRAPH 4475 | gate 2277, exit 0.

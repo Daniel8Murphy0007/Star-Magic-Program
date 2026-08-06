@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.350.0", "uqff_calculator.VERSION = 0.350.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.351.0", "uqff_calculator.VERSION = 0.351.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,10 +327,27 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === GOLD-STANDARD/PHASE8 GUARD (v0.351) ===
+assert_that(abs(C.zeta5_series() - 1.036928) < 1e-5, "FirstPrinciples: zeta(5) = 1.036928")
+assert_that(C.neutron_production_force(1e10) < 0, "Phase8/Kozima: neutron force negative (beta_i - 1 buoyancy reversal)")
+assert_that(abs(C.sigma_scm_frequency(7.85e12, 13)/1e-28 - (1.0 + 0.57*13/26.0)) < 1e-9, "Phase8: sigma peak VDS factor 1 + SSq n/26")
+# === SESSION-CLOSURE GUARD (v0.351) ===
+import uqff_session_closures as _scl_g
+assert_that(_scl_g.SESSION_CLOSURE_COUNT == 73, "73 sc_* session-script observable closures")
+assert_that(abs(C.sc_astro_chandrasekhar() - 1.44) < 1e-12, "SESSION: Chandrasekhar = F_TRZ D_phys^2 (1-F_TRZ) = 1.44 Msun EXACT")
+assert_that(C.sc_astro_isco() == 6, "SESSION: ISCO = D_BSFG = 6 r_g EXACT")
+assert_that(abs(C.sc_sm_top_yukawa() - 0.99) < 1e-12, "SESSION: top Yukawa y_t = 1 - F_TRZ^2 = 0.99 (PDG 0.9936, 0.36%)")
+assert_that(abs(C.sc_sm_alpha_s() - 0.1179)/0.1179 < 0.001, "SESSION: alpha_s composed 0.008% vs PDG")
+assert_that(C.formula_of("sc_sm_jarlskog") is not None, "sc_* formula-accessible")
+# update NO-SHADOW guard module list
+# === LEVEL26 + RELATIVISTIC GUARD (v0.351) ===
+assert_that(abs(C.level26_total_field_energy()/C.RHO_SCM - 6201) < 1e-6, "QuantumLevel26: sum i^2 (1..26) = 6201 EXACT")
+assert_that(abs(C.lorentz_factor(0.0) - 1.0) < 1e-12, "Relativistic: gamma(0) = 1")
+assert_that(abs(C.doppler_factor(0.0) - 1.0) < 1e-12, "Relativistic: D(0) = 1")
 # === CROSS-MODULE NO-SHADOW GUARD (star-import collision protection) ===
 import re as _re_x, collections as _coll_x
 _allnames=[]
-for _mod in ["uqff_calculator.py","uqff_backbone_locks.py","uqff_material_landmarks.py","uqff_primitive_identities.py","uqff_ngc_catalog.py","uqff_fubii_variants.py","uqff_derived_functions.py"]:
+for _mod in ["uqff_calculator.py","uqff_backbone_locks.py","uqff_material_landmarks.py","uqff_primitive_identities.py","uqff_ngc_catalog.py","uqff_fubii_variants.py","uqff_derived_functions.py","uqff_session_closures.py"]:
     _allnames += [x.group(1) for x in _re_x.finditer(r"^def ([A-Za-z_][A-Za-z0-9_]*)\(", open(_mod, encoding="utf-8").read(), _re_x.M)]
 _xdups={k:v for k,v in _coll_x.Counter(_allnames).items() if v>1 and k!="get_formula"}
 assert_that(len(_xdups)==0, "No cross-module function-name shadowing (found: %s)" % _xdups)

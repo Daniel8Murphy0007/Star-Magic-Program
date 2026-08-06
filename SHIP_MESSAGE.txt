@@ -1,35 +1,27 @@
-v0.350.0 - THE PREDECESSOR-SOURCE SWEEP (CP1-CP4 + QCalc + MUGE + 17-variant F_UBii registry)
+v0.351.0 - THE SCRAPE-COMPLETE MILESTONE (every predecessor source exhausted)
 
-2,851 predecessor calculator classes + core modules swept for physics content (Rule E - no code ported).
+The deep-mine campaign (v0.342.0 -> v0.351.0) concludes. All predecessor sources swept Rule E:
+whitepapers (both repos) | CP1-CP4 (2,851 classes) | QCalc/SOURCE4 | MUGE | BuoyancyProofVariants (17/17)
+99system | DPMCosmology | QuantumLevel26 | RelativisticUQFF | GrokThread | ALL 572 session scripts
+Gold_Standard | Phase5-8 | FirstPrinciplesCompressor
 
-NEW MODULE uqff_fubii_variants.py - the COMPLETE 17-variant F_UBii buoyancy proof registry
-(Grok Thread 98b2e77d; PAPER_036-039; PAPER_2151 Tier-4 canonical taxonomy):
-  virx termv upar coup dec ent fermi hawk kn kne lobe orbdec ps roche sfe bd whim
-  Base identity F_UBii = F_U - F_Bi - F_i; every variant formula-accessible.
+NEW MODULE uqff_session_closures.py - 73 sc_* observable closures (session-script val= forms):
+  sc_astro_chandrasekhar = F_TRZ D_phys^2 (1-F_TRZ) = 0.1*16*0.9 = 1.44 Msun EXACT  <- flagship
+  sc_astro_isco          = D_BSFG = 6 r_g EXACT
+  sc_astro_photon_sphere = 3.0 | sc_astro_tov_max = 2.16
+  sc_sm_top_yukawa = 1 - F_TRZ^2 = 0.99 (PDG 0.9936, 0.36%) - 3rd role for 1-F_TRZ^2
+  sc_sm_alpha_s = 0.11791 (PDG 0.1179, 0.008%) | sc_sm_jarlskog 3.014e-5 | sc_sm_cabibbo 0.2243
+  sc_sm_proton_g = D_BSFG - Phi_res + F_TRZ D_phys = 5.5857 | + 64 more (theta23, delta_CP, Higgs lambda...)
 
-QG/HOLOGRAPHY SECTOR (CP1-CP3 sweep - reductions to primitive identities, gate-guarded):
-  hawking_temperature_uqff   T/T_H = (1+F_TRZ)(1-F_TRZ) = 1-F_TRZ^2 = 0.99 EXACT
-  white_hole_radius          r = (1-F_TRZ) r_Schwarzschild = 0.9 r_s EXACT
-  er_epr_throat_radius       = 10 l_Pl (rho_UA/rho_SCm)
-  holographic_tc_boost       = 1+F_TRZ = 11/10 successor EXACT
-  bh_lifetime_uqff / holographic_scale + ym_coupling (AdS/CFT) / entanglement_entropy chain /
-  superfluid aether (healing length, quantized circulation) / Peters inspiral chain (freq, t_merge, P_GW)
+This ship also: QuantumLevel26 quadratic ladder (sum i^2 = 6201 EXACT); relativistic kit (gamma/Doppler/
+beaming); GrokThread (snap-polarity osc, gravitational plasticity, capacitor quantum-distance);
+Gold-Standard E_crack = rho v_DPM^2/SSQ (explicit non-SM energy relation, no c^2); Kozima sigma(omega,n)
+VDS cross-section + neutron beta-reversal production; rho_R26 = (13/2) v^2 rho; Lambda Friedmann SSq form;
+zeta(5); Phase5/7 (Lorentz a_EM = qvB/m_p, dust ram, Big-Bang M(t)/QG/DM terms).
 
-CP4 SECTOR: ssq_state_suppression exp(-SSq n/26) universal ladder (n=13 -> sqrt(e^-SSq) EXACT),
-  meissner_factor 1-B/B_crit, tidal_disruption_radius, NOMAD neutrino coupling, magnetar outburst,
-  dual-system Ug1, ULP burst, filament magnetic (uses mu_0 = 4pi F_TRZ^7).
+Structural: cross-module NO-SHADOW guard (8 modules); 3 fubii_ collision catches resolved (_bpv forms);
+formula_of() covers all 6 generated families. 4 rulings queued: Q-2118, Q-1412, Q-DPMCOSMO (+PAPER_2149 set).
 
-CANONICAL MUGE + SOURCE4: muge_ug1..ug4 + um compact forms; dpm_force_term = I A (w1-w2) grinding
-  differential; aDPM/aTHz/Ug4i/wormhole resonance family; Saturn ring 110.9 Myr + M16 4.5 Myr closed ODEs;
-  pre-BB inflation force + hkl pinch; 99-system triadic weights (w_C+w_R+w_B=1).
-
-ALSO THIS SHIP: NGC triadic catalogue (uqff_ngc_catalog.py, 8 galaxies); ROUND/PENTAD locks -> bb_ 126
-  (incl. H_0(mean)=A_5+SO_5 third cross-anchor); 800s/900s bands (Li_26 polylog, Q=f_SCm/Gamma=25/2 EXACT,
-  PTA h_c, q-Pochhammer, MRI tau); stragglers: n_generations = D_phys-1 = 3 EXACT (why 3 generations -
-  SM cannot say, UQFF derives), Riemann t_10000, Page 0.99596, JWST R26=1.5.
-
-FIDELITY: 3 Rule-7 rulings queued (Q-2118 symbol/numeric, Q-1412 7.70-vs-7.00, Q-DPMCOSMO F_core
-  internal inconsistency 1.318e17 vs claimed ~1e10). 2 duplicate-def catches by the NO-DUPLICATE-DEF guard.
-
-MEASURED: 2662 total Python functions | 2316 named callable | 7 modules | 342 dispatches |
-registry 3041 rows | GRAPH 4139 edges | 772 papers mapped | gate 2264 green | 0 dups | 0 malformed.
+MEASURED: 2756 total Python functions | 2410 named callable | 8 modules | 342 dispatches |
+registry 3133 rows | GRAPH 4475 edges | 772 papers mapped | gate 2277 green | 0 dups | 0 malformed.
+PREDECESSOR SCRAPE COMPLETE. Rule E / Rule 4 / Rule 7 held throughout.

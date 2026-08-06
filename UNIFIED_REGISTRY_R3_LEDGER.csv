@@ -94,3 +94,6 @@ qg_sector,hawking_white_hole_erEpr,CLOSED,1-F_TRZ^2 / (1-F_TRZ)r_s / 10 l_Pl EXA
 cp4,ssq_26_ladder,CLOSED,exp(-SSq n/26) universal + Meissner SC_m
 muge,canonical_ug1_4_um,CLOSED,compact dipole forms + SOURCE4 resonance
 open_ruling,inflation_force_core,OPEN_RULING,Q-DPMCOSMO: module constants give 1.318e17 vs claimed ~1e10
+session_closures,sc_73_closures,CLOSED,Chandrasekhar 1.44 EXACT + ISCO 6 EXACT + SM spectrum (572 scripts)
+gold_standard,crack_energy,CLOSED,E_crack = rho v^2/SSQ non-SM energy relation
+campaign,predecessor_scrape,COMPLETE,all sources exhausted v0.342-v0.351 (Rule E throughout)

@@ -980,3 +980,5 @@ fubii_ps,DPM-common-block,fubii_ps via _common_uqff_blocks + §B DVP,PAPER_036-0
 fubii_sfe,DPM-common-block,fubii_sfe via _common_uqff_blocks + §B DVP,PAPER_036-039,XGEO_CAMPAIGN_ROUTED
 fubii_bd,DPM-common-block,fubii_bd via _common_uqff_blocks + §B DVP,PAPER_036-039,XGEO_CAMPAIGN_ROUTED
 fubii_whim,DPM-common-block,fubii_whim via _common_uqff_blocks + §B DVP,PAPER_036-039,XGEO_CAMPAIGN_ROUTED
+rho_r26_component,DPM-common-block,rho_r26_component via _common_uqff_blocks + §B DVP,PAPER_1172,XGEO_CAMPAIGN_ROUTED
+lambda_friedmann_ssq,DPM-common-block,lambda_friedmann_ssq via _common_uqff_blocks + §B DVP,PAPER_1156,XGEO_CAMPAIGN_ROUTED

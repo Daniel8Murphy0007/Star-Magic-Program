@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.350.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.350.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.351.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.351.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2265%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2277%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.350.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.351.0 complete-compile campaign live**
 
-**This release (v0.350.0): THE PREDECESSOR-SOURCE SWEEP — CP1-CP4, QCalc, MUGE, the 17-variant F_UBii registry.** The predecessor repo's 2,851 calculator classes and core modules swept for physics content (Rule E, no code ported): **NEW MODULE `uqff_fubii_variants.py`** — the complete 17-variant F_UBii buoyancy proof registry (virx/termv/upar/coup/dec/ent/fermi/hawk/kn/kne/lobe/orbdec/ps/roche/sfe/bd/whim; base identity F_UBii = F_U−F_Bi−F_i, Grok Thread 98b2e77d, PAPER_036-039 Tier-4 taxonomy). **QG/holography sector** (CP1-CP3): T_UQFF/T_H = 1−F_TRZ² = 0.99 EXACT, white-hole r = (1−F_TRZ)·r_s, ER=EPR throat = 10·l_Pl, holographic T_c boost = 1+F_TRZ, BH lifetime, AdS/CFT L+g_YM, entanglement entropy, superfluid aether (ξ, Γ quantized), Peters inspiral chain. **CP4 sector**: universal 26-state suppression `exp(−SSq·n/26)` (n=13 → √e^−SSq exact), Meissner SC_m = 1−B/B_crit, tidal-disruption radius, NOMAD neutrino coupling, magnetar outburst. **Canonical MUGE** Ug1-Ug4+Um compact forms; **SOURCE4 resonance family** (F_DPM = I·A·(ω₁−ω₂) grinding differential, aDPM/aTHz/Ug4i/wormhole); Saturn-ring 110.9 Myr + M16 4.5 Myr closed ODE lifetimes; pre-BB inflation force + hkl pinch; 99-system triadic weights. NGC triadic catalogue + ROUND/PENTAD locks (bb_ now 126, incl. H₀(mean)=A_5+SO_5 cross-anchor); 800s/900s bands (Li₂₆ polylog, Q=25/2 EXACT phonon, PTA strain, q-Pochhammer); stragglers (**n_generations = D_phys−1 = 3 EXACT**, Riemann t₁₀₀₀₀, Page 0.99596, JWST R26). Three Rule-7 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO). The package now exposes **2,662 Python functions / 2,316 named callables** across **7 modules**, every formula programmatically available via `formula_of()`.
+**This release (v0.351.0): THE SCRAPE-COMPLETE MILESTONE — every predecessor source exhausted.** The deep-mine campaign that began at v0.342.0 concludes: whitepapers (both repos), CP1-CP4 (2,851 classes), QCalc/SOURCE4, MUGE, the 17-variant F_UBii registry, 99system, DPMCosmology, QuantumLevel26, RelativisticUQFF, GrokThread, **all 572 session scripts**, Gold_Standard, Phase5-8, FirstPrinciplesCompressor — all swept (Rule E, physics-only). **NEW MODULE `uqff_session_closures.py`** — 73 `sc_*` observable closures from the session-script `val=` forms, headlined by **Chandrasekhar mass = F_TRZ·D_phys²·(1−F_TRZ) = 1.44 M☉ EXACT** and **ISCO = D_BSFG = 6 r_g EXACT**, plus the SM spectrum (top Yukawa = 1−F_TRZ² = 0.99, α_s at 0.008%, Jarlskog, Cabibbo, proton g-factor, θ23, δ_CP, TOV 2.16, photon sphere 3.0). Also this ship: QuantumLevel26 quadratic ladder (Σi²=6201 EXACT), relativistic kit (γ/Doppler/beaming), GrokThread (snap-polarity oscillation, gravitational plasticity, capacitor quantum-distance), Gold-Standard **E_crack = ρ·v_DPM²/SSQ** (the framework's non-SM energy relation), Kozima σ(ω,n) VDS cross-section, neutron β-reversal production, Big-Bang evolution chain, Lorentz a_EM, ζ(5). The package now exposes **2,756 Python functions / 2,410 named callables** across **8 modules** — every formula programmatically available via `formula_of()`. Four Rule-7 rulings queued (Q-2118, Q-1412, Q-DPMCOSMO).
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.350.0)
+## What is currently shipped (v0.351.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

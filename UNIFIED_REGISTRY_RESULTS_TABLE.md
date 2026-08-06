@@ -189,3 +189,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | ssq ladder | exp(-SSq n/26) | n=13 sqrt EXACT | CP4 |
 | n_generations | D_phys-1 | 3 EXACT | PAPER_1220 |
 | Saturn/M16 ODEs | closed lifetimes | 110.9 Myr / 4.5 Myr | QCalc |
+
+
+## v0.351.0 additions (scrape-complete)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| Chandrasekhar | F_TRZ D_phys^2(1-F_TRZ) | 1.44 Msun | SESSION_383 | EXACT |
+| ISCO | D_BSFG | 6 r_g | SESSION_386 | EXACT |
+| top Yukawa | 1-F_TRZ^2 | 0.99 | SESSION_376 (PDG 0.9936) | 0.36% |
+| alpha_s | F_TRZ K_Mex SSq - F_TRZ^3 Phi_res | 0.11791 | SESSION_378 (PDG) | 0.008% |
+| Jarlskog | F_TRZ^5 D_BSFG SSq(1-F_TRZ K_Mex SSq) | 3.014e-5 | SESSION_374 | 0.46% |
+| E_crack | rho v_DPM^2/SSQ | non-SM energy | Gold_Standard | - |
+| QL26 sum | sum i^2 (1..26) | 6201 | QuantumLevel26 | EXACT |

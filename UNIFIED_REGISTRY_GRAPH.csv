@@ -4138,3 +4138,339 @@ observable,inflation_force_core,paper,DPMCosmologyModule,module sweep
 observable,inflation_pinch_force,paper,DPMCosmologyModule,module sweep
 observable,triadic_weights,paper,99system_master,module sweep
 observable,triadic_master_fu,paper,99system_master,module sweep
+primitive,RHO_SCM,observable,level26_energy_density,level26_energy_density composes from RHO_SCM
+observable,level26_energy_density,paper,QuantumLevel26Framework,module sweep
+primitive,RHO_SCM,observable,level26_transition_energy,level26_transition_energy composes from RHO_SCM
+observable,level26_transition_energy,paper,QuantumLevel26Framework,module sweep
+primitive,RHO_SCM,observable,level26_total_field_energy,level26_total_field_energy composes from RHO_SCM
+primitive,D_CRIT,observable,level26_total_field_energy,level26_total_field_energy composes from D_CRIT
+observable,level26_total_field_energy,paper,QuantumLevel26Framework,module sweep
+primitive,C_UQFF_DERIVED,observable,lorentz_factor,lorentz_factor composes from C_UQFF_DERIVED
+observable,lorentz_factor,paper,RelativisticUQFF,module sweep
+primitive,C_UQFF_DERIVED,observable,doppler_factor,doppler_factor composes from C_UQFF_DERIVED
+observable,doppler_factor,paper,RelativisticUQFF,module sweep
+observable,relativistic_beaming,paper,RelativisticUQFF,module sweep
+observable,osc_term_snap_polarity,paper,GrokThread_98b2e77d,GrokThread sweep
+primitive,RHO_UA,observable,gravitational_plasticity,gravitational_plasticity composes from RHO_UA
+primitive,RHO_SCM,observable,gravitational_plasticity,gravitational_plasticity composes from RHO_SCM
+observable,gravitational_plasticity,paper,GrokThread_98b2e77d,GrokThread sweep
+observable,capacitor_rotated_width,paper,GrokThread_98b2e77d,GrokThread sweep
+primitive,F_TRZ,observable,sc_sm_delta_cp,sc_sm_delta_cp composes from F_TRZ
+primitive,SSQ,observable,sc_sm_delta_cp,sc_sm_delta_cp composes from SSq
+primitive,K_MEX,observable,sc_sm_delta_cp,sc_sm_delta_cp composes from K_Mex
+observable,sc_sm_delta_cp,paper,SESSION_373,session-script closure
+primitive,F_TRZ,observable,sc_sm_jarlskog,sc_sm_jarlskog composes from F_TRZ
+primitive,SSQ,observable,sc_sm_jarlskog,sc_sm_jarlskog composes from SSq
+primitive,K_MEX,observable,sc_sm_jarlskog,sc_sm_jarlskog composes from K_Mex
+primitive,D_BSFG,observable,sc_sm_jarlskog,sc_sm_jarlskog composes from D_BSFG
+observable,sc_sm_jarlskog,paper,SESSION_374,session-script closure
+primitive,F_TRZ,observable,sc_sm_theta23,sc_sm_theta23 composes from F_TRZ
+primitive,SSQ,observable,sc_sm_theta23,sc_sm_theta23 composes from SSq
+primitive,D_PHYS,observable,sc_sm_theta23,sc_sm_theta23 composes from D_phys
+observable,sc_sm_theta23,paper,SESSION_375,session-script closure
+primitive,F_TRZ,observable,sc_sm_top_yukawa,sc_sm_top_yukawa composes from F_TRZ
+observable,sc_sm_top_yukawa,paper,SESSION_376,session-script closure
+primitive,F_TRZ,observable,sc_sm_higgs_lambda,sc_sm_higgs_lambda composes from F_TRZ
+primitive,SSQ,observable,sc_sm_higgs_lambda,sc_sm_higgs_lambda composes from SSq
+primitive,K_MEX,observable,sc_sm_higgs_lambda,sc_sm_higgs_lambda composes from K_Mex
+primitive,N_CH,observable,sc_sm_higgs_lambda,sc_sm_higgs_lambda composes from N_ch
+observable,sc_sm_higgs_lambda,paper,SESSION_377,session-script closure
+primitive,F_TRZ,observable,sc_sm_alpha_s,sc_sm_alpha_s composes from F_TRZ
+primitive,SSQ,observable,sc_sm_alpha_s,sc_sm_alpha_s composes from SSq
+primitive,K_MEX,observable,sc_sm_alpha_s,sc_sm_alpha_s composes from K_Mex
+primitive,PHI_RES,observable,sc_sm_alpha_s,sc_sm_alpha_s composes from Phi_res
+observable,sc_sm_alpha_s,paper,SESSION_378,session-script closure
+primitive,F_TRZ,observable,sc_sm_cabibbo,sc_sm_cabibbo composes from F_TRZ
+primitive,K_MEX,observable,sc_sm_cabibbo,sc_sm_cabibbo composes from K_Mex
+primitive,D_PHYS,observable,sc_sm_cabibbo,sc_sm_cabibbo composes from D_phys
+observable,sc_sm_cabibbo,paper,SESSION_379,session-script closure
+primitive,F_TRZ,observable,sc_sm_proton_g,sc_sm_proton_g composes from F_TRZ
+primitive,PHI_RES,observable,sc_sm_proton_g,sc_sm_proton_g composes from Phi_res
+primitive,D_PHYS,observable,sc_sm_proton_g,sc_sm_proton_g composes from D_phys
+primitive,D_BSFG,observable,sc_sm_proton_g,sc_sm_proton_g composes from D_BSFG
+observable,sc_sm_proton_g,paper,SESSION_380,session-script closure
+primitive,F_TRZ,observable,sc_sm_mt_mw,sc_sm_mt_mw composes from F_TRZ
+primitive,SSQ,observable,sc_sm_mt_mw,sc_sm_mt_mw composes from SSq
+primitive,K_MEX,observable,sc_sm_mt_mw,sc_sm_mt_mw composes from K_Mex
+primitive,PHI_RES,observable,sc_sm_mt_mw,sc_sm_mt_mw composes from Phi_res
+observable,sc_sm_mt_mw,paper,SESSION_381,session-script closure
+primitive,F_TRZ,observable,sc_sm_mh_mt,sc_sm_mh_mt composes from F_TRZ
+primitive,SSQ,observable,sc_sm_mh_mt,sc_sm_mh_mt composes from SSq
+primitive,K_MEX,observable,sc_sm_mh_mt,sc_sm_mh_mt composes from K_Mex
+primitive,BETA_I,observable,sc_sm_mh_mt,sc_sm_mh_mt composes from beta_i
+observable,sc_sm_mh_mt,paper,SESSION_382,session-script closure
+primitive,F_TRZ,observable,sc_astro_chandrasekhar,sc_astro_chandrasekhar composes from F_TRZ
+primitive,D_PHYS,observable,sc_astro_chandrasekhar,sc_astro_chandrasekhar composes from D_phys
+observable,sc_astro_chandrasekhar,paper,SESSION_383,session-script closure
+primitive,F_TRZ,observable,sc_astro_tov_max,sc_astro_tov_max composes from F_TRZ
+primitive,SSQ,observable,sc_astro_tov_max,sc_astro_tov_max composes from SSq
+primitive,K_MEX,observable,sc_astro_tov_max,sc_astro_tov_max composes from K_Mex
+primitive,PHI_RES,observable,sc_astro_tov_max,sc_astro_tov_max composes from Phi_res
+primitive,D_PHYS,observable,sc_astro_tov_max,sc_astro_tov_max composes from D_phys
+observable,sc_astro_tov_max,paper,SESSION_384,session-script closure
+primitive,F_TRZ,observable,sc_astro_photon_sphere,sc_astro_photon_sphere composes from F_TRZ
+primitive,K_MEX,observable,sc_astro_photon_sphere,sc_astro_photon_sphere composes from K_Mex
+primitive,PHI_RES,observable,sc_astro_photon_sphere,sc_astro_photon_sphere composes from Phi_res
+observable,sc_astro_photon_sphere,paper,SESSION_385,session-script closure
+primitive,D_BSFG,observable,sc_astro_isco,sc_astro_isco composes from D_BSFG
+observable,sc_astro_isco,paper,SESSION_386,session-script closure
+primitive,F_TRZ,observable,sc_astro_bh_entropy,sc_astro_bh_entropy composes from F_TRZ
+primitive,K_MEX,observable,sc_astro_bh_entropy,sc_astro_bh_entropy composes from K_Mex
+primitive,D_PHYS,observable,sc_astro_bh_entropy,sc_astro_bh_entropy composes from D_phys
+observable,sc_astro_bh_entropy,paper,SESSION_387,session-script closure
+primitive,F_TRZ,observable,sc_astro_wd_exponent,sc_astro_wd_exponent composes from F_TRZ
+primitive,PHI_RES,observable,sc_astro_wd_exponent,sc_astro_wd_exponent composes from Phi_res
+primitive,D_PHYS,observable,sc_astro_wd_exponent,sc_astro_wd_exponent composes from D_phys
+observable,sc_astro_wd_exponent,paper,SESSION_388,session-script closure
+primitive,F_TRZ,observable,sc_astro_grav_binding,sc_astro_grav_binding composes from F_TRZ
+primitive,SSQ,observable,sc_astro_grav_binding,sc_astro_grav_binding composes from SSq
+primitive,D_PHYS,observable,sc_astro_grav_binding,sc_astro_grav_binding composes from D_phys
+observable,sc_astro_grav_binding,paper,SESSION_389,session-script closure
+primitive,F_TRZ,observable,sc_astro_salpeter_imf,sc_astro_salpeter_imf composes from F_TRZ
+primitive,K_MEX,observable,sc_astro_salpeter_imf,sc_astro_salpeter_imf composes from K_Mex
+primitive,PHI_RES,observable,sc_astro_salpeter_imf,sc_astro_salpeter_imf composes from Phi_res
+primitive,D_PHYS,observable,sc_astro_salpeter_imf,sc_astro_salpeter_imf composes from D_phys
+primitive,D_BSFG,observable,sc_astro_salpeter_imf,sc_astro_salpeter_imf composes from D_BSFG
+observable,sc_astro_salpeter_imf,paper,SESSION_390,session-script closure
+primitive,F_TRZ,observable,sc_astro_ns_compactness,sc_astro_ns_compactness composes from F_TRZ
+primitive,SSQ,observable,sc_astro_ns_compactness,sc_astro_ns_compactness composes from SSq
+primitive,K_MEX,observable,sc_astro_ns_compactness,sc_astro_ns_compactness composes from K_Mex
+primitive,D_PHYS,observable,sc_astro_ns_compactness,sc_astro_ns_compactness composes from D_phys
+observable,sc_astro_ns_compactness,paper,SESSION_391,session-script closure
+primitive,F_TRZ,observable,sc_astro_solar_schwarzschild,sc_astro_solar_schwarzschild composes from F_TRZ
+primitive,SSQ,observable,sc_astro_solar_schwarzschild,sc_astro_solar_schwarzschild composes from SSq
+primitive,D_PHYS,observable,sc_astro_solar_schwarzschild,sc_astro_solar_schwarzschild composes from D_phys
+observable,sc_astro_solar_schwarzschild,paper,SESSION_392,session-script closure
+primitive,F_TRZ,observable,sc_cm_bcs_gap,sc_cm_bcs_gap composes from F_TRZ
+primitive,K_MEX,observable,sc_cm_bcs_gap,sc_cm_bcs_gap composes from K_Mex
+primitive,PHI_RES,observable,sc_cm_bcs_gap,sc_cm_bcs_gap composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_bcs_gap,sc_cm_bcs_gap composes from D_phys
+primitive,D_BSFG,observable,sc_cm_bcs_gap,sc_cm_bcs_gap composes from D_BSFG
+observable,sc_cm_bcs_gap,paper,SESSION_393,session-script closure
+primitive,F_TRZ,observable,sc_cm_wilson,sc_cm_wilson composes from F_TRZ
+primitive,K_MEX,observable,sc_cm_wilson,sc_cm_wilson composes from K_Mex
+primitive,PHI_RES,observable,sc_cm_wilson,sc_cm_wilson composes from Phi_res
+observable,sc_cm_wilson,paper,SESSION_394,session-script closure
+primitive,F_TRZ,observable,sc_cm_wiedemann_franz,sc_cm_wiedemann_franz composes from F_TRZ
+primitive,SSQ,observable,sc_cm_wiedemann_franz,sc_cm_wiedemann_franz composes from SSq
+primitive,K_MEX,observable,sc_cm_wiedemann_franz,sc_cm_wiedemann_franz composes from K_Mex
+primitive,PHI_RES,observable,sc_cm_wiedemann_franz,sc_cm_wiedemann_franz composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_wiedemann_franz,sc_cm_wiedemann_franz composes from D_phys
+observable,sc_cm_wiedemann_franz,paper,SESSION_395,session-script closure
+primitive,F_TRZ,observable,sc_cm_von_klitzing,sc_cm_von_klitzing composes from F_TRZ
+primitive,SSQ,observable,sc_cm_von_klitzing,sc_cm_von_klitzing composes from SSq
+primitive,PHI_RES,observable,sc_cm_von_klitzing,sc_cm_von_klitzing composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_von_klitzing,sc_cm_von_klitzing composes from D_phys
+observable,sc_cm_von_klitzing,paper,SESSION_396,session-script closure
+primitive,F_TRZ,observable,sc_cm_coherence_length,sc_cm_coherence_length composes from F_TRZ
+primitive,SSQ,observable,sc_cm_coherence_length,sc_cm_coherence_length composes from SSq
+primitive,PHI_RES,observable,sc_cm_coherence_length,sc_cm_coherence_length composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_coherence_length,sc_cm_coherence_length composes from D_phys
+observable,sc_cm_coherence_length,paper,SESSION_397,session-script closure
+primitive,F_TRZ,observable,sc_cm_bec_tc,sc_cm_bec_tc composes from F_TRZ
+primitive,K_MEX,observable,sc_cm_bec_tc,sc_cm_bec_tc composes from K_Mex
+primitive,PHI_RES,observable,sc_cm_bec_tc,sc_cm_bec_tc composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_bec_tc,sc_cm_bec_tc composes from D_phys
+observable,sc_cm_bec_tc,paper,SESSION_398,session-script closure
+primitive,F_TRZ,observable,sc_cm_zeta3,sc_cm_zeta3 composes from F_TRZ
+primitive,PHI_RES,observable,sc_cm_zeta3,sc_cm_zeta3 composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_zeta3,sc_cm_zeta3 composes from D_phys
+observable,sc_cm_zeta3,paper,SESSION_399,session-script closure
+primitive,F_TRZ,observable,sc_cm_isotope,sc_cm_isotope composes from F_TRZ
+primitive,PHI_RES,observable,sc_cm_isotope,sc_cm_isotope composes from Phi_res
+primitive,D_PHYS,observable,sc_cm_isotope,sc_cm_isotope composes from D_phys
+observable,sc_cm_isotope,paper,SESSION_400,session-script closure
+primitive,F_TRZ,observable,sc_cm_brinkman_rice,sc_cm_brinkman_rice composes from F_TRZ
+primitive,PHI_RES,observable,sc_cm_brinkman_rice,sc_cm_brinkman_rice composes from Phi_res
+observable,sc_cm_brinkman_rice,paper,SESSION_401,session-script closure
+primitive,D_PHYS,observable,sc_cm_xy_exponent,sc_cm_xy_exponent composes from D_phys
+primitive,D_BSFG,observable,sc_cm_xy_exponent,sc_cm_xy_exponent composes from D_BSFG
+observable,sc_cm_xy_exponent,paper,SESSION_402,session-script closure
+primitive,F_TRZ,observable,sc_bio_codon_redundancy,sc_bio_codon_redundancy composes from F_TRZ
+primitive,SSQ,observable,sc_bio_codon_redundancy,sc_bio_codon_redundancy composes from SSq
+primitive,K_MEX,observable,sc_bio_codon_redundancy,sc_bio_codon_redundancy composes from K_Mex
+primitive,PHI_RES,observable,sc_bio_codon_redundancy,sc_bio_codon_redundancy composes from Phi_res
+primitive,D_PHYS,observable,sc_bio_codon_redundancy,sc_bio_codon_redundancy composes from D_phys
+observable,sc_bio_codon_redundancy,paper,SESSION_405,session-script closure
+primitive,F_TRZ,observable,sc_bio_kleiber,sc_bio_kleiber composes from F_TRZ
+primitive,PHI_RES,observable,sc_bio_kleiber,sc_bio_kleiber composes from Phi_res
+observable,sc_bio_kleiber,paper,SESSION_406,session-script closure
+primitive,F_TRZ,observable,sc_bio_hill,sc_bio_hill composes from F_TRZ
+primitive,K_MEX,observable,sc_bio_hill,sc_bio_hill composes from K_Mex
+primitive,PHI_RES,observable,sc_bio_hill,sc_bio_hill composes from Phi_res
+observable,sc_bio_hill,paper,SESSION_407,session-script closure
+primitive,F_TRZ,observable,sc_bio_photosynthesis,sc_bio_photosynthesis composes from F_TRZ
+primitive,K_MEX,observable,sc_bio_photosynthesis,sc_bio_photosynthesis composes from K_Mex
+primitive,D_PHYS,observable,sc_bio_photosynthesis,sc_bio_photosynthesis composes from D_phys
+observable,sc_bio_photosynthesis,paper,SESSION_408,session-script closure
+primitive,D_BSFG,observable,sc_bio_telomere,sc_bio_telomere composes from D_BSFG
+observable,sc_bio_telomere,paper,SESSION_410,session-script closure
+primitive,F_TRZ,observable,sc_bio_redfield,sc_bio_redfield composes from F_TRZ
+primitive,PHI_RES,observable,sc_bio_redfield,sc_bio_redfield composes from Phi_res
+primitive,D_BSFG,observable,sc_bio_redfield,sc_bio_redfield composes from D_BSFG
+observable,sc_bio_redfield,paper,SESSION_411,session-script closure
+primitive,F_TRZ,observable,sc_bio_phyllotaxis,sc_bio_phyllotaxis composes from F_TRZ
+primitive,SSQ,observable,sc_bio_phyllotaxis,sc_bio_phyllotaxis composes from SSq
+primitive,K_MEX,observable,sc_bio_phyllotaxis,sc_bio_phyllotaxis composes from K_Mex
+primitive,PHI_RES,observable,sc_bio_phyllotaxis,sc_bio_phyllotaxis composes from Phi_res
+observable,sc_bio_phyllotaxis,paper,SESSION_412,session-script closure
+primitive,F_TRZ,observable,sc_plasma_iter_aspect,sc_plasma_iter_aspect composes from F_TRZ
+primitive,D_BSFG,observable,sc_plasma_iter_aspect,sc_plasma_iter_aspect composes from D_BSFG
+observable,sc_plasma_iter_aspect,paper,SESSION_413,session-script closure
+primitive,F_TRZ,observable,sc_plasma_triple_product,sc_plasma_triple_product composes from F_TRZ
+primitive,K_MEX,observable,sc_plasma_triple_product,sc_plasma_triple_product composes from K_Mex
+primitive,PHI_RES,observable,sc_plasma_triple_product,sc_plasma_triple_product composes from Phi_res
+observable,sc_plasma_triple_product,paper,SESSION_415,session-script closure
+primitive,F_TRZ,observable,sc_plasma_bohm,sc_plasma_bohm composes from F_TRZ
+primitive,K_MEX,observable,sc_plasma_bohm,sc_plasma_bohm composes from K_Mex
+primitive,PHI_RES,observable,sc_plasma_bohm,sc_plasma_bohm composes from Phi_res
+observable,sc_plasma_bohm,paper,SESSION_417,session-script closure
+primitive,F_TRZ,observable,sc_plasma_safety_q,sc_plasma_safety_q composes from F_TRZ
+primitive,K_MEX,observable,sc_plasma_safety_q,sc_plasma_safety_q composes from K_Mex
+primitive,PHI_RES,observable,sc_plasma_safety_q,sc_plasma_safety_q composes from Phi_res
+observable,sc_plasma_safety_q,paper,SESSION_418,session-script closure
+primitive,D_PHYS,observable,sc_plasma_dt_peak,sc_plasma_dt_peak composes from D_phys
+primitive,A_5,observable,sc_plasma_dt_peak,sc_plasma_dt_peak composes from A_5
+observable,sc_plasma_dt_peak,paper,SESSION_420,session-script closure
+primitive,F_TRZ,observable,sc_plasma_lawson,sc_plasma_lawson composes from F_TRZ
+primitive,SSQ,observable,sc_plasma_lawson,sc_plasma_lawson composes from SSq
+primitive,PHI_RES,observable,sc_plasma_lawson,sc_plasma_lawson composes from Phi_res
+observable,sc_plasma_lawson,paper,SESSION_421,session-script closure
+primitive,F_TRZ,observable,sc_plasma_sheath,sc_plasma_sheath composes from F_TRZ
+primitive,K_MEX,observable,sc_plasma_sheath,sc_plasma_sheath composes from K_Mex
+primitive,PHI_RES,observable,sc_plasma_sheath,sc_plasma_sheath composes from Phi_res
+observable,sc_plasma_sheath,paper,SESSION_422,session-script closure
+primitive,F_TRZ,observable,sc_geo_j2,sc_geo_j2 composes from F_TRZ
+primitive,SSQ,observable,sc_geo_j2,sc_geo_j2 composes from SSq
+primitive,K_MEX,observable,sc_geo_j2,sc_geo_j2 composes from K_Mex
+primitive,PHI_RES,observable,sc_geo_j2,sc_geo_j2 composes from Phi_res
+observable,sc_geo_j2,paper,SESSION_423,session-script closure
+primitive,F_TRZ,observable,sc_geo_greenhouse,sc_geo_greenhouse composes from F_TRZ
+primitive,K_MEX,observable,sc_geo_greenhouse,sc_geo_greenhouse composes from K_Mex
+primitive,PHI_RES,observable,sc_geo_greenhouse,sc_geo_greenhouse composes from Phi_res
+primitive,D_PHYS,observable,sc_geo_greenhouse,sc_geo_greenhouse composes from D_phys
+primitive,N_CH,observable,sc_geo_greenhouse,sc_geo_greenhouse composes from N_ch
+observable,sc_geo_greenhouse,paper,SESSION_428,session-script closure
+primitive,F_TRZ,observable,sc_geo_earth_moon,sc_geo_earth_moon composes from F_TRZ
+primitive,K_MEX,observable,sc_geo_earth_moon,sc_geo_earth_moon composes from K_Mex
+primitive,PHI_RES,observable,sc_geo_earth_moon,sc_geo_earth_moon composes from Phi_res
+primitive,A_5,observable,sc_geo_earth_moon,sc_geo_earth_moon composes from A_5
+observable,sc_geo_earth_moon,paper,SESSION_430,session-script closure
+primitive,F_TRZ,observable,sc_geo_brunt_vaisala,sc_geo_brunt_vaisala composes from F_TRZ
+observable,sc_geo_brunt_vaisala,paper,SESSION_431,session-script closure
+primitive,F_TRZ,observable,sc_geo_pressure,sc_geo_pressure composes from F_TRZ
+primitive,K_MEX,observable,sc_geo_pressure,sc_geo_pressure composes from K_Mex
+primitive,PHI_RES,observable,sc_geo_pressure,sc_geo_pressure composes from Phi_res
+observable,sc_geo_pressure,paper,SESSION_432,session-script closure
+primitive,F_TRZ,observable,sc_part_baryogenesis,sc_part_baryogenesis composes from F_TRZ
+primitive,D_BSFG,observable,sc_part_baryogenesis,sc_part_baryogenesis composes from D_BSFG
+observable,sc_part_baryogenesis,paper,SESSION_433,session-script closure
+primitive,F_TRZ,observable,sc_part_proton_lifetime,sc_part_proton_lifetime composes from F_TRZ
+primitive,SSQ,observable,sc_part_proton_lifetime,sc_part_proton_lifetime composes from SSq
+primitive,K_MEX,observable,sc_part_proton_lifetime,sc_part_proton_lifetime composes from K_Mex
+primitive,PHI_RES,observable,sc_part_proton_lifetime,sc_part_proton_lifetime composes from Phi_res
+observable,sc_part_proton_lifetime,paper,SESSION_434,session-script closure
+primitive,F_TRZ,observable,sc_part_neutrino_mass,sc_part_neutrino_mass composes from F_TRZ
+primitive,K_MEX,observable,sc_part_neutrino_mass,sc_part_neutrino_mass composes from K_Mex
+observable,sc_part_neutrino_mass,paper,SESSION_435,session-script closure
+primitive,F_TRZ,observable,sc_part_sterile_neutrino,sc_part_sterile_neutrino composes from F_TRZ
+primitive,SSQ,observable,sc_part_sterile_neutrino,sc_part_sterile_neutrino composes from SSq
+primitive,K_MEX,observable,sc_part_sterile_neutrino,sc_part_sterile_neutrino composes from K_Mex
+primitive,PHI_RES,observable,sc_part_sterile_neutrino,sc_part_sterile_neutrino composes from Phi_res
+observable,sc_part_sterile_neutrino,paper,SESSION_436,session-script closure
+primitive,F_TRZ,observable,sc_part_axion,sc_part_axion composes from F_TRZ
+primitive,SSQ,observable,sc_part_axion,sc_part_axion composes from SSq
+primitive,K_MEX,observable,sc_part_axion,sc_part_axion composes from K_Mex
+primitive,PHI_RES,observable,sc_part_axion,sc_part_axion composes from Phi_res
+primitive,D_BSFG,observable,sc_part_axion,sc_part_axion composes from D_BSFG
+observable,sc_part_axion,paper,SESSION_437,session-script closure
+primitive,F_TRZ,observable,sc_part_top_yukawa,sc_part_top_yukawa composes from F_TRZ
+primitive,K_MEX,observable,sc_part_top_yukawa,sc_part_top_yukawa composes from K_Mex
+primitive,PHI_RES,observable,sc_part_top_yukawa,sc_part_top_yukawa composes from Phi_res
+observable,sc_part_top_yukawa,paper,SESSION_440,session-script closure
+primitive,F_TRZ,observable,sc_part_higgs,sc_part_higgs composes from F_TRZ
+primitive,K_MEX,observable,sc_part_higgs,sc_part_higgs composes from K_Mex
+observable,sc_part_higgs,paper,SESSION_441,session-script closure
+primitive,F_TRZ,observable,sc_info_ln2,sc_info_ln2 composes from F_TRZ
+primitive,K_MEX,observable,sc_info_ln2,sc_info_ln2 composes from K_Mex
+primitive,PHI_RES,observable,sc_info_ln2,sc_info_ln2 composes from Phi_res
+observable,sc_info_ln2,paper,SESSION_443,session-script closure
+primitive,F_TRZ,observable,sc_info_log2e,sc_info_log2e composes from F_TRZ
+primitive,SSQ,observable,sc_info_log2e,sc_info_log2e composes from SSq
+primitive,K_MEX,observable,sc_info_log2e,sc_info_log2e composes from K_Mex
+primitive,PHI_RES,observable,sc_info_log2e,sc_info_log2e composes from Phi_res
+observable,sc_info_log2e,paper,SESSION_444,session-script closure
+primitive,F_TRZ,observable,sc_info_pi_over_2,sc_info_pi_over_2 composes from F_TRZ
+primitive,SSQ,observable,sc_info_pi_over_2,sc_info_pi_over_2 composes from SSq
+primitive,K_MEX,observable,sc_info_pi_over_2,sc_info_pi_over_2 composes from K_Mex
+primitive,PHI_RES,observable,sc_info_pi_over_2,sc_info_pi_over_2 composes from Phi_res
+observable,sc_info_pi_over_2,paper,SESSION_445,session-script closure
+primitive,F_TRZ,observable,sc_info_surface_code,sc_info_surface_code composes from F_TRZ
+observable,sc_info_surface_code,paper,SESSION_446,session-script closure
+primitive,F_TRZ,observable,sc_info_euler_mascheroni,sc_info_euler_mascheroni composes from F_TRZ
+primitive,SSQ,observable,sc_info_euler_mascheroni,sc_info_euler_mascheroni composes from SSq
+primitive,PHI_RES,observable,sc_info_euler_mascheroni,sc_info_euler_mascheroni composes from Phi_res
+observable,sc_info_euler_mascheroni,paper,SESSION_447,session-script closure
+primitive,F_TRZ,observable,sc_info_catalan,sc_info_catalan composes from F_TRZ
+primitive,K_MEX,observable,sc_info_catalan,sc_info_catalan composes from K_Mex
+primitive,PHI_RES,observable,sc_info_catalan,sc_info_catalan composes from Phi_res
+observable,sc_info_catalan,paper,SESSION_448,session-script closure
+primitive,F_TRZ,observable,sc_info_ln10,sc_info_ln10 composes from F_TRZ
+primitive,K_MEX,observable,sc_info_ln10,sc_info_ln10 composes from K_Mex
+primitive,PHI_RES,observable,sc_info_ln10,sc_info_ln10 composes from Phi_res
+observable,sc_info_ln10,paper,SESSION_449,session-script closure
+primitive,F_TRZ,observable,sc_info_omega_lambert,sc_info_omega_lambert composes from F_TRZ
+primitive,SSQ,observable,sc_info_omega_lambert,sc_info_omega_lambert composes from SSq
+primitive,PHI_RES,observable,sc_info_omega_lambert,sc_info_omega_lambert composes from Phi_res
+observable,sc_info_omega_lambert,paper,SESSION_450,session-script closure
+primitive,F_TRZ,observable,sc_info_khinchin,sc_info_khinchin composes from F_TRZ
+primitive,SSQ,observable,sc_info_khinchin,sc_info_khinchin composes from SSq
+primitive,K_MEX,observable,sc_info_khinchin,sc_info_khinchin composes from K_Mex
+observable,sc_info_khinchin,paper,SESSION_451,session-script closure
+primitive,F_TRZ,observable,sc_info_sqrt_2pi,sc_info_sqrt_2pi composes from F_TRZ
+primitive,SSQ,observable,sc_info_sqrt_2pi,sc_info_sqrt_2pi composes from SSq
+primitive,K_MEX,observable,sc_info_sqrt_2pi,sc_info_sqrt_2pi composes from K_Mex
+primitive,PHI_RES,observable,sc_info_sqrt_2pi,sc_info_sqrt_2pi composes from Phi_res
+observable,sc_info_sqrt_2pi,paper,SESSION_452,session-script closure
+primitive,F_TRZ,observable,sc_gr_light_bending,sc_gr_light_bending composes from F_TRZ
+primitive,SSQ,observable,sc_gr_light_bending,sc_gr_light_bending composes from SSq
+primitive,K_MEX,observable,sc_gr_light_bending,sc_gr_light_bending composes from K_Mex
+primitive,PHI_RES,observable,sc_gr_light_bending,sc_gr_light_bending composes from Phi_res
+observable,sc_gr_light_bending,paper,SESSION_454,session-script closure
+primitive,D_PHYS,observable,sc_gr_shapiro,sc_gr_shapiro composes from D_phys
+observable,sc_gr_shapiro,paper,SESSION_455,session-script closure
+primitive,F_TRZ,observable,sc_gr_gpb_geodetic,sc_gr_gpb_geodetic composes from F_TRZ
+primitive,SSQ,observable,sc_gr_gpb_geodetic,sc_gr_gpb_geodetic composes from SSq
+primitive,K_MEX,observable,sc_gr_gpb_geodetic,sc_gr_gpb_geodetic composes from K_Mex
+primitive,PHI_RES,observable,sc_gr_gpb_geodetic,sc_gr_gpb_geodetic composes from Phi_res
+primitive,D_BSFG,observable,sc_gr_gpb_geodetic,sc_gr_gpb_geodetic composes from D_BSFG
+observable,sc_gr_gpb_geodetic,paper,SESSION_456,session-script closure
+primitive,F_TRZ,observable,sc_gr_gpb_frame_drag,sc_gr_gpb_frame_drag composes from F_TRZ
+primitive,K_MEX,observable,sc_gr_gpb_frame_drag,sc_gr_gpb_frame_drag composes from K_Mex
+primitive,PHI_RES,observable,sc_gr_gpb_frame_drag,sc_gr_gpb_frame_drag composes from Phi_res
+observable,sc_gr_gpb_frame_drag,paper,SESSION_457,session-script closure
+primitive,F_TRZ,observable,sc_gr_hulse_taylor,sc_gr_hulse_taylor composes from F_TRZ
+primitive,K_MEX,observable,sc_gr_hulse_taylor,sc_gr_hulse_taylor composes from K_Mex
+primitive,PHI_RES,observable,sc_gr_hulse_taylor,sc_gr_hulse_taylor composes from Phi_res
+observable,sc_gr_hulse_taylor,paper,SESSION_458,session-script closure
+primitive,F_TRZ,observable,sc_gr_nanograv,sc_gr_nanograv composes from F_TRZ
+primitive,K_MEX,observable,sc_gr_nanograv,sc_gr_nanograv composes from K_Mex
+observable,sc_gr_nanograv,paper,SESSION_461,session-script closure
+primitive,SSQ,observable,crack_energy,crack_energy composes from SSQ
+observable,crack_energy,paper,Gold_Standard,gold-standard sweep
+primitive,SSQ,observable,sigma_scm_frequency,sigma_scm_frequency composes from SSQ
+observable,sigma_scm_frequency,paper,Phase8_Kozima,gold-standard sweep
+primitive,BETA_I,observable,neutron_production_force,neutron_production_force composes from BETA_I
+observable,neutron_production_force,paper,Phase8_Kozima,gold-standard sweep
+primitive,RHO_SCM,observable,rho_r26_component,rho_r26_component composes from RHO_SCM
+observable,rho_r26_component,paper,PAPER_1172,gold-standard sweep
+primitive,SSQ,observable,lambda_friedmann_ssq,lambda_friedmann_ssq composes from SSQ
+primitive,C_UQFF_DERIVED,observable,lambda_friedmann_ssq,lambda_friedmann_ssq composes from C_UQFF_DERIVED
+observable,lambda_friedmann_ssq,paper,PAPER_1156,gold-standard sweep
+observable,zeta5_series,paper,FirstPrinciples,gold-standard sweep
+observable,em_base_acceleration,paper,Phase7_Consolidated,phase sweep
+observable,dust_ram_acceleration,paper,Phase7_Consolidated,phase sweep
+observable,bigbang_mass_evolution,paper,Phase5_Consolidated,phase sweep
+primitive,C_UQFF_DERIVED,observable,bigbang_qg_term,bigbang_qg_term composes from C_UQFF_DERIVED
+observable,bigbang_qg_term,paper,Phase5_Consolidated,phase sweep
+observable,dark_matter_fraction_term,paper,Phase5_Consolidated,phase sweep

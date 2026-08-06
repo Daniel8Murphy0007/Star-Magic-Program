@@ -15,3 +15,4 @@ deep_mine_compile,v0.349.0,ADOPT,object-locks + material landmarks + primitive i
 formula_availability,v0.349.0,ADOPT,formula_of()/.formula/FORMULAS - formulas programmatically available,no,APPROVED (Daniel ruling: DOC STRING FORMULAS NEED TO BE AVAILABLE)
 predecessor_source_sweep,v0.350.0,ADOPT,2851 classes + modules swept Rule E; physics-only extraction,no,APPROVED (Daniel: SWEEP CP4/THOSE NEXT/CONTINUE DEEP SWEEP)
 q_dpmcosmo,DPMCosmologyModule,RULING_NEEDED,F_core formula w/ own constants = 1.318e17 N vs module-claimed ~1e10,yes,
+scrape_complete,v0.351.0,MILESTONE,"predecessor scrape complete; 8 generated/curated fn modules; 2,756 total fns",no,APPROVED (Daniel: KEEP DEEP MINING x4 / scraping last files)

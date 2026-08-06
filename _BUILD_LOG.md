@@ -116,3 +116,14 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.350.0 SHIP PREP (PREDECESSOR-SOURCE SWEEP)
 [2026-08-05] SHIP_PREP v0.350.0 — all registry/ship files updated; 2 new modules this ship (ngc_catalog, fubii_variants); gate green
+
+[2026-08-05] GATE_PASS v0.351.0 deep mine — 2268 assertions: OK (QuantumLevel26 quadratic ladder sum=6201 EXACT, Relativistic kit gamma/Doppler/beaming, GrokThread snap-polarity osc + gravitational plasticity + capacitor quantum-distance)
+
+[2026-08-05] GATE_PASS v0.351.0 session-script mine — 2274 assertions: OK (73 sc_* closures from 572 session scripts NEW MODULE uqff_session_closures.py: Chandrasekhar=F_TRZ D_phys^2(1-F_TRZ)=1.44 EXACT, ISCO=D_BSFG=6 EXACT, top Yukawa 0.99, alpha_s 0.008%, Jarlskog, Cabibbo, TOV, photon sphere)
+
+[2026-08-05] GATE_PASS v0.351.0 gold-standard sweep — 2277 assertions: OK (E_crack=rho v^2/SSQ no-c^2 energy relation, Kozima sigma(omega,n) VDS cross-section, neutron production beta-reversal, rho_R26=(13/2)v^2 rho, Lambda Friedmann SSq form, zeta(5))
+
+[2026-08-05] GATE_PASS v0.351.0 FINAL SCRAPE — 2277 assertions: OK (Phase5/7: Lorentz a_EM=qvB/m_p, dust ram, Big-Bang M(t)/QG/DM terms). PREDECESSOR SOURCE SCRAPE COMPLETE: whitepapers both repos + CP1-4 + QCalc + MUGE + BPV + 99system + DPMCosmology + QL26 + Relativistic + GrokThread + 572 sessions + Gold_Standard + Phase5-8 + FirstPrinciples.
+
+## 2026-08-05 — v0.351.0 SHIP PREP (SCRAPE-COMPLETE MILESTONE)
+[2026-08-05] SHIP_PREP v0.351.0 — all files updated; 1 new module (session_closures); gate green; PREDECESSOR SCRAPE COMPLETE

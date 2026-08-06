@@ -133,3 +133,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS UPDATE v0.350.0
 - PREDECESSOR-SOURCE SWEEP complete (2,851 classes + modules). 2,662 fns | 2,316 named | 7 modules | registry 3,041 | GRAPH 4,139 | gate 2,264. 3 rulings queued.
+
+
+## LIVE STATUS v0.351.0 - PREDECESSOR SCRAPE COMPLETE
+- 2,756 fns | 2,410 named | 8 modules | registry 3,133 | GRAPH 4,475 | gate 2,277. All sources exhausted. 4 rulings queued.
