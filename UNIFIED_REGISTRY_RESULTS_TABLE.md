@@ -213,3 +213,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | T_H (10 Msun) | hbar c^3/8pi G M k_B | 6.155e-9 K | PAPER_081 |
 | Whittaker closure | 26-partition | <1e-10 | PAPER_097 |
 | Y_e r-process | N_p/(N_p+N_n) | 0.25 | PAPER_109 |
+
+
+## v0.353.0 additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| kappa origin | 0.35/700 (Fermi-4LAC) | 5e-4/day | PAPER_125 | EXACT |
+| Hoyle state | E_0 sum(SSq^k)+dE | 6.654 MeV | PAPER_132 | 0.28% |
+| 40/60 split | (D_phys,D_BSFG)/SO_5 | (0.4,0.6) | PAPER_143 | EXACT |
+| cascade | 1.5^12 | 129.7 | PAPER_115 | stated |
+| Higgs ladder | log10(E)+20 | 12.30 | PAPER_112 | EXACT |
+| ladder pivot | rho_0 10^(n-13) | rho_SCm @ n=13 | PAPER_137 | EXACT |
+| t_Hubble | 1/H_0 | 4.41e17 s | PAPER_143 | registry |

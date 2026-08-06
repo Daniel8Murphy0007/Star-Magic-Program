@@ -4543,3 +4543,57 @@ primitive,SSQ,observable,bec_tc_shift_phi,bec_tc_shift_phi composes from SSQ
 observable,bec_tc_shift_phi,paper,PAPER_107,deep-capture 101-110
 observable,electron_fraction_rprocess,paper,PAPER_109,deep-capture 101-110
 observable,sgra_gravity_decomposition,paper,PAPER_110,deep-capture 101-110
+observable,jet_buoyancy_oscillating,paper,PAPER_111,deep-capture 111-120
+observable,counterjet_phase_offset,paper,PAPER_111,deep-capture 111-120
+observable,energy_ladder_index,paper,PAPER_112,deep-capture 111-120
+observable,blazar_luminosity_function,paper,PAPER_113,deep-capture 111-120
+primitive,C_UQFF_DERIVED,observable,heliosheath_ug2,heliosheath_ug2 composes from C_UQFF_DERIVED
+observable,heliosheath_ug2,paper,PAPER_114,deep-capture 111-120
+observable,heliosheath_compression,paper,PAPER_114,deep-capture 111-120
+primitive,SSQ,observable,resonance_cascade,resonance_cascade composes from SSQ
+observable,resonance_cascade,paper,PAPER_115,deep-capture 111-120
+primitive,SSQ,observable,vacuum_ssq_cascade,vacuum_ssq_cascade composes from SSQ
+observable,vacuum_ssq_cascade,paper,PAPER_118,deep-capture 111-120
+primitive,G_UQFF,observable,rho_lambda_from_lambda,rho_lambda_from_lambda composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,rho_lambda_from_lambda,rho_lambda_from_lambda composes from C_UQFF_DERIVED
+observable,rho_lambda_from_lambda,paper,PAPER_118,deep-capture 111-120
+observable,potential_26_expansion,paper,PAPER_122,deep-capture 121-130
+observable,even_power_potential,paper,PAPER_122,deep-capture 121-130
+primitive,SO_5,observable,virtual_quark_level,virtual_quark_level composes from SO_5
+observable,virtual_quark_level,paper,PAPER_123,deep-capture 121-130
+primitive,SSQ,observable,doubly_magic_separation,doubly_magic_separation composes from SSQ
+observable,doubly_magic_separation,paper,PAPER_124,deep-capture 121-130
+observable,kappa_derivation_4lac,paper,PAPER_125,deep-capture 121-130
+observable,halflife_from_tau,paper,PAPER_125,deep-capture 121-130
+observable,ua_distance_correction,paper,PAPER_126,deep-capture 121-130
+observable,ua_coupling_solar_wind,paper,PAPER_127,deep-capture 121-130
+primitive,SSQ,observable,dm_density_final,dm_density_final composes from SSQ
+observable,dm_density_final,paper,PAPER_128,deep-capture 121-130
+observable,triadic_time_ratio,paper,PAPER_129,deep-capture 121-130
+observable,diffusion_energy_scaling,paper,PAPER_130,deep-capture 121-130
+primitive,BETA_I,observable,electron_fraction_ua,electron_fraction_ua composes from BETA_I
+observable,electron_fraction_ua,paper,PAPER_131,deep-capture 131-140
+primitive,SSQ,observable,hoyle_ssq_sum,hoyle_ssq_sum composes from SSQ
+observable,hoyle_ssq_sum,paper,PAPER_132,deep-capture 131-140
+observable,genesis_fu_value,paper,PAPER_133,deep-capture 131-140
+observable,scm_jet_radial_force,paper,PAPER_135,deep-capture 131-140
+observable,core_field_oscillation,paper,PAPER_136,deep-capture 131-140
+primitive,F_TRZ,observable,magnetic_hamiltonian_ug3,magnetic_hamiltonian_ug3 composes from F_TRZ
+observable,magnetic_hamiltonian_ug3,paper,PAPER_136,deep-capture 131-140
+primitive,RHO_SCM,observable,scm_density_ladder,scm_density_ladder composes from RHO_SCM
+observable,scm_density_ladder,paper,PAPER_137,deep-capture 131-140
+primitive,RHO_SCM,observable,ug_activation_threshold,ug_activation_threshold composes from RHO_SCM
+observable,ug_activation_threshold,paper,PAPER_137,deep-capture 131-140
+observable,sf_mass_loss_rate,paper,PAPER_138,deep-capture 131-140
+primitive,C_UQFF_DERIVED,observable,quantum_correction_factor,quantum_correction_factor composes from C_UQFF_DERIVED
+observable,quantum_correction_factor,paper,PAPER_140,deep-capture 131-140
+observable,oceanic_buoyancy_salinity,paper,PAPER_141,deep-capture 141-150
+observable,atomic_resonance_amplitude,paper,PAPER_142,deep-capture 141-150
+observable,atomic_resonance_frequency,paper,PAPER_142,deep-capture 141-150
+primitive,D_PHYS,observable,forty_sixty_split,forty_sixty_split composes from D_PHYS
+primitive,SO_5,observable,forty_sixty_split,forty_sixty_split composes from SO_5
+observable,forty_sixty_split,paper,PAPER_143,deep-capture 141-150
+primitive,SO_5,observable,hubble_time,hubble_time composes from SO_5
+observable,hubble_time,paper,PAPER_143,deep-capture 141-150
+observable,hubble_mass_decay,paper,PAPER_143,deep-capture 141-150
+observable,cosmic_glue_delta_ug,paper,PAPER_144,deep-capture 141-150

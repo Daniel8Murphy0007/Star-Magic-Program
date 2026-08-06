@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.352.0", "uqff_calculator.VERSION = 0.352.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.353.0", "uqff_calculator.VERSION = 0.353.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,29 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === DEEP-CAPTURE 141-150 GUARD (v0.353) ===
+assert_that(C.forty_sixty_split() == (0.4, 0.6), "PAPER_143: 40/60 split = (D_phys, D_BSFG)/SO_5 EXACT")
+assert_that(abs(C.hubble_time() - 4.41e17)/4.41e17 < 0.01, "PAPER_143: t_Hubble = 1/H_0 = 4.41e17 s (registry route)")
+assert_that(abs(C.oceanic_buoyancy_salinity() - 2081.4) < 1.0, "PAPER_141: oceanic buoyancy 2081.6 N chain")
+assert_that(abs(C.atomic_resonance_amplitude(1, 1.008) - 0.4604) < 1e-9, "PAPER_142: hydrogen anchor A_res = k_A = 0.4604 V")
+# === DEEP-CAPTURE 131-140 GUARD (v0.353) ===
+assert_that(abs(C.hoyle_ssq_sum() - 6.654) < 0.005, "PAPER_132: Hoyle state = E_0(1+SSq+SSq^2+SSq^3)+dE = 6.654 MeV (obs 7.654-1: 0.28%)")
+assert_that(abs(C.scm_density_ladder(13) - C.RHO_SCM) < 1e-45, "PAPER_137: density ladder pivot rho^(13) = rho_SCm,0 EXACT")
+assert_that(C.ug_activation_threshold(C.RHO_SCM, 13) == True, "PAPER_137: Ug activation at pivot level")
+assert_that(C.genesis_fu_value() == 1.18e53, "PAPER_133: F_U genesis = 1.18e53 (Q_s = 0)")
+assert_that(abs(C.core_field_oscillation(0.0, 1.0) - 1e3) < 1e-9, "PAPER_136: core field B(0) = 1e3 T")
+# === DEEP-CAPTURE 121-130 GUARD (v0.353) ===
+assert_that(abs(C.kappa_derivation_4lac() - 5e-4) < 1e-12, "PAPER_125: kappa = 0.35/700 = 5e-4/day EXACT (registry kappa origin from Fermi-4LAC)")
+assert_that(abs(C.halflife_from_tau() - 1386.29) < 0.5, "PAPER_125: t_1/2 = 2000 ln2 = 1386 days")
+assert_that(abs(C.doubly_magic_separation() - 1.14e-12) < 1e-15, "PAPER_124: S_n = 2 SSq E_8 = 1.14e-12 J")
+assert_that(C.virtual_quark_level() == 4.20, "PAPER_123: virtual-quark level 4.20")
+assert_that(abs(C.triadic_time_ratio(0.5) - 0.8660254) < 1e-6, "PAPER_129: triadic band cos(30 deg) = 0.866")
+assert_that(abs(C.ua_distance_correction(1.0) - 1.043) < 1e-12, "PAPER_126: eps_UA = 4.3% distance correction")
+# === DEEP-CAPTURE 111-120 GUARD (v0.353) ===
+assert_that(abs(C.energy_ladder_index(2.005e-8) - 12.30) < 0.01, "PAPER_112: Higgs ladder index n = 12.30")
+assert_that(abs(C.resonance_cascade(12, 1.0) - 129.7) < 0.5, "PAPER_115: cascade R = 1.5^12 = 129.7 (ceiling 1.57^12 disclosed)")
+assert_that(abs(C.rho_lambda_from_lambda() - 5.3e-10)/5.3e-10 < 0.15, "PAPER_118: rho_Lambda = Lambda c^4/8piG ~ 5.3e-10 J/m^3 (c^4 form, Rule-7 corrected)")
+assert_that(abs(C.heliosheath_compression(0.01, 1.0) - 1.01) < 1e-12, "PAPER_114: heliosheath compression 1 + Ug2/P_ram")
 # === DEEP-CAPTURE 101-110 GUARD (v0.352) ===
 assert_that(abs(C.ym_min_excitation() - 0.1) < 1e-12, "PAPER_101: YM min excitation = F_TRZ hbar omega (10 MeV at 1 GeV)")
 assert_that(abs(C.bose_occupancy(1.0, 1.0) - 1.0/(2.718281828-1.0)) < 1e-6, "PAPER_107: Bose occupancy 1/(e-1)")

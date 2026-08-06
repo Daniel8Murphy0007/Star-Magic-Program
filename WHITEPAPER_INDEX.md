@@ -20,6 +20,8 @@
 
 > **v0.352.0 coanqi+frontier:** CoAnQi 6MB mined (i^5 ladder, emergent Ug1=BGMR doctrine); deep-capture 081-110 (BH thermo, SSq=0.755^2, Whittaker, SgrA* decomposition). Frontier PAPER_110.
 
+> **v0.353.0 frontier 150:** batches 111-150 deep-captured (kappa origin EXACT, Hoyle SSq sum, 40/60 split, cascade, ladder pivot). 2 Rule-7 self-corrections.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

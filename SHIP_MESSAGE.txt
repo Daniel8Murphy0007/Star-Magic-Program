@@ -1,28 +1,28 @@
-v0.352.0 - CoAnQi MINE + DEEP-CAPTURE FRONTIER -> PAPER_110
+v0.353.0 - DEEP-CAPTURE FRONTIER -> PAPER_150 (batches 111-150)
 
-COANQI COMPLEX MINED (MAIN_1_CoAnQi.cpp 6MB, 1,173 classes + enhancements 279 classes, Rule E):
-  dpm_layer_energy        E_i = hbar c i^5/r^2 (r_i=r/i, Q_i=i, SCm_i=i^2 -> i^5 ladder; 2^5=32 verified)
-  emergent_ug1_dpm        Ug1 = mu_s grad(M) = (B R^3)(G M/R^2) = B G M R
-                          <- THE DOCTRINE IN CODE: gravity seeded from magnetic moment, G downstream
-  emergent_ug2_shell      (Q_SCm+Q_UA) M/r^2 S(r-R_b) E_react (heliosphere step verified 0/1)
-  aether_drag_force       (1/2) rho_UA v^2 pi r^2 (ram on the UA vacuum itself)
-  buoyant_gravity_s116    P_26(1/r^2)(1+SFR) sin(pi/26) - the 26D gate = 0.120537
-  gw_ripple_force / jet_force_boosted / accretion energy / life proportion / poly26 / CNB term
+Four deep-capture batches (37 new equation-library functions), headline identities:
 
-DEEP-CAPTURE BATCHES 081-110 (frontier 080 -> 110):
-  081-090: BH thermodynamics chain (T_H = hbar c^3/8pi G M k_B canonical 6.155e-9 K @ 10Msun,
-    dM/dt Page driver, S_thermal), delta_c = 0.45, PBH 0.965, TDE t_fb + L_peak, neutrino buoyancy
-    integrand, AGN kappa-decay (0.9995/day registry-exact), aether-metric trace.
-  091-100: SSq = 0.755^2 = 0.5700 ORIGIN IDENTITY, FRB E = f_TRZ Ug1 V_TRZ + dt = (r/c)/[SCm],
-    Whittaker 26-closure < 1e-10 EXACT, Friedmann full, 1e-120 fine-tuning stated, plasma-shield
-    SSq^1/2 screening, plasma frequency (THz holes).
-  101-110: YM min excitation = F_TRZ hbar omega (10 MeV), NS viscous correction, zeta Euler,
-    Bose occupancy, BEC Tc Phi-form, Y_e = 0.25 r-process boundary, SgrA* DECOMPOSITION -
-    g_Newton e^(-kappa t) + g_Ug4 + g_MUGE with Newtonian COMPLETELY DECAYED at galactic age.
+  kappa_derivation_4lac    kappa = 0.35/700 = 5e-4/day EXACT (PAPER_125)
+                           <- the registry decay constant's OBSERVATIONAL ORIGIN (Fermi-4LAC fit);
+                              dual route with the (SO_5/2) F_TRZ^4 derivative (PAPER_2112)
+  hoyle_ssq_sum            E = E_0(1+SSq+SSq^2+SSq^3) + dE_SCm = 3.0 x 2.080 + 0.414 = 6.654 MeV
+                           <- carbon's Hoyle resonance from the SSq geometric sum, 0.28 pct (PAPER_132)
+  forty_sixty_split        UQFF 40 pct / Schrodinger-Dirac 60 pct = (D_phys, D_BSFG)/SO_5 EXACT (PAPER_143)
+  resonance_cascade        R = 1.5^12 = 129.7 (3C273; 1.57^12 ceiling disclosed) (PAPER_115)
+  energy_ladder_index      n = log10(E)+20; Higgs -> 12.30 (PAPER_112)
+  scm_density_ladder       rho(n) = rho_0 10^(n-13); pivot n=13 = rho_SCm EXACT + Ug activation (PAPER_137)
+  doubly_magic_separation  S_n = 2 SSq E_8 = 1.14e-12 J (Pb-206) (PAPER_124)
+  ua_distance_correction   eps_UA = rho_UA/rho_total = 4.3 pct (Gaia-SgrA*) (PAPER_126)
+  atomic resonance pair    A_res + f_res, hydrogen anchor k_A = 0.4604 V (PAPER_142)
+  + jet/counter-jet pairing (111), heliosheath Ug2+compression (114), blazar LFs (113), SSq^N vacuum
+    cascade + rho_Lambda = Lambda c^4/8piG (118), virtual-quark 4.20 (123), halflife 1386d (125),
+    dm final (128), triadic cos30 (129), diffusion E^0.5 (130), Y_e beta[UA] (131), genesis 1.18e53 (133),
+    quasar-jet radial (135), core-field + Ug3 Hamiltonian (136), SF rate (138), quantum f (140),
+    oceanic buoyancy (141), Hubble time + decay (143), cosmic-glue dUg template (144).
 
-FIDELITY: 4 duplicate-catches auto-resolved this ship (gluon propagator identical-removed,
-bec_tc_shift/fermi-roche-lobe distinct-renamed) - the NO-DUPLICATE + NO-SHADOW guards working as designed.
+RULE-7 SELF-CORRECTIONS (disclosed): rho_lambda c^4 dimensional form (paper printed c^2; lands 5.28e-10
+J/m^3 in dual-manifestation range); cascade R_basic=1.5 vs ceiling 1.57 both exposed.
 
-MEASURED: 2793 total Python functions | 2447 named callable | 8 modules | 342 dispatches |
-registry 3170 rows | GRAPH 4544 edges | 772 papers mapped | gate 2299 green | 0 dups | 0 malformed.
-Deep-capture frontier: PAPER_001-110. Rule E / Rule 4 / Rule 7 held.
+MEASURED: 2830 total Python functions | 2484 named callable | 8 modules | 342 dispatches |
+registry 3207 rows | GRAPH 4598 edges | 772 papers mapped | gate 2318 green | 0 dups | 0 malformed.
+Deep-capture frontier: PAPER_001-150. Rule E / Rule 4 / Rule 7 held.

@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.352.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.352.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.353.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.353.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2299%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2318%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.352.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.353.0 complete-compile campaign live**
 
-**This release (v0.352.0): CoAnQi MINE + DEEP-CAPTURE FRONTIER → PAPER_110.** The 6 MB self-expanding C++ calculator (`MAIN_1_CoAnQi.cpp`, 1,173 classes, 150+ Source modules) and its 279-class enhancement engine mined (Rule E): **DPM layer ladder E_i = ħc·i⁵/r²** (i⁵ scaling verified), aether drag ½ρ_UA·v²·πr², GW ripple force, S116 buoyant gravity with the **sin(π/26) 26D gate**, and the doctrinal capstone — **emergent_ug1_dpm = μ_s·∇M = B·G·M·R**, gravity seeded from the magnetic moment with G as downstream projection (Answer-B ontology as compiled code). Deep-capture frontier advanced three batches (081→110): the complete **BH thermodynamics chain** (T_H canonical, dM/dt Page driver, S_thermal, δ_c=0.45), **SSq = 0.755² origin identity**, Whittaker 26-closure (<1e-10 exact), Friedmann full form, FRB E+Δt, plasma frequency, YM minimum excitation F_TRZ·ħω, Bose occupancy, Y_e=0.25 r-process, and the **Sgr A* Newtonian-decayed decomposition** (e^(−κt)≈0 at galactic age — Ug4+MUGE carry the field). Four duplicate-catches auto-resolved by the NO-DUPLICATE/NO-SHADOW guards. The package now exposes **2,793 Python functions / 2,447 named callables** across 8 modules.
+**This release (v0.353.0): DEEP-CAPTURE FRONTIER → PAPER_150 (batches 111-150).** Four deep-capture batches advance the complete-compile frontier from 110 to 150, with the era's headline identities: **κ = 0.35/700 = 5e-4/day EXACT** — the registry decay constant's observational origin from the Fermi-4LAC blazar fit (dual route with the (SO_5/2)·F_TRZ⁴ derivative, PAPER_125); **Hoyle state = E₀·(1+SSq+SSq²+SSq³)+ΔE_SCm = 6.654 MeV** — carbon's resonance from the SSq geometric sum 2.080 (PAPER_132); **40/60 gravity-quantum split = (D_phys, D_BSFG)/SO_5 EXACT** (PAPER_143); the 3C273 **resonance cascade 1.5¹² = 129.7** (PAPER_115); **Higgs ladder index n = 12.30** via the inverse map log₁₀(E)+20 (PAPER_112); density-ladder pivot ρ^(13) = ρ_SCm EXACT with level-gated Ug activation (PAPER_137); S_n = 2·SSq·E₈ doubly-magic separation (PAPER_124); ε_UA = 4.3% Gaia distance correction (PAPER_126); PToE resonance pair with hydrogen anchor k_A = 0.4604 V (PAPER_142); jet/counter-jet phase pairing (PAPER_111); heliosheath U_g2 + compression (PAPER_114); SSq^N vacuum cascade + ρ_Λ = Λc⁴/8πG **Rule-7 c⁴ correction** (PAPER_118); triadic time-reversal band (PAPER_129); cosmic-glue ΔUg template (PAPER_144); Hubble time 4.41e17 s; oceanic buoyancy-with-salinity; genesis F_U = 1.18e53 (Q_s=0). Two Rule-7 transcription corrections self-caught (ρ_Λ c⁴ form, cascade R_basic vs ceiling — both disclosed). The package now exposes **2,830 Python functions / 2,484 named callables** across 8 modules.
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.352.0)
+## What is currently shipped (v0.353.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -58,7 +58,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-110** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-150** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

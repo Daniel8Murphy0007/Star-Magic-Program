@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.352.0"
-description = "UQFF Star-Magic-Program v0.352.0: CoAnQi mine (6MB C++, 1173 classes) + deep-capture frontier to PAPER_110. DPM layer ladder hbar c i^5/r^2, emergent Ug1 = mu_s grad(M) = B G M R (gravity from magnetism), sin(pi/26) gate, SSq = 0.755^2 origin, BH thermodynamics chain, SgrA* Newtonian-decayed, Whittaker 26-closure, aether drag on UA vacuum. 2793 functions, 2447 named, 8 modules. Registry 3170 rows. Gate 2299."
+version = "0.353.0"
+description = "UQFF Star-Magic-Program v0.353.0: deep-capture frontier -> PAPER_150 (batches 111-150). kappa=0.35/700=5e-4 EXACT observational origin, Hoyle state 6.654 MeV via SSq geometric sum, 40/60 split=(D_phys,D_BSFG)/SO_5 EXACT, 3C273 cascade 1.5^12=129.7, Higgs ladder n=12.30, density-ladder pivot rho13=rho_SCm, PToE resonance k_A=0.4604V, 2 Rule-7 self-corrections. 2830 functions, 2484 named, 8 modules. Registry 3207 rows. Gate 2318."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

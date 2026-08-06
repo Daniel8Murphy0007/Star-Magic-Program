@@ -6275,6 +6275,16 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.353.0] - 2026-08-05 - DEEP-CAPTURE FRONTIER -> PAPER_150 (batches 111-150)
+- 37 new equation-library fns across 4 batches. Headliners: kappa = 0.35/700 = 5e-4 EXACT (registry kappa
+  observational origin, Fermi-4LAC; dual route w/ PAPER_2112 derivative), Hoyle state 6.654 MeV via SSq
+  geometric sum 2.080 (PAPER_132), 40/60 gravity-quantum split = (D_phys,D_BSFG)/SO_5 EXACT (PAPER_143),
+  3C273 cascade 1.5^12 = 129.7, Higgs ladder n = 12.30, density-ladder pivot rho^(13) = rho_SCm EXACT +
+  Ug activation gates, S_n = 2 SSq E_8, eps_UA = 4.3%, PToE resonance pair k_A = 0.4604 V, cosmic-glue
+  dUg template, Hubble time 4.41e17 s, genesis F_U = 1.18e53.
+- 2 Rule-7 self-corrections disclosed: rho_Lambda c^4 dimensional form; cascade R_basic vs ceiling.
+- MEASURED: 2,830 total fns | 2,484 named | 8 modules | registry 3,207 rows | GRAPH 4,598 | gate 2,318 green.
+
 ## [0.352.0] - 2026-08-05 - CoAnQi MINE + DEEP-CAPTURE FRONTIER -> PAPER_110
 - CoAnQi complex (6MB MAIN_1_CoAnQi.cpp 1,173 classes + 279-class enhancements) mined Rule E:
   DPM layer ladder E_i = hbar c i^5/r^2, emergent Ug1 = mu_s grad(M) = B G M R (gravity-from-magnetism

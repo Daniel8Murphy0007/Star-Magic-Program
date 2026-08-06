@@ -141,3 +141,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS v0.352.0
 - CoAnQi mined + frontier PAPER_110. 2,793 fns | 2,447 named | registry 3,170 | GRAPH 4,544 | gate 2,299. New future-target: 0.755 decomposition.
+
+
+## LIVE STATUS v0.353.0
+- Frontier PAPER_150. 2,830 fns | 2,484 named | registry 3,207 | GRAPH 4,598 | gate 2,318. kappa dual-route closed.

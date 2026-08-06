@@ -57,3 +57,4 @@ ml_stated_111,rule7_disclosed,111 ml_* return stated values with formula disclos
 inflation_force_core,open_ruling,"Q-DPMCOSMO internal inconsistency; constants transcribed faithfully, 1.318e17 returned, disclosed"
 rulings_pending,open_ruling,Q-2118 + Q-1412 + Q-DPMCOSMO await Daniel; ml_ stated-111 formulas disclosed via formula_of
 ssq_0755,future_target,0.755 base of SSq origin identity not yet decomposed into primitives (PAPER_094)
+rule7_transcriptions,disclosed,rho_lambda c^4 form + cascade basic-vs-ceiling both disclosed in docstrings/gate

@@ -141,3 +141,17 @@ tde_fallback,2pi sqrt(R_t^3/GM),,event-specific,PAPER_087,AT2019qiz,0.0
 ssq_origin,0.755^2,,0.570025,PAPER_094,EXACT_origin,0.004
 whittaker_closure,sum 26 (phi+chi),,<1e-10,PAPER_097,EXACT,0.0
 plasma_freq_thz,sqrt(n_e e^2/eps0 m_e),,n-dependent,PAPER_100,canonical,0.0
+higgs_ladder_n,log10(E)+20,,12.30,PAPER_112,ladder_placement,0.0
+resonance_cascade,R_basic^12,1.5^12,129.7,PAPER_115,3C273,0.0
+rho_lambda_c4,Lambda c^4/8piG,,5.3e-10 J/m3,PAPER_118,Rule7_c4_corrected,0.0
+kappa_origin,0.35/700,Fermi-4LAC fit,5e-4/day,PAPER_125,EXACT_origin,0.0
+halflife_ereact,tau ln2,2000*0.693,1386 days,PAPER_125,3.80 yr,0.0
+doubly_magic_sn,2 SSq E_8,,1.14e-12 J,PAPER_124,Pb-206,0.0
+eps_ua,rho_UA/rho_total,,0.043,PAPER_126,Gaia 4.3%,0.0
+hoyle_state,E_0 sum(SSq^k)+dE_SCm,3*2.08+0.414,6.654 MeV,PAPER_132,alpha_BEC,0.28
+ssq_geometric_sum,1+SSq+SSq^2+SSq^3,,2.080,PAPER_132,partial_sum,0.0
+density_ladder_pivot,rho_0 10^(n-13),n=13,rho_SCm,PAPER_137,EXACT_pivot,0.0
+genesis_fu,E_react v^1 chain,,1.18e53,PAPER_133,Q_s=0,0.0
+forty_sixty,"(D_phys,D_BSFG)/SO_5","(4,6)/10","(0.4,0.6)",PAPER_143,EXACT,0.0
+hubble_time,1/H_0,A_5+SO_5 route,4.41e17 s,PAPER_143,registry,0.0
+ptoe_anchor,k_A hydrogen,,0.4604 V,PAPER_142,resonance,0.0

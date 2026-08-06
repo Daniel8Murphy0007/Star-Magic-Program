@@ -5168,3 +5168,9 @@ until 300+ done.
 - Deep-capture 081-110 (3 batches): BH thermo chain, SSq = 0.755^2 origin, Whittaker closure, Friedmann,
   FRB, plasma frequency, YM min excitation, Bose, Y_e, SgrA* Newtonian-decayed decomposition.
 - 4 dup-catches auto-resolved. MEASURED: 2793 fns | 2447 named | registry 3170 | GRAPH 4544 | gate 2299, exit 0.
+
+## 2026-08-05 - v0.353.0 SHIP: FRONTIER 150 (batches 111-150)
+- 4 batches, 37 fns: kappa=0.35/700 EXACT origin, Hoyle 6.654 via SSq sum 2.08, 40/60=(D_phys,D_BSFG)/SO_5,
+  cascade 1.5^12, Higgs n=12.30, ladder pivot, S_n=2 SSq E_8, eps_UA 4.3 pct, PToE k_A=0.4604V, cosmic-glue
+  template, Hubble time. 2 Rule-7 self-corrections (rho_Lambda c^4, cascade basic-vs-ceiling).
+- MEASURED: 2830 fns | 2484 named | registry 3207 | GRAPH 4598 | gate 2318, exit 0.

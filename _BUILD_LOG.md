@@ -140,3 +140,14 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.352.0 SHIP PREP (CoAnQi + frontier 110)
 [2026-08-05] SHIP_PREP v0.352.0 — all files updated; gate green
+
+[2026-08-05] GATE_PASS v0.353.0 deep-capture 111-120 — 2303 assertions: OK (jet/counter-jet phase pairing, Higgs ladder n=12.30, blazar LFs, heliosheath Ug2+compression, 3C273 cascade 1.5^12=129.7, SSq^N vacuum cascade, rho_Lambda c^4 Rule-7 correction). FRONTIER -> PAPER_120.
+
+[2026-08-05] GATE_PASS v0.353.0 deep-capture 121-130 — 2309 assertions: OK (kappa=0.35/700=5e-4 EXACT origin, t_half=1386d, S_n=2 SSq E_8, n_virt=4.20, eps_UA=4.3%, rho_DM final chain, triadic band cos30, 26-term potential, diffusion E^0.5). FRONTIER -> PAPER_130.
+
+[2026-08-05] GATE_PASS v0.353.0 deep-capture 131-140 — 2314 assertions: OK (Hoyle 6.654 MeV via SSq geometric sum 2.08, Y_e beta[UA] form, genesis F_U 1.18e53 Q_s=0, quasar-jet radial SCm force, core-field oscillation + Ug3 Hamiltonian, density ladder 10^(n-13) pivot + activation, SF mass rate, quantum f-factor). FRONTIER -> PAPER_140.
+
+[2026-08-05] GATE_PASS v0.353.0 deep-capture 141-150 — 2318 assertions: OK (40/60=(D_phys,D_BSFG)/SO_5 EXACT, t_Hubble 4.41e17, PToE resonance pair k_A=0.4604V, oceanic buoyancy, Hubble mass decay, cosmic-glue dUg template). FRONTIER -> PAPER_150.
+
+## 2026-08-05 — v0.353.0 SHIP PREP (frontier 150)
+[2026-08-05] SHIP_PREP v0.353.0 — all files updated; gate green

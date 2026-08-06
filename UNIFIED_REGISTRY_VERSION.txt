@@ -1,2 +1,2 @@
 # UQFF Star-Magic Registry Version Marker
-v0.352.0 | 2026-08-05 | 342 dispatches | 2793 total Python functions (2447 named, 8 modules) | deep-capture frontier PAPER_110 | 3170 registry rows | GRAPH 4544 edges | 772 papers mapped | gate 2299
+v0.353.0 | 2026-08-05 | 342 dispatches | 2830 total Python functions (2484 named, 8 modules) | deep-capture frontier PAPER_150 | 3207 registry rows | GRAPH 4598 edges | 772 papers mapped | gate 2318

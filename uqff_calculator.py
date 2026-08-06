@@ -73,10 +73,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.352.0"
+VERSION = "0.353.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.352.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.353.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -3632,6 +3632,184 @@ def sgra_gravity_decomposition(g_newton, t, g_ug4, g_muge, kappa=None):
     DECAYED at galactic age: e^-8.21e8 ~ 0 - Ug4+MUGE carry the field)."""
     if kappa is None: kappa = 5.0e-4 / 86400.0
     return g_newton * math.exp(-min(kappa * t, 700.0)) + g_ug4 + g_muge
+
+
+def jet_buoyancy_oscillating(rho_jet, g_eff, h_jet, omega, t_n):
+    """PAPER_111: jet buoyancy U_b = rho_jet g_eff h_jet cos(omega t_n) (RACS Doppler jet; counter-jet at +pi/omega)."""
+    return rho_jet * g_eff * h_jet * math.cos(omega * t_n)
+
+def counterjet_phase_offset(t_n1, omega):
+    """PAPER_111: counter-jet half-period offset t_n2 = t_n1 + pi/omega (jet/counter-jet phase pairing)."""
+    return t_n1 + math.pi / omega
+
+def energy_ladder_index(E_joules):
+    """PAPER_112: inverse 26-ladder map n = log10(E) + 20 (Higgs 2.005e-8 J -> n = 12.30; PDG ladder placement)."""
+    return math.log10(E_joules) + 20.0
+
+def blazar_luminosity_function(L, z, kind='fsrq'):
+    """PAPER_113: Fermi-LAT blazar LF dn/dlogL ~ L^-1.7 (1+z)^3.5 (FSRQ) or L^-2.0 (1+z)^2.0 (BL Lac)."""
+    if str(kind).lower().startswith('f'):
+        return L ** -1.7 * (1.0 + z) ** 3.5
+    return L ** -2.0 * (1.0 + z) ** 2.0
+
+def heliosheath_ug2(r, v_sw, alpha_cr=1.0, q_p=1.602176634e-19, m_p=1.67262192e-27, c=None):
+    """PAPER_114: heliosheath U_g2 = alpha_CR q_p^2 v_sw^2/(r^2 m_p c^2) (PSP charge-reactivity form)."""
+    if c is None: c = C_UQFF_DERIVED
+    return alpha_cr * q_p ** 2 * v_sw ** 2 / (r ** 2 * m_p * c ** 2)
+
+def heliosheath_compression(U_g2_helio, P_ram):
+    """PAPER_114: heliosheath density compression rho_helio/rho_sw = 1 + U_g2_helio/P_ram."""
+    return 1.0 + U_g2_helio / P_ram
+
+def resonance_cascade(N, omega, t_list=None, SSq=None, R_basic=1.5):
+    """PAPER_115: 3C273 resonance cascade R_N = prod_{k=1}^{N}(1 + SSq |cos(omega t_k)|).
+    Paper's stated R_total = R_basic^N = 1.5^12 = 129.7 (R_basic = 1.5 time-averaged step,
+    ~ 1 + SSq <|cos|>); the instantaneous ceiling is (1+SSq)^N = 1.57^12 = 224. Default returns
+    the paper's stated R_basic^N; pass t_list for the exact product."""
+    if SSq is None: SSq = SSQ
+    if t_list is None:
+        return R_basic ** N
+    return math.prod(1.0 + SSq * abs(math.cos(omega * t)) for t in t_list[:N])
+
+def vacuum_ssq_cascade(N, rho_lambda=1.11e-9, SSq=None):
+    """PAPER_118: dark-matter vacuum cascade rho^(N) = rho_Lambda [SSq]^N (JCAP DM-vacuum ladder)."""
+    if SSq is None: SSq = SSQ
+    return rho_lambda * SSq ** N
+
+def rho_lambda_from_lambda(Lambda=1.1e-52, G=None, c=None):
+    """PAPER_118: vacuum ENERGY density rho_Lambda = Lambda c^4/(8 pi G) J/m^3 (SM-comparison conversion form;
+    gives 5.3e-10 J/m^3 at UQFF Lambda - consistent with the PAPER_2094/1226 dual-manifestation range.
+    Note: paper's printed 'c^2' with 1.11e-9 J/m^3 is dimensionally the c^4 energy form - transcribed as c^4 per Rule 7)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return Lambda * c ** 4 / (8.0 * math.pi * G)
+
+
+def potential_26_expansion(coeffs, r):
+    """PAPER_122: 26-term radial potential V(r) = sum_{n=1}^{26} a_n r^n (PDG 241-particle compression basis)."""
+    return sum(a * r ** (n + 1) for n, a in enumerate(coeffs[:26]))
+
+def even_power_potential(r, a2, a4, a6, a8):
+    """PAPER_122: even-power truncation V(r) = a2 r^2 + a4 r^4 + a6 r^6 + a8 r^8 (parity-even channel)."""
+    return a2 * r ** 2 + a4 * r ** 4 + a6 * r ** 6 + a8 * r ** 8
+
+def virtual_quark_level(dn=0.20):
+    """PAPER_123: ATLAS virtual-quark fractional ladder level n = 4 + dn = 4.20 (winding 1/5 = 2/SO_5 offset)."""
+    return 4.0 + dn
+
+def doubly_magic_separation(E_8=1e-12, SSq=None):
+    """PAPER_124: Pb-206 doubly-magic neutron separation S_n = 2 [SSq] E_8 = 1.14e-12 J (n=8 shell closure)."""
+    if SSq is None: SSq = SSQ
+    return 2.0 * SSq * E_8
+
+def kappa_derivation_4lac():
+    """PAPER_125: kappa derived from Fermi-4LAC decay fit = 0.35/700 = 5e-4 /day EXACT (registry kappa origin)."""
+    return 0.35 / 700.0
+
+def halflife_from_tau(tau_days=2000.0):
+    """PAPER_125: superconductive decay half-life t_1/2 = tau ln(2) = 1386 days = 3.80 yr (E_react envelope)."""
+    return tau_days * math.log(2.0)
+
+def ua_distance_correction(d_g, eps_ua=0.043):
+    """PAPER_126: Gaia-Sgr A* geometric distance d = d_g (1 + eps_UA); eps_UA = rho_UA/rho_total = 0.043 (4.3%)."""
+    return d_g * (1.0 + eps_ua)
+
+def ua_coupling_solar_wind(delta_sw, F_U):
+    """PAPER_127: solar-wind UA coupling [UA] = delta_sw/F_U (= 0.0145 ~ 1e-2 at Alfven point, PSP)."""
+    return delta_sw / F_U
+
+def dm_density_final(rho_lambda=1.11e-9, N=3, eps_ua=0.043, SSq=None):
+    """PAPER_128: final dark-matter density rho_DM = rho_Lambda [SSq]^N (1 - eps_UA) (N=3 hop chain, JCAP)."""
+    if SSq is None: SSq = SSQ
+    return rho_lambda * SSq ** N * (1.0 - eps_ua)
+
+def triadic_time_ratio(t_n, band=3.0):
+    """PAPER_129: triadic time-reversal band factor cos(pi t_n/band) (3C273 negative-time branch; symmetric |cos|)."""
+    return math.cos(math.pi * t_n / band)
+
+def diffusion_energy_scaling(E, D_0=1.0, exponent=0.5):
+    """PAPER_130: cosmic-ray diffusion D_E = D_0 E^0.5 (IceCube beta_i chain; p^-2.2 spectrum companion)."""
+    return D_0 * E ** exponent
+
+
+def electron_fraction_ua(ua=1e-2, beta_i=None):
+    """PAPER_131: GW170817 electron fraction Y_e = beta_i [UA]/(1 + beta_i [UA]) (UQFF derivation; <= 0.25 r-process)."""
+    if beta_i is None: beta_i = BETA_I
+    x = beta_i * ua
+    return x / (1.0 + x)
+
+def hoyle_ssq_sum(E_0=3.0, dE_scm=0.414, SSq=None, terms=4):
+    """PAPER_132: Hoyle-state energy E = E_0 (1 + SSq + SSq^2 + SSq^3) + dE_SCm = 3.0 x 2.08 + 0.414 = 6.654 MeV
+    (SSq geometric partial sum 2.08; Tohsaki alpha-BEC)."""
+    if SSq is None: SSq = SSQ
+    return E_0 * sum(SSq ** k for k in range(terms)) + dE_scm
+
+def genesis_fu_value():
+    """PAPER_133: F_U genesis complete-derivation magnitude = 1.18e53 (Q_s = 0 quantum signature - undetectable
+    by standard instruments; the E_react v^1 = 1e46 chain)."""
+    return 1.18e53
+
+def scm_jet_radial_force(rho_scm_jet, v_scm, r, alpha, t):
+    """PAPER_135: quasar-jet radial SCm force F = (rho_SCm v_SCm^2/r) e^(-alpha t) (negative-time asymmetric)."""
+    return rho_scm_jet * v_scm ** 2 / r * math.exp(-alpha * t)
+
+def core_field_oscillation(t, omega_c, B_0=1e3, dB=0.4):
+    """PAPER_136: planetary-core superconductive field B_j(t) = 1e3 + 0.4 sin(omega_c t) T (Ug3 SCm enhancement)."""
+    return B_0 + dB * math.sin(omega_c * t)
+
+def magnetic_hamiltonian_ug3(B_list, omega_s, t, k_3=1.8, mu_0=None):
+    """PAPER_136: Ug3 magnetic Hamiltonian H = k_3 sum_j B_j^2/(2 mu_0) cos(omega_s t) (core-string energy)."""
+    if mu_0 is None: mu_0 = 4.0 * math.pi * F_TRZ ** 7
+    return k_3 * sum(B ** 2 / (2.0 * mu_0) for B in B_list) * math.cos(omega_s * t)
+
+def scm_density_ladder(n, rho_0=RHO_SCM):
+    """PAPER_137: SCm density ladder rho^(n) = rho_SCm,0 10^(n-13) (level-13 pivot; kg/m^3-labeled in paper -
+    J/m^3 per PAPER_2147 supersession)."""
+    return rho_0 * 10.0 ** (n - 13)
+
+def ug_activation_threshold(rho_scm, n_i, rho_0=RHO_SCM):
+    """PAPER_137: Ug_i activation criterion rho_SCm >= rho_0 10^(n_i - 13) (level-gated term switching)."""
+    return rho_scm >= rho_0 * 10.0 ** (n_i - 13)
+
+def sf_mass_loss_rate(M_0, t, tau_sf):
+    """PAPER_138: NGC3603 star-formation mass rate dM/dt = -(M_0/tau_SF) e^(-t/tau_SF) (burst decay)."""
+    return -(M_0 / tau_sf) * math.exp(-t / tau_sf)
+
+def quantum_correction_factor(omega, hbar=1.054571817e-34, m_e=9.1093837015e-31, c=None):
+    """PAPER_140: quantum correction f = 1 + hbar omega/(m_e c^2) (dual-monopole vacuum fine-structure)."""
+    if c is None: c = C_UQFF_DERIVED
+    return 1.0 + hbar * omega / (m_e * c ** 2)
+
+
+def oceanic_buoyancy_salinity(rho_w=1025.0, V=0.2, g=9.81, salinity=0.035):
+    """PAPER_141: oceanic buoyancy term = rho_w V g (1 + salinity) (H2O azeotrope; 3.5% salinity boost)."""
+    return rho_w * V * g * (1.0 + salinity)
+
+def atomic_resonance_amplitude(Z, A, k_A=0.4604, A_H=1.008, delta_pair=0.0):
+    """PAPER_142: PToE resonance amplitude A_res = k_A Z (A/A_H)(1 + delta_pair) (k_A = 0.4604 V hydrogen anchor)."""
+    return k_A * Z * (A / A_H) * (1.0 + delta_pair)
+
+def atomic_resonance_frequency(E_bind_J, A, A_H=1.008, S_shell=0.0, h=6.62607015e-34):
+    """PAPER_142: PToE resonance frequency f_res = (E_bind/h)(A_H/A)(1 + S_shell) (per-isotope hydrogen-referenced)."""
+    return (E_bind_J / h) * (A_H / A) * (1.0 + S_shell)
+
+def forty_sixty_split():
+    """PAPER_143: MUGE-vs-quantum contribution split: UQFF gravity 40%, Schrodinger/Dirac 60%
+    = (D_phys, D_BSFG)/SO_5 EXACT ((4,6)/10)."""
+    return (D_PHYS / globals()['SO_5'], 6 / globals()['SO_5'])
+
+def hubble_time(H0_si=2.2685e-18):
+    """PAPER_143: Hubble time t_H = 1/H_0 = 4.41e17 s (registry H_0 = A_5+SO_5 route)."""
+    return 1.0 / H0_si
+
+def hubble_mass_decay(M_H0, t, lam=1.0, H0_si=2.2685e-18):
+    """PAPER_143: hydrogen-mass Hubble decay M_H(t) = M_H0 e^(-lambda t/t_Hubble)."""
+    return M_H0 * math.exp(-lam * t * H0_si)
+
+def cosmic_glue_delta_ug(k_i, X, M_bh, d_g, alpha, t, t_n):
+    """PAPER_144: StarMagic cosmic-glue delta template dUg_i = k_i X (M_bh/d_g) e^(-alpha t) cos(pi t_n)
+    (X = B Omega_g | q v_s | rho_vac_SCm per channel - the SCm-glue paradigm)."""
+    return k_i * X * (M_bh / d_g) * math.exp(-alpha * t) * math.cos(math.pi * t_n)
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

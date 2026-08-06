@@ -236,3 +236,13 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
   systems departing i^5 falsifies.
 - **SSq = 0.755^2** (PAPER_094): if 0.755 proves non-decomposable, SSq remains primitive; if it decomposes,
   the 9-primitive count drops again.
+
+
+## v0.353.0 falsifiable additions
+- **kappa dual-route** (PAPER_125/2112): observational 0.35/700 must remain consistent with (SO_5/2)F_TRZ^4;
+  any blazar-population decay refit departing 5e-4/day breaks the convergence.
+- **Hoyle via SSq sum** (PAPER_132): the 7.654 MeV state (minus 1 MeV offset) as E_0*2.080+0.414; improved
+  alpha-BEC calculations test the geometric-sum route.
+- **40/60 split** (PAPER_143): hydrogen ground-state decompositions must apportion 40% MUGE / 60% quantum.
+- **Density-ladder activation** (PAPER_137): Ug terms switch at rho thresholds 10^(n-13); astrophysical systems
+  crossing thresholds should show term onset/offset.
