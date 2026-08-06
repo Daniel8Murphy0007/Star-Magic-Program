@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.354.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.354.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.355.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.355.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2346%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2484%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.354.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.355.0 complete-compile campaign live**
 
-**This release (v0.354.0): RULE 7 REVISED + THE FULL-CENSUS RECOVERY.** Daniel's ruling canonized: **Rule 7 captures ALL data** — formula, stated value, AND back-solved implied parameters; disclosure annotates, never prohibits. The retrofit immediately produced primitive-rung discoveries: **Holmlid ξ = 9.98e-22 ≈ F_TRZ²¹ = F_TRZ^(D_crit−SO_5/2)** (0.16% — the 630 eV chain closes), **G593 E₀ = 1.0024e-20 ≈ F_TRZ²⁰ = the 26-chain base** (0.24% — the parameter-free G chain closes), **Q-1412 Φ_implied = 0.924 ≈ 12/13 = (D_crit/2−1)/(D_crit/2)** (0.09%), 8 ml_ implied ratios (more rungs: F_TRZ²¹/²⁶/¹⁸, SO_5²), and the **S_26^(3) namespace collision** exposed (eq32 summation 1.54e5 vs LENR anchor 1.4531e26 — two objects, one name). The Daniel-directed **deep search of PAPER_001-170** then censused every display equation (632 in 001-080 alone) against the library and recovered **36 missed forms**, headlined by **[SSq]_Planck = √(Ω_DM/Ω_Λ) = 0.622 — THE ORIGIN of the cross-band GW damping value**, the TDE t^(−5/3) fallback law, the 5-harmonic resonant master, full compressed Ug2/Ub_i, aDPM Doppler gravity, jet injection (γ−1)=6.09 at γ=7.09, quantum damped amplitude, QNM shifts, Archimedes ρ_eff, nuclear-BEC T_c pair, DCS tan⁴θ_C, CKM unitarity, VLQ mixing. Batches 151-170 also ship (SC gap → T_c = 30 K = T_SCm/2, hybrid blend β=e^(−B/B_crit), wormhole exotic density, v_SCm=0.99c → γ=7.09, Sgr A* decomposition era continues). **Full-census standing rule canonized** — batch sweeps take every display equation, never head-3. The package now exposes **2,888 Python functions / 2,542 named callables** across 8 modules.
+**This release (v0.355.0): DEEP-CAPTURE PAPER_171-250 — EIGHT BATCHES, +224 NAMED FUNCTIONS.** The deep-capture frontier advances 80 papers in one arc: the **S48 thread-381a8fe7 core** (full Ug1-Ug4/Um closed forms with the May-2025 provenance couplings k=(1.5,1.2,1.8,2.0), the 9-term compressed and 13+1-term resonance MUGE chains, the 26-level E_n hierarchy, SCm reactor/moment/string helpers), the **S49 audit** (H-magic combinatorics behind the Star-Magic name, YM Hamiltonian H_Ug3+H_SCm+H_UA, quasar Navier-Stokes with e^(+/-kappa t) arrow-of-time asymmetry, pi-cycle/Riemann-zeta spectral map, 7-object catalog with SGR F_U = 1.9994e18 chain, phonon-corrected NFW f=0.891), the **S50 master systems** (triadic FU_g1/R(t)/FU_Bi with the 8-lock f_Ub = Dk_eta x 10 x V-ratio chain, F_UBii extended integral + 65-variant taxonomy frame +/-F_rel(F_X/E_LEP)Q_wave, Um 55-variant catalogue wrapper, GW chirp-QNM-BZ-kilonova lifecycle, cosmic dawn, Ramanujan Q_n recurrence with Q_26(0)=25!! and the n=15-truncation back-solve of the stated 9.74e6, vortex avalanches alpha=1.6, 99-system compression census, H_res suite, CR/WHIM, Crab PWN r(t)), and the **S56-59 MUGE family** (nebular (1+/-E) sign law, Saturn dual-gravity with ring-tension dr back-solved to 3.4 m, SGR 0501 11-term novel channels, Source10 5-force master, vacuum repulsion F=k drho M v, THz conduit, universal term_q saturation floor, dual-mode oscillatory gravity, SN 1006 LENR-dominant regime). **Cross-paper consistency wins pinned in the gate**: f_Ub(V=1/33) = 2.20e8 EXACT (PAPER_196<->216) and both stellar-wind papers back-solving to the same rho_fluid = 1e-12 (PAPER_227<->228). **15+ source arithmetic slips caught and disclosed** (formulas transcribed faithfully per Rule 7): the 1e9 family (E_react, kappa_FYS), 10x slips (H_SCm 4.37e30->e31, Lambda-c2/3), PAPER_213's 1e17 k_nuc slip, PAPER_240's 24-order Q_wave slip, mojibake exponents. One infrastructure fix: **formula_of namespace fall-through** (pi_/ml_/sc_ prefixed calculator functions no longer shadowed by family modules). The package now exposes **3,112 Python functions** across 8 modules; registry 3,488 rows, graph 5,115 edges, citations 772 papers, gate **2,484 assertions green**.
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.354.0)
+## What is currently shipped (v0.355.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -58,7 +58,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-170** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-250** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

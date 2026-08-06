@@ -169,3 +169,7 @@ ssq_0622_origin,sqrt(Omega_DM/Omega_L),sqrt(0.3869),0.622,PAPER_118,RECOVERED_or
 tde_power_law,(t/t_fb)^-5/3,,decay,PAPER_087,RECOVERED,0.0
 jet_gamma_709,(gamma-1)=6.09,gamma=7.09,6.09,PAPER_161,RECOVERED,0.0
 scm_core_P,rho v^2 P_core,1e15*1e16*1e-3,1e28 Pa,PAPER_138,RECOVERED,0.0
+f_ub_volume_1_33,Dk_eta x 10 x V-ratio,7.25e8*10/33,2.1970e8,PAPER_196/216 cross-check,DEEP_CAPTURE,0.14
+q26_constant,25!!,double factorial 25,7.906e12,PAPER_205 corrected,DEEP_CAPTURE,0.0
+vacuum_li26,SSq Li_26(SSq),sum SSq^n/n^26,0.5700000048,PAPER_205,DEEP_CAPTURE,0.0
+rho_fluid_wind_family,back-solved,a_wind/(rho_w v^2),1e-12 kg/m^3,PAPER_227+228 consistency,RULE7_IMPLIED,0.0

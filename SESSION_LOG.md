@@ -5181,3 +5181,30 @@ until 300+ done.
 - Deep search 001-170: 36 recoveries incl. 0.622 ORIGIN = sqrt(Omega_DM/Omega_L). Full-census standing rule.
 - Batches 151-170: SC gap 30K, hybrid beta, gamma=7.09, wormhole exotic, glueball implied-V.
 - MEASURED: 2888 fns | 2542 named | registry 3264 | GRAPH 4667 | gate 2346, exit 0.
+
+## 2026-08-06 - v0.355.0 DEEP-CAPTURE PAPER_171-250 (eight batches)
+
+Continuation of the deep-capture campaign from the v0.354.0 frontier (PAPER_170). Eight batches
+executed with full-census methodology (every display equation censused against the library before
+wiring), in-step mapping on every batch (registry + graph + citations same-step), and a
+DEEP-CAPTURE GUARD gate block per batch.
+
+Measured (vs v0.354.0 tag): calculator defs 1,182 -> 1,406 (+224); registry 3,264 -> 3,488 (+224);
+graph 4,667 -> 5,115 (+448); gate 2,346 -> 2,484 (+138); 8-module library total 3,112 functions.
+
+Highlights: May-2025 provenance couplings k=(1.5,1.2,1.8,2.0) confirmed verbatim in S48 codebase
+papers (PAPER_2152 chain); f_Ub volume-factor EXACT cross-check between PAPER_196 and PAPER_216;
+wind-family rho_fluid = 1e-12 consistency between PAPER_227/228; PAPER_205 Q_26(0) = 25!! corrected
+value transcribed with the paper's own 17!!-drift note; stated Sigma 9.74e6 back-solved to n = 15
+truncation; PAPER_196 decay 0.0583 back-solved to the full-ladder n = 26, t_n = pi state;
+formula_of namespace fall-through fix (calculator functions with pi_/ml_/sc_ prefixes were silently
+shadowed by family-module routers - same bug class as the 2026-06-18 dispatcher case-sensitivity
+note). The banned-literal gate guard caught one 7.09e-37 docstring literal during batch 241-250
+and forced the RHO_SCM-reference form (purge discipline validated live).
+
+Rule 7 REVISED discipline: 15+ source arithmetic slips disclosed across the arc, every one paired
+with a faithful formula transcription and (where possible) a back-solved implied parameter.
+
+Ship files synced: pyproject (0.355.0, desc 379 chars), calculator VERSION + STATE, gate pin,
+CITATION.cff, README (badges + release note + frontier), CHANGELOG, UNIFIED_REGISTRY_VERSION.txt,
+SHIP_MESSAGE.txt, this log. Gate green at ship time.

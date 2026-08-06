@@ -147,5 +147,5 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 - Frontier PAPER_150. 2,830 fns | 2,484 named | registry 3,207 | GRAPH 4,598 | gate 2,318. kappa dual-route closed.
 
 
-## LIVE STATUS v0.354.0
+## LIVE STATUS v0.355.0
 - RULE 7 REVISED + full-census 001-170 (36 recoveries + 6 implied captures). 2,888 fns | 2,542 named | registry 3,264 | GRAPH 4,667 | gate 2,346. Frontier 170.

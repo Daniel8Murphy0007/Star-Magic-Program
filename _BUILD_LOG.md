@@ -164,3 +164,8 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.354.0 SHIP PREP (RULE 7 REVISED + census)
 [2026-08-05] SHIP_PREP v0.354.0 — all files updated; gate green
+
+## v0.355.0 (2026-08-06)
+Deep-capture PAPER_171-250 (8 batches, +224 fns). Calculator 1,406 defs; library 3,112.
+Registry 3,488 / graph 5,115 / citations 772. Gate 2,484 green. formula_of fall-through fix.
+15+ source slips disclosed; 3 cross-paper consistency pins.

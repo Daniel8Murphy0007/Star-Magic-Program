@@ -1,31 +1,34 @@
-v0.354.0 - RULE 7 REVISED + THE FULL-CENSUS RECOVERY (001-170) + batches 151-170
+v0.355.0 - DEEP-CAPTURE PAPER_171-250: +224 NAMED FUNCTIONS (EIGHT BATCHES)
 
-RULE 7 REVISED (Daniel ruling, canonized): capture ALL data - formula + stated value + back-solved
-implied parameters. Disclosure annotates; it never prohibits. Retrofit discoveries:
-  holmlid_xi_implied   = 9.98e-22 ~ F_TRZ^21 = F_TRZ^(D_crit - SO_5/2)  (0.16%) - 630 eV chain CLOSES
-  g593_scale_implied   = 1.0024e-20 ~ F_TRZ^20 = the 26-chain base       (0.24%) - G chain CLOSES
-  reionization_phi     = 0.9240 ~ 12/13 = (D_crit/2-1)/(D_crit/2)        (0.09%) - Q-1412 candidate
-  glueball V = 4.72e-57 m^3 | DPMcosmo rho = 1.318e-4 J/m^3 | 8 ml_ ratios (rungs: F_TRZ^21/^26/^18, SO_5^2)
-  S_26^(3) NAMESPACE COLLISION exposed: eq32 summation 1.5403e5 vs LENR anchor 1.4531e26.
+The deep-capture frontier advances from PAPER_170 to PAPER_250 in one arc.
 
-FULL-CENSUS DEEP SEARCH 001-170 (Daniel-directed; 632 eqs censused in 001-080 alone): 36 recoveries:
-  ssq_planck_form = sqrt(Omega_DM/Omega_Lambda) = 0.622 - THE 0.622 ORIGIN (PAPER_118)
-  TDE t^-5/3 fallback law (087) | f_AGN = 1+[SCm]/10 (086) | 5-harmonic resonant master + SC gate (089)
-  full compressed Ug2/Ub_i (090) | aDPM Doppler + photon-sphere (091) | beaming ^(3+alpha) (135)
-  jet injection (gamma-1) = 6.09 at gamma = 7.09 (161) | J_DPM current (147) | MUGE lensing (151)
-  quantum damped amplitude e^(-gamma t/2) (016) | Friedmann + xi_Q H (014) | QNM shifts + f_peak (010)
-  Archimedes rho_eff (036) | de Broglie + nuclear-BEC T_c (061) | DCS tan^4 (033) | CKM unitarity (028)
-  VLQ kappa_T (032) | [UA] sound speed (127) | lookback integral (113) | P_SCm = 1e28 Pa (138) + more.
+CAPTURED (calculator 1,182 -> 1,406 defs; 8-module library 3,112 functions):
+- S48 core (171-180): full Ug1-Ug4/Um closed forms (k = 1.5/1.2/1.8/2.0 May-2025 provenance
+  couplings), E_react SCm reactor chain, four corpus-active Ubi forms, compressed-MUGE 9-term set,
+  aDPM resonance chain + afluid normalization back-solve, 26-level E_n hierarchy anchors.
+- S49 audit (181-190): H-magic combinatorics (the Star-Magic name), YM Hamiltonian decomposition,
+  quasar NS forcing with e^(+/-kappa t) arrow-of-time asymmetry, pi-cycle/zeta spectral map,
+  7-object catalog chains (SGR F_U = 1.9994e18), phonon NFW f = 0.891. formula_of namespace
+  fall-through fixed (pi_/ml_/sc_ shadowing).
+- S50 masters (191-210): triadic FU_g1/R(t)/FU_Bi system, F_UBii extended integral + 65-variant
+  taxonomy frame, Um 55-variant wrapper, GW chirp-QNM-BZ-kilonova lifecycle, cosmic dawn,
+  inflation/perturbations, DM structure, Ramanujan Q_n recurrence (Q_26(0) = 25!!; stated 9.74e6
+  back-solves to n = 15 truncation; vacuum Li_26 confirms SSq to 8 digits), vortex avalanches,
+  MOND/LCDM comparison frames.
+- S50 validation + S56-59 MUGE family (211-250): 99-system backbone census, H_res suite,
+  CR/WHIM, triadic Westerlund validation, nebular (1+/-E) sign law, Saturn dual-gravity,
+  SGR 0501 11-term novel channels, Source10 5-force master, vacuum repulsion (3rd repulsive,
+  velocity-coupled), THz conduit pair, universal term_q Heisenberg floor (19-module universality),
+  dual-mode oscillatory gravity, merger boost, SN 1006 LENR-dominant regime.
 
-BATCHES 151-170 (deep-capture frontier -> PAPER_170):
-  SC gap Delta = hbar omega/2 -> T_c = 30 K = T_SCm/2 (BCS half-gap) | hybrid beta = e^(-B/B_crit)
-  wormhole exotic density | regulated zeta Li_s | complexity N^1.754 | v_SCm = 0.99c -> gamma = 7.09
-  mu_s(t) solar-cycle driver | modular compressed g core | EHT aether resonance | Einstein 8piG/c^4
-  glueball 1e-35/state (V-convention captured as implied param).
+CROSS-PAPER CONSISTENCY WINS (gate-pinned):
+- f_Ub(V = 1/33 Boyle) = 2.1970e8 EXACT match to PAPER_216's stated 2.20e8 (PAPER_196 chain).
+- PAPER_227 + PAPER_228 stated a_wind values both back-solve to the SAME rho_fluid = 1e-12 kg/m^3.
+- PAPER_196 decay 0.0583 = full-ladder n = 26, t_n = pi state (not a free parameter).
 
-STANDING RULE CANONIZED: full display-equation census per paper - never head-3.
-Guard catches this ship: 2 duplicates auto-caught + resolved (6 campaign total).
+RULE 7 DISCIPLINE: 15+ source arithmetic slips disclosed with faithful transcription
+(1e9 family: E_react/kappa_FYS; 10x family: H_SCm, Lambda c^2/3; 1e17 k_nuc; 24-order Q_wave;
+12-order g_SN; ring-tension dr 3.4 m vs 10-km claim; mojibake exponents).
 
-MEASURED: 2888 total Python functions | 2542 named callable | 8 modules | 342 dispatches |
-registry 3264 rows | GRAPH 4667 edges | 772 papers mapped | gate 2346 green | 0 dups | 0 malformed.
-Frontier: PAPER_001-170 census-complete. Rule E / Rule 4 / Rule 7-REVISED held.
+IN-STEP MAPPING: registry 3,264 -> 3,488 rows; graph 4,667 -> 5,115 edges; citations 772 papers.
+GATE: 2,346 -> 2,484 assertions, 0 failures. All ship files synced (27-file checklist).

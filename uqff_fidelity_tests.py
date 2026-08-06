@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.354.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.355.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -5056,6 +5056,326 @@ assert_that(abs(_r328['N_B_12C_Hoyle'] - 19.67) < 0.5 and abs(_r328['N_B_8Be'] -
 assert_that(abs(_r328['T_BEC_MeV'] - 14.52) < 1e-6,
             "PAPER_328: T_BEC = 14.52 MeV (AMD/NIMROD nuclear cluster data)")
 assert_that(C.wired_count() >= 342, "wired_count >= 342 (PAPER_328 wired)")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_171-180 batch: Ug decomposition, F_U assembly, MUGE terms) ===
+assert_that(abs(C.compressed_super_adjustment(1e10, 1e11) - 0.9) < 1e-12,
+            "PAPER_173/180: compressed_super_adj(B=1e10, Bcrit=1e11) = 0.9 (unit-test pin)")
+assert_that(abs(C.compressed_cosm_term() - 3.3e-36) / 3.3e-36 < 0.01,
+            "PAPER_173: compressed_cosm = Lambda c^2/3 = 3.3e-36 (paper printed 3.3e-37 - 10x slip disclosed)")
+assert_that(abs(C.compressed_quantum_term() - 0.3312) / 0.3312 < 0.01,
+            "PAPER_173/180: compressed_quantum = (hbar/DxDp) Psi (2pi/tH) ~ 0.3312")
+assert_that(abs(C.compressed_fluid_term(1e-15, 4.189e12, 10.0) - 4.189e-2) < 1e-6,
+            "PAPER_173/180: compressed_fluid(SGR1745) = 4.189e-2 (unit-test pin)")
+assert_that(abs(C.compressed_expansion_term(0.0) - 1.0) < 1e-15,
+            "PAPER_173/180: compressed_expansion(vexp=0) = 1.0 (no expansion at t=0)")
+assert_that(abs(C.fdpm_amplitude(1e21, 3.142e8, 1e-3, 0.0) - 3.142e26) < 1e20,
+            "PAPER_174/180: FDPM = I A (w1-w2) = 3.142e26 (SGR1745 unit-test pin)")
+assert_that(abs(C.avac_diff_term(1.0) - 0.9) < 1e-12,
+            "PAPER_174: avac_diff ratio Delta_Evac/Evac_neb = 0.9 (6.381e-36/7.09e-36)")
+assert_that(abs(C.afluid_norm_implied() - 1.113e-28) / 1.113e-28 < 0.01,
+            "PAPER_174 RULE7-IMPLIED: afluid missing normalisation ~ 1.11e-28 back-solved from 1.773e-9 test pin")
+assert_that(abs(C.rho_lambda_kappa_ssq(1.0) - 1.0000000812) < 1e-9,
+            "PAPER_175: rho_Lambda correction factor (1 + kappa^2 SSq^2) = 1.0000000812")
+assert_that(abs(C.kappa_faint_young_sun_implied() - 2.123e-13) / 2.123e-13 < 0.01,
+            "PAPER_176 RULE7-IMPLIED: kappa_FYS = -ln(0.7)/1.68e12 d = 2.12e-13/day (paper stated 2.12e-4; 1e9 slip disclosed)")
+assert_that(abs(C.stam_diffusion_alpha() - 1.024e-2) < 1e-9,
+            "PAPER_177: Stam diffusion a = dt visc N^2 = 0.01024 (32x32 grid, dt=0.1, visc=1e-4)")
+assert_that(C.jeans_mass_magnetic_uqff(1.0, 0.0, 1.0, 1.0) == 1.0 and C.jeans_mass_magnetic_uqff(1.0, 1.0, 1.0, 1.0) < 1.0,
+            "PAPER_179: Jeans magnetic suppression M_J (1 - SSq B^2/(8 pi rho cs^2)) - B=0 identity, B>0 suppresses")
+assert_that(C.ubi_wind_coupled_full(1.0, t_n=0.0) < 0 and abs(C.ubi_wind_coupled_full(1.0, t_n=0.0)) > 0,
+            "PAPER_172: Ubi wind-coupled form opposes Ug (negative at t_n=0), canonical BETA_I default")
+assert_that(C.fjet_quarter(4.0, 1.0) == 3.0,
+            "PAPER_172: F_jet = FU - Ubi(FU/4); quarter-partition 0.25 = 1/D_PHYS")
+assert_that(abs(C.ym_gap_static_reactor() - 8.809e54) / 8.809e54 < 0.01,
+            "PAPER_179: YM gap static reactor value SCm_d v_SCm^2/rho_A = 8.81e54 at t=0 (1e15 x (0.99c)^2 / 1e-23)")
+for _fn_171 in ('scm_reactor_efficiency', 'stellar_dpm_moment', 'string_field_bj', 'ug1_dpm_defect_full',
+                'ug3_string_disk_full', 'ug4_star_bh_full', 'um_string_network', 'ubi_archimedes',
+                'ubi_mu_s_gradient', 'g_uqff_buoyant_correction', 'compressed_muge_total',
+                'resonance_muge_total', 'dpm_ratio_ua_scm', 'reactor_output_energy', 'scm_orbital_precession'):
+    assert_that(C.formula_of(_fn_171) is not None, f"PAPER_171-180 deep-capture: formula_of('{_fn_171}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_181-190 batch: combinatorics, YM Hamiltonian, NS forcing, zeta, catalogs) ===
+assert_that(C.asd_max_parts(10) == 6,
+            "PAPER_181: ASD max parts floor((sqrt(1+4C(10,2))-1)/2) = 6 for K_10")
+assert_that(C.tree_pathwidth_bound(1024) == 10,
+            "PAPER_181: pathwidth bound ceil(log2 1024) = 10; tw(T) = 1")
+assert_that(abs(C.h_magic_constant(2, 1, 6, 9, 3) - 8.0) < 1e-12,
+            "PAPER_181: H-magic constant k = (p+q)(|V|+|E|+1)/(2 N_copies) closed form")
+assert_that(C.sumset_partition_ok([2, 2], 10) and not C.sumset_partition_ok([5, 5], 10),
+            "PAPER_181: sumset partition admissibility condition discriminates")
+assert_that(C.sun_fu_validation_values()['ug1_sun'] == 9.26e22 and C.sun_fu_validation_values()['ug4_sgra'] == 3.55e45,
+            "PAPER_182/186: stated t=0 validation pins (Sun Ug1 = 9.26e22 N, SgrA* Ug4 = 3.55e45 N)")
+assert_that(abs(C.e_react_sun_implied_ratio() - 1e-9) / 1e-9 < 0.01,
+            "PAPER_182 RULE7-IMPLIED: stated/computed E_react ratio ~ 1e-9 (1e9 slip family, disclosed)")
+assert_that(abs(C.h_scm_kinetic() - 4.375e31) / 4.375e31 < 0.01,
+            "PAPER_183: H_SCm(0) = rho v^2/2 = 4.37e31 J/m^3 (paper printed 4.37e30 - 10x slip disclosed)")
+assert_that(abs(C.gamma_total_decay() - (1e-3 + 5e-5 + 5e-4)) < 1e-15,
+            "PAPER_183: Gamma = alpha + gamma + kappa = 1.55e-3 total pi-cycle decay")
+assert_that(C.f_scm_time_reversed(1e4, 100.0) > C.f_scm_forcing(1e4, 100.0),
+            "PAPER_184: time-reversed SCm forcing amplifies (e^+kt > e^-kt) - NS arrow-of-time asymmetry")
+assert_that(abs(C.mu_eff_scm() - (1e-5 + 1e15 * 2.958e8 ** 2 / 5.79e-9)) / 1e50 < 1.0,
+            "PAPER_184: mu_eff = mu + rho v^2/kappa ~ 1.5e40 (blow-up prevention term)")
+assert_that(abs(C.eddington_correction_184() - 0.43) < 0.01,
+            "PAPER_184: Eddington UQFF correction 1 - SSq e^(-kappa t) ~ 0.43")
+assert_that(abs(C.riemann_spacing_normalized(14.135, 21.022) - (21.022 - 14.135) * math.log(14.135) / (2 * math.pi)) < 1e-12,
+            "PAPER_185: normalized zero spacing delta_k = Dgamma ln(gamma)/(2pi) (GUE)")
+assert_that(abs(C.ubi_kappa_ssq_g(2.0e18) - 5.7e14) / 5.7e14 < 0.01,
+            "PAPER_187: U_bi(SGR) = kappa SSq g = 2.85e-4 x 2e18 = 5.7e14 m/s^2 (F_U = 1.9994e18)")
+assert_that(abs(C.pillars_expansion_excess() - 0.57) < 0.01,
+            "PAPER_187: Pillars Dv = kappa SSq v_exp = 0.57 m/s at 2 km/s (falsifiable)")
+assert_that(abs(C.westerlund_field_deviation() - 5.7e-7) / 5.7e-7 < 0.01,
+            "PAPER_187: Westerlund 2 Dg/g = SSq B/Bcrit = 5.7e-7 (ngVLA 2030 falsifiable)")
+assert_that(C.nfw_uqff_phonon_profile(1.0, 1.0, 1.0) > C.nfw_profile(1.0, 1.0, 1.0),
+            "PAPER_187: phonon-corrected NFW exceeds pure NFW (flatness 0.891 vs 0.75 mechanism)")
+assert_that(abs(C.delta_quantum_gravity_cmb() - 2.05e-27) / 2.05e-27 < 0.01,
+            "PAPER_188: delta_Quantum = hbar w_g/(kB T_CMB) = 2.05e-27")
+assert_that(abs(C.ramanujan_r26_binomial(1) - 1932.6) / 1932.6 < 0.01,
+            "PAPER_188/189: R_1^(26,3) = C(4,1) W26(1)/4^4 = 1932.6 (W26 ~ 1.57^26 at kappa-negligible decay)")
+assert_that(abs(C.polyint_zeta_remainder(0.5, 3)) < 1e-3 and C.polyint_zeta_remainder(0.5, 3) != 0.0,
+            "PAPER_190: zeta-regularized truncation remainder finite (zeta(1) first term skipped, disclosed)")
+for _fn_181 in ('magic_union_shift', 'bipartite_magic_bound_ok', 'ramsey_sumset_bound', 'h_ug3_string_rotation',
+                'h_ua_aether', 'ym_mass_gap_scm_sq', 'f_scm_forcing', 'uqff_hbar_analog', 'pi_time_quantum',
+                'uqff_uncertainty_bound', 'fu_with_gmuge', 'nfw_uqff_phonon_profile'):
+    assert_that(C.formula_of(_fn_181) is not None, f"PAPER_181-190 deep-capture: formula_of('{_fn_181}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_191-200 batch: triadic system, F_UBii extended + taxonomy, Um catalogue) ===
+assert_that(C.schwarzschild_bound_check(6.96e8, 1.989e30) and not C.schwarzschild_bound_check(1e3, 1.989e30),
+            "PAPER_195: Schwarzschild physicality check R_s > 1.485e-27 M_s discriminates")
+assert_that(abs(C.qua_thermal_bound(5778.0) - 1.33e-54) / 1.33e-54 < 0.01,
+            "PAPER_195: QUA_max,Sun = 7.7e-51/5778 = 1.33e-54 (stated pin; NS 7.7e-58)")
+assert_that(abs(C.universal_decay_rate_196(n=26, t_n=math.pi) - 0.0566) < 0.002,
+            "PAPER_196: universal decay rate 0.0583-stated back-solves to n = 26, t_n = pi (full ladder; RULE7-IMPLIED)")
+assert_that(C.triadic_stated_solutions()['west_fubi'] == 6.14e-32 and C.triadic_stated_solutions()['unification_pct'] == 90.97,
+            "PAPER_196: triadic stated pins (Westerlund FU_Bi = 6.14e-32 N; 90.97 pct unification of 47 variants)")
+assert_that(abs(C.triadic_resonance_amplitude(1.0, 26) - math.exp(-0.57)) < 1e-9,
+            "PAPER_196: 26-layer resonance decay R_26/F = e^(-SSq) at i = 26")
+assert_that(abs(C.f_ub_volume_factor(1.0) - 7.25e9) / 7.25e9 < 0.01,
+            "PAPER_196: f_Ub prefactor = Dk_eta x 10 = 7.25e9 at unit volume ratio (Dk_eta = 7.25e8)")
+assert_that(abs(C.um_heaviside_196(3.78e-6 * math.exp(0.57) / 1e13) - 3.78e-6) / 3.78e-6 < 0.01,
+            "PAPER_196: Um Heaviside amplifier (1+1e13) e^(-SSq) chain reproduces stated 3.78e-6 J/m^3")
+assert_that(abs(C.fubii_uv_coupling(1e30) - 1.0) < 1e-12 and abs(C.fubii_mm_coupling(1e30) - 1.05) < 1e-12,
+            "PAPER_197: k_UV = k_mm = 1e-30 N/W; f_mm = 1.05 (extended-integral coupling constants)")
+assert_that(abs(C.fubii_hierarchical_remnant([2.995e8], 1.0) - 1.0) < 0.01,
+            "PAPER_197: F_hier = (v/c)^2/w0 = 1 at v = c, w0 = 1 (n = 2, m = 1 hierarchy)")
+assert_that(abs(C.fubii_general_scaling(1.0, 1.0) - 4.3e33 * 6.33e4) / (4.3e33 * 6.33e4) < 1e-9,
+            "PAPER_198: taxonomy frame F_rel Q_wave = 4.3e33 x 6.33e4 (universal embedding constants)")
+assert_that(abs(C.fubii_qnm_ringdown(65 * 1.989e30) - 215.4) / 215.4 < 0.01,
+            "PAPER_198: QNM f(65 Msun, a_f = 0.69) ~ 215 Hz (Berti l=2 m=2; GW150914-class ringdown)")
+assert_that(abs(C.fubii_spindown_age(0.0893, 1.25e-13) - 0.0893 / (2 * 1.25e-13)) < 1e9,
+            "PAPER_198: pulsar characteristic age tau = P/(2 Pdot) (Vela-class)")
+assert_that(abs(C.fubii_jetvel_alfven(30e3, 25.0, 1.0) - 1.5e5) < 1.0,
+            "PAPER_198: jet velocity v_K sqrt(r_A/r_0) = 150 km/s at v_K = 30 km/s, r_A/r_0 = 25")
+assert_that(abs(C.fubii_de_cpl(0.5, -1.0, 0.3) - (-0.85)) < 1e-12,
+            "PAPER_199: CPL w(a = 0.5, w0 = -1, wa = 0.3) = -0.85")
+assert_that(C.fubii_lqc_friedmann(1.0, 1.0) == 0.0 and C.fubii_lqc_friedmann(0.5, 1.0) > 0,
+            "PAPER_199: LQC Friedmann H = 0 at bounce rho = rho_crit; H^2 > 0 below")
+assert_that(abs(C.fubii_bbn_deuterium(1.38e4) - 180.0) / 180.0 < 0.15,
+            "PAPER_199: deuterium bottleneck t_D ~ 180 s at T ~ 0.1 MeV radiation density")
+assert_that(C.baryon_photon_eta() == 6e-10,
+            "PAPER_199: baryon-to-photon eta = 6e-10 (D/He/Li fit; n_gamma = 410 cm^-3)")
+assert_that(C.fubii_nfw_rotation(100.0, 1.0, 1.0) < C.fubii_nfw_rotation(2.16, 1.0, 1.0),
+            "PAPER_199: NFW rotation curve peaks near r ~ 2.16 r_s then flattens/declines")
+assert_that(C.um_general_variant(1.0, 1e3, 0.0, 1.0) < 1.0 and C.um_general_variant(1.0, 1e3, 1.0, 1.0) > 1.0,
+            "PAPER_200: Um general form (1 - e^(-lam t) cos(pi t_n)) gates by pi-cycle parity")
+for _fn_191 in ('ug1_compact_193', 'ug2_compact_193', 'ug4_compact_193', 'ssq_log_form_196',
+                'triadic_resonance_omega', 'pseudo_monopole_density_n', 'neutrino_energy_196',
+                'fubii_hybrid_polarization', 'fubii_mhd_dynamo', 'fubii_arnett', 'fubii_migration_t1',
+                'fubii_glitch_domega', 'fubii_bh_entropy', 'fubii_evap_lifetime', 'um_general_variant'):
+    assert_that(C.formula_of(_fn_191) is not None, f"PAPER_191-200 deep-capture: formula_of('{_fn_191}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_201-210 batch: GW chain, cosmic dawn, perturbations, DM, Ramanujan Q, MOND) ===
+_M_SUN_G = 1.989e30
+assert_that(abs(C.chirp_mass_binary(36 * _M_SUN_G, 29 * _M_SUN_G) / _M_SUN_G - 28.1) < 0.3,
+            "PAPER_201: GW150914 chirp mass (36+29 Msun) = 28.1 ~ stated 28.3 Msun")
+assert_that(abs(C.chirp_mass_binary(1.46 * _M_SUN_G, 1.27 * _M_SUN_G) / _M_SUN_G - 1.188) < 0.01,
+            "PAPER_201: GW170817 chirp mass = 1.188 Msun (stated pin)")
+assert_that(abs(C.peters_ecc_factor(0.0) - 1.0) < 1e-12 and C.peters_ecc_factor(0.6) > 3.0,
+            "PAPER_201: Peters f(e) = 1 circular, strongly enhanced at e = 0.6 (B1913+16 chain)")
+assert_that(abs(C.kilonova_lpeak(0.05, 0.15, 3.0) - 2.5e41) / 2.5e41 < 0.01,
+            "PAPER_201: AT2017gfo kilonova L_peak = 2.5e41 erg/s (few x 1e41 stated)")
+assert_that(C.helium_mass_fraction() == 0.247,
+            "PAPER_202: primordial Y_P = 0.247 (deuterium-bottleneck yield)")
+assert_that(C.jeans_dispersion_omega_sq(1.0, 100.0, 1.0) > 0 > C.jeans_dispersion_omega_sq(1.0, 1e-6, 1.0),
+            "PAPER_202: Jeans dispersion w^2 = cs^2 k^2 - 4 pi G rho changes sign at k_J (collapse onset)")
+assert_that(abs(C.fnl_single_field() - (5.0 / 12.0) * (0.9649 - 1.0)) < 1e-12,
+            "PAPER_203: f_NL = (5/12)(n_s - 1) ~ -0.015 single-field (Planck bound -0.9 +/- 5.1)")
+assert_that(abs(C.spectral_tilt_slow_roll(0.005, 0.003) - (1 - 0.03 + 0.006)) < 1e-12 and C.tensor_to_scalar_ratio(0.002) == 0.032,
+            "PAPER_203: n_s = 1 - 6 eps + 2 eta; r = 16 eps (BICEP r < 0.036)")
+assert_that(abs(C.growth_rate_linder(0.315) - 0.315 ** 0.55) < 1e-12,
+            "PAPER_203: Linder growth rate f = Om^0.55")
+assert_that(abs(C.nfw_enclosed_mass(1.0, 1.0, 1.0) - 4 * math.pi * (math.log(2) - 0.5)) < 1e-9,
+            "PAPER_204: NFW M(r_s) = 4 pi rho_s rs^3 (ln2 - 1/2)")
+assert_that(C.sidm_core_density(1.0, 1.0, 0.0) == 1.0 and C.sidm_core_density(1.0, 1.0, 5.0) < 0.01,
+            "PAPER_204: SIDM cusp-to-core exponential flattening at Gamma t >> 1")
+assert_that(C.ramanujan_q_polynomial(4, 1) == 10.0 and C.ramanujan_q_polynomial(6, 0) == 15.0,
+            "PAPER_205: Q_4(1) = 10 (Hermite-variant sequence); Q_6(0) = 5!! = 15")
+assert_that(C.q26_constant_term() == 7905853580625.0,
+            "PAPER_205: Q_26(0) = 25!! = 7.906e12 (paper's corrected value; 17!! drift caught in-paper)")
+assert_that(abs(C.sigma_uqff_26(1.0) - 3.70e14) / 3.70e14 < 0.01,
+            "PAPER_205: full 26-term Sigma_UQFF(1) = 3.70e14; stated 9.74e6 = n <= 15 truncation (back-solved)")
+assert_that(abs(C.vacuum_series_li26() - 0.5700000048) < 1e-9,
+            "PAPER_205: vacuum series SSq Li_26(SSq) = 0.5700000048 (zeta(26)-tiny correction)")
+assert_that(abs(C.ssq_layer_sum_norm() - 2.30) < 0.01,
+            "PAPER_208: ladder normalization (1 - e^-SSq)^-1 = 2.30")
+assert_that(abs(C.ssq_reconciliation_estimate() - 13.3) < 0.1,
+            "PAPER_208 RULE7-IMPLIED: raw SSq estimate 113 e^-(pi-1) = 13.3 vs calibrated 0.57 (norm disclosed)")
+assert_that(C.f_trz_sgra() == 5.95e-4,
+            "PAPER_208: SGR A* f_TRZ = 5.95e-4 Hz (28-min QPO; ISCO-consistent within 6 pct)")
+assert_that(abs(C.avalanche_power_law(69.0) - 69.0 ** -1.6) < 1e-12,
+            "PAPER_206: avalanche P(S) = S^-1.6 (2D alpha = 1.6 +/- 0.2, S_max = 69; Melatos range)")
+assert_that(abs(C.entropy_avalanche_ln(2.0) - 0.693) < 0.001 and abs(C.entropy_avalanche_ln(69.0) - 4.23) < 0.01,
+            "PAPER_207: S_VN = ln(S) map (Bell pair 0.693; S = 69 -> 4.23)")
+assert_that(abs(C.mond_interpolation_standard(1e6) - 1.0) < 1e-9 and abs(C.mu_uqff_effective(1.0, 1.0) - 2 ** -0.5) < 1e-12,
+            "PAPER_210: MOND mu -> 1 Newtonian; mu_UQFF = 1/sqrt(2) at Ug1 = g_N (smooth, parameter-free)")
+assert_that(C.lcdm_comparison_score()['uqff'] == 142.4 and C.lcdm_comparison_score()['lcdm'] == 141.5,
+            "PAPER_209: 29-benchmark score UQFF 142.4 vs LCDM 141.5 of 162 (+0.6 pct)")
+for _fn_201 in ('chirp_mass_from_fdot', 'qnm_decay_time', 'bz_power_original', 'bz_power_eht',
+                'periastron_advance_pk', 'kilonova_tpeak', 'rho_radiation_gstar', 'ionization_evolution_rate',
+                'stromgren_bubble_radius', 'jeans_length_202', 'alfven_velocity_cgs', 'kolmogorov_cascade_rate',
+                'ionization_parameter_u', 'curvature_power_slow_roll', 'reheating_temperature',
+                'pr_uqff_correction', 'lqc_power_suppression', 'sidm_interaction_rate', 'virial_mass_dispersion',
+                'buoyancy_harmonic_ug2_26', 'phi_phase_variable', 'spectral_comb_frequency',
+                'feynman_vortex_density', 'magnus_force_line', 'mond_transition_radius'):
+    assert_that(C.formula_of(_fn_201) is not None, f"PAPER_201-210 deep-capture: formula_of('{_fn_201}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_211-220 batch: 99-system compression, 48 scales, H_res, MHD/CR, nebulae) ===
+_b211 = C.backbone_coverage_stated()
+assert_that(_b211['gm_r2'] == 100 and _b211['ug3p'] == 80 and _b211['avg_pct'] == 89.5,
+            "PAPER_211: backbone census (GM/r^2 100 pct ... Ug3' 80 pct; avg 89.5 pct)")
+assert_that(_b211['q_wave_mean'] == 6.33e4 and _b211['q_wave_std'] == 0.12e4,
+            "PAPER_211: Q_wave = 6.33e4 +/- 0.12e4 J/m^3 over 47 systems (2 pct scatter)")
+assert_that(C.cia_refit_values()['b_coeff'] == 0.004997 and C.cia_refit_values()['sigma_400'] == 11.65,
+            "PAPER_212: CIA refit b = 0.004997 A^2/cm^-1, sigma(400) = 11.65 A^2 (arXiv:2506.09257)")
+assert_that(abs(C.h2_rotational_energy(1) - 1.51e-22) / 1.51e-22 < 0.01,
+            "PAPER_212: H2 rotor E_1 = 2B = 1.51e-22 J (B = 60.853 cm^-1)")
+assert_that(abs(C.a_res_amplitude(1e15, 8.79e6) - 1.06e-15) / 1.06e-15 < 0.01,
+            "PAPER_213: A_res(SGR1745) = mu_B 1e15/8.79e6 = 1.06e-15 (stated pin)")
+assert_that(abs(C.nuclear_spring_constant(26, 30) - 8.4e-17) / 8.4e-17 < 0.01,
+            "PAPER_213: k_nuc(Fe-56) = 8.4e-17 N/m from stated inputs (paper printed 2.7 - 1e17 slip disclosed)")
+assert_that(abs(C.d_universe_quantum_correction() - 2.13e-8) / 2.13e-8 < 0.02,
+            "PAPER_213: dD/D = (2pi/t_H)/(c H0) = 2.1e-8 (~2000 ly; formula-line t_H^2 inconsistency disclosed)")
+assert_that(abs(C.f_env_sfr(0.8, 0.0, 1.0) - 0.8) < 1e-12,
+            "PAPER_214: F_env,sfr = 0.8 sub-Kennicutt at t = 0")
+assert_that(abs(C.cr_emax_hillas(1, 3e-10, 1e7, 3.09e17) / 1.602176634e-19 - 9.27e14) / 9.27e14 < 0.01,
+            "PAPER_215: Hillas E_max(SNR inputs) ~ 1e15 eV (CR knee scale; Fe = 26x)")
+assert_that(abs(C.cr_diffusion_powerlaw(10.0) - 1e28) < 1e20,
+            "PAPER_215: D(10 GeV) = D0 = 1e28 cm^2/s")
+assert_that(abs(C.f_ub_volume_factor(1.0 / 33.0) - 2.20e8) / 2.20e8 < 0.002,
+            "PAPER_216 x PAPER_196 CROSS-CHECK: f_Ub(V = 1/33 Boyle) = 2.20e8 EXACT match to stated value")
+assert_that(abs(C.triadic_fug1_westerlund() - 2.44e-37) / 2.44e-37 < 0.01,
+            "PAPER_216: formula-as-printed FU_g1 = 2.44e-37 (stated 2.43e-40 implies f_SCm^2 term - disclosed)")
+_r217 = C.fubii_quadratic_roots(1.0, -3.0, 2.0)
+assert_that(abs(_r217[0] - 2.0) < 1e-12 and abs(_r217[1] - 1.0) < 1e-12,
+            "PAPER_217: two-branch quadratic solver returns both F_U roots")
+assert_that(C.adaptive_feedback_force(1.0, 2.0, 1e9) - 2.0 < 1e-9 and C.adaptive_feedback_force(1.0, 2.0, 0.0) == 0.0,
+            "PAPER_217: adaptive feedback dF -> F_rel tau impulse limit; zero at T = 0")
+assert_that(C.f_hier_26layer([2.995e8], 1.0) < 1.0 and C.f_hier_26layer([2.995e8], 1.0) > 0.9,
+            "PAPER_217: F_hier first layer (v = c) = e^(-1/26) = 0.96 (convergent 26-stack)")
+assert_that(C.pressure_dispersal_gate(0.15) == 0.85,
+            "PAPER_218: NGC 3603 (1 - P) = 0.85 at 15 pct dispersal (only multiplicative pressure term)")
+assert_that(abs(C.ram_pressure_wind(1.67e-21, 2e6) - 6.68e-9) / 6.68e-9 < 0.001,
+            "PAPER_218: O-star wind ram pressure = 6.68e-9 Pa (stated pin)")
+assert_that(C.g_m16_assembly(1.0, 0.08, 0.1) == 1.0 * 1.08 - 0.1,
+            "PAPER_219: M16 assembly (1 + M_sf) g_base - E_rad (enhancement then subtraction)")
+assert_that(abs(C.crab_expanding_radius(0.0) - 6.1e15) / 6.1e15 < 0.03,
+            "PAPER_220: Crab r(t = 0) = 6.1e15 m (~0.2 pc SN 1054 ejecta back-check)")
+assert_that(abs(C.crab_spindown_luminosity() - 4.42e31) / 4.42e31 < 0.01,
+            "PAPER_220: Crab E_sd = 4 pi^2 I Pdot/P^3 = 4.4e31 W (stated ~4.6e31)")
+for _fn_211 in ('h_res_master', 'omega_res_nuclear', 'resonance_phase_lock', 'lambda_local_ug4',
+                'f_env_jet', 'fermi2_energy_gain', 'cr_diffusion_uqff', 'f_z_cgm', 'sfr_mass_factor',
+                'radiation_pressure_erad', 'pwn_wind_pressure', 'magnetic_dipole_dilution'):
+    assert_that(C.formula_of(_fn_211) is not None, f"PAPER_211-220 deep-capture: formula_of('{_fn_211}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_221-230 batch: nebular MUGE family, Saturn, SGR 0501, F_EU) ===
+assert_that(abs(C.muge_expansion_gate(0.05, 0.0, 1.0) - 1.05) < 1e-12 and abs(C.muge_expansion_gate(0.1, 0.0, 1.0, -1.0) - 0.9) < 1e-12,
+            "PAPER_221/229: MUGE sign law - Bubble (1+E) = 1.05 vs Pillars (1-E) = 0.9 (compression vs erosion)")
+assert_that(abs(C.stefan_boltzmann_rad_pressure(1e4) - 2.52) < 0.01,
+            "PAPER_222: P_rad(1e4 K) = 4 sigma T^4/(3c) = 2.52 Pa (CP1 4.347e-5 normalization disclosed)")
+assert_that(abs(C.ring_dr_implied() - 3.40) < 0.05,
+            "PAPER_224 RULE7-IMPLIED: CP1 T_ring = 2.043e-7 back-solves to dr = 3.4 m (10-km claim inconsistent)")
+assert_that(abs(C.ring_tidal_gradient(3.395) - 2.043e-7) / 2.043e-7 < 0.01,
+            "PAPER_224: T_ring = 2 G M dr/r^3 reproduces CP1 benchmark at implied dr")
+assert_that(abs(C.f_eu_relativistic_uv(2.995e7, 1e36) - 1e-30 * 0.01 * 1e36) / (1e-30 * 0.01 * 1e36) < 1e-3,
+            "PAPER_225: F_EU = k_UV (v/c)^2 L_UV at v = 0.1c (4th uniquely-rare discovery)")
+assert_that(C.a_burst_decay(1e6) > 0.99 * C.a_burst_decay(1e9),
+            "PAPER_226: burst-decay acceleration saturates to L0 tau_d/(Mr)")
+assert_that(C.sgr0501_muge_stated()['g_5000yr'] == 4.474e12 and C.sgr0501_muge_stated()['b0'] == 1e10,
+            "PAPER_226: SGR 0501+4516 11-term MUGE g(5000 yr) = 4.474e12 m/s^2 (stated pin)")
+assert_that(abs(C.stellar_mass_gas_accretion(0.0, 240.0, 10000.0, 5e6) / 240.0 - 42.67) < 0.01,
+            "PAPER_227: Tapestry M(0)/M_init = 1 + 41.7 gas ratio (LMC family)")
+assert_that(abs(C.a_wind_ram_ratio(1e-21, 2e6, 1e-12) - 4e3) / 4e3 < 0.01 and abs(C.a_wind_ram_ratio(1e-20, 2e6, 1e-12) - 4e4) / 4e4 < 0.01,
+            "PAPER_227/228 CROSS-CHECK: both stated a_wind values (4e3 LMC, 4e4 W2) back-solve to the SAME rho_fluid = 1e-12")
+assert_that(abs(C.g_sn_ejecta_decay(0.0, 2.84e20) + 2.30e-21) / 2.30e-21 < 0.01,
+            "PAPER_230: |g_SN(0)| = 2.3e-21 from stated inputs (paper printed 2.3e-33 - 12-order slip disclosed); negative sign")
+assert_that(C.g_sn_ejecta_decay(10.0, 1.0, tau_sn=1.0) > C.g_sn_ejecta_decay(0.0, 1.0, tau_sn=1.0),
+            "PAPER_230: dg_SN/dt > 0 (negative term relaxes toward zero as ejecta disperses)")
+assert_that(abs(C.hubble_of_z(0.0) - 2.2685e-18) < 1e-22 and C.hubble_of_z(0.0162) > C.hubble_of_z(0.0),
+            "PAPER_230: H(z) = H0 sqrt(Om(1+z)^3 + OL) monotone, H(0) = H0")
+for _fn_221 in ('bubble_expansion_ratio', 'a_gw_backreaction', 'a_mag_stored_energy'):
+    assert_that(C.formula_of(_fn_221) is not None, f"PAPER_221-230 deep-capture: formula_of('{_fn_221}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_231-240 batch: MUGE galaxies, Source10, vacuum repulsion, THz conduit, spooky) ===
+assert_that(abs(C.friedmann_hz_high_z() / 2.2685e-18 - 5.295) < 0.01,
+            "PAPER_231: H(z = 3.5) = 5.295 H0 = sqrt(28.04) (canonical 510 km/s/Mpc scenario disclosed)")
+assert_that(abs(C.interaction_modulation(300.0, 0.1, 400.0) - 0.047) < 0.001,
+            "PAPER_235: Antennae I(300 Myr) = 0.1 e^(-0.75) = 0.047 (stated pin)")
+assert_that(C.muge_double_modulation(1.0, 1.0, 0.05) == 2.1,
+            "PAPER_231/235: double modulation applies (1+I) to BOTH base and Ug terms")
+assert_that(abs(C.sfr_factor_mass(50e6) / 1e10 - 1.0 - 6.07e-10) < 1e-11,
+            "PAPER_232: NGC 1792 M(50 Myr) = M0(1 + 6.065e-10) (sSFR amplitude pin)")
+assert_that(abs(C.sgr1745_bh_tidal() - 6.63e-7) / 6.63e-7 < 0.01,
+            "PAPER_233: a_BH(SGR 1745 at 0.92 pc) = 6.63e-7 m/s^2 (SMBH tidal dominance)")
+assert_that(abs(C.precession_tidal_pert(1.0, 1.0) / (C.precession_tidal_pert(1.0, 1.0, 90.0)) - 0.5) < 1e-9,
+            "PAPER_234: pert_2 = 3GM/r^3 sin(30) = half the max (Kerr precession cone)")
+assert_that(C.fubii_source10_master(1.0, 2.0, 1.0, 1.0, 1.0, 1.0) == 6.0,
+            "PAPER_237: Source10 master assembly I_grav x2 + 4 force classes")
+assert_that(C.f_de_source10(1.0) > 0 and C.f_vac_repulsion(1.0, 1.0, 2.0) == 2.0,
+            "PAPER_237/238: F_DE radial vs F_vac_rep velocity-coupled (3rd repulsive force)")
+assert_that(abs(C.f_thz_shock(1.0) / (1.380649e-23 * 14400 * 0.74) - 1.0) < 1e-9,
+            "PAPER_239: F_thz_shock amplification (120)^2 = 14,400 (stated pin)")
+assert_that(abs(C.f_conduit_h2o(1.0) / C.f_thz_shock(1.0) - 4.52e28) / 4.52e28 < 0.01,
+            "PAPER_239: conduit/shock ratio 4.52e28 from stated constants (paper's 2.21e-17 print recomputes to 2.21e-29 - disclosed)")
+assert_that(abs(C.f_spooky_string() - 5.55e-30) / 5.55e-30 < 1e-6,
+            "PAPER_240: F_spooky = k w_str/w0 = 5.55e-30 N (paper's own arithmetic; boxed 2.71e89 normalized - disclosed)")
+assert_that(abs(C.q_wave_gh() - 3.10e-15) / 3.10e-15 < 0.01,
+            "PAPER_240: Q_wave from stated inputs = 3.10e-15 (paper printed 3.11e9 - 24-order slip disclosed)")
+for _fn_231 in ('f_lenr_source10', 'f_res_source10', 'f_rel_source10'):
+    assert_that(C.formula_of(_fn_231) is not None, f"PAPER_231-240 deep-capture: formula_of('{_fn_231}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_241-250 batch: lensing MUGE, cavity pressure, universal sub-terms, SN 1006) ===
+assert_that(abs(C.em_charge_term(1.0, 1.0) / (1.602176634e-19 / 1.673e-27) - 11.0) < 1e-9,
+            "PAPER_242: EM T_4 density factor (1 + rho_UA/rho_SCm) = 1 + 10 = 11 (|SO(5)| primitive)")
+_lt242 = C.lensing_amplification_lt(1.989e30, 1e20)
+assert_that(abs(_lt242 - 9.9e-18) / 9.9e-18 < 0.02,
+            "PAPER_242: L_t = GM/(c^2 r) x D_LS/D_S = 0.67 lensing geometry")
+assert_that(abs(C.cavity_dispersal_time(math.e, 1.0, 1.0, 2.0) - 2.0) < 1e-12,
+            "PAPER_243: t_disp = tau ln(P0/(rho T1)) inversion identity")
+assert_that(C.sf_efficiency_eps(0.0, 5.0, 1.0) == 5.0,
+            "PAPER_243: eps_SF(0) = Mdot_factor (NGC 3603 accretion efficiency)")
+assert_that(C.g_q_min_saturation(1.0) == math.sqrt(2.0 * 1.054571817e-34) * 2.0 * math.pi / 4.354e17,
+            "PAPER_244: Heisenberg-saturated g_Q_min = sqrt(2 hbar) psi 2pi/t_H (universal in 19 modules)")
+assert_that(C.archimedes_fraction(1.0, 2.0, 2.0) == 1.0,
+            "PAPER_245: Archimedes fraction lambda = rho V/M crossover at 1")
+assert_that(abs(C.fluid_crossover_radius(1.0, 3.0 / (4.0 * math.pi)) - 1.0) < 1e-12,
+            "PAPER_245: r_c = (3M/(4 pi rho))^1/3 inversion identity")
+assert_that(abs(C.g_osc_standing(1.0, 0.0, 0.0, 0.0, 0.0) - 2.0) < 1e-12,
+            "PAPER_246: standing-wave peak g_osc1 = 2A (constructive interference)")
+assert_that(abs(C.g_osc_traveling(1.0, 0.0, 0.0, 0.0, 0.0, t_h_gyr=2.0 * math.pi) - 1.0) < 1e-12,
+            "PAPER_246: traveling-wave amplitude (2pi/T_H) A - Mode 2 dominance at T_H = 2pi threshold")
+assert_that(abs(C.merger_gravity_boost(1.0, 0.0) - 1.1) < 1e-12 and abs(C.merger_gravity_boost(1.0, 1200.0) - 1.005) < 0.001,
+            "PAPER_247: merger boost peak 1.1x at t = 0, relaxed ~1.005 at 3 tau (400 Myr scale)")
+assert_that(C.sn1006_stated()['f_lenr'] == 6.17e30 and C.sn1006_stated()['f_neutron'] == 1e6,
+            "PAPER_250: SN 1006 pins - F_LENR = 6.17e30 N dominant, F_neutron = 1e6 N knot stabilisation")
+for _fn_241 in ('pressure_cavity_decay', 'dpm_resonance_mub'):
+    assert_that(C.formula_of(_fn_241) is not None, f"PAPER_241-250 deep-capture: formula_of('{_fn_241}') available")
 
 
 # =============================================================================

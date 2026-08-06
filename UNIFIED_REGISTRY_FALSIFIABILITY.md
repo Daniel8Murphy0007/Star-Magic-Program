@@ -248,7 +248,7 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
   crossing thresholds should show term onset/offset.
 
 
-## v0.354.0 falsifiable additions
+## v0.355.0 falsifiable additions
 - **0.622 = sqrt(Omega_DM/Omega_Lambda)** (PAPER_118): ties the GW cross-band damping to Planck densities;
   falsified if D_cross-band and the density ratio diverge.
 - **xi_Holmlid = F_TRZ^(D_crit-SO_5/2)** (R7 capture): the 630 eV chain is now fully primitive; falsified

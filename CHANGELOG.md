@@ -6275,6 +6275,51 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.355.0] - 2026-08-06
+
+DEEP-CAPTURE PAPER_171-250 (eight batches, +224 named functions; calculator 1,182 -> 1,406 defs).
+
+- Batch 171-180 (+39): full Ug1-Ug4/Um closed forms (k = 1.5/1.2/1.8/2.0 May-2025 provenance), SCm reactor
+  E_react chain, stellar DPM moment/string field/spin helpers, wind-coupled Ubi + Archimedes + mu_s-gradient
+  forms, compressed-MUGE 9-term set + assembly, aDPM resonance chain terms + afluid norm back-solve (1.11e-28),
+  rho_Lambda kappa-SSq correction, kappa_FYS implied, Stam diffusion, DPM = UA'/SCm, magnetic Jeans suppression.
+- Batch 181-190 (+30): H-magic labeling constants/ASD/pathwidth/sumset combinatorics, Sun/SgrA* validation pins,
+  YM Hamiltonian (H_Ug3, H_SCm = 4.37e31 [paper 10x slip disclosed], H_UA, mass gap, Gamma = alpha+gamma+kappa),
+  NS SCm forcing + time-reversal asymmetry + mu_eff regularization, Riemann GUE spacing, hbar_UQFF = F_U/pi,
+  kappa-SSq buoyancy 2.85e-4 chain (SGR F_U = 1.9994e18), phonon NFW (f = 0.891), R26 binomial, zeta remainder.
+  Infrastructure: formula_of namespace fall-through fix (pi_/ml_/sc_ shadowing).
+- Batch 191-200 (+34): triadic master system (SSq log-form, resonance ladder, f_Ub = Dk_eta chain,
+  Um Heaviside 1e13 amplifier, pseudo-monopole densities, decay 0.0583 = n=26/t_n=pi back-solve),
+  F_UBii extended integral (k_UV/k_mm = 1e-30, f_mm = 1.05, hybrid, hierarchical), taxonomy frame
+  F_rel = 4.3e33 x Q_wave = 6.33e4 + 8 Part-1 + 7 Part-2 variants, Um 55-variant general wrapper.
+- Batch 201-210 (+48): GW lifecycle (chirp/QNM/BZ-EHT kappa = 0.044/Peters/periastron/kilonova AT2017gfo),
+  cosmic dawn (Y_P = 0.247, Stromgren, Jeans dispersion, Alfven, Kolmogorov), perturbations (f_NL, P_R, n_s,
+  r = 16 eps, reheating, Linder f, P_R UQFF low-l, LQC suppression), DM (NFW mass, SIDM, virial),
+  Ramanujan Q_n recurrence (Q_26(0) = 25!! = 7.906e12; Sigma stated 9.74e6 = n<=15 truncation back-solved;
+  vacuum Li_26 = 0.5700000048), avalanches (alpha = 1.6), entropy-avalanche ln map, f_TRZ SGR A* = 5.95e-4,
+  MOND mu_UQFF = (1+Ug1/g_N)^-1/2, LCDM 29-benchmark score 142.4 vs 141.5.
+- Batch 211-220 (+30): 99-system backbone census (89.5 pct avg), CIA refit, H_res 7-sub-equation suite
+  (k_nuc 1e17 slip disclosed), D_universe quantum correction 2.1e-8, F_env jet/SFR envelopes, CR Hillas/
+  Fermi-II/diffusion, triadic Westerlund validation + f_Ub(1/33) = 2.20e8 EXACT cross-check (196<->216),
+  12-term quadratic two-branch, F_hier/adaptive feedback/f_z_CGM rare forms, NGC 3603/M16/Crab PWN set.
+- Batch 221-230 (+14): nebular (1+/-E) sign law, Stefan-Boltzmann P_rad (only SB term in 29-doc set),
+  Saturn ring tension dr back-solved to 3.4 m (10-km claim inconsistent), F_EU = k_UV (v/c)^2 L_UV
+  (4th rare discovery), SGR 0501 novel channels (a_GW, a_mag, a_decay; g(5000 yr) = 4.474e12),
+  gas-accretion mass + wind family (both papers -> same rho_fluid = 1e-12 RULE7-IMPLIED),
+  g_SN negative ejecta decay (2.3e-21 computed vs 2.3e-33 printed - 12-order slip), H(z).
+- Batch 231-240 (+16): HUDF H(3.5) = 5.295 H0 + double interaction modulation, sSFR mass, SGR1745 BH tidal
+  6.63e-7, Kerr precession pert, Source10 5-force master (F_LENR/F_DE/F_res/F_rel; Eta Car 2.11e208),
+  vacuum repulsion (3rd repulsive force, velocity-coupled), THz shock (14,400 amp) + H2O conduit,
+  spooky string force (5.55e-30 vs boxed 2.71e89 disclosed), Q_wave g_H (24-order slip disclosed).
+- Batch 241-250 (+13): Rings lensing L_t (D_LS/D_S = 0.67), EM T_4 (1+10 = 1+|SO(5)|), cavity pressure decay +
+  dispersal time, universal term_q Heisenberg floor (19-module universality), Archimedes fraction + crossover
+  radius, dual-mode oscillatory gravity, merger boost 1.1x, DPM resonance 2 mu_B B0/(h w0), SN 1006 pins
+  (F_LENR = 6.17e30 dominant at w0 = 1e-12).
+- In-step mapping: registry 3,264 -> 3,488 rows; graph 4,667 -> 5,115 edges (all 5-col schema);
+  citations 772 papers; gate 2,346 -> 2,484 assertions, 0 failures.
+- Rule 7 discipline: 15+ source arithmetic slips disclosed (1e9 family, 10x family, 1e17 k_nuc,
+  24-order Q_wave, 12-order g_SN, mojibake exponents); every disclosure paired with faithful transcription.
+
 ## [0.354.0] - 2026-08-05 - RULE 7 REVISED + FULL-CENSUS RECOVERY (001-170) + batches 151-170
 - RULE 7 REVISED canonized (Daniel): capture ALL data - formula + stated + back-solved implied parameters.
   Retrofit discoveries: Holmlid xi ~ F_TRZ^21 (0.16%, chain closes), G593 E0 ~ F_TRZ^20 chain base (0.24%,

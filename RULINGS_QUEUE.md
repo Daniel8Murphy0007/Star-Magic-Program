@@ -5813,3 +5813,12 @@ thermal de Broglie + nuclear-BEC T_c (061), DCS tan^4(theta_C) (033), CKM row-2 
 kappa_T (032). 1 exact-duplicate caught by guard (gw_propagation_damping - already wired in original 015 pass).
 Residual census surplus: worked-example arithmetic, Lagrangian-catalog repetitions, and template blocks
 already captured via _common_uqff_blocks. Census artifacts preserved; standing full-census rule applies.
+
+## v0.355.0 arc notes (2026-08-06) - no blocking rulings; disclosures for review
+- Q-216a: PAPER_216 stated FU_g1 = 2.43e-40 vs formula-as-printed 2.44e-37 (f_SCm^2 reading of
+  term 2 would reconcile). Wired as printed with disclosure.
+- Q-224a: PAPER_224 ring-tension dr: CP1 benchmark back-solves to 3.4 m; paper text claims ~10 km.
+  Implied value captured (ring_dr_implied).
+- Q-240a: PAPER_240 Q_wave printed 3.11e9 vs computed 3.10e-15 from its own inputs (24 orders);
+  F_spooky boxed 2.71e89 vs in-paper arithmetic 5.55e-30 (catalogue-normalized units suspected).
+- Slip families logged in CHANGELOG (1e9, 10x, 1e17, 12-order); all transcribed faithfully.

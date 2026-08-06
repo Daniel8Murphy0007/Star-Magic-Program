@@ -20,4 +20,4 @@ coanqi_deep_mine,v0.352.0,ADOPT,CoAnQi complex + frontier 081-110 deep capture,n
 ssq_0755_decomposition,PAPER_094,FUTURE_TARGET,SSq = 0.755^2 - does 0.755 itself decompose into primitives?,yes,
 frontier_150,v0.353.0,ADOPT,deep-capture batches 111-150 complete,no,APPROVED (Daniel: NEXT BATCH x4)
 rule7_revised,2026-08-05,CANONIZED,"capture ALL data incl. back-solved implied params; disclosure annotates, never prohibits",no,RULED (Daniel: Rule 7 was supposed to be changed)
-full_census_rule,v0.354.0,CANONIZED,every display equation per paper censused; head-3 sweeps prohibited,no,RULED (Daniel: deep search directives)
+full_census_rule,v0.355.0,CANONIZED,every display equation per paper censused; head-3 sweeps prohibited,no,RULED (Daniel: deep search directives)

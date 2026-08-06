@@ -15,3 +15,4 @@ v0351_final,confirmation,0 dups across 8 modules (NO-SHADOW guard); campaign tot
 v0352_catches,confirmation,"4 dup-catches auto-resolved: gluon_propagator (identical, removed), bec_tc_shift->_phi + fubii fermi/roche/lobe->_bpv (distinct, renamed); 0 final"
 v0353_batches,confirmation,37 fns added 111-150; 2 dup-catches in 101-110 handled earlier; 0 dups final
 v0354_catches,confirmation,2 dup auto-catches (dpm_center_energy renamed earlier; gw_propagation identical-removed); 6 campaign total; 0 final
+v0355_audit,confirmation,"deep-capture 171-250: 0 duplicate quantities across 3,488 registry rows; NO-SHADOW + banned-literal guards caught 1 docstring literal (fixed to RHO_SCM ref)"
