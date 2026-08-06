@@ -58,3 +58,6 @@ inflation_force_core,open_ruling,"Q-DPMCOSMO internal inconsistency; constants t
 rulings_pending,open_ruling,Q-2118 + Q-1412 + Q-DPMCOSMO await Daniel; ml_ stated-111 formulas disclosed via formula_of
 ssq_0755,future_target,0.755 base of SSq origin identity not yet decomposed into primitives (PAPER_094)
 rule7_transcriptions,disclosed,rho_lambda c^4 form + cascade basic-vs-ceiling both disclosed in docstrings/gate
+ml_unparseable_102,future_work,102 ml_ chains need deeper parser; formulas available via formula_of; auto-parse recovered 9
+s26_namespace_collision,open_ruling,S_26^(3): eq32 summation 1.5403e5 vs LENR anchor 1.4531e26 - two objects one name
+census_residual,documented,residual census surplus = worked-example arithmetic + template repetitions (already captured via _common blocks)

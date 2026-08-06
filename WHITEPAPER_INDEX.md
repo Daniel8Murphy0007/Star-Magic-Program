@@ -22,6 +22,8 @@
 
 > **v0.353.0 frontier 150:** batches 111-150 deep-captured (kappa origin EXACT, Hoyle SSq sum, 40/60 split, cascade, ladder pivot). 2 Rule-7 self-corrections.
 
+> **v0.354.0 rule7-revised + census:** capture-all doctrine canonized; 001-170 full census (36 recoveries, 0.622 origin, xi/E0/Phi rung discoveries); batches 151-170; full-census standing rule.
+
 **Purpose:** Living index of every whitepaper in the corpus with wired/not-wired status.
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.

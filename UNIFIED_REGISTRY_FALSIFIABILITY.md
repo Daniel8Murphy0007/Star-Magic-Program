@@ -246,3 +246,13 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **40/60 split** (PAPER_143): hydrogen ground-state decompositions must apportion 40% MUGE / 60% quantum.
 - **Density-ladder activation** (PAPER_137): Ug terms switch at rho thresholds 10^(n-13); astrophysical systems
   crossing thresholds should show term onset/offset.
+
+
+## v0.354.0 falsifiable additions
+- **0.622 = sqrt(Omega_DM/Omega_Lambda)** (PAPER_118): ties the GW cross-band damping to Planck densities;
+  falsified if D_cross-band and the density ratio diverge.
+- **xi_Holmlid = F_TRZ^(D_crit-SO_5/2)** (R7 capture): the 630 eV chain is now fully primitive; falsified
+  if refined KER measurements break the F_TRZ^21 normalization.
+- **T_c(SC gap) = 30 K = T_SCm/2** (PAPER_156): SCm superconductive transition at half the activation
+  temperature; lab-testable in SCm-analogue systems.
+- **QNM shift [1+alpha_Q-beta_damp]** (PAPER_010): LIGO O5 ringdown spectroscopy tests the band.

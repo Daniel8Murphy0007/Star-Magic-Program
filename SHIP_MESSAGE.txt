@@ -1,28 +1,31 @@
-v0.353.0 - DEEP-CAPTURE FRONTIER -> PAPER_150 (batches 111-150)
+v0.354.0 - RULE 7 REVISED + THE FULL-CENSUS RECOVERY (001-170) + batches 151-170
 
-Four deep-capture batches (37 new equation-library functions), headline identities:
+RULE 7 REVISED (Daniel ruling, canonized): capture ALL data - formula + stated value + back-solved
+implied parameters. Disclosure annotates; it never prohibits. Retrofit discoveries:
+  holmlid_xi_implied   = 9.98e-22 ~ F_TRZ^21 = F_TRZ^(D_crit - SO_5/2)  (0.16%) - 630 eV chain CLOSES
+  g593_scale_implied   = 1.0024e-20 ~ F_TRZ^20 = the 26-chain base       (0.24%) - G chain CLOSES
+  reionization_phi     = 0.9240 ~ 12/13 = (D_crit/2-1)/(D_crit/2)        (0.09%) - Q-1412 candidate
+  glueball V = 4.72e-57 m^3 | DPMcosmo rho = 1.318e-4 J/m^3 | 8 ml_ ratios (rungs: F_TRZ^21/^26/^18, SO_5^2)
+  S_26^(3) NAMESPACE COLLISION exposed: eq32 summation 1.5403e5 vs LENR anchor 1.4531e26.
 
-  kappa_derivation_4lac    kappa = 0.35/700 = 5e-4/day EXACT (PAPER_125)
-                           <- the registry decay constant's OBSERVATIONAL ORIGIN (Fermi-4LAC fit);
-                              dual route with the (SO_5/2) F_TRZ^4 derivative (PAPER_2112)
-  hoyle_ssq_sum            E = E_0(1+SSq+SSq^2+SSq^3) + dE_SCm = 3.0 x 2.080 + 0.414 = 6.654 MeV
-                           <- carbon's Hoyle resonance from the SSq geometric sum, 0.28 pct (PAPER_132)
-  forty_sixty_split        UQFF 40 pct / Schrodinger-Dirac 60 pct = (D_phys, D_BSFG)/SO_5 EXACT (PAPER_143)
-  resonance_cascade        R = 1.5^12 = 129.7 (3C273; 1.57^12 ceiling disclosed) (PAPER_115)
-  energy_ladder_index      n = log10(E)+20; Higgs -> 12.30 (PAPER_112)
-  scm_density_ladder       rho(n) = rho_0 10^(n-13); pivot n=13 = rho_SCm EXACT + Ug activation (PAPER_137)
-  doubly_magic_separation  S_n = 2 SSq E_8 = 1.14e-12 J (Pb-206) (PAPER_124)
-  ua_distance_correction   eps_UA = rho_UA/rho_total = 4.3 pct (Gaia-SgrA*) (PAPER_126)
-  atomic resonance pair    A_res + f_res, hydrogen anchor k_A = 0.4604 V (PAPER_142)
-  + jet/counter-jet pairing (111), heliosheath Ug2+compression (114), blazar LFs (113), SSq^N vacuum
-    cascade + rho_Lambda = Lambda c^4/8piG (118), virtual-quark 4.20 (123), halflife 1386d (125),
-    dm final (128), triadic cos30 (129), diffusion E^0.5 (130), Y_e beta[UA] (131), genesis 1.18e53 (133),
-    quasar-jet radial (135), core-field + Ug3 Hamiltonian (136), SF rate (138), quantum f (140),
-    oceanic buoyancy (141), Hubble time + decay (143), cosmic-glue dUg template (144).
+FULL-CENSUS DEEP SEARCH 001-170 (Daniel-directed; 632 eqs censused in 001-080 alone): 36 recoveries:
+  ssq_planck_form = sqrt(Omega_DM/Omega_Lambda) = 0.622 - THE 0.622 ORIGIN (PAPER_118)
+  TDE t^-5/3 fallback law (087) | f_AGN = 1+[SCm]/10 (086) | 5-harmonic resonant master + SC gate (089)
+  full compressed Ug2/Ub_i (090) | aDPM Doppler + photon-sphere (091) | beaming ^(3+alpha) (135)
+  jet injection (gamma-1) = 6.09 at gamma = 7.09 (161) | J_DPM current (147) | MUGE lensing (151)
+  quantum damped amplitude e^(-gamma t/2) (016) | Friedmann + xi_Q H (014) | QNM shifts + f_peak (010)
+  Archimedes rho_eff (036) | de Broglie + nuclear-BEC T_c (061) | DCS tan^4 (033) | CKM unitarity (028)
+  VLQ kappa_T (032) | [UA] sound speed (127) | lookback integral (113) | P_SCm = 1e28 Pa (138) + more.
 
-RULE-7 SELF-CORRECTIONS (disclosed): rho_lambda c^4 dimensional form (paper printed c^2; lands 5.28e-10
-J/m^3 in dual-manifestation range); cascade R_basic=1.5 vs ceiling 1.57 both exposed.
+BATCHES 151-170 (deep-capture frontier -> PAPER_170):
+  SC gap Delta = hbar omega/2 -> T_c = 30 K = T_SCm/2 (BCS half-gap) | hybrid beta = e^(-B/B_crit)
+  wormhole exotic density | regulated zeta Li_s | complexity N^1.754 | v_SCm = 0.99c -> gamma = 7.09
+  mu_s(t) solar-cycle driver | modular compressed g core | EHT aether resonance | Einstein 8piG/c^4
+  glueball 1e-35/state (V-convention captured as implied param).
 
-MEASURED: 2830 total Python functions | 2484 named callable | 8 modules | 342 dispatches |
-registry 3207 rows | GRAPH 4598 edges | 772 papers mapped | gate 2318 green | 0 dups | 0 malformed.
-Deep-capture frontier: PAPER_001-150. Rule E / Rule 4 / Rule 7 held.
+STANDING RULE CANONIZED: full display-equation census per paper - never head-3.
+Guard catches this ship: 2 duplicates auto-caught + resolved (6 campaign total).
+
+MEASURED: 2888 total Python functions | 2542 named callable | 8 modules | 342 dispatches |
+registry 3264 rows | GRAPH 4667 edges | 772 papers mapped | gate 2346 green | 0 dups | 0 malformed.
+Frontier: PAPER_001-170 census-complete. Rule E / Rule 4 / Rule 7-REVISED held.

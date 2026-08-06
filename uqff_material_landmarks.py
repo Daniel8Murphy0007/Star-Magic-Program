@@ -982,3 +982,18 @@ for _n, _f in FORMULAS.items():
 def get_formula(name):
     "Return the paper formula chain for a ml_ function by name (or None)."
     return FORMULAS.get(name)
+
+# === RULE 7 REVISED: implied correction ratios captured as DATA (stated/parsed-chain) ===
+IMPLIED_RATIOS = {
+    "ml_parsec_light_year_ratio": 0.9920630093662572,
+    "ml_lawson_fusion_criterion": 1e-21,
+    "ml_magnetic_monopole_suppression": 9.982422269474033e-27,
+    "ml_bohm_diffusion_prefactor": 15.8311345646438,
+    "ml_dpm_pair_k_mex_2": 11.999999999999979,
+    "ml_de_sitter_phase_inverted_k_mex": -0.9998400000000001,
+    "ml_f_trz": 99.99999999999999,
+    "ml_schwinger_limit_enhanced": 1.0002623638987274e-18,
+}
+def get_implied_ratio(name):
+    "Implied stated/chain correction ratio for an ml_* fn (Rule 7 REVISED capture)."
+    return IMPLIED_RATIOS.get(name)

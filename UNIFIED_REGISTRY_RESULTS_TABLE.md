@@ -225,3 +225,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | Higgs ladder | log10(E)+20 | 12.30 | PAPER_112 | EXACT |
 | ladder pivot | rho_0 10^(n-13) | rho_SCm @ n=13 | PAPER_137 | EXACT |
 | t_Hubble | 1/H_0 | 4.41e17 s | PAPER_143 | registry |
+
+
+## v0.354.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| 0.622 origin | sqrt(Omega_DM/Omega_L) | 0.622 | PAPER_118 RECOVERED |
+| xi_Holmlid | F_TRZ^(D_crit-SO_5/2) | 9.98e-22 | R7 capture (0.16%) |
+| E0_G593 | F_TRZ^(D_crit-D_BSFG) | 1.0024e-20 | R7 capture (0.24%) |
+| Phi Q-1412 | 12/13 candidate | 0.9240 | R7 capture (0.09%) |
+| SC gap T_c | hbar omega/2k_B | 30 K = T_SCm/2 | PAPER_156 |
+| hybrid beta | e^(-B/B_crit) | blend weight | PAPER_158 |
+| gamma jet | v=0.99c | 7.09 = rho_SCm mantissa | PAPER_161 |

@@ -4597,3 +4597,72 @@ primitive,SO_5,observable,hubble_time,hubble_time composes from SO_5
 observable,hubble_time,paper,PAPER_143,deep-capture 141-150
 observable,hubble_mass_decay,paper,PAPER_143,deep-capture 141-150
 observable,cosmic_glue_delta_ug,paper,PAPER_144,deep-capture 141-150
+primitive,G_UQFF,observable,wormhole_exotic_density,wormhole_exotic_density composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,wormhole_exotic_density,wormhole_exotic_density composes from C_UQFF_DERIVED
+observable,wormhole_exotic_density,paper,PAPER_153,deep-capture 151-160
+observable,sc_gap_scm,paper,PAPER_156,deep-capture 151-160
+observable,zeta_regulated_uqff,paper,PAPER_156,deep-capture 151-160
+primitive,SSQ,observable,complexity_ssq_exponent,complexity_ssq_exponent composes from SSQ
+observable,complexity_ssq_exponent,paper,PAPER_156,deep-capture 151-160
+observable,hybrid_blend_weight,paper,PAPER_158,deep-capture 151-160
+observable,hybrid_gravity,paper,PAPER_158,deep-capture 151-160
+observable,ug4_extended_value,paper,PAPER_160,deep-capture 151-160
+primitive,C_UQFF_DERIVED,observable,scm_jet_velocity,scm_jet_velocity composes from C_UQFF_DERIVED
+observable,scm_jet_velocity,paper,PAPER_161,deep-capture 161-170
+observable,time_varying_magnetic_moment,paper,PAPER_162,deep-capture 161-170
+observable,modular_compressed_g,paper,PAPER_163,deep-capture 161-170
+observable,expansion_factor,paper,PAPER_163,deep-capture 161-170
+primitive,G_UQFF,observable,eht_aether_resonance,eht_aether_resonance composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,eht_aether_resonance,eht_aether_resonance composes from C_UQFF_DERIVED
+observable,eht_aether_resonance,paper,PAPER_164,deep-capture 161-170
+primitive,G_UQFF,observable,einstein_coupling_constant,einstein_coupling_constant composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,einstein_coupling_constant,einstein_coupling_constant composes from C_UQFF_DERIVED
+observable,einstein_coupling_constant,paper,PAPER_165,deep-capture 161-170
+observable,wind_modulation,paper,PAPER_166,deep-capture 161-170
+primitive,C_UQFF_DERIVED,observable,glueball_mass_state,glueball_mass_state composes from C_UQFF_DERIVED
+observable,glueball_mass_state,paper,PAPER_167,deep-capture 161-170
+observable,tde_fallback_rate,paper,PAPER_087,deep-search recovery
+observable,agn_feedback_scm,paper,PAPER_086,deep-search recovery
+primitive,F_TRZ,observable,neutrino_flavor_ratio,neutrino_flavor_ratio composes from F_TRZ
+observable,neutrino_flavor_ratio,paper,PAPER_088,deep-search recovery
+observable,neutrino_ug4_enhancement,paper,PAPER_088,deep-search recovery
+primitive,F_TRZ,observable,master_sc_gate,master_sc_gate composes from F_TRZ
+observable,master_sc_gate,paper,PAPER_089,deep-search recovery
+observable,master_resonant_harmonics,paper,PAPER_089,deep-search recovery
+observable,compressed_ug2_full,paper,PAPER_090,deep-search recovery
+observable,compressed_ub_i,paper,PAPER_090,deep-search recovery
+primitive,G_UQFF,observable,adpm_doppler_gravity,adpm_doppler_gravity composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,adpm_doppler_gravity,adpm_doppler_gravity composes from C_UQFF_DERIVED
+observable,adpm_doppler_gravity,paper,PAPER_091,deep-search recovery
+observable,adpm_photon_sphere_factor,paper,PAPER_091,deep-search recovery
+observable,five_frequency_amplitude,paper,PAPER_091,deep-search recovery
+observable,ssq_planck_form,paper,PAPER_118,deep-search recovery
+observable,doppler_beaming_ratio,paper,PAPER_135,deep-search recovery
+primitive,C_UQFF_DERIVED,observable,jet_injection_energy,jet_injection_energy composes from C_UQFF_DERIVED
+observable,jet_injection_energy,paper,PAPER_161,deep-search recovery
+observable,scm_kinematic_viscosity,paper,PAPER_148,deep-search recovery
+observable,dpm_current_density,paper,PAPER_147,deep-search recovery
+primitive,C_UQFF_DERIVED,observable,lensing_theta_muge,lensing_theta_muge composes from C_UQFF_DERIVED
+observable,lensing_theta_muge,paper,PAPER_151,deep-search recovery
+observable,solar_omega_modulated,paper,PAPER_162,deep-search recovery
+observable,aether_metric_trace_full,paper,PAPER_165,deep-search recovery
+observable,osc_term_gw,paper,PAPER_164,deep-search recovery
+primitive,RHO_UA,observable,ua_sound_speed,ua_sound_speed composes from RHO_UA
+observable,ua_sound_speed,paper,PAPER_127,deep-search recovery
+observable,lookback_time,paper,PAPER_113,deep-search recovery
+observable,dipole_pairing_potential,paper,PAPER_142,deep-search recovery
+observable,scm_core_pressure,paper,PAPER_138,deep-search recovery
+observable,ladder_fit_r2,paper,PAPER_112,deep-search recovery
+observable,quantum_damped_amplitude,paper,PAPER_016,deep-search 001-080 recovery
+primitive,G_UQFF,observable,modified_friedmann_q,modified_friedmann_q composes from G_UQFF
+observable,modified_friedmann_q,paper,PAPER_014,deep-search 001-080 recovery
+observable,pbh_threshold_uqff,paper,PAPER_014,deep-search 001-080 recovery
+observable,qnm_frequency_shift,paper,PAPER_010,deep-search 001-080 recovery
+observable,fpeak_compactness,paper,PAPER_010,deep-search 001-080 recovery
+primitive,RHO_UA,observable,archimedes_effective_density,archimedes_effective_density composes from RHO_UA
+observable,archimedes_effective_density,paper,PAPER_036,deep-search 001-080 recovery
+observable,debroglie_thermal,paper,PAPER_061,deep-search 001-080 recovery
+observable,bec_critical_temp_nuclear,paper,PAPER_061,deep-search 001-080 recovery
+observable,cabibbo_dcs_ratio,paper,PAPER_033,deep-search 001-080 recovery
+observable,ckm_row2_unitarity,paper,PAPER_028,deep-search 001-080 recovery
+observable,vlq_mixing_kappa,paper,PAPER_032,deep-search 001-080 recovery

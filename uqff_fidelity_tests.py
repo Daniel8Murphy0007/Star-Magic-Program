@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.353.0", "uqff_calculator.VERSION = 0.353.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.354.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,42 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === RULE-7 DEEP-SEARCH RECOVERY GUARD (001-080) ===
+import math as _m080
+assert_that(abs(C.cabibbo_dcs_ratio() - _m080.tan(0.231)**4) < 1e-9, "RECOVERY 001-080: DCS = tan^4(theta_C) (PAPER_033)")
+assert_that(abs(C.ckm_row2_unitarity() - 1.0) < 0.005, "RECOVERY 001-080: CKM row-2 unitarity ~1 (PAPER_028)")
+assert_that(abs(C.quantum_damped_amplitude(1.0, 1.0) - _m080.exp(-0.5)) < 1e-9, "RECOVERY 001-080: damped amplitude e^(-gamma t/2) (PAPER_016)")
+assert_that(abs(C.pbh_threshold_uqff() - 0.45) < 1e-12, "RECOVERY 001-080: delta_c base 0.45 (PAPER_014)")
+assert_that(abs(C.archimedes_effective_density(0.0, 1.0) - C.RHO_UA) < 1e-45, "RECOVERY 001-080: rho_eff SCm=1 limit = rho_UA (PAPER_036)")
+# === RULE-7 DEEP-SEARCH RECOVERY GUARD (081-170) ===
+assert_that(abs(C.ssq_planck_form() - 0.622) < 0.001, "RECOVERY: [SSq]_Planck = sqrt(Omega_DM/Omega_L) = 0.622 - THE 0.622 ORIGIN (PAPER_118)")
+assert_that(abs(C.tde_fallback_rate(2.0,1.0,1.0)/C.tde_fallback_rate(1.0,1.0,1.0) - 2**(-5.0/3.0)) < 1e-9, "RECOVERY: TDE t^-5/3 power law (PAPER_087)")
+assert_that(abs(C.agn_feedback_scm(1.0) - 1.099) < 1e-9, "RECOVERY: f_AGN = 1+[SCm]/10 = 1.099 (PAPER_086)")
+assert_that(abs(C.jet_injection_energy(1.0, 7.09, 1.0) - 6.09) < 1e-9, "RECOVERY: E_inject = (gamma-1) = 6.09 at gamma 7.09 (PAPER_161)")
+assert_that(abs(C.scm_core_pressure() - 1e28) < 1e18, "RECOVERY: P_SCm = rho v^2 P_core = 1e28 Pa (PAPER_138)")
+assert_that(C.master_sc_gate(1.0) == 0.99, "RECOVERY: F_SC = 0.99 F_Base gate (PAPER_089)")
+assert_that(abs(C.adpm_doppler_gravity(1.0,1.0,0.0,G=1.0,c=1.0) - 1.0) < 1e-12, "RECOVERY: aDPM Doppler v=0 limit (PAPER_091)")
+# === RULE-7 AUDIT RECOVERY GUARD ===
+assert_that(abs(C.reionization_phi_implied() - 12.0/13.0)/(12.0/13.0) < 0.002, "AUDIT: Q-1412 Phi_implied = 0.924 ~ 12/13 = (D_crit/2-1)/(D_crit/2) (0.09 pct)")
+import uqff_material_landmarks as _mlr_g
+assert_that(len(_mlr_g.IMPLIED_RATIOS) == 8, "AUDIT: 8 ml_ implied ratios captured as data")
+assert_that(abs(_mlr_g.IMPLIED_RATIOS.get("ml_lawson_fusion_criterion", 0) - 1e-21) < 1e-23, "AUDIT: Lawson ratio = 1e-21 = F_TRZ^21 rung")
+# === RULE 7 REVISED GUARD (Daniel ruling: capture ALL data; implied params are data) ===
+assert_that(abs(C.holmlid_xi_implied() - 1e-21)/1e-21 < 0.005, "R7-REVISED CAPTURE: Holmlid xi = 9.98e-22 ~ F_TRZ^21 = F_TRZ^(D_crit - SO_5/2) (0.16 pct)")
+assert_that(abs(C.g593_scale_implied() - 1e-20)/1e-20 < 0.005, "R7-REVISED CAPTURE: G593 E_0 = 1.0024e-20 ~ F_TRZ^20 = chain base F_TRZ^(D_crit-D_BSFG) (0.24 pct)")
+assert_that(abs(C.glueball_implied_volume() - 4.722e-57)/4.722e-57 < 0.01, "R7-REVISED CAPTURE: glueball V_implied = 4.72e-57 m^3 captured")
+assert_that(abs(C.dpmcosmo_fcore_implied_rho() - 1.318e-4)/1.318e-4 < 0.01, "R7-REVISED CAPTURE: DPMcosmo implied rho = 1.318e-4 J/m^3 captured (Q-DPMCOSMO data)")
+# === DEEP-CAPTURE 161-170 GUARD (v0.354) ===
+assert_that(abs(C.scm_jet_velocity()/C.C_UQFF_DERIVED - 0.99) < 1e-12, "PAPER_161: v_SCm = 0.99c (gamma = 7.09 = rho_SCm mantissa)")
+assert_that(abs(C.expansion_factor(4.41e17) - 2.0) < 0.01, "PAPER_163: g_exp(t_Hubble) = 2.0")
+assert_that(C.glueball_mass_state() == 1e-35, "PAPER_167: glueball 1e-35 kg/state (V-convention Rule-7 disclosed)")
+assert_that(abs(C.wind_modulation(0.0) - 1.0) < 1e-15, "PAPER_166: wind_mod(0) = 1")
+# === DEEP-CAPTURE 151-160 GUARD (v0.354) ===
+assert_that(abs(C.sc_gap_scm()/1.380649e-23 - 30.0) < 0.1, "PAPER_156: Delta_SCm = hbar omega/2 -> T_c = 30 K = T_SCm/2 (BCS half-gap)")
+assert_that(abs(C.hybrid_blend_weight(3e11) - 0.9932) < 1e-3, "PAPER_158: beta_SGR = e^(-B/B_crit) = 0.9933")
+assert_that(C.wormhole_exotic_density(1.0, 1.0) < 0, "PAPER_153: exotic density negative (throat-supporting)")
+assert_that(abs(C.complexity_ssq_exponent(10) - 10**(1/0.57)) < 1e-6, "PAPER_156: complexity N^(1/SSq) = N^1.754")
+assert_that(abs(C.hybrid_gravity(1.0, 0.0, 0.0) - 1.0) < 1e-12, "PAPER_158: hybrid B=0 -> pure compressed")
 # === DEEP-CAPTURE 141-150 GUARD (v0.353) ===
 assert_that(C.forty_sixty_split() == (0.4, 0.6), "PAPER_143: 40/60 split = (D_phys, D_BSFG)/SO_5 EXACT")
 assert_that(abs(C.hubble_time() - 4.41e17)/4.41e17 < 0.01, "PAPER_143: t_Hubble = 1/H_0 = 4.41e17 s (registry route)")

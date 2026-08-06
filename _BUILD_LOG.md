@@ -151,3 +151,16 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.353.0 SHIP PREP (frontier 150)
 [2026-08-05] SHIP_PREP v0.353.0 — all files updated; gate green
+
+[2026-08-05] GATE_PASS v0.354.0 deep-capture 151-160 — 2323 assertions: OK (SC gap = hbar omega/2 -> T_c 30 K = T_SCm/2, hybrid beta = e^-B/B_crit blend, wormhole exotic density, regulated zeta Li_s, complexity N^1.754, Ug4 extended 4.219e-10). FRONTIER -> PAPER_160.
+
+[2026-08-05] GATE_PASS v0.354.0 deep-capture 161-170 — 2327 assertions: OK (v_SCm=0.99c gamma=7.09, mu_s(t) solar-cycle, modular compressed g core, g_exp(t_H)=2, EHT aether resonance, Einstein coupling 8piG/c^4, wind_mod, glueball 1e-35 Rule-7). FRONTIER -> PAPER_170.
+
+[2026-08-05] GATE_PASS v0.354.0 RULE-7 AUDIT — 2334 assertions: OK (recoveries: Holmlid xi->F_TRZ^21, G593 E0->F_TRZ^20 chain base, Q-1412 Phi->12/13 candidate, 8 ml ratios w/ rung matches, S_26 namespace collision found, DPMcosmo rho captured)
+
+[2026-08-05] GATE_PASS v0.354.0 DEEP-SEARCH 081-170 — 2341 assertions: OK (25 recovered fns; 0.622 ORIGIN = sqrt(Omega_DM/Omega_L); t^-5/3 TDE; 5-harmonic master; full Ug2/Ub_i; aDPM Doppler; beaming; gamma-1=6.09; census standing rule: FULL equation census per paper)
+
+[2026-08-05] GATE_PASS v0.354.0 DEEP-SEARCH 001-080 — 2346 assertions: OK (11 recoveries: damped quantum amp, Friedmann+xi_Q, PBH threshold, QNM shift, f_peak compactness, rho_eff Archimedes, de Broglie + nuclear T_c, DCS tan^4, CKM unitarity, VLQ kappa; 1 dup auto-caught). CENSUS 001-170 COMPLETE.
+
+## 2026-08-05 — v0.354.0 SHIP PREP (RULE 7 REVISED + census)
+[2026-08-05] SHIP_PREP v0.354.0 — all files updated; gate green

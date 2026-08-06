@@ -5174,3 +5174,10 @@ until 300+ done.
   cascade 1.5^12, Higgs n=12.30, ladder pivot, S_n=2 SSq E_8, eps_UA 4.3 pct, PToE k_A=0.4604V, cosmic-glue
   template, Hubble time. 2 Rule-7 self-corrections (rho_Lambda c^4, cascade basic-vs-ceiling).
 - MEASURED: 2830 fns | 2484 named | registry 3207 | GRAPH 4598 | gate 2318, exit 0.
+
+## 2026-08-05 - v0.354.0 SHIP: RULE 7 REVISED + FULL-CENSUS RECOVERY
+- Daniel ruling canonized: Rule 7 captures ALL data (formula+stated+implied). Retrofit: xi->F_TRZ^21,
+  E0->F_TRZ^20, Phi->12/13, 8 ml ratios, S_26 namespace collision found.
+- Deep search 001-170: 36 recoveries incl. 0.622 ORIGIN = sqrt(Omega_DM/Omega_L). Full-census standing rule.
+- Batches 151-170: SC gap 30K, hybrid beta, gamma=7.09, wormhole exotic, glueball implied-V.
+- MEASURED: 2888 fns | 2542 named | registry 3264 | GRAPH 4667 | gate 2346, exit 0.

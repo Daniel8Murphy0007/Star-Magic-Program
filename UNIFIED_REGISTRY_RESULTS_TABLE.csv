@@ -155,3 +155,17 @@ genesis_fu,E_react v^1 chain,,1.18e53,PAPER_133,Q_s=0,0.0
 forty_sixty,"(D_phys,D_BSFG)/SO_5","(4,6)/10","(0.4,0.6)",PAPER_143,EXACT,0.0
 hubble_time,1/H_0,A_5+SO_5 route,4.41e17 s,PAPER_143,registry,0.0
 ptoe_anchor,k_A hydrogen,,0.4604 V,PAPER_142,resonance,0.0
+sc_gap,hbar omega_SCm/2,,T_c = 30 K,PAPER_156,BCS_half_gap,0.0
+hybrid_beta,e^(-B/B_crit),SGR 3e11,0.9933,PAPER_158,blend_weight,0.0
+complexity_exp,N^(1/SSq),,N^1.754,PAPER_156,P_vs_NP,0.0
+holmlid_xi,back-solved,~F_TRZ^21 = F_TRZ^(D_crit-SO_5/2),9.98e-22,PAPER_1133,R7_CAPTURE_0.16pct,0.16
+g593_E0,back-solved,~F_TRZ^20 = chain base,1.0024e-20,PAPER_593,R7_CAPTURE_0.24pct,0.24
+glueball_V,back-solved,,4.72e-57 m^3,PAPER_167,R7_CAPTURE,0.0
+dpmcosmo_rho,back-solved,,1.318e-4 J/m^3,Q-DPMCOSMO,R7_CAPTURE,0.0
+q1412_phi_implied,7.70/(K_MEX D_phys),~12/13=(D_crit/2-1)/(D_crit/2),0.9240,Q-1412,R7_CAPTURE_0.09pct,0.09
+s26_namespace,eq32 summation vs LENR anchor,1.5403e5 vs 1.4531e26,TWO OBJECTS,PAPER_001/1080,collision_found,0.0
+ml_implied_ratios,stated/chain back-solve,"8 captured, rungs found",various,R7_AUDIT,"F_TRZ^21/^26/^18, SO_5^2",0.0
+ssq_0622_origin,sqrt(Omega_DM/Omega_L),sqrt(0.3869),0.622,PAPER_118,RECOVERED_origin,0.0
+tde_power_law,(t/t_fb)^-5/3,,decay,PAPER_087,RECOVERED,0.0
+jet_gamma_709,(gamma-1)=6.09,gamma=7.09,6.09,PAPER_161,RECOVERED,0.0
+scm_core_P,rho v^2 P_core,1e15*1e16*1e-3,1e28 Pa,PAPER_138,RECOVERED,0.0

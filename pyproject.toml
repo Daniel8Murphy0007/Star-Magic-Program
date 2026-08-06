@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.353.0"
-description = "UQFF Star-Magic-Program v0.353.0: deep-capture frontier -> PAPER_150 (batches 111-150). kappa=0.35/700=5e-4 EXACT observational origin, Hoyle state 6.654 MeV via SSq geometric sum, 40/60 split=(D_phys,D_BSFG)/SO_5 EXACT, 3C273 cascade 1.5^12=129.7, Higgs ladder n=12.30, density-ladder pivot rho13=rho_SCm, PToE resonance k_A=0.4604V, 2 Rule-7 self-corrections. 2830 functions, 2484 named, 8 modules. Registry 3207 rows. Gate 2318."
+version = "0.354.0"
+description = "UQFF Star-Magic-Program v0.354.0: RULE 7 REVISED (capture ALL data incl. back-solved implied params) + full-census recovery 001-170 (36 fns). Discoveries: Holmlid xi->F_TRZ^21, G593 E0->F_TRZ^20 chain base, Phi->12/13, 0.622 ORIGIN=sqrt(Omega_DM/Omega_L). Batches 151-170: SC gap T_c=30K, hybrid beta=e^-B/Bcrit, gamma=7.09. Full-census standing rule. 2888 functions, 2542 named, 8 modules. Registry 3264 rows. Gate 2346."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

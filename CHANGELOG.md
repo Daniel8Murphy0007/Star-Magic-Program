@@ -6275,6 +6275,18 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.354.0] - 2026-08-05 - RULE 7 REVISED + FULL-CENSUS RECOVERY (001-170) + batches 151-170
+- RULE 7 REVISED canonized (Daniel): capture ALL data - formula + stated + back-solved implied parameters.
+  Retrofit discoveries: Holmlid xi ~ F_TRZ^21 (0.16%, chain closes), G593 E0 ~ F_TRZ^20 chain base (0.24%,
+  chain closes), Q-1412 Phi ~ 12/13 (0.09%), 8 ml_ implied ratios on rungs, S_26^(3) namespace collision.
+- Full-census deep search 001-170 (Daniel-directed): 36 recovered forms incl. 0.622 ORIGIN =
+  sqrt(Omega_DM/Omega_Lambda) (PAPER_118), TDE t^-5/3, 5-harmonic master, full Ug2/Ub_i, aDPM Doppler,
+  (gamma-1)=6.09, damped quantum amplitude, Friedmann+xi_Q, QNM shifts, DCS tan^4, CKM unitarity.
+- Batches 151-170: SC gap -> T_c = 30 K = T_SCm/2, hybrid beta = e^(-B/B_crit), wormhole exotic density,
+  v_SCm = 0.99c (gamma = 7.09), EHT aether resonance, glueball implied-V captured.
+- STANDING RULE: full display-equation census per paper (never head-3). 2 dup auto-catches this ship.
+- MEASURED: 2,888 total fns | 2,542 named | 8 modules | registry 3,264 rows | GRAPH 4,667 | gate 2,346 green.
+
 ## [0.353.0] - 2026-08-05 - DEEP-CAPTURE FRONTIER -> PAPER_150 (batches 111-150)
 - 37 new equation-library fns across 4 batches. Headliners: kappa = 0.35/700 = 5e-4 EXACT (registry kappa
   observational origin, Fermi-4LAC; dual route w/ PAPER_2112 derivative), Hoyle state 6.654 MeV via SSq

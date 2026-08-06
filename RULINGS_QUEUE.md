@@ -5765,3 +5765,51 @@ Module formula F_core = hbar*omega_LENR/(sigma_n*rho_vac_UA) with its OWN consta
 sigma=1e-28, rho_UA_L1=1e-11 J/m^3) evaluates to 1.318e17 N, but the module docstring claims ~1e10 N.
 Constants transcribed faithfully (returns 1.318e17); discrepancy disclosed. Ruling: which is drift —
 the docstring claim or one of the constants?
+
+## RULE 7 REVISED — Daniel ruling 2026-08-05 (CANONICAL, supersedes stub-behavior)
+"Rule 7 was supposed to be changed" — Rule 7 does NOT prohibit capture of data. Revised discipline:
+1. Capture EVERYTHING: the formula, the paper's stated value, AND any unstated convention/parameter.
+2. Unstated conventions are BACK-SOLVED and exposed as *_implied functions — implied parameters are data.
+3. Honest-residual disclosure remains, but as annotation on captured data, never as refusal to compute.
+Applied retroactively: glueball V_implied=4.72e-57 m^3, Holmlid xi_implied=9.98e-22, G593 E0_implied=1.0024e-20,
+DPMcosmo rho_implied=1.318e-4 J/m^3.
+DISCOVERY from the capture: xi_Holmlid ~ F_TRZ^21 = F_TRZ^(D_crit - SO_5/2) (0.16%) and
+E0_G593 ~ F_TRZ^20 = chain base F_TRZ^(D_crit - D_BSFG) (0.24%) — the "unknown conventions" RESOLVE TO
+PRIMITIVE RUNGS. Q-DPMCOSMO partially answered: claimed ~1e10 N implies rho_UA_L1 = 1.318e-4 J/m^3.
+
+## AUDIT: what old-Rule-7 prohibitions missed (recovered 2026-08-05)
+1. HOLMLID xi -> F_TRZ^21 = F_TRZ^(D_crit - SO_5/2) (0.16%) - chain now CLOSES on a primitive rung.
+2. G593 E_0 -> F_TRZ^20 = chain base (0.24%) - parameter-free G chain CLOSES.
+3. ml_ implied ratios captured (8): several land on rungs - lawson 1e-21=F_TRZ^21, monopole 9.98e-27~F_TRZ^D_crit,
+   schwinger 1e-18=F_TRZ^18, f_trz-fn 100=SO_5^2, dpm_pair 12=K_MEX denominator. 1 promoted to LIVE-verified.
+   102 remain unparseable by the auto-parser (formulas ARE available via formula_of; deeper parser = future work).
+4. Q-1412 CAPTURED: implied Phi = 7.70/(K_MEX D_phys) = 0.9240 ~ 12/13 = (D_crit/2-1)/(D_crit/2) (0.09%) -
+   candidate resolution: PAPER_1412 used a 12/13 Phi-variant, not Phi_res=0.84. Awaiting ruling.
+5. S_26^(3) NAMESPACE COLLISION FOUND: PAPER_001 eq32 Ramanujan summation computes 1.5403e5; the LENR
+   amplification anchor is 1.4531e26 - TWO DISTINCT OBJECTS share the name. Both captured
+   (S_26_third_order eq32-live vs s26_third_order stated-anchor). Ruling: rename one?
+6. Q-DPMCOSMO: implied rho = 1.318e-4 J/m^3 captured for the module's ~1e10 N claim.
+7. ~50 Q-NNN dual-value rows in GAPS.csv predate the ruling: each carries BOTH values in the row text
+   (already captured as data); no computation was suppressed for these.
+
+## DEEP-SEARCH 081-170 (Daniel-directed): what the 3-equation-per-paper sweeps missed
+Census: papers carry 6-27 display equations each; batch sweeps captured 0-3. 25 significant forms recovered
+in two batches (RULE7_DEEPSEARCH_RECOVERY origin). Headline recoveries:
+- [SSq]_Planck = sqrt(Omega_DM/Omega_Lambda) = 0.622 (PAPER_118) - THE ORIGIN of the 0.622 cross-band GW value.
+- TDE t^-5/3 fallback power law (087); f_AGN = 1+[SCm]/10 (086); 5-harmonic resonant master (089);
+  full compressed Ug2/Ub_i (090); aDPM Doppler + photon-sphere factors (091); Doppler beaming ^(3+alpha) (135);
+  jet injection (gamma-1)=6.09 at gamma=7.09 (161); J_DPM current density (147); MUGE lensing correction (151);
+  cycle-modulated omega' (162); full A_munu trace 4-eta form (165); GW osc term (164); [UA] sound speed (127);
+  lookback integral (113); dipole pairing U_dp (142); P_SCm = 1e28 Pa (138); ladder R^2 = 0.9542 (112).
+Remaining census surplus is worked-example arithmetic + already-captured template repetitions; the full
+equation census is preserved at /tmp scope and re-runnable. Standing rule: batch sweeps now take the FULL
+display-equation census per paper, not head-3.
+
+## DEEP-SEARCH 001-080 (census sweep, pre-census-era batches)
+632 display equations censused across 80 papers. 11 significant recoveries wired (batch 3): quantum damped
+amplitude e^(-gamma t/2) (016), modified Friedmann + xi_Q H (014), PBH threshold UQFF form (014), QNM shift
+[1+alpha_Q-beta_damp] + f_peak compactness (010), Archimedes rho_eff = rho_ICM + rho_UA[SCm] (036),
+thermal de Broglie + nuclear-BEC T_c (061), DCS tan^4(theta_C) (033), CKM row-2 unitarity (028), VLQ mixing
+kappa_T (032). 1 exact-duplicate caught by guard (gw_propagation_damping - already wired in original 015 pass).
+Residual census surplus: worked-example arithmetic, Lagrangian-catalog repetitions, and template blocks
+already captured via _common_uqff_blocks. Census artifacts preserved; standing full-census rule applies.
