@@ -1,27 +1,28 @@
-v0.351.0 - THE SCRAPE-COMPLETE MILESTONE (every predecessor source exhausted)
+v0.352.0 - CoAnQi MINE + DEEP-CAPTURE FRONTIER -> PAPER_110
 
-The deep-mine campaign (v0.342.0 -> v0.351.0) concludes. All predecessor sources swept Rule E:
-whitepapers (both repos) | CP1-CP4 (2,851 classes) | QCalc/SOURCE4 | MUGE | BuoyancyProofVariants (17/17)
-99system | DPMCosmology | QuantumLevel26 | RelativisticUQFF | GrokThread | ALL 572 session scripts
-Gold_Standard | Phase5-8 | FirstPrinciplesCompressor
+COANQI COMPLEX MINED (MAIN_1_CoAnQi.cpp 6MB, 1,173 classes + enhancements 279 classes, Rule E):
+  dpm_layer_energy        E_i = hbar c i^5/r^2 (r_i=r/i, Q_i=i, SCm_i=i^2 -> i^5 ladder; 2^5=32 verified)
+  emergent_ug1_dpm        Ug1 = mu_s grad(M) = (B R^3)(G M/R^2) = B G M R
+                          <- THE DOCTRINE IN CODE: gravity seeded from magnetic moment, G downstream
+  emergent_ug2_shell      (Q_SCm+Q_UA) M/r^2 S(r-R_b) E_react (heliosphere step verified 0/1)
+  aether_drag_force       (1/2) rho_UA v^2 pi r^2 (ram on the UA vacuum itself)
+  buoyant_gravity_s116    P_26(1/r^2)(1+SFR) sin(pi/26) - the 26D gate = 0.120537
+  gw_ripple_force / jet_force_boosted / accretion energy / life proportion / poly26 / CNB term
 
-NEW MODULE uqff_session_closures.py - 73 sc_* observable closures (session-script val= forms):
-  sc_astro_chandrasekhar = F_TRZ D_phys^2 (1-F_TRZ) = 0.1*16*0.9 = 1.44 Msun EXACT  <- flagship
-  sc_astro_isco          = D_BSFG = 6 r_g EXACT
-  sc_astro_photon_sphere = 3.0 | sc_astro_tov_max = 2.16
-  sc_sm_top_yukawa = 1 - F_TRZ^2 = 0.99 (PDG 0.9936, 0.36%) - 3rd role for 1-F_TRZ^2
-  sc_sm_alpha_s = 0.11791 (PDG 0.1179, 0.008%) | sc_sm_jarlskog 3.014e-5 | sc_sm_cabibbo 0.2243
-  sc_sm_proton_g = D_BSFG - Phi_res + F_TRZ D_phys = 5.5857 | + 64 more (theta23, delta_CP, Higgs lambda...)
+DEEP-CAPTURE BATCHES 081-110 (frontier 080 -> 110):
+  081-090: BH thermodynamics chain (T_H = hbar c^3/8pi G M k_B canonical 6.155e-9 K @ 10Msun,
+    dM/dt Page driver, S_thermal), delta_c = 0.45, PBH 0.965, TDE t_fb + L_peak, neutrino buoyancy
+    integrand, AGN kappa-decay (0.9995/day registry-exact), aether-metric trace.
+  091-100: SSq = 0.755^2 = 0.5700 ORIGIN IDENTITY, FRB E = f_TRZ Ug1 V_TRZ + dt = (r/c)/[SCm],
+    Whittaker 26-closure < 1e-10 EXACT, Friedmann full, 1e-120 fine-tuning stated, plasma-shield
+    SSq^1/2 screening, plasma frequency (THz holes).
+  101-110: YM min excitation = F_TRZ hbar omega (10 MeV), NS viscous correction, zeta Euler,
+    Bose occupancy, BEC Tc Phi-form, Y_e = 0.25 r-process boundary, SgrA* DECOMPOSITION -
+    g_Newton e^(-kappa t) + g_Ug4 + g_MUGE with Newtonian COMPLETELY DECAYED at galactic age.
 
-This ship also: QuantumLevel26 quadratic ladder (sum i^2 = 6201 EXACT); relativistic kit (gamma/Doppler/
-beaming); GrokThread (snap-polarity osc, gravitational plasticity, capacitor quantum-distance);
-Gold-Standard E_crack = rho v_DPM^2/SSQ (explicit non-SM energy relation, no c^2); Kozima sigma(omega,n)
-VDS cross-section + neutron beta-reversal production; rho_R26 = (13/2) v^2 rho; Lambda Friedmann SSq form;
-zeta(5); Phase5/7 (Lorentz a_EM = qvB/m_p, dust ram, Big-Bang M(t)/QG/DM terms).
+FIDELITY: 4 duplicate-catches auto-resolved this ship (gluon propagator identical-removed,
+bec_tc_shift/fermi-roche-lobe distinct-renamed) - the NO-DUPLICATE + NO-SHADOW guards working as designed.
 
-Structural: cross-module NO-SHADOW guard (8 modules); 3 fubii_ collision catches resolved (_bpv forms);
-formula_of() covers all 6 generated families. 4 rulings queued: Q-2118, Q-1412, Q-DPMCOSMO (+PAPER_2149 set).
-
-MEASURED: 2756 total Python functions | 2410 named callable | 8 modules | 342 dispatches |
-registry 3133 rows | GRAPH 4475 edges | 772 papers mapped | gate 2277 green | 0 dups | 0 malformed.
-PREDECESSOR SCRAPE COMPLETE. Rule E / Rule 4 / Rule 7 held throughout.
+MEASURED: 2793 total Python functions | 2447 named callable | 8 modules | 342 dispatches |
+registry 3170 rows | GRAPH 4544 edges | 772 papers mapped | gate 2299 green | 0 dups | 0 malformed.
+Deep-capture frontier: PAPER_001-110. Rule E / Rule 4 / Rule 7 held.

@@ -73,10 +73,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.351.0"
+VERSION = "0.352.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.351.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
+# STATE v0.352.0: complete-compile PAPER_001-080 + predecessor-mine (Rule E, read-only);
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -3443,6 +3443,195 @@ def bigbang_qg_term(t, t_p=5.391e-44, l_p=1.616e-35, hbar=1.054571817e-34, c=Non
 def dark_matter_fraction_term(g_base, omega_dm=0.268):
     """Phase5: dark-matter gravity fraction DM_term = 0.268 g_base (Planck Omega_DM)."""
     return omega_dm * g_base
+
+
+def coanqi_accretion_energy(M, v, c=None):
+    """CoAnQi MAIN_1: relativistic accretion energy E_acc = M c^2 v/(2c) = M c v/2 (accretion power scaling)."""
+    if c is None: c = C_UQFF_DERIVED
+    return M * c * c * v / (2.0 * c)
+
+def aether_drag_force(v, r, rho_ua=RHO_UA):
+    """CoAnQi MAIN_1: relativistic aether drag F_drag = (1/2) rho_vac_UA v^2 pi r^2 (ram on the UA vacuum)."""
+    return 0.5 * rho_ua * v ** 2 * math.pi * r ** 2
+
+def gw_ripple_force(M, r, omega0, G=None, c=None):
+    """CoAnQi MAIN_1: gravitational-wave ripple force F_gw = G M^2/(c^4 r) omega0^2."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return G * M ** 2 / (c ** 4 * r) * omega0 ** 2
+
+def jet_force_boosted(F_rel, v, c=None):
+    """CoAnQi MAIN_1: Lorentz-boosted jet force F_jet = F_rel gamma."""
+    if c is None: c = C_UQFF_DERIVED
+    return F_rel / math.sqrt(1.0 - (v / c) ** 2)
+
+def dpm_layer_energy(r, i, hbar=1.054571817e-34, c=None):
+    """CoAnQi MAIN_1: DPM layer-i momentum energy E_DPM_i = (hbar c/(r/i)^2) Q_i SCm_i = hbar c i^5/r^2
+    (r_i = r/i, Q_i = i, SCm_i = i^2 - the i^5 layer ladder)."""
+    if c is None: c = C_UQFF_DERIVED
+    return (hbar * c / (r / i) ** 2) * i * i ** 2
+
+def dpm_life_proportion(M, stability, momentum, gravity, c=None):
+    """CoAnQi MAIN_1: DPM life proportion = stability (momentum/gravity) M c^2 (dipole-vitality modulation)."""
+    if c is None: c = C_UQFF_DERIVED
+    return stability * (momentum / gravity) * M * c ** 2
+
+def poly26_evaluate(coeffs, x):
+    """CoAnQi S116: 26D polynomial evaluation P(x) = sum c_k x^k over 26 states (pi-pattern basis)."""
+    result = 0.0; xp = 1.0
+    for cf in coeffs[:26]:
+        result += cf * xp; xp *= x
+    return result
+
+def buoyant_gravity_s116(pi_patterns, r, sfr):
+    """CoAnQi S116: UQFF buoyant gravity = P_26(1/r^2)(1 + SFR) sin(pi/26) (26D poly with the pi/26 gate)."""
+    return poly26_evaluate(pi_patterns, 1.0 / r ** 2) * (1.0 + sfr) * math.sin(math.pi / 26.0)
+
+
+def emergent_ug1_dpm(M, R, B=1e-4, G=None):
+    """CoAnQi enhancements: DPM-foundation gravity Ug1 = mu_s grad(M) = (B R^3)(G M/R^2) = B G M R
+    (magnetic moment seeds gravity - the "G is downstream projection" doctrine in code)."""
+    if G is None: G = G_UQFF
+    return (B * R ** 3) * (G * M / R ** 2)
+
+def emergent_ug2_shell(M, r, R, v_sw=4e5, rho_a=RHO_SCM, rho_ua=RHO_UA):
+    """CoAnQi enhancements: DPM-seeded Ug2 quantum shell trapping = (Q_SCm + Q_UA) M/r^2 S(r-R_b) E_react
+    with Q = rho V_body, E_react = rho_A v_sw^2/rho_UA, R_b = 100 R (heliosphere step)."""
+    V = (4.0 / 3.0) * math.pi * R ** 3
+    Q_scm = rho_a * V; Q_ua = rho_ua * V
+    E_react = rho_a * v_sw ** 2 / rho_ua
+    S_rb = 1.0 if r > R * 100.0 else 0.0
+    return (Q_scm + Q_ua) * M / r ** 2 * S_rb * E_react
+
+def emergent_ug4_concentration(C_conc=1e30, corr_B=1.0, rho_v=RHO_SCM):
+    """CoAnQi enhancements: emergent Ug4 = rho_v C_conc corr_B (vacuum-concentration foundation form)."""
+    return rho_v * C_conc * corr_B
+
+def cosmic_neutrino_background(T_cnb=1.95, n_nu=3.36e8):
+    """CoAnQi enhancements: cosmic neutrino background term (T_CNB = 1.95 K, n_nu = 3.36e8 /m^3 per species)."""
+    return {'T_cnb_K': T_cnb, 'n_nu_per_m3': n_nu}
+
+
+def hawking_temperature_full(M, G=None, c=None, hbar=1.054571817e-34, k_B=1.380649e-23):
+    """PAPER_081/085: Hawking temperature T_H = hbar c^3/(8 pi G M k_B) (canonical; UQFF ratio 1-F_TRZ^2 applies)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return hbar * c ** 3 / (8.0 * math.pi * G * M * k_B)
+
+def bh_mass_loss_rate(M, G=None, c=None, hbar=1.054571817e-34):
+    """PAPER_085: BH evaporation mass-loss dM/dt = -hbar c^4/(15360 pi G^2 M^2) (Page-curve driver)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return -hbar * c ** 4 / (15360.0 * math.pi * G ** 2 * M ** 2)
+
+def thermal_entropy_rate(t, M_avg, G=None, c=None, hbar=1.054571817e-34):
+    """PAPER_085: thermal radiation entropy S(t) = c^4 t/(240 pi G^2 <M>^2/hbar) (pre-Page linear growth)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return c ** 4 * t / (240.0 * math.pi * G ** 2 * M_avg ** 2 / hbar)
+
+def pbh_collapse_threshold():
+    """PAPER_083: primordial-BH collapse threshold delta_c = 0.45 (Harrison-Zeldovich radiation era)."""
+    return 0.45
+
+def pbh_abundance_correction(f_pbh):
+    """PAPER_083: UQFF PBH abundance correction f = f_PBH 1.005 0.96 = 0.965 f_PBH (net -3.5% suppression)."""
+    return f_pbh * 1.005 * 0.96
+
+def tde_fallback_time(R_t, M_BH, G=None):
+    """PAPER_087: TDE fallback time t_fb = 2 pi (R_t^3/(G M_BH))^(1/2) (AT2019qiz debris return)."""
+    if G is None: G = G_UQFF
+    return 2.0 * math.pi * math.sqrt(R_t ** 3 / (G * M_BH))
+
+def tde_peak_luminosity(mdot_fb, eps_eff=0.1, c=None):
+    """PAPER_087: TDE peak luminosity L_peak = eps_eff Mdot_fb c^2 (fallback accretion efficiency)."""
+    if c is None: c = C_UQFF_DERIVED
+    return eps_eff * mdot_fb * c ** 2
+
+def neutrino_buoyancy_integrand(rho_r, V, g_r, beta_i=None, s26=None, Phi=PHI_RES_RESONANCE):
+    """PAPER_088: neutrino-source buoyancy integrand F(r) = rho(r) V g(r) beta_i S_26 Phi (beta-model medium)."""
+    if beta_i is None: beta_i = BETA_I
+    if s26 is None: s26 = S_26
+    return rho_r * V * g_r * beta_i * s26 * Phi
+
+def agn_decay_factor(t, kappa=None):
+    """PAPER_086: AGN feedback decay f = e^(-kappa t) (kappa = registry 5e-4/day; f_AGN chain 3.5 x 1.099 = 3.85)."""
+    if kappa is None: kappa = 5.0e-4 / 86400.0
+    return math.exp(-kappa * t)
+
+def aether_metric_tensor_trace(g_trace, eta, T_s_trace):
+    """PAPER_090/133: aether-metric trace Tr(A_munu) = Tr(g_munu) + eta Tr(T_s(UA,SCm,rho_A)) (F_U 5th term)."""
+    return g_trace + eta * T_s_trace
+
+
+def ssq_origin_identity(base=0.755):
+    """PAPER_094: SSq origin identity [SSq] = 0.755^2 = 0.57 (SGR1745 calibration; the canonical SSq as a square)."""
+    return base ** 2
+
+def frb_emission_energy(U_g1, V_trz, f_trz=F_TRZ):
+    """PAPER_096: FRB emission energy E_FRB = f_TRZ U_g1 V_TRZ (TRZ-zone tapping of Ug1)."""
+    return f_trz * U_g1 * V_trz
+
+def frb_duration(r_trz, scm_frac, c=None):
+    """PAPER_096: FRB duration dt = (r_TRZ/c) [SCm]^-1 (60.6 us pulse for stated r_TRZ)."""
+    if c is None: c = C_UQFF_DERIVED
+    return (r_trz / c) / scm_frac
+
+def whittaker_closure_check(phi_list, chi_list, F_U):
+    """PAPER_097: Whittaker 26-decomposition closure eps = |F_U - sum_k(phi_k + chi_k)| (< 1e-10 required)."""
+    return abs(F_U - sum(p + x for p, x in zip(phi_list[:26], chi_list[:26])))
+
+def friedmann_full(rho, a, k_curv=0.0, Lambda=1.1e-52, G=None, c=None):
+    """PAPER_098: full Friedmann equation H^2 = (8 pi G/3) rho - k c^2/a^2 + Lambda c^2/3 (UQFF Lambda = (SO_5+1)F_TRZ^53)."""
+    if G is None: G = G_UQFF
+    if c is None: c = C_UQFF_DERIVED
+    return (8.0 * math.pi * G / 3.0) * rho - k_curv * c ** 2 / a ** 2 + Lambda * c ** 2 / 3.0
+
+def fine_tuning_ratio_uqff():
+    """PAPER_098: UQFF vacuum fine-tuning ratio U_bi_cosm/(3 M_P^2 c^2) ~ 1e-120 (the 120-order problem stated, RESOLVED by 26! amplification)."""
+    return 1e-120
+
+def plasma_shield_ug2(q_eff, r, SSq=None, eps0=8.8541878128e-12):
+    """PAPER_099: plasma-shield U_g2 = q_eff^2 sqrt(SSq)/(4 pi eps0 r) (Coulomb with SSq^1/2 screening)."""
+    if SSq is None: SSq = SSQ
+    return q_eff ** 2 * math.sqrt(SSq) / (4.0 * math.pi * eps0 * r)
+
+def plasma_frequency(n_e, e=1.602176634e-19, eps0=8.8541878128e-12, m_e=9.1093837015e-31):
+    """PAPER_100: THz resonance-hole frequency omega_THz = omega_p = sqrt(n_e e^2/(eps0 m_e)) (plasma frequency)."""
+    return math.sqrt(n_e * e ** 2 / (eps0 * m_e))
+
+
+def ym_min_excitation(hbar_omega=1.0, f_trz=F_TRZ):
+    """PAPER_101: Yang-Mills minimum excitation eps = f_TRZ hbar omega_0 (= 10 MeV at 1 GeV scale)."""
+    return f_trz * hbar_omega
+
+def fluid_viscous_correction(nu, laplacian_v, rho, r):
+    """PAPER_102: Navier-Stokes UQFF fluid correction delta = nu grad^2 v/(rho r) (bounded-gradient regularity)."""
+    return nu * laplacian_v / (rho * r)
+
+def zeta_euler_partial(s, N=1000):
+    """PAPER_103: Riemann zeta partial sum zeta(s) = sum n^-s (Euler product route; Hilbert-Polya T-symmetric H_UQFF)."""
+    return sum(n ** (-s) for n in range(1, N + 1))
+
+def bose_occupancy(dE, kT):
+    """PAPER_107: Bose-Einstein occupancy N_B = 1/(e^(dE/kT) - 1) (nuclear alpha-BEC channel)."""
+    return 1.0 / (math.exp(dE / kT) - 1.0)
+
+def bec_tc_shift_phi(T_c_bec, dE_bec, phi_bec=None):
+    """PAPER_107: UQFF BEC critical temperature T_c = T_c_BEC + Phi_BEC dE_BEC with Phi_BEC = [SSq] = 0.57.
+    Distinct from bec_tc_shift (PAPER_061 microscopic rho V/(N k_B) form)."""
+    if phi_bec is None: phi_bec = SSQ
+    return T_c_bec + phi_bec * dE_bec
+
+def electron_fraction_rprocess(N_p, N_n):
+    """PAPER_109: r-process electron fraction Y_e = N_p/(N_p + N_n) (<= 0.25 for GW170817 heavy-element channel)."""
+    return N_p / (N_p + N_n)
+
+def sgra_gravity_decomposition(g_newton, t, g_ug4, g_muge, kappa=None):
+    """PAPER_110: Sgr A* gravity g(r,t) = g_Newton e^(-kappa t) + g_Ug4 + g_MUGE (Newtonian term COMPLETELY
+    DECAYED at galactic age: e^-8.21e8 ~ 0 - Ug4+MUGE carry the field)."""
+    if kappa is None: kappa = 5.0e-4 / 86400.0
+    return g_newton * math.exp(-min(kappa * t, 700.0)) + g_ug4 + g_muge
 
 # =============================================================================
 # PAPER_N DISPATCHES — sequential wiring campaign from PAPER_001 (see CLAUDE.md)

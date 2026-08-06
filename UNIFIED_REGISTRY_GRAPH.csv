@@ -4474,3 +4474,72 @@ observable,bigbang_mass_evolution,paper,Phase5_Consolidated,phase sweep
 primitive,C_UQFF_DERIVED,observable,bigbang_qg_term,bigbang_qg_term composes from C_UQFF_DERIVED
 observable,bigbang_qg_term,paper,Phase5_Consolidated,phase sweep
 observable,dark_matter_fraction_term,paper,Phase5_Consolidated,phase sweep
+primitive,C_UQFF_DERIVED,observable,coanqi_accretion_energy,coanqi_accretion_energy composes from C_UQFF_DERIVED
+observable,coanqi_accretion_energy,paper,CoAnQi_MAIN_1,CoAnQi sweep
+primitive,RHO_UA,observable,aether_drag_force,aether_drag_force composes from RHO_UA
+observable,aether_drag_force,paper,CoAnQi_MAIN_1,CoAnQi sweep
+primitive,C_UQFF_DERIVED,observable,gw_ripple_force,gw_ripple_force composes from C_UQFF_DERIVED
+primitive,G_UQFF,observable,gw_ripple_force,gw_ripple_force composes from G_UQFF
+observable,gw_ripple_force,paper,CoAnQi_MAIN_1,CoAnQi sweep
+primitive,C_UQFF_DERIVED,observable,jet_force_boosted,jet_force_boosted composes from C_UQFF_DERIVED
+observable,jet_force_boosted,paper,CoAnQi_MAIN_1,CoAnQi sweep
+primitive,C_UQFF_DERIVED,observable,dpm_layer_energy,dpm_layer_energy composes from C_UQFF_DERIVED
+observable,dpm_layer_energy,paper,CoAnQi_MAIN_1,CoAnQi sweep
+primitive,C_UQFF_DERIVED,observable,dpm_life_proportion,dpm_life_proportion composes from C_UQFF_DERIVED
+observable,dpm_life_proportion,paper,CoAnQi_MAIN_1,CoAnQi sweep
+observable,poly26_evaluate,paper,CoAnQi_S116,CoAnQi sweep
+observable,buoyant_gravity_s116,paper,CoAnQi_S116,CoAnQi sweep
+primitive,G_UQFF,observable,emergent_ug1_dpm,emergent_ug1_dpm composes from G_UQFF
+observable,emergent_ug1_dpm,paper,CoAnQi_enhancements,CoAnQi enhancements
+primitive,RHO_SCM,observable,emergent_ug2_shell,emergent_ug2_shell composes from RHO_SCM
+primitive,RHO_UA,observable,emergent_ug2_shell,emergent_ug2_shell composes from RHO_UA
+observable,emergent_ug2_shell,paper,CoAnQi_enhancements,CoAnQi enhancements
+primitive,RHO_SCM,observable,emergent_ug4_concentration,emergent_ug4_concentration composes from RHO_SCM
+observable,emergent_ug4_concentration,paper,CoAnQi_enhancements,CoAnQi enhancements
+observable,cosmic_neutrino_background,paper,CoAnQi_enhancements,CoAnQi enhancements
+primitive,F_TRZ,observable,hawking_temperature_full,hawking_temperature_full composes from F_TRZ
+primitive,G_UQFF,observable,hawking_temperature_full,hawking_temperature_full composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,hawking_temperature_full,hawking_temperature_full composes from C_UQFF_DERIVED
+observable,hawking_temperature_full,paper,PAPER_081,deep-capture 081-090
+primitive,G_UQFF,observable,bh_mass_loss_rate,bh_mass_loss_rate composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,bh_mass_loss_rate,bh_mass_loss_rate composes from C_UQFF_DERIVED
+observable,bh_mass_loss_rate,paper,PAPER_085,deep-capture 081-090
+primitive,G_UQFF,observable,thermal_entropy_rate,thermal_entropy_rate composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,thermal_entropy_rate,thermal_entropy_rate composes from C_UQFF_DERIVED
+observable,thermal_entropy_rate,paper,PAPER_085,deep-capture 081-090
+observable,pbh_collapse_threshold,paper,PAPER_083,deep-capture 081-090
+observable,pbh_abundance_correction,paper,PAPER_083,deep-capture 081-090
+primitive,G_UQFF,observable,tde_fallback_time,tde_fallback_time composes from G_UQFF
+observable,tde_fallback_time,paper,PAPER_087,deep-capture 081-090
+primitive,C_UQFF_DERIVED,observable,tde_peak_luminosity,tde_peak_luminosity composes from C_UQFF_DERIVED
+observable,tde_peak_luminosity,paper,PAPER_087,deep-capture 081-090
+primitive,BETA_I,observable,neutrino_buoyancy_integrand,neutrino_buoyancy_integrand composes from BETA_I
+primitive,S_26,observable,neutrino_buoyancy_integrand,neutrino_buoyancy_integrand composes from S_26
+primitive,PHI_RES_RESONANCE,observable,neutrino_buoyancy_integrand,neutrino_buoyancy_integrand composes from PHI_RES_RESONANCE
+observable,neutrino_buoyancy_integrand,paper,PAPER_088,deep-capture 081-090
+observable,agn_decay_factor,paper,PAPER_086,deep-capture 081-090
+observable,aether_metric_tensor_trace,paper,PAPER_090,deep-capture 081-090
+observable,ssq_origin_identity,paper,PAPER_094,deep-capture 091-100
+primitive,F_TRZ,observable,frb_emission_energy,frb_emission_energy composes from F_TRZ
+observable,frb_emission_energy,paper,PAPER_096,deep-capture 091-100
+primitive,C_UQFF_DERIVED,observable,frb_duration,frb_duration composes from C_UQFF_DERIVED
+observable,frb_duration,paper,PAPER_096,deep-capture 091-100
+observable,whittaker_closure_check,paper,PAPER_097,deep-capture 091-100
+primitive,F_TRZ,observable,friedmann_full,friedmann_full composes from F_TRZ
+primitive,SO_5,observable,friedmann_full,friedmann_full composes from SO_5
+primitive,G_UQFF,observable,friedmann_full,friedmann_full composes from G_UQFF
+primitive,C_UQFF_DERIVED,observable,friedmann_full,friedmann_full composes from C_UQFF_DERIVED
+observable,friedmann_full,paper,PAPER_098,deep-capture 091-100
+observable,fine_tuning_ratio_uqff,paper,PAPER_098,deep-capture 091-100
+primitive,SSQ,observable,plasma_shield_ug2,plasma_shield_ug2 composes from SSQ
+observable,plasma_shield_ug2,paper,PAPER_099,deep-capture 091-100
+observable,plasma_frequency,paper,PAPER_100,deep-capture 091-100
+primitive,F_TRZ,observable,ym_min_excitation,ym_min_excitation composes from F_TRZ
+observable,ym_min_excitation,paper,PAPER_101,deep-capture 101-110
+observable,fluid_viscous_correction,paper,PAPER_102,deep-capture 101-110
+observable,zeta_euler_partial,paper,PAPER_103,deep-capture 101-110
+observable,bose_occupancy,paper,PAPER_107,deep-capture 101-110
+primitive,SSQ,observable,bec_tc_shift_phi,bec_tc_shift_phi composes from SSQ
+observable,bec_tc_shift_phi,paper,PAPER_107,deep-capture 101-110
+observable,electron_fraction_rprocess,paper,PAPER_109,deep-capture 101-110
+observable,sgra_gravity_decomposition,paper,PAPER_110,deep-capture 101-110

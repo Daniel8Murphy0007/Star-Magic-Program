@@ -227,3 +227,12 @@ Mined this ship as individually-callable, primitive-sourced functions — each f
 - **ISCO = D_BSFG = 6 r_g**: EHT/X-ray ISCO measurements departing 6 r_g (Schwarzschild) falsify.
 - **top Yukawa y_t = 1 - F_TRZ^2 = 0.99**: PDG 0.9936; tighter m_t/v measurements test the 0.36% band.
 - **alpha_s = F_TRZ K_Mex SSq - F_TRZ^3 Phi_res = 0.11791**: 0.008% vs world average; lattice tightening tests it.
+
+
+## v0.352.0 falsifiable additions
+- **SgrA* Newtonian-decayed** (PAPER_110): stellar-orbit precession around Sgr A* must be fully explained by
+  Ug4+MUGE; any residual requiring an undecayed Newtonian core falsifies the kappa-decay.
+- **DPM i^5 layer ladder** (CoAnQi): layer-resolved DPM energies must scale as i^5; spectroscopy of layered
+  systems departing i^5 falsifies.
+- **SSq = 0.755^2** (PAPER_094): if 0.755 proves non-decomposable, SSq remains primitive; if it decomposes,
+  the 9-primitive count drops again.

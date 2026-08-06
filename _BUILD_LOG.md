@@ -127,3 +127,16 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 
 ## 2026-08-05 — v0.351.0 SHIP PREP (SCRAPE-COMPLETE MILESTONE)
 [2026-08-05] SHIP_PREP v0.351.0 — all files updated; 1 new module (session_closures); gate green; PREDECESSOR SCRAPE COMPLETE
+
+[2026-08-05] GATE_PASS v0.352.0 CoAnQi mine — 2281 assertions: OK (6MB MAIN_1_CoAnQi.cpp: DPM layer i^5 ladder E=hbar c i^5/r^2, aether drag (1/2)rho_UA v^2 pi r^2, GW ripple, jet boost, S116 26D poly + sin(pi/26) gate, life proportion)
+
+[2026-08-05] GATE_PASS v0.352.0 CoAnQi enhancements — 2285 assertions: OK (emergent DPM-foundation Ug1=mu_s grad(M)=B G M R, Ug2 charge-shell heliosphere step + E_react=rho_A v^2/rho_UA, Ug4 concentration, CNB term)
+
+[2026-08-05] GATE_PASS v0.352.0 deep-capture 081-090 — 2290 assertions: OK (T_H canonical, dM/dt Page driver, S_thermal, delta_c=0.45, PBH 0.965, TDE t_fb + L_peak, neutrino buoyancy integrand, AGN kappa-decay, aether-metric trace). FRONTIER -> PAPER_090.
+
+[2026-08-05] GATE_PASS v0.352.0 deep-capture 091-100 — 2294 assertions: OK (SSq=0.755^2 ORIGIN IDENTITY, FRB E+dt, Whittaker 26-closure <1e-10, Friedmann full, 1e-120 fine-tuning stated, plasma-shield SSq^1/2 screening, plasma frequency). FRONTIER -> PAPER_100.
+
+[2026-08-05] GATE_PASS v0.352.0 deep-capture 101-110 — 2299 assertions: OK (YM min excitation F_TRZ hw, NS viscous correction, zeta Euler partial, Bose occupancy, BEC Tc Phi-form, Y_e r-process 0.25, SgrA* Newtonian-decayed decomposition; 2 dup catches auto-resolved). FRONTIER -> PAPER_110.
+
+## 2026-08-05 — v0.352.0 SHIP PREP (CoAnQi + frontier 110)
+[2026-08-05] SHIP_PREP v0.352.0 — all files updated; gate green

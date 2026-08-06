@@ -97,3 +97,7 @@ open_ruling,inflation_force_core,OPEN_RULING,Q-DPMCOSMO: module constants give 1
 session_closures,sc_73_closures,CLOSED,Chandrasekhar 1.44 EXACT + ISCO 6 EXACT + SM spectrum (572 scripts)
 gold_standard,crack_energy,CLOSED,E_crack = rho v^2/SSQ non-SM energy relation
 campaign,predecessor_scrape,COMPLETE,all sources exhausted v0.342-v0.351 (Rule E throughout)
+coanqi,dpm_i5_ladder,CLOSED,E_i = hbar c i^5/r^2 (verified 2^5=32)
+coanqi,emergent_ug1_dpm,CLOSED,Ug1 = B G M R gravity-from-magnetism doctrine
+deep_frontier,batches_081_110,CLOSED,BH thermo + SSq origin + Whittaker + SgrA* decomposition
+primitive_origin,ssq_origin_identity,CLOSED,SSq = 0.755^2 (future ruling: does 0.755 decompose?)

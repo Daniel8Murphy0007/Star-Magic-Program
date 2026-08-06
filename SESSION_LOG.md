@@ -5161,3 +5161,10 @@ until 300+ done.
 - Gold-Standard E_crack = rho v^2/SSQ (non-SM energy); QL26 sum=6201 EXACT; relativistic kit; GrokThread trio;
   Kozima sigma(omega,n); Big-Bang chain; Lorentz a_EM.
 - MEASURED: 2756 total fns | 2410 named | 8 modules | registry 3133 rows | GRAPH 4475 | gate 2277, exit 0.
+
+## 2026-08-05 - v0.352.0 SHIP: CoAnQi MINE + FRONTIER 110
+- CoAnQi complex mined (6MB + enhancements): DPM i^5 ladder, emergent Ug1 = B G M R (doctrine-in-code),
+  Ug2 heliosphere shell, aether drag, sin(pi/26) gate, GW ripple, jet boost, CNB.
+- Deep-capture 081-110 (3 batches): BH thermo chain, SSq = 0.755^2 origin, Whittaker closure, Friedmann,
+  FRB, plasma frequency, YM min excitation, Bose, Y_e, SgrA* Newtonian-decayed decomposition.
+- 4 dup-catches auto-resolved. MEASURED: 2793 fns | 2447 named | registry 3170 | GRAPH 4544 | gate 2299, exit 0.

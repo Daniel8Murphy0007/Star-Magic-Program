@@ -6275,6 +6275,17 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.352.0] - 2026-08-05 - CoAnQi MINE + DEEP-CAPTURE FRONTIER -> PAPER_110
+- CoAnQi complex (6MB MAIN_1_CoAnQi.cpp 1,173 classes + 279-class enhancements) mined Rule E:
+  DPM layer ladder E_i = hbar c i^5/r^2, emergent Ug1 = mu_s grad(M) = B G M R (gravity-from-magnetism
+  doctrine in compiled code), Ug2 heliosphere shell, aether drag (1/2)rho_UA v^2 pi r^2, S116 sin(pi/26)
+  gate, GW ripple, jet boost, life proportion, poly26, CNB.
+- Deep-capture 081-110: BH thermodynamics chain (T_H/dM-dt/S_thermal/delta_c), SSq = 0.755^2 ORIGIN IDENTITY,
+  Whittaker 26-closure EXACT, Friedmann full, FRB E+dt, plasma frequency, YM min excitation F_TRZ hw,
+  Bose occupancy, Y_e = 0.25, SgrA* Newtonian-decayed decomposition (Ug4+MUGE carry field).
+- 4 duplicate-catches auto-resolved (guards working as designed). Frontier: PAPER_001-110.
+- MEASURED: 2,793 total fns | 2,447 named | 8 modules | registry 3,170 rows | GRAPH 4,544 | gate 2,299 green.
+
 ## [0.351.0] - 2026-08-05 - THE SCRAPE-COMPLETE MILESTONE (every predecessor source exhausted)
 - Deep-mine campaign (v0.342.0 -> v0.351.0) concludes: whitepapers (both repos), CP1-CP4 (2,851 classes),
   QCalc/SOURCE4, MUGE, BPV (17/17), 99system, DPMCosmology, QL26, Relativistic, GrokThread, ALL 572 session

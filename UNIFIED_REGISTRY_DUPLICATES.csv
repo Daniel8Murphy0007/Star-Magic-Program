@@ -12,3 +12,4 @@ v0348_mine,confirmation,"rounds 6-9: 20 fns added, 0 duplicate defs (NO-DUPLICAT
 v0349_deep_mine,confirmation,318 generated fns (115 bb + 191 ml + 12 pi): 0 duplicate names across all 5 modules (gate-verified)
 v0350_sweep,confirmation,2 dup-def catches (dpm_center_energy renamed preinflation form; beta_model earlier); 0 dups final (gate-verified)
 v0351_final,confirmation,0 dups across 8 modules (NO-SHADOW guard); campaign total 5 collision catches all auto-caught
+v0352_catches,confirmation,"4 dup-catches auto-resolved: gluon_propagator (identical, removed), bec_tc_shift->_phi + fubii fermi/roche/lobe->_bpv (distinct, renamed); 0 final"

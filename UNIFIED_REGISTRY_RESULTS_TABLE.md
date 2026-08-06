@@ -201,3 +201,15 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | Jarlskog | F_TRZ^5 D_BSFG SSq(1-F_TRZ K_Mex SSq) | 3.014e-5 | SESSION_374 | 0.46% |
 | E_crack | rho v_DPM^2/SSQ | non-SM energy | Gold_Standard | - |
 | QL26 sum | sum i^2 (1..26) | 6201 | QuantumLevel26 | EXACT |
+
+
+## v0.352.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| DPM layer ladder | hbar c i^5/r^2 | i^5 (32 at i=2) | CoAnQi |
+| emergent Ug1 | B G M R | doctrine-in-code | CoAnQi |
+| sin(pi/26) gate | 26D geometry | 0.120537 | CoAnQi S116 |
+| SSq origin | 0.755^2 | 0.5700 | PAPER_094 |
+| T_H (10 Msun) | hbar c^3/8pi G M k_B | 6.155e-9 K | PAPER_081 |
+| Whittaker closure | 26-partition | <1e-10 | PAPER_097 |
+| Y_e r-process | N_p/(N_p+N_n) | 0.25 | PAPER_109 |

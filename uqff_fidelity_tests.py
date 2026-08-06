@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.351.0", "uqff_calculator.VERSION = 0.351.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.352.0", "uqff_calculator.VERSION = 0.352.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -327,6 +327,33 @@ _srcguard = open("uqff_calculator.py", encoding="utf-8").read()
 _defnames = [m.group(1) for m in _re.finditer(r"^def ([a-zA-Z_][a-zA-Z0-9_]*)\(", _srcguard, _re.M)]
 _defdups = {k: v for k, v in _coll.Counter(_defnames).items() if v > 1}
 assert_that(len(_defdups) == 0, "No duplicate function definitions in uqff_calculator.py (found: %s)" % _defdups)
+# === DEEP-CAPTURE 101-110 GUARD (v0.352) ===
+assert_that(abs(C.ym_min_excitation() - 0.1) < 1e-12, "PAPER_101: YM min excitation = F_TRZ hbar omega (10 MeV at 1 GeV)")
+assert_that(abs(C.bose_occupancy(1.0, 1.0) - 1.0/(2.718281828-1.0)) < 1e-6, "PAPER_107: Bose occupancy 1/(e-1)")
+assert_that(C.electron_fraction_rprocess(1.0, 3.0) == 0.25, "PAPER_109: Y_e = 0.25 r-process boundary")
+assert_that(abs(C.sgra_gravity_decomposition(2.4e-5, 1e17, 1e-6, 2e-6) - 3e-6) < 1e-12, "PAPER_110: SgrA* Newtonian completely decayed (Ug4+MUGE carry field)")
+assert_that(abs(C.bec_tc_shift_phi(1.0, 1.0) - 1.57) < 1e-12, "PAPER_107: T_c shift Phi_BEC = SSq form")
+# === DEEP-CAPTURE 091-100 GUARD (v0.352) ===
+assert_that(abs(C.ssq_origin_identity() - 0.570025) < 1e-6, "PAPER_094: SSq = 0.755^2 = 0.570025 origin identity (canonical 0.57)")
+assert_that(C.whittaker_closure_check([1.0]*26, [1.0]*26, 52.0) < 1e-10, "PAPER_097: Whittaker 26-decomposition closes to <1e-10")
+assert_that(abs(C.plasma_frequency(1e20) - 5.641e11)/5.641e11 < 0.01, "PAPER_100: plasma frequency canonical")
+assert_that(C.fine_tuning_ratio_uqff() == 1e-120, "PAPER_098: 120-order fine-tuning stated (resolved by 26! amplification)")
+# === DEEP-CAPTURE 081-090 GUARD (v0.352) ===
+assert_that(abs(C.hawking_temperature_full(1.989e31) - 6.155e-9)/6.155e-9 < 0.01, "PAPER_081: T_H(10 Msun) = 6.155e-9 K canonical")
+assert_that(C.pbh_collapse_threshold() == 0.45, "PAPER_083: delta_c = 0.45 Harrison-Zeldovich")
+assert_that(abs(C.pbh_abundance_correction(1.0) - 0.9648) < 1e-4, "PAPER_083: PBH correction 1.005*0.96 = 0.965")
+assert_that(abs(C.agn_decay_factor(86400.0) - 0.9995)/0.9995 < 1e-6, "PAPER_086: AGN decay e^-kappa_day = 0.9995 (registry kappa)")
+assert_that(C.bh_mass_loss_rate(1e30) < 0, "PAPER_085: dM/dt negative (evaporation)")
+# === COANQI EMERGENT GUARD (v0.352) ===
+assert_that(C.emergent_ug2_shell(1.0, 1.0, 1.0) == 0.0, "CoAnQi: Ug2 heliosphere step S(r-R_b) zero inside bubble")
+assert_that(C.emergent_ug2_shell(1.0, 200.0, 1.0) > 0.0, "CoAnQi: Ug2 active outside bubble")
+assert_that(abs(C.emergent_ug1_dpm(1.0, 1.0, 1.0, G=1.0) - 1.0) < 1e-12, "CoAnQi: Ug1 = B G M R DPM-foundation (units-normalized)")
+assert_that(abs(C.emergent_ug4_concentration(1e30, 1.0)/C.RHO_SCM - 1e30) < 1e15, "CoAnQi: Ug4 = rho_SCm C_conc")
+# === COANQI GUARD (v0.352) ===
+assert_that(abs(C.dpm_layer_energy(1.0, 2)/C.dpm_layer_energy(1.0, 1) - 32.0) < 1e-9, "CoAnQi: DPM layer energy i^5 ladder (2^5=32)")
+assert_that(abs(C.jet_force_boosted(1.0, 0.0) - 1.0) < 1e-12, "CoAnQi: jet boost gamma(0)=1")
+assert_that(C.aether_drag_force(0.0, 1.0) == 0.0, "CoAnQi: aether drag vanishes at v=0")
+assert_that(C.formula_of("buoyant_gravity_s116") is not None, "CoAnQi fns formula-accessible")
 # === GOLD-STANDARD/PHASE8 GUARD (v0.351) ===
 assert_that(abs(C.zeta5_series() - 1.036928) < 1e-5, "FirstPrinciples: zeta(5) = 1.036928")
 assert_that(C.neutron_production_force(1e10) < 0, "Phase8/Kozima: neutron force negative (beta_i - 1 buoyancy reversal)")

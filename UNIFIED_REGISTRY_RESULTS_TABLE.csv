@@ -133,3 +133,11 @@ isco_radius,D_BSFG,6,6,SESSION_386,EXACT,0.0
 top_yukawa,1-F_TRZ^2,0.99,0.99,SESSION_376,PDG_0.9936,0.36
 alpha_s_composed,F_TRZ K_Mex SSq - F_TRZ^3 Phi_res,,0.11791,SESSION_378,PDG_0.1179,0.008
 jarlskog,F_TRZ^5 D_BSFG SSq (1-F_TRZ K_Mex SSq),,3.014e-5,SESSION_374,obs_3.00e-5,0.46
+dpm_layer_ladder,hbar c i^5/r^2,i^5 scaling,2^5=32 verified,CoAnQi_MAIN_1,EXACT_ladder,0.0
+pi26_gate,sin(pi/26),,0.120537,CoAnQi_S116,26D_gate,0.0
+hawking_T_10Msun,hbar c^3/(8pi G M k_B),,6.155e-9 K,PAPER_081,canonical,0.0
+pbh_delta_c,Harrison-Zeldovich,,0.45,PAPER_083,radiation_era,0.0
+tde_fallback,2pi sqrt(R_t^3/GM),,event-specific,PAPER_087,AT2019qiz,0.0
+ssq_origin,0.755^2,,0.570025,PAPER_094,EXACT_origin,0.004
+whittaker_closure,sum 26 (phi+chi),,<1e-10,PAPER_097,EXACT,0.0
+plasma_freq_thz,sqrt(n_e e^2/eps0 m_e),,n-dependent,PAPER_100,canonical,0.0

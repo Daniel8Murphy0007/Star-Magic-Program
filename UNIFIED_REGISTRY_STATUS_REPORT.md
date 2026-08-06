@@ -137,3 +137,7 @@ Registry R0 823 rows; XGEO queue 154 / confirmations 70; linked-paper mapping th
 
 ## LIVE STATUS v0.351.0 - PREDECESSOR SCRAPE COMPLETE
 - 2,756 fns | 2,410 named | 8 modules | registry 3,133 | GRAPH 4,475 | gate 2,277. All sources exhausted. 4 rulings queued.
+
+
+## LIVE STATUS v0.352.0
+- CoAnQi mined + frontier PAPER_110. 2,793 fns | 2,447 named | registry 3,170 | GRAPH 4,544 | gate 2,299. New future-target: 0.755 decomposition.
