@@ -5822,3 +5822,12 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
 - Q-240a: PAPER_240 Q_wave printed 3.11e9 vs computed 3.10e-15 from its own inputs (24 orders);
   F_spooky boxed 2.71e89 vs in-paper arithmetic 5.55e-30 (catalogue-normalized units suspected).
 - Slip families logged in CHANGELOG (1e9, 10x, 1e17, 12-order); all transcribed faithfully.
+
+## v0.356.0 arc notes (2026-08-07) - disclosures for review, no blocking rulings
+- RESOLVED: PAPER_240 Q_wave 3.11e9 = PAPER_270 CGS chain (self-rectification; Q-240a closed).
+- Q-295a: PAPER_295 1e11-row (A_sc = 6.994e18, a_super = 2.479e4) implies 4 orders/order,
+  inconsistent with its own linear-A_sc formula (f^2 = 2 orders/order). Formula-faithful wired.
+- Q-283a: xi_HT = 1.3222 back-solves to t = 4.5 Gyr (Saturn age) not t_H - coupling-clock reading
+  captured as RULE7-IMPLIED.
+- Q-278a: Sombrero w_ring sqrt(10) arithmetic slip (5.22e-15 vs printed 1.650e-14).
+- Q-289a: A_sc = 6.994e21 selects E_vac,ISM = RHO_SCM (nebular reading 10x low) - back-solved.

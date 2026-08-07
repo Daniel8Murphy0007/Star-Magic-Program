@@ -227,7 +227,7 @@ Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constant
 | t_Hubble | 1/H_0 | 4.41e17 s | PAPER_143 | registry |
 
 
-## v0.355.0 additions (live campaign)
+## v0.356.0 additions (live campaign)
 | Item | Route | Value | Source |
 |---|---|---|---|
 | 0.622 origin | sqrt(Omega_DM/Omega_L) | 0.622 | PAPER_118 RECOVERED |

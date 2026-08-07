@@ -5208,3 +5208,14 @@ with a faithful formula transcription and (where possible) a back-solved implied
 Ship files synced: pyproject (0.355.0, desc 379 chars), calculator VERSION + STATE, gate pin,
 CITATION.cff, README (badges + release note + frontier), CHANGELOG, UNIFIED_REGISTRY_VERSION.txt,
 SHIP_MESSAGE.txt, this log. Gate green at ship time.
+
+## 2026-08-07 - v0.356.0 DEEP-CAPTURE PAPER_251-300 (five batches)
+
+Post-outage continuation (v0.355.0 shipped after the GitHub Actions incident cleared). Five
+batches, +72 named functions, frontier crosses PAPER_300. Highlights: k_LENR = 1e-19 and
+k_n = 1e10 both back-solved clean; PAPER_270 resolves the PAPER_240 Q_wave puzzle (CGS chain,
+self-rectification with cross-referenced docstrings); xi_HT = 1.3222 back-solved to Saturn's
+age as the coupling clock; T/S = pi/13.8 universality closed across 27 orders (Lyman-alpha to
+Hubble flow); CR24 hbar-denominator harmonic captured; eps_GR = 5.06 / eta_exp = 3.328 /
+eta_EM = 9.65e29 dominance-ratio family pinned. ~12 source slips disclosed. Gate 2,484 -> 2,551,
+0 failures. Registry 3,560 / graph 5,259 / citations 772. Measured vs v0.355.0 tag throughout.

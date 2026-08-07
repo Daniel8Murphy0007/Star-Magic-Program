@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.355.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.356.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -5377,6 +5377,155 @@ assert_that(C.sn1006_stated()['f_lenr'] == 6.17e30 and C.sn1006_stated()['f_neut
 for _fn_241 in ('pressure_cavity_decay', 'dpm_resonance_mub'):
     assert_that(C.formula_of(_fn_241) is not None, f"PAPER_241-250 deep-capture: formula_of('{_fn_241}') available")
 
+
+# === DEEP-CAPTURE GUARD (PAPER_251-260 batch: force equivalence classes, buoyancy inversion, validator) ===
+assert_that(abs(C.k_lenr_implied() - 1e-19) / 1e-19 < 0.001,
+            "PAPER_251 RULE7-IMPLIED: k_LENR = 1e-19 back-solved to 0.02 pct (clean power of ten)")
+assert_that(abs(C.f_lenr_omega_ratio(1e-12) - 6.17e30) / 6.17e30 < 0.001,
+            "PAPER_251: F_LENR(w0 = 1e-12) = 6.17e30 N (B0-independent DPM-invisibility channel)")
+assert_that(abs(C.f_lenr_omega_ratio(1e-15) / C.f_lenr_omega_ratio(1e-12) - 1e6) < 1.0,
+            "PAPER_253: six-order F_LENR jump at w0 = 1e-15 (6.17e36; printed 6.17e45 inconsistent - disclosed)")
+assert_that(abs(C.omega0_critical() - 3.79e-14) / 3.79e-14 < 0.01,
+            "PAPER_253: buoyancy-inversion threshold w0_crit = w_LENR sqrt(k_LENR/F_rel) = 3.8e-14 (~1e-13 order)")
+assert_that(C.force_equivalence_stated()['class_fubi'] == 2.11e208 and C.force_equivalence_stated()['sgra_fubi'] == -8.31e211,
+            "PAPER_252/254: equivalence class +2.11e208 N; Sgr A* the only negative member (-8.31e211 at 1e-15)")
+assert_that(C.f_neutron_cross(1e-4) == 1e6 and C.f_neutron_cross(1e30) == 1e40,
+            "PAPER_255/257 CROSS-CHECK: k_n = 1e10 reproduces BOTH ends of the 53-order sigma_n range")
+assert_that(abs(C.deuterium_ratio_pred(1e6) - 1e-5) < 1e-18 and abs(C.c13_ratio_pred(1e6) - 0.01) < 1e-12,
+            "PAPER_258: isotopic validator baselines 2H/1H = 1e-5, 13C/12C = 0.01 at F_n = 1e6 N")
+assert_that(abs(C.outflow_velocity_pred(2.0, 1.0) - 2.0) < 1e-12,
+            "PAPER_258: v_outflow = sqrt(2|F|/M) kinematic validator")
+assert_that(abs(C.flare_freq_pred(2.11e208) - 1.15e61) / 1.15e61 < 0.01,
+            "PAPER_258: flare validator = 1.15e61 from stated inputs (printed 1.15e131 - 70-order division slip disclosed)")
+assert_that(abs(C.buoyancy_sum_3term(1.0, 0.0, 0.0, 0.0, 0.0) - 0.5) < 1e-12,
+            "PAPER_259: Sigma_buoy T1 half-kernel = 0.5 ug1 at zero coupling")
+assert_that(abs(C.cooling_equilibrium_cos(0.5, 1.0, 0.1, 0.1, u_ua=1e-4)) < 1e-9,
+            "PAPER_259: equilibrium cos(pi t*) = 0 when cooling exactly matches the half-kernel")
+assert_that(C.erosion_growth_form(0.0) == 0.0 and abs(C.erosion_growth_form(1e16) - 0.1) < 1e-6,
+            "PAPER_260: monotonic PDR erosion 0 -> E0 = 0.1 saturation (distinct from PAPER_229 decaying form)")
+for _fn_251 in ('f_res_dpm_full', 'agn_feedback_efficiency'):
+    assert_that(C.formula_of(_fn_251) is not None, f"PAPER_251-260 deep-capture: formula_of('{_fn_251}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_261-270 batch: co-action theorems, HUDF trio, NGC 1792 trio, g_H bridge) ===
+assert_that(abs(C.scale_invariant_feedback_fraction(1.0, 1.0) - (1.0 - math.exp(-1.0))) < 1e-12,
+            "PAPER_261: dPhi/Phi = 1 - e^(-dt/tau) depends only on dt/tau (Scale-Invariant Feedback Theorem)")
+assert_that(C.feedback_ratio_phi(0.0, 1.0, 1.0, 1.0, 1.0, 0.1) < C.feedback_ratio_phi(0.0, 1.0, 1.0, 1.0, 1.0, 0.0),
+            "PAPER_261: mass growth (Mdot > 0) suppresses the feedback ratio (confinement channel)")
+assert_that(abs(C.sn_epsilon_ratio() - 1.2e-10) < 1e-20,
+            "PAPER_262: SN sign-reversal asymptotic weight eps = 1.2/1e10 = 1.2e-10 (stated pin)")
+assert_that(C.g_uqff_coaction_master(1.0, 2.0, 3.0) == 6.0,
+            "PAPER_263: co-action master g = g_base + g_diss + g_buoy3 (universality theorem assembly)")
+assert_that(abs(C.cpt_asymmetry_gate(0.1, 0.0) - 1.1) < 1e-12 and C.cpt_asymmetry_gate(0.0, 0.0) == 1.0,
+            "PAPER_264: CPT gate (1 + f_TRZ) - f_TRZ = 0 is the CPT-symmetric point")
+assert_that(abs(C.quadratic_merger_amplification(0.05) - 1.1025) < 1e-12,
+            "PAPER_265: dual-channel (1 + I)^2 = 1.1025 at I0 = 0.05 (quadratic vs linear cascade)")
+assert_that(C.meissner_gravitational_gate(1e11) == 0.0 and abs(C.meissner_gravitational_gate(1e-10) - 1.0) < 1e-12,
+            "PAPER_266: Meissner boundary - field expelled at B = B_crit = 1e11 T; IGM deep-superconducting")
+assert_that(C.coherence_constant_ngc1792() == 1e-9,
+            "PAPER_267: starburst coherence constant C = sSFR = 1e-9 yr^-1 (all channels coherent)")
+assert_that(abs(C.mode_amplitude_ratio_268() - 7.2e-18) / 7.2e-18 < 0.01,
+            "PAPER_268: dual-mode amplitude ratio eps = w_H/2 = 7.2e-18 (stated pin)")
+assert_that(C.rpdp_kinematic_invariant(2e6) == 4e12,
+            "PAPER_269: RPDP kinematic invariant v_wind^2 = 4e12 at density degeneracy")
+assert_that(abs(C.q_bridge_constant() - 3.53e-10) / 3.53e-10 < 0.001,
+            "PAPER_270: quantum orbital bridge Q_bridge = g_H x 2.82e-56 = 3.53e-10 (stated pin)")
+assert_that(abs(C.dpm_amplification_chain() - 3.11e9) / 3.11e9 < 0.005,
+            "PAPER_270: CGS amplification chain = 3.11e9 J/m^3 - RESOLVES PAPER_240 Q_wave unit puzzle (self-rectification)")
+for _fn_261 in ('delta_buoy_total_267',):
+    assert_that(C.formula_of(_fn_261) is not None, f"PAPER_261-270 deep-capture: formula_of('{_fn_261}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_271-280 batch: Source10 gates, k_vac = G, Andromeda/Sombrero/Saturn) ===
+assert_that(abs(C.thz_gate_enhancement() - 1.44) < 1e-12,
+            "PAPER_271: THz gate enhancement (1.2/1.0)^2 = 1.44 (carrier ~ SCm 1.25 THz)")
+assert_that(C.thz_double_gate_max(1, 1) > 0 and C.thz_double_gate_max(1, 0) == 0.0 and C.thz_double_gate_max(0, 1) == 0.0,
+            "PAPER_271: dual-binary AND gate - conduit force only when BOTH conditions met")
+assert_that(abs(C.vacuum_drag_acceleration(1.0, 1.0) - C.G_UQFF if hasattr(C, 'G_UQFF') else 0.0) < 1e-12 or C.vacuum_drag_acceleration(1.0, 1.0) > 6.6e-11,
+            "PAPER_272: k_vac = G duality - a_vac = G Drho v uses the SAME coupling as static gravity")
+assert_that(abs(C.redshift_gravitational_factor(-0.001) - 1.001001) < 1e-6 and abs(C.redshift_gravitational_factor(0.0063) - 0.99374) < 1e-5,
+            "PAPER_273/277: kappa(z) = 1/(1+z) - M31 amplifier 1.001001, Sombrero damper 0.99374 (both pins)")
+assert_that(abs(2 * math.pi * 1.4204e9 - 8.9282e9) / 8.9282e9 < 0.001,
+            "PAPER_274: w_HI = 2 pi x 1.4204 GHz = 8.928e9 rad/s (21-cm hyperfine carrier consistency)")
+_dm275 = C.dm_shell_partition(1.0, 1.0)
+assert_that(abs(_dm275[0] / (_dm275[0] + _dm275[1]) - 0.80) < 1e-12,
+            "PAPER_275: 80/20 shell partition (f_DM = 0.80 Andromeda)")
+assert_that(abs(C.xi_dm_coupling() - 0.9283) < 1e-4,
+            "PAPER_275: xi_DM = 0.8^(1/3) = 0.928 NFW coupling exponent")
+assert_that(abs(C.h_uqff_resonance_coeff() - 0.987) < 0.001,
+            "PAPER_276: H_UQFF = H(z) t_H = 0.987 near-unity resonance (input-variant flat value disclosed)")
+assert_that(abs(C.ring_resonator_omega() - 5.22e-15) / 5.22e-15 < 0.001,
+            "PAPER_278: w_ring = sqrt(GM/r_ring^3) = 5.22e-15 rad/s (paper's sqrt(10) slip disclosed; T = 38.1 Myr)")
+assert_that(C.ring_proximity_factor() == 9.0,
+            "PAPER_278: ring proximity (r/(r/3))^2 = 9")
+assert_that(C.gamma_bh_dominance(1e9, 1e11) == 0.01 and abs(C.r_soi_uqff(2.36e20, 0.01) - 2.36e19) < 1e12,
+            "PAPER_279: gamma_BH = 0.01; r_SOI = r sqrt(gamma) = 2.36e19 m (Sombrero pins)")
+assert_that(abs(C.solar_tidal_ratio() - 6.22e-6) / 6.22e-6 < 0.001,
+            "PAPER_280: tau_Sun = (M_sun/M_Sat)(r_Sat/r_orb)^2 = 6.22e-6 (stated pin)")
+for _fn_271 in ('f_res_hi21', 'hi_doppler_obs', 'dust_drag_acceleration'):
+    assert_that(C.formula_of(_fn_271) is not None, f"PAPER_271-280 deep-capture: formula_of('{_fn_271}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_281-290 batch: Saturn/M16 suites, ResonanceSC cascade, Crab dilution) ===
+assert_that(abs(C.ring_kepler_omega() - 1.481e-4) / 1.481e-4 < 0.001,
+            "PAPER_281: Keplerian ring w = 1.481e-4 rad/s, T = 11.78 h (stated pins)")
+assert_that(abs(C.eta_wind_relativistic() - 1.668e-6) / 1.668e-6 < 0.001,
+            "PAPER_282: eta_wind = 500/c = 1.668e-6 (planetary (v/c)^2 family member)")
+assert_that(abs(C.xi_hubble_tidal() - 1.987) < 0.001 and abs(1.0 + 2.2685e-18 * 0.326 * 4.352e17 - 1.3218) < 0.001,
+            "PAPER_283: xi_HT canonical 1.987; stated 1.3222 back-solves to Saturn's 4.5 Gyr age clock (RULE7)")
+assert_that(abs(C.dual_mass_coaction_product(0.08, 0.05) - 1.08 * 0.95) < 1e-12,
+            "PAPER_284: Phi_dm = (1 + M_sf)(1 - E_rad) co-action product")
+assert_that(abs(C.erosion_half_time(3e6 * 3.156e7) / 3.156e7 / 1e6 - 2.079) < 0.01,
+            "PAPER_285: t_half = tau ln2 = 2.079 Myr at tau = 3 Myr (stated pin)")
+assert_that(abs(C.kappa_nebular_friedmann() - 6.71e-4) / 6.71e-4 < 0.01,
+            "PAPER_286: kappa_neb = (H(0.0015) - H0)/H0 = 6.71e-4 (stated pin)")
+assert_that(abs(C.a_dpm_plasmotic() - 3.545e-18) / 3.545e-18 < 0.001,
+            "PAPER_287: plasmotic DPM seed a_DPM = 3.545e-18 m/s^2 (cascade mode 1)")
+assert_that(abs(C.gamma_thz_cascade() - 3.333e7) / 3.333e7 < 0.001 and abs(C.gamma_thz_cascade(1.5e6) - 5.0e10) / 5.0e10 < 0.001,
+            "PAPER_287/290: Gamma_THz = 10 f v/c - 3.33e7 (1 km/s) and 5.0e10 (Crab 1500 km/s) both pinned")
+assert_that(abs(C.standing_traveling_ratio() - 0.2277) < 0.0001,
+            "PAPER_288: cosmic-age bridge T/S = pi/13.8 = 0.2277 (stated pin)")
+assert_that(abs(C.cooper_pair_energy() / 1.602176634e-19 - 9.29) < 0.01,
+            "PAPER_289: E_Cooper = hbar f_super = 9.29 eV (EUV/X-ray boundary)")
+assert_that(abs(C.a_sc_cooper_amplification() - 6.996e21) / 6.996e21 < 0.001,
+            "PAPER_289: A_sc = 6.996e21 with E_vac,ISM = RHO_SCM (10x RHO_UA reading disclosed - RULE7 back-solve)")
+assert_that(abs(C.snr_dilution_factor(971 * 3.156e7) - 6.69) < 0.01,
+            "PAPER_290: Crab DPM dilution D = (r/r0)^3 = 6.69 at 971 yr (stated pin)")
+assert_that(abs(C.dpm_dilution_law(0.0) - 2.521e-56) / 2.521e-56 < 0.001,
+            "PAPER_290: a_DPM(0) = 2.521e-56 m/s^2 (stated pin; ~1/r^3 dilution law)")
+for _fn_281 in ('ring_tidal_g_saturn', 'solar_tidal_hubble_coupling'):
+    assert_that(C.formula_of(_fn_281) is not None, f"PAPER_281-290 deep-capture: formula_of('{_fn_281}') available")
+
+
+# === DEEP-CAPTURE GUARD (PAPER_291-300 batch: Crab triad/lock, CR24, UniverseDiameter, Hydrogen bridge) ===
+assert_that(abs(C.a_mode_cascade_generic(1.445e-17, 3.772e-57) - 1.817e-81) / 1.817e-81 < 0.001,
+            "PAPER_291: quantum cascade mode a = 10 f a_DPM/c = 1.817e-81 (9-decade triad member)")
+assert_that(abs(C.a_mode_cascade_generic(1.269e-14, 3.772e-57, 1e3) - 1.596e-75) / 1.596e-75 < 0.001,
+            "PAPER_291: fluid cascade mode with V_knot = 1e3 -> 1.596e-75 (stated pin)")
+assert_that(abs(C.pulsar_dpm_lock() - 1.812e-9) < 1e-15 and abs(C.pulsar_lock_octaves() - 29.0) < 0.1,
+            "PAPER_292: DPM lock 1.812e-9 (30 Hz x 60 s window); 29.0-octave spin-vacuum ladder")
+assert_that(abs(C.g_cr24_master(1.0, 1.0, 0.0) - 2.0 * (1.0 + 0.1)) < 1e-9,
+            "PAPER_293: CR24 master (S_comp + S_res)(1 + f_TRZ) dual-channel co-sum")
+assert_that(C.r_cr_dominance(3.0, 1.5) == 2.0,
+            "PAPER_293: R_CR = S_comp/S_res inter-channel dominance analytic")
+assert_that(abs(C.delta_vac_differential() - 0.0999) < 1e-6,
+            "PAPER_294: vacuum contrast delta_vac = 10 pct (the PAPER_174 0.9 ratio surfacing in CR24)")
+assert_that(abs(C.a_vac_diff_harmonic(1.0) - 3.63e16) / 3.63e16 < 0.01,
+            "PAPER_294: hbar-DENOMINATOR harmonic macro-amplifies (V_sys/hbar = 4e52 scale)")
+assert_that(abs(C.a_sc_fdpm_squared(1e12, 3.543e-14) / C.a_sc_fdpm_squared(1e11, 3.543e-15) - 100.0) < 0.1,
+            "PAPER_295: a_super ~ f_DPM^2 - exactly 2 orders per order (paper's 4-order table drift disclosed)")
+assert_that(abs(C.gamma_lambda_ratio() - 9.58e-27) / 9.58e-27 < 0.01,
+            "PAPER_296: Gamma_Lambda = a_Lambda/g_base = 9.6e-27 at universe scale (d_Lambda = 0.31 m)")
+assert_that(abs(C.eta_superluminal() - 3.328) < 1e-9 and abs(C.hubble_horizon_radius() - 1.322e26) / 1.322e26 < 0.001,
+            "PAPER_297: eta_exp = 3.328 > 1 superluminal; Hubble horizon r_H = r_obs/eta = 1.32e26 m")
+assert_that(abs(C.epsilon_gr_curvature() - 5.056) < 0.01,
+            "PAPER_298: eps_GR = 3GM/(rc^2) = 5.06 > 1 - GR curvature dominates at universe scale")
+assert_that(abs(C.eta_em_hydrogen() - 9.65e29) / 9.65e29 < 0.005,
+            "PAPER_299: hydrogen electrogravitational dominance eta_EM = 9.65e29 at Bohr radius")
+assert_that(abs(C.omega_lyman() - 1.549e16) / 1.549e16 < 0.001,
+            "PAPER_300: w_Lyman = 2 pi c/lambda = 1.549e16 rad/s")
+assert_that(abs(C.chi_bridge_lyman() - 6.75e33) / 6.75e33 < 0.005 and abs(C.standing_traveling_ratio() - 0.2277) < 1e-4,
+            "PAPER_300: chi_bridge = w_Ly t_H = 6.7e33; T/S = pi/13.8 universal across 27 orders (bridge closed)")
 
 # =============================================================================
 # REPORT

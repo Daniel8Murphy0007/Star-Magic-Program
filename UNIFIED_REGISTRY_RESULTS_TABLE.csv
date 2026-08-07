@@ -173,3 +173,7 @@ f_ub_volume_1_33,Dk_eta x 10 x V-ratio,7.25e8*10/33,2.1970e8,PAPER_196/216 cross
 q26_constant,25!!,double factorial 25,7.906e12,PAPER_205 corrected,DEEP_CAPTURE,0.0
 vacuum_li26,SSq Li_26(SSq),sum SSq^n/n^26,0.5700000048,PAPER_205,DEEP_CAPTURE,0.0
 rho_fluid_wind_family,back-solved,a_wind/(rho_w v^2),1e-12 kg/m^3,PAPER_227+228 consistency,RULE7_IMPLIED,0.0
+k_lenr,back-solved,F_LENR/(w_LENR/w0)^2,1e-19,PAPER_251/252,RULE7_IMPLIED,0.02
+k_neutron,back-solved,F_n/sigma_n both ends,1e10,PAPER_255/257 cross-check,RULE7_IMPLIED,0.0
+q_wave_cgs,PAPER_270 chain,1.1e65 x 2.82e-56,3.11e9 J/m^3,PAPER_240<->270 resolution,SELF_RECTIFIED,0.2
+ts_cosmic_bridge,pi/13.8,universal 27 orders,0.2277,PAPER_288/300,DEEP_CAPTURE,0.0

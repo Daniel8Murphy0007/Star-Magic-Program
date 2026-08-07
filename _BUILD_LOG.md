@@ -169,3 +169,7 @@ event for the repository, one line per event. Distinct from `SESSION_LOG.md`
 Deep-capture PAPER_171-250 (8 batches, +224 fns). Calculator 1,406 defs; library 3,112.
 Registry 3,488 / graph 5,115 / citations 772. Gate 2,484 green. formula_of fall-through fix.
 15+ source slips disclosed; 3 cross-paper consistency pins.
+
+## v0.356.0 (2026-08-07)
+Deep-capture PAPER_251-300 (5 batches, +72 fns). Calculator 1,478; library 3,184.
+Registry 3,560 / graph 5,259. Gate 2,551 green. PAPER_240<->270 self-rectification resolved.

@@ -6275,6 +6275,41 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.356.0] - 2026-08-07
+
+DEEP-CAPTURE PAPER_251-300 (five batches, +72 named functions; calculator 1,406 -> 1,478 defs;
+frontier crosses PAPER_300).
+
+- Batch 251-260 (+14): force equivalence classes - k_LENR = 1e-19 back-solved (0.02 pct clean),
+  F_LENR B0-independence (DPM invisibility), w0_crit = 3.8e-14 buoyancy-inversion threshold,
+  k_n = 1e10 consistent across the 53-order sigma_n range (SN 1006 <-> PSR J0030 cross-check),
+  multi-messenger validator (2H/1H, 13C/12C, v_outflow, flare - 70-order division slip disclosed),
+  NGC 1275 equilibrium (0.5-half-kernel, cos(pi t*) solve), monotonic PDR erosion form.
+- Batch 261-270 (+13): Scale-Invariant Feedback Theorem (dPhi/Phi = 1-e^(-dt/tau)), SN epsilon
+  1.2e-10, Co-action Universality master, HUDF CPT gate/(1+I)^2 quadratic cascade/gravitational
+  Meissner boundary (B_crit = 1e11 T), NGC 1792 coherence sSFR/dual-mode eps = w_H/2/RPDP v^2
+  invariant, Q_bridge = 3.53e-10 + CGS amplification chain RESOLVING the PAPER_240 Q_wave puzzle
+  (self-rectification; disclosure superseded with cross-reference).
+- Batch 271-280 (+15): THz double-gate (1.44 enhancement), k_vac = G duality (a = G Drho v),
+  kappa(z) = 1/(1+z) amplifier/damper pair (M31 1.001001 / Sombrero 0.99374), HI 21-cm resonance
+  carrier (w_HI = 2pi x 1.4204 GHz), 80/20 partition + xi_DM = f^(1/3) = 0.928, H_UQFF = 0.987
+  near-unity coefficient, Sombrero ring resonator (paper sqrt(10) slip disclosed), gamma_BH = 0.01
+  + r_SOI = r sqrt(gamma), tau_Sun = 6.22e-6.
+- Batch 281-290 (+15): Saturn Kepler ring clock (1.481e-4, 11.78 h), eta_wind = v/c planetary
+  member, xi_HT = 1.3222 back-solved to Saturn's 4.5 Gyr age clock, M16 Phi_dm/t_half = tau ln2 =
+  2.079 Myr/kappa_neb = 6.71e-4, ResonanceSC plasmotic cascade (a_DPM seed 3.545e-18, Gamma_THz =
+  10fv/c dual pins 3.33e7/5.0e10), T/S = pi/13.8 = 0.2277 cosmic-age bridge, Cooper 9.29 eV +
+  A_sc = 6.996e21 (E_vac,ISM back-solve), Crab DPM dilution law (D = 6.69 at 971 yr).
+- Batch 291-300 (+15): Crab 9-decade spectral triad on one cascade law, pulsar DPM lock 1.812e-9
+  (29 octaves), CR24 dual-channel master + hbar-DENOMINATOR vacuum harmonic (3.6e16 amplification,
+  T = 7 s) + a_super ~ f_DPM^2 law (paper table drift disclosed), UniverseDiameter suite
+  (Gamma_Lambda = 9.6e-27, eta_exp = 3.328 superluminal, eps_GR = 5.06 with r_S > r_obs),
+  Hydrogen bridge (eta_EM = 9.65e29 at Bohr; chi = w_Ly t_H = 6.7e33 closing T/S universality
+  across 27 orders).
+- In-step mapping: registry 3,488 -> 3,560 rows; graph 5,115 -> 5,259 edges; gate 2,484 -> 2,551
+  assertions, 0 failures. ~12 further source slips disclosed; 3 cross-paper consistency pins;
+  1 self-rectification resolution.
+
 ## [0.355.0] - 2026-08-06
 
 DEEP-CAPTURE PAPER_171-250 (eight batches, +224 named functions; calculator 1,182 -> 1,406 defs).

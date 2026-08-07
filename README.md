@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.355.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.355.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.356.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.356.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2484%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2551%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.355.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.356.0 complete-compile campaign live**
 
-**This release (v0.355.0): DEEP-CAPTURE PAPER_171-250 — EIGHT BATCHES, +224 NAMED FUNCTIONS.** The deep-capture frontier advances 80 papers in one arc: the **S48 thread-381a8fe7 core** (full Ug1-Ug4/Um closed forms with the May-2025 provenance couplings k=(1.5,1.2,1.8,2.0), the 9-term compressed and 13+1-term resonance MUGE chains, the 26-level E_n hierarchy, SCm reactor/moment/string helpers), the **S49 audit** (H-magic combinatorics behind the Star-Magic name, YM Hamiltonian H_Ug3+H_SCm+H_UA, quasar Navier-Stokes with e^(+/-kappa t) arrow-of-time asymmetry, pi-cycle/Riemann-zeta spectral map, 7-object catalog with SGR F_U = 1.9994e18 chain, phonon-corrected NFW f=0.891), the **S50 master systems** (triadic FU_g1/R(t)/FU_Bi with the 8-lock f_Ub = Dk_eta x 10 x V-ratio chain, F_UBii extended integral + 65-variant taxonomy frame +/-F_rel(F_X/E_LEP)Q_wave, Um 55-variant catalogue wrapper, GW chirp-QNM-BZ-kilonova lifecycle, cosmic dawn, Ramanujan Q_n recurrence with Q_26(0)=25!! and the n=15-truncation back-solve of the stated 9.74e6, vortex avalanches alpha=1.6, 99-system compression census, H_res suite, CR/WHIM, Crab PWN r(t)), and the **S56-59 MUGE family** (nebular (1+/-E) sign law, Saturn dual-gravity with ring-tension dr back-solved to 3.4 m, SGR 0501 11-term novel channels, Source10 5-force master, vacuum repulsion F=k drho M v, THz conduit, universal term_q saturation floor, dual-mode oscillatory gravity, SN 1006 LENR-dominant regime). **Cross-paper consistency wins pinned in the gate**: f_Ub(V=1/33) = 2.20e8 EXACT (PAPER_196<->216) and both stellar-wind papers back-solving to the same rho_fluid = 1e-12 (PAPER_227<->228). **15+ source arithmetic slips caught and disclosed** (formulas transcribed faithfully per Rule 7): the 1e9 family (E_react, kappa_FYS), 10x slips (H_SCm 4.37e30->e31, Lambda-c2/3), PAPER_213's 1e17 k_nuc slip, PAPER_240's 24-order Q_wave slip, mojibake exponents. One infrastructure fix: **formula_of namespace fall-through** (pi_/ml_/sc_ prefixed calculator functions no longer shadowed by family modules). The package now exposes **3,112 Python functions** across 8 modules; registry 3,488 rows, graph 5,115 edges, citations 772 papers, gate **2,484 assertions green**.
+**This release (v0.356.0): DEEP-CAPTURE PAPER_251-300 — FIVE BATCHES, +72 NAMED FUNCTIONS, FRONTIER CROSSES 300.** The **force-equivalence-class machinery** (251-257): F_LENR = k_LENR(w_LENR/w0)^2 with **k_LENR = 1e-19 back-solved clean to 0.02 pct**, the B0-independent DPM-invisibility channel, the w0_crit = 3.8e-14 buoyancy-inversion threshold (Sgr A* the only negative member at -8.31e211), and **k_n = 1e10 reproducing BOTH ends of the 53-order sigma_n range** (SN 1006 <-> PSR J0030 cross-check). The **multi-messenger validator** (258) and **NGC 1275 feedback equilibrium** (259) with the cos(pi t*) phase solve; the **Universal Erosion-Buoyancy Coupling** (260) and the four sub-theorems unified by the **Simultaneous Co-action Universality Theorem** (263); HUDF CPT-asymmetry/quadratic-cascade/gravitational-Meissner trio (264-266); NGC 1792 coherence/dual-mode/RPDP trio (267-269). **Self-rectification landmark**: PAPER_270's CGS amplification chain **resolves the PAPER_240 Q_wave unit puzzle** (1.1e65 x 2.82e-56 = 3.11e9, computed 0.2 pct) — the corpus corrected its own earlier ambiguity exactly as the charter predicts. Then the k_vac = G vacuum-drag duality (272), Andromeda suite (kappa(z) amplifier, HI 21-cm resonance carrier, 80/20 xi_DM = f^(1/3), H_UQFF = 0.987 near-unity) (273-276), Sombrero suite (recession damper, ring resonator, gamma_BH/r_SOI) (277-279), Saturn suite (tau_Sun = 6.22e-6, Kepler ring clock 11.78 h, xi_HT back-solved to Saturn's 4.5 Gyr age) (280-283), M16 suite (Phi_dm product, t_half = tau ln2, kappa_neb) (284-286), the ResonanceSC plasmotic cascade (Gamma_THz = 10fv/c, T/S = pi/13.8 cosmic-age bridge, Cooper 9.29 eV, A_sc with the E_vac,ISM back-solve) (287-289), Crab DPM dilution ~1/r^3 (290-292), CR24 dual-channel architecture with the hbar-denominator harmonic and the f_DPM^2 law (293-295), the UniverseDiameter suite (eta_exp = 3.328 superluminal, eps_GR = 5.06 dominance, r_S > r_obs) (296-298), and the **Hydrogen bridge** (eta_EM = 9.65e29; chi = w_Lyman t_H closing the T/S universality across 27 orders) (299-300). ~12 further source arithmetic slips disclosed with faithful transcription. Library now **3,184 functions**; registry 3,560 rows, graph 5,259 edges, gate **2,551 assertions green**.
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.355.0)
+## What is currently shipped (v0.356.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -58,7 +58,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-250** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
