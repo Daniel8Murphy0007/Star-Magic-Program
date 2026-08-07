@@ -6275,6 +6275,47 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.357.0] - 2026-08-07
+
+DEEP-CAPTURE PAPER_301-400 COMPLETE (ten batches + full-census 301-350 resweep; +118 named
+functions; calculator 1,478 -> 1,596 defs; frontier crosses PAPER_400).
+
+- Batches 301-310/311-320 (+29): Hydrogen PToE quartet (eps_GR = 7.04e-44 minimum, 7.18e43 span,
+  Gamma_u4i = 4.704e36, Lyman triple lock), Lagoon trio (LINEAR SFR runaway, dg/dt jerk,
+  dual-barrier 12.77), Spiral trio (tau = 2.046 torque, delta_SN = 2.52 pct w/ E(z) chain,
+  eta_DM = 5.667/v_excess 1.671), NGC 6302 sextet (PN macro-antenna 1.267e50 N, r_cross = 3.280 km
+  bi-modal boundary, 0.3c Alfven torus, PAPER_295 1e12-class PN confirmation), Orion trio
+  (champagne 7.664e18, t_cross = 67,730 yr), CR34 atlas (1e35 span).
+- Batches 321-330/331-340 (+19): CR34/b closures (V/f = 5.43e28, 11th term F_AETHER super-Hubble,
+  Saturn dual-channel via existing harmonic fn, rho_ISM coupling identity), Um cascade
+  (Heaviside gate, seesaw kappa SSq = 2.85e-4), H_res k_nuc(N/Z); 12-term integrand completion
+  (FIRST Zeeman term, k_act/k_DE), U_i bifurcation reproducing PAPER_646 2.75e-7 EXACT (0.001
+  ratio drift auto-corrected), f_Ub = 0.1 Vela, Q_wave-81, rotor torque, EDM/darkonia/V_cb
+  (PDG 40.5e-3 at s = 0.935).
+- Batches 341-350/351-360 (+28): MCMC 3-variable calibration, 47 pct GW damping form, GW
+  precession-squared, resonant SFR law, AGN activation clocks, shock-LENR = 10 x SSq = 5.7,
+  El Gordo super-virial 2.27; TDE set (r_tide, EL stationarity), Kepler-III (70-AU print slip),
+  double-exp threshold form (3rd PAPER_196 consistency hit), 5th curvature factor, relic
+  perturbation, ULP burst ladder, wandering-MBH friction, FIRST negative E(t) (G359), FIRST
+  relativistic boost k_rel = Gamma^2 = 20.25 (-1.69e219 jet frame).
+- Batches 361-370/371-380 (+23): E(t) taxonomy sign law (bubbles +/filaments -), Phillips rotor
+  chain, NOMAD K_pol bound, ALICE level-18 ratio 0.0674 + k_eta18 = 14,887, outburst 12.7 yr,
+  rho_v = 6e-27 IDENTIFIED as Planck DE density (Ug4 40-order k4 fork flagged), P_core two-tier
+  law, Sun/Jupiter 1.078 degeneracy; Morris-Thorne null geodesics (r_min = 1.118), exponential
+  B-gate + Lorentz-dilated DPM, proof-set kappa-ratio master + w_res = 2pi/t_H = fquantum
+  IDENTITY, cohesive bridge, solvable set (flux quench max at B_crit/2, mu0-DPM EFE/PN bridge).
+- Batches 381-390/391-400 (+10): (v/c)^2 ladder member 3.545e-53 EXACT, Ug4i youth-tracer law,
+  2nd YM route SATURATING at sqrt(F_TRZ) = 0.3162 (PAPER_1953 0.3-family), M-sigma bridge pair,
+  Meissner hybrid blend, 26-level spiral ladder + level-18 emergent Higgs, PImath S_pi = 5277.
+- FULL-CENSUS RESWEEP 301-350 (+9 recoveries): PAPER_331 Six Proof Identities (orbital/bubble/
+  SN/erosion resonant forms + global modulation + the 7-frequency 93-order basis), PAPER_308
+  pattern period 307 Myr, PAPER_328 w tau = 3.925e5, PAPER_335/338 two-scale F_U_Bi_i class pins
+  (-8.32e217/-2.09e212).
+- SELF-RECTIFICATIONS CONFIRMED: PAPER_270 CGS chain resolves PAPER_240 Q_wave (0.2 pct);
+  PAPER_393 E_react = 8.808e54 corrects the PAPER_182/183 slip family (4-digit match).
+- In-step mapping: registry 3,560 -> 3,678; graph 5,259 -> 5,495; citations 772 -> 851 papers;
+  gate 2,551 -> 2,665, 0 failures. ~20 further source slips disclosed with faithful transcription.
+
 ## [0.356.0] - 2026-08-07
 
 DEEP-CAPTURE PAPER_251-300 (five batches, +72 named functions; calculator 1,406 -> 1,478 defs;

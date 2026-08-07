@@ -1,24 +1,27 @@
-v0.356.0 - DEEP-CAPTURE PAPER_251-300: +72 NAMED FUNCTIONS (FIVE BATCHES, FRONTIER CROSSES 300)
+v0.357.0 - DEEP-CAPTURE PAPER_301-400 COMPLETE: +118 NAMED FUNCTIONS (TEN BATCHES + RESWEEP)
 
-CAPTURED (calculator 1,406 -> 1,478 defs; 8-module library 3,184 functions):
-- Force equivalence classes (251-257): k_LENR = 1e-19 back-solved clean (0.02 pct), B0-independent
-  DPM-invisibility channel, w0_crit = 3.8e-14 inversion threshold (Sgr A* only negative member),
-  k_n = 1e10 consistent across 53 orders of sigma_n (SN 1006 <-> PSR J0030 CROSS-CHECK).
-- Multi-messenger validator (258) + NGC 1275 equilibrium (259) + Universal Erosion-Buoyancy
-  Coupling (260) + Simultaneous Co-action Universality Theorem (263) unifying four sub-theorems.
-- HUDF trio (264-266): CPT-asymmetry gate, (1+I)^2 quadratic cascade, gravitational Meissner
-  boundary B_crit = 1e11 T. NGC 1792 trio (267-269): sSFR coherence, w_H/2 mode ratio, RPDP v^2.
-- SELF-RECTIFICATION LANDMARK (270): CGS amplification chain resolves the PAPER_240 Q_wave puzzle
-  (1.1e65 x 2.82e-56 = 3.11e9 computed to 0.2 pct) - the corpus corrected its own ambiguity.
-- k_vac = G duality (272), Andromeda suite (273-276), Sombrero suite (277-279), Saturn suite
-  (280-283, xi_HT back-solved to the planet's 4.5 Gyr age), M16 suite (284-286), ResonanceSC
-  cascade (287-289, T/S = pi/13.8 cosmic-age bridge), Crab dilution (290-292), CR24 architecture
-  (293-295, hbar-denominator harmonic + f_DPM^2 law), UniverseDiameter (296-298, eta = 3.328
-  superluminal, eps_GR = 5.06, r_S > r_obs), Hydrogen bridge (299-300, eta_EM = 9.65e29;
-  chi = w_Ly t_H closes T/S universality across 27 ORDERS of magnitude).
+The deep-capture frontier advances 100 papers and lands at PAPER_400.
 
-RULE 7: ~12 further source slips disclosed with faithful transcription (70-order flare division,
-sqrt(10) ring resonator, PAPER_295 table drift, E_vac ISM/nebular selections back-solved).
+HEADLINES:
+- U_i bifurcation (PAPER_334) reproduces the locked PAPER_646 canonical U_i = 2.75e-7 EXACTLY
+  with the canonical F_TRZ ratio (0.001 print drift auto-corrected per the charter table).
+- TWO SELF-RECTIFICATIONS CONFIRMED LIVE: PAPER_270's CGS amplification chain resolves the
+  PAPER_240 Q_wave puzzle (3.11e9 computed to 0.2 pct); PAPER_393's E_react = 8.808e54 corrects
+  the PAPER_182/183 1e9-slip family (4-digit match to the wired value).
+- 2nd Yang-Mills route (PAPER_388) SATURATES at sqrt(F_TRZ) = 0.3162 - a new member of the
+  PAPER_1953 0.3-factor cross-regime family discovered in the asymptote.
+- FIRSTS wired: Zeeman term, negative E(t) environment, relativistic boost k_rel = Gamma^2,
+  GW precession-squared operator, dual-barrier HII module, bi-modal resonance crossover
+  (r_cross = 3.280 km), 11th UQFF accelerative term (super-Hubble F_AETHER), Meissner hybrid
+  blend, level-18 emergent Higgs stratum.
+- Cross-checks pinned: rho_v = 6e-27 IDENTIFIED as Planck Lambda c^2/(8 pi G); w_res = 2pi/t_H
+  = ResonanceParams fquantum IDENTITY; ALICE k_eta18 = 14,887 back-solve; V_cb at PDG 40.5e-3;
+  delta_SN = 2.52 pct Hubble-tension discriminant via the E(z) chain.
+- Full-census resweep of 301-350 recovered 9 misses (Six Proof Identities, 93-order frequency
+  basis, two-scale F_U_Bi_i class pins).
 
-IN-STEP MAPPING: registry 3,560 rows; graph 5,259 edges; citations 772 papers.
-GATE: 2,551 assertions, 0 failures. All 27 ship files synced.
+RULE 7: ~20 further source slips disclosed with faithful transcription (70 AU/15.7 AU, 133x
+k_curv, sqrt(10) ring, 1.9x v_therm, PAPER_304 underived headline pair, mojibake seeds).
+
+IN-STEP MAPPING: registry 3,678 rows; graph 5,495 edges; citations 851 papers (+79 newly mapped
+beyond the dispatch band). GATE: 2,665 assertions, 0 failures. All 27 ship files synced.

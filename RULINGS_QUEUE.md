@@ -5831,3 +5831,14 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
   captured as RULE7-IMPLIED.
 - Q-278a: Sombrero w_ring sqrt(10) arithmetic slip (5.22e-15 vs printed 1.650e-14).
 - Q-289a: A_sc = 6.994e21 selects E_vac,ISM = RHO_SCM (nebular reading 10x low) - back-solved.
+
+## v0.357.0 arc notes (2026-08-07) - disclosures for review, no blocking rulings
+- RESOLVED: PAPER_182/183 E_react slip family closed by PAPER_393's 8.808e54 (self-rectification #2).
+- Q-304a: PAPER_304 headline pair (a_aether = 7.38e7, xi = 1.852e24) internally consistent but not
+  derivable from its own printed formula (hidden factor 1.77e24). Formula-faithful values wired.
+- Q-368a: Ug4 coupling fork k4 = 2.0 (S48 lineage) vs 1e-4 (PAPER_368 note) spans 40 orders across
+  corpus branches - both wired in their chains; unification ruling welcome.
+- Q-383a: PAPER_383 age-threshold print 2.78e4 inconsistent with both readings of its own inputs.
+- Q-347a/352a/354a/362a: jet 100x, Kepler 4.3x, k_curv 133x, v_therm 1.9x print slips (all disclosed).
+- NOTED: 2nd YM route asymptote = sqrt(F_TRZ) = 0.3162 - candidate PAPER_1953 0.3-family member
+  for formal canonization.

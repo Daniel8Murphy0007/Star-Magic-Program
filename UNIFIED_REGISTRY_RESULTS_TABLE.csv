@@ -177,3 +177,7 @@ k_lenr,back-solved,F_LENR/(w_LENR/w0)^2,1e-19,PAPER_251/252,RULE7_IMPLIED,0.02
 k_neutron,back-solved,F_n/sigma_n both ends,1e10,PAPER_255/257 cross-check,RULE7_IMPLIED,0.0
 q_wave_cgs,PAPER_270 chain,1.1e65 x 2.82e-56,3.11e9 J/m^3,PAPER_240<->270 resolution,SELF_RECTIFIED,0.2
 ts_cosmic_bridge,pi/13.8,universal 27 orders,0.2277,PAPER_288/300,DEEP_CAPTURE,0.0
+ui_canonical_confirm,PAPER_334 bifurcation,beta F_TRZ w_s cos(1+f_TRZ),2.75e-7 EXACT,PAPER_646 lock,CANONICAL_CONSISTENCY,0.0
+e_react_t0,PAPER_393 confirmation,rho v^2/rho_A,8.808e54 J,PAPER_182/183 slip corrected,SELF_RECTIFIED,0.01
+ym_route2_asymptote,PAPER_388,sqrt(rho_SCm/rho_UA),0.3162,PAPER_1953 0.3-family candidate,DEEP_CAPTURE,0.0
+rho_v_identified,PAPER_368,Lambda c^2/(8piG),6.0e-27 kg/m^3,Planck DE density = codebase rho_v,DEEP_CAPTURE,1.7

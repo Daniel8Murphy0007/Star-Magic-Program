@@ -2302,4 +2302,4 @@
 | ⬜ | TEMPLATES_README | (no PAPER_N prefix) |
 | ⬜ | UQFF_VALIDATION_SYNC_AUDIT | (no PAPER_N prefix) |
 
-**DEEP-CAPTURE FRONTIER: PAPER_300** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)
+**DEEP-CAPTURE FRONTIER: PAPER_400** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)

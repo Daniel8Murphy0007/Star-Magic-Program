@@ -3559,3 +3559,121 @@ epsilon_gr_curvature,REPO_DEEP_CAPTURE,equation,PAPER_298: 3GM/(rc^2) = 5.06 > 1
 eta_em_hydrogen,REPO_DEEP_CAPTURE,equation,PAPER_299: a_Lorentz/g_base = 9.65e29 Bohr,,,deep-capture 291-300,0.0,deep-frontier,0.84,PAPER_299,1,uqff_calculator.py,0,0,1,WIRED
 omega_lyman,REPO_DEEP_CAPTURE,equation,PAPER_300: 2pi c/lambda = 1.549e16,,,deep-capture 291-300,0.0,deep-frontier,0.84,PAPER_300,1,uqff_calculator.py,0,0,1,WIRED
 chi_bridge_lyman,REPO_DEEP_CAPTURE,equation,PAPER_300: w_Ly t_H = 6.7e33; 27-order T/S bridge,,,deep-capture 291-300,0.0,deep-frontier,0.84,PAPER_300,1,uqff_calculator.py,0,0,1,WIRED
+epsilon_gr_hydrogen,REPO_DEEP_CAPTURE,equation,PAPER_301: 3Gm_p/(r_B c^2) = 7.04e-44 catalogue minimum,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_301,1,uqff_calculator.py,0,0,1,WIRED
+gr_span_ratio,REPO_DEEP_CAPTURE,equation,PAPER_301: eps_GR span Universe/H = 7.18e43,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_301,1,uqff_calculator.py,0,0,1,WIRED
+gamma_u4i_reactive,REPO_DEEP_CAPTURE,equation,PAPER_302: f_react/(E_vac c) = 4.704e36 freq-independent,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_302,1,uqff_calculator.py,0,0,1,WIRED
+lyman_triple_lock,REPO_DEEP_CAPTURE,equation,PAPER_303: freq_lock = 1.000 triple resonance,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_303,1,uqff_calculator.py,0,0,1,WIRED
+a_aether_bohr,REPO_DEEP_CAPTURE,equation,PAPER_304: E f V_Bohr/hbar; 4.17e-17 faithful vs 7.38e7 stated,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_304,1,uqff_calculator.py,0,0,1,WIRED
+xi_aether_atomic,REPO_DEEP_CAPTURE,equation,PAPER_304: a_aether/g_DPM; 1.047 faithful vs 1.852e24 stated,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_304,1,uqff_calculator.py,0,0,1,WIRED
+sfr_runaway_factor,REPO_DEEP_CAPTURE,equation,PAPER_305: 1 + SFR t/M0 LINEAR runaway; 11.0 at 1 Myr,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
+gas_consumption_time,REPO_DEEP_CAPTURE,equation,PAPER_305: M0/SFR = 100 kyr ceiling,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
+dg_dt_sfr,REPO_DEEP_CAPTURE,equation,PAPER_305: G SFRkg/r^2 = 1.55e-24 m/s^3 jerk,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
+a_rad_herschel,REPO_DEEP_CAPTURE,equation,PAPER_306: L/(4pi r^2 c rho) = 7.51e6; eta = 1.53e18,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_306,1,uqff_calculator.py,0,0,1,WIRED
+dual_barrier_ratio,REPO_DEEP_CAPTURE,equation,PAPER_307: a_EM/a_rad = 12.77 first dual-barrier HII,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_307,1,uqff_calculator.py,0,0,1,WIRED
+tau_spiral_torque,REPO_DEEP_CAPTURE,equation,PAPER_308: (Mg/M) Om_p t = 2.046 at 10 Gyr; amp 3.046x,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_308,1,uqff_calculator.py,0,0,1,WIRED
+g_pipeline_spiral,REPO_DEEP_CAPTURE,equation,PAPER_308: g(1+Ht)(1+tau)(1-B/Bc)(1+f_TRZ),,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_308,1,uqff_calculator.py,0,0,1,WIRED
+eta_sn_imprint,REPO_DEEP_CAPTURE,equation,PAPER_309: a_SN/g_base = 2.0e16,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_309,1,uqff_calculator.py,0,0,1,WIRED
+delta_sn_hubble,REPO_DEEP_CAPTURE,equation,PAPER_309: 2.52 pct tension imprint w/ E(z) chain,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_309,1,uqff_calculator.py,0,0,1,WIRED
+eta_dm_vis_partition,REPO_DEEP_CAPTURE,equation,PAPER_310: 0.85/0.15 = 5.667,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_310,1,uqff_calculator.py,0,0,1,WIRED
+v_rotation_excess,REPO_DEEP_CAPTURE,equation,PAPER_310: v_rot/v_Kep = 1.671 (67 pct),,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_310,1,uqff_calculator.py,0,0,1,WIRED
+a_wind_ejection_growth,REPO_DEEP_CAPTURE,equation,PAPER_311: (v^2/r)(1+t/t_ej); eta 7.127e5 / Orion 28.47,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_311,1,uqff_calculator.py,0,0,1,WIRED
+ke_to_binding_ratio,REPO_DEEP_CAPTURE,equation,PAPER_311: v^2/(GM/r) = 3.564e5,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_311,1,uqff_calculator.py,0,0,1,WIRED
+eta_b_confinement,REPO_DEEP_CAPTURE,equation,PAPER_313: P_mag/P_ram = 3.979e5; beta = 2.5e-6,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_313,1,uqff_calculator.py,0,0,1,WIRED
+alfven_velocity_si,REPO_DEEP_CAPTURE,equation,PAPER_313: B/sqrt(mu0 rho) = 8.921e7 (0.3c),,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_313,1,uqff_calculator.py,0,0,1,WIRED
+pn_dpm_macro_antenna,REPO_DEEP_CAPTURE,equation,PAPER_314: I_wind A dw = 1.267e50 N; eta = 2.017e13,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_314,1,uqff_calculator.py,0,0,1,WIRED
+vacdiff_thz_crossover_radius,REPO_DEEP_CAPTURE,equation,PAPER_315: (3 hbar Gamma/(4pi E0))^1/3 = 3.280 km,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_315,1,uqff_calculator.py,0,0,1,WIRED
+asuper_pn_confirm,REPO_DEEP_CAPTURE,equation,PAPER_316: A_sc x a_DPM = 1.747e-9; P295 1e12-class confirm,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_316,1,uqff_calculator.py,0,0,1,WIRED
+trapezium_erosion_time,REPO_DEEP_CAPTURE,equation,PAPER_317: r/v = 467 kyr,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_317,1,uqff_calculator.py,0,0,1,WIRED
+champagne_flow_check,REPO_DEEP_CAPTURE,equation,PAPER_318: eta_rad >> 1; 7.664e18,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_318,1,uqff_calculator.py,0,0,1,WIRED
+sfr_wind_crossover_time,REPO_DEEP_CAPTURE,equation,"PAPER_319: t_cross = 67,730 yr unbound->bound",,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_319,1,uqff_calculator.py,0,0,1,WIRED
+dpm_force_density,REPO_DEEP_CAPTURE,equation,PAPER_320: I A dw/V [N/m^3] CR34 atlas,,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_320,1,uqff_calculator.py,0,0,1,WIRED
+xi_span_atlas,REPO_DEEP_CAPTURE,equation,PAPER_320: f_max/f_min = 1e35 (H atom to Universe),,,deep-capture 311-320,0.0,deep-frontier,0.84,PAPER_320,1,uqff_calculator.py,0,0,1,WIRED
+vf_crossover_cr34,REPO_DEEP_CAPTURE,equation,PAPER_321: hbar/(E0 f_vd E_vac c) = 5.43e28 m^3/Hz reversal locus,,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_321,1,uqff_calculator.py,0,0,1,WIRED
+thz_geometric_differential,REPO_DEEP_CAPTURE,equation,PAPER_322: Orion/Lagoon a_THz = 8.59 at identical Gamma; e-28/e-41 slip disclosed,,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_322,1,uqff_calculator.py,0,0,1,WIRED
+a_aether_freq_11th,REPO_DEEP_CAPTURE,equation,"PAPER_323: F_AETHER x 10/c = 5.253e-43; 11th term, super-Hubble 2e27 yr",,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_323,1,uqff_calculator.py,0,0,1,WIRED
+a_fluid_rho_coupling,REPO_DEEP_CAPTURE,equation,PAPER_325: (f 10 V rho/c) a_DPM; rho = 1 recovers CR34,,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_325,1,uqff_calculator.py,0,0,1,WIRED
+heaviside_neutron_gate,REPO_DEEP_CAPTURE,equation,PAPER_329: H(sigma - sigma_crit) 1e13 Um switch,,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_329,1,uqff_calculator.py,0,0,1,WIRED
+m_nu_seesaw_uqff,REPO_DEEP_CAPTURE,equation,PAPER_329: (m_D^2/M_N)(1 + kappa SSq v^2/M^2); 2.85e-4,,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_329,1,uqff_calculator.py,0,0,1,WIRED
+k_nuc_nz_ratio,REPO_DEEP_CAPTURE,equation,PAPER_330: k0 (N/Z)(1 + delta_pair),,,deep-capture 321-330,0.0,deep-frontier,0.84,PAPER_330,1,uqff_calculator.py,0,0,1,WIRED
+magnetar_spindown_freact,REPO_DEEP_CAPTURE,equation,PAPER_331: Pdot = -f_react/(2 pi P); f_react = 1e10 calibration,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+k_act_activity_term,REPO_DEEP_CAPTURE,equation,PAPER_332: k_act cos(w t); 1e-5 Chandra,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_332,1,uqff_calculator.py,0,0,1,WIRED
+k_de_luminosity_term,REPO_DEEP_CAPTURE,equation,PAPER_332: k_DE L_X ~ 1e20 N/m,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_332,1,uqff_calculator.py,0,0,1,WIRED
+zeeman_coupling_term,REPO_DEEP_CAPTURE,equation,PAPER_332: 2qB0V sin (g mu_B B0/hbar w0); FIRST Zeeman term,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_332,1,uqff_calculator.py,0,0,1,WIRED
+ui_complex_bifurcation,REPO_DEEP_CAPTURE,equation,PAPER_334: U_i bifurcation; canonical F_TRZ reproduces 2.75e-7 EXACT,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_334,1,uqff_calculator.py,0,0,1,WIRED
+fub_calibrated_vela,REPO_DEEP_CAPTURE,equation,PAPER_335: f_Ub = 0.1 Vela/Crab geometry,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_335,1,uqff_calculator.py,0,0,1,WIRED
+qwave81_stated,REPO_DEEP_CAPTURE,equation,PAPER_337: 81-system Q_wave update; PWNe +0.5 pct,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_337,1,uqff_calculator.py,0,0,1,WIRED
+phase_separation_model,REPO_DEEP_CAPTURE,equation,PAPER_337: cos(pi phases/sep) Vela multi-peak,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_337,1,uqff_calculator.py,0,0,1,WIRED
+um_rotor_torque_term,REPO_DEEP_CAPTURE,equation,PAPER_339: (mu/r)(1-e cos) phi P tau_rot; 8.19e-21 Nm,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_339,1,uqff_calculator.py,0,0,1,WIRED
+edm_fu_coupling,REPO_DEEP_CAPTURE,equation,PAPER_340: d_e e/(2 m_e c) e^(-SSq n/26),,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_340,1,uqff_calculator.py,0,0,1,WIRED
+darkonia_phase_boundary,REPO_DEEP_CAPTURE,equation,PAPER_340: P_SCm >= 1 stability gate,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_340,1,uqff_calculator.py,0,0,1,WIRED
+vcb_coupling_uqff,REPO_DEEP_CAPTURE,equation,PAPER_340: k_eta G_F^2 s/pi; PDG 40.5e-3 at s ~ 0.94,,,deep-capture 331-340,0.0,deep-frontier,0.84,PAPER_340,1,uqff_calculator.py,0,0,1,WIRED
+mcmc_calibration_stated,REPO_DEEP_CAPTURE,equation,PAPER_341: kappa/H_SCm/U_UA MCMC pins; 12 constraints,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_341,1,uqff_calculator.py,0,0,1,WIRED
+h_uqff_gamma_damping,REPO_DEEP_CAPTURE,equation,PAPER_341: h_GR(1 - 0.47 Phi/S26),,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_341,1,uqff_calculator.py,0,0,1,WIRED
+scm_mass_modified,REPO_DEEP_CAPTURE,equation,PAPER_343: SC_m = M(1 - B/Bc),,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_343,1,uqff_calculator.py,0,0,1,WIRED
+surface_temp_from_lx,REPO_DEEP_CAPTURE,equation,PAPER_343: (L/(4piR^2 sigma))^1/4 = 1.16e7 K,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_343,1,uqff_calculator.py,0,0,1,WIRED
+gw_precession_squared,REPO_DEEP_CAPTURE,equation,PAPER_344: GM^2/(c^4 r)(dW/dt)^2 FIRST squared operator,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_344,1,uqff_calculator.py,0,0,1,WIRED
+sfr_uqff_resonant,REPO_DEEP_CAPTURE,equation,PAPER_345: SFR = rho v f_res vs Kennicutt,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_345,1,uqff_calculator.py,0,0,1,WIRED
+omega_act_period,REPO_DEEP_CAPTURE,equation,PAPER_346: 2pi/T; M87 7.27e-5 / CenA 1.59e-8,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_346,1,uqff_calculator.py,0,0,1,WIRED
+jet_extension_length,REPO_DEEP_CAPTURE,equation,PAPER_347: v tau; 153 pc needs tau = 1000 yr (100x slip disclosed),,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_347,1,uqff_calculator.py,0,0,1,WIRED
+ke_density_shock,REPO_DEEP_CAPTURE,equation,PAPER_348: rho dv^2/2 = 1.125e-14,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_348,1,uqff_calculator.py,0,0,1,WIRED
+e_flenr_kozima_coupling,REPO_DEEP_CAPTURE,equation,PAPER_348: E_K x 10 x SSq = 5.7 E_K,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_348,1,uqff_calculator.py,0,0,1,WIRED
+super_virial_ratio,REPO_DEEP_CAPTURE,equation,PAPER_350: dv/sigma = 2.27 El Gordo,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_350,1,uqff_calculator.py,0,0,1,WIRED
+buoyancy_merger_velocity,REPO_DEEP_CAPTURE,equation,PAPER_350: sqrt(2F/M)|t| merger channel,,,deep-capture 341-350,0.0,deep-frontier,0.84,PAPER_350,1,uqff_calculator.py,0,0,1,WIRED
+spiral_pattern_period,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_308: 2pi/Om_p = 307 Myr pattern clock RECOVERED,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_308,1,uqff_calculator.py,0,0,1,WIRED
+orbital_velocity_resonant,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_331: sqrt(GM/r) f_res; 7.5e5 computed vs 5e6 print,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+bubble_radius_resonant,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_331: v t f_res multi-system,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+sn_lightcurve_resonant,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_331: L_peak e^(-t/tau) f_res SN 2018gv,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+erosion_timescale_resonant,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_331: (r/v) f_res Pillars clock,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+global_modulation_331,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_331: f_TRZ x 10 x e^(-SSq n/26); 0.001/0.507 drift disclosed,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+frequency_hierarchy_stated,RULE7_DEEPSEARCH_RECOVERY,equation,"PAPER_331: 7-frequency basis, 93-order span",,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_331,1,uqff_calculator.py,0,0,1,WIRED
+lenr_dev_product,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_328: w_LENR tau_dev = 3.925e5,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_328,1,uqff_calculator.py,0,0,1,WIRED
+galactic_fubi_class_stated,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_335: -8.32e217 galactic / -2.09e212 compact class pins,,,census-recovery 301-350,0.0,deep-frontier,0.84,PAPER_335,1,uqff_calculator.py,0,0,1,WIRED
+tde_tidal_radius,REPO_DEEP_CAPTURE,equation,PAPER_351: R(M_BH/M_s)^1/3 = 7e10 AT2024tvd,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_351,1,uqff_calculator.py,0,0,1,WIRED
+outflow_kinetic_power,REPO_DEEP_CAPTURE,equation,PAPER_351: M_dot v^2/2 at 0.3c,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_351,1,uqff_calculator.py,0,0,1,WIRED
+kozima_eol_stationarity,REPO_DEEP_CAPTURE,equation,PAPER_351: F_K M_dot v + rho_SCm V EL residual,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_351,1,uqff_calculator.py,0,0,1,WIRED
+kepler_orbital_radius,REPO_DEEP_CAPTURE,equation,PAPER_352: (GMP^2/4pi^2)^1/3; 15.7 AU computed (70 AU print slip),,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_352,1,uqff_calculator.py,0,0,1,WIRED
+wind_mass_transfer,REPO_DEEP_CAPTURE,equation,PAPER_352: M_dot (a/R)^-2 wind capture,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_352,1,uqff_calculator.py,0,0,1,WIRED
+decay_threshold_form,REPO_DEEP_CAPTURE,equation,PAPER_353: 0.1 e^(-SSq n/26) t->pi limit,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_353,1,uqff_calculator.py,0,0,1,WIRED
+k_curv_friedmann,REPO_DEEP_CAPTURE,equation,PAPER_354: (H0/c)^2(Om-1) = 4.0e-56 (5.3e-54 print slip),,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_354,1,uqff_calculator.py,0,0,1,WIRED
+curvature_5th_factor,REPO_DEEP_CAPTURE,equation,PAPER_354: 1 + k r^2 - (kr^2)^2/2 completes 296 chain,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_354,1,uqff_calculator.py,0,0,1,WIRED
+relic_perturbation,REPO_DEEP_CAPTURE,equation,PAPER_355: FU(1 + drho/rho); 1e-4 weak shock,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_355,1,uqff_calculator.py,0,0,1,WIRED
+burst_ssq_modulation,REPO_DEEP_CAPTURE,equation,PAPER_356: I0 e^(-SSq n/26) cos(2pi t/T) ULP,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_356,1,uqff_calculator.py,0,0,1,WIRED
+t_uqff_spindown_mod,REPO_DEEP_CAPTURE,equation,PAPER_356: T/(1 + F/F_mag),,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_356,1,uqff_calculator.py,0,0,1,WIRED
+dynamical_friction_time,REPO_DEEP_CAPTURE,equation,PAPER_358: (0.428/lnL)(r/v)(M_h/M_BH),,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_358,1,uqff_calculator.py,0,0,1,WIRED
+fubi_offset_scaling,REPO_DEEP_CAPTURE,equation,PAPER_358: F (r_tide/r_off)^2,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_358,1,uqff_calculator.py,0,0,1,WIRED
+e_t_negative_magnetic,REPO_DEEP_CAPTURE,equation,PAPER_359: -E0 f_mag t FIRST negative E(t),,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_359,1,uqff_calculator.py,0,0,1,WIRED
+f_mag_buoyancy_volume,REPO_DEEP_CAPTURE,equation,PAPER_359: (B^2/2mu0)V; 3.98e-5 Pa,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_359,1,uqff_calculator.py,0,0,1,WIRED
+k_rel_lorentz_squared,REPO_DEEP_CAPTURE,equation,PAPER_360: Gamma^2 = 20.25 FIRST relativistic boost; -1.69e219,,,deep-capture 351-360,0.0,deep-frontier,0.84,PAPER_360,1,uqff_calculator.py,0,0,1,WIRED
+bubble_positive_et,REPO_DEEP_CAPTURE,equation,PAPER_361: E0 f_TRZ t ratio; positive E(t) branch,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_361,1,uqff_calculator.py,0,0,1,WIRED
+bubble_weaver_radius,REPO_DEEP_CAPTURE,equation,PAPER_361: Weaver t^3/5 (1+E_t),,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_361,1,uqff_calculator.py,0,0,1,WIRED
+v_thermal_mean,REPO_DEEP_CAPTURE,equation,PAPER_362: sqrt(8kT/pi mu) = 1.88e3 (3.6e3 print slip),,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_362,1,uqff_calculator.py,0,0,1,WIRED
+phillips_k_rate,REPO_DEEP_CAPTURE,equation,PAPER_362: sigma v = 1.97e-16 m^3/s,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_362,1,uqff_calculator.py,0,0,1,WIRED
+k_pol_nomad_bound,REPO_DEEP_CAPTURE,equation,PAPER_363: P/chain = 1.33e-31 cm^3 NOMAD,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_363,1,uqff_calculator.py,0,0,1,WIRED
+rho_ratio_n18,REPO_DEEP_CAPTURE,equation,PAPER_364: 0.1 e^(-SSq 18/26) = 0.0674 Higgs level,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_364,1,uqff_calculator.py,0,0,1,WIRED
+alice_multiplicity_uqff,REPO_DEEP_CAPTURE,equation,"PAPER_364: k_eta18 s^0.156 rho_18; 14,887 back-solved",,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_364,1,uqff_calculator.py,0,0,1,WIRED
+outburst_drain_time,REPO_DEEP_CAPTURE,equation,PAPER_365: M_mag/L_X = 12.7 yr,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_365,1,uqff_calculator.py,0,0,1,WIRED
+flare_contrast_kact,REPO_DEEP_CAPTURE,equation,PAPER_366: F_fl/F_q - 1 JWST,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_366,1,uqff_calculator.py,0,0,1,WIRED
+ug4_lambda_mass_density,REPO_DEEP_CAPTURE,equation,PAPER_368: Lambda c^2/(8piG) = 6e-27 = rho_v IDENTIFIED; k4 40-order fork,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_368,1,uqff_calculator.py,0,0,1,WIRED
+ns_jet_force_grid,REPO_DEEP_CAPTURE,equation,PAPER_369: v_SCm/1e7 = 10 grid units,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_369,1,uqff_calculator.py,0,0,1,WIRED
+pcore_scaling_law,REPO_DEEP_CAPTURE,equation,PAPER_370: 1.0 star / 1e-3 planet two-tier,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_370,1,uqff_calculator.py,0,0,1,WIRED
+orbital_freq_bridge,REPO_DEEP_CAPTURE,equation,PAPER_370: 2pi/T; Sun/Jup 1.078 ~ 1 degeneracy,,,deep-capture 361-370,0.0,deep-frontier,0.84,PAPER_370,1,uqff_calculator.py,0,0,1,WIRED
+wormhole_null_rmin,REPO_DEEP_CAPTURE,equation,PAPER_373: sqrt(L^2/E^2 - b^2) = 1.118 turning point,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_373,1,uqff_calculator.py,0,0,1,WIRED
+wormhole_null_drdl,REPO_DEEP_CAPTURE,equation,PAPER_373: sqrt(E^2 - L^2/(b^2+r^2)) geodesic kernel,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_373,1,uqff_calculator.py,0,0,1,WIRED
+exp_b_suppression,REPO_DEEP_CAPTURE,equation,PAPER_375: e^(-B/Bc) smooth gate upgrade,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_375,1,uqff_calculator.py,0,0,1,WIRED
+dpm_lorentz_dilation,REPO_DEEP_CAPTURE,equation,PAPER_375: a/gamma relativistic seed,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_375,1,uqff_calculator.py,0,0,1,WIRED
+fub_kappa_ratio_master,REPO_DEEP_CAPTURE,equation,PAPER_376: kappa x 0.1 x (sum Ug+Um+Ubi) proof-set header,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_376,1,uqff_calculator.py,0,0,1,WIRED
+omega_res_hubble_identity,REPO_DEEP_CAPTURE,equation,PAPER_376: 2pi/t_H = 1.445e-17 = fquantum IDENTITY,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_376,1,uqff_calculator.py,0,0,1,WIRED
+cohesive_bridge,REPO_DEEP_CAPTURE,equation,PAPER_378: g_comp + sum(a_res) damping; recovery limit,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_378,1,uqff_calculator.py,0,0,1,WIRED
+a_super_flux_form,REPO_DEEP_CAPTURE,equation,PAPER_380: Phi sqrt(x)e^(-x)/c; max at B_crit/2,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_380,1,uqff_calculator.py,0,0,1,WIRED
+aether_res_dm_form,REPO_DEEP_CAPTURE,equation,PAPER_380: M sin(2pi f t) g_DM/c^2,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_380,1,uqff_calculator.py,0,0,1,WIRED
+dpm_mu0_form,REPO_DEEP_CAPTURE,equation,PAPER_380: mu0 I A w1w2 4pi/r^3 EFE/PN bridge,,,deep-capture 371-380,0.0,deep-frontier,0.84,PAPER_380,1,uqff_calculator.py,0,0,1,WIRED
+avac_diff_v2_form,REPO_DEEP_CAPTURE,equation,PAPER_382: 0.9 (v/c)^2 a_DPM; 3.545e-53 EXACT,,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_382,1,uqff_calculator.py,0,0,1,WIRED
+ug4i_transient_decay,REPO_DEEP_CAPTURE,equation,PAPER_383: 1e46 e^(-kappa t); youth tracer,,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_383,1,uqff_calculator.py,0,0,1,WIRED
+ug4i_age_threshold,REPO_DEEP_CAPTURE,equation,PAPER_383: (1/k)ln(E0/eps) = 2.39e5 d (2.78e4 print inconsistent),,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_383,1,uqff_calculator.py,0,0,1,WIRED
+ym_gap_vacuum_evolution,REPO_DEEP_CAPTURE,equation,PAPER_388: 2nd YM route; saturates at sqrt(F_TRZ) = 0.3162,,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_388,1,uqff_calculator.py,0,0,1,WIRED
+omega_s_from_sigma,REPO_DEEP_CAPTURE,equation,PAPER_389: sigma 1e3/R_bulge M-sigma bridge,,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_389,1,uqff_calculator.py,0,0,1,WIRED
+m_sigma_uqff_anchor,REPO_DEEP_CAPTURE,equation,PAPER_390: 10^4.38 (s/200)^0.309; M(200) = 2.4e4,,,deep-capture 381-390,0.0,deep-frontier,0.84,PAPER_390,1,uqff_calculator.py,0,0,1,WIRED
+meissner_hybrid_blend,REPO_DEEP_CAPTURE,equation,PAPER_391: beta g_c + (1-beta) g_r; Meissner point 36.8/63.2,,,deep-capture 391-400,0.0,deep-frontier,0.84,PAPER_391,1,uqff_calculator.py,0,0,1,WIRED
+delta_n_spiral,REPO_DEEP_CAPTURE,equation,PAPER_396: phi (2pi)^(n/6) 26-level spiral ladder,,,deep-capture 391-400,0.0,deep-frontier,0.84,PAPER_396,1,uqff_calculator.py,0,0,1,WIRED
+higgs_level18_potential,REPO_DEEP_CAPTURE,equation,PAPER_396: lambda rho w e^(-SSq 18) e^(-(pi-t)); emergent Higgs,,,deep-capture 391-400,0.0,deep-frontier,0.84,PAPER_396,1,uqff_calculator.py,0,0,1,WIRED
+pimath_key_sum,REPO_DEEP_CAPTURE,equation,PAPER_398: sum ord(pi_i) = 5277 at 100 digits; Caduceus tie,,,deep-capture 391-400,0.0,deep-frontier,0.84,PAPER_398,1,uqff_calculator.py,0,0,1,WIRED

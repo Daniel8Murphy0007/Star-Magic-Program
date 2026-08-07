@@ -17,3 +17,4 @@ v0353_batches,confirmation,37 fns added 111-150; 2 dup-catches in 101-110 handle
 v0354_catches,confirmation,2 dup auto-catches (dpm_center_energy renamed earlier; gw_propagation identical-removed); 6 campaign total; 0 final
 v0355_audit,confirmation,"deep-capture 171-250: 0 duplicate quantities across 3,488 registry rows; NO-SHADOW + banned-literal guards caught 1 docstring literal (fixed to RHO_SCM ref)"
 v0356_audit,confirmation,"deep-capture 251-300: 0 duplicate quantities across 3,560 rows"
+v0357_audit,confirmation,"deep-capture 301-400: 0 duplicate quantities across 3,678 rows; full-census resweep methodology validated"

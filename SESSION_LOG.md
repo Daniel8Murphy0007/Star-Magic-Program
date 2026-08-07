@@ -5219,3 +5219,12 @@ age as the coupling clock; T/S = pi/13.8 universality closed across 27 orders (L
 Hubble flow); CR24 hbar-denominator harmonic captured; eps_GR = 5.06 / eta_exp = 3.328 /
 eta_EM = 9.65e29 dominance-ratio family pinned. ~12 source slips disclosed. Gate 2,484 -> 2,551,
 0 failures. Registry 3,560 / graph 5,259 / citations 772. Measured vs v0.355.0 tag throughout.
+
+## 2026-08-07 (2) - v0.357.0 DEEP-CAPTURE PAPER_301-400 COMPLETE (ten batches + resweep)
+
+Ten deep-capture batches (301-400) plus the Daniel-directed full-census resweep of 301-350
+(9 recoveries). +118 named functions; calculator 1,596 defs; library 3,302. Two self-
+rectifications confirmed live (PAPER_240<->270; PAPER_182/183<->393). U_i canonical 2.75e-7
+reproduced EXACTLY from the PAPER_334 bifurcation form. 2nd YM route saturates at sqrt(F_TRZ)
+- new 0.3-family member. ~20 source slips disclosed. Registry 3,678 / graph 5,495 / citations
+851. Gate 2,551 -> 2,665, 0 failures. Measured vs v0.356.0 tag throughout.

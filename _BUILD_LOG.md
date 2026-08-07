@@ -173,3 +173,7 @@ Registry 3,488 / graph 5,115 / citations 772. Gate 2,484 green. formula_of fall-
 ## v0.356.0 (2026-08-07)
 Deep-capture PAPER_251-300 (5 batches, +72 fns). Calculator 1,478; library 3,184.
 Registry 3,560 / graph 5,259. Gate 2,551 green. PAPER_240<->270 self-rectification resolved.
+
+## v0.357.0 (2026-08-07)
+Deep-capture PAPER_301-400 complete (+118 fns incl. 9 census recoveries). Calculator 1,596;
+library 3,302. Registry 3,678 / graph 5,495 / citations 851. Gate 2,665 green. 2 self-rectifications.

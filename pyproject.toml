@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.356.0"
-description = "UQFF pure calculator v0.356.0 - DEEP-CAPTURE PAPER_251-300: +72 named functions (force equivalence classes, buoyancy inversion, co-action theorems, Andromeda/Sombrero/Saturn/M16 suites, ResonanceSC cascade, CR24 architecture, UniverseDiameter, Hydrogen bridge). Registry 3,560 rows, graph 5,259 edges, gate 2,551 green. k_LENR = 1e-19 and k_n = 1e10 back-solved clean; PAPER_240 Q_wave puzzle resolved by PAPER_270 (self-rectification)."
+version = "0.357.0"
+description = "UQFF pure calculator v0.357.0 - DEEP-CAPTURE PAPER_301-400 COMPLETE: +118 named functions (Hydrogen PToE, nebular/AGN/cluster suites, CR34 closures, 12-term integrand, TDE/transient set, wormhole geodesics, proof set, Meissner blend, level-18 Higgs) + full-census 301-350 resweep (+9 recoveries incl. the Six Proof Identities, 93-order frequency basis). Registry 3,678 rows, graph 5,495 edges, gate 2,665 green. Two self-rectifications confirmed (Q_wave CGS chain; E_react e54)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
