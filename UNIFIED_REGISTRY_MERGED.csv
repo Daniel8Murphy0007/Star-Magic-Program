@@ -519,3 +519,11 @@ level_spacing_energy,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_459: (rho_UA-rho_S
 higgs_compton_gravity,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_460: G m_H/r_C^2 = 5.96 m/s^2 own-scale gravity,
 cyclotron_electron,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_460: eB/m_e = 8.79e6 DNA clock,
 complex_fubi_stated,RULE7_DEEPSEARCH_RECOVERY,equation,PAPER_483: -8.32e217 + i(-6.75e160); FIRST imaginary pin,
+fundamental_constants_suite,12,PAPER_590..593;PAPER_652..654,h/alpha x3/G x3/c routes from primitive stack,h_planck_uqff_590;alpha_uqff_591;alpha_impedance_route_652;alpha_recoil_route_652;g_uqff_593
+bsfg_geometry_series,26,PAPER_554..562,A_munu metric -> horizon/holonomy,riemann_r0r0_bsfg;r_h_bsfg;t_hawking_bsfg
+olbers_closure_family,30,PAPER_564..572,26-shell radiance -> EBL 3.1e-6,b_shell_olbers;b_sky_vds_bound;c_sr_calibration
+bh_gw_suppression_family,36,PAPER_659..678,F_TRZ/rho-ratio suppression chains,tau_uqff_bh_661;t_uqff_662;dt_gw170817_675
+muge_application_family,60,PAPER_701..800,g template + per-system anchors,g_muge_family_701;g_muge_10sys_732;lorentz_uqff_term
+three_uqff_triple_mode,14,PAPER_786..800,"(comp,res,buoy) simultaneous",r_freq_786;three_uqff_modes_786;f_ub_calibration_794
+kb_series_family,38,PAPER_713..730,THz-lab + fundamentals KB1-19,p_thz_713;b_super_716;g_buoy_718
+supporting_anchor_block,129,PAPER_701..800,per-system stated g/a/T/F anchors,SUPPORTING_ANCHOR origin rows

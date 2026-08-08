@@ -146,3 +146,6 @@ deep_capture_171_250_batchset,8,v0.355.0 eight-batch arc map
 deep_capture_251_300_batchset,5,v0.356.0 five-batch arc map
 deep_capture_301_400_batchset,11,v0.357.0 ten-batch + resweep arc map
 deep_capture_401_500_batchset,11,v0.358.0 milestone arc map
+PAPER_501_600_citations,100,deep-capture band citations mapped (fundamental constants + BSFG + Olbers + Millennium closers)
+PAPER_601_700_citations,100,deep-capture band citations mapped (26th-order operators + canonical papers + BH/GW family)
+PAPER_701_800_citations,100,deep-capture band citations mapped (MUGE applications + KB series + Three-UQFF)

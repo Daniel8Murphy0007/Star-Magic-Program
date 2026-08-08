@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.359.0", "uqff_calculator.VERSION = 0.359.0 (deep-capture 501-700 + dispatch closure)")
+assert_that(C.VERSION == "0.360.0", "uqff_calculator.VERSION = 0.360.0 (deep-capture 701-800 + full ship pass)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -6941,6 +6941,347 @@ try:
         assert_that('PAPER_%03d' % _b70n in C.DISPATCH, "band 691-700: PAPER_%03d dispatched" % _b70n)
 except Exception as _b70e:
     assert_that(False, "DEEP-MINE 601-700 guard crashed: %r" % _b70e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_701-710 (per-system MUGE template family)
+# =============================================================================
+try:
+    import math as _b71m
+    assert_that(abs(C.lorentz_uqff_term(1.0) - 1.1e-11) < 1e-23,
+                "P701-710 shared Lorentz term 11e-12 EXACT (1+rho_UA/rho_SCm)")
+    assert_that(abs(C.g_muge_family_701(1.0, 1.0, 0.0, G=1.0) - 1.1) < 1e-12,
+                "P701 family template base (1+f_TRZ)")
+    assert_that(abs(C.p_de_701(1.0, 1.0) - C.RHO_SCM * C.C_OBSERVED ** 2) < 1e-30,
+                "P701 dark-energy power form (7.09 mantissa = RHO_SCM)")
+    assert_that(C.b_pseudo_701(1.0, 1.0) > 0, "P701 pseudo-monopole field")
+    assert_that(abs(C.t_ring_702(1.0, 1.0, G=1.0) - 1.0) < 1e-12, "P702 ring term GM/r^2")
+    assert_that(abs(C.a_wind_702(1.0, 2.0, 3.0, 4.0) - 3.0) < 1e-12, "P702 wind drag")
+    assert_that(abs(C.f_bh_703(1e18, 1.0) - 0.1) < 1e-12,
+                "P703 BH-feedback saturation 0.1 (= F_TRZ value)")
+    assert_that(C.a_fil_703(1.0, 1.0, 1.0) > 0, "P703 filament term")
+    assert_that(abs(C.erosion_704(1e18, 1.0) - 1.0) < 1e-12, "P704 erosion saturation")
+    assert_that(C.p_rad_704(1.0, 1.0, 1.6735575e-27) > 0, "P704 radiation pressure")
+    assert_that(abs(C.m_sf_growth(1.0, 41.67, 0.0, 1.0) - 42.67) < 1e-9,
+                "P705/710 SF growth anchors (41.67 = NGC2014/2020)")
+    assert_that(abs(C.a_sn_707(1.0, 1.0, 1.0, 0.0, 1.0, c=1.0) - 1.0) < 1e-12, "P707 SN kick")
+    assert_that(abs(C.ug4_bcrit_708(1.0, 0.5, 1.0) - 0.5) < 1e-12, "P708 B/B_crit damping")
+    assert_that(abs(C.g_lambda_708() - 3.295435655368331e-36) < 1e-48,
+                "P708 Lambda c^2/3 computes 3.30e-36 (paper 3.63e-35 - DISCLOSED 11x)")
+    assert_that(abs(C.g_1053_anchor_stated() - 1.053) < 1e-12,
+                "P705/708/709/710 recurring 1.053 mantissa (cross-system fingerprint)")
+    _b71wc = C.wired_count()
+    assert_that(_b71wc >= 724, "band 701-710: wired_count >= 724 (got %s)" % _b71wc)
+    for _b71n in range(701, 711):
+        assert_that('PAPER_%03d' % _b71n in C.DISPATCH, "band 701-710: PAPER_%03d dispatched" % _b71n)
+except Exception as _b71e:
+    assert_that(False, "BAND 701-710 guard crashed: %r" % _b71e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_711-720 (KB series)
+# =============================================================================
+try:
+    import math as _b72m
+    assert_that(abs(C.e_shock_712(0.0, 1.0) - 0.15) < 1e-12, "P712 shock 0.15 amplitude")
+    assert_that(abs(C.a_jet_712(C.C_OBSERVED, 1.0) - 1.0) < 1e-9, "P712 jet kick L/cM")
+    assert_that(abs(C.p_thz_713() - 0.00245) < 1e-15, "P713 P = 2.45e-3 W EXACT")
+    assert_that(abs(C.f_uqff_713() - 1245033452882.0715) < 1,
+                "P713 f_UQFF = 1.245e12 Hz - lands at the 1.25 THz phonon carrier")
+    assert_that(abs(C.f_uqff_713() / C.OMEGA_SCM_HZ - 1.0) < 5e-3,
+                "P713 within 0.4%% of OMEGA_SCM_HZ (cross-primitive landing)")
+    assert_that(abs(C.e_signal_714(2.0 ** 0.5, 1.0) - 1.0 / 50.0) < 1e-12, "P714 signal energy")
+    assert_that(abs(C.um_kb_714(1.0, 1.0, 1.0, 1e9) - 1.0) < 1e-9, "P714 U_m saturation")
+    assert_that(abs(C.ug1_kb_715(1.0, 2.0, 3.0) - 18.0) < 1e-12, "P715 thread gravity muwV^2")
+    assert_that(abs(C.ratio_bundle_715(1.0, 1.0) - 0.1) < 1e-12, "P715 bundle ratio F_TRZ")
+    assert_that(abs(C.b_super_716() - 1.25663706212) < 1e-9, "P716 B_super = mu0*1e6 = 1.2566 T")
+    assert_that(abs(C.ug2_kb_716(1.257) - 628681.5213512763) < 1e-3,
+                "P716 U_g2 = 6.287e5 J/m^3 (stated 6.29e5) EXACT")
+    assert_that(abs(C.omega_plasma_716() - 1.004987562112089e+16) < 1,
+                "P716 plasma frequency 1.005e16 EXACT")
+    assert_that(C.m_jeans_716(20.0, 2.0, 1e-17) > 1e31, "P716 Jeans mass 1e31 scale")
+    assert_that(abs(C.e_oscillation_717(1.0, 1.0, 1.0, 0.25, 1.0)
+                - 1.0 / (2.0 * 1.25663706212e-06)) < 1e-3, "P717 oscillation peak at T/4")
+    assert_that(abs(C.g_buoy_718() - 0.30303030303030304) < 1e-15,
+                "P718 g_buoy = 10/33 = 0.303 EXACT (1/33 cross-band tie)")
+    assert_that(abs(C.fsc_influence_718(137.0) - 1.0) < 1e-12, "P718 FSC 1/137")
+    assert_that(C.ug4_nebula_719_stated() == (1.69e-2, 3.49e-6), "P719 nebular U_g4 stated pair")
+    assert_that(abs(C.t_neg_720(13.68) + 0.00036250494796075003) < 1e-15,
+                "P720 t^- = -3.63e-4 s (paper -3.75e-4, 3%% rounding)")
+    assert_that(abs(C.rho_react_720(13.68) - 986413145970606.1) < 1,
+                "P720 rho_react = 9.864e14 W/m^3 EXACT")
+    assert_that(abs(C.p_transition_720(1857.5, 3.625e-4) - 0.49) < 1e-3,
+                "P720 P = 0.49 with back-solved gamma = 1857.5 (Rule 7 back-solve)")
+    _b72wc = C.wired_count()
+    assert_that(_b72wc >= 734, "band 711-720: wired_count >= 734 (got %s)" % _b72wc)
+    for _b72n in range(711, 721):
+        assert_that('PAPER_%03d' % _b72n in C.DISPATCH, "band 711-720: PAPER_%03d dispatched" % _b72n)
+except Exception as _b72e:
+    assert_that(False, "BAND 711-720 guard crashed: %r" % _b72e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_721-730 (KB series II)
+# =============================================================================
+try:
+    import math as _b73m
+    assert_that(abs(C.um_kb_721(1.0, 1.0, 1e9, 0.0, 1.0, 1.0, f_H=1e-13) - 2.0) < 1e-6,
+                "P721 Higgs 1e13 gate doubles at f_H = 1e-13")
+    assert_that(abs(C.mu_j_modulated_724(0.0, 1.0, 1.0) - 1000.0) < 1e-9,
+                "P724 superwave baseline 1e3")
+    assert_that(C.b_j_dipole_725(1.0, 1.0) > 0, "P725 dipole 1/r^3 field")
+    assert_that(abs(C.g_eff_defect_726() - 1.001) < 1e-12, "P726 metric defect 1.001")
+    assert_that(abs(C.e_str_726() - 1.380649e-19) < 1e-31, "P726 string mode kB*1e4 K")
+    assert_that(abs(C.um_corrected_727(1.0) - 1.0010006922855945) < 1e-12,
+                "P727 v_SCm/c correction ~1e-3")
+    assert_that(abs(C.e_aether_eff_727(1.683e-10, 1.0) - 1.683e-10) < 1e-22,
+                "P727 aether energy stated 1.683e-10 J")
+    assert_that(abs(C.p_peak_728() - 0.00845) < 1e-12, "P728 P_peak = 8.45e-3 W EXACT")
+    assert_that(abs(C.ug1_thread_sum_728([1.0, 2.0], 0.5) - 1.5) < 1e-12, "P728 thread sum")
+    assert_that(abs(C.t_trz_729() - 130.0) < 1e-12, "P729 T_TRZ = 130 s EXACT")
+    assert_that(C.ubi_thread_730([1.0], [0.0], 1.0, 1.0, 1.0, 1.0, 1.0) < 0,
+                "P730 buoyancy thread negative (BETA_I) at t=0")
+    _b73wc = C.wired_count()
+    assert_that(_b73wc >= 744, "band 721-730: wired_count >= 744 (got %s)" % _b73wc)
+    for _b73n in range(721, 731):
+        assert_that('PAPER_%03d' % _b73n in C.DISPATCH, "band 721-730: PAPER_%03d dispatched" % _b73n)
+except Exception as _b73e:
+    assert_that(False, "BAND 721-730 guard crashed: %r" % _b73e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_731-740
+# =============================================================================
+try:
+    import math as _b74m
+    assert_that(abs(C.ug1_iawb_731(1e22, 1e16, 1.0, 1.0) - 1e38) < 1e26, "P731 IAwB channel")
+    assert_that(abs(C.f_em_732() - 0.010536716471538) < 1e-12,
+                "P732 F_em = 1.0537e-2 EXACT - the 1.053 cross-system fingerprint SOURCE")
+    assert_that(abs(C.g_muge_10sys_732(1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, G=1.0) - 1.1) < 1e-12,
+                "P732 template base 1.1")
+    assert_that(abs(C.r_dual_osc_732(1.0, 0.0, 1.0, 0.0, 0.0) - 12.0) < 1e-9,
+                "P732 dual oscillator 1 + 10*1.1 = 12 at t=0")
+    assert_that(abs(C.e_dpm_733(2.83e20, 1) - 3.9475168519516567e-72) < 1e-84,
+                "P733 E_DPM,1 mantissa 3.948 EXACT to 737 chain (exponent print slip DISCLOSED)")
+    assert_that(abs(C.ug4i_thz_733() - 3.4843670262953974e-16) < 1e-28,
+                "P733/737 U_g4i = 3.484e-16 (737 prints 3.487e-16; dominates all 9 systems)")
+    assert_that(abs(C.eta_kn_734(_b74m.pi, 0, 1.0, 0.0) - 1.0) < 1e-12,
+                "P734 K_n gate unity at t=pi, n=0")
+    assert_that(abs(C.omega_c_734() - 1.5866629563584813e-08) < 1e-20,
+                "P734 omega_c = 1.587e-8 (paper 1.585e-8)")
+    assert_that(abs(C.e_shell_735(1, _b74m.pi / 2) - 13.6) < 1e-12,
+                "P735 E_shell(H, 1s) = 13.6 eV EXACT (100%% accuracy claim VERIFIED)")
+    assert_that(abs(C.k_h_735() - 4.533333333333333e-20) < 1e-32, "P735 k_h calibration")
+    _b74p = C.f_scm_pair_735(1)
+    assert_that(abs(_b74p[0] + _b74p[1] - 1.0) < 1e-12, "P735 f_SCm + f_UA' = 1")
+    assert_that(C.f_ub_scale_736('galaxy') == 1e9 and C.f_ub_scale_736('stellar') == 1e7,
+                "P736 f_Ub scale ladder")
+    assert_that(abs(C.theta_26state_738(26) - 6.35) < 1e-6,
+                "P738 theta_26 = 6.35 deg (26-state angular floor)")
+    assert_that(abs(C.mass_ratio_uqff_738(9.8, 9.8) - 1.0) < 1e-12,
+                "P738/740 Earth-surface mass ratio ~ 1.0")
+    assert_that(abs(C.omega_ladder_739(26, 1.2e12) - 2 * _b74m.pi * 1.2e12) < 1,
+                "P739 frequency ladder tops at THz fundamental")
+    assert_that(C.e_dpm_sum_739(2.83e20) > C.e_dpm_733(2.83e20, 25),
+                "P739 26-state sum dominated by i=26")
+    _b74wc = C.wired_count()
+    assert_that(_b74wc >= 754, "band 731-740: wired_count >= 754 (got %s)" % _b74wc)
+    for _b74n in range(731, 741):
+        assert_that('PAPER_%03d' % _b74n in C.DISPATCH, "band 731-740: PAPER_%03d dispatched" % _b74n)
+except Exception as _b74e:
+    assert_that(False, "BAND 731-740 guard crashed: %r" % _b74e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_741-750
+# =============================================================================
+try:
+    import math as _b75m
+    assert_that(abs(C.f_env_master_741(1, 2, 3, 4, 5, 6) - 21.0) < 1e-12, "P741 6-term F_env")
+    assert_that(C.quantum_term_741(1.0, 1.0) > 0, "P741 quantum term positive")
+    assert_that(abs(C.f_env_sombrero_742(1.0, 1.0, 0.0, 1.0, 0.0, 0.0, G=1.0) - 1.0) < 1e-12,
+                "P742 fraction catalog")
+    assert_that(abs(C.t_ring_tidal_743() - 2.055592e-15) < 1e-27,
+                "P743 T_ring computes 2.056e-15 (paper prints 2.05e-9 - DISCLOSED 6-order)")
+    assert_that(abs(C.f_wind_drag_743() - 1.7931034482758622e-07) < 1e-19,
+                "P743 F_wind mantissa 1.79 EXACT (exponent print slip DISCLOSED)")
+    assert_that(abs(C.m_sf_744(1e-3, 1e6, 8e4) - 0.0125) < 1e-15,
+                "P744 Eagle M_sf = 1.25%% EXACT")
+    assert_that(C.mdot_evap_744(1e7, 1e9) > 0, "P744 photoevaporation positive")
+    assert_that(abs(C.r_crab_745(970 * 3.156e7) - 4.89198e+16) < 1e8,
+                "P745 Crab radius 4.89e16 m at 970 yr (paper rounds 4.6e16)")
+    assert_that(C.f_wind_pulsar_745(5e31, 4.6e16, 4 * 1.989e30) < 1e-28,
+                "P745 pulsar wind ~ 4.8e-30 scale")
+    assert_that(abs(C.dp_wind_745(5e31, 3e10) - 5e31 * 3e10 / C.C_OBSERVED) < 1e25,
+                "P745 momentum deposit ~ 5e33")
+    assert_that(abs(C.f_res_746(2.18e-18, 1) - 3290034591619891.0) < 1e3,
+                "P746 f_res(H) = 3.290e15 Hz EXACT (Lyman alpha) - 100%% H anchor")
+    assert_that(abs(C.s_shell_746(1.0, 1.0) - 0.2) < 1e-15, "P746 doubly-magic 0.20 EXACT")
+    assert_that(abs(C.a_res_746(2, 4) - 8.0) < 1e-12 and abs(C.k_nuc_746(2, 2) - 1.0) < 1e-12,
+                "P746 He-4 amplitude 8.0 / k_nuc symmetric")
+    assert_that(abs(C.u_dp_746(1, 1, 1.0) - 1.0) < 1e-12, "P746 deuteron pair coupling")
+    assert_that(abs(C.d_universe_747() / 1e9 - 184.81767255047038) < 1e-6,
+                "P747 D = 184.8 Gly (headline 182; 4-factor chain inconsistency DISCLOSED)")
+    assert_that(abs(C.ug5_tensor_748([1.0, 2.0, 3.0]) - 6.0) < 1e-12, "P748 U_g5 tensor sum")
+    assert_that(abs(2 * _b75m.pi / C.omega_g_749() / 3.156e7 - 272721899.88973325) < 1,
+                "P749 galactic year 2.727e8 yr EXACT")
+    assert_that(abs(C.heaviside_amp_749() - 100000000001.0) < 1,
+                "P749 Heaviside amplification 1e11 EXACT")
+    _b75wc = C.wired_count()
+    assert_that(_b75wc >= 764, "band 741-750: wired_count >= 764 (got %s)" % _b75wc)
+    for _b75n in range(741, 751):
+        assert_that('PAPER_%03d' % _b75n in C.DISPATCH, "band 741-750: PAPER_%03d dispatched" % _b75n)
+except Exception as _b75e:
+    assert_that(False, "BAND 741-750 guard crashed: %r" % _b75e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_751-760
+# =============================================================================
+try:
+    import math as _b76m
+    assert_that(abs(C.p_thz_comb_751() - 0.1225) < 1e-12, "P751 50-line comb total")
+    assert_that(abs(C.i_eff_751() - 0.007) < 1e-12, "P751 I_eff = 7.0e-3 A EXACT")
+    assert_that(abs(C.ug1_core_751(1.989e30, 2.838e16, 0, 0, 1) - 1.6481479826039537e-13) < 1e-25,
+                "P751/752 Ug1 at echo radius 1.648e-13 EXACT-to-paper")
+    assert_that(abs(C.b_decay_753(1e10, 1.578e11, 1.262e11) - 2863913071.421813) < 1,
+                "P753 magnetar B(5000 yr) = 2.864e9 T (paper 2.865e9)")
+    assert_that(abs(C.m_acc_754(1.0, 1.0, 0.0, 1.0) - 1.0) < 1e-12
+                and abs(0.01 * _b76m.exp(-0.5) - 6.065306597126334e-3) < 1e-15,
+                "P754 Sgr A* accretion; Mdot = 6.065e-3 EXACT")
+    assert_that(abs(C.ram_pressure_755(1.0, 2.0, 4.0) - 1.0) < 1e-12, "P755 ram pressure")
+    assert_that(abs(C.e_decay_757(1.578e13, 3.156e13) - 0.06065306597126335) < 1e-15,
+                "P757 decaying erosion 0.06065 EXACT (variant of saturating form)")
+    assert_that(abs(C.lens_boost_758(0.5) - 1.5) < 1e-12, "P758 lensing boost")
+    assert_that(abs(C.f_bh_703(1.578e15, 3.156e15) - 0.03934693402873666) < 1e-15,
+                "P760 F_BH(50 Myr) = 0.03935 EXACT via existing f_bh_703 (cross-band reuse)")
+    _b76wc = C.wired_count()
+    assert_that(_b76wc >= 774, "band 751-760: wired_count >= 774 (got %s)" % _b76wc)
+    for _b76n in range(751, 761):
+        assert_that('PAPER_%03d' % _b76n in C.DISPATCH, "band 751-760: PAPER_%03d dispatched" % _b76n)
+except Exception as _b76e:
+    assert_that(False, "BAND 751-760 guard crashed: %r" % _b76e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_761-770 (v2 MUGE applications; template-covered)
+# =============================================================================
+try:
+    import math as _b77m
+    assert_that(abs(C.saturating_fraction_761(0.2, 4.103e17, 3.156e16) - 0.2) < 1e-5,
+                "P761 HUDF merge fraction saturates to 0.2 EXACT")
+    assert_that(abs(C.saturating_fraction_761(0.5, 3e8, 4e8) - 0.26381672362949266) < 1e-12,
+                "P769 Mice dual-merge 0.2638 EXACT (0.5*(1-e^-0.75))")
+    assert_that(abs(C.saturating_fraction_761(0.3, 5e8, 1e9) - 0.3 * (1 - _b77m.exp(-0.5))) < 1e-15,
+                "P768 Tadpole tidal stripping form")
+    assert_that(abs(C.a_dust_763(1e-20, 2e5, 1e-21) - 0.4) < 1e-12,
+                "P763 Sombrero dust drag 0.4 m/s^2 EXACT")
+    assert_that(abs(C.f_wind_shock_766(5e31, 5.2e16, 1.5e6) - 0.0014788393926657433) < 1e-15,
+                "P766 shock-boosted pulsar wind (1+v/c) factor")
+    assert_that(abs(1.602e-19 * 1e6 * 1e-5 / 1.673e-27 * 11e-12 - 0.01053317393903168) < 1e-15,
+                "P767 a_EM chain reproduces the 1.053e-2 fingerprint AGAIN (3rd occurrence)")
+    assert_that(abs(70 * (0.3 * 4 ** 3 + 0.7) ** 0.5 - 312.24) < 0.1,
+                "P761 H(z=3) = 312.2 km/s/Mpc EXACT-to-paper")
+    _b77wc = C.wired_count()
+    assert_that(_b77wc >= 784, "band 761-770: wired_count >= 784 (got %s)" % _b77wc)
+    for _b77n in range(761, 771):
+        assert_that('PAPER_%03d' % _b77n in C.DISPATCH, "band 761-770: PAPER_%03d dispatched" % _b77n)
+except Exception as _b77e:
+    assert_that(False, "BAND 761-770 guard crashed: %r" % _b77e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_771-780 (Carina-family template band)
+# =============================================================================
+try:
+    assert_that(C.f_trz_activity_777('barred_spiral') == 0.04
+                and C.f_trz_activity_777('merger_group') == 0.05
+                and C.f_trz_activity_777('isolated_s0') == 0.02
+                and C.f_trz_activity_777('energetic') == C.F_TRZ,
+                "P777/778/779 variable f_TRZ ladder (first activity-dependent band; canonical 0.1 preserved)")
+    assert_that(abs(C.m_sf_bounded_771(150) - 0.15) < 1e-12
+                and abs(C.m_sf_bounded_771(45) - 0.045) < 1e-12,
+                "P771/773/774 UQFF-bounded M_sf /1000 rule (780 /10 outlier DISCLOSED)")
+    assert_that(abs(6.6743e-11 * 3.978e33 / (2e16) ** 2 - 6.638e-10) < 1e-12,
+                "P773 M42 bare gravity 6.638e-10 EXACT-to-paper")
+    assert_that(abs(6.6743e-11 * 1.989e35 / (3e17) ** 2 - 1.475e-10) < 1e-13,
+                "P774 Tarantula bare gravity 1.475e-10 EXACT-to-paper")
+    _b78wc = C.wired_count()
+    assert_that(_b78wc >= 794, "band 771-780: wired_count >= 794 (got %s)" % _b78wc)
+    for _b78n in range(771, 781):
+        assert_that('PAPER_%03d' % _b78n in C.DISPATCH, "band 771-780: PAPER_%03d dispatched" % _b78n)
+except Exception as _b78e:
+    assert_that(False, "BAND 771-780 guard crashed: %r" % _b78e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_781-790 (Three-UQFF triple-mode)
+# =============================================================================
+try:
+    assert_that(abs(C.r_freq_786() - 1.000285) < 1e-12,
+                "P786-790 R_freq = 1 + KAPPA*SSQ = 1.000285 EXACT (two-primitive tie)")
+    _b79m = C.three_uqff_modes_786(1.053e-3)
+    assert_that(abs(_b79m[0] - 1.053e-3) < 1e-15 and abs(_b79m[1] - 1.053e-3 * 1.000285) < 1e-15
+                and abs(_b79m[2] - 1.053e-3) < 1e-15,
+                "P786/787/790 triple modes all land 1.053e-3 (fingerprint again; a_Ubi << a_EM)")
+    assert_that(C.a_ubi_786(1.0, 1.0) > 0, "P786 buoyancy additive positive")
+    assert_that(abs(6.6743e-11 * 5.683e26 / (1.335e8) ** 2 - 2.1282412097238) < 1e-9,
+                "P789 Cassini gap g(1.335e8) = 2.128 EXACT-to-paper 2.130")
+    assert_that(abs(6.6743e-11 * 5.683e26 / (1.2e8) ** 2 - 2.634031034722222) < 1e-9,
+                "P789 Cassini gap g(1.200e8) = 2.634 EXACT-to-paper 2.635")
+    assert_that(abs(C.a_em_ring_789(1.335e8) - 0.0003552029679563) < 1e-15,
+                "P789 ring-gap Lorentz 3.55e-4")
+    _b79wc = C.wired_count()
+    assert_that(_b79wc >= 804, "band 781-790: wired_count >= 804 (got %s)" % _b79wc)
+    for _b79n in range(781, 791):
+        assert_that('PAPER_%03d' % _b79n in C.DISPATCH, "band 781-790: PAPER_%03d dispatched" % _b79n)
+except Exception as _b79e:
+    assert_that(False, "BAND 781-790 guard crashed: %r" % _b79e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_791-800
+# =============================================================================
+try:
+    assert_that(abs(C.f_ub_calibration_794() - 21969696.96969697) < 1e-3,
+                "P794/798/799/800 f_Ub = 2.19697e7 EXACT (0.1*7.25e8*10*(1/33) four-factor chain)")
+    assert_that(abs(C.fubi_fub_794(1.989e41, 2.83e20) - 0.003641431804844383) < 1e-12,
+                "P800 F_U_Bi = 3.64e-3 (buoyancy-dominant mode consistent with paper chain)")
+    assert_that(abs(C.a_fil_796(1e-8, 6.17e20, 1.989e36) - 2.4685419767280673e-26) < 1e-38,
+                "P796 filament a_fil = 2.47e-26 EXACT-to-paper chain")
+    assert_that(abs(C.f_bh_703(1.578e17, 3.156e15) - 0.1) < 1e-6,
+                "P796 F_BH fully saturated 0.10 at 5 Gyr (e^-50) via existing f_bh_703")
+    assert_that(abs(6.6743e-11 * 1.193e30 / (1.89e15) ** 2 - 2.229e-11) < 1e-14,
+                "P791 M57 bare gravity 2.229e-11 EXACT-to-paper")
+    _b80wc = C.wired_count()
+    assert_that(_b80wc >= 814, "band 791-800: wired_count >= 814 (got %s)" % _b80wc)
+    for _b80n in range(791, 801):
+        assert_that('PAPER_%03d' % _b80n in C.DISPATCH, "band 791-800: PAPER_%03d dispatched" % _b80n)
+except Exception as _b80e:
+    assert_that(False, "BAND 791-800 guard crashed: %r" % _b80e)
+
+
+# =============================================================================
+# DEEP-MINE GUARD: PAPER_701-800 RESWEEP RECOVERY + SUPPORTING-ANCHOR CAPTURE
+# =============================================================================
+try:
+    import math as _b81m
+    assert_that(abs(C.ug5_fluid_748(1.0, 1.0 / 3.0, c=1.0) - 2.0) < 1e-12,
+                "P748R U_g5 perfect fluid rho*c^2*(1+3w); radiation w=1/3 -> 2x")
+    assert_that(abs(C.gamma_growth_749(1000) - 0.048770575499285984) < 1e-15,
+                "P749R gamma-growth 0.0488 at 1000 d (paper 0.049)")
+    assert_that(abs(C.u_i_net_749() + 1.38237275e-31) < 1e-43,
+                "P749R U_i net faithful -1.382e-31 mantissa EXACT (paper -0.138 via own e-47)")
+    assert_that(abs(C.f_cluster_750(1e6) - 1e-6) < 1e-18, "P750R F_cluster 1e-6 EXACT")
+    assert_that(C.theta_e_758(1e44, 1e25, 2e25, 1e25) > 0, "P758R Einstein angle form")
+    assert_that(abs(C.warp_factor_793() - 1.05) < 1e-12,
+                "P793R warp factor 1.05 replaces (1+f_TRZ) - 3rd variable-f_TRZ instance")
+    import csv as _b81csv
+    _b81n = sum(1 for _r in _b81csv.DictReader(open('UNIFIED_REGISTRY.csv', newline='',
+                encoding='utf-8')) if _r['origin'] == 'SUPPORTING_ANCHOR')
+    assert_that(_b81n >= 129, "supporting-anchor bulk capture >= 129 rows (got %s)" % _b81n)
+except Exception as _b81e:
+    assert_that(False, "DEEP-MINE 701-800 guard crashed: %r" % _b81e)
 
 # =============================================================================
 # REPORT

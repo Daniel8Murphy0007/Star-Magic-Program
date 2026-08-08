@@ -1596,3 +1596,9 @@ level_spacing_energy,deep-capture,native-paper,DPM-common-block,,,deep-capture 4
 higgs_compton_gravity,deep-capture,native-paper,DPM-common-block,,,deep-capture 401-500,PAPER_460,primitive-sourced,XGEO_CAMPAIGN_ROUTED,higgs_compton_gravity re-expressed via _common_uqff_blocks,PAPER_460
 cyclotron_electron,deep-capture,native-paper,DPM-common-block,,,deep-capture 401-500,PAPER_460,primitive-sourced,XGEO_CAMPAIGN_ROUTED,cyclotron_electron re-expressed via _common_uqff_blocks,PAPER_460
 complex_fubi_stated,deep-capture,native-paper,DPM-common-block,,,deep-capture 401-500,PAPER_483,primitive-sourced,XGEO_CAMPAIGN_ROUTED,complex_fubi_stated re-expressed via _common_uqff_blocks,PAPER_483
+h_planck_uqff,constants,native-paper,primitive-stack,F_TRZ*Phi_res*E0/f_phonon,6.72e-34,CODATA 6.626e-34 (1.42%),PAPER_590,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+alpha_primitive,constants,native-paper,primitive-stack,1/(Phi_res*26*2pi),7.2873e-3,CODATA 7.2974e-3 (0.138%),PAPER_591,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+alpha_impedance,constants,native-paper,primitive-stack,Z0/(2R_K),7.29735e-3,CODATA EXACT,PAPER_652,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+alpha_recoil,constants,native-paper,primitive-stack,sqrt(2R_inf h/(me c)),7.29735e-3,CODATA EXACT,PAPER_652,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+G_uqff_primitive,constants,native-paper,primitive-stack,2pi 26^3 Phi/(SSq^3 (26!)^2) vF^5/(E0 f),6.66899e-11,CODATA 6.6743e-11 (0.0795%),PAPER_593,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+u_i_canonical,inertial,native-paper,primitive-stack,F_TRZ*omega_s*(1+F_TRZ),2.75e-7,PAPER_646 landmark EXACT,PAPER_646;PAPER_700,primitive-composed,XGEO_CAMPAIGN_ROUTED,,

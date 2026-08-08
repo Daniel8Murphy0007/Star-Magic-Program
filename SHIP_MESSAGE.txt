@@ -1,5 +1,7 @@
-v0.359.0: Rule B dispatch closure (714 surfaces PAPER_001-700) + PAPER_500 milestone audit (AFFIRMATIVE ruling) + deep-capture PAPER_501-700 (20 bands, +570 fns) + deep-mine resweeps 501-600/601-700 (+17 recoveries)
+v0.360.0: deep-capture PAPER_701-800 complete + deep-mine resweep + FULL ship-checklist restoration
 
-Headlines: fundamental-constants suite from primitives (h 6.72e-34 EXACT 1.42%; alpha x3 routes incl. 2 EXACT; G 0.0795%; c triad); U_i=2.75e-7 canonical reproduced twice (P646 + P700 master cross-check); cross-primitive identities pinned (BSD 2000.5, proton-decay kappa*365.25, M87 shadow sqrt(2), w_eff 4-primitive, Li_26(SSq)=0.57 VERIFIED).
+Headlines: 1.053e-2 fingerprint SOLVED (qvB/mp*11e-12, f_em_732, 3 occurrences); Three-UQFF triple-mode (R_freq=1+kappa*SSq=1.000285 EXACT; f_Ub=2.197e7 EXACT four-factor); variable f_TRZ ladder (0.02-0.05 + warp 1.05, canonical preserved); U_g5 tensor mode rho c^2(1+3w); E_shell(H)=13.6 eV EXACT; 129 SUPPORTING_ANCHOR rows per Daniel's directive; Rule-7 audit zero exclusions.
 
-Measured vs v0.358.0: defs 1,682->2,158; dispatches 342->714; gate 2,749->3,239 (0 failures); registry 3,764->4,239; graph 5,667->6,424; citations 938->1,124. ~45 source slips disclosed, faithful transcription throughout. Gate green at ship.
+Ship-checklist restoration: v0.359.0 missed the registry-audit family; ALL live artifacts updated this ship (MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO q+r), frozen references intact by design.
+
+Measured vs v0.359.0: defs 2,158->2,274; dispatches 714->814; gate 3,239->3,388 (0 failures); registry 4,383 rows; citations 1,224. Gate green at ship.

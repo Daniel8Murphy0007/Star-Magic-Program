@@ -4238,3 +4238,248 @@ n_uqff_699,REPO_DEEP_CAPTURE,function,PAPER_699,N(1+z)^-1.5*1.21 EXACT,,whitepap
 schechter_699,REPO_DEEP_CAPTURE,function,PAPER_699,phi*(L/L*)^a e^-L/L*,,whitepapers/PAPER_699,,uhdf,,PAPER_699,,uqff_calculator.py,,,,WIRED
 v_uqff_potential_700,REPO_DEEP_CAPTURE,function,PAPER_700,-GM/r*1.1*0.9=-0.99 GM/r EXACT,-0.99,whitepapers/PAPER_700,,master,,PAPER_700,,uqff_calculator.py,,,,WIRED
 u_i_700,REPO_DEEP_CAPTURE,function,PAPER_700,(1/10)omega cos(1+F_TRZ)=2.75e-7 at omega_s EXACT cross-check P646,2.75e-07,whitepapers/PAPER_700,,master,,PAPER_700,,uqff_calculator.py,,,,WIRED
+g_muge_family_701,REPO_DEEP_CAPTURE,function,PAPER_701,TEMPLATE g=GM/r2(1+Ht)(1-d)(1+F_TRZ)+extras+lorentz (charter family),,whitepapers/PAPER_701,,muge-family,,PAPER_701,,uqff_calculator.py,,,,WIRED
+lorentz_uqff_term,REPO_DEEP_CAPTURE,function,PAPER_701,qvB*11e-12 EXACT shared term,1.1e-11,whitepapers/PAPER_701,,muge-family,,PAPER_701,,uqff_calculator.py,,,,WIRED
+p_de_701,REPO_DEEP_CAPTURE,function,PAPER_701,rhoSCm c2 V/tH; stated 7.09e-51 W,,whitepapers/PAPER_701,,muge-family,,PAPER_701,,uqff_calculator.py,,,,WIRED
+b_pseudo_701,REPO_DEEP_CAPTURE,function,PAPER_701,mu0 qm/4pir2 pseudo-monopole,,whitepapers/PAPER_701,,muge-family,,PAPER_701,,uqff_calculator.py,,,,WIRED
+t_ring_702,REPO_DEEP_CAPTURE,function,PAPER_702,GMring/r2 ~2.043e-7,,whitepapers/PAPER_702,,saturn,,PAPER_702,,uqff_calculator.py,,,,WIRED
+a_wind_702,REPO_DEEP_CAPTURE,function,PAPER_702,rho v2 V/M ~2.5e-7; g_Saturn 10.44 stated,,whitepapers/PAPER_702,,saturn,,PAPER_702,,uqff_calculator.py,,,,WIRED
+f_bh_703,REPO_DEEP_CAPTURE,function,PAPER_703,0.1(1-e^-t/tau) saturation = F_TRZ value,0.1,whitepapers/PAPER_703,,ngc1275,,PAPER_703,,uqff_calculator.py,,,,WIRED
+a_fil_703,REPO_DEEP_CAPTURE,function,PAPER_703,B2/2mu0 V/M 1e-12 ~2.840e-9,,whitepapers/PAPER_703,,ngc1275,,PAPER_703,,uqff_calculator.py,,,,WIRED
+erosion_704,REPO_DEEP_CAPTURE,function,PAPER_704,E0(1-e^-t/tau),,whitepapers/PAPER_704,,horsehead,,PAPER_704,,uqff_calculator.py,,,,WIRED
+p_rad_704,REPO_DEEP_CAPTURE,function,PAPER_704,L/(4pir2c) rho/mH ~4.35e-5,,whitepapers/PAPER_704,,horsehead,,PAPER_704,,uqff_calculator.py,,,,WIRED
+m_sf_growth,REPO_DEEP_CAPTURE,function,PAPER_705,M(1+f e^-t/tau); anchors 0.9901/3.333/41.67,,whitepapers/PAPER_705,,ngc3603,,PAPER_705,,uqff_calculator.py,,,,WIRED
+a_sn_707,REPO_DEEP_CAPTURE,function,PAPER_707,L/(cMr)e^-t/tau SN kick,,whitepapers/PAPER_707,,ngc2525,,PAPER_707,,uqff_calculator.py,,,,WIRED
+ug4_bcrit_708,REPO_DEEP_CAPTURE,function,PAPER_708,Ug1(1-B/Bcrit),,whitepapers/PAPER_708,,pillars,,PAPER_708,,uqff_calculator.py,,,,WIRED
+g_lambda_708,REPO_DEEP_CAPTURE,function,PAPER_708,Lambda c2/3 computes 3.30e-36 vs printed 3.63e-35 DISCLOSED 11x,3.295435655368331e-36,whitepapers/PAPER_708,,pillars,,PAPER_708,,uqff_calculator.py,,,,WIRED
+g_1053_anchor_stated,REPO_DEEP_CAPTURE,function,PAPER_708,1.053 mantissa recurs across 4 systems (705/708/709/710),1.053,whitepapers/PAPER_708,,pillars,,PAPER_708,,uqff_calculator.py,,,,WIRED
+e_shock_712,REPO_DEEP_CAPTURE,function,PAPER_712,0.15 e^-t/tau shock erosion,,whitepapers/PAPER_712,,pillars-v2,,PAPER_712,,uqff_calculator.py,,,,WIRED
+a_jet_712,REPO_DEEP_CAPTURE,function,PAPER_712,L/(cM) ~1e-15,,whitepapers/PAPER_712,,pillars-v2,,PAPER_712,,uqff_calculator.py,,,,WIRED
+i_thz_713,REPO_DEEP_CAPTURE,function,PAPER_713,50-thread THz bundle sum,,whitepapers/PAPER_713,,kb-thz,,PAPER_713,,uqff_calculator.py,,,,WIRED
+phi_inv_713,REPO_DEEP_CAPTURE,function,PAPER_713,cos(2pi t/tau),,whitepapers/PAPER_713,,kb-thz,,PAPER_713,,uqff_calculator.py,,,,WIRED
+p_thz_713,REPO_DEEP_CAPTURE,function,PAPER_713,0.35^2/50=2.45e-3 W EXACT,0.00245,whitepapers/PAPER_713,,kb-thz,,PAPER_713,,uqff_calculator.py,,,,WIRED
+f_uqff_713,REPO_DEEP_CAPTURE,function,PAPER_713,c k_eta/(2pi me)=1.245e12 Hz - lands at 1.25 THz phonon carrier (OMEGA_SCM cross-ref; k_eta=2.377e-26 back-solved),1245033452882.0715,whitepapers/PAPER_713,,kb-thz,,PAPER_713,,uqff_calculator.py,,,,WIRED
+e_signal_714,REPO_DEEP_CAPTURE,function,PAPER_714,(V/sqrt2)^2/Z dt,,whitepapers/PAPER_714,,kb-thz,,PAPER_714,,uqff_calculator.py,,,,WIRED
+um_kb_714,REPO_DEEP_CAPTURE,function,PAPER_714,mu w V(1-e^-kt),,whitepapers/PAPER_714,,kb-thz,,PAPER_714,,uqff_calculator.py,,,,WIRED
+ug1_kb_715,REPO_DEEP_CAPTURE,function,PAPER_715,mu w V^2,,whitepapers/PAPER_715,,kb-thz,,PAPER_715,,uqff_calculator.py,,,,WIRED
+ubi_kb_715,REPO_DEEP_CAPTURE,function,PAPER_715,rhoUA w V cos,,whitepapers/PAPER_715,,kb-thz,,PAPER_715,,uqff_calculator.py,,,,WIRED
+ratio_bundle_715,REPO_DEEP_CAPTURE,function,PAPER_715,(Um/Ug1)*F_TRZ,,whitepapers/PAPER_715,,kb-thz,,PAPER_715,,uqff_calculator.py,,,,WIRED
+u_i_kb716_stated,REPO_DEEP_CAPTURE,function,PAPER_716,8.05e-80 J/m^6 stated (dimensional variant),8.05e-80,whitepapers/PAPER_716,,kb-fund,,PAPER_716,,uqff_calculator.py,,,,WIRED
+b_super_716,REPO_DEEP_CAPTURE,function,PAPER_716,mu0*1e6=1.2566 T EXACT,1.25663706212,whitepapers/PAPER_716,,kb-fund,,PAPER_716,,uqff_calculator.py,,,,WIRED
+ug2_kb_716,REPO_DEEP_CAPTURE,function,PAPER_716,B2/2mu0=6.287e5 EXACT (stated 6.29e5),628681.5213512763,whitepapers/PAPER_716,,kb-fund,,PAPER_716,,uqff_calculator.py,,,,WIRED
+omega_plasma_716,REPO_DEEP_CAPTURE,function,PAPER_716,sqrt(w02+g2)=1.005e16 EXACT,1.004987562112089e+16,whitepapers/PAPER_716,,kb-fund,,PAPER_716,,uqff_calculator.py,,,,WIRED
+m_jeans_716,REPO_DEEP_CAPTURE,function,PAPER_716,Jeans mass; stated 5.13e31,,whitepapers/PAPER_716,,kb-fund,,PAPER_716,,uqff_calculator.py,,,,WIRED
+e_oscillation_717,REPO_DEEP_CAPTURE,function,PAPER_717,E V B2/2mu0E sin(2pit/T); E(T/4)~7.96e-22 stated,,whitepapers/PAPER_717,,kb-fund,,PAPER_717,,uqff_calculator.py,,,,WIRED
+e_space_717_stated,REPO_DEEP_CAPTURE,function,PAPER_717,5.52e-104 J 7-factor chain stated,5.52e-104,whitepapers/PAPER_717,,kb-fund,,PAPER_717,,uqff_calculator.py,,,,WIRED
+eta_neutron_718,REPO_DEEP_CAPTURE,function,PAPER_718,k e^(-SSq^26 e^-pi-t) Um/rhoUA gate,,whitepapers/PAPER_718,,kb-fund,,PAPER_718,,uqff_calculator.py,,,,WIRED
+g_buoy_718,REPO_DEEP_CAPTURE,function,PAPER_718,10*(1/33)=0.303 EXACT (1/33 cross-band tie P196/216),0.30303030303030304,whitepapers/PAPER_718,,kb-fund,,PAPER_718,,uqff_calculator.py,,,,WIRED
+fsc_influence_718,REPO_DEEP_CAPTURE,function,PAPER_718,Um/137,,whitepapers/PAPER_718,,kb-fund,,PAPER_718,,uqff_calculator.py,,,,WIRED
+ug4_nebula_719_stated,REPO_DEEP_CAPTURE,function,PAPER_719,"(1.69e-2, 3.49e-6) J/m3 via ug4_647 form",,whitepapers/PAPER_719,,kb-fund,,PAPER_719,,uqff_calculator.py,,,,WIRED
+t_neg_720,REPO_DEEP_CAPTURE,function,PAPER_720,"-t e^(pi-t); 13.68->-3.63e-4 (paper -3.75e-4, 3%)",-0.00036250494796075003,whitepapers/PAPER_720,,kb-fund,,PAPER_720,,uqff_calculator.py,,,,WIRED
+p_transition_720,REPO_DEEP_CAPTURE,function,PAPER_720,1-e^-g|t|; 0.490 stated,,whitepapers/PAPER_720,,kb-fund,,PAPER_720,,uqff_calculator.py,,,,WIRED
+rho_react_720,REPO_DEEP_CAPTURE,function,PAPER_720,1e15 e^-0.001t=9.864e14 EXACT,986413145970606.1,whitepapers/PAPER_720,,kb-fund,,PAPER_720,,uqff_calculator.py,,,,WIRED
+f_cgm_720,REPO_DEEP_CAPTURE,function,PAPER_720,M_CGM/M_vir,,whitepapers/PAPER_720,,kb-fund,,PAPER_720,,uqff_calculator.py,,,,WIRED
+ug4_fp_agn_720_stated,REPO_DEEP_CAPTURE,function,PAPER_720,"(7.64e-6, 8.40e-6) stated",,whitepapers/PAPER_720,,kb-fund,,PAPER_720,,uqff_calculator.py,,,,WIRED
+um_kb_721,REPO_DEEP_CAPTURE,function,PAPER_721,Um with (1+1e13 fH) Higgs gate (unique term),,whitepapers/PAPER_721,,kb-series,,PAPER_721,,uqff_calculator.py,,,,WIRED
+mu_j_modulated_724,REPO_DEEP_CAPTURE,function,PAPER_724,(1e3+0.4sin)mu superwave,,whitepapers/PAPER_724,,kb-series,,PAPER_724,,uqff_calculator.py,,,,WIRED
+b_j_dipole_725,REPO_DEEP_CAPTURE,function,PAPER_725,mu0 mu/4pir3 (1+Bs sin),,whitepapers/PAPER_725,,kb-series,,PAPER_725,,uqff_calculator.py,,,,WIRED
+g_eff_defect_726,REPO_DEEP_CAPTURE,function,PAPER_726,1.001 metric defect,1.001,whitepapers/PAPER_726,,kb-series,,PAPER_726,,uqff_calculator.py,,,,WIRED
+e_str_726,REPO_DEEP_CAPTURE,function,PAPER_726,kB 1e4 K = 1.381e-19 J/mode,1.380649e-19,whitepapers/PAPER_726,,kb-series,,PAPER_726,,uqff_calculator.py,,,,WIRED
+um_corrected_727,REPO_DEEP_CAPTURE,function,PAPER_727,Um(1+v_SCm/c); 1.001 factor,1.0010006922855945,whitepapers/PAPER_727,,kb-series,,PAPER_727,,uqff_calculator.py,,,,WIRED
+e_aether_eff_727,REPO_DEEP_CAPTURE,function,PAPER_727,rho V; stated 1.683e-10 J,1.683e-10,whitepapers/PAPER_727,,kb-series,,PAPER_727,,uqff_calculator.py,,,,WIRED
+p_peak_728,REPO_DEEP_CAPTURE,function,PAPER_728,0.65^2/50=8.45e-3 W EXACT,0.00845,whitepapers/PAPER_728,,kb-series,,PAPER_728,,uqff_calculator.py,,,,WIRED
+ug1_thread_sum_728,REPO_DEEP_CAPTURE,function,PAPER_728,Sum u dt thread,,whitepapers/PAPER_728,,kb-series,,PAPER_728,,uqff_calculator.py,,,,WIRED
+t_trz_729,REPO_DEEP_CAPTURE,function,PAPER_729,10*13=130 s EXACT,130.0,whitepapers/PAPER_729,,kb-series,,PAPER_729,,uqff_calculator.py,,,,WIRED
+ubi_thread_730,REPO_DEEP_CAPTURE,function,PAPER_730,30-image buoyancy thread with BETA_I,,whitepapers/PAPER_730,,kb-series,,PAPER_730,,uqff_calculator.py,,,,WIRED
+ug1_iawb_731,REPO_DEEP_CAPTURE,function,PAPER_731,I A w B current-loop channel,,whitepapers/PAPER_731,,ngc1316,,PAPER_731,,uqff_calculator.py,,,,WIRED
+g_muge_10sys_732,REPO_DEEP_CAPTURE,function,PAPER_732,TEMPLATE 10/18-sys MUGE,,whitepapers/PAPER_732,,muge-multi,,PAPER_732,,uqff_calculator.py,,,,WIRED
+f_em_732,REPO_DEEP_CAPTURE,function,PAPER_732,qvB/mp*11e-12=1.0537e-2 EXACT - THE 1.053 FINGERPRINT SOURCE,0.010536716471538,whitepapers/PAPER_732,,muge-multi,,PAPER_732,,uqff_calculator.py,,,,WIRED
+r_dual_osc_732,REPO_DEEP_CAPTURE,function,PAPER_732,Rg cos+Rm cos*10*1.1; wm=100wg,,whitepapers/PAPER_732,,muge-multi,,PAPER_732,,uqff_calculator.py,,,,WIRED
+e_dpm_733,REPO_DEEP_CAPTURE,function,PAPER_733,1e-5 hbar c i^5/r^2 26-state ladder; 737-chain mantissa-EXACT (737 prints e-67 omitting own 1e-5 DISCLOSED; 736 table conflicts DISCLOSED),,whitepapers/PAPER_733,,muge-multi,,PAPER_733,,uqff_calculator.py,,,,WIRED
+ug4i_thz_733,REPO_DEEP_CAPTURE,function,PAPER_733,hbar c/r_THz *1.001923*11=3.4844e-16 (737 3.487e-16); 733 quadratic text vs 737 linear chain DISCLOSED,3.4843670262953974e-16,whitepapers/PAPER_733,,muge-multi,,PAPER_733,,uqff_calculator.py,,,,WIRED
+eta_kn_734,REPO_DEEP_CAPTURE,function,PAPER_734,k e^(-SSq n/26)e^(-(pi-t)Um/rhoUA) boxed K_n,,whitepapers/PAPER_734,,lenr-kn,,PAPER_734,,uqff_calculator.py,,,,WIRED
+omega_c_734,REPO_DEEP_CAPTURE,function,PAPER_734,2pi/3.96e8=1.5867e-8 (paper 1.585e-8),1.5866629563584813e-08,whitepapers/PAPER_734,,lenr-kn,,PAPER_734,,uqff_calculator.py,,,,WIRED
+e_shell_735,REPO_DEEP_CAPTURE,function,PAPER_735,(Z/1000)*1.36e4 eV*sin(theta); H 1s = 13.6 eV EXACT,13.6,whitepapers/PAPER_735,,acp,,PAPER_735,,uqff_calculator.py,,,,WIRED
+k_h_735,REPO_DEEP_CAPTURE,function,PAPER_735,13.6/3e20=4.533e-20 s/m,4.533333333333333e-20,whitepapers/PAPER_735,,acp,,PAPER_735,,uqff_calculator.py,,,,WIRED
+f_scm_pair_735,REPO_DEEP_CAPTURE,function,PAPER_735,"(Z/Zmax,(Zmax-Z)/Zmax) sums to 1",,whitepapers/PAPER_735,,acp,,PAPER_735,,uqff_calculator.py,,,,WIRED
+f_ub_scale_736,REPO_DEEP_CAPTURE,function,PAPER_736,ladder 1e9/1e7/1e5-1e6,,whitepapers/PAPER_736,,three-system,,PAPER_736,,uqff_calculator.py,,,,WIRED
+theta_26state_738,REPO_DEEP_CAPTURE,function,PAPER_738,90-(i-1)*3.346 deg; theta_26=6.35,6.35,whitepapers/PAPER_738,,acp,,PAPER_738,,uqff_calculator.py,,,,WIRED
+mass_ratio_uqff_738,REPO_DEEP_CAPTURE,function,PAPER_738,Mass=FUg1/FUBi dimensionless,,whitepapers/PAPER_738,,acp,,PAPER_738,,uqff_calculator.py,,,,WIRED
+omega_ladder_739,REPO_DEEP_CAPTURE,function,PAPER_739,2pi f i/26 per-state,,whitepapers/PAPER_739,,tapestry,,PAPER_739,,uqff_calculator.py,,,,WIRED
+e_dpm_sum_739,REPO_DEEP_CAPTURE,function,PAPER_739,Sum E_DPM i=1..26 (i=26 dominated),,whitepapers/PAPER_739,,tapestry,,PAPER_739,,uqff_calculator.py,,,,WIRED
+f_env_master_741,REPO_DEEP_CAPTURE,function,PAPER_741,6-term F_env master catalog,,whitepapers/PAPER_741,,compression-2,,PAPER_741,,uqff_calculator.py,,,,WIRED
+quantum_term_741,REPO_DEEP_CAPTURE,function,PAPER_741,hbar/sqrt(dxdp) int psi H psi 2pi/tH,,whitepapers/PAPER_741,,compression-2,,PAPER_741,,uqff_calculator.py,,,,WIRED
+f_env_sombrero_742,REPO_DEEP_CAPTURE,function,PAPER_742,D/g + GM/(r2g) + Ht fractions,,whitepapers/PAPER_742,,sombrero-muge,,PAPER_742,,uqff_calculator.py,,,,WIRED
+t_ring_tidal_743,REPO_DEEP_CAPTURE,function,PAPER_743,2GM/dr3; computes 2.056e-15 vs printed 2.05e-9 DISCLOSED 6-order,2.055592e-15,whitepapers/PAPER_743,,saturn-muge,,PAPER_743,,uqff_calculator.py,,,,WIRED
+f_wind_drag_743,REPO_DEEP_CAPTURE,function,PAPER_743,rho v2 CD/2r; computes 1.79e-7 vs printed 1.79e-10 DISCLOSED mantissa EXACT,1.7931034482758622e-07,whitepapers/PAPER_743,,saturn-muge,,PAPER_743,,uqff_calculator.py,,,,WIRED
+m_sf_744,REPO_DEEP_CAPTURE,function,PAPER_744,SFR t/M0=0.0125 EXACT,0.0125,whitepapers/PAPER_744,,eagle-muge,,PAPER_744,,uqff_calculator.py,,,,WIRED
+mdot_evap_744,REPO_DEEP_CAPTURE,function,PAPER_744,Phi mH/(alphaB nH),,whitepapers/PAPER_744,,eagle-muge,,PAPER_744,,uqff_calculator.py,,,,WIRED
+e_rad_erosion_744,REPO_DEEP_CAPTURE,function,PAPER_744,G mdot t/(r2 M) ~3e-12,,whitepapers/PAPER_744,,eagle-muge,,PAPER_744,,uqff_calculator.py,,,,WIRED
+r_crab_745,REPO_DEEP_CAPTURE,function,PAPER_745,r0+vt; 970yr=4.892e16 (paper rounds 4.6e16),4.89198e+16,whitepapers/PAPER_745,,crab-muge,,PAPER_745,,uqff_calculator.py,,,,WIRED
+f_wind_pulsar_745,REPO_DEEP_CAPTURE,function,PAPER_745,L/(4pir2cM) ~4.8e-30,,whitepapers/PAPER_745,,crab-muge,,PAPER_745,,uqff_calculator.py,,,,WIRED
+m_mag_745,REPO_DEEP_CAPTURE,function,PAPER_745,B2/(2mu0 r rho) ~2.7e-17,,whitepapers/PAPER_745,,crab-muge,,PAPER_745,,uqff_calculator.py,,,,WIRED
+dp_wind_745,REPO_DEEP_CAPTURE,function,PAPER_745,Lt/c ~5e33,,whitepapers/PAPER_745,,crab-muge,,PAPER_745,,uqff_calculator.py,,,,WIRED
+a_res_746,REPO_DEEP_CAPTURE,function,PAPER_746,kA Z A(1+dpair) Z=1..118,,whitepapers/PAPER_746,,h-resonance,,PAPER_746,,uqff_calculator.py,,,,WIRED
+f_res_746,REPO_DEEP_CAPTURE,function,PAPER_746,(E/h)(1/A)(1+S); H=3.290e15 Hz EXACT Lyman alpha,3290034591619891.0,whitepapers/PAPER_746,,h-resonance,,PAPER_746,,uqff_calculator.py,,,,WIRED
+s_shell_746,REPO_DEEP_CAPTURE,function,PAPER_746,0.1(Zfrac+Nfrac); doubly-magic 0.20 EXACT,0.2,whitepapers/PAPER_746,,h-resonance,,PAPER_746,,uqff_calculator.py,,,,WIRED
+k_nuc_746,REPO_DEEP_CAPTURE,function,PAPER_746,k0(N/Z)(1+d),,whitepapers/PAPER_746,,h-resonance,,PAPER_746,,uqff_calculator.py,,,,WIRED
+u_dp_746,REPO_DEEP_CAPTURE,function,PAPER_746,k A1A2/f2 cos,,whitepapers/PAPER_746,,h-resonance,,PAPER_746,,uqff_calculator.py,,,,WIRED
+d_universe_747,REPO_DEEP_CAPTURE,function,PAPER_747,2dp*1.987=184.8 Gly ~182 headline; 4-factor chain internally inconsistent DISCLOSED,184.81767255047038,whitepapers/PAPER_747,,universe-diameter,,PAPER_747,,uqff_calculator.py,,,,WIRED
+ug5_tensor_748,REPO_DEEP_CAPTURE,function,PAPER_748,Sum T_munu NEW 5th gravity mode,,whitepapers/PAPER_748,,doc43d,,PAPER_748,,uqff_calculator.py,,,,WIRED
+omega_g_749,REPO_DEEP_CAPTURE,function,PAPER_749,7.3e-16 rad/s; galactic year 2.727e8 yr EXACT,7.3e-16,whitepapers/PAPER_749,,variable-sets,,PAPER_749,,uqff_calculator.py,,,,WIRED
+heaviside_amp_749,REPO_DEEP_CAPTURE,function,PAPER_749,1+1e13*0.01=1e11 EXACT,100000000001.0,whitepapers/PAPER_749,,variable-sets,,PAPER_749,,uqff_calculator.py,,,,WIRED
+p_thz_comb_751,REPO_DEEP_CAPTURE,function,PAPER_751,V2/Z x 50 lines; peak 2.45 mW,,whitepapers/PAPER_751,,qscope,,PAPER_751,,uqff_calculator.py,,,,WIRED
+i_eff_751,REPO_DEEP_CAPTURE,function,PAPER_751,V/Z=7.0e-3 A EXACT,0.007,whitepapers/PAPER_751,,qscope,,PAPER_751,,uqff_calculator.py,,,,WIRED
+ug1_core_751,REPO_DEEP_CAPTURE,function,PAPER_751,GM/r2(1+muB2/rho c2),,whitepapers/PAPER_751,,qscope,,PAPER_751,,uqff_calculator.py,,,,WIRED
+b_decay_753,REPO_DEEP_CAPTURE,function,PAPER_753,B0 e^-t/tau; 5000yr=2.864e9 T EXACT-to-paper 2.865e9,2863913071.421813,whitepapers/PAPER_753,,magnetar,,PAPER_753,,uqff_calculator.py,,,,WIRED
+m_acc_754,REPO_DEEP_CAPTURE,function,PAPER_754,M0+dM(1-e^-t/tau); Mdot 6.065e-3 EXACT,,whitepapers/PAPER_754,,sgra,,PAPER_754,,uqff_calculator.py,,,,WIRED
+ram_pressure_755,REPO_DEEP_CAPTURE,function,PAPER_755,rho v2/r ram term,,whitepapers/PAPER_755,,starbirth,,PAPER_755,,uqff_calculator.py,,,,WIRED
+e_decay_757,REPO_DEEP_CAPTURE,function,PAPER_757,0.1 e^-t/tau=0.06065 EXACT (decaying variant; both corpus forms wired),0.06065306597126335,whitepapers/PAPER_757,,pillars,,PAPER_757,,uqff_calculator.py,,,,WIRED
+lens_boost_758,REPO_DEEP_CAPTURE,function,PAPER_758,(1+L) lensing boost; bare g 1.394e-7 anchor,,whitepapers/PAPER_758,,einstein-ring,,PAPER_758,,uqff_calculator.py,,,,WIRED
+saturating_fraction_761,REPO_DEEP_CAPTURE,function,PAPER_761,T0(1-e^-t/tau) generic; T0=0.2/0.3/0.5 anchors,,whitepapers/PAPER_761,,hudf,,PAPER_761,,uqff_calculator.py,,,,WIRED
+a_dust_763,REPO_DEEP_CAPTURE,function,PAPER_763,rho v2/rho_scale*1e-12; Sombrero 0.4 EXACT,0.39999999999999997,whitepapers/PAPER_763,,sombrero-v2,,PAPER_763,,uqff_calculator.py,,,,WIRED
+f_wind_shock_766,REPO_DEEP_CAPTURE,function,PAPER_766,P/(4pir2)(1+v/c) shock-boosted,0.0014788393926657433,whitepapers/PAPER_766,,crab-v2,,PAPER_766,,uqff_calculator.py,,,,WIRED
+m_sf_bounded_771,REPO_DEEP_CAPTURE,function,PAPER_771,UQFF-bounded M_sf raw/1000 (780 /10 outlier DISCLOSED),,whitepapers/PAPER_771,,carina-family,,PAPER_771,,uqff_calculator.py,,,,WIRED
+f_trz_activity_777,REPO_DEEP_CAPTURE,function,PAPER_777,VARIABLE f_TRZ: 0.04/0.05/0.02 by activity vs canonical 0.1 - first activity-dependent band,,whitepapers/PAPER_777,,carina-family,,PAPER_777,,uqff_calculator.py,,,,WIRED
+r_freq_786,REPO_DEEP_CAPTURE,function,PAPER_786,1+KAPPA*SSQ=1.000285 EXACT two-primitive tie,1.000285,whitepapers/PAPER_786,,three-uqff,,PAPER_786,,uqff_calculator.py,,,,WIRED
+a_ubi_786,REPO_DEEP_CAPTURE,function,PAPER_786,rhoUA V g/mp buoyancy additive,,whitepapers/PAPER_786,,three-uqff,,PAPER_786,,uqff_calculator.py,,,,WIRED
+three_uqff_modes_786,REPO_DEEP_CAPTURE,function,PAPER_786,"(comp, comp*Rfreq, comp+aUbi) triple",,whitepapers/PAPER_786,,three-uqff,,PAPER_786,,uqff_calculator.py,,,,WIRED
+a_em_ring_789,REPO_DEEP_CAPTURE,function,PAPER_789,(q/mp)sqrt(GM/r)B*11e-12; Cassini g pins 2.128/2.634 EXACT,0.0003552029679563,whitepapers/PAPER_789,,three-uqff,,PAPER_789,,uqff_calculator.py,,,,WIRED
+f_ub_calibration_794,REPO_DEEP_CAPTURE,function,PAPER_794,0.1*7.25e8*10*(1/33)=2.19697e7 EXACT four-factor chain,21969696.96969697,whitepapers/PAPER_794,,three-uqff,,PAPER_794,,uqff_calculator.py,,,,WIRED
+fubi_fub_794,REPO_DEEP_CAPTURE,function,PAPER_794,GMf_Ub/r2 Hk(1+fb); buoyancy dominant ~9 orders,,whitepapers/PAPER_794,,three-uqff,,PAPER_794,,uqff_calculator.py,,,,WIRED
+a_fil_796,REPO_DEEP_CAPTURE,function,PAPER_796,B2L/(mu0 M)=2.47e-26 EXACT filament-length variant,2.4685419767280673e-26,whitepapers/PAPER_796,,three-uqff,,PAPER_796,,uqff_calculator.py,,,,WIRED
+g_compressed_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P795,SUPPORTING_ANCHOR,anchor,PAPER_795,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_795,,per-system,,PAPER_795,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P796,SUPPORTING_ANCHOR,anchor,PAPER_796,stated system anchor (deep-mine bulk capture),3.160e3,whitepapers/PAPER_796,,per-system,,PAPER_796,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P796,SUPPORTING_ANCHOR,anchor,PAPER_796,stated system anchor (deep-mine bulk capture),3.160e3,whitepapers/PAPER_796,,per-system,,PAPER_796,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P796,SUPPORTING_ANCHOR,anchor,PAPER_796,stated system anchor (deep-mine bulk capture),3.160e3,whitepapers/PAPER_796,,per-system,,PAPER_796,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P796,SUPPORTING_ANCHOR,anchor,PAPER_796,stated system anchor (deep-mine bulk capture),3.160e3,whitepapers/PAPER_796,,per-system,,PAPER_796,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P797,SUPPORTING_ANCHOR,anchor,PAPER_797,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_797,,per-system,,PAPER_797,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P797,SUPPORTING_ANCHOR,anchor,PAPER_797,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_797,,per-system,,PAPER_797,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P797,SUPPORTING_ANCHOR,anchor,PAPER_797,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_797,,per-system,,PAPER_797,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P797,SUPPORTING_ANCHOR,anchor,PAPER_797,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_797,,per-system,,PAPER_797,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P800,SUPPORTING_ANCHOR,anchor,PAPER_800,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_800,,per-system,,PAPER_800,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P800,SUPPORTING_ANCHOR,anchor,PAPER_800,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_800,,per-system,,PAPER_800,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P800,SUPPORTING_ANCHOR,anchor,PAPER_800,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_800,,per-system,,PAPER_800,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P800,SUPPORTING_ANCHOR,anchor,PAPER_800,stated system anchor (deep-mine bulk capture),1.053e3,whitepapers/PAPER_800,,per-system,,PAPER_800,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P737,SUPPORTING_ANCHOR,anchor,PAPER_737,stated system anchor (deep-mine bulk capture),8.924e-28,whitepapers/PAPER_737,,per-system,,PAPER_737,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P739,SUPPORTING_ANCHOR,anchor,PAPER_739,stated system anchor (deep-mine bulk capture),7.41e-18,whitepapers/PAPER_739,,per-system,,PAPER_739,,,,,,ANCHOR_CAPTURED
+T_lock_anchor_P739,SUPPORTING_ANCHOR,anchor,PAPER_739,stated system anchor (deep-mine bulk capture),0.324e-18,whitepapers/PAPER_739,,per-system,,PAPER_739,,,,,,ANCHOR_CAPTURED
+g_net_anchor_P739,SUPPORTING_ANCHOR,anchor,PAPER_739,stated system anchor (deep-mine bulk capture),3.19e-18,whitepapers/PAPER_739,,per-system,,PAPER_739,,,,,,ANCHOR_CAPTURED
+g_SgrA_anchor_P754,SUPPORTING_ANCHOR,anchor,PAPER_754,stated system anchor (deep-mine bulk capture),1.250e7,whitepapers/PAPER_754,,per-system,,PAPER_754,,,,,,ANCHOR_CAPTURED
+g_EM_anchor_P755,SUPPORTING_ANCHOR,anchor,PAPER_755,stated system anchor (deep-mine bulk capture),1.053e-4,whitepapers/PAPER_755,,per-system,,PAPER_755,,,,,,ANCHOR_CAPTURED
+g_Starbirth_anchor_P755,SUPPORTING_ANCHOR,anchor,PAPER_755,stated system anchor (deep-mine bulk capture),1.053e-4,whitepapers/PAPER_755,,per-system,,PAPER_755,,,,,,ANCHOR_CAPTURED
+g_EM_anchor_P756,SUPPORTING_ANCHOR,anchor,PAPER_756,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_756,,per-system,,PAPER_756,,,,,,ANCHOR_CAPTURED
+g_Westerlund2_anchor_P756,SUPPORTING_ANCHOR,anchor,PAPER_756,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_756,,per-system,,PAPER_756,,,,,,ANCHOR_CAPTURED
+g_EM_anchor_P757,SUPPORTING_ANCHOR,anchor,PAPER_757,stated system anchor (deep-mine bulk capture),9.89e-5,whitepapers/PAPER_757,,per-system,,PAPER_757,,,,,,ANCHOR_CAPTURED
+g_Pillars_anchor_P757,SUPPORTING_ANCHOR,anchor,PAPER_757,stated system anchor (deep-mine bulk capture),1.053e-4,whitepapers/PAPER_757,,per-system,,PAPER_757,,,,,,ANCHOR_CAPTURED
+g_EM_anchor_P758,SUPPORTING_ANCHOR,anchor,PAPER_758,stated system anchor (deep-mine bulk capture),1.053e-2,whitepapers/PAPER_758,,per-system,,PAPER_758,,,,,,ANCHOR_CAPTURED
+g_Rings_anchor_P758,SUPPORTING_ANCHOR,anchor,PAPER_758,stated system anchor (deep-mine bulk capture),1.053e-2,whitepapers/PAPER_758,,per-system,,PAPER_758,,,,,,ANCHOR_CAPTURED
+g_EM_anchor_P759,SUPPORTING_ANCHOR,anchor,PAPER_759,stated system anchor (deep-mine bulk capture),1.097e-3,whitepapers/PAPER_759,,per-system,,PAPER_759,,,,,,ANCHOR_CAPTURED
+g_Horsehead_anchor_P759,SUPPORTING_ANCHOR,anchor,PAPER_759,stated system anchor (deep-mine bulk capture),1.097e-3,whitepapers/PAPER_759,,per-system,,PAPER_759,,,,,,ANCHOR_CAPTURED
+g_NGC1275_anchor_P760,SUPPORTING_ANCHOR,anchor,PAPER_760,stated system anchor (deep-mine bulk capture),3.160e-5,whitepapers/PAPER_760,,per-system,,PAPER_760,,,,,,ANCHOR_CAPTURED
+a_wind_anchor_P764,SUPPORTING_ANCHOR,anchor,PAPER_764,stated system anchor (deep-mine bulk capture),2.5e5,whitepapers/PAPER_764,,per-system,,PAPER_764,,,,,,ANCHOR_CAPTURED
+a_wind_anchor_P766,SUPPORTING_ANCHOR,anchor,PAPER_766,stated system anchor (deep-mine bulk capture),1.481e18,whitepapers/PAPER_766,,per-system,,PAPER_766,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P767,SUPPORTING_ANCHOR,anchor,PAPER_767,stated system anchor (deep-mine bulk capture),1.053e-2,whitepapers/PAPER_767,,per-system,,PAPER_767,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P768,SUPPORTING_ANCHOR,anchor,PAPER_768,stated system anchor (deep-mine bulk capture),3.160e-3,whitepapers/PAPER_768,,per-system,,PAPER_768,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P769,SUPPORTING_ANCHOR,anchor,PAPER_769,stated system anchor (deep-mine bulk capture),1.053e-1,whitepapers/PAPER_769,,per-system,,PAPER_769,,,,,,ANCHOR_CAPTURED
+F_rad_anchor_P770,SUPPORTING_ANCHOR,anchor,PAPER_770,stated system anchor (deep-mine bulk capture),1.015e-11,whitepapers/PAPER_770,,per-system,,PAPER_770,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P770,SUPPORTING_ANCHOR,anchor,PAPER_770,stated system anchor (deep-mine bulk capture),2.107e-2,whitepapers/PAPER_770,,per-system,,PAPER_770,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P771,SUPPORTING_ANCHOR,anchor,PAPER_771,stated system anchor (deep-mine bulk capture),5.267e-3,whitepapers/PAPER_771,,per-system,,PAPER_771,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P772,SUPPORTING_ANCHOR,anchor,PAPER_772,stated system anchor (deep-mine bulk capture),1.053e-2,whitepapers/PAPER_772,,per-system,,PAPER_772,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P773,SUPPORTING_ANCHOR,anchor,PAPER_773,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_773,,per-system,,PAPER_773,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P774,SUPPORTING_ANCHOR,anchor,PAPER_774,stated system anchor (deep-mine bulk capture),1.053e-1,whitepapers/PAPER_774,,per-system,,PAPER_774,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P775,SUPPORTING_ANCHOR,anchor,PAPER_775,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_775,,per-system,,PAPER_775,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P776,SUPPORTING_ANCHOR,anchor,PAPER_776,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_776,,per-system,,PAPER_776,,,,,,ANCHOR_CAPTURED
+g_CosCliffs_anchor_P780,SUPPORTING_ANCHOR,anchor,PAPER_780,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_780,,per-system,,PAPER_780,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P781,SUPPORTING_ANCHOR,anchor,PAPER_781,stated system anchor (deep-mine bulk capture),5.311e-11,whitepapers/PAPER_781,,per-system,,PAPER_781,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P781,SUPPORTING_ANCHOR,anchor,PAPER_781,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_781,,per-system,,PAPER_781,,,,,,ANCHOR_CAPTURED
+g_M74_anchor_P781,SUPPORTING_ANCHOR,anchor,PAPER_781,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_781,,per-system,,PAPER_781,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P782,SUPPORTING_ANCHOR,anchor,PAPER_782,stated system anchor (deep-mine bulk capture),1.476e-10,whitepapers/PAPER_782,,per-system,,PAPER_782,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P782,SUPPORTING_ANCHOR,anchor,PAPER_782,stated system anchor (deep-mine bulk capture),2.107e-3,whitepapers/PAPER_782,,per-system,,PAPER_782,,,,,,ANCHOR_CAPTURED
+g_NGC1672_anchor_P782,SUPPORTING_ANCHOR,anchor,PAPER_782,stated system anchor (deep-mine bulk capture),2.107e-3,whitepapers/PAPER_782,,per-system,,PAPER_782,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P783,SUPPORTING_ANCHOR,anchor,PAPER_783,stated system anchor (deep-mine bulk capture),1.476e-10,whitepapers/PAPER_783,,per-system,,PAPER_783,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P783,SUPPORTING_ANCHOR,anchor,PAPER_783,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_783,,per-system,,PAPER_783,,,,,,ANCHOR_CAPTURED
+g_NGC5866_anchor_P783,SUPPORTING_ANCHOR,anchor,PAPER_783,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_783,,per-system,,PAPER_783,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P784,SUPPORTING_ANCHOR,anchor,PAPER_784,stated system anchor (deep-mine bulk capture),3.319e-11,whitepapers/PAPER_784,,per-system,,PAPER_784,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P784,SUPPORTING_ANCHOR,anchor,PAPER_784,stated system anchor (deep-mine bulk capture),1.053e-1,whitepapers/PAPER_784,,per-system,,PAPER_784,,,,,,ANCHOR_CAPTURED
+g_M82_anchor_P784,SUPPORTING_ANCHOR,anchor,PAPER_784,stated system anchor (deep-mine bulk capture),1.053e-1,whitepapers/PAPER_784,,per-system,,PAPER_784,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P785,SUPPORTING_ANCHOR,anchor,PAPER_785,stated system anchor (deep-mine bulk capture),7.962e-13,whitepapers/PAPER_785,,per-system,,PAPER_785,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P785,SUPPORTING_ANCHOR,anchor,PAPER_785,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_785,,per-system,,PAPER_785,,,,,,ANCHOR_CAPTURED
+g_IC418_anchor_P785,SUPPORTING_ANCHOR,anchor,PAPER_785,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_785,,per-system,,PAPER_785,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.657e-10,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+a_Ubi_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P786,SUPPORTING_ANCHOR,anchor,PAPER_786,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_786,,per-system,,PAPER_786,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.483e-7,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+a_Ubi_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P787,SUPPORTING_ANCHOR,anchor,PAPER_787,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_787,,per-system,,PAPER_787,,,,,,ANCHOR_CAPTURED
+g_grav_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),8.887e-13,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P788,SUPPORTING_ANCHOR,anchor,PAPER_788,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_788,,per-system,,PAPER_788,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P790,SUPPORTING_ANCHOR,anchor,PAPER_790,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_790,,per-system,,PAPER_790,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P791,SUPPORTING_ANCHOR,anchor,PAPER_791,stated system anchor (deep-mine bulk capture),1.580e-2,whitepapers/PAPER_791,,per-system,,PAPER_791,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P792,SUPPORTING_ANCHOR,anchor,PAPER_792,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_792,,per-system,,PAPER_792,,,,,,ANCHOR_CAPTURED
+g_grav_total_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.378e-10,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_comp_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P793,SUPPORTING_ANCHOR,anchor,PAPER_793,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_793,,per-system,,PAPER_793,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_SN_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),2.303e-21,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_res_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_buoy_anchor_P794,SUPPORTING_ANCHOR,anchor,PAPER_794,stated system anchor (deep-mine bulk capture),1.335e5,whitepapers/PAPER_794,,per-system,,PAPER_794,,,,,,ANCHOR_CAPTURED
+g_resonant_anchor_P795,SUPPORTING_ANCHOR,anchor,PAPER_795,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_795,,per-system,,PAPER_795,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P795,SUPPORTING_ANCHOR,anchor,PAPER_795,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_795,,per-system,,PAPER_795,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P797,SUPPORTING_ANCHOR,anchor,PAPER_797,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_797,,per-system,,PAPER_797,,,,,,ANCHOR_CAPTURED
+F_Compressed_anchor_P798,SUPPORTING_ANCHOR,anchor,PAPER_798,stated system anchor (deep-mine bulk capture),8.84e-42,whitepapers/PAPER_798,,per-system,,PAPER_798,,,,,,ANCHOR_CAPTURED
+F_Buoyancy_anchor_P798,SUPPORTING_ANCHOR,anchor,PAPER_798,stated system anchor (deep-mine bulk capture),9.79e-33,whitepapers/PAPER_798,,per-system,,PAPER_798,,,,,,ANCHOR_CAPTURED
+F_Compressed_anchor_P799,SUPPORTING_ANCHOR,anchor,PAPER_799,stated system anchor (deep-mine bulk capture),4.96e-42,whitepapers/PAPER_799,,per-system,,PAPER_799,,,,,,ANCHOR_CAPTURED
+F_Buoyancy_anchor_P799,SUPPORTING_ANCHOR,anchor,PAPER_799,stated system anchor (deep-mine bulk capture),5.51e-33,whitepapers/PAPER_799,,per-system,,PAPER_799,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P800,SUPPORTING_ANCHOR,anchor,PAPER_800,stated system anchor (deep-mine bulk capture),1.053e-3,whitepapers/PAPER_800,,per-system,,PAPER_800,,,,,,ANCHOR_CAPTURED
+ug5_fluid_748,REPO_DEEP_CAPTURE,function,PAPER_748,rho c2(1+3w) perfect-fluid 5th mode (RECOVERED),,whitepapers/PAPER_748,,doc43d,,PAPER_748,,uqff_calculator.py,,,,WIRED
+gamma_growth_749,REPO_DEEP_CAPTURE,function,PAPER_749,1-e^-5e-5 t; 1000d=0.0488 (paper 0.049) (RECOVERED),0.048770575499285984,whitepapers/PAPER_749,,variable-sets,,PAPER_749,,uqff_calculator.py,,,,WIRED
+u_i_net_749,REPO_DEEP_CAPTURE,function,PAPER_749,-U_i_dim*E_react; faithful -1.382e-31 mantissa EXACT (paper -0.138 via own e-47 print) (RECOVERED),-1.38237275e-31,whitepapers/PAPER_749,,variable-sets,,PAPER_749,,uqff_calculator.py,,,,WIRED
+f_cluster_750,REPO_DEEP_CAPTURE,function,PAPER_750,k_cluster*M=1e-12*1e6=1e-6 EXACT (RECOVERED),1e-06,whitepapers/PAPER_750,,m51-fornax,,PAPER_750,,uqff_calculator.py,,,,WIRED
+theta_e_758,REPO_DEEP_CAPTURE,function,PAPER_758,"sqrt(4GM/(c2 Deff)), Deff=DLDS/DLS (RECOVERED)",,whitepapers/PAPER_758,,einstein-ring,,PAPER_758,,uqff_calculator.py,,,,WIRED
+warp_factor_793,REPO_DEEP_CAPTURE,function,PAPER_793,1.05 replaces (1+f_TRZ) for warped systems - 3rd variable-f_TRZ instance (RECOVERED),1.05,whitepapers/PAPER_793,,three-uqff,,PAPER_793,,uqff_calculator.py,,,,WIRED

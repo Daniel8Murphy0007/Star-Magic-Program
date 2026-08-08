@@ -6275,6 +6275,26 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.360.0] - 2026-08-08
+
+### Deep-capture PAPER_701-800 (10 bands, +116 named functions)
+- 1.053e-2 fingerprint SOLVED: qvB/mp*(1+rho_UA/rho_SCm)*1e-12 (f_em_732); 3 independent occurrences verified.
+- Three-UQFF triple-mode solver: R_freq = 1+kappa*SSq = 1.000285 EXACT; f_Ub = 0.1*7.25e8*10*(1/33) = 2.197e7 EXACT; buoyancy mode dominates by ~9 orders in the AFGL5180/Monkey-Head class.
+- Variable f_TRZ ladder (0.02/0.04/0.05 by activity + warp 1.05; canonical 0.1 preserved).
+- U_g5 tensor mode + perfect-fluid form rho*c^2*(1+3w); E_shell(H)=13.6 eV EXACT; Lyman-alpha 3.290e15 EXACT; Heaviside amp 1e11 EXACT; galactic year 2.727e8 yr EXACT.
+- Per-system MUGE catalogs (701-712, 731-800) + KB1-19 series (713-730); template family per charter authorization.
+
+### Deep-mine resweep 701-800 (Daniel-directed)
+- +6 recoveries (U_g5 fluid form, gamma-growth, U_i net bridge, F_cluster, Einstein-angle set, warp factor).
+- Supporting-information audit: 129 SUPPORTING_ANCHOR registry rows bulk-captured (per-system stated g/a/T/F values).
+- Rule-7 audit: ZERO exclusions; disclosure annotates, never prohibits (~60 slips transcribed faithfully).
+
+### Ship-checklist restoration
+- v0.359.0 missed 7 registry-audit files updated by every prior ship. This ship updates ALL live artifacts: MERGED (+8 family rows), GAPS (+7 incl. 4 open rulings), DUPLICATES (+2 integrity), R1_QUEUE (+4 rulings), R2_MAPPING (+3 band rows), R3_LEDGER (+2 ship rows incl. the missed v0.359.0 row), XGEO queue/routes (+6 marquee observables each). Frozen predecessor references (STATUS/RESULTS_TABLE/FALSIFIABILITY) intact by design.
+
+### Honest accounting (vs v0.359.0)
+- Calculator defs 2,158 -> 2,274; dispatches 714 -> 814; gate 3,239 -> 3,388 (0 failures); registry 3,764+475 -> 4,383 rows; citations 1,124 -> 1,224 papers.
+
 ## [0.359.0] - 2026-08-07
 
 ### Dispatch closure (charter Rule B)

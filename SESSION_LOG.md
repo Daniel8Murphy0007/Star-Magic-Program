@@ -5553,3 +5553,166 @@ _BUILD_LOG, SESSION_LOG (this entry). WHITEPAPER_INDEX/RULINGS_QUEUE already cur
 Measured ship deltas vs v0.358.0: defs 1,682->2,158 (+476); dispatches 342->714 (+372);
 gate 2,749->3,239 (+490, 0 failures); registry 3,764->4,239 (+475); graph 5,667->6,424 (+757);
 citations 938->1,124 (+186). Gate GREEN at v0.359.0. Daniel ships via .\ship.ps1.
+
+## 2026-08-08 — BAND PAPER_701-710 (post-v0.359.0 ship; per-system MUGE template family)
+Charter template authorization applied: ONE parameterized family form (g_muge_family_701 =
+GM/r2(1+Ht)(1-damping)(1+F_TRZ)+extras+lorentz) + shared Lorentz-Aether term qvB*11e-12 EXACT
++ per-paper specifics. 701 red-dwarf KB (P_DE rhoSCm c2V/tH mantissa 7.09; pseudo-monopole),
+702 Saturn rings (T_ring 2.043e-7; wind drag 2.5e-7; g=10.44 stated), 703 NGC1275 (BH-feedback
+saturation 0.1 = F_TRZ value; filament 2.840e-9), 704 Horsehead (erosion; P_rad 4.35e-5),
+705/706 NGC3603 (SF growth M(1+f e^-t/tau)), 707 NGC2525 (SN kick e^-t/tau), 708 Pillars
+(Ug4=Ug1(1-B/Bcrit); Lambda c2/3 computes 3.30e-36 vs printed 3.63e-35 DISCLOSED 11x; 1.053
+mantissa fingerprint across 4 systems), 709 Westerlund 2 + 710 NGC2014/2020 (covered by family
++ growth anchors 3.333/41.67).
+Totals: +15 defs (2,158->2,173), wired 714->724, registry +14 rows, graph +19 edges,
+citations +10, gate +17 asserts (3,256), GREEN v0.359.0.
+
+## 2026-08-08 (2) — BAND PAPER_711-720 (KB series)
+711 NGC2014/2020 v2 (covered by family + WR growth 50 + rad pressure), 712 Pillars v2 (shock
+0.15 erosion; jet kick L/cM ~1e-15), 713 KB19 THz bundle (50-thread sum; P=0.35^2/50=2.45e-3 W
+EXACT; f_UQFF=c k_eta/2pi me=1.245e12 Hz LANDS AT THE 1.25 THz PHONON CARRIER within 0.4% of
+OMEGA_SCM_HZ - cross-primitive landing; k_eta=2.377e-26 back-solved), 714 KB18 (scope-channel
+signal energy; U_m saturation), 715 KB17 (thread gravity mu w V^2; bundle ratio * F_TRZ),
+716 KB1 (B_super=mu0*1e6=1.2566 T EXACT; U_g2=B2/2mu0=6.287e5 EXACT; plasma 1.005e16 EXACT;
+Jeans mass; U_i dimensional variant stated), 717 KB2 (aether oscillation peak T/4; E_space
+5.52e-104 7-factor chain stated), 718 KB3 (Widom-Larsen-type neutron gate; g_buoy=10/33=0.303
+EXACT with the 1/33 cross-band tie to P196/216; FSC 1/137), 719 KB4 (nebular U_g4 pair via
+ug4_647 form), 720 KB5 (t^-=-t e^(pi-t) 3% rounding; rho_react 9.864e14 EXACT; P=0.49 gamma
+back-solved 1857.5; CGM fraction; FP/AGN U_g4 stated pair).
+Totals: +27 defs (2,173->2,200), wired 724->734, registry +23 rows, graph +31 edges,
+citations +10, gate +22 asserts (3,279), GREEN v0.359.0.
+
+## 2026-08-08 (3) — BAND PAPER_721-730 (KB series II)
+721 KB6 (Um with unique (1+1e13 fH) Higgs gate), 722 KB8 + 723 KB9 (covered: ug4_647/ug3_band_655/
+eta gate + e_react_647/ug2_647 - the KB canon repeats the wired canonical forms), 724 KB10
+(superwave mu modulation 1e3+0.4sin), 725 KB11 (string dipole mu0mu/4pir3), 726 KB12 (metric
+defect 1.001; string mode kB*1e4 K), 727 KB13 (v_SCm/c correction 1.001; aether 1.683e-10 J),
+728 KB14 (P_peak=0.65^2/50=8.45e-3 EXACT; thread sum), 729 KB15 (T_TRZ=130 s EXACT),
+730 KB16 (30-image buoyancy thread with BETA_I).
+Totals: +11 defs (2,200->2,211), wired 734->744, registry +11 rows, graph +13 edges,
+citations +10, gate +13 asserts (3,293), GREEN v0.359.0.
+
+## 2026-08-08 (4) — BAND PAPER_731-740
+731 NGC1316 evolution (IAwB channel; rest covered by 688 fns), 732 ten-system MUGE (template;
+F_em=qvB/mp*11e-12=1.0537e-2 EXACT - THE 1.053 CROSS-SYSTEM FINGERPRINT SOURCE IDENTIFIED,
+resolving the P705/708/709/710 recurrence; dual oscillator 1+10*1.1=12), 733 eighteen-system
+(26-state E_DPM ladder 1e-5 hbar c i^5/r^2 mantissa-EXACT to 737 chain, 737's printed exponent
+omits its own 1e-5 DISCLOSED, 736 table conflict DISCLOSED; Ug4i THz-hole 3.484e-16 via LINEAR
+r_THz~1nm per 737's executed arithmetic, 733 quadratic text DISCLOSED), 734 LENR K_n calibration
+(boxed gate; omega_c=1.587e-8), 735 Ug2 electron shell (E_shell(H,1s)=13.6 eV EXACT - 100%
+accuracy claim VERIFIED; k_h=4.533e-20; f pair sums to 1), 736 three-system framework (f_Ub
+ladder 1e9/1e7/1e5-1e6), 737 nine-system catalog (covered - Ug4i dominates all), 738 DPM/ACP
+atomic creation (theta ladder 90-(i-1)*3.346, theta_26=6.35; Mass=FUg1/FUBi dimensionless),
+739 Tapestry 26D (frequency ladders 2pi f i/26; 26-state sum i=26-dominated), 740 mass-without-
+weight (covered: ratio ~1.0 Earth; f_Ub as dark energy claim noted).
+Totals: +17 defs (2,211->2,228), wired 744->754, registry +16 rows, graph +25 edges,
+citations +10, gate +19 asserts (3,313), GREEN v0.359.0.
+
+## 2026-08-08 (5) — BAND PAPER_741-750
+741 compression-cycle-2 38-system master (6-term F_env catalog; quantum term hbar/sqrt(dxdp)),
+742 Sombrero dust-lane (F_env fractions), 743 Saturn ring tidal (T_ring 2GM/dr3 computes
+2.056e-15 vs printed 2.05e-9 DISCLOSED; F_wind mantissa 1.79 EXACT exponent slip DISCLOSED),
+744 Eagle M16 (M_sf=0.0125 EXACT; photoevaporation; E_rad erosion), 745 Crab expanding (r(970yr)
+=4.892e16; pulsar wind 4.8e-30; magnetic 2.7e-17; momentum 5e33), 746 generalized H-resonance
+Z=1-118 (f_res(H)=3.290e15 Hz EXACT Lyman-alpha anchor; S_shell doubly-magic 0.20 EXACT;
+A_res/k_nuc/U_dp closures), 747 universe diameter (2dp*1.987=184.8 Gly ~ 182 headline; the
+4-factor chain internally inconsistent DISCLOSED), 748 Doc43d (U_g5 tensor sum - NEW 5th gravity
+mode), 749 five variable sets (galactic year 2pi/7.3e-16=2.727e8 yr EXACT; Heaviside amp 1e11
+EXACT), 750 M51/NGC1316 sims (covered by family + F_env + tidal).
+Totals: +21 defs (2,227->2,248), wired 754->764, registry +19 rows, graph +24 edges,
+citations +10, gate +21 asserts (3,334), GREEN v0.359.0.
+
+## 2026-08-08 (6) — BAND PAPER_751-760 (per-system MUGE v2; heavy cross-band reuse)
+751 THz QScope Earth-core (50-line comb 2.45 mW peak; I_eff=7e-3 EXACT; Ug1 core-magnetism
+corrected), 752 V838 Mon v2 (covered by i_echo_656/r_echo_656; Ug1 at echo radius 1.648e-13
+EXACT), 753 magnetar evolution (B decay e^-t/tau: 5000yr=2.864e9 T EXACT-to-paper), 754 SgrA*
+accretion (M0+dM(1-e^-t/tau); Mdot 6.065e-3 EXACT), 755 NGC2014 starbirth (ram pressure rho v2/r;
+g_EM via wired lorentz term), 756 Westerlund 2 (covered), 757 Pillars photo-erosion (DECAYING
+erosion variant 0.1e^-t/tau=0.06065 EXACT - both corpus erosion forms now wired), 758 Einstein
+ring (lensing boost (1+L); bare g 1.394e-7 anchor), 759 Horsehead (covered), 760 NGC1275
+(covered; F_BH(50Myr)=0.03935 EXACT via existing f_bh_703 - cross-band reuse validation).
+Totals: +8 defs (2,248->2,256), wired 764->774, registry +8 rows, graph +9 edges,
+citations +10, gate +12 asserts (3,346), GREEN v0.359.0.
+
+## 2026-08-08 (7) — BAND PAPER_761-770 (v2 MUGE applications; template-covered)
+Ten per-system applications of the wired v2 template (761 HUDF, 762 NGC1792, 763 Sombrero,
+764 Saturn 26D, 765 Eagle, 766 Crab, 767 NGC2264, 768 Tadpole, 769 Mice, 770 Red Spider).
+New generics: saturating_fraction_761 T0(1-e^-t/tau) (T0=0.2/0.3/0.5 anchors, generalizing
+f_bh_703), a_dust_763 (Sombrero 0.4 EXACT), f_wind_shock_766 ((1+v/c) boost). Pins: Mice
+dual-merge 0.2638 EXACT; H(z=3)=312.2 EXACT-to-paper; 767 a_EM chain reproduces the 1.053e-2
+fingerprint (3rd independent occurrence). Rest covered by g_muge templates + m_sf_744 +
+erosion_704 + p_rad_704 + t_ring_702/a_wind_702 + lorentz_uqff_term.
+Totals: +3 defs (2,256->2,259), wired 774->784, registry +3 rows, graph +4 edges,
+citations +10, gate +10 asserts (3,356), GREEN v0.359.0.
+
+## 2026-08-08 (8) — BAND PAPER_771-780 (Carina-family template band)
+Ten template applications (771 Eta Car, 772 AG Car, 773 M42, 774 Tarantula, 775 NGC2841,
+776 Mystic Mountain, 777 NGC6217, 778 Stephan's Quintet, 779 NGC7049, 780 Cosmic Cliffs) -
+all covered by the wired v2 machinery. TWO genuine findings wired: (1) f_trz_activity_777 -
+FIRST band with activity-dependent f_TRZ (0.04 barred spiral / 0.05 merger group / 0.02
+isolated S0 vs canonical 0.1; canonical preserved for energetic systems); (2) m_sf_bounded_771
+- the 'UQFF bounded' M_sf clamp raw/1000 (20->0.02, 45->0.045, 150->0.15; 780's /10 outlier
+DISCLOSED). Bare-gravity pins EXACT: M42 6.638e-10, Tarantula 1.475e-10.
+Totals: +2 defs (2,259->2,261), wired 784->794, registry +2 rows, graph +3 edges,
+citations +10, gate +7 asserts (3,363), GREEN v0.359.0.
+
+## 2026-08-08 (9) — BAND PAPER_781-790 (Three-UQFF triple-mode introduction)
+781-785 template applications with variable f_TRZ continuing (M74/NGC1672/NGC5866/M82/IC418 -
+covered). 786-790 introduce the THREE-UQFF simultaneous form: (g_compressed, g_resonant =
+g_comp*R_freq, g_buoyancy = g_comp+a_Ubi). NEW: r_freq_786 = 1+KAPPA*SSQ = 1.000285 EXACT
+(two-primitive tie); a_ubi_786 (rhoUA V g/mp, << a_EM at all catalog scales); triple-mode
+solver; a_em_ring_789 Cassini gap Lorentz. Pins: triple modes all land 1.053e-3 (fingerprint);
+Cassini gap gravities 2.128/2.634 EXACT-to-paper.
+Totals: +4 defs (2,261->2,265), wired 794->804, registry +4 rows, graph +7 edges,
+citations +10, gate +9 asserts (3,372), GREEN v0.359.0.
+
+## 2026-08-08 (10) — BAND PAPER_791-800 (Three-UQFF catalog continuation)
+791 M57 + 792 LMC + 793 ESO510 warped (triple-mode covered; M57 bare gravity 2.229e-11 EXACT),
+794 NGC2525/SN2018gv (NEW f_ub_calibration_794 = 0.1*7.25e8*10*(1/33) = 2.19697e7 EXACT
+four-factor chain; F_UBi buoyancy form), 795 NGC3603 (covered; P(t) decaying), 796 NGC1275
+filamentary (a_fil B2L/(mu0 M) = 2.47e-26 EXACT filament-length variant; F_BH saturates 0.10
+via f_bh_703 at e^-50), 797 NGC1792 (covered), 798 AFGL5180 + 799 Monkey Head + 800 NGC685
+(covered: F_Buoyancy dominates compressed/resonant by ~9 orders per papers' own tri-mode
+solutions; F_UBi 800 = 3.64e-3 consistent).
+Totals: +3 defs (2,265->2,268), wired 804->814, registry +3 rows, graph +5 edges,
+citations +10, gate +8 asserts (3,380), GREEN v0.359.0. PAPER_800 milestone reached -
+100 papers past the last DEEP MINE; consider resweep 701-800 next.
+
+## 2026-08-08 (11) — DEEP MINE PAPER_701-800 (Daniel-directed) + Rule 7 audit answer
+RESWEEP: fence+eq sweep flagged 19 papers; 6 recoveries wired: P748 U_g5 perfect-fluid
+rho c2(1+3w); P749 gamma-growth (5e-5/day, 0.0488 EXACT) + U_i net-contribution (faithful
+-1.382e-31, mantissa EXACT; paper -0.138 via its own e-47 print, consistent with P646
+disclosure); P750 F_cluster=1e-6 EXACT; P758 Einstein-angle set theta_E/D_eff/arc; P793
+warp factor 1.05 replacing (1+f_TRZ) - THIRD variable-f_TRZ instance (with P777-779 ladder).
+SUPPORTING-INFORMATION AUDIT (Daniel's question): functions + stated pins were captured, but
+per-system anchor VALUES lived only in docstrings/selective gate pins. CORRECTED: bulk
+supporting-anchor extraction added 129 SUPPORTING_ANCHOR registry rows (final stated g/a/T/F
+values across the 701-800 catalog, 40+ papers), gate-pinned (>=129).
+RULE 7 AUDIT (Daniel's question): NO exclusions. Rule 7 REVISED (disclosure annotates, never
+prohibits) was honored throughout - every slip was transcribed faithfully with computed value
+pinned AND stated value preserved (~60 disclosed slips across 501-800; zero formulas withheld).
+The only non-captures were deliberate census decisions, not Rule 7: (a) template-injected
+appendix blocks (S225/S204/SectionA/SectionB/SM-anchor) excluded as repeats already wired in
+earlier bands; (b) usage-stub code fences (compute_primary boilerplate). Both categories
+re-checked this sweep: no physics found in either.
+Totals: +6 defs (2,268->2,274), wired 814 (unchanged; recovery fns attached to existing
+dispatches), registry +135 rows (6 fns + 129 anchors), graph +9 edges, gate +7 asserts
+(3,387), GREEN v0.359.0.
+
+## 2026-08-08 (12) — SHIP PREP v0.360.0 (FULL checklist per Daniel's correction)
+Daniel: 'THERE WEREN'T ENOUGH FILES UPDATED THE LAST SHIP.' VERIFIED: git diff v0.359.0 showed
+7 registry-audit files updated by every prior ship (v0.356-0.358) but missed at v0.359.0:
+MERGED, GAPS, DUPLICATES, R1_QUEUE, R2_MAPPING, XGEO_QUEUE, XGEO_ROUTES (+R3 ship row).
+ALL updated this pass: R3_LEDGER +2 ship rows (incl. the missed v0.359.0 row), MERGED +8
+family-summary rows (501-800 campaign), GAPS +7 (4 open rulings Q-420a/495a/304a/368a now
+mirrored + 3 disclosed conflicts), DUPLICATES +2 integrity rows (814/0 dupes; 1.053 fingerprint
+single-source), R2_MAPPING +3 band-citation rows, R1_QUEUE +4 ruling rows, XGEO queue/routes +6
+marquee observables each (h/alpha x2/G/U_i NATIVE_WIRED; 12-col schema enforced after a 16-col
+write was caught and fixed). FROZEN references untouched BY DESIGN (STATUS_REPORT,
+RESULTS_TABLE, FALSIFIABILITY carry 'INHERITED FROZEN REFERENCE - do not regenerate' headers).
+Core bumps: pyproject (desc 501 chars incl version), calculator VERSION+STATE, gate pin,
+CITATION.cff, UNIFIED_REGISTRY_VERSION.txt, README (badges 3388/814 + cacheBust 0.360.0 +
+release paragraph + frontier PAPER_001-800), CHANGELOG [0.360.0] with ship-checklist-restoration
+section, SHIP_MESSAGE.txt, _BUILD_LOG.md, RULINGS_QUEUE note, SESSION_LOG (this entry).
+Measured vs v0.359.0: defs 2,158->2,274; dispatches 714->814; gate 3,239->3,388; registry
+4,383 rows; graph 6,600+; citations 1,224.

@@ -65,3 +65,10 @@ deep_capture_171_250,documented,"PAPER_178/188/189/191/192/193(partial)/194/195(
 deep_capture_251_300,documented,PAPER_252/254/256/257 = equivalence-class members (stated-pin capture); all display equations censused
 deep_capture_301_400,documented,301-350 full-census resweep complete (9 recoveries); 371-400 recombination papers census-confirmed covered by wired chains
 deep_capture_401_500,documented,PAPER_001-500 fully deep-captured; application bands cross-checked; FULL STOP milestone
+lambda_i_per_channel,open_ruling,Q-420a: lambda_i per-channel constraints (PAPER_420) - pending Daniel
+bulk_density_lineage,open_ruling,Q-495a: 9.47e-27 lineage tie (PAPER_495/2156) - pending Daniel
+headline_pair_304,open_ruling,Q-304a: PAPER_304 underived headline pair - pending Daniel
+k4_forty_order_fork,open_ruling,Q-368a: k4 40-order fork (PAPER_368) - pending Daniel
+e_dpm_table_736,disclosed_conflict,PAPER_736 table 1.669e-27 vs PAPER_737 chain arithmetic (737 wired)
+m_sf_bounding_780,disclosed_convention,P771-780 /1000 clamp vs P780 /10 outlier
+universe_diameter_chain,disclosed_conflict,PAPER_747 4-factor chain vs its own 182 Gly abstract (2dp*1.987 wired)

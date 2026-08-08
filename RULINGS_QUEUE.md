@@ -5856,3 +5856,5 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
 
 - 2026-08-07 NOTE (no ruling needed): audit sec.1 dispatch gap CLOSED — 172 sequential dispatches PAPER_329-500 wired; wired_count()=514; gate green. Milestone ruling (501+ authorization) still pending.
 - 2026-08-07 RULING RECEIVED: Daniel commanded 'NEXT BATCH' after PAPER_500 audit delivery + dispatch-gap closure => milestone ruling AFFIRMATIVE, papers 501+ authorized. FULL STOP lifted.
+
+- 2026-08-08 NOTE: v0.360.0 ship prep - full checklist restored per Daniel (v0.359.0 under-updated); 4 open rulings still pending (Q-420a, Q-495a, Q-304a, Q-368a) now also mirrored in UNIFIED_REGISTRY_GAPS.csv.

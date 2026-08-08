@@ -21,3 +21,7 @@ ssq_0755_decomposition,PAPER_094,FUTURE_TARGET,SSq = 0.755^2 - does 0.755 itself
 frontier_150,v0.353.0,ADOPT,deep-capture batches 111-150 complete,no,APPROVED (Daniel: NEXT BATCH x4)
 rule7_revised,2026-08-05,CANONIZED,"capture ALL data incl. back-solved implied params; disclosure annotates, never prohibits",no,RULED (Daniel: Rule 7 was supposed to be changed)
 full_census_rule,v0.358.0,CANONIZED,every display equation per paper censused; head-3 sweeps prohibited,no,RULED (Daniel: deep search directives)
+milestone_501_authorization,2026-08-07,CANONIZED,PAPER_500 FULL STOP lifted; 501+ authorized,no,RULED (Daniel: NEXT BATCH after audit delivery)
+muge_template_family,PAPER_701-800,ADOPT,charter template authorization applied: one parameterized family form + per-paper anchors,no,APPROVED (charter TEMPLATE AUTHORIZATION)
+variable_f_trz_capture,PAPER_777-793,ADOPT,activity-dependent f_TRZ (0.02-0.05) + warp 1.05 wired as paper content; canonical F_TRZ=0.1 preserved (Rule 2),no,captured-as-written
+supporting_anchor_bulk,2026-08-08,ADOPT,129 SUPPORTING_ANCHOR rows bulk-captured per Daniel supporting-information directive,no,RULED (Daniel: capture all supporting information)
