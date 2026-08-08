@@ -18,3 +18,4 @@ v0354_catches,confirmation,2 dup auto-catches (dpm_center_energy renamed earlier
 v0355_audit,confirmation,"deep-capture 171-250: 0 duplicate quantities across 3,488 registry rows; NO-SHADOW + banned-literal guards caught 1 docstring literal (fixed to RHO_SCM ref)"
 v0356_audit,confirmation,"deep-capture 251-300: 0 duplicate quantities across 3,560 rows"
 v0357_audit,confirmation,"deep-capture 301-400: 0 duplicate quantities across 3,678 rows; full-census resweep methodology validated"
+v0358_audit,confirmation,"deep-capture 401-500: 0 duplicates across 3,764 rows; double-census verified"

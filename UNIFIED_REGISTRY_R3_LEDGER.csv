@@ -110,3 +110,4 @@ open_ruling,s26_namespace,OPEN_RULING,eq32 1.5403e5 vs LENR 1.4531e26 - rename o
 v0.355.0,deep-capture 171-250,"+224 fns, +224 rows, +448 edges, gate 2484",
 v0.356.0,deep-capture 251-300,"+72 fns, +72 rows, +144 edges, gate 2551",
 v0.357.0,deep-capture 301-400,"+118 fns, +236 edges, gate 2665; 2 self-rectifications",
+v0.358.0,deep-capture 401-500 MILESTONE,"+86 fns, gate 2749; FULL STOP at PAPER_500",

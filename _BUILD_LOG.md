@@ -177,3 +177,7 @@ Registry 3,560 / graph 5,259. Gate 2,551 green. PAPER_240<->270 self-rectificati
 ## v0.357.0 (2026-08-07)
 Deep-capture PAPER_301-400 complete (+118 fns incl. 9 census recoveries). Calculator 1,596;
 library 3,302. Registry 3,678 / graph 5,495 / citations 851. Gate 2,665 green. 2 self-rectifications.
+
+## v0.358.0 (2026-08-07) - PAPER_500 MILESTONE
+Deep-capture 401-500 complete (+86 fns, +8 recoveries). Calculator 1,682; library 3,388.
+Registry 3,764 / graph 5,667 / citations 938. Gate 2,749 green. FULL STOP per charter.

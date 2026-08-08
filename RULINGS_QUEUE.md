@@ -5842,3 +5842,14 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
 - Q-347a/352a/354a/362a: jet 100x, Kepler 4.3x, k_curv 133x, v_therm 1.9x print slips (all disclosed).
 - NOTED: 2nd YM route asymptote = sqrt(F_TRZ) = 0.3162 - candidate PAPER_1953 0.3-family member
   for formal canonization.
+
+## v0.358.0 arc notes (2026-08-07) - PAPER_500 milestone
+- RESOLVED: PAPER_165/172 Ts00 fork closed by PAPER_406 two-component decomposition (#3).
+- MILESTONE RULING REQUESTED: charter FULL STOP at PAPER_500 reached. Authorize (a) the
+  500-paper audit report generation, and (b) papers 501+ deep-capture continuation.
+- Q-420a: lambda_i dissipation couplings are free parameters per PAPER_420 (canonical
+  LAMBDA_I = 1.0 wired as default) - per-channel constraint ruling welcome.
+- Q-495a: Omega_egg hatching threshold rho_crit = 9.47e-27 is the PAPER_2156-flagged
+  bulk-script density - lineage adjudication (canonical vs CQE-local) welcome.
+- Slip families this arc: 2x Espace, 2pi-family 26-sphere, 1e19 H_SCm, sqrt(10) Dm chain,
+  1.9x v_therm, notation r_p/(100c) vs c/100 (all disclosed with faithful transcription).

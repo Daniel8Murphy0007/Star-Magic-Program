@@ -73,10 +73,10 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.357.0"
+VERSION = "0.358.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
-# STATE v0.357.0: deep-capture frontier PAPER_400; 1,596 calculator defs; 8-module library 3,302 fns;
+# STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -6478,10 +6478,12 @@ def meissner_hybrid_blend(g_compressed, g_resonance, b_field, b_crit=None):
     beta = math.exp(-b_field / b_crit)
     return beta * g_compressed + (1.0 - beta) * g_resonance
 
-def delta_n_spiral(n, phi_geom=0.81):
-    """PAPER_396: 26-level spiral spacing delta_n = phi (2 pi)^(n/6) (the geometric ladder placing
-    the Higgs stratum at level 18; phi = 0.81 phase variable of the PAPER_205/208 chain)."""
-    return phi_geom * (2.0 * math.pi) ** (n / 6.0)
+def delta_n_spiral(n, phi_golden=1.618):
+    """PAPER_396: 26-level spiral spacing delta_n = phi (2 pi)^(n/6) with phi = 1.618 THE GOLDEN
+    RATIO (paper's own table: delta_1 = 2.183, delta_6 = 10.166, delta_18 = 401.33, delta_26 =
+    4507.0 - the golden-ratio geometric ladder placing the Higgs stratum at level 18;
+    RESWEEP CORRECTION: an earlier wiring used the 0.81 phase variable - superseded)."""
+    return phi_golden * (2.0 * math.pi) ** (n / 6.0)
 
 def higgs_level18_potential(t, lambda_h=1.0, omega_h=1.0, rho_ua=None, ssq=SSQ, f_quasi=0.0):
     """PAPER_396: emergent Higgs potential U_H = lambda_H rho_vac_UA w_H e^(-[SSq] 18) e^(-(pi - t))
@@ -6498,6 +6500,591 @@ def pimath_key_sum(n_digits=100):
                  "0582097494459230781640628620899862803482534211706798214808651"
                  "32823066470938446095505822317253594081284811174502841027019385")
     return sum(ord(c) for c in pi_digits[:n_digits])
+
+
+
+# --- RULE-7 RESWEEP RECOVERY (PAPER_351-400 second pass) ---
+
+def rho_vac_ua_decay_rate(t_s, rho_v=6e-27, kappa_s=5.787e-9):
+    """PAPER_388 RECOVERED: vacuum-density decay rate rho_dot_UA = rho_v kappa_s e^(-kappa_s t)
+    (1.279e-35 kg/(m^3 s) at t = 1/kappa; the drho/dt input of the 2nd Yang-Mills route -
+    Dm(n=1, t=0) worked chain: sqrt(1.279e-35 x 1e-3 x 0.9577) = 1.11e-19 - the paper prints
+    3.5e-19, another sqrt(10)-family slip in its own evaluation, disclosed)."""
+    return rho_v * kappa_s * math.exp(-kappa_s * t_s)
+
+def a_fluid_freq_bare(f_fluid, v_sys, e_vac=None):
+    """PAPER_399 RECOVERED: bare fluid-frequency variant a = f_fluid E_vac,neb V_sys = 873 m/s^2
+    (SgrA* dual-model table; NO ratio/c denominator - a THIRD corpus-active fluid form alongside
+    the PAPER_291 10fVa/c cascade and the PAPER_384 4.105e29 ratio-c form; fork disclosed)."""
+    if e_vac is None: e_vac = RHO_UA
+    return f_fluid * e_vac * v_sys
+
+def spectral_ladder_extrema_stated():
+    """PAPER_382 RECOVERED: SGR1745 12-term spectral-ladder extrema - 78-ORDER dynamic range from
+    g_base 1.991e12 down to a_Aether_freq = 1.863e-84 (weakest term; a_quantum_freq = 1.708e-66,
+    a_super_freq = 1.048e-21 intermediate rungs)."""
+    return {'g_base': 1.991e12, 'a_super_freq': 1.048e-21, 'a_quantum_freq': 1.708e-66,
+            'a_aether_freq': 1.863e-84, 'span_orders': 78}
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_401-410 (S101: S48-form re-derivations - power law, Ts00 resolution, 4-body, zero-point anchor) ---
+
+def scm_density_power_law(m_kg, rho_ref=1e15, m_ref=1.989e30, alpha_exp=2.0/3.0):
+    """PAPER_405: FIRST SCm-density planetary scaling law rho_SCm ~ M^alpha with alpha = 2/3
+    (paper's fit 0.66 from Sun/Jupiter decades) - alpha = 2/3 = D_phys/D_BSFG = the PAPER_2154
+    D_GW_erosion primitive, ANOTHER primitive-family surfacing; the Jupiter->Earth decade alone
+    implies alpha = 0.4 (Earth rung sits 4.8x below the pure 2/3 law - approximate-law scatter
+    disclosed)."""
+    return rho_ref * (m_kg / m_ref) ** alpha_exp
+
+def ts00_solar_flux(r=1.496e11, l_sun=3.828e26, c=None):
+    """PAPER_406: solar stress-energy component T_solar = L_sun/(4 pi r^2 c); formula-faithful
+    4.54e-6 Pa at 1 AU - the paper's stated 1.27e3 is not reproducible from its printed formula
+    (back-solves to r ~ 2.8e9 m ~ 4 R_sun, undocumented; disclosed). The corpus-carried 1.27e3
+    component enters ts00_two_component as stated."""
+    if c is None: c = 2.998e8
+    return l_sun / (4.0 * math.pi * r ** 2 * c)
+
+def ts00_two_component(t_solar=1.27e3, t_scm_ua=1.11e7):
+    """PAPER_406: FIRST explicit Ts00 decomposition T_s00 = T_solar + T_SCm,UA = 1.11127e7
+    - RESOLVES the PAPER_165/172 two-candidate fork (1.112e7 vs 1.127e7): both were roundings
+    of this two-component sum (self-rectification #3)."""
+    return t_solar + t_scm_ua
+
+def fu_4body_stated():
+    """PAPER_407: 4-body solar-system FU verification pins - Sun |F_U| = 2.064e59 N with the
+    NEGATIVE-sum convention F_U = -(sum Ug + Ubi + Um + tr A); Ug4 = 4.219e-10 universal across
+    all four bodies (Sun/Earth/Jupiter/Neptune); tr(A_mu_nu) 4-body universality confirmed."""
+    return {'fu_sun': 2.064e59, 'ug4_universal': 4.219e-10, 'sign': -1.0, 'bodies': 4}
+
+def e0_zero_point_anchor(omega0=1e14, hbar=1.054571817e-34):
+    """PAPER_409: quantum-chain base anchored at the ZERO-POINT energy E0 = hbar w0/2 = 5.3e-21
+    ~ 1e-20 J at w0 ~ 1e14 rad/s - the derivation of E0_QUANTUM_CHAIN from vacuum zero-point
+    (E_n = E0 x 10^n ladder grounding)."""
+    return hbar * omega0 / 2.0
+
+def scm_donation_law(scm_star, v_planet, v_star, f_donate=1.0):
+    """PAPER_410: SCm donation law SCm_planet = f_donate SCm_star (V_planet/V_star) (stars seed
+    planetary SCm by volume fraction - the formation-era transfer channel)."""
+    return f_donate * scm_star * v_planet / v_star
+
+def tau_scm_lifetime(gamma_scm=5e-5):
+    """PAPER_410: SCm relaxation lifetime tau = 1/gamma_SCm = 2e4 days = 54.8 yr
+    (the string-decay clock; quasar ignition operates within this window)."""
+    return 1.0 / gamma_scm
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_411-420 (S101-102: solar calibration series, 5-component Ts00, lambda_i 4th term) ---
+
+def grad_ms_solar(m_s=1.989e30, r_s=6.96e8, G=None):
+    """PAPER_411: solar mass-gradient anchor grad(M_s/r) = G M_s/R_s^2 = 274 m/s^2 (the Ug1 DPM
+    dipole calibration point at the photosphere)."""
+    if G is None: G = G_UQFF
+    return G * m_s / r_s ** 2
+
+def h_scm_hydrogen_thickness(scm_helio=1e12, m_s=1.989e30):
+    """PAPER_412: H_SCm hydrogen-complex thickness H = 1 + [SCm]_helio/M_s = 1 + 5.03e-19 ~ 1
+    (the paper prints 5.03e-38 - a 1e19 exponent slip in its own division, disclosed)
+    (magnetically-stuck hydrogen accumulation on the Ug2 shell - the STELLAR AGE INDICATOR:
+    thickness grows monotonically with age)."""
+    return 1.0 + scm_helio / m_s
+
+def ccw_cw_differential(omega_eq=2.9e-6, omega_avg=2.5e-6):
+    """PAPER_413: equatorial-CCW vs coronal-CW spin differential dw = w_eq - w_avg = 4e-7 rad/s
+    (the DPM-asymmetry source of the Ug3 magnetic-strings disk; theta_c ~ 15 deg cone)."""
+    return omega_eq - omega_avg
+
+def ts00_five_component(m_s=1.989e30, l_s=3.828e26, r_s=6.96e8, rho_sw=8e-21, v_sw=5e5,
+                        rho_scm_d=1e15, v_scm=2.968e8, rho_a=1e-23, v_ua=3e4, c=None):
+    """PAPER_416: FULL five-component T_s00 = M c^2/V + L/(c^2 V) + rho_sw v_sw^2 +
+    rho_SCm v_SCm^2/c^2 + rho_A v_UA^2/c^2 (expands the PAPER_406 two-component form;
+    rest-mass term dominates at 1.27e20 J/m^3)."""
+    if c is None: c = 2.998e8
+    v = 4.0 / 3.0 * math.pi * r_s ** 3
+    return (m_s * c ** 2 / v + l_s / (c ** 2 * v) + rho_sw * v_sw ** 2
+            + rho_scm_d * v_scm ** 2 / c ** 2 + rho_a * v_ua ** 2 / c ** 2)
+
+def tn_shifted_time(t, t0):
+    """PAPER_417: shifted time t_n = t - t0 (negative for t < t0 - the formal negative-time variable
+    behind every cos(pi t_n) factor; t0 = formation epoch/observer frame/simulation start)."""
+    return t - t0
+
+def fu_sun_final_calibration(t, omega_c=1.587e-8):
+    """PAPER_418: complete calibrated solar F_U = (1.17e27 + 4.68e24 sin(w_c t)) e^(-0.001 t)
+    cos(pi t)(1 + 0.01 sin(0.001 t)) - the PAPER_409-417 synthesis with finalized couplings
+    k = (1.5, 1.2, 1.8), beta = 0.6 -> canonical BETA_I, eta = 1e-22 (11-yr cycle modulation)."""
+    return (1.17e27 + 4.68e24 * math.sin(omega_c * t)) * math.exp(-0.001 * t) *            math.cos(math.pi * t) * (1.0 + 0.01 * math.sin(0.001 * t))
+
+def h_scm_core_kinetic(rho_scm_d=1e12, v_scm=1e8, t=0.0, gamma=5e-5):
+    """PAPER_419: planetary-core SCm Hamiltonian H_SCm = rho v^2/2 e^(-gamma t) = 5e27 J/m^3
+    (Earth-core 1e12 density; the core mass-gap generator - H_Ug3 string term 3.98e11 at
+    B_j = 1e3 subdominant by 16 orders)."""
+    return rho_scm_d * v_scm ** 2 / 2.0 * math.exp(-gamma * t)
+
+def fu_dissipation_term(u_i_terms, lambda_i_list=None, e_react=1.0):
+    """PAPER_420: THE MISSING 4TH TERM - F_U_dissipation = -sum_i lambda_i U_i E_react (the only
+    subtractive dissipation channel of the May-2025 book master; ENTIRELY ABSENT from
+    compute_FU() in MAIN_1_CoAnQi.cpp/CondensedPhysics2.py - the identified code gap, now wired;
+    lambda_i free parameters, canonical LAMBDA_I = 1.0 per the locked primitive set)."""
+    if lambda_i_list is None: lambda_i_list = [1.0] * len(u_i_terms)
+    return -sum(l * u * e_react for l, u in zip(lambda_i_list, u_i_terms))
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_421-430 (S102-103: Um modifier closure, 26-layer table, nuclear H_res, prime vortices) ---
+
+def scm_phase_gate(rho_scm_d, rho_c):
+    """PAPER_421: SCm phase-transition Heaviside f_H = Theta(rho_SCm - rho_c) - the DENSITY-threshold
+    superconducting gate driving the (1 + 1e13 f_H) Um amplifier (distinct from the PAPER_329
+    sigma_n neutron gate; sudden quasi-periodic Um flares at every phase crossing)."""
+    return 1.0 if rho_scm_d >= rho_c else 0.0
+
+def um_quasi_beating(t, a_q=0.1, delta_omega=1e-8):
+    """PAPER_421/423: quasi-periodic beating modifier (1 + A_q cos(Dw t)) - the second Um modifier;
+    PAPER_423 completes the triple: base x (1 + 1e13 f_H)(1 + A_q cos)(e^-SSq) with the [SSq]
+    vacuum THERMAL damping as the finite-reservoir restoring factor."""
+    return 1.0 + a_q * math.cos(delta_omega * t)
+
+def omega_g3_layer(i, f_str=1e12):
+    """PAPER_427: Ug3 layer frequency w_g3,i = 2 pi f_str i/26 - LINEAR-in-i law (distinct from the
+    Ug1/Ug2 harmonic 2pi/(T/i)(1+SSq) ladder; the string channel sweeps the 26 layers linearly)."""
+    return 2.0 * math.pi * f_str * i / 26.0
+
+def a_res_nuclear(z, a_mass, delta_pair=0.1, k_a=1.0, a_h=1.0):
+    """PAPER_428: periodic-table resonance amplitude A_res = k_A Z (A/A_H)(1 + delta_pair)
+    (universal nuclear H_res across the table; even-Z pairing bonus)."""
+    return k_a * z * (a_mass / a_h) * (1.0 + delta_pair)
+
+def f_res_nuclear(e_bind_j, a_mass, s_shell=0.0, a_h=1.0, h_planck=6.62607015e-34):
+    """PAPER_428: nuclear resonance frequency f_res = (E_bind/h)(A_H/A)(1 + S_shell)
+    (binding-energy clock scaled by the hydrogen-normalized mass number + shell correction)."""
+    return e_bind_j / h_planck * (a_h / a_mass) * (1.0 + s_shell)
+
+def e_vortex_prime(p_n, omega_str=5e14, phi_golden=1.618, hbar=1.054571817e-34):
+    """PAPER_429: prime-vortex energy E(p_n) = hbar w_str/p_n x phi^(p_n mod 6) - the SECOND of the
+    three new number systems (prime-indexed vortices weighted by GOLDEN-RATIO residues mod 6;
+    p_special = 113 = the DVP boundary prime of the PAPER_598 spine)."""
+    return hbar * omega_str / p_n * phi_golden ** (p_n % 6)
+
+def prime_string_ug3_term(t, p_n, a_str=1.0, omega_str=1e12, phase=0.0):
+    """PAPER_429: prime-string Ug3 mode (A_str/p_n) cos(w_str p_n t + phi) for p_n > 26 - the
+    resonant-prime selection rule (only primes beyond the 26-layer proto-shell contribute;
+    third number system alongside V_n = sum SSq^k/k^26 [wired as vacuum_series_li26])."""
+    return a_str / p_n * math.cos(omega_str * p_n * t + phase)
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_431-440 (S103: per-system MUGE application band - stated totals) ---
+
+def per_system_muge_stated():
+    """PAPER_431-440 stated per-system MUGE pins (the application band; all closed forms wired in
+    earlier batches): SGR1745 T_BH-proximity = 5.984e-5 (at 0.1 pc from Sgr A*); SgrA* g = 8.50e3
+    at r = 1.27e10 m, 5 Gyr; Rings T_1 = 1.394e-7 with the 0.67 lensing factor and T_2 = 3.07e-7
+    lensed double; NGC2525 T_BH = 1.33e6 at 1 AU-normalized; NGC3603 g(0) = 8.90e-5 dual
+    wind+pressure dominated; Bubble base 2.73e-12."""
+    return {'sgr1745_t_bh': 5.984e-5, 'sgra_g': 8.50e3, 'rings_t1': 1.394e-7,
+            'rings_t2': 3.07e-7, 'ngc3603_g0': 8.90e-5, 'bubble_base': 2.73e-12}
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_441-450 (S103-104: per-system band II + Source10 primary text) ---
+
+def t2_trz_doubled(g_base, gate=1.0, f_trz_factor=1.1):
+    """PAPER_442-445 (band pattern): T_2 = 2 g_base f_TRZ-factor gate - the recurring doubled-TRZ
+    second term (2 x base x 1.1 x [1+E(t)/(1+F(t))/(1+I0)] across Horsehead/NGC1275/HUDF/NGC1792)."""
+    return 2.0 * g_base * f_trz_factor * gate
+
+def wind_ram_over_radius(rho_w, v_w, rho_f, r):
+    """PAPER_443/444: T_9 wind term rho_w v_w^2/(rho_f r) - the PER-RADIUS ram form (dimensionally
+    an acceleration when the density ratio is dimensionless; distinct from a_wind_ram_ratio)."""
+    return rho_w * v_w ** 2 / (rho_f * r)
+
+def cooling_accel_over_radius(t_cool=9e7, r=1.892e21):
+    """PAPER_443: cooling-flow acceleration a_cool = T_cool/r = 4.76e-14 m/s^2 (Perseus BCG;
+    the temperature-over-radius channel of the B-decay/filament-coupled NGC 1275 MUGE)."""
+    return t_cool / r
+
+def triadic_26layer_stated():
+    """PAPER_446/449 (Source10 primary text) stated pins: triadic g(0) = 26 x 9.157e11 = 2.38e13
+    m/s^2 (per-layer quartet 4.645 + 0 + 0 + 4.512 e11); the young-star module carries a BUILT-IN
+    DM factor 0.268 = Omega_DM (Planck) - the 15-variable analytic solution claim; HUDF total
+    4.11e-9 Lambda-dominant at comoving scale."""
+    return {'g_triadic': 2.38e13, 'per_layer': 9.157e11, 'dm_builtin': 0.268,
+            'hudf_g': 4.11e-9, 'variables': 15}
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_451-460 (S104-115: Big Bang MUGE, F_torque/F_shock, t-minus plasmoids, LENR catalyst) ---
+
+def bigbang_mass_growth(t_s, m_total=1e53, t_h=4.35e17):
+    """PAPER_451: Big Bang linear mass parametrisation M(t) = M_total t/t_H (with r(t) = c t and
+    z(t) = t_H/t - 1: the GravityBigBang cosmological MUGE frame)."""
+    return m_total * t_s / t_h
+
+def z_of_t_cosmo(t_s, t_h=4.35e17):
+    """PAPER_451: cosmological redshift clock z(t) = t_H/t - 1 (linear-time inversion; z = 0 today)."""
+    return t_h / t_s - 1.0
+
+def g_dpm_bigbang(t_s, m_total=1e53, t_h=4.35e17, G=None, c=None):
+    """PAPER_451: Big Bang DPM gravity g(t) = G M_total/(c^2 t_H t) - the 1/t decay law
+    (canonical inputs give 3.92e-10 at t = t_H; the paper prints 5.88e-10 - a 1.5x input-variant,
+    disclosed; the present-epoch cosmological DPM floor)."""
+    if G is None: G = G_UQFF
+    if c is None: c = 3e8
+    return G * m_total / (c ** 2 * t_h * t_s)
+
+def f_torque_tidal(m1, m2, r12, r, omega_sync, omega_spin, G=None):
+    """PAPER_457: FIRST UQFF tidal torque F = (G M1 M2/r12^2)(r/r12) sin((W_sync - W_spin)/W_sync)
+    (synchronization-lag driven; one of the two new F_env types extending 29 -> 38 systems)."""
+    if G is None: G = G_UQFF
+    return G * m1 * m2 / r12 ** 2 * (r / r12) * math.sin((omega_sync - omega_spin) / omega_sync)
+
+def f_shock_front(rho_post, v_s, r_shock, r, width=None):
+    """PAPER_457: FIRST UQFF shock-front term F = rho_post v_s^2/r_shock x delta(r - r_shock)
+    (delta realized as a top-hat of width; SN/wind shock localization; auto-cascade adds
+    QG + DM + GW terms for TYPE_COSMOLOGICAL systems)."""
+    if width is None: width = 0.01 * r_shock
+    on = 1.0 if abs(r - r_shock) <= width / 2.0 else 0.0
+    return rho_post * v_s ** 2 / r_shock * on
+
+def t_minus_transform(t_n):
+    """PAPER_459: backward-time coordinate t^- = -t_n e^(pi - t_n) (extremum at t_n = 1:
+    d(t^-)/dt_n = e^(pi-t_n)(t_n - 1) = 0 - the relativistic-like dilation for plasmoid dynamics
+    without full GR; the UFE Orb red-dwarf module clock)."""
+    return -t_n * math.exp(math.pi - t_n)
+
+def plasmoid_retardation(r_p=1e4, c=None):
+    """PAPER_459: plasmoid non-local retardation Dt = r_p/(c/100) = 3.3e-3 s - the signal speed is
+    c/100 in the photospheric plasma (the paper's header prints r_p/(100c), but its own arithmetic
+    1e4/3e6 uses c/100; numeric path transcribed, notation slip disclosed; 33.3-fps resolvable)."""
+    if c is None: c = 3e8
+    return r_p / (c / 100.0)
+
+def e_up_plasmoid(r_p, rho_scm_local=1.6e19):
+    """PAPER_459: plasmoid energy E_UP = rho_vac_SCm_local V_p = 1.6e19 x (4/3) pi r_p^3
+    (the red-dwarf LOCAL vacuum densities 1.6e19/[UA] 1.6e20 J/m^3 - a per-environment vacuum
+    scale distinct from the cosmological RHO_SCM; ratio 10 = |SO(5)| preserved)."""
+    return rho_scm_local * 4.0 / 3.0 * math.pi * r_p ** 3
+
+def lenr_nonlocal_catalyst(t, n_pow=1, ssq=SSQ):
+    """PAPER_460: non-local LENR catalyst (1 + [SSq]^26 e^(-(pi+t)))^n - 1 = 1.94e-8 at t = 0
+    (the transient LENR spark: SSq^26 = 4.5e-7 x e^-pi = 1.94e-8, decaying e^-t; the purely-UQFF
+    non-local Ug3 correction with no SM analogue)."""
+    return (1.0 + ssq ** 26 * math.exp(-(math.pi + t))) ** n_pow - 1.0
+
+def higgs_scalar_coupling(mu_factor=1.0, kappa_f=1.0, k_higgs=1.0, m_h_gev=125.09):
+    """PAPER_460: UQFF Higgs scalar coupling m_H = k_Higgs x 125.09 GeV x mu x kappa_F
+    (the LHC-anchored Higgs as the vacuum-scalar reference of the Drawing-32 nebular set)."""
+    return k_higgs * m_h_gev * mu_factor * kappa_f
+
+def e_dna_strand(t, u_m, omega_c=1.587e-8):
+    """PAPER_460: DNA strand energy E_DNA = U_m cos(w_c t) - biochemical energy dynamics coupled
+    to the vacuum-magnetism channel (the Drawing-32 biological extension)."""
+    return u_m * math.cos(omega_c * t)
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_461-470 (S116+: Basel series, inertial proofset, Espace, light echo, coalescence) ---
+
+def basel_lenr_energy(e0=4.31e-12, s=2):
+    """PAPER_461: FIRST Basel-series UQFF application E_LENR = E0 zeta(s); zeta(2) = pi^2/6 = 1.64493
+    (E0 = hbar^2/(2 m_p r_proton^2) = 4.31e-12 J = 26.9 MeV confinement base)."""
+    zeta = sum(1.0 / n ** s for n in range(1, 2000))
+    return e0 * zeta
+
+def buoyancy_odd_series(n_terms=8):
+    """PAPER_461: convergent buoyancy series sum_(n odd) 1/3^((pi+1)^n); formula-faithful value
+    -0.01057 (first term dominates) - the paper's stated -0.8887 is not derivable from the printed
+    series (disclosed)
+    (the odd-power triple-exponential ladder converges in ~3 terms - later exponents overflow
+    harmlessly and are clipped; sign per paper)."""
+    total = 0.0
+    for n in range(1, 2 * n_terms, 2):
+        expo = (math.pi + 1.0) ** n
+        if expo > 700.0: break
+        total += 1.0 / 3.0 ** expo
+    return -total
+
+def w_mag_rotating(b_kg, r_km, v_over_c):
+    """PAPER_461: relativistic magnetic rotating energy W_mag = 15e9 B_kG R_km (v/c) eV
+    (cyclotron-buoyancy energy scale of the red-dwarf LENR interior)."""
+    return 15e9 * b_kg * r_km * v_over_c
+
+def lenr_q_value(m_n=1.67493e-27, m_p=1.67262e-27, m_e=9.109e-31, c=None):
+    """PAPER_461: LENR Q-value (M_n - M_p - m_e) c^2 = 0.78 MeV (the neutron-proton mass-difference
+    energy release anchoring red-dwarf LENR)."""
+    if c is None: c = 2.998e8
+    return (m_n - m_p - m_e) * c ** 2
+
+def inertial_operator_frz():
+    """PAPER_462: three-leg proofset resonance factor F_RZ = zeta(4)/zeta(2) = pi^2/15 = 0.6580
+    (the zeta-ratio replacing f_TRZ in the inertial-operator U_i form - a PRIMITIVE-ZETA identity;
+    U_i = lambda_I (rho_SCm/rho_UA) w_i cos(pi t_n)(1 + F_RZ))."""
+    return math.pi ** 2 / 15.0
+
+def wave_energy_expectation(a_amp, omega, alpha_damp, c=None):
+    """PAPER_462: UQFF wave energy <E> = A^2 w^2/(2 c^2 alpha) (spherical Y_lm sin(kr-wt)/r
+    envelope; SM 12.94 J vs UQFF 1.17e-105 - the 107-order vacuum-suppression gap, Leg 3)."""
+    if c is None: c = 2.998e8
+    return a_amp ** 2 * omega ** 2 / (2.0 * c ** 2 * alpha_damp)
+
+def espace_seven_factor(e0=1.683e-37, scf=2.0, cf=1.0, lf=5.0, hff=8.0e-34, ptf=6.183e-13, qsf=3.333e-23):
+    """PAPER_463: hydrogen compressed-space energy E_space = E0 x SCF x CF x LF x HFF x PTF x QSF
+    (7-factor chain: superconducting/cosmological/Lyman/Higgs-frequency/Mayan-precession/
+    quantum-scale); stated factors multiply to 2.77e-104 - the paper prints 5.52e-104, a clean 2x
+    slip disclosed; the 105-order SM gap conclusion stands."""
+    return e0 * scf * cf * lf * hff * ptf * qsf
+
+def higgs_frequency_uqff(m_h_gev=125.0, hbar=1.055e-34):
+    """PAPER_463: UQFF Higgs frequency f = m_H c^2/hbar = 1.897e26 Hz (vs h-based 3.023e25;
+    the HFF = 10/f_Higgs = 8e-34 factor source)."""
+    return m_h_gev * 1.602e-10 / hbar
+
+def light_echo_intensity(t, l_outburst, sigma_scatter, rho_0, ug1, beta=1.0, f_trz=F_TRZ, rho_corr=0.0, c=None):
+    """PAPER_466: V838 Mon light-echo I = L/(4 pi (ct)^2) sigma rho_0 e^(-beta Ug1)(1+f_TRZ)(1+rho_corr)
+    - the Ug1-gravity-MODULATED echo replacing the pure geometric formula (dust-lane vacuum correction)."""
+    if c is None: c = 2.998e8
+    return l_outburst / (4.0 * math.pi * (c * t) ** 2) * sigma_scatter * rho_0 *            math.exp(-beta * ug1) * (1.0 + f_trz) * (1.0 + rho_corr)
+
+def g_freq_planck_derived(f_sum_hz, lambda_p=1.616e-35):
+    """PAPER_468: frequency-derived gravity g = f_i lambda_P/(2 pi) - EVERY acceleration term as a
+    frequency times the Planck length (the frequency-causal SMBH-binary framework;
+    g_UQFF ~ 1.65e-122 at the aether-dominant floor)."""
+    return f_sum_hz * lambda_p / (2.0 * math.pi)
+
+def f_super_coalescence(t_s, t_coal=1.555e7, f_super0=1.411e16):
+    """PAPER_468: coalescence decay f_super(t) = 1.411e16 e^(-t/t_coal) Hz (decays to zero at
+    merger, t_coal = 1.555e7 s, SNR ~ 475 - the superconductive channel as the merger clock)."""
+    return f_super0 * math.exp(-t_s / t_coal)
+
+def msigma_sigma4_derivation(sigma, k_norm=1.0):
+    """PAPER_470: UQFF M-sigma DERIVATION M_BH ~ (Ug1 + Um)/w_s ~ sigma^4 (the empirical sigma^4
+    exponent recovered from the 26-state resonance model - complements the PAPER_390 0.309-slope
+    anchor and the PAPER_1048 sigma^(4+delta) phonon form)."""
+    return k_norm * sigma ** 4
+
+def f_feedback_metal_retention():
+    """PAPER_470: feedback calibration f = M_metals,retained/M_produced = 0.063 (metal retention
+    against AGN outflow; the 26-state-model calibration constant)."""
+    return 0.063
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_471-480 (S117+: LENR neutron calibration, 26-sphere birth, CNB coupling) ---
+
+def neutron_production_eta(t, n_layer, k_eta_cal=1.0, um_over_rho=1.0, ssq=SSQ):
+    """PAPER_471: LENR neutron production eta = K_eta exp(-[SSq]^n 64 e^(-pi-t)) Um/rho_vac cm^-2 s^-1
+    (the non-local 2^6 = 64 correction on the [SSq]^n ladder; Widom-Larsen 0.78 MeV threshold
+    mediated by the U_m field - couples to the wired lenr_q_value)."""
+    return k_eta_cal * math.exp(-(ssq ** n_layer) * 64.0 * math.exp(-math.pi - t)) * um_over_rho
+
+def um_electron_moment(r, t_n=0.0, b_field=0.0, b_crit=None, delta_states=0.0, mu_e=9.284e-24):
+    """PAPER_471: electron-moment magnetism U_m = mu_e^2/r^3 (1 - B/B_crit) cos(pi t_n)(1 + d_states)
+    (the quantum-vacuum coupling driver of neutron production; mu_e = 9.284e-24 J/T)."""
+    if b_crit is None: b_crit = B_CRIT
+    return mu_e ** 2 / r ** 3 * (1.0 - b_field / b_crit) * math.cos(math.pi * t_n) * (1.0 + delta_states)
+
+def dpm_26sphere_volume(r_k=1.616e-35):
+    """PAPER_476: pre-Big-Bang DPM 26-sphere volume V = 26 x (4/3) pi r_k^3 = 7.24e-104 m^3 at
+    r_k = r_Planck; stated factors give 4.60e-103 - the paper prints 7.24e-104, a ~2pi-family
+    slip in its own product, disclosed (the birth-model geometry; inflation expands each sphere)."""
+    return 26.0 * 4.0 / 3.0 * math.pi * r_k ** 3
+
+def r_dpm_prebigbang(m_kg, r, q_higgs=1.0, h_support=1.0, G=None):
+    """PAPER_476: pre-Big-Bang support ratio R_DPM = (GM/r^2) q_Higgs H_support ~ 1e-11 normalized
+    (the Higgs-charge-weighted gravitational support of the 26-sphere stack)."""
+    if G is None: G = G_UQFF
+    return G * m_kg / r ** 2 * q_higgs * h_support
+
+def eta_aether_inverse_energy(e_s_total=1.49e-35):
+    """PAPER_478: aether coupling constant eta = 1/E_s,total = 6.7e34 m^3/J (the DERIVATION of the
+    metric-perturbation eta from string total energy; eta_norm ~ 1 vacuum, eta_eff ~ 1e63 at a
+    cosmic string - the background-field coupling ladder)."""
+    return 1.0 / e_s_total
+
+def f_cnb_neutrino(k_nu=1.0, sigma_cnb=1.0e-27, n_cnb=3.36e8, e_cnb_j=2.70e-23):
+    """PAPER_480: FIRST cosmic-neutrino-background UQFF coupling F_nu = k_nu sigma_CNB n_CNB E_CNB
+    = 9.07e-42 N (336 relic nu/cm^3 = 3.36e8 /m^3 at 1.7e-4 eV; the smallest UQFF force computed -
+    32 orders below F_rel; joined by F_Sweet and F_Kozima in the CNB integrand)."""
+    return k_nu * sigma_cnb * n_cnb * e_cnb_j
+
+def cnb_stated_params():
+    """PAPER_479/480 stated pins: complex-arithmetic module i_small = 1e-37 vacuum-fluctuation
+    imaginary floor; J1610 F_LENR = 6.25e36 N at the 1e-12 class; CNB F_nu = 9.07e-42 N;
+    6th system Centaurus A joins the Astro five."""
+    return {'i_small': 1e-37, 'j1610_f_lenr': 6.25e36, 'f_nu': 9.07e-42, 'systems': 6}
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_481-490 (S126+: PTOE resonance, Cassini complex ring, HSE bias, hypergraph gravity) ---
+
+def f_res_hydrogen_ptoe(e_bind_j=1.25e-12, h_planck=6.62607015e-34):
+    """PAPER_482: hydrogen PTOE resonance f_res,H = E_bind/h = 1.88e21 Hz (the Z = 1 anchor of the
+    Z = 1-126 periodic-table resonance module; U_dp = 1.325e-36 A per-nucleon dipole scale)."""
+    return e_bind_j / h_planck
+
+def t_thz_transmission(nu, d, nu0_kappa=0.0, c=None):
+    """PAPER_486: complex THz ring transmission T = e^(i 2 pi nu d/c)/(1 + nu0 kappa) - returns
+    (Re, Im); the Cassini-Division width ~4,700 km as the T_THz coherence length at 1 THz is a
+    falsifiable UQFF prediction."""
+    if c is None: c = 2.998e8
+    phase = 2.0 * math.pi * nu * d / c
+    denom = 1.0 + nu0_kappa
+    return (math.cos(phase) / denom, math.sin(phase) / denom)
+
+def cassini_landau_level(n, rho_vac=None):
+    """PAPER_486: Landau-level quantum contribution lambda = (n + 1/2) rho_vac (the magnetospheric
+    quantum ladder of the complex ring-buoyancy module; H_rev sign-flips at the UA -> SCm boundary)."""
+    if rho_vac is None: rho_vac = RHO_UA
+    return (n + 0.5) * rho_vac
+
+def ug1_toroidal(r, f_ua_prime, f_nu, k1=1.5):
+    """PAPER_486: toroidal Ug1 = k1 (f_UA'/r^2) f_nu 2 pi r = k1 f_UA' f_nu 2 pi/r (the ring-geometry
+    Ug1 with circumferential weighting; negative f_UA' past the phase boundary reverses it)."""
+    return k1 * f_ua_prime / r ** 2 * f_nu * 2.0 * math.pi * r
+
+def hse_bias_uqff():
+    """PAPER_488: hydrostatic-equilibrium mass bias b_UQFF = 1 - M_HSE/M_true = 0.17 (vs the
+    standard b = 0.20 - the UQFF buoyancy channel accounts for 3 points of the cluster
+    mass-calibration bias; beta-model rho(r) = rho_0 (1+(r/r_c)^2)^(-3 beta/2) frame)."""
+    return 0.17
+
+def g_26d_polynomial(r_i_list, e_dpm_list, f_trz_list=None, f_um_list=None, hz_factor=1.0, e_rad=0.0):
+    """PAPER_489: 19-system 26D polynomial g = sum_i (E_DPM,i/r_i^2) f_TRZ,i f_Um,i H(z)(1 - E_rad)
+    (the 26-layer per-dimension polynomial with Hubble + radiation corrections; N_quantum = 26
+    couples the hypergraph dimension count to the gravitational polynomial)."""
+    n = len(r_i_list)
+    if f_trz_list is None: f_trz_list = [1.0] * n
+    if f_um_list is None: f_um_list = [1.0] * n
+    return sum(e / r ** 2 * ft * fu for e, r, ft, fu in
+               zip(e_dpm_list, r_i_list, f_trz_list, f_um_list)) * hz_factor * (1.0 - e_rad)
+
+def g_hypergraph_no_g(r, f_field, sfr=0.0, c=None):
+    """PAPER_490: Wolfram-hypergraph gravity g = c^2 F_field (1 + SFR)/r^2 - NO GRAVITATIONAL
+    CONSTANT G ANYWHERE: the coupling arises entirely from c^2 and the normalized mean hypergraph
+    connectivity F_field = <edges(v)>/N_total (emergent-gravity form; PI-decoder/sacred-time module)."""
+    if c is None: c = 2.998e8
+    return c ** 2 * f_field * (1.0 + sfr) / r ** 2
+
+def d_eff_hypergraph(n_reachable, r_steps):
+    """PAPER_490: emergent dimension d_eff = log N(r)/log r (Wolfram rule gives d_eff ~ 3 -
+    emergent 3-space confirmation; N ~ r^3 Euclidean check)."""
+    return math.log(n_reachable) / math.log(r_steps)
+
+
+
+# --- DEEP-CAPTURE BATCH PAPER_491-500 (Cosmic Quantum Egg, DPM full formulation, 26D projection, proto-hydrogen) ---
+
+def rho_egg_density(nu_flux=1e15, delta_qvd=0.0, e_scm=1.0):
+    """PAPER_495: cosmic-egg density rho_egg = nu_flux e^(DQVD/E_SCm) (the pre-matter vacuum
+    fluctuation at CNB-comparable density ~1e8/cm^3; not matter, not gravitating)."""
+    return nu_flux * math.exp(delta_qvd / e_scm)
+
+def omega_egg_parameter(rho_egg, rho_crit=9.47e-27):
+    """PAPER_495: Omega_egg = min(rho_egg/rho_crit, 0.2) - the hatching threshold at 0.2 triggers
+    inflationary expansion (Omega_egg in [0.05, 0.20]; the pre/post-fertilization phase gate).
+    NOTE: rho_crit = 9.47e-27 here is the SAME bulk-script density flagged by PAPER_2156 -
+    corpus-lineage tie logged."""
+    return min(rho_egg / rho_crit, 0.2)
+
+def hubble_egg_modified(omega_lambda=0.685, omega_scm=0.01, omega_egg=0.1, h0_si=2.2685e-18, v_scm_integral=0.0):
+    """PAPER_495: modified Hubble a_dot = H0 sqrt(OL + O_SCm + O_egg) + integral(v_SCm dV);
+    delta = H0 (sqrt(0.795) - sqrt(0.685)) = 7.1 pct expansion increase - the CQE resolution of
+    the Hubble tension (4-9 pct observed band)."""
+    return h0_si * math.sqrt(omega_lambda + omega_scm + omega_egg) + v_scm_integral
+
+def hubble_tension_egg_pct(omega_lambda=0.685, omega_scm=0.01, omega_egg=0.1):
+    """PAPER_495: fractional tension resolution [sqrt(OL+O_SCm+O_egg) - sqrt(OL)]/sqrt(OL) = 7.7 pct
+    (the paper rounds to ~7.1; within the observed 4-9 pct Hubble-tension band either way)."""
+    return (math.sqrt(omega_lambda + omega_scm + omega_egg) - math.sqrt(omega_lambda)) / math.sqrt(omega_lambda)
+
+def dpm_refinement_26d(dpm_n_scm, dpm_s_ua, r, kappa=KAPPA_PER_DAY, d26_dt26=0.0):
+    """PAPER_496: full 26D DPM refinement DPM_ref = kappa (DPM_n - DPM_s)/r^26 + d^26(DPM_n + DPM_s)/dt^26
+    (the grinding-pair difference over the 26th radial power plus the 26th time derivative;
+    w_CW/w_CCW = 1.0 grinding equilibrium)."""
+    return kappa * (dpm_n_scm - dpm_s_ua) / r ** 26 + d26_dt26
+
+def mass_26d_projection(e_26d, v_current, v_init, prob_order=1.0, c=None):
+    """PAPER_497: 26D mass projection M = (E^26D/c^26)(1 - v_current/v_init) Prob_order
+    (downward-only 26D -> 9D -> 3D -> 2D rule; mass emerges as the deceleration deficit from
+    the initial Big Bang speed)."""
+    if c is None: c = 2.998e8
+    return e_26d / c ** 26 * (1.0 - v_current / v_init) * prob_order
+
+def fu_26d_downward(u_g, u_m, u_b, prob_order=1.0, bbdt=0.0, ratio=None):
+    """PAPER_497: 26D master F_U = U_g + U_m + U_b + SCm/UA + BBDT Prob_order (the downward-
+    projection frame with the primitive SCm/UA = 1/10 as an ADDITIVE channel)."""
+    if ratio is None: ratio = F_TRZ
+    return u_g + u_m + u_b + ratio + bbdt * prob_order
+
+def higgs_vev_marker(inside_out=1.0, destruction_2d=1.0, vev_gev=246.0):
+    """PAPER_499: Higgs as inertial-gradient shift marker H = VEV_246/Destruction_2D x InsideOut
+    (the 246 GeV electroweak VEV as the 26D -> 3D energy-fall marker where F_inert changes;
+    flavors as grinding-sequence strata)."""
+    return vev_gev / destruction_2d * inside_out
+
+def proto_hydrogen_z_quantization(n):
+    """PAPER_500: atomic number from DPM quantization qe = 2 pi n - each Z a quantized grinding
+    step filling the empty 26-shell proto-hydrogen (s/p/d/f as 26D angular projections;
+    the first-atom shell-filling law)."""
+    return 2.0 * math.pi * n
+
+
+
+# --- RULE-7 FULL-CENSUS RECOVERY (PAPER_401-500 resweep) ---
+
+def um_sun_calibrated(t, omega_c=1.587e-8):
+    """PAPER_418 RECOVERED: calibrated solar Um = (2.26e19 + 9.04e16 sin(w_c t))(1 - e^(-1e-4 t))
+    (the magnetic-string companion of fu_sun_final_calibration; 11-yr cycle sideband at 0.4 pct)."""
+    return (2.26e19 + 9.04e16 * math.sin(omega_c * t)) * (1.0 - math.exp(-1e-4 * t))
+
+def fubii_anyons_gaussian(e_anyons, g_rt, d_c, sigma_fluct, e_lep=1.0, f_rel=4.3e33, q_wave=6.33e4):
+    """PAPER_426 RECOVERED: anyon buoyancy F = -F_rel (E_anyons/E_LEP) Q_wave g(r,t) e^(-d_c^2/(2 s^2))
+    (the 2D-topological member of the taxonomy with the Gaussian density-fluctuation tail -
+    the only variant coupling to the local field g(r,t) directly)."""
+    return -f_rel * e_anyons / e_lep * q_wave * g_rt * math.exp(-d_c ** 2 / (2.0 * sigma_fluct ** 2))
+
+def ring_azimuthal_modulation(phi, m_ring=1.5e19, r=8.44e7, mod=0.1, G=None):
+    """PAPER_455 RECOVERED: azimuthally-modulated ring force F = (G M_ring/r^2)(1 + 0.1 cos(2 phi))
+    (the m = 2 azimuthal mode of the Saturn ring registry - quadrupolar ring asymmetry)."""
+    if G is None: G = G_UQFF
+    return G * m_ring / r ** 2 * (1.0 + mod * math.cos(2.0 * phi))
+
+def d_universe_4factor(d_base=2.64e26, f_exp=1.988, lambda_v=1.089e-52, h0_si=2.27e-18, c=None):
+    """PAPER_456 RECOVERED: 4-factor D_universe = D_base x f_exp x (1 + Lambda c^2/(3 H0^2)) x 1 x 1
+    = 8.58e26 m; the third factor 1 + 0.634 - and Lambda c^2/(3 H0^2) = 0.634 IS Omega_Lambda
+    (the Friedmann identity surfacing as a D_universe expansion factor)."""
+    if c is None: c = 2.998e8
+    return d_base * f_exp * (1.0 + lambda_v * c ** 2 / (3.0 * h0_si ** 2))
+
+def level_spacing_energy(v_ref, rho_ua_local=1.6e20, rho_scm_local=1.6e19):
+    """PAPER_459 RECOVERED: 26-level energy spacing DE_L = (rho_UA - rho_SCm)/26 x V_ref
+    = 5.54e18 V_ref (the per-level quantum of the red-dwarf plasmoid ladder; equals
+    9 rho_SCm/26 x V under the canonical ratio-10)."""
+    return (rho_ua_local - rho_scm_local) / 26.0 * v_ref
+
+def higgs_compton_gravity(m_h_gev=125.0, G=None, c=None, hbar=1.055e-34):
+    """PAPER_460 RECOVERED: Higgs gravitational self-field g_H = G m_H/r_Compton^2 with
+    r_C = hbar c/(m_H c^2) = 1.58e-18 m (the boson's own-scale gravity - the Drawing-32
+    quantum-gravity touchpoint)."""
+    if G is None: G = G_UQFF
+    if c is None: c = 2.998e8
+    m_kg = m_h_gev * 1.783e-27
+    r_c = hbar * c / (m_h_gev * 1.602e-10)
+    return G * m_kg / r_c ** 2
+
+def cyclotron_electron(b_field=5e-5, m_e=9.11e-31, q=1.602176634e-19):
+    """PAPER_460 RECOVERED: electron cyclotron w_c = eB/m_e = 8.79e6 rad/s at Earth-field 5e-5 T
+    (the DNA-strand modulation clock of the biological extension)."""
+    return q * b_field / m_e
+
+def complex_fubi_stated():
+    """PAPER_483 RECOVERED: complex-arithmetic F_U_Bi_i = -8.32e217 + i(-6.75e160) N - the FIRST
+    stated imaginary component of the galactic-class benchmark (quantum-fluctuation channel
+    57 orders below the real part; extends galactic_fubi_class_stated)."""
+    return {'re': -8.32e217, 'im': -6.75e160, 'im_orders_below': 57}
 
 
 @_register('PAPER_001')

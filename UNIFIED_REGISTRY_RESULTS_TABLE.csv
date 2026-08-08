@@ -181,3 +181,8 @@ ui_canonical_confirm,PAPER_334 bifurcation,beta F_TRZ w_s cos(1+f_TRZ),2.75e-7 E
 e_react_t0,PAPER_393 confirmation,rho v^2/rho_A,8.808e54 J,PAPER_182/183 slip corrected,SELF_RECTIFIED,0.01
 ym_route2_asymptote,PAPER_388,sqrt(rho_SCm/rho_UA),0.3162,PAPER_1953 0.3-family candidate,DEEP_CAPTURE,0.0
 rho_v_identified,PAPER_368,Lambda c^2/(8piG),6.0e-27 kg/m^3,Planck DE density = codebase rho_v,DEEP_CAPTURE,1.7
+lambda_i_4th_term,PAPER_420 code-gap,-sum lambda_i U_i E_react,-2.75e-7 canonical,MISSING TERM WIRED,DEEP_CAPTURE,0.0
+ts00_resolved,PAPER_406,1.27e3 + 1.11e7,1.110127e7,165/172 fork closed,SELF_RECTIFIED,0.0
+scm_mass_power_law,PAPER_405,M^(2/3),alpha = D_phys/D_BSFG,primitive hit,DEEP_CAPTURE,3.0
+omega_lambda_duniverse,PAPER_456,Lambda c^2/(3H0^2),0.634 = Omega_L,Friedmann identity,RULE7_IMPLIED,0.0
+lenr_catalyst_ssq26,PAPER_460,SSq^26 e^-pi,1.9425e-8 EXACT,primitive rung,DEEP_CAPTURE,0.1

@@ -5228,3 +5228,12 @@ rectifications confirmed live (PAPER_240<->270; PAPER_182/183<->393). U_i canoni
 reproduced EXACTLY from the PAPER_334 bifurcation form. 2nd YM route saturates at sqrt(F_TRZ)
 - new 0.3-family member. ~20 source slips disclosed. Registry 3,678 / graph 5,495 / citations
 851. Gate 2,551 -> 2,665, 0 failures. Measured vs v0.356.0 tag throughout.
+
+## 2026-08-07 (3) - v0.358.0 PAPER_500 CHARTER MILESTONE (batches 401-500 + resweep)
+
+Deep-capture campaign completes PAPER_001-500. +86 functions across ten batches + 8 census
+recoveries. The missing lambda_i 4th dissipation term wired (PAPER_420 code-gap closure);
+self-rectification #3 (Ts00 fork); golden-ratio prime vortices; CNB coupling; Cosmic Quantum
+Egg; no-G hypergraph gravity; Omega_Lambda D-universe identity. ~15 slips disclosed. Registry
+3,764 / graph 5,667 / citations 938. Gate 2,665 -> 2,749, 0 failures. Measured vs v0.357.0
+throughout. CHARTER FULL STOP reached - 500-paper audit report pending Daniel's authorization.

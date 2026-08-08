@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.357.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.357.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.358.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.358.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2665%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-2749%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-342-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.357.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
 
-**This release (v0.357.0): DEEP-CAPTURE PAPER_301-400 COMPLETE — +118 NAMED FUNCTIONS, FRONTIER AT 400.** Ten batches plus a Daniel-directed full-census resweep of 301-350. The **Hydrogen PToE quartet** (eps_GR = 7.04e-44 catalogue minimum, the 7.18e43 dominance span, Gamma_u4i = 4.704e36 frequency-independent amplifier, triple Lyman lock), the **Lagoon/Spiral/NGC 6302/Orion suites** (linear SFR runaway, dual-barrier 12.77, delta_SN = 2.52 pct Hubble-tension discriminant, PN macro-antenna 1.267e50 N, bi-modal crossover r_cross = 3.280 km, champagne flow, t_cross = 67,730 yr), **CR34/CR34b closures** (V/f = 5.43e28 reversal locus, 11th UQFF term F_AETHER super-Hubble oscillator, Saturn dual-channel reproduced by the existing harmonic fn), the **12-term integrand completion** (first Zeeman term, U_i bifurcation reproducing the locked PAPER_646 2.75e-7 EXACTLY, V_cb at PDG 40.5e-3), the **S96-97 astrophysical set** (MCMC calibration, GW precession-squared, El Gordo super-virial 2.27, k_vac = G duality, kappa(z) amplifier/damper pair, xi_DM = f^(1/3)), the **TDE/transient set** (first negative-E(t) environment, first relativistic boost k_rel = Gamma^2 = 20.25), **wormhole null geodesics + the formal proof set** (w_res = 2pi/t_H = fquantum IDENTITY, kappa-ratio master, cohesive bridge, mu0-DPM/EFE post-Newtonian bridge), the **2nd Yang-Mills route saturating at sqrt(F_TRZ) = 0.3162** (another PAPER_1953 0.3-family member), the M-sigma bridge pair, and the **Meissner blend + level-18 emergent Higgs + PImath** set. The resweep recovered 9 misses headlined by the **PAPER_331 Six Proof Identities and the 7-frequency 93-order basis**. **Two self-rectifications confirmed live**: PAPER_270's CGS chain resolves the PAPER_240 Q_wave puzzle (0.2 pct), and PAPER_393's E_react = 8.808e54 corrects the PAPER_182/183 slip family (4-digit match to the wired value). ~20 further source slips disclosed with faithful transcription. Library **3,302 functions**; registry 3,678 rows, graph 5,495 edges, citations 851 papers, gate **2,665 assertions green**.
+**This release (v0.358.0): PAPER_500 CHARTER MILESTONE — DEEP-CAPTURE PAPER_001-500 COMPLETE.** Ten batches (401-500, +86 named functions) plus the full-census 401-500 resweep (+8 recoveries). Headlines: **THE MISSING 4TH TERM WIRED** — PAPER_420 identifies the May-2025 book master's lambda_i dissipation sum as entirely absent from compute_FU() in every prior code generation; now captured (fu_dissipation_term, canonical LAMBDA_I = 1.0 x the locked U_i = 2.75e-7). **SELF-RECTIFICATION #3**: PAPER_406's two-component Ts00 = 1.27e3 + 1.11e7 resolves the PAPER_165/172 candidate fork. The batch set spans the S48-form re-derivation series (SCm density power law rho ~ M^(2/3) = D_phys/D_BSFG primitive; E0 = hbar w0/2 zero-point anchor; 5-component Ts00), the Um modifier closure (density-Heaviside gate, quasi-beating, thermal damping), the nuclear H_res periodic-table closures, the GOLDEN-RATIO prime vortices (phi^(p mod 6), p_special = 113 DVP tie), the per-system MUGE application bands (431-445, cross-checked against wired forms), the Big Bang MUGE frame with the FIRST tidal-torque and shock-front F_env types, the t-minus plasmoid module with per-environment vacuum pairs, the non-local LENR catalyst (SSq^26 e^-pi = 1.94e-8 EXACT), the Basel-series and zeta-ratio (pi^2/15) primitives, the frequency-causal g = f lambda_P/2pi framework, the FIRST cosmic-neutrino-background coupling (9.07e-42 N, smallest UQFF force), the pre-Big-Bang 26-sphere birth model, the Cosmic Quantum Egg (7.7 pct Hubble-tension resolution), the Wolfram-hypergraph NO-G gravity (g = c^2 F/r^2, d_eff = 3), and proto-hydrogen Z-quantization. Resweep recoveries include the **Omega_Lambda D-universe identity** (Lambda c^2/3H0^2 = 0.634), the Higgs own-scale gravity 5.96 m/s^2, and the FIRST imaginary F_U_Bi_i pin. ~15 further source slips disclosed. Library **3,388 functions**; registry 3,764 rows, graph 5,667 edges, citations 938 papers, gate **2,749 assertions green**. **Per the charter: FULL STOP at PAPER_500 — the 500-paper audit report awaits Daniel's review before the next 500 are authorized.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -50,7 +50,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.357.0)
+## What is currently shipped (v0.358.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -58,7 +58,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-400** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 342 distinct dispatches** (328 base + 14 suffixed). **Complete-compile frontier: PAPER_001-500 (CHARTER MILESTONE)** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

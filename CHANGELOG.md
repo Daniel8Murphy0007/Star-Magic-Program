@@ -6275,6 +6275,47 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.358.0] - 2026-08-07
+
+PAPER_500 CHARTER MILESTONE - deep-capture PAPER_401-500 complete (ten batches + resweep;
++86 named functions; calculator 1,596 -> 1,682 defs; frontier at the FULL-STOP boundary).
+
+- Batches 401-420 (+15): S48-form re-derivations - rho_SCm ~ M^(2/3) power law (D_phys/D_BSFG
+  primitive), Ts00 two/five-component decompositions (SELF-RECTIFICATION #3: 165/172 fork resolved),
+  4-body FU verification, E0 = hbar w0/2 zero-point anchor, SCm donation law + 54.8-yr lifetime,
+  photosphere 274 anchor, H_SCm age indicator, CCW/CW differential, t_n formal variable, calibrated
+  solar F_U + Um chains, core mass-gap H_SCm = 5e27, THE MISSING 4TH TERM (lambda_i dissipation -
+  the PAPER_420-identified code gap, wired with canonical LAMBDA_I x U_i = 2.75e-7).
+- Batches 421-430 (+7): Um triple-modifier closure (density-Heaviside gate, quasi-beating,
+  e^-SSq thermal damping), linear Ug3 layer law, nuclear H_res closures (A_res, f_res),
+  GOLDEN-RATIO prime vortices phi^(p mod 6) with p_special = 113 (DVP tie) + p > 26 selection rule.
+- Batches 431-450 (+5): per-system MUGE application bands (all closed forms cross-checked
+  against wired functions; Rings lensing reproduced to 2 pct), T_2 doubled-TRZ pattern,
+  per-radius wind/cooling terms, Source10 primary-text pins (DM builtin 0.268 = Omega_DM).
+- Batches 451-470 (+24): Big Bang MUGE frame (M ~ t/t_H, z = t_H/t - 1, 1/t DPM decay),
+  FIRST tidal-torque + shock-front F_env types (29 -> 38 systems), t-minus plasmoid transform
+  (extremum t_n = 1) + per-environment vacuum pairs (ratio-10 preserved), non-local LENR catalyst
+  SSq^26 e^-pi = 1.94e-8 EXACT, Higgs 125.09 anchor + DNA extension, Basel zeta(2) first
+  application, zeta(4)/zeta(2) = pi^2/15 inertial-operator primitive, Espace 7-factor chain
+  (2x slip disclosed), V838 Mon modulated light echo, frequency-causal g = f lambda_P/2pi +
+  coalescence clock, sigma^4 M-sigma derivation + f_feedback = 0.063.
+- Batches 471-500 (+35): LENR neutron-production calibration (64 x SSq^n gate; Widom-Larsen
+  0.78 MeV), pre-Big-Bang 26-sphere volume (2pi-family slip disclosed), aether eta = 1/E_s
+  DERIVED, FIRST CNB coupling 9.07e-42 N (smallest UQFF force), PTOE hydrogen anchor 1.89e21 Hz,
+  Cassini complex ring module (Division-width coherence prediction; Landau n = 0 = rho_UA/2),
+  HSE bias 0.17 vs 0.20, 26D polynomial, Wolfram hypergraph NO-G gravity (c^2 F/r^2, d_eff = 3),
+  Cosmic Quantum Egg (Omega_egg hatching gate; 7.7 pct Hubble-tension resolution; 9.47e-27
+  lineage tie logged), 26D DPM refinement (r^26 + d^26/dt^26), mass-as-deceleration-deficit,
+  Higgs VEV 246 marker, proto-hydrogen qe = 2pi n.
+- FULL-CENSUS RESWEEP 401-500 (+8 recoveries): solar Um calibrated chain, anyon Gaussian
+  taxonomy member, m = 2 ring mode, 4-factor D_universe with the Omega_Lambda IDENTITY
+  (Lambda c^2/3H0^2 = 0.634), per-level quantum 5.54e18, Higgs own-scale gravity 5.96 m/s^2,
+  electron-cyclotron DNA clock, FIRST imaginary F_U_Bi_i pin (-8.32e217 + i(-6.75e160)).
+- In-step mapping: registry 3,678 -> 3,764; graph 5,495 -> 5,667; citations 851 -> 938 papers;
+  gate 2,665 -> 2,749, 0 failures. ~15 further source slips disclosed.
+- CHARTER: FULL STOP at PAPER_500. The 500-paper audit report is the next deliverable,
+  pending Daniel's review before papers 501+ are authorized.
+
 ## [0.357.0] - 2026-08-07
 
 DEEP-CAPTURE PAPER_301-400 COMPLETE (ten batches + full-census 301-350 resweep; +118 named

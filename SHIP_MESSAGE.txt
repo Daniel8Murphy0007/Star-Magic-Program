@@ -1,27 +1,23 @@
-v0.357.0 - DEEP-CAPTURE PAPER_301-400 COMPLETE: +118 NAMED FUNCTIONS (TEN BATCHES + RESWEEP)
+v0.358.0 - PAPER_500 CHARTER MILESTONE: DEEP-CAPTURE PAPER_001-500 COMPLETE
 
-The deep-capture frontier advances 100 papers and lands at PAPER_400.
+Ten batches (401-500, +86 named functions) + full-census 401-500 resweep (+8 recoveries).
+The deep-capture campaign now covers every whitepaper from PAPER_001 through PAPER_500.
 
 HEADLINES:
-- U_i bifurcation (PAPER_334) reproduces the locked PAPER_646 canonical U_i = 2.75e-7 EXACTLY
-  with the canonical F_TRZ ratio (0.001 print drift auto-corrected per the charter table).
-- TWO SELF-RECTIFICATIONS CONFIRMED LIVE: PAPER_270's CGS amplification chain resolves the
-  PAPER_240 Q_wave puzzle (3.11e9 computed to 0.2 pct); PAPER_393's E_react = 8.808e54 corrects
-  the PAPER_182/183 1e9-slip family (4-digit match to the wired value).
-- 2nd Yang-Mills route (PAPER_388) SATURATES at sqrt(F_TRZ) = 0.3162 - a new member of the
-  PAPER_1953 0.3-factor cross-regime family discovered in the asymptote.
-- FIRSTS wired: Zeeman term, negative E(t) environment, relativistic boost k_rel = Gamma^2,
-  GW precession-squared operator, dual-barrier HII module, bi-modal resonance crossover
-  (r_cross = 3.280 km), 11th UQFF accelerative term (super-Hubble F_AETHER), Meissner hybrid
-  blend, level-18 emergent Higgs stratum.
-- Cross-checks pinned: rho_v = 6e-27 IDENTIFIED as Planck Lambda c^2/(8 pi G); w_res = 2pi/t_H
-  = ResonanceParams fquantum IDENTITY; ALICE k_eta18 = 14,887 back-solve; V_cb at PDG 40.5e-3;
-  delta_SN = 2.52 pct Hubble-tension discriminant via the E(z) chain.
-- Full-census resweep of 301-350 recovered 9 misses (Six Proof Identities, 93-order frequency
-  basis, two-scale F_U_Bi_i class pins).
+- THE MISSING 4TH TERM WIRED: PAPER_420 documents the May-2025 book master's lambda_i
+  dissipation sum as absent from compute_FU() in every prior code generation - now captured
+  (canonical LAMBDA_I = 1.0 x locked U_i = 2.75e-7).
+- SELF-RECTIFICATION #3: PAPER_406's Ts00 = 1.27e3 + 1.11e7 resolves the PAPER_165/172 fork.
+- PRIMITIVE HITS: rho_SCm ~ M^(2/3) = D_phys/D_BSFG; SSq^26 e^-pi = 1.94e-8 EXACT LENR catalyst;
+  zeta(4)/zeta(2) = pi^2/15 inertial operator; GOLDEN-RATIO prime vortices (113 = DVP prime);
+  Landau n = 0 = rho_UA/2; Omega_Lambda = Lambda c^2/(3 H0^2) = 0.634 D-universe identity.
+- FIRSTS: tidal torque, shock front, CNB coupling (9.07e-42 N smallest force), imaginary
+  F_U_Bi_i pin, no-G hypergraph gravity (g = c^2 F/r^2, d_eff = 3), Basel-series application,
+  Cosmic Quantum Egg (7.7 pct Hubble-tension resolution).
 
-RULE 7: ~20 further source slips disclosed with faithful transcription (70 AU/15.7 AU, 133x
-k_curv, sqrt(10) ring, 1.9x v_therm, PAPER_304 underived headline pair, mojibake seeds).
+RULE 7: ~15 further source slips disclosed with faithful transcription.
+IN-STEP MAPPING: registry 3,764 rows; graph 5,667 edges; citations 938 papers.
+GATE: 2,749 assertions, 0 failures. All 27 ship files synced.
 
-IN-STEP MAPPING: registry 3,678 rows; graph 5,495 edges; citations 851 papers (+79 newly mapped
-beyond the dispatch band). GATE: 2,665 assertions, 0 failures. All 27 ship files synced.
+CHARTER: FULL STOP at PAPER_500. Next deliverable = the 500-paper audit report for Daniel's
+review before papers 501+ are authorized.

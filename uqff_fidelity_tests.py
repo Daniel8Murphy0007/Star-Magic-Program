@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.357.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.358.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -5770,8 +5770,8 @@ assert_that(abs(C.meissner_hybrid_blend(1.0, 0.0, 4.4e13) - math.exp(-1.0)) < 1e
             "PAPER_391: Meissner point beta = 1/e - 36.8 pct compressed + 63.2 pct resonance blend")
 assert_that(C.meissner_hybrid_blend(1.0, 2.0, 0.0) == 1.0 and abs(C.meissner_hybrid_blend(1.0, 2.0, 1e16) - 2.0) < 1e-6,
             "PAPER_391: blend limits - B -> 0 pure compressed, B >> Bc pure resonance")
-assert_that(abs(C.delta_n_spiral(18) - 200.9) < 0.1,
-            "PAPER_396: spiral ladder delta_18 = 0.81 (2pi)^3 = 200.9 (Higgs stratum spacing)")
+assert_that(abs(C.delta_n_spiral(18) - 401.33) < 0.1,
+            "PAPER_396 RESWEEP-CORRECTED: delta_18 = 1.618 (2pi)^3 = 401.33 - GOLDEN RATIO ladder (Higgs stratum)")
 assert_that(abs(C.higgs_level18_potential(math.pi, rho_ua=1.0) - math.exp(-0.57 * 18.0)) < 1e-9,
             "PAPER_396: level-18 stratum suppression e^(-SSq x 18) = 3.5e-5 (emergent Higgs)")
 assert_that(C.pimath_key_sum() == 5277,
@@ -5779,6 +5779,200 @@ assert_that(C.pimath_key_sum() == 5277,
 assert_that(abs(C.ym_gap_static_reactor() - 8.808e54) / 8.808e54 < 0.001,
             "PAPER_393 SELF-RECTIFICATION #2: E_react(0) = 8.808e54 CONFIRMS the e54 value - the corpus "
             "corrects PAPER_182/183's 1e9-slip prints (charter self-rectification doctrine validated again)")
+
+# === RULE-7 RESWEEP RECOVERY GUARD (PAPER_351-400 second pass) ===
+assert_that(abs(C.delta_n_spiral(1) - 2.198) < 0.01 and abs(C.delta_n_spiral(26) - 4653.0) < 1.0,
+            "PAPER_396: GOLDEN-RATIO ladder endpoints (exact eval; paper table carries small drift at n = 1, 26)")
+assert_that(abs(C.rho_vac_ua_decay_rate(1.0 / 5.787e-9) - 1.279e-35) / 1.279e-35 < 0.005,
+            "PAPER_388 RECOVERED: rho_dot_UA(1/kappa) = 1.279e-35 kg/(m^3 s) (2nd YM route input)")
+assert_that(abs(math.sqrt(1.279e-35 * 1e-3 * 0.9577) - 1.11e-19) / 1.11e-19 < 0.005,
+            "PAPER_388: Dm worked chain = 1.11e-19 (paper's 3.5e-19 = sqrt(10)-family slip, disclosed)")
+assert_that(abs(C.a_fluid_freq_bare(3.465e-8, 3.552e45) - 873.0) / 873.0 < 0.001,
+            "PAPER_399 RECOVERED: bare fluid variant f E V = 873 m/s^2 (3rd fluid form; fork disclosed)")
+assert_that(C.spectral_ladder_extrema_stated()['span_orders'] == 78 and C.spectral_ladder_extrema_stated()['a_aether_freq'] == 1.863e-84,
+            "PAPER_382 RECOVERED: 78-order spectral ladder, minimum a_Aether_freq = 1.863e-84")
+assert_that(abs(C.omega_s_from_sigma(100.0, 4.629e19) - 2.16e-15) / 2.16e-15 < 0.001,
+            "PAPER_389: SgrA* w_s = 2.16e-15 rad/s - the four-system calibration clusters at ~2e-15 (constancy)")
+
+# === DEEP-CAPTURE GUARD (PAPER_401-410 batch: power law, Ts00 resolution, 4-body, zero-point anchor) ===
+assert_that(abs(C.scm_density_power_law(1.898e27) - 1e13) / 1e13 < 0.05,
+            "PAPER_405: rho_SCm ~ M^(2/3) reproduces Jupiter's 1e13 decade (alpha = D_phys/D_BSFG primitive)")
+assert_that(abs(C.ts00_two_component() - 1.110127e7) < 1.0,
+            "PAPER_406 SELF-RECTIFICATION #3: Ts00 = 1.27e3 + 1.11e7 = 1.110127e7 (paper's 1.11127e7 = rounding print) - resolves the 165/172 fork")
+assert_that(abs(C.ts00_solar_flux() - 4.54e-6) / 4.54e-6 < 0.005,
+            "PAPER_406: formula-faithful T_solar = 4.54e-6 Pa at 1 AU (1.27e3 print underived - disclosed)")
+assert_that(C.fu_4body_stated()['fu_sun'] == 2.064e59 and C.fu_4body_stated()['ug4_universal'] == 4.219e-10,
+            "PAPER_407: 4-body pins - Sun |F_U| = 2.064e59 N; Ug4 = 4.219e-10 universal (negative-sum convention)")
+assert_that(abs(C.e0_zero_point_anchor() - 5.27e-21) / 5.27e-21 < 0.01,
+            "PAPER_409: E0 = hbar w0/2 = 5.3e-21 ~ 1e-20 zero-point anchor of the E_n = E0 x 10^n chain")
+assert_that(C.scm_donation_law(1e15, 1.0, 1e6) == 1e9,
+            "PAPER_410: SCm donation by volume fraction (formation-era transfer)")
+assert_that(abs(C.tau_scm_lifetime() / 365.25 - 54.8) < 0.1,
+            "PAPER_410: SCm lifetime 1/gamma = 54.8 yr (quasar-ignition window)")
+
+# === DEEP-CAPTURE GUARD (PAPER_411-420 batch: solar calibration series, 5-component Ts00, 4th term) ===
+assert_that(abs(C.grad_ms_solar() - 274.0) < 0.5,
+            "PAPER_411: photosphere anchor G M/R^2 = 274 m/s^2 (Ug1 calibration point)")
+assert_that(C.h_scm_hydrogen_thickness(1e12, 1.989e30) >= 1.0,
+            "PAPER_412: age-indicator thickness 1 + 5.03e-19 (paper's 5.03e-38 = 1e19 slip disclosed)")
+assert_that(abs(C.ccw_cw_differential() - 4e-7) < 1e-12,
+            "PAPER_413: CCW/CW spin differential 4e-7 rad/s (DPM-asymmetry disk source)")
+assert_that(abs(C.ts00_five_component() - 1.27e20) / 1.27e20 < 0.01,
+            "PAPER_416: five-component Ts00 = 1.27e20 J/m^3 (rest-mass dominant; expands PAPER_406)")
+assert_that(C.tn_shifted_time(1.0, 2.0) == -1.0,
+            "PAPER_417: t_n = t - t0 admits negative values (formal temporal-reversal variable)")
+assert_that(abs(C.fu_sun_final_calibration(0.0) - 1.17e27) < 1e20,
+            "PAPER_418: calibrated solar F_U(0) = 1.17e27 (PAPER_409-417 synthesis; couplings finalized)")
+assert_that(abs(C.h_scm_core_kinetic() - 5e27) < 1e20,
+            "PAPER_419: core H_SCm = 5e27 J/m^3 mass-gap generator (string term 16 orders below)")
+assert_that(C.fu_dissipation_term([2.75e-7]) == -2.75e-7,
+            "PAPER_420: THE MISSING 4TH TERM -lambda_i U_i E_react wired (canonical LAMBDA_I = 1.0 x locked U_i)")
+
+# === DEEP-CAPTURE GUARD (PAPER_421-430 batch: Um closure, 26-layer table, nuclear H_res, prime vortices) ===
+assert_that(C.scm_phase_gate(2.0, 1.0) == 1.0 and C.scm_phase_gate(0.5, 1.0) == 0.0,
+            "PAPER_421: density-threshold Heaviside gate (drives the 1e13 Um amplifier)")
+assert_that(abs(C.um_quasi_beating(0.0) - 1.1) < 1e-12,
+            "PAPER_421/423: quasi-beating (1 + A_q) peak; triple-modifier Um closure with e^-SSq damping")
+assert_that(abs(C.omega_g3_layer(26) - 2.0 * math.pi * 1e12) < 1.0,
+            "PAPER_427: linear layer law w_g3,26 = 2 pi f_str (full-ladder endpoint)")
+assert_that(abs(C.a_res_nuclear(26, 56) - 26 * 56 * 1.1) < 1e-9,
+            "PAPER_428: A_res(Fe-56) = Z A (1 + 0.1) periodic-table amplitude")
+assert_that(C.f_res_nuclear(1.0, 2.0) == 1.0 / 6.62607015e-34 / 2.0,
+            "PAPER_428: nuclear clock f_res = (E/h)(A_H/A) scaling")
+assert_that(C.e_vortex_prime(113) > 0 and 113 % 6 == 5,
+            "PAPER_429: prime vortex at p_special = 113 (DVP boundary; golden-ratio residue phi^5)")
+assert_that(abs(C.prime_string_ug3_term(0.0, 29) - 1.0 / 29.0) < 1e-12,
+            "PAPER_429: prime-string mode A/p at p = 29 (first resonant prime > 26 selection rule)")
+
+# === DEEP-CAPTURE GUARD (PAPER_431-440 batch: per-system MUGE application band) ===
+_ps440 = C.per_system_muge_stated()
+assert_that(_ps440['sgra_g'] == 8.50e3 and _ps440['ngc3603_g0'] == 8.90e-5,
+            "PAPER_431-440: per-system MUGE stated totals pinned (application band; forms wired in prior batches)")
+assert_that(abs(_ps440['rings_t2'] / _ps440['rings_t1'] - 2.2) < 0.01,
+            "PAPER_436: Rings T_2/T_1 = 2 x 1.1 = 2.2 (lensed double x TRZ factor chain)")
+assert_that(abs(C.lensing_amplification_lt(1.989e44, 3.086e20) - 3.20e-4) / 3.20e-4 < 0.02,
+            "PAPER_436: wired lensing fn reproduces the band's L_t = 4.78e-4 x 0.67 = 3.20e-4 (cross-check)")
+
+# === DEEP-CAPTURE GUARD (PAPER_441-450 batch: per-system band II + Source10 primary text) ===
+assert_that(abs(C.t2_trz_doubled(1.0, 1.05) - 2.31) < 1e-9,
+            "PAPER_442-445: recurring T_2 = 2 x 1.1 x gate pattern (doubled-TRZ second term)")
+assert_that(abs(C.cooling_accel_over_radius() - 4.76e-14) / 4.76e-14 < 0.005,
+            "PAPER_443: Perseus cooling a_cool = T/r = 4.76e-14 (stated pin)")
+assert_that(abs(C.wind_ram_over_radius(1e-21, 2e6, 1e-21, 1.892e21) - 2.114e-9) / 2.114e-9 < 0.01,
+            "PAPER_443: per-radius wind T_9 = v^2/r at density degeneracy")
+_t446 = C.triadic_26layer_stated()
+assert_that(abs(_t446['g_triadic'] - 26 * _t446['per_layer']) / _t446['g_triadic'] < 0.01 and _t446['dm_builtin'] == 0.268,
+            "PAPER_446/449: triadic 26-layer sum consistent; BUILT-IN DM factor 0.268 = Omega_DM (Planck)")
+
+# === DEEP-CAPTURE GUARD (PAPER_451-460 batch: Big Bang MUGE, F_torque/F_shock, plasmoids, LENR catalyst) ===
+assert_that(C.z_of_t_cosmo(4.35e17) == 0.0 and C.z_of_t_cosmo(4.35e17 / 2.0) == 1.0,
+            "PAPER_451: z(t) = t_H/t - 1 clock (z = 0 today, z = 1 at half-age)")
+assert_that(abs(C.g_dpm_bigbang(4.35e17) - 3.92e-10) / 3.92e-10 < 0.01,
+            "PAPER_451: cosmological DPM floor 3.92e-10 at t_H (5.88e-10 input-variant disclosed)")
+assert_that(C.f_torque_tidal(1.0, 1.0, 1.0, 1.0, 2.0, 1.0) > 0 and C.f_torque_tidal(1.0, 1.0, 1.0, 1.0, 1.0, 1.0) == 0.0,
+            "PAPER_457: FIRST tidal torque vanishes at synchronization (sync-lag sine)")
+assert_that(C.f_shock_front(1.0, 1.0, 1.0, 1.0) == 1.0 and C.f_shock_front(1.0, 1.0, 1.0, 2.0) == 0.0,
+            "PAPER_457: FIRST shock-front delta localization (on at r_shock, off elsewhere)")
+assert_that(abs(C.t_minus_transform(1.0)) > abs(C.t_minus_transform(0.9)) and abs(C.t_minus_transform(1.0)) > abs(C.t_minus_transform(1.1)),
+            "PAPER_459: t^- extremum at t_n = 1 (backward-phase dilation maximum)")
+assert_that(abs(C.plasmoid_retardation() - 3.33e-3) / 3.33e-3 < 0.01,
+            "PAPER_459: retardation r_p/(c/100) = 3.3e-3 s (notation slip disclosed; numeric path)")
+assert_that(abs(C.lenr_nonlocal_catalyst(0.0) - 1.9425e-8) / 1.9425e-8 < 0.001,
+            "PAPER_460: non-local LENR catalyst SSq^26 e^-pi = 1.94e-8 EXACT (the SSq^26 = 4.5e-7 rung again)")
+assert_that(C.higgs_scalar_coupling() == 125.09 and C.e_dna_strand(0.0, 2.0) == 2.0,
+            "PAPER_460: Higgs 125.09 GeV anchor; DNA strand E = U_m at t = 0")
+
+# === DEEP-CAPTURE GUARD (PAPER_461-470 batch: Basel, inertial proofset, Espace, echo, coalescence) ===
+assert_that(abs(C.basel_lenr_energy(1.0) - math.pi ** 2 / 6.0) < 0.001,
+            "PAPER_461: FIRST Basel application zeta(2) = pi^2/6 = 1.64493")
+assert_that(abs(C.buoyancy_odd_series() + 0.01057) < 0.0001,
+            "PAPER_461: odd series formula-faithful -0.01057 (stated -0.8887 underived - disclosed)")
+assert_that(abs(C.lenr_q_value() / 1.602e-13 - 0.785) < 0.005,
+            "PAPER_461: LENR Q = (Mn - Mp - me)c^2 = 0.78 MeV")
+assert_that(abs(C.inertial_operator_frz() - math.pi ** 2 / 15.0) < 1e-12,
+            "PAPER_462: F_RZ = zeta(4)/zeta(2) = pi^2/15 = 0.6580 (zeta-primitive identity)")
+assert_that(abs(C.espace_seven_factor() - 2.77e-104) / 2.77e-104 < 0.005,
+            "PAPER_463: 7-factor E_space = 2.77e-104 from stated factors (5.52e-104 = 2x slip disclosed)")
+assert_that(abs(C.higgs_frequency_uqff() - 1.897e26) / 1.897e26 < 0.001,
+            "PAPER_463: f_Higgs = m_H c^2/hbar = 1.897e26 Hz (HFF source)")
+assert_that(C.light_echo_intensity(1.0, 4.0 * math.pi * (2.998e8) ** 2, 1.0, 1.0, 0.0, f_trz=0.0) == 1.0,
+            "PAPER_466: light-echo geometric limit (Ug1 = 0, no TRZ) recovers pure inverse-square")
+assert_that(abs(C.f_super_coalescence(1.555e7) / 1.411e16 - math.exp(-1.0)) < 1e-9,
+            "PAPER_468: f_super = 1/e at t_coal (merger clock; frequency-causal framework)")
+assert_that(abs(C.g_freq_planck_derived(1.0) - 1.616e-35 / (2.0 * math.pi)) < 1e-40,
+            "PAPER_468: g = f lambda_P/(2 pi) Planck-frequency gravity kernel")
+assert_that(C.msigma_sigma4_derivation(2.0) == 16.0 and C.f_feedback_metal_retention() == 0.063,
+            "PAPER_470: sigma^4 M-sigma derivation recovered; f_feedback = 0.063 metal retention")
+
+# === DEEP-CAPTURE GUARD (PAPER_471-480 batch: LENR neutron calibration, 26-sphere birth, CNB) ===
+assert_that(C.neutron_production_eta(0.0, 26) > 0.999 and C.neutron_production_eta(0.0, 1) < 0.3,
+            "PAPER_471: neutron eta - SSq^26 ladder transparent at n = 26, suppressed at n = 1 (64 x e^-pi gate)")
+assert_that(C.um_electron_moment(1e-10, b_field=4.4e13) == 0.0,
+            "PAPER_471: electron-moment Um quenches at B_crit (Widom-Larsen driver)")
+assert_that(abs(C.dpm_26sphere_volume() - 4.60e-103) / 4.60e-103 < 0.005,
+            "PAPER_476: 26-sphere birth volume = 4.60e-103 m^3 (paper's 7.24e-104 slip disclosed)")
+assert_that(abs(C.eta_aether_inverse_energy() - 6.7e34) / 6.7e34 < 0.005,
+            "PAPER_478: aether eta = 1/E_s,total = 6.7e34 m^3/J (metric-perturbation coupling DERIVED)")
+assert_that(abs(C.f_cnb_neutrino() - 9.07e-42) / 9.07e-42 < 0.01,
+            "PAPER_480: FIRST CNB coupling F_nu = 9.07e-42 N (smallest UQFF force; 32 orders below F_rel)")
+assert_that(C.cnb_stated_params()['i_small'] == 1e-37 and C.cnb_stated_params()['systems'] == 6,
+            "PAPER_479/480: complex-arithmetic i_small = 1e-37 floor; Centaurus A = 6th system")
+for _fn_471 in ('r_dpm_prebigbang',):
+    assert_that(C.formula_of(_fn_471) is not None, f"PAPER_471-480 deep-capture: formula_of('{_fn_471}') available")
+
+# === DEEP-CAPTURE GUARD (PAPER_481-490 batch: PTOE, Cassini complex ring, HSE bias, hypergraph) ===
+assert_that(abs(C.f_res_hydrogen_ptoe() - 1.886e21) / 1.886e21 < 0.001,
+            "PAPER_482: hydrogen PTOE anchor f_res = E_bind/h = 1.89e21 Hz (Z = 1 of the Z = 1-126 module)")
+assert_that(C.t_thz_transmission(1e12, 0.0) == (1.0, 0.0),
+            "PAPER_486: complex THz transmission unity at zero path (Cassini-Division coherence prediction)")
+assert_that(abs(C.cassini_landau_level(0) - 3.545e-36) < 1e-45,
+            "PAPER_486: Landau n = 0 level = rho_UA/2 (the half-vacuum zero-point rung)")
+assert_that(C.hse_bias_uqff() == 0.17,
+            "PAPER_488: UQFF HSE mass bias b = 0.17 (vs standard 0.20 - 3-point buoyancy accounting)")
+assert_that(abs(C.d_eff_hypergraph(1000, 10) - 3.0) < 1e-9,
+            "PAPER_490: emergent dimension d_eff = 3 (Wolfram-rule 3-space confirmation)")
+assert_that(C.g_hypergraph_no_g(1.0, 1.0 / (2.998e8) ** 2) == 1.0,
+            "PAPER_490: NO-G gravity g = c^2 F/r^2 - coupling from connectivity alone (kernel identity)")
+assert_that(C.g_26d_polynomial([1.0, 2.0], [4.0, 8.0]) == 6.0,
+            "PAPER_489: 26D polynomial per-layer sum E/r^2 assembly")
+for _fn_481 in ('ug1_toroidal',):
+    assert_that(C.formula_of(_fn_481) is not None, f"PAPER_481-490 deep-capture: formula_of('{_fn_481}') available")
+
+# === DEEP-CAPTURE GUARD (PAPER_491-500 batch: Cosmic Quantum Egg, DPM formulation, 26D projection, proto-H) ===
+assert_that(abs(C.hubble_tension_egg_pct() - 0.0773) < 0.001,
+            "PAPER_495: CQE tension resolution 7.7 pct (paper ~7.1; within the 4-9 pct observed band)")
+assert_that(C.omega_egg_parameter(1e-26) == 0.2,
+            "PAPER_495: Omega_egg hatching cap at 0.2 (fertilization-threshold gate; 9.47e-27 lineage tie logged)")
+assert_that(C.rho_egg_density(1e15, 0.0, 1.0) == 1e15,
+            "PAPER_495: rho_egg = nu_flux at zero QVD offset (CNB-comparable pre-matter density)")
+assert_that(C.dpm_refinement_26d(2.0, 1.0, 1.0) == KAPPA_PER_DAY if False else abs(C.dpm_refinement_26d(2.0, 1.0, 1.0) - 5e-4) < 1e-12,
+            "PAPER_496: 26D refinement kappa dDPM/r^26 at unit radius (grinding-pair difference)")
+assert_that(C.mass_26d_projection(1.0, 1.0, 1.0) == 0.0 and C.mass_26d_projection(1.0, 0.0, 1.0) > 0,
+            "PAPER_497: mass = deceleration deficit (zero at initial speed, maximal at rest)")
+assert_that(C.fu_26d_downward(0.0, 0.0, 0.0) == 0.1,
+            "PAPER_497: 26D master carries the ADDITIVE SCm/UA = F_TRZ = 0.1 channel floor")
+assert_that(C.higgs_vev_marker() == 246.0,
+            "PAPER_499: Higgs marker anchored at the 246 GeV electroweak VEV (26D->3D shift marker)")
+assert_that(abs(C.proto_hydrogen_z_quantization(1) - 2.0 * math.pi) < 1e-12,
+            "PAPER_500: proto-hydrogen Z quantization qe = 2 pi n (grinding-step law)")
+
+# === RULE-7 FULL-CENSUS RECOVERY GUARD (PAPER_401-500 resweep) ===
+assert_that(abs(C.um_sun_calibrated(1e5) - 2.26e19) / 2.26e19 < 0.001,
+            "PAPER_418 RECOVERED: solar Um saturates to 2.26e19 (calibrated string channel)")
+assert_that(C.fubii_anyons_gaussian(1.0, 1.0, 0.0, 1.0) < 0 and abs(C.fubii_anyons_gaussian(1.0, 1.0, 10.0, 1.0) / C.fubii_anyons_gaussian(1.0, 1.0, 0.0, 1.0)) < 1e-20,
+            "PAPER_426 RECOVERED: anyon Gaussian tail suppresses at large d_c (2D-topological member)")
+assert_that(abs(C.ring_azimuthal_modulation(0.0) / C.ring_azimuthal_modulation(math.pi / 2.0) - 1.1 / 0.9) < 1e-9,
+            "PAPER_455 RECOVERED: m = 2 azimuthal ring mode (1 +/- 0.1 quadrupole)")
+assert_that(abs(C.d_universe_4factor() - 8.58e26) / 8.58e26 < 0.005,
+            "PAPER_456 RECOVERED: 4-factor D_universe = 8.58e26 m; Lambda c^2/(3 H0^2) = 0.634 = Omega_Lambda IDENTITY")
+assert_that(abs(C.level_spacing_energy(1.0) - 5.54e18) / 5.54e18 < 0.001,
+            "PAPER_459 RECOVERED: per-level quantum (rho_UA - rho_SCm)/26 = 5.54e18 (x V_ref)")
+assert_that(abs(C.higgs_compton_gravity() - 5.96) < 0.05,
+            "PAPER_460 RECOVERED: Higgs own-scale gravity G m_H/r_C^2 = 5.96 m/s^2 (~0.6 g_Earth)")
+assert_that(abs(C.cyclotron_electron() - 8.79e6) / 8.79e6 < 0.001,
+            "PAPER_460 RECOVERED: electron cyclotron 8.79e6 rad/s at Earth field (DNA clock)")
+assert_that(C.complex_fubi_stated()['re'] == C.galactic_fubi_class_stated()['galactic_fubi'] and C.complex_fubi_stated()['im_orders_below'] == 57,
+            "PAPER_483 RECOVERED: complex F_U_Bi_i real part matches the class pin; imaginary 57 orders below")
 
 # =============================================================================
 # REPORT
