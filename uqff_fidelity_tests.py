@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.358.0", "uqff_calculator.VERSION = 0.354.0 (derived-constants catalog 1272 + predecessor-mine II)")
+assert_that(C.VERSION == "0.359.0", "uqff_calculator.VERSION = 0.359.0 (deep-capture 501-700 + dispatch closure)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -5973,6 +5973,974 @@ assert_that(abs(C.cyclotron_electron() - 8.79e6) / 8.79e6 < 0.001,
             "PAPER_460 RECOVERED: electron cyclotron 8.79e6 rad/s at Earth field (DNA clock)")
 assert_that(C.complex_fubi_stated()['re'] == C.galactic_fubi_class_stated()['galactic_fubi'] and C.complex_fubi_stated()['im_orders_below'] == 57,
             "PAPER_483 RECOVERED: complex F_U_Bi_i real part matches the class pin; imaginary 57 orders below")
+
+# === PAPER_500 MILESTONE AUDIT GUARD ===
+import os as _os
+assert_that(_os.path.exists('AUDIT_500_PAPER_REPORT.md'),
+            "CHARTER MILESTONE: AUDIT_500_PAPER_REPORT.md exists (500-paper audit delivered)")
+assert_that(open('AUDIT_500_PAPER_REPORT.md', encoding='utf-8').read().count('SELF-RECTIFICATIONS') >= 1,
+            "AUDIT: self-rectification ledger present (doctrine validated 3x)")
+
+
+# =============================================================================
+# DISPATCH-GAP CLOSURE GUARD (charter Rule B; PAPER_329-500 sequential dispatches)
+# =============================================================================
+try:
+    _dgc_wc = C.wired_count()
+    assert_that(_dgc_wc >= 514, "Rule B closure: wired_count >= 514 (got %s)" % _dgc_wc)
+    for _dgc_n in range(329, 501):
+        _dgc_pid = 'PAPER_%03d' % _dgc_n
+        assert_that(_dgc_pid in C.DISPATCH, "Rule B closure: %s dispatch registered" % _dgc_pid)
+    _dgc_r = C.calc('PAPER_420')
+    assert_that(_dgc_r['source'] == 'PAPER_420' and 'fu_dissipation_term' in _dgc_r['value']['captured_functions'],
+                "Rule B closure: PAPER_420 dispatch surfaces fu_dissipation_term")
+    _dgc_r2 = C.calc('PAPER_437')
+    assert_that(_dgc_r2['value'].get('status') == 'NO_UNIQUE_EQUATIONS_CENSUS_VERIFIED',
+                "Rule B closure: PAPER_437 meta-paper census-note dispatch")
+    _dgc_r3 = C.calc('PAPER_500')
+    assert_that(_dgc_r3['value']['callables'].get('proto_hydrogen_z_quantization') is True,
+                "Rule B closure: PAPER_500 dispatch resolves callable")
+    assert_that('_DC_DISPATCH_INDEX' in dir(C) and len(C._DC_DISPATCH_INDEX) >= 172,
+                "Rule B closure: dispatch index covers all 172 papers 329-500")
+except Exception as _dgc_e:
+    assert_that(False, "DISPATCH-GAP CLOSURE guard crashed: %r" % _dgc_e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_501-510 (post-milestone band 1, Daniel-authorized)
+# =============================================================================
+try:
+    import math as _b51m
+    assert_that(abs(C.bbdt_core(1.0, 2.0, 1.0, 0.5) - (1.0 * _b51m.e + 0.5)) < 1e-9,
+                "P501 BBDT core: M*(dv)*exp(dv)+F_inert")
+    assert_that(abs(C.bbdt_mass_spawn(2.0, 4.0, 3.0, 1.0) - 1.0) < 1e-12, "P501 mass spawn triple")
+    assert_that(abs(C.prob_order_chaos(0.0, 2.0, 1.0, 5.0) - 0.2) < 1e-12, "P501 Prob_order")
+    assert_that(abs(C.ua_grind_stage(2.0, 3.0, 2, 1.0) - 36.0) < 1e-9, "P501 grinding recursion")
+    assert_that(abs(C.z_metal_gradient(0.0, 1.0) - 118.0) < 1e-9, "P501 Z_max ~118 at FGC core")
+    assert_that(abs(C.ub_bbdt_buoyancy(1.0, 2.0, 3.0, 0.5) - 2.0) < 1e-12, "P501 U_b from BBDT")
+    assert_that(abs(C.fu_bi_compressed_six(1, 1, 1, 1, 1, 1) - C.KAPPA_PER_DAY * C.F_TRZ * 6.0) < 1e-15,
+                "P502 compressed F_UBi six-term; ratio=F_TRZ=0.1 (PAPER_2156 authority)")
+    assert_that(abs(C.scm_mexican_hat_lagrangian(1.0, 0.0, 1.0, 1.0)) < 1e-12,
+                "P503 Mexican hat vanishes at vacuum phi=v")
+    assert_that(C.pi_decoder_digit_count() == 728, "P506 728 = 26*28")
+    assert_that(C._pi_digits_spigot(6) == [3, 1, 4, 1, 5, 9], "P506/509 pi spigot correct")
+    assert_that(abs(C.dpm_pair_complex_pi(list(range(728)), 720).imag - 5.0) < 1e-12,
+                "P506 DPM pair offset-13 wraparound")
+    assert_that(abs(C.g_hypergraph_degree(3, 12) - 0.25) < 1e-12, "P507 hypergraph degree gravity")
+    assert_that(abs(C.schumann_mode_freq(1, c=3e8) - 10.598606766878508) < 1e-3,
+                "P508 Schumann n=1 formula 10.6 Hz (paper labels 7.83 observed - DISCLOSED slip)")
+    assert_that(abs(C.sacred_resonance_r7(0.0) - 3.0 / 7.0) < 1e-12,
+                "P508 R(0) = (1/7)*(0+1+0+1+0+1+0) = 3/7")
+    assert_that(abs(C.k_pcr_coupling() - 0.23806121233773966) < 1e-12,
+                "P509 k_PCR computed 0.23806 (paper-implied ~0.31 - DISCLOSED)")
+    assert_that(abs(C.pcr_field(1, 4.6e-6) - 1.7218915424983965e-06) < 1e-15,
+                "P509/510 PCR exact sum 1.72e-6 (paper states 0.035 - DISCLOSED 4-order slip; approx chain also gives ~1.7e-6)")
+    assert_that(abs(C.pcr_gw150914_stated() - 0.035) < 1e-15, "P510 stated PCR preserved")
+    assert_that(abs(C.h_uqff_pcr_factor() - 1.0083321424318208) < 1e-9,
+                "P510 h-factor computed 1.00833 (paper states 1.011 - DISCLOSED)")
+    assert_that(abs(C.h_uqff_pcr_factor(0.314285714, 0.035) - 1.011) < 1e-3,
+                "P510 stated 1.011 recovered with paper-implied k_PCR=0.3143 (back-solve)")
+    _b51wc = C.wired_count()
+    assert_that(_b51wc >= 524, "band 501-510: wired_count >= 524 (got %s)" % _b51wc)
+    for _b51n in range(501, 511):
+        assert_that('PAPER_%03d' % _b51n in C.DISPATCH, "band 501-510: PAPER_%03d dispatched" % _b51n)
+except Exception as _b51e:
+    assert_that(False, "BAND 501-510 guard crashed: %r" % _b51e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_511-520
+# =============================================================================
+try:
+    import math as _b52m
+    assert_that(abs(C.theta_bib_stated() - 2.017e-8) < 1e-20, "P511 theta_bib stated (DISCLOSED)")
+    assert_that(abs(C.pcr_psr_stated() - 0.092) < 1e-12, "P511 stated |PCR| 0.092")
+    assert_that(abs(C.f_orbit_sacred(1.0, 2.0) - 2e-10) < 1e-22, "P511 F_orbit 1e-10 projection")
+    assert_that(abs(C.g_base_eta_car() - 0.34270357316480304) < 1e-9,
+                "P512 g_base computed 0.343 (paper states 2.04e-3 - DISCLOSED 168x slip)")
+    assert_that(abs(C.g_eff_eta_car_stated() - 1.0377) < 1e-4, "P512 stated 1.0377 factor")
+    assert_that(abs(C.delta_d_pcr(4.83) - 0.57462) < 1e-9, "P513 deltaD ~0.575 at D_eff=4.83")
+    assert_that(abs(C.d_corrected_pcr(4.83) - 5.40462) < 1e-9, "P513 D_corrected ~5.40")
+    assert_that(len(C.sacred_omega_table()) == 7, "P514 7 sacred frequencies")
+    assert_that(abs(C.psi_sacred(0.0)) < 1e-12, "P514 Psi(0) = 0")
+    assert_that(abs(C.psi_sacred_asymptote() - 56736.84596596106) < 1e-6,
+                "P514 asymptote sum 2/w_k")
+    assert_that(abs(C.e_sacred() - 4.68493006543382e-29) < 1e-38,
+                "P514 E_sacred computed 4.68e-29 (paper states 5.3e-26 - DISCLOSED 3-order)")
+    assert_that(abs(C.pi_digit_autocorr(0, 0, 312) - 1.0) < 1e-12, "P515 kappa(0,0)=1 identity")
+    assert_that(abs(C.pi_digit_autocorr(0, 7) - 0.6930807439066651) < 1e-12,
+                "P515 kappa(0,7) computed 0.693 (stated 0.944 - DISCLOSED)")
+    assert_that(abs(C.spectral_index_shift_uqff(0.944) - (-1.296)) < 2e-3,
+                "P515 stated alpha -1.296 recovered with stated kappa 0.944 (back-solve)")
+    assert_that(abs(C.nu_flux_uqff(290.0) - 0.25437771074526744) < 1e-12,
+                "P515 flux computed 0.254 (stated 0.342 - DISCLOSED; paper's own chain gives 0.254)")
+    assert_that(abs(C.e26d_egg(1, 2, 3, 4, 5) - 16.0) < 1e-12, "P516 26D Egg sum")
+    assert_that(abs(C.dpm_react_strength(2.0, 1.0, 1.0) - C.KAPPA_PER_DAY) < 1e-15,
+                "P516 DPM_react kappa/r^26 at r=1")
+    _b52l = C.shell_layer_triple(1.0, 1.0, 1.0, 1.0, 1.0, -1.0)
+    assert_that(abs(_b52l[0] - 7.54e10) < 1 and abs(_b52l[1] - 5.22e10) < 1 and abs(_b52l[2] + 1.0) < 1e-12,
+                "P516 triple-calc layers w_CW=7.54e10 / w_CCW=5.22e10 / t_neg")
+    assert_that(abs(C.t_adj_negative(2.0, 1.0, -0.5) - 0.5) < 1e-12, "P517 t_adj = t/(1+D)+t_neg")
+    assert_that(abs(C.distance_spooky(-1.0) - C.C_UQFF_DERIVED) < 1e-3, "P517 spooky distance c|t_neg|")
+    assert_that(abs(C.prob_order_refined_517(0.0, 2.0, 1.0, 1.0, 0.0, 0.0) - 1.0) < 1e-12,
+                "P517 refined Prob_order VARIANT (multiplies v_i-v_c; P501 divides - both wired)")
+    assert_that(abs(C.f_centrip_dpm(1.0, 1.0, 0.0) - (7.54e10) ** 2) < 1, "P518 centripetal CW")
+    assert_that(abs(C.f_centrif_dpm(1.0, 1.0, -1.0) + (5.22e10) ** 2) < 1, "P518 centrifugal CCW t_neg")
+    assert_that(abs(C.a26_from_forces(10.0, 4.0, 2.0) - 3.0) < 1e-12, "P518 a26=(Fc-Ff)/M")
+    assert_that(abs(C.ub_shell_519(2.0, 0.5, 6.0, 3.0, 1.0, 4.0) - 8.0) < 1e-12, "P519 U_b shell")
+    assert_that(abs(C.psi_26d_master(1.0, 2.0, 0.5, 3.0, 0.0, 1.0) - 5.0) < 1e-12, "P519 Psi_26D master")
+    _b52wc = C.wired_count()
+    assert_that(_b52wc >= 534, "band 511-520: wired_count >= 534 (got %s)" % _b52wc)
+    for _b52n in range(511, 521):
+        assert_that('PAPER_%03d' % _b52n in C.DISPATCH, "band 511-520: PAPER_%03d dispatched" % _b52n)
+except Exception as _b52e:
+    assert_that(False, "BAND 511-520 guard crashed: %r" % _b52e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_521-530
+# =============================================================================
+try:
+    import math as _b53m
+    assert_that(abs(C.us_range_spectrum(3.0, 1.0, 1.0, 1.0, 0.5) - 6.5) < 1e-12,
+                "P521 US range (A/3+O+2D/3) weights")
+    assert_that(abs(C.rering_bb(10.0, 0.0, 0.0, 0.0, 0.5) - 5.0) < 1e-12, "P521 ReRing_BB")
+    assert_that(abs(C.vacuum_grad_bb(2.0, 3.0, 1.0, 0.5) - 2.0) < 1e-12, "P521 vacuum gradient")
+    assert_that(abs(C.us_overlay(1.0, 2.0, 3.0, 0.5) - 3.0) < 1e-12, "P521 US overlay")
+    assert_that(abs(C.dpm_drive(2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0) - C.KAPPA_PER_DAY) < 1e-15,
+                "P522 DPM_drive kappa route")
+    assert_that(abs(C.ug1_spectra(1.0, 3.0, 3.0, 2.0) + 2.0) < 1e-12, "P522 Ug1 (1/3A-2/3R)")
+    assert_that(abs(C.off_diag_coupling(3.0, 1.0, 1.0) - 4.0) < 1e-12, "P522 off-diag 2/3")
+    assert_that(abs(C.spectra_quant_primes() - 3.78693894628541e-41) < 1e-50,
+                "P522 prime spectra sum 3.79e-41 (p=29 dominates)")
+    assert_that(abs(C.us_egg_trapezoid([0.0, 1.0, 2.0], 0.5) - 1.0) < 1e-12, "P523 trapezoid")
+    assert_that(abs(C.li26_ssq() - 0.5700000048414601) < 1e-15,
+                "P524/526/527 Li_26(SSq) = 0.570 first-term dominance (corpus claim VERIFIED)")
+    assert_that(C.plasma_orb_emerges(2.0, 1.0, 1.0, 0.5) and not C.plasma_orb_emerges(1.0, 1.0, 1.0, 0.5),
+                "P524 emergence threshold mu+sigma*Prob")
+    assert_that(abs(C.buoy_grad_524(2.0, 3.0, 1.0, 1.0, 1.0) - 6.0) < 1e-12, "P524 buoy gradient")
+    assert_that(abs(C.f_emerge_fraction(3.0, 12.0) - 0.25) < 1e-12, "P524 emergence fraction")
+    assert_that(abs(C.j_dot_dpm(2.0, 3.0) + 6.0) < 1e-12, "P525 J_dot drain")
+    assert_that(C.braid_repeat_prob() == 0.0, "P526 P(braid repeats)=0 EXACT")
+    assert_that(abs(C.prob_order_pymander(0.0, 1.0) - 1.0 / C.li26_ssq()) < 1e-12,
+                "P527 Pymander P_order = exp(-E/F)/Z")
+    assert_that(abs(C.pyramid_angle_deg() - 54.7356103) < 1e-6, "P527 arccos(1/sqrt3)=54.74deg")
+    assert_that(C.sphere_thirds() == (1.0 / 3.0, 2.0 / 3.0), "P527 1/3-2/3 volume split")
+    _b53i = C.uqff_comp_invariants(1.0)
+    assert_that(abs(_b53i['trace'] - 4.0 / 3.0) < 1e-12 and abs(_b53i['det'] - 2.0 / 27.0) < 1e-12
+                and abs(_b53i['frobenius'] - _b53m.sqrt(2.0 / 3.0)) < 1e-12
+                and abs(_b53i['lambda_destruct'] - 2.0 * _b53i['lambda_stable']) < 1e-12
+                and _b53i['bounded'],
+                "P528 UQFF_comp invariants + lambda_destruct=2*lambda_stable + P<=3/2 bound")
+    assert_that(not C.uqff_comp_invariants(1.6)['bounded'], "P528 unbounded above P=3/2")
+    assert_that(abs(C.ub_jet_density(2.0, 3.0) - 3.0) < 1e-12, "P529 U_b_jet = rho*g*(1-1/rho)")
+    assert_that(abs(C.u_bound_jet(4.0, 1.0) - 2.0) < 1e-12, "P529 sqrt(GM/r) bound")
+    assert_that(abs(C.h_m_jet(2.0, 3.0, 1) - 6.0) < 1e-12, "P529 H_m at m=1")
+    assert_that(abs(C.f_sm_jet(2.0, 1.0) - 2.0) < 1e-12, "P529 kappa/r^26 forcing")
+    assert_that(C.ym_gap_delta_530(1.0, 10.0) > 0.0 and abs(C.ym_gap_delta_530(1.0, 10.0)
+                - _b53m.exp(-0.1) / (3.0 * C.li26_ssq())) < 1e-12,
+                "P530 YM gap Delta > 0 positivity")
+    _b53wc = C.wired_count()
+    assert_that(_b53wc >= 544, "band 521-530: wired_count >= 544 (got %s)" % _b53wc)
+    for _b53n in range(521, 531):
+        assert_that('PAPER_%03d' % _b53n in C.DISPATCH, "band 521-530: PAPER_%03d dispatched" % _b53n)
+except Exception as _b53e:
+    assert_that(False, "BAND 521-530 guard crashed: %r" % _b53e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_531-540
+# =============================================================================
+try:
+    import math as _b54m
+    assert_that(abs(C.scm_growth_bb(2.0, 3.0, 4.0) - 6.0) < 1e-12, "P531 SCm growth (1-1/t)")
+    assert_that(C.hypergraph_vertex_count(5) == 6, "P531 |V(G_n)|=n+1")
+    assert_that(abs(C.n0_planck_steps() - 8.0705e60) < 1e57, "P531 n0 = 8.07e60 Planck steps")
+    assert_that(abs(C.c26_c22_ratio() - 0.0013714566252567672) < 1e-15,
+                "P531 C26/C22 computed 1.37e-3 (stated 1.8e-3 - DISCLOSED)")
+    assert_that(abs(C.e_bh_harmonic() - 0.8498938486278147) < 1e-12, "P532 E_BH harmonic sum")
+    assert_that(C.us_orb_harmonic(1.0, 0.0) == C.e_bh_harmonic(), "P532 US_orb reduces to E_BH at delta=0")
+    assert_that(abs(C.r_orbit_prime(59) - 28.886033405779592) < 1e-9,
+                "P533 Neptune p=59 -> 28.89 AU (paper 28.9)")
+    assert_that(abs(C.period_ratio_prime(59, 29) - (59.0 / 29.0) ** 0.5) < 1e-12, "P533 Kepler prime ratio")
+    assert_that(abs(C.delta_res_centripetal(1.0, 1.0, 1.0, 2.0 / 3.0, 1.0)) < 1e-12,
+                "P534 Delta_res = 0 at lambda3 = 2P/3 (analytically exact)")
+    assert_that(abs(5.972e24 * 29783.0 ** 2 / 1.496e11 - 3.543e22) < 5e19,
+                "P534 Earth F_c anchor: computed 3.541e22, paper 3.543e22 (rounding)")
+    assert_that(C.dp_dt_uqff(1.0, 29783.0) < 1e-8, "P534 dP/dt ~ 1e-11 order for Earth v")
+    assert_that(abs(C.r_alfven_mhd(1.0, 1.0, 1.0, 1.0) - (1.0 / (2.0 * C.G_OBSERVED * 1.25663706212e-06)) ** (1.0 / 7.0)) < 1e-6,
+                "P536 Alfven radius 1/7 power")
+    assert_that(abs(C.r_launch_prime(29, 1.0) - 29.0 ** (2.0 / 3.0)) < 1e-12, "P536 launch p^(2/3)")
+    assert_that(abs(C.ub_split_monopole(1.0, 1.0, 1.0, True) + C.ub_split_monopole(1.0, 1.0, 1.0, False)) < 1e-15,
+                "P536 split-monopole sign antisymmetry")
+    assert_that(abs(C.t_disk_au(1.0) - 280.0) < 1e-12 and abs(C.t_disk_au(4.0) - 140.0) < 1e-12,
+                "P537 disk T(r) = 280 r^-1/2")
+    assert_that(abs(C.r_frost_line() - 2.71280276816609) < 1e-12,
+                "P537 frost line 2.7128 AU (paper prints 2.718 - DISCLOSED)")
+    assert_that(C.k_i_temp_ratio(120.0, 40.0) == 3, "P537 K_i rounding")
+    assert_that(abs(C.eta_18_encompassment() - 0.4344745613004629) < 1e-12,
+                "P538 eta = 1-e^-SSq = 0.4345 (stated 0.4337 - DISCLOSED)")
+    assert_that(abs(C.phi_uqff_arctan(1.0, 1.0, 1.0) - _b54m.atan(C.SSQ)) < 1e-12, "P538 arctan phase")
+    assert_that(abs(C.omega_res_disc(1e4) - 17071.414479606938) < 1e-6,
+                "P539 NS omega_res 1.707e4 rad/s (paper 1.71e4; also 4.1e16 elsewhere - DISCLOSED)")
+    assert_that(abs(C.delta_omega_26(17071.414479606938) - 656.5928646002668) < 1e-9,
+                "P539 delta_omega ~ 6.6e2 rad/s")
+    assert_that(abs(C.delta_ym_540(5.24) - 3.064327459352364) < 1e-12,
+                "P540 Delta_YM = 5.24/(3Z) = 3.064 GeV^2 (paper 3.07)")
+    assert_that(abs(C.ratio_2pow26_26pow4() - 146.85424179825637) < 1e-9, "P540 2^26/26^4 = 146.85")
+    assert_that(C.riemann_im_rho_540(1) > 0 and C.ns_h1_bound_540(1.0, 3.064) > 0,
+                "P540 Riemann/NS auxiliary forms positive")
+    _b54wc = C.wired_count()
+    assert_that(_b54wc >= 554, "band 531-540: wired_count >= 554 (got %s)" % _b54wc)
+    for _b54n in range(531, 541):
+        assert_that('PAPER_%03d' % _b54n in C.DISPATCH, "band 531-540: PAPER_%03d dispatched" % _b54n)
+except Exception as _b54e:
+    assert_that(False, "BAND 531-540 guard crashed: %r" % _b54e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_541-550
+# =============================================================================
+try:
+    import math as _b55m
+    _b55s = C.dpm_split_z26(1.0)
+    assert_that(abs(_b55s[0] + _b55s[1] - 1.0) < 1e-12 and abs(_b55s[0] - 0.57) < 1e-6,
+                "P541 DPM split sums to B_pol; north = Z26")
+    assert_that(C.phi_rrl_stated_range() == (30.0, 800.0), "P541 RRL window stated")
+    assert_that(abs(C.off_diag_us(1.0, 1e-5) - C.li26_ssq() * 1e-5) < 1e-18, "P542 off-diag kappa*Z26*P")
+    assert_that(abs(C.p_order_entropy(1e10, 1e14) - 9.999000049998334e-06) < 1e-15,
+                "P543/548 P_order 9.999e-6 (Z=1e5 numeric; symbolic Z26 mismatch DISCLOSED)")
+    assert_that(abs(C.mass_gap_dpm(1e-5) - 3.333333333333333e-06) < 1e-15,
+                "P543/544 mass gap Delta = P/3 = 3.333e-6 > 0")
+    assert_that(abs(C.dpm_react_strength(0.57, 0.43, 1.0) - 7e-05) < 1e-18,
+                "P544 F_sm = 5e-4*(0.57-0.43) = 7.0e-5 EXACT (via existing dpm_react_strength)")
+    assert_that(C.n_cross_ssq() == 7, "P545 n_cross = floor(pi/0.43) = 7 EXACT")
+    assert_that(abs(C.r_merger_549(1.0, 2.0, 0.0, 1e-3, 1e-10) - 4472135.954999579) < 1e-3,
+                "P549 r_merger 4.47e6 m EXACT")
+    assert_that(abs(6.6743e-11 * 1e41 * 8e40 / (3.086e20) ** 2 - 5.6e30) < 2e28,
+                "P549 Newton tide 5.607e30 (paper 5.6e30)")
+    assert_that(abs(C.remnant_fraction_549() - 0.1832) < 1e-12, "P549 remnant 18.32%")
+    assert_that(abs(C.d1_displacement_iter() + 4.00004) < 1e-12, "P546 D1 = -4.000040 EXACT")
+    assert_that(abs(C.rho_buoy_546(0.1, 5.0, 1.0) - 2.0) < 1e-12, "P546 rho_buoy closed form")
+    assert_that(abs(C.a_ua_accel(1.0, 1.0, 2.0) + 0.25) < 1e-12, "P546 A = -2 lam UA/t^3")
+    assert_that(abs(C.ug4_rt(1e-5, -10.0) + 1e-4) < 1e-18, "P547 Ug4(1e-5 AU, -10) = -1e-4 EXACT")
+    assert_that(abs(C.t_stab_547(1.0, 1.0, 1.0, 1.0, 1e8) + 1e8) < 1e-3, "P547 t_stab -1e8 form")
+    assert_that(abs(C.pi_seq_547(2, 1.0)[2] - (_b55m.pi + _b55m.pi ** 2)) < 1e-12, "P547 pi progression")
+    assert_that(abs(C.fubi_gaussian(0.0, 0.0, 1.0, 1.0) - 1.0 / _b55m.sqrt(2 * _b55m.pi)) < 1e-12,
+                "P548 Gaussian peak 1/sqrt(2pi)")
+    assert_that(abs(C.fubi_integral_bound(1.0, 1.0) - _b55m.sqrt(_b55m.pi / 2.0)) < 1e-12,
+                "P548 sqrt(pi/2) collapse-prevention bound")
+    assert_that(abs(C.deriv26_power_law(1, 1.0, 1.0) - _b55m.factorial(26)) < 1e10,
+                "P550 d26/dr26 of 1/r -> 26! at r=1")
+    assert_that(abs(C.r_q_26(2.0, 1.0) - 0.09733858692755647) < 1e-15,
+                "P550 (2/26!)^(1/26) = 0.0973 EXACT")
+    assert_that(abs(C.um_suppression_550() + 345.0) < 1e-9,
+                "P550 suppression log10 = -345 (1e-345 underflow-honest)")
+    _b55wc = C.wired_count()
+    assert_that(_b55wc >= 564, "band 541-550: wired_count >= 564 (got %s)" % _b55wc)
+    for _b55n in range(541, 551):
+        assert_that('PAPER_%03d' % _b55n in C.DISPATCH, "band 541-550: PAPER_%03d dispatched" % _b55n)
+except Exception as _b55e:
+    assert_that(False, "BAND 541-550 guard crashed: %r" % _b55e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_551-560
+# =============================================================================
+try:
+    import math as _b56m
+    assert_that(abs(C.ug1_26th_factorial(1.0) - _b56m.factorial(26)) < 1, "P551 26! anti-collapse")
+    assert_that(abs(C.ug4_split_13(1.496e6, -10.0) + 5.800857891327443e+26) < 1e14,
+                "P551 (13!)^2*r*t example -5.80e26 EXACT")
+    assert_that(abs(C.rho_min_singularity(1e-3, 1.0) - 2.4795962632247974e-30) < 1e-42,
+                "P551 rho_min 2.48e-30 -> no singularity")
+    assert_that(abs(C.offdiag_13_coupling(1.0) - 6227020800.0) < 1, "P552 13! = 6.227e9")
+    _b56e = C.eig_split_552(1e-5, 1.0)
+    assert_that(abs(_b56e[0] - _b56e[1] - 2 * 6227020800.0) < 1, "P552 eigenvalue split 2*13!")
+    assert_that(C.ns26_gap_bound(1.0, 2.0) > 0, "P552 26! c/r^26 positive gap")
+    assert_that(abs(C.p26_partial_exp(1.0) - _b56m.exp(-1.0)) < 1e-15,
+                "P553 p26(1) = e^-1 float-exact (truncation 9.18e-29; paper's 2.86e-29 line DISCLOSED)")
+    assert_that(abs(C.p26_integral_01() - 0.746824132812427) < 1e-12,
+                "P553 int_0^1 = 0.7468 = sqrt(pi)/2 erf(1)")
+    assert_that(C.factorial26_mod113() == 12, "P553 26! mod 113 = 12 != 0 (Legendre)")
+    assert_that(abs(C.riemann_r0r0_bsfg(1.0, 0.0, 1.0, 1.0) - 6.0) < 1e-12, "P554 6 eta C/r^5")
+    assert_that(abs(C.eps_prime_bsfg(1.0, 0.0, 1.0, 1.0) + 3.0) < 1e-12, "P554 eps' = -3 eta C/r^4")
+    assert_that(abs(1.56e-19 / 3.95e-7 - 3.9e-13) < 1e-14, "P554 BSFG/GR ratio 3.9e-13 stated")
+    assert_that(abs(C.kretschmann_bsfg(2.0) - 48.0) < 1e-12, "P554 K = 12 R^2")
+    assert_that(abs(C.delta_g_aether(1.0, 0.0, 1.0, 1.0) + 1.5) < 1e-12, "P555 eps'/2 correction")
+    assert_that(C.v_orbit_bsfg(4.0, 1.0, 0.0, c=1.0) == 2.0, "P555 reduces to Kepler at eps'=0")
+    assert_that(abs(C.l_i_compact(0.0, 5) - 1.616e-35) < 1e-45, "P556 L_i(0) = r_P")
+    assert_that(C.bsfg_group_dim() == 26, "P557 dim G_BSFG = 26 EXACT")
+    assert_that(abs(C.casimir_so3_bsfg(3.0) - 6.0) < 1e-12, "P557 Casimir 2P^2/3")
+    assert_that(abs(C.zeta_bsfg_26(C.SSQ) - C.li26_ssq()) < 1e-15, "P558 zeta_BSFG = Li_26")
+    assert_that(C.dvp_encoding_558(1.0) == (int(_b56m.floor(_b56m.factorial(26) * 1.0)) % 113, int(_b56m.floor(_b56m.factorial(26) * 1.0)) % 2),
+                "P558 DVP encoding mod-113/mod-2")
+    assert_that(C.bh26_eigen_558(25) == 1250 and C.bh26_eigen_558(0) == 0, "P558 lambda_k = k(k+25)")
+    assert_that(abs(C.einstein_amp_559(1e-22, 6.96e8) - 17894.137723113374) < 1e-6,
+                "P559 amp 1.789e4 at R_sun (stated 1.8e4)")
+    assert_that(abs(C.kappa_einstein() - 2.0765541005869294e-43) < 1e-55,
+                "P559 kappa_E 2.077e-43 (stated 2.07e-43)")
+    assert_that(abs(C.ts00_sun_559() - 1.265784755234909e+20) < 1e8,
+                "P559 T_s00(R_sun) 1.266e20 Pa (stated 1.27e20)")
+    assert_that(abs(C.lambda_eff_559(1e-22, 1.27e20) - 1.3186118538727003e-45) < 1e-57,
+                "P559 Lambda_eff 1.32e-45 (stated 1.3e-45; 1.2e7 x Lambda_obs)")
+    assert_that(abs(C.delta_phi_holonomy(2.0, 3.0) - 6.0) < 1e-12, "P560 holonomy rotation R*dA")
+    _b56wc = C.wired_count()
+    assert_that(_b56wc >= 574, "band 551-560: wired_count >= 574 (got %s)" % _b56wc)
+    for _b56n in range(551, 561):
+        assert_that('PAPER_%03d' % _b56n in C.DISPATCH, "band 551-560: PAPER_%03d dispatched" % _b56n)
+except Exception as _b56e2:
+    assert_that(False, "BAND 551-560 guard crashed: %r" % _b56e2)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_561-570
+# =============================================================================
+try:
+    import math as _b57m
+    _b57rh = C.r_h_bsfg(1e-22, 4.27e46, 1.0)
+    assert_that(abs(_b57rh - 162234279.7345676) < 1, "P561 r_h = 1.622e8 m (stated 1.62e8)")
+    assert_that(abs(C.kappa_surface_bsfg(_b57rh) - 830978983.1784711) < 1,
+                "P561 kappa = 8.31e8 (stated 8.33e8)")
+    assert_that(abs(C.t_hawking_bsfg(C.kappa_surface_bsfg(_b57rh)) - 3.369631013905781e-12) < 1e-24,
+                "P561 T_H^BSFG = 3.37e-12 K EXACT-to-paper")
+    assert_that(abs(C.t_hawking_gr(1.989e30) - 6.168706986966127e-08) < 1e-20,
+                "P561 T_H^GR(M_sun) = 6.17e-8 K")
+    assert_that(abs(C.r_cross_562(1e-22, 4.27e46, 1.989e30) / 1.496e11 - 0.36) < 5e-3,
+                "P562 r_cross = 0.36 AU (Sun)")
+    assert_that(abs(C.h_eta_562() - 6.62607015e-56) < 1e-64, "P562 h_eta = 6.63e-56")
+    assert_that(abs(C.ord_bsd_563(1) - 2000.5000416667483) < 1e-9,
+                "P563 BSD ord multiplier 2000.5 EXACT from kappa=KAPPA_PER_DAY")
+    assert_that(abs(C.shots_4d_563(26) - 2.6e9) < 1, "P563 shots_4D")
+    assert_that(abs(C.hodge_total_563() - 2.88e22) < 1e10, "P563 Hodge total stated")
+    assert_that(abs(C.b_classical_olbers() - 1.4485685396149515e+21) < 1e9,
+                "P564 B_classical computed 1.449e21 (paper 1.49e20 - DISCLOSED 10x)")
+    assert_that(abs(C.r_ug1_damping_564(1.0, 0.0, 26) - _b57m.exp(-C.SSQ)) < 1e-12,
+                "P564 R_Ug1 damping at n=N")
+    assert_that(abs(C.p_order_564(0.0) - _b57m.exp(-1.0 / 9.0)) < 1e-12, "P564 P_order e^-1/9")
+    assert_that(abs(C.b_sky_uqff_stated_564() - 3.2e-2) < 1e-12, "P564 B_sky stated 3.2e-2")
+    assert_that(abs(C.li26_ssq(ssq=0.507) - 0.507) < 1e-6,
+                "P565 Li_26(0.507) = 0.507 (paper SSq variant - drift DISCLOSED)")
+    assert_that(abs(C.l_dvp_565() - 4.4e26 / 149.0) < 1e10, "P565 l_DVP = 2.95e24 m")
+    assert_that(abs(C.c_num_bsfg() - 4.267638060423441e+46) < 1e34,
+                "P566 C_num 4.268e46 = P561's 4.27e46 (P566's 1.60e46 - DISCLOSED conflict)")
+    assert_that(C.gamma_bsfg_566(1e-22, 3.7e-112) < 1e-150, "P566 Gamma ~ 4.6e-157 negligible")
+    assert_that(abs(C.rho_dot_star_567(0.0) - 0.015 * C.madau_psi(0.0)) < 1e-12
+                and abs(C.rho_dot_star_567(1.9) - 0.13290332848265868) < 1e-12,
+                "P567 Madau SFR: today 0.015, computed peak 0.133 (paper 0.178 - DISCLOSED)")
+    assert_that(abs(C.n_star_z_567(0.0, 1.0) - 1.0) < 1e-12, "P567 n(0) = n0")
+    assert_that(abs(C.kappa_lambda_opacity(2.0, 1.0, 1.0, 2.0) - 4.0) < 1e-12, "P568 opacity power law")
+    assert_that(abs(C.ssq_lambda_568(1.0, 1.0) - C.SSQ) < 1e-12, "P568 SSq(lambda) at lam_opt")
+    assert_that(abs(C.b_cmb_569() - 9.95174438974756e-07) < 1e-18,
+                "P569 B_CMB computed 9.95e-7 (paper 4.0e-6 - DISCLOSED 4x slip)")
+    assert_that(abs(C.f_total_569() - 2.0805369127516778e-26) < 1e-38,
+                "P569 f_total 2.08e-26 (stated 2.1e-26)")
+    assert_that(C.sigma_breit_wheeler(0.5) > 0 and abs(C.sigma_breit_wheeler(0.0)) < 1e-40,
+                "P570 Breit-Wheeler vanishes at threshold, positive above")
+    assert_that(abs(C.l_gamma_gamma_570() - 1.434720229555237e+20) < 1e8,
+                "P570 photon-photon mfp 1.43e20 m (stated 1.4e20)")
+    assert_that(abs(C.l_dvp_570(113, 30) - 5.012647424568842e+86) < 1e74,
+                "P570 l_DVP(113) computed 5.01e86 (paper 2.6e78 - DISCLOSED 9-order slip)")
+    assert_that(abs(C.tau_dvp_exponent_570(1) - 120879.12087912089) < 1e-3,
+                "P570 tau exponent 1.209e5 per shell (stated 1.2e5)")
+    _b57wc = C.wired_count()
+    assert_that(_b57wc >= 584, "band 561-570: wired_count >= 584 (got %s)" % _b57wc)
+    for _b57n in range(561, 571):
+        assert_that('PAPER_%03d' % _b57n in C.DISPATCH, "band 561-570: PAPER_%03d dispatched" % _b57n)
+except Exception as _b57e:
+    assert_that(False, "BAND 561-570 guard crashed: %r" % _b57e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_571-580
+# =============================================================================
+try:
+    import math as _b58m
+    assert_that(abs(C.delta_t_neg_shell(-26.0, 13) + 13.0) < 1e-12, "P571 per-shell t_neg n/26")
+    assert_that(abs(C.dr_dt_dpm_571(1.0, 0.0) - C.C_OBSERVED) < 1e-3, "P571 photon speed limit at kappa=0")
+    assert_that(abs(C.z_eff_571(1.0, 0.0, 13) - 1.0) < 1e-12, "P571 z_eff reduces at t_neg=0")
+    assert_that(abs(C.b_total_tneg_571([1.0], [0.0], 0.0) - 1.0) < 1e-12, "P571 B_total at t_neg=0")
+    assert_that(abs(C.c_sr_calibration() - 1.0 / (4.0 * _b58m.pi)) < 1e-15, "P572 1/4pi = 0.0796")
+    assert_that(abs(C.b_dpm_calibrated_572() - 0.0025464790894703256) < 1e-15,
+                "P572 B_DPM,cal 2.546e-3 (stated 2.5e-3)")
+    assert_that(abs(C.b_shell_cal_572(4.0 * _b58m.pi, 1.0) - 1.0) < 1e-12, "P572 j dr/4pi")
+    assert_that(C.stable_nucleus_573(5) and not C.stable_nucleus_573(6),
+                "P573 stability threshold P>0.18 flips between Z=5 and Z=6")
+    assert_that(abs(C.t_j_taylor_575(2, 2) - _b58m.exp(4.0)) < 1e-9,
+                "P573/575 Taylor-26 = e^A at small A (A<=300 claim DISCLOSED)")
+    assert_that(abs(C.c26_bound_575() - 2.4795962632247974e-27) < 1e-39, "P573/575 1/26! floor")
+    assert_that(C.epoch_shell_identity_574() == 26, "P574 26 = 5*5+1 EXACT")
+    assert_that(C.group_z_575(26) == 4 and C.group_z_575(118) == 8, "P575 BH_cum 2n^2 grouping")
+    assert_that(abs(C.delta_a_bh_576(1.0) - 3.854419716215045) < 1e-12, "P576 H_26 = 3.8544")
+    assert_that(abs(C.mass_error_factor_576(100.0, 98.0) - 0.02) < 1e-12, "P576 error factor")
+    assert_that(abs(C.tau_half_superheavy_577(120) - 0.01) < 1e-12, "P577 tau(120) = 1e-2 s")
+    assert_that(C.lambda1_shifted_578(1e-5, 1e-3, 0.1, 1.0) > 1e-5 / 3.0 and C.lambda1_shifted_578(1e-5, 1e-3, 0.1, 1e3) >= 1e-5 / 3.0,
+                "P578 lambda_1 > P/3 for r > 0")
+    assert_that(C.lambda3_shifted_578(1e-5, 1e-3, 1e3) < 1.0, "P578 lambda_3 finite -> no blow-up")
+    assert_that(abs(C.f_eq_579(1.0, 2.3e17, 1e-3) - 5.677250640819567) < 1e-9,
+                "P579 f_eq = (k rho/g)^(1/27)")
+    assert_that(abs(C.r_eq_579_he4() - 9.325048082403138e-08) < 1e-18,
+                "P579 He-4 r_eq computed 9.33e-8 m (paper 2.9 fm - DISCLOSED 7-order slip)")
+    assert_that(abs(C.h_uqff_gw_580(1.0, 1e44, 100.0, 3e24) - 1.3443048704220188e-08) < 1e-18,
+                "P580 h_UQFF computed 1.34e-8 (stated 1e-20 - DISCLOSED 12-order slip)")
+    assert_that(abs(C.h_gr_gw_580(1e44, 3e24) - 2.7541154142179554e-25) < 1e-37,
+                "P580 h_GR computed 2.75e-25 (stated 1e-21 - DISCLOSED)")
+    assert_that(abs(C.h_lambda_floor_580() - 3.3333333333333335e-53) < 1e-65,
+                "P580 Lambda/3 floor 3.33e-53 EXACT")
+    assert_that(abs(C.lambda_uqff_580() + 433.7614007938969) < 1e-6,
+                "P580 Lambda log10 = -433.8 (paper claims -52 - DISCLOSED massive slip)")
+    _b58wc = C.wired_count()
+    assert_that(_b58wc >= 594, "band 571-580: wired_count >= 594 (got %s)" % _b58wc)
+    for _b58n in range(571, 581):
+        assert_that('PAPER_%03d' % _b58n in C.DISPATCH, "band 571-580: PAPER_%03d dispatched" % _b58n)
+except Exception as _b58e:
+    assert_that(False, "BAND 571-580 guard crashed: %r" % _b58e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_581-590
+# =============================================================================
+try:
+    import math as _b59m
+    assert_that(abs(C.lqg_dispersion_omega2(1.0, eta_lqg=0.0) - C.C_OBSERVED ** 2) < 1,
+                "P581 dispersion reduces to c^2k^2 at eta=0")
+    assert_that(abs(C.lqg_dv_over_c(150.0) - 2.540164166605438e-41) < 1e-53,
+                "P581 dv/c at 150 Hz computed 2.54e-41 (stated ~1e-42 order - DISCLOSED)")
+    assert_that(abs(C.delta_theta_string_582(1e-21, 1e-15) - 2.6e-76) < 1e-88,
+                "P582 delta_theta 2.6e-76 EXACT")
+    assert_that(abs(C.theta_cumulative_582(2.6e-76, 1.0, 3.16e17) - 8.216e-59) < 1e-71,
+                "P582 Theta_10Gyr 8.2e-59 (paper numeric omits f factor - DISCLOSED)")
+    assert_that(abs(C.delta_theta_string_582(1.2e-16, 1e18) - 3.12e-104) < 1e-116,
+                "P582 SNR delta_theta 3.1e-104 (stated 3e-104)")
+    _b59e = C.eig_offdiag_583(1e-5, 0.0, 0.0, 0.0, 0.0)
+    assert_that(abs(_b59e[0] - 1e-5 / 3.0) < 1e-18 and abs(_b59e[2] - 2e-5 / 3.0) < 1e-18,
+                "P583 eigenvalues reduce to P/3, 2P/3 at zero couplings")
+    assert_that(C.ub_void_583(2.0, 1e-3) > 0, "P583 U_b void positive")
+    assert_that(C.collatz_T(27) == 82 and C.collatz_T(82) == 41, "P584 Collatz map")
+    assert_that(C.collatz_steps_584(27) == 111, "P584 Collatz(27) = 111 steps")
+    assert_that(abs(C.bb_init_586(2.0, 3.0, 0.0) - 6.0) < 1e-12, "P586 BB init product")
+    assert_that(abs(C.bb_full_586(1.0, 1.0, 1.0, 0.0) - 26.0) < 1e-12, "P586 BB full 26x")
+    assert_that(abs(C.a_scale_586(2.0, 0.0, 1.0, 0.0) - 2.0) < 1e-12,
+                "P586/587 a(t) = t^(v_i-v_c)e^G accelerating branch")
+    assert_that(abs(C.omega_egg_587(9.99e-6, 3e8, 0.0) - 9.99e-6) < 1e-18,
+                "P587 Omega_egg 9.99e-6 EXACT")
+    assert_that(abs(C.h_inf_587(1.0) - 0.5196248550637277) < 1e-12,
+                "P587 H_inf = 0.52 H0 (stated)")
+    assert_that(abs(C.maxwell26_correction_log10(1.5e11) + 284.8935724625942) < 1e-6,
+                "P588 correction log10 -284.9 at 1 AU (paper -281 - DISCLOSED)")
+    assert_that(abs(C.maxwell26_correction_log10(1e-35) - 1008.0369827909649) < 1e-6,
+                "P588 correction log10 +1008 at Planck scale (paper +1000 regime)")
+    assert_that(abs(C.dpm_n_588(1.0, 3.0, 1.0, 2.0) - 0.5) < 1e-12, "P588 DPM_n inverse-square")
+    assert_that(abs(C.db_dominant_log10_589() - 725.6056190268059) < 1e-6,
+                "P589 db log10 = 725.6 (paper 4.03e725 EXACT regime)")
+    assert_that(abs(C.rho_de_log10_589() - 708.6513765173665) < 1e-6,
+                "P589 rho_DE magnitude log10 708.65 (paper 4.5e708)")
+    assert_that(abs(C.h_planck_uqff_590() - 6.72e-34) < 1e-46,
+                "P590 h_UQFF = F_TRZ*Phi_res*E0/f = 6.72e-34 EXACT (3-primitive hit)")
+    assert_that(abs((C.h_planck_uqff_590() - 6.62607015e-34) / 6.62607015e-34 * 100 - 1.4175800719526053) < 1e-6,
+                "P590 1.4176%% off CODATA (paper states 1.4%%)")
+    assert_that(C.h_dpm_590(3.33e-6, 1.0, 1e-10, 1e14, 1e10, 3e8) > 0, "P590 DPM route positive")
+    _b59wc = C.wired_count()
+    assert_that(_b59wc >= 604, "band 581-590: wired_count >= 604 (got %s)" % _b59wc)
+    for _b59n in range(581, 591):
+        assert_that('PAPER_%03d' % _b59n in C.DISPATCH, "band 581-590: PAPER_%03d dispatched" % _b59n)
+except Exception as _b59e2:
+    assert_that(False, "BAND 581-590 guard crashed: %r" % _b59e2)
+
+
+# =============================================================================
+# DEEP-MINE GUARD: PAPER_501-600 RESWEEP RECOVERY + BAND PAPER_591-600
+# =============================================================================
+try:
+    import math as _b60m
+    assert_that(abs(C.ub_mass_spawn_501(2.0, 3.0, 0.5) - 3.0) < 1e-12, "P501R U_b triple recovered")
+    assert_that(abs(C.prob_order_triple_501(0.0, 1.0) - 1.0) < 1e-12, "P501R Prob variant recovered")
+    assert_that(abs(C.q_wstp_502(5) - 0.25) < 1e-12, "P502R Q_WSTP")
+    assert_that(C.k_eta_503() == 1e-113, "P503R k_eta")
+    assert_that(abs(C.g_sgr1745_compressed_504() - 1154.1018619753086) < 1e-6,
+                "P504R embedded WOLFRAM_TERM 1154.1")
+    assert_that(abs(C.pi_phase_506([7]) - _b60m.pi) < 1e-12, "P506R phase pi/7 per digit")
+    assert_that(abs(C.pi_amplitude_curve_506(0.0)) < 1e-12, "P506R amplitude vanishes at phi=0")
+    assert_that(abs(C.d_bfs_507(8303, 6) - 4.63760990128096) < 1e-9,
+                "P507R BFS dimension log(r+1) variant (4.64 vs P513 log-r 4.83)")
+    assert_that(abs(C.delta_dil_517(1.1, 1.0) - 0.1) < 1e-12, "P517R Delta_dil recovered")
+    assert_that(C.kepler_merger_residual_545(1.989e30, 5.972e24, 1.496e11, 29783.0) < 1e-3,
+                "P545R Kepler merger residual small with rounded inputs")
+    assert_that(abs(C.e_n_hodge_563(26) - 1e6) < 1e-6, "P563R Hodge ladder E_26 = 1e6 J")
+    assert_that(C.l_uqff_local_563(0.0, 2.0, 1.0) < 1.0 + 1e-3, "P563R Euler local factor sane")
+    _b60a = C.alpha_uqff_591()
+    assert_that(abs(_b60a - 0.007287314244134402) < 1e-15,
+                "P591 alpha = 1/(Phi_res*26*2pi) = 7.2873e-3 EXACT (two-primitive hit)")
+    assert_that(abs((_b60a - 7.2973525693e-3) / 7.2973525693e-3 * 100 + 0.13756119181947252) < 1e-9,
+                "P591 residual 0.1376%% vs CODATA (paper states 0.14%%)")
+    assert_that(abs(C.c_sqrt_g_592(9e16) - 3e8) < 1, "P592 c = sqrt(g) at g = 9e16")
+    assert_that(abs(5.29e-11 * 4.13e16 - 2.18e6) < 5e3, "P592 r*omega = 2.18e6 EXACT")
+    _b60g = C.g_uqff_593()
+    assert_that(abs(_b60g - 6.66899190955728e-11) < 1e-23,
+                "P593 G_UQFF = 6.66899e-11 EXACT (primitive-stack hit)")
+    assert_that(abs((_b60g - 6.6743e-11) / 6.6743e-11 * 100 + 0.07953029445364153) < 1e-9,
+                "P593 residual 0.0795%% vs CODATA (paper states 0.08%%)")
+    assert_that(abs(C.g_cosmic_route_593() - 6.686635570847847e-11) < 1e-23,
+                "P593 cosmic route 6.6866e-11 (stated 6.687e-11)")
+    assert_that(abs(C.g_void_593(1e-3, 1e-26) - 1e-3 / (4 * _b60m.pi * 1e-26)) < 1e12,
+                "P593 void route g/(4pi rho)")
+    assert_that(abs(C.r_min_a_594() - 11.94413276033086) < 1e-9,
+                "P594 r_min^A = 11.94 m (paper 11.7 - rounding)")
+    assert_that(abs(C.r_min_c_594(8.55e36) - 1045268772935.7045) < 1,
+                "P594/595 Sgr A* r_min^C = 1.045e12 m (stated 1.05e12)")
+    assert_that(abs(C.r_bh26_595() - 0.0032586136739130435) < 1e-12,
+                "P595 r_BH26 = 3.259 mm (stated 3.26)")
+    assert_that(abs(C.i_core_595(1.0, 1.0) - 1.380649e-23 * 26) < 1e-30, "P595 I_core = kB*26")
+    assert_that(C.qg_bound_596(1.0) == float(_b60m.factorial(26)), "P596 QG bound 26!/r^27 at r=1")
+    assert_that(abs(C.t_neg_solve_597() - 29925958.766726833) < 1e-3,
+                "P597 t_neg back-solve 2.99e7 (stated 3e7)")
+    assert_that(abs(C.bh26_freq_598(26) - 26 * 92e9) < 1, "P598 BH26 top harmonic 2.392 THz")
+    assert_that(abs(C.det_uqff_at_zero_599(3.0, 0.0, 0.0, 0.0, 0.0) - 2.0) < 1e-12,
+                "P599 det|0 = 2P^3/27 at zero couplings")
+    assert_that(C.hodge_bpq_bound_600() == float(_b60m.factorial(26)), "P600 b_pq <= 26!")
+    _b60wc = C.wired_count()
+    assert_that(_b60wc >= 614, "deep-mine: wired_count >= 614 (got %s)" % _b60wc)
+    for _b60n in range(591, 601):
+        assert_that('PAPER_%03d' % _b60n in C.DISPATCH, "band 591-600: PAPER_%03d dispatched" % _b60n)
+except Exception as _b60e:
+    assert_that(False, "DEEP-MINE 501-600 guard crashed: %r" % _b60e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_601-610
+# =============================================================================
+try:
+    import math as _b61m
+    assert_that(abs(C.grind_opp_601(1.0, 1.0, 0.0, 1.0) - (7.54e10 - 5.22e10)) < 1,
+                "P601 Grind_opp CW-CCW differential")
+    assert_that(abs(C.um_gateway_601(1.0, 2.0, 1.0, 1.0) - 1.0) < 1e-12, "P601 U_m gateway at r=1")
+    assert_that(abs(C.phi26_flux_601(1.0, 1.0, 1.0) - _b61m.factorial(27)) < 1e12,
+                "P601 Phi_26 = 27! flux")
+    assert_that(C.v_jet_601(1e50, 1.989e30) < C.C_OBSERVED, "P601 v_jet < c always")
+    assert_that(abs(C.gamma_jet_601() - 559.4017375835186) < 1e-6,
+                "P601 Gamma computed 559 (paper prints 5.6e10 - DISCLOSED 8-order slip)")
+    assert_that(abs(C.vds_pi_decimal_602() - 0.14159265358979325) < 1e-15,
+                "P602 VDS pi-decimal = pi - 3 (paper prints 3.14159 - DISCLOSED leading-3)")
+    assert_that(abs(C.qvd_product_602(1e-6) - 1.0000040000065715) < 1e-15,
+                "P602 QVD product = 1 + 4e-6 EXACT")
+    assert_that(abs(C.ua_k_603(1.0, 5) - _b61m.exp(-1.0)) < 1e-12, "P603 UA^(5) = e^-1")
+    assert_that(abs(C.bbdt_hubble_603(1.0, 1.0) - 2.2685e-18) < 1e-30, "P603 BBDT Hubble form")
+    assert_that(abs(C.t_adj_h_604() - 353.6) < 1e-6,
+                "P604 t_adj^H = 353.6 s EXACT (paper 3.5e2)")
+    assert_that(abs(C.rho_anti_collapse_605() - 2.530200268596732e-28) < 1e-40,
+                "P605 1/(26!*9.8) = 2.530e-28 (stated 2.54e-28)")
+    assert_that(abs(C.shell_energy_606(1.0, 2.0, 3.0, -1.0) - 12.0) < 1e-12, "P606 shell energy")
+    assert_that(abs(C.m_emergent_606(-6.0, 2.0) - 3.0) < 1e-12, "P606 emergent mass |F|/a26")
+    assert_that(abs(C.l_cw_607(1.0, 1.0) - 7.54e10) < 1, "P607 L_CW angular momentum")
+    assert_that(abs(C.f_ratio_608(1.0, 1.0, 1.0) - (7.54e10 / 5.22e10) ** 2) < 1e-6,
+                "P608 force ratio (wCW/wCCW)^2 at unit DPM")
+    assert_that(abs(C.a_bb_catchup_608() - 9e6) < 1e-3,
+                "P608 BB-catchup 9e6 m/s^2 EXACT (stated anchors)")
+    assert_that(abs(C.lambda_mean_609(9.0) - 4.0) < 1e-12, "P609 mean eigenvalue 4P/9")
+    assert_that(abs(C.riemann_eps_max_log10_609() + 675.3943809731941) < 1e-6,
+                "P609 critical-line bound log10 -675.4 (paper ~1e-676)")
+    assert_that(abs(C.e_epoch_610(1) - 6.62607015e-34 * 6.93e9) < 1e-36,
+                "P610 epoch energy quantum h*f_Orion")
+    _b61wc = C.wired_count()
+    assert_that(_b61wc >= 624, "band 601-610: wired_count >= 624 (got %s)" % _b61wc)
+    for _b61n in range(601, 611):
+        assert_that('PAPER_%03d' % _b61n in C.DISPATCH, "band 601-610: PAPER_%03d dispatched" % _b61n)
+except Exception as _b61e:
+    assert_that(False, "BAND 601-610 guard crashed: %r" % _b61e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_611-620
+# =============================================================================
+try:
+    import math as _b62m
+    assert_that(abs(C.eta_proplyd_611() - 0.18) < 1e-12, "P611/613 eta_proplyd = 0.18 EXACT")
+    assert_that(abs(C.e_today_611(0.0, 1.0, 2.0, 4.0) - 4.0) < 1e-12, "P611 eccentricity growth")
+    assert_that(abs(C.p_order_star_612() - 9.999e-6) < 1e-18,
+                "P612 stated P_order preserved (incoherent chain DISCLOSED)")
+    assert_that(abs(C.fubi_psr_613(1.0, 1.0, 1.0, 1e9) - 1.0) < 1e-9, "P613 F_Ubi saturates")
+    assert_that(abs(C.r_shadow_613() - 38780190628.761055) < 1e3,
+                "P613 Sgr A* shadow 3.878e10 m (52.1 muas label - DISCLOSED distance)")
+    assert_that(abs(C.fu_projection_614(0.0, 0.0, 0.0, 1.0, 1.0) - _b62m.factorial(26)) < 1e12,
+                "P614 projection term 26! at k=1, r=1")
+    assert_that(abs(C.ug4_laurent_615(1.0, 0.0) - 3.877578804363264e+19) < 1e5,
+                "P615 (13!)^2 = 3.878e19")
+    assert_that(abs(C.um_temporal_616(0.0, 0.0, 0.0, 1.0, 1.0) - _b62m.factorial(26)) < 1e12,
+                "P616 temporal 26!*c_26")
+    assert_that(abs(C.scm_laurent_617(2.0, 1.0, 2.0, [1.0]) - 2.0) < 1e-12,
+                "P617 Laurent base lam*UA*(1-1/t)+b0")
+    assert_that(abs(C.rho_min_618() - 9.66926131379386) < 1e-9,
+                "P618 (26!)^(1/27) = 9.669 buoyancy root")
+    _b62e = C.t_comp_eigs_619(1e-5, 0.0, 0.0, 0.0, 1.0, 1.0)
+    assert_that(abs((_b62e[1] - _b62e[0]) - 2 * _b62m.factorial(13)) < 1,
+                "P619 eigenvalue split = 2*13! at equal diagonal")
+    assert_that(abs(C.det_t_comp_619(3.0, 0.0, 0.0, 0.0, 1.0, 1.0)
+                - 2.0 * (1.0 - _b62m.factorial(13) ** 2)) < 1e-3,
+                "P619 det = T33(T11T22 - (13!)^2)")
+    assert_that(abs(C.overlay_620(1, [1, 1], [2], [3]) - 12.0) < 1e-12, "P620 overlay product")
+    _b62wc = C.wired_count()
+    assert_that(_b62wc >= 634, "band 611-620: wired_count >= 634 (got %s)" % _b62wc)
+    for _b62n in range(611, 621):
+        assert_that('PAPER_%03d' % _b62n in C.DISPATCH, "band 611-620: PAPER_%03d dispatched" % _b62n)
+except Exception as _b62e2:
+    assert_that(False, "BAND 611-620 guard crashed: %r" % _b62e2)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_621-630
+# =============================================================================
+try:
+    import math as _b63m
+    assert_that(C.triangular_p_s(26) == 351, "P621 p_s(26) = 351 EXACT")
+    assert_that(abs(C.t_j_triangular_621([0.0] * 26 + [1.0]) - 351.0 ** 26) < 1e52,
+                "P621 dominant 351^26 = 1.507e66 (paper 2.38e67 - DISCLOSED 15.8x)")
+    assert_that(abs(C.fu_pymander_621(3.33e-6, 1.0, 2.38e67, 1.0) - 7.9254e61) < 1e57,
+                "P621 F_U example 7.93e61 N with paper's own T value")
+    assert_that(abs(C.grad_ua_eq_622(1.0, 1e-3) - 31.622776601683793) < 1e-9,
+                "P622 nabla_UA_eq = 31.62 EXACT")
+    assert_that(abs(C.ug_zero_mass_622(1.0, 2.0, 3.0, 6.0) - 1.0) < 1e-12, "P622 zero-mass U_g")
+    assert_that(abs(C.grad_ua_gaussian_9d([0.0], [0.0], [1.0], 2.0) - 2.0) < 1e-12,
+                "P622 9D Gaussian at center")
+    assert_that(abs(C.f_event_cubic_623(2.0) - 8e15) < 1, "P623 cubic rebound 8e15 Hz")
+    assert_that(abs(C.d26_ub_zero_mass_624(1.0, 10.0) - _b63m.factorial(26) / 1e25) < 1e-9,
+                "P624 26! buoyancy suppression")
+    assert_that(abs(C.em_gravity_string_624([1.0, 2.0], 2) - 3.0) < 1e-12, "P624 em-gravity string")
+    assert_that(C.scm_negative_time_625(1.0, 1.0, -2.0) > 1.0,
+                "P625 SCm(t<0) > lambda*UA amplification")
+    assert_that(abs(C.freq_total_625(1.0, 1.0, -1.0, 2.0, 3) - 12.0) < 1e-12, "P625 Freq total")
+    assert_that(C.beta_apparent_627(0.99 * C.C_OBSERVED, _b63m.acos(0.99)) > 1.0,
+                "P627 superluminal beta_app > 1 at high v")
+    assert_that(abs(C.osc_mode_627(1) - 0.17633557568774194) < 1e-12,
+                "P627 osc mode computed 0.176 (table 0.187 - DISCLOSED)")
+    assert_that(abs(C.f_thermal_628(1e7) - 2.0836619123327574e+17) < 1e5,
+                "P628 f_thermal 2.084e17 Hz (stated 2.09e17)")
+    assert_that(abs(C.f_event_xray_628(1.0, 1e-18, 1.0) - 1.0) < 1e-12, "P628 X-ray core 1e18 scale")
+    assert_that(abs(C.log10_um_zero_mass_629(1.0, 2.0, 1e-21) - 546.301029995664) < 1e-9,
+                "P629/630 log10 U_m = 546.3 EXACT at nabla=1e-21")
+    assert_that(abs(C.log10_um_zero_mass_629(1.0, 2.0, 1e-22) - 572.301029995664) < 1e-9,
+                "P629 log10 U_m = 572.3 at cluster-void gradient")
+    assert_that(abs(C.f_pol_630(0.0, 1.0) - 1e17) < 1, "P630 unpolarized baseline")
+    assert_that(abs(C.ub_at_eq_630(1e-3, 1e-10) + 9999999.999) < 1e-3,
+                "P630 U_b = -1e7 N at pocket equilibrium EXACT")
+    _b63wc = C.wired_count()
+    assert_that(_b63wc >= 644, "band 621-630: wired_count >= 644 (got %s)" % _b63wc)
+    for _b63n in range(621, 631):
+        assert_that('PAPER_%03d' % _b63n in C.DISPATCH, "band 621-630: PAPER_%03d dispatched" % _b63n)
+except Exception as _b63e:
+    assert_that(False, "BAND 621-630 guard crashed: %r" % _b63e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_631-640
+# =============================================================================
+try:
+    import math as _b64m
+    assert_that(abs(C.fubi_grant_integrand_632(1.0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0) + 1.0) < 1e-12,
+                "P632 integrand -F0 base")
+    assert_that(abs(C.a_tau_sm_633() - 1.17721e-3) < 1e-15, "P633 a_tau SM anchor")
+    assert_that(C.delta_a_tau_633() < 1e-110, "P633 delta_a_tau ~ 1e-116 undetectable")
+    assert_that(abs(C.scm_flavor_634(0.99, _b64m.pi / 2) - 0.99) < 1e-12, "P634 SCm_flavor max")
+    assert_that(abs(abs(C.v_ckm_634(0.99, 1.0)) - 0.99 ** 0.5) < 1e-12, "P634 |V| = sqrt(SCm)")
+    assert_that(abs(C.kappa_vlq_635() - 5.243067994981564e-22) < 1e-34,
+                "P635 kappa_VLQ stated numbers compute 5.24e-22 (printed 0.37 - DISCLOSED)")
+    assert_that(abs(C.delta_m_vlq_635() - 29.748) < 1e-9, "P635 Delta_M = 29.75 GeV (stated 29.8)")
+    assert_that(abs(C.m_lfv_bound_636() - 0.5388953391938961) < 1e-12,
+                "P636 |M|^2 = SSq^2/BETA_I = 0.5389 (paper 0.534 via beta variant - DISCLOSED)")
+    assert_that(abs(C.e_ratio_637() - 1.0701754385964912) < 1e-12,
+                "P637 E_ratio = 0.61/0.57 = 1.0702 EXACT (paper beta variant)")
+    assert_that(abs(C.dcs_ratio_638() - 0.046486040000000006) < 1e-15,
+                "P638 DCS/CF = 0.04649 EXACT")
+    assert_that(abs(C.e_react_dcs_638() - 1.45e-4) < 1e-16, "P638 E_react stated")
+    assert_that(abs(C.lambda_uqff_639() - 0.1294028756807273) < 1e-12,
+                "P639 lambda = 0.1294 (R_unit back-solve - DISCLOSED)")
+    assert_that(abs(C.m_h_639() - 125.25799710166211) < 1e-9,
+                "P639 m_H computed 125.26 GeV (paper prints 125.09 - DISCLOSED rounding)")
+    assert_that(abs(C.delta_lambda_639() - 6.535353535353536e-05) < 1e-15, "P639 delta_lambda 6.54e-5")
+    assert_that(abs(C.gamma_uqff_640() - 0.182625) < 1e-12,
+                "P640 Gamma = KAPPA_PER_DAY*365.25 = 0.18263/yr EXACT (primitive tie)")
+    assert_that(abs(_b64m.log10(C.gamma_ratio_640()) - 33.14805095411484) < 1e-9,
+                "P640 scale separation 10^33.148 (paper 33.15; 98.7%% of 33.6 target)")
+    assert_that(abs(_b64m.log10(C.lambda_scale_640()) - 8.28701273852871) < 1e-9,
+                "P640 GUT-suppression scale 10^8.29 GeV (paper 10^8.3)")
+    _b64wc = C.wired_count()
+    assert_that(_b64wc >= 654, "band 631-640: wired_count >= 654 (got %s)" % _b64wc)
+    for _b64n in range(631, 641):
+        assert_that('PAPER_%03d' % _b64n in C.DISPATCH, "band 631-640: PAPER_%03d dispatched" % _b64n)
+except Exception as _b64e:
+    assert_that(False, "BAND 631-640 guard crashed: %r" % _b64e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_641-650
+# =============================================================================
+try:
+    import math as _b65m
+    assert_that(abs(C.sin2_thetaw_base_641() - 0.01989801019898013) < 1e-15,
+                "P641 sin2 base 0.01990 EXACT")
+    assert_that(abs(C.sin2_thetaw_corr_641() - 0.23157307017766515) < 1e-12,
+                "P641 sin2 corrected 0.2316 (paper 0.2304 - variant DISCLOSED)")
+    assert_that(abs(C.m_w_641() - 79.47375559105761) < 1e-9,
+                "P641 m_W 79.47 GeV (stated 79.49; 0.775 EBL/CMB cross-ref)")
+    assert_that(abs(C.delta_t_lens_643(1.0, 1.0, 1.0) - _b65m.factorial(26)) < 1e12,
+                "P643 thermal lens 26! numerator")
+    assert_that(abs(C.deriv26_falling_factorial_644(1) - _b65m.factorial(26)) < 1e12
+                and abs(C.deriv26_falling_factorial_644(2) - _b65m.factorial(27)) < 1e13,
+                "P644 falling factorial = printed polynomial identity")
+    assert_that(abs(C.deriv26_k4_645(1.0, 1.0) - _b65m.factorial(29) / 6.0) < 1e20,
+                "P645 29!/3! (paper prints 29! missing /3! - DISCLOSED)")
+    assert_that(abs(C.r_min_planck_645() - 1.705039309005551e-34) < 1e-46,
+                "P645 r_min = l_Pl*(26!)^(1/26) = 1.705e-34 m")
+    assert_that(C.t_uqff_hawking_645(1.989e30, 2.95e3) > 0, "P645 T_UQFF positive")
+    assert_that(abs(C.u_i_canonical_646() - 2.75e-07) < 1e-19,
+                "P646 U_i = 2.75e-7 EXACT (canonical landmark from F_TRZ primitives)")
+    assert_that(abs(C.u_i_dimensional_646() - 1.3823727500000001e-77) < 1e-89,
+                "P646 dimensional variant 1.382e-77 (paper prints 1.38e-47 - DISCLOSED 30-order; mantissa EXACT)")
+    assert_that(abs(C.e_react_647(0.0) - 1e46) < 1e34, "P647 E_react t=0 anchor")
+    assert_that(abs(C.ug2_647() - 4.159571721256684e+18) < 1e6,
+                "P647 U_g2 computes 4.16e18 (paper prints 1.18e53 - DISCLOSED)")
+    assert_that(abs(C.e_rydberg_26_648(1.0) - 5.109089028063325e-12) < 1e-24,
+                "P648 e^-26 = 5.109e-12 EXACT-to-paper 5.1e-12")
+    assert_that(abs(C.meson_cascade_ratio_648() - 0.5254183097090483) < 1e-12,
+                "P648 meson cascade 493/938.3 = 0.5254 (paper x0.526)")
+    assert_that(C.rate_lenr_648(1e16, 0.0, 1.0, 1.0) == 1e16, "P648 rate at zero barrier")
+    _b65x = C.e_x_complex_649(1.0)
+    assert_that(abs(_b65x.real - 0.6469193223286404) < 1e-12
+                and abs(_b65x.imag + 0.7625584504796027) < 1e-12,
+                "P649 E_x = e^-i26 = 0.6469 - 0.7626i EXACT (paper 0.6470/0.7627)")
+    assert_that(C.dvp_fingerprint_649() == (7, 9, 26, 137, 139), "P649 DVP fingerprint")
+    assert_that(abs(C.theta_m_649(1.0, 3.0) - 2.0) < 1e-12, "P649 theta midpoint")
+    _b65u = C.ub1_650(1.39e26, 2.0e-6, 1.989e30, 8.5e20, 7.09e-36, beta_i=0.6)
+    assert_that(abs(_b65u + 2.7673120799999995e-06) < 1e-16,
+                "P650 U_b1 solar arithmetic 2.77e-6 (paper prints -1.94e27 - DISCLOSED 33-order)")
+    assert_that(abs(C.f_ub_650() - 3.1830988618379064e-07) < 1e-19,
+                "P650 f_Ub = 3.183e-7 Hz (stated 3.2e-7)")
+    _b65wc = C.wired_count()
+    assert_that(_b65wc >= 664, "band 641-650: wired_count >= 664 (got %s)" % _b65wc)
+    for _b65n in range(641, 651):
+        assert_that('PAPER_%03d' % _b65n in C.DISPATCH, "band 641-650: PAPER_%03d dispatched" % _b65n)
+except Exception as _b65e:
+    assert_that(False, "BAND 641-650 guard crashed: %r" % _b65e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_651-660
+# =============================================================================
+try:
+    import math as _b66m
+    assert_that(abs(C.m_schwarzschild_from_radius_651(2.9e-15) - 1952644604687.4224) < 1,
+                "P651 Schwarzschild proton 1.95e12 kg (ratio drift DISCLOSED)")
+    assert_that(abs(C.alpha_impedance_route_652() - 0.007297352571930335) < 1e-15,
+                "P652 alpha = Z0/(2R_K) = 7.297353e-3 EXACT quantum-Hall route")
+    assert_that(abs(C.a_e_g2_652() - 0.001159652) < 1e-12, "P652 a_e QED anchor")
+    assert_that(abs(C.tau_pi_653() - 5.5203652939548064e-24) < 1e-36,
+                "P653 tau_pi computes 5.52e-24 s (paper 5.51e-23 via 10x own slip - DISCLOSED)")
+    assert_that(abs(C.e_wave_653() - 1.2002955958831237e-10) < 1e-22,
+                "P653 E_wave 1.20e-10 J (paper 1.20e-11 - DISCLOSED)")
+    assert_that(abs(C.e_wave_deep_653() / C.e_wave_653() - _b66m.exp(-81 * 7.2973525693e-3 ** 2)) < 1e-12,
+                "P653 deep suppression e^(-81 alpha^2); 81 = floor(26 pi)")
+    assert_that(abs(C.e_wave_planck_653() - 8.343835448734672e-123) < 1e-135,
+                "P653 Planck-coherence form 8.34e-123 (paper 1.17e-105 - DISCLOSED 18-order)")
+    assert_that(abs(C.hubble_length_654() - 4282.857142857143) < 1e-6,
+                "P654 c/H0 = 4283 Mpc EXACT at H0=70 (PAPER_1573 tie)")
+    assert_that(abs(C.chi_horizon_654() - 46.37885300690437) < 1e-9,
+                "P654 horizon 46.4 Gly (stated 46.5); diameter 93 Gly")
+    assert_that(C.ug1_band_655(1.0, 1.0, 1.0, 1.0, 1.0, 0.99) > 0, "P655 band gravity positive")
+    assert_that(abs(C.r_echo_656(3 * 365.25 * 86400) - 2.83821914177424e+16) < 1e4,
+                "P656 3-yr light echo 2.838e16 m EXACT")
+    assert_that(abs(C.uqff_amplification_656() - 12.1) < 1e-9,
+                "P656 amplification (1+F_TRZ)(1+10) = 12.1x EXACT (two-primitive tie)")
+    assert_that(C.fubi_i_657(1.0, 0.0, 1.0) > 0 and C.fubi_657(1.0, 0.0) < 0,
+                "P657 buoyancy up / BSFG down sign convention")
+    assert_that(abs(C.r_hz_657(4.0 * _b66m.pi / 3.0, 1.0) - 1.0) < 1e-12, "P657 r_hz cube root")
+    assert_that(abs(C.rho_c_uqff_658(1.0) - 11.0) < 1e-9,
+                "P658 rho_c,UQFF = 11 rho_c EXACT (primitive tie)")
+    assert_that(abs(C.w_eff_658() + 0.996865) < 1e-12,
+                "P658 w_eff = -1 + 3.135e-3 EXACT (FOUR-PRIMITIVE TIE)")
+    assert_that(abs(C.rs_uqff_659(1.0) - 0.9) < 1e-12, "P659 r_s,UQFF = 0.9 r_s EXACT (F_TRZ)")
+    assert_that(abs(C.phi_trans_659() - 2.093747468456995e+19) < 1e7,
+                "P659 Phi_trans = 2.094e19 EXACT (Sgr A*, paper 2.09e19)")
+    assert_that(C.p_flip_659(1.0, 1e30) < 1.0 and C.p_flip_659(0.0, 1.0) == 1.0,
+                "P659 flip probability bounds")
+    assert_that(abs(C.l_wh_uqff_660(1.989e30, 0.0) / C.l_hawking_659(1.989e30) - 11.0) < 1e-6,
+                "P660 white-hole boost = (1+F_TRZ)*(rho_UA/rho_SCm) = 11.0x L_H EXACT at U_m=0")
+    _b66wc = C.wired_count()
+    assert_that(_b66wc >= 674, "band 651-660: wired_count >= 674 (got %s)" % _b66wc)
+    for _b66n in range(651, 661):
+        assert_that('PAPER_%03d' % _b66n in C.DISPATCH, "band 651-660: PAPER_%03d dispatched" % _b66n)
+except Exception as _b66e:
+    assert_that(False, "BAND 651-660 guard crashed: %r" % _b66e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_661-670
+# =============================================================================
+try:
+    import math as _b67m
+    assert_that(abs(C.tau_std_hawking_661(1.989e30) - 6.618165375491171e+74) < 1e62,
+                "P661/668 Hawking evaporation time sun 6.62e74 s")
+    assert_that(abs(C.tau_uqff_bh_661(1.0, 1.0) - 30.203131427322724) < 1e-9,
+                "P661 UQFF stability factor 30.2 (paper ~30) THREE-PRIMITIVE CHAIN")
+    assert_that(abs(C.t_uqff_662(1.0) - 0.99) < 1e-12,
+                "P662 T_UQFF = 0.99 T_H EXACT (1.1*0.9)")
+    assert_that(abs(C.l_uqff_662(1.0, 0.0) - 1.0) < 1e-12, "P662 L unsuppressed at U_m=0")
+    assert_that(abs(C.theta_inv_663(2.0, 3.0, 0.5) - 3.0) < 1e-12, "P663 inversion product")
+    assert_that(abs(C.tau_wh_664(1.0, 1.0) - 10.0 * _b67m.e) < 1e-9,
+                "P664 white-hole factor |1-10|/0.9*e = 10e = 27.18")
+    _b67s = C.suppression_factors_665()
+    assert_that(abs(_b67s[0] - 1.1) < 1e-12 and abs(_b67s[1] - 0.9) < 1e-12
+                and abs(_b67s[3] - 0.99) < 1e-12,
+                "P665 (S1,S2,S_total) = (1.1, 0.9, 0.99) EXACT")
+    assert_that(C.p_gw_quadrupole_666(1e30, 1e30, 1e9) > 0, "P666 quadrupole power positive")
+    assert_that(abs(C.s_ua_666(RHO_UA_TEST := C.RHO_UA * 2.0) - 0.5) < 1e-12,
+                "P666 S_UA = 1 - rho_UA/rho_crit")
+    assert_that(abs(C.h_ratio_gw_666(0.81) - 0.9) < 1e-12, "P666 h ratio = sqrt(P ratio)")
+    assert_that(abs(C.stability_factor_667() - 30.203131427322724) < 1e-9,
+                "P667 1.111*10*e = 30.20 EXACT (paper ~30)")
+    assert_that(abs(C.chirp_mass_binary(35, 30) - 28.19232596224401) < 1e-9,
+                "P669 chirp mass 28.19 (paper 28.3) via existing chirp_mass_binary")
+    assert_that(C.h_gr_freq_669(150.0, 1e25, 28.3 * 1.989e30) > 0, "P669 inspiral amplitude")
+    assert_that(abs(C.s_scm_freq_669(150.0) - 1.0) < 1e-12,
+                "P669 SCm suppression ~ 1 at LIGO frequencies (rho_SCm tiny)")
+    assert_that(abs(C.phi_uqff_gw_669(1.0, 1.0) - (2.0 * _b67m.pi + C.KAPPA_PER_DAY * C.F_TRZ)) < 1e-12,
+                "P669 phase drift kappa*f_TRZ term")
+    assert_that(abs(C.rho_eff_670(1.0) - (1.0 + C.RHO_UA - C.RHO_SCM)) < 1e-12, "P670 rho_eff")
+    assert_that(abs(C.mdot_uqff_670(1.0, 1.0, 1e9) - 1.1 * (1.0 + C.RHO_UA - C.RHO_SCM)) < 1e-9,
+                "P670 UQFF accretion boost (1+f_TRZ) at saturated U_m")
+    assert_that(abs(C.mdot_edd_670(1.989e30) - 1399025860540416.8) < 1e3,
+                "P670 Eddington rate sun 1.4e15 kg/s")
+    _b67wc = C.wired_count()
+    assert_that(_b67wc >= 684, "band 661-670: wired_count >= 684 (got %s)" % _b67wc)
+    for _b67n in range(661, 671):
+        assert_that('PAPER_%03d' % _b67n in C.DISPATCH, "band 661-670: PAPER_%03d dispatched" % _b67n)
+except Exception as _b67e:
+    assert_that(False, "BAND 661-670 guard crashed: %r" % _b67e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_671-680
+# =============================================================================
+try:
+    import math as _b68m
+    assert_that(C.dm_dt_uqff_671(1.989e30) < 0 and abs(C.dm_dt_uqff_671(1.989e30)
+                + 1.0031757304008457e-63) < 1e-75,
+                "P671 dM/dt suppressed 0.09x (0.9*0.1 two-primitive)")
+    assert_that(abs(C.m_of_t_671(2.0, 1.0, 0.0) - 2.0) < 1e-12
+                and C.m_of_t_671(1.0, 1.0, 1.0) == 0.0,
+                "P671 cubic trajectory endpoint")
+    assert_that(abs(C.f_thz_673() - 2083661913609.4573) < 1,
+                "P673 f_THz = 2.084 THz at 100 K (stated ~2 THz)")
+    assert_that(abs(C.gamma_pp_673(1.0, 1.0) - 0.9) < 1e-12, "P673 pair-production 0.9 EXACT")
+    assert_that(abs(C.tau_rd_673(1e13) - 1.1e14) < 1e2,
+                "P673 radio-dark lifetime 11x = 1.1e14 yr EXACT")
+    assert_that(abs(C.fas_673(1.0) - 1.1 * 10.0 ** 0.5) < 1e-9, "P673 FAS 1.1*sqrt(10)")
+    assert_that(abs(C.h_uqff_ligo_674(1.0, 0.0, 0.0, 1.0, 0.0) - 0.9) < 1e-12,
+                "P674 LIGO baseline suppression (1-f_TRZ) = 0.9")
+    assert_that(abs(C.dt_gw170817_675() - 3.4) < 1e-12,
+                "P675 GW170817 delay 1.7*(1+F_TRZ*10) = 3.4 s EXACT")
+    assert_that(abs(C.m_ej_676(1.0) - 0.0045) < 1e-15,
+                "P676 GW190425 ejecta 0.05*0.1*0.9 = 0.0045 EXACT")
+    assert_that(abs(C.h_lisa_677(1.0, 1.0, 1.0) - 0.9) < 1e-12, "P677 LISA baseline 0.9")
+    assert_that(abs(C.r_supp_678(1.0, 0.5, 0.8) - 0.45) < 1e-12, "P678 min-suppression rule")
+    assert_that(abs(C.c_ua_superfluid_679(1.0, 4.0, 1.0) - 2.0) < 1e-12, "P679 sound speed")
+    assert_that(C.xi_ua_679(1.0, 1.0, 1.0) > 0, "P679 healing length positive")
+    assert_that(abs(C.kappa_v_680(1, 6.62607015e-34) - 1.0) < 1e-12, "P680 unit circulation")
+    assert_that(C.e_vortex_line_680(1.0, _b68m.e, 1.0) > 0, "P680 vortex line energy ln factor")
+    _b68wc = C.wired_count()
+    assert_that(_b68wc >= 694, "band 671-680: wired_count >= 694 (got %s)" % _b68wc)
+    for _b68n in range(671, 681):
+        assert_that('PAPER_%03d' % _b68n in C.DISPATCH, "band 671-680: PAPER_%03d dispatched" % _b68n)
+except Exception as _b68e:
+    assert_that(False, "BAND 671-680 guard crashed: %r" % _b68e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_681-690
+# =============================================================================
+try:
+    import math as _b69m
+    assert_that(abs(C.gp_energy_functional_681(1.0, 0.0, 1.0, 1.0, 1.0) - 3.0) < 1e-12,
+                "P681 GP functional pieces")
+    assert_that(abs(C.lambda_stability_682(1.0) + 0.1) < 1e-12,
+                "P682 Lyapunov = -rho_SCm/rho_UA/tau = -0.1 EXACT (stable)")
+    assert_that(abs(C.t_uqff_mod_683(1.0) - 0.99) < 1e-12
+                and abs(C.t_uqff_mod_683(1.0, 1.0) - 1.98) < 1e-12,
+                "P683 modulated T = 0.99*(1+u) chain")
+    assert_that(C.mdot_pbh_684(1e12) < 0, "P684 PBH evaporation negative rate")
+    assert_that(abs(C.m_crit_pbh_685(1.0) - 0.3211066816262205) < 1e-12,
+                "P685 M_crit shrink 30.2^(-1/3) = 0.321x")
+    assert_that(abs(C.f_pbh_685(1.0) - 9.698427307348211) < 1e-9,
+                "P685 PBH abundance window 30.2^(2/3) = 9.70x")
+    assert_that(abs(C.r_shadow_m87_686(1.0, G=1.0, c=1.0) - 3.0 * 3.0 ** 0.5 * 2.0 ** 0.5) < 1e-12,
+                "P686 M87 shadow factor sqrt(1+F_TRZ*10) = sqrt(2) EXACT (F_TRZ*10 = 1)")
+    assert_that(abs(C.dm_dt_m87_687(2.0, -1.0, C.C_OBSERVED ** 2) - 0.0) < 1e-9,
+                "P687 M87 balance equation")
+    assert_that(abs(C.m_of_t_688(1.0, 2.0, 3.0, 0.0) - 6.0) < 1e-12
+                and abs(C.m_of_t_688(1.0, 2.0, 3.0, 1e9) - (3.0 + 3.0 / _b69m.e)) < 1e-9,
+                "P688 NGC1316 merger mass decay tau = 1 Gyr")
+    assert_that(abs(C.psi_dust_688(1.0, 0.0, 1.0, 1.0, 0.0) - 1.0) < 1e-12, "P688 dust peak")
+    assert_that(abs(C.p_bz_689(1.0, 1.0, 1.0) - 0.044 * C.C_OBSERVED / (4 * _b69m.pi)) < 1,
+                "P689 BZ power kappa = 0.044")
+    assert_that(abs(C.g_jet_uqff_689(1.0) - 0.81) < 1e-12,
+                "P689 jet suppression 0.9*0.9 = 0.81 EXACT")
+    assert_that(abs(C.g_fornax_690(1.0, 1.0, G=1.0) - 1.21) < 1e-12,
+                "P690 Fornax boost 1.1*1.1 = 1.21x EXACT")
+    assert_that(abs(C.r_tidal_690(1.0, 3.0, 1.0) - 1.0) < 1e-12, "P690 tidal radius cube root")
+    assert_that(C.sigma_v_virial_690(1.4e13 * 1.989e30, 0.7 * 3.086e22) / 1e3 > 100,
+                "P690 virial dispersion km/s scale (stated 370)")
+    _b69wc = C.wired_count()
+    assert_that(_b69wc >= 704, "band 681-690: wired_count >= 704 (got %s)" % _b69wc)
+    for _b69n in range(681, 691):
+        assert_that('PAPER_%03d' % _b69n in C.DISPATCH, "band 681-690: PAPER_%03d dispatched" % _b69n)
+except Exception as _b69e:
+    assert_that(False, "BAND 681-690 guard crashed: %r" % _b69e)
+
+
+# =============================================================================
+# DEEP-MINE GUARD: PAPER_601-700 RESWEEP RECOVERY + BAND PAPER_691-700
+# =============================================================================
+try:
+    import math as _b70m
+    assert_that(abs(C.alpha_recoil_route_652() - 0.007297352569253902) < 1e-15,
+                "P652R alpha recoil route = 7.29735257e-3 EXACT-to-CODATA (3rd route)")
+    assert_that(abs(C.gap_exponent_653() - 131.37000311979955) < 1e-6,
+                "P653R gap exponent computes 131.4 (stated 114 - DISCLOSED chain)")
+    assert_that(abs(C.lambda_uqff_645() - 2.0350230185751904e-20) < 1e-32,
+                "P645R Lambda form computes 2.04e-20 (stated 3e-35 - DISCLOSED)")
+    assert_that(abs(C.ug4_647(1.0, 1.0, 1.0, 0.0) - C.RHO_SCM) < 1e-48, "P647R U_g4 channel")
+    assert_that(abs(C.ug3_band_655(1.0, 1.0, 0.0, 0.0, 1.0, 1.0) - 1.0) < 1e-12,
+                "P655R string-disk band")
+    _b70a = C.nbody_accel_691(1.0, [1.0, 0.0, 0.0], 0.0)
+    assert_that(abs(_b70a[0] - 1.0) < 1e-12, "P691 softened kernel unit case")
+    assert_that(abs(C.f_tidal_692(1.0, 1.0, 1.0, G=1.0) - 2.0) < 1e-12, "P692 tidal 2GM Rd/d3")
+    assert_that(abs(C.sfe_uqff_692(1.0, 0.0) - 1.1) < 1e-12, "P692 SFE boost (1+f_TRZ)")
+    assert_that(abs(C.v_c_sombrero_693(1.0, 1.0, G=1.0) - 1.05) < 1e-12,
+                "P693 Sombrero rotation 1.05x EXACT (1+rho_SCm/(2*rho_UA))")
+    assert_that(abs(C.v_snr_uqff_694(0.5, 0.9) - 1.1) < 1e-9,
+                "P694 SNR velocity chain (1-f)(1.1)")
+    assert_that(abs(C.r_snr_sedov_694(1.0, 1.0, 1.0) - 1.15) < 1e-12, "P694 Sedov xi0 = 1.15")
+    assert_that(abs(C.l_spindown_694(2.0, 3.0, -1.0) - 6.0) < 1e-12, "P694 spin-down power")
+    assert_that(abs(C.r_bubble_695(1.0, 1.0, 1.0) - 0.88) < 1e-12, "P695 bubble 0.88 prefactor")
+    assert_that(abs(C.v_wind_uqff_695(1.0) - 3.478505426185218) < 1e-12,
+                "P695 wind boost 1.1*sqrt(10) = 3.4785x EXACT")
+    assert_that(abs(C.t_df_696(1.0, 1.0, 1.0, 1.0, G=1.0) - 1.17) < 1e-12, "P696 friction 1.17")
+    assert_that(abs(C.m_b_phillips_697(1.1) + 19.3) < 1e-12, "P697 Phillips anchor -19.3")
+    assert_that(abs(C.l_sn_uqff_697(1.0) - 0.99) < 1e-12, "P697 SN luminosity 0.99x EXACT")
+    assert_that(abs(C.mu_lens_698(1.0) - 1.3416407864998738) < 1e-12,
+                "P698 magnification mu(1) = 3/sqrt(5) = 1.342")
+    assert_that(abs(C.alpha_hat_uqff_698(1.0, 4.0, G=1.0, c=1.0) - 1.1) < 1e-12,
+                "P698 deflection 1.1x GR EXACT")
+    assert_that(abs(C.n_uqff_699(1.0, 0.0) - 1.21) < 1e-9, "P699 count boost 1.21x EXACT at z=0")
+    assert_that(abs(C.schechter_699(1.0, 1.0, 0.0) - _b70m.exp(-1.0)) < 1e-12, "P699 Schechter L*")
+    assert_that(abs(C.v_uqff_potential_700(1.0, 1.0, G=1.0) + 0.99) < 1e-12,
+                "P700 master potential -0.99*GM/r EXACT")
+    assert_that(abs(C.u_i_700(2.5e-6) - 2.75e-07) < 1e-19,
+                "P700 U_i = 2.75e-7 EXACT cross-check with PAPER_646 canonical")
+    _b70wc = C.wired_count()
+    assert_that(_b70wc >= 714, "deep-mine 601-700: wired_count >= 714 (got %s)" % _b70wc)
+    for _b70n in range(691, 701):
+        assert_that('PAPER_%03d' % _b70n in C.DISPATCH, "band 691-700: PAPER_%03d dispatched" % _b70n)
+except Exception as _b70e:
+    assert_that(False, "DEEP-MINE 601-700 guard crashed: %r" % _b70e)
 
 # =============================================================================
 # REPORT

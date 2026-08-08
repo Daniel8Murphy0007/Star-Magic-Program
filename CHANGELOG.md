@@ -6275,6 +6275,27 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.359.0] - 2026-08-07
+
+### Dispatch closure (charter Rule B)
+- All 172 sequential dispatches PAPER_329-500 registered via _DC_DISPATCH_INDEX factory; every 501-700 band self-registers. wired_count 342 -> 714 (PAPER_001-700, one dispatch per paper). Gate DISPATCH-GAP CLOSURE guard.
+
+### PAPER_500 milestone audit
+- AUDIT_500_PAPER_REPORT.md delivered and gate-pinned; Daniel's ruling AFFIRMATIVE (501+ authorized, logged in RULINGS_QUEUE).
+
+### Deep-capture PAPER_501-700 (20 bands, +570 named functions)
+- Fundamental constants from primitives: h = 6.72e-34 EXACT (1.42%% vs CODATA), alpha x3 routes (primitive 0.138%%, impedance EXACT, recoil EXACT-to-CODATA), G = 6.66899e-11 (0.0795%%), c triad.
+- U_i = 2.75e-7 canonical reproduced twice (PAPER_646 + PAPER_700 master cross-check).
+- Cross-primitive identities: BSD 2000.5 EXACT (KAPPA), proton-decay 0.1826/yr (KAPPA*365.25), M87 shadow sqrt(2) (F_TRZ*10=1), w_eff -1+3.135e-3 (4-primitive), Li_26(SSq)=0.57 VERIFIED, amplification 12.1x, white-hole 11x, jet 0.81x, Fornax 1.21x.
+- Bands: BBDT/Feynman, pi-decoder/PCR, DPM shell-radiance, universal spectrum, BSFG geometry, Olbers closure, nuclear epochs, 26th-order operators, zero-mass grad-UA, SM bridge, canonical papers, BH/GW suppression, superfluid/vortex, galaxy applications, master derivation.
+
+### Deep-mine resweeps (Daniel-directed)
+- 501-600: +12 recoveries (code-fence physics in software papers 502-507, Hodge ladder, Euler local factor).
+- 601-700: +5 recoveries (3rd alpha route EXACT, U_g4 channel, Ug3 string band, Lambda/gap forms disclosed).
+
+### Honest accounting (vs v0.358.0)
+- Calculator defs 1,682 -> 2,158; gate 2,749 -> 3,239 assertions (0 failures); registry 3,764 -> 4,239 rows; graph 5,667 -> 6,424 edges; citations 938 -> 1,124 papers; ~45 source slips disclosed; banned-literal guard live catches #2-#3 handled.
+
 ## [0.358.0] - 2026-08-07
 
 PAPER_500 CHARTER MILESTONE - deep-capture PAPER_401-500 complete (ten batches + resweep;

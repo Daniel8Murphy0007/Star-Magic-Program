@@ -5853,3 +5853,6 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
   bulk-script density - lineage adjudication (canonical vs CQE-local) welcome.
 - Slip families this arc: 2x Espace, 2pi-family 26-sphere, 1e19 H_SCm, sqrt(10) Dm chain,
   1.9x v_therm, notation r_p/(100c) vs c/100 (all disclosed with faithful transcription).
+
+- 2026-08-07 NOTE (no ruling needed): audit sec.1 dispatch gap CLOSED — 172 sequential dispatches PAPER_329-500 wired; wired_count()=514; gate green. Milestone ruling (501+ authorization) still pending.
+- 2026-08-07 RULING RECEIVED: Daniel commanded 'NEXT BATCH' after PAPER_500 audit delivery + dispatch-gap closure => milestone ruling AFFIRMATIVE, papers 501+ authorized. FULL STOP lifted.

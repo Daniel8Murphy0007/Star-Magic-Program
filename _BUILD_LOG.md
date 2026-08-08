@@ -181,3 +181,5 @@ library 3,302. Registry 3,678 / graph 5,495 / citations 851. Gate 2,665 green. 2
 ## v0.358.0 (2026-08-07) - PAPER_500 MILESTONE
 Deep-capture 401-500 complete (+86 fns, +8 recoveries). Calculator 1,682; library 3,388.
 Registry 3,764 / graph 5,667 / citations 938. Gate 2,749 green. FULL STOP per charter.
+
+2026-08-07 v0.359.0: dispatch closure 714 + audit + deep-capture 501-700 + resweeps; gate 3239/0 green.

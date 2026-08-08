@@ -5237,3 +5237,319 @@ self-rectification #3 (Ts00 fork); golden-ratio prime vortices; CNB coupling; Co
 Egg; no-G hypergraph gravity; Omega_Lambda D-universe identity. ~15 slips disclosed. Registry
 3,764 / graph 5,667 / citations 938. Gate 2,665 -> 2,749, 0 failures. Measured vs v0.357.0
 throughout. CHARTER FULL STOP reached - 500-paper audit report pending Daniel's authorization.
+
+## 2026-08-07 — DISPATCH-GAP CLOSURE (post-milestone fix, Daniel-directed)
+Command: "FIX SEQUENTIAL DISPATCHES GAP". Wired @_register('PAPER_329')..('PAPER_500'):
+172 dispatches via _DC_DISPATCH_INDEX factory in uqff_calculator.py. 101 papers dispatch their
+own deep-capture functions (index built from UNIFIED_REGISTRY.csv paper_source rows, every
+function name verified against live defs); 71 covered-by-prior-wiring papers dispatch the
+covering functions (mapping from batch census notes); PAPER_437 (meta-assessment, no unique
+equations) returns census-note dispatch. Contract honored: {'value', 'formula' (via formula_of),
+'source', 'residual_pct'}. wired_count(): 342 -> 514. Gate: +8 assertions (DISPATCH-GAP CLOSURE
+guard), 2,758 assert_that lines, GREEN at v0.358.0. AUDIT_500_PAPER_REPORT.md sec.1 gap note
+flipped to RESOLVED. Registry +1 ledger row (dispatch_gap_closure_329_500). Rule B now holds for
+the full PAPER_001-500 band. Charter FULL STOP still in effect pending Daniel's milestone ruling.
+
+## 2026-08-07 (2) — BAND PAPER_501-510 (first post-milestone band)
+Milestone ruling: Daniel's "NEXT BATCH" after audit delivery = AFFIRMATIVE; 501+ authorized (logged
+in RULINGS_QUEUE). Band census: 501 BBDT/Feynman-cluster (9 fns: bbdt_core, mass spawn, Prob_order,
+26D E->M, grinding recursion, Z_metal, M_BH 1st-epoch, U_b, Hubble-tension form), 502 WSTP bridge
+(fu_bi_compressed_six; ratio=F_TRZ per PAPER_2156), 503 Lagrangian export (scm_mexican_hat_lagrangian),
+504 architecture (census-note), 505 build profile (covered by h_uqff_gamma_damping 0.47 form),
+506 pi-decoder (728=26x28, amplitude mod, DPM complex pair offset-13), 507 hypergraph degree gravity,
+508 sacred time constants (schumann_mode_freq DISCLOSED 10.6 vs 7.83 observed; sacred_resonance_r7),
+509 PCR field equations (pcr_phase/pcr_field/k_pcr_coupling 0.23806/g_eff_pcr; pi spigot helper),
+510 GW150914 PCR validation (stated PCR 0.035 DISCLOSED 4-order slip vs computed 1.72e-6; h-factor
+stated 1.011 vs computed 1.00833 DISCLOSED; back-solve pin k=0.3143 recovers 1.011).
+Totals: +24 calculator defs (1,683->1,706 incl spigot), wired_count 514->524, registry +23 rows,
+graph +27 edges, citations +10 papers, gate +22 assertions (2,780 assert_that), GREEN v0.358.0.
+
+## 2026-08-07 (3) — BAND PAPER_511-520
+511 PSR J0437 sacred orbit (theta_bib stated 2.017e-8 DISCLOSED underivable; r/F_orbit; stated PCR
+0.092), 512 Eta Car PCR gravity (g_base computed 0.343 vs stated 2.04e-3 DISCLOSED 168x; factor
+1.0377), 513 NGC1277 hypergraph dimension (deltaD/D_corrected, 4.83->5.405), 514 TON618 sacred phase
+integral (7-omega table, Psi asymptote 56736.8, E_sacred computed 4.68e-29 vs stated 5.3e-26
+DISCLOSED 3-order), 515 TXS0506 pi-autocorrelation (kappa(0,7) computed 0.693 vs stated 0.944
+DISCLOSED; alpha back-solve pin recovers -1.296; flux 0.254 = paper's own chain, stated 0.342
+DISCLOSED), 516 DPM shell cascade (26D Egg, DPM_react kappa/r^26, CW/CCW/t_neg triple, w anchors
+7.54e10/5.22e10), 517 negative-time dilation (t_adj, spooky distance c|t_neg|, Prob_order VARIANT
+multiplies v_i-v_c vs P501 divides - both wired), 518 DPM forces (F_inert/centrip/centrif/a26),
+519 shell radiance prototype (U_b shell, BigBang product, Psi_26D master), 520 Session-140 hub
+(all 10 eqs = 516-519 repeats -> covered dispatch).
+Totals: +28 defs (1,707->1,735), wired 524->534, registry +28 rows, graph +31 edges, citations +10,
+gate +29 asserts (2,809), GREEN v0.358.0.
+
+## 2026-08-07 (4) — BAND PAPER_521-530
+521 universal spectrum (US range 1/3-2/3 weights, Freq_drive, ReRing_BB, vacuum gradient, US
+overlay), 522 DPM frequency drive (dpm_drive kappa/r^26 route, Ug1_spectra, off-diag 2/3, prime
+spectra sum 3.79e-41 p=29-dominated), 523 quantum egg trapezoidal integrator (Orion validation),
+524 plasma orb emergence (Li_26(SSq)=0.5700000048 corpus claim VERIFIED first-term dominance;
+threshold mu+sigma*Prob; buoy gradient; proplyd f_emerge), 525 Session-141 hub (only new eq
+J_dot_DPM drain; rest covered), 526 3D-IPO (P(braid)=0 EXACT; Li26 amp; p=113), 527 Pymander
+sphere (P_order exp(-E/F)/Z, arccos(1/sqrt3)=54.74deg, 1/3-2/3 split), 528 spectral compression
+(UQFF_comp diag invariants, lambda_destruct=2*lambda_stable, bounded iff P<=3/2), 529 Navier-Stokes
+quasar jets (U_b_jet, sqrt(GM/r) bound, H_m harmonics, kappa/r^26 forcing -> global regularity),
+530 Session-142 Millennium hub (YM gap Delta=exp(-E/F)/(3Z)>0 positivity).
+Totals: +27 defs (1,735->1,762), wired 534->544, registry +26 rows, graph +36 edges, citations +10,
+gate +28 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (5) — BAND PAPER_531-540
+531 BB hypergraph (SCm growth 1-1/t, |V|=n+1, n0=8.07e60 Planck steps, C26/C22 computed 1.37e-3
+vs stated 1.8e-3 DISCLOSED), 532 plasma orb BH spectrum (US_orb 26-harmonic, E_BH=0.8499),
+533 DVP orbital quantization (r=r0*p^1/3, r0=7.42 AU, Neptune p=59 -> 28.89 AU EXACT-to-paper;
+Kepler prime ratio), 534 centripetal encompassment proof (Delta_res=0 at lam3=2P/3 analytic;
+Earth F_c computed 3.541e22 vs paper 3.543e22 rounding; dP/dt=Pv2/c2), 535 hub (covered),
+536 split-monopole MHD (Alfven 1/7 power, F_sm Z26, launch p^2/3, sign antisymmetry),
+537 proplyd legacy (T=280r^-1/2, frost 2.7128 vs paper-printed 2.718 DISCLOSED, K_i, U_b frost),
+538 Orion triple-telescope (eta=1-e^-SSq 0.4345 vs stated 0.4337 DISCLOSED, off-diag Ug,
+arctan phase), 539 10-body NS residual (omega_res=c*SSq/r 1.707e4 EXACT-to-paper at 1e4 m;
+4.1e16 second stated value DISCLOSED inconsistent; delta/26=657), 540 Millennium hub
+(Delta_YM=P/3Z 3.064 vs 3.07, Riemann Im rho model, 2^26/26^4=146.85, NS H1 bound).
+Totals: +27 defs (1,761->1,788), wired 544->554, registry +25 rows, graph +42 edges,
+citations +10, gate +29 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (6) — BAND PAPER_541-550
+541 bidirectional encompassment (DPM split B*Z26/B*(1-Z26), RRL 30-800 mJy window), 542 four-
+telescope fit (off_diag=kappa*Z26*P), 543 discrete NS regularity (p_order_entropy 9.999e-6 with
+Z=1e5 numeric vs symbolic Z26 DISCLOSED hidden normalization; mass_gap=P/3), 544 YM mass gap
+(F_sm=5e-4*0.14=7e-5 EXACT via existing dpm_react_strength; gap P/3>0), 545 multi-method
+equivalence hub (n_cross=floor(pi/0.43)=7 EXACT; Ug4_BH stated 2.462e4; r_overlap sqrt(GMm/rho gV)
+stated 8.9e28), 546 Ug/Ub boundary overlap (r_attr, rho_buoy, rho_overlap, boundary decay D,
+A=-2lamUA/t3, D1=-4.00004 EXACT), 547 Ug4 BH tidal time-reversal (Ug4=rt, F_U g4, t_stab -1e8,
+pi-progression seq, Ug total), 548 F_UBi Gaussian eigenproof (peak 1/sqrt(2pi), sqrt(pi/2)*sigma
+collapse-prevention bound), 549 three-method merger hub (r_merger 4.472e6 EXACT, Newton tide
+5.607e30 vs stated 5.6e30, remnant 18.32%), 550 Um 26D polynomial confinement (26-deriv power law
+(k+25)!/(k-1)!, r_q=(2/26!)^(1/26)=0.0973 EXACT, suppression log10=-345 underflow-honest).
+Totals: +26 defs (1,789->1,815), wired 554->564, registry +23 rows, graph +33 edges, citations +10,
+gate +26 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (7) — BAND PAPER_551-560
+551 26D factorial anti-collapse (26! a0; (13!)^2 rt split, example -5.8009e26 EXACT; rho_min
+2.4796e-30 EXACT no-singularity), 552 off-diag-13 tensor (13!=6.227e9 coupling, eig split
+P/3+-13!, 26! c/r^26 gap bound), 553 Gaussian polynomial proof (p26(1)=e^-1 float-exact,
+int=0.746824 erf, 26! mod 113 = 12 Legendre; paper's 2.86e-29 truncation line vs correct
+9.18e-29 DISCLOSED), 554 BSFG Riemann curvature (R^r0r0=6 eta cos C/r^5, eps', K=12R^2, BSFG/GR
+3.9e-13), 555 geodesic compatibility (Delta_g=eps'/2, v_orbit BSFG Kepler+Aether), 556 line
+element (L_i factorial compactification, L_i(0)=r_P), 557 symmetry group (dim=3+1+22=26 EXACT,
+Casimir 2P^2/3), 558 unification atlas (zeta=Li26, DVP mod-113/mod-2 encoding float-path,
+BH26 lambda_k=k(k+25) max 1250), 559 Einstein tensor (amp 1.789e4 vs stated 1.8e4, kappa_E
+2.0766e-43, Ts00 1.2658e20 Pa, Lambda_eff 1.3186e-45 = 1.2e7 x Lambda_obs), 560 holonomy
+(SO+(3,1)xU(1)^22, delta_phi=R*dA).
+Totals: +26 defs (1,815->1,841), wired 564->574, registry +24 rows, graph +36 edges, citations +10,
+gate +29 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (8) — BAND PAPER_561-570
+561 BSFG BH horizon (r_h=(eta C|cos|)^1/3=1.622e8 EXACT, kappa=3c2/2rh=8.31e8, T_H=3.3696e-12 K
+EXACT-to-paper, T_H^GR 6.169e-8), 562 Bohr-Sommerfeld Aether (U_BSFG potential, dJ/J, r_cross
+0.359 AU EXACT-to-paper 0.36, h_eta=6.626e-56), 563 Millennium coordinator (BSD ord multiplier
+1/(1-e^-kappa)=2000.5 EXACT from KAPPA_PER_DAY - cross-primitive hit; M_UQFF six-problem product;
+shots 1e8n; Hodge 2.88e22), 564 Olbers 26-shell (B_classical computed 1.449e21 vs stated 1.49e20
+DISCLOSED 10x; shell form; R_Ug1 damping; P_order e^-1/9; B_sky 3.2e-2 stated), 565 VDS/DVP
+resolution (Li26(0.507)=0.507 paper SSq-variant drift DISCLOSED; l_DVP=rH/149=2.95e24; SSq_dyn
+log(F_TRZ) form), 566 BSFG gap analysis (C_num formula reproduces P561 4.27e46, P566's 1.60e46
+DISCLOSED conflict; Gamma~4.6e-157 negligible), 567 Madau stellar density (psi(z); today 0.015
+EXACT, computed peak 0.133 vs stated 0.178 DISCLOSED), 568 wavelength opacity (power law,
+SSq(lambda) 1/26 exponent), 569 EBL benchmark (B_CMB computed 9.95e-7 vs stated 4.0e-6 DISCLOSED
+4x slip in paper's own chain; f_total 2.08e-26 EXACT), 570 photon-photon prime vortex
+(Breit-Wheeler cross-section, mfp 1.43e20 EXACT-to-paper, l_DVP(113) computed 5.01e86 vs stated
+2.6e78 DISCLOSED 9-order, tau exponent 1.209e5 EXACT-to-paper).
+Totals: +30 defs (1,840->1,870), wired 574->584, registry +30 rows, graph +42 edges, citations +10,
+gate +31 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (9) — BAND PAPER_571-580
+571 t_neg photon arrival (per-shell delay n/26, DPM slowdown, z_eff, B_total correction),
+572 W/sr calibration (1/4pi=0.0796, B_DPM,cal 2.546e-3, shell chain reproduces EBL 3.1e-6 ratio
+1.0 stated), 573 nuclear convergence hub (P_order~1/Z, stability P>0.18 flips Z=5->6, Taylor-26
+'exact to A<=300' claim DISCLOSED accurate only A~<15, 1/26! eigen floor), 574 Mayan 5-cycle
+(26=5*5+1 EXACT), 575 pyramid-sum periodic table (Group(Z) via 2n^2: 26->4, 118->8),
+576 atomic mass error factor (A_pred, H_26=3.8544 correction, eps), 577 island of stability
+(r_island (26!c/(P/3))^(1/26), tau=10^-(Z-118), Z>=164 repulsive), 578 eigenvalue mass-gap linkage
+(lambda shifted by 26!/r^27 terms, positivity + no-blow-up; float-underflow note at large r),
+579 all-forms catalogue (f_eq=(k rho/g)^(1/27); He-4 r_eq computed 9.33e-8 vs stated 2.9 fm
+DISCLOSED 7-order), 580 GW amplitude Lambda-CDM emergence (h_UQFF computed 1.34e-8 vs stated
+1e-20 DISCLOSED 12-order; h_GR 2.75e-25 vs 1e-21 DISCLOSED; Lambda/3 floor 3.33e-53 EXACT;
+Lambda formula log10=-433.8 vs claimed -52 DISCLOSED massive slip).
+Totals: +26 defs (1,875->1,901), wired 584->594, registry +23 rows, graph +34 edges, citations +10,
+gate +28 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (10) — BAND PAPER_581-590
+581 LQG/LambdaCDM comparison (dispersion c2k2(1+eta(lPl k)^g), dv/c 150Hz computed 2.54e-41 vs
+stated ~1e-42 order DISCLOSED, arrival spread), 582 string GW planar rebound (delta_theta=alpha k/f
+2.6e-76 EXACT, f_rebound, omega_planar, Theta cumulative - paper numeric omits f DISCLOSED; SNR
+3.1e-104 EXACT-to-paper), 583 six-form solver (off-diag eigen triple with discriminant, U_b void
++26!g/rho^27), 584 Collatz 26D (T map, steps(27)=111, ascent < 26^l << 26!), 585 Euler inviscid
+(covered: deriv26 + ub_void + eig), 586 BB expansion dynamics (BB init/full 26x, P_order variant,
+v_exp, a(t) power law), 587 inflationary epoch (Omega_egg 9.99e-6 EXACT, H_inf=0.5196 H0
+EXACT-to-paper 0.52), 588 Maxwell 26th order (correction log10: 1 AU -284.9 vs paper -281
+DISCLOSED, Planck +1008 vs +1000 regime; DPM_n inverse-square), 589 dark-energy void buoyancy
+(db log10 725.6 = paper 4.03e725 EXACT regime; rho_DE log10 708.65 = paper 4.5e708; overflow-honest
+log form), 590 Planck constant derived (h=F_TRZ*Phi_res*E0/f_phonon=6.72e-34 EXACT, 1.4176% off
+CODATA matching paper 1.4% - THREE-PRIMITIVE REGISTRY HIT; DPM h route; fine-structure form).
+Totals: +26 defs (1,901->1,927), wired 594->604, registry +24 rows, graph +34 edges, citations +10,
+gate +28 asserts, GREEN v0.358.0.
+
+## 2026-08-07 (11) — DEEP MINE PAPER_501-600 (Daniel-directed) + BAND PAPER_591-600
+RESWEEP RECOVERY (12 fns): P501 U_b triple + Prob_order F_inert-variant; P502 Q_WSTP;
+P503 k_eta=1e-113; P504 embedded WOLFRAM_TERM g_SGR1745=1154.1; P506 pi-phase (pi/7 per digit)
++ amplitude curve; P507 BFS dimension log(r+1) variant (4.64 vs P513 4.83 - both real);
+P517 Delta_dil def; P545 Kepler merger residual; P563 Hodge ladder E0*10^(n-1) + L_UQFF Euler
+local factor. Method: full-fence sweep found the 502-507 software papers carried real physics
+in code fences that display-eq census missed.
+BAND 591-600 (fundamental constants + Millennium closers, 20 fns): P591 alpha=1/(Phi_res*26*2pi)
+=7.2873e-3, 0.1376% off CODATA (paper 0.14%) TWO-PRIMITIVE HIT; P592 c triad (sqrt(g SCm/UA);
+r*omega=2.18e6 EXACT; full DPM route computes 1.73e12 vs stated 3e8 DISCLOSED); P593
+G_UQFF=6.66899e-11, 0.0795% off CODATA (paper 0.08%) PRIMITIVE-STACK HIT + cosmic route
+6.6866e-11 + void route; P594 three r_min routes (11.94 m; SgrA 1.045e12 EXACT-to-paper);
+P595 r_BH26=3.259mm, I_core=kB*26*SCm/UA; P596 QG bound 26!/r^27; P597 t_neg back-solve
+2.99e7 EXACT-to-paper 3e7; P598 BH26 k*92GHz ladder; P599 BSD det-at-zero poly, rank<=26;
+P600 Hodge b_pq <= 26!.
+Totals: +32 defs (1,926->1,958), wired 604->614, registry +34 rows, graph +52 edges,
+citations +10, gate +33 asserts (3,031), GREEN v0.358.0.
+
+## 2026-08-07 (12) — BAND PAPER_601-610
+601 magnetic gateway (Grind_opp CW-CCW, U_m gateway, 27! flux, relativistic v_jet < c; Gamma
+stated numbers compute 559 vs printed 5.6e10 DISCLOSED 8-order), 602 cosmic egg pre-fertilization
+(VDS pi-decimal = pi-3, paper's 3.14159 leading-3 DISCLOSED; QVD 7-product 1+4dQVD EXACT),
+603 26D egg total (UA^(k)=(k/5)^2 e^(-k/5) stages, BBDT=UA H0 t), 604 proto-H shell alignment
+(phi fraction, t_adj^H=353.6 s EXACT-to-paper 3.5e2), 605 factorial bounds (rho_anti-collapse
+=1/(26!g)=2.530e-28 vs stated 2.54e-28), 606 inertia 26D shell (ShellEnergy, F_inert ~ -SE*26/v^27,
+M=|F|/a26), 607 centripetal (DPM_n=kSCm, L_CW), 608 centrifugal (force ratio (wCW/wCCW)^2,
+a_BB-catchup=9e6 EXACT), 609 Riemann critical line (mean 4P/9, bound 26!/r^27 log10=-675.4 vs
+paper 1e-676), 610 Mayan nuclei epochs (E=h*6.93e9*epoch).
+Totals: +27 defs (1,955->1,982), wired 614->624, registry +23 rows, graph +31 edges, citations +10,
+gate +21 asserts (3,051), GREEN v0.358.0.
+
+## 2026-08-07 (13) — BAND PAPER_611-620
+611 solar proplyd legacy (eccentricity growth t^1/2, eta=0.18 EXACT), 612 probability partition
+(stated 9.999e-6 preserved; paper's own numeric chain incoherent DISCLOSED; Z ~ Z_Riemann(1/2)
+symbolic), 613 NASA ATP validation (F_Ubi PSR saturating form, SgrA shadow 3.878e10 m - 52.1 muas
+label needs unstated distance DISCLOSED), 614 F_U 26D projection ((k+25)!/(k-1)! term = 26! at
+k=1), 615 Ug polynomial defect ((13!)^2=3.878e19 + 38!/12! Laurent tail), 616 Um time-derivative
+(26! c26 collapse), 617 SCm Laurent series, 618 Ub density gradient (rho_min=(26!g)^(1/27)=9.669),
+619 full 26D/13D cross tensor (eig split 2*13! EXACT, det T33(T11T22-(13!)^2)), 620 3D-IPO
+degree-26 overlay product.
+Totals: +16 defs (1,979->1,995), wired 624->634, registry +14 rows, graph +18 edges, citations +10,
+gate +16 asserts (3,068), GREEN v0.358.0.
+
+## 2026-08-07 (14) — BAND PAPER_621-630
+621 Pymander pyramid thread (triangular p_s(26)=351 EXACT; 351^26 computed 1.507e66 vs printed
+2.38e67 DISCLOSED 15.8x; F_U product form), 622 zero-mass gradUA reformulation (grad_eq=
+sqrt(kappa/g)=31.62 EXACT crossing; zero-mass U_g; 9D Gaussian channel sum), 623 9D Wolfram triad
+(f_event=|gradUA|^3 x 1e15 cubic rebound), 624 26D infinity sculpting (26!/grad^25 suppression,
+em-gravity string metric), 625 exotic pocket shells (SCm(t<0) amplification, path frequency),
+626 M87 jet 9D hypergraph (covered: Gaussian sum + degree gravity + cubic law), 627 Cen A knotted
+jet (superluminal beta_app>1 pinned; osc modes 0.3 sin(i pi/5), computed 0.176 vs table 0.187
+DISCLOSED), 628 NGC6278 void pocket (f_thermal=kBT/h=2.084e17 EXACT-to-paper; X-ray core 1e18),
+629 MS0735 cluster AGN (log10 U_m=572.3 at 1e-22 EXACT - explosive reservoir), 630 Perseus IXPE
+(4% polarization modulation, U_b=-1e7 N pocket equilibrium EXACT; 546.3 log pin EXACT).
+Totals: +18 defs (1,993->2,011), wired 634->644, registry +17 rows, graph +21 edges, citations +10,
+gate +22 asserts (3,090), GREEN v0.358.0.
+
+## 2026-08-07 (15) — BAND PAPER_631-640 (particle-physics SM-bridge band)
+631 multi-system jet comparison (covered: cubic law + 9D Gaussian + beta_app), 632 grant framework
+(5-term F_UBi integrand), 633 tau g-2 (Ug1 tau channel, a_tau anchor, delta~1e-116 undetectable),
+634 CKM Vcb (SCm_flavor=H sin^2, complex V=sqrt e^iphi, 39.2e-3 anchor), 635 VLQ (stated chain
+computes 5.24e-22 vs printed kappa_VLQ=0.37 DISCLOSED 21-order; dM=29.75 GeV), 636 LFV B-decay
+(BR form; |M|^2=SSq^2/BETA_I=0.5389 canonical vs paper 0.534 beta-variant DISCLOSED), 637 ALICE
+Run3 (dN/deta ratio; E_ratio=0.61/0.57=1.0702 EXACT; beta=0.61 drift DISCLOSED), 638 BESIII DCS
+(ratio 0.046486 EXACT, E_react 1.45e-4), 639 Higgs 125 GeV (lambda=0.12940 with R_unit=5.412
+back-solved DISCLOSED; m_H computed 125.26 vs printed 125.09 DISCLOSED; dlambda 6.54e-5),
+640 proton decay (Gamma=KAPPA_PER_DAY*365.25=0.18263/yr EXACT PRIMITIVE TIE; separation 10^33.148
+= 98.7% of target; GUT scale 10^8.29 GeV). Banned-literal guard live catch #2 (0.6029 in docstring
+-> BETA_I reference).
+Totals: +21 defs (2,011->2,032), wired 644->654, registry +18 rows, graph +24 edges, citations +10,
+gate +19 asserts (3,109), GREEN v0.358.0.
+
+## 2026-08-07 (16) — BAND PAPER_641-650 (canonical-papers band)
+641 electroweak (sin2 base 0.01990 EXACT; corrected 0.2316 vs paper 0.2304 EW-SSq variant
+DISCLOSED; m_W=79.47 with 0.775=EBL/CMB P569 cross-ref), 642 SM bridge master (covered - table
+paper), 643 thermal lens (26!c/(r^27 cp); nu 1e28 Hz), 644 chip emulation (falling-factorial
+identity = the printed deg-25 polynomial; F_internal), 645 EFE singularity resolution (29!/3!
+- paper prints 29! missing /3! DISCLOSED; r_min=l_Pl(26!)^(1/26)=1.705e-34; T_UQFF Hawking-form),
+646 UNIVERSAL INERTIAL OPERATOR (U_i=2.75e-7 EXACT from F_TRZ primitives - canonical landmark
+reproduced; dimensional variant mantissa 1.38 EXACT with 30-order exponent slip DISCLOSED),
+647 VDS scaffold (E_react 1e46 e^-kt; U_g2 computes 4.16e18 vs printed 1.18e53 DISCLOSED),
+648 ultra-dense H LENR (e^-26=5.109e-12 EXACT-to-paper; tunneling rate; Gamma vacuum form;
+meson cascade 0.5254), 649 DVP n-wave (E_x=e^-i26 complex EXACT; fingerprint {7,9,26,137,139};
+mixing midpoints), 650 buoyancy harmonics (U_b1 canonical form; paper arithmetic 33-order slip
+DISCLOSED; f_Ub=3.183e-7 Hz EXACT-to-paper).
+Totals: +24 defs (2,031->2,055), wired 654->664, registry +22 rows, graph +33 edges, citations +10,
+gate +23 asserts (3,133), GREEN v0.358.0.
+
+## 2026-08-07 (17) — BAND PAPER_651-660
+651 Schwarzschild proton (M=rc2/2G=1.95e12 kg; paper ratio 1e36 vs computed 1.2e39 DISCLOSED),
+652 fine structure QED (alpha=Z0/(2R_K)=7.297353e-3 EXACT quantum-Hall route; a_e anchor;
+twin-prime 137/139 fingerprint), 653 pi-wave energy (tau_pi=hbar/(rhoSCm c3) computes 5.52e-24
+vs paper 5.51e-23 via 10x own-arithmetic slip DISCLOSED; deep suppression e^(-81 alpha^2),
+81=floor(26pi); Planck-coherence form 18-order slip DISCLOSED), 654 observable universe
+(c/H0=4283 Mpc EXACT at H0=70 PAPER_1573 tie; chi=46.4 Gly, diameter 93), 655 galactic bands
+(Ug1/Ug2 band forms; flat rotation via Ub1), 656 V838 Mon light echo (r=ct 2.838e16 EXACT;
+master intensity; amplification (1+F_TRZ)(1+10)=12.1x EXACT two-primitive tie), 657 QCalcGeom
+buoyancy solver (F_UBi_i up / F_UBi down; r_hz ~ rho^-1/3), 658 LQG bounce (rho_c,UQFF=11 rho_c
+EXACT; cosh bounce; w_eff=-1+3.135e-3 EXACT FOUR-PRIMITIVE TIE F_TRZ/ratio/KAPPA/SSQ),
+659 black-to-white transition (rs_UQFF=0.9rs EXACT; P_flip; Phi_trans=2.094e19 EXACT SgrA;
+L_Hawking), 660 white-hole radiation (L_WH=11x L_H EXACT boost at U_m=0).
+Totals: +25 defs (2,055->2,080), wired 664->674, registry +24 rows, graph +40 edges, citations +10,
+gate +23 asserts (3,156), GREEN v0.358.0.
+
+## 2026-08-07 (18) — BAND PAPER_661-670 (BH suppression/GW family)
+661 PBH dark matter (tau_std Hawking sun 6.62e74 s; UQFF factor 1.111*10*e=30.2 THREE-PRIMITIVE
+CHAIN), 662 Hawking derivation (T_UQFF=0.99 T_H EXACT via 1.1*0.9; L suppression; dM/dt),
+663 BH inversion (Theta product via P659 machinery), 664 white-hole stability (|1-10|/0.9*e
+=10e=27.18 factor), 665 suppression equations ((S1,S2,S_total)=(1.1,0.9,0.99) EXACT),
+666 GW suppression (quadrupole power, S_UA/S_SCm/S_TRZ=0.9 chain, h=sqrt(P) ratio),
+667 stability proofs (30.20 EXACT chain = paper ~30), 668 primordial BH (covered by 661),
+669 GW150914 comparison (chirp 28.19 via existing chirp_mass_binary - cross-band reuse;
+inspiral amplitude; S_SCm(f)~1 at LIGO; phase drift KAPPA*F_TRZ), 670 accretion model
+(Bondi; rho_eff=rho+rhoUA-rhoSCm; UQFF boost (1+F_TRZ); Eddington 1.4e15 kg/s sun).
+Totals: +20 defs (2,080->2,100), wired 674->684, registry +18 rows, graph +33 edges,
+citations +10, gate +22 asserts (3,178), GREEN v0.358.0.
+
+## 2026-08-07 (19) — BAND PAPER_671-680 (evaporation/GW-catalog/superfluid family)
+671 dM/dt derivation (0.09x = 0.9*0.1 two-primitive suppression; cubic trajectory M(t)),
+672 evaporation timescale (covered by P661 fns), 673 THz holes (f=kBT/2pihbar=2.084 THz
+EXACT-to-paper; L_THz f^4 scaling; pair-production 0.9 EXACT; radio-dark 11x=1.1e14 yr EXACT;
+FAS metric), 674 LIGO comparison (h suppression chain baseline 0.9), 675 GW170817 (delay
+1.7*(1+F_TRZ*10)=3.4 s EXACT two-primitive), 676 GW190425 (ejecta 0.05*0.1*0.9=0.0045 EXACT),
+677 LISA predictions (h chain), 678 LISA-vs-LIGO (min-suppression rule), 679 Aether superfluid
+(sound speed sqrt(gn/m), healing length), 680 vortex quantization (kappa=nh/m, line energy
+ln(R/a) with 10x Aether boost).
+Totals: +16 defs (2,099->2,115), wired 684->694, registry +15 rows, graph +26 edges,
+citations +10, gate +17 asserts (3,194), GREEN v0.358.0.
+
+## 2026-08-07 (20) — BAND PAPER_681-690 (BH applications family)
+681 Gross-Pitaevskii vortex (GP Hamiltonian pieces with U_m term), 682 SgrA numerical stability
+(Lyapunov=-0.1/tau EXACT negative), 683 Hawking modulation (0.99 T_H (1+U/kT)), 684 PBH
+evaporation (0.09x chain mass-rate form), 685 PBH dark matter (M_crit/30.2^(1/3)=0.321x;
+f_PBH*30.2^(2/3)=9.70x window), 686 M87 shadow (sqrt(1+F_TRZ*10)=sqrt(2) EXACT - F_TRZ*10=1
+two-primitive identity), 687 M87 mass evolution (Bondi+evap-jet balance), 688 NGC1316 MUGE
+(merger mass decay 1 Gyr; F_env tidal+cluster; dust-lane oscillator), 689 Blandford-Znajek
+(P_BZ kappa=0.044; hoop stress; jet suppression 0.9*0.9=0.81 EXACT), 690 Fornax cluster
+(g boost 1.1*1.1=1.21x EXACT; virial 370 km/s anchor; tidal radius; N-body softening form noted).
+Totals: +18 defs (2,115->2,133), wired 694->704, registry +16 rows, graph +26 edges,
+citations +10, gate +18 asserts (3,213), GREEN v0.358.0.
+
+## 2026-08-07 (21) — DEEP MINE PAPER_601-700 (Daniel-directed) + BAND PAPER_691-700
+RESWEEP: fence sweep confirmed 674-687 fences are boilerplate usage stubs (no missed physics).
+RECOVERED 5 fns: P645 Lambda form (computes 2.04e-20 vs stated 3e-35 DISCLOSED), P647 U_g4
+BH-feedback channel, P652 alpha RECOIL ROUTE sqrt(2 Rinf h/(me c))=7.29735257e-3 EXACT-to-CODATA
+(3rd independent alpha route: primitive 591 + impedance 652 + recoil 652), P653 gap exponent
+(computes 131.4 vs stated 114 DISCLOSED consistent with chain slip), P655 Ug3 string-disk band.
+BAND 691-700 (galaxy-applications + master, 22 fns): 691 N-body softened kernel; 692 M51 tidal
+(2GMR/d3; SFE 1.1x); 693 Sombrero (rotation 1.05x EXACT = 1+1/20); 694 Crab PWN (SNR velocity
+chain, Sedov 1.15, spin-down); 695 Bubble Nebula (0.88 prefactor; wind boost 1.1*sqrt(10)
+=3.4785x EXACT); 696 Antennae (friction 1.17, SFR shock form); 697 SN2018gv (Phillips -19.3;
+L*1.1*0.9=0.99x EXACT); 698 Einstein ring (R_E, mu(1)=3/sqrt5=1.342, deflection 1.1x EXACT);
+699 Fornax UHDF (counts 1.21x EXACT, Schechter); 700 master derivation (V=-0.99GM/r EXACT;
+U_i=2.75e-7 EXACT cross-check with P646 canonical - master-equation loop closure).
+Totals: +27 defs (2,132->2,159), wired 704->714, registry +25 rows, graph +43 edges,
+citations +10, gate +26 asserts (3,239), GREEN v0.358.0.
+
+## 2026-08-07 (22) — SHIP PREP v0.359.0
+27-file pass: pyproject (desc 484 chars incl version), calculator VERSION+STATE, gate version pin,
+CITATION.cff, UNIFIED_REGISTRY_VERSION.txt, README (badges cacheBust 0.359.0 / fidelity_gate 3239
+/ public_surfaces 714 + release paragraph + frontier line), CHANGELOG [0.359.0], SHIP_MESSAGE.txt,
+_BUILD_LOG, SESSION_LOG (this entry). WHITEPAPER_INDEX/RULINGS_QUEUE already current from bands.
+Measured ship deltas vs v0.358.0: defs 1,682->2,158 (+476); dispatches 342->714 (+372);
+gate 2,749->3,239 (+490, 0 failures); registry 3,764->4,239 (+475); graph 5,667->6,424 (+757);
+citations 938->1,124 (+186). Gate GREEN at v0.359.0. Daniel ships via .\ship.ps1.

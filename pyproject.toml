@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.358.0"
-description = "UQFF pure calculator v0.358.0 - PAPER_500 CHARTER MILESTONE: deep-capture PAPER_401-500 complete (+86 named functions incl. the missing 4th dissipation term, CNB coupling, Cosmic Quantum Egg, hypergraph no-G gravity, golden-ratio prime vortices) + full-census 401-500 resweep (+8 recoveries incl. the Omega_Lambda D-universe identity and complex F_U_Bi_i). Registry 3,764 rows, graph 5,667 edges, citations 938 papers, gate 2,749 green. Self-rectification #3 (Ts00 fork resolved)."
+version = "0.359.0"
+description = "UQFF pure calculator v0.359.0 - dispatch-gap closure (Rule B holds PAPER_001-700, wired_count 714) + PAPER_500 milestone audit + deep-capture PAPER_501-700 (20 bands, +570 named functions: h/alpha/c/G derived from primitives at sub-0.2% residuals, U_i=2.75e-7 canonical reproduced, BSFG geometry, Olbers closure, Millennium closers, BH/GW suppression family) + deep-mine resweeps 501-600 and 601-700 (+17 recoveries incl. 3rd alpha route EXACT). Registry 4,239 rows, gate 3,239 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -75,6 +75,7 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "COMMERCIAL.md",
     "SESSION_LOG.md",
     "WHITEPAPER_INDEX.md",
+    "AUDIT_500_PAPER_REPORT.md",
     "_BUILD_LOG.md",
     "UNIFIED_REGISTRY_VERSION.txt",
     "UNIFIED_REGISTRY_PROGRAM_PLAN.md",

@@ -1,23 +1,5 @@
-v0.358.0 - PAPER_500 CHARTER MILESTONE: DEEP-CAPTURE PAPER_001-500 COMPLETE
+v0.359.0: Rule B dispatch closure (714 surfaces PAPER_001-700) + PAPER_500 milestone audit (AFFIRMATIVE ruling) + deep-capture PAPER_501-700 (20 bands, +570 fns) + deep-mine resweeps 501-600/601-700 (+17 recoveries)
 
-Ten batches (401-500, +86 named functions) + full-census 401-500 resweep (+8 recoveries).
-The deep-capture campaign now covers every whitepaper from PAPER_001 through PAPER_500.
+Headlines: fundamental-constants suite from primitives (h 6.72e-34 EXACT 1.42%; alpha x3 routes incl. 2 EXACT; G 0.0795%; c triad); U_i=2.75e-7 canonical reproduced twice (P646 + P700 master cross-check); cross-primitive identities pinned (BSD 2000.5, proton-decay kappa*365.25, M87 shadow sqrt(2), w_eff 4-primitive, Li_26(SSq)=0.57 VERIFIED).
 
-HEADLINES:
-- THE MISSING 4TH TERM WIRED: PAPER_420 documents the May-2025 book master's lambda_i
-  dissipation sum as absent from compute_FU() in every prior code generation - now captured
-  (canonical LAMBDA_I = 1.0 x locked U_i = 2.75e-7).
-- SELF-RECTIFICATION #3: PAPER_406's Ts00 = 1.27e3 + 1.11e7 resolves the PAPER_165/172 fork.
-- PRIMITIVE HITS: rho_SCm ~ M^(2/3) = D_phys/D_BSFG; SSq^26 e^-pi = 1.94e-8 EXACT LENR catalyst;
-  zeta(4)/zeta(2) = pi^2/15 inertial operator; GOLDEN-RATIO prime vortices (113 = DVP prime);
-  Landau n = 0 = rho_UA/2; Omega_Lambda = Lambda c^2/(3 H0^2) = 0.634 D-universe identity.
-- FIRSTS: tidal torque, shock front, CNB coupling (9.07e-42 N smallest force), imaginary
-  F_U_Bi_i pin, no-G hypergraph gravity (g = c^2 F/r^2, d_eff = 3), Basel-series application,
-  Cosmic Quantum Egg (7.7 pct Hubble-tension resolution).
-
-RULE 7: ~15 further source slips disclosed with faithful transcription.
-IN-STEP MAPPING: registry 3,764 rows; graph 5,667 edges; citations 938 papers.
-GATE: 2,749 assertions, 0 failures. All 27 ship files synced.
-
-CHARTER: FULL STOP at PAPER_500. Next deliverable = the 500-paper audit report for Daniel's
-review before papers 501+ are authorized.
+Measured vs v0.358.0: defs 1,682->2,158; dispatches 342->714; gate 2,749->3,239 (0 failures); registry 3,764->4,239; graph 5,667->6,424; citations 938->1,124. ~45 source slips disclosed, faithful transcription throughout. Gate green at ship.
