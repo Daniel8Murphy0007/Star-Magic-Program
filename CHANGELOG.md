@@ -6275,6 +6275,22 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
   Followed linked papers (PAPER_200 Um catalogue, 101 Yang-Mills gluon propagator, 300 Lyman-alpha T/S=0.2277).
 - Named equation functions 124 -> 378 this session. 4 authoritative reference PDFs shipped. Predecessor read-only per Rule E.
 
+## [0.361.0] - 2026-08-08
+
+### Deep-capture PAPER_801-900 (10 bands, +142 calculator functions)
+- E(t) engine identity E+ + E- = E_net ALGEBRAICALLY EXACT (0.0 residual); R=0.5 phase transition; S26 gate 19.60.
+- D_GW = 2/3 primitive-tied GW phase (D_GW_EROSION registry primitive per P2154); FWHM 0.4710 THz drift-corrected (Flag-d); DPM proportion-pair null to machine epsilon (P877 Axiom-2).
+- CGM metal-retention theorem f_Z = U_i/(U_i+U_m) (0.89/0.10 Sanchez bounds); Species Index S(n) = -n EXACT; Boyle vacuum ratio 0.02069 three-primitive tie; cosmic epochs (143.2, 900.5) Gyr.
+- NANOGrav h_c/chirp-q, EHT photon ring 2sqrt(27), GRMHD inspiral/ISCO/kilonova/dynamo channels (Kepler f_orb verified 1/yr Earth); BSM force catalog (Kozima 1e6 N EXACT, Colman-Gillespie 40.68 N, ADD 6.72e-24); variable f_TRZ + warp instances; Three-UQFF triple-mode + f_Ub 2.197e7 four-factor.
+- Deep-mine resweep 801-900: +9 recoveries (806 U_m string 9x tie, 808 second-half block incl. DNA twist 34.29 deg + epochs + shell ladder, 841 13-term guard); +33 supporting anchors (total 162+).
+
+### Ship-checklist (full pass)
+- All live artifacts updated: R3 ship row, MERGED +6 family rows, GAPS +4 disclosures, DUPLICATES integrity (914/0), R1 +3 rulings, R2 band row, XGEO queue/routes +5 marquee identities. Frozen references intact.
+
+### Honest accounting (vs v0.360.0)
+- Calculator defs 2,287 -> 2,429; dispatches 814 -> 914; gate 3,403 -> 3,564 (0 failures); main registry 4,665 rows; citations 1,315.
+- PROJECT TOTALS: 4,163 functions / 17,213 registry-family rows / 914 papers (40.5% corpus) / gate 3,564.
+
 ## [0.360.0] - 2026-08-08
 
 ### Deep-capture PAPER_701-800 (10 bands, +116 named functions)
@@ -6293,7 +6309,10 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
 - v0.359.0 missed 7 registry-audit files updated by every prior ship. This ship updates ALL live artifacts: MERGED (+8 family rows), GAPS (+7 incl. 4 open rulings), DUPLICATES (+2 integrity), R1_QUEUE (+4 rulings), R2_MAPPING (+3 band rows), R3_LEDGER (+2 ship rows incl. the missed v0.359.0 row), XGEO queue/routes (+6 marquee observables each). Frozen predecessor references (STATUS/RESULTS_TABLE/FALSIFIABILITY) intact by design.
 
 ### Honest accounting (vs v0.359.0)
-- Calculator defs 2,158 -> 2,274; dispatches 714 -> 814; gate 3,239 -> 3,388 (0 failures); registry 3,764+475 -> 4,383 rows; citations 1,124 -> 1,224 papers.
+- Calculator defs 2,158 -> 2,287; dispatches 714 -> 814; gate 3,239 -> 3,403 (0 failures); registry 4,497 rows; citations 1,124 -> 1,224 papers.
+
+### Deep-mine pass-2 601-700 (Daniel-directed double-check, pre-tag amendment)
+- 13 further recoveries: P622 zero-mass U_m/SCm/U_b full forms; P644 QAOA H_C extension + Ising; P645 GM-route r_min + F_neutron 1e49 + photon sphere; P651 electron Rydberg-26 = 631.3 MHz EXACT (~630 MHz, KER-family tie) + Casimir proton gap + 1e-39 collapse fraction; P656 defect modulation; P658 LQG bounce Friedmann (H=0 at rho_c EXACT). Completeness sweep: zero 601-700 papers with substantive equations and no calculator reference.
 
 ## [0.359.0] - 2026-08-07
 

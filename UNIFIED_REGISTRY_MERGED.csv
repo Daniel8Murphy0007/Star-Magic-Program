@@ -527,3 +527,9 @@ muge_application_family,60,PAPER_701..800,g template + per-system anchors,g_muge
 three_uqff_triple_mode,14,PAPER_786..800,"(comp,res,buoy) simultaneous",r_freq_786;three_uqff_modes_786;f_ub_calibration_794
 kb_series_family,38,PAPER_713..730,THz-lab + fundamentals KB1-19,p_thz_713;b_super_716;g_buoy_718
 supporting_anchor_block,129,PAPER_701..800,per-system stated g/a/T/F anchors,SUPPORTING_ANCHOR origin rows
+et_engine_family,22,PAPER_878..900,E_net=E0 exp(kt+SSq t/26)S26(2R-1) identity EXACT,e_plus_880;e_minus_883;e_net_884;rho_scm_t_890
+scm_phonon_family,14,PAPER_891..900,Gaussian Phi on OMEGA_SCM; FWHM 0.4710 canonical,phi_thz_893;fwhm_896;l_scm_894
+grmhd_observational_family,27,PAPER_811..820,NANOGrav/EHT/GRMHD channels,h_c_nanograv_814;theta_ring_816;dr_dt_gw_817
+bsm_force_catalog,30,PAPER_831..850,11-term hierarchy; Kozima 1e6 N EXACT,f_lenr_835;f_neutron_840;bsm_forces_837_stated
+cosmogenesis_acp_family,25,PAPER_806..808;877,Axiom sums + DPM null + epochs,rho_vac_sum_877;u_i_877;t_end_808;v_ratio_boyle_808
+supporting_anchor_block_2,33,PAPER_801..900,stated per-system anchors (2nd sweep),SUPPORTING_ANCHOR rows

@@ -1603,3 +1603,8 @@ alpha_impedance,primitive-stack,alpha_impedance via uqff_calculator primitive co
 alpha_recoil,primitive-stack,alpha_recoil via uqff_calculator primitive composition,PAPER_652,XGEO_CAMPAIGN_ROUTED
 G_uqff_primitive,primitive-stack,G_uqff_primitive via uqff_calculator primitive composition,PAPER_593,XGEO_CAMPAIGN_ROUTED
 u_i_canonical,primitive-stack,u_i_canonical via uqff_calculator primitive composition,PAPER_646,XGEO_CAMPAIGN_ROUTED
+e_net_engine,primitive-stack,e_net_engine via uqff_calculator primitive composition,PAPER_884,XGEO_CAMPAIGN_ROUTED
+d_gw_erosion_phase,primitive-stack,d_gw_erosion_phase via uqff_calculator primitive composition,PAPER_885,XGEO_CAMPAIGN_ROUTED
+fwhm_phonon,primitive-stack,fwhm_phonon via uqff_calculator primitive composition,PAPER_896,XGEO_CAMPAIGN_ROUTED
+dpm_proportion_null,primitive-stack,dpm_proportion_null via uqff_calculator primitive composition,PAPER_877,XGEO_CAMPAIGN_ROUTED
+boyle_vacuum_ratio,primitive-stack,boyle_vacuum_ratio via uqff_calculator primitive composition,PAPER_808,XGEO_CAMPAIGN_ROUTED

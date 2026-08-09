@@ -1602,3 +1602,8 @@ alpha_impedance,constants,native-paper,primitive-stack,Z0/(2R_K),7.29735e-3,CODA
 alpha_recoil,constants,native-paper,primitive-stack,sqrt(2R_inf h/(me c)),7.29735e-3,CODATA EXACT,PAPER_652,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 G_uqff_primitive,constants,native-paper,primitive-stack,2pi 26^3 Phi/(SSq^3 (26!)^2) vF^5/(E0 f),6.66899e-11,CODATA 6.6743e-11 (0.0795%),PAPER_593,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 u_i_canonical,inertial,native-paper,primitive-stack,F_TRZ*omega_s*(1+F_TRZ),2.75e-7,PAPER_646 landmark EXACT,PAPER_646;PAPER_700,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+e_net_engine,cosmology,native-paper,primitive-stack,E0 exp(kt+SSq t/26)S26(2R-1),identity 0.0,P880/883/884 algebra,PAPER_884,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+d_gw_erosion_phase,gw,native-paper,primitive-stack,D_GW_EROSION*f_GW/f_orb,2/3 EXACT,P2154 primitive,PAPER_885,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+fwhm_phonon,lenr,native-paper,primitive-stack,2*Gamma*sqrt(2ln2),0.4710 THz,P2154 canonical,PAPER_896,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+dpm_proportion_null,cosmogenesis,native-paper,primitive-stack,rho_SCm - rho_UA/10,~0 machine eps,Axiom-2 identity,PAPER_877,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+boyle_vacuum_ratio,vacuum,native-paper,primitive-stack,F_TRZ*SSq^2/(1+SSq),0.02069,three-primitive tie,PAPER_808,primitive-composed,XGEO_CAMPAIGN_ROUTED,,

@@ -72,3 +72,7 @@ k4_forty_order_fork,open_ruling,Q-368a: k4 40-order fork (PAPER_368) - pending D
 e_dpm_table_736,disclosed_conflict,PAPER_736 table 1.669e-27 vs PAPER_737 chain arithmetic (737 wired)
 m_sf_bounding_780,disclosed_convention,P771-780 /1000 clamp vs P780 /10 outlier
 universe_diameter_chain,disclosed_conflict,PAPER_747 4-factor chain vs its own 182 Gly abstract (2dp*1.987 wired)
+f_gal_dm_division,disclosed_conflict,P834 own F_DM division 10x slip (faithful 2.24e-10 wired)
+f_tide_orrery,disclosed_conflict,P832 printed anchors compute 1.49e-3 vs stated 2.9e-11 (8-order)
+uh_856_route,disclosed_conflict,P856 UH route spread (faithful 4.79e-46 vs stated 1.539e-32)
+fwhm_1_49_drift,drift_corrected,P896 printed 1.49 THz = AI drift; 0.4710 canonical wired per P2154 Flag-d

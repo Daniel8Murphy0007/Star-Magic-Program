@@ -1,7 +1,7 @@
-v0.360.0: deep-capture PAPER_701-800 complete + deep-mine resweep + FULL ship-checklist restoration
+v0.361.0: deep-capture PAPER_801-900 complete + deep-mine resweep + full ship pass
 
-Headlines: 1.053e-2 fingerprint SOLVED (qvB/mp*11e-12, f_em_732, 3 occurrences); Three-UQFF triple-mode (R_freq=1+kappa*SSq=1.000285 EXACT; f_Ub=2.197e7 EXACT four-factor); variable f_TRZ ladder (0.02-0.05 + warp 1.05, canonical preserved); U_g5 tensor mode rho c^2(1+3w); E_shell(H)=13.6 eV EXACT; 129 SUPPORTING_ANCHOR rows per Daniel's directive; Rule-7 audit zero exclusions.
+Headlines: E(t) engine identity E+ + E- = E_net ALGEBRAICALLY EXACT (0.0); D_GW=2/3 primitive-tied (P2154); FWHM 0.4710 THz drift-corrected (Flag-d); DPM proportion-pair null (P877); CGM retention theorem (0.89/0.10); NANOGrav/EHT/GRMHD channels; Kozima F_neutron 1e6 N EXACT; Species Index -n EXACT; Boyle ratio three-primitive tie; epochs (143.2, 900.5) Gyr; ~25 slips disclosed.
 
-Ship-checklist restoration: v0.359.0 missed the registry-audit family; ALL live artifacts updated this ship (MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO q+r), frozen references intact by design.
+Single-file deltas vs v0.360.0: calculator defs 2,287->2,429; dispatches 814->914; gate 3,403->3,564 (0 failures); main registry 4,665; citations 1,315.
 
-Measured vs v0.359.0: defs 2,158->2,274; dispatches 714->814; gate 3,239->3,388 (0 failures); registry 4,383 rows; citations 1,224. Gate green at ship.
+PROJECT TOTALS (accumulative, measured): 4,163 functions across 15 modules / 17,213 registry-family rows across 14 CSVs / 914 of 2,256 papers wired (40.5% of corpus, frontier PAPER_001-900) / 3,564 gate assertions green. Full 23-file ship checklist executed (audit family included).

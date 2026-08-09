@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.360.0"
+VERSION = "0.361.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -7382,7 +7382,7 @@ _DC_DISPATCH_INDEX = {
     619: ('own', ['t_comp_eigs_619', 'det_t_comp_619']),
     620: ('own', ['overlay_620']),
     621: ('own', ['triangular_p_s', 't_j_triangular_621', 'fu_pymander_621']),
-    622: ('own', ['grad_ua_eq_622', 'ug_zero_mass_622', 'grad_ua_gaussian_9d']),
+    622: ('own', ['grad_ua_eq_622', 'ug_zero_mass_622', 'um_zero_mass_622', 'scm_zero_mass_622', 'ub_zero_mass_full_622', 'grad_ua_gaussian_9d']),
     623: ('own', ['f_event_cubic_623']),
     624: ('own', ['d26_ub_zero_mass_624', 'em_gravity_string_624']),
     625: ('own', ['scm_negative_time_625', 'freq_total_625']),
@@ -7404,21 +7404,21 @@ _DC_DISPATCH_INDEX = {
     641: ('own', ['sin2_thetaw_base_641', 'sin2_thetaw_corr_641', 'm_w_641']),
     642: ('covered', ['m_w_641', 'sin2_thetaw_corr_641', 'lambda_uqff_639', 'gamma_uqff_640']),
     643: ('own', ['delta_t_lens_643', 'omega_nu_643']),
-    644: ('own', ['deriv26_falling_factorial_644', 'f_internal_644']),
-    645: ('own', ['lambda_uqff_645', 'deriv26_k4_645', 'r_min_planck_645', 't_uqff_hawking_645']),
+    644: ('own', ['deriv26_falling_factorial_644', 'f_internal_644', 'h_c_uqff_644', 'ising_energy_644']),
+    645: ('own', ['lambda_uqff_645', 'deriv26_k4_645', 'r_min_planck_645', 'r_min_gm_645', 't_uqff_hawking_645', 'f_neutron_645_stated', 'r_photon_645']),
     646: ('own', ['u_i_canonical_646', 'u_i_dimensional_646']),
     647: ('own', ['ug4_647', 'e_react_647', 'ug2_647']),
     648: ('own', ['e_rydberg_26_648', 'rate_lenr_648', 'gamma_uqff_648', 'meson_cascade_ratio_648']),
     649: ('own', ['e_x_complex_649', 'dvp_fingerprint_649', 'theta_m_649', 'v_m_649']),
     650: ('own', ['ub1_650', 'f_ub_650']),
-    651: ('own', ['m_schwarzschild_from_radius_651']),
+    651: ('own', ['m_schwarzschild_from_radius_651', 'f_rydberg26_electron_651', 'p_casimir_651', 'vac_fraction_651_stated']),
     652: ('own', ['alpha_recoil_route_652', 'alpha_impedance_route_652', 'a_e_g2_652']),
     653: ('own', ['gap_exponent_653', 'tau_pi_653', 'e_wave_653', 'e_wave_deep_653', 'e_wave_planck_653']),
     654: ('own', ['hubble_length_654', 'chi_horizon_654']),
     655: ('own', ['ug3_band_655', 'ug1_band_655', 'ug2_band_655']),
-    656: ('own', ['r_echo_656', 'i_echo_656', 'uqff_amplification_656']),
+    656: ('own', ['r_echo_656', 'i_echo_656', 'uqff_amplification_656', 'defect_mod_656']),
     657: ('own', ['fubi_i_657', 'fubi_657', 'r_hz_657']),
-    658: ('own', ['rho_c_uqff_658', 'a_bounce_658', 'w_eff_658']),
+    658: ('own', ['h2_lqg_658', 'rho_c_uqff_658', 'a_bounce_658', 'w_eff_658']),
     659: ('own', ['rs_uqff_659', 'p_flip_659', 'phi_trans_659', 'l_hawking_659']),
     660: ('own', ['l_wh_uqff_660']),
     661: ('own', ['tau_std_hawking_661', 'tau_uqff_bh_661']),
@@ -7561,6 +7561,106 @@ _DC_DISPATCH_INDEX = {
     798: ('covered', ['fubi_fub_794', 'f_ub_calibration_794', 'e_dpm_733']),
     799: ('covered', ['fubi_fub_794', 'f_ub_calibration_794']),
     800: ('covered', ['ug4_647', 'fubi_fub_794', 'three_uqff_modes_786']),
+    801: ('covered', ['three_uqff_modes_786', 'r_freq_786', 'f_em_732']),
+    802: ('covered', ['three_uqff_modes_786', 'r_freq_786']),
+    803: ('covered', ['f_ub_calibration_794', 'three_uqff_modes_786', 'g_buoy_718']),
+    804: ('covered', ['three_uqff_modes_786', 'delta_m_bh_807']),
+    805: ('own', ['s_index_806']),
+    806: ('own', ['rho_chain_806', 'dpm_formation_806', 'um_string_806', 'n_crack_806']),
+    807: ('own', ['f_z_cgm_807', 'delta_m_bh_807', 'u_i_galactic_807', 'chi_agn_807', 'u_m_agn_807']),
+    808: ('own', ['bohr_uqff_808', 'v_scm_radial_808', 'e_flow_dna_808', 't_end_808', 'v_ratio_boyle_808', 'rho_shell_808', 's_vacuum_808']),
+    809: ('covered', ['g_muge_family_701', 'e_decay_757', 'm_acc_754', 'lorentz_uqff_term']),
+    810: ('covered', ['g_muge_family_701', 'e_decay_757', 'lorentz_uqff_term']),
+    811: ('covered', ['g_muge_10sys_732', 'saturating_fraction_761', 'm_sf_growth', 'lorentz_uqff_term']),
+    812: ('own', ['e_vac_neb_812', 'dynamic4_812', 'ub_mi_812_stated']),
+    813: ('own', ['mag_buoyancy_813', 'a_mag_bubble_813', 'f_thrust_813_stated']),
+    814: ('own', ['h_c_nanograv_814', 'chirp_mass_q_814', 'g_chirp_814']),
+    815: ('own', ['h_s_source_815', 'sersic_k_815', 'sigma_virial_815']),
+    816: ('own', ['theta_ring_816', 'f_edd_816', 'te_ti_816']),
+    817: ('own', ['mdot_binary_mod_817', 'dr_dt_gw_817', 'f_orb_817', 'tau_lt_817', 'l_poynt_mad_817']),
+    818: ('own', ['eta_nt_818', 'g_l1_eta_818', 'delta_g_stress_818']),
+    819: ('own', ['g_l1_ej_819', 'gamma_nu_819']),
+    820: ('own', ['tau_mri_820', 'b_max_820', 'g_l3_ye_820']),
+    821: ('own', ['tau_acc_821', 'ndot_inj_821', 'g_l3_crp_821']),
+    822: ('own', ['r_q_822', 'fm_open_integral_822', 'delta_q2_822']),
+    823: ('own', ['ug3_ext_823']),
+    824: ('own', ['t_spiral_torque_824', 't_spiral_density_824', 'sn_term_824', 'epsilon_sn_824']),
+    825: ('own', ['p_wind_kinetic_825', 'r_shock_825', 'w_shock_825', 'p_outflow_825']),
+    826: ('own', ['qg_term_826', 'dm_term_826']),
+    827: ('own', ['w_stellar_827', 'net_wind_rad_827']),
+    828: ('own', ['f_aether_828', 'd_stop_828']),
+    829: ('own', ['n_ions_829', 'f_ion_evo_829']),
+    830: ('own', ['n_isotope_830', 'e_isotope_830']),
+    831: ('own', ['f_ubi_mice_831_stated']),
+    832: ('own', ['f_orbit_832', 'f_tide_832']),
+    833: ('covered', ['g_muge_family_701', 'ug3_ext_823', 'f_env_master_741', 'quantum_term_741']),
+    834: ('own', ['rho_nfw_834', 'f_gal_834']),
+    835: ('own', ['f_lenr_835', 'f_act_835', 'f_torque_835', 'f_de_835', 'f_res_835']),
+    836: ('covered', ['fubi_grant_integrand_632', 'f_ubi_mice_831_stated']),
+    837: ('own', ['bsm_forces_837_stated']),
+    838: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835', 'f_de_835']),
+    839: ('own', ['f_led_839_stated']),
+    840: ('own', ['sigma_n_840', 'f_neutron_840', 'f_neutron_t_840', 'sigma_rho_840']),
+    841: ('own', ['force_hierarchy_span_841', 'fubi_13term_841']),
+    842: ('own', ['f_res_pcvt_842']),
+    843: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835', 'f_res_835']),
+    844: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835']),
+    845: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835']),
+    846: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835', 'f_de_835']),
+    847: ('covered', ['fubi_grant_integrand_632', 'f_neutron_840']),
+    848: ('covered', ['fubi_grant_integrand_632', 'f_lenr_835']),
+    849: ('covered', ['bsm_forces_837_stated', 'f_lenr_835']),
+    850: ('own', ['f_led_850_stated']),
+    851: ('covered', ['sigma_n_840', 'f_neutron_840', 'sigma_rho_840']),
+    852: ('covered', ['f_neutron_840', 'f_lenr_835']),
+    853: ('own', ['solfeggio_freq_853', 'e_coherent_853', 'beta_triad_853']),
+    854: ('own', ['k_eta_env_854']),
+    855: ('own', ['delta_n_base_855']),
+    856: ('own', ['uh_856', 'k_higgs_856']),
+    857: ('covered', ['ug3_band_655', 'e_react_647']),
+    858: ('covered', ['f_ubi_mice_831_stated', 'three_uqff_modes_786']),
+    859: ('own', ['l_plasmoid_859', 'f_reversal_859']),
+    860: ('covered', ['rho_chain_806', 's_index_806']),
+    861: ('covered', ['f_orbit_832', 'f_tide_832', 'm_acc_754']),
+    862: ('own', ['um_master_862', 'omega_eq_862']),
+    863: ('own', ['phi_ddot_863', 'cop_283_863_stated']),
+    864: ('own', ['f_lrc_864']),
+    865: ('own', ['f_aether_spooky_865']),
+    866: ('own', ['b_net_caduceus_866']),
+    867: ('covered', []),
+    868: ('covered', []),
+    869: ('covered', []),
+    870: ('own', ['r_eb_870', 'lambda_decay_870']),
+    871: ('own', ['v_layer_log10_871', 'decel_log10_871']),
+    872: ('covered', []),
+    873: ('covered', []),
+    874: ('covered', []),
+    875: ('covered', []),
+    876: ('covered', []),
+    877: ('own', ['rho_vac_sum_877', 'u_i_877', 'u_vac_877', 'psi_proto_877']),
+    878: ('own', ['alpha_blend_878']),
+    879: ('own', ['m_eff2_879', 'phi_static_879']),
+    880: ('own', ['s26_gate_880', 'e_plus_880']),
+    881: ('own', ['sigma_kozima_881', 'f_kozima_881']),
+    882: ('covered', ['e_plus_880', 's26_gate_880']),
+    883: ('own', ['e_minus_883']),
+    884: ('own', ['e_net_884']),
+    885: ('own', ['delta_phi_gw_885']),
+    886: ('covered', ['e_minus_883', 's26_gate_880']),
+    887: ('covered', []),
+    888: ('own', ['l_et_888', 'lambda_888']),
+    889: ('covered', ['e_net_884', 'lambda_888']),
+    890: ('own', ['rho_scm_t_890']),
+    891: ('own', ['e_net_scm_891']),
+    892: ('covered', ['sigma_kozima_881', 'f_kozima_881']),
+    893: ('own', ['phi_thz_893']),
+    894: ('own', ['l_scm_894']),
+    895: ('covered', ['e_net_884', 's26_gate_880']),
+    896: ('own', ['fwhm_896']),
+    897: ('covered', ['phi_thz_893', 'e_net_884']),
+    898: ('own', ['l_phonon_898']),
+    899: ('own', ['net_factor_899']),
+    900: ('own', ['w_kessence_900', 'cs2_kessence_900']),
 }
 
 
@@ -11202,6 +11302,957 @@ def warp_factor_793():
     """PAPER_793 (RECOVERED): factor_warp = 1.05 REPLACES (1+f_TRZ) for warped systems
     (ESO510-G13; third variable-f_TRZ instance after P777-779); chain 1.378e-10 EXACT."""
     return 1.05
+
+
+# --- DEEP-MINE PASS-2 RECOVERY PAPER_601-700 (Daniel-directed 2026-08-08) ---
+
+def um_zero_mass_622(kappa, dpm_n, dpm_s, grad_ua, c26):
+    """PAPER_622 (RECOVERED-2): U_m = kappa*(DPM_n-DPM_s)/(nabla_UA)^26
+    + d26/dt26[sum c_k*(nabla_UA*t)^k] = kappa*D/grad^26 + 26!*c26*grad^26."""
+    import math as _m
+    return (kappa * (dpm_n - dpm_s) / grad_ua ** D_CRIT
+            + _m.factorial(D_CRIT) * c26 * grad_ua ** D_CRIT)
+
+
+def scm_zero_mass_622(t, lam, ua, b_coeffs, grad_ua):
+    """PAPER_622 (RECOVERED-2): SCm = lam*UA*(1-1/t) + sum b_m*(nabla_UA*t^-m)
+    (zero-mass Laurent in the gradient variable)."""
+    return lam * ua * (1.0 - 1.0 / t) + sum(b * grad_ua / t ** m
+                                            for m, b in enumerate(b_coeffs))
+
+
+def ub_zero_mass_full_622(g, grad_ua):
+    """PAPER_622 (RECOVERED-2): U_b = g*(1-1/nabla_UA) + g*26!/(nabla_UA)^25
+    (base + 26th-derivative suppression, full form)."""
+    import math as _m
+    return g * (1.0 - 1.0 / grad_ua) + g * _m.factorial(D_CRIT) / grad_ua ** 25
+
+
+def h_c_uqff_644(h_c_classical, d26_scm_grad):
+    """PAPER_644 (RECOVERED-2): H_C^UQFF = H_C + d26/dr26(SCm*nabla_UA)
+    (QAOA cost-Hamiltonian UQFF extension)."""
+    return h_c_classical + d26_scm_grad
+
+
+def ising_energy_644(h_list, s_list, J, pairs):
+    """PAPER_644 (RECOVERED-2): H = sum h_i*s_i + sum J_ij*s_i*s_j (chip-emulation
+    Ising form; uniform J over given pairs)."""
+    return (sum(h * s for h, s in zip(h_list, s_list))
+            + sum(J * s_list[i] * s_list[j] for i, j in pairs))
+
+
+def r_min_gm_645(scm_g, M, k=1, G=G_OBSERVED):
+    """PAPER_645 (RECOVERED-2): r_min ~ (26!*SCm*g/(G*M))^(1/(k+24)) (GM-route no-singularity
+    bound; companion to the l_Pl*(26!)^(1/26) route)."""
+    import math as _m
+    return (_m.factorial(D_CRIT) * scm_g / (G * M)) ** (1.0 / (k + 24))
+
+
+def f_neutron_645_stated():
+    """PAPER_645 (RECOVERED-2): F_neutron ~ 1e49 N = int nabla_UA dt (neutron-star
+    integral anchor, stated)."""
+    return 1e49
+
+
+def r_photon_645(M, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_645 (RECOVERED-2): r_photon = 3GM/c^2 = 1.5*r_s (photon sphere)."""
+    return 3.0 * G * M / c ** 2
+
+
+def f_rydberg26_electron_651(m_c2_eV=0.511e6, h_eVs=4.135667696e-15):
+    """PAPER_651 (RECOVERED-2): f = m_e*c^2*e^-26/h = 631 MHz EXACT - the electron
+    Rydberg-26 suppression lands in RF/microwave, consistent with the 630 eV KER family."""
+    import math as _m
+    return m_c2_eV * _m.exp(-D_CRIT) / h_eVs
+
+
+def p_casimir_651(a, hbar=1.054571817e-34, c=C_OBSERVED):
+    """PAPER_651 (RECOVERED-2): P_Casimir = pi^2*hbar*c/(240*a^4); proton scale
+    a = 8.775e-15 m; ratio to Delta_rho_vac ~ 1e61 (stated)."""
+    import math as _m
+    return _m.pi ** 2 * hbar * c / (240.0 * a ** 4)
+
+
+def vac_fraction_651_stated():
+    """PAPER_651 (RECOVERED-2): removing 1e-39 % of vacuum energy concentration collapses
+    the region to a BH (Aether13_16 statement; proton anchor)."""
+    return 1e-39
+
+
+def defect_mod_656(t):
+    """PAPER_656 (RECOVERED-2): (1+0.01*sin(0.001*t)) defect modulation on U_g1
+    (V838 Mon light-echo)."""
+    import math as _m
+    return 1.0 + 0.01 * _m.sin(0.001 * t)
+
+
+def h2_lqg_658(rho, rho_c, a, k_curv=0.0, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_658 (RECOVERED-2): H^2 = (8*pi*G/3)*rho*(1-rho/rho_c) - k*c^2/a^2
+    (LQG effective Friedmann; bounce at rho = rho_c)."""
+    import math as _m
+    return 8.0 * _m.pi * G / 3.0 * rho * (1.0 - rho / rho_c) - k_curv * c ** 2 / a ** 2
+
+
+# --- BAND PAPER_801-810 deep-capture (Session 2026-08-08) ---
+
+def s_index_806(n):
+    """PAPER_805/806: Species Index S(n) = log10(rho_SCm/rho_UA)*n = -1.0*n EXACT
+    (F_TRZ log primitive tie; galactic n=26 -> -26)."""
+    import math as _m
+    return _m.log10(RHO_SCM / RHO_UA) * n
+
+
+def rho_chain_806(n, t, ssq=SSQ):
+    """PAPER_806: rho[UA':SCm](n,t) = rho_UA*(rho_SCm/rho_UA)^n*exp(-SSq*n/26*e^(-(pi-t)))
+    (26-state vacuum density ladder with pi-barrier gate)."""
+    import math as _m
+    return (RHO_UA * (RHO_SCM / RHO_UA) ** n
+            * _m.exp(-ssq * n / D_CRIT * _m.exp(-(_m.pi - t))))
+
+
+def dpm_formation_806(rho_em, rho_threshold):
+    """PAPER_806/808: DPM forms when rho_EM > rho_threshold ([UA']+[SCm] pairing gate)."""
+    return rho_em > rho_threshold
+
+
+def f_z_cgm_807(u_i, u_m):
+    """PAPER_807: f_Z,CGM = U_i/(U_i+U_m) - CGM metal-retention coefficient (quantum
+    amplitude ratio; under-massive BH -> 0.89, over-massive -> 0.10 stated)."""
+    return u_i / (u_i + u_m)
+
+
+def delta_m_bh_807(M_bh, sigma_kms):
+    """PAPER_807: Delta_M_BH = log10(M_BH) - [0.309*log10(sigma/200)+4.38]
+    (M-sigma offset; coefficients transcribed as printed - DISCLOSED nonstandard b=4.38)."""
+    import math as _m
+    return _m.log10(M_bh) - (0.309 * _m.log10(sigma_kms / 200.0) + 4.38)
+
+
+def u_i_galactic_807(omega_s, f_feedback=0.063, k_gal=2.59e-9, k_i=1.0):
+    """PAPER_807: U_i = k_i*rho_SCm*rho_UA*omega_s*(1+f_feedback)/k_galactic
+    (galactic-normalized inertial term)."""
+    return k_i * RHO_SCM * RHO_UA * omega_s * (1.0 + f_feedback) / k_gal
+
+
+def chi_agn_807(M_bh_msun):
+    """PAPER_807: chi = min(0.1, 0.002*(M_BH/1e9)^2) AGN feedback efficiency."""
+    return min(0.1, 0.002 * (M_bh_msun / 1e9) ** 2)
+
+
+def u_m_agn_807(B, t_days, delta_m_bh, M_bh_msun, alpha=0.001, k_m=1.0,
+                mu0=1.25663706212e-06):
+    """PAPER_807: U_m = k_m*(B^2/2mu0)*(rho_SCm/rho_UA)*exp(-alpha*t)*(1+dM_BH*chi)."""
+    import math as _m
+    return (k_m * B ** 2 / (2.0 * mu0) * (RHO_SCM / RHO_UA) * _m.exp(-alpha * t_days)
+            * (1.0 + delta_m_bh * chi_agn_807(M_bh_msun)))
+
+
+def bohr_uqff_808(n, E_H_eV=13.6, r_bohr=5.292e-11):
+    """PAPER_808: eps_n(UQFF) = -(E_H/n^2)*(1+U_g2*r_n^2/E_H) with U_g2 = rho_UA;
+    correction ~1e-38 - Bohr baseline preserved EXACT (UQFF-transparent)."""
+    r_n = r_bohr * n ** 2
+    corr = RHO_UA * r_n ** 2 * 6.242e18 / E_H_eV
+    return -(E_H_eV / n ** 2) * (1.0 + corr)
+
+
+def v_scm_radial_808(r_kpc, v0_kms=100.0, r_scm_kpc=500.0):
+    """PAPER_808: v_SCm(r) = -v0*(rho_SCm/rho_UA)*exp(-r/r_SCm) = -9.98 km/s at 1 kpc
+    EXACT (contracting [SCm] modes; the -10 km/s neutrino-blueshift anchor)."""
+    import math as _m
+    return -v0_kms * (RHO_SCM / RHO_UA) * _m.exp(-r_kpc / r_scm_kpc)
+
+
+# --- BAND PAPER_811-820 deep-capture (Session 2026-08-08; GRMHD/observational family) ---
+
+def e_vac_neb_812(V_vac, hbar=1.054571817e-34):
+    """PAPER_812: E_vac,neb = hbar*omega_THz/V_vac (nebular vacuum energy density)."""
+    import math as _m
+    return hbar * 2.0 * _m.pi * OMEGA_SCM_HZ / V_vac
+
+
+def dynamic4_812(E_vac_neb, c=C_OBSERVED):
+    """PAPER_812: (dynamic)^4 = (f_THz*E_vac,neb/c)^4 ~ 1.77e-133 m/s^2 (stated)."""
+    return (OMEGA_SCM_HZ * E_vac_neb / c) ** 4
+
+
+def ub_mi_812_stated():
+    """PAPER_812: UB_mi = (-UA_THz,hole) + belly_button(static SMBH dark) ~ -3.08e-18 J/m^3."""
+    return -3.08e-18
+
+
+def mag_buoyancy_813(g_lim=8.1):
+    """PAPER_813: Magnetic_buoyancy = (1-5/6)*g_LIM = g_LIM/6 = 1.35 m/s^2 EXACT at
+    g_LIM = 8.1 (5/6 = PHI_RES nuclear-variant tie)."""
+    return (1.0 - 5.0 / 6.0) * g_lim
+
+
+def a_mag_bubble_813(v_exp, r, F_super):
+    """PAPER_813: a_mag,bubble = v_exp^2/r*F_super ~ 6.287e-14 (Aether vortex bubble)."""
+    return v_exp ** 2 / r * F_super
+
+
+def f_thrust_813_stated():
+    """PAPER_813: thorium thrust F ~ 5e2 m/s^2 (M_Th*Phi_neutron proportionality anchor)."""
+    return 5e2
+
+
+def h_c_nanograv_814(f, A_yr=10 ** -14.74, f_yr=3.17e-8):
+    """PAPER_814/815: h_c(f) = A_yr*(f/f_yr)^(-2/3) (NANOGrav 15yr strain spectrum;
+    A_yr,VDF = 10^-14.74 / A_yr,GSMF = 10^-14.9 anchors)."""
+    return A_yr * (f / f_yr) ** (-2.0 / 3.0)
+
+
+def chirp_mass_q_814(M, q):
+    """PAPER_814: M_c = M*q^(3/5)/(1+q)^(6/5) (mass-ratio form)."""
+    return M * q ** 0.6 / (1.0 + q) ** 1.2
+
+
+def g_chirp_814(M_c, f_gw, r, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_814: g_chirp = (G*M_c/c^2)*(2*pi*f_GW)^(2/3)/r^2 (quadriadic L2 term)."""
+    import math as _m
+    return G * M_c / c ** 2 * (2.0 * _m.pi * f_gw) ** (2.0 / 3.0) / r ** 2
+
+
+def h_s_source_815(M_c, f_r, D_c, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_815: h_s = sqrt(32/5)*(G*M_c/c^3)^(5/3)*(pi*f_r)^(2/3)/D_c (single-source)."""
+    import math as _m
+    return (32.0 / 5.0) ** 0.5 * (G * M_c / c ** 3) ** (5.0 / 3.0) * (_m.pi * f_r) ** (2.0 / 3.0) / D_c
+
+
+def sersic_k_815(n):
+    """PAPER_815: K*(n) = 73.32/(10.465+(n-0.94)^2)+0.954 (Sersic virial coefficient)."""
+    return 73.32 / (10.465 + (n - 0.94) ** 2) + 0.954
+
+
+def sigma_virial_815(M_star, K_n, r_e, G=G_OBSERVED):
+    """PAPER_815: sigma_inf = sqrt(G*M*K*(n)/r_e) (VDF velocity dispersion)."""
+    return (G * M_star * K_n / r_e) ** 0.5
+
+
+def theta_ring_816(M, D, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_816: theta_ring = 2*sqrt(27)*G*M/(c^2*D) (photon-ring diameter; computes
+    9.9 muas at the paper's anchors, paper prints 8.9 - rounding band)."""
+    return 2.0 * 27.0 ** 0.5 * G * M / (c ** 2 * D)
+
+
+def f_edd_816(L_bol, M, eta=0.1, kappa_es=0.034, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_816: f_Edd = L_bol/(eta*c^2)*kappa_es*c/(4*pi*G*M) (Eddington ratio route)."""
+    import math as _m
+    return L_bol / (eta * c ** 2) * kappa_es * c / (4.0 * _m.pi * G * M)
+
+
+def te_ti_816(beta, R_high, R_low):
+    """PAPER_816: T_e/T_i = R_high*beta^2/(1+beta^2) + R_low/(1+beta^2) (R-beta prescription)."""
+    b2 = beta ** 2
+    return R_high * b2 / (1.0 + b2) + R_low / (1.0 + b2)
+
+
+def mdot_binary_mod_817(f_orb, A, omega, t, phi=0.0):
+    """PAPER_817: Mdot_binary ~ f_orb*(1+A*cos(omega*t+phi)) (binary accretion modulation)."""
+    import math as _m
+    return f_orb * (1.0 + A * _m.cos(omega * t + phi))
+
+
+def dr_dt_gw_817(m1, m2, r, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_817: dr/dt = -64/5*G^3*m1*m2*(m1+m2)/(c^5*r^3) (GW inspiral decay)."""
+    return -64.0 / 5.0 * G ** 3 * m1 * m2 * (m1 + m2) / (c ** 5 * r ** 3)
+
+
+def f_orb_817(M_tot, r, G=G_OBSERVED):
+    """PAPER_817: f_orb = (1/2pi)*sqrt(G*M/r^3) (Keplerian orbital frequency)."""
+    import math as _m
+    return (G * M_tot / r ** 3) ** 0.5 / (2.0 * _m.pi)
+
+
+def tau_lt_817(r, J, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_817: tau_LT = 2*pi*r^3/(2*G*J/c^2) (Lense-Thirring precession period)."""
+    import math as _m
+    return 2.0 * _m.pi * r ** 3 * c ** 2 / (2.0 * G * J)
+
+
+def l_poynt_mad_817(mdot, eta_em=0.01, c=C_OBSERVED):
+    """PAPER_817: L_Poynt,MAD = eta_EM*Mdot*c^2, eta_EM ~ 0.01 (MAD jet floor)."""
+    return eta_em * mdot * c ** 2
+
+
+def eta_nt_818(E_isco):
+    """PAPER_818: eta_NT = 1-E_ISCO(a*) (Novikov-Thorne efficiency); MHD 0.16-0.18 band."""
+    return 1.0 - E_isco
+
+
+def g_l1_eta_818(eta_mhd, mdot, r, c=C_OBSERVED):
+    """PAPER_818: g_L1 = eta_MHD*Mdot*c^2/r^2 ~ 1.44e13 m/s^2 (ISCO stress channel)."""
+    return eta_mhd * mdot * c ** 2 / r ** 2
+
+
+def delta_g_stress_818(alpha_stress, B, r):
+    """PAPER_818: Delta_g = alpha_stress*B^2/(8*pi*r^2) ~ 2.5e-11 m/s^2."""
+    import math as _m
+    return alpha_stress * B ** 2 / (8.0 * _m.pi * r ** 2)
+
+
+def g_l1_ej_819(M_ej, v_ej, r, r_code):
+    """PAPER_819: g_L1,ej = M_ej*v_ej^2/(r*r_code^2) ~ 3.9e-5 (kilonova ejecta channel;
+    MHD 0.007 Msun @0.15c + thermal 0.006 @0.10c = 39% disk)."""
+    return M_ej * v_ej ** 2 / (r * r_code ** 2)
+
+
+def gamma_nu_819(T_10, D_4):
+    """PAPER_819: Gamma_nu = 0.22*T_10^6*D_4 /s (neutrino absorption rate)."""
+    return 0.22 * T_10 ** 6 * D_4
+
+
+def tau_mri_820(Omega):
+    """PAPER_820: tau_MRI = 1/Omega ~ 1 ms; tau_dynamo = 20*tau_MRI ~ 20 ms."""
+    return 1.0 / Omega
+
+
+def b_max_820(P_gas):
+    """PAPER_820: B_max = sqrt(4*pi*P_gas) ~ 1e15 G at ISCO (dynamo saturation)."""
+    import math as _m
+    return (4.0 * _m.pi * P_gas) ** 0.5
+
+
+def g_l3_ye_820(M_ej, Y_e, r):
+    """PAPER_820: g_L3,Ye = M_ej*Y_e/r ~ 2e-7 (electron-fraction channel)."""
+    return M_ej * Y_e / r
+
+
+# --- BAND PAPER_821-830 deep-capture (Session 2026-08-08) ---
+
+def tau_acc_821(K):
+    """PAPER_821: tau_acc = 1/(2K) (RIAF Fermi-II acceleration time); g_L2 = 1/tau ~ 1e5."""
+    return 1.0 / (2.0 * K)
+
+
+def ndot_inj_821(eta_inj, beta_mag, dB_over_B):
+    """PAPER_821: N_inj = eta_inj*max(1,beta_mag)*|DB'/Dt|/|B'| (CRP injection rate)."""
+    return eta_inj * max(1.0, beta_mag) * abs(dB_over_B)
+
+
+def g_l3_crp_821(eta_inj, B, r):
+    """PAPER_821: g_L3 = eta_inj*B^2/r (CRP channel; P_CRP,out ~ 3.41e44 erg/s stated)."""
+    return eta_inj * B ** 2 / r
+
+
+def r_q_822(x, p_Q):
+    """PAPER_822: r_Q(x) = sqrt((cos(x)*p_Q)^2 + (sin(x)*p_Q+1)^2) (proto-shell radius)."""
+    import math as _m
+    return ((_m.cos(x) * p_Q) ** 2 + (_m.sin(x) * p_Q + 1.0) ** 2) ** 0.5
+
+
+def fm_open_integral_822(F_m, x):
+    """PAPER_822: (1-1/x)*F_m - (-F_m/x) = F_m; the open-energy integral identity forces
+    F_m = 0 or the non-linear mode (algebraic residual returned; zero iff F_m = 0)."""
+    return (1.0 - 1.0 / x) * F_m + F_m / x
+
+
+def delta_q2_822(x, w_Q, p_Q):
+    """PAPER_822: Delta_q^2 quantum-openness ratio (transcribed nested-radical form)."""
+    import math as _m
+    a = (w_Q ** 2 + (_m.sin(x) * p_Q + 1.0) ** 2) ** 0.5
+    b = (w_Q ** 2 + 1.0) ** 0.5
+    return (a - 1.0) * b / (a * (b - 1.0))
+
+
+def ug3_ext_823(M_ext, r_ext, G=G_OBSERVED):
+    """PAPER_823/741: Ug3' = G*M_ext/r_ext^2 (generalized external-companion term)."""
+    return G * M_ext / r_ext ** 2
+
+
+def t_spiral_torque_824(m, Omega_p, R, t_cross):
+    """PAPER_824: T_spiral = m*Omega_p*R^2/t_cross (spiral arm torque form)."""
+    return m * Omega_p * R ** 2 / t_cross
+
+
+def t_spiral_density_824(B_arm, rho_gas, dphi_dr):
+    """PAPER_824: T_spiral = (B_arm/rho_gas)*dPhi_arm/dr (density-wave form)."""
+    return B_arm / rho_gas * dphi_dr
+
+
+def sn_term_824(E_SN, M_shell, r_SN):
+    """PAPER_824: SN_term = E_SN/(M_shell*r_SN^2) ~ 3.2e-12 m/s^2 per active SNR."""
+    return E_SN / (M_shell * r_SN ** 2)
+
+
+def epsilon_sn_824(E_SN, nu_SN, V_ISM):
+    """PAPER_824: eps_SN = E_SN*nu_SN/V_ISM (SN heating density)."""
+    return E_SN * nu_SN / V_ISM
+
+
+def p_wind_kinetic_825(Mdot, v_wind):
+    """PAPER_825/827: P_wind = 0.5*Mdot*v^2 (kinetic wind luminosity)."""
+    return 0.5 * Mdot * v_wind ** 2
+
+
+def r_shock_825(Mdot, v_wind, rho_ism, v_ism):
+    """PAPER_825: r_shock = sqrt(Mdot*v_wind/(4*pi*rho_ISM*v_ISM^2)) (ram balance)."""
+    import math as _m
+    return (Mdot * v_wind / (4.0 * _m.pi * rho_ism * v_ism ** 2)) ** 0.5
+
+
+def w_shock_825(rho_wind, v_wind, r_lobe, r, theta_lobe):
+    """PAPER_825: W_shock = 0.5*rho*v^2*(r_lobe/r)^2*(1-cos(theta_lobe)) (bipolar lobes)."""
+    import math as _m
+    return 0.5 * rho_wind * v_wind ** 2 * (r_lobe / r) ** 2 * (1.0 - _m.cos(theta_lobe))
+
+
+def p_outflow_825(rho_jet, v_jet, r_jet, r):
+    """PAPER_825: P_outflow = rho_jet*v_jet^2*(r_jet/r)^2 (young-star jets)."""
+    return rho_jet * v_jet ** 2 * (r_jet / r) ** 2
+
+
+def qg_term_826(r, G=G_OBSERVED, c=C_OBSERVED, hbar=1.054571817e-34):
+    """PAPER_826: QG_term = hbar*G/(c^3*r^4) (quantum-gravity floor; dominant only
+    near l_Planck)."""
+    return hbar * G / (c ** 3 * r ** 4)
+
+
+def dm_term_826(M_dm, r, delta_rho_over_rho=0.05, G=G_OBSERVED):
+    """PAPER_826: DM_term = G*M_DM/r^2*(1+drho/rho) = 3.68e-11 at the 20-kpc anchor."""
+    return G * M_dm / r ** 2 * (1.0 + delta_rho_over_rho)
+
+
+def w_stellar_827(Mdot, v_wind, r, rho_cloud):
+    """PAPER_827: W_stellar = Mdot*v/(4*pi*r^2*rho_cloud) (wind acceleration on cloud)."""
+    import math as _m
+    return Mdot * v_wind / (4.0 * _m.pi * r ** 2 * rho_cloud)
+
+
+def net_wind_rad_827(Mdot, v_wind, L_star, r, rho_cloud, kappa, c=C_OBSERVED):
+    """PAPER_827: Net = [Mdot*v - L/(c*kappa)]/(4*pi*r^2*rho_cloud) (wind minus radiation)."""
+    import math as _m
+    return (Mdot * v_wind - L_star / (c * kappa)) / (4.0 * _m.pi * r ** 2 * rho_cloud)
+
+
+def f_aether_828(v, d_stop, k_aether=1e-10):
+    """PAPER_828: F_Aether = k_Aether*rho_UA*v^2*d_stop (Aether resistance; boxed)."""
+    return k_aether * RHO_UA * v ** 2 * d_stop
+
+
+def d_stop_828(m, v, F_object, F_aether):
+    """PAPER_828: d_stop = (mv^2/2)/(F_object - F_Aether) (work-energy with Aether drag)."""
+    return 0.5 * m * v ** 2 / (F_object - F_aether)
+
+
+def n_ions_829(V_ft3_m3=0.0283, m_ion=1.67e-27):
+    """PAPER_829: n_ions = rho_UA/(m_ion*V); computes 1.50e-7 - paper prints 1.50e-10
+    (DISCLOSED 3-order own-arithmetic slip; mantissa 1.50 EXACT; RHO_UA tie);
+    UQFF window 0.01-1 stated."""
+    return RHO_UA / (m_ion * V_ft3_m3)
+
+
+def f_ion_evo_829(k_rel, e_ratio, n_ions):
+    """PAPER_829/830: F_evo = k_rel*(E_cm,astro/E_cm)^2*n; 1.70e35 N stated."""
+    return k_rel * e_ratio ** 2 * n_ions
+
+
+def n_isotope_830(n_water=55500.0, eta_conv=0.33, t_hours=345.6):
+    """PAPER_830: n_isotope = n_water*eta*t = 2.28e10 mol EXACT (D2O/ethanol/graphene run)."""
+    return n_water * eta_conv * t_hours * 3600.0
+
+
+def e_isotope_830(k_DE=3.79e-27, L_X=637200.0, t_s=1244160.0):
+    """PAPER_830: E_isotope = k_DE*L_X*t = 3.00e-15 J EXACT (dark-energy tap form)."""
+    return k_DE * L_X * t_s
+
+
+# --- BAND PAPER_831-840 deep-capture (Session 2026-08-08; BSM force-catalog family) ---
+
+def f_ubi_mice_831_stated():
+    """PAPER_831: F_U_Bi_i(Mice pair merger) ~ -1.66e212 N stated (largest in batch);
+    imaginary-amplitude BSM channels carry i x 1e-3..1e-5 ladder (S-matrix buoyancy)."""
+    return -1.66e212
+
+
+def f_orbit_832(M_p, M_s, a, G=G_OBSERVED):
+    """PAPER_832: F_orbit = G*M_p*M_s/a^3 (Kepler Orrery V exoplanet term; 1.30e-1 anchor)."""
+    return G * M_p * M_s / a ** 3
+
+
+def f_tide_832(M_p, M_s, R_p, a, G=G_OBSERVED):
+    """PAPER_832: F_tide = G*M_p*M_s*R_p/a^6; printed anchors compute 1.49e-3 -
+    paper states 2.9e-11 (DISCLOSED ~8-order; formula faithful)."""
+    return G * M_p * M_s * R_p / a ** 6
+
+
+def rho_nfw_834(r, rho_s, r_s):
+    """PAPER_834: rho_NFW = rho_s/((r/r_s)*(1+r/r_s)^2) (NFW halo profile)."""
+    x = r / r_s
+    return rho_s / (x * (1.0 + x) ** 2)
+
+
+def f_gal_834(v_gal=2.20e5, r_gal=2.47e20, M_dm=2.57e40, G=G_OBSERVED):
+    """PAPER_832/834: F_gal = v^2/r + G*M_DM/r^2; faithful chain = 1.96e-10 + 2.81e-11
+    = 2.24e-10 m/s^2 - paper prints 2.83e-10 for its own division (10x slip) giving its
+    4.79e-10 total (DISCLOSED; a_rot term EXACT, F_DM mantissa 2.81~2.83 EXACT)."""
+    return v_gal ** 2 / r_gal + G * M_dm / r_gal ** 2
+
+
+def f_lenr_835(k_lenr=1e-10, omega=None, omega0=1e-12):
+    """PAPER_835/838/840: F_LENR = k_LENR*(omega_LENR/omega0)^2; omega = 2*pi*1.25 THz
+    (OMEGA_SCM tie) -> 6.17e39 N band (papers quote 1.56e36-6.16e39 by omega0 choice)."""
+    import math as _m
+    if omega is None:
+        omega = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return k_lenr * (omega / omega0) ** 2
+
+
+def f_act_835(t, k_act=1e-6, f_hz=300.0):
+    """PAPER_835: F_act = k_act*cos(2*pi*300*t) (Colman-Gillespie 300 Hz activation)."""
+    import math as _m
+    return k_act * _m.cos(2.0 * _m.pi * f_hz * t)
+
+
+def f_torque_835(tau=4.068, r=0.1):
+    """PAPER_835: F_torque = tau/r = 4.068/0.1 = 40.68 N EXACT (3 ft-lb device output)."""
+    return tau / r
+
+
+def f_de_835(L_X, k_de=1e-30):
+    """PAPER_835: F_DE = k_DE*L_X; 1 N at the 1e30 W coherent-output anchor."""
+    return k_de * L_X
+
+
+def f_res_835(q, B0, V, theta, dpm_res):
+    """PAPER_835: F_res = 2*q*B0*V*sin(theta)*DPM_resonance (lab resonance force)."""
+    import math as _m
+    return 2.0 * q * B0 * V * _m.sin(theta) * dpm_res
+
+
+def bsm_forces_837_stated():
+    """PAPER_837: (F_quark, F_neutrino, F_ALP) = (1.54e7, 1.0, 1e4) N stated
+    (Belle II |Vcb| / neutrino polarizability / ALP-hadron bridges)."""
+    return (1.54e7, 1.0, 1e4)
+
+
+def f_led_839_stated():
+    """PAPER_839: F_LED ~ 1e-23 N (ADD large-extra-dimension vacuum modification;
+    numerically tiny, applied uniformly to the 8-system Chandra batch)."""
+    return 1e-23
+
+
+def sigma_n_840(omega, delta_omega, sigma0=1e-4):
+    """PAPER_840: sigma_n = sigma0*(w/w_LENR)^2*exp(-(w-w_LENR)^2/(2*dw^2));
+    sigma(w_LENR) = sigma0 = 1e-4 EXACT."""
+    import math as _m
+    w_l = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return sigma0 * (omega / w_l) ** 2 * _m.exp(-(omega - w_l) ** 2 / (2.0 * delta_omega ** 2))
+
+
+def f_neutron_840(sigma_n, k_neutron=1e10):
+    """PAPER_840: F_neutron = k_n*sigma_n = 1e10*1e-4 = 1e6 N EXACT (Kozima drop;
+    k_n = 1e10 cross-band tie to the earlier f_neutron_cross anchor)."""
+    return k_neutron * sigma_n
+
+
+def f_neutron_t_840(t, alpha, omega_act, sigma_eff, k_neutron=1e10):
+    """PAPER_840: F_n(t) = k_n*sigma(w_eff)*(1+alpha*cos(w_act*t)) (nonlinear mixing)."""
+    import math as _m
+    return k_neutron * sigma_eff * (1.0 + alpha * _m.cos(omega_act * t))
+
+
+def sigma_rho_840(rho, rho0=1e-22, sigma0=1e-4):
+    """PAPER_840: sigma_n(rho) = sigma0*(rho/rho0) (environmental density scaling;
+    rho0 = Sgr A* accretion-disk reference)."""
+    return sigma0 * rho / rho0
+
+
+# --- BAND PAPER_841-850 deep-capture (Session 2026-08-08; force-catalog application batches) ---
+
+def force_hierarchy_span_841(f_min=6.72e-23, f_max=6.16e39):
+    """PAPER_841: 11-term F_U_Bi_i hierarchy span = log10(F_max/F_min); computes 62.0
+    orders (F_LED 6.72e-23 to F_LENR 6.16e39) - paper prints '87 orders' (DISCLOSED)."""
+    import math as _m
+    return _m.log10(f_max / f_min)
+
+
+def f_res_pcvt_842(theta, q=1.602e-19, B=0.3, V=1.0, dpm_res=1.0):
+    """PAPER_842: Floyd Sweet VTA PCVT resonance F_res = 2qBV*sin(theta)*DPM at the
+    lab anchors (B = 0.3 T conditioned magnet, V = 1 m/s)."""
+    import math as _m
+    return 2.0 * q * B * V * _m.sin(theta) * dpm_res
+
+
+def f_led_850_stated():
+    """PAPER_850: refined F_LED = 6.72e-24 N (ADD graviton leakage, constant across
+    systems; negative-buoyancy Sgr A* application)."""
+    return 6.72e-24
+
+
+# --- BAND PAPER_851-860 deep-capture (Session 2026-08-08) ---
+
+def solfeggio_freq_853(d_k):
+    """PAPER_853: f_k = Solfeggio[d_k mod 9]; ladder {174,285,396,417,528,639,741,852,963} Hz
+    indexed by pi-digit mod 9."""
+    return [174.0, 285.0, 396.0, 417.0, 528.0, 639.0, 741.0, 852.0, 963.0][d_k % 9]
+
+
+def e_coherent_853(n_ch, E_single):
+    """PAPER_853: (E_incoherent, E_coherent_max) = (n*E, n^2*E) - coherence gain n_ch."""
+    return (n_ch * E_single, n_ch ** 2 * E_single)
+
+
+def beta_triad_853(n3, n6, n9):
+    """PAPER_853: beta = min(n3,n6,n9)/max(n3,n6,n9) (3-6-9 triad balance)."""
+    return min(n3, n6, n9) / max(n3, n6, n9)
+
+
+def k_eta_env_854(env):
+    """PAPER_854/734: k_eta 3-environment calibration - metallic hydride 2.75e8
+    (= the P646 U_i mantissa echo), exploding wires 1.91e2, solar corona 6.06e-6."""
+    return {'hydride': 2.75e8, 'wires': 1.91e2, 'corona': 6.06e-6}[env]
+
+
+def delta_n_base_855(n):
+    """PAPER_855: delta_n = (2*pi)^(n/6) pseudo-monopole angular spacing (base form;
+    the golden-ratio-corrected variant is delta_n_spiral)."""
+    import math as _m
+    return (2.0 * _m.pi) ** (n / 6.0)
+
+
+def uh_856(n=1, t=0.0, omega_h=1.585e-8, lam_h=1.0, f_quasi=0.01, ssq=SSQ):
+    """PAPER_856: UH(t,n) = lam_H*rho[UA':SCm](n,t)*omega_H*exp(-SSq*n/26)*exp(-(pi-t))
+    *(1+f_quasi); faithful RHO_UA-chain computes 4.79e-46; paper states 1.539e-32
+    -> E_H 96.25 eV (DISCLOSED base-density route spread; stated values preserved)."""
+    import math as _m
+    return (lam_h * rho_chain_806(n, t, ssq) * omega_h
+            * _m.exp(-ssq * n / D_CRIT) * _m.exp(-(_m.pi - t)) * (1.0 + f_quasi))
+
+
+def k_higgs_856(E_H_eV=96.25):
+    """PAPER_856: k_Higgs = 125 GeV/E_H = 1.30e9... paper states 1.79e18 via J-units and
+    7.069e26 via the UH route (both anchors preserved; eV-route computes 1.299e9 -
+    DISCLOSED multi-route spread)."""
+    return 125e9 / E_H_eV
+
+
+def l_plasmoid_859(ug, omega_g, M, d, V_ratio, ua, t_n, rho_plasma, v, B,
+                   beta_i=BETA_I, mu0=1.25663706212e-06):
+    """PAPER_859: L = -beta_i*Ug*Omega_g*(M/d)*V_ratio*UA*cos(pi*t_n)
+    + 0.5*rho*v^2 - B^2/(2*mu0) (25-um microplasmoid Lagrangian)."""
+    import math as _m
+    return (-beta_i * ug * omega_g * M / d * V_ratio * ua * _m.cos(_m.pi * t_n)
+            + 0.5 * rho_plasma * v ** 2 - B ** 2 / (2.0 * mu0))
+
+
+def f_reversal_859(ug, omega_g, V_over_Vref, t_n, beta_i=BETA_I):
+    """PAPER_859: F_reversal = -beta_i*(V/V_ref)*Ug*Omega_g*cos(pi*t_n)
+    (buoyancy-reversal sign flips at t_n = 0.5)."""
+    import math as _m
+    return -beta_i * V_over_Vref * ug * omega_g * _m.cos(_m.pi * t_n)
+
+
+# --- BAND PAPER_861-870 deep-capture (Session 2026-08-08) ---
+
+def um_master_862(mu_over_r_sum, gamma, t, t_n, N_strings, P_scm, E_react):
+    """PAPER_862: Um = sum(mu/r)*(1-e^(-gamma*t*cos(pi*t_n)))*N_strings*P_SCm*E_react
+    (master equation with explicit string count)."""
+    import math as _m
+    return (mu_over_r_sum * (1.0 - _m.exp(-gamma * t * _m.cos(_m.pi * t_n)))
+            * N_strings * P_scm * E_react)
+
+
+def omega_eq_862(um_abs, I_string):
+    """PAPER_862: variational omega_eq = sqrt(|Um|/I_string) (string spin equilibrium)."""
+    return (um_abs / I_string) ** 0.5
+
+
+def phi_ddot_863(phi, V_birkeland, k_lenr, omega_lenr=None):
+    """PAPER_863: d2phi/dt2 = -omega_LENR^2*phi + k_LENR*V_Birkeland (driven LENR
+    oscillator EOM; water-reactor electrolysis)."""
+    import math as _m
+    if omega_lenr is None:
+        omega_lenr = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return -omega_lenr ** 2 * phi + k_lenr * V_birkeland
+
+
+def cop_283_863_stated():
+    """PAPER_863: COP = 283:1 stated (BSH harmonic convergence at the 1.25 THz phonon)."""
+    return 283.0
+
+
+def f_lrc_864(L, C):
+    """PAPER_864: f_res = 1/(2*pi*sqrt(LC)); spark-gap anchor 29.14 Hz with
+    B = 2.53e-8 T at 0.61 m (monopole-like 1/r falloff -> DPM Ug1 geometry)."""
+    import math as _m
+    return 1.0 / (2.0 * _m.pi * (L * C) ** 0.5)
+
+
+def f_aether_spooky_865(eta, rho_a, v_ua, t_n, trace_g=4.0):
+    """PAPER_865: F_aether = eta*rho_A*v_UA^2*cos(pi*t_n)*Tr(g) (non-local temp-drop
+    field-generator force; Tr(g) = 4 Minkowski)."""
+    import math as _m
+    return eta * rho_a * v_ua ** 2 * _m.cos(_m.pi * t_n) * trace_g
+
+
+def b_net_caduceus_866(B_left, B_right):
+    """PAPER_866: B_net = B_left + B_right; counter-wound helices cancel the normal
+    component - the scalar/longitudinal component survives (NdFeB Caduceus motor)."""
+    return B_left + B_right
+
+
+def r_eb_870(Z, k_R=1.0):
+    """PAPER_870: R_EB = k_R*Z (electrostatic barrier linear in atomic index)."""
+    return k_R * Z
+
+
+def lambda_decay_870(Z, k_lambda=1.0, Z_max=1000.0):
+    """PAPER_870: lambda = k_lambda*f_SCm = k_lambda*Z/Z_max (decay rate);
+    L_quant ~ f_UA'*f_SCm*R_EB landscape."""
+    return k_lambda * Z / Z_max
+
+
+# --- BAND PAPER_871-880 deep-capture (Session 2026-08-08) ---
+
+def v_layer_log10_871(layer, c=C_OBSERVED):
+    """PAPER_871: v(layer) = c^(26-layer+1) returned as log10; layer 1 = c^26 -> 220.4 computed
+    (paper prints 219.7 - rounding band) (universal speed range, 26-layer photon deceleration)."""
+    import math as _m
+    return (26 - layer + 1) * _m.log10(c)
+
+
+def decel_log10_871(c=C_OBSERVED):
+    """PAPER_871: deceleration = c^2/c^26 = c^-24 -> log10 = -203.4 (paper -203.3)."""
+    import math as _m
+    return -24.0 * _m.log10(c)
+
+
+def rho_vac_sum_877():
+    """PAPER_877: rho_vac = rho_UA + rho_SCm = 7.799e-36 EXACT (Axiom-1 primitive sum;
+    Stage-1 cosmogenesis initialization)."""
+    return RHO_UA + RHO_SCM
+
+
+def u_i_877(k, omega, t):
+    """PAPER_877: U_i = k*(rho_SCm - rho_UA/10)*omega*cos(pi*t); rho_UA/10 = rho_SCm
+    EXACTLY, so the base term VANISHES - the DPM proportion-pair null identity."""
+    import math as _m
+    return k * (RHO_SCM - RHO_UA / 10.0) * omega * _m.cos(_m.pi * t)
+
+
+def u_vac_877(r):
+    """PAPER_877: U_vac = rho_vac*(4/3)*pi*r^3 (proto-volume vacuum energy)."""
+    import math as _m
+    return rho_vac_sum_877() * 4.0 / 3.0 * _m.pi * r ** 3
+
+
+def psi_proto_877(u_i, mu_d, r_list, gamma, t):
+    """PAPER_877: Psi_proto = sum_i U_i*mu_d*(1/r_i)*(1-e^(-gamma*t))*cos(pi*t), i=1..26."""
+    import math as _m
+    return sum(u_i * mu_d / r_i * (1.0 - _m.exp(-gamma * t)) * _m.cos(_m.pi * t)
+               for r_i in r_list)
+
+
+def alpha_blend_878(B, B_crit, w=0.5):
+    """PAPER_878: alpha(B) = w*exp(-B/Bc) + (1-w)*exp(-(B/Bc)^2) (linear+Gaussian
+    SCm activation blend)."""
+    import math as _m
+    return w * _m.exp(-B / B_crit) + (1.0 - w) * _m.exp(-(B / B_crit) ** 2)
+
+
+def m_eff2_879(sum_ug, omega_g, M, d_g, ua, beta_i=BETA_I, c=C_OBSERVED,
+               hbar=1.054571817e-34):
+    """PAPER_879: m_eff^2 = beta_i*sum(Ug)*Omega_g*M/(d_g*c^2*hbar^2)*[UA]
+    (buoyancy Klein-Gordon effective mass)."""
+    return beta_i * sum_ug * omega_g * M / (d_g * c ** 2 * hbar ** 2) * ua
+
+
+def phi_static_879(J_buoy, m_eff2, r):
+    """PAPER_879: phi_static = (J/m_eff^2)*(1-exp(-sqrt(m_eff^2)*r)) (Yukawa-screened
+    static solution)."""
+    import math as _m
+    return J_buoy / m_eff2 * (1.0 - _m.exp(-m_eff2 ** 0.5 * r))
+
+
+def s26_gate_880(ssq=SSQ):
+    """PAPER_880: S26 = sum_{n=1}^{26} exp(-SSq*n/26) = 19.60 (expansion gate sum)."""
+    import math as _m
+    return sum(_m.exp(-ssq * n / D_CRIT) for n in range(1, D_CRIT + 1))
+
+
+def e_plus_880(t_days, E0=1.0, fubi_over_fu=1.0, kappa=KAPPA_PER_DAY, ssq=SSQ):
+    """PAPER_880: E+(t) = E0*exp(kappa*t + SSq*t/26)*S26*(F_UBi/F_U) (positive
+    buoyancy-expansion master)."""
+    import math as _m
+    return (E0 * _m.exp(kappa * t_days + ssq * t_days / D_CRIT)
+            * s26_gate_880(ssq) * fubi_over_fu)
+
+
+# --- BAND PAPER_881-890 deep-capture (Session 2026-08-08; E(t) engine block) ---
+
+def sigma_kozima_881(omega, Gamma, sigma0=1e-4):
+    """PAPER_881: sigma_n = sigma0*exp(-(w-w_SCm)^2/(2*Gamma^2)) (pure-Gaussian variant
+    of the 840 form; peak sigma0 at the OMEGA_SCM carrier)."""
+    import math as _m
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return sigma0 * _m.exp(-(omega - w_scm) ** 2 / (2.0 * Gamma ** 2))
+
+
+def f_kozima_881(n_density, sigma_n, v_th, omega, hbar=1.054571817e-34):
+    """PAPER_881: F_Kozima = n*sigma_n*v_th*hbar*omega; F_coupled = F_Kozima*E+(t)
+    (neutron-drop x expansion-engine coupling)."""
+    return n_density * sigma_n * v_th * hbar * omega
+
+
+def e_minus_883(t_days, R, E0=1.0, kappa=KAPPA_PER_DAY, ssq=SSQ):
+    """PAPER_883: E-(t) = -E0*exp(kappa*t+SSq*t/26)*S26*(1-R) (negative erosion engine);
+    net_factor = 2R-1 crosses zero at R = 0.5 (P899 phase transition)."""
+    import math as _m
+    return (-E0 * _m.exp(kappa * t_days + ssq * t_days / D_CRIT)
+            * s26_gate_880(ssq) * (1.0 - R))
+
+
+def e_net_884(t_days, R, E0=1.0, kappa=KAPPA_PER_DAY, ssq=SSQ):
+    """PAPER_884: E_net = E+ + E- = E0*exp(kappa*t+SSq*t/26)*S26*(2R-1) - the verified
+    identity (E+ with ratio R plus E- with 1-R)."""
+    import math as _m
+    return (E0 * _m.exp(kappa * t_days + ssq * t_days / D_CRIT)
+            * s26_gate_880(ssq) * (2.0 * R - 1.0))
+
+
+def delta_phi_gw_885(f_gw, f_orbit):
+    """PAPER_885: GW phase shift = D*f_GW/f_orbit cycles with D = D_GW_EROSION = 2/3
+    EXACT (PAPER_2154 canonized primitive-composed identity D_phys/D_BSFG)."""
+    return D_GW_EROSION * f_gw / f_orbit
+
+
+def l_et_888(e_net, V, s26=None):
+    """PAPER_888: L_E(t) = E_net*V*S26 (apex Lagrangian; micro-macro bridge)."""
+    if s26 is None:
+        s26 = s26_gate_880()
+    return e_net * V * s26
+
+
+def lambda_888(rho_crit, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_888: Lambda = 8*pi*G*0.692*rho_crit/c^2 (Omega_Lambda = 0.692 route)."""
+    import math as _m
+    return 8.0 * _m.pi * G * 0.692 * rho_crit / c ** 2
+
+
+def rho_scm_t_890(t_days, kappa=KAPPA_PER_DAY, ssq=SSQ):
+    """PAPER_890: rho_SCm(t) = rho_SCm*S26*exp(kappa*t+SSq*t/26); the ratio
+    rho_SCm/rho_UA = 0.1 = F_TRZ LOCKED (canonical hierarchy identity)."""
+    import math as _m
+    return RHO_SCM * s26_gate_880(ssq) * _m.exp(kappa * t_days + ssq * t_days / D_CRIT)
+
+
+# --- BAND PAPER_891-900 deep-capture (Session 2026-08-08; SCm-phonon block closes the arc) ---
+
+def e_net_scm_891(t_days, V, R, c=C_OBSERVED):
+    """PAPER_891: E_net,SCm = rho_SCm(t)*V*c^2*(2R-1) (micro engine on the 890 density)."""
+    return rho_scm_t_890(t_days) * V * c ** 2 * (2.0 * R - 1.0)
+
+
+def phi_thz_893(omega, Gamma, Phi0=1.0, ssq=SSQ):
+    """PAPER_893/896: Phi_1.25THz = Phi0*exp(-(w-w_SCm)^2/(2*Gamma^2))*S26
+    (phonon modulation factor; E_net^phonon = E_net*Phi)."""
+    import math as _m
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return Phi0 * _m.exp(-(omega - w_scm) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+
+
+def l_scm_894(rho_scm_t, V, R, s26=None, c=C_OBSERVED):
+    """PAPER_894: L_SCm = rho_SCm(t)*V*c^2*(2R-1)*S26 - SINGLE-V canonical form per the
+    PAPER_894 REVISION (V/V_fil consolidation, Daniel's Flag-e ruling)."""
+    if s26 is None:
+        s26 = s26_gate_880()
+    return rho_scm_t * V * c ** 2 * (2.0 * R - 1.0) * s26
+
+
+def fwhm_896(Gamma=None):
+    """PAPER_896: FWHM = 2*Gamma*sqrt(2*ln2) = 0.471 THz CANONICAL at Gamma = 2*pi*0.2 THz
+    (PAPER_2154 Flag-d correction; the paper's printed 1.49 THz is AI drift per Daniel's
+    ruling - charter drift table applied)."""
+    import math as _m
+    if Gamma is None:
+        Gamma = 2.0 * _m.pi * 0.2e12
+    return 2.0 * Gamma * (2.0 * _m.log(2.0)) ** 0.5 / (2.0 * _m.pi)
+
+
+def net_factor_899(R):
+    """PAPER_899: net_factor = 2R-1; R = 0.5 critical point - the buoyancy-reversal
+    sign flip is a thermodynamic phase transition (canonized)."""
+    return 2.0 * R - 1.0
+
+
+def l_phonon_898(e_net, V, phi_mod, s26=None):
+    """PAPER_898: L_phonon = E_net*V*Phi_1.25THz*S26 (phonon Lagrangian; dS/dphi = 0)."""
+    if s26 is None:
+        s26 = s26_gate_880()
+    return e_net * V * phi_mod * s26
+
+
+def w_kessence_900(X, A, B, n):
+    """PAPER_900: F(X) = -A + B*X^n; w = F/(2*X*F_X - F) (Scherrer k-essence contrast)."""
+    F = -A + B * X ** n
+    F_X = n * B * X ** (n - 1)
+    return F / (2.0 * X * F_X - F)
+
+
+def cs2_kessence_900(X, B, n):
+    """PAPER_900: c_s^2 = F_X/(F_X + 2*X*F_XX) = 1/(2n-1) for F = -A+B*X^n EXACT."""
+    F_X = n * B * X ** (n - 1)
+    F_XX = n * (n - 1) * B * X ** (n - 2)
+    return F_X / (F_X + 2.0 * X * F_XX)
+
+
+# --- DEEP-MINE RECOVERY PAPER_801-900 (Daniel-directed 2026-08-08) ---
+
+def um_string_806(k_m, B_vac, L_string):
+    """PAPER_806 (RECOVERED): U_m = k_m*B_vac*(rho_UA-rho_SCm)*L_string
+    = k*B*9*rho_SCm*L (magnetic skeleton; the 9x differential primitive tie)."""
+    return k_m * B_vac * (RHO_UA - RHO_SCM) * L_string
+
+
+def n_crack_806(E_binding, E_ubi):
+    """PAPER_806 (RECOVERED): n_crack = log10(E_binding/E_Ubi) - shell-cracking
+    criterion selecting nuclear species (n=1 H, n=4 He-4, n=6 C-12)."""
+    import math as _m
+    return _m.log10(E_binding / E_ubi)
+
+
+def fubi_13term_841(terms):
+    """PAPER_841 (RECOVERED): F_U_Bi_i = sum of 13 force terms from 9 sectors
+    (4 Ug + 4 Ubi + Um + Tr(A) + F_LENR + F_LED + F_neutron; single variational
+    principle). Raises if not exactly 13 components."""
+    if len(terms) != 13:
+        raise ValueError('13 force terms required (9-sector variational closure)')
+    return sum(terms)
+
+
+def e_flow_dna_808(z, t, E0, lam_dna=3.4e-9, gamma_d=1.0):
+    """PAPER_808 (RECOVERED): E_flow = E0*sin(2*pi*z/lambda_DNA)*exp(-gamma_d*t);
+    twist 2*pi/10.5 = 34.29 deg/base matches B-form DNA (36 deg) via the SCm/UA
+    density-ratio structural claim."""
+    import math as _m
+    return E0 * _m.sin(2.0 * _m.pi * z / lam_dna) * _m.exp(-gamma_d * t)
+
+
+def t_end_808(hubble_time_gyr=13.8):
+    """PAPER_808 (RECOVERED): (T_end, T_third) = (10.38, 65.25)*H0^-1
+    = (143.2, 900.5) Gyr - the SCm-decay cosmic epochs."""
+    return (10.38 * hubble_time_gyr, 65.25 * hubble_time_gyr)
+
+
+def v_ratio_boyle_808(ssq=SSQ):
+    """PAPER_808 (RECOVERED): V_little/V_big = (rho_SCm/rho_UA)*SSq^2/(1+SSq)
+    = 0.1*0.3249/1.570 = 0.02069 ~ 1/48 EXACT (THREE-PRIMITIVE TIE: F_TRZ x SSq
+    Boyle vacuum analog; iterates toward the 1/33 anchor)."""
+    return (RHO_SCM / RHO_UA) * ssq ** 2 / (1.0 + ssq)
+
+
+def rho_shell_808(n, ssq=SSQ):
+    """PAPER_808 (RECOVERED): rho_shell(n) = rho_UA*(1-exp(-SSq*n/26));
+    rho_shell(1) = 1.53e-37 EXACT."""
+    import math as _m
+    return RHO_UA * (1.0 - _m.exp(-ssq * n / D_CRIT))
+
+
+def s_vacuum_808(n, ssq=SSQ):
+    """PAPER_808 (RECOVERED): S_vacuum = log10(10*(1-exp(-SSq*n/26))) shell entropy index."""
+    import math as _m
+    return _m.log10(10.0 * (1.0 - _m.exp(-ssq * n / D_CRIT)))
 
 
 @_register('PAPER_001')

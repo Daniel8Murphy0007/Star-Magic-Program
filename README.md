@@ -1,21 +1,38 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.360.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.360.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.361.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.361.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-3388%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-814-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-3564%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-914-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
 
-**This release (v0.360.0): DEEP-CAPTURE PAPER_701-800 COMPLETE + FULL SHIP-CHECKLIST RESTORATION.** Ten bands (701-800) plus the Daniel-directed deep-mine resweep with supporting-information and Rule-7 audits. Headlines: **THE 1.053 FINGERPRINT SOLVED** — the recurring 1.053e-2 m/s^2 magnitude across a dozen systems is qvB/m_p*(1+rho_UA/rho_SCm)*1e-12 with standard anchors (f_em_732), verified by three independent occurrences. **THREE-UQFF TRIPLE-MODE** solver introduced (g_compressed / g_resonant / g_buoyancy) with R_freq = 1+kappa*[SSq] = 1.000285 EXACT (two-primitive tie) and the f_Ub four-factor calibration 0.1*7.25e8*10*(1/33) = 2.197e7 EXACT. **VARIABLE f_TRZ discovered** (activity ladder 0.02-0.05 + warp 1.05 across P777-793; canonical 0.1 preserved per Rule 2). Further: U_g5 tensor mode with perfect-fluid closed form rho*c^2*(1+3w) (Doc43d), E_shell(H,1s) = 13.6 eV EXACT (generalized H-resonance Z=1-118, Lyman-alpha anchor 3.290e15 Hz EXACT), Heaviside amplification 1e11 EXACT, galactic year 2.727e8 yr EXACT, per-system MUGE catalogs (Saturn/Crab/Eagle/Sombrero/M51/HUDF/LMC + KB1-19 series), and **129 SUPPORTING_ANCHOR registry rows** bulk-captured per Daniel's supporting-information directive. Rule-7 audit: zero exclusions — every slip transcribed faithfully with computed+stated values pinned (~60 disclosures across 501-800). **Ship-checklist restoration**: v0.359.0 missed the registry-audit family; this ship updates ALL live artifacts (MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO queue+routes) with the frozen predecessor references (STATUS/RESULTS/FALSIFIABILITY) left intact by design. Library **~4,080 functions** (calculator 2,274); registry 4,383 rows, graph 6,600+ edges, citations 1,224 papers, gate **3,388 assertions green**.
+**This release (v0.361.0): DEEP-CAPTURE PAPER_801-900 COMPLETE.** Ten bands plus the Daniel-directed deep-mine resweep. Headlines: **THE E(t) ENGINE IDENTITY VERIFIED** — E+ + E- = E0*exp(kappa*t+[SSq]*t/26)*S26*(2R-1) holds ALGEBRAICALLY EXACT in the wired functions (0.0 residual), with the R = 0.5 phase-transition zero; **D_GW = 2/3 PRIMITIVE-TIED** — GW damping phase now composed directly from the D_GW_EROSION registry primitive (P2154 canonization); **FWHM DRIFT-CORRECTED** — 0.4710 THz canonical wired per the P2154 Flag-(d) ruling (papers' 1.49 THz identified as AI drift); **DPM PROPORTION-PAIR NULL** — P877's U_i base (rho_SCm - rho_UA/10) wired and pinned null to machine epsilon (Axiom-2 identity); the **CGM metal-retention theorem** (f_Z = U_i/(U_i+U_m), Sanchez 0.89/0.10 bounds); NANOGrav/EHT/GRMHD observational channels (photon ring 2sqrt(27), Kepler-verified f_orb, MRI dynamo); the BSM force catalog (Kozima F_neutron = 1e6 N EXACT on the k_n = 1e10 cross-band tie; Colman-Gillespie 40.68 N device torque); Species Index S(n) = -n EXACT; Boyle vacuum ratio three-primitive tie; cosmic epochs (143.2, 900.5) Gyr; the 1.053 fingerprint reconfirmed. ~25 further source slips disclosed (f_gal 10x own-division, F_tide 8-order, UH route spread). **Project totals: 4,163 functions / 17,213 registry-family rows / 914 of 2,256 papers wired (40.5%%) / gate 3,564 assertions green.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
 
 ---
+
+
+## Project census (accumulative, dual-scope reporting)
+
+Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
+
+**Full-project totals (measured):** **4,163 functions** across 15 Python modules
+(calculator 2,429 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
++ session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
+**17,213 registry-family rows** across 14 CSVs (main 4,665 + falsifiability graph 6,856
+edges + XGEO 3,290+ + citations 1,315 + results 187 + audit family 940+) | **914 of 2,256
+whitepapers wired** (40.5% of corpus; frontier PAPER_001-900 complete) | **3,564 gate
+assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into ~47,000 Python
+lines (~13:1 on the covered range).
+
+**Single-file scope** (used for per-band deltas): calculator defs, main-registry rows,
+gate assertions, dispatch count — always labeled as such in CHANGELOG/SESSION_LOG entries.
 
 ## What this is
 
@@ -58,7 +75,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 814 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-800** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 914 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-900** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

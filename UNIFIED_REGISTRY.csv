@@ -4483,3 +4483,184 @@ u_i_net_749,REPO_DEEP_CAPTURE,function,PAPER_749,-U_i_dim*E_react; faithful -1.3
 f_cluster_750,REPO_DEEP_CAPTURE,function,PAPER_750,k_cluster*M=1e-12*1e6=1e-6 EXACT (RECOVERED),1e-06,whitepapers/PAPER_750,,m51-fornax,,PAPER_750,,uqff_calculator.py,,,,WIRED
 theta_e_758,REPO_DEEP_CAPTURE,function,PAPER_758,"sqrt(4GM/(c2 Deff)), Deff=DLDS/DLS (RECOVERED)",,whitepapers/PAPER_758,,einstein-ring,,PAPER_758,,uqff_calculator.py,,,,WIRED
 warp_factor_793,REPO_DEEP_CAPTURE,function,PAPER_793,1.05 replaces (1+f_TRZ) for warped systems - 3rd variable-f_TRZ instance (RECOVERED),1.05,whitepapers/PAPER_793,,three-uqff,,PAPER_793,,uqff_calculator.py,,,,WIRED
+um_zero_mass_622,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_622,kD/grad^26+26!c26 grad^26 (RECOVERED-2),,whitepapers/PAPER_622,,zero-mass,,PAPER_622,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+scm_zero_mass_622,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_622,lamUA(1-1/t)+Sum b grad/t^m (RECOVERED-2),,whitepapers/PAPER_622,,zero-mass,,PAPER_622,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+ub_zero_mass_full_622,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_622,g(1-1/grad)+g26!/grad^25 full (RECOVERED-2),,whitepapers/PAPER_622,,zero-mass,,PAPER_622,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+h_c_uqff_644,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_644,H_C+d26(SCm grad) QAOA extension (RECOVERED-2),,whitepapers/PAPER_644,,chip,,PAPER_644,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+ising_energy_644,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_644,Sum h s+Sum J s s (RECOVERED-2),,whitepapers/PAPER_644,,chip,,PAPER_644,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+r_min_gm_645,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_645,(26!SCm g/GM)^(1/(k+24)) GM-route (RECOVERED-2),,whitepapers/PAPER_645,,efe,,PAPER_645,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+f_neutron_645_stated,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_645,1e49 N = int gradUA dt (RECOVERED-2),1e49,whitepapers/PAPER_645,,efe,,PAPER_645,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+r_photon_645,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_645,3GM/c2=1.5rs; sun 4431 m (RECOVERED-2),4430.990657096573,whitepapers/PAPER_645,,efe,,PAPER_645,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+f_rydberg26_electron_651,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_651,mc2 e^-26/h=631.3 MHz EXACT-to-paper ~630 (RECOVERED-2; ties RF prediction to 630 eV KER family),631275210.0139621,whitepapers/PAPER_651,,schwarzschild,,PAPER_651,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+p_casimir_651,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_651,pi2 hbar c/240a^4; proton 2.19e29 Pa (RECOVERED-2; ratio 1e61 stated),2.1927891158152445e+29,whitepapers/PAPER_651,,schwarzschild,,PAPER_651,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+vac_fraction_651_stated,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_651,1e-39 % removal collapses to BH (RECOVERED-2),1e-39,whitepapers/PAPER_651,,schwarzschild,,PAPER_651,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+defect_mod_656,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_656,1+0.01sin(0.001t) (RECOVERED-2),,whitepapers/PAPER_656,,light-echo,,PAPER_656,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+h2_lqg_658,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_658,8piG/3 rho(1-rho/rhoc)-kc2/a2; bounce H=0 at rho_c (RECOVERED-2),,whitepapers/PAPER_658,,lqg-bounce,,PAPER_658,pass-2 deep mine,uqff_calculator.py,,,,WIRED
+s_index_806,REPO_DEEP_CAPTURE,function,PAPER_805,log10(F_TRZ)*n=-n EXACT primitive tie; n=26 -> -26,-26.0,whitepapers/PAPER_805,,species-index,,PAPER_805,,uqff_calculator.py,,,,WIRED
+rho_chain_806,REPO_DEEP_CAPTURE,function,PAPER_806,rhoUA*0.1^n*exp(-SSq n/26 e^-(pi-t)) 26-state ladder,,whitepapers/PAPER_806,,species-index,,PAPER_806,,uqff_calculator.py,,,,WIRED
+dpm_formation_806,REPO_DEEP_CAPTURE,function,PAPER_806,rho_EM > threshold pairing gate,,whitepapers/PAPER_806,,species-index,,PAPER_806,,uqff_calculator.py,,,,WIRED
+f_z_cgm_807,REPO_DEEP_CAPTURE,function,PAPER_807,U_i/(U_i+U_m); 0.89/0.10 stated bounds,,whitepapers/PAPER_807,,cgm-theorem,,PAPER_807,,uqff_calculator.py,,,,WIRED
+delta_m_bh_807,REPO_DEEP_CAPTURE,function,PAPER_807,log10(M)-(0.309 log10(sigma/200)+4.38); b=4.38 as-printed DISCLOSED,,whitepapers/PAPER_807,,cgm-theorem,,PAPER_807,,uqff_calculator.py,,,,WIRED
+u_i_galactic_807,REPO_DEEP_CAPTURE,function,PAPER_807,rho rho omega(1+f)/k_gal,,whitepapers/PAPER_807,,cgm-theorem,,PAPER_807,,uqff_calculator.py,,,,WIRED
+chi_agn_807,REPO_DEEP_CAPTURE,function,PAPER_807,"min(0.1, 0.002(M/1e9)^2)",,whitepapers/PAPER_807,,cgm-theorem,,PAPER_807,,uqff_calculator.py,,,,WIRED
+u_m_agn_807,REPO_DEEP_CAPTURE,function,PAPER_807,(B2/2mu0)(F_TRZ)e^-at(1+dM chi),,whitepapers/PAPER_807,,cgm-theorem,,PAPER_807,,uqff_calculator.py,,,,WIRED
+bohr_uqff_808,REPO_DEEP_CAPTURE,function,PAPER_808,-13.6/n2*(1+rhoUA rn2/EH); baseline EXACT preserved (corr ~1e-38),-13.6,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,,uqff_calculator.py,,,,WIRED
+v_scm_radial_808,REPO_DEEP_CAPTURE,function,PAPER_808,-v0*F_TRZ*e^(-r/500)=-9.98 km/s at 1 kpc EXACT (nu-blueshift anchor),-9.98001998667333,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,,uqff_calculator.py,,,,WIRED
+e_vac_neb_812,REPO_DEEP_CAPTURE,function,PAPER_812,hbar w_THz/V (OMEGA_SCM tie),,whitepapers/PAPER_812,,acp-dynamic,,PAPER_812,,uqff_calculator.py,,,,WIRED
+dynamic4_812,REPO_DEEP_CAPTURE,function,PAPER_812,(f E/c)^4 ~1.77e-133 stated,,whitepapers/PAPER_812,,acp-dynamic,,PAPER_812,,uqff_calculator.py,,,,WIRED
+ub_mi_812_stated,REPO_DEEP_CAPTURE,function,PAPER_812,-3.08e-18 J/m3 belly-button,-3.08e-18,whitepapers/PAPER_812,,acp-dynamic,,PAPER_812,,uqff_calculator.py,,,,WIRED
+mag_buoyancy_813,REPO_DEEP_CAPTURE,function,PAPER_813,(1-5/6)g_LIM=1.35 EXACT (5/6 PHI_RES nuclear tie),1.35,whitepapers/PAPER_813,,nasa-thorium,,PAPER_813,,uqff_calculator.py,,,,WIRED
+a_mag_bubble_813,REPO_DEEP_CAPTURE,function,PAPER_813,v2/r F_super ~6.287e-14,,whitepapers/PAPER_813,,nasa-thorium,,PAPER_813,,uqff_calculator.py,,,,WIRED
+f_thrust_813_stated,REPO_DEEP_CAPTURE,function,PAPER_813,5e2 thorium thrust,5e2,whitepapers/PAPER_813,,nasa-thorium,,PAPER_813,,uqff_calculator.py,,,,WIRED
+h_c_nanograv_814,REPO_DEEP_CAPTURE,function,PAPER_814,A_yr(f/f_yr)^-2/3; h_c(f_yr)=A EXACT,,whitepapers/PAPER_814,,nanograv,,PAPER_814,,uqff_calculator.py,,,,WIRED
+chirp_mass_q_814,REPO_DEEP_CAPTURE,function,PAPER_814,Mq^0.6/(1+q)^1.2; q=1 -> 0.4353=2^-1.2,0.4352752816480621,whitepapers/PAPER_814,,nanograv,,PAPER_814,,uqff_calculator.py,,,,WIRED
+g_chirp_814,REPO_DEEP_CAPTURE,function,PAPER_814,GMc/c2(2pif)^2/3/r2,,whitepapers/PAPER_814,,nanograv,,PAPER_814,,uqff_calculator.py,,,,WIRED
+h_s_source_815,REPO_DEEP_CAPTURE,function,PAPER_815,sqrt(32/5)(GM/c3)^5/3(pif)^2/3/D,,whitepapers/PAPER_815,,vdf-gsmf,,PAPER_815,,uqff_calculator.py,,,,WIRED
+sersic_k_815,REPO_DEEP_CAPTURE,function,PAPER_815,73.32/(10.465+(n-0.94)^2)+0.954; K(0.94)=7.960 peak,7.960211180124222,whitepapers/PAPER_815,,vdf-gsmf,,PAPER_815,,uqff_calculator.py,,,,WIRED
+sigma_virial_815,REPO_DEEP_CAPTURE,function,PAPER_815,sqrt(GMK/re),,whitepapers/PAPER_815,,vdf-gsmf,,PAPER_815,,uqff_calculator.py,,,,WIRED
+theta_ring_816,REPO_DEEP_CAPTURE,function,PAPER_816,2sqrt27 GM/c2D = 9.95 muas (paper 8.9 band),9.948877429868855,whitepapers/PAPER_816,,eht,,PAPER_816,,uqff_calculator.py,,,,WIRED
+f_edd_816,REPO_DEEP_CAPTURE,function,PAPER_816,L/(eta c2) kappa c/(4piGM),,whitepapers/PAPER_816,,eht,,PAPER_816,,uqff_calculator.py,,,,WIRED
+te_ti_816,REPO_DEEP_CAPTURE,function,PAPER_816,Rh b2/(1+b2)+Rl/(1+b2),,whitepapers/PAPER_816,,eht,,PAPER_816,,uqff_calculator.py,,,,WIRED
+mdot_binary_mod_817,REPO_DEEP_CAPTURE,function,PAPER_817,f(1+Acos(wt+phi)),,whitepapers/PAPER_817,,grmhd-binary,,PAPER_817,,uqff_calculator.py,,,,WIRED
+dr_dt_gw_817,REPO_DEEP_CAPTURE,function,PAPER_817,-64/5 G3 m m M/(c5 r3),,whitepapers/PAPER_817,,grmhd-binary,,PAPER_817,,uqff_calculator.py,,,,WIRED
+f_orb_817,REPO_DEEP_CAPTURE,function,PAPER_817,(1/2pi)sqrt(GM/r3),,whitepapers/PAPER_817,,grmhd-binary,,PAPER_817,,uqff_calculator.py,,,,WIRED
+tau_lt_817,REPO_DEEP_CAPTURE,function,PAPER_817,2pi r3 c2/(2GJ) Lense-Thirring,,whitepapers/PAPER_817,,grmhd-binary,,PAPER_817,,uqff_calculator.py,,,,WIRED
+l_poynt_mad_817,REPO_DEEP_CAPTURE,function,PAPER_817,0.01 mdot c2 MAD floor,,whitepapers/PAPER_817,,grmhd-binary,,PAPER_817,,uqff_calculator.py,,,,WIRED
+eta_nt_818,REPO_DEEP_CAPTURE,function,PAPER_818,1-E_ISCO; MHD 0.16-0.18,,whitepapers/PAPER_818,,grmhd-isco,,PAPER_818,,uqff_calculator.py,,,,WIRED
+g_l1_eta_818,REPO_DEEP_CAPTURE,function,PAPER_818,eta mdot c2/r2 ~1.44e13,,whitepapers/PAPER_818,,grmhd-isco,,PAPER_818,,uqff_calculator.py,,,,WIRED
+delta_g_stress_818,REPO_DEEP_CAPTURE,function,PAPER_818,alpha B2/8pir2 ~2.5e-11,,whitepapers/PAPER_818,,grmhd-isco,,PAPER_818,,uqff_calculator.py,,,,WIRED
+g_l1_ej_819,REPO_DEEP_CAPTURE,function,PAPER_819,M v2/(r rcode2) ~3.9e-5 kilonova,,whitepapers/PAPER_819,,grmhd-ns,,PAPER_819,,uqff_calculator.py,,,,WIRED
+gamma_nu_819,REPO_DEEP_CAPTURE,function,PAPER_819,0.22 T10^6 D4,,whitepapers/PAPER_819,,grmhd-ns,,PAPER_819,,uqff_calculator.py,,,,WIRED
+tau_mri_820,REPO_DEEP_CAPTURE,function,PAPER_820,1/Omega ~1ms; dynamo 20x,,whitepapers/PAPER_820,,nu-disk,,PAPER_820,,uqff_calculator.py,,,,WIRED
+b_max_820,REPO_DEEP_CAPTURE,function,PAPER_820,sqrt(4pi P)~1e15 G,,whitepapers/PAPER_820,,nu-disk,,PAPER_820,,uqff_calculator.py,,,,WIRED
+g_l3_ye_820,REPO_DEEP_CAPTURE,function,PAPER_820,M Ye/r ~2e-7,,whitepapers/PAPER_820,,nu-disk,,PAPER_820,,uqff_calculator.py,,,,WIRED
+tau_acc_821,REPO_DEEP_CAPTURE,function,PAPER_821,1/(2K); g_L2~1e5,,whitepapers/PAPER_821,,riaf-crp,,PAPER_821,,uqff_calculator.py,,,,WIRED
+ndot_inj_821,REPO_DEEP_CAPTURE,function,PAPER_821,"eta max(1,beta)|dB/B|",,whitepapers/PAPER_821,,riaf-crp,,PAPER_821,,uqff_calculator.py,,,,WIRED
+g_l3_crp_821,REPO_DEEP_CAPTURE,function,PAPER_821,eta B2/r; P_CRP 3.41e44 erg/s stated,,whitepapers/PAPER_821,,riaf-crp,,PAPER_821,,uqff_calculator.py,,,,WIRED
+r_q_822,REPO_DEEP_CAPTURE,function,PAPER_822,"sqrt((cos p)^2+(sin p+1)^2); r_q(0,1)=sqrt2",1.4142135623730951,whitepapers/PAPER_822,,proto-shell,,PAPER_822,,uqff_calculator.py,,,,WIRED
+fm_open_integral_822,REPO_DEEP_CAPTURE,function,PAPER_822,(1-1/x)F+F/x=F identity -> F=0 or nonlinear EXACT,,whitepapers/PAPER_822,,proto-shell,,PAPER_822,,uqff_calculator.py,,,,WIRED
+delta_q2_822,REPO_DEEP_CAPTURE,function,PAPER_822,nested-radical openness ratio,,whitepapers/PAPER_822,,proto-shell,,PAPER_822,,uqff_calculator.py,,,,WIRED
+ug3_ext_823,REPO_DEEP_CAPTURE,function,PAPER_823,GM_ext/r_ext^2 generalized external term,,whitepapers/PAPER_823,,compression-2,,PAPER_823,,uqff_calculator.py,,,,WIRED
+t_spiral_torque_824,REPO_DEEP_CAPTURE,function,PAPER_824,m Omega R2/t_cross,,whitepapers/PAPER_824,,spirals-sn,,PAPER_824,,uqff_calculator.py,,,,WIRED
+t_spiral_density_824,REPO_DEEP_CAPTURE,function,PAPER_824,(B/rho)dPhi/dr,,whitepapers/PAPER_824,,spirals-sn,,PAPER_824,,uqff_calculator.py,,,,WIRED
+sn_term_824,REPO_DEEP_CAPTURE,function,PAPER_824,E/(M r2); stated 3.2e-12 per SNR (anchors partially unprinted),,whitepapers/PAPER_824,,spirals-sn,,PAPER_824,,uqff_calculator.py,,,,WIRED
+epsilon_sn_824,REPO_DEEP_CAPTURE,function,PAPER_824,E nu/V heating,,whitepapers/PAPER_824,,spirals-sn,,PAPER_824,,uqff_calculator.py,,,,WIRED
+p_wind_kinetic_825,REPO_DEEP_CAPTURE,function,PAPER_825,0.5 mdot v2,,whitepapers/PAPER_825,,ngc6302,,PAPER_825,,uqff_calculator.py,,,,WIRED
+r_shock_825,REPO_DEEP_CAPTURE,function,PAPER_825,sqrt(mdot v/(4pi rho vism2)),,whitepapers/PAPER_825,,ngc6302,,PAPER_825,,uqff_calculator.py,,,,WIRED
+w_shock_825,REPO_DEEP_CAPTURE,function,PAPER_825,0.5 rho v2 (rl/r)2 (1-cos),,whitepapers/PAPER_825,,ngc6302,,PAPER_825,,uqff_calculator.py,,,,WIRED
+p_outflow_825,REPO_DEEP_CAPTURE,function,PAPER_825,rho v2 (rj/r)2,,whitepapers/PAPER_825,,ngc6302,,PAPER_825,,uqff_calculator.py,,,,WIRED
+qg_term_826,REPO_DEEP_CAPTURE,function,PAPER_826,hbar G/(c3 r4) QG floor,,whitepapers/PAPER_826,,gravity-bb,,PAPER_826,,uqff_calculator.py,,,,WIRED
+dm_term_826,REPO_DEEP_CAPTURE,function,PAPER_826,GM_DM/r2(1+drho)=3.68e-11 EXACT at 20 kpc,3.6815878578051894e-11,whitepapers/PAPER_826,,gravity-bb,,PAPER_826,,uqff_calculator.py,,,,WIRED
+w_stellar_827,REPO_DEEP_CAPTURE,function,PAPER_827,mdot v/(4pir2 rho),,whitepapers/PAPER_827,,wstellar,,PAPER_827,,uqff_calculator.py,,,,WIRED
+net_wind_rad_827,REPO_DEEP_CAPTURE,function,PAPER_827,[mdot v - L/(c kappa)]/(4pir2 rho),,whitepapers/PAPER_827,,wstellar,,PAPER_827,,uqff_calculator.py,,,,WIRED
+f_aether_828,REPO_DEEP_CAPTURE,function,PAPER_828,k rhoUA v2 d_stop (boxed; RHO_UA tie),,whitepapers/PAPER_828,,aether-resist,,PAPER_828,,uqff_calculator.py,,,,WIRED
+d_stop_828,REPO_DEEP_CAPTURE,function,PAPER_828,mv2/2/(F-F_A),,whitepapers/PAPER_828,,aether-resist,,PAPER_828,,uqff_calculator.py,,,,WIRED
+n_ions_829,REPO_DEEP_CAPTURE,function,PAPER_829,rhoUA/(m V); computes 1.50e-7 vs printed 1.50e-10 DISCLOSED mantissa EXACT,1.500179852309515e-07,whitepapers/PAPER_829,,aether-ion,,PAPER_829,,uqff_calculator.py,,,,WIRED
+f_ion_evo_829,REPO_DEEP_CAPTURE,function,PAPER_829,k(E/E)2 n; 1.70e35 stated,,whitepapers/PAPER_829,,aether-ion,,PAPER_829,,uqff_calculator.py,,,,WIRED
+n_isotope_830,REPO_DEEP_CAPTURE,function,PAPER_830,55500*0.33*345.6h=2.279e10 mol EXACT-to-paper 2.28e10,22786790400.0,whitepapers/PAPER_830,,hydrogen-exp,,PAPER_830,,uqff_calculator.py,,,,WIRED
+e_isotope_830,REPO_DEEP_CAPTURE,function,PAPER_830,k_DE L_X t=3.005e-15 J EXACT-to-paper 3.00e-15,3.0046314700799998e-15,whitepapers/PAPER_830,,hydrogen-exp,,PAPER_830,,uqff_calculator.py,,,,WIRED
+f_ubi_mice_831_stated,REPO_DEEP_CAPTURE,function,PAPER_831,-1.66e212 N Mice merger (batch max); imaginary BSM ladder i*1e-3..1e-5,-1.66e212,whitepapers/PAPER_831,,bsm-imaginary,,PAPER_831,,uqff_calculator.py,,,,WIRED
+f_orbit_832,REPO_DEEP_CAPTURE,function,PAPER_832,GMpMs/a3 Kepler Orrery,,whitepapers/PAPER_832,,kepler-orrery,,PAPER_832,,uqff_calculator.py,,,,WIRED
+f_tide_832,REPO_DEEP_CAPTURE,function,PAPER_832,GMMR/a6; printed anchors compute 1.49e-3 vs stated 2.9e-11 DISCLOSED,,whitepapers/PAPER_832,,kepler-orrery,,PAPER_832,,uqff_calculator.py,,,,WIRED
+rho_nfw_834,REPO_DEEP_CAPTURE,function,PAPER_834,NFW rho_s/((r/rs)(1+r/rs)2); rho(rs)=rho_s/4... wait rho(rs)=rho_s/(1*4),,whitepapers/PAPER_834,,fgal-dm,,PAPER_834,,uqff_calculator.py,,,,WIRED
+f_gal_834,REPO_DEEP_CAPTURE,function,PAPER_834,v2/r+GM/r2; faithful 2.24e-10 (a_rot EXACT; paper 10x slip on own division DISCLOSED),2.2406559687914896e-10,whitepapers/PAPER_834,,fgal-dm,,PAPER_834,,uqff_calculator.py,,,,WIRED
+f_lenr_835,REPO_DEEP_CAPTURE,function,PAPER_835,k(w/w0)2 = 6.17e39 on OMEGA_SCM (papers 1.56e36-6.16e39 band),6.168502750680849e+39,whitepapers/PAPER_835,,colman-gillespie,,PAPER_835,,uqff_calculator.py,,,,WIRED
+f_act_835,REPO_DEEP_CAPTURE,function,PAPER_835,1e-6 cos(2pi 300t),,whitepapers/PAPER_835,,colman-gillespie,,PAPER_835,,uqff_calculator.py,,,,WIRED
+f_torque_835,REPO_DEEP_CAPTURE,function,PAPER_835,4.068/0.1=40.68 N EXACT,40.68,whitepapers/PAPER_835,,colman-gillespie,,PAPER_835,,uqff_calculator.py,,,,WIRED
+f_de_835,REPO_DEEP_CAPTURE,function,PAPER_835,k_DE L_X; 1 N anchor,,whitepapers/PAPER_835,,colman-gillespie,,PAPER_835,,uqff_calculator.py,,,,WIRED
+f_res_835,REPO_DEEP_CAPTURE,function,PAPER_835,2qBVsin(theta)DPM,,whitepapers/PAPER_835,,colman-gillespie,,PAPER_835,,uqff_calculator.py,,,,WIRED
+bsm_forces_837_stated,REPO_DEEP_CAPTURE,function,PAPER_837,"(1.54e7, 1.0, 1e4) N quark/neutrino/ALP",,whitepapers/PAPER_837,,bsm-bridge,,PAPER_837,,uqff_calculator.py,,,,WIRED
+f_led_839_stated,REPO_DEEP_CAPTURE,function,PAPER_839,1e-23 N ADD extra-dimension,1e-23,whitepapers/PAPER_839,,add-led,,PAPER_839,,uqff_calculator.py,,,,WIRED
+sigma_n_840,REPO_DEEP_CAPTURE,function,PAPER_840,sigma0(w/wL)2 gauss; sigma(wL)=1e-4 EXACT (OMEGA_SCM tie),0.0001,whitepapers/PAPER_840,,kozima,,PAPER_840,,uqff_calculator.py,,,,WIRED
+f_neutron_840,REPO_DEEP_CAPTURE,function,PAPER_840,1e10*1e-4=1e6 N EXACT (k_n=1e10 cross-band tie),1000000.0,whitepapers/PAPER_840,,kozima,,PAPER_840,,uqff_calculator.py,,,,WIRED
+f_neutron_t_840,REPO_DEEP_CAPTURE,function,PAPER_840,modulated (1+a cos),,whitepapers/PAPER_840,,kozima,,PAPER_840,,uqff_calculator.py,,,,WIRED
+sigma_rho_840,REPO_DEEP_CAPTURE,function,PAPER_840,sigma0 rho/1e-22 environmental,,whitepapers/PAPER_840,,kozima,,PAPER_840,,uqff_calculator.py,,,,WIRED
+force_hierarchy_span_841,REPO_DEEP_CAPTURE,function,PAPER_841,log10(Fmax/Fmin)=62.0 computed (paper 87 orders DISCLOSED),61.96,whitepapers/PAPER_841,,millennium-app,,PAPER_841,,uqff_calculator.py,,,,WIRED
+f_res_pcvt_842,REPO_DEEP_CAPTURE,function,PAPER_842,2qBVsin(theta)DPM at B=0.3T lab anchors,,whitepapers/PAPER_842,,vta-pcvt,,PAPER_842,,uqff_calculator.py,,,,WIRED
+f_led_850_stated,REPO_DEEP_CAPTURE,function,PAPER_850,6.72e-24 N refined ADD graviton leakage,6.72e-24,whitepapers/PAPER_850,,add-led,,PAPER_850,,uqff_calculator.py,,,,WIRED
+F_LENR_anchor_P842,SUPPORTING_ANCHOR,anchor,PAPER_842,stated force anchor (band capture),6.17e37,whitepapers/PAPER_842,,per-system,,PAPER_842,,,,,,ANCHOR_CAPTURED
+F_res_anchor_P842,SUPPORTING_ANCHOR,anchor,PAPER_842,stated force anchor (band capture),6.79e-20,whitepapers/PAPER_842,,per-system,,PAPER_842,,,,,,ANCHOR_CAPTURED
+F_LENR_anchor_P843,SUPPORTING_ANCHOR,anchor,PAPER_843,stated force anchor (band capture),6.17e37,whitepapers/PAPER_843,,per-system,,PAPER_843,,,,,,ANCHOR_CAPTURED
+F_LENR_anchor_P845,SUPPORTING_ANCHOR,anchor,PAPER_845,stated force anchor (band capture),6.17e37,whitepapers/PAPER_845,,per-system,,PAPER_845,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P847,SUPPORTING_ANCHOR,anchor,PAPER_847,stated force anchor (band capture),2.11e210,whitepapers/PAPER_847,,per-system,,PAPER_847,,,,,,ANCHOR_CAPTURED
+F_quark_anchor_P849,SUPPORTING_ANCHOR,anchor,PAPER_849,stated force anchor (band capture),1.54e7,whitepapers/PAPER_849,,per-system,,PAPER_849,,,,,,ANCHOR_CAPTURED
+F_ALP_anchor_P849,SUPPORTING_ANCHOR,anchor,PAPER_849,stated force anchor (band capture),1.0e4,whitepapers/PAPER_849,,per-system,,PAPER_849,,,,,,ANCHOR_CAPTURED
+F_BSM_total_anchor_P849,SUPPORTING_ANCHOR,anchor,PAPER_849,stated force anchor (band capture),1.54e7,whitepapers/PAPER_849,,per-system,,PAPER_849,,,,,,ANCHOR_CAPTURED
+F_LENR_anchor_P849,SUPPORTING_ANCHOR,anchor,PAPER_849,stated force anchor (band capture),6.17e37,whitepapers/PAPER_849,,per-system,,PAPER_849,,,,,,ANCHOR_CAPTURED
+F_LED_anchor_P850,SUPPORTING_ANCHOR,anchor,PAPER_850,stated force anchor (band capture),6.72e-23,whitepapers/PAPER_850,,per-system,,PAPER_850,,,,,,ANCHOR_CAPTURED
+F_LENR_anchor_P850,SUPPORTING_ANCHOR,anchor,PAPER_850,stated force anchor (band capture),6.17e37,whitepapers/PAPER_850,,per-system,,PAPER_850,,,,,,ANCHOR_CAPTURED
+solfeggio_freq_853,REPO_DEEP_CAPTURE,function,PAPER_853,Solfeggio[d mod 9] ladder 174-963 Hz,,whitepapers/PAPER_853,,solfeggio,,PAPER_853,,uqff_calculator.py,,,,WIRED
+e_coherent_853,REPO_DEEP_CAPTURE,function,PAPER_853,"(nE, n2E) coherence gain",,whitepapers/PAPER_853,,solfeggio,,PAPER_853,,uqff_calculator.py,,,,WIRED
+beta_triad_853,REPO_DEEP_CAPTURE,function,PAPER_853,min/max 3-6-9 balance,,whitepapers/PAPER_853,,solfeggio,,PAPER_853,,uqff_calculator.py,,,,WIRED
+k_eta_env_854,REPO_DEEP_CAPTURE,function,PAPER_854,hydride 2.75e8 / wires 1.91e2 / corona 6.06e-6 (2.75 = U_i mantissa echo),,whitepapers/PAPER_854,,lenr-keta,,PAPER_854,,uqff_calculator.py,,,,WIRED
+delta_n_base_855,REPO_DEEP_CAPTURE,function,PAPER_855,(2pi)^(n/6) base form (spiral variant = delta_n_spiral),,whitepapers/PAPER_855,,pseudo-monopole,,PAPER_855,,uqff_calculator.py,,,,WIRED
+uh_856,REPO_DEEP_CAPTURE,function,PAPER_856,lam rho_chain omega e-gates (1+fq); faithful 4.79e-46 vs stated 1.539e-32 DISCLOSED route spread,,whitepapers/PAPER_856,,higgs-uh,,PAPER_856,,uqff_calculator.py,,,,WIRED
+k_higgs_856,REPO_DEEP_CAPTURE,function,PAPER_856,125GeV/E_H; eV-route 1.30e9 vs stated 1.79e18/7.069e26 DISCLOSED multi-route,1298701298.7012987,whitepapers/PAPER_856,,higgs-uh,,PAPER_856,,uqff_calculator.py,,,,WIRED
+l_plasmoid_859,REPO_DEEP_CAPTURE,function,PAPER_859,buoyancy Lagrangian + kinetic - magnetic (BETA_I),,whitepapers/PAPER_859,,microplasmoid,,PAPER_859,,uqff_calculator.py,,,,WIRED
+f_reversal_859,REPO_DEEP_CAPTURE,function,PAPER_859,-beta(V/Vref)Ug Omega cos; sign flips at t_n=0.5 EXACT,,whitepapers/PAPER_859,,microplasmoid,,PAPER_859,,uqff_calculator.py,,,,WIRED
+um_master_862,REPO_DEEP_CAPTURE,function,PAPER_862,Sum(mu/r)(1-e^-gt cos)N P E master with string count,,whitepapers/PAPER_862,,um-master,,PAPER_862,,uqff_calculator.py,,,,WIRED
+omega_eq_862,REPO_DEEP_CAPTURE,function,PAPER_862,sqrt(|Um|/I) variational spin,,whitepapers/PAPER_862,,um-master,,PAPER_862,,uqff_calculator.py,,,,WIRED
+phi_ddot_863,REPO_DEEP_CAPTURE,function,PAPER_863,driven LENR oscillator EOM on OMEGA_SCM,,whitepapers/PAPER_863,,water-reactor,,PAPER_863,,uqff_calculator.py,,,,WIRED
+cop_283_863_stated,REPO_DEEP_CAPTURE,function,PAPER_863,COP 283:1 BSH convergence stated,283.0,whitepapers/PAPER_863,,water-reactor,,PAPER_863,,uqff_calculator.py,,,,WIRED
+f_lrc_864,REPO_DEEP_CAPTURE,function,PAPER_864,"1/(2pi sqrt(LC)); 29.14 Hz spark-gap anchor, B 2.53e-8 T at 0.61 m",,whitepapers/PAPER_864,,lrc-monopole,,PAPER_864,,uqff_calculator.py,,,,WIRED
+f_aether_spooky_865,REPO_DEEP_CAPTURE,function,PAPER_865,eta rho v2 cos Tr(g) non-local force,,whitepapers/PAPER_865,,spooky-field,,PAPER_865,,uqff_calculator.py,,,,WIRED
+b_net_caduceus_866,REPO_DEEP_CAPTURE,function,PAPER_866,"BL+BR normal cancels, scalar survives",,whitepapers/PAPER_866,,caduceus-motor,,PAPER_866,,uqff_calculator.py,,,,WIRED
+r_eb_870,REPO_DEEP_CAPTURE,function,PAPER_870,k_R Z linear barrier,,whitepapers/PAPER_870,,periodic-dpm,,PAPER_870,,uqff_calculator.py,,,,WIRED
+lambda_decay_870,REPO_DEEP_CAPTURE,function,PAPER_870,k Z/Zmax decay rate,,whitepapers/PAPER_870,,periodic-dpm,,PAPER_870,,uqff_calculator.py,,,,WIRED
+v_layer_log10_871,REPO_DEEP_CAPTURE,function,PAPER_871,c^(27-layer) log10; layer1 220.4 (paper 219.7),220.3973382761261,whitepapers/PAPER_871,,speed-range,,PAPER_871,,uqff_calculator.py,,,,WIRED
+decel_log10_871,REPO_DEEP_CAPTURE,function,PAPER_871,c^-24 log10=-203.44 (paper -203.3),-203.44369687027026,whitepapers/PAPER_871,,speed-range,,PAPER_871,,uqff_calculator.py,,,,WIRED
+rho_vac_sum_877,REPO_DEEP_CAPTURE,function,PAPER_877,rhoUA+rhoSCm=7.799e-36 EXACT Axiom-1 primitive sum,7.799e-36,whitepapers/PAPER_877,,cosmogenesis,,PAPER_877,,uqff_calculator.py,,,,WIRED
+u_i_877,REPO_DEEP_CAPTURE,function,PAPER_877,k(rhoSCm-rhoUA/10)w cos = NULL to machine epsilon EXACT (DPM proportion-pair identity),~0,whitepapers/PAPER_877,,cosmogenesis,,PAPER_877,,uqff_calculator.py,,,,WIRED
+u_vac_877,REPO_DEEP_CAPTURE,function,PAPER_877,rho_vac 4/3 pi r3,,whitepapers/PAPER_877,,cosmogenesis,,PAPER_877,,uqff_calculator.py,,,,WIRED
+psi_proto_877,REPO_DEEP_CAPTURE,function,PAPER_877,Sum U mu/r (1-e^-gt)cos 26-state proto-wavefunction,,whitepapers/PAPER_877,,cosmogenesis,,PAPER_877,,uqff_calculator.py,,,,WIRED
+alpha_blend_878,REPO_DEEP_CAPTURE,function,PAPER_878,w e^-B/Bc+(1-w)e^-(B/Bc)^2 blend; alpha(0)=1 EXACT,1.0,whitepapers/PAPER_878,,scm-activation,,PAPER_878,,uqff_calculator.py,,,,WIRED
+m_eff2_879,REPO_DEEP_CAPTURE,function,PAPER_879,beta SumUg Omega M/(d c2 hbar2)UA KG mass (BETA_I),,whitepapers/PAPER_879,,kg-buoyancy,,PAPER_879,,uqff_calculator.py,,,,WIRED
+phi_static_879,REPO_DEEP_CAPTURE,function,PAPER_879,(J/m2)(1-e^-mr) Yukawa-screened,,whitepapers/PAPER_879,,kg-buoyancy,,PAPER_879,,uqff_calculator.py,,,,WIRED
+s26_gate_880,REPO_DEEP_CAPTURE,function,PAPER_880,Sum e^(-SSq n/26)=19.60,19.601694348474755,whitepapers/PAPER_880,,et-expansion,,PAPER_880,,uqff_calculator.py,,,,WIRED
+e_plus_880,REPO_DEEP_CAPTURE,function,PAPER_880,E0 e^(kt+SSq t/26) S26 (F/F) master,,whitepapers/PAPER_880,,et-expansion,,PAPER_880,,uqff_calculator.py,,,,WIRED
+sigma_kozima_881,REPO_DEEP_CAPTURE,function,PAPER_881,sigma0 e^-(w-wSCm)2/2G2 pure-Gaussian (OMEGA_SCM peak),0.0001,whitepapers/PAPER_881,,et-engine,,PAPER_881,,uqff_calculator.py,,,,WIRED
+f_kozima_881,REPO_DEEP_CAPTURE,function,PAPER_881,n sigma v hbar w x E+ coupling,,whitepapers/PAPER_881,,et-engine,,PAPER_881,,uqff_calculator.py,,,,WIRED
+e_minus_883,REPO_DEEP_CAPTURE,function,PAPER_883,-E0 e^(kt+SSq t/26)S26(1-R) erosion engine,,whitepapers/PAPER_883,,et-engine,,PAPER_883,,uqff_calculator.py,,,,WIRED
+e_net_884,REPO_DEEP_CAPTURE,function,PAPER_884,E0 e^(...)S26(2R-1); E+ + E- = E_net IDENTITY 0.0 EXACT; zero at R=0.5 EXACT,0.0,whitepapers/PAPER_884,,et-engine,,PAPER_884,,uqff_calculator.py,,,,WIRED
+delta_phi_gw_885,REPO_DEEP_CAPTURE,function,PAPER_885,D_GW_EROSION*f_GW/f_orb with D=2/3 EXACT PRIMITIVE TIE (P2154),,whitepapers/PAPER_885,,et-engine,,PAPER_885,,uqff_calculator.py,,,,WIRED
+l_et_888,REPO_DEEP_CAPTURE,function,PAPER_888,E_net V S26 apex Lagrangian,,whitepapers/PAPER_888,,et-engine,,PAPER_888,,uqff_calculator.py,,,,WIRED
+lambda_888,REPO_DEEP_CAPTURE,function,PAPER_888,8piG 0.692 rho_crit/c2 = 1.098e-52 at rho_c=8.5e-27 (canonical 1.1e-52 landing),1.097765748826216e-52,whitepapers/PAPER_888,,et-engine,,PAPER_888,,uqff_calculator.py,,,,WIRED
+rho_scm_t_890,REPO_DEEP_CAPTURE,function,PAPER_890,rhoSCm S26 e^(kt+SSq t/26); ratio 0.1=F_TRZ LOCKED EXACT,,whitepapers/PAPER_890,,et-engine,,PAPER_890,,uqff_calculator.py,,,,WIRED
+e_net_scm_891,REPO_DEEP_CAPTURE,function,PAPER_891,rho_SCm(t)Vc2(2R-1) micro engine,,whitepapers/PAPER_891,,scm-phonon,,PAPER_891,,uqff_calculator.py,,,,WIRED
+phi_thz_893,REPO_DEEP_CAPTURE,function,PAPER_893,Phi0 gauss(w_SCm) S26 modulation; peak/S26=1 EXACT,,whitepapers/PAPER_893,,scm-phonon,,PAPER_893,,uqff_calculator.py,,,,WIRED
+l_scm_894,REPO_DEEP_CAPTURE,function,PAPER_894,rho V c2(2R-1)S26 SINGLE-V canonical (Flag-e REVISION applied),,whitepapers/PAPER_894,,scm-phonon,,PAPER_894,,uqff_calculator.py,,,,WIRED
+fwhm_896,REPO_DEEP_CAPTURE,function,PAPER_896,2G sqrt(2ln2)=0.4710 THz CANONICAL (P2154 Flag-d; papers 1.49 = AI drift corrected),0.4709640090061899,whitepapers/PAPER_896,,scm-phonon,,PAPER_896,,uqff_calculator.py,,,,WIRED
+l_phonon_898,REPO_DEEP_CAPTURE,function,PAPER_898,E V Phi S26 phonon Lagrangian,,whitepapers/PAPER_898,,scm-phonon,,PAPER_898,,uqff_calculator.py,,,,WIRED
+net_factor_899,REPO_DEEP_CAPTURE,function,PAPER_899,2R-1; R=0.5 phase transition EXACT,0.0,whitepapers/PAPER_899,,scm-phonon,,PAPER_899,,uqff_calculator.py,,,,WIRED
+w_kessence_900,REPO_DEEP_CAPTURE,function,PAPER_900,F/(2XF_X-F) Scherrer contrast,,whitepapers/PAPER_900,,kessence,,PAPER_900,,uqff_calculator.py,,,,WIRED
+cs2_kessence_900,REPO_DEEP_CAPTURE,function,PAPER_900,F_X/(F_X+2XF_XX)=1/(2n-1) EXACT (n=2 -> 1/3),0.3333333333333333,whitepapers/PAPER_900,,kessence,,PAPER_900,,uqff_calculator.py,,,,WIRED
+um_string_806,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_806,k B (rhoUA-rhoSCm) L = 9 rhoSCm tie EXACT (RECOVERED),,whitepapers/PAPER_806,,species-index,,PAPER_806,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+n_crack_806,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_806,log10(Eb/EUbi) shell-cracking species selector (RECOVERED),,whitepapers/PAPER_806,,species-index,,PAPER_806,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+e_flow_dna_808,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_808,E0 sin(2piz/3.4nm)e^-gt; 34.29 deg/base B-DNA match (RECOVERED),,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+t_end_808,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_808,"(10.38, 65.25)*13.8 = (143.2, 900.5) Gyr epochs EXACT (RECOVERED)",143.244,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+v_ratio_boyle_808,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_808,F_TRZ*SSq2/(1+SSq)=0.02069~1/48 THREE-PRIMITIVE TIE (RECOVERED),0.020694267515923567,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+rho_shell_808,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_808,rhoUA(1-e^-SSq n/26); shell(1)=1.537e-37 EXACT (RECOVERED),1.5374319579215597e-37,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+s_vacuum_808,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_808,log10(10(1-e^...)) entropy index (RECOVERED),,whitepapers/PAPER_808,,acp-cycle,,PAPER_808,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+fubi_13term_841,RULE7_DEEPSEARCH_RECOVERY,function,PAPER_841,13-term 9-sector variational sum with count guard (RECOVERED),,whitepapers/PAPER_841,,millennium-app,,PAPER_841,pass-2 deep mine 801-900,uqff_calculator.py,,,,WIRED
+a_EM_anchor_P801,SUPPORTING_ANCHOR,anchor,PAPER_801,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_801,,per-system,,PAPER_801,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P802,SUPPORTING_ANCHOR,anchor,PAPER_802,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_802,,per-system,,PAPER_802,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P803,SUPPORTING_ANCHOR,anchor,PAPER_803,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_803,,per-system,,PAPER_803,,,,,,ANCHOR_CAPTURED
+g_compressed_anchor_P803,SUPPORTING_ANCHOR,anchor,PAPER_803,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_803,,per-system,,PAPER_803,,,,,,ANCHOR_CAPTURED
+g_buoyancy_anchor_P803,SUPPORTING_ANCHOR,anchor,PAPER_803,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_803,,per-system,,PAPER_803,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P804,SUPPORTING_ANCHOR,anchor,PAPER_804,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_804,,per-system,,PAPER_804,,,,,,ANCHOR_CAPTURED
+a_EM_anchor_P805,SUPPORTING_ANCHOR,anchor,PAPER_805,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_805,,per-system,,PAPER_805,,,,,,ANCHOR_CAPTURED
+g_primary_anchor_P805,SUPPORTING_ANCHOR,anchor,PAPER_805,stated system anchor (deep-mine 801-900),1.053e-3,whitepapers/PAPER_805,,per-system,,PAPER_805,,,,,,ANCHOR_CAPTURED
+L_Sun_anchor_P827,SUPPORTING_ANCHOR,anchor,PAPER_827,stated system anchor (deep-mine 801-900),7.7e31,whitepapers/PAPER_827,,per-system,,PAPER_827,,,,,,ANCHOR_CAPTURED
+L_wind_anchor_P827,SUPPORTING_ANCHOR,anchor,PAPER_827,stated system anchor (deep-mine 801-900),1.5e36,whitepapers/PAPER_827,,per-system,,PAPER_827,,,,,,ANCHOR_CAPTURED
+F_LENR_anchor_P835,SUPPORTING_ANCHOR,anchor,PAPER_835,stated system anchor (deep-mine 801-900),1.56e36,whitepapers/PAPER_835,,per-system,,PAPER_835,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P843,SUPPORTING_ANCHOR,anchor,PAPER_843,stated system anchor (deep-mine 801-900),-8.31e211,whitepapers/PAPER_843,,per-system,,PAPER_843,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P844,SUPPORTING_ANCHOR,anchor,PAPER_844,stated system anchor (deep-mine 801-900),-2.09e212,whitepapers/PAPER_844,,per-system,,PAPER_844,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P845,SUPPORTING_ANCHOR,anchor,PAPER_845,stated system anchor (deep-mine 801-900),2.65e208,whitepapers/PAPER_845,,per-system,,PAPER_845,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P846,SUPPORTING_ANCHOR,anchor,PAPER_846,stated system anchor (deep-mine 801-900),-8.31e211,whitepapers/PAPER_846,,per-system,,PAPER_846,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P848,SUPPORTING_ANCHOR,anchor,PAPER_848,stated system anchor (deep-mine 801-900),-8.31e211,whitepapers/PAPER_848,,per-system,,PAPER_848,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P850,SUPPORTING_ANCHOR,anchor,PAPER_850,stated system anchor (deep-mine 801-900),-8.31e211,whitepapers/PAPER_850,,per-system,,PAPER_850,,,,,,ANCHOR_CAPTURED
+T_raw_anchor_P857,SUPPORTING_ANCHOR,anchor,PAPER_857,stated system anchor (deep-mine 801-900),1.01e37,whitepapers/PAPER_857,,per-system,,PAPER_857,,,,,,ANCHOR_CAPTURED
+T_scaled_anchor_P857,SUPPORTING_ANCHOR,anchor,PAPER_857,stated system anchor (deep-mine 801-900),1.424e6,whitepapers/PAPER_857,,per-system,,PAPER_857,,,,,,ANCHOR_CAPTURED
+F_U_g_anchor_P858,SUPPORTING_ANCHOR,anchor,PAPER_858,stated system anchor (deep-mine 801-900),2.43e-40,whitepapers/PAPER_858,,per-system,,PAPER_858,,,,,,ANCHOR_CAPTURED
+F_U_Bi_anchor_P858,SUPPORTING_ANCHOR,anchor,PAPER_858,stated system anchor (deep-mine 801-900),6.14e-32,whitepapers/PAPER_858,,per-system,,PAPER_858,,,,,,ANCHOR_CAPTURED
+E_bio_anchor_P867,SUPPORTING_ANCHOR,anchor,PAPER_867,stated system anchor (deep-mine 801-900),0.6e-6,whitepapers/PAPER_867,,per-system,,PAPER_867,,,,,,ANCHOR_CAPTURED

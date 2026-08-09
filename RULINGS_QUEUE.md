@@ -5858,3 +5858,5 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
 - 2026-08-07 RULING RECEIVED: Daniel commanded 'NEXT BATCH' after PAPER_500 audit delivery + dispatch-gap closure => milestone ruling AFFIRMATIVE, papers 501+ authorized. FULL STOP lifted.
 
 - 2026-08-08 NOTE: v0.360.0 ship prep - full checklist restored per Daniel (v0.359.0 under-updated); 4 open rulings still pending (Q-420a, Q-495a, Q-304a, Q-368a) now also mirrored in UNIFIED_REGISTRY_GAPS.csv.
+
+- 2026-08-08 NOTE: v0.361.0 ship prep (PAPER_900 point) - full checklist executed; dual-scope totals folded into README/SHIP_MESSAGE per Daniel; 4 open rulings unchanged (Q-420a/495a/304a/368a).

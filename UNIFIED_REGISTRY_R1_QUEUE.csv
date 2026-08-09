@@ -25,3 +25,6 @@ milestone_501_authorization,2026-08-07,CANONIZED,PAPER_500 FULL STOP lifted; 501
 muge_template_family,PAPER_701-800,ADOPT,charter template authorization applied: one parameterized family form + per-paper anchors,no,APPROVED (charter TEMPLATE AUTHORIZATION)
 variable_f_trz_capture,PAPER_777-793,ADOPT,activity-dependent f_TRZ (0.02-0.05) + warp 1.05 wired as paper content; canonical F_TRZ=0.1 preserved (Rule 2),no,captured-as-written
 supporting_anchor_bulk,2026-08-08,ADOPT,129 SUPPORTING_ANCHOR rows bulk-captured per Daniel supporting-information directive,no,RULED (Daniel: capture all supporting information)
+et_engine_identity,PAPER_884,ADOPT,E+ + E- = E_net verified algebraically exact in wired functions,no,identity-verified
+fwhm_drift_correction,PAPER_896,ADOPT,1.49 THz drift corrected to 0.4710 canonical per P2154 Flag-d pre-authorization,no,charter drift table
+dpm_null_identity,PAPER_877,ADOPT,U_i base (rho_SCm - rho_UA/10) null to machine epsilon wired + pinned,no,identity-verified

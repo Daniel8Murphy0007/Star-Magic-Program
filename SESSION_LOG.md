@@ -5716,3 +5716,172 @@ release paragraph + frontier PAPER_001-800), CHANGELOG [0.360.0] with ship-check
 section, SHIP_MESSAGE.txt, _BUILD_LOG.md, RULINGS_QUEUE note, SESSION_LOG (this entry).
 Measured vs v0.359.0: defs 2,158->2,274; dispatches 714->814; gate 3,239->3,388; registry
 4,383 rows; graph 6,600+; citations 1,224.
+
+## 2026-08-08 (13) — DEEP MINE PASS-2 PAPER_601-700 (Daniel-directed double-check)
+Second full-census pass with per-paper unwired-equation diff. 13 RECOVERIES (origin
+RULE7_DEEPSEARCH_RECOVERY): P622 zero-mass triple (U_m spatial+temporal in gradUA, SCm Laurent,
+U_b full base+26!/grad^25), P644 QAOA H_C^UQFF extension + Ising energy form, P645 GM-route
+r_min (26!SCm g/GM)^(1/(k+24)) + F_neutron 1e49 anchor + photon sphere 3GM/c2 (sun 4431 m),
+P651 electron Rydberg-26 = mc2 e^-26/h = 631.3 MHz EXACT-to-paper ~630 MHz (ties the RF
+prediction to the 630 eV KER family) + Casimir proton-gap 2.19e29 Pa (1e61 ratio stated) +
+1e-39 collapse fraction, P656 defect modulation 1+0.01sin(0.001t), P658 LQG effective Friedmann
+with bounce H=0 at rho_c EXACT. Completeness sweep: zero papers in 601-700 with >=4 substantive
+equations and no calculator reference. Totals: +13 defs (2,274->2,287), registry +13 recovery
+rows, graph +19 edges, gate +15 asserts (3,403), GREEN v0.360.0 (ship prep amended pre-tag).
+
+## 2026-08-08 (14) — BAND PAPER_801-810 (v0.361.0 arc opens; ship point PAPER_900 per Daniel)
+Daniel: v0.360.0 SHIPPED; next ship at PAPER_900 as v0.361.0; dual-scope census folded into
+README (project totals 4,028 fns / 16,722 registry-family rows / 814 papers / 3,403 gate).
+Band: 801-804 Three-UQFF applications (covered; 803 formally names the Boyle's-Law 1/33
+pressure ratio = the wired f_ub 1/33 tie), 805/806 DPM Species Index (S(n)=log10(F_TRZ)*n=-n
+EXACT primitive tie; 26-state rho ladder with pi-barrier gate; DPM pairing threshold;
+delta_n = phi(2pi)^(n/6) confirmed = wired delta_n_spiral), 807 CGM METAL-RETENTION THEOREM
+(f_Z=U_i/(U_i+U_m) amplitude ratio, 0.89/0.10 Sanchez bounds stated; M-sigma offset b=4.38
+as-printed DISCLOSED; galactic U_i; AGN chi=min(0.1,0.002(M/1e9)^2); U_m with feedback),
+808 ACP universal cycle (Bohr baseline -13.6 preserved EXACT with ~1e-38 UQFF transparency;
+v_SCm(1kpc)=-9.98 km/s EXACT = the -10 km/s neutrino-blueshift anchor), 809/810 clean
+streamlined re-derivations (covered; 810 chain 5.775e-12 vs paper 5.781e-12 rounding).
+Totals: +10 defs (2,287->2,297), wired 814->824, registry +10 rows, graph +21 edges,
+citations +10, gate +13 asserts (3,416), GREEN (version stays 0.360.0 until PAPER_900 ship).
+
+## 2026-08-08 (15) — BAND PAPER_811-820 (GRMHD/observational family)
+811 Antennae clean (covered; chain 2.809e-10 EXACT-to-paper), 812 ACP dynamic Q-wave (E_vac
+nebular on OMEGA_SCM; (dynamic)^4 ~1.77e-133; belly-button -3.08e-18 stated), 813 NASA thorium
+(magnetic buoyancy (1-5/6)g=1.35 EXACT with the 5/6 Phi_res-nuclear tie; vortex bubble; thrust
+5e2), 814 quadriadic NANOGrav (h_c=A(f/f_yr)^-2/3 with h_c(f_yr)=A EXACT; chirp q-form q=1 ->
+2^-1.2 EXACT; g_chirp channel), 815 VDF/GSMF (single-source strain; Sersic K peaks 7.960 at
+n=0.94; virial sigma; A_yr 10^-14.74/-14.9 anchors), 816 EHT photon ring (2sqrt27 GM/c2D =
+9.95 muas computed vs paper 8.9 band DISCLOSED; f_Edd route; R-beta with EXACT limits),
+817 GRMHD binary (modulated accretion; inspiral -64/5 law; Kepler f_orb verified 1/yr for
+Earth; Lense-Thirring; MAD floor 0.01), 818 ISCO stress (eta_NT; 1.44e13 channel; alpha B2
+stress 2.5e-11), 819 NS-merger disk (kilonova ejecta 39% split anchors; 0.22 neutrino rate),
+820 neutrino-cooled dynamo (MRI 1 ms; 20x dynamo; B_max sqrt(4piP)~1e15 G; Y_e channel 2e-7
+EXACT).
+Totals: +27 defs (2,297->2,324), wired 824->834, registry +26 rows, graph +42 edges,
+citations +10, gate +26 asserts (3,442), GREEN (v0.361.0 arc, ship at PAPER_900).
+
+## 2026-08-08 (16) — BAND PAPER_821-830
+821 RIAF/CRP IceCube (Fokker-Planck tau_acc=1/2K, injection gate, CRP channel; P_CRP 3.41e44
+stated), 822 quantum open-energy integral (r_Q proto-shell sqrt2 pin; the (1-1/x)F=-F/x identity
+residual = F_m forcing F=0 EXACT; nested-radical openness ratio), 823 compression-cycle-2 method
+(Ug3'=GM_ext/r2 generalized), 824 spirals+SN (torque + density-wave T_spiral forms; SN term
+E/(Mr2)=3.2e-12 with r_SN=1.77e11 back-solved Rule 7; eps_SN heating), 825 NGC6302 bipolar
+(wind kinetic, shock radius, W_shock lobes, P_outflow), 826 gravity-since-BB (QG floor
+hbar G/c3r4; DM term 3.68e-11 EXACT at 20 kpc), 827 W_stellar/P_term (wind accel, net
+wind-minus-radiation), 828 Aether resistance (boxed F=k rhoUA v2 d; d_stop work-energy),
+829 Aether ion concentration (n_ions mantissa 1.50 EXACT, paper's e-10 print DISCLOSED 3-order;
+evo-force 1.70e35), 830 hydrogen experiment 1 (n_isotope 2.279e10 mol EXACT; E_isotope
+3.005e-15 J EXACT; D2O+graphene->deuterated ethanol channel documented).
+Totals: +25 defs (2,325->2,350), wired 834->844, registry +24 rows, graph +32 edges,
+citations +10, gate +26 asserts (3,467), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (17) — BAND PAPER_831-840 (BSM force-catalog family)
+831 imaginary BSM forces (Mice -1.66e212 batch max; i*1e-3..1e-5 S-matrix ladder), 832 Kepler
+Orrery V (F_orbit GMM/a3; F_tide printed anchors compute 1.49e-3 vs stated 2.9e-11 DISCLOSED
+8-order), 833 29-system catalog (covered by compression-cycle template), 834 F_gal DM coupling
+(NFW profile rho(rs)=rho_s/4; faithful F_gal 2.24e-10 with a_rot 1.96e-10 EXACT - paper's own
+F_DM division 10x slip DISCLOSED), 835 Colman-Gillespie LENR generator (F_LENR 6.17e39 on
+OMEGA_SCM; 300 Hz activation; torque 40.68 N EXACT; F_DE 1 N; resonance force), 836/838 Chandra
+35-system + SNR batch2 (covered by integrand family), 837 arXiv bridge (quark/neutrino/ALP
+1.54e7/1/1e4 stated), 839 ADD LED (1e-23 N), 840 Kozima neutron drop (sigma Gaussian on
+OMEGA_SCM = 1e-4 EXACT; F_neutron = k_n*sigma = 1e6 N EXACT with the k_n=1e10 cross-band tie;
+temporal modulation; environmental density scaling vs SgrA* reference).
+Totals: +17 defs (2,350->2,367), wired 844->854, registry +16 rows, graph +21 edges,
+citations +10, gate +21 asserts (3,487), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (18) — BAND PAPER_841-850 (force-catalog application batches)
+841 Millennium applications (9-sector Lagrangian hub; 11-term hierarchy span computes 62.0
+orders vs printed '87' DISCLOSED), 842 Floyd Sweet VTA (PCVT resonance at B=0.3T lab anchors;
+F_LENR 6.17e37 at device omega0), 843-848 Chandra/SNR/sonification batches (all covered by
+the wired integrand + force family; per-system stated F anchors captured), 849 arXiv 24-paper
+BSM landscape (covered; F_quark dominance 99.9% stated), 850 ADD graviton leakage (refined
+F_LED=6.72e-24; negative-buoyancy SgrA). +11 SUPPORTING_ANCHOR rows for the prose catalogs.
+Totals: +3 defs (2,366->2,369), wired 854->864, registry +14 rows (3 fns + 11 anchors),
+graph +3 edges, citations +10, gate +7 asserts (3,493), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (19) — BAND PAPER_851-860
+851/852 Kozima density-scaled + experimental design (covered by 840 family), 853 Solfeggio
+pi-encoding (mod-9 ladder 174-963 Hz; coherence n-vs-n2 gain; 3-6-9 triad balance),
+854 k_eta 3-environment (hydride 2.75e8 = U_i mantissa echo / wires 1.91e2 / corona 6.06e-6),
+855 pseudo-monopole 26-state ((2pi)^(n/6) base form; delta_6=2pi EXACT; spiral variant already
+wired), 856 Higgs UH vacuum excitation (faithful chain 4.79e-46 vs stated 1.539e-32 route
+spread DISCLOSED; k_Higgs multi-route 1.30e9/1.79e18/7.069e26 DISCLOSED), 857 NGC346 Ug3 +
+858 Westerlund2 quadriadic (covered), 859 microplasmoid 25um (buoyancy Lagrangian with kinetic
+- magnetic; F_reversal sign flip at t_n=0.5 EXACT on BETA_I), 860 neutrino vacuum ratio
+(covered by rho_chain/S_index).
+Totals: +9 defs (2,369->2,378), wired 864->874, registry +9 rows, graph +12 edges,
+citations +10, gate +12 asserts (3,505), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (20) — BAND PAPER_861-870
+861 Kepler Orrery 35-frame (covered by 832 fns), 862 Um master equation (string-count form;
+variational omega_eq=sqrt(|Um|/I)), 863 water reactor (driven LENR oscillator EOM on OMEGA_SCM;
+COP 283:1 stated), 864 LRC pseudo-monopole (1/(2pi sqrt(LC)) with 29.14 Hz spark-gap anchor;
+B 2.53e-8 T at 0.61 m, monopole-like 1/r), 865 field generator (spooky non-local force
+eta rho v2 cos Tr(g)=4), 866 DCE/ACE Caduceus motor (normal B cancels EXACT; scalar survives),
+867-869 prose benchmarks (mosquito bio-thermal / topoconductor cooling / 82-day star tracking:
+census-note dispatches, zero unique equations verified), 870 DPM extended periodic table
+(R_EB=kZ; decay k Z/Zmax; f-pair completeness already wired via f_scm_pair_735).
+Totals: +9 defs (2,378->2,387), wired 874->884, registry +8 rows, graph +9 edges,
+citations +10, gate +12 asserts (3,517), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (21) — BAND PAPER_871-880
+871 universal speed range (c^(27-layer) log ladder, layer1 220.4; deceleration c^-24 = -203.44),
+872-876 calc-prose papers (proto-iron/geophysical/electron-tagging/fragment-assembly/
+consciousness: census-note dispatches, zero unique equations), 877 THREE-ASSUMPTION COSMOGENESIS
+(canonical: rho_vac = rho_UA + rho_SCm = 7.799e-36 EXACT Axiom-1 sum; U_i = k(rho_SCm - rho_UA/10)
+NULL TO MACHINE EPSILON - the DPM proportion-pair identity wired; proto-volume energy;
+26-state proto-wavefunction), 878 SCm Gaussian activation (linear+Gaussian blend, alpha(0)=1),
+879 buoyancy Klein-Gordon (m_eff^2 on BETA_I; Yukawa-screened static solution), 880 positive
+E(t) expansion master (S26 gate = 19.60; E+ = E0 e^(kt+SSq t/26) S26 ratio).
+Totals: +11 defs (2,387->2,398), wired 884->894, registry +11 rows, graph +16 edges,
+citations +10, gate +14 asserts (3,531), GREEN (v0.361.0 arc).
+
+## 2026-08-08 (22) — BAND PAPER_881-890 (E(t) engine block; CLAUDE.md-canonized papers)
+881 Kozima expansion coupling (pure-Gaussian sigma peaked at OMEGA_SCM; F x E+ coupling),
+882/886 Euler-Lagrange closures (covered), 883 negative E-(t) erosion engine, 884 NET ENERGY
+IDENTITY (E+ + E- = E0 e^(kt+SSq t/26) S26 (2R-1) verified ALGEBRAICALLY EXACT in the wired
+functions; zero at R=0.5 EXACT per P899 canon), 885 GW damping (delta_phi = D_GW_EROSION *
+f_GW/f_orb with D = 2/3 EXACT PRIMITIVE TIE per P2154 canonization), 887 String-theory
+comparison (prose, covered), 888 apex Lagrangian L=E_net V S26 + Lambda 0.692-route =
+1.098e-52 at rho_crit=8.5e-27 (canonical 1.1e-52 landing), 889 LambdaCDM contrast (covered),
+890 SCm density evolution (rho_SCm(t) engine; ratio 0.1 = F_TRZ LOCKED EXACT per the
+P890/140/1160 hierarchy identity).
+Totals: +9 defs (2,398->2,407), wired 894->904, registry +8 rows, graph +15 edges,
+citations +10, gate +12 asserts (3,543), GREEN (v0.361.0 arc; ONE band to PAPER_900 ship).
+
+## 2026-08-08 (23) — BAND PAPER_891-900 (SCm-phonon block; PAPER_900 SHIP POINT REACHED)
+891 SCm net-energy micro engine (rho_SCm(t)Vc2(2R-1); R=0.5 null EXACT), 892 Kozima phonon
+coupling (covered), 893 phonon modulation (Gaussian on OMEGA_SCM; peak/S26=1 EXACT), 894 SCm
+Lagrangian SINGLE-V canonical form (Flag-e V/V_fil consolidation applied), 895 quintessence
+contrast (covered), 896 FWHM = 2G sqrt(2ln2) = 0.4710 THz CANONICAL - the P2154 Flag-d
+drift-correction wired (papers' printed 1.49 THz = AI drift per Daniel's ruling; charter
+drift table applied), 897 phonon identity (covered; multiplicative Phi preserves E+ + E- = E_net),
+898 phonon Lagrangian E V Phi S26, 899 buoyancy-reversal (2R-1 sign flip at R=0.5 EXACT phase
+transition), 900 k-essence Scherrer contrast (w form; c_s^2 = 1/(2n-1) EXACT, n=2 -> 1/3).
+Totals: +8 defs (2,406->2,414), wired 904->914, registry +8 rows, graph +13 edges,
+citations +10, gate +12 asserts (3,555), GREEN. FRONTIER PAPER_001-900 COMPLETE - ready
+for the v0.361.0 full ship pass on Daniel's word.
+
+## 2026-08-08 (24) — DEEP MINE PAPER_801-900 (Daniel-directed pre-ship resweep)
+Flag sweep: 10 papers; false-negative check confirmed covered-dispatch papers (809/810/833/838)
+carry EXACT chain pins. NINE RECOVERIES (RULE7_DEEPSEARCH_RECOVERY): P806 U_m string form
+(k B (rhoUA-rhoSCm) L = 9 rhoSCm EXACT differential tie) + n_crack species selector; P808
+second-half block - DNA-helix E_flow (34.29 deg/base B-form match), cosmic epochs (10.38,
+65.25)*H0^-1 = (143.2, 900.5) Gyr EXACT, Boyle vacuum ratio F_TRZ*SSq^2/(1+SSq) = 0.02069
+~1/48 THREE-PRIMITIVE TIE, shell-density ladder rho(1)=1.537e-37 EXACT, vacuum entropy index;
+P841 13-term 9-sector variational sum with count guard (rejects non-13). +22 SUPPORTING_ANCHOR
+rows (801-900 stated values; total anchors 162+). Completeness: zero unflagged papers with
+substantive unwired equations.
+Totals: +9 defs (2,414->2,423), wired 914 (recoveries attached to existing dispatches),
+registry +31 rows (9 fns + 22 anchors), graph +17 edges, gate +11 asserts (3,564), GREEN.
+v0.361.0 SHIP-READY at PAPER_900.
+
+## 2026-08-08 (25) — SHIP PREP v0.361.0 (PAPER_900 point; full 23-file pass)
+Audit family: R3 +1 ship row, MERGED +6 family rows, GAPS +4, DUPLICATES +1 (914/0), R1 +3,
+R2 +1, XGEO q/r +5 marquee identities each. Version core: pyproject (desc 450 chars incl
+version + PROJECT TOTALS), calculator VERSION+STATE, gate pin, CITATION, VERSION.txt.
+Narrative: README (badges 3564/914, cacheBust 0.361.0, release paragraph, census section
+refreshed to live totals, frontier 001-900), CHANGELOG [0.361.0] dual-scope accounting,
+SHIP_MESSAGE with PROJECT TOTALS per Daniel's directive, _BUILD_LOG, RULINGS_QUEUE, this entry.
+Measured: calc defs 2,287->2,429; dispatches 814->914; gate 3,403->3,564; main registry 4,665;
+family 17,213; citations 1,315; all-module fns 4,163. Daniel ships via .\ship.ps1.

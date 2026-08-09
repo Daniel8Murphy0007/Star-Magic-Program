@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.360.0", "uqff_calculator.VERSION = 0.360.0 (deep-capture 701-800 + full ship pass)")
+assert_that(C.VERSION == "0.361.0", "uqff_calculator.VERSION = 0.361.0 (deep-capture 801-900 complete)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -7282,6 +7282,400 @@ try:
     assert_that(_b81n >= 129, "supporting-anchor bulk capture >= 129 rows (got %s)" % _b81n)
 except Exception as _b81e:
     assert_that(False, "DEEP-MINE 701-800 guard crashed: %r" % _b81e)
+
+
+# =============================================================================
+# DEEP-MINE PASS-2 GUARD: PAPER_601-700 (13 recoveries)
+# =============================================================================
+try:
+    import math as _b82m
+    assert_that(abs(C.um_zero_mass_622(1.0, 2.0, 1.0, 1.0, 0.0) - 1.0) < 1e-12,
+                "P622R2 zero-mass U_m spatial branch at grad=1")
+    assert_that(C.um_zero_mass_622(0.0, 0.0, 0.0, 1.0, 1.0) == float(_b82m.factorial(26)),
+                "P622R2 temporal branch 26!*c26 at grad=1")
+    assert_that(abs(C.scm_zero_mass_622(2.0, 1.0, 2.0, [1.0], 3.0) - 4.0) < 1e-12,
+                "P622R2 zero-mass SCm Laurent")
+    assert_that(abs(C.ub_zero_mass_full_622(1e-3, 31.6227766) - 0.0009683772234093856) < 1e-15,
+                "P622R2 full U_b at the sqrt(kappa/g) crossing")
+    assert_that(abs(C.h_c_uqff_644(1.0, 2.0) - 3.0) < 1e-12, "P644R2 QAOA cost extension")
+    assert_that(abs(C.ising_energy_644([1.0, -1.0], [1, 1], 0.5, [(0, 1)]) - 0.5) < 1e-12,
+                "P644R2 Ising energy h.s + J s s")
+    assert_that(C.r_min_gm_645(1e-3, 1.989e30) > 0, "P645R2 GM-route r_min positive")
+    assert_that(C.f_neutron_645_stated() == 1e49, "P645R2 F_neutron anchor")
+    assert_that(abs(C.r_photon_645(1.989e30) - 4430.990657096573) < 1e-6,
+                "P645R2 photon sphere sun 4431 m = 1.5 r_s")
+    assert_that(abs(C.f_rydberg26_electron_651() - 631275210.0139621) < 1,
+                "P651R2 electron Rydberg-26 = 631.3 MHz EXACT-to-paper ~630 MHz (KER-family tie)")
+    assert_that(abs(C.p_casimir_651(8.775e-15) - 2.1927891158152445e+29) < 1e17,
+                "P651R2 Casimir pressure at proton gap 2.19e29 Pa")
+    assert_that(C.vac_fraction_651_stated() == 1e-39, "P651R2 1e-39 collapse fraction")
+    assert_that(abs(C.defect_mod_656(0.0) - 1.0) < 1e-12 and C.defect_mod_656(1570.8) <= 1.01,
+                "P656R2 defect modulation bounds")
+    assert_that(abs(C.h2_lqg_658(1.0, 1.0, 1.0)) < 1e-12,
+                "P658R2 LQG Friedmann bounce H = 0 at rho = rho_c EXACT")
+except Exception as _b82e:
+    assert_that(False, "DEEP-MINE PASS-2 601-700 guard crashed: %r" % _b82e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_801-810
+# =============================================================================
+try:
+    import math as _b83m
+    assert_that(abs(C.s_index_806(26) + 26.0) < 1e-12,
+                "P805/806 Species Index = log10(F_TRZ)*n = -26 at galactic scale EXACT")
+    assert_that(abs(C.rho_chain_806(0, _b83m.pi) - C.RHO_UA) < 1e-48, "P806 ladder base n=0")
+    assert_that(C.dpm_formation_806(2.0, 1.0) and not C.dpm_formation_806(0.5, 1.0),
+                "P806 DPM pairing gate")
+    assert_that(abs(C.f_z_cgm_807(0.89, 0.11) - 0.89) < 1e-12,
+                "P807 CGM retention 0.89 (Sanchez under-massive bound)")
+    assert_that(abs(C.delta_m_bh_807(10 ** 4.38, 200.0)) < 1e-9,
+                "P807 M-sigma offset zero at printed relation (b=4.38 as-printed DISCLOSED)")
+    assert_that(abs(C.chi_agn_807(1e9) - 0.002) < 1e-15 and C.chi_agn_807(1e10) == 0.1,
+                "P807 AGN efficiency quadratic with 0.1 cap")
+    assert_that(C.u_m_agn_807(1e-5, 0.0, 0.0, 1e9) > 0, "P807 U_m AGN positive")
+    assert_that(abs(C.bohr_uqff_808(1) + 13.6) < 1e-9,
+                "P808 Bohr baseline -13.6 eV preserved EXACT (UQFF correction ~1e-38)")
+    assert_that(abs(C.v_scm_radial_808(1.0) + 9.98001998667333) < 1e-12,
+                "P808 v_SCm(1 kpc) = -9.98 km/s EXACT (the -10 km/s blueshift anchor)")
+    assert_that(abs(5.449e-12 * 1.0002863 * 0.96321 * 1.1 - 5.77503733895916e-12) < 1e-24,
+                "P810 Bubble Nebula chain 5.775e-12 (paper 5.781e-12 rounding)")
+    _b83wc = C.wired_count()
+    assert_that(_b83wc >= 824, "band 801-810: wired_count >= 824 (got %s)" % _b83wc)
+    for _b83n in range(801, 811):
+        assert_that('PAPER_%03d' % _b83n in C.DISPATCH, "band 801-810: PAPER_%03d dispatched" % _b83n)
+except Exception as _b83e:
+    assert_that(False, "BAND 801-810 guard crashed: %r" % _b83e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_811-820 (GRMHD/observational family)
+# =============================================================================
+try:
+    import math as _b84m
+    assert_that(abs(3.395e-10 * 1.02158 * 0.7362 * 1.1 - 2.808669633462e-10) < 1e-22,
+                "P811 Antennae chain 2.809e-10 (paper 2.811e-10 rounding)")
+    assert_that(C.dynamic4_812(1e-40) > 0 and C.ub_mi_812_stated() == -3.08e-18,
+                "P812 dynamic^4 + belly-button anchor")
+    assert_that(abs(C.mag_buoyancy_813() - 1.35) < 1e-9,
+                "P813 magnetic buoyancy (1-5/6)*8.1 = 1.35 EXACT (5/6 Phi_res nuclear tie)")
+    assert_that(abs(C.h_c_nanograv_814(3.17e-8) - 10 ** -14.74) < 1e-18,
+                "P814 NANOGrav h_c(f_yr) = A_yr EXACT")
+    assert_that(abs(C.chirp_mass_q_814(1.0, 1.0) - 2.0 ** -1.2) < 1e-12,
+                "P814 chirp q=1 -> 2^-1.2 EXACT")
+    assert_that(C.g_chirp_814(1e39, 1e-8, 1e20) > 0, "P814 chirp channel positive")
+    assert_that(abs(C.sersic_k_815(0.94) - 7.960211180124222) < 1e-12,
+                "P815 Sersic K peaks 7.960 at n = 0.94")
+    assert_that(C.h_s_source_815(1e39, 1e-8, 1e25) > 0, "P815 single-source strain")
+    assert_that(abs(C.theta_ring_816(5.6e39, 8.96e23) / 4.848e-12 - 9.948877429868855) < 1e-6,
+                "P816 photon ring 9.95 muas computed (paper 8.9 - rounding band DISCLOSED)")
+    assert_that(abs(C.te_ti_816(0.0, 10.0, 1.0) - 1.0) < 1e-12
+                and abs(C.te_ti_816(1e6, 10.0, 1.0) - 10.0) < 1e-3,
+                "P816 R-beta limits: R_low at beta=0, R_high at beta->inf")
+    assert_that(abs(C.mdot_binary_mod_817(1.0, 0.5, 0.0, 0.0) - 1.5) < 1e-12, "P817 modulation")
+    assert_that(C.dr_dt_gw_817(1e30, 1e30, 1e9) < 0, "P817 inspiral decay negative")
+    assert_that(abs(C.f_orb_817(1.989e30, 1.496e11) * 3.156e7 - 1.0) < 2e-3,
+                "P817 Kepler check: Earth orbit = 1/yr")
+    assert_that(abs(C.l_poynt_mad_817(1.0) - 0.01 * C.C_OBSERVED ** 2) < 1e7, "P817 MAD floor")
+    assert_that(abs(C.eta_nt_818(0.94) - 0.06) < 1e-12, "P818 NT efficiency form")
+    assert_that(C.g_l1_eta_818(0.17, 1e18, 1e11) > 1e12, "P818 ISCO channel 1e13 scale")
+    assert_that(C.delta_g_stress_818(0.35, 1.0, 1e5) > 0, "P818 stress correction")
+    assert_that(C.g_l1_ej_819(0.013 * 1.989e30, 0.12 * C.C_OBSERVED, 1e5, 1e10) > 0,
+                "P819 kilonova ejecta channel")
+    assert_that(abs(C.gamma_nu_819(1.0, 1.0) - 0.22) < 1e-12, "P819 neutrino rate 0.22 base")
+    assert_that(abs(C.tau_mri_820(1e3) - 1e-3) < 1e-15, "P820 MRI 1 ms at Omega = 1e3")
+    assert_that(abs(C.b_max_820(1.0) - (4 * _b84m.pi) ** 0.5) < 1e-12, "P820 dynamo saturation")
+    assert_that(abs(C.g_l3_ye_820(1.0, 0.2, 1e6) - 2e-7) < 1e-12, "P820 Y_e channel 2e-7 EXACT")
+    _b84wc = C.wired_count()
+    assert_that(_b84wc >= 834, "band 811-820: wired_count >= 834 (got %s)" % _b84wc)
+    for _b84n in range(811, 821):
+        assert_that('PAPER_%03d' % _b84n in C.DISPATCH, "band 811-820: PAPER_%03d dispatched" % _b84n)
+except Exception as _b84e:
+    assert_that(False, "BAND 811-820 guard crashed: %r" % _b84e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_821-830
+# =============================================================================
+try:
+    import math as _b85m
+    assert_that(abs(C.tau_acc_821(0.5) - 1.0) < 1e-12, "P821 tau_acc = 1/2K")
+    assert_that(abs(C.ndot_inj_821(1.0, 0.5, -2.0) - 2.0) < 1e-12, "P821 injection max(1,beta)|dB/B|")
+    assert_that(C.g_l3_crp_821(1.0, 1.0, 1.0) == 1.0, "P821 CRP channel")
+    assert_that(abs(C.r_q_822(0.0, 1.0) - 2.0 ** 0.5) < 1e-12, "P822 r_Q(0,1) = sqrt(2)")
+    assert_that(abs(C.fm_open_integral_822(2.0, 3.0) - 2.0) < 1e-12,
+                "P822 open-integral identity residual = F_m (forces F_m = 0) EXACT")
+    assert_that(C.delta_q2_822(0.0, 1.0, 1.0) > 0, "P822 openness ratio positive")
+    assert_that(abs(C.ug3_ext_823(1.0, 1.0, G=1.0) - 1.0) < 1e-12, "P823 external term")
+    assert_that(abs(C.t_spiral_torque_824(1.0, 8.1e-16, 1.0, 1.0) - 8.1e-16) < 1e-28,
+                "P824 spiral torque with Omega_p = 25 km/s/kpc anchor")
+    assert_that(abs(C.sn_term_824(1e44, 1e33, 1.7678e11) - 3.2e-12) < 1e-15, "P824 SN term 3.2e-12 (back-solved r_SN = 1.77e11, Rule 7)")
+    assert_that(abs(C.p_wind_kinetic_825(2.0, 3.0) - 9.0) < 1e-12, "P825 wind kinetic")
+    assert_that(C.r_shock_825(6.3e14, 2e5, 1.67e-21, 1e4) > 0, "P825 shock radius")
+    assert_that(abs(C.w_shock_825(1.0, 1.0, 1.0, 1.0, _b85m.pi) - 1.0) < 1e-12,
+                "P825 full-lobe shock (1-cos(pi)) = 2 halves")
+    assert_that(abs(C.qg_term_826(1.0) - 1.054571817e-34 * C.G_OBSERVED / C.C_OBSERVED ** 3) < 1e-70,
+                "P826 QG floor hbar*G/c^3 at r = 1")
+    assert_that(abs(C.dm_term_826(2.0e41, 6.17e20) - 3.6815878578051894e-11) < 1e-23,
+                "P826 DM term 3.68e-11 EXACT at the 20-kpc anchor")
+    assert_that(abs(C.w_stellar_827(1.0, 1.0, 1.0, 1.0) - 1.0 / (4 * _b85m.pi)) < 1e-12,
+                "P827 stellar-wind acceleration")
+    assert_that(C.net_wind_rad_827(1.0, 1e9, 1.0, 1.0, 1.0, 1.0) > 0, "P827 net wind-rad")
+    assert_that(abs(C.f_aether_828(1.0, 1.0) - 1e-10 * C.RHO_UA) < 1e-56,
+                "P828 Aether resistance k*rho_UA (boxed)")
+    assert_that(abs(C.d_stop_828(2.0, 1.0, 2.0, 1.0) - 1.0) < 1e-12, "P828 stopping distance")
+    assert_that(abs(C.n_ions_829() - 1.500179852309515e-07) < 1e-19,
+                "P829 n_ions computes 1.50e-7 (paper prints 1.50e-10 - DISCLOSED; mantissa EXACT)")
+    assert_that(abs(C.f_ion_evo_829(1.0, 2.0, 0.5) - 2.0) < 1e-12, "P829 evo-force form")
+    assert_that(abs(C.n_isotope_830() - 22786790400.0) < 1,
+                "P830 n_isotope 2.279e10 mol EXACT-to-paper 2.28e10")
+    assert_that(abs(C.e_isotope_830() - 3.0046314700799998e-15) < 1e-27,
+                "P830 E_isotope 3.005e-15 J EXACT-to-paper 3.00e-15")
+    _b85wc = C.wired_count()
+    assert_that(_b85wc >= 844, "band 821-830: wired_count >= 844 (got %s)" % _b85wc)
+    for _b85n in range(821, 831):
+        assert_that('PAPER_%03d' % _b85n in C.DISPATCH, "band 821-830: PAPER_%03d dispatched" % _b85n)
+except Exception as _b85e:
+    assert_that(False, "BAND 821-830 guard crashed: %r" % _b85e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_831-840 (BSM force catalog)
+# =============================================================================
+try:
+    import math as _b86m
+    assert_that(C.f_ubi_mice_831_stated() == -1.66e212, "P831 Mice batch-max stated")
+    assert_that(C.f_orbit_832(2.98e25, 2.188e30, 1.496e10) > 0, "P832 Kepler orbit term")
+    assert_that(abs(C.f_tide_832(1.192e25, 2.188e30, 9.555e6, 1.496e9) - 0.0014837164290149177) < 1e-12,
+                "P832 tide computes 1.49e-3 (paper 2.9e-11 - DISCLOSED 8-order)")
+    assert_that(abs(C.rho_nfw_834(1.0, 4.0, 1.0) - 1.0) < 1e-12, "P834 NFW rho(r_s) = rho_s/4")
+    assert_that(abs(C.f_gal_834() - 2.2406559687914896e-10) < 1e-22,
+                "P834 F_gal faithful 2.24e-10 (paper 4.79e-10 via own 10x slip - DISCLOSED)")
+    assert_that(abs(2.2e5 ** 2 / 2.47e20 - 1.9595141700404855e-10) < 1e-22,
+                "P834 a_rot term 1.96e-10 EXACT-to-paper")
+    assert_that(abs(C.f_lenr_835() - 6.168502750680849e+39) < 1e27,
+                "P835 F_LENR 6.17e39 on OMEGA_SCM (band 1.56e36-6.16e39)")
+    assert_that(abs(C.f_act_835(0.0) - 1e-6) < 1e-18, "P835 activation peak 1e-6")
+    assert_that(abs(C.f_torque_835() - 40.68) < 1e-9, "P835 Colman-Gillespie 40.68 N EXACT")
+    assert_that(abs(C.f_de_835(1e30) - 1.0) < 1e-12, "P835 F_DE = 1 N anchor")
+    assert_that(C.f_res_835(1.6e-19, 1e-3, 1e-3, _b86m.pi / 2, 1.0) > 0, "P835 resonance force")
+    assert_that(C.bsm_forces_837_stated() == (1.54e7, 1.0, 1e4), "P837 BSM force triple")
+    assert_that(C.f_led_839_stated() == 1e-23, "P839 ADD LED force")
+    assert_that(abs(C.sigma_n_840(2 * _b86m.pi * C.OMEGA_SCM_HZ, 1e11) - 1e-4) < 1e-16,
+                "P840 sigma(w_LENR) = 1e-4 EXACT")
+    assert_that(abs(C.f_neutron_840(1e-4) - 1e6) < 1e-6,
+                "P840 F_neutron = 1e6 N EXACT (k_n = 1e10 cross-band tie)")
+    assert_that(abs(C.f_neutron_t_840(0.0, 0.5, 1.0, 1e-4) - 1.5e6) < 1e-3, "P840 modulation")
+    assert_that(abs(C.sigma_rho_840(1e-22) - 1e-4) < 1e-16, "P840 density scaling at reference")
+    _b86wc = C.wired_count()
+    assert_that(_b86wc >= 854, "band 831-840: wired_count >= 854 (got %s)" % _b86wc)
+    for _b86n in range(831, 841):
+        assert_that('PAPER_%03d' % _b86n in C.DISPATCH, "band 831-840: PAPER_%03d dispatched" % _b86n)
+except Exception as _b86e:
+    assert_that(False, "BAND 831-840 guard crashed: %r" % _b86e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_841-850 (force-catalog application batches)
+# =============================================================================
+try:
+    import math as _b87m
+    assert_that(abs(C.force_hierarchy_span_841() - 61.9622114391106) < 1e-9,
+                "P841 hierarchy span computes 62.0 orders (paper '87' - DISCLOSED)")
+    assert_that(abs(C.f_res_pcvt_842(_b87m.pi / 4) - 6.796710380765094e-20) < 1e-32,
+                "P842 PCVT resonance at 45 deg lab anchors")
+    assert_that(C.f_led_850_stated() == 6.72e-24, "P850 refined LED force")
+    assert_that(abs(C.f_lenr_835(omega0=1e-12) / 6.17e39 - 1.0) < 1e-2,
+                "P843-848 batch F_LENR = 6.17e39-family reuse (papers quote 6.17e37 at their omega0)")
+    _b87wc = C.wired_count()
+    assert_that(_b87wc >= 864, "band 841-850: wired_count >= 864 (got %s)" % _b87wc)
+    for _b87n in range(841, 851):
+        assert_that('PAPER_%03d' % _b87n in C.DISPATCH, "band 841-850: PAPER_%03d dispatched" % _b87n)
+except Exception as _b87e:
+    assert_that(False, "BAND 841-850 guard crashed: %r" % _b87e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_851-860
+# =============================================================================
+try:
+    import math as _b88m
+    assert_that(C.solfeggio_freq_853(0) == 174.0 and C.solfeggio_freq_853(9) == 174.0
+                and C.solfeggio_freq_853(4) == 528.0,
+                "P853 Solfeggio ladder mod-9 (528 at index 4)")
+    assert_that(C.e_coherent_853(4, 1.0) == (4.0, 16.0), "P853 coherence n vs n^2 gain")
+    assert_that(abs(C.beta_triad_853(3, 6, 9) - 1.0 / 3.0) < 1e-12, "P853 triad balance")
+    assert_that(C.k_eta_env_854('hydride') == 2.75e8 and C.k_eta_env_854('corona') == 6.06e-6,
+                "P854 k_eta 3-environment (2.75e8 = U_i mantissa echo)")
+    assert_that(abs(C.delta_n_base_855(6) - 2.0 * _b88m.pi) < 1e-12,
+                "P855 (2pi)^(n/6) base: delta_6 = 2pi EXACT")
+    assert_that(C.uh_856() > 0, "P856 UH positive (route spread DISCLOSED)")
+    assert_that(abs(C.k_higgs_856() - 1298701298.7012987) < 1,
+                "P856 k_Higgs eV-route 1.30e9 (stated 1.79e18/7.069e26 - DISCLOSED)")
+    assert_that(abs(C.f_reversal_859(1.0, 1.0, 1.0, 0.0) + C.BETA_I) < 1e-12
+                and abs(C.f_reversal_859(1.0, 1.0, 1.0, 1.0) - C.BETA_I) < 1e-12,
+                "P859 buoyancy reversal sign flip EXACT (BETA_I canonical)")
+    assert_that(C.l_plasmoid_859(0, 0, 0, 1, 0, 0, 0, 2.0, 1.0, 0.0) == 1.0,
+                "P859 Lagrangian kinetic branch")
+    _b88wc = C.wired_count()
+    assert_that(_b88wc >= 874, "band 851-860: wired_count >= 874 (got %s)" % _b88wc)
+    for _b88n in range(851, 861):
+        assert_that('PAPER_%03d' % _b88n in C.DISPATCH, "band 851-860: PAPER_%03d dispatched" % _b88n)
+except Exception as _b88e:
+    assert_that(False, "BAND 851-860 guard crashed: %r" % _b88e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_861-870
+# =============================================================================
+try:
+    import math as _b89m
+    assert_that(abs(C.um_master_862(1.0, 1.0, 1e9, 0.0, 2.0, 1.0, 1.0) - 2.0) < 1e-6,
+                "P862 Um master saturates with N_strings factor")
+    assert_that(abs(C.omega_eq_862(4.0, 1.0) - 2.0) < 1e-12, "P862 variational omega_eq")
+    assert_that(abs(C.phi_ddot_863(0.0, 1.0, 2.0) - 2.0) < 1e-12, "P863 driven-oscillator EOM")
+    assert_that(C.cop_283_863_stated() == 283.0, "P863 COP 283:1 stated")
+    _b89lc = (1.0 / (2.0 * _b89m.pi * 29.14)) ** 2
+    assert_that(abs(C.f_lrc_864(_b89lc, 1.0) - 29.14) < 1e-9,
+                "P864 LRC resonance 29.14 Hz (spark-gap anchor)")
+    assert_that(abs(C.f_aether_spooky_865(1.0, 1.0, 1.0, 0.0) - 4.0) < 1e-12,
+                "P865 spooky force Tr(g) = 4 Minkowski")
+    assert_that(C.b_net_caduceus_866(1.0, -1.0) == 0.0,
+                "P866 Caduceus normal-component cancellation EXACT")
+    assert_that(C.calc('PAPER_867')['value'].get('status') == 'NO_UNIQUE_EQUATIONS_CENSUS_VERIFIED',
+                "P867-869 prose benchmarks census-note dispatches")
+    assert_that(abs(C.r_eb_870(26) - 26.0) < 1e-12 and abs(C.lambda_decay_870(500) - 0.5) < 1e-12,
+                "P870 periodic-table barrier + decay ladder")
+    _b89wc = C.wired_count()
+    assert_that(_b89wc >= 884, "band 861-870: wired_count >= 884 (got %s)" % _b89wc)
+    for _b89n in range(861, 871):
+        assert_that('PAPER_%03d' % _b89n in C.DISPATCH, "band 861-870: PAPER_%03d dispatched" % _b89n)
+except Exception as _b89e:
+    assert_that(False, "BAND 861-870 guard crashed: %r" % _b89e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_871-880
+# =============================================================================
+try:
+    import math as _b90m
+    assert_that(abs(C.v_layer_log10_871(1) - 220.3973382761261) < 1e-9,
+                "P871 layer-1 speed c^26 log10 220.4 (paper 219.7 - rounding)")
+    assert_that(abs(C.decel_log10_871() + 203.44369687027026) < 1e-9,
+                "P871 photon deceleration c^-24 (paper -203.3)")
+    assert_that(abs(C.rho_vac_sum_877() - 7.799e-36) < 1e-48,
+                "P877 Axiom-1 rho_vac = rho_UA + rho_SCm = 7.799e-36 EXACT")
+    assert_that(abs(C.u_i_877(1.0, 1e12, 0.0)) < 1e-39,
+                "P877 U_i NULL to machine epsilon (DPM proportion-pair rho_UA/10 = rho_SCm)")
+    assert_that(C.u_vac_877(1.0) > 0, "P877 proto-volume energy")
+    assert_that(abs(C.alpha_blend_878(0.0, 1.0) - 1.0) < 1e-12
+                and C.alpha_blend_878(10.0, 1.0) < 1e-4,
+                "P878 activation blend: 1 at B=0, suppressed at high B")
+    assert_that(C.m_eff2_879(1.0, 1.0, 1.0, 1.0, 1.0) > 0, "P879 KG effective mass positive")
+    assert_that(abs(C.phi_static_879(1.0, 1.0, 1e9) - 1.0) < 1e-6,
+                "P879 Yukawa solution saturates J/m^2")
+    assert_that(abs(C.s26_gate_880() - 19.601694348474755) < 1e-12,
+                "P880 S26 expansion gate = 19.60")
+    assert_that(abs(C.e_plus_880(0.0) - C.s26_gate_880()) < 1e-12, "P880 E+(0) = S26 base")
+    assert_that(C.calc('PAPER_872')['value'].get('status') == 'NO_UNIQUE_EQUATIONS_CENSUS_VERIFIED',
+                "P872-876 calc-prose papers census-note dispatches")
+    _b90wc = C.wired_count()
+    assert_that(_b90wc >= 894, "band 871-880: wired_count >= 894 (got %s)" % _b90wc)
+    for _b90n in range(871, 881):
+        assert_that('PAPER_%03d' % _b90n in C.DISPATCH, "band 871-880: PAPER_%03d dispatched" % _b90n)
+except Exception as _b90e:
+    assert_that(False, "BAND 871-880 guard crashed: %r" % _b90e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_881-890 (E(t) engine block)
+# =============================================================================
+try:
+    import math as _b91m
+    assert_that(abs(C.sigma_kozima_881(2 * _b91m.pi * C.OMEGA_SCM_HZ, 1e11) - 1e-4) < 1e-16,
+                "P881 Kozima Gaussian peak sigma0 at OMEGA_SCM")
+    assert_that(C.f_kozima_881(1e20, 1e-4, 1e3, 1e13) > 0, "P881 coupled force positive")
+    assert_that(abs(C.e_plus_880(5.0, fubi_over_fu=0.7) + C.e_minus_883(5.0, 0.7)
+                - C.e_net_884(5.0, 0.7)) < 1e-12,
+                "P884 E+ + E- = E_net IDENTITY EXACT (engine algebra verified)")
+    assert_that(abs(C.e_net_884(1.0, 0.5)) < 1e-12,
+                "P883/884/899 net zero at R = 0.5 EXACT (phase transition)")
+    assert_that(abs(C.delta_phi_gw_885(3.0, 2.0) - 1.0) < 1e-12,
+                "P885 GW phase D_GW_EROSION = 2/3 EXACT primitive tie (P2154)")
+    assert_that(abs(C.l_et_888(1.0, 1.0) - C.s26_gate_880()) < 1e-12, "P888 apex Lagrangian")
+    assert_that(abs(C.lambda_888(8.5e-27) - 1.097765748826216e-52) < 1e-64,
+                "P888 Lambda 0.692-route = 1.098e-52 (canonical 1.1e-52 landing)")
+    assert_that(abs(C.rho_scm_t_890(0.0) - C.RHO_SCM * C.s26_gate_880()) < 1e-48
+                and abs(C.RHO_SCM / C.RHO_UA - 0.1) < 1e-15,
+                "P890 rho_SCm(0) base + ratio 0.1 = F_TRZ LOCKED EXACT")
+    _b91wc = C.wired_count()
+    assert_that(_b91wc >= 904, "band 881-890: wired_count >= 904 (got %s)" % _b91wc)
+    for _b91n in range(881, 891):
+        assert_that('PAPER_%03d' % _b91n in C.DISPATCH, "band 881-890: PAPER_%03d dispatched" % _b91n)
+except Exception as _b91e:
+    assert_that(False, "BAND 881-890 guard crashed: %r" % _b91e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_891-900 (SCm-phonon block; arc close at PAPER_900)
+# =============================================================================
+try:
+    import math as _b92m
+    assert_that(C.e_net_scm_891(0.0, 1.0, 1.0) > 0 and abs(C.e_net_scm_891(0.0, 1.0, 0.5)) < 1e-30,
+                "P891 micro engine sign + R = 0.5 null")
+    assert_that(abs(C.phi_thz_893(2 * _b92m.pi * C.OMEGA_SCM_HZ, 1e11) / C.s26_gate_880() - 1.0) < 1e-12,
+                "P893 phonon modulation peak/S26 = 1 EXACT at the carrier")
+    assert_that(abs(C.l_scm_894(1.0, 1.0, 1.0, c=1.0) - C.s26_gate_880()) < 1e-12,
+                "P894 single-V canonical Lagrangian (Flag-e revision applied)")
+    assert_that(abs(C.fwhm_896() / 1e12 - 0.4709640090061899) < 1e-12,
+                "P896 FWHM = 0.4710 THz CANONICAL (P2154 Flag-d; 1.49 drift corrected)")
+    assert_that(abs(C.l_phonon_898(1.0, 1.0, 1.0) - C.s26_gate_880()) < 1e-12, "P898 phonon L")
+    assert_that(C.net_factor_899(0.5) == 0.0 and C.net_factor_899(1.0) == 1.0,
+                "P899 sign-flip phase transition EXACT")
+    assert_that(abs(C.cs2_kessence_900(1.0, 1.0, 2) - 1.0 / 3.0) < 1e-12,
+                "P900 k-essence c_s^2 = 1/(2n-1) EXACT (n=2 -> 1/3)")
+    assert_that(C.w_kessence_900(1.0, 0.0, 1.0, 2) == 1.0 / 3.0, "P900 w at A=0 radiation-like")
+    _b92wc = C.wired_count()
+    assert_that(_b92wc >= 914, "band 891-900: wired_count >= 914 (got %s)" % _b92wc)
+    for _b92n in range(891, 901):
+        assert_that('PAPER_%03d' % _b92n in C.DISPATCH, "band 891-900: PAPER_%03d dispatched" % _b92n)
+except Exception as _b92e:
+    assert_that(False, "BAND 891-900 guard crashed: %r" % _b92e)
+
+
+# =============================================================================
+# DEEP-MINE GUARD: PAPER_801-900 RESWEEP (9 recoveries + anchors)
+# =============================================================================
+try:
+    import math as _b93m
+    assert_that(abs(C.um_string_806(1.0, 1.0, 1.0) / C.RHO_SCM - 9.0) < 1e-9,
+                "P806R U_m string differential = 9*rho_SCm EXACT primitive tie")
+    assert_that(abs(C.n_crack_806(100.0, 1.0) - 2.0) < 1e-12, "P806R shell-cracking log10")
+    assert_that(abs(C.fubi_13term_841([1.0] * 13) - 13.0) < 1e-12,
+                "P841R 13-term 9-sector sum with count guard")
+    _b93ok = False
+    try:
+        C.fubi_13term_841([1.0] * 12)
+    except ValueError:
+        _b93ok = True
+    assert_that(_b93ok, "P841R count guard rejects non-13 term lists")
+    assert_that(abs(_b93m.degrees(2 * _b93m.pi / 10.5) - 34.285714285714285) < 1e-9,
+                "P808R DNA twist 34.29 deg/base (B-form match claim)")
+    _b93t = C.t_end_808()
+    assert_that(abs(_b93t[0] - 143.244) < 1e-9 and abs(_b93t[1] - 900.45) < 1e-9,
+                "P808R cosmic epochs (143.2, 900.5) Gyr EXACT")
+    assert_that(abs(C.v_ratio_boyle_808() - 0.020694267515923567) < 1e-15,
+                "P808R Boyle vacuum ratio 0.02069 ~ 1/48 (three-primitive tie)")
+    assert_that(abs(C.rho_shell_808(1) - 1.5374319579215597e-37) < 1e-49,
+                "P808R shell density rho(1) = 1.537e-37 EXACT (paper 1.53e-37)")
+    assert_that(abs(C.s_vacuum_808(26) - _b93m.log10(10.0 * (1.0 - _b93m.exp(-C.SSQ)))) < 1e-12,
+                "P808R vacuum entropy index at n = 26")
+    import csv as _b93csv
+    _b93a = sum(1 for _r in _b93csv.DictReader(open('UNIFIED_REGISTRY.csv', newline='',
+                encoding='utf-8')) if _r['origin'] == 'SUPPORTING_ANCHOR')
+    assert_that(_b93a >= 162, "supporting anchors >= 162 after 801-900 sweep (got %s)" % _b93a)
+except Exception as _b93e:
+    assert_that(False, "DEEP-MINE 801-900 guard crashed: %r" % _b93e)
 
 # =============================================================================
 # REPORT

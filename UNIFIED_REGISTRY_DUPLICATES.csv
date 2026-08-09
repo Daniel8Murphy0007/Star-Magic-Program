@@ -21,3 +21,4 @@ v0357_audit,confirmation,"deep-capture 301-400: 0 duplicate quantities across 3,
 v0358_audit,confirmation,"deep-capture 401-500: 0 duplicates across 3,764 rows; double-census verified"
 dispatch_registration,integrity,"814 registrations, 0 duplicate @_register keys verified 2026-08-08 (v0.360.0 prep)"
 fingerprint_1053,equation,"1.053e-2 = qvB/mp*11e-12 defined ONCE (f_em_732); P705/708/709/710/737/767/786-800 all reuse (source identified, no duplication)"
+dispatch_registration,integrity,"914 registrations, 0 duplicate @_register keys verified 2026-08-08 (v0.361.0 prep)"
