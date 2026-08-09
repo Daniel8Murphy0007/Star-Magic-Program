@@ -28,3 +28,4 @@ supporting_anchor_bulk,2026-08-08,ADOPT,129 SUPPORTING_ANCHOR rows bulk-captured
 et_engine_identity,PAPER_884,ADOPT,E+ + E- = E_net verified algebraically exact in wired functions,no,identity-verified
 fwhm_drift_correction,PAPER_896,ADOPT,1.49 THz drift corrected to 0.4710 canonical per P2154 Flag-d pre-authorization,no,charter drift table
 dpm_null_identity,PAPER_877,ADOPT,U_i base (rho_SCm - rho_UA/10) null to machine epsilon wired + pinned,no,identity-verified
+Q-947a,PAPER_947 sigma fork,v0.362.0,PENDING,,

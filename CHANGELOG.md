@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.362.0 (2026-08-09)
+
+Deep-capture PAPER_901-1010 complete (11 bands + century deep-mine + marker-position census fix).
+
+- Bands 901-1010: 100+ new equation functions; dispatches 914 -> 1,024
+- YM mass gap 1.736 GeV EXACT via S26_eff = 8 = 2*D_PHYS (P971; PAPER_1318 lock reproduced)
+- S26 identities: S26_exp = s26_gate_880 EXACT (P983); Ramanujan series -> S_26^(3) 1.453162e26 at 0.0047% (P959)
+- Third-order family: W26(0) = (1+SSq)^26 EXACT; S26^(3) = 154030.8 (P999/1000 spine, reused P1001-1010)
+- Merger D_total(q) family intercept = 1-D_GW_EROSION EXACT (P934/943/944/945/965/992)
+- BCS/SCm chain: T_c, 1.764 ratio EXACT, Cooper-pair Lagrangian, LENR Delta^2 rate (P949-957)
+- Solar closure: axiom ratio 1.536 (0.014%), g_eff 108 m/s2, r_cross 1.706 R_sun (P980/983/994)
+- Census fix + deep-mine: 7 recoveries (Gompertz VDS, BSH sum, DVP prime ladder P907 p=113, sigma_n 1+SSq,
+  S_BH squared, B_phonon, Gamma_LENR); Rule 7 disclosures: t_flip pi-slip, sigma fork, 367.73/367.8
+- Project totals (measured): 4,264 fns / 19,483 registry-family rows / 1,024 papers / gate 3,716 green
+
 ## [UNSHIPPED — WORKING] — 2026-08-04 — EQUATION-LIBRARY ARCHITECTURE + PAPER_001-003 FULL-CAPTURE REWIRE
 
 > **Not shipped.** Full-corpus rewire in progress (all 300+ papers) before next release, per Daniel's directive.

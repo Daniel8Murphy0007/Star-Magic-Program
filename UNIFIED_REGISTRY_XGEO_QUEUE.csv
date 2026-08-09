@@ -1607,3 +1607,4 @@ d_gw_erosion_phase,gw,native-paper,primitive-stack,D_GW_EROSION*f_GW/f_orb,2/3 E
 fwhm_phonon,lenr,native-paper,primitive-stack,2*Gamma*sqrt(2ln2),0.4710 THz,P2154 canonical,PAPER_896,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 dpm_proportion_null,cosmogenesis,native-paper,primitive-stack,rho_SCm - rho_UA/10,~0 machine eps,Axiom-2 identity,PAPER_877,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 boyle_vacuum_ratio,vacuum,native-paper,primitive-stack,F_TRZ*SSq^2/(1+SSq),0.02069,three-primitive tie,PAPER_808,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
+ym_gap_2dphys,YM-massgap,native-paper,DPM-common-block,Delta_YM=Lambda_QCD*S26_eff,1.736 GeV,EXACT,PAPER_971,D_PHYS,XGEO_CAMPAIGN_ROUTED,S26_eff = 8 = 2*D_PHYS primitive-locked,PAPER_971

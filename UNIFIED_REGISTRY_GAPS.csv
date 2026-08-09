@@ -76,3 +76,5 @@ f_gal_dm_division,disclosed_conflict,P834 own F_DM division 10x slip (faithful 2
 f_tide_orrery,disclosed_conflict,P832 printed anchors compute 1.49e-3 vs stated 2.9e-11 (8-order)
 uh_856_route,disclosed_conflict,P856 UH route spread (faithful 4.79e-46 vs stated 1.539e-32)
 fwhm_1_49_drift,drift_corrected,P896 printed 1.49 THz = AI drift; 0.4710 canonical wired per P2154 Flag-d
+Q-947a,PAPER_947/1000,mass-gap sigmoid width fork sigma=0.1 vs back-solved 0.5
+Q-954a,PAPER_954,t_flip pi-factor slip 0.2 ps faithful vs 0.064 ps stated

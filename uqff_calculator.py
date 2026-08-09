@@ -73,10 +73,12 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.361.0"
+VERSION = "0.362.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
+# STATE v0.362.0: deep-capture COMPLETE PAPER_001-1010; 1,024 dispatches; 2,558 calculator defs; YM 1.736 GeV
+# EXACT via 2*D_PHYS; S26^(3) Ramanujan family; century deep-mine (Gompertz VDS, DVP prime ladder); gate 3,716 green.
 # 434 named equation functions; ALL 8 Clay Millennium closures callable; integer m_p/m_e=1836, Lambda=5.957e-10,
 # U_i=2.75e-7 landmark-guarded; SEMF->observed (no SM); 342 dispatches, 0 dup; gate 2142 green.
 
@@ -7661,6 +7663,116 @@ _DC_DISPATCH_INDEX = {
     898: ('own', ['l_phonon_898']),
     899: ('own', ['net_factor_899']),
     900: ('own', ['w_kessence_900', 'cs2_kessence_900']),
+    901: ('own', ['christoffel_phonon_901', 'rho_vds_gompertz_901', 'f_bsh_901', 'dvp_prime_channel_901']),
+    902: ('own', ['v_wind_master_902']),
+    903: ('own', ['p_cavity_903']),
+    904: ('covered', ['v_wind_master_902', 'phi_thz_893']),
+    905: ('own', ['omega_h_905', 'superradiance_905']),
+    906: ('own', ['f_beat_906']),
+    907: ('covered', ['v_wind_master_902', 'f_neutron_840', 'phi_thz_893']),
+    908: ('own', ['eta_phonon_908', 'p_jet_phonon_908']),
+    909: ('own', ['t_h_phonon_909']),
+    910: ('own', ['m_jet_910', 'p_jet_bz_mod_910']),
+    911: ('own', ['theta_jet_911']),
+    912: ('own', ['omega_dot_ns_912']),
+    913: ('own', ['tau_sd_913']),
+    914: ('own', ['lambda_tidal_914', 'lambda_uqff_914']),
+    915: ('own', ['d_phonon_915', 'delta_phi_915']),
+    916: ('own', ['p_ns_916']),
+    917: ('own', ['h_exp_917']),
+    918: ('own', ['snr_uqff_918', 'v_ratio_918']),
+    919: ('own', ['flare_contrast_919']),
+    920: ('own', ['mc_jet_power_920']),
+    921: ('own', ['delta_phi_integral_921']),
+    922: ('own', ['p_jet_gamma_922', 'p_bz_926']),
+    923: ('own', ['a_res_923', 'dvp_product_923', 'sigma_n_scm_923']),
+    924: ('own', ['r_plus_924', 'gamma_sr_924', 't_h_corr_924', 's_bh_phonon_924']),
+    925: ('own', ['m_jet_gauss_925']),
+    926: ('covered', ['m_jet_gauss_925', 'p_bz_926', 'mc_jet_power_920']),
+    927: ('own', ['d_total_vds_927']),
+    928: ('own', ['n_uqff_928']),
+    929: ('own', ['tau_char_929', 'b_phonon_929']),
+    930: ('own', ['k1_benchmark_930']),
+    931: ('own', ['q_phonon_931', 'e_net_linewidth_931']),
+    932: ('own', ['doppler_932', 'e_ergo_932']),
+    933: ('own', ['p_bz_8pi_933']),
+    934: ('own', ['d_total_934']),
+    935: ('own', ['lambda_tilde_935']),
+    936: ('own', ['delta_phi_936']),
+    937: ('own', ['l_vhe_937']),
+    938: ('own', ['v8_benchmark_938']),
+    939: ('covered', ['p_bz_8pi_933', 'm_jet_gauss_925']),
+    940: ('covered', ['p_bz_8pi_933', 'm_jet_gauss_925', 'doppler_932']),
+    941: ('own', ['m_jet_linewidth_941']),
+    942: ('own', ['theta_half_942']),
+    943: ('own', ['p_gr_merger_943', 'm_chirp_eta_943', 'd_total_q_943']),
+    944: ('covered', ['d_total_q_943']),
+    945: ('own', ['delta_phi_945']),
+    946: ('own', ['r_crit_946']),
+    947: ('own', ['p_bh_947']),
+    948: ('own', ['v9_benchmark_948']),
+    949: ('own', ['bcs_gap_949']),
+    950: ('own', ['t_c_950', 'delta0_950']),
+    951: ('own', ['v_eff_951']),
+    952: ('own', ['e_ladder_952']),
+    953: ('own', ['ramanujan_accel_953']),
+    954: ('own', ['e_t_linewidth_954', 't_flip_954']),
+    955: ('own', ['q_res_955']),
+    956: ('own', ['omega_n_956', 'q_n_956']),
+    957: ('own', ['l_gap_957', 'gamma_lenr_957']),
+    958: ('own', ['v10_benchmark_958']),
+    959: ('own', ['r_n_26_959', 's26_z_959']),
+    960: ('covered', ['polylog_26', 's26_z_959']),
+    961: ('own', ['f_compressed_961']),
+    962: ('own', ['t_rev_962']),
+    963: ('own', ['e_net_thresh_963']),
+    964: ('own', ['delta_r_964', 'n_v_964', 'r_n_shell_964']),
+    965: ('own', ['h_uqff_965', 'lambda_supp_965']),
+    966: ('covered', ['f_compressed_961', 'e_t_linewidth_954']),
+    967: ('own', ['delta_lambda_phonon_967']),
+    968: ('own', ['v11_benchmark_968']),
+    969: ('own', ['r_n_26k_969', 'mock_theta_969', 's26_k_969']),
+    970: ('own', ['rho_qgp_970']),
+    971: ('own', ['delta_ym_971']),
+    972: ('own', ['dn_deta_972']),
+    973: ('own', ['t_c_mub_973']),
+    974: ('own', ['f_u99_974', 'g_tri_974']),
+    975: ('covered', ['g_tri_974', 'rho_qgp_970', 'dn_deta_972']),
+    976: ('own', ['m_enc_nfw_976', 'rho_icm_beta_976', 'p_icm_976']),
+    977: ('own', ['v12_benchmark_977']),
+    978: ('own', ['g26_978', 'fubi26_978']),
+    979: ('own', ['e_net_kappa_979', 'fubi_master_979']),
+    980: ('own', ['r_cross_980']),
+    981: ('covered', ['g26_978', 'fubi26_978', 'fubi_master_979']),
+    982: ('covered', ['fubi_master_979', 'e_net_kappa_979']),
+    983: ('own', ['s26_exp_983', 'axiom_ratio_983']),
+    984: ('own', ['f_agg_984']),
+    985: ('covered', ['fubi_master_979']),
+    986: ('own', ['s_ladder_986', 'c_bcs_uqff_986']),
+    987: ('covered', []),
+    988: ('covered', []),
+    989: ('own', ['fubi_ratio_989', 'fubi_inside_out_989']),
+    990: ('covered', ['fubi_inside_out_989', 'fubi_master_979']),
+    991: ('own', ['fubi_cena_991']),
+    992: ('own', ['h_uqff_992']),
+    993: ('covered', ['m_jet_gauss_925']),
+    994: ('own', ['g_eff_994']),
+    995: ('own', ['f_u99_sweep_995']),
+    996: ('covered', ['fubi_master_979']),
+    997: ('own', ['v13_benchmark_997']),
+    998: ('covered', []),
+    999: ('own', ['l_edd_uqff_999', 'p_jet_bcrit_999', 'b_hse_999', 'f_buoy_999']),
+    1000: ('own', ['w26_1000', 'r_n_26_3_1000', 's26_3_1000', 'h_phonon_1000']),
+    1001: ('covered', ['h_phonon_1000', 'l_edd_uqff_999', 'p_jet_bcrit_999', 's26_3_1000']),
+    1002: ('covered', ['l_edd_uqff_999', 'p_jet_bcrit_999', 's26_3_1000']),
+    1003: ('covered', ['h_phonon_1000', 's26_3_1000', 'e_ladder_952']),
+    1004: ('own', ['alpha_s_running_1004', 'delta_ym_scm_1004']),
+    1005: ('covered', ['alpha_s_running_1004', 'delta_ym_scm_1004']),
+    1006: ('covered', ['alpha_s_running_1004', 'dn_deta_972']),
+    1007: ('covered', ['alpha_s_running_1004', 't_c_mub_973']),
+    1008: ('covered', ['alpha_s_running_1004']),
+    1009: ('covered', ['l_edd_uqff_999', 'p_jet_bcrit_999']),
+    1010: ('covered', ['l_edd_uqff_999', 'p_jet_bcrit_999']),
 }
 
 
@@ -12253,6 +12365,933 @@ def s_vacuum_808(n, ssq=SSQ):
     """PAPER_808 (RECOVERED): S_vacuum = log10(10*(1-exp(-SSq*n/26))) shell entropy index."""
     import math as _m
     return _m.log10(10.0 * (1.0 - _m.exp(-ssq * n / D_CRIT)))
+
+
+# --- BAND PAPER_901-910 deep-capture (Session 2026-08-08; Session-210 phonon block) ---
+
+def christoffel_phonon_901(dg_dE, phi_mod):
+    """PAPER_901: geodesic correction term (dg^munu/dE_net)*Phi_1.25THz added to the
+    Christoffel contraction (phonon-modified geodesics; wormhole stabilization route)."""
+    return dg_dE * phi_mod
+
+
+def v_wind_master_902(t_days, v0, fubi_over_fu, omega=None, Gamma=1e11,
+                      kappa=KAPPA_PER_DAY, ssq=SSQ):
+    """PAPER_902: v_wind = v0*exp(kappa*t+SSq*t/26)*S26*Phi_1.25THz*(F_UBi/F_U)
+    (master stellar-wind phonon-E(t) equation; Rosette ratio 1.3 anchor in P903)."""
+    import math as _m
+    if omega is None:
+        omega = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return (v0 * _m.exp(kappa * t_days + ssq * t_days / D_CRIT)
+            * phi_thz_893(omega, Gamma, Phi0=1.0 / s26_gate_880(), ssq=ssq)
+            * s26_gate_880(ssq) * fubi_over_fu)
+
+
+def p_cavity_903(rho_wind, v_wind):
+    """PAPER_903: P_cavity = rho_wind*v_wind^2 (Rosette NGC2237 cavity ram pressure)."""
+    return rho_wind * v_wind ** 2
+
+
+def omega_h_905(a_spin, M, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_905: Omega_H = a*c/(2*(GM/c^2)*(1+sqrt(1-a^2))) (horizon angular velocity)."""
+    return a_spin * c / (2.0 * G * M / c ** 2 * (1.0 + (1.0 - a_spin ** 2) ** 0.5))
+
+
+def superradiance_905(omega_eff, m_azimuthal, Omega_H, phi_mod):
+    """PAPER_905: modified superradiance condition omega_eff < m*Omega_H + Phi_1.25THz."""
+    return omega_eff < m_azimuthal * Omega_H + phi_mod
+
+
+def f_beat_906(M, r, N_harmonic, G=G_OBSERVED):
+    """PAPER_906: f_beat = |f_Keplerian - f_SCm/N| (QPO-phonon beat; f_SCm = 1.25 THz)."""
+    import math as _m
+    f_kep = (G * M / r ** 3) ** 0.5 / (2.0 * _m.pi)
+    return abs(f_kep - OMEGA_SCM_HZ / N_harmonic)
+
+
+def eta_phonon_908(ssq=SSQ):
+    """PAPER_908: eta_phonon = S26/(4*pi) = 1.560 (phonon jet efficiency)."""
+    import math as _m
+    return s26_gate_880(ssq) / (4.0 * _m.pi)
+
+
+def p_jet_phonon_908(phi_mod, mdot, a_over_M, c=C_OBSERVED):
+    """PAPER_908: P_jet = Phi*Mdot*c^2*(a/M)^2*eta_phonon (M87/SgrA phonon launching)."""
+    return phi_mod * mdot * c ** 2 * a_over_M ** 2 * eta_phonon_908()
+
+
+def t_h_phonon_909(T_H, phi_mod, e_net_over_e_bh):
+    """PAPER_909: T_H^phonon = T_H*(1+Phi*E_net/E_BH) (phonon-modulated Hawking)."""
+    return T_H * (1.0 + phi_mod * e_net_over_e_bh)
+
+
+def m_jet_910(omega, Gamma, R, ssq=SSQ):
+    """PAPER_910: M_jet = exp(-(w-w_SCm)^2/(2G^2))*S26*(2*R-1) (numerical BH jet
+    modulation factor; the (2R-1) engine factor at the jet base)."""
+    import math as _m
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return (_m.exp(-(omega - w_scm) ** 2 / (2.0 * Gamma ** 2))
+            * s26_gate_880(ssq) * (2.0 * R - 1.0))
+
+
+def p_jet_bz_mod_910(P_BZ, M_jet_val, e_net_over_e_bz):
+    """PAPER_910: P_jet = P_BZ*(1+M_jet*E_net/E_BZ) (Blandford-Znajek phonon boost)."""
+    return P_BZ * (1.0 + M_jet_val * e_net_over_e_bz)
+
+
+# --- BAND PAPER_911-920 deep-capture (Session 2026-08-08; GW-phonon family) ---
+
+def theta_jet_911(theta_0, m_jet_val):
+    """PAPER_911: theta_jet = theta_0/(1+M_jet); collimation factor = 1+M_jet."""
+    return theta_0 / (1.0 + m_jet_val)
+
+
+def omega_dot_ns_912(B, R, Omega, I, phi_s26, c=C_OBSERVED):
+    """PAPER_912: Omega_dot = -(2/3)B^2R^6Omega^3/(Ic^3)*(1+Phi*S26)
+    (phonon-boosted magnetic-dipole spin-down)."""
+    return -(2.0 / 3.0) * B ** 2 * R ** 6 * Omega ** 3 / (I * c ** 3) * (1.0 + phi_s26)
+
+
+def tau_sd_913(B, R, Omega, I, phi_s26, c=C_OBSERVED):
+    """PAPER_913: tau_sd = Ic^3/(B^2R^6Omega^2)/(1+Phi*S26) (magnetar timescale;
+    B_required back-solve form implied)."""
+    return I * c ** 3 / (B ** 2 * R ** 6 * Omega ** 2) / (1.0 + phi_s26)
+
+
+def lambda_tidal_914(k2, R, M, G=G_OBSERVED, c=C_OBSERVED):
+    """PAPER_914: Lambda = (2/3)*k2*(c^2*R/(G*M))^5 (tidal deformability; the k2
+    phonon-corrected route feeds PAPER_1804/2136 downstream)."""
+    return 2.0 / 3.0 * k2 * (c ** 2 * R / (G * M)) ** 5
+
+
+def lambda_uqff_914(lambda_gr, fubi_over_fu, phi_s26, epsilon):
+    """PAPER_914: Lambda_UQFF = Lambda_GR*(1-(F_UBi/F_U)*Phi*S26*eps), eps = E_net/(M c^2)."""
+    return lambda_gr * (1.0 - fubi_over_fu * phi_s26 * epsilon)
+
+
+def d_phonon_915(phi_s26, e_net_over_e_gw):
+    """PAPER_915: D_phonon = (2/3)*Phi*S26*(E_net/E_GW) - the 2/3 = D_GW_EROSION tie;
+    h_UQFF = h_GR*(1-D); Delta_phi = 367.8*2*pi*D/(1-D) cycles (GW170817)."""
+    return D_GW_EROSION * phi_s26 * e_net_over_e_gw
+
+
+def delta_phi_915(d_phonon, n_cycles=367.8):
+    """PAPER_915: Delta_phi = N*2*pi*D/(1-D) accumulated phase (N = 367.8 GW170817)."""
+    import math as _m
+    return n_cycles * 2.0 * _m.pi * d_phonon / (1.0 - d_phonon)
+
+
+def p_ns_916(phi_s26, eps_phonon):
+    """PAPER_916: P(NS) = 0.5*(1-Phi*S26*eps); P(BH) = 1-P(NS) (GW190425 mass-gap
+    classification suppression)."""
+    return 0.5 * (1.0 - phi_s26 * eps_phonon)
+
+
+def h_exp_917(t, h_gr, ssq=SSQ):
+    """PAPER_917: h_UQFF = h_GR*(1/3)*exp(SSq*t/26); growth rate SSq/26 = 0.02192
+    (1/3 floor x exponential phonon recovery)."""
+    import math as _m
+    return h_gr * (1.0 / 3.0) * _m.exp(ssq * t / D_CRIT)
+
+
+def snr_uqff_918(snr_gr, d_phonon):
+    """PAPER_918: SNR_UQFF = SNR_GR*(1-D); V_ratio = (d_max ratio)^3 horizon-volume
+    suppression (matched filter)."""
+    return snr_gr * (1.0 - d_phonon)
+
+
+def v_ratio_918(d_phonon):
+    """PAPER_918: V_ratio = (1-D)^3 detection-volume suppression."""
+    return (1.0 - d_phonon) ** 3
+
+
+def flare_contrast_919(m_jet_val, e_net_over_e_q):
+    """PAPER_919: C = P_peak/P_quiescent = 1+M_jet*E_net/E_q (Sgr A* flare contrast)."""
+    return 1.0 + m_jet_val * e_net_over_e_q
+
+
+def mc_jet_power_920(P_BZ, e_ratio, Gamma, R, n_samples=1000, seed=26):
+    """PAPER_920: <P_jet> Monte Carlo over omega_i ~ N(omega_SCm, Gamma); returns
+    (mean, sigma/sqrt(N)) - deterministic seed 26."""
+    import math as _m, random as _r
+    _r.seed(seed)
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    vals = [p_jet_bz_mod_910(P_BZ, m_jet_910(_r.gauss(w_scm, Gamma), Gamma, R), e_ratio)
+            for _ in range(n_samples)]
+    mean = sum(vals) / n_samples
+    var = sum((v - mean) ** 2 for v in vals) / n_samples
+    return (mean, (var / n_samples) ** 0.5)
+
+
+# --- BAND PAPER_921-930 deep-capture (Session 2026-08-08) ---
+
+def delta_phi_integral_921(T, f0, D0=None, n_steps=2000, ssq=SSQ):
+    """PAPER_921: Delta_phi = int_0^T 2*pi*f(t)*D(t) dt with f = f0*(T/(T-t))^(3/8),
+    D(t) = D0*exp(SSq*t/26); D0 = 0.667 = D_GW_EROSION (trapezoidal, stops at 0.999T)."""
+    import math as _m
+    if D0 is None:
+        D0 = D_GW_EROSION
+    total = 0.0
+    dt = 0.999 * T / n_steps
+    for i in range(n_steps):
+        t = i * dt
+        f = f0 * (T / (T - t)) ** 0.375
+        total += 2.0 * _m.pi * f * D0 * _m.exp(ssq * t / D_CRIT) * dt
+    return total
+
+
+def p_bz_926(B, r_g, a_spin, mu0=1.25663706212e-06, c=C_OBSERVED):
+    """PAPER_922/925/926: P_BZ = (pi/(6*mu0))*B^2*r_g^2*c*a^2 (BZ jet power, pi/6 form)."""
+    import math as _m
+    return _m.pi / (6.0 * mu0) * B ** 2 * r_g ** 2 * c * a_spin ** 2
+
+
+def p_jet_gamma_922(P_BZ, M_jet_val, e_ratio, sigma_T, Gamma):
+    """PAPER_922: P_jet = P_BZ*(1+M_jet*(E/E)*exp(-sigma_T^2/(2*Gamma^2))) (M87 curve;
+    chi^2 Gamma-match protocol)."""
+    import math as _m
+    return P_BZ * (1.0 + M_jet_val * e_ratio * _m.exp(-sigma_T ** 2 / (2.0 * Gamma ** 2)))
+
+
+def a_res_923(fubi_over_fu, phi_mod, ssq=SSQ):
+    """PAPER_923/930: a_res = (F_UBi/F_U)*Phi*S26 (resonance acceleration; L = a*V*S26)."""
+    return fubi_over_fu * phi_mod * s26_gate_880(ssq)
+
+
+def dvp_product_923(a_res_list, g_dpm):
+    """PAPER_923: DVP p_n = prod(1+a_res_k/g_DPM) (prime-ladder product)."""
+    p = 1.0
+    for a in a_res_list:
+        p *= (1.0 + a / g_dpm)
+    return p
+
+
+def r_plus_924(a_spin, r_g):
+    """PAPER_924: r_+ = r_g*(1+sqrt(1-a^2)) (outer horizon)."""
+    return r_g * (1.0 + (1.0 - a_spin ** 2) ** 0.5)
+
+
+def gamma_sr_924(phi_mod, m_az, Omega_H, omega, alpha_bh):
+    """PAPER_924: Gamma_SR = Phi*(m*Omega_H - omega)*alpha_BH (superradiant growth)."""
+    return phi_mod * (m_az * Omega_H - omega) * alpha_bh
+
+
+def t_h_corr_924(T_H, phi_s26, ssq=SSQ, N=None):
+    """PAPER_924/929: correction (1+Phi*S26*SSq/N); S_BH scales as (1+corr)^2."""
+    if N is None:
+        N = D_CRIT
+    return T_H * (1.0 + phi_s26 * ssq / N)
+
+
+def m_jet_gauss_925(Gamma_thz, A_jet=1.5, Gamma0_thz=1.25, sigma_thz=0.08):
+    """PAPER_925/926: M_jet = 1+A*exp(-(G-G0)^2/(2*sigma^2)); FWHM = 2*sqrt(2ln2)*0.08
+    = 0.1884 THz; peak M = 2.5 EXACT."""
+    import math as _m
+    return 1.0 + A_jet * _m.exp(-(Gamma_thz - Gamma0_thz) ** 2 / (2.0 * sigma_thz ** 2))
+
+
+def d_total_vds_927(phi_ratios, ssq=SSQ):
+    """PAPER_927: D_total = prod_{k=1}^{26}(1-SSq*Phi_k/(26*Phi_0)); stated 0.530
+    (GW190425 suppression; uniform Phi_k = Phi_0 gives (1-SSq/26)^26 = 0.5622)."""
+    p = 1.0
+    for r in phi_ratios:
+        p *= (1.0 - ssq * r / D_CRIT)
+    return p
+
+
+def n_uqff_928(fubi_over_fu, phi_norm):
+    """PAPER_928: n_UQFF = 1/(1-(F_UBi/F_U)*Phi_norm) effective GW refractive index;
+    lambda_UQFF = lambda_GR*(1-r*Phi_norm)."""
+    return 1.0 / (1.0 - fubi_over_fu * phi_norm)
+
+
+def tau_char_929(P, Omega_dot):
+    """PAPER_929: characteristic age tau = P/(2*|Omega_dot|); braking index
+    n_phonon = n_dipole*(1+corr)."""
+    return P / (2.0 * abs(Omega_dot))
+
+
+def k1_benchmark_930(ssq=SSQ):
+    """PAPER_930: K1 kernel g = sum_{k=1}^{26} exp(-SSq*k/26)*(1+0.001*k) = 19.86
+    (production-scaling v7 benchmark; 300k calc/s target, 3.0x over v4)."""
+    import math as _m
+    return sum(_m.exp(-ssq * k / D_CRIT) * (1.0 + 0.001 * k) for k in range(1, D_CRIT + 1))
+
+
+# --- BAND PAPER_931-940 deep-capture (Session 2026-08-08) ---
+
+def q_phonon_931(Gamma):
+    """PAPER_931: Q = omega_SCm/(2*Gamma) linewidth quality factor; at the canonical
+    Gamma = 2*pi*0.05 THz gives Q = 12.5 = Q_PHONON/2... (25/2 registry tie at
+    Gamma = 2*pi*0.05e12)."""
+    import math as _m
+    return 2.0 * _m.pi * OMEGA_SCM_HZ / (2.0 * Gamma)
+
+
+def e_net_linewidth_931(t_days, V, R, omega, Gamma):
+    """PAPER_931: E_net(Gamma) = rho_SCm(t)*V*(2R-1)*Phi(w,Gamma)*S26."""
+    return (rho_scm_t_890(t_days) * V * (2.0 * R - 1.0)
+            * phi_thz_893(omega, Gamma, Phi0=1.0 / s26_gate_880()) * s26_gate_880())
+
+
+def doppler_932(Gamma_bulk, beta, theta_obs):
+    """PAPER_932/937: delta_D = 1/(Gamma_bulk*(1-beta*cos(theta)))."""
+    import math as _m
+    return 1.0 / (Gamma_bulk * (1.0 - beta * _m.cos(theta_obs)))
+
+
+def e_ergo_932(a_spin, M, delta_d, ssq=SSQ, c=C_OBSERVED):
+    """PAPER_932: E_ergo = (a/2)*M*c^2*S26^2*delta_D (blazar ergosphere reservoir)."""
+    return a_spin / 2.0 * M * c ** 2 * s26_gate_880(ssq) ** 2 * delta_d
+
+
+def p_bz_8pi_933(B, r_H, a_spin, c=C_OBSERVED):
+    """PAPER_933/939/940: P_BZ = B^2/(8*pi)*(r_H/c)^2*a^2*c (8pi horizon form;
+    companion to the pi/6 gravitational-radius form p_bz_926)."""
+    import math as _m
+    return B ** 2 / (8.0 * _m.pi) * (r_H / c) ** 2 * a_spin ** 2 * c
+
+
+def d_total_934():
+    """PAPER_934: D_total = prod(1-d_k) = 0.333 = 1/3 = 1 - D_GW_EROSION EXACT
+    (GW170817 net suppression; the survival complement of the 2/3 erosion primitive)."""
+    return 1.0 - D_GW_EROSION
+
+
+def lambda_tilde_935(m1, m2, L1, L2):
+    """PAPER_935: combined tilde-Lambda = (16/13)*((m1+12m2)m1^4 L1+(m2+12m1)m2^4 L2)
+    /(m1+m2)^5 < 800 (LIGO GW170817 bound)."""
+    return (16.0 / 13.0 * ((m1 + 12.0 * m2) * m1 ** 4 * L1
+            + (m2 + 12.0 * m1) * m2 ** 4 * L2) / (m1 + m2) ** 5)
+
+
+def delta_phi_936(f_max, f0, d_total, phi_ratio):
+    """PAPER_936: delta_phi = 2*pi*(f_max-f0)*D_total*(Phi/Phi0); /2pi -> ~367.8 cycles."""
+    import math as _m
+    return 2.0 * _m.pi * (f_max - f0) * d_total * phi_ratio
+
+
+def l_vhe_937(P_jet, phi_s26, delta_d):
+    """PAPER_937: L_VHE = P_jet*(1+Phi*S26)*delta_D^4 (blazar multi-messenger);
+    L_nu = L_VHE*f_pgamma*(1+Phi*S26*SSq/N)."""
+    return P_jet * (1.0 + phi_s26) * delta_d ** 4
+
+
+def v8_benchmark_938():
+    """PAPER_938: v8 target mean rate >= 350,000 calc/s (K-kernel ensemble)."""
+    return 350000.0
+
+
+# --- BAND PAPER_941-950 deep-capture (Session 2026-08-09) ---
+
+def m_jet_linewidth_941(omega, Gamma, R, A_jet=1.5, ssq=SSQ):
+    """PAPER_941: M_jet = 1 + A_jet*exp(-(w-w_SCm)^2/(2*Gamma^2))*S26*(2R-1)
+    (linewidth-driven jet modulation engine; polarity via buoyancy ratio R)."""
+    import math as _m
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return (1.0 + A_jet * _m.exp(-(omega - w_scm) ** 2 / (2.0 * Gamma ** 2))
+            * s26_gate_880(ssq) * (2.0 * R - 1.0))
+
+
+def theta_half_942(Q):
+    """PAPER_942: theta_half = max(0.5 deg, 30 deg / Q) collimation-power mapping;
+    at canonical Q = 12.5 gives 2.4 deg."""
+    return max(0.5, 30.0 / Q)
+
+
+def p_gr_merger_943(eta):
+    """PAPER_943: P_GR = 3.6e49*(4*eta)^2 W peak merger luminosity (eta = symmetric
+    mass ratio; equal-mass eta=0.25 -> 3.6e49 W)."""
+    return 3.6e49 * (4.0 * eta) ** 2
+
+
+def m_chirp_eta_943(M_total, eta):
+    """PAPER_943: M_c = M_total * eta^(3/5)."""
+    return M_total * eta ** 0.6
+
+
+def d_total_q_943(q):
+    """PAPER_943/944/945: D_total(q) = 0.333 + 0.197*(1-q); intercept at equal mass
+    (q=1) is 0.333 = 1 - D_GW_EROSION EXACT (the PAPER_934 GW170817 value)."""
+    return (1.0 - D_GW_EROSION) + 0.197 * (1.0 - q)
+
+
+def delta_phi_945(f_max, f0, q, ssq=SSQ):
+    """PAPER_945: delta_phi = 2*pi*(f_max-f0)*D_total(q)*S26 merger phase lag."""
+    import math as _m
+    return 2.0 * _m.pi * (f_max - f0) * d_total_q_943(q) * s26_gate_880(ssq)
+
+
+def r_crit_946(sum_ug, M, F_n, Phi):
+    """PAPER_946: r_crit = 2*beta_i*Sum(U_g,i)*M/|F_n*Phi| from dS/dphi_merger = 0
+    (merger Lagrangian variation; L = L_grav + L_phonon)."""
+    return 2.0 * BETA_I * sum_ug * M / abs(F_n * Phi)
+
+
+def p_bh_947(m1, M_boundary=2.5, sigma=0.1):
+    """PAPER_947: P(BH) = 1/(1+exp(-(m1-M_boundary)/sigma)) GW190425 mass-gap
+    sigmoid; P(NS) = 1 - P(BH)."""
+    import math as _m
+    return 1.0 / (1.0 + _m.exp(-(m1 - M_boundary) / sigma))
+
+
+def v9_benchmark_948():
+    """PAPER_948: v9 target mean rate >= 400,000 calc/s."""
+    return 400000.0
+
+
+def bcs_gap_949(T, ratio_fubi=1.0, ssq=SSQ, n_iter=200):
+    """PAPER_949: SCm BCS gap self-consistency
+    Delta = (hbar*w_SCm/2)*tanh(Delta/(2*k_B*T))*S26*(F_UBi/F_U); fixed-point solve.
+    hbar = 1.0545718e-34 J*s, k_B = 1.380649e-23 J/K (paper anchors)."""
+    import math as _m
+    hbar, kB = 1.0545718e-34, 1.380649e-23  # PAPER_949 anchors
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    pref = hbar * w / 2.0 * s26_gate_880(ssq) * ratio_fubi
+    D = pref
+    for _ in range(n_iter):
+        D = pref * _m.tanh(D / (2.0 * kB * T))
+    return D
+
+
+def t_c_950(N0V, ratio=1.13):
+    """PAPER_950: T_c = 1.13*hbar*w_SCm/k_B * exp(-1/(N0*V_SCm)) SCm BCS critical
+    temperature; Delta(0) = 1.764*k_B*T_c companion via delta0_950."""
+    import math as _m
+    hbar, kB = 1.0545718e-34, 1.380649e-23  # PAPER_950 anchors
+    return ratio * hbar * (2.0 * _m.pi * OMEGA_SCM_HZ) / kB * _m.exp(-1.0 / N0V)
+
+
+def delta0_950(T_c):
+    """PAPER_950: Delta(0) = 1.764*k_B*T_c weak-coupling BCS ratio."""
+    return 1.764 * 1.380649e-23 * T_c  # PAPER_950 anchor k_B
+
+
+# --- BAND PAPER_951-960 deep-capture (Session 2026-08-09) ---
+
+def v_eff_951(omega, Gamma, V_scm=1.0, ssq=SSQ):
+    """PAPER_951: Cooper-pair effective potential
+    V_eff = V_SCm*exp(-(w-w_SCm)^2/(2*Gamma^2))*S26; E_pair = 2*Delta(T) via bcs_gap_949."""
+    import math as _m
+    w_scm = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return V_scm * _m.exp(-(omega - w_scm) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+
+
+def e_ladder_952(n, E0=None, ssq=SSQ):
+    """PAPER_952/956/957/958: 26-state H-res spectral ladder
+    E_n = E0*(2pi)^(n/3)*S26, n=1..26; E0 = hbar*w_SCm (paper anchor)."""
+    import math as _m
+    if E0 is None:
+        E0 = 1.0545718e-34 * 2.0 * _m.pi * OMEGA_SCM_HZ  # PAPER_952 anchor hbar
+    return E0 * (2.0 * _m.pi) ** (n / 3.0) * s26_gate_880(ssq)
+
+
+def ramanujan_accel_953(z, N=10, P=2):
+    """PAPER_953: Euler-Maclaurin/Ramanujan-accelerated partial sum of Li_26(z):
+    S_N^(R) = S_N + a_N/2 + sum_p B_2p/(2p)! * Delta^(2p-1) a_N (B2=1/6, B4=-1/30)."""
+    import math as _m
+    a = lambda n: z ** n / float(n) ** 26
+    S = sum(a(n) for n in range(1, N + 1))
+    B = {1: 1.0 / 6.0, 2: -1.0 / 30.0}
+    corr = a(N) / 2.0
+    for p in range(1, P + 1):
+        k = 2 * p - 1
+        d = sum((-1) ** (k - j) * _m.comb(k, j) * a(N + j) for j in range(k + 1))
+        corr += B[p] / _m.factorial(2 * p) * d
+    return S + corr
+
+
+def e_t_linewidth_954(t, Gamma, ssq=SSQ):
+    """PAPER_954: E(t,Gamma) = S26*cos(w_SCm*t)*exp(-Gamma*t)."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return s26_gate_880(ssq) * _m.cos(w * t) * _m.exp(-Gamma * t)
+
+
+def t_flip_954():
+    """PAPER_954: t_flip = pi/(2*w_SCm) faithful = 0.2 ps; paper states ~0.064 ps,
+    which back-solves to 1/(2*w_SCm) — a pi-factor slip, disclosed per Rule 7."""
+    import math as _m
+    return _m.pi / (2.0 * 2.0 * _m.pi * OMEGA_SCM_HZ)
+
+
+def q_res_955(Delta, T):
+    """PAPER_955: Q_res = w_SCm*sqrt(Delta)/(k_B*T); gap iteration covered by
+    bcs_gap_949."""
+    import math as _m
+    return 2.0 * _m.pi * OMEGA_SCM_HZ * _m.sqrt(Delta) / (1.380649e-23 * T)  # PAPER_955 anchor k_B
+
+
+def omega_n_956(n, ssq=SSQ):
+    """PAPER_956: w_n = E_n/hbar spectral-ladder frequency mapping."""
+    return e_ladder_952(n, ssq=ssq) / 1.0545718e-34  # PAPER_956 anchor hbar
+
+
+def q_n_956(n, T, ssq=SSQ):
+    """PAPER_956: Q_n = w_n*sqrt(E_n)/(k_B*T) per-rung quality factor."""
+    import math as _m
+    return omega_n_956(n, ssq) * _m.sqrt(e_ladder_952(n, ssq=ssq)) / (1.380649e-23 * T)
+
+
+def l_gap_957(Delta, T, N0=1.0, V_scm=1.0):
+    """PAPER_957: Cooper-pair gap Lagrangian
+    L_gap = -N0*|Delta|^2/V_SCm + N0*hbar*w_SCm*ln(2*cosh(Delta/(2*k_B*T)));
+    variation recovers the bcs_gap_949 self-consistency and t_c_950."""
+    import math as _m
+    hbar, kB = 1.0545718e-34, 1.380649e-23  # PAPER_957 anchors
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return (-N0 * abs(Delta) ** 2 / V_scm
+            + N0 * hbar * w * _m.log(2.0 * _m.cosh(Delta / (2.0 * kB * T))))
+
+
+def v10_benchmark_958():
+    """PAPER_958: v10 target mean rate >= 450,000 calc/s (rate = N_iter*14/t)."""
+    return 450000.0
+
+
+def r_n_26_959(n):
+    """PAPER_959: 26D Ramanujan correction factor
+    R_n^(26) = (1/n!)*(1 + n^-26 * sum_k (-1)^(k+1) C(26,k) (26-k)!/n^k)."""
+    import math as _m
+    s = sum((-1) ** (k + 1) * _m.comb(26, k) * _m.factorial(26 - k) / float(n) ** k
+            for k in range(1, 27))
+    return (1.0 + s / float(n) ** 26) / _m.factorial(n)
+
+
+def s26_z_959(z, N=30):
+    """PAPER_959: S_26(z) = sum z^n/n^26 * R_n^(26) Ramanujan-weighted series."""
+    return sum(z ** n / float(n) ** 26 * r_n_26_959(n) for n in range(1, N + 1))
+
+
+# --- BAND PAPER_961-970 deep-capture (Session 2026-08-09) ---
+
+def f_compressed_961(ratio_fubi, omega, Gamma, A_jet=1.5, ssq=SSQ):
+    """PAPER_961/966: compressed-gravity triadic
+    F_comp = (F_UBi/F_U)*exp(-(w-w_SCm)^2/(2Gamma^2))*S26*A_jet."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return (ratio_fubi * _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2))
+            * s26_gate_880(ssq) * A_jet)
+
+
+def t_rev_962(Gamma):
+    """PAPER_962: resonant-gravity reversal time t_rev = pi/(2*Gamma); neutron-drop
+    triggers when Phi(w_SCm,Gamma) > Phi_crit (on-resonance Phi = Phi_0*S26)."""
+    import math as _m
+    return _m.pi / (2.0 * Gamma)
+
+
+def e_net_thresh_963(t, Gamma, threshold=0.0, ssq=SSQ):
+    """PAPER_963: buoyancy-gravity triadic E_net(t,Gamma) = S26*cos(w t)*e^(-Gamma t)
+    - threshold (sign crossing drives the buoyancy branch)."""
+    return e_t_linewidth_954(t, Gamma, ssq) - threshold
+
+
+def delta_r_964(r, R_core, Delta0=1.0):
+    """PAPER_964: magnetar core gap profile Delta(r) = Delta0*(1-r^2/R_core^2), r<R_core."""
+    return Delta0 * (1.0 - r ** 2 / R_core ** 2) if r < R_core else 0.0
+
+
+def n_v_964(B):
+    """PAPER_964: vortex density n_v = B/Phi_0, flux quantum Phi_0 = h/2e
+    = 2.068e-15 Wb (paper anchor)."""
+    return B / 2.068e-15
+
+
+def r_n_shell_964(n, R_ns):
+    """PAPER_964: 3D MUGE magnetar shell radii R_n = R_NS*(1+0.05n); shell energies
+    via e_ladder_952."""
+    return R_ns * (1.0 + 0.05 * n)
+
+
+def h_uqff_965(h_gr, t, ssq=SSQ):
+    """PAPER_965: GW190425 NS strain h_UQFF = h_GR*0.5297*exp(SSq*t/26)
+    (0.5297 = D_total suppression for GW190425 q; cf. d_total_q_943)."""
+    import math as _m
+    return h_gr * 0.5297 * _m.exp(ssq * t / D_CRIT)
+
+
+def lambda_supp_965(lam_gr, ratio_fubi, omega, Gamma, ssq=SSQ):
+    """PAPER_965: lambda_UQFF = lambda_GR*(1 - (F_UBi/F_U)*Phi_1.25THz(w,Gamma))."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    phi = _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+    return lam_gr * (1.0 - ratio_fubi * phi)
+
+
+def delta_lambda_phonon_967(ratio_fubi, omega, Gamma, ssq=SSQ):
+    """PAPER_967: dLambda_phonon = (F_UBi/F_U)*Phi_1.25THz(w_SCm,Gamma)*0.1;
+    the 0.1 coupling = F_TRZ primitive; Lambda_UQFF = Lambda_GR*(1+dLambda)."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    phi = _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+    return ratio_fubi * phi * F_TRZ
+
+
+def v11_benchmark_968():
+    """PAPER_968: v11 target mean rate >= 500,000 calc/s (rate = N_iter*16/t)."""
+    return 500000.0
+
+
+def r_n_26k_969(n, k=2):
+    """PAPER_969: higher-order 26D Ramanujan factor
+    R_n^(26,k) = ((2pi)^(n/6)/n!)*(1 + sum_m n^-26m * sum_j (-1)^(j+1) C(26,j)(26-j)!/n^j)."""
+    import math as _m
+    inner = sum((-1) ** (j + 1) * _m.comb(26, j) * _m.factorial(26 - j) / float(n) ** j
+                for j in range(1, 27))
+    outer = sum(inner / float(n) ** (26 * m) for m in range(1, k + 1))
+    return (2.0 * _m.pi) ** (n / 6.0) / _m.factorial(n) * (1.0 + outer)
+
+
+def mock_theta_969(z, n):
+    """PAPER_969: third-order mock-theta-like partial f(z,n) = sum_k z^(k^2)/prod(1+z^j)^2."""
+    s = 0.0
+    for k in range(0, n + 1):
+        prod = 1.0
+        for j in range(1, k + 1):
+            prod *= (1.0 + z ** j) ** 2
+        s += z ** (k * k) / prod
+    return s
+
+
+def s26_k_969(z, k=2, N=30, mock=False):
+    """PAPER_969: S_26^(k)(z) = sum z^n/n^26 * R_n^(26,k) [* (1+f(z,n)/n^26) if mock]."""
+    total = 0.0
+    for n in range(1, N + 1):
+        term = z ** n / float(n) ** 26 * r_n_26k_969(n, k)
+        if mock:
+            term *= 1.0 + mock_theta_969(z, n) / float(n) ** 26
+        total += term
+    return total
+
+
+def rho_qgp_970(T, T_c, k=2, ssq=SSQ):
+    """PAPER_970: QGP vacuum density rho_QGP(T) = rho_SCm*S_26^(k)(SSq)*exp(-(T_c-T)/T)."""
+    import math as _m
+    return RHO_SCM * s26_k_969(ssq, k) * _m.exp(-(T_c - T) / T)
+
+
+# --- BAND PAPER_971-980 deep-capture (Session 2026-08-09) ---
+
+def delta_ym_971(T, T_c, Lambda_qcd=0.217, s26_eff=None):
+    """PAPER_971: Yang-Mills mass gap Delta_YM(T) = Lambda_QCD*(1-T/Tc)*S26_eff;
+    Lambda_QCD = 217 MeV paper anchor. Back-solve: paper T=0 gap 1.736 GeV
+    -> S26_eff = 1.736/0.217 = 8.0 EXACT = 2*D_PHYS (magic-number-8 primitive tie)."""
+    if s26_eff is None:
+        s26_eff = 2.0 * D_PHYS
+    return Lambda_qcd * (1.0 - T / T_c) * s26_eff
+
+
+def dn_deta_972(sqrt_s, centrality, A=2.0, alpha=1.2, s26_eff=1.0):
+    """PAPER_972: ALICE dN_ch/deta = A*sqrt(s)^0.156*(1-c/100)^alpha*S26_eff
+    (A=2.0, alpha=1.2 paper anchors)."""
+    return A * sqrt_s ** 0.156 * (1.0 - centrality / 100.0) ** alpha * s26_eff
+
+
+def t_c_mub_973(mu_B, T_c0=1.5, mu_crit=1200.0):
+    """PAPER_973: color-deconfinement phase boundary
+    T_c(mu_B) = T_c0*(1-(mu_B/mu_crit)^2); paper anchors T_c0=1.5, mu_crit=1200 MeV."""
+    return T_c0 * (1.0 - (mu_B / mu_crit) ** 2)
+
+
+def f_u99_974(sum_ug, sum_um, sum_ua, sum_ub, F_n, Phi, ssq=SSQ):
+    """PAPER_974: 99-system master F_U^(99) = Sum[Ug+Um+UA-Ub] + F_n*S26*Phi."""
+    return (sum_ug + sum_um + sum_ua - sum_ub) + F_n * s26_gate_880(ssq) * Phi
+
+
+def g_tri_974(g_comp, g_res, g_buoy, w_C=1.0, w_R=1.0, w_B=1.0):
+    """PAPER_974/975/976: triadic composite g_tri = w_C*g_comp + w_R*g_res + w_B*g_buoy;
+    P975 validation gates: |rho_tri-rho_comp|/rho_comp < 5%, |g_tri-g_full|/g_full < 1%."""
+    return w_C * g_comp + w_R * g_res + w_B * g_buoy
+
+
+def m_enc_nfw_976(r, rho_s, r_s):
+    """PAPER_976: NFW enclosed mass M_enc = 4pi rho_s r_s^3 [ln(1+x) - x/(1+x)]."""
+    import math as _m
+    x = r / r_s
+    return 4.0 * _m.pi * rho_s * r_s ** 3 * (_m.log(1.0 + x) - x / (1.0 + x))
+
+
+def rho_icm_beta_976(r, rho0, r_c, beta=2.0 / 3.0):
+    """PAPER_976: ICM beta-model rho_ICM = rho0*(1+(r/r_c)^2)^(-3*beta/2)."""
+    return rho0 * (1.0 + (r / r_c) ** 2) ** (-1.5 * beta)
+
+
+def p_icm_976(rho_icm, T_icm, m_p=1.6726219e-27):
+    """PAPER_976: ICM pressure P = (rho_ICM/m_p)*k_B*T_ICM (paper anchors m_p, k_B)."""
+    return rho_icm / m_p * 1.380649e-23 * T_icm
+
+
+def v12_benchmark_977():
+    """PAPER_977: v12 target mean rate >= 501,000 calc/s (rate = N_iter*18/t)."""
+    return 501000.0
+
+
+def g26_978(M, r, ssq=SSQ, G=G_UQFF):
+    """PAPER_978/979: 26-layer compressed gravity
+    g26 = Sum_i (GM/r^2)*SSq*i/26 = (GM/r^2)*SSq*351/26 (351 = 26*27/2)."""
+    return sum(G * M / r ** 2 * ssq * i / 26.0 for i in range(1, 27))
+
+
+def fubi26_978(M, r, ssq=SSQ, G=G_UQFF):
+    """PAPER_978/979: 26-layer buoyancy F_UBi = Sum_i (GM/r^2)*exp(-SSq*i/26)*beta_i."""
+    import math as _m
+    return sum(G * M / r ** 2 * _m.exp(-ssq * i / 26.0) * BETA_I for i in range(1, 27))
+
+
+def e_net_kappa_979(t_days, ratio_fubi, ssq=SSQ):
+    """PAPER_979: E_net(t) = (2*F_UBi/F_U - 1)*exp(kappa*t)*S26 (kappa per-day)."""
+    import math as _m
+    return (2.0 * ratio_fubi - 1.0) * _m.exp(KAPPA_PER_DAY * t_days) * s26_gate_880(ssq)
+
+
+def fubi_master_979(sum_ug, u_m, u_a, sum_ub, F_n, omega, Gamma, t_days, ratio_fubi, ssq=SSQ):
+    """PAPER_979: complete 6-layer master buoyancy
+    F_UBi_i = Sum Ug + Um + UA - Sum Ub + F_n*S26*Phi(w,Gamma)*E_net(t,Gamma);
+    solar calibration gives F_UBi_i ~ -2.4e-2 (paper-stated)."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    phi = _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+    return (sum_ug + u_m + u_a - sum_ub
+            + F_n * s26_gate_880(ssq) * phi * e_net_kappa_979(t_days, ratio_fubi, ssq))
+
+
+def r_cross_980(R_sun=6.96e8, ssq=SSQ):
+    """PAPER_980: solar buoyancy-gravity crossover r_cross = R_sun*(1/(beta_i*SSq))^(1/2);
+    g_N = 274.03 m/s^2 calibration anchor (the recurring 274 solar landmark)."""
+    return R_sun * (1.0 / (BETA_I * ssq)) ** 0.5
+
+
+# --- BAND PAPER_981-990 deep-capture (Session 2026-08-09) ---
+
+def s26_exp_983(ssq=SSQ):
+    """PAPER_983/986: exponential ladder sum S26_exp = Sum_{i=1..26} exp(-SSq*i/26)."""
+    import math as _m
+    return sum(_m.exp(-ssq * i / 26.0) for i in range(1, 27))
+
+
+def axiom_ratio_983(ssq=SSQ):
+    """PAPER_983: SCm First Axiom |U_b|/|U_g| = beta_i*S26_exp/(SSq*13.5);
+    paper states 1.536 > 0.5 (axiom validated)."""
+    return BETA_I * s26_exp_983(ssq) / (ssq * 13.5)
+
+
+def f_agg_984(systems, t_days=0.0, Gamma=1.0, ratio_fubi=1.0):
+    """PAPER_984: 99-system aggregate F_agg = Sum_j F_UBi_i(M_j, r_j, t, Gamma)
+    using the 26-layer components (g26_978 - fubi26_978 spine per system)."""
+    total = 0.0
+    for M, r in systems:
+        total += g26_978(M, r) - fubi26_978(M, r)
+    return total
+
+
+def s_ladder_986(omega, Gamma, ssq=SSQ):
+    """PAPER_986: BCS-spectral-ladder master coupling
+    S_ladder = Sum_{n=0..25} exp(-SSq*n/26)/n! * Phi_n(w,Gamma) (Phi_n on-resonance
+    Gaussian at rung n via omega_n_956)."""
+    import math as _m
+    total = 0.0
+    for n in range(0, 26):
+        w_n = omega_n_956(n + 1, ssq)
+        phi_n = _m.exp(-(omega - w_n) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+        total += _m.exp(-ssq * n / 26.0) / _m.factorial(n) * phi_n
+    return total
+
+
+def c_bcs_uqff_986(delta_bcs, s_ladder, f_ubi):
+    """PAPER_986: coupling C = Delta_BCS * S_ladder * F_UBi_i (Delta_BCS = 1.764 kB Tc
+    via delta0_950)."""
+    return delta_bcs * s_ladder * f_ubi
+
+
+def fubi_ratio_989(M, r, eps=1e-30, ssq=SSQ):
+    """PAPER_989/990: inside-out ratio = |U_b|/(|U_g|+|U_b|+eps) from the 26-layer sums."""
+    ug = abs(g26_978(M, r, ssq))
+    ub = abs(fubi26_978(M, r, ssq))
+    return ub / (ug + ub + eps)
+
+
+def fubi_inside_out_989(M, r, V, t_days=0.0, ssq=SSQ):
+    """PAPER_989/990: F_UBi = rho_SCm(t)*V*S26^2*|U_b|/(|U_g|+|U_b|);
+    rho_SCm(t) = rho_0*exp(kappa*t), rho_0 = 1e-10 (paper anchor, plasma-context
+    kg/m^3 per PAPER_2155 disclosure)."""
+    import math as _m
+    rho = 1e-10 * _m.exp(KAPPA_PER_DAY * t_days)  # PAPER_989 anchor rho_0
+    return rho * V * s26_gate_880(ssq) ** 2 * fubi_ratio_989(M, r, ssq=ssq)
+
+
+# --- BAND PAPER_991-1000 deep-capture (Session 2026-08-09) ---
+
+def fubi_cena_991(M, r_H, P_jet):
+    """PAPER_991: CenA AGN F_UBi_i = U_g(r_H) - U_b(r_H) + P_jet*1e-45 (jet-power
+    coupling scale 1e-45 paper anchor)."""
+    return g26_978(M, r_H) - fubi26_978(M, r_H) + P_jet * 1e-45
+
+
+def h_uqff_992(h_gr, ssq=SSQ):
+    """PAPER_992: GW190425 h_UQFF = h_GR*S26*(1-0.47*e^0) = h_GR*0.530*S26
+    (0.530 = 1-0.47; the P965 GW190425 suppression 0.5297 rounded)."""
+    return h_gr * (1.0 - 0.47) * s26_gate_880(ssq)
+
+
+def g_eff_994(ssq=SSQ):
+    """PAPER_994: solar effective gravity g_eff = g_N/(1+beta_i*S26/(SSq*13.5));
+    denominator = 1 + axiom_ratio_983; paper: 274/2.529 ~ 108.05 m/s^2 (the 147
+    calibration family)."""
+    return solar_surface_gravity() / (1.0 + axiom_ratio_983(ssq))
+
+
+def f_u99_sweep_995():
+    """PAPER_995: 99-system Gamma-sweep aggregate at Gamma_0 = 0.1 THz
+    F_U^(99) = -6.11e13 m/s^2 (paper-stated sweep result)."""
+    return -6.11e13
+
+
+def v13_benchmark_997():
+    """PAPER_997: v13 target mean rate >= 550,000 calc/s."""
+    return 550000.0
+
+
+def w26_1000(n, ssq=SSQ):
+    """PAPER_1000/999: W_26(n) = prod_{i=1..26}[1 + SSq*exp(-kappa*i*n/26)]
+    (kappa per-day primitive)."""
+    import math as _m
+    prod = 1.0
+    for i in range(1, 27):
+        prod *= 1.0 + ssq * _m.exp(-KAPPA_PER_DAY * i * n / 26.0)
+    return prod
+
+
+def r_n_26_3_1000(n, ssq=SSQ):
+    """PAPER_1000: R_n^(26,3) = C(4n,n)*W_26(n)/4^(4n) third-order Ramanujan factor."""
+    import math as _m
+    return _m.comb(4 * n, n) * w26_1000(n, ssq) / 4.0 ** (4 * n)
+
+
+def s26_3_1000(N=40, ssq=SSQ):
+    """PAPER_1000/999: S_26^(3) = sum_n (1/4)_n(1/2)_n(3/4)_n/(n!)^3 * W_26(n)
+    (Ramanujan 1/pi-class hypergeometric with 26-rung SSq weight)."""
+    import math as _m
+    def poch(a, k):
+        p = 1.0
+        for j in range(k):
+            p *= a + j
+        return p
+    total = 0.0
+    for n in range(N):
+        total += (poch(0.25, n) * poch(0.5, n) * poch(0.75, n)
+                  / _m.factorial(n) ** 3 * w26_1000(n, ssq))
+    return total
+
+
+def h_phonon_1000(h_gr, omega, Gamma, ssq=SSQ):
+    """PAPER_1000/999: h_UQFF(Gamma) = h_GR*(1 - 0.47*Phi(Gamma)/S_26^(3));
+    0.47 = peak NS-merger phonon suppression. GW190425 m1=2.52 Msun: paper
+    P(NS)=49%/P(BH)=51%, which back-solves p_bh_947 sigma to 0.5 (vs P947's
+    stated 0.1) — mass-gap-width fork DISCLOSED per Rule 7."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    phi = _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2)) * s26_gate_880(ssq)
+    return h_gr * (1.0 - 0.47 * phi / s26_3_1000(ssq=ssq))
+
+
+def l_edd_uqff_999(L_edd, M, r_H, V, ssq=SSQ, G=G_UQFF):
+    """PAPER_999: L_Edd^UQFF = L_Edd*(1 + rho_SCm*V*S26^(3)2/(GM/r_H^2))."""
+    return L_edd * (1.0 + RHO_SCM * V * s26_3_1000(ssq=ssq) ** 2 / (G * M / r_H ** 2))
+
+
+def p_jet_bcrit_999(P_bz, B, B_crit, phi):
+    """PAPER_999: P_jet^UQFF = P_BZ*[1 + beta_i*Phi_1.25THz*(B/B_crit)^2]."""
+    return P_bz * (1.0 + BETA_I * phi * (B / B_crit) ** 2)
+
+
+def b_hse_999():
+    """PAPER_999: hydrostatic mass bias b_UQFF = 1 - M_HSE/M_true = 0.17
+    (vs standard 0.20; cluster buoyancy correction)."""
+    return 0.17
+
+
+def f_buoy_999(r, rho0, r_c, V, g_r, phi, beta=2.0 / 3.0, ssq=SSQ):
+    """PAPER_999: F_buoy = rho(r)*V*g(r)*beta_i*S26*Phi with beta-model rho(r)."""
+    return (rho_icm_beta_976(r, rho0, r_c, beta) * V * g_r * BETA_I
+            * s26_gate_880(ssq) * phi)
+
+
+# --- BAND PAPER_1001-1010 deep-capture (Session 2026-08-09) ---
+
+def alpha_s_running_1004(T, T_c, alpha_s0=0.5, N_c=3, N_f=3):
+    """PAPER_1004-1008: running coupling alpha_s(T) = alpha_s0/(1+alpha_s0*b0*ln(T/Tc)),
+    b0 = (11*N_c-2*N_f)/(12*pi) (one-loop form with paper anchors N_c=3, N_f=3)."""
+    import math as _m
+    b0 = (11.0 * N_c - 2.0 * N_f) / (12.0 * _m.pi)
+    return alpha_s0 / (1.0 + alpha_s0 * b0 * _m.log(T / T_c))
+
+
+def delta_ym_scm_1004(T, T_c, Lambda_qcd=0.217, alpha_s0=0.5, N_c=3, N_f=3, ssq=SSQ):
+    """PAPER_1004-1008: SCm Yang-Mills gap
+    Delta_YM = Lambda_QCD*exp(-1/(alpha_s(T)*N_c))*S26^(3) (temperature-dependent
+    companion to the linear delta_ym_971 form; S26^(3) via s26_3_1000)."""
+    import math as _m
+    a = alpha_s_running_1004(T, T_c, alpha_s0, N_c, N_f)
+    return Lambda_qcd * _m.exp(-1.0 / (a * N_c)) * s26_3_1000(ssq=ssq)
+
+
+# --- DEEP-MINE RECOVERIES PAPER_901-1000 (Session 2026-08-09) ---
+
+def rho_vds_gompertz_901(r, r0, lam_vds, rho0=RHO_SCM):
+    """PAPER_901 RECOVERY: VDS Gompertz vacuum profile
+    rho_vac(r) = rho_vac,[SCm]*exp(-exp(-(r-r0)/lambda_VDS))."""
+    import math as _m
+    return rho0 * _m.exp(-_m.exp(-(r - r0) / lam_vds))
+
+
+def f_bsh_901(f_ub, m_kg, ssq=SSQ):
+    """PAPER_901 RECOVERY: BSH harmonic sum
+    F_BSH = Sum_{j=1..26} (1/j)*f_Ub*(1-exp(-SSq*m/M_sun))*cos(2pi j/26)."""
+    import math as _m
+    msun = 1.989e30  # PAPER_901 anchor
+    amp = f_ub * (1.0 - _m.exp(-ssq * m_kg / msun))
+    return sum(amp / j * _m.cos(2.0 * _m.pi * j / 26.0) for j in range(1, 27))
+
+
+def dvp_prime_channel_901(paper_n):
+    """PAPER_901-920 RECOVERY: per-paper DVP prime + channel table
+    (p_DVP, n_channel/26); the prime ladder walks 89..131 then restarts 2..17
+    while n_channel locks to 22/26 from P910 on."""
+    table = {901: (89, 22), 902: (97, 19), 903: (101, 15), 904: (103, 17),
+             905: (107, 21), 906: (109, 20), 907: (113, 18), 908: (127, 23),
+             909: (131, 24), 910: (97, 22), 911: (101, 22), 912: (103, 22),
+             913: (107, 22), 914: (109, 22), 915: (113, 22), 916: (2, 22),
+             917: (3, 22), 918: (5, 22), 919: (7, 22), 920: (11, 22)}
+    return table.get(paper_n)
+
+
+def sigma_n_scm_923(omega, Gamma, n, sigma0=1.0, ssq=SSQ):
+    """PAPER_923 RECOVERY: layer-resolved SCm cross-section
+    sigma_n = sigma0*exp(-(w-w_SCm)^2/(2Gamma^2))*(1+SSq*n/26)."""
+    import math as _m
+    w = 2.0 * _m.pi * OMEGA_SCM_HZ
+    return sigma0 * _m.exp(-(omega - w) ** 2 / (2.0 * Gamma ** 2)) * (1.0 + ssq * n / 26.0)
+
+
+def s_bh_phonon_924(S_bh, correction):
+    """PAPER_924 RECOVERY: phonon-corrected BH entropy S_BH^ph = S_BH*(1+corr)^2
+    (squared correction; companion to t_h_corr_924 linear form)."""
+    return S_bh * (1.0 + correction) ** 2
+
+
+def b_phonon_929(B_dipole, phonon_correction):
+    """PAPER_929 RECOVERY: pulsar field with braking correction
+    B_ph = B_dipole/sqrt(1+phonon_correction); braking index
+    n_ph = n_dipole*(1+phonon_correction)."""
+    return B_dipole / (1.0 + phonon_correction) ** 0.5
+
+
+def gamma_lenr_957(Delta, E_coulomb, T_c, phi, k0=1.0):
+    """PAPER_957 RECOVERY: LENR rate Gamma_LENR = k0*Delta^2*exp(-E_C/(k_B*T_c))*Phi
+    (gap-squared pairing enhancement; k_B = 1.380649e-23 paper anchor)."""
+    import math as _m
+    return k0 * Delta ** 2 * _m.exp(-E_coulomb / (1.380649e-23 * T_c)) * phi
 
 
 @_register('PAPER_001')

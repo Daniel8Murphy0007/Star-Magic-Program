@@ -6855,3 +6855,263 @@ primitive,SSQ,observable,s_vacuum_808,deep-mine 801-900
 primitive,D_CRIT,observable,s_vacuum_808,deep-mine 801-900
 observable,s_vacuum_808,paper,PAPER_808,deep-mine 801-900
 observable,fubi_13term_841,paper,PAPER_841,deep-mine 801-900
+observable,christoffel_phonon_901,paper,PAPER_901,band 901-910
+primitive,KAPPA_PER_DAY,observable,v_wind_master_902,band 901-910
+primitive,SSQ,observable,v_wind_master_902,band 901-910
+primitive,D_CRIT,observable,v_wind_master_902,band 901-910
+primitive,OMEGA_SCM_HZ,observable,v_wind_master_902,band 901-910
+observable,v_wind_master_902,paper,PAPER_902,band 901-910
+observable,p_cavity_903,paper,PAPER_903,band 901-910
+primitive,G_OBSERVED,observable,omega_h_905,band 901-910
+primitive,C_OBSERVED,observable,omega_h_905,band 901-910
+observable,omega_h_905,paper,PAPER_905,band 901-910
+observable,superradiance_905,paper,PAPER_905,band 901-910
+primitive,G_OBSERVED,observable,f_beat_906,band 901-910
+primitive,OMEGA_SCM_HZ,observable,f_beat_906,band 901-910
+observable,f_beat_906,paper,PAPER_906,band 901-910
+primitive,SSQ,observable,eta_phonon_908,band 901-910
+primitive,D_CRIT,observable,eta_phonon_908,band 901-910
+observable,eta_phonon_908,paper,PAPER_908,band 901-910
+primitive,C_OBSERVED,observable,p_jet_phonon_908,band 901-910
+observable,p_jet_phonon_908,paper,PAPER_908,band 901-910
+observable,t_h_phonon_909,paper,PAPER_909,band 901-910
+primitive,OMEGA_SCM_HZ,observable,m_jet_910,band 901-910
+primitive,SSQ,observable,m_jet_910,band 901-910
+observable,m_jet_910,paper,PAPER_910,band 901-910
+observable,p_jet_bz_mod_910,paper,PAPER_910,band 901-910
+observable,theta_jet_911,paper,PAPER_911,band 911-920
+primitive,C_OBSERVED,observable,omega_dot_ns_912,band 911-920
+observable,omega_dot_ns_912,paper,PAPER_912,band 911-920
+primitive,C_OBSERVED,observable,tau_sd_913,band 911-920
+observable,tau_sd_913,paper,PAPER_913,band 911-920
+primitive,G_OBSERVED,observable,lambda_tidal_914,band 911-920
+primitive,C_OBSERVED,observable,lambda_tidal_914,band 911-920
+observable,lambda_tidal_914,paper,PAPER_914,band 911-920
+observable,lambda_uqff_914,paper,PAPER_914,band 911-920
+primitive,D_GW_EROSION,observable,d_phonon_915,band 911-920
+observable,d_phonon_915,paper,PAPER_915,band 911-920
+observable,delta_phi_915,paper,PAPER_915,band 911-920
+observable,p_ns_916,paper,PAPER_916,band 911-920
+primitive,SSQ,observable,h_exp_917,band 911-920
+primitive,D_CRIT,observable,h_exp_917,band 911-920
+observable,h_exp_917,paper,PAPER_917,band 911-920
+observable,snr_uqff_918,paper,PAPER_918,band 911-920
+observable,v_ratio_918,paper,PAPER_918,band 911-920
+observable,flare_contrast_919,paper,PAPER_919,band 911-920
+primitive,OMEGA_SCM_HZ,observable,mc_jet_power_920,band 911-920
+primitive,D_CRIT,observable,mc_jet_power_920,band 911-920
+observable,mc_jet_power_920,paper,PAPER_920,band 911-920
+primitive,D_GW_EROSION,observable,delta_phi_integral_921,band 921-930
+primitive,SSQ,observable,delta_phi_integral_921,band 921-930
+primitive,D_CRIT,observable,delta_phi_integral_921,band 921-930
+observable,delta_phi_integral_921,paper,PAPER_921,band 921-930
+observable,p_jet_gamma_922,paper,PAPER_922,band 921-930
+primitive,C_OBSERVED,observable,p_bz_926,band 921-930
+observable,p_bz_926,paper,PAPER_922,band 921-930
+primitive,SSQ,observable,a_res_923,band 921-930
+primitive,D_CRIT,observable,a_res_923,band 921-930
+observable,a_res_923,paper,PAPER_923,band 921-930
+observable,dvp_product_923,paper,PAPER_923,band 921-930
+observable,r_plus_924,paper,PAPER_924,band 921-930
+observable,gamma_sr_924,paper,PAPER_924,band 921-930
+primitive,SSQ,observable,t_h_corr_924,band 921-930
+primitive,D_CRIT,observable,t_h_corr_924,band 921-930
+observable,t_h_corr_924,paper,PAPER_924,band 921-930
+observable,m_jet_gauss_925,paper,PAPER_925,band 921-930
+primitive,SSQ,observable,d_total_vds_927,band 921-930
+primitive,D_CRIT,observable,d_total_vds_927,band 921-930
+observable,d_total_vds_927,paper,PAPER_927,band 921-930
+observable,n_uqff_928,paper,PAPER_928,band 921-930
+observable,tau_char_929,paper,PAPER_929,band 921-930
+primitive,SSQ,observable,k1_benchmark_930,band 921-930
+primitive,D_CRIT,observable,k1_benchmark_930,band 921-930
+observable,k1_benchmark_930,paper,PAPER_930,band 921-930
+OMEGA_SCM_HZ,q_phonon_931,PAPER_931_940_BAND,,
+Q_PHONON,q_phonon_931,PAPER_931_940_BAND,,
+q_phonon_931,PAPER_931,PAPER_931_940_BAND,,
+RHO_SCM,e_net_linewidth_931,PAPER_931_940_BAND,,
+S_26,e_net_linewidth_931,PAPER_931_940_BAND,,
+e_net_linewidth_931,PAPER_931,PAPER_931_940_BAND,,
+doppler_932,PAPER_932,PAPER_931_940_BAND,,
+SSQ,e_ergo_932,PAPER_931_940_BAND,,
+C_OBSERVED,e_ergo_932,PAPER_931_940_BAND,,
+e_ergo_932,PAPER_932,PAPER_931_940_BAND,,
+C_OBSERVED,p_bz_8pi_933,PAPER_931_940_BAND,,
+p_bz_8pi_933,PAPER_933,PAPER_931_940_BAND,,
+D_GW_EROSION,d_total_934,PAPER_931_940_BAND,,
+d_total_934,PAPER_934,PAPER_931_940_BAND,,
+lambda_tilde_935,PAPER_935,PAPER_931_940_BAND,,
+delta_phi_936,PAPER_936,PAPER_931_940_BAND,,
+S_26,l_vhe_937,PAPER_931_940_BAND,,
+l_vhe_937,PAPER_937,PAPER_931_940_BAND,,
+v8_benchmark_938,PAPER_938,PAPER_931_940_BAND,,
+p_bz_8pi_933,PAPER_939,PAPER_931_940_BAND,,
+m_jet_gauss_925,PAPER_939,PAPER_931_940_BAND,,
+p_bz_8pi_933,PAPER_940,PAPER_931_940_BAND,,
+doppler_932,PAPER_940,PAPER_931_940_BAND,,
+OMEGA_SCM_HZ,m_jet_linewidth_941,PAPER_941_950_BAND,,
+S_26,m_jet_linewidth_941,PAPER_941_950_BAND,,
+m_jet_linewidth_941,PAPER_941,PAPER_941_950_BAND,,
+theta_half_942,PAPER_942,PAPER_941_950_BAND,,
+p_gr_merger_943,PAPER_943,PAPER_941_950_BAND,,
+m_chirp_eta_943,PAPER_943,PAPER_941_950_BAND,,
+D_GW_EROSION,d_total_q_943,PAPER_941_950_BAND,,
+d_total_q_943,PAPER_943,PAPER_941_950_BAND,,
+d_total_q_943,PAPER_944,PAPER_941_950_BAND,,
+S_26,delta_phi_945,PAPER_941_950_BAND,,
+delta_phi_945,PAPER_945,PAPER_941_950_BAND,,
+BETA_I,r_crit_946,PAPER_941_950_BAND,,
+r_crit_946,PAPER_946,PAPER_941_950_BAND,,
+p_bh_947,PAPER_947,PAPER_941_950_BAND,,
+v9_benchmark_948,PAPER_948,PAPER_941_950_BAND,,
+OMEGA_SCM_HZ,bcs_gap_949,PAPER_941_950_BAND,,
+S_26,bcs_gap_949,PAPER_941_950_BAND,,
+bcs_gap_949,PAPER_949,PAPER_941_950_BAND,,
+OMEGA_SCM_HZ,t_c_950,PAPER_941_950_BAND,,
+t_c_950,PAPER_950,PAPER_941_950_BAND,,
+delta0_950,PAPER_950,PAPER_941_950_BAND,,
+OMEGA_SCM_HZ,v_eff_951,PAPER_951_960_BAND,,
+S_26,v_eff_951,PAPER_951_960_BAND,,
+v_eff_951,PAPER_951,PAPER_951_960_BAND,,
+OMEGA_SCM_HZ,e_ladder_952,PAPER_951_960_BAND,,
+S_26,e_ladder_952,PAPER_951_960_BAND,,
+e_ladder_952,PAPER_952,PAPER_951_960_BAND,,
+SSQ,ramanujan_accel_953,PAPER_951_960_BAND,,
+ramanujan_accel_953,PAPER_953,PAPER_951_960_BAND,,
+OMEGA_SCM_HZ,e_t_linewidth_954,PAPER_951_960_BAND,,
+e_t_linewidth_954,PAPER_954,PAPER_951_960_BAND,,
+t_flip_954,PAPER_954,PAPER_951_960_BAND,,
+q_res_955,PAPER_955,PAPER_951_960_BAND,,
+omega_n_956,PAPER_956,PAPER_951_960_BAND,,
+q_n_956,PAPER_956,PAPER_951_960_BAND,,
+OMEGA_SCM_HZ,l_gap_957,PAPER_951_960_BAND,,
+l_gap_957,PAPER_957,PAPER_951_960_BAND,,
+v10_benchmark_958,PAPER_958,PAPER_951_960_BAND,,
+D_CRIT,r_n_26_959,PAPER_951_960_BAND,,
+r_n_26_959,PAPER_959,PAPER_951_960_BAND,,
+s26_z_959,PAPER_959,PAPER_951_960_BAND,,
+polylog_26,PAPER_960,PAPER_951_960_BAND,,
+s26_z_959,PAPER_960,PAPER_951_960_BAND,,
+S_26,f_compressed_961,PAPER_961_970_BAND,,
+OMEGA_SCM_HZ,f_compressed_961,PAPER_961_970_BAND,,
+f_compressed_961,PAPER_961,PAPER_961_970_BAND,,
+t_rev_962,PAPER_962,PAPER_961_970_BAND,,
+e_net_thresh_963,PAPER_963,PAPER_961_970_BAND,,
+delta_r_964,PAPER_964,PAPER_961_970_BAND,,
+n_v_964,PAPER_964,PAPER_961_970_BAND,,
+r_n_shell_964,PAPER_964,PAPER_961_970_BAND,,
+SSQ,h_uqff_965,PAPER_961_970_BAND,,
+D_CRIT,h_uqff_965,PAPER_961_970_BAND,,
+h_uqff_965,PAPER_965,PAPER_961_970_BAND,,
+lambda_supp_965,PAPER_965,PAPER_961_970_BAND,,
+f_compressed_961,PAPER_966,PAPER_961_970_BAND,,
+e_t_linewidth_954,PAPER_966,PAPER_961_970_BAND,,
+F_TRZ,delta_lambda_phonon_967,PAPER_961_970_BAND,,
+delta_lambda_phonon_967,PAPER_967,PAPER_961_970_BAND,,
+v11_benchmark_968,PAPER_968,PAPER_961_970_BAND,,
+D_CRIT,r_n_26k_969,PAPER_961_970_BAND,,
+r_n_26k_969,PAPER_969,PAPER_961_970_BAND,,
+mock_theta_969,PAPER_969,PAPER_961_970_BAND,,
+s26_k_969,PAPER_969,PAPER_961_970_BAND,,
+RHO_SCM,rho_qgp_970,PAPER_961_970_BAND,,
+rho_qgp_970,PAPER_970,PAPER_961_970_BAND,,
+D_PHYS,delta_ym_971,PAPER_971_980_BAND,,
+delta_ym_971,PAPER_971,PAPER_971_980_BAND,,
+dn_deta_972,PAPER_972,PAPER_971_980_BAND,,
+t_c_mub_973,PAPER_973,PAPER_971_980_BAND,,
+S_26,f_u99_974,PAPER_971_980_BAND,,
+f_u99_974,PAPER_974,PAPER_971_980_BAND,,
+g_tri_974,PAPER_974,PAPER_971_980_BAND,,
+g_tri_974,PAPER_975,PAPER_971_980_BAND,,
+rho_qgp_970,PAPER_975,PAPER_971_980_BAND,,
+dn_deta_972,PAPER_975,PAPER_971_980_BAND,,
+m_enc_nfw_976,PAPER_976,PAPER_971_980_BAND,,
+rho_icm_beta_976,PAPER_976,PAPER_971_980_BAND,,
+p_icm_976,PAPER_976,PAPER_971_980_BAND,,
+nfw_dark_matter_profile,PAPER_976,PAPER_971_980_BAND,,
+v12_benchmark_977,PAPER_977,PAPER_971_980_BAND,,
+G_UQFF,g26_978,PAPER_971_980_BAND,,
+SSQ,g26_978,PAPER_971_980_BAND,,
+g26_978,PAPER_978,PAPER_971_980_BAND,,
+BETA_I,fubi26_978,PAPER_971_980_BAND,,
+fubi26_978,PAPER_978,PAPER_971_980_BAND,,
+KAPPA_PER_DAY,e_net_kappa_979,PAPER_971_980_BAND,,
+e_net_kappa_979,PAPER_979,PAPER_971_980_BAND,,
+OMEGA_SCM_HZ,fubi_master_979,PAPER_971_980_BAND,,
+fubi_master_979,PAPER_979,PAPER_971_980_BAND,,
+BETA_I,r_cross_980,PAPER_971_980_BAND,,
+SSQ,r_cross_980,PAPER_971_980_BAND,,
+r_cross_980,PAPER_980,PAPER_971_980_BAND,,
+solar_surface_gravity,PAPER_980,PAPER_971_980_BAND,,
+SSQ,s26_exp_983,PAPER_981_990_BAND,,
+s26_exp_983,PAPER_983,PAPER_981_990_BAND,,
+BETA_I,axiom_ratio_983,PAPER_981_990_BAND,,
+axiom_ratio_983,PAPER_983,PAPER_981_990_BAND,,
+g26_978,PAPER_981,PAPER_981_990_BAND,,
+fubi26_978,PAPER_981,PAPER_981_990_BAND,,
+fubi_master_979,PAPER_981,PAPER_981_990_BAND,,
+fubi_master_979,PAPER_982,PAPER_981_990_BAND,,
+f_agg_984,PAPER_984,PAPER_981_990_BAND,,
+fubi_master_979,PAPER_985,PAPER_981_990_BAND,,
+s_ladder_986,PAPER_986,PAPER_981_990_BAND,,
+c_bcs_uqff_986,PAPER_986,PAPER_981_990_BAND,,
+delta0_950,PAPER_986,PAPER_981_990_BAND,,
+fubi_ratio_989,PAPER_989,PAPER_981_990_BAND,,
+KAPPA_PER_DAY,fubi_inside_out_989,PAPER_981_990_BAND,,
+fubi_inside_out_989,PAPER_989,PAPER_981_990_BAND,,
+fubi_inside_out_989,PAPER_990,PAPER_981_990_BAND,,
+fubi_master_979,PAPER_990,PAPER_981_990_BAND,,
+g26_978,fubi_cena_991,PAPER_991_1000_BAND,,
+fubi_cena_991,PAPER_991,PAPER_991_1000_BAND,,
+S_26,h_uqff_992,PAPER_991_1000_BAND,,
+h_uqff_992,PAPER_992,PAPER_991_1000_BAND,,
+m_jet_gauss_925,PAPER_993,PAPER_991_1000_BAND,,
+axiom_ratio_983,g_eff_994,PAPER_991_1000_BAND,,
+solar_surface_gravity,g_eff_994,PAPER_991_1000_BAND,,
+g_eff_994,PAPER_994,PAPER_991_1000_BAND,,
+f_u99_sweep_995,PAPER_995,PAPER_991_1000_BAND,,
+fubi_master_979,PAPER_996,PAPER_991_1000_BAND,,
+v13_benchmark_997,PAPER_997,PAPER_991_1000_BAND,,
+RHO_SCM,l_edd_uqff_999,PAPER_991_1000_BAND,,
+l_edd_uqff_999,PAPER_999,PAPER_991_1000_BAND,,
+BETA_I,p_jet_bcrit_999,PAPER_991_1000_BAND,,
+p_jet_bcrit_999,PAPER_999,PAPER_991_1000_BAND,,
+b_hse_999,PAPER_999,PAPER_991_1000_BAND,,
+rho_icm_beta_976,f_buoy_999,PAPER_991_1000_BAND,,
+f_buoy_999,PAPER_999,PAPER_991_1000_BAND,,
+SSQ,w26_1000,PAPER_991_1000_BAND,,
+KAPPA_PER_DAY,w26_1000,PAPER_991_1000_BAND,,
+w26_1000,PAPER_1000,PAPER_991_1000_BAND,,
+r_n_26_3_1000,PAPER_1000,PAPER_991_1000_BAND,,
+s26_3_1000,PAPER_1000,PAPER_991_1000_BAND,,
+h_phonon_1000,PAPER_1000,PAPER_991_1000_BAND,,
+p_bh_947,PAPER_1000,PAPER_991_1000_BAND,,
+alpha_s_running_1004,PAPER_1004,PAPER_1001_1010_BAND,,
+delta_ym_scm_1004,PAPER_1004,PAPER_1001_1010_BAND,,
+s26_3_1000,delta_ym_scm_1004,PAPER_1001_1010_BAND,,
+h_phonon_1000,PAPER_1001,PAPER_1001_1010_BAND,,
+l_edd_uqff_999,PAPER_1001,PAPER_1001_1010_BAND,,
+p_jet_bcrit_999,PAPER_1001,PAPER_1001_1010_BAND,,
+l_edd_uqff_999,PAPER_1002,PAPER_1001_1010_BAND,,
+h_phonon_1000,PAPER_1003,PAPER_1001_1010_BAND,,
+e_ladder_952,PAPER_1003,PAPER_1001_1010_BAND,,
+alpha_s_running_1004,PAPER_1005,PAPER_1001_1010_BAND,,
+delta_ym_scm_1004,PAPER_1005,PAPER_1001_1010_BAND,,
+dn_deta_972,PAPER_1006,PAPER_1001_1010_BAND,,
+t_c_mub_973,PAPER_1007,PAPER_1001_1010_BAND,,
+alpha_s_running_1004,PAPER_1008,PAPER_1001_1010_BAND,,
+l_edd_uqff_999,PAPER_1009,PAPER_1001_1010_BAND,,
+p_jet_bcrit_999,PAPER_1009,PAPER_1001_1010_BAND,,
+l_edd_uqff_999,PAPER_1010,PAPER_1001_1010_BAND,,
+p_jet_bcrit_999,PAPER_1010,PAPER_1001_1010_BAND,,
+RHO_SCM,rho_vds_gompertz_901,DEEPMINE_901_1000,,
+rho_vds_gompertz_901,PAPER_901,DEEPMINE_901_1000,,
+SSQ,f_bsh_901,DEEPMINE_901_1000,,
+f_bsh_901,PAPER_901,DEEPMINE_901_1000,,
+dvp_prime_channel_901,PAPER_901,DEEPMINE_901_1000,,
+SSQ,sigma_n_scm_923,DEEPMINE_901_1000,,
+sigma_n_scm_923,PAPER_923,DEEPMINE_901_1000,,
+s_bh_phonon_924,PAPER_924,DEEPMINE_901_1000,,
+b_phonon_929,PAPER_929,DEEPMINE_901_1000,,
+gamma_lenr_957,PAPER_957,DEEPMINE_901_1000,,
+bcs_gap_949,gamma_lenr_957,DEEPMINE_901_1000,,

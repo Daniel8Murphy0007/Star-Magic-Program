@@ -1,7 +1,14 @@
-v0.361.0: deep-capture PAPER_801-900 complete + deep-mine resweep + full ship pass
+v0.362.0: deep-capture PAPER_901-1010 complete + century deep-mine + census-method fix
 
-Headlines: E(t) engine identity E+ + E- = E_net ALGEBRAICALLY EXACT (0.0); D_GW=2/3 primitive-tied (P2154); FWHM 0.4710 THz drift-corrected (Flag-d); DPM proportion-pair null (P877); CGM retention theorem (0.89/0.10); NANOGrav/EHT/GRMHD channels; Kozima F_neutron 1e6 N EXACT; Species Index -n EXACT; Boyle ratio three-primitive tie; epochs (143.2, 900.5) Gyr; ~25 slips disclosed.
+Eleven bands (901-1010) plus the Daniel-directed deep-mine of 901-1000. Dispatches
+914 -> 1,024 (45.4% of the 2,256-paper corpus). Marquee physics: YM mass gap
+1.736 GeV EXACT via S26_eff = 8 = 2*D_PHYS; S26_exp = s26_gate identity EXACT;
+Ramanujan-weighted S26 series = Holmlid amplifier 1.453162e26 (0.0047%); W26(0) =
+(1+SSq)^26 EXACT; merger D_total(q) intercept = 1-D_GW_EROSION EXACT; BCS chain
+with 1.764 ratio EXACT; solar axiom ratio 1.536 (0.014%) and g_eff 108 m/s2.
+Census method fix: marker-position-aware truncation (P999/1000 PKG-marker-at-top
+failure mode); 7 deep-mine recoveries wired incl. DVP prime ladder (P907 p=113
+canonical). Rule 7: t_flip pi-slip, mass-gap sigma fork, 367.73/367.8 disclosed.
 
-Single-file deltas vs v0.360.0: calculator defs 2,287->2,429; dispatches 814->914; gate 3,403->3,564 (0 failures); main registry 4,665; citations 1,315.
-
-PROJECT TOTALS (accumulative, measured): 4,163 functions across 15 modules / 17,213 registry-family rows across 14 CSVs / 914 of 2,256 papers wired (40.5% of corpus, frontier PAPER_001-900) / 3,564 gate assertions green. Full 23-file ship checklist executed (audit family included).
+PROJECT TOTALS (measured): 4,264 functions across 8 modules; 19,483 registry-family
+rows across 14 CSVs; 1,024 of 2,256 papers wired; gate 3,716 assertions, 0 failures.

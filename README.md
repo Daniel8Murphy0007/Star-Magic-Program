@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.361.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.361.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.362.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.362.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-3564%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-914-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-3716%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1024-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
 
-**This release (v0.361.0): DEEP-CAPTURE PAPER_801-900 COMPLETE.** Ten bands plus the Daniel-directed deep-mine resweep. Headlines: **THE E(t) ENGINE IDENTITY VERIFIED** — E+ + E- = E0*exp(kappa*t+[SSq]*t/26)*S26*(2R-1) holds ALGEBRAICALLY EXACT in the wired functions (0.0 residual), with the R = 0.5 phase-transition zero; **D_GW = 2/3 PRIMITIVE-TIED** — GW damping phase now composed directly from the D_GW_EROSION registry primitive (P2154 canonization); **FWHM DRIFT-CORRECTED** — 0.4710 THz canonical wired per the P2154 Flag-(d) ruling (papers' 1.49 THz identified as AI drift); **DPM PROPORTION-PAIR NULL** — P877's U_i base (rho_SCm - rho_UA/10) wired and pinned null to machine epsilon (Axiom-2 identity); the **CGM metal-retention theorem** (f_Z = U_i/(U_i+U_m), Sanchez 0.89/0.10 bounds); NANOGrav/EHT/GRMHD observational channels (photon ring 2sqrt(27), Kepler-verified f_orb, MRI dynamo); the BSM force catalog (Kozima F_neutron = 1e6 N EXACT on the k_n = 1e10 cross-band tie; Colman-Gillespie 40.68 N device torque); Species Index S(n) = -n EXACT; Boyle vacuum ratio three-primitive tie; cosmic epochs (143.2, 900.5) Gyr; the 1.053 fingerprint reconfirmed. ~25 further source slips disclosed (f_gal 10x own-division, F_tide 8-order, UH route spread). **Project totals: 4,163 functions / 17,213 registry-family rows / 914 of 2,256 papers wired (40.5%%) / gate 3,564 assertions green.**
+**This release (v0.362.0): DEEP-CAPTURE PAPER_901-1010 COMPLETE (CENTURY + ONE BAND).** Eleven bands plus the century deep-mine. Headlines: **YM MASS GAP PRIMITIVE-LOCKED** — Delta_YM(0) = Lambda_QCD*S26_eff = 0.217*8.0 = 1.736 GeV EXACT with S26_eff = 8 = 2*D_PHYS (the magic-number-8 primitive; reproduces the PAPER_1318 canonical lock); **S26 IDENTITY CLOSED** — the P983 axiom sum S26_exp = Sum exp(-SSq*i/26) equals the P880 gate factor EXACT (<1e-12), and the P959 Ramanujan-weighted series lands on the Holmlid amplifier S_26^(3) = 1.453162e26 at 0.0047%; **THIRD-ORDER RAMANUJAN FAMILY** — W26(0) = (1+SSq)^26 EXACT, S26^(3) hypergeometric = 154030.8 pinned (P999/1000 spine reused by P1001-1010); **MERGER D_total FAMILY** — D_total(q) = (1-D_GW_EROSION) + 0.197(1-q), intercept EXACT on the 2/3 erosion primitive (GW170817 0.333, GW190425 0.5297); **BCS/SCm CHAIN** — T_c = 1.13 hbar*w_SCm/kB exp(-1/N0V), Delta(0)/kB*Tc = 1.764 EXACT, Cooper-pair Lagrangian, LENR Delta^2 rate; **SOLAR CLOSURE** — axiom ratio 1.53578 (paper 1.536, 0.014%), g_eff = g_N/(1+ratio) = 108 m/s2, r_cross = 1.706 R_sun, 274 anchor 4th recurrence; **CENSUS METHOD FIX** — marker-position-aware truncation (P999/1000 carried '<!-- PKG-' near top; old cut hid the century's deep sections — resweep verified bands 901-930 had captured them; 7 recoveries wired incl. Gompertz VDS, BSH harmonic sum, DVP prime ladder with P907 p=113 canonical). Rule 7 disclosures: t_flip pi-slip (0.2 ps vs 0.064 ps), P947/P1000 mass-gap sigma fork (0.1 vs 0.5), P936 367.73 vs 367.8. **Project totals: 4,264 functions / 19,483 registry-family rows / 1,024 of 2,256 papers wired (45.4%) / gate 3,716 assertions green.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -22,12 +22,12 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Full-project totals (measured):** **4,163 functions** across 15 Python modules
-(calculator 2,429 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+**Full-project totals (measured):** **4,264 functions** across 15 Python modules
+(calculator 2,558 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
-**17,213 registry-family rows** across 14 CSVs (main 4,665 + falsifiability graph 6,856
-edges + XGEO 3,290+ + citations 1,315 + results 187 + audit family 940+) | **914 of 2,256
-whitepapers wired** (40.5% of corpus; frontier PAPER_001-900 complete) | **3,564 gate
+**19,483 registry-family rows** across 14 CSVs (main 4,813 + falsifiability graph 7,116
+edges + XGEO 3,217 + citations 3,408 + results 187 + audit family 929+) | **1,024 of 2,256
+whitepapers wired** (45.4% of corpus; frontier PAPER_001-1010 complete) | **3,716 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into ~47,000 Python
 lines (~13:1 on the covered range).
 

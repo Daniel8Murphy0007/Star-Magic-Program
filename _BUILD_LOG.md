@@ -187,3 +187,6 @@ Registry 3,764 / graph 5,667 / citations 938. Gate 2,749 green. FULL STOP per ch
 2026-08-08 v0.360.0: deep-capture 701-800 + resweep + full 27-file ship pass (registry-audit family restored); gate 3388/0 green.
 
 2026-08-08 v0.361.0: deep-capture 801-900 + resweep; project totals 4,163 fns / 17,213 rows / 914 papers; gate 3564/0 green; full 23-file pass.
+
+## v0.362.0 (2026-08-09)
+Bands 901-1010 + century deep-mine + census fix. Gate 3,716/0. Dispatches 1,024. Registry family 19,483 rows.

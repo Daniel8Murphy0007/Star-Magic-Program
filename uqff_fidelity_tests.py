@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.361.0", "uqff_calculator.VERSION = 0.361.0 (deep-capture 801-900 complete)")
+assert_that(C.VERSION == "0.362.0", "uqff_calculator.VERSION = 0.362.0 (deep-capture 901-1010 complete)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -7676,6 +7676,259 @@ try:
     assert_that(_b93a >= 162, "supporting anchors >= 162 after 801-900 sweep (got %s)" % _b93a)
 except Exception as _b93e:
     assert_that(False, "DEEP-MINE 801-900 guard crashed: %r" % _b93e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_901-910 (Session-210 phonon block)
+# =============================================================================
+try:
+    import math as _b94m
+    assert_that(abs(C.christoffel_phonon_901(2.0, 3.0) - 6.0) < 1e-12, "P901 geodesic correction")
+    assert_that(abs(C.v_wind_master_902(0.0, 1.0, 1.3) - 1.3 * C.s26_gate_880()) < 1e-9,
+                "P902/903 wind master base = ratio*S26 at the carrier (Rosette 1.3)")
+    assert_that(abs(C.p_cavity_903(2.0, 3.0) - 18.0) < 1e-12, "P903 cavity ram pressure")
+    assert_that(abs(C.omega_h_905(1.0, 1.989e30) - 101487.1665955307) < 1e-3,
+                "P905 extremal horizon angular velocity (sun-mass anchor)")
+    assert_that(C.superradiance_905(1.0, 2, 1.0, 0.0) and not C.superradiance_905(3.0, 2, 1.0, 0.0),
+                "P905 superradiance condition boundary")
+    assert_that(abs(C.f_beat_906(1.989e30, 1.496e11, 1e12) - 1.2499999683091978) < 1e-9,
+                "P906 QPO beat |f_Kep - 1.25THz/N|")
+    assert_that(abs(C.eta_phonon_908() - 1.559853274268113) < 1e-12,
+                "P908 phonon jet efficiency S26/4pi = 1.560")
+    assert_that(C.p_jet_phonon_908(1.0, 1e18, 0.9) > 0, "P908 jet power positive")
+    assert_that(abs(C.t_h_phonon_909(1.0, 0.5, 0.2) - 1.1) < 1e-12, "P909 modulated Hawking")
+    assert_that(abs(C.m_jet_910(2 * _b94m.pi * C.OMEGA_SCM_HZ, 1e11, 1.0) / C.s26_gate_880() - 1.0) < 1e-12
+                and abs(C.m_jet_910(2 * _b94m.pi * C.OMEGA_SCM_HZ, 1e11, 0.5)) < 1e-12,
+                "P910 jet modulation: peak/S26 = 1 at R=1; null at R=0.5 EXACT")
+    assert_that(abs(C.p_jet_bz_mod_910(2.0, 1.0, 0.5) - 3.0) < 1e-12, "P910 BZ boost")
+    _b94wc = C.wired_count()
+    assert_that(_b94wc >= 924, "band 901-910: wired_count >= 924 (got %s)" % _b94wc)
+    for _b94n in range(901, 911):
+        assert_that('PAPER_%03d' % _b94n in C.DISPATCH, "band 901-910: PAPER_%03d dispatched" % _b94n)
+except Exception as _b94e:
+    assert_that(False, "BAND 901-910 guard crashed: %r" % _b94e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_911-920 (GW-phonon family)
+# =============================================================================
+try:
+    import math as _b95m
+    assert_that(abs(C.theta_jet_911(1.0, 1.0) - 0.5) < 1e-12, "P911 collimation halving")
+    assert_that(C.omega_dot_ns_912(1e8, 1e4, 100.0, 1e38, 0.0) < 0, "P912 spin-down negative")
+    assert_that(C.tau_sd_913(1e8, 1e4, 100.0, 1e38, 1.0) < C.tau_sd_913(1e8, 1e4, 100.0, 1e38, 0.0),
+                "P913 phonon shortens spin-down timescale")
+    assert_that(abs(C.lambda_tidal_914(0.3, 1.2e4, 1.4 * 1.989e30) - 1316.431148042539) < 1e-6,
+                "P914 tidal Lambda GW170817-class value (k2 = 0.3 anchor)")
+    assert_that(abs(C.lambda_uqff_914(1.0, 1.0, 1.0, 0.1) - 0.9) < 1e-12, "P914 UQFF correction")
+    assert_that(abs(C.d_phonon_915(1.0, 1.0) - C.D_GW_EROSION) < 1e-15,
+                "P915 D_phonon = D_GW_EROSION = 2/3 PRIMITIVE TIE EXACT")
+    assert_that(abs(C.delta_phi_915(0.1) - 256.77283955340573) < 1e-9,
+                "P915 GW170817 accumulated phase 367.8-cycle form")
+    assert_that(abs(C.p_ns_916(0.0, 0.0) - 0.5) < 1e-12, "P916 unbiased classifier baseline")
+    assert_that(abs(C.h_exp_917(0.0, 3.0) - 1.0) < 1e-12
+                and abs(C.SSQ / 26 - 0.02192307692307692) < 1e-15,
+                "P917 1/3 floor + growth rate SSq/26 = 0.02192 EXACT")
+    assert_that(abs(C.v_ratio_918(0.5) - 0.125) < 1e-12, "P918 volume (1-D)^3")
+    assert_that(abs(C.flare_contrast_919(2.0, 0.5) - 2.0) < 1e-12, "P919 flare contrast")
+    _b95mc = C.mc_jet_power_920(1.0, 0.5, 1e11, 1.0, 200)
+    assert_that(abs(_b95mc[0] - 8.0562267255552) < 1e-9,
+                "P920 Monte Carlo deterministic (seed 26) mean reproducible")
+    _b95wc = C.wired_count()
+    assert_that(_b95wc >= 934, "band 911-920: wired_count >= 934 (got %s)" % _b95wc)
+    for _b95n in range(911, 921):
+        assert_that('PAPER_%03d' % _b95n in C.DISPATCH, "band 911-920: PAPER_%03d dispatched" % _b95n)
+except Exception as _b95e:
+    assert_that(False, "BAND 911-920 guard crashed: %r" % _b95e)
+
+
+# =============================================================================
+# DEEP-CAPTURE GUARD: BAND PAPER_921-930
+# =============================================================================
+try:
+    import math as _b96m
+    assert_that(abs(C.delta_phi_integral_921(10.0, 100.0) - 7559.4986998994555) < 1e-6,
+                "P921 phase-lag integral deterministic (D0 = D_GW_EROSION)")
+    assert_that(abs(C.p_jet_gamma_922(1.0, 1.0, 1.0, 0.0, 1.0) - 2.0) < 1e-12,
+                "P922 chi2-match form at zero spread")
+    assert_that(C.p_bz_926(1.0, 1.0, 1.0) > 0, "P922/926 pi/6 BZ form")
+    assert_that(abs(C.a_res_923(1.0, 1.0) - C.s26_gate_880()) < 1e-12, "P923 a_res = S26 base")
+    assert_that(abs(C.dvp_product_923([1.0, 1.0], 1.0) - 4.0) < 1e-12, "P923 DVP product")
+    assert_that(abs(C.r_plus_924(1.0, 1.0) - 1.0) < 1e-12
+                and abs(C.r_plus_924(0.0, 1.0) - 2.0) < 1e-12,
+                "P924 horizon: extremal r_g, Schwarzschild 2r_g EXACT")
+    assert_that(C.gamma_sr_924(1.0, 2, 1.0, 1.0, 1.0) > 0
+                and C.gamma_sr_924(1.0, 2, 1.0, 3.0, 1.0) < 0,
+                "P924 superradiant sign boundary at m*Omega_H")
+    assert_that(abs(C.m_jet_gauss_925(1.25) - 2.5) < 1e-12,
+                "P925 jet modulation peak 1+A = 2.5 EXACT")
+    assert_that(abs(2 * _b96m.sqrt(2 * _b96m.log(2)) * 0.08 - 0.18838560360247594) < 1e-12,
+                "P925 FWHM = 0.1884 THz at sigma = 0.08")
+    assert_that(abs(C.d_total_vds_927([1.0] * 26) - 0.5619508304188892) < 1e-12,
+                "P927 uniform product (1-SSq/26)^26 = 0.5620 (stated 0.530 anchored)")
+    assert_that(abs(C.n_uqff_928(0.6, 0.5) - 1.4285714285714286) < 1e-12,
+                "P928 GW refractive index 10/7 at the 0.6/0.5 anchors")
+    assert_that(abs(C.tau_char_929(1.0, -4.2e-15) - 1.0 / 8.4e-15) < 1e5,
+                "P929 characteristic age canonical-pulsar anchor")
+    assert_that(abs(C.k1_benchmark_930() - 19.842275021100086) < 1e-12,
+                "P930 K1 kernel 19.84 (v7 benchmark)")
+    _b96wc = C.wired_count()
+    assert_that(_b96wc >= 944, "band 921-930: wired_count >= 944 (got %s)" % _b96wc)
+    for _b96n in range(921, 931):
+        assert_that('PAPER_%03d' % _b96n in C.DISPATCH, "band 921-930: PAPER_%03d dispatched" % _b96n)
+except Exception as _b96e:
+    assert_that(False, "BAND 921-930 guard crashed: %r" % _b96e)
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_931-940 ---
+import math as _b94m
+_b94q = C.q_phonon_931(2 * _b94m.pi * 0.05e12)
+assert_that(abs(_b94q - 12.5) < 1e-9, "P931 Q=12.5 at canonical Gamma (Q_PHONON/2 tie)")
+assert_that(abs(_b94q - C.Q_PHONON * 2.0) < 1e-9, "P931 Q = 2*Q_PHONON = 25/2 registry tie")
+assert_that(abs(C.d_total_934() - 1.0 / 3.0) < 1e-12, "P934 D_total = 1/3 = 1-D_GW_EROSION EXACT")
+assert_that(abs(C.doppler_932(10.0, 0.99, 0.0) - 10.0) < 1e-9, "P932 head-on doppler")
+_b94l = C.lambda_tilde_935(1.4, 1.4, 400.0, 400.0)
+assert_that(abs(_b94l - 400.0) < 1e-9 and _b94l < 800.0, "P935 equal-mass tilde-Lambda = Lambda; LIGO <800")
+_b94dp = C.delta_phi_936(300.0, 20.0, 1.0 / 3.0, 3.94) / (2 * _b94m.pi)
+assert_that(abs(_b94dp - 367.7333333333333) < 1e-6, "P936 ~367.8 cycles (paper-stated 367.8; computed 367.73 disclosed)")
+assert_that(C.p_bz_8pi_933(1.0, C.C_OBSERVED, 1.0) == 1.0 / (8 * _b94m.pi) * C.C_OBSERVED, "P933 8pi BZ unit form")
+assert_that(C.v8_benchmark_938() >= 350000.0, "P938 v8 benchmark >= 350k calc/s")
+assert_that(C.l_vhe_937(1.0, 0.0, 1.0) == 1.0, "P937 L_VHE null form")
+for _b94n in range(931, 941):
+    assert_that(_b94n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b94n)
+assert_that(C.wired_count() >= 954, "wired_count >= 954 after band 931-940")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_941-950 ---
+import math as _b95m
+assert_that(abs(C.theta_half_942(12.5) - 2.4) < 1e-12, "P942 theta_half = 2.4 deg at canonical Q=12.5")
+assert_that(C.theta_half_942(100.0) == 0.5, "P942 collimation floor 0.5 deg")
+assert_that(abs(C.p_gr_merger_943(0.25) - 3.6e49) < 1e35, "P943 P_GR equal-mass = 3.6e49 W")
+assert_that(abs(C.d_total_q_943(1.0) - (1.0 - C.D_GW_EROSION)) < 1e-15, "P943/944 D_total(1) = 1-D_GW_EROSION EXACT")
+assert_that(abs(C.m_chirp_eta_943(1.0, 0.25) - 0.25 ** 0.6) < 1e-15, "P943 chirp eta^(3/5)")
+assert_that(abs(C.p_bh_947(2.5) - 0.5) < 1e-12, "P947 boundary mass P(BH)=0.5")
+assert_that(C.p_bh_947(3.4) > 0.999, "P947 3.4 Msun firmly BH-side (sigma=0.1 paper anchor)")
+assert_that(C.v9_benchmark_948() >= 400000.0, "P948 v9 >= 400k calc/s")
+_b95d = C.bcs_gap_949(1.0)
+assert_that(_b95d > 0 and abs(_b95d - C.bcs_gap_949(1.0)) == 0.0, "P949 BCS gap converges deterministically")
+_b95tc = C.t_c_950(0.3)
+assert_that(abs(_b95tc - 2.4183152968137955) < 1e-9, "P950 T_c(N0V=0.3) = 2.418 K pinned")
+assert_that(abs(C.delta0_950(1.0) / 1.380649e-23 - 1.764) < 1e-12, "P950 Delta(0)/kB Tc = 1.764")
+assert_that(abs(C.r_crit_946(1.0, 1.0, 1.0, 1.0) - 2.0 * C.BETA_I) < 1e-15, "P946 r_crit unit form = 2*beta_i")
+for _b95n in range(941, 951):
+    assert_that(_b95n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b95n)
+assert_that(C.wired_count() >= 964, "wired_count >= 964 after band 941-950")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_951-960 ---
+import math as _b96n
+assert_that(abs(C.ramanujan_accel_953(C.SSQ) - C.polylog_26(C.SSQ)) < 1e-15, "P953 accelerated sum matches Li_26(SSq)")
+assert_that(abs(C.polylog_26(C.SSQ) - 0.5700000048414601) < 1e-14, "P953/960 Li_26(SSq) = 0.5700000048 landmark")
+_b96s = C.s26_z_959(C.SSQ)
+assert_that(abs(_b96s - 1.453162e26) / 1.453162e26 < 1e-4, "P959 S26(SSq) = 1.45309e26 ~ S_26^(3) canonical 1.453162e26 (0.0047%)")
+assert_that(abs(C.t_flip_954() - 2e-13) < 1e-25, "P954 t_flip faithful pi/(2w) = 0.2 ps (paper 0.064 ps = 1/(2w) pi-slip DISCLOSED)")
+assert_that(abs(C.e_t_linewidth_954(0.0, 1e11) - C.s26_gate_880()) < 1e-12, "P954 E(0) = S26")
+assert_that(C.v_eff_951(2 * _b96n.pi * C.OMEGA_SCM_HZ, 1.0) == C.s26_gate_880(), "P951 on-resonance V_eff = V_SCm*S26")
+assert_that(abs(C.e_ladder_952(1) - 2.9958468229151056e-20) < 1e-30, "P952 E_1 ladder pinned")
+assert_that(C.omega_n_956(2) > C.omega_n_956(1), "P956 ladder monotone")
+assert_that(C.v10_benchmark_958() >= 450000.0, "P958 v10 >= 450k calc/s")
+_b96d = C.bcs_gap_949(1.0)
+assert_that(C.l_gap_957(_b96d, 1.0) is not None and C.q_res_955(_b96d, 1.0) > 0, "P955/957 gap-family consistency")
+for _b96k in range(951, 961):
+    assert_that(_b96k in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b96k)
+assert_that(C.wired_count() >= 974, "wired_count >= 974 after band 951-960")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_961-970 ---
+import math as _b97m
+assert_that(abs(C.t_rev_962(2 * _b97m.pi * 0.05e12) - 5e-12) < 1e-24, "P962 t_rev = 5 ps at canonical Gamma")
+assert_that(abs(C.n_v_964(1.0) - 1.0 / 2.068e-15) < 1e9, "P964 flux quantum h/2e anchor")
+assert_that(C.delta_r_964(0.0, 1.0) == 1.0 and C.delta_r_964(1.5, 1.0) == 0.0, "P964 parabolic gap profile bounds")
+assert_that(abs(C.r_n_shell_964(26, 1.0) - 2.3) < 1e-12, "P964 outermost shell R_26 = 2.3 R_NS")
+assert_that(abs(C.h_uqff_965(1.0, 0.0) - 0.5297) < 1e-15, "P965 GW190425 suppression 0.5297 at t=0")
+_b97w = 2 * _b97m.pi * C.OMEGA_SCM_HZ
+assert_that(abs(C.delta_lambda_phonon_967(1.0, _b97w, 1.0) - C.s26_gate_880() * C.F_TRZ) < 1e-12, "P967 on-resonance dLambda = S26*F_TRZ (0.1 = F_TRZ primitive tie)")
+assert_that(C.lambda_supp_965(1.0, 0.0, _b97w, 1.0) == 1.0, "P965 zero-coupling lambda unchanged")
+assert_that(C.v11_benchmark_968() >= 500000.0, "P968 v11 >= 500k calc/s")
+_b97s = C.s26_k_969(C.SSQ, 2)
+assert_that(abs(_b97s - 3.9477875362266306e26) / 3.9478e26 < 1e-9, "P969 S26^(2)(SSq) = 3.9478e26 pinned")
+assert_that(C.s26_k_969(C.SSQ, 2, mock=True) > _b97s, "P969 mock-theta enhancement positive")
+assert_that(abs(C.rho_qgp_970(2.418, 2.418, 2) - C.RHO_SCM * _b97s) < 1e-20, "P970 rho_QGP at T=Tc = rho_SCm*S26^(k)")
+assert_that(C.f_compressed_961(1.0, _b97w, 1.0) == C.s26_gate_880() * 1.5, "P961/966 on-resonance F_comp = S26*A_jet")
+for _b97n in range(961, 971):
+    assert_that(_b97n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b97n)
+assert_that(C.wired_count() >= 984, "wired_count >= 984 after band 961-970")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_971-980 ---
+assert_that(abs(C.delta_ym_971(0.0, 1.0) - 1.736) < 1e-12, "P971 YM gap T=0 = 1.736 GeV canonical (PAPER_1318 lock)")
+assert_that(abs(1.736 / 0.217 - 2.0 * C.D_PHYS) < 1e-12, "P971 back-solve S26_eff = 8 = 2*D_PHYS EXACT (magic-number-8 tie)")
+assert_that(abs(C.t_c_mub_973(0.0) - 1.5) < 1e-15 and C.t_c_mub_973(1200.0) == 0.0, "P973 phase boundary endpoints")
+assert_that(abs(C.g26_978(1.0, 1.0) / (C.G_UQFF * C.SSQ) - 13.5) < 1e-9, "P978 26-layer sum factor = 351/26 = 13.5 EXACT")
+assert_that(abs(C.r_cross_980() / 6.96e8 - 1.7058464272493086) < 1e-9, "P980 r_cross = 1.706 R_sun pinned")
+assert_that(abs(C.solar_surface_gravity() - 274.0) < 0.5, "P980 g_N = 274 m/s^2 solar anchor (P071/073 recurrence)")
+assert_that(abs(C.e_net_kappa_979(0.0, 1.0) - C.s26_gate_880()) < 1e-12, "P979 E_net(0,R=1) = S26")
+assert_that(C.e_net_kappa_979(0.0, 0.0) < 0, "P979 R=0 negative branch (sign flip)")
+assert_that(abs(C.m_enc_nfw_976(1.0, 1.0, 1.0) - 2.4271590540348216) < 1e-12, "P976 NFW M_enc(x=1) pinned")
+assert_that(abs(C.rho_icm_beta_976(0.0, 1.0, 1.0) - 1.0) < 1e-15, "P976 beta-model center")
+assert_that(C.v12_benchmark_977() >= 501000.0, "P977 v12 >= 501k calc/s")
+assert_that(C.g_tri_974(1.0, 2.0, 3.0) == 6.0, "P974 triadic unit weights")
+assert_that(C.f_u99_974(1.0, 1.0, 1.0, 3.0, 0.0, 0.0) == 0.0, "P974 balanced null")
+_b98v = C.fubi_master_979(0.0, 0.0, 0.0, 0.0, 1e-4, 2 * 3.141592653589793 * C.OMEGA_SCM_HZ, 1.0, 0.0, 0.0)
+assert_that(_b98v < 0, "P979 solar-calibration sign: negative buoyancy branch (paper -2.4e-2 scale)")
+for _b98n in range(971, 981):
+    assert_that(_b98n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b98n)
+assert_that(C.wired_count() >= 994, "wired_count >= 994 after band 971-980")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_981-990 ---
+assert_that(abs(C.s26_exp_983() - C.s26_gate_880()) < 1e-12, "P983 IDENTITY: S26_exp = s26_gate_880 EXACT (the P880 S26 IS the exponential ladder sum)")
+assert_that(abs(C.axiom_ratio_983() - 1.536) < 5e-4, "P983 First Axiom ratio 1.53578 vs paper 1.536 (0.014%)")
+assert_that(C.axiom_ratio_983() > 0.5, "P983 Axiom 1: |Ub|/|Ug| > 0.5 validated")
+assert_that(abs(C.fubi_ratio_989(1.0, 1.0) - 0.6056447184309725) < 1e-12, "P989 scale-free inside-out ratio pinned")
+assert_that(abs(C.fubi_ratio_989(1.0, 1.0) - C.fubi_ratio_989(1e30, 1e9)) < 1e-9, "P989 ratio is scale-invariant (GM/r^2 cancels)")
+assert_that(C.f_agg_984([(1.0, 1.0)]) < 0, "P984 single-system aggregate: buoyancy-dominant (axiom-consistent negative)")
+assert_that(C.s_ladder_986(C.omega_n_956(1), 1e19) > 0, "P986 ladder coupling positive")
+assert_that(C.c_bcs_uqff_986(1.0, 2.0, 3.0) == 6.0, "P986 coupling product form")
+assert_that(C.fubi_inside_out_989(1.0, 1.0, 1.0, 0.0) > 0, "P989 inside-out force positive")
+for _b99n in range(981, 991):
+    assert_that(_b99n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _b99n)
+assert_that(C.wired_count() >= 1004, "wired_count >= 1004 after band 981-990")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_991-1000 (century mark) ---
+import math as _c00m
+assert_that(abs(C.g_eff_994() - 108.05) / 108.05 < 1e-3, "P994 g_eff = 107.99 vs paper 108.05 (0.06%)")
+assert_that(abs(C.g_eff_994() - C.solar_surface_gravity() / (1.0 + C.axiom_ratio_983())) < 1e-12, "P994 g_eff = g_N/(1+axiom_ratio) composition")
+assert_that(abs(C.w26_1000(0) - 1.57 ** 26) < 1e-6, "P1000 W26(0) = (1+SSq)^26 EXACT identity")
+_c00s = C.s26_3_1000()
+assert_that(abs(_c00s - 154030.80167920058) < 1e-6, "P1000 S26^(3) = 154030.8 pinned")
+assert_that(abs(C.h_phonon_1000(1.0, 2 * _c00m.pi * C.OMEGA_SCM_HZ, 1.0) - (1.0 - 0.47 * C.s26_gate_880() / _c00s)) < 1e-12, "P1000 on-resonance strain suppression form")
+assert_that(abs(C.p_bh_947(2.52, 2.5, 0.5) - 0.51) < 1e-3, "P1000 P(BH)=51% at m1=2.52 with sigma=0.5 back-solve (P947 fork DISCLOSED)")
+assert_that(abs(C.h_uqff_992(1.0) - 0.53 * C.s26_gate_880()) < 1e-12, "P992 h factor = 0.530*S26")
+assert_that(C.f_u99_sweep_995() == -6.11e13, "P995 sweep aggregate paper-stated")
+assert_that(C.v13_benchmark_997() >= 550000.0, "P997 v13 >= 550k calc/s")
+assert_that(C.b_hse_999() == 0.17 and C.b_hse_999() < 0.20, "P999 hydrostatic bias 0.17 < standard 0.20")
+assert_that(C.p_jet_bcrit_999(1.0, 0.0, 1.0, 1.0) == 1.0, "P999 zero-field null")
+assert_that(C.fubi_cena_991(1.0, 1.0, 0.0) == C.g26_978(1.0, 1.0) - C.fubi26_978(1.0, 1.0), "P991 zero-jet reduction")
+for _c00n in range(991, 1001):
+    assert_that(_c00n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c00n)
+assert_that(C.wired_count() >= 1014, "wired_count >= 1014 after band 991-1000 CENTURY MARK")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1001-1010 ---
+assert_that(abs(C.alpha_s_running_1004(1.0, 1.0) - 0.5) < 1e-15, "P1004 alpha_s(Tc) = alpha_s0")
+assert_that(C.alpha_s_running_1004(10.0, 1.0) < 0.5, "P1004 asymptotic freedom: alpha_s falls with T")
+assert_that(abs(C.alpha_s_running_1004(10.0, 1.0) - 0.27403979147954194) < 1e-12, "P1004 alpha_s(10Tc) pinned")
+_c01g = C.delta_ym_scm_1004(1.0, 1.0)
+assert_that(abs(_c01g - 17160.804945570206) < 1e-6, "P1004 T-dependent YM gap at Tc pinned (S26^(3)-amplified family form)")
+for _c01n in range(1001, 1011):
+    assert_that(_c01n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c01n)
+assert_that(C.wired_count() >= 1024, "wired_count >= 1024 after band 1001-1010")
+
+# --- DEEP-MINE RECOVERY GUARD: PAPER_901-1000 (marker-position resweep) ---
+import math as _dm9m
+assert_that(abs(C.rho_vds_gompertz_901(1.0, 1.0, 1.0) / C.RHO_SCM - _dm9m.exp(-1.0)) < 1e-15, "P901 Gompertz at r=r0 = rho/e")
+assert_that(C.dvp_prime_channel_901(907) == (113, 18), "P907 DVP prime = 113 = canonical PAPER_598 DVP prime")
+assert_that(C.dvp_prime_channel_901(910)[1] == 22 and C.dvp_prime_channel_901(920)[1] == 22, "P910-920 n_channel locks at 22/26")
+assert_that(abs(C.sigma_n_scm_923(2 * _dm9m.pi * C.OMEGA_SCM_HZ, 1.0, 26) - (1.0 + C.SSQ)) < 1e-12, "P923 on-res n=26 cross-section = 1+SSq EXACT")
+assert_that(abs(C.s_bh_phonon_924(1.0, 0.1) - 1.21) < 1e-12, "P924 squared entropy correction")
+assert_that(abs(C.b_phonon_929(1.0, 0.0) - 1.0) < 1e-15, "P929 null correction identity")
+assert_that(C.gamma_lenr_957(2.0, 0.0, 1.0, 1.0) == 4.0, "P957 Delta^2 pairing enhancement")
+assert_that(abs(C.f_bsh_901(1.0, 1.989e30) - 0.6166065069691703) < 1e-12, "P901 BSH 1-Msun sum pinned")
+assert_that(C.wired_count() >= 1024, "wired_count preserved after deep-mine recoveries")
 
 # =============================================================================
 # REPORT

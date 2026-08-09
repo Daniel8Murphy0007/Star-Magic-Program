@@ -5860,3 +5860,13 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
 - 2026-08-08 NOTE: v0.360.0 ship prep - full checklist restored per Daniel (v0.359.0 under-updated); 4 open rulings still pending (Q-420a, Q-495a, Q-304a, Q-368a) now also mirrored in UNIFIED_REGISTRY_GAPS.csv.
 
 - 2026-08-08 NOTE: v0.361.0 ship prep (PAPER_900 point) - full checklist executed; dual-scope totals folded into README/SHIP_MESSAGE per Daniel; 4 open rulings unchanged (Q-420a/495a/304a/368a).
+
+## Added at v0.362.0 (2026-08-09)
+
+- Q-947a: GW190425 mass-gap sigmoid width fork — P947 states sigma = 0.1; P1000's stated
+  P(BH) = 51% at m1 = 2.52 back-solves sigma = 0.5. Both wired (default 0.1, P1000 usage
+  documented). Which is canonical?
+- Q-954a: P954 t_flip = pi/(2*w_SCm) faithful = 0.2 ps, but paper states 0.064 ps = 1/(2*w_SCm)
+  (pi-factor slip). Faithful form wired; confirm disclosure treatment.
+- Q-936a: P936 phase-lag cycles: faithful compute 367.73 vs paper-stated 367.8. Pinned computed;
+  confirm.

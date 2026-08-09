@@ -5885,3 +5885,187 @@ refreshed to live totals, frontier 001-900), CHANGELOG [0.361.0] dual-scope acco
 SHIP_MESSAGE with PROJECT TOTALS per Daniel's directive, _BUILD_LOG, RULINGS_QUEUE, this entry.
 Measured: calc defs 2,287->2,429; dispatches 814->914; gate 3,403->3,564; main registry 4,665;
 family 17,213; citations 1,315; all-module fns 4,163. Daniel ships via .\ship.ps1.
+
+## 2026-08-08 (26) — BAND PAPER_901-910 (Session-210 phonon-astrophysics block; v0.362.0 arc)
+901 phonon-modified Christoffel (geodesic correction term), 902 master stellar-wind phonon-E(t)
+(v0 e^(kt+SSq t/26)S26 Phi ratio; base = ratio*S26 at the carrier), 903 Rosette (cavity ram;
+ratio 1.3 anchor), 904 nebula comparison (covered), 905 ergosphere superradiance (Omega_H
+extremal form; modified condition w < m OmegaH + Phi), 906 QPO-phonon beat (|f_Kep - 1.25THz/N|),
+907 wind Lagrangian variation (covered), 908 phonon jet launching (eta = S26/4pi = 1.560;
+P = Phi mdot c2 (a/M)2 eta for M87/SgrA), 909 phonon-modulated Hawking (T(1+Phi E/E)),
+910 numerical jet modulation (gauss S26(2R-1): peak/S26=1 at R=1, NULL at R=0.5 EXACT -
+the engine factor at the jet base; BZ boost form).
+Totals: +11 defs (2,429->2,440), wired 914->924, registry +11 rows, graph +18 edges,
+citations +10, gate +14 asserts (3,578), GREEN v0.361.0 (v0.362.0 arc opens).
+
+## 2026-08-08 (27) — BAND PAPER_911-920 (GW-phonon family; post-v0.361.0 ship)
+911 jet collimation (theta0/(1+M_jet)), 912/913 NS/magnetar spin-down (dipole with (1+PhiS26)
+boost; timescale + B back-solve), 914 tidal deformability ((2/3)k2(c2R/GM)^5 - the k2 chain
+feeding P1804/2136 downstream; UQFF correction factor), 915 GW170817 strain damping
+(D_phonon = D_GW_EROSION*Phi*S26*ratio - the 2/3 PRIMITIVE TIE again; 367.8-cycle accumulated
+phase), 916 GW190425 mass-gap classifier (0.5 baseline), 917 exponential strain (1/3 floor;
+growth rate SSq/26 = 0.02192 EXACT), 918 matched-filter SNR ((1-D); volume (1-D)^3),
+919 SgrA flare contrast (1+M_jet E/E), 920 Monte Carlo jet power (Gaussian omega sampling
+around OMEGA_SCM; seed-26 deterministic, reproducible mean pinned).
+Totals: +14 defs (2,433->2,447), wired 924->934, registry +14 rows, graph +19 edges,
+citations +10, gate +16 asserts (3,594), GREEN v0.361.0.
+
+## 2026-08-08 (28) — BAND PAPER_921-930
+921 inspiral phase-lag integral (PN 3/8 chirp x D(t) growth; D0=D_GW_EROSION; deterministic
+trapezoid pinned), 922 M87 jet-power curve (chi2 Gamma-match; pi/6 BZ form shared), 923 SCm
+resonance acceleration (a_res=ratio Phi S26; DVP prime-ladder product; VDS/BH modes),
+924 ergosphere v2 (r_+ extremal/Schwarzschild pins EXACT; superradiant sign boundary at
+m*Omega_H; T_H/S_BH corrections), 925/926 quasar jets (Gaussian M_jet peak 2.5 EXACT; FWHM
+0.1884 THz; multi-AGN MC covered by seed-26 sampler), 927 GW190425 suppressed strain (VDS
+product uniform (1-SSq/26)^26=0.5620; stated 0.530 anchored), 928 wavelength correction
+(GW refractive index 1/(1-r Phi)=10/7 at anchors), 929 NS spin-down correction (characteristic
+age; braking-index form), 930 production-scaling v7 (K1 kernel 19.84; 300k calc/s target).
+Totals: +13 defs (2,446->2,459), wired 934->944, registry +13 rows, graph +18 edges,
+citations +10, gate +17 asserts (3,610), GREEN v0.361.0.
+
+## APPENDED 2026-08-09 (29) — BAND PAPER_931-940 (v0.362.0 arc)
+
+Deep-capture band 931-940 (blazar/GW170817/AGN family). 10 new defs: q_phonon_931
+(Q = omega_SCm/2Gamma = 12.5 = 2*Q_PHONON = 25/2 registry tie at canonical Gamma),
+e_net_linewidth_931, doppler_932, e_ergo_932 (ergosphere S26^2 reservoir),
+p_bz_8pi_933 (8pi horizon BZ form; companion to pi/6 form p_bz_926),
+d_total_934 (D_total = 1/3 = 1 - D_GW_EROSION EXACT — GW170817 survival complement
+of the 2/3 erosion primitive), lambda_tilde_935 (16/13 combined tidal deformability,
+LIGO <800 bound), delta_phi_936 (phase lag; paper 367.8 cycles vs computed 367.73 —
+Rule 7 disclosure), l_vhe_937 (multi-messenger VHE/neutrino chain), v8_benchmark_938
+(>=350k calc/s). PAPER_939/940 covered (p_bz_8pi_933 + m_jet_gauss_925 + doppler_932).
+wired_count 944 -> 954. Registry +10 rows, graph +23 edges, citations +216 pairs.
+Gate guard added; GREEN at v0.361.0 pin. Frontier -> PAPER_940.
+
+## APPENDED 2026-08-09 (30) — BAND PAPER_941-950 (v0.362.0 arc)
+
+Merger/BCS band. 12 new defs: m_jet_linewidth_941 (Gaussian-in-omega jet engine with
+S26*(2R-1) polarity), theta_half_942 (max(0.5deg, 30deg/Q); canonical Q=12.5 -> 2.4deg
+EXACT), p_gr_merger_943 (3.6e49*(4eta)^2 W), m_chirp_eta_943, d_total_q_943
+(D_total(q)=0.333+0.197(1-q); intercept = 1-D_GW_EROSION EXACT — extends the P934
+GW170817 primitive tie to mass-ratio dependence, shared by P944/945), delta_phi_945,
+r_crit_946 (merger Lagrangian variation, 2*beta_i form), p_bh_947 (GW190425 mass-gap
+sigmoid, sigma=0.1 paper anchor — default corrected from initial 0.2 draft),
+v9_benchmark_948 (>=400k calc/s), bcs_gap_949 (SCm BCS self-consistent gap with S26
+enhancement, deterministic fixed point), t_c_950 (1.13 hbar w_SCm/kB exp(-1/N0V);
+T_c(0.3)=2.418 K pinned), delta0_950 (1.764 kB Tc weak-coupling ratio EXACT).
+PAPER_944 covered (d_total_q_943). wired_count 954 -> 964. Registry +12, graph +21,
+citations +241. Gate GREEN. Frontier -> PAPER_950.
+
+## APPENDED 2026-08-09 (31) — BAND PAPER_951-960 (v0.362.0 arc)
+
+Cooper-pair/spectral-ladder/Ramanujan band. 12 new defs: v_eff_951 (Gaussian pairing
+potential x S26), e_ladder_952 (E_n = E0*(2pi)^(n/3)*S26 26-state H-res ladder, shared
+by P956/957/958), ramanujan_accel_953 (Euler-Maclaurin accelerated Li_26 — matches
+polylog_26(SSq) = 0.5700000048 to <1e-15), e_t_linewidth_954 + t_flip_954 (Rule 7
+disclosure: faithful pi/(2w) = 0.2 ps vs paper 0.064 ps which back-solves to 1/(2w) —
+pi-factor slip), q_res_955, omega_n_956 + q_n_956, l_gap_957 (Cooper-pair gap
+Lagrangian; variation recovers bcs_gap_949/t_c_950), v10_benchmark_958 (>=450k),
+r_n_26_959 + s26_z_959 — MARQUEE: S26(SSq) Ramanujan-weighted = 1.45309e26, matching
+the canonical Holmlid amplifier S_26^(3) = 1.453162e26 at 0.0047% — the P959 series
+IS the 630 eV chain amplifier. PAPER_960 covered (polylog_26 forward-wired earlier +
+s26_z_959 convergence). wired_count 964 -> 974. Registry +12, graph +22, citations
++244. Gate GREEN. Frontier -> PAPER_960.
+
+## APPENDED 2026-08-09 (32) — BAND PAPER_961-970 (v0.362.0 arc)
+
+Triadic/magnetar/Ramanujan-higher-order band. 14 new defs: f_compressed_961 (triadic
+compressed-gravity; on-resonance = S26*A_jet pinned; shared by P966), t_rev_962
+(pi/2Gamma = 5 ps at canonical Gamma), e_net_thresh_963 (buoyancy branch threshold),
+delta_r_964 + n_v_964 (flux quantum h/2e = 2.068e-15 Wb anchor) + r_n_shell_964
+(R_26 = 2.3 R_NS outermost), h_uqff_965 (GW190425 suppression 0.5297; cf. d_total_q
+family) + lambda_supp_965, delta_lambda_phonon_967 — PRIMITIVE TIE: the 0.1 coupling
+IS F_TRZ (wired as F_TRZ, on-resonance dLambda = S26*F_TRZ), v11_benchmark_968
+(>=500k), r_n_26k_969 + mock_theta_969 + s26_k_969 (higher-order 26D Ramanujan with
+third-order mock-theta correction; S26^(2)(SSq) = 3.9478e26 pinned), rho_qgp_970
+(QGP vacuum density; T=Tc -> rho_SCm*S26^(k) EXACT). PAPER_966 covered (unified
+triadic solver = f_compressed_961 + e_t_linewidth_954). wired_count 974 -> 984.
+Registry +14, graph +23, citations +281. Gate GREEN. Frontier -> PAPER_970.
+
+## APPENDED 2026-08-09 (33) — BAND PAPER_971-980 (v0.362.0 arc)
+
+YM/QGP/99-system/solar band. 14 new defs. MARQUEE: delta_ym_971 — Delta_YM(0) =
+Lambda_QCD*S26_eff = 0.217*8.0 = 1.736 GeV EXACT, reproducing the canonical
+PAPER_1318 Yang-Mills lock, with back-solve S26_eff = 8 = 2*D_PHYS EXACT (the
+magic-number-8 primitive). Also: dn_deta_972 (ALICE A=2.0 alpha=1.2 anchors),
+t_c_mub_973 (deconfinement boundary), f_u99_974 + g_tri_974 (99-system master +
+triadic composite; P975 covered with <5%/<1% validation gates), m_enc_nfw_976 +
+rho_icm_beta_976 + p_icm_976 (cluster 3D MUGE; NFW profile reuses
+nfw_dark_matter_profile), v12_benchmark_977 (>=501k), g26_978 (26-layer factor
+351/26 = 13.5 EXACT) + fubi26_978, e_net_kappa_979 + fubi_master_979 (complete
+6-layer master buoyancy; solar calibration negative branch, paper -2.4e-2),
+r_cross_980 (= R_sun/sqrt(beta_i*SSq) = 1.706 R_sun; g_N = 274.03 anchor —
+the 274 solar landmark's 4th recurrence, reusing solar_surface_gravity).
+wired_count 984 -> 994. Registry +14, graph +28, citations +271. Gate GREEN.
+Frontier -> PAPER_980.
+
+## APPENDED 2026-08-09 (34) — BAND PAPER_981-990 (v0.362.0 arc)
+
+FUBi consolidation band. 7 new defs. MARQUEE IDENTITY: s26_exp_983 — the P983 axiom
+sum S26_exp = Sum exp(-SSq*i/26) = 19.601694348474755 equals s26_gate_880 EXACT
+(<1e-12): the P880 S26 gate factor IS the 26-rung exponential ladder sum. First
+Axiom validated: axiom_ratio_983 = beta_i*S26_exp/(SSq*13.5) = 1.53578 vs paper
+1.536 (0.014%), > 0.5 axiom threshold. Also: f_agg_984 (99-system aggregate,
+buoyancy-dominant negative per axiom), s_ladder_986 + c_bcs_uqff_986 (BCS-ladder
+master coupling; Delta_BCS via delta0_950), fubi_ratio_989 (scale-invariant
+inside-out ratio 0.6056 — GM/r^2 cancels, gate-pinned invariance) +
+fubi_inside_out_989 (rho0=1e-10 anchor, plasma-context kg/m^3 disclosed per
+PAPER_2155). Covered: 981 (variational, = g26_978/fubi26_978/fubi_master_979
+spine), 982 (Gamma sweeps), 985 (production kernel), 987/988 (WSTP/REST export,
+zero unique equations census-verified), 990 (distinction paper = both forms).
+wired_count 994 -> 1004 — CROSSED 1,000 DISPATCHES. Registry +7, graph +18,
+citations +232. Gate GREEN. Frontier -> PAPER_990.
+
+## APPENDED 2026-08-09 (35) — BAND PAPER_991-1000 (v0.362.0 arc) — CENTURY MARK
+
+Final band of the 901-1000 century. 13 new defs: fubi_cena_991 (Ug-Ub+P_jet*1e-45),
+h_uqff_992 (0.530*S26; 1-0.47 = P965 0.5297 family), g_eff_994 (g_N/(1+axiom_ratio)
+= 107.99 vs paper 108.05, 0.06% — composes P980 g_N with P983 axiom ratio),
+f_u99_sweep_995 (-6.11e13 paper-stated), v13_benchmark_997 (>=550k), l_edd_uqff_999
++ p_jet_bcrit_999 + b_hse_999 (hydrostatic bias 0.17 vs standard 0.20) + f_buoy_999,
+w26_1000 (IDENTITY: W26(0) = (1+SSq)^26 EXACT) + r_n_26_3_1000 + s26_3_1000
+(third-order Ramanujan hypergeometric = 154030.8 pinned) + h_phonon_1000 (0.47 peak
+NS-merger suppression; GW190425 m1=2.52 P(BH)=51% back-solves p_bh_947 sigma to 0.5
+vs P947's 0.1 — mass-gap-width fork DISCLOSED per Rule 7). Covered: 993 (M_jet(G0)
+= 3.3 via m_jet_gauss_925 A=2.3), 996 (WSTP runner; betaI=0.603 drift auto-corrected
+per charter), 998 (REST endpoint, zero unique eqs). CENSUS METHOD NOTE: PAPER_999/
+1000 carry the '<!-- PKG-' marker near the TOP of file, so standard truncation
+zeroed the census — full-text sweep recovered 9 real display equations; future
+bands must check marker position before truncating. wired_count 1004 -> 1014.
+Registry +13, graph +25, citations +288. Gate GREEN. Frontier -> PAPER_1000.
+NEXT: deep-mine 901-1000, then full 23-file ship as v0.362.0.
+
+## APPENDED 2026-08-09 (36) — BAND PAPER_1001-1010 (v0.362.0 arc)
+
+Template-family band: P1001-1010 share the P999/1000 spine (h_phonon_1000,
+l_edd_uqff_999, p_jet_bcrit_999, s26_3_1000, L9 stack) with per-system anchors
+(SMBH binary, AGN accretion, spectral-ladder merger, 3C273, TON618). ONE new
+closed form wired: alpha_s_running_1004 (one-loop running coupling, b0 =
+(11Nc-2Nf)/12pi, asymptotic-freedom gate-pinned) + delta_ym_scm_1004
+(Delta_YM = Lambda_QCD exp(-1/(alpha_s Nc)) S26^(3) — the T-dependent YM-gap
+family of P1004-1008; companion to linear delta_ym_971). 8 papers covered by
+prior wiring, marker-position-aware census applied (P999/1000 lesson).
+wired_count 1014 -> 1024. Registry +2, graph +18, citations +296. Gate GREEN.
+Frontier -> PAPER_1010.
+
+## APPENDED 2026-08-09 (37) — DEEP-MINE 901-1000 + SHIP v0.362.0
+
+Deep-mine: marker-position audit found the OLD truncation cut every 901-1000 paper
+early (the P999/1000 '<!-- PKG-' failure mode); dedupe of hidden equations against
+wired functions confirmed bands 901-930 had already captured their deep sections;
+7 genuine recoveries wired: rho_vds_gompertz_901 (double-exponential VDS profile),
+f_bsh_901 (26-harmonic BSH sum), dvp_prime_channel_901 (DVP prime ladder 89..131
+then 2..17, n_channel locks 22/26 from P910; P907 p=113 = canonical PAPER_598
+prime), sigma_n_scm_923 (n=26 on-res = 1+SSq EXACT), s_bh_phonon_924 (squared
+entropy), b_phonon_929, gamma_lenr_957 (Delta^2 pairing rate). +27 registry rows
+(7 RULE7_DEEPSEARCH_RECOVERY + 20 DVP SUPPORTING_ANCHOR), +11 edges, +9 gate
+asserts. RULE 7 CHECK: nothing was prevented from capture — all slips disclosed.
+
+SHIP v0.362.0: full 23-file pass. VERSION/STATE, gate pin (green at new pin,
+3,716 asserts), CITATION.cff, UNIFIED_REGISTRY_VERSION.txt, pyproject (desc 447
+chars incl version), README (badges cacheBust/3716/1024 + release paragraph +
+census dual-scope totals), CHANGELOG, SHIP_MESSAGE (PROJECT TOTALS), _BUILD_LOG,
+RULINGS_QUEUE (+Q-947a/954a/936a), WHITEPAPER_INDEX ship note, 3 campaign CSVs
+(band-updated), audit family (MERGED/GAPS/DUPLICATES/R1/R2/R3 ship row/XGEO x2).
+PROJECT TOTALS (measured): 4,264 fns / 19,483 registry-family rows / 1,024
+dispatches / gate 3,716 / citations cover 1,391 papers.

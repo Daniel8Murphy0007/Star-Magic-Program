@@ -4664,3 +4664,151 @@ T_scaled_anchor_P857,SUPPORTING_ANCHOR,anchor,PAPER_857,stated system anchor (de
 F_U_g_anchor_P858,SUPPORTING_ANCHOR,anchor,PAPER_858,stated system anchor (deep-mine 801-900),2.43e-40,whitepapers/PAPER_858,,per-system,,PAPER_858,,,,,,ANCHOR_CAPTURED
 F_U_Bi_anchor_P858,SUPPORTING_ANCHOR,anchor,PAPER_858,stated system anchor (deep-mine 801-900),6.14e-32,whitepapers/PAPER_858,,per-system,,PAPER_858,,,,,,ANCHOR_CAPTURED
 E_bio_anchor_P867,SUPPORTING_ANCHOR,anchor,PAPER_867,stated system anchor (deep-mine 801-900),0.6e-6,whitepapers/PAPER_867,,per-system,,PAPER_867,,,,,,ANCHOR_CAPTURED
+christoffel_phonon_901,REPO_DEEP_CAPTURE,function,PAPER_901,(dg/dE)Phi geodesic correction,,whitepapers/PAPER_901,,phonon-astro,,PAPER_901,,uqff_calculator.py,,,,WIRED
+v_wind_master_902,REPO_DEEP_CAPTURE,function,PAPER_902,v0 e^(kt+SSq t/26)S26 Phi ratio master; base 19.60*ratio at carrier,,whitepapers/PAPER_902,,phonon-astro,,PAPER_902,,uqff_calculator.py,,,,WIRED
+p_cavity_903,REPO_DEEP_CAPTURE,function,PAPER_903,rho v2 cavity; Rosette ratio 1.3 anchor,,whitepapers/PAPER_903,,phonon-astro,,PAPER_903,,uqff_calculator.py,,,,WIRED
+omega_h_905,REPO_DEEP_CAPTURE,function,PAPER_905,ac/(2GM/c2(1+sqrt(1-a2))),,whitepapers/PAPER_905,,phonon-astro,,PAPER_905,,uqff_calculator.py,,,,WIRED
+superradiance_905,REPO_DEEP_CAPTURE,function,PAPER_905,w < m OmegaH + Phi condition,,whitepapers/PAPER_905,,phonon-astro,,PAPER_905,,uqff_calculator.py,,,,WIRED
+f_beat_906,REPO_DEEP_CAPTURE,function,PAPER_906,|f_Kep - 1.25THz/N| QPO beat,,whitepapers/PAPER_906,,phonon-astro,,PAPER_906,,uqff_calculator.py,,,,WIRED
+eta_phonon_908,REPO_DEEP_CAPTURE,function,PAPER_908,S26/4pi=1.560 jet efficiency,1.559853274268113,whitepapers/PAPER_908,,phonon-astro,,PAPER_908,,uqff_calculator.py,,,,WIRED
+p_jet_phonon_908,REPO_DEEP_CAPTURE,function,PAPER_908,Phi mdot c2 (a/M)2 eta,,whitepapers/PAPER_908,,phonon-astro,,PAPER_908,,uqff_calculator.py,,,,WIRED
+t_h_phonon_909,REPO_DEEP_CAPTURE,function,PAPER_909,T_H(1+Phi E/E) modulated Hawking,,whitepapers/PAPER_909,,phonon-astro,,PAPER_909,,uqff_calculator.py,,,,WIRED
+m_jet_910,REPO_DEEP_CAPTURE,function,PAPER_910,gauss S26(2R-1); peak/S26=1 at R=1 EXACT,,whitepapers/PAPER_910,,phonon-astro,,PAPER_910,,uqff_calculator.py,,,,WIRED
+p_jet_bz_mod_910,REPO_DEEP_CAPTURE,function,PAPER_910,P_BZ(1+M E/E) boost,,whitepapers/PAPER_910,,phonon-astro,,PAPER_910,,uqff_calculator.py,,,,WIRED
+theta_jet_911,REPO_DEEP_CAPTURE,function,PAPER_911,theta0/(1+M_jet) collimation,,whitepapers/PAPER_911,,gw-phonon,,PAPER_911,,uqff_calculator.py,,,,WIRED
+omega_dot_ns_912,REPO_DEEP_CAPTURE,function,PAPER_912,-(2/3)B2R6O3/(Ic3)(1+PhiS26),,whitepapers/PAPER_912,,gw-phonon,,PAPER_912,,uqff_calculator.py,,,,WIRED
+tau_sd_913,REPO_DEEP_CAPTURE,function,PAPER_913,Ic3/(B2R6O2)/(1+PhiS26); B back-solve implied,,whitepapers/PAPER_913,,gw-phonon,,PAPER_913,,uqff_calculator.py,,,,WIRED
+lambda_tidal_914,REPO_DEEP_CAPTURE,function,PAPER_914,(2/3)k2(c2R/GM)^5 -> feeds P1804/2136 k2 chain,,whitepapers/PAPER_914,,gw-phonon,,PAPER_914,,uqff_calculator.py,,,,WIRED
+lambda_uqff_914,REPO_DEEP_CAPTURE,function,PAPER_914,Lambda_GR(1-ratio Phi S26 eps),,whitepapers/PAPER_914,,gw-phonon,,PAPER_914,,uqff_calculator.py,,,,WIRED
+d_phonon_915,REPO_DEEP_CAPTURE,function,PAPER_915,D_GW_EROSION*Phi*S26*(E/E) - 2/3 PRIMITIVE TIE,,whitepapers/PAPER_915,,gw-phonon,,PAPER_915,,uqff_calculator.py,,,,WIRED
+delta_phi_915,REPO_DEEP_CAPTURE,function,PAPER_915,367.8*2pi*D/(1-D) GW170817 cycles,,whitepapers/PAPER_915,,gw-phonon,,PAPER_915,,uqff_calculator.py,,,,WIRED
+p_ns_916,REPO_DEEP_CAPTURE,function,PAPER_916,0.5(1-PhiS26 eps) mass-gap classifier,,whitepapers/PAPER_916,,gw-phonon,,PAPER_916,,uqff_calculator.py,,,,WIRED
+h_exp_917,REPO_DEEP_CAPTURE,function,PAPER_917,h_GR(1/3)e^(SSq t/26); rate 0.02192 EXACT,,whitepapers/PAPER_917,,gw-phonon,,PAPER_917,,uqff_calculator.py,,,,WIRED
+snr_uqff_918,REPO_DEEP_CAPTURE,function,PAPER_918,SNR(1-D) matched filter,,whitepapers/PAPER_918,,gw-phonon,,PAPER_918,,uqff_calculator.py,,,,WIRED
+v_ratio_918,REPO_DEEP_CAPTURE,function,PAPER_918,(1-D)^3 volume suppression,,whitepapers/PAPER_918,,gw-phonon,,PAPER_918,,uqff_calculator.py,,,,WIRED
+flare_contrast_919,REPO_DEEP_CAPTURE,function,PAPER_919,1+M_jet E/E SgrA flares,,whitepapers/PAPER_919,,gw-phonon,,PAPER_919,,uqff_calculator.py,,,,WIRED
+mc_jet_power_920,REPO_DEEP_CAPTURE,function,PAPER_920,"MC <P_jet> over N(w_SCm,Gamma); seed 26 deterministic",,whitepapers/PAPER_920,,gw-phonon,,PAPER_920,,uqff_calculator.py,,,,WIRED
+delta_phi_integral_921,REPO_DEEP_CAPTURE,function,PAPER_921,int 2pif D dt; D0=D_GW_EROSION; PN 3/8 chirp,,whitepapers/PAPER_921,,gw-phonon-2,,PAPER_921,,uqff_calculator.py,,,,WIRED
+p_jet_gamma_922,REPO_DEEP_CAPTURE,function,PAPER_922,PBZ(1+M E/E e^-s2/2G2) chi2 match,,whitepapers/PAPER_922,,gw-phonon-2,,PAPER_922,,uqff_calculator.py,,,,WIRED
+p_bz_926,REPO_DEEP_CAPTURE,function,PAPER_922,pi/(6mu0)B2rg2ca2 (922/925/926 shared),,whitepapers/PAPER_922,,gw-phonon-2,,PAPER_922,,uqff_calculator.py,,,,WIRED
+a_res_923,REPO_DEEP_CAPTURE,function,PAPER_923,ratio Phi S26 resonance accel,,whitepapers/PAPER_923,,gw-phonon-2,,PAPER_923,,uqff_calculator.py,,,,WIRED
+dvp_product_923,REPO_DEEP_CAPTURE,function,PAPER_923,prod(1+a/g) prime ladder,,whitepapers/PAPER_923,,gw-phonon-2,,PAPER_923,,uqff_calculator.py,,,,WIRED
+r_plus_924,REPO_DEEP_CAPTURE,function,PAPER_924,rg(1+sqrt(1-a2)); extremal=rg EXACT,1.0,whitepapers/PAPER_924,,gw-phonon-2,,PAPER_924,,uqff_calculator.py,,,,WIRED
+gamma_sr_924,REPO_DEEP_CAPTURE,function,PAPER_924,Phi(mO-w)alpha superradiant growth,,whitepapers/PAPER_924,,gw-phonon-2,,PAPER_924,,uqff_calculator.py,,,,WIRED
+t_h_corr_924,REPO_DEEP_CAPTURE,function,PAPER_924,(1+PhiS26 SSq/26); S~(1+c)^2,,whitepapers/PAPER_924,,gw-phonon-2,,PAPER_924,,uqff_calculator.py,,,,WIRED
+m_jet_gauss_925,REPO_DEEP_CAPTURE,function,PAPER_925,1+1.5 gauss; peak 2.5 EXACT; FWHM 0.1884 THz,2.5,whitepapers/PAPER_925,,gw-phonon-2,,PAPER_925,,uqff_calculator.py,,,,WIRED
+d_total_vds_927,REPO_DEEP_CAPTURE,function,PAPER_927,prod(1-SSq Phi_k/26Phi0); uniform 0.5620 (stated 0.530 anchored),0.5619508304188892,whitepapers/PAPER_927,,gw-phonon-2,,PAPER_927,,uqff_calculator.py,,,,WIRED
+n_uqff_928,REPO_DEEP_CAPTURE,function,PAPER_928,1/(1-r Phi) GW refractive index,,whitepapers/PAPER_928,,gw-phonon-2,,PAPER_928,,uqff_calculator.py,,,,WIRED
+tau_char_929,REPO_DEEP_CAPTURE,function,PAPER_929,P/2|Odot| characteristic age,,whitepapers/PAPER_929,,gw-phonon-2,,PAPER_929,,uqff_calculator.py,,,,WIRED
+k1_benchmark_930,REPO_DEEP_CAPTURE,function,PAPER_930,Sum e^(-SSq k/26)(1+0.001k)=19.84; 300k calc/s target,19.842275021100086,whitepapers/PAPER_930,,benchmark,,PAPER_930,,uqff_calculator.py,,,,WIRED
+q_phonon_931,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_931,,,,,,WIRED
+e_net_linewidth_931,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_931,,,,,,WIRED
+doppler_932,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_932,,,,,,WIRED
+e_ergo_932,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_932,,,,,,WIRED
+p_bz_8pi_933,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_933,,,,,,WIRED
+d_total_934,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_934,,,,,,WIRED
+lambda_tilde_935,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_935,,,,,,WIRED
+delta_phi_936,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_936,,,,,,WIRED
+l_vhe_937,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_937,,,,,,WIRED
+v8_benchmark_938,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_938,,,,,,WIRED
+m_jet_linewidth_941,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_941,,,,,,WIRED
+theta_half_942,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_942,,,,,,WIRED
+p_gr_merger_943,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_943,,,,,,WIRED
+m_chirp_eta_943,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_943,,,,,,WIRED
+d_total_q_943,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_943,,,,,,WIRED
+delta_phi_945,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_945,,,,,,WIRED
+r_crit_946,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_946,,,,,,WIRED
+p_bh_947,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_947,,,,,,WIRED
+v9_benchmark_948,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_948,,,,,,WIRED
+bcs_gap_949,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_949,,,,,,WIRED
+t_c_950,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_950,,,,,,WIRED
+delta0_950,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_950,,,,,,WIRED
+v_eff_951,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_951,,,,,,WIRED
+e_ladder_952,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_952,,,,,,WIRED
+ramanujan_accel_953,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_953,,,,,,WIRED
+e_t_linewidth_954,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_954,,,,,,WIRED
+t_flip_954,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_954,,,,,,WIRED
+q_res_955,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_955,,,,,,WIRED
+omega_n_956,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_956,,,,,,WIRED
+q_n_956,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_956,,,,,,WIRED
+l_gap_957,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_957,,,,,,WIRED
+v10_benchmark_958,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_958,,,,,,WIRED
+r_n_26_959,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_959,,,,,,WIRED
+s26_z_959,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_959,,,,,,WIRED
+f_compressed_961,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_961,,,,,,WIRED
+t_rev_962,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_962,,,,,,WIRED
+e_net_thresh_963,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_963,,,,,,WIRED
+delta_r_964,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_964,,,,,,WIRED
+n_v_964,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_964,,,,,,WIRED
+r_n_shell_964,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_964,,,,,,WIRED
+h_uqff_965,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_965,,,,,,WIRED
+lambda_supp_965,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_965,,,,,,WIRED
+delta_lambda_phonon_967,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_967,,,,,,WIRED
+v11_benchmark_968,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_968,,,,,,WIRED
+r_n_26k_969,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_969,,,,,,WIRED
+mock_theta_969,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_969,,,,,,WIRED
+s26_k_969,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_969,,,,,,WIRED
+rho_qgp_970,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_970,,,,,,WIRED
+delta_ym_971,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_971,,,,,,WIRED
+dn_deta_972,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_972,,,,,,WIRED
+t_c_mub_973,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_973,,,,,,WIRED
+f_u99_974,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_974,,,,,,WIRED
+g_tri_974,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_974,,,,,,WIRED
+m_enc_nfw_976,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_976,,,,,,WIRED
+rho_icm_beta_976,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_976,,,,,,WIRED
+p_icm_976,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_976,,,,,,WIRED
+v12_benchmark_977,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_977,,,,,,WIRED
+g26_978,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_978,,,,,,WIRED
+fubi26_978,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_978,,,,,,WIRED
+e_net_kappa_979,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_979,,,,,,WIRED
+fubi_master_979,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_979,,,,,,WIRED
+r_cross_980,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_980,,,,,,WIRED
+s26_exp_983,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_983,,,,,,WIRED
+axiom_ratio_983,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_983,,,,,,WIRED
+f_agg_984,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_984,,,,,,WIRED
+s_ladder_986,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_986,,,,,,WIRED
+c_bcs_uqff_986,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_986,,,,,,WIRED
+fubi_ratio_989,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_989,,,,,,WIRED
+fubi_inside_out_989,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_989,,,,,,WIRED
+fubi_cena_991,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_991,,,,,,WIRED
+h_uqff_992,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_992,,,,,,WIRED
+g_eff_994,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_994,,,,,,WIRED
+f_u99_sweep_995,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_995,,,,,,WIRED
+v13_benchmark_997,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_997,,,,,,WIRED
+l_edd_uqff_999,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_999,,,,,,WIRED
+p_jet_bcrit_999,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_999,,,,,,WIRED
+b_hse_999,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_999,,,,,,WIRED
+f_buoy_999,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_999,,,,,,WIRED
+w26_1000,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1000,,,,,,WIRED
+r_n_26_3_1000,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1000,,,,,,WIRED
+s26_3_1000,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1000,,,,,,WIRED
+h_phonon_1000,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1000,,,,,,WIRED
+alpha_s_running_1004,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1004,,,,,,WIRED
+delta_ym_scm_1004,REPO_DEEP_CAPTURE,,,,,,,,,PAPER_1004,,,,,,WIRED
+rho_vds_gompertz_901,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_901,,,,,,WIRED
+f_bsh_901,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_901,,,,,,WIRED
+dvp_prime_channel_901,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_901,,,,,,WIRED
+sigma_n_scm_923,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_923,,,,,,WIRED
+s_bh_phonon_924,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_924,,,,,,WIRED
+b_phonon_929,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_929,,,,,,WIRED
+gamma_lenr_957,RULE7_DEEPSEARCH_RECOVERY,,,,,,,,,PAPER_957,,,,,,WIRED
+dvp_prime_P901,SUPPORTING_ANCHOR,,,,,,,,,PAPER_901,,,,,,WIRED
+dvp_prime_P902,SUPPORTING_ANCHOR,,,,,,,,,PAPER_902,,,,,,WIRED
+dvp_prime_P903,SUPPORTING_ANCHOR,,,,,,,,,PAPER_903,,,,,,WIRED
+dvp_prime_P904,SUPPORTING_ANCHOR,,,,,,,,,PAPER_904,,,,,,WIRED
+dvp_prime_P905,SUPPORTING_ANCHOR,,,,,,,,,PAPER_905,,,,,,WIRED
+dvp_prime_P906,SUPPORTING_ANCHOR,,,,,,,,,PAPER_906,,,,,,WIRED
+dvp_prime_P907,SUPPORTING_ANCHOR,,,,,,,,,PAPER_907,,,,,,WIRED
+dvp_prime_P908,SUPPORTING_ANCHOR,,,,,,,,,PAPER_908,,,,,,WIRED
+dvp_prime_P909,SUPPORTING_ANCHOR,,,,,,,,,PAPER_909,,,,,,WIRED
+dvp_prime_P910,SUPPORTING_ANCHOR,,,,,,,,,PAPER_910,,,,,,WIRED
+dvp_prime_P911,SUPPORTING_ANCHOR,,,,,,,,,PAPER_911,,,,,,WIRED
+dvp_prime_P912,SUPPORTING_ANCHOR,,,,,,,,,PAPER_912,,,,,,WIRED
+dvp_prime_P913,SUPPORTING_ANCHOR,,,,,,,,,PAPER_913,,,,,,WIRED
+dvp_prime_P914,SUPPORTING_ANCHOR,,,,,,,,,PAPER_914,,,,,,WIRED
+dvp_prime_P915,SUPPORTING_ANCHOR,,,,,,,,,PAPER_915,,,,,,WIRED
+dvp_prime_P916,SUPPORTING_ANCHOR,,,,,,,,,PAPER_916,,,,,,WIRED
+dvp_prime_P917,SUPPORTING_ANCHOR,,,,,,,,,PAPER_917,,,,,,WIRED
+dvp_prime_P918,SUPPORTING_ANCHOR,,,,,,,,,PAPER_918,,,,,,WIRED
+dvp_prime_P919,SUPPORTING_ANCHOR,,,,,,,,,PAPER_919,,,,,,WIRED
+dvp_prime_P920,SUPPORTING_ANCHOR,,,,,,,,,PAPER_920,,,,,,WIRED

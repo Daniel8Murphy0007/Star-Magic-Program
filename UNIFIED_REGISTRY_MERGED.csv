@@ -533,3 +533,4 @@ grmhd_observational_family,27,PAPER_811..820,NANOGrav/EHT/GRMHD channels,h_c_nan
 bsm_force_catalog,30,PAPER_831..850,11-term hierarchy; Kozima 1e6 N EXACT,f_lenr_835;f_neutron_840;bsm_forces_837_stated
 cosmogenesis_acp_family,25,PAPER_806..808;877,Axiom sums + DPM null + epochs,rho_vac_sum_877;u_i_877;t_end_808;v_ratio_boyle_808
 supporting_anchor_block_2,33,PAPER_801..900,stated per-system anchors (2nd sweep),SUPPORTING_ANCHOR rows
+BAND_901_1010_FAMILY,v0.362.0,S26^(3) Ramanujan spine + BCS/SCm chain + merger D_total(q) + YM 2*D_PHYS lock + solar closure,MERGED_SUMMARY,PAPER_901-1010

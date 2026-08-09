@@ -1608,3 +1608,4 @@ d_gw_erosion_phase,primitive-stack,d_gw_erosion_phase via uqff_calculator primit
 fwhm_phonon,primitive-stack,fwhm_phonon via uqff_calculator primitive composition,PAPER_896,XGEO_CAMPAIGN_ROUTED
 dpm_proportion_null,primitive-stack,dpm_proportion_null via uqff_calculator primitive composition,PAPER_877,XGEO_CAMPAIGN_ROUTED
 boyle_vacuum_ratio,primitive-stack,boyle_vacuum_ratio via uqff_calculator primitive composition,PAPER_808,XGEO_CAMPAIGN_ROUTED
+s26_exp_identity,PAPER_983,S26_exp = s26_gate_880 EXACT identity,v0.362.0,
