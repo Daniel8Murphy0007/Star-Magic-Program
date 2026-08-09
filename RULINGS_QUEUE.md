@@ -5870,3 +5870,12 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
   (pi-factor slip). Faithful form wired; confirm disclosure treatment.
 - Q-936a: P936 phase-lag cycles: faithful compute 367.73 vs paper-stated 367.8. Pinned computed;
   confirm.
+
+## Added at v0.363.0 (2026-08-09)
+
+- Q-1087a: PAPER_1087 abstract w_DE formula unit inconsistency (Daniel-filed ERRATUM) — closure
+  pinned to S3 table (-0.9435 at 13.8 Gyr); three candidate resolutions await ruling.
+- Q-1090a: PAPER_1090 substitution line evaluates 1.766e59 J vs stated 1.77e47 J (1e12 print
+  slip); also uses 9.47e-27 drift density (PAPER_2156). Faithful product wired; confirm.
+- Q-1056a: PAPER_1056 QEC error 2.1e-8 back-solves w_qubit = 1.41e17 rad/s (optical-frequency);
+  confirm intended qubit platform.

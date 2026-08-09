@@ -78,3 +78,6 @@ uh_856_route,disclosed_conflict,P856 UH route spread (faithful 4.79e-46 vs state
 fwhm_1_49_drift,drift_corrected,P896 printed 1.49 THz = AI drift; 0.4710 canonical wired per P2154 Flag-d
 Q-947a,PAPER_947/1000,mass-gap sigmoid width fork sigma=0.1 vs back-solved 0.5
 Q-954a,PAPER_954,t_flip pi-factor slip 0.2 ps faithful vs 0.064 ps stated
+Q-1087a,PAPER_1087,w_DE abstract formula unit inconsistency; ERRATUM table pin -0.9435
+Q-1090a,PAPER_1090,1e12 print slip 1.766e59 vs 1.77e47 + 9.47e-27 drift density
+Q-1056a,PAPER_1056,QEC 2.1e-8 back-solves w_qubit=1.41e17 rad/s

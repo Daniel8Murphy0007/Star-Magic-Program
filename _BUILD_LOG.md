@@ -190,3 +190,6 @@ Registry 3,764 / graph 5,667 / citations 938. Gate 2,749 green. FULL STOP per ch
 
 ## v0.362.0 (2026-08-09)
 Bands 901-1010 + century deep-mine + census fix. Gate 3,716/0. Dispatches 1,024. Registry family 19,483 rows.
+
+## v0.363.0 (2026-08-09)
+Bands 1011-1100 + deep-mine + capture audit. Gate 3,854/0. Dispatches 1,114. Registry family 21,594 rows.

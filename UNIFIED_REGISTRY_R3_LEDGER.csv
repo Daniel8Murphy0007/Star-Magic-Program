@@ -115,3 +115,4 @@ v0.359.0,dispatch closure + audit + deep-capture 501-700,"+476 fns, wired 342->7
 v0.360.0,deep-capture 701-800 + resweep + anchor capture,"+116 fns, wired 714->814, gate 3388; 1.053 fingerprint solved; Three-UQFF triple-mode; 129 supporting anchors",
 v0.361.0,deep-capture 801-900 + resweep + anchors,"+142 calc fns (2287->2429), wired 814->914, gate 3403->3564; E(t) engine identity EXACT; FWHM 0.4710 canonical; DPM null identity; f_gal/tide slips disclosed",
 v0.362.0,2026-08-09,SHIP,deep-capture PAPER_901-1010 + century deep-mine; dispatches 1024; gate 3716; registry-family 19483 rows
+v0.363.0,2026-08-09,SHIP,deep-capture PAPER_1011-1100 + century deep-mine + capture audit; dispatches 1114; gate 3854; registry-family 21594 rows

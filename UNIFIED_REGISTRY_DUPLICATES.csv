@@ -23,3 +23,4 @@ dispatch_registration,integrity,"814 registrations, 0 duplicate @_register keys 
 fingerprint_1053,equation,"1.053e-2 = qvB/mp*11e-12 defined ONCE (f_em_732); P705/708/709/710/737/767/786-800 all reuse (source identified, no duplication)"
 dispatch_registration,integrity,"914 registrations, 0 duplicate @_register keys verified 2026-08-08 (v0.361.0 prep)"
 v0.362.0,2026-08-09,NO_NEW_DUPLICATES
+v0.363.0,2026-08-09,NO_NEW_DUPLICATES

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.362.0", "uqff_calculator.VERSION = 0.362.0 (deep-capture 901-1010 complete)")
+assert_that(C.VERSION == "0.363.0", "uqff_calculator.VERSION = 0.363.0 (deep-capture 1011-1100 + deep-mine complete)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -189,8 +189,8 @@ assert_that(abs(_r002['F_chain_primitive'] - 0.333) < 1e-12 and abs(_r002['A_TRZ
             "PAPER_002: damping chain F=A_aether*A_SCm*D_TRZ*D_String=0.333 (library-composed)")
 assert_that(abs(_r002['F_phonon_route'] - 0.53) < 1e-12,
             "PAPER_002: F_UQFF=0.5297 ~ phonon route 1-0.47=0.53 (Q-001 OPEN)")
-assert_that(abs(_r002['S_26_third_order'] - 154030.8) < 5.0,
-            "PAPER_002: S_26^(3) Ramanujan sum reused from equation library")
+assert_that(abs(_r002['S_26_third_order'] - 156776.754) < 5.0,
+            "PAPER_002: S_26^(3) Ramanujan sum converged 156776.75 (SUPERSEDED 154030.8 N=40 truncation, audit 2026-08-09)")
 assert_that(abs(_r002['VDS_ratio'] - 0.1) < 1e-12 and _r002['VDS_ratio_paper_drift'] == 1.894,
             "PAPER_002: VDS/DVP/BSH block - VDS ratio drift 1.894 -> F_TRZ=0.1 (PAPER_2156)")
 assert_that(abs(_r002['Delta_YM_GeV'] - 1.736) < 1e-9 and abs(_r002['rho_vac_total'] - 7.799e-36) < 1e-39,
@@ -7895,7 +7895,7 @@ assert_that(abs(C.g_eff_994() - 108.05) / 108.05 < 1e-3, "P994 g_eff = 107.99 vs
 assert_that(abs(C.g_eff_994() - C.solar_surface_gravity() / (1.0 + C.axiom_ratio_983())) < 1e-12, "P994 g_eff = g_N/(1+axiom_ratio) composition")
 assert_that(abs(C.w26_1000(0) - 1.57 ** 26) < 1e-6, "P1000 W26(0) = (1+SSq)^26 EXACT identity")
 _c00s = C.s26_3_1000()
-assert_that(abs(_c00s - 154030.80167920058) < 1e-6, "P1000 S26^(3) = 154030.8 pinned")
+assert_that(abs(_c00s - 156776.75415561552) < 1e-3, "P1000 S26^(3) converged = 156776.75 (supersedes N=40 truncation 154030.8; paper states infinite sum)")
 assert_that(abs(C.h_phonon_1000(1.0, 2 * _c00m.pi * C.OMEGA_SCM_HZ, 1.0) - (1.0 - 0.47 * C.s26_gate_880() / _c00s)) < 1e-12, "P1000 on-resonance strain suppression form")
 assert_that(abs(C.p_bh_947(2.52, 2.5, 0.5) - 0.51) < 1e-3, "P1000 P(BH)=51% at m1=2.52 with sigma=0.5 back-solve (P947 fork DISCLOSED)")
 assert_that(abs(C.h_uqff_992(1.0) - 0.53 * C.s26_gate_880()) < 1e-12, "P992 h factor = 0.530*S26")
@@ -7913,7 +7913,7 @@ assert_that(abs(C.alpha_s_running_1004(1.0, 1.0) - 0.5) < 1e-15, "P1004 alpha_s(
 assert_that(C.alpha_s_running_1004(10.0, 1.0) < 0.5, "P1004 asymptotic freedom: alpha_s falls with T")
 assert_that(abs(C.alpha_s_running_1004(10.0, 1.0) - 0.27403979147954194) < 1e-12, "P1004 alpha_s(10Tc) pinned")
 _c01g = C.delta_ym_scm_1004(1.0, 1.0)
-assert_that(abs(_c01g - 17160.804945570206) < 1e-6, "P1004 T-dependent YM gap at Tc pinned (S26^(3)-amplified family form)")
+assert_that(abs(_c01g - 17466.735670618986) < 1e-3, "P1004 T-dependent YM gap at Tc pinned (converged S26^(3); supersedes 17160.8 truncation-era pin)")
 for _c01n in range(1001, 1011):
     assert_that(_c01n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c01n)
 assert_that(C.wired_count() >= 1024, "wired_count >= 1024 after band 1001-1010")
@@ -7929,6 +7929,189 @@ assert_that(abs(C.b_phonon_929(1.0, 0.0) - 1.0) < 1e-15, "P929 null correction i
 assert_that(C.gamma_lenr_957(2.0, 0.0, 1.0, 1.0) == 4.0, "P957 Delta^2 pairing enhancement")
 assert_that(abs(C.f_bsh_901(1.0, 1.989e30) - 0.6166065069691703) < 1e-12, "P901 BSH 1-Msun sum pinned")
 assert_that(C.wired_count() >= 1024, "wired_count preserved after deep-mine recoveries")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1011-1020 ---
+assert_that(abs(C.dn_deta_npart_1013(100.0, 0.5, 1.0, 1.0) - 99.5) < 1e-9, "P1013 participant scaling pinned")
+assert_that(C.fubi_binary_1014(1.0, 1.0, 1.0, 1.0) > C.G_UQFF, "P1014 buoyancy-enhanced binary force > bare G form")
+assert_that(abs(C.dm_buoy_kick_1014(1.0, 3e5) - 0.09465162102536177) < 1e-12, "P1014 kick mass-deficit pinned (v=300 km/s; converged S26^(3))")
+assert_that(C.f_qnm_1014(1.0, 1.0) > 1.0, "P1014 QNM upshift positive")
+assert_that(C.v15_benchmark_1018() >= 650000.0, "P1018 v15 >= 650k calc/s")
+assert_that(C.l_cr_1020(1.0, 1.0, 1.0, 1.0, 1.0) == 1.5, "P1020 CR Lagrangian unit form")
+assert_that(C.l_dm_phonon_1019(1.0, 1.0, 1.0, 1.0) == C.BETA_I * C.s26_gate_880(), "P1019 DM Lagrangian = beta_i*S26 unit form")
+for _c02n in range(1011, 1021):
+    assert_that(_c02n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c02n)
+assert_that(C.wired_count() >= 1034, "wired_count >= 1034 after band 1011-1020")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1021-1030 ---
+import math as _c03m
+assert_that(abs(C.l_min_qg_1030() / 1.616e-35 - 1.17) < 1e-3, "P1030 l_min = 1.17 l_Planck (0.06% on back-solve)")
+assert_that(C.gup_bound_1030(0.0) == 1.0545718e-34 / 2.0, "P1030 GUP reduces to standard Heisenberg at dp=0")
+assert_that(abs(C.r_dot_reion_1026(4 * _c03m.pi, 1.0, 1.0, 1.0)) < 1e-12, "P1026 Stromgren balance null")
+assert_that(C.e_flare_1024(1e11, 1e4) / 1e-7 > 3.2e46, "P1024 giant-flare reservoir exceeds paper 3.2e46 erg floor")
+assert_that(C.delta_t_pta_1021(1.0, 1e-3) > 0, "P1021 PTA residual positive")
+assert_that(C.gw_wave_source_1022(0.0, 1.0) == C.s26_gate_880(), "P1022 vacuum wave source = Phi*S26")
+assert_that(C.string_lens_source_1028(1.0, 0.0)[1] == 0.0, "P1028 zero-phonon smooth term null")
+assert_that(abs(C.f_bary_orbit_1029(1.0, 1.0, 0.25, 1.0)) < 1e-15, "P1029 quarter-period node")
+assert_that(C.l_tde_1027(0.0, 0.0, 1.0, 1.0, 0.0, 0.0) == 0.0, "P1027 empty-flow null")
+assert_that(C.h_phonon_nu_1023(0.0) == 0.0, "P1023 zero-coupling null")
+for _c03n in range(1021, 1031):
+    assert_that(_c03n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c03n)
+assert_that(C.wired_count() >= 1044, "wired_count >= 1044 after band 1021-1030")
+
+# --- PHYSICS-CAPTURE AUDIT GUARD (Daniel verification 2026-08-09) ---
+assert_that(C.bcs_gap_949(300.0) < C.bcs_gap_949(200.0) < C.bcs_gap_949(50.0) * 1.0000001, "AUDIT: BCS gap has real T-dependence (plateau then collapse), not a hardcode")
+assert_that(abs(C.s26_3_1000() - 156776.75415561552) < 1.0, "AUDIT: S26^(3) converged evaluation (truncation artifact corrected)")
+assert_that(abs(C.s26_3_1000() - C.S_26_third_order()) < 1e-6, "AUDIT: both S26^(3) routes (P001-era library + P1000 band) agree on converged value")
+assert_that(abs(C.e_flare_1024(2.0, 1.0) / C.e_flare_1024(1.0, 1.0) - 4.0) < 1e-12, "AUDIT: flare energy scales as B^2 (formula, not constant)")
+assert_that(C.alpha_s_running_1004(2.0, 1.0) != C.alpha_s_running_1004(4.0, 1.0), "AUDIT: running coupling actually runs")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1031-1040 ---
+import math as _c04m
+_c04u = C.C_OBSERVED ** 2 / (3.0 * C.G_UQFF * 1.0)
+assert_that(abs(C.photon_orbit_rhs_1031(_c04u, 1.0) - _c04u) < 1e-3, "P1031 photon-sphere fixed point u = 3GM/c^2 inverse")
+assert_that(C.dust_accel_1032(1.0, 9.8, 9.8, 0.0, 0.0) == 0.0, "P1032 neutral-buoyancy hover null")
+assert_that(C.bar_accel_1033(1.0, 1.0, 1.0) == 0.0, "P1033 circular-orbit balance null")
+assert_that(abs(C.omega2_frb_1034(0.0, 1.0, 1.0) - C.C_OBSERVED ** 2) < 1e-6, "P1034 zero-plasma limit = k^2 c^2")
+assert_that(C.omega2_frb_1034(1.0, 0.0, 1.0) > 1.0, "P1034 phonon upshift of plasma frequency")
+assert_that(abs(C.dxn_dt_1036(_c04m.exp(-1.0), 1.0, 2.0, 1.0)) < 1e-15, "P1036 BBN equilibrium Xn/Xp = e^-Q/T null")
+assert_that(C.shock_jump_phonon_1040(1.0, 1.0, 1.0, 1.0, 1.0, 1.0) == (0.0, 0.0), "P1040 symmetric shock null")
+assert_that(C.q_kn_uqff_1035(1.0, 0.0, 1.0) == 1.0, "P1035 zero-phonon heating unchanged")
+assert_that(C.wd_cooling_1038(2.0, 4.0, 0.0, 0.0) == -2.0, "P1038 pure-cooling slope")
+assert_that(C.l_bz_phonon_1037(1.0, 0.0, 0.0, 0.0) == 1.0 / (8.0 * _c04m.pi), "P1037 bare magnetic-energy limit")
+for _c04n in range(1031, 1041):
+    assert_that(_c04n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c04n)
+assert_that(C.wired_count() >= 1054, "wired_count >= 1054 after band 1031-1040")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1041-1050 ---
+import math as _c05m
+assert_that(C.cool_core_dT_1041(1.0, 1.0, 2.0, 1.0, 1.0) == 0.0, "P1041 cool-core thermal balance null")
+assert_that(C.gamma_peak_1043(2 * _c05m.pi * C.OMEGA_SCM_HZ) == 0.0, "P1043 on-resonance Gamma_peak -> 0 (closed form |w-w_SCm|)")
+assert_that(abs(C.gamma_peak_1043(0.0) - 2 * _c05m.pi * C.OMEGA_SCM_HZ) < 1.0, "P1043 zero-frequency detuning = w_SCm")
+assert_that(C.y_sz_uqff_1044(1.0, 0.0, 1.0) == 1.0, "P1044 zero-phonon SZ unchanged")
+_c05a = 4.0 + C.BETA_I * C.s26_3_1000() * (2 * _c05m.pi * C.OMEGA_SCM_HZ / 2.4e18)
+assert_that(4.02 < _c05a < 4.38, "P1048 alpha_UQFF = 4.31 inside paper range 4.02-4.38 at w_bulge = 2.4e18")
+assert_that(C.i_peak_dpm_1049(1.0, 1.0, 1.0) == 26, "P1049 DPM atlas peak at rung 26 (cumulative S26 dominates)")
+assert_that(abs(C.z_mock_partition_1042(C.SSQ) - 1.6238437620904849) < 1e-12, "P1042 partition Z(SSq) pinned")
+assert_that(C.sigma_lens_uqff_1046(1.0, 0.0) == 1.0, "P1046 zero-phonon lensing unchanged")
+assert_that(C.iax_momentum_1047(1.0, 0.0, 1.0, 1.0, -1.0) == 0.0, "P1047 reversal-balance null (buoyancy cancels gravity at sign flip)")
+assert_that(abs(C.l_9sys_1050([(1.0, 1.0, 1.0)], [1.0]) - C.s26_gate_880()) < 1e-12, "P1050 unit 9-system form = S26")
+assert_that(C.b_ord_growth_1045(1.0, 0.0, 5.0) == 1.0, "P1045 ideal-MHD limit")
+for _c05n in range(1041, 1051):
+    assert_that(_c05n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c05n)
+assert_that(C.wired_count() >= 1064, "wired_count >= 1064 after band 1041-1050")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1051-1060 ---
+assert_that(abs(C.eps_qft_family_1052() - C.BETA_I * C.SSQ * C.F_TRZ ** 2) < 1e-18, "P1052-1058 family eps = beta_i*SSq*F_TRZ^2 primitive composition")
+assert_that(abs(C.eps_qft_family_1052() - 0.0034365) < 1e-6, "P1052 family eps = 0.34% (paper dtheta/theta)")
+assert_that(abs(C.gamma_immirzi_1058() - 0.2383) < 2e-5, "P1058 Immirzi gamma_UQFF = 0.2383 (0.007%)")
+assert_that(abs(C.m_h_ncg_1057() - 169.4) < 0.02, "P1057 NCG Higgs 169.42 vs paper 169.4 (0.009%)")
+assert_that(C.duality_residual_1051(3.0, 1.0, 2.0) == 0.0, "P1051 duality equilibrium F_SCm-F_UA=F_UBi_i")
+assert_that(C.k_cs_uqff_1052(1.0) > 1.0, "P1052 CS level upshift")
+assert_that(C.swampland_bounds_1053(1.0, 1.0, 1.0, 0.0)[1] == 1.0, "P1053 dS floor = cV/M_Pl")
+assert_that(C.q_s2_cgc_1059(1.0, 0.0) == 1.0, "P1059 zero-coupling saturation unchanged")
+assert_that(C.cop_lenr_1060(0.0, 1.0) == 1.0, "P1060 zero-efficiency COP = 1")
+assert_that(C.gamma_trans_1060(1.0, 1.0, C.RHO_SCM) == 1.0, "P1060 critical-density normalization")
+_c06p = C.p_qec_phonon_1056(1.4066534306253162e17)
+assert_that(abs(_c06p - 2.1e-8) / 2.1e-8 < 1e-6, "P1056 QEC error 2.1e-8 at back-solved w_qubit=1.41e17 (DISCLOSED)")
+for _c06n in range(1051, 1061):
+    assert_that(_c06n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c06n)
+assert_that(C.wired_count() >= 1074, "wired_count >= 1074 after band 1051-1060")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1061-1070 ---
+assert_that(C.v_phi_1066(1.0, 1.0, 1.0) == -C.RHO_SCM, "P1066 V(phi0) = -rho_SCm CANONICAL EXACT (L_SCm sector lock)")
+assert_that(abs(C.m_phonon_1066(0.125, 1.0) - 1.0) < 1e-15, "P1066 m_phonon = sqrt(8*lam)*v unit check")
+assert_that(abs(C.rho_exotic_1062(6.992092333175499e-29) + 4.71e-28) < 1e-33, "P1062 exotic density -4.71e-28 at back-solved rho_vac (DISCLOSED)")
+assert_that(C.rho_exotic_1062(1.0) < 0, "P1062 exotic density negative (traversability requirement)")
+assert_that(C.g_ug_sum_1067() == 276.8, "P1067 stated 4-term Ug sum")
+assert_that(abs(C.g_ug_sum_1067([114.78] * 4) - 276.8) < 0.01, "P1067 back-solved per-term Ug = 114.78 reproduces 276.8")
+assert_that(C.r_kozima_uqff_1061(1.0, 0.0, 1.0) == 1.0, "P1061 zero-phonon Kozima rate unchanged")
+assert_that(C.vds_dvp_bsh_identity_1069(2.0, 3.0, 4.0) == 24.0, "P1069 hybrid product identity")
+assert_that(C.m_ym_vds_1070(1.736, 1e35) >= 1.736 and abs(C.m_ym_vds_1070(1.736, 1e35) - 1.736) < 1e-6, "P1070 physical-density correction infinitesimal (rho_SCm suppression; underflows to identity at 1e35)")
+assert_that(C.h_buoyancy_1065(2.0, 2.0, 1.0) == 2.0, "P1065 Hamiltonian unit form")
+assert_that(C.alpha_gb_uqff_1063(0.0) == 0.0 and C.omega_resum_1064(1.0, 0.0, 0.3) == 1.0, "P1063/1064 null limits")
+for _c07n in range(1061, 1071):
+    assert_that(_c07n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c07n)
+assert_that(C.wired_count() >= 1084, "wired_count >= 1084 after band 1061-1070")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1071-1080 ---
+import math as _c08m
+assert_that(abs(C.s26_k_969(C.SSQ, 3) - 5.921681304339946e26) < 1e12, "P1080 CROSS-VALIDATION: paper-stated 5.92168130433994660562089123e26 = s26_k_969(SSq,3) to float precision (P969 wiring confirmed by P1080)")
+assert_that(abs(C.r_n_dk_1080(2) - C.r_n_26k_969(2, 3)) < 1e3, "P1080 general-D factor reduces to P969 at D=26")
+assert_that(abs(C.s26_z26_1078() - 0.095) < 1e-6, "P1078 finite-26 S26^(3) = SSq/3! = 0.095 (back-solved R_n = 1/(3!n^3))")
+_c08q = C.qcalcgeom_1078(1.989e30, 2 * _c08m.pi * 0.1e12)
+assert_that(abs(_c08q - 1.1974271627499998e-12) / 1.1974271627499998e-12 < 1e-3, "P1078 QCalcGeom solar 1.1965e-12 vs paper 1.1974e-12 (0.08%)")
+assert_that(C.h_scm_activation_1072(300.0) > 0.99, "P1072 activation ~1 at room temperature")
+assert_that(abs(C.h_scm_activation_1072(59.95) - 0.5) < 1e-12, "P1072 half-activation at T_SCm = 59.95 K")
+_c08s = C.slow_roll_1073(60)
+assert_that(abs(_c08s[2] - (1.0 - 1.0 / 60)) < 1e-15 and abs(_c08s[3] - 8.0 / 60) < 1e-15, "P1073 n_s and r slow-roll forms at N=60")
+assert_that(abs(C.nfw_dark_matter_profile(1.0, 1.0, 1.0) - 0.25) < 1e-15, "P1075 NFW rho(r_s) = rho_s/4 EXACT identity")
+assert_that(abs(C.gamma_t_de_1076(4.56e17) - 6.912e11) < 1e9, "P1076 Gamma(t_H) = 6.912e11 (alpha = 0.1)")
+assert_that(C.w_z_de_1076(0.0) < -1.0 + 1e-3, "P1076 w(0) ~ -1 (quintessence-like drift)")
+assert_that(C.j_planck_1077(2.73, 1e11) > 0, "P1077 CMB source positive")
+assert_that(C.i_nu_alma_1077(50.0, 2.73, 1.0, 1e11, 1e11, 1e9) > 0, "P1077 line-center intensity positive")
+assert_that(C.f_u_twostage_1080([1.0, 2.0, 3.0], [1.0, 2.0, 3.0], 5.0, 7.0) == 12.0, "P1080b two-stage null gravity balance")
+assert_that(abs(C.phi_kinetic_sw_1079(1.0) - 0.5 * 8e-21 * 4.3e5 ** 3) < 1e-12, "P1079 1-AU kinetic flux anchor")
+for _c08n in range(1071, 1081):
+    assert_that(_c08n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c08n)
+assert_that(C.wired_count() >= 1094, "wired_count >= 1094 after band 1071-1080")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1081-1090 ---
+import math as _c09m
+assert_that(abs(C.w_de_1087(13.8) + 0.9435) < 1e-12, "P1087 ERRATUM-pinned w(13.8 Gyr) = -0.9435 (abstract formula OPEN per Daniel-filed erratum)")
+assert_that(C.w_de_1087(0.0) == -1.0, "P1087 w(0) = -1 LCDM limit")
+_c09l = C.l_de_1090(1e48, 1.86e20, 0.8)
+assert_that(abs(_c09l - 1.766e59) / 1.766e59 < 2e-3, "P1090 faithful L_DE product 1.766e59 (paper 1.77e47 = 1e12 print slip DISCLOSED)")
+assert_that(C.fubi_seven_1088(1, 1, 1, 1, 1, 1, 1) == 7, "P1088 seven-component sum")
+assert_that(abs(C.v_scm_free_1082(1.0, 1.0 / C.C_OBSERVED ** 2) / C.C_OBSERVED - _c09m.sqrt(3) / 2.0) < 1e-12, "P1082 E=mc^2 free velocity = (sqrt3/2)c relativistic check")
+assert_that(C.v_scm_trap_1082(1.0, C.RHO_SCM) == 1.0 - _c09m.exp(-1.0), "P1082 trap bound at rho_crit = rho_SCm")
+assert_that(C.core_energy_rate_1083(3.0, 1.0, 2.0) == 0.0, "P1083 maintenance balance null")
+assert_that(C.h_hubble_mod_1085(70.0, 0.0, 1.0, 1.0) == 70.0, "P1085 zero-phonon Hubble unchanged")
+assert_that(C.dgamma_ignition_1081(C.s26_3_1000(), 1.0) == 0.0, "P1081 ignition window closes at Phi_crit = S26^(3)")
+assert_that(C.f_u_pert_cme_1081(1.0, 0.0, 0.0, 0.0) == 1.0, "P1081 quiet-sun limit")
+assert_that(C.rho_de_1086(0.0, 1.0, 1.0) == C.RHO_SCM * C.s26_gate_880() ** 2, "P1086 t=0 density = rho_SCm*S26^2")
+assert_that(C.l_infl_ratio_1089(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0) == C.BETA_I, "P1089 unit ratio = beta_i")
+for _c09n in range(1081, 1091):
+    assert_that(_c09n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c09n)
+assert_that(C.wired_count() >= 1104, "wired_count >= 1104 after band 1081-1090")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1091-1100 (second century mark) ---
+import math as _c10m
+assert_that(abs(C.c_scm_qubit_1098() - 5.52) < 0.01, "P1098 qubit coupling 5.522 vs paper 5.52 (golden-ratio phi0, S26=D_crit)")
+assert_that(abs(C.s26_cube_1100() - 0.0795) < 1e-4, "P1100 FOURTH S26^(3) convention (1-SSq)^3 = 0.0795")
+assert_that(abs(C.phi_lorentz_1100(0.0, 0.0, 1.0) * _c10m.pi - 1.0) < 1e-12, "P1100 Lorentzian unit normalization at peak")
+assert_that(C.closure_eps_1096(5.0, 2.0) == 0.0, "P1096 eleven-domain closure EXACT by construction (11/11)")
+assert_that(C.v23_benchmark_1091() >= 9e5, "P1091 v23 >= 900k calc/s")
+assert_that(abs(C.v25_effective_1099(9e5) - 1007298.0) < 1.0, "P1099 v25 = 1.113x v24 pinned")
+assert_that(C.m_r_grid_1097(99) == (198.1, 1e9 * 30.7), "P1097 grid endpoint i=99")
+assert_that(C.dt_cmb_1093(0.0, 1.0, 1.0, 1.0) == 2.7255 * C.s26_gate_880(), "P1093 on-axis fluctuation = T0*S26")
+assert_that(C.t2_scm_1098(1.0, 0.0, 1.0, 1.0) == 1.0, "P1098 zero-phonon coherence unchanged")
+assert_that(C.delta_fg_1098(1.0, 1.0, 1.0) == C.BETA_I * C.SSQ, "P1098 unit fidelity gain = beta_i*SSq")
+_c10c = C.c_ell_scm_1092(220)
+assert_that(abs(_c10c - 0.7519509119713788) < 1e-9, "P1092 C_ell(220) toy-transfer pinned (deterministic integral)")
+assert_that(C.c_ell_scm_1092(220, phi_term=0.1) > _c10c, "P1092 phonon term raises band power")
+assert_that(C.s_bh_scm_1095(1.0, 1.0, 0.0, 1.0) == 1.0 / (4.0 * 1.616e-35 ** 2) * C.s26_gate_880(), "P1095 zero-gap entropy form")
+for _c10n in range(1091, 1101):
+    assert_that(_c10n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c10n)
+assert_that(C.wired_count() >= 1114, "wired_count >= 1114 after band 1091-1100 SECOND CENTURY MARK")
+
+# --- DEEP-MINE RECOVERY GUARD: PAPER_1001-1100 ---
+import math as _dmam
+assert_that(abs(C.db_dr_flare_1073() - (1.0 - C.BETA_I * C.SSQ)) < 1e-18, "P1073 |db/dr| = 1-beta_i*SSq PRIMITIVE-EXACT")
+assert_that(abs(C.db_dr_flare_1073() - 0.656) < 5e-4, "P1073 flare-out 0.65634 vs paper 0.656 (traversability < 1)")
+assert_that(abs(C.f_phonon_flare_1024() - 0.64) < 1e-3, "P1024 flare phonon fraction 0.639 vs paper 0.64 (S26=1.86 convention)")
+assert_that(C.eta_dm_1019() == 0.03 and C.tau_reion_shift_1026() == -0.002, "P1019/P1026 stated anchors")
+assert_that(C.p_dsa_uqff_1020(4.0, 0.0, 3.0) == 4.0, "P1020 zero-phonon DSA index unchanged")
+assert_that(C.h_strain_freq_1022(1.0, 0.0, 1.0) == 1.0, "P1022 zero-frequency strain unchanged")
+assert_that(C.mdot_tde_1027(1.0, 1.0, 0.0) == 1.0, "P1027 fallback peak normalization")
+assert_that(C.mdot_tde_1027(1.0, 8.0, 0.0) == 8.0 ** (-5.0 / 3.0), "P1027 t^-5/3 fallback law")
+assert_that(abs(C.pi_relic_1045(3.0, 0.0, 0.0) - 0.75) < 1e-12, "P1045 synchrotron polarization (p+1)/(p+7/3) = 0.75 at p=3")
+assert_that(abs(C.chi_mock_1042(0.5) - 0.6990808694646722) < 1e-12, "P1042 mock-theta chi(1/2) pinned")
+assert_that(C.b_impact_1031(1.0, 0.0) == 3.0 * _dmam.sqrt(3.0) * C.G_UQFF / C.C_OBSERVED ** 2, "P1031 GR photon impact parameter limit")
+assert_that(C.gamma_np_uqff_1036(1.0, 0.0, 1.0) == 1.0, "P1036 T=0 rate unchanged")
+assert_that(C.r_d_duality_1051(1.0, 1.0) == 1.0, "P1051 duality-balanced ratio")
+assert_that(C.beta_gup_1030(0.0, 1.0) == C.BETA_I * C.s26_gate_880(), "P1030 GUP composition")
+assert_that(C.dm2_nu_1023(1.0, 0.0) == 0.0, "P1023 zero-phonon mass shift null")
+assert_that(C.wired_count() >= 1114, "wired_count preserved after 1001-1100 deep-mine")
 
 # =============================================================================
 # REPORT

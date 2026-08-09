@@ -1,14 +1,16 @@
-v0.362.0: deep-capture PAPER_901-1010 complete + century deep-mine + census-method fix
+v0.363.0: deep-capture PAPER_1011-1100 complete + century deep-mine + capture audit
 
-Eleven bands (901-1010) plus the Daniel-directed deep-mine of 901-1000. Dispatches
-914 -> 1,024 (45.4% of the 2,256-paper corpus). Marquee physics: YM mass gap
-1.736 GeV EXACT via S26_eff = 8 = 2*D_PHYS; S26_exp = s26_gate identity EXACT;
-Ramanujan-weighted S26 series = Holmlid amplifier 1.453162e26 (0.0047%); W26(0) =
-(1+SSq)^26 EXACT; merger D_total(q) intercept = 1-D_GW_EROSION EXACT; BCS chain
-with 1.764 ratio EXACT; solar axiom ratio 1.536 (0.014%) and g_eff 108 m/s2.
-Census method fix: marker-position-aware truncation (P999/1000 PKG-marker-at-top
-failure mode); 7 deep-mine recoveries wired incl. DVP prime ladder (P907 p=113
-canonical). Rule 7: t_flip pi-slip, mass-gap sigma fork, 367.73/367.8 disclosed.
+Ten bands (1011-1100) plus the 1001-1100 deep-mine and the Daniel-ordered
+physics-capture audit. Dispatches 1,024 -> 1,114 (49.4% of corpus). Marquee:
+QFT-family eps = beta_i*SSq*F_TRZ^2 = 0.34% primitive back-solve (Immirzi
+0.2383, NCG Higgs 169.42); wormhole |db/dr| = 1-beta_i*SSq PRIMITIVE-EXACT;
+S26^(3) P969<->P1080 cross-validation to 16 digits with FOUR conventions
+disambiguated; first Lorentzian phonon profile; GUP 1.169 l_Pl; M-sigma 4.31;
+LENR COP ignition window closes EXACT at Phi_crit = S26^(3). Audit corrected
+the s26_3 truncation artifact (154030.8 -> 156776.75 converged, dual-route
+agreement <1e-6) and vindicated the BCS T-profile. P1065/P1081 predecessor
+gaps closed; P1087 ERRATUM-pinned; P1090 1e12 print slip disclosed.
 
-PROJECT TOTALS (measured): 4,264 functions across 8 modules; 19,483 registry-family
-rows across 14 CSVs; 1,024 of 2,256 papers wired; gate 3,716 assertions, 0 failures.
+PROJECT TOTALS (measured): 4,383 functions across 8 modules; 21,594
+registry-family rows across 14 CSVs; 1,114 of 2,256 papers wired; gate 3,854
+assertions, 0 failures.

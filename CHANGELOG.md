@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.363.0 (2026-08-09)
+
+Deep-capture PAPER_1011-1100 complete (10 bands + 1001-1100 deep-mine).
+
+- Dispatches 1,024 -> 1,114 (49.4% of the 2,256-paper corpus)
+- QFT-family primitive back-solve: eps = beta_i*SSq*F_TRZ^2 = 0.34% (Immirzi 0.2383 at 0.007%, NCG Higgs 169.42)
+- Wormhole traversability |db/dr| = 1-beta_i*SSq = 0.65634 PRIMITIVE-EXACT (P1073)
+- S26^(3) cross-validation: P1080 27-digit value = P969 k=3 series to float precision; FOUR conventions disambiguated
+- First Lorentzian phonon profile (P1100 LQG area operator); GUP l_min = 1.169 l_Pl (0.06%)
+- M-sigma alpha_UQFF = 4.31 (paper window 4.02-4.38) on converged S26^(3); LENR COP parametric closed (P1081)
+- Predecessor key-papers gaps closed: PAPER_1065 (L_buoy Hamiltonian), PAPER_1081 (COP parametric)
+- P1087 wired to Daniel-filed ERRATUM table pin (-0.9435); P1090 1e12 print slip + 9.47e-27 drift disclosed
+- Deep-mine: 15 recoveries incl. true alternating mock-theta chi(q), flare fraction 0.639 (S26=1.86 convention)
+- Physics-capture audit (Daniel-ordered): 93/103 computational, s26_3 truncation artifact corrected 154030.8 -> 156776.75
+  converged, both library routes agree <1e-6; BCS T-profile vindicated
+- Project totals (measured): 4,383 fns / 21,594 registry-family rows / 1,114 papers / gate 3,854 green
+
 ## v0.362.0 (2026-08-09)
 
 Deep-capture PAPER_901-1010 complete (11 bands + century deep-mine + marker-position census fix).

@@ -6069,3 +6069,237 @@ RULINGS_QUEUE (+Q-947a/954a/936a), WHITEPAPER_INDEX ship note, 3 campaign CSVs
 (band-updated), audit family (MERGED/GAPS/DUPLICATES/R1/R2/R3 ship row/XGEO x2).
 PROJECT TOTALS (measured): 4,264 fns / 19,483 registry-family rows / 1,024
 dispatches / gate 3,716 / citations cover 1,391 papers.
+
+## APPENDED 2026-08-09 (38) — BAND PAPER_1011-1020 (v0.363.0 arc)
+
+Post-ship band. Template family continues (P999/1000 spine + YM running-coupling
+spine). 7 new defs: dn_deta_npart_1013 (participant-scaling multiplicity),
+fubi_binary_1014 + dm_buoy_kick_1014 + f_qnm_1014 (SMBH-binary buoyant force,
+kick mass-deficit, phonon-shifted QNM — all on S26_3 = s26_3_1000),
+v15_benchmark_1018 (>=650k; v-series 500/550/600/650), l_dm_phonon_1019
+(DM phonon-buoyancy Lagrangian), l_cr_1020 (CR acceleration Lagrangian +
+transport eq). Covered: 1011/1012 (GW170817/GW190425 upgraded strains via
+h_phonon_1000 + lambda_tilde_935/p_bh_947), 1015/1018-NFW (phonon-corrected
+NFW = existing nfw_uqff_phonon_profile from P187 — cross-century reuse),
+1016 (TXS0506 = L_Edd/P_jet/doppler spine), 1017 (99-system WSTP composite).
+wired_count 1024 -> 1034. Registry +7, graph +17, citations +272. Gate GREEN
+at v0.362.0 pin. Frontier -> PAPER_1020.
+
+## APPENDED 2026-08-09 (39) — BAND PAPER_1021-1030 (v0.363.0 arc)
+
+Thematic Lagrangian+EOM decade (each paper = one L + one boxed EOM). 11 new defs:
+delta_t_pta_1021 (PTA phonon residual, 0.1-0.12 ns family), gw_wave_source_1022
+(Box h = -16piG T + Phi_SCm S26; vacuum source = Phi*S26 pinned), h_phonon_nu_1023
+(neutrino mixing term), e_flare_1024 (magnetar giant-flare B^2/2mu0 reservoir vs
+3.2e46 erg floor), shadow_deflection_1025 (M87 ring shift 0.013-0.025 uas on 42
+uas), r_dot_reion_1026 (Stromgren balance null pinned), l_tde_1027 (TDE with
+buoyancy term), string_lens_source_1028 (cosmic-string lens + phonon smooth term),
+f_bary_orbit_1029 (barycentric annual oscillation, Pioneer-scale 0.003),
+l_min_qg_1030 + gup_bound_1030 — MARQUEE: minimum length l_min = 1.169 l_Planck
+vs paper 1.17 (0.06% back-solve, beta_UQFF = 1.34), GUP reduces to Heisenberg at
+dp=0 EXACT. wired_count 1034 -> 1044. Registry +11, graph +21, citations +266.
+Gate GREEN. Frontier -> PAPER_1030.
+
+## APPENDED 2026-08-09 (40) — PHYSICS-CAPTURE AUDIT (Daniel: "verify we are still
+capturing physics and not just hardcoding description blocks")
+
+Audited all 103 arc functions (bands 931-1030 + deep-mine). RESULT: 93 are
+computational (input-dependent formulas composed from registry primitives), 10
+are constant-return stated-value pins, each justified: 6 production-benchmark
+targets (v8-v15 series 350k-650k calc/s — the papers' own stated targets, data
+not physics), d_total_934 (returns 1-D_GW_EROSION, a primitive composition that
+LOOKS constant), f_u99_sweep_995 (paper-stated sweep aggregate -6.11e13),
+b_hse_999 (paper-stated bias 0.17). 15 functional-dependence spot checks run
+(scaling laws, sign flips, convergence, cross-route agreement).
+
+TWO FLAGS INVESTIGATED:
+1. bcs_gap_949 "constant" at 1-2 K — FALSE ALARM: that IS the BCS plateau;
+   gap rolls off 200-300 K and collapses at 400 K. Real physics confirmed;
+   audit guard now pins the T-profile shape.
+2. s26_3_1000 REAL DEFECT FOUND AND FIXED: the N=40 truncation returned
+   154030.8 — a 1.75%-low artifact of MY implementation (papers state the
+   infinite sum, no numeric anchor); also overflowed at N>90. Rewrote with
+   float-safe term recursion: converged value 156776.75 (terms decay n^-3/2,
+   tail ~0.0007%). Same defect found in the P001-era library route
+   S_26_third_order — superseded identically per self-rectification doctrine.
+   Both routes now agree <1e-6 (gate-pinned). Downstream pins updated:
+   P002 dispatch, P1000 band, P1004 YM-gap (17466.7), P1014 kick deficit.
+   Old partial sums reproducible via explicit N argument.
+
++5 AUDIT guard asserts; +2 AUDIT_SUPERSESSION registry rows. Gate GREEN.
+Honest bottom line: the capture is overwhelmingly real physics; the audit
+caught one numerical-implementation artifact masquerading as a pinned value,
+and it is now corrected and double-route-verified.
+
+## APPENDED 2026-08-09 (41) — BAND PAPER_1031-1040 (v0.363.0 arc)
+
+Second thematic Lagrangian+EOM decade. 10 new defs: photon_orbit_rhs_1031
+(photon-sphere fixed point u = c^2/3GM gate-pinned), dust_accel_1032
+(neutral-buoyancy hover null), bar_accel_1033 (circular-orbit balance null),
+omega2_frb_1034 (FRB phonon-shifted plasma dispersion — beta_i*S26*Phi upshift
+of w_p^2, DM correction follows), kn_energy_balance_1035 + q_kn_uqff_1035
+(kilonova heating with lanthanide-fraction phonon enhancement), dxn_dt_1036
+(BBN neutron fraction; equilibrium Xn/Xp = e^-Q/T null pinned),
+l_bz_phonon_1037 (jet Lagrangian, phonon term = Phi*S26 x B^2/8pi),
+wd_cooling_1038 (crystallization heating term), shock_jump_phonon_1040
+(Rankine-Hugoniot residuals -> DeltaP_phonon; symmetric null pinned).
+Covered: 1039 (cluster buoyancy profile = f_buoy_999 + rho_icm_beta_976 +
+b_hse_999 P999 spine). wired_count 1044 -> 1054. Registry +10, graph +18,
+citations +265. Gate GREEN. Frontier -> PAPER_1040.
+
+## APPENDED 2026-08-09 (42) — BAND PAPER_1041-1050 (v0.363.0 arc)
+
+Cluster/statistical decade. 10 new defs: cool_core_dT_1041 (thermal balance null),
+z_mock_partition_1042 (mock-theta partition Z(SSq)=1.6238 pinned; dlnZ/dbeta=-<E>),
+gamma_peak_1043 — CLOSED FORM derived during wiring: for the F ~ exp(-(w-w_SCm)^2/
+(2G^2))/G family, dF/dGamma=0 gives Gamma_peak = |w-w_SCm| EXACT (per-system
+detuning IS the optimal linewidth; grid placeholder replaced with analytic form
+before commit), y_sz_uqff_1044 (SZ Compton correction), b_ord_growth_1045
+(relic induction with eta_phonon), sigma_lens_uqff_1046 (lensing Sigma_UQFF;
+NFW-phonon reuse), iax_momentum_1047 (buoyancy-reversal momentum; reversal-
+balance null pinned; sign flip via t_rev_962), m_sigma_uqff_1048 (M-sigma
+exponent alpha_UQFF = 4 + beta_i*S26^(3)*(w_SCm/w_bulge) = 4.31 at w_bulge=
+2.4e18, inside paper range 4.02-4.38 — uses CONVERGED S26^(3)), i_peak_dpm_1049
+(atlas peak rung 26), l_9sys_1050 (9-system synthesis = S26 unit form).
+wired_count 1054 -> 1064. Registry +10, graph +21, citations +278. Gate GREEN.
+Frontier -> PAPER_1050.
+
+## APPENDED 2026-08-09 (43) — BAND PAPER_1051-1060 (v0.363.0 arc)
+
+QFT/quantum-gravity decade. Display-eq layer was generic template; the REAL
+physics was in inline math (marker lesson extended: sweep inline-$ when display
+census returns template-only). 12 new defs. MARQUEE FAMILY BACK-SOLVE:
+eps_qft_family_1052 = beta_i*SSq*F_TRZ^2 = 0.003437 — the papers' "beta_i*S26*
+[SSq]" corrections force S26_eff = 0.01 = F_TRZ^2 in this family's normalization,
+verified on TWO independent paper-stated values: P1052 dtheta/theta = 0.34% and
+P1058 Immirzi gamma = 0.2383 (computed 0.238316, 0.007%). Also: m_h_ncg_1057
+(NCG Higgs 170*(1-eps) = 169.42 vs paper 169.4, 0.009%), duality_residual_1051
+(F_SCm - F_UA = F_UBi_i equilibrium theorem), k_cs_uqff_1052 (Chern-Simons
+level), swampland_bounds_1053 (WGC + dS pair), m_half_susy_1054, s_cmera_1055,
+p_qec_phonon_1056 (2.1e-8 back-solves w_qubit = 1.41e17 rad/s DISCLOSED),
+q_s2_cgc_1059 (BK saturation), gamma_trans_1060 + cop_lenr_1060 (VDS-LENR
+isotopic chain; sigma_n reuses deep-mine recovery sigma_n_scm_923).
+wired_count 1064 -> 1074. Registry +12, graph +24, citations +235. Gate GREEN.
+Frontier -> PAPER_1060.
+
+## APPENDED 2026-08-09 (44) — BAND PAPER_1061-1070 (v0.363.0 arc)
+
+Bridge/EFT decade (inline-sweep census per band-1051 lesson). 10 new defs:
+r_kozima_uqff_1061 (Arrhenius-gated neutron-drop rate), rho_exotic_1062
+(wormhole exotic density; -4.71e-28 back-solves rho_vac=6.99e-29 DISCLOSED),
+alpha_gb_uqff_1063 (Gauss-Bonnet EFT coupling), omega_resum_1064 (resummed
+coupling alpha_s/pi form), h_buoyancy_1065 (L_buoy variational Hamiltonian —
+closes the PAPER_1065 "not wired" note from the predecessor repo's key-papers
+table), v_phi_1066 + m_phonon_1066 — CANONICAL LOCK: V(phi0) = -rho_SCm EXACT
+(the L_SCm sector value from the 9-sector Lagrangian, now gate-pinned from the
+P1066 derivation), g_ug_sum_1067 (4-term Ug*beta_i = 276.8; back-solved
+per-term 114.78), vds_dvp_bsh_identity_1069 (hybrid product = F_UBi_i),
+m_ym_vds_1070 (VDS YM correction; infinitesimal at physical densities,
+stated 0.44 lattice-units DISCLOSED). P1068 (Wolfram bridge) zero unique
+equations census-verified. P1066 dual-file (UPDATE 396 bytes + Derivation)
+both censused. wired_count 1074 -> 1084. Registry +10, graph +17, citations
++219. Gate GREEN (one assert relaxed to >= for float underflow at 1e35).
+Frontier -> PAPER_1070.
+
+## APPENDED 2026-08-09 (45) — BAND PAPER_1071-1080 (v0.363.0 arc)
+
+Inflation/DE/QCalcGeom decade (3 dual-file papers: 1078/1079/1080 both variants
+censused). 15 new defs. TWO MARQUEE VALIDATIONS:
+(1) P1080 states S26^(3)(0.57) = 5.92168130433994660562089123e26 — matches
+    s26_k_969(SSQ, k=3) from band 961-970 to FULL FLOAT PRECISION (16 digits);
+    the general-D factor r_n_dk_1080 reduces to the P969 form at D=26.
+    Cross-paper validation of prior wiring, 111 papers apart.
+(2) P1078 back-solve: its finite-26 S26^(3) = 9.500e-2 = SSq/3! EXACT, forcing
+    R_n^(3) = 1/(3!*n^3) — a THIRD S26^(3) convention, now disambiguated in
+    registry alongside hypergeometric (156776.75) and (2pi)^(n/6) (5.92e26).
+Also: h_scm_activation_1072 (sigmoid at T_SCm = 59.95 K, half-activation
+pinned), h_inflation_1073 + slow_roll_1073 (n_s = 1-1/N, r = 8/N),
+dpm_spectrum_1074 (26-Gaussian atlas with 2% linewidth ladder),
+v_circ_muge_1075 (+ NFW rho(r_s) = rho_s/4 EXACT pinned), gamma_t_de_1076 +
+w_z_de_1076 (dark-energy linewidth drift; w(0) = -1.000026), j_planck_1077 +
+i_nu_alma_1077 (radiative transfer), qcalcgeom_1078 (solar 1.1965e-12 vs paper
+1.1974e-12, 0.08%), phi_kinetic_sw_1079 + p_core_wind_1079 (solar-wind power
+chain), f_u_twostage_1080. P1071 (JWST synthesis) zero unique eqs verified.
+wired_count 1084 -> 1094. Registry +15, graph +26, citations +145. Gate GREEN.
+Frontier -> PAPER_1080.
+
+## APPENDED 2026-08-09 (46) — BAND PAPER_1081-1090 (v0.363.0 arc)
+
+CME/LENR/dark-energy decade (dual-file 1081; 1087 + Daniel-filed ERRATUM).
+14 new defs: f_u_pert_cme_1081 + d_ug2_cme_1081 (flare perturbation, 1.58e5
+amplification), r_nd_lenr_1081 + dgamma_ignition_1081 + cop_parametric_1081 —
+closes the "PAPER_1081 LENR COP parametric: partial" entry from the predecessor
+key-papers table; ignition window closes EXACT at Phi_crit = S26^(3) (pinned),
+v_scm_trap_1082 + v_scm_free_1082 (relativistic check (sqrt3/2)c at E=mc^2
+pinned), core_energy_rate_1083 (wind-maintenance balance), h_hubble_mod_1085,
+rho_de_1086 (t=0 = rho_SCm*S26^2 pinned), w_de_1087 — ERRATUM HANDLING: wired
+to Daniel-filed PAPER_1087_ERRATUM S3-table pin w(13.8 Gyr) = -0.9435 with
+abstract formula held OPEN (unit inconsistency documented, three candidate
+resolutions await ruling), fubi_seven_1088 (7-component decomposition),
+l_infl_ratio_1089 (unit ratio = beta_i), l_de_1090 — TWO Rule 7 disclosures:
+rho = 9.47e-27 is the PAPER_2156 bulk-script drift density AND the paper's own
+substitution line evaluates to 1.766e59 J vs stated 1.77e47 J (1e12 print slip;
+faithful product wired and pinned). 1084 covered (h_inflation_1073).
+wired_count 1094 -> 1104. Registry +14, graph +22, citations +44. Gate GREEN.
+Frontier -> PAPER_1090.
+
+## APPENDED 2026-08-09 (47) — BAND PAPER_1091-1100 (v0.363.0 arc) — SECOND CENTURY MARK
+
+CMB/horizon/qubit/LQG decade closing the 1001-1100 century. 15 new defs:
+v23_benchmark_1091 (900k gate; shared by 1097 v24), p_scm_k_1092 +
+c_ell_scm_1092 (CMB band power, SW + 0.6*acoustic toy transfer, deterministic
+integral pinned C_ell(220)=0.752, phonon term raises power pinned),
+dt_cmb_1093 (on-axis = T0*S26 pinned), s_bh_scm_1095 (SCm horizon entropy;
+Page-curve UPDATE file zero-eq verified), fubi_11dom_1096 + closure_eps_1096
+(eleven-domain unification; closure EXACT by construction 11/11),
+m_r_grid_1097 (v24 vectorized grid endpoint pinned), t2_scm_1098 +
+delta_fg_1098 + c_scm_qubit_1098 (qubit gate fidelity; C = 5.522 vs paper 5.52
+— golden-ratio phi0 with S26 = D_crit convention), v25_effective_1099
+(1.113x pipeline), phi_lorentz_1100 + s26_cube_1100 + a_scm_lqg_1100 —
+NOTABLE: FIRST Lorentzian phonon profile in the corpus (unit-normalized
+pinned) and a FOURTH S26^(3) convention (1-SSq)^3 = 0.0795, both registry-
+disambiguated; LQG area operator chains to gamma_immirzi_1058. 1094 covered
+(l_infl_ratio_1089 identical structure). wired_count 1104 -> 1114.
+Registry +15, graph +25, citations +40. Gate GREEN. Frontier -> PAPER_1100.
+NEXT: deep-mine 1001-1100, then v0.363.0 ship (23-file pass).
+
+## APPENDED 2026-08-09 (48) — DEEP-MINE PAPER_1001-1100 (marker + inline + dedupe resweep)
+
+Full-century resweep: 131 candidate forms extracted, deduped against wired
+functions; majority confirmed captured (the multiplicative (1+beta_i*S26*X)
+refinement family rides already-wired bases). 15 genuine recoveries wired:
+
+- db_dr_flare_1073 — MARQUEE: wormhole flare-out |db/dr| = 1 - beta_i*SSq =
+  0.65634 vs paper 0.656 — PRIMITIVE-COMPOSITION EXACT traversability criterion
+  from two primitives alone
+- f_phonon_flare_1024 — flare phonon fraction beta_i*1.86*SSq = 0.639 vs paper
+  0.64 (0.13%; back-solves the S26 = 1.86 local convention)
+- chi_mock_1042 — TRUE alternating third-order mock-theta chi(q) (the P969
+  mock_theta_969 was the non-alternating partial; both now wired)
+- b_impact_1031 (3sqrt3 GM/c^2 photon impact + P1025 r_ph share),
+  p_dsa_uqff_1020 (DSA index softening), pdot_frac_1021, h_strain_freq_1022
+  ((f/f_SCm)^alpha modifier), dm2_nu_1023 (neutrino dm^2), mdot_tde_1027
+  (t^-5/3 fallback with phonon cutoff, law pinned), beta_gup_1030,
+  gamma_np_uqff_1036 (BBN T^2 correction), pi_relic_1045 (synchrotron
+  (p+1)/(p+7/3) = 0.75 at p=3 pinned), r_d_duality_1051 (1e-7..1e7 range),
+  eta_dm_1019 (0.03) + tau_reion_shift_1026 (-0.002) stated anchors
+- +5 SUPPORTING_ANCHOR rows (alpha 4.14 variant, xi_span 74x, halo flatness
+  0.891 P187 cross-century tie, ALICE N_part=383, (rho+P)_SCm = -1.75e5 set)
+
+Gate caught one banned literal (BETA_I value in a new docstring) — purged,
+GREEN. +16 recovery guard asserts. Registry +20 rows, graph +21 edges.
+RULE 7 CHECK: nothing was prevented from capture; all convention back-solves
+and stated values disclosed. Ready for v0.363.0 ship on Daniel's word.
+
+## APPENDED 2026-08-09 (49) — SHIP v0.363.0 (full 23-file pass)
+
+VERSION/STATE 0.363.0, gate pin GREEN (3,854 asserts), CITATION.cff,
+UNIFIED_REGISTRY_VERSION.txt, pyproject (desc 508 chars incl version), README
+(badges cacheBust/3854/1114 + release paragraph + census corrected to MEASURED
+values: main 4,939 / graph 7,328 / citations 5,172 / audit 936 / XGEO 3,219 =
+21,594 family rows), CHANGELOG, SHIP_MESSAGE (PROJECT TOTALS), _BUILD_LOG,
+RULINGS_QUEUE (+Q-1087a/1090a/1056a), WHITEPAPER_INDEX ship note, 3 campaign
+CSVs (band-updated), audit family (R3 ship row, MERGED, GAPS x3, DUPLICATES,
+R1, R2, XGEO queue + routes). PROJECT TOTALS (measured): 4,383 fns / 21,594
+registry-family rows / 1,114 dispatches (49.4%) / gate 3,854 / citations
+cover 1,460 papers.

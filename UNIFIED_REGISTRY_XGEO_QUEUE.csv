@@ -1608,3 +1608,4 @@ fwhm_phonon,lenr,native-paper,primitive-stack,2*Gamma*sqrt(2ln2),0.4710 THz,P215
 dpm_proportion_null,cosmogenesis,native-paper,primitive-stack,rho_SCm - rho_UA/10,~0 machine eps,Axiom-2 identity,PAPER_877,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 boyle_vacuum_ratio,vacuum,native-paper,primitive-stack,F_TRZ*SSq^2/(1+SSq),0.02069,three-primitive tie,PAPER_808,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 ym_gap_2dphys,YM-massgap,native-paper,DPM-common-block,Delta_YM=Lambda_QCD*S26_eff,1.736 GeV,EXACT,PAPER_971,D_PHYS,XGEO_CAMPAIGN_ROUTED,S26_eff = 8 = 2*D_PHYS primitive-locked,PAPER_971
+qft_family_eps,QFT-corrections,native-paper,DPM-common-block,eps=beta_i*SSq*F_TRZ^2,0.003437,0.34%,PAPER_1052,"BETA_I,SSQ,F_TRZ",XGEO_CAMPAIGN_ROUTED,S26_eff = F_TRZ^2 family normalization back-solve,PAPER_1058

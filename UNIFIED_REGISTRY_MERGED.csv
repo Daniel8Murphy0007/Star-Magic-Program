@@ -534,3 +534,4 @@ bsm_force_catalog,30,PAPER_831..850,11-term hierarchy; Kozima 1e6 N EXACT,f_lenr
 cosmogenesis_acp_family,25,PAPER_806..808;877,Axiom sums + DPM null + epochs,rho_vac_sum_877;u_i_877;t_end_808;v_ratio_boyle_808
 supporting_anchor_block_2,33,PAPER_801..900,stated per-system anchors (2nd sweep),SUPPORTING_ANCHOR rows
 BAND_901_1010_FAMILY,v0.362.0,S26^(3) Ramanujan spine + BCS/SCm chain + merger D_total(q) + YM 2*D_PHYS lock + solar closure,MERGED_SUMMARY,PAPER_901-1010
+BAND_1011_1100_FAMILY,v0.363.0,QFT eps=beta_i*SSq*F_TRZ^2 family + four S26^(3) conventions + Lorentzian profile + thematic Lagrangian decades,MERGED_SUMMARY,PAPER_1011-1100
