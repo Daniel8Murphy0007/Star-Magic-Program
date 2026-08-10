@@ -7774,3 +7774,82 @@ Logged as **Q-ORPHAN-PHYSICS** in RULINGS_QUEUE.md.
 
 **Ledger:** registry +10, graph +23, citations +10, gate +13 asserts, green at v0.366.0.
 Frontier advanced PAPER_1290 → **PAPER_1300**.
+
+## (89) 2026-08-10 — SHIP v0.367.0 + SHIP GUARD v2 (Daniel caught a stale README)
+
+Prepared the v0.367.0 ship (bands PAPER_1251-1300 + reservoir batches 10-13 + ORPHAN-PHYSICS
+audit). The first pass reported "23/23 files changed" and I called it verified. **Daniel:
+"README IS STALE. YOU DIDN'T UPDATE THE FILES CORRECTLY; WHAT ELSE GOT MISSED?"**
+
+He was right, and the failure was in my verifier's premise: **it checked whether files were
+TOUCHED, not whether their CONTENT was current.** Appending one CSV row makes a file "changed"
+while its prose stays nine releases out of date.
+
+**What was actually stale (found on audit, all fixed):**
+
+| File | Stale content | Age |
+|---|---|---|
+| README.md L11 | "v0.358.0 complete-compile campaign live" | 9 releases |
+| README.md L13 | entire v0.366.0 release paragraph, unreplaced | 1 release |
+| README.md L13 | "4,750 functions / 23,644 rows / 1,264 papers / gate 4,243" | 1 release |
+| README.md L78 | "Wired: 914 distinct dispatches" | ~30 releases |
+| README.md L78 | "Complete-compile frontier: PAPER_001-900" | ~30 releases |
+| README.md L9 | whitepapers badge 2255 vs 2245 measured files | long-standing |
+| CITATION.cff L56 | **a SECOND version field** still at 0.361.0 | 6 releases |
+| WHITEPAPER_INDEX L37-40 | "Campaign frontier: PAPER_328", "Distinct wired papers: 342", "94 ✓ / 248 ⚠ / 1913 ⬜" | v0.336.0 era |
+
+The CITATION.cff case is the instructive one: my bump regexed the *first* `version:` field and
+reported success. The file has two.
+
+**SHIP GUARD v2 installed — staleness now fails the gate.** It checks prose against LIVE
+measurements rather than remembered figures:
+
+- README's campaign-live line must name the current VERSION string
+- README must carry exactly ONE `**This release (vX)` paragraph, for the current version
+  (prior-release prose must be *replaced*, never accumulated)
+- README and WHITEPAPER_INDEX must state the live `len(DISPATCH)`
+- **EVERY** `version:` field in CITATION.cff must match — not just the first
+- a stale-number blacklist rejects superseded census figures verbatim
+- WHITEPAPER_INDEX must not carry v0.336.0-era frontier/census text
+
+**Guard verified to bite:** re-injecting the v0.358.0 campaign line made the gate fail with the
+correct message; restoring it returned green. A guard that has never been observed to fail is
+not a guard.
+
+**Standing rule added:** *a ship is not verified by "23 files changed." Every file's CONTENT
+must be checked against live measurements — touched is not correct.*
+
+Ship set 23/23 with content verified. Gate green.
+
+## (90) 2026-08-10 — v0.367.1 SHIP-INTEGRITY CORRECTION (v0.367.0 had already shipped stale)
+
+**Discovery during the staleness fix: Daniel had already run `ship.ps1`.** v0.367.0 is committed
+and tagged at `5e5ef0f`. The stale documentation went out. This is the v0.365.1 situation again,
+different mechanism — and the same root cause both times: **my verifier proved the wrong thing.**
+
+- v0.365.1 (previous): verifier used a lexical tag sort, so `v0.99.0` masked `v0.365.0`.
+- v0.367.1 (this): verifier checked whether files were **touched**, not whether their **content**
+  was current.
+
+Both times the verifier reported success on a ship that was wrong. Both times Daniel caught it.
+
+**v0.367.1 corrects all seven stale items** (README campaign line 9 releases old, unreplaced
+release paragraph, superseded census figures, a ~30-release-old "914 distinct dispatches" line,
+the whitepapers badge, CITATION.cff's **second** version field at line 56, and the v0.336.0-era
+WHITEPAPER_INDEX header block). No physics changed. No dispatch changed.
+
+**SHIP GUARD v2 (9 assertions) now fails the gate on stale prose** by checking it against live
+measurements — `len(DISPATCH)`, the VERSION string, every `version:` field in CITATION.cff, and a
+verbatim blacklist of superseded figures. Verified to bite before being accepted.
+
+**Touched-file count is 11/23, and that is CORRECT for this ship.** A patch release that changes
+no physics has nothing to append to the registry CSVs. Padding them with filler rows to reach 23
+would be the exact antipattern this correction exists to eliminate — manufacturing "changed"
+status without changed content.
+
+**Standing rule (refined):**
+1. Band ships touch all 23 because they carry new physics into every ledger.
+2. Correction/patch ships touch only what genuinely changed; the count is whatever it honestly is.
+3. Verification is by CONTENT checked against live measurements, never by file count.
+
+Gate 4,435 / 0. Ready for `.\ship.ps1` as v0.367.1.

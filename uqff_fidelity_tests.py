@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.367.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.367.1", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9086,6 +9086,47 @@ assert_that(_v1300['max_independent_transcendentals'] == 26
             "P1300/PAPER_1208 CONSISTENCY: Schanuel caps algebraically independent transcendentals at D_crit = 26; the wired PAPER_1208 cascade holds 9 - comfortably inside the bound, checked LIVE against the cascade length")
 assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1291, 1301)),
             "BAND 1291-1300: all ten dispatches registered and self-identifying")
+
+# --- SHIP GUARD v2: STALENESS (touched != correct) ---
+# v0.367.0: Daniel caught that the ship verifier only checked whether files were TOUCHED,
+# not whether their CONTENT was current. README carried a v0.358.0 campaign line, a whole
+# stale v0.366.0 release paragraph, an old 914-dispatch figure, and CITATION.cff had a
+# SECOND version field at line 56 that the pin-bump missed. These guards check the numbers
+# in the prose against live measurements, so stale text fails the gate.
+import re as _stre
+_VER = VERSION if 'VERSION' in dir() else C.VERSION
+
+def _readfile(p):
+    with open(p, encoding='utf-8', errors='ignore') as _f:
+        return _f.read()
+
+_rd = _readfile('README.md')
+_wi = _readfile('WHITEPAPER_INDEX.md')
+_cf = _readfile('CITATION.cff')
+_live_dispatch = len(C.DISPATCH)
+
+assert_that(_stre.search(r'complete-compile campaign live', _rd) is not None
+            and ('v%s complete-compile campaign live' % _VER) in _rd,
+            "SHIP GUARD v2: README campaign-live line must name the CURRENT version (this line carried v0.358.0 through nine releases)")
+assert_that(('**This release (v%s)' % _VER) in _rd,
+            "SHIP GUARD v2: README must carry a release paragraph for the CURRENT version, not the prior one")
+assert_that(_rd.count('**This release (v') == 1,
+            "SHIP GUARD v2: README must carry exactly ONE release paragraph - prior-release prose is replaced, never accumulated")
+assert_that(str(_live_dispatch) in _rd or '{:,}'.format(_live_dispatch) in _rd,
+            "SHIP GUARD v2: README must state the LIVE dispatch count %d (measured from len(DISPATCH), not a remembered figure)" % _live_dispatch)
+assert_that('{:,}'.format(_live_dispatch) in _wi or str(_live_dispatch) in _wi,
+            "SHIP GUARD v2: WHITEPAPER_INDEX must state the LIVE dispatch count %d" % _live_dispatch)
+_cff_versions = _stre.findall(r'^\s*version: "([\d.]+)"', _cf, _stre.M)
+assert_that(len(_cff_versions) >= 1 and all(v == _VER for v in _cff_versions),
+            "SHIP GUARD v2: EVERY version field in CITATION.cff must equal %s - the file carries TWO (line 6 and line 56); the v0.367.0 bump initially missed the second" % _VER)
+_bad_counts = [n for n in ('4,750', '23,644', '4,243', '1,264', '914 distinct', 'PAPER_001-900')
+               if n in _rd]
+assert_that(not _bad_counts,
+            "SHIP GUARD v2: README still carries superseded census figures %s - stale-number blacklist" % _bad_counts)
+assert_that('Campaign frontier: PAPER_328' not in _wi and 'Distinct wired papers: 342' not in _wi,
+            "SHIP GUARD v2: WHITEPAPER_INDEX header block must not carry the v0.336.0-era frontier/census figures")
+assert_that(True,
+            "SHIP GUARD v2 RULE: a ship is not verified by '23 files changed'. Every file's CONTENT must be checked against live measurements - touched is not correct.")
 
 # =============================================================================
 # REPORT

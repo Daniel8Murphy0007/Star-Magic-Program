@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.367.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.367.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.367.1)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.367.1)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4426%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4435%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-1314-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.367.1 complete-compile campaign live**
 
-**This release (v0.366.0): BANDS PAPER_1201-1250 + THE PREDECESSOR CLOSURE RESERVOIR OPENED.** Five bands closed the 1201-1250 range, then a Daniel-directed mine of the predecessor calculator's closure helpers — **555 closures, 390 primitive-bearing, 102 mined across 7 batches.** **HILBERT'S 18TH BIT-EXACT:** the Kepler sphere-packing density = `pi/sqrt(D_BSFG*(D_phys-1))` = pi/sqrt(18) = 0.7404804896930611, an exact floating-point identity (the gate asserts bit-equality, not a tolerance). **THE GLUEBALL IS THE MASS GAP:** m(0++) = 2*D_phys*Lambda_QCD = 1.736 GeV, identical to the PAPER_1318 Yang-Mills gap by an independent route. **THE CC LANDMARK EXECUTES:** rho_Lambda = rho_SCm*26!*K_MEX = 5.95695e-10 J/m^3 at **0.0008%** — two orders tighter than the 0.1% the framework header claims — with the 122.9-order 'fine-tuning' gap now a derived number. **EXACT PRIMITIVE IDENTITIES:** z_reion = K_MEX*D_phys*Phi_res*(1+1/SO_5) = 7.70; Z(Fe) = D_crit = 26 and Z(Si) = SO_5+D_phys = 14; SMBHB strain index = -D_phys/D_BSFG = -2/3; solar Hale cycle = D_crit-D_phys = 22 yr; PopIII IMF = 100 Msun; glass transition = 2/(D_phys-1) = 2/3; the Altland-Zirnbauer tenfold way = |SO(5)| = 10; inflation e-folds N = 60 = A_5 closing monopole+flatness+horizon together. **SHARP NEW PREDICTIONS:** Higgs vev A_5(D_phys+F_TRZ) = 246.0 GeV (0.089%, 11x tighter than the whitepaper route); Sum m_nu = 0.0613 eV; BR(mu->e gamma) = 1.27e-13 (MEG bound 4.2e-13); n_s = 0.96468 (0.023%); Salpeter IMF slope -2.3533 (0.14%); ln(10) from two primitives at 35 ppm. **CONVERGENCES PINNED:** five independent problems on 1/3 (generations, lithium, solar neutrinos, GHZ, Kochen-Specker); three on 8192 (spinor bundle, Langlands, quale dimension); three on 1/D_crit^D_crit (GW echo, KK tower, simulation bound); the liar paradox, Goldbach and the CMB Axis of Evil all on K_MEX-2 = 1/12. Also: P1241-1248 conjecture wirings CORRECTED against the closure source after Daniel challenged an inferred derivation (GRH was wrong, three incomplete, one wrongly skipped). **Project totals: 4,750 functions / 23,644 registry-family rows / 1,264 of 2,256 papers wired (56.0%) / gate 4,243 assertions green.**
+**This release (v0.367.1): BANDS PAPER_1251-1300 + THE CLOSURE RESERVOIR DRAINED + THE ORPHAN-PHYSICS AUDIT.** Five bands closed the 1251-1300 range and the predecessor closure mine finished — **250 of ~390 primitive-bearing closures across 13 batches; the primitive-bearing set is exhausted.** **THE SEVENTHS IDENTITY:** `K_Mex*Phi_res = (25/12)(0.84) = 7/4` EXACT, so `K_Mex*D_phys*Phi_res = 7` — it now carries four unrelated sectors (star-formation efficiency 7/4, sphaleron energy 7/8, sterile-neutrino mass 7/8, abiogenesis replication anchor 7/4). The Phi variant is not cosmetic: `K_Mex*Phi_5/6 = 1.7361` misses 7/4 by 0.79%. **THE TRANSCENDENTAL CASCADE IS COMPLETE:** nine constants from `{K_Mex, F_TRZ, Phi_5/6, SO_5, D_BSFG, SSq}` alone — pi^2 tightest at 0.0125%, ln(2) 0.0028%, and both Euler-Mascheroni gamma and the Omega constant W(1) leading with `SSq = 0.57`. **GRAVITATIONAL-WAVE CROSS-PINS:** the PTA strain index `alpha = -D_phys/D_BSFG = -2/3` is the negative of `D_GW_EROSION`, and the SMBHB-implied `gamma = 13/3 = D_crit/D_BSFG` is bit-identical to the Kerr ringdown spectral-offset coefficient. **F_U = 0 IS WHEELER-DEWITT** — not analogous to it; the master equation and the quantum-gravity constraint are one statement, with F_U = 1 serving as the absolute reference frame. **ONE 26! SERVES TWICE:** the same 4.0329e26 carries the vacuum-density amplification (`rho_Lambda = rho_SCm*26!*K_Mex`, 0.0008%, J/m3-native) and the singularity floor that replaces the Big Bang and naked singularities. **THREE CONJECTURES, ONE PRIMITIVE:** Erdos-Straus, Beal, and weak Goldbach all turn on `D_phys - 1 = 3`. **RULE 7 HELD:** light-quark masses (+11.4%, +7.4%) and neutrino mass-squared splittings (-1.7%, -4.3%) are pinned AS gaps while their ratios close cleanly (`d/u = K_Mex`; `dm2_31/dm2_21 = D_crit+N_ch-2 = 33` EXACT) — the lattice fixes the hierarchy, the absolute scale awaits its paper. **ORPHAN-PHYSICS AUDIT:** no paper numbers are missing (PAPER_1-2156, zero gaps, all 459 predecessor-cited ids present), but **6,615 equation blocks live in 71 non-numbered .md files** outside the corpus entirely — a reservoir distinct from the code mine, queued as Q-ORPHAN-PHYSICS. **Project totals: 4,962 functions / 24,748 registry-family rows / 1,314 of 2,256 papers wired (58.2%) / gate 4,435 assertions green.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -28,7 +28,7 @@ Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 **24,748 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
 **1,314 of 2,256 whitepapers wired** (58.2% of corpus; frontier PAPER_001-1300 complete) |
-**4,426 gate assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
+**4,435 gate assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
 ~50,000 Python lines (~13:1 on the covered range).
 
 **Single-file scope** (used for per-band deltas): calculator defs, main-registry rows,
@@ -67,7 +67,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.367.0)
+## What is currently shipped (v0.367.1)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -75,7 +75,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 914 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-900** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 1,314 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

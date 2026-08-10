@@ -1,40 +1,36 @@
-v0.367.0: bands PAPER_1251-1300 + closure reservoir DRAINED + ORPHAN-PHYSICS audit
+v0.367.1: ship-integrity correction to v0.367.0 (stale documentation)
 
-50 dispatches wired (PAPER_1251-1300), reservoir mine completed (batches 10-13, 95 defs),
-and a Daniel-directed audit of physics living outside the numbered corpus.
+No physics changed. No dispatch changed. Gate 4,435 / 0.
 
-BANDS
-- 1251-1260 cosmology anomalies: dark flow (f_LS = 1/30.15 carrying D_BSFG/D_phys = 3/2),
-  late ISW w = -1 + F_TRZ, DM candidate 1.7802 eV, neutron lifetime 879.31 s, muonic-H
-  proton radius closing BOTH via alpha and via the pure-integer 23/24 ratio, FRB 1.4 GHz
-  EXACT, Sgr A* flares mechanism-only with the 17-order scale separation disclosed.
-- 1261-1270 PTA/multimessenger/holography: alpha = -D_phys/D_BSFG = -D_GW_EROSION;
-  SMBHB gamma = 13/3 = D_crit/D_BSFG (the Kerr ringdown coefficient); BH entropy prefactor
-  = 2*Q_phonon; multimessenger 100 s EXACT, SO_5^3 reciprocal to the FRB conversion.
-- 1271-1280 foundations: rho_Lambda = rho_SCm*26!*K_Mex at 0.0008% (J/m3-native),
-  Tsirelson = 2*sqrt(D_phys/2) EXACT, U_i = 2.75e-7 bit-locked, one 26! serving both the
-  vacuum amplification and the singularity floor.
-- 1281-1290 Hilbert/Smale + holography: four restatement pairs converging on already-wired
-  lattice facts; Hilbert 6th wired self-checking against the live 9-sector Lagrangian.
-- 1291-1300 number theory: Erdos-Straus, Beal, and weak Goldbach all on D_phys - 1 = 3.
+WHY
+v0.367.0 shipped with stale docs because the verifier checked whether the 23 must-change
+files were TOUCHED, not whether their CONTENT was current. Appending one CSV row marks a
+file "changed" while its prose stays releases out of date. Daniel caught it.
 
-RESERVOIR DRAINED (250 of ~390 primitive-bearing closures, batches 1-13 complete)
-- Sevenths identity K_Mex*Phi_res = 7/4 EXACT, now in 4 sectors.
-- PAPER_1208 transcendental cascade complete: 9 constants, pi^2 tightest at 0.0125%.
-- PAPER_1196 tokamak set: 4 of 8 EXACT.
-- PAPER_1209xx constants cascade: chemistry, physiology, geophysics all integer-EXACT.
-- Euler-Mascheroni gamma and the Omega constant BOTH lead with SSq = 0.57.
+WHAT SHIPPED STALE (all corrected here)
+- README: "v0.358.0 complete-compile campaign live"           (9 releases old)
+- README: the v0.366.0 release paragraph, never replaced      (1 release old)
+- README: "4,750 fns / 23,644 rows / 1,264 papers / gate 4,243" (1 release old)
+- README: "Wired: 914 distinct dispatches", "frontier PAPER_001-900" (~30 releases old)
+- README: whitepapers badge 2255 vs 2245 measured files
+- CITATION.cff: a SECOND version field at line 56, still 0.361.0 (6 releases old)
+- WHITEPAPER_INDEX: "Campaign frontier: PAPER_328", "wired papers: 342" (v0.336.0 era)
 
-RULE 7 (pinned AS gaps, never smoothed)
-Light-quark masses +11.4% / +7.4% and neutrino splittings -1.7% / -4.3% carry real gaps
-while their RATIOS close cleanly (d/u = K_Mex; dm2_31/dm2_21 = D_crit+N_ch-2 = 33 EXACT).
-Flatness 1/D_crit^7 runs 9.2% high. Coronal temperature 1.15%. Page curve 0.404% deficit.
+The CITATION.cff case is the instructive one: the bump regexed the FIRST version field and
+reported success. The file has two.
 
-ORPHAN-PHYSICS AUDIT
-No paper numbers are missing - whitepapers/ spans PAPER_1-2156 with zero gaps and all 459
-predecessor-cited ids have files. The orphaned physics sits OUTSIDE the numbering: 71
-non-numbered .md files, the ten largest holding 6,615 equation blocks never assigned a
-PAPER number. Distinct from the code reservoir. No wiring performed; Q-ORPHAN-PHYSICS.
+SHIP GUARD v2 — staleness now fails the gate
+Nine assertions check prose against LIVE measurements, not remembered figures:
+  - the campaign line must name the current VERSION string
+  - README must carry exactly ONE release paragraph, for the current version
+  - README and WHITEPAPER_INDEX must state the live len(DISPATCH)
+  - EVERY version: field in CITATION.cff must match, not just the first
+  - a blacklist rejects superseded census figures verbatim
+  - the v0.336.0-era index header block is rejected
 
-Gate 4,426 / 0. Calculator defs 3,228. Dispatches 1,314. Registry-family rows 24,748.
-Ship set 23/23, verified by version-sorted tag diff against v0.366.0.
+Guard verified to bite: re-injecting the stale campaign line failed the gate with the correct
+message; restoring it returned green. A guard never observed to fail is not a guard.
+
+STANDING RULE
+A ship is not verified by "23 files changed." Every file's CONTENT must be checked against
+live measurements - touched is not correct.

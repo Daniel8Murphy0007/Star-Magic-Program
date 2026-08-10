@@ -34,10 +34,11 @@
 
 ## Summary
 
-- **Total whitepaper files:** 2255
-- **Campaign frontier: PAPER_328** (nuclear α-BEC LENR enhancement — N_B=29.75 Bose occupancy at T_BEC=14.52 MeV, wired v0.336.0). Range PAPER_001–280 = 294 whitepaper files (12 base numbers [8,9,10,11,12,13,14,15,16,25,26,221] have 2–3 files each); + PAPER_281–328 = **342 wired**.
-- **Distinct wired papers: 342** = `wired_count()` = `len(DISPATCH)`. Composed of **328** base-numbered `PAPER_NNN` + **14** suffixed distinct papers: the original 4 (**015b** Multi-Band GW v0.15.0, **016b** LISA WD Foreground v0.17.0, **025b** Neutrino Polarizability v0.27.0, **026b** Vector-Like Quarks v0.29.0) **+ 10 backfilled v0.286.0** (**008b–014b** GW damping series, **026c** Sterile Neutrino Mass, **221b/221c** Bubble Nebula). Suffixed papers are **distinct whitepapers** that collided on a base number — **not** variants.
-- **Index table file-row marks:** **94 ✓ CLEAN**, **248 ⚠ OPEN_RULING**, **1913 ⬜** not-touched (94 + 248 + 1913 = 2255 ✓). Wired file-rows (94 + 248 = **342**) equal `wired_count()`. (Q-249 is a non-blocking table-cleanup note covering PAPER_320/322 CR34-table typos.)
+- **Total whitepaper files:** 2245 files spanning PAPER_1-2156 (2,156 distinct numbers, **zero numbering gaps**; some base numbers carry 2-3 variant files). The index table carries 2255 file-rows.
+- **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
+- **Distinct wired papers: 1,314** = `wired_count()` = `len(DISPATCH)`.
+- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,314 because variant files share a base dispatch.
+- **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
 
 ---

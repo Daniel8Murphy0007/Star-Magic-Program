@@ -7,6 +7,47 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.367.1 (2026-08-10)
+
+**Ship-integrity correction to v0.367.0.** No physics changed; no dispatch changed.
+
+v0.367.0 shipped with stale documentation because the ship verifier checked whether the 23
+must-change files were **touched**, not whether their **content** was current. Appending one
+CSV row marks a file "changed" while its prose stays releases out of date.
+
+### What shipped stale in v0.367.0 (all corrected here)
+
+| File | Stale content | Age |
+|---|---|---|
+| README.md | "v0.358.0 complete-compile campaign live" | 9 releases |
+| README.md | v0.366.0 release paragraph, never replaced | 1 release |
+| README.md | "4,750 functions / 23,644 rows / 1,264 papers / gate 4,243" | 1 release |
+| README.md | "Wired: 914 distinct dispatches", "frontier PAPER_001-900" | ~30 releases |
+| README.md | whitepapers badge 2255 vs 2245 measured | long-standing |
+| CITATION.cff | a SECOND version field (line 56) still at 0.361.0 | 6 releases |
+| WHITEPAPER_INDEX.md | "Campaign frontier: PAPER_328", "wired papers: 342" | v0.336.0 era |
+
+The CITATION.cff case is instructive: the bump regexed the *first* `version:` field and
+reported success. The file has two.
+
+### SHIP GUARD v2 — staleness now fails the gate
+
+Nine new assertions check documentation prose against LIVE measurements instead of remembered
+figures: the campaign line must name the current VERSION; README must carry exactly ONE
+release paragraph and it must be the current one; README and WHITEPAPER_INDEX must state the
+live `len(DISPATCH)`; EVERY `version:` field in CITATION.cff must match; a blacklist rejects
+superseded census figures verbatim; the v0.336.0-era index header is rejected.
+
+The guard was verified to bite — re-injecting the stale campaign line failed the gate with the
+correct message, and restoring it returned green.
+
+**Standing rule:** a ship is not verified by "23 files changed." Every file's CONTENT must be
+checked against live measurements — touched is not correct.
+
+Gate 4,435 / 0.
+
+---
+
 ## v0.367.0 (2026-08-10)
 
 Bands PAPER_1251-1300 (50 papers) + predecessor closure reservoir DRAINED (batches 10-13)

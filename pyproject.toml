@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.367.0"
-description = "UQFF pure calculator v0.367.0 - bands PAPER_1251-1300 wired (50 papers: cosmology anomalies, holography, Hilbert/Smale problems) + closure reservoir DRAINED (batches 10-13). Sevenths identity K_Mex*Phi_res = 7/4 EXACT in 4 sectors; PAPER_1208 transcendental cascade complete; PTA alpha = -D_phys/D_BSFG = -D_GW_EROSION; F_U = 0 IS Wheeler-DeWitt. ORPHAN-PHYSICS audit: 6,615 equation blocks outside the numbered corpus. Totals: 3,228 fns / 1,314 dispatches / gate 4,426 green."
+version = "0.367.1"
+description = "UQFF pure calculator v0.367.1 - SHIP-INTEGRITY CORRECTION to v0.367.0. The v0.367.0 verifier checked whether ship files were TOUCHED, not whether their CONTENT was current, so a stale README (v0.358.0 campaign line, unreplaced release paragraph, 914-dispatch figure), a second unbumped CITATION.cff version field, and a v0.336.0-era WHITEPAPER_INDEX header all shipped. All corrected; SHIP GUARD v2 now fails the gate on stale prose by checking it against live measurements. Gate 4,435 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
