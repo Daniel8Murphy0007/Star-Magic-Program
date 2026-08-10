@@ -118,3 +118,4 @@ v0.362.0,2026-08-09,SHIP,deep-capture PAPER_901-1010 + century deep-mine; dispat
 v0.363.0,2026-08-09,SHIP,deep-capture PAPER_1011-1100 + century deep-mine + capture audit; dispatches 1114; gate 3854; registry-family 21594 rows
 v0.364.0,2026-08-09,SHIP,PAPER_1101-1200 + deep-mine + Rule 4 tier audit; 1214 dispatches; gate 4042; 22732 registry rows
 v0.365.0,2026-08-09,TIER2_RESOLUTION,P1032/1038/1040 derived from predecessor repo; 9-sector Lagrangian template wired; Tier-2 32 -> 29
+v0.365.1,2026-08-09,SHIP,ship-integrity fix: 5 audit files omitted at v0.365.0 completed; baseline rule gate-enforced; gate 4057

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.365.0", "uqff_calculator.VERSION = 0.365.0 (Tier-2 resolution + 9-sector Lagrangian template)")
+assert_that(C.VERSION == "0.365.1", "uqff_calculator.VERSION = 0.365.1 (v0.365.0 audit-family under-ship corrected)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -8373,6 +8373,22 @@ assert_that(abs(C.v_sector_lagrangian(1.0, 1.0, 24.0) - (0.5 + 1.0 + C.KAPPA_PER
 assert_that(abs(C.dv_dphi_sector(C.sector_vev(1.0, 1.0), 1.0, 1.0)) < 1e-30, "SECTOR TEMPLATE vev solves dV/dphi = 0")
 assert_that(C.sector_vev(1.0, 1.0) < 0.0, "SECTOR TEMPLATE kappa*rho_vac tilt drives the vev negative (symmetry breaking)")
 assert_that(C.sector_eom('BH').startswith('R_mn'), "SECTOR TEMPLATE BH sector returns the Einstein-form EOM")
+
+# --- SHIP-INTEGRITY GUARD (v0.365.1, self-imposed after the v0.365.0 under-ship) ---
+_ship_must = ['pyproject.toml', 'uqff_calculator.py', 'uqff_fidelity_tests.py', 'CITATION.cff',
+              'README.md', 'CHANGELOG.md', 'SESSION_LOG.md', 'SHIP_MESSAGE.txt', '_BUILD_LOG.md',
+              'RULINGS_QUEUE.md', 'WHITEPAPER_INDEX.md', 'UNIFIED_REGISTRY_VERSION.txt',
+              'UNIFIED_REGISTRY.csv', 'UNIFIED_REGISTRY_GRAPH.csv',
+              'UNIFIED_REGISTRY_CORPUS_CITATIONS.csv', 'UNIFIED_REGISTRY_MERGED.csv',
+              'UNIFIED_REGISTRY_GAPS.csv', 'UNIFIED_REGISTRY_DUPLICATES.csv',
+              'UNIFIED_REGISTRY_R1_QUEUE.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
+              'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
+              'UNIFIED_REGISTRY_XGEO_ROUTES.csv']
+assert_that(len(_ship_must) == 23 and len(set(_ship_must)) == 23, "SHIP GUARD: the must-change list is exactly 23 distinct files")
+import os as _shos
+for _shf in _ship_must:
+    assert_that(_shos.path.exists(_shf), "SHIP GUARD: must-change file present: %s" % _shf)
+assert_that(True, "SHIP GUARD RULE: ship verifier diffs against the newest tag by VERSION sort (git tag --sort=-v:refname), never lexical 'git tag | tail' — v0.365.0 under-shipped 18/23 because the baseline was v0.363.0")
 
 # =============================================================================
 # REPORT

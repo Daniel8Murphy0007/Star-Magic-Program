@@ -153,3 +153,5 @@ PAPER_801_900_citations,100,deep-capture band citations mapped (MUGE v2 + GRMHD 
 BAND_901_1010,PAPER_901-1010,citations mapped: 2000+ pairs appended across 11 bands
 BAND_1011_1100,PAPER_1011-1100,"citations mapped ~1,760 pairs across 10 bands + deep-mine"
 BAND_1101_1200,PAPER_1101-1200,citations mapped across 10 bands + deep-mine
+TIER2_RESOLUTION,PAPER_1032/1038/1040,predecessor-repo physics mined read-only (Rule E); citations mapped
+SECTOR_TEMPLATE,PAPER_100/176/223/227/230/285/348/358/359,"9-sector Lagrangian template, marker-hidden recovery"

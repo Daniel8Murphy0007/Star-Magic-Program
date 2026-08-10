@@ -199,3 +199,6 @@ Bands 1101-1200 + deep-mine + Rule 4 tier audit. Gate 4,042/0. Dispatches 1,214.
 
 ## v0.365.0 (2026-08-09)
 Tier-2 resolution (P1032/1038/1040) + 9-sector Lagrangian template. Gate 4,056/0. Tier-2 32->29.
+
+## v0.365.1 (2026-08-09)
+Ship-integrity fix: 5 audit files omitted at v0.365.0 completed. Baseline-tag rule gate-enforced. Gate 4,057/0.

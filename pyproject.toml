@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.365.0"
-description = "UQFF pure calculator v0.365.0 - TIER-2 RESOLUTION from Star-Magic predecessor physics + 9-sector Lagrangian template. P1038 white-dwarf exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT (three primitives, zero free params); P1032 dust buoyancy = 1 + F_TRZ*SSq primitive product; P1040 Rankine-Hugoniot + clamped aether. Tier-2 open 32 -> 29. Totals: 4,576 fns / 22,781 registry rows / 1,214 papers / gate 4,056 green."
+version = "0.365.1"
+description = "UQFF pure calculator v0.365.1 - completes the v0.365.0 ship: the five registry-audit files (citations, duplicates, R1, R2, XGEO queue) omitted from that release are now updated. Physics unchanged: P1038 white-dwarf exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT; P1032 dust buoyancy = 1 + F_TRZ*SSq; P1040 Rankine-Hugoniot + clamped aether; 9-sector Lagrangian template. Totals: 4,576 fns / 23,023 registry rows / 1,214 papers / gate 4,057 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

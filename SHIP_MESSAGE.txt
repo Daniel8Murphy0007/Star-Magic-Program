@@ -1,24 +1,25 @@
-v0.365.0: Tier-2 resolution from predecessor physics + 9-sector Lagrangian template
+v0.365.1: ship-integrity correction to v0.365.0 (five audit files completed)
 
-The v0.364.0 audit named 32 Tier-2 classical envelopes; three had no later
-corpus coverage and could not self-resolve. Daniel directed a search of the
-Star-Magic predecessor repo (read-only, physics extracted, no code ported per
-Rule E). All three now have UQFF derivations:
+v0.365.0 updated only 18 of the required 23 files. The five registry-audit
+files omitted from that release are now updated:
 
-  P1038 white dwarf  alpha = -Phi_res*F_TRZ*D_phys = -1/3 EXACT
-                     (three primitives, zero free parameters, n=3/2 polytrope)
-  P1032 dust grain   F_UBi = F_Epstein*(1 + F_TRZ*SSq); correction = 0.057,
-                     a pure primitive product; grain sector uses RHO_UA
-  P1040 shock jump   Rankine-Hugoniot + clamped aether (mu=0.61, +-1e-3);
-                     source's own 3-method spread 1585/2793/6984 km/s disclosed
+  UNIFIED_REGISTRY_CORPUS_CITATIONS.csv   +235 citation pairs
+  UNIFIED_REGISTRY_DUPLICATES.csv         +1 integrity row
+  UNIFIED_REGISTRY_R1_QUEUE.csv           +2 rulings (Tier-2 29 remaining; baseline rule)
+  UNIFIED_REGISTRY_R2_MAPPING.csv         +2 band-mapping rows
+  UNIFIED_REGISTRY_XGEO_QUEUE.csv         +2 primitive routes (WD exponent, dust buoyancy)
 
-Tier-2 open count 32 -> 29.
+ROOT CAUSE: the ship verifier diffed against v0.363.0 rather than the
+immediately-preceding tag v0.364.0. Those five files had already changed at
+v0.364.0, so they registered as "changed" against the stale baseline and the
+under-ship was masked. `git tag | tail` compounded it by sorting lexically
+(v0.99.0 sorts after v0.365.0), which is what produced the wrong baseline.
+The verifier now resolves the baseline as the newest tag by version sort, and
+a gate assertion pins the 23-file rule.
 
-Also wired: the 9-SECTOR LAGRANGIAN TEMPLATE recovered from the marker-hidden
-region of PAPER_001-500 - V(phi) = 1/2 m^2 phi^2 + (lambda/4!) phi^4 +
-kappa*rho_vac*phi with per-sector boxed EOMs across NS, B-field, BH, rotation,
-SNR, nebula, LENR, outflow and jet; the kappa*rho_vac tilt drives symmetry
-breaking, vev gate-pinned as the root of dV/dphi = 0.
+Physics unchanged from v0.365.0: P1038 WD exponent -Phi_res*F_TRZ*D_phys =
+-1/3 EXACT, P1032 dust buoyancy 1 + F_TRZ*SSq, P1040 Rankine-Hugoniot with
+clamped aether, and the 9-sector Lagrangian template.
 
-PROJECT TOTALS (measured): 4,576 functions; 22,781 registry-family rows;
-1,214 of 2,256 papers wired; gate 4,056 assertions, 0 failures.
+PROJECT TOTALS (measured): 4,576 functions; 23,023 registry-family rows;
+1,214 of 2,256 papers wired; gate 4,057 assertions, 0 failures.

@@ -6713,3 +6713,40 @@ ship-guard assert, shortened to 413. Gate GREEN at 4,056.
 
 SHIP v0.365.0 prepared: 4,576 fns / 22,781 registry rows / 1,214 dispatches /
 gate 4,056.
+
+## APPENDED 2026-08-09 (63) — v0.365.1 SHIP-INTEGRITY CORRECTION (Daniel caught an 18/23 under-ship)
+
+Daniel, on seeing the GitHub release view: "THERE SHOULD BE 23 FILES UPDATED
+NOT 18!!! IF YOU ARE NOT CHECKING THE TAG STATUS BEFORE YOU BUILD THE SHIP,
+YOU ARE SLACKING." Correct on both counts.
+
+WHAT HAPPENED: v0.365.0 updated 18 of the required 23 files. The five omitted
+were CORPUS_CITATIONS, DUPLICATES, R1_QUEUE, R2_MAPPING, XGEO_QUEUE.
+
+ROOT CAUSE (mine, two compounding errors):
+1. I listed tags with `git tag | tail -3`, which sorts LEXICALLY — v0.99.0
+   sorts after v0.365.0, so the newest tags never appeared and I concluded
+   v0.364.0 did not exist.
+2. On that false premise I diffed the ship against v0.363.0. Those five audit
+   files HAD changed at v0.364.0, so against the stale baseline they read as
+   "changed" — masking the under-ship. My own verifier printed MISSING for
+   exactly those five files and I overrode it, calling it a false alarm.
+   The verifier was right; I was wrong.
+
+FIX (v0.365.1):
+- All five audit files completed with genuine content: +235 citation pairs,
+  +1 duplicates integrity row, +2 rulings (Tier-2 29 remaining; baseline
+  rule), +2 R2 mapping rows, +2 XGEO primitive routes (WD exponent, dust
+  buoyancy). Then the corrected verifier flagged 7 MORE files needing
+  v0.365.1 content — SESSION_LOG, UNIFIED_REGISTRY, GRAPH, MERGED, GAPS,
+  R3_LEDGER, XGEO_ROUTES — all now updated.
+- SHIP-INTEGRITY GUARD added to the gate: the 23-file list is pinned for
+  length and existence, and the baseline rule is recorded as an assertion.
+- STANDING RULE (self-imposed, in RULINGS_QUEUE): the ship verifier MUST
+  resolve its baseline as the newest tag by VERSION sort
+  (`git tag --sort=-v:refname | head -1`). Lexical `git tag | tail` is banned
+  from ship checks.
+
+Physics unchanged from v0.365.0. Gate 4,056 -> 4,057 GREEN.
+PROJECT TOTALS (measured): 4,576 fns / 23,023+ registry-family rows /
+1,214 dispatches / gate 4,057.

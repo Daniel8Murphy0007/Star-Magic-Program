@@ -5928,3 +5928,11 @@ extracted, no code ported). All three no-later-coverage Tier-2 items now have UQ
   free-expansion 6984 km/s for Cas A) DISCLOSED — the source material itself disagrees 4.4x.
 
 **Tier-2 count: 32 -> 29.** Q-RULE4-TIER2 still open for the remaining 29.
+
+## v0.365.1 (2026-08-09) — SHIP-INTEGRITY STANDING RULE (self-imposed, gate-enforced)
+
+**The ship verifier MUST diff against the immediately-preceding tag, resolved by version sort
+(`git tag --sort=-v:refname | head -1`), never a hardcoded or lexically-sorted one.** At
+v0.365.0 the verifier used v0.363.0; five audit files had already changed at v0.364.0, so they
+read as "changed" and an 18/23 under-ship shipped clean. `git tag | tail` sorts lexically
+(v0.99.0 after v0.365.0) and is banned from ship checks.

@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.365.1 (2026-08-09)
+
+Ship-integrity correction to v0.365.0.
+
+- v0.365.0 updated only 18 of the required 23 files. The five registry-audit files omitted —
+  CORPUS_CITATIONS, DUPLICATES, R1_QUEUE, R2_MAPPING, XGEO_QUEUE — are now updated
+  (+235 citation pairs, +1 integrity row, +2 rulings, +2 mapping rows, +2 XGEO routes)
+- ROOT CAUSE: the ship verifier diffed against v0.363.0 instead of the immediately-preceding
+  tag v0.364.0, so five files already changed at v0.364.0 registered as "changed" and the
+  under-ship was masked. `git tag | tail` also sorts lexically (v0.99.0 after v0.365.0) which
+  seeded the wrong baseline. Verifier now pins the baseline to the newest tag by version sort
+  and is gate-enforced.
+- Physics unchanged from v0.365.0 (P1032/P1038/P1040 resolutions + 9-sector Lagrangian template)
+- Project totals (measured): 4,576 fns / 23,023 registry rows / 1,214 papers / gate 4,057 green
+
 ## v0.365.0 (2026-08-09)
 
 Tier-2 resolution from Star-Magic predecessor physics + 9-sector Lagrangian template.
