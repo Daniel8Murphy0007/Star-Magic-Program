@@ -535,3 +535,4 @@ cosmogenesis_acp_family,25,PAPER_806..808;877,Axiom sums + DPM null + epochs,rho
 supporting_anchor_block_2,33,PAPER_801..900,stated per-system anchors (2nd sweep),SUPPORTING_ANCHOR rows
 BAND_901_1010_FAMILY,v0.362.0,S26^(3) Ramanujan spine + BCS/SCm chain + merger D_total(q) + YM 2*D_PHYS lock + solar closure,MERGED_SUMMARY,PAPER_901-1010
 BAND_1011_1100_FAMILY,v0.363.0,QFT eps=beta_i*SSq*F_TRZ^2 family + four S26^(3) conventions + Lorentzian profile + thematic Lagrangian decades,MERGED_SUMMARY,PAPER_1011-1100
+BAND_1101_1200_FAMILY,v0.364.0,primitive closures as identities + LENR 630 eV chain + proof-set evaluator + falsifier suite,MERGED_SUMMARY,PAPER_1101-1200

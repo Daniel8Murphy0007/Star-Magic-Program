@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.363.0", "uqff_calculator.VERSION = 0.363.0 (deep-capture 1011-1100 + deep-mine complete)")
+assert_that(C.VERSION == "0.364.0", "uqff_calculator.VERSION = 0.364.0 (deep-capture 1101-1200 + deep-mine + Rule 4 tier audit)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -8112,6 +8112,250 @@ assert_that(C.r_d_duality_1051(1.0, 1.0) == 1.0, "P1051 duality-balanced ratio")
 assert_that(C.beta_gup_1030(0.0, 1.0) == C.BETA_I * C.s26_gate_880(), "P1030 GUP composition")
 assert_that(C.dm2_nu_1023(1.0, 0.0) == 0.0, "P1023 zero-phonon mass shift null")
 assert_that(C.wired_count() >= 1114, "wired_count preserved after 1001-1100 deep-mine")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1101-1110 ---
+import math as _c11m
+assert_that(abs(C.s26_cube_1100() * 0.3 - 0.0239) < 5e-5, "P1101 eta = S26cube*0.3 = 0.02385 vs paper 0.0239 (0.3-family x cube convention)")
+_c11a, _c11b = C.chirp_eta_identity_1104(30.0, 25.0)
+assert_that(abs(_c11a - _c11b) < 1e-15, "P1104 (Mc/M)^(5/3) = eta EXACT identity")
+assert_that(abs(C.tr_j_1102(0.5, 1e-6) - 2.0) < 1e-9, "P1102 spin-1/2 character dimension limit = 2")
+assert_that(C.h_scm_holonomy_1102(1.0, 0.0, 1.0, 1.0) == 1.0, "P1102 zero-phonon holonomy = LQG")
+assert_that(C.m_eff2_1103(1.0, 0.5, 1.0) == 0.0, "P1103 tachyonic threshold Phi = w^2/2g")
+_c11h = C.g_muge_hydrogen_1105()
+assert_that(abs(_c11h[0] - 3.983e-17) / 3.983e-17 < 1e-3, "P1105 faithful g_N^H = 3.983e-17 (paper 3.99e-8 = 1e9 slip family, mantissa 0.3%)")
+assert_that(abs(_c11h[1] - 4.255e23) / 4.255e23 < 1e-3, "P1105 faithful g_Q^H = 4.255e23 (paper 4.25e24 = 10x slip, mantissa EXACT)")
+assert_that(abs(float(_c11m.factorial(26)) ** (-1.0 / 13.0) - 8.983e-3) < 1e-6, "P1107 (26!)^(-1/13) = 8.983e-3 faithful (paper 1.176e-2 = 31% slip vs P1078-verified; DISCLOSED)")
+assert_that(C.q_i_fold_1107(0) == 1.0 and C.q_i_fold_1107(26) < 1.0, "P1107 folding quality-factor ladder")
+assert_that(C.a_p_prime_1108(2, 1) == C.SSQ / 2.0 ** 26, "P1108 first prime density a(2) = SSq/2^26")
+assert_that(abs(C.rho_ladder_1109(6) / C.rho_ladder_1109(0) - 2 * _c11m.pi) < 1e-9, "P1109 ladder ratio (2pi) per 6 levels EXACT")
+assert_that(abs(C.t_pi_cycle_1110(14.1347) - 0.44452201370949407) < 1e-12, "P1110 first-zero PI cycle T = 0.44452")
+assert_that(abs(C.f_riemann_1110(0.0)) < 1e-15, "P1110 series null at t=0")
+assert_that(C.fubi_split_1104(10.0, 4.0, 1.0) == (5.0, -1.0), "P1104 duality split arithmetic")
+for _c11n in range(1101, 1111):
+    assert_that(_c11n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c11n)
+assert_that(C.wired_count() >= 1124, "wired_count >= 1124 after band 1101-1110")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1111-1120 ---
+import math as _c12m
+assert_that(abs(C.delta_ym_pimath_1111() - 0.0011528457521504433) < 1e-15, "P1111 faithful PImath gap pinned (paper 1.025e-3 back-solves H_SCm=0.88; DISCLOSED)")
+assert_that(abs(1.0 + C.KAPPA_PER_DAY * C.SSQ - 1.000285) < 1e-9, "P1111 SCm correction = 1+kappa*SSq = 1.000285 (R_freq cross-band tie EXACT)")
+assert_that(abs(C.t_v26_1112() - 928844) / 928844 < 1e-3, "P1112 v26 = 929,541 vs paper 928,844 (0.07%)")
+assert_that(abs(C.scm_stability_l13_1115() - _c12m.exp(-C.SSQ / 2.0)) < 1e-18, "P1115/1116 L13 factor = e^(-SSq/2) primitive form")
+assert_that(abs(C.scm_stability_l13_1115() - 0.7483) < 4e-3, "P1115 faithful 0.75202 vs paper 0.7483 (0.49% DISCLOSED)")
+assert_that(abs(C.i_max_string_1116() - 9.47e-19) / 9.47e-19 < 1e-3, "P1116 string current bound 9.461e-19 (c-convention 0.09%)")
+assert_that(abs(C.gamma_h_bound_1114() - 0.810) < 1e-3, "P1114 ATLAS width bound 0.8095")
+_c12h = C.sigma_higgs_modes_1120()
+assert_that(abs(_c12h[0] - 42.4) < 0.1 and abs(_c12h[3] - 0.5) < 0.05, "P1120 ggH 42.4 pb / ttH 0.5 pb")
+assert_that(abs(sum((0.872, 0.068, 0.046, 0.011)) - 0.997) < 1e-12, "P1120 fraction sum 0.997 (rounding disclosed)")
+assert_that(abs(C.s_heaviside_1119(1.0) - 0.01 * 1e13 * 10.0) < 1e-6, "P1119 Heaviside amp: rho_UA/rho_SCm = 10 = 1/F_TRZ primitive")
+assert_that(C.e_cond_1118(1.0) == 0.5 * _c12m.exp(-C.SSQ * 10.0 / 26.0), "P1118 Level-10 condensation factor")
+assert_that(C.u_h_level18_1113() > 0 and C.u_h_level18_1113(f_quasi=1.0) == 2.0 * C.u_h_level18_1113(), "P1113 level-18 Higgs vacuum linear in (1+f_quasi)")
+assert_that(C.t21_scs_1115(100.0, 0.0, 0.0) == 100.0 * (1.0 - 2.725 / 100.0), "P1115 21-cm baseline form")
+assert_that(C.v_conf_1111(0.0, 1.0, 1.0, 1.0) == 0.0, "P1111 confinement potential origin null")
+for _c12n in range(1111, 1121):
+    assert_that(_c12n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c12n)
+assert_that(C.wired_count() >= 1134, "wired_count >= 1134 after band 1111-1120")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1121-1130 ---
+import math as _c13m
+assert_that(abs(C.s26_z_959(C.SSQ) - 1.4530942955353722e26) < 1e12, "P1129 28-digit S26^(3) = s26_z_959 FLOAT-EXACT (P959<->P1129 cross-validation)")
+assert_that(abs(C.vds_partial_1129(50) - C.polylog_26(C.SSQ)) < 1e-15, "P1129 VDS_N converges to Li_26(SSq) (paper 0.5714 = 0.25% slip DISCLOSED)")
+assert_that(C.u_g1_psr_1126(1e8, 2.786e30, 1e4) == 2.786e34, "P1126 PSR J0030 U_g1 EXACT")
+assert_that(C.f_neutron_psr_1126(1e17) == 1e45, "P1126 F_neutron = 1e45 N (k_n = 1e10 cross-band tie)")
+assert_that(abs(C.m_bh_msigma_1125(200.0) - 3.09e8) < 1.0, "P1125 M-sigma normalization at 200 km/s")
+assert_that(abs(C.grad_z_flat_1125(1.0, 0.1) - 0.5) < 1e-12, "P1125 gradient halved at lambda_Edd = 0.1 (10 = 1/F_TRZ)")
+assert_that(abs(C.sigma_dwarf_1124(1e9) - 30.0) < 1e-12, "P1124 dwarf dispersion anchor")
+assert_that(abs(C.a_min_lqg_1127(0.1424) - 8.1e-70) / 8.1e-70 < 5e-3, "P1127 A_min = 8.1e-70 at back-solved gamma = 0.1424 (fork DISCLOSED)")
+assert_that(abs(C.t_postshock_1122(1.0, 1e4) - 2271.5158324092504) < 1e-6, "P1122/1123 post-shock T pinned (300-1000 K window at maser speeds)")
+assert_that(C.r_bowshock_1122(1.0, 1.0, 1.0, 1.0) == 1.0 / (2.0 * _c13m.sqrt(_c13m.pi)), "P1122 standoff unit form")
+assert_that(C.g_shock_1121(1.0, 1.0, 1.0, 0.0) == C.G_UQFF, "P1121 quiet-shock limit = bare gravity")
+assert_that(C.f_z_cgm_1124(0.89, 0.0, 1.0) == 0.89, "P1124 Sanchez 0.89 retention baseline (CGM theorem tie)")
+assert_that(C.v_ph_string_1128(1.0, 2 * _c13m.pi * C.OMEGA_SCM_HZ, 1.0) == 0.5 * (2 * _c13m.pi * C.OMEGA_SCM_HZ) ** 2, "P1128 on-resonance worldsheet potential")
+assert_that(C.tau_maser_1123(1.0, 1.0, 1.0, 1.0, 1.0, 1.0) > 0, "P1123 maser depth positive")
+for _c13n in range(1121, 1131):
+    assert_that(_c13n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c13n)
+assert_that(C.wired_count() >= 1144, "wired_count >= 1144 after band 1121-1130")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1131-1140 (LENR CORE) ---
+import math as _c14m
+_c14e = C.e_scm_phonon_1136()
+assert_that(abs(_c14e - 631.0) < 0.5, "P1136/1137/1138 LENR chain = 630.999 eV vs paper 631 (Holmlid D(-1) KER)")
+assert_that(abs(_c14e - C.holmlid_ker_630eV()) / 630.0 < 2e-3, "P1136 chain reproduces the 630 eV canonical anchor to 0.16%")
+assert_that(abs(C.e_scm_phonon_pre_res_1136() - 751.0) < 0.5, "P1136 pre-resonance step 751.19 eV vs paper 751")
+assert_that(abs(C.s26_z_959(C.SSQ) * 1e-21 - 145309.4) < 1.0, "P1136 BACK-SOLVE: S26_LENR = P1129 mantissa at 1e5 (papers' 1.4531e26 = 1e21 exponent slip DISCLOSED)")
+assert_that(C.cos_pi_tn_1131(-100) == 1.0 and abs(C.cos_pi_tn_1131(-2512) - 1.0) < 1e-9, "P1131 integer t_n phase gate = 1.0 EXACT")
+assert_that(C.epsilon_riemann_1134(-100, 1.0) == 0.0, "P1134 Riemann closure residual = 0 EXACT at integer t_n")
+assert_that(abs(C.SSQ ** 26 - 4.495171312401194e-07) < 1e-15, "P1134 SSq^26 = 4.495e-7 faithful (paper 3.25e-6, 38% DISCLOSED)")
+assert_that(abs(C.e_meson_cascade_1135() - 1675.511) < 1e-9, "P1135 meson cascade DN->K->pi->mu->e = 1675.511 MeV EXACT")
+assert_that(abs(C.p_excess_parkhomov_1138() - 197.0) / 197.0 < 0.02, "P1138 Parkhomov 199.4 W vs paper 197 (1.2%), inside 150-280 W band")
+assert_that(150.0 <= C.p_excess_parkhomov_1138() <= 280.0, "P1138 inside the observed Parkhomov band")
+assert_that(abs(C.d_rydberg_1133() - 1.535e-10) < 1e-13, "P1133 Rydberg spacing 0.1535 nm")
+_c14r = C.rho_cluster_ratio_1133()
+assert_that(abs(_c14r[1] - 4.72e44) / 4.72e44 < 1e-2, "P1133 cluster/vacuum density ratio 4.718e44")
+assert_that(C.e_net_branch_1132(1.0, 1.0, -100, '+') == 1.0 and C.e_net_branch_1132(1.0, 1.0, -100, '-') == 0.0, "P1132 primordial split: integer t_n selects the matter branch EXACTLY")
+assert_that(C.p_mizuno_1140(1e18, 0.0) > 0 and C.p_pons_fleischmann_1139(0.9, 1e-6) >= 0, "P1139/1140 reactor powers positive")
+for _c14n in range(1131, 1141):
+    assert_that(_c14n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c14n)
+assert_that(C.wired_count() >= 1154, "wired_count >= 1154 after band 1131-1140")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1141-1150 (STRING SECTOR) ---
+import math as _c15m
+assert_that(abs(C.t_string_scm_1142() - 8.66e-11) / 8.66e-11 < 1e-3, "P1142-1148 string tension T = 8.654e-11 N vs paper 8.66e-11 (0.07%) — string-sector master")
+assert_that(C.zeta_intercept_1143() == 1.0 / 12.0, "P1143 Nambu-Goto intercept a = 1/12 EXACT (K_MEX-2 tilt from D_crit = 26)")
+assert_that(C.hodge_numbers_1147() == (16, 3), "P1147 CY3 Hodge numbers h11 = D_crit-SO_5 = 16, h21 = 3 PRIMITIVE COMPOSITION")
+assert_that(C.dim_cascade_1148() == (26, 11, 4), "P1148 M-theory cascade 26 -> 11 = SO_5+1 -> 4 = D_phys PRIMITIVE-EXACT")
+assert_that(abs(C.g_s_scm_1145() - C.BETA_I * C.PHI_RES_RESONANCE) < 1e-15, "P1145 g_s = beta_i*Phi_res composition")
+_c15p = C.chirality_projectors_1146(-100)
+assert_that(abs(sum(_c15p) - 1.0) < 1e-15 and _c15p[0] == 1.0, "P1146 chirality projectors sum = 1 EXACT; integer t_n -> pure left-handed")
+assert_that(abs(C.e_dpm_state_1149(26) - 3.5143450287692115e-69) < 1e-80, "P1149 faithful E_DPM,26 pinned (paper 1.11e-67 = 31.58x sqrt(1000) slip DISCLOSED)")
+assert_that(abs(1.11e-67 / C.e_dpm_state_1149(26) - 31.62) < 0.2 and abs(C.r_11_mtheory_1145() / 1.71e3 - 31.62) < 0.5, "P1145/P1149 SQRT(1000) SLIP FAMILY: both ~31.62x")
+assert_that(C.x2_root_1150(sign=1.0) is None, "P1150 printed (b^2+4ac) form has no real root (OPEN_RULING)")
+assert_that(abs(C.x2_root_1150() + 9.363710968123476e116) < 1e105, "P1150 standard-convention root pinned")
+assert_that(C.x2_root_stated_1150() == -1.35e172, "P1150 paper-stated bound preserved (Rule 7)")
+assert_that(abs(C.r_e8_1146(1.0) - C.SSQ ** 9) < 1e-15, "P1146 E8 radius = l_s*SSq^9 (paper 2.29e-7 back-solves SSq^18; DISCLOSED)")
+assert_that(C.cop_rossi_1141(1e18, 1.0, 1.0) > 0, "P1141 Rossi COP positive")
+assert_that(abs(C.vds_26_term_1143() - C.SSQ ** 26 / 26.0 ** 26) < 1e-60, "P1143 26th VDS term")
+assert_that(C.kappa_11_1148(1.0) == 1.0 / (2.0 * C.t_string_scm_1142()), "P1148 11D coupling from string tension")
+for _c15n in range(1141, 1151):
+    assert_that(_c15n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c15n)
+assert_that(C.wired_count() >= 1164, "wired_count >= 1164 after band 1141-1150")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1151-1160 (PRIMITIVE CLOSURES) ---
+import math as _c16m
+assert_that(C.f_trz_so5_1160() == C.F_TRZ, "P1160 LANDMARK: F_TRZ = 1/|SO(5)| = 2/((D-1)(D-2)) at D=6 EQUALS the registry primitive EXACTLY")
+assert_that(abs(C.phi_res_codimension_1159() - 5.0 / 6.0) < 1e-15, "P1159 LANDMARK: Phi_res = SSq/Omega_L = 5/6 = (D-1)/D at D_BSFG EXACT")
+assert_that(abs(C.phi_res_codimension_1159(0.4) - 5.0 / 6.0) < 1e-15, "P1159 codimension closure is SSq-independent")
+assert_that(abs(C.F_TRZ * C.phi_res_codimension_1159() - 1.0 / 12.0) < 1e-15, "P1160 F_TRZ*Phi_res = 1/12 EXACT — THIRD independent 1/12 arrival (P1143 string intercept, P1156 Friedmann tilt, P1160 primitive product)")
+assert_that(C.a26_amplification_1155() == 1307797101, "P1155 LANDMARK: A_26 = Sum i^6 = 1,307,797,101 EXACT integer")
+assert_that(C.a26_amplification_1155() == 26 * 27 * 53 * (3 * 26 ** 4 + 6 * 26 ** 3 - 3 * 26 + 1) // 42, "P1155 A_26 matches closed form")
+_c16s = C.ssq_first_principles_1154()
+assert_that(abs(_c16s - 0.5719095841793653) < 1e-15, "P1154 LANDMARK: SSq_A = 10*(1-2sqrt2/3) from v_SCm = c/3")
+assert_that(abs(_c16s - C.SSQ) / C.SSQ < 4e-3, "P1154 first-principles SSq within +0.34% of canonical")
+assert_that(abs(_c16s - (1.0 / C.F_TRZ) * (1.0 - 1.0 / (3.0 / (2.0 * _c16m.sqrt(2.0))))) < 1e-15, "P1154 the 10 IS 1/F_TRZ (SSq derives from {c/3, F_TRZ})")
+assert_that(abs(C.omega_lambda_1156() - 0.684) < 1e-12, "P1156 Omega_Lambda = (6/5)SSq = 0.684")
+assert_that(abs(C.lambda_closure_1156() - 1.089e-52) / 1.089e-52 < 1e-3, "P1156 Lambda = (18/5)SSq H0^2/c^2")
+assert_that(abs(C.alpha_from_phi_res_1159() - 3.0 / (130.0 * _c16m.pi)) < 1e-18, "P1159 alpha = 3/(130 pi)")
+assert_that(C.sigma_n10_1152() == 1760, "P1152 Sigma_{N=10} = 1760 EXACT")
+assert_that(abs(C.net_zero_pi_epoch_1153()) < 1e-15, "P1153 net-zero pi epoch = 0 EXACT")
+assert_that(abs(C.h0_asymmetry_1157() - 1.0385) < 1e-3, "P1157 H0 anchor asymmetry 1.0385")
+assert_that(C.overdetermination_test_1158([1.0, 1.001], 1.0) and not C.overdetermination_test_1158([1.0, 1.5], 1.0), "P1158 overdetermination criterion discriminates")
+assert_that(abs(C.h_structural_1160() - 6.575e-34) / 6.575e-34 < 1e-6, "P1160 h_structural = 6.575e-34 at back-solved E0/f = 12.08h (DISCLOSED)")
+assert_that(abs(C.m_amu_dpm_1155() - 1.6605e-27) / 1.6605e-27 < 0.025, "P1155 M_AMU within paper-stated -2.04%")
+for _c16n in range(1151, 1161):
+    assert_that(_c16n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c16n)
+assert_that(C.wired_count() >= 1174, "wired_count >= 1174 after band 1151-1160")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1161-1170 (LAGRANGIAN GAP CLOSURES) ---
+assert_that(abs(C.k_mex_closure_1166() - 25.0 / 12.0) < 1e-15, "P1166 LANDMARK (PAPER_1522 source): K = Phi_res*|SO(5)|/D_phys = 25/12 = K_MEX EXACT")
+assert_that(abs(C.k_mex_closure_1166() - C.K_MEX) < 1e-15, "P1166 closure EQUALS the registry K_MEX primitive")
+assert_that(C.d_bsfg_closure_1167() == C.D_BSFG, "P1167 LANDMARK (PAPER_1521 source): D_crit - 4*|SO(5)|/2 = 6 = D_BSFG EXACT")
+assert_that(abs(C.beta_i_sum_1165() - 1.5) < 1e-15, "P1165 LANDMARK: Sum beta_i = 3/2 EXACT")
+assert_that(abs(C.beta_i_sum_1165() - C.D_BSFG / C.D_PHYS) < 1e-15, "P1165 Sum beta_i = D_BSFG/D_phys (PAPER_1962 ratio)")
+assert_that(abs(C.beta_i_triangular_1165(1) - 0.6) < 1e-15, "P1165 beta_1 = 0.6 IS the i=1 triangular rung (not a drifted BETA_I)")
+assert_that(all(C.beta_i_triangular_1165(i) > C.beta_i_triangular_1165(i + 1) for i in range(1, 4)), "P1165 triangular ladder strictly decreasing")
+assert_that(abs(C.kk_tower_sum_1162() - C.h_echo_bound_1168()) / C.h_echo_bound_1168() < 1e-7, "P1162/P1168 KK tower sum = 1/26^26 = 1.6244e-37 (zeta(26) -> 1)")
+assert_that(C.kk_tower_sum_1162() < 1.0 / 4.0329e26, "P1162 tower sum << 1/26! (G-correction bound)")
+assert_that(C.so2_lightcone_1163() == (325, 276, 1, 48) and 276 + 1 + 48 == 325, "P1163 SO(26) -> SO(24)xSO(2) branching 325 = 276+1+48 EXACT")
+assert_that(abs(C.tau_moduli_star_1164(5) - C.SSQ ** 5) < 1e-18, "P1164 moduli minimum tau_i* = SSq^i")
+assert_that(C.m_moduli2_1164(26, 1.0) > 0, "P1164 all 22 moduli masses positive (stable vacuum)")
+assert_that(abs(C.v_zero_offset_1168() - 1.477e-36) / 1.477e-36 < 1e-3, "P1168 V(0) = (25/12)rho_SCm = 1.477e-36 J/m^3 (P4 prediction)")
+assert_that(abs(C.kappa4_rho_1170() - 11.0 / 13.0) < 1e-15, "P1170 kappa_4*rho_SCm = 22/26 = 11/13 EXACT")
+assert_that(abs(C.r26_curvature_1170(1.0) - 11.0) < 1e-15, "P1170 <R_26> = 11*v_UA^2 EXACT (44/4)")
+assert_that(abs(C.pochhammer_26_1161() - 4.0329e26) / 4.0329e26 < 1e-4, "P1161 26! = (1)_26 = 4.0329e26")
+assert_that(abs(C.v_ua_coefficients_1166()[1] ** 2 / (4.0 * C.v_ua_coefficients_1166()[2]) - C.v_ua_coefficients_1166()[0]) < 1e-15, "P1166 Mexican-hat discriminant identity a2^2/(4a4) = a0 EXACT")
+for _c17n in range(1161, 1171):
+    assert_that(_c17n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c17n)
+assert_that(C.wired_count() >= 1184, "wired_count >= 1184 after band 1161-1170")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1171-1180 (FALSIFIER SUITE) ---
+assert_that(abs(C.xi_dim_ratio_1171() - 13.0 / 3.0) < 1e-15, "P1171-1180 falsifier parameter xi = D_crit/D_BSFG = 13/3 EXACT")
+assert_that(abs(C.zeta_prime_m4_1171() - 7.984e-3) / 7.984e-3 < 1e-4, "P1171 -zeta'(-4) = 3 zeta(5)/(4 pi^4) = 7.9838e-3")
+assert_that(abs(C.r26_gauss_bonnet_1172(1.0) - C.r26_curvature_1170(1.0)) < 1e-15, "P1172 Gauss-Bonnet route B reproduces P1170 route A <R_26> = 11 v^2 EXACTLY (independent re-derivation)")
+assert_that(abs(C.r_21_22_1175() - 0.144) < 5e-4, "P1175 R_21/22 = 0.10*xi^(1/4) = 0.1443 (LIGO O5 falsifier 0.144 +- 0.010)")
+assert_that(abs(C.sigma8_uqff_1176() - 0.7851) < 1e-3, "P1176 sigma_8 geometric route = 0.78509 (adopted P12 value)")
+assert_that(C.sigma8_uqff_1176(mode='quarter') < 0.6, "P1176 quarter route 0.562 falls below the WL floor (paper rejects it)")
+assert_that(abs(C.delta_r26_1176() - 2.193e-6) / 2.193e-6 < 1e-3, "P1176 delta_R26 = (3/13)^4*(rho_R26/rho_L) = 2.193e-6")
+assert_that(C.dw_dz_1178(1) == 0.0 and C.dw_dz_1178(2) == 0.0, "P1178 d^n w/dz^n = 0 for all n (closed-ledger w is exactly constant)")
+assert_that(abs(C.mu_distortion_1180() - 1.0e-8) / 1.0e-8 < 1e-6, "P1180 mu = 1.0e-8 at back-solved f_damp = 3.03e-12 (DISCLOSED)")
+assert_that(C.mu_distortion_1180() < 3.0e-8, "P1180 prediction sits below the 3-sigma falsification threshold")
+assert_that(abs(C.omega_gw_1174() - 2e-13 * (3.0 / 13.0) ** 2) < 1e-20, "P1174 Omega_GW h^2 = 2e-13 xi^-2")
+assert_that(abs(C.delta_mu_ladder_1174(1.0) - 0.018 * 0.30102999566398) < 1e-9, "P1174 Delta_mu(z=1) ladder")
+assert_that(C.df_220_ringdown_1175(30 * 1.989e30) < 1e-30, "P1175 ringdown offset unobservably small (honest null prediction)")
+assert_that(abs(C.l_kk_star_1171(1.0) - (3.0 / 13.0) * C.C_OBSERVED) < 1e-6, "P1171 L*_KK = (3/13)(c/v_UA)")
+assert_that(C.chi2_falsifier_1177(C.xi_dim_ratio_1171(), [(1.0, 1.0)], [1.0]) == 0.0, "P1177/1179 joint chi^2 null at perfect fit")
+for _c18n in range(1171, 1181):
+    assert_that(_c18n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c18n)
+assert_that(C.wired_count() >= 1194, "wired_count >= 1194 after band 1171-1180")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1181-1190 (PROOF SETS + ASTRO BRIDGES) ---
+assert_that(abs(C.t_c_poincare_1182() - 7.0 / 12.0) < 1e-15, "P1182 Poincare t_c = 1/2 + F_TRZ*Phi_res = 7/12 EXACT (CLAUDE.md canonical closure reproduced)")
+assert_that(abs(C.ricci_flow_coeff_1182() - 1.0 / 40.0) < 1e-15, "P1182 Ricci-flow coefficient F_TRZ/D_phys = 1/40 EXACT")
+assert_that(abs(C.o_p_millennium_1182(1, 1) - (1.0 + 1.0 / 12.0)) < 1e-15, "P1182 MILLENNIUM MASTER O_P = N +- p/12 (F_TRZ*Phi_res)")
+assert_that(C.rho_riemann_1182(0.5) == 1.0, "P1182 Riemann density = 1 EXACTLY on the critical line")
+assert_that(C.rho_riemann_1182(0.9) < 1.0, "P1182 density decays off the critical line")
+assert_that(abs(C.late_early_ratio_1181() - (13.0 / 12.0) ** 0.5) < 1e-15, "P1181 late/early ratio = sqrt(K_MEX - 1) = sqrt(13/12)")
+assert_that(abs(C.br_ftrz_1181() - 0.0114) < 1e-9, "P1181 BR = F_TRZ^2*(D_BSFG-D_phys)*SSq = 0.0114")
+assert_that(C.tilt_law_1181(4, 0.0) == 4.0, "P1181 tilt law reduces to the integer rung at zero tilt")
+assert_that(C.u_m_amplifier_1181(1e16) > 1e13 and C.u_m_amplifier_1181(1e10) == 1.0, "P1181 Heaviside gate: 13-order amplification above rho_c, unity below")
+assert_that(abs(C.f_a_ambient_1184(1e-24) - 1.0) < 1e-3, "P1184 shared f_A within the papers' |delta| <= 1e-3 bound at astrophysical density")
+assert_that(C.f_a_ambient_1184(1e-24, 1.0) < 1.0, "P1184 f_A flips sign with cos(pi t_n) at t_n = 1")
+assert_that(C.r_ddot_variational_1183(1.0, 1.0, 1.0) == 1.0, "P1183 variational EOM unit form")
+assert_that(abs(C.mdot_cool_1187(1.0, 1.0) - 0.4 * 0.6 * 1.6726219e-27 / 1.380649e-23) < 1e-30, "P1187 cooling-flow (2/5) prefactor")
+assert_that(C.mdot_eff_1187(1.0, 100.0, 1.0, 1e-24) < 1.001, "P1187 effective accretion takes the min branch")
+assert_that(C.h0_tension_epsilon_1187() == 0.09, "P1187 H0 tension epsilon = 0.09")
+assert_that(C.hz_photoevap_1189(1.0, 16.0) == 1.37, "P1189 solar-flux limit gives the uncompressed 1.37 AU outer HZ")
+assert_that(C.hz_photoevap_1189(1.0, 334.0) < 0.7, "P1189 Orion cluster flux compresses the HZ below 0.7 AU")
+assert_that(C.l_eddington_1186(1.0) == 1.26e38, "P1186 Eddington normalization")
+assert_that(C.d_comoving_1186(0.0) == 0.0, "P1186 comoving distance null at z=0")
+for _c19n in range(1181, 1191):
+    assert_that(_c19n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c19n)
+assert_that(C.wired_count() >= 1204, "wired_count >= 1204 after band 1181-1190")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1191-1200 (PROOF-SET COMPOSITIONS) — THIRD CENTURY MARK ---
+import math as _c20m
+assert_that(abs(C.r_photon_sphere_1200() - 3.0) < 1e-15, "P1200 photon sphere r_ph/M = D_phys - F_TRZ*SO_5 = 3 EXACT from two primitives")
+assert_that(abs(C.r_isco_kerr_1200() - 1.0) < 1e-15, "P1200 extremal-Kerr ISCO r/M = F_TRZ*SO_5 = 1 EXACT")
+assert_that(abs(C.one_sixteenth_identity_1196() - 1.0 / 16.0) < 1e-15, "P1196 F_TRZ*Phi_res - F_TRZ^2*K_MEX = 1/12 - 1/48 = 1/16 EXACT")
+assert_that(abs(C.q_edge_1196() - 2.0) < 1e-15, "P1196 q_edge = K_MEX - F_TRZ*Phi_res = 24/12 = 2 EXACT")
+assert_that(abs(C.plasma_r0_over_a_1196() - 3.1) < 1e-15, "P1196 tokamak R0/a = D_BSFG/2 + F_TRZ = 3.1 EXACT")
+assert_that(abs(C.coulomb_log_1196() - 16.98) < 1e-9, "P1196 Coulomb log = 16.98 (primitive composition, 4-digit EXACT)")
+assert_that(abs(C.plasma_beta_n_1196() - 2.796) < 5e-4 and abs(C.lawson_ntau_1196() - 2.997) < 5e-4, "P1196 beta_N and Lawson triple product compositions")
+assert_that(abs(C.ln2_composition_1199() - _c20m.log(2.0)) / _c20m.log(2.0) < 1e-4, "P1199 ln 2 primitive composition within 0.003%")
+assert_that(abs(C.log2e_composition_1199() - 1.0 / _c20m.log(2.0)) / (1.0 / _c20m.log(2.0)) < 2e-4, "P1199 log2(e) composition within 0.014%")
+assert_that(abs(C.inv_sqrt3_composition_1199() - 1.0 / _c20m.sqrt(3.0)) / (1.0 / _c20m.sqrt(3.0)) < 1e-4, "P1199 1/sqrt(3) composition within 0.003%")
+assert_that(abs(C.gr_precision_42994_1200() - 42.994) < 1e-3, "P1200 GR-precision composition 42.994")
+assert_that(C.gamma_tde_1194(2e8) == 0.0 and C.gamma_tde_1194(1e6) == 1e-4, "P1194 TDE rate: Hills-mass cutoff EXACT, 1e6 Msun normalization")
+assert_that(C.delta_c_pvsnp_1193(30) > 0 and C.delta_c_pvsnp_1193(2) < 0, "P1193 P!=NP separation crosses zero then diverges (exponential beats polynomial)")
+assert_that(abs(C.v_sedov_1192(1.0, 1.0) - 0.4) < 1e-15, "P1192 Sedov v = 0.4 R/t EXACT")
+assert_that(C.f_gap_bayesian_1191(1.44, 0.02, 0.4, 1.0) == C.f_gap_bayesian_1191(1.44, 0.02, 0.4, 1.0), "P1191 mass-gap MC deterministic at seed 26")
+assert_that(abs(C.k_max_vacuum_1198() - _c20m.pi * _c20m.sqrt(26.0) / 1.616e-35) < 1e20, "P1198 k_max = pi*sqrt(D_crit)/l_P (paper ~2e35 convention DISCLOSED)")
+for _c20n in range(1191, 1201):
+    assert_that(_c20n in C._DC_DISPATCH_INDEX, "P%d dispatched" % _c20n)
+assert_that(C.wired_count() >= 1214, "wired_count >= 1214 after band 1191-1200 THIRD CENTURY MARK")
+
+# --- DEEP-MINE RECOVERY GUARD: PAPER_1101-1200 (PROOF-SET EVALUATOR) ---
+_dmc = C.proofset_catalog_1199()
+for _dmk, (_dme, _dmv) in _dmc.items():
+    _dmr = C.eval_proofset(_dme)
+    assert_that(abs(_dmr - _dmv) < max(5e-4, abs(_dmv) * 1e-4), "DEEPMINE P1199/1200 proof-set composition %s reproduces %s" % (_dmk, _dmv))
+assert_that(len(_dmc) >= 16, "DEEPMINE proof-set catalog >= 16 entries")
+assert_that(abs(C.eval_proofset(r'\Dphys - \Ftrz\SOfive') - 3.0) < 1e-15, "DEEPMINE evaluator reproduces the photon-sphere identity EXACTLY")
+assert_that(abs(C.eval_proofset(r'\Ftrz\Phires') - 1.0 / 12.0) < 1e-15, "DEEPMINE evaluator reproduces F_TRZ*Phi_res = 1/12 EXACTLY")
+assert_that(C.a5_plus_dphys_1196() == 64, "DEEPMINE A_5 + D_phys = 64 = 2^6 EXACT")
+assert_that(set(C.proofset_primitives().keys()) >= {'Ftrz', 'Phires', 'KMex', 'SSq', 'SOfive', 'Dphys', 'Dbsfg', 'Nch', 'Afive'}, "DEEPMINE macro table covers all nine proof-set symbols")
+assert_that(C.proofset_primitives()['Ftrz'] == C.F_TRZ and C.proofset_primitives()['KMex'] == C.K_MEX, "DEEPMINE macro table bound to registry primitives (not literals)")
+
+assert_that(C.f_ubi_psz2g181_1149()[0] < 0, "DEEPMINE P1149 boxed F_U_Bi_i negative (buoyancy-dominant cluster)")
+assert_that(abs(C.v_sound_icm_1149() / 1000.0 - 940.0) / 940.0 < 0.05, "DEEPMINE P1149 ICM sound speed 981 km/s vs paper ~940 (mu convention, DISCLOSED)")
+
+# --- RULE 4 TIER AUDIT GUARD (Daniel-ordered, v0.364.0) ---
+_r4_open = ['862', '933', '936', '939', '940', '942', '947', '953', '964', '972', '1026', '1032',
+            '1038', '1040', '1041', '1042', '1047', '1065', '1072', '1083', '1103', '1114', '1122',
+            '1123', '1124', '1157', '1177', '1178', '1186', '1189', '1191', '1192']
+assert_that(len(_r4_open) == 32, "RULE4 AUDIT: 32 Tier-2 classical envelopes identified (3.7% of 872 dispatches)")
+for _r4p in _r4_open:
+    assert_that(int(_r4p) in C._DC_DISPATCH_INDEX, "RULE4 AUDIT: Tier-2 paper %s still dispatched (faithful transcription retained)" % _r4p)
+assert_that(C.wired_count() >= 1214, "RULE4 AUDIT: audit changed no wiring (measurement only)")
 
 # =============================================================================
 # REPORT

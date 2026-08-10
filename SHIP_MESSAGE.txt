@@ -1,16 +1,22 @@
-v0.363.0: deep-capture PAPER_1011-1100 complete + century deep-mine + capture audit
+v0.364.0: deep-capture PAPER_1101-1200 + century deep-mine + RULE 4 TIER AUDIT
 
-Ten bands (1011-1100) plus the 1001-1100 deep-mine and the Daniel-ordered
-physics-capture audit. Dispatches 1,024 -> 1,114 (49.4% of corpus). Marquee:
-QFT-family eps = beta_i*SSq*F_TRZ^2 = 0.34% primitive back-solve (Immirzi
-0.2383, NCG Higgs 169.42); wormhole |db/dr| = 1-beta_i*SSq PRIMITIVE-EXACT;
-S26^(3) P969<->P1080 cross-validation to 16 digits with FOUR conventions
-disambiguated; first Lorentzian phonon profile; GUP 1.169 l_Pl; M-sigma 4.31;
-LENR COP ignition window closes EXACT at Phi_crit = S26^(3). Audit corrected
-the s26_3 truncation artifact (154030.8 -> 156776.75 converged, dual-route
-agreement <1e-6) and vindicated the BCS T-profile. P1065/P1081 predecessor
-gaps closed; P1087 ERRATUM-pinned; P1090 1e12 print slip disclosed.
+Ten bands (1101-1200), the century deep-mine, and a Daniel-ordered fidelity
+audit of every dispatch. Dispatches 1,114 -> 1,214 (53.8% of corpus).
 
-PROJECT TOTALS (measured): 4,383 functions across 8 modules; 21,594
-registry-family rows across 14 CSVs; 1,114 of 2,256 papers wired; gate 3,854
+THE PRIMITIVE CLOSURES NOW EXECUTE AS IDENTITIES, each equal to its registry
+constant and gate-pinned: F_TRZ = 1/|SO(5)|; Phi_res = SSq/Omega_L = 5/6 =
+(D-1)/D at D_BSFG (SSq-independent); K_MEX = Phi_res*|SO(5)|/D_phys = 25/12
+(the PAPER_1522 source); D_BSFG = D_crit - 4|SO(5)|/2 (the PAPER_1521 source);
+beta_i = 3(5-i)/20 with Sum = 3/2 = D_BSFG/D_phys — resolving the recurring
+0.6 as the i=1 triangular rung rather than drift. SSq itself derives from
+{c/3, F_TRZ}. The 630 eV LENR chain closes at 630.999 eV.
+
+FIDELITY AUDIT (872 dispatches): 467 (53.6%) trace to a UQFF primitive through
+the call graph; 349 (40.0%) untraced but Tier-1 Rule 4 compliant; 4 benchmark
+data; 4 in-chain; 16 no equations; 32 (3.7%) TRUE Tier-2 classical envelopes
+now marked OPEN_RULING and queued for ruling. Zero primitive drift: 16/16
+constants match the registry bit-for-bit.
+
+PROJECT TOTALS (measured): 4,564 functions across 8 modules; 22,732
+registry-family rows across 14 CSVs; 1,214 of 2,256 papers wired; gate 4,042
 assertions, 0 failures.

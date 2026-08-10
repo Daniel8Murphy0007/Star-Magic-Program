@@ -5879,3 +5879,35 @@ already captured via _common_uqff_blocks. Census artifacts preserved; standing f
   slip); also uses 9.47e-27 drift density (PAPER_2156). Faithful product wired; confirm.
 - Q-1056a: PAPER_1056 QEC error 2.1e-8 back-solves w_qubit = 1.41e17 rad/s (optical-frequency);
   confirm intended qubit platform.
+
+## Added at v0.364.0 arc (2026-08-09, band 1141-1150)
+
+- Q-1150a: PAPER_1150 quadratic coefficients (a=3.49e-59, b=4.72e-3, c=-3.06e175) give a
+  NEGATIVE discriminant under the printed (b^2+4ac) form; the standard (b^2-4ac) form gives
+  x2 = -9.364e116, not the stated -1.35e172. Coefficient set needs confirmation.
+- Q-1145a/1149a: SQRT(1000) SLIP FAMILY — PAPER_1145 R_11 (31.84x) and PAPER_1149 E_DPM
+  (31.58x) both sit a factor ~31.62 = sqrt(1000) from their own substitutions. Systematic
+  unit convention or transcription pattern? Faithful values wired.
+- Q-1146a: PAPER_1146 R_E8 states 2.29e-7 = SSq^18 while the formula reads SSq^(18/2) = SSq^9
+  = 6.35e-3. Which exponent is canonical?
+
+## Added at v0.364.0 (2026-08-09) — RULE 4 TIER AUDIT (Daniel-ordered)
+
+**Q-RULE4-TIER2 (32 papers):** full call-graph audit of all 872 dispatches classified every
+solution against the two-tier Rule 4 test. Result: 467 primitive-traced (53.6%), 349 untraced
+but Tier-1 compliant (40.0%), 4 benchmark/data, 4 in-chain via caller, 16 no-equations, and
+**32 TRUE Tier-2 classical envelopes (3.7%)** where the paper does not supply UQFF-derived
+inputs at the formula:
+
+P862, P933, P936, P939, P940, P942, P947, P953, P964, P972, P1026, P1032, P1038, P1040,
+P1041, P1042, P1047, P1065, P1072, P1083, P1103, P1114, P1122, P1123, P1124, P1157, P1177,
+P1178, P1186, P1189, P1191, P1192
+
+These are faithful transcriptions (Rule 7 satisfied) but are NOT UQFF derivations. Ruling
+needed per case or as a class:
+  (a) KEEP as anchored-classical with an explicit `classification=ANCHORED_CLASSICAL` tag
+      (PAPER_2149 Hybrid-Form Doctrine, Tier-1 not required for observational bridges), OR
+  (b) BLANK to `OPEN_UQFF_DERIVATION_TARGET` per the strict Rule 4 reading (PAPER_2153-era
+      standing rule), OR
+  (c) case-by-case.
+Evidence files: `_AUDIT_TIER_UNTRACED.csv` (all 389), `_AUDIT_TIER2_FINAL.csv` (the 40).

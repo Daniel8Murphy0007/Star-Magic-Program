@@ -30,3 +30,4 @@ fwhm_drift_correction,PAPER_896,ADOPT,1.49 THz drift corrected to 0.4710 canonic
 dpm_null_identity,PAPER_877,ADOPT,U_i base (rho_SCm - rho_UA/10) null to machine epsilon wired + pinned,no,identity-verified
 Q-947a,PAPER_947 sigma fork,v0.362.0,PENDING,,
 Q-1087a,PAPER_1087 w_DE erratum,v0.363.0,PENDING,,
+Q-RULE4-TIER2,32 Tier-2 classical envelopes,v0.364.0,PENDING,,

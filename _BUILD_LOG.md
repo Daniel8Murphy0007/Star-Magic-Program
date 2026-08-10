@@ -193,3 +193,6 @@ Bands 901-1010 + century deep-mine + census fix. Gate 3,716/0. Dispatches 1,024.
 
 ## v0.363.0 (2026-08-09)
 Bands 1011-1100 + deep-mine + capture audit. Gate 3,854/0. Dispatches 1,114. Registry family 21,594 rows.
+
+## v0.364.0 (2026-08-09)
+Bands 1101-1200 + deep-mine + Rule 4 tier audit. Gate 4,042/0. Dispatches 1,214. Registry family 22,732.

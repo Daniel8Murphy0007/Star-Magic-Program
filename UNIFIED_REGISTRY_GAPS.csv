@@ -81,3 +81,4 @@ Q-954a,PAPER_954,t_flip pi-factor slip 0.2 ps faithful vs 0.064 ps stated
 Q-1087a,PAPER_1087,w_DE abstract formula unit inconsistency; ERRATUM table pin -0.9435
 Q-1090a,PAPER_1090,1e12 print slip 1.766e59 vs 1.77e47 + 9.47e-27 drift density
 Q-1056a,PAPER_1056,QEC 2.1e-8 back-solves w_qubit=1.41e17 rad/s
+Q-RULE4-TIER2,PAPER_862..1192 (32 papers),Classical envelopes without in-paper UQFF inputs; Rule 4 Tier-2

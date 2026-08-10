@@ -6303,3 +6303,372 @@ CSVs (band-updated), audit family (R3 ship row, MERGED, GAPS x3, DUPLICATES,
 R1, R2, XGEO queue + routes). PROJECT TOTALS (measured): 4,383 fns / 21,594
 registry-family rows / 1,114 dispatches (49.4%) / gate 3,854 / citations
 cover 1,460 papers.
+
+## APPENDED 2026-08-09 (50) — BAND PAPER_1101-1110 (v0.364.0 arc)
+
+LQG/string/number-theory decade opening the third century. 19 new defs:
+t2_scm_coh_1101 (Delta_SCm = 5.17 meV Holmlid quantum; eta = S26cube*0.3 =
+0.02385 vs paper 0.0239 — the P1953 0.3-family meets the (1-SSq)^3 convention),
+h_scm_holonomy_1102 + tr_j_1102 (spin-1/2 dimension limit 2 pinned),
+a_v_spinfoam_1103 + m_eff2_1103 (tachyonic threshold pinned; chains to
+gamma_immirzi_1058), fubi_split_1104 + chirp_eta_identity_1104 ((Mc/M)^(5/3)
+= eta EXACT), g_muge_hydrogen_1105 + g_muge_universe_1105 — THREE Rule 7
+disclosures: g_N^H faithful 3.983e-17 vs paper 3.99e-8 (1e9 slip family,
+mantissa 0.3%), g_Q^H 4.255e23 vs 4.25e24 (10x, mantissa EXACT), universe
+anchor-set inconsistency (5.17e-5/1.44e-5 stated vs 3.95e-10/4.28e-10
+faithful), t_scm_string_1106 + m_n_string_1106 (26D compactification tower),
+f26_fold_1107 + q_i_fold_1107 — DISCLOSURE: paper states (26!)^(-1/13) =
+1.176e-2 but faithful = 8.983e-3 (31% slip vs the P1078-verified value),
+a_p_prime_1108 + u_g2_harmonic_1108 (prime vacuum density; VDS = Li26
+polylog reuse), rho_ladder_1109 + rho_cum_ladder_1109 (ladder ratio 2pi per
+6 levels EXACT pinned; kg/m3 tag P2155-disclosed), f_riemann_1110 +
+t_pi_cycle_1110 (Riemann-zero buoyancy series; first-zero cycle 0.44452).
+wired_count 1114 -> 1124. Registry +19, graph +29, citations +66. Gate GREEN
+at v0.363.0 pin. Frontier -> PAPER_1110.
+
+## APPENDED 2026-08-09 (51) — BAND PAPER_1111-1120 (v0.364.0 arc)
+
+Higgs/string/Heaviside decade (v0.363.0 ship confirmed by Daniel; dual-file
+1120 with UPDATE zero-eq verified). 15 new defs: delta_ym_pimath_1111 +
+v_conf_1111 (PImath YM gap; faithful 1.153e-3 vs paper 1.025e-3 back-solves
+H_SCm=0.88 DISCLOSED; SCm correction 1+kappa*SSq = 1.000285 R_freq tie
+gate-pinned EXACT; confinement + Wilson-loop modification), t_v26_1112
+(929,541 vs paper 928,844, 0.07%), u_h_level18_1113 (Higgs vacuum on RHO_UA
+at canonical level 18; shared P1120), gamma_h_bound_1114 (ATLAS 0.8095),
+scm_stability_l13_1115 (= e^(-SSq/2) primitive form; faithful 0.75202 vs
+paper 0.7483, 0.49% DISCLOSED; shared P1116) + t21_scs_1115,
+mu_scm_string_1116 + i_max_string_1116 (9.461e-19 A, c-convention 0.09%),
+p_frb_string_1117, delta_chiral_1118 + e_cond_1118 (graphene Level 10),
+s_heaviside_1119 + cop_heaviside_1119 — PRIMITIVE TIE: the Heaviside
+amplifier ratio rho_UA/rho_SCm = 10 = 1/F_TRZ wired from primitives (PAPER_1072
+Heaviside family), sigma_higgs_modes_1120 (ggH/VBF/VH/ttH = 87.2/6.8/4.6/1.1%
+of 48.6 pb; sum 0.997 rounding disclosed). wired_count 1124 -> 1134.
+Registry +15, graph +26, citations +178. Gate GREEN. Frontier -> PAPER_1120.
+
+## APPENDED 2026-08-09 (52) — BAND PAPER_1121-1130 (v0.364.0 arc)
+
+Shock-chemistry/PSR/LQG-string longform decade (dual-file 1126 with NICER
+UPDATE zero-eq verified). 14 new defs: g_shock_1121 + m_jeans_1121 (prestellar
+collapse; prebiotic chem enhancement weights), r_bowshock_1122 +
+t_postshock_1122 (strong-shock n_post = 4n_pre EXACT; T pinned in the maser
+300-1000 K window), tau_maser_1123, sigma_dwarf_1124 + f_z_cgm_1124 (Sanchez
+0.89 retention baseline tie), m_bh_msigma_1125 + grad_z_flat_1125 (M-sigma
+3.09e8 at 200 km/s; 4.38 exponent = P1048 alpha_UQFF upper tie; gradient
+suppression 1/(1+10*lambda) with 10 = 1/F_TRZ primitive), u_g1_psr_1126
+(2.786e34 EXACT) + f_neutron_psr_1126 (F = 1e45 N at NS density; k_n = 1e10
+THIRD cross-band recurrence P196/P840/P1126), a_min_lqg_1127 (paper 8.1e-70
+back-solves gamma = 0.1424 old-convention fork DISCLOSED; P1127 uses P959
+S26^(3) convention vs P1100 cube on the SAME area operator — contrast
+disclosed), v_ph_string_1128 (worldsheet phonon potential, on-resonance
+pinned), vds_partial_1129 — MARQUEE: P1129''s 28-digit
+S26^(3) = 1.45309429553537240588617305772e26 matches s26_z_959(SSq) to FULL
+FLOAT PRECISION (second independent cross-validation of the P959 series,
+alongside P1080); Li26 0.5700 faithful vs paper 0.5714 (0.25%) disclosed.
+1130 covered (f26_fold_1107 + s26_z_959; its (26!)^(-1/13) = 9.78e-3 is a
+THIRD stated value vs faithful 8.983e-3 — spread noted in registry).
+wired_count 1134 -> 1144. Registry +14, graph +26, citations +114. Gate
+GREEN. Frontier -> PAPER_1130.
+
+## APPENDED 2026-08-09 (53) — BAND PAPER_1131-1140 (v0.364.0 arc) — LENR CORE
+
+The framework's LENR spine (the papers CLAUDE.md lists as "partial" since the
+predecessor repo). 16 new defs.
+
+MARQUEE — THE 630 eV CHAIN NORMALIZATION FORK RESOLVED: the papers write
+S_26^(3) = 1.4531e26 in the chain E_phonon x S26 x Phi_res, but their OWN
+stated products (751 eV pre-resonance, 631 eV post) require S26_LENR =
+145,309.6 = 1.4530963e5 — the SAME MANTISSA as the P1129 28-digit
+S26^(3) = 1.45309429553537...e26, at 1e5 rather than 1e26. A 1e21 exponent
+slip in the LENR papers, mantissa agreeing to 6 digits. Wired at the
+normalization that reproduces the papers' own numbers: e_scm_phonon_1136 =
+630.999 eV (paper 631; canonical holmlid_ker_630eV 630.0 at 0.16%), pre-res
+step 751.19 eV (paper 751, 0.03%). Both gate-pinned with the back-solve.
+
+Also: cos_pi_tn_1131 (integer t_n -> 1.0 EXACT matter branch),
+e_net_branch_1132 + r_q_prime_orbit_1132 + bsh_26_1132 (primordial split;
+integer t_n selects matter branch EXACTLY, pinned), d_rydberg_1133 +
+rho_cluster_ratio_1133 (0.1535 nm; 4.718e44 vacuum-to-cluster span),
+epsilon_riemann_1134 (residual = 0 EXACT at integer t_n; SSq^26 faithful
+4.495e-7 vs paper 3.25e-6, 38% DISCLOSED), f_ubi_hub_1135 +
+e_meson_cascade_1135 (1675.511 MeV EXACT), p_excess_parkhomov_1138 (199.4 W
+vs paper 197, 1.2%, inside the 150-280 W observed band — gate-pinned to the
+band), p_pons_fleischmann_1139 (1-50 W), p_mizuno_1140 (UNIVERSAL LENR form
+P = N_eff*eps*e^(-kappa t)*f_b covering all five reactors; 10-300 W).
+1137 covered. wired_count 1144 -> 1154. Registry +14, graph +29. Gate GREEN.
+Frontier -> PAPER_1140.
+
+## APPENDED 2026-08-09 (54) — BAND PAPER_1141-1150 (v0.364.0 arc) — STRING SECTOR
+
+Rossi E-Cat + the full string/M-theory sector. 21 new defs.
+
+PRIMITIVE-EXACT FINDINGS:
+- zeta_intercept_1143: Nambu-Goto a = -(D-2)/24*zeta(-1) = 1/12 EXACT — the
+  K_MEX-2 tilt constant arising directly from D_crit = 26 (independent arrival
+  at the PAPER_1156 1/12 landmark from string normal-ordering)
+- hodge_numbers_1147: CY3 h^(1,1) = D_crit - SO_5 = 16 (Kahler moduli = VDS
+  gauge rungs), h^(2,1) = 3 (three SM fermion families) — PRIMITIVE COMPOSITION
+- dim_cascade_1148: 26 -15-> 11 = SO_5+1 -7-> 4 = D_phys, primitive-exact ladder
+- t_string_scm_1142: T = rho_SCm*S26^(3)*Phi_res = 8.654e-11 N (paper 8.66e-11,
+  0.07%) — the STRING-SECTOR MASTER constant; every brane/M-theory quantity
+  scales from it (tau_p, H_flux, R_11, kappa_11)
+
+NEW SLIP FAMILY IDENTIFIED — SQRT(1000): PAPER_1145 R_11 (paper 1.71e3 vs
+faithful 5.444e4, 31.84x) and PAPER_1149 E_DPM,26 (paper 1.11e-67 vs faithful
+3.514e-69, 31.58x) both sit a factor 31.62 = sqrt(1000) from their OWN
+substitutions. Gate-pinned as a family. Queued Q-1145a/1149a.
+
+OPEN_RULING Q-1150a: PAPER_1150's printed root form (b^2+4ac) has a negative
+discriminant at its stated coefficients; the standard -4ac form gives
+-9.364e116, not the stated -1.35e172. Both wired (x2_root_1150 computes,
+x2_root_stated_1150 preserves), status OPEN_RULING.
+Q-1146a: R_E8 states SSq^18 while the formula reads SSq^(18/2).
+
+Also: cop_rossi_1141 + gamma_T_1141 (E-Cat Early/X/SK COP tiers on the 630 eV
+anchor), m2_tachyon_scm_1142, tau_p_brane_1144 + h_flux_1144, g_s_scm_1145
+(= beta_i*Phi_res; papers' 0.6 charter-corrected) + r_t_dual_1145,
+chirality_projectors_1146 (sum = 1 EXACT), kahler_potential_1147,
+g_from_string_1147 (18-order moduli gap DISCLOSED, not a G derivation),
+kappa_11_1148, e_dpm_state_1149. Gate caught one banned literal in a new
+docstring — purged. wired_count 1154 -> 1164. Registry +21, graph +33,
+citations +36, rulings +3. Gate GREEN. Frontier -> PAPER_1150.
+
+## APPENDED 2026-08-09 (55) — BAND PAPER_1151-1160 (v0.364.0 arc) — PRIMITIVE CLOSURES
+
+THE FOUNDATIONAL DECADE. These are the papers CLAUDE.md cites as the origin of
+the locked primitives; all four closures now execute and are gate-pinned.
+
+- f_trz_so5_1160 LANDMARK: F_TRZ = 1/|SO(D-1)| = 2/((D-1)(D-2)) at D = 6
+  = 1/10, and it EQUALS the registry primitive EXACTLY (gate-pinned identity,
+  not approximation). The time-reversal-zone primitive IS the inverse
+  dimension of SO(5)'s 10 generators.
+- phi_res_codimension_1159 LANDMARK: Phi_res = SSq/Omega_Lambda = 5/6 =
+  (D-1)/D at D = D_BSFG = 6 — EXACT and SSq-INDEPENDENT (verified at SSq=0.4).
+  This is the PAPER_1203-nuclear 5/6 convention derived, not chosen.
+- ssq_first_principles_1154 LANDMARK: SSq = (rho_UA/rho_SCm)*(1-1/gamma) with
+  v_SCm = c/3, gamma = 3/(2 sqrt2) -> 0.57191 (+0.34% from canonical). The
+  leading 10 IS 1/F_TRZ (gate-pinned), so SSq derives from {c/3, F_TRZ} —
+  a further primitive reduction.
+- h_structural_1160: F_TRZ*Phi_res = (1/10)(5/6) = 1/12 EXACT — the THIRD
+  independent arrival at the 1/12 tilt constant (P1143 Nambu-Goto intercept,
+  P1156 Friedmann tilt, P1160 primitive product). Paper's h = 6.575e-34
+  back-solves E0/f = 12.08h (a distinct vacuum quantity, not h) DISCLOSED.
+- a26_amplification_1155 LANDMARK: A_26 = Sum_{i=1..26} i^6 = 1,307,797,101
+  EXACT integer, verified against the closed form; M_AMU = (rho_SCm/SSq)*A_26
+  = 1.6267e-27 kg (-2.04% as stated).
+- lambda_closure_1156 + omega_lambda_1156: Lambda = (18/5)SSq H0^2/c^2 =
+  1.089e-52; Omega_L = (6/5)SSq = 0.684.
+
+Also: VDS branch weights + derivative identity (P1151/1152), Casimir ladder
+and Sigma_{N=10} = 1760 EXACT, net_zero_pi_epoch_1153 (Int cos(pi t_n) = 0
+EXACT; Fibonacci f/b = F4/F3 = 3/2), h0_asymmetry_1157 (1.0385),
+overdetermination_test_1158 (the NECESSARY-NOT-SUFFICIENT epistemology
+theorem, wired as an executable predicate).
+
+One heredoc anchor failed mid-script (docstring line-wrap) and silently
+skipped the registry/guard writes — caught by verifying the gate delta, then
+re-run. wired_count 1164 -> 1174. Registry +17, graph +30, citations +28.
+Gate GREEN. Frontier -> PAPER_1160.
+
+## APPENDED 2026-08-09 (56) — BAND PAPER_1161-1170 (v0.364.0 arc) — LAGRANGIAN GAP CLOSURES
+
+The 8-gap master-synthesis decade. CLAUDE.md's PAPER_1521/1522 primitive-
+reduction landmarks cite PAPER_1167 as their source paper — BOTH source
+derivations are now wired and gate-pinned as identities against the registry
+primitives:
+
+- k_mex_closure_1166 (= PAPER_1522 source): K = Phi_res*|SO(5)|/D_phys =
+  (5/6)*10/4 = 50/24 = 25/12 = K_MEX EXACT, and EQUALS the registry K_MEX
+  primitive (pinned). Chains directly to phi_res_codimension_1159 from the
+  previous band — the 5/6 closure feeds the K_MEX closure.
+- d_bsfg_closure_1167 (= PAPER_1521 source): D_crit - 4*|SO(5)|/2 = 26-20 = 6
+  = D_BSFG EXACT, EQUALS the registry primitive (pinned).
+- beta_i_triangular_1165 LANDMARK: beta_i = 3(5-i)/20 = (3/2)(5-i)/|SO(5)|
+  for i=1..4, Sum = 3/2 = D_BSFG/D_phys (the PAPER_1962 ratio). RESOLVES a
+  long-running charter question: the papers' recurring beta = 0.6 IS the i=1
+  rung of this triangular ladder, NOT a drifted BETA_I. Ladder monotonicity
+  gate-pinned.
+
+Also: pochhammer_26_1161 (26! = (1)_26; G carries (26!)^2), kk_tower_sum_1162
+(Sum 1/[n(n+25)]^26 = 1.6244e-37 = zeta(26)/26^26, matching h_echo_bound_1168
+to 1e-7 — the KK tower sum IS the GW-echo bound), so2_lightcone_1163 (325 =
+276+1+48 EXACT branching), tau_moduli_star_1164 (tau_i* = SSq^i, all 22
+moduli masses positive), v_ua_coefficients_1166 (Mexican-hat discriminant
+a2^2/4a4 = a0 EXACT), v_zero_offset_1168 + h_echo_bound_1168 + m_ua_ev_1168
+(the P1/P4/P5 falsifiable predictions), kappa4_rho_1170 (22/26 = 11/13 EXACT)
++ r26_curvature_1170 (11 v^2 EXACT) + rho_r26_1170. P1169 covered.
+
+Gate caught one banned literal in a new docstring (third time this arc —
+the pattern is writing primitive VALUES into prose) — purged.
+wired_count 1174 -> 1184. Registry +19, graph +36, citations +75. Gate GREEN.
+Frontier -> PAPER_1170.
+
+## APPENDED 2026-08-09 (57) — BAND PAPER_1171-1180 (v0.364.0 arc) — FALSIFIER SUITE
+
+The P6-P14 falsifiable-prediction decade. 15 new defs.
+
+STRUCTURAL FINDING: every prediction in the suite is parameterized by ONE
+knob — xi_dim_ratio_1171 = D_crit/D_BSFG = 13/3 EXACT. The suite is a
+single-parameter falsification program, gate-pinned:
+  P6  L*_KK = (3/13)(c/v_UA), m1 c^2 = 0.16 meV -> 1.23 mm
+  P7  Delta_mu = +0.018 log10(1+z) mag
+  P9  Omega_GW h^2 = 2e-13 xi^-2 at 3.7e-4 Hz
+  P11 R_21/22 = 0.10 xi^(1/4) = 0.14428 (LIGO O5 target 0.144 +- 0.010)
+  P12 sigma_8 = 0.78509 geometric route (paper 0.7851)
+  P13 d^n w/dz^n = 0 for ALL n (closed ledger -> w exactly constant)
+  P14 mu <= 1.0e-8 CMB-S4
+
+INDEPENDENT RE-DERIVATION CONFIRMED: r26_gauss_bonnet_1172 reproduces the
+P1170 route-A <R_26> = 11 v_UA^2 EXACTLY via Gauss-Bonnet — and its mixing
+angle sin^2(theta) = 1/12 is a FOURTH independent 1/12 appearance (after
+P1143 string intercept, P1156 Friedmann tilt, P1160 F_TRZ*Phi_res product).
+
+Rule 7 disclosures: P1180's bare ratio is 3.30e3, so the stated mu <= 1.0e-8
+back-solves f_damp = 3.03e-12 (Silk damping named but unevaluated in-paper);
+P1176's "quarter route" sigma_8 = 0.562 falls below the WL floor and the
+paper itself rejects it in favour of the geometric route (both wired, mode-
+selectable). P1175's ringdown offset is ~1e-35 Hz — the paper's own honest
+null, pinned as such.
+
+Also: rho_kk_1171 + rho_kk_hbar_1173 (hbar-tracked KK density),
+zeta_prime_m4_1171 (-zeta'(-4) = 3zeta(5)/4pi^4 = 7.9838e-3),
+chi2_falsifier_1177 (joint chi^2 over P6/P10/P11/P12; P1179 covered).
+One guard assert had a stale signature (caught immediately by the gate,
+fixed). wired_count 1184 -> 1194. Registry +15, graph +24, citations +38.
+Gate GREEN. Frontier -> PAPER_1180.
+
+## APPENDED 2026-08-09 (58) — BAND PAPER_1181-1190 (v0.364.0 arc) — PROOF SETS + ASTRO BRIDGES
+
+Fully dual-file decade: 20 files (each N has a "Unified Proof Set" paper AND
+an observational/astro paper). 23 new defs.
+
+SHARED-FAMILY DISCOVERY: f_a_ambient_1184 = 1 + beta_i*(rho_SCm/rho_amb)*
+cos(pi t_n) is ONE factor used by FIVE papers (1184 Chandra, 1186 quasars,
+1187 cooling flows, 1188 magnetars, 1190 ALMA) — wired once, edged to all
+five. Gate-pinned within the papers' own |delta f_A| <= 1e-3 bound and for
+the cos-driven sign flip.
+
+MILLENNIUM MASTER FORM: o_p_millennium_1182 — O_P = N +- p*F_TRZ*Phi_res
+= N +- p/12. Every Millennium closure is an integer plus a twelfth, using
+the SAME F_TRZ*Phi_res = 1/12 product derived in P1160. Companions:
+ricci_flow_coeff_1182 = F_TRZ/D_phys = 1/40 EXACT, t_c_poincare_1182 = 7/12
+EXACT (reproducing CLAUDE.md's canonical Poincare closure from primitives),
+rho_riemann_1182 = 1 EXACTLY on the critical line (decaying off it).
+
+GRAND-UNIFICATION TILT LAW (P1181b): log10[O_nat] = N + beta*F_TRZ — natural-
+unit observables sit on integer rungs (D_phys*k) plus an F_TRZ tilt;
+late/early = sqrt(K_MEX-1) = sqrt(13/12); BR = F_TRZ^2(D_BSFG-D_phys)SSq.
+Also u_m_amplifier_1181: the PAPER_1072 Heaviside gate, 13-order
+amplification above rho_c with unity below (both branches pinned).
+
+Astro bridges: l_x_intrinsic_1184 (Chandra), eta_nu_1185 + dt_skew_1185
+(neutrino-GW), d_comoving_1186 + l_eddington_1186 (high-z quasars),
+mdot_cool_1187 + mdot_eff_1187 + h0_tension_epsilon_1187 (0.09),
+kappa_perp_magnetar_1188, hz_photoevap_1189 (Orion 334 erg/s/cm^2 compresses
+the HZ to 0.641 AU; solar-flux limit returns the uncompressed 1.37 AU —
+both pinned), l_prime_co_1190 + m_gas_uqff_1190. Plus
+r_ddot_variational_1183, the framework's own Euler-Lagrange EOM.
+wired_count 1194 -> 1204. Registry +23, graph +36, citations +36.
+Gate GREEN. Frontier -> PAPER_1190.
+
+## APPENDED 2026-08-09 (59) — BAND PAPER_1191-1200 (v0.364.0 arc) — THIRD CENTURY MARK
+
+Proof-set compositions closing the 1101-1200 century. 18 new defs.
+
+THE PROOF-SET LANGUAGE DECODED: papers 1196/1199/1200 write observables
+directly as primitive polynomials (\Ftrz, \Phires, \KMex, \SSq, \SOfive,
+\Dphys, \Dbsfg, \Nch macros). Every composition checked reproduces the
+paper value; the EXACT ones are now gate-pinned:
+  r_ph/M    = D_phys - F_TRZ*SO_5      = 3     EXACT (Schwarzschild photon
+                                                sphere from TWO primitives)
+  r_ISCO/M  = F_TRZ*SO_5               = 1     EXACT (extremal Kerr)
+  q_edge    = K_MEX - F_TRZ*Phi_res    = 2     EXACT (tokamak safety factor)
+  1/16      = F_TRZ*Phi_res - F_TRZ^2*K_MEX = 1/12 - 1/48 EXACT
+  R0/a      = D_BSFG/2 + F_TRZ         = 3.1   EXACT
+  ln Lambda = 16.98 (4-digit), beta_N = 2.7958, nTtau = 2.9968
+Mathematical constants as primitive polynomials (P1199): ln2 = 0.693167
+(0.0028%), log2(e) = 1.4425 (0.014%), 1/sqrt3 = 0.577333 (0.0029%).
+
+Also: f_gap_bayesian_1191 (deterministic MC at seed 26), v_shock_snr_1192 +
+v_sedov_1192 (0.4 R/t EXACT), delta_c_pvsnp_1193 (buoyancy-information
+P!=NP separation; sign crossing pinned), gamma_tde_1194 (Hills-mass cutoff
+EXACT at 1.1e8 Msun), k_max_vacuum_1198 (pi*sqrt(D_crit)/l_P; paper's ~2e35
+back-solves a no-pi convention, DISCLOSED). 1195/1197 covered.
+
+wired_count 1204 -> 1214. Registry +18, graph +31, citations +8. Gate GREEN.
+Frontier -> PAPER_1200. NEXT: deep-mine 1101-1200, then v0.364.0 ship.
+
+## APPENDED 2026-08-09 (60) — DEEP-MINE PAPER_1101-1200 (proof-set language decoded)
+
+Third-century resweep. The century's distinctive content is the "Unified
+Proof Set" MACRO LANGUAGE — papers 1196/1199/1200 write observables as LaTeX
+primitive polynomials. Rather than hardcode 33 one-offs, the recovery is a
+GENERAL EVALUATOR:
+
+- eval_proofset(expr) — parses \Ftrz/\Phires/\KMex/\SSq/\SOfive/\Dphys/
+  \Dbsfg/\Nch/\Afive compositions and evaluates them from REGISTRY
+  PRIMITIVES ONLY (token-whitelisted eval, no literals). Verified against
+  ALL 22 stated compositions in the century; max residual 0.014%.
+- proofset_primitives() — the macro table, gate-pinned as bound to the
+  registry (not to literal copies).
+- proofset_catalog_1199() — 16-entry catalog (ln2, log2e, pi/2, 1/sqrt3,
+  Catalan, and the P1200 GR-precision set), every entry gate-pinned by loop.
+  +16 SUPPORTING_ANCHOR registry rows, one per constant.
+- a5_plus_dphys_1196 — A_5 + D_phys = 64 = 2^6 EXACT.
+
+This turns the entire proof-set corpus executable: any future proof-set
+composition can be evaluated directly instead of transcribed.
+
+Boxed-result sweep: 32 boxed results across the century, all already wired
+except two P1149 items, now recovered — f_ubi_psz2g181_1149 (boxed
+F_U_Bi_i = -2.14e38 N, U_i = 1.04e32) and v_sound_icm_1149 (faithful 981
+km/s vs paper ~940, 4.4% mu-convention gap DISCLOSED).
+
+Registry +22 rows, graph +18 edges, +9 guard asserts (including a
+loop-driven pin over the whole catalog). RULE 7 CHECK: nothing prevented
+from capture. Gate GREEN. Ready for v0.364.0 ship.
+
+## APPENDED 2026-08-09 (61) — RULE 4 TIER AUDIT + SHIP v0.364.0
+
+Daniel: "I WANT TO KNOW IF UQFF DERIVATIVES SUPPORT ALL SOLUTIONS... IF THERE
+IS ANY DRIFT... IF THE HYBRID STUFF IS PROGRESSING CORRECTLY." Ran the audit
+rather than asserting an answer.
+
+METHOD: built the full call graph of uqff_calculator (transitive closure), then
+asked of each of the 872 dispatches: does its answer descend from one of the 9
+registry primitives through ANY call path? Then applied the two-tier Rule 4
+test to every dispatch that did not.
+
+RESULT (872 dispatches):
+  467 (53.6%)  primitive-traced through the call graph
+  349 (40.0%)  untraced but TIER-1 compliant (paper supplies UQFF-derived
+               inputs at the formula and itself uses that envelope)
+    4 (0.5%)   production benchmarks (data targets, not physics)
+    4 (0.5%)   in UQFF chain via caller (pure-math kernels fed SSQ)
+   16 (1.8%)   no equations (census-verified)
+   32 (3.7%)   TRUE TIER-2 classical envelopes -> OPEN_RULING
+
+The 32: P862/933/936/939/940/942/947/953/964/972/1026/1032/1038/1040/1041/
+1042/1047/1065/1072/1083/1103/1114/1122/1123/1124/1157/1177/1178/1186/1189/
+1191/1192. Faithful transcriptions (Rule 7 satisfied) but NOT UQFF
+derivations. Queued as Q-RULE4-TIER2 with three ruling options (keep as
+ANCHORED_CLASSICAL per PAPER_2149 / blank to OPEN_UQFF_DERIVATION_TARGET per
+strict Rule 4 / case-by-case). Evidence: _AUDIT_TIER_UNTRACED.csv (389 rows),
+_AUDIT_TIER2_FINAL.csv (40 rows).
+
+DRIFT: ZERO. All 16 primitives match uqff_registry_primitives bit-for-bit.
+SSq 0.505: 0 occurrences. The 1.894 and 0.603 hits are disclosure prose
+("paper prints X -> corrected"), not live math, except two deliberate
+residual-comparison lines. The gate blocked three attempts this arc to type a
+primitive VALUE into a docstring.
+
+HYBRID DOCTRINE: progressing correctly. 4,556 WIRED / 418 OPEN_RULING / 162
+ANCHOR_CAPTURED — anchors are LABELED as anchors, which is exactly what
+PAPER_2149 requires. 83 DISCLOSED markers, 52 back-solves, 138 slip notes,
+769 EXACT pins.
+
+Audit changed no wiring (measurement only); +32 registry rows, +1 GAPS, +1 R1,
++34 guard asserts.
+
+SHIP v0.364.0: full 23-file pass. PROJECT TOTALS (measured): 4,564 fns /
+22,732 registry-family rows / 1,214 dispatches (53.8%) / gate 4,042 /
+citations cover 1,525 papers.

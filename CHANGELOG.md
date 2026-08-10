@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.364.0 (2026-08-09)
+
+Deep-capture PAPER_1101-1200 complete (10 bands + deep-mine) + Daniel-ordered RULE 4 TIER AUDIT.
+
+- Dispatches 1,114 -> 1,214 (53.8% of the 2,256-paper corpus)
+- PRIMITIVE CLOSURES AS IDENTITIES: F_TRZ = 1/|SO(5)| (P1160); Phi_res = 5/6 = (D-1)/D at D_BSFG,
+  SSq-independent (P1159); K_MEX = Phi_res*|SO(5)|/D_phys = 25/12 (P1166 = PAPER_1522 source);
+  D_BSFG = D_crit - 4|SO(5)|/2 (P1167 = PAPER_1521 source); beta_i = 3(5-i)/20, Sum = 3/2 (P1165)
+- beta = 0.6 resolved as the i=1 triangular rung, NOT drift from the canonical BETA_I
+- 630 eV LENR chain closes (P1136-1141): 630.999 eV; papers' 1.4531e26 = 1e21 exponent slip off
+  the P1129 mantissa (both disclosed and pinned)
+- SSq from first principles = 10*(1-2sqrt2/3) with the 10 = 1/F_TRZ (P1154)
+- Proof-set macro evaluator: all 22 primitive-polynomial compositions executable (P1196/1199/1200);
+  photon sphere = D_phys - F_TRZ*SO_5 = 3 EXACT
+- Falsifier suite P6-P14 on the single knob xi = D_crit/D_BSFG = 13/3 (P1171-1180)
+- RULE 4 TIER AUDIT of all 872 dispatches: 467 primitive-traced (53.6%), 349 Tier-1 (40.0%),
+  4 benchmark, 4 in-chain, 16 no-equations, 32 TRUE Tier-2 classical envelopes (3.7%) -> OPEN_RULING
+- Zero primitive drift: 16/16 constants match registry bit-for-bit; SSq 0.505 absent
+- Project totals (measured): 4,564 fns / 22,732 registry rows / 1,214 papers / gate 4,042 green
+
 ## v0.363.0 (2026-08-09)
 
 Deep-capture PAPER_1011-1100 complete (10 bands + 1001-1100 deep-mine).

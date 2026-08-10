@@ -1609,3 +1609,4 @@ dpm_proportion_null,cosmogenesis,native-paper,primitive-stack,rho_SCm - rho_UA/1
 boyle_vacuum_ratio,vacuum,native-paper,primitive-stack,F_TRZ*SSq^2/(1+SSq),0.02069,three-primitive tie,PAPER_808,primitive-composed,XGEO_CAMPAIGN_ROUTED,,
 ym_gap_2dphys,YM-massgap,native-paper,DPM-common-block,Delta_YM=Lambda_QCD*S26_eff,1.736 GeV,EXACT,PAPER_971,D_PHYS,XGEO_CAMPAIGN_ROUTED,S26_eff = 8 = 2*D_PHYS primitive-locked,PAPER_971
 qft_family_eps,QFT-corrections,native-paper,DPM-common-block,eps=beta_i*SSq*F_TRZ^2,0.003437,0.34%,PAPER_1052,"BETA_I,SSQ,F_TRZ",XGEO_CAMPAIGN_ROUTED,S26_eff = F_TRZ^2 family normalization back-solve,PAPER_1058
+primitive_closure_identities,foundational,native-paper,DPM-common-block,F_TRZ=1/|SO(5)|; Phi_res=5/6; K_MEX=Phi_res SO_5/D_phys; D_BSFG=D_crit-4SO_5/2,EXACT,registry primitives,PAPER_1159_1160_1166_1167,"F_TRZ,SO_5,D_PHYS,D_BSFG,K_MEX",XGEO_CAMPAIGN_ROUTED,all four closures equal their registry primitive,PAPER_1167

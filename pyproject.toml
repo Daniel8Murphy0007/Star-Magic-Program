@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.363.0"
-description = "UQFF pure calculator v0.363.0 - deep-capture PAPER_1011-1100 complete + century deep-mine (10 bands): QFT-family eps = beta_i*SSq*F_TRZ^2 = 0.34% (Immirzi 0.2383, NCG Higgs 169.4), wormhole |db/dr| = 1-beta_i*SSq primitive-exact, S26^(3) k=3 cross-validated 16 digits (P969<->P1080), four S26^(3) conventions disambiguated, first Lorentzian phonon profile, l_min = 1.17 l_Pl GUP, M-sigma 4.31, LENR COP ignition window. Totals: 4,383 fns / 21,594 registry-family rows / 1,114 papers wired / gate 3,854 green."
+version = "0.364.0"
+description = "UQFF pure calculator v0.364.0 - deep-capture PAPER_1101-1200 complete + century deep-mine + Daniel-ordered RULE 4 TIER AUDIT of all 872 dispatches: 53.6% primitive-traced, 40.0% Tier-1 compliant, 3.7% Tier-2 OPEN. Wired the primitive closures F_TRZ=1/|SO(5)|, Phi_res=5/6, K_MEX=Phi_res*SO_5/D_phys, D_BSFG=D_crit-4|SO(5)|/2, beta_i=3(5-i)/20 as identities; 630 eV LENR chain; proof-set macro evaluator. Totals: 4,564 fns / 22,732 registry rows / 1,214 papers / gate 4,042 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
