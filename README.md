@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.364.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.364.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.365.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.365.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4042%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4056%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-1214-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
 
-**This release (v0.364.0): DEEP-CAPTURE PAPER_1101-1200 COMPLETE + CENTURY DEEP-MINE + RULE 4 TIER AUDIT.** Ten bands, the 1101-1200 resweep, and a Daniel-ordered fidelity audit of every dispatch. **THE PRIMITIVE CLOSURES NOW EXECUTE AS IDENTITIES** — F_TRZ = 1/|SO(5)| (P1160), Phi_res = SSq/Omega_L = 5/6 = (D-1)/D at D_BSFG (P1159, SSq-independent), K_MEX = Phi_res*|SO(5)|/D_phys = 25/12 (P1166 = the PAPER_1522 source), D_BSFG = D_crit - 4|SO(5)|/2 = 6 (P1167 = the PAPER_1521 source), beta_i = 3(5-i)/20 with Sum = 3/2 = D_BSFG/D_phys (P1165 — resolving the recurring 0.6 as the i=1 triangular rung, not drift); each computes and EQUALS its registry primitive, gate-pinned. **THE 630 eV LENR CHAIN CLOSES** (P1136-1141): E_phonon x S26_LENR x Phi_res = 630.999 eV, with the papers' 1.4531e26 shown to be a 1e21 exponent slip off the P1129 mantissa. **PROOF-SET MACRO EVALUATOR** — the P1196/1199/1200 primitive-polynomial language is now executable, reproducing all 22 stated compositions from registry primitives alone (photon sphere r_ph/M = D_phys - F_TRZ*SO_5 = 3 EXACT; q_edge = 2 EXACT; 1/16 EXACT). **FIDELITY AUDIT (headline):** of 872 dispatches — **467 (53.6%) trace to a UQFF primitive through the call graph, 349 (40.0%) are untraced but Tier-1 Rule 4 compliant, 4 are benchmark data, 4 are in-chain, 16 have no equations, and 32 (3.7%) are TRUE Tier-2 classical envelopes now marked OPEN_RULING.** Zero primitive drift: all 16 constants match the registry bit-for-bit; SSq 0.505 absent; the gate blocked three attempts to type a primitive value into prose. **Project totals: 4,564 functions / 22,732 registry-family rows / 1,214 of 2,256 papers wired (53.8%) / gate 4,042 assertions green.**
+**This release (v0.365.0): TIER-2 RESOLUTION FROM PREDECESSOR PHYSICS + 9-SECTOR LAGRANGIAN TEMPLATE.** The v0.364.0 audit named 32 Tier-2 classical envelopes and found three with no later corpus coverage. Daniel directed a search of the Star-Magic predecessor repo (read-only, physics extracted, no code ported per Rule E) — **all three now have UQFF derivations.** **P1038 white dwarf:** the mass-radius exponent is `alpha = -Phi_res*F_TRZ*D_phys = -(5/6)(1/10)(4) = -1/3 EXACT` — three primitives, zero free parameters, reproducing the n=3/2 polytrope. **P1032 dust grain:** `F_UBi = F_Epstein*(1 + F_TRZ*SSq)`, the correction being the pure primitive product 0.057; the grain sector uses RHO_UA rather than RHO_SCM. **P1040 shock jump:** Rankine-Hugoniot with the clamped (+-1e-3) aether factor at mu = 0.61, with the source material's own 4.4x three-method spread disclosed. **Tier-2 open count 32 -> 29.** Also wired: the 9-SECTOR LAGRANGIAN TEMPLATE recovered from the marker-hidden region of PAPER_001-500 — `V(phi) = 1/2 m^2 phi^2 + (lambda/4!) phi^4 + kappa*rho_vac*phi` with per-sector boxed EOMs across NS / B-field / BH / rotation / SNR / nebula / LENR / outflow / jet, the kappa*rho_vac tilt driving symmetry breaking (vev gate-pinned as the root of dV/dphi = 0). **Project totals: 4,576 functions / 22,781 registry-family rows / 1,214 of 2,256 papers wired (53.8%) / gate 4,056 assertions green.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -22,12 +22,12 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Full-project totals (measured):** **4,564 functions** across 15 Python modules
-(calculator 2,858 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+**Full-project totals (measured):** **4,576 functions** across 15 Python modules
+(calculator 2,870 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
-**22,732 registry-family rows** across 14 CSVs (main 5,168 + falsifiability graph 7,646
+**22,781 registry-family rows** across 14 CSVs (main 5,168 + falsifiability graph 7,646
 edges + XGEO 3,221 + citations 5,751 + results 187 + audit family 946) | **1,214 of 2,256
-whitepapers wired** (53.8% of corpus; frontier PAPER_001-1200 complete) | **4,042 gate
+whitepapers wired** (53.8% of corpus; frontier PAPER_001-1200 complete) | **4,056 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into ~47,000 Python
 lines (~13:1 on the covered range).
 

@@ -73,10 +73,12 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.364.0"
+VERSION = "0.365.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
+# STATE v0.365.0: + TIER-2 RESOLUTION from predecessor physics (P1032 F_TRZ*SSq, P1038 -Phi_res*F_TRZ*D_phys
+# = -1/3 EXACT, P1040 clamped aether) and the 9-sector Lagrangian template; Tier-2 32 -> 29; gate 4,056.
 # STATE v0.364.0: deep-capture COMPLETE PAPER_001-1200 + century deep-mine + RULE 4 TIER AUDIT; 1,214 dispatches;
 # 2,858 calculator defs; proof-set evaluator; 53.6% primitive-traced / 40.0% Tier-1 / 3.7% Tier-2 OPEN; gate 4,042.
 # STATE v0.363.0: deep-capture COMPLETE PAPER_001-1100 + century deep-mine; 1,114 dispatches; 2,677 calculator
@@ -7120,7 +7122,7 @@ _DC_DISPATCH_INDEX = {
     345: ('own', ['sfr_uqff_resonant']),
     346: ('own', ['omega_act_period']),
     347: ('own', ['jet_extension_length']),
-    348: ('own', ['e_flenr_kozima_coupling', 'ke_density_shock']),
+    348: ('own', ['e_flenr_kozima_coupling', 'ke_density_shock', 'v_sector_lagrangian', 'sector_vev', 'sector_eom']),
     349: ('covered', ['buoyancy_merger_velocity']),
     350: ('own', ['buoyancy_merger_velocity', 'super_virial_ratio']),
     351: ('own', ['kozima_eol_stationarity', 'outflow_kinetic_power', 'tde_tidal_radius']),
@@ -7130,8 +7132,8 @@ _DC_DISPATCH_INDEX = {
     355: ('own', ['relic_perturbation']),
     356: ('own', ['burst_ssq_modulation', 't_uqff_spindown_mod']),
     357: ('covered', ['kepler_orbital_radius']),
-    358: ('own', ['dynamical_friction_time', 'fubi_offset_scaling']),
-    359: ('own', ['e_t_negative_magnetic', 'f_mag_buoyancy_volume']),
+    358: ('own', ['dynamical_friction_time', 'fubi_offset_scaling', 'v_sector_lagrangian', 'sector_eom']),
+    359: ('own', ['e_t_negative_magnetic', 'f_mag_buoyancy_volume', 'v_sector_lagrangian', 'sector_eom']),
     360: ('own', ['k_rel_lorentz_squared']),
     361: ('own', ['bubble_positive_et', 'bubble_weaver_radius']),
     362: ('own', ['phillips_k_rate', 'v_thermal_mean']),
@@ -7804,15 +7806,15 @@ _DC_DISPATCH_INDEX = {
     1029: ('own', ['f_bary_orbit_1029']),
     1030: ('own', ['l_min_qg_1030', 'gup_bound_1030', 'beta_gup_1030']),
     1031: ('own', ['photon_orbit_rhs_1031', 'b_impact_1031']),
-    1032: ('own', ['dust_accel_1032']),
+    1032: ('own', ['dust_accel_1032', 'f_ubi_dust_1032', 'f_epstein_dust_1032', 'f_aether_grain_1032']),
     1033: ('own', ['bar_accel_1033']),
     1034: ('own', ['omega2_frb_1034']),
     1035: ('own', ['kn_energy_balance_1035', 'q_kn_uqff_1035']),
     1036: ('own', ['dxn_dt_1036', 'gamma_np_uqff_1036']),
     1037: ('own', ['l_bz_phonon_1037']),
-    1038: ('own', ['wd_cooling_1038']),
+    1038: ('own', ['wd_cooling_1038', 'wd_radius_exponent_1038', 'wd_radius_1038']),
     1039: ('covered', ['f_buoy_999', 'rho_icm_beta_976', 'b_hse_999']),
-    1040: ('own', ['shock_jump_phonon_1040']),
+    1040: ('own', ['shock_jump_phonon_1040', 'v_shock_rankine_1040', 'shock_jump_uqff_1040']),
     1041: ('own', ['cool_core_dT_1041']),
     1042: ('own', ['z_mock_partition_1042', 'chi_mock_1042']),
     1043: ('own', ['gamma_peak_1043']),
@@ -15787,6 +15789,147 @@ def v_sound_icm_1149(kT_keV=3.62, gamma=5.0 / 3.0, mu_mol=0.6):
     at kT = 3.62 keV."""
     import math as _m
     return _m.sqrt(gamma * kT_keV * 1.602176634e-16 / (mu_mol * 1.6726219e-27))
+
+
+# --- P1032/P1038/P1040 UQFF DERIVATIONS (predecessor-repo physics, Rule E) ---
+
+def f_aether_clamped(rho_amb, t_n=0.0, cap=1e-3, rho_ref=None):
+    """Star-Magic _session300 form: the aether correction with the papers' own
+    +-1e-3 clamp, f_A = 1 + clamp(beta_i*rho_ref/rho_amb)*cos(pi t_n).
+    rho_ref defaults to RHO_SCM; grain-sector uses RHO_UA (P1032)."""
+    if rho_ref is None:
+        rho_ref = RHO_SCM
+    if rho_amb <= 0:
+        return 1.0
+    d = BETA_I * (rho_ref / rho_amb)
+    d = max(-cap, min(cap, d))
+    return 1.0 + d * cos_pi_tn_1131(t_n)
+
+
+def f_ubi_dust_1032(F_epstein, ssq=SSQ):
+    """PAPER_1032 UQFF DERIVATION (Star-Magic CondensedPhysics dust-drag):
+    F_UBi_dust = F_Epstein*(1 + F_TRZ*SSq) — the grain buoyancy correction is
+    a PURE PRIMITIVE PRODUCT, F_TRZ*SSq = 0.057. Replaces the anchored-
+    classical Tier-2 form."""
+    return F_epstein * (1.0 + F_TRZ * ssq)
+
+
+def f_epstein_dust_1032(a_dust_m, rho_gas, v_rel, T_gas, m_H=1.673e-27):
+    """PAPER_1032: Epstein drag F = (4pi/3)a^2 rho_gas v c_s,
+    c_s = sqrt(k_B T/m_H) (predecessor dust-drag chain)."""
+    import math as _m
+    c_s = _m.sqrt(1.380649e-23 * T_gas / m_H)
+    return 4.0 / 3.0 * _m.pi * a_dust_m ** 2 * rho_gas * v_rel * c_s
+
+
+def f_aether_grain_1032(rho_grain_eff, t_n=0.0):
+    """PAPER_1032 (Star-Magic _session291): grain-sector aether modulation
+    f = 1 + beta_i*(rho_UA/rho_grain_eff)*cos(pi t_n) — note the grain sector
+    uses RHO_UA, not RHO_SCM."""
+    return f_aether_clamped(rho_grain_eff, t_n, rho_ref=RHO_UA)
+
+
+def wd_radius_exponent_1038():
+    """PAPER_1038 UQFF DERIVATION (Star-Magic _session388): the white-dwarf
+    mass-radius exponent R ~ M^alpha with
+        alpha = -Phi_res*F_TRZ*D_phys = -(5/6)(1/10)(4) = -1/3 EXACT
+    reproducing the n=3/2 polytrope result from THREE PRIMITIVES with zero
+    free parameters. Replaces the anchored-classical Tier-2 form."""
+    return -phi_res_codimension_1159() * F_TRZ * D_PHYS
+
+
+def wd_radius_1038(M_over_msun, R0_rsun=0.0127):
+    """PAPER_1038: R_WD/R_sun = R0*(M/Msun)^(-1/3) with the exponent
+    primitive-derived by wd_radius_exponent_1038."""
+    return R0_rsun * M_over_msun ** wd_radius_exponent_1038()
+
+
+def v_shock_rankine_1040(T_keV, mu=0.61, rho_amb=1e-24, t_n=0.0):
+    """PAPER_1040/1192 UQFF DERIVATION (Star-Magic _session300): strong-shock
+    jump kT = (3/16) mu m_p v^2 -> v = sqrt(16 kT/(3 mu m_p)), then the
+    UQFF aether modulation v_UQFF = v*f_A with the +-1e-3 clamp.
+    mu = 0.61 fully-ionised (X=0.7, Y=0.28) — the predecessor's value.
+    METHOD SPREAD DISCLOSED: at Cas A's T_X = 3 keV this X-ray route gives
+    1585 km/s, while Sedov (0.4 R/t) gives 2793 and free-expansion (R/t)
+    gives 6984 for the same object — the three methods disagree by 4.4x in
+    the source material itself; each is faithful to its own formula."""
+    import math as _m
+    v = _m.sqrt(16.0 * T_keV * 1.602176634e-16 / (3.0 * mu * 1.6726219e-27))
+    return v * f_aether_clamped(rho_amb, t_n)
+
+
+def shock_jump_uqff_1040(rho1, v1, P1, rho2, v2, P2, rho_amb=1e-24, t_n=0.0):
+    """PAPER_1040: Rankine-Hugoniot residuals with the UQFF aether factor
+    applied to the momentum flux — DeltaP_phonon now carries f_A rather than
+    standing as a bare classical envelope."""
+    fa = f_aether_clamped(rho_amb, t_n)
+    return (rho1 * v1 - rho2 * v2,
+            ((P1 + rho1 * v1 ** 2) - (P2 + rho2 * v2 ** 2)) * fa)
+
+
+# --- 9-SECTOR LAGRANGIAN TEMPLATE (marker-hidden recovery, PAPER_001-500) ---
+
+SECTOR_LAGRANGIAN_EOM = {
+    'NS':      'grad^2 phi - (4 pi G rho_NS/c^2) phi + kappa rho_vac',
+    'B':       'curl(rho_SCm v x B) + kappa B_crit d_t phi',
+    'BH':      'R_mn - (1/2) g_mn R + rho_vac g_mn + F_U_Bi_i',
+    'rot':     'v_c^2/r - mu_s grad(M_s/r) - F_U_Bi_i/(m r) + rho_vac',
+    'SNR':     'd_t(rho v) + grad P_SNR - rho_vac g_SNR',
+    'neb':     'div(rho_neb grad phi) + rho_vac',
+    'LENR':    'chi_ddot + omega_LENR^2 chi - lambda cos(omega_act t) - sigma_n',
+    'outflow': 'F_Kozima (1/2) Mdot_out v_out^2',
+    'jet':     'd_t(gamma rho v_jet) + B^2/(8 pi) grad phi - F_U_Bi_i',
+}
+
+
+def v_sector_lagrangian(phi, m, lam, kappa=None, rho_vac=None):
+    """PAPER_100/176/223/227/230/285/348/358/359 RECOVERY (marker-hidden in
+    the 1-500 band): the UNIVERSAL sector potential
+        V(phi) = (1/2) m^2 phi^2 + (lambda/4!) phi^4 + kappa*rho_vac,[SCm]*phi
+    instantiated across all NINE sectors with only the boxed EOM differing.
+    kappa defaults to KAPPA_PER_DAY, rho_vac to RHO_SCM."""
+    if kappa is None:
+        kappa = KAPPA_PER_DAY
+    if rho_vac is None:
+        rho_vac = RHO_SCM
+    return 0.5 * m ** 2 * phi ** 2 + lam / 24.0 * phi ** 4 + kappa * rho_vac * phi
+
+
+def dv_dphi_sector(phi, m, lam, kappa=None, rho_vac=None):
+    """Stationarity of the sector potential:
+    dV/dphi = m^2 phi + (lambda/6) phi^3 + kappa*rho_vac = 0 — the common
+    Euler-Lagrange core shared by all nine sectors."""
+    if kappa is None:
+        kappa = KAPPA_PER_DAY
+    if rho_vac is None:
+        rho_vac = RHO_SCM
+    return m ** 2 * phi + lam / 6.0 * phi ** 3 + kappa * rho_vac
+
+
+def sector_vev(m, lam, kappa=None, rho_vac=None, n_iter=200):
+    """Sector vacuum expectation value: the real root of dV/dphi = 0
+    (Newton from phi=0; the kappa*rho_vac tilt breaks the symmetric minimum)."""
+    if kappa is None:
+        kappa = KAPPA_PER_DAY
+    if rho_vac is None:
+        rho_vac = RHO_SCM
+    phi = 0.0
+    for _ in range(n_iter):
+        f = dv_dphi_sector(phi, m, lam, kappa, rho_vac)
+        fp = m ** 2 + lam / 2.0 * phi ** 2
+        if fp == 0:
+            break
+        step = f / fp
+        phi -= step
+        if abs(step) < 1e-18:
+            break
+    return phi
+
+
+def sector_eom(sector):
+    """Return the boxed Euler-Lagrange equation for a named sector
+    (one of the nine recovered from the 1-500 marker-hidden region)."""
+    return SECTOR_LAGRANGIAN_EOM.get(sector)
 
 
 @_register('PAPER_001')

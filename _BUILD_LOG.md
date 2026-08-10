@@ -196,3 +196,6 @@ Bands 1011-1100 + deep-mine + capture audit. Gate 3,854/0. Dispatches 1,114. Reg
 
 ## v0.364.0 (2026-08-09)
 Bands 1101-1200 + deep-mine + Rule 4 tier audit. Gate 4,042/0. Dispatches 1,214. Registry family 22,732.
+
+## v0.365.0 (2026-08-09)
+Tier-2 resolution (P1032/1038/1040) + 9-sector Lagrangian template. Gate 4,056/0. Tier-2 32->29.

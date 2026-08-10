@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.364.0", "uqff_calculator.VERSION = 0.364.0 (deep-capture 1101-1200 + deep-mine + Rule 4 tier audit)")
+assert_that(C.VERSION == "0.365.0", "uqff_calculator.VERSION = 0.365.0 (Tier-2 resolution + 9-sector Lagrangian template)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -8356,6 +8356,23 @@ assert_that(len(_r4_open) == 32, "RULE4 AUDIT: 32 Tier-2 classical envelopes ide
 for _r4p in _r4_open:
     assert_that(int(_r4p) in C._DC_DISPATCH_INDEX, "RULE4 AUDIT: Tier-2 paper %s still dispatched (faithful transcription retained)" % _r4p)
 assert_that(C.wired_count() >= 1214, "RULE4 AUDIT: audit changed no wiring (measurement only)")
+
+# --- TIER-2 RESOLUTION GUARD (P1032/P1038/P1040) + 9-SECTOR TEMPLATE ---
+assert_that(abs(C.wd_radius_exponent_1038() + 1.0 / 3.0) < 1e-15, "P1038 RESOLVED: WD exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT from three primitives (was Tier-2 classical)")
+assert_that(abs(C.f_ubi_dust_1032(1.0) - (1.0 + C.F_TRZ * C.SSQ)) < 1e-15, "P1032 RESOLVED: dust buoyancy = 1 + F_TRZ*SSq PURE PRIMITIVE PRODUCT (was Tier-2 classical)")
+assert_that(abs(C.F_TRZ * C.SSQ - 0.057) < 1e-15, "P1032 the dust correction constant IS F_TRZ*SSq = 0.057")
+assert_that(abs(C.f_aether_grain_1032(1e-18) - 1.0) < 1e-3, "P1032 grain aether uses RHO_UA and respects the 1e-3 clamp")
+_t2v = C.v_shock_rankine_1040(3.0)
+assert_that(abs(_t2v / 1000.0 - 1585.08) < 1.0, "P1040 RESOLVED: Rankine-Hugoniot + clamped aether = 1585 km/s at 3 keV (3-method spread DISCLOSED)")
+assert_that(abs(C.f_aether_clamped(1e-24) - 1.0) <= 1e-3, "P1040 aether clamp bounded at +-1e-3 (predecessor form)")
+assert_that(C.f_aether_clamped(0.0) == 1.0, "P1040 clamp degenerate-density guard")
+assert_that(len(C.SECTOR_LAGRANGIAN_EOM) == 9, "9-SECTOR TEMPLATE: all nine boxed EOMs recovered from the 1-500 marker-hidden region")
+assert_that(set(C.SECTOR_LAGRANGIAN_EOM) == {'NS', 'B', 'BH', 'rot', 'SNR', 'neb', 'LENR', 'outflow', 'jet'}, "9-SECTOR TEMPLATE: sector names match the recovered set")
+assert_that(C.v_sector_lagrangian(0.0, 1.0, 1.0) == 0.0, "SECTOR TEMPLATE V(0) = 0 (kappa*rho_vac*phi vanishes at origin)")
+assert_that(abs(C.v_sector_lagrangian(1.0, 1.0, 24.0) - (0.5 + 1.0 + C.KAPPA_PER_DAY * C.RHO_SCM)) < 1e-15, "SECTOR TEMPLATE quartic normalization lambda/4!")
+assert_that(abs(C.dv_dphi_sector(C.sector_vev(1.0, 1.0), 1.0, 1.0)) < 1e-30, "SECTOR TEMPLATE vev solves dV/dphi = 0")
+assert_that(C.sector_vev(1.0, 1.0) < 0.0, "SECTOR TEMPLATE kappa*rho_vac tilt drives the vev negative (symmetry breaking)")
+assert_that(C.sector_eom('BH').startswith('R_mn'), "SECTOR TEMPLATE BH sector returns the Einstein-form EOM")
 
 # =============================================================================
 # REPORT

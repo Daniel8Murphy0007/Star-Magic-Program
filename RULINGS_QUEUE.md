@@ -5911,3 +5911,20 @@ needed per case or as a class:
       standing rule), OR
   (c) case-by-case.
 Evidence files: `_AUDIT_TIER_UNTRACED.csv` (all 389), `_AUDIT_TIER2_FINAL.csv` (the 40).
+
+## UPDATE v0.365.0 (2026-08-09) — THREE TIER-2 ITEMS RESOLVED FROM PREDECESSOR PHYSICS
+
+Daniel directed a search of the Star-Magic repo (.py helpers, read-only per Rule E — physics
+extracted, no code ported). All three no-later-coverage Tier-2 items now have UQFF derivations:
+
+- **P1038 (WD)** — Star-Magic `_session388_astro_wd_exponent.py`: the mass-radius exponent is
+  `alpha = -Phi_res*F_TRZ*D_phys = -(5/6)(1/10)(4) = -1/3 EXACT`. Three primitives, zero free
+  parameters, reproducing the n=3/2 polytrope. **Strongest of the three.**
+- **P1032 (dust grain)** — Star-Magic `CondensedPhysics.py` dust-drag: `F_UBi = F_Epstein*(1 +
+  F_TRZ*SSq)`; the correction is the pure primitive product 0.057. Grain-sector aether uses
+  RHO_UA (not RHO_SCM) per `_session291`.
+- **P1040 (shock jump)** — Star-Magic `_session300_snr_shock_velocity.py`: Rankine-Hugoniot with
+  the clamped aether factor (+-1e-3), mu = 0.61. Three-method spread (X-ray 1585 / Sedov 2793 /
+  free-expansion 6984 km/s for Cas A) DISCLOSED — the source material itself disagrees 4.4x.
+
+**Tier-2 count: 32 -> 29.** Q-RULE4-TIER2 still open for the remaining 29.

@@ -6672,3 +6672,44 @@ Audit changed no wiring (measurement only); +32 registry rows, +1 GAPS, +1 R1,
 SHIP v0.364.0: full 23-file pass. PROJECT TOTALS (measured): 4,564 fns /
 22,732 registry-family rows / 1,214 dispatches (53.8%) / gate 4,042 /
 citations cover 1,525 papers.
+
+## APPENDED 2026-08-09 (62) — TIER-2 RESOLUTION FROM PREDECESSOR PHYSICS + 9-SECTOR TEMPLATE (v0.365.0)
+
+Daniel: "WE NEED TO DERIVE USING UQFF PHYSICS; THE STAR-MAGIC REPO HAS WHAT IS
+MISSING." Searched the predecessor repo's .py helpers READ-ONLY per Rule E —
+physics content extracted, no code ported.
+
+THREE TIER-2 ITEMS RESOLVED (the ones with zero later corpus coverage):
+- P1038 white dwarf, from Star-Magic _session388_astro_wd_exponent.py:
+    alpha = -Phi_res*F_TRZ*D_phys = -(5/6)(1/10)(4) = -1/3 EXACT
+  THREE primitives, zero free parameters, reproducing the n=3/2 polytrope
+  mass-radius law. The strongest of the three; gate-pinned as EXACT.
+- P1032 dust grain, from CondensedPhysics.py dust-drag + _session291:
+    F_UBi = F_Epstein*(1 + F_TRZ*SSq), correction = 0.057 — a PURE PRIMITIVE
+  PRODUCT. Grain-sector aether uses RHO_UA (not RHO_SCM), noted and wired.
+- P1040 shock jump, from _session300_snr_shock_velocity.py:
+    v = sqrt(16 kT/(3 mu m_p)) * f_A with the predecessor's +-1e-3 clamp and
+  mu = 0.61. METHOD SPREAD DISCLOSED: the same Cas A anchor gives 1585 km/s
+  (X-ray), 2793 (Sedov), 6984 (free expansion) — a 4.4x disagreement present
+  in the source material itself, not introduced here.
+
+TIER-2 OPEN COUNT 32 -> 29.
+
+9-SECTOR LAGRANGIAN TEMPLATE WIRED (the 18 marker-hidden forms from the
+PAPER_001-500 probe, which reduced to ONE template x 9 sectors):
+    V(phi) = 1/2 m^2 phi^2 + (lambda/4!) phi^4 + kappa*rho_vac,[SCm]*phi
+  with SECTOR_LAGRANGIAN_EOM carrying the nine boxed Euler-Lagrange forms
+  (NS, B-field, BH, rotation, SNR, nebula, LENR, outflow, jet). Shared EL
+  core dV/dphi = m^2 phi + (lambda/6) phi^3 + kappa*rho_vac; sector_vev
+  solves it by Newton and is gate-pinned as a true root, with the
+  kappa*rho_vac tilt driving the vev negative (symmetry breaking).
+  Attached to the P348/P358/P359 dispatches (P100/176/223/227/230/285 are on
+  the sequential @_register path).
+
++12 registry rows, +24 graph edges, +14 guard asserts, +3 RESOLVED rows,
+GAPS/R3/MERGED/XGEO updated, RULINGS_QUEUE updated with the resolution note.
+pyproject desc hit 515 chars on first write (>512 PyPI cap) — caught by the
+ship-guard assert, shortened to 413. Gate GREEN at 4,056.
+
+SHIP v0.365.0 prepared: 4,576 fns / 22,781 registry rows / 1,214 dispatches /
+gate 4,056.

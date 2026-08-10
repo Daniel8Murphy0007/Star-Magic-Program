@@ -2302,4 +2302,4 @@
 | ⬜ | TEMPLATES_README | (no PAPER_N prefix) |
 | ⬜ | UQFF_VALIDATION_SYNC_AUDIT | (no PAPER_N prefix) |
 
-**DEEP-CAPTURE FRONTIER: PAPER_1200 (SHIPPED v0.364.0; next arc v0.365.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)
+**DEEP-CAPTURE FRONTIER: PAPER_1200 (v0.365.0 Tier-2 resolution + sector template; next arc v0.366.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)

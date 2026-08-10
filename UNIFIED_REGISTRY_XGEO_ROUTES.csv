@@ -1611,3 +1611,4 @@ boyle_vacuum_ratio,primitive-stack,boyle_vacuum_ratio via uqff_calculator primit
 s26_exp_identity,PAPER_983,S26_exp = s26_gate_880 EXACT identity,v0.362.0,
 db_dr_traversability,PAPER_1073,|db/dr| = 1-beta_i*SSq = 0.65634 primitive-exact,v0.363.0,
 rule4_tier_audit,PAPER_862..1192,872 dispatches classified; 32 Tier-2 OPEN,v0.364.0,
+wd_exponent_primitive,PAPER_1038,R~M^(-Phi_res*F_TRZ*D_phys) = M^(-1/3) EXACT,v0.365.0,

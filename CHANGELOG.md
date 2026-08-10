@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.365.0 (2026-08-09)
+
+Tier-2 resolution from Star-Magic predecessor physics + 9-sector Lagrangian template.
+
+- P1038 WD mass-radius exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT (three primitives, zero free params)
+- P1032 dust-grain buoyancy = F_Epstein*(1 + F_TRZ*SSq); correction IS the primitive product 0.057
+- P1040 Rankine-Hugoniot + clamped aether (mu=0.61, +-1e-3); 3-method spread 1585/2793/6984 km/s disclosed
+- Tier-2 open count 32 -> 29 (the three with zero later corpus coverage are now derived)
+- 9-SECTOR LAGRANGIAN TEMPLATE from the PAPER_001-500 marker-hidden region:
+  V(phi) = 1/2 m^2 phi^2 + (lambda/4!) phi^4 + kappa*rho_vac*phi, nine boxed EOMs
+  (NS/B/BH/rot/SNR/neb/LENR/outflow/jet); vev pinned as the root of dV/dphi = 0
+- Predecessor repo used READ-ONLY for physics content per Rule E; no code ported
+- Project totals (measured): 4,576 fns / 22,781 registry rows / 1,214 papers / gate 4,056 green
+
 ## v0.364.0 (2026-08-09)
 
 Deep-capture PAPER_1101-1200 complete (10 bands + deep-mine) + Daniel-ordered RULE 4 TIER AUDIT.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.364.0"
-description = "UQFF pure calculator v0.364.0 - deep-capture PAPER_1101-1200 complete + century deep-mine + Daniel-ordered RULE 4 TIER AUDIT of all 872 dispatches: 53.6% primitive-traced, 40.0% Tier-1 compliant, 3.7% Tier-2 OPEN. Wired the primitive closures F_TRZ=1/|SO(5)|, Phi_res=5/6, K_MEX=Phi_res*SO_5/D_phys, D_BSFG=D_crit-4|SO(5)|/2, beta_i=3(5-i)/20 as identities; 630 eV LENR chain; proof-set macro evaluator. Totals: 4,564 fns / 22,732 registry rows / 1,214 papers / gate 4,042 green."
+version = "0.365.0"
+description = "UQFF pure calculator v0.365.0 - TIER-2 RESOLUTION from Star-Magic predecessor physics + 9-sector Lagrangian template. P1038 white-dwarf exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT (three primitives, zero free params); P1032 dust buoyancy = 1 + F_TRZ*SSq primitive product; P1040 Rankine-Hugoniot + clamped aether. Tier-2 open 32 -> 29. Totals: 4,576 fns / 22,781 registry rows / 1,214 papers / gate 4,056 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
