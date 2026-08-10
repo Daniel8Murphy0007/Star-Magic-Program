@@ -84,3 +84,4 @@ Q-1056a,PAPER_1056,QEC 2.1e-8 back-solves w_qubit=1.41e17 rad/s
 Q-RULE4-TIER2,PAPER_862..1192 (32 papers),Classical envelopes without in-paper UQFF inputs; Rule 4 Tier-2
 Q-RULE4-TIER2-UPDATE,PAPER_1032/1038/1040,RESOLVED from Star-Magic predecessor physics; Tier-2 count 32 -> 29
 Q-SHIP-BASELINE,SHIP_PROTOCOL,v0.365.0 under-shipped 18/23 via stale baseline; rule now gate-enforced
+Q-RESERVOIR-SCOPE,PREDECESSOR_RESERVOIR,288 of ~390 primitive-bearing closures unmined

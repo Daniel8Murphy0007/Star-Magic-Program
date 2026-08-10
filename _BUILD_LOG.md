@@ -202,3 +202,6 @@ Tier-2 resolution (P1032/1038/1040) + 9-sector Lagrangian template. Gate 4,056/0
 
 ## v0.365.1 (2026-08-09)
 Ship-integrity fix: 5 audit files omitted at v0.365.0 completed. Baseline-tag rule gate-enforced. Gate 4,057/0.
+
+## v0.366.0 (2026-08-09)
+Bands 1201-1250 + closure-reservoir batches 1-7 (102/390 mined). Gate 4,243/0. Dispatches 1,264.

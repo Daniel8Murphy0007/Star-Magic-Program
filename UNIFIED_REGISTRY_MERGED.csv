@@ -538,3 +538,4 @@ BAND_1011_1100_FAMILY,v0.363.0,QFT eps=beta_i*SSq*F_TRZ^2 family + four S26^(3) 
 BAND_1101_1200_FAMILY,v0.364.0,primitive closures as identities + LENR 630 eV chain + proof-set evaluator + falsifier suite,MERGED_SUMMARY,PAPER_1101-1200
 SECTOR_LAGRANGIAN_TEMPLATE,v0.365.0,V=1/2 m^2 phi^2+(lam/4!)phi^4+kappa rho_vac phi across 9 sectors,MERGED_SUMMARY,PAPER_100/176/223/227/230/285/348/358/359
 SHIP_INTEGRITY_v0_365_1,v0.365.1,"23-file rule + version-sort baseline, gate-enforced",MERGED_SUMMARY,SHIP_PROTOCOL
+RESERVOIR_BATCHES_1_7,v0.366.0,"555 closures censused, 390 primitive-bearing, 102 mined; Kepler bit-exact, glueball=YM gap, CC landmark 0.0008%",MERGED_SUMMARY,PREDECESSOR_RESERVOIR

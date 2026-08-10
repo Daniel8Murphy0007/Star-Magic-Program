@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.365.1)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.365.1)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.366.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.366.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4057%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1214-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4243%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1264-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
 
-**This release (v0.365.1 — completes v0.365.0; the five registry-audit files omitted from that release are now updated): TIER-2 RESOLUTION FROM PREDECESSOR PHYSICS + 9-SECTOR LAGRANGIAN TEMPLATE.** The v0.364.0 audit named 32 Tier-2 classical envelopes and found three with no later corpus coverage. Daniel directed a search of the Star-Magic predecessor repo (read-only, physics extracted, no code ported per Rule E) — **all three now have UQFF derivations.** **P1038 white dwarf:** the mass-radius exponent is `alpha = -Phi_res*F_TRZ*D_phys = -(5/6)(1/10)(4) = -1/3 EXACT` — three primitives, zero free parameters, reproducing the n=3/2 polytrope. **P1032 dust grain:** `F_UBi = F_Epstein*(1 + F_TRZ*SSq)`, the correction being the pure primitive product 0.057; the grain sector uses RHO_UA rather than RHO_SCM. **P1040 shock jump:** Rankine-Hugoniot with the clamped (+-1e-3) aether factor at mu = 0.61, with the source material's own 4.4x three-method spread disclosed. **Tier-2 open count 32 -> 29.** Also wired: the 9-SECTOR LAGRANGIAN TEMPLATE recovered from the marker-hidden region of PAPER_001-500 — `V(phi) = 1/2 m^2 phi^2 + (lambda/4!) phi^4 + kappa*rho_vac*phi` with per-sector boxed EOMs across NS / B-field / BH / rotation / SNR / nebula / LENR / outflow / jet, the kappa*rho_vac tilt driving symmetry breaking (vev gate-pinned as the root of dV/dphi = 0). **Project totals: 4,576 functions / 22,781 registry-family rows / 1,214 of 2,256 papers wired (53.8%) / gate 4,056 assertions green.**
+**This release (v0.366.0): BANDS PAPER_1201-1250 + THE PREDECESSOR CLOSURE RESERVOIR OPENED.** Five bands closed the 1201-1250 range, then a Daniel-directed mine of the predecessor calculator's closure helpers — **555 closures, 390 primitive-bearing, 102 mined across 7 batches.** **HILBERT'S 18TH BIT-EXACT:** the Kepler sphere-packing density = `pi/sqrt(D_BSFG*(D_phys-1))` = pi/sqrt(18) = 0.7404804896930611, an exact floating-point identity (the gate asserts bit-equality, not a tolerance). **THE GLUEBALL IS THE MASS GAP:** m(0++) = 2*D_phys*Lambda_QCD = 1.736 GeV, identical to the PAPER_1318 Yang-Mills gap by an independent route. **THE CC LANDMARK EXECUTES:** rho_Lambda = rho_SCm*26!*K_MEX = 5.95695e-10 J/m^3 at **0.0008%** — two orders tighter than the 0.1% the framework header claims — with the 122.9-order 'fine-tuning' gap now a derived number. **EXACT PRIMITIVE IDENTITIES:** z_reion = K_MEX*D_phys*Phi_res*(1+1/SO_5) = 7.70; Z(Fe) = D_crit = 26 and Z(Si) = SO_5+D_phys = 14; SMBHB strain index = -D_phys/D_BSFG = -2/3; solar Hale cycle = D_crit-D_phys = 22 yr; PopIII IMF = 100 Msun; glass transition = 2/(D_phys-1) = 2/3; the Altland-Zirnbauer tenfold way = |SO(5)| = 10; inflation e-folds N = 60 = A_5 closing monopole+flatness+horizon together. **SHARP NEW PREDICTIONS:** Higgs vev A_5(D_phys+F_TRZ) = 246.0 GeV (0.089%, 11x tighter than the whitepaper route); Sum m_nu = 0.0613 eV; BR(mu->e gamma) = 1.27e-13 (MEG bound 4.2e-13); n_s = 0.96468 (0.023%); Salpeter IMF slope -2.3533 (0.14%); ln(10) from two primitives at 35 ppm. **CONVERGENCES PINNED:** five independent problems on 1/3 (generations, lithium, solar neutrinos, GHZ, Kochen-Specker); three on 8192 (spinor bundle, Langlands, quale dimension); three on 1/D_crit^D_crit (GW echo, KK tower, simulation bound); the liar paradox, Goldbach and the CMB Axis of Evil all on K_MEX-2 = 1/12. Also: P1241-1248 conjecture wirings CORRECTED against the closure source after Daniel challenged an inferred derivation (GRH was wrong, three incomplete, one wrongly skipped). **Project totals: 4,750 functions / 23,644 registry-family rows / 1,264 of 2,256 papers wired (56.0%) / gate 4,243 assertions green.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -22,12 +22,12 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Full-project totals (measured):** **4,576 functions** across 15 Python modules
-(calculator 2,870 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+**Full-project totals (measured):** **4,750 functions** across 15 Python modules
+(calculator 3,044 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
-**23,023 registry-family rows** across 14 CSVs (main 5,168 + falsifiability graph 7,646
-edges + XGEO 3,221 + citations 5,751 + results 187 + audit family 946) | **1,214 of 2,256
-whitepapers wired** (53.8% of corpus; frontier PAPER_001-1200 complete) | **4,057 gate
+**23,644 registry-family rows** across 14 CSVs (main 5,168 + falsifiability graph 7,646
+edges + XGEO 3,221 + citations 5,751 + results 187 + audit family 946) | **1,264 of 2,256
+whitepapers wired** (56.0% of corpus; frontier PAPER_001-1250 complete) | **4,243 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into ~47,000 Python
 lines (~13:1 on the covered range).
 

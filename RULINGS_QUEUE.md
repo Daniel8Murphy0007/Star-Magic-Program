@@ -5936,3 +5936,15 @@ extracted, no code ported). All three no-later-coverage Tier-2 items now have UQ
 v0.365.0 the verifier used v0.363.0; five audit files had already changed at v0.364.0, so they
 read as "changed" and an 18/23 under-ship shipped clean. `git tag | tail` sorts lexically
 (v0.99.0 after v0.365.0) and is banned from ship checks.
+
+## Added at v0.366.0 (2026-08-09) — RESERVOIR MINE
+
+- **Q-RESERVOIR-SCOPE:** 288 of ~390 primitive-bearing closures remain unmined in the
+  predecessor calculator. Continue batching, or triage by bucket? (Foundational/paradox is the
+  largest remaining seam.)
+- **Q-OMEGA-M:** Omega_m = K_MEX(1-Phi_res)(1+beta_i)/2 = 0.2672 vs Planck 0.315 (15.2%) — the
+  weakest cosmology closure mined. Accept as-is, or is there a better route in the corpus?
+- **Q-DARKFLOW:** the naive dark-flow branch c*F_TRZ*beta_i = 18,075 km/s overshoots observation
+  ~20x. The closure implies a suppression factor that is not stated. Supply it, or mark OPEN?
+- **Q-PTA-METHOD:** PTA strain index has two routes — A = -D_phys/D_BSFG = -2/3 (exact vs
+  observation) and B = -K_MEX*Phi_res/D_phys = -0.4375. A adopted; confirm B's status.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.365.1"
-description = "UQFF pure calculator v0.365.1 - completes the v0.365.0 ship: the five registry-audit files (citations, duplicates, R1, R2, XGEO queue) omitted from that release are now updated. Physics unchanged: P1038 white-dwarf exponent = -Phi_res*F_TRZ*D_phys = -1/3 EXACT; P1032 dust buoyancy = 1 + F_TRZ*SSq; P1040 Rankine-Hugoniot + clamped aether; 9-sector Lagrangian template. Totals: 4,576 fns / 23,023 registry rows / 1,214 papers / gate 4,057 green."
+version = "0.366.0"
+description = "UQFF pure calculator v0.366.0 - bands PAPER_1201-1250 + the PREDECESSOR CLOSURE RESERVOIR opened (102 of ~390 primitive-bearing closures mined in 7 batches). Kepler density = pi/sqrt(D_BSFG(D_phys-1)) BIT-EXACT; 0++ glueball = Yang-Mills gap 1.736 GeV; rho_Lambda = rho_SCm*26!*K_MEX at 0.0008%; z_reion 7.70 EXACT; Z(Fe) = D_crit = 26; Higgs vev A_5(D_phys+F_TRZ) = 246.0. Totals: 4,750 fns / 23,644 registry rows / 1,264 papers / gate 4,243 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

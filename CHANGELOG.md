@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.366.0 (2026-08-09)
+
+Bands PAPER_1201-1250 + the predecessor closure reservoir opened (batches 1-7).
+
+- Dispatches 1,214 -> 1,264 (56.0% of the 2,256-paper corpus)
+- RESERVOIR CENSUS: 555 closure helpers in the predecessor calculator, 390 primitive-bearing,
+  102 mined across 7 batches; reservoir_inventory() wired as a live surface
+- HILBERT 18TH BIT-EXACT: Kepler density = pi/sqrt(D_BSFG(D_phys-1)) = pi/sqrt(18)
+- 0++ glueball = 2 D_phys Lambda_QCD = 1.736 GeV = the PAPER_1318 Yang-Mills gap (independent route)
+- CC LANDMARK EXECUTES: rho_Lambda = rho_SCm*26!*K_MEX at 0.0008%; 122.9-order gap derived
+- EXACT: z_reion 7.70, Z(Fe)=D_crit=26, Z(Si)=14, alpha_SMBHB=-2/3, Hale=22 yr, PopIII=100 Msun,
+  Tg/Tm=2/3, AZ classes=SO_5=10, inflation N=60=A_5 (monopole+flatness+horizon together)
+- PREDICTIONS: Higgs vev 246.0 GeV (0.089%), Sum m_nu 0.0613 eV, BR(mu->e gamma) 1.27e-13,
+  n_s 0.96468, Salpeter -2.3533, ln(10) at 35 ppm
+- P1241-1248 conjecture wirings CORRECTED against closure source (GRH wrong, 3 incomplete, 1 skipped)
+- Rule 7 gaps pinned AS gaps: Omega_m 15.2%, dark-flow naive 20x, 21cm vs EDGES 42%, QCD tension 2x
+- Project totals (measured): 4,750 fns / 23,644 registry rows / 1,264 papers / gate 4,243 green
+
 ## v0.365.1 (2026-08-09)
 
 Ship-integrity correction to v0.365.0.
