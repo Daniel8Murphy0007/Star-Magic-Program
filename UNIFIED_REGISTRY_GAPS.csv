@@ -85,3 +85,8 @@ Q-RULE4-TIER2,PAPER_862..1192 (32 papers),Classical envelopes without in-paper U
 Q-RULE4-TIER2-UPDATE,PAPER_1032/1038/1040,RESOLVED from Star-Magic predecessor physics; Tier-2 count 32 -> 29
 Q-SHIP-BASELINE,SHIP_PROTOCOL,v0.365.0 under-shipped 18/23 via stale baseline; rule now gate-enforced
 Q-RESERVOIR-SCOPE,PREDECESSOR_RESERVOIR,288 of ~390 primitive-bearing closures unmined
+light_quark_masses,PAPER_a5,11.42/7.37,ratio d/u = K_Mex closes at 3.64%,Q-RESERVOIR-QUARKS,v0.367.0
+neutrino_mass_splittings,PAPER_a6,1.65/4.25,ratio = D_crit+N_ch-2 = 33 EXACT,Q-RESERVOIR-QUARKS,v0.367.0
+flatness_suppression,PAPER_1461,9.2,1/D_crit^7 high vs stated 1.14e-10,OPEN,v0.367.0
+page_curve_recovery,PAPER_1280,0.404,no primitive decomposition in corpus,Q-1280-PAGE,v0.367.0
+coronal_temperature,PAPER_1261,1.15,beta_i truncation per paper,DISCLOSED,v0.367.0

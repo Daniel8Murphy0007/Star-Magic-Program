@@ -7,6 +7,56 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.367.0 (2026-08-10)
+
+Bands PAPER_1251-1300 (50 papers) + predecessor closure reservoir DRAINED (batches 10-13)
++ ORPHAN-PHYSICS audit.
+
+### Bands wired
+
+- **1251-1260** cosmology anomalies & puzzles: dark flow (f_LS = 1/30.15 carrying the
+  PAPER_1962 D_BSFG/D_phys = 3/2 ratio), late ISW (w = -1 + F_TRZ), dark-matter candidate
+  1.7802 eV, neutron lifetime 879.31 s, muonic-H proton radius 0.84109 fm (also closing via
+  the pure-integer 23/24 ratio), tau/sterile neutrinos, GRB bimodality, FRB 1.4 GHz EXACT,
+  Sgr A* flares (mechanism only, 17-order scale separation disclosed).
+- **1261-1270** coronal heating, Salpeter IMF, holography, PTA, multimessenger: PTA strain
+  index alpha = -D_phys/D_BSFG = **-D_GW_EROSION**; SMBHB implied gamma = 13/3 = D_crit/D_BSFG
+  (the Kerr ringdown coefficient); BH entropy prefactor K_Mex*D_BSFG = 2*Q_phonon;
+  multimessenger 100 s EXACT with SO_5^3 reciprocal to the FRB conversion.
+- **1271-1280** foundations: rho_Lambda = rho_SCm*26!*K_Mex (0.0008%, J/m3-native),
+  Tsirelson 2*sqrt(D_phys/2) EXACT, U_i = 2.75e-7 bit-locked, 26! singularity floor shared
+  with the vacuum-density amplification, Page curve 0.99596 (OPEN_RULING, 0.404% disclosed).
+- **1281-1290** holography restatements + Hilbert/Smale: four restatement pairs/triples
+  converging on already-wired lattice facts; Hilbert 6th axiomatization wired self-checking
+  against the live 9-sector Lagrangian.
+- **1291-1300** Smale + number theory + complexity: Erdos-Straus, Beal, and weak Goldbach all
+  turn on the SAME triadic primitive D_phys - 1 = 3.
+
+### Reservoir mine completed (batches 10-13)
+
+Primitive-bearing predecessor closures exhausted at 250 of ~390. Highlights: the
+**sevenths identity K_Mex*Phi_res = 7/4 EXACT** (now in 4 sectors), the complete 9-member
+**PAPER_1208 transcendental cascade** (pi^2 tightest at 0.0125%), the PAPER_1196 tokamak set
+(4 of 8 EXACT), the PAPER_1209xx constants cascade (chemistry/physiology/geophysics all
+integer-EXACT), and Euler-Mascheroni gamma + the Omega constant both leading with SSq = 0.57.
+
+### Rule 7 disclosures (pinned AS gaps, not smoothed)
+
+Light-quark masses (+11.4%, +7.4%) and neutrino mass-squared splittings (-1.7%, -4.3%) carry
+real gaps while their RATIOS close cleanly (d/u = K_Mex; dm2_31/dm2_21 = D_crit+N_ch-2 = 33
+EXACT). Flatness suppression 1/D_crit^7 runs 9.2% high. Coronal temperature 1.15%. Logged as
+Q-RESERVOIR-QUARKS.
+
+### ORPHAN-PHYSICS audit (Daniel-directed)
+
+No paper numbers are missing: whitepapers/ spans PAPER_1-2156 with zero gaps, and all 459
+predecessor-cited ids have files. The orphaned physics sits OUTSIDE the numbering - 71
+non-numbered .md files, the ten largest holding **6,615 equation blocks** never assigned a
+PAPER number. Distinct from the code reservoir drained in batches 1-13. No wiring performed;
+logged as Q-ORPHAN-PHYSICS pending ruling.
+
+---
+
 ## v0.366.0 (2026-08-09)
 
 Bands PAPER_1201-1250 + the predecessor closure reservoir opened (batches 1-7).

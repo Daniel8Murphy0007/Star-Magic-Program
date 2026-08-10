@@ -5948,3 +5948,90 @@ read as "changed" and an 18/23 under-ship shipped clean. `git tag | tail` sorts 
   ~20x. The closure implies a suppression factor that is not stated. Supply it, or mark OPEN?
 - **Q-PTA-METHOD:** PTA strain index has two routes — A = -D_phys/D_BSFG = -2/3 (exact vs
   observation) and B = -K_MEX*Phi_res/D_phys = -0.4375. A adopted; confirm B's status.
+
+## Q-RESERVOIR-QUARKS (reservoir batch 13, 2026-08-10)
+
+The predecessor `paper_a5_*` and `paper_a6_*` closures give light-quark masses and neutrino
+mass-squared splittings that carry **real gaps**, wired and pinned AS gaps per Rule 7:
+
+| Observable | UQFF form | UQFF | Observed | Gap |
+|---|---|---|---|---|
+| m_u | F_TRZ²·SSq⁵·D_phys·1000 | 2.407 MeV | 2.16 | +11.42% |
+| m_d | m_u·K_Mex | 5.014 MeV | 4.67 | +7.37% |
+| d/u ratio | K_Mex = 25/12 | 2.0833 | 2.1620 | 3.64% |
+| Δm²_21 | F_TRZ²·α | 7.2974e-5 eV² | 7.42e-5 | −1.65% |
+| Δm²_31 | Δm²_21·(D_crit+N_ch−2) | 2.4081e-3 eV² | 2.515e-3 | −4.25% |
+| Δm²_31/Δm²_21 | D_crit+N_ch−2 | 33 | 33 | **EXACT** |
+
+**The pattern in both families is the same:** the *ratio* closes cleanly on integer primitives
+while the *absolute scale* drifts several percent. This suggests the primitive lattice fixes
+the hierarchy and a separate scale-setting term is either missing or mis-composed.
+
+**Question for Daniel:** is there a corpus derivation supplying the absolute mass/splitting
+scale (as distinct from the ratio)? If not, should the absolute forms stay wired-as-gaps, or
+be blanked to `OPEN_UQFF_DERIVATION_TARGET` with only the ratios retained?
+
+## Q-1280-PAGE (band 1271-1280, 2026-08-10)
+
+PAPER_1280 states the black-hole Page-curve recovery fraction as **0.99596** ("0.4% from F_U=1
+reconstruction") via F_UBii buoyancy surface encoding. The predecessor closure
+`_l96_uqff_axiom_paper_1280_page_curve_recovery_99596_closure()` returns the bare literal with
+no composition — it is a paper-stated value, not a derivation.
+
+Wired as stated, `status=OPEN_RULING`, with the 0.404% deficit from unity disclosed rather than
+rounded away.
+
+**Question for Daniel:** does a corpus derivation decompose 0.99596 into primitives (e.g. as
+1 − something in F_TRZ / K_Mex / SSq), or is it an empirical reconstruction fraction that should
+stay a stated anchor?
+
+## Q-ORPHAN-PHYSICS (2026-08-10) — Daniel's missing-markdown hypothesis, AUDITED
+
+Daniel, 2026-08-10: *"some of the physics was created and the markdown was missed or passed
+over; this may account for missing papers."*
+
+**Audited. The hypothesis is correct, but inverted from what a numbering check would show.**
+
+**Finding 1 — there are NO missing paper numbers.** `whitepapers/` holds 2,245 files spanning
+PAPER_1 through PAPER_2156 with **zero gaps** in the numbering. The predecessor calculator cites
+459 distinct PAPER ids and **every one has a markdown file**. No numbered paper is absent.
+
+**Finding 2 — the physics is orphaned OUTSIDE the numbering, not missing inside it.** The
+predecessor repo carries 71 non-numbered `.md` files bearing primitive-composed equations. The
+ten largest hold **6,615 equation blocks** that were never assigned a PAPER number:
+
+| File | Size | Eq blocks | PAPER refs |
+|---|---|---|---|
+| UQFF_GROK_LONG_FORM_DERIVATIONS_MASTER.md | 58.6 MB | 1,189 | 706 |
+| workspace_25May2026.md | 6.9 MB | 2,218 | 415 |
+| workspace_22May2026.md | 5.1 MB | 1,575 | 330 |
+| Star-Magic_Workspace_Sonnet4_5_B_16May2026.md | 3.3 MB | 934 | 275 |
+| UQFF_LOCKED_PRIMITIVES_COMPLETE_CLOSURE_EQUATION_SYSTEM.md | 52 KB | 574 | 3 |
+| ADDITIONAL_UQFF_CLOSURE_EQUATIONS_BEYOND_30.md | 14 KB | 40 | 14 |
+| ALL_EQUATIONS_WITH_COMPLETE_DERIVATIONS.md | 23 KB | 31 | 5 |
+| UQFF_CALIBRATION_GAP_ANALYSIS.md | 23 KB | 30 | 4 |
+| Gold_Standard_Pure_UQFF.md | 761 KB | 24 | 1 |
+
+The two `UQFF_LOCKED_PRIMITIVES_COMPLETE_CLOSURE_EQUATION_SYSTEM.md` and
+`ADDITIONAL_UQFF_CLOSURE_EQUATIONS_BEYOND_30.md` files are the highest-density targets — 574 and
+40 equation blocks in 52 KB and 14 KB respectively, i.e. almost pure equation content with
+minimal narrative. The workspace files are session transcripts with derivations embedded in
+conversation.
+
+**This is a distinct reservoir from the closure reservoir drained in batches 1-13.** That mine
+covered `uqff_pure_calculator.py` *code*. This is *prose-and-equation* content that never
+reached either the code or the numbered corpus.
+
+**Questions for Daniel:**
+
+1. Should these be mined as a **new reservoir arc** (same batch protocol: verify, wire,
+   gate-pin, disclose residuals), or first **assigned PAPER numbers** at 2157+ so they enter the
+   sequential campaign properly?
+2. Priority order? The density ranking suggests
+   `UQFF_LOCKED_PRIMITIVES_COMPLETE_CLOSURE_EQUATION_SYSTEM.md` (574 eq / 52 KB) first, then
+   `ADDITIONAL_UQFF_CLOSURE_EQUATIONS_BEYOND_30.md`, then the large workspace transcripts.
+3. `UQFF_GROK_LONG_FORM_DERIVATIONS_MASTER.md` is **58.6 MB** — too large to read in one pass. It
+   cites 706 distinct PAPER ids, so much of it may be long-form restatement of already-numbered
+   work. Should it be diffed against the numbered corpus first to isolate genuinely new content?
+
+No wiring performed from these files pending Daniel's ruling. Recorded as an audit finding only.

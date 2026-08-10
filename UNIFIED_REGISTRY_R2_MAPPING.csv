@@ -156,3 +156,4 @@ BAND_1101_1200,PAPER_1101-1200,citations mapped across 10 bands + deep-mine
 TIER2_RESOLUTION,PAPER_1032/1038/1040,predecessor-repo physics mined read-only (Rule E); citations mapped
 SECTOR_TEMPLATE,PAPER_100/176/223/227/230/285/348/358/359,"9-sector Lagrangian template, marker-hidden recovery"
 RESERVOIR_1_7,PREDECESSOR_RESERVOIR,102 closures mined and mapped to PAPER_1193/1203/1205/1208/1209/1216/1218/1223/1239/1241
+PAPER_1251_1300,BAND,uqff_calculator.py::DISPATCH,50 dispatches,v0.367.0

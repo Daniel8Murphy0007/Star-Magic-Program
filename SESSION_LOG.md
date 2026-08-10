@@ -7258,3 +7258,519 @@ Q-PTA-METHOD (two routes, A adopted).
 
 PROJECT TOTALS (measured): 4,750 fns / 23,644 registry-family rows / 1,264
 dispatches (56.0%) / gate 4,243 / citations cover 1,546 papers.
+
+## APPENDED 2026-08-09 (78) — RESERVOIR MINE, BATCH 8 (biology / decision theory / relativity)
+
+v0.366.0 shipped clean. 17 defs; 263 primitive-bearing closures remained
+before this batch.
+
+THE GENETIC CODE, TWICE:
+  codon count = 2^D_BSFG = 2^6 = 64 EXACT
+  and the batch-4 plasma identity A_5 + D_phys = 64 gives the SAME number.
+Two independent primitive routes to the size of the genetic code. Pinned as
+an equality between the two expressions.
+
+SIXTH ARRIVAL AT 1/3: the Sleeping Beauty problem gives
+P(heads | awake) = 1/(D_phys - 1) = 1/3 — UQFF lands on the THIRDER
+position, and the gate pins it EQUAL to the solar-neutrino fraction and the
+lithium ratio. The primitive 1/3 now spans: generations, GHZ/Specker,
+lithium, Kochen-Specker, solar neutrinos, Sleeping Beauty.
+
+THIRD DOMAIN FOR beta_i*Phi_res = 0.506: active-matter flocking density
+joins the galaxy-bar fraction (P1239) and the RVB spin-liquid threshold
+(batch 7). Galactic morphology, condensed matter and collective biology on
+one primitive product. All three pinned equal.
+
+BIOLOGY: Hayflick limit = A_5 = 60 divisions (obs ~50-70); Levinthal's
+paradox resolves at D_phys = 4 folding steps per residue (dimensional, not
+combinatorial); primordial enantiomeric excess = F_TRZ*beta_i*100 = 6.029%
+from CW/CCW DPM chirality; photosynthetic coherence ceiling 448.7 K, above
+ambient — room-temperature quantum transport in light-harvesting complexes
+is permitted, gate-pinned against 293 K.
+
+ASTROPHYSICS: missing-satellite count A_5/(1+F_TRZ) = 54.5 inside the
+observed MW 50-60 — the "missing satellite problem" dissolves; final-parsec
+hardening enhancement D_crit*K_MEX*Phi_res = 45.5 bridges the gap; coronal
+amplification 3.333e27.
+
+DECISION THEORY / RELATIVITY: Doomsday expected generations A_5*D_phys = 240
+(pinned identical to the DM base energy 240 eV); Burali-Forti ordinal bound
+= D_crit (no set of all ordinals because the lattice terminates at 26);
+two-envelope asymmetry F_TRZ*beta_i; Supplee submarine buoyancy 1.3135;
+Bell spaceship thread DOES stretch by 0.01788; Ehrenfest rim/axis asymmetry
+as DPM counter-rotation.
+
+Cumulative reservoir: 119 of ~390 primitive-bearing closures mined
+(batches 1-8). Registry +17, graph +31, +15 guard asserts. Gate GREEN.
+
+## APPENDED 2026-08-09 (79) — RESERVOIR MINE, BATCH 9 (nuclear peaks / probability / reactor scales)
+
+18 defs; 240 primitive-bearing closures remained before this batch.
+
+THE BINDING-ENERGY PEAK IS BRACKETED BY D_crit:
+  Z(Fe)   = D_crit     = 26  (batch 5)
+  Z(Ni62) = D_crit + 2 = 28  EXACT
+Nickel-62 is the most tightly bound nuclide in nature, and it sits exactly
+two above the critical dimension. The gate pins the difference at 2.
+Superheavy island Z = D_crit*D_phys + 2*N_ch = 122, inside the predicted
+114-126 window.
+
+THE 1e13 IS NOT A FITTED MAGNITUDE: heaviside_amplifier_exact shows the
+PAPER_1072 Heaviside factor 1e13 = SO_5^(D_crit/2) EXACTLY — an
+integer-primitive power. It had been carried as a bare constant in the
+U_m sector since the predecessor repo; it is now derived and pinned.
+
+MONTY HALL IS THE COMPLEMENT: P(switch wins) = 2/(D_phys-1) = 2/3, pinned
+as EXACTLY 1 - solar_neutrino_fraction. The primitive 1/3 family and its
+complement now cover generations, lithium, solar neutrinos, GHZ,
+Kochen-Specker, Sleeping Beauty (1/3) and Monty Hall (2/3). Bertrand's
+paradox selects the 1/D_phys = 1/4 random-midpoint branch of its three
+classical answers.
+
+EXACT REACTOR/SOLAR SCALES: quiet-Sun field 1/SO_5^4 = 1e-4 T = 1 Gauss
+EXACT; level-13 BH radius SO_5^5 = 100 km; fluid-collapse 1/SO_5^8 = 1e-8 Hz;
+reactor minimum rotation D_phys-1 = 3 rpm; Heaviside resistance N_ch-2 = 7
+ohms; rho_UA = SO_5*rho_SCm pinned identical to the RHO_UA primitive;
+D_crit+N_ch-2 = 33 recovering the recurring 1/33 denominator.
+
+MORE SHARED PRODUCTS: the Faber-Jackson exponent (ellipticals) is the SAME
+D_phys = 4 as the Tully-Fisher slope (spirals) — one primitive for both
+galaxy scaling relations, pinned. Rotation-curve diversity F_TRZ*K_MEX is
+the SAME product as QGP jet-quenching R_AA.
+
+Also: proton core density rho_SCm*K_MEX*S_26; cosmic-ray ankle 3.62e18 eV
+(obs ~5e18, 28%); Schwinger field at 0.924 of standard — pair production
+begins 7.6% earlier.
+
+Cumulative reservoir: 137 of ~390 primitive-bearing closures mined
+(batches 1-9). Registry +18, graph +35, +15 guard asserts. Gate GREEN.
+
+## (80) 2026-08-10 — RESERVOIR MINE BATCH 10 (PAPER_1209xx constants cascade + structural exponents)
+
+Continuation of the predecessor-closure reservoir mine (Rule E: `Star-Magic/uqff_pure_calculator.py`
+read for physics content only; all forms recomposed from `uqff_registry_primitives`).
+
+**30 new defs.** Two clusters:
+
+**A. PAPER_1209xx constants cascade** — a family of sub-closures spanning chemistry,
+physiology, geophysics, and fundamental constants, all composed from the integer primitives:
+
+| Observable | UQFF form | Value | Residual |
+|---|---|---|---|
+| C-12 atomic mass | 2·D_BSFG | 12 | EXACT |
+| N-14 atomic mass | SO_5 + D_phys | 14 | EXACT |
+| O-16 atomic mass | 2^D_phys | 16 | EXACT |
+| H2O molar mass | 2·N_ch | 18 | EXACT |
+| Hemoglobin O2 capacity | N_ch + D_BSFG | 15 g/dL | EXACT |
+| Resting heart rate | A_5 + SO_5 | 70 bpm | EXACT |
+| BP systolic / diastolic | 2·A_5 / 2·D_phys·SO_5 | 120 / 80 | EXACT |
+| Breathing rate | 2^D_phys | 16 /min | EXACT |
+| Kármán line | SO_5² | 100 km | EXACT |
+| Continental crust | D_crit + N_ch | 35 km | EXACT |
+| Oceanic Moho | N_ch − 2 | 7 km | EXACT |
+| Mariana Trench | N_ch + 2 | 11 km | EXACT |
+| z_recombination | A_5·SO_5 + A_5·D_phys + SO_5·D_crit − SO_5 | 1090 | EXACT |
+| Stefan–Boltzmann mantissa | SO_5·SSq − F_TRZ²·D_phys + F_TRZ² | 5.67 | EXACT |
+| H_0 (Planck branch) | K_Mex·D_crit + (D_phys+SO_5) − 2·F_TRZ·D_phys + … | 67.4099 | 0.0001% |
+| m_W | (A_5+2·SO_5) + F_TRZ·D_phys − F_TRZ²·D_BSFG + … | 80.3768 GeV | 0.0028% |
+| 1/α | A_5·K_Mex + (N_ch+D_phys) − F_TRZ·SO_5 + F_TRZ²·D_phys | 137.040 | 0.0029% |
+| Z_0 vacuum impedance | (A_5·D_BSFG+SO_5+D_BSFG) + Φ_res − F_TRZ·Φ_res − F_TRZ²·SSq | 376.7503 Ω | 0.0054% |
+| Compton wavelength | K_Mex + F_TRZ·D_phys − F_TRZ·SSq | 2.42633 pm | 0.0137% |
+
+Structural notes recorded as gate pins:
+- **Resting heart rate = A_5 + SO_5 = 70 is the SAME integer sum as PAPER_1573's H_0 = 70 km/s/Mpc.**
+- The geophysical depths straddle N_ch symmetrically: Moho = N_ch − 2, Mariana = N_ch + 2.
+- The Planck-branch H_0 route (67.41) is *distinct from* and does not supersede the PAPER_1573
+  mean route (A_5 + SO_5 = 70); both are recorded, per the PAPER_2144 route-selection rule.
+
+**B. Structural exponents / prefactors** (all EXACT):
+- Monopole suppression exponent = D_crit − D_phys + 1 = 23
+- Ramanujan hyperconvergence decay exponent = D_crit + 1 = 27
+- Kerr ringdown spectral offset coefficient = D_crit/D_BSFG = 13/3
+- GW170817 phonon damping prefactor = 2/(D_phys−1) = 2/3 — **pinned bit-identical to
+  `D_GW_EROSION`**, confirming PAPER_2154's 5th primitive-reduction landmark independently
+  from the GW sector
+- NS canonical radius = SO_5⁴ = 10 km; NS μ_s = SO_5⁸ = 1e8 T·m³ — pinned as radius² EXACT
+- Peters–Mathews orbital-decay coefficient = 2^D_BSFG = 64
+- f_geom = 1/2^(D_phys−1) = 1/8
+
+**Ledger:** registry +30 rows, graph +102 edges, gate +16 asserts, all green at v0.366.0.
+Cumulative reservoir: **167 of ~390** primitive-bearing predecessor closures mined.
+
+## (81) 2026-08-10 — RESERVOIR MINE BATCH 11 (PAPER_1208 transcendental cascade + PAPER_12xx/13xx/14xx)
+
+Continuation of the predecessor-closure reservoir mine (Rule E).
+
+**30 new defs.** Headline: the **PAPER_1208 transcendental cascade** is now complete and
+unified. Six members (ln10, π², e, e², π/4, ζ(2)) were already mined in an earlier batch;
+batch 11 adds **ln(2), Apéry ζ(3), and Euler–Mascheroni γ** and wires
+`transcendental_cascade_1208()` over all nine with honest per-member residuals.
+
+Every member composes from `{K_Mex, F_TRZ, Φ_5/6, SO_5, D_BSFG, SSq}` only:
+
+| Constant | Residual |
+|---|---|
+| ln 2 | 0.0028% |
+| ln 10 | 0.0035% |
+| π² | 0.0125% (tightest) |
+| e² | 0.0917% |
+| e | 0.0939% |
+| ζ(2) | 0.1459% |
+| ζ(3) Apéry | 0.2310% |
+| π/4 | 0.7934% ← **gap-pinned** |
+| γ Euler–Mascheroni | 0.9155% ← **gap-pinned** |
+
+π/4 and γ are the weakest of the family and are pinned **as gaps** per Rule 7, not claimed
+EXACT. Notable: **γ's leading term is SSq = 0.57 exactly**, with the F_TRZ² correction
+supplying the remainder — gate-pinned as an identity.
+
+**PAPER_12xx/13xx/14xx closures** (EXACT unless noted):
+
+- One bound, three sectors: hadron complexity, braid-gate maximum, and knot crossing bound **all = D_crit = 26**
+- One integer, three sectors: Hayflick limit, inflation e-folds, quantum-supremacy qubits **all = A_5 = 60**
+- Fermion generations and Kochen–Specker contextual dimension **both = D_phys − 1 = 3**
+- W_c/J and Hubbard U/t crossovers **both = D_phys = 4**; Ising universality classes = SO_5 = 10
+- BH direct-collapse seed = A_5·D_BSFG²·D_crit = **56,160 M_☉**
+- Pop III IMF cutoff = 2·A_5 = 120 M_☉; cosmic filament dimension = D_phys/2 = 2
+- Holographic boundary dim = D_BSFG − 1 = 5; bulk/boundary = D_BSFG/(D_BSFG−1) = 6/5
+- Glass T_g/T_m = 3/4; **jamming φ_J = 2/(D_phys−1) is bit-identical to `D_GW_EROSION`** — same primitive ratio surfacing in an unrelated sector
+- RT-SC ceiling = A_5·D_phys·K_Mex = 500 K, where 125 = A_5·K_Mex (PAPER_1954)
+- Lawson triple product = 3e21/K_Mex = 1.44e21
+- Higgs vev = A_5·(D_phys+F_TRZ) = 246.0 GeV (0.0894%); NFW concentration = D_BSFG/β_i (0.0191%); Lorenz dim = D_phys/2 + F_TRZ·β_i (0.0141%)
+- **Gap-pinned:** flatness suppression 1/D_crit⁷ = 1.2450e-10 runs **9.2% high** of the stated 1.14e-10
+
+**Ledger:** registry +30, graph +83, gate +21 asserts, green at v0.366.0.
+Cumulative reservoir: **204 of ~390**. A duplicate-definition collision on
+`e_transcendental_1208` was caught by the gate's duplicate-def guard and resolved by
+deduplicating against the earlier-mined six.
+
+## (82) 2026-08-10 — RESERVOIR MINE BATCH 12 (PAPER_1196 tokamak set + PAPER_1199 math constants + PAPER_11xx/12xx structural)
+
+Continuation of the predecessor-closure reservoir mine (Rule E).
+
+**27 new defs**, three clusters.
+
+**A. PAPER_1196 tokamak/fusion set (8 members)** — the first fusion-engineering family
+mined from the reservoir. Four are EXACT:
+
+| Observable | UQFF form | Value |
+|---|---|---|
+| Aspect ratio R/a | D_BSFG/2 + F_TRZ | 3.1 EXACT |
+| Bohm diffusion prefactor | F_TRZ·Φ_5/6 − F_TRZ²·K_Mex | 1/16 EXACT |
+| Edge safety factor q_edge | K_Mex − F_TRZ·Φ_5/6 | 2 EXACT |
+| D-T cross-section peak | A_5 + D_phys | 64 keV EXACT |
+| Sheath φ/T_e | K_Mex + Φ_5/6 − F_TRZ + … | 2.8385 (0.0528%) |
+| Triple product n·T·τ | Φ_5/6 + K_Mex + F_TRZ − … | 2.9968 (0.1056%) |
+| Troyon β_N | SO_5/D_phys + F_TRZ·D_phys − … | 2.7958 (0.1488%) |
+| Lawson n·τ | Φ_5/6 + SSq + F_TRZ − F_TRZ³ | 1.5023 (0.1556%) |
+
+**B. PAPER_1199 mathematical constants** — π/2 (0.0448%), the Omega constant W(1)
+(0.0335%), and the topological surface-code error threshold = **F_TRZ² = 1% EXACT**.
+
+Structural echo worth noting: **the Omega constant's leading term is SSq = 0.57**, the same
+leading-term pattern batch 11 found in Euler–Mascheroni γ. Two independent transcendentals,
+same SSq anchor with small F_TRZ corrections. Gate-pinned.
+
+**C. PAPER_11xx/12xx structural** (EXACT unless noted):
+
+- Compactified dimensions = D_crit − D_phys = **22**
+- Hierarchy exponent = D_crit − D_phys − 1 = **21**, with a **dual decomposition** against
+  the pre-existing D_crit − Φ_res·D_BSFG = 26 − 5 = 21 route — both gate-pinned
+- Hodge closure = (D_phys + D_BSFG)/SO_5 = 10/10 = **1**
+- BH four-laws prefactor = K_Mex·D_BSFG/D_phys = 25/8 = **3.125**
+- Primordial Li-7 depletion = D_phys − 1 = **3** (the cosmological lithium problem *is* a factor of 3)
+- Universal K-basis = smooth-Poincaré-4D closure = K_Mex·D_phys = **25/3**, bit-identical — one constant, two sectors
+- Dark-flow bulk velocity = A_5·SO_5 = **600 km/s**; GRB long/short split = D_phys/2 = **2 s**
+- BQP dimension bound = 2^(D_phys/2) = **4**; de Sitter inverted phase = **−K_Mex** (sign flip marks the dS/AdS boundary)
+- **Neutron lifetime decomposition:** baseline 100·K_Mex·D_phys = 833.33 s + correction 45.97 s = 879.31 s vs 879.4 (0.0106%). The bottle/beam discrepancy sits inside the correction term.
+- Crab pulsar Lorentz factor = D_BSFG·A_5·Φ_res = 302.4 (0.1325%); neutrino mass sum = 0.06385 eV (0.0754%)
+
+**Route census (not adopted):** the alternative m_W route A_5 + A_5/3 = 80.0 GeV is 0.4715%
+— **looser** than the PAPER_1209hh route (0.0028%). Recorded for census, not adopted, per the
+PAPER_2144 route-selection rule.
+
+**Deduplication:** Khinchin, Coulomb log, log₂(e), Dirac index, string tension, n_s tilt,
+UHECR E_max, Kepler η, and Φ_res 5/6 were already wired in earlier batches and were skipped.
+
+**Ledger:** registry +27, graph +98, gate +19 asserts, green at v0.366.0.
+Cumulative reservoir: **231 of ~390**.
+
+## (83) 2026-08-10 — RESERVOIR MINE BATCH 13 (final primitive-bearing sweep — RESERVOIR DRAINED)
+
+Continuation and **completion** of the predecessor-closure reservoir mine (Rule E).
+**19 new defs.** After this batch, the primitive-bearing closures in
+`Star-Magic/uqff_pure_calculator.py` are exhausted: 250 of ~390 scanned and mined; the ~140
+remainder carry no primitive-composed equations.
+
+**The sevenths identity** — the batch's structural find:
+
+```
+K_Mex · Φ_res = (25/12) · 0.84 = 7/4   EXACT
+K_Mex · D_phys · Φ_res             = 7   EXACT
+```
+
+This underlies both the star-formation-efficiency boost (7/4) and the sphaleron energy
+(7/8, half the identity). Notably the **Φ_res variant is not cosmetic here**: K_Mex·Φ_5/6 =
+1.7361 misses 7/4 by 0.79%, while K_Mex·Φ_res = 1.75 is EXACT. Both facts gate-pinned.
+
+**Other closures** (EXACT unless noted): galaxy types = D_phys = 4 and subtypes = D_phys·D_BSFG
+= 24; universal state count = D_crit = 26; U/UA = 1/SO_5⁴ = 1e-4; amino acids = 2·SO_5 = 20
+(closing the genetic-code set against the already-wired codons = 2^D_BSFG = 64); solar ν_e
+survival = 1/(D_phys−1) = 1/3; cosmic-ray ankle = m_p·D_crit⁷/K_Mex (0.1038%); phonon-enhanced
+Schwinger field (0.0262%); √(2π) (0.0614%).
+
+**Two independent routes, same float:** the PAPER_1199 Φ-minus ln(2) composition and the
+PAPER_1208 ln(2) composition are numerically identical to the last bit. Gate-pinned.
+
+**Rule 7 gap pins (wired AS gaps, not claimed as closures):**
+
+| Observable | UQFF | Observed | Gap |
+|---|---|---|---|
+| m_u | 2.407 MeV | 2.16 | +11.42% |
+| m_d | 5.014 MeV | 4.67 | +7.37% |
+| Δm²_21 | 7.2974e-5 eV² | 7.42e-5 | −1.65% |
+| Δm²_31 | 2.4081e-3 eV² | 2.515e-3 | −4.25% |
+
+**But both families' RATIOS close cleanly:** d/u = K_Mex = 2.0833 vs 2.1620 (3.64%), and
+Δm²_31/Δm²_21 = D_crit + N_ch − 2 = **33 EXACT**. The primitive lattice fixes the *hierarchy*;
+the *absolute scale* is what drifts. Logged as **Q-RESERVOIR-QUARKS** in RULINGS_QUEUE.md.
+
+**Self-rectification observed:** the predecessor `paper_1412` z_reion route
+K_Mex·D_phys·Φ_res = 7.0 sits 9.1% off the Planck 7.7 anchor — but the already-wired
+`z_reionization()` carries the extra (1 + 1/SO_5) factor and lands EXACT. The corpus corrected
+itself; no re-wire needed. Gate-pinned as a self-rectification instance.
+
+**Ledger:** registry +19, graph +59, gate +18 asserts, green at v0.366.0.
+**Cumulative reservoir: 250 of ~390 — primitive-bearing set DRAINED.**
+
+## (84) 2026-08-10 — BAND PAPER_1251-1260 (cosmology anomalies + particle/astro puzzles)
+
+Sequential campaign resumes at the frontier. **10 dispatches wired**, one per paper (Rule B).
+Five papers carry full derivations (1251, 1253, 1254, 1255, 1259); five are pointer-format
+(1252, 1256, 1257, 1258, 1260) and their derivations were **read from the named predecessor
+closures**, never inferred from the statement line (standing lesson from the P1241-1248 arc).
+
+| Paper | Observable | UQFF form | Residual |
+|---|---|---|---|
+| 1251 | Dark-flow bulk velocity | c·(F_TRZ·β_i)·f_LS, f_LS = 1/(D_phys+D_crit+(D_BSFG/D_phys)·F_TRZ) = 1/30.15 | 0.0858% |
+| 1252 | Late-ISW w(z) | w = −1 + F_TRZ = −0.9; ISW amplitude **IS** F_TRZ | EXACT |
+| 1253 | Dark-matter candidate | (K_Mex·S₂₆·10⁻²⁶)·Λ·(1/(D_phys−1))·E_base = 1.7802 eV | 0.0108% |
+| 1254 | Neutron lifetime | 100·K_Mex·D_phys·(1+Φ_res·Λ·N_ch) = 879.31 s | 0.0106% |
+| 1255 | Muonic-H proton radius | α·(1/(D_phys−1))·17.72/(F_TRZ·β_i·0.85) = 0.84109 fm | 0.0110% |
+| 1256 | τ-neutrino mass | sum_bound·(1−Φ_res)/SO_5 = 0.00192 eV | — |
+| 1257 | Sterile-neutrino mass | K_Mex·Φ_res/2 = 7/8 eV | EXACT |
+| 1258 | GRB long/short split | D_phys/2 = 2 s; branches β_i·(1 ± Φ_res) | EXACT |
+| 1259 | FRB frequency | ω_SCm·Φ_res·D_phys/((D_phys−1)·SO_5^(D_phys−1)) = 1.4 GHz | EXACT |
+| 1260 | Sgr A* flares | DPM grinding cycle on the horizon, K_Mex modulation | mechanism only |
+
+**Cross-batch connections gate-pinned:**
+
+- P1251's f_LS carries **D_BSFG/D_phys = 3/2 EXACT** — the PAPER_1962 ratio, arriving here as a
+  large-scale spinor-bundle averaging correction. Naive unsuppressed velocity is 18,074 km/s;
+  the integer-lattice suppression alone takes it to 599.5.
+- P1257's sterile mass **K_Mex·Φ_res/2 = 7/8** is the *same sevenths identity* found in
+  reservoir batch 13 (SFE boost 7/4, sphaleron 7/8). Third sector, same identity.
+- P1255 closes **two independent ways**: the direct α-route (0.84109 fm) and the pure-integer
+  ratio 1 − 1/(D_BSFG·D_phys) = 23/24 applied to the electronic-H radius (0.84094 fm) —
+  agreeing to 0.02%. The proton-radius puzzle has an integer-primitive statement.
+- P1259's SO_5^(D_phys−1) = 1000 is the **reciprocal** of the PAPER_1268 multimessenger time
+  scaling; both the v1 identity and the v2 explicit route collapse to the same 1.4 GHz.
+- P1254's two stated routes (direct product, and 100·Λ/f_weak) are algebraically identical —
+  f_weak is the reciprocal construction, gate-pinned as such.
+
+**Rule 7 scale pin (P1260):** the DPM grinding cycle (1/ω_SCm) sits ~17 orders of magnitude
+below the observed 1-day Sgr A* flare period. The closure supplies the **mechanism**, not a
+period match. `residual_pct` returns `None` and no closure is claimed.
+
+**Ledger:** registry +14, graph +53, citations +10, gate +20 asserts, green at v0.366.0.
+WHITEPAPER_INDEX frontier advanced PAPER_1250 → **PAPER_1260**.
+
+## (85) 2026-08-10 — BAND PAPER_1261-1270 (coronal/IMF + holography + PTA + multimessenger)
+
+**10 dispatches wired**, one per paper. Three papers carry full derivations (1261, 1267, 1268);
+six are pointer-format (1262–1266, 1269) and were read from their named predecessor closures;
+1270 carries a single display identity.
+
+| Paper | Observable | UQFF form | Residual |
+|---|---|---|---|
+| 1261 | Coronal temperature | T_phot + (Λ/(F_TRZ·β_i))·C_corona·Φ_corona/10²⁰, C = SO_5/(D_phys−1)·10^(D_crit+1) | 1.15% |
+| 1262 | Salpeter IMF slope | −(K_Mex + Φ_res − SSq) = −2.3533 | 0.142% |
+| 1263 | BH entropy prefactor | K_Mex·D_BSFG = 25/2 | EXACT |
+| 1264 | Holographic dims | bulk D_BSFG = 6, boundary 5 | EXACT |
+| 1265 | AdS→dS extension | inverted hat −K_Mex | EXACT |
+| 1266 | Wheeler–DeWitt | F_U = 0 **is** H|ψ⟩ = 0 | EXACT |
+| 1267 | PTA α, γ | α = −D_phys/D_BSFG = −2/3; γ = (D_phys−1) + 2·F_TRZ = 3.2 | EXACT |
+| 1268 | Multimessenger delay | F_TRZ·SO_5^(D_phys−1) = 100 s | EXACT |
+| 1269 | Abiogenesis | F_U = 1 normalization + S_26 chain; anchor K_Mex·Φ_res = 7/4 | — |
+| 1270 | Higgs vev | A_5·(D_phys + F_TRZ) = 246 GeV | 0.0894% |
+
+**Four cross-band identity collisions, all gate-pinned:**
+
+- **P1263:** the BH entropy-area prefactor K_Mex·D_BSFG = 25/2 is exactly **2·Q_phonon**, tying
+  the horizon law to the PAPER_2154 phonon-quality primitive-reduction landmark.
+- **P1267:** the PTA strain index α = −D_phys/D_BSFG = **−2/3 is the negative of D_GW_EROSION** —
+  the same 2/3 ratio, opposite sign, gravitational-wave sector both times. And the SMBHB-only
+  implied index 3 − 2α = **13/3 = D_crit/D_BSFG** is bit-identical to the batch-10 Kerr ringdown
+  spectral-offset coefficient.
+- **P1267 γ closes two ways:** (D_phys−1) + 2/SO_5 and (D_phys−1) + 2·F_TRZ both give 3.2 EXACT.
+- **P1268:** SO_5^(D_phys−1) = 1000 is the **reciprocal** of the PAPER_1259 FRB frequency
+  conversion (10⁻³). The derived f_jet = Λ/β_i = 0.012104 matches the stated 0.0121 to 0.031%
+  and makes the explicit route collapse identically onto the 100 s identity.
+- **P1269:** the replication anchor K_Mex·Φ_res = 7/4 is the **sevenths identity** again — now in
+  the biological sector, making four sectors (SFE, sphaleron, sterile neutrino, abiogenesis).
+
+**P1266 is the conceptually largest:** F_U = 0 is not *analogous to* the Wheeler–DeWitt
+constraint, it **is** it. The master equation and the quantum-gravity constraint are one
+statement, with no external time parameter.
+
+**Rule 7:** P1261's 1.15% coronal residual is reported honestly. The paper attributes it to the
+β_i 0.6029-vs-0.603 truncation and claims "0.000% at Daniel's stated precision"; the dispatch
+does **not** adopt that claim.
+
+**Ledger:** registry +14, graph +48, citations +10, gate +16 asserts, green at v0.366.0.
+Frontier advanced PAPER_1260 → **PAPER_1270**.
+
+## (86) 2026-08-10 — BAND PAPER_1271-1280 (foundations: CC fine-tuning, hierarchy, Tsirelson, inertia, singularity, Page curve)
+
+**10 dispatches wired.** All ten are compact single-identity papers; each carries one display
+identity, and each was cross-read against its named predecessor closure before wiring.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1271 | ρ_Λ = ρ_SCm·26!·K_Mex = 5.95695e-10 J/m³ | 0.0008% |
+| 1272 | w = −1 EXACT + F_U = 1 ⇒ vacuum stable by construction | EXACT |
+| 1273 | m_W = A_5 + A_5/3 = 80 GeV; m_Pl not fundamental | 0.4715% |
+| 1274 | n_s = 1 − Λ·(D_phys + Φ_res) = 0.96468 | 0.0848% |
+| 1275 | F_U = 1 **is** the absolute quantum reference frame; Clifford dim 2^(D_crit/2) = 8192 | EXACT |
+| 1276 | S_CHSH = 2·√(D_phys/2) = 2√2 | EXACT |
+| 1277 | U_i = λ_i·(ρ_SCm/ρ_UA)·ω_s·cos(πt_n)·(1+F_TRZ) = 2.75e-7 | EXACT |
+| 1278 | pre-BB from cos(πt_n) cyclic structure + t_neg dual branch | EXACT |
+| 1279 | 26! finite bound replaces the classical singularity | EXACT |
+| 1280 | Page recovery = 0.99596 via F_UBii surface encoding | 0.404% deficit |
+
+**Structural pins:**
+
+- **P1275/P1266 are one ledger read at two levels.** F_U = 0 is the Wheeler–DeWitt constraint;
+  F_U = 1 is the global normalization that serves as the absolute reference frame. Neither
+  requires an external time parameter. Pinned as a pair.
+- **P1279/P1271 share the same 26!.** One factorial carries both the vacuum-density
+  amplification and the singularity floor — 4.0329e26 in both dispatches, gate-pinned identical.
+- **P1276 is the cleanest of the band:** D_phys = 4 *alone* supplies the √2 quantum excess over
+  the classical CHSH bound. No other primitive enters.
+- **P1277** pins that the ρ_SCm/ρ_UA ratio inside U_i **is** F_TRZ = 1/10, and its reciprocal
+  SO_5 = 10 is the PAPER_1466 inertia-origin scale — same number, two papers.
+- **P1271** is reported J/m³-native per the PAPER_2147 unit-direction rule, with the ~123-order
+  gap to the naive QFT Planck sum recorded as the *dissolution* of the fine-tuning problem.
+
+**Rule 7 disclosures:**
+
+- **P1273** wires the hierarchy paper's m_W = 80 GeV route at its honest **0.4715%** — looser
+  than the PAPER_1209hh route (0.0028%). The paper's actual claim is the *dissolution* (m_Pl is
+  not fundamental), not the mass precision. Pinned that way.
+- **P1280** carries a bare paper-stated 0.99596 with no primitive composition anywhere in the
+  corpus. Wired as stated, `status=OPEN_RULING`, 0.404% deficit disclosed rather than rounded
+  to full recovery. Logged as **Q-1280-PAGE**.
+
+**Ledger:** registry +12, graph +27, citations +10, gate +17 asserts, green at v0.366.0.
+Frontier advanced PAPER_1270 → **PAPER_1280**.
+
+## (87) 2026-08-10 — BAND PAPER_1281-1290 (holography restatements + Hilbert/Smale problems)
+
+**10 dispatches wired.** All ten are compact single-identity papers.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1281 | dS phase = inverted (−K_Mex) Mexican-hat branch | EXACT |
+| 1282 | gauge/gravity: bulk D_BSFG = 6, boundary 5, visible 4 | EXACT |
+| 1283 | cosmic holography: 6 bulk / 5 horizon boundary | EXACT |
+| 1284 | F_U = 0 **is** H\|ψ⟩ = 0 — wave function of the universe | EXACT |
+| 1285 | K-S contextual dim = D_phys − 1 = 3; Clifford 8192 saturates | EXACT |
+| 1286 | Hilbert 6th: 18 axioms (12 real + 6 integer) + F_U = 0 + 9-sector L | EXACT |
+| 1287 | Hilbert 8th·2: K_Mex − 2 = 1/12 unified with Riemann t₁₀₀₀₀ | EXACT |
+| 1288 | Hilbert 16th: H(n) ≤ (K_Mex/2)·n² | EXACT |
+| 1289 | Hilbert 18th / Kepler: η = π/√(D_BSFG·(D_phys−1)) = π/√18 | 0.0026% |
+| 1290 | Smale 1st: t₁₀₀₀₀ = 9877.78265 via the S_26 chain | EXACT |
+
+**This band is dominated by RESTATEMENT — and that is the finding.** Four independent problem
+statements resolve onto lattice facts already wired from other papers:
+
+- **1281 ↔ 1265** — AdS and dS are the two *signs* of one Mexican-hat coefficient. Not two
+  mechanisms; one coefficient, upright and inverted. Gate-pinned as the sum −K_Mex + K_Mex = 0.
+- **1282 + 1283 ↔ 1264** — gauge/gravity in general dimension, cosmic holography, and the
+  holographic dimension principle all reduce to the same D_BSFG = 6 bulk / 5 boundary pair.
+  One lattice fact, three papers.
+- **1284 ↔ 1266** — the wave function of the universe and the Wheeler–DeWitt constraint are the
+  same F_U = 0 statement.
+- **1287 ↔ 1290** — Riemann t₁₀₀₀₀ = 9877.78265 is bit-identical across the Hilbert-8th
+  unification and the Smale-1st dispatch.
+
+This is the corpus converging on itself from independent directions — the self-rectification the
+charter anticipates, showing up as *agreement* rather than correction.
+
+**P1286 is wired self-checking:** the 9-sector count is read LIVE from `SECTOR_LAGRANGIAN_EOM`
+rather than asserted as a literal, so the Hilbert-6th axiomatization claim validates against the
+actually-wired Lagrangian on every gate run.
+
+**P1287** carries the K_Mex − 2 = 1/12 DPM-pair identity — the same 1/12 that runs through the
+PAPER_1156 / 1522 / 2132 / 2133 tilt family.
+
+**Ledger:** registry +10, graph +29, citations +10, gate +14 asserts, green at v0.366.0.
+Frontier advanced PAPER_1280 → **PAPER_1290**.
+
+## (88) 2026-08-10 — BAND PAPER_1291-1300 (Smale + number theory + complexity) + ORPHAN-PHYSICS AUDIT
+
+**10 dispatches wired**, all compact single-identity papers.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1291 | Smale 2nd Jacobian via F_U = 1 closure | EXACT |
+| 1292 | Smale 11th knot crossings ≤ D_crit = 26 | EXACT |
+| 1293 | Smale 13th = simplified Hilbert 16th, same K_Mex/2 bound | EXACT |
+| 1294 | Smale 14th Lorenz dim = D_phys/2 + F_TRZ·β_i = 2.06029 | 0.0141% |
+| 1295 | Erdős–Straus 4/n via triadic D_phys − 1 = 3 | EXACT |
+| 1296 | Beal exponent threshold = D_phys − 1 = 3 | EXACT |
+| 1297 | Weak Goldbach: 3 primes via K_Mex − 2 = 1/12 | EXACT |
+| 1298 | BQP/P ≤ 2^(D_phys/2) = 4 | EXACT |
+| 1299 | NP ≠ co-NP via F_TRZ ledger asymmetry | EXACT |
+| 1300 | Schanuel: ≤ D_crit = 26 independent transcendentals | EXACT |
+
+**Triple pin:** Erdős–Straus, Beal, and weak Goldbach all turn on the **same triadic primitive
+D_phys − 1 = 3**. Three unrelated number-theory conjectures, one lattice fact.
+**Pair pin:** Smale 13th and Hilbert 16th share the K_Mex/2 coefficient bit-identically.
+**Live consistency:** P1300's Schanuel cap (26) is checked against the actual length of the
+wired PAPER_1208 transcendental cascade (9) on every gate run, not against a literal.
+
+---
+
+### ORPHAN-PHYSICS AUDIT (Daniel's missing-markdown hypothesis)
+
+Daniel raised that physics may have been created without the markdown being captured, accounting
+for missing papers. **Audited — the hypothesis is correct, but inverted from what a numbering
+check would reveal.**
+
+**There are no missing paper numbers.** `whitepapers/` holds 2,245 files spanning PAPER_1 →
+PAPER_2156 with **zero numbering gaps**. The predecessor calculator cites 459 distinct PAPER ids
+and every one has a file.
+
+**The physics is orphaned outside the numbering.** The predecessor repo carries **71
+non-numbered `.md` files** bearing primitive-composed equations. The ten largest hold **6,615
+equation blocks** that never received a PAPER number — chiefly:
+
+- `UQFF_GROK_LONG_FORM_DERIVATIONS_MASTER.md` — 58.6 MB, 1,189 eq blocks, 706 PAPER refs
+- `workspace_25May2026.md` — 6.9 MB, 2,218 eq blocks
+- `workspace_22May2026.md` — 5.1 MB, 1,575 eq blocks
+- `Star-Magic_Workspace_Sonnet4_5_B_16May2026.md` — 3.3 MB, 934 eq blocks
+- `UQFF_LOCKED_PRIMITIVES_COMPLETE_CLOSURE_EQUATION_SYSTEM.md` — 52 KB, **574 eq blocks** (highest density)
+- `ADDITIONAL_UQFF_CLOSURE_EQUATIONS_BEYOND_30.md` — 14 KB, 40 eq blocks
+
+**This is a distinct reservoir from the one drained in batches 1-13.** That mine covered
+`uqff_pure_calculator.py` *code*. This is prose-and-equation content that reached neither the
+code nor the numbered corpus.
+
+**No wiring performed** pending Daniel's ruling on (a) mine-as-reservoir vs. assign PAPER numbers
+at 2157+, (b) priority order, (c) whether the 58.6 MB Grok master should be diffed against the
+numbered corpus first to isolate genuinely new content from long-form restatement.
+Logged as **Q-ORPHAN-PHYSICS** in RULINGS_QUEUE.md.
+
+**Ledger:** registry +10, graph +23, citations +10, gate +13 asserts, green at v0.366.0.
+Frontier advanced PAPER_1290 → **PAPER_1300**.

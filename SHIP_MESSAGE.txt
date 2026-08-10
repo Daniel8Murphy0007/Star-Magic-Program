@@ -1,41 +1,40 @@
-v0.366.0: bands PAPER_1201-1250 + the predecessor closure reservoir opened
+v0.367.0: bands PAPER_1251-1300 + closure reservoir DRAINED + ORPHAN-PHYSICS audit
 
-Five bands closed 1201-1250, then a Daniel-directed mine of the predecessor
-calculator's closure helpers. CENSUS: 555 closures, 390 primitive-bearing,
-102 mined across 7 batches. reservoir_inventory() wired as a live surface.
+50 dispatches wired (PAPER_1251-1300), reservoir mine completed (batches 10-13, 95 defs),
+and a Daniel-directed audit of physics living outside the numbered corpus.
 
-HILBERT'S 18TH, BIT-EXACT
-  Kepler density = pi/sqrt(D_BSFG*(D_phys-1)) = pi/sqrt(18) = 0.7404804897
-  The gate asserts bit-equality, not a tolerance.
+BANDS
+- 1251-1260 cosmology anomalies: dark flow (f_LS = 1/30.15 carrying D_BSFG/D_phys = 3/2),
+  late ISW w = -1 + F_TRZ, DM candidate 1.7802 eV, neutron lifetime 879.31 s, muonic-H
+  proton radius closing BOTH via alpha and via the pure-integer 23/24 ratio, FRB 1.4 GHz
+  EXACT, Sgr A* flares mechanism-only with the 17-order scale separation disclosed.
+- 1261-1270 PTA/multimessenger/holography: alpha = -D_phys/D_BSFG = -D_GW_EROSION;
+  SMBHB gamma = 13/3 = D_crit/D_BSFG (the Kerr ringdown coefficient); BH entropy prefactor
+  = 2*Q_phonon; multimessenger 100 s EXACT, SO_5^3 reciprocal to the FRB conversion.
+- 1271-1280 foundations: rho_Lambda = rho_SCm*26!*K_Mex at 0.0008% (J/m3-native),
+  Tsirelson = 2*sqrt(D_phys/2) EXACT, U_i = 2.75e-7 bit-locked, one 26! serving both the
+  vacuum amplification and the singularity floor.
+- 1281-1290 Hilbert/Smale + holography: four restatement pairs converging on already-wired
+  lattice facts; Hilbert 6th wired self-checking against the live 9-sector Lagrangian.
+- 1291-1300 number theory: Erdos-Straus, Beal, and weak Goldbach all on D_phys - 1 = 3.
 
-THE GLUEBALL IS THE MASS GAP
-  m(0++) = 2*D_phys*Lambda_QCD = 1.736 GeV, identical to the PAPER_1318
-  Yang-Mills gap reached by an independent primitive route.
+RESERVOIR DRAINED (250 of ~390 primitive-bearing closures, batches 1-13 complete)
+- Sevenths identity K_Mex*Phi_res = 7/4 EXACT, now in 4 sectors.
+- PAPER_1208 transcendental cascade complete: 9 constants, pi^2 tightest at 0.0125%.
+- PAPER_1196 tokamak set: 4 of 8 EXACT.
+- PAPER_1209xx constants cascade: chemistry, physiology, geophysics all integer-EXACT.
+- Euler-Mascheroni gamma and the Omega constant BOTH lead with SSq = 0.57.
 
-THE CC LANDMARK NOW EXECUTES
-  rho_Lambda = rho_SCm * 26! * K_MEX = 5.95695e-10 J/m^3 -> 0.0008%,
-  two orders tighter than the 0.1% the framework header claims. The
-  122.9-order "fine-tuning" gap is now a derived number.
+RULE 7 (pinned AS gaps, never smoothed)
+Light-quark masses +11.4% / +7.4% and neutrino splittings -1.7% / -4.3% carry real gaps
+while their RATIOS close cleanly (d/u = K_Mex; dm2_31/dm2_21 = D_crit+N_ch-2 = 33 EXACT).
+Flatness 1/D_crit^7 runs 9.2% high. Coronal temperature 1.15%. Page curve 0.404% deficit.
 
-EXACT PRIMITIVE IDENTITIES: z_reion = 7.70; Z(Fe) = D_crit = 26 and
-Z(Si) = 14; SMBHB strain index -2/3; solar Hale cycle 22 yr; PopIII IMF
-100 Msun; glass transition 2/3; Altland-Zirnbauer tenfold way = |SO(5)|;
-inflation e-folds N = 60 = A_5, closing monopole+flatness+horizon together.
+ORPHAN-PHYSICS AUDIT
+No paper numbers are missing - whitepapers/ spans PAPER_1-2156 with zero gaps and all 459
+predecessor-cited ids have files. The orphaned physics sits OUTSIDE the numbering: 71
+non-numbered .md files, the ten largest holding 6,615 equation blocks never assigned a
+PAPER number. Distinct from the code reservoir. No wiring performed; Q-ORPHAN-PHYSICS.
 
-SHARP PREDICTIONS: Higgs vev A_5(D_phys+F_TRZ) = 246.0 GeV (0.089%, 11x
-tighter than the whitepaper route); Sum m_nu = 0.0613 eV; BR(mu->e gamma)
-= 1.27e-13 against the MEG bound 4.2e-13; n_s = 0.96468; Salpeter IMF
--2.3533; ln(10) from two primitives at 35 ppm.
-
-CONVERGENCES PINNED: five problems on 1/3; three on 8192; three on
-1/D_crit^D_crit; liar paradox + Goldbach + CMB Axis of Evil on K_MEX-2 = 1/12.
-
-CORRECTION: the P1241-1248 conjecture wirings were rebuilt against the
-closure source after Daniel challenged an inferred derivation — GRH was
-wrong, three were incomplete, one was wrongly skipped. All fixed.
-
-Rule 7 gaps pinned AS gaps: Omega_m 15.2%, dark-flow naive 20x overshoot,
-21cm vs EDGES 42%, QCD string tension 2x.
-
-PROJECT TOTALS (measured): 4,750 functions; 23,644 registry-family rows;
-1,264 of 2,256 papers wired; gate 4,243 assertions, 0 failures.
+Gate 4,426 / 0. Calculator defs 3,228. Dispatches 1,314. Registry-family rows 24,748.
+Ship set 23/23, verified by version-sorted tag diff against v0.366.0.

@@ -5363,3 +5363,204 @@ t_21cm_dark_age,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1193,,,,,,WIRED
 c_vir_halo_concentration,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1193,,,,,,WIRED
 jwst_efficiency_boost,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1193,,,,,,WIRED
 e_uhecr_bound,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1193,,,,,,WIRED
+n_codons_genetic,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+hayflick_limit,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+protein_folding_steps,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+homochirality_ee_pct,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+t_coherence_photosynthesis,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+flocking_density,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+b_magnetoreception_pct,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1207,,,,,,WIRED
+p_sleeping_beauty,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+n_expected_generations,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+ordinal_bound_burali_forti,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+two_envelopes_asymmetry,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+supplee_buoyancy_correction,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+bell_spaceship_stretch,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+ehrenfest_chirality,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+n_missing_satellites,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+coronal_amplification,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+final_parsec_reduction,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1199,,,,,,WIRED
+z_ni62_binding_peak,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1203,,,,,,WIRED
+z_island_of_stability,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1203,,,,,,WIRED
+z_proto_hydrogen,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1203,,,,,,WIRED
+rho_proton_core,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1203,,,,,,WIRED
+heaviside_amplifier_exact,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+r_heaviside_ohms,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+b_sun_quiet_field,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+r_bh_level13,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+f_fluid_collapse,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+rpm_reactor_minimum,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+rho_ua_superfluid,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+v_little_big_denominator,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1236,,,,,,WIRED
+p_monty_hall,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+p_bertrand_paradox,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+e_cosmic_ray_ankle,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+e_schwinger_uqff,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+faber_jackson_exponent,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+rc_diversity,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+molar_mass_water_1209aa,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+atomic_mass_carbon_1209aa,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+atomic_mass_nitrogen_1209aa,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+atomic_mass_oxygen_1209aa,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+cno_primitive_ladder,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hemoglobin_o2_capacity_1209bb,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+heart_rate_resting_1209bb,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+bp_systolic_1209bb,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+bp_diastolic_1209bb,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+breathing_rate_1209bb,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+karman_line_1209cc,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+continental_crust_thickness_1209cc,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+oceanic_moho_depth_1209cc,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+mariana_trench_depth_1209cc,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+geophysical_depth_triplet,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+z_recombination_1209gg,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+h0_planck_route_1209gg,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+alpha_inverse_1209dd,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+vacuum_impedance_1209dd,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+compton_wavelength_1209dd,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+stefan_boltzmann_1209ee,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+m_w_boson_1209hh,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+monopole_suppression_exponent_550,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ramanujan_hyperconvergence_exponent,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+kerr_ringdown_offset_coefficient,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+gw170817_phonon_damping_prefactor,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+neutron_star_canonical_radius_m,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+neutron_star_magnetic_moment,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+peters_mathews_coefficient,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+f_geom_one_eighth_1249,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ln_2_transcendental_1208,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+zeta_3_apery_1208,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+gamma_euler_mascheroni_1208,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+transcendental_cascade_1208,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+higgs_vev_1311,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+n_fermion_generations_1313,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hadron_complexity_bound_1319,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+braid_gate_max_1339,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+knot_crossing_bound_1292,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+bh_seed_mass_1326,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+cosmic_filament_dimension_1330,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+pop_iii_imf_max_1331,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hayflick_limit_1363,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+horizon_efolds_1462,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+quantum_supremacy_qubits_1340,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+nfw_concentration_1336,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+holographic_boundary_dim_1343,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+holographic_bulk_boundary_ratio_1282,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+wc_over_j_phase_transition_1344,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hubbard_u_over_t_1348,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ising_universality_classes_1351,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+glass_tg_over_tm_1354,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+jamming_phi_j_1355,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+room_temp_superconductor_1367,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+lawson_criterion_1368,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+lorenz_attractor_dimension_1294,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ks_contextuality_dimension_1285,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+inertia_origin_ratio_1466,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+late_isw_w_de_1460,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+flatness_suppression_1461,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+tokamak_aspect_ratio_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+tokamak_bohm_prefactor_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+tokamak_q_edge_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+dt_fusion_peak_energy_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+troyon_beta_n_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+fusion_triple_product_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+lawson_n_tau_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+sheath_potential_ratio_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+tokamak_set_1196,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+pi_over_2_composition_1199,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+omega_lambert_w1_1199,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+surface_code_threshold_1199,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+d_crit_compactified_1164,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hierarchy_exponent_1225,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+hodge_identity_1230,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+bh_four_laws_prefactor_1234,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+lithium_7_depletion_factor_1227,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+k_basis_universal_1166,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+smooth_poincare_4d_1248,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+dark_flow_bulk_velocity_1259,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+grb_bimodality_split_1258,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+bqp_dimension_bound_1298,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ds_phase_inverted_1281,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+neutron_lifetime_decomposition_1254,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+crab_pulsar_gamma_1323,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+neutrino_mass_sum_1304,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+m_w_integer_route_1273,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+sqrt_two_pi_1199,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+ln_2_phi_minus_route_1199,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+galaxy_morphology_types_1328,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+sf_efficiency_boost_1438,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+k_mex_phi_res_sevenths,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+gw_memory_fraction_1429,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+schwinger_enhanced_field_1435,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+sphaleron_energy_1442,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+d_crit_universal_count_1443,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+u_over_ua_canonical_500,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+cosmic_ray_ankle_1418,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+amino_acids_canonical_1359,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+solar_neutrino_e_fraction_1404,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+up_quark_mass_a5,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+down_quark_mass_a5,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+light_quark_mass_ratio_a5,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+dm2_solar_a6,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+dm2_atmospheric_a6,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+dm2_ratio_a6,PREDECESSOR_CLOSURE_RESERVOIR,,,,,,,,,PAPER_1204,,,,,,WIRED
+v_dark_flow_km_s,WHITEPAPER,derived,,,599.485,600 km/s Kashlinsky,0.0858,cosmology,,PAPER_1251,,,,,,WIRED
+f_LS_suppression,WHITEPAPER,derived,,,0.033167,1/30.15 EXACT,0.0,cosmology,,PAPER_1251,,,,,,WIRED
+w_de_late,WHITEPAPER,derived,,,-0.9,-1 + F_TRZ,0.0,cosmology,,PAPER_1252,,,,,,WIRED
+m_dm_eV,WHITEPAPER,derived,,,1.78019,1.78 eV,0.0108,cosmology,,PAPER_1253,,,,,,WIRED
+omega_dm,WHITEPAPER,derived,,,0.26715,0.265 Planck,0.811,cosmology,,PAPER_1253,,,,,,WIRED
+tau_n_s,WHITEPAPER,derived,,,879.3066,879.4 s,0.0106,nuclear,,PAPER_1254,,,,,,WIRED
+r_p_muH_fm,WHITEPAPER,derived,,,0.841092,0.841 fm CREMA,0.011,nuclear,,PAPER_1255,,,,,,WIRED
+mu_e_radius_ratio,WHITEPAPER,derived,,,0.958333,23/24 EXACT,0.0,nuclear,,PAPER_1255,,,,,,WIRED
+m_nu_tau_eV,WHITEPAPER,derived,,,0.00192,0.12 eV sum bound,0.0,particle,,PAPER_1256,,,,,,WIRED
+m_sterile_eV,WHITEPAPER,derived,,,0.875,7/8 EXACT,0.0,particle,,PAPER_1257,,,,,,WIRED
+grb_t90_split_s,WHITEPAPER,derived,,,2.0,2 s EXACT,0.0,astro,,PAPER_1258,,,,,,WIRED
+f_ubii_grb_branches,WHITEPAPER,derived,,,1.109336/0.096464,beta_i*(1 +/- Phi_res),0.0,astro,,PAPER_1258,,,,,,WIRED
+nu_frb_hz,WHITEPAPER,derived,,,1.4e9,1.4 GHz EXACT,0.0,astro,,PAPER_1259,,,,,,WIRED
+sgra_dpm_grinding_cycle_d,WHITEPAPER,derived,,,9.259e-18,1 d observed (mechanism only),,astro,,PAPER_1260,,,,,,WIRED
+t_corona_K,WHITEPAPER,derived,,,2023091,2.0e6 K,1.1546,astro,,PAPER_1261,,,,,,WIRED
+c_corona_amplification,WHITEPAPER,derived,,,3.3333e27,SO_5/(D_phys-1)*10^27,0.0,astro,,PAPER_1261,,,,,,WIRED
+alpha_imf_salpeter,WHITEPAPER,derived,,,-2.353333,-2.35,0.1418,astro,,PAPER_1262,,,,,,WIRED
+bh_entropy_prefactor,WHITEPAPER,derived,,,12.5,25/2 = 2*Q_phonon,0.0,gravity,,PAPER_1263,,,,,,WIRED
+holographic_boundary_dim,WHITEPAPER,derived,,,5,D_BSFG-1 EXACT,0.0,gravity,,PAPER_1264,,,,,,WIRED
+k_mex_inverted_ds,WHITEPAPER,derived,,,-2.083333,-K_Mex,0.0,gravity,,PAPER_1265,,,,,,WIRED
+wheeler_dewitt_f_u,WHITEPAPER,derived,,,0.0,F_U = 0 = H|psi>,0.0,gravity,,PAPER_1266,,,,,,WIRED
+pta_alpha_strain,WHITEPAPER,derived,,,-0.666667,-2/3 EXACT,0.0,gw,,PAPER_1267,,,,,,WIRED
+pta_gamma_timing,WHITEPAPER,derived,,,3.2,3.2 EXACT,0.0,gw,,PAPER_1267,,,,,,WIRED
+gamma_smbhb_implied,WHITEPAPER,derived,,,4.333333,13/3 = D_crit/D_BSFG,0.0,gw,,PAPER_1267,,,,,,WIRED
+multimessenger_dt_s,WHITEPAPER,derived,,,100.0,100 s EXACT,0.0,astro,,PAPER_1268,,,,,,WIRED
+f_jet_lambda_over_beta,WHITEPAPER,derived,,,0.012104,0.0121 stated,0.031,astro,,PAPER_1268,,,,,,WIRED
+abiogenesis_replication_anchor,WHITEPAPER,derived,,,1.75,K_Mex*Phi_res = 7/4,0.0,bio,,PAPER_1269,,,,,,WIRED
+v_higgs_gev,WHITEPAPER,derived,,,246.0,246.22 GeV,0.0894,particle,,PAPER_1270,,,,,,WIRED
+rho_lambda_26fact_j_m3,WHITEPAPER,derived,,,5.95695e-10,5.957e-10 J/m3,0.0008,cosmology,,PAPER_1271,,,,,,WIRED
+cc_fine_tuning_orders,WHITEPAPER,derived,,,122.89,~123 orders dissolved,0.0,cosmology,,PAPER_1271,,,,,,WIRED
+vacuum_stability_w,WHITEPAPER,derived,,,-1.0,w = -1 EXACT,0.0,cosmology,,PAPER_1272,,,,,,WIRED
+m_w_hierarchy_route_gev,WHITEPAPER,derived,,,80.0,80.379 GeV,0.4715,particle,,PAPER_1273,,,,,,WIRED
+n_s_scalar_tilt,WHITEPAPER,derived,,,0.96468,0.9655 Planck,0.0848,cosmology,,PAPER_1274,,,,,,WIRED
+r_tensor_to_scalar,WHITEPAPER,derived,,,0.000852,16*Lambda^2,0.0,cosmology,,PAPER_1274,,,,,,WIRED
+clifford_bundle_dim,WHITEPAPER,derived,,,8192,2^(D_crit/2) EXACT,0.0,foundations,,PAPER_1275,,,,,,WIRED
+s_chsh_tsirelson,WHITEPAPER,derived,,,2.828427,2*sqrt(2) EXACT,0.0,foundations,,PAPER_1276,,,,,,WIRED
+u_i_sun,WHITEPAPER,derived,,,2.75e-07,2.75e-7 landmark,0.0,gravity,,PAPER_1277,,,,,,WIRED
+pre_bb_cyclic_period,WHITEPAPER,derived,,,2.0,cos(pi t_n) period,0.0,cosmology,,PAPER_1278,,,,,,WIRED
+singularity_floor_26fact,WHITEPAPER,derived,,,4.0329e26,26! finite bound,0.0,gravity,,PAPER_1279,,,,,,WIRED
+page_curve_recovery,WHITEPAPER,derived,,,0.99596,0.99596 stated,0.404,gravity,,PAPER_1280,,,,,,OPEN_RULING
+ds_phase_k_mex_inverted,WHITEPAPER,derived,,,-2.083333,-K_Mex (dS branch),0.0,gravity,,PAPER_1281,,,,,,WIRED
+gauge_gravity_bulk_bdy,WHITEPAPER,derived,,,6/5,D_BSFG / D_BSFG-1,0.0,gravity,,PAPER_1282,,,,,,WIRED
+cosmic_holography_horizon_dim,WHITEPAPER,derived,,,5,D_BSFG-1 EXACT,0.0,cosmology,,PAPER_1283,,,,,,WIRED
+wave_function_universe_f_u,WHITEPAPER,derived,,,0.0,F_U = 0 = H|psi>,0.0,gravity,,PAPER_1284,,,,,,WIRED
+ks_contextuality_dim_ext,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,foundations,,PAPER_1285,,,,,,WIRED
+hilbert_6th_axiom_count,WHITEPAPER,derived,,,18,12 real + 6 integer,0.0,foundations,,PAPER_1286,,,,,,WIRED
+hilbert_8th_dpm_pair,WHITEPAPER,derived,,,0.0833333,1/12 EXACT,0.0,mathematics,,PAPER_1287,,,,,,WIRED
+hilbert_16th_coefficient,WHITEPAPER,derived,,,1.0416667,K_Mex/2,0.0,mathematics,,PAPER_1288,,,,,,WIRED
+hilbert_18th_eta_max,WHITEPAPER,derived,,,0.7404805,0.7405,0.0026,mathematics,,PAPER_1289,,,,,,WIRED
+smale_1st_riemann_t10000,WHITEPAPER,derived,,,9877.78265,9877.78265,0.0,mathematics,,PAPER_1290,,,,,,WIRED
+smale_2nd_jacobian_closure,WHITEPAPER,derived,,,1.0,F_U = 1 closure,0.0,mathematics,,PAPER_1291,,,,,,WIRED
+smale_11th_knot_bound,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,mathematics,,PAPER_1292,,,,,,WIRED
+smale_13th_cycle_coefficient,WHITEPAPER,derived,,,1.0416667,K_Mex/2,0.0,mathematics,,PAPER_1293,,,,,,WIRED
+smale_14th_lorenz_dim,WHITEPAPER,derived,,,2.06029,2.06,0.0141,mathematics,,PAPER_1294,,,,,,WIRED
+erdos_straus_triadic,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,mathematics,,PAPER_1295,,,,,,WIRED
+beal_min_exponent,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,mathematics,,PAPER_1296,,,,,,WIRED
+goldbach_weak_n_primes,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,mathematics,,PAPER_1297,,,,,,WIRED
+p_vs_bqp_bound,WHITEPAPER,derived,,,4.0,2^(D_phys/2) EXACT,0.0,mathematics,,PAPER_1298,,,,,,WIRED
+np_vs_conp_asymmetry,WHITEPAPER,derived,,,0.1,F_TRZ,0.0,mathematics,,PAPER_1299,,,,,,WIRED
+schanuel_transcendental_cap,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,mathematics,,PAPER_1300,,,,,,WIRED

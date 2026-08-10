@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.366.0"
-description = "UQFF pure calculator v0.366.0 - bands PAPER_1201-1250 + the PREDECESSOR CLOSURE RESERVOIR opened (102 of ~390 primitive-bearing closures mined in 7 batches). Kepler density = pi/sqrt(D_BSFG(D_phys-1)) BIT-EXACT; 0++ glueball = Yang-Mills gap 1.736 GeV; rho_Lambda = rho_SCm*26!*K_MEX at 0.0008%; z_reion 7.70 EXACT; Z(Fe) = D_crit = 26; Higgs vev A_5(D_phys+F_TRZ) = 246.0. Totals: 4,750 fns / 23,644 registry rows / 1,264 papers / gate 4,243 green."
+version = "0.367.0"
+description = "UQFF pure calculator v0.367.0 - bands PAPER_1251-1300 wired (50 papers: cosmology anomalies, holography, Hilbert/Smale problems) + closure reservoir DRAINED (batches 10-13). Sevenths identity K_Mex*Phi_res = 7/4 EXACT in 4 sectors; PAPER_1208 transcendental cascade complete; PTA alpha = -D_phys/D_BSFG = -D_GW_EROSION; F_U = 0 IS Wheeler-DeWitt. ORPHAN-PHYSICS audit: 6,615 equation blocks outside the numbered corpus. Totals: 3,228 fns / 1,314 dispatches / gate 4,426 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

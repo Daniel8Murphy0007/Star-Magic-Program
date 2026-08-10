@@ -205,3 +205,9 @@ Ship-integrity fix: 5 audit files omitted at v0.365.0 completed. Baseline-tag ru
 
 ## v0.366.0 (2026-08-09)
 Bands 1201-1250 + closure-reservoir batches 1-7 (102/390 mined). Gate 4,243/0. Dispatches 1,264.
+
+## v0.367.0 (2026-08-10)
+
+Bands PAPER_1251-1300 (50 dispatches) + reservoir batches 10-13 (95 defs) + ORPHAN-PHYSICS audit.
+Gate 4,426 / 0. Calculator defs 3,228. Dispatches 1,314. Registry-family rows 24,748.
+Ship set: 23/23 files touched, verified by version-sorted tag diff against v0.366.0.

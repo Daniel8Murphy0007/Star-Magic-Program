@@ -1,11 +1,11 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.366.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.366.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.367.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.367.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4243%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1264-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4426%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1314-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2255-orange)](whitepapers/)
 
 **UQFF systematic rebuild — v0.358.0 complete-compile campaign live**
@@ -22,14 +22,14 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Full-project totals (measured):** **4,750 functions** across 15 Python modules
-(calculator 3,044 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+**Full-project totals (measured):** **4,962 functions** across 15 Python modules
+(calculator 3,228 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
-**23,644 registry-family rows** across 14 CSVs (main 5,168 + falsifiability graph 7,646
-edges + XGEO 3,221 + citations 5,751 + results 187 + audit family 946) | **1,264 of 2,256
-whitepapers wired** (56.0% of corpus; frontier PAPER_001-1250 complete) | **4,243 gate
-assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into ~47,000 Python
-lines (~13:1 on the covered range).
+**24,748 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
+citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
+**1,314 of 2,256 whitepapers wired** (58.2% of corpus; frontier PAPER_001-1300 complete) |
+**4,426 gate assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
+~50,000 Python lines (~13:1 on the covered range).
 
 **Single-file scope** (used for per-band deltas): calculator defs, main-registry rows,
 gate assertions, dispatch count — always labeled as such in CHANGELOG/SESSION_LOG entries.
@@ -67,7 +67,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.358.0)
+## What is currently shipped (v0.367.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

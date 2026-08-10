@@ -34,3 +34,4 @@ Q-RULE4-TIER2,32 Tier-2 classical envelopes,v0.364.0,PENDING,,
 Q-RULE4-TIER2,29 remaining Tier-2 envelopes (was 32; P1032/1038/1040 resolved),v0.365.1,PENDING,,
 Q-SHIP-BASELINE,"ship verifier MUST diff vs the immediately-preceding TAG, not an older one",v0.365.1,RESOLVED,,
 Q-RESERVOIR-SCOPE,288 closures unmined,v0.366.0,PENDING,,
+ORPHAN_PHYSICS_RESERVOIR,71 non-numbered .md files,6615 equation blocks,QUEUED,Q-ORPHAN-PHYSICS,v0.367.0

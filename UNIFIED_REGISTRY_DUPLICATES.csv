@@ -27,3 +27,6 @@ v0.363.0,2026-08-09,NO_NEW_DUPLICATES
 v0.364.0,2026-08-09,NO_NEW_DUPLICATES
 v0.365.1,2026-08-09,NO_NEW_DUPLICATES
 v0.366.0,2026-08-09,NO_NEW_DUPLICATES
+e_transcendental_1208,RESERVOIR_BATCH_11,DEDUPED,caught by gate duplicate-def guard; 6 PAPER_1208 members pre-existed,v0.367.0
+smooth_poincare_4d_1248,k_basis_universal_1166,ALIAS_PINNED,both = K_Mex*D_phys = 25/3 bit-identical,v0.367.0
+jamming_phi_j_1355,D_GW_EROSION,ALIAS_PINNED,"both = 2/(D_phys-1) bit-identical, unrelated sectors",v0.367.0
