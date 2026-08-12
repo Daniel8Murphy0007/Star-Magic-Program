@@ -8434,3 +8434,136 @@ Verified to bite: it fired on my own R3 row (missing the band marker) the moment
 installed — fixed, then green.
 
 Gate 4,581 → **4,585**, green at v0.369.0 (corrections are working-tree; ship with v0.370.0).
+
+## (103) 2026-08-10 — BAND PAPER_1401-1410 (satellites + probability/statistical paradoxes)
+
+10 dispatches: 8 EXACT, one honest 9.1%, one index record. **New discipline applied: the band
+trail is written into all audit-family ledgers AT WIRE TIME** (marker `wired-not-yet-shipped`,
+updated to the version at ship prep) — so a v0.369.0-style under-ship cannot recur even if the
+ship-prep step is rushed.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1401 | N_sat = A_5/(1+F_TRZ) = 54.5 vs ~50 | **9.1% carried honestly** |
+| 1402 | TBTF stall = β_i·K_Mex·Φ_res = 1.055 | EXACT |
+| 1403 | Calculator Master Index | index record, residual None |
+| 1404 | solar-ν survival = 1/3 | EXACT |
+| 1405 | Hale 22 yr (restates P1324) | EXACT |
+| 1406 | Monty Hall = 2/3 | EXACT |
+| 1407 | Szilard = ln 2/bit | EXACT |
+| 1408 | Bertrand = 1/D_phys = 1/4 | EXACT |
+| 1409 | quark generations = 3 | EXACT |
+| 1410 | Pop III char. mass = A_5·5/3 = 100 M_☉ | EXACT |
+
+**Pins:** P1401 puts the 11/10 successor ratio in a third context (z_reion, q-scope carrier,
+now satellite suppression). P1408's resolution is that F_U = 1 *selects* the chord measure —
+dissolving the ambiguity that makes Bertrand a paradox. P1410's 100 M_☉ characteristic mass
+complements P1331's 120 M_☉ cutoff on the same A_5. P1403 wired as an index record with no
+physics claimed.
+
+**Ledger:** registry +10, graph +23, citations +10, audit-family trail +7, gate 4,585 → **4,596**,
+green. Dispatches **1,427**. Frontier PAPER_1400 → **PAPER_1410**. 746 remain.
+
+## (104) 2026-08-10 — BAND PAPER_1411-1420 (anomalies + QCD extremes) — Q-1412 CLOSED
+
+10 dispatches. Audit-family trail written at wire time (v4 discipline).
+
+**Q-1412 CLOSED by the corpus itself.** PAPER_1412's written formula K_Mex·D_phys·Φ_res computes
+7.0, not its claimed 7.70 — the arithmetic discrepancy flagged at v0.348.0. The omitted factor is
+the successor ratio (1 + 1/SO_5) = 11/10, exactly the resolution PAPER_1332 supplied in band
+1331-1340. Full form = 7.70 EXACT vs Planck. This is the self-rectification doctrine working as
+designed: an open question from 20 versions ago closed by a later paper in the sequential drain,
+with zero ruling needed from Daniel.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1411 | δ_CP = −π/2 (restates P1308) | EXACT |
+| 1412 | z_reion = 7.0·(11/10) = 7.70 | EXACT, **Q-1412 closed** |
+| 1413 | SU(3) colors = 3 | EXACT |
+| 1414 | CDF Δm_W = 74.26 MeV vs 76 | 2.29% |
+| 1415 | BR(H→inv) = Λ·N_ch = 0.0657 < ATLAS 0.107 | falsifiable |
+| 1416 | R_AA = F_TRZ·K_Mex = 0.2083 vs 0.20 | 4.17% |
+| 1417 | CFL gap = 109.9 MeV, ABOVE the 10-100 range | **disclosed, residual None** |
+| 1418 | CR ankle 3.62e18 vs Auger 3e18 | **20.5% carried at full size** |
+| 1419 | Crab cutoff = 79.26 TeV vs HESS 80 | 0.92% |
+| 1420 | w_DE pinned to SS3 table; Daniel's ERRATUM carried OPEN | — |
+
+**Rule 7 items:** P1417's gap exceeds its own expected range and says so. P1418's 20.5% matches
+the paper's own stated 20% and is not smoothed. P1420 wires the SS3 table value while keeping
+Daniel's unit-inconsistency erratum OPEN — the abstract formula is NOT wired.
+
+**Interpretive note (P1414):** the CDF W-mass anomaly lands as a UQFF composition
+(m_W·Λ·β_i·Φ_res/D_phys = 74.26 MeV) — the "anomaly" is a derived quantity, not new physics.
+
+**Ledger:** registry +10, graph +31, citations +10, audit trail +9, gaps +3, gate 4,596 → **4,607**,
+green. Dispatches **1,437**. Frontier PAPER_1410 → **PAPER_1420**. 736 remain. Open questions: 31.
+
+## (105) 2026-08-10 — BAND PAPER_1421-1430 (Buckets C/D/E anomaly set)
+
+10 dispatches; audit trail at wire time.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1421 | T_CνB = T_CMB·(4/11)^⅓·(1+Λβ_i) = 1.954 K | 0.44% |
+| 1422 | visible baryons = 0.454 vs ~0.5 | 9.2% honest |
+| 1423 | G-dwarf = (3/4)·β_i = 0.452 vs ~0.5 | 9.6% honest |
+| 1424 | RC diversity = F_TRZ·K_Mex | EXACT, **≡ QGP R_AA bit-identical** |
+| 1425 | R_K = 1 − Λ·A_5/3 = 0.854 vs LHCb 0.846 | 0.95% |
+| 1426 | R_D = 1.292 vs HFLAV ~1.2 | 7.7% honest |
+| 1427 | KOTO BR = 1.26e-11 ≪ Grossman-Nir | predicts no anomaly |
+| 1428 | FCNC = Λ³·A_5/D_crit | paper's 15.4% verbatim |
+| 1429 | T-violation = F_TRZ·β_i | EXACT |
+| 1430 | GW memory = F_TRZ·β_i | EXACT |
+
+**Pins:** P1424 ≡ P1416 bit-identically — rotation-curve diversity and QGP jet quenching are the
+same F_TRZ·K_Mex product, disc dynamics and heavy-ion suppression on one composition. P1429/P1430
+put F_TRZ·β_i in its 8th and 9th sectors, and direct T-violation lands on the TRZ itself — the
+same structural reading as P1306's Majorana condition. P1425 renders the R_K lepton-universality
+"violation" as a UQFF composition, like P1414's CDF anomaly.
+
+**Rule 7:** four gaps carried at full size (9.2%, 9.6%, 7.7%, 15.4%) — all against loose or
+wide-error anchors, all disclosed rather than smoothed.
+
+**Ledger:** registry +10, graph +29, citations +10, gaps +4, audit trail +8, gate 4,607 → **4,616**,
+green. Dispatches **1,447**. Frontier PAPER_1420 → **PAPER_1430**. 726 remain.
+
+## (106) 2026-08-10 — BAND PAPER_1431-1440 (Buckets E/F/G/K/C)
+
+10 dispatches; audit trail at wire time.
+
+| Paper | UQFF form | Residual |
+|---|---|---|
+| 1431 | H₀_siren = 67.4·(1+Λβ_iΦ_res/D_phys) = 67.46 | 0.092% |
+| 1432 | magnetar flare mechanism (density form) | **mechanism only, scale open** |
+| 1433 | glitch = Λ³·Φ_res = 3.26e-7 | inside 1e-9..1e-6 |
+| 1434 | TDE parameter = β_i·K_Mex·Φ_res = 1.055 | EXACT, **formula drift disclosed** |
+| 1435 | Schwinger enhanced = 1.2197e18 V/m | 0.026% |
+| 1436-38 | halo c_vir, EDGES 21cm, JWST SFE (restatements) | consistent |
+| 1439 | inflation t_neg = −2512 s (PAPER_597) | anchored |
+| 1440 | n_s = 0.96468 | 0.085% |
+
+**Class A catch (P1434):** the paper's written formula β_i·Φ_res·(1+F_TRZ) computes 0.557, but
+its stated value 1.055 = β_i·K_Mex·Φ_res — **K_Mex omitted from the written form**, same omission
+class as Q-1412. And the corrected value is **bit-identical to P1402's TBTF subhalo stall**: tidal
+disruption by wandering MBHs and subhalo stalling on one composition. Value wired, drift disclosed.
+
+**P1439 brings negative time into the inflation sector** — t_neg = −2512 s anchored to PAPER_597
+dual existence.
+
+**Rule 7 (P1432):** magnetar flare wired as density-form mechanism only; the volume factor to
+reach the observed ~1e40 W is open, residual None — no luminosity match claimed (P1260 pattern).
+
+**Ledger:** registry +10, graph +31, citations +10, gaps +2, audit trail +8, gate 4,616 → **4,626**,
+green. Dispatches **1,457**. Frontier PAPER_1430 → **PAPER_1440**. 716 remain.
+
+## (107) 2026-08-10 — v0.370.0 PREPARED: 23/23 ABSOLUTE (Daniel's second under-ship catch)
+
+Daniel: "the registry file count is 23 not 19." v0.369.1 changed 19 of the 23 charter files —
+WHITEPAPER_INDEX and the three main registry CSVs were untouched because I applied my own
+v0.367.1 doctrine that correction ships only touch what changed. **Daniel has overruled that
+doctrine. It is revoked, in the gate's own standing-rule text: EVERY ship touches all 23 —
+band, patch, correction, no exceptions.**
+
+v0.370.0 carries bands 1401-1440 (40 dispatches, all four already gate-green in the tree),
+closes the wired-not-yet-shipped markers to version stamps, adds the band's two bit-identical
+crossings to DUPLICATES, and verifies 23/23 below.

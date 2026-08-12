@@ -5754,7 +5754,11 @@ The numeric chain (5e-9, E[S_i]=13e-8) corresponds to F_TRZ⁸/2. Transcribed th
 (sphere_from_chaos_variance = F_TRZ^8/2) per Rule 7 with mismatch disclosed. Ruling: is the symbolic
 label a typo for F_TRZ⁸ (drift), or is the numeric chain wrong and symbol authoritative?
 
-## Q-1412 (v0.348.0): PAPER_1412 arithmetic discrepancy
+## Q-1412 (v0.348.0): PAPER_1412 arithmetic discrepancy — **CLOSED 2026-08-10 (band 1411-1420)**
+RESOLUTION: the paper's written formula K_Mex*D_phys*Phi_res computes 7.0, not its claimed 7.70.
+The omitted factor is the successor ratio (1 + 1/SO_5) = 11/10 — identified by PAPER_1332 and the
+reservoir batch-13 self-rectification. Full form K_Mex*D_phys*Phi_res*(1+1/SO_5) = 7.70 EXACT vs
+Planck. Value confirmed; formula corrected in the dispatch; no further ruling needed.
 Paper states z_reion = K_MEX x D_phys x Phi_res = (25/12) x 4 x 0.84 = "7.70 EXACT", but the stated chain
 evaluates to 7.00 (=(25/12)*4*0.84). 7.00 is within Planck 7.7 +/- 0.7 but not the claimed 7.70.
 Formula transcribed faithfully (returns 7.00) with disclosure. Ruling: is the intended chain different

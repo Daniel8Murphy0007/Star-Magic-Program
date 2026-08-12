@@ -1616,3 +1616,7 @@ ship_integrity_rule,SHIP_PROTOCOL,baseline = newest tag by version sort,v0.365.1
 glueball_eq_ym_gap,PAPER_1193,2 D_phys Lambda_QCD = 1.736 GeV = Yang-Mills gap,v0.366.0,
 BAND_1251_1300,n/a,XGEO_NOT_REQUIRED,single-geometry band; no cross-geometry re-expression needed,v0.367.0
 BANDS_1371_1400,n/a,XGEO_NOT_REQUIRED,no cross-geometry re-expression needed,v0.369.0
+BAND_1401_1410,n/a,XGEO_NOT_REQUIRED,no cross-geometry re-expression,v0.370.0
+BAND_1411_1420,n/a,XGEO_NOT_REQUIRED,none needed,v0.370.0
+BAND_1421_1430,n/a,XGEO_NOT_REQUIRED,none,v0.370.0
+BAND_1431_1440,n/a,XGEO_NOT_REQUIRED,none,v0.370.0

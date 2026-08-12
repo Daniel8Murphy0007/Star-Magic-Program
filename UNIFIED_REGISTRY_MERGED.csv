@@ -541,3 +541,7 @@ SHIP_INTEGRITY_v0_365_1,v0.365.1,"23-file rule + version-sort baseline, gate-enf
 RESERVOIR_BATCHES_1_7,v0.366.0,"555 closures censused, 390 primitive-bearing, 102 mined; Kepler bit-exact, glueball=YM gap, CC landmark 0.0008%",MERGED_SUMMARY,PREDECESSOR_RESERVOIR
 BAND_1251_1300,WHITEPAPER,MERGED,v0.367.0,50 dispatches merged into the main registry; reservoir batches 10-13 folded
 BANDS_1371_1400,WHITEPAPER,MERGED,v0.369.0,30 paradox-suite dispatches merged; all derivations read from named closures
+BAND_1401_1410,WHITEPAPER,MERGED,v0.370.0,10 dispatches incl P1403 index record
+BAND_1411_1420,WHITEPAPER,MERGED,v0.370.0,10 dispatches; Q-1412 closed
+BAND_1421_1430,WHITEPAPER,MERGED,v0.370.0,10 dispatches Buckets C/D/E
+BAND_1431_1440,WHITEPAPER,MERGED,v0.370.0,10 dispatches Buckets E/F/G/K/C

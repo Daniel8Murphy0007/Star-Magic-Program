@@ -99,3 +99,13 @@ s26_variant_theta_qcd,PAPER_1315,26 orders,requires S_26^(3)=1.4531e26 not S_26=
 jamming_formula_paste,PAPER_1355,n/a,"paper prints P1354 formula (D_phys-1)/D_phys next to value 2/3; value correct, formula wrong",CLASS_A_CATCH,v0.367.1
 faint_young_sun_l_route,PAPER_1377,5.45,L-route 1+beta_i*Phi_res=1.5064 vs required 1.4286; T-route (0.85%) is the carrying form,DISCLOSED,v0.369.0
 hbt_g2_deficit,PAPER_1391,3.0,"g(2)=1.9397 vs classical 2.0 - FALSIFIABLE prediction, not a defect",PREDICTION,v0.369.0
+missing_satellites_9pct,PAPER_1401,9.09,"N=54.5 vs ~50; survey-incomplete anchor, residual carried honestly",DISCLOSED,v0.370.0
+cfl_gap_range_edge,PAPER_1417,n/a,109.9 MeV above the 10-100 range; residual None,DISCLOSED,v0.370.0
+cr_ankle_20pct,PAPER_1418,20.5,paper itself states 20%; carried at full size,DISCLOSED,v0.370.0
+w_de_erratum,PAPER_1420,n/a,abstract formula unit-inconsistent per Daniel ERRATUM; pinned to SS3 table,OPEN,v0.370.0
+missing_baryons_9pct,PAPER_1422,9.23,vs loose ~0.5 anchor,DISCLOSED,v0.370.0
+g_dwarf_9pct,PAPER_1423,9.57,vs loose ~0.5 anchor,DISCLOSED,v0.370.0
+r_d_7pct,PAPER_1426,7.66,HFLAV anchor wide errors,DISCLOSED,v0.370.0
+fcnc_15pct,PAPER_1428,15.4,paper-stated residual verbatim,DISCLOSED,v0.370.0
+magnetar_flare_scale,PAPER_1432,n/a,density-form mechanism only; volume factor to 1e40 W open,MECHANISM,v0.370.0
+tde_formula_drift,PAPER_1434,n/a,written formula computes 0.557 vs stated 1.055 = beta*K*Phi; K_Mex omitted,CLASS_A_CATCH,v0.370.0

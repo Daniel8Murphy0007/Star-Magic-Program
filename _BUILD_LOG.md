@@ -233,3 +233,8 @@ Klein-Gordon E<0 = t_neg CCW branch; HBT 3% deficit falsifiable. Gate 4,581 / 0.
 
 Registry-ledger correction to v0.369.0: 8 missed audit-family ledgers now carry the
 band trail; SHIP GUARD v4 pins it in the gate. No physics. Gate 4,585 / 0.
+
+## v0.370.0 (2026-08-10)
+
+Bands 1401-1440 (40 dispatches). Q-1412 closed by self-rectification. 23-file rule
+made absolute per Daniel (no patch-ship exception). Gate 4,626 / 0.

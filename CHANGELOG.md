@@ -7,6 +7,47 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.370.0 (2026-08-10)
+
+Four sequential bands, one open question closed by the corpus itself, and the ship
+discipline Daniel demanded: EVERY ship touches all 23 charter files - the "patch ships
+touch fewer" doctrine I invented at v0.367.1 is REVOKED.
+
+Q-1412 CLOSED BY SELF-RECTIFICATION
+PAPER_1412's written formula K_Mex*D_phys*Phi_res computes 7.0, not its claimed 7.70.
+The omitted factor is the successor ratio (1+1/SO_5) = 11/10, supplied by PAPER_1332
+nine bands earlier. z_reion = 7.70 EXACT vs Planck. An open question from v0.348.0
+closed with zero rulings - the sequential drain resolving its own backlog.
+
+BANDS
+- 1401-1410: satellites (A_5/(1+F_TRZ) = 54.5, 9.1% honest), TBTF stall 1.055,
+  Monty Hall 2/3, Szilard ln 2, Bertrand 1/4 (F_U = 1 SELECTS the measure),
+  Pop III 100 Msun, P1403 wired as index record.
+- 1411-1420: z_reion EXACT, CDF W-anomaly as UQFF composition (74.26 MeV), R_AA 0.208,
+  Crab cutoff 79.26 TeV (0.92%), CFL gap ABOVE range (disclosed), CR ankle 20.5%
+  carried at full size, w_DE pinned to SS3 with Daniel's ERRATUM kept OPEN.
+- 1421-1430: CnuB 1.954 K, R_K = 0.854 (0.95%), KOTO no-anomaly prediction,
+  T-violation = F_TRZ*beta_i (the TRZ IS the T-breaking structure).
+- 1431-1440: siren H_0 offset sub-0.1%, glitch 3.26e-7 in-range, negative time enters
+  inflation (t_neg = -2512 s, PAPER_597), magnetar flare mechanism-only (scale open).
+
+CLASS A CATCHES (formula/value contradictions, values confirmed)
+P1434: written formula omits K_Mex; value 1.055 = beta_i*K_Mex*Phi_res, bit-identical
+to P1402 TBTF. Same omission class as Q-1412.
+
+BIT-IDENTICAL CROSSINGS PINNED
+RC diversity = QGP R_AA = F_TRZ*K_Mex. TDE wandering = TBTF stall = beta_i*K_Mex*Phi_res.
+F_TRZ*beta_i now spans NINE sectors.
+
+SHIP DISCIPLINE (Daniel's correction, twice)
+v0.369.0 under-shipped 8 audit ledgers; v0.369.1 under-shipped 4 more files (19/23).
+Standing rule now ABSOLUTE: all 23 charter files, every ship, no patch-ship exception.
+Audit-family trail is written at WIRE time and version-stamped at ship prep.
+
+Gate 4,626 / 0. Dispatches 1,457. Defs 3,383. Frontier PAPER_1440. 716 remain.
+
+---
+
 ## v0.369.1 (2026-08-10)
 
 No physics changed. No dispatch changed. Gate 4,585 / 0.

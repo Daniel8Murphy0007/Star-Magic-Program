@@ -158,3 +158,7 @@ SECTOR_TEMPLATE,PAPER_100/176/223/227/230/285/348/358/359,"9-sector Lagrangian t
 RESERVOIR_1_7,PREDECESSOR_RESERVOIR,102 closures mined and mapped to PAPER_1193/1203/1205/1208/1209/1216/1218/1223/1239/1241
 PAPER_1251_1300,BAND,uqff_calculator.py::DISPATCH,50 dispatches,v0.367.0
 PAPER_1371_1400,BAND,uqff_calculator.py::DISPATCH,30 dispatches,v0.369.0
+PAPER_1401_1410,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.370.0
+PAPER_1411_1420,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.370.0
+PAPER_1421_1430,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.370.0
+PAPER_1431_1440,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.370.0

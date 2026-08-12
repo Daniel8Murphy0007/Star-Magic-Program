@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.369.1", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.370.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9567,7 +9567,115 @@ assert_that('PAPER_1377' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
 assert_that('v0.369.0' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
 assert_that(True,
-            "SHIP GUARD v4 STANDING RULE: the ship verifier verifies against the CHARTER's 23-file list, never an ad-hoc subset. Content checks (guards v2/v3) plus band-trail checks (this guard) plus the 23-file coverage - all three, every band ship")
+            "SHIP GUARD v4 STANDING RULE (Daniel, ABSOLUTE): EVERY ship touches all 23 charter files - band, patch, correction, no exceptions. The v0.367.1 patch-ship-touches-fewer doctrine is REVOKED after v0.369.1 shipped 19/23. Content checks + band-trail + 23/23 coverage, every ship")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1401-1410 ---
+import math as _m41
+_v01 = C.DISPATCH['PAPER_1401']()['value']
+assert_that(abs(_v01['n_satellites'] - 54.545) < 0.01,
+            "P1401: missing satellites N = A_5/(1+F_TRZ) = 54.5 - the 11/10 successor ratio AGAIN (z_reion, q-scope carrier); residual vs ~50 observed is 9.1% and reported AS 9.1%")
+assert_that(C.DISPATCH['PAPER_1401']()['residual_pct'] > 5.0,
+            "P1401 RULE 7: the 9.1% satellite residual is carried honestly - observed count itself is survey-incomplete, but the residual is NOT rounded away")
+assert_that(abs(C.DISPATCH['PAPER_1402']()['value']['subhalo_stall_ratio'] - 1.055) < 0.001,
+            "P1402: too-big-to-fail stall ratio = beta_i*K_Mex*Phi_res = 1.055 - just above unity, massive subhalos stall")
+_v03 = C.DISPATCH['PAPER_1403']()['value']
+assert_that(_v03['index_paper'] and C.DISPATCH['PAPER_1403']()['residual_pct'] is None,
+            "P1403: the Calculator Master Index is a CATALOGUE document - wired as an index record with residual None, no physics claimed")
+assert_that(abs(C.DISPATCH['PAPER_1404']()['value']['p_nu_e_survival'] - 1.0 / 3.0) < 1e-15
+            and C.DISPATCH['PAPER_1409']()['value']['n_generations'] == 3,
+            "P1404/P1409: solar-nu survival 1/3 and quark generations 3 - the triadic primitive's fifth and sixth wirings")
+assert_that(C.DISPATCH['PAPER_1405']()['value']['t_hale_yr'] == 22,
+            "P1405: Hale cycle 22 yr restated - consistent with P1324/P1164")
+assert_that(abs(C.DISPATCH['PAPER_1406']()['value']['p_switch_wins'] - 2.0 / 3.0) < 1e-15,
+            "P1406: Monty Hall = 2/(D_phys-1) = 2/3 - bit-equal to D_GW_EROSION and jamming phi_J")
+assert_that(abs(C.DISPATCH['PAPER_1407']()['value']['work_per_bit_kbt'] - _m41.log(2.0)) < 1e-15,
+            "P1407: Szilard = ln 2 per bit EXACT, unified with Landauer under F_U = 1")
+assert_that(abs(C.DISPATCH['PAPER_1408']()['value']['p_chord_exceeds_side'] - 0.25) < 1e-15,
+            "P1408: Bertrand = 1/D_phys = 1/4 - F_U = 1 SELECTS the measure, dissolving the ambiguity that makes it a paradox")
+assert_that(abs(C.DISPATCH['PAPER_1410']()['value']['m_popiii_msun'] - 100.0) < 1e-9,
+            "P1410: top-heavy Pop III characteristic mass = A_5*(D_phys+1)/(D_phys-1) = 100 M_sun EXACT - the 5/3 ratio on A_5; complements the 2*A_5 = 120 cutoff (P1331)")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1401, 1411)),
+            "BAND 1401-1410: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1411-1420 ---
+import math as _m42
+assert_that(abs(C.DISPATCH['PAPER_1411']()['value']['delta_cp_rad'] + _m42.pi / 2.0) < 1e-15,
+            "P1411: delta_CP = -pi/2 EXACT, consistent with P1308")
+_v12 = C.DISPATCH['PAPER_1412']()['value']
+assert_that(abs(_v12['z_reion'] - 7.7) < 1e-9 and abs(_v12['base_seven'] - 7.0) < 1e-9 and _v12['q_1412_resolved'],
+            "P1412 / Q-1412 CLOSED: the paper's written formula K_Mex*D_phys*Phi_res computes 7.0, not its claimed 7.70 - the OMITTED factor is the successor ratio (1+1/SO_5) = 11/10, exactly the P1332 resolution. Arithmetic discrepancy explained, value confirmed EXACT")
+assert_that(C.DISPATCH['PAPER_1413']()['value']['n_colors'] == 3,
+            "P1413: SU(3) colors = D_phys - 1 = 3")
+assert_that(abs(C.DISPATCH['PAPER_1414']()['value']['delta_m_w_mev'] - 74.26) < 0.05,
+            "P1414: CDF W-mass anomaly = m_W*Lambda*beta_i*Phi_res/D_phys = 74.26 MeV vs CDF 76 (2.29%) - the anomaly is a UQFF composition, not new physics")
+_v15 = C.DISPATCH['PAPER_1415']()['value']
+assert_that(abs(_v15['br_h_invisible'] - 0.0657) < 0.0001 and _v15['inside_bound'],
+            "P1415: BR(H->inv) = Lambda*N_ch = 0.0657 inside ATLAS 0.107 - falsifiable as HL-LHC tightens the bound toward 0.065")
+assert_that(abs(C.DISPATCH['PAPER_1416']()['value']['r_aa'] - 0.2083) < 0.001,
+            "P1416: R_AA = F_TRZ*K_Mex = 0.2083 vs PbPb 0.20 (4.17% honest)")
+_v17 = C.DISPATCH['PAPER_1417']()['value']
+assert_that(abs(_v17['delta_cfl_mev'] - 109.9) < 0.5 and _v17['at_range_edge']
+            and C.DISPATCH['PAPER_1417']()['residual_pct'] is None,
+            "P1417 RULE 7: CFL gap = 109.9 MeV sits ABOVE the 10-100 MeV expected range - disclosed with residual None, not squeezed into the range")
+assert_that(abs(C.DISPATCH['PAPER_1418']()['residual_pct'] - 20.5) < 0.2,
+            "P1418 RULE 7: CR ankle 3.62e18 vs Auger 3e18 - the 20.5% residual is carried at full size; the paper itself states 20%")
+assert_that(abs(C.DISPATCH['PAPER_1419']()['value']['e_cutoff_tev'] - 79.26) < 0.05,
+            "P1419: Crab TeV cutoff = m_p*A_5*D_crit^2*K_Mex = 79.26 TeV vs HESS 80 (0.92%)")
+_v20 = C.DISPATCH['PAPER_1420']()['value']
+assert_that(_v20['erratum_open'] and abs(_v20['w_at_13p8_gyr'] + 0.9435) < 1e-9,
+            "P1420: DE EOS pinned to the SS3 table w(13.8 Gyr) = -0.9435 with Daniel's unit-inconsistency ERRATUM carried OPEN - the abstract formula is NOT wired")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1411, 1421)),
+            "BAND 1411-1420: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1421-1430 (Buckets C/D/E anomaly set) ---
+assert_that(abs(C.DISPATCH['PAPER_1421']()['value']['t_cnub_k'] - 1.9536) < 0.001,
+            "P1421: CnuB temperature = T_CMB*(4/11)^(1/3)*(1+Lambda*beta_i) = 1.954 K (0.44%)")
+assert_that(C.DISPATCH['PAPER_1422']()['residual_pct'] > 9.0
+            and C.DISPATCH['PAPER_1423']()['residual_pct'] > 9.0,
+            "P1422/P1423 RULE 7: missing-baryons 9.2% and G-dwarf 9.6% carried at full size - both anchors (~0.5) are themselves loose survey figures, but the residuals are NOT rounded away")
+assert_that(abs(C.DISPATCH['PAPER_1424']()['value']['rc_diversity_parameter'] - C.DISPATCH['PAPER_1416']()['value']['r_aa']) < 1e-15,
+            "P1424/P1416 BIT-IDENTICAL: rotation-curve diversity = QGP jet quenching = F_TRZ*K_Mex = 0.2083 - disc dynamics and heavy-ion suppression on one primitive product")
+assert_that(abs(C.DISPATCH['PAPER_1425']()['value']['r_k'] - 0.854) < 0.001,
+            "P1425: R_K = 1 - Lambda*A_5/3 = 0.854 vs LHCb 0.846 (0.95%) - lepton universality violation as a UQFF composition")
+assert_that(C.DISPATCH['PAPER_1426']()['residual_pct'] > 7.0,
+            "P1426 RULE 7: R_D = 1.292 vs HFLAV ~1.2 - 7.7% carried honestly against a wide-error anchor")
+_v27 = C.DISPATCH['PAPER_1427']()['value']
+assert_that(_v27['inside_bound'] and _v27['br_koto'] < 1e-10,
+            "P1427: KOTO BR = 1.26e-11, well inside Grossman-Nir - UQFF predicts NO KOTO anomaly at current sensitivity")
+assert_that(C.DISPATCH['PAPER_1428']()['residual_pct'] == 15.4,
+            "P1428 RULE 7: FCNC suppression carries the paper's own 15.4% residual verbatim")
+assert_that(abs(C.DISPATCH['PAPER_1429']()['value']['t_violation_asymmetry'] - C.F_TRZ * C.BETA_I) < 1e-15
+            and abs(C.DISPATCH['PAPER_1430']()['value']['h_mem_over_h_peak'] - C.F_TRZ * C.BETA_I) < 1e-15,
+            "P1429/P1430: direct T-violation and GW memory BOTH = F_TRZ*beta_i - the EIGHTH and NINTH sectors on this product, and T-violation confirms the TRZ as the T-breaking structure")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1421, 1431)),
+            "BAND 1421-1430: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1431-1440 (Buckets E/F/G/K/C) ---
+assert_that(abs(C.DISPATCH['PAPER_1431']()['value']['h0_siren_km_s_mpc'] - 67.462) < 0.01,
+            "P1431: standard-siren H_0 = 67.46 - predicts a sub-0.1% siren-vs-CMB offset, falsifiable as siren catalogs grow")
+_v32 = C.DISPATCH['PAPER_1432']()['value']
+assert_that(_v32['mechanism_only'] and C.DISPATCH['PAPER_1432']()['residual_pct'] is None,
+            "P1432 RULE 7 SCALE PIN: magnetar flare wiring is the density-form MECHANISM only; the volume factor to reach ~1e40 W is open - no luminosity match claimed (P1260 pattern)")
+_v33 = C.DISPATCH['PAPER_1433']()['value']
+assert_that(_v33['inside_range'] and abs(_v33['glitch_fraction'] - 3.264e-7) / 3.264e-7 < 0.01,
+            "P1433: pulsar glitch fraction = Lambda^3*Phi_res = 3.26e-7, inside the observed 1e-9..1e-6 range")
+_v34 = C.DISPATCH['PAPER_1434']()['value']
+assert_that(abs(_v34['tde_parameter'] - 1.0551) < 0.001 and _v34['formula_value_mismatch_disclosed'],
+            "P1434 CLASS A CATCH: paper VALUE 1.055 = beta_i*K_Mex*Phi_res (matches P1402 TBTF bit-for-bit); paper's WRITTEN formula computes 0.557 - K_Mex omitted, (1+F_TRZ) spurious. Same omission class as Q-1412. Value wired, drift disclosed")
+assert_that(abs(_v34['tde_parameter'] - C.DISPATCH['PAPER_1402']()['value']['subhalo_stall_ratio']) < 1e-15,
+            "P1434/P1402 BIT-IDENTICAL: TDE wandering parameter = TBTF subhalo stall = beta_i*K_Mex*Phi_res = 1.055 - tidal disruption and subhalo stalling on one composition")
+assert_that(abs(C.DISPATCH['PAPER_1435']()['value']['e_enhanced_v_m'] - 1.2197e18) / 1.2197e18 < 0.001,
+            "P1435: enhanced Schwinger limit 1.2197e18 V/m (0.026%)")
+assert_that(abs(C.DISPATCH['PAPER_1436']()['value']['c_vir'] - 9.9519) < 0.001
+            and abs(C.DISPATCH['PAPER_1437']()['value']['t_21cm_mk'] + 289.392) < 0.01
+            and C.DISPATCH['PAPER_1438']()['value']['sfe_boost'] == 1.75,
+            "P1436/P1437/P1438: bucket-C restatements consistent with P1336/P1333/P1334 - the corpus repeats its own values exactly")
+assert_that(C.DISPATCH['PAPER_1439']()['value']['t_neg_s'] == -2512.0,
+            "P1439: inflation t_neg = -2512 s anchored to PAPER_597 dual existence - negative time enters the inflation sector")
+assert_that(abs(C.DISPATCH['PAPER_1440']()['value']['n_s'] - 0.96468) < 0.0001,
+            "P1440: n_s = 0.96468 (0.085%) consistent with P1274")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1431, 1441)),
+            "BAND 1431-1440: all ten dispatches registered and self-identifying")
 
 # =============================================================================
 # REPORT

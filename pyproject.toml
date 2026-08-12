@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.369.1"
-description = "UQFF pure calculator v0.369.1 - REGISTRY-LEDGER CORRECTION to v0.369.0. The paradox-suite band shipped touching only 4 of the registry family; MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO carried no band trail. All 8 ledgers now carry it, including Rule 7 disclosures into GAPS (P1377 L-route 5.45%; P1391 HBT 3% deficit as PREDICTION) and an explicit NO_NEW_RULINGS row. SHIP GUARD v4 pins the band trail inside the gate. Gate 4,585 green."
+version = "0.370.0"
+description = "UQFF pure calculator v0.370.0 - bands PAPER_1401-1440 (40 dispatches). Q-1412 CLOSED by self-rectification: z_reion = K_Mex*D_phys*Phi_res*(1+1/SO_5) = 7.70 EXACT, the omitted successor ratio supplied by PAPER_1332. Bit-identical crossings pinned (RC diversity = QGP R_AA; TDE = TBTF stall); F_TRZ*beta_i spans nine sectors; negative time enters inflation (t_neg = -2512 s). KOTO no-anomaly and sub-0.1% siren-H_0 offset predictions. Gate 4,626 green / 1,457 dispatches."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

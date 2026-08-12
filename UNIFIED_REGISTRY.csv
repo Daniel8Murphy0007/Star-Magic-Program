@@ -5673,3 +5673,43 @@ two_envelopes_asymmetry,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,mathematics
 sleeping_beauty_p,WHITEPAPER,derived,,,0.3333,1/3 EXACT,0.0,mathematics,,PAPER_1398,,,,,,WIRED
 doomsday_generations,WHITEPAPER,derived,,,240,A_5*D_phys EXACT,0.0,foundations,,PAPER_1399,,,,,,WIRED
 theseus_identity,WHITEPAPER,derived,,,preserved,F_U=1,0.0,foundations,,PAPER_1400,,,,,,WIRED
+missing_satellites_n,WHITEPAPER,derived,,,54.545,~50 observed,9.091,cosmology,,PAPER_1401,,,,,,WIRED
+tbtf_stall_ratio,WHITEPAPER,derived,,,1.0551,just above unity,0.0,cosmology,,PAPER_1402,,,,,,WIRED
+calculator_master_index,WHITEPAPER,derived,,,catalogue,index record,,meta,,PAPER_1403,,,,,,WIRED
+solar_nu_survival,WHITEPAPER,derived,,,0.33333,1/3 EXACT,0.0,particle,,PAPER_1404,,,,,,WIRED
+hale_cycle_yr,WHITEPAPER,derived,,,22,D_crit-D_phys EXACT,0.0,astro,,PAPER_1405,,,,,,WIRED
+monty_hall_p_switch,WHITEPAPER,derived,,,0.66667,2/3 EXACT,0.0,mathematics,,PAPER_1406,,,,,,WIRED
+szilard_ln2,WHITEPAPER,derived,,,0.69315,ln 2 EXACT,0.0,foundations,,PAPER_1407,,,,,,WIRED
+bertrand_p_quarter,WHITEPAPER,derived,,,0.25,1/D_phys EXACT,0.0,mathematics,,PAPER_1408,,,,,,WIRED
+quark_generations,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,particle,,PAPER_1409,,,,,,WIRED
+pop_iii_char_mass,WHITEPAPER,derived,,,100.0,A_5*5/3 EXACT,0.0,astro,,PAPER_1410,,,,,,WIRED
+delta_cp_restate,WHITEPAPER,derived,,,-1.5708,-pi/2 EXACT,0.0,particle,,PAPER_1411,,,,,,WIRED
+z_reion_exact,WHITEPAPER,derived,,,7.70,7.70 EXACT (Q-1412 closed),0.0,cosmology,,PAPER_1412,,,,,,WIRED
+su3_colors,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,particle,,PAPER_1413,,,,,,WIRED
+cdf_w_anomaly_mev,WHITEPAPER,derived,,,74.26,CDF 76 MeV,2.286,particle,,PAPER_1414,,,,,,WIRED
+br_h_invisible,WHITEPAPER,derived,,,0.0657,ATLAS <0.107,0.0,particle,,PAPER_1415,,,,,,WIRED
+qgp_r_aa,WHITEPAPER,derived,,,0.2083,PbPb 0.20,4.167,particle,,PAPER_1416,,,,,,WIRED
+cfl_gap_mev,WHITEPAPER,derived,,,109.9,10-100 MeV range edge,,particle,,PAPER_1417,,,,,,WIRED
+cr_ankle_ev,WHITEPAPER,derived,,,3.616e18,Auger 3e18,20.541,astro,,PAPER_1418,,,,,,WIRED
+crab_tev_cutoff,WHITEPAPER,derived,,,79.26,HESS 80 TeV,0.924,astro,,PAPER_1419,,,,,,WIRED
+w_de_evolving,WHITEPAPER,derived,,,-0.9435,SS3 table; erratum OPEN,0.0,cosmology,,PAPER_1420,,,,,,WIRED
+t_cnub_k,WHITEPAPER,derived,,,1.9536,1.945 implied,0.441,cosmology,,PAPER_1421,,,,,,WIRED
+baryons_visible_fraction,WHITEPAPER,derived,,,0.4539,~0.5,9.229,cosmology,,PAPER_1422,,,,,,WIRED
+g_dwarf_fraction,WHITEPAPER,derived,,,0.4522,~0.5,9.565,astro,,PAPER_1423,,,,,,WIRED
+rc_diversity,WHITEPAPER,derived,,,0.2083,= QGP R_AA,0.0,astro,,PAPER_1424,,,,,,WIRED
+r_k_universality,WHITEPAPER,derived,,,0.8541,LHCb 0.846,0.952,particle,,PAPER_1425,,,,,,WIRED
+r_d_universality,WHITEPAPER,derived,,,1.2919,HFLAV ~1.2,7.658,particle,,PAPER_1426,,,,,,WIRED
+koto_br,WHITEPAPER,derived,,,1.26e-11,< Grossman-Nir,0.0,particle,,PAPER_1427,,,,,,WIRED
+fcnc_suppression,WHITEPAPER,derived,,,8.97e-7,paper 15.4%,15.4,particle,,PAPER_1428,,,,,,WIRED
+t_violation,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,particle,,PAPER_1429,,,,,,WIRED
+gw_memory_fraction,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,gw,,PAPER_1430,,,,,,WIRED
+h0_siren_offset,WHITEPAPER,derived,,,67.462,sub-0.1% siren offset,0.092,gw,,PAPER_1431,,,,,,WIRED
+magnetar_flare_mechanism,WHITEPAPER,derived,,,density form,scale open,,astro,,PAPER_1432,,,,,,WIRED
+pulsar_glitch_fraction,WHITEPAPER,derived,,,3.264e-7,inside 1e-9..1e-6,0.0,astro,,PAPER_1433,,,,,,WIRED
+tde_wandering_parameter,WHITEPAPER,derived,,,1.0551,= P1402 TBTF,0.0,astro,,PAPER_1434,,,,,,WIRED
+schwinger_enhanced,WHITEPAPER,derived,,,1.2197e18,1.22e18,0.026,particle,,PAPER_1435,,,,,,WIRED
+halo_c_vir_restate,WHITEPAPER,derived,,,9.9519,9.95,0.019,astro,,PAPER_1436,,,,,,WIRED
+edges_21cm_restate,WHITEPAPER,derived,,,-289.392,-289 mK,0.136,cosmology,,PAPER_1437,,,,,,WIRED
+jwst_sfe_restate,WHITEPAPER,derived,,,1.75,7/4 EXACT,0.0,astro,,PAPER_1438,,,,,,WIRED
+inflation_t_neg_s,WHITEPAPER,derived,,,-2512,PAPER_597 anchor,0.0,cosmology,,PAPER_1439,,,,,,WIRED
+inflaton_n_s_restate,WHITEPAPER,derived,,,0.96468,Planck 0.9655,0.085,cosmology,,PAPER_1440,,,,,,WIRED
