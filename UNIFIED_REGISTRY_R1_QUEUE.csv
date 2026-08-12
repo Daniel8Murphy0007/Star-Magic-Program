@@ -35,3 +35,4 @@ Q-RULE4-TIER2,29 remaining Tier-2 envelopes (was 32; P1032/1038/1040 resolved),v
 Q-SHIP-BASELINE,"ship verifier MUST diff vs the immediately-preceding TAG, not an older one",v0.365.1,RESOLVED,,
 Q-RESERVOIR-SCOPE,288 closures unmined,v0.366.0,PENDING,,
 ORPHAN_PHYSICS_RESERVOIR,71 non-numbered .md files,6615 equation blocks,QUEUED,Q-ORPHAN-PHYSICS,v0.367.0
+BANDS_1371_1400,paradox suite,30 dispatches,NO_NEW_RULINGS,all closures read from source; zero OPEN_RULING added,v0.369.0

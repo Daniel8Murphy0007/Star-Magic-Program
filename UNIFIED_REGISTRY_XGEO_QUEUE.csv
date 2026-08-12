@@ -1614,3 +1614,4 @@ wd_mass_radius_exponent,stellar-structure,native-paper,DPM-common-block,alpha = 
 dust_buoyancy_primitive,ISM-dust,native-paper,DPM-common-block,F_UBi/F_Epstein = 1 + F_TRZ*SSq,1.057,0.057 correction,PAPER_1032,"F_TRZ,SSQ",XGEO_CAMPAIGN_ROUTED,pure primitive product,PAPER_1032
 kepler_hilbert18,geometry,native-paper,DPM-common-block,pi/sqrt(D_BSFG(D_phys-1)),0.74048048969,pi/sqrt18 BIT-EXACT,RESERVOIR,"D_BSFG,D_PHYS",XGEO_CAMPAIGN_ROUTED,Hilbert 18th from two integer primitives,PAPER_1205
 BAND_1251_1300,n/a,n/a,NOT_APPLICABLE,band dispatches are single-geometry closures,v0.367.0
+BANDS_1371_1400,n/a,n/a,NOT_APPLICABLE,single-geometry paradox closures,v0.369.0

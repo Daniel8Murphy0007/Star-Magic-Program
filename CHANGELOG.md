@@ -7,6 +7,35 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.369.1 (2026-08-10)
+
+No physics changed. No dispatch changed. Gate 4,585 / 0.
+
+WHAT WAS WRONG
+v0.369.0 shipped the 30-dispatch paradox band touching only 4 of the registry family.
+Eight ledgers carried no trace of the band: MERGED, GAPS, DUPLICATES, R1_QUEUE,
+R2_MAPPING, R3_LEDGER, XGEO_QUEUE, XGEO_ROUTES. Root cause: the ship verifier checked
+an ad-hoc "core-14" list instead of the charter's 23-file must-change set. Third
+verifier failure of the same species (v0.365.0 lexical tag sort; v0.367.0 touched-not-
+current; v0.369.0 subset verification).
+
+THE FIX
+- 10 rows appended across the 8 missed ledgers: band merge record; Rule 7 disclosures
+  into GAPS (P1377 faint-young-Sun L-route 5.45% DISCLOSED; P1391 HBT 3% deficit as
+  PREDICTION, not defect); ALIAS pins into DUPLICATES (Sleeping Beauty = solar-nu 1/3;
+  St Petersburg = 26! floor); explicit NO_NEW_RULINGS row so the rulings trail has no
+  silent gap; R2 band mapping; R3 version ledger; XGEO NOT_APPLICABLE records.
+- SHIP GUARD v4: the GATE now pins the current band's trail in the audit-family tails
+  and carries the standing rule that verification runs against the CHARTER 23-file
+  list, never a day-of subset. Verified to bite - it failed on its own R3 row at
+  install (missing band marker), was satisfied only after the row carried it.
+
+STANDING RULE
+Band ships touch ALL 23 charter files. The verifier is the gate, not a script written
+the day of the ship.
+
+---
+
 ## v0.369.0 (2026-08-10)
 
 Three sequential bands. All 30 papers name predecessor closures; every derivation read

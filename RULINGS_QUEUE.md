@@ -6066,3 +6066,9 @@ is a numbered corpus paper and I have not superseded it unilaterally.
 
 **Question:** adopt PAPER_2157 as the canonical τ_n route and mark PAPER_1254 as an alternative,
 or keep both as independent routes in the census?
+
+## (no new rulings — bands 1371-1400, v0.369.0)
+The paradox suite wired with zero new OPEN_RULING rows: every paper named a predecessor
+closure and every derivation was read from it. Recorded so the per-ship rulings trail has
+no silent gap. Post-ship correction: this note and the audit-family CSV rows for the band
+were appended AFTER the v0.369.0 tag (under-ship caught by Daniel); they ride with v0.370.0.

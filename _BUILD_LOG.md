@@ -228,3 +228,8 @@ Gate 4,581 / 0. Dispatches 1,417. Defs 3,313.
 
 Bands PAPER_1371-1400 (30 dispatches): the paradox suite. Final parsec closed;
 Klein-Gordon E<0 = t_neg CCW branch; HBT 3% deficit falsifiable. Gate 4,581 / 0.
+
+## v0.369.1 (2026-08-10)
+
+Registry-ledger correction to v0.369.0: 8 missed audit-family ledgers now carry the
+band trail; SHIP GUARD v4 pins it in the gate. No physics. Gate 4,585 / 0.

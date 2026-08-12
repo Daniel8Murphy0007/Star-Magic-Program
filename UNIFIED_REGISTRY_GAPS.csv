@@ -97,3 +97,5 @@ f_u_bi_2_11e208_phantom,PAPER_250/251/252/254/258,n/a,no computational source in
 m_t_over_m_e,PAPER_1314,n/a,no closed form supplied; order statement only,OPEN,v0.367.1
 s26_variant_theta_qcd,PAPER_1315,26 orders,requires S_26^(3)=1.4531e26 not S_26=1.453162,VARIANT_CATCH,v0.367.1
 jamming_formula_paste,PAPER_1355,n/a,"paper prints P1354 formula (D_phys-1)/D_phys next to value 2/3; value correct, formula wrong",CLASS_A_CATCH,v0.367.1
+faint_young_sun_l_route,PAPER_1377,5.45,L-route 1+beta_i*Phi_res=1.5064 vs required 1.4286; T-route (0.85%) is the carrying form,DISCLOSED,v0.369.0
+hbt_g2_deficit,PAPER_1391,3.0,"g(2)=1.9397 vs classical 2.0 - FALSIFIABLE prediction, not a defect",PREDICTION,v0.369.0

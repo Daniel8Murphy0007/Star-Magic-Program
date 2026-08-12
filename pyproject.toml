@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.369.0"
-description = "UQFF pure calculator v0.369.0 - bands PAPER_1371-1400: the paradox suite (30 dispatches, every derivation read from its named closure). FINAL PARSEC CLOSED (stall reduction D_crit*K_Mex*Phi_res = 45.50); Klein paradox T = 3.94e-4 with its 626 eV threshold = the PAPER_648 Coulomb pair energy; Klein-Gordon E<0 IS the t_neg CCW branch; trans-Planckian dissolved (6.76e-32); HBT g(2) = 1.9397 falsifiable 3% deficit. Gate 4,581 green / 1,417 dispatches."
+version = "0.369.1"
+description = "UQFF pure calculator v0.369.1 - REGISTRY-LEDGER CORRECTION to v0.369.0. The paradox-suite band shipped touching only 4 of the registry family; MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO carried no band trail. All 8 ledgers now carry it, including Rule 7 disclosures into GAPS (P1377 L-route 5.45%; P1391 HBT 3% deficit as PREDICTION) and an explicit NO_NEW_RULINGS row. SHIP GUARD v4 pins the band trail inside the gate. Gate 4,585 green."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

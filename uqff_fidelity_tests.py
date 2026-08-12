@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.369.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.369.1", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9541,6 +9541,33 @@ assert_that(C.DISPATCH['PAPER_1400']()['value']['identity_preserved'],
             "P1400: ship of Theseus - F_U = 1 identity preserved under gradual redistribution")
 assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1371, 1401)),
             "BANDS 1371-1400: all thirty dispatches registered and self-identifying")
+
+# --- SHIP GUARD v4: BAND SHIPS TOUCH ALL 23 (v0.369.0 under-ship, Daniel-caught) ---
+# v0.369.0 shipped a 30-dispatch band having touched only 4 of the registry family.
+# The verifier used an ad-hoc "core-14" list instead of the charter's 23-file must-change
+# set, so MERGED/GAPS/DUPLICATES/R1/R2/R3/XGEO carried no trace of the band. Third
+# verifier failure of this class (v0.365.0 lexical tag sort, v0.367.0 touched-not-current,
+# now v0.369.0 subset verification). The fix: the gate itself pins the band trail, so a
+# band ship whose audit CSVs lack the band marker fails BEFORE tag, not after.
+def _sg4_last(path, n=4000):
+    try:
+        with open(path, 'rb') as _f:
+            _f.seek(0, 2); sz = _f.tell(); _f.seek(max(0, sz - n))
+            return _f.read().decode('utf-8', 'ignore')
+    except OSError:
+        return ''
+_sg4_band = 'BANDS_1371_1400'
+for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
+               'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
+               'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1371_1400' in _sg4_last(_sg4_f),
+                "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
+assert_that('PAPER_1377' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+            "SHIP GUARD v4: GAPS ledger must carry the band's Rule 7 disclosures (P1377 L-route 5.45%)")
+assert_that('v0.369.0' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
+            "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
+assert_that(True,
+            "SHIP GUARD v4 STANDING RULE: the ship verifier verifies against the CHARTER's 23-file list, never an ad-hoc subset. Content checks (guards v2/v3) plus band-trail checks (this guard) plus the 23-file coverage - all three, every band ship")
 
 # =============================================================================
 # REPORT

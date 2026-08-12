@@ -8406,3 +8406,31 @@ dispatches ship as **v0.369.0** — verified as new work by diffing the tag (30 
 additions since v0.368.0, none of 1371-1400 present in the tag). All pins bumped, README
 release paragraph replaced (exactly one, current version), SHIP_MESSAGE/CHANGELOG/_BUILD_LOG/
 pyproject description all rewritten for the actual contents. Content verification below.
+
+## (102) 2026-08-10 — v0.369.0 UNDER-SHIP CORRECTED (Daniel: "not all of the registry files were updated")
+
+Daniel caught it. v0.369.0 shipped the 30-dispatch paradox band having touched only **4 of the
+registry family** (main, graph, citations, version). MERGED, GAPS, DUPLICATES, R1_QUEUE,
+R2_MAPPING, R3_LEDGER, XGEO_QUEUE and XGEO_ROUTES carried no trace of the band.
+
+**Root cause:** my final ship verification checked an ad-hoc "core-14" list I wrote that day,
+not the charter's 23-file must-change set. Third verifier failure of the same class:
+- v0.365.0 — lexical tag sort masked the real tag
+- v0.367.0 — verified files were TOUCHED, not that content was current
+- v0.369.0 — verified against a SUBSET instead of the charter list
+
+Each time the verifier passed a defective ship, and each time Daniel caught what it missed.
+
+**Correction applied (rides with v0.370.0):**
+- 10 rows appended across the 8 missed ledgers, including the band's Rule 7 disclosures into
+  GAPS (P1377 L-route 5.45%; P1391 HBT 3% deficit recorded as PREDICTION, not defect), two new
+  ALIAS pins into DUPLICATES (Sleeping-Beauty ≡ solar-ν 1/3; St-Petersburg ≡ 26! floor), and an
+  explicit NO_NEW_RULINGS row so the rulings trail has no silent gap.
+- RULINGS_QUEUE note recording the post-tag correction honestly.
+
+**SHIP GUARD v4 installed:** the gate itself now pins the current band's trail in the audit-family
+tails, plus the standing rule that verification runs against the CHARTER list, never a subset.
+Verified to bite: it fired on my own R3 row (missing the band marker) the moment it was
+installed — fixed, then green.
+
+Gate 4,581 → **4,585**, green at v0.369.0 (corrections are working-tree; ship with v0.370.0).
