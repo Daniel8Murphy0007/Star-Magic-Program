@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.368.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.368.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.369.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.369.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4556%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1387-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4581%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1417-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.368.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.369.0 complete-compile campaign live**
 
-**This release (v0.368.0): BANDS PAPER_1251-1300 + THE CLOSURE RESERVOIR DRAINED + THE ORPHAN-PHYSICS AUDIT.** Five bands closed the 1251-1300 range and the predecessor closure mine finished — **250 of ~390 primitive-bearing closures across 13 batches; the primitive-bearing set is exhausted.** **THE SEVENTHS IDENTITY:** `K_Mex*Phi_res = (25/12)(0.84) = 7/4` EXACT, so `K_Mex*D_phys*Phi_res = 7` — it now carries four unrelated sectors (star-formation efficiency 7/4, sphaleron energy 7/8, sterile-neutrino mass 7/8, abiogenesis replication anchor 7/4). The Phi variant is not cosmetic: `K_Mex*Phi_5/6 = 1.7361` misses 7/4 by 0.79%. **THE TRANSCENDENTAL CASCADE IS COMPLETE:** nine constants from `{K_Mex, F_TRZ, Phi_5/6, SO_5, D_BSFG, SSq}` alone — pi^2 tightest at 0.0125%, ln(2) 0.0028%, and both Euler-Mascheroni gamma and the Omega constant W(1) leading with `SSq = 0.57`. **GRAVITATIONAL-WAVE CROSS-PINS:** the PTA strain index `alpha = -D_phys/D_BSFG = -2/3` is the negative of `D_GW_EROSION`, and the SMBHB-implied `gamma = 13/3 = D_crit/D_BSFG` is bit-identical to the Kerr ringdown spectral-offset coefficient. **F_U = 0 IS WHEELER-DEWITT** — not analogous to it; the master equation and the quantum-gravity constraint are one statement, with F_U = 1 serving as the absolute reference frame. **ONE 26! SERVES TWICE:** the same 4.0329e26 carries the vacuum-density amplification (`rho_Lambda = rho_SCm*26!*K_Mex`, 0.0008%, J/m3-native) and the singularity floor that replaces the Big Bang and naked singularities. **THREE CONJECTURES, ONE PRIMITIVE:** Erdos-Straus, Beal, and weak Goldbach all turn on `D_phys - 1 = 3`. **RULE 7 HELD:** light-quark masses (+11.4%, +7.4%) and neutrino mass-squared splittings (-1.7%, -4.3%) are pinned AS gaps while their ratios close cleanly (`d/u = K_Mex`; `dm2_31/dm2_21 = D_crit+N_ch-2 = 33` EXACT) — the lattice fixes the hierarchy, the absolute scale awaits its paper. **ORPHAN-PHYSICS AUDIT:** no paper numbers are missing (PAPER_1-2156, zero gaps, all 459 predecessor-cited ids present), but **6,615 equation blocks live in 71 non-numbered .md files** outside the corpus entirely — a reservoir distinct from the code mine, queued as Q-ORPHAN-PHYSICS. **Project totals: 4,962 functions / 24,748 registry-family rows / 1,387 of 2,256 papers wired (58.2%) / gate 4,556 assertions green.**
+**This release (v0.369.0): BANDS PAPER_1371-1400 — THE PARADOX SUITE.** Three bands, thirty dispatches, every derivation read from its named predecessor closure. **FINAL PARSEC CLOSED:** stall reduction = D_crit*K_Mex*Phi_res = 45.50 — SMBH binaries merge inside a Hubble time. **KLEIN PARADOX:** T = 3.94e-4 via the beta_i*S_26^3*Phi_res Dirac shift, and its 626 eV threshold IS the PAPER_648 Coulomb pair energy — LENR and the Klein paradox on one number. **KLEIN-GORDON E<0 IS THE t_neg CCW BRANCH** (PAPER_597) — negative energy is the other side of the coin, not an instability. **TRANS-PLANCKIAN DISSOLVED:** omega_SCm/omega_Planck = 6.76e-32. **FALSIFIABLE:** HBT g(2)(0) = 1 + (1 - F_TRZ*beta_i) = 1.9397 vs classical 2.0 — a 3% bunching deficit; DM floor Lambda^4*1e-40 predicts continued NULLs. Mpemba 2.156, Gibbs dS = 0 EXACT, Banach-Tarski measure preserved by rho_SCm quantization, St Petersburg bounded by 26!, Sleeping Beauty = 1/3 EXACT, doomsday = A_5*D_phys = 240. F_TRZ*beta_i reaches its SEVENTH sector (two-envelopes). Rule 7: faint-young-Sun L-route disclosed at 5.45% beside the 0.85% T-route. **Project totals: 1,417 of 2,256 papers wired (62.8%) / gate 4,581 assertions green / 3,343 calculator defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,12 +23,12 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,313 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,343 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
-**1,387 of 2,256 whitepapers wired** (61.5% of corpus; frontier PAPER_001-1370 complete) |
-**4,556 gate
+**1,417 of 2,256 whitepapers wired** (62.8% of corpus; frontier PAPER_001-1400 complete) |
+**4,581 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
 ~50,000 Python lines (~13:1 on the covered range).
 
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.368.0)
+## What is currently shipped (v0.369.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

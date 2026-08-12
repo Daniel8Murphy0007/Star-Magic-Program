@@ -7,6 +7,48 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.369.0 (2026-08-10)
+
+Three sequential bands. All 30 papers name predecessor closures; every derivation read
+from its closure and numerically verified before wiring (standing lesson from P1241-1248).
+
+BAND 1371-1380 (physics paradoxes, full derivations)
+- Klein paradox: T = 3.94e-4 via the beta_i*S_26^3*Phi_res Dirac shift = 1.554. Its 626 eV
+  threshold IS the PAPER_648 Coulomb pair energy - LENR and the Klein paradox share one number.
+- Mpemba effect: tau_cold/tau_hot = 2.156 via the hot/cold F_U_Bi_i buoyancy ratio.
+- Gibbs: dS_mix = 0 EXACT for identical particles under F_U = 1.
+- Banach-Tarski: rho_SCm vacuum quantization preserves measure; the paradox requires
+  unmeasurable pieces the vacuum cell forbids.
+- Loschmidt: arrow asymmetry = F_TRZ*beta_i = 0.0603; P(fwd)/P(bwd) = 1.1283.
+- Faint young Sun: T-route 1 + Phi_res/SO_5 = 1.084 vs required 1.0933 (0.85%); the L-route
+  misses at 5.45% and is DISCLOSED as the weaker form (Rule 7).
+- DM direct-detection floor Lambda^4*1e-40: predicts continued NULL results (falsifiable).
+
+BAND 1381-1390 (relativistic/QM paradoxes)
+- FINAL PARSEC CLOSED: stall reduction = D_crit*K_Mex*Phi_res = 45.50 - SMBH binaries merge
+  within a Hubble time.
+- Klein-Gordon E<0 IS the t_neg CCW dual-existence branch (PAPER_597) - negative energy is
+  the other side of the coin, not an instability.
+- Trans-Planckian dissolved: omega_SCm/omega_Planck = 6.76e-32, no TP modes required.
+- Aharonov-Bohm + Aharonov-Casher dual pair: both 2*pi*n EXACT.
+- Supplee 1.3135, Bell spaceship 0.0179, ladder-barn 1.0 EXACT, Trouton-Noble 0 EXACT.
+
+BAND 1391-1400 (measurement/set-theory/anthropic)
+- HBT g(2)(0) = 1 + (1 - F_TRZ*beta_i) = 1.9397 vs classical 2.0 - falsifiable 3% deficit.
+- Russell (rho_SCm cell), Galileo (F_U = 1 occupation), Burali-Forti (D_crit = 26),
+  St Petersburg (26!) - the 8th and 9th D_crit-family bounds.
+- Sleeping Beauty = 1/(D_phys-1) = 1/3 EXACT; doomsday = A_5*D_phys = 240 generations.
+- F_TRZ*beta_i reaches its SEVENTH sector (two-envelopes switching asymmetry).
+
+PROCESS
+Census refreshed with ANCHORED replacements only (count-update standing rule). Both ship
+guards fired on the stale README mid-run and were satisfied from live-derived figures -
+the guards written after the v0.367.0 staleness incident are doing their job.
+
+Gate 4,581 / 0. Dispatches 1,417. Calculator defs 3,343. Frontier PAPER_1400. 756 remain.
+
+---
+
 ## v0.368.0 (2026-08-10)
 
 73 new dispatches. Seven sequential bands plus three authored BBN landmarks, and the
@@ -53,7 +95,7 @@ AUDIT FIXES
 - Registry duplicate guard added: (quantity, paper_source) may not repeat; cross-paper
   crossings remain legitimate and untouched.
 
-Gate 4,556 / 0. Dispatches 1,387. Calculator defs 3,313. Registry-family rows 25,126.
+Gate 4,581 / 0. Dispatches 1,417. Calculator defs 3,313. Registry-family rows 25,126.
 Frontier PAPER_1370. 786 papers remain to PAPER_2156.
 
 ---

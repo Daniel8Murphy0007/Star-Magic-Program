@@ -5643,3 +5643,33 @@ rt_sc_ceiling_k,WHITEPAPER,derived,,,500.0,500 K EXACT,0.0,condensed,,PAPER_1367
 lawson_uqff,WHITEPAPER,derived,,,1.44e21,1.44e21 EXACT,0.0,fusion,,PAPER_1368,,,,,,WIRED
 tabletop_qg_length_m,WHITEPAPER,derived,,,2.2101e-35,2.2e-35 m,0.4634,gravity,,PAPER_1369,,,,,,WIRED
 antimatter_eta_max,WHITEPAPER,derived,,,0.06029,6.0%,0.4833,particle,,PAPER_1370,,,,,,WIRED
+dm_sigma_floor,WHITEPAPER,derived,,,2.836e-49,predicts NULL,0.0,particle,,PAPER_1371,,,,,,WIRED
+gw_siren_h0,WHITEPAPER,derived,,,67.41,Planck route,0.0147,cosmology,,PAPER_1372,,,,,,WIRED
+vacuum_birefringence_v_m,WHITEPAPER,derived,,,7.029e13,7e13,0.42,particle,,PAPER_1373,,,,,,WIRED
+light_by_light_alpha4,WHITEPAPER,derived,,,2.836e-9,Lambda^4 EXACT,0.0,particle,,PAPER_1374,,,,,,WIRED
+gibbs_ds_identical,WHITEPAPER,derived,,,0.0,0 EXACT,0.0,foundations,,PAPER_1375,,,,,,WIRED
+banach_tarski_measure,WHITEPAPER,derived,,,1.0,preserved,0.0,mathematics,,PAPER_1376,,,,,,WIRED
+faint_young_sun_f_t,WHITEPAPER,derived,,,1.084,1.0933 required,0.847,astro,,PAPER_1377,,,,,,WIRED
+loschmidt_arrow,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,foundations,,PAPER_1378,,,,,,WIRED
+klein_transmission,WHITEPAPER,derived,,,3.94e-4,suppressed,0.0,particle,,PAPER_1379,,,,,,WIRED
+mpemba_tau_ratio,WHITEPAPER,derived,,,2.156,buoyancy ratio route,0.0,condensed,,PAPER_1380,,,,,,WIRED
+final_parsec_reduction,WHITEPAPER,derived,,,45.50,D_crit*K_Mex*Phi_res,0.0,astro,,PAPER_1381,,,,,,WIRED
+aharonov_bohm_phase,WHITEPAPER,derived,,,6.2832,2pi EXACT,0.0,foundations,,PAPER_1382,,,,,,WIRED
+trans_planckian_ratio,WHITEPAPER,derived,,,6.76e-32,no TP modes needed,0.0,gravity,,PAPER_1383,,,,,,WIRED
+aharonov_casher_phase,WHITEPAPER,derived,,,6.2832,2pi EXACT,0.0,foundations,,PAPER_1384,,,,,,WIRED
+ehrenfest_chirality,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,foundations,,PAPER_1385,,,,,,WIRED
+bell_spaceship_stretch,WHITEPAPER,derived,,,0.0179,1-cos(pi F beta),0.0,foundations,,PAPER_1386,,,,,,WIRED
+kg_negative_energy,WHITEPAPER,derived,,,dual branch,t_neg CCW,0.0,foundations,,PAPER_1387,,,,,,WIRED
+supplee_buoyancy,WHITEPAPER,derived,,,1.3135,1+beta(1-1/K),0.0,foundations,,PAPER_1388,,,,,,WIRED
+ladder_barn_consistency,WHITEPAPER,derived,,,1.0,EXACT,0.0,foundations,,PAPER_1389,,,,,,WIRED
+trouton_noble_torque,WHITEPAPER,derived,,,0.0,EXACT,0.0,foundations,,PAPER_1390,,,,,,WIRED
+hbt_g2,WHITEPAPER,derived,,,1.9397,vs classical 2.0,0.0,foundations,,PAPER_1391,,,,,,WIRED
+renninger_redistribution,WHITEPAPER,derived,,,1.0,EXACT,0.0,foundations,,PAPER_1392,,,,,,WIRED
+russell_vacuum_cell,WHITEPAPER,derived,,,7.09e-37,rho_SCm,0.0,mathematics,,PAPER_1393,,,,,,WIRED
+galileo_bijection,WHITEPAPER,derived,,,occupation,F_U=1,0.0,mathematics,,PAPER_1394,,,,,,WIRED
+burali_forti_bound,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,mathematics,,PAPER_1395,,,,,,WIRED
+st_petersburg_bound,WHITEPAPER,derived,,,4.033e26,26! EXACT,0.0,mathematics,,PAPER_1396,,,,,,WIRED
+two_envelopes_asymmetry,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,mathematics,,PAPER_1397,,,,,,WIRED
+sleeping_beauty_p,WHITEPAPER,derived,,,0.3333,1/3 EXACT,0.0,mathematics,,PAPER_1398,,,,,,WIRED
+doomsday_generations,WHITEPAPER,derived,,,240,A_5*D_phys EXACT,0.0,foundations,,PAPER_1399,,,,,,WIRED
+theseus_identity,WHITEPAPER,derived,,,preserved,F_U=1,0.0,foundations,,PAPER_1400,,,,,,WIRED

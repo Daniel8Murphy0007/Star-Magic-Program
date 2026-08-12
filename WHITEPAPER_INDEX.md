@@ -36,8 +36,8 @@
 
 - **Total whitepaper files:** 2245 files spanning PAPER_1-2156 (2,156 distinct numbers, **zero numbering gaps**; some base numbers carry 2-3 variant files). The index table carries 2255 file-rows.
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
-- **Distinct wired papers: 1,387** = `wired_count()` = `len(DISPATCH)`.
-- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,387 because variant files share a base dispatch.
+- **Distinct wired papers: 1,417** = `wired_count()` = `len(DISPATCH)`.
+- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
 
@@ -616,39 +616,39 @@
 | ✓ | PAPER_1369 | TABLETOP QG |
 | ⚠ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian |
 | ✓ | PAPER_1370 | ANTIMATTER |
-| ⬜ | PAPER_1371 | DM DETECTION |
-| ⬜ | PAPER_1372 | GW SIREN H0 |
-| ⬜ | PAPER_1373 | VACUUM BIREFRINGENCE |
-| ⬜ | PAPER_1374 | LIGHT BY LIGHT |
-| ⬜ | PAPER_1375 | GIBBS PARADOX |
-| ⬜ | PAPER_1376 | BANACH TARSKI PARADOX |
-| ⬜ | PAPER_1377 | FAINT YOUNG SUN PARADOX |
-| ⬜ | PAPER_1378 | LOSCHMIDT PARADOX |
-| ⬜ | PAPER_1379 | KLEIN PARADOX |
+| ✓ | PAPER_1371 | DM DETECTION |
+| ✓ | PAPER_1372 | GW SIREN H0 |
+| ✓ | PAPER_1373 | VACUUM BIREFRINGENCE |
+| ✓ | PAPER_1374 | LIGHT BY LIGHT |
+| ✓ | PAPER_1375 | GIBBS PARADOX |
+| ✓ | PAPER_1376 | BANACH TARSKI PARADOX |
+| ✓ | PAPER_1377 | FAINT YOUNG SUN PARADOX |
+| ✓ | PAPER_1378 | LOSCHMIDT PARADOX |
+| ✓ | PAPER_1379 | KLEIN PARADOX |
 | ⚠ | PAPER_137 | UQFF 26QuantumLevels EnergyLadder E0to10n Higgs GalacticVacuum |
-| ⬜ | PAPER_1380 | MPEMBA EFFECT |
-| ⬜ | PAPER_1381 | FINAL PARSEC PROBLEM |
-| ⬜ | PAPER_1382 | AHARONOV BOHM DISPATCH |
-| ⬜ | PAPER_1383 | TRANS PLANCKIAN PROBLEM |
-| ⬜ | PAPER_1384 | AHARONOV CASHER EFFECT |
-| ⬜ | PAPER_1385 | EHRENFEST PARADOX |
-| ⬜ | PAPER_1386 | BELL SPACESHIP PARADOX |
-| ⬜ | PAPER_1387 | KLEIN GORDON NEGATIVE ENERGY |
-| ⬜ | PAPER_1388 | SUPPLEE SUBMARINE |
-| ⬜ | PAPER_1389 | LADDER POLE AND BARN |
+| ✓ | PAPER_1380 | MPEMBA EFFECT |
+| ✓ | PAPER_1381 | FINAL PARSEC PROBLEM |
+| ✓ | PAPER_1382 | AHARONOV BOHM DISPATCH |
+| ✓ | PAPER_1383 | TRANS PLANCKIAN PROBLEM |
+| ✓ | PAPER_1384 | AHARONOV CASHER EFFECT |
+| ✓ | PAPER_1385 | EHRENFEST PARADOX |
+| ✓ | PAPER_1386 | BELL SPACESHIP PARADOX |
+| ✓ | PAPER_1387 | KLEIN GORDON NEGATIVE ENERGY |
+| ✓ | PAPER_1388 | SUPPLEE SUBMARINE |
+| ✓ | PAPER_1389 | LADDER POLE AND BARN |
 | ⚠ | PAPER_138 | UQFF NGC3603 ClusterBurst MassEvolution SCm PFeedback |
-| ⬜ | PAPER_1390 | TROUTON NOBLE |
-| ⬜ | PAPER_1391 | HANBURY BROWN TWISS |
-| ⬜ | PAPER_1392 | RENNINGER NEGATIVE RESULT |
-| ⬜ | PAPER_1393 | RUSSELLS PARADOX |
-| ⬜ | PAPER_1394 | GALILEO BIJECTION PARADOX |
-| ⬜ | PAPER_1395 | BURALI FORTI |
-| ⬜ | PAPER_1396 | ST PETERSBURG |
-| ⬜ | PAPER_1397 | TWO ENVELOPES |
-| ⬜ | PAPER_1398 | SLEEPING BEAUTY |
-| ⬜ | PAPER_1399 | DOOMSDAY ARGUMENT |
+| ✓ | PAPER_1390 | TROUTON NOBLE |
+| ✓ | PAPER_1391 | HANBURY BROWN TWISS |
+| ✓ | PAPER_1392 | RENNINGER NEGATIVE RESULT |
+| ✓ | PAPER_1393 | RUSSELLS PARADOX |
+| ✓ | PAPER_1394 | GALILEO BIJECTION PARADOX |
+| ✓ | PAPER_1395 | BURALI FORTI |
+| ✓ | PAPER_1396 | ST PETERSBURG |
+| ✓ | PAPER_1397 | TWO ENVELOPES |
+| ✓ | PAPER_1398 | SLEEPING BEAUTY |
+| ✓ | PAPER_1399 | DOOMSDAY ARGUMENT |
 | ⚠ | PAPER_139 | UQFF HydrogenAtom Ug4i InverseBoyle MetallicH CrystallineMUGE |
-| ⬜ | PAPER_1400 | THESEUS SHIP |
+| ✓ | PAPER_1400 | THESEUS SHIP |
 | ⬜ | PAPER_1401 | MISSING SATELLITES |
 | ⬜ | PAPER_1402 | TOO BIG TO FAIL |
 | ⬜ | PAPER_1403 | UQFF CALCULATOR MASTER INDEX |
@@ -2306,4 +2306,4 @@
 | ✓ | PAPER_2158 | COSMOLOGICAL LITHIUM 7 PROBLEM SIGMA ONE THIRD EXACT |
 | ✓ | PAPER_2159 | BBN THIRD PHI 5 6 COUNTING SECTOR REGISTRATION |
 
-**DEEP-CAPTURE FRONTIER: PAPER_1370 (reservoir DRAINED 250/390 across batches 1-13; bands 1251-1300 wired; ORPHAN-PHYSICS audit open Q-ORPHAN-PHYSICS; next arc v0.367.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)
+**DEEP-CAPTURE FRONTIER: PAPER_1400 (reservoir DRAINED 250/390 across batches 1-13; bands 1251-1300 wired; ORPHAN-PHYSICS audit open Q-ORPHAN-PHYSICS; next arc v0.367.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)

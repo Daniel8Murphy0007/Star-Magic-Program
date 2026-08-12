@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.368.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.369.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9477,6 +9477,70 @@ _rd_pairs = _rdc.Counter((r.get('quantity',''), r.get('paper_source','')) for r 
 _rd_dupes = [k for k, v in _rd_pairs.items() if v > 1]
 assert_that(not _rd_dupes,
             "REGISTRY GUARD: no (quantity, paper_source) pair may repeat - same-source repeats are accidental double-writes, unlike cross-paper crossings which are legitimate and expected. Found: %s" % _rd_dupes[:5])
+
+# --- DEEP-CAPTURE GUARD: BANDS PAPER_1371-1400 (three bands) ---
+import math as _m14
+assert_that(C.DISPATCH['PAPER_1371']()['value']['predicts_null'],
+            "P1371: DM direct-detection floor Lambda^4*1e-40 - UQFF predicts continued NULL results, falsifiable by any confirmed WIMP detection")
+assert_that(abs(C.DISPATCH['PAPER_1372']()['value']['h0_km_s_mpc'] - 67.41) / 67.41 * 100 < 0.02,
+            "P1372: GW standard-siren H_0 = the canonical Planck-branch route 67.41")
+assert_that(abs(C.DISPATCH['PAPER_1373']()['value']['birefringence_threshold_v_per_m'] - 7e13) / 7e13 * 100 < 0.5,
+            "P1373: vacuum birefringence threshold = Lambda^2*E_Schwinger = 7.03e13 V/m (0.42%)")
+_v75 = C.DISPATCH['PAPER_1375']()['value']
+assert_that(_v75['ds_mix_identical'] == 0.0 and abs(_v75['ds_mix_distinguishable_per_nkb'] - 2.0 * _m14.log(2.0)) < 1e-12,
+            "P1375: Gibbs paradox - dS = 0 EXACT for identical particles under F_U = 1, 2Nk_B ln2 recovered for distinguishable")
+_v76 = C.DISPATCH['PAPER_1376']()['value']
+assert_that(_v76['volume_ratio_after_before'] == 1.0 and _v76['canonical_minimum_pieces'] == 5,
+            "P1376: Banach-Tarski - rho_SCm vacuum quantization preserves measure; the 5-piece decomposition needs unmeasurable sets the cell forbids")
+_v77 = C.DISPATCH['PAPER_1377']()['value']
+assert_that(abs(_v77['f_warm_t'] - 1.084) < 1e-9 and abs(_v77['f_warm_t'] - _v77['required_t']) / _v77['required_t'] * 100 < 1.0,
+            "P1377: faint young Sun T-compensation = 1 + Phi_res/SO_5 = 1.084 vs required (1/0.7)^(1/4) = 1.0933 (0.85%)")
+assert_that(abs(_v77['f_warm_l'] - _v77['required_l']) / _v77['required_l'] * 100 > 5.0,
+            "P1377 RULE 7: the L-route lands 5.45% off - DISCLOSED as the weaker of the two compensation forms, not hidden behind the T-route")
+_v78 = C.DISPATCH['PAPER_1378']()['value']
+assert_that(abs(_v78['arrow_asymmetry'] - C.F_TRZ * C.BETA_I) < 1e-15
+            and abs(_v78['p_forward_over_backward'] - 1.1283) < 0.001,
+            "P1378: Loschmidt arrow asymmetry = F_TRZ*beta_i; P(fwd)/P(bwd) = 1.1283 - time-reversal symmetry broken by the TRZ structurally")
+_v79 = C.DISPATCH['PAPER_1379']()['value']
+assert_that(abs(_v79['dirac_shift'] - 1.554) < 0.001 and abs(_v79['t_klein'] - 3.94e-4) / 3.94e-4 * 100 < 0.5,
+            "P1379: Klein paradox transmission = 3.94e-4 via the beta_i*S_26^3*Phi_res Dirac shift = 1.554 - and the 626 eV threshold is the PAPER_648 Coulomb pair energy")
+assert_that(abs(C.DISPATCH['PAPER_1380']()['value']['tau_cold_over_tau_hot'] - 2.156) / 2.156 * 100 < 0.1,
+            "P1380: Mpemba tau_cold/tau_hot = 2.156 via the hot/cold F_UBii buoyancy ratio")
+_v81 = C.DISPATCH['PAPER_1381']()['value']
+assert_that(abs(_v81['stall_reduction_factor'] - 45.50) < 0.01,
+            "P1381: final-parsec stall reduction = D_crit*K_Mex*Phi_res = 45.50 EXACT composition - SMBH binaries merge inside a Hubble time")
+assert_that(abs(C.DISPATCH['PAPER_1382']()['value']['phase_per_fluxon'] - 2.0 * _m14.pi) < 1e-12
+            and abs(C.DISPATCH['PAPER_1384']()['value']['phase'] - 2.0 * _m14.pi) < 1e-12,
+            "P1382/P1384: Aharonov-Bohm and Aharonov-Casher phases both 2*pi*n EXACT - the dual pair closes identically")
+assert_that(C.DISPATCH['PAPER_1383']()['value']['omega_ratio'] < 1e-31,
+            "P1383: omega_SCm/omega_Planck = 6.76e-32 - the SCm carrier needs NO trans-Planckian modes")
+assert_that(abs(C.DISPATCH['PAPER_1386']()['value']['string_stretch_fraction'] - 0.0179) < 0.0001,
+            "P1386: Bell spaceship stretch = 1 - cos(pi*F_TRZ*beta_i) = 0.0179")
+assert_that(C.DISPATCH['PAPER_1387']()['value']['e_neg_equals_e_pos_in_dual_branch'],
+            "P1387: Klein-Gordon E<0 branch IS the t_neg CCW dual-existence branch (PAPER_597) - negative energy is the other side of the coin, not an instability")
+assert_that(abs(C.DISPATCH['PAPER_1388']()['value']['buoyancy_correction'] - 1.3135) < 0.0001,
+            "P1388: Supplee submarine buoyancy correction = 1 + beta_i*(1 - 1/K_Mex) = 1.3135")
+assert_that(C.DISPATCH['PAPER_1389']()['value']['consistency_both_frames'] == 1.0
+            and C.DISPATCH['PAPER_1390']()['value']['net_torque'] == 0.0,
+            "P1389/P1390: ladder-barn frame consistency = 1 EXACT and Trouton-Noble torque = 0 EXACT - both via t_neg duality / F_U = 1 symmetry")
+_v91 = C.DISPATCH['PAPER_1391']()['value']
+assert_that(abs(_v91['g2_zero_delay'] - 1.9397) < 0.0001,
+            "P1391: HBT g(2)(0) = 1 + (1 - F_TRZ*beta_i) = 1.9397 vs classical 2.0 - a falsifiable 3% bunching deficit at high precision")
+assert_that(C.DISPATCH['PAPER_1392']()['value']['redistribution_fraction'] == 1.0,
+            "P1392: Renninger null-measurement - F_U = 1 redistributes amplitude exactly among surviving branches")
+assert_that(C.DISPATCH['PAPER_1395']()['value']['ordinal_bound'] == 26
+            and abs(C.DISPATCH['PAPER_1396']()['value']['expectation_bound'] - float(_m14.factorial(26))) < 1.0,
+            "P1395/P1396: Burali-Forti bounded by D_crit = 26; St Petersburg bounded by 26! - the EIGHTH and NINTH problems taking the D_crit-family bounds")
+assert_that(abs(C.DISPATCH['PAPER_1397']()['value']['switching_asymmetry'] - C.F_TRZ * C.BETA_I) < 1e-15,
+            "P1397: two-envelopes switching asymmetry = F_TRZ*beta_i - the SEVENTH sector on this product")
+assert_that(abs(C.DISPATCH['PAPER_1398']()['value']['p_heads_given_awake'] - 1.0 / 3.0) < 1e-15,
+            "P1398: Sleeping Beauty = 1/(D_phys-1) = 1/3 EXACT - the thirder position from the same triadic primitive as Erdos-Straus/Beal/weak-Goldbach")
+assert_that(C.DISPATCH['PAPER_1399']()['value']['expected_generations'] == 240,
+            "P1399: doomsday expected generations = A_5*D_phys = 240")
+assert_that(C.DISPATCH['PAPER_1400']()['value']['identity_preserved'],
+            "P1400: ship of Theseus - F_U = 1 identity preserved under gradual redistribution")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1371, 1401)),
+            "BANDS 1371-1400: all thirty dispatches registered and self-identifying")
 
 # =============================================================================
 # REPORT

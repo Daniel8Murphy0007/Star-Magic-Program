@@ -222,4 +222,9 @@ SHIP GUARD v2 installed (9 assertions, verified to bite). Gate 4,545 / 0.
 
 Bands PAPER_1301-1370 (70 dispatches) + BBN sector PAPER_2157-2159 (3).
 Self-inflicted index corruption found and repaired; SHIP GUARD v3 + registry duplicate guard added.
-Gate 4,556 / 0. Dispatches 1,387. Defs 3,313.
+Gate 4,581 / 0. Dispatches 1,417. Defs 3,313.
+
+## v0.369.0 (2026-08-10)
+
+Bands PAPER_1371-1400 (30 dispatches): the paradox suite. Final parsec closed;
+Klein-Gordon E<0 = t_neg CCW branch; HBT 3% deficit falsifiable. Gate 4,581 / 0.

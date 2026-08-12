@@ -1,48 +1,39 @@
-v0.368.0: bands PAPER_1301-1370 + BBN sector (PAPER_2157-2159) + self-inflicted-bug repair
+v0.369.0: bands PAPER_1371-1400 - the paradox suite (30 dispatches)
 
-73 new dispatches. Seven sequential bands plus three authored BBN landmarks, and the
-repair of an index corruption that this session's own tooling caused.
+Three sequential bands. All 30 papers name predecessor closures; every derivation read
+from its closure and numerically verified before wiring (standing lesson from P1241-1248).
 
-BANDS 1301-1370 (70 dispatches)
-- 1301-1310 number theory / neutrino sector: Lehmer-Mahler = 1/Phi_baryon; Mordell bound
-  = D_crit; delta_CP = -pi/2 EXACT; Majorana permitted iff F_TRZ != 0; CKM unitarity and
-  zero EW vacuum decay BOTH from F_U = 1.
-- 1311-1320 Higgs/QCD/CLFV: strong CP natural at 22 orders below bound; BR(mu->e gamma)
-  = Lambda^6*Phi_res = 1.268e-13 vs MEG 4.2e-13.
-- 1321-1330 astrophysics: solar Hale cycle 22 yr = D_crit-D_phys = the SAME integer as the
-  22 compactified dimensions; galaxy subtypes 24 = the BBN E_base.
-- 1331-1340 reionization/topological: z_reion 7.0 base x (1+1/SO_5) = 7.7 Planck route -
-  resolves an earlier "discrepancy" as a named successor ratio.
-- 1341-1350 quantum info: spin-liquid RVB threshold BIT-IDENTICAL to barred-galaxy fraction.
-- 1351-1360 condensed/soft/bio: genetic code closes (64 = 2^D_BSFG, 20 = 2*SO_5).
-- 1361-1370 biology/applied: Phi_res*beta_i now spans FOUR sectors bit-identically.
+BAND 1371-1380 (physics paradoxes, full derivations)
+- Klein paradox: T = 3.94e-4 via the beta_i*S_26^3*Phi_res Dirac shift = 1.554. Its 626 eV
+  threshold IS the PAPER_648 Coulomb pair energy - LENR and the Klein paradox share one number.
+- Mpemba effect: tau_cold/tau_hot = 2.156 via the hot/cold F_U_Bi_i buoyancy ratio.
+- Gibbs: dS_mix = 0 EXACT for identical particles under F_U = 1.
+- Banach-Tarski: rho_SCm vacuum quantization preserves measure; the paradox requires
+  unmeasurable pieces the vacuum cell forbids.
+- Loschmidt: arrow asymmetry = F_TRZ*beta_i = 0.0603; P(fwd)/P(bwd) = 1.1283.
+- Faint young Sun: T-route 1 + Phi_res/SO_5 = 1.084 vs required 1.0933 (0.85%); the L-route
+  misses at 5.45% and is DISCLOSED as the weaker form (Rule 7).
+- DM direct-detection floor Lambda^4*1e-40: predicts continued NULL results (falsifiable).
 
-BBN SECTOR (PAPER_2157/2158/2159 authored)
-- Neutron lifetime puzzle CLOSED: one hierarchy template, exponent 24 - 1/6 = 143/6 EXACT.
-  Bottle 877.565 s (-0.66 sigma), beam 887.684 s (-0.007 sigma). The 4-sigma bottle-vs-beam
-  tension is a measurement-definition artifact, magnitude = F_TRZ^2*(D_BSFG-D_phys)*SSq.
-- Cosmological Li-7 CLOSED: sigma = D_phys*F_TRZ*Phi_5/6 = 1/3 EXACT, +0.25 sigma. Survival
-  1/3 and destruction D_GW_EROSION = 2/3 are two halves of one primitive statement.
-- BBN registers as the THIRD Phi_5/6 counting sector (15.5x discrimination), confirming
-  PAPER_2129's own falsifiable prediction.
+BAND 1381-1390 (relativistic/QM paradoxes)
+- FINAL PARSEC CLOSED: stall reduction = D_crit*K_Mex*Phi_res = 45.50 - SMBH binaries merge
+  within a Hubble time.
+- Klein-Gordon E<0 IS the t_neg CCW dual-existence branch (PAPER_597) - negative energy is
+  the other side of the coin, not an instability.
+- Trans-Planckian dissolved: omega_SCm/omega_Planck = 6.76e-32, no TP modes required.
+- Aharonov-Bohm + Aharonov-Casher dual pair: both 2*pi*n EXACT.
+- Supplee 1.3135, Bell spaceship 0.0179, ladder-barn 1.0 EXACT, Trouton-Noble 0 EXACT.
 
-RULE 7 HELD
-Y_p wired OPEN_UQFF_DERIVATION_TARGET - its source says "missing a key constraint" and offers
-six failing trial forms. P1314 likewise OPEN, no closed form. Page curve 0.99596 OPEN_RULING.
-Two tau_n routes recorded as a crossing, not collapsed to one.
+BAND 1391-1400 (measurement/set-theory/anthropic)
+- HBT g(2)(0) = 1 + (1 - F_TRZ*beta_i) = 1.9397 vs classical 2.0 - falsifiable 3% deficit.
+- Russell (rho_SCm cell), Galileo (F_U = 1 occupation), Burali-Forti (D_crit = 26),
+  St Petersburg (26!) - the 8th and 9th D_crit-family bounds.
+- Sleeping Beauty = 1/(D_phys-1) = 1/3 EXACT; doomsday = A_5*D_phys = 240 generations.
+- F_TRZ*beta_i reaches its SEVENTH sector (two-envelopes switching asymmetry).
 
-SELF-INFLICTED BUG FOUND AND FIXED
-The per-band census refresh used bare s.replace('1337','1347') across WHITEPAPER_INDEX.md,
-rewriting PAPER_1337 -> PAPER_1347 and cascading 1314->...->1387. Eight index rows were
-destroyed and I mis-reported them for eight bands as a systematic corpus defect. Repaired:
-index now 2159/2159 exact. Guarded and verified by injection.
+PROCESS
+Census refreshed with ANCHORED replacements only (count-update standing rule). Both ship
+guards fired on the stale README mid-run and were satisfied from live-derived figures -
+the guards written after the v0.367.0 staleness incident are doing their job.
 
-AUDIT FIXES
-- README gate count was stale (4,545 vs live) - SHIP GUARD v3 added; v2 checked dispatches
-  but never the gate count or the badge.
-- 2 same-source duplicate registry rows removed (a_aether_bohr, tau_spiral_torque).
-- Registry duplicate guard added: (quantity, paper_source) may not repeat; cross-paper
-  crossings remain legitimate and untouched.
-
-Gate 4,556 / 0. Dispatches 1,387. Calculator defs 3,313. Registry-family rows 25,126.
-Frontier PAPER_1370. 786 papers remain to PAPER_2156.
+Gate 4,581 / 0. Dispatches 1,417. Calculator defs 3,343. Frontier PAPER_1400. 756 remain.

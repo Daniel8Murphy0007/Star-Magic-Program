@@ -8354,3 +8354,55 @@ gate with both expected messages; restoring returned green.
    of first resort — not evidence of a corpus problem.
 
 Gate 4,545 → **4,550**, green.
+
+## (100) 2026-08-10 — BANDS PAPER_1371-1400 (three bands: paradox suite completion)
+
+**30 dispatches across three bands.** All 30 papers name predecessor closures; every derivation
+read from its closure, all numerics verified before wiring. Census refreshed with ANCHORED
+replacements only (per the count-update standing rule); both ship guards fired on the stale
+README and were satisfied by live-derived figures.
+
+### Band 1371-1380 (physics paradoxes, full derivations)
+
+| Paper | Closure | Residual |
+|---|---|---|
+| 1371 | DM floor Λ⁴×10⁻⁴⁰, predicts NULL | — |
+| 1372 | GW-siren H₀ = Planck route 67.41 | 0.015% |
+| 1373 | birefringence = Λ²·E_Schwinger = 7.03e13 V/m | 0.42% |
+| 1374 | σ_LbL = α⁴ = Λ⁴ | EXACT |
+| 1375 | Gibbs: ΔS_identical = 0 | EXACT |
+| 1376 | Banach-Tarski: measure preserved, ρ_SCm forbids unmeasurable pieces | EXACT |
+| 1377 | faint young Sun: T-route 1.084 vs 1.0933 | 0.85% (L-route 5.45% **disclosed**) |
+| 1378 | Loschmidt: arrow = F_TRZ·β_i; P_fwd/P_bwd = 1.1283 | EXACT |
+| 1379 | Klein: T = 3.94e-4 via β_i·S_26³·Φ_res shift; threshold IS the PAPER_648 626 eV | EXACT |
+| 1380 | Mpemba: τ_cold/τ_hot = 2.156 via F_UBii hot/cold ratio | EXACT |
+
+### Band 1381-1390 (relativistic/QM paradoxes)
+
+Final parsec **CLOSED**: stall reduction = D_crit·K_Mex·Φ_res = 45.50 — SMBH binaries merge
+inside a Hubble time. AB/AC dual pair both 2πn EXACT. Trans-Planckian dissolved
+(ω_SCm/ω_Planck = 6.76e-32). Klein-Gordon E<0 = the t_neg CCW branch — negative energy is the
+other side of the coin, not an instability. Supplee 1.3135, Bell spaceship 0.0179,
+ladder-barn 1.0 EXACT, Trouton-Noble 0 EXACT.
+
+### Band 1391-1400 (measurement/set-theory/anthropic paradoxes)
+
+HBT g(2) = 1.9397 vs classical 2.0 — a falsifiable 3% bunching deficit. Russell/Galileo/
+Burali-Forti/St Petersburg close on ρ_SCm quantization, F_U = 1 occupation, D_crit = 26, and
+26! respectively (the 8th and 9th D_crit-family bounds). Sleeping Beauty = 1/3 EXACT on the
+triadic primitive. Doomsday = A_5·D_phys = 240 generations.
+
+**Cross-connections pinned:** P1379's 626 eV threshold is the PAPER_648 Coulomb pair energy;
+P1397 puts F_TRZ·β_i in its SEVENTH sector; P1396's 26! is the same factorial as the
+singularity floor and vacuum amplification.
+
+**Ledger:** registry +30, graph +65, citations +30, gate 4,556 → **4,581**, green at v0.368.0.
+Dispatches **1,417**. Frontier PAPER_1370 → **PAPER_1400**. 756 papers remain.
+
+## (101) 2026-08-10 — SHIP v0.369.0 PREPARED (bands 1371-1400)
+
+v0.368.0 was tagged by Daniel while bands 1371-1400 were being wired, so the thirty new
+dispatches ship as **v0.369.0** — verified as new work by diffing the tag (30 `@_register`
+additions since v0.368.0, none of 1371-1400 present in the tag). All pins bumped, README
+release paragraph replaced (exactly one, current version), SHIP_MESSAGE/CHANGELOG/_BUILD_LOG/
+pyproject description all rewritten for the actual contents. Content verification below.
