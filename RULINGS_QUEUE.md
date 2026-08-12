@@ -6035,3 +6035,34 @@ reached either the code or the numbered corpus.
    work. Should it be diffed against the numbered corpus first to isolate genuinely new content?
 
 No wiring performed from these files pending Daniel's ruling. Recorded as an audit finding only.
+
+## Q-BBN-YP (BBN sector, 2026-08-10)
+
+Y_p (primordial He-4 mass fraction, observed 0.2465 ± 0.0016) is wired as
+**OPEN_UQFF_DERIVATION_TARGET**, not as a closure.
+
+The source document `PRIMORDIAL_BBN_PROTO_HYDROGEN_HELIUM_CLOSURE_DERIVATIONS.md` states plainly
+at line 762: *"But the observed value is Y_p = 0.2465! This means the calculation above is missing
+a key constraint."* It then offers six trial forms — 0.3077, 2.010, 0.09788, 1.2746, and others —
+none of which land. The orphan reconstruction presents Y_p as "✅ FULL 12-STEP" complete; it is not.
+
+**Question:** is there a Y_p derivation elsewhere in the corpus, or does the missing constraint
+still need to be found? The neighbouring closures (τ_n, σ_Li7) both closed cleanly, so Y_p is the
+one gap in an otherwise complete BBN set.
+
+## Q-BBN-TAUN-ROUTE (BBN sector, 2026-08-10)
+
+Two neutron-lifetime routes are now wired and they disagree:
+
+| route | form | value | vs 877.75 |
+|---|---|---|---|
+| PAPER_1254 (band 1251-1260) | 100·K_Mex·D_phys·(1+Φ_res·Λ·N_ch) | 879.31 s | 0.18% |
+| PAPER_2157 (BBN sector) | 10^(D_phys·D_BSFG − 2·Φ_5/6·F_TRZ)/(m_e c²/ħ) | 877.565 s | 0.021% |
+
+PAPER_2157 is 8.6× tighter and additionally yields the beam lifetime and branching ratio from the
+same template, which PAPER_1254 does not. Under the PAPER_2144 route-selection rule (prefer
+tighter, prefer forms that don't compound downstream), PAPER_2157 looks canonical — but PAPER_1254
+is a numbered corpus paper and I have not superseded it unilaterally.
+
+**Question:** adopt PAPER_2157 as the canonical τ_n route and mark PAPER_1254 as an alternative,
+or keep both as independent routes in the census?

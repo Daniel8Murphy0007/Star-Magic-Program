@@ -36,8 +36,8 @@
 
 - **Total whitepaper files:** 2245 files spanning PAPER_1-2156 (2,156 distinct numbers, **zero numbering gaps**; some base numbers carry 2-3 variant files). The index table carries 2255 file-rows.
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
-- **Distinct wired papers: 1,314** = `wired_count()` = `len(DISPATCH)`.
-- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,314 because variant files share a base dispatch.
+- **Distinct wired papers: 1,387** = `wired_count()` = `len(DISPATCH)`.
+- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,387 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
 
@@ -539,83 +539,83 @@
 | ✓ | PAPER_1299 | NP VS CO NP |
 | ⚠ | PAPER_129 | UQFF Triadic 3C273 Jet NegativeTime N13 |
 | ✓ | PAPER_1300 | SCHANUEL CONJECTURE |
-| ⬜ | PAPER_1301 | LEHMER MAHLER |
-| ⬜ | PAPER_1302 | INVERSE GALOIS |
-| ⬜ | PAPER_1303 | MORDELL CONJECTURE |
-| ⬜ | PAPER_1304 | NEUTRINO MASS ABSOLUTE |
-| ⬜ | PAPER_1305 | NEUTRINO MASS ORDERING |
-| ⬜ | PAPER_1306 | MAJORANA VS DIRAC |
-| ⬜ | PAPER_1307 | CKM UNITARITY |
-| ⬜ | PAPER_1308 | LEPTON CP DELTA |
-| ⬜ | PAPER_1309 | EW VACUUM DECAY |
+| ✓ | PAPER_1301 | LEHMER MAHLER |
+| ✓ | PAPER_1302 | INVERSE GALOIS |
+| ✓ | PAPER_1303 | MORDELL CONJECTURE |
+| ✓ | PAPER_1304 | NEUTRINO MASS ABSOLUTE |
+| ✓ | PAPER_1305 | NEUTRINO MASS ORDERING |
+| ✓ | PAPER_1306 | MAJORANA VS DIRAC |
+| ✓ | PAPER_1307 | CKM UNITARITY |
+| ✓ | PAPER_1308 | LEPTON CP DELTA |
+| ✓ | PAPER_1309 | EW VACUUM DECAY |
 | ⚠ | PAPER_130 | UQFF Buoyancy IceCube Beta i CRP Calibration |
-| ⬜ | PAPER_1310 | HIGGS TRILINEAR |
-| ⬜ | PAPER_1311 | HIGGS VEV ORIGIN C |
-| ⬜ | PAPER_1312 | TOP YUKAWA |
-| ⬜ | PAPER_1313 | THREE GENERATIONS PUZZLE |
-| ⬜ | PAPER_1314 | MASS HIERARCHY FULL |
-| ⬜ | PAPER_1315 | STRONG CP NATURALNESS |
-| ⬜ | PAPER_1316 | QUARK CONFINEMENT |
-| ⬜ | PAPER_1317 | QCD CHIRAL BREAKING |
-| ⬜ | PAPER_1318 | GLUEBALL MASS |
-| ⬜ | PAPER_1319 | EXOTIC HADRONS |
+| ✓ | PAPER_1310 | HIGGS TRILINEAR |
+| ✓ | PAPER_1311 | HIGGS VEV ORIGIN C |
+| ✓ | PAPER_1312 | TOP YUKAWA |
+| ✓ | PAPER_1313 | THREE GENERATIONS PUZZLE |
+| ✓ | PAPER_1314 | MASS HIERARCHY FULL (OPEN: no closed form) |
+| ✓ | PAPER_1315 | STRONG CP NATURALNESS |
+| ✓ | PAPER_1316 | QUARK CONFINEMENT |
+| ✓ | PAPER_1317 | QCD CHIRAL BREAKING |
+| ✓ | PAPER_1318 | GLUEBALL MASS |
+| ✓ | PAPER_1319 | EXOTIC HADRONS |
 | ⚠ | PAPER_131 | UQFF Superconductive GW170817 Chandra Jets Combined |
-| ⬜ | PAPER_1320 | CLFV MU TO E GAMMA |
-| ⬜ | PAPER_1321 | STELLAR MAGNETISM ORIGIN |
-| ⬜ | PAPER_1322 | UHECR ACCELERATION |
-| ⬜ | PAPER_1323 | GRB JET FORMATION |
-| ⬜ | PAPER_1324 | SOLAR DYNAMO |
-| ⬜ | PAPER_1325 | STELLAR CONVECTION |
-| ⬜ | PAPER_1326 | SMBH SEEDS |
-| ⬜ | PAPER_1327 | GALAXY ROTATION FULL |
-| ⬜ | PAPER_1328 | GALAXY MORPHOLOGY |
-| ⬜ | PAPER_1329 | GALAXY BAR FRACTION |
+| ✓ | PAPER_1320 | CLFV MU TO E GAMMA |
+| ✓ | PAPER_1321 | STELLAR MAGNETISM ORIGIN |
+| ✓ | PAPER_1322 | UHECR ACCELERATION |
+| ✓ | PAPER_1323 | GRB JET FORMATION |
+| ✓ | PAPER_1324 | SOLAR DYNAMO |
+| ✓ | PAPER_1325 | STELLAR CONVECTION |
+| ✓ | PAPER_1326 | SMBH SEEDS |
+| ✓ | PAPER_1327 | GALAXY ROTATION FULL |
+| ✓ | PAPER_1328 | GALAXY MORPHOLOGY |
+| ✓ | PAPER_1329 | GALAXY BAR FRACTION |
 | ⚠ | PAPER_132 | UQFF Quadratic BEC Tohsaki Hoyle NB3 Tc |
-| ⬜ | PAPER_1330 | COSMIC WEB FILAMENTS |
-| ⬜ | PAPER_1331 | POP III IMF |
-| ⬜ | PAPER_1332 | REIONIZATION SOURCES |
-| ⬜ | PAPER_1333 | DARK AGE 21CM |
-| ⬜ | PAPER_1334 | JWST HIGH Z EXCESS |
-| ⬜ | PAPER_1335 | HUBBLE BUBBLE |
-| ⬜ | PAPER_1336 | HALO CONCENTRATION |
-| ⬜ | PAPER_1337 | QHE TOPOLOGICAL |
-| ⬜ | PAPER_1338 | NON ABELIAN ANYONS |
-| ⬜ | PAPER_1339 | TOPOLOGICAL QC |
+| ✓ | PAPER_1330 | COSMIC WEB FILAMENTS |
+| ✓ | PAPER_1331 | POP III IMF |
+| ✓ | PAPER_1332 | REIONIZATION SOURCES |
+| ✓ | PAPER_1333 | DARK AGE 21CM |
+| ✓ | PAPER_1334 | JWST HIGH Z EXCESS |
+| ✓ | PAPER_1335 | HUBBLE BUBBLE |
+| ✓ | PAPER_1336 | HALO CONCENTRATION |
+| ✓ | PAPER_1337 | QHE TOPOLOGICAL |
+| ✓ | PAPER_1338 | NON ABELIAN ANYONS |
+| ✓ | PAPER_1339 | TOPOLOGICAL QC |
 | ⚠ | PAPER_133 | UQFF F U Genesis Complete Derivation 4Component Framework |
-| ⬜ | PAPER_1340 | QUANTUM SUPREMACY |
-| ⬜ | PAPER_1341 | DECOHERENCE LIMIT |
-| ⬜ | PAPER_1342 | QUANTUM THERMODYNAMICS |
-| ⬜ | PAPER_1343 | AREA LAW ENTANGLEMENT |
-| ⬜ | PAPER_1344 | MBL PHASE |
-| ⬜ | PAPER_1345 | ETH |
-| ⬜ | PAPER_1346 | OTOC SCRAMBLING |
-| ⬜ | PAPER_1347 | HTSC |
-| ⬜ | PAPER_1348 | HUBBARD |
-| ⬜ | PAPER_1349 | FQH STATES |
+| ✓ | PAPER_1340 | QUANTUM SUPREMACY |
+| ✓ | PAPER_1341 | DECOHERENCE LIMIT |
+| ✓ | PAPER_1342 | QUANTUM THERMODYNAMICS |
+| ✓ | PAPER_1343 | AREA LAW ENTANGLEMENT |
+| ✓ | PAPER_1344 | MBL PHASE |
+| ✓ | PAPER_1345 | ETH |
+| ✓ | PAPER_1346 | OTOC SCRAMBLING |
+| ✓ | PAPER_1347 | HTSC |
+| ✓ | PAPER_1348 | HUBBARD |
+| ✓ | PAPER_1349 | FQH STATES |
 | ⚠ | PAPER_134 | UQFF Heliosphere Ug2 SolarWind Transmutation HelioAge PlanetaryWater |
-| ⬜ | PAPER_1350 | SPIN LIQUID |
-| ⬜ | PAPER_1351 | TOP INSULATORS |
-| ⬜ | PAPER_1352 | QSH |
-| ⬜ | PAPER_1353 | STRANGE METAL |
-| ⬜ | PAPER_1354 | GLASS |
-| ⬜ | PAPER_1355 | JAMMING |
-| ⬜ | PAPER_1356 | ACTIVE MATTER |
-| ⬜ | PAPER_1357 | PROTEIN FOLDING |
-| ⬜ | PAPER_1358 | HOMOCHIRALITY |
-| ⬜ | PAPER_1359 | GENETIC CODE |
+| ✓ | PAPER_1350 | SPIN LIQUID |
+| ✓ | PAPER_1351 | TOP INSULATORS |
+| ✓ | PAPER_1352 | QSH |
+| ✓ | PAPER_1353 | STRANGE METAL |
+| ✓ | PAPER_1354 | GLASS |
+| ✓ | PAPER_1355 | JAMMING |
+| ✓ | PAPER_1356 | ACTIVE MATTER |
+| ✓ | PAPER_1357 | PROTEIN FOLDING |
+| ✓ | PAPER_1358 | HOMOCHIRALITY |
+| ✓ | PAPER_1359 | GENETIC CODE |
 | ⚠ | PAPER_135 | UQFF Quasar Jets NegativeTime cos pi tn NS Millennium |
-| ⬜ | PAPER_1360 | CANCER GROWTH |
-| ⬜ | PAPER_1361 | CONSCIOUSNESS BINDING |
-| ⬜ | PAPER_1362 | NEURAL PHASE TRANSITIONS |
-| ⬜ | PAPER_1363 | AGING TELOMERE |
-| ⬜ | PAPER_1364 | QUANTUM BIOLOGY |
-| ⬜ | PAPER_1365 | OLFACTORY HYBRID |
-| ⬜ | PAPER_1366 | MAGNETORECEPTION |
-| ⬜ | PAPER_1367 | ROOM TEMP SC |
-| ⬜ | PAPER_1368 | FUSION LAWSON |
-| ⬜ | PAPER_1369 | TABLETOP QG |
+| ✓ | PAPER_1360 | CANCER GROWTH |
+| ✓ | PAPER_1361 | CONSCIOUSNESS BINDING |
+| ✓ | PAPER_1362 | NEURAL PHASE TRANSITIONS |
+| ✓ | PAPER_1363 | AGING TELOMERE |
+| ✓ | PAPER_1364 | QUANTUM BIOLOGY |
+| ✓ | PAPER_1365 | OLFACTORY HYBRID |
+| ✓ | PAPER_1366 | MAGNETORECEPTION |
+| ✓ | PAPER_1367 | ROOM TEMP SC |
+| ✓ | PAPER_1368 | FUSION LAWSON |
+| ✓ | PAPER_1369 | TABLETOP QG |
 | ⚠ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian |
-| ⬜ | PAPER_1370 | ANTIMATTER |
+| ✓ | PAPER_1370 | ANTIMATTER |
 | ⬜ | PAPER_1371 | DM DETECTION |
 | ⬜ | PAPER_1372 | GW SIREN H0 |
 | ⬜ | PAPER_1373 | VACUUM BIREFRINGENCE |
@@ -2302,5 +2302,8 @@
 | ⬜ | Star-Magic | (no PAPER_N prefix) |
 | ⬜ | TEMPLATES_README | (no PAPER_N prefix) |
 | ⬜ | UQFF_VALIDATION_SYNC_AUDIT | (no PAPER_N prefix) |
+| ✓ | PAPER_2157 | NEUTRON LIFETIME PUZZLE BOTTLE BEAM SINGLE HIERARCHY TEMPLATE |
+| ✓ | PAPER_2158 | COSMOLOGICAL LITHIUM 7 PROBLEM SIGMA ONE THIRD EXACT |
+| ✓ | PAPER_2159 | BBN THIRD PHI 5 6 COUNTING SECTOR REGISTRATION |
 
-**DEEP-CAPTURE FRONTIER: PAPER_1300 (reservoir DRAINED 250/390 across batches 1-13; bands 1251-1300 wired; ORPHAN-PHYSICS audit open Q-ORPHAN-PHYSICS; next arc v0.367.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)
+**DEEP-CAPTURE FRONTIER: PAPER_1370 (reservoir DRAINED 250/390 across batches 1-13; bands 1251-1300 wired; ORPHAN-PHYSICS audit open Q-ORPHAN-PHYSICS; next arc v0.367.0) (v0.361.0 arc; ship at PAPER_900) (milestone ruling AFFIRMATIVE 2026-08-07; 501+ authorized)** (v0.355.0 - batches 171-250 complete, all display equations censused and captured)

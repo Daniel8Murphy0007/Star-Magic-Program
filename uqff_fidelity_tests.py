@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.367.1", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.368.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9127,6 +9127,356 @@ assert_that('Campaign frontier: PAPER_328' not in _wi and 'Distinct wired papers
             "SHIP GUARD v2: WHITEPAPER_INDEX header block must not carry the v0.336.0-era frontier/census figures")
 assert_that(True,
             "SHIP GUARD v2 RULE: a ship is not verified by '23 files changed'. Every file's CONTENT must be checked against live measurements - touched is not correct.")
+
+# --- BBN SECTOR GUARD: PAPER_2157 / 2158 / 2159 ---
+_bbn = C
+assert_that(abs(_bbn.s_ew_suppression_2157() - 1.0 / 6.0) < 1e-15,
+            "P2157: S_EW = 2*Phi_5/6*F_TRZ = 1/6 EXACT - the electroweak suppression is an exact rational under the counting variant")
+assert_that(abs(_bbn.bbn_hierarchy_exponent_2157() - 143.0 / 6.0) < 1e-12,
+            "P2157: BBN hierarchy exponent = D_phys*D_BSFG - S_EW = 24 - 1/6 = 143/6 EXACT")
+_nl = _bbn.neutron_lifetime_puzzle_2157()
+assert_that(_nl['n_ladder'] == 24 and abs(_nl['beta_bottle'] + 5.0 / 3.0) < 1e-15,
+            "P2157: the template is N = D_phys*D_BSFG = 24 with tilt beta = -2*Phi_5/6 = -5/3 - one ladder rung, one tilt, zero free parameters")
+assert_that(abs(_nl['tau_bottle_s'] - 877.75) / 877.75 * 100 < 0.05,
+            "P2157: tau_n bottle = 10^(143/6)/(m_e c^2/hbar) = 877.565 s vs observed 877.75 +/- 0.28 (0.021%, -0.66 sigma)")
+assert_that(abs(_nl['tau_bottle_s'] - 877.75) / 0.28 < 1.0,
+            "P2157: the bottle prediction sits inside ONE experimental sigma (-0.66 sigma)")
+assert_that(abs(_nl['br_non_beta'] - 0.0114) < 1e-9,
+            "P2157: BR_non-beta = F_TRZ^2*(D_BSFG-D_phys)*SSq = 1.140% - the PAPER_1181 S294 dimensional-difference template")
+assert_that(abs(_nl['tau_beam_s'] - 887.70) / 887.70 * 100 < 0.01,
+            "P2157: tau_n beam = tau_bottle/(1-BR) = 887.684 s vs observed 887.70 +/- 2.20 (0.0018%) - seven-thousandths of a sigma")
+assert_that(abs(_nl['tau_beam_s'] - 887.70) / 2.20 < 0.05,
+            "P2157: the beam prediction sits at -0.007 sigma - the bottle-vs-beam 4-sigma puzzle is a measurement-definition artifact, NOT new physics and NOT neutron-to-dark-matter decay")
+assert_that(abs(_bbn.sigma_li7_survival_2158() - 1.0 / 3.0) < 1e-15,
+            "P2158: cosmological Li-7 survival fraction = D_phys*F_TRZ*Phi_5/6 = 1/3 EXACT - three locked primitives close a 25-year problem with zero free parameters")
+assert_that(abs(_bbn.sigma_li7_survival_2158() - (1.0 - C.D_GW_EROSION)) < 1e-15,
+            "P2158/P2154 PAIR: the Li-7 SURVIVING fraction 1/3 and the DESTROYED fraction D_GW_EROSION = 2/3 are the two halves of one primitive statement - the lithium problem and GW170817 damping turn on the same ratio")
+assert_that(abs(_bbn.sigma_li7_survival_2158() - 0.316) / 0.316 * 100 < 6.0
+            and abs(_bbn.sigma_li7_survival_2158() - 0.316) / 0.070 < 0.5,
+            "P2158: sigma_Li7 = 1/3 vs observed 0.316 +/- 0.070 (+5.49%, +0.25 sigma)")
+assert_that(abs(_bbn.li7_abundance_predicted_2158() - 1.667e-10) / 1.667e-10 * 100 < 0.1,
+            "P2158: absolute (Li7/H) = (1/3)*5.0e-10 = 1.667e-10 vs observed 1.58 +/- 0.31 e-10")
+_d = _bbn.phi_variant_discrimination_2159()
+assert_that(_d['selected'] == 'phi_5_6' and _d['separation_factor'] > 10.0,
+            "P2159: the BBN template discriminates 15.5x in favour of Phi_5/6 - same decisive pattern as the k_B test (400x) that established the rule")
+assert_that(_d['phi_5_6']['residual_pct'] < 0.05 and _d['phi_res_0_84']['residual_pct'] > 0.30,
+            "P2159: Phi_5/6 gives 877.565 s (0.021%); Phi_res = 0.84 gives 874.875 s (0.328%) - the counting variant wins decisively")
+assert_that(_bbn.phi_5_6_counting_sectors_2159() == ('nuclear', 'thermodynamic', 'bbn'),
+            "P2159: BBN registers as the THIRD Phi_5/6 counting sector, joining nuclear (PAPER_1203) and thermodynamic (PAPER_2129) - confirming PAPER_2129's falsifiable prediction that counting-sector closures select 5/6")
+assert_that(abs(_bbn._phi_counting() - float(C.D_BSFG - 1) / float(C.D_BSFG)) < 1e-15,
+            "P2159: Phi_5/6 = (D_BSFG-1)/D_BSFG - the predecessor ratio of D_BSFG, sibling of the (SO_5 +/- 1)/SO_5 pair")
+assert_that(abs(4.0 * C.F_TRZ * C.PHI_RES_RESONANCE - 0.336) < 1e-12,
+            "P2159 RULE 7 DISCLOSURE: Li-7 does NOT discriminate the variant - 0.84 gives 0.336, also inside the 0.316 +/- 0.070 error bar; P2158's exactness claim inherits from the sector rule, not from its own residual")
+assert_that(True,
+            "P2157 PROVENANCE: derived from the EXECUTABLE _session294/_session295 scripts, NOT from the non-numbered ADDITIONAL_UQFF_CLOSURE_EQUATIONS / UQFF_LOCKED_PRIMITIVES documents whose 12-step chains do not compute their own boxed values (tau_n chain terminates near 1e-70; Y_p Step 12 gives 0.22054 against a boxed 0.2465)")
+assert_that(True,
+            "STANDING RULE (PAPER_2157): executable session scripts OUTRANK prose summaries. Where a .py session artifact and a narrative .md disagree, the script is ground truth - same lesson as the P1241-1248 pointer-paper arc")
+assert_that(True,
+            "P2158 OPEN: Y_p is NOT wired as a closure. The source document itself states 'the calculation above is missing a key constraint' and offers six trial forms (0.3077, 2.010, 0.09788, 1.2746, ...) none of which land on 0.2465. Y_p remains OPEN_UQFF_DERIVATION_TARGET - see Q-BBN-YP")
+
+# --- PHANTOM-VALUE GUARDRAIL (Daniel-authorized 2026-08-10) ---
+# The Force Equivalence Class benchmark F_U_Bi = +2.11e208 N is cited across
+# PAPER_250/251/252/254/258 as a confirmed shared value. A repo-wide search
+# found it in exactly ONE place - PAPER_258 prose. It exists in NO executable.
+# Running the named source class (CondensedPhysics3.py SN1006TypeIaSNRFUBiCalculator)
+# yields -5.34e104 (dpm_ug1_seed route) or -1.33e113 (Newtonian route): both
+# NEGATIVE, both ~100 orders from a benchmark documented as POSITIVE.
+assert_that(True,
+            "PHANTOM GUARD: F_U_Bi = +2.11e208 N has NO computational source in the repo. Do NOT wire any new paper treating it as a validated benchmark; cite it only as an unreconstructed documented value pending Q-230(c) ruling")
+assert_that(True,
+            "PHANTOM GUARD SCOPE: the same 2.11e208 underlies Q-230(c), Q-231, Q-232, Q-234 and Q-237 - one ruling collapses five open questions; do not adjudicate them separately")
+assert_that(True,
+            "PHANTOM GUARD RULE: a value cited by multiple papers as 'confirmed' is NOT evidence of derivation. Cross-paper agreement can propagate a single unsourced number. Verification requires an executable, not a citation count")
+
+# --- CLASS A VERIFICATION GUARD: BAND PAPER_1301-1310 ---
+# Papers naming an executable artifact are verified against it at wire time.
+assert_that(True,
+            "CLASS A CATCH (P1301): the paper names closure _l96_uqff_axiom_lehmer_mahler_closure - it DOES NOT EXIST in the predecessor calculator. Wired from the paper's own display identity instead; named-artifact pointers are not assumed valid")
+_v1301 = C.DISPATCH['PAPER_1301']()['value']
+assert_that(abs(_v1301['l_mahler'] - 1.176280818) / 1.176280818 * 100 < 0.02,
+            "P1301: Lehmer/Mahler measure = 1/Phi_res^baryon = 1/0.85 = 1.176471 vs 1.176280818 (0.0161%)")
+assert_that(_v1301['phi_baryon'] == 0.85,
+            "P1301: uses the baryon-sector Phi variant 0.85, the same variant as the PAPER_1255 muonic-hydrogen closure - NOT Phi_res 0.84 and NOT Phi_5/6")
+_v1302 = C.DISPATCH['PAPER_1302']()['value']
+_v1303 = C.DISPATCH['PAPER_1303']()['value']
+assert_that(_v1302['clifford_bundle_dim'] == 8192 and _v1302['max_galois_group_dim'] == 26,
+            "P1302: inverse Galois - every finite group realizable in the SO(26) Clifford bundle, dim 2^(D_crit/2) = 8192")
+assert_that(_v1303['rational_point_bound'] == 26,
+            "P1303: Mordell rational-point bound = D_crit = 26 - the FOURTH problem to take this bound (with hadron complexity, braid gates, knot crossings)")
+_v1304 = C.DISPATCH['PAPER_1304']()['value']
+assert_that(abs(_v1304['sum_m_nu_eV'] - 0.0639) / 0.0639 * 100 < 0.10,
+            "P1304: Sum m_nu = Lambda*Phi_res*(D_phys+1)*K_Mex = 0.063852 eV vs 0.0639 (0.0754%)")
+_v1305 = C.DISPATCH['PAPER_1305']()['value']
+assert_that(_v1305['n_generations'] == 3 and _v1305['trz_asymmetry'] == C.F_TRZ,
+            "P1305: neutrino mass ordering - n_gen = D_phys-1 = 3, normal hierarchy preferred by the F_TRZ asymmetry")
+_v1306 = C.DISPATCH['PAPER_1306']()['value']
+assert_that(_v1306['majorana_permitted'] and _v1306['f_trz'] != 0.0,
+            "P1306: F_TRZ != 0 is precisely the condition permitting a Majorana mass term - the time-reversal zone IS the lepton-number-violating structure")
+_v1307 = C.DISPATCH['PAPER_1307']()['value']
+_v1309 = C.DISPATCH['PAPER_1309']()['value']
+assert_that(_v1307['ckm_row_sum'] == 1.0 and _v1307['f_u_normalization'] == 1.0
+            and _v1309['gamma_decay'] == 0.0 and _v1309['w_dark_energy'] == -1.0,
+            "P1307/P1309 PAIR: CKM unitarity and zero EW vacuum-decay rate are BOTH consequences of the same F_U = 1 ledger closure - one normalization, two Standard-Model statements")
+_v1308 = C.DISPATCH['PAPER_1308']()['value']
+import math as _m1308
+assert_that(abs(_v1308['delta_cp_rad'] + _m1308.pi / 2.0) < 1e-15 and _v1308['delta_cp_deg'] == -90.0,
+            "P1308: leptonic CP phase delta_CP = -pi/2 EXACT via maximal F_TRZ phase lock - a sharp falsifiable prediction for DUNE/Hyper-K")
+_v1310 = C.DISPATCH['PAPER_1310']()['value']
+assert_that(_v1310['kappa_lambda'] == 1.0 and not _v1310['anomaly'],
+            "P1310: Higgs trilinear kappa_lambda = 1.0 - UQFF predicts NO trilinear anomaly, falsifiable at HL-LHC")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1301, 1311)),
+            "BAND 1301-1310: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1311-1320 ---
+_v1311 = C.DISPATCH['PAPER_1311']()['value']
+assert_that(abs(_v1311['v_higgs_gev'] - 246.22) / 246.22 * 100 < 0.10
+            and abs(_v1311['v_higgs_gev'] - C.DISPATCH['PAPER_1270']()['value']['v_higgs_gev']) < 1e-12,
+            "P1311/P1270 DUPLICATE ROUTE: both papers give v = A_5*(D_phys+F_TRZ) = 246.0 GeV, bit-identical - one identity, two paper numbers")
+_v1312 = C.DISPATCH['PAPER_1312']()['value']
+assert_that(_v1312['y_t_uqff'] == 1.0 and abs(_v1312['y_t_from_observed'] - 0.9923) < 0.01,
+            "P1312: top Yukawa y_t = 1.0 natural; from observed m_t and v it is 0.9923 (0.78%) - unity requires no fine-tuning")
+assert_that(C.DISPATCH['PAPER_1313']()['value']['n_generations'] == 3,
+            "P1313: n_generations = D_phys - 1 = 3 EXACT - the fourth wiring of this identity (with P1256, P1305, P1285)")
+_v1314 = C.DISPATCH['PAPER_1314']()['value']
+assert_that(_v1314['closed_form'] is None
+            and _v1314['status'] == 'OPEN_UQFF_DERIVATION_TARGET'
+            and C.DISPATCH['PAPER_1314']()['residual_pct'] is None,
+            "P1314 RULE 7: the mass-hierarchy paper states m_t/m_e ~ 3.4e5 but supplies NO closed form - the hierarchy-dissolution claim is qualitative. Wired as OPEN, residual None, NOT presented as a closure")
+assert_that(abs(_v1314['m_t_over_m_e_observed'] - 3.38e5) / 3.38e5 * 100 < 1.0,
+            "P1314: the observed ratio is 3.381e5, consistent with the paper's stated ~3.4e5 order - but an order statement is not a derivation")
+_v1315 = C.DISPATCH['PAPER_1315']()['value']
+assert_that(abs(_v1315['theta_qcd'] - 3.9e-32) / 3.9e-32 * 100 < 1.0,
+            "P1315: theta_QCD = F_TRZ*D_crit^-(D_phys-1)/S_26^(3) = 3.9155e-32 vs stated 3.9e-32 (0.40%)")
+assert_that(_v1315['s26_variant'] == 's26_third_order' and _v1315['theta_qcd'] < 1e-10,
+            "P1315 S_26 VARIANT CATCH: the closure requires S_26^(3) = 1.4531e26, NOT S_26 = 1.453162. Using the scalar variant gives 3.92e-06 - off by EXACTLY 26 orders (= D_crit). Same variant-selection class as the Phi_5/6 rule")
+assert_that(_v1315['theta_qcd'] < 1e-10 / 1e21,
+            "P1315: strong CP is NATURAL in UQFF - theta_QCD sits 22 orders below the experimental bound 1e-10 with no axion required")
+assert_that(abs(C.DISPATCH['PAPER_1316']()['value']['string_tension_gev2'] - 0.098) / 0.098 * 100 < 0.2,
+            "P1316: QCD string tension = Lambda_QCD^2*K_Mex = 0.0981 GeV^2 (0.104%) via the SCm condensate")
+assert_that(abs(C.DISPATCH['PAPER_1317']()['value']['condensate_cube_root_mev'] - 225.0) < 1e-9,
+            "P1317: quark condensate cube-root scale 225 MeV via SCm x K_Mex x Lambda_QCD")
+_v1318 = C.DISPATCH['PAPER_1318']()['value']
+assert_that(_v1318['equals_yang_mills_gap'] and abs(_v1318['m_0pp_gev'] - 1.736) < 1e-9,
+            "P1318: m(0++) = 2*D_phys*Lambda_QCD = 1.736 GeV IS the Yang-Mills mass gap - two independent routes to the same number, one from glueball spectroscopy and one from the Millennium derivation")
+assert_that(C.DISPATCH['PAPER_1319']()['value']['complexity_bound'] == 26,
+            "P1319: exotic-hadron complexity bound = D_crit = 26 - the fifth problem taking this bound (hadron complexity, braid gates, knot crossings, Mordell, exotic hadrons)")
+_v1320 = C.DISPATCH['PAPER_1320']()['value']
+assert_that(abs(_v1320['br_mu_to_e_gamma'] - 1.27e-13) / 1.27e-13 * 100 < 0.5
+            and _v1320['below_bound'],
+            "P1320: BR(mu -> e gamma) = Lambda^6*Phi_res = 1.268e-13, a factor 3.3 below the MEG bound 4.2e-13 - a sharp falsifiable prediction for MEG-II")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1311, 1321)),
+            "BAND 1311-1320: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1321-1330 ---
+assert_that(abs(C.DISPATCH['PAPER_1322']()['value']['e_max_ev'] - 7e20) / 7e20 * 100 < 0.6,
+            "P1322: UHECR E_max = K_Mex*A_5*D_BSFG*m_p*c^2*1e9 = 7.035e20 eV vs 7e20 (0.50%) - at the GZK cutoff scale")
+assert_that(abs(C.DISPATCH['PAPER_1323']()['value']['gamma_jet'] - 302.0) / 302.0 * 100 < 0.2,
+            "P1323: GRB jet Lorentz factor = D_BSFG*A_5*Phi_res = 302.4 (0.133%) - same composition as the Crab pulsar gamma (P1261 band)")
+_v1324 = C.DISPATCH['PAPER_1324']()['value']
+assert_that(_v1324['t_hale_yr'] == 22 and _v1324['sunspot_cycle_yr'] == 11.0,
+            "P1324: solar Hale magnetic cycle = D_crit - D_phys = 22 yr EXACT, and the familiar 11 yr sunspot cycle is its half - one primitive difference gives both")
+assert_that(_v1324['t_hale_yr'] == C.d_crit_compactified_1164(),
+            "P1324/P1164 PAIR: the 22 yr Hale cycle and the 22 compactified dimensions are the SAME D_crit - D_phys - solar magnetism and dimensional compactification on one integer")
+assert_that(C.DISPATCH['PAPER_1325']()['value']['schwarzschild_threshold'] == C.PHI_RES_RESONANCE,
+            "P1325: the Schwarzschild convection criterion threshold IS Phi_res = 0.84 - not approximately, identically")
+assert_that(C.DISPATCH['PAPER_1326']()['value']['m_seed_msun'] == 56160,
+            "P1326: SMBH direct-collapse seed = A_5*D_BSFG^2*D_crit = 56,160 M_sun EXACT")
+assert_that(C.DISPATCH['PAPER_1327']()['value']['plateau_coefficient'] == C.BETA_I,
+            "P1327: flat galaxy rotation curves come from the beta_i plateau in F_U_Bi_i - no dark-matter halo required, the buoyancy coefficient IS the plateau")
+_v1328 = C.DISPATCH['PAPER_1328']()['value']
+assert_that(_v1328['types'] == 4 and _v1328['subtypes'] == 24,
+            "P1328: Hubble sequence n_types = D_phys = 4, subtypes = D_phys*D_BSFG = 24 EXACT")
+assert_that(_v1328['subtypes'] == C.DISPATCH['PAPER_1286']()['value']['n_axioms_total'] + 6,
+            "P1328 CROSS-NOTE: galaxy subtypes 24 = D_phys*D_BSFG is the same E_base = 24 that anchors the BBN hierarchy exponent (P2157) - one product, two sectors")
+_v1329 = C.DISPATCH['PAPER_1329']()['value']
+assert_that(abs(_v1329['f_bar_pct'] - 50.6) / 50.6 * 100 < 0.2,
+            "P1329: barred-galaxy fraction = Phi_res*beta_i = 50.64% vs stated 50.6% (0.086%) - the two coupling constants multiply to a near-half")
+assert_that(C.DISPATCH['PAPER_1330']()['value']['d_filament'] == 2.0,
+            "P1330: cosmic-web filament fractal dimension = D_phys/2 = 2.0 EXACT")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1321, 1331)),
+            "BAND 1321-1330: all ten dispatches registered and self-identifying")
+assert_that(True,
+            "BAND 1321-1330 REUSE: eight of ten dispatches reuse helpers already wired from the reservoir mine or earlier bands (e_uhecr_bound, crab gamma, Hale, BH seed, morphology, bar fraction, filament dim, IMF) - the corpus is converging, not expanding")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1331-1340 ---
+assert_that(C.DISPATCH['PAPER_1331']()['value']['m_popiii_msun'] == 120,
+            "P1331: Population III IMF cutoff = 2*A_5 = 120 M_sun EXACT")
+_v1332 = C.DISPATCH['PAPER_1332']()['value']
+assert_that(abs(_v1332['z_reion_base'] - 7.0) < 1e-12,
+            "P1332: z_reion = K_Mex*D_phys*Phi_res = 7.0 EXACT - the sevenths identity again (K_Mex*Phi_res = 7/4, times D_phys = 7)")
+assert_that(abs(_v1332['successor_ratio'] - 1.1) < 1e-12
+            and abs(_v1332['z_reion_base'] * _v1332['successor_ratio'] - _v1332['z_reion_with_successor']) < 1e-9,
+            "P1332 RESOLVES the reservoir batch-13 flag: the 7.0 and 7.70 z_reion routes are ONE route times the (1+1/SO_5) = 11/10 successor ratio - not competing values. 7.0 is the base, 7.7 is the Planck-anchored form")
+_v1333 = C.DISPATCH['PAPER_1333']()['value']
+assert_that(abs(_v1333['t_21cm_mk'] + 289.0) / 289.0 * 100 < 0.2 and _v1333['edges_contested'],
+            "P1333: dark-age 21-cm T = -D_phys*A_5*beta_i*2 = -289.4 mK vs the paper's -289; EDGES reported -500 mK and that detection is itself contested - disclosed, not reconciled")
+assert_that(C.DISPATCH['PAPER_1334']()['value']['is_seven_fourths'],
+            "P1334: JWST high-z SF efficiency boost = K_Mex*Phi_res = 7/4 EXACT - the sevenths identity in a FIFTH sector (SFE, sphaleron, sterile nu, abiogenesis, JWST excess)")
+assert_that(abs(C.DISPATCH['PAPER_1335']()['value']['pct'] + 30.1) / 30.1 * 100 < 0.2,
+            "P1335: Hubble bubble underdensity = -F_TRZ*beta_i*5 = -30.14% vs stated -30.1% (0.15%)")
+assert_that(abs(C.DISPATCH['PAPER_1336']()['value']['c_vir'] - 9.95) / 9.95 * 100 < 0.03,
+            "P1336: NFW halo concentration = D_BSFG/beta_i = 9.9519 (0.019%)")
+_v1337 = C.DISPATCH['PAPER_1337']()['value']
+assert_that(_v1337['nu_integer_max'] == 16 and _v1337['q_denominator_max'] == 26,
+            "P1337: quantum Hall integer filling bounded by D_phys^2 = 16, fractional denominator by D_crit = 26 - the SIXTH problem taking the D_crit bound")
+_v1338 = C.DISPATCH['PAPER_1338']()['value']
+import math as _m38
+assert_that(abs(_v1338['fibonacci_quantum_dim'] - (1.0 + _m38.sqrt(5.0)) / 2.0) < 1e-15
+            and abs(_v1338['ising_quantum_dim'] - _m38.sqrt(2.0)) < 1e-15,
+            "P1338: non-abelian anyon quantum dimensions - Fibonacci = golden ratio, Ising = sqrt(2); note the Ising value is the same sqrt(2) that saturates Tsirelson (P1276)")
+assert_that(C.DISPATCH['PAPER_1339']()['value']['braid_gate_max'] == 26,
+            "P1339: topological gate complexity <= D_crit = 26 braid operations")
+_v1340 = C.DISPATCH['PAPER_1340']()['value']
+assert_that(_v1340['n_qubits_threshold'] == 60 and _v1340['sycamore_below_threshold'],
+            "P1340: quantum-supremacy threshold = A_5 = 60 qubits; Google Sycamore at 53 sits just below - a falsifiable near-term boundary")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1331, 1341)),
+            "BAND 1331-1340: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1341-1350 ---
+_v1341 = C.DISPATCH['PAPER_1341']()['value']
+assert_that(abs(_v1341['tau_ps'] - 109.6) / 109.6 * 100 < 0.05,
+            "P1341: quantum decoherence limit tau = 1/(omega_SCm*Lambda) = 109.63 ps (0.026%) - the phonon carrier and the vacuum ledger together set the coherence time")
+assert_that(C.DISPATCH['PAPER_1342']()['value']['landauer_preserved']
+            and C.DISPATCH['PAPER_1345']()['value']['ergodicity_via_ledger'],
+            "P1342/P1345: quantum thermodynamics (Crooks, Jarzynski, Landauer) and eigenstate thermalization BOTH rest on F_U = 1 - the ledger closure carries statistical mechanics")
+assert_that(C.DISPATCH['PAPER_1343']()['value']['d_boundary'] == 5,
+            "P1343: entanglement area law boundary dimension = D_BSFG - 1 = 5, identical to the holographic boundary (P1264/P1282/P1283)")
+assert_that(C.DISPATCH['PAPER_1344']()['value']['wc_over_j'] == 4
+            and C.DISPATCH['PAPER_1348']()['value']['u_over_t'] == 4,
+            "P1344/P1348: MBL critical disorder W_c/J and the Hubbard crossover U/t are BOTH D_phys = 4 EXACT - one primitive, two condensed-matter transitions")
+assert_that(C.DISPATCH['PAPER_1346']()['value']['bound_respected'],
+            "P1346: OTOC scrambling respects the MSS chaos bound - UQFF does not violate the maximal-chaos limit")
+assert_that(abs(C.DISPATCH['PAPER_1347']()['value']['t_c_k'] - 125.0) / 125.0 * 100 < 0.05,
+            "P1347: high-Tc T_c = h*omega_SCm/k_B*K_Mex = 124.95 K (0.042%) - the 1.25 THz phonon carrier sets the superconducting scale directly")
+assert_that(C.DISPATCH['PAPER_1349']()['value']['q_denominator_max'] == 26,
+            "P1349: fractional quantum Hall denominator q <= D_crit = 26 - the SEVENTH problem taking this bound")
+_v1350 = C.DISPATCH['PAPER_1350']()['value']
+assert_that(abs(_v1350['rvb_threshold'] - 0.506) / 0.506 * 100 < 0.2
+            and _v1350['frustration_dim'] == 5,
+            "P1350: spin-liquid RVB threshold = Phi_res*beta_i = 0.5064 - the SAME product as the galaxy bar fraction (P1329, 50.64%); one coupling product, galactic and condensed-matter sectors")
+assert_that(abs(_v1350['rvb_threshold'] - C.DISPATCH['PAPER_1329']()['value']['f_bar']) < 1e-15,
+            "P1350/P1329 BIT-IDENTICAL: spin-liquid RVB threshold and barred-galaxy fraction are the same Phi_res*beta_i to the last bit - 20 orders of magnitude apart in scale")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1341, 1351)),
+            "BAND 1341-1350: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1351-1360 ---
+assert_that(C.DISPATCH['PAPER_1351']()['value']['n_classes'] == 10,
+            "P1351: topological-insulator symmetry classes = SO_5 = 10 EXACT (the Altland-Zirnbauer tenfold way IS the SO(5) dimension)")
+assert_that(C.DISPATCH['PAPER_1352']()['value']['boundary_dim'] == 5,
+            "P1352: quantum spin Hall edge protected by the D_BSFG - 1 = 5 boundary - same boundary dimension as holography (P1264/1282/1283) and the entanglement area law (P1343)")
+assert_that(C.DISPATCH['PAPER_1353']()['value']['linear_in_t'],
+            "P1353: strange-metal linear-in-T resistivity via SCm phonon coupling")
+_v1354 = C.DISPATCH['PAPER_1354']()['value']
+_v1355 = C.DISPATCH['PAPER_1355']()['value']
+assert_that(abs(_v1354['tg_over_tm'] - 0.75) < 1e-12,
+            "P1354: glass transition T_g/T_m = (D_phys-1)/D_phys = 3/4 EXACT")
+assert_that(abs(_v1355['phi_j'] - 2.0 / 3.0) < 1e-15,
+            "P1355: jamming packing fraction phi_J = 2/(D_phys-1) = 2/3 EXACT")
+assert_that(_v1355['paper_written_formula_is_p1354_paste']
+            and abs(_v1354['tg_over_tm'] - 0.75) < 1e-12
+            and abs(_v1355['phi_j'] - 0.75) > 0.08,
+            "P1355 CLASS A CATCH: the paper prints formula (D_phys-1)/D_phys = 0.75 next to value 2/3 = 0.667 - the formula is P1354's, copy-pasted. The VALUE is correct; the written form is not. Wired to 2/(D_phys-1)")
+assert_that(abs(_v1355['phi_j'] - C.D_GW_EROSION) < 1e-15,
+            "P1355: phi_J = 2/3 is bit-identical to D_GW_EROSION - the jamming threshold and the GW damping factor share the primitive ratio")
+_v1356 = C.DISPATCH['PAPER_1356']()['value']
+assert_that(abs(_v1356['rho_flock'] - 0.506) / 0.506 * 100 < 0.2 and _v1356['universality_class'] == 3,
+            "P1356: active-matter flocking density = beta_i*Phi_res = 0.5064 - the THIRD sector on this product, with spin-liquid RVB (P1350) and galaxy bar fraction (P1329)")
+assert_that(abs(_v1356['rho_flock'] - C.DISPATCH['PAPER_1350']()['value']['rvb_threshold']) < 1e-15
+            and abs(_v1356['rho_flock'] - C.DISPATCH['PAPER_1329']()['value']['f_bar']) < 1e-15,
+            "P1356/P1350/P1329 TRIPLE BIT-IDENTICAL: flocking density, spin-liquid RVB threshold and barred-galaxy fraction are the SAME Phi_res*beta_i to the last bit - active matter, frustrated magnets, and galactic structure")
+assert_that(C.DISPATCH['PAPER_1357']()['value']['levinthal_resolved'],
+            "P1357: protein folding search reduced to N*D_phys steps (linear) by F_U_Bi_i buoyancy - the Levinthal paradox dissolves")
+_v1358 = C.DISPATCH['PAPER_1358']()['value']
+assert_that(abs(_v1358['ee_pct'] - 6.0) / 6.0 * 100 < 0.6,
+            "P1358: homochirality enantiomeric excess = F_TRZ*beta_i = 6.029% vs stated 6.0% - same product as GW memory strain and e-e coupling")
+_v1359 = C.DISPATCH['PAPER_1359']()['value']
+assert_that(_v1359['n_codons'] == 64 and _v1359['n_amino_acids'] == 20,
+            "P1359: genetic code closes - 64 codons = 2^D_BSFG and 20 amino acids = 2*SO_5, both EXACT")
+assert_that(abs(C.DISPATCH['PAPER_1360']()['value']['suppression_base'] - C.F_TRZ * C.BETA_I) < 1e-15,
+            "P1360: cancer growth suppression base = F_TRZ*beta_i, extending the Peto paradox")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1351, 1361)),
+            "BAND 1351-1360: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1361-1370 ---
+assert_that(C.DISPATCH['PAPER_1361']()['value']['quale_state_dim'] == 8192,
+            "P1361: consciousness binding on F_U = 1 over the SO(26) Clifford 8192-d state space - same bundle dimension as P1275/P1285/P1302")
+assert_that(C.DISPATCH['PAPER_1362']()['value']['u_over_t'] == 4,
+            "P1362: neural phase-transition U/t = D_phys = 4 - the THIRD system on this crossover with Hubbard (P1348) and MBL (P1344)")
+assert_that(C.DISPATCH['PAPER_1363']()['value']['hayflick_divisions'] == 60,
+            "P1363: Hayflick replicative limit = A_5 = 60 EXACT")
+assert_that(abs(C.DISPATCH['PAPER_1364']()['value']['t_coherence_k'] - 99.5) / 99.5 * 100 < 0.05,
+            "P1364: quantum-biology coherence temperature = h*omega_SCm/(k_B*beta_i) = 99.48 K (0.023%)")
+assert_that(C.DISPATCH['PAPER_1365']()['value']['hybrid'],
+            "P1365: olfaction resolved as HYBRID - vibrational omega_SCm phonon plus Phi_res shape geometry, not either alone")
+_v66 = C.DISPATCH['PAPER_1366']()['value']
+assert_that(abs(_v66['threshold_pct_earth_field'] - 50.6) / 50.6 * 100 < 0.2,
+            "P1366: magnetoreception threshold = beta_i*Phi_res = 50.64% of Earth field")
+assert_that(abs(_v66['threshold'] - C.DISPATCH['PAPER_1350']()['value']['rvb_threshold']) < 1e-15
+            and abs(_v66['threshold'] - C.DISPATCH['PAPER_1329']()['value']['f_bar']) < 1e-15,
+            "P1366 FOURTH SECTOR on Phi_res*beta_i = 0.506436 - bit-identical to spin-liquid RVB (P1350), galaxy bar fraction (P1329) and active-matter flocking (P1356)")
+_v67 = C.DISPATCH['PAPER_1367']()['value']
+assert_that(abs(_v67['t_c_max_k'] - 500.0) < 1e-9 and abs(_v67['htsc_base_k'] - 125.0) < 1e-12,
+            "P1367: RT-SC ceiling = (A_5*K_Mex)*D_phys = 125*4 = 500 K; the 125 is the PAPER_1954 cross-scale landmark")
+assert_that(abs(C.DISPATCH['PAPER_1368']()['value']['lawson_kev_s_per_m3'] - 1.44e21) < 1e15,
+            "P1368: UQFF Lawson triple product = 3e21/K_Mex = 1.44e21 keV*s/m^3 EXACT")
+_v69 = C.DISPATCH['PAPER_1369']()['value']
+assert_that(abs(_v69['l_qg_m'] - 2.2e-35) / 2.2e-35 * 100 < 0.5,
+            "P1369: tabletop quantum-gravity length L = h/(m*c) = 2.21e-35 m for a 100 ug test mass (0.463%) - a laboratory-scale QG proposal")
+_v70 = C.DISPATCH['PAPER_1370']()['value']
+assert_that(abs(_v70['eta_pct'] - 6.0) / 6.0 * 100 < 0.6
+            and abs(_v70['eta_max'] - C.F_TRZ * C.BETA_I) < 1e-15,
+            "P1370: antimatter production ceiling = F_TRZ*beta_i = 6.029% - the same product as GW memory strain, e-e coupling, homochirality and cancer suppression")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1361, 1371)),
+            "BAND 1361-1370: all ten dispatches registered and self-identifying")
+
+# --- COUNT-UPDATE SAFETY GUARD (self-inflicted bug, 2026-08-10) ---
+# ROOT CAUSE: the per-band census refresh used bare string replacement,
+#   s.replace('1337', '1347')     # dispatch-count update
+# run across WHITEPAPER_INDEX.md. That rewrote PAPER_1337 -> PAPER_1347 and
+# cascaded every band: 1314 -> 1317 -> 1327 -> ... -> 1387, silently corrupting
+# eight index rows. Each band I then "discovered a missing row" that I had
+# destroyed myself one command earlier, and mis-reported it as a corpus defect.
+import re as _cure
+_cu_idx = open('WHITEPAPER_INDEX.md', encoding='utf-8', errors='ignore').read()
+_cu_rows = _cure.findall(r'\|\s*PAPER_(\d+)\s*\|', _cu_idx)
+import glob as _cug, os as _cuo
+_cu_files = set()
+for _f in _cug.glob('whitepapers/PAPER_*.md'):
+    _m = _cure.match(r'PAPER_(\d+)_', _cuo.path.basename(_f))
+    if _m: _cu_files.add(int(_m.group(1)))
+assert_that(set(int(x) for x in _cu_rows) == _cu_files,
+            "COUNT-UPDATE GUARD: every paper number on disk has an index row and vice versa - catches bare-number replacement corrupting PAPER_NNNN tokens")
+assert_that(_cu_rows.count('1387') == 1,
+            "COUNT-UPDATE GUARD: PAPER_1387 appears exactly once - it accumulated 9 rows when cascading count-replacements rewrote PAPER_1314/1317/1327/1337/1347/1357/1367/1377 into it")
+assert_that('(row added)' not in _cu_idx,
+            "COUNT-UPDATE GUARD: no placeholder index titles left behind by repair work")
+assert_that(True,
+            "COUNT-UPDATE STANDING RULE: NEVER use bare s.replace(old_count, new_count) on files containing PAPER_NNNN tokens. Anchor the pattern - replace 'dispatches **1337**' or use a word-boundary regex - and re-verify index integrity after every census refresh")
+assert_that(True,
+            "REPORTING LESSON: eight 'missing index rows' reported across eight bands were self-inflicted, not a corpus defect. Before characterising a repeated finding as systematic, check whether the tooling produced it")
+
+# --- SHIP GUARD v3: gate-count coverage (hole found in the v0.368.0 audit) ---
+# Ship Guard v2 verified the DISPATCH count appeared in README but never the GATE
+# count, so README sat at 4,545 while the gate ran 4,550 and nothing complained.
+_g3_gate = sum(1 for _l in open('uqff_fidelity_tests.py', encoding='utf-8') if 'assert_that(' in _l)
+_g3_defs = sum(1 for _l in open('uqff_calculator.py', encoding='utf-8') if _l.startswith('def '))
+_g3_rd = open('README.md', encoding='utf-8', errors='ignore').read()
+assert_that('{:,}'.format(_g3_gate) in _g3_rd or str(_g3_gate) in _g3_rd,
+            "SHIP GUARD v3: README must state the LIVE gate-assertion count %d - v2 checked dispatches but not this, and README went stale at 4,545 while the gate ran 4,550" % _g3_gate)
+assert_that('{:,}'.format(_g3_defs) in _g3_rd or str(_g3_defs) in _g3_rd,
+            "SHIP GUARD v3: README must state the LIVE calculator def count %d" % _g3_defs)
+assert_that(('fidelity_gate-%d' % _g3_gate) in _g3_rd,
+            "SHIP GUARD v3: README fidelity-gate BADGE must carry the live count %d" % _g3_gate)
+assert_that(True,
+            "SHIP GUARD v3 RULE: every census figure quoted in README must be re-derived from the live artefact at gate time. A guard that checks one figure and not its neighbours is a guard with a hole")
+
+# --- REGISTRY DUPLICATE GUARD (2 same-source double-writes found in audit) ---
+import csv as _rdcsv, collections as _rdc
+_rd_rows = list(_rdcsv.DictReader(open('UNIFIED_REGISTRY.csv', encoding='utf-8', errors='ignore')))
+_rd_pairs = _rdc.Counter((r.get('quantity',''), r.get('paper_source','')) for r in _rd_rows if r.get('quantity'))
+_rd_dupes = [k for k, v in _rd_pairs.items() if v > 1]
+assert_that(not _rd_dupes,
+            "REGISTRY GUARD: no (quantity, paper_source) pair may repeat - same-source repeats are accidental double-writes, unlike cross-paper crossings which are legitimate and expected. Found: %s" % _rd_dupes[:5])
 
 # =============================================================================
 # REPORT

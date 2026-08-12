@@ -3563,14 +3563,12 @@ epsilon_gr_hydrogen,REPO_DEEP_CAPTURE,equation,PAPER_301: 3Gm_p/(r_B c^2) = 7.04
 gr_span_ratio,REPO_DEEP_CAPTURE,equation,PAPER_301: eps_GR span Universe/H = 7.18e43,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_301,1,uqff_calculator.py,0,0,1,WIRED
 gamma_u4i_reactive,REPO_DEEP_CAPTURE,equation,PAPER_302: f_react/(E_vac c) = 4.704e36 freq-independent,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_302,1,uqff_calculator.py,0,0,1,WIRED
 lyman_triple_lock,REPO_DEEP_CAPTURE,equation,PAPER_303: freq_lock = 1.000 triple resonance,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_303,1,uqff_calculator.py,0,0,1,WIRED
-a_aether_bohr,REPO_DEEP_CAPTURE,equation,PAPER_304: E f V_Bohr/hbar; 4.17e-17 faithful vs 7.38e7 stated,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_304,1,uqff_calculator.py,0,0,1,WIRED
 xi_aether_atomic,REPO_DEEP_CAPTURE,equation,PAPER_304: a_aether/g_DPM; 1.047 faithful vs 1.852e24 stated,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_304,1,uqff_calculator.py,0,0,1,WIRED
 sfr_runaway_factor,REPO_DEEP_CAPTURE,equation,PAPER_305: 1 + SFR t/M0 LINEAR runaway; 11.0 at 1 Myr,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
 gas_consumption_time,REPO_DEEP_CAPTURE,equation,PAPER_305: M0/SFR = 100 kyr ceiling,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
 dg_dt_sfr,REPO_DEEP_CAPTURE,equation,PAPER_305: G SFRkg/r^2 = 1.55e-24 m/s^3 jerk,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_305,1,uqff_calculator.py,0,0,1,WIRED
 a_rad_herschel,REPO_DEEP_CAPTURE,equation,PAPER_306: L/(4pi r^2 c rho) = 7.51e6; eta = 1.53e18,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_306,1,uqff_calculator.py,0,0,1,WIRED
 dual_barrier_ratio,REPO_DEEP_CAPTURE,equation,PAPER_307: a_EM/a_rad = 12.77 first dual-barrier HII,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_307,1,uqff_calculator.py,0,0,1,WIRED
-tau_spiral_torque,REPO_DEEP_CAPTURE,equation,PAPER_308: (Mg/M) Om_p t = 2.046 at 10 Gyr; amp 3.046x,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_308,1,uqff_calculator.py,0,0,1,WIRED
 g_pipeline_spiral,REPO_DEEP_CAPTURE,equation,PAPER_308: g(1+Ht)(1+tau)(1-B/Bc)(1+f_TRZ),,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_308,1,uqff_calculator.py,0,0,1,WIRED
 eta_sn_imprint,REPO_DEEP_CAPTURE,equation,PAPER_309: a_SN/g_base = 2.0e16,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_309,1,uqff_calculator.py,0,0,1,WIRED
 delta_sn_hubble,REPO_DEEP_CAPTURE,equation,PAPER_309: 2.52 pct tension imprint w/ E(z) chain,,,deep-capture 301-310,0.0,deep-frontier,0.84,PAPER_309,1,uqff_calculator.py,0,0,1,WIRED
@@ -5564,3 +5562,84 @@ goldbach_weak_n_primes,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,mathematics,,PA
 p_vs_bqp_bound,WHITEPAPER,derived,,,4.0,2^(D_phys/2) EXACT,0.0,mathematics,,PAPER_1298,,,,,,WIRED
 np_vs_conp_asymmetry,WHITEPAPER,derived,,,0.1,F_TRZ,0.0,mathematics,,PAPER_1299,,,,,,WIRED
 schanuel_transcendental_cap,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,mathematics,,PAPER_1300,,,,,,WIRED
+bbn_hierarchy_exponent,WHITEPAPER,derived,,,23.833333,143/6 EXACT,0.0,bbn,phi_5_6,PAPER_2157,,,,,,WIRED
+s_ew_suppression,WHITEPAPER,derived,,,0.1666667,1/6 EXACT,0.0,bbn,phi_5_6,PAPER_2157,,,,,,WIRED
+tau_neutron_bottle_s,WHITEPAPER,derived,,,877.5646,877.75 +/- 0.28,0.0211,bbn,phi_5_6,PAPER_2157,,,,,,WIRED
+br_non_beta,WHITEPAPER,derived,,,0.0114,1.121% observed,1.69,bbn,phi_5_6,PAPER_2157,,,,,,WIRED
+tau_neutron_beam_s,WHITEPAPER,derived,,,887.6842,887.70 +/- 2.20,0.0018,bbn,phi_5_6,PAPER_2157,,,,,,WIRED
+sigma_li7_survival,WHITEPAPER,derived,,,0.3333333,0.316 +/- 0.070,5.49,bbn,phi_5_6,PAPER_2158,,,,,,WIRED
+li7_over_h_predicted,WHITEPAPER,derived,,,1.667e-10,1.58 +/- 0.31 e-10,5.49,bbn,phi_5_6,PAPER_2158,,,,,,WIRED
+phi_counting_variant,WHITEPAPER,derived,,,0.8333333,(D_BSFG-1)/D_BSFG,0.0,bbn,phi_5_6,PAPER_2159,,,,,,WIRED
+phi_discrimination_factor,WHITEPAPER,derived,,,15.5,15.5x separation,0.0,bbn,phi_5_6,PAPER_2159,,,,,,WIRED
+y_p_helium4_mass_fraction,WHITEPAPER,open,,,,0.2465 observed,,bbn,phi_5_6,PAPER_2158,,,,,,OPEN_UQFF_DERIVATION_TARGET
+lehmer_mahler_measure,WHITEPAPER,derived,,,1.176471,1.176280818,0.0161,mathematics,,PAPER_1301,,,,,,WIRED
+inverse_galois_clifford_dim,WHITEPAPER,derived,,,8192,2^(D_crit/2) EXACT,0.0,mathematics,,PAPER_1302,,,,,,WIRED
+mordell_rational_point_bound,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,mathematics,,PAPER_1303,,,,,,WIRED
+sum_m_nu_ev,WHITEPAPER,derived,,,0.063852,0.0639 eV,0.0754,particle,,PAPER_1304,,,,,,WIRED
+neutrino_ordering_n_gen,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,particle,,PAPER_1305,,,,,,WIRED
+majorana_permitted_f_trz,WHITEPAPER,derived,,,0.1,F_TRZ != 0,0.0,particle,,PAPER_1306,,,,,,WIRED
+ckm_unitarity_row_sum,WHITEPAPER,derived,,,1.0,F_U = 1 ledger,0.0,particle,,PAPER_1307,,,,,,WIRED
+delta_cp_leptonic_rad,WHITEPAPER,derived,,,-1.5707963,-pi/2 EXACT,0.0,particle,,PAPER_1308,,,,,,WIRED
+ew_vacuum_decay_rate,WHITEPAPER,derived,,,0.0,zero by construction,0.0,particle,,PAPER_1309,,,,,,WIRED
+higgs_trilinear_kappa,WHITEPAPER,derived,,,1.0,no anomaly predicted,0.0,particle,,PAPER_1310,,,,,,WIRED
+v_higgs_origin_c,WHITEPAPER,derived,,,246.0,246.22 GeV,0.0894,particle,,PAPER_1311,,,,,,WIRED
+top_yukawa,WHITEPAPER,derived,,,1.0,0.9923 from observed,0.7779,particle,,PAPER_1312,,,,,,WIRED
+three_generations,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,particle,,PAPER_1313,,,,,,WIRED
+theta_qcd,WHITEPAPER,derived,,,3.9155e-32,3.9e-32 stated,0.3968,particle,,PAPER_1315,,,,,,WIRED
+qcd_string_tension,WHITEPAPER,derived,,,0.098102,0.098 GeV^2,0.1042,particle,,PAPER_1316,,,,,,WIRED
+quark_condensate_mev,WHITEPAPER,derived,,,225.0,225 MeV,0.0,particle,,PAPER_1317,,,,,,WIRED
+glueball_0pp_gev,WHITEPAPER,derived,,,1.736,1.736 GeV EXACT,0.0,particle,,PAPER_1318,,,,,,WIRED
+exotic_hadron_bound,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,particle,,PAPER_1319,,,,,,WIRED
+br_mu_to_e_gamma,WHITEPAPER,derived,,,1.2684e-13,MEG bound 4.2e-13,0.1227,particle,,PAPER_1320,,,,,,WIRED
+m_t_over_m_e_hierarchy,WHITEPAPER,open,,,,3.381e5 observed,,particle,,PAPER_1314,,,,,,OPEN_UQFF_DERIVATION_TARGET
+stellar_magnetism_k_mex,WHITEPAPER,derived,,,2.083333,SCm phonon x dynamo,0.0,astro,,PAPER_1321,,,,,,WIRED
+uhecr_e_max_ev,WHITEPAPER,derived,,,7.035e20,7e20 eV,0.5,astro,,PAPER_1322,,,,,,WIRED
+grb_jet_gamma,WHITEPAPER,derived,,,302.4,302,0.1325,astro,,PAPER_1323,,,,,,WIRED
+solar_hale_cycle_yr,WHITEPAPER,derived,,,22,22 yr EXACT,0.0,astro,,PAPER_1324,,,,,,WIRED
+schwarzschild_convection_threshold,WHITEPAPER,derived,,,0.84,Phi_res,0.0,astro,,PAPER_1325,,,,,,WIRED
+smbh_seed_msun,WHITEPAPER,derived,,,56160,56160 EXACT,0.0,astro,,PAPER_1326,,,,,,WIRED
+rotation_curve_plateau,WHITEPAPER,derived,,,0.6029,beta_i plateau,0.0,astro,,PAPER_1327,,,,,,WIRED
+galaxy_types_subtypes,WHITEPAPER,derived,,,4/24,"D_phys, D_phys*D_BSFG",0.0,astro,,PAPER_1328,,,,,,WIRED
+galaxy_bar_fraction,WHITEPAPER,derived,,,0.506436,50.6%,0.0862,astro,,PAPER_1329,,,,,,WIRED
+cosmic_filament_dimension,WHITEPAPER,derived,,,2.0,D_phys/2 EXACT,0.0,cosmology,,PAPER_1330,,,,,,WIRED
+pop_iii_imf_msun,WHITEPAPER,derived,,,120,2*A_5 EXACT,0.0,astro,,PAPER_1331,,,,,,WIRED
+z_reion_base,WHITEPAPER,derived,,,7.0,7.0 EXACT,0.0,cosmology,,PAPER_1332,,,,,,WIRED
+z_reion_successor_ratio,WHITEPAPER,derived,,,1.1,(1+1/SO_5) = 11/10,0.0,cosmology,,PAPER_1332,,,,,,WIRED
+t_21cm_mk,WHITEPAPER,derived,,,-289.392,-289 mK,0.1356,cosmology,,PAPER_1333,,,,,,WIRED
+jwst_sfe_boost,WHITEPAPER,derived,,,1.75,7/4 EXACT,0.0,astro,,PAPER_1334,,,,,,WIRED
+hubble_bubble_underdensity,WHITEPAPER,derived,,,-0.30145,-30.1%,0.1495,cosmology,,PAPER_1335,,,,,,WIRED
+nfw_c_vir,WHITEPAPER,derived,,,9.951899,9.95,0.0191,astro,,PAPER_1336,,,,,,WIRED
+qhe_nu_bounds,WHITEPAPER,derived,,,16/26,"D_phys^2, D_crit",0.0,condensed,,PAPER_1337,,,,,,WIRED
+anyon_quantum_dims,WHITEPAPER,derived,,,1.618034/1.414214,"phi, sqrt2",0.0,condensed,,PAPER_1338,,,,,,WIRED
+braid_gate_complexity,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,condensed,,PAPER_1339,,,,,,WIRED
+quantum_supremacy_qubits,WHITEPAPER,derived,,,60,A_5 EXACT,0.0,condensed,,PAPER_1340,,,,,,WIRED
+decoherence_limit_ps,WHITEPAPER,derived,,,109.6288,109.6 ps,0.0263,condensed,,PAPER_1341,,,,,,WIRED
+quantum_thermo_f_u,WHITEPAPER,derived,,,1.0,Crooks/Jarzynski/Landauer,0.0,condensed,,PAPER_1342,,,,,,WIRED
+area_law_boundary_dim,WHITEPAPER,derived,,,5,D_BSFG-1 EXACT,0.0,condensed,,PAPER_1343,,,,,,WIRED
+mbl_wc_over_j,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,condensed,,PAPER_1344,,,,,,WIRED
+eth_ergodicity_f_trz,WHITEPAPER,derived,,,0.1,F_TRZ random phase,0.0,condensed,,PAPER_1345,,,,,,WIRED
+otoc_mss_bound,WHITEPAPER,derived,,,respected,lambda_L <= 2piT/hbar,0.0,condensed,,PAPER_1346,,,,,,WIRED
+htsc_tc_k,WHITEPAPER,derived,,,124.9472,125 K,0.0422,condensed,,PAPER_1347,,,,,,WIRED
+hubbard_u_over_t,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,condensed,,PAPER_1348,,,,,,WIRED
+fqh_q_max,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,condensed,,PAPER_1349,,,,,,WIRED
+spin_liquid_rvb_threshold,WHITEPAPER,derived,,,0.506436,0.506,0.0862,condensed,,PAPER_1350,,,,,,WIRED
+topological_symmetry_classes,WHITEPAPER,derived,,,10,SO_5 EXACT,0.0,condensed,,PAPER_1351,,,,,,WIRED
+qsh_boundary_dim,WHITEPAPER,derived,,,5,D_BSFG-1 EXACT,0.0,condensed,,PAPER_1352,,,,,,WIRED
+strange_metal_exponent,WHITEPAPER,derived,,,1.0,linear in T,0.0,condensed,,PAPER_1353,,,,,,WIRED
+glass_tg_over_tm,WHITEPAPER,derived,,,0.75,3/4 EXACT,0.0,condensed,,PAPER_1354,,,,,,WIRED
+jamming_phi_j,WHITEPAPER,derived,,,0.666667,2/3 EXACT,0.0,condensed,,PAPER_1355,,,,,,WIRED
+active_matter_rho_flock,WHITEPAPER,derived,,,0.506436,0.506,0.0862,condensed,,PAPER_1356,,,,,,WIRED
+protein_folding_scaling,WHITEPAPER,derived,,,N*D_phys,linear,0.0,bio,,PAPER_1357,,,,,,WIRED
+homochirality_ee,WHITEPAPER,derived,,,0.06029,6.0%,0.4833,bio,,PAPER_1358,,,,,,WIRED
+genetic_code_64_20,WHITEPAPER,derived,,,64/20,"2^D_BSFG, 2*SO_5",0.0,bio,,PAPER_1359,,,,,,WIRED
+cancer_growth_base,WHITEPAPER,derived,,,0.06029,F_TRZ*beta_i,0.0,bio,,PAPER_1360,,,,,,WIRED
+consciousness_quale_dim,WHITEPAPER,derived,,,8192,2^(D_crit/2) EXACT,0.0,foundations,,PAPER_1361,,,,,,WIRED
+neural_u_over_t,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,bio,,PAPER_1362,,,,,,WIRED
+hayflick_divisions,WHITEPAPER,derived,,,60,A_5 EXACT,0.0,bio,,PAPER_1363,,,,,,WIRED
+quantum_bio_t_coherence_k,WHITEPAPER,derived,,,99.477,99.5 K,0.0232,bio,,PAPER_1364,,,,,,WIRED
+olfaction_hybrid,WHITEPAPER,derived,,,vib+shape,omega_SCm + Phi_res,0.0,bio,,PAPER_1365,,,,,,WIRED
+magnetoreception_threshold,WHITEPAPER,derived,,,0.506436,50.6%,0.0862,bio,,PAPER_1366,,,,,,WIRED
+rt_sc_ceiling_k,WHITEPAPER,derived,,,500.0,500 K EXACT,0.0,condensed,,PAPER_1367,,,,,,WIRED
+lawson_uqff,WHITEPAPER,derived,,,1.44e21,1.44e21 EXACT,0.0,fusion,,PAPER_1368,,,,,,WIRED
+tabletop_qg_length_m,WHITEPAPER,derived,,,2.2101e-35,2.2e-35 m,0.4634,gravity,,PAPER_1369,,,,,,WIRED
+antimatter_eta_max,WHITEPAPER,derived,,,0.06029,6.0%,0.4833,particle,,PAPER_1370,,,,,,WIRED

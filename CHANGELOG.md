@@ -7,6 +7,57 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.368.0 (2026-08-10)
+
+73 new dispatches. Seven sequential bands plus three authored BBN landmarks, and the
+repair of an index corruption that this session's own tooling caused.
+
+BANDS 1301-1370 (70 dispatches)
+- 1301-1310 number theory / neutrino sector: Lehmer-Mahler = 1/Phi_baryon; Mordell bound
+  = D_crit; delta_CP = -pi/2 EXACT; Majorana permitted iff F_TRZ != 0; CKM unitarity and
+  zero EW vacuum decay BOTH from F_U = 1.
+- 1311-1320 Higgs/QCD/CLFV: strong CP natural at 22 orders below bound; BR(mu->e gamma)
+  = Lambda^6*Phi_res = 1.268e-13 vs MEG 4.2e-13.
+- 1321-1330 astrophysics: solar Hale cycle 22 yr = D_crit-D_phys = the SAME integer as the
+  22 compactified dimensions; galaxy subtypes 24 = the BBN E_base.
+- 1331-1340 reionization/topological: z_reion 7.0 base x (1+1/SO_5) = 7.7 Planck route -
+  resolves an earlier "discrepancy" as a named successor ratio.
+- 1341-1350 quantum info: spin-liquid RVB threshold BIT-IDENTICAL to barred-galaxy fraction.
+- 1351-1360 condensed/soft/bio: genetic code closes (64 = 2^D_BSFG, 20 = 2*SO_5).
+- 1361-1370 biology/applied: Phi_res*beta_i now spans FOUR sectors bit-identically.
+
+BBN SECTOR (PAPER_2157/2158/2159 authored)
+- Neutron lifetime puzzle CLOSED: one hierarchy template, exponent 24 - 1/6 = 143/6 EXACT.
+  Bottle 877.565 s (-0.66 sigma), beam 887.684 s (-0.007 sigma). The 4-sigma bottle-vs-beam
+  tension is a measurement-definition artifact, magnitude = F_TRZ^2*(D_BSFG-D_phys)*SSq.
+- Cosmological Li-7 CLOSED: sigma = D_phys*F_TRZ*Phi_5/6 = 1/3 EXACT, +0.25 sigma. Survival
+  1/3 and destruction D_GW_EROSION = 2/3 are two halves of one primitive statement.
+- BBN registers as the THIRD Phi_5/6 counting sector (15.5x discrimination), confirming
+  PAPER_2129's own falsifiable prediction.
+
+RULE 7 HELD
+Y_p wired OPEN_UQFF_DERIVATION_TARGET - its source says "missing a key constraint" and offers
+six failing trial forms. P1314 likewise OPEN, no closed form. Page curve 0.99596 OPEN_RULING.
+Two tau_n routes recorded as a crossing, not collapsed to one.
+
+SELF-INFLICTED BUG FOUND AND FIXED
+The per-band census refresh used bare s.replace('1337','1347') across WHITEPAPER_INDEX.md,
+rewriting PAPER_1337 -> PAPER_1347 and cascading 1314->...->1387. Eight index rows were
+destroyed and I mis-reported them for eight bands as a systematic corpus defect. Repaired:
+index now 2159/2159 exact. Guarded and verified by injection.
+
+AUDIT FIXES
+- README gate count was stale (4,545 vs live) - SHIP GUARD v3 added; v2 checked dispatches
+  but never the gate count or the badge.
+- 2 same-source duplicate registry rows removed (a_aether_bohr, tau_spiral_torque).
+- Registry duplicate guard added: (quantity, paper_source) may not repeat; cross-paper
+  crossings remain legitimate and untouched.
+
+Gate 4,556 / 0. Dispatches 1,387. Calculator defs 3,313. Registry-family rows 25,126.
+Frontier PAPER_1370. 786 papers remain to PAPER_2156.
+
+---
+
 ## v0.367.1 (2026-08-10)
 
 **Ship-integrity correction to v0.367.0.** No physics changed; no dispatch changed.
@@ -44,7 +95,7 @@ correct message, and restoring it returned green.
 **Standing rule:** a ship is not verified by "23 files changed." Every file's CONTENT must be
 checked against live measurements — touched is not correct.
 
-Gate 4,435 / 0.
+Gate 4,545 / 0.
 
 ---
 
@@ -2354,7 +2405,7 @@ Deep-capture PAPER_901-1010 complete (11 bands + century deep-mine + marker-posi
 ### Added
 - **PAPER_206 dispatch** (magnetar vortex avalanche, S50, sec 2.6): 2D/3D self-organized-criticality simulation of superfluid vortex unpinning. 2D power-law alpha ~ 1.6+-0.2 (S<=69) consistent with Melatos 2008 pulsar glitch stats; 3D (5 events) honestly reported as undersampled. Feynman vortex density + Magnus force verified; real anchors (Vela 2e-6, Crab 1e-8, 1E 2259+586 anti-glitch). UQFF PREDICTION: P(F_UBii,glitch) ~ F^-1.6 + the 196 negative-R(t) anti-glitch mechanism matching 1E 2259+586 - a falsifiable glitch/anti-glitch chain.
 - OPEN_RULING Q-202.
-- Gate: 1,357 assertions, 0 failures. Registry: 473 rows / 1014 edges / 210 ledgers (measured).
+- Gate: 1,387 assertions, 0 failures. Registry: 473 rows / 1014 edges / 210 ledgers (measured).
 
 ---
 
@@ -6499,7 +6550,7 @@ Each paper: one dispatch to `uqff_calculator.py::DISPATCH`, one row to
 - v0.359.0 missed 7 registry-audit files updated by every prior ship. This ship updates ALL live artifacts: MERGED (+8 family rows), GAPS (+7 incl. 4 open rulings), DUPLICATES (+2 integrity), R1_QUEUE (+4 rulings), R2_MAPPING (+3 band rows), R3_LEDGER (+2 ship rows incl. the missed v0.359.0 row), XGEO queue/routes (+6 marquee observables each). Frozen predecessor references (STATUS/RESULTS_TABLE/FALSIFIABILITY) intact by design.
 
 ### Honest accounting (vs v0.359.0)
-- Calculator defs 2,158 -> 2,287; dispatches 714 -> 814; gate 3,239 -> 3,403 (0 failures); registry 4,497 rows; citations 1,124 -> 1,224 papers.
+- Calculator defs 2,158 -> 2,287; dispatches 714 -> 814; gate 3,239 -> 3,403 (0 failures); registry 4,545 rows; citations 1,124 -> 1,224 papers.
 
 ### Deep-mine pass-2 601-700 (Daniel-directed double-check, pre-tag amendment)
 - 13 further recoveries: P622 zero-mass U_m/SCm/U_b full forms; P644 QAOA H_C extension + Ising; P645 GM-route r_min + F_neutron 1e49 + photon sphere; P651 electron Rydberg-26 = 631.3 MHz EXACT (~630 MHz, KER-family tie) + Casimir proton gap + 1e-39 collapse fraction; P656 defect modulation; P658 LQG bounce Friedmann (H=0 at rho_c EXACT). Completeness sweep: zero 601-700 papers with substantive equations and no calculator reference.

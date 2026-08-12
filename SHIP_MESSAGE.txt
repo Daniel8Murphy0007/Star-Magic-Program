@@ -1,36 +1,48 @@
-v0.367.1: ship-integrity correction to v0.367.0 (stale documentation)
+v0.368.0: bands PAPER_1301-1370 + BBN sector (PAPER_2157-2159) + self-inflicted-bug repair
 
-No physics changed. No dispatch changed. Gate 4,435 / 0.
+73 new dispatches. Seven sequential bands plus three authored BBN landmarks, and the
+repair of an index corruption that this session's own tooling caused.
 
-WHY
-v0.367.0 shipped with stale docs because the verifier checked whether the 23 must-change
-files were TOUCHED, not whether their CONTENT was current. Appending one CSV row marks a
-file "changed" while its prose stays releases out of date. Daniel caught it.
+BANDS 1301-1370 (70 dispatches)
+- 1301-1310 number theory / neutrino sector: Lehmer-Mahler = 1/Phi_baryon; Mordell bound
+  = D_crit; delta_CP = -pi/2 EXACT; Majorana permitted iff F_TRZ != 0; CKM unitarity and
+  zero EW vacuum decay BOTH from F_U = 1.
+- 1311-1320 Higgs/QCD/CLFV: strong CP natural at 22 orders below bound; BR(mu->e gamma)
+  = Lambda^6*Phi_res = 1.268e-13 vs MEG 4.2e-13.
+- 1321-1330 astrophysics: solar Hale cycle 22 yr = D_crit-D_phys = the SAME integer as the
+  22 compactified dimensions; galaxy subtypes 24 = the BBN E_base.
+- 1331-1340 reionization/topological: z_reion 7.0 base x (1+1/SO_5) = 7.7 Planck route -
+  resolves an earlier "discrepancy" as a named successor ratio.
+- 1341-1350 quantum info: spin-liquid RVB threshold BIT-IDENTICAL to barred-galaxy fraction.
+- 1351-1360 condensed/soft/bio: genetic code closes (64 = 2^D_BSFG, 20 = 2*SO_5).
+- 1361-1370 biology/applied: Phi_res*beta_i now spans FOUR sectors bit-identically.
 
-WHAT SHIPPED STALE (all corrected here)
-- README: "v0.358.0 complete-compile campaign live"           (9 releases old)
-- README: the v0.366.0 release paragraph, never replaced      (1 release old)
-- README: "4,750 fns / 23,644 rows / 1,264 papers / gate 4,243" (1 release old)
-- README: "Wired: 914 distinct dispatches", "frontier PAPER_001-900" (~30 releases old)
-- README: whitepapers badge 2255 vs 2245 measured files
-- CITATION.cff: a SECOND version field at line 56, still 0.361.0 (6 releases old)
-- WHITEPAPER_INDEX: "Campaign frontier: PAPER_328", "wired papers: 342" (v0.336.0 era)
+BBN SECTOR (PAPER_2157/2158/2159 authored)
+- Neutron lifetime puzzle CLOSED: one hierarchy template, exponent 24 - 1/6 = 143/6 EXACT.
+  Bottle 877.565 s (-0.66 sigma), beam 887.684 s (-0.007 sigma). The 4-sigma bottle-vs-beam
+  tension is a measurement-definition artifact, magnitude = F_TRZ^2*(D_BSFG-D_phys)*SSq.
+- Cosmological Li-7 CLOSED: sigma = D_phys*F_TRZ*Phi_5/6 = 1/3 EXACT, +0.25 sigma. Survival
+  1/3 and destruction D_GW_EROSION = 2/3 are two halves of one primitive statement.
+- BBN registers as the THIRD Phi_5/6 counting sector (15.5x discrimination), confirming
+  PAPER_2129's own falsifiable prediction.
 
-The CITATION.cff case is the instructive one: the bump regexed the FIRST version field and
-reported success. The file has two.
+RULE 7 HELD
+Y_p wired OPEN_UQFF_DERIVATION_TARGET - its source says "missing a key constraint" and offers
+six failing trial forms. P1314 likewise OPEN, no closed form. Page curve 0.99596 OPEN_RULING.
+Two tau_n routes recorded as a crossing, not collapsed to one.
 
-SHIP GUARD v2 — staleness now fails the gate
-Nine assertions check prose against LIVE measurements, not remembered figures:
-  - the campaign line must name the current VERSION string
-  - README must carry exactly ONE release paragraph, for the current version
-  - README and WHITEPAPER_INDEX must state the live len(DISPATCH)
-  - EVERY version: field in CITATION.cff must match, not just the first
-  - a blacklist rejects superseded census figures verbatim
-  - the v0.336.0-era index header block is rejected
+SELF-INFLICTED BUG FOUND AND FIXED
+The per-band census refresh used bare s.replace('1337','1347') across WHITEPAPER_INDEX.md,
+rewriting PAPER_1337 -> PAPER_1347 and cascading 1314->...->1387. Eight index rows were
+destroyed and I mis-reported them for eight bands as a systematic corpus defect. Repaired:
+index now 2159/2159 exact. Guarded and verified by injection.
 
-Guard verified to bite: re-injecting the stale campaign line failed the gate with the correct
-message; restoring it returned green. A guard never observed to fail is not a guard.
+AUDIT FIXES
+- README gate count was stale (4,545 vs live) - SHIP GUARD v3 added; v2 checked dispatches
+  but never the gate count or the badge.
+- 2 same-source duplicate registry rows removed (a_aether_bohr, tau_spiral_torque).
+- Registry duplicate guard added: (quantity, paper_source) may not repeat; cross-paper
+  crossings remain legitimate and untouched.
 
-STANDING RULE
-A ship is not verified by "23 files changed." Every file's CONTENT must be checked against
-live measurements - touched is not correct.
+Gate 4,556 / 0. Dispatches 1,387. Calculator defs 3,313. Registry-family rows 25,126.
+Frontier PAPER_1370. 786 papers remain to PAPER_2156.

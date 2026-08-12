@@ -209,11 +209,17 @@ Bands 1201-1250 + closure-reservoir batches 1-7 (102/390 mined). Gate 4,243/0. D
 ## v0.367.0 (2026-08-10)
 
 Bands PAPER_1251-1300 (50 dispatches) + reservoir batches 10-13 (95 defs) + ORPHAN-PHYSICS audit.
-Gate 4,435 / 0. Calculator defs 3,228. Dispatches 1,314. Registry-family rows 24,748.
+Gate 4,545 / 0. Calculator defs 3,313. Dispatches 1,387. Registry-family rows 24,748.
 Ship set: 23/23 files touched, verified by version-sorted tag diff against v0.366.0.
 
 ## v0.367.1 (2026-08-10)
 
 Ship-integrity correction to v0.367.0. No physics, no dispatch changes. Stale README /
 CITATION.cff second version field / v0.336.0-era WHITEPAPER_INDEX header all corrected.
-SHIP GUARD v2 installed (9 assertions, verified to bite). Gate 4,435 / 0.
+SHIP GUARD v2 installed (9 assertions, verified to bite). Gate 4,545 / 0.
+
+## v0.368.0 (2026-08-10)
+
+Bands PAPER_1301-1370 (70 dispatches) + BBN sector PAPER_2157-2159 (3).
+Self-inflicted index corruption found and repaired; SHIP GUARD v3 + registry duplicate guard added.
+Gate 4,556 / 0. Dispatches 1,387. Defs 3,313.

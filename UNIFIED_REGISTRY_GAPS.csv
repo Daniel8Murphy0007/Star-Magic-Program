@@ -90,3 +90,10 @@ neutrino_mass_splittings,PAPER_a6,1.65/4.25,ratio = D_crit+N_ch-2 = 33 EXACT,Q-R
 flatness_suppression,PAPER_1461,9.2,1/D_crit^7 high vs stated 1.14e-10,OPEN,v0.367.0
 page_curve_recovery,PAPER_1280,0.404,no primitive decomposition in corpus,Q-1280-PAGE,v0.367.0
 coronal_temperature,PAPER_1261,1.15,beta_i truncation per paper,DISCLOSED,v0.367.0
+y_p_helium4,PAPER_2158,n/a,"source states ""missing a key constraint""; 6 trial forms all fail",Q-BBN-YP,v0.367.1
+tau_n_route_conflict,PAPER_1254 vs PAPER_2157,0.2,"879.31 s vs 877.565 s - two routes, both wired",Q-BBN-TAUN-ROUTE,v0.367.1
+lehmer_mahler_closure_missing,PAPER_1301,n/a,named closure _l96_uqff_axiom_lehmer_mahler_closure does not exist; wired from paper display identity,CLASS_A_CATCH,v0.367.1
+f_u_bi_2_11e208_phantom,PAPER_250/251/252/254/258,n/a,no computational source in repo; class yields -5.34e104,Q-230c PHANTOM,v0.367.1
+m_t_over_m_e,PAPER_1314,n/a,no closed form supplied; order statement only,OPEN,v0.367.1
+s26_variant_theta_qcd,PAPER_1315,26 orders,requires S_26^(3)=1.4531e26 not S_26=1.453162,VARIANT_CATCH,v0.367.1
+jamming_formula_paste,PAPER_1355,n/a,"paper prints P1354 formula (D_phys-1)/D_phys next to value 2/3; value correct, formula wrong",CLASS_A_CATCH,v0.367.1
