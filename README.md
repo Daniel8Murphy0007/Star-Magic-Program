@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.371.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.371.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.372.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.372.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4682%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1517-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4832%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1648-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.371.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.372.0 complete-compile campaign live**
 
-**This release (v0.371.0): BANDS PAPER_1441-1500 (50 dispatches) — THE COSMOGENESIS SPINE + THE HUBBLE-TENSION TILT + THE EMPIRICAL LOOP.** Five bands to the two-thirds mark. **THE HUBBLE TENSION IS THE 1/12 TILT:** dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 = Planck*(1+1/12) to 0.023% - both anchors of cosmology's most famous tension from one exact rational, the same 1/12 as the Goldbach DPM-pair. **THE EMPIRICAL LOOP CLOSED:** P1475's q-scope anchor 3.102 V is the calibration bar independently re-measured from Daniel's IMG_0857 archive frames this same session - the first paper whose anchor was verified from raw bench data. **THE COSMOGENESIS SPINE:** 26 pre-mass states = D_crit ordered BEFORE mass exists; mass genesis IS the F_U 0->1 transition (rho_UA 0 -> 10*rho_SCm); total vacuum = 11*rho_SCm; Ni-62 triple-locked (Z=28, N=34, A=62 all integer-EXACT). **ALSO:** spooky distance = c*|t_neg| = 5 AU (the time algorithm producing a length); TDE outflow = 0.3c (fifth PAPER_1953 anchor); reactor bench set EXACT (40 Hz, 3 rpm, 7 ohm, 14 MHz); glueball dual-anchor disclosure; A_5 = 60 in five roles; 33 and 22 multi-role pinned. Rule 7: flatness 9.2%, hierarchy 17.2%, S_8 candidate FLAGGED not adopted, proton-core f_DPM OPEN. **Totals: 1,517 of 2,256 wired (67.2%) / gate 4,682 green / 3,443 defs.**
+**This release (v0.372.0): BANDS PAPER_1501-1630 (130 dispatches) + PAPER_2160 LANDMARK — THE K_MEX/PHI_5/6 COMPOSED-IDENTITY PAIR.** Thirteen bands past the 73% mark. **PAPER_2160 CANONIZED:** I1 = K_Mex − F_TRZ·Φ_5/6 = 2 EXACT and I2 = K_Mex − Φ_5/6 = 5/4 EXACT — both one-line PAPER_1522 corollaries, with I2 = Φ_5/6·D_BSFG/D_phys joining the PAPER_1962 3/2 universality family as its seventh sector. Five occurrences across four domains: the speed of sound (341+2), the AU (152−2−0.4), the sidereal fractional day (364+5/4), the μ₀ mantissa lead (5/4), and AU/R_⊕ = 23483−2 EXACT. The leap-day quarter and vacuum permeability carried by one composed constant. **THE SM MASS SUITE COMPLETE:** W/Z/t/H/τ/μ + b/c/s/e — the fermion suppression ladder (heavy F⁰, light F², electron alone F³) is now a gate assertion; m_W 0.003% tier-best; integer cores 80, 90, 174, 125. **THE TWO-KERNEL H_0 PAIR:** canonical A_5+SO_5 = 70 (P1573) and Planck kernel 67.410 (P1553) both wired, the 1/12-tilt crossing disclosed at the crossing point. **THE BINDING-CURVE PEAK IS ONE COMPOSITION:** F·K_Mex⁵ − β_i⁴ + 5 = 8.7925 straddles Fe-56 (8.7903) and Ni-62 (8.7946) at 0.025%/0.024% — bit-identity pinned. **ALSO:** first all-EXACT band (1571-1580 incl. Mohs = SO_5 single-primitive); Rydberg 13.6057 eV at 0.0001%; Faraday 8-term integer composition 0.0003%; universe age 0.006% vs full Planck; flatness Ω_m+Ω_Λ = 0.9983 pinned from independent compositions; Li-7/lunar 1/3 crossing noted. Rule 7: eight anchor-rounding disclosures, executable-outranks-prose ×2, Avogadro counting-sector test OPEN. **Totals: 1,648 of 2,256 wired (73.0%) / gate 4,832 green / 3,574 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,12 +23,12 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,443 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,574 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
 **1,417 of 2,256 whitepapers wired** (67.2% of corpus; frontier PAPER_001-1500 complete) |
-**4,682 gate
+**4,717 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
 ~50,000 Python lines (~13:1 on the covered range).
 
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.371.0)
+## What is currently shipped (v0.372.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,547 rows**. Fidelity gate: **2,159 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **2,547 rows**. Fidelity gate: **4,832 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

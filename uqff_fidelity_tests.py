@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.371.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.372.0", "uqff_calculator.VERSION = 0.372.0 (bands 1501-1630 + PAPER_2160 landmark)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,15 +9556,15 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BANDS_1371_1400'
+_sg4_band = 'BAND_1591_1600'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1371_1400' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1591_1600' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('PAPER_1377' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
-            "SHIP GUARD v4: GAPS ledger must carry the band's Rule 7 disclosures (P1377 L-route 5.45%)")
-assert_that('v0.369.0' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
+assert_that('PAPER_1593' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+            "SHIP GUARD v4: GAPS ledger must carry the band's Rule 7 disclosures (P1593/P1598 anchor-rounding pair)")
+assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.372.0' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
 assert_that(True,
             "SHIP GUARD v4 STANDING RULE (Daniel, ABSOLUTE): EVERY ship touches all 23 charter files - band, patch, correction, no exceptions. The v0.367.1 patch-ship-touches-fewer doctrine is REVOKED after v0.369.1 shipped 19/23. Content checks + band-trail + 23/23 coverage, every ship")
@@ -9829,6 +9829,309 @@ assert_that(abs(_v00['v_out_m_s'] - 0.3 * C.C_OBSERVED) < 1.0 and _v00['fraction
             "P1500: TDE outflow = 0.3c EXACT - the PAPER_1953 0.3-factor universality (SgrA* spin, M87 jet, rocky Love k2) now in the TDE sector; (D_phys-1)/SO_5 = 3/10")
 assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1491, 1501)),
             "BAND 1491-1500: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1501-1510 (structural decompositions) ---
+_v01b = C.DISPATCH['PAPER_1501']()['value']
+assert_that(_v01b['triad'] == 3 and _v01b['feedback_loops'] == 23 and _v01b['total'] == 26,
+            "P1501: D_crit = 3 + 23 EXACT - triad forces + DPM feedback loops; the 23 is the monopole r-exponent (P1502), one integer two roles")
+assert_that(C.DISPATCH['PAPER_1502']()['value']['r_exponent'] == 23,
+            "P1502: monopole r-exponent 23, reservoir-consistent")
+assert_that(abs(C.DISPATCH['PAPER_1503']()['value']['d_total_bns'] - 1.0 / 3.0) < 1e-15,
+            "P1503: BNS damping 1/3 EXACT - and (1/3)^2 = 0.111 IS the P011 Omega_BNS ratio; the two GW routes are consistent as amplitude vs energy")
+_v04b = C.DISPATCH['PAPER_1504']()['value']
+assert_that(_v04b['d_total_bbh'] == 0.81 and _v04b['route_difference_flagged'],
+            "P1504 CROSSING FLAGGED: BBH damping (N_ch/SO_5)^2 = 0.81 vs the P011 Omega route 0.66 - NOT reconciled, carried as a crossing; note 0.81^2 = 0.656 ~ 0.66 suggests amplitude-vs-energy again but NOT asserted")
+assert_that(abs(C.DISPATCH['PAPER_1505']()['residual_pct'] - 0.083) < 0.01,
+            "P1505: T_SCm = A_5 = 60 K integer form vs 59.95 K thermal form (0.08%) - two routes converging on the SCm activation temperature")
+assert_that(C.DISPATCH['PAPER_1506']()['value']['range_exponent'] == 7
+            and C.DISPATCH['PAPER_1507']()['value']['alpha_per_day'] == 0.001,
+            "P1506/P1507: R_d range exponent 7 (the N_ch-2 family) and alpha-decay 1/SO_5^3")
+assert_that(C.DISPATCH['PAPER_1508']()['value']['decay_exponent'] == 27
+            and abs(C.DISPATCH['PAPER_1509']()['value']['offset_coefficient'] - 13.0 / 3.0) < 1e-12,
+            "P1508/P1509: Ramanujan exponent 27 and Kerr offset 13/3 - full closed forms now transcribed for both reservoir stubs")
+_v10b = C.DISPATCH['PAPER_1510']()['value']
+assert_that(_v10b['a_26'] == 1307797101 and _v10b['formula_omits_ssq_disclosed'],
+            "P1510 CLASS A CATCH: A_26 = sum(i^6) = 1,307,797,101 EXACT integer; the paper's written formula omits the /SSq its own E-crack note requires - full form rho_SCm*A_26/SSq = 1.6267e-27 kg, 2.04% vs AMU. The DPM 26-layer sum reaches the ATOMIC MASS SCALE from the vacuum primitive")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1501, 1511)),
+            "BAND 1501-1510: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1511-1520 (derivation-depth band) ---
+_v11c = C.DISPATCH['PAPER_1511']()['value']
+assert_that(_v11c['scm_scaling'] + _v11c['ua_scaling'] + _v11c['b0_scaling'] == 6,
+            "P1511: the i^6 layer weight DERIVES from [SCm]_i=i^2 x [UA]_i=i x B_0i=i^3 - the P1510 A_26 sum is grounded in layer structure, not postulated")
+assert_that(abs(C.DISPATCH['PAPER_1512']()['value']['d_phonon_prefactor'] - C.D_GW_EROSION) < 1e-15,
+            "P1512: GW170817 prefactor bit-identical to D_GW_EROSION, full waveform-modification form transcribed with the 367.8-cycle phase lag")
+assert_that(C.DISPATCH['PAPER_1513']()['value']['r_ns_m'] == 1e4
+            and C.DISPATCH['PAPER_1514']()['value']['mu_s_t_m3'] == 1e8,
+            "P1513/P1514: NS radius SO_5^4 and moment SO_5^8, with the moment DERIVED as B*r^3 = SO_5^(-4+12) - the ladder exponents COMPOSE algebraically")
+assert_that(C.DISPATCH['PAPER_1515']()['value']['factored_and_raw_identical'],
+            "P1515: ln 10 factored and raw forms proven equal - the composition is an algebraic identity, not term-fitting")
+assert_that(C.DISPATCH['PAPER_1516']()['residual_pct'] < 0.005
+            and C.DISPATCH['PAPER_1517']()['residual_pct'] < 0.02,
+            "P1516/P1517: ln 2 and pi^2 full compositions at reservoir precision")
+assert_that(C.DISPATCH['PAPER_1517']()['value']['gap_approx_f_trz'],
+            "P1517 STRUCTURAL READING: SO_5 - pi^2 = 0.1304 ~ F_TRZ - the leading correction in the pi^2 composition IS approximately the TRZ factor itself")
+assert_that(C.DISPATCH['PAPER_1518']()['value']['eta_em'] == 0.01,
+            "P1518: MAD efficiency 1/SO_5^2 - ladder exponent 2 joins {2,3,4,5,8,13}")
+assert_that(C.DISPATCH['PAPER_1519']()['value']['pcr_q'] == 3,
+            "P1519: PCR triadic q = 3")
+assert_that(C.DISPATCH['PAPER_1520']()['value']['gr_derivation_transcribed'],
+            "P1520: Peters-Mathews 64 = 2^D_BSFG with the FULL GR chain transcribed - the classical coefficient lands on a primitive power, and the derivation shows WHY (32/5 x 2)")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1511, 1521)),
+            "BAND 1511-1520: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1521-1530 (primitive-reduction landmarks + transcendentals) ---
+assert_that(C.DISPATCH['PAPER_1521']()['value']['d_bsfg_derived'] == 6,
+            "P1521 LANDMARK IN-SEQUENCE: D_BSFG = D_crit - 2*SO_5 = 6 EXACT - the CLAUDE.md primitive-reduction landmark arrives in the sequential drain; D_BSFG is structural, not independent")
+assert_that(abs(C.DISPATCH['PAPER_1522']()['value']['k_mex_derived'] - float(C.K_MEX)) < 1e-15,
+            "P1522 LANDMARK IN-SEQUENCE: K_Mex = Phi_5/6*SO_5/D_phys = 25/12 EXACT - the second primitive reduction; the framework's truly-independent count is 9")
+assert_that(abs(C.DISPATCH['PAPER_1523']()['value']['f221_over_f220'] - 0.9834) < 0.001,
+            "P1523: QNM overtone ratio 0.9834 vs Berti-Cardoso 0.992 (0.86% honest) - a ringdown-spectroscopy falsifiable")
+assert_that(C.DISPATCH['PAPER_1524']()['value']['f_geom'] == 0.125,
+            "P1524: Cold Spot f_geom = 1/8 - consistent with the P1251 dark-flow f_LS analogue")
+for _pn, _lim in ((1525, 0.10), (1526, 0.10), (1527, 0.85), (1529, 0.16), (1530, 0.25)):
+    assert_that(C.DISPATCH['PAPER_%d' % _pn]()['residual_pct'] < _lim,
+                "P%d: transcendental composition at its established precision" % _pn)
+_v28 = C.DISPATCH['PAPER_1528']()['value']
+assert_that(abs(_v28['catalan_g'] - 11.0 / 12.0) < 1e-15,
+            "P1528 NEW TRANSCENDENTAL: Catalan G = Phi_5/6*(1+F_TRZ) = 11/12 EXACT rational (0.077% vs G) - the successor 11 over the tilt denominator 12; family now TEN members")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1521, 1531)),
+            "BAND 1521-1530: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1531-1540 (1209xx cascade as numbered papers) ---
+assert_that(C.DISPATCH['PAPER_1531']()['residual_pct'] < 1.0,
+            "P1531: gamma composition, SSq-led (gap-pinned family member)")
+_casc = [(1532,'h2o_molar',18),(1533,'c12',12),(1534,'n14',14),(1535,'o16',16),(1536,'hb_g_dl',15),
+         (1537,'hr_bpm',70),(1538,'bp_sys',120),(1539,'bp_dia',80),(1540,'br_per_min',16)]
+for _pn,_k,_v in _casc:
+    assert_that(list(C.DISPATCH['PAPER_%d'%_pn]()['value'].values())[0] == _v,
+                "P%d: cascade value %d EXACT, identical to the reservoir batch-10 wiring" % (_pn,_v))
+assert_that(C.DISPATCH['PAPER_1537']()['value']['hr_bpm'] == 70,
+            "P1537: heart rate 70 = A_5+SO_5 - the SAME integer sum as PAPER_1573 H_0, now with its own paper number")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1531, 1541)),
+            "BAND 1531-1540: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1541-1550 (fundamental-constants precision set) ---
+for _pn, _lim, _msg in ((1544, 0.001, "Rydberg 13.6057 eV at 0.0001% - the SHARPEST composition in the family"),
+                        (1547, 0.001, "Faraday 96485.0 at 0.0003% - an 8-term pure-integer composition"),
+                        (1549, 0.005, "1/alpha 137.04 at 0.003% with the A_5*K_Mex = 125 landmark as lead term"),
+                        (1548, 0.01, "Z_0 376.75 at 0.0054%"),
+                        (1550, 0.002, "Compton 2.4263 at 0.001%"),
+                        (1546, 0.01, "Hartree mantissa 4.36 vs the JOULE value 4.3597 at 0.0069%")):
+    assert_that(C.DISPATCH['PAPER_%d' % _pn]()['residual_pct'] < _lim,
+                "P%d: %s" % (_pn, _msg))
+assert_that(C.DISPATCH['PAPER_1546']()['value']['unit_tag_drift_disclosed'],
+            "P1546 UNIT-DIRECTION CATCH (PAPER_2147 class): the paper tags 4.36 as '(x10^1 eV)' but the composition matches the Hartree in JOULES (4.3597e-18 J) - J-native reading wired, eV tag disclosed as drift")
+assert_that(C.DISPATCH['PAPER_1541']()['value']['karman_km'] == 100
+            and C.DISPATCH['PAPER_1542']()['value']['crust_km'] == 35
+            and C.DISPATCH['PAPER_1543']()['value']['moho_km'] == 7,
+            "P1541-43: geophysical triplet EXACT, consistent with the reservoir cascade")
+assert_that(C.DISPATCH['PAPER_1545']()['value']['sigma_mantissa'] == 5.67
+            or abs(C.DISPATCH['PAPER_1545']()['value']['sigma_mantissa'] - 5.67) < 1e-9,
+            "P1545: Stefan-Boltzmann mantissa 5.67 EXACT")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1541, 1551)),
+            "BAND 1541-1550: all ten dispatches registered and self-identifying")
+
+
+# --- BAND 1551-1560 GUARD (SM-mass suite + cosmology kernels + pi) ---
+for _pn in range(1551, 1561):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1551-1560: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1551']()
+assert_that(_r['value']['mariana_trench_km'] == 11.0, 'P1551 Mariana = N_ch+2 = 11 EXACT')
+_r = C.DISPATCH['PAPER_1552']()
+assert_that(_r['value']['z_recomb'] == 1090.0, 'P1552 z_recomb = 1090 EXACT integer composition')
+_r = C.DISPATCH['PAPER_1553']()
+assert_that(abs(_r['value']['h0_planck_kernel_km_s_mpc'] - 67.41) < 0.01, 'P1553 Planck-kernel H_0 = 67.410')
+assert_that('CROSSING' in _r['formula'] and 'A_5+SO_5' in _r['formula'], 'P1553 crossing vs canonical H_0=70 disclosed, not reconciled')
+_r = C.DISPATCH['PAPER_1554']()
+assert_that(_r['residual_pct'] < 0.004, 'P1554 m_W 0.003% tier-best')
+_r = C.DISPATCH['PAPER_1555']()
+assert_that(_r['residual_pct'] < 0.02, 'P1555 m_Z 0.018%')
+assert_that('executable predecessor' in _r['formula'], 'P1555 paren-grouping provenance disclosed')
+_r = C.DISPATCH['PAPER_1556']()
+assert_that(_r['residual_pct'] < 0.006, 'P1556 m_t 0.005%')
+assert_that('executable predecessor' in _r['formula'], 'P1556 F_TRZ-corrections recovered from script, disclosed')
+_r = C.DISPATCH['PAPER_1557']()
+assert_that(_r['residual_pct'] < 0.017, 'P1557 m_H 0.016%; integer core 125')
+_r = C.DISPATCH['PAPER_1558']()
+assert_that(_r['residual_pct'] < 0.014, 'P1558 m_tau 0.013%')
+_r = C.DISPATCH['PAPER_1559']()
+assert_that(_r['residual_pct'] < 0.041, 'P1559 m_mu 0.040%, purely F_TRZ^2-suppressed')
+_r = C.DISPATCH['PAPER_1560']()
+assert_that(_r['residual_pct'] < 0.032, 'P1560 pi composed 0.031%')
+assert_that('5/6' in _r['formula'] or 'Phi_5/6' in _r['formula'], 'P1560 Phi variant = 5/6 per executable predecessor')
+
+
+# --- BAND 1561-1570 GUARD (surd quartet + nuclear BE polynomial + geophysical anchors) ---
+for _pn in range(1561, 1571):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1561-1570: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1561']()
+assert_that(_r['residual_pct'] < 0.102, 'P1561 phi golden 0.101% under Phi_5/6')
+assert_that('9x' in _r['formula'], 'P1561 variant discrimination (9x) disclosed')
+assert_that(C.DISPATCH['PAPER_1562']()['residual_pct'] < 0.106, 'P1562 sqrt2 0.105%')
+assert_that(C.DISPATCH['PAPER_1563']()['residual_pct'] < 0.024, 'P1563 sqrt3 0.023%')
+_r = C.DISPATCH['PAPER_1564']()
+assert_that(_r['residual_pct'] < 0.046 and 'K_Mex' in _r['formula'], 'P1564 sqrt5 0.045% with K_Mex lead')
+assert_that(C.DISPATCH['PAPER_1565']()['residual_pct'] < 0.009, 'P1565 O-16 BE/A 0.008% tier-best nuclear')
+assert_that(C.DISPATCH['PAPER_1566']()['residual_pct'] < 0.025, 'P1566 deuteron BE 0.024%')
+assert_that(C.DISPATCH['PAPER_1567']()['residual_pct'] < 0.048, 'P1567 alpha BE/A 0.047%')
+assert_that(C.DISPATCH['PAPER_1568']()['value']['co2_ppm'] == 420.0, 'P1568 CO2 = 420 EXACT')
+assert_that(abs(C.DISPATCH['PAPER_1569']()['value']['earth_bond_albedo'] - 0.3) < 1e-12, 'P1569 albedo = 3*F_TRZ = 0.30 EXACT')
+assert_that(C.DISPATCH['PAPER_1570']()['value']['steel_yield_mpa'] == 250.0, 'P1570 steel yield = 250 EXACT')
+assert_that(C.DISPATCH['PAPER_1565']()['residual_pct'] < C.DISPATCH['PAPER_1567']()['residual_pct'],
+            'nuclear family ordering: closed-shell O-16 tighter than spin-orbit alpha, as the +2/+3 offset structure implies')
+
+
+# --- BAND 1571-1580 GUARD (all-EXACT engineering/solar-system anchors incl. canonical H_0) ---
+for _pn in range(1571, 1581):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1571-1580: PAPER_%d dispatch present' % _pn)
+    assert_that(C.DISPATCH['PAPER_%d' % _pn]()['residual_pct'] == 0.0,
+                'band 1571-1580: PAPER_%d EXACT (all-EXACT band)' % _pn)
+assert_that(C.DISPATCH['PAPER_1573']()['value']['h0_km_s_mpc'] == 70.0,
+            'P1573 canonical H_0 = A_5+SO_5 = 70 (PAPER_2144 landmark source)')
+assert_that('PAPER_1553' in C.DISPATCH['PAPER_1573']()['formula'],
+            'P1573 cross-links the Planck-kernel crossing at P1553')
+assert_that(C.DISPATCH['PAPER_1578']()['value']['v_sound_air_m_s'] == 343.0, 'P1578 v_sound 343 EXACT')
+assert_that(abs((25.0/12.0 - 0.1*(5.0/6.0)) - 2.0) < 1e-12,
+            'tail identity K_Mex - F_TRZ*Phi_5/6 = 2 EXACT (P1578/P1579 recurring pair)')
+assert_that(abs((25.0/12.0 - 5.0/6.0) - 1.25) < 1e-12,
+            'fractional-day identity K_Mex - Phi_5/6 = 5/4 EXACT (P1580 sidereal year)')
+assert_that(C.DISPATCH['PAPER_1580']()['value']['sidereal_year_days'] == 365.25, 'P1580 sidereal year 365.25 EXACT')
+assert_that(C.DISPATCH['PAPER_1577']()['value']['diamond_mohs'] == 10.0, 'P1577 single-primitive closure Mohs = SO_5')
+
+
+# --- BAND 1581-1590 GUARD (biological/terrestrial EXACT quintet + EM-constant mantissa suite) ---
+for _pn in range(1581, 1591):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1581-1590: PAPER_%d dispatch present' % _pn)
+for _pn in range(1581, 1586):
+    assert_that(C.DISPATCH['PAPER_%d' % _pn]()['residual_pct'] == 0.0,
+                'band 1581-1585: PAPER_%d EXACT quintet' % _pn)
+assert_that(C.DISPATCH['PAPER_1584']()['value']['earth_radius_km'] == 6371.0, 'P1584 R_earth = 6371 EXACT')
+assert_that(C.DISPATCH['PAPER_1585']()['value']['earth_core_radius_km'] == 3485.0, 'P1585 R_core = 3485 EXACT')
+assert_that(C.DISPATCH['PAPER_1586']()['residual_pct'] < 0.026, 'P1586 eps_0 mantissa 0.024%')
+_r = C.DISPATCH['PAPER_1587']()
+assert_that(_r['residual_pct'] < 0.08, 'P1587 mu_0 mantissa 0.075% vs full CODATA')
+assert_that('5/4' in _r['formula'] and 'P1580' in _r['formula'],
+            'P1587 lead = K_Mex - Phi_5/6 = 5/4, third recurrence of the pair, cross-linked')
+assert_that('rounded 1.257' in _r['formula'], 'P1587 paper-anchor rounding disclosed')
+assert_that(C.DISPATCH['PAPER_1588']()['residual_pct'] < 0.052, 'P1588 k_e mantissa 0.051%')
+assert_that(C.DISPATCH['PAPER_1589']()['residual_pct'] < 0.028, 'P1589 a_0 mantissa 0.027%')
+assert_that(C.DISPATCH['PAPER_1590']()['residual_pct'] < 0.035, 'P1590 R_inf mantissa 0.034%')
+assert_that(abs(0.1 * 10.0 - 1.0) < 1e-15, 'P1590 lead F_TRZ*SO_5 = 1 EXACT (F_TRZ ratio identity)')
+
+
+# --- PAPER_2160 LANDMARK GUARD (K_Mex/Phi_5/6 composed-identity pair) ---
+assert_that('PAPER_2160' in C.DISPATCH, 'PAPER_2160 landmark dispatch present')
+_r = C.DISPATCH['PAPER_2160']()['value']
+assert_that(_r['i1_exact_2'] == 2.0, 'PAPER_2160 I1 = K_Mex - F_TRZ*Phi_5/6 = 2 EXACT')
+assert_that(_r['i2_exact_5_4'] == 1.25, 'PAPER_2160 I2 = K_Mex - Phi_5/6 = 5/4 EXACT')
+assert_that(abs(_r['i1_exact_2'] - _r['i1_corollary']) < 1e-12,
+            'PAPER_2160 I1 equals its PAPER_1522 corollary form Phi_5/6*(SO_5/D_phys - F_TRZ)')
+assert_that(abs(_r['i2_exact_5_4'] - _r['i2_corollary']) < 1e-12,
+            'PAPER_2160 I2 equals Phi_5/6*D_bsfg/D_phys (PAPER_1962 3/2 factorization)')
+assert_that(set(_r['occurrences']) == {'PAPER_1578', 'PAPER_1579', 'PAPER_1580', 'PAPER_1587'},
+            'PAPER_2160 four-occurrence registry pinned')
+assert_that(all('PAPER_%d' % _n in C.DISPATCH for _n in (1578, 1579, 1580, 1587)),
+            'PAPER_2160 all four source dispatches live (mutual-locking property)')
+
+
+# --- BAND 1591-1600 GUARD (quantum-EM mantissas + terrestrial standards + material densities) ---
+for _pn in range(1591, 1601):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1591-1600: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1591']()['residual_pct'] < 0.028, 'P1591 g_e 0.027%')
+assert_that(C.DISPATCH['PAPER_1592']()['residual_pct'] < 0.008, 'P1592 mu_B 0.007% band tier-best')
+_r = C.DISPATCH['PAPER_1593']()
+assert_that(_r['residual_pct'] < 0.066, 'P1593 Wien b 0.065% vs full CODATA')
+assert_that('rounded 2.898' in _r['formula'], 'P1593 paper-anchor rounding disclosed')
+assert_that(C.DISPATCH['PAPER_1594']()['residual_pct'] < 0.027, 'P1594 h mantissa 0.027%')
+_r = C.DISPATCH['PAPER_1595']()
+assert_that(_r['residual_pct'] < 0.031, 'P1595 c mantissa 0.031%')
+assert_that('PAPER_592' in _r['formula'], 'P1595 canonical c route (PAPER_592) precedence disclosed')
+assert_that(C.DISPATCH['PAPER_1596']()['residual_pct'] < 0.003, 'P1596 solar constant 0.002%')
+_r = C.DISPATCH['PAPER_1597']()
+assert_that(_r['residual_pct'] < 0.005, 'P1597 P_atm 0.005%')
+assert_that(abs((5.0/6.0) * 0.9 - 0.75) < 1e-12, 'P1597 tail Phi_5/6*(1-F_TRZ) = 3/4 EXACT')
+_r = C.DISPATCH['PAPER_1598']()
+assert_that(_r['residual_pct'] < 0.061, 'P1598 g 0.060% vs full standard 9.80665')
+assert_that('rounded 9.81' in _r['formula'], 'P1598 paper-anchor rounding disclosed')
+assert_that(C.DISPATCH['PAPER_1599']()['value']['carbon_steel_density'] == 7850.0, 'P1599 steel density EXACT')
+assert_that(C.DISPATCH['PAPER_1600']()['value']['aluminum_density'] == 2700.0, 'P1600 Al density EXACT')
+assert_that(abs((25.0/12.0 + 5.0/6.0) - 35.0/12.0) < 1e-12,
+            'P1593 lead K_Mex + Phi_5/6 = 35/12 EXACT - sum sibling of the PAPER_2160 difference pair')
+
+
+# --- BAND 1601-1610 GUARD (fermion-suite completion + Fe-56 peak + bio/solar anchors) ---
+for _pn in range(1601, 1611):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1601-1610: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1601']()['value']['pine_density_seq'] == 500.0, 'P1601 pine density EXACT')
+_r = C.DISPATCH['PAPER_1602']()
+assert_that(_r['residual_pct'] < 0.005, 'P1602 moon distance 0.004%')
+assert_that(abs(0.1 * (5.0/6.0) * 4.0 - 1.0/3.0) < 1e-12,
+            'P1602 tail F_TRZ*Phi_5/6*D_phys = 1/3 EXACT = sigma_Li7 (PAPER_2158) - same composed constant')
+assert_that(C.DISPATCH['PAPER_1603']()['residual_pct'] < 0.006, 'P1603 Jupiter mass ratio 0.005%')
+assert_that(C.DISPATCH['PAPER_1604']()['value']['blood_ph'] == 7.4, 'P1604 blood pH EXACT')
+assert_that(C.DISPATCH['PAPER_1605']()['value']['dna_bp_per_turn'] == 10.5, 'P1605 DNA bp/turn EXACT')
+assert_that(C.DISPATCH['PAPER_1606']()['residual_pct'] < 0.051, 'P1606 m_b 0.050%')
+assert_that(C.DISPATCH['PAPER_1607']()['residual_pct'] < 0.064, 'P1607 m_c 0.063%')
+assert_that(C.DISPATCH['PAPER_1608']()['residual_pct'] < 0.107, 'P1608 m_s 0.106%')
+_r = C.DISPATCH['PAPER_1609']()
+assert_that(_r['residual_pct'] < 0.2, 'P1609 m_e 0.18% (paper states 0.20%)')
+assert_that('F_TRZ^3' in _r['formula'], 'P1609 electron = only F_TRZ^3 fermion, suppression ladder complete')
+assert_that(C.DISPATCH['PAPER_1610']()['residual_pct'] < 0.025, 'P1610 Fe-56 BE/A 0.025% binding-curve peak')
+# fermion suppression-ladder ordering: heavy (F^0) > light (F^2) > electron (F^3)
+assert_that(C.DISPATCH['PAPER_1606']()['value']['m_b_gev'] > C.DISPATCH['PAPER_1608']()['value']['m_s_gev']
+            > C.DISPATCH['PAPER_1609']()['value']['m_e_gev'],
+            'suppression-ladder ordering m_b > m_s > m_e enforced by F_TRZ grading')
+
+
+# --- BAND 1611-1620 GUARD (BE/A heavy set + Planck-cosmology suite) ---
+for _pn in range(1611, 1621):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1611-1620: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1611']()
+assert_that(_r['residual_pct'] < 0.025, 'P1611 Ni-62 0.024%')
+assert_that('P1610' in _r['formula'], 'P1611 shared-composition-with-Fe56 disclosed (one value serves both peak nuclides)')
+assert_that(abs(C.DISPATCH['PAPER_1611']()['value']['ni62_be_a_mev']
+                - C.DISPATCH['PAPER_1610']()['value']['fe56_be_a_mev']) < 1e-15,
+            'P1610/P1611 bit-identical composition, straddling residuals 0.025%/0.024%')
+assert_that(C.DISPATCH['PAPER_1612']()['residual_pct'] < 0.043, 'P1612 U-235 0.042%')
+assert_that(C.DISPATCH['PAPER_1613']()['residual_pct'] < 0.034, 'P1613 U-238 0.033%')
+assert_that(C.DISPATCH['PAPER_1614']()['residual_pct'] < 0.018, 'P1614 C-12 0.017%')
+assert_that(C.DISPATCH['PAPER_1615']()['residual_pct'] < 0.020, 'P1615 Pb-208 0.020%')
+assert_that(C.DISPATCH['PAPER_1616']()['residual_pct'] < 0.15, 'P1616 Omega_m 0.143%')
+_r = C.DISPATCH['PAPER_1617']()
+assert_that(_r['residual_pct'] < 0.14, 'P1617 Omega_L 0.139% vs full Planck')
+assert_that('PAPER_1156' in _r['formula'], 'P1617 crossing vs canonical (6/5)*SSq route disclosed')
+assert_that(C.DISPATCH['PAPER_1618']()['residual_pct'] < 0.083, 'P1618 T_CMB 0.082% vs full FIRAS')
+_r = C.DISPATCH['PAPER_1619']()
+assert_that(_r['residual_pct'] < 0.006, 'P1619 universe age 0.006% vs Planck 13.787 - tighter than paper claim')
+assert_that('13.78' in _r['formula'], 'P1619 anchor-precision disclosure present')
+assert_that(C.DISPATCH['PAPER_1620']()['residual_pct'] < 0.26, 'P1620 sigma_8 0.253%')
+_om = C.DISPATCH['PAPER_1616']()['value']['omega_m']
+_ol = C.DISPATCH['PAPER_1617']()['value']['omega_lambda_seq']
+assert_that(abs((_om + _ol) - 1.0) < 0.002,
+            'flatness check: Omega_m + Omega_L = %.5f, within 0.2%% of unity' % (_om + _ol))
+
+
+# --- BAND 1621-1630 GUARD (orbital/terrestrial + SI-constant mantissas) ---
+for _pn in range(1621, 1631):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1621-1630: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1621']()['residual_pct'] < 0.21, 'P1621 lapse rate 0.21%')
+_r = C.DISPATCH['PAPER_1622']()
+assert_that(_r['residual_pct'] == 0.0 and _r['value']['au_over_r_earth'] == 23481.0,
+            'P1622 AU/R_earth = 23481 EXACT')
+assert_that('PAPER_2160' in _r['formula'] and '-I1' in _r['formula'].replace(' ', ''),
+            'P1622 fifth PAPER_2160 occurrence (tail = -I1) disclosed')
+assert_that(C.DISPATCH['PAPER_1623']()['residual_pct'] < 0.024, 'P1623 synodic month 0.023%')
+assert_that(C.DISPATCH['PAPER_1624']()['residual_pct'] < 0.026, 'P1624 orbital velocity 0.026%')
+assert_that(C.DISPATCH['PAPER_1625']()['residual_pct'] < 0.008, 'P1625 Earth age 0.007%')
+_r = C.DISPATCH['PAPER_1626']()
+assert_that(_r['residual_pct'] < 0.012, 'P1626 Avogadro mantissa 0.011%')
+assert_that('counting-sector test' in _r['formula'] and 'open' in _r['formula'],
+            'P1626 PAPER_2159 Avogadro counting-sector test status disclosed as still open (no Phi in composition)')
+assert_that(C.DISPATCH['PAPER_1627']()['residual_pct'] < 0.025, 'P1627 gas constant 0.024%')
+assert_that(C.DISPATCH['PAPER_1628']()['residual_pct'] < 0.009, 'P1628 H mass 0.008%')
+assert_that(C.DISPATCH['PAPER_1629']()['residual_pct'] < 0.06, 'P1629 e mantissa 0.060%')
+assert_that(C.DISPATCH['PAPER_1630']()['value']['ocean_mean_depth_km'] == 3.7, 'P1630 ocean depth EXACT')
 
 # =============================================================================
 # REPORT

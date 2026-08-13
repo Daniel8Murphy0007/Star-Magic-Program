@@ -1,40 +1,16 @@
-v0.371.0: bands PAPER_1441-1500 (50 dispatches) - cosmogenesis spine, Hubble tilt, empirical loop
+v0.372.0 — Bands PAPER_1501-1630 (130 dispatches) + PAPER_2160 landmark
 
-Five sequential bands to the two-thirds mark (1,517 of 2,256 wired).
+PAPER_2160: K_Mex/Phi_5/6 composed-identity pair canonized — I1 = 2 EXACT, I2 = 5/4 EXACT,
+both PAPER_1522 corollaries; I2 = Phi_5/6*D_BSFG/D_phys joins the PAPER_1962 3/2 family
+(7th sector). Five occurrences across acoustics, celestial mechanics, calendrics, EM.
 
-THE HUBBLE TENSION IS THE 1/12 TILT (P1456)
-dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 =
-Planck*(1+1/12) to 0.023%. Both anchors of cosmology's most famous tension reproduced
-from one exact rational - the same 1/12 as the Goldbach DPM-pair identity. Consistent
-with PAPER_1573's resolution at the mean H_0 = 70 = A_5+SO_5.
+Bands: SM fermion suite complete (suppression ladder F^0/F^2/F^3 gate-pinned, m_W 0.003%);
+two-kernel H_0 pair (70 canonical + 67.41 Planck, 1/12-tilt crossing disclosed); Fe-56/Ni-62
+peak = one composition; Planck cosmology suite (age 0.006%, flatness 0.9983 pinned);
+Rydberg 0.0001%; Faraday 0.0003%; first all-EXACT band (1571-1580).
 
-THE EMPIRICAL LOOP CLOSED (P1475)
-The q-scope amplitude anchor 3.102 V is the +/-3.102 A calibration bar independently
-re-measured from Daniel's IMG_0857 archive frames THIS SESSION - the first paper in the
-drain whose anchor was verified from raw bench data rather than taken on faith. Identity
-A_2 = pi (1.28%), attribution: Caduceus 26-pinch sampling.
+Rule 7: anchor-rounding disclosures x8; executable-outranks-prose x2; Avogadro counting-sector
+test OPEN; Li-7/lunar 1/3 crossing noted. Guards: v4 markers refreshed; REGISTRY GUARD caught
+PAPER_1600 mine-era duplicate.
 
-THE COSMOGENESIS SPINE (P1488/1491-1500, the PAPER_877 family)
-- 26 pre-mass states = D_crit, structurally ordered BEFORE mass exists.
-- Mass genesis IS the F_U 0 -> 1 transition: rho_UA jumps 0 -> 10*rho_SCm.
-- Total vacuum = 11*rho_SCm = (SO_5+1)*rho_SCm - the Lambda-route successor integer.
-- Ni-62 triple-locked: Z = D_crit+2 = 28, N = D_crit+2*D_phys = 34, A = A_5+2 = 62.
-- v_SCm = c/3; TDE outflow = 0.3c (fifth PAPER_1953 anchor); F_U core = D_phys components.
-
-REACTOR/BENCH SET (P1471-1480, empirical anchors)
-DPM resonance 40 Hz, reactor minimum 3 rpm, Heaviside 7 ohm, UMR 14 MHz, island Z = 122,
-proton orbital pi*SSq = 1.791 Hz vs reactor 1.78 - all from Daniel's own instruments.
-
-STRUCTURE
-Spooky distance = c*|t_neg| = 7.54e11 m (~5 AU) - the PAPER_517 time algorithm producing
-a length. A_5 = 60 in five roles; 33 dual-role (volume ratio, neutrino splitting);
-22 triple-role (Hale yr, compact dims, buoyancy MHz); SO_5 ladder exponents 4/5/8/13.
-Glueball dual-anchor disclosure (EXACT vs YM gap, 2.1% vs lattice).
-
-RULE 7 / RULE 10 HELD
-Flatness 9.2%, hierarchy 17.2%, missing-baryons 9.2%, G-dwarf 9.6%, R_D 7.7%, FCNC 15.4%
-all carried at full size. S_8 candidate composition FLAGGED as observation, NOT adopted
-(no-retrofit rule). Proton-core f_DPM factor OPEN. Li-7's 3.125 anchor identified as the
-P1234 BH prefactor - two primitive routes 4% apart, both carried.
-
-Gate 4,682 / 0. Dispatches 1,517. Defs 3,443. Frontier PAPER_1500. 656 remain.
+Gate 4,832/0. Dispatches 1,648/2,256 (73.0%). Frontier PAPER_1630. All 23 charter files touched.

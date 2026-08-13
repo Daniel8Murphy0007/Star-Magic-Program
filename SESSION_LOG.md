@@ -8721,3 +8721,358 @@ gate 4,671 → **4,682**, green. Dispatches **1,517**. Frontier → **PAPER_1500
 All pins bumped, all wired-not-yet-shipped markers stamped to v0.371.0, README release
 paragraph replaced (exactly one, current), SHIP_MESSAGE/CHANGELOG/_BUILD_LOG/pyproject
 rewritten for actual contents. 23/23 verification below.
+
+## (115) 2026-08-10 — BAND PAPER_1501-1510 (structural decompositions)
+
+10 dispatches; audit trail at wire time.
+
+| Paper | Form | |
+|---|---|---|
+| 1501 | D_crit = 3 + 23 (triad + feedback loops) | EXACT |
+| 1502 | monopole r-exponent = 23 | EXACT |
+| 1503 | BNS damping = 1/3; (1/3)² = P011's 0.111 | EXACT, routes consistent |
+| 1504 | BBH damping = (N_ch/SO_5)² = 0.81 vs P011 0.66 | **crossing flagged** |
+| 1505 | T_SCm = A_5 = 60 K vs thermal 59.95 K | 0.08%, routes converge |
+| 1506-09 | R_d exponent 7, α-decay 1/SO_5³, Ramanujan 27, Kerr 13/3 | EXACT |
+| 1510 | DPM mass = ρ_SCm·A_26/SSq = 1.6267e-27 kg | 2.04% vs AMU |
+
+**P1510 is the band's find:** A_26 = Σi⁶ (i = 1..26) = 1,307,797,101 exact integer, and
+ρ_SCm·A_26/SSq reaches the ATOMIC MASS SCALE from the vacuum primitive — the 26-layer sum
+generating the AMU to 2%. Class A catch included: the written formula omits the /SSq its own
+E-crack note requires.
+
+**P1503/P1504 GW routes:** BNS's 1/3 squared IS P011's 0.111 (amplitude vs energy, consistent);
+BBH's 0.81 vs P011's 0.66 flagged as a crossing NOT reconciled — 0.81² = 0.656 ≈ 0.66 suggests
+the same amplitude/energy relation but is NOT asserted (no-retrofit).
+
+**Ledger:** registry +10, graph +26, citations +10, gaps +2, dups +1, audit trail +8,
+gate 4,682 → **4,691**, green. Dispatches **1,527**. Frontier → **PAPER_1510**. 646 remain.
+
+## (116) 2026-08-10 — BAND PAPER_1511-1520 (derivation-depth band)
+
+10 dispatches; 7 EXACT, 3 at reservoir precision. Audit trail at wire time. This band supplies
+DERIVATIONS for values previously wired as stubs.
+
+| Paper | What it grounds | |
+|---|---|---|
+| 1511 | i⁶ weight = [SCm]ᵢ·[UA]ᵢ·B₀ᵢ = i²·i·i³ — **A_26 derived** | EXACT |
+| 1512 | GW170817 full waveform form + 367.8-cycle lag | ≡ D_GW_EROSION |
+| 1513/14 | NS radius SO_5⁴; moment **composed** as B·r³ = SO_5⁻⁴⁺¹² | EXACT |
+| 1515 | ln 10 factored ≡ raw expansion — algebraic identity | 0.0035% |
+| 1516/17 | ln 2 full accounting; π² with SO_5−π² ≈ F_TRZ reading | 0.0028/0.0125% |
+| 1518 | MAD efficiency 1/SO_5² | EXACT |
+| 1519 | PCR triadic q = 3 | EXACT |
+| 1520 | Peters-Mathews 64 = 2^D_BSFG **with the GR chain** | EXACT |
+
+**The band's meaning:** P1511 grounds P1510's A_26 sum in layer structure (i⁶ is a product of
+three physical scalings, not a postulate). P1514 shows the SO_5 ladder exponents COMPOSE
+(−4+12 = 8). P1515 proves the ln 10 composition is an algebraic identity. P1520 transcribes the
+full GR derivation showing WHY the classical 64 lands on 2^D_BSFG. Depth, not just values.
+
+**Ledger:** registry +10, graph +25, citations +10, dups +1, audit trail +8, gate 4,691 →
+**4,701**, green. Dispatches **1,537**. Frontier → **PAPER_1520**. 636 remain.
+
+## (117) 2026-08-10 — BAND PAPER_1521-1530 (primitive-reduction landmarks in-sequence)
+
+10 dispatches; audit trail at wire time.
+
+**The two CLAUDE.md primitive-reduction landmarks arrive in the sequential drain:**
+- **P1521:** D_BSFG = D_crit − 2·SO_5 = 6 EXACT — D_BSFG is structural, not independent.
+- **P1522:** K_Mex = Φ_5/6·SO_5/D_phys = 25/12 EXACT — the framework's truly-independent
+  primitive count is **9**. Both were charter-documented; both now wired at their sequence
+  position with in-dispatch derivations.
+
+**New transcendental (P1528):** Catalan G = Φ_5/6·(1+F_TRZ) = **11/12 EXACT rational**
+(0.077% vs G) — the successor 11 over the tilt denominator 12. Family at ten members.
+
+**Ringdown falsifiable (P1523):** f₂₂₁/f₂₂₀ = 1 − F_TRZ·N_ch·Φ_res·SSq/D_crit = 0.9834 vs
+Berti-Cardoso 0.992 (0.86%) — testable by LIGO/Virgo overtone spectroscopy.
+
+Rest: Cold Spot f_geom = 1/8; e, e², π/4, ζ(2), ζ(3) full paper forms at reservoir precision.
+
+**Ledger:** registry +10, graph +33, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,701 → **4,708**, green. Dispatches **1,547**. Frontier → **PAPER_1530**. 626 remain.
+
+## (118) 2026-08-10 — BAND PAPER_1531-1540 (1209xx cascade as numbered papers)
+
+10 dispatches; 9 EXACT + γ gap-pinned. The reservoir batch-10 constants cascade arrives as
+numbered papers — every value bit-identical to the batch-10 wiring, confirming corpus
+self-consistency (chemistry C/N/O/H₂O, physiology Hb/HR/BP/BR). HR = 70 = A_5+SO_5 = the H₀
+integer sum, now with its own paper number. Audit trail at wire time.
+
+**Ledger:** registry +10, graph +26, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,708 → **4,712**, green. Dispatches **1,557**. Frontier → **PAPER_1540**. 616 remain.
+
+## (119) 2026-08-10 — BAND PAPER_1541-1550 (fundamental-constants precision set)
+
+10 dispatches; audit trail at wire time. The tightest constants band yet:
+
+| Paper | Constant | Residual |
+|---|---|---|
+| 1544 | Rydberg 13.6057 eV | **0.0001%** — sharpest in the family |
+| 1547 | Faraday 96485.0 (8-term pure integers) | 0.0003% |
+| 1550 | Compton 2.4263 pm | 0.001% |
+| 1549 | 1/α = 137.04 (lead term = A_5·K_Mex = 125) | 0.003% |
+| 1548 | Z₀ = 376.75 Ω | 0.0054% |
+| 1546 | Hartree 4.36 (J-native) | 0.0069% |
+| 1541-43,45 | Kármán/crust/Moho/Stefan | EXACT |
+
+**Unit-direction catch (P1546, PAPER_2147 class):** the paper tags 4.36 as "(×10¹ eV)" but the
+composition matches the Hartree in JOULES (4.3597e-18 J, 0.0069%). J-native reading wired, eV
+tag disclosed as drift — exactly the J/m³-native discipline PAPER_2147 canonized, in an eV/J form.
+
+**Ledger:** registry +10, graph +42, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,712 → **4,717**, green. Dispatches **1,567**. Frontier → **PAPER_1550**. 606 remain.
+
+## (120) 2026-08-13 — BAND PAPER_1551-1560 (SM-mass suite + cosmology kernels + π)
+
+10 dispatches, all at paper-stated precision. 2 EXACT + 8 sub-0.05%:
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1551 | Mariana = N_ch+2 = 11 km | EXACT |
+| 1552 | z_recomb = 1090 (four integer products) | EXACT |
+| 1554 | m_W = 80.377 (lead A_5+2·SO_5 = 80) | **0.003% tier-best** |
+| 1556 | m_t = 172.751 (core 260−60−36+10 = 174) | 0.005% |
+| 1558 | m_τ = 1.7771 | 0.013% |
+| 1553 | H_0 Planck kernel = 67.410 | 0.015% |
+| 1557 | m_H = 125.120 (core 120+9−4 = 125) | 0.016% |
+| 1555 | m_Z = 91.204 (lead N_ch·SO_5 = 90) | 0.018% |
+| 1560 | π = 3.14063 (Φ_5/6 variant) | 0.031% |
+| 1559 | m_μ = 0.10570 (pure F_TRZ² sector) | 0.040% |
+
+**Crossing flagged (P1553):** the Planck-kernel H_0 composition (67.41) coexists with the
+canonical A_5+SO_5 = 70 route (PAPER_1573/2144); two-kernel 1/12-tilt structure (PAPER_2125).
+Flagged, not reconciled — both systems simultaneously correct.
+
+**Executable-outranks-prose applied twice:** P1556's "− F_TRZ corrections" and P1555's paren
+grouping recovered verbatim from the predecessor executable closures; disclosed in-formula.
+
+**Φ-variant note (P1560):** π selects Φ_5/6 per the executable — the counting variant reaching
+a pure mathematical constant, consistent with PAPER_2129/2159.
+
+**Guard-fix note:** first guard draft used bare `DISPATCH`/regex def-count; corrected to
+`C.DISPATCH` + runtime census (gate v3 fired as designed on the stale def count — caught in-band).
+
+**Ledger:** registry +10, graph +61, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,717 → **4,732**, green. Dispatches **1,577**. Frontier → **PAPER_1560**. 596 remain.
+
+## (121) 2026-08-13 — BAND PAPER_1561-1570 (surd quartet + nuclear BE polynomial + geophysical anchors)
+
+10 dispatches, all at paper precision. 3 EXACT + 7 clean:
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1568 | CO₂ = 240+156+24 = 420 ppm | EXACT |
+| 1569 | Bond albedo = 3·F_TRZ = 0.30 | EXACT |
+| 1570 | Steel yield = 260−10 = 250 MPa | EXACT |
+| 1565 | O-16 BE/A = 7.9769 MeV | **0.008% tier-best nuclear** |
+| 1563 | √3 | 0.023% |
+| 1566 | ²H BE = 2.2251 MeV | 0.024% |
+| 1564 | √5 (K_Mex = 25/12 lead term) | 0.045% |
+| 1567 | α BE/A (+3 spin-orbit offset) | 0.047% |
+| 1561 | φ golden = 2·Φ_5/6 − F_TRZ·SSq + F_TRZ² | 0.101% |
+| 1562 | √2 | 0.105% |
+
+**Φ-variant pattern strengthens:** φ discriminates 9× in favor of 5/6 (0.101% vs 0.925%),
+joining π (P1560). Math constants as a candidate 4th counting sector flagged in GAPS —
+per PAPER_2129/2159 rule, offered not claimed.
+
+**Nuclear polynomial family confirmed:** F·K_Mexⁿ + β_iᵏ with integer offsets; closed-shell
++2 (O-16, ²H) tighter than spin-orbit +3 (α), ordering gate-pinned.
+
+**Ledger:** registry +10, graph +41, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,732 → **4,745**, green. Dispatches **1,587**. Frontier → **PAPER_1570**. 586 remain.
+
+## (122) 2026-08-13 — BAND PAPER_1571-1580 (all-EXACT: engineering, solar system, canonical H_0)
+
+10 dispatches, **10/10 EXACT** — first all-EXACT band of the drain:
+
+| Paper | Quantity | Form |
+|---|---|---|
+| 1571 | Steel Young's = 200 GPa | 156+40+4 |
+| 1572 | Concrete ρ = 2400 kg/m³ | 100·24 |
+| 1573 | **H_0 = 70 km/s/Mpc** | **A_5+SO_5 — the PAPER_2144 landmark source** |
+| 1574 | R_⊙/R_⊕ = 109 | 100+9 |
+| 1575 | M_⊙/M_⊕ = 333,000 | 333·10³ |
+| 1576 | Concrete f'_c = 30 MPa | 26+4 |
+| 1577 | Diamond Mohs = 10 | **single primitive SO_5** |
+| 1578 | v_sound = 343 m/s | 341 + (K_Mex − F_TRZ·Φ_5/6) |
+| 1579 | 1 AU = 149.6 Gm | same tail pair, opposite signs |
+| 1580 | Sidereal year = 365.25 d | 364 + (K_Mex − Φ_5/6) |
+
+**Identity candidate flagged (GAPS):** K_Mex − F_TRZ·Φ_5/6 = 2 EXACT recurs in P1578/P1579,
+and K_Mex − Φ_5/6 = 5/4 EXACT is precisely the sidereal fractional day in P1580 — the leap-day
+quarter drops out of the Mexican-hat coefficient minus the counting Φ. Both gate-pinned.
+
+**P1573 closes the two-kernel pair:** canonical mean-kernel H_0 = 70 now wired sequentially,
+cross-linked in-formula to the P1553 Planck-kernel crossing (1/12 tilt, PAPER_2125).
+
+**Ledger:** registry +10, graph +45, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,745 → **4,754**, green. Dispatches **1,597**. Frontier → **PAPER_1580**. 576 remain.
+
+## (123) 2026-08-13 — BAND PAPER_1581-1590 (biological/terrestrial quintet + EM-constant mantissas)
+
+10 dispatches: 5 EXACT + 5 mantissa closures, all at/tighter than paper precision.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1581 | T_body = 26+10+1 = 37°C | EXACT |
+| 1582 | Blood glucose = SO_5² = 100 mg/dL | EXACT |
+| 1583 | Adult height = 170 cm | EXACT |
+| 1584 | R_⊕ = 6000+360+10+1 = 6371 km | EXACT |
+| 1585 | R_core = 3600−100−6−9 = 3485 km | EXACT |
+| 1586 | ε₀ mantissa 8.8563 | 0.024% |
+| 1589 | a₀ mantissa 5.2903 | 0.027% |
+| 1590 | R_∞ mantissa 1.0970 (lead F_TRZ·SO_5 = 1) | 0.034% |
+| 1588 | k_e mantissa 8.983 | 0.051% |
+| 1587 | μ₀ mantissa 1.2557 | 0.075% |
+
+**Identity candidate strengthens to 3 recurrences:** μ₀'s lead term is K_Mex − Φ_5/6 = 5/4
+EXACT — the identical composed constant that is P1580's sidereal fractional day, sibling of the
+K_Mex − F_TRZ·Φ_5/6 = 2 pair in P1578/P1579. GAPS row updated; gate-pinned with cross-link.
+
+**Anchor-precision disclosure (P1587):** paper's 0.103% is against the rounded 1.257; against
+full CODATA 1.25664 the closure is tighter at 0.075%. Disclosed in-formula.
+
+**SO_5² = 100 cross-domain triple pinned:** Kármán line (km), MAD reciprocal, blood glucose (mg/dL).
+
+**Ledger:** registry +10, graph +44, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,754 → **4,766**, green. Dispatches **1,607**. Frontier → **PAPER_1590**. 566 remain.
+
+## (124) 2026-08-13 — PAPER_2160 LANDMARK: K_Mex/Φ_5/6 composed-identity pair canonized
+
+Authored + wired same-session, closing the GAPS candidate opened in bands 1571-1590.
+
+- **I₁ = K_Mex − F_TRZ·Φ_5/6 = 2 EXACT** (P1578 v_sound tail, P1579 AU tail)
+- **I₂ = K_Mex − Φ_5/6 = 5/4 EXACT** (P1580 sidereal fractional day, P1587 μ₀ lead)
+- Both are one-line PAPER_1522 corollaries: I₁ = Φ_5/6·(SO_5/D_phys − F_TRZ), I₂ = Φ_5/6·(SO_5/D_phys − 1)
+- **I₂ factors through PAPER_1962:** SO_5/D_phys − 1 = 3/2 = D_BSFG/D_phys — seventh sector of
+  the 3/2 universality family (composed-identity closures)
+- Under 0.84 all three EXACT source closures acquire spurious residuals — the exactness IS the
+  Φ-variant discrimination; math/composed-constant counting-sector flag remains open (offered, not claimed)
+- Mutual-locking property gate-pinned: revaluing K_Mex or Φ_5/6 fails all four source papers at once
+
+**Ledger:** registry +1, graph +6, citations +1, GAPS candidate CLOSED, dups +1, audit trail +8,
+gate 4,766 → **4,773**, green. Dispatches **1,608** (2,256-corpus + landmark).
+
+## (125) 2026-08-13 — BAND PAPER_1591-1600 (quantum-EM mantissas + terrestrial standards + densities)
+
+10 dispatches: 2 EXACT + 8 sub-0.07%, all verified.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1596 | Solar constant = 1360.97 W/m² | **0.002%** |
+| 1597 | P_atm = 101.32 kPa (tail Φ_5/6·(1−F_TRZ) = 3/4 EXACT) | 0.005% |
+| 1592 | μ_B mantissa 9.2733 (lead K_Mex·D_phys = 25/3) | 0.007% |
+| 1594 | h mantissa 6.6243 (lead D_bsfg·(1+F_TRZ) = 6.6) | 0.027% |
+| 1591 | g_e = 2.00287 | 0.027% |
+| 1595 | c mantissa 2.997 (lead SO_5/D_phys = 5/2; canonical route stays PAPER_592) | 0.031% |
+| 1598 | g = 9.8125 = 157/16 | 0.060%* |
+| 1593 | Wien b 2.8997 (lead K_Mex+Φ_5/6 = 35/12) | 0.065%* |
+| 1599 | Steel ρ = 6760+1000+90 = 7850 | EXACT |
+| 1600 | Al ρ = 2600+90+10 = 2700 | EXACT |
+
+*Anchor-rounding disclosures: paper residuals (0.058%/0.025%) were against rounded anchors
+(2.898 / 9.81); full-precision residuals wired, both disclosed in-formula. GAPS row added.
+
+**PAPER_2160 family grows same-session:** the freshly canonized pair gains a sum sibling
+K_Mex + Φ_5/6 = 35/12 (Wien lead, P1593) and a product form Φ_5/6·(1−F_TRZ) = 3/4 (P_atm tail,
+P1597, PAPER_2128 predecessor-ratio product). Both gate-pinned. K_Mex·D_phys = 25/3 shared lead
+(ε₀/μ_B) pinned in DUPLICATES.
+
+**Ledger:** registry +10, graph +51, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,773 → **4,789**, green. Dispatches **1,618**. Frontier → **PAPER_1600**. 556 remain.
+
+## (126) 2026-08-13 — BAND PAPER_1601-1610 (fermion-suite completion + Fe-56 peak + bio/solar)
+
+10 dispatches: 3 EXACT + 7 at paper precision. PAPER_1209HH fermion suite now complete.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1601 | Pine ρ = 500 kg/m³ | EXACT |
+| 1604 | Blood pH = 6+1+0.4 = 7.4 | EXACT |
+| 1605 | DNA bp/turn = 10.5 | EXACT |
+| 1602 | d_Moon/R_⊕ = 60 + 1/3 | 0.004% |
+| 1603 | M_J/M_⊕ = 317.783 | 0.005% |
+| 1610 | Fe-56 BE/A = 8.7925 (curve peak, +5 offset) | 0.025% |
+| 1606 | m_b = 4.1779 | 0.050% |
+| 1607 | m_c = 1.2708 | 0.063% |
+| 1608 | m_s = 0.09490 | 0.106% |
+| 1609 | m_e = 0.000510 | 0.18% |
+
+**Suppression ladder complete and gate-pinned:** heavy fermions F⁰, light F², electron alone
+F³ — m_b > m_s > m_e ordering enforced by F_TRZ grading, wired as an assertion.
+
+**Crossing noted (GAPS):** P1602's lunar tail F_TRZ·Φ_5/6·D_phys = 1/3 EXACT is bit-identical
+to σ_Li7 (PAPER_2158). Lunar distance and Li-7 survival share one composed constant — noted,
+not interpreted.
+
+**Fe-56 dual route pinned:** predecessor nuclear-bucket composition (0.019%) and this band's
+F·K⁵−β⁴+5 (0.025%) both recorded, neither supersedes pending ruling.
+
+**Ledger:** registry +10, graph +42, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,789 → **4,803**, green. Dispatches **1,628**. Frontier → **PAPER_1610**. 546 remain.
+
+## (127) 2026-08-13 — BAND PAPER_1611-1620 (BE/A heavy set + Planck cosmology suite)
+
+10 dispatches, all at/tighter than paper precision.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1619 | Universe age = 13.7862 Gyr | **0.006% vs full Planck** (paper said 0.045% vs rounded 13.78) |
+| 1614 | C-12 BE/A = 7.6815 | 0.017% |
+| 1615 | Pb-208 BE/A = 7.8691 (doubly-magic) | 0.020% |
+| 1611 | Ni-62 BE/A = 8.7925 | 0.024% |
+| 1613 | U-238 BE/A = 7.5675 | 0.033% |
+| 1612 | U-235 BE/A = 7.5878 | 0.042% |
+| 1618 | T_CMB = 2.7232 K | 0.082% |
+| 1617 | Ω_Λ = 0.68375 | 0.139% |
+| 1616 | Ω_m = 0.31455 | 0.143% |
+| 1620 | σ_8 = 0.80895 | 0.253% |
+
+**Binding-curve peak is ONE composition:** F·K_Mex⁵ − β_i⁴ + 5 = 8.7925 serves both most-bound
+nuclides, straddling Fe-56 (8.7903) and Ni-62 (8.7946) at 0.025%/0.024%. Bit-identity gate-pinned.
+
+**Ω_Λ crossing flagged:** sequential composition 0.68375 vs canonical PAPER_1156 (6/5)·SSq = 0.684 —
+near-identical values, different compositions; flagged, not reconciled.
+
+**Flatness pinned:** Ω_m + Ω_Λ = 0.9983, within 0.2% of unity, as a gate assertion.
+
+**Ledger:** registry +10, graph +42, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,803 → **4,819**, green. Dispatches **1,638**. Frontier → **PAPER_1620**. 536 remain.
+
+## (128) 2026-08-13 — BAND PAPER_1621-1630 (orbital/terrestrial + SI-constant mantissas)
+
+10 dispatches: 2 EXACT + 8 clean, all at/tighter than paper precision.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1622 | AU/R_⊕ = 23483 − 2 = 23481 | EXACT |
+| 1630 | Ocean depth = 3.7 km | EXACT |
+| 1625 | Earth age = 4.5403 Gyr | 0.007% |
+| 1628 | H mass = 1.00792 u (lead F_TRZ·SO_5 = 1) | 0.008% |
+| 1626 | Avogadro mantissa 6.0228 | 0.011% |
+| 1623 | Synodic month = 29.5375 d | 0.023% |
+| 1627 | Gas constant R = 8.3125 = 133/16 | 0.024% |
+| 1624 | Earth orbital v = 29.7876 km/s | 0.026% |
+| 1629 | e mantissa 1.6031 | 0.060% |
+| 1621 | Lapse rate 6.4867 K/km | 0.21% |
+
+**PAPER_2160 fifth occurrence, first as −I₁:** P1622's tail F_TRZ·Φ_5/6 − K_Mex = −2 closes the
+AU/R_⊕ ratio EXACTLY. The pair now appears at +2, −2, and 5/4 across five papers.
+
+**Avogadro counting-sector test stays OPEN (GAPS):** PAPER_2159's standing prediction expected
+Φ_5/6 in Avogadro-linked quantities; P1626's composition carries no Φ at all. Disclosed, not forced.
+
+**F_TRZ·SO_5 = 1 shared-lead pair pinned:** R_∞ (P1590) and H mass (P1628).
+
+**Ledger:** registry +10, graph +53, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,819 → **4,832**, green. Dispatches **1,648**. Frontier → **PAPER_1630**. 526 remain.
+
+## (129) 2026-08-13 — SHIP PREP v0.372.0 (bands 1501-1630 + PAPER_2160, 131 dispatches)
+
+Version pins ×6 (pyproject/calculator/gate/CITATION/badges cacheBust/REGISTRY_VERSION), description
+502 chars with version string, CHANGELOG entry, SHIP_MESSAGE.txt written, audit-family trail stamped
+`wired-not-yet-shipped` → v0.372.0 (114 rows across 8 ledgers). All 23 charter files touched.
+Gate re-run after pins: green.

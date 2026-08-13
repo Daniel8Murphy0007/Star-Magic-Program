@@ -46,3 +46,17 @@ BAND_1461_1470,foundations,10 dispatches,NO_NEW_RULINGS,,v0.371.0
 BAND_1471_1480,empirical set,10 dispatches,NO_NEW_RULINGS,P1475 anchor independently re-measured,v0.371.0
 BAND_1481_1490,structural,10 dispatches,NO_NEW_RULINGS,,v0.371.0
 BAND_1491_1500,cosmogenesis,10 dispatches,NO_NEW_RULINGS,P1492 f_DPM factor flagged open,v0.371.0
+BAND_1501_1510,decompositions,10 dispatches,NO_NEW_RULINGS,P1504 crossing + P1510 drift disclosed in-dispatch,v0.372.0
+BAND_1511_1520,derivations,10 dispatches,NO_NEW_RULINGS,,v0.372.0
+BAND_1521_1530,landmarks,10 dispatches,NO_NEW_RULINGS,P1521/P1522 landmarks now in-sequence,v0.372.0
+BAND_1531_1540,cascade,10 dispatches,NO_NEW_RULINGS,,v0.372.0
+BAND_1541_1550,constants,10 dispatches,NO_NEW_RULINGS,P1546 unit drift disclosed,v0.372.0
+BAND_1551_1560,particle+cosmology,10 dispatches,NO_NEW_RULINGS,P1555/P1556 forms recovered from executable predecessor,v0.372.0
+BAND_1561_1570,math+nuclear+geo,10 dispatches,NO_NEW_RULINGS,Phi_5/6 math-sector candidate flagged,v0.372.0
+BAND_1571_1580,materials+solar+cosmology,10 dispatches,NO_NEW_RULINGS,all-EXACT band; H_0 canonical route registered sequentially,v0.372.0
+BAND_1581_1590,biology+geo+em,10 dispatches,NO_NEW_RULINGS,K_Mex/Phi_5/6 pair now 3 recurrences,v0.372.0
+LANDMARK_2160,identity,1 dispatch,NO_NEW_RULINGS,GAPS candidate closed same-session,v0.372.0
+BAND_1591_1600,quantum+geo+materials,10 dispatches,NO_NEW_RULINGS,PAPER_2160 family gains sum sibling 35/12 (P1593) + 3/4 product (P1597),v0.372.0
+BAND_1601_1610,particle+nuclear+bio,10 dispatches,NO_NEW_RULINGS,suppression ladder F^0/F^2/F^3 complete; ordering gate-pinned,v0.372.0
+BAND_1611_1620,nuclear+cosmology,10 dispatches,NO_NEW_RULINGS,Fe56/Ni62 shared composition disclosed; flatness Om+OL=0.9983 pinned,v0.372.0
+BAND_1621_1630,solar+chemistry+em,10 dispatches,NO_NEW_RULINGS,PAPER_2160 fifth occurrence (P1622 tail = -I1) in an EXACT closure,v0.372.0

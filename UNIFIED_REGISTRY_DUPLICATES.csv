@@ -42,3 +42,18 @@ v_little_big_33_1481,dm2_ratio_33_a6,ALIAS_PINNED,both = D_crit+N_ch-2 = 33,v0.3
 f_ub_22_1482,hale_22_family,ALIAS_PINNED,"22 = D_crit-D_phys third role (Hale yr, compact dims, MHz)",v0.371.0
 rho_vac_11_1494,lambda_so5_plus_1,ALIAS_PINNED,both carry the successor integer 11 = SO_5+1,v0.371.0
 tde_03c_1500,p1953_03_family,ALIAS_PINNED,0.3 = (D_phys-1)/SO_5 fifth anchor of the PAPER_1953 family,v0.371.0
+t_scm_60_1505,p1072_thermal_59_95,ALIAS_PINNED,integer A_5 and thermal h*f/k_B routes 0.08% apart,v0.372.0
+ns_moment_1514,ladder_composition,ORDER_NOTE,"SO_5 exponents compose: -4+12=8; ladder now {2,3,4,5,8,13}",v0.372.0
+catalan_11_12_1528,tilt_family,ORDER_NOTE,11/12 = successor 11 over tilt denominator 12; transcendental family at TEN members,v0.372.0
+cascade_1531_1540,reservoir_batch10,ALIAS_PINNED,"numbered papers == batch-10 values, corpus self-consistent",v0.372.0
+alpha_125_lead_1549,a5_kmex_landmark,ALIAS_PINNED,1/alpha lead term = A_5*K_Mex = 125 (PAPER_1954),v0.372.0
+m_w_dual_route_1554,paper_1209hh_bucketD,ALIAS_PINNED,same PAPER_1209HH S653 composition wired in predecessor Bucket D; this is the sequential-drain registration,v0.372.0
+albedo_03_factor_1569,k2_rocky_paper_1953,ALIAS_PINNED,3*F_TRZ = 0.30 same projection form as k2_rocky = (D_phys-1)/SO_5 (PAPER_1953 0.3-factor family),v0.372.0
+h0_route_1573,h0_registry_primitives,ALIAS_PINNED,same A_5+SO_5=70 identity already canonical in uqff_registry_primitives H0_GRID (PAPER_2144 swap); sequential-drain registration of the source paper,v0.372.0
+so5_squared_100_1582,karman_line_1541,ALIAS_PINNED,"SO_5^2 = 100 third cross-domain reuse: Karman km, MAD reciprocal, glucose mg/dL",v0.372.0
+i2_5_4_dual_role,sidereal_day_mu0,ALIAS_PINNED,I2 = 5/4 is simultaneously P1580 fractional day and P1587 mu0 lead,v0.372.0
+kmex_dphys_25_3_lead,eps0_muB_pair,ALIAS_PINNED,K_Mex*D_phys = 25/3 is the shared lead of eps_0 (P1586) and mu_B (P1592) mantissas,v0.372.0
+aluminum_density_seq_1600,aluminum_density_repo_mine,ALIAS_PINNED,"same PAPER_1600 identity registered by material-landmark mine (rows aluminum_density/ml_aluminum_density) and sequential drain; quantity renamed to keep (quantity,source) unique per REGISTRY GUARD",v0.372.0
+fe56_dual_route_1610,fe56_bucket_nuclear,ALIAS_PINNED,"Fe-56 BE/A wired in predecessor nuclear bucket (0.019% route) and sequential drain (F*K^5-beta^4+5, 0.025%); different compositions, both recorded, neither supersedes pending ruling",v0.372.0
+fe56_ni62_shared_comp,be_a_peak_pair,ALIAS_PINNED,"F_TRZ*K_Mex^5 - beta_i^4 + 5 = 8.7925 serves BOTH most-bound nuclides (Fe-56 8.7903 / Ni-62 8.7946), straddled at 0.025%/0.024%",v0.372.0
+ftrz_so5_unity_lead,p1590_p1628,ALIAS_PINNED,F_TRZ*SO_5 = 1 EXACT is the shared lead of R_inf (P1590) and H atomic mass (P1628),v0.372.0

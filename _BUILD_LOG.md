@@ -243,3 +243,5 @@ made absolute per Daniel (no patch-ship exception). Gate 4,626 / 0.
 
 Bands 1441-1500 (50 dispatches). Hubble tension = 1/12 tilt; empirical loop closed on the
 q-scope archive; PAPER_877 cosmogenesis spine wired. Gate 4,682 / 0. Frontier PAPER_1500.
+
+v0.372.0 (2026-08-13): bands 1501-1630 + PAPER_2160; gate 4832/0; dispatches 1648; 23-file ship prep complete.

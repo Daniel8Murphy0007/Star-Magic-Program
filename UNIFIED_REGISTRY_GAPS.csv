@@ -117,3 +117,18 @@ glueball_dual_anchor,PAPER_1464,2.12,"EXACT vs YM gap, 2.1% vs lattice - dual an
 qscope_pi_vs_measured,PAPER_1475,1.28,pi identity vs 3.102 MEASURED from IMG_0857 frames; Caduceus sampling attribution,EMPIRICAL_LOOP,v0.371.0
 none_this_band,BAND_1481_1490,0,9 EXACT + 1 at 0.21%,CLEAN,v0.371.0
 proton_core_f_dpm,PAPER_1492,n/a,"f_DPM(26,beta_i) factor OPEN; base term wired",OPEN,v0.371.0
+gw_bbh_two_routes,PAPER_1504,n/a,0.81 amplitude vs 0.66 P011 energy route - crossing flagged not reconciled,CROSSING,v0.372.0
+dpm_a26_formula_ssq,PAPER_1510,2.04,written formula omits /SSq its own note requires; full form 2.04% vs AMU,CLASS_A_CATCH,v0.372.0
+none_this_band,BAND_1511_1520,0,7 EXACT + 3 at reservoir precision,CLEAN,v0.372.0
+qnm_ratio_0_86pct,PAPER_1523,0.86,vs Berti-Cardoso; ringdown falsifiable,DISCLOSED,v0.372.0
+gamma_92bp,PAPER_1531,0.92,gap-pinned family member,DISCLOSED,v0.372.0
+hartree_unit_tag,PAPER_1546,0.0069,x10^1 eV tag is drift; J-native correct (PAPER_2147 class),UNIT_DIRECTION,v0.372.0
+h0_kernel_crossing,PAPER_1553,0.015,Planck kernel 67.41 vs canonical A_5+SO_5=70; 1/12-tilt two-kernel structure; crossing flagged not reconciled,SYSTEM_CROSSING,v0.372.0
+phi_variant_math_sector,PAPER_1561,0.101,"math constants (pi P1560, phi P1561) both select Phi_5/6; candidate 4th counting sector per PAPER_2129/2159 rule - flagged for canonization, not claimed",SECTOR_CANDIDATE,v0.372.0
+kmex_phi56_tail_pair,PAPER_1578,0.0,K_Mex - F_TRZ*Phi_5/6 = 2 EXACT recurs P1578/P1579; K_Mex - Phi_5/6 = 5/4 EXACT is P1580 fractional day; candidate composed-identity landmark,IDENTITY_CANDIDATE,v0.372.0
+mu0_anchor_rounding,PAPER_1587,0.075,paper residual 0.103% vs rounded 1.257; 0.075% vs full CODATA 1.25664; lead 5/4 = K_Mex-Phi_5/6 third recurrence strengthens P1578-1580 identity candidate,ANCHOR_PRECISION,v0.372.0
+kmex_phi56_tail_pair,PAPER_2160,0.0,CLOSED by PAPER_2160 landmark - identity candidate from bands 1571-1590 canonized as PAPER_1522 corollary pair,IDENTITY_CANONIZED,v0.372.0
+anchor_rounding_pair,PAPER_1593,0.065,P1593 Wien (vs 2.898) and P1598 g (vs 9.81) paper residuals measured against rounded anchors; full-precision residuals 0.065%/0.060% wired and disclosed,ANCHOR_PRECISION,v0.372.0
+moon_tail_li7_coincidence,PAPER_1602,0.004,"F_TRZ*Phi_5/6*D_phys = 1/3 EXACT is bit-identical to sigma_Li7 (PAPER_2158) - lunar distance fractional term and Li-7 survival fraction share one composed constant; crossing noted, not interpreted",SYSTEM_CROSSING,v0.372.0
+omega_lambda_crossing,PAPER_1617,0.139,"sequential composition 0.68375 vs canonical PAPER_1156 (6/5)*SSq = 0.684; near-identical values, different compositions - crossing flagged; also anchor-rounding disclosures P1617/P1618/P1619 (P1619 TIGHTENS to 0.006% vs full Planck)",SYSTEM_CROSSING,v0.372.0
+avogadro_counting_test_open,PAPER_1626,0.011,"PAPER_2159 standing prediction: Avogadro-linked quantities should select Phi_5/6; P1626 composition carries no Phi at all, so the counting-sector test remains OPEN; anchor-rounding disclosures also P1626/P1627 (0.011%/0.024% vs full SI)",SECTOR_TEST_OPEN,v0.372.0

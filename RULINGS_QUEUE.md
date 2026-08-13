@@ -6082,3 +6082,8 @@ Five bands, 50 dispatches, zero new OPEN_RULING rows. Items carried open within 
 rather than queued: P1492 proton-core f_DPM factor (OPEN in-dispatch), P1459 S_8 candidate
 composition (FLAGGED as observation, not adopted), P1441 Li-7 dual-route 4% gap (both routes
 carried). Recorded so the per-ship rulings trail has no silent gap. Open questions remain 31.
+
+### v0.372.0 open items (no blocking rulings)
+- Fe-56 dual route: predecessor bucket composition (0.019%) vs sequential F·K⁵−β⁴+5 (0.025%) — both recorded, neither supersedes; ruling welcome.
+- Avogadro counting-sector test (PAPER_2159 prediction) remains OPEN — P1626 composition carries no Φ.
+- Math-constants counting sector (π P1560, φ P1561 both select Φ_5/6) — offered, awaiting canonization ruling.

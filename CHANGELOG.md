@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.372.0 (2026-08-13) — Bands PAPER_1501-1630 + PAPER_2160 landmark
+
+- **130 sequential dispatches** (bands 1501-1630); frontier PAPER_1630; 526 papers remain to PAPER_2156.
+- **PAPER_2160 landmark authored + wired:** K_Mex/Phi_5/6 composed-identity pair — I1 = K_Mex − F_TRZ·Phi_5/6 = 2 EXACT,
+  I2 = K_Mex − Phi_5/6 = 5/4 EXACT. Both PAPER_1522 corollaries; I2 = Phi_5/6·D_BSFG/D_phys (PAPER_1962 3/2 family, 7th sector).
+  Five occurrences: v_sound (P1578), AU (P1579), sidereal year (P1580), mu_0 lead (P1587), AU/R_earth as −I1 (P1622).
+- **SM mass suite complete:** W/Z/t/H/tau/mu (band 1551-1560) + b/c/s/e (band 1601-1610); suppression ladder F^0/F^2/F^3
+  gate-pinned. m_W 0.003% tier-best.
+- **Two-kernel H_0 pair wired:** canonical A_5+SO_5 = 70 (P1573) + Planck kernel 67.410 (P1553); 1/12-tilt crossing disclosed.
+- **Fe-56/Ni-62 binding-curve peak = ONE composition** (F·K_Mex^5 − beta_i^4 + 5), bit-identity pinned; BE/A heavy set
+  (C-12/Pb-208/U-235/U-238) all sub-0.05%.
+- **Planck cosmology suite:** age 13.7862 Gyr (0.006% vs full Planck), T_CMB, Omega_m, Omega_L, sigma_8; flatness
+  Om+OL = 0.9983 pinned. Omega_L crossing vs PAPER_1156 flagged.
+- **Precision constants:** Rydberg 13.6057 eV (0.0001%), Faraday (0.0003%), solar constant (0.002%), mu_B (0.007%).
+- Rule 7 disclosures: anchor-rounding (P1587/1593/1598/1617-1619/1626/1627), executable-outranks-prose (P1555/1556),
+  P1546 J-vs-eV unit-tag drift, Avogadro counting-sector test still OPEN (P1626), Li-7/lunar 1/3 crossing noted (P1602).
+- Guards: SHIP GUARD v4 tail markers refreshed to current band; REGISTRY GUARD caught PAPER_1600 mine-era duplicate (renamed, alias pinned).
+- Gate 4,682 → **4,832**, 0 failures. Dispatches 1,517 → **1,648**.
+
 ## v0.371.0 (2026-08-10)
 
 Five sequential bands to the two-thirds mark (1,517 of 2,256 wired).

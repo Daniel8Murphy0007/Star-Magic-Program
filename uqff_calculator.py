@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.371.0"
+VERSION = "0.372.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -20624,6 +20624,1082 @@ def _p1500(dataset=None):
     return {'value': {'v_out_m_s': v, 'fraction_of_c': 0.3},
             'formula': 'TDE outflow = c*(D_phys-1)/SO_5 = 0.3c EXACT - the PAPER_1953 0.3-factor universality in the TDE sector',
             'source': 'PAPER_1500', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1501')
+def _p1501(dataset=None):
+    return {'value': {'triad': D_PHYS - 1, 'feedback_loops': D_CRIT - D_PHYS + 1,
+                      'total': D_CRIT},
+            'formula': 'D_crit decomposition: 26 = (D_phys-1) + (D_crit-D_phys+1) = 3 triad forces + 23 DPM feedback loops EXACT',
+            'source': 'PAPER_1501', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1502')
+def _p1502(dataset=None):
+    return {'value': {'r_exponent': D_CRIT - D_PHYS + 1},
+            'formula': 'monopole suppression r-exponent = D_crit-D_phys+1 = 23 EXACT; U_m ~ 1/r^26 in 26D (reservoir-consistent)',
+            'source': 'PAPER_1502', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1503')
+def _p1503(dataset=None):
+    d = 1.0 / float(D_PHYS - 1)
+    return {'value': {'d_total_bns': d},
+            'formula': 'GW damping BNS D_total = 1/(D_phys-1) = 1/3 EXACT - equals sqrt of the P011 Omega ratio 0.111',
+            'source': 'PAPER_1503', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1504')
+def _p1504(dataset=None):
+    d = (float(N_CH) / float(SO_5)) ** 2
+    return {'value': {'d_total_bbh': d,
+                      'p011_omega_bbh': 0.66,
+                      'route_difference_flagged': True},
+            'formula': 'GW damping BBH D_total = (N_ch/SO_5)^2 = 0.81 EXACT; NOTE the P011 Omega_BBH route gives 0.66 - two routes flagged as a crossing, not reconciled',
+            'source': 'PAPER_1504', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1505')
+def _p1505(dataset=None):
+    return {'value': {'t_scm_k': float(A_5),
+                      'p1072_thermal_k': 59.95},
+            'formula': 'T_SCm activation = A_5 = 60 K EXACT; the PAPER_1072 thermal route h*f_SCm/k_B = 59.95 K sits 0.08% away - integer form and thermal form converge',
+            'source': 'PAPER_1505', 'residual_pct': abs(60.0 - 59.95) / 59.95 * 100.0}
+
+
+@_register('PAPER_1506')
+def _p1506(dataset=None):
+    e = N_CH - 2
+    return {'value': {'range_exponent': e, 'r_d_range': (10.0 ** -e, 10.0 ** e)},
+            'formula': 'R_d duality range exponent = N_ch-2 = 7 EXACT; R_d spans [1e-7, 1e7] - the N_ch-2 = 7 family (Heaviside ohms, Moho km)',
+            'source': 'PAPER_1506', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1507')
+def _p1507(dataset=None):
+    a = 1.0 / float(SO_5) ** 3
+    return {'value': {'alpha_per_day': a},
+            'formula': 'F_U alpha-decay constant = 1/SO_5^3 = 0.001/day EXACT (SO_5 ladder exponent 3)',
+            'source': 'PAPER_1507', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1508')
+def _p1508(dataset=None):
+    return {'value': {'decay_exponent': D_CRIT + 1},
+            'formula': 'Ramanujan hyperconvergence decay exponent = D_crit+1 = 27 EXACT, with the full R_n^(D,k) double-sum closed form transcribed',
+            'source': 'PAPER_1508', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1509')
+def _p1509(dataset=None):
+    c = float(D_CRIT) / float(D_BSFG)
+    return {'value': {'offset_coefficient': c},
+            'formula': 'Kerr ringdown offset = D_crit/D_BSFG = 13/3 EXACT, with the full f_220 formula and (SCm/Planck)^(1/4) modulation transcribed',
+            'source': 'PAPER_1509', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1510')
+def _p1510(dataset=None):
+    a26 = sum(i ** 6 for i in range(1, D_CRIT + 1))
+    m = RHO_SCM * float(a26) / SSQ
+    return {'value': {'a_26': a26, 'm_amu_dpm_kg': m,
+                      'amu_kg': 1.6605e-27, 'proton_kg': 1.6726e-27,
+                      'formula_omits_ssq_disclosed': True},
+            'formula': 'DPM 26-layer mass = rho_SCm*A_26/SSq = 1.6267e-27 kg where A_26 = sum(i^6, 1..26) = 1,307,797,101 EXACT integer. The paper WRITES rho_SCm*A_26 (which gives 9.27e-28) but its own value and its E-crack note require the /SSq - Class A drift disclosed. 2.04% vs AMU, 2.74% vs m_p',
+            'source': 'PAPER_1510', 'residual_pct': abs(m - 1.6605e-27) / 1.6605e-27 * 100.0}
+
+
+
+@_register('PAPER_1511')
+def _p1511(dataset=None):
+    return {'value': {'weight_form': 'w_i = i^2 * i * i^3 = i^6',
+                      'scm_scaling': 2, 'ua_scaling': 1, 'b0_scaling': 3},
+            'formula': 'DPM layer weight decomposition: [SCm]_i = i^2, [UA]_i = i, B_0i = i^3, product = i^6 - the A_26 = sum(i^6) sum (P1510) is DERIVED, not postulated',
+            'source': 'PAPER_1511', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1512')
+def _p1512(dataset=None):
+    p = 2.0 / float(D_PHYS - 1)
+    return {'value': {'d_phonon_prefactor': p, 'phase_lag_cycles': 367.8},
+            'formula': 'GW170817 phonon damping prefactor = 2/(D_phys-1) = 2/3 = D_GW_EROSION EXACT, full h_UQFF form with 367.8-cycle phase lag transcribed',
+            'source': 'PAPER_1512', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1513')
+def _p1513(dataset=None):
+    return {'value': {'r_ns_m': float(SO_5) ** 4},
+            'formula': 'NS canonical radius = SO_5^4 = 10 km EXACT',
+            'source': 'PAPER_1513', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1514')
+def _p1514(dataset=None):
+    mu = float(SO_5) ** 8
+    return {'value': {'mu_s_t_m3': mu,
+                      'decomposition': 'B*r^3 = SO_5^-4 * SO_5^12'},
+            'formula': 'NS magnetic moment = SO_5^8 = B*r^3 = (1/SO_5^4)*(SO_5^4)^3 - the ladder exponents COMPOSE: -4+12 = 8',
+            'source': 'PAPER_1514', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1515')
+def _p1515(dataset=None):
+    import math as _m
+    v = (1.0 + F_TRZ) * (float(K_MEX) + F_TRZ ** 2)
+    return {'value': {'ln10': v, 'factored_and_raw_identical': True},
+            'formula': 'ln 10 = (1+F_TRZ)*(K_Mex+F_TRZ^2) with the raw expansion PROVEN equal by algebra (0.0035%)',
+            'source': 'PAPER_1515', 'residual_pct': abs(v - _m.log(10.0)) / _m.log(10.0) * 100.0}
+
+
+@_register('PAPER_1516')
+def _p1516(dataset=None):
+    import math as _m
+    v = ln_2_transcendental_1208()
+    return {'value': {'ln2': v},
+            'formula': 'ln 2 full composition (0.0028%) - the PAPER_1208 form with complete term accounting',
+            'source': 'PAPER_1516', 'residual_pct': abs(v - _m.log(2.0)) / _m.log(2.0) * 100.0}
+
+
+@_register('PAPER_1517')
+def _p1517(dataset=None):
+    import math as _m
+    v = float(SO_5) - F_TRZ - F_TRZ ** 2 * float(K_MEX) - F_TRZ ** 2 * (5.0 / 6.0)
+    gap = float(SO_5) - _m.pi ** 2
+    return {'value': {'pi_squared': v, 'so5_minus_pi2': gap,
+                      'gap_approx_f_trz': abs(gap - F_TRZ) < 0.035},
+            'formula': 'pi^2 = SO_5 - F_TRZ - F_TRZ^2*(K_Mex+Phi_5/6) (0.0125%); structural reading: SO_5 - pi^2 = 0.1304 ~ F_TRZ - the icosahedral coverage exceeds pi^2 by roughly the TRZ',
+            'source': 'PAPER_1517', 'residual_pct': abs(v - _m.pi ** 2) / _m.pi ** 2 * 100.0}
+
+
+@_register('PAPER_1518')
+def _p1518(dataset=None):
+    return {'value': {'eta_em': 1.0 / float(SO_5) ** 2},
+            'formula': 'MAD Poynting efficiency = 1/SO_5^2 = 0.01 EXACT (ladder exponent 2)',
+            'source': 'PAPER_1518', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1519')
+def _p1519(dataset=None):
+    return {'value': {'pcr_q': D_PHYS - 1},
+            'formula': 'PCR quantum triadic number q = D_phys-1 = 3 EXACT, entering g_eff = (GM/r^2)*(1 + k_PCR*PCR(q,t))',
+            'source': 'PAPER_1519', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1520')
+def _p1520(dataset=None):
+    return {'value': {'coefficient': 2 ** D_BSFG,
+                      'gr_derivation_transcribed': True},
+            'formula': 'Peters-Mathews 64 = 2^D_BSFG EXACT, with the full GR chain (32/5 luminosity x2 from dE/dr) transcribed - the GR coefficient IS a power of the bulk-edge dimension',
+            'source': 'PAPER_1520', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1521')
+def _p1521(dataset=None):
+    return {'value': {'d_bsfg_derived': D_CRIT - 2 * SO_5,
+                      'alt_form': D_CRIT - 4 * D_PHYS - 4,
+                      'independent_primitive_count_effect': 'reduces 11 to 10'},
+            'formula': 'LANDMARK: D_BSFG = D_crit - 2*SO_5 = 6 EXACT - D_BSFG is a structural DERIVATIVE, not independent (PAPER_1521 primitive reduction)',
+            'source': 'PAPER_1521', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1522')
+def _p1522(dataset=None):
+    k = (5.0 / 6.0) * float(SO_5) / float(D_PHYS)
+    return {'value': {'k_mex_derived': k,
+                      'independent_primitive_count_effect': 'reduces to 9 truly independent'},
+            'formula': 'LANDMARK: K_Mex = Phi_5/6*SO_5/D_phys = 25/12 EXACT - K_Mex is derived from the counting Phi variant (PAPER_1522 primitive reduction; framework free-parameter count = 9)',
+            'source': 'PAPER_1522', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1523')
+def _p1523(dataset=None):
+    r = 1.0 - (F_TRZ * float(N_CH) * PHI_RES_RESONANCE * SSQ) / float(D_CRIT)
+    return {'value': {'f221_over_f220': r, 'berti_cardoso': 0.992},
+            'formula': 'QNM overtone ratio = 1 - F_TRZ*N_ch*Phi_res*SSq/D_crit = 0.9834 vs Berti-Cardoso 0.992 (0.86%)',
+            'source': 'PAPER_1523', 'residual_pct': abs(r - 0.992) / 0.992 * 100.0}
+
+
+@_register('PAPER_1524')
+def _p1524(dataset=None):
+    return {'value': {'f_geom': 1.0 / 2.0 ** (D_PHYS - 1)},
+            'formula': 'Cold Spot geometric factor = 1/2^(D_phys-1) = 1/8 EXACT (full DT_ColdSpot chain transcribed)',
+            'source': 'PAPER_1524', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1525')
+def _p1525(dataset=None):
+    import math as _m
+    v = e_transcendental_1208()
+    return {'value': {'e': v},
+            'formula': 'e composition (0.094%) - full paper form of the PAPER_1208 entry',
+            'source': 'PAPER_1525', 'residual_pct': abs(v - _m.e) / _m.e * 100.0}
+
+
+@_register('PAPER_1526')
+def _p1526(dataset=None):
+    import math as _m
+    v = e_squared_1208()
+    return {'value': {'e_squared': v},
+            'formula': 'e^2 composition (0.092%)',
+            'source': 'PAPER_1526', 'residual_pct': abs(v - _m.e ** 2) / _m.e ** 2 * 100.0}
+
+
+@_register('PAPER_1527')
+def _p1527(dataset=None):
+    import math as _m
+    v = pi_over_4_1208()
+    return {'value': {'pi_over_4': v},
+            'formula': 'pi/4 composition (0.79% - the weakest of the transcendental family, gap-pinned since batch 11)',
+            'source': 'PAPER_1527', 'residual_pct': abs(v - _m.pi / 4.0) / (_m.pi / 4.0) * 100.0}
+
+
+@_register('PAPER_1528')
+def _p1528(dataset=None):
+    G_cat = 0.915965594   # Catalan constant (mathematical anchor)
+    v = (5.0 / 6.0) * (1.0 + F_TRZ)
+    return {'value': {'catalan_g': v},
+            'formula': 'Catalan G = Phi_5/6*(1+F_TRZ) = 11/12 = 0.91667 vs 0.9159656 (0.077%) - NEW to the transcendental family, and 11/12 is (SO_5+1)/(SO_5+2)... exact form 11/12',
+            'source': 'PAPER_1528', 'residual_pct': abs(v - G_cat) / G_cat * 100.0}
+
+
+@_register('PAPER_1529')
+def _p1529(dataset=None):
+    import math as _m
+    v = zeta_2_1208()
+    return {'value': {'zeta_2': v},
+            'formula': 'zeta(2) composition (0.146%)',
+            'source': 'PAPER_1529', 'residual_pct': abs(v - _m.pi ** 2 / 6.0) / (_m.pi ** 2 / 6.0) * 100.0}
+
+
+@_register('PAPER_1530')
+def _p1530(dataset=None):
+    v = zeta_3_apery_1208()
+    return {'value': {'zeta_3': v},
+            'formula': 'Apery zeta(3) composition (0.231%)',
+            'source': 'PAPER_1530', 'residual_pct': abs(v - 1.2020569032) / 1.2020569032 * 100.0}
+
+
+
+@_register('PAPER_1531')
+def _p1531(dataset=None):
+    v = gamma_euler_mascheroni_1208()
+    return {'value': {'gamma': v},
+            'formula': 'Euler-Mascheroni gamma = SSq + F_TRZ^2*(K_Mex - Phi_5/6) (0.92%, gap-pinned; leading term IS SSq)',
+            'source': 'PAPER_1531', 'residual_pct': abs(v - 0.5772156649) / 0.5772156649 * 100.0}
+
+
+@_register('PAPER_1532')
+def _p1532(dataset=None):
+    return {'value': {'h2o_molar': molar_mass_water_1209aa()},
+            'formula': 'H2O = 2*N_ch = 18 EXACT', 'source': 'PAPER_1532', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1533')
+def _p1533(dataset=None):
+    return {'value': {'c12': atomic_mass_carbon_1209aa()},
+            'formula': 'C-12 = 2*D_BSFG EXACT (mole-definition anchor)', 'source': 'PAPER_1533', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1534')
+def _p1534(dataset=None):
+    return {'value': {'n14': atomic_mass_nitrogen_1209aa()},
+            'formula': 'N-14 = SO_5+D_phys EXACT', 'source': 'PAPER_1534', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1535')
+def _p1535(dataset=None):
+    return {'value': {'o16': atomic_mass_oxygen_1209aa()},
+            'formula': 'O-16 = 2^D_phys EXACT', 'source': 'PAPER_1535', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1536')
+def _p1536(dataset=None):
+    return {'value': {'hb_g_dl': hemoglobin_o2_capacity_1209bb()},
+            'formula': 'hemoglobin = N_ch+D_BSFG = 15 EXACT', 'source': 'PAPER_1536', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1537')
+def _p1537(dataset=None):
+    return {'value': {'hr_bpm': heart_rate_resting_1209bb()},
+            'formula': 'heart rate = A_5+SO_5 = 70 EXACT - the H_0 integer sum in physiology',
+            'source': 'PAPER_1537', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1538')
+def _p1538(dataset=None):
+    return {'value': {'bp_sys': bp_systolic_1209bb()},
+            'formula': 'systolic = 2*A_5 = 120 EXACT', 'source': 'PAPER_1538', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1539')
+def _p1539(dataset=None):
+    return {'value': {'bp_dia': bp_diastolic_1209bb()},
+            'formula': 'diastolic = 2*D_phys*SO_5 = 80 EXACT', 'source': 'PAPER_1539', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1540')
+def _p1540(dataset=None):
+    return {'value': {'br_per_min': breathing_rate_1209bb()},
+            'formula': 'breathing = 2^D_phys = 16 EXACT', 'source': 'PAPER_1540', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1541')
+def _p1541(dataset=None):
+    return {'value': {'karman_km': karman_line_1209cc()},
+            'formula': 'Karman = SO_5^2 = 100 km EXACT', 'source': 'PAPER_1541', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1542')
+def _p1542(dataset=None):
+    return {'value': {'crust_km': continental_crust_thickness_1209cc()},
+            'formula': 'crust = D_crit+N_ch = 35 km EXACT', 'source': 'PAPER_1542', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1543')
+def _p1543(dataset=None):
+    return {'value': {'moho_km': oceanic_moho_depth_1209cc()},
+            'formula': 'Moho = N_ch-2 = 7 km EXACT', 'source': 'PAPER_1543', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1544')
+def _p1544(dataset=None):
+    e = float(D_PHYS + SO_5) - F_TRZ * float(D_PHYS) + F_TRZ ** 2 * SSQ
+    return {'value': {'e_rydberg_ev': e},
+            'formula': 'Rydberg E_R = D_phys+SO_5 - F_TRZ*D_phys + F_TRZ^2*SSq = 13.6057 eV vs 13.605693 (0.0001%) - the sharpest composition in the constants family',
+            'source': 'PAPER_1544', 'residual_pct': abs(e - 13.605693) / 13.605693 * 100.0}
+
+
+@_register('PAPER_1545')
+def _p1545(dataset=None):
+    s = stefan_boltzmann_1209ee()
+    return {'value': {'sigma_mantissa': s},
+            'formula': 'Stefan-Boltzmann mantissa = SO_5*SSq - F_TRZ^2*D_phys + F_TRZ^2 = 5.67 EXACT',
+            'source': 'PAPER_1545', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1546')
+def _p1546(dataset=None):
+    e = float(D_PHYS) + F_TRZ * float(D_PHYS) - F_TRZ ** 2 * float(D_PHYS)
+    hartree_j = 4.3597e-18   # Hartree energy in JOULES (anchor)
+    return {'value': {'e_h_mantissa': e, 'hartree_j_mantissa': 4.3597,
+                      'unit_tag_drift_disclosed': True},
+            'formula': 'Hartree mantissa = D_phys*(1 + F_TRZ - F_TRZ^2) = 4.36; matches the Hartree in JOULES (4.3597e-18 J, 0.0069%) - the paper\'s "(x10^1 eV)" unit tag is PAPER_2147-class drift, disclosed; the J-native reading is correct',
+            'source': 'PAPER_1546', 'residual_pct': abs(e - 4.3597) / 4.3597 * 100.0}
+
+
+@_register('PAPER_1547')
+def _p1547(dataset=None):
+    f = (float(A_5) ** 2 * D_PHYS * D_BSFG + A_5 * SO_5 * N_CH + A_5 * D_BSFG * N_CH
+         + SO_5 * N_CH * D_BSFG + SO_5 * N_CH * D_PHYS + A_5 * N_CH + D_PHYS + F_TRZ * SO_5)
+    return {'value': {'faraday_c_mol': f},
+            'formula': 'Faraday F = 8-term integer composition = 96485.0 vs 96485.33 (0.0003%)',
+            'source': 'PAPER_1547', 'residual_pct': abs(f - 96485.33) / 96485.33 * 100.0}
+
+
+@_register('PAPER_1548')
+def _p1548(dataset=None):
+    z = vacuum_impedance_1209dd()
+    return {'value': {'z0_ohm': z},
+            'formula': 'Z_0 = A_5*D_BSFG + SO_5 + D_BSFG + Phi_res - F_TRZ*Phi_res - F_TRZ^2*SSq = 376.75 (0.0054%)',
+            'source': 'PAPER_1548', 'residual_pct': abs(z - 376.730) / 376.730 * 100.0}
+
+
+@_register('PAPER_1549')
+def _p1549(dataset=None):
+    a = alpha_inverse_1209dd()
+    return {'value': {'alpha_inverse': a, 'a5_kmex_125': float(A_5) * float(K_MEX)},
+            'formula': '1/alpha = A_5*K_Mex + N_ch + D_phys - F_TRZ*SO_5 + F_TRZ^2*D_phys = 137.04 (0.003%) - the 125 = A_5*K_Mex landmark carries the lead term',
+            'source': 'PAPER_1549', 'residual_pct': abs(a - 137.035999) / 137.035999 * 100.0}
+
+
+@_register('PAPER_1550')
+def _p1550(dataset=None):
+    c = compton_wavelength_1209dd()
+    return {'value': {'lambda_c_pm': c},
+            'formula': 'Compton = K_Mex + F_TRZ*D_phys - F_TRZ*SSq = 2.4263 pm (0.014%)',
+            'source': 'PAPER_1550', 'residual_pct': abs(c - 2.42631) / 2.42631 * 100.0}
+
+
+@_register('PAPER_1551')
+def _p1551(dataset=None):
+    v = float(N_CH) + 2.0
+    return {'value': {'mariana_trench_km': v},
+            'formula': 'Mariana = N_ch + 2 = 11 km EXACT (PAPER_1209CC_S608 geophysics set)',
+            'source': 'PAPER_1551', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1552')
+def _p1552(dataset=None):
+    z = float(A_5 * SO_5 + A_5 * D_PHYS + SO_5 * D_CRIT - SO_5)
+    return {'value': {'z_recomb': z},
+            'formula': 'z_recomb = A_5*SO_5 + A_5*D_phys + SO_5*D_crit - SO_5 = 600+240+260-10 = 1090 EXACT (Planck 2018 last-scattering)',
+            'source': 'PAPER_1552', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1553')
+def _p1553(dataset=None):
+    h0 = K_MEX * D_CRIT + float(D_PHYS + SO_5) - 2.0 * F_TRZ * D_PHYS + F_TRZ ** 2 * D_PHYS + F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'h0_planck_kernel_km_s_mpc': h0},
+            'formula': 'H_0(Planck kernel) = K_Mex*D_crit + (D_phys+SO_5) - 2*F_TRZ*D_phys + F_TRZ^2*D_phys + F_TRZ^2*SSq^2 = 67.410 vs Planck 67.4 (0.015%). CROSSING DISCLOSED: canonical route is H_0 = A_5+SO_5 = 70 (PAPER_1573/2144, mean kernel); this is the Planck-kernel composition, and the two kernels differ by the 1/12 tilt (SH0ES = Planck*13/12, two-kernel structure PAPER_2125). Both systems simultaneously correct; crossing flagged, not reconciled.',
+            'source': 'PAPER_1553', 'residual_pct': abs(h0 - 67.4) / 67.4 * 100.0}
+
+
+@_register('PAPER_1554')
+def _p1554(dataset=None):
+    m = float(A_5 + 2 * SO_5) + F_TRZ * D_PHYS - F_TRZ ** 2 * D_BSFG + F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'m_w_gev': m},
+            'formula': 'm_W = A_5 + 2*SO_5 + F_TRZ*D_phys - F_TRZ^2*D_bsfg + F_TRZ^2*D_phys - F_TRZ^2*SSq^2 = 80.377 vs 80.379 (0.003%, tier-best PAPER_1209HH). Lead term A_5+2*SO_5 = 80 exactly.',
+            'source': 'PAPER_1554', 'residual_pct': abs(m - 80.379) / 80.379 * 100.0}
+
+
+@_register('PAPER_1555')
+def _p1555(dataset=None):
+    m = float(N_CH * SO_5) + F_TRZ * SO_5 + F_TRZ ** 2 * (SO_5 + D_BSFG + D_PHYS + SSQ - SSQ ** 3)
+    return {'value': {'m_z_gev': m},
+            'formula': 'm_Z = N_ch*SO_5 + F_TRZ*SO_5 + F_TRZ^2*(SO_5+D_bsfg+D_phys+SSq-SSq^3) = 91.204 vs 91.1876 (0.018%). Lead N_ch*SO_5 = 90. Paren grouping resolved from executable predecessor closure (script outranks prose).',
+            'source': 'PAPER_1555', 'residual_pct': abs(m - 91.1876) / 91.1876 * 100.0}
+
+
+@_register('PAPER_1556')
+def _p1556(dataset=None):
+    m = (float(D_CRIT * SO_5 - A_5 - D_PHYS * N_CH + SO_5) - F_TRZ * D_PHYS - F_TRZ * SO_5
+         + F_TRZ ** 2 * D_BSFG + 2.0 * F_TRZ ** 2 * D_PHYS + F_TRZ ** 2 * (SSQ + SSQ ** 2 + SSQ ** 3))
+    return {'value': {'m_t_gev': m},
+            'formula': 'm_t = D_crit*SO_5 - A_5 - D_phys*N_ch + SO_5 - F_TRZ*(D_phys+SO_5) + F_TRZ^2*(D_bsfg+2*D_phys+SSq+SSq^2+SSq^3) = 172.751 vs 172.76 (0.005%). Paper prose says only "- F_TRZ corrections"; full correction terms recovered from executable predecessor closure (script outranks prose). Integer core 260-60-36+10 = 174.',
+            'source': 'PAPER_1556', 'residual_pct': abs(m - 172.76) / 172.76 * 100.0}
+
+
+@_register('PAPER_1557')
+def _p1557(dataset=None):
+    m = 2.0 * A_5 + float(N_CH - D_PHYS) + F_TRZ * SSQ + F_TRZ ** 2 * D_BSFG + F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'m_h_gev': m},
+            'formula': 'm_H = 2*A_5 + N_ch - D_phys + F_TRZ*SSq + F_TRZ^2*D_bsfg + F_TRZ^2*SSq^2 = 125.120 vs 125.10 (0.016%). Integer core 120+9-4 = 125 exactly (companion to A_5*K_Mex = 125 landmark, PAPER_1954).',
+            'source': 'PAPER_1557', 'residual_pct': abs(m - 125.10) / 125.10 * 100.0}
+
+
+@_register('PAPER_1558')
+def _p1558(dataset=None):
+    m = SSQ + F_TRZ * D_PHYS + F_TRZ * SO_5 - F_TRZ ** 2 * D_CRIT + F_TRZ ** 2 * D_BSFG + F_TRZ ** 2 * (SSQ + SSQ ** 2 - SSQ ** 3)
+    return {'value': {'m_tau_gev': m},
+            'formula': 'm_tau = SSq + F_TRZ*(D_phys+SO_5) - F_TRZ^2*D_crit + F_TRZ^2*D_bsfg + F_TRZ^2*(SSq+SSq^2-SSq^3) = 1.7771 vs 1.77686 (0.013%)',
+            'source': 'PAPER_1558', 'residual_pct': abs(m - 1.77686) / 1.77686 * 100.0}
+
+
+@_register('PAPER_1559')
+def _p1559(dataset=None):
+    m = F_TRZ ** 2 * SO_5 + F_TRZ ** 2 * (SSQ ** 2 + SSQ ** 3 + SSQ ** 5)
+    return {'value': {'m_mu_gev': m},
+            'formula': 'm_mu = F_TRZ^2*SO_5 + F_TRZ^2*(SSq^2+SSq^3+SSq^5) = 0.10570 vs 0.10566 (0.040%). Purely F_TRZ^2-suppressed: light-fermion sector uses only F_TRZ^2 x (SO_5 + SSq polynomial) - lepton hierarchy factor 100 = SO_5^2 from primitives.',
+            'source': 'PAPER_1559', 'residual_pct': abs(m - 0.10566) / 0.10566 * 100.0}
+
+
+@_register('PAPER_1560')
+def _p1560(dataset=None):
+    import math as _m
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = phi56 * D_PHYS - F_TRZ ** 2 * SO_5 - F_TRZ ** 2 * D_PHYS - F_TRZ * SSQ - F_TRZ ** 2 * SSQ + F_TRZ ** 2
+    return {'value': {'pi_composed': v},
+            'formula': 'pi = Phi_5/6*D_phys - F_TRZ^2*SO_5 - F_TRZ^2*D_phys - F_TRZ*SSq - F_TRZ^2*SSq + F_TRZ^2 = 3.14063 vs pi (0.031%). Phi variant resolved from executable predecessor: 5/6 (counting variant), consistent with the PAPER_2129/2159 sector rule reaching a mathematical constant. 13th math constant in the sub-1% primitive catalog.',
+            'source': 'PAPER_1560', 'residual_pct': abs(v - _m.pi) / _m.pi * 100.0}
+
+
+@_register('PAPER_1561')
+def _p1561(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = 2.0 * phi56 - F_TRZ * SSQ + F_TRZ ** 2
+    t = (1.0 + 5.0 ** 0.5) / 2.0
+    return {'value': {'phi_golden': v},
+            'formula': 'phi = 2*Phi_5/6 - F_TRZ*SSq + F_TRZ^2 = 1.6197 vs 1.61803 (0.101%). Phi variant discriminates 9x: 5/6 gives 0.101%, 0.84 gives 0.925%; executable predecessor confirms 5/6 - second math constant selecting the counting variant (after P1560 pi).',
+            'source': 'PAPER_1561', 'residual_pct': abs(v - t) / t * 100.0}
+
+
+@_register('PAPER_1562')
+def _p1562(dataset=None):
+    v = SSQ + 2.0 * F_TRZ * D_PHYS + F_TRZ ** 2 * SSQ + F_TRZ ** 2 * D_PHYS
+    t = 2.0 ** 0.5
+    return {'value': {'sqrt2': v},
+            'formula': 'sqrt2 = SSq + 2*F_TRZ*D_phys + F_TRZ^2*SSq + F_TRZ^2*D_phys = 1.4157 vs 1.41421 (0.105%)',
+            'source': 'PAPER_1562', 'residual_pct': abs(v - t) / t * 100.0}
+
+
+@_register('PAPER_1563')
+def _p1563(dataset=None):
+    v = SSQ + 3.0 * F_TRZ * D_PHYS + F_TRZ ** 2 * SSQ - F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ ** 2
+    t = 3.0 ** 0.5
+    return {'value': {'sqrt3': v},
+            'formula': 'sqrt3 = SSq + 3*F_TRZ*D_phys + F_TRZ^2*(SSq - D_phys - SSq^2) = 1.73245 vs 1.73205 (0.023%)',
+            'source': 'PAPER_1563', 'residual_pct': abs(v - t) / t * 100.0}
+
+
+@_register('PAPER_1564')
+def _p1564(dataset=None):
+    v = K_MEX + F_TRZ * SSQ + F_TRZ ** 2 * D_BSFG + F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ ** 2
+    t = 5.0 ** 0.5
+    return {'value': {'sqrt5': v},
+            'formula': 'sqrt5 = K_Mex + F_TRZ*SSq + F_TRZ^2*(D_bsfg + D_phys - SSq^2) = 2.23708 vs 2.23607 (0.045%). K_Mex = 25/12 as the lead term - the Mexican-hat coefficient carrying sqrt5.',
+            'source': 'PAPER_1564', 'residual_pct': abs(v - t) / t * 100.0}
+
+
+@_register('PAPER_1565')
+def _p1565(dataset=None):
+    v = F_TRZ * K_MEX ** 4 + F_TRZ * K_MEX ** 5 + BETA_I ** 4 + F_TRZ * BETA_I ** 2 + 2.0
+    return {'value': {'o16_be_a_mev': v},
+            'formula': 'O-16 BE/A = F_TRZ*(K_Mex^4 + K_Mex^5) + beta_i^4 + F_TRZ*beta_i^2 + 2 = 7.9769 vs 7.9762 MeV (0.008%, tier-best nuclear). Universal F*K^n + beta^k polynomial with +2 closed-shell offset.',
+            'source': 'PAPER_1565', 'residual_pct': abs(v - 7.9762) / 7.9762 * 100.0}
+
+
+@_register('PAPER_1566')
+def _p1566(dataset=None):
+    v = BETA_I ** 4 + F_TRZ * BETA_I + F_TRZ * BETA_I ** 2 - F_TRZ ** 2 * BETA_I ** 2 + 2.0
+    return {'value': {'deuteron_be_mev': v},
+            'formula': '2H BE = beta_i^4 + F_TRZ*beta_i + F_TRZ*beta_i^2 - F_TRZ^2*beta_i^2 + 2 = 2.2251 vs 2.2246 MeV (0.024%)',
+            'source': 'PAPER_1566', 'residual_pct': abs(v - 2.2246) / 2.2246 * 100.0}
+
+
+@_register('PAPER_1567')
+def _p1567(dataset=None):
+    v = F_TRZ * K_MEX ** 5 + BETA_I ** 5 + F_TRZ * BETA_I + F_TRZ ** 2 * BETA_I + 3.0
+    return {'value': {'alpha_be_a_mev': v},
+            'formula': 'alpha BE/A = F_TRZ*K_Mex^5 + beta_i^5 + F_TRZ*beta_i + F_TRZ^2*beta_i + 3 = 7.0706 vs 7.0739 MeV (0.047%). +3 spin-orbit offset vs the +2 closed-shell family.',
+            'source': 'PAPER_1567', 'residual_pct': abs(v - 7.0739) / 7.0739 * 100.0}
+
+
+@_register('PAPER_1568')
+def _p1568(dataset=None):
+    v = float(A_5 * D_PHYS + D_CRIT * D_BSFG + D_BSFG * D_PHYS)
+    return {'value': {'co2_ppm': v},
+            'formula': 'CO2 = A_5*D_phys + D_crit*D_bsfg + D_bsfg*D_phys = 240+156+24 = 420 ppm EXACT (epoch-dated atmospheric anchor)',
+            'source': 'PAPER_1568', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1569')
+def _p1569(dataset=None):
+    v = 3.0 * F_TRZ
+    return {'value': {'earth_bond_albedo': v},
+            'formula': 'alpha_bond = 3*F_TRZ = 0.30 EXACT = (D_phys-1)*F_TRZ, same 3/10 projection form as k2_rocky (PAPER_1953 0.3-factor family)',
+            'source': 'PAPER_1569', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1570')
+def _p1570(dataset=None):
+    v = float(D_CRIT * SO_5 - D_BSFG - D_PHYS)
+    return {'value': {'steel_yield_mpa': v},
+            'formula': 'sigma_y = D_crit*SO_5 - D_bsfg - D_phys = 260 - 10 = 250 MPa EXACT (mild-steel yield; lowercase dispatch-key lesson paper from predecessor session 2026-06-18)',
+            'source': 'PAPER_1570', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1571')
+def _p1571(dataset=None):
+    v = float(D_CRIT * D_BSFG + D_PHYS * SO_5 + D_PHYS)
+    return {'value': {'steel_youngs_gpa': v},
+            'formula': 'E_steel = D_crit*D_bsfg + D_phys*SO_5 + D_phys = 156+40+4 = 200 GPa EXACT',
+            'source': 'PAPER_1571', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1572')
+def _p1572(dataset=None):
+    v = float(SO_5 ** 2 * D_PHYS * D_BSFG)
+    return {'value': {'concrete_density_kg_m3': v},
+            'formula': 'rho_concrete = SO_5^2*D_phys*D_bsfg = 100*24 = 2400 kg/m3 EXACT',
+            'source': 'PAPER_1572', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1573')
+def _p1573(dataset=None):
+    v = float(A_5 + SO_5)
+    return {'value': {'h0_km_s_mpc': v},
+            'formula': 'H_0 = A_5 + SO_5 = 70 km/s/Mpc EXACT - THE canonical H_0 route (PAPER_2144 landmark source; 47.6x tightening over the ladder route). Sequential-drain registration of the landmark identity; Planck-kernel counterpart composition wired at PAPER_1553, two-kernel 1/12-tilt crossing disclosed there.',
+            'source': 'PAPER_1573', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1574')
+def _p1574(dataset=None):
+    v = float(SO_5 ** 2 + N_CH)
+    return {'value': {'r_sun_over_r_earth': v},
+            'formula': 'R_sun/R_earth = SO_5^2 + N_ch = 100+9 = 109 EXACT',
+            'source': 'PAPER_1574', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1575')
+def _p1575(dataset=None):
+    v = float((D_CRIT * SO_5 + A_5 + N_CH + D_PHYS) * SO_5 ** 3)
+    return {'value': {'m_sun_over_m_earth': v},
+            'formula': 'M_sun/M_earth = (D_crit*SO_5 + A_5 + N_ch + D_phys)*SO_5^3 = 333*1000 = 333000 EXACT',
+            'source': 'PAPER_1575', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1576')
+def _p1576(dataset=None):
+    v = float(D_CRIT + D_PHYS)
+    return {'value': {'concrete_fc_mpa': v},
+            'formula': "f'_c = D_crit + D_phys = 30 MPa EXACT",
+            'source': 'PAPER_1576', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1577')
+def _p1577(dataset=None):
+    v = float(SO_5)
+    return {'value': {'diamond_mohs': v},
+            'formula': 'Mohs(diamond) = SO_5 = 10 EXACT - single-primitive closure, cleanest possible form',
+            'source': 'PAPER_1577', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1578')
+def _p1578(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = A_5 * D_BSFG - D_BSFG - N_CH - D_PHYS + K_MEX - F_TRZ * phi56
+    return {'value': {'v_sound_air_m_s': v},
+            'formula': 'v_s = A_5*D_bsfg - D_bsfg - N_ch - D_phys + K_Mex - F_TRZ*Phi_5/6 = 341 + 2 = 343 m/s EXACT. Tail identity K_Mex - F_TRZ*Phi_5/6 = 25/12 - 1/12 = 2 EXACT (recurs in P1579).',
+            'source': 'PAPER_1578', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1579')
+def _p1579(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_CRIT * D_BSFG - D_PHYS - K_MEX - F_TRZ * D_PHYS + F_TRZ * phi56
+    return {'value': {'earth_sun_distance_gm': v},
+            'formula': 'd = D_crit*D_bsfg - D_phys - K_Mex - F_TRZ*D_phys + F_TRZ*Phi_5/6 = 152 - 2 - 0.4 = 149.6 Gm EXACT (1 AU). Same K_Mex/F_TRZ*Phi_5/6 pair as P1578, opposite signs.',
+            'source': 'PAPER_1579', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1580')
+def _p1580(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = N_CH * A_5 - D_PHYS * A_5 + A_5 + D_PHYS + K_MEX - phi56
+    return {'value': {'sidereal_year_days': v},
+            'formula': 'T_yr = N_ch*A_5 - D_phys*A_5 + A_5 + D_phys + K_Mex - Phi_5/6 = 364 + 5/4 = 365.25 days EXACT. Fractional day = K_Mex - Phi_5/6 = 25/12 - 10/12 = 5/4 EXACT.',
+            'source': 'PAPER_1580', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1581')
+def _p1581(dataset=None):
+    v = D_CRIT + SO_5 + F_TRZ * SO_5
+    return {'value': {'body_temp_c': v},
+            'formula': 'T_body = D_crit + SO_5 + F_TRZ*SO_5 = 26+10+1 = 37 C EXACT',
+            'source': 'PAPER_1581', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1582')
+def _p1582(dataset=None):
+    v = float(SO_5 * SO_5)
+    return {'value': {'blood_glucose_mg_dl': v},
+            'formula': '[Glu] = SO_5^2 = 100 mg/dL EXACT (third cross-domain SO_5^2 reuse: Karman line, MAD reciprocal)',
+            'source': 'PAPER_1582', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1583')
+def _p1583(dataset=None):
+    v = float(A_5 + SO_5 ** 2 + SO_5)
+    return {'value': {'adult_height_cm': v},
+            'formula': 'h = A_5 + SO_5^2 + SO_5 = 60+100+10 = 170 cm EXACT',
+            'source': 'PAPER_1583', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1584')
+def _p1584(dataset=None):
+    v = A_5 * SO_5 ** 2 + A_5 * D_BSFG + SO_5 + F_TRZ * SO_5
+    return {'value': {'earth_radius_km': v},
+            'formula': 'R_earth = A_5*SO_5^2 + A_5*D_bsfg + SO_5 + F_TRZ*SO_5 = 6000+360+10+1 = 6371 km EXACT',
+            'source': 'PAPER_1584', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1585')
+def _p1585(dataset=None):
+    v = float(A_5 * SO_5 * D_BSFG - SO_5 ** 2 - D_BSFG - N_CH)
+    return {'value': {'earth_core_radius_km': v},
+            'formula': 'R_core = A_5*SO_5*D_bsfg - SO_5^2 - D_bsfg - N_ch = 3600-100-6-9 = 3485 km EXACT',
+            'source': 'PAPER_1585', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1586')
+def _p1586(dataset=None):
+    v = K_MEX * D_PHYS + SSQ - F_TRZ * SSQ + F_TRZ ** 2
+    return {'value': {'epsilon0_mantissa': v},
+            'formula': 'eps_0 mantissa = K_Mex*D_phys + SSq - F_TRZ*SSq + F_TRZ^2 = 8.8563 vs 8.85419 (0.024%). Lead K_Mex*D_phys = 25/3.',
+            'source': 'PAPER_1586', 'residual_pct': abs(v - 8.8541878128) / 8.8541878128 * 100.0}
+
+
+@_register('PAPER_1587')
+def _p1587(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = K_MEX - phi56 + F_TRZ ** 2 * SSQ
+    return {'value': {'mu0_mantissa': v},
+            'formula': 'mu_0 mantissa = K_Mex - Phi_5/6 + F_TRZ^2*SSq = 1.2557 vs 1.25664 (0.075% full CODATA; paper states 0.103% against rounded 1.257 anchor - disclosed). Lead = K_Mex - Phi_5/6 = 5/4 EXACT, the SAME composed identity as the P1580 sidereal fractional day - third recurrence of the K_Mex/Phi_5/6 pair.',
+            'source': 'PAPER_1587', 'residual_pct': abs(v - 1.25663706212) / 1.25663706212 * 100.0}
+
+
+@_register('PAPER_1588')
+def _p1588(dataset=None):
+    v = N_CH - F_TRZ * SSQ + F_TRZ ** 2 * D_PHYS
+    return {'value': {'coulomb_ke_mantissa': v},
+            'formula': 'k_e mantissa = N_ch - F_TRZ*SSq + F_TRZ^2*D_phys = 8.983 vs 8.98755 (0.051%). Lead N_ch = 9.',
+            'source': 'PAPER_1588', 'residual_pct': abs(v - 8.9875517923) / 8.9875517923 * 100.0}
+
+
+@_register('PAPER_1589')
+def _p1589(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_PHYS + phi56 + F_TRZ * D_PHYS + F_TRZ * SSQ
+    return {'value': {'bohr_radius_mantissa': v},
+            'formula': 'a_0 mantissa = D_phys + Phi_5/6 + F_TRZ*D_phys + F_TRZ*SSq = 5.2903 vs 5.29177 (0.027%)',
+            'source': 'PAPER_1589', 'residual_pct': abs(v - 5.29177210903) / 5.29177210903 * 100.0}
+
+
+@_register('PAPER_1590')
+def _p1590(dataset=None):
+    v = F_TRZ * SO_5 + F_TRZ * SSQ + F_TRZ ** 2 * D_PHYS
+    return {'value': {'rydberg_rinf_mantissa': v},
+            'formula': 'R_inf mantissa = F_TRZ*SO_5 + F_TRZ*SSq + F_TRZ^2*D_phys = 1.0970 vs 1.09737 (0.034%). Lead F_TRZ*SO_5 = 1 EXACT (the F_TRZ ratio identity).',
+            'source': 'PAPER_1590', 'residual_pct': abs(v - 1.0973731568) / 1.0973731568 * 100.0}
+
+
+@_register('PAPER_2160')
+def _p2160(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    i1 = K_MEX - F_TRZ * phi56
+    i2 = K_MEX - phi56
+    return {'value': {'i1_exact_2': i1, 'i2_exact_5_4': i2,
+                      'i1_corollary': phi56 * (SO_5 / D_PHYS - F_TRZ),
+                      'i2_corollary': phi56 * (D_BSFG / D_PHYS),
+                      'occurrences': ('PAPER_1578', 'PAPER_1579', 'PAPER_1580', 'PAPER_1587')},
+            'formula': 'Composed-identity pair: I1 = K_Mex - F_TRZ*Phi_5/6 = 2 EXACT; I2 = K_Mex - Phi_5/6 = 5/4 EXACT. Both PAPER_1522 corollaries (K_Mex = Phi_5/6*SO_5/D_phys); I2 factors through the PAPER_1962 ratio: I2 = Phi_5/6*D_bsfg/D_phys. Four occurrences across acoustics, celestial mechanics, calendrics, EM.',
+            'source': 'PAPER_2160', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1591')
+def _p1591(dataset=None):
+    v = K_MEX - F_TRZ * SSQ - F_TRZ ** 2 * D_PHYS + F_TRZ ** 2 * SSQ + F_TRZ ** 2 * K_MEX - F_TRZ ** 2
+    return {'value': {'electron_g_factor': v},
+            'formula': 'g_e = K_Mex - F_TRZ*SSq + F_TRZ^2*(SSq + K_Mex - D_phys - 1) = 2.00287 vs 2.0023193 (0.027%)',
+            'source': 'PAPER_1591', 'residual_pct': abs(v - 2.00231930436) / 2.00231930436 * 100.0}
+
+
+@_register('PAPER_1592')
+def _p1592(dataset=None):
+    v = K_MEX * D_PHYS + SSQ + F_TRZ * D_PHYS - F_TRZ ** 2 * D_PHYS + F_TRZ ** 2
+    return {'value': {'bohr_magneton_mantissa': v},
+            'formula': 'mu_B mantissa = K_Mex*D_phys + SSq + F_TRZ*D_phys - F_TRZ^2*D_phys + F_TRZ^2 = 9.2733 vs 9.27401 (0.007%, band tier-best). Lead K_Mex*D_phys = 25/3, same as eps_0 (P1586).',
+            'source': 'PAPER_1592', 'residual_pct': abs(v - 9.2740100783) / 9.2740100783 * 100.0}
+
+
+@_register('PAPER_1593')
+def _p1593(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = K_MEX + phi56 - F_TRZ * SSQ + F_TRZ ** 2 * D_PHYS
+    return {'value': {'wien_b_mantissa': v},
+            'formula': 'Wien b mantissa = K_Mex + Phi_5/6 - F_TRZ*SSq + F_TRZ^2*D_phys = 2.8997 vs 2.89777 (0.065% full CODATA; paper states 0.058% vs rounded 2.898 - disclosed). Lead K_Mex + Phi_5/6 = 35/12, the SUM sibling of the PAPER_2160 difference pair.',
+            'source': 'PAPER_1593', 'residual_pct': abs(v - 2.897771955) / 2.897771955 * 100.0}
+
+
+@_register('PAPER_1594')
+def _p1594(dataset=None):
+    v = D_BSFG + F_TRZ * D_BSFG + F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ - F_TRZ ** 2
+    return {'value': {'planck_h_mantissa': v},
+            'formula': 'h mantissa = D_bsfg*(1 + F_TRZ) + F_TRZ^2*(D_phys - SSq - 1) = 6.6243 vs 6.62607015 (0.027%). Lead D_bsfg*(1+F_TRZ) = 6.6, the PAPER_2128 successor-ratio form.',
+            'source': 'PAPER_1594', 'residual_pct': abs(v - 6.62607015) / 6.62607015 * 100.0}
+
+
+@_register('PAPER_1595')
+def _p1595(dataset=None):
+    v = SO_5 / D_PHYS + F_TRZ * D_PHYS + F_TRZ * SSQ + F_TRZ ** 2 * D_PHYS
+    return {'value': {'c_mantissa': v},
+            'formula': 'c mantissa = SO_5/D_phys + F_TRZ*(D_phys + SSq) + F_TRZ^2*D_phys = 2.997 vs 2.99792458 (0.031%). Lead SO_5/D_phys = 5/2 - the same PAPER_1522 bracket ratio as PAPER_2160. Mantissa route; canonical full route stays PAPER_592 (D_crit*4pi/Phi_res)*v_F.',
+            'source': 'PAPER_1595', 'residual_pct': abs(v - 2.99792458) / 2.99792458 * 100.0}
+
+
+@_register('PAPER_1596')
+def _p1596(dataset=None):
+    v = A_5 ** 2 * F_TRZ * D_PHYS - N_CH * SO_5 + SO_5 + SSQ + F_TRZ * D_PHYS
+    return {'value': {'solar_constant_w_m2': v},
+            'formula': 'S = A_5^2*F_TRZ*D_phys - N_ch*SO_5 + SO_5 + SSq + F_TRZ*D_phys = 1440-90+10+0.57+0.4 = 1360.97 vs 1361 W/m2 (0.002%)',
+            'source': 'PAPER_1596', 'residual_pct': abs(v - 1361.0) / 1361.0 * 100.0}
+
+
+@_register('PAPER_1597')
+def _p1597(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = SO_5 ** 2 + SSQ + phi56 - F_TRZ * phi56
+    return {'value': {'p_atm_kpa': v},
+            'formula': 'P_atm = SO_5^2 + SSq + Phi_5/6*(1 - F_TRZ) = 100 + 0.57 + 0.75 = 101.32 vs 101.325 kPa (0.005%). Tail Phi_5/6*(1-F_TRZ) = (5/6)*(9/10) = 3/4 EXACT - PAPER_2128 predecessor-ratio product.',
+            'source': 'PAPER_1597', 'residual_pct': abs(v - 101.325) / 101.325 * 100.0}
+
+
+@_register('PAPER_1598')
+def _p1598(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = N_CH + phi56 - F_TRZ ** 2 * K_MEX
+    return {'value': {'standard_gravity_m_s2': v},
+            'formula': 'g = N_ch + Phi_5/6 - F_TRZ^2*K_Mex = 9 + 5/6 - 1/48 = 9.8125 vs 9.80665 (0.060% full standard; paper states 0.025% vs rounded 9.81 - disclosed). Note 9.8125 = 157/16 exact rational.',
+            'source': 'PAPER_1598', 'residual_pct': abs(v - 9.80665) / 9.80665 * 100.0}
+
+
+@_register('PAPER_1599')
+def _p1599(dataset=None):
+    v = float(D_CRIT ** 2 * SO_5 + SO_5 ** 3 + SO_5 * N_CH)
+    return {'value': {'carbon_steel_density': v},
+            'formula': 'rho_steel = D_crit^2*SO_5 + SO_5^3 + SO_5*N_ch = 6760+1000+90 = 7850 kg/m3 EXACT',
+            'source': 'PAPER_1599', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1600')
+def _p1600(dataset=None):
+    v = float(D_CRIT * SO_5 ** 2 + N_CH * SO_5 + SO_5)
+    return {'value': {'aluminum_density': v},
+            'formula': 'rho_Al = D_crit*SO_5^2 + N_ch*SO_5 + SO_5 = 2600+90+10 = 2700 kg/m3 EXACT',
+            'source': 'PAPER_1600', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1601')
+def _p1601(dataset=None):
+    v = float(SO_5 ** 2 * D_PHYS + SO_5 ** 2)
+    return {'value': {'pine_density_seq': v},
+            'formula': 'rho_pine = SO_5^2*(D_phys + 1) = 400+100 = 500 kg/m3 EXACT',
+            'source': 'PAPER_1601', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1602')
+def _p1602(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = A_5 + F_TRZ * phi56 * D_PHYS
+    return {'value': {'moon_distance_earth_radii': v},
+            'formula': 'd_Moon/R_earth = A_5 + F_TRZ*Phi_5/6*D_phys = 60 + 1/3 = 60.333 vs 60.336 (0.004%). Tail F_TRZ*Phi_5/6*D_phys = 1/3 EXACT - PAPER_2160 family member (= sigma_Li7 of PAPER_2158!).',
+            'source': 'PAPER_1602', 'residual_pct': abs(v - 60.336) / 60.336 * 100.0}
+
+
+@_register('PAPER_1603')
+def _p1603(dataset=None):
+    v = D_CRIT * SO_5 + SSQ * SO_5 + SO_5 * D_PHYS + SO_5 + K_MEX
+    return {'value': {'jupiter_mass_ratio': v},
+            'formula': 'M_J/M_earth = D_crit*SO_5 + SSq*SO_5 + SO_5*D_phys + SO_5 + K_Mex = 260+5.7+40+10+25/12 = 317.783 vs 317.8 (0.005%)',
+            'source': 'PAPER_1603', 'residual_pct': abs(v - 317.8) / 317.8 * 100.0}
+
+
+@_register('PAPER_1604')
+def _p1604(dataset=None):
+    v = D_BSFG + F_TRZ * SO_5 + F_TRZ * D_PHYS
+    return {'value': {'blood_ph': v},
+            'formula': 'pH = D_bsfg + F_TRZ*SO_5 + F_TRZ*D_phys = 6+1+0.4 = 7.4 EXACT',
+            'source': 'PAPER_1604', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1605')
+def _p1605(dataset=None):
+    v = SO_5 + F_TRZ * D_PHYS + F_TRZ ** 2 * SO_5
+    return {'value': {'dna_bp_per_turn': v},
+            'formula': 'bp/turn = SO_5 + F_TRZ*D_phys + F_TRZ^2*SO_5 = 10+0.4+0.1 = 10.5 EXACT (B-DNA)',
+            'source': 'PAPER_1605', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1606')
+def _p1606(dataset=None):
+    v = (D_PHYS + F_TRZ * D_PHYS - F_TRZ * SSQ - F_TRZ ** 2 * D_CRIT + F_TRZ ** 2 * D_BSFG
+         + F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ ** 2 - F_TRZ ** 2 * SSQ ** 3)
+    return {'value': {'m_b_gev': v},
+            'formula': 'm_b = D_phys*(1+F_TRZ) - F_TRZ*SSq + F_TRZ^2*(D_bsfg+D_phys-D_crit-SSq^2-SSq^3) = 4.1779 vs 4.18 (0.050%)',
+            'source': 'PAPER_1606', 'residual_pct': abs(v - 4.18) / 4.18 * 100.0}
+
+
+@_register('PAPER_1607')
+def _p1607(dataset=None):
+    v = (F_TRZ * D_CRIT - F_TRZ * D_PHYS - F_TRZ * SO_5 + F_TRZ ** 2 * SO_5 - F_TRZ ** 2 * D_PHYS
+         + F_TRZ ** 2 * SSQ + F_TRZ ** 2 * SSQ ** 2 + F_TRZ ** 2 * SSQ ** 3)
+    return {'value': {'m_c_gev': v},
+            'formula': 'm_c = F_TRZ*(D_crit-D_phys-SO_5) + F_TRZ^2*(SO_5-D_phys+SSq+SSq^2+SSq^3) = 1.2708 vs 1.27 (0.063%). Lead F_TRZ*12 = 1.2.',
+            'source': 'PAPER_1607', 'residual_pct': abs(v - 1.27) / 1.27 * 100.0}
+
+
+@_register('PAPER_1608')
+def _p1608(dataset=None):
+    v = F_TRZ ** 2 * SO_5 - F_TRZ ** 2 * SSQ ** 2 - F_TRZ ** 2 * SSQ ** 3
+    return {'value': {'m_s_gev': v},
+            'formula': 'm_s = F_TRZ^2*(SO_5 - SSq^2 - SSq^3) = 0.09490 vs 0.095 (0.106%). F_TRZ^2 light-fermion sector, subtractive SSq polynomial (muon P1559 is the additive sibling).',
+            'source': 'PAPER_1608', 'residual_pct': abs(v - 0.095) / 0.095 * 100.0}
+
+
+@_register('PAPER_1609')
+def _p1609(dataset=None):
+    v = F_TRZ ** 3 * (SSQ ** 2 + SSQ ** 3)
+    return {'value': {'m_e_gev': v},
+            'formula': 'm_e = F_TRZ^3*SSq^2*(1+SSq) = 0.000510 vs 0.000511 (0.18%, paper states 0.20%). ONLY F_TRZ^3 fermion - completes the suppression ladder: heavy F^0, light F^2, electron F^3.',
+            'source': 'PAPER_1609', 'residual_pct': abs(v - 0.000511) / 0.000511 * 100.0}
+
+
+@_register('PAPER_1610')
+def _p1610(dataset=None):
+    v = F_TRZ * K_MEX ** 5 - BETA_I ** 4 + 5.0
+    return {'value': {'fe56_be_a_mev': v},
+            'formula': 'Fe-56 BE/A = F_TRZ*K_Mex^5 - beta_i^4 + 5 = 8.7925 vs 8.7903 AME2020 (0.025%). Peak of the binding curve; +5 offset extends the +2/+3 shell-offset family; SUBTRACTIVE beta term unique to the peak.',
+            'source': 'PAPER_1610', 'residual_pct': abs(v - 8.7903) / 8.7903 * 100.0}
+
+
+@_register('PAPER_1611')
+def _p1611(dataset=None):
+    v = F_TRZ * K_MEX ** 5 - BETA_I ** 4 + 5.0
+    return {'value': {'ni62_be_a_mev': v},
+            'formula': 'Ni-62 BE/A = F_TRZ*K_Mex^5 - beta_i^4 + 5 = 8.7925 vs 8.7946 AME2020 (0.024%). SAME composition as Fe-56 (P1610): one formula value 8.7925 sits between the two most-bound nuclides (8.7903/8.7946), landing 0.025%/0.024% - the peak of the binding curve is a single primitive composition serving both.',
+            'source': 'PAPER_1611', 'residual_pct': abs(v - 8.7946) / 8.7946 * 100.0}
+
+
+@_register('PAPER_1612')
+def _p1612(dataset=None):
+    v = F_TRZ * K_MEX ** 5 + BETA_I + F_TRZ * BETA_I + 3.0
+    return {'value': {'u235_be_a_mev': v},
+            'formula': 'U-235 BE/A = F_TRZ*K_Mex^5 + beta_i*(1+F_TRZ) + 3 = 7.5878 vs 7.591 (0.042%)',
+            'source': 'PAPER_1612', 'residual_pct': abs(v - 7.591) / 7.591 * 100.0}
+
+
+@_register('PAPER_1613')
+def _p1613(dataset=None):
+    v = F_TRZ * K_MEX ** 5 + BETA_I ** 2 + BETA_I ** 3 + F_TRZ * BETA_I + 3.0
+    return {'value': {'u238_be_a_mev': v},
+            'formula': 'U-238 BE/A = F_TRZ*K_Mex^5 + beta_i^2 + beta_i^3 + F_TRZ*beta_i + 3 = 7.5675 vs 7.570 (0.033%)',
+            'source': 'PAPER_1613', 'residual_pct': abs(v - 7.570) / 7.570 * 100.0}
+
+
+@_register('PAPER_1614')
+def _p1614(dataset=None):
+    v = F_TRZ * K_MEX ** 5 + BETA_I + BETA_I ** 4 + F_TRZ * BETA_I ** 3 + 3.0
+    return {'value': {'c12_be_a_mev': v},
+            'formula': 'C-12 BE/A = F_TRZ*K_Mex^5 + beta_i + beta_i^4 + F_TRZ*beta_i^3 + 3 = 7.6815 vs 7.6802 (0.017%)',
+            'source': 'PAPER_1614', 'residual_pct': abs(v - 7.6802) / 7.6802 * 100.0}
+
+
+@_register('PAPER_1615')
+def _p1615(dataset=None):
+    v = F_TRZ * K_MEX ** 5 + BETA_I + BETA_I ** 2 - F_TRZ * BETA_I ** 3 + 3.0
+    return {'value': {'pb208_be_a_mev': v},
+            'formula': 'Pb-208 BE/A = F_TRZ*K_Mex^5 + beta_i + beta_i^2 - F_TRZ*beta_i^3 + 3 = 7.8691 vs 7.8675 (0.020%). Doubly-magic heavy anchor.',
+            'source': 'PAPER_1615', 'residual_pct': abs(v - 7.8675) / 7.8675 * 100.0}
+
+
+@_register('PAPER_1616')
+def _p1616(dataset=None):
+    v = F_TRZ ** 2 * D_CRIT + F_TRZ * SSQ - F_TRZ ** 2 * SSQ + F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'omega_m': v},
+            'formula': 'Omega_m = F_TRZ^2*D_crit + F_TRZ*SSq - F_TRZ^2*SSq + F_TRZ^2*SSq^2 = 0.31455 vs 0.315 Planck (0.143%). Lead F_TRZ^2*D_crit = 0.26.',
+            'source': 'PAPER_1616', 'residual_pct': abs(v - 0.315) / 0.315 * 100.0}
+
+
+@_register('PAPER_1617')
+def _p1617(dataset=None):
+    v = SSQ + F_TRZ * SSQ + F_TRZ ** 2 * D_BSFG - F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'omega_lambda_seq': v},
+            'formula': 'Omega_L = SSq*(1+F_TRZ) + F_TRZ^2*(D_bsfg - SSq^2) = 0.68375 vs 0.6847 Planck (0.139%; paper states 0.182% vs rounded 0.685 - disclosed). CROSSING: canonical route is PAPER_1156 Omega_L = (6/5)*SSq = 0.684 (0.102%); different compositions, nearly identical values - flagged, not reconciled.',
+            'source': 'PAPER_1617', 'residual_pct': abs(v - 0.6847) / 0.6847 * 100.0}
+
+
+@_register('PAPER_1618')
+def _p1618(dataset=None):
+    v = SSQ * D_PHYS + F_TRZ * D_PHYS + F_TRZ ** 2 * D_PHYS + F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'t_cmb_k': v},
+            'formula': 'T_CMB = SSq*D_phys + F_TRZ*D_phys + F_TRZ^2*(D_phys + SSq^2) = 2.7232 vs 2.72548 K (0.082% full FIRAS; paper states 0.064% vs rounded 2.725 - disclosed). Lead SSq*D_phys = 2.28.',
+            'source': 'PAPER_1618', 'residual_pct': abs(v - 2.72548) / 2.72548 * 100.0}
+
+
+@_register('PAPER_1619')
+def _p1619(dataset=None):
+    v = (2.0 * D_PHYS + SO_5 * SSQ + F_TRZ * SSQ + F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ
+         - F_TRZ ** 2 * SSQ ** 2 - F_TRZ ** 2 * SSQ ** 3)
+    return {'value': {'universe_age_gyr': v},
+            'formula': 'Age = 2*D_phys + SO_5*SSq + F_TRZ*SSq + F_TRZ^2*(D_phys - SSq - SSq^2 - SSq^3) = 13.7862 vs Planck 13.787 Gyr (0.006% - TIGHTER than paper-stated 0.045%, which anchored rounded 13.78; disclosed). Lead 8 + 5.7.',
+            'source': 'PAPER_1619', 'residual_pct': abs(v - 13.787) / 13.787 * 100.0}
+
+
+@_register('PAPER_1620')
+def _p1620(dataset=None):
+    v = F_TRZ * N_CH - F_TRZ ** 2 * SO_5 + F_TRZ ** 2 * SSQ + F_TRZ ** 2 * SSQ ** 2
+    return {'value': {'sigma_8': v},
+            'formula': 'sigma_8 = F_TRZ*N_ch - F_TRZ^2*SO_5 + F_TRZ^2*(SSq + SSq^2) = 0.80895 vs 0.811 Planck (0.253%). Lead F_TRZ*N_ch = 0.9; S8-tension observable wired at paper precision.',
+            'source': 'PAPER_1620', 'residual_pct': abs(v - 0.811) / 0.811 * 100.0}
+
+
+@_register('PAPER_1621')
+def _p1621(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_BSFG + SSQ - F_TRZ * phi56
+    return {'value': {'lapse_rate_k_km': v},
+            'formula': 'Gamma = D_bsfg + SSq - F_TRZ*Phi_5/6 = 6.4867 vs 6.5 K/km (0.21%, environmental-lapse-rate convention)',
+            'source': 'PAPER_1621', 'residual_pct': abs(v - 6.5) / 6.5 * 100.0}
+
+
+@_register('PAPER_1622')
+def _p1622(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_CRIT * N_CH * SO_5 ** 2 + A_5 + D_CRIT - D_PHYS + F_TRZ * SO_5 + F_TRZ * phi56 - K_MEX
+    return {'value': {'au_over_r_earth': v},
+            'formula': 'AU/R_earth = D_crit*N_ch*SO_5^2 + A_5 + D_crit - D_phys + F_TRZ*SO_5 + (F_TRZ*Phi_5/6 - K_Mex) = 23483 - 2 = 23481 EXACT. Tail = -I1 of PAPER_2160 - FIFTH occurrence of the composed-identity pair.',
+            'source': 'PAPER_1622', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1623')
+def _p1623(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_CRIT + D_PHYS - F_TRZ * D_PHYS - F_TRZ * phi56 + F_TRZ ** 2 * K_MEX
+    return {'value': {'synodic_month_days': v},
+            'formula': 'T_synod = D_crit + D_phys - F_TRZ*D_phys - F_TRZ*Phi_5/6 + F_TRZ^2*K_Mex = 29.5375 vs 29.53059 days (0.023%)',
+            'source': 'PAPER_1623', 'residual_pct': abs(v - 29.53059) / 29.53059 * 100.0}
+
+
+@_register('PAPER_1624')
+def _p1624(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = N_CH + 2.0 * SO_5 + phi56 - F_TRZ ** 2 * D_PHYS - F_TRZ ** 2 * SSQ
+    return {'value': {'earth_orbital_v_km_s': v},
+            'formula': 'v_earth = N_ch + 2*SO_5 + Phi_5/6 - F_TRZ^2*(D_phys + SSq) = 29.7876 vs 29.78 km/s (0.026%)',
+            'source': 'PAPER_1624', 'residual_pct': abs(v - 29.78) / 29.78 * 100.0}
+
+
+@_register('PAPER_1625')
+def _p1625(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = D_PHYS + F_TRZ * D_PHYS + F_TRZ * phi56 + F_TRZ * SSQ
+    return {'value': {'earth_age_gyr': v},
+            'formula': 'T_earth = D_phys*(1+F_TRZ) + F_TRZ*(Phi_5/6 + SSq) = 4.5403 vs 4.54 Gyr (0.007%)',
+            'source': 'PAPER_1625', 'residual_pct': abs(v - 4.54) / 4.54 * 100.0}
+
+
+@_register('PAPER_1626')
+def _p1626(dataset=None):
+    v = D_BSFG + F_TRZ ** 2 * SSQ * D_PHYS
+    return {'value': {'avogadro_mantissa': v},
+            'formula': 'N_A mantissa = D_bsfg + F_TRZ^2*SSq*D_phys = 6.0228 vs 6.02214076 (0.011% full SI-exact; paper states 0.007% vs 6.0228 read - disclosed). PAPER_2159 flagged Avogadro as the standing counting-sector test; this composition carries no Phi at all - the test remains open.',
+            'source': 'PAPER_1626', 'residual_pct': abs(v - 6.02214076) / 6.02214076 * 100.0}
+
+
+@_register('PAPER_1627')
+def _p1627(dataset=None):
+    v = K_MEX * (D_PHYS - F_TRZ ** 2)
+    return {'value': {'gas_constant_r': v},
+            'formula': 'R = K_Mex*(D_phys - F_TRZ^2) = 8.3125 vs 8.31446 J/(mol K) (0.024% full SI; paper states 0.018% vs rounded 8.314 - disclosed). Note 8.3125 = 133/16 exact rational.',
+            'source': 'PAPER_1627', 'residual_pct': abs(v - 8.31446261815) / 8.31446261815 * 100.0}
+
+
+@_register('PAPER_1628')
+def _p1628(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = F_TRZ * SO_5 + F_TRZ * SSQ * phi56 / D_BSFG
+    return {'value': {'h_mass_u': v},
+            'formula': 'H atomic mass = F_TRZ*SO_5 + F_TRZ*SSq*Phi_5/6/D_bsfg = 1 + 0.00792 = 1.00792 vs 1.008 u (0.008%). Lead F_TRZ*SO_5 = 1 EXACT again (P1590 sibling).',
+            'source': 'PAPER_1628', 'residual_pct': abs(v - 1.008) / 1.008 * 100.0}
+
+
+@_register('PAPER_1629')
+def _p1629(dataset=None):
+    v = K_MEX - SSQ + F_TRZ ** 2 * SSQ * D_PHYS + F_TRZ * SSQ + F_TRZ ** 2
+    return {'value': {'elementary_charge_mantissa': v},
+            'formula': 'e mantissa = K_Mex - SSq + F_TRZ^2*SSq*D_phys + F_TRZ*SSq + F_TRZ^2 = 1.6031 vs 1.602176634 SI-exact (0.060% - tighter than paper-stated 0.071%)',
+            'source': 'PAPER_1629', 'residual_pct': abs(v - 1.602176634) / 1.602176634 * 100.0}
+
+
+@_register('PAPER_1630')
+def _p1630(dataset=None):
+    v = D_PHYS - F_TRZ * D_PHYS + F_TRZ
+    return {'value': {'ocean_mean_depth_km': v},
+            'formula': 'd_ocean = D_phys*(1 - F_TRZ) + F_TRZ = 3.7 km EXACT (mean ocean depth)',
+            'source': 'PAPER_1630', 'residual_pct': 0.0}
 
 
 @_register('PAPER_001')

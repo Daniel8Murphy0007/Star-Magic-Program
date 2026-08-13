@@ -5773,3 +5773,134 @@ v_scm,WHITEPAPER,derived,,,1e8,c/3 EXACT,0.0,structural,,PAPER_1497,,,,,,WIRED
 u_ua_coupling,WHITEPAPER,derived,,,1e-4,1/SO_5^4 EXACT,0.0,structural,,PAPER_1498,,,,,,WIRED
 f_u_genesis_components,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,gravity,,PAPER_1499,,,,,,WIRED
 tde_outflow,WHITEPAPER,derived,,,0.3c,(D_phys-1)/SO_5 EXACT,0.0,astro,,PAPER_1500,,,,,,WIRED
+d_crit_triad_decomp,WHITEPAPER,derived,,,3+23=26,EXACT,0.0,structural,,PAPER_1501,,,,,,WIRED
+monopole_r_exponent,WHITEPAPER,derived,,,23,EXACT,0.0,cosmology,,PAPER_1502,,,,,,WIRED
+gw_bns_damping,WHITEPAPER,derived,,,0.3333,1/3 EXACT,0.0,gw,,PAPER_1503,,,,,,WIRED
+gw_bbh_damping,WHITEPAPER,derived,,,0.81,(N_ch/SO_5)^2; P011 route 0.66 flagged,0.0,gw,,PAPER_1504,,,,,,WIRED
+t_scm_activation_k,WHITEPAPER,derived,,,60,thermal route 59.95,0.083,condensed,,PAPER_1505,,,,,,WIRED
+r_d_range_exponent,WHITEPAPER,derived,,,7,N_ch-2 EXACT,0.0,structural,,PAPER_1506,,,,,,WIRED
+alpha_decay_per_day,WHITEPAPER,derived,,,0.001,1/SO_5^3 EXACT,0.0,nuclear,,PAPER_1507,,,,,,WIRED
+ramanujan_exponent,WHITEPAPER,derived,,,27,D_crit+1 EXACT,0.0,mathematics,,PAPER_1508,,,,,,WIRED
+kerr_offset,WHITEPAPER,derived,,,4.3333,13/3 EXACT,0.0,gw,,PAPER_1509,,,,,,WIRED
+dpm_a26_mass_kg,WHITEPAPER,derived,,,1.6267e-27,AMU 1.6605e-27,2.035,nuclear,,PAPER_1510,,,,,,WIRED
+i6_weight_derivation,WHITEPAPER,derived,,,i^2*i*i^3,A_26 grounded,0.0,structural,,PAPER_1511,,,,,,WIRED
+gw170817_prefactor,WHITEPAPER,derived,,,0.6667,= D_GW_EROSION,0.0,gw,,PAPER_1512,,,,,,WIRED
+ns_radius_m,WHITEPAPER,derived,,,1e4,SO_5^4 EXACT,0.0,astro,,PAPER_1513,,,,,,WIRED
+ns_moment_composed,WHITEPAPER,derived,,,1e8,SO_5^(-4+12) EXACT,0.0,astro,,PAPER_1514,,,,,,WIRED
+ln10_identity,WHITEPAPER,derived,,,2.302667,algebraic identity,0.0035,mathematics,,PAPER_1515,,,,,,WIRED
+ln2_full,WHITEPAPER,derived,,,0.693167,full accounting,0.0028,mathematics,,PAPER_1516,,,,,,WIRED
+pi2_structural,WHITEPAPER,derived,,,9.870833,SO_5-pi^2 ~ F_TRZ,0.0125,mathematics,,PAPER_1517,,,,,,WIRED
+mad_efficiency,WHITEPAPER,derived,,,0.01,1/SO_5^2 EXACT,0.0,astro,,PAPER_1518,,,,,,WIRED
+pcr_q,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,gravity,,PAPER_1519,,,,,,WIRED
+peters_mathews_64,WHITEPAPER,derived,,,64,2^D_BSFG + GR chain,0.0,gw,,PAPER_1520,,,,,,WIRED
+d_bsfg_derivative,WHITEPAPER,derived,,,6,LANDMARK: D_crit-2*SO_5,0.0,structural,,PAPER_1521,,,,,,WIRED
+k_mex_derivative,WHITEPAPER,derived,,,2.0833,LANDMARK: Phi_5/6*SO_5/D_phys,0.0,structural,,PAPER_1522,,,,,,WIRED
+qnm_overtone_ratio,WHITEPAPER,derived,,,0.9834,Berti-Cardoso 0.992,0.864,gw,,PAPER_1523,,,,,,WIRED
+cold_spot_f_geom,WHITEPAPER,derived,,,0.125,1/8 EXACT,0.0,cosmology,,PAPER_1524,,,,,,WIRED
+e_full,WHITEPAPER,derived,,,2.720833,0.094%,0.094,mathematics,,PAPER_1525,,,,,,WIRED
+e_squared_full,WHITEPAPER,derived,,,7.395833,0.092%,0.092,mathematics,,PAPER_1526,,,,,,WIRED
+pi_over_4_full,WHITEPAPER,derived,,,0.779167,0.79% gap-pinned,0.793,mathematics,,PAPER_1527,,,,,,WIRED
+catalan_g,WHITEPAPER,derived,,,0.916667,11/12 EXACT rational,0.077,mathematics,,PAPER_1528,,,,,,WIRED
+zeta2_full,WHITEPAPER,derived,,,1.647333,0.146%,0.146,mathematics,,PAPER_1529,,,,,,WIRED
+zeta3_full,WHITEPAPER,derived,,,1.204833,0.231%,0.231,mathematics,,PAPER_1530,,,,,,WIRED
+gamma_full,WHITEPAPER,derived,,,0.5825,0.92% gap-pinned,0.915,mathematics,,PAPER_1531,,,,,,WIRED
+h2o_18,WHITEPAPER,derived,,,18,EXACT,0.0,chemistry,,PAPER_1532,,,,,,WIRED
+c12,WHITEPAPER,derived,,,12,EXACT,0.0,chemistry,,PAPER_1533,,,,,,WIRED
+n14,WHITEPAPER,derived,,,14,EXACT,0.0,chemistry,,PAPER_1534,,,,,,WIRED
+o16,WHITEPAPER,derived,,,16,EXACT,0.0,chemistry,,PAPER_1535,,,,,,WIRED
+hb_15,WHITEPAPER,derived,,,15,EXACT,0.0,bio,,PAPER_1536,,,,,,WIRED
+hr_70,WHITEPAPER,derived,,,70,= H_0 sum EXACT,0.0,bio,,PAPER_1537,,,,,,WIRED
+bp_120,WHITEPAPER,derived,,,120,EXACT,0.0,bio,,PAPER_1538,,,,,,WIRED
+bp_80,WHITEPAPER,derived,,,80,EXACT,0.0,bio,,PAPER_1539,,,,,,WIRED
+br_16,WHITEPAPER,derived,,,16,EXACT,0.0,bio,,PAPER_1540,,,,,,WIRED
+karman_100,WHITEPAPER,derived,,,100,EXACT,0.0,geo,,PAPER_1541,,,,,,WIRED
+crust_35,WHITEPAPER,derived,,,35,EXACT,0.0,geo,,PAPER_1542,,,,,,WIRED
+moho_7,WHITEPAPER,derived,,,7,EXACT,0.0,geo,,PAPER_1543,,,,,,WIRED
+rydberg_ev,WHITEPAPER,derived,,,13.6057,0.0001%,0.0001,atomic,,PAPER_1544,,,,,,WIRED
+stefan_567,WHITEPAPER,derived,,,5.67,EXACT,0.0,thermo,,PAPER_1545,,,,,,WIRED
+hartree_j_mantissa,WHITEPAPER,derived,,,4.36,J-native; eV tag drift,0.0069,atomic,,PAPER_1546,,,,,,WIRED
+faraday,WHITEPAPER,derived,,,96485.0,0.0003%,0.0003,chemistry,,PAPER_1547,,,,,,WIRED
+z0_ohm,WHITEPAPER,derived,,,376.75,0.0054%,0.0054,em,,PAPER_1548,,,,,,WIRED
+alpha_inv,WHITEPAPER,derived,,,137.04,0.003%; 125 lead,0.0029,atomic,,PAPER_1549,,,,,,WIRED
+compton_pm,WHITEPAPER,derived,,,2.4263,0.001%,0.001,atomic,,PAPER_1550,,,,,,WIRED
+mariana_trench_km,WHITEPAPER,derived,,,11,EXACT,0.0,geo,,PAPER_1551,,,,,,WIRED
+z_recomb,WHITEPAPER,derived,,,1090,EXACT,0.0,cosmology,,PAPER_1552,,,,,,WIRED
+h0_planck_kernel,WHITEPAPER,derived,,,67.410,0.015%; crossing vs H_0=70 disclosed,0.015,cosmology,,PAPER_1553,,,,,,WIRED
+m_w_gev,WHITEPAPER,derived,,,80.377,0.003% tier-best,0.003,particle,,PAPER_1554,,,,,,WIRED
+m_z_gev,WHITEPAPER,derived,,,91.204,0.018%,0.018,particle,,PAPER_1555,,,,,,WIRED
+m_t_gev,WHITEPAPER,derived,,,172.751,0.005%; corrections from executable,0.005,particle,,PAPER_1556,,,,,,WIRED
+m_h_gev,WHITEPAPER,derived,,,125.120,0.016%; core 125,0.016,particle,,PAPER_1557,,,,,,WIRED
+m_tau_gev,WHITEPAPER,derived,,,1.7771,0.013%,0.013,particle,,PAPER_1558,,,,,,WIRED
+m_mu_gev,WHITEPAPER,derived,,,0.10570,0.040%; pure F_TRZ^2 sector,0.04,particle,,PAPER_1559,,,,,,WIRED
+pi_composed,WHITEPAPER,derived,,,3.14063,0.031%; Phi_5/6 variant,0.031,math,,PAPER_1560,,,,,,WIRED
+phi_golden,WHITEPAPER,derived,,,1.6197,0.101%; Phi_5/6 9x discrimination,0.101,math,,PAPER_1561,,,,,,WIRED
+sqrt2,WHITEPAPER,derived,,,1.4157,0.105%,0.105,math,,PAPER_1562,,,,,,WIRED
+sqrt3,WHITEPAPER,derived,,,1.73245,0.023%,0.023,math,,PAPER_1563,,,,,,WIRED
+sqrt5,WHITEPAPER,derived,,,2.23708,0.045%; K_Mex lead,0.045,math,,PAPER_1564,,,,,,WIRED
+o16_be_a,WHITEPAPER,derived,,,7.9769,0.008% tier-best nuclear,0.008,nuclear,,PAPER_1565,,,,,,WIRED
+deuteron_be,WHITEPAPER,derived,,,2.2251,0.024%,0.024,nuclear,,PAPER_1566,,,,,,WIRED
+alpha_be_a,WHITEPAPER,derived,,,7.0706,0.047%; +3 spin-orbit offset,0.047,nuclear,,PAPER_1567,,,,,,WIRED
+co2_ppm,WHITEPAPER,derived,,,420,EXACT,0.0,geo,,PAPER_1568,,,,,,WIRED
+earth_bond_albedo,WHITEPAPER,derived,,,0.30,EXACT; 0.3-factor family,0.0,geo,,PAPER_1569,,,,,,WIRED
+steel_yield_mpa,WHITEPAPER,derived,,,250,EXACT,0.0,materials,,PAPER_1570,,,,,,WIRED
+steel_youngs_gpa,WHITEPAPER,derived,,,200,EXACT,0.0,materials,,PAPER_1571,,,,,,WIRED
+concrete_density,WHITEPAPER,derived,,,2400,EXACT,0.0,materials,,PAPER_1572,,,,,,WIRED
+h0_canonical,WHITEPAPER,derived,,,70,EXACT; PAPER_2144 landmark source,0.0,cosmology,,PAPER_1573,,,,,,WIRED
+r_sun_over_r_earth,WHITEPAPER,derived,,,109,EXACT,0.0,solar,,PAPER_1574,,,,,,WIRED
+m_sun_over_m_earth,WHITEPAPER,derived,,,333000,EXACT,0.0,solar,,PAPER_1575,,,,,,WIRED
+concrete_fc_mpa,WHITEPAPER,derived,,,30,EXACT,0.0,materials,,PAPER_1576,,,,,,WIRED
+diamond_mohs,WHITEPAPER,derived,,,10,EXACT; single primitive,0.0,materials,,PAPER_1577,,,,,,WIRED
+v_sound_air,WHITEPAPER,derived,,,343,EXACT; K_Mex-F_TRZ*Phi_5/6=2,0.0,acoustics,,PAPER_1578,,,,,,WIRED
+earth_sun_distance_gm,WHITEPAPER,derived,,,149.6,EXACT; same tail pair,0.0,solar,,PAPER_1579,,,,,,WIRED
+sidereal_year_days,WHITEPAPER,derived,,,365.25,EXACT; K_Mex-Phi_5/6=5/4,0.0,solar,,PAPER_1580,,,,,,WIRED
+body_temp_c,WHITEPAPER,derived,,,37,EXACT,,biology,,PAPER_1581,,,,,,WIRED
+blood_glucose,WHITEPAPER,derived,,,100,EXACT; SO_5^2 third reuse,,biology,,PAPER_1582,,,,,,WIRED
+adult_height_cm,WHITEPAPER,derived,,,170,EXACT,,biology,,PAPER_1583,,,,,,WIRED
+earth_radius_km,WHITEPAPER,derived,,,6371,EXACT,,geo,,PAPER_1584,,,,,,WIRED
+earth_core_radius_km,WHITEPAPER,derived,,,3485,EXACT,,geo,,PAPER_1585,,,,,,WIRED
+epsilon0_mantissa,WHITEPAPER,derived,,,8.8563,0.024%,,em,,PAPER_1586,,,,,,WIRED
+mu0_mantissa,WHITEPAPER,derived,,,1.2557,0.075%; lead K_Mex-Phi_5/6=5/4 third recurrence,,em,,PAPER_1587,,,,,,WIRED
+coulomb_ke_mantissa,WHITEPAPER,derived,,,8.983,0.051%,,em,,PAPER_1588,,,,,,WIRED
+bohr_radius_mantissa,WHITEPAPER,derived,,,5.2903,0.027%,,atomic,,PAPER_1589,,,,,,WIRED
+rydberg_rinf_mantissa,WHITEPAPER,derived,,,1.0970,0.034%; lead F_TRZ*SO_5=1,,atomic,,PAPER_1590,,,,,,WIRED
+kmex_phi56_identity_pair,WHITEPAPER,derived,,,I1=2; I2=5/4,EXACT; PAPER_1522 corollaries,0.0,identity,,PAPER_2160,,,,,,WIRED
+electron_g_factor,WHITEPAPER,derived,,,2.00287,0.027%,,atomic,,PAPER_1591,,,,,,WIRED
+bohr_magneton_mantissa,WHITEPAPER,derived,,,9.2733,0.007% tier-best,,atomic,,PAPER_1592,,,,,,WIRED
+wien_b_mantissa,WHITEPAPER,derived,,,2.8997,0.065%; lead 35/12,,thermo,,PAPER_1593,,,,,,WIRED
+planck_h_mantissa,WHITEPAPER,derived,,,6.6243,0.027%; lead 6.6 successor form,,quantum,,PAPER_1594,,,,,,WIRED
+c_mantissa,WHITEPAPER,derived,,,2.997,0.031%; canonical route PAPER_592,,em,,PAPER_1595,,,,,,WIRED
+solar_constant,WHITEPAPER,derived,,,1360.97,0.002%,,solar,,PAPER_1596,,,,,,WIRED
+p_atm_kpa,WHITEPAPER,derived,,,101.32,0.005%; tail 3/4 EXACT,,geo,,PAPER_1597,,,,,,WIRED
+standard_gravity,WHITEPAPER,derived,,,9.8125,0.060%; =157/16,,geo,,PAPER_1598,,,,,,WIRED
+carbon_steel_density,WHITEPAPER,derived,,,7850,EXACT,,materials,,PAPER_1599,,,,,,WIRED
+aluminum_density_seq,WHITEPAPER,derived,,,2700,EXACT; route distinct from REPO_MINE rows,,materials,,PAPER_1600,,,,,,WIRED
+pine_density_seq,WHITEPAPER,derived,,,500,EXACT,,materials,,PAPER_1601,,,,,,WIRED
+moon_distance_er,WHITEPAPER,derived,,,60.333,0.004%; tail 1/3 = sigma_Li7,,solar,,PAPER_1602,,,,,,WIRED
+jupiter_mass_ratio,WHITEPAPER,derived,,,317.783,0.005%,,solar,,PAPER_1603,,,,,,WIRED
+blood_ph,WHITEPAPER,derived,,,7.4,EXACT,,biology,,PAPER_1604,,,,,,WIRED
+dna_bp_per_turn,WHITEPAPER,derived,,,10.5,EXACT,,biology,,PAPER_1605,,,,,,WIRED
+m_b_gev,WHITEPAPER,derived,,,4.1779,0.050%,,particle,,PAPER_1606,,,,,,WIRED
+m_c_gev,WHITEPAPER,derived,,,1.2708,0.063%,,particle,,PAPER_1607,,,,,,WIRED
+m_s_gev,WHITEPAPER,derived,,,0.09490,0.106%; F_TRZ^2 subtractive,,particle,,PAPER_1608,,,,,,WIRED
+m_e_gev,WHITEPAPER,derived,,,0.000510,0.18%; only F_TRZ^3 fermion,,particle,,PAPER_1609,,,,,,WIRED
+fe56_be_a_seq,WHITEPAPER,derived,,,8.7925,0.025%; binding-curve peak,,nuclear,,PAPER_1610,,,,,,WIRED
+ni62_be_a,WHITEPAPER,derived,,,8.7925,0.024%; shared w P1610,,nuclear,,PAPER_1611,,,,,,WIRED
+u235_be_a,WHITEPAPER,derived,,,7.5878,0.042%,,nuclear,,PAPER_1612,,,,,,WIRED
+u238_be_a,WHITEPAPER,derived,,,7.5675,0.033%,,nuclear,,PAPER_1613,,,,,,WIRED
+c12_be_a,WHITEPAPER,derived,,,7.6815,0.017%,,nuclear,,PAPER_1614,,,,,,WIRED
+pb208_be_a,WHITEPAPER,derived,,,7.8691,0.020%; doubly-magic,,nuclear,,PAPER_1615,,,,,,WIRED
+omega_m_seq,WHITEPAPER,derived,,,0.31455,0.143%,,cosmology,,PAPER_1616,,,,,,WIRED
+omega_lambda_seq2,WHITEPAPER,derived,,,0.68375,0.139%; crossing PAPER_1156,,cosmology,,PAPER_1617,,,,,,WIRED
+t_cmb_seq,WHITEPAPER,derived,,,2.7232,0.082%,,cosmology,,PAPER_1618,,,,,,WIRED
+universe_age,WHITEPAPER,derived,,,13.7862,0.006% vs Planck full,,cosmology,,PAPER_1619,,,,,,WIRED
+sigma_8_seq,WHITEPAPER,derived,,,0.80895,0.253%,,cosmology,,PAPER_1620,,,,,,WIRED
+lapse_rate,WHITEPAPER,derived,,,6.4867,0.21%,,geo,,PAPER_1621,,,,,,WIRED
+au_over_r_earth,WHITEPAPER,derived,,,23481,EXACT; -I1 fifth occurrence,,solar,,PAPER_1622,,,,,,WIRED
+synodic_month,WHITEPAPER,derived,,,29.5375,0.023%,,solar,,PAPER_1623,,,,,,WIRED
+earth_orbital_v,WHITEPAPER,derived,,,29.7876,0.026%,,solar,,PAPER_1624,,,,,,WIRED
+earth_age_gyr,WHITEPAPER,derived,,,4.5403,0.007%,,geo,,PAPER_1625,,,,,,WIRED
+avogadro_mantissa,WHITEPAPER,derived,,,6.0228,0.011%; counting-sector test open,,chemistry,,PAPER_1626,,,,,,WIRED
+gas_constant_r,WHITEPAPER,derived,,,8.3125,0.024%; =133/16,,chemistry,,PAPER_1627,,,,,,WIRED
+h_mass_u,WHITEPAPER,derived,,,1.00792,0.008%,,chemistry,,PAPER_1628,,,,,,WIRED
+e_charge_mantissa,WHITEPAPER,derived,,,1.6031,0.060%,,em,,PAPER_1629,,,,,,WIRED
+ocean_mean_depth,WHITEPAPER,derived,,,3.7,EXACT,,geo,,PAPER_1630,,,,,,WIRED
