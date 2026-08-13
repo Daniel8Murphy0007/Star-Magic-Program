@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.370.0"
-description = "UQFF pure calculator v0.370.0 - bands PAPER_1401-1440 (40 dispatches). Q-1412 CLOSED by self-rectification: z_reion = K_Mex*D_phys*Phi_res*(1+1/SO_5) = 7.70 EXACT, the omitted successor ratio supplied by PAPER_1332. Bit-identical crossings pinned (RC diversity = QGP R_AA; TDE = TBTF stall); F_TRZ*beta_i spans nine sectors; negative time enters inflation (t_neg = -2512 s). KOTO no-anomaly and sub-0.1% siren-H_0 offset predictions. Gate 4,626 green / 1,457 dispatches."
+version = "0.371.0"
+description = "UQFF pure calculator v0.371.0 - bands PAPER_1441-1500 (50 dispatches, two-thirds mark). THE HUBBLE TENSION IS THE 1/12 TILT: dH_0 = 67.4*(K_Mex-2) = 5.617, SH0ES 73 = Planck*(1+1/12) to 0.023%. EMPIRICAL LOOP: the q-scope 3.102 anchor re-measured from Daniel's raw archive frames. COSMOGENESIS SPINE: 26 pre-mass states, mass genesis = F_U 0->1, vacuum = 11*rho_SCm, Ni-62 triple-locked. Spooky distance ~5 AU; TDE 0.3c. Gate 4,682 green / 1,517 wired."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

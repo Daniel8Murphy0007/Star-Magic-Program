@@ -6076,3 +6076,9 @@ The paradox suite wired with zero new OPEN_RULING rows: every paper named a pred
 closure and every derivation was read from it. Recorded so the per-ship rulings trail has
 no silent gap. Post-ship correction: this note and the audit-family CSV rows for the band
 were appended AFTER the v0.369.0 tag (under-ship caught by Daniel); they ride with v0.370.0.
+
+## (no new rulings — bands 1441-1500, v0.371.0)
+Five bands, 50 dispatches, zero new OPEN_RULING rows. Items carried open within dispatches
+rather than queued: P1492 proton-core f_DPM factor (OPEN in-dispatch), P1459 S_8 candidate
+composition (FLAGGED as observation, not adopted), P1441 Li-7 dual-route 4% gap (both routes
+carried). Recorded so the per-ship rulings trail has no silent gap. Open questions remain 31.

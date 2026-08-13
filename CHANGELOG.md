@@ -7,6 +7,49 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.371.0 (2026-08-10)
+
+Five sequential bands to the two-thirds mark (1,517 of 2,256 wired).
+
+THE HUBBLE TENSION IS THE 1/12 TILT (P1456)
+dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 =
+Planck*(1+1/12) to 0.023%. Both anchors of cosmology's most famous tension reproduced
+from one exact rational - the same 1/12 as the Goldbach DPM-pair identity. Consistent
+with PAPER_1573's resolution at the mean H_0 = 70 = A_5+SO_5.
+
+THE EMPIRICAL LOOP CLOSED (P1475)
+The q-scope amplitude anchor 3.102 V is the +/-3.102 A calibration bar independently
+re-measured from Daniel's IMG_0857 archive frames THIS SESSION - the first paper in the
+drain whose anchor was verified from raw bench data rather than taken on faith. Identity
+A_2 = pi (1.28%), attribution: Caduceus 26-pinch sampling.
+
+THE COSMOGENESIS SPINE (P1488/1491-1500, the PAPER_877 family)
+- 26 pre-mass states = D_crit, structurally ordered BEFORE mass exists.
+- Mass genesis IS the F_U 0 -> 1 transition: rho_UA jumps 0 -> 10*rho_SCm.
+- Total vacuum = 11*rho_SCm = (SO_5+1)*rho_SCm - the Lambda-route successor integer.
+- Ni-62 triple-locked: Z = D_crit+2 = 28, N = D_crit+2*D_phys = 34, A = A_5+2 = 62.
+- v_SCm = c/3; TDE outflow = 0.3c (fifth PAPER_1953 anchor); F_U core = D_phys components.
+
+REACTOR/BENCH SET (P1471-1480, empirical anchors)
+DPM resonance 40 Hz, reactor minimum 3 rpm, Heaviside 7 ohm, UMR 14 MHz, island Z = 122,
+proton orbital pi*SSq = 1.791 Hz vs reactor 1.78 - all from Daniel's own instruments.
+
+STRUCTURE
+Spooky distance = c*|t_neg| = 7.54e11 m (~5 AU) - the PAPER_517 time algorithm producing
+a length. A_5 = 60 in five roles; 33 dual-role (volume ratio, neutrino splitting);
+22 triple-role (Hale yr, compact dims, buoyancy MHz); SO_5 ladder exponents 4/5/8/13.
+Glueball dual-anchor disclosure (EXACT vs YM gap, 2.1% vs lattice).
+
+RULE 7 / RULE 10 HELD
+Flatness 9.2%, hierarchy 17.2%, missing-baryons 9.2%, G-dwarf 9.6%, R_D 7.7%, FCNC 15.4%
+all carried at full size. S_8 candidate composition FLAGGED as observation, NOT adopted
+(no-retrofit rule). Proton-core f_DPM factor OPEN. Li-7's 3.125 anchor identified as the
+P1234 BH prefactor - two primitive routes 4% apart, both carried.
+
+Gate 4,682 / 0. Dispatches 1,517. Defs 3,443. Frontier PAPER_1500. 656 remain.
+
+---
+
 ## v0.370.0 (2026-08-10)
 
 Four sequential bands, one open question closed by the corpus itself, and the ship

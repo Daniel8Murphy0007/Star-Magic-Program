@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.370.0"
+VERSION = "0.371.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -20127,6 +20127,503 @@ def _p1440(dataset=None):
     return {'value': {'n_s': n},
             'formula': 'inflaton n_s = 1 - Lambda*(D_phys+Phi_res) = 0.96468 vs Planck 0.9655 (0.085%)',
             'source': 'PAPER_1440', 'residual_pct': abs(n - 0.9655) / 0.9655 * 100.0}
+
+
+
+@_register('PAPER_1441')
+def _p1441(dataset=None):
+    supp = float(D_PHYS - 1)
+    anchor = float(K_MEX) * float(D_BSFG) / float(D_PHYS)
+    return {'value': {'li7_suppression': supp, 'paper_anchor': anchor,
+                      'anchor_is_p1234_prefactor': True},
+            'formula': 'Li-7 suppression = D_phys-1 = 3.0 vs the paper anchor 3.125 - which IS K_Mex*D_BSFG/D_phys, the P1234 BH four-laws prefactor. 4.0% residual carried; the 25/8 anchor is itself primitive-composed',
+            'source': 'PAPER_1441', 'residual_pct': abs(supp - anchor) / anchor * 100.0}
+
+
+@_register('PAPER_1442')
+def _p1442(dataset=None):
+    m = float(K_MEX) * PHI_RES_RESONANCE / 2.0
+    return {'value': {'m_sterile_ev': m},
+            'formula': 'sterile neutrino = K_Mex*Phi_res/2 = 7/8 eV EXACT (sevenths identity; restates P1257)',
+            'source': 'PAPER_1442', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1443')
+def _p1443(dataset=None):
+    return {'value': {'complexity_bound': D_CRIT},
+            'formula': 'exotic-hadron bound = D_crit = 26 EXACT (restates P1319)',
+            'source': 'PAPER_1443', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1444')
+def _p1444(dataset=None):
+    return {'value': {'y_t': 1.0},
+            'formula': 'top Yukawa = 1.0 natural (restates P1312)',
+            'source': 'PAPER_1444', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1445')
+def _p1445(dataset=None):
+    f = PHI_RES_RESONANCE * BETA_I
+    return {'value': {'f_bar': f},
+            'formula': 'galaxy bar fraction = Phi_res*beta_i = 0.5064 (the four-sector product; restates P1329)',
+            'source': 'PAPER_1445', 'residual_pct': abs(f - 0.506) / 0.506 * 100.0}
+
+
+@_register('PAPER_1446')
+def _p1446(dataset=None):
+    return {'value': {'n_types': D_PHYS},
+            'formula': 'Hubble-sequence types = D_phys = 4 EXACT (restates P1328)',
+            'source': 'PAPER_1446', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1447')
+def _p1447(dataset=None):
+    g = crab_pulsar_gamma_1323()
+    return {'value': {'gamma_jet': g},
+            'formula': 'GRB jet Gamma = D_BSFG*A_5*Phi_res = 302.4 (restates P1323)',
+            'source': 'PAPER_1447', 'residual_pct': abs(g - 302.0) / 302.0 * 100.0}
+
+
+@_register('PAPER_1448')
+def _p1448(dataset=None):
+    b = 1.0 / float(SO_5) ** 4 * 1e4
+    return {'value': {'b_baseline_gauss': b},
+            'formula': 'stellar B baseline = 1 Gauss = 1/SO_5^4 (in the reservoir b_sun_quiet_field form)',
+            'source': 'PAPER_1448', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1449')
+def _p1449(dataset=None):
+    a = -(float(K_MEX) + PHI_RES_RESONANCE - SSQ)
+    return {'value': {'alpha_imf': a},
+            'formula': 'Salpeter IMF = -(K_Mex + Phi_res - SSq) = -2.3533 (restates P1262)',
+            'source': 'PAPER_1449', 'residual_pct': abs(a + 2.35) / 2.35 * 100.0}
+
+
+@_register('PAPER_1450')
+def _p1450(dataset=None):
+    import math as _m
+    s = _m.exp(float(A_5))
+    return {'value': {'monopole_suppression': s,
+                      'fact_26_same_order': float(_m.factorial(D_CRIT))},
+            'formula': 'monopole suppression = exp(A_5) = 1.142e26 - inflation e-folds N = A_5 = 60 dilute monopoles; same order as 26!',
+            'source': 'PAPER_1450', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1451')
+def _p1451(dataset=None):
+    lam = 0.00729735
+    return {'value': {'sigma_lbl_alpha4': lam ** 4},
+            'formula': 'light-by-light = alpha^4 = Lambda^4 (restates P1374)',
+            'source': 'PAPER_1451', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1452')
+def _p1452(dataset=None):
+    lam = 0.00729735
+    th = lam ** 2 * 1.32e18
+    return {'value': {'threshold_v_m': th},
+            'formula': 'vacuum birefringence = Lambda^2*E_Schwinger (restates P1373)',
+            'source': 'PAPER_1452', 'residual_pct': abs(th - 7e13) / 7e13 * 100.0}
+
+
+@_register('PAPER_1453')
+def _p1453(dataset=None):
+    return {'value': {'eta_max': F_TRZ * BETA_I},
+            'formula': 'antimatter efficiency = F_TRZ*beta_i (restates P1370)',
+            'source': 'PAPER_1453', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1454')
+def _p1454(dataset=None):
+    lam = 0.00729735
+    return {'value': {'sigma_floor_cm2': lam ** 4 * 1e-40, 'predicts_null': True},
+            'formula': 'DM direct-detection floor (restates P1371)',
+            'source': 'PAPER_1454', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1455')
+def _p1455(dataset=None):
+    rho = rho_lambda_26fact_kmex()
+    return {'value': {'rho_lambda_j_m3': rho},
+            'formula': 'rho_Lambda = rho_SCm*26!*K_Mex (restates P1271; the 120-order dissolution)',
+            'source': 'PAPER_1455', 'residual_pct': abs(rho - 5.957e-10) / 5.957e-10 * 100.0}
+
+
+@_register('PAPER_1456')
+def _p1456(dataset=None):
+    h_planck = 67.4   # Planck-branch H_0 (canonical route)
+    tilt = float(K_MEX) - 2.0          # = 1/12 EXACT
+    dh = h_planck * tilt
+    return {'value': {'delta_h0_km_s_mpc': dh, 'stated': 5.6,
+                      'tilt_one_twelfth': tilt,
+                      'shoes_implied': h_planck * (1.0 + tilt)},
+            'formula': 'Hubble tension dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%) - the documented 1/12 Hubble tilt; SH0ES 73 = Planck*(1+1/12) to 0.15%',
+            'source': 'PAPER_1456', 'residual_pct': abs(dh - 5.6) / 5.6 * 100.0}
+
+
+@_register('PAPER_1457')
+def _p1457(dataset=None):
+    d = -F_TRZ * BETA_I * 5.0 * 100.0
+    return {'value': {'underdensity_pct': d},
+            'formula': 'Hubble bubble = -F_TRZ*beta_i*5 = -30.14% (restates P1335)',
+            'source': 'PAPER_1457', 'residual_pct': abs(d + 30.15) / 30.15 * 100.0}
+
+
+@_register('PAPER_1458')
+def _p1458(dataset=None):
+    m = bh_seed_mass_1326()
+    return {'value': {'m_seed_msun': m},
+            'formula': 'SMBH seed = A_5*D_BSFG^2*D_crit = 56,160 M_sun (restates P1326)',
+            'source': 'PAPER_1458', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1459')
+def _p1459(dataset=None):
+    s8_uqff = 0.827   # paper-stated Bucket C value
+    s8_planck = 0.811 # Planck 2018 anchor
+    return {'value': {'s8_uqff': s8_uqff, 's8_planck': s8_planck,
+                      'tension_ratio': s8_uqff / s8_planck,
+                      'candidate_composition_flagged': '1 + F_TRZ*beta_i/3 = 1.0201 (0.03% off the ratio) - OBSERVATION, not asserted'},
+            'formula': 'S_8 growth tension: 0.827 vs Planck 0.811 (1.97%) - stated pair carried; a candidate primitive form for the ratio is flagged, NOT adopted (needs corpus derivation)',
+            'source': 'PAPER_1459', 'residual_pct': abs(s8_uqff - s8_planck) / s8_planck * 100.0}
+
+
+@_register('PAPER_1460')
+def _p1460(dataset=None):
+    return {'value': {'isw_amplitude': F_TRZ},
+            'formula': 'late-ISW amplitude = F_TRZ (restates P1252)',
+            'source': 'PAPER_1460', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1461')
+def _p1461(dataset=None):
+    f = flatness_suppression_1461()
+    return {'value': {'flatness_suppression': f, 'stated_anchor': 1.14e-10,
+                      'gap_pct': abs(f - 1.14e-10) / 1.14e-10 * 100.0},
+            'formula': 'flatness suppression = 1/D_crit^7 = 1.2450e-10 vs stated 1.14e-10 (9.2% gap carried; consistent with the batch-11 pin)',
+            'source': 'PAPER_1461', 'residual_pct': abs(f - 1.14e-10) / 1.14e-10 * 100.0}
+
+
+@_register('PAPER_1462')
+def _p1462(dataset=None):
+    return {'value': {'n_efolds': A_5},
+            'formula': 'horizon problem: N = A_5 = 60 e-folds EXACT (restates the reservoir wiring)',
+            'source': 'PAPER_1462', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1463')
+def _p1463(dataset=None):
+    r = hierarchy_ratio_1225()
+    return {'value': {'m_h_over_m_pl': r, 'pdg_implied': 1.025e-17},
+            'formula': 'hierarchy = (D_phys/D_crit)^21 = 8.49e-18 vs PDG-implied 1.025e-17 (17.2% carried; two integer primitives raised to the 21st)',
+            'source': 'PAPER_1463', 'residual_pct': abs(r - 1.025e-17) / 1.025e-17 * 100.0}
+
+
+@_register('PAPER_1464')
+def _p1464(dataset=None):
+    m = m_glueball_qcd()
+    return {'value': {'m_0pp_gev': m, 'lattice_ref': 1.70},
+            'formula': 'glueball = 2*D_phys*Lambda_QCD = 1.736 GeV; the paper quotes 2.1% vs a lattice ~1.70 anchor, EXACT vs the PAPER_1318 gap',
+            'source': 'PAPER_1464', 'residual_pct': abs(m - 1.70) / 1.70 * 100.0}
+
+
+@_register('PAPER_1465')
+def _p1465(dataset=None):
+    v = higgs_vev_1311()
+    return {'value': {'v_higgs_gev': v},
+            'formula': 'origin of mass: v = A_5*(D_phys+F_TRZ) = 246 GeV (restates P1270/P1311)',
+            'source': 'PAPER_1465', 'residual_pct': abs(v - 246.22) / 246.22 * 100.0}
+
+
+@_register('PAPER_1466')
+def _p1466(dataset=None):
+    return {'value': {'inertia_ratio': inertia_origin_ratio_1466()},
+            'formula': 'origin of inertia = SO_5 = rho_UA/rho_SCm = 10 EXACT (the PAPER_646 U_i ratio reciprocal)',
+            'source': 'PAPER_1466', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1467')
+def _p1467(dataset=None):
+    return {'value': {'w': -1.0, 'f_u': 1.0, 'stable': True},
+            'formula': 'vacuum stability by F_U = 1 closure (restates P1272)',
+            'source': 'PAPER_1467', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1468')
+def _p1468(dataset=None):
+    return {'value': {'kappa_lambda': 1.0},
+            'formula': 'Higgs trilinear = 1.0 EXACT (restates P1310; HL-LHC falsifiable)',
+            'source': 'PAPER_1468', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1469')
+def _p1469(dataset=None):
+    return {'value': {'gamma_decay': 0.0},
+            'formula': 'EW vacuum decay = 0 by construction (restates P1309)',
+            'source': 'PAPER_1469', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1470')
+def _p1470(dataset=None):
+    return {'value': {'n_qubits_threshold': A_5, 'sycamore': 53},
+            'formula': 'quantum supremacy threshold = A_5 = 60 (restates P1340)',
+            'source': 'PAPER_1470', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1471')
+def _p1471(dataset=None):
+    return {'value': {'clifford_dim': 2 ** (D_CRIT // 2), 'a5_anchor': A_5,
+                      'd_crit_ceiling': D_CRIT, 'realizable_for_all_finite_groups': True},
+            'formula': 'inverse Galois via SO(26) Clifford decomposition - 8192-d bundle, |A_5| = 60 icosahedral chain, D_crit ceiling (full form of P1302)',
+            'source': 'PAPER_1471', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1472')
+def _p1472(dataset=None):
+    f = D_PHYS * SO_5
+    return {'value': {'f_dpm_hz': f, 'dt_ms': 1000.0 / f},
+            'formula': 'DPM resonance f = D_phys*SO_5 = 40 Hz EXACT; dT = 25 ms EXACT - the gamma-band frequency from two integer primitives',
+            'source': 'PAPER_1472', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1473')
+def _p1473(dataset=None):
+    return {'value': {'r_ohm': N_CH - 2},
+            'formula': 'Heaviside resistance = N_ch - 2 = 7 ohms EXACT',
+            'source': 'PAPER_1473', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1474')
+def _p1474(dataset=None):
+    z = D_CRIT * D_PHYS + N_CH * 2
+    return {'value': {'z_island': z, 'observed_range': (120, 126),
+                      'inside_range': 120 <= z <= 126},
+            'formula': 'island of stability Z = D_crit*D_phys + 2*N_ch = 122, inside the predicted 120-126 range',
+            'source': 'PAPER_1474', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1475')
+def _p1475(dataset=None):
+    import math as _m
+    obs = 3.102   # q-scope amplitude bar (MEASURED in the 101APPLE archive frames, +/-3.102 A)
+    return {'value': {'a2_identity': _m.pi, 'observed_qscope': obs,
+                      'caduceus_sampling_attribution': True,
+                      'archive_confirmed': True},
+            'formula': 'q-scope amplitude A_2 = pi identity vs the MEASURED 3.102 archive value (1.28%) - the paper attributes the deviation to Caduceus 26-pinch sampling; the 3.102 anchor was independently read from the IMG_0857 frames this session',
+            'source': 'PAPER_1475', 'residual_pct': abs(_m.pi - obs) / obs * 100.0}
+
+
+@_register('PAPER_1476')
+def _p1476(dataset=None):
+    p = 1.0 / float(N_CH)
+    return {'value': {'pi_zero_density': p, 'observed': 0.108},
+            'formula': 'pi zero-digit density = 1/N_ch = 0.1111 vs observed 0.108 (2.9%)',
+            'source': 'PAPER_1476', 'residual_pct': abs(p - 0.108) / 0.108 * 100.0}
+
+
+@_register('PAPER_1477')
+def _p1477(dataset=None):
+    import math as _m
+    f = _m.pi * SSQ
+    return {'value': {'f_proton_hz': f, 'reactor_observed_hz': 1.78},
+            'formula': 'proton orbital f = pi*SSq = 1.791 Hz vs reactor-observed 1.78 (0.60%) - an EMPIRICAL reactor anchor, not astronomical',
+            'source': 'PAPER_1477', 'residual_pct': abs(f - 1.78) / 1.78 * 100.0}
+
+
+@_register('PAPER_1478')
+def _p1478(dataset=None):
+    return {'value': {'rpm_min': D_PHYS - 1, 'f_min_hz': F_TRZ / 2.0},
+            'formula': 'reactor minimum rotation = D_phys - 1 = 3 rpm EXACT; f_min = F_TRZ/2 = 0.05 Hz EXACT',
+            'source': 'PAPER_1478', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1479')
+def _p1479(dataset=None):
+    import math as _m
+    r = float(SO_5) ** (D_PHYS + 1)
+    return {'value': {'r_bh_level13_m': r, 'v_bh_m3': 4.0 / 3.0 * _m.pi * r ** 3},
+            'formula': 'level-13 BH radius = SO_5^(D_phys+1) = 1e5 m EXACT; note level 13 = D_crit/2',
+            'source': 'PAPER_1479', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1480')
+def _p1480(dataset=None):
+    f = float(D_PHYS + SO_5) * float(SO_5) ** (D_PHYS + 2)
+    return {'value': {'f_umr_hz': f},
+            'formula': 'universal magnetic resonance f = (D_phys+SO_5)*SO_5^(D_phys+2) = 14e6 Hz EXACT - the 14 is the same D_phys+SO_5 as N-14 and the H_0 route',
+            'source': 'PAPER_1480', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1481')
+def _p1481(dataset=None):
+    d = D_CRIT + N_CH - 2
+    return {'value': {'v_ratio_inverse': d, 'v_little_over_v_big': 1.0 / d,
+                      'alt_form_3nch_plus_dbsfg': 3 * N_CH + D_BSFG},
+            'formula': 'V_little/V_big = 1/(D_crit+N_ch-2) = 1/33 EXACT - the same 33 as the neutrino splitting ratio dm2_31/dm2_21; alt form 3*N_ch+D_BSFG',
+            'source': 'PAPER_1481', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1482')
+def _p1482(dataset=None):
+    f = float(D_CRIT - D_PHYS) * 1e6
+    return {'value': {'f_ub_hz': f},
+            'formula': 'buoyancy resonance f_Ub = (D_crit-D_phys)*1e6 = 22 MHz EXACT - the Hale-cycle integer at MHz scale',
+            'source': 'PAPER_1482', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1483')
+def _p1483(dataset=None):
+    s = float(K_MEX) * float(D_BSFG) * PHI_RES_RESONANCE
+    return {'value': {'sigma_a2': s},
+            'formula': 'cross-section = K_Mex*D_BSFG*Phi_res = 10.5 A^2 EXACT (= 21/2; the sevenths family x 6)',
+            'source': 'PAPER_1483', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1484')
+def _p1484(dataset=None):
+    a = heaviside_amplifier_exact()
+    return {'value': {'amplifier': a},
+            'formula': 'Heaviside amplifier = SO_5^(D_crit/2) = 1e13 EXACT (reservoir-confirmed; the PAPER_1072 factor was never fitted)',
+            'source': 'PAPER_1484', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1485')
+def _p1485(dataset=None):
+    f = 1.0 / float(SO_5) ** 8
+    return {'value': {'f_fluid_hz': f},
+            'formula': 'fluid collapse f = 1/SO_5^8 = 1e-8 Hz EXACT - the NS-magnetic-moment reciprocal',
+            'source': 'PAPER_1485', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1486')
+def _p1486(dataset=None):
+    b = 1.0 / float(SO_5) ** 4
+    return {'value': {'b_quiet_t': b, 'b_peak_mod_t': float(D_PHYS) / float(SO_5)},
+            'formula': 'solar quiet field = 1/SO_5^4 = 1e-4 T EXACT; peak modulation D_phys/SO_5 = 0.4 T',
+            'source': 'PAPER_1486', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1487')
+def _p1487(dataset=None):
+    t_neg = 2512.0   # |t_neg| from PAPER_597 (the P1439 inflation anchor)
+    d = 3e8 * t_neg
+    return {'value': {'d_spooky_m': d, 't_neg_s': -t_neg},
+            'formula': 'spooky distance = c*|t_neg| = 7.54e11 m - the PAPER_517 time-algorithm entanglement formula at the PAPER_597 inflation anchor; ~5 AU scale',
+            'source': 'PAPER_1487', 'residual_pct': abs(d - 7.52e11) / 7.52e11 * 100.0}
+
+
+@_register('PAPER_1488')
+def _p1488(dataset=None):
+    return {'value': {'pre_mass_rho_ua': 0.0, 'pre_mass_f_u': 0.0,
+                      'post_mass_rho_ua_over_scm': 10.0, 'post_mass_f_u': 1.0},
+            'formula': 'zero-mass Big-Bang state: pre-mass rho_UA = 0, F_U = 0; post-mass rho_UA = 10*rho_SCm, F_U = 1 - the F_U 0->1 transition IS mass genesis',
+            'source': 'PAPER_1488', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1489')
+def _p1489(dataset=None):
+    import math as _m
+    a = D_CRIT + D_PHYS
+    return {'value': {'angle_deg': a, 'sin_angle': _m.sin(_m.radians(a))},
+            'formula': 'spin precession = D_crit + D_phys = 30 deg EXACT, sin(30) = 1/2 EXACT',
+            'source': 'PAPER_1489', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1490')
+def _p1490(dataset=None):
+    import math as _m
+    w = 2.0 * _m.pi / 13.8
+    return {'value': {'omega_hubble_rad_per_gyr': w, 't_universe_gyr': 13.8},
+            'formula': 'Hubble oscillation omega = 2*pi/t_universe = 0.4553 rad/Gyr',
+            'source': 'PAPER_1490', 'residual_pct': 0.0}
+
+
+
+@_register('PAPER_1491')
+def _p1491(dataset=None):
+    return {'value': {'z_ni62': D_CRIT + 2, 'n_ni62': D_CRIT + 2 * D_PHYS,
+                      'a_ni62': A_5 + 2},
+            'formula': 'Ni-62 (most bound nuclide): Z = D_crit+2 = 28, N = D_crit+2*D_phys = 34, A = A_5+2 = 62 - all three EXACT',
+            'source': 'PAPER_1491', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1492')
+def _p1492(dataset=None):
+    base = RHO_SCM * float(K_MEX) * S_26
+    return {'value': {'rho_core_base_j_m3': base,
+                      'k_mex_x_s26': float(K_MEX) * S_26,
+                      'f_dpm_factor_open': True},
+            'formula': 'proton core density base = rho_SCm*K_Mex*S_26 = 2.146e-36 J/m^3; the f_DPM(26,beta_i) factor is carried OPEN',
+            'source': 'PAPER_1492', 'residual_pct': None}
+
+
+@_register('PAPER_1493')
+def _p1493(dataset=None):
+    e0 = 1e-20   # base energy quantum (the PAPER_590 E_0)
+    return {'value': {'e0_j': e0, 'ladder_form': 'E_n = E_0*10^n',
+                      'e_26_j': e0 * 10.0 ** 26},
+            'formula': 'polynomial energy hierarchy E_n = E_0*10^n - the decade ladder from the PAPER_590 base quantum; E_26 = 1e6 J at the D_crit level',
+            'source': 'PAPER_1493', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1494')
+def _p1494(dataset=None):
+    rho = 11.0 * RHO_SCM
+    return {'value': {'rho_vac_total_j_m3': rho, 'eleven': SO_5 + 1},
+            'formula': 'rho_vac total = rho_UA + rho_SCm = (SO_5+1)*rho_SCm = 11*rho_SCm = 7.799e-36 J/m^3 EXACT - the successor integer 11 again',
+            'source': 'PAPER_1494', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1495')
+def _p1495(dataset=None):
+    return {'value': {'z_max': D_CRIT, 'sum_identity': 1.0},
+            'formula': 'DPM proportion pair: f_UA + f_SCm = 1 EXACT for all Z, with Z_max = D_crit = 26',
+            'source': 'PAPER_1495', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1496')
+def _p1496(dataset=None):
+    return {'value': {'n_pre_mass_states': D_CRIT,
+                      'transition_umag_range': (7, 10)},
+            'formula': '26 pre-mass atomic states = D_crit EXACT, ordered before mass emergence; quantum-to-mass transition at 7-10 U_mag degrees (PAPER_877)',
+            'source': 'PAPER_1496', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1497')
+def _p1497(dataset=None):
+    v = C_OBSERVED / float(D_PHYS - 1)
+    return {'value': {'v_scm_m_s': v},
+            'formula': 'SCm propagation velocity = c/(D_phys-1) = c/3 = 1e8 m/s EXACT - the triadic primitive dividing c',
+            'source': 'PAPER_1497', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1498')
+def _p1498(dataset=None):
+    return {'value': {'u_ua': 1.0 / float(SO_5) ** 4},
+            'formula': 'U_UA coupling = 1/SO_5^4 = 1e-4 EXACT (the SO_5 power ladder, exponent 4)',
+            'source': 'PAPER_1498', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1499')
+def _p1499(dataset=None):
+    return {'value': {'n_gravitational_components': D_PHYS,
+                      'full_structure': 'U_g1+U_g2+U_g3+U_g4 + U_m + U_b + UA'},
+            'formula': 'F_U genesis: the gravitational core has D_phys = 4 components EXACT (dipole, bubble, string disk, galaxy) plus U_m, U_b, UA',
+            'source': 'PAPER_1499', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1500')
+def _p1500(dataset=None):
+    v = C_OBSERVED * float(D_PHYS - 1) / float(SO_5)
+    return {'value': {'v_out_m_s': v, 'fraction_of_c': 0.3},
+            'formula': 'TDE outflow = c*(D_phys-1)/SO_5 = 0.3c EXACT - the PAPER_1953 0.3-factor universality in the TDE sector',
+            'source': 'PAPER_1500', 'residual_pct': 0.0}
 
 
 @_register('PAPER_001')

@@ -34,3 +34,11 @@ sleeping_beauty_p_1398,solar_neutrino_e_fraction_1404,ALIAS_PINNED,"both = 1/(D_
 st_petersburg_bound_1396,fact_26_singularity_floor_1279,ALIAS_PINNED,both = 26! = 4.033e26,v0.369.0
 rc_diversity_1424,qgp_r_aa_1416,ALIAS_PINNED,both = F_TRZ*K_Mex = 0.2083 bit-identical,v0.370.0
 tde_wandering_1434,tbtf_stall_1402,ALIAS_PINNED,both = beta_i*K_Mex*Phi_res = 1.0551 bit-identical,v0.370.0
+monopole_exp_a5_1450,fact26_amplifiers,ORDER_NOTE,exp(A_5)=1.14e26 and 26!=4.03e26 - two independent 1e26 amplifiers,v0.371.0
+hubble_tilt_1456,dpm_pair_goldbach_1287,ALIAS_PINNED,both = K_Mex-2 = 1/12 EXACT - the tension and the Goldbach pair identity,v0.371.0
+a5_60_five_roles,horizon/monopole/hayflick/supremacy/efolds,ORDER_NOTE,A_5 = 60 now carries five independent roles,v0.371.0
+heaviside_r_1473,oceanic_moho_1209cc,ALIAS_PINNED,both = N_ch-2 = 7,v0.371.0
+v_little_big_33_1481,dm2_ratio_33_a6,ALIAS_PINNED,both = D_crit+N_ch-2 = 33,v0.371.0
+f_ub_22_1482,hale_22_family,ALIAS_PINNED,"22 = D_crit-D_phys third role (Hale yr, compact dims, MHz)",v0.371.0
+rho_vac_11_1494,lambda_so5_plus_1,ALIAS_PINNED,both carry the successor integer 11 = SO_5+1,v0.371.0
+tde_03c_1500,p1953_03_family,ALIAS_PINNED,0.3 = (D_phys-1)/SO_5 fifth anchor of the PAPER_1953 family,v0.371.0

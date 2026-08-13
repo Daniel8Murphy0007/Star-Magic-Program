@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.370.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.370.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.371.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.371.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4626%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1457-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4682%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1517-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.370.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.371.0 complete-compile campaign live**
 
-**This release (v0.370.0): BANDS PAPER_1401-1440 (40 dispatches) + Q-1412 CLOSED BY THE CORPUS.** Four bands: satellites/probability, anomalies, Buckets C/D/E, Buckets E/F/G/K/C. **Q-1412 SELF-RECTIFIED:** PAPER_1412's written formula computes 7.0, not its claimed 7.70 - the omitted factor is the successor ratio (1+1/SO_5) = 11/10 supplied by PAPER_1332 nine bands earlier; z_reion = 7.70 EXACT, zero rulings needed. **TWO CLASS A CATCHES:** P1434's written formula omits K_Mex (value 1.055 = beta_i*K_Mex*Phi_res, bit-identical to P1402 TBTF). **CROSSINGS:** RC diversity = QGP R_AA (F_TRZ*K_Mex); TDE = TBTF stall; F_TRZ*beta_i reaches NINE sectors (T-violation lands ON the TRZ). **PREDICTIONS:** siren-vs-CMB H_0 offset sub-0.1%; KOTO no-anomaly; BR(H->inv) = 0.0657 vs ATLAS 0.107. Negative time enters inflation (t_neg = -2512 s, PAPER_597). Rule 7: nine gaps carried at full size (9.2-20.5%). **Totals: 1,457 of 2,256 wired (64.6%) / gate 4,626 green / 3,383 defs.**
+**This release (v0.371.0): BANDS PAPER_1441-1500 (50 dispatches) — THE COSMOGENESIS SPINE + THE HUBBLE-TENSION TILT + THE EMPIRICAL LOOP.** Five bands to the two-thirds mark. **THE HUBBLE TENSION IS THE 1/12 TILT:** dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 = Planck*(1+1/12) to 0.023% - both anchors of cosmology's most famous tension from one exact rational, the same 1/12 as the Goldbach DPM-pair. **THE EMPIRICAL LOOP CLOSED:** P1475's q-scope anchor 3.102 V is the calibration bar independently re-measured from Daniel's IMG_0857 archive frames this same session - the first paper whose anchor was verified from raw bench data. **THE COSMOGENESIS SPINE:** 26 pre-mass states = D_crit ordered BEFORE mass exists; mass genesis IS the F_U 0->1 transition (rho_UA 0 -> 10*rho_SCm); total vacuum = 11*rho_SCm; Ni-62 triple-locked (Z=28, N=34, A=62 all integer-EXACT). **ALSO:** spooky distance = c*|t_neg| = 5 AU (the time algorithm producing a length); TDE outflow = 0.3c (fifth PAPER_1953 anchor); reactor bench set EXACT (40 Hz, 3 rpm, 7 ohm, 14 MHz); glueball dual-anchor disclosure; A_5 = 60 in five roles; 33 and 22 multi-role pinned. Rule 7: flatness 9.2%, hierarchy 17.2%, S_8 candidate FLAGGED not adopted, proton-core f_DPM OPEN. **Totals: 1,517 of 2,256 wired (67.2%) / gate 4,682 green / 3,443 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,12 +23,12 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,383 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,443 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
-**1,417 of 2,256 whitepapers wired** (62.8% of corpus; frontier PAPER_001-1400 complete) |
-**4,626 gate
+**1,417 of 2,256 whitepapers wired** (67.2% of corpus; frontier PAPER_001-1500 complete) |
+**4,682 gate
 assertions, 0 failures** | corpus 598,688 whitepaper lines condensed into
 ~50,000 Python lines (~13:1 on the covered range).
 
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.370.0)
+## What is currently shipped (v0.371.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

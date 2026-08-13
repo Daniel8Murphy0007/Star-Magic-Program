@@ -5713,3 +5713,63 @@ edges_21cm_restate,WHITEPAPER,derived,,,-289.392,-289 mK,0.136,cosmology,,PAPER_
 jwst_sfe_restate,WHITEPAPER,derived,,,1.75,7/4 EXACT,0.0,astro,,PAPER_1438,,,,,,WIRED
 inflation_t_neg_s,WHITEPAPER,derived,,,-2512,PAPER_597 anchor,0.0,cosmology,,PAPER_1439,,,,,,WIRED
 inflaton_n_s_restate,WHITEPAPER,derived,,,0.96468,Planck 0.9655,0.085,cosmology,,PAPER_1440,,,,,,WIRED
+li7_suppression_vs_anchor,WHITEPAPER,derived,,,3.0,anchor 3.125 = P1234 prefactor,4.0,nuclear,,PAPER_1441,,,,,,WIRED
+sterile_mass_restate,WHITEPAPER,derived,,,0.875,7/8 EXACT,0.0,particle,,PAPER_1442,,,,,,WIRED
+exotic_hadron_restate,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,particle,,PAPER_1443,,,,,,WIRED
+top_yukawa_restate,WHITEPAPER,derived,,,1.0,natural,0.0,particle,,PAPER_1444,,,,,,WIRED
+bar_fraction_restate,WHITEPAPER,derived,,,0.506436,four-sector product,0.086,astro,,PAPER_1445,,,,,,WIRED
+hubble_types_restate,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,astro,,PAPER_1446,,,,,,WIRED
+grb_gamma_restate,WHITEPAPER,derived,,,302.4,302,0.132,astro,,PAPER_1447,,,,,,WIRED
+stellar_b_gauss,WHITEPAPER,derived,,,1.0,1/SO_5^4 in G,0.0,astro,,PAPER_1448,,,,,,WIRED
+salpeter_restate,WHITEPAPER,derived,,,-2.3533,-2.35,0.142,astro,,PAPER_1449,,,,,,WIRED
+monopole_exp_a5,WHITEPAPER,derived,,,1.142e26,exp(A_5),0.0,cosmology,,PAPER_1450,,,,,,WIRED
+lbl_restate,WHITEPAPER,derived,,,2.836e-9,Lambda^4,0.0,particle,,PAPER_1451,,,,,,WIRED
+birefringence_restate,WHITEPAPER,derived,,,7.029e13,7e13,0.417,particle,,PAPER_1452,,,,,,WIRED
+antimatter_restate,WHITEPAPER,derived,,,0.0603,F_TRZ*beta_i,0.0,particle,,PAPER_1453,,,,,,WIRED
+dm_floor_restate,WHITEPAPER,derived,,,2.836e-49,predicts null,0.0,particle,,PAPER_1454,,,,,,WIRED
+rho_lambda_restate,WHITEPAPER,derived,,,5.95695e-10,5.957e-10,0.001,cosmology,,PAPER_1455,,,,,,WIRED
+hubble_tension_tilt,WHITEPAPER,derived,,,5.617,5.6 stated; 1/12 tilt,0.298,cosmology,,PAPER_1456,,,,,,WIRED
+hubble_bubble_restate,WHITEPAPER,derived,,,-30.145,-30.15%,0.017,cosmology,,PAPER_1457,,,,,,WIRED
+smbh_seed_restate,WHITEPAPER,derived,,,56160,EXACT,0.0,astro,,PAPER_1458,,,,,,WIRED
+s8_tension_pair,WHITEPAPER,derived,,,0.827/0.811,1.97% tension,1.973,cosmology,,PAPER_1459,,,,,,WIRED
+late_isw_restate,WHITEPAPER,derived,,,0.1,F_TRZ,0.0,cosmology,,PAPER_1460,,,,,,WIRED
+flatness_gap,WHITEPAPER,derived,,,1.2450e-10,1.14e-10,9.215,cosmology,,PAPER_1461,,,,,,WIRED
+horizon_efolds,WHITEPAPER,derived,,,60,A_5 EXACT,0.0,cosmology,,PAPER_1462,,,,,,WIRED
+hierarchy_21st,WHITEPAPER,derived,,,8.49e-18,PDG 1.025e-17,17.188,particle,,PAPER_1463,,,,,,WIRED
+glueball_dual_anchor,WHITEPAPER,derived,,,1.736,lattice 1.70 / YM gap EXACT,2.118,particle,,PAPER_1464,,,,,,WIRED
+mass_origin_restate,WHITEPAPER,derived,,,246.0,246.22,0.089,particle,,PAPER_1465,,,,,,WIRED
+inertia_origin_restate,WHITEPAPER,derived,,,10,SO_5 EXACT,0.0,gravity,,PAPER_1466,,,,,,WIRED
+vac_stability_restate,WHITEPAPER,derived,,,stable,F_U=1,0.0,particle,,PAPER_1467,,,,,,WIRED
+trilinear_restate,WHITEPAPER,derived,,,1.0,EXACT,0.0,particle,,PAPER_1468,,,,,,WIRED
+ew_decay_restate,WHITEPAPER,derived,,,0.0,EXACT,0.0,particle,,PAPER_1469,,,,,,WIRED
+supremacy_restate,WHITEPAPER,derived,,,60,A_5 EXACT,0.0,condensed,,PAPER_1470,,,,,,WIRED
+inverse_galois_full,WHITEPAPER,derived,,,8192,Clifford + A_5 + D_crit,0.0,mathematics,,PAPER_1471,,,,,,WIRED
+dpm_resonance_40hz,WHITEPAPER,derived,,,40,D_phys*SO_5 EXACT,0.0,empirical,,PAPER_1472,,,,,,WIRED
+heaviside_r_ohm,WHITEPAPER,derived,,,7,N_ch-2 EXACT,0.0,empirical,,PAPER_1473,,,,,,WIRED
+island_stability_z,WHITEPAPER,derived,,,122,120-126 range,0.0,nuclear,,PAPER_1474,,,,,,WIRED
+qscope_pi_amplitude,WHITEPAPER,derived,,,3.14159,3.102 MEASURED archive,1.276,empirical,,PAPER_1475,,,,,,WIRED
+pi_zero_density,WHITEPAPER,derived,,,0.1111,0.108,2.881,mathematics,,PAPER_1476,,,,,,WIRED
+proton_orbital_hz,WHITEPAPER,derived,,,1.7907,reactor 1.78,0.602,empirical,,PAPER_1477,,,,,,WIRED
+reactor_rpm_min,WHITEPAPER,derived,,,3,D_phys-1 EXACT,0.0,empirical,,PAPER_1478,,,,,,WIRED
+level13_bh_radius_m,WHITEPAPER,derived,,,1e5,SO_5^5 EXACT,0.0,gravity,,PAPER_1479,,,,,,WIRED
+f_umr_hz,WHITEPAPER,derived,,,1.4e7,14 MHz EXACT,0.0,empirical,,PAPER_1480,,,,,,WIRED
+v_little_big_ratio,WHITEPAPER,derived,,,1/33,two decompositions,0.0,structural,,PAPER_1481,,,,,,WIRED
+f_ub_22mhz,WHITEPAPER,derived,,,2.2e7,(D_crit-D_phys)*1e6,0.0,empirical,,PAPER_1482,,,,,,WIRED
+cross_section_a2,WHITEPAPER,derived,,,10.5,21/2 EXACT,0.0,nuclear,,PAPER_1483,,,,,,WIRED
+heaviside_amp,WHITEPAPER,derived,,,1e13,SO_5^13 EXACT,0.0,empirical,,PAPER_1484,,,,,,WIRED
+f_fluid_collapse,WHITEPAPER,derived,,,1e-8,1/SO_5^8,0.0,astro,,PAPER_1485,,,,,,WIRED
+sun_quiet_field_t,WHITEPAPER,derived,,,1e-4,1/SO_5^4,0.0,astro,,PAPER_1486,,,,,,WIRED
+d_spooky_m,WHITEPAPER,derived,,,7.536e11,c*|t_neg| ~5 AU,0.213,foundations,,PAPER_1487,,,,,,WIRED
+mass_genesis_f_u,WHITEPAPER,derived,,,0->1,rho_UA 0 -> 10*rho_SCm,0.0,cosmology,,PAPER_1488,,,,,,WIRED
+spin_precession_deg,WHITEPAPER,derived,,,30,sin = 1/2 EXACT,0.0,particle,,PAPER_1489,,,,,,WIRED
+hubble_oscillation,WHITEPAPER,derived,,,0.4553,2pi/13.8 rad/Gyr,0.0,cosmology,,PAPER_1490,,,,,,WIRED
+ni62_full_lock,WHITEPAPER,derived,,,28/34/62,all EXACT,0.0,nuclear,,PAPER_1491,,,,,,WIRED
+proton_core_base,WHITEPAPER,derived,,,2.146e-36,f_DPM OPEN,,nuclear,,PAPER_1492,,,,,,WIRED
+energy_decade_ladder,WHITEPAPER,derived,,,E_0*10^n,E_26 = 1e6 J,0.0,structural,,PAPER_1493,,,,,,WIRED
+rho_vac_total,WHITEPAPER,derived,,,7.799e-36,11*rho_SCm EXACT,0.0,cosmology,,PAPER_1494,,,,,,WIRED
+dpm_proportion_sum,WHITEPAPER,derived,,,1.0,conservation EXACT,0.0,structural,,PAPER_1495,,,,,,WIRED
+pre_mass_states,WHITEPAPER,derived,,,26,D_crit EXACT,0.0,cosmology,,PAPER_1496,,,,,,WIRED
+v_scm,WHITEPAPER,derived,,,1e8,c/3 EXACT,0.0,structural,,PAPER_1497,,,,,,WIRED
+u_ua_coupling,WHITEPAPER,derived,,,1e-4,1/SO_5^4 EXACT,0.0,structural,,PAPER_1498,,,,,,WIRED
+f_u_genesis_components,WHITEPAPER,derived,,,4,D_phys EXACT,0.0,gravity,,PAPER_1499,,,,,,WIRED
+tde_outflow,WHITEPAPER,derived,,,0.3c,(D_phys-1)/SO_5 EXACT,0.0,astro,,PAPER_1500,,,,,,WIRED

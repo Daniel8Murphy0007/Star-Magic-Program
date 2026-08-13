@@ -238,3 +238,8 @@ band trail; SHIP GUARD v4 pins it in the gate. No physics. Gate 4,585 / 0.
 
 Bands 1401-1440 (40 dispatches). Q-1412 closed by self-rectification. 23-file rule
 made absolute per Daniel (no patch-ship exception). Gate 4,626 / 0.
+
+## v0.371.0 (2026-08-10)
+
+Bands 1441-1500 (50 dispatches). Hubble tension = 1/12 tilt; empirical loop closed on the
+q-scope archive; PAPER_877 cosmogenesis spine wired. Gate 4,682 / 0. Frontier PAPER_1500.

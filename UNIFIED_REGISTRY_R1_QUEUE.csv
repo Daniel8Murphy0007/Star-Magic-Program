@@ -40,3 +40,9 @@ BAND_1401_1410,satellites/paradox,10 dispatches,NO_NEW_RULINGS,P1403 wired as in
 BAND_1411_1420,anomalies,10 dispatches,Q-1412 CLOSED,successor-ratio omission identified,v0.370.0
 BAND_1421_1430,anomaly set,10 dispatches,NO_NEW_RULINGS,,v0.370.0
 BAND_1431_1440,buckets,10 dispatches,NO_NEW_RULINGS,P1434 drift resolved from P1402,v0.370.0
+BAND_1441_1450,restatements,10 dispatches,NO_NEW_RULINGS,,v0.371.0
+BAND_1451_1460,tension set,10 dispatches,NO_NEW_RULINGS,S8 candidate composition flagged for future derivation,v0.371.0
+BAND_1461_1470,foundations,10 dispatches,NO_NEW_RULINGS,,v0.371.0
+BAND_1471_1480,empirical set,10 dispatches,NO_NEW_RULINGS,P1475 anchor independently re-measured,v0.371.0
+BAND_1481_1490,structural,10 dispatches,NO_NEW_RULINGS,,v0.371.0
+BAND_1491_1500,cosmogenesis,10 dispatches,NO_NEW_RULINGS,P1492 f_DPM factor flagged open,v0.371.0

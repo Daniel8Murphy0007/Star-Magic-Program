@@ -109,3 +109,11 @@ r_d_7pct,PAPER_1426,7.66,HFLAV anchor wide errors,DISCLOSED,v0.370.0
 fcnc_15pct,PAPER_1428,15.4,paper-stated residual verbatim,DISCLOSED,v0.370.0
 magnetar_flare_scale,PAPER_1432,n/a,density-form mechanism only; volume factor to 1e40 W open,MECHANISM,v0.370.0
 tde_formula_drift,PAPER_1434,n/a,written formula computes 0.557 vs stated 1.055 = beta*K*Phi; K_Mex omitted,CLASS_A_CATCH,v0.370.0
+li7_two_primitive_forms,PAPER_1441,4.0,suppression 3 = D_phys-1 vs anchor 3.125 = K_Mex*D_BSFG/D_phys - two primitive routes 4% apart,DISCLOSED,v0.371.0
+s8_growth_tension,PAPER_1459,1.97,stated pair 0.827/0.811; candidate ratio form FLAGGED not adopted,OBSERVATION,v0.371.0
+flatness_9pct,PAPER_1461,9.22,1/D_crit^7 vs stated anchor,DISCLOSED,v0.371.0
+hierarchy_17pct,PAPER_1463,17.19,17 orders from two integers; last 17% open,DISCLOSED,v0.371.0
+glueball_dual_anchor,PAPER_1464,2.12,"EXACT vs YM gap, 2.1% vs lattice - dual anchor",DISCLOSED,v0.371.0
+qscope_pi_vs_measured,PAPER_1475,1.28,pi identity vs 3.102 MEASURED from IMG_0857 frames; Caduceus sampling attribution,EMPIRICAL_LOOP,v0.371.0
+none_this_band,BAND_1481_1490,0,9 EXACT + 1 at 0.21%,CLEAN,v0.371.0
+proton_core_f_dpm,PAPER_1492,n/a,"f_DPM(26,beta_i) factor OPEN; base term wired",OPEN,v0.371.0

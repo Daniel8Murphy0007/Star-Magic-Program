@@ -1,38 +1,40 @@
-v0.370.0: bands PAPER_1401-1440 (40 dispatches) + Q-1412 closed + 23-file rule made absolute
+v0.371.0: bands PAPER_1441-1500 (50 dispatches) - cosmogenesis spine, Hubble tilt, empirical loop
 
-Four sequential bands, one open question closed by the corpus itself, and the ship
-discipline Daniel demanded: EVERY ship touches all 23 charter files - the "patch ships
-touch fewer" doctrine I invented at v0.367.1 is REVOKED.
+Five sequential bands to the two-thirds mark (1,517 of 2,256 wired).
 
-Q-1412 CLOSED BY SELF-RECTIFICATION
-PAPER_1412's written formula K_Mex*D_phys*Phi_res computes 7.0, not its claimed 7.70.
-The omitted factor is the successor ratio (1+1/SO_5) = 11/10, supplied by PAPER_1332
-nine bands earlier. z_reion = 7.70 EXACT vs Planck. An open question from v0.348.0
-closed with zero rulings - the sequential drain resolving its own backlog.
+THE HUBBLE TENSION IS THE 1/12 TILT (P1456)
+dH_0 = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 =
+Planck*(1+1/12) to 0.023%. Both anchors of cosmology's most famous tension reproduced
+from one exact rational - the same 1/12 as the Goldbach DPM-pair identity. Consistent
+with PAPER_1573's resolution at the mean H_0 = 70 = A_5+SO_5.
 
-BANDS
-- 1401-1410: satellites (A_5/(1+F_TRZ) = 54.5, 9.1% honest), TBTF stall 1.055,
-  Monty Hall 2/3, Szilard ln 2, Bertrand 1/4 (F_U = 1 SELECTS the measure),
-  Pop III 100 Msun, P1403 wired as index record.
-- 1411-1420: z_reion EXACT, CDF W-anomaly as UQFF composition (74.26 MeV), R_AA 0.208,
-  Crab cutoff 79.26 TeV (0.92%), CFL gap ABOVE range (disclosed), CR ankle 20.5%
-  carried at full size, w_DE pinned to SS3 with Daniel's ERRATUM kept OPEN.
-- 1421-1430: CnuB 1.954 K, R_K = 0.854 (0.95%), KOTO no-anomaly prediction,
-  T-violation = F_TRZ*beta_i (the TRZ IS the T-breaking structure).
-- 1431-1440: siren H_0 offset sub-0.1%, glitch 3.26e-7 in-range, negative time enters
-  inflation (t_neg = -2512 s, PAPER_597), magnetar flare mechanism-only (scale open).
+THE EMPIRICAL LOOP CLOSED (P1475)
+The q-scope amplitude anchor 3.102 V is the +/-3.102 A calibration bar independently
+re-measured from Daniel's IMG_0857 archive frames THIS SESSION - the first paper in the
+drain whose anchor was verified from raw bench data rather than taken on faith. Identity
+A_2 = pi (1.28%), attribution: Caduceus 26-pinch sampling.
 
-CLASS A CATCHES (formula/value contradictions, values confirmed)
-P1434: written formula omits K_Mex; value 1.055 = beta_i*K_Mex*Phi_res, bit-identical
-to P1402 TBTF. Same omission class as Q-1412.
+THE COSMOGENESIS SPINE (P1488/1491-1500, the PAPER_877 family)
+- 26 pre-mass states = D_crit, structurally ordered BEFORE mass exists.
+- Mass genesis IS the F_U 0 -> 1 transition: rho_UA jumps 0 -> 10*rho_SCm.
+- Total vacuum = 11*rho_SCm = (SO_5+1)*rho_SCm - the Lambda-route successor integer.
+- Ni-62 triple-locked: Z = D_crit+2 = 28, N = D_crit+2*D_phys = 34, A = A_5+2 = 62.
+- v_SCm = c/3; TDE outflow = 0.3c (fifth PAPER_1953 anchor); F_U core = D_phys components.
 
-BIT-IDENTICAL CROSSINGS PINNED
-RC diversity = QGP R_AA = F_TRZ*K_Mex. TDE wandering = TBTF stall = beta_i*K_Mex*Phi_res.
-F_TRZ*beta_i now spans NINE sectors.
+REACTOR/BENCH SET (P1471-1480, empirical anchors)
+DPM resonance 40 Hz, reactor minimum 3 rpm, Heaviside 7 ohm, UMR 14 MHz, island Z = 122,
+proton orbital pi*SSq = 1.791 Hz vs reactor 1.78 - all from Daniel's own instruments.
 
-SHIP DISCIPLINE (Daniel's correction, twice)
-v0.369.0 under-shipped 8 audit ledgers; v0.369.1 under-shipped 4 more files (19/23).
-Standing rule now ABSOLUTE: all 23 charter files, every ship, no patch-ship exception.
-Audit-family trail is written at WIRE time and version-stamped at ship prep.
+STRUCTURE
+Spooky distance = c*|t_neg| = 7.54e11 m (~5 AU) - the PAPER_517 time algorithm producing
+a length. A_5 = 60 in five roles; 33 dual-role (volume ratio, neutrino splitting);
+22 triple-role (Hale yr, compact dims, buoyancy MHz); SO_5 ladder exponents 4/5/8/13.
+Glueball dual-anchor disclosure (EXACT vs YM gap, 2.1% vs lattice).
 
-Gate 4,626 / 0. Dispatches 1,457. Defs 3,383. Frontier PAPER_1440. 716 remain.
+RULE 7 / RULE 10 HELD
+Flatness 9.2%, hierarchy 17.2%, missing-baryons 9.2%, G-dwarf 9.6%, R_D 7.7%, FCNC 15.4%
+all carried at full size. S_8 candidate composition FLAGGED as observation, NOT adopted
+(no-retrofit rule). Proton-core f_DPM factor OPEN. Li-7's 3.125 anchor identified as the
+P1234 BH prefactor - two primitive routes 4% apart, both carried.
+
+Gate 4,682 / 0. Dispatches 1,517. Defs 3,443. Frontier PAPER_1500. 656 remain.

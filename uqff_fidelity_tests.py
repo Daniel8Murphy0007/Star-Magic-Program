@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.370.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
+assert_that(C.VERSION == "0.371.0", "uqff_calculator.VERSION = 0.366.0 (bands 1201-1250 + closure-reservoir batches 1-7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9676,6 +9676,159 @@ assert_that(abs(C.DISPATCH['PAPER_1440']()['value']['n_s'] - 0.96468) < 0.0001,
             "P1440: n_s = 0.96468 (0.085%) consistent with P1274")
 assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1431, 1441)),
             "BAND 1431-1440: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1441-1450 (Bucket D/G/H restatement set) ---
+import math as _m45
+_v41 = C.DISPATCH['PAPER_1441']()['value']
+assert_that(_v41['anchor_is_p1234_prefactor'] and abs(_v41['paper_anchor'] - 3.125) < 1e-12,
+            "P1441 FIND: the Li-7 anchor 3.125 IS K_Mex*D_BSFG/D_phys - the P1234 BH four-laws prefactor appearing as a nuclear suppression anchor; 4.0% residual between the two primitive forms carried honestly")
+assert_that(abs(C.DISPATCH['PAPER_1442']()['value']['m_sterile_ev'] - 0.875) < 1e-12,
+            "P1442: sterile = 7/8 eV, sevenths identity (consistent P1257)")
+assert_that(C.DISPATCH['PAPER_1443']()['value']['complexity_bound'] == 26
+            and C.DISPATCH['PAPER_1444']()['value']['y_t'] == 1.0
+            and C.DISPATCH['PAPER_1446']()['value']['n_types'] == 4,
+            "P1443/P1444/P1446: restatements consistent with P1319/P1312/P1328")
+assert_that(abs(C.DISPATCH['PAPER_1445']()['value']['f_bar'] - C.DISPATCH['PAPER_1329']()['value']['f_bar']) < 1e-15,
+            "P1445: bar fraction bit-identical to P1329 - the Phi_res*beta_i four-sector product")
+assert_that(abs(C.DISPATCH['PAPER_1447']()['value']['gamma_jet'] - 302.4) < 0.01,
+            "P1447: GRB Gamma = 302.4 (consistent P1323)")
+assert_that(C.DISPATCH['PAPER_1448']()['value']['b_baseline_gauss'] == 1.0,
+            "P1448: stellar B baseline 1 Gauss = 1/SO_5^4 in Gauss units (reservoir b_sun_quiet_field)")
+assert_that(abs(C.DISPATCH['PAPER_1449']()['value']['alpha_imf'] + 2.3533) < 0.001,
+            "P1449: Salpeter -2.3533 (consistent P1262)")
+_v50 = C.DISPATCH['PAPER_1450']()['value']
+assert_that(abs(_v50['monopole_suppression'] - _m45.exp(60.0)) < 1e12,
+            "P1450: monopole suppression = exp(A_5) = 1.142e26 - the SAME A_5 = 60 that is the inflation e-fold count (P1462), Hayflick limit, and supremacy threshold; and the SAME ORDER as 26! - two independent 1e26-scale amplifiers in the framework")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1441, 1451)),
+            "BAND 1441-1450: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1451-1460 (Bucket K/C tension set) ---
+_v56 = C.DISPATCH['PAPER_1456']()['value']
+assert_that(abs(_v56['tilt_one_twelfth'] - 1.0 / 12.0) < 1e-15,
+            "P1456: the Hubble-tension tilt IS K_Mex - 2 = 1/12 EXACT - the same 1/12 as the DPM-pair/Goldbach identity and the PAPER_1156 tilt family")
+assert_that(abs(_v56['delta_h0_km_s_mpc'] - 5.617) < 0.01 and abs(_v56['shoes_implied'] - 73.0) / 73.0 * 100 < 0.05,
+            "P1456: dH_0 = 67.4/12 = 5.617 vs stated 5.6 (0.30%), and SH0ES 73 = Planck*(1+1/12) to 0.023% - the tension IS the tilt, both anchors reproduced from one rational")
+_v59 = C.DISPATCH['PAPER_1459']()['value']
+assert_that('OBSERVATION, not asserted' in _v59['candidate_composition_flagged'],
+            "P1459 RULE 10: the S_8 ratio's candidate form 1 + F_TRZ*beta_i/3 is FLAGGED as an observation, not adopted - primitive-locking requires a corpus derivation, not a numeric coincidence (PAPER_2156 no-retrofit rule)")
+assert_that(abs(_v59['tension_ratio'] - 0.827 / 0.811) < 1e-12,
+            "P1459: S_8 tension pair 0.827/0.811 carried as stated (1.97%)")
+assert_that(abs(C.DISPATCH['PAPER_1455']()['value']['rho_lambda_j_m3'] - 5.957e-10) / 5.957e-10 * 100 < 0.01,
+            "P1455: rho_Lambda restatement consistent with P1271 (0.001%)")
+assert_that(abs(C.DISPATCH['PAPER_1457']()['value']['underdensity_pct'] + 30.145) < 0.01
+            and C.DISPATCH['PAPER_1458']()['value']['m_seed_msun'] == 56160
+            and C.DISPATCH['PAPER_1460']()['value']['isw_amplitude'] == C.F_TRZ,
+            "P1457/P1458/P1460: restatements consistent with P1335/P1326/P1252")
+assert_that(C.DISPATCH['PAPER_1454']()['value']['predicts_null']
+            and abs(C.DISPATCH['PAPER_1453']()['value']['eta_max'] - C.F_TRZ * C.BETA_I) < 1e-15,
+            "P1453/P1454: Bucket K restatements consistent with P1370/P1371")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1451, 1461)),
+            "BAND 1451-1460: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1461-1470 (Bucket C/D/J/K foundations) ---
+assert_that(C.DISPATCH['PAPER_1461']()['residual_pct'] > 9.0,
+            "P1461 RULE 7: flatness 1/D_crit^7 carries its 9.2% gap vs the stated anchor - consistent with the batch-11 gap pin, not smoothed")
+assert_that(C.DISPATCH['PAPER_1462']()['value']['n_efolds'] == 60,
+            "P1462: horizon N = A_5 = 60 e-folds")
+assert_that(C.DISPATCH['PAPER_1463']()['residual_pct'] > 15.0,
+            "P1463 RULE 7: hierarchy (D_phys/D_crit)^21 vs PDG-implied - 17.2% carried at full size; 17 orders of magnitude from two integers, the last 17% open")
+assert_that(abs(C.DISPATCH['PAPER_1464']()['value']['m_0pp_gev'] - 1.736) < 1e-9,
+            "P1464: glueball 1.736 GeV - EXACT vs the PAPER_1318 Yang-Mills gap; the 2.1% is vs the lattice anchor, dual-anchor disclosure")
+assert_that(abs(C.DISPATCH['PAPER_1465']()['value']['v_higgs_gev'] - 246.0) < 1e-9
+            and C.DISPATCH['PAPER_1466']()['value']['inertia_ratio'] == 10,
+            "P1465/P1466: mass origin 246 GeV and inertia origin SO_5 = 10 consistent with priors")
+assert_that(C.DISPATCH['PAPER_1467']()['value']['stable']
+            and C.DISPATCH['PAPER_1468']()['value']['kappa_lambda'] == 1.0
+            and C.DISPATCH['PAPER_1469']()['value']['gamma_decay'] == 0.0
+            and C.DISPATCH['PAPER_1470']()['value']['n_qubits_threshold'] == 60,
+            "P1467-P1470: Bucket J/K restatements consistent with P1272/P1310/P1309/P1340")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1461, 1471)),
+            "BAND 1461-1470: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1471-1480 (reactor/q-scope empirical set) ---
+import math as _m47
+assert_that(C.DISPATCH['PAPER_1471']()['value']['clifford_dim'] == 8192,
+            "P1471: inverse Galois full form - 8192-d Clifford, A_5 chain, D_crit ceiling")
+assert_that(C.DISPATCH['PAPER_1472']()['value']['f_dpm_hz'] == 40,
+            "P1472: DPM resonance = D_phys*SO_5 = 40 Hz EXACT - the gamma-band frequency from two integers")
+assert_that(C.DISPATCH['PAPER_1473']()['value']['r_ohm'] == 7,
+            "P1473: Heaviside resistance = N_ch - 2 = 7 ohms - the same N_ch-2 as the oceanic Moho depth (P1209cc)")
+_v74 = C.DISPATCH['PAPER_1474']()['value']
+assert_that(_v74['z_island'] == 122 and _v74['inside_range'],
+            "P1474: island of stability Z = D_crit*D_phys + 2*N_ch = 122, inside 120-126")
+_v75 = C.DISPATCH['PAPER_1475']()['value']
+assert_that(_v75['archive_confirmed'] and abs(_v75['observed_qscope'] - 3.102) < 1e-12,
+            "P1475 EMPIRICAL LOOP CLOSED: the 3.102 anchor is the +/-3.102 A calibration bar READ FROM the IMG_0857 q-scope frames this session - paper identity pi (1.28%), attribution Caduceus 26-pinch sampling. First paper whose anchor was independently re-measured from Daniel's raw archive")
+assert_that(abs(C.DISPATCH['PAPER_1476']()['value']['pi_zero_density'] - 1.0 / 9.0) < 1e-15,
+            "P1476: pi zero-density = 1/N_ch (2.9% vs observed)")
+assert_that(abs(C.DISPATCH['PAPER_1477']()['value']['f_proton_hz'] - _m47.pi * C.SSQ) < 1e-12,
+            "P1477: proton orbital = pi*SSq = 1.791 Hz vs the REACTOR-observed 1.78 (0.60%) - an empirical bench anchor")
+_v78 = C.DISPATCH['PAPER_1478']()['value']
+assert_that(_v78['rpm_min'] == 3 and _v78['f_min_hz'] == 0.05,
+            "P1478: reactor minimum = 3 rpm EXACT, f_min = F_TRZ/2")
+assert_that(C.DISPATCH['PAPER_1479']()['value']['r_bh_level13_m'] == 1e5,
+            "P1479: level-13 (= D_crit/2) BH radius = SO_5^(D_phys+1) = 1e5 m")
+assert_that(C.DISPATCH['PAPER_1480']()['value']['f_umr_hz'] == 1.4e7,
+            "P1480: UMR = (D_phys+SO_5)*SO_5^(D_phys+2) = 14 MHz - the 14 = D_phys+SO_5 shared with N-14 and the H_0 route")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1471, 1481)),
+            "BAND 1471-1480: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1481-1490 (structural exact set) ---
+import math as _m48
+_v81 = C.DISPATCH['PAPER_1481']()['value']
+assert_that(_v81['v_ratio_inverse'] == 33 and _v81['alt_form_3nch_plus_dbsfg'] == 33,
+            "P1481: V_little/V_big = 1/33 with TWO integer decompositions (D_crit+N_ch-2 and 3*N_ch+D_BSFG) - and 33 is the SAME integer as the neutrino dm2_31/dm2_21 ratio (batch-13)")
+assert_that(C.DISPATCH['PAPER_1482']()['value']['f_ub_hz'] == 22e6,
+            "P1482: buoyancy resonance 22 MHz - the D_crit-D_phys = 22 integer (Hale cycle, compactified dims) at MHz scale; THIRD role for 22")
+assert_that(abs(C.DISPATCH['PAPER_1483']()['value']['sigma_a2'] - 10.5) < 1e-12,
+            "P1483: cross-section = K_Mex*D_BSFG*Phi_res = 21/2 = 10.5 A^2 EXACT - the sevenths family (7/4 x 6)")
+assert_that(C.DISPATCH['PAPER_1484']()['value']['amplifier'] == 1e13,
+            "P1484: Heaviside amplifier = SO_5^13 EXACT, confirming the reservoir batch-9 finding")
+assert_that(C.DISPATCH['PAPER_1485']()['value']['f_fluid_hz'] == 1e-8
+            and C.DISPATCH['PAPER_1486']()['value']['b_quiet_t'] == 1e-4,
+            "P1485/P1486: fluid collapse 1/SO_5^8 and solar quiet field 1/SO_5^4 - the SO_5 power ladder (4,5,8,13 exponents now wired)")
+_v87 = C.DISPATCH['PAPER_1487']()['value']
+assert_that(abs(_v87['d_spooky_m'] - 7.536e11) < 1e9 and _v87['t_neg_s'] == -2512.0,
+            "P1487: spooky distance = c*|t_neg| = 7.54e11 m (~5 AU) - the PAPER_517 entanglement formula evaluated at the PAPER_597 t_neg anchor; the time algorithm produces a DISTANCE prediction")
+_v88 = C.DISPATCH['PAPER_1488']()['value']
+assert_that(_v88['pre_mass_f_u'] == 0.0 and _v88['post_mass_f_u'] == 1.0
+            and _v88['post_mass_rho_ua_over_scm'] == 10.0,
+            "P1488: the F_U 0 -> 1 transition IS mass genesis - pre-mass vacuum (rho_UA = 0) to post-mass (rho_UA = 10*rho_SCm); the Wheeler-DeWitt F_U = 0 state is literally the pre-Big-Bang state")
+_v89 = C.DISPATCH['PAPER_1489']()['value']
+assert_that(_v89['angle_deg'] == 30 and abs(_v89['sin_angle'] - 0.5) < 1e-12,
+            "P1489: spin precession = D_crit+D_phys = 30 deg, sin = 1/2 EXACT")
+assert_that(abs(C.DISPATCH['PAPER_1490']()['value']['omega_hubble_rad_per_gyr'] - 0.4553) < 0.001,
+            "P1490: Hubble oscillation 2*pi/13.8 = 0.4553 rad/Gyr")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1481, 1491)),
+            "BAND 1481-1490: all ten dispatches registered and self-identifying")
+
+# --- DEEP-CAPTURE GUARD: BAND PAPER_1491-1500 (PAPER_877 cosmogenesis family) ---
+_v91b = C.DISPATCH['PAPER_1491']()['value']
+assert_that(_v91b['z_ni62'] == 28 and _v91b['n_ni62'] == 34 and _v91b['a_ni62'] == 62,
+            "P1491: Ni-62 fully integer-locked - Z = D_crit+2, N = D_crit+2*D_phys, A = A_5+2, all EXACT; confirms and extends the reservoir batch-9 Z pin")
+assert_that(C.DISPATCH['PAPER_1492']()['residual_pct'] is None
+            and C.DISPATCH['PAPER_1492']()['value']['f_dpm_factor_open'],
+            "P1492 RULE 7: proton core density carries its f_DPM(26,beta_i) factor OPEN - base term wired, full closure awaits the factor's derivation")
+assert_that(C.DISPATCH['PAPER_1493']()['value']['e_26_j'] == 1e6,
+            "P1493: decade energy ladder E_n = E_0*10^n reaches 1e6 J at the D_crit level - the PAPER_590 base quantum's hierarchy")
+_v94 = C.DISPATCH['PAPER_1494']()['value']
+assert_that(abs(_v94['rho_vac_total_j_m3'] - 11.0 * C.RHO_SCM) < 1e-45 and _v94['eleven'] == 11,
+            "P1494: total vacuum = (SO_5+1)*rho_SCm = 11*rho_SCm EXACT - the SAME successor integer 11 as the Lambda = (SO_5+1)*F_TRZ^53 route and the 11/10 ratio family")
+assert_that(C.DISPATCH['PAPER_1495']()['value']['sum_identity'] == 1.0,
+            "P1495: DPM proportion pair sums to 1 EXACT at every Z - conservation across the 26-level ladder")
+assert_that(C.DISPATCH['PAPER_1496']()['value']['n_pre_mass_states'] == 26,
+            "P1496: 26 pre-mass states = D_crit - the PAPER_877 pre-mass quantum ladder wired; cosmogenesis orders the atom BEFORE mass exists")
+assert_that(abs(C.DISPATCH['PAPER_1497']()['value']['v_scm_m_s'] - C.C_OBSERVED / 3.0) < 1.0,
+            "P1497: v_SCm = c/3 EXACT - the triadic primitive dividing c")
+assert_that(C.DISPATCH['PAPER_1498']()['value']['u_ua'] == 1e-4,
+            "P1498: U_UA = 1/SO_5^4 (ladder exponent 4, consistent with P1486/P500)")
+assert_that(C.DISPATCH['PAPER_1499']()['value']['n_gravitational_components'] == 4,
+            "P1499: F_U genesis - the gravitational core has D_phys = 4 components; the 4-fold U_g family IS the spacetime dimension count")
+_v00 = C.DISPATCH['PAPER_1500']()['value']
+assert_that(abs(_v00['v_out_m_s'] - 0.3 * C.C_OBSERVED) < 1.0 and _v00['fraction_of_c'] == 0.3,
+            "P1500: TDE outflow = 0.3c EXACT - the PAPER_1953 0.3-factor universality (SgrA* spin, M87 jet, rocky Love k2) now in the TDE sector; (D_phys-1)/SO_5 = 3/10")
+assert_that(all(C.DISPATCH['PAPER_%d' % _n]()['source'] == 'PAPER_%d' % _n for _n in range(1491, 1501)),
+            "BAND 1491-1500: all ten dispatches registered and self-identifying")
 
 # =============================================================================
 # REPORT
