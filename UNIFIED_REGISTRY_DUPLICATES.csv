@@ -57,3 +57,16 @@ aluminum_density_seq_1600,aluminum_density_repo_mine,ALIAS_PINNED,"same PAPER_16
 fe56_dual_route_1610,fe56_bucket_nuclear,ALIAS_PINNED,"Fe-56 BE/A wired in predecessor nuclear bucket (0.019% route) and sequential drain (F*K^5-beta^4+5, 0.025%); different compositions, both recorded, neither supersedes pending ruling",v0.372.0
 fe56_ni62_shared_comp,be_a_peak_pair,ALIAS_PINNED,"F_TRZ*K_Mex^5 - beta_i^4 + 5 = 8.7925 serves BOTH most-bound nuclides (Fe-56 8.7903 / Ni-62 8.7946), straddled at 0.025%/0.024%",v0.372.0
 ftrz_so5_unity_lead,p1590_p1628,ALIAS_PINNED,F_TRZ*SO_5 = 1 EXACT is the shared lead of R_inf (P1590) and H atomic mass (P1628),v0.372.0
+glueball_ym_gap_identity,paper_1318_ym,ALIAS_PINNED,m_0++ = 2*D_phys*Lambda_QCD = 1.736 GeV bit-identical to PAPER_1318 Millennium Yang-Mills mass gap,v0.373.0
+higgs_vev_seq_1636,higgs_vev_prior_row,ALIAS_PINNED,PAPER_1636 already carried a higgs_vev registry row from an earlier mine; sequential row renamed higgs_vev_seq per REGISTRY GUARD,v0.373.0
+qcd_217_anchor_pair,glueball_string_tension,ALIAS_PINNED,"Lambda_QCD = 0.217 GeV anchors BOTH the glueball/YM gap (P1639, linear) and string tension (P1645, squared x K_Mex) - one anchor, two closures",v0.373.0
+battery_members_alias,seven_source_dispatches,ALIAS_PINNED,PAPER_2161 battery values are live cross-dispatch reads of P1640/1643/1646/1573/1637 + PAPER_2157/2158 compositions - single source of truth preserved,v0.373.0
+dphys_condensed_pair,p1658_p1660,ALIAS_PINNED,D_phys = 4 serves both the MBL critical ratio (P1658) and the Hubbard Mott ratio (P1660) - condensed-matter pair,v0.373.0
+t_scm_family_third,p1072_p1659_p1669,ALIAS_PINNED,"T_SCm thermal-Heaviside anchor family: T_SCm (P1072), T_SCm*K_Mex = 125 K (P1659), T_SCm/beta_i = 99.5 K (P1669)",v0.373.0
+t_scm_family_fourth,p1671_sc_ceiling,ALIAS_PINNED,"T_SCm family 4th member: T_SCm*K_Mex*D_phys = 500 K room-temp SC ceiling (P1671), cross-dispatch from P1659",v0.373.0
+hubble_tension_seq_1676,hubble_tension_prior,ALIAS_PINNED,PAPER_1676 already carried a hubble_tension row from an earlier mine; sequential row renamed per REGISTRY GUARD,v0.373.0
+ladder_rungs_alias,p1659_p1669_p1671,ALIAS_PINNED,PAPER_2162 rung values are live cross-dispatch reads of P1659/P1669/P1671 - single source of truth preserved (PAPER_2161 pattern),v0.373.0
+dcrit_26_complexity_triple,p1644_p1654_p1689,ALIAS_PINNED,"D_crit = 26 complexity bound triple: hadron constituents, braid gates, knot crossings - one Caduceus pinch limit, three domains",v0.373.0
+complexity_triple_alias,p1644_p1654_p1689_p1666,ALIAS_PINNED,PAPER_2163 values are live cross-dispatch reads of the triple + spinor closure (PAPER_2161/2162 pattern),v0.373.0
+six_fifths_dual_role,p1695_p1696,ALIAS_PINNED,"6/5 = D_bsfg/(D_bsfg-1) serves as AdS/CFT bulk-boundary ratio AND the canonical Omega_L coefficient - successor-ratio family (PAPER_2128), inverse of Phi_5/6",v0.373.0
+ladder_members_alias,ten_source_dispatches,ALIAS_PINNED,"PAPER_2164 masses are live cross-dispatch reads of P1554-1559/P1606-1609 (single source of truth, PAPER_2161/2162/2163 pattern)",v0.373.0

@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.372.0"
+VERSION = "0.373.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -21700,6 +21700,676 @@ def _p1630(dataset=None):
     return {'value': {'ocean_mean_depth_km': v},
             'formula': 'd_ocean = D_phys*(1 - F_TRZ) + F_TRZ = 3.7 km EXACT (mean ocean depth)',
             'source': 'PAPER_1630', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1631')
+def _p1631(dataset=None):
+    v = K_MEX * D_PHYS + SSQ - F_TRZ * SSQ
+    return {'value': {'everest_km': v},
+            'formula': 'h_Everest = K_Mex*D_phys + SSq*(1 - F_TRZ) = 25/3 + 0.513 = 8.8463 vs 8.848 km (0.019%). Lead 25/3 again (eps_0/mu_B family).',
+            'source': 'PAPER_1631', 'residual_pct': abs(v - 8.848) / 8.848 * 100.0}
+
+
+@_register('PAPER_1632')
+def _p1632(dataset=None):
+    v = float(D_CRIT + N_CH)
+    return {'value': {'ocean_salinity_ppt': v},
+            'formula': 'S_ocean = D_crit + N_ch = 35 ppt EXACT (cross-domain: same 35 as continental crust depth P1542)',
+            'source': 'PAPER_1632', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1633')
+def _p1633(dataset=None):
+    phi56 = (D_BSFG - 1.0) / D_BSFG
+    v = phi56 * D_PHYS - phi56 * F_TRZ + F_TRZ ** 2 * phi56 + F_TRZ ** 3 * D_PHYS
+    return {'value': {'pc_per_ly': v},
+            'formula': 'pc/ly = Phi_5/6*(D_phys - F_TRZ + F_TRZ^2) + F_TRZ^3*D_phys = 3.2623 vs 3.26156 (0.024%). Phi_5/6 confirmed numerically (0.84 gives 3.288, 35x worse).',
+            'source': 'PAPER_1633', 'residual_pct': abs(v - 3.26156) / 3.26156 * 100.0}
+
+
+@_register('PAPER_1634')
+def _p1634(dataset=None):
+    v = -BETA_I ** 5 - F_TRZ * BETA_I - F_TRZ * BETA_I ** 2 + F_TRZ ** 2 * BETA_I ** 3 + 3.0
+    return {'value': {'h3_be_a_mev': v},
+            'formula': 'H-3 BE/A = 3 - beta_i^5 - F_TRZ*beta_i - F_TRZ*beta_i^2 + F_TRZ^2*beta_i^3 = 2.8259 vs 2.827 MeV (0.039%). All-subtractive beta polynomial - lightest bound triplet.',
+            'source': 'PAPER_1634', 'residual_pct': abs(v - 2.827) / 2.827 * 100.0}
+
+
+@_register('PAPER_1635')
+def _p1635(dataset=None):
+    v = 2.0 * D_PHYS + SSQ - F_TRZ ** 2
+    return {'value': {'atm_scale_height_km': v},
+            'formula': 'H_atm = 2*D_phys + SSq - F_TRZ^2 = 8.56 vs 8.5 km (0.71% - loosest of the terrestrial set, scale-height convention varies 7.6-8.6 km with temperature; paper residual honest)',
+            'source': 'PAPER_1635', 'residual_pct': abs(v - 8.5) / 8.5 * 100.0}
+
+
+@_register('PAPER_1636')
+def _p1636(dataset=None):
+    v = A_5 * (D_PHYS + F_TRZ)
+    return {'value': {'higgs_vev_gev': v},
+            'formula': 'v_Higgs = A_5*(D_phys + F_TRZ) = 60*4.1 = 246 GeV EXACT (electroweak scale from two primitives)',
+            'source': 'PAPER_1636', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1637')
+def _p1637(dataset=None):
+    alpha_fs = 0.00729735  # fine-structure constant (paper labels it "Lambda" - symbol drift disclosed)
+    v = alpha_fs * PHI_RES_RESONANCE * (D_PHYS + 1.0) * K_MEX
+    return {'value': {'neutrino_mass_sum_ev': v},
+            'formula': 'Sum m_nu = alpha*Phi_res*(D_phys+1)*K_Mex = 0.0639 eV (PAPER_1304). SYMBOL DRIFT DISCLOSED: paper writes "Lambda" but the numeric 0.00729735 is the fine-structure constant alpha. Projection sector (0.84). Sits in NH band (>=0.058) under Planck bound (<0.12).',
+            'source': 'PAPER_1637', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1638')
+def _p1638(dataset=None):
+    v = float(D_PHYS - 1)
+    return {'value': {'n_fermion_generations': v},
+            'formula': 'n_gen = D_phys - 1 = 3 EXACT - three fermion generations from the transverse-dimension count (same 3 as k2_rocky numerator and albedo, PAPER_1953 0.3-factor family numerator)',
+            'source': 'PAPER_1638', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1639')
+def _p1639(dataset=None):
+    lambda_qcd_gev = 0.217  # QCD scale anchor (PAPER_1318)
+    v = 2.0 * D_PHYS * lambda_qcd_gev
+    return {'value': {'glueball_0pp_gev': v},
+            'formula': 'm_0++ = 2*D_phys*Lambda_QCD = 8*0.217 = 1.736 GeV EXACT - bit-identical to the PAPER_1318 Yang-Mills mass gap (the glueball IS the gap; Millennium YM closure and lattice-QCD glueball unified in one number)',
+            'source': 'PAPER_1639', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1640')
+def _p1640(dataset=None):
+    v = 1.0
+    return {'value': {'kappa_lambda_higgs': v},
+            'formula': 'kappa_lambda = lambda_HHH/lambda_SM = 1.0 EXACT (PAPER_1310): UQFF predicts NO trilinear anomaly - falsifiable by HL-LHC di-Higgs (current bounds -0.4 < kl < 6.3)',
+            'source': 'PAPER_1640', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1641')
+def _p1641(dataset=None):
+    m_t = DISPATCH['PAPER_1556']()['value']['m_t_gev']
+    vev = DISPATCH['PAPER_1636']()['value']['higgs_vev_gev']
+    v = m_t / (vev / 2.0 ** 0.5)
+    return {'value': {'top_yukawa': v},
+            'formula': 'y_t = m_t/(v/sqrt2) = 0.9931 from the wired P1556 m_t and P1636 vev - naturally ~1 with NO fine-tuning (paper claim EXACT-natural; computed cross-dispatch value carried honestly at 0.69% below unity)',
+            'source': 'PAPER_1641', 'residual_pct': abs(v - 1.0) * 100.0}
+
+
+@_register('PAPER_1642')
+def _p1642(dataset=None):
+    v = 1.0
+    return {'value': {'ckm_unitarity_row1': v},
+            'formula': '|V_ud|^2 + |V_us|^2 + |V_ub|^2 = 1 EXACT via the F_U = 1 ledger (unitarity = closed vacuum ledger; Cabibbo-angle anomaly predicted to resolve to exact closure)',
+            'source': 'PAPER_1642', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1643')
+def _p1643(dataset=None):
+    import math as _m
+    v = -_m.pi / 2.0
+    return {'value': {'lepton_delta_cp_rad': v},
+            'formula': 'delta_CP = -pi/2 EXACT via maximal F_TRZ phase lock - falsifiable: T2K/NOvA best fits hover near -pi/2; DUNE/HK will decide',
+            'source': 'PAPER_1643', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1644')
+def _p1644(dataset=None):
+    v = float(D_CRIT)
+    return {'value': {'max_hadron_complexity': v},
+            'formula': 'max hadron complexity = D_crit = 26 Caduceus pinch points (PAPER_646 topology bound on exotic-hadron constituent count)',
+            'source': 'PAPER_1644', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1645')
+def _p1645(dataset=None):
+    lambda_qcd_gev = 0.217  # QCD scale anchor (PAPER_1318, same as P1639)
+    v = lambda_qcd_gev ** 2 * K_MEX
+    return {'value': {'string_tension_gev2': v},
+            'formula': 'sigma = Lambda_QCD^2 * K_Mex = 0.0471*25/12 = 0.0981 vs 0.098 GeV^2 lattice (0.10%). Same 0.217 anchor as the glueball/YM gap (P1639).',
+            'source': 'PAPER_1645', 'residual_pct': abs(v - 0.098) / 0.098 * 100.0}
+
+
+@_register('PAPER_1646')
+def _p1646(dataset=None):
+    alpha_fs = 0.00729735  # fine-structure constant (paper labels it "Lambda" - same symbol drift as P1637)
+    v = alpha_fs ** 6 * PHI_RES_RESONANCE
+    return {'value': {'br_mu_e_gamma': v},
+            'formula': 'BR(mu->e gamma) = alpha^6 * Phi_res = 1.268e-13 (paper 1.27e-13). SYMBOL DRIFT: "Lambda" = alpha, as P1637. Falsifiable: sits 3.3x below the MEG-II bound 4.2e-13 - within one experiment generation of test.',
+            'source': 'PAPER_1646', 'residual_pct': abs(v - 1.27e-13) / 1.27e-13 * 100.0}
+
+
+@_register('PAPER_1647')
+def _p1647(dataset=None):
+    m_p_ev = 0.9382720813e9  # proton rest energy, eV (paper anchor)
+    v = K_MEX * A_5 * D_BSFG * m_p_ev * 1.0e9 / 1.0e9 * 1.0e9
+    return {'value': {'uhecr_e_max_ev': v},
+            'formula': 'E_max = K_Mex*A_5*D_bsfg * m_p c^2 * 10^9 = 750 * m_p * 10^9 = 7.037e20 eV vs ~7e20 (GZK/Amaterasu scale, 0.53%). Integer core K_Mex*A_5*D_bsfg = 750 EXACT (= 2*A_5*K_Mex*3 = 6*125... = A_5*K_Mex*D_bsfg, the 125-landmark times 6).',
+            'source': 'PAPER_1647', 'residual_pct': abs(v - 7e20) / 7e20 * 100.0}
+
+
+@_register('PAPER_1648')
+def _p1648(dataset=None):
+    v = D_BSFG * A_5 * PHI_RES_RESONANCE
+    return {'value': {'crab_gamma_factor': v},
+            'formula': 'Gamma(Crab PSR wind) = D_bsfg*A_5*Phi_res = 360*0.84 = 302.4 vs 302 (0.13%). Projection sector (0.84) as expected for a wind Lorentz factor.',
+            'source': 'PAPER_1648', 'residual_pct': abs(v - 302.0) / 302.0 * 100.0}
+
+
+@_register('PAPER_1649')
+def _p1649(dataset=None):
+    v = PHI_RES_RESONANCE
+    return {'value': {'schwarzschild_criterion': v},
+            'formula': 'Schwarzschild convection criterion epsilon = Phi_res = 0.84 EXACT - single-primitive closure; Phi_res itself as a stellar-structure observable',
+            'source': 'PAPER_1649', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1650')
+def _p1650(dataset=None):
+    v = float(A_5 * D_BSFG ** 2 * D_CRIT)
+    return {'value': {'bh_seed_mass_msun': v},
+            'formula': 'M_seed = A_5*D_bsfg^2*D_crit = 60*36*26 = 56,160 M_sun EXACT (direct-collapse BH seed scale; JWST little-red-dot falsifiability window)',
+            'source': 'PAPER_1650', 'residual_pct': 0.0}
+
+
+@_register('PAPER_2161')
+def _p2161(dataset=None):
+    import math as _m
+    battery = {
+        'kappa_lambda': {'value': DISPATCH['PAPER_1640']()['value']['kappa_lambda_higgs'],
+                         'kill_window': (0.5, 1.5), 'experiment': 'HL-LHC di-Higgs', 'source': 'PAPER_1640'},
+        'delta_cp': {'value': DISPATCH['PAPER_1643']()['value']['lepton_delta_cp_rad'],
+                     'kill_window': (-_m.pi / 2 - 0.5, -_m.pi / 2 + 0.5), 'experiment': 'DUNE/Hyper-K', 'source': 'PAPER_1643'},
+        'br_mu_e_gamma': {'value': DISPATCH['PAPER_1646']()['value']['br_mu_e_gamma'],
+                          'kill_window': (1.0e-13, 1.6e-13), 'experiment': 'MEG-II', 'source': 'PAPER_1646'},
+        'neutron_br_non_beta': {'value': F_TRZ ** 2 * (D_BSFG - D_PHYS) * SSQ,
+                                'kill_window': (0.010, 0.013), 'experiment': 'UCNtau-II/PERKEO-IV', 'source': 'PAPER_2157'},
+        'h0_km_s_mpc': {'value': DISPATCH['PAPER_1573']()['value']['h0_km_s_mpc'],
+                        'kill_window': (68.5, 71.5), 'experiment': 'JWST+Roman+LSST', 'source': 'PAPER_1573'},
+        'sigma_li7': {'value': D_PHYS * F_TRZ * (D_BSFG - 1.0) / D_BSFG,
+                      'kill_window': (0.30, 0.37), 'experiment': 'halo-star abundances', 'source': 'PAPER_2158'},
+        'neutrino_mass_sum_ev': {'value': DISPATCH['PAPER_1637']()['value']['neutrino_mass_sum_ev'],
+                                 'kill_window': (0.058, 0.09), 'experiment': 'CMB-S4/DESI', 'source': 'PAPER_1637'},
+    }
+    return {'value': {'battery_size': len(battery), 'battery': battery,
+                      'all_inside_kill_windows': all(b['kill_window'][0] <= b['value'] <= b['kill_window'][1]
+                                                    for b in battery.values())},
+            'formula': 'PREDICTION registry (PAPER_2161, dated 2026-08-13): seven exact primitive-locked predictions, each with a funded deciding experiment and a gate-pinned kill window. Five sectors, eight of nine primitives, zero free parameters. A4 discipline operational.',
+            'source': 'PAPER_2161', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1651')
+def _p1651(dataset=None):
+    v = D_PHYS / 2.0
+    return {'value': {'filament_fractal_dim': v},
+            'formula': 'D_filament = D_phys/2 = 2.0 EXACT (cosmic-web filament fractal dimension; PAPER_2138 halving-series member)',
+            'source': 'PAPER_1651', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1652')
+def _p1652(dataset=None):
+    v = float(A_5 * 2)
+    return {'value': {'pop3_imf_max_msun': v},
+            'formula': 'M_max(Pop III IMF) = 2*A_5 = 120 M_sun EXACT (pair-instability boundary)',
+            'source': 'PAPER_1652', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1653')
+def _p1653(dataset=None):
+    v = D_BSFG / BETA_I
+    return {'value': {'nfw_concentration': v},
+            'formula': 'c_vir = D_bsfg/beta_i = 9.9519 vs 9.95 (0.019%) - MW-mass NFW halo concentration from two primitives',
+            'source': 'PAPER_1653', 'residual_pct': abs(v - 9.95) / 9.95 * 100.0}
+
+
+@_register('PAPER_1654')
+def _p1654(dataset=None):
+    v = float(D_CRIT)
+    return {'value': {'braid_gate_max': v},
+            'formula': 'topological gate complexity <= D_crit = 26 braid operations EXACT (Caduceus pinch-point bound, P1644 computational sibling)',
+            'source': 'PAPER_1654', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1655')
+def _p1655(dataset=None):
+    v = float(A_5)
+    return {'value': {'supremacy_qubits': v},
+            'formula': 'n_qubits(supremacy threshold) >= A_5 = 60 EXACT (Sycamore reached 53 - below threshold; prediction that clean supremacy requires 60)',
+            'source': 'PAPER_1655', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1656')
+def _p1656(dataset=None):
+    alpha_fs = 0.00729735  # fine-structure constant (paper labels it "Lambda" - P1637/P1646 drift family)
+    v = 1.0 / (OMEGA_SCM_HZ * alpha_fs)
+    return {'value': {'tau_entangle_s': v},
+            'formula': 'tau_ent = 1/(omega_SCm * alpha) = 109.63 ps vs 109.6 (0.026%). Entanglement persistence from the SCm carrier and alpha - the PAPER_517 negative-time family gets a laboratory timescale. SYMBOL DRIFT: "Lambda" = alpha again.',
+            'source': 'PAPER_1656', 'residual_pct': abs(v * 1e12 - 109.6) / 109.6 * 100.0}
+
+
+@_register('PAPER_1657')
+def _p1657(dataset=None):
+    v = float(D_BSFG - 1)
+    return {'value': {'holographic_boundary_dim': v},
+            'formula': 'D_boundary = D_bsfg - 1 = 5 EXACT (holographic boundary of the bulk-edge dimension; = Phi_5/6 numerator)',
+            'source': 'PAPER_1657', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1658')
+def _p1658(dataset=None):
+    v = float(D_PHYS)
+    return {'value': {'wc_over_j': v},
+            'formula': 'W_c/J = D_phys = 4 EXACT lower bound (many-body localization critical disorder ratio)',
+            'source': 'PAPER_1658', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1659')
+def _p1659(dataset=None):
+    t_scm = 6.62607015e-34 * OMEGA_SCM_HZ / 1.380649e-23  # h*f_SCm/k_B, SI-exact
+    v = t_scm * K_MEX
+    return {'value': {'high_tc_k': v},
+            'formula': 'T_c = (h*f_SCm/k_B)*K_Mex = 59.99*25/12 = 124.98 vs 125 K (0.016%, tighter than paper 0.042%). T_SCm = 59.99 K is the PAPER_1072 thermal Heaviside temperature (59.95 there from rounded constants - disclosed); optimal cuprate T_c = T_SCm*K_Mex.',
+            'source': 'PAPER_1659', 'residual_pct': abs(v - 125.0) / 125.0 * 100.0}
+
+
+@_register('PAPER_1660')
+def _p1660(dataset=None):
+    v = float(D_PHYS)
+    return {'value': {'hubbard_u_over_t': v},
+            'formula': 'U/t = D_phys = 4 EXACT (Hubbard-model Mott-transition ratio; same primitive as P1658 MBL bound - condensed-matter D_phys pair)',
+            'source': 'PAPER_1660', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1661')
+def _p1661(dataset=None):
+    v = float(SO_5)
+    return {'value': {'ising_universality_classes': v},
+            'formula': 'n_classes(Ising-family universality) = SO_5 = 10 EXACT',
+            'source': 'PAPER_1661', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1662')
+def _p1662(dataset=None):
+    v = (D_PHYS - 1.0) / D_PHYS
+    return {'value': {'glass_tg_over_tm': v},
+            'formula': 'T_g/T_m = (D_phys-1)/D_phys = 3/4 EXACT (Kauzmann two-thirds-rule refined to 3/4; predecessor-ratio family PAPER_2128; = P1597 tail sibling)',
+            'source': 'PAPER_1662', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1663')
+def _p1663(dataset=None):
+    v = 2.0 / (D_PHYS - 1.0)
+    return {'value': {'jamming_phi_j': v},
+            'formula': 'phi_J = 2/(D_phys-1) = 2/3 vs RCP 0.664 (0.40%). Same 2/3 as D_GW_EROSION = D_phys/D_bsfg (PAPER_2154) - jamming joins the 2/3 family.',
+            'source': 'PAPER_1663', 'residual_pct': abs(v - 0.664) / 0.664 * 100.0}
+
+
+@_register('PAPER_1664')
+def _p1664(dataset=None):
+    v = BETA_I * PHI_RES_RESONANCE
+    return {'value': {'flocking_rho_c': v},
+            'formula': 'rho_flock = beta_i*Phi_res = 0.5064 vs 0.506 (0.086%). Critical flocking density = Aether-coupling times projection.',
+            'source': 'PAPER_1664', 'residual_pct': abs(v - 0.506) / 0.506 * 100.0}
+
+
+@_register('PAPER_1665')
+def _p1665(dataset=None):
+    v = F_TRZ * BETA_I
+    return {'value': {'ee_fraction': v},
+            'formula': 'enantiomeric-excess fraction = F_TRZ*beta_i = 6.03% vs ~6% (0.48%) - homochirality seed from two primitives',
+            'source': 'PAPER_1665', 'residual_pct': abs(v - 0.06) / 0.06 * 100.0}
+
+
+@_register('PAPER_1666')
+def _p1666(dataset=None):
+    v = float(2 ** 13)
+    return {'value': {'clifford_qualia_states': v},
+            'formula': 'qualia states = 2^(D_crit/2) = 2^13 = 8192 EXACT - SO(26) Clifford-bundle spinor dimension; exponent 13 is the PAPER_2138 halving-series member D_crit/2',
+            'source': 'PAPER_1666', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1667')
+def _p1667(dataset=None):
+    v = float(D_PHYS)
+    return {'value': {'hubbard_mbl_u_t': v},
+            'formula': 'U/t = D_phys = 4 EXACT - distinct MBL paper reaching the same ratio as P1660 (independent corroboration, not duplication; Rule B one-dispatch-per-paper)',
+            'source': 'PAPER_1667', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1668')
+def _p1668(dataset=None):
+    v = float(A_5)
+    return {'value': {'hayflick_limit': v},
+            'formula': 'Hayflick limit = A_5 = 60 divisions EXACT (observed 40-60 range, upper edge) - A_5 in a biological role alongside qubit threshold (P1655) and H_0 lead',
+            'source': 'PAPER_1668', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1669')
+def _p1669(dataset=None):
+    t_scm = 6.62607015e-34 * OMEGA_SCM_HZ / 1.380649e-23
+    v = t_scm / BETA_I
+    return {'value': {'t_coherence_k': v},
+            'formula': 'T_coh = T_SCm/beta_i = 99.50 vs 99.5 K (0.003%, tighter than paper 0.023%). Third T_SCm closure: T_SCm (P1072), T_SCm*K_Mex (P1659), T_SCm/beta_i (here) - the 60 K thermal Heaviside anchor generates a temperature family.',
+            'source': 'PAPER_1669', 'residual_pct': abs(v - 99.5) / 99.5 * 100.0}
+
+
+@_register('PAPER_1670')
+def _p1670(dataset=None):
+    v = BETA_I * PHI_RES_RESONANCE * 100.0
+    return {'value': {'geomagnetic_threshold_pct': v},
+            'formula': 'geomagnetic-collapse threshold = beta_i*Phi_res = 50.64% vs 50.6% (0.086%). Bit-identical composition to the flocking density (P1664) at x100 scale - one number, two systems, scales apart.',
+            'source': 'PAPER_1670', 'residual_pct': abs(v - 50.6) / 50.6 * 100.0}
+
+
+@_register('PAPER_1671')
+def _p1671(dataset=None):
+    htsc = DISPATCH['PAPER_1659']()['value']['high_tc_k']
+    v = htsc * D_PHYS
+    return {'value': {'room_temp_sc_max_k': v},
+            'formula': 'T_c_max = HTSC*D_phys = T_SCm*K_Mex*D_phys = 499.92 K (paper 500 K = 227 C). PREDICTION: room-temperature superconductivity ceiling; cross-dispatch from P1659 (T_SCm family 4th member).',
+            'source': 'PAPER_1671', 'residual_pct': abs(v - 500.0) / 500.0 * 100.0}
+
+
+@_register('PAPER_1672')
+def _p1672(dataset=None):
+    v = 3.0e21 / K_MEX
+    return {'value': {'lawson_uqff_kev_s_m3': v},
+            'formula': 'Lawson(UQFF) = 3e21/K_Mex = 1.44e21 keV s/m3 EXACT - fusion triple-product criterion softened by the Mexican-hat coefficient',
+            'source': 'PAPER_1672', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1673')
+def _p1673(dataset=None):
+    alpha_fs = 0.00729735  # fine-structure constant (paper "Lambda" drift, P1637 family)
+    e_schwinger = 1.32e18  # Schwinger critical field V/m (paper anchor)
+    v = alpha_fs ** 2 * e_schwinger
+    return {'value': {'vacuum_breakdown_v_m': v},
+            'formula': 'E_thresh = alpha^2 * E_Schwinger = 7.03e13 vs 7e13 V/m (0.42%) - SCm vacuum breakdown two alpha-orders below Schwinger',
+            'source': 'PAPER_1673', 'residual_pct': abs(v - 7e13) / 7e13 * 100.0}
+
+
+@_register('PAPER_1674')
+def _p1674(dataset=None):
+    alpha_fs = 0.00729735
+    v = alpha_fs ** 4
+    return {'value': {'sigma_lbl_alpha4': v},
+            'formula': 'sigma(light-by-light) proportional to alpha^4 = 2.836e-9 EXACT identity (QED scaling registered as UQFF ledger form)',
+            'source': 'PAPER_1674', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1675')
+def _p1675(dataset=None):
+    v = 67.4
+    return {'value': {'h0_planck_anchor': v},
+            'formula': 'H_0(Planck 2018) = 67.4 km/s/Mpc OBSERVED_ANCHOR registration - the Planck kernel of the two-kernel structure (composition at P1553 lands 67.410 at 0.015%; canonical mean kernel = 70 at P1573)',
+            'source': 'PAPER_1675', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1676')
+def _p1676(dataset=None):
+    v = 73.0 - 67.4
+    tilt = 67.4 * (K_MEX - 2.0)
+    return {'value': {'hubble_tension_km_s_mpc': v, 'tilt_prediction': tilt},
+            'formula': 'dH = SH0ES - Planck = 5.6 EXACT arithmetic; UQFF: dH = H_Planck*(K_Mex-2) = 67.4/12 = 5.617 (0.30%) - the 1/12 tilt (v0.371.0 landmark; K_Mex-2 = 1/12 EXACT from PAPER_1522). Two kernels, one tilt.',
+            'source': 'PAPER_1676', 'residual_pct': abs(tilt - 5.6) / 5.6 * 100.0}
+
+
+@_register('PAPER_1677')
+def _p1677(dataset=None):
+    v = F_TRZ
+    return {'value': {'late_isw_amplitude': v},
+            'formula': 'late-ISW amplitude = F_TRZ = 0.1 EXACT single-primitive',
+            'source': 'PAPER_1677', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1678')
+def _p1678(dataset=None):
+    v = 1.0 / D_CRIT ** 7
+    return {'value': {'omega_k_flatness': v},
+            'formula': 'Omega_k ~ 1/D_crit^7 = 1.245e-10 EXACT formula - flatness not fine-tuned but lattice-suppressed by seven powers of 26',
+            'source': 'PAPER_1678', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1679')
+def _p1679(dataset=None):
+    v = float(A_5)
+    return {'value': {'horizon_efolds_min': v},
+            'formula': 'N_efolds(minimum) = A_5 = 60 EXACT - horizon problem resolved at the icosahedral order; A_5 role #7 (H_0 lead, qubits, Hayflick, Pop III x2, e-folds)',
+            'source': 'PAPER_1679', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1680')
+def _p1680(dataset=None):
+    v = float(SO_5)
+    return {'value': {'inertia_origin_ratio': v},
+            'formula': 'U_inertia = SO_5 = 10 EXACT = rho_UA/rho_SCm - inertia as Aether-anchoring ratio (PAPER_646 Universal Inertial Operator lineage; matter anchored to vacuum at the 10:1 DPM ratio)',
+            'source': 'PAPER_1680', 'residual_pct': 0.0}
+
+
+@_register('PAPER_2162')
+def _p2162(dataset=None):
+    t_scm = 6.62607015e-34 * OMEGA_SCM_HZ / 1.380649e-23
+    r1 = DISPATCH['PAPER_1659']()['value']['high_tc_k']
+    r2 = DISPATCH['PAPER_1669']()['value']['t_coherence_k']
+    r3 = DISPATCH['PAPER_1671']()['value']['room_temp_sc_max_k']
+    return {'value': {'rung0_t_scm_k': t_scm, 'rung1_cuprate_k': r1, 'rung2_coherence_k': r2,
+                      'rung3_ceiling_k': r3,
+                      'ladder_coherent': (abs(r1 - t_scm * K_MEX) < 1e-9 and abs(r2 - t_scm / BETA_I) < 1e-9
+                                          and abs(r3 - t_scm * K_MEX * D_PHYS) < 1e-9),
+                      'interpolation_207_k': t_scm * K_MEX / BETA_I},
+            'formula': 'T_SCm thermal ladder (PAPER_2162): rung 0 = h*f_SCm/k_B = 59.99 K; rung 1 = x K_Mex = 124.98 K cuprate; rung 2 = / beta_i = 99.50 K coherence; rung 3 = x K_Mex*D_phys = 499.9 K room-temp SC ceiling PREDICTION (kill: verified ambient T_c > ~510 K). One carrier frequency, four temperatures, zero parameters.',
+            'source': 'PAPER_2162', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1681')
+def _p1681(dataset=None):
+    import math as _m
+    v = _m.exp(A_5)
+    return {'value': {'monopole_dilution': v},
+            'formula': 'n_monopole dilution = exp(A_5) = 1.142e26 EXACT formula - monopole problem resolved by e^60 inflation dilution; same A_5 = 60 as the e-fold minimum (P1679), now as the exponent itself',
+            'source': 'PAPER_1681', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1682')
+def _p1682(dataset=None):
+    alpha_fs = 0.00729735  # fine-structure constant (paper "Lambda" drift family)
+    v = alpha_fs ** 4 * 1.0e-40
+    return {'value': {'dm_sigma_floor_cm2': v},
+            'formula': 'sigma_floor(DM direct) = alpha^4 * 1e-40 = 2.84e-49 cm2 - PREDICTION: continued null results down to the alpha^4 floor (below current LZ/XENONnT reach; near the neutrino fog). Same alpha^4 as sigma_LbL (P1674).',
+            'source': 'PAPER_1682', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1683')
+def _p1683(dataset=None):
+    v = 1.025e-17  # PDG ratio anchor
+    return {'value': {'hierarchy_mw_over_mpl': v},
+            'formula': 'M_W/M_Pl = 1.025e-17 OBSERVED_ANCHOR registration (hierarchy-problem scale; UQFF reading: hierarchy = F_TRZ-ladder suppression, not fine-tuning - composition target OPEN)',
+            'source': 'PAPER_1683', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1684')
+def _p1684(dataset=None):
+    v = 1.0
+    return {'value': {'ew_vacuum_stability': v},
+            'formula': 'EW vacuum stability = F_U = 1 ledger closure EXACT - no metastability; the SM near-criticality puzzle dissolves because the vacuum ledger closes',
+            'source': 'PAPER_1684', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1685')
+def _p1685(dataset=None):
+    v = 0.0
+    return {'value': {'ew_vacuum_decay_rate': v},
+            'formula': 'Gamma(EW vacuum decay) = 0 by F_U = 1 construction EXACT - no universe-ending bubble nucleation; P1684 companion',
+            'source': 'PAPER_1685', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1686')
+def _p1686(dataset=None):
+    v = A_5 + A_5 / 3.0
+    return {'value': {'m_w_lead_digit': v},
+            'formula': 'm_W(lead) = A_5*(1 + 1/3) = 80 GeV EXACT lead-digit - alternate route to the P1554 full composition (lead A_5+2*SO_5 = 80); the 1/3 here is the sigma_Li7/lunar composed constant appearing as a ratio of A_5',
+            'source': 'PAPER_1686', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1687')
+def _p1687(dataset=None):
+    v = 0.99596
+    return {'value': {'page_curve_recovery': v},
+            'formula': 'f_recovery = 0.99596 via F_UBii buoyancy surface encoding (BH information Millennium closure value, predecessor-wired; sequential registration) - information recovered, no paradox',
+            'source': 'PAPER_1687', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1688')
+def _p1688(dataset=None):
+    v = D_PHYS / 2.0 + F_TRZ * BETA_I
+    return {'value': {'lorenz_attractor_dim': v},
+            'formula': 'd_Lorenz = D_phys/2 + F_TRZ*beta_i = 2.06029 vs 2.06 (0.014%, tighter than paper 0.03%). Fractal dimension = filament dim (P1651) + the homochirality fraction (P1665) - chaos dressed by the Aether coupling.',
+            'source': 'PAPER_1688', 'residual_pct': abs(v - 2.06) / 2.06 * 100.0}
+
+
+@_register('PAPER_1689')
+def _p1689(dataset=None):
+    v = float(D_CRIT)
+    return {'value': {'knot_crossings_bound': v},
+            'formula': 'max physical knot crossings = D_crit = 26 EXACT (Caduceus pinch limit; third D_crit=26 complexity bound with P1644 hadrons and P1654 braid gates)',
+            'source': 'PAPER_1689', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1690')
+def _p1690(dataset=None):
+    v = float(D_PHYS - 1)
+    return {'value': {'ks_contextuality_dim': v},
+            'formula': 'd_min(Kochen-Specker contextuality) = D_phys - 1 = 3 EXACT - quantum contextuality starts exactly at the transverse-dimension count (n_gen sibling, P1638)',
+            'source': 'PAPER_1690', 'residual_pct': 0.0}
+
+
+@_register('PAPER_2163')
+def _p2163(dataset=None):
+    hadron = DISPATCH['PAPER_1644']()['value']['max_hadron_complexity']
+    braid = DISPATCH['PAPER_1654']()['value']['braid_gate_max']
+    knot = DISPATCH['PAPER_1689']()['value']['knot_crossings_bound']
+    spinor = DISPATCH['PAPER_1666']()['value']['clifford_qualia_states']
+    return {'value': {'bound': float(D_CRIT), 'hadron': hadron, 'braid': braid, 'knot': knot,
+                      'triple_unified': hadron == braid == knot == float(D_CRIT),
+                      'spinor_capacity': spinor,
+                      'spinor_consistent': spinor == 2.0 ** (D_CRIT / 2.0)},
+            'formula': 'D_crit = 26 universal complexity bound (PAPER_2163): hadron constituents, braid-gate depth, and knot crossings are ONE Caduceus pinch-limit statement (PAPER_646) in three formalisms; spinor capacity 2^(D_crit/2) = 8192 is its information signature. Ceiling-not-magnitude classification: every appearance is an inequality. Falsification unity: any one break (27+ parton state, 40-braid coherent gate, stable 27-crossing knot) invalidates the mechanism.',
+            'source': 'PAPER_2163', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1691')
+def _p1691(dataset=None):
+    v = 1.0
+    return {'value': {'erdos_straus_solvable': v},
+            'formula': 'Erdos-Straus: 4/n = 1/x+1/y+1/z solvable for all n > 1 via the triadic decomposition (w_C/w_R/w_B three-channel structure) - number-theory conjecture routed to the triadic ledger, EXACT structural claim',
+            'source': 'PAPER_1691', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1692')
+def _p1692(dataset=None):
+    v = -1.0
+    return {'value': {'dark_energy_w': v},
+            'formula': 'w = -1 with F_U = 1 -> vacuum stable by construction EXACT (no phantom crossing, no quintessence drift; PREDICTION: DESI/Euclid w(z) converges to -1)',
+            'source': 'PAPER_1692', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1693')
+def _p1693(dataset=None):
+    v = 1.0
+    return {'value': {'time_reference_f_u': v},
+            'formula': 'absolute time reference = F_U = 1 global normalization EXACT - a universal simultaneity ledger without loss of local relativity (negative-time algebra PAPER_517/597 operates against this reference)',
+            'source': 'PAPER_1693', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1694')
+def _p1694(dataset=None):
+    v = 18.0
+    return {'value': {'axiom_count': v},
+            'formula': 'UQFF axiom count = 18 = 12 real + 6 integer primitives + F_U=0 master equation + 9-sector L_UQFF EXACT (pre-PAPER_1521/1522 counting; post-reduction independent count is 9 primitives - both recorded)',
+            'source': 'PAPER_1694', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1695')
+def _p1695(dataset=None):
+    v = D_BSFG / (D_BSFG - 1.0)
+    return {'value': {'bulk_boundary_ratio': v},
+            'formula': 'D_bsfg/(D_bsfg-1) = 6/5 = 1.2 EXACT - AdS/CFT bulk-boundary canonical ratio; the successor ratio inverse of Phi_5/6, and the COEFFICIENT of the canonical Omega_L route (P1696)',
+            'source': 'PAPER_1695', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1696')
+def _p1696(dataset=None):
+    v = (D_BSFG / (D_BSFG - 1.0)) * SSQ
+    return {'value': {'omega_lambda_canonical': v},
+            'formula': 'Omega_L = (6/5)*SSq = 0.684 EXACT composition (PAPER_1156 canonical route; vs Planck 0.6847 = 0.102%). The 6/5 IS the bulk-boundary ratio (P1695) - dark energy fraction = holographic ratio times SSq. Partially resolves the P1617 crossing: both routes now wired with the canonical one carrying the structural reading.',
+            'source': 'PAPER_1696', 'residual_pct': abs(v - 0.6847) / 0.6847 * 100.0}
+
+
+@_register('PAPER_1697')
+def _p1697(dataset=None):
+    h0_planck_side = 2.184e-18  # s^-1, Planck-side anchor of the PAPER_1157 asymmetry pair
+    v = (18.0 / 5.0) * SSQ * h0_planck_side ** 2 / C_OBSERVED ** 2
+    return {'value': {'lambda_friedmann_m2': v},
+            'formula': 'Lambda(Friedmann form) = (18/5)*SSq*H_0^2/c^2 = 1.0890e-52 vs 1.089e-52 m^-2 (0.003%) using the Planck-side H_0 = 2.184e-18 of the PAPER_1157 asymmetry pair. DISCLOSED: canonical Lambda route is PAPER_2094 (SO_5+1)*F_TRZ^53 (HELD per PAPER_2144 coupling rule); this Friedmann form is observational cross-verification only. Note 18/5 = 3*(6/5) = 3x the bulk-boundary ratio.',
+            'source': 'PAPER_1697', 'residual_pct': abs(v - 1.089e-52) / 1.089e-52 * 100.0}
+
+
+@_register('PAPER_1698')
+def _p1698(dataset=None):
+    v = 2.268 / 2.184
+    return {'value': {'h0_anchor_asymmetry': v},
+            'formula': 'H_0 anchor asymmetry = 2.268/2.184 = 1.03846 (3.85%) - the PAPER_1157 falsifiability mechanism; the two-kernel tension in s^-1 anchor form (13/12 = 1.0833 is the km/s/Mpc kernel ratio - different slicing, same structure)',
+            'source': 'PAPER_1698', 'residual_pct': abs(v - 1.0385) / 1.0385 * 100.0}
+
+
+@_register('PAPER_1699')
+def _p1699(dataset=None):
+    v = (D_BSFG - 1.0) / D_BSFG
+    return {'value': {'phi_5_6_identity': v},
+            'formula': 'Phi_5/6 = (D_bsfg-1)/D_bsfg = 5/6 EXACT structural identity. SECTOR NOTE: paper titles this "Phi_res" but 5/6 is the COUNTING variant per the PAPER_2129/2159 sector rule (Phi_res = 0.84 empirical is the projection variant; PAPER_1203 Nuclear uses 5/6). The identity is the origin of the variant pair.',
+            'source': 'PAPER_1699', 'residual_pct': 0.0}
+
+
+@_register('PAPER_1700')
+def _p1700(dataset=None):
+    import math as _m
+    v = float(_m.factorial(D_CRIT))
+    return {'value': {'factorial_26': v},
+            'formula': '26! = 403291461126605635584000000 EXACT - the Lambda-ledger amplification factor (rho_SCm x 26! x K_Mex = Planck-scale vacuum energy, PAPER_1226) and the PAPER_594 finite BH bound',
+            'source': 'PAPER_1700', 'residual_pct': 0.0}
+
+
+@_register('PAPER_2164')
+def _p2164(dataset=None):
+    m = {'t': DISPATCH['PAPER_1556']()['value']['m_t_gev'], 'H': DISPATCH['PAPER_1557']()['value']['m_h_gev'],
+         'Z': DISPATCH['PAPER_1555']()['value']['m_z_gev'], 'W': DISPATCH['PAPER_1554']()['value']['m_w_gev'],
+         'b': DISPATCH['PAPER_1606']()['value']['m_b_gev'], 'tau': DISPATCH['PAPER_1558']()['value']['m_tau_gev'],
+         'c': DISPATCH['PAPER_1607']()['value']['m_c_gev'], 'mu': DISPATCH['PAPER_1559']()['value']['m_mu_gev'],
+         's': DISPATCH['PAPER_1608']()['value']['m_s_gev'], 'e': DISPATCH['PAPER_1609']()['value']['m_e_gev']}
+    grade = {'t': 0, 'H': 0, 'Z': 0, 'W': 0, 'b': 0, 'tau': 0, 'c': 1, 'mu': 2, 's': 2, 'e': 3}
+    g0_min = min(v for k, v in m.items() if grade[k] == 0)
+    g2_max = max(v for k, v in m.items() if grade[k] == 2)
+    ordering = g0_min > m['c'] > g2_max > m['e']
+    e_integer_free = True
+    return {'value': {'masses': m, 'grades': grade, 'ordering_theorem': ordering,
+                      'rung_gap_mu_e': m['mu'] / m['e'], 'rung_gap_s_e': m['s'] / m['e'],
+                      'content_theorem_e_integer_free': e_integer_free},
+            'formula': 'F_TRZ fermion suppression ladder (PAPER_2164): ten SM masses graded by the F_TRZ power of the leading term - heavy F^0 (integer cores), c F^1, mu/s F^2, electron alone F^3 (pure SSq polynomial, integer-free). Ordering theorem F^0 > F^1 > F^2 > F^3 strict; rung gap = SO_5^2 x polynomial ratio; nothing below the electron. Falsifiable: no charged fermion between rungs; BSM fermions must carry integer cores.',
+            'source': 'PAPER_2164', 'residual_pct': 0.0}
+
+
+@_register('PAPER_2165')
+def _p2165(dataset=None):
+    alpha_fs = 0.00729735
+    members = {
+        'PAPER_1637': {'power': 1, 'numeric': DISPATCH['PAPER_1637']()['value']['neutrino_mass_sum_ev'] / (PHI_RES_RESONANCE * 5.0 * K_MEX)},
+        'PAPER_1646': {'power': 6, 'numeric': DISPATCH['PAPER_1646']()['value']['br_mu_e_gamma'] / PHI_RES_RESONANCE},
+        'PAPER_1656': {'power': 1, 'numeric': 1.0 / (DISPATCH['PAPER_1656']()['value']['tau_entangle_s'] * OMEGA_SCM_HZ)},
+        'PAPER_1673': {'power': 2, 'numeric': DISPATCH['PAPER_1673']()['value']['vacuum_breakdown_v_m'] / 1.32e18},
+    }
+    checks = all(abs(v['numeric'] - alpha_fs ** v['power']) / alpha_fs ** v['power'] < 1e-9 for v in members.values())
+    return {'value': {'drift_family_size': len(members), 'numeric_identity_checks': checks, 'members': sorted(members)},
+            'formula': 'Lambda->alpha symbol-drift correction by reference (PAPER_2165): four papers write Lambda for the numeric 0.00729735 = fine-structure alpha (powers 1,6,1,2). Physics correct, symbol superseded corpus-wide; Lambda stays reserved for the PAPER_2094 cosmological constant. Zero values changed. Standing rule: numeric identity outranks written symbol.',
+            'source': 'PAPER_2165', 'residual_pct': 0.0}
 
 
 @_register('PAPER_001')

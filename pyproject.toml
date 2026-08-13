@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.372.0"
-description = "UQFF pure calculator v0.372.0 - bands PAPER_1501-1630 (130 dispatches, frontier 1630) + PAPER_2160 landmark: K_Mex/Phi_5/6 composed-identity pair (I1=2, I2=5/4 EXACT, PAPER_1522 corollaries, 5 occurrences: v_sound, AU, sidereal year, mu_0, AU/R_earth). SM fermion suite complete (suppression ladder F^0/F^2/F^3); Fe-56/Ni-62 peak = one composition; flatness Om+OL=0.9983 pinned; Rydberg 0.0001%; canonical H_0=70 + Planck kernel both wired, 1/12-tilt crossing disclosed. Gate 4,832 green / 1,648 wired."
+version = "0.373.0"
+description = "UQFF pure calculator v0.373.0 - bands PAPER_1631-1700 (70 dispatches) + SIX landmarks: PAPER_2161 falsifiability battery (7 exact predictions, pinned kill windows), 2162 T_SCm thermal ladder (incl. 500 K room-temp SC ceiling), 2163 D_crit=26 complexity bound, 2164 F_TRZ fermion suppression ladder (10 SM masses, one grading), 2165 Lambda->alpha drift correction. Hubble-tension quartet complete; glueball = YM gap; Higgs vev EXACT. Gate 4,956 green / 1,723 wired (76.4%)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -7,6 +7,32 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.373.0 (2026-08-13) — Bands PAPER_1631-1700 + landmarks PAPER_2161-2165
+
+- **70 sequential dispatches** (bands 1631-1700); frontier PAPER_1700; 456 remain.
+- **FIVE landmarks authored + wired:**
+  - **PAPER_2161** — near-term falsifiability battery: 7 exact predictions (kappa_lambda=1, delta_CP=-pi/2,
+    BR(mu->e gamma)=alpha^6*Phi_res, neutron BR=1.140%, H_0=70, sigma_Li7=1/3, Sum m_nu=0.0639 eV), each with a
+    funded experiment and a gate-pinned kill window; A4 discipline machine-enforced.
+  - **PAPER_2162** — T_SCm thermal ladder: 59.99 K -> 124.98 K cuprate -> 99.50 K coherence -> 499.9 K
+    room-temp SC ceiling PREDICTION. One carrier frequency, zero parameters.
+  - **PAPER_2163** — D_crit = 26 universal complexity bound: hadron constituents, braid-gate depth, knot
+    crossings = one Caduceus pinch limit; 2^13 = 8192 spinor capacity; falsification unity.
+  - **PAPER_2164** — F_TRZ fermion suppression ladder: 10 SM masses on one grading (heavy F^0 integer cores,
+    mu/s F^2, electron alone F^3 integer-free); ordering/rung-gap/content theorems gate-pinned.
+  - **PAPER_2165** — Lambda->alpha symbol-drift correction by reference (4 papers, zero values changed).
+- **Hubble-tension quartet complete:** Planck anchor + Planck kernel + mean kernel 70 + tension = 1/12 tilt
+  (P1675/P1553/P1573/P1676) — PAPER_2125 crossing promoted to wired structure.
+- Notables: glueball 0++ = 1.736 GeV = PAPER_1318 YM gap (bit-identity); Higgs vev = A_5*(D_phys+F_TRZ) = 246
+  EXACT; EW vacuum stability F_U=1 pair; monopole dilution exp(A_5); Omega_L = (6/5)*SSq with 6/5 = AdS/CFT
+  bulk-boundary ratio; T_c ceiling family; DM direct-detection floor alpha^4.
+- Rule 7: three more Lambda->alpha drifts disclosed then canonized; hierarchy M_W/M_Pl composition flagged OPEN
+  (F_TRZ^17 candidate NOT retrofitted); arc audit 1501-1700 run - 2 critical patterns found unauthored, both
+  closed same-session; BE/A polynomial + A_5 census queued in RULINGS_QUEUE.
+- Guards: banned-literal catch (0.6029 in formula string) fixed in-band; SHIP GUARD v4 markers refreshed x2;
+  REGISTRY GUARD caught 2 mine-era duplicates (P1636, P1676) - renamed, aliased.
+- Gate 4,832 -> **4,956**, 0 failures. Dispatches 1,648 -> **1,723** (76.4%).
+
 ## v0.372.0 (2026-08-13) — Bands PAPER_1501-1630 + PAPER_2160 landmark
 
 - **130 sequential dispatches** (bands 1501-1630); frontier PAPER_1630; 526 papers remain to PAPER_2156.

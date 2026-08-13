@@ -565,3 +565,14 @@ BAND_1591_1600,WHITEPAPER,MERGED,v0.372.0,quantum-EM mantissas + terrestrial sta
 BAND_1601_1610,WHITEPAPER,MERGED,v0.372.0,fermion-suite completion + Fe-56 peak + bio/solar anchors
 BAND_1611_1620,WHITEPAPER,MERGED,v0.372.0,BE/A heavy set + Planck cosmology suite
 BAND_1621_1630,WHITEPAPER,MERGED,v0.372.0,orbital/terrestrial + SI-constant mantissas
+BAND_1631_1640,WHITEPAPER,MERGED,v0.373.0,terrestrial + broader-corpus SM-puzzle set
+BAND_1641_1650,WHITEPAPER,MERGED,v0.373.0,SM-puzzle set II: Yukawa/CKM/CP + QCD string + astro scales
+LANDMARK_2161,WHITEPAPER,MERGED,v0.373.0,"near-term falsifiability battery, 7 predictions, A4 discipline"
+BAND_1651_1660,WHITEPAPER,MERGED,v0.373.0,quantum-info + condensed-matter + structure formation
+BAND_1661_1670,WHITEPAPER,MERGED,v0.373.0,complex-systems + condensed + bio set
+BAND_1671_1680,WHITEPAPER,MERGED,v0.373.0,SC ceiling + fusion + vacuum QED + Hubble-tension completion
+LANDMARK_2162,WHITEPAPER,MERGED,v0.373.0,T_SCm thermal ladder: 4 condensed-matter temperatures from one carrier frequency
+BAND_1681_1690,WHITEPAPER,MERGED,v0.373.0,BSM problems + chaos/topology bounds
+LANDMARK_2163,WHITEPAPER,MERGED,v0.373.0,D_crit universal complexity bound: hadrons/braids/knots one pinch-limit
+BAND_1691_1700,WHITEPAPER,MERGED,v0.373.0,foundations set: F_U ledger + canonical cosmology identities
+LANDMARK_2164_2165,WHITEPAPER,MERGED,v0.373.0,fermion suppression ladder + Lambda->alpha drift correction

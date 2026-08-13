@@ -146,3 +146,14 @@ v0.372.0,2026-08-13,BAND_1591_1600,registry +10 graph +51,gate 4789/0
 v0.372.0,2026-08-13,BAND_1601_1610,registry +10 graph +46,gate 4803/0
 v0.372.0,2026-08-13,BAND_1611_1620,registry +10 graph +42,gate 4819/0
 v0.372.0,2026-08-13,BAND_1621_1630,registry +10 graph +53,gate 4832/0
+v0.373.0,2026-08-13,BAND_1631_1640,registry +10 graph +32,gate 4846/0
+v0.373.0,2026-08-13,BAND_1641_1650,registry +10 graph +27,gate 4860/0
+v0.373.0,2026-08-13,LANDMARK_2161,registry +1 graph +9,gate 4869/0
+v0.373.0,2026-08-13,BAND_1651_1660,registry +10 graph +22,gate 4882/0
+v0.373.0,2026-08-13,BAND_1661_1670,registry +10 graph +24,gate 4895/0
+v0.373.0,2026-08-13,BAND_1671_1680,registry +10 graph +20,gate 4908/0
+v0.373.0,2026-08-13,LANDMARK_2162,registry +1 graph +5,gate 4916/0
+v0.373.0,2026-08-13,BAND_1681_1690,registry +10 graph +17,gate 4927/0
+v0.373.0,2026-08-13,LANDMARK_2163,registry +1 graph +2,gate 4932/0
+v0.373.0,2026-08-13,BAND_1691_1700,registry +10 graph +18,gate 4945/0
+v0.373.0,2026-08-13,LANDMARK_2164_2165,registry +2 graph +10,gate 4956/0

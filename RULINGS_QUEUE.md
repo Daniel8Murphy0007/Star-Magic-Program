@@ -6087,3 +6087,7 @@ carried). Recorded so the per-ship rulings trail has no silent gap. Open questio
 - Fe-56 dual route: predecessor bucket composition (0.019%) vs sequential F·K⁵−β⁴+5 (0.025%) — both recorded, neither supersedes; ruling welcome.
 - Avogadro counting-sector test (PAPER_2159 prediction) remains OPEN — P1626 composition carries no Φ.
 - Math-constants counting sector (π P1560, φ P1561 both select Φ_5/6) — offered, awaiting canonization ruling.
+
+### Arc-audit 1501-1700 queued landmark candidates (2026-08-13, non-blocking)
+- Nuclear BE/A universal polynomial family: 9 nuclides (2H/3H/alpha/C-12/O-16/Fe-56/Ni-62/Pb-208/U-235/238) on one F·K_Mex^n + beta_i^k + offset family, shell offsets {+2,+3,+5}, subtractive forms at peak and tritium — landmark candidate awaiting authorization.
+- A_5 = 60 multi-role census (7+ roles: H_0 lead, e-folds, monopole exponent, qubit threshold, Hayflick, Pop III, UHECR core) — lower priority; PAPER_2163 §4 contrasts magnitude-vs-ceiling already.

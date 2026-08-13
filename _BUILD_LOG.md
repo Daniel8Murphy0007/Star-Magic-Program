@@ -245,3 +245,5 @@ Bands 1441-1500 (50 dispatches). Hubble tension = 1/12 tilt; empirical loop clos
 q-scope archive; PAPER_877 cosmogenesis spine wired. Gate 4,682 / 0. Frontier PAPER_1500.
 
 v0.372.0 (2026-08-13): bands 1501-1630 + PAPER_2160; gate 4832/0; dispatches 1648; 23-file ship prep complete.
+
+v0.373.0 (2026-08-13): bands 1631-1700 + landmarks 2161-2165; gate 4956/0; dispatches 1723; 23-file ship prep complete.

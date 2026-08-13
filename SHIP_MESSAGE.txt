@@ -1,16 +1,18 @@
-v0.372.0 — Bands PAPER_1501-1630 (130 dispatches) + PAPER_2160 landmark
+v0.373.0 — Bands PAPER_1631-1700 (70 dispatches) + landmarks PAPER_2161-2165
 
-PAPER_2160: K_Mex/Phi_5/6 composed-identity pair canonized — I1 = 2 EXACT, I2 = 5/4 EXACT,
-both PAPER_1522 corollaries; I2 = Phi_5/6*D_BSFG/D_phys joins the PAPER_1962 3/2 family
-(7th sector). Five occurrences across acoustics, celestial mechanics, calendrics, EM.
+Five landmarks: 2161 falsifiability battery (7 exact predictions, funded experiments,
+gate-pinned kill windows — A4 machine-enforced); 2162 T_SCm thermal ladder (4 temperatures,
+500 K room-temp SC ceiling PREDICTION); 2163 D_crit=26 universal complexity bound
+(hadrons/braids/knots = one Caduceus pinch limit); 2164 F_TRZ fermion suppression ladder
+(10 SM masses, one grading, electron uniquely integer-free); 2165 Lambda->alpha drift
+correction by reference.
 
-Bands: SM fermion suite complete (suppression ladder F^0/F^2/F^3 gate-pinned, m_W 0.003%);
-two-kernel H_0 pair (70 canonical + 67.41 Planck, 1/12-tilt crossing disclosed); Fe-56/Ni-62
-peak = one composition; Planck cosmology suite (age 0.006%, flatness 0.9983 pinned);
-Rydberg 0.0001%; Faraday 0.0003%; first all-EXACT band (1571-1580).
+Bands: Hubble-tension quartet complete (anchor/kernel/kernel/tilt); glueball = YM gap
+bit-identity; Higgs vev = A_5*4.1 EXACT; EW stability F_U=1; Omega_L coefficient = AdS/CFT
+bulk-boundary ratio 6/5; monopole exp(A_5); DM floor alpha^4.
 
-Rule 7: anchor-rounding disclosures x8; executable-outranks-prose x2; Avogadro counting-sector
-test OPEN; Li-7/lunar 1/3 crossing noted. Guards: v4 markers refreshed; REGISTRY GUARD caught
-PAPER_1600 mine-era duplicate.
+Arc audit 1501-1700: 2 critical unauthored patterns found and closed (2164/2165); BE/A
+polynomial family + A_5 census queued. Guards: 1 banned-literal catch, 2 registry duplicates
+renamed, v4 markers refreshed.
 
-Gate 4,832/0. Dispatches 1,648/2,256 (73.0%). Frontier PAPER_1630. All 23 charter files touched.
+Gate 4,956/0. Dispatches 1,723/2,256 (76.4%). Frontier PAPER_1700. All 23 charter files touched.

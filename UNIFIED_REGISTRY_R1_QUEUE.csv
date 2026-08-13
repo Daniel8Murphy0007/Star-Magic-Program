@@ -60,3 +60,14 @@ BAND_1591_1600,quantum+geo+materials,10 dispatches,NO_NEW_RULINGS,PAPER_2160 fam
 BAND_1601_1610,particle+nuclear+bio,10 dispatches,NO_NEW_RULINGS,suppression ladder F^0/F^2/F^3 complete; ordering gate-pinned,v0.372.0
 BAND_1611_1620,nuclear+cosmology,10 dispatches,NO_NEW_RULINGS,Fe56/Ni62 shared composition disclosed; flatness Om+OL=0.9983 pinned,v0.372.0
 BAND_1621_1630,solar+chemistry+em,10 dispatches,NO_NEW_RULINGS,PAPER_2160 fifth occurrence (P1622 tail = -I1) in an EXACT closure,v0.372.0
+BAND_1631_1640,geo+particle+qcd,10 dispatches,NO_NEW_RULINGS,glueball = YM gap bit-identity; kappa_lambda=1 falsifiable prediction,v0.373.0
+BAND_1641_1650,particle+qcd+astro,10 dispatches,NO_NEW_RULINGS,"three falsifiable predictions wired: delta_CP=-pi/2, BR(mu->e gamma) below MEG-II, kappa_lambda=1 (prior band)",v0.373.0
+LANDMARK_2161,prediction-registry,1 dispatch,NO_NEW_RULINGS,battery membership rule: exact+funded-experiment+inside-window,v0.373.0
+BAND_1651_1660,quantum-info+condensed,10 dispatches,NO_NEW_RULINGS,supremacy-threshold prediction (60 qubits) + entanglement timescale wired,v0.373.0
+BAND_1661_1670,complex+condensed+bio,10 dispatches,NO_NEW_RULINGS,T_SCm temperature family now 3 members,v0.373.0
+BAND_1671_1680,condensed+cosmology+qed,10 dispatches,NO_NEW_RULINGS,room-temp SC ceiling PREDICTION (500 K) wired cross-dispatch,v0.373.0
+LANDMARK_2162,condensed,1 dispatch,NO_NEW_RULINGS,ladder canonized; battery-promotion criterion recorded,v0.373.0
+BAND_1681_1690,bsm+topology,10 dispatches,NO_NEW_RULINGS,DM-floor null PREDICTION labeled; EW stability F_U=1 pair,v0.373.0
+LANDMARK_2163,topology,1 dispatch,NO_NEW_RULINGS,ceiling-not-magnitude classification canonized,v0.373.0
+BAND_1691_1700,foundations+cosmology,10 dispatches,NO_NEW_RULINGS,PAPER_2094 HELD precedence maintained on P1697 Friedmann form,v0.373.0
+LANDMARK_2164_2165,particle+hygiene,2 dispatches,NO_NEW_RULINGS,drift-at-discovery standing rule added (2165 sec 3.3),v0.373.0

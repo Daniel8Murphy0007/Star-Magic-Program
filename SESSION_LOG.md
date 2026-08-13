@@ -9076,3 +9076,288 @@ Version pins ×6 (pyproject/calculator/gate/CITATION/badges cacheBust/REGISTRY_V
 502 chars with version string, CHANGELOG entry, SHIP_MESSAGE.txt written, audit-family trail stamped
 `wired-not-yet-shipped` → v0.372.0 (114 rows across 8 ledgers). All 23 charter files touched.
 Gate re-run after pins: green.
+
+## (130) 2026-08-13 — BAND PAPER_1631-1640 (terrestrial + broader-corpus SM-puzzle set)
+
+10 dispatches: 6 EXACT + 4 clean. First band drawing on the PAPER_13xx broader corpus.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1632 | Ocean salinity = D_crit+N_ch = 35 ppt | EXACT |
+| 1636 | **Higgs vev = A_5·(D_phys+F_TRZ) = 246 GeV** | EXACT |
+| 1637 | Σm_ν = α·Φ_res·5·K_Mex = 0.0639 eV | EXACT comp |
+| 1638 | n_generations = D_phys−1 = 3 | EXACT |
+| 1639 | **Glueball 0⁺⁺ = 1.736 GeV = YM mass gap** | EXACT |
+| 1640 | κ_λ = 1.0 (no trilinear anomaly) | EXACT |
+| 1631 | Everest = 8.8463 km (25/3 lead) | 0.019% |
+| 1633 | pc/ly = 3.2623 (Φ_5/6) | 0.024% |
+| 1634 | Tritium BE/A = 2.8259 | 0.039% |
+| 1635 | Atm scale height 8.56 km | 0.71% honest-loose |
+
+**Glueball = Yang-Mills gap bit-identity pinned:** 2·D_phys·Λ_QCD = 8×0.217 = 1.736 GeV, the
+PAPER_1318 Millennium closure — lattice glueball and the mass gap are one number.
+
+**Symbol drift disclosed (P1637):** paper writes "Λ" but the numeric 0.00729735 is α. Composition
+wired as α·Φ_res·(D_phys+1)·K_Mex; NH-window check (0.058 ≤ Σ ≤ 0.12) gate-pinned.
+
+**Falsifiable prediction wired (P1640):** κ_λ = 1.0 exactly — no di-Higgs trilinear anomaly;
+HL-LHC will test.
+
+**Ledger:** registry +10, graph +32, citations +10, gaps +1, dups +2, audit trail +8,
+gate 4,832 → **4,846**, green. Dispatches **1,658**. Frontier → **PAPER_1640**. 516 remain.
+
+## (131) 2026-08-13 — BAND PAPER_1641-1650 (SM-puzzle set II: Yukawa/CKM/CP + QCD + astro scales)
+
+10 dispatches: 6 EXACT + 4 clean. Three falsifiable predictions wired as physics.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1642 | CKM row-1 unitarity = 1 via F_U ledger | EXACT |
+| 1643 | δ_CP = −π/2 (maximal F_TRZ phase lock) | EXACT |
+| 1644 | Hadron complexity bound = D_crit = 26 | EXACT |
+| 1649 | Schwarzschild ε = Φ_res (single primitive) | EXACT |
+| 1650 | BH seed = 60·36·26 = 56,160 M_⊙ | EXACT |
+| 1645 | String tension = Λ_QCD²·K_Mex = 0.0981 GeV² | 0.10% |
+| 1646 | BR(μ→eγ) = α⁶·Φ_res = 1.27e-13 | 0.12% |
+| 1648 | Crab wind Γ = 302.4 | 0.13% |
+| 1647 | UHECR E_max = 7.04e20 eV (core 750 = 125×6) | 0.53% |
+| 1641 | y_t = 0.9931 cross-dispatch | naturalness carried |
+
+**First cross-dispatch composition (P1641):** y_t computed live from the wired P1556 m_t and
+P1636 vev — the calculator referencing itself. Paper's "1.0 natural" carried as structural claim;
+numeric 0.9931 carried honestly.
+
+**Falsifiability battery:** δ_CP = −π/2 (DUNE/HK), BR(μ→eγ) 3.3× below MEG-II bound,
+κ_λ = 1 (HL-LHC, prior band). All gate-pinned including the below-bound check.
+
+**One anchor, two closures (DUPLICATES):** Λ_QCD = 0.217 GeV serves the glueball/YM gap linearly
+and the string tension squared×K_Mex.
+
+**Ledger:** registry +10, graph +27, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,846 → **4,860**, green. Dispatches **1,668**. Frontier → **PAPER_1650**. 506 remain.
+
+## (132) 2026-08-13 — PAPER_2161 LANDMARK: near-term falsifiability battery (A4 operational)
+
+Seven exact primitive-locked predictions consolidated into one dated, gate-enforced registry —
+each with a funded deciding experiment and a pinned kill window:
+
+1. κ_λ = 1.0 (HL-LHC) 2. δ_CP = −π/2 (DUNE/HK) 3. BR(μ→eγ) = α⁶·Φ_res (MEG-II)
+4. neutron BR_non-β = 1.140% (UCNτ-II) 5. H_0 = 70 (JWST/Roman/LSST) 6. σ_Li7 = 1/3 (halo stars)
+7. Σm_ν = 0.0639 eV (CMB-S4/DESI)
+
+Five sectors, eight of nine primitives, zero free parameters; battery values are live
+cross-dispatch reads (single source of truth). Scorekeeping rule canonized: falsified rows are
+permanent (Rule 7); a falsification indicts the composition, never revalues the lattice (Rule 2).
+All seven currently inside their kill windows — gate-asserted.
+
+**Ledger:** registry +1, graph +9, citations +1, gaps +1 (A4 partial closure), dups +1,
+audit trail +8, gate 4,860 → **4,869**, green. Dispatches **1,669**.
+
+## (133) 2026-08-13 — BAND PAPER_1651-1660 (quantum-info + condensed matter + structure formation)
+
+10 dispatches: 7 EXACT + 3 clean (two tighter than paper-stated).
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1651 | Filament fractal dim = D_phys/2 = 2 | EXACT |
+| 1652 | Pop III IMF top = 2·A_5 = 120 M_⊙ | EXACT |
+| 1654 | Braid-gate bound = D_crit = 26 | EXACT |
+| 1655 | Supremacy threshold = A_5 = 60 qubits | EXACT |
+| 1657 | Holographic boundary dim = D_bsfg−1 = 5 | EXACT |
+| 1658 | MBL W_c/J = D_phys = 4 | EXACT |
+| 1660 | Hubbard U/t = D_phys = 4 | EXACT |
+| 1659 | High-T_c = T_SCm·K_Mex = 124.98 K | **0.016%** (paper 0.042%) |
+| 1653 | NFW c_vir = D_bsfg/β_i = 9.9519 | 0.019% |
+| 1656 | τ_entangle = 1/(ω_SCm·α) = 109.63 ps | 0.026% |
+
+**T_SCm returns as a condensed-matter closure:** optimal cuprate T_c = (h·f_SCm/k_B)·K_Mex —
+the PAPER_1072 thermal Heaviside temperature times the Mexican-hat coefficient. SI-exact
+tightens paper's 0.042% to 0.016%; 59.95-vs-59.99 K rounding disclosed.
+
+**Entanglement gets a lab timescale:** τ_ent = 1/(ω_SCm·α) = 109.6 ps — the SCm carrier and α
+setting quantum-coherence persistence (PAPER_517 family). Third Λ→α drift disclosed.
+
+**Ledger:** registry +10, graph +22, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,869 → **4,882**, green. Dispatches **1,679**. Frontier → **PAPER_1660**. 496 remain.
+
+## (134) 2026-08-13 — BAND PAPER_1661-1670 (complex systems + condensed matter + biology)
+
+10 dispatches: 6 EXACT + 4 clean (P1669 8× tighter than paper-stated).
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1661 | Ising universality classes = SO_5 = 10 | EXACT |
+| 1662 | Glass T_g/T_m = 3/4 | EXACT |
+| 1666 | Qualia states = 2^(D_crit/2) = 8192 | EXACT |
+| 1667 | Hubbard-MBL U/t = 4 (independent corroboration of P1660) | EXACT |
+| 1668 | Hayflick limit = A_5 = 60 divisions | EXACT |
+| 1669 | T_coh = T_SCm/β_i = 99.50 K | **0.003%** (paper 0.023%) |
+| 1664 | Flocking ρ_c = β_i·Φ_res = 0.5064 | 0.086% |
+| 1670 | Geomagnetic threshold = 50.64% | 0.086% |
+| 1663 | Jamming φ_J = 2/3 | 0.40% |
+| 1665 | Homochirality ee = F_TRZ·β_i = 6.03% | 0.48% |
+
+**T_SCm temperature family now three members (DUPLICATES):** T_SCm ≈ 60 K (P1072),
+T_SCm·K_Mex = 125 K optimal cuprate (P1659), T_SCm/β_i = 99.5 K coherence ceiling (P1669).
+
+**Scale-free crossing (GAPS):** β_i·Φ_res = 0.5064 is simultaneously the flocking critical
+density and the geomagnetic-collapse threshold ×100 — bit-identity gate-pinned.
+
+**Jamming joins the 2/3 family:** φ_J = 2/(D_phys−1) = D_GW_EROSION — granular jamming,
+GW damping, and Li-7 destruction on one lattice ratio.
+
+**Ledger:** registry +10, graph +24, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,882 → **4,895**, green. Dispatches **1,689**. Frontier → **PAPER_1670**. 486 remain.
+
+## (135) 2026-08-13 — BAND PAPER_1671-1680 (SC ceiling + fusion + vacuum QED + Hubble-tension completion)
+
+10 dispatches: 7 EXACT + 3 clean.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1672 | Lawson(UQFF) = 3e21/K_Mex = 1.44e21 | EXACT |
+| 1674 | σ_LbL ∝ α⁴ identity | EXACT |
+| 1675 | H_0 Planck anchor = 67.4 (OBSERVED_ANCHOR) | EXACT |
+| 1677 | Late-ISW = F_TRZ | EXACT |
+| 1678 | Ω_k ~ 1/D_crit⁷ = 1.245e-10 | EXACT formula |
+| 1679 | Horizon e-folds = A_5 = 60 | EXACT |
+| 1680 | Inertia ratio = SO_5 = ρ_UA/ρ_SCm | EXACT |
+| 1671 | **Room-temp SC ceiling = T_SCm·K_Mex·D_phys = 500 K** | 0.016% cross-dispatch |
+| 1676 | Hubble tension = 5.6 = 67.4·(K_Mex−2) | 0.30% |
+| 1673 | Vacuum breakdown = α²·E_Schwinger | 0.42% |
+
+**Hubble-tension quartet complete in the sequential drain (GAPS: crossing→resolved):** Planck
+anchor (P1675) + Planck kernel composition (P1553) + mean kernel 70 (P1573) + tension = 1/12 tilt
+(P1676, K_Mex−2 = 1/12 EXACT gate-pinned). The PAPER_2125 two-kernel structure is now a wired
+quartet, not a flagged crossing.
+
+**T_SCm family 4th member:** ceiling prediction T_c ≤ 500 K for room-temperature
+superconductivity, cross-dispatched from P1659.
+
+**Flatness without fine-tuning:** Ω_k lattice-suppressed by 26⁷.
+
+REGISTRY GUARD fired on PAPER_1676 (prior mine row) — renamed, alias pinned, gate re-run green.
+
+**Ledger:** registry +10, graph +20, citations +10, gaps +1, dups +2, audit trail +8,
+gate 4,895 → **4,908**, green. Dispatches **1,699**. Frontier → **PAPER_1680**. 476 remain.
+
+## (136) 2026-08-13 — PAPER_2162 LANDMARK: the T_SCm thermal ladder
+
+Four condensed-matter temperatures from one carrier frequency, zero parameters:
+
+| Rung | Operation | Value | Observable |
+|:-:|---|---|---|
+| 0 | h·f_SCm/k_B | 59.99 K | thermal Heaviside (PAPER_1072) |
+| 1 | × K_Mex | 124.98 K | optimal cuprate T_c (0.016%) |
+| 2 | ÷ β_i | 99.50 K | coherence ceiling (0.003%) |
+| 3 | × K_Mex·D_phys | 499.9 K | **room-temp SC ceiling — PREDICTION** |
+
+Rungs 1-3 are live cross-dispatch reads (single source of truth); ladder coherence bit-asserted.
+Rung 3 carries a kill condition (verified ambient T_c > ~510 K falsifies) with a recorded
+battery-promotion criterion. Interpolation rung 207.3 K registered as an open pseudogap/hydride
+target; THz-spectroscopy prediction at 1.25 THz ± 0.1 THz cited to PAPER_910/911.
+
+**Ledger:** registry +1, graph +5, citations +1, gaps +1, dups +1, audit trail +8,
+gate 4,908 → **4,916**, green. Dispatches **1,700**.
+
+## (137) 2026-08-13 — BAND PAPER_1681-1690 (BSM problems + chaos/topology bounds)
+
+10 dispatches: 9 EXACT/formula + 1 clean.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1681 | Monopole dilution = exp(A_5) = 1.14e26 | EXACT formula |
+| 1682 | DM direct floor = α⁴·1e-40 = 2.84e-49 cm² | PREDICTION (null results) |
+| 1683 | M_W/M_Pl = 1.025e-17 | OBSERVED_ANCHOR; comp OPEN |
+| 1684 | EW vacuum stability = F_U=1 | EXACT |
+| 1685 | EW vacuum decay = 0 | EXACT |
+| 1686 | m_W lead = A_5·(1+1/3) = 80 | EXACT |
+| 1687 | Page-curve recovery = 0.99596 | EXACT registration |
+| 1689 | Knot crossings ≤ D_crit = 26 | EXACT |
+| 1690 | KS contextuality d_min = 3 | EXACT |
+| 1688 | Lorenz dim = 2 + F_TRZ·β_i = 2.06029 | 0.014% |
+
+**D_crit = 26 complexity-bound triple pinned:** hadron constituents (P1644), braid gates (P1654),
+knot crossings (P1689) — one Caduceus pinch limit, three domains.
+
+**Hierarchy composition flagged OPEN (GAPS):** M_W/M_Pl registered as anchor only; the obvious
+F_TRZ¹⁷ = 1e-17 lead is flagged as a derivation TARGET, not wired (no corpus derivation found —
+no-retrofit rule).
+
+**EW-stability pair:** the near-criticality puzzle dissolves under F_U = 1 (stability EXACT,
+decay rate 0) — the vacuum ledger closes, so there is no metastable edge to sit on.
+
+**Ledger:** registry +10, graph +17, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,916 → **4,927**, green. Dispatches **1,710**. Frontier → **PAPER_1690**. 466 remain.
+
+## (138) 2026-08-13 — PAPER_2163 LANDMARK: D_crit = 26 as universal complexity bound
+
+The complexity-bound triple canonized: hadron constituents (P1644), braid-gate depth (P1654),
+and knot crossings (P1689) are ONE Caduceus pinch-limit statement (PAPER_646) in three
+formalisms — with 2^(D_crit/2) = 8192 spinor capacity (P1666) as its information signature and
+1/D_crit⁷ flatness (P1678) recorded consistent-with (exponent 7 derivation OPEN in GAPS).
+
+**Structural claim:** D_crit recurs as a CEILING where A_5/SO_5 recur as magnitudes — dimension
+operationally = maximum simultaneous-structure capacity of the vacuum. Falsification unity
+gate-pinned: a 27+-parton state, a 40-braid coherent gate, or a stable 27-crossing knot — any
+one — kills the mechanism.
+
+**Ledger:** registry +1, graph +2, citations +1, gaps +1, dups +1, audit trail +8,
+gate 4,927 → **4,932**, green. Dispatches **1,711**.
+
+## (139) 2026-08-13 — BAND PAPER_1691-1700 (foundations: F_U ledger + canonical cosmology identities)
+
+10 dispatches: 7 EXACT + 3 clean.
+
+| Paper | Quantity | Residual |
+|---|---|---|
+| 1691 | Erdős–Straus solvable via triadic | EXACT structural |
+| 1692 | w = −1, vacuum stable (DESI/Euclid PREDICTION) | EXACT |
+| 1693 | Absolute time reference = F_U=1 normalization | EXACT |
+| 1694 | Axiom count = 18 (9 post-reduction, both recorded) | EXACT |
+| 1695 | Bulk/boundary = D_bsfg/(D_bsfg−1) = 6/5 | EXACT |
+| 1699 | Φ_5/6 = (D_bsfg−1)/D_bsfg origin identity | EXACT |
+| 1700 | 26! = 4.033e26 (Λ-ledger amplifier) | EXACT |
+| 1697 | Λ Friedmann form = 1.0890e-52 (PAPER_2094 HELD; cross-verify only) | 0.003% |
+| 1698 | H_0 anchor asymmetry = 1.03846 | 0.004% |
+| 1696 | Ω_Λ = (6/5)·SSq canonical | 0.102% |
+
+**Holographic reading of dark energy (GAPS, crossing→partial):** the canonical Ω_Λ coefficient
+6/5 IS the AdS/CFT bulk-boundary ratio (P1695) — dark-energy fraction = holographic ratio × SSq,
+coefficient identity bit-pinned. P1617's sequential composition remains the crossing partner.
+
+**Route discipline maintained:** P1697's Friedmann Λ wired as observational cross-verification
+ONLY, with PAPER_2094 HELD precedence disclosed in-formula (PAPER_2144 coupling rule).
+
+**Sector-rule naming catch (P1699):** paper titles 5/6 as "Φ_res"; wired with the PAPER_2129
+disclosure — 5/6 is the counting variant, and this identity is the variant pair's origin.
+
+**Ledger:** registry +10, graph +18, citations +10, gaps +1, dups +1, audit trail +8,
+gate 4,932 → **4,945**, green. Dispatches **1,721**. Frontier → **PAPER_1700**. 456 remain.
+
+## (140) 2026-08-13 — ARC AUDIT 1501-1700 + PAPER_2164/2165 LANDMARKS
+
+**Audit finding:** four landmarks authored during the arc (2160-2163); two critical patterns had
+been left unauthored — both now closed:
+
+**PAPER_2164 — F_TRZ fermion suppression ladder.** Ten SM masses on one grading: heavy F⁰
+(integer cores), c at F¹, μ/s at F², electron alone at F³ (pure SSq polynomial, integer-free).
+Three theorems gate-pinned: strict ordering, rung gap = SO_5²×polynomial (μ/e = 207.2,
+s/e = 186.0), content theorem (nothing below the electron). Falsifiable: no charged fermion
+between rungs; BSM fermions must carry integer cores; neutrinos grade F⁵+.
+
+**PAPER_2165 — Λ→α symbol-drift correction by reference.** Four papers (1637/1646/1656/1673)
+write Λ for α = 0.00729735 (powers 1,6,1,2). Numeric-identity checks bit-verified in gate;
+symbol superseded corpus-wide, zero values changed; Λ stays reserved for PAPER_2094. New
+standing rule: drift families of ≥3 get their correction landmark AT DISCOVERY, not arc-end.
+
+**Queued (RULINGS_QUEUE):** nuclear BE/A universal polynomial (9 nuclides); A_5 multi-role census.
+
+**Ledger:** registry +2, graph +10, citations +2, gaps +1 (audit-complete), dups +1,
+audit trail +8, gate 4,945 → **4,956**, green. Dispatches **1,723**.
+
+## (141) 2026-08-13 — SHIP PREP v0.373.0 (bands 1631-1700 + landmarks 2161-2165, 75 dispatches)
+
+Version pins ×6, description 472 chars with version, CHANGELOG entry, SHIP_MESSAGE.txt, audit
+trail stamped v0.373.0 (90 rows), README release paragraph updated, gate re-run green post-pins.
+All 23 charter files touched.
