@@ -6091,3 +6091,14 @@ carried). Recorded so the per-ship rulings trail has no silent gap. Open questio
 ### Arc-audit 1501-1700 queued landmark candidates (2026-08-13, non-blocking)
 - Nuclear BE/A universal polynomial family: 9 nuclides (2H/3H/alpha/C-12/O-16/Fe-56/Ni-62/Pb-208/U-235/238) on one F·K_Mex^n + beta_i^k + offset family, shell offsets {+2,+3,+5}, subtractive forms at peak and tritium — landmark candidate awaiting authorization.
 - A_5 = 60 multi-role census (7+ roles: H_0 lead, e-folds, monopole exponent, qubit threshold, Hayflick, Pop III, UHECR core) — lower priority; PAPER_2163 §4 contrasts magnitude-vs-ceiling already.
+
+### PAPER_2169 ruling request (2026-08-13) — alpha canonical route
+Three wired routes for the fine-structure constant: (A) Lambda-ledger saturation 1/(8pi*beta_i*UA*(13/3)^2) = 0.0043% [recovered, physical mechanism]; (B) P1549 integer mantissa 0.0029% [tightest]; (C) PAPER_591 projection 0.138% [historic]. Which is canonical? Pre-swap coupling verification will run on your pick before any registry change.
+
+
+### RESOLVED 2026-08-13 by Daniel ruling -> PAPER_2170 (route-families doctrine)
+- alpha canonical route (PAPER_2169 request): WITHDRAWN as posed - family of 3 registered; ledger route = consumption default; no route relegated; deltas recorded as observables.
+- Fe-56 dual route + tau_n dual route (v0.372.0 items): DISSOLVED - both are family members per the no-negligible-bin doctrine; no supersession exists.
+
+### CENSUS 2026-08-13 — predecessor constants inventory (Daniel-ordered, queued)
+600+ constants located in Star-Magic predecessor: QCalc listing (850 vars), PARADOX_TO_CLOSURE catalog (2,079 keys), CONSTANTS_AUDIT.csv (70), CLOSED_CONSTANTS_INVENTORY (52) + 6 support docs. Majority unnumbered (orphan-physics class). Mining campaign queued post-drain; all entries are PAPER_2170 family members — no negligible bin.

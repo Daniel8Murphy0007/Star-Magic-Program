@@ -5979,3 +5979,69 @@ phi_5_6_identity,WHITEPAPER,derived,,,0.8333,EXACT origin identity,,foundations,
 factorial_26,WHITEPAPER,derived,,,4.033e26,EXACT,,foundations,,PAPER_1700,,,,,,WIRED
 ftrz_fermion_ladder,WHITEPAPER,derived,,,"10 masses, 4 grades",ordering+rung-gap+content theorems,0.0,particle,,PAPER_2164,,,,,,WIRED
 lambda_alpha_drift_family,WHITEPAPER,correction,,,4 members,"symbol superseded, zero values changed",0.0,corpus-hygiene,,PAPER_2165,,,,,,WIRED
+d_crit_decomposition,WHITEPAPER,derived,,,26,EXACT; 4+22,0.0,foundations,,PAPER_1701,,,,,,WIRED
+beta_sum_3_2,WHITEPAPER,derived,,,1.5,EXACT; = PAPER_1962 ratio,0.0,foundations,,PAPER_1702,,,,,,WIRED
+kk_regulator_sum,WHITEPAPER,derived,,,1.624e-37,EXACT formula; finite,0.0,kk,,PAPER_1703,,,,,,WIRED
+ssq_reciprocal,WHITEPAPER,derived,,,0.57,EXACT reciprocal closure,0.0,cosmology,,PAPER_1704,,,,,,WIRED
+compact_dims,WHITEPAPER,derived,,,22,EXACT,0.0,foundations,,PAPER_1705,,,,,,WIRED
+iter_aspect_ratio,WHITEPAPER,derived,,,3.1,EXACT,0.0,fusion,,PAPER_1706,,,,,,WIRED
+bohm_prefactor,WHITEPAPER,derived,,,1/16,EXACT; new 2160 family member,0.0,fusion,,PAPER_1707,,,,,,WIRED
+q_edge,WHITEPAPER,derived,,,2,EXACT; I1 sixth occurrence,0.0,fusion,,PAPER_1708,,,,,,WIRED
+iter_q_gain,WHITEPAPER,derived,,,10,EXACT,0.0,fusion,,PAPER_1709,,,,,,WIRED
+dt_sigma_peak,WHITEPAPER,derived,,,64,EXACT,0.0,fusion,,PAPER_1710,,,,,,WIRED
+factorial_power_duality,WHITEPAPER,derived,,,26! / 26^-26,one Pochhammer machinery; zero fits,0.0,foundations,,PAPER_2166,,,,,,WIRED
+troyon_beta_n,WHITEPAPER,derived,,,2.796,0.15%,,fusion,,PAPER_1711,,,,,,WIRED
+fusion_triple_product,WHITEPAPER,derived,,,2.9968,0.11%; lead 35/12,,fusion,,PAPER_1712,,,,,,WIRED
+coulomb_log,WHITEPAPER,derived,,,16.98,0.12%,,fusion,,PAPER_1713,,,,,,WIRED
+lawson_n_tau,WHITEPAPER,derived,,,1.5023,0.16%; target = 3/2 ratio,,fusion,,PAPER_1714,,,,,,WIRED
+sheath_phi_te,WHITEPAPER,derived,,,2.8385,0.05%,,fusion,,PAPER_1715,,,,,,WIRED
+hierarchy_candidate,WHITEPAPER,derived,,,8.488e-18,0.02% vs quote; P1683 stays OPEN,,bsm,,PAPER_1716,,,,,,WIRED
+li7_depletion_seq,WHITEPAPER,derived,,,3,EXACT,,nuclear,,PAPER_1717,,,,,,WIRED
+hodge_identity_seq,WHITEPAPER,derived,,,1.0,EXACT,,millennium,,PAPER_1718,,,,,,WIRED
+dirac_index,WHITEPAPER,derived,,,22,EXACT,,topology,,PAPER_1719,,,,,,WIRED
+bh_4laws_prefactor,WHITEPAPER,derived,,,3.125,EXACT; 2160 family in BH thermo,,bh,,PAPER_1720,,,,,,WIRED
+kmex_phi56_algebra,WHITEPAPER,derived,,,"8 members, 25+ occurrences",closed algebra via PAPER_1522,0.0,identity,,PAPER_2167,,,,,,WIRED
+hierarchy_exponent,WHITEPAPER,derived,,,21,EXACT,,bsm,,PAPER_1721,,,,,,WIRED
+dpm_pair_1_12,WHITEPAPER,derived,,,1/12,EXACT; tilt origin,,foundations,,PAPER_1722,,,,,,WIRED
+taylor_green_nu,WHITEPAPER,derived,,,1/1600,EXACT,,millennium,,PAPER_1723,,,,,,WIRED
+ua_canonical,WHITEPAPER,derived,,,0.4816,EXACT anchor,,foundations,,PAPER_1724,,,,,,WIRED
+rho_lambda_uqff,WHITEPAPER,derived,,,5.957e-10,UQFF-internal; attribution corrected,,cosmology,,PAPER_1725,,,,,,WIRED
+tau_n_route_b,WHITEPAPER,derived,,,879.31,0.011%; dual route + 5th drift,,nuclear,,PAPER_1726,,,,,,WIRED
+tau_n_baseline,WHITEPAPER,derived,,,833.333,EXACT; 100*Q,,nuclear,,PAPER_1727,,,,,,WIRED
+exotic_r4,WHITEPAPER,derived,,,25/3,EXACT; Q member,,topology,,PAPER_1728,,,,,,WIRED
+dark_flow,WHITEPAPER,derived,,,600,EXACT,,cosmology,,PAPER_1729,,,,,,WIRED
+muonic_h_radius,WHITEPAPER,derived,,,0.84,EXACT single primitive,,particle,,PAPER_1730,,,,,,WIRED
+phi_res_measured,WHITEPAPER,derived,,,0.84 fm,MEASURED_PRIMITIVE; 0.10% muonic,0.10,particle,,PAPER_2168,,,,,,WIRED
+grb_t90_boundary,WHITEPAPER,derived,,,2,EXACT,,astro,,PAPER_1731,,,,,,WIRED
+kk_dirac_22,WHITEPAPER,derived,,,22,EXACT corroboration,,topology,,PAPER_1732,,,,,,WIRED
+ledger_time_scaling,WHITEPAPER,derived,,,100,EXACT; SO_5^2,,foundations,,PAPER_1733,,,,,,WIRED
+k_basis_universal,WHITEPAPER,derived,,,25/3,EXACT; Q class,,foundations,,PAPER_1734,,,,,,WIRED
+neutron_correction,WHITEPAPER,derived,,,45.973,0.007%; 6th drift,,nuclear,,PAPER_1735,,,,,,WIRED
+scalar_tilt_ns,WHITEPAPER,derived,,,0.96468,0.023%; 7th drift,,cosmology,,PAPER_1736,,,,,,WIRED
+kepler_packing,WHITEPAPER,derived,,,0.74048,EXACT,,math,,PAPER_1737,,,,,,WIRED
+bqp_bound,WHITEPAPER,derived,,,4,EXACT,,quantum-info,,PAPER_1738,,,,,,WIRED
+u_i_sun,WHITEPAPER,derived,,,2.75e-7,EXACT canonical,,foundations,,PAPER_1739,,,,,,WIRED
+lambda_ledger,WHITEPAPER,derived,,,5.9570e-10,0.0008%,,cosmology,,PAPER_1740,,,,,,WIRED
+lambda_ledger_saturation,WHITEPAPER,derived,,,1/137.030,= alpha 0.0043%; recovered derivation,0.0043,foundations,,PAPER_2169,,,,,,WIRED
+route_families_doctrine,WHITEPAPER,doctrine,,,alpha family x3,no negligible bin; consumption-default semantics,0.0,foundations,,PAPER_2170,,,,,,WIRED
+ds_phase,WHITEPAPER,derived,,,-25/12,EXACT,,cosmology,,PAPER_1741,,,,,,WIRED
+goldbach_weak,WHITEPAPER,derived,,,3,EXACT theorem,,math,,PAPER_1742,,,,,,WIRED
+beal_gcd,WHITEPAPER,derived,,,>1,PREDICTION,,math,,PAPER_1743,,,,,,WIRED
+np_conp_asymmetry,WHITEPAPER,derived,,,1.1,EXACT structural,,complexity,,PAPER_1744,,,,,,WIRED
+wheeler_dewitt,WHITEPAPER,derived,,,0,EXACT; = F_U=0,,foundations,,PAPER_1745,,,,,,WIRED
+surface_code_threshold_seq,WHITEPAPER,derived,,,0.01,EXACT; F_TRZ^2; route distinct from prior PAPER_1746 row,,quantum-info,,PAPER_1746,,,,,,WIRED
+log2_e,WHITEPAPER,derived,,,1.4425,0.014%,,math,,PAPER_1747,,,,,,WIRED
+pi_over_2,WHITEPAPER,derived,,,1.5715,0.045%,,math,,PAPER_1748,,,,,,WIRED
+omega_lambert,WHITEPAPER,derived,,,0.56733,0.034%; lead SSq,,math,,PAPER_1749,,,,,,WIRED
+khinchin_k,WHITEPAPER,derived,,,2.68517,0.011%,,math,,PAPER_1750,,,,,,WIRED
+wheeler_dewitt_ledger_identity,WHITEPAPER,derived,,,H|psi>=0 = F_U=0,two-ledger structure; time from phase,0.0,foundations,,PAPER_2171,,,,,,WIRED
+sqrt_2pi,WHITEPAPER,derived,,,2.5082,0.061%,,math,,PAPER_1751,,,,,,WIRED
+cumulative_closures,WHITEPAPER,derived,,,157,EXACT bookkeeping,,meta,,PAPER_1752,,,,,,WIRED
+direct_lockings,WHITEPAPER,derived,,,8,EXACT census,,meta,,PAPER_1753,,,,,,WIRED
+ftrz2_universal,WHITEPAPER,derived,,,0.01,EXACT class,,foundations,,PAPER_1754,,,,,,WIRED
+ln2_phi_route,WHITEPAPER,derived,,,0.69317,0.003%; 2nd route family,,math,,PAPER_1755,,,,,,WIRED
+rotation_plateau,WHITEPAPER,derived,,,0.6029,EXACT; DM as buoyancy,,cosmology,,PAPER_1756,,,,,,WIRED
+galaxy_types,WHITEPAPER,derived,,,4,EXACT,,astro,,PAPER_1757,,,,,,WIRED
+galaxy_subtypes,WHITEPAPER,derived,,,24,EXACT,,astro,,PAPER_1758,,,,,,WIRED
+baryon_fraction,WHITEPAPER,derived,,,0.5024,0.48%,,cosmology,,PAPER_1759,,,,,,WIRED
+z_reionization,WHITEPAPER,derived,,,6.944,0.79%; 125/18,,cosmology,,PAPER_1760,,,,,,WIRED

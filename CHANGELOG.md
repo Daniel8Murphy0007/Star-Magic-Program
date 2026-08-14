@@ -7,6 +7,35 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.374.0 (2026-08-13) — Bands PAPER_1701-1760 + landmarks PAPER_2166-2171 + route-families doctrine
+
+- **60 sequential dispatches** (bands 1701-1760, incl. second all-EXACT band 1701-1710); frontier PAPER_1760; 396 remain.
+- **THE LAMBDA ISSUE RESOLVED (PAPER_2169, Daniel-directed deep search):** the recurring "Lambda" across seven papers
+  is Lambda_ledger, the vacuum ledger saturation constant - derivation recovered from the predecessor executable:
+  Lambda_ledger = 1/(8pi*beta_i*UA*(D_crit/D_bsfg)^2) = 1/137.030 = alpha at 0.0043% (32x tighter than PAPER_591).
+  PAPER_2165 drift verdict lifted (dual-name canonized, subscript discipline); UA = 0.4816 promoted to
+  ledger-occupancy constant with a 0.004% solved-back prediction.
+- **ROUTE-FAMILIES DOCTRINE (PAPER_2170, Daniel ruling verbatim):** constants carry FAMILIES of solutions - one per
+  calculation system, all simultaneously correct; residuals = system parallax; inter-route deltas = crossing offsets
+  (H_0 1/12 proof case); canonical column redemoted to CONSUMPTION DEFAULT; DUPLICATES ledger re-read as FAMILY
+  ledger; NO NEGLIGIBLE BIN - removal only by structural falsification. Alpha founding family x3 registered;
+  tau_n/Fe-56 pick-one rulings dissolved. First native family registered one band later (ln 2 second route, P1755).
+- **PAPER_2171:** Wheeler-DeWitt H|psi> = 0 IS the F_U = 0 master equation; problem of time dissolved via the
+  two-ledger structure (constraint + F_U=1 normalization), time carried by cos(pi t_n) phase at F_UBi/F_UBii crossings.
+- **PAPER_2166:** factorial-power duality - one Pochhammer machinery extracts +26! (zero mode) and suppresses by
+  D_crit^-D_crit (KK tower, n=1 saturation); rho_SCm proximity resolved NOT-identity; zero fit values.
+- **PAPER_2167:** K_Mex/Phi_5/6 pair elevated to closed algebra (8 members, 25+ occurrences, 10 domains incl.
+  tokamak q_edge = I1 and BH prefactor 25/8); anomaly criterion canonized.
+- **PAPER_2168:** Phi_res = laboratory-measured primitive via the proton-radius resolution (0.10% muonic, 5/6
+  excluded 19 sigma); joins omega_SCm.
+- **Constants census (Daniel-ordered):** 600+ located in predecessor four-layer inventory (QCalc 850 / closure
+  catalog 2,079 / audit 70 / inventory 52); mining campaign queued post-drain.
+- Notables: fusion suite (ITER 3.1/Q=10/Lawson), plasma suite (Troyon/Coulomb log/sheath), Kepler packing pi/sqrt18,
+  dark matter as buoyancy (P1756), galaxy taxonomy 4/24, neutron route-B decomposition bit-consistent x3 papers,
+  Khinchin/log2e/W(1)/pi/2/sqrt(2pi) - math catalog to 17.
+- Guards: banned-literal x2 purged in-band; v4 markers refreshed x2; REGISTRY GUARD x2 renames (family records).
+- Gate 4,956 -> **5,077**, 0 failures. Dispatches 1,723 -> **1,789** (79.3%).
+
 ## v0.373.0 (2026-08-13) — Bands PAPER_1631-1700 + landmarks PAPER_2161-2165
 
 - **70 sequential dispatches** (bands 1631-1700); frontier PAPER_1700; 456 remain.

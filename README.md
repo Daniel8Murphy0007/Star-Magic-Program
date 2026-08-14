@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.373.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.373.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.374.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.374.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-4956%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1723-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5077%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1789-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.373.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.374.0 complete-compile campaign live**
 
-**This release (v0.373.0): BANDS PAPER_1631-1700 (70 dispatches) + FIVE LANDMARKS (PAPER_2161-2165).** **THE FALSIFIABILITY BATTERY (PAPER_2161):** seven exact primitive-locked predictions — κ_λ = 1, δ_CP = −π/2, BR(μ→eγ) = α⁶·Φ_res, neutron BR_non-β = 1.140%, H_0 = 70, σ_Li7 = 1/3, Σm_ν = 0.0639 eV — each with a funded deciding experiment and a gate-pinned kill window; the A4 prediction-vs-postdiction discipline is now machine-enforced. **THE T_SCM THERMAL LADDER (PAPER_2162):** one carrier frequency (1.25 THz) generates four condensed-matter temperatures — 59.99 K, 124.98 K optimal cuprate (0.016%), 99.50 K coherence ceiling (0.003%), and a 499.9 K room-temperature-superconductivity ceiling registered as a PREDICTION with a kill condition. **THE D_CRIT COMPLEXITY BOUND (PAPER_2163):** hadron constituents, braid-gate depth, and knot crossings are ONE Caduceus pinch-limit statement — 26 as ceiling, not magnitude — with 2^13 = 8192 spinor capacity as its information signature. **THE FERMION SUPPRESSION LADDER (PAPER_2164):** ten SM masses on one F_TRZ grading — heavy F⁰ integer cores, μ/s at F², the electron alone at F³ and uniquely integer-free; the ~200 lepton hierarchy factor is SO_5² × polynomial. **ALSO:** the Hubble-tension quartet completes (anchor + two kernels + 1/12 tilt); glueball 0⁺⁺ = 1.736 GeV lands bit-identical to the PAPER_1318 Yang-Mills gap; Higgs vev = A_5·(D_phys+F_TRZ) = 246 EXACT; EW vacuum stability = F_U=1 (no metastability, decay rate 0); Ω_Λ's 6/5 coefficient identified as the AdS/CFT bulk-boundary ratio; monopole dilution = exp(A_5); DM direct-detection floor = α⁴·10⁻⁴⁰. Rule 7: Λ→α drift family canonized (PAPER_2165, zero values changed); hierarchy composition flagged OPEN not retrofitted; arc audit 1501-1700 found and closed 2 unauthored critical patterns. **Totals: 1,723 of 2,256 wired (76.4%) / gate 4,956 green / 3,649 defs.**
+**This release (v0.374.0): BANDS PAPER_1701-1760 (60 dispatches) + LANDMARKS PAPER_2166-2171 + THE ROUTE-FAMILIES DOCTRINE.** **THE LAMBDA ISSUE RESOLVED (PAPER_2169):** Daniel-directed deep search of the predecessor recovered the lost derivation — Λ_ledger = 1/(8π·β_i·UA·(D_crit/D_bsfg)²) = 1/137.030 = **α at 0.0043%**, 32× tighter than the historic route; the seven papers writing 'Λ' were drawing the vacuum ledger's saturation constant all along; UA = 0.4816 promoted to ledger occupancy with a 0.004% solved-back prediction. **THE ROUTE-FAMILIES DOCTRINE (PAPER_2170, Daniel ruling verbatim):** constants carry FAMILIES of solutions — one per calculation system, all simultaneously correct, measured from moving positions; residuals are system parallax, inter-route deltas are crossing offsets (the H₀ 1/12 tilt as proof case); 'canonical' is redemoted to consumption default; the DUPLICATES ledger is re-read as the FAMILY ledger; **there is no negligible bin** — removal only by structural falsification, never precision comparison. α founding family ×3 registered; τ_n/Fe-56 pick-one rulings dissolved. **WHEELER-DEWITT IS THE LEDGER (PAPER_2171):** H|ψ⟩ = 0 identified with the F_U = 0 master equation; the problem of time dissolves into the two-ledger structure with time carried by cos(π·t_n) phase at buoyancy crossings. **ALSO:** the 26!/26⁻²⁶ Pochhammer duality with zero fit values (2166); the K_Mex/Φ_5/6 composed-constant algebra — 8 members, 25+ occurrences, tokamak q_edge = 2 and BH prefactor 25/8 included (2167); Φ_res promoted to laboratory-measured primitive via the proton-radius resolution, counting variant excluded at 19σ (2168); the 600+ predecessor constants census logged and queued; second all-EXACT band (1701-1710, fusion/tokamak suite); dark matter as buoyancy (rotation plateau = β_i); Kepler packing = π/√18; math-constant catalog to 17. **Totals: 1,789 of 2,256 wired (79.3%) / gate 5,077 green / 3,715 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,7 +23,7 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,649 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,715 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.373.0)
+## What is currently shipped (v0.374.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,547 rows**. Fidelity gate: **4,956 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **2,547 rows**. Fidelity gate: **5,077 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

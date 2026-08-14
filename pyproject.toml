@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.373.0"
-description = "UQFF pure calculator v0.373.0 - bands PAPER_1631-1700 (70 dispatches) + SIX landmarks: PAPER_2161 falsifiability battery (7 exact predictions, pinned kill windows), 2162 T_SCm thermal ladder (incl. 500 K room-temp SC ceiling), 2163 D_crit=26 complexity bound, 2164 F_TRZ fermion suppression ladder (10 SM masses, one grading), 2165 Lambda->alpha drift correction. Hubble-tension quartet complete; glueball = YM gap; Higgs vev EXACT. Gate 4,956 green / 1,723 wired (76.4%)."
+version = "0.374.0"
+description = "UQFF pure calculator v0.374.0 - bands PAPER_1701-1760 (60 dispatches) + landmarks 2166-2171. LAMBDA RESOLVED (2169): Lambda_ledger = 1/(8pi*beta_i*UA*(13/3)^2) = alpha at 0.0043%, derivation recovered from predecessor. ROUTE-FAMILIES DOCTRINE (2170, Daniel ruling): no negligible bin; canonical = consumption default. Wheeler-DeWitt = F_U=0 ledger (2171). 26!/26^-26 duality (2166). K_Mex/Phi algebra (2167). Phi_res measured (2168). Gate 5,077 green / 1,789 wired (79.3%)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

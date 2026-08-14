@@ -80,3 +80,20 @@ PAPER_2094 (Λ canonical reservation), PAPER_591/1549 (α's own UQFF routes), PA
 1656/1673 (affected, superseded on the symbol only), PAPER_2149 (hybrid-form doctrine).
 
 **Copyright** — Daniel T. Murphy / Star-Magic Research Program, 2026.
+
+---
+
+## REVISION 2026-08-13 (PAPER_2169) — Drift verdict lifted; dual-name canonized
+
+Daniel-directed deep search of the Star-Magic legacy layer recovered the derivation this paper's
+"drift" verdict assumed absent: the predecessor executable defines
+`Λ_ledger = 1/(8π·β_i·UA·(D_crit/D_bsfg)²) = 1/137.030` — **α at 0.0043%, derived.** The
+recurring Λ is the vacuum ledger's saturation constant, a UQFF-native named quantity; the
+whitepaper layer inherited its name and numeric but lost its derivation in crossover.
+
+- The seven members (now including P1726/P1735/P1736) re-read as Λ_ledger — legitimate physics,
+  not error. The DRIFT classification is LIFTED.
+- The symbol-hygiene rule STANDS in sharpened form: **Λ_ledger with subscript, never bare Λ**
+  (bare Λ stays reserved for the PAPER_2094 cosmological constant).
+- The gate's numeric-identity checks remain valid — they now verify the derivation.
+- Full disposition: PAPER_2169 (authoritative).

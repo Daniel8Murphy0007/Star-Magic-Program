@@ -1650,3 +1650,15 @@ BAND_1681_1690,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.373.0
 LANDMARK_2163,n/a,n/a,NOT_APPLICABLE,family landmark,v0.373.0
 BAND_1691_1700,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.373.0
 LANDMARK_2164_2165,n/a,n/a,NOT_APPLICABLE,family landmarks,v0.373.0
+BAND_1701_1710,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+LANDMARK_2166,n/a,n/a,NOT_APPLICABLE,duality landmark,v0.374.0
+BAND_1711_1720,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+LANDMARK_2167,n/a,n/a,NOT_APPLICABLE,algebra landmark,v0.374.0
+BAND_1721_1730,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+LANDMARK_2168,n/a,n/a,NOT_APPLICABLE,primitive-observability landmark,v0.374.0
+BAND_1731_1740,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+LANDMARK_2169,n/a,n/a,NOT_APPLICABLE,recovery landmark,v0.374.0
+LANDMARK_2170,n/a,n/a,NOT_APPLICABLE,doctrine landmark,v0.374.0
+BAND_1741_1750,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+LANDMARK_2171,n/a,n/a,NOT_APPLICABLE,identity landmark,v0.374.0
+BAND_1751_1760,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
