@@ -39,3 +39,19 @@ Standard frameworks address this differently. UQFF supplies a structural integer
 ---
 
 **Copyright** — Daniel T. Murphy, daniel.murphy00@gmail.com, June 18, 2026, Youngstown OH.
+
+---
+
+## REVISION 2026-08-13 — Title drift corrected; derivation restored (Daniel catch)
+
+**"DM" in this paper's title is a compression drift of "Bucket D."** The source, PAPER_1441, is
+"UQFF: Lithium-7 BBN Problem (Bucket D)" — this observable is the **lithium-7 suppression
+factor**, not dark matter. The derivation, dropped in compression, is:
+
+```
+suppression = 1/σ_Li7 = 1/(D_phys·F_TRZ·Φ_5/6) = 3   EXACT, zero free parameters
+```
+
+(PAPER_2158's reciprocal statement / PAPER_1227.) The "observed 3.125" is 1/0.32 — the
+reciprocal of the measured survival fraction (Sbordone 0.316 ± 0.070); the derived 3 sits at
++0.25σ. Dispatch rewired accordingly; registry superseded by `li7_suppression_derived`.

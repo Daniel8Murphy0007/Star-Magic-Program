@@ -6045,3 +6045,44 @@ galaxy_types,WHITEPAPER,derived,,,4,EXACT,,astro,,PAPER_1757,,,,,,WIRED
 galaxy_subtypes,WHITEPAPER,derived,,,24,EXACT,,astro,,PAPER_1758,,,,,,WIRED
 baryon_fraction,WHITEPAPER,derived,,,0.5024,0.48%,,cosmology,,PAPER_1759,,,,,,WIRED
 z_reionization,WHITEPAPER,derived,,,6.944,0.79%; 125/18,,cosmology,,PAPER_1760,,,,,,WIRED
+t21_edges,WHITEPAPER,derived,,,-289.39,0.14%,,cosmology,,PAPER_1761,,,,,,WIRED
+sf_efficiency,WHITEPAPER,derived,,,1.7361,0.79%; 125/72 recurrence noted,,astro,,PAPER_1762,,,,,,WIRED
+hubble_bubble,WHITEPAPER,derived,,,-0.301,0.48%; tension family member,,cosmology,,PAPER_1763,,,,,,WIRED
+rvb_threshold,WHITEPAPER,derived,,,0.5024,= f_bar bit-identical,,condensed,,PAPER_1764,,,,,,WIRED
+frustration_dim,WHITEPAPER,derived,,,5,EXACT,,condensed,,PAPER_1765,,,,,,WIRED
+gw_memory_fraction,WHITEPAPER,derived,,,0.0603,EXACT; = ee fraction,,gw,,PAPER_1766,,,,,,WIRED
+schwinger_enhanced,WHITEPAPER,derived,,,1.2197e18,0.026%,,qed,,PAPER_1767,,,,,,WIRED
+t_neg_canonical,WHITEPAPER,derived,,,-2512,EXACT PAPER_597,,foundations,,PAPER_1768,,,,,,WIRED
+sphaleron_scale,WHITEPAPER,derived,,,0.875,EXACT 7/8,,particle,,PAPER_1769,,,,,,WIRED
+dm_suppression,WHITEPAPER,derived,,,3 vs 25/8,4.0% honest-wide; H-member crossing,,bsm,,PAPER_1770,,,,,,WIRED
+li7_suppression_derived,WHITEPAPER,derived,SUPERSEDES dm_suppression row (title-drift remediation 2026-08-13),,3 EXACT,1/(D_phys*F_TRZ*Phi_5/6) = 1/sigma_Li7; obs 1/0.32 (+0.25 sigma),5.2,nuclear,,PAPER_1770,,,,,,WIRED
+uqff_dark_matter_sector,WHITEPAPER,derived,,,Omega_m=24/75; sterile 7 keV; 3.5 keV line,"sector consolidated, 17 members",1.6,dark-matter,,PAPER_2172,,,,,,WIRED
+d_crit_registration,WHITEPAPER,derived,,,26,EXACT,,foundations,,PAPER_1771,,,,,,WIRED
+nfw_c_vir_paired,WHITEPAPER,derived,,,9.9519,0.019%; P1653 family,,cosmology,,PAPER_1772,,,,,,WIRED
+sf_efficiency_res,WHITEPAPER,derived,,,1.75,EXACT 7/4; variant discrimination,,astro,,PAPER_1773,,,,,,WIRED
+gw_memory_paired,WHITEPAPER,derived,,,0.0603,EXACT; P1766 family,,gw,,PAPER_1774,,,,,,WIRED
+u_ua_canonical,WHITEPAPER,derived,,,1e-4,EXACT; SO_5^-4,,foundations,,PAPER_1775,,,,,,WIRED
+bertrand_p,WHITEPAPER,derived,,,0.25,EXACT,,math,,PAPER_1776,,,,,,WIRED
+z_reion_res,WHITEPAPER,derived,,,7.0,9% honest; family w P1760,,cosmology,,PAPER_1777,,,,,,WIRED
+r_aa_qgp,WHITEPAPER,derived,,,0.2083,4.2% honest,,qgp,,PAPER_1778,,,,,,WIRED
+e_ankle,WHITEPAPER,derived,,,3.617e18,0.48%; D_crit^7,,astro,,PAPER_1779,,,,,,WIRED
+t_cnub,WHITEPAPER,derived,,,1.952,PREDICTION; 8th ledger consumer,,cosmology,,PAPER_1780,,,,,,WIRED
+phi_variant_census,WHITEPAPER,derived,,,"11 decisive, 0 inversions",sector rule theorem-grade,0.0,foundations,,PAPER_2173,,,,,,WIRED
+szilard_landauer,WHITEPAPER,derived,,,ln2,EXACT,,information,,PAPER_1781,,,,,,WIRED
+solar_nu_e_fraction,WHITEPAPER,derived,,,1/3,EXACT; 4th role,,particle,,PAPER_1782,,,,,,WIRED
+hale_cycle,WHITEPAPER,derived,,,22,EXACT; 4th role,,solar,,PAPER_1783,,,,,,WIRED
+su3_colors,WHITEPAPER,derived,,,3,EXACT,,qcd,,PAPER_1784,,,,,,WIRED
+delta_cp_paired,WHITEPAPER,derived,,,-pi/2,EXACT; battery pair,,particle,,PAPER_1785,,,,,,WIRED
+spin_hall,WHITEPAPER,derived,,,e2/h,EXACT quantized,,condensed,,PAPER_1786,,,,,,WIRED
+jamming_paired,WHITEPAPER,derived,,,2/3,0.40%; 2/3 class,,condensed,,PAPER_1787,,,,,,WIRED
+ee_paired,WHITEPAPER,derived,,,0.0603,EXACT; 3rd wiring,,biology,,PAPER_1788,,,,,,WIRED
+n_codons,WHITEPAPER,derived,,,64,EXACT; 2^D_bsfg,,biology,,PAPER_1789,,,,,,WIRED
+n_amino,WHITEPAPER,derived,,,20,EXACT; 2*SO_5,,biology,,PAPER_1790,,,,,,WIRED
+l_qg_scale,WHITEPAPER,derived,,,2.21e-35,EXACT formula,,qg,,PAPER_1791,,,,,,WIRED
+m_t_over_m_e,WHITEPAPER,derived,,,338665,0.17%; ladder span,,particle,,PAPER_1792,,,,,,WIRED
+majorana_lnv,WHITEPAPER,derived,,,F_TRZ,EXACT; 0nubb PREDICTION,,particle,,PAPER_1793,,,,,,WIRED
+high_tc_paired,WHITEPAPER,derived,,,124.98,ladder rung 1 pair,,condensed,,PAPER_1794,,,,,,WIRED
+kk_boundary_paired,WHITEPAPER,derived,,,5,EXACT pair,,holography,,PAPER_1795,,,,,,WIRED
+bao_cabibbo_dual,WHITEPAPER,derived,,,4 closures,0.0075-0.027%; Lagrangian-derived,,cosmology+weak,,PAPER_1800,,,,,,WIRED
+biological_lattice,WHITEPAPER,derived,,,64/20 codes + setpoints,counting-sector; no teleology,0.0,biology,,PAPER_2174,,,,,,WIRED
+sector_pair_method,WHITEPAPER,method,,,"3 instances, 4 live routes",standing derivation method,0.0,foundations,,PAPER_2175,,,,,,WIRED

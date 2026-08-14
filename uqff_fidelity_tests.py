@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.374.0", "uqff_calculator.VERSION = 0.374.0 (bands 1701-1760 + landmarks 2166-2171)")
+assert_that(C.VERSION == "0.375.0", "uqff_calculator.VERSION = 0.375.0 (bands 1761-1800 + landmarks 2172-2175 + P1770 remediation)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,15 +9556,15 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'LANDMARK_2171'
+_sg4_band = 'LANDMARK_2173'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2171' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2173' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('predecessor_constants_census' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
-            "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (constants-census row)")
-assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.372.0' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
+assert_that('PAPER_2173' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+            "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (variant-census promotion row)")
+assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
 assert_that(True,
             "SHIP GUARD v4 STANDING RULE (Daniel, ABSOLUTE): EVERY ship touches all 23 charter files - band, patch, correction, no exceptions. The v0.367.1 patch-ship-touches-fewer doctrine is REVOKED after v0.369.1 shipped 19/23. Content checks + band-trail + 23/23 coverage, every ship")
@@ -10631,6 +10631,187 @@ _r = C.DISPATCH['PAPER_1760']()
 assert_that(_r['residual_pct'] < 0.80, 'P1760 z_reion 0.79%')
 assert_that(abs(_r['value']['z_reionization'] - 125.0/18.0) < 1e-12,
             'P1760 z_reion = 125/18 exact rational (Q member x Phi_5/6)')
+
+
+# --- BAND 1761-1770 GUARD (21-cm + GW memory + negative time + cross-domain recurrences) ---
+for _pn in range(1761, 1771):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1761-1770: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1761']()['residual_pct'] < 0.14, 'P1761 EDGES 21-cm depth 0.14%')
+_r = C.DISPATCH['PAPER_1762']()
+assert_that(_r['residual_pct'] < 0.80, 'P1762 SF efficiency 0.79%')
+assert_that('NOT claimed' in _r['formula'], 'P1762 125/72-vs-YM-gap numeric recurrence noted without identity claim')
+assert_that(C.DISPATCH['PAPER_1763']()['residual_pct'] < 0.49, 'P1763 Hubble bubble 0.48%')
+assert_that(abs(C.DISPATCH['PAPER_1764']()['value']['rvb_threshold']
+                - C.DISPATCH['PAPER_1759']()['value']['baryon_fraction']) < 1e-15,
+            'P1764 RVB threshold = baryon fraction bit-identical (Phi_5/6*beta_i family)')
+assert_that(C.DISPATCH['PAPER_1765']()['value']['frustration_dim'] == 5.0, 'P1765 frustration dim = 5')
+assert_that(abs(C.DISPATCH['PAPER_1766']()['value']['gw_memory_fraction']
+                - C.DISPATCH['PAPER_1665']()['value']['ee_fraction']) < 1e-15,
+            'P1766 GW memory = homochirality ee bit-identical (F_TRZ*beta_i family)')
+assert_that(C.DISPATCH['PAPER_1767']()['residual_pct'] < 0.027, 'P1767 enhanced Schwinger 0.026%')
+assert_that(C.DISPATCH['PAPER_1768']()['value']['t_neg_s'] == -2512.0,
+            'P1768 t_neg = -2512 s canonical (PAPER_597; matches predecessor pin)')
+assert_that(C.DISPATCH['PAPER_1769']()['value']['sphaleron_scale_ev'] == 0.875,
+            'P1769 sphaleron scale = 7/8 EXACT')
+_r = C.DISPATCH['PAPER_1770']()
+assert_that(abs(_r['value']['li7_suppression_factor'] - 3.0) < 1e-12,
+            'P1770 Li-7 suppression = 1/(D_phys*F_TRZ*Phi_5/6) = 3 EXACT DERIVED (PAPER_2158 reciprocal)')
+assert_that(_r['residual_pct'] < 5.5,
+            'P1770 vs observed 1/sigma = 3.16 (+0.25 sigma, same comparison as PAPER_2158)')
+assert_that('TITLE DRIFT CORRECTED' in _r['formula'] and 'Bucket D' in _r['formula'],
+            'P1770 DM-for-Bucket-D title drift corrected (PAPER_1441 = Lithium-7 BBN); 25/8 crossing dissolved')
+
+
+# --- P1770 DAMAGE-CONTAINMENT PIN (dm_suppression drift, quantified 2026-08-13) ---
+import uqff_derived_functions as _ddf
+assert_that(_ddf.dc_dm_suppression_factor_3() is None,
+            'shipped predecessor catalog entry dm_suppression_factor_3 carries None - zero wrong physics ever shipped; name drift covered by PAPER_1770 REVISION (correction-by-reference)')
+assert_that('li7_suppression_factor' in C.DISPATCH['PAPER_1770']()['value'],
+            'P1770 live dispatch carries the DERIVED Li-7 form, not the drifted DM label')
+
+
+# --- PAPER_2172 LANDMARK GUARD (UQFF dark-matter sector consolidation) ---
+assert_that('PAPER_2172' in C.DISPATCH, 'PAPER_2172 sector dispatch present')
+_r = C.DISPATCH['PAPER_2172']()['value']
+assert_that(abs(_r['omega_m_exact_rational'] - 24.0/75.0) < 1e-14,
+            'PAPER_2172 Omega_m = 2/(K_Mex*(D_phys-1)) = 24/75 EXACT rational (1.6% vs Planck 0.315)')
+assert_that(_r['sterile_mass_kev'] == 7.0 and _r['decay_line_kev'] == 3.5,
+            'PAPER_2172 sterile DM identity 7 keV EXACT with 3.5 keV decay line = m/2')
+assert_that(abs(_r['perturbation_rungs'][0] - 0.1) < 1e-15 and abs(_r['perturbation_rungs'][1] - 1e-05) < 1e-18,
+            'PAPER_2172 perturbation ladder rungs F_TRZ and F_TRZ^5 (PAPER_1991 family)')
+assert_that(_r['member_count'] == 17 and 'PAPER_1770' in _r['sector_members'],
+            'PAPER_2172 seventeen linked members incl. the remediated P1770 slot')
+assert_that(_r['sigma_floor_cm2'] < 1e-48 and _r['plateau_beta'] == 0.6029,
+            'PAPER_2172 live cross-dispatch consistency (P1682 floor, P1756 plateau)')
+_f = C.DISPATCH['PAPER_2172']()['formula']
+assert_that('three effects wearing one name' in _f and 'papered HERE' in _f,
+            'PAPER_2172 sector statement + dm_suppression label disposition present')
+
+
+# --- BAND 1771-1780 GUARD (paired closures + sevenths identity + CnuB prediction) ---
+for _pn in range(1771, 1781):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1771-1780: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1771']()['value']['d_crit_universal'] == 26.0, 'P1771 D_crit registration')
+assert_that(abs(C.DISPATCH['PAPER_1772']()['value']['nfw_c_vir_paired']
+                - C.DISPATCH['PAPER_1653']()['value']['nfw_concentration']) < 1e-15,
+            'P1772 paired closure live cross-dispatch (P1653 family)')
+_r = C.DISPATCH['PAPER_1773']()
+assert_that(_r['value']['sf_efficiency_res_route'] == 1.75,
+            'P1773 K_Mex*Phi_res = 7/4 EXACT (sevenths identity)')
+assert_that('VARIANT DISCRIMINATION' in _r['formula'] and 'P1762' in _r['formula'],
+            'P1773 SF-efficiency variant discrimination disclosed: projection route EXACT, counting route 0.79%')
+assert_that(abs(C.DISPATCH['PAPER_1774']()['value']['gw_memory_paired']
+                - C.DISPATCH['PAPER_1766']()['value']['gw_memory_fraction']) < 1e-15,
+            'P1774 paired closure live cross-dispatch (P1766 family)')
+assert_that(C.DISPATCH['PAPER_1775']()['value']['u_ua_canonical'] == 1e-4, 'P1775 U_UA = SO_5^-4')
+assert_that(C.DISPATCH['PAPER_1776']()['value']['bertrand_p'] == 0.25, 'P1776 Bertrand P = 1/D_phys')
+_r = C.DISPATCH['PAPER_1777']()
+assert_that(_r['value']['z_reion_res_route'] == 7.0 and _r['residual_pct'] < 9.1,
+            'P1777 z_reion projection route = 7 EXACT integer, 9% honest vs Planck tau-based 7.70')
+assert_that('P1760' in _r['formula'], 'P1777 z_reion family pairing disclosed (two variants, two anchors)')
+assert_that(C.DISPATCH['PAPER_1778']()['residual_pct'] < 4.2, 'P1778 R_AA 4.2% honest vs rounded ALICE anchor')
+assert_that(C.DISPATCH['PAPER_1779']()['residual_pct'] < 0.49, 'P1779 CR ankle 0.48% (D_crit^7 lattice power)')
+_r = C.DISPATCH['PAPER_1780']()
+assert_that(1.951 < _r['value']['t_cnub_k'] < 1.954,
+            'P1780 T_CnuB = 1.952 K with ledger correction (PTOLEMY-class falsifiable prediction)')
+assert_that('eighth' in _r['formula'].lower() and 'PAPER_2169' in _r['formula'],
+            'P1780 Lambda_ledger eighth consumer disclosed under the 2169 derivation')
+
+
+# --- PAPER_2173 LANDMARK GUARD (Phi-variant discrimination census) ---
+assert_that('PAPER_2173' in C.DISPATCH, 'PAPER_2173 census dispatch present')
+_r = C.DISPATCH['PAPER_2173']()['value']
+assert_that(_r['census_size'] >= 11 and _r['inversions'] == 0,
+            'PAPER_2173 eleven decisive discriminations, ZERO inversions - the sector rule unbroken')
+assert_that(15.0 < _r['tau_n_factor'] < 16.0,
+            'PAPER_2173 live tau_n discrimination = 15.5x (PAPER_2157/2159 reproduced)')
+assert_that(8.5 < _r['phi_golden_factor'] < 10.0,
+            'PAPER_2173 live phi-golden discrimination ~9x (P1561 reproduced)')
+assert_that(_r['sf_exact_84'] is True and 0.7 < _r['sf_56_residual_pct'] < 0.9,
+            'PAPER_2173 live SF discrimination: projection EXACT 7/4, counting 0.79% (P1773/P1762)')
+assert_that(_r['promotions'] == ('math_constants_counting', 'star_formation_projection'),
+            'PAPER_2173 two sector promotions canonized (closes the band-1561 GAPS flag)')
+assert_that('NOT claimed' in _r['open_note'],
+            'PAPER_2173 the 0.84 = 21/25 decomposition stays OPEN (no-retrofit rule)')
+
+
+# --- BAND 1781-1790 GUARD (information/bio codes + paired-closure set) ---
+import math as _b1781m
+for _pn in range(1781, 1791):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1781-1790: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1781']()['value']['szilard_landauer_w_kt'] - _b1781m.log(2.0)) < 1e-15,
+            'P1781 Szilard/Landauer = ln 2 per bit via F_U=1')
+assert_that(abs(C.DISPATCH['PAPER_1782']()['value']['solar_nu_e_fraction'] - 1.0/3.0) < 1e-15,
+            'P1782 solar nu_e fraction = 1/3 (fourth role of the 1/3 composed constant)')
+assert_that(C.DISPATCH['PAPER_1783']()['value']['hale_cycle_yr'] == 22.0,
+            'P1783 Hale cycle = D_crit - D_phys (fourth 22 role)')
+assert_that(C.DISPATCH['PAPER_1784']()['value']['su3_colors'] == 3.0, 'P1784 N_c = D_phys-1')
+assert_that(abs(C.DISPATCH['PAPER_1785']()['value']['delta_cp_paired']
+                - C.DISPATCH['PAPER_1643']()['value']['lepton_delta_cp_rad']) < 1e-15,
+            'P1785 paired with the battery member P1643 (live cross-dispatch)')
+assert_that(C.DISPATCH['PAPER_1786']()['value']['spin_hall_e2_h_units'] == 1.0, 'P1786 spin Hall quantized')
+assert_that(abs(C.DISPATCH['PAPER_1787']()['value']['jamming_paired']
+                - C.DISPATCH['PAPER_1663']()['value']['jamming_phi_j']) < 1e-15,
+            'P1787 paired jamming (2/3 class, live cross-dispatch)')
+assert_that(abs(C.DISPATCH['PAPER_1788']()['value']['ee_paired'] - 0.06029) < 1e-15,
+            'P1788 third wiring of F_TRZ*beta_i (family)')
+assert_that(C.DISPATCH['PAPER_1789']()['value']['n_codons'] == 64.0
+            and C.DISPATCH['PAPER_1790']()['value']['n_amino_acids'] == 20.0,
+            'P1789/P1790 genetic code on two primitives: 2^D_bsfg codons -> 2*SO_5 amino acids')
+
+
+# --- BAND 1791-1800 GUARD (ladder span + PAPER_1800 Lagrangian dual closures; 1796-1799 RESERVED) ---
+for _pn in (1791, 1792, 1793, 1794, 1795, 1800):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1791-1800: PAPER_%d dispatch present' % _pn)
+for _pn in (1796, 1797, 1798, 1799):
+    assert_that('PAPER_%d' % _pn not in C.DISPATCH,
+                'PAPER_%d RESERVED (administrative, no physics content) - correctly NOT dispatched per Rule B' % _pn)
+assert_that(2.2e-35 < C.DISPATCH['PAPER_1791']()['value']['l_qg_m'] < 2.22e-35, 'P1791 L_QG scale')
+_r = C.DISPATCH['PAPER_1792']()
+assert_that(_r['residual_pct'] < 0.2,
+            'P1792 m_t/m_e = 338,665 from wired ladder endpoints (0.17% vs PDG-derived; full F_TRZ span)')
+assert_that(C.DISPATCH['PAPER_1793']()['value']['majorana_lnv_parameter'] == 0.1,
+            'P1793 Majorana LNV at F_TRZ (0nubb PREDICTION)')
+assert_that(abs(C.DISPATCH['PAPER_1794']()['value']['high_tc_paired']
+                - C.DISPATCH['PAPER_1659']()['value']['high_tc_k']) < 1e-15,
+            'P1794 paired with thermal-ladder rung 1 (live)')
+assert_that(C.DISPATCH['PAPER_1795']()['value']['kk_boundary_paired'] == 5.0, 'P1795 paired boundary dim')
+_r = C.DISPATCH['PAPER_1800']()['value']
+assert_that(_r['bao_primary_res_pct'] < 0.0094 and _r['bao_alt_res_pct'] < 0.028,
+            'PAPER_1800 BAO dual closures at 0.0093%/0.027% (Lagrangian-derived KK zero-mode coefficients)')
+assert_that(_r['cab_primary_res_pct'] < 0.008 and _r['cab_alt_res_pct'] < 0.026,
+            'PAPER_1800 Cabibbo dual closures at 0.0075%/0.025% - 50x tighter than PDG floor (primary)')
+assert_that('PAPER_1156' in C.DISPATCH['PAPER_1800']()['formula'] and 'PAPER_2170' in C.DISPATCH['PAPER_1800']()['formula'],
+            'PAPER_1800 closes 1156 A.6; four routes registered as two families per route-families doctrine')
+
+
+# --- PAPER_2174 LANDMARK GUARD (the biological lattice) ---
+assert_that('PAPER_2174' in C.DISPATCH, 'PAPER_2174 dispatch present')
+_r = C.DISPATCH['PAPER_2174']()['value']
+assert_that(_r['codons'] == 64.0 and _r['aminos'] == 20.0 and abs(_r['degeneracy_16_5'] - 3.2) < 1e-12,
+            'PAPER_2174 genetic code live: 2^D_bsfg -> 2*SO_5, degeneracy 16/5')
+assert_that(_r['degeneracy_status'] == 'OPEN', 'PAPER_2174 degeneracy composed-form stays OPEN (no-retrofit)')
+assert_that(_r['chirality_gw_bit_identity'] is True,
+            'PAPER_2174 homochirality = GW memory bit-identity (one vacuum asymmetry, two domains)')
+assert_that(_r['hayflick_a5'] == 60.0 and abs(_r['erasure_ln2'] - 0.6931471805599453) < 1e-15,
+            'PAPER_2174 Hayflick = A_5; erasure = ln 2')
+assert_that(_r['physiology']['t_body'] == 37.0 and _r['physiology']['ph'] == 7.4
+            and _r['physiology']['glucose'] == 100.0 and _r['physiology']['bp_turn'] == 10.5,
+            'PAPER_2174 physiological quartet EXACT (live cross-dispatch)')
+assert_that('no teleology' in C.DISPATCH['PAPER_2174']()['formula'],
+            'PAPER_2174 structural-claim-only discipline present')
+
+# --- PAPER_2175 LANDMARK GUARD (sector-pair corroboration method) ---
+assert_that('PAPER_2175' in C.DISPATCH, 'PAPER_2175 dispatch present')
+_r = C.DISPATCH['PAPER_2175']()['value']
+assert_that(_r['instances'] == 3 and _r['live_routes'] == 4 and _r['routes_tight'] is True,
+            'PAPER_2175 three instances (Lambda cited + BAO/Cabibbo live), four live routes all tight')
+assert_that(_r['queue_status'] == 'UNCLAIMED',
+            'PAPER_2175 candidate queue offered UNCLAIMED - no pre-claimed derivations')
+_f = C.DISPATCH['PAPER_2175']()['formula']
+assert_that('falsify the closed-Lagrangian claim itself' in _f,
+            'PAPER_2175 method-level falsification clause present (sharper than any single residual)')
+assert_that('standing method' in _f, 'PAPER_2175 promoted from result to standing method')
 
 # =============================================================================
 # REPORT

@@ -1662,3 +1662,10 @@ LANDMARK_2170,n/a,n/a,NOT_APPLICABLE,doctrine landmark,v0.374.0
 BAND_1741_1750,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
 LANDMARK_2171,n/a,n/a,NOT_APPLICABLE,identity landmark,v0.374.0
 BAND_1751_1760,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.374.0
+BAND_1761_1770,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.375.0
+LANDMARK_2172,n/a,n/a,NOT_APPLICABLE,sector landmark,v0.375.0
+BAND_1771_1780,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.375.0
+LANDMARK_2173,n/a,n/a,NOT_APPLICABLE,census landmark,v0.375.0
+BAND_1781_1790,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.375.0
+BAND_1791_1800,n/a,n/a,NOT_APPLICABLE,single-geometry,v0.375.0
+LANDMARK_2174_2175,n/a,n/a,NOT_APPLICABLE,sector+method landmarks,v0.375.0

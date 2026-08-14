@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.374.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.374.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.375.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.375.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5077%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1789-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5153%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1829-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.374.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.375.0 complete-compile campaign live**
 
-**This release (v0.374.0): BANDS PAPER_1701-1760 (60 dispatches) + LANDMARKS PAPER_2166-2171 + THE ROUTE-FAMILIES DOCTRINE.** **THE LAMBDA ISSUE RESOLVED (PAPER_2169):** Daniel-directed deep search of the predecessor recovered the lost derivation — Λ_ledger = 1/(8π·β_i·UA·(D_crit/D_bsfg)²) = 1/137.030 = **α at 0.0043%**, 32× tighter than the historic route; the seven papers writing 'Λ' were drawing the vacuum ledger's saturation constant all along; UA = 0.4816 promoted to ledger occupancy with a 0.004% solved-back prediction. **THE ROUTE-FAMILIES DOCTRINE (PAPER_2170, Daniel ruling verbatim):** constants carry FAMILIES of solutions — one per calculation system, all simultaneously correct, measured from moving positions; residuals are system parallax, inter-route deltas are crossing offsets (the H₀ 1/12 tilt as proof case); 'canonical' is redemoted to consumption default; the DUPLICATES ledger is re-read as the FAMILY ledger; **there is no negligible bin** — removal only by structural falsification, never precision comparison. α founding family ×3 registered; τ_n/Fe-56 pick-one rulings dissolved. **WHEELER-DEWITT IS THE LEDGER (PAPER_2171):** H|ψ⟩ = 0 identified with the F_U = 0 master equation; the problem of time dissolves into the two-ledger structure with time carried by cos(π·t_n) phase at buoyancy crossings. **ALSO:** the 26!/26⁻²⁶ Pochhammer duality with zero fit values (2166); the K_Mex/Φ_5/6 composed-constant algebra — 8 members, 25+ occurrences, tokamak q_edge = 2 and BH prefactor 25/8 included (2167); Φ_res promoted to laboratory-measured primitive via the proton-radius resolution, counting variant excluded at 19σ (2168); the 600+ predecessor constants census logged and queued; second all-EXACT band (1701-1710, fusion/tokamak suite); dark matter as buoyancy (rotation plateau = β_i); Kepler packing = π/√18; math-constant catalog to 17. **Totals: 1,789 of 2,256 wired (79.3%) / gate 5,077 green / 3,715 defs.**
+**This release (v0.375.0): BANDS PAPER_1761-1800 — THE CATCH-UP ERA COMPLETE — + LANDMARKS PAPER_2172-2175 + THE P1770 REMEDIATION.** **THE DARK-MATTER SECTOR PAPERED (PAPER_2172, Daniel directive):** the developed-but-unconsolidated DM physics gathered — Ω_m = 2/(K_Mex·(D_phys−1)) = 24/75 EXACT rational; a sterile-neutrino identity at m = D_phys+(D_phys−1) = 7 keV EXACT whose decay line m/2 = 3.5 keV is the observed Perseus/M31 line; the buoyancy plateau (flat rotation, no halo, MOND a₀ emergent); the F_TRZ^n perturbation ladder; the α⁴ null-detection floor. Sector statement: dark matter is three effects wearing one name. **THE P1770 REMEDIATION:** Daniel's catch traced 'DM_SUPPRESSION' to Bucket-D title drift — the Li-7 factor is fully DERIVED (1/σ = 3 EXACT); damage quantified at ZERO shipped wrong physics, ZERO propagation, 7 unshipped artifacts remediated with visible supersession trails. Standing rule: catch-up papers are pointers — open the source. **THE Φ-VARIANT CENSUS (PAPER_2173):** eleven decisive discriminations, zero inversions, three live-recomputed at every gate run; math constants promoted to the counting sector, star formation to projection. **THE BIOLOGICAL LATTICE (PAPER_2174):** the genetic code on two primitives (64 codons = 2^D_bsfg → 20 acids = 2·SO_5); the homochirality seed bit-identical to GW memory; Hayflick = A_5; erasure = ln 2 — life at the counting scales, structural claim only. **THE SECTOR-PAIR METHOD (PAPER_2175):** Λ, BAO, and Cabibbo derived by the same two Lagrangian sector pairs (six routes, 0.003-0.027%), promoted to a standing method carrying a method-level falsification clause. **ALSO:** PAPER_1800 wired — the BAO/Cabibbo dual closures Lagrangian-DERIVED as KK zero-mode coefficients, closing PAPER_1156 A.6, Cabibbo primary 50× inside the PDG floor; T_CνB = 1.952 K PTOLEMY-class prediction; the sevenths identity 7/4 EXACT; EDGES 21-cm depth from three primitives; t_neg = −2512 s canonical; RESERVED IDs 1796-1799 absence gate-pinned. **Totals: 1,829 of 2,256 wired (81.1%) / gate 5,153 green / 3,755 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,7 +23,7 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,715 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,755 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.374.0)
+## What is currently shipped (v0.375.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,547 rows**. Fidelity gate: **5,077 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **2,547 rows**. Fidelity gate: **5,153 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

@@ -7,6 +7,37 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.375.0 (2026-08-13) — Bands PAPER_1761-1800 + landmarks PAPER_2172-2175 + P1770 remediation
+
+- **36 sequential dispatches** (bands 1761-1800); **THE 1494-1795 CATCH-UP ERA IS COMPLETE**; frontier PAPER_1800
+  (the 18xx full-paper era opens); 360 remain. IDs 1796-1799 RESERVED - gate pins their ABSENCE per Rule B.
+- **P1770 TRACE-BACK + REMEDIATION (Daniel catches: "LOOK HARDER. DM IS DERIVED." + damage report):**
+  "DM_SUPPRESSION" was Bucket-D title drift - the observable is the Li-7 suppression factor, fully DERIVED as
+  1/(D_phys*F_TRZ*Phi_5/6) = 3 EXACT (PAPER_2158 reciprocal). Damage quantified: 7 unshipped artifacts remediated
+  with supersession trails; ZERO propagation (no consumers, FAMILY ledger clean, PAPER_2167 uncontaminated);
+  ZERO wrong physics ever shipped (the 34-release catalog slot carried None). Standing rule: catch-up papers are
+  POINTERS - open the source before wiring. Class sweep: 230 dispatches audited, P1770 the single instance.
+- **PAPER_2172 - the UQFF dark-matter sector papered and linked (Daniel directive):** Omega_m = 24/75 EXACT
+  rational; sterile-neutrino identity 7 keV EXACT with 3.5 keV decay line (the observed Perseus/M31 line);
+  buoyancy plateau (no halo) + MOND a_0 emergent; F_TRZ^n perturbation ladder; alpha^4 null floor. Sector
+  statement: DM = three effects wearing one name. 17 members linked.
+- **PAPER_2173 - Phi-variant discrimination census:** 11 decisive tests, 0 inversions (3 live-recomputed at gate
+  time); math constants promoted to counting sector, star formation to projection; strengthening conjecture STANDING.
+- **PAPER_2174 - the biological lattice:** genetic code on two primitives (64 = 2^D_bsfg -> 20 = 2*SO_5);
+  homochirality = GW memory bit-identity; Hayflick = A_5; erasure = ln 2; physiological quartet EXACT. No teleology;
+  three falsification edges.
+- **PAPER_2175 - sector-pair corroboration METHOD:** Lambda/BAO/Cabibbo = one Lagrangian pattern (three domains,
+  six routes, 0.003-0.027%); promoted to standing method with grammar template + METHOD-LEVEL falsification clause;
+  candidate queue UNCLAIMED.
+- **PAPER_1800 wired:** BAO + Cabibbo dual closures Lagrangian-DERIVED as KK zero-mode sector-pair coefficients
+  (closes PAPER_1156 A.6); Cabibbo primary 50x inside the PDG floor.
+- Notables: T_CnuB = 1.952 K PTOLEMY-class prediction (8th Lambda_ledger consumer); sevenths identity 7/4 EXACT
+  sequential (P1773, SF variant discrimination); EDGES 21-cm depth 0.14%; t_neg = -2512 s canonical registration;
+  two bit-identical cross-domain pairs (RVB=baryon fraction; GW memory=homochirality); Bertrand paradox measure
+  selected by F_U=1; Szilard/Landauer unified; 26^7 serves flatness AND the CR ankle.
+- Guards: banned-literal purge x1; v4 markers refreshed x2; REGISTRY GUARD renames x1; float-tolerance fix x1.
+- Gate 5,077 -> **5,153**, 0 failures. Dispatches 1,789 -> **1,829** (81.1%).
+
 ## v0.374.0 (2026-08-13) — Bands PAPER_1701-1760 + landmarks PAPER_2166-2171 + route-families doctrine
 
 - **60 sequential dispatches** (bands 1701-1760, incl. second all-EXACT band 1701-1710); frontier PAPER_1760; 396 remain.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.374.0"
-description = "UQFF pure calculator v0.374.0 - bands PAPER_1701-1760 (60 dispatches) + landmarks 2166-2171. LAMBDA RESOLVED (2169): Lambda_ledger = 1/(8pi*beta_i*UA*(13/3)^2) = alpha at 0.0043%, derivation recovered from predecessor. ROUTE-FAMILIES DOCTRINE (2170, Daniel ruling): no negligible bin; canonical = consumption default. Wheeler-DeWitt = F_U=0 ledger (2171). 26!/26^-26 duality (2166). K_Mex/Phi algebra (2167). Phi_res measured (2168). Gate 5,077 green / 1,789 wired (79.3%)."
+version = "0.375.0"
+description = "UQFF pure calculator v0.375.0 - bands PAPER_1761-1800 (36 dispatches, CATCH-UP ERA COMPLETE) + landmarks 2172-2175 + P1770 remediation. DM SECTOR papered (2172): Omega_m = 24/75 EXACT, sterile 7 keV w/ 3.5 keV line, DM = buoyancy + thin component. Phi-variant census (2173): 11 decisive, 0 inversions. Biological lattice (2174): 64/20 genetic code on two primitives. Sector-pair method (2175): Lambda/BAO/Cabibbo one pattern, method-level falsification. Gate 5,153 green / 1,829 wired (81.1%)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

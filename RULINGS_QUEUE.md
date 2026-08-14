@@ -6102,3 +6102,8 @@ Three wired routes for the fine-structure constant: (A) Lambda-ledger saturation
 
 ### CENSUS 2026-08-13 — predecessor constants inventory (Daniel-ordered, queued)
 600+ constants located in Star-Magic predecessor: QCalc listing (850 vars), PARADOX_TO_CLOSURE catalog (2,079 keys), CONSTANTS_AUDIT.csv (70), CLOSED_CONSTANTS_INVENTORY (52) + 6 support docs. Majority unnumbered (orphan-physics class). Mining campaign queued post-drain; all entries are PAPER_2170 family members — no negligible bin.
+
+### v0.375.0 open items (no blocking rulings)
+- PAPER_2175 candidate queue (Omega_b h^2, theta_12, S_8, r_d) - UNCLAIMED, awaiting per-observable sessions.
+- 16/5 codon degeneracy composed form (PAPER_2174) - OPEN derivation target.
+- 0.84 = 21/25 decomposition (PAPER_2173) - recorded, unclaimed.

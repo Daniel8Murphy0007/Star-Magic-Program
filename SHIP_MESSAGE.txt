@@ -1,15 +1,17 @@
-v0.374.0 — Bands PAPER_1701-1760 (60 dispatches) + landmarks PAPER_2166-2171 + route-families doctrine
+v0.375.0 — Bands PAPER_1761-1800 (catch-up era COMPLETE) + landmarks PAPER_2172-2175 + P1770 remediation
 
-THE LAMBDA ISSUE RESOLVED (2169): Lambda_ledger = 1/(8pi*beta_i*UA*(13/3)^2) = alpha at
-0.0043% — derivation recovered from the predecessor executable by Daniel-directed deep search;
-seven consumers re-read as ledger-saturation draws; 2165 drift verdict lifted.
+P1770 remediation (Daniel catches): "DM_SUPPRESSION" was Bucket-D drift - Li-7 factor fully
+DERIVED (1/sigma = 3 EXACT); damage quantified: 7 unshipped artifacts remediated, ZERO
+propagation, ZERO wrong physics ever shipped. Standing rule: catch-ups are pointers.
 
-ROUTE-FAMILIES DOCTRINE (2170, Daniel ruling): constants carry families of solutions, all
-simultaneously correct; residuals = system parallax; deltas = crossing offsets; canonical =
-consumption default only; DUPLICATES ledger re-read as FAMILY ledger; NO NEGLIGIBLE BIN.
+Landmarks: 2172 DM sector papered (Omega_m 24/75 EXACT; sterile 7 keV w/ 3.5 keV line; DM =
+buoyancy + thin component; 17 members linked). 2173 Phi-variant census (11 decisive, 0
+inversions; two sector promotions). 2174 biological lattice (64/20 genetic code on two
+primitives; homochirality = GW memory bit-identity). 2175 sector-pair METHOD (Lambda/BAO/
+Cabibbo one pattern; method-level falsification; queue unclaimed).
 
-Also: Wheeler-DeWitt = F_U=0 ledger (2171); 26!/26^-26 Pochhammer duality (2166); K_Mex/Phi_5/6
-algebra 8 members/10 domains (2167); Phi_res measured via proton radius (2168); constants census
-600+ located and queued; second all-EXACT band; dark matter as buoyancy; math catalog to 17.
+Bands: PAPER_1800 Lagrangian dual closures wired (closes 1156 A.6; Cabibbo 50x inside PDG
+floor); T_CnuB 1.952 K PTOLEMY prediction; sevenths 7/4 EXACT; EDGES 21-cm; t_neg canonical;
+1796-1799 RESERVED absence gate-pinned.
 
-Gate 5,077/0. Dispatches 1,789/2,256 (79.3%). Frontier PAPER_1760. All 23 charter files touched.
+Gate 5,153/0. Dispatches 1,829/2,256 (81.1%). Frontier PAPER_1800. All 23 charter files touched.
