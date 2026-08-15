@@ -6107,3 +6107,14 @@ Three wired routes for the fine-structure constant: (A) Lambda-ledger saturation
 - PAPER_2175 candidate queue (Omega_b h^2, theta_12, S_8, r_d) - UNCLAIMED, awaiting per-observable sessions.
 - 16/5 codon degeneracy composed form (PAPER_2174) - OPEN derivation target.
 - 0.84 = 21/25 decomposition (PAPER_2173) - recorded, unclaimed.
+
+### Band 1811-1820 ruling request (2026-08-13) — delta_CP frame reconciliation
+P1643 (battery member) carries delta_CP = -pi/2 = 270 deg (maximal F_TRZ phase lock); P1816 (complete neutrino sector) carries delta_CP = 194.4 deg vs T2K/NOvA global-fit frame. Convention/frame difference or genuine route family? Both are wired; DUNE kill windows differ ([184,205] vs near-270). Ruling requested on which frame the battery member should reference.
+
+### RESOLVED 2026-08-13 — delta_CP frame question (self-resolved under PAPER_2170)
+Deep-read sorted it: P1816 carries its own composition pi*(1+K_Mex/D_crit) = 194.4 deg — a genuine second ROUTE, not a frame difference. Family registered (maximal-lock 270 + Mexican-hat 194.4); DUNE adjudicates within the family; battery member unchanged per A4 (its kill row is permanent either way, per the PAPER_2161 scorekeeping rule). No ruling needed — the route-families doctrine decides.
+
+### v0.376.0 open items (no blocking rulings)
+- PAPER_2176 exponent-21 prediction — UNCLAIMED until a matching ~1e-21 observable appears.
+- PAPER_2175 candidate queue (Omega_b h^2, theta_12, S_8, r_d) — still unclaimed.
+- 16/5 codon degeneracy + 0.84 = 21/25 decompositions — still open targets.

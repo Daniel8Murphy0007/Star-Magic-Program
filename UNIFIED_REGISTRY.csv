@@ -6086,3 +6086,65 @@ kk_boundary_paired,WHITEPAPER,derived,,,5,EXACT pair,,holography,,PAPER_1795,,,,
 bao_cabibbo_dual,WHITEPAPER,derived,,,4 closures,0.0075-0.027%; Lagrangian-derived,,cosmology+weak,,PAPER_1800,,,,,,WIRED
 biological_lattice,WHITEPAPER,derived,,,64/20 codes + setpoints,counting-sector; no teleology,0.0,biology,,PAPER_2174,,,,,,WIRED
 sector_pair_method,WHITEPAPER,method,,,"3 instances, 4 live routes",standing derivation method,0.0,foundations,,PAPER_2175,,,,,,WIRED
+kk_tensor_confirmation,WHITEPAPER,derived,,,4 routes,tensor-level; P1800 pair,,cosmology,,PAPER_1801,,,,,,WIRED
+polynomial_cap,WHITEPAPER,derived,,,26,EXACT; 4th ceiling member,,foundations,,PAPER_1802,,,,,,WIRED
+kepler_chain,WHITEPAPER,derived,,,c->G->P->IMF->PopIII,0.043-0.142%,,astro,,PAPER_1803,,,,,,WIRED
+k2_over_q_locked,WHITEPAPER,derived,,,3/125,EXACT; PAPER_2136,,planetary,,PAPER_1804,,,,,,WIRED
+a_peak_migration,WHITEPAPER,derived,,,0.065 AU,order-of-magnitude 45%,,planetary,,PAPER_1805,,,,,,WIRED
+casimir_restriction,WHITEPAPER,derived,,,0.4091,classical limit recovered,,qed,,PAPER_1806,,,,,,WIRED
+ngc2014_2020_phonon,WHITEPAPER,derived,,,0.0736,master equation wired,,astro,,PAPER_1807,,,,,,WIRED
+gp_vortex,WHITEPAPER,derived,,,quantized,GP on Aether,,superfluid,,PAPER_1808,,,,,,WIRED
+ua_superfluid,WHITEPAPER,derived,,,7.09e-36,J/m3-native,,superfluid,,PAPER_1809,,,,,,WIRED
+f_u_26th_order,WHITEPAPER,derived,,,26; 0,foundational form,,foundations,,PAPER_1810,,,,,,WIRED
+dpm_annealing,WHITEPAPER,derived,,,<1e-10,benchmark suite,,quantum-info,,PAPER_1811,,,,,,WIRED
+qaoa_vqe_chip,WHITEPAPER,derived,,,9D,VQE = ledger residual,,quantum-info,,PAPER_1812,,,,,,WIRED
+trappist1_periods,WHITEPAPER,derived,,,7 planets,worst 0.23%,,planetary,,PAPER_1813,,,,,,WIRED
+n_magic_184,WHITEPAPER,derived,,,184,"EXACT; island (126,184)",,nuclear,,PAPER_1814,,,,,,WIRED
+muon_g2_resolution,WHITEPAPER,derived,,,259.6e-11,0.18 sigma; kill window,,particle,,PAPER_1815,,,,,,WIRED
+pmns_sector,WHITEPAPER,derived,,,6 params,<1.3%; NO ordering,,particle,,PAPER_1816,,,,,,WIRED
+ckm_matrix,WHITEPAPER,derived,,,9 elements,<=2.5%; lambda 0.041%,,particle,,PAPER_1817,,,,,,WIRED
+eta_baryogenesis,WHITEPAPER,derived,,,6.00e-10,2.13% zero-param,,cosmology,,PAPER_1818,,,,,,WIRED
+ns_eos_triple,WHITEPAPER,derived,,,2.157/12.41/184.95,sub-3% multi-messenger,,astro,,PAPER_1819,,,,,,WIRED
+w_mass_anomaly,WHITEPAPER,derived,,,68.8 MeV,two-kernel crossing carried,,particle,,PAPER_1820,,,,,,WIRED
+desi_cpl,WHITEPAPER,derived,,,w0 -0.7264 / wa -25/24,sub-sigma both,,cosmology,,PAPER_1821,,,,,,WIRED
+nanograv_pta,WHITEPAPER,derived,,,2.55e-15,0.24 sigma; alpha 2/3,,gw,,PAPER_1822,,,,,,WIRED
+strong_cp,WHITEPAPER,derived,,,2.74e-11,3.65x below bound,,particle,,PAPER_1823,,,,,,WIRED
+hierarchy_resolved,WHITEPAPER,derived,,,121.78,2.84%; closes P1683,,particle,,PAPER_1824,,,,,,WIRED
+inflation_sector,WHITEPAPER,derived,,,r 9.975e-3; Ne 60,LiteBIRD threshold,,cosmology,,PAPER_1825,,,,,,WIRED
+proton_radius_mechanism,WHITEPAPER,derived,,,3.878%,2.73%; 2168 family,,particle,,PAPER_1826,,,,,,WIRED
+absolute_nu_masses,WHITEPAPER,derived,,,60 meV,CMB-S4 threshold,,particle,,PAPER_1827,,,,,,WIRED
+lisa_mhz,WHITEPAPER,derived,,,alpha 2/3,four signatures,,gw,,PAPER_1828,,,,,,WIRED
+s8_resolved,WHITEPAPER,derived,,,0.761,0.26%; two-kernel,,cosmology,,PAPER_1829,,,,,,WIRED
+jwst_early_galaxies,WHITEPAPER,derived,,,4/6,<30%; PopIII z20-25,,cosmology,,PAPER_1830,,,,,,WIRED
+trz_cascade_trilogy,WHITEPAPER,derived,,,120/10/17 orders = layer counts,naturalness trilogy consolidated,0.0,foundations,,PAPER_2176,,,,,,WIRED
+sterile_nu_subev,WHITEPAPER,derived,,,274 meV,2.64%; sterile family,,particle,,PAPER_1831,,,,,,WIRED
+li7_third_route,WHITEPAPER,derived,,,0.3311,5.5%/0.29 sigma; 2158 family,,nuclear,,PAPER_1832,,,,,,WIRED
+murchison_ee,WHITEPAPER,derived,,,9.975%,0.25%,,biology,,PAPER_1833,,,,,,WIRED
+photosynthesis_coherence,WHITEPAPER,derived,,,94.87%; 672 fs,0.14%,,biology,,PAPER_1834,,,,,,WIRED
+magnetoreception,WHITEPAPER,derived,,,3.27 deg; 80 us,34% honest,,biology,,PAPER_1835,,,,,,WIRED
+neutron_third_route,WHITEPAPER,derived,,,9.71 s,0.19 sigma; 3-route family,,nuclear,,PAPER_1836,,,,,,WIRED
+frb_baryons,WHITEPAPER,derived,,,88.6%,4.2%; 0.2736 4th domain,,cosmology,,PAPER_1837,,,,,,WIRED
+amaterasu,WHITEPAPER,derived,,,254 EeV,4.24%/0.36 sigma; rung 9,,astro,,PAPER_1838,,,,,,WIRED
+consciousness_iit,WHITEPAPER,derived,,,0.308; 60 bits,0.5%; quartet complete,,biology,,PAPER_1839,,,,,,WIRED
+dm_detection_mixing,WHITEPAPER,derived,,,3.25e-46,sector closed; kernel family,,bsm,,PAPER_1840,,,,,,WIRED
+photon_ring_correction,WHITEPAPER,derived,,,1.425%,0.15/0.60 sigma,,bh,,PAPER_1841,,,,,,WIRED
+lambda_h_composed,WHITEPAPER,derived,,,0.13029,0.37%; P1640 family,,particle,,PAPER_1842,,,,,,WIRED
+edges_amplification,WHITEPAPER,derived,,,2.437,0.063 sigma; Li-7 cross-lock,,cosmology,,PAPER_1843,,,,,,WIRED
+pisn_bypass,WHITEPAPER,derived,,,4.79%,LIGO O5 kill window,,gw,,PAPER_1844,,,,,,WIRED
+alpha_precision_route,WHITEPAPER,derived,,,137.03552,0.00035%; 4th family member,,foundations,,PAPER_1845,,,,,,WIRED
+max_lifespan,WHITEPAPER,derived,,,125 yr,2.05%; A_5*K_Mex landmark,,biology,,PAPER_1846,,,,,,WIRED
+neutron_edm,WHITEPAPER,derived,,,3.18e-28,2028-2030 kill,,particle,,PAPER_1847,,,,,,WIRED
+positron_excess,WHITEPAPER,derived,,,291 GeV; 3.07x,2.92%,,astro,,PAPER_1848,,,,,,WIRED
+epsilon_k,WHITEPAPER,derived,,,2.30e-3,3.15%; 0.2736 5th domain,,particle,,PAPER_1849,,,,,,WIRED
+g2_refinement,WHITEPAPER,derived,,,2.298e-9,8.4% inside error; 2nd route,,particle,,PAPER_1850,,,,,,WIRED
+birefringence,WHITEPAPER,derived,,,4.79%,PVLAS-3 kill,,qed,,PAPER_1851,,,,,,WIRED
+casimir_enhancement,WHITEPAPER,derived,,,0.479%,coupled falsifier 157 m,,qed,,PAPER_1852,,,,,,WIRED
+bbn_full_suite,WHITEPAPER,derived,,,6 obs; D/H 0.042%,sector closed,,cosmology,,PAPER_1853,,,,,,WIRED
+confinement_suite,WHITEPAPER,derived,,,6 obs; LQCD 199.8,sector closed,,qcd,,PAPER_1854,,,,,,WIRED
+mond_a0_derived,WHITEPAPER,derived,,,1.237e-10,3.12%; TF slope 4 EXACT,,cosmology,,PAPER_1855,,,,,,WIRED
+cmb_peaks,WHITEPAPER,derived,,,390 scaffold,l3 0.31%,,cosmology,,PAPER_1856,,,,,,WIRED
+gw170817_multimessenger,WHITEPAPER,derived,,,chirp 1.1875,0.042%; 10 obs,,gw,,PAPER_1857,,,,,,WIRED
+g_factor_suite,WHITEPAPER,derived,,,13 particles,<=2.55%,,particle,,PAPER_1858,,,,,,WIRED
+origin_of_mass,WHITEPAPER,derived,,,16 masses,YM-gap chain,,particle,,PAPER_1859,,,,,,WIRED
+solar_anomaly_suite,WHITEPAPER,derived,,,6 anomalies,Pioneer 1.94%,,solar,,PAPER_1860,,,,,,WIRED
+dated_kill_register_ii,WHITEPAPER,prediction,,,22 programs / 42 members,"Battery II, 2026-2035 horizon",0.0,prediction-registry,,PAPER_2177,,,,,,WIRED

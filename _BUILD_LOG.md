@@ -251,3 +251,5 @@ v0.373.0 (2026-08-13): bands 1631-1700 + landmarks 2161-2165; gate 4956/0; dispa
 v0.374.0 (2026-08-13): bands 1701-1760 + landmarks 2166-2171 + route-families doctrine; gate 5077/0; dispatches 1789; 23-file ship prep complete.
 
 v0.375.0 (2026-08-13): bands 1761-1800 + landmarks 2172-2175 + P1770 remediation; catch-up era complete; gate 5153/0; dispatches 1829; 23-file ship prep complete.
+
+v0.376.0 (2026-08-13): bands 1801-1860 + landmarks 2176-2177 (18xx frontier era); gate 5238/0; dispatches 1891; 23-file ship prep complete.

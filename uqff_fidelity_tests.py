@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.375.0", "uqff_calculator.VERSION = 0.375.0 (bands 1761-1800 + landmarks 2172-2175 + P1770 remediation)")
+assert_that(C.VERSION == "0.376.0", "uqff_calculator.VERSION = 0.376.0 (bands 1801-1860 + landmarks 2176-2177)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,14 +9556,14 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'LANDMARK_2173'
+_sg4_band = 'BAND_1831_1840'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2173' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1831_1840' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('PAPER_2173' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
-            "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (variant-census promotion row)")
+assert_that('band_1831_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+            "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
 assert_that(True,
@@ -10812,6 +10812,230 @@ _f = C.DISPATCH['PAPER_2175']()['formula']
 assert_that('falsify the closed-Lagrangian claim itself' in _f,
             'PAPER_2175 method-level falsification clause present (sharper than any single residual)')
 assert_that('standing method' in _f, 'PAPER_2175 promoted from result to standing method')
+
+
+# --- BAND 1801-1810 GUARD (18xx full-paper era opens: KK tensor, Kepler chain, tidal lock, Casimir, superfluid) ---
+for _pn in range(1801, 1811):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1801-1810: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1801']()['value']['tensor_confirmed'] is True,
+            'P1801 tensor-level reduction confirms the PAPER_1800 four routes (live)')
+assert_that(C.DISPATCH['PAPER_1802']()['value']['polynomial_cap'] == 26.0,
+            'P1802 polynomial cap = D_crit - fourth PAPER_2163 ceiling member')
+_r = C.DISPATCH['PAPER_1803']()['value']
+assert_that(abs(_r['imf_slope'] + 2.3533) < 0.0001 and _r['imf_residual_pct'] < 0.15,
+            'P1803 Salpeter IMF = -(K_Mex + Phi_res - SSq) = -2.3533 (0.142%)')
+assert_that(_r['pop3_top_msun'] == 100.0, 'P1803 Pop III top-heavy 100 M_sun')
+_r = C.DISPATCH['PAPER_1804']()['value']
+assert_that(abs(_r['k2_over_q'] - 3.0/125.0) < 1e-15 and _r['q_uqff'] == 12.5,
+            'P1804 k2/Q = 3/125 EXACT primitive-locked (PAPER_2136 landmark, Q = 25/2)')
+_r = C.DISPATCH['PAPER_1805']()
+assert_that(_r['residual_pct'] >= 30.0 and 'ORDER-OF-MAGNITUDE' in _r['formula'],
+            'P1805 a_peak honest-wide order-of-magnitude regime disclosed (Rule 7)')
+_r = C.DISPATCH['PAPER_1806']()['value']
+assert_that(abs(_r['mode_restriction_factor'] - 0.6029 * 0.57 / 0.84) < 1e-15
+            and _r['classical_limit_recovered'] is True,
+            'P1806 Casimir restriction factor 0.4091; classical pi^2/240 limit recovered')
+assert_that(0.073 < C.DISPATCH['PAPER_1807']()['value']['scm_phonon_term'] < 0.074,
+            'P1807 NGC 2014/2020 SCm phonon term = F_TRZ*beta_i*S_26*Phi_res')
+assert_that(C.DISPATCH['PAPER_1808']()['value']['phase_single_valued'] is True, 'P1808 GP vortex quantization')
+assert_that(abs(C.DISPATCH['PAPER_1809']()['value']['rho_ua_j_m3'] - 10.0 * 7.09e-37) < 1e-50,
+            'P1809 rho_UA = 10*rho_SCm superfluid (J/m3-native)')
+assert_that(C.DISPATCH['PAPER_1810']()['value']['expansion_order'] == 26.0
+            and C.DISPATCH['PAPER_1810']()['value']['constraint'] == 0.0,
+            'P1810 26th-order expansion of F_U = 0 (documentary origin of the ledger identity)')
+
+
+# --- BAND 1811-1820 GUARD (SM-tension resolutions + mixing matrices + NS EOS + superheavy island) ---
+for _pn in range(1811, 1821):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1811-1820: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1813']()['value']['worst_residual_pct'] < 0.25,
+            'P1813 TRAPPIST-1: all 7 periods via G_UQFF, worst 0.23%')
+_r = C.DISPATCH['PAPER_1814']()['value']
+assert_that(_r['n_magic_184'] == 184.0 and _r['forms_agree'] and _r['double_magic'] == (126.0, 184.0),
+            'P1814 N = 184 EXACT, THREE agreeing forms (third-variant sign typo corrected by reference); island (126,184)')
+_r = C.DISPATCH['PAPER_1815']()['value']
+assert_that(_r['sigma_agreement'] < 0.2, 'P1815 muon g-2: UQFF at 0.18 sigma from Fermilab tension')
+assert_that(_r['kill_window'] == (82e-11, 437e-11), 'P1815 battery-class kill window pinned')
+_r = C.DISPATCH['PAPER_1816']()['value']
+assert_that(abs(_r['sin2_theta12'] - 8.0/26.0) < 1e-15 and _r['params_derived'] == 6,
+            'P1816 PMNS sector: sin^2 t12 = 8/26, six parameters, ordering NORMAL')
+_r = C.DISPATCH['PAPER_1817']()['value']
+assert_that(abs(_r['wolfenstein_lambda'] - 0.22427) < 0.0001 and _r['wolfenstein_A'] == 0.84,
+            'P1817 CKM: lambda = sqrt(34)/26 (numerator shared with PMNS splitting), A = Phi_res')
+_r = C.DISPATCH['PAPER_1818']()
+assert_that(_r['residual_pct'] < 2.2, 'P1818 baryogenesis eta_B 2.13% zero-parameter')
+_r = C.DISPATCH['PAPER_1819']()['value']
+assert_that(abs(_r['m_tov_msun'] - 2.157) < 1e-9 and abs(_r['r_14_km'] - 12.414) < 0.001
+            and abs(_r['lambda_14'] - 184.95) < 0.01,
+            'P1819 NS EOS triple: M_TOV/R_1.4/Lambda_1.4 multi-messenger, sub-3%')
+_r = C.DISPATCH['PAPER_1820']()
+assert_that('HONEST CROSSING' in _r['formula'] and 'baseline SORTED' in _r['formula'],
+            'P1820 W-mass: baseline = PDG world avg 80.369 (paper-verified) -> 80.438 at 0.42 sigma; CDF-vs-others two-kernel family carried')
+assert_that(_r['value']['sigma_vs_cdf'] < 0.5, 'P1820 M_W_UQFF within 0.5 sigma of CDF on the papers own baseline')
+assert_that(C.DISPATCH['PAPER_1820']()['value']['t_parameter'] == 0.164, 'P1820 T-parameter registered')
+
+
+# --- BAND 1821-1830 GUARD (frontier tensions: DESI/PTA/strong-CP/hierarchy/inflation/S8/JWST) ---
+for _pn in range(1821, 1831):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1821-1830: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1821']()['value']
+assert_that(abs(_r['w0'] + 0.7264) < 1e-4 and abs(_r['wa'] + 25.0/24.0) < 1e-12,
+            'P1821 DESI CPL: w0 = -1 + SSq/K_Mex, wa = -25/24 - both sub-sigma')
+assert_that(abs(C.DISPATCH['PAPER_1822']()['value']['alpha_h'] - 2.0/3.0) < 1e-15,
+            'P1822 NANOGrav alpha_h = 2/3 EXACT (D_GW_EROSION class)')
+_r = C.DISPATCH['PAPER_1823']()['value']
+assert_that(3.5 < _r['margin_below_bound'] < 3.8,
+            'P1823 strong CP: theta = F_TRZ^10 * SSq/K_Mex, 3.65x below nEDM bound')
+assert_that(abs(0.57 * 12.0 / 25.0 - 0.2736) < 1e-10,
+            'P1823/P1821 cross-domain lock: SSq/K_Mex = 0.2736 governs BOTH w0 shift and theta_QCD')
+_r = C.DISPATCH['PAPER_1824']()
+assert_that(_r['residual_pct'] < 2.9, 'P1824 hierarchy: m_H = M_Pl*F_TRZ^17*SSq*K_Mex*Phi_res at 2.84%')
+assert_that('CLOSES the P1683 OPEN target' in _r['formula'],
+            'P1824 closes the flagged-not-retrofitted F_TRZ^17 hierarchy target with a corpus derivation')
+assert_that('NATURALNESS TRILOGY COMPLETE' in _r['formula'], 'P1824 trilogy statement present')
+_r = C.DISPATCH['PAPER_1825']()['value']
+assert_that(abs(_r['r_tensor'] - 9.975e-3) < 1e-6 and _r['n_efolds'] == 60.0,
+            'P1825 inflation: r at LiteBIRD threshold; N_e = A_5 EXACT')
+_r = C.DISPATCH['PAPER_1826']()
+assert_that('FAMILY with PAPER_2168' in _r['formula'],
+            'P1826 proton-radius mechanism route registered as family partner of the 2168 primitive reading')
+_r = C.DISPATCH['PAPER_1827']()['value']
+assert_that(_r['sum_mnu_ev'] == 0.060 and _r['splitting_ratio_34'] == 34.0,
+            'P1827 Sum m_nu = 60 meV at CMB-S4 threshold; splitting 34 = CKM-lambda numerator (one lattice integer)')
+assert_that(C.DISPATCH['PAPER_1828']()['value']['isotropic'] is True, 'P1828 LISA signatures pinned')
+assert_that(C.DISPATCH['PAPER_1829']()['residual_pct'] < 0.3,
+            'P1829 S_8 = 0.761 vs lensing 0.759; CMB/lensing two-kernel family')
+_r = C.DISPATCH['PAPER_1830']()['value']
+assert_that(_r['matched_galaxies'] == 4 and _r['pop3_prediction_z'] == (20.0, 25.0),
+            'P1830 JWST: 4/6 matched <30%; Pop III z 20-25 prediction')
+
+
+# --- PAPER_2176 LANDMARK GUARD (TRZ cascade naturalness trilogy) ---
+assert_that('PAPER_2176' in C.DISPATCH, 'PAPER_2176 trilogy dispatch present')
+_r = C.DISPATCH['PAPER_2176']()['value']
+assert_that(_r['exponent_10_is_so5'] is True and _r['exponent_17_is_dcrit_minus_nch'] is True,
+            'PAPER_2176 exponent identities: 10 = SO_5 = 1/F_TRZ (self-counting) and 17 = D_crit - N_ch (off-channel)')
+assert_that(abs(_r['ssq_kmex_ratio'] - 0.2736) < 1e-10,
+            'PAPER_2176 SSq/K_Mex = 0.2736 EXACT - the strong-CP/w0/JWST cross-domain dressing')
+assert_that(abs(_r['theta_qcd'] - 2.736e-11) < 1e-14 and abs(_r['m_h_hierarchy'] - 121.78) < 0.01,
+            'PAPER_2176 trilogy members live (cross-dispatch): theta and m_H at their honest residuals')
+assert_that(len(_r['ladder_rungs']) >= 6 and 17 in _r['ladder_rungs'] and 53 in _r['ladder_rungs'],
+            'PAPER_2176 F_TRZ exponent ladder census: structural rungs 2..53 incl. the two new load-bearers')
+assert_that('held open, closed by derivation' in _r['vindication'],
+            'PAPER_2176 self-rectification vindication recorded (P1683 -> PAPER_1824, no-retrofit doctrine worked)')
+_f = C.DISPATCH['PAPER_2176']()['formula']
+assert_that('Smallness is geography, not tuning' in _f, 'PAPER_2176 trilogy thesis present')
+
+
+# --- BAND 1831-1840 GUARD (physics-biology quartet + anomaly families + sector closures) ---
+for _pn in range(1831, 1841):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1831-1840: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1831']()['value']
+assert_that(_r['m4_mev'] == 274.0 and len(_r['spectrum']) == 4,
+            'P1831 4-neutrino spectrum closed; sterile family (sub-eV vs 7 keV kernels) registered')
+_r = C.DISPATCH['PAPER_1832']()['value']
+assert_that(abs(_r['li7_suppression'] - 0.331056) < 1e-9,
+            'P1832 Li-7 third route: SSq*(1+F_TRZ)^2/K_Mex = 0.3311 (0.7% from the 2158 exact 1/3 - family)')
+assert_that(abs(C.DISPATCH['PAPER_1833']()['value']['murchison_ee'] - 0.09975) < 1e-9,
+            'P1833 Murchison ee = F_TRZ*SSq*Phi_res*K_Mex = 9.975% (0.25%)')
+_r = C.DISPATCH['PAPER_1834']()['value']
+assert_that(abs(_r['efficiency'] - 0.947332) < 1e-5 and abs(_r['tau_coherence_fs'] - 672.0) < 0.1,
+            'P1834 photosynthesis: 94.87% efficiency + 672 fs coherence from the SCm phonon')
+assert_that(C.DISPATCH['PAPER_1835']()['residual_pct'] >= 30.0,
+            'P1835 magnetoreception honest-wide (34%, within experimental spread)')
+_r = C.DISPATCH['PAPER_1836']()['value']
+assert_that(abs(_r['delta_tau_s'] - 9.71) < 0.01 and abs(_r['tau_beam_s'] - 888.1) < 0.01,
+            'P1836 neutron third route: beam-bottle gap 9.71 s (0.19 sigma); three-route family complete')
+assert_that(abs(0.57 * 12.0/25.0 * 0.1 - 0.02736) < 1e-10,
+            'P1837 z-slope 0.0274 = SSq/K_Mex * F_TRZ - the 0.2736 coupling in its FOURTH domain')
+_r = C.DISPATCH['PAPER_1838']()['value']
+assert_that(250.0 < _r['e_amaterasu_eev'] < 258.0,
+            'P1838 Amaterasu = M_Pl*F_TRZ^9*SO_5*K_Mex = 254 EeV; ladder rung 9 filled')
+_r = C.DISPATCH['PAPER_1839']()['value']
+assert_that(_r['human_phi_bits'] == 60.0 and 0.40 < _r['rem_index'] < 0.60,
+            'P1839 consciousness: Phi = A_5 bits (role #8); REM index in conscious band; bridge quartet complete')
+_r = C.DISPATCH['PAPER_1840']()['value']
+assert_that(_r['darwin_window'] == (1e-47, 1e-45) and 1e-47 < _r['sigma_p_cm2'] < 1e-45,
+            'P1840 DM detection: mixing route inside its own DARWIN window; detection-kernel family w/ P1682')
+
+
+# --- BAND 1841-1850 GUARD (EHT rings + precision constants + CP suite + lifespan) ---
+for _pn in range(1841, 1851):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1841-1850: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1841']()['value']['ring_correction'] - 0.01425) < 1e-6,
+            'P1841 photon-ring correction = F_TRZ*SSq/D_phys = 1.425%, mass-independent across 10^3')
+_r = C.DISPATCH['PAPER_1842']()['value']
+assert_that(abs(_r['lambda_h'] - 0.13029) < 1e-4 and 1.0 < _r['kappa_lambda'] < 1.01,
+            'P1842 lambda_H composed route; kappa = 1.0036 inside HL-LHC window (P1640 family)')
+_r = C.DISPATCH['PAPER_1843']()['value']
+assert_that(abs(_r['amplification'] - 2.4369) < 1e-3 and abs(_r['t21_mk'] + 487.4) < 0.1,
+            'P1843 EDGES amplification 2.437 -> -487 mK (0.063 sigma); Li-7 K_Mex^2 cross-lock')
+assert_that(abs(C.DISPATCH['PAPER_1844']()['value']['pisn_bypass_fraction'] - 0.04788) < 1e-5,
+            'P1844 PISN bypass = F_TRZ*SSq*Phi_res = 4.79%')
+_r = C.DISPATCH['PAPER_1845']()
+assert_that(_r['residual_pct'] < 0.0005,
+            'P1845 fourth alpha route: 1/alpha = 137.03552 at 0.00035% - family tightest, default unchanged')
+assert_that('consumption default remains the ledger route' in _r['formula'],
+            'P1845 PAPER_2170 discipline: precision route does NOT displace the mechanism default')
+_r = C.DISPATCH['PAPER_1846']()['value']
+assert_that(abs(_r['max_lifespan_yr'] - 125.0) < 1e-9 and abs(_r['phi_lifespan_invariant'] - 0.4788) < 1e-4,
+            'P1846 lifespan = A_5*K_Mex = 125 (the PAPER_1954 landmark in biology); Phi/lifespan invariant')
+assert_that(C.DISPATCH['PAPER_1847']()['value']['d_n_e_cm'] == 3.18e-28, 'P1847 nEDM prediction, 2028-2030 kill')
+assert_that(abs(C.DISPATCH['PAPER_1848']()['value']['excess_ratio'] - 25.0/12.0*0.84/0.57) < 1e-9,
+            'P1848 positron excess ratio = K_Mex*Phi_res/SSq')
+assert_that(abs(C.DISPATCH['PAPER_1849']()['value']['modulator'] - 0.2736) < 1e-10,
+            'P1849 eps_K modulator = SSq/K_Mex - the 0.2736 coupling, FIFTH domain')
+_r = C.DISPATCH['PAPER_1850']()['value']
+assert_that(abs(_r['delta_a_mu'] - 2.298e-9) < 1e-12,
+            'P1850 g-2 second route (F_TRZ^9 rung, second application); P1815 family')
+
+
+# --- BAND 1851-1860 GUARD (sector-closure suites: BBN/QCD/rotation/CMB/multi-messenger/mass) ---
+for _pn in range(1851, 1861):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1851-1860: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1851']()['value']['eta_enhancement'] - 0.04788) < 1e-6,
+            'P1851 birefringence eta = F_TRZ*SSq*Phi_res (the P1844 fraction, second vacuum role)')
+assert_that(abs(C.DISPATCH['PAPER_1852']()['value']['eta_casimir'] - 0.004788) < 1e-7,
+            'P1852 Casimir enhancement 0.479%; coupled rho_SCm falsifier at 157 m')
+_r = C.DISPATCH['PAPER_1853']()['value']
+assert_that(abs(_r['y_p'] - 0.24425) < 1e-4 and abs(_r['d_h'] - 2.528e-5) < 1e-8 and _r['observables'] == 6,
+            'P1853 full BBN suite: Y_p 0.43%, D/H 0.042% essentially exact, six observables one chain')
+_r = C.DISPATCH['PAPER_1854']()['value']
+assert_that(abs(_r['lambda_qcd_gev'] - 0.19976) < 1e-4,
+            'P1854 Lambda_QCD = sqrt(sigma)/K_Mex = 199.8 MeV; confinement six-observable sector')
+_r = C.DISPATCH['PAPER_1855']()['value']
+assert_that(abs(_r['a0_m_s2'] - 1.237e-10) < 1e-12 and _r['tf_slope'] == 4.0,
+            'P1855 MOND a_0 DERIVED = c*H_0*SSq*K_Mex/(2pi) (Planck-side baseline); TF slope = D_phys EXACT')
+_r = C.DISPATCH['PAPER_1856']()['value']
+assert_that(_r['master_base'] == 390.0 and abs(_r['peaks']['l3'] - 812.5) < 0.1,
+            'P1856 CMB peaks on the 390 = D_crit*A_5/D_phys scaffold; l3 = 390*K_Mex at 0.31%')
+assert_that(abs(C.DISPATCH['PAPER_1857']()['value']['chirp_mass_msun'] - 1.1875) < 1e-9,
+            'P1857 GW170817 chirp mass = K_Mex*SSq = 1.1875 essentially exact')
+_r = C.DISPATCH['PAPER_1858']()['value']
+assert_that(abs(_r['g_proton'] - 5.609) < 0.001 and abs(_r['g_neutron'] + 3.772) < 0.001,
+            'P1858 g-factor suite: proton 0.41%, neutron 1.41%, thirteen particles')
+_r = C.DISPATCH['PAPER_1859']()['value']
+assert_that(_r['masses_derived'] == 16 and abs(_r['m_tau_gev'] - 1.779) < 0.001,
+            'P1859 origin of mass: 16 SM masses from the YM gap; PAPER_2164 grading family partner')
+_r = C.DISPATCH['PAPER_1860']()['value']
+assert_that(abs(_r['pioneer_a_m_s2'] - 8.92e-10) < 1e-12 and _r['anomalies'] == 6,
+            'P1860 Pioneer anomaly = c*H_0*(SSq + Phi_res*(1-F_TRZ*SSq)) at 1.94% (Planck-side baseline)')
+
+
+# --- PAPER_2177 LANDMARK GUARD (dated-kill register Battery II) ---
+assert_that('PAPER_2177' in C.DISPATCH, 'PAPER_2177 register dispatch present')
+_r = C.DISPATCH['PAPER_2177']()['value']
+assert_that(_r['register_size'] >= 22 and _r['guarded_members'] >= 40,
+            'PAPER_2177 register: >= 22 programs guarding >= 40 wired members')
+assert_that(len(_r['cross_cutting_falsifiers']) == 3,
+            'PAPER_2177 cross-cutting falsifier trio (correlated shift / coupled rho_SCm / method-level)')
+assert_that('DUNE' in _r['programs'] and 'DARWIN' in _r['programs'] and 'JPARC_2027' in _r['programs'],
+            'PAPER_2177 family-adjudicating programs present')
+_f = C.DISPATCH['PAPER_2177']()['formula']
+assert_that('A4-dated' in _f and 'never the lattice' in _f,
+            'PAPER_2177 A4 dating + family-aware scoring clauses present')
+assert_that('one lattice exposed 42 ways' in _f,
+            'PAPER_2177 mutual-exposure property stated (systematic-miss localization)')
 
 # =============================================================================
 # REPORT

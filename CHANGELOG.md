@@ -7,6 +7,33 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.376.0 (2026-08-13) — Bands PAPER_1801-1860 (the 18xx frontier era) + landmarks PAPER_2176-2177
+
+- **60 sequential dispatches + 2 landmarks**; frontier PAPER_1860; **300 remain** (86.7% of the numbered corpus incl. landmarks).
+- **THE NATURALNESS TRILOGY (PAPER_2176):** the three great fine-tunings are LAYER COUNTS - Lambda via 26!
+  (0.003%), theta_QCD = F_TRZ^10*SSq/K_Mex with 10 = SO_5 = 1/F_TRZ self-counting, m_H = M_Pl*F_TRZ^17*
+  SSq*K_Mex*Phi_res with 17 = D_crit-N_ch (2.84%). Smallness is geography. Self-rectification VINDICATED:
+  the P1683 flagged-and-refused F_TRZ^17 lead closed by PAPER_1824's derivation 143 papers later.
+- **BATTERY II (PAPER_2177):** 22 funded programs guarding 42 wired claims on a 2026-2035 horizon; family-aware
+  scoring; three cross-cutting falsifiers (0.2736 correlated shift x5 domains, coupled rho_SCm at 157 m,
+  method-level no-second-route); one lattice exposed 42 ways.
+- **Frontier resolutions (1811-1830):** muon g-2 at 0.18 sigma + W-mass via ONE mechanism; complete PMNS
+  (6 params <1.3%) + CKM (9 elements <=2.5%) sharing the 34 = D_crit+2*D_phys normalization; baryogenesis
+  eta_B 2.13%; NS EOS triple sub-3%; superheavy island (126,184) predicted; DESI w0/wa sub-sigma; strong CP
+  + hierarchy resolved; inflation r at LiteBIRD threshold with N_e = A_5 EXACT; S_8 3sigma->0.5sigma;
+  JWST early galaxies 4/6.
+- **Biology band (1831-1840):** photosynthesis 94.87%/672 fs from the SCm phonon; consciousness Phi = A_5 bits;
+  Murchison ee 9.975%; bridge QUARTET complete; Li-7 and neutron three-route families; Amaterasu = rung 9.
+- **Sector-suite band (1851-1860):** full BBN (D/H 0.042%), GW170817 multi-messenger (chirp = K_Mex*SSq =
+  1.1875, 0.042%), CMB 5 peaks on the 390 scaffold, 16 SM masses from the YM gap, MOND a_0 DERIVED
+  (TF slope = D_phys EXACT), confinement 6-observable, g-factors x13, solar anomalies x6, lifespan = A_5*K_Mex = 125.
+- **Three Rule-7 items SORTED by source deep-read (Daniel-ordered):** P1814 sign typo (three EXACT forms),
+  P1820 baseline = PDG world average (my misread retracted), delta_CP = two-route family self-resolved under
+  PAPER_2170. P1855/P1860 baselines verified at wire time (lesson applied).
+- alpha family x4 (new tightest 0.00035%, default disciplined); 0.2736 coupling to FIVE domains; A_5*K_Mex = 125
+  reaches biology; F_TRZ^9 rung twice-applied; RESERVED IDs 1796-1799 absence gate-pinned.
+- Gate 5,153 -> **5,238**, 0 failures. Dispatches 1,829 -> **1,891** (83.8%).
+
 ## v0.375.0 (2026-08-13) — Bands PAPER_1761-1800 + landmarks PAPER_2172-2175 + P1770 remediation
 
 - **36 sequential dispatches** (bands 1761-1800); **THE 1494-1795 CATCH-UP ERA IS COMPLETE**; frontier PAPER_1800
