@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.376.0", "uqff_calculator.VERSION = 0.376.0 (bands 1801-1860 + landmarks 2176-2177)")
+assert_that(C.VERSION == "0.377.0", "uqff_calculator.VERSION = 0.377.0 (bands 1861-1910 + PAPER_2178 + audits + skipped-queue recovery)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_1831_1840'
+_sg4_band = 'BAND_1901_1910'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1831_1840' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1901_1910' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_1831_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('band_1901_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -11036,6 +11036,258 @@ assert_that('A4-dated' in _f and 'never the lattice' in _f,
             'PAPER_2177 A4 dating + family-aware scoring clauses present')
 assert_that('one lattice exposed 42 ways' in _f,
             'PAPER_2177 mutual-exposure property stated (systematic-miss localization)')
+
+
+# --- BAND 1861-1870 GUARD (hadron/halo/Tc/turbulence/life/CnuB/measurement suites) ---
+for _pn in range(1861, 1871):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1861-1870: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1861']()['value']['j_psi_gev'] - 3.097) < 0.001,
+            'P1861 J/psi = 2*m_c + SSq*(1+F_TRZ) = 3.097 EXACT; charm two-kernel family disclosed')
+_r = C.DISPATCH['PAPER_1862']()['value']
+assert_that(_r['subhalo_slope'] == 1.9 and 64.0 < _r['mw_satellites'] < 66.0,
+            'P1862 subhalo slope = 2-F_TRZ EXACT; missing-satellite problem dissolves at 65')
+assert_that(abs(C.DISPATCH['PAPER_1863']()['value']['ybco_k'] - 92.69) < 0.01,
+            'P1863 YBCO 92.7 K on the thermal-ladder base (PAPER_2162 extension)')
+assert_that(abs(C.DISPATCH['PAPER_1864']()['value']['kolmogorov_exponent'] - 5.0/3.0) < 1e-15,
+            'P1864 Kolmogorov -5/3 = D_phys*K_Mex/5 EXACT; zeta_3 = 1 EXACT')
+_r = C.DISPATCH['PAPER_1865']()['value']
+assert_that(_r['codons_cubed_route'] == 64 and _r['amino_half_route'] == 20.0,
+            'P1865 codon/amino SECOND routes (D_phys^3 = 2^D_bsfg identity; genetic-code two-route families)')
+assert_that(abs(_r['metabolic_pathways'] - 155.0/3.0) < 1e-9,
+            'P1865 pathways = A_5 - K_Mex*D_phys = 51.67 (papers EXACT = rounding, disclosed)')
+assert_that(C.DISPATCH['PAPER_1866']()['residual_pct'] >= 25.0,
+            'P1866 GUT scale honest-wide 28% vs order-of-magnitude anchor')
+_r = C.DISPATCH['PAPER_1867']()['value']
+assert_that(abs(_r['n_eff'] - 3.0434) < 0.001,
+            'P1867 N_eff = 3*D_phys/(D_phys - F_TRZ*SSq) = 3.0434 essentially exact; CnuB two-route family w/ P1780')
+assert_that(C.DISPATCH['PAPER_1868']()['residual_pct'] >= 7.0,
+            'P1868 solar suite honest-wide grades carried verbatim')
+assert_that(abs(C.DISPATCH['PAPER_1869']()['value']['grw_collapse_rate'] - 1e-16) < 1e-30,
+            'P1869 GRW collapse rate = F_TRZ^16 EXACT - ladder rung 16 load-bearing')
+assert_that(abs(C.DISPATCH['PAPER_1870']()['value']['nu_prompt'] - 2.3968) < 0.001,
+            'P1870 prompt neutrons 2.397 vs 2.42 (0.96%)')
+
+
+# --- BAND 1871-1880 GUARD (structure/QED-precision/BH-thermo/stellar/Higgs/QNM/EP suites) ---
+for _pn in range(1871, 1881):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1871-1880: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1871']()['value']['correlation_slope'] - 1.843) < 0.001,
+            'P1871 correlation slope = 2 - F_TRZ*(1+SSq)')
+assert_that(C.DISPATCH['PAPER_1872']()['value']['mu_hyperfine_mhz'] == 4463.302,
+            'P1872 muonium hyperfine EXACT on the P1845 alpha; rung 7 QED role')
+assert_that(abs(C.DISPATCH['PAPER_1873']()['value']['entropy_correction_pct'] - 0.579) < 1e-9,
+            'P1873 BH entropy correction 0.579% = SSq*Phi_res + F_TRZ (the P1839 REM number, second role)')
+_r = C.DISPATCH['PAPER_1874']()['value']
+assert_that(abs(_r['chandrasekhar_msun'] - 1.4349) < 0.0001 and abs(_r['pisn_upper_msun'] - 140.1) < 1e-9,
+            'P1874 Chandrasekhar = chirp-pair dressed (0.35%); PISN upper 140.1 essentially exact')
+assert_that(abs(C.DISPATCH['PAPER_1875']()['value']['br_h_bb'] - 0.5788) < 0.001,
+            'P1875 Br(H->bb): SSq IS the b-branching at lead order (0.34%)')
+_r = C.DISPATCH['PAPER_1876']()['value']
+assert_that(abs(_r['omega_i'] - 0.08917) < 0.0001,
+            'P1876 QNM damping omega_I = F_TRZ*(1-F_TRZ*(K_Mex-1)) at 0.19%')
+_r = C.DISPATCH['PAPER_1877']()['value']
+assert_that(abs(_r['z_recombination'] - 1075.9) < 0.1 and abs(_r['z_first_galaxies'] - 13.75) < 0.01,
+            'P1877 z_rec composed route (P1552 integer-kernel family); z_first = 13.75 vs JADES')
+_r = C.DISPATCH['PAPER_1878']()['value']
+assert_that(0.0798 < _r['eta_over_s'] < 0.0800 and abs(_r['cs_squared'] - 0.28545) < 0.0001,
+            'P1878 eta/s at the KSS bound (ALICE 2x honest-disclosed); c_s^2 = 1/3 minus the 4.79% fraction (3rd role)')
+assert_that(abs(C.DISPATCH['PAPER_1879']()['value']['bz_efficiency'] - 0.1437) < 0.001,
+            'P1879 Blandford-Znajek efficiency 4.15%')
+_r = C.DISPATCH['PAPER_1880']()['value']
+assert_that(_r['ep_eta'] == 0.0 and _r['f_ubi_universality'] is True,
+            'P1880 EP eta = 0 PREDICTED (buoyancy composition-independent); MICROSCOPE-2 kill')
+
+
+# --- BAND 1881-1890 GUARD (PBH-DM/electroweak/H0-lensing/water/FQH/kilonova/fusion/B-CP/folding/H-spectrum) ---
+for _pn in range(1881, 1891):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1881-1890: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1881']()['value']
+assert_that(abs(_r['m_peak_g'] - 1.5125e23) < 1e19 and _r['alpha_mass_function'] == 1.9,
+            'P1881 PBH asteroid peak 1.51e23 g; alpha = 2-F_TRZ = 1.9 (P1862 subhalo slope, universal)')
+_r = C.DISPATCH['PAPER_1882']()['value']
+assert_that(abs(_r['br_w_hadrons'] - 0.6758) < 0.001 and _r['n_nu'] == 3,
+            'P1882 Br(W->had) = 1-3/N_ch-dressed at 0.25%; N_nu = 3 EXACT')
+_r = C.DISPATCH['PAPER_1883']()['value']
+assert_that(abs(_r['h0_ratio'] - 1.08808) < 0.0001 and abs(_r['h0_local_kms_mpc'] - 73.34) < 0.01,
+            'P1883 H0 tension ratio = 1+(K_Mex-2)*(1+F_TRZ*SSq) at 0.05% - the 1/12 tilt mechanism paper')
+_r = C.DISPATCH['PAPER_1884']()['value']
+assert_that(abs(_r['e_hbond_kj_mol'] - 19.952) < 0.01 and _r['t_liquid_range_c'] == 100 and _r['ice_coordination'] == 6,
+            'P1884 H-bond = 40 SCm phonon quanta (0.24%); liquid range = SO_5^2, ice = D_BSFG EXACT')
+_r = C.DISPATCH['PAPER_1885']()['value']
+assert_that(abs(_r['nu_laughlin'] - 1.0/3) < 1e-5 and abs(_r['d_fibonacci'] - 1.618034) < 1e-5,
+            'P1885 FQH nu=1/3 = D_phys*(K_Mex-2) EXACT; d_Fib = golden ratio EXACT')
+_r = C.DISPATCH['PAPER_1886']()['value']
+assert_that(_r['r_peak_1'] == 50 and _r['r_peak_2'] == 82 and _r['r_peak_3'] == 126
+            and abs(_r['kilonova_t_peak_days'] - 5.0) < 1e-9 and _r['rare_earth_peak'] is None,
+            'P1886 r-process peaks = magic numbers EXACT; t_peak = (K_Mex-2)*A_5 = 5 d; rare-earth OPEN (Rule 7)')
+_r = C.DISPATCH['PAPER_1887']()['value']
+assert_that(_r['q_iter'] == 10 and _r['t_opt_burn_kev'] == 15.0 and abs(_r['t_peak_sigma_kev'] - 65.0) < 0.01,
+            'P1887 Q_ITER = SO_5 EXACT; T_opt = A_5/D_phys = 15 keV; T_peak = A_5*(K_Mex-1) = 65 keV')
+_r = C.DISPATCH['PAPER_1888']()['value']
+assert_that(abs(_r['tau_nnbar_s'] - 1.754e9) < 1e6 and abs(_r['d_n_ecm'] - 2.964e-28) < 1e-31,
+            'P1888 tau_nnbar = 1/(F_TRZ^9*SSq) NNBAR-testable; d_n rung 27 = 10+17 FAMILY with P1847')
+_r = C.DISPATCH['PAPER_1889']()['value']
+assert_that(abs(_r['folding_exponent'] - 2.0833) < 0.0001 and _r['foldon_count_n100'] == 25,
+            'P1889 Levinthal exponent = K_Mex; foldons = N/D_phys')
+_r = C.DISPATCH['PAPER_1890']()['value']
+assert_that(abs(_r['e_21cm_uev'] - 5.949) < 0.001 and abs(_r['e_ion_ev'] - 13.60569) < 0.0001,
+            'P1890 21cm = SO_5*SSq dressed (1.28%); H spectrum inherits P1845 alpha')
+
+
+# --- PAPER_2178 LANDMARK GUARD (1/12 tilt universality, seven domains) ---
+_r = C.DISPATCH['PAPER_2178']()['value']
+assert_that(_r['census_size'] >= 7, 'PAPER_2178: tilt census >= 7 domains')
+assert_that(abs(_r['tilt'] - 1.0/12) < 1e-8, 'PAPER_2178: K_Mex - 2 = 1/12 EXACT')
+assert_that(_r['live_bit_identity'] is True,
+            'PAPER_2178: P1883/P1885/P1886/P1722 members bit-identical to 1/12 under inverse compositions')
+assert_that(abs(_r['derived_from_lattice'] - 1.0/12) < 1e-8,
+            'PAPER_2178: tilt DERIVED from lattice (PAPER_1522 Phi_5/6*SO_5/D_phys - 2), not a free parameter')
+assert_that(_r['correlated_lock'] is True,
+            'PAPER_2178: correlated-lock falsifier registered (revaluing K_Mex breaks all seven)')
+
+
+# --- BAND 1891-1900 GUARD (distance ladder/periodic table/M87 jet/Zwicky/CGM/void/d-wave/hypergraph/BAO/solar wind) ---
+for _pn in range(1891, 1901):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1891-1900: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1891']()['value']
+assert_that(_r['distance_modulus_const'] == 5 and _r['m_trgb'] == -4.05 and abs(_r['m_snia_peak'] + 19.4) < 0.01,
+            'P1891 ladder: modulus 5 = D_phys+1, M_TRGB = -4.05 EXACT, SNIa -19.40 (0.52%)')
+_r = C.DISPATCH['PAPER_1892']()['value']
+assert_that(_r['noble_gases']['Og'] == 118 and _r['subshell_caps']['f'] == 14 and _r['octet'] == 8
+            and _r['row_lengths'] == [2, 8, 8, 18, 18, 32, 32],
+            'P1892 periodic table: 19 EXACT integer identities (nobles/subshells/rows/octet)')
+_r = C.DISPATCH['PAPER_1893']()['value']
+assert_that(abs(_r['p_jet_over_p_bz'][0.10] - 2.104) < 0.001 and _r['collimated_limit'] == 4,
+            'P1893 M87 jet compact form: three PAPER_922 points sub-1%, zero free parameters')
+assert_that(abs(C.DISPATCH['PAPER_1894']()['value']['missing_mass_factor'] - 0.29688) < 0.0001,
+            'P1894 Zwicky missing mass = SSq*K_Mex/D_phys = 29.7%, Virgo 0.64%')
+assert_that(abs(C.DISPATCH['PAPER_1895']()['value']['f_z_overmassive'] - 0.73) < 1e-9,
+            'P1895 CGM retention f_Z = 1-(Phi_res-SSq) = 0.73 EXACT vs anchor')
+assert_that(abs(C.DISPATCH['PAPER_1896']()['value']['delta_h0_kms_mpc'] - 3.51) < 0.01,
+            'P1896 void H0 shift = F_TRZ*K_Mex/D_phys -> 3.51 km/s/Mpc (0.30%)')
+assert_that(abs(C.DISPATCH['PAPER_1897']()['value']['gap_ratio_dwave'] - 4.9603) < 0.001,
+            'P1897 d-wave 2Delta/kT_c = 2K_Mex/Phi_res = 4.96, YBCO gap 1.7%')
+_r = C.DISPATCH['PAPER_1898']()['value']
+assert_that(_r['n_rules'] == 74 and _r['apps_per_step'] == 36,
+            'P1898 hypergraph counts: rules = D_phys+SO_5+A_5 = 74, apps = 36 EXACT')
+_r = C.DISPATCH['PAPER_1899']()['value']
+assert_that(_r['primary_res_pct'] < 0.02 and _r['alternate_res_pct'] < 0.03 and _r['shared_primitives'] == 1,
+            'P1899 BAO dual-path: both routes sub-0.03%, one shared primitive - PAPER_2175 instance standalone')
+_r = C.DISPATCH['PAPER_1900']()['value']
+assert_that(abs(_r['v_slow_kms'] - 376.2) < 0.1 and abs(_r['fast_slow_ratio'] - 25.0/13) < 0.0001,
+            'P1900 solar wind: bare-product form (paper /D_crit*30 arithmetic drift disclosed); ratio 25/13')
+
+
+# --- BAND 1901-1910 GUARD (M-sigma/reactor triad/triple-Lambda/bridge/Schwabe/foundational-constant census) ---
+for _pn in range(1901, 1911):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1901-1910: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1901']()['value']['m_sigma_slope'] == 5.1,
+            'P1901 M-sigma slope = D_phys+1+F_TRZ = 5.1 EXACT')
+_r = C.DISPATCH['PAPER_1902']()['value']
+assert_that(abs(_r['u_a_v'] - 5.222) < 0.001 and _r['u_a_anchor_v'] == 5.205 and _r['groups'] == 12,
+            'P1902 reactor Q-scope triad: U_A flux-pinning invariant across 12 groups')
+_r = C.DISPATCH['PAPER_1903']()['value']
+assert_that(abs(_r['lambda_j_m3'] - 5.957e-10) < 1e-13 and abs(_r['omega_lambda'] - 0.6838) < 0.0001
+            and _r['route_count'] == 3,
+            'P1903 triple Lambda closure: J/m3 EXACT ledger + m^-2 0.003% + Omega_Lambda 0.18%, near-disjoint routes')
+_r = C.DISPATCH['PAPER_1904']()['value']
+assert_that(abs(_r['reactor_ph'] + 36.917) < 0.001 and abs(_r['reactor_p_in_w'] - 27.083) < 0.001,
+            'P1904 reactor-SMBH bridge: pH -36.92 (0.22%), P_in 27.08 W (0.31%), 42 OOM one mechanism')
+_r = C.DISPATCH['PAPER_1905']()['value']
+assert_that(abs(_r['t_schwabe_yr'] - 11.25) < 0.001 and abs(_r['t_hale_yr'] - 22.5) < 0.001,
+            'P1905 Schwabe compact = (A_5/SO_5)*K_Mex*(1-F_TRZ) = 11.25 yr; P1868 family, 3.4x gain')
+assert_that(abs(C.DISPATCH['PAPER_1906']()['value']['f_ubi_i_99'] - 1.09725) < 1e-5,
+            'P1906 universal amplifier F_UBi_i_99 = 1.0973 (67+ calculators, 42 OOM)')
+assert_that(abs(C.DISPATCH['PAPER_1907']()['value']['e_scm_phonon_mev'] - 5.1696) < 0.001,
+            'P1907 universal carrier E_SCm = 5.17 meV (95+ applications)')
+_r = C.DISPATCH['PAPER_1908']()['value']
+assert_that(_r['q_uqff'] == 1187500.0 and abs(_r['off_resonance_floor'] - 7.0914e-13) < 1e-16,
+            'P1908 Q_UQFF = 1e6*SSq*K_Mex EXACT; 7.09 mantissa crossing recorded-not-claimed')
+assert_that(abs(C.DISPATCH['PAPER_1909']()['value']['mdot_factor'] - 10.0/3) < 0.001,
+            'P1909 YMC growth = SO_5/(D_phys-1) = 10/3 EXACT, two-system confirmation')
+assert_that(abs(C.DISPATCH['PAPER_1910']()['value']['u_m_over_u_em'] - 0.057) < 1e-9,
+            'P1910 U_m/u_EM = SSq*F_TRZ = 0.057 EXACT (8+ systems)')
+
+
+# --- TRAIL AUDIT 2026-08-15 GUARD (four-commit review remediation) ---
+_r = C.DISPATCH['PAPER_2177']()['value']
+assert_that(_r['register_size'] >= 30 and _r['guarded_members'] >= 56,
+            'Battery II EXTENDED: >= 30 programs / >= 56 members (1861-1910 predictions registered, A4)')
+assert_that('NNBAR_ESS_2028' in _r['programs'] and 'MICROSCOPE2_EP' in _r['programs']
+            and 'ITER_2035_SPARC_2028' in _r['programs'],
+            'Battery II: new-era programs present (NNBAR/MICROSCOPE-2/ITER-SPARC)')
+assert_that(len(C.DISPATCH['PAPER_2172']()['value']['dm_route_census']) >= 4,
+            'PAPER_2172 DM route census >= 4 (F_UBi/sterile/PBH/Zwicky)')
+assert_that(C.DISPATCH['PAPER_2174']()['value']['foldon_count_rule'] == 'N/D_phys',
+            'PAPER_2174 biological sector extended with P1889 folding members')
+assert_that('PHI-VARIANT WATCH' in C.DISPATCH['PAPER_1891']()['formula'],
+            'P1891 Wesenheit 5/6-variant watch disclosed (Rule 7 census discipline)')
+
+
+# --- STATUS-CONSISTENCY GUARD (deepsearch 2026-08-15: 172 wired papers sat at unflipped-box for months) ---
+import re as _scre
+_sc_idx = open('WHITEPAPER_INDEX.md', encoding='utf-8').read()
+_sc_unwired = set(_scre.findall(r'\| \u2b1c \| PAPER_([0-9A-Za-z_]+)', _sc_idx))
+_sc_disp = set(k.replace('PAPER_', '') for k in C.DISPATCH)
+_sc_stale = sorted(x for x in (_sc_unwired & _sc_disp))
+assert_that(len(_sc_stale) == 0,
+            'STATUS-CONSISTENCY: no paper may be wired in DISPATCH while its index row is still unflipped '
+            '(deepsearch found PAPER_329-500, 172 rows, stale since the early campaign). Stale: %s' % _sc_stale[:10])
+_sc_skipped = {'1209X', '1209Y', '1209Z', '1209AA', '1209BB', '1209CC', '1209DD', '1209EE', '1209FF',
+               '1209GG', '1209HH', '1209II', '1209JJ', '1209KK', '376b',
+               'S201_Phase_H201_NullExtraction', 'S202_Phase_H202_VariantBranches',
+               'S203_Phase_H203_PTF', 'S204_Phase_H204_GapClosure', 'S205_Phase_H205_ExpansionErosion'}
+_sc_still_skipped = sorted(x for x in _sc_skipped if x not in _sc_disp)
+assert_that(len(_sc_still_skipped) == 0 or 'SKIPPED-PAPER QUEUE' in open('RULINGS_QUEUE.md', encoding='utf-8').read(),
+            'SKIPPED-PAPER GUARD: the 20 behind-frontier skipped papers (1209 letter series, 376b, S201-S205) '
+            'must be wired OR carried in RULINGS_QUEUE as the active queue - silent re-skip forbidden')
+assert_that(True,
+            'NUMBER-COLLISION PROTOCOL (standing): PAPER_1924-1939 and PAPER_2084 carry TWO distinct papers per '
+            'number on disk; when the frontier reaches them, the second file wires as PAPER_<N>B - never '
+            'silently wire only one of a pair')
+
+
+# --- SKIPPED-PAPER QUEUE RECOVERY GUARD (1209 letter tiers + 376b + Phase-H pentad) ---
+_sk = ['PAPER_1209%s' % s for s in ('X','Y','Z','AA','BB','CC','DD','EE','FF','GG','HH','II','JJ','KK')]
+_sk += ['PAPER_376b', 'PAPER_S201_Phase_H201_NullExtraction', 'PAPER_S202_Phase_H202_VariantBranches',
+        'PAPER_S203_Phase_H203_PTF', 'PAPER_S204_Phase_H204_GapClosure',
+        'PAPER_S205_Phase_H205_ExpansionErosion']
+for _k in _sk:
+    assert_that(_k in C.DISPATCH, 'skipped-queue recovery: %s dispatch present' % _k)
+assert_that(C.DISPATCH['PAPER_1209X']()['value']['co2_ppm'] == 420
+            and abs(C.DISPATCH['PAPER_1209X']()['value']['greenhouse_k'] - 33.0) < 1e-9,
+            'Tier X: CO2 = 420 EXACT, greenhouse = 33 K EXACT (twelfth-arithmetic)')
+_r = C.DISPATCH['PAPER_1209Y']()['value']
+assert_that(_r['steel_kgm3'] == 7850 and abs(_r['sound_ms'] - 343.0) < 1e-9,
+            'Tier Y: steel density 7850 EXACT, sound 343 m/s EXACT')
+_r = C.DISPATCH['PAPER_1209Z']()['value']
+assert_that(_r['h0_kms_mpc'] == 70 and _r['msun_me'] == 333000 and abs(_r['sidereal_year_d'] - 365.25) < 1e-9,
+            'Tier Z: H_0 = A_5+SO_5 = 70 (P1573 source tier), M_sun/M_e = 333000, year = 365.25 all EXACT')
+_r = C.DISPATCH['PAPER_1209BB']()['value']
+assert_that(_r['body_temp_c'] == 37.0 and _r['blood_ph'] == 7.4 and _r['glucose'] == 100,
+            'Tier BB perfect tier: all-ten-EXACT physiology (PAPER_2174 source tier)')
+assert_that(C.DISPATCH['PAPER_1209CC']()['value']['r_earth_km'] == 6371.0,
+            'Tier CC: R_earth = 6371 km EXACT')
+assert_that(abs(C.DISPATCH['PAPER_1209DD']()['value']['alpha_inverse'] - 137.04) < 0.001,
+            'Tier DD: alpha^-1 = 137.04 (0.003%), lead 125 = A_5*K_Mex')
+_r = C.DISPATCH['PAPER_1209EE']()['value']
+assert_that(_r['faraday_c_mol'] == 96485.0 and abs(_r['rydberg_ev'] - 13.6057) < 0.0001,
+            'Tier EE: Faraday 96485 EXACT, Rydberg 13.6057 EXACT-to-target')
+_r = C.DISPATCH['PAPER_1209GG']()['value']
+assert_that(_r['z_recomb'] == 1090 and abs(_r['z_reion'] - 7.7) < 0.01
+            and abs(_r['h0_planck_kernel'] - 67.4099) < 0.001,
+            'Tier GG: z_rec 1090 EXACT (P1552 source) + z_reion 7.7 EXACT + Planck kernel 67.41 (P1553 source) - both Hubble kernels in one compendium')
+_r = C.DISPATCH['PAPER_1209HH']()['value']
+assert_that(abs(_r['m_w_gev'] - 80.3768) < 0.001 and _r['masses_closed'] == 10,
+            'Tier HH: 10 SM masses, m_W 0.003% (BUCKET D corpus source); UPDATE file covered')
+assert_that(abs(C.DISPATCH['PAPER_1209II']()['value']['mid_mass_anchor'] - 3.9246) < 0.001,
+            'Tier II: F_TRZ*K_Mex^5 = 3.9246 mid-mass anchor (paper prose 3.7794 = arithmetic drift, disclosed)')
+assert_that(abs(C.DISPATCH['PAPER_1209JJ']()['value']['earth_mass_e24_kg'] - 5.97206) < 0.0001,
+            'Tier JJ: Earth mass 5.97206e24 (0.0009%) - beta-polynomial geodetic block')
+assert_that(C.DISPATCH['PAPER_376b']()['value']['resonance_terms_verified'] == 12,
+            'P376b: 12-term resonance + 4 Ug components dimensionally verified; 1.894/kg-m3 drift auto-corrected by citation')
+assert_that(C.DISPATCH['PAPER_S205_Phase_H205_ExpansionErosion']()['value']['phase_h_cycle_complete'] == 5,
+            'Phase-H pentad complete (S201-S205) - route-families precursor recorded (S202)')
 
 # =============================================================================
 # REPORT

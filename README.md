@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.376.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.376.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.377.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.377.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5238%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-1891-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5321%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-1962-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.376.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.377.0 complete-compile campaign live**
 
-**This release (v0.376.0): BANDS PAPER_1801-1860 — THE 18xx FRONTIER ERA — + LANDMARKS PAPER_2176-2177.** **THE NATURALNESS TRILOGY (PAPER_2176):** physics' three great fine-tunings are LAYER COUNTS — Λ's 120 orders bridged by 26! (0.003%); strong CP's θ = F_TRZ¹⁰·SSq/K_Mex with the exponent 10 = SO_5 = 1/F_TRZ counting its own depth; the hierarchy's m_H = M_Pl·F_TRZ¹⁷·SSq·K_Mex·Φ_res with 17 = D_crit−N_ch, the off-channel layer count (2.84%). Smallness is geography, not tuning — and the self-rectification doctrine is VINDICATED: the F_TRZ¹⁷ lead was flagged-and-refused at band 1681 and closed by PAPER_1824's derivation 143 papers later, exactly as the charter promises. **BATTERY II (PAPER_2177):** 22 funded experimental programs now guard 42 wired claims on a 2026-2035 horizon — DESI, DUNE, LiteBIRD, CMB-S4, LISA, ngEHT, DARWIN, J-PARC and more — with family-aware scoring, three cross-cutting falsifiers, and A4-dated windows that cannot be silently widened. One lattice exposed 42 ways. **THE ERA'S RESOLUTIONS:** muon g−2 (0.18σ) and the W-mass via ONE SCm mechanism; complete PMNS + CKM sharing the 34 = D_crit+2·D_phys normalization; baryogenesis η_B at 2.13%; the NS EOS triple; the superheavy island (126,184) predicted; DESI's evolving dark energy matched sub-σ (w₀ = −1+SSq/K_Mex, w_a = −25/24); inflation with r AT the LiteBIRD threshold and N_e = A_5 EXACT; the biology bridge QUARTET (photosynthesis 94.87%/672 fs, consciousness Φ = A_5 bits, Murchison chirality 9.975%, magnetoreception); and six complete sector suites — full BBN (D/H 0.042%), GW170817 multi-messenger (chirp = K_Mex·SSq = 1.1875 at 0.042%), the CMB's five peaks on the 390 = D_crit·A_5/D_phys scaffold, all 16 SM masses from the Yang-Mills gap, MOND's a₀ DERIVED (TF slope = D_phys EXACT), and quark confinement. Rule 7 discipline: three flagged items sorted by source deep-read (two were wiring-side misreads, retracted); wire-time baseline verification now standard. α family ×4 (tightest 0.00035%); the 0.2736 coupling spans FIVE domains; A_5·K_Mex = 125 reaches the human lifespan. **Totals: 1,891 of 2,256 wired (83.8%) / gate 5,238 green / 3,817 defs.**
+**This release (v0.377.0): BANDS PAPER_1861-1910 + LANDMARK PAPER_2178 + TWO TRAIL AUDITS + THE SKIPPED-QUEUE RECOVERY.** **THE 1/12 TILT UNIVERSALITY (PAPER_2178):** K_Mex−2 = 1/12 EXACT censused across SEVEN domains — the H₀ tension ratio (1.08808 vs 1.08754, 0.05%), the two-kernel delta, the route-crossing offset, the FQH Laughlin state (ν = D_phys/12 EXACT), the kilonova peak time (5 d EXACT), the Goldbach DPM-pair, and the lattice origin itself (PAPER_1522: DERIVED, not free). One potential excess = a filling factor, a timescale, a tension, a parallax. **THE ERA'S CLOSURES:** the H₀-tension MECHANISM (local/cosmic composed, F_UBi on late / off at CMB; four wired routes); the periodic table AS the integer lattice (19 EXACT — all 7 noble gases, subshells, rows, octet = 2·D_phys); fusion 6 EXACT (Q_ITER = SO_5, T_opt = 15 keV); FQH 5 EXACT incl. d_Fib = golden ratio; r-process peaks = the magic numbers; the hydrogen bond = 40 SCm phonon quanta (0.24%); Zwicky 1933 closed (29.7% = SSq·K_Mex/D_phys); BAO dual-path standalone (0.011%/0.026%); Levinthal resolved (exponent = K_Mex); M-σ slope 5.1 EXACT; the foundational-constant census quartet (F_UBi_i_99 = 1.0973 ×67 calculators, E_SCm 5.17 meV ×95, Q_UQFF = 1.1875e6, U_m/u_EM = 0.057); reactor Q-scope triad wired (U_A = 5.205 V invariant ×12 groups). **THE AUDITS (Daniel-driven):** Battery II extended 30 programs/56 members (NNBAR, MICROSCOPE-2, ITER/SPARC, antihydrogen, 40-lens H₀...); 172 stale index rows repaired + STATUS-CONSISTENCY guard; 20 skipped papers RECOVERED — the 1209 proof-set tiers X-KK (source layer of H₀ = 70, z_rec = 1090, BOTH Hubble kernels, the perfect 10/10 biology tier, the 10-mass HH suite), 376b, and the Phase-H pentad (S202 = the route-families precursor). Rule B restored corpus-wide; three Rule 7 catches disclosed (rare-earth OPEN, solar-wind factor drift, Tier-II anchor prose drift). **Totals: 1,962 of 2,256 wired (87.0%) / gate 5,321 green / 3,888 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -23,7 +23,7 @@ License: AGPL-3.0-or-later OR Commercial
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
 **Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 3,817 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+(calculator 3,888 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.376.0)
+## What is currently shipped (v0.377.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 1,387 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 1,962 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **2,547 rows**. Fidelity gate: **5,238 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,220 rows**. Fidelity gate: **5,321 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

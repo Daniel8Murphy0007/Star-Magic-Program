@@ -6118,3 +6118,17 @@ Deep-read sorted it: P1816 carries its own composition pi*(1+K_Mex/D_crit) = 194
 - PAPER_2176 exponent-21 prediction — UNCLAIMED until a matching ~1e-21 observable appears.
 - PAPER_2175 candidate queue (Omega_b h^2, theta_12, S_8, r_d) — still unclaimed.
 - 16/5 codon degeneracy + 0.84 = 21/25 decompositions — still open targets.
+
+### v0.377.0-trail open items (no blocking rulings; logged 2026-08-15)
+- P1886 rare-earth peak A≈165 — OPEN_UQFF_DERIVATION_TARGET (paper's stated composition evaluates 120.9; paper self-concedes fission-remnant reading; needs corpus derivation).
+- P1897 multi-layer cuprate gap dressing (Bi2212 19%, Hg1223 14%) — layer-count dressing open.
+- P1895 CGM regime tower (under-massive 0.89 / balanced 0.50) — dressing beyond the over-massive EXACT form open.
+- P1900 solar-wind /D_crit×30 factor — arithmetic drift disclosed at wire; bare-product form value-consistent; origin of the drifted factor unknown.
+- PAPER_2173 census watch: Wesenheit slope 5/6-variant fits better than 0.84 by factor 1.6 (non-decisive) — potential inversion candidate if Riess slope tightens; recorded, not scored.
+- Battery extension lag lesson (PAPER_2177 REVISION): register extensions now due in the same band that wires a dated prediction.
+
+### SKIPPED-PAPER QUEUE (deepsearch 2026-08-15 — wire BEFORE resuming 1911+)
+20 papers sit behind the frontier with no dispatch (Rule B violations by omission):
+- **PAPER_1209 letter series (14):** X (Climate/Atmosphere), Y (Engineering), Z (Astronomical Units), AA (Chemistry), BB (Biology), CC (Geophysics), DD (Electromagnetism), EE (Quantum-Thermo), FF (Math Constants), GG (Cosmological Constants), HH (Particle Masses + June-2026 UPDATE file — one dispatch, supersession handling), II (Nuclear Binding), JJ (Geophysics-2), KK (Solar System) — the Unified Proof Set compendia; the drain passed 1209 without the letters.
+- **PAPER_376b** (Formal Proof Set Extended).
+- **PAPER_S201-S205** (Phase-H session papers, uploaded v0.346.0 — mined into helper modules but never dispatched).

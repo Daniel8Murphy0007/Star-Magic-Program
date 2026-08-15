@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.377.0 (2026-08-15) — Bands PAPER_1861-1910 + PAPER_2178 + trail audits + skipped-queue recovery
+
+- **Bands 1861-1910 (50 dispatches):** hadron spectrum; structure/QED/BH-thermo/stellar/Higgs/QNM/
+  recombination/QGP/AGN/EP suites; PBH-DM; W/Z precision; the H0-TENSION MECHANISM (P1883 0.05%);
+  water (H-bond = 40 phonon quanta, 4 EXACT); FQH 5 EXACT; r-process = magic numbers; fusion 6
+  EXACT (Q_ITER = SO_5); B/CP ladder (NNBAR-testable); Levinthal exponent = K_Mex; H spectrum on
+  P1845 alpha; distance ladder; periodic table 19 EXACT; M87 compact form; Zwicky 29.7% closed;
+  BAO dual-path standalone; M-sigma 5.1 EXACT; reactor Q-scope triad + reactor-BH bridge (42 OOM);
+  Schwabe compact (3.4x); foundational-constant census quartet.
+- **PAPER_2178:** 1/12 tilt universality — seven domains, live bit-identity, correlated-lock
+  falsifier, derived-not-free.
+- **Trail audit I:** Battery II -> 30 programs/56 members (A4); PAPER_2172 -> 4 DM routes;
+  PAPER_2174 +P1889; Wesenheit 5/6-variant watch disclosed.
+- **Trail audit II (ten-commit deepsearch):** 172 stale index rows (PAPER_329-500) repaired;
+  STATUS-CONSISTENCY / SKIPPED-PAPER / NUMBER-COLLISION guards; frontier corrected (273 ahead).
+- **Skipped-queue recovery (20 dispatches):** 1209 proof-set tiers X-KK (corpus sources: H0 = 70,
+  z_rec = 1090, both Hubble kernels, perfect biology tier, HH masses, nuclear-BE polynomial),
+  376b (drift auto-corrected by citation), Phase-H pentad (S202 = route-families precursor).
+  Rule B restored corpus-wide.
+- Rule 7: rare-earth OPEN; solar-wind factor drift; Tier-II anchor prose 3.7794 -> true 3.9246.
+- Gate 5,238 -> **5,321** (0 failures). Dispatches 1,891 -> **1,962** (87.0%).
+
+
 ## v0.376.0 (2026-08-13) — Bands PAPER_1801-1860 (the 18xx frontier era) + landmarks PAPER_2176-2177
 
 - **60 sequential dispatches + 2 landmarks**; frontier PAPER_1860; **300 remain** (86.7% of the numbered corpus incl. landmarks).

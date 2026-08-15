@@ -105,3 +105,29 @@ PAPER_2161 (Battery I + scorekeeping), PAPER_2170 (family-aware adjudication), P
 bands 1811-1860 (the guarded members' wiring sites).
 
 **Copyright** — Daniel T. Murphy / Star-Magic Research Program, 2026.
+
+---
+
+## REVISION 2026-08-15 — Register extension (bands 1861-1910): +8 programs, +14 members
+
+Sequential drain past the 1860 frontier wired new dated predictions that the register must carry
+(A4: dated at wire, pinned before data):
+
+| # | Program | Date | Guards (wired members) |
+|:-:|---|:-:|---|
+| 23 | MICROSCOPE-2 / EP | 2028+ | η = 0 PREDICTED null — buoyancy composition-independence (P1880) |
+| 24 | NNBAR @ ESS | 2028-30 | τ_nn̄ = 1.75×10⁹ s ∈ [1.3×10⁸, 10¹⁰]; LANL d_n route-2 2.96×10⁻²⁸ co-guard, family-scored with #17's P1847 route (P1888) |
+| 25 | ITER / SPARC | 2028/2035 | Q = SO_5 = 10 ± 1 (P1887); T_opt = 15 keV co-guard |
+| 26 | ALPHA antihydrogen | live | H̄ = H at ppb — no antimatter-specific correction exists (P1890) |
+| 27 | JWST/Roman/Euclid 40-lens | 2028+ | H₀_local = 73.34 lens-model-independent (P1883/P1891); Gaia DR4 + JWST TRGB −4.05 co-guard |
+| 28 | LIGO O5 next BNS kilonova | 2027+ | red peak = (K_Mex−2)·A_5 = 5 d; M_ej = 0.057 M_☉ (P1886) |
+| 29 | ν=5/2 shot noise | 2027+ | e*/e = 1/D_phys = 1/4 (P1885); Ising-anyon interferometry co-guard |
+| 30 | THz folding / AlphaFold | 2026+ | landscape exponent = K_Mex = 2.083 (P1889) |
+
+Standing additions without new programs: YMC 10/3 universality (Arches/Quintuplet, P1909),
+f_Z = 0.73 over-massive falsifier (P1895), no-axion ADMX/HAYSTAC null co-guard (P1888 joins P1823).
+
+Register: **30 programs, 56 guarded members.** All prior properties (family-aware scoring,
+mutual exposure, A4 hardening) apply unchanged. Process note: this extension lagged three bands
+behind its members' wiring — per the PAPER_2165 lag lesson, future bands extend the register in
+the same band that wires a new dated prediction.

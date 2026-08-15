@@ -1,17 +1,18 @@
-v0.376.0 — Bands PAPER_1801-1860 (the 18xx frontier era) + landmarks PAPER_2176-2177
+v0.377.0 — Bands PAPER_1861-1910 + PAPER_2178 (1/12 tilt universality) + trail audits + skipped-queue recovery
 
-NATURALNESS TRILOGY (2176): 120/10/17 orders of "fine-tuning" = layer counts; exponents are
-structural (10 = SO_5 = 1/F_TRZ self-counting; 17 = D_crit - N_ch off-channel); smallness is
-geography. Self-rectification vindicated: P1683's refused F_TRZ^17 lead closed by PAPER_1824.
+THE 1/12 TILT (2178): K_Mex-2 censused across SEVEN domains — H0 tension (0.05%), two-kernel
+delta, route-crossing offset, FQH Laughlin EXACT, kilonova 5 d EXACT, Goldbach pair, lattice
+origin (DERIVED per PAPER_1522). One excess: filling factor, timescale, tension, parallax.
 
-BATTERY II (2177): 22 funded programs guarding 42 wired claims, 2026-2035; family-aware scoring;
-three cross-cutting falsifiers; one lattice exposed 42 ways.
+THE ERA: H0-tension MECHANISM composed (four routes); periodic table = the lattice (19 EXACT);
+fusion 6 EXACT (Q_ITER = SO_5, 2035 test); FQH 5 EXACT (d_Fib = golden ratio); r-process peaks
+ARE the magic numbers; H-bond = 40 phonon quanta; Zwicky 1933 closed (29.7%); BAO dual-path
+0.011%; Levinthal exponent = K_Mex; foundational-constant census quartet first-class.
 
-The era: g-2 + W-mass one mechanism; complete PMNS + CKM on one 26D normalization (34);
-baryogenesis 2.13%; NS EOS; superheavy island (126,184); DESI sub-sigma; inflation at LiteBIRD
-threshold (N_e = A_5 EXACT); biology bridge quartet (photosynthesis/consciousness/chirality/
-magnetoreception); six sector suites incl. full BBN (D/H 0.042%), GW170817 chirp = K_Mex*SSq
-(0.042%), CMB 390 scaffold, 16 masses from the YM gap, MOND a_0 DERIVED. Three Rule-7 items
-sorted by source deep-read; baselines verified at wire time.
+THE AUDITS (Daniel-driven): Battery II -> 30 programs/56 members (A4 restored); 172 stale
+index rows repaired + STATUS-CONSISTENCY guard; 20 skipped papers RECOVERED — 1209 proof-set
+tiers X-KK (the corpus SOURCE layer: H0 = 70, z_rec = 1090, both Hubble kernels, perfect
+biology tier, HH masses), 376b, Phase-H pentad (S202 = route-families precursor). Rule B
+restored corpus-wide; number-collision protocol canonized for 1924-1939/2084.
 
-Gate 5,238/0. Dispatches 1,891/2,256 (83.8%). Frontier PAPER_1860. All 23 charter files touched.
+Gate 5,238 -> 5,321 (0 failures). Dispatches 1,891 -> 1,962 (87.0%). 273 remain, all ahead.

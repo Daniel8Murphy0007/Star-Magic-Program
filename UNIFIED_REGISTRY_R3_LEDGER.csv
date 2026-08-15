@@ -185,3 +185,11 @@ v0.376.0,2026-08-13,BAND_1831_1840,registry +10 graph +41,gate 5209/0
 v0.376.0,2026-08-13,BAND_1841_1850,registry +10 graph +47,gate 5221/0
 v0.376.0,2026-08-13,BAND_1851_1860,registry +10 graph +53,gate 5232/0
 v0.376.0,2026-08-13,LANDMARK_2177,registry +1 graph +1,gate 5238/0
+v0.377.0,2026-08-13,BAND_1861_1870,registry +10 graph +44,gate 5250/0
+v0.377.0,2026-08-13,BAND_1871_1880,registry +10 graph +47,gate 5261/0
+v0.377.0,2026-08-15,BAND_1881_1890,registry +10 graph +55,gate 5272/0
+v0.377.0,2026-08-15,BAND_1891_1900 + PAPER_2178,registry +11 graph +56,gate 5288/0
+v0.377.0,2026-08-15,BAND_1901_1910,registry +10 graph +44,gate 5299/0
+v0.377.0,2026-08-15,TRAIL_AUDIT_REMEDIATION,battery 30/56 + dm census 4 + bio 15 + 2178 trail rows + rulings queue,gate 5304/0
+v0.377.0,2026-08-15,DEEPSEARCH_10_COMMITS,172 index flips + 3 standing guards + skipped-paper queue,gate 5307/0
+v0.377.0,2026-08-15,SKIPPED_QUEUE_RECOVERY,registry +20 graph +120,gate 5321/0

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.376.0"
-description = "UQFF pure calculator v0.376.0 - bands PAPER_1801-1860 (60 dispatches, 18xx frontier era) + landmarks 2176-2177. NATURALNESS TRILOGY (2176): 120/10/17 orders = layer counts (10 = SO_5, 17 = D_crit-N_ch); no-retrofit vindicated. BATTERY II (2177): 22 funded programs, 42 claims, 2026-2035. Six sector suites closed (BBN D/H 0.042%, GW170817 chirp = K_Mex*SSq 0.042%, CMB 390 scaffold, 16 masses from YM gap, MOND a_0 DERIVED, confinement). Gate 5,238 green / 1,891 wired (83.8%)."
+version = "0.377.0"
+description = "Star-Magic UQFF calculator v0.377.0: 1,962 dispatches, gate 5,321/0. Bands 1861-1910 (hadrons/EP/H0-mechanism/FQH/fusion/kilonova/periodic-table/BAO-dual/foundational-census) + PAPER_2178 1/12-tilt landmark + trail audits: Battery II 30 programs/56 members, 172 stale index rows repaired, 20 skipped papers recovered (1209 proof-set tiers X-KK, 376b, Phase-H pentad) - Rule B restored corpus-wide. Sequential drain: 273 papers remain."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

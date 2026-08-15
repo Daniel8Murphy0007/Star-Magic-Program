@@ -220,3 +220,10 @@ PAPER_1831_1840,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.376.0
 PAPER_1841_1850,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.376.0
 PAPER_1851_1860,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.376.0
 PAPER_2177,LANDMARK,uqff_calculator.py::DISPATCH,1 dispatch,v0.376.0
+PAPER_1861_1870,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.377.0
+PAPER_1871_1880,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.377.0
+PAPER_1881_1890,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.377.0
+PAPER_1891_1900,BAND,uqff_calculator.py::DISPATCH,10 dispatches + PAPER_2178 landmark,v0.377.0
+PAPER_1901_1910,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.377.0
+PAPER_2178,LANDMARK,uqff_calculator.py::DISPATCH,1 dispatch,v0.377.0
+SKIPPED_QUEUE_20,RECOVERY,uqff_calculator.py::DISPATCH,20 dispatches (21 files; HH base+UPDATE one dispatch),v0.377.0

@@ -6148,3 +6148,74 @@ g_factor_suite,WHITEPAPER,derived,,,13 particles,<=2.55%,,particle,,PAPER_1858,,
 origin_of_mass,WHITEPAPER,derived,,,16 masses,YM-gap chain,,particle,,PAPER_1859,,,,,,WIRED
 solar_anomaly_suite,WHITEPAPER,derived,,,6 anomalies,Pioneer 1.94%,,solar,,PAPER_1860,,,,,,WIRED
 dated_kill_register_ii,WHITEPAPER,prediction,,,22 programs / 42 members,"Battery II, 2026-2035 horizon",0.0,prediction-registry,,PAPER_2177,,,,,,WIRED
+hadron_spectrum,WHITEPAPER,derived,,,J/psi 3.097,EXACT; 12 hadrons,,qcd,,PAPER_1861,,,,,,WIRED
+halo_alternative,WHITEPAPER,derived,,,slope 1.9; 65 sats,missing-satellite dissolved,,cosmology,,PAPER_1862,,,,,,WIRED
+high_tc_materials,WHITEPAPER,derived,,,YBCO 92.7,0.33%; ladder extension,,condensed,,PAPER_1863,,,,,,WIRED
+turbulence_cascade,WHITEPAPER,derived,,,-5/3 EXACT,Kolmogorov = D_phys*K_Mex/5,,fluids,,PAPER_1864,,,,,,WIRED
+origin_of_life,WHITEPAPER,derived,,,64/20/51.67/463,bridge quintet,,biology,,PAPER_1865,,,,,,WIRED
+symmetry_cascade,WHITEPAPER,derived,,,6 scales,GUT 28% honest,,particle,,PAPER_1866,,,,,,WIRED
+cnub_complete,WHITEPAPER,derived,,,N_eff 3.0434,0.086%; two-route family,,cosmology,,PAPER_1867,,,,,,WIRED
+solar_suite,WHITEPAPER,derived,,,8 obs,7.65-17.8% honest,,solar,,PAPER_1868,,,,,,WIRED
+grw_collapse,WHITEPAPER,derived,,,1e-16,EXACT; rung 16,,foundations,,PAPER_1869,,,,,,WIRED
+fission_fragments,WHITEPAPER,derived,,,2.397; 96.5/144.1,0.96%,,nuclear,,PAPER_1870,,,,,,WIRED
+structure_formation,WHITEPAPER,derived,,,gamma 1.843,consolidated,,cosmology,,PAPER_1871,,,,,,WIRED
+qed_hyperfine,WHITEPAPER,derived,,,Mu EXACT,0.001% Ps,,qed,,PAPER_1872,,,,,,WIRED
+bh_thermo_info,WHITEPAPER,derived,,,+0.579% correction,testable,,bh,,PAPER_1873,,,,,,WIRED
+stellar_endpoints,WHITEPAPER,derived,,,1.4349/2.18/140.1,0.07-0.97%,,astro,,PAPER_1874,,,,,,WIRED
+higgs_branchings,WHITEPAPER,derived,,,bb 0.579,0.34%,,particle,,PAPER_1875,,,,,,WIRED
+kerr_qnm,WHITEPAPER,derived,,,omega_I 0.0892,0.19%,,gw,,PAPER_1876,,,,,,WIRED
+recombination_dark_ages,WHITEPAPER,derived,,,z_rec 1076,1.28%; P1552 family,,cosmology,,PAPER_1877,,,,,,WIRED
+qgp_suite,WHITEPAPER,derived,,,eta/s at KSS,honest 2x disclosed,,qgp,,PAPER_1878,,,,,,WIRED
+agn_blazars,WHITEPAPER,derived,,,BZ 0.144,4.15%,,astro,,PAPER_1879,,,,,,WIRED
+ep_universality,WHITEPAPER,derived,,,eta = 0,PREDICTED null,,gravity,,PAPER_1880,,,,,,WIRED
+pbh_dark_matter,WHITEPAPER,derived,,,1.51e23 g peak,69% DM asteroid,,cosmology,,PAPER_1881,,,,,,WIRED
+wz_decay_precision,WHITEPAPER,derived,,,Br(had) 0.676,0.25%,,particle,,PAPER_1882,,,,,,WIRED
+h0_tension_lensing,WHITEPAPER,derived,,,ratio 1.08808,0.05%,,cosmology,,PAPER_1883,,,,,,WIRED
+water_hydrogen_bond,WHITEPAPER,derived,,,19.95 kJ/mol,0.24%; 4 EXACT,,chemistry,,PAPER_1884,,,,,,WIRED
+fqh_topological,WHITEPAPER,derived,,,nu = 1/3,5 EXACT,,condensed,,PAPER_1885,,,,,,WIRED
+r_process_kilonova,WHITEPAPER,derived,,,peaks 50/82/126,EXACT; Mej 14%,,astro,,PAPER_1886,,,,,,WIRED
+fusion_iter_q,WHITEPAPER,derived,,,Q = 10,6 EXACT,,plasma,,PAPER_1887,,,,,,WIRED
+b_cp_violation,WHITEPAPER,derived,,,tau 1.75e9 s,testable 2028,,particle,,PAPER_1888,,,,,,WIRED
+protein_folding,WHITEPAPER,derived,,,exponent 2.083,EXACT vs Plaxco,,biology,,PAPER_1889,,,,,,WIRED
+hydrogen_spectrum,WHITEPAPER,derived,,,21cm 5.949 ueV,1.28%,,atomic,,PAPER_1890,,,,,,WIRED
+one_twelfth_tilt_universality,WHITEPAPER,landmark,,,1/12 EXACT seven domains,census,,cross-domain,,PAPER_2178,,,,,,WIRED
+distance_ladder_snia,WHITEPAPER,derived,,,M_B -19.40,0.52%,,cosmology,,PAPER_1891,,,,,,WIRED
+periodic_table_structure,WHITEPAPER,derived,,,19 EXACT,0.18% chi_F,,chemistry,,PAPER_1892,,,,,,WIRED
+m87_jet_compact,WHITEPAPER,derived,,,2.104 at 0.1 THz,sub-1% x3,,astro,,PAPER_1893,,,,,,WIRED
+zwicky_missing_mass,WHITEPAPER,derived,,,29.7% factor,0.64% Virgo,,cosmology,,PAPER_1894,,,,,,WIRED
+cgm_metal_retention,WHITEPAPER,derived,,,f_Z 0.73,EXACT anchor,,astro,,PAPER_1895,,,,,,WIRED
+void_h0_shift,WHITEPAPER,derived,,,3.51 km/s/Mpc,0.30%,,cosmology,,PAPER_1896,,,,,,WIRED
+dwave_strong_coupling,WHITEPAPER,derived,,,ratio 4.96,1.68% YBCO,,condensed,,PAPER_1897,,,,,,WIRED
+hypergraph_counts,WHITEPAPER,derived,,,74 rules,EXACT,,foundations,,PAPER_1898,,,,,,WIRED
+bao_dual_path,WHITEPAPER,derived,,,0.033044/0.033031,0.011/0.026%,,cosmology,,PAPER_1899,,,,,,WIRED
+solar_wind_bimodal,WHITEPAPER,derived,,,376/723 km/s,ratio 2.8%,,solar,,PAPER_1900,,,,,,WIRED
+m_sigma_slope_seq,WHITEPAPER,derived,,,n = 5.1,EXACT,,astro,,PAPER_1901,,,,,,WIRED
+reactor_qscope_triad,WHITEPAPER,derived,,,U_A 5.205 V,0.33%; 12 groups,,reactor,,PAPER_1902,,,,,,WIRED
+triple_lambda_closure_seq,WHITEPAPER,derived,,,3 routes,EXACT/0.003/0.18%,,cosmology,,PAPER_1903,,,,,,WIRED
+reactor_bh_bridge,WHITEPAPER,derived,,,pH -36.92,0.22-0.66%,,foundations,,PAPER_1904,,,,,,WIRED
+schwabe_compact,WHITEPAPER,derived,,,11.25 yr,2.27%,,solar,,PAPER_1905,,,,,,WIRED
+f_ubi_i_99_census,WHITEPAPER,derived,,,1.0973,EXACT; 67 calcs,,foundations,,PAPER_1906,,,,,,WIRED
+scm_carrier_census,WHITEPAPER,derived,,,5.17 meV,EXACT; 95 apps,,foundations,,PAPER_1907,,,,,,WIRED
+q_uqff_resonator,WHITEPAPER,derived,,,1.1875e6,EXACT,,foundations,,PAPER_1908,,,,,,WIRED
+ymc_growth_factor,WHITEPAPER,derived,,,10/3,EXACT x2 systems,,astro,,PAPER_1909,,,,,,WIRED
+um_uem_ratio,WHITEPAPER,derived,,,0.057,EXACT x8 systems,,foundations,,PAPER_1910,,,,,,WIRED
+tier_x_climate,WHITEPAPER,derived,,,420 ppm CO2,5 EXACT,,proof-set,,PAPER_1209X,,,,,,WIRED
+tier_y_engineering,WHITEPAPER,derived,,,9 EXACT,engineering block,,proof-set,,PAPER_1209Y,,,,,,WIRED
+tier_z_astronomical,WHITEPAPER,derived,,,H0 = 70,6 EXACT,,proof-set,,PAPER_1209Z,,,,,,WIRED
+tier_aa_chemistry,WHITEPAPER,derived,,,CHNO EXACT,4 EXACT,,proof-set,,PAPER_1209AA,,,,,,WIRED
+tier_bb_biology,WHITEPAPER,derived,,,perfect tier,10/10 EXACT,,proof-set,,PAPER_1209BB,,,,,,WIRED
+tier_cc_geophysics,WHITEPAPER,derived,,,R_earth 6371,7 EXACT,,proof-set,,PAPER_1209CC,,,,,,WIRED
+tier_dd_em_precision,WHITEPAPER,derived,,,alpha 0.003%,10 sub-0.11%,,proof-set,,PAPER_1209DD,,,,,,WIRED
+tier_ee_quantum_thermo,WHITEPAPER,derived,,,Faraday 96485,4 EXACT,,proof-set,,PAPER_1209EE,,,,,,WIRED
+tier_ff_math_constants,WHITEPAPER,derived,,,ln10 0.019%,rational approximants,,proof-set,,PAPER_1209FF,,,,,,WIRED
+tier_gg_cosmology,WHITEPAPER,derived,,,z_rec 1090,2 EXACT + both kernels,,proof-set,,PAPER_1209GG,,,,,,WIRED
+tier_hh_sm_masses,WHITEPAPER,derived,,,m_W 0.003%,10 masses 6 OOM,,proof-set,,PAPER_1209HH,,,,,,WIRED
+tier_ii_nuclear_be,WHITEPAPER,derived,,,anchor 3.9246,10 sub-0.05%,,proof-set,,PAPER_1209II,,,,,,WIRED
+tier_jj_geodetic,WHITEPAPER,derived,,,M_earth 0.0009%,beta polynomial,,proof-set,,PAPER_1209JJ,,,,,,WIRED
+tier_kk_solar_system,WHITEPAPER,derived,,,Moon 0.005%,registry census,,proof-set,,PAPER_1209KK,,,,,,WIRED
+formal_proof_set_extended,WHITEPAPER,derived,,,12+4 verified,dimensional PASS,,proof-set,,PAPER_376b,,,,,,WIRED
+phase_h_null_extraction,WHITEPAPER,derived,,,F_U = 0,structural,,proof-set,,PAPER_S201_Phase_H201_NullExtraction,,,,,,WIRED
+phase_h_variant_branches,WHITEPAPER,derived,,,4 classes,route-families precursor,,proof-set,,PAPER_S202_Phase_H202_VariantBranches,,,,,,WIRED
+phase_h_ptf,WHITEPAPER,derived,,,5 phases,structural,,proof-set,,PAPER_S203_Phase_H203_PTF,,,,,,WIRED
+phase_h_gap_closure,WHITEPAPER,derived,,,3 mechanisms,structural,,proof-set,,PAPER_S204_Phase_H204_GapClosure,,,,,,WIRED
+phase_h_expansion_erosion,WHITEPAPER,derived,,,pentad complete,structural,,proof-set,,PAPER_S205_Phase_H205_ExpansionErosion,,,,,,WIRED

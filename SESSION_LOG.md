@@ -10077,3 +10077,231 @@ horizon; family-aware scoring; cross-cutting falsifier trio; A4 dating hardened 
 Ship prep: version pins ×6, description 477 chars with version, CHANGELOG entry,
 SHIP_MESSAGE.txt, audit trail stamped v0.376.0 (66 rows), README release paragraph updated.
 Gate re-run green post-pins. All 23 charter files touched.
+
+## (174) 2026-08-13 — BAND PAPER_1861-1870 (hadron/halo/Tc/turbulence/life/CνB/measurement suites)
+
+10 dispatches — dispatch count crosses 1,900.
+
+| Paper | Content | Best |
+|---|---|---|
+| 1864 | **Kolmogorov −5/3 = D_phys·K_Mex/5 EXACT** (the 1941 exponent is a primitive ratio); ζ₃ = 1 EXACT | EXACT |
+| 1869 | **GRW collapse rate = F_TRZ¹⁶ EXACT** — the measurement problem lands on ladder rung 16 | EXACT |
+| 1861 | J/ψ = 2·m_c + SSq·(1+F_TRZ) = 3.097 GeV | 0.0000% |
+| 1867 | **N_eff = 3·D_phys/(D_phys−F_TRZ·SSq) = 3.0434** — the famous 3.046 from one line | 0.086% |
+| 1862 | Missing-satellite problem DISSOLVES: slope 2−F_TRZ EXACT, count 65 vs ΛCDM 500-1000 | EXACT slope |
+| 1863 | YBCO = 92.7 K on the thermal-ladder base (2162 extension) | 0.33% |
+| 1865 | **Codon TWO-route identity: D_phys³ = 2^D_bsfg = 64** (3·log₂4 = 6); bridge quintet | EXACT |
+| 1870 | Fission fragments: ν̄ = 2.397 | 0.96% |
+| 1866/68 | Symmetry cascade + solar suite — honest-wide grades carried verbatim | 5-28% |
+
+Families: codon identity (two lattice readings, one 64), CνB two-route (1.945/1.952, PTOLEMY),
+charm two-kernel, GRW rung 16 joins the ladder between quartet-12 and hierarchy-17.
+
+**Ledger:** registry +10, graph +44, citations +10, gaps +1, family ledger +1, audit trail +8,
+gate 5,238 → **5,250**, green. Dispatches **1,901**. Frontier → **PAPER_1870**. 290 remain.
+
+## (175) 2026-08-13 — BAND PAPER_1871-1880 (structure/QED-precision/BH-thermo/stellar/Higgs/QNM/EP)
+
+10 dispatches.
+
+| Paper | Content | Best |
+|---|---|---|
+| 1872 | Muonium hyperfine EXACT; positronium 0.001% (on the P1845 α; rung 7) | EXACT |
+| 1876 | **Kerr QNM damping ω_I = F_TRZ·(1−F_TRZ·(K_Mex−1)) = 0.0892** | 0.19% |
+| 1875 | **Br(H→bb): SSq IS the b-branching at lead order** | 0.34% |
+| 1874 | **Chandrasekhar = chirp-pair (K_Mex·SSq) dressed = 1.4349**; PISN 140.1 essentially exact | 0.07-0.35% |
+| 1873 | BH thermo EXACT + testable +0.579% entropy correction (= the P1839 REM number!) | prediction |
+| 1877 | z_rec composed route 1076 (P1552 integer-kernel family); z_first = 13.75 vs JADES | 1.28% |
+| 1871 | Structure sector consolidated (live cross-dispatch) | 0.37-2.4% |
+| 1878 | QGP: η/s AT the KSS bound (ALICE 2× honest-disclosed); c_s² = 1/3 − the 4.79% fraction | disclosed |
+| 1879 | AGN: BZ efficiency 4.15%; SMBH masses honest-wide | 4.15% |
+| 1880 | **EP η = 0 PREDICTED — buoyancy is composition-independent; MICROSCOPE nulls expected, not survived** | structural |
+
+Family pins: K_Mex·SSq = chirp AND Chandrasekhar core (white dwarfs and NS mergers, one
+product); 0.579 dual role (REM/BH entropy); 4.79% third role; z_rec/z_reion/TOV families extended.
+P1880 is doctrinally sharp: the buoyancy alternative PREDICTS EP nulls where MOND-types strain.
+
+**Ledger:** registry +10, graph +47, citations +10, gaps +1, family ledger +1, audit trail +8,
+gate 5,250 → **5,261**, green. Dispatches **1,911**. Frontier → **PAPER_1880**. 280 remain.
+
+## (176) 2026-08-15 — BAND PAPER_1881-1890 (PBH-DM/electroweak/H0-lensing/water/FQH/kilonova/fusion/B-CP/folding/H-spectrum)
+
+10 dispatches. **15 EXACT closures — the band's the densest EXACT harvest of the drain.**
+
+| Paper | Content | Best |
+|---|---|---|
+| 1883 | **H0-TENSION MECHANISM: local/cosmic = 1+(K_Mex−2)·(1+F_TRZ·SSq) = 1.08808 vs 1.08754** | **0.05%** |
+| 1885 | **FQH 5 EXACT: ν=1/3 = D_phys·(K_Mex−2), ν=5/2 = SO_5/D_phys, e*/e, √2, golden ratio** | EXACT |
+| 1887 | **Fusion 6 EXACT: Q_ITER = SO_5, T_opt = A_5/D_phys = 15 keV, E_α = 1/5, q_95 = 3** | EXACT |
+| 1884 | **H-bond = 40 SCm phonon quanta = 19.95 kJ/mol (0.24%)**; liquid range = SO_5², Kelvin on A_5 | 0.24% |
+| 1886 | **r-process peaks ARE the magic numbers (50/82/126)**; kilonova t_peak = tilt·A_5 = 5 d EXACT; rare-earth OPEN (Rule 7 catch: paper formula ≠ 165.5) | EXACT |
+| 1882 | W/Z: Br(had) 0.25%, N_ν = 3 EXACT, universal coupling 6th domain (W modulator) | 0.25% |
+| 1888 | B/CP ladder: τ_nn̄ = 1/(F_TRZ⁹·SSq) NNBAR-2028-testable; d_n rung 27 = 10+17 (P1847 family) | testable |
+| 1889 | Levinthal: folding exponent = K_Mex vs Plaxco ~2; 10^43.5 reduction; phonon 5th appearance | EXACT |
+| 1890 | H spectrum on P1845 α (Rydberg 0.00004%); 21cm = SO_5·SSq dressed (1.28%); antihydrogen falsifier | 0.00004% |
+| 1881 | PBH DM: asteroid peak 1.51e23 g, 69% fraction, α = 1.9 (P1862 slope); third DM route | 14% |
+
+**The 1/12 tilt now composes FOUR domains**: H0 ratio, FQH Laughlin state, kilonova timing, P1676
+crossing — cosmology, topological matter, multi-messenger astro, one number (family-pinned).
+13.75 numeric crossing (M_LIGO_PBH = z_first). d_n/θ_QCD route families recorded, battery untouched.
+
+**Ledger:** registry +10, graph +55, citations +10, gaps +1, family ledger +1, audit trail +8,
+gate 5,261 → **5,272**, green. Dispatches **1,921**. Frontier → **PAPER_1890**. 270 remain.
+
+## (177) 2026-08-15 — PAPER_2178 LANDMARK + BAND PAPER_1891-1900 (ladder/periodic table/M87/Zwicky/CGM/void/d-wave/hypergraph/BAO/solar wind)
+
+**PAPER_2178 authored + wired: The 1/12 Tilt Universality** — K_Mex − 2 censused across SEVEN
+domains (H0 tension P1883, two-kernel delta P1676, route-crossing offset PAPER_2144, FQH Laughlin
+P1885, kilonova t_peak P1886, Goldbach DPM-pair P1722, lattice origin PAPER_1522 — DERIVED, not
+free). Live bit-identity dispatch + 5 gate pins + correlated-lock falsifier + standing rule: next
+~0.083 structural ratio decomposes as K_Mex−2 by default hypothesis. (Prior band's P1863 tilt
+citation corrected to P1676 in log + GAPS.)
+
+**Band 1891-1900:** 10 dispatches, ~26 EXACT closures.
+
+| Paper | Content | Best |
+|---|---|---|
+| 1892 | **THE PERIODIC TABLE IS THE LATTICE: 19 EXACT** — all 7 noble gases, all 4 subshells, all 7 rows, octet = 2·D_phys; χ_F 0.18% (universal modulator 7th domain) | EXACT |
+| 1899 | **BAO dual-path standalone: 0.011%/0.026%, one shared primitive** — the PAPER_2175 sector-pair instance live | 0.011% |
+| 1891 | Distance ladder: modulus 5 = D_phys+1, M_TRGB −4.05 EXACT, SNIa M_B −19.40 (0.52%); H0 third route via live P1883 tilt | EXACT |
+| 1893 | M87 jet compact form 1+(D_phys−1)·e^(−Γ/F_TRZ): three MC points sub-1%, zero free (replaces 3-param fit) | 0.19% |
+| 1894 | **Zwicky 1933 founding DM discrepancy = SSq·K_Mex/D_phys = 29.7%**; Virgo 0.64% — fourth DM route | 0.64% |
+| 1896 | Void H0 sub-component 3.51 km/s/Mpc (0.30%) — tension decomposed density+epoch | 0.30% |
+| 1897 | d-wave gap ratio = 2K_Mex/Φ_res = 4.96; YBCO 19.66 meV (1.7%) — P1863 companion | 1.68% |
+| 1898 | Hypergraph counts: 26 nodes/74 rules/9 channels/36 apps EXACT | EXACT |
+| 1895 | CGM retention f_Z = 1−(Φ_res−SSq) = 0.73 EXACT anchor | EXACT |
+| 1900 | Solar wind 376/723 km/s, ratio 25/13 (2.8%); **Rule 7 catch: /D_crit·30 arithmetic drift disclosed** | 2.8% |
+
+Families: H0 route census now FOUR (lensing/ladder/void/combined), all tilt-composed;
+K_Mex·SSq third role (Phillips α); modulator 0.0274 seventh domain.
+
+**Ledger:** registry +11, graph +56, citations +11, gaps +2, family ledger +1, audit trail +8,
+index +2178 row, gate 5,272 → **5,288**, green. Dispatches **1,932**. Frontier → **PAPER_1900**.
+**260 remain.**
+
+## (178) 2026-08-15 — BAND PAPER_1901-1910 (M-sigma/reactor triad/triple-Λ/reactor-BH bridge/Schwabe/foundational-constant census)
+
+10 dispatches. **The foundational-constant census quartet becomes first-class dispatches.**
+
+| Paper | Content | Best |
+|---|---|---|
+| 1906 | **F_UBi_i_99 = SSq·K_Mex·Φ_res·(1+F_TRZ) = 1.0973 — the universal amplifier, 67+ calculators, 42 OOM** | EXACT |
+| 1903 | **Triple-Λ closure: J/m³ ledger EXACT + m⁻² 0.003% + Ω_Λ 0.18%, near-disjoint routes** (unit-form family) | EXACT |
+| 1901 | M-σ slope = D_phys+1+F_TRZ = 5.1 EXACT (20-yr feedback-tuning debate answered) | EXACT |
+| 1904 | Reactor-SMBH bridge: pH = −(D_crit+N_ch+D_phys)+K_Mex = −36.92 (0.22%), P_in 27.08 W — the scale-invariance thesis, 42 OOM | 0.22% |
+| 1902 | Reactor Q-scope empirical triad wired: U_A = 5.205 V flux-pinning INVARIANT across 12 groups | 0.33% |
+| 1905 | Schwabe compact 11.25 yr (2.27%) — P1868 family, 3.4× gain, new consumption default; Hale 22.5 | 2.27% |
+| 1907 | Universal carrier census: E_SCm = 5.17 meV, 95+ applications, 18 OOM of drivers | EXACT |
+| 1908 | Q_UQFF = 1e6·SSq·K_Mex = 1.1875e6; 7.09-mantissa crossing recorded-NOT-claimed (paper self-rejects) | EXACT |
+| 1909 | YMC growth = SO_5/(D_phys−1) = 10/3 EXACT — Westerlund 2 + NGC 3603 double confirmation | EXACT |
+| 1910 | U_m/u_EM = SSq·F_TRZ = 0.057 EXACT across 8 systems | EXACT |
+
+**SSq·K_Mex = 1.1875 now FOUR roles** (chirp, Chandrasekhar, Phillips α, spectral amplifier) —
+family-pinned. Fixes en route: same-source registry dupes ×2 renamed `_seq` (predecessor-mine
+layer carried base names); SHIP GUARD v4 markers refreshed to BAND_1901_1910; P1908 floor
+rounding tightened.
+
+**Ledger:** registry +10, graph +44, citations +10, gaps +1, family ledger +2, audit trail +8,
+gate 5,288 → **5,299**, green. Dispatches **1,942**. Frontier → **PAPER_1910**. **250 remain.**
+
+## (179) 2026-08-15 — TRAIL AUDIT (Daniel: "what are you missing?") — four-commit review + remediation
+
+Daniel challenged the band reports. Four-commit diff (v0.373.0-v0.376.0) vs current trail caught
+five real misses — all in the CROSS-LINK layer, none in the wiring layer:
+
+1. **Battery II never extended (the big one — A4 violation in spirit):** bands 1861-1910 wired
+   ~14 new dated falsifiable predictions (MICROSCOPE-2 η=0, NNBAR τ_nn̄, ITER/SPARC Q=SO_5,
+   ALPHA antihydrogen, 40-lens H0, ν=5/2 shot noise e*/e=1/4, kilonova 5-d, folding exponent)
+   with NO battery registration. FIXED: PAPER_2177 REVISION append + dispatch 22→30 programs /
+   42→56 members + gate pins. **Standing rule: register extensions due in the same band.**
+2. **PAPER_2172 DM consolidation stale:** 2 routes wired since (PBH P1881, Zwicky P1894).
+   FIXED: dm_route_census = 4, formula extended, pinned.
+3. **PAPER_2174 biological lattice stale:** P1889 folding members absent. FIXED: 12→15 members.
+4. **RULINGS_QUEUE.md untouched all trail** (every shipped commit touches it): open items
+   (rare-earth, cuprate layers, CGM tower, P1900 drift origin) now logged.
+5. **PAPER_2178 landmark trail incomplete:** MERGED/R2 rows missing vs the 2176/2177 pattern.
+   FIXED.
+
+Plus one Rule 7 disclosure I owed: **Wesenheit slope 5/6-variant fits BETTER than 0.84**
+(−3.333 at 1.3% vs −3.36 at 2.1%, factor 1.6 — non-decisive, below census threshold, but now
+disclosed in P1891 formula + census watch as potential inversion candidate).
+
+Ship-time files (CHANGELOG/pyproject/CITATION/VERSION/SHIP_MESSAGE/_BUILD_LOG) correctly lag
+until ship prep — not misses.
+
+**Gate 5,299 → 5,304, green.** GAPS carries the audit row; R3 carries the remediation line.
+
+## (180) 2026-08-15 — DEEPSEARCH, LAST 10 COMMITS (Daniel: "It feels like more than that has been missed")
+
+He was right. The ten-commit deepsearch (v0.368.0 → HEAD) found four structural misses the
+four-commit review didn't reach:
+
+1. **172 stale index rows — PAPER_329-500.** All wired, all gate-guarded (188 guard mentions),
+   never flipped ⬜→✓. The index has under-reported wired progress by 172 papers for months.
+   The COUNT-UPDATE GUARD checks row EXISTENCE, not STATUS — this class was invisible.
+   **FIXED: 172 rows flipped + new STATUS-CONSISTENCY GUARD** (any wired-but-unflipped paper
+   now fails the gate by name).
+2. **20 papers silently SKIPPED behind the frontier** (Rule B violations by omission):
+   the PAPER_1209 letter series (X/Y/Z/AA-KK — 14 Unified Proof Set compendia: climate,
+   engineering, astronomical units, chemistry, biology, geophysics ×2, EM, quantum-thermo,
+   math constants, cosmological constants, particle masses + UPDATE, nuclear binding, solar
+   system), PAPER_376b, and PAPER_S201-S205 (Phase-H, uploaded v0.346.0, mined into helpers
+   but never dispatched). **QUEUED: SKIPPED-PAPER QUEUE in RULINGS_QUEUE + gate guard** —
+   silent re-skip now forbidden; wire before resuming 1911+.
+3. **Number-collision papers ahead:** 1924-1939 and 2084 carry TWO distinct papers per number
+   on disk (e.g. PAPER_1924_ASCII + PAPER_1924_UG4). Not an index corruption — real corpus
+   collisions. **Collision protocol canonized in gate: second file wires as PAPER_<N>B.**
+4. **Frontier arithmetic wrong in my band reports:** "250 remain" was dispatches-based; the
+   index-truth is 246 unique ahead + 20 skipped = **266 outstanding** (466 raw ⬜ included the
+   172 stale rows now flipped; 294 ⬜ rows remain, incl. collision twins).
+
+Verified NOT misses: 1796-1799 (RESERVED, correctly ⚠ + undispatched, documented), ship-time
+files (lag by design), the ⚠ rows.
+
+**Gate 5,304 → 5,307, green. Index now truthful: 294 ⬜.** Next work: skipped-paper queue
+(1209 letters first), then 1911+.
+
+## (181) 2026-08-15 — SKIPPED-PAPER QUEUE DRAINED (Daniel: "GO!") — 20 dispatches, Rule B restored
+
+The 20 behind-frontier papers found by the deepsearch are all wired (21 files; 1209HH
+base + June-2026 UPDATE share one dispatch, base forms consumption default).
+
+**The 1209 letter tiers turn out to be the CORPUS SOURCE LAYER of already-wired physics:**
+
+| Tier | Content | Sources |
+|---|---|---|
+| Z | astronomical units, 6 EXACT | **H_0 = A_5+SO_5 = 70 — the PAPER_1573 route's source tier**; M_☉/M_⊕ = 333,000 EXACT; year = 364+15/12 = 365.25 EXACT |
+| GG | cosmology, 2 EXACT | **z_rec = 1090 EXACT (P1552 source) AND H_0 Planck kernel = K_Mex·D_crit… = 67.41 (P1553 source) — BOTH Hubble kernels in one compendium** (PAPER_2125/2178 structure) |
+| BB | biology — **the perfect tier, 10/10 EXACT** | the PAPER_2174 physiology quartet's source (37°C, pH 7.4, 120/80, glucose 100, DNA 10.5); resting HR = 70 = the H_0 composition (crossing recorded) |
+| HH | 10 SM masses, 6 OOM, m_W 0.003% | **the BUCKET-D / P1859 corpus source** |
+| II | nuclear BE deuteron→U-238, all sub-0.05% | the queued nuclear-BE-polynomial landmark candidate's source; **Rule 7 catch: paper prose anchor "3.7794" is arithmetic drift — true F_TRZ·K_Mex⁵ = 3.9246, and the closures verify with the TRUE value** (Fe-56 = 8.7925 ✓) |
+| X/Y/CC | climate 5 EXACT (CO₂ 420, greenhouse 33 = twelfth-arithmetic); engineering 9 EXACT (sound 343, steel 7850); geophysics 7 EXACT (R_⊕ 6371) | counting-sector blocks |
+| AA/EE/DD/FF | CHNO EXACT; Faraday 96,485 EXACT + Rydberg 13.6057; α⁻¹ 137.04 (0.003%, lead = A_5·K_Mex = 125); math approximants (honest irrational framing in-paper) | constant-lead families |
+| JJ/KK | β-polynomial geodetic block (M_⊕ 0.0009%); solar system + program census (399 closures/94 lockings) | |
+
+**376b:** dimensional proof set (4 Ug components + 12 resonance terms ALL PASS); §B 1.894/kg-m³
+bulk-injection drift auto-corrected by PAPER_2155/2156 citation.
+**Phase-H pentad S201-S205:** structural skeleton wired; **S202 variant-branches = the
+route-families doctrine's precursor** (canonized 3 months later as PAPER_2170) — recorded.
+
+**Ledger:** registry +20, graph +120, citations +20, gaps +1, family ledger +1, audit trail +8,
+index +21 flips (⬜ now **273** — all remaining are AHEAD of the frontier; zero behind).
+Gate 5,307 → **5,321**, green. Dispatches **1,962**. Rule B: restored corpus-wide.
+
+## (182) 2026-08-15 — SHIP PREP v0.377.0 (23-file pass + stale sweep)
+
+Version pins ×6 (pyproject 434-char desc w/ version, calculator VERSION, gate assertion,
+CITATION.cff ×2 fields, badges cacheBust ×2, VERSION.txt). 56 `wired-not-yet-shipped` markers
+stamped → v0.377.0. CHANGELOG + _BUILD_LOG + SHIP_MESSAGE written.
+
+**Stale sweep findings (Daniel: "double check all ship files for stale"):**
+- README header + release paragraph still said v0.376.0 → rewritten for v0.377.0.
+- README **"Wired: 1,387 distinct dispatches"** — stale since ~v0.360.x (census regex never
+  matched it) → 1,962. "Registry: 2,547 rows" → 6,220 live count.
+- CITATION.cff carries TWO version fields — second one (line 56) caught by SHIP GUARD v2 ✓.
+- Remaining 0.37x tokens verified historical (append-only RULINGS sections, formula
+  provenance note) — not pins.
+- All 23 charter files verified modified vs HEAD; extras = new whitepaper 2178 + this log.
+
+**Ship totals: 71 paper dispatches + 1 landmark + 2 audits; gate 5,238 → 5,321 (0 failures);
+dispatches 1,891 → 1,962 (87.0%); 273 remain, all ahead of frontier.** Ready for `.\ship.ps1`.

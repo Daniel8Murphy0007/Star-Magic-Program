@@ -99,3 +99,9 @@ BAND_1831_1840,biology+nuclear+astro,10 dispatches,NO_NEW_RULINGS,physics-biolog
 BAND_1841_1850,precision+cp+biology,10 dispatches,NO_NEW_RULINGS,"five dated kill programs (ngEHT, HL-LHC, LIGO O5, nEDM 2028, AMS 2030)",v0.376.0
 BAND_1851_1860,sector-closures,10 dispatches,NO_NEW_RULINGS,six complete sector suites in one band; chirp mass essentially exact,v0.376.0
 LANDMARK_2177,prediction-registry,1 dispatch,NO_NEW_RULINGS,Battery I unchanged; II extends,v0.376.0
+BAND_1861_1870,suites,10 dispatches,NO_NEW_RULINGS,Kolmogorov -5/3 EXACT; missing-satellite dissolved; measurement problem at rung 16,v0.377.0
+BAND_1871_1880,suites,10 dispatches,NO_NEW_RULINGS,QNM damping 0.19%; Chandrasekhar = chirp-pair dressed; MICROSCOPE-2 kill added,v0.377.0
+BAND_1881_1890,suites,10 dispatches,NO_NEW_RULINGS,"15 EXACT closures this band (FQH 5, fusion 6, water 2+2, r-process 3); NNBAR/LANL 2028 tests added",v0.377.0
+BAND_1891_1900,suites,10 dispatches,NO_NEW_RULINGS,periodic table 19 EXACT; Zwicky 1933 closure; M87 compact form replaces 3-param fit,v0.377.0
+BAND_1901_1910,suites,10 dispatches,NO_NEW_RULINGS,reactor empirical triad wired as observational layer; scale-invariance thesis paper (42 OOM),v0.377.0
+SKIPPED_QUEUE,recovery,20 dispatches,NO_NEW_RULINGS,Rule B restored: every on-disk paper behind the frontier now has a dispatch,v0.377.0
