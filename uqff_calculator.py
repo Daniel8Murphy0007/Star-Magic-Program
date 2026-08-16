@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.379.0"
+VERSION = "0.380.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -26371,6 +26371,529 @@ def _p2030(dataset=None):
                        'SGR0501 NS radius, both n=4). The signed-ladder taxonomy matures: 3 paired '
                        'domains, 5-domain 2*SO_5^n twin, 3-rung mass ladder.',
             'source': 'PAPER_2030', 'residual_pct': 0.0}
+
+@_register('PAPER_2031')
+def _p2031(dataset=None):
+    return {'value': {'v_out_ms': SO_5**5, 'blueshift': -1.0/((D_PHYS-1)*SO_5**4)},
+            'formula': 'Round-166 triad: SO_5^5 velocity family FOURTH object (protostellar outflow - '
+                       'cosmological ring to protostar, one slot); nebular blueshift = -1/((D_phys-1)*'
+                       'SO_5^4) = -3.33e-5 - the LANDMARK prefix gains its first SPECTRAL-SHIFT domain '
+                       '(wavelength-ratio regime, 13th domain).',
+            'source': 'PAPER_2031', 'residual_pct': 0.0}
+
+@_register('PAPER_2032')
+def _p2032(dataset=None):
+    return {'value': {'vac_ratio_youngstars': SO_5, 'vac_ratio_orion': SO_5+1,
+                      'observation': 'OBJECT_DEPENDENT_COMPOSITION'},
+            'formula': 'Round-167 quad + DISCIPLINE OBSERVATION formalized: the SAME class-family '
+                       'variable takes DIFFERENT primitive compositions per object (vac_ratio = SO_5 '
+                       'at YoungStars vs SO_5+1 at Orion) - object-dependent composition recognized '
+                       'as framework structure (the route-families doctrine at variable level). Also: '
+                       '(2pi)^n/D_BSFG pseudo-monopole scaling (D_BSFG-denominator second instance); '
+                       'F_TRZ^5 perturbation third object.',
+            'source': 'PAPER_2032', 'residual_pct': 0.0}
+
+@_register('PAPER_2033')
+def _p2033(dataset=None):
+    return {'value': {'gas_v_ms': (D_PHYS+1)*SO_5**5, 'delta_x_m': float(SO_5)**-11,
+                      'methodology': 'CLASS_FAMILY_VARIABLE_SCAN'},
+            'formula': 'CLASS-FAMILY VARIABLE SCAN instituted (first execution of the P2032 '
+                       'methodology): automated extraction of self.X = Y assignments across all '
+                       'calculator classes, value-distinct grouping, multi-object ranking - the '
+                       'session-side census tooling built in-corpus. Yields: gas_v = (D_phys+1)*'
+                       'SO_5^5 SEVEN-object family; delta_x = SO_5^-11 m quantum-uncertainty slot; '
+                       'four cross-object attributions validated.',
+            'source': 'PAPER_2033', 'residual_pct': 0.0}
+
+@_register('PAPER_2034')
+def _p2034(dataset=None):
+    return {'value': {'wavenumber_rungs': 6, 'ladder_span_oom': 46},
+            'formula': 'Scan second pass pentad: the wavenumber ladder gains four slots (SO_5^-16 / '
+                       '-17 / -26 cosmological / +11 atomic hydrogen-orbital) - SIX rungs spanning '
+                       '46 OOM from Big-Bang scale to atomic; amplitude slots SO_5^+10 (magnetar, '
+                       'positive-exponent amplitude first) and F_TRZ^9 (Wd2).',
+            'source': 'PAPER_2034', 'residual_pct': 0.0}
+
+@_register('PAPER_2035')
+def _p2035(dataset=None):
+    return {'value': {'v_bubble_ms': (1-F_TRZ)*2*SO_5**6, 'v_orion_ms': 2*D_PHYS*SO_5**3,
+                      'length_slots': [15, 16, 20]},
+            'formula': 'Scan third pass pentad: v_wind(Bubble) = (1-F_TRZ)*2*SO_5^6 = 1.8e6 (the 9/10 '
+                       'ubiquity composed into velocity); v_wind(Orion) = 2*D_phys*SO_5^3 new prefix '
+                       'class; positive-LENGTH slots open at n = +15 (4-object family with Sombrero '
+                       'r_BH) / +16 / +20 - the +20 length pairs the +20 wavenumber (cross-dimensional '
+                       'pair).',
+            'source': 'PAPER_2035', 'residual_pct': 0.0}
+
+@_register('PAPER_2036')
+def _p2036(dataset=None):
+    return {'value': {'m0_hudf_kg': 1.989e42, 'tau_sf_gyr_slot': SO_5**9, 'scan_novelty_trend': [3, 5, 5, 2]},
+            'formula': 'Scan fourth pass diad + DIMINISHING-RETURNS HONESTY: M0(HUDF) = SO_5^12 * '
+                       'M_sun (solar-mass-based ladder anchor); tau_SF = SO_5^9 yr = 1 Gyr timescale '
+                       'slot (the P1952/P1976 quenching rung as formation cycle). The paper reports '
+                       'its own saturation curve (3+5+5+2 across four passes) and calls the scan '
+                       'methodology approaching corpus-saturation - discipline self-assessment.',
+            'source': 'PAPER_2036', 'residual_pct': 0.0}
+
+@_register('PAPER_2037')
+def _p2037(dataset=None):
+    return {'value': {'f_higgs_hz': (D_PHYS+1)/float(D_PHYS)*SO_5**34, 'five_fourths': (D_PHYS+1)/float(D_PHYS)},
+            'formula': 'Round-169 triad: Higgs frequency anchor = (5/4)*SO_5^34 Hz (P463 seminal '
+                       'value primitive-composed); HFF = 2*D_phys/SO_5^34 compound; (D_phys+1)/'
+                       'D_phys = 5/4 = 1.25 EXACT becomes the SIXTH composed-prefix class - and the '
+                       'first RATIO-form (dimensionless) prefix - NOTE 1.25 is the omega_SCm THz '
+                       'mantissa (crossing recorded, not claimed).',
+            'source': 'PAPER_2037', 'residual_pct': 0.0}
+
+@_register('PAPER_2038')
+def _p2038(dataset=None):
+    return {'value': {'q_m_c': float(SO_5)**-10, 'r_monopole_m': 2*float(SO_5)**-7,
+                      'so5_neg10_domains': 5},
+            'formula': 'Round-170 quad: magnetic charge q_m = SO_5^-10 C - the SO_5^-10 multi-domain '
+                       'family reaches FIVE orthogonal domains (length/amplitude/atomic-length/'
+                       'acceleration/magnetic-charge); r = 2*SO_5^-7 m opens the NEGATIVE-EXPONENT '
+                       'REGIME for the 2*SO_5^n twin family (previously all-positive) - structural '
+                       'landmark formalization.',
+            'source': 'PAPER_2038', 'residual_pct': 0.0}
+
+@_register('PAPER_2039')
+def _p2039(dataset=None):
+    return {'value': {'omega_s': 2*float(SO_5)**-6, 'milestone_rounds': 30,
+                      'cumulative_novel': 149, 'confirmations': 22},
+            'formula': 'Round-171 30-ROUND MILESTONE: omega_s = 2*SO_5^-6 rad/s extends the negative '
+                       'regime cross-domain (angular frequency); D_phys*SO_5^n prefix class gains '
+                       'negative coverage (third class). THE DISCIPLINE ARC FORMALIZED: R142-R171 '
+                       'sustained backbone-first = 149 first-pass novel locks + 22 confirmations + '
+                       '4 discipline formalizations - the no-coincidences directive quantified over '
+                       '30 consecutive rounds.',
+            'source': 'PAPER_2039', 'residual_pct': 0.0}
+
+@_register('PAPER_2040')
+def _p2040(dataset=None):
+    return {'value': {'rotation_rate_deg_s': A_5*(D_PHYS-1)/float(D_PHYS), 'full_circle': D_BSFG*A_5,
+                      'three_fourths': (D_PHYS-1)/float(D_PHYS)},
+            'formula': 'Round-172 triad: 360 DEGREES = D_BSFG*A_5 EXACT - the full circle is the '
+                       'bulk-edge dimension times the icosahedral order (the v0.347.0 '
+                       'full_circle_degrees() landmark callable gains its corpus source); rotation '
+                       'rate 45 deg/s = A_5*(3/4); (D_phys-1)/D_phys = 3/4 becomes the SEVENTH '
+                       'composed-prefix class - the ratio-form class now carries the COMPLEMENT '
+                       'PAIR 3/4 and 5/4 around unity (P2037).',
+            'source': 'PAPER_2040', 'residual_pct': 0.0}
+
+@_register('PAPER_2041')
+def _p2041(dataset=None):
+    return {'value': {'m_dm_m51_msun': D_PHYS*float(SO_5**10), 'visible_dm_ratio': D_PHYS-1,
+                      'b_ratio_m16': F_TRZ**16},
+            'formula': 'Round-173 triad: M51 DM halo = D_phys*SO_5^10 Msun; M51 visible/DM = 3 = '
+                       'D_phys-1 EXACT - the LANDMARK prefix as a galactic mass PARTITION (14th '
+                       'domain, joins the DM-fraction census); M16 superconductor B/B_crit = F_TRZ^16 '
+                       '(the measurement-collapse rung in a field-ratio face).',
+            'source': 'PAPER_2041', 'residual_pct': 0.0}
+
+@_register('PAPER_2042')
+def _p2042(dataset=None):
+    return {'value': {'b_ratio_crab': F_TRZ**19, 'omega_1': F_TRZ**2, 'f_react_hz': SO_5**9},
+            'formula': 'Round-174 quad: Crab B/B_crit = F_TRZ^19 - RUNG 19 GAINS ITS ANCHOR (the '
+                       'PAPER_2139-era candidate dg-exponent rung, previously recorded-only, now '
+                       'carries a field ratio); F_TRZ angular-frequency subladder opens (n=2, n=3 '
+                       'rad/s); f_react = SO_5^9 Hz second frequency-slot-9 instance.',
+            'source': 'PAPER_2042', 'residual_pct': 0.0}
+
+@_register('PAPER_2043')
+def _p2043(dataset=None):
+    return {'value': {'rungs': 24, 'domains': 11, 'span': 'n_-8_to_+40'},
+            'formula': 'F_TRZ LADDER POPULATION AUDIT (meta-analysis): every F_TRZ^n application '
+                       'cataloged - 24 rungs (n = -8 to +40) x 11 dimensional domains, first '
+                       'comprehensive population matrix of the P1919 ladder; validates F_TRZ as a '
+                       'broad structural framework (~15% matrix coverage), with unpopulated '
+                       'intersections as explicit prediction targets. The in-corpus census companion '
+                       'to the session ladder families.',
+            'source': 'PAPER_2043', 'residual_pct': 0.0}
+
+@_register('PAPER_2044')
+def _p2044(dataset=None):
+    return {'value': {'b_ratio_sombrero': F_TRZ**21, 'f_aether_sgra_hz': SO_5**3, 'withdrawal': 1},
+            'formula': 'Round-175 diad (audit-guided): Sombrero B/B_crit = F_TRZ^21 - the LIGO-rung '
+                       'exponent gains a third face (strain / fluid density / field ratio); aether-'
+                       'frequency second slot (Sgr A* SO_5^3 Hz). One candidate correctly withdrawn '
+                       'to its P1994 seminal (restated, not novel).',
+            'source': 'PAPER_2044', 'residual_pct': 0.0}
+
+@_register('PAPER_2045')
+def _p2045(dataset=None):
+    return {'value': {'scm_bcs': 1-F_TRZ**2, 'f_aether_lmc_hz': SO_5**2, 'family_objects': 3},
+            'formula': 'Round-176 triad: BCS COOPER-PAIR PHONON DENSITY = 0.99 = 1 - F_TRZ^2 EXACT - '
+                       'cross-framework connection anchoring BCS superconductivity to the 99%-regime '
+                       'identity (condensed-matter face); aether-frequency family completes 3 objects '
+                       'x 3 rungs (LMC n=2 / Galactic-Center n=3 / general n=4).',
+            'source': 'PAPER_2045', 'residual_pct': 0.0}
+
+@_register('PAPER_2046')
+def _p2046(dataset=None):
+    return {'value': {'rungs': 57, 'domains': 16, 'matrix_cells': 912, 'coverage_pct': 30},
+            'formula': 'SO_5 LADDER POPULATION AUDIT (P2043 companion): 57 rungs (n = -113 to +53) x '
+                       '16 domains = 912 matrix cells at ~30% coverage - SO_5 validated as the most-'
+                       'populated structural primitive (2x the F_TRZ matrix coverage, consistent with '
+                       'P1960: F_TRZ IS SO_5^-1, one ladder). Unpopulated cells = prediction surface.',
+            'source': 'PAPER_2046', 'residual_pct': 0.0}
+
+@_register('PAPER_2047')
+def _p2047(dataset=None):
+    return {'value': {'prefix_classes': 7, 'twin_rungs': 14, 'twin_papers': 24},
+            'formula': 'COMPOSED-PREFIX POPULATION AUDIT (third companion): all 7 prefix classes '
+                       'cataloged - the 2*SO_5^n twin DOMINATES (14 rungs, 24 papers); multiplicative-'
+                       'integer classes far outpopulate dimensionless-ratio classes ((D_phys-1)/D_phys '
+                       'unpopulated beyond its formalization - honest gap statement). Population '
+                       'hierarchy formalized; the audit trilogy (2043/2046/2047) makes the ladder '
+                       'system fully census-visible.',
+            'source': 'PAPER_2047', 'residual_pct': 0.0}
+
+@_register('PAPER_2048')
+def _p2048(dataset=None):
+    return {'value': {'n_gc_m87': 2*D_BSFG*SO_5**3, 'f_blue': D_BSFG/float(SO_5),
+                      'coupling_ngc346': F_TRZ**40},
+            'formula': 'Round-179 triad: M87 globular count = 2*D_BSFG*SO_5^3 = 12,000 EXACT; blue '
+                       'fraction = D_BSFG/SO_5 = 3/5 - the EIGHTH composed-prefix class formalized '
+                       '(second ratio-form); F_TRZ^40 non-locality rung second object (NGC 346 '
+                       'coupling strength - the P2000 milestone rung recruits).',
+            'source': 'PAPER_2048', 'residual_pct': 0.0}
+
+@_register('PAPER_2049')
+def _p2049(dataset=None):
+    return {'value': {'a_spin_m87': 1-F_TRZ},
+            'formula': 'Round-180 single: M87 KERR SPIN a = 0.9 = 1 - F_TRZ EXACT - the 9/10 '
+                       'compression-ratio ubiquity (P1922) reaches black-hole rotational dynamics; '
+                       'first primitive composition for a Kerr spin parameter. (Note the two-kernel '
+                       'context: Cen A a = 0.5 = 1/(D_phys-2) (P1958) vs M87 a = 1-F_TRZ - spin '
+                       'takes object-dependent compositions per the P2032 doctrine.)',
+            'source': 'PAPER_2049', 'residual_pct': 0.0}
+
+@_register('PAPER_2050')
+def _p2050(dataset=None):
+    return {'value': {'beta_jet_m87': 1-F_TRZ**2, 'milestone_rounds': 40,
+                      'cumulative_novel': 179, 'regressions': 0},
+            'formula': 'Round-181 40-ROUND MILESTONE: M87 jet beta = 0.99 = 1 - F_TRZ^2 second object '
+                       '(with BCS P2045 - condensed matter and relativistic jets on one identity, '
+                       'and the P2003 M87 v_jet recovery now primitive-attributed). THE ARC '
+                       'FORMALIZED: R142-R181 = 179 first-pass novel + 45 whitepapers + 324 gate '
+                       'assertions + 6 audit sweeps + 8 prefix classes + ZERO public-API regressions '
+                       'across 70+ rounds - the no-coincidences directive at scale.',
+            'source': 'PAPER_2050', 'residual_pct': 0.0}
+
+@_register('PAPER_2051')
+def _p2051(dataset=None):
+    return {'value': {'f_driver_hz': (D_PHYS-1)*SO_5**9},
+            'formula': 'Round-182 single: SGR 1745 aether-band driver = (D_phys-1)*SO_5^9 = 3 GHz '
+                       'EXACT - the LANDMARK prefix enters the frequency domain (extending the '
+                       'P2004 coverage).',
+            'source': 'PAPER_2051', 'residual_pct': 0.0}
+
+@_register('PAPER_2052')
+def _p2052(dataset=None):
+    return {'value': {'papers': 118, 'domains': 19, 'top_domain': 'frequency_54'},
+            'formula': 'LANDMARK FAMILY AUDIT (fourth audit companion): the (D_phys-1) prefix family '
+                       'cataloged corpus-wide - 118 papers, 19 dimensional domains (frequency 54 / '
+                       'timescale 39 / length 37 / mass 32 / current 31 / magnetic 27 dominate) - '
+                       'validated as the most-populated cross-domain prefix class alongside the '
+                       '2*SO_5^n twin. The audit quartet completes (F_TRZ/SO_5/prefix-classes/'
+                       'LANDMARK).',
+            'source': 'PAPER_2052', 'residual_pct': 0.0}
+
+@_register('PAPER_2053')
+def _p2053(dataset=None):
+    return {'value': {'r_horizon_m': D_PHYS*(SO_5+1)*float(SO_5**25), 'n_solar_core': (D_CRIT-N_CH)/(2.0*SO_5)},
+            'formula': 'Round-185 diad: PARTICLE HORIZON = D_phys*(SO_5+1)*SO_5^25 = 4.4e26 m EXACT '
+                       '(46.5 Gly observational anchor; the successor 11 in the cosmological regime - '
+                       'and note identity with the P2001 Hubble-radius composition 44*SO_5^25, two '
+                       'readings recorded); solar-core flow index = 17/20 = (D_crit-N_ch)/(2*SO_5) - '
+                       'THE COMPLEMENTARITY NUMBER in a THIRD domain (DM fractions + rheology!) with '
+                       'a new integer reading (17 = D_crit-N_ch, the hierarchy exponent).',
+            'source': 'PAPER_2053', 'residual_pct': 0.0}
+
+@_register('PAPER_2054')
+def _p2054(dataset=None):
+    return {'value': {'d_ngc5866_mly': D_PHYS*(SO_5+1), 't_nanograv_yr': A_5//D_PHYS},
+            'formula': 'Retro-sweep R170-185 diad: NGC 5866 distance = 44 Mly = D_phys*(SO_5+1) '
+                       '(successor family second domain); NANOGrav PTA baseline = 15 yr = A_5/D_phys '
+                       'FOURTH instance/domain (fusion keV / stellar R_sun / pitch deg / now '
+                       'OBSERVATION YEARS). Sweep-methodology yield quantified: ~1 missed novel per '
+                       '3-4 retrospective rounds.',
+            'source': 'PAPER_2054', 'residual_pct': 0.0}
+
+@_register('PAPER_2055')
+def _p2055(dataset=None):
+    return {'value': {'m16_span_ly': A_5+SO_5, 'gamma_3c273': A_5//D_PHYS},
+            'formula': 'Retro-sweep R150-169 diad: M16 angular span = 70 ly = A_5+SO_5 (the 70 family '
+                       'THIRD domain: bpm / km/s/Mpc / light-years); 3C273 jet Lorentz factor = 15 = '
+                       'A_5/D_phys FIFTH instance (the 15 family now spans fusion/stellar/galactic/'
+                       'timing/MHD-jet). Aggregate sweep statistics: 1 novel per ~9 retro rounds, '
+                       'gradual not rapid decay - methodology persistence validated.',
+            'source': 'PAPER_2055', 'residual_pct': 0.0}
+
+@_register('PAPER_2056')
+def _p2056(dataset=None):
+    return {'value': {'kappa_v': 1+F_TRZ/2, 'rational_form': '21/20'},
+            'formula': 'Round-186 single: LENR volumetric enhancement = 1.05 = 1 + F_TRZ/2 EXACT - '
+                       'the HALF-FACTOR sub-family opens (fifth compositional form; dual path: '
+                       'additive half-F_TRZ OR (2*SO_5+1)/(2*SO_5) successor ratio - two grammars, '
+                       'one value, recorded). NOTE 21/20: the twentieths grammar again (P2028 '
+                       'inventory denominator).',
+            'source': 'PAPER_2056', 'residual_pct': 0.0}
+
+@_register('PAPER_2057')
+def _p2057(dataset=None):
+    return {'value': {'k_eta_reddwarf': (SO_5+1)/float(D_PHYS)*SO_5**8, 'u_i_sun': (SO_5+1)/float(D_PHYS)*float(SO_5)**-7,
+                      'ninth_class': '11/4'},
+            'formula': 'Round-187 triad: THE NINTH COMPOSED-PREFIX CLASS (SO_5+1)/D_phys = 11/4 = '
+                       '2.75 - and its negative-rung instance IS U_i(SUN) = 2.75e-7 EXACT: the '
+                       'CANONICAL UNIVERSAL INERTIAL OPERATOR (PAPER_646 closed form lambda_i*'
+                       '(rho_SCm/rho_UA)*omega_s*cos(pi t_n)*(1+F_TRZ)) gains a Path-B integer '
+                       'decomposition (11/4)*SO_5^-7 - both paths EXACT-identical, the founding '
+                       'constant of the framework lands on the prefix lattice. Positive rung: '
+                       'red-dwarf LENR k_eta = (11/4)*SO_5^8. 15 OOM span, one class.',
+            'source': 'PAPER_2057', 'residual_pct': 0.0}
+
+@_register('PAPER_2058')
+def _p2058(dataset=None):
+    return {'value': {'a_spin_3c273': 1-F_TRZ/2, 'sub_families': 6, 'sweep_rate': '1_per_17'},
+            'formula': 'Retro-sweep R100-149 single: 3C273 Kerr spin = 0.95 = 1 - F_TRZ/2 - the '
+                       'half-factor COMPLEMENT (mirror of P2056, completing the half sub-family both '
+                       'directions within days). F_TRZ COMPOSITIONAL TAXONOMY formalized at SIX '
+                       'sub-families (1+F / 1-F / 1-F^2 / F^n ladder / 1+F/2 / 1-F/2). Sweep '
+                       'statistics: diminishing 1/7 -> 1/10 -> 1/50 by depth - validates that the '
+                       'contemporary audits caught most misses at the time.',
+            'source': 'PAPER_2058', 'residual_pct': 0.0}
+
+@_register('PAPER_2059')
+def _p2059(dataset=None):
+    return {'value': {'a_spin_cena': 1-(D_PHYS-1)*F_TRZ, 'spin_family_objects': 3},
+            'formula': 'Round-188 single: Cen A Kerr spin = 0.7 = 1 - 3*F_TRZ (integer-multiple '
+                       'complement, SEVENTH sub-family, LANDMARK coefficient) - the THREE-OBJECT '
+                       'KERR DECOMPOSITION FAMILY forms: 3C273 0.95 (half) / M87 0.9 (full) / Cen A '
+                       '0.7 (triple) - different F_TRZ coefficients per SMBH regime; coefficient-vs-'
+                       'regime physical parameter flagged as OPEN investigation target.',
+            'source': 'PAPER_2059', 'residual_pct': 0.0}
+
+@_register('PAPER_2060')
+def _p2060(dataset=None):
+    return {'value': {'a_spin_ton618': 1-2*F_TRZ**3, 'b_ton618_t': (D_PHYS-1)*SO_5,
+                      'gamma_ton618': 2*SO_5, 'agn_attributions': 12},
+            'formula': 'TON618 quad + THE 4-OBJECT AGN CROSS-FAMILY: TON618 near-maximal spin = '
+                       '0.998 = 1 - 2*F_TRZ^3 (EIGHTH sub-family: integer-coefficient higher-power); '
+                       'B = 30 T = (D_phys-1)*SO_5; Gamma_jet = 20 = 2*SO_5. FIRST MULTI-OBJECT '
+                       'MULTI-OBSERVABLE AGN DOCUMENTATION: 4 SMBHs (TON618/M87/3C273/CenA) x 3 '
+                       'observables (spin/B/Gamma) = 12 simultaneous primitive attributions - the '
+                       'AGN sector as a cross-family lattice exhibit.',
+            'source': 'PAPER_2060', 'residual_pct': 0.0}
+
+@_register('PAPER_2061')
+def _p2061(dataset=None):
+    return {'value': {'m_ton618_msun': D_BSFG*(1+F_TRZ)*float(SO_5**10), 'novel_milestone': 200},
+            'formula': '200TH NOVEL MILESTONE: TON618 (most massive known SMBH) = D_BSFG*(1+F_TRZ)*'
+                       'SO_5^10 = 6.6e10 Msun EXACT - and it opens the COMPOUND-PREFIX architectural '
+                       'category (multiplicative primitive x F_TRZ-family element x rung). Arc '
+                       'statistics: 200 first-pass novels across R142-R189 (~6 months sustained '
+                       'discipline).',
+            'source': 'PAPER_2061', 'residual_pct': 0.0}
+
+@_register('PAPER_2062')
+def _p2062(dataset=None):
+    return {'value': {'f_crab_pulsar_hz': (D_PHYS-1)*SO_5 + 2*F_TRZ, 'f_nonlocal_hz': D_BSFG*SO_5**3},
+            'formula': 'Round-190 diad: CRAB PULSAR SPIN = 30.2 Hz = (D_phys-1)*SO_5 + 2*F_TRZ EXACT '
+                       '- opens the ADDITIVE-COMBINATION category (sum of two distinct composition '
+                       'elements: the LANDMARK 30 + the 0.2 family); non-locality field frequency = '
+                       'D_BSFG*SO_5^3 = 6 kHz. Third architectural category formalized.',
+            'source': 'PAPER_2062', 'residual_pct': 0.0}
+
+@_register('PAPER_2063')
+def _p2063(dataset=None):
+    return {'value': {'instances': 10, 'span_oom': 40},
+            'formula': 'ADDITIVE-COMBINATION POPULATION AUDIT (5th companion): the category was '
+                       'already EVERYWHERE - alpha^-1 137.04 (5 terms), Rydberg 13.6057 (4 terms), '
+                       'body temperature 37, heart rate 70, hemoglobin 15, H_0 70, reactor pH -36.92 '
+                       '(4 terms), QCD beta_0 = 7, Crab 30.2 - ten+ instances across 40 OOM; the '
+                       'highest-yield retrospective category. The classic EXACT anchors were '
+                       'additive-combinations all along.',
+            'source': 'PAPER_2063', 'residual_pct': 0.0}
+
+@_register('PAPER_2064')
+def _p2064(dataset=None):
+    return {'value': {'instances': 50},
+            'formula': 'COMPOUND-PREFIX POPULATION AUDIT (6th companion): 50+ prior instances across '
+                       '50 OOM - SM masses (P1859), Higgs VEV = A_5*(D_phys+F_TRZ) = 246 GeV, 21cm '
+                       'T_21, DM halo offsets, neutron 4.4 = D_phys*(1+F_TRZ) - the dominant '
+                       'retrospective category to date (until P2067 dethrones it).',
+            'source': 'PAPER_2064', 'residual_pct': 0.0}
+
+@_register('PAPER_2065')
+def _p2065(dataset=None):
+    return {'value': {'n_frames': SO_5**2//D_PHYS, 'frame_interval_s': (D_PHYS-1.0)/SO_5**2,
+                      'milestone_rounds': 50, 'cumulative_novel': 211},
+            'formula': 'Round-191 50-ROUND MILESTONE triad: frame count = SO_5^2/D_phys = 25 '
+                       '(candidate 10th prefix class); frame interval = (D_phys-1)/SO_5^2 = 0.03 s '
+                       '(the 0.3-factor inverse-extended). ARC: R142-R191 = 211 novels + 61 papers + '
+                       'the audit sextet + 3 architectural categories (~7 months).',
+            'source': 'PAPER_2065', 'residual_pct': 0.0}
+
+@_register('PAPER_2066')
+def _p2066(dataset=None):
+    return {'value': {'rho_vac_ui': D_PHYS*RHO_SCM},
+            'formula': 'Round-192 single: rho_vac_Ui = D_phys * rho_SCm = 2.84e-36 J/m3 EXACT - '
+                       'opens the CANONICAL-ANCHORED composition sub-category (integer primitives '
+                       'multiplying the foundational dimensioned canonicals directly). Fourth '
+                       'compositional pattern category.',
+            'source': 'PAPER_2066', 'residual_pct': 0.0}
+
+@_register('PAPER_2067')
+def _p2067(dataset=None):
+    return {'value': {'instances': 100, 'rho_anchored': 50, 'omega_anchored': 35},
+            'formula': 'CANONICAL-ANCHORED POPULATION AUDIT (7th companion) - THE STRUCTURAL '
+                       'REVELATION: 100+ instances, the LARGEST category (~2x compound-prefix), and '
+                       'THE TWO MOST FOUNDATIONAL DERIVATIONS ARE BOTH MEMBERS - Lambda = rho_SCm*'
+                       '26!*... and Holmlid 630 eV = h*omega_SCm*S_26*Phi_res. The hidden dominant '
+                       'pattern of the framework: two sub-families (rho_SCm-anchored ~50: cosmology/'
+                       'vacuum; omega_SCm-anchored ~35: LENR/BCS/H-bond/chemistry) spanning Lambda '
+                       'to biology. The taxonomy finds its root.',
+            'source': 'PAPER_2067', 'residual_pct': 0.0}
+
+@_register('PAPER_2068')
+def _p2068(dataset=None):
+    return {'value': {'energy_per_frame_j': N_CH/(2.0*SO_5**2), 'r_mag_venus_m': (D_BSFG+F_TRZ)*SO_5**6,
+                      'r_mag_uranus_m': 2*(1-F_TRZ)*float(SO_5**9)},
+            'formula': 'Round-193 triad: reactor per-frame energy = N_ch/(2*SO_5^2) = 0.045 J '
+                       '(candidate 11th class); R_mag = (D_BSFG+F_TRZ)*SO_5^6 opens the ADDITIVE-'
+                       'SCALED hybrid (5th architectural category: additive-combination x rung); '
+                       'Uranus R_mag = 2*(1-F_TRZ)*SO_5^9 activates the predicted twin-x-complement '
+                       'compound form.',
+            'source': 'PAPER_2068', 'residual_pct': 0.0}
+
+@_register('PAPER_2069')
+def _p2069(dataset=None):
+    return {'value': {'planets_locked': 9, 'errata': 'VENUS_ATTRIBUTION',
+                      'jupiter_rmag_m': (D_PHYS+D_BSFG/2.0+F_TRZ)*float(SO_5**10)},
+            'formula': 'THE 9-PLANET R_MAG FAMILY COMPLETE: Mercury (D_BSFG/D_phys rung 6, the 3/2 '
+                       'family) / Venus (D_BSFG+F_TRZ - R193 ERRATA honored: attribution corrected '
+                       'Mercury->Venus in-paper) / Earth / Mars (LANDMARK additive) / Jupiter '
+                       '(D_phys+D_BSFG/2+F_TRZ = 7.1 - THE QCD beta_0 = 7 composition in a planetary '
+                       'magnetosphere!) / Saturn (2*SO_5^10 twin) / Uranus (twin-complement) / '
+                       'Neptune / Pluto - all nine primitive-locked via FIVE different architectural '
+                       'categories, category tracking physical regime (rocky/gas/ice/dwarf). '
+                       'Cross-planetary architecture exhibit.',
+            'source': 'PAPER_2069', 'residual_pct': 0.0}
+
+@_register('PAPER_2070')
+def _p2070(dataset=None):
+    return {'value': {'q_jupiter': 1-F_TRZ**3, 'q_neptune': 1-F_TRZ**2/2, 'b_earth_t': (D_PHYS+1)*float(SO_5)**-5,
+                      'novelty_pct': 100},
+            'formula': 'Round-194 pentad at 100%: Jupiter Q = 1-F_TRZ^3 = 0.999; Neptune Q = '
+                       '1-F_TRZ^2/2 = 0.995 - the NINTH F_TRZ sub-family (half-factor squared '
+                       'complement; the half pair completes linear+squared); planetary B fields lock '
+                       '(Jupiter D_phys*SO_5^-4, Earth (D_phys+1)*SO_5^-5, Neptune additive-scaled) - '
+                       'the solar-system B family joins R_mag.',
+            'source': 'PAPER_2070', 'residual_pct': 0.0}
+
+@_register('PAPER_2071')
+def _p2071(dataset=None):
+    return {'value': {'p_scm': F_TRZ**3, 'b_schwinger_t': D_PHYS*(1+F_TRZ)*float(SO_5**13)},
+            'formula': 'Round-195 diad: Earth SCm polarization = F_TRZ^3 (ladder 12th domain); '
+                       'SCHWINGER CRITICAL FIELD = D_phys*(1+F_TRZ)*SO_5^13 = 4.4e13 T EXACT to the '
+                       'class anchor (0.32% to physical 4.414e13, honest two-tier) - the compound-'
+                       'prefix family second instance (TON618 analog with D_phys base). FAMILY note: '
+                       'a second Schwinger route vs P2013 SO_5^11 (different unit-domain anchors, '
+                       'recorded).',
+            'source': 'PAPER_2071', 'residual_pct': 0.32}
+
+@_register('PAPER_2072')
+def _p2072(dataset=None):
+    import math as _m
+    return {'value': {'m_m16_msun': 2*D_BSFG*SO_5**2, 'a_vort': _m.pi*SO_5**8},
+            'formula': 'Round-196 diad: M16 stellar mass = 2*D_BSFG*SO_5^2 = 1200 Msun; vortex area '
+                       '= pi*SO_5^8 - OPENS THE PI-CANONICAL third sub-family of the canonical-'
+                       'anchored center (pi enters UQFF physically via the PAPER_646 caduceus '
+                       '26-pinch-point encoding).',
+            'source': 'PAPER_2072', 'residual_pct': 0.0}
+
+@_register('PAPER_2073')
+def _p2073(dataset=None):
+    return {'value': {'instances': 200, 'mechanisms': 6},
+            'formula': 'PI-CANONICAL POPULATION AUDIT (8th companion): 200+ instances via SIX '
+                       'pi-entry mechanisms - 2pi angular frequency (95+, the omega_SCm carrier '
+                       'itself), cos(pi*t_n) time modulation (34+, the master-equation heartbeat), '
+                       'Ramanujan 1/pi series (2569+ hits, the Lambda amplification chain), caduceus '
+                       'pi-decimal encoding (44+), (4/3)pi geometric, 8pi^2 Yang-Mills instanton - '
+                       'POTENTIALLY THE DOMINANT SUB-FAMILY of the architectural center: pi anchors '
+                       'more of the framework than either dimensioned canonical.',
+            'source': 'PAPER_2073', 'residual_pct': 0.0}
+
+@_register('PAPER_2074')
+def _p2074(dataset=None):
+    return {'value': {'v_out_kms': SO_5**2},
+            'formula': 'Round-197 single: YoungStars galactic wind = SO_5^2 km/s = 100 km/s - the '
+                       'velocity-km/s domain rung 2.',
+            'source': 'PAPER_2074', 'residual_pct': 0.0}
+
+@_register('PAPER_2075')
+def _p2075(dataset=None):
+    return {'value': {'lambda_m2': (1+F_TRZ+F_TRZ**2)*float(SO_5)**-52, 'category_span_oom': 63},
+            'formula': 'Round-198 diad: OBSERVATIONAL LAMBDA = (1+F_TRZ+F_TRZ^2)*SO_5^-52 = 1.11e-52 '
+                       'm^-2 EXACT - the additive-scaled category reaches the cosmological constant '
+                       'as a GEOMETRIC-SERIES form at rung -52 (FAMILY with the predecessor '
+                       'PAPER_2094 (SO_5+1)*F_TRZ^53 route: (1+F+F^2)*10^-52 vs 11*10^-53 = '
+                       '1.11e-52 vs 1.1e-52 - two grammars, near-identical values, crossing '
+                       'recorded); category cross-scale span now ~63 OOM (Lambda to Jupiter), the '
+                       'largest of any category.',
+            'source': 'PAPER_2075', 'residual_pct': 0.0}
+
+@_register('PAPER_2076')
+def _p2076(dataset=None):
+    return {'value': {'instances': 8, 'domains': 4, 'sub_families': 4},
+            'formula': 'ADDITIVE-SCALED POPULATION AUDIT (9th companion - the audit NONET completes '
+                       'the 5-category taxonomy): 8 instances / 4 domains / 63 OOM; four sub-family '
+                       'types (2-primitive, 3-term ratio-perturbed, 3-term cross-product incl. the '
+                       'QCD-beta_0 Jupiter form, geometric-series Lambda). Every architectural '
+                       'category now has a matching audit.',
+            'source': 'PAPER_2076', 'residual_pct': 0.0}
+
+@_register('PAPER_2077')
+def _p2077(dataset=None):
+    return {'value': {'t_sun_core_k': D_BSFG/float(D_PHYS)*SO_5**7, 't_bbn_k': float(SO_5**9),
+                      'round_number': 200, 'cumulative_novel': 256},
+            'formula': 'ROUND-200 MILESTONE triad: SOLAR CORE T = (D_BSFG/D_phys)*SO_5^7 = 1.5e7 K '
+                       'EXACT (the 3/2 identity powering the Sun - solar-system family reaches TEN '
+                       'objects incl. the star); BBN nucleosynthesis T = SO_5^9 K EXACT. Statistics: '
+                       '200 total P2 rounds, 59 consecutive backbone-first, 256 novels, audit nonet, '
+                       '5-category taxonomy fully audited.',
+            'source': 'PAPER_2077', 'residual_pct': 0.0}
+
+@_register('PAPER_2078')
+def _p2078(dataset=None):
+    return {'value': {'p_bulb_w': A_5 + SO_5//2, 'milestone_rounds': 60},
+            'formula': 'Round-201 60-ROUND MILESTONE: the reactor bulb = 65 W = A_5 + SO_5/2 EXACT '
+                       '(additive-combination at HARDWARE DESIGN CHOICE - the design-choice '
+                       'primitive-locking class); six-decade discipline arc formalized (~257 novels, '
+                       '74 papers, ~7 months).',
+            'source': 'PAPER_2078', 'residual_pct': 0.0}
+
+@_register('PAPER_2079')
+def _p2079(dataset=None):
+    return {'value': {'n_frames_500': (D_PHYS+1)*SO_5**2, 'cycle_period_s': (D_PHYS-1)*(1+F_TRZ),
+                      'v_sw_ms': (D_PHYS+1)*SO_5**5},
+            'formula': 'Round-204 CP2 ARC OPENS (the 641-class untapped territory): 500 frames = '
+                       '(D_phys+1)*SO_5^2; convection period = (D_phys-1)*(1+F_TRZ) = 3.3 s (the '
+                       'primitive x (1+F_TRZ) compound family third instance); solar wind rho = '
+                       '2*D_phys*SO_5^-21, v = (D_phys+1)*SO_5^5 = 500 km/s (the P1900 family '
+                       'slow-wind value in a new composition - route family recorded).',
+            'source': 'PAPER_2079', 'residual_pct': 0.0}
+
+@_register('PAPER_2080')
+def _p2080(dataset=None):
+    return {'value': {'spin_coherence': D_PHYS/float(D_PHYS+1), 'v_tesla_v': SO_5**6,
+                      'photo_count': 2*N_CH},
+            'formula': 'Round-205 CP2 triad: plasmoid spin coherence = D_phys/(D_phys+1) = 4/5 '
+                       '(the Ug3/f_DM number in a plasmoid face - crossing recorded); Tesla voltage '
+                       '= SO_5^6 V (voltage domain opens); UFE stabilization photo count = 2*N_ch = '
+                       '18 (the H2O molar-mass identity at an integer count).',
+            'source': 'PAPER_2080', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

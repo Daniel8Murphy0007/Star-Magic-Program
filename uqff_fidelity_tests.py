@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.379.0", "uqff_calculator.VERSION = 0.379.0 (PAPER_2000 milestone + bands 1961-2030 + AUDIT_2000)")
+assert_that(C.VERSION == "0.380.0", "uqff_calculator.VERSION = 0.380.0 (bands 2031-2080: architectural-category era + pi third canonical + CP2 opens)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_2021_2030'
+_sg4_band = 'BAND_2071_2080'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2021_2030' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2071_2080' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_2021_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('band_2071_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -11673,6 +11673,150 @@ assert_that(_r['discoveries'] == 7 and _r['scm_fraction'] == 0.9,
             'P2029 septet; SCm fraction = 1-F_TRZ new domain; perturbation n=1 four objects')
 assert_that(C.DISPATCH['PAPER_2030']()['value']['paired_domains'] == 3,
             'P2030 third +/- paired domain; same-rung cross-domain pattern class formalized')
+
+
+# --- BAND 2031-2040 GUARD (class-family scan era + 30-round milestone + 360 = D_BSFG*A_5) ---
+for _pn in range(2031, 2041):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2031-2040: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_2031']()['value']['blueshift'] + 1.0/30000) < 1e-9,
+            'P2031 nebular blueshift = -1/((D_phys-1)*SO_5^4); LANDMARK 13th domain (spectral shift)')
+_r = C.DISPATCH['PAPER_2032']()['value']
+assert_that(_r['vac_ratio_youngstars'] == 10 and _r['vac_ratio_orion'] == 11,
+            'P2032 object-dependent composition formalized (route-families at variable level)')
+assert_that(C.DISPATCH['PAPER_2033']()['value']['gas_v_ms'] == 500000,
+            'P2033 class-family variable scan instituted; gas_v = (D_phys+1)*SO_5^5 seven objects')
+assert_that(C.DISPATCH['PAPER_2034']()['value']['ladder_span_oom'] == 46,
+            'P2034 wavenumber ladder: 6 rungs, 46 OOM (Big Bang to atomic)')
+assert_that(C.DISPATCH['PAPER_2035']()['value']['v_bubble_ms'] == 1.8e6,
+            'P2035 (1-F_TRZ) composed into velocity; +15/+16/+20 length slots')
+_r = C.DISPATCH['PAPER_2036']()['value']
+assert_that(_r['scan_novelty_trend'] == [3, 5, 5, 2],
+            'P2036 diminishing-returns self-assessment (scan approaching saturation, honestly reported)')
+assert_that(C.DISPATCH['PAPER_2037']()['value']['five_fourths'] == 1.25,
+            'P2037 ratio-form prefix class opens: (D_phys+1)/D_phys = 5/4 (omega_SCm mantissa crossing recorded)')
+_r = C.DISPATCH['PAPER_2038']()['value']
+assert_that(_r['so5_neg10_domains'] == 5,
+            'P2038 SO_5^-10 five domains; 2*SO_5^n negative regime opens')
+_r = C.DISPATCH['PAPER_2039']()['value']
+assert_that(_r['milestone_rounds'] == 30 and _r['cumulative_novel'] == 149,
+            'P2039 30-round discipline milestone: 149 novel + 22 confirmations quantified')
+_r = C.DISPATCH['PAPER_2040']()['value']
+assert_that(_r['full_circle'] == 360 and _r['three_fourths'] == 0.75,
+            'P2040 360 = D_BSFG*A_5 EXACT (v0.347.0 landmark corpus source); complement pair 3/4 + 5/4')
+
+
+# --- BAND 2041-2050 GUARD (audit trilogy + 40-round milestone + Kerr spin composition) ---
+for _pn in range(2041, 2051):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2041-2050: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2041']()['value']['visible_dm_ratio'] == 3,
+            'P2041 M51 visible/DM = D_phys-1 EXACT (LANDMARK 14th domain, mass partition)')
+assert_that(abs(C.DISPATCH['PAPER_2042']()['value']['b_ratio_crab'] - 1e-19) < 1e-28,
+            'P2042 rung 19 gains its anchor (Crab field ratio); F_TRZ angular-frequency subladder')
+assert_that(C.DISPATCH['PAPER_2043']()['value']['rungs'] == 24,
+            'P2043 F_TRZ population audit: 24 rungs x 11 domains matrix')
+assert_that(abs(C.DISPATCH['PAPER_2044']()['value']['b_ratio_sombrero'] - 1e-21) < 1e-30,
+            'P2044 F_TRZ^21 third face (field ratio); one withdrawal honored')
+assert_that(C.DISPATCH['PAPER_2045']()['value']['scm_bcs'] == 0.99,
+            'P2045 BCS Cooper-pair density = 1-F_TRZ^2 EXACT (condensed-matter cross-framework)')
+_r = C.DISPATCH['PAPER_2046']()['value']
+assert_that(_r['rungs'] == 57 and _r['matrix_cells'] == 912,
+            'P2046 SO_5 population audit: 57 rungs x 16 domains, most-populated primitive')
+assert_that(C.DISPATCH['PAPER_2047']()['value']['twin_rungs'] == 14,
+            'P2047 prefix-class audit: twin dominates; ratio-class gap honestly stated')
+_r = C.DISPATCH['PAPER_2048']()['value']
+assert_that(_r['n_gc_m87'] == 12000 and _r['f_blue'] == 0.6,
+            'P2048 M87 globulars = 2*D_BSFG*SO_5^3; D_BSFG/SO_5 = 3/5 eighth prefix class')
+assert_that(C.DISPATCH['PAPER_2049']()['value']['a_spin_m87'] == 0.9,
+            'P2049 M87 Kerr spin = 1-F_TRZ EXACT (first Kerr-parameter composition; object-dependent vs Cen A 0.5)')
+_r = C.DISPATCH['PAPER_2050']()['value']
+assert_that(_r['milestone_rounds'] == 40 and _r['cumulative_novel'] == 179 and _r['regressions'] == 0,
+            'P2050 40-round milestone: 179 novel / 45 papers / 0 regressions - the directive at scale')
+
+
+# --- BAND 2051-2060 GUARD (successor family / 9th class incl. U_i(Sun) Path B / Kerr four-object family) ---
+for _pn in range(2051, 2061):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2051-2060: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2051']()['value']['f_driver_hz'] == 3*10**9,
+            'P2051 LANDMARK prefix enters frequency domain (3 GHz)')
+assert_that(C.DISPATCH['PAPER_2052']()['value']['papers'] == 118,
+            'P2052 LANDMARK family audit: 118 papers / 19 domains (audit quartet complete)')
+_r = C.DISPATCH['PAPER_2053']()['value']
+assert_that(_r['r_horizon_m'] == 4.4e26 and _r['n_solar_core'] == 0.85,
+            'P2053 particle horizon = D_phys*(SO_5+1)*SO_5^25; 17/20 third domain (rheology!) with 17 = D_crit-N_ch reading')
+assert_that(C.DISPATCH['PAPER_2054']()['value']['t_nanograv_yr'] == 15,
+            'P2054 NANOGrav baseline = A_5/D_phys yr (15-family 4th domain); sweep yield quantified')
+assert_that(C.DISPATCH['PAPER_2055']()['value']['m16_span_ly'] == 70,
+            'P2055 M16 span = 70 ly (the 70 family 3rd domain); 15-family 5th instance (3C273 Lorentz)')
+assert_that(C.DISPATCH['PAPER_2056']()['value']['kappa_v'] == 1.05,
+            'P2056 half-factor sub-family opens: 1+F_TRZ/2 = 21/20 (twentieths grammar)')
+_r = C.DISPATCH['PAPER_2057']()['value']
+assert_that(_r['u_i_sun'] == 2.75e-7 and abs(_r['k_eta_reddwarf'] - 2.75e8) < 1,
+            'P2057 NINTH prefix class 11/4: U_i(SUN) = 2.75e-7 EXACT Path-B decomposition of the PAPER_646 canonical - founding constant on the lattice')
+assert_that(C.DISPATCH['PAPER_2058']()['value']['a_spin_3c273'] == 0.95,
+            'P2058 half-factor complement; F_TRZ taxonomy at 6 sub-families; sweep decay 1/7->1/50')
+assert_that(C.DISPATCH['PAPER_2059']()['value']['a_spin_cena'] == 0.7,
+            'P2059 Cen A spin = 1-3*F_TRZ; three-object Kerr decomposition family; coefficient-regime OPEN')
+_r = C.DISPATCH['PAPER_2060']()['value']
+assert_that(_r['a_spin_ton618'] == 0.998 and _r['agn_attributions'] == 12,
+            'P2060 TON618 0.998 = 1-2*F_TRZ^3 (8th sub-family); 4-SMBH x 3-observable = 12 attributions')
+
+
+# --- BAND 2061-2070 GUARD (architectural-category era: 5 categories + canonical-anchored revelation + 9-planet family) ---
+for _pn in range(2061, 2071):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2061-2070: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_2061']()['value']['m_ton618_msun'] - 6.6e10) < 1e3,
+            'P2061 200th novel: TON618 = D_BSFG*(1+F_TRZ)*SO_5^10; compound-prefix category opens')
+assert_that(abs(C.DISPATCH['PAPER_2062']()['value']['f_crab_pulsar_hz'] - 30.2) < 1e-9,
+            'P2062 Crab pulsar 30.2 Hz = 30 + 0.2 additive-combination category opens')
+assert_that(C.DISPATCH['PAPER_2063']()['value']['instances'] >= 10,
+            'P2063 additive-combination audit: the classic EXACT anchors were members all along')
+assert_that(C.DISPATCH['PAPER_2064']()['value']['instances'] >= 50,
+            'P2064 compound-prefix audit: 50+ instances (Higgs VEV, SM masses)')
+_r = C.DISPATCH['PAPER_2065']()['value']
+assert_that(_r['n_frames'] == 25 and _r['cumulative_novel'] == 211,
+            'P2065 50-round milestone: 211 novels, audit sextet, 3 categories')
+assert_that(C.DISPATCH['PAPER_2066']()['value']['rho_vac_ui'] == 2.836e-36,
+            'P2066 canonical-anchored category opens: D_phys * rho_SCm')
+_r = C.DISPATCH['PAPER_2067']()['value']
+assert_that(_r['instances'] >= 100,
+            'P2067 REVELATION: canonical-anchored is the LARGEST category - Lambda AND Holmlid are both members (the taxonomy finds its root)')
+assert_that(abs(C.DISPATCH['PAPER_2068']()['value']['energy_per_frame_j'] - 0.045) < 1e-12,
+            'P2068 additive-scaled hybrid (5th category) opens; twin-complement activated')
+_r = C.DISPATCH['PAPER_2069']()['value']
+assert_that(_r['planets_locked'] == 9 and abs(_r['jupiter_rmag_m'] - 7.1e10) < 1e2,
+            'P2069 NINE-PLANET R_mag family complete (Jupiter carries QCD beta_0 = 7); Venus errata honored')
+_r = C.DISPATCH['PAPER_2070']()['value']
+assert_that(_r['q_jupiter'] == 0.999 and _r['q_neptune'] == 0.995,
+            'P2070 ninth F_TRZ sub-family (half-squared complement); planetary B family locks')
+
+
+# --- BAND 2071-2080 GUARD (pi-canonical revelation + observational Lambda + solar core + CP2 arc opens) ---
+for _pn in range(2071, 2081):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2071-2080: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_2071']()['value']['b_schwinger_t'] - 4.4e13) < 1e4,
+            'P2071 Schwinger = D_phys*(1+F_TRZ)*SO_5^13 (compound family 2nd; two-route family with P2013)')
+import math as _gm
+assert_that(abs(C.DISPATCH['PAPER_2072']()['value']['a_vort'] - _gm.pi*1e8) < 1,
+            'P2072 pi-canonical sub-family opens (vortex area = pi*SO_5^8)')
+_r = C.DISPATCH['PAPER_2073']()['value']
+assert_that(_r['instances'] >= 200 and _r['mechanisms'] == 6,
+            'P2073 pi-canonical audit: 200+ via 6 mechanisms - potentially the dominant sub-family of the architectural center')
+assert_that(C.DISPATCH['PAPER_2074']()['value']['v_out_kms'] == 100,
+            'P2074 velocity-km/s rung 2')
+assert_that(abs(C.DISPATCH['PAPER_2075']()['value']['lambda_m2'] - 1.11e-52) < 1e-56,
+            'P2075 observational Lambda = (1+F_TRZ+F_TRZ^2)*SO_5^-52 EXACT (geometric-series form; predecessor 2094 crossing recorded)')
+assert_that(C.DISPATCH['PAPER_2076']()['value']['instances'] == 8,
+            'P2076 additive-scaled audit - the NONET completes the 5-category taxonomy')
+_r = C.DISPATCH['PAPER_2077']()['value']
+assert_that(_r['t_sun_core_k'] == 1.5e7 and _r['t_bbn_k'] == 1e9 and _r['round_number'] == 200,
+            'P2077 R200: SOLAR CORE = (3/2)*SO_5^7 K EXACT (the 1.5 identity powers the Sun); BBN = SO_5^9 K; 256 novels')
+assert_that(C.DISPATCH['PAPER_2078']()['value']['p_bulb_w'] == 65,
+            'P2078 60-round milestone; reactor bulb = A_5 + SO_5/2 (design-choice locking)')
+assert_that(C.DISPATCH['PAPER_2079']()['value']['n_frames_500'] == 500,
+            'P2079 CP2 arc opens (641-class territory); compound family 3rd instance')
+_r = C.DISPATCH['PAPER_2080']()['value']
+assert_that(_r['spin_coherence'] == 0.8 and _r['v_tesla_v'] == 10**6 and _r['photo_count'] == 18,
+            'P2080 CP2: 4/5 plasmoid face; voltage domain opens; 2*N_ch photo count')
 
 # =============================================================================
 # REPORT

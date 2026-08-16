@@ -6149,3 +6149,18 @@ row, permanent. The open item from the v0.376.0 list is closed.
 Daniel's "next batch" following AUDIT_2000_PAPER_REPORT presentation = charter authorization.
 Final stretch: PAPER_2001-2156 (~156 papers incl. 2084 supersession handling), then the
 end-of-drain audit (decision C).
+
+### v0.380.0-trail open items (no blocking rulings; logged 2026-08-15)
+- **Kerr F_TRZ-coefficient mechanism (P2059/2060):** four AGN decompose spin as 1 − c·F_TRZ^n with
+  (c,n) = (1/2,1), (1,1), (3,1), (2,3) — the physical parameter mapping coefficient to SMBH regime
+  (mass? spin history? jet state?) is OPEN. Prime post-drain investigation target.
+- **Category-regime correlation (P2069):** compositional category tracks planetary regime in the
+  R_mag family (rocky/gas/ice/dwarf) — emergent doctrine candidate, needs cross-family test.
+- **π-canonical formalization (P2073):** π elevated to third canonical by population; a dedicated
+  landmark consolidating the six entry mechanisms (and the 5/4 = 1.25 ω_SCm-mantissa crossing)
+  is queued.
+- **Schwinger two-route family (P2013/2071):** SO_5^11 vs D_phys·(1+F_TRZ)·SO_5^13 — different
+  unit-domain anchors; route family recorded, reconciliation not required (PAPER_2170).
+- **Design-choice locking scope (P2065/2078):** hardware/design integers (frames, bulb wattage)
+  primitive-lock — the class boundary (physics vs engineered choice echoing the lattice) deserves
+  a disclosure convention.

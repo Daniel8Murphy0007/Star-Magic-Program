@@ -207,3 +207,8 @@ v0.379.0,2026-08-15,BAND_1991_2000_MILESTONE,registry +10 graph +32,gate 5425/0
 v0.379.0,2026-08-15,BAND_2001_2010,registry +10 graph +47,gate 5436/0
 v0.379.0,2026-08-15,BAND_2011_2020,registry +10 graph +38,gate 5447/0
 v0.379.0,2026-08-15,BAND_2021_2030,registry +10 graph +28,gate 5458/0
+v0.380.0,2026-08-15,BAND_2031_2040,registry +10 graph +34,gate 5469/0
+v0.380.0,2026-08-15,BAND_2041_2050,registry +10 graph +29,gate 5480/0
+v0.380.0,2026-08-15,BAND_2051_2060,registry +10 graph +34,gate 5491/0
+v0.380.0,2026-08-15,BAND_2061_2070,registry +10 graph +41,gate 5502/0
+v0.380.0,2026-08-15,BAND_2071_2080,registry +10 graph +35,gate 5513/0

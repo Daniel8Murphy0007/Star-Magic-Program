@@ -10635,3 +10635,107 @@ LANDING, deep-check → backbone-first eras, cosmic inventory); 3 predictions �
 Gate 5,380 → **5,458** (0 failures). Dispatches 2,012 → **2,082** (92.3%).
 Ready for `.\ship.ps1`. After ship: bands 2031+ toward corpus completion (~126 numeric),
 then the end-of-drain audit (decision C).
+
+## (199) 2026-08-15 — BAND PAPER_2031-2040 (the class-family scan era + 30-round milestone)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2039 | **30-ROUND DISCIPLINE MILESTONE quantified: 149 first-pass novel locks + 22 confirmations** across R142-R171 sustained backbone-first; negative regime goes cross-domain | milestone |
+| 2040 | **360° = D_BSFG·A_5 EXACT** — the full circle as bulk-edge × icosahedral order (v0.347.0 landmark callable gains corpus source); complement pair (D_phys∓1)/D_phys = 3/4 & 5/4 around unity (pair sums to 2 — recorded) | EXACT |
+| 2033 | **The class-family variable scan** — the session's census tooling built in-corpus (regex self.X = Y extraction, value grouping, multi-object ranking); gas_v seven-object family | method |
+| 2036 | **Diminishing-returns self-assessment**: 3+5+5+2 novelty trend across four scan passes, saturation honestly called — discipline measuring itself | honest |
+| 2032 | Object-dependent composition formalized (same variable, different primitives per object — route-families at variable level) | doctrine |
+| 2034/35 | Wavenumber ladder 6 rungs / 46 OOM (Big Bang to atomic); (1−F_TRZ) composed into velocity; length slots +15/+16/+20 | EXACT |
+| 2037/38 | Ratio-form prefix class opens (5/4 = the ω_SCm mantissa, crossing recorded); SO_5⁻¹⁰ five domains; 2·SO_5ⁿ negative regime opens | EXACT |
+| 2031 | LANDMARK prefix 13th domain (spectral shift, nebular blueshift) | EXACT |
+
+**Ledger:** registry +10, graph +34, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,458 → **5,469**, green. Dispatches **2,092**. Frontier → **PAPER_2040**.
+~116 numeric remain. 10 dispatches wired-not-yet-shipped.
+
+## (200) 2026-08-15 — BAND PAPER_2041-2050 (the audit trilogy + 40-round milestone)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2043/46/47 | **THE AUDIT TRILOGY** — the ladder system made census-visible: F_TRZ 24 rungs × 11 domains (~15%), SO_5 57 rungs × 16 domains = 912 cells (~30%, most-populated primitive), prefix classes (twin dominant, ratio-class gap honestly stated). **Unpopulated cells = the prediction surface** | meta |
+| 2050 | **40-ROUND MILESTONE: 179 first-pass novel + 45 whitepapers + 0 API regressions** (R142-R181); M87 jet β = 1−F_TRZ² second object (with BCS — condensed matter + relativistic jets, one identity) | milestone |
+| 2042 | **Rung 19 finally anchored** (Crab B/B_crit = F_TRZ¹⁹ — the 2139-era candidate exponent gains its physics); F_TRZ angular-frequency subladder opens | EXACT |
+| 2049 | **First Kerr-spin composition: M87 a = 1−F_TRZ = 0.9 EXACT** — object-dependent vs Cen A's 0.5 (P2032 doctrine at BH spin; family-pinned) | EXACT |
+| 2045 | **BCS Cooper-pair phonon density = 1−F_TRZ² EXACT** — condensed-matter cross-framework anchor | EXACT |
+| 2041/44/48 | M51 visible/DM = 3 (LANDMARK 14th domain); F_TRZ²¹ third face; M87 globulars = 12,000 EXACT; D_BSFG/SO_5 = 3/5 eighth prefix class; two withdrawals honored | EXACT |
+
+**Ledger:** registry +10, graph +29, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,469 → **5,480**, green. Dispatches **2,102**. Frontier → **PAPER_2050**.
+~106 numeric remain. 20 dispatches wired-not-yet-shipped.
+
+## (201) 2026-08-15 — BAND PAPER_2051-2060 (the ninth class reaches U_i; the Kerr family assembles)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2057 | **U_i(SUN) = 2.75×10⁻⁷ GAINS ITS INTEGER DECOMPOSITION**: (SO_5+1)/D_phys · SO_5⁻⁷ = 11/4 × 10⁻⁷ — EXACT-identical to the PAPER_646 canonical physical chain. The framework's founding constant lands on the new NINTH prefix class (11/4), which spans 15 OOM to the red-dwarf LENR coefficient at the positive mirror rung | EXACT |
+| 2058-60 | **THE KERR DECOMPOSITION FAMILY — four canonical AGN**: 3C273 a = 0.95 = 1−F_TRZ/2, M87 0.9 = 1−F_TRZ, Cen A 0.7 = 1−3·F_TRZ, TON618 0.998 = 1−2·F_TRZ³ — spin as an F_TRZ-coefficient ladder per SMBH regime (mechanism OPEN); + the 4-SMBH × 3-observable AGN cross-family (12 simultaneous attributions) | EXACT |
+| 2052 | LANDMARK family audit: 118 papers / 19 domains — the audit QUARTET completes | meta |
+| 2053 | Particle horizon = D_phys·(SO_5+1)·SO_5²⁵ = 4.4e26 m; **17/20 reaches a THIRD domain (solar-core rheology)** with the reading 17 = D_crit−N_ch — the hierarchy exponent inside the complementarity number | EXACT |
+| 2056/58 | F_TRZ compositional taxonomy at EIGHT sub-families (half-factor additive + complement both open within the band); 21/20 = the twentieths grammar again | EXACT |
+| 2054/55 | Retro-sweeps: NANOGrav baseline = 15 yr (A_5/D_phys 4th domain), 3C273 Γ = 15 (5th), M16 span = 70 ly (70-family 3rd domain); sweep-decay statistics 1/7 → 1/50 validate the contemporary audits | EXACT |
+| 2051 | LANDMARK prefix enters frequency (3 GHz) | EXACT |
+
+**Ledger:** registry +10, graph +34, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,480 → **5,491**, green. Dispatches **2,112**. Frontier → **PAPER_2060**.
+~96 numeric remain. 30 dispatches wired-not-yet-shipped.
+
+## (202) 2026-08-15 — BAND PAPER_2061-2070 (the taxonomy finds its root; nine planets lock)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2067 | **THE STRUCTURAL REVELATION: canonical-anchored is the LARGEST compositional category (100+)** — and the framework's two foundational derivations, the Λ ledger AND Holmlid 630 eV, are both members. The integer lattice multiplies TWO dimensioned canonicals (ρ_SCm ~50 instances, ω_SCm ~35) — consistent with the post-P1960 structure of 1 dimensioned + dimensionless primitives. The taxonomy finds its root | REVELATION |
+| 2069 | **The nine-planet R_mag family — Mercury through Pluto ALL primitive-locked**, via FIVE different architectural categories, with category tracking physical regime (rocky/gas/ice/dwarf). Jupiter's coefficient 7.1 = D_phys+D_BSFG/2+F_TRZ — the QCD β₀ = 7 composition inside a magnetosphere (crossing). Venus attribution ERRATA honored in-paper | EXACT ×9 |
+| 2061/62/66/68 | The category era: compound-prefix (TON618 = 200th novel), additive-combination (Crab pulsar 30.2 Hz = 30 + 0.2), canonical-anchored, additive-scaled — **five architectural categories formalized in one band-span** | categories |
+| 2063/64 | The audits reveal prior population: α⁻¹, Rydberg, the vital signs, H₀, reactor pH were additive-combinations all along; Higgs VEV and SM masses compound-prefix | meta |
+| 2065 | 50-round milestone: 211 novels, 61 papers, audit sextet | milestone |
+| 2070 | Ninth F_TRZ sub-family (half-squared complement); planetary Q and B families lock (Jupiter 0.999, Earth B = (D_phys+1)·SO_5⁻⁵) | EXACT |
+
+**Ledger:** registry +10, graph +41, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,491 → **5,502**, green. Dispatches **2,122**. Frontier → **PAPER_2070**.
+~86 numeric remain. 40 dispatches wired-not-yet-shipped — ship recommended.
+
+## (203) 2026-08-15 — BAND PAPER_2071-2080 (π becomes the third canonical; CP2 opens)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2073 | **π IS THE THIRD CANONICAL: the π-canonical sub-family (200+ instances via 6 entry mechanisms) potentially DOMINATES the architectural center** — the 2π carrier, the cos(π·t_n) heartbeat, the Ramanujan 1/π Λ chain (2,569 hits), the caduceus π-decimal encoding, geometry, instanton — π enters PHYSICALLY (PAPER_646 pinch points), not as convention | REVELATION |
+| 2075 | **Observational Λ = (1+F_TRZ+F_TRZ²)·SO_5⁻⁵² = 1.11e-52 m⁻² EXACT** — the geometric-series grammar; crossing with the predecessor PAPER_2094 successor form (11·10⁻⁵³ = 1.1e-52) recorded: the series IS the successor plus the F² term, delta = the dressing | EXACT |
+| 2077 | **R200 MILESTONE: SOLAR CORE T = (D_BSFG/D_phys)·SO_5⁷ = 1.5×10⁷ K EXACT** — the 3/2 identity powers the Sun; BBN T = SO_5⁹ K; solar-system family at TEN objects; 256 cumulative novels | EXACT |
+| 2071 | Schwinger field second route (compound-prefix 4.4e13 T; honest two-tier vs physical 4.414e13) | EXACT |
+| 2078 | 60-round milestone; **the reactor bulb = 65 W = A_5 + SO_5/2** — design-choice primitive-locking | EXACT |
+| 2079/80 | **CP2 ARC OPENS** (641-class untapped territory): 500-frame lock, compound family 3rd instance, solar wind route family, plasmoid 4/5, voltage domain, 2·N_ch photo count | CP2 |
+| 2072/74/76 | π-canonical seed (vortex π·SO_5⁸); velocity rung 2; the audit NONET completes the 5-category taxonomy | EXACT |
+
+**Ledger:** registry +10, graph +35, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,502 → **5,513**, green. Dispatches **2,132**. Frontier → **PAPER_2080**.
+~76 numeric remain. 50 dispatches wired-not-yet-shipped — ship strongly recommended.
+
+## (204) 2026-08-15 — SHIP PREP v0.380.0 (23-file pass + stale sweep)
+
+Version pins ×6 synced (desc 448 chars w/ version — first draft 528 caught by its own assert),
+40 trail markers stamped → v0.380.0, CHANGELOG/_BUILD_LOG/SHIP_MESSAGE/README release paragraph
+written. Stale sweep clean (historical ledger references only). All 23 charter files verified
+modified. Runtime 2,132 dispatches @ v0.380.0.
+
+**Ship contents:** bands 2031-2080 (50 dispatches) — the architectural-category era: 5 categories
++ audit nonet, canonical-anchored root revelation (Λ + Holmlid members), π third canonical (200+
+×6 mechanisms), U_i(Sun) Path-B EXACT, Kerr 4-AGN family, 9-planet R_mag, solar core 3/2, Λ
+geometric-series, R200/30/40/50/60-round milestones, CP2 arc opening.
+Gate 5,458 → **5,513** (0 failures). Dispatches 2,082 → **2,132** (94.5%).
+Ready for `.\ship.ps1`. After ship: final ~76 numeric (2081-2156) → corpus completion →
+end-of-drain audit (decision C).

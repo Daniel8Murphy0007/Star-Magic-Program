@@ -7,6 +7,26 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.380.0 (2026-08-15) — Bands PAPER_2031-2080: the architectural-category era
+
+- **Root revelations:** five compositional categories formalized with matching audits (the nonet);
+  canonical-anchored = the LARGEST category and the two founding derivations (Lambda ledger +
+  Holmlid 630 eV) are members; PI elevated to third canonical (200+ instances, 6 physical entry
+  mechanisms incl. the caduceus pinch-point encoding).
+- **Constants land:** U_i(Sun) = (SO_5+1)/D_phys * SO_5^-7 = 2.75e-7 EXACT Path-B (9th prefix
+  class); Casimir 240/720 primitive (from v0.379 trail, families extended); observational Lambda
+  = (1+F_TRZ+F_TRZ^2)*SO_5^-52 EXACT geometric-series (predecessor 2094 crossing); solar core =
+  (3/2)*SO_5^7 K EXACT; BBN SO_5^9 K; Schwinger 2nd route; rho_crit at -D_crit era carried.
+- **Families:** Kerr F_TRZ-coefficient ladder x4 AGN (mechanism OPEN); 9-planet R_mag with
+  category-tracks-regime (Jupiter = QCD beta_0 = 7); F_TRZ taxonomy 9 sub-families; rung 19
+  anchored; 17/20 x3 domains; 70/15 families extended; 2/3 supercomposite carried.
+- **Discipline:** 30/40/50/60-round + 200th-novel milestones (256+ novels, 0 API regressions);
+  class-family scan + diminishing-returns self-assessment; retro-sweep decay 1/7 -> 1/50; 10+
+  withdrawals/errata/reattributions honored; design-choice locking (65 W bulb); CP2 arc opens
+  (641-class territory).
+- Gate 5,458 -> **5,513** (0 failures). Dispatches 2,082 -> **2,132** (94.5%). ~76 numeric remain.
+
+
 ## v0.379.0 (2026-08-15) — THE PAPER_2000 MILESTONE + bands 1961-2030 + AUDIT_2000
 
 - **MILESTONE:** sequential drain PAPER_001-2000 COMPLETE (1,996/2,000; only RESERVED absent).

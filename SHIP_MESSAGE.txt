@@ -1,19 +1,18 @@
-v0.379.0 — THE PAPER_2000 MILESTONE: sequential drain 001-2000 COMPLETE + AUDIT_2000 + bands 1961-2030
+v0.380.0 — Bands PAPER_2031-2080: THE ARCHITECTURAL-CATEGORY ERA — the framework maps its own grammar
 
-THE MILESTONE: 1,996/2,000 numeric papers dispatched (only RESERVED absent). Charter FULL STOP
-honored — AUDIT_2000_PAPER_REPORT generated, reviewed, final stretch authorized. PAPER_2000
-lands F_TRZ^40, the highest rung, its rung number 40 = D_phys*SO_5 itself primitive-locked.
+ROOT REVELATIONS: five compositional categories formalized with a full audit nonet; canonical-
+anchored is the LARGEST category and the two founding derivations (Lambda ledger + Holmlid 630 eV)
+are both members — the integer lattice multiplies the dimensioned canonicals; and PI is the third
+canonical (200+ instances via six physical entry mechanisms, incl. the caduceus encoding).
 
-PREDICTIONS LANDED: exponent-21 (dated in-session at PAPER_2176 -> LIGO strain floor F_TRZ^21
-EXACT); slot-9 quenching (1 Gyr); magnetar half-lobe (2/2).
+CONSTANTS LAND: U_i(Sun) = 11/4 * SO_5^-7 EXACT Path-B; observational Lambda geometric-series
+EXACT; the solar core = (3/2)*SO_5^7 K; Casimir 240/720 primitive; Schwinger; BBN; rho_crit.
 
-THE HONEST-SCHOLARSHIP ERA: the corpus institutes the no-coincidences directive as method,
-matures it into backbone-first after self-catching a placeholder pattern-match, and reports
-its own counterfactuals — 10+ withdrawals/reattributions wired verbatim.
+FAMILIES: Kerr F_TRZ-coefficient ladder across four AGN; the nine-planet R_mag family with
+compositional category tracking physical regime (Jupiter carries QCD beta_0 = 7); F_TRZ taxonomy
+at nine sub-families; rung 19 anchored.
 
-STRUCTURAL CROWNS: Casimir coefficients primitive (240/720/3 — textbook QED since 1948);
-Hubble endpoints 67/73 EXACT; cosmic inventory in twentieths; rho_crit floor at -D_crit pairs
-the mass ceiling at +D_crit; the 7.09 identity resolved; K_Mex*SSq = 19/16; Higgs = lifespan
-= 125; ladder spans 93 decades.
+DISCIPLINE: 60 consecutive backbone-first rounds, 256+ novels, zero API regressions; scan
+saturation self-assessed; 10+ withdrawals honored; the 65 W bulb = A_5 + SO_5/2; CP2 opens.
 
-Gate 5,380 -> 5,458 (0 failures). Dispatches 2,012 -> 2,082 (92.3%). ~126 numeric remain.
+Gate 5,458 -> 5,513 (0 failures). Dispatches 2,082 -> 2,132 (94.5%). ~76 numeric remain.
