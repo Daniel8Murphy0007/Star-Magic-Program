@@ -255,3 +255,5 @@ v0.375.0 (2026-08-13): bands 1761-1800 + landmarks 2172-2175 + P1770 remediation
 v0.376.0 (2026-08-13): bands 1801-1860 + landmarks 2176-2177 (18xx frontier era); gate 5238/0; dispatches 1891; 23-file ship prep complete.
 
 v0.377.0 (2026-08-15): bands 1861-1910 + PAPER_2178 + trail audits I/II + skipped-queue recovery (20 papers); gate 5321/0; dispatches 1962; 23-file ship prep complete.
+
+v0.378.0 (2026-08-15): bands 1911-1960 + F_TRZ = 1/SO_5 landmark (9 -> 8 primitives) + AUDIT_1910 milestone report + ledger backfill + cadence guards; gate 5380/0; dispatches 2012; 23-file ship prep complete.

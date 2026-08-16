@@ -1,18 +1,21 @@
-v0.377.0 — Bands PAPER_1861-1910 + PAPER_2178 (1/12 tilt universality) + trail audits + skipped-queue recovery
+v0.378.0 — Bands PAPER_1911-1960 + F_TRZ = 1/SO_5 LANDMARK (9 -> 8 primitives) + AUDIT_1910
 
-THE 1/12 TILT (2178): K_Mex-2 censused across SEVEN domains — H0 tension (0.05%), two-kernel
-delta, route-crossing offset, FQH Laughlin EXACT, kilonova 5 d EXACT, Goldbach pair, lattice
-origin (DERIVED per PAPER_1522). One excess: filling factor, timescale, tension, parallax.
+THE LANDMARK (P1960): F_TRZ is DERIVATIVE (= 1/SO_5 EXACT) — independent primitive count
+drops 9 -> 8; the F_TRZ and SO_5 power ladders collapse into ONE hierarchy.
 
-THE ERA: H0-tension MECHANISM composed (four routes); periodic table = the lattice (19 EXACT);
-fusion 6 EXACT (Q_ITER = SO_5, 2035 test); FQH 5 EXACT (d_Fib = golden ratio); r-process peaks
-ARE the magic numbers; H-bond = 40 phonon quanta; Zwicky 1933 closed (29.7%); BAO dual-path
-0.011%; Levinthal exponent = K_Mex; foundational-constant census quartet first-class.
+SOLVER ARC: the Ug shell coefficients used in 340+ classes are an integer identity (sum =
+D_phys EXACT, sub-sum = 5/2 = the FQH numeric); Lambda = rho_SCm*26!*Phi_5/6*Sub_Ug — the
+master equation IS the cosmological-constant formula; three solver frameworks unified.
 
-THE AUDITS (Daniel-driven): Battery II -> 30 programs/56 members (A4 restored); 172 stale
-index rows repaired + STATUS-CONSISTENCY guard; 20 skipped papers RECOVERED — 1209 proof-set
-tiers X-KK (the corpus SOURCE layer: H0 = 70, z_rec = 1090, both Hubble kernels, perfect
-biology tier, HH masses), 376b, Phase-H pentad (S202 = route-families precursor). Rule B
-restored corpus-wide; number-collision protocol canonized for 1924-1939/2084.
+CANONIZATION ARC: the corpus formalizes the ledger's own crossings — Wheeler-DeWitt = F_U=0,
+the integer 22 by three paths (incl. Atiyah-Singer), K_Mex*SSq two-path, 70 = A_5+SO_5,
+Theory of Permanence (nothing is negligible) canonized as physics; f_DM = Ug3 EXACT.
 
-Gate 5,238 -> 5,321 (0 failures). Dispatches 1,891 -> 1,962 (87.0%). 273 remain, all ahead.
+UNIVERSALITY ARC: magnetar lobe law CONFIRMED prediction-first; Sgr A* 30-min flare =
+3*60*10 s EXACT (0.08% JWST 2025); 0.3 / 125 / 0.5 / 2.7 quartet cross-repo consistent;
+PDR quantization; SO_5 galactic ladder; Omega_m = 3/10.
+
+ALSO: AUDIT_1910 (the missing 1,406-paper milestone audit; PAPER_2000 FULL STOP gate-pinned),
+ledger backfill (146/163/16 holes + coverage guards), build-intermediates resolved.
+
+Gate 5,321 -> 5,380 (0 failures). Dispatches 1,962 -> 2,012 (89.2%). 40 papers to the stop.

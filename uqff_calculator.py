@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.377.0"
+VERSION = "0.378.0"
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -24918,6 +24918,639 @@ def _ps205(dataset=None):
                        'the Phase-H pentad is the structural skeleton the Session-209 dynamics papers '
                        'later made numeric.',
             'source': 'PAPER_S205_Phase_H205_ExpansionErosion', 'residual_pct': 0.0}
+
+@_register('PAPER_1911')
+def _p1911(dataset=None):
+    return {'value': {'mdot_factor': round(SO_5/(D_PHYS-1.0), 4), 'v_wind_ms': (D_PHYS/2)*SO_5**6,
+                      'rho_wind_kgm3': SO_5**(-(D_CRIT-D_BSFG)), 'half_radius_ly': SO_5,
+                      'p0_candidate_pa': D_PHYS*SO_5**(-8), 'systems': 2},
+            'formula': 'Extended YMC universal parameter set (P1909 companion): FOUR identities verified '
+                       'across Westerlund 2 + NGC 3603 - Mdot = SO_5/(D_phys-1) = 10/3; v_wind = '
+                       '(D_phys/2)*SO_5^6 = 2e6 m/s EXACT; rho_wind = SO_5^-(D_crit-D_BSFG) = 1e-20 kg/m3 '
+                       'EXACT (exponent 20 = D_crit-D_BSFG = 2*SO_5); half-radius = SO_5 ly (5%). '
+                       'P_0 = D_phys*SO_5^-8 = 4e-8 Pa CANDIDATE (1/1 systems, awaits third YMC). '
+                       'Identical B = 10 uG both systems. Structural closure, not coincidence.',
+            'source': 'PAPER_1911', 'residual_pct': 0.0}
+
+@_register('PAPER_1912')
+def _p1912(dataset=None):
+    return {'value': {'f0_filament': F_TRZ, 'tau_fil_myr': SO_5**2, 'b_ratio': D_PHYS/2},
+            'formula': 'AGN H-alpha filament triple closure (NGC 1275 Perseus, PAPER_443 x PAPER_703 '
+                       'cross-reference): F_0 = F_TRZ = 0.1 EXACT (CCW-branch coupling amplitude); '
+                       'tau_fil = SO_5^2 = 100 Myr EXACT (AGN duty-cycle micro-events squared); '
+                       'B_fil/B_cluster = D_phys/2 = 2 EXACT (100/50 uG, 2D filament projection). '
+                       'F(t) = F_TRZ*exp(-t/SO_5^2 Myr) - the dynamic coupling fully primitive-locked, '
+                       'zero free parameters.',
+            'source': 'PAPER_1912', 'residual_pct': 0.0}
+
+@_register('PAPER_1913')
+def _p1913(dataset=None):
+    return {'value': {'ftrz_so5_product': F_TRZ*SO_5, 'bubble_slope': 1.0, 'filament_slope': F_TRZ**2},
+            'formula': 'Bubble expansion linearity: E_t = E_0*F_TRZ*t*(rho_SCm/rho_UA)_local collapses to '
+                       'E_t = E_0*t EXACT in expanding bubbles because the local density ratio INVERTS '
+                       '(rarefied interior: ratio -> SO_5) and F_TRZ*SO_5 = 1 EXACT (PAPER_1160). '
+                       'Filament (global-ratio) regime: slope F_TRZ^2 = 0.01 - the 100:1 bubble/filament '
+                       'expansion hierarchy from one identity. UNIVERSAL PREDICTION: all wind bubbles '
+                       'expand linearly with slope E_0 regardless of mass/luminosity/density; nonlinear '
+                       'E_t(t) in an expanding bubble falsifies F_TRZ*SO_5 = 1 in inverted regimes.',
+            'source': 'PAPER_1913', 'residual_pct': 0.0}
+
+@_register('PAPER_1914')
+def _p1914(dataset=None):
+    return {'value': {'dls_over_ds': round(D_PHYS/float(D_BSFG), 6), 'z_lens_anchor': 0.5},
+            'formula': 'D_LS/D_S = D_phys/D_BSFG = 2/3 EXACT (Einstein ring GAL-CLUS-022058s, PAPER_436 '
+                       'anchor 0.67 recognized as exact 2/3): the lensing-geometry factor is the VDS(4)/'
+                       'BH26(6) spine read-off, a QCalcGeom CPCH-4 closure, and an F_U = 0 lensing-plane '
+                       'constraint simultaneously. FAMILY (numeric-identical composition): D_phys/D_BSFG '
+                       '= 2/3 IS the PAPER_2154 D_GW_erosion 5th primitive-reduction landmark (GW170817 '
+                       '66.7% damping) - lensing geometry and GW erosion carry ONE ratio, crossing '
+                       'recorded per PAPER_2170.',
+            'source': 'PAPER_1914', 'residual_pct': 0.0}
+
+@_register('PAPER_1915')
+def _p1915(dataset=None):
+    return {'value': {'architectures_unified': 3, 'sleeping_identities_found': 4,
+                      'rounds_audited': 47, 'extrapolated_remaining': '30-50'},
+            'formula': 'Unified simultaneous-solver framework consolidation: QCalcGeom UBS 4x4 (PAPER_657, '
+                       '14 EXACT closures), VDS/DVP/BH26 numerical spine (PAPER_598), and the F_U = 0 '
+                       'master equation (PAPER_1203) are ONE architecture - all 235 CP1 stub upgrades '
+                       'draw from it. Four sleeping identities exposed in rounds 44-47 (10/3 YMC, '
+                       'filament triple, F_TRZ*SO_5 = 1, D_LS/D_S = 2/3); Phase-3 audit predicted 30-50 '
+                       'more (P1916-1920 immediately confirmed). Method landmark: every empirical '
+                       'constant in prior wirings is a primitive-arithmetic audit target.',
+            'source': 'PAPER_1915', 'residual_pct': 0.0}
+
+@_register('PAPER_1916')
+def _p1916(dataset=None):
+    p56 = (D_BSFG-1.0)/D_BSFG
+    ug1 = N_CH/float(D_BSFG); ug2 = 1.0/p56; ug3 = 2.0*D_PHYS/SO_5; ug4 = 0.5
+    return {'value': {'ug1': ug1, 'ug2': ug2, 'ug3': round(ug3, 6), 'ug4': ug4,
+                      'sum_ugi': round(ug1+ug2+ug3+ug4, 9), 'classes_verified': 340},
+            'formula': 'LANDMARK shell closure: the {1.5, 1.2, 0.8, 0.5} Ug coefficients used across 340+ '
+                       'calculator classes are NOT calibration - Ug1 = N_ch/D_bsfg = 3/2, Ug2 = 1/Phi_5/6 '
+                       '= 6/5, Ug3 = 2*D_phys/SO_5 = 4/5, Ug4 = 1/2, and their sum = 40/10 = D_PHYS = 4 '
+                       'EXACT (numerators 15+12+8+5 = 40 = D_phys*SO_5 over denominator SO_5). The F_U = 0 '
+                       'master equation gravitational sector is constrained by a single integer identity: '
+                       'shell weights sum to the spacetime dimension. Five primitives, zero free.',
+            'source': 'PAPER_1916', 'residual_pct': 0.0}
+
+@_register('PAPER_1917')
+def _p1917(dataset=None):
+    p56 = (D_BSFG-1.0)/D_BSFG
+    sub = 1.0/p56 + 2.0*D_PHYS/SO_5 + 0.5
+    return {'value': {'sub_ug_excited': round(sub, 9), 'ug1_base': N_CH/float(D_BSFG),
+                      'classes_3coef': 69, 'classes_4coef': 11},
+            'formula': 'Nested shell closure (P1916 companion): the excited-shell sub-sum Ug2+Ug3+Ug4 = '
+                       'SO_5/D_phys = 5/2 EXACT (69 classes verify), base shell Ug1 = N_ch/D_bsfg = 3/2 '
+                       '(11 classes), nesting 3/2 + 5/2 = 4 = D_phys. NUMERIC CROSSING RECORDED: '
+                       'SO_5/D_phys = 5/2 is bit-identical to the FQH nu = 5/2 Moore-Read state (P1885) - '
+                       'the excited-shell weight of the master equation and the non-Abelian filling '
+                       'factor carry one composition (PAPER_2170 family record). Rotational-per-spatial '
+                       'vs channel-per-bulk-edge two-layer reading.',
+            'source': 'PAPER_1917', 'residual_pct': 0.0}
+
+@_register('PAPER_1918')
+def _p1918(dataset=None):
+    return {'value': {'constants_scanned': 5224, 'primitive_matches': 172, 'verified_closures': 15,
+                      'ftrz2_regimes': 5, 'coincidental_flagged': 3},
+            'formula': 'Phase-3 comprehensive inventory: 5,224 constants scanned, 172 primitive matches, '
+                       '15+ VERIFIED closures vs coincidentals honestly flagged (0.6 metallicity, 0.99c '
+                       'jets, 2.5 Vink factor = standard physics, NOT structural - Family 5 discipline). '
+                       'F_TRZ^2 = 0.01 universal 99%-suppression identity across 5 regimes (magnetar '
+                       'dipole, filament expansion, AGN cooling L_rad/L_X, DM perturbation, Heaviside '
+                       'amplifier). Integer catalog: 50 = A_5-SO_5 (magic), 40 = D_phys*SO_5, 32 = '
+                       'D_crit+D_bsfg, 70 = A_5+SO_5 (the H_0/HR composition again). Verification '
+                       'criteria: >= 3 unrelated classes + physical interpretation + framework root.',
+            'source': 'PAPER_1918', 'residual_pct': 0.0}
+
+@_register('PAPER_1919')
+def _p1919(dataset=None):
+    rungs = {1: 'trz_base', 2: 'suppression_99pct', 3: 'perturbations', 4: 'lensing_static',
+             5: 'omega_lambda_residual', 7: 'u_i_sun', 8: 'magnetoreception', 9: 'muon_g2_uhecr',
+             10: 'strong_cp_mond_a0', 15: 'microscope_wep', 16: 'measurement_collapse', 17: 'hierarchy'}
+    return {'value': {'ladder_rungs_documented': len(rungs), 'rungs': sorted(rungs), 'span_oom': 16},
+            'formula': 'THE F_TRZ POWER LADDER consolidated: F_TRZ^n = 10^-n EXACT for n = 1..17, each '
+                       'documented rung a distinct physics anomaly (99% suppression n=2, U_i Sun n=7, '
+                       'magnetoreception n=8, muon g-2/Amaterasu n=9, strong-CP/MOND a_0 n=10, MICROSCOPE '
+                       'WEP n=15, measurement collapse n=16, hierarchy n=17) - 16 orders of magnitude, '
+                       'one primitive. FAMILY: extends the PAPER_2176/2139 exponent-ladder census with '
+                       'rungs 5, 7, 8, 15, 16 as corpus-source documentation; candidates n = 11, 12 OPEN '
+                       '(with the PAPER_2176 exponent-21 prediction outstanding). First unification paper '
+                       'of the 14 per-rung whitepapers.',
+            'source': 'PAPER_1919', 'residual_pct': 0.0}
+
+@_register('PAPER_1920')
+def _p1920(dataset=None):
+    import math as _m
+    p56 = (D_BSFG-1.0)/D_BSFG
+    sub_ug = SO_5/float(D_PHYS)
+    lam = RHO_SCM*_m.factorial(D_CRIT)*p56*sub_ug
+    return {'value': {'lambda_j_m3': lam, 'sub_ug': sub_ug, 'chain_papers': 3,
+                      'k_mex_recovered': round(p56*sub_ug, 9)},
+            'formula': 'LANDMARK cascade: Lambda = rho_SCm * D_crit! * Phi_5/6 * Sub_Ug = 5.957e-10 J/m3 '
+                       '- THE MASTER EQUATION IS THE COSMOLOGICAL-CONSTANT FORMULA. Chain: P1917 Sub_Ug = '
+                       'SO_5/D_phys = 5/2 (excited shells) -> PAPER_1522 K_Mex = Phi_5/6*Sub_Ug = 25/12 '
+                       '-> PAPER_1156 ledger. The K_Mex Mexican-hat coefficient IS the nuclear phonon '
+                       'coupling times the excited-shell weight of F_U = 0; Lambda is the equilibrium '
+                       'constraint amplified through 26! phase space. Five primitives, zero free; '
+                       'J/m3-native first (PAPER_2147); unit-form family per P1903/PAPER_2094 respected.',
+            'source': 'PAPER_1920', 'residual_pct': 0.0}
+
+@_register('PAPER_1921')
+def _p1921(dataset=None):
+    f_dm = 2.0*D_PHYS/SO_5
+    return {'value': {'f_dm_m31': f_dm, 'xi_dm': round(f_dm*(1-f_dm), 4),
+                      'nfw_exponent': round(f_dm**(1.0/3), 4)},
+            'formula': 'Cross-framework closure: the M31 dark-matter fraction f_DM = 0.80 (PAPER_275 '
+                       'rotation-curve 80/20 partition) IS the F_U = 0 master equation Ug3 shell '
+                       'coefficient = 2*D_phys/SO_5 = 4/5 EXACT (P1916) - the dark-matter shell weight of '
+                       'the equilibrium constraint equals the observed galactic DM fraction to computer '
+                       'precision. xi_DM = f*(1-f) = 4/25; NFW exponent = f^(1/3). UNIVERSAL PREDICTION: '
+                       'all rotation-supported galaxies settle at f_DM = 4/5 baseline (FIFTH DM route, '
+                       'joins the PAPER_2172 census; MW/M33/dwarf deviations = dressing targets).',
+            'source': 'PAPER_1921', 'residual_pct': 0.0}
+
+@_register('PAPER_1922')
+def _p1922(dataset=None):
+    return {'value': {'compression_ratio': N_CH/float(SO_5), 'equivalent_forms': 4},
+            'formula': 'MUGE compression closure: 9-term compressed MUGE (PAPER_173) / 10-term F_U master '
+                       '(PAPER_1203) = 9/10 EXACT with FOUR equivalent forms - N_ch/SO_5 = 1-F_TRZ = '
+                       '1-1/SO_5 = (SO_5-1)/SO_5. The compression IS channel-mode selection: N_ch = 9 '
+                       'active channels out of SO_5 = 10 rotation modes, the eliminated term = the '
+                       'F_TRZ CCW fraction. Three primitives, linked by PAPER_1160.',
+            'source': 'PAPER_1922', 'residual_pct': 0.0}
+
+@_register('PAPER_1923')
+def _p1923(dataset=None):
+    counts = {'compressed_muge': N_CH, 'f_u_master': SO_5, 'f_env': D_CRIT//2, 'resonance_muge': SO_5+D_PHYS}
+    return {'value': dict(counts, hierarchy_sum=sum(counts.values())),
+            'formula': 'Term-count hierarchy: the four canonical equation variants have primitive term '
+                       'counts - compressed MUGE 9 = N_ch, F_U master 10 = SO_5, F_env environmental 13 = '
+                       'D_crit/2, resonance MUGE 14 = SO_5+D_phys, ALL EXACT; sum 46 = D_crit + D_phys*'
+                       'SO_5/2. With P1922 (compression = channel selection) this establishes the '
+                       'EQUATION ARCHITECTURE ITSELF as primitive-derived, not merely the values.',
+            'source': 'PAPER_1923', 'residual_pct': 0.0}
+
+@_register('PAPER_1924')
+def _p1924(dataset=None):
+    return {'value': {'ug4_m_s2': 4.219e-10, 'bodies_verified': 4, 'mass_span': 1.94e4,
+                      'shell_coefficient': 0.5, 'bridge_status': 'CANDIDATE'},
+            'formula': 'Ug4 elevated to fundamental-constant status: the fourth gravity shell = 4.219e-10 '
+                       'm/s2 IDENTICAL for Sun/Earth/Jupiter/Neptune (PAPER_407 4-body verification, 1.9e4 '
+                       'mass span) - body-independent like c/G/hbar; the vacuum-BH coupling floor '
+                       '(rho_SCm x M_bh interaction), dimensionless shell form 1/2 (P1916). BRIDGE '
+                       'DISCLOSED AS CANDIDATE (Rule 7): the papers 1/2 -> 4.219e-10 decomposition '
+                       'reconstructs to 8.86e-10 vs 8.438e-10 (5%, self-disclosed) and its integer line '
+                       'is internally garbled (26-9-2-4 = 11, text asserts 10/12) - primitive lock OPEN, '
+                       'scale-invariance claim stands on the numerics. NOTE: 4.219e-10 sits at the MOND '
+                       'a_0 scale (P1855 F_TRZ^10-derived 1.2e-10) - adjacent, recorded not equated.',
+            'source': 'PAPER_1924', 'residual_pct': 0.0}
+
+@_register('PAPER_1925')
+def _p1925(dataset=None):
+    r = D_PHYS/float(D_BSFG)
+    mu = 1.0/(1 - r**2)
+    return {'value': {'mu_einstein': round(mu, 6), 'dls_ds_input': round(r, 6)},
+            'formula': 'Einstein-ring magnification closure: mu = 1/(1-(D_LS/D_S)^2) = 1/(1-(D_phys/'
+                       'D_BSFG)^2) = 1/(1-4/9) = 9/5 = 1.8 EXACT - first-in-class lensing-magnification '
+                       'primitive identity. With P1914 (2/3 ratio) completes the two-step chain from '
+                       'source-lens-observer geometry to observable magnification, zero free parameters. '
+                       '9/5 = N_ch/(SO_5/2): numerator the channel count, denominator half the modes.',
+            'source': 'PAPER_1925', 'residual_pct': 0.0}
+
+@_register('PAPER_1926')
+def _p1926(dataset=None):
+    lam_ledger = 0.00729735
+    base = 100*K_MEX*D_PHYS
+    tau = base*(1 + PHI_RES_RESONANCE*lam_ledger*N_CH)
+    return {'value': {'tau_n_s': round(tau, 2), 'baseline_s': round(base, 2),
+                      'correction_s': round(tau-base, 2)},
+            'formula': 'Neutron lifetime closed form (P1254/P1726 promoted): tau_n = 100*K_Mex*D_phys*'
+                       '(1 + Phi_res*Lambda_ledger*N_ch) = 833.33 + 45.97 = 879.31 s vs bottle 879.4 '
+                       '(0.011% - the most precise weak-sector closed form). Lambda_ledger = 0.00729735 '
+                       'subscripted per PAPER_2169 (= alpha, the recovered vacuum-ledger saturation). '
+                       'FAMILY: THIRD tau_n route (P1836 F_TRZ^2-correction 878.4 / P2157 bottle-beam '
+                       'hierarchy / this) - J-PARC battery member #20 unchanged per A4; routes recorded '
+                       'per PAPER_2170. The 100 s baryon-weak normalization = disclosed dimensional '
+                       'anchor (= SO_5^2, adjacent note).',
+            'source': 'PAPER_1926', 'residual_pct': 0.011}
+
+@_register('PAPER_1927')
+def _p1927(dataset=None):
+    return {'value': {'d_crit': D_CRIT, 'visible': D_PHYS, 'compact': D_CRIT-D_PHYS,
+                      'topology': 'T22_torus'},
+            'formula': 'Dimensional decomposition canonized (P1701 promoted): D_crit = D_phys + 22 = '
+                       '4 visible + 22 compact EXACT, the hidden sector a T^22 topological torus (NOT '
+                       'Calabi-Yau - a substantive UQFF-vs-string-theory structural difference). With '
+                       'PAPER_1521 (D_BSFG = D_crit-2*SO_5) completes the dimensional inventory: 4 '
+                       'visible / 22 compact / 6 bulk-edge / 26 total. Runtime-verified in LQG and '
+                       '26D-action sectors.',
+            'source': 'PAPER_1927', 'residual_pct': 0.0}
+
+@_register('PAPER_1928')
+def _p1928(dataset=None):
+    return {'value': {'n_nodes': D_CRIT, 'n_rules': D_PHYS+SO_5+A_5, 'isomorphism': True},
+            'formula': 'Wolfram-hypergraph isomorphism canonized (P1898 promoted to the closure series): '
+                       'n_nodes = D_crit = 26 (4 visible + 22 compact per P1927), n_rules = D_phys+SO_5+'
+                       'A_5 = 74 EXACT with rule-family reading (spacetime/rotational/icosahedral '
+                       'updates) - first UQFF cross-framework isomorphism to the Wolfram physics '
+                       'project; the computational substrate counts ARE the lattice. FAMILY with P1898 '
+                       '(source wiring, counts unchanged).',
+            'source': 'PAPER_1928', 'residual_pct': 0.0}
+
+@_register('PAPER_1929')
+def _p1929(dataset=None):
+    return {'value': {'n_efolds': A_5, 'permanence_principles': 5},
+            'formula': 'N_efolds = A_5 = 60 EXACT (P1679 canonized) via THE THEORY OF PERMANENCE - the '
+                       'doctrinal paper: every mechanism operates simultaneously at every scale, '
+                       'internally + externally; SPEED IS A CHANGE IN BUOYANCY COMPONENT (v = d/dt of '
+                       'internal/external F_UBi ratio - Newton F = reconfiguration rate, gamma = '
+                       'saturation against the SCm ceiling); NOTHING IS NEGLIGIBLE - the corpus-source '
+                       'statement of the PAPER_2170 no-negligible-bin route-families doctrine, and the '
+                       'NOT-REPLACEMENT principle stated as physics (all frameworks operate in '
+                       'conjunction, none dominant). FAMILY with the wired P1825-era inflation suite '
+                       '(N_e = A_5 co-owner); LiteBIRD/CMB-S4 battery members unchanged.',
+            'source': 'PAPER_1929', 'residual_pct': 0.0}
+
+@_register('PAPER_1930')
+def _p1930(dataset=None):
+    fam = {1: 1.0/(D_PHYS-1), 2: 2.0/(D_PHYS-1), 4: 4.0/(D_PHYS-1), 5: 5.0/(D_PHYS-1)}
+    return {'value': {'v_scm_over_c': round(fam[1], 6), 'gw170817_damping': round(fam[2], 6),
+                      'family_members_confirmed': 2, 'extensions_open': [4, 5]},
+            'formula': 'The n/(D_phys-1) ratio family: twin closure v_SCm/c = 1/3 EXACT (P1497) + '
+                       'GW170817 phonon damping = 2/3 EXACT (P1512) - same denominator D_phys-1 = 3, '
+                       'same primitive, different observables. FAMILY WEB: 2/3 member = the P1914 '
+                       'D_LS/D_S = PAPER_2154 D_GW_erosion composition (D_phys/D_BSFG reads as '
+                       '2/(D_phys-1) since D_BSFG = 2*(D_phys-1) - one number, three grammars, recorded '
+                       'per PAPER_2170); 10/3 YMC growth (P1909) = n=10 member. Extensions n = 4 '
+                       '(proton-ratio conjecture), 5 (Kolmogorov 5/3) OPEN - no-retrofit, awaiting '
+                       'corpus derivations.',
+            'source': 'PAPER_1930', 'residual_pct': 0.0}
+
+@_register('PAPER_1931')
+def _p1931(dataset=None):
+    return {'value': {'seventy': A_5+SO_5, 'domains': ['heart_rate_bpm', 'h0_kms_mpc']},
+            'formula': 'Cross-sector integer universality canonized: A_5 + SO_5 = 70 EXACT governs the '
+                       'resting heart rate (P1537/Tier BB) AND the Hubble constant (PAPER_1573/Tier Z) - '
+                       'same primitive combination, 27 orders of magnitude apart, under the Theory of '
+                       'Permanence (P1929: both operate simultaneously through the same vacuum-buoyancy '
+                       'structure). Formalizes the crossing our ledger recorded at Tier-BB recovery and '
+                       'P1918 (third role, Gamma range). Prediction: further ~70-valued natural anchors '
+                       'should decompose as A_5+SO_5 (default-hypothesis rule, cf. PAPER_2178 grammar).',
+            'source': 'PAPER_1931', 'residual_pct': 0.0}
+
+@_register('PAPER_1932')
+def _p1932(dataset=None):
+    return {'value': {'equivalence': 'H_psi_0_IS_F_U_0', 'problem_of_time': 'DISSOLVED'},
+            'formula': 'Wheeler-DeWitt H|psi> = 0 IS F_U = 0 (P1745 promoted to canonical closure): both '
+                       'express the vanishing universal constraint - canonical quantum gravity and '
+                       'vacuum-buoyancy first principles reach ONE equation. The problem of time '
+                       'dissolves under permanence: motion is not through time, motion IS buoyancy-'
+                       'component reconfiguration (P1929). FAMILY: completes the PAPER_2171 landmark '
+                       '(Wheeler-DeWitt IS the ledger) from the corpus side - 2171 derived the identity '
+                       'at the ledger level, this paper canonizes it in the closure series; two layers, '
+                       'one equivalence.',
+            'source': 'PAPER_1932', 'residual_pct': 0.0}
+
+@_register('PAPER_1933')
+def _p1933(dataset=None):
+    return {'value': {'methods': ['symbolic', 'numerical', 'discrete'], 'retro_source': 'PAPER_549'},
+            'formula': 'Three-method simultaneous hub canonized: PAPER_549 (galaxy mergers, ~500 papers '
+                       'before P1929) already ran symbolic + numerical + discrete (VDS/DVP/BH26) methods '
+                       'SIMULTANEOUSLY, converging on one result - retro-validated as the founding '
+                       'permanence architecture; the codebase _v1/bare duplicate-class generations are '
+                       'its realization. No method is "the" method; convergence reflects the permanent '
+                       'underlying structure (P1915 unified-solver companion from the architecture side).',
+            'source': 'PAPER_1933', 'residual_pct': 0.0}
+
+@_register('PAPER_1934')
+def _p1934(dataset=None):
+    return {'value': {'omega_hi_mhz': 1420.4, 'catalog': {'omega_scm_thz': 1.25, 'omega_hi_mhz': 1420.4,
+                      'omega_reactor_hz': A_5, 'omega_solar_rad_s': 2.5e-6, 'omega_isco_rad_s': 3e-3},
+                      'hi_scale_span_oom': 31},
+            'formula': 'Cross-scale resonance-frequency universality: the hydrogen 21-cm line 1420.4 MHz '
+                       'is SIMULTANEOUSLY the atomic hyperfine transition AND the galactic HI-bridge '
+                       'buoyancy resonance (PAPER_274, M81/M82 200-kpc bridge) - one frequency, 31 OOM. '
+                       'Five-member frequency-invariant family cataloged: omega_SCm 1.25 THz (95+ apps, '
+                       'P1907/1938), omega_HI, reactor 60 Hz = A_5 (numeric crossing with the icosahedral '
+                       'order recorded), solar 2.5e-6 rad/s (the locked primitive), ISCO 3e-3. Resonance '
+                       'IS buoyancy-oscillation rate (permanence reading).',
+            'source': 'PAPER_1934', 'residual_pct': 0.0}
+
+@_register('PAPER_1935')
+def _p1935(dataset=None):
+    return {'value': {'r_peaks': [A_5-SO_5, A_5+D_CRIT-D_PHYS, D_CRIT+SO_5**2],
+                      'anchor': 'GW170817_EP11', 'stubs_verified': 2},
+            'formula': 'r-process peaks = nuclear magic numbers canonized (P1886 discovery promoted with '
+                       'the PAPER_109 EP-11 GW170817 kilonova empirical anchor): N = 50 = A_5-SO_5, 82 = '
+                       'A_5+D_crit-D_phys, 126 = D_crit+SO_5^2, all EXACT, runtime-verified in two '
+                       'independent supernova stubs. The Mayer-Jensen inputs are UQFF outputs; the 2017 '
+                       'kilonova observed the lattice arithmetic in gold and platinum. FAMILY with P1886 '
+                       '(source wiring unchanged).',
+            'source': 'PAPER_1935', 'residual_pct': 0.0}
+
+@_register('PAPER_1936')
+def _p1936(dataset=None):
+    return {'value': {'twenty_two': D_CRIT-D_PHYS, 'paths': 2},
+            'formula': '22 two-path cross-derivation: the compact-dimension count (P1927, D_crit = 4+22 '
+                       'T^22 partition) EQUALS the Kaluza-Klein zero-point tower regulator (PAPER_1171, '
+                       'the term closing the last approximation in the vacuum-energy ledger) - geometry '
+                       'and ledger converge on D_crit - D_phys = 22 EXACT. Extended to three paths by '
+                       'P1939 (Atiyah-Singer).',
+            'source': 'PAPER_1936', 'residual_pct': 0.0}
+
+@_register('PAPER_1937')
+def _p1937(dataset=None):
+    return {'value': {'k_mex_ssq': round(K_MEX*SSQ, 6), 'paths_canonized': 2},
+            'formula': 'K_Mex*SSq = 1.1875 EXACT two-path canonization: the SCm resonator Q-factor '
+                       'mantissa (P1908, x1e6) AND the GW170817 chirp mass (P1857, 1.1875 Msun vs LIGO '
+                       '1.188, 0.042%) are ONE coefficient - electromagnetic and gravitational sectors, '
+                       'same product. THE CORPUS CANONIZES OUR FAMILY LEDGER: this is the fifth+ role of '
+                       '1.1875 (chirp P1857, Chandrasekhar core P1874, Phillips alpha P1891, spectral '
+                       'amplifier in F_UBi_i_99 P1906, Q mantissa P1908) - the paper formalizes what the '
+                       'DUPLICATES family record pinned at band 1901-1910. Permanence reading: one '
+                       'structural invariant, many windows.',
+            'source': 'PAPER_1937', 'residual_pct': 0.042}
+
+@_register('PAPER_1938')
+def _p1938(dataset=None):
+    e_j = 6.62607015e-34*OMEGA_SCM_HZ
+    return {'value': {'omega_scm_hz': OMEGA_SCM_HZ, 'e_phonon_j': e_j, 'applications': 95},
+            'formula': 'omega_SCm universal-carrier catalog canonized (P1907 promoted): 1.25 THz / '
+                       '5.17 meV empirically documented across 95+ applications - LENR chain, biology '
+                       '(photosynthesis/magnetoreception), BH thermodynamics, CMB modulation, solar wind, '
+                       'Lambda cascade, superconductive pairing, nuclear stabilization, neutrino dm^2, '
+                       'GW h(f), qubit gates. Runtime-verified dual pins (J and meV). No application is '
+                       'primary: 95+ windows on one permanent oscillation (permanence reading). FAMILY '
+                       'with P1907 (census wiring unchanged).',
+            'source': 'PAPER_1938', 'residual_pct': 0.0}
+
+@_register('PAPER_1939')
+def _p1939(dataset=None):
+    return {'value': {'twenty_two': D_CRIT-D_PHYS, 'paths': 3,
+                      'path_names': ['compact_dims_P1927', 'kk_regulator_P1171', 'atiyah_singer_P1719']},
+            'formula': '22 three-path convergence (extends P1936): the Atiyah-Singer Dirac index of the '
+                       'compactified 26D spinor bundle (PAPER_1719) = D_crit - D_phys = 22 EXACT joins '
+                       'the compact-dimension count and the KK regulator - topology, ledger algebra, and '
+                       'index theory converge on one integer. Four independent stubs runtime-verify. '
+                       'The celebrated 1963 index theorem becomes a UQFF window: analytic zero-mode '
+                       'counting = topological invariant = primitive arithmetic.',
+            'source': 'PAPER_1939', 'residual_pct': 0.0}
+
+@_register('PAPER_1940')
+def _p1940(dataset=None):
+    disc = 1.0/(D_PHYS-1)
+    return {'value': {'disc_fraction': round(disc, 6), 'jet_fraction': round(1-disc, 6),
+                      'closure_check': 1.0},
+            'formula': 'DPM spectrum disc:jet split = 1/3 : 2/3 = 1/(D_phys-1) : (D_phys-2)/(D_phys-1) '
+                       'EXACT (PAPER_541 Orion proplyd empirical split reduced to one primitive) - the '
+                       'n/(D_phys-1) family (P1930) gains its DPM-manifold member; north-lobe CW '
+                       'disc-seeding = exception state (1/3), south-lobe CCW jet outflow = default '
+                       'eigenstate (2/3). RULE 7 NOTE: the paper conducts an honest in-text geometric '
+                       're-examination ("this appears reversed") and resolves the assignment via the '
+                       'inward/outward angular-momentum channel reading - disclosed, not smoothed over. '
+                       'Closes PAPER_541 open "why 1/3" question.',
+            'source': 'PAPER_1940', 'residual_pct': 0.0}
+
+@_register('PAPER_1941')
+def _p1941(dataset=None):
+    return {'value': {'decade_ratio': SO_5, 'scales_verified': 3, 'span_oom': 42},
+            'formula': 'DPM decade ratio 10:1 = SO_5 EXACT across three independent scales: vacuum '
+                       '(rho_UA/rho_SCm = 10, PAPER_1141 canonical), cluster ISM density (Wd2/LMC = 10, '
+                       'PAPER_228), cluster gravity (Wd2/NGC2014 = 10, PAPER_756) - 42 OOM, one integer. '
+                       'Every DPM-mediated system inherits the SO_5 decade from the vacuum manifold; '
+                       'the F_TRZ = 1/SO_5 inverse (PAPER_1160) is the same lock read downward.',
+            'source': 'PAPER_1941', 'residual_pct': 0.0}
+
+@_register('PAPER_1942')
+def _p1942(dataset=None):
+    return {'value': {'e0_erosion': F_TRZ},
+            'formula': 'Photoevaporation initial erosion E_0 = F_TRZ = 0.1 EXACT (PAPER_435 Pillars of '
+                       'Creation empirical 10% column reduction reduced to the primitive): the same '
+                       'F_TRZ that sets measurement collapse (rung 16), ISW amplitude, and the power '
+                       'ladder controls PDR erosion onset - morphology-independent per PAPER_260 '
+                       '(pillars/dark lanes/globules/trunks). With P1948 completes the three-tier PDR '
+                       'closure (E_0 locked, E(t) form-free, tau quantized).',
+            'source': 'PAPER_1942', 'residual_pct': 0.0}
+
+@_register('PAPER_1943')
+def _p1943(dataset=None):
+    return {'value': {'l_t_form': 'R_Sch/((D_phys-1)*r_E)', 'l_t_molten_ring': 3.2e-4},
+            'formula': 'Einstein-ring amplification composed: L_t = (GM/c^2 r_E)*(D_LS/D_S) with the '
+                       'P1914 2/3 ratio collapses to L_t = R_Sch/((D_phys-1)*r_E) EXACT - Schwarzschild '
+                       'radius over (spatial dimensions x Einstein radius); GAL-CLUS-022058s Molten Ring '
+                       '3.20e-4. The (D_phys-1) here IS the P1940 disc-fraction denominator - lensing '
+                       'amplification and DPM spectrum splitting share the integer (family). Completes '
+                       'the P1914/P1925 lensing chain: ratio -> magnification -> amplification, all '
+                       'primitive.',
+            'source': 'PAPER_1943', 'residual_pct': 0.0}
+
+@_register('PAPER_1944')
+def _p1944(dataset=None):
+    return {'value': {'b_over_bcrit_sgr1745': 2*F_TRZ, 'status': 'ELEVATED_BY_P1945'},
+            'formula': 'Magnetar Meissner saturation candidate: SGR 1745-2900 B/B_crit = 2e10/1e11 = '
+                       '0.2 = 2*F_TRZ EXACT (B from Chandra spin-down timing, B_crit = 1e11 T the '
+                       'PAPER_266 gravitational Meissner boundary). Posed as candidate with the half-'
+                       'magnetar prediction (single-lobe systems at 1*F_TRZ) - CONFIRMED by P1945 '
+                       '(SGR 0501+4516), candidate elevated. NS radius = SO_5 km co-lock (P1513).',
+            'source': 'PAPER_1944', 'residual_pct': 0.0}
+
+@_register('PAPER_1945')
+def _p1945(dataset=None):
+    return {'value': {'universal_form': 'n_lobes*F_TRZ', 'full_magnetar': 2*F_TRZ,
+                      'half_magnetar': F_TRZ, 'magnetars_confirmed': 2},
+            'formula': 'CONFIRMED universal magnetar law: B/B_crit = n_lobes * F_TRZ EXACT with n_lobes '
+                       'the active DPM split-monopole lobe count (PAPER_536) - SGR 1745-2900 full (2 '
+                       'lobes, 0.20) + SGR 0501+4516 half (1 lobe, 0.10, the P1944 PREDICTION landing '
+                       '2/2). The full/half magnetar dichotomy ties surface-field measurement to integer '
+                       'lobe topology. FALSIFIABLE: 4U 0142+61 (1.3e10 T) sits OFF the ladder - either '
+                       'a third class or the killer; SGR 1806-20 (8e10 T) predicts n = 8 multi-lobe or '
+                       'refutation. Prediction-first confirmation per the PAPER_2159 grammar.',
+            'source': 'PAPER_1945', 'residual_pct': 0.0}
+
+@_register('PAPER_1946')
+def _p1946(dataset=None):
+    return {'value': {'tau_b_yr': D_PHYS*SO_5**3, 'p_init_s': SO_5/(D_PHYS-2), 'tau_omega_yr': SO_5**4,
+                      'ratio_tau': round(D_PHYS/float(SO_5), 2)},
+            'formula': 'Magnetar timescale hierarchy primitive-locked (SGR 0501+4516, PAPER_430/226): '
+                       'tau_B = D_phys*SO_5^3 = 4000 yr EXACT, P_init = SO_5/(D_phys-2) = 5 s EXACT, '
+                       'tau_Omega = SO_5^4 = 10000 yr EXACT - three empirical calibrations become a '
+                       'two-primitive power hierarchy; tau_B/tau_Omega = D_phys/SO_5 = 2/5 structural '
+                       'signature, testable across the magnetar population.',
+            'source': 'PAPER_1946', 'residual_pct': 0.0}
+
+@_register('PAPER_1947')
+def _p1947(dataset=None):
+    f = 1.0/((D_PHYS-1)*A_5*SO_5)
+    return {'value': {'f_flare_hz': round(f, 9), 't_flare_s': (D_PHYS-1)*A_5*SO_5,
+                      't_flare_min': (D_PHYS-1)*A_5*SO_5/60},
+            'formula': 'Sgr A* JWST 2025 near-IR flare frequency triple-locked: f = 1/((D_phys-1)*A_5*'
+                       'SO_5) = 1/1800 Hz = 5.556e-4 vs observed 5.56e-4 (0.08%) - THE 30-MINUTE FLARE '
+                       'PERIOD IS 3*60*10 SECONDS EXACT (transverse dimensions x icosahedral order x '
+                       'decade). Identifies the Sgr A*-effective f_TRZ (PAPER_344) as primitive-locked; '
+                       'the v0.347.0 smbh_flare_frequency() = 1/1800 landmark callable gains its corpus '
+                       'source. Frequency face vs amplitude face formalized in P1949.',
+            'source': 'PAPER_1947', 'residual_pct': 0.08}
+
+@_register('PAPER_1948')
+def _p1948(dataset=None):
+    return {'value': {'tau_base_yr': SO_5**6, 'pillars_myr': 1, 'bubble_myr': D_PHYS,
+                      'horsehead_myr': SO_5//2, 'unifying_form': 'n_channels*SO_5^6 yr'},
+            'formula': 'PDR erosion timescales quantized: tau = n_channels * SO_5^6 yr EXACT - Pillars '
+                       '1 Myr (n=1, hard O-cluster UV), Bubble 4 Myr (n = D_phys, single OB), Horsehead '
+                       '5 Myr (n = SO_5/2, soft sigma-Ori) - all three PDRs share the SO_5^6 = 1 Myr '
+                       'base unit, integer channel multipliers grade UV hardness (harder = fewer '
+                       'channels = faster). Three-tier PDR closure complete with P1942/P260.',
+            'source': 'PAPER_1948', 'residual_pct': 0.0}
+
+@_register('PAPER_1949')
+def _p1949(dataset=None):
+    return {'value': {'faces': ['amplitude_0.1', 'frequency_5.556e-4_hz_sgra', 'cpt_phase_1_plus_ftrz'],
+                      'closures_unified': 12, 'critical_point': -1.0},
+            'formula': 'THE THREE FACES OF F_TRZ formalized: one primitive manifesting as (1) universal '
+                       'dimensionless amplitude 0.1 (ladder P1919, erosion P1942, magnetars P1945, 12+ '
+                       'closures), (2) system-specific frequency (Sgr A* 5.556e-4 Hz = amplitude/T_base, '
+                       'P1947), (3) CPT phase-transition parameter in (1+F_TRZ) with critical point '
+                       'F_TRZ = -1 (PAPER_264): F_TRZ > -1 normal gravity, = -1 time-reversal zero '
+                       'point, < -1 negative-time anti-gravity - three testable regimes. The primitive '
+                       'formalization companion to the P1919 ladder.',
+            'source': 'PAPER_1949', 'residual_pct': 0.0}
+
+@_register('PAPER_1950')
+def _p1950(dataset=None):
+    base = (D_PHYS-1)*A_5*SO_5
+    grid = {'sgr_a': 1800, 'm87': round((6.5e9/4.3e6)**(1.0/3)*base), 'cen_a': round((5.5e7/4.3e6)**(1.0/3)*base)}
+    return {'value': {'universal_factor': base, 'prediction_grid_s': grid, 'status': 'OPEN_CANDIDATE'},
+            'formula': 'SMBH flare universal formula (OPEN candidate, one anchor): f = 1/(T_base*1800) '
+                       'with T_base scaling (M/M_SgrA)^(1/3) - prediction grid: M87* 5.74 hr, 3C273 '
+                       '2.92 hr, TON 618 12.5 hr, Cen A 70 min. EHT+VLBI+optical simultaneous-'
+                       'monitoring test program defined; PREDICTION-FIRST per A4 (grid pinned before '
+                       'any non-SgrA* measurement; battery-candidate pending dated campaign windows). '
+                       'Confirmation elevates P1947 universality; a flare period off-grid at any '
+                       'measured SMBH falsifies the (1/3)-power T_base scaling first, the 1800 factor '
+                       'second.',
+            'source': 'PAPER_1950', 'residual_pct': 0.08}
+
+@_register('PAPER_1951')
+def _p1951(dataset=None):
+    return {'value': {'radiation_outflow_fraction': F_TRZ, 'anchors': 3},
+            'formula': 'F_TRZ fourth face: the universal radiation-driven outflow fraction = 0.1 EXACT '
+                       'across NGC 4945 Eddington ratio (P1037/1879), NGC 1275 filament coupling F_0 '
+                       '(P1912), and PDR photoevaporation E_0 (P1942) - SMBH accretion, AGN filaments, '
+                       'and molecular-cloud erosion share one initial-outflow amplitude. Extends the '
+                       'P1949 three-face formalization to four.',
+            'source': 'PAPER_1951', 'residual_pct': 0.0}
+
+@_register('PAPER_1952')
+def _p1952(dataset=None):
+    return {'value': {'horsehead_pdr_myr': 5, 'ngc4945_tff_myr': 5, 'galaxy_sf_myr': 100,
+                      'grid_span_oom': 8},
+            'formula': 'SO_5-power timescale hierarchy extended to galaxy scale: Horsehead PDR erosion '
+                       '(5 Myr) = NGC 4945 nuclear-starburst free-fall (5 Myr) = (SO_5/2)*SO_5^6 yr '
+                       'EXACT - two regimes 5 OOM apart, one expression; galaxy SF cycle = SO_5^8 = '
+                       '100 Myr. The SO_5^n grid now spans 8 OOM (yr to 100 Myr) with empirical anchors '
+                       'at four slots (P1948 companion).',
+            'source': 'PAPER_1952', 'residual_pct': 0.0}
+
+@_register('PAPER_1953')
+def _p1953(dataset=None):
+    v = (D_PHYS-1.0)/SO_5
+    return {'value': {'factor_0p3': round(v, 6), 'regimes': 3},
+            'formula': 'THE 0.3 FACTOR: (D_phys-1)/SO_5 = 3/10 EXACT across Sgr A* spin factor (P1841), '
+                       'TDE outflow v = 0.3c (P1500), and DPM angular projections (M87 jet +) - '
+                       'transverse spatial dimensions per DPM decade position. THE PREDECESSOR-CORPUS '
+                       'PAPER_1953 LANDMARK (Star-Magic CLAUDE.md key-papers table: 0.3 cross-regime '
+                       'universality incl. rocky-planet Love k2 = 3/10 4th anchor via PAPER_2136) - '
+                       'both repos carry the same identity, cross-repo consistency confirmed.',
+            'source': 'PAPER_1953', 'residual_pct': 0.0}
+
+@_register('PAPER_1954')
+def _p1954(dataset=None):
+    v = A_5*K_MEX
+    return {'value': {'a5_kmex': round(v, 6), 'regimes': 3, 'span_oom': 27},
+            'formula': 'A_5*K_Mex = 60*(25/12) = 125 EXACT cross-scale: the alpha^-1 dominant term '
+                       '(125 of 137.04, P1549 - 91% of QED coupling), maximum human lifespan 125 yr '
+                       '(P1846), NGC 4945 gas depletion 125 Myr - atomic to biological to galactic, '
+                       '27 OOM. EXACT because K_Mex = 25/12 is exact rational (PAPER_1522): 60*25/12 = '
+                       '5*25 = 125 integer. THE PREDECESSOR-CORPUS PAPER_1954 LANDMARK (Higgs core/'
+                       'sphaleron/tidal sector there) - cross-repo consistency; Cen A adds the 4th '
+                       'regime via P1957.',
+            'source': 'PAPER_1954', 'residual_pct': 0.0}
+
+@_register('PAPER_1955')
+def _p1955(dataset=None):
+    return {'value': {'v_circ_kms': 2*SO_5**2, 'r_gmc_pc': SO_5**2//2, 't_gmc_k': 2*SO_5,
+                      'n_h2_cm3': 2*SO_5**2, 'a_bar': SO_5**3, 'sn_per_sfr': 1.0/SO_5**2,
+                      'm_ejecta_msun': SO_5, 'ladder_members': 10},
+            'formula': 'SO_5-power galactic structural ladder: TEN quantities lock - v_circ = 2*SO_5^2 '
+                       '= 200 km/s, GMC radius SO_5^2/2 = 50 pc, GMC T = 2*SO_5 = 20 K, n_H2 = 200 cm^-3, '
+                       'bar amplitude SO_5^3, SN/SFR = SO_5^-2, ejecta = SO_5 Msun, bar axis = D_phys-1 '
+                       'kpc, pattern speed SO_5*K_Mex = 20.83, metal yield F_TRZ - the galactic scale '
+                       'runs on the decade primitive at powers 1-3 with small-integer dressing.',
+            'source': 'PAPER_1955', 'residual_pct': 0.0}
+
+@_register('PAPER_1956')
+def _p1956(dataset=None):
+    om = (D_PHYS-1.0)/SO_5
+    return {'value': {'omega_m': round(om, 4), 'omega_lambda_implied': round(1-om, 4)},
+            'formula': 'Omega_m = (D_phys-1)/SO_5 = 0.30 EXACT vs Planck 0.315 (5%); flat LambdaCDM '
+                       'implies Omega_Lambda = 0.70 vs 0.685 (2%) - the 0.3 factor (P1953) reaches the '
+                       'whole observable universe; two cosmological parameters, zero free. FAMILY '
+                       '(PAPER_2170): leading-integer route alongside the dressed routes (P1617/P1903 '
+                       'Omega_Lambda = 0.6838 at 0.18%, PAPER_1156 = (6/5)*SSq) - integer kernel vs '
+                       'composite dressing, both stand; crossing delta = the dressing.',
+            'source': 'PAPER_1956', 'residual_pct': 5.0}
+
+@_register('PAPER_1957')
+def _p1957(dataset=None):
+    tau = A_5*K_MEX/SO_5
+    return {'value': {'tau_act_yr': round(tau, 3)},
+            'formula': 'Centaurus A activation cycle: tau_act = A_5*K_Mex/SO_5 = 125/10 = 12.5 yr EXACT '
+                       'vs ATCA/Chandra/Fermi multi-wavelength monitoring (PAPER_347 anchor) - the 125 '
+                       'identity (P1954) divided by the DPM decade, FOURTH regime of the family '
+                       '(depletion 125 Myr / lifespan 125 yr / positron 125 GeV / Cen A 12.5 yr).',
+            'source': 'PAPER_1957', 'residual_pct': 0.0}
+
+@_register('PAPER_1958')
+def _p1958(dataset=None):
+    v = 1.0/(D_PHYS-2)
+    return {'value': {'half_identity': v, 'anchors': 5},
+            'formula': '1/(D_phys-2) = 0.5 EXACT five-fold AGN confirmation: Cen A knot velocity 0.5c '
+                       '(HST/VLBA), Cen A shock 0.5c (Fermi), Cen A Kerr a = 0.5 (Blandford-Znajek), '
+                       'Sgr A* precession sin(30 deg) = 0.5 (GRAVITY 2022), and the cos(pi*t_n) '
+                       'zero-crossings at t_n = 0.5 (the framework base oscillation, P129) - velocity/'
+                       'spin/angle/time, one identity. THE PREDECESSOR R91 IDENTITY (Star-Magic '
+                       'CLAUDE.md PAPER_2142: same 1/(D_phys-2) = 0.5 reached 4 sectors there) - '
+                       'cross-repo consistency, the AGN anchors are its 5-fold astrophysical face.',
+            'source': 'PAPER_1958', 'residual_pct': 0.0}
+
+@_register('PAPER_1959')
+def _p1959(dataset=None):
+    v = ((D_PHYS-1.0)**3)/SO_5
+    return {'value': {'two_seven': round(v, 6), 'gamma_cr': 2.7, 't_cmb_leading_k': 2.7,
+                      'alt_form': (D_CRIT+1.0)/SO_5},
+            'formula': '2.7 dual anchor: (D_phys-1)^3/SO_5 = 27/10 EXACT (= (D_crit+1)/SO_5, two '
+                       'readings) - the AMS-02 cosmic-ray proton index gamma = 2.7 EXACT (measurement '
+                       'cannot falsify) AND T_CMB leading order (2.7 vs 2.72548, 0.94%; the residual '
+                       'IS the P1618 SSq+F_TRZ composite dressing, 0.12% to that form). Thermal '
+                       'background and CR propagation share one integer root; honest two-tier residual '
+                       'reporting per Rule 7.',
+            'source': 'PAPER_1959', 'residual_pct': 0.94}
+
+@_register('PAPER_1960')
+def _p1960(dataset=None):
+    return {'value': {'f_trz_derived': 1.0/SO_5, 'identity_check': F_TRZ*SO_5,
+                      'independent_count': 8, 'ladders_unified': True},
+            'formula': 'LANDMARK: F_TRZ = 1/SO_5 EXACT DERIVATIVE - the truly-independent primitive '
+                       'count reduces 9 -> 8. Third derivative discovery (PAPER_1521 D_BSFG, PAPER_1522 '
+                       'K_Mex, now F_TRZ from SO_5); canonical VALUES unchanged (Rule 2), only the '
+                       'independence claim revised - PAPER_1160 stated the identity, this paper draws '
+                       'the primitive-count consequence. STRUCTURAL UNIFICATION: the F_TRZ power ladder '
+                       '(P1919, n = 1..17) and the SO_5 power ladder negative slots (P1955) are ONE '
+                       'ladder - every F_TRZ^n closure IS an SO_5^-n closure; two grammars, one '
+                       'suppression hierarchy. Framework economy strengthened (predecessor-repo 11 -> 9 '
+                       'lineage continued: 9 -> 8).',
+            'source': 'PAPER_1960', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

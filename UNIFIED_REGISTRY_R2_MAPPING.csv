@@ -227,3 +227,8 @@ PAPER_1891_1900,BAND,uqff_calculator.py::DISPATCH,10 dispatches + PAPER_2178 lan
 PAPER_1901_1910,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.377.0
 PAPER_2178,LANDMARK,uqff_calculator.py::DISPATCH,1 dispatch,v0.377.0
 SKIPPED_QUEUE_20,RECOVERY,uqff_calculator.py::DISPATCH,20 dispatches (21 files; HH base+UPDATE one dispatch),v0.377.0
+PAPER_1911_1920,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
+PAPER_1921_1930,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
+PAPER_1931_1940,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
+PAPER_1941_1950,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
+PAPER_1951_1960,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0

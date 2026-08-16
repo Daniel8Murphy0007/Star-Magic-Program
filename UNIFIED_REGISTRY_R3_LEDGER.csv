@@ -193,3 +193,10 @@ v0.377.0,2026-08-15,BAND_1901_1910,registry +10 graph +44,gate 5299/0
 v0.377.0,2026-08-15,TRAIL_AUDIT_REMEDIATION,battery 30/56 + dm census 4 + bio 15 + 2178 trail rows + rulings queue,gate 5304/0
 v0.377.0,2026-08-15,DEEPSEARCH_10_COMMITS,172 index flips + 3 standing guards + skipped-paper queue,gate 5307/0
 v0.377.0,2026-08-15,SKIPPED_QUEUE_RECOVERY,registry +20 graph +120,gate 5321/0
+v0.378.0,2026-08-15,LEDGER_BACKFILL,registry +146 graph +384 edges citations +16 + 3 coverage guards,gate 5324/0
+v0.378.0,2026-08-15,AUDIT_1910_MILESTONE,1406-paper span report + 3 cadence pins,gate 5327/0
+v0.378.0,2026-08-15,BAND_1911_1920,registry +10 graph +45,gate 5338/0
+v0.378.0,2026-08-15,BAND_1921_1930,registry +10 graph +39,gate 5349/0
+v0.378.0,2026-08-15,BAND_1931_1940,registry +10 graph +28,gate 5359/0
+v0.378.0,2026-08-15,BAND_1941_1950,registry +10 graph +27,gate 5369/0
+v0.378.0,2026-08-15,BAND_1951_1960,registry +10 graph +32,gate 5380/0

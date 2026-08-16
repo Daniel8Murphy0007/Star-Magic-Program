@@ -6219,3 +6219,199 @@ phase_h_variant_branches,WHITEPAPER,derived,,,4 classes,route-families precursor
 phase_h_ptf,WHITEPAPER,derived,,,5 phases,structural,,proof-set,,PAPER_S203_Phase_H203_PTF,,,,,,WIRED
 phase_h_gap_closure,WHITEPAPER,derived,,,3 mechanisms,structural,,proof-set,,PAPER_S204_Phase_H204_GapClosure,,,,,,WIRED
 phase_h_expansion_erosion,WHITEPAPER,derived,,,pentad complete,structural,,proof-set,,PAPER_S205_Phase_H205_ExpansionErosion,,,,,,WIRED
+p333_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_333,,,,,,WIRED
+p336_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_336,,,,,,WIRED
+p338_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_338,,,,,,WIRED
+p342_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_342,,,,,,WIRED
+p349_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_349,,,,,,WIRED
+p357_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_357,,,,,,WIRED
+p367_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_367,,,,,,WIRED
+p371_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_371,,,,,,WIRED
+p372_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_372,,,,,,WIRED
+p374_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_374,,,,,,WIRED
+p377_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_377,,,,,,WIRED
+p379_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_379,,,,,,WIRED
+p381_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_381,,,,,,WIRED
+p384_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_384,,,,,,WIRED
+p385_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_385,,,,,,WIRED
+p386_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_386,,,,,,WIRED
+p387_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_387,,,,,,WIRED
+p392_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_392,,,,,,WIRED
+p393_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_393,,,,,,WIRED
+p394_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_394,,,,,,WIRED
+p395_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_395,,,,,,WIRED
+p397_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_397,,,,,,WIRED
+p402_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_402,,,,,,WIRED
+p403_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_403,,,,,,WIRED
+p404_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_404,,,,,,WIRED
+p408_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_408,,,,,,WIRED
+p414_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_414,,,,,,WIRED
+p415_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_415,,,,,,WIRED
+p422_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_422,,,,,,WIRED
+p423_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_423,,,,,,WIRED
+p424_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_424,,,,,,WIRED
+p425_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_425,,,,,,WIRED
+p430_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_430,,,,,,WIRED
+p432_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_432,,,,,,WIRED
+p433_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_433,,,,,,WIRED
+p434_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_434,,,,,,WIRED
+p435_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_435,,,,,,WIRED
+p436_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_436,,,,,,WIRED
+p438_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_438,,,,,,WIRED
+p439_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_439,,,,,,WIRED
+p440_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_440,,,,,,WIRED
+p441_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_441,,,,,,WIRED
+p444_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_444,,,,,,WIRED
+p445_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_445,,,,,,WIRED
+p447_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_447,,,,,,WIRED
+p448_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_448,,,,,,WIRED
+p449_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_449,,,,,,WIRED
+p450_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_450,,,,,,WIRED
+p452_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_452,,,,,,WIRED
+p453_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_453,,,,,,WIRED
+p454_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_454,,,,,,WIRED
+p458_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_458,,,,,,WIRED
+p464_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_464,,,,,,WIRED
+p465_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_465,,,,,,WIRED
+p467_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_467,,,,,,WIRED
+p469_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_469,,,,,,WIRED
+p472_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_472,,,,,,WIRED
+p473_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_473,,,,,,WIRED
+p474_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_474,,,,,,WIRED
+p475_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_475,,,,,,WIRED
+p477_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_477,,,,,,WIRED
+p481_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_481,,,,,,WIRED
+p484_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_484,,,,,,WIRED
+p485_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_485,,,,,,WIRED
+p487_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_487,,,,,,WIRED
+p491_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_491,,,,,,WIRED
+p492_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_492,,,,,,WIRED
+p493_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_493,,,,,,WIRED
+p494_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_494,,,,,,WIRED
+p498_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_498,,,,,,WIRED
+p505_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_505,,,,,,WIRED
+p520_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_520,,,,,,WIRED
+p535_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_535,,,,,,WIRED
+p544_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_544,,,,,,WIRED
+p585_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_585,,,,,,WIRED
+p626_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_626,,,,,,WIRED
+p631_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_631,,,,,,WIRED
+p668_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_668,,,,,,WIRED
+p672_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_672,,,,,,WIRED
+p706_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_706,,,,,,WIRED
+p709_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_709,,,,,,WIRED
+p710_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_710,,,,,,WIRED
+p711_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_711,,,,,,WIRED
+p722_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_722,,,,,,WIRED
+p723_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_723,,,,,,WIRED
+p740_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_740,,,,,,WIRED
+p752_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_752,,,,,,WIRED
+p762_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_762,,,,,,WIRED
+p765_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_765,,,,,,WIRED
+p778_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_778,,,,,,WIRED
+p779_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_779,,,,,,WIRED
+p809_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_809,,,,,,WIRED
+p810_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_810,,,,,,WIRED
+p811_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_811,,,,,,WIRED
+p833_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_833,,,,,,WIRED
+p836_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_836,,,,,,WIRED
+p838_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_838,,,,,,WIRED
+p851_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_851,,,,,,WIRED
+p852_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_852,,,,,,WIRED
+p861_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_861,,,,,,WIRED
+p868_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_868,,,,,,WIRED
+p869_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_869,,,,,,WIRED
+p873_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_873,,,,,,WIRED
+p874_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_874,,,,,,WIRED
+p875_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_875,,,,,,WIRED
+p876_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_876,,,,,,WIRED
+p882_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_882,,,,,,WIRED
+p886_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_886,,,,,,WIRED
+p887_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_887,,,,,,WIRED
+p889_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_889,,,,,,WIRED
+p892_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_892,,,,,,WIRED
+p895_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_895,,,,,,WIRED
+p897_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_897,,,,,,WIRED
+p926_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_926,,,,,,WIRED
+p944_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_944,,,,,,WIRED
+p966_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_966,,,,,,WIRED
+p975_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_975,,,,,,WIRED
+p981_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_981,,,,,,WIRED
+p982_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_982,,,,,,WIRED
+p985_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_985,,,,,,WIRED
+p987_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_987,,,,,,WIRED
+p988_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_988,,,,,,WIRED
+p990_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_990,,,,,,WIRED
+p993_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_993,,,,,,WIRED
+p996_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_996,,,,,,WIRED
+p998_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_998,,,,,,WIRED
+p1001_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1001,,,,,,WIRED
+p1003_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1003,,,,,,WIRED
+p1005_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1005,,,,,,WIRED
+p1007_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1007,,,,,,WIRED
+p1009_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1009,,,,,,WIRED
+p1010_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1010,,,,,,WIRED
+p1011_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1011,,,,,,WIRED
+p1012_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1012,,,,,,WIRED
+p1016_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1016,,,,,,WIRED
+p1017_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1017,,,,,,WIRED
+p1068_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1068,,,,,,WIRED
+p1084_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1084,,,,,,WIRED
+p1094_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1094,,,,,,WIRED
+p1130_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1130,,,,,,WIRED
+p1169_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1169,,,,,,WIRED
+p1179_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1179,,,,,,WIRED
+p1195_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1195,,,,,,WIRED
+p1197_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1197,,,,,,WIRED
+p1201_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1201,,,,,,WIRED
+p1228_capture_mode,WHITEPAPER,derived,,,COVERED_BY_PRIOR_WIRING,0.0,,backfill,,PAPER_1228,,,,,,WIRED
+ymc_extended_params,WHITEPAPER,derived,,,4 identities,EXACT x2,,astro,,PAPER_1911,,,,,,WIRED
+agn_filament_triple,WHITEPAPER,derived,,,F_TRZ/100Myr/2,EXACT x3,,astro,,PAPER_1912,,,,,,WIRED
+bubble_linearity,WHITEPAPER,derived,,,F_TRZ*SO_5 = 1,EXACT,,astro,,PAPER_1913,,,,,,WIRED
+dls_ds_ratio,WHITEPAPER,derived,,,2/3,EXACT,,cosmology,,PAPER_1914,,,,,,WIRED
+unified_solver_framework,WHITEPAPER,derived,,,3 = 1,architecture,,foundations,,PAPER_1915,,,,,,WIRED
+ug_shell_sum,WHITEPAPER,derived,,,sum = 4,EXACT 340 classes,,foundations,,PAPER_1916,,,,,,WIRED
+ug_nested_closure,WHITEPAPER,derived,,,sub = 5/2,EXACT,,foundations,,PAPER_1917,,,,,,WIRED
+phase3_inventory,WHITEPAPER,derived,,,15+ closures,172 matches,,foundations,,PAPER_1918,,,,,,WIRED
+ftrz_power_ladder,WHITEPAPER,derived,,,12 rungs,n = 1..17,,foundations,,PAPER_1919,,,,,,WIRED
+lambda_cascade,WHITEPAPER,derived,,,5.957e-10,EXACT chain,,cosmology,,PAPER_1920,,,,,,WIRED
+f_dm_equals_ug3_seq,WHITEPAPER,derived,,,4/5,EXACT M31,,cosmology,,PAPER_1921,,,,,,WIRED
+muge_compression,WHITEPAPER,derived,,,9/10,EXACT x4 forms,,foundations,,PAPER_1922,,,,,,WIRED
+term_count_hierarchy,WHITEPAPER,derived,,,9/10/13/14,EXACT,,foundations,,PAPER_1923,,,,,,WIRED
+ug4_fundamental,WHITEPAPER,derived,,,4.219e-10 m/s2,4-body invariant,,foundations,,PAPER_1924,,,,,,WIRED
+einstein_ring_mu,WHITEPAPER,derived,,,9/5,EXACT,,cosmology,,PAPER_1925,,,,,,WIRED
+tau_n_closed_form,WHITEPAPER,derived,,,879.31 s,0.011%,,particle,,PAPER_1926,,,,,,WIRED
+d_crit_decomposition,WHITEPAPER,derived,,,4+22,EXACT,,foundations,,PAPER_1927,,,,,,WIRED
+wolfram_isomorphism,WHITEPAPER,derived,,,26/74,EXACT,,foundations,,PAPER_1928,,,,,,WIRED
+inflation_permanence,WHITEPAPER,derived,,,N_e = 60,EXACT + doctrine,,cosmology,,PAPER_1929,,,,,,WIRED
+ratio_family_dphys3,WHITEPAPER,derived,,,1/3 + 2/3,EXACT twins,,foundations,,PAPER_1930,,,,,,WIRED
+seventy_cross_sector,WHITEPAPER,derived,,,70,EXACT x2 domains,,foundations,,PAPER_1931,,,,,,WIRED
+wheeler_dewitt_fu0,WHITEPAPER,derived,,,equivalence,canonized,,foundations,,PAPER_1932,,,,,,WIRED
+three_method_hub,WHITEPAPER,derived,,,3 methods,P549 retro,,foundations,,PAPER_1933,,,,,,WIRED
+frequency_universality,WHITEPAPER,derived,,,1420.4 MHz,31 OOM,,foundations,,PAPER_1934,,,,,,WIRED
+r_process_magic_canon,WHITEPAPER,derived,,,50/82/126,EXACT + EP-11,,nuclear,,PAPER_1935,,,,,,WIRED
+twenty_two_two_path,WHITEPAPER,derived,,,22,EXACT x2 paths,,foundations,,PAPER_1936,,,,,,WIRED
+kmex_ssq_canonized,WHITEPAPER,derived,,,1.1875,EXACT x2 paths,,foundations,,PAPER_1937,,,,,,WIRED
+carrier_catalog_canon,WHITEPAPER,derived,,,95+ apps,EXACT,,foundations,,PAPER_1938,,,,,,WIRED
+twenty_two_three_path,WHITEPAPER,derived,,,22,EXACT x3 paths,,foundations,,PAPER_1939,,,,,,WIRED
+dpm_disc_jet_split,WHITEPAPER,derived,,,1/3:2/3,EXACT,,astro,,PAPER_1940,,,,,,WIRED
+dpm_decade_ratio,WHITEPAPER,derived,,,10 = SO_5,EXACT x3 scales,,foundations,,PAPER_1941,,,,,,WIRED
+photoevap_e0,WHITEPAPER,derived,,,0.1,EXACT,,astro,,PAPER_1942,,,,,,WIRED
+lensing_amplification,WHITEPAPER,derived,,,R_Sch/(3 r_E),EXACT form,,cosmology,,PAPER_1943,,,,,,WIRED
+magnetar_meissner_full,WHITEPAPER,derived,,,0.2,EXACT SGR1745,,astro,,PAPER_1944,,,,,,WIRED
+magnetar_lobe_law,WHITEPAPER,derived,,,n_lobes*F_TRZ,CONFIRMED 2/2,,astro,,PAPER_1945,,,,,,WIRED
+magnetar_timescales,WHITEPAPER,derived,,,4000/5/10000,EXACT x3,,astro,,PAPER_1946,,,,,,WIRED
+sgra_flare_frequency,WHITEPAPER,derived,,,1/1800 Hz,0.08% JWST,,astro,,PAPER_1947,,,,,,WIRED
+pdr_timescale_hierarchy,WHITEPAPER,derived,,,n*SO_5^6 yr,EXACT x3,,astro,,PAPER_1948,,,,,,WIRED
+ftrz_three_faces,WHITEPAPER,derived,,,3 faces,formalization,,foundations,,PAPER_1949,,,,,,WIRED
+smbh_flare_grid,WHITEPAPER,derived,,,1800 factor,OPEN candidate,,astro,,PAPER_1950,,,,,,WIRED
+ftrz_radiation_fraction,WHITEPAPER,derived,,,0.1,EXACT x3,,astro,,PAPER_1951,,,,,,WIRED
+so5_timescale_galaxy,WHITEPAPER,derived,,,100 Myr,EXACT 8 OOM,,astro,,PAPER_1952,,,,,,WIRED
+factor_0p3_universality,WHITEPAPER,derived,,,3/10,EXACT x3 regimes,,foundations,,PAPER_1953,,,,,,WIRED
+a5_kmex_125_universality,WHITEPAPER,derived,,,125,EXACT 27 OOM,,foundations,,PAPER_1954,,,,,,WIRED
+so5_galactic_ladder,WHITEPAPER,derived,,,10 quantities,EXACT,,astro,,PAPER_1955,,,,,,WIRED
+omega_m_integer_kernel,WHITEPAPER,derived,,,0.30,5% Planck,,cosmology,,PAPER_1956,,,,,,WIRED
+cena_activation_cycle,WHITEPAPER,derived,,,12.5 yr,EXACT,,astro,,PAPER_1957,,,,,,WIRED
+half_identity_agn,WHITEPAPER,derived,,,0.5,EXACT x5,,astro,,PAPER_1958,,,,,,WIRED
+two_seven_dual,WHITEPAPER,derived,,,27/10,EXACT + 0.94%,,cosmology,,PAPER_1959,,,,,,WIRED
+ftrz_derivative_landmark,WHITEPAPER,derived,,,1/SO_5,9 -> 8 primitives,,foundations,,PAPER_1960,,,,,,WIRED

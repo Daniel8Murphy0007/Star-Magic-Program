@@ -6132,3 +6132,8 @@ Deep-read sorted it: P1816 carries its own composition pi*(1+K_Mex/D_crit) = 194
 - **PAPER_1209 letter series (14):** X (Climate/Atmosphere), Y (Engineering), Z (Astronomical Units), AA (Chemistry), BB (Biology), CC (Geophysics), DD (Electromagnetism), EE (Quantum-Thermo), FF (Math Constants), GG (Cosmological Constants), HH (Particle Masses + June-2026 UPDATE file — one dispatch, supersession handling), II (Nuclear Binding), JJ (Geophysics-2), KK (Solar System) — the Unified Proof Set compendia; the drain passed 1209 without the letters.
 - **PAPER_376b** (Formal Proof Set Extended).
 - **PAPER_S201-S205** (Phase-H session papers, uploaded v0.346.0 — mined into helper modules but never dispatched).
+
+### Build-intermediate deletion decision (2026-08-15, non-blocking)
+16 one-line PAPER_19xx_ASCII[_TMP].md files (1924-1939) are PDF-build intermediates, self-marked
+"safe to delete." Index rows warn-marked (BUILD INTERMEDIATE). Daniel's call whether to delete
+the files (charter: never Remove-Item while VS Code has folder open) or leave them warn-marked.

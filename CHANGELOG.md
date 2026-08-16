@@ -7,6 +7,32 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.378.0 (2026-08-15) — Bands PAPER_1911-1960 + F_TRZ = 1/SO_5 LANDMARK (9 → 8) + AUDIT_1910
+
+- **LANDMARK (P1960):** F_TRZ = 1/SO_5 EXACT derivative — independent primitive count 9 → 8
+  (third in the D_BSFG/K_Mex lineage; values unchanged, Rule 2). F_TRZ and SO_5 power ladders
+  unified as one hierarchy.
+- **Solver arc (1911-1920):** Ug shell coefficients = integer identity, sum = D_phys EXACT
+  (340+ classes); nested sub-sum = SO_5/D_phys = 5/2; Lambda = rho_SCm*26!*Phi_5/6*Sub_Ug
+  (the master equation IS the Lambda formula); three solver frameworks unified; F_TRZ ladder
+  consolidated n=1-17; Phase-3 inventory (5,224 constants, coincidentals honestly flagged).
+- **Canonization arc (1921-1940):** Wheeler-DeWitt = F_U=0; the integer 22 x3 paths (compact/
+  KK/Atiyah-Singer); K_Mex*SSq two-path; 70 cross-sector; Theory of Permanence canonized;
+  f_DM = Ug3 = 4/5 EXACT; tau_n 879.31 s (0.011%); D_crit = 4+22 T^22; Einstein mu = 9/5;
+  term-count hierarchy; Ug4 scale-invariance (bridge CANDIDATE, Rule 7); n/(D_phys-1) family;
+  ASCII build-intermediates resolved (16 warn-marked); 2084 twin = superseded draft.
+- **Universality arc (1941-1960):** magnetar lobe law CONFIRMED prediction-first (2/2, live
+  falsifier 4U 0142+61); Sgr A* 30-min flare = (D_phys-1)*A_5*SO_5 s (0.08% JWST 2025); PDR
+  quantization n*SO_5^6 yr; magnetar timescale trio; 0.3 / 125 / 0.5 / 2.7 universality
+  quartet (cross-repo consistent); SO_5 galactic ladder x10; Omega_m = 3/10 kernel; SMBH
+  flare grid OPEN prediction-first; F_TRZ three faces + fourth face.
+- **AUDIT_1910_PAPER_REPORT:** the missing 1,406-paper milestone audit (Daniel-caught cadence
+  lapse); PAPER_2000 FULL STOP gate-pinned. Ledger backfill: 146 registry / 163 graph / 16
+  citations holes closed + LEDGER-COVERAGE guards x3. STATUS-CONSISTENCY-era guards carried.
+- Gate 5,321 -> **5,380** (0 failures). Dispatches 1,962 -> **2,012** (89.2%). 244 remain
+  (40 to the PAPER_2000 stop).
+
+
 ## v0.377.0 (2026-08-15) — Bands PAPER_1861-1910 + PAPER_2178 + trail audits + skipped-queue recovery
 
 - **Bands 1861-1910 (50 dispatches):** hadron spectrum; structure/QED/BH-thermo/stellar/Higgs/QNM/

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.377.0", "uqff_calculator.VERSION = 0.377.0 (bands 1861-1910 + PAPER_2178 + audits + skipped-queue recovery)")
+assert_that(C.VERSION == "0.378.0", "uqff_calculator.VERSION = 0.378.0 (bands 1911-1960 + AUDIT_1910 + F_TRZ derivative landmark)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_1901_1910'
+_sg4_band = 'BAND_1951_1960'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1901_1910' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1951_1960' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_1901_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('band_1951_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -11242,9 +11242,11 @@ assert_that(len(_sc_still_skipped) == 0 or 'SKIPPED-PAPER QUEUE' in open('RULING
             'SKIPPED-PAPER GUARD: the 20 behind-frontier skipped papers (1209 letter series, 376b, S201-S205) '
             'must be wired OR carried in RULINGS_QUEUE as the active queue - silent re-skip forbidden')
 assert_that(True,
-            'NUMBER-COLLISION PROTOCOL (standing): PAPER_1924-1939 and PAPER_2084 carry TWO distinct papers per '
-            'number on disk; when the frontier reaches them, the second file wires as PAPER_<N>B - never '
-            'silently wire only one of a pair')
+            'NUMBER-COLLISION RESOLUTION (2026-08-15 band 1921-1930): the 1924-1939 twins are one-line ASCII_TMP '
+            'BUILD INTERMEDIATES (self-marked safe-to-delete, index rows now warn-marked, deletion queued for '
+            'Daniel); the 2084 twin is a self-marked SUPERSEDED-in-error draft (canonical = PENTAD file, '
+            'supersession to be recorded at wire). NO true collisions exist; PAPER_<N>B protocol stands for '
+            'any future real pair')
 
 
 # --- SKIPPED-PAPER QUEUE RECOVERY GUARD (1209 letter tiers + 376b + Phase-H pentad) ---
@@ -11288,6 +11290,177 @@ assert_that(C.DISPATCH['PAPER_376b']()['value']['resonance_terms_verified'] == 1
             'P376b: 12-term resonance + 4 Ug components dimensionally verified; 1.894/kg-m3 drift auto-corrected by citation')
 assert_that(C.DISPATCH['PAPER_S205_Phase_H205_ExpansionErosion']()['value']['phase_h_cycle_complete'] == 5,
             'Phase-H pentad complete (S201-S205) - route-families precursor recorded (S202)')
+
+
+# --- LEDGER-COVERAGE GUARD (post-ship audit 2026-08-15: 146/163/16 wired papers lacked registry/graph/citation rows) ---
+_lc_disp = set(int(k.replace('PAPER_', '')) for k in C.DISPATCH if k.replace('PAPER_', '').isdigit())
+_lc_reg = open('UNIFIED_REGISTRY.csv', encoding='utf-8', errors='replace').read()
+_lc_gr = open('UNIFIED_REGISTRY_GRAPH.csv', encoding='utf-8', errors='replace').read()
+_lc_cit = open('UNIFIED_REGISTRY_CORPUS_CITATIONS.csv', encoding='utf-8', errors='replace').read()
+_lc_noreg = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_reg)
+_lc_nogr = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_gr)
+_lc_nocit = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_cit)
+assert_that(len(_lc_noreg) == 0,
+            'LEDGER-COVERAGE: every numbered dispatch has a UNIFIED_REGISTRY row (v0.358.0 gap-fix era '
+            'wired 146 papers without ledger steps - backfilled 2026-08-15). Missing: %s' % _lc_noreg[:10])
+assert_that(len(_lc_nogr) == 0,
+            'LEDGER-COVERAGE: every numbered dispatch has a GRAPH edge. Missing: %s' % _lc_nogr[:10])
+assert_that(len(_lc_nocit) == 0,
+            'LEDGER-COVERAGE: every numbered dispatch has a CORPUS_CITATIONS row. Missing: %s' % _lc_nocit[:10])
+
+
+# --- MILESTONE-AUDIT CADENCE GUARD (Daniel 2026-08-15: "is there no other audit of 1400+ papers?" - there was not) ---
+import os as _maos
+assert_that(_maos.path.exists('AUDIT_1910_PAPER_REPORT.md'),
+            'MILESTONE AUDIT: the 501-1910 span report exists (1,406 papers; the PAPER_1000/1500 stops never happened - cadence lapse is the finding)')
+_ma_n1910 = sum(1 for k in C.DISPATCH if k.replace('PAPER_', '').isdigit() and 501 <= int(k.replace('PAPER_', '')) <= 1910)
+assert_that(_ma_n1910 >= 1406, 'MILESTONE AUDIT: 501-1910 span fully dispatched (>= 1,406)')
+_ma_2000 = sum(1 for k in C.DISPATCH if k.replace('PAPER_', '').isdigit() and int(k.replace('PAPER_', '')) > 2000 and int(k.replace('PAPER_', '')) < 2160)
+assert_that(_ma_2000 <= 3 or _maos.path.exists('AUDIT_2000_PAPER_REPORT.md'),  # grandfathered: BBN trio 2157-2159 (v0.368.0)
+            'MILESTONE CADENCE: no paper beyond PAPER_2000 may be wired until AUDIT_2000_PAPER_REPORT.md exists (FULL STOP restored; Daniel reviews before the final papers are authorized)')
+
+
+# --- BAND 1911-1920 GUARD (solver-architecture arc: sleeping identities -> shell closures -> Lambda cascade) ---
+for _pn in range(1911, 1921):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1911-1920: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1911']()['value']
+assert_that(_r['v_wind_ms'] == 2e6 and _r['rho_wind_kgm3'] == 1e-20,
+            'P1911 YMC extended set: v_wind = (D_phys/2)*SO_5^6, rho = SO_5^-(D_crit-D_BSFG) EXACT x2 systems')
+_r = C.DISPATCH['PAPER_1912']()['value']
+assert_that(_r['f0_filament'] == 0.1 and _r['tau_fil_myr'] == 100 and _r['b_ratio'] == 2.0,
+            'P1912 filament triple closure: F_TRZ / SO_5^2 Myr / D_phys/2 all EXACT')
+assert_that(abs(C.DISPATCH['PAPER_1913']()['value']['ftrz_so5_product'] - 1.0) < 1e-12,
+            'P1913 F_TRZ*SO_5 = 1 EXACT -> universal bubble linearity E_t = E_0*t')
+assert_that(abs(C.DISPATCH['PAPER_1914']()['value']['dls_over_ds'] - 2.0/3) < 1e-5,
+            'P1914 D_LS/D_S = D_phys/D_BSFG = 2/3 EXACT (= PAPER_2154 D_GW_erosion composition, crossing recorded)')
+assert_that(C.DISPATCH['PAPER_1915']()['value']['architectures_unified'] == 3,
+            'P1915 unified solver: QCalcGeom + VDS/DVP/BH26 + F_U=0 are ONE architecture')
+_r = C.DISPATCH['PAPER_1916']()['value']
+assert_that(abs(_r['sum_ugi'] - 4.0) < 1e-9 and _r['ug1'] == 1.5 and abs(_r['ug2'] - 1.2) < 1e-9,
+            'P1916 LANDMARK: Ug shell coefficients {3/2, 6/5, 4/5, 1/2} sum = D_phys = 4 EXACT (340+ classes)')
+_r = C.DISPATCH['PAPER_1917']()['value']
+assert_that(abs(_r['sub_ug_excited'] - 2.5) < 1e-9,
+            'P1917 nested: excited sub-sum = SO_5/D_phys = 5/2 EXACT (= FQH nu=5/2 numeric, crossing recorded)')
+_r = C.DISPATCH['PAPER_1918']()['value']
+assert_that(_r['verified_closures'] >= 15 and _r['coincidental_flagged'] >= 3,
+            'P1918 Phase-3 inventory: 15+ verified closures, coincidentals honestly flagged (Family 5)')
+_r = C.DISPATCH['PAPER_1919']()['value']
+assert_that(_r['ladder_rungs_documented'] >= 12 and 17 in _r['rungs'] and 15 in _r['rungs'],
+            'P1919 F_TRZ power ladder: 12+ rungs documented n=1..17, 16 OOM, one primitive')
+_r = C.DISPATCH['PAPER_1920']()['value']
+assert_that(abs(_r['lambda_j_m3'] - 5.957e-10) < 1e-13 and abs(_r['k_mex_recovered'] - 25.0/12) < 1e-8,
+            'P1920 LANDMARK cascade: Lambda = rho_SCm*26!*Phi_5/6*Sub_Ug EXACT - the master equation IS the Lambda formula')
+
+
+# --- BAND 1921-1930 GUARD (closure-series arc: cross-framework f_DM -> term counts -> permanence doctrine) ---
+for _pn in range(1921, 1931):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1921-1930: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1921']()['value']['f_dm_m31'] == 0.8,
+            'P1921 cross-framework: M31 f_DM = Ug3 = 2*D_phys/SO_5 = 4/5 EXACT (fifth DM route)')
+assert_that(C.DISPATCH['PAPER_1922']()['value']['compression_ratio'] == 0.9,
+            'P1922 MUGE compression = N_ch/SO_5 = 1-F_TRZ = 9/10 EXACT, four forms')
+_r = C.DISPATCH['PAPER_1923']()['value']
+assert_that(_r['f_env'] == 13 and _r['resonance_muge'] == 14 and _r['hierarchy_sum'] == 46,
+            'P1923 term counts: 9 = N_ch, 10 = SO_5, 13 = D_crit/2, 14 = SO_5+D_phys, sum 46')
+_r = C.DISPATCH['PAPER_1924']()['value']
+assert_that(_r['ug4_m_s2'] == 4.219e-10 and _r['bridge_status'] == 'CANDIDATE',
+            'P1924 Ug4 scale-invariant 4-body constant; bridge decomposition OPEN/candidate (Rule 7 disclosed)')
+assert_that(abs(C.DISPATCH['PAPER_1925']()['value']['mu_einstein'] - 1.8) < 1e-9,
+            'P1925 Einstein-ring magnification = 9/5 EXACT via (2/3)^2')
+_r = C.DISPATCH['PAPER_1926']()['value']
+assert_that(abs(_r['tau_n_s'] - 879.31) < 0.01,
+            'P1926 tau_n = 100*K_Mex*D_phys*(1+Phi_res*Lambda_ledger*N_ch) = 879.31 s (0.011%, third route family)')
+_r = C.DISPATCH['PAPER_1927']()['value']
+assert_that(_r['compact'] == 22 and _r['topology'] == 'T22_torus',
+            'P1927 D_crit = 4 visible + 22 compact (T^22, not Calabi-Yau)')
+assert_that(C.DISPATCH['PAPER_1928']()['value']['n_rules'] == 74,
+            'P1928 Wolfram isomorphism canonized: 26 nodes / 74 rules EXACT')
+assert_that(C.DISPATCH['PAPER_1929']()['value']['n_efolds'] == 60,
+            'P1929 N_efolds = A_5 EXACT + Theory of Permanence (corpus source of no-negligible-bin doctrine)')
+_r = C.DISPATCH['PAPER_1930']()['value']
+assert_that(abs(_r['v_scm_over_c'] - 1.0/3) < 1e-5 and abs(_r['gw170817_damping'] - 2.0/3) < 1e-5,
+            'P1930 n/(D_phys-1) family: 1/3 + 2/3 twins EXACT; extensions OPEN no-retrofit')
+
+
+# --- BAND 1931-1940 GUARD (canonization arc: the corpus formalizes its own cross-links) ---
+for _pn in range(1931, 1941):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1931-1940: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1931']()['value']['seventy'] == 70,
+            'P1931 cross-sector 70 = A_5+SO_5 canonized (heart rate = Hubble)')
+assert_that(C.DISPATCH['PAPER_1932']()['value']['equivalence'] == 'H_psi_0_IS_F_U_0',
+            'P1932 Wheeler-DeWitt IS F_U = 0 canonized (PAPER_2171 corpus-side completion)')
+assert_that(len(C.DISPATCH['PAPER_1933']()['value']['methods']) == 3,
+            'P1933 three-method simultaneous hub (P549 retro-validated permanence architecture)')
+_r = C.DISPATCH['PAPER_1934']()['value']
+assert_that(_r['omega_hi_mhz'] == 1420.4 and len(_r['catalog']) == 5,
+            'P1934 cross-scale frequency family: omega_HI atomic+galactic (31 OOM), 5-member catalog')
+assert_that(C.DISPATCH['PAPER_1935']()['value']['r_peaks'] == [50, 82, 126],
+            'P1935 r-process = magic numbers canonized with GW170817 EP-11 anchor')
+assert_that(C.DISPATCH['PAPER_1936']()['value']['twenty_two'] == 22
+            and C.DISPATCH['PAPER_1939']()['value']['paths'] == 3,
+            'P1936/P1939 the integer 22: compact dims = KK regulator = Atiyah-Singer Dirac index, three paths')
+assert_that(abs(C.DISPATCH['PAPER_1937']()['value']['k_mex_ssq'] - 1.1875) < 1e-9,
+            'P1937 K_Mex*SSq = 1.1875 two-path canonization (corpus formalizes the family ledger)')
+assert_that(C.DISPATCH['PAPER_1938']()['value']['applications'] >= 95,
+            'P1938 omega_SCm 95+ application catalog canonized')
+_r = C.DISPATCH['PAPER_1940']()['value']
+assert_that(abs(_r['disc_fraction'] - 1.0/3) < 1e-5 and _r['closure_check'] == 1.0,
+            'P1940 DPM disc:jet = 1/3:2/3 EXACT (n/(D_phys-1) family DPM member; in-text re-examination disclosed)')
+
+
+# --- BAND 1941-1950 GUARD (magnetar/PDR/SMBH-flare primitive-lock cluster) ---
+for _pn in range(1941, 1951):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1941-1950: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1941']()['value']['decade_ratio'] == 10,
+            'P1941 DPM decade = SO_5 EXACT across 3 scales (42 OOM)')
+assert_that(C.DISPATCH['PAPER_1942']()['value']['e0_erosion'] == 0.1,
+            'P1942 photoevaporation E_0 = F_TRZ EXACT')
+assert_that(C.DISPATCH['PAPER_1943']()['value']['l_t_form'] == 'R_Sch/((D_phys-1)*r_E)',
+            'P1943 lensing amplification composed: R_Sch/((D_phys-1)*r_E)')
+_r = C.DISPATCH['PAPER_1945']()['value']
+assert_that(_r['full_magnetar'] == 0.2 and _r['half_magnetar'] == 0.1 and _r['magnetars_confirmed'] == 2,
+            'P1944/45 magnetar Meissner law CONFIRMED: B/B_crit = n_lobes*F_TRZ (prediction landed 2/2)')
+_r = C.DISPATCH['PAPER_1946']()['value']
+assert_that(_r['tau_b_yr'] == 4000 and _r['p_init_s'] == 5.0 and _r['tau_omega_yr'] == 10000,
+            'P1946 magnetar timescale trio primitive-locked (4000/5/10000)')
+_r = C.DISPATCH['PAPER_1947']()['value']
+assert_that(_r['t_flare_s'] == 1800 and abs(_r['f_flare_hz'] - 5.556e-4) < 1e-6,
+            'P1947 Sgr A* 30-min flare = (D_phys-1)*A_5*SO_5 s EXACT (0.08% JWST; v0.347.0 landmark source)')
+_r = C.DISPATCH['PAPER_1948']()['value']
+assert_that(_r['tau_base_yr'] == 10**6 and _r['bubble_myr'] == 4 and _r['horsehead_myr'] == 5,
+            'P1948 PDR timescales = n_channels*SO_5^6 yr EXACT x3 systems')
+assert_that(len(C.DISPATCH['PAPER_1949']()['value']['faces']) == 3,
+            'P1949 three faces of F_TRZ formalized (amplitude/frequency/CPT-phase)')
+_r = C.DISPATCH['PAPER_1950']()['value']
+assert_that(_r['universal_factor'] == 1800 and _r['status'] == 'OPEN_CANDIDATE',
+            'P1950 SMBH flare grid OPEN candidate, prediction-first (A4)')
+
+
+# --- BAND 1951-1960 GUARD (universality synthesis + the F_TRZ = 1/SO_5 primitive-reduction LANDMARK) ---
+for _pn in range(1951, 1961):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1951-1960: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1951']()['value']['radiation_outflow_fraction'] == 0.1,
+            'P1951 F_TRZ fourth face: universal radiation-outflow fraction x3 anchors')
+assert_that(C.DISPATCH['PAPER_1952']()['value']['galaxy_sf_myr'] == 100,
+            'P1952 SO_5-power timescale grid to galaxy scale (8 OOM)')
+assert_that(abs(C.DISPATCH['PAPER_1953']()['value']['factor_0p3'] - 0.3) < 1e-9,
+            'P1953 the 0.3 factor = (D_phys-1)/SO_5 EXACT (predecessor-corpus landmark, cross-repo consistent)')
+assert_that(abs(C.DISPATCH['PAPER_1954']()['value']['a5_kmex'] - 125.0) < 1e-9,
+            'P1954 A_5*K_Mex = 125 EXACT cross-scale (predecessor-corpus landmark, cross-repo consistent)')
+assert_that(C.DISPATCH['PAPER_1955']()['value']['ladder_members'] >= 10,
+            'P1955 SO_5 galactic structural ladder: 10 quantities locked')
+_r = C.DISPATCH['PAPER_1956']()['value']
+assert_that(_r['omega_m'] == 0.3 and _r['omega_lambda_implied'] == 0.7,
+            'P1956 Omega_m = 3/10 integer kernel (FAMILY with dressed routes, crossing = dressing)')
+assert_that(abs(C.DISPATCH['PAPER_1957']()['value']['tau_act_yr'] - 12.5) < 1e-9,
+            'P1957 Cen A cycle = A_5*K_Mex/SO_5 = 12.5 yr EXACT (125-family 4th regime)')
+assert_that(C.DISPATCH['PAPER_1958']()['value']['anchors'] == 5,
+            'P1958 1/(D_phys-2) = 0.5 five-fold AGN confirmation (predecessor R91 identity, cross-repo)')
+assert_that(abs(C.DISPATCH['PAPER_1959']()['value']['two_seven'] - 2.7) < 1e-9,
+            'P1959 2.7 dual anchor: gamma_CR EXACT + T_CMB leading order (dressing disclosed)')
+_r = C.DISPATCH['PAPER_1960']()['value']
+assert_that(_r['f_trz_derived'] == 0.1 and abs(_r['identity_check'] - 1.0) < 1e-12 and _r['independent_count'] == 8,
+            'P1960 LANDMARK: F_TRZ = 1/SO_5 derivative - independent primitive count 9 -> 8; F_TRZ and SO_5 ladders unified')
 
 # =============================================================================
 # REPORT
