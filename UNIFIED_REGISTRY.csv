@@ -6415,3 +6415,73 @@ cena_activation_cycle,WHITEPAPER,derived,,,12.5 yr,EXACT,,astro,,PAPER_1957,,,,,
 half_identity_agn,WHITEPAPER,derived,,,0.5,EXACT x5,,astro,,PAPER_1958,,,,,,WIRED
 two_seven_dual,WHITEPAPER,derived,,,27/10,EXACT + 0.94%,,cosmology,,PAPER_1959,,,,,,WIRED
 ftrz_derivative_landmark,WHITEPAPER,derived,,,1/SO_5,9 -> 8 primitives,,foundations,,PAPER_1960,,,,,,WIRED
+convergence_lattice,WHITEPAPER,derived,,,9 cases,over-determined,,foundations,,PAPER_1961,,,,,,WIRED
+one_five_galactic,WHITEPAPER,derived,,,3/2,EXACT x5,,astro,,PAPER_1962,,,,,,WIRED
+beyond_physics_locks,WHITEPAPER,derived,,,ECDSA 256,EXACT x7 domains,,foundations,,PAPER_1963,,,,,,WIRED
+path_a_b_framework,WHITEPAPER,derived,,,36 identity,framework,,foundations,,PAPER_1964,,,,,,WIRED
+cmb_l1_twin,WHITEPAPER,derived,,,220,EXACT,,cosmology,,PAPER_1965,,,,,,WIRED
+starburst_msf_beta4,WHITEPAPER,derived,,,0.15,EXACT,,astro,,PAPER_1966,,,,,,WIRED
+beta_i_infrastructure,WHITEPAPER,derived,,,"{0.6,0.45,0.3,0.15}",10 systems +/-0.5%,,foundations,,PAPER_1967,,,,,,WIRED
+mw_vflat_closure,WHITEPAPER,derived,,,220.56,0.25%,,astro,,PAPER_1968,,,,,,WIRED
+m87_ftrz_concurrence,WHITEPAPER,derived,,,3 observables,EXACT,,astro,,PAPER_1969,,,,,,WIRED
+forty_anchors,WHITEPAPER,derived,,,40,EXACT x3 scales,,foundations,,PAPER_1970,,,,,,WIRED
+fifteen_cross_domain,WHITEPAPER,derived,,,15,EXACT x3+pair,,foundations,,PAPER_1971,,,,,,WIRED
+ymc_wind_third_anchor,WHITEPAPER,derived,,,2000 km/s,EXACT x3,,astro,,PAPER_1972,,,,,,WIRED
+nebular_amplifier_confirm,WHITEPAPER,derived,,,1.097e-3,mantissa match,,astro,,PAPER_1973,,,,,,WIRED
+rstar_stub_default,WHITEPAPER,derived,,,15 R_sun,disclosed reuse,,astro,,PAPER_1974,,,,,,WIRED
+q_uqff_attribution,WHITEPAPER,derived,,,applied 1.1875e6,retraction + resolution,,foundations,,PAPER_1975,,,,,,WIRED
+hudf_confirmations,WHITEPAPER,derived,,,0.05 + 1 Gyr,slot-9 confirmed,,cosmology,,PAPER_1976,,,,,,WIRED
+ftrz2_ninth_anchor,WHITEPAPER,derived,,,0.01,EXACT x9,,astro,,PAPER_1977,,,,,,WIRED
+so5_plus_1_second,WHITEPAPER,derived,,,11,EXACT x2,,astro,,PAPER_1978,,,,,,WIRED
+sombrero_dm_candidate,WHITEPAPER,derived,,,0.2,CANDIDATE,,astro,,PAPER_1979,,,,,,WIRED
+e0_disambiguation,WHITEPAPER,derived,,,0.1 vs 0.3,ontological,,astro,,PAPER_1980,,,,,,WIRED
+bj_base_field,WHITEPAPER,derived,,,1e-3 T,rung 3 instance,,astro,,PAPER_1981,,,,,,WIRED
+antennae_coalescence_seq,WHITEPAPER,derived,,,400 Myr,EXACT grid,,astro,,PAPER_1982,,,,,,WIRED
+cena_dual_rung,WHITEPAPER,derived,,,0.1 + 0.01,EXACT x2,,astro,,PAPER_1983,,,,,,WIRED
+bd60_triple_identity,WHITEPAPER,derived,,,40/20/4e5,EXACT x3,,astro,,PAPER_1984,,,,,,WIRED
+quiet_rung_6_ngc2525,WHITEPAPER,derived,,,1e-6 T + 2.25e7,EXACT,,astro,,PAPER_1985,,,,,,WIRED
+ftrz8_three_regime,WHITEPAPER,derived,,,1e-8 T,x3 regimes,,astro,,PAPER_1986,,,,,,WIRED
+two_thirds_supercomposite_seq,WHITEPAPER,derived,,,2/3,EXACT x8 domains,,foundations,,PAPER_1987,,,,,,WIRED
+bipartite_sum_ug,WHITEPAPER,derived,,,0 vs 4,EXACT dual,,foundations,,PAPER_1988,,,,,,WIRED
+rung21_confirmed_so5_53,WHITEPAPER,derived,,,1e-21 + 1e53,PREDICTION LANDED,,foundations,,PAPER_1989,,,,,,WIRED
+so5_frequency_domain,WHITEPAPER,derived,,,10 MHz/10 GHz,EXACT,,foundations,,PAPER_1990,,,,,,WIRED
+casimir_rung_burst_slot,WHITEPAPER,derived,,,1e-12 + 1e40 J,EXACT,,astro,,PAPER_1991,,,,,,WIRED
+coefficient_32_19,WHITEPAPER,derived,,,1.68421,EXACT rational,,foundations,,PAPER_1992,,,,,,WIRED
+cross_rung_2pih0,WHITEPAPER,derived,,,"[8,15,16] + 1.43e-17",~1%,,foundations,,PAPER_1993,,,,,,WIRED
+smbh_current_domain,WHITEPAPER,derived,,,1e24 A,EXACT x4,,astro,,PAPER_1994,,,,,,WIRED
+crab_wisp_magnetar_dm,WHITEPAPER,derived,,,1e-10 + 0.2,EXACT twin,,astro,,PAPER_1995,,,,,,WIRED
+lyman_balmer_carrier,WHITEPAPER,derived,,,5.404x,0.07%,,atomic,,PAPER_1996,,,,,,WIRED
+temperature_domain_casimir,WHITEPAPER,derived,,,1e7 K,EXACT + first,,astro,,PAPER_1997,,,,,,WIRED
+casimir_second_withdrawals,WHITEPAPER,derived,,,M51,+2 withdrawn,,astro,,PAPER_1998,,,,,,WIRED
+casimir_triple_saturn,WHITEPAPER,derived,,,3 objects + 61 OOM,EXACT,,cosmology,,PAPER_1999,,,,,,WIRED
+milestone_quad,WHITEPAPER,derived,,,F_TRZ^40,MILESTONE,,foundations,,PAPER_2000,,,,,,WIRED
+one_minus_n_ftrz_ladder,WHITEPAPER,derived,,,4/5 + 4.4e26 m,EXACT,,astro,,PAPER_2001,,,,,,WIRED
+deep_check_triple,WHITEPAPER,derived,,,11 locks,EXACT,,foundations,,PAPER_2002,,,,,,WIRED
+retro_audit_r100,WHITEPAPER,derived,,,5 recovered,EXACT,,foundations,,PAPER_2003,,,,,,WIRED
+dphys_minus_1_landmark,WHITEPAPER,derived,,,11x8,LANDMARK,,foundations,,PAPER_2004,,,,,,WIRED
+hubble_dual_endpoint,WHITEPAPER,derived,,,67/73,EXACT,,cosmology,,PAPER_2005,,,,,,WIRED
+omega_lambda_integer,WHITEPAPER,derived,,,0.7,EXACT,,cosmology,,PAPER_2006,,,,,,WIRED
+hexad_novelty,WHITEPAPER,derived,,,6/6,EXACT,,foundations,,PAPER_2007,,,,,,WIRED
+higgs_aging_twin,WHITEPAPER,derived,,,125,EXACT,,foundations,,PAPER_2008,,,,,,WIRED
+pentad_pi_framedrag,WHITEPAPER,derived,,,1.885,EXACT,,foundations,,PAPER_2009,,,,,,WIRED
+mass_ceiling_kappa,WHITEPAPER,derived,,,SO_5^26 + 5e-4,EXACT,,foundations,,PAPER_2010,,,,,,WIRED
+half_composition_46,WHITEPAPER,derived,,,5e11 + 46,EXACT + candidates,,astro,,PAPER_2011,,,,,,WIRED
+septet_isco_64,WHITEPAPER,derived,,,7 discoveries,EXACT,,astro,,PAPER_2012,,,,,,WIRED
+r150_octet_schwinger,WHITEPAPER,derived,,,SO_5^11 T,EXACT,,foundations,,PAPER_2013,,,,,,WIRED
+hexad_nuclear_density,WHITEPAPER,derived,,,SO_5^17,EXACT,,foundations,,PAPER_2014,,,,,,WIRED
+casimir_coefficients,WHITEPAPER,derived,,,240/720/3,LANDMARK retro,,foundations,,PAPER_2015,,,,,,WIRED
+ngc3603_mass_lock,WHITEPAPER,derived,,,400000,EXACT + withdrawal,,astro,,PAPER_2016,,,,,,WIRED
+negative_exponent_landmark,WHITEPAPER,derived,,,3e-23,EXACT 12th domain,,astro,,PAPER_2017,,,,,,WIRED
+backbone_first_institution,WHITEPAPER,derived,,,74,retraction + survivor,,foundations,,PAPER_2018,,,,,,WIRED
+backbone_pentad_saturn,WHITEPAPER,derived,,,SO_5^9,EXACT + withdrawal,,astro,,PAPER_2019,,,,,,WIRED
+honest_single,WHITEPAPER,derived,,,1e-5,1 novel + 2 reattributed,,foundations,,PAPER_2020,,,,,,WIRED
+hexad_155,WHITEPAPER,derived,,,500 twin,EXACT + withdrawal,,astro,,PAPER_2021,,,,,,WIRED
+quad_156_wavenumber,WHITEPAPER,derived,,,SO_5^20 m^-1,EXACT,,astro,,PAPER_2022,,,,,,WIRED
+pentad_157_current,WHITEPAPER,derived,,,SO_5^20 A,EXACT,,astro,,PAPER_2023,,,,,,WIRED
+complementarity_quad,WHITEPAPER,derived,,,17/20 + 3/20 = 1,EXACT,,cosmology,,PAPER_2024,,,,,,WIRED
+rho_crit_neg26,WHITEPAPER,derived,,,SO_5^-26,EXACT 100%,,cosmology,,PAPER_2025,,,,,,WIRED
+wavenumber_pair,WHITEPAPER,derived,,,+/-20,EXACT,,foundations,,PAPER_2026,,,,,,WIRED
+complementarity_2nd,WHITEPAPER,derived,,,17/20,EXACT,,astro,,PAPER_2027,,,,,,WIRED
+f_baryon_half_ftrz,WHITEPAPER,derived,,,0.05,EXACT Planck,,cosmology,,PAPER_2028,,,,,,WIRED
+septet_163,WHITEPAPER,derived,,,7 slots,EXACT,,astro,,PAPER_2029,,,,,,WIRED
+aether_pair_164,WHITEPAPER,derived,,,+4/-8,EXACT,,foundations,,PAPER_2030,,,,,,WIRED

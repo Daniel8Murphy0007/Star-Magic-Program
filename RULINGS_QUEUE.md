@@ -6137,3 +6137,15 @@ Deep-read sorted it: P1816 carries its own composition pi*(1+K_Mex/D_crit) = 194
 16 one-line PAPER_19xx_ASCII[_TMP].md files (1924-1939) are PDF-build intermediates, self-marked
 "safe to delete." Index rows warn-marked (BUILD INTERMEDIATE). Daniel's call whether to delete
 the files (charter: never Remove-Item while VS Code has folder open) or leave them warn-marked.
+
+
+### CLOSED 2026-08-15 — exponent-21 prediction LANDED (PAPER_1989)
+PAPER_2176 S5.4 predicted the next ~1e-21-class suppression decomposes as F_TRZ^21 with
+21 = D_crit − D_phys − 1 (P1721 exponent). CONFIRMED at the LIGO strain sensitivity floor
+h = 1e-21 EXACT (8+ GW papers anchor). Scorekeeping per PAPER_2161: prediction → postdiction
+row, permanent. The open item from the v0.376.0 list is closed.
+
+### AUTHORIZED 2026-08-15 — PAPER_2000 FULL STOP reviewed; final stretch proceeds
+Daniel's "next batch" following AUDIT_2000_PAPER_REPORT presentation = charter authorization.
+Final stretch: PAPER_2001-2156 (~156 papers incl. 2084 supersession handling), then the
+end-of-drain audit (decision C).

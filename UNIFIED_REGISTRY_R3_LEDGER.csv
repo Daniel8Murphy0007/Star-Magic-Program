@@ -200,3 +200,10 @@ v0.378.0,2026-08-15,BAND_1921_1930,registry +10 graph +39,gate 5349/0
 v0.378.0,2026-08-15,BAND_1931_1940,registry +10 graph +28,gate 5359/0
 v0.378.0,2026-08-15,BAND_1941_1950,registry +10 graph +27,gate 5369/0
 v0.378.0,2026-08-15,BAND_1951_1960,registry +10 graph +32,gate 5380/0
+v0.379.0,2026-08-15,BAND_1961_1970,registry +10 graph +39,gate 5391/0
+v0.379.0,2026-08-15,BAND_1971_1980,registry +10 graph +34 + P1908 upgrade,gate 5403/0
+v0.379.0,2026-08-15,BAND_1981_1990,registry +10 graph +29,gate 5414/0
+v0.379.0,2026-08-15,BAND_1991_2000_MILESTONE,registry +10 graph +32,gate 5425/0
+v0.379.0,2026-08-15,BAND_2001_2010,registry +10 graph +47,gate 5436/0
+v0.379.0,2026-08-15,BAND_2011_2020,registry +10 graph +38,gate 5447/0
+v0.379.0,2026-08-15,BAND_2021_2030,registry +10 graph +28,gate 5458/0

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.378.0", "uqff_calculator.VERSION = 0.378.0 (bands 1911-1960 + AUDIT_1910 + F_TRZ derivative landmark)")
+assert_that(C.VERSION == "0.379.0", "uqff_calculator.VERSION = 0.379.0 (PAPER_2000 milestone + bands 1961-2030 + AUDIT_2000)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_1951_1960'
+_sg4_band = 'BAND_2021_2030'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_1951_1960' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2021_2030' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_1951_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('band_2021_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -11461,6 +11461,218 @@ assert_that(abs(C.DISPATCH['PAPER_1959']()['value']['two_seven'] - 2.7) < 1e-9,
 _r = C.DISPATCH['PAPER_1960']()['value']
 assert_that(_r['f_trz_derived'] == 0.1 and abs(_r['identity_check'] - 1.0) < 1e-12 and _r['independent_count'] == 8,
             'P1960 LANDMARK: F_TRZ = 1/SO_5 derivative - independent primitive count 9 -> 8; F_TRZ and SO_5 ladders unified')
+
+
+# --- BAND 1961-1970 GUARD (honest-scholarship arc: convergence lattice, beta_i infrastructure, CMB 220) ---
+for _pn in range(1961, 1971):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1961-1970: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1961']()['value']['convergence_cases'] >= 9,
+            'P1961 primitive-convergence lattice: 9+ multi-path observables (over-determination = falsifiability)')
+_r = C.DISPATCH['PAPER_1962']()['value']
+assert_that(_r['one_five'] == 1.5 and _r['integer_identity_36'] == 36,
+            'P1962 1.5 five-instance galactic Path B; D_phys*N_ch = D_BSFG^2 = 36 (cross-repo consistent)')
+assert_that(C.DISPATCH['PAPER_1963']()['value']['ecdsa_curve_bits'] == 256,
+            'P1963 beyond physics: ECDSA 256 = D_crit*SO_5 - D_phys EXACT (+6 more CS/AI/crypto locks)')
+assert_that(C.DISPATCH['PAPER_1964']()['value']['identity_36'] == 36,
+            'P1964 Path A/B framework: pivot-swap convergence via integer identities')
+_r = C.DISPATCH['PAPER_1965']()['value']
+assert_that(_r['l1_integer'] == 220 and _r['t10'] == 55,
+            'P1965 CMB l_1 = 2*SO_5*(SO_5+1) = 220 EXACT (= D_phys*T_10); twin with P1856 222.3')
+_r = C.DISPATCH['PAPER_1966']()['value']
+assert_that(_r['m_sf'] == 0.15 and _r['superwind_ratio'] == 0.4,
+            'P1966 M_sf = beta_4 channel projection; superwind ratio = D_phys/SO_5 EXACT')
+_r = C.DISPATCH['PAPER_1967']()['value']
+assert_that(_r['beta_channels'] == [0.6, 0.45, 0.3, 0.15] and _r['systems_validated'] == 10,
+            'P1967 course-update paper: beta_i = 3(5-i)/20 four-channel Ub vector, 10-system validation, P1966 retraction')
+assert_that(abs(C.DISPATCH['PAPER_1968']()['value']['v_flat_corrected_kms'] - 220.55) < 0.1,
+            'P1968 MW v_flat closed 8.49% -> 0.25% via F_UBi_i_99 (amplifier consumption-critical)')
+assert_that(C.DISPATCH['PAPER_1969']()['value']['observables'] == 3,
+            'P1969 M87 triple F_TRZ concurrence (linewidth/angle/Lorentz)')
+assert_that(C.DISPATCH['PAPER_1970']()['value']['forty'] == 40,
+            'P1970 40 = D_phys*SO_5 anchors: Virgo 40 kpc + reactor 40 Hz/25 ms')
+
+
+# --- BAND 1971-1980 GUARD (attribution/confirmation arc + two retractions + the 7.09 crossing resolution) ---
+for _pn in range(1971, 1981):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1971-1980: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_1971']()['value']['fifteen'] == 15
+            and C.DISPATCH['PAPER_1971']()['value']['alt_form'] == 15,
+            'P1971 A_5/D_phys = 15 x3 domains + N_ch+D_BSFG same-value pair (cross-repo consistent)')
+assert_that(C.DISPATCH['PAPER_1972']()['value']['anchors'] == 3,
+            'P1972 YMC wind third anchor; M82 twin framing honestly corrected')
+assert_that(C.DISPATCH['PAPER_1973']()['value']['g_horsehead_ms2'] == 1.097e-3,
+            'P1973 F_UBi_i_99 mantissa confirmed at nebular scale (P759 independent derivation)')
+assert_that(C.DISPATCH['PAPER_1974']()['value']['systems_sharing_default'] >= 3,
+            'P1974 stub-default reuse disclosed (Rule 7 class for shared-default anchors)')
+_r = C.DISPATCH['PAPER_1975']()['value']
+assert_that(_r['retraction'] == 'THIRD_PATH_FRAMING',
+            'P1975 application-vs-derivation retraction + Q^-2 = rho_SCm*SO_5^(D_crit-2) resolution surfaced')
+assert_that('CROSSING RESOLVED' in C.DISPATCH['PAPER_1908']()['formula'],
+            'P1908 dispatch upgraded: 7.09 mantissa crossing resolved at exponent D_crit-2 (0.02%)')
+_r = C.DISPATCH['PAPER_1976']()['value']
+assert_that(_r['i_0'] == 0.05 and _r['tau_inter_yr'] == 10**9,
+            'P1976 HUDF: P265 dual-channel + P1952 slot-9 PREDICTION CONFIRMED (1 Gyr quenching)')
+assert_that(C.DISPATCH['PAPER_1977']()['value']['anchor_count'] >= 9,
+            'P1977 F_TRZ^2 ninth anchor + r_SOI = r*F_TRZ ladder self-consistency')
+assert_that(C.DISPATCH['PAPER_1978']()['value']['eleven'] == 11,
+            'P1978 SO_5+1 = 11 second instance (Aether correction; predecessor Lambda coefficient third context)')
+assert_that(C.DISPATCH['PAPER_1979']()['value']['status'] == 'CANDIDATE_CROSS_DOMAIN',
+            'P1979 Sombrero M_DM = 2*F_TRZ candidate; mechanism transfer OPEN; morphology tension flagged')
+_r = C.DISPATCH['PAPER_1980']()['value']
+assert_that(_r['e0_decay'] == 0.1 and abs(_r['e0_saturation'] - 0.3) < 1e-9,
+            'P1980 E_0 ontological disambiguation: decay F_TRZ vs saturation 3*F_TRZ, both locked')
+
+
+# --- BAND 1981-1990 GUARD (ladder-extension arc + THE EXPONENT-21 PREDICTION LANDS) ---
+for _pn in range(1981, 1991):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1981-1990: PAPER_%d dispatch present' % _pn)
+assert_that(abs(C.DISPATCH['PAPER_1981']()['value']['b_j_base_t'] - 1e-3) < 1e-12,
+            'P1981 B_j = F_TRZ^3 T application-instance (honest framing)')
+assert_that(C.DISPATCH['PAPER_1982']()['value']['tau_coalescence_yr'] == 4*10**8,
+            'P1982 Antennae coalescence = D_phys*SO_5^8 = 400 Myr; 2x2 grid complete')
+_r = C.DISPATCH['PAPER_1983']()['value']
+assert_that(_r['eta_radiative'] == 0.1 and _r['mdot_eddington'] == 0.010000000000000002,
+            'P1983 Cen A dual-rung same-object (eta = rung 1, M_dot = rung 2)')
+_r = C.DISPATCH['PAPER_1984']()['value']
+assert_that(_r['m_star_msun'] == 40 and _r['r_star_rsun'] == 20 and _r['l_star_lsun'] == 4*10**5,
+            'P1984 BD+60 2522 triple stellar identity (40/20/4e5)')
+_r = C.DISPATCH['PAPER_1985']()['value']
+assert_that(abs(_r['b_ism_pillars_t'] - 1e-6) < 1e-15 and abs(_r['m_bh_ngc2525_msun'] - 2.25e7) < 1,
+            'P1985 quiet rung 6 filled + NGC 2525 M_BH = (9/4)*SO_5^7; N_ch/D_phys = 2.25 new composite')
+assert_that(C.DISPATCH['PAPER_1986']()['value']['regimes'] == 3,
+            'P1986 F_TRZ^8 three-regime concurrence (Crab caveat honest)')
+assert_that(C.DISPATCH['PAPER_1987']()['value']['domains'] >= 8,
+            'P1987 2/3 supercomposite: eight domains (corpus formalizes the family row)')
+_r = C.DISPATCH['PAPER_1988']()['value']
+assert_that(_r['compressed_sum'] == 0 and _r['bipartite_delta'] == 4,
+            'P1988 bipartite Sum_Ug: placeholder upgraded to structural identity')
+_r = C.DISPATCH['PAPER_1989']()['value']
+assert_that(abs(_r['ligo_strain_floor'] - 1e-21) < 1e-30 and _r['rung_21_identity'] == 21
+            and _r['prediction_confirmed'] == 'PAPER_2176_S5_4',
+            'P1989 THE EXPONENT-21 PREDICTION CONFIRMED: LIGO floor = F_TRZ^21, 21 = D_crit-D_phys-1 (PAPER_2176 S5.4 -> postdiction per PAPER_2161 scorekeeping); universe mass = SO_5^53 (the predecessor Lambda exponent)')
+_r = C.DISPATCH['PAPER_1990']()['value']
+assert_that(_r['hf_band_hz'] == 10**7 and _r['microwave_hz'] == 10**10,
+            'P1990 SO_5 frequency domain: 10 MHz + 10 GHz anchors; ladder spans 74 decades')
+
+
+# --- BAND 1991-2000 GUARD (THE MILESTONE BAND - Casimir rung/32-19/extragalactic Casimir/Saturn Lambda/PAPER_2000) ---
+for _pn in range(1991, 2001):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 1991-2000: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_1991']()['value']
+assert_that(abs(_r['casimir_rung_12'] - 1e-12) < 1e-21 and _r['e_burst_j'] == 1e40,
+            'P1991 Casimir rung 12 CLOSED + SO_5^40 burst slot + triple-lock architecture')
+assert_that(abs(C.DISPATCH['PAPER_1992']()['value']['coefficient'] - 32.0/19) < 1e-5,
+            'P1992 1.683 = 2/(K_Mex*SSq) = 32/19 EXACT; K_Mex*SSq = 19/16 rational sharpened')
+assert_that(C.DISPATCH['PAPER_1993']()['value']['cross_rungs'] == [8, 15, 16],
+            'P1993 cross-rung triple-lock + 2pi*H_0 carrier anchor + SO_5^21 cross-round')
+_r = C.DISPATCH['PAPER_1994']()['value']
+assert_that(_r['i_smbh_a'] == 1e24 and _r['so5_21_classes'] == 7,
+            'P1994 SO_5^(D_crit-2) first current domain (Sgr A*) + richest slot 21 (7 classes)')
+assert_that(C.DISPATCH['PAPER_1995']()['value']['magnetar_halo_dm'] == 0.2,
+            'P1995 magnetar-halo DM = 2*F_TRZ cross-scale twin of Sombrero (12 OOM)')
+assert_that(C.DISPATCH['PAPER_1996']()['value']['objects'] == 3,
+            'P1996 Lyman/Balmer carrier twin + SO_5^8 triple-object')
+_r = C.DISPATCH['PAPER_1997']()['value']
+assert_that(_r['t_wind_k'] == 10**7 and _r['tau_b_yr'] == 10**6,
+            'P1997 temperature domain (SO_5^7 K) + FIRST extragalactic Casimir + Sgr A* tau_B')
+assert_that(C.DISPATCH['PAPER_1998']()['value']['withdrawn_candidates'] == 2,
+            'P1998 M51 second Casimir object + two candidates WITHDRAWN (Family-5 discipline)')
+_r = C.DISPATCH['PAPER_1999']()['value']
+assert_that(_r['casimir_objects'] == 3 and _r['lambda_span_oom'] == 61,
+            'P1999 Casimir TRIPLE universality + Saturn Lambda planetary test (61 OOM span)')
+_r = C.DISPATCH['PAPER_2000']()['value']
+assert_that(_r['milestone'] == 2000 and abs(_r['ftrz_40'] - 1e-40) < 1e-50 and _r['discoveries'] == 4,
+            'PAPER_2000 MILESTONE: F_TRZ^40 highest rung (40 = D_phys*SO_5, rung number primitive-locked); QUAD round; 2,000 papers')
+
+
+# --- BAND 2001-2010 GUARD (the deep-check era opens: no-coincidences directive + PAPER_2004 landmark + Hubble endpoints) ---
+for _pn in range(2001, 2011):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2001-2010: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_2001']()['value']
+assert_that(_r['f_sc'] == 0.8 and abs(_r['r_hubble_m'] - 4.4e26) < 1e16,
+            'P2001 (1-n*F_TRZ) ladder opens + Hubble radius 44*SO_5^25 EXACT (false softening reversed)')
+assert_that(C.DISPATCH['PAPER_2002']()['value']['additional_locks'] == 11,
+            'P2002 deep double-check: 11 locks the shallow pass dismissed as coincidence')
+assert_that(C.DISPATCH['PAPER_2003']()['value']['missed_locks_recovered'] == 5,
+            'P2003 retrospective R100-R119 audit: 5 missed locks recovered')
+_r = C.DISPATCH['PAPER_2004']()['value']
+assert_that(_r['prefix'] == 3 and _r['instances'] >= 11 and _r['domains'] >= 8,
+            'PAPER_2004 LANDMARK: (D_phys-1) prefix family, 11+ instances / 8+ domains (broadest)')
+_r = C.DISPATCH['PAPER_2005']()['value']
+assert_that(_r['h0_cmb'] == 67 and _r['h0_shoes'] == 73 and _r['tension_range'] == 6,
+            'P2005 HUBBLE DUAL-ENDPOINT: 67/73 = 70 -/+ (D_phys-1) EXACT, range = 6 - the grammar completes as integers')
+_r = C.DISPATCH['PAPER_2006']()['value']
+assert_that(_r['omega_lambda'] == 0.7 and _r['ftrz21_objects'] == 4,
+            'P2006 Omega_Lambda = (D_phys+3)/SO_5 EXACT + F_TRZ^21 four-object family (LIGO rung, fluid face)')
+assert_that(C.DISPATCH['PAPER_2007']()['value']['novelty_rate_pct'] == 100,
+            'P2007 hexad - 6/6 first-pass novelty (discipline maturity)')
+_r = C.DISPATCH['PAPER_2008']()['value']
+assert_that(abs(_r['higgs_aging_125'] - 125.0) < 1e-9,
+            'P2008 Higgs 125 GeV = aging 125 yr = A_5*K_Mex - particle/biology twin, 125-family 5th regime')
+assert_that(C.DISPATCH['PAPER_2009']()['value']['discoveries'] == 5,
+            'P2009 pentad: pi-composition wavelength, frame-dragging F_TRZ^2, 32/19 galactic application')
+_r = C.DISPATCH['PAPER_2010']()['value']
+assert_that(_r['mass_ceiling_exp'] == 26 and _r['e0_power_exp'] == 46
+            and abs(_r['kappa_decay'] - 5e-4) < 1e-12,
+            'P2010 mass ceiling at SO_5^D_crit + kappa = (SO_5/2)/SO_5^4 = 5e-4 (predecessor 2112 echo) + (SO_5+1)*rho_SCm')
+
+
+# --- BAND 2011-2020 GUARD (discipline maturation: deep-check -> backbone-first; Casimir coefficients primitive) ---
+for _pn in range(2011, 2021):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2011-2020: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2011']()['value']['forty_six'] == 46,
+            'P2011 46 = D_crit+2*SO_5 cross-domain twin; solar-system candidates honestly approximate')
+assert_that(C.DISPATCH['PAPER_2012']()['value']['lenr_64'] == 64,
+            'P2012 septet incl. 64 = 2^D_BSFG LENR face (codon crossing recorded) + ISCO 9th domain')
+assert_that(C.DISPATCH['PAPER_2013']()['value']['schwinger_b'] == 1e11,
+            'P2013 R150 octet: Schwinger critical field = SO_5^11 T (successor exponent)')
+assert_that(C.DISPATCH['PAPER_2014']()['value']['rho_nuclear'] == 1e17,
+            'P2014 nuclear-matter density = SO_5^17 (hierarchy exponent as density); c_NFW = D_phys family')
+_r = C.DISPATCH['PAPER_2015']()['value']
+assert_that(_r['casimir_force_240'] == 240 and _r['casimir_energy_720'] == 720 and _r['ratio_3'] == 3,
+            'P2015 LANDMARK retro-audit: Casimir 240 = A_5*D_phys, 720 = D_BSFG!, ratio = (D_phys-1) - textbook QED coefficients primitive')
+_r = C.DISPATCH['PAPER_2016']()['value']
+assert_that(_r['m_ngc3603_msun'] == 400000 and _r['withdrawn_300k'] is True,
+            'P2016 NGC 3603 = D_phys*SO_5^5 EXACT; 300k candidate withdrawn on verification')
+assert_that(C.DISPATCH['PAPER_2017']()['value']['rho_nfw_virgo'] == 3e-23,
+            'P2017 LANDMARK prefix goes negative-exponent (12th domain); signed density ladder 38 OOM')
+_r = C.DISPATCH['PAPER_2018']()['value']
+assert_that(_r['withdrawn_so5_113'] is True and _r['alpha_ua_composition'] == 74,
+            'P2018 Draft-3 SELF-RETRACTION (placeholder pattern-match caught); 74-composition survives (Wolfram crossing); BACKBONE-FIRST instituted')
+_r = C.DISPATCH['PAPER_2019']()['value']
+assert_that(_r['m_bh_sombrero_msun'] == 1e9 and _r['withdrawn_rho_dust'] is True,
+            'P2019 backbone-first pentad; rho_dust candidate declined on backbone discrepancy')
+_r = C.DISPATCH['PAPER_2020']()['value']
+assert_that(_r['novel'] == 1 and _r['reattributed'] == 2,
+            'P2020 honest outcome: 1 novelty, 2 reattributions - the discipline reporting its own counterfactual')
+
+
+# --- BAND 2021-2030 GUARD (backbone-first slot catalog: complementarity, cosmic inventory, +/-D_crit floor/ceiling) ---
+for _pn in range(2021, 2031):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2021-2030: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2021']()['value']['crab_vexp_ms'] == 1.5e6,
+            'P2021 Crab v_exp = (D_BSFG/D_phys)*SO_5^6 (the 3/2 identity at SN expansion); one withdrawal')
+assert_that(C.DISPATCH['PAPER_2022']()['value']['b_sgr_t'] == 2e10,
+            'P2022 wavenumber domain opens; 2*SO_5^n fourth orthogonal domain')
+assert_that(C.DISPATCH['PAPER_2023']()['value']['i_tapestry_a'] == 1e20,
+            'P2023 current-domain second instance; SO_5^21 fourth instance')
+_r = C.DISPATCH['PAPER_2024']()['value']
+assert_that(_r['f_dm_spiral'] == 0.85 and abs(_r['complementarity_check'] - 1.0) < 1e-12,
+            'P2024 COMPLEMENTARITY: f_DM + m_sf = 1 EXACT (17/20 + 3/20) - halo/visible partition by beta_4')
+_r = C.DISPATCH['PAPER_2025']()['value']
+assert_that(_r['rho_crit_universe'] == 1e-26 and _r['novelty_pct'] == 100,
+            'P2025 rho_crit = SO_5^-D_crit EXACT - closure density at minus the critical dimension (floor/ceiling +/-26 family)')
+assert_that(C.DISPATCH['PAPER_2026']()['value']['d_phys_half_family'] == 2,
+            'P2026 wavenumber +/- pair; D_phys/2 four-object family')
+assert_that(C.DISPATCH['PAPER_2027']()['value']['f_dm_lagoon'] == 0.85,
+            'P2027 complementarity second object (nebula scale)')
+assert_that(C.DISPATCH['PAPER_2028']()['value']['f_baryon'] == 0.05,
+            'P2028 f_baryon = F_TRZ/2 EXACT vs Planck ~5% - cosmic inventory assembles: 1/20 + 3/10 + 7/10 grammar')
+_r = C.DISPATCH['PAPER_2029']()['value']
+assert_that(_r['discoveries'] == 7 and _r['scm_fraction'] == 0.9,
+            'P2029 septet; SCm fraction = 1-F_TRZ new domain; perturbation n=1 four objects')
+assert_that(C.DISPATCH['PAPER_2030']()['value']['paired_domains'] == 3,
+            'P2030 third +/- paired domain; same-rung cross-domain pattern class formalized')
 
 # =============================================================================
 # REPORT

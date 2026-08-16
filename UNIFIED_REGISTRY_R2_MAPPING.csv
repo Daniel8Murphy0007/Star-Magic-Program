@@ -232,3 +232,10 @@ PAPER_1921_1930,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
 PAPER_1931_1940,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
 PAPER_1941_1950,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
 PAPER_1951_1960,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.378.0
+PAPER_1961_1970,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0
+PAPER_1971_1980,BAND,uqff_calculator.py::DISPATCH,10 dispatches + P1908 upgrade,v0.379.0
+PAPER_1981_1990,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0
+PAPER_1991_2000,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0
+PAPER_2001_2010,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0
+PAPER_2011_2020,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0
+PAPER_2021_2030,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.379.0

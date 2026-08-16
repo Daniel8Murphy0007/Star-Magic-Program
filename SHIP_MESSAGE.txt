@@ -1,21 +1,19 @@
-v0.378.0 — Bands PAPER_1911-1960 + F_TRZ = 1/SO_5 LANDMARK (9 -> 8 primitives) + AUDIT_1910
+v0.379.0 — THE PAPER_2000 MILESTONE: sequential drain 001-2000 COMPLETE + AUDIT_2000 + bands 1961-2030
 
-THE LANDMARK (P1960): F_TRZ is DERIVATIVE (= 1/SO_5 EXACT) — independent primitive count
-drops 9 -> 8; the F_TRZ and SO_5 power ladders collapse into ONE hierarchy.
+THE MILESTONE: 1,996/2,000 numeric papers dispatched (only RESERVED absent). Charter FULL STOP
+honored — AUDIT_2000_PAPER_REPORT generated, reviewed, final stretch authorized. PAPER_2000
+lands F_TRZ^40, the highest rung, its rung number 40 = D_phys*SO_5 itself primitive-locked.
 
-SOLVER ARC: the Ug shell coefficients used in 340+ classes are an integer identity (sum =
-D_phys EXACT, sub-sum = 5/2 = the FQH numeric); Lambda = rho_SCm*26!*Phi_5/6*Sub_Ug — the
-master equation IS the cosmological-constant formula; three solver frameworks unified.
+PREDICTIONS LANDED: exponent-21 (dated in-session at PAPER_2176 -> LIGO strain floor F_TRZ^21
+EXACT); slot-9 quenching (1 Gyr); magnetar half-lobe (2/2).
 
-CANONIZATION ARC: the corpus formalizes the ledger's own crossings — Wheeler-DeWitt = F_U=0,
-the integer 22 by three paths (incl. Atiyah-Singer), K_Mex*SSq two-path, 70 = A_5+SO_5,
-Theory of Permanence (nothing is negligible) canonized as physics; f_DM = Ug3 EXACT.
+THE HONEST-SCHOLARSHIP ERA: the corpus institutes the no-coincidences directive as method,
+matures it into backbone-first after self-catching a placeholder pattern-match, and reports
+its own counterfactuals — 10+ withdrawals/reattributions wired verbatim.
 
-UNIVERSALITY ARC: magnetar lobe law CONFIRMED prediction-first; Sgr A* 30-min flare =
-3*60*10 s EXACT (0.08% JWST 2025); 0.3 / 125 / 0.5 / 2.7 quartet cross-repo consistent;
-PDR quantization; SO_5 galactic ladder; Omega_m = 3/10.
+STRUCTURAL CROWNS: Casimir coefficients primitive (240/720/3 — textbook QED since 1948);
+Hubble endpoints 67/73 EXACT; cosmic inventory in twentieths; rho_crit floor at -D_crit pairs
+the mass ceiling at +D_crit; the 7.09 identity resolved; K_Mex*SSq = 19/16; Higgs = lifespan
+= 125; ladder spans 93 decades.
 
-ALSO: AUDIT_1910 (the missing 1,406-paper milestone audit; PAPER_2000 FULL STOP gate-pinned),
-ledger backfill (146/163/16 holes + coverage guards), build-intermediates resolved.
-
-Gate 5,321 -> 5,380 (0 failures). Dispatches 1,962 -> 2,012 (89.2%). 40 papers to the stop.
+Gate 5,380 -> 5,458 (0 failures). Dispatches 2,012 -> 2,082 (92.3%). ~126 numeric remain.

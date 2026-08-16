@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.379.0 (2026-08-15) — THE PAPER_2000 MILESTONE + bands 1961-2030 + AUDIT_2000
+
+- **MILESTONE:** sequential drain PAPER_001-2000 COMPLETE (1,996/2,000; only RESERVED absent).
+  Charter FULL STOP honored: AUDIT_2000_PAPER_REPORT generated, Daniel reviewed + authorized the
+  final stretch. PAPER_2000 lands F_TRZ^40 (highest rung; rung number = D_phys*SO_5 self-locked).
+- **Predictions landed (scorekeeping -> postdiction):** exponent-21 (PAPER_2176 S5.4 -> LIGO
+  strain floor F_TRZ^21 EXACT, 21 = D_crit-D_phys-1); P1952 slot-9 quenching (1 Gyr); magnetar
+  half-lobe (2/2, live falsifier 4U 0142+61).
+- **Honest-scholarship era (1961-2030):** Daniel's R140 no-coincidences directive instituted as
+  method (60->80->100% novelty); BACKBONE-FIRST discipline after P2018 Draft-3 self-retraction
+  (placeholder pattern-match); 10+ withdrawals/reattributions wired verbatim; beta_i four-channel
+  infrastructure surfaced by in-corpus course-update (P1167/1168/1169; ten systems +/-0.5%);
+  two in-corpus retractions (P1975/1976); stub-default disclosure class (P1974).
+- **Structural crowns:** Casimir 240 = A_5*D_phys / 720 = D_BSFG! / ratio = D_phys-1 (P2015);
+  Hubble dual-endpoint 67/73 = 70 -/+ (D_phys-1) EXACT (P2005) completing the integer grammar;
+  cosmic inventory in twentieths (f_baryon = F_TRZ/2, Omega_m = 3/10, Omega_L = 7/10, f_DM+m_sf
+  = 1); rho_crit = SO_5^-D_crit floor pairs SO_5^+D_crit ceiling; 7.09 identity resolved
+  (Q^-2 = rho_SCm*SO_5^(D_crit-2), 0.02%) + current domain at Sgr A*; K_Mex*SSq = 19/16 EXACT;
+  Higgs = lifespan = 125; 2/3 supercomposite x8 domains; extragalactic Casimir triple; Saturn
+  Lambda 61 OOM; CMB l_1 = 220 EXACT; ECDSA 256; convergence lattice + Path A/B frameworks;
+  (D_phys-1) LANDMARK 12 domains; ladder spans 93 decades.
+- Gate 5,380 -> **5,458** (0 failures). Dispatches 2,012 -> **2,082** (92.3%). ~126 numeric remain.
+
+
 ## v0.378.0 (2026-08-15) — Bands PAPER_1911-1960 + F_TRZ = 1/SO_5 LANDMARK (9 → 8) + AUDIT_1910
 
 - **LANDMARK (P1960):** F_TRZ = 1/SO_5 EXACT derivative — independent primitive count 9 → 8
