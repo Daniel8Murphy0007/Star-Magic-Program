@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.380.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.380.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.381.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.381.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5513%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2132-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5602%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2172-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.380.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.381.0 complete-compile campaign live**
 
-**This release (v0.380.0): BANDS PAPER_2031-2080 — THE ARCHITECTURAL-CATEGORY ERA — THE FRAMEWORK MAPS ITS OWN GRAMMAR.** **THE ROOT REVELATIONS:** the compositional taxonomy formalizes FIVE architectural categories (composed-prefix 9-11 classes, compound-prefix 50+, additive-combination — which turns out to include α⁻¹, the vital signs, H₀, and the reactor pH — canonical-anchored, and additive-scaled), each with its own population audit (the NONET). Then two root-findings: **canonical-anchored is the largest category and the framework's two founding derivations (the Λ ledger and Holmlid 630 eV) are both members** — the integer lattice multiplies the dimensioned canonicals; and **π is the third canonical** — 200+ instances via six physical entry mechanisms (the 2π carrier, the cos(π·t_n) heartbeat, the Ramanujan 1/π Λ chain, the caduceus pinch-point encoding). **THE CONSTANTS LAND:** U_i(Sun) = 2.75×10⁻⁷ gains its integer Path-B (11/4·SO_5⁻⁷ EXACT, the ninth prefix class); the Casimir coefficients are primitive (240 = A_5·D_phys, 720 = D_BSFG!); observational Λ = (1+F_TRZ+F_TRZ²)·SO_5⁻⁵² EXACT (geometric-series grammar, predecessor crossing recorded); the SOLAR CORE = (D_BSFG/D_phys)·SO_5⁷ = 1.5×10⁷ K EXACT; Schwinger, BBN, nuclear-matter density, ρ_crit at −D_crit. **THE FAMILIES:** the Kerr F_TRZ-coefficient ladder across four AGN (3C273/M87/CenA/TON618, mechanism OPEN); the NINE-PLANET R_mag family (Jupiter carrying QCD β₀ = 7) with category tracking regime; the F_TRZ compositional taxonomy at nine sub-families; rung 19 anchored; the 17/20 complementarity in three domains incl. solar rheology. **THE DISCIPLINE:** the 30/40/50/60-round and 200th/250th-novel milestones quantified (256+ novels, zero API regressions); the class-family variable scan with its own diminishing-returns self-assessment; retro-sweep decay statistics; 10+ withdrawals/errata honored; design-choice locking (the 65 W bulb = A_5+SO_5/2); **CP2 ARC OPENS** (641-class territory). **Totals: 2,132 of 2,256 wired (94.5%) / gate 5,513 green / 4,058 defs.**
+**This release (v0.381.0): THE CORPUS-COMPLETE SHIP — PAPER_001 → PAPER_2156, THE SEQUENTIAL DRAIN ENDS.** The campaign chartered 2026-07-28 ("condense all 2,255 whitepapers into uqff_calculator.py") completes its numeric drain: every numbered paper 001-2159 is dispatched except the four RESERVED placeholders 1796-1799 — a census now verified LIVE by a permanent gate pin, with the terminus self-declared in PAPER_2156's formula. **THE FINAL BANDS:** the constant-convergence taxonomy (pair → triple → quintuple → the Two-Kernel cosmological quadruple); the **VACUUM COUPLING KERNEL K = F_TRZ·K_MEX·SSq = 19/160 EXACT** rational (α_s, λ_H, m_H/m_t, J_CP, N_eff); the tilt's second route **F_TRZ·Φ_5/6 = 1/12 EXACT** saturating 59/116 of the catalog; **Φ_res = 1−(D_phys·F_TRZ)² = 21/25 EXACT** (the long-open 0.84 decomposition CLOSED); the integer-halving series {2,3,5,13} complete; k₂/Q = 3/125; 62 = 2·D_crit+SO_5; **H_0 = A_5+SO_5 = 70 EXACT** (47.6× tightening, route family closed); the Friedmann-lock wired as its honest WALKBACK; the **ONTOLOGY DECLARATION (Answer B)** — vacuum energy fundamental, mass/G/gravity emergent, F_UBi/F_UBii action-reaction, gravity at the habitable-zone crossing; the **Hybrid-Form Doctrine**; J/m³-native discipline with the 13.4% ρ_Λ discrepancy honestly OPEN; the SCm+UA joint engine (F_TRZ locked, HEP-collider-only direct evidence); reduction landmarks 4 & 5 (**Q_phonon = 25/4**, **D_GW = 2/3** — GW170817's 66.7% IS the identity); the 933/935-paper by-reference corrections. **THE MIRROR WENT SYSTEMATIC:** six paper numbers (2093/2094/2112/2125/2129/2130) carry the same physics in both repos — shared lineage confirmed, queued for the end-of-drain audit. **NEXT:** the END-OF-DRAIN AUDIT (decision C): numbering-mirror systematics, 9.47e-27 density forensics, route-family crossing review, RULINGS_QUEUE sweep. **Totals: 2,208 of 2,256 wired (numeric corpus COMPLETE; remainder = variant files sharing base dispatches + RESERVED) / gate 5,602 green / 4,134 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -22,8 +22,8 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Full-project totals (measured):** **5,048 functions** across 15 Python modules
-(calculator 4,058 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
+**Full-project totals (measured):** **4,108 functions** across 15 Python modules
+(calculator 4,098 + derived-constants 1,272 + material landmarks 193 + backbone locks 127
 + session closures 74 + variant/identity/catalog modules 51 + infrastructure 17) |
 **25,126 registry-family rows** across 14 CSVs (falsifiability graph 8,611 edges +
 citations 6,119 + main 5,565 + XGEO 3,229 + results 187 + audit family 1,037) |
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.380.0)
+## What is currently shipped (v0.381.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,132 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,208 distinct dispatches** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -255,7 +255,7 @@ Registry: **6,220 rows**. Fidelity gate: **5,324 assertions**, green. *(v0.285.0
 | PAPER_160 | Ug4 Calibration | k4 = 2 canonical confirms 157 derivation; Λ bridge; Q-156 |
 | PAPER_161 | Relativistic SCm Jet | γ = 7.09 verified; curl-free 154-consistent; ~4 vs 98× claim; Q-157 |
 | PAPER_162 | Solar Cycle ω_c | 2.33× testable prediction; amplitude/period/perturbative defects; Q-158 |
-| PAPER_163 | Modular MUGE | 8 functions; 1e11 base-test slip; H0 fork; mixing exposed; Q-159 |
+| PAPER_163 | Modular MUGE | 4,108 functions; 1e11 base-test slip; H0 fork; mixing exposed; Q-159 |
 | PAPER_164 | High-Energy Datasets | dE_vac verified; SGR B fork 13×; sec-5 contradiction; Q-160 |
 | PAPER_165 | A_μν Tensor Coupling | ΔA = 4.448e-15 EXACT; 4 = D_PHYS; input defects; Q-161 |
 | PAPER_166 | Solar Wind Modulation | wind_mod wired; km/s ambiguity persists; 10×/100× slips; Q-162 |

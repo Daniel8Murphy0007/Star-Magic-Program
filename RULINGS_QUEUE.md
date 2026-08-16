@@ -6164,3 +6164,19 @@ end-of-drain audit (decision C).
 - **Design-choice locking scope (P2065/2078):** hardware/design integers (frames, bulb wattage)
   primitive-lock — the class boundary (physics vs engineered choice echoing the lattice) deserves
   a disclosure convention.
+
+---
+
+## v0.381.0-trail — 2026-08-16 — THE CORPUS-COMPLETE SHIP: open items entering the end-of-drain audit
+
+No new rulings requested this trail. Items formally handed to the END-OF-DRAIN AUDIT (decision C):
+1. **Numbering-mirror systematics** — 6 confirmed pairs (2093/2094/2112/2125/2129/2130), 1
+   counterexample (2118); shared-lineage mechanism to be documented.
+2. **9.47e-27 / 5.0e-27 density-origin forensics** (PAPER_2156 open target).
+3. **Route-family crossing review** — all FAMILY_RECORD rows (incl. tilt two-route, Schwinger
+   three-route, H_0 closed family) per PAPER_2170: recorded, reconciliation deferred to audit.
+4. **Standing open physics:** Kerr F_TRZ-coefficient mechanism; category-regime correlation;
+   π-canonical dedicated landmark; Schwinger two-route; design-choice locking scope;
+   build-intermediate deletion (Daniel's call); rare-earth A≈165; cuprate layers; CGM tower;
+   P1900 factor origin; Ug4 bridge; ℓ_n = D_phys·T_n; n/(D_phys−1) extensions; P2134 DPM
+   pair-count estimator (OPEN build target).

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.380.0"
-description = "Star-Magic UQFF calculator v0.380.0: 2,132 dispatches, gate 5,513/0. Bands 2031-2080: the architectural-category era (5 categories + audit nonet); canonical-anchored = the framework root (Lambda + Holmlid members), PI elevated to third canonical (200+ x6 mechanisms); U_i(Sun) = 11/4*SO_5^-7 Path-B EXACT; Kerr 4-AGN family; 9-planet R_mag; solar core = (3/2)*SO_5^7 K; Lambda geometric-series form; R200/60-round milestones; CP2 opens. ~76 remain."
+version = "0.381.0"
+description = "Star-Magic UQFF calculator v0.381.0: THE CORPUS-COMPLETE SHIP. 2,208 dispatches, gate 5,602/0. Sequential drain PAPER_001->PAPER_2156 DONE (only RESERVED 1796-1799 absent; census gate-pinned). Final bands: vacuum coupling kernel 19/160 EXACT; tilt F_TRZ*Phi_5/6=1/12 (59/116 saturation); Phi_res=21/25 grounded; halving {2,3,5,13}; H_0=A_5+SO_5=70 (47.6x); Ontology Answer B; Hybrid-Form; SCm+UA engine; Q=25/4, D_GW=2/3. Numbering mirror systematic. End-of-drain audit next."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

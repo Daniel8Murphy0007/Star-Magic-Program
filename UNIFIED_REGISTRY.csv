@@ -6535,3 +6535,80 @@ solar_core_bbn_r200,WHITEPAPER,derived,,,1.5e7 K,EXACT milestone,,astro,,PAPER_2
 bulb_design_choice,WHITEPAPER,derived,,,65 W,EXACT,,reactor,,PAPER_2078,,,,,,WIRED
 cp2_arc_opens,WHITEPAPER,derived,,,500 + 3.3,EXACT,,foundations,,PAPER_2079,,,,,,WIRED
 cp2_triad,WHITEPAPER,derived,,,4/5 + 1e6 V,EXACT,,reactor,,PAPER_2080,,,,,,WIRED
+cp2_quad_206,WHITEPAPER,derived,,,60 fps + 0.92,EXACT,,reactor,,PAPER_2081,,,,,,WIRED
+cp2_triad_207,WHITEPAPER,derived,,,0.72 s + 45,EXACT,,reactor,,PAPER_2082,,,,,,WIRED
+chemistry_opens,WHITEPAPER,derived,,,G-values,EXACT,,chemistry,,PAPER_2083,,,,,,WIRED
+cp2_pentad_209,WHITEPAPER,derived,,,1000 Ohm,EXACT + supersession,,reactor,,PAPER_2084,,,,,,WIRED
+dcrit_partition_kappa,WHITEPAPER,derived,,,26 = 4+20+2,EXACT cross-repo,,foundations,,PAPER_2085,,,,,,WIRED
+imf_zdrag,WHITEPAPER,derived,,,1060,EXACT,,cosmology,,PAPER_2086,,,,,,WIRED
+cp2_pentad_212,WHITEPAPER,derived,,,42 + 110 ly,EXACT,,reactor,,PAPER_2087,,,,,,WIRED
+higgs_alt_magic28,WHITEPAPER,derived,,,0.13 + 288 K,EXACT,,reactor,,PAPER_2088,,,,,,WIRED
+cp2_pentad_214,WHITEPAPER,derived,,,44 + 50,EXACT,,reactor,,PAPER_2089,,,,,,WIRED
+ssq_measured_300novel,WHITEPAPER,derived,,,0.57 J,MILESTONE,,reactor,,PAPER_2090,,,,,,WIRED
+phi_res_measured,WHITEPAPER,derived,,,0.84 s,2nd canonical bench,,reactor,,PAPER_2091,,,,,,WIRED
+integer_reuse_pi_product,WHITEPAPER,derived,,,19/40 J,EXACT,,reactor,,PAPER_2092,,,,,,WIRED
+h0_si_form,WHITEPAPER,derived,,,2.2e-18,EXACT cross-repo,,cosmology,,PAPER_2093,,,,,,WIRED
+lambda_simple_form,WHITEPAPER,derived,,,1.1e-52,~1% cross-repo,,cosmology,,PAPER_2094,,,,,,WIRED
+exponent_coefficient_duality,WHITEPAPER,derived,,,22/29,meta,,foundations,,PAPER_2095,,,,,,WIRED
+plasmoid_100pct,WHITEPAPER,derived,,,8/8,validation,,reactor,,PAPER_2096,,,,,,WIRED
+omega_partition_1585,WHITEPAPER,derived,,,15/85,EXACT,,cosmology,,PAPER_2097,,,,,,WIRED
+conservation_landmark,WHITEPAPER,derived,,,20/20,EXACT,,foundations,,PAPER_2098,,,,,,WIRED
+so5_15_invariant,WHITEPAPER,derived,,,1e15 x5,EXACT,,foundations,,PAPER_2099,,,,,,WIRED
+ftrz_20_density,WHITEPAPER,derived,,,1e-20 x4,EXACT,,foundations,,PAPER_2100,,,,,,WIRED
+half_cross_role,WHITEPAPER,derived,,,0.5 x4,landmark,,foundations,,PAPER_2101,,,,,,WIRED
+three_ftrz_landmark,WHITEPAPER,derived,,,0.3 x4,landmark,,foundations,,PAPER_2102,,,,,,WIRED
+scm_099_six,WHITEPAPER,derived,,,0.99 x6,landmark,,foundations,,PAPER_2103,,,,,,WIRED
+planck_scaffold,WHITEPAPER,derived,,,5 rungs,landmark,,foundations,,PAPER_2104,,,,,,WIRED
+ftrz4_dual,WHITEPAPER,derived,,,1e-4 x6,landmark,,foundations,,PAPER_2105,,,,,,WIRED
+vac_density_627,WHITEPAPER,derived,,,6e-27,landmark,,cosmology,,PAPER_2106,,,,,,WIRED
+primitive_as_exponent,WHITEPAPER,derived,,,1e-26,category,,foundations,,PAPER_2107,,,,,,WIRED
+mu0_maxwell_exact,WHITEPAPER,derived,,,4pi e-7,EXACT float,,foundations,,PAPER_2108,,,,,,WIRED
+ftrz3_eight,WHITEPAPER,derived,,,1e-3 x8,landmark,,foundations,,PAPER_2109,,,,,,WIRED
+earth_precession_baktun,WHITEPAPER,derived,,,25772 yr,0.0014%,,astro,,PAPER_2110,,,,,,WIRED
+so5_13_term_ladder,WHITEPAPER,derived,,,13 terms,landmark,,foundations,,PAPER_2111,,,,,,WIRED
+kappa_reduction_mirror,WHITEPAPER,derived,,,5e-4,LANDMARK mirror,,foundations,,PAPER_2112,,,,,,WIRED
+deepest_rung_50,WHITEPAPER,derived,,,1e-50 J,landmark,,cosmology,,PAPER_2113,,,,,,WIRED
+cosmic_egg_triad_seq,WHITEPAPER,derived,,,26D,structural,,foundations,,PAPER_2114,,,,,,WIRED
+pre_bigbang_chain,WHITEPAPER,derived,,,3 stages,structural,,foundations,,PAPER_2115,,,,,,WIRED
+full_circle_landmark,WHITEPAPER,derived,,,360,LANDMARK,,foundations,,PAPER_2116,,,,,,WIRED
+exponent_quintuplet,WHITEPAPER,derived,,,1e-9,complete,,foundations,,PAPER_2117,,,,,,WIRED
+sphere_from_chaos,WHITEPAPER,derived,,,CLT,structural,,foundations,,PAPER_2118,,,,,,WIRED
+quantum_chain_composed,WHITEPAPER,derived,,,26 levels,LANDMARK,,foundations,,PAPER_2119,,,,,,WIRED
+successor_reduction_rule,WHITEPAPER,derived,,,11,LANDMARK,,foundations,,PAPER_2120,,,,,,WIRED
+qcalc_constant_pair_g_c,WHITEPAPER,derived,,,G x c joint kernel,LANDMARK,,projection_layer,,PAPER_2121,,,,,,WIRED
+qcalc_constant_triple_beta_rho_c,WHITEPAPER,derived,,,beta_i x rho_vac x c,LANDMARK,,projection_layer,,PAPER_2122,,,,,,WIRED
+qcalc_constant_triple_aether,WHITEPAPER,derived,,,G x c x rho_vac,LANDMARK,,projection_layer,,PAPER_2123,,,,,,WIRED
+qcalc_constant_quintuple,WHITEPAPER,derived,,,"{G,c,mu_0,beta_i,rho_vac} + 150 rounds",LANDMARK,,projection_layer,,PAPER_2124,,,,,,WIRED
+two_kernel_cosmological_quadruple,WHITEPAPER,derived,,,"{G,c,H0,Lambda} two-layer model",LANDMARK,,cosmology,,PAPER_2125,,,,,,WIRED
+b_crit_successor_identity,WHITEPAPER,derived,D_phys*(SO_5+1)*SO_5^12,D_PHYS*(SO_5+1)*SO_5**12,4.4e13 T,EXACT,0.0,high_energy,,PAPER_2126,,,,,,WIRED
+full_classification_certification,WHITEPAPER,derived,,,0 unclassified,LANDMARK,,methodology,,PAPER_2127,,,,,,WIRED
+successor_ratio_unmasking,WHITEPAPER,derived,(SO_5+1)/SO_5,1+F_TRZ,11/10,EXACT,0.0,foundations,,PAPER_2128,,,,,,WIRED
+k_b_phi_sector_rule,WHITEPAPER,derived,,,k_B 0.0011% + Phi_5/6 sector selection,LANDMARK,0.0011,thermodynamics,5/6-counting,PAPER_2129,,,,,,WIRED
+unified_registry_program_complete,WHITEPAPER,derived,,,"R0-R5, 2544 rows, 656 edges",LANDMARK,,infrastructure,,PAPER_2130,,,,,,WIRED
+alpha_s_precision_41x,WHITEPAPER,derived,F_TRZ*K_MEX*SSq kernel,,0.014%,PDG alpha_s(M_Z),0.014,particle_physics,,PAPER_2131,,,,,,WIRED
+vacuum_coupling_kernel_K,WHITEPAPER,derived,F_TRZ*K_MEX*SSq,F_TRZ*K_MEX*SSQ,19/160,EXACT,0.0,foundations,,PAPER_2132,,,,,,WIRED
+tilt_factorization_family,WHITEPAPER,derived,F_TRZ*Phi_5/6,F_TRZ*(D_BSFG-1)/D_BSFG,1/12,EXACT,0.0,foundations,5/6-counting,PAPER_2133,,,,,,WIRED
+phi_res_quadratic_grounding,WHITEPAPER,derived,1-(D_phys*F_TRZ)^2,1-(D_PHYS*F_TRZ)**2,21/25,EXACT,0.0,foundations,0.84-projection,PAPER_2134,,,,,,WIRED
+tilt_saturation_census,WHITEPAPER,derived,,,59/116 carriers,LANDMARK,,methodology,,PAPER_2135,,,,,,WIRED
+k2_over_q_primitive_lock,WHITEPAPER,derived,(D_phys-1)/(A_5*K_MEX),(D_PHYS-1)/(A_5*K_MEX),3/125,EXACT,0.0,planetary,,PAPER_2136,,,,,,WIRED
+kepler_frame_cadence_62,WHITEPAPER,derived,2*D_crit+SO_5,2*D_CRIT+SO_5,62,observation window 2.2%,2.2,temporal_cadence,,PAPER_2137,,,,,,WIRED
+halving_series_complete,WHITEPAPER,derived,integer/2 quartet,,"{2,3,5,13}",EXACT,0.0,foundations,,PAPER_2138,,,,,,WIRED
+f_trz_quartet_concentration,WHITEPAPER,derived,"F_TRZ^{2,4,10,12}",,quartet + 2.6e20 m,LANDMARK,0.0,buoyancy,,PAPER_2139,,,,,,WIRED
+bulk_rule4_cleanup_1280,WHITEPAPER,derived,,,"1,280 promotions",LANDMARK,,methodology,,PAPER_2140,,,,,,WIRED
+codata_g_elimination,WHITEPAPER,derived,,,1421 -> 0 literals,LANDMARK,,methodology,,PAPER_2141,,,,,,WIRED
+r91_four_sector_identity,WHITEPAPER,derived,1/(D_phys-2),1.0/(D_PHYS-2),0.5,EXACT,0.0,foundations,,PAPER_2142,,,,,,WIRED
+a5_over_dphys_15,WHITEPAPER,derived,A_5/D_phys,A_5/D_PHYS,15,EXACT,0.0,foundations,,PAPER_2143,,,,,,WIRED
+h0_route_upgrade_1573,WHITEPAPER,derived,A_5+SO_5,(A_5+SO_5)*1000/MPC,70 km/s/Mpc,local anchor 2.27e-18,0.0648,cosmology,,PAPER_2144,,,,,,WIRED
+friedmann_lock_walkback,WHITEPAPER,derived,,,WITHDRAWN by PAPER_2148,DISPOSITION,,cosmology,,PAPER_2145,,,,,,WIRED
+friedmann_arc_self_audit,WHITEPAPER,derived,,,codebase damage: 0,LANDMARK,,methodology,,PAPER_2146,,,,,,WIRED
+j_per_m3_native_discipline,WHITEPAPER,derived,,,13.4% rho_Lambda OPEN,LANDMARK,,foundations,,PAPER_2147,,,,,,WIRED
+ontology_declaration_answer_b,WHITEPAPER,derived,,,vacuum fundamental / mass-G-gravity emergent,LANDMARK,,foundations,,PAPER_2148,,,,,,WIRED
+hybrid_form_doctrine,WHITEPAPER,derived,,,3-condition test + 4-category taxonomy,LANDMARK,,methodology,,PAPER_2149,,,,,,WIRED
+fubi_fubii_two_tier,WHITEPAPER,derived,,,canonical + 176 projections / 11 domains,LANDMARK,,buoyancy,,PAPER_2150,,,,,,WIRED
+fubi_six_tier_cascade,WHITEPAPER,derived,,,6 tiers / 17 variants,LANDMARK,,buoyancy,,PAPER_2151,,,,,,WIRED
+buoyancy_provenance,WHITEPAPER,derived,,,7 descent points to 2025 sources,LANDMARK,,provenance,,PAPER_2152,,,,,,WIRED
+scm_ua_joint_engine,WHITEPAPER,derived,rho_SCm/rho_UA = F_TRZ,F_TRZ,0.1 LOCKED,EXACT,0.0,foundations,,PAPER_2153,,,,,,WIRED
+q_phonon_reduction,WHITEPAPER,derived,SO_5^2/D_phys^2 = 3*K_MEX,SO_5**2/D_PHYS**2,25/4,EXACT,0.0,foundations,,PAPER_2154,,,,,,WIRED
+d_gw_erosion_reduction,WHITEPAPER,derived,D_phys/D_BSFG,D_PHYS/D_BSFG,2/3,EXACT,0.0,gravitational_waves,,PAPER_2154,,,,,,WIRED
+s204_5_unit_tag_audit,WHITEPAPER,derived,,,933 papers by-reference,LANDMARK,,methodology,,PAPER_2155,,,,,,WIRED
+ratio_1894_artifact,WHITEPAPER,derived,,,935 papers -> F_TRZ=0.1,LANDMARK,,methodology,,PAPER_2156,,,,,,WIRED

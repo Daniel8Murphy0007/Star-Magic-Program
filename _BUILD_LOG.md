@@ -261,3 +261,6 @@ v0.378.0 (2026-08-15): bands 1911-1960 + F_TRZ = 1/SO_5 landmark (9 -> 8 primiti
 v0.379.0 (2026-08-15): THE PAPER_2000 MILESTONE - sequential drain 001-2000 complete + AUDIT_2000 + FULL STOP honored/authorized + bands 1961-2030 (70 dispatches); gate 5458/0; dispatches 2082; 23-file ship prep complete.
 
 v0.380.0 (2026-08-15): bands 2031-2080 - the architectural-category era (5 categories + audit nonet; canonical-anchored root + pi third canonical; U_i Path-B; Kerr 4-AGN family; 9-planet R_mag; solar core 3/2; CP2 opens); gate 5513/0; dispatches 2132; 23-file ship prep complete.
+
+## v0.381.0 — 2026-08-16
+THE CORPUS-COMPLETE SHIP. Drain 001-2156 done (RESERVED 1796-1799 excepted, census gate-pinned). 76 dispatches (bands 2081-2156). Gate 5,602/0. 23-file pass verified. End-of-drain audit next.

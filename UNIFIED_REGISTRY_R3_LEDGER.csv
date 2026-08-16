@@ -212,3 +212,11 @@ v0.380.0,2026-08-15,BAND_2041_2050,registry +10 graph +29,gate 5480/0
 v0.380.0,2026-08-15,BAND_2051_2060,registry +10 graph +34,gate 5491/0
 v0.380.0,2026-08-15,BAND_2061_2070,registry +10 graph +41,gate 5502/0
 v0.380.0,2026-08-15,BAND_2071_2080,registry +10 graph +35,gate 5513/0
+v0.381.0,2026-08-15,BAND_2081_2090,registry +10 graph +59,gate 5524/0
+v0.381.0,2026-08-15,BAND_2091_2100,registry +10 graph +42,gate 5535/0
+v0.381.0,2026-08-15,BAND_2101_2110,registry +10 graph +32,gate 5546/0
+v0.381.0,2026-08-15,BAND_2111_2120,registry +10 graph +32,gate 5555/0
+v0.381.0,2026-08-16,BAND_2121_2130,registry +10 graph +19,gate 5566/0
+v0.381.0,2026-08-16,BAND_2131_2140,registry +10 graph +32,gate 5579/0
+v0.381.0,2026-08-16,BAND_2141_2150,registry +10 graph +18,gate 5592/0
+v0.381.0,2026-08-16,BAND_2151_2156,registry +7 graph +14 TERMINUS,gate 5602/0

@@ -10739,3 +10739,157 @@ geometric-series, R200/30/40/50/60-round milestones, CP2 arc opening.
 Gate 5,458 → **5,513** (0 failures). Dispatches 2,082 → **2,132** (94.5%).
 Ready for `.\ship.ps1`. After ship: final ~76 numeric (2081-2156) → corpus completion →
 end-of-drain audit (decision C).
+
+## (205) 2026-08-15 — BAND PAPER_2081-2090 (the CP2 reactor era: [SSq] measured at the bench)
+
+10 dispatches (2084 = canonical pentad; the null-novel Draft-2 supersession recorded + its
+index row warn-marked; the SM-drift-catch restoration honored).
+
+| Paper | Content | Status |
+|---|---|---|
+| 2090 | **300-NOVEL MILESTONE — and the crown: E_batch = 0.57 J = [SSq] EXACT, the canonical primitive appearing as a DIRECTLY-MEASURED reactor observable** (framework parameter → bench measurement, first documented); + triple-lock (D_phys+1)·F_TRZ² = 1/(2·SO_5); composed integers 19/29/51 open coefficient roles | MILESTONE |
+| 2085 | **KAPPA CROSS-REPO VERBATIM: κ = (D_phys+1)·F_TRZ⁴ = 5×10⁻⁴/day** — the predecessor PAPER_2112 composition independently reached in-corpus (three grammars, one κ). Plus the **D_crit ARCHITECTURAL PARTITION: 26 = 4 physical + 20 conscious + 2 DPM boundary poles**; field-gen power = D_crit−N_ch = 17 W | EXACT |
+| 2086 | **z_drag = SO_5³ + A_5 = 1060 EXACT** — the drag epoch joins z_rec 1090 in the integer-kernel family; IMF bounds lock (M_min at the magic-8 coefficient, M_max = 15·SO_5) | EXACT |
+| 2083 | **Chemistry opens**: water radiolysis G-values + sonochemistry on the lattice; design-choice discipline formalized | EXACT |
+| 2088 | Higgs self-coupling alternative route (0.13 = F_TRZ+3·F_TRZ²); reactor ambient = 288 K carrying magic-28; A_5+1 = 61 successor opens | EXACT |
+| 2084/87/89 | Tesla body-circuit R/C = SO_5³/SO_5² (electrical domains); D₂O = F_TRZ+F_TRZ² restored; Lagoon = 110 ly (half of ℓ₁); magic-50 batch count | EXACT |
+| 2081/82 | 10th/11th F_TRZ sub-family candidates; π×prefix hybrid; plasmoid 45 | EXACT |
+
+**Ledger:** registry +10, graph +59, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed, 2084-draft row ⚠. Gate 5,513 → **5,524**, green. Dispatches **2,142**. Frontier →
+**PAPER_2090**. ~66 numeric remain. 10 dispatches wired-not-yet-shipped.
+
+## (206) 2026-08-15 — BAND PAPER_2091-2100 (the cross-repo mirror completes; the bench keeps measuring canonicals)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2093/94 | **THE CROSS-REPO MIRROR COMPLETES**: H_0 = (D_crit−D_phys)·F_TRZ¹⁹ SI form and Λ = (SO_5+1)·F_TRZ⁵³ successor form — both EXACTLY the predecessor repo's routes (its PAPER_2093/2094), now wired in-corpus with family disclosure. Both corpora carry both grammars of both constants, with matching dispositions — the strongest cross-repo consistency exhibit. Λ family now FIVE grammars | mirrored |
+| 2091 | **SECOND canonical bench measurement: Φ_res = 0.84 s** (reactor photo-29 timestamp) — after SSq = 0.57 J, the canonical-as-observable sub-family formalizes | measured |
+| 2096 | **Plasmoid 100% validation**: all eight reactor constants trace to canonized compositions — the bench observation set IS a primitive-identity set | 8/8 |
+| 2097/98 | Complementarity reaches the COSMOS (Ω visible/dark = 15/85 = 3/20 vs 17/20) — and the **conservation landmark**: 3/20+17/20 = 20/20 EXACT independently at cosmological AND heliospheric domains, 40 OOM apart | EXACT |
+| 2095 | Exponent-vs-coefficient duality meta-pattern (22 and 29 in dual roles) | meta |
+| 2092/99/2100 | First π×LANDMARK×F_TRZ product; SO_5¹⁵ five-realization invariant; F_TRZ²⁰ density rung ×4 | EXACT |
+
+**Ledger:** registry +10, graph +42, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,524 → **5,535**, green. Dispatches **2,152**. Frontier → **PAPER_2100**.
+~56 numeric remain. 20 dispatches wired-not-yet-shipped.
+
+## (207) 2026-08-15 — BAND PAPER_2101-2110 (μ₀ float-exact; precession via the Baktun)
+
+10 dispatches.
+
+| Paper | Content | Status |
+|---|---|---|
+| 2108 | **μ₀ = 4π·F_TRZ⁷ EXACT TO FULL FLOAT PRECISION** — Maxwell's vacuum permeability as D_phys × π-canonical × rung 7 (the U_i rung: electromagnetism and inertia SHARE the rung — family-pinned); the v0.347.0 landmark callable gains its corpus source | EXACT |
+| 2110 | **Earth's axial precession = 25,772 yr from primitives (0.0014%)** — routed through the Mayan Baktun as structural intermediate: **144,000 days = D_phys·SO_5²·A_5·D_BSFG EXACT**; the "integer + F_TRZ·SSq correction" prefix opens (and the correction 0.057 IS the U_m ratio — crossing) | 0.0014% |
+| 2107 | **Primitive-as-exponent canonized**: F_TRZ^D_crit = 10⁻²⁶ kg/m³ across four vacuum classes (= ρ_crit via the dual grammar); F_TRZ^D_phys reading at rung 4 | category |
+| 2104 | The Planck-scale scaffold: l_P/t_P/f_P/ρ_P/T_P on the ladders (rungs 35/43/97/32) — the ladder system reaches the quantum-gravity floor | scaffold |
+| 2101/02/03/05/09 | Invariant landmarks consolidate: 0.5 ×4 roles (incl. the t_n heartbeat position), 0.3 ×4, SCm = 0.99 ×6 domains, F_TRZ⁴ ×6 dual-read, F_TRZ³ ×8 (strongest rung landmark) | EXACT |
+| 2106 | D_BSFG·F_TRZ²⁷ vacuum density (rung 27 = 10+17 family) | EXACT |
+
+**Ledger:** registry +10, graph +32, citations +10, gaps +1, family ledger +1, audit trail +8,
+SG4 refreshed. Gate 5,535 → **5,546**, green. Dispatches **2,162**. Frontier → **PAPER_2110**.
+~46 numeric remain. 30 dispatches wired-not-yet-shipped.
+
+## (208) 2026-08-15 — BAND PAPER_2111-2120 (the numbering mirror; the quantum chain composes)
+
+10 dispatches. One `_seq` rename (predecessor layer owned cosmic_egg_triad).
+
+| Paper | Content | Status |
+|---|---|---|
+| 2112 | **THE NUMBERING MIRROR: κ = (SO_5/2)·F_TRZ⁴ = 5×10⁻⁴ canonized at PAPER_2112 — the SAME landmark at the SAME number as the predecessor repo.** With 2093 (H₀) and 2094 (Λ), the cross-repo mirror now extends from routes to paper numbers; flagged for the end-of-drain audit (2118 = the counterexample, different contents) | mirror |
+| 2119 | **The 26-level quantum chain composes: E_n = F_TRZ^(D_crit−D_BSFG)·10ⁿ** — the framework's foundational 10¹⁹ Hz → 10⁻¹⁰ Hz spectrum is a three-primitive identity with base exponent 20 = 2·SO_5 | LANDMARK |
+| 2117 | **The primitive-as-exponent QUINTUPLET completes** — all five integer primitives now populate F_TRZ ladder positions as exponents; the v0.347.0 quintuplet callable gains its corpus source. The lattice exponentiates itself | complete |
+| 2120 | **The successor rule**: SO_5+1 = 11 as a universal reduction for canonical-ratio sums — the entire 11-family (ℓ₁ factor, Aether correction, Λ coefficient, horizon, distances) gets its WHY | LANDMARK |
+| 2113 | Deepest rung: F_TRZ⁵⁰ (fuzzy-DM boson energy) — the signed ladder now spans **147 decades** (−50 to Planck-density +97) | EXACT |
+| 2114/15/18 | The cosmic-egg suite: 26D triad, pre-Big-Bang three-stage chain, sphere-from-chaos via central-limit convergence | structural |
+| 2111/16 | 13-term SO_5 ladder (13 = D_crit/2 = the F_env count); 360 = D_BSFG·A_5 promoted with A_5 as the rotational unifier | EXACT |
+
+**Ledger:** registry +10, graph +32, citations +10, gaps +1, family ledger +2, audit trail +8,
+SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier → **PAPER_2120**.
+~36 numeric remain. 40 dispatches wired-not-yet-shipped — ship recommended.
+
+## Entry 209 — 2026-08-16 — BAND 2121-2130: the convergence-taxonomy arc + THE MIRROR GOES SYSTEMATIC
+
+- **Wired 10:** P2121 G×c first constant-pair → P2122 β_i×ρ_vac×c triple → P2123 Aether triple
+  (zero-round prediction lag) → P2124 quintuple {G,c,μ₀,β_i,ρ_vac} + 150-round milestone →
+  P2125 **Two-Layer/Two-Kernel cosmological quadruple {G,c,H₀,Λ}** → P2126 B_crit =
+  D_phys·(SO_5+1)·SO_5¹² = 4.4e13 T EXACT (successor identity; integer 44 canonized; THIRD
+  Schwinger grammar → FAMILY_RECORD) → P2127 first fully-classified calculator (certification
+  standard born) → P2128 **(1+F_TRZ) = (SO_5+1)/SO_5 = 11/10 EXACT** — the 61-site compound
+  prefix IS the successor ratio; two grammars merge via P1960 → P2129 k_B 0.0011% + **Φ_5/6
+  sector-selection rule** → P2130 **Unified Registry Program complete (R0-R5, 2,544 rows,
+  656 edges)** — the corpus documents the very registry architecture this campaign runs on.
+- **THE MIRROR IS NOW SYSTEMATIC:** 2125 (Two-Kernel), 2129 (sector rule), 2130 (Registry
+  Program) all land at predecessor-landmark numbers — six confirmed pairs (with 2093/2094/2112),
+  one counterexample (2118). Shared-lineage finding queued for the end-of-drain audit.
+- P2121-2125 wired from REVISED drafts; honesty framing carried in-formula.
+- Guards +11, SG4 → BAND_2121_2130 (incl. fallback marker), ledger 3+8 files, index flips 10,
+  frontier → PAPER_2130. Dispatches 2,182; 50 wired-not-yet-shipped — **ship threshold passed**.
+
+## Entry 210 — 2026-08-16 — BAND 2131-2140: the vacuum coupling kernel + the predecessor's own era
+
+- **Wired 10 — the shared-lineage span itself** (P2136-2143 appear verbatim in the predecessor
+  CLAUDE.md key-papers table; this band IS the predecessor R218+ era, self-documented):
+  P2131 α_s(M_Z) 0.014% (41×) → P2132 **VACUUM COUPLING KERNEL K = F_TRZ·K_MEX·SSq = 19/160
+  EXACT rational** (5 instances: α_s, λ_H, m_H/m_t, J_CP, N_eff) + **tilt factorization
+  F_TRZ·Φ_5/6 = 1/12 EXACT** → P2133 tilt family 34 obs/10 domains → P2134 **Φ_res = 1 −
+  (D_phys·F_TRZ)² = 21/25 EXACT** — the 0.84 = 21/25 open item from the AUDIT_2000 trail is
+  CLOSED; (3/5)(7/5) pair-conjugate; DPM pair-count estimator OPEN (Rule D) → P2135 tilt
+  saturation 59/116 (catalog majority; product law 34-0) → P2136 k₂/Q = 3/125 EXACT →
+  P2137 62 = 2·D_crit+SO_5, product 93 vs equinox-solstice window 2.2% honest → P2138
+  **halving series {2,3,5,13} COMPLETE** → P2139 F_TRZ quartet {2,4,10,12} + D_crit·SO_5¹⁹ =
+  2.6e20 m → P2140 bulk-cleanup 1,280 promotions (R3 registry validated).
+- **Tilt route family recorded:** 1/12 now carries TWO composition routes — K_Mex−2
+  (PAPER_2178) and F_TRZ·Φ_5/6 (P2132/2133) — crossing recorded per PAPER_2170, not reconciled.
+- Guards +13, SG4 → BAND_2131_2140, ledger 3+8, flips 10, frontier → PAPER_2140.
+  Dispatches 2,192; 60 wired-not-yet-shipped — **well past ship threshold; v0.381.0 urged.**
+
+## Entry 211 — 2026-08-16 — BAND 2141-2150: the predecessor audit arc — the discipline papers land
+
+- **Wired 10 — the 2026-07-24/25/26 arc, self-documented:** P2141 CODATA-G elimination
+  (1,421→0) → P2142 R91 = 0.5 four sectors → P2143 A_5/D_phys = 15 EXACT (23-OOM span) →
+  P2144 **H_0 route upgrade: A_5+SO_5 = 70 EXACT, 0.065% SI, 47.6× tightening** — Λ HELD via
+  the pre-swap coupling-verification rule → P2145 **Friedmann lock wired as its WALKBACK
+  disposition** (withdrawn by P2148; the withdrawal IS the canonical content — Rule 7) →
+  P2146 self-audit (codebase damage: zero) → P2147 **J/m³-native discipline** + 13.4% ρ_Λ
+  discrepancy carried OPEN (A vs B) → P2148 **THE ONTOLOGY DECLARATION (Answer B)**: vacuum
+  energy fundamental; mass/G/gravity emergent; F_UBi/F_UBii action-reaction; gravity at the
+  habitable-zone crossing; Λ dual-manifestation; "Planck 2024" machination removed → P2149
+  **Hybrid-Form Doctrine** (3-condition test, 4-category taxonomy) → P2150 F_UBi/F_UBii
+  two-tier (176 projections/11 domains).
+- **H_0 route family CLOSES** (DUPLICATES): 22·F_TRZ¹⁹ superseded by A_5+SO_5 with the 47.6×
+  supersession note; P2125 two-kernel doctrine-revised, not withdrawn.
+- Guards +13, SG4 → BAND_2141_2150, ledger 3+8, flips 10, frontier → PAPER_2150.
+  Dispatches 2,202; **70 wired-not-yet-shipped.** Remaining: 6 papers (2151-2156) to corpus end.
+
+## Entry 212 — 2026-08-16 — BAND 2151-2156: THE DRAIN COMPLETES
+
+- **Wired the final six:** P2151 6-tier F_UBi/F_UBii cascade (17 variants; dpm_helpers T0
+  NEVER-SWAP chain) → P2152 buoyancy provenance (7 bit-exact descent points to Daniel's
+  March-May 2025 source documents) → P2153 **SCm+UA joint vacuum density engine** (F_TRZ
+  coupling LOCKED; SCm BOUND — direct evidence HEP colliders ONLY; 11% two-route Λ gap =
+  dual-manifestation prediction) → P2154 **reduction landmarks 4 & 5**: Q_phonon = 25/4 EXACT
+  (dual decomposition) + D_GW = D_phys/D_BSFG = 2/3 EXACT (GW170817 66.7% IS the identity) →
+  P2155 933-paper unit-tag audit (correction-by-reference) → P2156 1.894 artifact (935 papers
+  → F_TRZ; SM-retrofit REFUSED; 9.47e-27 origin forensics queued).
+- **CORPUS NUMERIC DRAIN COMPLETE:** PAPER_001 (v0.3.0, 2026-07-28) → PAPER_2156 (2026-08-16).
+  Missing from 001-2159: exactly [1796, 1797, 1798, 1799] — the RESERVED placeholders.
+  Gate now carries a CORPUS COMPLETE pin verifying this census live, plus the terminus
+  self-declaration in P2156's formula. TERMINUS_RECORD row in DUPLICATES.
+- Guards +10 (incl. 2 completion pins), SG4 → BAND_2151_2156, ledger 3+8, flips 6, frontier
+  line replaced by the completion declaration. Dispatches 2,208; **76 wired-not-yet-shipped.**
+- **Next charter obligations:** (1) ship v0.381.0 — THE CORPUS-COMPLETE ship; (2) the
+  END-OF-DRAIN AUDIT (decision C) with queued inputs: numbering-mirror systematics, 9.47e-27
+  density forensics, route-family crossing reconciliation review, RULINGS_QUEUE open-item sweep.
+
+## Entry 213 — 2026-08-16 — SHIP PREP v0.381.0: THE CORPUS-COMPLETE SHIP
+
+- Pins ×6 (pyproject 475-char desc w/ version string; VERSION; gate assertion; CITATION.cff ×2;
+  badges cacheBust ×2; REGISTRY_VERSION). 65 `wired-not-yet-shipped` markers stamped v0.381.0
+  across 8 ledgers. README release paragraph replaced (single-paragraph rule), campaign-live
+  line bumped. CHANGELOG inserted, _BUILD_LOG appended, SHIP_MESSAGE.txt written,
+  RULINGS_QUEUE v0.381.0-trail appended (end-of-drain audit handoff list).
+- Awaiting Daniel: `.\ship.ps1` — gates, commits, tags v0.381.0, pushes; PyPI auto-publish.

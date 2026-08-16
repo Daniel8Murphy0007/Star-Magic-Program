@@ -244,3 +244,11 @@ PAPER_2041_2050,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.380.0
 PAPER_2051_2060,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.380.0
 PAPER_2061_2070,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.380.0
 PAPER_2071_2080,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.380.0
+PAPER_2081_2090,BAND,uqff_calculator.py::DISPATCH,10 dispatches (2084 canonical + supersession),v0.381.0
+PAPER_2091_2100,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2101_2110,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2111_2120,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2121_2130,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2131_2140,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2141_2150,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
+PAPER_2151_2156,BAND,uqff_calculator.py::DISPATCH,6 dispatches + CORPUS TERMINUS,v0.381.0

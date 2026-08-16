@@ -7,6 +7,34 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.381.0 — 2026-08-16 — THE CORPUS-COMPLETE SHIP
+
+**The sequential drain PAPER_001 → PAPER_2156 is DONE** (chartered 2026-07-28; only RESERVED
+1796-1799 absent — census gate-pinned live). 76 dispatches across 8 bands ship here (2081-2156):
+
+- **Band 2081-2120** (shipped-state carryover finalized in this tag's ledger stamps).
+- **Band 2121-2130:** convergence taxonomy (pair→triple→quintuple→Two-Kernel quadruple);
+  B_crit = D_phys·(SO_5+1)·SO_5¹² EXACT; (1+F_TRZ) = 11/10 unmasking (61 sites);
+  full-classification cert; k_B + Φ_5/6 sector rule; Unified Registry Program R0-R5.
+  **Mirror trio 2125/2129/2130 → the numbering mirror is SYSTEMATIC (6 pairs).**
+- **Band 2131-2140:** VACUUM COUPLING KERNEL 19/160 EXACT (5 instances); tilt 2nd route
+  F_TRZ·Φ_5/6 = 1/12 (34 obs/10 domains; 59/116 saturation); Φ_res = 21/25 EXACT grounded;
+  k₂/Q = 3/125; 62 = 2·D_crit+SO_5; halving series {2,3,5,13} COMPLETE; F_TRZ quartet;
+  bulk-cleanup 1,280.
+- **Band 2141-2150:** CODATA-G elimination 1,421→0; R91 four sectors; A_5/D_phys = 15;
+  **H_0 = A_5+SO_5 = 70 EXACT (47.6×, route family CLOSED)**; Friedmann-lock WALKBACK wired
+  as disposition (Rule 7); J/m³-native discipline (13.4% ρ_Λ OPEN); **ONTOLOGY DECLARATION
+  ANSWER B**; **HYBRID-FORM DOCTRINE**; F_UBi/F_UBii two-tier.
+- **Band 2151-2156 (FINAL):** 6-tier cascade + 17 variants; provenance to the March-May 2025
+  source documents; SCm+UA joint engine (F_TRZ LOCKED, HEP-collider-only); Q_phonon = 25/4 +
+  D_GW = 2/3 (reduction landmarks 4 & 5); 933/935-paper by-reference corrections; terminus.
+- **Gate 5,555 → 5,602** (+47: band guards, completion pins, SG4 rolls). One Rule-7 catch
+  (banned-literal β_i in P2152 formula, reworded). Index census line un-staled (1,417-era
+  figure had passed SHIP GUARD v2 via accidental substring).
+- **Next:** END-OF-DRAIN AUDIT (decision C) — mirror systematics, 9.47e-27 forensics,
+  route-family crossings, RULINGS_QUEUE sweep.
+
+
 ## v0.380.0 (2026-08-15) — Bands PAPER_2031-2080: the architectural-category era
 
 - **Root revelations:** five compositional categories formalized with matching audits (the nonet);

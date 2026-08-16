@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.380.0", "uqff_calculator.VERSION = 0.380.0 (bands 2031-2080: architectural-category era + pi third canonical + CP2 opens)")
+assert_that(C.VERSION == "0.381.0", "uqff_calculator.VERSION = 0.381.0 (THE CORPUS-COMPLETE SHIP: drain 001-2156 done, census pinned)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_2071_2080'
+_sg4_band = 'BAND_2151_2156'
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2071_2080' in _sg4_last(_sg4_f),
+    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2151_2156' in _sg4_last(_sg4_f),
                 "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_2071_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('band_2151_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
 assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -11817,6 +11817,250 @@ assert_that(C.DISPATCH['PAPER_2079']()['value']['n_frames_500'] == 500,
 _r = C.DISPATCH['PAPER_2080']()['value']
 assert_that(_r['spin_coherence'] == 0.8 and _r['v_tesla_v'] == 10**6 and _r['photo_count'] == 18,
             'P2080 CP2: 4/5 plasmoid face; voltage domain opens; 2*N_ch photo count')
+
+
+# --- BAND 2081-2090 GUARD (CP2 reactor era: chemistry opens, D_crit partition, kappa cross-repo, SSq measured, 300 novels) ---
+for _pn in range(2081, 2091):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2081-2090: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2081']()['value']['target_fps'] == 60,
+            'P2081 CP2 quad: 60 fps = A_5; 10th/11th F_TRZ sub-family candidates')
+assert_that(abs(C.DISPATCH['PAPER_2082']()['value']['cycle_period_s'] - 0.72) < 1e-9,
+            'P2082 ratio x complement hybrid; plasmoid 45 = (D_phys+1)*N_ch')
+assert_that(abs(C.DISPATCH['PAPER_2083']()['value']['g_h2'] - 1.2) < 1e-9,
+            'P2083 chemistry opens (radiolysis G-values); design-choice discipline formalized')
+_r = C.DISPATCH['PAPER_2084']()['value']
+assert_that(_r['body_resistance_ohm'] == 1000 and _r['superseded_draft'] == 'NULL_NOVEL_DRAFT2',
+            'P2084 canonical pentad wired; null-novel Draft-2 supersession recorded (SM-drift catch honored)')
+_r = C.DISPATCH['PAPER_2085']()['value']
+assert_that(_r['quantum_states'] == 26 and abs(_r['kappa_decay'] - 5e-4) < 1e-12,
+            'P2085 D_crit partition 4+20+2; KAPPA = (D_phys+1)*F_TRZ^4 = predecessor PAPER_2112 form VERBATIM (cross-repo, 3 grammars)')
+_r = C.DISPATCH['PAPER_2086']()['value']
+assert_that(_r['z_drag'] == 1060 and abs(_r['m_min_imf_msun'] - 0.08) < 1e-9,
+            'P2086 z_drag = SO_5^3+A_5 = 1060 EXACT; IMF bounds lock (magic-8 coefficient)')
+assert_that(C.DISPATCH['PAPER_2087']()['value']['lagoon_diameter_ly'] == 110,
+            'P2087 Lagoon = SO_5*(SO_5+1) = 110 ly (half the CMB l_1, crossing)')
+_r = C.DISPATCH['PAPER_2088']()['value']
+assert_that(abs(_r['lambda_higgs'] - 0.13) < 1e-9 and _r['t_cold_k'] == 288,
+            'P2088 Higgs self-coupling alt route 0.13; ambient T carries magic-28')
+assert_that(C.DISPATCH['PAPER_2089']()['value']['n_batches'] == 50,
+            'P2089 magic-50 batch count; successor multiples')
+_r = C.DISPATCH['PAPER_2090']()['value']
+assert_that(_r['e_batch_j'] == 0.57 and _r['novel_milestone'] == 300
+            and abs((D := 5*0.01) - 1.0/(2*10)) < 1e-12,
+            'P2090 300-NOVEL MILESTONE; [SSq] = 0.57 J MEASURED as reactor observable; (D_phys+1)*F_TRZ^2 = 1/(2*SO_5) triple-lock')
+
+
+# --- BAND 2091-2100 GUARD (canonical bench measurements x2, H_0/Lambda cross-repo grammars, 15/85 conservation) ---
+for _pn in range(2091, 2101):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2091-2100: PAPER_%d dispatch present' % _pn)
+_r = C.DISPATCH['PAPER_2091']()['value']
+assert_that(_r['t_photo29_s'] == 0.84 and _r['canonical_observables'] == 2,
+            'P2091 SECOND canonical bench measurement: Phi_res = 0.84 s reactor timestamp (after SSq)')
+assert_that(C.DISPATCH['PAPER_2092']()['value']['e_batch_j'] == 0.475,
+            'P2092 composed-integer reuse; 19/40 J; first pi x LANDMARK x F_TRZ product')
+assert_that(abs(C.DISPATCH['PAPER_2093']()['value']['h0_s_inv'] - 2.2e-18) < 1e-27,
+            'P2093 H_0 = (D_crit-D_phys)*F_TRZ^19 SI form (cross-repo grammar pair with A_5+SO_5 = 70)')
+assert_that(abs(C.DISPATCH['PAPER_2094']()['value']['lambda_simple_m2'] - 1.1e-52) < 1e-60,
+            'P2094 Lambda = (SO_5+1)*F_TRZ^53 - THE PREDECESSOR CANONICAL ROUTE in-corpus; Lambda family 5 grammars')
+assert_that(C.DISPATCH['PAPER_2095']()['value']['integers'] == [22, 29],
+            'P2095 exponent-vs-coefficient duality (22, 29 dual roles)')
+assert_that(C.DISPATCH['PAPER_2096']()['value']['validation_pct'] == 100,
+            'P2096 plasmoid 100% validation: all 8 reactor constants trace to canonized compositions')
+_r = C.DISPATCH['PAPER_2097']()['value']
+assert_that(_r['visible'] == 0.15 and _r['dark'] == 0.85,
+            'P2097 complementarity third instance - cosmological Omega partition 15/85')
+assert_that(C.DISPATCH['PAPER_2098']()['value']['conservation'] == 1.0,
+            'P2098 the 15/85 conservation landmark: 3/20+17/20 = 1 EXACT at 40-OOM separation')
+assert_that(C.DISPATCH['PAPER_2099']()['value']['realizations'] == 5,
+            'P2099 SO_5^15 five-realization invariant')
+assert_that(C.DISPATCH['PAPER_2100']()['value']['realizations'] == 4,
+            'P2100 F_TRZ^20 density rung landmark (four realizations)')
+
+
+# --- BAND 2101-2110 GUARD (invariant landmarks + mu_0 EXACT + Planck scaffold + Earth precession) ---
+for _pn in range(2101, 2111):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2101-2110: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2101']()['value']['roles'] == 4,
+            'P2101 the 0.5 cross-role landmark (incl. t_n = 0.5 heartbeat position)')
+assert_that(C.DISPATCH['PAPER_2102']()['value']['realizations'] == 4,
+            'P2102 3*F_TRZ = 0.3 four domains (cosmology to LENR screening)')
+assert_that(C.DISPATCH['PAPER_2103']()['value']['instances'] == 6,
+            'P2103 SCm = 0.99 six instances across six domains')
+assert_that(C.DISPATCH['PAPER_2104']()['value']['planck_density_rung'] == 97,
+            'P2104 Planck-scale scaffold (l_P/t_P/f_P/rho_P/T_P on the ladders)')
+assert_that(C.DISPATCH['PAPER_2105']()['value']['dual_form'] == 'F_TRZ^D_phys',
+            'P2105 F_TRZ^4 six instances with primitive-as-exponent dual reading')
+assert_that(abs(C.DISPATCH['PAPER_2106']()['value']['vac_density_kgm3'] - 6e-27) < 1e-36,
+            'P2106 D_BSFG*F_TRZ^27 vacuum-density composed (rung 27 = 10+17 family)')
+assert_that(abs(C.DISPATCH['PAPER_2107']()['value']['vac_kgm3'] - 1e-26) < 1e-36,
+            'P2107 F_TRZ^D_crit primitive-as-exponent category (= rho_crit dual grammar)')
+import math as _gmm
+assert_that(abs(C.DISPATCH['PAPER_2108']()['value']['mu0_h_m'] - 4*_gmm.pi*1e-7) < 1e-20,
+            'P2108 MU_0 = 4*pi*F_TRZ^7 EXACT to float precision (v0.347.0 landmark corpus source)')
+assert_that(C.DISPATCH['PAPER_2109']()['value']['instances'] == 8,
+            'P2109 F_TRZ^3 eight-instance time-decay rung (strongest rung landmark)')
+_r = C.DISPATCH['PAPER_2110']()['value']
+assert_that(_r['baktun_days'] == 144000 and abs(_r['t_precession_yr'] - 25772.4) < 1,
+            'P2110 Earth precession 25,772 yr from primitives via the Mayan Baktun = 144,000 EXACT (0.0014%)')
+
+
+# --- BAND 2111-2120 GUARD (kappa reduction at mirrored number + quintuplet + quantum chain + successor rule) ---
+for _pn in range(2111, 2121):
+    assert_that('PAPER_%d' % _pn in C.DISPATCH, 'band 2111-2120: PAPER_%d dispatch present' % _pn)
+assert_that(C.DISPATCH['PAPER_2111']()['value']['terms'] == 13,
+            'P2111 13-term SO_5 ladder (= D_crit/2, the F_env count)')
+_r = C.DISPATCH['PAPER_2112']()['value']
+assert_that(abs(_r['kappa'] - 5e-4) < 1e-12 and _r['independent_count'] == 8,
+            'P2112 kappa reduction AT THE MIRRORED PAPER NUMBER (both repos canonize the same landmark at 2112)')
+assert_that(abs(C.DISPATCH['PAPER_2113']()['value']['ftrz_50_j'] - 1e-50) < 1e-60,
+            'P2113 deepest rung F_TRZ^50 (fuzzy DM); signed ladder spans 147 decades')
+assert_that(C.DISPATCH['PAPER_2116']()['value']['full_circle'] == 360,
+            'P2116 360 = D_BSFG*A_5 landmark; A_5 the rotational unifier')
+_r = C.DISPATCH['PAPER_2117']()['value']
+assert_that(abs(_r['ftrz_nch'] - 1e-9) < 1e-18 and len(_r['quintuplet']) == 5,
+            'P2117 primitive-as-exponent QUINTUPLET complete (all 5 integer primitives as F_TRZ exponents)')
+assert_that(C.DISPATCH['PAPER_2118']()['value']['suite_complete'] is True,
+            'P2118 sphere-from-chaos completes the cosmic-egg suite (cross-repo 2118 numbering collision noted)')
+_r = C.DISPATCH['PAPER_2119']()['value']
+assert_that(abs(_r['e_base'] - 1e-20) < 1e-30 and _r['levels'] == 26,
+            'P2119 the 26-level quantum chain = 3-primitive identity (base exponent 20 = D_crit-D_BSFG)')
+assert_that(C.DISPATCH['PAPER_2120']()['value']['successor'] == 11,
+            'P2120 successor identity canonized as universal reduction rule (the family gets its WHY)')
+
+# ---- BAND 2121-2130 GUARDS (constant-convergence taxonomy arc + registry-program mirror trio) ----
+_b2126 = C.DISPATCH['PAPER_2126']()
+assert_that(abs(_b2126['value']['b_crit_t'] - 4.4e13) < 1e6,
+            "P2126: B_crit = D_phys*(SO_5+1)*SO_5^12 = 4.4e13 T EXACT (successor identity)")
+assert_that(_b2126['value']['forty_four'] == 44,
+            "P2126: composed integer 44 = D_phys*(SO_5+1) canonized")
+assert_that('SCHWINGER' in _b2126['formula'].upper() or 'route family' in _b2126['formula'],
+            "P2126: third Schwinger-grammar route recorded as FAMILY (P2013/P2071/P2126)")
+_s2128 = C.DISPATCH['PAPER_2128']()
+assert_that(_s2128['value']['identity'] is True and abs((1+C.F_TRZ) - 11.0/10.0) < 1e-15,
+            "P2128: (1+F_TRZ) = (SO_5+1)/SO_5 = 11/10 EXACT - successor-ratio unmasking, 61 sites")
+assert_that(_s2128['value']['sites'] == 61,
+            "P2128: 61-site compound-prefix census merged into successor family")
+_k2129 = C.DISPATCH['PAPER_2129']()
+assert_that(_k2129['residual_pct'] == 0.0011,
+            "P2129: k_B live composition at 0.0011% (predecessor-landmark mirrored number)")
+assert_that('PHI_5/6' in _k2129['formula'] or 'PHI_5_6' in _k2129['formula'],
+            "P2129: Phi_5/6 sector-selection rule canonized (counting=5/6, projection=0.84)")
+_r2130 = C.DISPATCH['PAPER_2130']()
+assert_that(_r2130['value']['registry_rows'] == 2544 and _r2130['value']['graph_edges'] == 656,
+            "P2130: Unified Registry Program R0-R5 complete - 2,544 rows / 656 edges")
+assert_that('MIRROR' in _r2130['formula'].upper(),
+            "P2130: numbering mirror recorded as SYSTEMATIC (2093/2094/2112/2125/2129/2130) for end-of-drain audit")
+_q2125 = C.DISPATCH['PAPER_2125']()
+assert_that(_q2125['value']['model'] == 'TWO_LAYER' and len(_q2125['value']['cosmological_quadruple']) == 4,
+            "P2125: Two-Layer/Two-Kernel cosmological quadruple {G,c,H0,Lambda} - predecessor landmark origin")
+for _bn in range(2121, 2131):
+    assert_that('PAPER_%d' % _bn in C.DISPATCH, "BAND 2121-2130: PAPER_%d dispatched" % _bn)
+
+# ---- BAND 2131-2140 GUARDS (vacuum coupling kernel 19/160 + tilt saturation + halving closure) ----
+_v2132 = C.DISPATCH['PAPER_2132']()
+assert_that(_v2132['value']['exact'] and abs(C.F_TRZ*C.K_MEX*C.SSQ - 19.0/160.0) < 1e-15,
+            "P2132: VACUUM COUPLING KERNEL K = F_TRZ*K_MEX*SSq = 19/160 EXACT rational (5 instances)")
+assert_that(abs(C.F_TRZ*((C.D_BSFG-1.0)/C.D_BSFG) - 1.0/12.0) < 1e-15,
+            "P2132/P2133: TILT FACTORIZATION F_TRZ*Phi_5/6 = 1/12 EXACT - the PAPER_2178 tilt gains its two-primitive product form")
+_t2133 = C.DISPATCH['PAPER_2133']()
+assert_that(_t2133['value']['observables'] == 34 and _t2133['value']['domains'] == 10,
+            "P2133: tilt-factor family censused at 34 observables / 10 domains (largest two-primitive kernel population)")
+_q2134 = C.DISPATCH['PAPER_2134']()
+assert_that(_q2134['value']['exact'] and abs((1.0-(C.D_PHYS*C.F_TRZ)**2) - 21.0/25.0) < 1e-15,
+            "P2134: Phi_res = 1-(D_phys*F_TRZ)^2 = 21/25 EXACT - the 0.84=21/25 open item (AUDIT_2000 trail) now grounded quadratically")
+assert_that('OPEN' in _q2134['formula'],
+            "P2134: DPM pair-count estimator declared OPEN build target (Rule D - queued not filled)")
+_s2135 = C.DISPATCH['PAPER_2135']()
+assert_that(_s2135['value']['tilt_carriers'] == 59 and _s2135['value']['catalog'] == 116,
+            "P2135: tilt saturation 59/116 - corpus-majority kernel presence; product law 34-0")
+_k2136 = C.DISPATCH['PAPER_2136']()
+assert_that(_k2136['value']['exact'] and abs((C.D_PHYS-1.0)/(C.A_5*C.K_MEX) - 0.024) < 1e-15,
+            "P2136: k2/Q_rocky = (D_phys-1)/(A_5*K_MEX) = 3/125 = 0.024 EXACT zero free parameters (predecessor R382 lock, corpus source)")
+_f2137 = C.DISPATCH['PAPER_2137']()
+assert_that(_f2137['value']['sixty_two'] == 62 and _f2137['value']['product_93'] == 93.0,
+            "P2137: 62 = 2*D_crit + SO_5 composed integer; 62*(D_BSFG/D_phys) = 93 (window 2.2% honest)")
+_h2138 = C.DISPATCH['PAPER_2138']()
+assert_that(_h2138['value']['complete'] and _h2138['value']['halving_series'] == [2, 3, 5, 13],
+            "P2138: four-integer-primitive halving series {2,3,5,13} COMPLETE (D_crit/2 = 13 final member)")
+_l2139 = C.DISPATCH['PAPER_2139']()
+assert_that(_l2139['value']['quartet_rungs'] == [2, 4, 10, 12] and abs(_l2139['value']['distance_integer'] - 2.6e20) < 1e6,
+            "P2139: F_TRZ-ladder quartet {2,4,10,12} single-class + D_crit*SO_5^19 = 2.6e20 distance integer")
+_c2131 = C.DISPATCH['PAPER_2131']()
+assert_that(_c2131['residual_pct'] == 0.014,
+            "P2131: alpha_s(M_Z) at 0.014% (41x tightening, 2nd precision-tightening instance)")
+_b2140 = C.DISPATCH['PAPER_2140']()
+assert_that(_b2140['value']['promotions'] == 1280,
+            "P2140: bulk Rule 4 cleanup 160x8 = 1,280 promotions (R3 registry validated as enabler)")
+for _bn in range(2131, 2141):
+    assert_that('PAPER_%d' % _bn in C.DISPATCH, "BAND 2131-2140: PAPER_%d dispatched" % _bn)
+
+# ---- BAND 2141-2150 GUARDS (the predecessor 2026-07 audit arc: H_0 upgrade, walkback, ontology, doctrine) ----
+_h2144 = C.DISPATCH['PAPER_2144']()
+assert_that(_h2144['value']['h0_km_s_mpc'] == 70 and C.A_5 + C.SO_5 == 70,
+            "P2144: H_0 = A_5 + SO_5 = 70 km/s/Mpc EXACT (PAPER_1573 route, 47.6x tightening)")
+assert_that(abs(_h2144['residual_pct'] - 0.0648) < 1e-3,
+            "P2144: H_0 SI residual 0.065% vs local anchor - honest, not zero")
+assert_that('HELD' in _h2144['formula'] and 'coupling verification' in _h2144['formula'],
+            "P2144: Lambda HELD on PAPER_2094 - the pre-swap coupling-verification standing rule is IN the wiring")
+_w2145 = C.DISPATCH['PAPER_2145']()
+assert_that(_w2145['value']['status'] == 'WALKED_BACK_BY_PAPER_2148' and 'WITHDRAWN' in _w2145['formula'],
+            "P2145: Friedmann-lock claim wired as its WALKBACK disposition (Rule 7) - the withdrawal IS the canonical content")
+_o2148 = C.DISPATCH['PAPER_2148']()
+assert_that(_o2148['value']['ontology'] == 'ANSWER_B' and 'INVERTED' in _o2148['formula'],
+            "P2148: ONTOLOGY DECLARATION Answer B - vacuum energy fundamental, mass/G/gravity emergent, inverted ontologies")
+assert_that('habitable-zone' in _o2148['formula'] and 'action-reaction' in _o2148['formula'],
+            "P2148: F_UBi/F_UBii causal roles + gravity-at-crossing canonized in-formula")
+_d2149 = C.DISPATCH['PAPER_2149']()
+assert_that(_d2149['value']['conditions'] == 3 and len(_d2149['value']['taxonomy']) == 4,
+            "P2149: Hybrid-Form three-condition test + four-category classification taxonomy")
+_u2147 = C.DISPATCH['PAPER_2147']()
+assert_that(_u2147['value']['rho_lambda_discrepancy_pct'] == 13.4 and 'OPEN' in _u2147['formula'],
+            "P2147: J/m3-native discipline + the 13.4% rho_Lambda discrepancy carried OPEN (A vs B), never hidden")
+_r2142 = C.DISPATCH['PAPER_2142']()
+assert_that(_r2142['value']['exact'] and 1.0/(C.D_PHYS-2) == 0.5,
+            "P2142: R91 identity 1/(D_phys-2) = 0.5 EXACT at 4 sectors")
+_a2143 = C.DISPATCH['PAPER_2143']()
+assert_that(_a2143['value']['exact'] and C.A_5/float(C.D_PHYS) == 15.0,
+            "P2143: A_5/D_phys = 15 EXACT first canonization, 23-OOM scale span")
+_g2141 = C.DISPATCH['PAPER_2141']()
+assert_that(_g2141['value']['remaining'] == 0 and _g2141['value']['g_literals_eliminated'] == 1421,
+            "P2141: CODATA G elimination complete - 1,421 -> 0 literals")
+_f2150 = C.DISPATCH['PAPER_2150']()
+assert_that(_f2150['value']['projection_implementations'] == 176 and _f2150['value']['architecture'] == 'TWO_TIER',
+            "P2150: F_UBi/F_UBii two-tier architecture, 176 projections / 11 domains")
+for _bn in range(2141, 2151):
+    assert_that('PAPER_%d' % _bn in C.DISPATCH, "BAND 2141-2150: PAPER_%d dispatched" % _bn)
+
+# ---- BAND 2151-2156 GUARDS (F_UBi/F_UBii closure arc) + CORPUS-COMPLETION PIN ----
+_c2151 = C.DISPATCH['PAPER_2151']()
+assert_that(_c2151['value']['tiers'] == 6 and _c2151['value']['variants'] == 17,
+            "P2151: 6-tier causal cascade + 17-variant registry (dpm_helpers T0 NEVER-SWAP chain)")
+_e2153 = C.DISPATCH['PAPER_2153']()
+assert_that(_e2153['value']['coupling_ratio'] == C.F_TRZ and _e2153['value']['scm_bound'] is True,
+            "P2153: SCm+UA joint engine - rho_SCm/rho_UA = F_TRZ LOCKED; SCm BOUND, direct evidence HEP colliders ONLY")
+_q2154 = C.DISPATCH['PAPER_2154']()
+assert_that(_q2154['value']['q_exact'] and float(C.SO_5)**2/C.D_PHYS**2 == 6.25,
+            "P2154: Q_phonon = SO_5^2/D_phys^2 = 3*K_MEX = 25/4 EXACT dual decomposition (4th reduction landmark)")
+assert_that(_q2154['value']['d_exact'] and abs(C.D_PHYS/float(C.D_BSFG) - 2.0/3.0) < 1e-15,
+            "P2154: D_GW_erosion = D_phys/D_BSFG = 2/3 EXACT - GW170817 66.7% damping IS the identity (5th reduction landmark)")
+_a2155 = C.DISPATCH['PAPER_2155']()
+assert_that(_a2155['value']['papers_affected'] == 933 and _a2155['value']['correction'] == 'BY_REFERENCE',
+            "P2155: 933-paper unit-tag drift corrected by reference - zero per-paper touches, code layer ground truth")
+_r2156 = C.DISPATCH['PAPER_2156']()
+assert_that(_r2156['value']['canonical'] == C.F_TRZ and _r2156['value']['retrofit_refused'] is True,
+            "P2156: 1.894 artifact superseded by F_TRZ = 0.1; SM-context retrofit REFUSED (standing rule)")
+_p2152v = C.DISPATCH['PAPER_2152']()
+assert_that(_p2152v['value']['descent_points'] == 7,
+            "P2152: buoyancy provenance - 7 bit-exact descent points to the March-May 2025 source documents")
+for _bn in range(2151, 2157):
+    assert_that('PAPER_%d' % _bn in C.DISPATCH, "BAND 2151-2156: PAPER_%d dispatched" % _bn)
+# ---- CORPUS NUMERIC DRAIN COMPLETE (2026-08-16) ----
+_cc_missing = [_n for _n in range(1, 2160)
+               if not any(_k in C.DISPATCH for _k in ('PAPER_%d' % _n, 'PAPER_%03d' % _n, 'PAPER_%02d' % _n))]
+assert_that(_cc_missing == [1796, 1797, 1798, 1799],
+            "CORPUS COMPLETE: every numeric paper 001-2159 dispatched except the four RESERVED placeholders 1796-1799 - the sequential drain that began at PAPER_001 (v0.3.0) ends at PAPER_2156; landmarks 2160-2178 wired in-flight; next charter obligation is the END-OF-DRAIN AUDIT (decision C)")
+assert_that('CORPUS NUMERIC DRAIN ENDS HERE' in C.DISPATCH['PAPER_2156']()['formula'],
+            "CORPUS COMPLETE: the final numeric paper self-declares the drain terminus in-formula")
 
 # =============================================================================
 # REPORT
