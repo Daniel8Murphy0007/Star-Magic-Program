@@ -1,19 +1,16 @@
-v0.382.0 - POST-DRAIN CONSOLIDATION: audit + alias numbers + twin absorption + constant drain
+v0.383.0 - THE DRAIN RATCHET SHIP: 920 constants named, core monotone, PAPER_2234 wired
 
-END-OF-DRAIN AUDIT (decision C): live census clean; 9.47e-27 forensics CLOSED
-(= SM rho_crit at H0=71.00, 0.004%; 1.894 = 9.47/5.0 exact; source PAPER_495);
-numbering mirror resolved (shared lineage, 2118 fork); ledger guard hardened
-column-anchored after masking 4+25 holes (repaired).
+Constant drain campaign phase complete: 920 bit-identical literal->name
+promotions across 5 passes (SI five x200; SSq/omega_SCm/alpha-ledger registry
+de-duplications; all-233 26.0->D_CRIT_F semantic pass, zero value-coincidence;
+domain anchors). UNTRACED_CORE 733 -> 626, gate-pinned MONOTONE (the ratchet -
+which caught its own first offender within the hour).
 
-ALIAS NUMBERS (Daniel ruling, last used 2178): 2179-2233 assigned to all
-suffixed/lettered/S-phase/twin papers; next paper = PAPER_2234.
+Open physics: Kerr QNM mechanism RESOLVED (P1876, omega_I = F_TRZ*(1-F_TRZ*
+(K_MEX-1)) at 0.19%); cuprate 125 K = (hbar*omega_SCm/k_B)*K_MEX cross-linked;
+rare-earth A~165 held OPEN with the drift documented; pair-count + Ug4 OPEN
+per Rules 10/D.
 
-ABSORPTION PASS (Daniel-caught count error): 39 same-number twin groups -
-21 twin dispatches wired (Tier Q/R/R-prime EXACT suites, KB v7, Canonical v1.5),
-12 UPDATE addenda folded.
+PAPER_2234 campaign-completion landmark authored + wired. Next: PAPER_2235.
 
-CONSTANT DRAIN A-C: 448 literal->name promotions (SI 200, SSq de-dup 22,
-M_sun 70, c-convention 56, domain anchors 100), bit-identical, gate-verified;
-UNTRACED_CORE 733 -> 662. Two rulings queued.
-
-Gate 5,629/0. Dispatches 2,229 (2,284 keys).
+Gate 5,639/0. Dispatches 2,230 (2,285 keys).

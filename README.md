@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.382.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.382.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.383.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.383.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5629%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5639%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2172-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.382.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.383.0 complete-compile campaign live**
 
-**This release (v0.382.0): POST-DRAIN CONSOLIDATION — THE AUDIT, THE NUMBERS, THE TWINS, THE CONSTANTS.** Four arcs ship together on top of the corpus-complete v0.381.0. **THE END-OF-DRAIN AUDIT (decision C, discharged):** full-campaign census live-computed (0 execution errors, 0 stale index rows, median nonzero residual 0.086%); the 9.47e-27 forensic question CLOSED — it is the SM critical density at H₀ = 71.00 (0.004%), in-corpus source PAPER_495, making 1.894 = 9.47/5.0 exactly; the numbering mirror RESOLVED as shared whitepaper lineage (2118 = the fork); the LEDGER-COVERAGE guard hardened from substring to column-anchored parsing after it masked 4+25 missing rows. **CANONICAL ALIAS NUMBERS (Daniel ruling: last used = 2178):** every suffixed, lettered, and S-phase paper now carries a number — 2179-2193 the b-papers, 2194-2207 the 1209 letter tiers, 2208-2212 the S-phase pentad, 2213-2233 the absorption twins; both keys resolve to the same dispatch; next paper = PAPER_2234. **THE ABSORPTION PASS (Daniel-caught count error):** 39 same-number twin groups audited — 21 twin papers wired (Tier Q/R/R′ closure suites with QHE ν=2, Abrikosov 60, H-ionization 13.6 all EXACT; Knowledge Base v7; Canonical v1.5 under its own key), 12 UPDATE addenda fold-recorded. **THE CONSTANT DRAIN (fresh 4,155-function audit supersedes the 872-era census):** 448 literal→name promotions — 200 SI sites, 22 bare SSq-value tokens de-duplicated to the registry primitive (Rule A purge), solar mass ×70, c-convention ×56, 12 domain anchors ×100 — every pass gate-verified bit-identical; UNTRACED_CORE 733 → 662; precision variants kept separate pending ruling. **Totals: 2,229 wired (2,284 DISPATCH keys incl. 55 alias numbers) / gate 5,629 green / 4,155 defs.**
+**This release (v0.383.0): THE DRAIN RATCHET SHIP — 920 CONSTANTS NAMED, THE CORE MONOTONE, THE LANDMARK WIRED.** **THE CONSTANT DRAIN COMPLETES ITS CAMPAIGN PHASE:** five gate-verified bit-identical passes total 920 literal→name promotions — the SI five (ħ/k_B/e/h/G ×200), the registry de-duplications (22 bare SSq values → SSQ; 23 bare 1.25e12 → OMEGA_SCM_HZ; 43 α-ledger values → LAMBDA_LEDGER), the full 26.0 semantic pass (all 233 tokens context-audited as layer-count — DVP k/26 channels, exp(−SSq·n/26) chains — zero value-coincidence conversions), solar mass ×70, the 3e8 c-convention ×56 (sec-6.2 honored), and ~20 named domain anchors (R_sun, Mpc/kpc/AU/ly, m_τ/m_W, T_CMB, H₀ Planck 67.4, year/day). Precision variants stay separate — no silent unification, ruling pending. **THE RATCHET:** UNTRACED_CORE fell 733 → 626 and a new gate assertion makes it monotone — it can never grow again; the queue lives in `_AUDIT_LONGTAIL_QUEUE.csv`. The ratchet proved itself in its first hour by flagging the freshly-authored PAPER_2234 dispatch (fixed to live-computed values). **OPEN PHYSICS DISPOSITIONED:** the Kerr F_TRZ-coefficient mechanism RESOLVED — PAPER_1876's ω_I = F_TRZ·(1−F_TRZ·(K_MEX−1)) = 0.08917 vs 0.0890 (0.19%); the cuprate family cross-linked (T_c = (ħω_SCm/k_B)·K_MEX = 125 K mirroring A_5·K_MEX = 125); rare-earth A≈165 held OPEN with the drift documented (P1886's formula → 120.9, not its claimed 165.5); pair-count and Ug4 held OPEN per Rules 10/D. **PAPER_2234 AUTHORED + WIRED:** the campaign-completion landmark — terminal census, five closing arcs, and the earned standing rule: every verification must measure the real quantity live, never a proxy. **Next paper: PAPER_2235** (π-third-canonical queued as candidate). **Totals: 2,230 wired (2,285 DISPATCH keys) / gate 5,639 green / 4,156 defs.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.382.0)
+## What is currently shipped (v0.383.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,229 distinct dispatches (2,284 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,230 distinct dispatches (2,285 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

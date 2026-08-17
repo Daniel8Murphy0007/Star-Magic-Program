@@ -6241,3 +6241,29 @@ M_SUN_OBSERVED_R3 named-but-separate); (2) Q-RULE4-TIER2 29-paper a/b/c ruling; 
 UNTRACED_CORE long-tail (event/system anchors, batch-comment work); (4) 26.0-literal class
 (233 tokens) deferred — value-coincidence risk, needs semantic pass; (5) file-rename option
 for alias numbers (Daniel deferred "for now").
+
+---
+
+## OPEN-PHYSICS DEEPSEARCH — 2026-08-16 — two closed, three stay OPEN, one authoring candidate
+
+- **Kerr F_TRZ-coefficient mechanism: RESOLVED.** PAPER_1876 supplies it — ω_I =
+  F_TRZ·(1−F_TRZ·(K_MEX−1)) = 0.08917 vs 0.0890 (0.19%). Gate-pinned; FAMILY row links the
+  4-AGN spin ladder to its mechanism source.
+- **Cuprate layers: CROSS-LINKED.** T_c = (ħω_SCm/k_B)·K_MEX = 125 K (P1659/1794), the
+  A_5·K_MEX = 125 numeric mirror (P1954), λ_layer 100-200 (P1194b). Crossing recorded.
+- **Rare-earth A≈165: STAYS OPEN.** P1886's printed formula gives 120.9 (or 167.1 regrouped),
+  not its claimed 165.5 — drift confirmed twice; no fill (Rule D).
+- **DPM pair-count estimator: STAYS OPEN** — P2134 requires author-supplied specification (Rule 10).
+- **Ug4 bridge: STAYS OPEN** — zero corpus hits after three token families.
+- **π-canonical dedicated landmark:** no source paper exists; queued as authoring candidate
+  (PAPER_2235?) — Daniel's call.
+
+---
+
+## v0.383.0-trail — 2026-08-16 — ship state
+
+Open at ship: rounded-variant unification ruling; Tier-2 29-paper a/b/c ruling; 626-function
+long-tail queue (ratcheted monotone); rare-earth A≈165 formula-drift (P1886 revision needed
+or new derivation); DPM pair-count estimator awaiting author specification (P2134); Ug4
+bridge (no corpus source); π-canonical landmark = PAPER_2235 authoring candidate; file-rename
+option deferred; build-intermediate deletion deferred.

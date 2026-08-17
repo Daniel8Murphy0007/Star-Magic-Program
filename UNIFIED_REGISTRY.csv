@@ -6704,3 +6704,4 @@ alias_1200b,WHITEPAPER,alias,,,canonical number for PAPER_1200b,ALIAS_NUMBER,,nu
 alias_1201b,WHITEPAPER,alias,,,canonical number for PAPER_1201b,ALIAS_NUMBER,,numbering,,PAPER_2231,,,,,,WIRED
 alias_1202b,WHITEPAPER,alias,,,canonical number for PAPER_1202b,ALIAS_NUMBER,,numbering,,PAPER_2232,,,,,,WIRED
 alias_1203b,WHITEPAPER,alias,,,canonical number for PAPER_1203b,ALIAS_NUMBER,,numbering,,PAPER_2233,,,,,,WIRED
+campaign_completion_landmark,WHITEPAPER,derived,,,PAPER_001->2233 compiled; 5 closing arcs,LANDMARK,,methodology,,PAPER_2234,,,,,,WIRED

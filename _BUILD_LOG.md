@@ -267,3 +267,6 @@ THE CORPUS-COMPLETE SHIP. Drain 001-2156 done (RESERVED 1796-1799 excepted, cens
 
 ## v0.382.0 — 2026-08-16
 POST-DRAIN CONSOLIDATION: end-of-drain audit + alias numbers 2179-2233 + absorption pass (21 twins, 12 folds) + constant drain 448 promotions. Gate 5,629/0. 23-file pass verified.
+
+## v0.383.0 — 2026-08-16
+THE DRAIN RATCHET SHIP: 920 promotions total, ratchet 626 monotone, Kerr mechanism resolved, PAPER_2234 landmark. Gate 5,639/0. 23-file pass verified.

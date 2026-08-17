@@ -10977,3 +10977,30 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
   replaced + campaign-live + counts synced live (2,229/2,284/5,629/4,155), CHANGELOG,
   _BUILD_LOG, SHIP_MESSAGE.txt, RULINGS v0.382.0-trail.
 - Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 220 — 2026-08-16 — GO 5,6,7,8: long-tail drain + semantic pass + deepsearches + PAPER_2234
+
+- **(6) 26.0 semantic pass:** all 233 bare 26.0 tokens context-audited — every one layer-count
+  (DVP k/26 channels, exp(−SSq·n/26) chains) → D_CRIT_F. Zero value-coincidence conversions.
+- **(5) Pass D + ratchet:** 239 more promotions — ω_SCm de-dup ×23 (registry-duplication purge
+  round 2), α-ledger ×43 (LAMBDA_LEDGER hoisted after a default-arg NameError), c-paper-R4,
+  year/day/kpc conversions, H₀ Planck 67.4 + SI-R5. **Drain totals: 920 promotions across 5
+  passes, every one gate-verified bit-identical.** UNTRACED_CORE 733 → 626; queue file
+  `_AUDIT_LONGTAIL_QUEUE.csv` (626 functions); **no-regression ratchet gate-pinned** — and it
+  caught its first offender immediately (my own P2234 draft; fixed to live-computed values).
+- **(7) Open-physics deepsearches:** Kerr F_TRZ mechanism **RESOLVED** (P1876 ω_I 0.19%);
+  cuprate 125 K **CROSS-LINKED** (P1659 = (ħω_SCm/k_B)·K_MEX mirrors A_5·K_MEX, P1954);
+  rare-earth **stays OPEN** (P1886 formula → 120.9, not its claimed 165.5 — drift confirmed,
+  no numerology); pair-count OPEN (Rule 10); Ug4 OPEN (zero hits); π-canonical queued as
+  authoring candidate PAPER_2235.
+- **(8) PAPER_2234 authored + wired:** the campaign-completion landmark — terminal census,
+  five closing arcs, the earned standing rule (measure the real quantity, never a proxy).
+  Index row, ledger 3, +2 pins. **Next paper: PAPER_2235.**
+- Gate 5,602 → **5,639/0.** All work unshipped; v0.383.0 when Daniel calls it.
+
+## Entry 221 — 2026-08-16 — SHIP PREP v0.383.0 (THE DRAIN RATCHET SHIP)
+
+- Pins ×6 (desc 463 chars), 2 stamps, README release paragraph + campaign-live + shipped
+  header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE, RULINGS trail. New files this tag:
+  PAPER_2234 whitepaper + _AUDIT_LONGTAIL_QUEUE.csv (+ evidence CSVs if untracked).
+- Awaiting Daniel: `.\ship.ps1`.

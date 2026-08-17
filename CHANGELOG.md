@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.383.0 — 2026-08-16 — THE DRAIN RATCHET SHIP
+
+- **Constant drain, campaign phase complete: 920 literal→name promotions** across 5
+  bit-identical passes (SI ×200; SSq de-dup ×22 + M_sun ×70 + c-convention ×56; domain
+  anchors ×100; 26.0→D_CRIT_F ×233 full semantic audit; ω_SCm ×23 + α-ledger ×43 +
+  time/distance/cosmology ×~170). Every pass gate-verified; backup PRE_SI_DRAIN_BACKUP.
+- **THE RATCHET:** UNTRACED_CORE 733 → 626, now gate-pinned MONOTONE (can never grow);
+  queue `_AUDIT_LONGTAIL_QUEUE.csv` (626 fns). Caught its first offender (P2234 draft) within
+  the hour — the check works.
+- **Open physics:** Kerr QNM mechanism RESOLVED (P1876 ω_I 0.19%, FAMILY-linked to the 4-AGN
+  ladder); cuprate 125 K cross-linked (P1659 ↔ P1954 ↔ P1194b); rare-earth A≈165 OPEN with
+  drift documented (P1886 formula → 120.9 ≠ claimed 165.5); pair-count OPEN (Rule 10);
+  Ug4 OPEN (zero hits); π-canonical queued as PAPER_2235 candidate.
+- **PAPER_2234 CORPUS_COMPLETION_CAMPAIGN landmark authored + wired** (live-computed census
+  values; proxy-rule canonized). Next paper: PAPER_2235.
+- Gate 5,629 → 5,639. New files: PAPER_2234 whitepaper, `_AUDIT_LONGTAIL_QUEUE.csv`.
+
+
 ## v0.382.0 — 2026-08-16 — POST-DRAIN CONSOLIDATION
 
 Four arcs on top of the corpus-complete v0.381.0:

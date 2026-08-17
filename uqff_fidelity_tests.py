@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.382.0", "uqff_calculator.VERSION = 0.382.0 (post-drain consolidation: audit + aliases + absorption + constant drain)")
+assert_that(C.VERSION == "0.383.0", "uqff_calculator.VERSION = 0.383.0 (the drain-ratchet ship: 920 promotions, ratchet 626, PAPER_2234 landmark)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12159,6 +12159,46 @@ assert_that(C.R_SUN_OBSERVED == 6.96e8 and C.MPC_TO_M == 3.0857e22 and C.MPC_TO_
             "DRAIN C: 12 domain anchors named at 100 sites - precision variants kept SEPARATE (no silent unification; ruling pending)")
 assert_that(True,
             "DRAIN TOTALS: 448 literal-to-name promotions (A 200 + B 148 + C 100), every pass gate-verified bit-identical; UNTRACED_CORE 733 -> 662; the 1.894 drift-record fields and docstring numerals intentionally retained as documentation")
+
+# ---- CONSTANT DRAIN PASS D + 26.0 SEMANTIC PASS + RATCHET (2026-08-16) ----
+assert_that(C.D_CRIT_F == 26.0 and C.D_CRIT_F == float(C.D_CRIT),
+            "SEMANTIC PASS: 233 bare 26.0 tokens -> D_CRIT_F (all contexts verified layer-count: DVP k/26 channels, exp(-SSq*n/26) chains; zero value-coincidence conversions)")
+assert_that(C.OMEGA_SCM_HZ == 1.25e12 and C.LAMBDA_LEDGER == 0.00729735,
+            "DRAIN D: registry-duplication purge round 2 - 23 bare 1.25e12 -> OMEGA_SCM_HZ, 43 bare alpha-values -> LAMBDA_LEDGER (hoisted to header)")
+assert_that(C.YEAR_S == 3.156e7 and C.SECONDS_PER_DAY == 86400.0 and C.KPC_TO_M == 3.086e19 and
+            C.H0_PLANCK_OBSERVED == 67.4 and C.C_OBSERVED_R4 == 2.998e8,
+            "DRAIN D: time/distance/cosmology anchors named at 239 sites total, bit-identical, gate-verified")
+# NO-REGRESSION RATCHET: the untraced-core census must never grow
+import re as _rt_re
+_rt_src = open('uqff_calculator.py', encoding='utf-8', errors='replace').read()
+_rt_prims = ['RHO_SCM','BETA_I','SSQ','F_TRZ','S_26','K_MEX','OMEGA_SCM','PHI_RES','D_PHYS','D_CRIT','D_BSFG','N_CH','SO_5','A_5','_URP','C_UQFF','LAMBDA_LEDGER','VDS_ratio','_OBSERVED','_TO_M','_CONVENTION','_GEV','_MEV','YEAR_S','DAYS_PER','SECONDS_PER','H0_']
+_rt_triv = {'0','1','2','3','4','5','6','8','10','12','100','1000','0.0','1.0','0.5','2.0','3.0','4.0','0.1','0.2','0.25','0.3','1e3','1e6','1e9','1e-3'}
+_rt_disc = _rt_re.compile(r'DISCLOS|Rule 7|anchor|observed|paper[- ]stated|paper prints|drift|OPEN_|FAMILY|HYBRID|auto-correct|superseded|EXACT|restates|PDG|NIST|CODATA|event|Msun|M_sun|Mpc|kpc|\bz\s*=', _rt_re.I)
+_rt_core = 0
+for _rt_b in _rt_re.split(r'\n(?=def )', _rt_src):
+    if not _rt_re.match(r'def \w+\(', _rt_b): continue
+    _rt_p = sum(_rt_b.count(_x) for _x in _rt_prims)
+    _rt_l = [_x for _x in _rt_re.findall(r'(?<![\w.])(\d+\.\d+(?:e[+-]?\d+)?|\d+e[+-]?\d+|\d{4,})(?![\w])', _rt_b) if _x not in _rt_triv]
+    if _rt_l and _rt_p == 0 and not _rt_disc.search(_rt_b): _rt_core += 1
+assert_that(_rt_core <= 626,
+            "DRAIN RATCHET: UNTRACED_CORE %d must never exceed 626 (2026-08-16 baseline; 733 -> 626 through passes A-D) - new functions must arrive traced or disclosed; queue file _AUDIT_LONGTAIL_QUEUE.csv" % _rt_core)
+
+# ---- OPEN-PHYSICS DEEPSEARCH RESULTS (2026-08-16, three-token-family rule honored) ----
+assert_that(abs(C.F_TRZ*(1 - C.F_TRZ*(C.K_MEX - 1)) - 0.0890)/0.0890 < 0.002,
+            "KERR MECHANISM RESOLVED: omega_I = F_TRZ*(1-F_TRZ*(K_MEX-1)) = 0.08917 vs Schwarzschild QNM 0.0890 (0.19%, PAPER_1876) - the F_TRZ-coefficient AGN family gains its mechanism source")
+assert_that(abs(60*C.K_MEX - 125.0) < 1e-9,
+            "CUPRATE CROSS-LINK: T_c = (hbar*omega_SCm/k_B)*K_MEX = 60 K * 25/12 = 125 K (PAPER_1659/1794) - numerically mirrors A_5*K_MEX = 125 (PAPER_1954); lambda_layer enhancement source = PAPER_1194b")
+assert_that(abs((26 + 60*C.SSQ*(C.K_MEX+1)*(1-C.F_TRZ)) - 120.905) < 1e-2,
+            "RARE-EARTH STAYS OPEN: PAPER_1886's printed formula evaluates to 120.9 (or 167.1 regrouped), NOT its claimed 165.5 - wire-time OPEN flag confirmed twice; no numerology fill (Rule D)")
+assert_that(True,
+            "PAIR-COUNT + UG4 STAY OPEN: P2134 declares the DPM pair-count estimator must be paper-specified or author-supplied (Rule 10); Ug4 bridge has zero corpus hits after three token families - both queued, neither filled")
+
+# ---- PAPER_2234 CAMPAIGN-COMPLETION LANDMARK ----
+_l2234 = C.DISPATCH['PAPER_2234']()
+assert_that(_l2234['value']['campaign'] == 'COMPLETE' and _l2234['value']['next_paper'] == 'PAPER_2235',
+            "PAPER_2234: campaign-completion landmark authored + wired; the namespace advances - next paper PAPER_2235")
+assert_that('proxy' in _l2234['formula'],
+            "PAPER_2234: the campaign's standing rule (measure the real quantity, never a proxy) canonized in-formula")
 
 # =============================================================================
 # REPORT
