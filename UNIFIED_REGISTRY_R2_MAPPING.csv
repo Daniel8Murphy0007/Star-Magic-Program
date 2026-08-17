@@ -252,3 +252,4 @@ PAPER_2121_2130,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
 PAPER_2131_2140,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
 PAPER_2141_2150,BAND,uqff_calculator.py::DISPATCH,10 dispatches,v0.381.0
 PAPER_2151_2156,BAND,uqff_calculator.py::DISPATCH,6 dispatches + CORPUS TERMINUS,v0.381.0
+ABSORPTION_PASS,TWINS,uqff_calculator.py::DISPATCH,21 dispatches + 12 folds + 21 aliases,v0.382.0

@@ -220,3 +220,4 @@ v0.381.0,2026-08-16,BAND_2121_2130,registry +10 graph +19,gate 5566/0
 v0.381.0,2026-08-16,BAND_2131_2140,registry +10 graph +32,gate 5579/0
 v0.381.0,2026-08-16,BAND_2141_2150,registry +10 graph +18,gate 5592/0
 v0.381.0,2026-08-16,BAND_2151_2156,registry +7 graph +14 TERMINUS,gate 5602/0
+v0.382.0,2026-08-16,ABSORPTION_PASS,registry +54 graph +63,gate 5624/0

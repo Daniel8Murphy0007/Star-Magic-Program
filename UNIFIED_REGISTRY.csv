@@ -6612,3 +6612,95 @@ q_phonon_reduction,WHITEPAPER,derived,SO_5^2/D_phys^2 = 3*K_MEX,SO_5**2/D_PHYS**
 d_gw_erosion_reduction,WHITEPAPER,derived,D_phys/D_BSFG,D_PHYS/D_BSFG,2/3,EXACT,0.0,gravitational_waves,,PAPER_2154,,,,,,WIRED
 s204_5_unit_tag_audit,WHITEPAPER,derived,,,933 papers by-reference,LANDMARK,,methodology,,PAPER_2155,,,,,,WIRED
 ratio_1894_artifact,WHITEPAPER,derived,,,935 papers -> F_TRZ=0.1,LANDMARK,,methodology,,PAPER_2156,,,,,,WIRED
+paper_437_census_note,WHITEPAPER,derived,,,census-note dispatch (shares base wiring),LEDGER_REPAIR,,census,,PAPER_437,,,,,,WIRED
+paper_642_mw_companion,WHITEPAPER,derived,,,m_W companion of PAPER_641 EW block,LEDGER_REPAIR,,particle_physics,,PAPER_642,,,,,,WIRED
+paper_1039_buoy_companion,WHITEPAPER,derived,,,F_buoy beta-model companion of PAPER_999 family,LEDGER_REPAIR,,buoyancy,,PAPER_1039,,,,,,WIRED
+paper_1071_census_note,WHITEPAPER,derived,,,census-note dispatch (shares base wiring),LEDGER_REPAIR,,census,,PAPER_1071,,,,,,WIRED
+alias_008b,WHITEPAPER,alias,,,canonical number for PAPER_008b,ALIAS_NUMBER,,numbering,,PAPER_2179,,,,,,WIRED
+alias_009b,WHITEPAPER,alias,,,canonical number for PAPER_009b,ALIAS_NUMBER,,numbering,,PAPER_2180,,,,,,WIRED
+alias_010b,WHITEPAPER,alias,,,canonical number for PAPER_010b,ALIAS_NUMBER,,numbering,,PAPER_2181,,,,,,WIRED
+alias_011b,WHITEPAPER,alias,,,canonical number for PAPER_011b,ALIAS_NUMBER,,numbering,,PAPER_2182,,,,,,WIRED
+alias_012b,WHITEPAPER,alias,,,canonical number for PAPER_012b,ALIAS_NUMBER,,numbering,,PAPER_2183,,,,,,WIRED
+alias_013b,WHITEPAPER,alias,,,canonical number for PAPER_013b,ALIAS_NUMBER,,numbering,,PAPER_2184,,,,,,WIRED
+alias_014b,WHITEPAPER,alias,,,canonical number for PAPER_014b,ALIAS_NUMBER,,numbering,,PAPER_2185,,,,,,WIRED
+alias_015b,WHITEPAPER,alias,,,canonical number for PAPER_015b,ALIAS_NUMBER,,numbering,,PAPER_2186,,,,,,WIRED
+alias_016b,WHITEPAPER,alias,,,canonical number for PAPER_016b,ALIAS_NUMBER,,numbering,,PAPER_2187,,,,,,WIRED
+alias_025b,WHITEPAPER,alias,,,canonical number for PAPER_025b,ALIAS_NUMBER,,numbering,,PAPER_2188,,,,,,WIRED
+alias_026b,WHITEPAPER,alias,,,canonical number for PAPER_026b,ALIAS_NUMBER,,numbering,,PAPER_2189,,,,,,WIRED
+alias_026c,WHITEPAPER,alias,,,canonical number for PAPER_026c,ALIAS_NUMBER,,numbering,,PAPER_2190,,,,,,WIRED
+alias_221b,WHITEPAPER,alias,,,canonical number for PAPER_221b,ALIAS_NUMBER,,numbering,,PAPER_2191,,,,,,WIRED
+alias_221c,WHITEPAPER,alias,,,canonical number for PAPER_221c,ALIAS_NUMBER,,numbering,,PAPER_2192,,,,,,WIRED
+alias_376b,WHITEPAPER,alias,,,canonical number for PAPER_376b,ALIAS_NUMBER,,numbering,,PAPER_2193,,,,,,WIRED
+alias_1209x,WHITEPAPER,alias,,,canonical number for PAPER_1209X,ALIAS_NUMBER,,numbering,,PAPER_2194,,,,,,WIRED
+alias_1209y,WHITEPAPER,alias,,,canonical number for PAPER_1209Y,ALIAS_NUMBER,,numbering,,PAPER_2195,,,,,,WIRED
+alias_1209z,WHITEPAPER,alias,,,canonical number for PAPER_1209Z,ALIAS_NUMBER,,numbering,,PAPER_2196,,,,,,WIRED
+alias_1209aa,WHITEPAPER,alias,,,canonical number for PAPER_1209AA,ALIAS_NUMBER,,numbering,,PAPER_2197,,,,,,WIRED
+alias_1209bb,WHITEPAPER,alias,,,canonical number for PAPER_1209BB,ALIAS_NUMBER,,numbering,,PAPER_2198,,,,,,WIRED
+alias_1209cc,WHITEPAPER,alias,,,canonical number for PAPER_1209CC,ALIAS_NUMBER,,numbering,,PAPER_2199,,,,,,WIRED
+alias_1209dd,WHITEPAPER,alias,,,canonical number for PAPER_1209DD,ALIAS_NUMBER,,numbering,,PAPER_2200,,,,,,WIRED
+alias_1209ee,WHITEPAPER,alias,,,canonical number for PAPER_1209EE,ALIAS_NUMBER,,numbering,,PAPER_2201,,,,,,WIRED
+alias_1209ff,WHITEPAPER,alias,,,canonical number for PAPER_1209FF,ALIAS_NUMBER,,numbering,,PAPER_2202,,,,,,WIRED
+alias_1209gg,WHITEPAPER,alias,,,canonical number for PAPER_1209GG,ALIAS_NUMBER,,numbering,,PAPER_2203,,,,,,WIRED
+alias_1209hh,WHITEPAPER,alias,,,canonical number for PAPER_1209HH,ALIAS_NUMBER,,numbering,,PAPER_2204,,,,,,WIRED
+alias_1209ii,WHITEPAPER,alias,,,canonical number for PAPER_1209II,ALIAS_NUMBER,,numbering,,PAPER_2205,,,,,,WIRED
+alias_1209jj,WHITEPAPER,alias,,,canonical number for PAPER_1209JJ,ALIAS_NUMBER,,numbering,,PAPER_2206,,,,,,WIRED
+alias_1209kk,WHITEPAPER,alias,,,canonical number for PAPER_1209KK,ALIAS_NUMBER,,numbering,,PAPER_2207,,,,,,WIRED
+alias_s201_phase_h201_nullextraction,WHITEPAPER,alias,,,canonical number for PAPER_S201_Phase_H201_NullExtraction,ALIAS_NUMBER,,numbering,,PAPER_2208,,,,,,WIRED
+alias_s202_phase_h202_variantbranches,WHITEPAPER,alias,,,canonical number for PAPER_S202_Phase_H202_VariantBranches,ALIAS_NUMBER,,numbering,,PAPER_2209,,,,,,WIRED
+alias_s203_phase_h203_ptf,WHITEPAPER,alias,,,canonical number for PAPER_S203_Phase_H203_PTF,ALIAS_NUMBER,,numbering,,PAPER_2210,,,,,,WIRED
+alias_s204_phase_h204_gapclosure,WHITEPAPER,alias,,,canonical number for PAPER_S204_Phase_H204_GapClosure,ALIAS_NUMBER,,numbering,,PAPER_2211,,,,,,WIRED
+alias_s205_phase_h205_expansionerosion,WHITEPAPER,alias,,,canonical number for PAPER_S205_Phase_H205_ExpansionErosion,ALIAS_NUMBER,,numbering,,PAPER_2212,,,,,,WIRED
+aggressive_paradox_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1183b,,,,,,WIRED
+open_problems_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1184b,,,,,,WIRED
+quantum_gravity_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1185b,,,,,,WIRED
+standard_model_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1186b,,,,,,WIRED
+number_theory_frontier,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1188b,,,,,,WIRED
+chemistry_atomic_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1189b,,,,,,WIRED
+math_constants_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1190b,,,,,,WIRED
+cosmology_deepset,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1191b,,,,,,WIRED
+sm_deepcuts_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1192b,,,,,,WIRED
+astrophysics_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1193b,,,,,,WIRED
+condensed_matter_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1194b,,,,,,WIRED
+particle_physics_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1198b,,,,,,WIRED
+sterile_neutrino_short,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_026d,,,,,,WIRED
+bubble_expansion_twin,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_221d,,,,,,WIRED
+knowledge_base_7,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_657b,,,,,,WIRED
+cluster_cooling_suppression,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1079b,,,,,,WIRED
+geophysics_atmo_set,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1197b,,,,,,WIRED
+gr_precision_tier_q,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1200b,,,,,,WIRED
+materials_tier_r,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1201b,,,,,,WIRED
+chemistry_tier_r_prime,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1202b,,,,,,WIRED
+canonical_v15_solver,WHITEPAPER,derived,,,twin absorbed 2026-08-16,ABSORPTION_PASS,,absorption,,PAPER_1203b,,,,,,WIRED
+update_paper_594,WHITEPAPER,addendum,,,26! bound applications incl. BH info 0.99596 page recovery,UPDATE_FOLDED,,absorption,,PAPER_594,,,,,,WIRED
+update_paper_597,WHITEPAPER,addendum,,,t_neg = -2512 s + ekpyrotic cos(pi t_n) applications,UPDATE_FOLDED,,absorption,,PAPER_597,,,,,,WIRED
+update_paper_1066,WHITEPAPER,addendum,,,dS/dphi = 0 multi-closure + F_U = 1 normalization,UPDATE_FOLDED,,absorption,,PAPER_1066,,,,,,WIRED
+update_paper_1095,WHITEPAPER,addendum,,,"0.99960 page recovery, 10 Msun, Delta_SCm = 5.17 meV chain",UPDATE_FOLDED,,absorption,,PAPER_1095,,,,,,WIRED
+update_paper_1120,WHITEPAPER,addendum,,,Higgs BR table from locked primitives,UPDATE_FOLDED,,absorption,,PAPER_1120,,,,,,WIRED
+update_paper_1126,WHITEPAPER,addendum,,,"NICER M = 1.4 Msun R = 13 km, compactness 0.1593",UPDATE_FOLDED,,absorption,,PAPER_1126,,,,,,WIRED
+update_paper_1156,WHITEPAPER,addendum,,,ALPHA_UQFF = 1/(Phi_res*D_crit*2pi) 0.138% + h 0.061%,UPDATE_FOLDED,,absorption,,PAPER_1156,,,,,,WIRED
+update_paper_1167,WHITEPAPER,addendum,,,6-term closed master Lagrangian with (25/12) Mexican-hat term,UPDATE_FOLDED,,absorption,,PAPER_1167,,,,,,WIRED
+update_paper_1170,WHITEPAPER,addendum,,,explicit 4-term vacuum-ledger decomposition,UPDATE_FOLDED,,absorption,,PAPER_1170,,,,,,WIRED
+update_paper_1175,WHITEPAPER,addendum,,,f_220 = 250.7 Hz baseline; f_221/f_220 = 0.9834; f_330/f_220 = 1.575,UPDATE_FOLDED,,absorption,,PAPER_1175,,,,,,WIRED
+update_paper_1183,WHITEPAPER,addendum,,,PARADOX_TO_MILLENNIUM routing incl. yang_mills 1.736 GeV,UPDATE_FOLDED,,absorption,,PAPER_1183,,,,,,WIRED
+update_paper_1198,WHITEPAPER,addendum,,,Lambda_QCD = D_crit^2/pi = 215.2 MeV (1.29%),UPDATE_FOLDED,,absorption,,PAPER_1198,,,,,,WIRED
+alias_1183b,WHITEPAPER,alias,,,canonical number for PAPER_1183b,ALIAS_NUMBER,,numbering,,PAPER_2213,,,,,,WIRED
+alias_1184b,WHITEPAPER,alias,,,canonical number for PAPER_1184b,ALIAS_NUMBER,,numbering,,PAPER_2214,,,,,,WIRED
+alias_1185b,WHITEPAPER,alias,,,canonical number for PAPER_1185b,ALIAS_NUMBER,,numbering,,PAPER_2215,,,,,,WIRED
+alias_1186b,WHITEPAPER,alias,,,canonical number for PAPER_1186b,ALIAS_NUMBER,,numbering,,PAPER_2216,,,,,,WIRED
+alias_1188b,WHITEPAPER,alias,,,canonical number for PAPER_1188b,ALIAS_NUMBER,,numbering,,PAPER_2217,,,,,,WIRED
+alias_1189b,WHITEPAPER,alias,,,canonical number for PAPER_1189b,ALIAS_NUMBER,,numbering,,PAPER_2218,,,,,,WIRED
+alias_1190b,WHITEPAPER,alias,,,canonical number for PAPER_1190b,ALIAS_NUMBER,,numbering,,PAPER_2219,,,,,,WIRED
+alias_1191b,WHITEPAPER,alias,,,canonical number for PAPER_1191b,ALIAS_NUMBER,,numbering,,PAPER_2220,,,,,,WIRED
+alias_1192b,WHITEPAPER,alias,,,canonical number for PAPER_1192b,ALIAS_NUMBER,,numbering,,PAPER_2221,,,,,,WIRED
+alias_1193b,WHITEPAPER,alias,,,canonical number for PAPER_1193b,ALIAS_NUMBER,,numbering,,PAPER_2222,,,,,,WIRED
+alias_1194b,WHITEPAPER,alias,,,canonical number for PAPER_1194b,ALIAS_NUMBER,,numbering,,PAPER_2223,,,,,,WIRED
+alias_1198b,WHITEPAPER,alias,,,canonical number for PAPER_1198b,ALIAS_NUMBER,,numbering,,PAPER_2224,,,,,,WIRED
+alias_026d,WHITEPAPER,alias,,,canonical number for PAPER_026d,ALIAS_NUMBER,,numbering,,PAPER_2225,,,,,,WIRED
+alias_221d,WHITEPAPER,alias,,,canonical number for PAPER_221d,ALIAS_NUMBER,,numbering,,PAPER_2226,,,,,,WIRED
+alias_657b,WHITEPAPER,alias,,,canonical number for PAPER_657b,ALIAS_NUMBER,,numbering,,PAPER_2227,,,,,,WIRED
+alias_1079b,WHITEPAPER,alias,,,canonical number for PAPER_1079b,ALIAS_NUMBER,,numbering,,PAPER_2228,,,,,,WIRED
+alias_1197b,WHITEPAPER,alias,,,canonical number for PAPER_1197b,ALIAS_NUMBER,,numbering,,PAPER_2229,,,,,,WIRED
+alias_1200b,WHITEPAPER,alias,,,canonical number for PAPER_1200b,ALIAS_NUMBER,,numbering,,PAPER_2230,,,,,,WIRED
+alias_1201b,WHITEPAPER,alias,,,canonical number for PAPER_1201b,ALIAS_NUMBER,,numbering,,PAPER_2231,,,,,,WIRED
+alias_1202b,WHITEPAPER,alias,,,canonical number for PAPER_1202b,ALIAS_NUMBER,,numbering,,PAPER_2232,,,,,,WIRED
+alias_1203b,WHITEPAPER,alias,,,canonical number for PAPER_1203b,ALIAS_NUMBER,,numbering,,PAPER_2233,,,,,,WIRED

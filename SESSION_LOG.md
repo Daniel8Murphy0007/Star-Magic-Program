@@ -10893,3 +10893,87 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
   line bumped. CHANGELOG inserted, _BUILD_LOG appended, SHIP_MESSAGE.txt written,
   RULINGS_QUEUE v0.381.0-trail appended (end-of-drain audit handoff list).
 - Awaiting Daniel: `.\ship.ps1` — gates, commits, tags v0.381.0, pushes; PyPI auto-publish.
+
+## Entry 214 — 2026-08-16 — THE END-OF-DRAIN AUDIT (decision C discharged)
+
+- **AUDIT_END_OF_DRAIN_REPORT.md authored** — full-campaign census live-computed: 2,208
+  dispatches, 0 execution errors, 0 stale index rows, 0 top-level OPENs; residual median
+  (nonzero) 0.086% across 492; discipline census 231 FAMILY / 253 disclosures / 97 prediction
+  markers / 54 FAMILY_RECORDs / 17 _seq.
+- **FORENSIC CLOSURE:** 9.47e-27 = SM ρ_crit(H₀=71.00) at 0.004% — PAPER_2156's unknown-origin
+  density identified (PAPER_495 in-corpus source); 1.894 = 9.47/5.0 exact. Chain complete.
+- **MIRROR RESOLVED:** shared whitepaper lineage; 2118 = the fork point.
+- **CAUGHT & REPAIRED:** LEDGER-COVERAGE guard was substring-based → 4 registry + 25 citations
+  holes masked by incidental mentions → backfilled (LEDGER_REPAIR) + guard v2 column-anchored
+  with padding fallback; 2 undisclosed worst-tier residuals (P013 117.6%, P186 39.8%) →
+  Rule 7 disclosures added. Systemic finding named: every campaign failure was a check
+  measuring a weaker proxy than the thing certified; all such checks now measure live.
+- +9 gate pins; RULINGS two closures appended. All repairs unshipped — next ship carries the
+  audit (v0.382.0 recommended).
+
+## Entry 215 — 2026-08-16 — CANONICAL ALIAS NUMBERS: 2179-2212 (Daniel ruling: last used = 2178)
+
+- All 34 non-numeric keys now carry canonical numbers: 2179-2193 the suffixed papers
+  (008b→2179 ... 376b→2193), 2194-2207 the 1209 letter tiers (X→2194 ... KK→2207),
+  2208-2212 the S-phase pentad. ALIAS_NUMBER_MAP in calculator; both keys → same dispatch.
+- 34×3 ledger rows (registry ALIAS_NUMBER, graph ALIAS_OF edges, citations), index mapping
+  table, +39 gate pins (map size, block contiguity, 34 per-pair identity, ordering, edges).
+- DISPATCH keys now 2,242 (2,208 dispatches + 34 aliases). **Future papers begin at PAPER_2213.**
+
+## Entry 216 — 2026-08-16 — THE ABSORPTION PASS (Daniel-caught: "I think your count is off")
+
+- **Daniel was right.** The claim "all b-papers absorbed" covered only suffix-NAMED files;
+  39 same-number twin groups (different content, same PAPER_N filename) hid behind the
+  numeric census. Verification found only 8 confirmed → 31 unconfirmed.
+- **Wired 21 twin dispatches:** 12 May-2026 proof-set twins (1183b-1198b, structural) +
+  9 distinct twins: 026d (sterile-neutrino short chain — keV/GeV unit drift DISCLOSED,
+  normalization OPEN), 221d ((1+E) expansion, κ = (SO_5/2)·F_TRZ⁴ primitive-locked),
+  657b (Knowledge Base v7, 25KB), 1079b (cluster cooling Λ_ff), 1197b (geophysics set),
+  **1200b Tier Q** (r_ph/M = 3 EXACT, extremal Kerr ISCO = 1 EXACT), **1201b Tier R**
+  (S463-S472: QHE ν=2 + Abrikosov 60 EXACT; Avogadro mantissa 0.01%), **1202b Tier R′**
+  (S473-S482: H-ionization 13.6 EXACT, 1/α composed 0.014%), 1203b (Canonical v1.5 solver
+  under its own key).
+- **12 UPDATE addenda** recorded in UPDATE_ABSORPTION_MAP with carrier sites (content
+  verified already-wired: page-curve 0.9996, t_neg, 6-term Lagrangian, α/h chains, R26
+  ringdown, paradox routing, Λ_QCD).
+- **Alias extension 2213-2233** (map now 55). **Future papers begin at PAPER_2234.**
+- All 39 groups now dispositioned: 8 prior + 21 wired + 12 folded (+ ASCII/superseded
+  handled earlier). Guards +32. TWIN_OF edges in graph. Lesson logged: same-number
+  twin files are invisible to numeric censuses — filename-level dedup is now part of
+  any coverage claim.
+
+## Entry 217 — 2026-08-16 — CONSTANT DRAIN: fresh audit + Pass A (200 SI-literal promotions)
+
+- Re-ran the undrained-constants audit at full scope (the v0.364.0 audit covered 872
+  dispatches; corpus now 2,229 + 1,900 helpers): 2,756 literal-bearing functions;
+  **UNTRACED_CORE 733**. Evidence `_AUDIT_FN_UNTRACED_V2.csv` (function-level, supersedes
+  `_AUDIT_TIER_UNTRACED.csv`).
+- **Pass A (PAPER_2141 bulk pattern):** 200 exact-precision SI literals → 5 named observed
+  anchors (HBAR/KB/E_CHARGE/H_PLANCK/G_NEWTON _OBSERVED). Bit-identical (quote-aware
+  replacer skipped strings/comments); gate GREEN post-pass = zero numeric regressions;
+  backup PRE_SI_DRAIN_BACKUP. Core 733 → **685**.
+- Two rulings queued for Daniel (rounded-variant unification; Tier-2 29 papers a/b/c).
+- Gate 5,624 → 5,632 (+6 drain pins +2 alias-era). One live-drift scare (P263 1.894)
+  resolved as false positive — occurrence is inside the drift-correction note itself.
+
+## Entry 218 — 2026-08-16 — CONSTANT DRAIN PASSES B+C (448 total promotions)
+
+- **Pass B (148 sites):** 22 bare `0.57` NUMBER tokens → SSQ — a Rule A registry-duplication
+  purge, contexts verified individually ("= SSq EXACTLY" comments; the 0.5773/0.5772
+  lookalikes are 1/√3 and Euler γ, untouched). M_SUN_OBSERVED (1.989e30, 70 sites) and
+  C_LIGHT_CONVENTION (3e8, 56 sites — sec-6.2 consumers-keep-3e8 honored) named.
+- **Pass C (100 sites):** 12 domain anchors named — R_SUN, LY/AU/MPC conversions, m_τ, T_CMB,
+  m_p/m_e kg, m_W, L_sun. **Precision variants kept separate** (MPC_TO_M vs _R4; M_SUN vs _R3)
+  — no silent unification, per the pending rounding ruling.
+- **Method:** tokenize-based NUMBER-token rewrite — strings/docstrings untouchable by
+  construction; 1.894 drift-record fields intentionally retained.
+- Every pass gate-verified bit-identical. UNTRACED_CORE 733 → **662**. Total drain: **448
+  literal→name promotions.** Remaining 662 = low-repeat event/system anchors (per-paper
+  masses, redshifts, fluxes) — batch-comment work, plus the two pending Daniel rulings.
+
+## Entry 219 — 2026-08-16 — SHIP PREP v0.382.0 (POST-DRAIN CONSOLIDATION)
+
+- Pins ×6 (desc 478 chars w/ version), 8 ledger stamps → v0.382.0, README release paragraph
+  replaced + campaign-live + counts synced live (2,229/2,284/5,629/4,155), CHANGELOG,
+  _BUILD_LOG, SHIP_MESSAGE.txt, RULINGS v0.382.0-trail.
+- Awaiting Daniel: `.\ship.ps1`.

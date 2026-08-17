@@ -264,3 +264,6 @@ v0.380.0 (2026-08-15): bands 2031-2080 - the architectural-category era (5 categ
 
 ## v0.381.0 — 2026-08-16
 THE CORPUS-COMPLETE SHIP. Drain 001-2156 done (RESERVED 1796-1799 excepted, census gate-pinned). 76 dispatches (bands 2081-2156). Gate 5,602/0. 23-file pass verified. End-of-drain audit next.
+
+## v0.382.0 — 2026-08-16
+POST-DRAIN CONSOLIDATION: end-of-drain audit + alias numbers 2179-2233 + absorption pass (21 twins, 12 folds) + constant drain 448 promotions. Gate 5,629/0. 23-file pass verified.

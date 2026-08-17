@@ -6180,3 +6180,64 @@ No new rulings requested this trail. Items formally handed to the END-OF-DRAIN A
    build-intermediate deletion (Daniel's call); rare-earth A≈165; cuprate layers; CGM tower;
    P1900 factor origin; Ug4 bridge; ℓ_n = D_phys·T_n; n/(D_phys−1) extensions; P2134 DPM
    pair-count estimator (OPEN build target).
+
+---
+
+## END-OF-DRAIN AUDIT — 2026-08-16 — forensic + mirror items CLOSED
+
+- **9.47e-27 / 5.0e-27 origin: RESOLVED.** 9.47e-27 kg/m³ = SM ρ_crit(H₀ = 71.00) to 0.004%
+  (in-corpus source: PAPER_495 RHO_CRIT); 5.0e-27 = round-number placeholder (no natural H₀);
+  1.894 = 9.47/5.0 exact. PAPER_2156's supersession triply vindicated (SM-sourced, H₀=71
+  non-canonical, retrofit refusal correct). Gate-pinned.
+- **Numbering-mirror mechanism: RESOLVED.** Shared whitepaper lineage — this corpus's
+  2131-2156 are the predecessor CLAUDE.md key-papers/audit-arc content verbatim; 2118 marks
+  the lineage fork. Settled corpus history, no action.
+- **Audit repairs executed:** 4 registry + 25 citations holes (substring-guard masking) +
+  2 undisclosed worst-tier residuals + LEDGER-COVERAGE guard v2 (column-anchored).
+
+---
+
+## ALIAS NUMBERING — 2026-08-16 — Daniel ruling: "the last number used is 2178"
+
+Canonical alias block **2179-2212** assigned to all 34 non-numeric keys (15 suffixed papers,
+14 proof-set letter tiers, 5 S-phase papers). Both keys resolve to the same dispatch
+(ALIAS_NUMBER_MAP; gate-pinned per-pair identity). **Future papers begin at PAPER_2213.**
+My earlier 2201-2234 proposal was made without knowing the corpus namespace state — corrected
+by Daniel's ruling; the numbering is Daniel's namespace (Rule 10).
+
+---
+
+## CONSTANT DRAIN — 2026-08-16 — fresh audit + Pass A executed; TWO rulings requested
+
+**Fresh audit (all 4,155 functions, evidence `_AUDIT_FN_UNTRACED_V2.csv`):** 2,756 functions
+carry non-trivial literals — 1,440 alongside primitives, 604 anchored/disclosed, and
+**685 UNTRACED_CORE remaining** (was 733 before Pass A). The stale 872-dispatch-era audit
+(389 untraced) is superseded by this census.
+
+**Pass A executed (PAPER_2141 bulk pattern):** 200 exact-precision SI literals (ħ, k_B, e,
+h, G) promoted to five named observed anchors (HBAR_OBSERVED etc.) — bit-identical numerics,
+gate green, backup `uqff_calculator.py.PRE_SI_DRAIN_BACKUP`.
+
+**RULING REQUESTED (1) — rounded-variant unification:** ~62 sites carry ROUNDED versions
+(1.0546e-34 ×15, 1.055e-34 ×12, 1.381e-23 ×12, 1.38e-23 ×6, 1.602e-19 ×17). Unifying them
+to the full-precision named anchors WOULD shift outputs in the last digits (breaking
+bit-identity with paper-stated values). Options: (a) unify and re-pin gate values,
+(b) leave as paper-precision literals with anchor comments, (c) case-by-case.
+
+**RULING REQUESTED (2) — Q-RULE4-TIER2, still open from v0.364.0:** the 29 classical-envelope
+papers await your a/b/c choice (keep as ANCHORED_CLASSICAL / blank to OPEN / case-by-case).
+
+**Remaining drain queue (post-Pass-A):** 685 functions, dominated by domain observed-anchors
+(solar radius, particle masses, event parameters) needing anchor comments, plus candidate
+primitive promotions (e.g. b0_qcd 11−(2/3)n_f integers, braking-index 0.375 = 3/8 class,
+detection_volume 0.333 = 1/3 class). Worked in batches on your GO.
+
+---
+
+## v0.382.0-trail — 2026-08-16 — ship state
+
+Open items at ship: (1) rounded-variant unification ruling (62+ sites incl. MPC_TO_M_R4 /
+M_SUN_OBSERVED_R3 named-but-separate); (2) Q-RULE4-TIER2 29-paper a/b/c ruling; (3) 662
+UNTRACED_CORE long-tail (event/system anchors, batch-comment work); (4) 26.0-literal class
+(233 tokens) deferred — value-coincidence risk, needs semantic pass; (5) file-rename option
+for alias numbers (Daniel deferred "for now").

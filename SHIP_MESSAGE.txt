@@ -1,16 +1,19 @@
-v0.381.0 - THE CORPUS-COMPLETE SHIP: sequential drain PAPER_001 -> PAPER_2156 DONE
+v0.382.0 - POST-DRAIN CONSOLIDATION: audit + alias numbers + twin absorption + constant drain
 
-The campaign chartered 2026-07-28 completes its numeric drain: every numbered paper
-001-2159 dispatched except RESERVED 1796-1799 (census gate-pinned live; terminus
-self-declared in PAPER_2156). 76 dispatches ship across bands 2081-2156.
+END-OF-DRAIN AUDIT (decision C): live census clean; 9.47e-27 forensics CLOSED
+(= SM rho_crit at H0=71.00, 0.004%; 1.894 = 9.47/5.0 exact; source PAPER_495);
+numbering mirror resolved (shared lineage, 2118 fork); ledger guard hardened
+column-anchored after masking 4+25 holes (repaired).
 
-Headlines: vacuum coupling kernel F_TRZ*K_MEX*SSq = 19/160 EXACT (5 instances);
-tilt 2nd route F_TRZ*Phi_5/6 = 1/12 (59/116 catalog saturation); Phi_res = 21/25
-EXACT grounded; halving series {2,3,5,13} complete; H_0 = A_5+SO_5 = 70 EXACT
-(47.6x, route family closed); Friedmann-lock wired as its honest walkback;
-ONTOLOGY DECLARATION Answer B; Hybrid-Form Doctrine; J/m3-native discipline
-(13.4% rho_Lambda OPEN); SCm+UA joint engine (F_TRZ locked, HEP-collider-only);
-Q_phonon = 25/4 + D_GW = 2/3 (reduction landmarks 4&5); 933/935-paper
-by-reference corrections. The numbering mirror is SYSTEMATIC (6 pairs).
+ALIAS NUMBERS (Daniel ruling, last used 2178): 2179-2233 assigned to all
+suffixed/lettered/S-phase/twin papers; next paper = PAPER_2234.
 
-Gate 5,602/0. Dispatches 2,208. Next: the END-OF-DRAIN AUDIT (decision C).
+ABSORPTION PASS (Daniel-caught count error): 39 same-number twin groups -
+21 twin dispatches wired (Tier Q/R/R-prime EXACT suites, KB v7, Canonical v1.5),
+12 UPDATE addenda folded.
+
+CONSTANT DRAIN A-C: 448 literal->name promotions (SI 200, SSq de-dup 22,
+M_sun 70, c-convention 56, domain anchors 100), bit-identical, gate-verified;
+UNTRACED_CORE 733 -> 662. Two rulings queued.
+
+Gate 5,629/0. Dispatches 2,229 (2,284 keys).

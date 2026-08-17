@@ -7,6 +7,30 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.382.0 — 2026-08-16 — POST-DRAIN CONSOLIDATION
+
+Four arcs on top of the corpus-complete v0.381.0:
+
+- **END-OF-DRAIN AUDIT (decision C discharged):** `AUDIT_END_OF_DRAIN_REPORT.md` — live census
+  (0 exec errors; median nonzero residual 0.086%); **9.47e-27 forensics CLOSED** (= SM
+  ρ_crit at H₀ = 71.00 to 0.004%, source PAPER_495; 1.894 = 9.47/5.0 exact); numbering
+  mirror RESOLVED (shared lineage; 2118 = fork); LEDGER-COVERAGE guard hardened to
+  column-anchored after substring matching masked 4 registry + 25 citations holes
+  (repaired, LEDGER_REPAIR-marked); 2 undisclosed worst-tier residuals disclosed.
+- **CANONICAL ALIAS NUMBERS (Daniel ruling: last used = 2178):** 2179-2212 for the 34
+  suffixed/lettered/S-phase keys; extension 2213-2233 for the absorption twins; map = 55,
+  gate-pinned contiguous; **next paper = PAPER_2234.**
+- **ABSORPTION PASS (Daniel-caught):** 39 same-number twin groups dispositioned — 21 twin
+  dispatches wired (Tier Q/R/R′ suites: QHE ν=2, Abrikosov 60, H-ionization 13.6 EXACT;
+  KB v7; Canonical v1.5), 12 UPDATE addenda folded (UPDATE_ABSORPTION_MAP), P026d keV/GeV
+  unit drift disclosed OPEN.
+- **CONSTANT DRAIN passes A-C:** fresh 4,155-function audit (supersedes 872-era census);
+  **448 literal→name promotions** (SI ×200; SSq de-dup ×22 + M_sun ×70 + c ×56; domain
+  anchors ×100) — tokenize-precise, every pass gate-verified bit-identical; UNTRACED_CORE
+  733 → 662; two rulings queued (rounded variants; Tier-2 29).
+- Gate 5,602 → 5,629. Backup: `uqff_calculator.py.PRE_SI_DRAIN_BACKUP`.
+
+
 ## v0.381.0 — 2026-08-16 — THE CORPUS-COMPLETE SHIP
 
 **The sequential drain PAPER_001 → PAPER_2156 is DONE** (chartered 2026-07-28; only RESERVED

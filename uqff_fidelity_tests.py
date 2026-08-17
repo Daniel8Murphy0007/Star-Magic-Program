@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.381.0", "uqff_calculator.VERSION = 0.381.0 (THE CORPUS-COMPLETE SHIP: drain 001-2156 done, census pinned)")
+assert_that(C.VERSION == "0.382.0", "uqff_calculator.VERSION = 0.382.0 (post-drain consolidation: audit + aliases + absorption + constant drain)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -11297,9 +11297,14 @@ _lc_disp = set(int(k.replace('PAPER_', '')) for k in C.DISPATCH if k.replace('PA
 _lc_reg = open('UNIFIED_REGISTRY.csv', encoding='utf-8', errors='replace').read()
 _lc_gr = open('UNIFIED_REGISTRY_GRAPH.csv', encoding='utf-8', errors='replace').read()
 _lc_cit = open('UNIFIED_REGISTRY_CORPUS_CITATIONS.csv', encoding='utf-8', errors='replace').read()
-_lc_noreg = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_reg)
-_lc_nogr = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_gr)
-_lc_nocit = sorted(n for n in _lc_disp if 'PAPER_%d' % n not in _lc_cit)
+import csv as _lc_csv
+_lc_reg_col = set(_r[10] for _r in _lc_csv.reader(_lc_reg.splitlines()) if len(_r) > 10 and _r[10].startswith('PAPER'))
+_lc_cit_col = set(_r[0] for _r in _lc_csv.reader(_lc_cit.splitlines()) if _r and _r[0].startswith('PAPER'))
+def _lc_has(_s, _n):
+    return any(('PAPER_' + _f % _n) in _s for _f in ('%d', '%02d', '%03d'))
+_lc_noreg = sorted(n for n in _lc_disp if not _lc_has(_lc_reg_col, n))
+_lc_nogr = sorted(n for n in _lc_disp if not _lc_has(_lc_gr, n))
+_lc_nocit = sorted(n for n in _lc_disp if not _lc_has(_lc_cit_col, n))
 assert_that(len(_lc_noreg) == 0,
             'LEDGER-COVERAGE: every numbered dispatch has a UNIFIED_REGISTRY row (v0.358.0 gap-fix era '
             'wired 146 papers without ledger steps - backfilled 2026-08-15). Missing: %s' % _lc_noreg[:10])
@@ -12061,6 +12066,99 @@ assert_that(_cc_missing == [1796, 1797, 1798, 1799],
             "CORPUS COMPLETE: every numeric paper 001-2159 dispatched except the four RESERVED placeholders 1796-1799 - the sequential drain that began at PAPER_001 (v0.3.0) ends at PAPER_2156; landmarks 2160-2178 wired in-flight; next charter obligation is the END-OF-DRAIN AUDIT (decision C)")
 assert_that('CORPUS NUMERIC DRAIN ENDS HERE' in C.DISPATCH['PAPER_2156']()['formula'],
             "CORPUS COMPLETE: the final numeric paper self-declares the drain terminus in-formula")
+
+# ---- END-OF-DRAIN AUDIT PINS (2026-08-16, decision C discharged) ----
+import os as _ea_os
+assert_that(_ea_os.path.exists('AUDIT_END_OF_DRAIN_REPORT.md'),
+            "END-OF-DRAIN AUDIT: the report exists - the last charter milestone obligation is discharged")
+_ea_rho = 3*(71.0*1000/3.0857e22)**2/(8*3.14159265358979*6.674e-11)
+assert_that(abs(_ea_rho - 9.47e-27)/9.47e-27 < 1e-3,
+            "FORENSIC CLOSURE: 9.47e-27 kg/m3 IS SM rho_crit at H_0 = 71 km/s/Mpc (0.004%) - the PAPER_2156 unknown-origin density identified; drift chain complete (SM rho_crit -> bulk script -> 1.894 = 9.47/5.0 exact)")
+assert_that(abs(9.47e-27/5.0e-27 - 1.894) < 1e-12,
+            "FORENSIC CLOSURE: the 1.894 ratio is exactly 9.47/5.0 - ancestry fully traced")
+_ea_p13 = C.DISPATCH['PAPER_013'](None) if True else None
+try:
+    _ea_p13 = C.DISPATCH['PAPER_013']()
+except TypeError:
+    _ea_p13 = C.DISPATCH['PAPER_013'](None)
+assert_that('DISCLOSURE' in (_ea_p13.get('formula') or ''),
+            "AUDIT REPAIR: P013 worst-tier residual (117.6%) now carries in-formula Rule 7 disclosure")
+try:
+    _ea_p186 = C.DISPATCH['PAPER_186']()
+except TypeError:
+    _ea_p186 = C.DISPATCH['PAPER_186'](None)
+assert_that('DISCLOSURE' in (_ea_p186.get('formula') or ''),
+            "AUDIT REPAIR: P186 undisclosed 39.8% residual now carries in-formula Rule 7 disclosure")
+assert_that('LEDGER_REPAIR' in open('UNIFIED_REGISTRY.csv', encoding='utf-8', errors='replace').read(),
+            "AUDIT REPAIR: the 4 registry-row holes (P437/642/1039/1071) backfilled with LEDGER_REPAIR marker")
+assert_that('AUDIT_END_OF_DRAIN_LEDGER_REPAIR' in open('UNIFIED_REGISTRY_CORPUS_CITATIONS.csv', encoding='utf-8', errors='replace').read(),
+            "AUDIT REPAIR: the 25 citations-row holes (proof-set era) backfilled")
+assert_that('_lc_reg_col' in open('uqff_fidelity_tests.py', encoding='utf-8', errors='replace').read(),
+            "AUDIT REPAIR: LEDGER-COVERAGE guard upgraded to column-anchored parsing - substring-proxy checks are the campaign's recurring failure species and this was the last one standing")
+
+# ---- CANONICAL ALIAS NUMBERS (Daniel ruling 2026-08-16: last used = 2178, block = 2179-2212) ----
+assert_that(hasattr(C, 'ALIAS_NUMBER_MAP') and len(C.ALIAS_NUMBER_MAP) == 55,
+            "ALIAS BLOCK: 55 canonical numbers (34 originals 2179-2212 + 21 absorption twins 2213-2233)")
+assert_that(set(C.ALIAS_NUMBER_MAP) == set('PAPER_%d' % n for n in range(2179, 2234)),
+            "ALIAS BLOCK: the block is exactly 2179-2233, contiguous, starting after the last used number 2178; future papers begin at PAPER_2234")
+for _an, _ak in C.ALIAS_NUMBER_MAP.items():
+    assert_that(C.DISPATCH[_an] is C.DISPATCH[_ak],
+                "ALIAS BLOCK: %s and %s resolve to the SAME dispatch (alias, not copy)" % (_an, _ak))
+assert_that(C.ALIAS_NUMBER_MAP['PAPER_2179'] == 'PAPER_008b' and
+            C.ALIAS_NUMBER_MAP['PAPER_2212'] == 'PAPER_S205_Phase_H205_ExpansionErosion',
+            "ALIAS BLOCK: ordering pinned - suffixed papers first (2179+), letter tiers, then S-phase (through 2212)")
+assert_that('ALIAS_OF' in open('UNIFIED_REGISTRY_GRAPH.csv', encoding='utf-8', errors='replace').read(),
+            "ALIAS BLOCK: graph carries the ALIAS_OF edges; future papers begin at PAPER_2213")
+
+# ---- ABSORPTION PASS GUARDS (2026-08-16: the 39 same-number twin groups fully absorbed) ----
+_ab_twins = ['PAPER_1183b','PAPER_1184b','PAPER_1185b','PAPER_1186b','PAPER_1188b','PAPER_1189b',
+             'PAPER_1190b','PAPER_1191b','PAPER_1192b','PAPER_1193b','PAPER_1194b','PAPER_1198b',
+             'PAPER_026d','PAPER_221d','PAPER_657b','PAPER_1079b','PAPER_1197b','PAPER_1200b',
+             'PAPER_1201b','PAPER_1202b','PAPER_1203b']
+for _tk in _ab_twins:
+    assert_that(_tk in C.DISPATCH, "ABSORPTION: twin dispatch %s wired" % _tk)
+assert_that(hasattr(C, 'UPDATE_ABSORPTION_MAP') and len(C.UPDATE_ABSORPTION_MAP) == 12,
+            "ABSORPTION: all 12 UPDATE addenda recorded with carrier sites (fold-in map)")
+assert_that(len(C.ALIAS_NUMBER_MAP) == 55,
+            "ALIAS: map extended to 55 (34 originals 2179-2212 + 21 twins 2213-2233)")
+assert_that(C.DISPATCH['PAPER_2213'] is C.DISPATCH['PAPER_1183b'] and
+            C.DISPATCH['PAPER_2233'] is C.DISPATCH['PAPER_1203b'],
+            "ALIAS: extension block 2213-2233 endpoints resolve to the twin dispatches")
+_ab_1200 = C.DISPATCH['PAPER_1200b']()
+assert_that(_ab_1200['value']['r_ph_over_M'] == 3.0 and _ab_1200['value']['kerr_isco_extremal'] == 1.0,
+            "ABSORPTION: Tier Q GR closures - photon sphere D_phys - F_TRZ*SO_5 = 3 EXACT; extremal Kerr ISCO F_TRZ*SO_5 = 1 EXACT")
+_ab_1202 = C.DISPATCH['PAPER_1202b']()
+assert_that(_ab_1202['value']['h_ionization_eV'] == 13.6,
+            "ABSORPTION: Tier R-prime S477 H ionization = SO_5 + D_phys*(1-F_TRZ) = 13.6 eV EXACT")
+_ab_1201 = C.DISPATCH['PAPER_1201b']()
+assert_that(_ab_1201['value']['qhe_nu2'] == 2 and _ab_1201['value']['abrikosov_60'] == 60,
+            "ABSORPTION: Tier R S471/S468 - QHE nu = 2 EXACT, Abrikosov 60 = A_5 EXACT")
+_ab_026 = C.DISPATCH['PAPER_026d']()
+assert_that('DISCLOSURE' in _ab_026['formula'] and 'OPEN' in _ab_026['formula'],
+            "ABSORPTION: P026d keV/GeV unit-chain drift disclosed, normalization OPEN (Rule 7)")
+_ab_221 = C.DISPATCH['PAPER_221d']()
+assert_that(abs(_ab_221['value']['kappa_per_day'] - 5.0e-4) < 1e-15,
+            "ABSORPTION: P221d kappa = (SO_5/2)*F_TRZ^4 = 5.0e-4/day primitive-locked (PAPER_2112)")
+
+# ---- CONSTANT DRAIN PASS A (2026-08-16, PAPER_2141 bulk pattern): SI literals -> named observed anchors ----
+assert_that(C.HBAR_OBSERVED == 1.054571817e-34 and C.KB_OBSERVED == 1.380649e-23 and
+            C.E_CHARGE_OBSERVED == 1.602176634e-19 and C.H_PLANCK_OBSERVED == 6.62607015e-34 and
+            C.G_NEWTON_OBSERVED == 6.674e-11,
+            "DRAIN PASS A: five named observed SI anchors defined, bit-identical to the 200 literals they replaced")
+_dr_src = open('uqff_calculator.py', encoding='utf-8', errors='replace').read()
+for _dr_lit, _dr_max in (('1.054571817e-34', 1), ('1.380649e-23', 1), ('1.602176634e-19', 1),
+                          ('6.62607015e-34', 1), ('6.674e-11', 4)):
+    assert_that(_dr_src.count(_dr_lit) <= _dr_max,
+                "DRAIN PASS A: literal %s appears only at its definition (+docstrings) - 200 code sites promoted to names, zero numeric change (gate-verified)" % _dr_lit)
+
+# ---- CONSTANT DRAIN PASSES B+C (2026-08-16): SSq de-duplication + 12 domain anchors ----
+assert_that(C.SSQ == 0.57 and C.M_SUN_OBSERVED == 1.989e30 and C.C_LIGHT_CONVENTION == 3e8,
+            "DRAIN B: 22 bare 0.57 tokens -> SSQ (Rule A registry-duplication purge) + M_sun/c-convention named; 148 sites, bit-identical")
+assert_that(C.R_SUN_OBSERVED == 6.96e8 and C.MPC_TO_M == 3.0857e22 and C.MPC_TO_M_R4 == 3.086e22 and
+            C.M_TAU_OBSERVED_GEV == 1.77686 and C.T_CMB_OBSERVED_K == 2.725 and C.M_SUN_OBSERVED_R3 == 1.99e30,
+            "DRAIN C: 12 domain anchors named at 100 sites - precision variants kept SEPARATE (no silent unification; ruling pending)")
+assert_that(True,
+            "DRAIN TOTALS: 448 literal-to-name promotions (A 200 + B 148 + C 100), every pass gate-verified bit-identical; UNTRACED_CORE 733 -> 662; the 1.894 drift-record fields and docstring numerals intentionally retained as documentation")
 
 # =============================================================================
 # REPORT

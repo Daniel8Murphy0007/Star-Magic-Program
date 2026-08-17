@@ -36,7 +36,69 @@
 
 - **Total whitepaper files:** 2245 files spanning PAPER_1-2156 (2,156 distinct numbers, **zero numbering gaps**; some base numbers carry 2-3 variant files). The index table carries 2255 file-rows.
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
-- **Distinct wired papers: 2,208** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
+## CANONICAL ALIAS NUMBERS (assigned 2026-08-16, Daniel ruling: last number used = 2178)
+
+Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. Future papers begin at **PAPER_2234**.
+
+| Number (PAPER_) | Original key |
+|---|---|
+| 2179 | PAPER_008b |
+| 2180 | PAPER_009b |
+| 2181 | PAPER_010b |
+| 2182 | PAPER_011b |
+| 2183 | PAPER_012b |
+| 2184 | PAPER_013b |
+| 2185 | PAPER_014b |
+| 2186 | PAPER_015b |
+| 2187 | PAPER_016b |
+| 2188 | PAPER_025b |
+| 2189 | PAPER_026b |
+| 2190 | PAPER_026c |
+| 2191 | PAPER_221b |
+| 2192 | PAPER_221c |
+| 2193 | PAPER_376b |
+| 2194 | PAPER_1209X |
+| 2195 | PAPER_1209Y |
+| 2196 | PAPER_1209Z |
+| 2197 | PAPER_1209AA |
+| 2198 | PAPER_1209BB |
+| 2199 | PAPER_1209CC |
+| 2200 | PAPER_1209DD |
+| 2201 | PAPER_1209EE |
+| 2202 | PAPER_1209FF |
+| 2203 | PAPER_1209GG |
+| 2204 | PAPER_1209HH |
+| 2205 | PAPER_1209II |
+| 2206 | PAPER_1209JJ |
+| 2207 | PAPER_1209KK |
+| 2208 | PAPER_S201_Phase_H201_NullExtraction |
+| 2209 | PAPER_S202_Phase_H202_VariantBranches |
+| 2210 | PAPER_S203_Phase_H203_PTF |
+| 2211 | PAPER_S204_Phase_H204_GapClosure |
+| 2212 | PAPER_S205_Phase_H205_ExpansionErosion |
+| 2213 | PAPER_1183b |
+| 2214 | PAPER_1184b |
+| 2215 | PAPER_1185b |
+| 2216 | PAPER_1186b |
+| 2217 | PAPER_1188b |
+| 2218 | PAPER_1189b |
+| 2219 | PAPER_1190b |
+| 2220 | PAPER_1191b |
+| 2221 | PAPER_1192b |
+| 2222 | PAPER_1193b |
+| 2223 | PAPER_1194b |
+| 2224 | PAPER_1198b |
+| 2225 | PAPER_026d |
+| 2226 | PAPER_221d |
+| 2227 | PAPER_657b |
+| 2228 | PAPER_1079b |
+| 2229 | PAPER_1197b |
+| 2230 | PAPER_1200b |
+| 2231 | PAPER_1201b |
+| 2232 | PAPER_1202b |
+| 2233 | PAPER_1203b |
+
+- **Distinct wired papers: 2,229 (+55 canonical alias numbers 2179-2233; 2,284 DISPATCH keys). Absorption pass 2026-08-16: 21 twin dispatches + 12 UPDATE folds.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
 - **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0

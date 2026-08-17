@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.381.0"
-description = "Star-Magic UQFF calculator v0.381.0: THE CORPUS-COMPLETE SHIP. 2,208 dispatches, gate 5,602/0. Sequential drain PAPER_001->PAPER_2156 DONE (only RESERVED 1796-1799 absent; census gate-pinned). Final bands: vacuum coupling kernel 19/160 EXACT; tilt F_TRZ*Phi_5/6=1/12 (59/116 saturation); Phi_res=21/25 grounded; halving {2,3,5,13}; H_0=A_5+SO_5=70 (47.6x); Ontology Answer B; Hybrid-Form; SCm+UA engine; Q=25/4, D_GW=2/3. Numbering mirror systematic. End-of-drain audit next."
+version = "0.382.0"
+description = "Star-Magic UQFF calculator v0.382.0: POST-DRAIN CONSOLIDATION. 2,229 dispatches (2,284 keys), gate 5,629/0. End-of-drain audit (decision C): forensic closure 9.47e-27 = SM rho_crit(H0=71); ledger guard hardened. Canonical alias numbers 2179-2233 for all suffixed/lettered/S-phase papers. Absorption pass: 21 same-number twin papers wired (Daniel-caught), 12 UPDATE addenda folded. Constant drain: 448 literal-to-name promotions (SSq de-dup + SI + domain anchors), bit-identical."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

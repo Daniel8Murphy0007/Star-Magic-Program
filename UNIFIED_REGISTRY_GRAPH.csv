@@ -12045,3 +12045,100 @@ s204_5_unit_tag_audit,PAPER_2155,BAND_2151_2156,,
 PRIMITIVE,F_TRZ,observable,ratio_1894_artifact,PAPER_2156
 ratio_1894_artifact,PAPER_2156,BAND_2151_2156,,
 CORPUS,COMPLETE,terminus,PAPER_2156,sequential drain 001-2156 ends 2026-08-16
+PAPER_2179,ALIAS_OF,PAPER_008b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2180,ALIAS_OF,PAPER_009b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2181,ALIAS_OF,PAPER_010b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2182,ALIAS_OF,PAPER_011b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2183,ALIAS_OF,PAPER_012b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2184,ALIAS_OF,PAPER_013b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2185,ALIAS_OF,PAPER_014b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2186,ALIAS_OF,PAPER_015b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2187,ALIAS_OF,PAPER_016b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2188,ALIAS_OF,PAPER_025b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2189,ALIAS_OF,PAPER_026b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2190,ALIAS_OF,PAPER_026c,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2191,ALIAS_OF,PAPER_221b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2192,ALIAS_OF,PAPER_221c,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2193,ALIAS_OF,PAPER_376b,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2194,ALIAS_OF,PAPER_1209X,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2195,ALIAS_OF,PAPER_1209Y,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2196,ALIAS_OF,PAPER_1209Z,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2197,ALIAS_OF,PAPER_1209AA,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2198,ALIAS_OF,PAPER_1209BB,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2199,ALIAS_OF,PAPER_1209CC,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2200,ALIAS_OF,PAPER_1209DD,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2201,ALIAS_OF,PAPER_1209EE,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2202,ALIAS_OF,PAPER_1209FF,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2203,ALIAS_OF,PAPER_1209GG,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2204,ALIAS_OF,PAPER_1209HH,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2205,ALIAS_OF,PAPER_1209II,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2206,ALIAS_OF,PAPER_1209JJ,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2207,ALIAS_OF,PAPER_1209KK,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2208,ALIAS_OF,PAPER_S201_Phase_H201_NullExtraction,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2209,ALIAS_OF,PAPER_S202_Phase_H202_VariantBranches,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2210,ALIAS_OF,PAPER_S203_Phase_H203_PTF,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2211,ALIAS_OF,PAPER_S204_Phase_H204_GapClosure,,Daniel ruling 2026-08-16: block 2179-2212
+PAPER_2212,ALIAS_OF,PAPER_S205_Phase_H205_ExpansionErosion,,Daniel ruling 2026-08-16: block 2179-2212
+aggressive_paradox_set,PAPER_1183b,TWIN_OF,PAPER_1183,absorption pass
+aggressive_paradox_set,PAPER_1183b,ABSORPTION_PASS_2026_08_16,,
+open_problems_set,PAPER_1184b,TWIN_OF,PAPER_1184,absorption pass
+open_problems_set,PAPER_1184b,ABSORPTION_PASS_2026_08_16,,
+quantum_gravity_set,PAPER_1185b,TWIN_OF,PAPER_1185,absorption pass
+quantum_gravity_set,PAPER_1185b,ABSORPTION_PASS_2026_08_16,,
+standard_model_set,PAPER_1186b,TWIN_OF,PAPER_1186,absorption pass
+standard_model_set,PAPER_1186b,ABSORPTION_PASS_2026_08_16,,
+number_theory_frontier,PAPER_1188b,TWIN_OF,PAPER_1188,absorption pass
+number_theory_frontier,PAPER_1188b,ABSORPTION_PASS_2026_08_16,,
+chemistry_atomic_set,PAPER_1189b,TWIN_OF,PAPER_1189,absorption pass
+chemistry_atomic_set,PAPER_1189b,ABSORPTION_PASS_2026_08_16,,
+math_constants_set,PAPER_1190b,TWIN_OF,PAPER_1190,absorption pass
+math_constants_set,PAPER_1190b,ABSORPTION_PASS_2026_08_16,,
+cosmology_deepset,PAPER_1191b,TWIN_OF,PAPER_1191,absorption pass
+cosmology_deepset,PAPER_1191b,ABSORPTION_PASS_2026_08_16,,
+sm_deepcuts_set,PAPER_1192b,TWIN_OF,PAPER_1192,absorption pass
+sm_deepcuts_set,PAPER_1192b,ABSORPTION_PASS_2026_08_16,,
+astrophysics_set,PAPER_1193b,TWIN_OF,PAPER_1193,absorption pass
+astrophysics_set,PAPER_1193b,ABSORPTION_PASS_2026_08_16,,
+condensed_matter_set,PAPER_1194b,TWIN_OF,PAPER_1194,absorption pass
+condensed_matter_set,PAPER_1194b,ABSORPTION_PASS_2026_08_16,,
+particle_physics_set,PAPER_1198b,TWIN_OF,PAPER_1198,absorption pass
+particle_physics_set,PAPER_1198b,ABSORPTION_PASS_2026_08_16,,
+sterile_neutrino_short,PAPER_026d,TWIN_OF,PAPER_026,absorption pass
+sterile_neutrino_short,PAPER_026d,ABSORPTION_PASS_2026_08_16,,
+bubble_expansion_twin,PAPER_221d,TWIN_OF,PAPER_221,absorption pass
+bubble_expansion_twin,PAPER_221d,ABSORPTION_PASS_2026_08_16,,
+knowledge_base_7,PAPER_657b,TWIN_OF,PAPER_657,absorption pass
+knowledge_base_7,PAPER_657b,ABSORPTION_PASS_2026_08_16,,
+cluster_cooling_suppression,PAPER_1079b,TWIN_OF,PAPER_1079,absorption pass
+cluster_cooling_suppression,PAPER_1079b,ABSORPTION_PASS_2026_08_16,,
+geophysics_atmo_set,PAPER_1197b,TWIN_OF,PAPER_1197,absorption pass
+geophysics_atmo_set,PAPER_1197b,ABSORPTION_PASS_2026_08_16,,
+gr_precision_tier_q,PAPER_1200b,TWIN_OF,PAPER_1200,absorption pass
+gr_precision_tier_q,PAPER_1200b,ABSORPTION_PASS_2026_08_16,,
+materials_tier_r,PAPER_1201b,TWIN_OF,PAPER_1201,absorption pass
+materials_tier_r,PAPER_1201b,ABSORPTION_PASS_2026_08_16,,
+chemistry_tier_r_prime,PAPER_1202b,TWIN_OF,PAPER_1202,absorption pass
+chemistry_tier_r_prime,PAPER_1202b,ABSORPTION_PASS_2026_08_16,,
+canonical_v15_solver,PAPER_1203b,TWIN_OF,PAPER_1203,absorption pass
+canonical_v15_solver,PAPER_1203b,ABSORPTION_PASS_2026_08_16,,
+PAPER_2213,ALIAS_OF,PAPER_1183b,,extension block 2213-2233
+PAPER_2214,ALIAS_OF,PAPER_1184b,,extension block 2213-2233
+PAPER_2215,ALIAS_OF,PAPER_1185b,,extension block 2213-2233
+PAPER_2216,ALIAS_OF,PAPER_1186b,,extension block 2213-2233
+PAPER_2217,ALIAS_OF,PAPER_1188b,,extension block 2213-2233
+PAPER_2218,ALIAS_OF,PAPER_1189b,,extension block 2213-2233
+PAPER_2219,ALIAS_OF,PAPER_1190b,,extension block 2213-2233
+PAPER_2220,ALIAS_OF,PAPER_1191b,,extension block 2213-2233
+PAPER_2221,ALIAS_OF,PAPER_1192b,,extension block 2213-2233
+PAPER_2222,ALIAS_OF,PAPER_1193b,,extension block 2213-2233
+PAPER_2223,ALIAS_OF,PAPER_1194b,,extension block 2213-2233
+PAPER_2224,ALIAS_OF,PAPER_1198b,,extension block 2213-2233
+PAPER_2225,ALIAS_OF,PAPER_026d,,extension block 2213-2233
+PAPER_2226,ALIAS_OF,PAPER_221d,,extension block 2213-2233
+PAPER_2227,ALIAS_OF,PAPER_657b,,extension block 2213-2233
+PAPER_2228,ALIAS_OF,PAPER_1079b,,extension block 2213-2233
+PAPER_2229,ALIAS_OF,PAPER_1197b,,extension block 2213-2233
+PAPER_2230,ALIAS_OF,PAPER_1200b,,extension block 2213-2233
+PAPER_2231,ALIAS_OF,PAPER_1201b,,extension block 2213-2233
+PAPER_2232,ALIAS_OF,PAPER_1202b,,extension block 2213-2233
+PAPER_2233,ALIAS_OF,PAPER_1203b,,extension block 2213-2233
