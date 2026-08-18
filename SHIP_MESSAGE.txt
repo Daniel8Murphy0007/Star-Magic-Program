@@ -1,16 +1,16 @@
-v0.383.0 - THE DRAIN RATCHET SHIP: 920 constants named, core monotone, PAPER_2234 wired
+v0.384.0 - THE PROVENANCE SHIP: pi origin layer + Tier-2 collapse + drain terminal
 
-Constant drain campaign phase complete: 920 bit-identical literal->name
-promotions across 5 passes (SI five x200; SSq/omega_SCm/alpha-ledger registry
-de-duplications; all-233 26.0->D_CRIT_F semantic pass, zero value-coincidence;
-domain anchors). UNTRACED_CORE 733 -> 626, gate-pinned MONOTONE (the ratchet -
-which caught its own first offender within the hour).
+PAPER_2235 (pi the third canonical) authored + wired, then the Daniel-directed
+re-analysis found the seminal layer: the Aetheric Propulsion PI archive -
+handwritten Pi_001-035 series, Feb-2025 Aetheric PI Math (t_neg = -2512 s and
+the 555:1 reactor COP ORIGINATE there), 2-quadrillion-digit notes, an unmined
+C++ PI Calculator. Provenance appended + gate-pinned.
 
-Open physics: Kerr QNM mechanism RESOLVED (P1876, omega_I = F_TRZ*(1-F_TRZ*
-(K_MEX-1)) at 0.19%); cuprate 125 K = (hbar*omega_SCm/k_B)*K_MEX cross-linked;
-rare-earth A~165 held OPEN with the drift documented; pair-count + Ug4 OPEN
-per Rules 10/D.
+Tier-2 mine (Daniel-ordered, 572 session scripts + AP source docs): 29 papers
+-> 18 RESOLVED / 8 PARTIAL / 3 for ruling (1042/1047/1177). Flagships:
+w_UQFF = -1 + F_TRZ*Phi_res/N_ch; perihelion from primitives; T_SCm chain;
+CGM + NGC 1275 via the AP U-machinery source docs.
 
-PAPER_2234 campaign-completion landmark authored + wired. Next: PAPER_2235.
-
-Gate 5,639/0. Dispatches 2,230 (2,285 keys).
+Drain terminal: 979 bit-identical promotions (passes A-E + the 233-token 26.0
+semantic pass); ATTRIBUTION TERMINAL GUARD at ZERO unattributed functions.
+Kerr QNM mechanism resolved (P1876). Gate 5,648/0. Next paper: PAPER_2236.

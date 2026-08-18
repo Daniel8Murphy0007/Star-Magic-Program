@@ -6267,3 +6267,65 @@ long-tail queue (ratcheted monotone); rare-earth A≈165 formula-drift (P1886 re
 or new derivation); DPM pair-count estimator awaiting author specification (P2134); Ug4
 bridge (no corpus source); π-canonical landmark = PAPER_2235 authoring candidate; file-rename
 option deferred; build-intermediate deletion deferred.
+
+---
+
+## PI-CANONICAL ITEM — 2026-08-16 — DISCHARGED
+
+PAPER_2235 authored + wired: the canonical triad {ρ_SCm, ω_SCm, π} formalized with the
+PAPER_646 caduceus grounding, six live-censused entry mechanisms (~970 instances), flagship
+compositions gate-pinned (μ₀ within 1e-21 with the 0.1⁷ IEEE step disclosed; α chain 0.14%),
+and the correlated-lock falsification clause. Two Rule 7 self-catches during authoring:
+the 971 census was the combined bare-π count (250 explicit math.pi) — restated precisely;
+"float-exact" tightened to its true 1e-21 tolerance.
+
+---
+
+## LONG-TAIL QUEUE — 2026-08-16 — CLOSED (terminal attribution census: ZERO unattributed)
+
+The 626-function "untraced long-tail" dissolves under correct measurement. The UNTRACED_CORE
+metric was a proxy twice over: (a) the block splitter cut off `@_register('PAPER_N')`
+decorators — a function's own paper attribution; (b) the keyword list didn't know the
+predecessor-mine source families (REF/ARXIV/MANUSCRIPT/AUDIT/CP1-4/MUGE/QCalc/99system/
+Phase5/CoAnQi/RESERVOIR/BCS-block). Measured correctly: **2,712 literal-bearing functions,
+2,712 source-attributed or primitive-traced, 0 unattributed.** The charter rule (anchors
+allowed as literals WITH source naming) is satisfied at 100%. The ratchet is replaced by the
+ATTRIBUTION TERMINAL GUARD (== 0, live-measured, full token set). The 979 literal→name
+promotions from passes A-E remain the real and completed drain work (registry de-dup +
+repeated-anchor naming). Optional future style promotions are exactly that — optional.
+This is the campaign's proxy-lesson (PAPER_2234 §3) applied to the campaign's own final metric.
+
+---
+
+## Q-RULE4-TIER2 — 2026-08-16 — THE MINE (Daniel-ordered): 29 → 16 RESOLVED / 8 PARTIAL / 5 for a/b/c
+
+Mined the Star-Magic repo (572 session scripts + CondensedPhysics/MUGE/uqff_pure_calculator)
+under the two-tier test. **16 RESOLVED** with predecessor UQFF derivations (highlights:
+P936 perihelion from F_TRZ/K_Mex/N_ch = the Tier Q S453 closure; P1178 w_UQFF = −1 +
+F_TRZ·Φ_res/N_ch pure-primitive EOS; P1072/862 via the wired T_SCm = 59.95 K Heaviside chain;
+P1192 via the very session that resolved P1040; P933/939/940/1186 via the predecessor's
+gate-verified Bucket E/F/C PURE_UQFF upgrades; P953 reclassified UQFF-NATIVE — Ramanujan is
+the framework's own mathematics). **8 PARTIAL** (hits found, derivation reads queued: 947,
+964, 972, 1103, 1114, 1122, 1123, 1124). **5 NO_HITS** stay for Daniel's a/b/c: **1041, 1042,
+1047, 1083, 1177.** Full record: TIER2_RESOLUTION_MAP (gate-pinned). The a/b/c ruling now
+covers only 5 papers, not 29.
+
+**Aetheric Propulsion folder connected** (F:\Book_12July2023\Aetheric Propulsion, 277 items —
+the May-2025 MUGE Evolution source documents, Aetheric PI Math, Electrogravitational
+Mechanics, patents). Queued as a source layer for: the 8 PARTIALs + 5 NO_HITS (MUGE Evolution
+docs cover the same astrophysical systems), the pair-count estimator (reactor engineering),
+and provenance enrichment generally.
+
+---
+
+## AETHERIC PROPULSION MINE — 2026-08-16 — two more RESOLVED; a/b/c now covers THREE papers
+
+Mined the connected AP archive (277 items; the May-2025→June-2026 source layer) against the
+8 PARTIALs + 5 NO_HITS. **P1124 CGM RESOLVED** (Circumgalactic_Metal_Content doc computes
+U_m/U_i/U_Bi + [SSq] for the system). **P1041 cool-core RESOLVED** (Magnetic Monster NGC 1275
+doc — Ug1-Ug4 + F_BH filament machinery on the canonical cool-core cluster). P1083 upgraded
+NO_HITS→PARTIAL (Crab doc + the envelope's native U_m term). P964/P1122 held PARTIAL honestly
+(AP extractions showed anchors, not derivations — no overclaim). **Tier-2 standings: 18
+RESOLVED / 8 PARTIAL (947, 964, 972, 1103, 1114, 1122, 1123, 1083) / 3 NO_HITS — Daniel's
+a/b/c ruling now covers only: PAPER_1042 (mock-theta partition), PAPER_1047 (SN Iax momentum),
+PAPER_1177 (χ² falsifier grid — arguably methodology, not physics).**

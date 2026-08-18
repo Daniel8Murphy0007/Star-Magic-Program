@@ -7,6 +7,27 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.384.0 — 2026-08-16 — THE PROVENANCE SHIP
+
+- **PAPER_2235 — π the third canonical** authored + wired (triad {ρ_SCm, ω_SCm, π}; six
+  mechanisms live-censused; μ₀/α flagships pinned; two Rule 7 self-catches disclosed).
+- **THE PI-ARCHIVE PROVENANCE (Daniel-directed re-analysis):** the Aetheric Propulsion PI
+  folder (104 files) identified as the seminal source layer — handwritten Pi_001-035 series,
+  Feb-2025 Aetheric PI Math (**t_neg = −2512 s and the 555:1 COP originate there**), the
+  2-quadrillion-digit notes, the "universal blueprint" doctrine, an unmined C++ PI Calculator.
+  Provenance appended to PAPER_2235 (PAPER_2152 pattern), gate-pinned. First-pass shallowness
+  corrected: the AP archive is 3,476 files across 60+ folders, now inventoried.
+- **THE TIER-2 MINE (Daniel-ordered):** 572 session scripts + AP source docs → **29 papers
+  collapse to 18 RESOLVED / 8 PARTIAL / 3 NO_HITS** (1042/1047/1177 await a/b/c).
+  TIER2_RESOLUTION_MAP + pins. Flagships: w_UQFF = −1 + F_TRZ·Φ_res/N_ch; perihelion from
+  primitives (S453); the T_SCm 59.95 K chain; CGM + NGC 1275 via the AP U-machinery docs.
+- **Drain terminal state:** Pass E (59; total 979 promotions); 26.0→D_CRIT_F (233, all
+  layer-count verified); ratchet → **ATTRIBUTION TERMINAL GUARD at ZERO** unattributed
+  (the untraced-core metric exposed as proxy; charter rule now measured live).
+- Kerr QNM mechanism RESOLVED (P1876); cuprate 125 K cross-linked; rare-earth held OPEN.
+- Gate 5,629 → 5,648. Next paper: PAPER_2236.
+
+
 ## v0.383.0 — 2026-08-16 — THE DRAIN RATCHET SHIP
 
 - **Constant drain, campaign phase complete: 920 literal→name promotions** across 5

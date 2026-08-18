@@ -6705,3 +6705,4 @@ alias_1201b,WHITEPAPER,alias,,,canonical number for PAPER_1201b,ALIAS_NUMBER,,nu
 alias_1202b,WHITEPAPER,alias,,,canonical number for PAPER_1202b,ALIAS_NUMBER,,numbering,,PAPER_2232,,,,,,WIRED
 alias_1203b,WHITEPAPER,alias,,,canonical number for PAPER_1203b,ALIAS_NUMBER,,numbering,,PAPER_2233,,,,,,WIRED
 campaign_completion_landmark,WHITEPAPER,derived,,,PAPER_001->2233 compiled; 5 closing arcs,LANDMARK,,methodology,,PAPER_2234,,,,,,WIRED
+pi_third_canonical,WHITEPAPER,derived,caduceus 26-pinch encoding,,triad {rho_SCm omega_SCm pi},LANDMARK,0.14,foundations,,PAPER_2235,,,,,,WIRED

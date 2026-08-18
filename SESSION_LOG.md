@@ -11004,3 +11004,82 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
   header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE, RULINGS trail. New files this tag:
   PAPER_2234 whitepaper + _AUDIT_LONGTAIL_QUEUE.csv (+ evidence CSVs if untracked).
 - Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 222 — 2026-08-16 — GO 6+7: Pass E + PAPER_2235 (π the third canonical)
+
+- **Pass E (59 promotions, drain total 979):** in-core frequency scan → T_UNIVERSE_GYR (13.8 ×9),
+  YM_GAP_GEV (1.736, UQFF-canonical P1318), MU_0_OBSERVED (CODATA, P2108 derived form noted
+  NOT unified), GAMMA_SCM_PER_DAY (5e-5, KB v7), Q_WAVE_STD_J_M3 (6.33e4, P337). 700.0
+  correctly skipped (exp-overflow clamps, not one semantic thing). **Ratchet tightened
+  626 → 599** (UNTRACED_CORE 733 → 599 across A-E); queue regenerated.
+- **PAPER_2235 authored + wired:** π the third canonical — triad {ρ_SCm, ω_SCm, π}; six entry
+  mechanisms live-censused at call time (~970 π instances, 174 heartbeat sites); caduceus
+  grounding (P646); flagships pinned (μ₀ 4π·F_TRZ⁷ within 1e-21, IEEE step disclosed; α chain
+  0.138%). Two Rule 7 self-catches in authoring (census composition restated; float-exact
+  claim tightened to true tolerance). RULINGS π item DISCHARGED. **Next paper: PAPER_2236.**
+- Gate → 5,643/0. Unshipped on top of v0.383.0.
+
+## Entry 223 — 2026-08-16 — THE LONG-TAIL DISSOLVES: terminal attribution census = ZERO
+
+- Investigating the 599 "untraced" queue exposed the classifier's two proxy errors: the block
+  splitter cut `@_register` decorators (a dispatch's own paper attribution), and the keyword
+  list lacked the predecessor-mine source families. Corrected measurement over all 2,712
+  literal-bearing functions: **2,712 attributed, 0 unattributed.**
+- Ratchet replaced by the ATTRIBUTION TERMINAL GUARD (== 0, full source-token set, live).
+  Queue file finalized CLOSED. RULINGS long-tail item closed with the proxy-lesson
+  self-application note (PAPER_2234 §3 eating its own cooking).
+- Drain scoreboard final: **979 literal→name promotions** (real work: registry de-dup +
+  repeated-anchor naming, all bit-identical) + 100% source attribution (was always true;
+  now measured truly and guarded at zero).
+- Gate 5,643/0 green. Unshipped: Pass E, PAPER_2235, terminal guard, closures.
+
+## Entry 224 — 2026-08-16 — THE TIER-2 MINE (Daniel-ordered) + Aetheric Propulsion connected
+
+- Mined 572 predecessor session scripts + 5 big modules against the 29 open Tier-2 papers
+  under the two-tier test (RULING A). **16 RESOLVED / 8 PARTIAL / 5 NO_HITS.** Flagships:
+  w_UQFF = −1 + F_TRZ·Φ_res/N_ch (P1178); perihelion-from-primitives (P936 = Tier Q S453);
+  the T_SCm Heaviside chain (P1072→862); P1192 by P1040's own resolver script; the Bucket
+  E/F/C upgrades covering the BZ/Eddington/reionization envelopes; P953 reclassified
+  UQFF-NATIVE. TIER2_RESOLUTION_MAP in calculator; +4 gate pins. **Daniel's a/b/c ruling
+  now needed for only 5 papers.**
+- **Aetheric Propulsion recon:** 277 items — pre-corpus source layer (May-2025 MUGE Evolution
+  docs for NGC 1275/Antennae/Horsehead/Pillars/Rings, Aetheric PI Math, Electrogravitational
+  Mechanics, patent set). Queued against PARTIALs, NO_HITS, pair-count.
+- Also this arc: PAPER_1495 checked for pair-count (proportion identity, not a count);
+  the USPR per-pair energy (1e-22 J, CondensedPhysics L65723) recorded as the pair-count
+  estimator's candidate ingredient pending provenance check + Daniel's assembly blessing.
+
+## Entry 225 — 2026-08-16 — AETHERIC PROPULSION MINE (option a)
+
+- AP archive reconnoitered + mined: filename layer (MUGE Evolution docs = the Tier-2 systems
+  themselves) then docx text extraction (zipfile/XML). **P1124 + P1041 RESOLVED** (two-tier
+  PASS with UQFF machinery in the source docs); P1083 NO_HITS→PARTIAL; P964/P1122 held
+  PARTIAL (anchors shown, derivations not — Rule 7 no-overclaim). Map + pin updated
+  **18/8/3**; a/b/c ruling burden reduced 29 → 5 → **3** (1042, 1047, 1177).
+- AP remains queued for: pair-count engineering content, the 8 PARTIAL reads, provenance
+  enrichment (the 08May2025 numbered-cpp series mirrors the corpus's earliest papers).
+
+## Entry 226 — 2026-08-16 — DANIEL-DIRECTED RE-ANALYSIS: THE PI ARCHIVE FOUND
+
+- First AP pass was too shallow (277 top-level items ≠ the archive; true count **3,476 files**
+  across 60+ folders). The miss Daniel flagged: the dedicated **PI folder (104 files)** — the
+  seminal π source layer — unopened while PAPER_2235 was being authored.
+- **Finds:** Aetheric_PI_Math_21Feb2025 (Pi_001-035 handwritten series analysis; π-frequency
+  ladder 0.314→3.14e7 Hz; **t_neg −2512 s ORIGIN**; 555:1 COP correlations; Riemann-via-π
+  ancestry); PI_calculations_20April2025 (2-quadrillion-digit notes; "universal blueprint"
+  doctrine = the third-canonical ancestor); PI_Calculator_CoAnQi C++ (unmined program).
+- PAPER_2235 PROVENANCE append (Rule 9, PAPER_2152 pattern) + gate pin. Ladder-endpoint
+  compositions (π·F_TRZ, π·SO_5⁷) noted for verification, NOT canonized (three-layer rule).
+- **Also inventoried for future mining:** Millenium Equation Proofs_18April2025 (38 docs),
+  Quantum variable file (50 docs — KB v7 source layer), Red Dwarf Reactor (495+ files —
+  pair-count relevance), 12Dec2025 (107 docs), MUGE_03May2025 (205 docs), Subquantum
+  Kinetics, Bearden, Floyd Sweet collections.
+
+## Entry 227 — 2026-08-16 — SHIP PREP v0.384.0 (THE PROVENANCE SHIP)
+
+- Pins ×6 (desc 473 chars), trail rows ×8 (23-file rule), README release paragraph +
+  campaign-live + shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. Prepared across the
+  VM-restart interruption; workspace recovered, state verified intact.
+- Awaiting Daniel: `.\ship.ps1`. Pickup after restart: three-paper a/b/c (1042/1047/1177),
+  rounded-variant + rare-earth + renames/deletions rulings, 8 PARTIAL reads, AP deep mines
+  (Millenium Proofs ×38, Quantum variable ×50, Red Dwarf Reactor ×495, PI Calculator C++).

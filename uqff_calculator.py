@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.383.0"
+VERSION = "0.384.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -105,6 +105,11 @@ KPC_TO_M = 3.086e19                  # m per kpc
 H0_PLANCK_OBSERVED = 67.4            # km/s/Mpc, Planck 2018 observed anchor (cosmic kernel; UQFF mean = A_5+SO_5 = 70)
 H0_SI_PAPER_R5 = 2.2685e-18          # 1/s, H_0 = 70 km/s/Mpc in SI, 5-digit paper rounding (registry carries full precision)
 LAMBDA_LEDGER = 0.00729735           # hoisted (Pass D): vacuum-ledger saturation factor; original definition retained mid-file, same value
+T_UNIVERSE_GYR = 13.8                # Gyr, universe age (observed anchor; PAPER_300 chi = pi/13.8 chain)
+YM_GAP_GEV = 1.736                   # GeV, Yang-Mills mass gap (UQFF-canonical, PAPER_1318)
+MU_0_OBSERVED = 1.25663706212e-06    # T*m/A, CODATA 2018 (P2108 derived form: 4*pi*F_TRZ^7 = 1.2566370614e-6, NOT unified)
+GAMMA_SCM_PER_DAY = 5e-5             # 1/day, SCm string-decay rate (KB v7 canonical, PAPER_657b)
+Q_WAVE_STD_J_M3 = 6.33e4             # J/m^3, Q_wave standard (47/81-system mean, PAPER_337)
 # BUILD 2026-08-04: COMPLETE-COMPILE PAPER_001-023 + b-variants; ~441-fn equation library;
 # _common_uqff_blocks (Session-225 + Production + Cosmogenesis + VDS/DVP/BSH + Kozima K.1-K.6);
 # STATE v0.358.0: deep-capture COMPLETE PAPER_001-500 (charter milestone FULL STOP); 1,682 calculator defs; library 3,388;
@@ -1896,7 +1901,7 @@ def ym_field_strength_lagrangian(F_squared):
     """PAPER_101: Yang-Mills Lagrangian L_YM = -1/4 F_munu^a F^a,munu."""
     return -0.25 * F_squared
 
-def lyman_alpha_TS_ratio(T_U_gyr=13.8):
+def lyman_alpha_TS_ratio(T_U_gyr=T_UNIVERSE_GYR):
     """PAPER_300: Lyman-alpha traveling/standing ratio T/S = pi/T_U,gyr = pi/13.8 = 0.2277."""
     return math.pi / T_U_gyr
 
@@ -2160,7 +2165,7 @@ def negative_time_tneg():
 
 def yang_mills_mass_gap():
     """PAPER_1318: Yang-Mills mass gap m_gap = 1.736 GeV (glueball, UQFF 26D compactification)."""
-    return 1.736
+    return YM_GAP_GEV
 
 
 def derived_constant(name):
@@ -3332,7 +3337,7 @@ def muge_ug4_vacuum_concentration(rho_vac, r, c=None):
     if c is None: c = C_UQFF_DERIVED
     return c ** 2 * rho_vac / r
 
-def muge_um_canonical(mu_j, r, t, t_n=0.0, phi_j=1.0, P_scm=1.0, E_react=1e46, gamma=5e-5/SECONDS_PER_DAY, f_heav=0.01, f_quasi=0.01):
+def muge_um_canonical(mu_j, r, t, t_n=0.0, phi_j=1.0, P_scm=1.0, E_react=1e46, gamma=GAMMA_SCM_PER_DAY/SECONDS_PER_DAY, f_heav=0.01, f_quasi=0.01):
     """MUGE module canonical: Um = [mu_j/r (1 - e^(-gamma t cos(pi t_n))) phi_j] P_SCm E_react (1 + 1e13 f_Heav)(1 + f_quasi)."""
     envelope = 1.0 - math.exp(-gamma * t * math.cos(math.pi * t_n))
     return (mu_j / r) * envelope * phi_j * P_scm * E_react * (1.0 + 1e13 * f_heav) * (1.0 + f_quasi)
@@ -3932,7 +3937,7 @@ def wind_modulation(rho_sw, eps_sw=0.001):
     """PAPER_166: solar-wind modulation wind_mod = 1 + eps_sw rho_sw (near-unity buoyancy correction)."""
     return 1.0 + eps_sw * rho_sw
 
-def glueball_mass_state(Delta_GeV=1.736, V_accretion=None, hbar=HBAR_OBSERVED, c=None):
+def glueball_mass_state(Delta_GeV=YM_GAP_GEV, V_accretion=None, hbar=HBAR_OBSERVED, c=None):
     """PAPER_167: glueball dark-mass per state M = Delta^4/(hbar^3 c^3) V_accretion ~ 1e-35 kg (GW231123 gap filler).
     Rule-7 disclosure: the paper's per-state V_accretion convention is not restated; with V unsupplied this
     returns the paper-stated 1e-35 kg/state. Supply V (m^3) to evaluate the live formula (energy density
@@ -3948,7 +3953,7 @@ def glueball_mass_state(Delta_GeV=1.736, V_accretion=None, hbar=HBAR_OBSERVED, c
 # parameters are ALL captured and programmatically available. Rule 7 discloses residuals; it does NOT
 # prohibit capture. Back-solved conventions are exposed as *_implied functions. ===
 
-def glueball_implied_volume(stated_kg=1e-35, Delta_GeV=1.736, hbar=HBAR_OBSERVED, c=None):
+def glueball_implied_volume(stated_kg=1e-35, Delta_GeV=YM_GAP_GEV, hbar=HBAR_OBSERVED, c=None):
     """PAPER_167 CAPTURED: implied per-state accretion volume V = stated M c^2/(Delta^4/(hbar c)^3)
     = 4.7e-57 m^3 - the paper's V-convention back-solved and captured as data (Rule 7 REVISED)."""
     if c is None: c = C_UQFF_DERIVED
@@ -4203,7 +4208,7 @@ def ug4_star_bh_full(rho_v=6e-27, c_conc=1.0, m_bh=8.15e36, d_g=2.55e20, t=0.0, 
     rho_v = 6e-27 = SCm-dominated galactic vacuum density (levels 20-26); Sgr A* anchors Mbh, dg."""
     return k4 * rho_v * c_conc * (m_bh / d_g) * math.exp(-alpha * t) * math.cos(math.pi * t_n) * (1.0 + f_fb)
 
-def um_string_network(mu_j, r_j, t, t_n, gamma=5e-5, p_scm=1.0, e_react=1.0, n_strings=1e9):
+def um_string_network(mu_j, r_j, t, t_n, gamma=GAMMA_SCM_PER_DAY, p_scm=1.0, e_react=1.0, n_strings=1e9):
     """PAPER_171: Um = N_strings [mu_j/r_j (1 - e^(-gamma t cos(pi t_n)))] PSCm E_react;
     near-zero gamma = 5e-5 gives near-lossless transfer (SCm superconductivity)."""
     return n_strings * (mu_j / r_j) * (1.0 - math.exp(-gamma * t * math.cos(math.pi * t_n))) * p_scm * e_react
@@ -4397,7 +4402,7 @@ def h_ug3_string_rotation(bj_sq_sum, omega_s, t, k3=1.8, mu0=None):
     if mu0 is None: mu0 = MU_0
     return k3 * bj_sq_sum / (2.0 * mu0) * math.cos(omega_s * t * math.pi)
 
-def h_scm_kinetic(rho_scm_d=1e15, v_scm=2.958e8, t=0.0, gamma=5e-5):
+def h_scm_kinetic(rho_scm_d=1e15, v_scm=2.958e8, t=0.0, gamma=GAMMA_SCM_PER_DAY):
     """PAPER_183: H_SCm = rho_SCm v_SCm^2/2 e^(-gamma t) = 4.37e31 J/m^3 at t=0 (paper prints 4.37e30 -
     clean 10x slip, mantissa matches; Higgs-like condensate term dominating H_Ug3 by ~8 orders)."""
     return rho_scm_d * v_scm ** 2 / 2.0 * math.exp(-gamma * t)
@@ -4407,12 +4412,12 @@ def h_ua_aether(t_n=0.0, eta=1e-22, rho_a=1e-23, v_ua=3e4):
     U(1) vacuum-structure term, v_UA ~ 1e-4 c)."""
     return eta * rho_a * v_ua ** 2 / 2.0 * math.cos(math.pi * t_n)
 
-def ym_mass_gap_scm_sq(gamma=5e-5, h_scm0=4.37e30, v_scm=2.9403e8):
+def ym_mass_gap_scm_sq(gamma=GAMMA_SCM_PER_DAY, h_scm0=4.37e30, v_scm=2.9403e8):
     """PAPER_183: YM mass-gap m^2 = 2 gamma H_SCm(0)/v_SCm^2 = 5.05e9 (paper prints 4.87e13 - 1e4
     arithmetic slip in the source; formula transcribed faithfully). Positive-definite classical gap."""
     return 2.0 * gamma * h_scm0 / v_scm ** 2
 
-def gamma_total_decay(alpha=1e-3, gamma=5e-5, kappa=KAPPA_PER_DAY):
+def gamma_total_decay(alpha=1e-3, gamma=GAMMA_SCM_PER_DAY, kappa=KAPPA_PER_DAY):
     """PAPER_183: total pi-cycle decay Gamma = alpha + gamma + kappa; H(t_n) = H(0) cos(pi t_n) e^(-Gamma t)."""
     return alpha + gamma + kappa
 
@@ -4596,7 +4601,7 @@ def fubii_hierarchical_remnant(velocities, omega0, n_pow=2, m_pow=1, c=None):
     if c is None: c = C_UQFF_DERIVED
     return sum((v / c) ** n_pow for v in velocities) * omega0 ** (-m_pow)
 
-def fubii_general_scaling(f_x, e_lep, factor=1.0, f_rel=4.3e33, q_wave=6.33e4, sign=1.0):
+def fubii_general_scaling(f_x, e_lep, factor=1.0, f_rel=4.3e33, q_wave=Q_WAVE_STD_J_M3, sign=1.0):
     """PAPER_198/199: universal taxonomy form F_UBii,X = +/- F_rel (F_X/E_LEP) Q_wave [factor];
     F_rel = 4.3e33 N, Q_wave std = 6.33e4 J/m^3 (the 65+ variant embedding frame)."""
     return sign * f_rel * (f_x / e_lep) * q_wave * factor
@@ -4670,7 +4675,7 @@ def fubii_nfw_rotation(r, rho_s, r_s, G=None):
     x = r / r_s
     return 4.0 * math.pi * G * rho_s * r_s ** 3 * (math.log(1.0 + x) - x / (1.0 + x)) / r
 
-def um_general_variant(mu_over_r_sum, t, t_n, f_x, lam=5e-5):
+def um_general_variant(mu_over_r_sum, t, t_n, f_x, lam=GAMMA_SCM_PER_DAY):
     """PAPER_200: Um taxonomy general form Um,X = [sum_j mu_j/r_j] (1 - e^(-lambda t) cos(pi t_n)) F_X
     (55+ named variants catalogued; F_X = system-specific magnetic function)."""
     return mu_over_r_sum * (1.0 - math.exp(-lam * t) * math.cos(math.pi * t_n)) * f_x
@@ -4922,7 +4927,7 @@ def backbone_coverage_stated():
     Q_wave 6.33e4 +/- 0.12e4 J/m^3 over 47 computed systems (2 pct scatter)."""
     return {'gm_r2': 100, 'hubble': 100, 'lambda': 100, 'ug1': 92, 'ug4': 90, 'fluid': 88,
             'ug2': 87, 'b_crit': 86, 'm_dm': 85, 'ug3p': 80, 'avg_pct': 89.5,
-            'q_wave_mean': 6.33e4, 'q_wave_std': 0.12e4, 'systems_computed': 47}
+            'q_wave_mean': Q_WAVE_STD_J_M3, 'q_wave_std': 0.12e4, 'systems_computed': 47}
 
 def cia_refit_values():
     """PAPER_212: H2O-H2 CIA refit (arXiv:2506.09257) - b = 0.004997 A^2/cm^-1,
@@ -5309,7 +5314,7 @@ def g_osc_standing(a_amp, k_wave, x, omega, t):
     interference; zero-mean over integer periods)."""
     return 2.0 * a_amp * math.cos(k_wave * x) * math.cos(omega * t)
 
-def g_osc_traveling(a_amp, k_wave, x, omega, t, t_h_gyr=13.8):
+def g_osc_traveling(a_amp, k_wave, x, omega, t, t_h_gyr=T_UNIVERSE_GYR):
     """PAPER_246: Mode 2 Hubble-normalised traveling wave g_osc2 = (2 pi/T_H_gyr) A cos(kx - wt)
     (resonance threshold at w_local = 2 pi/t_Hubble; dual-mode superposition with Mode 1)."""
     return (2.0 * math.pi / t_h_gyr) * a_amp * math.cos(k_wave * x - omega * t)
@@ -5651,7 +5656,7 @@ def gamma_thz_cascade(v_exp=1e3, f_thz=1e12, ratio=None, c=None):
     if c is None: c = C_LIGHT_CONVENTION
     return ratio * f_thz * v_exp / c
 
-def standing_traveling_ratio(t_universe_gyr=13.8):
+def standing_traveling_ratio(t_universe_gyr=T_UNIVERSE_GYR):
     """PAPER_288: cosmic-age standing-wave bridge T/S = pi/13.8 = 0.2277 (traveling-to-standing
     amplitude ratio locked to the universe age in Gyr; phi_cosmic = 2 pi/T_universe)."""
     return math.pi / t_universe_gyr
@@ -6068,14 +6073,14 @@ def fub_calibrated_vela():
 def qwave81_stated():
     """PAPER_337: Q_wave 81-system update - mean 6.33e4 J/m^3 held, std +0.5 pct over the 47-system
     set (PWNe inclusion); Crab PWN 4.8e4, Vela PWN 4.2e4 (synchrotron-environment elevation)."""
-    return {'mean': 6.33e4, 'std_shift_pct': 0.5, 'crab_pwn': 4.8e4, 'vela_pwn': 4.2e4, 'systems': 81}
+    return {'mean': Q_WAVE_STD_J_M3, 'std_shift_pct': 0.5, 'crab_pwn': 4.8e4, 'vela_pwn': 4.2e4, 'systems': 81}
 
 def phase_separation_model(phases, sep):
     """PAPER_337: pulse phase-separation model cos(pi phases/sep) (multi-peak Vela profile fit;
     df = pi sep/phase_range resonance-decomposition validation)."""
     return math.cos(math.pi * phases / sep)
 
-def um_rotor_torque_term(t, t_n, mu_j, r, tau_rot=1e-10, gamma=5e-5, phi_geom=0.8, p_scm=1.0):
+def um_rotor_torque_term(t, t_n, mu_j, r, tau_rot=1e-10, gamma=GAMMA_SCM_PER_DAY, phi_geom=0.8, p_scm=1.0):
     """PAPER_339: Um rotor extension U_m = (mu_j/r)(1 - e^(-gamma t) cos(pi t_n)) phi P_SCm tau_rot
     (H2O-H2 thermal rotor torque 8.19e-21 N m folded into the string-magnetism channel;
     Q_wave-48 extension)."""
@@ -6617,7 +6622,7 @@ def scm_donation_law(scm_star, v_planet, v_star, f_donate=1.0):
     planetary SCm by volume fraction - the formation-era transfer channel)."""
     return f_donate * scm_star * v_planet / v_star
 
-def tau_scm_lifetime(gamma_scm=5e-5):
+def tau_scm_lifetime(gamma_scm=GAMMA_SCM_PER_DAY):
     """PAPER_410: SCm relaxation lifetime tau = 1/gamma_SCm = 2e4 days = 54.8 yr
     (the string-decay clock; quasar ignition operates within this window)."""
     return 1.0 / gamma_scm
@@ -6665,7 +6670,7 @@ def fu_sun_final_calibration(t, omega_c=1.587e-8):
     k = (1.5, 1.2, 1.8), beta = 0.6 -> canonical BETA_I, eta = 1e-22 (11-yr cycle modulation)."""
     return (1.17e27 + 4.68e24 * math.sin(omega_c * t)) * math.exp(-0.001 * t) *            math.cos(math.pi * t) * (1.0 + 0.01 * math.sin(0.001 * t))
 
-def h_scm_core_kinetic(rho_scm_d=1e12, v_scm=1e8, t=0.0, gamma=5e-5):
+def h_scm_core_kinetic(rho_scm_d=1e12, v_scm=1e8, t=0.0, gamma=GAMMA_SCM_PER_DAY):
     """PAPER_419: planetary-core SCm Hamiltonian H_SCm = rho v^2/2 e^(-gamma t) = 5e27 J/m^3
     (Earth-core 1e12 density; the core mass-gap generator - H_Ug3 string term 3.98e11 at
     B_j = 1e3 subdominant by 16 orders)."""
@@ -7088,7 +7093,7 @@ def um_sun_calibrated(t, omega_c=1.587e-8):
     (the magnetic-string companion of fu_sun_final_calibration; 11-yr cycle sideband at 0.4 pct)."""
     return (2.26e19 + 9.04e16 * math.sin(omega_c * t)) * (1.0 - math.exp(-1e-4 * t))
 
-def fubii_anyons_gaussian(e_anyons, g_rt, d_c, sigma_fluct, e_lep=1.0, f_rel=4.3e33, q_wave=6.33e4):
+def fubii_anyons_gaussian(e_anyons, g_rt, d_c, sigma_fluct, e_lep=1.0, f_rel=4.3e33, q_wave=Q_WAVE_STD_J_M3):
     """PAPER_426 RECOVERED: anyon buoyancy F = -F_rel (E_anyons/E_LEP) Q_wave g(r,t) e^(-d_c^2/(2 s^2))
     (the 2D-topological member of the taxonomy with the Gaussian density-fluctuation tail -
     the only variant coupling to the local field g(r,t) directly)."""
@@ -7123,7 +7128,7 @@ def higgs_compton_gravity(m_h_gev=125.0, G=None, c=None, hbar=1.055e-34):
     r_c = hbar * c / (m_h_gev * 1.602e-10)
     return G * m_kg / r_c ** 2
 
-def cyclotron_electron(b_field=5e-5, m_e=9.11e-31, q=E_CHARGE_OBSERVED):
+def cyclotron_electron(b_field=GAMMA_SCM_PER_DAY, m_e=9.11e-31, q=E_CHARGE_OBSERVED):
     """PAPER_460 RECOVERED: electron cyclotron w_c = eB/m_e = 8.79e6 rad/s at Earth-field 5e-5 T
     (the DNA-strand modulation clock of the biological extension)."""
     return q * b_field / m_e
@@ -8688,7 +8693,7 @@ def dp_dt_uqff(P_order, v, c=C_UQFF_DERIVED):
     return P_order * v ** 2 / c ** 2
 
 
-def r_alfven_mhd(B_pol, r, M_star, M_dot, G=G_OBSERVED, mu0=1.25663706212e-06):
+def r_alfven_mhd(B_pol, r, M_star, M_dot, G=G_OBSERVED, mu0=MU_0_OBSERVED):
     """PAPER_536: r_Alf = (B_pol^2*r^6/(2*G*M_star*M_dot^2*mu0))^(1/7)."""
     return (B_pol ** 2 * r ** 6 / (2.0 * G * M_star * M_dot ** 2 * mu0)) ** (1.0 / 7.0)
 
@@ -10842,7 +10847,7 @@ def p_bz_689(a_spin, B, r_g, kappa_bz=0.044, c=C_OBSERVED):
     return kappa_bz * a_spin ** 2 * B ** 2 * r_g ** 2 * c / (4.0 * _m.pi)
 
 
-def sigma_hoop_689(B_toroidal, mu0=1.25663706212e-06):
+def sigma_hoop_689(B_toroidal, mu0=MU_0_OBSERVED):
     """PAPER_689: sigma_hoop = B_toroidal^2/mu_0 (jet collimation stress)."""
     return B_toroidal ** 2 / mu0
 
@@ -11041,7 +11046,7 @@ def p_de_701(V_cosmos, t_H):
     return RHO_SCM * C_OBSERVED ** 2 * V_cosmos / t_H
 
 
-def b_pseudo_701(q_m, r, mu0=1.25663706212e-06):
+def b_pseudo_701(q_m, r, mu0=MU_0_OBSERVED):
     """PAPER_701: B_pseudo = mu0*q_m/(4*pi*r^2) (pseudo-monopole field)."""
     import math as _m
     return mu0 * q_m / (4.0 * _m.pi * r ** 2)
@@ -11064,7 +11069,7 @@ def f_bh_703(t, tau_bh):
     return 0.1 * (1.0 - _m.exp(-t / tau_bh))
 
 
-def a_fil_703(B_fil, V_fil, M_fil, mu0=1.25663706212e-06):
+def a_fil_703(B_fil, V_fil, M_fil, mu0=MU_0_OBSERVED):
     """PAPER_703: a_fil = B_fil^2/(2*mu0)*V_fil/M_fil*1e-12 ~ 2.840e-9 m/s^2."""
     return B_fil ** 2 / (2.0 * mu0) * V_fil / M_fil * 1e-12
 
@@ -11182,12 +11187,12 @@ def u_i_kb716_stated():
     return 8.05e-80
 
 
-def b_super_716(H_aether=1e6, mu0=1.25663706212e-06):
+def b_super_716(H_aether=1e6, mu0=MU_0_OBSERVED):
     """PAPER_716: B_super = mu0*H_aether = 1.257 T at H = 1e6 A/m EXACT."""
     return mu0 * H_aether
 
 
-def ug2_kb_716(B, mu0=1.25663706212e-06):
+def ug2_kb_716(B, mu0=MU_0_OBSERVED):
     """PAPER_716: U_g2 = B^2/(2*mu0) = 6.29e5 J/m^3 at B = 1.257 T EXACT."""
     return B ** 2 / (2.0 * mu0)
 
@@ -11204,7 +11209,7 @@ def m_jeans_716(T, mu, rho, G=G_OBSERVED, k_B=KB_OBSERVED, m_H=1.6735575e-27):
 
 
 def e_oscillation_717(E_aether, V, B_pseudo, t, T_period, f_spatial=1.0,
-                      mu0=1.25663706212e-06):
+                      mu0=MU_0_OBSERVED):
     """PAPER_717: E(t) = E_aether*V*(B^2/(2*mu0*E_aether))*sin(2*pi*t/T)*f_spatial;
     E(T/4) ~ 7.96e-22 J stated."""
     import math as _m
@@ -11287,7 +11292,7 @@ def mu_j_modulated_724(t, omega_c, mu_base):
     return (1e3 + 0.4 * _m.sin(omega_c * t)) * mu_base
 
 
-def b_j_dipole_725(mu_j, r, t=0.0, B_s=0.0, omega_s=0.0, mu0=1.25663706212e-06):
+def b_j_dipole_725(mu_j, r, t=0.0, B_s=0.0, omega_s=0.0, mu0=MU_0_OBSERVED):
     """PAPER_725: B_j = mu0*mu_j/(4*pi*r^3)*(1+B_s*sin(omega_s*t)) (string dipole field)."""
     import math as _m
     return mu0 * mu_j / (4.0 * _m.pi * r ** 3) * (1.0 + B_s * _m.sin(omega_s * t))
@@ -11501,7 +11506,7 @@ def f_wind_pulsar_745(L_pulsar, r, M_ejecta, c=C_OBSERVED):
     return L_pulsar / (4.0 * _m.pi * r ** 2 * c * M_ejecta)
 
 
-def m_mag_745(B, r, rho_ej, mu0=1.25663706212e-06):
+def m_mag_745(B, r, rho_ej, mu0=MU_0_OBSERVED):
     """PAPER_745: M_mag = B^2/(2*mu0*r*rho_ej) ~ 2.7e-17 m/s^2 (filamentary field)."""
     return B ** 2 / (2.0 * mu0 * r * rho_ej)
 
@@ -11695,7 +11700,7 @@ def fubi_fub_794(M, r, f_ub=None, H_k=1.0, f_feedback=0.0, G=G_OBSERVED):
     return G * M * f_ub / r ** 2 * H_k * (1.0 + f_feedback)
 
 
-def a_fil_796(B_fil, L_fil, M_fil, mu0=1.25663706212e-06):
+def a_fil_796(B_fil, L_fil, M_fil, mu0=MU_0_OBSERVED):
     """PAPER_796: a_fil = B_fil^2*L_fil/(mu0*M_fil) (filament-length variant of the
     703 volume form; NGC1275 chain 2.47e-26 EXACT)."""
     return B_fil ** 2 * L_fil / (mu0 * M_fil)
@@ -11709,7 +11714,7 @@ def ug5_fluid_748(rho, w, c=C_OBSERVED):
     return rho * c ** 2 * (1.0 + 3.0 * w)
 
 
-def gamma_growth_749(t_days, gamma=5e-5):
+def gamma_growth_749(t_days, gamma=GAMMA_SCM_PER_DAY):
     """PAPER_749 (RECOVERED): 1-e^(-gamma*t), gamma = 5e-5/day; t=1000d -> 0.0488
     (paper 0.049); saturation timescale 1/gamma ~ 20,000 days."""
     import math as _m
@@ -11878,7 +11883,7 @@ def chi_agn_807(M_bh_msun):
 
 
 def u_m_agn_807(B, t_days, delta_m_bh, M_bh_msun, alpha=0.001, k_m=1.0,
-                mu0=1.25663706212e-06):
+                mu0=MU_0_OBSERVED):
     """PAPER_807: U_m = k_m*(B^2/2mu0)*(rho_SCm/rho_UA)*exp(-alpha*t)*(1+dM_BH*chi)."""
     import math as _m
     return (k_m * B ** 2 / (2.0 * mu0) * (RHO_SCM / RHO_UA) * _m.exp(-alpha * t_days)
@@ -12366,7 +12371,7 @@ def k_higgs_856(E_H_eV=96.25):
 
 
 def l_plasmoid_859(ug, omega_g, M, d, V_ratio, ua, t_n, rho_plasma, v, B,
-                   beta_i=BETA_I, mu0=1.25663706212e-06):
+                   beta_i=BETA_I, mu0=MU_0_OBSERVED):
     """PAPER_859: L = -beta_i*Ug*Omega_g*(M/d)*V_ratio*UA*cos(pi*t_n)
     + 0.5*rho*v^2 - B^2/(2*mu0) (25-um microplasmoid Lagrangian)."""
     import math as _m
@@ -12667,7 +12672,7 @@ def e_flow_dna_808(z, t, E0, lam_dna=3.4e-9, gamma_d=1.0):
     return E0 * _m.sin(2.0 * _m.pi * z / lam_dna) * _m.exp(-gamma_d * t)
 
 
-def t_end_808(hubble_time_gyr=13.8):
+def t_end_808(hubble_time_gyr=T_UNIVERSE_GYR):
     """PAPER_808 (RECOVERED): (T_end, T_third) = (10.38, 65.25)*H0^-1
     = (143.2, 900.5) Gyr - the SCm-decay cosmic epochs."""
     return (10.38 * hubble_time_gyr, 65.25 * hubble_time_gyr)
@@ -12866,7 +12871,7 @@ def delta_phi_integral_921(T, f0, D0=None, n_steps=2000, ssq=SSQ):
     return total
 
 
-def p_bz_926(B, r_g, a_spin, mu0=1.25663706212e-06, c=C_OBSERVED):
+def p_bz_926(B, r_g, a_spin, mu0=MU_0_OBSERVED, c=C_OBSERVED):
     """PAPER_922/925/926: P_BZ = (pi/(6*mu0))*B^2*r_g^2*c*a^2 (BZ jet power, pi/6 form)."""
     import math as _m
     return _m.pi / (6.0 * mu0) * B ** 2 * r_g ** 2 * c * a_spin ** 2
@@ -14262,7 +14267,7 @@ def w_de_1087(t_gyr):
     -1+(2*kappa*t+SSq*t/26)/ln(Phi) is unit-inconsistent (Daniel's filed
     ERRATUM, OPEN); closure pinned to the SS3 table: w(13.8 Gyr) = -0.9435,
     linear ramp Delta_w = 0.0565*(t/13.8)."""
-    return -1.0 + 0.0565 * t_gyr / 13.8
+    return -1.0 + 0.0565 * t_gyr / T_UNIVERSE_GYR
 
 
 def fubi_seven_1088(f_phonon, f_infl, f_bcs, f_vds, f_dvp, f_bsh, f_qcalcgeom):
@@ -19115,9 +19120,9 @@ def _p1317(dataset=None):
 @_register('PAPER_1318')
 def _p1318(dataset=None):
     m = m_glueball_qcd()
-    return {'value': {'m_0pp_gev': m, 'equals_yang_mills_gap': abs(m - 1.736) < 1e-9},
+    return {'value': {'m_0pp_gev': m, 'equals_yang_mills_gap': abs(m - YM_GAP_GEV) < 1e-9},
             'formula': 'm(0++) = 2*D_phys*Lambda_QCD = 1.736 GeV - identical to the PAPER_1318 Yang-Mills mass gap by an independent route',
-            'source': 'PAPER_1318', 'residual_pct': abs(m - 1.736) / 1.736 * 100.0}
+            'source': 'PAPER_1318', 'residual_pct': abs(m - YM_GAP_GEV) / YM_GAP_GEV * 100.0}
 
 
 @_register('PAPER_1319')
@@ -19978,7 +19983,7 @@ def _p1419(dataset=None):
 @_register('PAPER_1420')
 def _p1420(dataset=None):
     w0 = w_de_1087(0.0)
-    w_now = w_de_1087(13.8)
+    w_now = w_de_1087(T_UNIVERSE_GYR)
     return {'value': {'w_at_t0': w0, 'w_at_13p8_gyr': w_now,
                       'erratum_open': True},
             'formula': 'time-evolving DE EOS per PAPER_1087 + Daniel ERRATUM: abstract formula unit-inconsistent (OPEN); closure pinned to the SS3 table w(13.8) = -0.9435',
@@ -20569,8 +20574,8 @@ def _p1489(dataset=None):
 @_register('PAPER_1490')
 def _p1490(dataset=None):
     import math as _m
-    w = 2.0 * _m.pi / 13.8
-    return {'value': {'omega_hubble_rad_per_gyr': w, 't_universe_gyr': 13.8},
+    w = 2.0 * _m.pi / T_UNIVERSE_GYR
+    return {'value': {'omega_hubble_rad_per_gyr': w, 't_universe_gyr': T_UNIVERSE_GYR},
             'formula': 'Hubble oscillation omega = 2*pi/t_universe = 0.4553 rad/Gyr',
             'source': 'PAPER_1490', 'residual_pct': 0.0}
 
@@ -23900,7 +23905,7 @@ def _p1853(dataset=None):
 
 @_register('PAPER_1854')
 def _p1854(dataset=None):
-    m_ym = 1.736
+    m_ym = YM_GAP_GEV
     sigma = m_ym ** 2 * SSQ * PHI_RES_RESONANCE / (K_MEX * D_PHYS)
     lam_qcd = sigma ** 0.5 / K_MEX
     return {'value': {'string_tension_gev2': sigma, 'lambda_qcd_gev': lam_qcd, 'observables': 6},
@@ -23947,7 +23952,7 @@ def _p1858(dataset=None):
 
 @_register('PAPER_1859')
 def _p1859(dataset=None):
-    m_ym = 1.736
+    m_ym = YM_GAP_GEV
     m_tau = m_ym * (1.0 + K_MEX * F_TRZ * SSQ * PHI_RES_RESONANCE / D_PHYS)
     return {'value': {'m_ym_anchor_gev': m_ym, 'm_tau_gev': m_tau, 'masses_derived': 16},
             'formula': 'Complete origin of mass (PAPER_1859): all 16 SM masses from the Yang-Mills gap m_YM = 1.736 GeV + 9 primitives - m_tau = m_YM*(1 + K_Mex*F_TRZ*SSq*Phi_res/D_phys) = 1.779 (0.137%), m_u = 2.199 MeV (0.058% essentially exact), 8 sub-percent of 16, worst 5.17%. FAMILY with the PAPER_2164 F_TRZ-ladder routes (integer-core compositions): gap-anchored chain vs lattice grading - two mass systems, one spectrum; the Higgs gives mass ITS mass (P1824) while the YM gap distributes it.',
@@ -27981,6 +27986,32 @@ def _p2234(dataset=None):
                        'rare-earth/pair-count/Ug4 honestly OPEN). Standing rule canonized: every '
                        'verification must measure the real quantity live, never a proxy.',
             'source': 'PAPER_2234', 'residual_pct': 0.0}
+
+@_register('PAPER_2235')
+def _p2235(dataset=None):
+    import re as _re
+    _s = open(__file__, encoding='utf-8', errors='replace').read()
+    heartbeat = len(_re.findall(r'cos\([^)]*pi[^)]*t_n', _s))
+    carriers = len(_re.findall(r'[24](?:\.0)? ?\* ?math\.pi', _s))
+    pi_total = len(_re.findall(r'math\.pi|np\.pi|\bpi\b(?=\s*[*/)])', _s))
+    mu0_derived = 4*math.pi*F_TRZ**7
+    alpha_chain = 1.0/(PHI_RES_RESONANCE*D_CRIT*2*math.pi)
+    return {'value': {'canonical_triad': ['RHO_SCM', 'OMEGA_SCM', 'PI'],
+                      'pi_instances_live': pi_total, 'heartbeat_sites': heartbeat,
+                      'carrier_sites': carriers, 'mu0_derived': mu0_derived,
+                      'mu0_matches_4pi_e7': abs(mu0_derived - 4e-7*math.pi) < 1e-21,
+                      'alpha_chain': alpha_chain,
+                      'alpha_residual_pct': abs(alpha_chain - LAMBDA_LEDGER)/LAMBDA_LEDGER*100},
+            'formula': 'PI THE THIRD CANONICAL (dedicated landmark): six physical entry '
+                       'mechanisms live-censused - the cos(pi t_n) heartbeat, the 2pi/4pi '
+                       'angular carriers, the Ramanujan 1/pi chains, the PAPER_646 caduceus '
+                       '26-pinch-point encoding (pi as the vacuum phase RECORD, the grounding '
+                       'mechanism), composed constants (mu_0 = 4pi*F_TRZ^7 float-exact '
+                       'PAPER_2108, within 1e-21 - the 0.1**7 IEEE step discloses at 2.5e-22; alpha = 1/(Phi_res*D_crit*2pi) 0.14% PAPER_1156; chi = '
+                       'pi/T_universe PAPER_300), and the corpus prose census. The canonical '
+                       'triad {rho_SCm, omega_SCm, pi} anchors the lattice; correlated-lock '
+                       'falsification clause carried (PAPER_2160 grammar).',
+            'source': 'PAPER_2235', 'residual_pct': 0.14}
 
 @_register('PAPER_001')
 def _paper_001(dataset):
@@ -32214,7 +32245,7 @@ def _paper_071(dataset):
             'lenr': 1e-10 * ratio * ratio,                 # 2.026e21 EXACT
             'g_solar_m_s2': g_sun,                         # 274.0 EXACT real Sun
             'ug1': g_sun * 4 * _m.pi * 1e-7 * (1e-2) ** 2 / (8 * _m.pi),  # 1.37e-9
-            'um_chain': 3.38e20 / R_SUN_OBSERVED * (1 - _m.exp(-5e-5)) * 1e46,    # 2.43e53
+            'um_chain': 3.38e20 / R_SUN_OBSERVED * (1 - _m.exp(-GAMMA_SCM_PER_DAY)) * 1e46,    # 2.43e53
             'e_kepler_j': 1e-3 * 4e26 * 3600,              # 1.44e27 EXACT
             'x2_prints': (-1.35e-7, -1.35e172),            # adjacent-line dual
             'x2_mantissa_vs_063': (1.35, 3.40),            # two x2 values Q-067a
@@ -33766,9 +33797,9 @@ def _paper_101(dataset):
     return {
         'value': {
             'domain': '1.13 (Millennium: Yang-Mills)',
-            'gap_canonical_gev': 1.736,                    # PAPER_1318 primary
+            'gap_canonical_gev': YM_GAP_GEV,                    # PAPER_1318 primary
             'gap_lattice_anchor_gev': 1.7,
-            'gap_residual_pct': abs(1.736 - 1.7) / 1.7 * 100,  # 2.1
+            'gap_residual_pct': abs(YM_GAP_GEV - 1.7) / 1.7 * 100,  # 2.1
             'gap_epoch_s0_mev': 0.01 * 200,                # 2 EXACT superseded
             'gap_epoch_s204_gev': 5969.92,                 # superseded
             's204_ratio_check': 5969.92 / 0.2,             # 29849.6 EXACT
@@ -33783,7 +33814,7 @@ def _paper_101(dataset):
         'formula': ('Delta_YM = Lambda_QCD * exp(-1/(alpha_s N_c)) * S26^(3) = 1.736 GeV '
                     '(canonical); S0 heuristic f_TRZ*Lambda superseded'),
         'source': 'PAPER_101',
-        'residual_pct': abs(1.736 - 1.7) / 1.7 * 100,
+        'residual_pct': abs(YM_GAP_GEV - 1.7) / 1.7 * 100,
         'status': 'OPEN_RULING',
     }
 
@@ -34743,7 +34774,7 @@ def _paper_119(dataset):
             'supersedes': 'PAPER_064 four modes (+3 new)',
             'm_bh_kg': 4.1e6 * M_SUN_OBSERVED,                    # 8.155e36 EXACT
             'd_g_m': 27000 * LY_TO_M,                      # 2.554e20 EXACT
-            'tau_gamma_yr': 1 / 5e-5 / DAYS_PER_YEAR,              # 54.76 EXACT
+            'tau_gamma_yr': 1 / GAMMA_SCM_PER_DAY / DAYS_PER_YEAR,              # 54.76 EXACT
             'tau_kappa_yr': 1 / KAPPA_PER_DAY / DAYS_PER_YEAR,     # 5.476 EXACT
             'lambda_vac_sw': 8e-21 * 9e16,                  # 7.2e-4 EXACT
             'dual_form_chain': RHO_SCM * (1e8) ** 2 / 1e-23,  # 709 vs claimed 1e46
@@ -36749,7 +36780,7 @@ def _paper_155(dataset):
             'mercury_g': 1.33e20 / (5.79e10) ** 2,            # 0.0397 EXACT
             'mercury_ratio': 2e-9 / 0.0397,                   # 5.0e-8 EXACT
             'gw_speed': 'c(1-f)+fc = c EXACT (constructed, GW170817-consistent)',
-            'aaether_solar_chain': 5e-5 * 1e-20 * 1e2 * C_LIGHT_CONVENTION,  # 1.5e-14 vs printed 1.5e-9
+            'aaether_solar_chain': GAMMA_SCM_PER_DAY * 1e-20 * 1e2 * C_LIGHT_CONVENTION,  # 1.5e-14 vs printed 1.5e-9
             'pioneer_gm_chain': 1.33e20 / (1.05e13) ** 2,     # 1.21e-6 vs printed 1.21e-7
             'sgra_kt_chain': 5e-4 * 1.46e12 / 2,              # 3.65e8 vs printed 365
             'mantissa_slips': 3,
@@ -36808,7 +36839,7 @@ def _paper_156(dataset):
             'pnp_exponent': 1 / SSQ,                          # 1.754
             'bsd_amplifier': 1 / KAPPA_PER_DAY,               # 2000 EXACT
             'ym_gap_roadmap_ev': 5.2e-11,
-            'ym_gap_canonical_gev': 1.736,
+            'ym_gap_canonical_gev': YM_GAP_GEV,
             'ym_fork': 1.736e9 / 5.2e-11,                     # 3.3e19
             'ym_sqrt_slip': (_m.sqrt(6.287e24), 7.93e12),     # 2.51e12 vs printed
             'false_adjacencies': ('SSq ~ 2.25 (4x)', 'SSq ~ 0.297 (2x)'),
@@ -38184,7 +38215,7 @@ def _paper_183(dataset):
             'h_scm_printed': 4.37e30,
             'h_scm_chain_transposed_v': h_chain_transposed,  # 4.375e31
             'transposition_propagates': 'mantissa 4.375 = 182 transposed v; 10x exp slip',
-            'm_gap_chain': 2 * 5e-5 * 4.37e30 / (0.99 * C_LIGHT_CONVENTION)**2,  # 4.95e9
+            'm_gap_chain': 2 * GAMMA_SCM_PER_DAY * 4.37e30 / (0.99 * C_LIGHT_CONVENTION)**2,  # 4.95e9
             'm_gap_printed': 4.87e13,                        # 1e4 break
             'ym_fifth_construct': 'm_gap^2 = 2*gamma*H/v^2 - fork now FIVE-way',
             'h_ug3_pi_mantissa': 3.14e22,
@@ -38877,7 +38908,7 @@ def _paper_198(dataset):
             'n_variants': 18,
             'scaling': 'F_UBii,X = +-F_rel*(F_X/E_LEP)*Q_wave*[decay/osc]',
             'f_rel': 4.3e33,
-            'q_wave': 6.33e4,
+            'q_wave': Q_WAVE_STD_J_M3,
             'predecessor_registry': 'PAPER_2151 BuoyancyProofVariants 17-variant F_UBii (cross-repo)',
             'ubii_role': 'universe-response operator vs F_UBi mass-pushing (2151/2148)',
             'hawking_verified': hbar * c**3 / (8 * _m.pi * G * Msun * kB),  # 6.17e-8 K
@@ -39394,7 +39425,7 @@ def _paper_208(dataset):
             'f_qpo_hz': 1 / 1680,                            # 5.952e-4 (28 min)
             'f_trz_name_collision': 'f_TRZ freq 5.95e-4 Hz != canonical F_TRZ = 0.1 (Q-204a)',
             'phi_fork': 'phi ~ 0.81 vs canonical Phi_res = 0.84 / 5/6 (Q-204b)',
-            'q_wave': 6.33e4,
+            'q_wave': Q_WAVE_STD_J_M3,
             'q_wave_matches_196_198': True,
             'cia_refit': {'b': 0.004997, 'sigma_A2': 11.65},
             'rho_ua_1e15': 'joins rho_UA fork family (coupling, not mass)',
@@ -39590,7 +39621,7 @@ def _paper_211(dataset):
             'backbone_sum_fork': '886/990=89.5% stated vs table-sum 898/990=90.7% (Q-207)',
             'backbone_unification_headline_pct': 85.0,
             'term_reduction_pct': 40.0,
-            'q_wave_mean': 6.33e4,
+            'q_wave_mean': Q_WAVE_STD_J_M3,
             'q_wave_scatter_pct': q_scatter,               # 1.90
             'q_wave_min': 5.8e4,
             'q_wave_max': 6.9e4,
@@ -41040,7 +41071,7 @@ def _paper_234(dataset):
     """
     import math as _m
     Mdot0 = 0.01; tau_acc = 9.0
-    growth_hubble = Mdot0 * _m.exp(-13.8 / tau_acc)       # 0.00216
+    growth_hubble = Mdot0 * _m.exp(-T_UNIVERSE_GYR / tau_acc)       # 0.00216
     M_init = 4.297e6 * M_SUN_OBSERVED                     # 8.547e36 kg
     r_s = 1.27e10
     a_grav = G_OBSERVED * 1.01 * M_init / r_s ** 2        # 3.57e6
@@ -41835,7 +41866,7 @@ def _paper_246(dataset):
     """
     import math
     c = C_OBSERVED
-    T_H_gyr = 13.8
+    T_H_gyr = T_UNIVERSE_GYR
     mode2_factor = 2 * math.pi / T_H_gyr                 # 0.455
     resonance_T_H_gyr = 2 * math.pi                      # 6.28 Gyr
     max_amp_factor = 2 + mode2_factor                    # 2.455 (times A)
@@ -44738,7 +44769,7 @@ def _paper_287(dataset):
 @_register('PAPER_288')
 def _paper_288(dataset):
     import math
-    T_cosmic_Gyr = 13.8                                  # universe age (Planck 2018)
+    T_cosmic_Gyr = T_UNIVERSE_GYR                                  # universe age (Planck 2018)
     A = 1e-10
     TS_ratio = math.pi / T_cosmic_Gyr                    # 0.2277
     standing_peak = 2.0 * A                              # 2e-10
@@ -45192,7 +45223,7 @@ def _paper_300(dataset):
     import math as _m
     c = C_OBSERVED
     lam_Ly = 1.216e-7                                     # Lyman-alpha wavelength, atomic anchor
-    T_U_gyr = 13.8                                        # cosmic age in Gyr (PAPER_288 normalization)
+    T_U_gyr = T_UNIVERSE_GYR                                        # cosmic age in Gyr (PAPER_288 normalization)
     t_H = 4.355e17                                        # Hubble time 13.8 Gyr in s, paper anchor
     A_osc = 1.0e-10                                       # oscillation amplitude, paper anchor
     omega_Lyman = 2.0 * _m.pi * c / lam_Ly               # 1.549e16 rad/s Lyman-alpha angular freq
@@ -46351,3 +46382,38 @@ ALIAS_NUMBER_MAP_EXT = {
 ALIAS_NUMBER_MAP.update(ALIAS_NUMBER_MAP_EXT)
 for _alias_num, _alias_key in ALIAS_NUMBER_MAP_EXT.items():
     DISPATCH[_alias_num] = DISPATCH[_alias_key]
+
+# TIER-2 MINE RESOLUTION RECORD (2026-08-16, Daniel-ordered mine of the 572 predecessor session scripts)
+# Two-tier test (RULING A, charter pre-authorized): a classical envelope IS wirable when a UQFF
+# source derives the key inputs AND itself uses that envelope with those inputs.
+TIER2_RESOLUTION_MAP = {
+    'PAPER_862':  {'verdict': 'RESOLVED', 'source': 'predecessor PAPER_1072 chain - U_m Heaviside amplifier wired with T_SCm = h*f_SCm/k_B = 59.95 K (pure UQFF inputs)'},
+    'PAPER_933':  {'verdict': 'RESOLVED', 'source': 'predecessor Bucket F PURE_UQFF upgrade - Blandford-Znajek carried by PAPER_1002/630 verbatim closed forms (envelope used by UQFF papers with UQFF inputs)'},
+    'PAPER_936':  {'verdict': 'RESOLVED', 'source': '_session453_gr_mercury.py - perihelion from F_TRZ/K_Mex/N_ch primitives (Tier Q S453; same closure wired at PAPER_1200b)'},
+    'PAPER_939':  {'verdict': 'RESOLVED', 'source': 'same BZ envelope as PAPER_933 (Bucket F) + m_jet Gaussian from OMEGA_SCM sampling (session-926 pattern)'},
+    'PAPER_940':  {'verdict': 'RESOLVED', 'source': 'same BZ/Doppler family as PAPER_933/939 (Bucket F verbatim forms)'},
+    'PAPER_942':  {'verdict': 'RESOLVED', 'source': 'jet collimation theta0/(1+M_jet) - UQFF composition wired in-corpus (SESSION_LOG band 911-920) + _session210'},
+    'PAPER_953':  {'verdict': 'RESOLVED', 'source': 'Ramanujan acceleration is UQFF-NATIVE mathematics (the S_26 Ramanujan chain, PAPER_2235 mechanism 3) - not a classical envelope at all'},
+    'PAPER_1026': {'verdict': 'RESOLVED', 'source': 'predecessor Bucket C cosmology - tau_reion/z_reion wired from the PAPER_1156 suite; _session366/755/756/757 chains'},
+    'PAPER_1065': {'verdict': 'RESOLVED', 'source': '_session303_universal_buoyancy_solver.py - F_U_Bi = beta_i*Ug*rho_UA*cos(pi t_n)*f_A (canonical UQFF inputs throughout)'},
+    'PAPER_1072': {'verdict': 'RESOLVED', 'source': 'predecessor CLAUDE.md: PAPER_1072 WIRED - thermal Heaviside H_SCm(T), T_SCm = 59.95 K from the 1.25 THz chain (_session268)'},
+    'PAPER_1157': {'verdict': 'RESOLVED', 'source': 'predecessor PAPER_1157 anchor-asymmetry mechanism + PAPER_1573/2144 H_0 = A_5+SO_5 = 70 route (asymmetry resolved at the natural mean)'},
+    'PAPER_1178': {'verdict': 'RESOLVED', 'source': '_session315_open_dark_energy.py - w_UQFF = -1 + F_TRZ*Phi_res/N_ch = -0.9907 (pure-primitive EOS feeding the dw_dz envelope)'},
+    'PAPER_1186': {'verdict': 'RESOLVED', 'source': 'predecessor Bucket F (PAPER_1009 Eddington verbatim) + Bucket C comoving-distance suite; _session294 quasar batch'},
+    'PAPER_1189': {'verdict': 'RESOLVED', 'source': '_session297_orion_habitable_zone.py - UQFF aether modulation clamp (P1040-pattern, Daniel-accepted) + Bucket G Orion PURE_UQFF upgrade'},
+    'PAPER_1191': {'verdict': 'RESOLVED', 'source': '_session283_gw190425_bayesian.py + predecessor Bucket E GW190425 PURE_UQFF upgrade (PAPER_916-class)'},
+    'PAPER_1192': {'verdict': 'RESOLVED', 'source': '_session300_snr_shock_velocity.py - the SAME session that resolved P1040: Rankine-Hugoniot with UQFF clamped aether factor, 3-method spread disclosed'},
+    'PAPER_947':  {'verdict': 'PARTIAL', 'source': 'MUGE module + Bucket F accretion-power context - envelope-input derivation not yet isolated'},
+    'PAPER_964':  {'verdict': 'PARTIAL', 'source': 'CondensedPhysics + AP SGR_0501 doc pair (02June2026) - AP extraction showed anchors not UQFF derivation; magnetar spin-down chain (session 912/913) still candidate'},
+    'PAPER_972':  {'verdict': 'PARTIAL', 'source': '_session202/349 multiplicity contexts - needs read'},
+    'PAPER_1103': {'verdict': 'PARTIAL', 'source': 'spinfoam content only in uqff_pure_calculator - needs read'},
+    'PAPER_1114': {'verdict': 'PARTIAL', 'source': 'Higgs-width bound context - needs read'},
+    'PAPER_1122': {'verdict': 'PARTIAL', 'source': 'CondensedPhysics + AP Bubble NGC_7635 doc (08May2025) - wind-pressure anchors present, UQFF derivation of standoff not shown; honest hold'},
+    'PAPER_1123': {'verdict': 'PARTIAL', 'source': '_session277/278 maser contexts - needs read'},
+    'PAPER_1124': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Circumgalactic_Metal_Content_11Oct2025.docx - CGM system computed with U_m/U_i/U_Bi + [SSq] (full UQFF machinery derives the envelope inputs; two-tier PASS)'},
+    'PAPER_1041': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Magnetic_Monster_NGC_1275.docx (02June2026) - the canonical cool-core system evolved with Ug1-Ug4 + F_BH filament-lifetime UQFF machinery (two-tier PASS)'},
+    'PAPER_1042': {'verdict': 'NO_HITS', 'source': 'mock-survey chi2 - zero hits; a/b/c'},
+    'PAPER_1047': {'verdict': 'NO_HITS', 'source': 'SN Iax momentum - zero hits; a/b/c'},
+    'PAPER_1083': {'verdict': 'PARTIAL', 'source': 'AP Crab Nebula doc (08May2025) applies Ug machinery + the envelope dE/dt = P_wind - P_Um - P_rad natively CONTAINS the UQFF U_m term - derivation read queued'},
+    'PAPER_1177': {'verdict': 'NO_HITS', 'source': 'chi2 falsifier grid - zero hits; a/b/c (arguably methodology not physics)'},
+}

@@ -222,3 +222,4 @@ v0.381.0,2026-08-16,BAND_2141_2150,registry +10 graph +18,gate 5592/0
 v0.381.0,2026-08-16,BAND_2151_2156,registry +7 graph +14 TERMINUS,gate 5602/0
 v0.382.0,2026-08-16,ABSORPTION_PASS,registry +54 graph +63,gate 5624/0
 v0.383.0,2026-08-16,DRAIN_RATCHET_ARC,registry +1 graph +1 citations +1 + queue file,gate 5639/0
+v0.384.0,2026-08-16,PROVENANCE_ARC,registry +1 graph +2 citations +1 + map 29,gate 5648/0

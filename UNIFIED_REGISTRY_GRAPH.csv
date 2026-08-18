@@ -12143,3 +12143,5 @@ PAPER_2231,ALIAS_OF,PAPER_1201b,,extension block 2213-2233
 PAPER_2232,ALIAS_OF,PAPER_1202b,,extension block 2213-2233
 PAPER_2233,ALIAS_OF,PAPER_1203b,,extension block 2213-2233
 campaign_completion_landmark,PAPER_2234,LANDMARK,,authored+wired 2026-08-16
+PRIMITIVE,F_TRZ,observable,pi_third_canonical,PAPER_2235
+pi_third_canonical,PAPER_2235,LANDMARK,,authored+wired 2026-08-16

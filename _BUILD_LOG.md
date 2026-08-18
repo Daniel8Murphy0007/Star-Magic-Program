@@ -270,3 +270,6 @@ POST-DRAIN CONSOLIDATION: end-of-drain audit + alias numbers 2179-2233 + absorpt
 
 ## v0.383.0 — 2026-08-16
 THE DRAIN RATCHET SHIP: 920 promotions total, ratchet 626 monotone, Kerr mechanism resolved, PAPER_2234 landmark. Gate 5,639/0. 23-file pass verified.
+
+## v0.384.0 — 2026-08-16
+THE PROVENANCE SHIP: PAPER_2235 + PI-archive provenance + Tier-2 mine 18/8/3 + drain terminal (979 promotions, ZERO unattributed). Gate 5,648/0. 23-file pass verified.

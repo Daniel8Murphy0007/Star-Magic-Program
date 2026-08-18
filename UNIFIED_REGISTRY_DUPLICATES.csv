@@ -137,3 +137,4 @@ corpus_terminus,p2156,TERMINUS_RECORD,sequential drain PAPER_001 (v0.3.0 2026-07
 twin_absorption_record,absorption_pass,FAMILY_RECORD,all 39 same-number groups dispositioned: 8 previously confirmed + 21 newly wired + 12 UPDATE-folded + ASCII/superseded classes previously handled - zero unabsorbed twins remain,v0.382.0
 kerr_ftrz_mechanism,p1876,FAMILY_RECORD,AGN spin F_TRZ-coefficient family mechanism source = PAPER_1876 QNM omega_I = F_TRZ*(1-F_TRZ*(K_MEX-1)) 0.19% - RULINGS item closed,v0.383.0
 cuprate_125_family,p1659,FAMILY_RECORD,T_c 125 K = (hbar*omega_SCm/k_B)*K_MEX (P1659/1794) mirrors A_5*K_MEX=125 (P1954) + lambda_layer (P1194b) - crossing recorded not reconciled,v0.383.0
+pi_provenance_record,p2235,FAMILY_RECORD,PI archive = seminal layer: handwritten Pi_001-035 -> Feb2025 analysis -> Apr2025 calculations -> PAPER_646 -> corpus; t_neg -2512s + 555:1 COP origins traced,v0.384.0
