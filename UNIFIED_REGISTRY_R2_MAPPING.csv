@@ -255,3 +255,4 @@ PAPER_2151_2156,BAND,uqff_calculator.py::DISPATCH,6 dispatches + CORPUS TERMINUS
 ABSORPTION_PASS,TWINS,uqff_calculator.py::DISPATCH,21 dispatches + 12 folds + 21 aliases,v0.382.0
 DRAIN_RATCHET_ARC,PASSES,uqff_calculator.py named-anchor header + PAPER_2234,920 promotions + 1 landmark,v0.383.0
 PROVENANCE_ARC,MINE,TIER2_RESOLUTION_MAP + PAPER_2235,29 dispositions + 1 landmark,v0.384.0
+IMMIRZI_ARC,LANDMARKS,PAPER_2236+PAPER_2237 dispatches + TIER2 map final,2 landmarks + 8 verdicts,v0.385.0

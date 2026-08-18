@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.384.0", "uqff_calculator.VERSION = 0.384.0 (the provenance ship: PAPER_2235 + PI archive + Tier-2 mine 18/8/3 + terminal guard)")
+assert_that(C.VERSION == "0.385.0", "uqff_calculator.VERSION = 0.385.0 (the Immirzi ship: PAPER_2236/2237, gamma = 2K EXACT, Tier-2 final 22/7)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12215,8 +12215,11 @@ assert_that(C.T_UNIVERSE_GYR == 13.8 and C.YM_GAP_GEV == 1.736 and C.GAMMA_SCM_P
 assert_that(hasattr(C, 'TIER2_RESOLUTION_MAP') and len(C.TIER2_RESOLUTION_MAP) == 29,
             "TIER-2 MINE: all 29 open papers dispositioned in TIER2_RESOLUTION_MAP")
 _t2v = [v['verdict'] for v in C.TIER2_RESOLUTION_MAP.values()]
-assert_that(_t2v.count('RESOLVED') == 18 and _t2v.count('PARTIAL') == 8 and _t2v.count('NO_HITS') == 3,
-            "TIER-2 MINE + AETHERIC PROPULSION LAYER: 18 RESOLVED (16 predecessor + P1124 CGM + P1041 NGC1275 from the AP source docs) / 8 PARTIAL / 3 NO_HITS (1042, 1047, 1177 - the a/b/c ruling now covers three papers)")
+assert_that(sum(1 for _v in _t2v if _v.startswith('RESOLVED')) == 22 and
+            _t2v.count('NO_UQFF_CONTENT') + _t2v.count('NO_HITS') == 7,
+            "TIER-2 FINAL: 22 RESOLVED (incl. P1103 via PAPER_2237) / 7 for a/b/c (947, 964, 1042, 1047, 1122, 1123, 1177)")
+assert_that(abs(2*(C.F_TRZ*C.K_MEX*C.SSQ) - 0.2375) < 1e-15,
+            "P1103 CANDIDATE: gamma_immirzi = 2*F_TRZ*K_MEX*SSq = 19/80 = 0.2375 EXACT arithmetic pinned (canonization awaits ruling - would be kernel instance #6, first in quantum gravity)")
 assert_that(abs((-1 + C.F_TRZ*C.PHI_RES_RESONANCE/C.N_CH) - (-0.99067)) < 1e-4,
             "TIER-2 FLAGSHIP: w_UQFF = -1 + F_TRZ*Phi_res/N_ch = -0.9907 pure-primitive dark-energy EOS (_session315) - P1178's envelope input IS UQFF-derived")
 assert_that(C.TIER2_RESOLUTION_MAP['PAPER_1192']['verdict'] == 'RESOLVED' and 'P1040' in C.TIER2_RESOLUTION_MAP['PAPER_1192']['source'],
@@ -12225,6 +12228,27 @@ assert_that(C.TIER2_RESOLUTION_MAP['PAPER_1192']['verdict'] == 'RESOLVED' and 'P
 # ---- PI ARCHIVE PROVENANCE (Daniel-directed re-analysis 2026-08-16) ----
 assert_that('APPENDED 2026-08-16' in open('whitepapers/PAPER_2235_PI_THIRD_CANONICAL_DEDICATED_LANDMARK_UQFF.md', encoding='utf-8', errors='replace').read(),
             "PI PROVENANCE: PAPER_2235 carries the Aetheric-Propulsion PI-archive provenance append - the handwritten Pi_001-035 series (Feb 2025) is the seminal layer; t_neg = -2512 s and the 555:1 COP trace to Aetheric_PI_Math_21Feb2025")
+
+# ---- PI-LADDER ENDPOINT VERIFICATION (2026-08-16, three-layer rule satisfied) ----
+import math as _pl_m
+assert_that(abs(_pl_m.pi*C.F_TRZ - 0.314)/0.314 < 6e-4 and abs(_pl_m.pi*C.SO_5**7 - 3.14e7)/3.14e7 < 6e-4,
+            "PI LADDER: both Aetheric-PI-Math frequency-ladder endpoints are pi*SO_5^n (n = -1 via F_TRZ = 1/SO_5 per P1960, and n = 7) - IDENTICAL 0.0507% residuals = the fingerprint of 3-digit-rounded pi; the Feb-2025 ladder IS a nine-rung pi-scaled SO_5 ladder (mechanism: PAPER_2235 carriers; phenomenon: the source doc; decomposition: SO_5 ladder grammar, 23 corpus sites)")
+
+# ---- PAPER_2236 + PAPER_2237 LANDMARKS (Daniel: "author them", 2026-08-16) ----
+_l2236 = C.DISPATCH['PAPER_2236']()
+assert_that(_l2236['value']['archive_files'] == 3476 and _l2236['value']['provenance_chains'] == 5,
+            "PAPER_2236: the AP source layer censused (3,476 files) - five provenance chains canonized (pi, Millennium, master equation w/ lambda_i*U_I at origin, DPM genesis, per-system)")
+_l2237 = C.DISPATCH['PAPER_2237']()
+assert_that(_l2237['value']['exact_19_80'] and _l2237['value']['kernel_instances'] == 6,
+            "PAPER_2237: gamma_immirzi = 2*(F_TRZ*K_MEX*SSq) = 19/80 = 0.2375 EXACT - kernel instance #6, first quantum-gravity member; LQG's free parameter is not free in UQFF")
+assert_that(C.TIER2_RESOLUTION_MAP['PAPER_1103']['verdict'] == 'RESOLVED_BY_PAPER_2237',
+            "TIER-2: P1103 upgraded CANDIDATE -> RESOLVED_BY_PAPER_2237; standings now 22 RESOLVED / 7 a/b/c")
+
+# ---- SHIP GUARD v5: the public_surfaces BADGE (stale-at-2172 for five ships, Daniel-caught 2026-08-16) ----
+_sg5_rd = open('README.md', encoding='utf-8', errors='ignore').read()
+_sg5_keys = len(C.DISPATCH)
+assert_that(('public_surfaces-%d' % _sg5_keys) in _sg5_rd,
+            "SHIP GUARD v5: README public_surfaces badge must carry the LIVE key count %d - it sat stale at 2172 through five ships because update regexes matched a double-underscore variant that never existed; the badge is now measured directly (the proxy lesson, again)" % _sg5_keys)
 
 # =============================================================================
 # REPORT

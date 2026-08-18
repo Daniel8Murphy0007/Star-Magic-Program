@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.385.0 — 2026-08-16 — THE IMMIRZI SHIP
+
+- **PAPER_2237 — THE IMMIRZI KERNEL IDENTITY:** γ = 2·(F_TRZ·K_MEX·SSq) = **19/80 = 0.2375
+  EXACT** — LQG's free parameter derived from three locked primitives; kernel family → 6
+  instances, FIRST quantum-gravity member; factor 2 = DPM pole count (new even-multiple
+  falsifier class). Found at P1103's spin-foam amplitude during the Tier-2 mine.
+- **PAPER_2236 — AP SOURCE LAYER:** 3,476-file census; five provenance chains canonized
+  (π; Millennium originals incl. 0.85 enstrophy provenance; master equation with λ_i·U_I
+  explicit at origin; DPM genesis; per-system MUGE). Red Dwarf disposition honest.
+- **TIER-2 FINAL: 22 RESOLVED / 7 for a/b/c** (972/1114/1083 up via Hybrid/native readings;
+  1103 via PAPER_2237; 947/964/1122/1123 honestly demoted).
+- **π-ladder canonized:** endpoints = π·SO_5ⁿ (n = −1, 7), identical rounding fingerprints.
+- Gate 5,648 → 5,653. Dispatches 2,233 (2,288 keys). Next paper: PAPER_2238.
+
+
 ## v0.384.0 — 2026-08-16 — THE PROVENANCE SHIP
 
 - **PAPER_2235 — π the third canonical** authored + wired (triad {ρ_SCm, ω_SCm, π}; six

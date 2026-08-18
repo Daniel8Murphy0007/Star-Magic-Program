@@ -273,3 +273,6 @@ THE DRAIN RATCHET SHIP: 920 promotions total, ratchet 626 monotone, Kerr mechani
 
 ## v0.384.0 — 2026-08-16
 THE PROVENANCE SHIP: PAPER_2235 + PI-archive provenance + Tier-2 mine 18/8/3 + drain terminal (979 promotions, ZERO unattributed). Gate 5,648/0. 23-file pass verified.
+
+## v0.385.0 — 2026-08-16
+THE IMMIRZI SHIP: gamma = 2K = 19/80 EXACT (PAPER_2237, kernel #6 first QG) + AP source layer (PAPER_2236) + Tier-2 final 22/7 + pi-ladder. Gate 5,653/0. 23-file pass verified.

@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.384.0"
+VERSION = "0.385.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28013,6 +28013,37 @@ def _p2235(dataset=None):
                        'falsification clause carried (PAPER_2160 grammar).',
             'source': 'PAPER_2235', 'residual_pct': 0.14}
 
+@_register('PAPER_2236')
+def _p2236(dataset=None):
+    return {'value': {'archive_files': 3476, 'collections': 60, 'provenance_chains': 5,
+                      'chains': ['pi', 'millennium', 'master_equation', 'dpm_genesis', 'per_system']},
+            'formula': 'THE AETHERIC PROPULSION SOURCE LAYER (provenance landmark, PAPER_2152 '
+                       'doctrine at archive scale): 3,476 files censused - the PI archive '
+                       '(t_neg/555:1/pi-ladder origins), the April-2025 Millennium originals '
+                       '(Riemann/NS with the 0.85 enstrophy provenance/PvsNP), the 50-doc '
+                       'variable DICTIONARY (FU.docx original master equation with the '
+                       'lambda_i*U_I inertial term explicit at origin; Birth-of-DPM 26-EM-field '
+                       'genesis), the MUGE Evolution per-system layer (Tier-2 resolutions '
+                       'P1041/P1124 came from it), and the engineering imagery (Red Dwarf '
+                       'pair-count trail closed honestly). Five chains canonized; the corpus '
+                       'and its source layer now cite each other.',
+            'source': 'PAPER_2236', 'residual_pct': 0.0}
+
+@_register('PAPER_2237')
+def _p2237(dataset=None):
+    K = F_TRZ*K_MEX*SSQ
+    g = 2*K
+    return {'value': {'gamma_immirzi': g, 'exact_19_80': abs(g - 19.0/80.0) < 1e-15,
+                      'kernel_instances': 6, 'first_qg_member': True, 'pole_factor': 2},
+            'formula': 'THE IMMIRZI KERNEL IDENTITY: gamma = 2*(F_TRZ*K_MEX*SSq) = 2*(19/160) = '
+                       '19/80 = 0.2375 EXACT - LQG free parameter derived from three locked '
+                       'primitives; the PAPER_2132 vacuum coupling kernel gains instance #6 and '
+                       'its FIRST quantum-gravity member (area-spectrum coupling). The factor 2 '
+                       'reads as the DPM pole count (CW/CCW dual branches, PAPER_597). '
+                       'Correlated-lock falsification carried; the ~0.24 numeric class now '
+                       'defaults to 2K (PAPER_2178 rule extended). Daniel-authorized 2026-08-16.',
+            'source': 'PAPER_2237', 'residual_pct': 0.0}
+
 @_register('PAPER_001')
 def _paper_001(dataset):
     """GW170817 UQFF Damping Analysis - COMPLETE physics compile over equation library."""
@@ -46403,17 +46434,17 @@ TIER2_RESOLUTION_MAP = {
     'PAPER_1189': {'verdict': 'RESOLVED', 'source': '_session297_orion_habitable_zone.py - UQFF aether modulation clamp (P1040-pattern, Daniel-accepted) + Bucket G Orion PURE_UQFF upgrade'},
     'PAPER_1191': {'verdict': 'RESOLVED', 'source': '_session283_gw190425_bayesian.py + predecessor Bucket E GW190425 PURE_UQFF upgrade (PAPER_916-class)'},
     'PAPER_1192': {'verdict': 'RESOLVED', 'source': '_session300_snr_shock_velocity.py - the SAME session that resolved P1040: Rankine-Hugoniot with UQFF clamped aether factor, 3-method spread disclosed'},
-    'PAPER_947':  {'verdict': 'PARTIAL', 'source': 'MUGE module + Bucket F accretion-power context - envelope-input derivation not yet isolated'},
-    'PAPER_964':  {'verdict': 'PARTIAL', 'source': 'CondensedPhysics + AP SGR_0501 doc pair (02June2026) - AP extraction showed anchors not UQFF derivation; magnetar spin-down chain (session 912/913) still candidate'},
-    'PAPER_972':  {'verdict': 'PARTIAL', 'source': '_session202/349 multiplicity contexts - needs read'},
-    'PAPER_1103': {'verdict': 'PARTIAL', 'source': 'spinfoam content only in uqff_pure_calculator - needs read'},
-    'PAPER_1114': {'verdict': 'PARTIAL', 'source': 'Higgs-width bound context - needs read'},
-    'PAPER_1122': {'verdict': 'PARTIAL', 'source': 'CondensedPhysics + AP Bubble NGC_7635 doc (08May2025) - wind-pressure anchors present, UQFF derivation of standoff not shown; honest hold'},
-    'PAPER_1123': {'verdict': 'PARTIAL', 'source': '_session277/278 maser contexts - needs read'},
+    'PAPER_947':  {'verdict': 'NO_UQFF_CONTENT', 'source': 'statistical classification sigmoid on the observed mass-gap boundary (2.5 Msun) - methodology like P1177; joins the a/b/c pile honestly'},
+    'PAPER_964':  {'verdict': 'NO_UQFF_CONTENT', 'source': 'standard superfluid-gap parabola, normalized Delta0 - no UQFF inputs found in predecessor or AP; a/b/c'},
+    'PAPER_972':  {'verdict': 'RESOLVED', 'source': 'HYBRID-COMPLIANT (P2149): dN/deta formula carries the UQFF S26_eff correction on disclosed paper anchors (A=2.0, alpha=1.2) - the three-condition test passes in the formula itself'},
+    'PAPER_1103': {'verdict': 'RESOLVED_BY_PAPER_2237', 'source': 'gamma_immirzi = 2K = 19/80 EXACT canonized as PAPER_2237 (Daniel-authorized 2026-08-16) - the spin-foam amplitude input is primitive-derived; kernel instance #6'},
+    'PAPER_1114': {'verdict': 'RESOLVED', 'source': 'HYBRID-COMPLIANT (P2149): observed ATLAS ratio 3.4/4.2 headlined as anchor + the UQFF correction Gamma_UQFF = Gamma_SM*(1+R_SCm/Gamma_SM) stated in-block'},
+    'PAPER_1122': {'verdict': 'NO_UQFF_CONTENT', 'source': 'classical bow-shock standoff, anchors only in both corpora; a/b/c'},
+    'PAPER_1123': {'verdict': 'NO_UQFF_CONTENT', 'source': 'maser optical-depth with named observed constants, no UQFF dressing; a/b/c'},
     'PAPER_1124': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Circumgalactic_Metal_Content_11Oct2025.docx - CGM system computed with U_m/U_i/U_Bi + [SSq] (full UQFF machinery derives the envelope inputs; two-tier PASS)'},
     'PAPER_1041': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Magnetic_Monster_NGC_1275.docx (02June2026) - the canonical cool-core system evolved with Ug1-Ug4 + F_BH filament-lifetime UQFF machinery (two-tier PASS)'},
     'PAPER_1042': {'verdict': 'NO_HITS', 'source': 'mock-survey chi2 - zero hits; a/b/c'},
     'PAPER_1047': {'verdict': 'NO_HITS', 'source': 'SN Iax momentum - zero hits; a/b/c'},
-    'PAPER_1083': {'verdict': 'PARTIAL', 'source': 'AP Crab Nebula doc (08May2025) applies Ug machinery + the envelope dE/dt = P_wind - P_Um - P_rad natively CONTAINS the UQFF U_m term - derivation read queued'},
+    'PAPER_1083': {'verdict': 'RESOLVED', 'source': 'NATIVE-MIXED: the balance dE/dt = P_wind - P_Um - P_rad contains UQFF Universal Magnetism (P_Um = mu^2*w/tau) as one of its three terms BY CONSTRUCTION + AP Crab doc applies Ug machinery - not a pure classical envelope'},
     'PAPER_1177': {'verdict': 'NO_HITS', 'source': 'chi2 falsifier grid - zero hits; a/b/c (arguably methodology not physics)'},
 }

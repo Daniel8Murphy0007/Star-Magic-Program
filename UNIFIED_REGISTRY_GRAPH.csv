@@ -12145,3 +12145,8 @@ PAPER_2233,ALIAS_OF,PAPER_1203b,,extension block 2213-2233
 campaign_completion_landmark,PAPER_2234,LANDMARK,,authored+wired 2026-08-16
 PRIMITIVE,F_TRZ,observable,pi_third_canonical,PAPER_2235
 pi_third_canonical,PAPER_2235,LANDMARK,,authored+wired 2026-08-16
+ap_source_layer_provenance,PAPER_2236,LANDMARK,,authored+wired 2026-08-16
+PRIMITIVE,F_TRZ,observable,immirzi_kernel_identity,PAPER_2237
+PRIMITIVE,K_MEX,observable,immirzi_kernel_identity,PAPER_2237
+PRIMITIVE,SSQ,observable,immirzi_kernel_identity,PAPER_2237
+immirzi_kernel_identity,PAPER_2237,KERNEL_FAMILY_6,PAPER_2132,first QG member

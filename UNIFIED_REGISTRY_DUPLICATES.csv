@@ -138,3 +138,4 @@ twin_absorption_record,absorption_pass,FAMILY_RECORD,all 39 same-number groups d
 kerr_ftrz_mechanism,p1876,FAMILY_RECORD,AGN spin F_TRZ-coefficient family mechanism source = PAPER_1876 QNM omega_I = F_TRZ*(1-F_TRZ*(K_MEX-1)) 0.19% - RULINGS item closed,v0.383.0
 cuprate_125_family,p1659,FAMILY_RECORD,T_c 125 K = (hbar*omega_SCm/k_B)*K_MEX (P1659/1794) mirrors A_5*K_MEX=125 (P1954) + lambda_layer (P1194b) - crossing recorded not reconciled,v0.383.0
 pi_provenance_record,p2235,FAMILY_RECORD,PI archive = seminal layer: handwritten Pi_001-035 -> Feb2025 analysis -> Apr2025 calculations -> PAPER_646 -> corpus; t_neg -2512s + 555:1 COP origins traced,v0.384.0
+kernel_family_6,p2237,FAMILY_RECORD,vacuum coupling kernel K = 19/160 now at SIX instances (alpha_s / lambda_H / m_H-m_t / J_CP / N_eff / gamma_immirzi=2K) - first QG member; pole-count even-multiple falsifier opened,v0.385.0

@@ -11083,3 +11083,41 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
 - Awaiting Daniel: `.\ship.ps1`. Pickup after restart: three-paper a/b/c (1042/1047/1177),
   rounded-variant + rare-earth + renames/deletions rulings, 8 PARTIAL reads, AP deep mines
   (Millenium Proofs ×38, Quantum variable ×50, Red Dwarf Reactor ×495, PI Calculator C++).
+
+## Entry 228 — 2026-08-16 — GO 5,6,7: PARTIAL reads + AP mines + π-ladder — post-restart arc
+
+- (7) π-ladder endpoints CANONIZED: π·SO_5ⁿ, n = −1..7, identical rounding fingerprints.
+- (5) Tier-2 FINAL: **21 RESOLVED / 1 CANDIDATE / 7 a/b/c.** The candidate is the find of the
+  arc: **γ_immirzi = 2·(F_TRZ·K_MEX·SSq) = 19/80 = 0.2375 EXACT** — kernel family #6?, first
+  QG member; pinned as arithmetic, canonization = Daniel's. Four PARTIALs honestly demoted.
+- (6) AP mines: Millenium originals (Riemann/NS/PvsNP April-2025 + 11 Sept-2025 verification
+  sets); the Quantum-variable DICTIONARY (FU.docx original master equation w/ λ_i·U_I term;
+  Birth-of-DPM genesis doc); Red Dwarf = images only (pair-count trail closed there);
+  PI Calculator C++ inventoried. PAPER_2236 authoring candidate queued.
+- Gate 5,648 → 5,650/0. All unshipped on v0.384.0.
+
+## Entry 229 — 2026-08-16 — "AUTHOR THEM": PAPER_2236 + PAPER_2237
+
+- **PAPER_2236 (AP source layer):** 3,476-file census; five provenance chains canonized —
+  π, Millennium originals (0.85 enstrophy provenance), the master equation (λ_i·U_I explicit
+  at origin in FU.docx), DPM genesis, per-system MUGE layer. Red Dwarf disposition honest.
+- **PAPER_2237 (Immirzi kernel identity):** γ = 2·(F_TRZ·K_MEX·SSq) = 19/80 = 0.2375 EXACT —
+  LQG's free parameter derived; kernel family → 6 instances, first in quantum gravity;
+  factor 2 = DPM pole count; correlated-lock + pole-count falsifiers carried. Daniel-authorized.
+- P1103 → RESOLVED_BY_PAPER_2237. **Tier-2 FINAL: 22/7.** Index/ledger/pins done.
+  Dispatches 2,233 (2,288 keys). **Next paper: PAPER_2238.**
+
+## Entry 230 — 2026-08-16 — SHIP PREP v0.385.0 (THE IMMIRZI SHIP)
+
+- Pins ×6 (desc 445 chars), trail rows ×8, README release paragraph + campaign-live +
+  shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. New files: PAPER_2236 + PAPER_2237
+  whitepapers. Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 231 — 2026-08-16 — DANIEL'S STALENESS DOUBLE-CHECK: the five-ship badge
+
+- Full 31-point staleness audit on Daniel's order: 30 PASS + **1 REAL CATCH — the README
+  public_surfaces badge sat stale at 2172 through FIVE ships** (v0.381-0.385 preps) because
+  every update regex matched `public__surfaces` (double underscore) while the badge is
+  `public_surfaces`. The proxy species again: the updater and the checker both measured a
+  string that never existed. Fixed → 2288; **SHIP GUARD v5** added measuring the actual badge
+  against len(DISPATCH) live. Gate 5,653 → 5,654/0.
