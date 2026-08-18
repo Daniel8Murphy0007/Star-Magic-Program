@@ -139,3 +139,4 @@ kerr_ftrz_mechanism,p1876,FAMILY_RECORD,AGN spin F_TRZ-coefficient family mechan
 cuprate_125_family,p1659,FAMILY_RECORD,T_c 125 K = (hbar*omega_SCm/k_B)*K_MEX (P1659/1794) mirrors A_5*K_MEX=125 (P1954) + lambda_layer (P1194b) - crossing recorded not reconciled,v0.383.0
 pi_provenance_record,p2235,FAMILY_RECORD,PI archive = seminal layer: handwritten Pi_001-035 -> Feb2025 analysis -> Apr2025 calculations -> PAPER_646 -> corpus; t_neg -2512s + 555:1 COP origins traced,v0.384.0
 kernel_family_6,p2237,FAMILY_RECORD,vacuum coupling kernel K = 19/160 now at SIX instances (alpha_s / lambda_H / m_H-m_t / J_CP / N_eff / gamma_immirzi=2K) - first QG member; pole-count even-multiple falsifier opened,v0.385.0
+poincare_tilt_routes,p2238_append,FAMILY_RECORD,Poincare 7/12 two routes: 1/2 + F_TRZ*Phi_5/6 (wired) and K_MEX - 3/2 (crossing) - both EXACT; 7/12 = 1/2 + tilt joins the P2178 census (topology domain),v0.386.0

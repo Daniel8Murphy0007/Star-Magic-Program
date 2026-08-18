@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.385.0", "uqff_calculator.VERSION = 0.385.0 (the Immirzi ship: PAPER_2236/2237, gamma = 2K EXACT, Tier-2 final 22/7)")
+assert_that(C.VERSION == "0.386.0", "uqff_calculator.VERSION = 0.386.0 (the information-budget ship: PAPER_2238 + Millennium linking pass)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12249,6 +12249,27 @@ _sg5_rd = open('README.md', encoding='utf-8', errors='ignore').read()
 _sg5_keys = len(C.DISPATCH)
 assert_that(('public_surfaces-%d' % _sg5_keys) in _sg5_rd,
             "SHIP GUARD v5: README public_surfaces badge must carry the LIVE key count %d - it sat stale at 2172 through five ships because update regexes matched a double-underscore variant that never existed; the badge is now measured directly (the proxy lesson, again)" % _sg5_keys)
+
+# ---- PAPER_2238 INFORMATION BUDGET CLOSURE (Daniel-ordered derivation completion, 2026-08-16) ----
+_l2238 = C.DISPATCH['PAPER_2238']()
+assert_that(_l2238['value']['bit_exact_vs_p1280'] and _l2238['value']['page_recovery_exact'] == '24899/25000',
+            "PAPER_2238: Page recovery = 1 - D_phys*F_TRZ^3*(1+F_TRZ^2) = 24899/25000 = 0.99596 BIT-EXACT vs the PAPER_1280 paper-stated value - the proof-set's open derivation CLOSED in pure primitives")
+assert_that(_l2238['value']['odd_rung_expansion'] and _l2238['value']['budget_sums_to_unity'],
+            "PAPER_2238: deficit expands as D_phys*(F_TRZ^3+F_TRZ^5) (odd rungs, complementing the P2139 even quartet); wormhole + white-hole channels sum to unity by exact rational arithmetic")
+assert_that(_l2238['value']['emission_successor_11'],
+            "PAPER_2238: the WH emission boost (1+F_TRZ)*SO_5 = 11 = SO_5+1 - the successor grammar (P2128) spans both sides of Move 4")
+assert_that('falsifier' in _l2238['formula'] and 'ATTRIBUTION' in _l2238['formula'],
+            "PAPER_2238: Rule 7 in-formula - the channel attribution is disclosed as the landmark's new claim with its falsifier (101/25000 reproduction requirement)")
+
+# ---- MILLENNIUM LINKING PASS (PAPER_2238 append, Daniel-directed) ----
+assert_that(C.page_recovery_purity() == 0.99596 and C.page_recovery_purity() == 1.0 - 4*C.F_TRZ**3*(1.0 + C.F_TRZ**2),
+            "MILLENNIUM RECALC 1: BH-info closure now COMPUTED from primitives, bit-identical to the literal it replaced")
+assert_that(C.navier_stokes_enstrophy_cap() == 0.85 and C.navier_stokes_enstrophy_cap() == 17.0/20.0,
+            "MILLENNIUM RECALC 2: NS enstrophy cap = 17/20 - the P2098 conservation complementarity (3/20+17/20=1), fluid sector = the family's 4th domain; bit-identical")
+assert_that(abs((0.5 + C.F_TRZ*(5.0/6.0)) - 7.0/12.0) < 1e-15,
+            "MILLENNIUM LINK: Poincare 7/12 = 1/2 + F_TRZ*Phi_5/6 = 1/2 + THE TILT (1/12) - topology joins the PAPER_2178 tilt census; K_MEX-3/2 second route recorded as crossing")
+assert_that(abs((1.0 - 4*C.F_TRZ**4) - 0.9996) < 1e-15,
+            "RECOVERY RUNG LADDER: P1095 10-Msun refinement = 1 - D_phys*F_TRZ^4 EXACT - rung 4 vs the Millennium closure's dressed rung 3; interpolation falsifier opened")
 
 # =============================================================================
 # REPORT

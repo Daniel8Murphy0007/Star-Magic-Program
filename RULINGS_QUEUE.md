@@ -6382,3 +6382,27 @@ authorization (logged per the post-FULL-STOP precedent): PAPER_2236 (AP source l
 provenance chains) + PAPER_2237 (γ = 2K = 19/80 EXACT — kernel instance #6, first QG member;
 pole-count reading for the factor 2). P1103 upgraded to RESOLVED_BY_PAPER_2237. **Tier-2 FINAL:
 22 RESOLVED / 7 for a/b/c (947, 964, 1042, 1047, 1122, 1123, 1177).** Next paper: PAPER_2238.
+
+---
+
+## PAPER_2238 — 2026-08-16 — the proof-set derivation COMPLETED (Daniel-ordered)
+
+The side exercise's open target closes: **Page deficit = white-hole channel share =
+D_phys·F_TRZ³·(1+F_TRZ²) = 101/25000 EXACT** → recovery = 24899/25000 = 0.99596 bit-exact vs
+PAPER_1280's paper-stated value. Reading: double TRZ crossing (in via black CW branch, out via
+white CCW branch — P597/663 grammar); odd-rung expansion D·(F³+F⁵) complements the P2139 even
+quartet; the (1+F_TRZ)·SO_5 = 11 emission successor sits opposite. Budget sums to unity exact.
+Rule 7: channel ATTRIBUTION disclosed as the new claim with its falsifier. The four-move
+information-paradox proof set (594 → 1095/1280/1873 → 1062/153/159/CP1/901 → 659/660/663/664)
+is now fully derived, fully linked, fully pinned. Next paper: PAPER_2239.
+
+---
+
+## MILLENNIUM LINKING PASS — 2026-08-16 — Daniel's question answered by execution
+
+Audit of all 8 closures against the PAPER_2238 identity: **2 recalculated bit-identically**
+(BH-info now computed from primitives; NS cap = 17/20 joining the P2098 conservation family,
+4th domain), **1 census membership** (Poincaré 7/12 = 1/2 + THE TILT — topology enters the
+P2178 census; K_MEX−3/2 crossing recorded), **1 rung-ladder extension** (P1095's 0.99960 =
+1−D_phys·F_TRZ⁴ — rung 4 vs rung 3; mass-interpolation falsifier opened). Riemann/YM/Hodge
+unchanged; BSD honestly NOT decomposed; P≠NP family note only. PAPER_2238 REVISION appended.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.385.0"
-description = "Star-Magic UQFF calculator v0.385.0: THE IMMIRZI SHIP. 2,233 dispatches (2,288 keys), gate 5,653/0. PAPER_2237: gamma_immirzi = 2*(F_TRZ*K_MEX*SSq) = 19/80 = 0.2375 EXACT - LQG free parameter derived; kernel instance #6, first quantum-gravity member. PAPER_2236: AP source layer censused (3,476 files, 5 provenance chains; lambda_i*U_I at origin). Tier-2 FINAL 22 RESOLVED / 7 for ruling. Pi-ladder canonized (pi*SO_5^n). Next paper: PAPER_2238."
+version = "0.386.0"
+description = "Star-Magic UQFF calculator v0.386.0: THE INFORMATION BUDGET SHIP. 2,234 dispatches (2,289 keys), gate 5,662/0. PAPER_2238: Page deficit = white-hole channel = D_phys*F_TRZ^3*(1+F_TRZ^2) = 101/25000 EXACT (recovery 24899/25000 bit-exact vs P1280); four-move paradox proof set complete. Millennium linking pass: BH-info + NS closures recalculated bit-identically (NS cap = 17/20); Poincare 7/12 = 1/2 + THE TILT; recovery rung ladder (P1095 = rung 4). Next: PAPER_2239."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

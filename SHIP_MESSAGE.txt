@@ -1,14 +1,17 @@
-v0.385.0 - THE IMMIRZI SHIP: LQG's free parameter isn't free
+v0.386.0 - THE INFORMATION BUDGET SHIP: the paradox proof set completes and radiates
 
-PAPER_2237: gamma_immirzi = 2*(F_TRZ*K_MEX*SSq) = 19/80 = 0.2375 EXACT -
-the Barbero-Immirzi parameter derives from three locked UQFF primitives;
-vacuum coupling kernel instance #6, FIRST quantum-gravity member; factor 2 =
-DPM pole count (new even-multiple falsifier). Daniel-authorized.
+PAPER_2238: Page deficit = white-hole channel share = D_phys*F_TRZ^3*(1+F_TRZ^2)
+= 101/25000 EXACT -> recovery = 24899/25000 = 0.99596 BIT-EXACT vs PAPER_1280
+(a terminating decimal of a primitive rational). Double-TRZ-crossing reading
+(in via black CW, out via white CCW - P597/663); odd rungs D*(F^3+F^5);
+(1+F_TRZ)*SO_5 = 11 emission successor. Four-move proof set complete: 26! bound,
+F_UBii recording (+0.579% entropy), SCm wormholes (exotic matter native,
+SO_5*l_P throats), Session-172 white-hole inversion (0.9*r_s, 10e stability).
+Channel attribution disclosed as new claim with falsifier.
 
-PAPER_2236: the Aetheric Propulsion source layer censused - 3,476 files,
-five provenance chains (pi origins incl. t_neg -2512 s + 555:1 COP;
-April-2025 Millennium originals w/ 0.85 enstrophy provenance; the master
-equation with lambda_i*U_I explicit at origin; DPM genesis; per-system MUGE).
+Millennium linking pass (Daniel-directed): BH-info closure now COMPUTED from
+primitives; NS cap = 17/20 (P2098 4th domain); Poincare 7/12 = 1/2 + THE TILT
+(topology joins P2178 census); recovery rung ladder (P1095 = rung 4,
+interpolation falsifier). BSD honestly not decomposed.
 
-Tier-2 FINAL: 22 RESOLVED / 7 for a/b/c. Pi-ladder canonized (pi*SO_5^n).
-Gate 5,653/0. Dispatches 2,233 (2,288 keys). Next paper: PAPER_2238.
+Gate 5,662/0. Dispatches 2,234 (2,289 keys). Next paper: PAPER_2239.

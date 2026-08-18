@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.385.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.385.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.386.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.386.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5654%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2288-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5662%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2289-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.385.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.386.0 complete-compile campaign live**
 
-**This release (v0.385.0): THE IMMIRZI SHIP — LQG'S FREE PARAMETER ISN'T FREE.** **PAPER_2237 — THE IMMIRZI KERNEL IDENTITY:** γ = 2·(F_TRZ·K_MEX·SSq) = 2·(19/160) = **19/80 = 0.2375 EXACT** — the Barbero-Immirzi parameter, fixed in loop quantum gravity only by entropy matching, derives from three locked UQFF primitives with zero freedom. The PAPER_2132 vacuum coupling kernel gains instance #6 and its FIRST quantum-gravity member; the factor 2 reads as the DPM pole count (CW/CCW dual branches), yielding a new falsifier class (even-K multiples in dual-branch contexts). Discovered during the Tier-2 mine at PAPER_1103's spin-foam amplitude; Daniel-authorized. **PAPER_2236 — THE SOURCE LAYER:** the Aetheric Propulsion archive censused (3,476 files, 60+ collections) with five provenance chains canonized — π (handwritten Pi_001-035 → the corpus; t_neg = −2512 s and the 555:1 COP at origin), the April-2025 Millennium originals (0.85 enstrophy provenance in the oscilloscope-coupled NS document), the master equation (**λ_i·U_I explicit at origin** in FU.docx), DPM genesis, and the per-system MUGE layer. **TIER-2 FINAL: 22 RESOLVED / 7 for a/b/c** (972 Hybrid-compliant in-formula; 1114 anchor+correction; 1083 natively carries P_Um; 1103 via PAPER_2237; four honestly demoted). **π-ladder canonized:** both Feb-2025 endpoints are π·SO_5ⁿ with identical rounding fingerprints. **Totals: 2,233 wired (2,288 DISPATCH keys) / gate 5,654 green / 4,159 defs. Next paper: PAPER_2238.**
+**This release (v0.386.0): THE INFORMATION BUDGET SHIP — THE PARADOX PROOF SET COMPLETES AND RADIATES.** **PAPER_2238 — THE INFORMATION BUDGET CLOSURE:** the Page deficit is the white-hole channel share, and both are exact primitive arithmetic — δ = D_phys·F_TRZ³·(1+F_TRZ²) = **101/25000**, so recovery = **24899/25000 = 0.99596 BIT-EXACT** against PAPER_1280's paper-stated value (a terminating decimal, not an approximation). Reading: the (1+F_TRZ²) dressing is the **double time-reversal-zone crossing** — in through the black CW branch, out through the white CCW branch (P597/663); expands as odd rungs D·(F³+F⁵) complementing the P2139 even quartet; the white hole's emission boost (1+F_TRZ)·SO_5 = 11 = SO_5+1 puts the successor on the other side. The four-move paradox proof set (26! bound → F_UBii recording → SCm wormholes → Session-172 white-hole inversion with 10e ≈ 27× stability) ships complete with its 19-paper citation web. **THE MILLENNIUM LINKING PASS (Daniel-directed):** two closures recalculated bit-identically — BH-info now COMPUTED from primitives at source; **NS enstrophy cap = 17/20**, the P2098 conservation complementarity's 4th domain, provenance to the 30Apr2025 source doc. **Poincaré unmasked: 7/12 = 1/2 + THE TILT** — topology joins the P2178 census exactly as predicted; K_MEX−3/2 crossing recorded. **The recovery rung ladder:** P1095's 0.99960 = 1−D_phys·F_TRZ⁴ (rung 4 vs rung 3) — mass-interpolation falsifier opened. BSD honestly NOT decomposed. **Totals: 2,234 wired (2,289 DISPATCH keys) / gate 5,662 green / 4,160 defs. Next paper: PAPER_2239.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.385.0)
+## What is currently shipped (v0.386.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,233 distinct dispatches (2,288 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,234 distinct dispatches (2,289 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

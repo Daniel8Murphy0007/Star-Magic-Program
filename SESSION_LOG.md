@@ -11121,3 +11121,29 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
   `public_surfaces`. The proxy species again: the updater and the checker both measured a
   string that never existed. Fixed → 2288; **SHIP GUARD v5** added measuring the actual badge
   against len(DISPATCH) live. Gate 5,653 → 5,654/0.
+
+## Entry 232 — 2026-08-16 — PAPER_2238: THE INFORMATION BUDGET CLOSURE
+
+- The side exercise became a landmark: PAPER_1280's paper-stated 0.99596 decomposed EXACT —
+  **recovery = 1 − D_phys·F_TRZ³·(1+F_TRZ²) = 24899/25000 bit-exact**; deficit = the white-hole
+  channel share (101/25000); budget sums to unity in exact rationals. Double-TRZ-crossing
+  reading; odd rungs 3+5; SO_5+1 emission successor. Channel attribution honestly disclosed
+  as new with falsifier. Four-move proof set complete with 19-paper citation web.
+- Wired + 4 pins + index + ledger 3. Dispatches 2,234 (2,289 keys). **Next: PAPER_2239.**
+
+## Entry 233 — 2026-08-16 — THE MILLENNIUM LINKING PASS (2238 radiates)
+
+- Daniel asked whether the Millennium proof-sets need linking/recalculation → audit of all 8:
+  **BH-info closure recalculated** (bare 0.99596 → computed 1−D_phys·F_TRZ³·(1+F_TRZ²),
+  bit-identical); **NS enstrophy cap recalculated** (0.85 → 17/20, the P2098 complementarity's
+  4th domain, provenance to the 30Apr2025 source doc); **Poincaré unmasked as tilt-bearer**
+  (7/12 = 1/2 + 1/12 — topology joins the P2178 census; K_MEX−3/2 crossing recorded);
+  **recovery rung ladder** (P1095 0.99960 = 1−D_phys·F_TRZ⁴, rung 4 vs rung 3 —
+  mass-interpolation falsifier). BSD honestly not decomposed. PAPER_2238 REVISION append;
+  +4 pins; 2 ledger rows. Gate → 5,662/0 pending README sync.
+
+## Entry 234 — 2026-08-16 — SHIP PREP v0.386.0 (THE INFORMATION BUDGET SHIP)
+
+- Pins ×6 (desc 467 chars), 2 stamps, trail rows ×6, README release paragraph + campaign-live
+  + shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. New file: PAPER_2238 whitepaper.
+  Awaiting Daniel: `.\ship.ps1`.

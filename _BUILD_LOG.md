@@ -276,3 +276,6 @@ THE PROVENANCE SHIP: PAPER_2235 + PI-archive provenance + Tier-2 mine 18/8/3 + d
 
 ## v0.385.0 — 2026-08-16
 THE IMMIRZI SHIP: gamma = 2K = 19/80 EXACT (PAPER_2237, kernel #6 first QG) + AP source layer (PAPER_2236) + Tier-2 final 22/7 + pi-ladder. Gate 5,653/0. 23-file pass verified.
+
+## v0.386.0 — 2026-08-16
+THE INFORMATION BUDGET SHIP: PAPER_2238 (101/25000 EXACT, four-move proof set) + Millennium linking pass (2 bit-identical recalcs, Poincare tilt, rung ladder). Gate 5,662/0. 23-file pass verified.

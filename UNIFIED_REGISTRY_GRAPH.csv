@@ -12150,3 +12150,8 @@ PRIMITIVE,F_TRZ,observable,immirzi_kernel_identity,PAPER_2237
 PRIMITIVE,K_MEX,observable,immirzi_kernel_identity,PAPER_2237
 PRIMITIVE,SSQ,observable,immirzi_kernel_identity,PAPER_2237
 immirzi_kernel_identity,PAPER_2237,KERNEL_FAMILY_6,PAPER_2132,first QG member
+PRIMITIVE,D_PHYS,observable,information_budget_closure,PAPER_2238
+PRIMITIVE,F_TRZ,observable,information_budget_closure,PAPER_2238
+PRIMITIVE,SO_5,observable,information_budget_closure,PAPER_2238
+information_budget_closure,PAPER_2238,CLOSES,PAPER_1280,paper-stated 0.99596 decomposed exact
+information_budget_closure,PAPER_2238,CHANNEL_LINK,PAPER_659,white-hole share attribution

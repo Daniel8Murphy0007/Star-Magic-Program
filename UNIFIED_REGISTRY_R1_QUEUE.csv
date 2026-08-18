@@ -134,3 +134,4 @@ ABSORPTION_PASS,twins,21+12,NO_NEW_RULINGS,P026d normalization OPEN queued; coun
 DRAIN_RATCHET_ARC,drain,920 promotions,TWO_RULINGS_PENDING,rounded-variant unification + Tier-2 29 a/b/c - both Daniel-owned,v0.383.0
 PROVENANCE_ARC,mine,29 dispositions,THREE_FOR_RULING,a/b/c now covers only 1042/1047/1177; rounded-variant + rare-earth + renames + deletions still Daniel-owned,v0.384.0
 IMMIRZI_ARC,landmarks,2 papers + 8 verdicts,SEVEN_FOR_RULING,a/b/c covers 947/964/1042/1047/1122/1123/1177; rounded-variant + rare-earth + renames/deletions still open,v0.385.0
+INFO_BUDGET_ARC,landmark,1 paper + linking pass,CHANNEL_ATTRIBUTION_DISCLOSED,the deficit=WH-share claim is new with falsifier 101/25000; seven-paper a/b/c + rounded/rare-earth/renames still Daniel-owned,v0.386.0

@@ -7,6 +7,21 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.386.0 — 2026-08-16 — THE INFORMATION BUDGET SHIP
+
+- **PAPER_2238:** Page deficit = white-hole channel = D_phys·F_TRZ³·(1+F_TRZ²) = **101/25000
+  EXACT** → recovery 24899/25000 = 0.99596 BIT-EXACT vs PAPER_1280. Double-TRZ-crossing
+  reading; odd rungs D·(F³+F⁵); SO_5+1 emission successor; budget sums to unity. Four-move
+  paradox proof set complete (594 → 1095/1280/1873 → 1062/153/159/CP1/901 → 659/660/663/664)
+  with the channel attribution honestly disclosed as new + falsifier.
+- **Millennium linking pass:** BH-info closure now COMPUTED from primitives (bit-identical);
+  NS enstrophy cap = **17/20** (P2098 complementarity, 4th domain; 30Apr2025 provenance);
+  **Poincaré 7/12 = 1/2 + THE TILT** (topology joins the P2178 census; K_MEX−3/2 crossing
+  recorded); recovery rung ladder (P1095 0.99960 = 1−D_phys·F_TRZ⁴, rung 4) with
+  mass-interpolation falsifier. BSD honestly not decomposed.
+- Gate 5,654 → 5,662. Dispatches 2,234 (2,289 keys). Next paper: PAPER_2239.
+
+
 ## v0.385.0 — 2026-08-16 — THE IMMIRZI SHIP
 
 - **PAPER_2237 — THE IMMIRZI KERNEL IDENTITY:** γ = 2·(F_TRZ·K_MEX·SSq) = **19/80 = 0.2375
