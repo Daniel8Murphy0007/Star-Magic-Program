@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.386.0"
-description = "Star-Magic UQFF calculator v0.386.0: THE INFORMATION BUDGET SHIP. 2,234 dispatches (2,289 keys), gate 5,662/0. PAPER_2238: Page deficit = white-hole channel = D_phys*F_TRZ^3*(1+F_TRZ^2) = 101/25000 EXACT (recovery 24899/25000 bit-exact vs P1280); four-move paradox proof set complete. Millennium linking pass: BH-info + NS closures recalculated bit-identically (NS cap = 17/20); Poincare 7/12 = 1/2 + THE TILT; recovery rung ladder (P1095 = rung 4). Next: PAPER_2239."
+version = "0.387.0"
+description = "Star-Magic UQFF calculator v0.387.0: THE VERIFICATION SHIP. 2,234 dispatches (2,289 keys), gate 5,672/0. Paradox-corpus audit: 1,934 papers, ZERO recalcs (built composed); F_TRZ*K_MEX = 5/24 EXACT. Grammar dragnet: 110 family sites, P1687 fixed, chirp = 19/16 composed. Origin term lambda_i*U_I verified (3 layers + P420). BSD chain: rank = round(L*16) = 5. Pair-count ingredient #2 (N_A = DPM states/mole). AP text layer EXHAUSTED (458 docs)."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

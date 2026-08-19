@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.387.0 — 2026-08-16 — THE VERIFICATION SHIP
+
+- **Paradox-corpus audit (Daniel-ordered):** 1,934/2,282 papers paradox-class; 71-paper block
+  swept — **ZERO recalcs needed** (built composed). New identity: **F_TRZ·K_MEX = 5/24 EXACT**
+  (Loschmidt + QGP R_AA + rotation-curve diversity + the P2135 census).
+- **Grammar dragnet:** 2,234 dispatches × 23 exact rationals = 110 family sites. P1687's
+  independent Page literal fixed (the inheritance hole); GW170817 chirp = 19/16 confirmed
+  composed; P047 level-8 = 25/4 held CANDIDATE.
+- **Origin fidelity:** λ_i·U_I verified at 3 layers (+ PAPER_420's own restoration note);
+  Canonical v1.5 = equilibrium reduction. PI Calculator = CoAnQi lineage (PAPER_2236
+  corrected, Rule 7).
+- **Final text-layer mine (458 docs — AP archive EXHAUSTED):** pair-count ingredient #2
+  (N_A = DPM resonance states/mole); BSD chain documented (derived 0.3060017, rank =
+  round(L×16) = 5); density-origin false positive disclosed.
+- Gate 5,662 → 5,672. Runnable queue EMPTY — all remaining items Daniel-owned.
+
+
 ## v0.386.0 — 2026-08-16 — THE INFORMATION BUDGET SHIP
 
 - **PAPER_2238:** Page deficit = white-hole channel = D_phys·F_TRZ³·(1+F_TRZ²) = **101/25000

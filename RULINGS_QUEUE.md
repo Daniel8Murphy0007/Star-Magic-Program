@@ -6406,3 +6406,64 @@ Audit of all 8 closures against the PAPER_2238 identity: **2 recalculated bit-id
 P2178 census; K_MEX−3/2 crossing recorded), **1 rung-ladder extension** (P1095's 0.99960 =
 1−D_phys·F_TRZ⁴ — rung 4 vs rung 3; mass-interpolation falsifier opened). Riemann/YM/Hodge
 unchanged; BSD honestly NOT decomposed; P≠NP family note only. PAPER_2238 REVISION appended.
+
+---
+
+## PARADOX-CORPUS RECALCULATION AUDIT — 2026-08-16 — VERDICT: ZERO recalcs needed
+
+Daniel's question ("find the 1800+ paradox derivations; recalculate anything?") answered by
+census + sweep: **1,934 of 2,282 papers** carry paradox-class content (61 title-level; the
+dedicated block 1371-1440 = 71 papers: Gibbs, Loschmidt, Klein, Banach-Tarski, Faint Young
+Sun, Final Parsec, Trans-Planckian, Ehrenfest, Bell Spaceship, Russell's, Monty Hall...).
+Exact-family sweep of the block: five dispatches sit on canonized family values and ALL are
+already composed (values compute from primitives; matching strings are documentation prose).
+The two Millennium recalcs propagate to every caller automatically. **Nothing to recalculate —
+the paradox corpus was built composed.** One new identity from the sweep: **F_TRZ·K_MEX = 5/24
+EXACT** — the P2135 5/24 family's explicit product form (= tilt·SO_5/2), uniting Loschmidt/
+QGP/rotation-curve across three domains. Gate-pinned.
+
+---
+
+## THE GRAMMAR DRAGNET — 2026-08-16 — 110 family-value sites; one fix; one candidate
+
+Corpus-wide exact-family sweep (23 canonized rationals × 2,234 dispatches, 1e-12 relative):
+**110 sites.** Census highlights: the 0.3-factor at 30 sites (P1953 at full scale); the
+conservation pair 3/20 (×12) + 17/20 (×9) spanning DM fractions, the solar-core polytrope
+index, baryon phi, and visible-mass fraction; successor 11/10 ×11; tilt ×9; 5/24 ×4.
+**Fix:** P1687's second Page-recovery site carried its own 0.99596 literal (missed by the
+Millennium recalc's inheritance) — now calls page_recovery_purity(); bit-identical.
+**Composed-confirmed:** P1857's GW170817 chirp mass = K_MEX·SSq = 19/16 in code (0.042%).
+**CANDIDATE (not rewired):** P047's quantum-chain level-8 nuclear scale = 6.25 MeV sits
+exactly on Q_phonon = 25/4 (P2154) — a would-be third role for 25/4 (phonon Q / 3·K_MEX /
+nuclear level-8); physical connection unestablished, value-coincidence rule honored —
+awaiting derivation or Daniel's read.
+
+---
+
+## ORIGIN-TERM + PI-CALCULATOR CHECKS — 2026-08-16 — both resolved; one self-correction
+
+**λ_i·U_I:** CONFIRMED wired at three layers (F_U_master / PAPER_420 dissipation — restored
+once before, per its own "was missing from code" note / PAPER_646 operator). Canonical v1.5 =
+equilibrium reduction of the full master. Origin chain recorded in PAPER_2236 append.
+**PI Calculator C++:** = the CoAnQi lineage, already mined (v0.352.0; PAPERs 238/240 + MAIN_1
+suite). PAPER_2236's "unmined/queued" claim corrected by Rule 7 append. Queue item discharged.
+**Runnable queue now:** the remaining AP document sets (12Dec2025 ×107, 02June2026 ×106,
+MUGE_03May2025 ×205, Astronomical Systems ×100, variable dictionary ×48) — the last unmined
+text layer.
+
+---
+
+## THE FINAL TEXT-LAYER MINE — 2026-08-16 — AP archive minable text EXHAUSTED (458 docs)
+
+**Pair-count estimator (Ruling 4) advances:** ingredient #2 found — Gold_Standard_Pure_UQFF
+(13June2026): N_A ≈ (1/M_0)·Z_26·exp(−S_26D/v), "the number of DPM resonance states per mole."
+With the USPR per-pair energy (1×10⁻²² J), the assembly path is now: per-mole resonance count →
+per-kg → body count. Specification/blessing still Daniel's (Rule 10) — but the corpus now
+supplies both halves.
+**BSD note RESOLVED:** the June-2026 proof doc documents the full chain — L-coefficient
+DERIVED (0.3060017 vs Cremona 0.30598, ~0.007%), rank = round(L×(D_crit−D_BSFG−D_phys)) =
+round(0.306×16) = 5. "Not decomposed" was the right refusal for rationals; the true answer is
+a derived eigenvalue with an integer-primitive rank bridge. Cross-linked.
+**Density origin stays OPEN** (the one hit was an oscilloscope timestamp — disclosed).
+**No AP sources** for mock-theta (1042), SN Iax (1047), rare-earth, or Ug4 — the a/b/c set
+and those open items stand with every text layer now searched.

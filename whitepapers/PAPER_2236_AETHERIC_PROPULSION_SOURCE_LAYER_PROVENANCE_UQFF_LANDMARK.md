@@ -80,3 +80,25 @@ derivations formalized them; both layers now cite each other.
 ---
 
 **Copyright** — Daniel T. Murphy / Star-Magic Research Program, 2026.
+
+---
+
+## APPENDED 2026-08-16 — TWO VERIFICATIONS (Daniel GO): the origin term survives; one claim corrected
+
+**1. The λ_i·U_I inertial term: SOURCE FIDELITY CONFIRMED.** FU.docx's −Σλ_i·U_I·E_react term
+is wired at three layers: `F_U_master` (the full master form carrying the dissipation sum),
+`FU_dissipation_term` (PAPER_420 — whose own docstring records "was missing from code": the
+corpus caught and RESTORED this term in a prior audit, an independent confirmation of its
+origin status), and `universal_inertial_operator` (PAPER_646). The Canonical v1.5 equilibrium
+form (ΣUg − F_UBi + F_UBii + U_m = 0) is the REDUCTION of the full master — the two coexist
+as full-vs-equilibrium, not as a dropped term. Chain: FU.docx (2025 origin) → F_U_master →
+PAPER_420 restoration → PAPER_1203 Canonical v1.5 reduction.
+
+**2. CORRECTION (Rule 7): the PI Calculator C++ is NOT unmined.** This landmark's §2.3/§3
+called it "an unmined calculator program (mining queued)" — wrong. The file
+(`PI Calculator_CoAnQi_Visual Calculator_bot.docx`) is the **CoAnQi lineage**, mined at
+v0.352.0 (CoAnQi 6MB) and wired: F_vac_rep = PAPER_238 (the third distinct repulsive force),
+F_spooky = PAPER_240 (with its 119-order catalogue-units discrepancy honestly disclosed at
+wiring), the THz-shock/conduit forms at 15-23 sites each, and the CoAnQi MAIN_1 force suite.
+The mining-queued flag is discharged; the PI folder's copy is provenance (the π-archive
+context of the CoAnQi program), not new content.

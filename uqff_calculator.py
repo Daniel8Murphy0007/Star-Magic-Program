@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.386.0"
+VERSION = "0.387.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -22253,7 +22253,7 @@ def _p1686(dataset=None):
 
 @_register('PAPER_1687')
 def _p1687(dataset=None):
-    v = 0.99596
+    v = page_recovery_purity()
     return {'value': {'page_curve_recovery': v},
             'formula': 'f_recovery = 0.99596 via F_UBii buoyancy surface encoding (BH information Millennium closure value, predecessor-wired; sequential registration) - information recovered, no paradox',
             'source': 'PAPER_1687', 'residual_pct': 0.0}

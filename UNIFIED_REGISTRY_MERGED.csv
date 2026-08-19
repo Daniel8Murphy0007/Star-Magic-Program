@@ -640,3 +640,4 @@ DRAIN_RATCHET_ARC,WHITEPAPER,MERGED,v0.383.0,constant drain 920 promotions (5 pa
 PROVENANCE_ARC,WHITEPAPER,MERGED,v0.384.0,PAPER_2235 pi landmark + PI-archive provenance (t_neg/555:1 origins) + Tier-2 mine 18/8/3 + Pass E + attribution terminal guard ZERO
 IMMIRZI_ARC,WHITEPAPER,MERGED,v0.385.0,PAPER_2237 gamma=2K=19/80 EXACT (kernel #6 first QG member) + PAPER_2236 AP source layer (3476 files 5 chains) + Tier-2 FINAL 22/7 + pi-ladder canonized pi*SO_5^n
 INFO_BUDGET_ARC,WHITEPAPER,MERGED,v0.386.0,PAPER_2238 budget closure (101/25000 EXACT + four-move proof set) + Millennium linking pass (BH-info computed; NS 17/20; Poincare = 1/2 + tilt; recovery rung ladder P1095 rung 4)
+VERIFICATION_ARC,AUDIT,MERGED,v0.387.0,paradox audit ZERO recalcs + 5/24 identity + dragnet 110 sites (P1687 fix; chirp 19/16 composed; P047 candidate) + origin term verified 3 layers + BSD chain + pair-count ingredient #2 + AP text layer EXHAUSTED (458 docs)

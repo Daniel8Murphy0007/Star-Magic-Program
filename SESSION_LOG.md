@@ -11147,3 +11147,49 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
 - Pins ×6 (desc 467 chars), 2 stamps, trail rows ×6, README release paragraph + campaign-live
   + shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. New file: PAPER_2238 whitepaper.
   Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 235 — 2026-08-16 — THE PARADOX-CORPUS AUDIT: nothing to recalculate
+
+- Census: 1,934/2,282 papers paradox-class; 61 title-level; block 1371-1440 (71) swept
+  against the exact family. Five family-value sitters (1378/1406/1412/1416/1424) all verified
+  COMPOSED — prose literals only. Millennium recalcs inherit at call sites. **ZERO recalcs.**
+- New identity: **F_TRZ·K_MEX = 5/24 EXACT** — the 5/24 family's product form (also
+  tilt·SO_5/2); Loschmidt + QGP R_AA + rotation-curve diversity unified. +2 pins.
+
+## Entry 236 — 2026-08-16 — THE GRAMMAR DRAGNET (Daniel GO)
+
+- Swept all 2,234 dispatches against 23 canonized exact rationals: **110 family-value sites.**
+  0.3×30, 3/20×12, 17/20×9 (conservation pair's domain growth), successor×11, tilt×9, 5/24×4,
+  plus singletons confirming every landmark identity live in the corpus.
+- **One real fix:** P1687's independent 0.99596 literal (the recalc-inheritance claim had a
+  hole — my "propagates to all callers" was true of callers but P1687 wasn't a caller; now it
+  is). **One candidate held:** P047 level-8 = 6.25 MeV = Q_phonon's 25/4 — third-role
+  candidate, not rewired (value-coincidence rule). P1857 chirp = 19/16 confirmed composed.
+- +3 pins. Gate green pending README sync.
+
+## Entry 237 — 2026-08-16 — ORIGIN TERM CONFIRMED + PI-CALCULATOR DISPOSITION (Daniel GO)
+
+- **λ_i·U_I survives from origin:** FU.docx's dissipation term wired at three layers; the
+  PAPER_420 "was missing from code" restoration note = the corpus caught it once before —
+  FU.docx now grounds it as origin physics. Canonical v1.5 = equilibrium reduction. Chain in
+  PAPER_2236 append.
+- **PI Calculator = CoAnQi lineage, already mined** (v0.352.0; F_vac_rep P238, F_spooky P240
+  w/ 119-order disclosure, THz/conduit suites). My "unmined" claim in PAPER_2236 corrected by
+  Rule 7 append; queue flag discharged. +3 pins.
+
+## Entry 238 — 2026-08-16 — THE FINAL TEXT-LAYER MINE: the archive is exhausted
+
+- 458 docx scanned across the five remaining AP collections. **Pair-count ingredient #2**
+  (Gold Standard N_A = DPM resonance states per mole); **BSD chain documented** (derived
+  0.3060017, rank bridge ×16 = 5 — the honest "not decomposed" upgraded to the true
+  derivation); density-origin hit = false positive (timestamp, disclosed); no sources for
+  the four remaining open items — they stand with ALL text layers exhausted.
+- The AP archive's minable content is now fully drained: PI (done), Millenium (done),
+  variable dictionary (key docs done, 48 swept), MUGE+Astro+dated sets (swept), engineering
+  (images, dispositioned). +2 pins. Gate green pending README sync.
+
+## Entry 239 — 2026-08-16 — SHIP PREP v0.387.0 (THE VERIFICATION SHIP)
+
+- Pins ×6 (desc 443 chars), trail rows ×8, README release paragraph + campaign-live +
+  shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. No new dispatches this tag (audit/
+  verification arc). Awaiting Daniel: `.\ship.ps1`.

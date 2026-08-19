@@ -12155,3 +12155,6 @@ PRIMITIVE,F_TRZ,observable,information_budget_closure,PAPER_2238
 PRIMITIVE,SO_5,observable,information_budget_closure,PAPER_2238
 information_budget_closure,PAPER_2238,CLOSES,PAPER_1280,paper-stated 0.99596 decomposed exact
 information_budget_closure,PAPER_2238,CHANNEL_LINK,PAPER_659,white-hole share attribution
+PRIMITIVE,F_TRZ,observable,f_trz_k_mex_5_24,PARADOX_AUDIT
+PRIMITIVE,K_MEX,observable,f_trz_k_mex_5_24,PARADOX_AUDIT
+f_trz_k_mex_5_24,PARADOX_AUDIT,FAMILY_PRODUCT_FORM,PAPER_2135,the 5/24 family: Loschmidt P1378 + QGP P1416/1778 + rotation P1424

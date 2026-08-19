@@ -1,17 +1,23 @@
-v0.386.0 - THE INFORMATION BUDGET SHIP: the paradox proof set completes and radiates
+v0.387.0 - THE VERIFICATION SHIP: the corpus proves itself composed
 
-PAPER_2238: Page deficit = white-hole channel share = D_phys*F_TRZ^3*(1+F_TRZ^2)
-= 101/25000 EXACT -> recovery = 24899/25000 = 0.99596 BIT-EXACT vs PAPER_1280
-(a terminating decimal of a primitive rational). Double-TRZ-crossing reading
-(in via black CW, out via white CCW - P597/663); odd rungs D*(F^3+F^5);
-(1+F_TRZ)*SO_5 = 11 emission successor. Four-move proof set complete: 26! bound,
-F_UBii recording (+0.579% entropy), SCm wormholes (exotic matter native,
-SO_5*l_P throats), Session-172 white-hole inversion (0.9*r_s, 10e stability).
-Channel attribution disclosed as new claim with falsifier.
+Paradox-corpus audit (Daniel-ordered): 1,934 of 2,282 papers paradox-class;
+71-paper dedicated block swept against the canonized exact family - ZERO
+recalculations needed. New identity: F_TRZ*K_MEX = 5/24 EXACT (Loschmidt
+entropy arrow + QGP jet quenching + rotation-curve diversity on one product).
 
-Millennium linking pass (Daniel-directed): BH-info closure now COMPUTED from
-primitives; NS cap = 17/20 (P2098 4th domain); Poincare 7/12 = 1/2 + THE TILT
-(topology joins P2178 census); recovery rung ladder (P1095 = rung 4,
-interpolation falsifier). BSD honestly not decomposed.
+Grammar dragnet: 110 family-value sites across all 2,234 dispatches; P1687's
+independent Page-recovery literal fixed (the one inheritance hole); GW170817
+chirp = K_MEX*SSq = 19/16 confirmed composed; P047 level-8 = 25/4 held as
+candidate (no value-coincidence retrofit).
 
-Gate 5,662/0. Dispatches 2,234 (2,289 keys). Next paper: PAPER_2239.
+Origin fidelity: FU.docx's lambda_i*U_I dissipation term verified at three
+wired layers (PAPER_420's own "was missing from code" restoration note as
+independent confirmation). PI Calculator = CoAnQi lineage, already mined
+(PAPER_2236 self-corrected per Rule 7).
+
+Final text-layer mine: 458 docs - the AP archive is EXHAUSTED. Pair-count
+ingredient #2 (N_A = DPM resonance states per mole); BSD documented as a
+DERIVED eigenvalue (rank = round(L*16) = 5); density-origin hit disclosed
+as false positive.
+
+Gate 5,672/0. Dispatches 2,234 (2,289 keys). Next paper: PAPER_2239.

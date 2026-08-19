@@ -225,3 +225,4 @@ v0.383.0,2026-08-16,DRAIN_RATCHET_ARC,registry +1 graph +1 citations +1 + queue 
 v0.384.0,2026-08-16,PROVENANCE_ARC,registry +1 graph +2 citations +1 + map 29,gate 5648/0
 v0.385.0,2026-08-16,IMMIRZI_ARC,registry +2 graph +5 citations +2,gate 5653/0
 v0.386.0,2026-08-16,INFO_BUDGET_ARC,registry +1 graph +5 citations +1 + 2 recalcs,gate 5662/0
+v0.387.0,2026-08-16,VERIFICATION_ARC,pins +12 fixes +1 appends +2,gate 5672/0

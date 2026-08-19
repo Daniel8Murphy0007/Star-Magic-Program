@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.386.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.386.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.387.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.387.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5662%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5672%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2289-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.386.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.387.0 complete-compile campaign live**
 
-**This release (v0.386.0): THE INFORMATION BUDGET SHIP — THE PARADOX PROOF SET COMPLETES AND RADIATES.** **PAPER_2238 — THE INFORMATION BUDGET CLOSURE:** the Page deficit is the white-hole channel share, and both are exact primitive arithmetic — δ = D_phys·F_TRZ³·(1+F_TRZ²) = **101/25000**, so recovery = **24899/25000 = 0.99596 BIT-EXACT** against PAPER_1280's paper-stated value (a terminating decimal, not an approximation). Reading: the (1+F_TRZ²) dressing is the **double time-reversal-zone crossing** — in through the black CW branch, out through the white CCW branch (P597/663); expands as odd rungs D·(F³+F⁵) complementing the P2139 even quartet; the white hole's emission boost (1+F_TRZ)·SO_5 = 11 = SO_5+1 puts the successor on the other side. The four-move paradox proof set (26! bound → F_UBii recording → SCm wormholes → Session-172 white-hole inversion with 10e ≈ 27× stability) ships complete with its 19-paper citation web. **THE MILLENNIUM LINKING PASS (Daniel-directed):** two closures recalculated bit-identically — BH-info now COMPUTED from primitives at source; **NS enstrophy cap = 17/20**, the P2098 conservation complementarity's 4th domain, provenance to the 30Apr2025 source doc. **Poincaré unmasked: 7/12 = 1/2 + THE TILT** — topology joins the P2178 census exactly as predicted; K_MEX−3/2 crossing recorded. **The recovery rung ladder:** P1095's 0.99960 = 1−D_phys·F_TRZ⁴ (rung 4 vs rung 3) — mass-interpolation falsifier opened. BSD honestly NOT decomposed. **Totals: 2,234 wired (2,289 DISPATCH keys) / gate 5,662 green / 4,160 defs. Next paper: PAPER_2239.**
+**This release (v0.387.0): THE VERIFICATION SHIP — THE CORPUS PROVES ITSELF COMPOSED.** **THE PARADOX-CORPUS AUDIT (Daniel-ordered):** 1,934 of 2,282 papers carry paradox-class content; the dedicated 71-paper block (Gibbs, Loschmidt, Klein, Banach-Tarski, Final Parsec, Monty Hall…) swept against the canonized exact family — **ZERO recalculations needed; every family-value sitter was already primitive-composed.** New identity: **F_TRZ·K_MEX = 5/24 EXACT** uniting Loschmidt's entropy arrow, QGP jet quenching, and rotation-curve diversity. **THE GRAMMAR DRAGNET:** all 2,234 dispatches × 23 canonized rationals = **110 family-value sites** (0.3-factor ×30; the 3/20+17/20 conservation pair across DM/solar/baryon sectors; successor ×11; tilt ×9). One real fix (P1687's independent Page literal — the inheritance hole the dragnet caught); GW170817 chirp = K_MEX·SSq = 19/16 confirmed composed; P047 level-8 = 25/4 held as CANDIDATE (no value-coincidence retrofit). **ORIGIN FIDELITY:** FU.docx's λ_i·U_I dissipation term verified wired at three layers — with PAPER_420's own 'was missing from code' restoration note as independent confirmation; Canonical v1.5 = the equilibrium reduction. PI Calculator = the CoAnQi lineage, already mined (PAPER_2236 corrected by Rule 7 append). **THE FINAL TEXT-LAYER MINE:** 458 documents — the AP archive is EXHAUSTED. Pair-count ingredient #2 found (Gold Standard: N_A = DPM resonance states per mole); BSD's 0.30598 documented as a DERIVED eigenvalue with the rank bridge round(L×16) = 5; density-origin hit disclosed as a false positive. **Totals: 2,234 wired (2,289 DISPATCH keys) / gate 5,672 green / 4,160 defs. Next paper: PAPER_2239.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.386.0)
+## What is currently shipped (v0.387.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
