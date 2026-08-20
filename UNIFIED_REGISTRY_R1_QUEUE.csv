@@ -136,3 +136,4 @@ PROVENANCE_ARC,mine,29 dispositions,THREE_FOR_RULING,a/b/c now covers only 1042/
 IMMIRZI_ARC,landmarks,2 papers + 8 verdicts,SEVEN_FOR_RULING,a/b/c covers 947/964/1042/1047/1122/1123/1177; rounded-variant + rare-earth + renames/deletions still open,v0.385.0
 INFO_BUDGET_ARC,landmark,1 paper + linking pass,CHANNEL_ATTRIBUTION_DISCLOSED,the deficit=WH-share claim is new with falsifier 101/25000; seven-paper a/b/c + rounded/rare-earth/renames still Daniel-owned,v0.386.0
 VERIFICATION_ARC,audits,4 arcs,RUNNABLE_QUEUE_EMPTY,all remaining items Daniel-owned: 7-paper a/b/c + rounded + rare-earth + renames + P047 + pair-count assembly,v0.387.0
+PAIRCOUNT_ARC,landmark+closure,1+7,TIER2_CLOSED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / E_pair provenance / reactor sub-single-pair,v0.388.0

@@ -6710,3 +6710,4 @@ ap_source_layer_provenance,WHITEPAPER,derived,,,3476 files / 5 chains,LANDMARK,,
 immirzi_kernel_identity,WHITEPAPER,derived,2*F_TRZ*K_MEX*SSq,2*(F_TRZ*K_MEX*SSQ),19/80,EXACT,0.0,quantum_gravity,,PAPER_2237,,,,,,WIRED
 information_budget_closure,WHITEPAPER,derived,1-D_phys*F_TRZ^3*(1+F_TRZ^2),1-4*F_TRZ**3*(1+F_TRZ**2),24899/25000,EXACT vs PAPER_1280,0.0,black_holes,,PAPER_2238,,,,,,WIRED
 f_trz_k_mex_5_24,AUDIT,derived,F_TRZ*K_MEX,F_TRZ*K_MEX,5/24,EXACT,0.0,foundations,,PARADOX_AUDIT_2026_08_16,,,,,,WIRED
+dpm_pair_count_sun,WHITEPAPER,derived,rho_SCm*V_sun/F_TRZ^22,RHO_SCM*(4/3)*pi*R_SUN**3/F_TRZ**22,1.0013e13,SO_5^(D_crit/2),0.13,foundations,,PAPER_2239,,,,,,WIRED

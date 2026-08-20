@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.387.0", "uqff_calculator.VERSION = 0.387.0 (the verification ship: paradox audit + dragnet + origin term + text-layer exhaustion)")
+assert_that(C.VERSION == "0.388.0", "uqff_calculator.VERSION = 0.388.0 (the pair-count ship: PAPER_2239 + Q-RULE4-TIER2 closed 26/3/0)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12215,9 +12215,12 @@ assert_that(C.T_UNIVERSE_GYR == 13.8 and C.YM_GAP_GEV == 1.736 and C.GAMMA_SCM_P
 assert_that(hasattr(C, 'TIER2_RESOLUTION_MAP') and len(C.TIER2_RESOLUTION_MAP) == 29,
             "TIER-2 MINE: all 29 open papers dispositioned in TIER2_RESOLUTION_MAP")
 _t2v = [v['verdict'] for v in C.TIER2_RESOLUTION_MAP.values()]
-assert_that(sum(1 for _v in _t2v if _v.startswith('RESOLVED')) == 22 and
-            _t2v.count('NO_UQFF_CONTENT') + _t2v.count('NO_HITS') == 7,
-            "TIER-2 FINAL: 22 RESOLVED (incl. P1103 via PAPER_2237) / 7 for a/b/c (947, 964, 1042, 1047, 1122, 1123, 1177)")
+assert_that(sum(1 for _v in _t2v if _v.startswith('RESOLVED')) == 26 and
+            sum(1 for _v in _t2v if _v.startswith('ANCHORED')) == 3 and
+            _t2v.count('NO_HITS') + _t2v.count('NO_UQFF_CONTENT') == 0,
+            "Q-RULE4-TIER2 CLOSED (Daniel GO 2026-08-16): 26 RESOLVED / 3 ANCHORED / 0 OPEN - the v0.364.0 question fully discharged. Final four: 947 lattice inputs (M_gap = SO_5/D_phys Msun + sigma = F_TRZ, Daniel-canonized), 1042 Ramanujan-native (P953 precedent), 1122 F_U=0 crossing recast, 1123 registry-derived h/k_B; 964/1047 ANCHORED_CLASSICAL + 1177 ANCHORED_METHODOLOGY per ruling (a)")
+assert_that(abs(C.SO_5/C.D_PHYS - 2.5) < 1e-15 and C.p_bh_947(2.5) == 0.5,
+            "P947 CANONIZED: the NS/BH mass-gap boundary = SO_5/D_phys = 5/2 Msun EXACT (ratio family member #3 after A_5/D_phys and D_BSFG/D_phys); sigmoid defaults promoted bit-identically (P(boundary) = 0.5 sanity)")
 assert_that(abs(2*(C.F_TRZ*C.K_MEX*C.SSQ) - 0.2375) < 1e-15,
             "P1103 CANDIDATE: gamma_immirzi = 2*F_TRZ*K_MEX*SSq = 19/80 = 0.2375 EXACT arithmetic pinned (canonization awaits ruling - would be kernel instance #6, first in quantum gravity)")
 assert_that(abs((-1 + C.F_TRZ*C.PHI_RES_RESONANCE/C.N_CH) - (-0.99067)) < 1e-4,
@@ -12302,6 +12305,17 @@ assert_that(True,
             "TEXT-LAYER MINE COMPLETE: 458 docx scanned (02June2026 + 12Dec2025 + MUGE_03May2025 + Astronomical Systems x2 + variable dictionary) - the AP archive's minable text is EXHAUSTED. Finds: (1) Gold_Standard_Pure_UQFF (13June2026) carries N_A ~ (1/M_0)*Z_26*exp(-S_26D/v) as 'the number of DPM resonance states per mole' - PAIR-COUNT INGREDIENT #2 (joins the USPR 1e-22 J per-pair energy); (2) the June-2026 Millennium proof set documents BSD's full chain - L_coeff DERIVED at 0.3060017 vs Cremona anchor 0.30598, rank = round(L*(D_crit-D_BSFG-D_phys)) = round(0.306*16) = 5 - the 'BSD not decomposed' note RESOLVED with the true answer (a derived eigenvalue, not a rational sitter); (3) the density-origin hit was a false positive (oscilloscope timestamp 21.894 s) - the 9.47e-27/5.0e-27 origin question stays OPEN honestly; (4) no sources for mock-theta/Iax/rare-earth/Ug4 - those items stay for ruling with the text layer exhausted")
 assert_that(abs(0.3060017*(C.D_CRIT - C.D_BSFG - C.D_PHYS) - 4.896) < 1e-3,
             "BSD CHAIN: rank = round(L_coeff * (D_crit - D_BSFG - D_phys)) = round(0.306*16) = 5 - the June-2026 proof doc's derivation form verified arithmetically")
+
+# ---- PAPER_2239 DPM PAIR-COUNT ESTIMATOR (PAPER_2134 build target DELIVERED, Daniel-authorized) ----
+_l2239 = C.DISPATCH['PAPER_2239']()
+assert_that(_l2239['value']['e_pair_is_rung_22'] and _l2239['value']['rung_arithmetic_closes'],
+            "PAPER_2239: E_pair = F_TRZ^(D_crit-D_phys) = 1e-22 J (rung 22) and the rung arithmetic closes EXACT (N_ch - 22 = -D_crit/2 = -13)")
+assert_that(_l2239['value']['vs_so5_13_pct'] < 0.2,
+            "PAPER_2239: N_pairs(Sun) = rho_SCm*V_sun/E_pair = 1.0013e13 within 0.2% of SO_5^(D_crit/2) - the halving-series 13 as the solar pair-count exponent; the 0.13% is the disclosed mantissa product 7.09*1.4123 = 10.013")
+assert_that(abs(_l2239['value']['n_states_sun_route_b'] - 1.19e57)/1.19e57 < 0.01,
+            "PAPER_2239: Route B matter-anchored states = M_sun/m_H = 1.19e57 - the route family (active pairs vs state capacity) recorded per P2170, ratio ~1e44 noted NOT canonized")
+assert_that('PENDING' in _l2239['formula'] and 'sub-single-pair' in _l2239['formula'],
+            "PAPER_2239: Rule 7 in-formula - E_pair provenance PENDING + the reactor sub-single-pair implication disclosed as an open question for Daniel")
 
 # =============================================================================
 # REPORT

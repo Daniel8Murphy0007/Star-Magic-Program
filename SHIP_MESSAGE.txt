@@ -1,23 +1,17 @@
-v0.387.0 - THE VERIFICATION SHIP: the corpus proves itself composed
+v0.388.0 - THE PAIR-COUNT SHIP: the framework's declared purpose, delivered
 
-Paradox-corpus audit (Daniel-ordered): 1,934 of 2,282 papers paradox-class;
-71-paper dedicated block swept against the canonized exact family - ZERO
-recalculations needed. New identity: F_TRZ*K_MEX = 5/24 EXACT (Loschmidt
-entropy arrow + QGP jet quenching + rotation-curve diversity on one product).
+PAPER_2239: the DPM pair-count estimator (PAPER_2134's build target,
+Daniel-authorized) - N_pairs(Sun) = rho_SCm*V_sun/F_TRZ^(D_crit-D_phys)
+= 1.0013e13 ~ SO_5^(D_crit/2) at 0.13%. Per-pair energy = ladder rung 22
+exact; solar SCm energy = rung 9; rung arithmetic closes exact (9-22 = -13
+= -D_crit/2, the halving series' final member). Route family recorded
+(active pairs 1e13 vs matter states 1.19e57); quintillions conjecture
+superseded; E_pair provenance + reactor sub-single-pair question disclosed.
 
-Grammar dragnet: 110 family-value sites across all 2,234 dispatches; P1687's
-independent Page-recovery literal fixed (the one inheritance hole); GW170817
-chirp = K_MEX*SSq = 19/16 confirmed composed; P047 level-8 = 25/4 held as
-candidate (no value-coincidence retrofit).
+Q-RULE4-TIER2 CLOSED at 26 RESOLVED / 3 ANCHORED / 0 OPEN: the NS/BH
+mass-gap boundary CANONIZED as SO_5/D_phys = 5/2 Msun EXACT (sigma = F_TRZ,
+bit-identical default promotion - primitive-ratio family #3); mock-theta
+Ramanujan-native; bow-shock standoff = F_U=0 crossing; maser h/k_B
+registry-derived. Residual three honestly tagged.
 
-Origin fidelity: FU.docx's lambda_i*U_I dissipation term verified at three
-wired layers (PAPER_420's own "was missing from code" restoration note as
-independent confirmation). PI Calculator = CoAnQi lineage, already mined
-(PAPER_2236 self-corrected per Rule 7).
-
-Final text-layer mine: 458 docs - the AP archive is EXHAUSTED. Pair-count
-ingredient #2 (N_A = DPM resonance states per mole); BSD documented as a
-DERIVED eigenvalue (rank = round(L*16) = 5); density-origin hit disclosed
-as false positive.
-
-Gate 5,672/0. Dispatches 2,234 (2,289 keys). Next paper: PAPER_2239.
+Gate 5,677/0. Dispatches 2,235 (2,290 keys). Next paper: PAPER_2240.

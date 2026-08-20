@@ -282,3 +282,6 @@ THE INFORMATION BUDGET SHIP: PAPER_2238 (101/25000 EXACT, four-move proof set) +
 
 ## v0.387.0 — 2026-08-16
 THE VERIFICATION SHIP: paradox audit (zero recalcs, 5/24 identity) + dragnet (110 sites, P1687 fix) + origin-term verification + text-layer exhaustion (458 docs). Gate 5,672/0. 23-file pass verified.
+
+## v0.388.0 — 2026-08-16
+THE PAIR-COUNT SHIP: PAPER_2239 (N_sun = SO_5^13, 0.13%) + Q-RULE4-TIER2 closed 26/3/0 (mass-gap canonized SO_5/D_phys). Gate 5,677/0. 23-file pass verified.

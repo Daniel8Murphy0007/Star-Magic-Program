@@ -6467,3 +6467,28 @@ a derived eigenvalue with an integer-primitive rank bridge. Cross-linked.
 **Density origin stays OPEN** (the one hit was an oscilloscope timestamp — disclosed).
 **No AP sources** for mock-theta (1042), SN Iax (1047), rare-earth, or Ug4 — the a/b/c set
 and those open items stand with every text layer now searched.
+
+---
+
+## RULING 1 EXECUTED — 2026-08-16 — PAPER_2239: the pair-count estimator DELIVERED
+
+N_pairs(Sun) = ρ_SCm·V_sun/F_TRZ^(D_crit−D_phys) = **1.0013×10¹³ ≈ SO_5^(D_crit/2) at 0.13%**
+— rung arithmetic exact (9−22 = −13); Route B (matter states, 1.19×10⁵⁷) recorded as family.
+P2134's quintillions conjecture superseded. TWO NEW OPEN QUESTIONS FOR DANIEL: (a) the E_pair
+= 1e-22 J provenance (USPR round number — the estimator inherits its uncertainty); (b) the
+reactor sub-single-pair implication (active volume → N < 1: resonant ambient excitation
+rather than pair confinement — does this support or strain the 555:1 mechanism?).
+
+---
+
+## Q-RULE4-TIER2 — 2026-08-16 — CLOSED (Daniel GO): 26 RESOLVED / 3 ANCHORED / 0 OPEN
+
+The question your v0.364.0 audit opened is fully discharged. Final four resolutions:
+**947** — mass-gap boundary CANONIZED as SO_5/D_phys = 5/2 M_sun EXACT with σ = F_TRZ (the
+primitive-ratio family's third member); defaults promoted bit-identically. **1042** — mock-theta
+is Ramanujan mathematics, UQFF-native per the P953 precedent. **1122** — the bow-shock standoff
+recast as an F_U = 0 pressure-balance crossing (the r_hz machinery's wind-sector instance).
+**1123** — h and k_B are registry-DERIVED (P2129); two-tier passes the Bucket-C way.
+Residual three per ruling (a): 964/1047 ANCHORED_CLASSICAL, 1177 ANCHORED_METHODOLOGY.
+**Remaining Daniel-owned board: rounded variants, rare-earth P1886, P047 candidate, renames,
+deletions, E_pair provenance, reactor sub-single-pair question.**

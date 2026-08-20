@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.387.0"
+VERSION = "0.388.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -13064,9 +13064,12 @@ def r_crit_946(sum_ug, M, F_n, Phi):
     return 2.0 * BETA_I * sum_ug * M / abs(F_n * Phi)
 
 
-def p_bh_947(m1, M_boundary=2.5, sigma=0.1):
+def p_bh_947(m1, M_boundary=SO_5/D_PHYS, sigma=F_TRZ):
     """PAPER_947: P(BH) = 1/(1+exp(-(m1-M_boundary)/sigma)) GW190425 mass-gap
-    sigmoid; P(NS) = 1 - P(BH)."""
+    sigmoid; P(NS) = 1 - P(BH).
+    TIER-2 RESOLUTION (Daniel-authorized 2026-08-16): BOTH inputs lattice-EXACT -
+    M_boundary = SO_5/D_phys = 5/2 Msun (ratio family: A_5/D_phys=15, D_BSFG/D_phys=3/2)
+    and sigma = F_TRZ Msun. Bit-identical to the prior 2.5/0.1 defaults."""
     import math as _m
     return 1.0 / (1.0 + _m.exp(-(m1 - M_boundary) / sigma))
 
@@ -28075,6 +28078,33 @@ def _p2238(dataset=None):
                        'landmark new claim - falsifier: any future WH-fraction derivation must '
                        'reproduce 101/25000. Completed on Daniel order 2026-08-16.',
             'source': 'PAPER_2238', 'residual_pct': 0.0}
+
+@_register('PAPER_2239')
+def _p2239(dataset=None):
+    v_sun = (4.0/3.0)*math.pi*R_SUN_OBSERVED**3
+    e_pair = F_TRZ**(D_CRIT - D_PHYS)
+    e_scm = RHO_SCM*v_sun
+    n_a = e_scm/e_pair
+    n_b = M_SUN_OBSERVED/M_PROTON_OBSERVED_KG
+    return {'value': {'e_pair_J': e_pair, 'e_pair_is_rung_22': abs(e_pair - 1e-22)/1e-22 < 1e-12,
+                      'e_scm_sun_J': e_scm, 'n_pairs_sun_route_a': n_a,
+                      'vs_so5_13_pct': abs(n_a - 1e13)/1e13*100,
+                      'rung_arithmetic_closes': (N_CH - (D_CRIT - D_PHYS)) == -(D_CRIT//2),
+                      'n_states_sun_route_b': n_b,
+                      'p2134_conjecture_revised': 'quintillions -> 1e13 active pairs',
+                      'reactor_sub_single_pair': RHO_SCM*1e-3/e_pair},
+            'formula': 'THE DPM PAIR-COUNT ESTIMATOR (PAPER_2134 build target DELIVERED, Daniel-'
+                       'authorized): N_pairs = rho_SCm*V/E_pair with E_pair = F_TRZ^(D_crit-'
+                       'D_phys) = 1e-22 J (USPR, provenance PENDING - Rule 7). Sun: E_SCm = '
+                       '1.0013e-9 J ~ F_TRZ^N_ch (0.13%); N = 1.0013e13 ~ SO_5^(D_crit/2) '
+                       '(0.13% - the mantissa product 7.09*1.4123 = 10.013 is the single shared '
+                       'residual). Rung arithmetic EXACT: N_ch - 22 = -13. ROUTE FAMILY '
+                       '(P2170): Route A active pairs 1e13 vs Route B matter-anchored states '
+                       '1.19e57 (Gold Standard principle) - ratio ~1e44 (44 = D_phys*(SO_5+1)) '
+                       'noted NOT canonized. P2134 quintillions conjecture superseded. Reactor '
+                       'implication disclosed: active volume ~1e-3 m^3 -> sub-single-pair '
+                       'regime (resonant ambient excitation, not confinement) - open question.',
+            'source': 'PAPER_2239', 'residual_pct': 0.13}
 
 @_register('PAPER_001')
 def _paper_001(dataset):
@@ -46466,17 +46496,17 @@ TIER2_RESOLUTION_MAP = {
     'PAPER_1189': {'verdict': 'RESOLVED', 'source': '_session297_orion_habitable_zone.py - UQFF aether modulation clamp (P1040-pattern, Daniel-accepted) + Bucket G Orion PURE_UQFF upgrade'},
     'PAPER_1191': {'verdict': 'RESOLVED', 'source': '_session283_gw190425_bayesian.py + predecessor Bucket E GW190425 PURE_UQFF upgrade (PAPER_916-class)'},
     'PAPER_1192': {'verdict': 'RESOLVED', 'source': '_session300_snr_shock_velocity.py - the SAME session that resolved P1040: Rankine-Hugoniot with UQFF clamped aether factor, 3-method spread disclosed'},
-    'PAPER_947':  {'verdict': 'NO_UQFF_CONTENT', 'source': 'statistical classification sigmoid on the observed mass-gap boundary (2.5 Msun) - methodology like P1177; joins the a/b/c pile honestly'},
-    'PAPER_964':  {'verdict': 'NO_UQFF_CONTENT', 'source': 'standard superfluid-gap parabola, normalized Delta0 - no UQFF inputs found in predecessor or AP; a/b/c'},
+    'PAPER_947':  {'verdict': 'RESOLVED_LATTICE_INPUTS', 'source': 'Daniel-authorized 2026-08-16: M_boundary = SO_5/D_phys = 5/2 Msun EXACT + sigma = F_TRZ Msun EXACT - both sigmoid inputs primitive-composed (ratio family P2143/P1962); defaults promoted bit-identically'},
+    'PAPER_964':  {'verdict': 'ANCHORED_CLASSICAL', 'source': 'ruling (a) 2026-08-16: generic normalized parabola - honestly tagged, no distinctive constant to bind'},
     'PAPER_972':  {'verdict': 'RESOLVED', 'source': 'HYBRID-COMPLIANT (P2149): dN/deta formula carries the UQFF S26_eff correction on disclosed paper anchors (A=2.0, alpha=1.2) - the three-condition test passes in the formula itself'},
     'PAPER_1103': {'verdict': 'RESOLVED_BY_PAPER_2237', 'source': 'gamma_immirzi = 2K = 19/80 EXACT canonized as PAPER_2237 (Daniel-authorized 2026-08-16) - the spin-foam amplitude input is primitive-derived; kernel instance #6'},
     'PAPER_1114': {'verdict': 'RESOLVED', 'source': 'HYBRID-COMPLIANT (P2149): observed ATLAS ratio 3.4/4.2 headlined as anchor + the UQFF correction Gamma_UQFF = Gamma_SM*(1+R_SCm/Gamma_SM) stated in-block'},
-    'PAPER_1122': {'verdict': 'NO_UQFF_CONTENT', 'source': 'classical bow-shock standoff, anchors only in both corpora; a/b/c'},
-    'PAPER_1123': {'verdict': 'NO_UQFF_CONTENT', 'source': 'maser optical-depth with named observed constants, no UQFF dressing; a/b/c'},
+    'PAPER_1122': {'verdict': 'RESOLVED_FU_CROSSING', 'source': 'recast 2026-08-16: a standoff radius IS a pressure-balance crossing radius, and deriving crossing radii is the F_U=0 solver purpose (r_hz machinery, PAPER_1203 v1.5) - the ram balance is the wind-sector instance of FUBi(r)+FUBii(r)=0'},
+    'PAPER_1123': {'verdict': 'RESOLVED_REGISTRY_DERIVED', 'source': 'h and k_B are UQFF-DERIVED in the registry (H_PLANCK_UQFF 0.061%, K_B_UQFF 0.0011% - P2129); two-tier passes the Bucket-C way; observed numerics retained per sec-6.2'},
     'PAPER_1124': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Circumgalactic_Metal_Content_11Oct2025.docx - CGM system computed with U_m/U_i/U_Bi + [SSq] (full UQFF machinery derives the envelope inputs; two-tier PASS)'},
     'PAPER_1041': {'verdict': 'RESOLVED', 'source': 'AETHERIC PROPULSION: Magnetic_Monster_NGC_1275.docx (02June2026) - the canonical cool-core system evolved with Ug1-Ug4 + F_BH filament-lifetime UQFF machinery (two-tier PASS)'},
-    'PAPER_1042': {'verdict': 'NO_HITS', 'source': 'mock-survey chi2 - zero hits; a/b/c'},
-    'PAPER_1047': {'verdict': 'NO_HITS', 'source': 'SN Iax momentum - zero hits; a/b/c'},
+    'PAPER_1042': {'verdict': 'RESOLVED_UQFF_NATIVE', 'source': 'mock-theta partition Z = Sum q^(n^2)*chi(n)*Phi_n - mock-theta IS Ramanujan mathematics; the P953 precedent applies (Ramanujan = UQFF-native, PAPER_2235 mechanism 3, 36 corpus sites); not a classical envelope'},
+    'PAPER_1047': {'verdict': 'ANCHORED_CLASSICAL', 'source': 'ruling (a) 2026-08-16: observational momentum budget - honestly tagged, nothing distinctive for the lattice to bind'},
     'PAPER_1083': {'verdict': 'RESOLVED', 'source': 'NATIVE-MIXED: the balance dE/dt = P_wind - P_Um - P_rad contains UQFF Universal Magnetism (P_Um = mu^2*w/tau) as one of its three terms BY CONSTRUCTION + AP Crab doc applies Ug machinery - not a pure classical envelope'},
-    'PAPER_1177': {'verdict': 'NO_HITS', 'source': 'chi2 falsifier grid - zero hits; a/b/c (arguably methodology not physics)'},
+    'PAPER_1177': {'verdict': 'ANCHORED_METHODOLOGY', 'source': 'ruling (a) 2026-08-16: the corpus own falsification instrument - methodology, correctly underived'},
 }

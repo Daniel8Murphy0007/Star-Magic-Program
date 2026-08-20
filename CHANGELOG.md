@@ -7,6 +7,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.388.0 — 2026-08-16 — THE PAIR-COUNT SHIP
+
+- **PAPER_2239 — the DPM pair-count estimator DELIVERED** (PAPER_2134's declared build target,
+  Daniel-authorized): N_pairs(Sun) = ρ_SCm·V/F_TRZ²² = **1.0013×10¹³ ≈ SO_5^(D_crit/2)**
+  (0.13%); E_pair = rung 22 exact; E_SCm(Sun) ≈ rung 9; rung arithmetic 9−22 = −13 EXACT.
+  Route family (active 10¹³ vs states 1.19×10⁵⁷); quintillions conjecture superseded;
+  E_pair provenance + reactor sub-single-pair implication disclosed.
+- **Q-RULE4-TIER2 CLOSED: 26 RESOLVED / 3 ANCHORED / 0 OPEN.** Mass-gap boundary CANONIZED
+  (SO_5/D_phys = 5/2 M_sun + σ = F_TRZ, bit-identical promotion — ratio family #3);
+  mock-theta Ramanujan-NATIVE (P953); bow-shock = F_U=0 crossing recast; maser h/k_B
+  registry-derived (P2129). 964/1047/1177 honestly tagged per ruling (a).
+- Gate 5,672 → 5,677. Dispatches 2,235 (2,290 keys). Next paper: PAPER_2240.
+
+
 ## v0.387.0 — 2026-08-16 — THE VERIFICATION SHIP
 
 - **Paradox-corpus audit (Daniel-ordered):** 1,934/2,282 papers paradox-class; 71-paper block

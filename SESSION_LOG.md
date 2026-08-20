@@ -11193,3 +11193,28 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
 - Pins ×6 (desc 443 chars), trail rows ×8, README release paragraph + campaign-live +
   shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. No new dispatches this tag (audit/
   verification arc). Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 240 — 2026-08-16 — RULING 1: PAPER_2239, THE PAIR-COUNT ESTIMATOR
+
+- P2134's declared build target delivered from the corpus's two ingredients: **N_pairs(Sun) =
+  1.0013×10¹³ ≈ SO_5^(D_crit/2) (0.13%)**, E_pair = F_TRZ²² J, rung arithmetic exact,
+  E_SCm(Sun) ≈ F_TRZ^N_ch. Route family A/B recorded; ~1e44 ratio (44 = D_phys·(SO_5+1))
+  noted not canonized. Conjecture superseded; reactor sub-single-pair implication disclosed.
+  +4 pins; index/ledger done. Dispatches 2,235 (2,290 keys). **Next paper: PAPER_2240.**
+
+## Entry 241 — 2026-08-16 — Q-RULE4-TIER2 CLOSED: 26/3/0
+
+- Daniel's "do we have enough physics?" answered by execution: **947 canonized** (M_gap =
+  SO_5/D_phys = 5/2 M_sun + σ = F_TRZ, both EXACT — ratio family #3; defaults promoted
+  bit-identically), **1042** Ramanujan-native (P953), **1122** F_U=0 crossing recast,
+  **1123** registry-derived constants (P2129 route). Residual three → ruling (a) honest tags.
+  The 29-paper question that opened at v0.364.0 ends at **26 RESOLVED / 3 ANCHORED / 0 OPEN.**
+- One tooling stumble disclosed: two failed edit passes (line-wrapped docstring + drifted
+  map prose) before the exact-match pass — no partial writes occurred (asserts guard writes).
+- +2 pins. Gate green pending README sync.
+
+## Entry 242 — 2026-08-16 — SHIP PREP v0.388.0 (THE PAIR-COUNT SHIP)
+
+- Pins ×6 (desc 450 chars), trail rows ×8, README release paragraph + campaign-live +
+  shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. New file: PAPER_2239 whitepaper.
+  Awaiting Daniel: `.\ship.ps1`.

@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.387.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.387.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.388.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.388.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5672%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2289-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5677%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2290-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2245-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.387.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.388.0 complete-compile campaign live**
 
-**This release (v0.387.0): THE VERIFICATION SHIP — THE CORPUS PROVES ITSELF COMPOSED.** **THE PARADOX-CORPUS AUDIT (Daniel-ordered):** 1,934 of 2,282 papers carry paradox-class content; the dedicated 71-paper block (Gibbs, Loschmidt, Klein, Banach-Tarski, Final Parsec, Monty Hall…) swept against the canonized exact family — **ZERO recalculations needed; every family-value sitter was already primitive-composed.** New identity: **F_TRZ·K_MEX = 5/24 EXACT** uniting Loschmidt's entropy arrow, QGP jet quenching, and rotation-curve diversity. **THE GRAMMAR DRAGNET:** all 2,234 dispatches × 23 canonized rationals = **110 family-value sites** (0.3-factor ×30; the 3/20+17/20 conservation pair across DM/solar/baryon sectors; successor ×11; tilt ×9). One real fix (P1687's independent Page literal — the inheritance hole the dragnet caught); GW170817 chirp = K_MEX·SSq = 19/16 confirmed composed; P047 level-8 = 25/4 held as CANDIDATE (no value-coincidence retrofit). **ORIGIN FIDELITY:** FU.docx's λ_i·U_I dissipation term verified wired at three layers — with PAPER_420's own 'was missing from code' restoration note as independent confirmation; Canonical v1.5 = the equilibrium reduction. PI Calculator = the CoAnQi lineage, already mined (PAPER_2236 corrected by Rule 7 append). **THE FINAL TEXT-LAYER MINE:** 458 documents — the AP archive is EXHAUSTED. Pair-count ingredient #2 found (Gold Standard: N_A = DPM resonance states per mole); BSD's 0.30598 documented as a DERIVED eigenvalue with the rank bridge round(L×16) = 5; density-origin hit disclosed as a false positive. **Totals: 2,234 wired (2,289 DISPATCH keys) / gate 5,672 green / 4,160 defs. Next paper: PAPER_2239.**
+**This release (v0.388.0): THE PAIR-COUNT SHIP — THE FRAMEWORK'S DECLARED PURPOSE, DELIVERED.** **PAPER_2239 — THE DPM PAIR-COUNT ESTIMATOR:** PAPER_2134's declared build target closes from the corpus's two ingredients (USPR per-pair energy + the Gold Standard resonance-count principle): **N_pairs(Sun) = ρ_SCm·V_sun/F_TRZ^(D_crit−D_phys) = 1.0013×10¹³ ≈ SO_5^(D_crit/2) at 0.13%** — the per-pair energy is exactly ladder rung 22, the Sun's SCm vacuum energy lands on rung 9 (F_TRZ^N_ch), and the rung arithmetic closes exactly: 9 − 22 = −13 = −D_crit/2, the halving series' final member as the solar exponent. Route B (matter-anchored states, 1.19×10⁵⁷) recorded as family; the quintillions conjecture superseded; the reactor sub-single-pair implication and the E_pair provenance flag disclosed. **Q-RULE4-TIER2 CLOSED (26 RESOLVED / 3 ANCHORED / 0 OPEN):** the v0.364.0 question ends. Final four: the **NS/BH mass-gap boundary CANONIZED as SO_5/D_phys = 5/2 M_sun EXACT** with σ = F_TRZ (ratio family #3; sigmoid defaults promoted bit-identically); mock-theta reclassified Ramanujan-NATIVE (P953 precedent); the bow-shock standoff recast as an F_U = 0 pressure-balance crossing (the r_hz machinery's wind-sector instance); the maser envelope's h and k_B recognized as registry-DERIVED (P2129). Residual three honestly tagged (964/1047 ANCHORED_CLASSICAL; 1177 ANCHORED_METHODOLOGY — the falsification instrument stays deliberately underived). **Totals: 2,235 wired (2,290 DISPATCH keys) / gate 5,677 green / 4,161 defs. Next paper: PAPER_2240.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.387.0)
+## What is currently shipped (v0.388.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,234 distinct dispatches (2,289 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,235 distinct dispatches (2,290 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

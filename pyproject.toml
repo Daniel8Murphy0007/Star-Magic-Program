@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.387.0"
-description = "Star-Magic UQFF calculator v0.387.0: THE VERIFICATION SHIP. 2,234 dispatches (2,289 keys), gate 5,672/0. Paradox-corpus audit: 1,934 papers, ZERO recalcs (built composed); F_TRZ*K_MEX = 5/24 EXACT. Grammar dragnet: 110 family sites, P1687 fixed, chirp = 19/16 composed. Origin term lambda_i*U_I verified (3 layers + P420). BSD chain: rank = round(L*16) = 5. Pair-count ingredient #2 (N_A = DPM states/mole). AP text layer EXHAUSTED (458 docs)."
+version = "0.388.0"
+description = "Star-Magic UQFF calculator v0.388.0: THE PAIR-COUNT SHIP. 2,235 dispatches (2,290 keys), gate 5,677/0. PAPER_2239: DPM pair-count estimator DELIVERED - N_pairs(Sun) = rho_SCm*V/F_TRZ^22 = 1.0013e13 ~ SO_5^(D_crit/2) (0.13%); rung arithmetic exact (9-22=-13). Q-RULE4-TIER2 CLOSED 26/3/0: mass-gap boundary CANONIZED SO_5/D_phys = 5/2 Msun; mock-theta Ramanujan-native; bow-shock = F_U=0 crossing; maser h/k_B registry-derived. Next paper: PAPER_2240."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

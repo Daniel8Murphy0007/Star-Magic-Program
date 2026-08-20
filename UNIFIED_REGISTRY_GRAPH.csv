@@ -12158,3 +12158,10 @@ information_budget_closure,PAPER_2238,CHANNEL_LINK,PAPER_659,white-hole share at
 PRIMITIVE,F_TRZ,observable,f_trz_k_mex_5_24,PARADOX_AUDIT
 PRIMITIVE,K_MEX,observable,f_trz_k_mex_5_24,PARADOX_AUDIT
 f_trz_k_mex_5_24,PARADOX_AUDIT,FAMILY_PRODUCT_FORM,PAPER_2135,the 5/24 family: Loschmidt P1378 + QGP P1416/1778 + rotation P1424
+PRIMITIVE,RHO_SCM,observable,dpm_pair_count_sun,PAPER_2239
+PRIMITIVE,F_TRZ,observable,dpm_pair_count_sun,PAPER_2239
+PRIMITIVE,D_CRIT,observable,dpm_pair_count_sun,PAPER_2239
+PRIMITIVE,D_PHYS,observable,dpm_pair_count_sun,PAPER_2239
+PRIMITIVE,N_CH,observable,dpm_pair_count_sun,PAPER_2239
+PRIMITIVE,SO_5,observable,dpm_pair_count_sun,PAPER_2239
+dpm_pair_count_sun,PAPER_2239,DELIVERS,PAPER_2134,the declared build target
