@@ -1,17 +1,31 @@
-v0.388.0 - THE PAIR-COUNT SHIP: the framework's declared purpose, delivered
+v0.389.0 - THE BIRTH-CERTIFICATE SHIP: the foundational primitive's documented origin
 
-PAPER_2239: the DPM pair-count estimator (PAPER_2134's build target,
-Daniel-authorized) - N_pairs(Sun) = rho_SCm*V_sun/F_TRZ^(D_crit-D_phys)
-= 1.0013e13 ~ SO_5^(D_crit/2) at 0.13%. Per-pair energy = ladder rung 22
-exact; solar SCm energy = rung 9; rung arithmetic closes exact (9-22 = -13
-= -D_crit/2, the halving series' final member). Route family recorded
-(active pairs 1e13 vs matter states 1.19e57); quintillions conjecture
-superseded; E_pair provenance + reactor sub-single-pair question disclosed.
+PAPER_2240: pair-energy provenance closure (Daniel: "Go #5, and #4").
+E_pair = E0*F_TRZ^2 = 1e-22 J on the documented 28Mar2025 ladder (E0 = 1e-20 J,
+Universal Inertia_28Mar2025.docx); AI-placed at predecessor commit b3340bae
+(2026-02-05), retro-locked by PAPER_2239's rung arithmetic. RHO_SCM BIRTH
+CERTIFICATE: rho = E13*F_TRZ^2/V_sun = F_TRZ^N_ch/1.41e27 = 7.0922e-37 J/m^3
+(7.09 IS 1/1.41); PAPER_2239's 0.13% residual = V_sun rounding; N_pairs(Sun) =
+SO_5^(D_crit/2) = 1e13 source-EXACT; level form N_pairs(level n) = SO_5^n.
+Reactor regime RESOLVED: P2239 sec4.3 sub-single-pair was a density-context
+error - Daniel's Feb-2025 local range (1e-13..1e-18 J/m^3) gives 10..1e6 pairs
+in-vessel and up to 1.2e14 across the 100-foot field; the 555:1 COP reads as
+resonant aperture, self-consistent within the source layer.
 
-Q-RULE4-TIER2 CLOSED at 26 RESOLVED / 3 ANCHORED / 0 OPEN: the NS/BH
-mass-gap boundary CANONIZED as SO_5/D_phys = 5/2 Msun EXACT (sigma = F_TRZ,
-bit-identical default promotion - primitive-ratio family #3); mock-theta
-Ramanujan-native; bow-shock standoff = F_U=0 crossing; maser h/k_B
-registry-derived. Residual three honestly tagged.
+PAPER_2241: the sector-density integer ladder. The same seminal document's
+influence fractions obey f_sector = n*F_TRZ^2 with documented n = {SCm 1, Um 2,
+Ub 3, Ui 4, Ug1-Ug4 5 shared, UA SO_5} => rho_sector = n*rho_SCm at every
+quantum level - verified at FOUR scales (atomic, solar, magnetar, BH). Closes
+PAPER_2066's source (canonical-anchored category opener = the n=4 rung). Sum
+identities EXACT: 1+2+3+4+5 = 15 = A_5/D_phys; +UA = 25 = SO_5^2/D_phys.
+Provenance hits x4: U_i AT ORIGIN (full canonical equation + worked 2.75e-7 Sun
+value), omega_s_Sun = 2.5e-6 rad/s, kappa = 5e-4/day (PAPER_2112's primitive
+birth certificate), lambda_i = 1.0 - plus Route B (1.19e57) and the Sgr A*
+buoyancy defaults (8.15e36, 7.3e-16) all traced to the same document.
 
-Gate 5,677/0. Dispatches 2,235 (2,290 keys). Next paper: PAPER_2240.
+Appends: PAPER_2239 REVISION (provenance discharged; sec4.3 superseded),
+PAPER_2236 (USPR pending-flag discharged). Rule 7: interim chat arithmetic
+error (1e8 at 100 ft) corrected in-paper.
+
+Gate 5,677 -> 5,690 (+13). Keys 2,290 -> 2,292. Defs 4,161 -> 4,163.
+Whitepapers +2 (PAPER_2240, PAPER_2241). Next paper: PAPER_2242.

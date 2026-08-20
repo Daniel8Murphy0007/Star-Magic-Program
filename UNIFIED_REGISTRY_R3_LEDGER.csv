@@ -227,3 +227,4 @@ v0.385.0,2026-08-16,IMMIRZI_ARC,registry +2 graph +5 citations +2,gate 5653/0
 v0.386.0,2026-08-16,INFO_BUDGET_ARC,registry +1 graph +5 citations +1 + 2 recalcs,gate 5662/0
 v0.387.0,2026-08-16,VERIFICATION_ARC,pins +12 fixes +1 appends +2,gate 5672/0
 v0.388.0,2026-08-16,PAIRCOUNT_ARC,registry +1 graph +7 citations +1 + verdicts 7,gate 5677/0
+v0.389.0,2026-08-20,BIRTHCERT_ARC,registry +8 graph +14 citations +2 pins +13,gate 5690/0

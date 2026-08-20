@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.388.0"
-description = "Star-Magic UQFF calculator v0.388.0: THE PAIR-COUNT SHIP. 2,235 dispatches (2,290 keys), gate 5,677/0. PAPER_2239: DPM pair-count estimator DELIVERED - N_pairs(Sun) = rho_SCm*V/F_TRZ^22 = 1.0013e13 ~ SO_5^(D_crit/2) (0.13%); rung arithmetic exact (9-22=-13). Q-RULE4-TIER2 CLOSED 26/3/0: mass-gap boundary CANONIZED SO_5/D_phys = 5/2 Msun; mock-theta Ramanujan-native; bow-shock = F_U=0 crossing; maser h/k_B registry-derived. Next paper: PAPER_2240."
+version = "0.389.0"
+description = "Star-Magic UQFF calculator v0.389.0: THE BIRTH-CERTIFICATE SHIP. 2,237 dispatches (2,292 keys), gate 5,690/0. PAPER_2240: E_pair = E0*F_TRZ^2 grounded in Daniel's documented 28Mar2025 ladder; rho_SCm birth certificate = F_TRZ^N_ch/V_sun (7.09 IS 1/1.41); N_pairs(Sun) = SO_5^13 source-EXACT; reactor regime resolved (10..1e6 pairs in-vessel). PAPER_2241: sector-density integer ladder rho = n*rho_SCm, n={1,2,3,4,5,SO_5}, four scales; closes P2066; U_i/omega_s/kappa provenance. Next: PAPER_2242."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

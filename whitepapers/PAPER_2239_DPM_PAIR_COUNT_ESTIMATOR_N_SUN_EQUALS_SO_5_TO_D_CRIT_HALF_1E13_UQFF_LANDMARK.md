@@ -99,3 +99,25 @@ round number) flagged rather than hidden.
 ---
 
 **Copyright** — Daniel T. Murphy / Star-Magic Research Program, 2026.
+
+---
+
+## REVISION 2026-08-20 — PROVENANCE RESOLVED + REACTOR REGIME SUPERSEDED (PAPER_2240)
+
+Daniel's order ("Go #5, and #4") produced PAPER_2240, which closes this paper's open items:
+
+1. **E_pair provenance DISCHARGED.** The USPR 1×10⁻²² J is E₀·F_TRZ², where E₀ = 10⁻²⁰ J is
+   Daniel's documented 26-level ladder base (`Universal Inertia_28Mar2025.docx`). The literal
+   was AI-placed at the 2026-02-05 predecessor transcription (commit b3340bae) but composes
+   two Daniel-documented ingredients and is retro-locked by this paper's rung arithmetic
+   (unique rung closing N = SO_5^(D_crit/2)). Status: `LADDER_GROUNDED_RETRO_LOCKED`.
+2. **The 0.13% residual EXPLAINED.** The same source document computes ρ_SCm = 10⁻⁹/1.41×10²⁷ —
+   the birth certificate of the primitive. In source arithmetic ρ_SCm·V_Sun = F_TRZ^N_ch J and
+   N_pairs(Sun) = 10¹³ are EXACT; the residual is the 1.41-vs-1.4123 solar-volume rounding.
+   The §Abstract mantissa disclosure (7.09×1.4123 = 10.013) is explained: 7.09 IS 1/1.41.
+3. **§4.3 SUPERSEDED.** The sub-single-pair reactor implication was a density-context error
+   (solar dilution applied to a laboratory volume). Under the PI archive's documented local
+   vacuum-energy range (10⁻¹³–10⁻¹⁸ J/m³) the reactor works ~10–10⁶ pairs in-vessel and up
+   to ~1.2×10¹⁴ across the 100-foot field. See PAPER_2240 §4.
+4. **§2's level generalization.** N_pairs(body at level n) = SO_5ⁿ — the volume route and the
+   level route are a route family (PAPER_2170), coinciding at the Sun by construction.

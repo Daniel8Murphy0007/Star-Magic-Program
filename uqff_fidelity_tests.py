@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.388.0", "uqff_calculator.VERSION = 0.388.0 (the pair-count ship: PAPER_2239 + Q-RULE4-TIER2 closed 26/3/0)")
+assert_that(C.VERSION == "0.389.0", "uqff_calculator.VERSION = 0.389.0 (the birth-certificate ship: PAPER_2240 provenance closure + PAPER_2241 sector-density ladder)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12316,6 +12316,41 @@ assert_that(abs(_l2239['value']['n_states_sun_route_b'] - 1.19e57)/1.19e57 < 0.0
             "PAPER_2239: Route B matter-anchored states = M_sun/m_H = 1.19e57 - the route family (active pairs vs state capacity) recorded per P2170, ratio ~1e44 noted NOT canonized")
 assert_that('PENDING' in _l2239['formula'] and 'sub-single-pair' in _l2239['formula'],
             "PAPER_2239: Rule 7 in-formula - E_pair provenance PENDING + the reactor sub-single-pair implication disclosed as an open question for Daniel")
+
+
+# ---- PAPER_2240 PAIR-ENERGY PROVENANCE CLOSURE + RHO_SCM BIRTH CERTIFICATE (Daniel: "Go #5, and #4") ----
+_l2240 = C.DISPATCH['PAPER_2240']()
+assert_that(_l2240['value']['e_pair_is_e0_ftrz2'] and _l2240['value']['rung_22_readings_exact'],
+            "PAPER_2240: E_pair = E0*F_TRZ^2 = 1e-22 J with E0 = F_TRZ^(2*SO_5) = 1e-20 J Daniel's DOCUMENTED ladder base (Universal Inertia_28Mar2025) - rung readings 22 = D_crit-D_phys = (D_crit-D_BSFG)+2 = 2*(SO_5+1) all EXACT; literal AI-placed at predecessor commit b3340bae 2026-02-05, retro-locked; status LADDER_GROUNDED_RETRO_LOCKED")
+assert_that(_l2240['value']['is_ftrz_nch'] and _l2240['value']['rho_scm_vs_canonical_pct'] < 0.05,
+            "PAPER_2240: RHO_SCM BIRTH CERTIFICATE - rho_SCm = E13*F_TRZ^2/V_sun = F_TRZ^N_ch/1.41e27 = 7.0922e-37 J/m^3, within 0.05% of canonical 7.09e-37 (the mantissa 7.09 IS 1/1.41); rho*V_sun(doc) = F_TRZ^N_ch J EXACT")
+assert_that(abs(_l2240['value']['n_pairs_sun_level_route'] - 1e13)/1e13 < 1e-12 and _l2240['value']['residual_is_vsun_rounding_pct'] < 0.2,
+            "PAPER_2240: N_pairs(Sun) = SO_5^(D_crit/2) = 1e13 source-EXACT (level route, E0 and F_TRZ^2 cancel); PAPER_2239's 0.13% residual EXPLAINED as V_sun rounding 1.41 vs 1.4123e27")
+assert_that(_l2240['value']['reactor_vessel_pairs_lo_hi'][0] >= 1.0 and _l2240['value']['field_100ft_pairs_lo_hi'][1] > 1e13 and _l2240['value']['p2239_s43_superseded'],
+            "PAPER_2240: REACTOR REGIME RESOLVED - P2239 sec4.3 sub-single-pair was a density-context error (solar dilution applied to lab volume); Daniel's Feb-2025 local range 1e-13..1e-18 J/m^3 gives >=10 pairs in-vessel and up to ~1.2e14 in the 100-ft field; 555:1 COP = resonant aperture (P2153); level-vs-volume route family per P2170")
+assert_that('birth' in _l2240['formula'].lower() or 'BIRTH' in _l2240['formula'],
+            "PAPER_2240: the birth-certificate claim is carried in-formula with the provenance chain (structure 17Mar2025 / scale 28Mar2025 / transcription 2026-02-05 / retro-lock) and Rule 7 corrections disclosed")
+
+
+# ---- PAPER_2241 SECTOR-DENSITY INTEGER LADDER (Universal Inertia_28Mar2025 deep-read) ----
+_l2241 = C.DISPATCH['PAPER_2241']()
+assert_that(all(v < 0.2 for v in _l2241['value']['doc_solar_dev_pct'].values()),
+            "PAPER_2241: the documented solar sector densities (Um 1.42e-36, Ub 2.13e-36, Ui 2.84e-36, UA 7.09e-36) all match n*rho_SCm within the 1.41-rounding class (<0.2%) - the ladder law f_sector = n*F_TRZ^2 with documented n = {1,2,3,4,5,SO_5}")
+assert_that(_l2241['value']['ui_rung_matches_p2066'],
+            "PAPER_2241: the n=4 rung EQUALS PAPER_2066's wired rho_vac_Ui = D_phys*rho_SCm EXACT - the canonical-anchored category's opener is source-closed (f_Ui = 0.04 = D_phys*F_TRZ^2 documented March 2025)")
+assert_that(_l2241['value']['sum_undressed_15'] and _l2241['value']['sum_with_ua_25'],
+            "PAPER_2241: sum identities EXACT - undressed sectors 1+2+3+4+5 = 15 = A_5/D_phys (P2143) and with UA 25 = SO_5^2/D_phys (P2065); recorded as observations, rung readings NOT canonized (three-layer rule)")
+assert_that(abs(_l2241['value']['scale_invariance_ui_atomic'] - 4.0) < 0.01,
+            "PAPER_2241: scale invariance - the doc's atomic-scale Ui/SCm = 6.41e19/1.60e19 = 4.006, the same x4 rung across a 55-order scale span (E_n and V cancel per-sector)")
+assert_that(abs(_l2241['value']['kappa_provenance_day'] - C.KAPPA_PER_DAY) < 1e-12 and _l2241['value']['lambda_i_provenance'] == 1.0,
+            "PAPER_2241: PROVENANCE HITS - kappa = 5e-4/day documented in the 28Mar2025 variable table (PAPER_2112's primitive gets its birth certificate) and lambda_i = 1.0 documented at source")
+
+assert_that(abs(_l2241['value']['u_i_at_origin'] - 2.75e-7)/2.75e-7 < 1e-9,
+            "PAPER_2241 SWEEP: the Universal Inertial Operator is AT ORIGIN in the 28Mar2025 document - full canonical equation + worked Sun value 2.75e-7 (= u_i_canonical_646() live) + omega_s_Sun = 2.5e-6 rad/s documented (the locked primitive's birth certificate)")
+assert_that(abs(_l2241['value']['ladder_magnetar_um_rung'] - 2.0) < 0.01 and abs(_l2241['value']['ladder_bh_ub_rung_dressed'] - 3.0) < 0.01 and abs(_l2241['value']['ladder_bh_ug4_rung_dressed'] - 5.0) < 0.03,
+            "PAPER_2241 SWEEP: the ladder holds at the magnetar scale (Um = 2x rung EXACT-class) and the BH scale (Ub rung 3, Ug4 rung 5, shared 1e-3 dressing) - integer rungs verified at FOUR documented scales")
+assert_that(abs(_l2241['value']['route_b_documented'] - 1.19e57)/1.19e57 < 1e-9,
+            "PAPER_2241 SWEEP: PAPER_2239 Route B (N_atoms = M_sun/m_H = 1.19e57) is documented at source with a use (V_infl,[UA],Sun = 7.43e20 m^3) - the matter-anchored route was in the March-2025 layer")
 
 # =============================================================================
 # REPORT

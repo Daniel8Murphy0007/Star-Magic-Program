@@ -102,3 +102,15 @@ F_spooky = PAPER_240 (with its 119-order catalogue-units discrepancy honestly di
 wiring), the THz-shock/conduit forms at 15-23 sites each, and the CoAnQi MAIN_1 force suite.
 The mining-queued flag is discharged; the PI folder's copy is provenance (the π-archive
 context of the CoAnQi program), not new content.
+
+---
+
+## APPENDED 2026-08-20 — USPR PER-PAIR ENERGY PROVENANCE DISCHARGED (PAPER_2240)
+
+§3's disposition "the USPR per-pair energy (1×10⁻²² J) … provenance verification pending" is
+discharged: PAPER_2240 traces it to E₀·F_TRZ² with E₀ = 10⁻²⁰ J from
+`Universal Inertia_28Mar2025.docx` (the 26-level ladder, this archive), placed in code at
+predecessor commit b3340bae (2026-02-05) and retro-locked by PAPER_2239's rung arithmetic.
+The same document carries the arithmetic birth certificate of ρ_SCm = 7.09×10⁻³⁷ J/m³
+(= 10⁻⁹ J / 1.41×10²⁷ m³, Sun at level 13) — elevating `Universal Inertia_28Mar2025.docx`
+to seminal-source status alongside FU.docx and Birth of DPM in the variable-dictionary chain.

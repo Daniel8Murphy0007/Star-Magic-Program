@@ -12165,3 +12165,17 @@ PRIMITIVE,D_PHYS,observable,dpm_pair_count_sun,PAPER_2239
 PRIMITIVE,N_CH,observable,dpm_pair_count_sun,PAPER_2239
 PRIMITIVE,SO_5,observable,dpm_pair_count_sun,PAPER_2239
 dpm_pair_count_sun,PAPER_2239,DELIVERS,PAPER_2134,the declared build target
+PRIMITIVE,F_TRZ,observable,e_pair_provenance,PAPER_2240
+PRIMITIVE,SO_5,observable,rho_scm_birth_certificate,PAPER_2240
+PRIMITIVE,N_CH,observable,rho_scm_birth_certificate,PAPER_2240
+PRIMITIVE,D_CRIT,observable,n_pairs_level_route,PAPER_2240
+rho_scm_birth_certificate,PAPER_2240,GROUNDS,RHO_SCM,the sole dimensioned primitive's documented source arithmetic
+e_pair_provenance,PAPER_2240,DISCHARGES,PAPER_2239,the provenance-pending flag
+reactor_pair_population,PAPER_2240,SUPERSEDES,PAPER_2239,section 4.3 sub-single-pair reading
+PRIMITIVE,RHO_SCM,observable,sector_density_ladder,PAPER_2241
+PRIMITIVE,F_TRZ,observable,sector_density_ladder,PAPER_2241
+PRIMITIVE,A_5,observable,sector_sum_undressed,PAPER_2241
+PRIMITIVE,SO_5,observable,sector_sum_with_ua,PAPER_2241
+sector_density_ladder,PAPER_2241,CLOSES_SOURCE,PAPER_2066,the canonical-anchored category opener (n=4 rung)
+kappa_birth_certificate,PAPER_2241,GROUNDS,PAPER_2112,the kappa primitive's documented origin
+u_i_origin_28mar2025,PAPER_2241,GROUNDS,PAPER_646,the Universal Inertial Operator equation + 2.75e-7 Sun value at documented origin

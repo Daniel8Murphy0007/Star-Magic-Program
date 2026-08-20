@@ -137,3 +137,4 @@ IMMIRZI_ARC,landmarks,2 papers + 8 verdicts,SEVEN_FOR_RULING,a/b/c covers 947/96
 INFO_BUDGET_ARC,landmark,1 paper + linking pass,CHANNEL_ATTRIBUTION_DISCLOSED,the deficit=WH-share claim is new with falsifier 101/25000; seven-paper a/b/c + rounded/rare-earth/renames still Daniel-owned,v0.386.0
 VERIFICATION_ARC,audits,4 arcs,RUNNABLE_QUEUE_EMPTY,all remaining items Daniel-owned: 7-paper a/b/c + rounded + rare-earth + renames + P047 + pair-count assembly,v0.387.0
 PAIRCOUNT_ARC,landmark+closure,1+7,TIER2_CLOSED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / E_pair provenance / reactor sub-single-pair,v0.388.0
+BIRTHCERT_ARC,landmark+landmark,2,PROVENANCE_CLOSED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / f_SCm = F_TRZ^2 reading confirmation (optional),v0.389.0

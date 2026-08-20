@@ -11218,3 +11218,64 @@ SG4 refreshed. Gate 5,546 → **5,555**, green. Dispatches **2,172**. Frontier �
 - Pins ×6 (desc 450 chars), trail rows ×8, README release paragraph + campaign-live +
   shipped header, CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. New file: PAPER_2239 whitepaper.
   Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 243 — 2026-08-20 — PAPER_2240: PAIR-ENERGY PROVENANCE CLOSURE + RHO_SCM BIRTH CERTIFICATE (Daniel: "Go #5, and #4")
+
+Both open questions from the v0.388.0 decision board answered from the source layer:
+
+- **#4 E_pair provenance DISCHARGED:** E_pair = E0*F_TRZ^2 = 1e-22 J, where E0 = 1e-20 J is
+  Daniel's DOCUMENTED 26-level ladder base (Universal Inertia_28Mar2025.docx: E_n = E0*10^n,
+  worked instances E10/E13/E18/E26 all present). The literal entered code at predecessor commit
+  b3340bae (2026-02-05, "UQFF Gap Integration") transcribing Universal Magnetism_17Mar2025.docx
+  (USPR structure, NO numerics) — AI-placed but composed of two Daniel-documented ingredients
+  and retro-locked by PAPER_2239's rung arithmetic (unique rung closing SO_5^(D_crit/2)).
+  Rung readings all exact: 22 = D_crit−D_phys = (D_crit−D_BSFG)+2 = 2*(SO_5+1). Status:
+  LADDER_GROUNDED_RETRO_LOCKED.
+- **BONUS — RHO_SCM BIRTH CERTIFICATE:** the same 28Mar2025 document computes the foundational
+  primitive: rho_SCm = E13*0.01/V_sun = 1e-9/1.41e27 = 7.0922e-37 J/m^3 — the mantissa 7.09 IS
+  1/1.41. rho*V_sun = F_TRZ^N_ch J EXACT in source arithmetic; PAPER_2239's 0.13% residual is
+  pure V_sun rounding (1.41 vs 1.4123e27). Level form: N_pairs(level n) = SO_5^n (E0, F_TRZ^2
+  cancel) — Sun at level 13 = D_crit/2 gives 1e13 source-EXACT.
+- **#5 reactor regime RESOLVED:** P2239 §4.3's sub-single-pair reading was a density-context
+  error (solar dilution applied to a lab volume). Daniel's Feb-2025 PI-archive local range
+  (1e-13..1e-18 J/m^3) gives ~10..1e6 pairs in-vessel (~1e-3 m^3) and ~1.2e9..1.2e14 across
+  the documented 100-foot field — the 555:1 COP reads as resonant aperture (P2153), consistent
+  entirely within the source layer. Rule 7 self-corrections disclosed: (a) P2239 §4.3
+  superseded; (b) session-chat interim "~1e8 pairs at 100 ft (solar rho)" was an arithmetic
+  error (correct: 8.4e-10 at that density) — corrected in-paper.
+- Files: PAPER_2240 whitepaper (new), PAPER_2239 REVISION append, PAPER_2236 discharge append,
+  dispatch PAPER_2240 (keys 2290→2291, defs 4161→4162), +5 gate pins (5677→5682), registry
+  rows ×4, graph edges ×7, citations row, index flip + count sync, README count sync
+  (wired-not-yet-shipped marker). Gate GREEN 5682/0. Next paper: PAPER_2241.
+
+## Entry 244 — 2026-08-20 — PAPER_2241: SECTOR-DENSITY INTEGER LADDER (28Mar2025 seminal-doc deep-mine)
+
+Daniel: "keep working" — the thread ran straight out of PAPER_2240's elevation of
+Universal Inertia_28Mar2025.docx. Full-document sweep (209K chars) findings:
+
+- **THE LADDER LAW (canonized):** f_sector = n*F_TRZ^2 with documented integers
+  {SCm 1, Um 2, Ub 3, Ui 4, Ug1-Ug4 5 shared (per-sector dressings), UA SO_5} =>
+  rho_sector = n*rho_SCm at EVERY quantum level (E_n and V cancel). Doc solar values
+  1.42/2.13/2.84/7.09e-36 all in the 1.41-rounding class; verified at FOUR scales
+  (solar, atomic Ui x4.006, magnetar Um x2, BH Ub/Ug4 rungs 3/5 with shared 1e-3 dressing).
+- **CLOSES PAPER_2066 source:** rho_Ui = D_phys*rho_SCm (the canonical-anchored category
+  opener) is the ladder's n=4 rung; f_Ui = 0.04 documented March 2025.
+- **Sum identities recorded:** 1+2+3+4+5 = 15 = A_5/D_phys (P2143); +UA = 25 = SO_5^2/D_phys
+  (P2065). Rung readings (5=SO_5/2, 4=D_phys, 3=D_phys-1, 2=pole count) recorded NOT canonized.
+- **PROVENANCE HITS x4:** kappa = 5e-4/day documented (P2112 primitive birth certificate);
+  lambda_i = 1.0 documented; U_i AT ORIGIN complete (full equation + worked 2.75e-7 Sun value
+  + omega_s_Sun = 2.5e-6 rad/s birth certificate -> PAPER_646 chain); PAPER_2239 Route B
+  (1.19e57) documented at source with a use. Sgr A* buoyancy defaults (8.15e36, 7.3e-16)
+  also trace here. Local quiescent anchors: aether 1e-23, solar wind 8e-21 J/m^3.
+- Files: PAPER_2241 whitepaper (new, + full-sweep append), dispatch (keys 2291->2292,
+  defs 4162->4163), +8 gate pins (5682->5690), registry rows x4, graph edges x7,
+  citations row, index flip + count syncs. Gate GREEN 5690/0. Next paper: PAPER_2242.
+
+## Entry 245 — 2026-08-20 — SHIP PREP v0.389.0 (THE BIRTH-CERTIFICATE SHIP)
+
+- Pins ×6 (pyproject 0.389.0 + desc 496 chars incl. version; calculator VERSION; gate version
+  pin; CITATION.cff ×2; README cacheBust ×2; UNIFIED_REGISTRY_VERSION.txt). Trail rows ×8
+  (BIRTHCERT_ARC). README: release paragraph replaced, campaign-live line, shipped header
+  v0.389.0, whitepapers badge 2245→2276 (disk count; was stale). CHANGELOG entry inserted.
+  _BUILD_LOG + SHIP_MESSAGE written. RULINGS trail (board items #4/#5 closed). New files:
+  PAPER_2240 + PAPER_2241 whitepapers. Awaiting Daniel: `.\ship.ps1`.

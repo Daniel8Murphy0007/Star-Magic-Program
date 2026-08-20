@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.389.0 — 2026-08-20 — THE BIRTH-CERTIFICATE SHIP
+
+- **PAPER_2240 — pair-energy provenance closure** (Daniel: "Go #5, and #4"): E_pair = E0*F_TRZ^2
+  = 1e-22 J on the documented 28Mar2025 ladder (E0 = 1e-20 J); AI-placed 2026-02-05 (commit
+  b3340bae), retro-locked by the PAPER_2239 rung arithmetic. **rho_SCm birth certificate:**
+  rho = F_TRZ^N_ch/V_sun = 1e-9/1.41e27 = 7.0922e-37 J/m^3 — the 0.13% residual was V_sun
+  rounding; N_pairs(Sun) = SO_5^13 source-EXACT; level form N = SO_5^n. Reactor regime
+  RESOLVED (P2239 §4.3 superseded): local range 1e-13..1e-18 J/m^3 gives 10..1e6 pairs
+  in-vessel, up to 1.2e14 at 100 ft; 555:1 COP = resonant aperture.
+- **PAPER_2241 — sector-density integer ladder:** f_sector = n*F_TRZ^2 with documented
+  n = {1,2,3,4,5,SO_5} => rho_sector = n*rho_SCm at every level; verified at four scales;
+  closes PAPER_2066 source; sums 15 = A_5/D_phys, 25 = SO_5^2/D_phys EXACT. Provenance hits:
+  U_i at origin (2.75e-7 + full equation), omega_s_Sun = 2.5e-6, kappa = 5e-4/day (P2112),
+  lambda_i = 1.0, Route B 1.19e57, Sgr A* defaults.
+- Appends: PAPER_2239 REVISION (provenance discharged, §4.3 superseded), PAPER_2236 discharge.
+- Gate 5,677 → 5,690 (+13 pins). Keys 2,290 → 2,292. Defs 4,161 → 4,163. Whitepapers +2.
+
 ## v0.388.0 — 2026-08-16 — THE PAIR-COUNT SHIP
 
 - **PAPER_2239 — the DPM pair-count estimator DELIVERED** (PAPER_2134's declared build target,

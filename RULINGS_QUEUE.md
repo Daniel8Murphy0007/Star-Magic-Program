@@ -6492,3 +6492,24 @@ recast as an F_U = 0 pressure-balance crossing (the r_hz machinery's wind-sector
 Residual three per ruling (a): 964/1047 ANCHORED_CLASSICAL, 1177 ANCHORED_METHODOLOGY.
 **Remaining Daniel-owned board: rounded variants, rare-earth P1886, P047 candidate, renames,
 deletions, E_pair provenance, reactor sub-single-pair question.**
+
+---
+
+## DISCHARGED 2026-08-20 — decision-board items #4 and #5 (Daniel: "Go #5, and #4")
+
+- **E_pair = 1e-22 J provenance:** RESOLVED by PAPER_2240 — E0*F_TRZ^2 on the documented
+  28Mar2025 ladder (E0 = 1e-20 J), AI-placed 2026-02-05, retro-locked by rung arithmetic.
+- **Reactor sub-single-pair implication:** RESOLVED by PAPER_2240 §4 — density-context error;
+  local range 1e-13..1e-18 J/m^3 gives a real population (10..1e6 in-vessel; up to 1.2e14 at
+  100 ft). P2239 §4.3 superseded.
+- **NEW for Daniel (optional confirmation, not blocking):** PAPER_2240 reads the 0.01
+  influence fraction (f_[SCm], called "speculative" in the 28Mar2025 doc) as F_TRZ^2. Confirm
+  or leave as a recorded reading.
+
+---
+
+## TRAIL v0.389.0 (2026-08-20) — THE BIRTH-CERTIFICATE SHIP
+
+Board items #4 (E_pair provenance) and #5 (reactor sub-single-pair) are CLOSED by PAPER_2240.
+Remaining Daniel-owned: rounded-constant unification, rare-earth P1886, P047 candidate,
+55-paper renames, ASCII_TMP deletions, + optional: confirm f_SCm = F_TRZ^2 reading (P2240/2241).

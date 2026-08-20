@@ -6711,3 +6711,11 @@ immirzi_kernel_identity,WHITEPAPER,derived,2*F_TRZ*K_MEX*SSq,2*(F_TRZ*K_MEX*SSQ)
 information_budget_closure,WHITEPAPER,derived,1-D_phys*F_TRZ^3*(1+F_TRZ^2),1-4*F_TRZ**3*(1+F_TRZ**2),24899/25000,EXACT vs PAPER_1280,0.0,black_holes,,PAPER_2238,,,,,,WIRED
 f_trz_k_mex_5_24,AUDIT,derived,F_TRZ*K_MEX,F_TRZ*K_MEX,5/24,EXACT,0.0,foundations,,PARADOX_AUDIT_2026_08_16,,,,,,WIRED
 dpm_pair_count_sun,WHITEPAPER,derived,rho_SCm*V_sun/F_TRZ^22,RHO_SCM*(4/3)*pi*R_SUN**3/F_TRZ**22,1.0013e13,SO_5^(D_crit/2),0.13,foundations,,PAPER_2239,,,,,,WIRED
+e_pair_provenance,WHITEPAPER,derived,E0*F_TRZ^2 (E0 = F_TRZ^(2*SO_5) documented ladder base 28Mar2025),F_TRZ**(2*SO_5)*F_TRZ**2,1e-22,1e-22 USPR,0.0,foundations,,PAPER_2240,,,,,,WIRED
+rho_scm_birth_certificate,WHITEPAPER,derived,E13*F_TRZ^2/V_sun_doc = F_TRZ^N_ch/1.41e27,F_TRZ**N_CH/1.41e27,7.0922e-37,7.09e-37 canonical,0.031,foundations,,PAPER_2240,,,,,,WIRED
+n_pairs_level_route,WHITEPAPER,derived,N_pairs(level n) = SO_5^n (Sun n=13=D_crit/2),SO_5**(D_CRIT//2),1e13,SO_5^(D_crit/2),0.0,foundations,,PAPER_2240,,,,,,WIRED
+reactor_pair_population,WHITEPAPER,derived,rho_local*V/E_pair over documented 1e-13..1e-18 J/m^3,1e-13*1e-3/1e-22,1e6,in-vessel hi bound,0.0,foundations,,PAPER_2240,,,,,,WIRED
+sector_density_ladder,WHITEPAPER,derived,rho_sector = n*rho_SCm via f_n = n*F_TRZ^2 (n={1;2;3;4;5;SO_5} documented 28Mar2025),n*RHO_SCM,1.418e-36..7.09e-36,doc solar values,0.14,foundations,,PAPER_2241,,,,,,WIRED
+sector_sum_undressed,WHITEPAPER,derived,1+2+3+4+5 = A_5/D_phys,A_5/D_PHYS,15,EXACT,0.0,foundations,,PAPER_2241,,,,,,WIRED
+sector_sum_with_ua,WHITEPAPER,derived,1+2+3+4+5+SO_5 = SO_5^2/D_phys,SO_5**2/D_PHYS,25,EXACT,0.0,foundations,,PAPER_2241,,,,,,WIRED
+kappa_birth_certificate,WHITEPAPER,derived,kappa = 5e-4/day documented 28Mar2025 (P2112 primitive source),KAPPA_PER_DAY,5e-4,P2112 (SO_5/2)*F_TRZ^4,0.0,foundations,,PAPER_2241,,,,,,WIRED

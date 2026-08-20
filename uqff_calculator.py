@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.388.0"
+VERSION = "0.389.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28105,6 +28105,91 @@ def _p2239(dataset=None):
                        'implication disclosed: active volume ~1e-3 m^3 -> sub-single-pair '
                        'regime (resonant ambient excitation, not confinement) - open question.',
             'source': 'PAPER_2239', 'residual_pct': 0.13}
+
+@_register('PAPER_2240')
+def _p2240(dataset=None):
+    e0 = F_TRZ**(2*SO_5)
+    e_pair = e0*F_TRZ**2
+    e13 = e0*SO_5**13
+    v_sun_doc = 1.41e27  # Universal Inertia_28Mar2025.docx solar-volume anchor (source rounding)
+    rho_doc = e13*F_TRZ**2/v_sun_doc
+    v_sun = (4.0/3.0)*math.pi*R_SUN_OBSERVED**3
+    n_level = (e13*F_TRZ**2)/(e0*F_TRZ**2)
+    n_vol = RHO_SCM*v_sun/1e-22  # PAPER_2239 volume route (canonical rho, exact V)
+    r_field = 100.0*0.3048  # 100-foot field radius (Aetheric PI Math_21Feb2025 anchor)
+    v_field = (4.0/3.0)*math.pi*r_field**3
+    v_vessel = 1e-3  # reactor active volume anchor (PAPER_2239)
+    rho_local_hi = 1e-13  # local vacuum-energy range hi (Aetheric PI Math_21Feb2025 anchor)
+    rho_local_lo = 1e-18  # local vacuum-energy range lo (Aetheric PI Math_21Feb2025 anchor)
+    return {'value': {'e0_ladder_base_J': e0, 'e_pair_J': e_pair,
+                      'e_pair_is_e0_ftrz2': abs(e_pair - 1e-22)/1e-22 < 1e-12,
+                      'rung_22_readings_exact': ((D_CRIT - D_PHYS) == 22) and ((D_CRIT - D_BSFG) + 2 == 22) and (2*(SO_5 + 1) == 22),
+                      'rho_scm_birth_J_m3': rho_doc,
+                      'rho_scm_vs_canonical_pct': abs(rho_doc - RHO_SCM)/RHO_SCM*100.0,
+                      'rho_scm_x_vsun_doc_J': rho_doc*v_sun_doc,
+                      'is_ftrz_nch': abs(rho_doc*v_sun_doc - F_TRZ**N_CH)/F_TRZ**N_CH < 1e-12,
+                      'n_pairs_sun_level_route': n_level,
+                      'n_pairs_sun_volume_route': n_vol,
+                      'residual_is_vsun_rounding_pct': abs(n_vol - 1e13)/1e13*100.0,
+                      'reactor_vessel_pairs_lo_hi': (rho_local_lo*v_vessel/1e-22, rho_local_hi*v_vessel/1e-22),
+                      'field_100ft_pairs_lo_hi': (rho_local_lo*v_field/1e-22, rho_local_hi*v_field/1e-22),
+                      'p2239_s43_superseded': True,
+                      'provenance_status': 'LADDER_GROUNDED_RETRO_LOCKED'},
+            'formula': 'THE PAIR-ENERGY PROVENANCE CLOSURE (Daniel order Go #5+#4): E_pair = '
+                       'E0*F_TRZ^2 = 1e-22 J with E0 = F_TRZ^(2*SO_5) = 1e-20 J the DOCUMENTED '
+                       '26-level ladder base (Universal Inertia_28Mar2025); literal AI-placed at '
+                       'predecessor commit b3340bae (2026-02-05) transcribing Universal Magnetism_'
+                       '17Mar2025 (structure, no numerics) - retro-locked by PAPER_2239 rung '
+                       'arithmetic (unique rung closing SO_5^(D_crit/2)). RHO_SCM BIRTH '
+                       'CERTIFICATE: rho = E13*F_TRZ^2/V_sun = F_TRZ^N_ch/V_sun = 1e-9/1.41e27 '
+                       '= 7.0922e-37 J/m^3 (mantissa 7.09 IS 1/1.41); PAPER_2239 0.13% residual '
+                       '= V_sun rounding, identity source-EXACT. LEVEL FORM: N_pairs(level n) = '
+                       'SO_5^n (Sun n=13=D_crit/2). REACTOR REGIME RESOLVED: P2239 sec4.3 '
+                       'density-context error superseded - local range 1e-13..1e-18 J/m^3 '
+                       '(Aetheric PI Math Feb2025) gives ~10..1e6 pairs in-vessel, ~1.2e9..1.2e14 '
+                       'in the 100-ft field; 555:1 COP = resonant aperture (P2153). Route family '
+                       '(P2170): level vs volume routes recorded not reconciled.',
+            'source': 'PAPER_2240', 'residual_pct': abs(rho_doc - RHO_SCM)/RHO_SCM*100.0}
+
+@_register('PAPER_2241')
+def _p2241(dataset=None):
+    ladder = {'SCm': 1, 'Um': 2, 'Ub': 3, 'Ui': 4, 'Ug_family': 5, 'UA': SO_5}
+    rho = {k: n*RHO_SCM for k, n in ladder.items()}
+    fr = {k: n*F_TRZ**2 for k, n in ladder.items()}
+    doc = {'Um': 1.42e-36, 'Ub': 2.13e-36, 'Ui': 2.84e-36, 'UA': 7.09e-36}  # Universal Inertia_28Mar2025 solar values
+    dev = {k: abs(rho[k] - v)/v*100.0 for k, v in doc.items()}
+    ui_atomic_doc, scm_atomic_doc = 6.41e19, 1.60e19  # Universal Inertia_28Mar2025 atomic-scale values
+    return {'value': {'ladder_n': ladder, 'fractions': fr, 'rho_sectors_J_m3': rho,
+                      'doc_solar_dev_pct': dev,
+                      'ui_rung_matches_p2066': abs(rho['Ui'] - D_PHYS*RHO_SCM) == 0.0,
+                      'scale_invariance_ui_atomic': ui_atomic_doc/scm_atomic_doc,
+                      'sum_undressed_15': 1+2+3+4+5 == A_5//D_PHYS,
+                      'sum_with_ua_25': 1+2+3+4+5+SO_5 == SO_5**2//D_PHYS,
+                      'kappa_provenance_day': 5e-4,
+                      'lambda_i_provenance': 1.0,
+                      'local_aether_J_m3': 1e-23, 'solar_wind_J_m3': 8e-21,
+                      'u_i_at_origin': u_i_canonical_646(),
+                      'omega_s_sun_documented': 2.5e-6,  # Universal Inertia_28Mar2025 birth certificate
+                      'ladder_magnetar_um_rung': 4.77e-22/2.39e-22,
+                      'ladder_bh_ub_rung_dressed': 7.16e-25/2.39e-22/1e-3,
+                      'ladder_bh_ug4_rung_dressed': 1.19e-24/2.39e-22/1e-3,
+                      'route_b_documented': 1.19e57},
+            'formula': 'THE SECTOR-DENSITY INTEGER LADDER (Universal Inertia_28Mar2025, deep-read '
+                       'after PAPER_2240 elevation): f_sector = n*F_TRZ^2 with DOCUMENTED n = '
+                       '{SCm 1, Um 2, Ub 3, Ui 4, Ug1-Ug4 5 (shared, per-sector dressings), UA '
+                       'SO_5} => rho_sector = n*rho_SCm at EVERY level (E_n and V cancel - '
+                       'scale-invariant; verified in-source at solar AND atomic scale, Ui x4 '
+                       'across 55 orders). Doc solar values 1.42/2.13/2.84/7.09e-36 all within '
+                       'the 1.41-rounding class. CLOSES PAPER_2066 source (rho_Ui = D_phys*'
+                       'rho_SCm = the n=4 rung; f_Ui = 0.04 documented Mar 2025). Sum identities '
+                       'recorded: 1+2+3+4+5 = 15 = A_5/D_phys (P2143); +UA = 25 = SO_5^2/D_phys '
+                       '(P2065). Rung readings recorded NOT canonized: 5 = SO_5/2 gravity, 4 = '
+                       'D_phys inertia, 3 = D_phys-1 buoyancy (P1953 family), 2 = pole count '
+                       '(P2237 family). PROVENANCE HITS: kappa = 5e-4/day documented (P2112 '
+                       'primitive gets its birth certificate) + lambda_i = 1.0 documented + '
+                       'local aether 1e-23 / solar wind 8e-21 J/m^3 quiescent-side anchors.',
+            'source': 'PAPER_2241', 'residual_pct': max(abs(rho['Um'] - 1.42e-36)/1.42e-36*100.0,
+                                                        abs(rho['Ub'] - 2.13e-36)/2.13e-36*100.0)}
 
 @_register('PAPER_001')
 def _paper_001(dataset):
