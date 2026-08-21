@@ -6513,3 +6513,11 @@ deletions, E_pair provenance, reactor sub-single-pair question.**
 Board items #4 (E_pair provenance) and #5 (reactor sub-single-pair) are CLOSED by PAPER_2240.
 Remaining Daniel-owned: rounded-constant unification, rare-earth P1886, P047 candidate,
 55-paper renames, ASCII_TMP deletions, + optional: confirm f_SCm = F_TRZ^2 reading (P2240/2241).
+
+---
+
+## TRAIL v0.390.0 (2026-08-20) — THE GENESIS ARC
+
+No new rulings required. Remaining Daniel-owned board unchanged: rounded-constant
+unification, rare-earth P1886, P047 candidate, 55-paper renames, ASCII_TMP deletions,
+optional f_SCm = F_TRZ^2 reading confirmation.

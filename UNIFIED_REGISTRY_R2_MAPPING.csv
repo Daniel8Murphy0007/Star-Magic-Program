@@ -260,3 +260,4 @@ INFO_BUDGET_ARC,LANDMARK,PAPER_2238 dispatch + page_recovery_purity + navier_sto
 VERIFICATION_ARC,AUDITS,pins + P1687 recalc-inheritance fix + PAPER_2236 correction append,4 arcs,v0.387.0
 PAIRCOUNT_ARC,LANDMARK,PAPER_2239 dispatch + p_bh_947 lattice defaults + 7 map verdicts,1 landmark + closure,v0.388.0
 BIRTHCERT_ARC,LANDMARK,PAPER_2240 + PAPER_2241 dispatches + P2239/P2236 appends,2 landmarks + 2 appends,v0.389.0
+GENESIS_ARC,LANDMARK,PAPER_2242-2246 dispatches + P2236 correction append + P2245 append,5 landmarks + 2 appends,v0.390.0

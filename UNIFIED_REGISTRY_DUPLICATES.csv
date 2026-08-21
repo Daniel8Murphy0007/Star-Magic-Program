@@ -143,3 +143,4 @@ poincare_tilt_routes,p2238_append,FAMILY_RECORD,Poincare 7/12 two routes: 1/2 + 
 five_24_family,paradox_audit,FAMILY_RECORD,F_TRZ*K_MEX = 5/24 EXACT (= tilt*SO_5/2) - Loschmidt + QGP R_AA + rotation-curve diversity + the P2135 30-observable census on one product,v0.387.0
 mass_gap_ratio_family,p947,FAMILY_RECORD,primitive-ratio family #3: SO_5/D_phys = 5/2 Msun mass-gap boundary joins A_5/D_phys = 15 (P2143) and D_BSFG/D_phys = 3/2 (P1962),v0.388.0
 sector_ladder_family,p2241,FAMILY_RECORD,integer-multiplier family: rho_sector = n*rho_SCm n={1;2;3;4;5;SO_5} joins the primitive-ratio families (P2143 15 = A_5/D_phys appears as the undressed sector sum),v0.389.0
+exponent_flattening_class,p2245_p2246,FAMILY_RECORD,three mantissa-exact/exponent-off instances (E_react 1e46-vs-1e15; manuscript mu_s/Ug2; U_i 1.38e-47-vs-1.38e-77) - disclosed never adjudicated; mantissa-level verification standard,v0.390.0

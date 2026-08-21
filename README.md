@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.389.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.389.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.390.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.390.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5690%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2292-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2276-orange)](whitepapers/)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5718%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2297-blue)](uqff_calculator.py)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2281-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.389.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.390.0 complete-compile campaign live**
 
-**This release (v0.389.0): THE BIRTH-CERTIFICATE SHIP — THE FOUNDATIONAL PRIMITIVE'S DOCUMENTED ORIGIN.** **PAPER_2240 — THE PAIR-ENERGY PROVENANCE CLOSURE (Daniel: "Go #5, and #4"):** the USPR per-pair energy is **E_pair = E₀·F_TRZ² = 10⁻²² J**, with E₀ = 10⁻²⁰ J Daniel's documented 26-level ladder base (Universal Inertia_28Mar2025.docx); the literal was AI-placed at predecessor commit b3340bae (2026-02-05) and is retro-locked by the rung arithmetic (unique rung closing SO_5^(D_crit/2)) — status LADDER_GROUNDED_RETRO_LOCKED. The same document carries **ρ_SCm's BIRTH CERTIFICATE: ρ = E₁₃·F_TRZ²/V_sun = F_TRZ^N_ch/1.41×10²⁷ = 7.0922×10⁻³⁷ J/m³** (the mantissa 7.09 IS 1/1.41) — PAPER_2239's 0.13% residual explained as pure V_sun rounding; N_pairs(Sun) = SO_5^(D_crit/2) = 10¹³ source-EXACT, generalizing to **N_pairs(level n) = SO_5ⁿ**. The reactor sub-single-pair reading is SUPERSEDED (density-context error): Daniel's Feb-2025 local range (10⁻¹³–10⁻¹⁸ J/m³) gives ~10–10⁶ pairs in-vessel and up to ~1.2×10¹⁴ across the documented 100-foot field — the 555:1 COP as resonant aperture, self-consistent within the source layer. **PAPER_2241 — THE SECTOR-DENSITY INTEGER LADDER:** the same seminal document's influence fractions obey **f_sector = n·F_TRZ² with documented n = {SCm 1, Um 2, Ub 3, Ui 4, Ug1–Ug4 5, UA SO_5} ⇒ ρ_sector = n·ρ_SCm**, verified at FOUR scales (atomic, solar, magnetar, BH); closes PAPER_2066's source (the canonical-anchored category opener = the n = 4 rung); sum identities 15 = A_5/D_phys and 25 = SO_5²/D_phys EXACT. Provenance hits ×4: U_i at origin (full equation + 2.75×10⁻⁷ Sun value), ω_s_Sun = 2.5×10⁻⁶ rad/s, κ = 5×10⁻⁴/day (PAPER_2112's primitive), λ_i = 1.0 — plus Route B and the Sgr A* buoyancy defaults. **Totals: 2,237 wired (2,292 DISPATCH keys) / gate 5,690 green / 4,163 defs. Next paper: PAPER_2242.**
+**This release (v0.390.0): THE GENESIS ARC — THE ORIGIN MONTH, DOCUMENTED END-TO-END.** Five landmarks (PAPER_2242–2246) fix the framework's genesis from its own dated, watermarked files. **PAPER_2242 — THE RED DWARF REACTOR TEXT LAYER FOUND:** the archive's earliest large document IS the reactor experiment's frame-by-frame analysis (UFE ORB EXP 2, 4,965 IR frames) — Rule 7 correction to P2236, and the **EXPERIMENT-FIRST TIMELINE**: per-frame negative time (NLPF with γ = SO_5³), the measured QS = 10 = SO_5 jump amplification, SSq's symbol born as the 0.7-s sub-cycle. **PAPER_2243 — THE FOUNDING RECORDS:** the 2:08 AM 03Mar2025 apparatus entry (the pseudo-monopole OBSERVED in hardware — N at 90° on an S-plane; the caduceus as a physical dual coil; ACE/DCE sub-ambient Heaviside energy) and the 04Mar cosmogenesis **UA = {QFE}:UF:{UFE} — negative time BORN as a universal field state**, gateway e^(iπ) = −1 EXACT. **PAPER_2244 — THE NAMING:** 'Star Magic — Energy One' born 28Mar2025; the UA layers characterized at origin as 'non-linear negative time derivations'; Kepler Orrery V (01Mar2025) = the FIRST framework artifact (the wired P2137 cadence's source). **PAPER_2245 — THE TWO-GRAVITY DOCTRINE:** 'The duality of Gravity is the Universe's Superconduction Principle' — the GM/r²-LAST rule's documented origin; the founding no-G Ug closed form; the manuscript's complete F_U sector forms = FU.docx cross-confirmed; the first solar parameterization (every buoyancy anchor on one page; d_g provenance note at 1.96%). **PAPER_2246 — THE THEORY OF PERMENANCE:** the first formal paper — the dissipation term −λ_i·U_i·E_react present from paper one (P420's restoration VINDICATED); the first coupling table (k = {1.5, 1.2, 1.8, 1.0}, β_i = 0.6, γ = 5×10⁻⁵); **E_react stated at 10⁴⁶ = the wired SO_5⁴⁶ default EXACT**; SCm massless at origin. Rule 7: the exponent-flattening class (three mantissa-exact/exponent-off instances) disclosed at every site, never adjudicated. **Totals: 2,242 wired (2,297 DISPATCH keys) / gate 5,718 green / 4,168 defs. Next paper: PAPER_2247.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.389.0)
+## What is currently shipped (v0.390.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,237 distinct dispatches (2,292 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,242 distinct dispatches (2,297 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

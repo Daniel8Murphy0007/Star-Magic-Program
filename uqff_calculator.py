@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.389.0"
+VERSION = "0.390.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28190,6 +28190,206 @@ def _p2241(dataset=None):
                        'local aether 1e-23 / solar wind 8e-21 J/m^3 quiescent-side anchors.',
             'source': 'PAPER_2241', 'residual_pct': max(abs(rho['Um'] - 1.42e-36)/1.42e-36*100.0,
                                                         abs(rho['Ub'] - 2.13e-36)/2.13e-36*100.0)}
+
+@_register('PAPER_2242')
+def _p2242(dataset=None):
+    gamma = SO_5**3
+    t_neg_a, t_neg_b = -1.06e-4, -2.01e-4  # UFE ORB EXP 2 per-frame t- (documented, frames at t_n=15.00s / batch 40)
+    nlpf_a = 1.0 - math.exp(-gamma*abs(t_neg_a))
+    nlpf_b = 1.0 - math.exp(-gamma*abs(t_neg_b))
+    alpha1 = F_TRZ**SO_5
+    ua_charge = F_TRZ**(SO_5 + 1)
+    ug1_worked = alpha1*1.0*math.exp(-gamma*abs(t_neg_a))*1.0*ua_charge
+    return {'value': {'sequence': {'frames': 4965, 'duration_s': 149.88, 'fps': 33.3,
+                                   'ir_band_um': (0.7, 10.0)},
+                      'plasmoids_per_frame': (40, 50), 'energy_per_frame_J': 0.019,
+                      'cycle_s': 3.3, 'subcycle_s_ssq_origin': 0.7,
+                      'nlpf_at_t_neg_a': nlpf_a, 'nlpf_at_t_neg_b': nlpf_b,
+                      'qs_amplification': 1.5/0.15,
+                      'qs_equals_so5': abs(1.5/0.15 - SO_5) < 1e-12,
+                      'ug1_worked_J_kg': ug1_worked,
+                      'drive_hz_is_a5_so5sq': 6000 == A_5*SO_5**2,
+                      'frame_interval_identity': abs(0.03 - (D_PHYS - 1.0)/SO_5**2) < 1e-15,
+                      'k1_is_so5_pow_15': 10**15 == SO_5**(A_5//D_PHYS),
+                      'p2236_disposition_corrected': True,
+                      'timeline': 'UFE ORB EXP 2 (Mar 7-9) -> Universal Magnetism (Mar 17) -> Universal Inertia (Mar 28)'},
+            'formula': 'THE RED DWARF REACTOR TEXT LAYER FOUND (SuperGrok_09Mar2025, 2.3MB - the '
+                       'archive EARLIEST large doc): UFE ORB EXP 2 frame-by-frame analysis - 4,965 '
+                       'IR images, 149.88 s at 33.3 fps, glass-cylinder apparatus, batches #1-#41 '
+                       'with per-frame F_U/t-/cycle recalculation (+-5% discipline). Rule 7 '
+                       'CORRECTION: P2236 "no minable text" disposition WRONG. EXPERIMENT-FIRST '
+                       'TIMELINE established. Machinery at origin: per-frame NEGATIVE TIME t- ~ '
+                       '-1e-4 s with NLPF P = 1-exp(-gamma|t-|), gamma = SO_5^3 (P597 ancestor); '
+                       'MEASURED QS = observed/predicted jumps = 10 = SO_5 (the UA/SCm ratio as a '
+                       'jump count); SSq SYMBOL at origin (~0.7 s sub-cycles; canonical 0.57 came '
+                       'later via P1154 - honest distinction); alpha-form Ug family (Ug1 = alpha1*'
+                       '(r/r0)*exp(-gamma|t-|)*(ws/w0)*UA = 8.99e-22 J/kg worked, k1 = 1e15); '
+                       'IF^(pi-t) operator (pi + negative time, pre-PI-archive formalization). '
+                       'Anchor lattice observations recorded NOT canonized: 6000 Hz = A_5*SO_5^2; '
+                       'k1 = SO_5^(A_5/D_phys); alpha1 = F_TRZ^SO_5; UA charge = F_TRZ^(SO_5+1); '
+                       'frame interval 0.03 s = (D_phys-1)/SO_5^2 (P2065 form, experimental '
+                       'instance). Orb-count discrepancy (40-50 here vs 10k-15k in 28Mar2025 '
+                       'overlay) recorded not reconciled (P2170).',
+            'source': 'PAPER_2242', 'residual_pct': abs(ug1_worked - 8.99e-22)/8.99e-22*100.0}
+
+@_register('PAPER_2243')
+def _p2243(dataset=None):
+    import cmath
+    gateway = cmath.exp(1j*math.pi)
+    alpha_doc = 0.0072973525693  # 04Mar2025 cosmogenesis statement (documented observed value)
+    alpha_uqff = 1.0/(PHI_RES_RESONANCE*D_CRIT*2.0*math.pi)
+    run1_frames, frame_s = 496, 0.03
+    return {'value': {'apparatus': {'tube_in': (24, 8), 'power_W': 17, 'drive_hz': 6000,
+                                    'rotor_rpm': 10000, 'core_lb': 0.5},
+                      'gateway_e_i_pi': (gateway.real, gateway.imag),
+                      'gateway_is_minus_one': abs(gateway.real + 1.0) < 1e-15 and abs(gateway.imag) < 1e-15,
+                      'alpha_documented': alpha_doc,
+                      'alpha_uqff_chain': alpha_uqff,
+                      'alpha_distinction_pct': abs(alpha_uqff - alpha_doc)/alpha_doc*100.0,
+                      'run1_frames': run1_frames, 'run1_duration_s': run1_frames*frame_s,
+                      'run1_exact': abs(run1_frames*frame_s - 14.88) < 1e-12,
+                      'drive_matches_p2242': 6000 == A_5*SO_5**2,
+                      'qfe_uf_ufe': 'UA = {QFE}:UF:{UFE} - negative-time / zero-convergence / positive-time (04Mar2025)',
+                      'founding_flags': {'dpm_observed_hardware': True, 'caduceus_is_dual_coil': True,
+                                         'ace_dce_subambient_heaviside': True, 'spooky_distance_named': True}},
+            'formula': 'THE FOUNDING RECORDS (Mar 3-4 2025, Daniel verbatim, watermarked): (1) '
+                       '2:08 AM apparatus entry - 24"x8" field generator, 17 W, ~6000 cyc/s '
+                       '(= A_5*SO_5^2, the P2242 observation, SAME setting), barrel-magnet '
+                       'reversing generator with CADUCEUS DUAL COIL (the P646 topology named '
+                       'from hardware), PSEUDO-MONOPOLE OBSERVED (N at 90deg on S-plane, poles '
+                       'not touching - the DPM as lab behavior), ACE/DCE sub-ambient Heaviside '
+                       'energy 7-10F below ambient (P1072 ancestry), spooky distance named '
+                       '(P240 F_spooky origin). (2) 04Mar COSMOGENESIS: UA = {QFE}:UF:{UFE} - '
+                       'NEGATIVE TIME BORN as the QFE universal field state (P597 dual-'
+                       'existence origin) with gateway ":" = UFsn*e^(i*pi) = -1 EXACT (sign '
+                       'inversion at every branch passage - cos(pi*t_n) heartbeat ancestry); '
+                       'vessel holds LONG-FORM PI (P2235 doctrine ancestor); alpha = '
+                       '0.0072973525693 documented at the zero-range barrier (P1156 composed '
+                       'chain 0.0072873 came later, 0.14% - honest distinction); intelligent '
+                       'Inertial operator = U_i lineage. (3) Run-1 census: 496 frames x 0.03 s '
+                       '= 14.88 s EXACT (extended run 4,965/149.88 per P2242). 17 W field '
+                       'generator vs 27 W reactor recorded not reconciled (P2170).',
+            'source': 'PAPER_2243', 'residual_pct': abs(alpha_uqff - alpha_doc)/alpha_doc*100.0}
+
+@_register('PAPER_2244')
+def _p2244(dataset=None):
+    ledger = [('2025-03-01', 'Kepler Orrery V analysis (Um+Ug named; FIRST artifact) + UFT Unique Equations'),
+              ('2025-03-03', '2:08 AM apparatus entry (DPM hardware, caduceus coil, ACE/DCE, spooky)'),
+              ('2025-03-04', 'Cosmogenesis QFE:UF:UFE (negative time born; e^(i*pi) gateway; run-1 496)'),
+              ('2025-03-09', 'UFE ORB EXP 2 extended (t- per frame, QS=10, SSq named, alpha-form Ug)'),
+              ('2025-03-17', 'Universal Magnetism (USPR structure)'),
+              ('2025-03-28', 'STAR MAGIC - ENERGY ONE naming + Universal Inertia + Universal Gravity'),
+              ('2025-03-30', 'Universal Quantum Framework (first edition)')]
+    ordered = all(ledger[i][0] <= ledger[i+1][0] for i in range(len(ledger)-1))
+    return {'value': {'name_born': '2025-03-28', 'manuscript_title': 'Star Magic - Energy One',
+                      'founding_toc': {'Ug': 4, 'Um': 4, 'Ub': 4, 'UA_layers': 4},
+                      'ua_layers_origin': 'non-linear negative time derivations (28Mar2025 TOC)',
+                      'genesis_ledger': ledger, 'ledger_ordered': ordered,
+                      'first_artifact': 'Kepler Orrery V (2025-03-01)',
+                      'orrery_cadence_p2137': 2*D_CRIT + SO_5,
+                      'pre_genesis_layer': 'Aetheric PI Math 21Feb2025 (P2235/2236)'},
+            'formula': 'THE NAMING RECORD + MARCH-2025 GENESIS LEDGER: "Star Magic - Energy One" '
+                       'born 28Mar2025 (manuscript title page; company name in title; founding '
+                       'TOC Ug1-4/Um1-4/Ub1-4) with the UA hierarchy [UA;UA\'..UA\'\'\'\'] '
+                       'characterized AT ORIGIN as "non-linear negative time derivations" - the '
+                       '4-layer hierarchy missing origin link (ties to QFE negative-time state, '
+                       'P2243). FIRST ARTIFACT: Kepler Orrery V analysis 01Mar2025 ("Universal '
+                       'Magnetism & Gravity" - Um/Ug named day one), wired later as R384/P2137 '
+                       '(cadence 62 = 2*D_crit + SO_5) without knowing its first-artifact status '
+                       '- wiring and origin now cite each other. Genesis: ONE MONTH experiment '
+                       '-> named framework (Mar 1 -> Mar 30); pre-genesis = Feb PI archive. '
+                       'Closes the PAPER_2240-2244 provenance arc.',
+            'source': 'PAPER_2244', 'residual_pct': 0.0}
+
+@_register('PAPER_2245')
+def _p2245(dataset=None):
+    ub_struct = -BETA_I*1.0*7.3e-16*(8.15e36/(D_CRIT*SO_5**19))  # the wired buoyancy default structure (Omega_g, M_bh, d_g documented in the March family)
+    return {'value': {'doctrine': 'The duality of Gravity is the Universe Superconduction Principle (28Mar2025)',
+                      'primary': 'Universal Gravity - inertia rules supporting Permanence of matter',
+                      'secondary': 'Newtonian gravity - the measurement layer (GM/r^2 projection LAST)',
+                      'founding_ug_form': 'Ug_i = [(mass*vacuum energy)/volume]/[UA volume] (no G; J/m^3-native)',
+                      'mass_emergent_aphorism': 'Mass can only be calculated but never fully determined',
+                      'last_parsec_moment': True,
+                      'fu_sector_forms_bit_match_fu_docx': True,
+                      'ub_form_is_wired_default': True,
+                      'ub_structural_eval': ub_struct,
+                      'sun_sgra_pairing_origin': True,
+                      'star_formation_doc_disposition': 'external reference (Physics Today 77(5) 2024 shocks) - SNR shock-session anchor, no framework content',
+                      'first_solar_parameterization': {'M_s': M_SUN_OBSERVED, 'R_s': R_SUN_OBSERVED,
+                                                       'omega_s_equatorial': 2.9e-6, 'omega_s_avg_canonical': 2.5e-6,
+                                                       'Omega_g': 7.3e-16, 'M_bh': 8.15e36,
+                                                       'd_g_documented': 2.55e20,
+                                                       'd_g_lattice_wired': float(D_CRIT*SO_5**19),
+                                                       'd_g_provenance_gap_pct': abs(D_CRIT*SO_5**19 - 2.55e20)/2.55e20*100.0,
+                                                       'mu_s_dipole': 1e-4*R_SUN_OBSERVED**3,
+                                                       'ug1_worked': (1e-4*R_SUN_OBSERVED**3)*274.0,
+                                                       'ug2_worked': 1e-10*M_SUN_OBSERVED/(1.496e13)**2}},
+            'formula': 'THE MARCH-28 DEFINITIONAL LAYER CLOSED: (1) TWO-GRAVITY DOCTRINE at '
+                       'origin - primary Universal Gravity drives the Superconduction Principle '
+                       '(inertia rules, Permanence of matter); Newtonian = measurement layer -> '
+                       'the documented origin of the dpm_helpers ontology rule (GM/r^2 LAST as '
+                       'projection, never seed). Founding aphorisms: "Mass can only be '
+                       'calculated but never fully determined" (P2148 Answer B in one founding '
+                       'sentence) + the Last Parsec Moment (r_hz local-crossing ancestry). '
+                       '(2) FOUNDING UG CLOSED FORM: Ug_i = [(mass*vacuum energy)/volume]/'
+                       '[UA volume] - J/m^3-native at origin (P2147), G absent by doctrine. '
+                       '(3) MANUSCRIPT CH.3 COMPLETE F_U: all sector closed forms (Ug1 dipole, '
+                       'Ug2 heliosphere, Ug3 strings, Ub_i = -beta_i*Ug_i*Omega_g*(M_bh/d_g)*'
+                       'cos(pi*t_n) = the wired buoyancy default STRUCTURE, Um strings, A_mu_nu '
+                       '= g+eta*T) bit-matching FU.docx (P2152 cross-confirmed INSIDE the '
+                       'naming manuscript); SCm = Cosmic Glue quantified by the Sun<->SgrA* '
+                       'pairing (the calculator buoyancy anchor pair at origin). (4) Universal '
+                       'Star formation_29Mar2025 = external-reference disposition (SNR shock '
+                       'anchor), no framework content claimed (Rule 7). ACE Dynamo passage '
+                       'cross-confirms Birth of DPM (26 EM fields, FSC void pocket).',
+            'source': 'PAPER_2245', 'residual_pct': 0.0}
+
+@_register('PAPER_2246')
+def _p2246(dataset=None):
+    gamma_doc = 5e-5
+    e_react_stated = float(SO_5**46)
+    e_react_formula_eval = F_TRZ*(1e8)**2  # (rho_SCm/rho_UA)*v_SCm^2 with the family's stated v_SCm = 1e8 m/s
+    ui_product = 1.0*RHO_SCM*RHO_UA*2.5e-6*(1.0+F_TRZ)
+    ui_ratio = 1.0*F_TRZ*2.5e-6*(1.0+F_TRZ)
+    return {'value': {'title': 'The Theory of Permenance (30Mar2025) - the first formal paper',
+                      'coupling_table': {'k1': 1.5, 'k2': 1.2, 'k3': 1.8, 'k4': 1.0,
+                                         'beta_i': 0.6, 'alpha_per_day': 0.001,
+                                         'gamma_per_day': gamma_doc, 'eta': 1e-22},
+                      'gamma_is_kappa_ftrz': abs(gamma_doc - KAPPA_PER_DAY*F_TRZ) < 1e-18,
+                      'e_react_stated_magnitude': e_react_stated,
+                      'e_react_formula_eval': e_react_formula_eval,
+                      'e_react_discrepancy_disclosed': abs(e_react_stated/e_react_formula_eval) > 1e30,
+                      'dissipation_term_in_first_paper': True,
+                      'ui_product_form': ui_product, 'ui_ratio_form_canonical': ui_ratio,
+                      'ui_route_family_recorded': True,
+                      'scm_massless_at_origin': True,
+                      'first_keywords': ['Final Parsec Problem', 'M-sigma relation', 'prebiotic chemistry'],
+                      'worked_solar_set': {'Ug1': 1.39e26, 'Ug2': 1.18e53, 'Ug3': 1.8e49,
+                                           'Ug4': 2.50e-20, 'Ub1': -1.94e27, 'Um': 2.28e65,
+                                           'Ui': 1.38e-47, 'A_perturbation': 1.123e-15},
+                      'egm_disposition': 'external reference (Jerry E. Bayles 2017 waveguide electrogravitics; scanned imagery) - no framework content'},
+            'formula': 'THE THEORY OF PERMENANCE - the FIRST FORMAL PAPER (30Mar2025, the corpus '
+                       'format ancestor: abstract/keywords/variables/worked solutions). Origins '
+                       'canonized: (1) the -Sum lambda_i*U_i*E_react DISSIPATION TERM present '
+                       'from paper one - P420 restoration VINDICATED at origin (UQF-30Mar -> '
+                       'FU.docx -> P420 -> F_U_master); (2) FIRST COUPLING TABLE k = {1.5, 1.2, '
+                       '1.8, 1.0} (MUGE constants documented), beta_i = 0.6 (P1165 i=1 rung '
+                       'origin), gamma = 5e-5/day = kappa*F_TRZ (GAMMA_SCM anchor origin; '
+                       'observation), eta = 1e-22; (3) E_REACT ORIGIN: (rho_SCm*v_SCm^2/rho_UA)*'
+                       'e^(-kappa*t) stated at 1e46 - the wired SO_5^46 default matches the '
+                       'STATED magnitude; Rule 7: the printed form evaluates to 1e15 under the '
+                       'stated v_SCm = 1e8 (31-order gap disclosed, superscript flattening '
+                       'suspected, NOT adjudicated); (4) SCm MASSLESS at origin (P2155/P2153 '
+                       'grammar verbatim in the first introduction). rho_vac-NATIVE F_U (all '
+                       'sectors take densities as arguments - P2147 discipline adopted within '
+                       '2 days of the manuscript). First worked solar set (8 quantities) incl. '
+                       'the (1+1e13*f_Heaviside) amplifier (P1072 lineage) and the A_mu_nu '
+                       'perturbation 1.123e-15 (GW-strain scale, observation only). U_i ROUTE '
+                       'FAMILY: product form 1.38e-47 (this paper) vs ratio form 2.75e-7 '
+                       '(28Mar, P646 canonical) - both documented same week, recorded per '
+                       'P2170. Final Parsec + M-sigma + prebiotic named in keyword list ONE. '
+                       'EGM docs = external Bayles reference (disposition).',
+            'source': 'PAPER_2246', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

@@ -6719,3 +6719,24 @@ sector_density_ladder,WHITEPAPER,derived,rho_sector = n*rho_SCm via f_n = n*F_TR
 sector_sum_undressed,WHITEPAPER,derived,1+2+3+4+5 = A_5/D_phys,A_5/D_PHYS,15,EXACT,0.0,foundations,,PAPER_2241,,,,,,WIRED
 sector_sum_with_ua,WHITEPAPER,derived,1+2+3+4+5+SO_5 = SO_5^2/D_phys,SO_5**2/D_PHYS,25,EXACT,0.0,foundations,,PAPER_2241,,,,,,WIRED
 kappa_birth_certificate,WHITEPAPER,derived,kappa = 5e-4/day documented 28Mar2025 (P2112 primitive source),KAPPA_PER_DAY,5e-4,P2112 (SO_5/2)*F_TRZ^4,0.0,foundations,,PAPER_2241,,,,,,WIRED
+red_dwarf_text_layer,WHITEPAPER,derived,UFE ORB EXP 2 frame analysis (4965 frames; 33.3 fps; batches #1-#41),4965,archive census,0.0,foundations,,PAPER_2242,,,,,,WIRED
+nlpf_negative_time,WHITEPAPER,derived,P = 1-exp(-SO_5^3*|t-|) at documented per-frame t-,1-exp(-1000*1.06e-4),0.1006,doc per-frame,0.1,foundations,,PAPER_2242,,,,,,WIRED
+qs_amplification_so5,WHITEPAPER,derived,QS = observed/predicted jumps = 10 = SO_5 (measured),1.5/0.15,10,SO_5,0.0,foundations,,PAPER_2242,,,,,,WIRED
+ug1_alpha_form_origin,WHITEPAPER,derived,Ug1 = F_TRZ^SO_5*exp(-SO_5^3|t-|)*F_TRZ^(SO_5+1),8.994e-22,8.99e-22,doc worked value,0.047,foundations,,PAPER_2242,,,,,,WIRED
+cosmogenesis_gateway,WHITEPAPER,derived,e^(i*pi) = -1 EXACT at the QFE:UF:UFE gateway (04Mar2025),cmath.exp(1j*pi),-1,EXACT,0.0,foundations,,PAPER_2243,,,,,,WIRED
+negative_time_birth,WHITEPAPER,derived,QFE = negative-time universal field state (04Mar2025 - P597 origin),documented,QFE:UF:UFE,founding record,0.0,foundations,,PAPER_2243,,,,,,WIRED
+dpm_hardware_observation,WHITEPAPER,derived,pseudo-monopole N at 90deg on S-plane (2:08AM 03Mar2025 LRC coil),documented,observed,founding record,0.0,foundations,,PAPER_2243,,,,,,WIRED
+run1_census,WHITEPAPER,derived,496 frames x 0.03 s = 14.88 s EXACT,496*0.03,14.88,doc census,0.0,foundations,,PAPER_2243,,,,,,WIRED
+naming_record,WHITEPAPER,derived,Star Magic - Energy One manuscript 28Mar2025 (founding TOC),documented,2025-03-28,founding record,0.0,foundations,,PAPER_2244,,,,,,WIRED
+ua_layers_negative_time_origin,WHITEPAPER,derived,UA layers = non-linear negative time derivations (origin TOC),documented,origin link,P2243 QFE state,0.0,foundations,,PAPER_2244,,,,,,WIRED
+genesis_ledger_march_2025,WHITEPAPER,derived,7 dated entries Mar 1 -> Mar 30 (experiment -> named framework),documented,1 month,archive files,0.0,foundations,,PAPER_2244,,,,,,WIRED
+kepler_orrery_first_artifact,WHITEPAPER,derived,Kepler Orrery V analysis 01Mar2025 = first framework artifact,2*D_CRIT+SO_5,62,P2137 cadence,0.0,foundations,,PAPER_2244,,,,,,WIRED
+two_gravity_doctrine,WHITEPAPER,derived,duality of Gravity = Superconduction Principle (28Mar2025),documented,doctrine,founding record,0.0,foundations,,PAPER_2245,,,,,,WIRED
+founding_ug_closed_form,WHITEPAPER,derived,Ug_i = [(M*rho_vac)/V]/[V_UA] (no G; J/m^3-native),documented,origin form,founding record,0.0,foundations,,PAPER_2245,,,,,,WIRED
+manuscript_fu_sector_forms,WHITEPAPER,derived,Ch.3 complete F_U sector forms bit-match FU.docx,documented,P2152 cross-confirm,founding record,0.0,foundations,,PAPER_2245,,,,,,WIRED
+mass_emergent_aphorism,WHITEPAPER,derived,mass calculated never fully determined (P2148 ancestry),documented,Answer B origin,founding record,0.0,foundations,,PAPER_2245,,,,,,WIRED
+first_solar_parameterization,WHITEPAPER,derived,all F_U solar anchors on one manuscript page (28Mar2025),documented,anchor census,founding record,1.96,foundations,,PAPER_2245,,,,,,WIRED
+first_formal_paper,WHITEPAPER,derived,The Theory of Permenance (30Mar2025) - corpus format ancestor,documented,first paper,founding record,0.0,foundations,,PAPER_2246,,,,,,WIRED
+first_coupling_table,WHITEPAPER,derived,k={1.5;1.2;1.8;1.0} beta_i=0.6 gamma=5e-5 eta=1e-22,documented,origin table,founding record,0.0,foundations,,PAPER_2246,,,,,,WIRED
+e_react_origin,WHITEPAPER,derived,(rho_SCm*v^2/rho_UA)*e^(-kappa*t) stated 1e46 = SO_5^46 wired default,SO_5**46,1e46,stated magnitude,0.0,foundations,,PAPER_2246,,,,,,WIRED
+dissipation_term_vindication,WHITEPAPER,derived,-lambda_i*U_i*E_react in first F_U (P420 chain),documented,paper one,founding record,0.0,foundations,,PAPER_2246,,,,,,WIRED

@@ -11279,3 +11279,122 @@ Universal Inertia_28Mar2025.docx. Full-document sweep (209K chars) findings:
   v0.389.0, whitepapers badge 2245→2276 (disk count; was stale). CHANGELOG entry inserted.
   _BUILD_LOG + SHIP_MESSAGE written. RULINGS trail (board items #4/#5 closed). New files:
   PAPER_2240 + PAPER_2241 whitepapers. Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 246 — 2026-08-20 — PAPER_2242: THE RED DWARF REACTOR TEXT LAYER FOUND (SuperGrok_09Mar2025 mine)
+
+Daniel: "what's next" post-v0.389.0 ship — the queued earliest-doc mine ran and produced a
+framework-level discovery:
+
+- **SuperGrok_Conversation_09Mar2025.docx (2.3 MB) IS the Red Dwarf Reactor's frame-by-frame
+  text analysis** ("UFE ORB EXP 2"): 4,965 IR images, 149.88 s at 33.3 fps, glass-cylinder
+  apparatus, batches #1-#41 with per-frame F_U/t-/cycle recalculation (±5% discipline),
+  watermarked Grok share links. **Rule 7 CORRECTION: PAPER_2236's "Red Dwarf 495 images,
+  no minable text" disposition was WRONG** (second correction to that landmark; append applied).
+- **EXPERIMENT-FIRST TIMELINE:** reactor analysis (Mar 7-9) → Universal Magnetism (Mar 17) →
+  Universal Inertia (Mar 28) — the framework is experiment-born; its primitives appear first
+  as measured/fitted quantities in the reactor video.
+- **Machinery at origin:** per-frame NEGATIVE TIME (t- ≈ -1e-4 s; NLPF P = 1-exp(-γ|t-|),
+  γ = SO_5³ — both documented values reproduced live; the P597 experimental ancestor);
+  **measured QS = observed/predicted jumps = 10 = SO_5** (the UA/SCm ratio as a jump count);
+  **SSq SYMBOL at origin** (~0.7 s sub-cycles; canonical 0.57 later via P1154 — honest
+  distinction); α-form Ug family (Ug1 worked 8.99e-22 reproduced at 0.047%); IF^(π−t)
+  operator (π + negative time pre-PI-formalization).
+- **Anchor lattice observations (recorded NOT canonized):** 6000 Hz = A_5·SO_5²; k₁ =
+  SO_5^(A_5/D_phys); α₁ = F_TRZ^SO_5; UA charge = F_TRZ^(SO_5+1); frame interval 0.03 s =
+  (D_phys−1)/SO_5² (P2065 form's experimental instance). Orb-count discrepancy (40-50/frame
+  vs 10k-15k in the 28Mar2025 overlay) recorded not reconciled (P2170).
+- Files: PAPER_2242 whitepaper (new), PAPER_2236 correction append (2nd), dispatch (keys
+  2292→2293, defs 4163→4164), +5 gate pins (5690→5695), registry rows ×4, graph edges ×6,
+  citations row, index flip + count syncs, README counts (wired-not-yet-shipped marker).
+  Gate GREEN 5695/0. Next paper: PAPER_2243.
+
+## Entry 247 — 2026-08-20 — PAPER_2243 + PAPER_2244: THE FOUNDING RECORDS + THE NAMING RECORD (March-2025 genesis mine complete)
+
+Daniel: "keep mining" — the March-series mine pushed the experiment-first timeline to its
+true origin and closed the provenance arc:
+
+- **PAPER_2243 (Mar 3-4 founding records):** the 2:08 AM EST 03Mar2025 apparatus entry —
+  PSEUDO-MONOPOLE OBSERVED IN HARDWARE (N at 90° on S-plane, LRC coil), the CADUCEUS as a
+  physical dual coil, ACE/DCE sub-ambient Heaviside energy (7-10°F below ambient, P1072
+  ancestry), "action at a spooky distance" named (P240 origin), 24"x8" field generator at
+  17 W / 6000 cyc/s (same drive as P2242's A_5·SO_5² observation). The 04Mar2025 COSMOGENESIS:
+  UA = {QFE}:UF:{UFE} — NEGATIVE TIME BORN as the QFE universal field state (P597 origin),
+  gateway ":" = UFsn·e^(iπ) = −1 EXACT (cos(π·t_n) heartbeat ancestor), vessel "holding long
+  form PI" (P2235 ancestor), α = 0.0072973525693 documented at the zero-range barrier (P1156
+  composed chain 0.14% later — honest distinction). Run-1 census: 496 frames × 0.03 s =
+  14.88 s EXACT.
+- **PAPER_2244 (naming + genesis ledger):** "STAR MAGIC — ENERGY ONE" born 28Mar2025
+  (manuscript title page, company name in title, founding TOC Ug1-4/Um1-4/Ub1-4); the UA
+  hierarchy characterized AT ORIGIN as "non-linear negative time derivations" (the 4-layer
+  hierarchy's missing origin link). FIRST ARTIFACT: Kepler Orrery V analysis 01Mar2025
+  ("Universal Magnetism & Gravity" — Um/Ug named day one; later wired as R384/P2137 cadence
+  62 = 2·D_crit+SO_5 without knowing its status). Genesis = ONE MONTH (Mar 1 → Mar 30);
+  pre-genesis = Feb PI archive. **The PAPER_2240→2244 provenance arc is CLOSED.**
+- Rule 7 note: one tool-side quoting failure (a UA-prime sequence closing a triple-quoted
+  string) aborted an edit script cleanly BEFORE any write — gate confirmed zero partial
+  state; rerun with safe delimiters succeeded.
+- Files: PAPER_2243 + PAPER_2244 whitepapers (new), dispatches (keys 2293→2295, defs
+  4164→4166), +9 gate pins (5695→5704), registry rows ×8, graph edges ×9, citations ×2,
+  index flips + count syncs. Gate GREEN 5704/0. Next paper: PAPER_2245.
+
+## Entry 248 — 2026-08-20 — PAPER_2245 (+append): THE MARCH-28 DEFINITIONAL LAYER CLOSED
+
+Daniel: "keep going" — the Mar 28-29 heavies mined:
+
+- **PAPER_2245:** the TWO-GRAVITY DOCTRINE at origin ("The duality of Gravity is the
+  Universe's Superconduction Principle"; Newtonian = measurement layer) — the documented
+  origin of the dpm_helpers GM/r²-LAST rule. Founding aphorisms: "Mass can only be
+  calculated but never fully determined" (P2148 Answer B in one sentence) + the Last Parsec
+  Moment (r_hz ancestry). FOUNDING UG CLOSED FORM: Ug_i = [(M·ρ_vac)/V]/[V_UA] — no G,
+  J/m³-native at origin (P2147). Manuscript Ch.3 COMPLETE F_U sector forms bit-match FU.docx
+  (P2152 cross-confirmed inside the naming manuscript); Ub_i structural form = the wired
+  buoyancy default; SCm "Cosmic Glue" quantified by the Sun↔SgrA* pairing. Universal Star
+  formation_29Mar2025 = external-reference disposition (Physics Today shocks; SNR-session
+  anchor), no framework content claimed.
+- **APPEND — the first solar parameterization:** all F_U solar anchors on one manuscript
+  page (M_s, R_s, ω_s 2.9e-6 equatorial + 2.5e-6 average both documented, Ω_g 7.3e-16,
+  M_bh 8.15e36, d_g 2.55e20 documented vs wired lattice 2.6e20 at 1.96% — provenance note
+  for the P2139/R387 promotion, μ_s = B·R³ dipole lineage, R_b = 100 AU, α = 0.001/day).
+  Rule 7: manuscript worked-value exponents differ from its own formula arithmetic (μ_s
+  e20-vs-e22; Ug2 e6-vs-e-7 with mantissa 8.87 reproduced EXACT-class) — disclosed as
+  docx superscript-flattening or in-document slip, NOT adjudicated. One pin arithmetic
+  slip (1e13 vs 1e7 mantissa factor) caught by the gate on first run, fixed.
+- Files: PAPER_2245 whitepaper (new + append), dispatch (keys 2295→2296, defs 4166→4167),
+  +9 gate pins (5704→5713), registry rows ×5, graph edges ×5, citations row, index flip +
+  count syncs. Gate GREEN 5713/0. Next paper: PAPER_2246.
+
+## Entry 249 — 2026-08-20 — PAPER_2246: THE THEORY OF PERMENANCE (first formal paper mined; genesis arc complete at 2242-2246)
+
+Daniel: "keep going" — the UQF editions + EGM heavies mined:
+
+- **PAPER_2246:** "The Theory of Permenance" (Universal Quantum Framework_30Mar2025) IS the
+  framework's FIRST FORMAL PAPER — full paper structure, the corpus format ancestor. Origins:
+  (1) the −Σλ_i·U_i·E_react DISSIPATION TERM present from paper one — PAPER_420's "was
+  missing from code" restoration VINDICATED at origin; (2) FIRST COUPLING TABLE — k =
+  {1.5, 1.2, 1.8, 1.0} (MUGE constants' table of origin), β_i = 0.6 (P1165 i=1 rung origin),
+  γ = 5e-5/day (GAMMA_SCM anchor origin; γ = κ·F_TRZ observation), η = 1e-22; (3) E_REACT
+  ORIGIN — (ρ_SCm·v²/ρ_UA)·e^(−κt) stated at 1e46 = the wired SO_5^46 default EXACT;
+  (4) SCm MASSLESS at origin. ρ_vac-native F_U (P2147 discipline adopted within 2 days of
+  the manuscript). First worked solar solution set (8 quantities, incl. the 1+1e13·f_Heaviside
+  amplifier = P1072 lineage). U_i ROUTE FAMILY: product form (30Mar) vs ratio form (28Mar,
+  P646 canonical) — both documented same week, recorded per P2170.
+- **Rule 7 — the EXPONENT-FLATTENING CLASS (three instances disclosed, none adjudicated):**
+  E_react printed form evaluates 1e15 vs stated 1e46; manuscript μ_s/Ug2 exponents off with
+  mantissas exact (P2245 append); U_i product chain gives 1.38e-77 vs printed 1.38e-47
+  (mantissa exact). A systematic docx superscript-flattening or in-document slip class —
+  disclosed at every site, mantissa-level verification adopted as the standard.
+- **Dispositions:** UQF 08Apr/14Apr editions text-stable; Star Magic 14Apr/09Sept editions
+  title-stable; Electrogravitational Mechanics (+pg1/pg2, 7.7MB) = external Bayles 2017
+  waveguide reference (imagery, no framework content).
+- Files: PAPER_2246 whitepaper (new), dispatch (keys 2296→2297, defs 4167→4168), +5 gate
+  pins (5713→5718), registry rows ×4, graph edges ×4, citations row, index flip + count
+  syncs. Gate GREEN 5718/0. Next paper: PAPER_2247.
+
+## Entry 250 — 2026-08-20 — SHIP PREP v0.390.0 (THE GENESIS ARC)
+
+- Pins ×6 (pyproject 0.390.0 + desc 479 chars incl. version — first draft 555 chars caught
+  by own assert pre-write; calculator VERSION; gate version pin; CITATION.cff ×2; README
+  cacheBust ×2; UNIFIED_REGISTRY_VERSION.txt). Trail rows ×8 (GENESIS_ARC). README release
+  paragraph replaced + campaign-live + shipped header v0.390.0; wired-not-yet-shipped marker
+  cleared. CHANGELOG entry inserted; _BUILD_LOG + SHIP_MESSAGE written; RULINGS trail. New
+  files: PAPER_2242-2246 whitepapers. Awaiting Daniel: `.\ship.ps1`.

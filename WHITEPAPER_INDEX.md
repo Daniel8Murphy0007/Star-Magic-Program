@@ -38,7 +38,7 @@
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
 ## CANONICAL ALIAS NUMBERS (assigned 2026-08-16, Daniel ruling: last number used = 2178)
 
-Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2242**.
+Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2247**.
 
 | Number (PAPER_) | Original key |
 |---|---|
@@ -99,7 +99,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | 2233 | PAPER_1203b |
 
 - **Verification arc 2026-08-16 (v0.387.0):** paradox-corpus audit ZERO recalcs; grammar dragnet 110 family sites; origin term verified; AP text layer EXHAUSTED (458 docs). Runnable queue empty — remaining items Daniel-owned.
-- **Distinct wired papers: 2,237 (+55 canonical alias numbers 2179-2233; 2,292 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
+- **Distinct wired papers: 2,242 (+55 canonical alias numbers 2179-2233; 2,297 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
 - **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
@@ -2398,3 +2398,8 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_2239 | DPM_PAIR_COUNT_ESTIMATOR N_sun = SO_5^13 (0.13%) - P2134 target delivered (authored+wired 2026-08-16) |
 | ✓ | PAPER_2240 | PAIR_ENERGY_PROVENANCE_CLOSURE E_pair = E0*F_TRZ^2 grounded 28Mar2025 ladder + rho_SCm birth certificate F_TRZ^N_ch/V_sun + N = SO_5^level + reactor regime resolved (authored+wired 2026-08-20) |
 | ✓ | PAPER_2241 | SECTOR_DENSITY_INTEGER_LADDER f_n = n*F_TRZ^2, rho_sector = n*rho_SCm, n = {1,2,3,4,5,SO_5} documented 28Mar2025; closes P2066 source; kappa+lambda_i provenance (authored+wired 2026-08-20) |
+| ✓ | PAPER_2242 | RED_DWARF_REACTOR_TEXT_LAYER_FOUND UFE ORB EXP 2 (Mar 7-9 2025, archive earliest); experiment-first timeline; per-frame t- NLPF; QS = SO_5 measured; SSq symbol origin; corrects P2236 (authored+wired 2026-08-20) |
+| ✓ | PAPER_2243 | THE_FOUNDING_RECORDS Mar 3-4 2025: DPM+caduceus as hardware (2:08AM entry); QFE:UF:UFE cosmogenesis - negative time born; e^(i*pi) gateway; alpha documented; run-1 census 496/14.88s (authored+wired 2026-08-20) |
+| ✓ | PAPER_2244 | NAMING_RECORD+GENESIS_LEDGER Star Magic - Energy One born 28Mar2025; UA layers = negative-time derivations at origin; Kepler Orrery V first artifact 01Mar2025; one-month genesis (authored+wired 2026-08-20) |
+| ✓ | PAPER_2245 | TWO_GRAVITY_DOCTRINE+FOUNDING_UG_FORM 28Mar2025: Superconduction Principle duality; Ug_i = [(M*rho)/V]/[V_UA] no-G origin; manuscript Ch.3 F_U sector forms = FU.docx cross-confirm; mass-emergent aphorism (authored+wired 2026-08-20) |
+| ✓ | PAPER_2246 | THEORY_OF_PERMENANCE first formal paper 30Mar2025: dissipation term at origin (P420 vindicated); coupling table k/beta/gamma origins; E_react = SO_5^46 stated; SCm massless at origin; U_i route family; Rule 7 exponent-flattening class disclosed (authored+wired 2026-08-20) |

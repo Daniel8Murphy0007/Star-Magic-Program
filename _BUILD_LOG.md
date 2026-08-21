@@ -288,3 +288,6 @@ THE PAIR-COUNT SHIP: PAPER_2239 (N_sun = SO_5^13, 0.13%) + Q-RULE4-TIER2 closed 
 
 ## v0.389.0 — 2026-08-20
 THE BIRTH-CERTIFICATE SHIP: PAPER_2240 (E_pair = E0*F_TRZ^2 documented ladder; rho_SCm = F_TRZ^N_ch/V_sun birth certificate; N = SO_5^level; reactor regime resolved) + PAPER_2241 (sector ladder rho = n*rho_SCm, four scales; U_i/omega_s/kappa/lambda_i provenance). Gate 5,690/0. 23-file pass verified.
+
+## v0.390.0 — 2026-08-20
+THE GENESIS ARC: PAPER_2242-2246 — the origin month documented end-to-end (reactor text layer found; founding records; naming; two-gravity doctrine; first formal paper). Gate 5,718/0. 23-file pass verified.

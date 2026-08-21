@@ -7,6 +7,29 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.390.0 — 2026-08-20 — THE GENESIS ARC
+
+- **PAPER_2242 — Red Dwarf reactor text layer FOUND:** SuperGrok_09Mar2025 (2.3 MB, archive's
+  earliest large doc) is the UFE ORB EXP 2 frame-by-frame analysis. Rule 7 correction to
+  P2236; EXPERIMENT-FIRST timeline; per-frame t⁻ (NLPF, γ = SO_5³); measured QS = 10 = SO_5;
+  SSq symbol origin (0.7-s sub-cycles); anchor lattice observations (6000 Hz = A_5·SO_5²,
+  0.03 s = (D_phys−1)/SO_5²).
+- **PAPER_2243 — the founding records (Mar 3-4):** 2:08 AM apparatus entry — DPM observed in
+  hardware, caduceus = physical dual coil, ACE/DCE sub-ambient Heaviside, spooky distance
+  named. Cosmogenesis UA = {QFE}:UF:{UFE} — negative time born; e^(iπ) = −1 gateway; α
+  documented; run-1 census 496×0.03 = 14.88 s EXACT.
+- **PAPER_2244 — the naming record + genesis ledger:** "Star Magic — Energy One" born
+  28Mar2025; UA layers = "non-linear negative time derivations" at origin; Kepler Orrery V
+  (01Mar2025) = first framework artifact (P2137 closure); one-month genesis ledger.
+- **PAPER_2245 — two-gravity doctrine + founding Ug form (+append):** Superconduction
+  Principle duality (GM/r²-LAST origin); Ug_i = [(M·ρ)/V]/[V_UA] no-G; manuscript Ch.3 F_U =
+  FU.docx cross-confirm; first solar parameterization (d_g 2.55e20 vs wired 2.6e20 at 1.96%).
+- **PAPER_2246 — The Theory of Permenance (first formal paper):** dissipation term at origin
+  (P420 vindicated); first coupling table; E_react stated 1e46 = SO_5^46 wired default EXACT;
+  SCm massless at origin; U_i route family; exponent-flattening class disclosed (Rule 7).
+- Appends: PAPER_2236 second correction (Red Dwarf disposition).
+- Gate 5,690 → 5,718 (+28 pins). Keys 2,292 → 2,297. Defs 4,163 → 4,168. Whitepapers +5.
+
 ## v0.389.0 — 2026-08-20 — THE BIRTH-CERTIFICATE SHIP
 
 - **PAPER_2240 — pair-energy provenance closure** (Daniel: "Go #5, and #4"): E_pair = E0*F_TRZ^2

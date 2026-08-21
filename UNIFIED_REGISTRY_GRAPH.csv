@@ -12179,3 +12179,27 @@ PRIMITIVE,SO_5,observable,sector_sum_with_ua,PAPER_2241
 sector_density_ladder,PAPER_2241,CLOSES_SOURCE,PAPER_2066,the canonical-anchored category opener (n=4 rung)
 kappa_birth_certificate,PAPER_2241,GROUNDS,PAPER_2112,the kappa primitive's documented origin
 u_i_origin_28mar2025,PAPER_2241,GROUNDS,PAPER_646,the Universal Inertial Operator equation + 2.75e-7 Sun value at documented origin
+PRIMITIVE,SO_5,observable,qs_amplification_so5,PAPER_2242
+PRIMITIVE,F_TRZ,observable,ug1_alpha_form_origin,PAPER_2242
+PRIMITIVE,A_5,observable,red_dwarf_text_layer,PAPER_2242
+nlpf_negative_time,PAPER_2242,GROUNDS,PAPER_597,the per-frame experimental ancestor of negative-time dual existence
+red_dwarf_text_layer,PAPER_2242,CORRECTS,PAPER_2236,the not-text-minable disposition (Rule 7)
+qs_amplification_so5,PAPER_2242,GROUNDS,RHO_UA,the 10x ratio measured as jump counts before canonization
+cosmogenesis_gateway,PAPER_2243,GROUNDS,PAPER_597,negative time born as the QFE field state
+cosmogenesis_gateway,PAPER_2243,GROUNDS,PAPER_646,e^(i*pi) gateway = the cos(pi*t_n) heartbeat ancestor
+dpm_hardware_observation,PAPER_2243,GROUNDS,DPM,the pseudo-monopole as lab behavior before formalization
+dpm_hardware_observation,PAPER_2243,GROUNDS,PAPER_240,spooky distance named at 2:08AM 03Mar2025
+run1_census,PAPER_2243,EXTENDS,PAPER_2242,run-1 (496/14.88s) precedes the extended run (4965/149.88s)
+naming_record,PAPER_2244,GROUNDS,PROJECT,the framework name + company name at origin
+ua_layers_negative_time_origin,PAPER_2244,GROUNDS,PAPER_2152,the 4-layer UA hierarchy origin characterization
+kepler_orrery_first_artifact,PAPER_2244,GROUNDS,PAPER_2137,first-artifact status for the wired Orrery cadence
+genesis_ledger_march_2025,PAPER_2244,CLOSES,PAPER_2240,the 2240-2244 provenance arc
+two_gravity_doctrine,PAPER_2245,GROUNDS,PAPER_2152,the dpm_helpers GM/r^2-LAST ontology rule origin
+mass_emergent_aphorism,PAPER_2245,GROUNDS,PAPER_2148,Answer B ontology in one founding sentence
+manuscript_fu_sector_forms,PAPER_2245,GROUNDS,PAPER_862,the Um master lineage inside the naming manuscript
+founding_ug_closed_form,PAPER_2245,GROUNDS,PAPER_2147,J/m^3-native discipline at origin
+first_solar_parameterization,PAPER_2245,GROUNDS,PAPER_2139,the d_g lattice promotion's documented origin (2.55e20 vs 2.6e20 at 1.96%)
+dissipation_term_vindication,PAPER_2246,GROUNDS,PAPER_420,the restored term present at origin
+first_coupling_table,PAPER_2246,GROUNDS,PAPER_1165,beta_i = 0.6 as the triangular ladder i=1 origin
+e_react_origin,PAPER_2246,GROUNDS,PAPER_2139,the SO_5^46 E_react default's documented magnitude
+first_formal_paper,PAPER_2246,CLOSES,PAPER_2244,the genesis ledger's final entry now fully read

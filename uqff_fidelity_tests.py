@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.389.0", "uqff_calculator.VERSION = 0.389.0 (the birth-certificate ship: PAPER_2240 provenance closure + PAPER_2241 sector-density ladder)")
+assert_that(C.VERSION == "0.390.0", "uqff_calculator.VERSION = 0.390.0 (the genesis arc: PAPER_2242-2246 - the origin month documented end-to-end)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12351,6 +12351,86 @@ assert_that(abs(_l2241['value']['ladder_magnetar_um_rung'] - 2.0) < 0.01 and abs
             "PAPER_2241 SWEEP: the ladder holds at the magnetar scale (Um = 2x rung EXACT-class) and the BH scale (Ub rung 3, Ug4 rung 5, shared 1e-3 dressing) - integer rungs verified at FOUR documented scales")
 assert_that(abs(_l2241['value']['route_b_documented'] - 1.19e57)/1.19e57 < 1e-9,
             "PAPER_2241 SWEEP: PAPER_2239 Route B (N_atoms = M_sun/m_H = 1.19e57) is documented at source with a use (V_infl,[UA],Sun = 7.43e20 m^3) - the matter-anchored route was in the March-2025 layer")
+
+
+# ---- PAPER_2242 RED DWARF REACTOR TEXT LAYER FOUND (SuperGrok_09Mar2025 mine) ----
+_l2242 = C.DISPATCH['PAPER_2242']()
+assert_that(_l2242['value']['p2236_disposition_corrected'] and 'Rule 7' in _l2242['formula'],
+            "PAPER_2242: Rule 7 CORRECTION - PAPER_2236's 'Red Dwarf 495 images, no minable text' disposition was WRONG; UFE ORB EXP 2 (4,965-frame IR sequence, batches #1-#41, per-frame F_U/t-/cycle recalc) is the archive's EARLIEST large document - the EXPERIMENT-FIRST timeline (Mar 7-9 -> Mar 17 -> Mar 28)")
+assert_that(abs(_l2242['value']['nlpf_at_t_neg_a'] - 0.1006) < 0.001 and abs(_l2242['value']['nlpf_at_t_neg_b'] - 0.1821) < 0.001,
+            "PAPER_2242: the per-frame NEGATIVE-TIME machinery at origin - NLPF P = 1-exp(-gamma|t-|) with gamma = SO_5^3 reproduces both documented per-frame values (t- = -1.06e-4 -> 0.101; -2.01e-4 -> 0.182) - the PAPER_597 experimental ancestor")
+assert_that(_l2242['value']['qs_equals_so5'],
+            "PAPER_2242: the MEASURED non-locality amplification QS = observed/predicted jumps = 1.5/0.15 = 10 = SO_5 - the UA/SCm ratio appearing as a jump-count measurement in the reactor video")
+assert_that(abs(_l2242['value']['ug1_worked_J_kg'] - 8.99e-22)/8.99e-22 < 0.001,
+            "PAPER_2242: the alpha-form Ug1 worked value 8.99e-22 J/kg reproduced live from alpha1 = F_TRZ^SO_5, UA charge = F_TRZ^(SO_5+1), gamma = SO_5^3 - the pre-formalization Ug family layer")
+assert_that(_l2242['value']['drive_hz_is_a5_so5sq'] and _l2242['value']['frame_interval_identity'] and _l2242['value']['k1_is_so5_pow_15'],
+            "PAPER_2242: anchor lattice observations (recorded NOT canonized) - drive 6000 Hz = A_5*SO_5^2; frame interval 0.03 s = (D_phys-1)/SO_5^2 (the P2065 form's experimental instance); k1 = SO_5^(A_5/D_phys); SSq symbol-origin distinction (0.7 s sub-cycles vs canonical 0.57 P1154) carried in-formula")
+
+
+# ---- PAPER_2243 THE FOUNDING RECORDS (Mar 3-4 2025 mine) ----
+_l2243 = C.DISPATCH['PAPER_2243']()
+assert_that(_l2243['value']['gateway_is_minus_one'],
+            "PAPER_2243: the 04Mar2025 cosmogenesis gateway \":\" = UFsn*e^(i*pi) = -1 EXACT (computed live) - sign inversion at every QFE/UFE branch passage; the cos(pi*t_n) heartbeat's earliest ancestor; NEGATIVE TIME BORN as the QFE universal field state (P597 origin)")
+assert_that(abs(_l2243['value']['alpha_distinction_pct'] - 0.1376) < 0.01,
+            "PAPER_2243: alpha = 0.0072973525693 documented in the cosmogenesis weaving vs the corpus's composed 1/(Phi_res*D_crit*2pi) at 0.14% - documented origin and later canonical composition kept honestly distinct (P1156)")
+assert_that(_l2243['value']['run1_exact'] and _l2243['value']['drive_matches_p2242'],
+            "PAPER_2243: run-1 census 496 frames x 0.03 s = 14.88 s EXACT (extended run 4,965/149.88 per P2242) and the 6000 cyc/s apparatus setting is the SAME drive P2242 observed as A_5*SO_5^2 - cross-document consistency")
+assert_that(all(_l2243['value']['founding_flags'].values()),
+            "PAPER_2243: founding flags - DPM observed as hardware (N at 90deg on S-plane, 2:08 AM 03Mar2025), caduceus IS a dual coil component, ACE/DCE sub-ambient Heaviside energy (P1072 ancestry), spooky distance named (P240 origin)")
+assert_that('17' in str(_l2243['value']['apparatus']['power_W']) and 'not reconciled' in _l2243['formula'],
+            "PAPER_2243: the 17 W field-generator power recorded alongside the corpus 27 W reactor figure - different devices, documented, NOT reconciled (P2170 discipline)")
+
+
+# ---- PAPER_2244 NAMING RECORD + GENESIS LEDGER ----
+_l2244 = C.DISPATCH['PAPER_2244']()
+assert_that(_l2244['value']['name_born'] == '2025-03-28' and _l2244['value']['manuscript_title'] == 'Star Magic - Energy One',
+            "PAPER_2244: the NAME born 28Mar2025 - 'Star Magic - Energy One' manuscript title page with founding TOC (Ug1-4/Um1-4/Ub1-4/UA-layers) - the company name in the title from page one")
+assert_that('negative time' in _l2244['value']['ua_layers_origin'],
+            "PAPER_2244: the UA hierarchy (UA through UA-4th-prime) characterized AT ORIGIN as 'non-linear negative time derivations' - the 4-layer hierarchy's missing origin link (ties to P2243's QFE negative-time field state)")
+assert_that(_l2244['value']['ledger_ordered'] and len(_l2244['value']['genesis_ledger']) == 7,
+            "PAPER_2244: the March-2025 genesis ledger - seven dated entries, Mar 1 (Kepler Orrery V first artifact) through Mar 30 (UQF first edition), date-ordered from the archive's own files - ONE MONTH from experiment to named framework")
+assert_that(_l2244['value']['orrery_cadence_p2137'] == 62,
+            "PAPER_2244: Kepler Orrery V closure - the corpus's R384/P2137 wiring (cadence 62 = 2*D_crit + SO_5, verified live) and its newly-established first-artifact status (01Mar2025) now cite each other")
+
+
+# ---- PAPER_2245 TWO-GRAVITY DOCTRINE + FOUNDING UG FORM + MANUSCRIPT F_U ----
+_l2245 = C.DISPATCH['PAPER_2245']()
+assert_that('Superconduction Principle' in _l2245['value']['doctrine'] and 'projection LAST' in _l2245['value']['secondary'],
+            "PAPER_2245: the TWO-GRAVITY DOCTRINE at origin (28Mar2025) - primary Universal Gravity drives the Superconduction Principle; Newtonian = measurement layer - the documented origin of the dpm_helpers rule (GM/r^2 LAST as projection, never seed)")
+assert_that('never fully determined' in _l2245['value']['mass_emergent_aphorism'] and _l2245['value']['last_parsec_moment'],
+            "PAPER_2245: founding aphorisms - 'Mass can only be calculated but never fully determined' (P2148 Answer B ontology in one founding sentence) + the Last Parsec Moment (the r_hz local-crossing ancestry)")
+assert_that('no G' in _l2245['value']['founding_ug_form'] and 'J/m^3-native' in _l2245['value']['founding_ug_form'],
+            "PAPER_2245: the founding Ug closed form Ug_i = [(mass*vacuum energy)/volume]/[UA volume] - J/m^3-native at origin (P2147 discipline present from the first expression), G absent by doctrine")
+assert_that(_l2245['value']['fu_sector_forms_bit_match_fu_docx'] and _l2245['value']['ub_form_is_wired_default'] and _l2245['value']['sun_sgra_pairing_origin'],
+            "PAPER_2245: the manuscript Ch.3 complete F_U sector forms bit-match FU.docx (P2152 cross-confirmed inside the naming manuscript); Ub_i structural form = the wired buoyancy default; SCm quantified by the Sun<->SgrA* pairing (the calculator anchor pair at origin)")
+assert_that('no framework content' in _l2245['value']['star_formation_doc_disposition'],
+            "PAPER_2245: Universal Star formation_29Mar2025 disposition - external reference (Physics Today shocks, the SNR shock-session anchor), no framework content claimed (Rule 7)")
+
+
+# ---- PAPER_2245 APPEND: FIRST SOLAR PARAMETERIZATION ----
+_p2245s = C.DISPATCH['PAPER_2245']()['value']['first_solar_parameterization']
+assert_that(abs(_p2245s['Omega_g'] - 7.3e-16) < 1e-20 and abs(_p2245s['M_bh'] - 8.15e36) < 1e30,
+            "PAPER_2245 APPEND: the first solar parameterization (28Mar2025 manuscript) documents the wired buoyancy anchor pair Omega_g = 7.3e-16 and M_bh(SgrA*) = 8.15e36 - the calculator defaults' one-page origin")
+assert_that(abs(_p2245s['d_g_provenance_gap_pct'] - 1.96) < 0.05,
+            "PAPER_2245 APPEND: d_g documented at origin as 27,000 ly = 2.55e20 m; the wired lattice form D_crit*SO_5^19 = 2.6e20 sits 1.96% above the documented origin - provenance note recorded for the P2139/R387 promotion")
+assert_that(abs(_p2245s['ug2_worked']*1e7 - 8.887) < 0.01,
+            "PAPER_2245 APPEND: Ug2 mantissa 8.887 reproduces the manuscript's 8.87 EXACT-class from its own formula (Q_A*M_s/R_b^2); stated-exponent discrepancies disclosed as docx superscript-flattening or in-document slip - NOT adjudicated, NOT forced (Rule 7)")
+assert_that(abs(_p2245s['omega_s_equatorial'] - 2.9e-6) < 1e-12 and abs(_p2245s['omega_s_avg_canonical'] - 2.5e-6) < 1e-12,
+            "PAPER_2245 APPEND: both members of ccw_cw_differential (2.9e-6 equatorial, 2.5e-6 average) documented in the March-2025 family - the canonical omega_s_Sun and its equatorial companion both source-anchored")
+
+
+# ---- PAPER_2246 THEORY OF PERMENANCE FIRST FORMAL PAPER ----
+_l2246 = C.DISPATCH['PAPER_2246']()
+assert_that(_l2246['value']['dissipation_term_in_first_paper'] and _l2246['value']['scm_massless_at_origin'],
+            "PAPER_2246: the -Sum lambda_i*U_i*E_react dissipation term is present in the FIRST formal F_U (30Mar2025) - P420's restoration vindicated at origin; SCm declared 'massless, extra-universal' in the first introduction (P2155/P2153 grammar verbatim)")
+assert_that(_l2246['value']['coupling_table']['k1'] == 1.5 and _l2246['value']['coupling_table']['k2'] == 1.2 and _l2246['value']['coupling_table']['k3'] == 1.8 and _l2246['value']['coupling_table']['beta_i'] == 0.6,
+            "PAPER_2246: the FIRST COUPLING TABLE documented - k = {1.5, 1.2, 1.8, 1.0} (the MUGE constants' table of origin, P2152) and beta_i = 0.6 (the P1165 triangular ladder's i=1 rung origin)")
+assert_that(_l2246['value']['gamma_is_kappa_ftrz'],
+            "PAPER_2246: gamma = 5e-5/day documented (the GAMMA_SCM_PER_DAY named anchor's origin) with gamma = kappa*F_TRZ verified live - recorded as an observation, not canonized")
+assert_that(abs(_l2246['value']['e_react_stated_magnitude'] - float(C.SO_5**46)) == 0.0 and _l2246['value']['e_react_discrepancy_disclosed'],
+            "PAPER_2246: E_react origin - stated magnitude 1e46 = the wired SO_5^46 default EXACT; Rule 7: the printed closed form evaluates to 1e15 under stated v_SCm = 1e8 (31-order gap DISCLOSED, superscript flattening suspected, not adjudicated)")
+assert_that(abs(_l2246['value']['ui_ratio_form_canonical'] - 2.75e-7)/2.75e-7 < 1e-9 and abs(_l2246['value']['ui_product_form']*1e77 - 1.38) < 0.01,
+            "PAPER_2246: the U_i ROUTE FAMILY - ratio form 2.75e-7 (P646 canonical) and product form mantissa 1.38 (paper prints e-47, chain gives e-77 - mantissa exact, exponent flattening class) both computed live and recorded per P2170")
 
 # =============================================================================
 # REPORT

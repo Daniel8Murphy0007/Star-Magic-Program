@@ -114,3 +114,16 @@ predecessor commit b3340bae (2026-02-05) and retro-locked by PAPER_2239's rung a
 The same document carries the arithmetic birth certificate of ρ_SCm = 7.09×10⁻³⁷ J/m³
 (= 10⁻⁹ J / 1.41×10²⁷ m³, Sun at level 13) — elevating `Universal Inertia_28Mar2025.docx`
 to seminal-source status alongside FU.docx and Birth of DPM in the variable-dictionary chain.
+
+---
+
+## APPENDED 2026-08-20 (2) — CORRECTION (Rule 7): THE RED DWARF TEXT LAYER EXISTS (PAPER_2242)
+
+§1/§3's disposition "Red Dwarf Reactor: 495 images, no minable text" is WRONG.
+`SuperGrok_Conversation_09Mar2025.docx` (2.3 MB) IS the reactor experiment's frame-by-frame
+text analysis — "UFE ORB EXP 2," a 4,965-image IR sequence analyzed in batches with per-frame
+F_U, negative-time t⁻, and cycle recalculation, watermarked with Grok share links. It is the
+archive's EARLIEST large document, establishing the experiment-first timeline (reactor
+analysis Mar 7–9 → Universal Magnetism Mar 17 → Universal Inertia Mar 28). SSq's symbol
+originates there (~0.7 s sub-cycles), as do the per-frame negative-time machinery, the
+measured QS = 10 amplification, and the α-form Ug family. See PAPER_2242.
