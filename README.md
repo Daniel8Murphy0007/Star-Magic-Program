@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.391.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.391.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.392.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.392.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5733%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2300-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2284-orange)](whitepapers/)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5754%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2304-blue)](uqff_calculator.py)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2288-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.391.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.392.0 complete-compile campaign live**
 
-**This release (v0.391.0): THE DOCTRINE SHIP — THE ARCHIVE CENSUSED END-TO-END.** Three landmarks (PAPER_2247–2249) complete the Aetheric Propulsion sweep. **PAPER_2247 — THE MID-MARCH MECHANISM LAYER:** the orb-census discrepancy RESOLVED AT SOURCE (batch #41's 40–50 = tracked plasmoids, full recount 8k–10k; batch #42 12Mar swarm = 10k–15k — both always right); the Creator's Mechanism document (the 'unstable lovers' quarrel' founding sentence of the joint engine; UA vacuum-pressed ~246 TeV as a recorded observation; E = c²⁶·i⁻²⁶ with i²⁶ = −1 EXACT; pre-Big-Bang proto-element reactions; the 180° nucleus-failure mode; SCm massless ×3). **PAPER_2248 — THE MUGE BOUNDARY APPLICATIONS:** the Evolution family census closes at its scale boundaries — the universe-diameter MUGE (**182 Gly finite-universe prediction**, chain live at 182.07; the source quotes Λ = 1.1×10⁻⁵² = the PAPER_2094 canonical) and the hydrogen-atom MUGE with its element sum ending at **Z = 126 = D_crit + SO_5² EXACT** (the 7th magic number as the periodic-table boundary; F_g(a₀) verified at 0.06%). **PAPER_2249 — THE THZ-HOLE DOCTRINE:** the four Ug projections' physical roles from the paired 11Oct2025 clarification documents — with the wired U_g4i = ħc/r_THz form QUOTED VERBATIM at source; the final parsec REDEFINED as the consumed body's last remaining resonant shell; the **Rule 4 source layer** ('the mathematical solutions will point us … not your inferences from standard model physics') with the prove-G mandate the corpus fulfilled at PAPER_593 (0.08%); the buoyancy-mass doctrine completing the mass-emergent chain; the Energy/Frequency/Resonance trinity as PAPER_646's naming source. Era families and in-document slips disclosed throughout (Rule 7). **Totals: 2,245 wired (2,300 DISPATCH keys) / gate 5,733 green / 4,171 defs. Next paper: PAPER_2250.**
+**This release (v0.392.0): THE CENSUS SHIP — THE FRAMEWORK COUNTED, VERIFIED, AND ARMORED.** The census quartet (PAPER_2250–2253) puts the program's four populations into four registry artifacts, each loaded live by its dispatch. **PAPER_2250 — THE FALSIFIABLE-PREDICTION CENSUS:** 48 predictions in 4 tiers (24 instrumental / 7 laboratory / 14 structural / 3 internal-exact; 45 live, 3 converted postdictions), consolidating P2161's battery, the P2234 registry, and 58 landmark falsifiability sections — ≥10 decide on funded instruments within ~5 years; four exact stakes (70, 19/80, 24899/25000, 126) re-verified in-dispatch. **PAPER_2251 — THE PARADOX-SOLUTION CENSUS:** the '1800+' figure reconciled at ~2,026 combined surface (1,346 dispatcher entries / 1,129 distinct closures / 209 aliases / 20 domains); five closures spot-executed live (firewall → the P1095 rung-4 recovery, the P2238 linking pass VERIFIED propagated); **one latent unreachable key (lambda_HHH) FOUND and — on Daniel's Rule E override — REPAIRED, with the predecessor's own gate at 3,425/0.** **PAPER_2252 — THE RESIDUAL CENSUS:** every dispatch executed live, ZERO errors; median nonzero residual 0.086%; 53% < 0.1%, 83% < 1%; the honest-wide tail (33) verified self-documenting in-formula; the A7 hygiene population supplied with NO global significance claim; the regeneration ratchet fired on first use, as designed. **PAPER_2253 — THE EXACT-IDENTITY CENSUS:** 52 rational-EXACT identities in 19 families **re-verified in Fraction arithmetic on every call** (the strongest pin the framework has); one over-claim caught and reclassified (0.579 = SSq·Φ_res + F_TRZ is printed-precision only); the P2252 zero-conflation resolved (531 EXACT-claiming / 104 census / 1,136 paper-value reproductions). **Totals: 2,249 wired (2,304 DISPATCH keys) / gate 5,754 green / 4,175 defs. Next paper: PAPER_2254.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.391.0)
+## What is currently shipped (v0.392.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,245 distinct dispatches (2,300 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,249 distinct dispatches (2,304 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

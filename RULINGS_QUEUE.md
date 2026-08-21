@@ -6528,3 +6528,12 @@ optional f_SCm = F_TRZ^2 reading confirmation.
 
 No new rulings required. Board unchanged: rounded-constant unification, rare-earth P1886,
 P047 candidate, 55-paper renames, ASCII_TMP deletions, optional f_SCm = F_TRZ^2 reading.
+
+---
+
+## TRAIL v0.392.0 (2026-08-21) — THE CENSUS SHIP
+
+lambda_HHH repair executed (Daniel Rule E override) — predecessor queue item DISCHARGED.
+Board unchanged otherwise: rounded-constant unification, rare-earth P1886, P047 candidate,
+55-paper renames, ASCII_TMP deletions, optional f_SCm = F_TRZ^2 reading. Census candidates
+remaining: the anchor census, the open-items census.

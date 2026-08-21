@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.392.0 — 2026-08-21 — THE CENSUS SHIP
+
+- **PAPER_2250 — falsifiable-prediction census:** 48 predictions / 4 tiers / 45 live in
+  UNIFIED_REGISTRY_PREDICTIONS.csv; P2161 battery + P2234 registry + 58 landmark sections
+  unified; 4 exact stakes re-verified in-dispatch; >=10 near-term on funded instruments.
+- **PAPER_2251 — paradox-solution census:** 1,346 dispatcher entries / 1,129 closures /
+  20 domains in UNIFIED_REGISTRY_PARADOX_CENSUS.csv; "1800+" reconciled at ~2,026;
+  firewall→rung-4 propagation verified; **lambda_HHH latent key FOUND and REPAIRED**
+  (Daniel Rule E override; backup kept; predecessor gate 3,425/0).
+- **PAPER_2252 — residual census:** all dispatches executed / ZERO errors / median nonzero
+  0.086% in UNIFIED_REGISTRY_RESIDUALS.csv; honest tail self-documenting; A7 population
+  supplied, no significance claim; regeneration ratchet fired on first use as designed.
+- **PAPER_2253 — exact-identity census:** 52 rational-EXACT / 20 families in
+  UNIFIED_REGISTRY_EXACT_IDENTITIES.csv, re-verified in Fraction arithmetic PER CALL;
+  rem_579 over-claim reclassified (Rule 7); P2252 zero-split resolved 531/104/1136.
+- Gate 5,733 → 5,754 (+21 pins). Keys 2,300 → 2,304. Defs 4,171 → 4,175. Whitepapers +4.
+  Four new registry artifacts.
+
 ## v0.391.0 — 2026-08-20 — THE DOCTRINE SHIP
 
 - **PAPER_2247 — mid-March mechanism layer:** orb-census discrepancy RESOLVED at source

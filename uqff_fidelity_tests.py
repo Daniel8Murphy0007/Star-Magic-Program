@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.391.0", "uqff_calculator.VERSION = 0.391.0 (the doctrine ship: PAPER_2247-2249 - mechanism layer + MUGE boundaries + THz-hole doctrine; AP archive censused end-to-end)")
+assert_that(C.VERSION == "0.392.0", "uqff_calculator.VERSION = 0.392.0 (the census ship: P2250-2253 - predictions/paradoxes/residuals/identities + four artifacts + the lambda_HHH repair)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,16 +9556,16 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BAND_2151_2156'
+_sg4_band = 'CENSUS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
-    assert_that(_sg4_band in _sg4_last(_sg4_f) or 'PAPER_2151_2156' in _sg4_last(_sg4_f),
-                "SHIP GUARD v4: %s must carry the current band's trail (%s) - band ships touch ALL 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('band_2151_families' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
-            "SHIP GUARD v4: GAPS ledger must carry the current trail's Rule 7 disclosures (band families row)")
-assert_that('wired-not-yet-shipped' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv') or 'v0.37' in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
-            "SHIP GUARD v4: R1 queue must record the band's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
+    assert_that(_sg4_band in _sg4_last(_sg4_f),
+                "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
+assert_that('census_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+            "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
+assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
+            "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
 assert_that(True,
             "SHIP GUARD v4 STANDING RULE (Daniel, ABSOLUTE): EVERY ship touches all 23 charter files - band, patch, correction, no exceptions. The v0.367.1 patch-ship-touches-fewer doctrine is REVOKED after v0.369.1 shipped 19/23. Content checks + band-trail + 23/23 coverage, every ship")
 
@@ -12473,6 +12473,65 @@ assert_that('buoyancy' in _l2249['value']['buoyancy_mass_doctrine'] and 'interac
             "PAPER_2249: the BUOYANCY-MASS doctrine - mass as the effective-gravity-to-superconductive-buoyancy proportion between interacting pairs - completes the P2245/P2148 mass-emergent chain")
 assert_that(_l2249['value']['fubii_benchmark_era_N'] == (1.56e36, 6.16e39) and _l2249['value']['census_dispositions'] == 7,
             "PAPER_2249: the FUBii benchmark era values (1.56e36/6.16e39 N) recorded as an era family vs the later wired 6.17e45 (P2170, not reconciled) + 7 folder dispositions - the dated session-folder tree sweep census closes")
+
+
+# ---- PAPER_2250 THE COMPLETE FALSIFIABLE-PREDICTION CENSUS (Daniel GO) ----
+_l2250 = C.DISPATCH['PAPER_2250']()
+assert_that(_l2250['value']['census_rows'] == 48 and _l2250['value']['tiers'] == {'INSTRUMENTAL': 24, 'INTERNAL-EXACT': 3, 'STRUCTURAL': 14, 'LABORATORY': 7},
+            "PAPER_2250: UNIFIED_REGISTRY_PREDICTIONS.csv loaded LIVE - 48 predictions in four tiers (24 instrumental / 7 laboratory / 14 structural / 3 internal-exact) - the corpus's three dispersed prediction layers consolidated into ONE artifact")
+assert_that(_l2250['value']['statuses'] == {'LIVE': 45, 'POSTDICTION': 3},
+            "PAPER_2250: 45 LIVE predictions + 3 converted postdictions (exponent-21 strain, slot-9 quenching, magnetar lobes 2/2) - the A4 prediction-vs-postdiction audit trail preserved in-registry")
+assert_that(_l2250['value']['all_stakes_pass'],
+            "PAPER_2250: four representative exact stakes re-verified in-dispatch - H0 = A_5+SO_5 = 70; gamma_Immirzi = 2K = 19/80; Page = 1 - D_phys*F_TRZ^3*(1+F_TRZ^2) = 24899/25000; Z-boundary = D_crit+SO_5^2 = 126")
+assert_that(_l2250['value']['p2161_battery_preserved'] == 7,
+            "PAPER_2250: PAPER_2161's wired seven-member near-term battery preserved as a tagged subset of the census - nothing invented, every row cites source papers (Rule 7 consolidation method)")
+assert_that(len(_l2250['value']['near_term_ids']) >= 10,
+            "PAPER_2250: >=10 predictions resolve on funded instruments within ~5 years (H0, neutron BR, nu=5/2, kilonova, GW damping, theta_QCD, Sum-m_nu, 40-lens, DUNE-era, HL-LHC) - the framework's near-term exposure is deliberate (A4 discipline)")
+
+
+# ---- PAPER_2251 THE PARADOX-SOLUTION CENSUS (Daniel-directed) ----
+_l2251 = C.DISPATCH['PAPER_2251']()
+assert_that(_l2251['value']['census_rows'] == 1338 and _l2251['value']['domain_count'] == 20,
+            "PAPER_2251: UNIFIED_REGISTRY_PARADOX_CENSUS.csv loaded LIVE - 1,338 tier-2 keys classified into 20 domains (crossdomain 452, cosmology 191, UQFF-identity 182, astro 131, particle 90, tensions 42, quantum foundations 32, ...)")
+assert_that(_l2251['value']['dispatcher_census_frozen_2026_08_21'] == {'total': 1346, 'millennium': 8, 'tier2': 1338, 'distinct_closures': 1129, 'alias_keys': 209},
+            "PAPER_2251: the dispatcher census MEASURED live from the predecessor (Rule E read-only execution) - 1,346 entries = 8 Millennium + 1,338 tier-2, backed by 1,129 distinct closures with 209 deliberate alias keys")
+assert_that(_l2251['value']['combined_surface'] == 2026 and '1800+' in _l2251['value']['reconciliation'],
+            "PAPER_2251: the remembered '1800+ paradox solutions' RECONCILED - measured combined surface = 2,026 (dispatcher 1,346 + this-repo reservoir ~680); measured replaces remembered (Rule 7)")
+assert_that(_l2251['value']['lowercase_violations'] == ['lambda_HHH'] and _l2251['value']['lowercase_rule_1337_of_1338'],
+            "PAPER_2251: INTEGRITY FINDING - lowercase-key rule at 1,337/1,338: lambda_HHH is a LATENT UNREACHABLE key (the CLAUDE.md silent-failure class, 4th instance, discovered by this census) - recorded for the predecessor queue per Rule E, not repaired from this repo")
+assert_that(_l2251['value']['firewall_rung4_check'],
+            "PAPER_2251: spot-check verification - the firewall closure's page recovery 0.99959615 = 1 - D_phys*F_TRZ^4 EXACT (P1095 rung 4) - the PAPER_2238 Millennium linking pass VERIFIED propagated into the paradox layer")
+
+assert_that(_l2251['value']['repair_2026_08_21']['executed'] and '3425/0' in _l2251['value']['repair_2026_08_21']['post_fix'],
+            "PAPER_2251 REPAIR: the lambda_HHH latent key REPAIRED same-day on Daniel's Rule E override - key lowercased (fn name unchanged), backup PRE_LAMBDA_HHH_KEYFIX_BACKUP, all spellings verified reachable, predecessor gate 3,425/0 green; the CSV keeps the as-found census state (found and repaired both documented)")
+
+
+# ---- PAPER_2252 THE RESIDUAL CENSUS (Daniel GO - reviewer triad member 3) ----
+_l2252 = C.DISPATCH['PAPER_2252']()
+assert_that(_l2252['value']['rows_match_live_dispatch'] and _l2252['value']['census_rows'] >= 2302,
+            "PAPER_2252: UNIFIED_REGISTRY_RESIDUALS.csv loaded LIVE with row count == len(DISPATCH) (the regeneration ratchet: any dispatch addition without census regeneration fails this pin - it FIRED on first use when PAPER_2253 was added, and the census was regenerated same-session as designed)")
+assert_that(_l2252['value']['class_distribution'].get('EXACT_OR_CENSUS') >= 1770 and _l2252['value']['class_distribution'].get('OVER_5') == 33,
+            "PAPER_2252: the accuracy population - zero-class 1,770 (EXACT + census, conflation DISCLOSED), precision core 275 (<0.1%), honest-wide tier 33 (>5%), no-field 13 - complete by construction, zero execution errors")
+assert_that(abs(_l2252['value']['median_nonzero_pct'] - 0.0861) < 0.001 and _l2252['value']['frac_sub_1'] >= 0.82,
+            "PAPER_2252: headline statistics - median nonzero residual 0.086%; 53% of nonzero-residual dispatches below 0.1%, 83% below 1% - the route-selection standing rules visible as a population effect")
+assert_that(len(_l2252['value']['honest_tail_disclosed']) == 3,
+            "PAPER_2252: the honest tail is SELF-DOCUMENTING - worst-3 members verified carrying in-formula Rule 7 disclosures (P013 braking-envelope OPEN, P1805 regime-target, P186 undressed first-pass) - disclosed envelope work, not hidden error")
+assert_that('no global significance claim' in _l2252['value']['a7_statement'],
+            "PAPER_2252: the A7 hygiene statement - population complete by construction, NO global significance claimed (honest null model = open methodological task), multiple-comparison exposure symmetric (the 33 as visible as the 275)")
+
+
+# ---- PAPER_2253 THE EXACT-IDENTITY CENSUS (census #2 - the identity lattice) ----
+_l2253 = C.DISPATCH['PAPER_2253']()
+assert_that(_l2253['value']['all_live_pass'] and _l2253['value']['live_checks'] == 52,
+            "PAPER_2253: ALL 52 rational-EXACT identities RE-VERIFIED LIVE in Fraction arithmetic inside the dispatch (zero tolerance) - the identity lattice cannot drift without the public surface failing; the strongest pin the framework has")
+assert_that(_l2253['value']['artifact_rows'] == 53 and _l2253['value']['rational_exact'] == 52 and _l2253['value']['printed_precision_reclass'] == 1,
+            "PAPER_2253: UNIFIED_REGISTRY_EXACT_IDENTITIES.csv - 53 flagships = 52 rational-EXACT + 1 reclassified; 20 families total (19 EXACT-class + printed_precision)")
+assert_that('0.5788' in _l2253['value']['rem_579_finding'] and 'reclassified' in _l2253['value']['rem_579_finding'].lower(),
+            "PAPER_2253: Rule 7 CATCH - the REM composition 0.579 = SSq*Phi_res + F_TRZ evaluates 0.5788 = 1447/2500 (printed-precision only, NOT rational-exact) - reclassified, not massaged; the P1839/P2238 usages remain valid at their stated 3-digit precision")
+assert_that(_l2253['value']['p2252_zero_split'] == {'exact_claiming': 531, 'census_type': 104, 'paper_value_reproduction': 1136},
+            "PAPER_2253: the P2252 zero-conflation RESOLVED (measured live) - 1,770 zeros = 531 EXACT-claiming + 104 census-type + 1,136 paper-value-reproduction; 611 dispatches claim EXACT overall")
+assert_that(_l2253['value']['families'].get('magic') == 7 and _l2253['value']['families'].get('primitive_reduction') == 5,
+            "PAPER_2253: family census - all seven magic numbers in the magic family; the five primitive-reduction landmarks (D_BSFG, K_MEX, kappa, Q_phonon, D_GW) complete; float-exact class (P2108) deliberately excluded from the rational table")
 
 # =============================================================================
 # REPORT

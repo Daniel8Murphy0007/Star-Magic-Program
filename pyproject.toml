@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.391.0"
-description = "Star-Magic UQFF calculator v0.391.0: THE DOCTRINE SHIP. 2,245 dispatches (2,300 keys), gate 5,733/0. PAPER_2247-2249: mid-March mechanism layer (orb-census resolved at source; Creator's Mechanism; 246-TeV obs); MUGE boundary applications (universe diameter 182 Gly; hydrogen-atom MUGE Z=1..126 = D_crit+SO_5^2); THz-hole doctrine (four Ug projections; resonant-shell final parsec; Rule 4 source layer + prove-G mandate; buoyancy-mass doctrine). AP archive censused end-to-end. Next: PAPER_2250."
+version = "0.392.0"
+description = "Star-Magic UQFF calculator v0.392.0: THE CENSUS SHIP. 2,249 dispatches (2,304 keys), gate 5,754/0. The census quartet P2250-2253 + four registry artifacts: 48 falsifiable predictions (4 tiers); the paradox catalog (1,346 dispatcher / 1,129 closures / 20 domains; lambda_HHH latent key found AND repaired, predecessor gate 3,425/0); residuals (2,304 executed / 0 errors / median 0.086%); 52 rational-EXACT identities re-verified per call. Next: PAPER_2254."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

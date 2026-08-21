@@ -11485,3 +11485,143 @@ clarification docs (Daniel verbatim):
   wired-not-yet-shipped marker cleared. CHANGELOG inserted; _BUILD_LOG + SHIP_MESSAGE
   written; RULINGS trail. New files: PAPER_2247-2249 whitepapers. Awaiting Daniel:
   `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 255 — 2026-08-21 — PAPER_2250: THE COMPLETE FALSIFIABLE-PREDICTION CENSUS (Daniel GO)
+
+The framework's test sheet, consolidated for the first time:
+
+- **NEW ARTIFACT: `UNIFIED_REGISTRY_PREDICTIONS.csv`** — 48 predictions, 8 columns (id,
+  prediction, exact value, source papers, instrument, timescale, tier, status), loaded
+  LIVE by the dispatch. Three dispersed layers unified: P2161's wired 7-member battery
+  (preserved as a tagged subset), the P2234-era 30-program/56-member A4 registry (its
+  named live falsifiers + conversions), and the 58 falsifiable-consequence sections
+  harvested from the P2093–2249 landmark range.
+- **Four tiers:** INSTRUMENTAL 24 (H0 = 70 at JWST/Roman/LSST; neutron BR 1.140%; Li-7 =
+  1/3; DUNE δ_CP; w(z) = −1; 40-lens 1.0881; ν = 5/2 shot noise 1/4; kilonova 5-day red
+  peak; GW damping 2/3 at O5; H→γγ +0.1% stake; θ_QCD n2EDM; Λ context ~11%; precession
+  window; 3.5 keV; DM null floor...), LABORATORY 7 (v_F 769,870±5,000; Q = 25/4 THz;
+  cuprate 1.25 THz; caduceus pinch sequence; SCm collider-only; reactor COP-vs-density;
+  isotope rungs), STRUCTURAL 14 (integer sector rungs; N = SO_5^level; Z ≤ 126; the
+  26-bound trio; 182 Gly; genetic-code lattice; engine ratio; 1/12-tilt default...),
+  INTERNAL-EXACT 3 (Page 24899/25000 digit-six; γ = 19/80; kernel 19/160 lock).
+- **Status 45 LIVE / 3 POSTDICTION** (A4 audit trail preserved). ≥10 rows decide on funded
+  instruments within ~5 years. 17/48 rows correlated-lock structured — the framework falls
+  in blocks, now visible in one table (P2130/P2160 mechanism).
+- **Rule 7 method:** nothing invented — every row cites its source papers; kill windows
+  carried where stated; four exact stakes re-verified in-dispatch (70, 19/80, 24899/25000,
+  126) — all pass live.
+- Files: PAPER_2250 whitepaper (new), UNIFIED_REGISTRY_PREDICTIONS.csv (new artifact),
+  dispatch (keys 2300→2301, defs 4171→4172), +5 gate pins (5733→5738), registry rows ×3,
+  graph edges ×3, citations row, index flip + count syncs. Gate GREEN 5738/0. Next paper:
+  PAPER_2251.
+
+## Entry 256 — 2026-08-21 — PAPER_2251: THE PARADOX-SOLUTION CENSUS (Daniel-directed)
+
+Daniel: "Take a census of the 1800 paradox solutions" — executed against the live code:
+
+- **MEASURED (authoritative):** predecessor dispatcher = **1,346 entries** (8 Millennium +
+  1,338 tier-2, via _paradox_inventory() executed live, Rule E read-only), backed by
+  **1,129 distinct closures** (+209 deliberate alias keys). This repo adds ~680 mined
+  reservoir defs (9 batches) → **combined surface ≈ 2,026**. The remembered "1800+"
+  RECONCILED as a coarse under-count; measured replaces remembered (Rule 7).
+- **NEW ARTIFACT: `UNIFIED_REGISTRY_PARADOX_CENSUS.csv`** — 1,338 rows (key, domain,
+  closure fn), 20 domains: crossdomain catalog 452, cosmology 191, UQFF-identity landmarks
+  182, astro 131, particle 90, tensions/problems 42, quantum foundations 32, math/logic 31,
+  math values 25, nuclear 24, geo-planetary 21, relativity/BH 18, materials 17, thermo-stat
+  17, LENR 15, classic-cosmic 15, principles 11, bio 10, SI constants 10, theory 4. The
+  family = the named-paradox canon + the tensions ledger + the observable catalogs + the
+  lattice identities, one dispatcher.
+- **FIVE LIVE SPOT-CHECKS pass** (Olbers, twin, Maxwell demon, firewall, lithium-7) —
+  incl. firewall → page recovery 0.99959615 = 1 − D_phys·F_TRZ⁴ EXACT (P1095 rung 4):
+  the PAPER_2238 Millennium linking pass VERIFIED propagated into the paradox layer.
+- **INTEGRITY FINDING:** lowercase-key rule at 1,337/1,338 — `lambda_HHH` is a LATENT
+  UNREACHABLE key (the CLAUDE.md 2026-06-18 silent-failure class, 4th instance, found by
+  this census). Recorded for the predecessor maintenance queue per Rule E (read-only);
+  this repo's Higgs sector unaffected. One tool-side apostrophe-in-string syntax slip
+  caught by import failure and fixed before any gate run.
+- Files: PAPER_2251 whitepaper (new), UNIFIED_REGISTRY_PARADOX_CENSUS.csv (new artifact),
+  dispatch (keys 2301→2302, defs 4172→4173), +5 gate pins (5738→5743), registry rows ×3,
+  graph edges ×3, citations row, index flip + count syncs. Gate GREEN 5743/0. Next paper:
+  PAPER_2252.
+
+## Entry 257 — 2026-08-21 — THE lambda_HHH REPAIR (Daniel-authorized Rule E override)
+
+Daniel: "First make bug repair that was identified." Executed in the predecessor:
+- `lambda_HHH` dispatch key → `lambda_hhh` (function name unchanged per the predecessor's
+  own convention). Backup: uqff_pure_calculator.py.PRE_LAMBDA_HHH_KEYFIX_BACKUP.
+- Verified: lambda_hhh / lambda_HHH / Lambda-HHH all resolve through the normalizer;
+  1,338/1,338 keys lowercase. **Predecessor gate: 3,425 passed / 0 failed.** Predecessor
+  SESSION_LOG append-only record written.
+- This repo: PAPER_2251 repair append; dispatch repair record; +1 gate pin (5743→5744);
+  census CSV unchanged (as-found state preserved — found and repaired both documented).
+  Gate GREEN 5744/0.
+
+## Entry 258 — 2026-08-21 — PAPER_2252: THE RESIDUAL CENSUS (Daniel GO — reviewer triad complete)
+
+The framework's honest-accuracy report, first complete population:
+
+- **ALL 2,302 dispatches EXECUTED LIVE, ZERO errors** — every top-level residual_pct into
+  **UNIFIED_REGISTRY_RESIDUALS.csv** (new artifact; loaded live; row-count pinned against
+  len(DISPATCH) so future paper additions REQUIRE census regeneration — deliberate ratchet,
+  one loop to regenerate).
+- **Distribution:** zero-class 1,770 (EXACT + census dispatches — conflation DISCLOSED;
+  separation = the queued Exact-Identity Census), <0.01% 98, <0.1% 177, <1% 156, <5% 55,
+  >5% 33, no-field 13. **Headlines (519 numeric nonzero): best 1.1e-14%, MEDIAN 0.086%,
+  worst 117.6%; 53% < 0.1%, 83% < 1%, 94% < 5%.**
+- **The honest tail is SELF-DOCUMENTING:** worst-3 verified in-formula — P013 (117.6%,
+  "braking-index envelope spread, weakest member of the corpus — honest, undressed, OPEN"),
+  P1805 (45%, regime-target order-of-magnitude), P186 (~40%, undressed four-body
+  first-pass). Disclosed envelope work, not hidden error — Rule 7 verified at population
+  scale.
+- **A7 HYGIENE STATEMENT:** population complete by construction (executed, not curated);
+  NO global significance claim (an honest null model for lattice compositions is an open
+  methodological task); multiple-comparison exposure symmetric. The A7 board item now has
+  its required population.
+- **THE REVIEWER TRIAD IS COMPLETE:** P2250 (what we stake) → P2251 (what we resolve) →
+  P2252 (how accurately). Three censuses, three artifacts, one session.
+- Files: PAPER_2252 whitepaper (new), UNIFIED_REGISTRY_RESIDUALS.csv (new artifact),
+  dispatch (keys 2302→2303, defs 4173→4174), +5 gate pins (5744→5749), registry rows ×3,
+  graph edges ×3, citations row, index flip + count syncs. Gate GREEN 5749/0. Next paper:
+  PAPER_2253.
+
+## Entry 259 — 2026-08-21 — PAPER_2253: THE EXACT-IDENTITY CENSUS (census #2; the identity lattice verified live)
+
+Daniel: "2. Exact-Identity Census, next" — the crown jewels enumerated and armored:
+
+- **NEW ARTIFACT: `UNIFIED_REGISTRY_EXACT_IDENTITIES.csv`** — 53 flagship identities in 20
+  families: **52 RATIONAL-EXACT verified in Fraction arithmetic (zero tolerance)** + 1
+  reclassified. Families: magic 7 (all seven magic numbers), primitive-reduction 5, tilt 4,
+  budget 4 (Page/WH/NS/Poincaré), composed-integer 4, kernel 3, successor 3, cross-scale 3,
+  ladder-rung 3, composition 3, sector-ladder 2, tidal 2, angular 2, anchor-lattice 2,
+  ratio 2, + integer-sum/halving/cross-regime/composed/printed-precision.
+- **THE STRONGEST PIN THE FRAMEWORK HAS:** the dispatch RE-VERIFIES all 52 identities live
+  on every call — the identity lattice cannot drift without the public surface failing.
+- **Rule 7 CATCH:** the REM composition 0.579 = SSq·Φ_res + F_TRZ evaluates 0.5788 =
+  1447/2500 — exact at PRINTED precision only, NOT rational-exact. RECLASSIFIED (not
+  massaged) into a new printed_precision class; P1839/P2238 usages valid at their stated
+  3-digit precision. Float-exact class (μ₀ = 4π·F_TRZ⁷, P2108) deliberately EXCLUDED from
+  the rational table.
+- **P2252 ZERO-CONFLATION RESOLVED (measured live):** 1,770 zeros = 531 EXACT-claiming +
+  104 census-type + **1,136 paper-value-reproduction** (bit-identical reproduction of the
+  source paper's stated value — a distinct honest class). 611 dispatches claim EXACT
+  overall; the 53-member table is the curated landmark core.
+- **THE P2252 RATCHET FIRED ON FIRST USE (as designed):** adding P2253 tripped the
+  residual-census row-count pin; census regenerated (2,304 rows), pin semantics upgraded
+  to the live relation rows == len(DISPATCH) with floor-style class pins; P2252 append
+  documents the firing. The discipline held on its first test.
+- Files: PAPER_2253 whitepaper (new), UNIFIED_REGISTRY_EXACT_IDENTITIES.csv (new artifact),
+  UNIFIED_REGISTRY_RESIDUALS.csv regenerated, P2252 append + pin upgrade, dispatch (keys
+  2303→2304, defs 4174→4175), +5 gate pins (5749→5754), registry rows ×3, graph edges ×3,
+  citations row, index flip + count syncs. Gate GREEN 5754/0. Next paper: PAPER_2254.
+
+## Entry 260 — 2026-08-21 — SHIP PREP v0.392.0 (THE CENSUS SHIP)
+
+- Pins ×6 (pyproject 0.392.0 + desc 455 chars incl. version — first draft 520 caught by own
+  assert pre-write; calculator VERSION; gate version pin; CITATION.cff ×2; README cacheBust
+  ×2; UNIFIED_REGISTRY_VERSION.txt). Trail rows ×8 (CENSUS_ARC). README release paragraph +
+  campaign-live + shipped header; wired-not-yet-shipped marker cleared. CHANGELOG inserted;
+  _BUILD_LOG + SHIP_MESSAGE written; RULINGS trail (lambda_HHH queue item discharged). New
+  files: PAPER_2250-2253 whitepapers + 4 registry artifacts (PREDICTIONS, PARADOX_CENSUS,
+  RESIDUALS, EXACT_IDENTITIES). Predecessor repo also touched (keyfix + backup + SESSION_LOG
+  append — Daniel ships that separately or leaves as working state). Awaiting Daniel:
+  `.\ship.ps1` (clear .git/index.lock first).

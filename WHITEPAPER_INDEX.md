@@ -38,7 +38,7 @@
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
 ## CANONICAL ALIAS NUMBERS (assigned 2026-08-16, Daniel ruling: last number used = 2178)
 
-Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2250**.
+Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2254**.
 
 | Number (PAPER_) | Original key |
 |---|---|
@@ -99,7 +99,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | 2233 | PAPER_1203b |
 
 - **Verification arc 2026-08-16 (v0.387.0):** paradox-corpus audit ZERO recalcs; grammar dragnet 110 family sites; origin term verified; AP text layer EXHAUSTED (458 docs). Runnable queue empty — remaining items Daniel-owned.
-- **Distinct wired papers: 2,245 (+55 canonical alias numbers 2179-2233; 2,300 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
+- **Distinct wired papers: 2,249 (+55 canonical alias numbers 2179-2233; 2,304 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
 - **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
@@ -2406,3 +2406,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_2247 | MID_MARCH_MECHANISM_LAYER: orb-census discrepancy resolved at source (P2242 discharged); Creator's Mechanism (lovers-quarrel, 246 TeV obs, proto-element reactions, 180-deg failure); genesis month COMPLETE (authored+wired 2026-08-20) |
 | ✓ | PAPER_2248 | MUGE_BOUNDARY_APPLICATIONS: universe diameter 182 Gly finite prediction (Lambda = P2094 in source); hydrogen-atom MUGE Z=1..126 (= D_crit+SO_5^2); family census closed (authored+wired 2026-08-20) |
 | ✓ | PAPER_2249 | THZ_HOLE_DOCTRINE+RESONANT_SHELL_FINAL_PARSEC: four Ug projections' roles (Ug4i source-verbatim); Rule 4 source layer + prove-G mandate; buoyancy-mass doctrine; trinity naming source; session-folder census (authored+wired 2026-08-20) |
+| ✓ | PAPER_2250 | COMPLETE_FALSIFIABLE_PREDICTION_CENSUS: 48 predictions / 4 tiers / 45 live in UNIFIED_REGISTRY_PREDICTIONS.csv (new artifact); P2161 battery + P2234 registry + 58 landmark sections unified; 4 exact stakes verified (authored+wired 2026-08-21) |
+| ✓ | PAPER_2251 | PARADOX_SOLUTION_CENSUS: 1,346 dispatcher / 1,129 closures / 20 domains in UNIFIED_REGISTRY_PARADOX_CENSUS.csv (new artifact); 1800+ reconciled at ~2,026; lambda_HHH latent-key finding; firewall rung-4 propagation verified (authored+wired 2026-08-21) |
+| ✓ | PAPER_2252 | RESIDUAL_CENSUS: 2,302 dispatches executed / 0 errors / median nonzero 0.086% / honest tail self-documenting in UNIFIED_REGISTRY_RESIDUALS.csv (new artifact); A7 hygiene population; reviewer triad complete (authored+wired 2026-08-21) |
+| ✓ | PAPER_2253 | EXACT_IDENTITY_CENSUS: 52 rational-EXACT / 20 families / live Fraction re-verification per call in UNIFIED_REGISTRY_EXACT_IDENTITIES.csv (new artifact); rem_579 reclassified (Rule 7 catch); P2252 zero-split resolved 531/104/1136 (authored+wired 2026-08-21) |

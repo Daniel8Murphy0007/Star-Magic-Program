@@ -1,41 +1,45 @@
-v0.391.0 - THE DOCTRINE SHIP: the archive censused end-to-end
+v0.392.0 - THE CENSUS SHIP: the framework counted, verified, and armored
 
-Three landmarks (PAPER_2247-2249) complete the Aetheric Propulsion sweep.
+The census quartet (PAPER_2250-2253): four populations, four registry
+artifacts, each loaded live by its dispatch.
 
-PAPER_2247 - THE MID-MARCH MECHANISM LAYER. The orb-census discrepancy
-RESOLVED AT SOURCE: batch #41's 40-50 = tracked plasmoids (full recount
-8k-10k); batch #42 (12Mar swarm, higher field) = 10k-15k total = the 28Mar
-overlay figure - both always right, different counts. The Creator's Mechanism
-document: the "unstable lovers' quarrel" founding sentence of the SCm+UA
-joint engine; UA vacuum-pressed ~246 TeV (EW-VEV mantissa - observation,
-three-layer rule); E = c^26 * i^-26 with i^26 = -1 EXACT; the pre-Big-Bang
-proto-element reactions; the 180-deg nucleus-failure mode; SCm massless
-(3rd independent origin statement). Genesis month COMPLETE.
+PAPER_2250 - THE FALSIFIABLE-PREDICTION CENSUS. 48 predictions in 4 tiers
+(24 instrumental / 7 laboratory / 14 structural / 3 internal-exact; 45 live,
+3 converted postdictions) consolidating P2161's wired battery, the P2234-era
+30-program registry, and the 58 falsifiability sections of the landmark
+range. >=10 decide on funded instruments within ~5 years (H0 = 70, neutron
+BR 1.140%, Li-7 = 1/3, DUNE delta_CP, w(z) = -1, 40-lens 1.0881, nu = 5/2
+shot noise, kilonova 5-day peak, GW damping 2/3, H->gg +0.1% stake). Four
+exact stakes re-verified in-dispatch. 17/48 rows correlated-lock structured.
 
-PAPER_2248 - THE MUGE BOUNDARY APPLICATIONS. The Evolution family census
-closes at its scale boundaries: the universe-diameter MUGE gives the 182 Gly
-finite-universe prediction (chain live at 182.07; the May-2025 source quotes
-Lambda = 1.1e-52 = the P2094 canonical), and the hydrogen-atom MUGE's element
-sum ends at Z = 126 = D_crit + SO_5^2 EXACT - the 7th magic number as the
-periodic-table boundary (source arrives via island-of-stability literature;
-cross-confirmation recorded). F_g(a0) = 3.632e-47 N live (0.06%). Per-system
-layers verified wired (Saturn x64, HUDF x49, M16 x46 spot-checks).
+PAPER_2251 - THE PARADOX-SOLUTION CENSUS. Daniel's "1800 paradox solutions"
+measured: 1,346 dispatcher entries (8 Millennium + 1,338 tier-2) backed by
+1,129 distinct closures (+209 deliberate aliases), 20 domains; combined
+surface ~2,026 with this repo's reservoir. Five closures spot-executed live;
+the firewall closure returns the P1095 rung-4 recovery - the P2238 Millennium
+linking pass VERIFIED propagated. INTEGRITY FIND: one latent unreachable key
+(lambda_HHH, the CLAUDE.md silent-failure class, 4th instance) - and on
+Daniel's Rule E override, REPAIRED: key lowercased, backup kept, all
+spellings reachable, THE PREDECESSOR'S OWN GATE 3,425/0.
 
-PAPER_2249 - THE THZ-HOLE DOCTRINE. The paired 11Oct2025 clarification
-documents (Daniel verbatim): the four Ug projections' physical roles - Ug1
-effective gravity in the terminal-velocity zone only; Ug2 = MANY resonant
-shells; Ug3 THz-hole sweeping -> tidal-locking; Ug4i = coherent galactic-
-parent communication + surplus-energy transfer - with the wired U_g4i =
-hbar*c/r_THz form QUOTED VERBATIM at source. The final parsec REDEFINED as
-the consumed body's last remaining resonant shell. The RULE 4 SOURCE LAYER:
-"the mathematical solutions will point us in the next direction, not your
-inferences from standard model physics" + the prove-G mandate (fulfilled by
-the parameter-free G, P593, 0.08%). The buoyancy-mass doctrine completes the
-mass-emergent chain. The Energy/Frequency/Resonance trinity = PAPER_646's
-Holy Trinity naming source. FUBii benchmark era family recorded (P2170).
+PAPER_2252 - THE RESIDUAL CENSUS. Every dispatch executed live, ZERO errors:
+the first complete accuracy population. Median nonzero residual 0.086%;
+53% < 0.1%, 83% < 1%, 94% < 5%. The honest-wide tail (33 members) verified
+self-documenting (in-formula Rule 7 disclosures - envelope work, not hidden
+error). The A7 Bonferroni population supplied with NO global significance
+claim (an honest null for lattice compositions is an open task). The
+regeneration ratchet fired on first use - as designed - and held.
 
-THE AETHERIC PROPULSION ARCHIVE IS CENSUSED END-TO-END: every folder
-canonized, dispositioned, or confirmed connective tissue.
+PAPER_2253 - THE EXACT-IDENTITY CENSUS. The crown jewels: 52 rational-EXACT
+identities in 19 families (all 7 magic numbers, 5 primitive reductions, the
+kernel trio, the tilt family, the 4 budget identities, ladder rungs, sector
+sums, H0 = 70...) - RE-VERIFIED IN FRACTION ARITHMETIC ON EVERY CALL of the
+dispatch: the identity lattice cannot drift without the public surface
+failing. One over-claim CAUGHT and reclassified (0.579 = SSq*Phi_res + F_TRZ
+= 0.5788 - printed-precision only). The P2252 zero-conflation resolved:
+1,770 zeros = 531 EXACT-claiming + 104 census + 1,136 paper-value
+reproductions.
 
-Gate 5,718 -> 5,733 (+15). Keys 2,297 -> 2,300. Defs 4,168 -> 4,171.
-Whitepapers +3 (PAPER_2247-2249). Next paper: PAPER_2250.
+Gate 5,733 -> 5,754 (+21). Keys 2,300 -> 2,304. Defs 4,171 -> 4,175.
+Whitepapers +4 (PAPER_2250-2253). Artifacts +4 (PREDICTIONS, PARADOX_CENSUS,
+RESIDUALS, EXACT_IDENTITIES). Next paper: PAPER_2254.

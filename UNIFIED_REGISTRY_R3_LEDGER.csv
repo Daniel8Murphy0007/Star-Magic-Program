@@ -230,3 +230,4 @@ v0.388.0,2026-08-16,PAIRCOUNT_ARC,registry +1 graph +7 citations +1 + verdicts 7
 v0.389.0,2026-08-20,BIRTHCERT_ARC,registry +8 graph +14 citations +2 pins +13,gate 5690/0
 v0.390.0,2026-08-20,GENESIS_ARC,registry +17 graph +19 citations +5 pins +28,gate 5718/0
 v0.391.0,2026-08-20,DOCTRINE_ARC,registry +12 graph +13 citations +3 pins +15,gate 5733/0
+v0.392.0,2026-08-21,CENSUS_ARC,registry +13 graph +12 citations +4 pins +21 artifacts +4,gate 5754/0
