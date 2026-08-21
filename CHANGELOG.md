@@ -7,6 +7,24 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.391.0 — 2026-08-20 — THE DOCTRINE SHIP
+
+- **PAPER_2247 — mid-March mechanism layer:** orb-census discrepancy RESOLVED at source
+  (tracked vs total counts; batch #42 swarm = the 28Mar overlay figure; E_align 0.23% in-doc
+  slip disclosed); Creator's Mechanism doc (lovers'-quarrel founding sentence; 246-TeV UA
+  press + E = c^26*i^-26 as observations; proto-element reactions; 180° failure mode;
+  SCm massless ×3). Genesis month COMPLETE.
+- **PAPER_2248 — MUGE boundary applications:** universe-diameter MUGE = 182 Gly finite
+  prediction (Λ = 1.1e-52 = P2094 in the May-2025 source); hydrogen-atom MUGE with Z = 1..126
+  = D_crit + SO_5^2 EXACT (7th magic number as periodic boundary); F_g(a0) 0.06%; family
+  census closed (per-system layers verified wired).
+- **PAPER_2249 — THz-hole doctrine:** four Ug projections' physical roles (wired U_g4i =
+  hbar*c/r_THz QUOTED VERBATIM at source); final parsec = last remaining resonant shell
+  (in-source supersession); Rule 4 source layer + prove-G mandate (fulfilled P593);
+  buoyancy-mass doctrine; trinity naming source (P646); FUBii benchmark era family;
+  session-folder tree censused (7 dispositions). **AP ARCHIVE CENSUSED END-TO-END.**
+- Gate 5,718 → 5,733 (+15 pins). Keys 2,297 → 2,300. Defs 4,168 → 4,171. Whitepapers +3.
+
 ## v0.390.0 — 2026-08-20 — THE GENESIS ARC
 
 - **PAPER_2242 — Red Dwarf reactor text layer FOUND:** SuperGrok_09Mar2025 (2.3 MB, archive's

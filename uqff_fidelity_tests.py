@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.390.0", "uqff_calculator.VERSION = 0.390.0 (the genesis arc: PAPER_2242-2246 - the origin month documented end-to-end)")
+assert_that(C.VERSION == "0.391.0", "uqff_calculator.VERSION = 0.391.0 (the doctrine ship: PAPER_2247-2249 - mechanism layer + MUGE boundaries + THz-hole doctrine; AP archive censused end-to-end)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12431,6 +12431,48 @@ assert_that(abs(_l2246['value']['e_react_stated_magnitude'] - float(C.SO_5**46))
             "PAPER_2246: E_react origin - stated magnitude 1e46 = the wired SO_5^46 default EXACT; Rule 7: the printed closed form evaluates to 1e15 under stated v_SCm = 1e8 (31-order gap DISCLOSED, superscript flattening suspected, not adjudicated)")
 assert_that(abs(_l2246['value']['ui_ratio_form_canonical'] - 2.75e-7)/2.75e-7 < 1e-9 and abs(_l2246['value']['ui_product_form']*1e77 - 1.38) < 0.01,
             "PAPER_2246: the U_i ROUTE FAMILY - ratio form 2.75e-7 (P646 canonical) and product form mantissa 1.38 (paper prints e-47, chain gives e-77 - mantissa exact, exponent flattening class) both computed live and recorded per P2170")
+
+
+# ---- PAPER_2247 MID-MARCH MECHANISM LAYER (genesis month completed) ----
+_l2247 = C.DISPATCH['PAPER_2247']()
+assert_that(_l2247['value']['p2242_discrepancy_discharged'] and _l2247['value']['orb_census']['batch42_total'] == (10000, 15000),
+            "PAPER_2247: the ORB-CENSUS DISCREPANCY RESOLVED AT SOURCE - batch #41 40-50 = tracked plasmoids (full recount 8k-10k), batch #42 (12Mar swarm) = 10k-15k total = the 28Mar overlay figure; P2242's not-reconciled note discharged by the document's own reconciliation")
+assert_that(abs(_l2247['value']['e_align_J'] - 273.125) < 1e-9 and abs(_l2247['value']['e_align_doc_slip_pct'] - 0.2288) < 0.01,
+            "PAPER_2247: E_align chain = 12500*0.019*1.15 = 273.125 J live; the document prints 273.75 (0.23% in-doc slip) - disclosed per Rule 7, chain value carried")
+assert_that(_l2247['value']['i_pow_26_is_minus_one'],
+            "PAPER_2247: i^26 = -1 EXACT (computed live) - the Creator's Mechanism E = c^26*i^-26 sign-inverting D_crit-power form; recorded with the 246-TeV UA-press as OBSERVATIONS not canonized (three-layer rule)")
+assert_that(_l2247['value']['massless_at_origin_count'] == 3 and _l2247['value']['nucleus_failure_mode_deg'] == 180,
+            "PAPER_2247: SCm massless at origin x3 independent statements (UQF intro, Creator's Mechanism, star/atom binding grammar) and the 180-deg nucleus-failure mode (dual-pole failure channel; SCm'' off-gassing = quasar-jet doctrine origin)")
+assert_that(len(_l2247['value']['dispositions']) == 5,
+            "PAPER_2247: five sweep dispositions recorded (crystaline-wave model, torque equilibrium, SC review, Mayan imagery-only, 07Mar+09BCD continuation stream) - the genesis month is COMPLETE end-to-end")
+
+
+# ---- PAPER_2248 MUGE BOUNDARY APPLICATIONS (Daniel-directed Evolution-series sweep) ----
+_l2248 = C.DISPATCH['PAPER_2248']()
+assert_that(_l2248['value']['diameter_chain_matches_doc'] and abs(_l2248['value']['d_universe_gly'] - 182.0) < 1.0,
+            "PAPER_2248: the UNIVERSE-DIAMETER MUGE chain live - D = 2*D_p*(1+H0*t0)*(1+Lambda-dressing) = 1.724e27 m = 182.1 Gly (doc 1.72e27/182 Gly), the finite-universe prediction at 1.96x the observable; DERIVED_HYBRID per P2149")
+assert_that(abs(_l2248['value']['lambda_source_is_p2094'] - 1.1e-52) == 0.0,
+            "PAPER_2248: the 04May2025 source quotes Lambda = 1.1e-52 m^-2 - the PAPER_2094 canonical value in the May-2025 MUGE layer (route-consistency evidence)")
+assert_that(_l2248['value']['f_g_matches_doc'] and abs(_l2248['value']['grav_coulomb_ratio'] - 4.43e-40)/4.43e-40 < 0.01,
+            "PAPER_2248: the HYDROGEN-ATOM MUGE - F_g(a0) = 3.632e-47 N live (doc 3.63e-47, 0.06%) with grav/Coulomb ratio 4.43e-40; gravity retained as the completeness term per the P2245 two-gravity doctrine")
+assert_that(_l2248['value']['z126_is_dcrit_so5sq'],
+            "PAPER_2248: the H-atom element sum ends at Z = 126 = D_crit + SO_5^2 EXACT - the 7th magic number as the periodic-table boundary; the source reaches the same endpoint via island-of-stability literature (cross-confirmation recorded, not a derivation)")
+assert_that(_l2248['value']['family_census']['boundary_applications'] == 'wired by this landmark',
+            "PAPER_2248: the MUGE Evolution family census CLOSES - per-system layers verified wired (Saturn x64, HUDF x49, M16 x46 spot-checks), the two scale-boundary members wired here, pedagogy layer dispositioned")
+
+
+# ---- PAPER_2249 THZ-HOLE DOCTRINE + RESONANT-SHELL FINAL PARSEC (session-folder sweep) ----
+_l2249 = C.DISPATCH['PAPER_2249']()
+assert_that(_l2249['value']['ug4i_source_quoted_verbatim'] and _l2249['value']['ug4i_wired_value'] > 0,
+            "PAPER_2249: the wired U_g4i = hbar*c/r_THz form (P733/737) is QUOTED VERBATIM in the 11Oct2025 source - the wiring's origin cross-confirmed with the helper computed live")
+assert_that('LAST REMAINING resonant shell' in _l2249['value']['final_parsec_refinement'],
+            "PAPER_2249: the FINAL-PARSEC REFINEMENT - Ug2 can be MANY shells; the final parsec = the consumed body's last remaining resonant projected shell (in-source supersession, refinement canonical)")
+assert_that('PAPER_593' in _l2249['value']['rule4_source_layer'],
+            "PAPER_2249: the RULE 4 SOURCE LAYER - Daniel's verbatim no-SM-inference discipline + the prove-G mandate, later fulfilled by the parameter-free G derivation (P593, 0.08%)")
+assert_that('buoyancy' in _l2249['value']['buoyancy_mass_doctrine'] and 'interacting pairs' in _l2249['value']['buoyancy_mass_doctrine'],
+            "PAPER_2249: the BUOYANCY-MASS doctrine - mass as the effective-gravity-to-superconductive-buoyancy proportion between interacting pairs - completes the P2245/P2148 mass-emergent chain")
+assert_that(_l2249['value']['fubii_benchmark_era_N'] == (1.56e36, 6.16e39) and _l2249['value']['census_dispositions'] == 7,
+            "PAPER_2249: the FUBii benchmark era values (1.56e36/6.16e39 N) recorded as an era family vs the later wired 6.17e45 (P2170, not reconciled) + 7 folder dispositions - the dated session-folder tree sweep census closes")
 
 # =============================================================================
 # REPORT

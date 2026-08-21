@@ -139,3 +139,4 @@ VERIFICATION_ARC,audits,4 arcs,RUNNABLE_QUEUE_EMPTY,all remaining items Daniel-o
 PAIRCOUNT_ARC,landmark+closure,1+7,TIER2_CLOSED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / E_pair provenance / reactor sub-single-pair,v0.388.0
 BIRTHCERT_ARC,landmark+landmark,2,PROVENANCE_CLOSED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / f_SCm = F_TRZ^2 reading confirmation (optional),v0.389.0
 GENESIS_ARC,landmark x5,5,ORIGIN_DOCUMENTED,Daniel board now: rounded variants / rare-earth / P047 / renames / deletions / f_SCm reading confirmation,v0.390.0
+DOCTRINE_ARC,landmark x3,3,ARCHIVE_CENSUSED,Daniel board unchanged: rounded variants / rare-earth / P047 / renames / deletions / f_SCm reading,v0.391.0

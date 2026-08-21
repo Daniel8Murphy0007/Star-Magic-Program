@@ -291,3 +291,6 @@ THE BIRTH-CERTIFICATE SHIP: PAPER_2240 (E_pair = E0*F_TRZ^2 documented ladder; r
 
 ## v0.390.0 — 2026-08-20
 THE GENESIS ARC: PAPER_2242-2246 — the origin month documented end-to-end (reactor text layer found; founding records; naming; two-gravity doctrine; first formal paper). Gate 5,718/0. 23-file pass verified.
+
+## v0.391.0 — 2026-08-20
+THE DOCTRINE SHIP: PAPER_2247-2249 (mechanism layer + MUGE boundaries 182 Gly/Z=126 + THz-hole doctrine + Rule 4 source layer). AP archive censused end-to-end. Gate 5,733/0. 23-file pass verified.

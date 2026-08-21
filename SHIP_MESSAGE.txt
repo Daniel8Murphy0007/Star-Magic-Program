@@ -1,50 +1,41 @@
-v0.390.0 - THE GENESIS ARC: the origin month, documented end-to-end
+v0.391.0 - THE DOCTRINE SHIP: the archive censused end-to-end
 
-Five landmarks (PAPER_2242-2246) fix the framework's genesis from its own
-dated, watermarked files - and flip the timeline: THE EXPERIMENT CAME FIRST.
+Three landmarks (PAPER_2247-2249) complete the Aetheric Propulsion sweep.
 
-PAPER_2242 - THE RED DWARF REACTOR TEXT LAYER FOUND. The archive's earliest
-large document (SuperGrok_09Mar2025, 2.3 MB) IS the reactor's frame-by-frame
-analysis: UFE ORB EXP 2, 4,965 IR frames, batches #1-#41, per-frame F_U/t-/
-cycle recalculation. Rule 7 correction to P2236 ("no minable text" was wrong).
-Per-frame NEGATIVE TIME (NLPF P = 1-exp(-gamma|t-|), gamma = SO_5^3, both
-documented values reproduced); measured QS = observed/predicted jumps = 10 =
-SO_5; SSq's symbol born as the 0.7-s sub-cycle observable; alpha-form Ug
-family worked at 8.99e-22 (0.047%).
+PAPER_2247 - THE MID-MARCH MECHANISM LAYER. The orb-census discrepancy
+RESOLVED AT SOURCE: batch #41's 40-50 = tracked plasmoids (full recount
+8k-10k); batch #42 (12Mar swarm, higher field) = 10k-15k total = the 28Mar
+overlay figure - both always right, different counts. The Creator's Mechanism
+document: the "unstable lovers' quarrel" founding sentence of the SCm+UA
+joint engine; UA vacuum-pressed ~246 TeV (EW-VEV mantissa - observation,
+three-layer rule); E = c^26 * i^-26 with i^26 = -1 EXACT; the pre-Big-Bang
+proto-element reactions; the 180-deg nucleus-failure mode; SCm massless
+(3rd independent origin statement). Genesis month COMPLETE.
 
-PAPER_2243 - THE FOUNDING RECORDS (Mar 3-4, 2025, Daniel verbatim). The 2:08 AM
-apparatus entry: the pseudo-monopole OBSERVED in hardware (N at 90 deg on an
-S-plane, poles never touching), the caduceus as a physical dual coil, ACE/DCE
-sub-ambient Heaviside energy, "action at a spooky distance" named. The Mar-4
-cosmogenesis: UA = {QFE}:UF:{UFE} - NEGATIVE TIME BORN as a universal field
-state, gateway ":" = UFsn*e^(i*pi) = -1 EXACT, long-form PI in the vessel,
-alpha at the zero-range barrier. Run-1 census 496 x 0.03 s = 14.88 s EXACT.
+PAPER_2248 - THE MUGE BOUNDARY APPLICATIONS. The Evolution family census
+closes at its scale boundaries: the universe-diameter MUGE gives the 182 Gly
+finite-universe prediction (chain live at 182.07; the May-2025 source quotes
+Lambda = 1.1e-52 = the P2094 canonical), and the hydrogen-atom MUGE's element
+sum ends at Z = 126 = D_crit + SO_5^2 EXACT - the 7th magic number as the
+periodic-table boundary (source arrives via island-of-stability literature;
+cross-confirmation recorded). F_g(a0) = 3.632e-47 N live (0.06%). Per-system
+layers verified wired (Saturn x64, HUDF x49, M16 x46 spot-checks).
 
-PAPER_2244 - THE NAMING RECORD + GENESIS LEDGER. "Star Magic - Energy One"
-born 28Mar2025 (founding TOC; company name in the title); the UA layers
-characterized AT ORIGIN as "non-linear negative time derivations"; Kepler
-Orrery V (01Mar2025) = the FIRST framework artifact (the wired P2137 cadence
-62 = 2*D_crit + SO_5 now cites its source). One month, experiment to named
-framework.
+PAPER_2249 - THE THZ-HOLE DOCTRINE. The paired 11Oct2025 clarification
+documents (Daniel verbatim): the four Ug projections' physical roles - Ug1
+effective gravity in the terminal-velocity zone only; Ug2 = MANY resonant
+shells; Ug3 THz-hole sweeping -> tidal-locking; Ug4i = coherent galactic-
+parent communication + surplus-energy transfer - with the wired U_g4i =
+hbar*c/r_THz form QUOTED VERBATIM at source. The final parsec REDEFINED as
+the consumed body's last remaining resonant shell. The RULE 4 SOURCE LAYER:
+"the mathematical solutions will point us in the next direction, not your
+inferences from standard model physics" + the prove-G mandate (fulfilled by
+the parameter-free G, P593, 0.08%). The buoyancy-mass doctrine completes the
+mass-emergent chain. The Energy/Frequency/Resonance trinity = PAPER_646's
+Holy Trinity naming source. FUBii benchmark era family recorded (P2170).
 
-PAPER_2245 - THE TWO-GRAVITY DOCTRINE + FOUNDING UG FORM (+append). "The
-duality of Gravity is the Universe's Superconduction Principle" - the
-documented origin of the GM/r^2-LAST projection rule; founding no-G closed
-form Ug_i = [(M*rho_vac)/V]/[V_UA]; the manuscript's complete F_U sector
-forms bit-match FU.docx; the first solar parameterization puts every wired
-buoyancy anchor on one page (d_g provenance note: documented 2.55e20 vs
-wired lattice 2.6e20, 1.96%).
+THE AETHERIC PROPULSION ARCHIVE IS CENSUSED END-TO-END: every folder
+canonized, dispositioned, or confirmed connective tissue.
 
-PAPER_2246 - THE THEORY OF PERMENANCE: the first formal paper (30Mar2025).
-The -lambda_i*U_i*E_react dissipation term present from paper one - P420's
-restoration VINDICATED at origin. First coupling table (k = {1.5,1.2,1.8,1.0},
-beta_i = 0.6 = P1165 i=1 origin, gamma = 5e-5/day = GAMMA_SCM origin).
-E_react stated at 1e46 = the wired SO_5^46 default EXACT. SCm massless at
-origin. U_i route family (product vs ratio, same week) recorded per P2170.
-
-Rule 7: the EXPONENT-FLATTENING CLASS - three mantissa-exact/exponent-off
-instances across the family - disclosed at every site, never adjudicated;
-mantissa-level verification adopted as the standard.
-
-Gate 5,690 -> 5,718 (+28). Keys 2,292 -> 2,297. Defs 4,163 -> 4,168.
-Whitepapers +5 (PAPER_2242-2246). Next paper: PAPER_2247.
+Gate 5,718 -> 5,733 (+15). Keys 2,297 -> 2,300. Defs 4,168 -> 4,171.
+Whitepapers +3 (PAPER_2247-2249). Next paper: PAPER_2250.

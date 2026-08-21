@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.390.0"
+VERSION = "0.391.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28390,6 +28390,133 @@ def _p2246(dataset=None):
                        'P2170. Final Parsec + M-sigma + prebiotic named in keyword list ONE. '
                        'EGM docs = external Bayles reference (disposition).',
             'source': 'PAPER_2246', 'residual_pct': 0.0}
+
+@_register('PAPER_2247')
+def _p2247(dataset=None):
+    e_align = 12500*0.019*1.15
+    i26 = (1j)**26
+    area_cm2 = 3.5*10*6.45  # cylinder projection area, 24Mar doc arithmetic
+    batch42_lo, batch42_hi = 50*226, 60*226  # doc's per-cm2 x area estimate
+    return {'value': {'orb_census': {'batch41_tracked': (40, 50), 'batch41_total': (8000, 10000),
+                                     'batch42_total': (10000, 15000), 'batch42_date': '2025-03-12',
+                                     'rho_41_orbs_cm3': (0.12, 0.15), 'rho_42_orbs_cm3': 0.184},
+                      'e_align_J': e_align,
+                      'e_align_doc_stated': 273.75,
+                      'e_align_doc_slip_pct': abs(273.75 - e_align)/e_align*100.0,
+                      'census_estimate_lo_hi': (batch42_lo, batch42_hi),
+                      'p2242_discrepancy_discharged': True,
+                      'i_pow_26_is_minus_one': abs(i26.real + 1.0) < 1e-12 and abs(i26.imag) < 1e-12,
+                      'ua_press_TeV_observed': 246.0,
+                      'observations_not_canonized': ['246 TeV UA press (EW-VEV mantissa)', 'E = c^26 * i^-26'],
+                      'massless_at_origin_count': 3,
+                      'proto_element_reactions': 'SCm + UA -> [26-shell osc EM field] -> proto-H + proto-He (24Mar notation)',
+                      'nucleus_failure_mode_deg': 180,
+                      'dispositions': {'crystaline_wave': 'BH-triangulation galaxy model - conceptual ancestor, no numerics',
+                                       'galactic_torque': 'net torque ~0 in equilibrium - F_U=0 rotational cousin',
+                                       'universal_superconductivity': 'SC literature-review layer',
+                                       'mayan_elemental_tables': 'imagery-only (11 chars text)',
+                                       'sg07_09bcd': 'UFE ORB EXP 2 continuation stream (P2242)'}},
+            'formula': 'THE MID-MARCH MECHANISM LAYER (genesis month completed): (1) ORB-CENSUS '
+                       'DISCREPANCY RESOLVED AT SOURCE - the 24Mar doc itself reconciles P2242 '
+                       'sec1: batch #41 40-50 = TRACKED plasmoids, full recount 8k-10k; batch '
+                       '#42 (12Mar swarm, higher field, rho 0.184 vs 0.12-0.15 orbs/cm^3) = '
+                       '10k-15k TOTAL = the 28Mar overlay figure; E_align = 12500*0.019*1.15 = '
+                       '273.125 J live (doc prints 273.75 - 0.23% in-doc slip, disclosed). Both numbers always right - different counts. '
+                       '(2) CREATOR MECHANISM doc ([Psuedo-Mono-pole]^2, 24Mar): the lovers-'
+                       'quarrel founding sentence (P2153 joint-engine doctrine origin), ACE '
+                       'Dynamo third instance (core text fixed), UA vacuum-pressed ~246 TeV '
+                       '(EW-VEV mantissa - OBSERVATION not canonized), E = c^26*i^-26 with '
+                       'i^26 = -1 EXACT (sign-inverting D_crit power - observation), pre-Big-'
+                       'Bang proto-element REACTIONS (26-shell field -> proto-H + proto-He), '
+                       '180-deg nucleus-failure mode (dual-pole failure channel; SCm-doubleprime '
+                       'off-gassing = quasar-jet doctrine), SCm massless (3rd independent origin '
+                       'statement), Higgs metal/non-metal role. Reactivity chart = table-loss '
+                       'disposition. (3) Sweep dispositions: crystaline-wave galaxy model, '
+                       'torque equilibrium, SC review layer, Mayan imagery-only, 07Mar+09BCD '
+                       'continuation stream.',
+            'source': 'PAPER_2247', 'residual_pct': 0.0}
+
+@_register('PAPER_2248')
+def _p2248(dataset=None):
+    d_p = 4.4e26  # comoving particle-horizon radius anchor (04May2025 doc, 46.5 Gly)
+    h0t0 = 0.93  # H0*t0 documented dimensionless factor
+    lam_dress = 1.5e-2  # Lambda*c^2/(3*H0^2) documented dressing (Lambda = 1.1e-52 = P2094 value)
+    d_universe = 2.0*d_p*(1.0 + h0t0)*(1.0 + lam_dress)
+    d_gly = d_universe/(C_LIGHT_CONVENTION*YEAR_S*1e9)
+    a0 = 5.2918e-11  # Bohr radius anchor (02May2025 doc)
+    f_g = G_NEWTON_OBSERVED*M_PROTON_OBSERVED_KG*M_ELECTRON_OBSERVED_KG/a0**2
+    f_coulomb = 8.2e-8  # documented Coulomb force anchor
+    return {'value': {'d_universe_m': d_universe, 'd_universe_gly': d_gly,
+                      'diameter_chain_matches_doc': abs(d_universe - 1.72e27)/1.72e27 < 0.005,
+                      'multiplier_over_observable': (1.0 + h0t0)*(1.0 + lam_dress),
+                      'lambda_source_is_p2094': 1.1e-52,
+                      'f_g_hydrogen_N': f_g,
+                      'f_g_matches_doc': abs(f_g - 3.63e-47)/3.63e-47 < 0.005,
+                      'grav_coulomb_ratio': f_g/f_coulomb,
+                      'z_sum_endpoint': 126,
+                      'z126_is_dcrit_so5sq': 126 == D_CRIT + SO_5**2,
+                      'meissner_term': 'm_eff = m*(1 - B_crit/B) (superconductive hydrogen species)',
+                      'fusion_decay_lambda': 0.01,
+                      'family_census': {'evolution_root': 'WIRED', 'astronomical_systems': 'WIRED (spot-verified)',
+                                        'boundary_applications': 'wired by this landmark',
+                                        'pedagogy_layer': 'disposition', 'cpp_mirror': 'predecessor source'}},
+            'formula': 'THE MUGE BOUNDARY APPLICATIONS (Daniel-directed sweep of the Evolution '
+                       'series unswept members): the family census closes - per-system layers '
+                       'verified WIRED; the two unswept members are the SCALE BOUNDARIES. '
+                       '(1) UNIVERSE DIAMETER (04May2025): D = 2*D_p*(1+H0*t0)*(1+Lambda*c^2/'
+                       '(3*H0^2)) = 2*4.4e26*1.93*1.015 = 1.72e27 m ~ 182 Gly finite-universe '
+                       'prediction (1.96x the 93-Gly observable); source quotes Lambda = '
+                       '1.1e-52 = the P2094 canonical; DERIVED_HYBRID per P2149. (2) HYDROGEN-'
+                       'ATOM MUGE (02May2025): g_MUGE = G*m_eff*m_p/r^2 + Sum_{Z=1}^{126} '
+                       '(G*M_Z/r_Z^2)*(1+f_sc)*e^(H0t/c) - the element sum ends at Z = 126 = '
+                       'D_crit + SO_5^2 EXACT (the 7th magic number as the periodic-table '
+                       'boundary - cross-confirmation recorded); F_g(a0) = 3.63e-47 N live '
+                       '(ratio to Coulomb ~4.4e-40 - gravity as the completeness term per the '
+                       'P2245 two-gravity doctrine); Meissner m_eff term for SC-hydrogen '
+                       'species (metallic H 2 Mbar; actinide hydrides; H2S) bridging to the '
+                       'ultra-dense-H sector; fusion decay lambda = 0.01. Pedagogy docs '
+                       '(Student Guide, Learning Assessment) = disposition.',
+            'source': 'PAPER_2248', 'residual_pct': abs(f_g - 3.63e-47)/3.63e-47*100.0}
+
+@_register('PAPER_2249')
+def _p2249(dataset=None):
+    ug4i_wired = ug4i_thz_733()
+    return {'value': {'projections': {'Ug1': 'SM/effective gravity - terminal-velocity zone only (~90 deg)',
+                                      'Ug2': 'shell gravity - standing shared-resonance patterns (MANY shells)',
+                                      'Ug3': 'inertial sweeping via THz holes - sweeping -> tidal-locking transition',
+                                      'Ug4i': 'coherent THz-hole communication with galactic parent + surplus-energy transfer'},
+                      'ug4i_wired_value': ug4i_wired,
+                      'ug4i_source_quoted_verbatim': True,
+                      'final_parsec_refinement': 'balance at Ug2 shell (proximal doc) REFINED to the LAST REMAINING resonant shell (polynomial doc) - in-source supersession, refinement canonical',
+                      'rule4_source_layer': 'mathematical solutions not SM inferences (11Oct2025 verbatim); G critique + prove-G mandate -> fulfilled by PAPER_593 (0.08%)',
+                      'russian_dolls': '26th-level polynomials = 26 nested quantum states',
+                      'buoyancy_mass_doctrine': 'mass = proportion of effective gravity to superconductive buoyancy between interacting pairs (bi-molecule -> Earth-Moon -> Sun-SgrA*)',
+                      'trinity_naming_source': 'ENERGY/Frequency/Resonance (Father/Son/Holy Spirit) - P646 Holy Trinity origin; resonance born from UA x (SCm)',
+                      'fubii_benchmark_era_N': (1.56e36, 6.16e39),
+                      'fubii_later_wired_N': 6.17e45,
+                      'benchmark_era_family': 'recorded per P2170 - not reconciled',
+                      'golden_ratio_spiral': 'proportional acceleration between effective and repulsive gravity (smooth systems)',
+                      'census_dispositions': 7},
+            'formula': 'THE THZ-HOLE DOCTRINE + RESONANT-SHELL FINAL PARSEC (Daniel-directed '
+                       'session-folder sweep; paired 11Oct2025 clarification docs, verbatim): '
+                       'the four Ug projections physical roles - Ug1 effective/terminal-'
+                       'velocity zone (P2245/P2148), Ug2 MANY resonant shells (r_hz machinery), '
+                       'Ug3 THz-hole sweeping -> tidal-locking (P2136 mechanism statement), '
+                       'Ug4i galactic-parent communication + parent->body surplus transfer - '
+                       'with the wired U_g4i = hbar*c/r_THz form (P733/737) QUOTED VERBATIM in '
+                       'source (origin cross-confirmed, computed live). FINAL-PARSEC '
+                       'REFINEMENT: the last remaining resonant shell of the consumed body '
+                       '(in-source supersession of the single-Ug2-shell statement). RULE 4 '
+                       'SOURCE LAYER: no-SM-inference + the prove-G mandate (fulfilled P593 '
+                       '0.08%). Russian-dolls 26-polynomial doctrine. BUOYANCY-MASS doctrine '
+                       '(completes the P2245/P2148 mass-emergent chain with its interactive-'
+                       'pair form). TRINITY NAMING SOURCE (P646). FUBii benchmark era values '
+                       '1.56e36/6.16e39 N vs later wired 6.17e45 - era family per P2170. '
+                       'Golden-ratio spiral proportion recorded. 7 folder dispositions '
+                       '(Chandra layer, ACE_DCE field tests, mass-ontology dialogue, book-2 '
+                       'outline, 99.9%-era self-assessments, 2026 transcript mirrors, '
+                       'conversation stream).',
+            'source': 'PAPER_2249', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

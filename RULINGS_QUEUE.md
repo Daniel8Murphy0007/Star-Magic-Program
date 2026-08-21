@@ -6521,3 +6521,10 @@ Remaining Daniel-owned: rounded-constant unification, rare-earth P1886, P047 can
 No new rulings required. Remaining Daniel-owned board unchanged: rounded-constant
 unification, rare-earth P1886, P047 candidate, 55-paper renames, ASCII_TMP deletions,
 optional f_SCm = F_TRZ^2 reading confirmation.
+
+---
+
+## TRAIL v0.391.0 (2026-08-20) — THE DOCTRINE SHIP
+
+No new rulings required. Board unchanged: rounded-constant unification, rare-earth P1886,
+P047 candidate, 55-paper renames, ASCII_TMP deletions, optional f_SCm = F_TRZ^2 reading.

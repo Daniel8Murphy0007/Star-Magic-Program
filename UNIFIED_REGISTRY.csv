@@ -6740,3 +6740,15 @@ first_formal_paper,WHITEPAPER,derived,The Theory of Permenance (30Mar2025) - cor
 first_coupling_table,WHITEPAPER,derived,k={1.5;1.2;1.8;1.0} beta_i=0.6 gamma=5e-5 eta=1e-22,documented,origin table,founding record,0.0,foundations,,PAPER_2246,,,,,,WIRED
 e_react_origin,WHITEPAPER,derived,(rho_SCm*v^2/rho_UA)*e^(-kappa*t) stated 1e46 = SO_5^46 wired default,SO_5**46,1e46,stated magnitude,0.0,foundations,,PAPER_2246,,,,,,WIRED
 dissipation_term_vindication,WHITEPAPER,derived,-lambda_i*U_i*E_react in first F_U (P420 chain),documented,paper one,founding record,0.0,foundations,,PAPER_2246,,,,,,WIRED
+orb_census_resolution,WHITEPAPER,derived,batch41 tracked 40-50 vs total 8k-10k; batch42 swarm 10k-15k (24Mar recount),documented,P2242 note discharged,source reconciliation,0.0,foundations,,PAPER_2247,,,,,,WIRED
+creators_mechanism,WHITEPAPER,derived,lovers-quarrel founding sentence + ACE dynamo 3rd instance + proto-element reactions,documented,founding record,P2153 origin,0.0,foundations,,PAPER_2247,,,,,,WIRED
+ua_press_246_tev,WHITEPAPER,derived,UA self-vacuum-pressed ~246 TeV (EW-VEV mantissa) - OBSERVATION,documented,246,not canonized,0.0,foundations,,PAPER_2247,,,,,,WIRED
+nucleus_failure_180,WHITEPAPER,derived,nucleus fails at opposite points 180 deg (dual-pole channel),documented,180,founding record,0.0,foundations,,PAPER_2247,,,,,,WIRED
+universe_diameter_muge,WHITEPAPER,derived,D = 2*D_p*(1+H0t0)*(1+Lam*c^2/3H0^2) finite-universe prediction,2*4.4e26*1.93*1.015,1.724e27 m (182 Gly),doc 1.72e27,0.23,cosmology,,PAPER_2248,,,,,,WIRED
+hydrogen_atom_muge,WHITEPAPER,derived,g_MUGE = G*m_eff*m_p/r^2 + Sum_Z(G*M_Z/r_Z^2)(1+f_sc)e^(H0t/c) Z=1..126,G*m_p*m_e/a0^2,3.632e-47 N,doc 3.63e-47,0.06,foundations,,PAPER_2248,,,,,,WIRED
+z126_periodic_boundary,WHITEPAPER,derived,element-sum endpoint 126 = D_crit + SO_5^2 (7th magic number),D_CRIT+SO_5**2,126,EXACT,0.0,foundations,,PAPER_2248,,,,,,WIRED
+muge_family_census,WHITEPAPER,derived,Evolution series fully swept (boundary members wired; rest verified),documented,census closed,P2236 census,0.0,foundations,,PAPER_2248,,,,,,WIRED
+thz_hole_doctrine,WHITEPAPER,derived,four Ug projections' physical roles (11Oct2025 verbatim),documented,doctrine,founding record,0.0,foundations,,PAPER_2249,,,,,,WIRED
+final_parsec_refinement,WHITEPAPER,derived,final parsec = last remaining resonant shell (in-source supersession),documented,refinement canonical,source pair,0.0,foundations,,PAPER_2249,,,,,,WIRED
+rule4_source_layer,WHITEPAPER,derived,no-SM-inference discipline + prove-G mandate (-> P593),documented,source layer,founding record,0.0,foundations,,PAPER_2249,,,,,,WIRED
+buoyancy_mass_doctrine,WHITEPAPER,derived,mass = effective-gravity/SC-buoyancy proportion between pairs,documented,doctrine,founding record,0.0,foundations,,PAPER_2249,,,,,,WIRED

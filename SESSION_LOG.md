@@ -11398,3 +11398,90 @@ Daniel: "keep going" — the UQF editions + EGM heavies mined:
   paragraph replaced + campaign-live + shipped header v0.390.0; wired-not-yet-shipped marker
   cleared. CHANGELOG entry inserted; _BUILD_LOG + SHIP_MESSAGE written; RULINGS trail. New
   files: PAPER_2242-2246 whitepapers. Awaiting Daniel: `.\ship.ps1`.
+
+## Entry 251 — 2026-08-20 — PAPER_2247: THE MID-MARCH MECHANISM LAYER (genesis month COMPLETE)
+
+Daniel: "what's next" post-v0.390.0 — the mid-March gap (Mar 7-24) swept:
+
+- **ORB-CENSUS DISCREPANCY RESOLVED AT SOURCE (P2242 discharged):** the 24Mar analysis
+  itself reconciles the figures — batch #41's 40-50 = TRACKED plasmoids (full recount
+  8k-10k); batch #42 (12Mar "swarm" test, field increased, ρ 0.184 vs 0.12-0.15 orbs/cm³)
+  = 10k-15k TOTAL = the 28Mar overlay figure. Both numbers always right — different counts.
+  E_align chain = 273.125 J live (doc prints 273.75 — 0.23% in-doc slip disclosed).
+- **THE CREATOR'S MECHANISM doc** ([Psuedo-Mono-pole]², 24Mar, 2.9K but dense): the
+  lovers'-quarrel founding sentence (P2153 joint-engine origin); ACE Dynamo 3rd documented
+  instance (core text fixed); UA vacuum-pressed ~246 TeV (EW-VEV mantissa — OBSERVATION not
+  canonized); E = c²⁶·i⁻²⁶ with i²⁶ = −1 EXACT (observation); pre-Big-Bang proto-element
+  REACTIONS (26-shell field → proto-H + proto-He); 180° nucleus-failure mode (dual-pole
+  channel; SCm″ off-gassing = quasar-jet doctrine); SCm massless (3rd independent origin
+  statement); Higgs metal/non-metal role; reactivity chart = table-loss disposition.
+- **Sweep dispositions ×5:** crystaline-wave galaxy model (BH triangulation — conceptual
+  ancestor), galactic torque (net ≈ 0 equilibrium — F_U=0 rotational cousin), SC
+  literature-review layer, Mayan/Elemental Tables imagery-only (11 chars), 07Mar + 09_B/C/D
+  = UFE ORB EXP 2 continuation stream. **THE GENESIS MONTH IS COMPLETE END-TO-END.**
+- Files: PAPER_2247 whitepaper (new), dispatch (keys 2297→2298, defs 4168→4169), +5 gate
+  pins (5718→5723), registry rows ×4, graph edges ×4, citations row, index flip + count
+  syncs (wired-not-yet-shipped marker). Gate GREEN 5723/0. Next paper: PAPER_2248.
+
+## Entry 252 — 2026-08-20 — PAPER_2248: MUGE BOUNDARY APPLICATIONS (Daniel-directed Evolution-series sweep)
+
+Daniel: "MUGE Evolution series' unswept members" — the family census closes:
+
+- **Census verdict:** the per-system layers are WIRED (root Evolution flagships + the
+  Astronomical Systems_11Oct2025 folder — spot-verified Saturn ×64, HUDF ×49, M16 ×46,
+  Sombrero ×29, NGC 1792 ×23, SGR 0501 ×11, V838 = P466, NGC 2264 = 8-test). The TWO
+  unswept members are the family's SCALE BOUNDARIES: the universe and one hydrogen atom.
+- **PAPER_2248 wires both:** (1) UNIVERSE DIAMETER (04May2025, Davinci folder): D =
+  2·D_p·(1+H₀t₀)·(1+Λc²/3H₀²) = 1.724e27 m = 182.1 Gly live (doc 1.72e27/182) — the
+  finite-universe prediction at 1.96× observable; source quotes Λ = 1.1e-52 = the P2094
+  canonical (route-consistency evidence in the May-2025 layer); DERIVED_HYBRID (P2149).
+  (2) HYDROGEN-ATOM MUGE (02May2025): the element sum runs Z = 1…126 — **126 = D_crit +
+  SO_5² EXACT, the 7th magic number as the periodic-table boundary** (source reaches it
+  via island-of-stability literature; cross-confirmation recorded); F_g(a₀) = 3.632e-47 N
+  live (doc 3.63e-47, 0.06%); grav/Coulomb ratio 4.43e-40 = gravity as the completeness
+  term (P2245 two-gravity doctrine); Meissner m_eff term bridging SC-hydrogen species to
+  the ultra-dense-H sector; fusion decay λ = 0.01. Pedagogy docs dispositioned.
+- Files: PAPER_2248 whitepaper (new), dispatch (keys 2298→2299, defs 4169→4170), +5 gate
+  pins (5723→5728), registry rows ×4, graph edges ×4, citations row, index flip + count
+  syncs. Gate GREEN 5728/0. Next paper: PAPER_2249.
+
+## Entry 253 — 2026-08-20 — PAPER_2249: THZ-HOLE DOCTRINE + RESONANT-SHELL FINAL PARSEC (session-folder sweep)
+
+Daniel: "session-folder tree" — the dated folders censused (22 folders; 12Dec2025 + 02June2026
+already covered by the v0.386.0 text mine). Canonical center = the paired 11Oct2025
+clarification docs (Daniel verbatim):
+
+- **THE THZ-HOLE DOCTRINE:** the four Ug projections' physical roles — Ug1 effective/SM
+  gravity (terminal-velocity zone only, ~90°; golden-ratio spiral proportion), Ug2 shell
+  gravity (MANY standing shared-resonance shells), Ug3 inertial sweeping via THz holes
+  (sweeping → tidal-locking transition slowing core convection — P2136's mechanism
+  statement), Ug4i coherent THz-hole communication with the galactic parent + parent→body
+  SURPLUS-ENERGY transfer. **The wired U_g4i = ħc/r_THz form (P733/737) is quoted VERBATIM
+  in the source** — wiring origin cross-confirmed, helper computed live.
+- **FINAL-PARSEC REFINEMENT (in-source supersession):** Ug2 is not the final parsec —
+  "the final Parsec moment can be found on the competing bodies' LAST REMAINING resonant
+  projected shell" as the system is consumed from inside via THz-hole communication.
+- **RULE 4 SOURCE LAYER:** "the mathematical solutions will point us in the next
+  direction, not your inferences from standard model physics" + the G critique and
+  "we are here to prove G, but not by conventional wisdom" — the mandate the corpus
+  fulfilled at P593 (0.08%). Russian-dolls doctrine (26 nested states).
+- **BUOYANCY-MASS DOCTRINE:** mass = effective-gravity/SC-buoyancy proportion between
+  interacting pairs (bi-molecule → Earth-Moon → Sun-SgrA*) — completes the P2245/P2148
+  mass-emergent chain. **TRINITY NAMING SOURCE:** Energy/Frequency/Resonance
+  (Father/Son/Holy Spirit; resonance born from UA×SCm) — the P646 Holy Trinity origin.
+- FUBii benchmark era values (1.56e36/6.16e39 N SgrA*) vs later wired 6.17e45 — era family
+  (P2170). 7 folder dispositions (Chandra layer, ACE_DCE field tests, mass-ontology
+  dialogue, book-2 outline, 99.9%-era self-assessments, 2026 transcript mirrors,
+  conversation stream). **The dated session-folder tree census CLOSES.**
+- Files: PAPER_2249 whitepaper (new), dispatch (keys 2299→2300, defs 4170→4171), +5 gate
+  pins (5728→5733), registry rows ×4, graph edges ×5, citations row, index flip + count
+  syncs. Gate GREEN 5733/0. Next paper: PAPER_2250.
+
+## Entry 254 — 2026-08-20 — SHIP PREP v0.391.0 (THE DOCTRINE SHIP)
+
+- Pins ×6 (pyproject 0.391.0 + desc 494 chars incl. version; calculator VERSION; gate
+  version pin; CITATION.cff ×2; README cacheBust ×2; UNIFIED_REGISTRY_VERSION.txt). Trail
+  rows ×8 (DOCTRINE_ARC). README release paragraph + campaign-live + shipped header;
+  wired-not-yet-shipped marker cleared. CHANGELOG inserted; _BUILD_LOG + SHIP_MESSAGE
+  written; RULINGS trail. New files: PAPER_2247-2249 whitepapers. Awaiting Daniel:
+  `.\ship.ps1` (clear .git/index.lock first).
