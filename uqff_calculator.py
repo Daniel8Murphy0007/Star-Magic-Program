@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.392.0"
+VERSION = "0.393.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28522,8 +28522,8 @@ def _p2249(dataset=None):
 def _p2250(dataset=None):
     import csv, os
     rows = []
-    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'UNIFIED_REGISTRY_PREDICTIONS.csv')
-    if os.path.exists(p):
+    p = _find_registry_artifact('UNIFIED_REGISTRY_PREDICTIONS.csv')
+    if p:
         with open(p, encoding='utf-8', newline='') as f:
             rows = list(csv.DictReader(f))
     tiers, statuses = {}, {}
@@ -28568,8 +28568,8 @@ def _p2250(dataset=None):
 def _p2251(dataset=None):
     import csv, os
     rows = []
-    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'UNIFIED_REGISTRY_PARADOX_CENSUS.csv')
-    if os.path.exists(p):
+    p = _find_registry_artifact('UNIFIED_REGISTRY_PARADOX_CENSUS.csv')
+    if p:
         with open(p, encoding='utf-8', newline='') as f:
             rows = list(csv.DictReader(f))
     domains = {}
@@ -28621,8 +28621,8 @@ def _p2251(dataset=None):
 def _p2252(dataset=None):
     import csv, os, statistics
     rows = []
-    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'UNIFIED_REGISTRY_RESIDUALS.csv')
-    if os.path.exists(p):
+    p = _find_registry_artifact('UNIFIED_REGISTRY_RESIDUALS.csv')
+    if p:
         with open(p, encoding='utf-8', newline='') as f:
             rows = list(csv.DictReader(f))
     dist = {}
@@ -28703,8 +28703,8 @@ def _p2253(dataset=None):
     ]
     live_verified = sum(1 for c in checks if c)
     rows = []
-    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'UNIFIED_REGISTRY_EXACT_IDENTITIES.csv')
-    if os.path.exists(p):
+    p = _find_registry_artifact('UNIFIED_REGISTRY_EXACT_IDENTITIES.csv')
+    if p:
         with open(p, encoding='utf-8', newline='') as f:
             rows = list(csv.DictReader(f))
     fams = {}
@@ -28738,6 +28738,122 @@ def _p2253(dataset=None):
                        'correlated-lock structure. Float-exact class (mu_0 = 4pi*F_TRZ^7, '
                        'P2108) deliberately EXCLUDED from the rational table, not blurred in.',
             'source': 'PAPER_2253', 'residual_pct': 0.0}
+
+@_register('PAPER_2254')
+def _p2254(dataset=None):
+    import csv, os, sys
+    rows = []
+    p = _find_registry_artifact('UNIFIED_REGISTRY_ANCHORS.csv')
+    if p:
+        with open(p, encoding='utf-8', newline='') as f:
+            rows = list(csv.DictReader(f))
+    mod = sys.modules[__name__]
+    exists, value_ok, missing = 0, 0, []
+    for r in rows:
+        if hasattr(mod, r['name']):
+            exists += 1
+            try:
+                if abs(getattr(mod, r['name']) - float(r['value'])) <= 1e-9*abs(float(r['value'])):
+                    value_ok += 1
+            except (TypeError, ValueError):
+                pass
+        else:
+            missing.append(r['name'])
+    cls = {}
+    for r in rows: cls[r['class']] = cls.get(r['class'], 0) + 1
+    total_uses = sum(int(r['uses']) for r in rows)
+    external = cls.get('OBSERVED', 0) + cls.get('SI_DEFINED', 0) + cls.get('ASTRO_CONVENTION', 0)
+    return {'value': {'named_anchors': len(rows), 'total_uses': total_uses,
+                      'classes': cls, 'external_value_surface': external,
+                      'live_exists': exists, 'live_value_ok': value_ok, 'missing': missing,
+                      'anchor_layer_drift_free': exists == len(rows) and value_ok == len(rows),
+                      'board_item_population': {'names': ['C_OBSERVED_R4', 'MPC_TO_M_R4', 'M_SUN_OBSERVED_R3'], 'combined_uses': 49},
+                      'uqff_derived_relabeled': ['H0_SI_PAPER_R5', 'GAMMA_SCM_PER_DAY', 'YM_GAP_GEV', 'Q_WAVE_STD_J_M3'],
+                      'inline_anchor_sites': 239,
+                      'artifact': 'UNIFIED_REGISTRY_ANCHORS.csv'},
+            'formula': 'THE ANCHOR CENSUS (census #3 - the Hybrid-Form disclosure ledger '
+                       'completed): all 33 named constants enumerated, use-counted (981 uses), '
+                       'classified into 8 classes, and VERIFIED LIVE (each name introspected '
+                       'from the module with its recorded value - a drift-catch on the anchor '
+                       'layer itself). PARSIMONY STATEMENT: the named external-value surface is '
+                       '17 constants (10 OBSERVED measurements + 4 SI-DEFINED exact-by-'
+                       'definition + 3 ASTRO conventions); the rest = 7 unit definitions, 3 '
+                       'precision-variant twins (THE BOARD ITEM population, 49 uses: C_R4/'
+                       'MPC_R4/M_SUN_R3), 1 sec-6.2 convention (3e8; C_UQFF_DERIVED spotlighted '
+                       'first per Daniel ruling), 4 UQFF_DERIVED values RELABELED (H0_SI = the '
+                       'P1573 identity in SI; YM_GAP P1318; GAMMA_SCM = kappa*F_TRZ P2246; '
+                       'Q_WAVE P337 - framework outputs, NOT anchors), 1 primitive-float '
+                       '(D_CRIT_F, 233 uses). Three ambient-impression corrections: SI-2019 '
+                       'made hbar/h/k_B/e definitions not measurements; four named values are '
+                       'framework outputs; the rounded-constant ruling has a MEASURED scope. '
+                       'Per-anchor hybrid_role column completes P2149 as auditable bookkeeping. '
+                       'Inline event-anchor layer counted (239 tagged sites), per-paper by '
+                       'design. The census DESCRIBES; the pending board ruling DECIDES.',
+            'source': 'PAPER_2254', 'residual_pct': 0.0}
+
+def _find_registry_artifact(name):
+    import os, sys
+    cands = [os.path.join(os.path.dirname(os.path.abspath(__file__)), name),
+             os.path.join(os.getcwd(), name),
+             os.path.join(sys.prefix, 'share', 'star-magic-program', name),
+             os.path.join(sys.prefix, 'local', 'share', 'star-magic-program', name)]
+    for c in cands:
+        if os.path.exists(c):
+            return c
+    return None
+
+@_register('PAPER_2255')
+def _p2255(dataset=None):
+    import csv, os, re
+    rows = []
+    p = _find_registry_artifact('UNIFIED_REGISTRY_OPEN_ITEMS.csv')
+    if p:
+        with open(p, encoding='utf-8', newline='') as f:
+            rows = list(csv.DictReader(f))
+    cls, owners = {}, {}
+    for r in rows:
+        cls[r['class']] = cls.get(r['class'], 0) + 1
+        owners[r['owner']] = owners.get(r['owner'], 0) + 1
+    n_open, n_route = 0, 0
+    for key, fn in DISPATCH.items():
+        if key == 'PAPER_2255': continue
+        try:
+            f = fn(None).get('formula', '')
+        except Exception:
+            continue
+        if re.search(r'\bOPEN\b', f): n_open += 1
+        if 'not reconciled' in f or 'route family' in f.lower(): n_route += 1
+    return {'value': {'ledger_rows': len(rows), 'classes': cls, 'owners': owners,
+                      'daniel_board_items': cls.get('DANIEL_RULING', 0),
+                      'live_open_dispatches': n_open,
+                      'live_route_family_dispatches': n_route,
+                      'open_tracking_band_ok': 25 <= n_open <= 45,
+                      'route_tracking_band_ok': 12 <= n_route <= 30,
+                      'deliberate_vs_open_distinguished': cls.get('DELIBERATE', 0) == 1,
+                      'census_series': ['P2250 predictions', 'P2251 paradoxes', 'P2252 residuals',
+                                        'P2253 identities', 'P2254 anchors', 'P2255 open items'],
+                      'artifact': 'UNIFIED_REGISTRY_OPEN_ITEMS.csv'},
+            'formula': 'THE OPEN-ITEMS CENSUS (census #6 - the series CLOSES): the honest '
+                       'what-is-NOT-done sheet. UNIFIED_REGISTRY_OPEN_ITEMS.csv - 20 ledger '
+                       'rows in 10 classes with owners and statuses, backed by a LIVE formula-'
+                       'marker scan RE-RUN ON EVERY CALL (OPEN and route-family counts '
+                       'measured, not remembered - drift against the ledger is visible). '
+                       'Measured at authoring: 29 in-formula OPEN dispatches (P013 braking '
+                       'envelope the widest - nothing hides), 15 route-family records (P2170 '
+                       'doctrine - plural BY DESIGN), 4 not-canonized observation sets (three-'
+                       'layer rule), 3 PENDING (one already discharged by P2240). Ledger: 6 '
+                       'DANIEL_RULING board items (rounded constants with scope MEASURED 3/49; '
+                       'rare-earth; P047; renames; deletions; f_SCm reading) + 3 FORENSIC + 2 '
+                       'METHODOLOGICAL (the A7 honest-null-model chief among them - the census '
+                       'series own loose ends are IN the ledger, the sheet audits itself) + 2 '
+                       'DERIVATION_TARGET + 2 HYGIENE + route/observation/provenance rows + 1 '
+                       'DELIBERATE (the anchored trio - underived BY DOCTRINE as falsification '
+                       'instruments; not-done vs not-to-be-done DISTINGUISHED) + 1 EXTERNAL '
+                       '(45 live predictions cross-ref P2250, not duplicated). THE CENSUS '
+                       'SERIES IS COMPLETE: six questions, six artifacts, all live-loaded - '
+                       'stakes / resolutions / accuracy / exactness / imports / debts, '
+                       'auditable from six tables without reading a line of prose.',
+            'source': 'PAPER_2255', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

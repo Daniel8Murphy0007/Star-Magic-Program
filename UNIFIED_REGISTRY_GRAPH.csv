@@ -12228,3 +12228,9 @@ honest_tail_33,PAPER_2252,VERIFIES,RULE_7,population-scale disclosure audit pass
 exact_identity_census,PAPER_2253,RESOLVES,PAPER_2252,the zero-residual conflation (3-way split measured)
 exact_identity_census,PAPER_2253,VERIFIES,IDENTITY_LATTICE,52 rational identities live per call
 rem_579_reclassification,PAPER_2253,CORRECTS,PAPER_1839,the 0.579 composition's precision class
+anchor_census,PAPER_2254,COMPLETES,PAPER_2149,the Hybrid-Form doctrine as auditable per-anchor bookkeeping
+external_value_surface,PAPER_2254,GROUNDS,PARSIMONY,17 named external values total
+board_population_measured,PAPER_2254,SCOPES,ROUNDED_CONSTANT_RULING,the pending board item's measured population
+open_items_census,PAPER_2255,CLOSES,CENSUS_SERIES,the sixth and final census
+open_items_census,PAPER_2255,LEDGERS,RULINGS_QUEUE,the Daniel board in-artifact
+open_dispatch_population,PAPER_2255,TRACKS,PAPER_2170,route families plural by doctrine

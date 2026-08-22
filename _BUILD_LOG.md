@@ -297,3 +297,6 @@ THE DOCTRINE SHIP: PAPER_2247-2249 (mechanism layer + MUGE boundaries 182 Gly/Z=
 
 ## v0.392.0 — 2026-08-21
 THE CENSUS SHIP: P2250-2253 (predictions 48/4-tier; paradoxes 1,346/20-domain + lambda_HHH repair; residuals 2,304/0-err median 0.086%; identities 52 rational-EXACT live per call). Four new artifacts. Gate 5,754/0. 23-file pass verified.
+
+## v0.393.0 — 2026-08-21
+THE LEDGER SHIP: P2254 anchors (17 external) + P2255 open items (census series COMPLETE) + quickstart notebook (current API, smoke-executed) + census-artifact packaging fix. Gate 5,768/0. 23-file pass verified.

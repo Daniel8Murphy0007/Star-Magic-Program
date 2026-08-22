@@ -146,3 +146,4 @@ sector_ladder_family,p2241,FAMILY_RECORD,integer-multiplier family: rho_sector =
 exponent_flattening_class,p2245_p2246,FAMILY_RECORD,three mantissa-exact/exponent-off instances (E_react 1e46-vs-1e15; manuscript mu_s/Ug2; U_i 1.38e-47-vs-1.38e-77) - disclosed never adjudicated; mantissa-level verification standard,v0.390.0
 fubii_benchmark_era_family,p2249,FAMILY_RECORD,F_LENR SgrA* era values 1.56e36/6.16e39 N (Jun2025) vs wired 6.17e45 (session layer) - recorded per P2170 not reconciled,v0.391.0
 census_artifact_family,p2250_p2253,FAMILY_RECORD,four live-loaded registry artifacts (PREDICTIONS 48; PARADOX_CENSUS 1338; RESIDUALS live-tracked; EXACT_IDENTITIES 53) each pinned to its dispatch,v0.392.0
+census_series_family,p2250_p2255,FAMILY_RECORD,six live-loaded artifacts complete (PREDICTIONS 48 / PARADOX 1338 / RESIDUALS live / IDENTITIES 53 / ANCHORS 33 / OPEN_ITEMS 22) - all in data-files with multi-location loading,v0.393.0

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.392.0", "uqff_calculator.VERSION = 0.392.0 (the census ship: P2250-2253 - predictions/paradoxes/residuals/identities + four artifacts + the lambda_HHH repair)")
+assert_that(C.VERSION == "0.393.0", "uqff_calculator.VERSION = 0.393.0 (the ledger ship: P2254-2255 close the census series + the quickstart notebook + the packaging fix)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'CENSUS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'LEDGER_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('census_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('ledger_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12532,6 +12532,49 @@ assert_that(_l2253['value']['p2252_zero_split'] == {'exact_claiming': 531, 'cens
             "PAPER_2253: the P2252 zero-conflation RESOLVED (measured live) - 1,770 zeros = 531 EXACT-claiming + 104 census-type + 1,136 paper-value-reproduction; 611 dispatches claim EXACT overall")
 assert_that(_l2253['value']['families'].get('magic') == 7 and _l2253['value']['families'].get('primitive_reduction') == 5,
             "PAPER_2253: family census - all seven magic numbers in the magic family; the five primitive-reduction landmarks (D_BSFG, K_MEX, kappa, Q_phonon, D_GW) complete; float-exact class (P2108) deliberately excluded from the rational table")
+
+
+# ---- PAPER_2254 THE ANCHOR CENSUS (census #3 - Hybrid-Form ledger completed) ----
+_l2254 = C.DISPATCH['PAPER_2254']()
+assert_that(_l2254['value']['named_anchors'] == 33 and _l2254['value']['total_uses'] >= 980,
+            "PAPER_2254: UNIFIED_REGISTRY_ANCHORS.csv - all 33 named constants enumerated with 981 combined uses, classified into 8 classes; the complete named-anchor disclosure in one artifact")
+assert_that(_l2254['value']['anchor_layer_drift_free'] and _l2254['value']['missing'] == [],
+            "PAPER_2254: the anchor layer VERIFIED LIVE - every named constant introspected from the module with its recorded value (a standing drift-catch on the anchor layer itself; any rename or revaluation without census regeneration fails here)")
+assert_that(_l2254['value']['external_value_surface'] == 17,
+            "PAPER_2254: the PARSIMONY STATEMENT - the named external-value surface is 17 constants (10 OBSERVED + 4 SI-DEFINED + 3 ASTRO conventions); everything else named is a definition, a twin, a convention, the framework's own output, or a primitive-float")
+assert_that(_l2254['value']['board_item_population']['combined_uses'] == 49 and len(_l2254['value']['uqff_derived_relabeled']) == 4,
+            "PAPER_2254: the rounded-constant BOARD ITEM has a measured scope (3 named twins, 49 uses) and 4 named values are RELABELED UQFF_DERIVED (H0_SI/GAMMA_SCM/YM_GAP/Q_WAVE - framework outputs, not anchors) so no future audit mistakes outputs for inputs")
+assert_that(_l2254['value']['inline_anchor_sites'] == 239,
+            "PAPER_2254: the per-paper event-anchor layer counted - 239 inline anchor-tagged sites (charter anchor rule: paper-specific anchors as literals WITH source comments); enumeration per-paper by design, named-census scope disclosed honestly")
+
+
+# ---- PAPER_2255 THE OPEN-ITEMS CENSUS (census #6 - the series closes) ----
+_l2255 = C.DISPATCH['PAPER_2255']()
+assert_that(_l2255['value']['ledger_rows'] == 22 and len(_l2255['value']['classes']) == 10,
+            "PAPER_2255: UNIFIED_REGISTRY_OPEN_ITEMS.csv - the honest what-is-NOT-done sheet: 22 ledger rows in 10 classes (20 at authoring + 2 FIXED_SAME_SESSION rows: the notebook gap and the artifact-packaging gap - the ledger's first live updates, found and fixed the same day); the sheet audits itself")
+assert_that(_l2255['value']['daniel_board_items'] == 6,
+            "PAPER_2255: the Daniel board complete in-ledger - 6 AWAITING_RULING items (rounded constants with MEASURED scope 3 twins/49 uses, rare-earth P1886, P047 candidate, 55 renames, ASCII_TMP deletions, optional f_SCm reading)")
+assert_that(_l2255['value']['open_tracking_band_ok'] and _l2255['value']['route_tracking_band_ok'],
+            "PAPER_2255: the LIVE formula-marker scan re-runs on every call - OPEN dispatches (29 at authoring) and route-family records (15 at authoring) measured within tracking bands; new OPEN flags or silent discharges surface as drift")
+assert_that(_l2255['value']['deliberate_vs_open_distinguished'],
+            "PAPER_2255: not-done vs not-to-be-done DISTINGUISHED - the anchored trio (964/1047 ANCHORED_CLASSICAL + 1177 ANCHORED_METHODOLOGY) is underived BY DOCTRINE as falsification instruments; standing, not owed")
+assert_that(len(_l2255['value']['census_series']) == 6,
+            "PAPER_2255: THE CENSUS SERIES IS COMPLETE - six questions, six live-loaded artifacts (stakes/resolutions/accuracy/exactness/imports/debts): the framework auditable from six tables without reading a line of prose")
+
+
+# ---- QUICKSTART NOTEBOOK + ARTIFACT PACKAGING (2026-08-21, Daniel GO) ----
+import os as _nb_os
+assert_that(_nb_os.path.exists('notebooks/00_quickstart.ipynb'),
+            "NOTEBOOK: notebooks/00_quickstart.ipynb exists - the current-API 5-minute quickstart (flagships + six census artifacts + the 52-identity live-verification finale), smoke-executed clean at authoring")
+_nb_txt = open('notebooks/00_quickstart.ipynb', encoding='utf-8').read()
+assert_that('import uqff_calculator' in _nb_txt and 'uqff_pure_calculator' not in _nb_txt.replace('predecessor repo use the old `uqff_pure_calculator`', ''),
+            "NOTEBOOK: written against the CURRENT API (uqff_calculator/DISPATCH) - the predecessor API appears only in the frozen-reference note, never as an import")
+_pyproj = open('pyproject.toml', encoding='utf-8').read()
+for _art in ('UNIFIED_REGISTRY_PREDICTIONS.csv', 'UNIFIED_REGISTRY_PARADOX_CENSUS.csv', 'UNIFIED_REGISTRY_RESIDUALS.csv', 'UNIFIED_REGISTRY_EXACT_IDENTITIES.csv', 'UNIFIED_REGISTRY_ANCHORS.csv', 'UNIFIED_REGISTRY_OPEN_ITEMS.csv', 'notebooks/00_quickstart.ipynb'):
+    assert_that(_art in _pyproj,
+                "PACKAGING: %s registered in pyproject data-files - the v0.392.0 miss (census CSVs unshipped; pip installs would load empty) FIXED with the _find_registry_artifact multi-location loader" % _art)
+assert_that('_find_registry_artifact' in open('uqff_calculator.py', encoding='utf-8').read(),
+            "PACKAGING: the six census dispatches load via _find_registry_artifact (module dir -> cwd -> sys.prefix share paths) - pip-installed users get live artifacts, not empty tables")
 
 # =============================================================================
 # REPORT

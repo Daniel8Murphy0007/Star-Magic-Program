@@ -1719,3 +1719,4 @@ BIRTHCERT_ARC,n/a,n/a,NOT_APPLICABLE,provenance+ladder single-geometry,v0.389.0
 GENESIS_ARC,n/a,n/a,NOT_APPLICABLE,provenance arc single-geometry,v0.390.0
 DOCTRINE_ARC,n/a,n/a,NOT_APPLICABLE,doctrine+census single-geometry,v0.391.0
 CENSUS_ARC,n/a,n/a,NOT_APPLICABLE,census consolidation single-geometry,v0.392.0
+LEDGER_ARC,n/a,n/a,NOT_APPLICABLE,census+packaging single-geometry,v0.393.0

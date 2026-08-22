@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.392.0"
-description = "Star-Magic UQFF calculator v0.392.0: THE CENSUS SHIP. 2,249 dispatches (2,304 keys), gate 5,754/0. The census quartet P2250-2253 + four registry artifacts: 48 falsifiable predictions (4 tiers); the paradox catalog (1,346 dispatcher / 1,129 closures / 20 domains; lambda_HHH latent key found AND repaired, predecessor gate 3,425/0); residuals (2,304 executed / 0 errors / median 0.086%); 52 rational-EXACT identities re-verified per call. Next: PAPER_2254."
+version = "0.393.0"
+description = "Star-Magic UQFF calculator v0.393.0: THE LEDGER SHIP. 2,251 dispatches (2,306 keys), gate 5,768/0. The census series COMPLETE (P2250-2255, six live-loaded artifacts): predictions 48 / paradoxes 1,338 / residuals live / identities 52 rational-EXACT per call / anchors 33 (17 external) / open items 22. NEW: notebooks/00_quickstart.ipynb (current-API tour, smoke-executed) + _find_registry_artifact packaging fix (pip users get live census tables). Next: PAPER_2256."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -91,4 +91,11 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "UNIFIED_REGISTRY_XGEO_EXTRACTED.csv",
     "UNIFIED_REGISTRY_FALSIFIABILITY.md",
     "UNIFIED_REGISTRY_RESULTS_TABLE.md",
+    "UNIFIED_REGISTRY_PREDICTIONS.csv",
+    "UNIFIED_REGISTRY_PARADOX_CENSUS.csv",
+    "UNIFIED_REGISTRY_RESIDUALS.csv",
+    "UNIFIED_REGISTRY_EXACT_IDENTITIES.csv",
+    "UNIFIED_REGISTRY_ANCHORS.csv",
+    "UNIFIED_REGISTRY_OPEN_ITEMS.csv",
+    "notebooks/00_quickstart.ipynb",
 ]

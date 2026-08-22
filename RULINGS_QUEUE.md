@@ -6537,3 +6537,11 @@ lambda_HHH repair executed (Daniel Rule E override) — predecessor queue item D
 Board unchanged otherwise: rounded-constant unification, rare-earth P1886, P047 candidate,
 55-paper renames, ASCII_TMP deletions, optional f_SCm = F_TRZ^2 reading. Census candidates
 remaining: the anchor census, the open-items census.
+
+---
+
+## TRAIL v0.393.0 (2026-08-21) — THE LEDGER SHIP
+
+No new rulings. Board unchanged (6 items; rounded-constant scope now measured: 3 twins/49
+uses per P2254). The open-items ledger recorded and closed its own first two entries
+(notebook gap; packaging gap) same-session.

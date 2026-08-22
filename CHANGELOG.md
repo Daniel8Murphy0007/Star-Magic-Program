@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.393.0 — 2026-08-21 — THE LEDGER SHIP
+
+- **PAPER_2254 — anchor census:** 33 named constants / 981 uses / 8 classes / live
+  introspection drift-catch in UNIFIED_REGISTRY_ANCHORS.csv; parsimony: only 17 named
+  external values (10 observed + 4 SI-defined + 3 astro); 4 relabeled UQFF_DERIVED;
+  rounded-constant ruling scope measured (3 twins/49 uses); P2149 ledger complete.
+- **PAPER_2255 — open-items census:** 22 ledger rows / 10 classes in
+  UNIFIED_REGISTRY_OPEN_ITEMS.csv with live marker scan per call (29 OPEN, 15 route
+  families); not-done vs not-to-be-done distinguished; THE CENSUS SERIES COMPLETE
+  (six questions, six live artifacts).
+- **notebooks/00_quickstart.ipynb (NEW):** current-API 5-minute tour — flagships, the six
+  censuses, the 52-identity live-verification finale; every code cell smoke-executed clean;
+  registered in data-files. (Predecessor's 16 notebooks remain frozen old-API reference.)
+- **Packaging fix (v0.392.0 miss, disclosed):** the six census CSVs added to data-files +
+  _find_registry_artifact multi-location loader — pip installs now load live census tables.
+- SHIP GUARD v4.1 arc marker advanced (CENSUS_ARC → LEDGER_ARC per its standing note).
+- Gate 5,754 → 5,768 (+14 pins incl. notebook/packaging guards). Keys 2,304 → 2,306.
+  Defs 4,175 → 4,178. Whitepapers +2. Artifacts +2 (ANCHORS, OPEN_ITEMS) + the notebook.
+
 ## v0.392.0 — 2026-08-21 — THE CENSUS SHIP
 
 - **PAPER_2250 — falsifiable-prediction census:** 48 predictions / 4 tiers / 45 live in

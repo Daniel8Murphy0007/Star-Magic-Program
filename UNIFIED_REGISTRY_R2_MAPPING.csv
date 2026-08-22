@@ -263,3 +263,4 @@ BIRTHCERT_ARC,LANDMARK,PAPER_2240 + PAPER_2241 dispatches + P2239/P2236 appends,
 GENESIS_ARC,LANDMARK,PAPER_2242-2246 dispatches + P2236 correction append + P2245 append,5 landmarks + 2 appends,v0.390.0
 DOCTRINE_ARC,LANDMARK,PAPER_2247-2249 dispatches,3 landmarks,v0.391.0
 CENSUS_ARC,LANDMARK,P2250-2253 dispatches + predecessor keyfix,4 landmarks + 1 repair,v0.392.0
+LEDGER_ARC,LANDMARK,P2254-2255 dispatches + notebook + _find_registry_artifact,2 landmarks + 2 fixes,v0.393.0

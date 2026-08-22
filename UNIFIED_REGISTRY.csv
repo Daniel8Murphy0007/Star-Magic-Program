@@ -6764,3 +6764,10 @@ honest_tail_33,WHITEPAPER,derived,>5% tier all in-formula Rule 7 disclosed (wors
 exact_identity_census,WHITEPAPER,derived,53 flagships / 52 rational-EXACT / 20 families / live re-verification per call,Fraction arithmetic,52/52,zero tolerance,0.0,foundations,,PAPER_2253,,,,,,WIRED
 rem_579_reclassification,WHITEPAPER,derived,SSq*0.84+F_TRZ = 0.5788 (1447/2500) printed-precision only,census catch,reclassified,Rule 7,0.035,foundations,,PAPER_2253,,,,,,WIRED
 zero_split_resolution,WHITEPAPER,derived,1770 zeros = 531 EXACT-claiming + 104 census + 1136 paper-value,live measurement,3-way split,P2252 resolved,0.0,foundations,,PAPER_2253,,,,,,WIRED
+anchor_census,WHITEPAPER,derived,33 named / 981 uses / 8 classes / live introspection drift-catch,live census,33,complete,0.0,foundations,,PAPER_2254,,,,,,WIRED
+external_value_surface,WHITEPAPER,derived,17 external constants (10 observed + 4 SI-defined + 3 astro),census,17,parsimony,0.0,foundations,,PAPER_2254,,,,,,WIRED
+uqff_derived_relabel,WHITEPAPER,derived,4 named values relabeled framework-outputs (H0_SI/GAMMA/YM/QWAVE),census,4,not anchors,0.0,foundations,,PAPER_2254,,,,,,WIRED
+board_population_measured,WHITEPAPER,derived,rounded-constant ruling scope = 3 twins / 49 uses,census,3,board item,0.0,foundations,,PAPER_2254,,,,,,WIRED
+open_items_census,WHITEPAPER,derived,20 ledger rows / 10 classes / live marker scan per call,live census,20,complete,0.0,foundations,,PAPER_2255,,,,,,WIRED
+open_dispatch_population,WHITEPAPER,derived,29 in-formula OPEN dispatches (nothing hides),live scan,29,measured,0.0,foundations,,PAPER_2255,,,,,,WIRED
+census_series_complete,WHITEPAPER,derived,six censuses / six artifacts (stakes/resolutions/accuracy/exactness/imports/debts),P2250-2255,6,series closed,0.0,foundations,,PAPER_2255,,,,,,WIRED

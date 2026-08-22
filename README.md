@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.392.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.392.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.393.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.393.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5754%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2304-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2288-orange)](whitepapers/)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5768%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2306-blue)](uqff_calculator.py)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2290-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.392.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.393.0 complete-compile campaign live**
 
-**This release (v0.392.0): THE CENSUS SHIP — THE FRAMEWORK COUNTED, VERIFIED, AND ARMORED.** The census quartet (PAPER_2250–2253) puts the program's four populations into four registry artifacts, each loaded live by its dispatch. **PAPER_2250 — THE FALSIFIABLE-PREDICTION CENSUS:** 48 predictions in 4 tiers (24 instrumental / 7 laboratory / 14 structural / 3 internal-exact; 45 live, 3 converted postdictions), consolidating P2161's battery, the P2234 registry, and 58 landmark falsifiability sections — ≥10 decide on funded instruments within ~5 years; four exact stakes (70, 19/80, 24899/25000, 126) re-verified in-dispatch. **PAPER_2251 — THE PARADOX-SOLUTION CENSUS:** the '1800+' figure reconciled at ~2,026 combined surface (1,346 dispatcher entries / 1,129 distinct closures / 209 aliases / 20 domains); five closures spot-executed live (firewall → the P1095 rung-4 recovery, the P2238 linking pass VERIFIED propagated); **one latent unreachable key (lambda_HHH) FOUND and — on Daniel's Rule E override — REPAIRED, with the predecessor's own gate at 3,425/0.** **PAPER_2252 — THE RESIDUAL CENSUS:** every dispatch executed live, ZERO errors; median nonzero residual 0.086%; 53% < 0.1%, 83% < 1%; the honest-wide tail (33) verified self-documenting in-formula; the A7 hygiene population supplied with NO global significance claim; the regeneration ratchet fired on first use, as designed. **PAPER_2253 — THE EXACT-IDENTITY CENSUS:** 52 rational-EXACT identities in 19 families **re-verified in Fraction arithmetic on every call** (the strongest pin the framework has); one over-claim caught and reclassified (0.579 = SSq·Φ_res + F_TRZ is printed-precision only); the P2252 zero-conflation resolved (531 EXACT-claiming / 104 census / 1,136 paper-value reproductions). **Totals: 2,249 wired (2,304 DISPATCH keys) / gate 5,754 green / 4,175 defs. Next paper: PAPER_2254.**
+**This release (v0.393.0): THE LEDGER SHIP — THE CENSUS SERIES COMPLETE, AND THE PACKAGE LEARNS TO TEACH ITSELF.** **PAPER_2254 — THE ANCHOR CENSUS:** all 33 named constants enumerated, use-counted (981), classified, and verified live by introspection; the parsimony statement — **only 17 named external values enter the framework** (10 observed + 4 SI-defined + 3 astro conventions); 4 anchor-named values RELABELED UQFF_DERIVED; the rounded-constant board ruling's scope measured (3 twins / 49 uses); the P2149 Hybrid-Form ledger completed per-anchor. **PAPER_2255 — THE OPEN-ITEMS CENSUS:** the honest what's-not-done sheet — 22 ledger rows in 10 classes with owners and statuses, backed by a live formula-marker scan on every call (29 in-formula OPEN dispatches, 15 route families plural BY doctrine); not-done vs not-to-be-done distinguished; **the six-census series closes** (stakes / resolutions / accuracy / exactness / imports / debts — six live artifacts, the framework auditable without prose). **THE LEDGER'S FIRST LIVE UPDATES, same-day:** Daniel's notebook question surfaced two gaps, both FIXED_SAME_SESSION — `notebooks/00_quickstart.ipynb` authored against the current DISPATCH API (flagships + the six censuses + the 52-identity live-verification finale; every cell smoke-executed clean) and the **artifact-packaging fix**: the six census CSVs are now in data-files with the `_find_registry_artifact` multi-location loader, so pip-installed users load live tables instead of empty ones (the v0.392.0 miss, disclosed and closed). **Totals: 2,251 wired (2,306 DISPATCH keys) / gate 5,768 green / 4,178 defs. Next paper: PAPER_2256.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.392.0)
+## What is currently shipped (v0.393.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,249 distinct dispatches (2,304 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,251 distinct dispatches (2,306 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

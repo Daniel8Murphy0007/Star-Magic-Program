@@ -11625,3 +11625,75 @@ Daniel: "2. Exact-Identity Census, next" — the crown jewels enumerated and arm
   RESIDUALS, EXACT_IDENTITIES). Predecessor repo also touched (keyfix + backup + SESSION_LOG
   append — Daniel ships that separately or leaves as working state). Awaiting Daniel:
   `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 261 — 2026-08-21 — PAPER_2254: THE ANCHOR CENSUS (census #3; the Hybrid-Form ledger completed)
+
+Daniel: "3. The Anchor Census." — the framework's external-information boundary, disclosed:
+
+- **NEW ARTIFACT: `UNIFIED_REGISTRY_ANCHORS.csv`** — all 33 named constants enumerated,
+  use-counted (981 combined uses), classified into 8 classes, hybrid-role-tagged per anchor
+  (P2149 completed as auditable bookkeeping). The dispatch VERIFIES THE LAYER LIVE: every
+  name introspected from the module with its recorded value — a standing drift-catch.
+- **PARSIMONY STATEMENT: the named external-value surface is 17 constants** — 10 OBSERVED
+  measurements (G, α-as-ledger, H₀-Planck, μ₀, m_p, m_τ, T_CMB, m_W, m_e, T_universe) +
+  4 SI-DEFINED (ħ/h/k_B/e — definitions since SI-2019, not measurements) + 3 ASTRO
+  conventions (M_sun 84 uses = most-used, R_sun, L_sun). Everything else named: 7 unit
+  definitions, 3 precision twins, 1 sec-6.2 convention, 4 UQFF-derived, 1 primitive-float
+  (D_CRIT_F, 233 uses).
+- **Three ambient-impression corrections:** (1) ħ/h/k_B/e are exact-by-definition, not
+  empirical imports; (2) **4 named values RELABELED UQFF_DERIVED** (H0_SI = the P1573
+  identity in SI; YM_GAP P1318; GAMMA_SCM = κ·F_TRZ P2246; Q_WAVE P337) — framework
+  outputs, not anchors; (3) the rounded-constant BOARD ITEM has a measured scope: exactly
+  3 named twins (C_R4/MPC_R4/M_SUN_R3), 49 combined uses.
+- Inline event-anchor layer counted: 239 comment-tagged sites (per-paper by design; the
+  named census's scope disclosed honestly). The census DESCRIBES; the board ruling DECIDES.
+- Residual census regenerated per the P2252 ratchet (2,305 rows). Files: PAPER_2254
+  whitepaper (new), UNIFIED_REGISTRY_ANCHORS.csv (new artifact), dispatch (keys 2304→2305,
+  defs 4175→4176), +5 gate pins (5754→5759), registry rows ×4, graph edges ×3, citations
+  row, index flip + count syncs. Gate GREEN 5759/0. Next paper: PAPER_2255.
+
+## Entry 262 — 2026-08-21 — PAPER_2255: THE OPEN-ITEMS CENSUS (census #6 — THE SERIES CLOSES)
+
+Daniel: "continue with the Open-Items Census, the honest what's-not-done sheet":
+
+- **NEW ARTIFACT: `UNIFIED_REGISTRY_OPEN_ITEMS.csv`** — 20 ledger rows in 10 classes, each
+  with owner + status, backed by a LIVE formula-marker scan re-run on every dispatch call
+  (OPEN and route-family counts MEASURED, not remembered — drift surfaces automatically).
+- **Measured at authoring:** 29 in-formula OPEN dispatches (P013 braking envelope the
+  widest — nothing hides), 15 route-family records (plural BY DOCTRINE, P2170), 4
+  not-canonized observation sets, 3 PENDING (one already discharged by P2240 — noted).
+- **The ledger:** 6 DANIEL_RULING (the board, in-artifact — rounded constants with scope
+  measured 3/49, rare-earth, P047, renames, deletions, f_SCm reading) + 3 FORENSIC
+  (density-choice origin; mock-theta/Iax sources exhausted; exponent-flattening family) +
+  2 METHODOLOGICAL (the A7 honest-null-model chief; printed-precision extension — the
+  census series' OWN loose ends in the ledger, the sheet audits itself) + 2
+  DERIVATION_TARGET (the 29; the are-more-primitives-derivative question) + 2 HYGIENE
+  (no-field 13; predecessor keyfix awaiting commit) + route/observation/provenance rows +
+  1 DELIBERATE (the anchored trio — underived BY DOCTRINE; **not-done vs not-to-be-done
+  DISTINGUISHED**) + 1 EXTERNAL (45 live predictions, cross-ref P2250, not duplicated).
+- **THE CENSUS SERIES IS COMPLETE:** P2250-2255, six questions, six live-loaded artifacts —
+  stakes / resolutions / accuracy / exactness / imports / debts. The framework is auditable
+  from six tables without reading a line of prose.
+- Residual census regenerated per ratchet (2,306 rows). Files: PAPER_2255 whitepaper (new),
+  UNIFIED_REGISTRY_OPEN_ITEMS.csv (new artifact), dispatch (keys 2305→2306, defs
+  4176→4177), +5 gate pins (5759→5764), registry rows ×3, graph edges ×3, citations row,
+  index flip + count syncs. Gate GREEN 5764/0. Next paper: PAPER_2256.
+
+## Entry 263 — 2026-08-21 — QUICKSTART NOTEBOOK + PACKAGING FIX + SHIP PREP v0.393.0 (THE LEDGER SHIP)
+
+- Daniel: "has the jupyter notebook been updated?" → measured answer: the 16 notebooks live
+  in the PREDECESSOR only (frozen old-API, Jun-2026); this repo had NONE. Daniel GO →
+  **notebooks/00_quickstart.ipynb** authored against the current DISPATCH API (3 flagships,
+  the six census artifacts, the 52-identity live-verification finale) — every code cell
+  smoke-executed clean pre-commit.
+- **PACKAGING FIX (v0.392.0 miss, disclosed):** the six census CSVs were absent from
+  data-files AND the dispatches loaded from module-dir only → pip installs would return
+  empty tables. Fixed: `_find_registry_artifact` multi-location loader (module dir → cwd →
+  sys.prefix share paths) + all six artifacts + the notebook registered in data-files.
+  All six dispatches verified loading post-fix.
+- OPEN_ITEMS ledger self-updated: +2 FIXED_SAME_SESSION rows (22 total); P2255 pin updated;
+  P2255 append documents the ledger's first live updates. +10 notebook/packaging pins.
+- SHIP PREP v0.393.0: pins ×6 (desc 459 chars, MEASURED counts — first draft used
+  remembered figures, caught before write); SHIP GUARD v4.1 marker advanced CENSUS_ARC →
+  LEDGER_ARC per its standing note; trail rows ×8; README/CHANGELOG/_BUILD_LOG/
+  SHIP_MESSAGE/RULINGS. Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).

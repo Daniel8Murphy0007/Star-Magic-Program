@@ -1,45 +1,36 @@
-v0.392.0 - THE CENSUS SHIP: the framework counted, verified, and armored
+v0.393.0 - THE LEDGER SHIP: the census series complete, and the package
+learns to teach itself
 
-The census quartet (PAPER_2250-2253): four populations, four registry
-artifacts, each loaded live by its dispatch.
+PAPER_2254 - THE ANCHOR CENSUS. All 33 named constants enumerated, use-
+counted (981 uses), classified into 8 classes, and VERIFIED LIVE by module
+introspection (a standing drift-catch on the anchor layer). The parsimony
+statement: ONLY 17 NAMED EXTERNAL VALUES enter the framework (10 observed
+measurements + 4 SI-defined exact-by-definition + 3 astronomical
+conventions). Four anchor-named values RELABELED UQFF_DERIVED (H0_SI, YM_GAP,
+GAMMA_SCM, Q_WAVE - framework outputs, not inputs). The rounded-constant
+board ruling now has a measured scope: 3 twins, 49 uses. The P2149 Hybrid-
+Form doctrine completed as per-anchor bookkeeping (hybrid_role column).
 
-PAPER_2250 - THE FALSIFIABLE-PREDICTION CENSUS. 48 predictions in 4 tiers
-(24 instrumental / 7 laboratory / 14 structural / 3 internal-exact; 45 live,
-3 converted postdictions) consolidating P2161's wired battery, the P2234-era
-30-program registry, and the 58 falsifiability sections of the landmark
-range. >=10 decide on funded instruments within ~5 years (H0 = 70, neutron
-BR 1.140%, Li-7 = 1/3, DUNE delta_CP, w(z) = -1, 40-lens 1.0881, nu = 5/2
-shot noise, kilonova 5-day peak, GW damping 2/3, H->gg +0.1% stake). Four
-exact stakes re-verified in-dispatch. 17/48 rows correlated-lock structured.
+PAPER_2255 - THE OPEN-ITEMS CENSUS. The honest what's-not-done sheet: 22
+ledger rows in 10 classes with owners and statuses, backed by a LIVE formula-
+marker scan on every dispatch call - 29 in-formula OPEN dispatches (nothing
+hides), 15 route families (plural BY doctrine), the Daniel board in-artifact,
+and the DELIBERATE class distinguishing not-done from not-to-be-done. THE
+SIX-CENSUS SERIES CLOSES: stakes / resolutions / accuracy / exactness /
+imports / debts - six live-loaded artifacts; the framework auditable from
+six tables without reading a line of prose.
 
-PAPER_2251 - THE PARADOX-SOLUTION CENSUS. Daniel's "1800 paradox solutions"
-measured: 1,346 dispatcher entries (8 Millennium + 1,338 tier-2) backed by
-1,129 distinct closures (+209 deliberate aliases), 20 domains; combined
-surface ~2,026 with this repo's reservoir. Five closures spot-executed live;
-the firewall closure returns the P1095 rung-4 recovery - the P2238 Millennium
-linking pass VERIFIED propagated. INTEGRITY FIND: one latent unreachable key
-(lambda_HHH, the CLAUDE.md silent-failure class, 4th instance) - and on
-Daniel's Rule E override, REPAIRED: key lowercased, backup kept, all
-spellings reachable, THE PREDECESSOR'S OWN GATE 3,425/0.
+THE LEDGER'S FIRST LIVE UPDATES (same-day): Daniel's "has the jupyter
+notebook been updated?" surfaced two gaps, both FIXED_SAME_SESSION:
+(1) notebooks/00_quickstart.ipynb - the current-API 5-minute tour (three
+flagships, the six census artifacts, and the 52-identity live-verification
+finale) - every code cell smoke-executed clean; the predecessor's 16
+notebooks remain frozen old-API reference. (2) the artifact-packaging fix -
+the six census CSVs were loaded from the module directory only, so pip
+installs would have returned empty tables (a v0.392.0 prep miss, disclosed
+per Rule 7); now registered in data-files with the _find_registry_artifact
+multi-location loader. The what's-not-done sheet did its job on day one.
 
-PAPER_2252 - THE RESIDUAL CENSUS. Every dispatch executed live, ZERO errors:
-the first complete accuracy population. Median nonzero residual 0.086%;
-53% < 0.1%, 83% < 1%, 94% < 5%. The honest-wide tail (33 members) verified
-self-documenting (in-formula Rule 7 disclosures - envelope work, not hidden
-error). The A7 Bonferroni population supplied with NO global significance
-claim (an honest null for lattice compositions is an open task). The
-regeneration ratchet fired on first use - as designed - and held.
-
-PAPER_2253 - THE EXACT-IDENTITY CENSUS. The crown jewels: 52 rational-EXACT
-identities in 19 families (all 7 magic numbers, 5 primitive reductions, the
-kernel trio, the tilt family, the 4 budget identities, ladder rungs, sector
-sums, H0 = 70...) - RE-VERIFIED IN FRACTION ARITHMETIC ON EVERY CALL of the
-dispatch: the identity lattice cannot drift without the public surface
-failing. One over-claim CAUGHT and reclassified (0.579 = SSq*Phi_res + F_TRZ
-= 0.5788 - printed-precision only). The P2252 zero-conflation resolved:
-1,770 zeros = 531 EXACT-claiming + 104 census + 1,136 paper-value
-reproductions.
-
-Gate 5,733 -> 5,754 (+21). Keys 2,300 -> 2,304. Defs 4,171 -> 4,175.
-Whitepapers +4 (PAPER_2250-2253). Artifacts +4 (PREDICTIONS, PARADOX_CENSUS,
-RESIDUALS, EXACT_IDENTITIES). Next paper: PAPER_2254.
+Gate 5,754 -> 5,768 (+14). Keys 2,304 -> 2,306. Defs 4,175 -> 4,178.
+Whitepapers +2 (PAPER_2254-2255). Artifacts +2 + the notebook.
+Next paper: PAPER_2256.
