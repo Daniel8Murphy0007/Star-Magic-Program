@@ -264,3 +264,4 @@ GENESIS_ARC,LANDMARK,PAPER_2242-2246 dispatches + P2236 correction append + P224
 DOCTRINE_ARC,LANDMARK,PAPER_2247-2249 dispatches,3 landmarks,v0.391.0
 CENSUS_ARC,LANDMARK,P2250-2253 dispatches + predecessor keyfix,4 landmarks + 1 repair,v0.392.0
 LEDGER_ARC,LANDMARK,P2254-2255 dispatches + notebook + _find_registry_artifact,2 landmarks + 2 fixes,v0.393.0
+DOWNHOLE_ARC,LANDMARK,PAPER_2256 dispatch + 6-file package + v1.1.0 extensions,1 landmark + 1 package,v0.394.0

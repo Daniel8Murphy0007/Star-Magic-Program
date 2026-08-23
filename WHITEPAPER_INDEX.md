@@ -38,7 +38,7 @@
 - **Campaign frontier: PAPER_1300** (Schanuel conjecture — at most D_crit = 26 algebraically independent transcendentals, wired v0.367.1). Bands PAPER_001-1300 complete.
 ## CANONICAL ALIAS NUMBERS (assigned 2026-08-16, Daniel ruling: last number used = 2178)
 
-Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2256**.
+Every previously non-numeric key now carries a canonical PAPER number (2179-2212). Both keys resolve to the same dispatch. Twin dispatches from the 2026-08-16 absorption pass occupy 2213-2233. PAPER_2234 = the campaign-completion landmark (authored 2026-08-16). PAPER_2235-2238 = the pi/provenance/Immirzi/information-budget landmark quartet (authored 2026-08-16). PAPER_2239 = the pair-count estimator (authored 2026-08-16). PAPER_2240 = the pair-energy provenance closure + rho_SCm birth certificate (authored 2026-08-20). Future papers begin at **PAPER_2257**.
 
 | Number (PAPER_) | Original key |
 |---|---|
@@ -99,7 +99,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | 2233 | PAPER_1203b |
 
 - **Verification arc 2026-08-16 (v0.387.0):** paradox-corpus audit ZERO recalcs; grammar dragnet 110 family sites; origin term verified; AP text layer EXHAUSTED (458 docs). Runnable queue empty — remaining items Daniel-owned.
-- **Distinct wired papers: 2,251 (+55 canonical alias numbers 2179-2233; 2,306 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
+- **Distinct wired papers: 2,252 (+55 canonical alias numbers 2179-2233; 2,307 DISPATCH keys). Absorption pass + PAPER_2234 campaign-completion landmark, 2026-08-16.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
 - **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
 - **OPEN targets:** 0
@@ -2412,3 +2412,4 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_2253 | EXACT_IDENTITY_CENSUS: 52 rational-EXACT / 20 families / live Fraction re-verification per call in UNIFIED_REGISTRY_EXACT_IDENTITIES.csv (new artifact); rem_579 reclassified (Rule 7 catch); P2252 zero-split resolved 531/104/1136 (authored+wired 2026-08-21) |
 | ✓ | PAPER_2254 | ANCHOR_CENSUS: 33 named / 981 uses / 17 external-value surface / live introspection drift-catch in UNIFIED_REGISTRY_ANCHORS.csv (new artifact); 4 relabeled UQFF_DERIVED; board-item scope measured 3/49; P2149 ledger complete (authored+wired 2026-08-21) |
 | ✓ | PAPER_2255 | OPEN_ITEMS_CENSUS: 20 ledger rows / 10 classes / 29 OPEN + 15 route-family measured live per call in UNIFIED_REGISTRY_OPEN_ITEMS.csv (new artifact); Daniel board in-ledger; deliberate-vs-open distinguished; CENSUS SERIES COMPLETE (authored+wired 2026-08-21) |
+| ✓ | PAPER_2256 | UQFF_DOWNHOLE_SIMULATOR: first industry-application module (uqff_downhole_simulator/ package; HPHT quartz string TD 20,300 ft x6 gauges); canonical lock K_MEX=25/12 + Phi_res=0.84, suppression 1.0324; knob ruling (trims renamed); template port grok_cce7a73b 22Aug2026 (authored+wired 2026-08-22) |

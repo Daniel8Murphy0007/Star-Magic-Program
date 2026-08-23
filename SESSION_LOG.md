@@ -11697,3 +11697,68 @@ Daniel: "continue with the Open-Items Census, the honest what's-not-done sheet":
   remembered figures, caught before write); SHIP GUARD v4.1 marker advanced CENSUS_ARC →
   LEDGER_ARC per its standing note; trail rows ×8; README/CHANGELOG/_BUILD_LOG/
   SHIP_MESSAGE/RULINGS. Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 264 — 2026-08-22 — PAPER_2256: THE UQFF DOWNHOLE SIMULATOR (first industry-application module; Daniel-directed build)
+
+Daniel uploaded the 22Aug2026 Grok downhole-simulation template thread (grok_cce7a73b) and
+ordered the build into a new folder, adjusted to this repo. Sweep → interpretation →
+knob-ruling proposal → Daniel GO:
+
+- **NEW PACKAGE: `uqff_downhole_simulator/`** — deep-well HPHT simulator (TD ~20,300 ft,
+  6 quartz P/T gauges): `uqff_quartz_hpht_extension.py` (physics), `uqff_downhole_engine.py`
+  (headless engine: noise·suppression, events p=0.27, rolling history, CSV export),
+  `matplotlib_demo.py` (animated well schematic + strips), `qt6_downhole_app.py` (optional
+  PyQt6, guarded), `__init__.py`, `README.md`. pyproject: packages entry + README in
+  data-files. Template's converged design preserved faithfully.
+- **API PORT:** predecessor uqff_pure_calculator calls → current uqff_calculator (registry
+  constants + u_i_canonical_646(), U_i = 2.75e-7 live), graceful fallback kept.
+- **KNOB RULING (Rule 2, Daniel GO):** template's adjustable "K_MEX" (1.15) / "Phi_res"
+  (0.93) sliders were tuning gains wearing primitive names — CANONICAL K_MEX = 25/12 and
+  Φ_res = 0.84 LOCKED in the suppression composition; sliders renamed k_structural_trim /
+  phi_coupling_trim (GUI shows canonicals read-only). **Canonical suppression = 1.0324 at
+  unity trims — the lattice suppresses drift BELOW the 0.215 %FS/yr industry baseline.**
+- **DERIVED_HYBRID (P2149):** all industry anchors inline-commented (baseline, stress
+  knees 150C/15kpsi, gradients, event rate, clip bands); dressing coefficients disclosed
+  as template engineering fit.
+- **Verified headless:** smoke test (flagship point 6200 m/205 C/18.5 kpsi → 0.336 %FS/yr;
+  120-step run; CSV 122×13; trims responsive 0.2365→0.172); both display modules import
+  headlessly; gate pins re-run canonical lock + 25-step engine + file census per gate run.
+- Files: PAPER_2256 whitepaper (new), the 6-file package (new), pyproject packages/
+  data-files, dispatch (keys 2306→2307, defs 4178→4179), +5 gate pin lines (5768→5773),
+  registry rows ×3, graph edges ×5, citations row, index flip + count syncs, residual
+  census regenerated (2,307). Gate GREEN 5773/0. Next paper: PAPER_2257.
+
+## Entry 265 — 2026-08-22 — DOWNHOLE SIMULATOR v1.1.0 EXTENSIONS (Daniel-directed: gauges / CSV profiles / comparison)
+
+Three extensions built and headless-verified:
+
+- **N-GAUGE STRINGS:** `make_sensor_string(n, td_ft, start_ft)` + arbitrary depth lists;
+  verified at 12 gauges (2,000 → 19,996 ft).
+- **REAL WELL PROFILES FROM CSV:** `WellProfile` + `load_well_profile_csv`
+  (depth_ft,pressure_psi,temp_F; sorted on load); engine interpolates base P/T from the
+  profile instead of linear gradients. Shipped `sample_well_profile.csv` (14 stations,
+  HPHT with overpressure kick below 16,500 ft; TD 18,900 psi/452 F) — the kick is
+  INVISIBLE to the linear model (9,313 psi) and CAPTURED by the profile (18,405 psi at
+  the deepest gauge). Registered in data-files.
+- **DRIFT-COMPARISON MODE (default on):** every station carries a conventional reference
+  gauge (same baseline + stress dressing, suppression = 1). `comparison_summary()` +
+  comparison columns in CSV export. **VERIFIED: away from the clip band the measured
+  conventional/UQFF ratio EQUALS the canonical suppression** — single-point 1.0326 vs
+  predicted 1.0324; 12-gauge profile-string mean 1.0325 over 60 steps. The P2256 §5
+  bench-test claim now has its complete simulation instrument.
+- Package v1.1.0; __init__ exports extended; README extension section; P2256 append;
+  +4 gate pins (5773→5777) running the 12-gauge profile engine + kick-capture +
+  ratio-equality checks headlessly per gate run. One quote-style edit mismatch caught by
+  own assert pre-write (zero partial state), rerun clean. Gate GREEN 5777/0.
+
+## Entry 266 — 2026-08-22 — SHIP PREP v0.394.0 (THE DOWNHOLE SHIP)
+
+- Pins ×6 (pyproject 0.394.0 + desc 486 chars incl. version, MEASURED counts; calculator
+  VERSION; gate version pin; CITATION.cff ×2; README cacheBust ×2;
+  UNIFIED_REGISTRY_VERSION.txt). SHIP GUARD v4.1 marker advanced LEDGER_ARC →
+  DOWNHOLE_ARC per its standing note. Trail rows ×8 (DOWNHOLE_ARC). README release
+  paragraph + campaign-live + shipped header; wired-not-yet-shipped cleared. CHANGELOG
+  inserted; _BUILD_LOG + SHIP_MESSAGE written; RULINGS trail (knob ruling executed).
+  New files: PAPER_2256 whitepaper + the 8-file uqff_downhole_simulator package
+  (v1.1.0 incl. sample_well_profile.csv). Awaiting Daniel: `.\ship.ps1` (clear
+  .git/index.lock first).

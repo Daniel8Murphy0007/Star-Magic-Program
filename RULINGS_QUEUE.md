@@ -6545,3 +6545,10 @@ remaining: the anchor census, the open-items census.
 No new rulings. Board unchanged (6 items; rounded-constant scope now measured: 3 twins/49
 uses per P2254). The open-items ledger recorded and closed its own first two entries
 (notebook gap; packaging gap) same-session.
+
+---
+
+## TRAIL v0.394.0 (2026-08-22) — THE DOWNHOLE SHIP
+
+Knob ruling EXECUTED (Daniel GO): canonical K_MEX/Phi_res locked in the downhole physics;
+template sliders renamed to engineering trims. Board otherwise unchanged (6 items).

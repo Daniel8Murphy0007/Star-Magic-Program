@@ -6771,3 +6771,7 @@ board_population_measured,WHITEPAPER,derived,rounded-constant ruling scope = 3 t
 open_items_census,WHITEPAPER,derived,20 ledger rows / 10 classes / live marker scan per call,live census,20,complete,0.0,foundations,,PAPER_2255,,,,,,WIRED
 open_dispatch_population,WHITEPAPER,derived,29 in-formula OPEN dispatches (nothing hides),live scan,29,measured,0.0,foundations,,PAPER_2255,,,,,,WIRED
 census_series_complete,WHITEPAPER,derived,six censuses / six artifacts (stakes/resolutions/accuracy/exactness/imports/debts),P2250-2255,6,series closed,0.0,foundations,,PAPER_2255,,,,,,WIRED
+downhole_simulator,WHITEPAPER,derived,first industry-application module (HPHT quartz string; canonical lock),live import,available,packaged,0.0,applications,,PAPER_2256,,,,,,WIRED
+canonical_suppression_1_0324,WHITEPAPER,derived,(0.58+0.32*(1-F_TRZ))*(0.52+0.38*K_MEX)*(0.68+0.27*Phi_res),canonical inputs,1.0324,drift below baseline,0.0,applications,,PAPER_2256,,,,,,WIRED
+knob_ruling_record,WHITEPAPER,derived,template K_MEX/Phi_res sliders renamed to engineering trims (Rule 2),Daniel GO 2026-08-22,ruling,canonical locked,0.0,applications,,PAPER_2256,,,,,,WIRED
+downhole_v110_extensions,WHITEPAPER,derived,N-gauge strings + CSV well profiles + comparison mode,live verify,ratio==suppression,bench-test instrument,0.0,applications,,PAPER_2256,,,,,,WIRED

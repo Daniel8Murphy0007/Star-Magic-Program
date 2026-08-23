@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.393.0"
+VERSION = "0.394.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28854,6 +28854,56 @@ def _p2255(dataset=None):
                        'stakes / resolutions / accuracy / exactness / imports / debts, '
                        'auditable from six tables without reading a line of prose.',
             'source': 'PAPER_2255', 'residual_pct': 0.0}
+
+@_register('PAPER_2256')
+def _p2256(dataset=None):
+    sim = {'available': False}
+    try:
+        import uqff_downhole_simulator as ds
+        r = ds.calculate_quartz_transducer_hpht_UQFF(6200, 205, 18500)
+        sim = {'available': True,
+               'version': ds.__version__,
+               'uqff_live': ds.UQFF_AVAILABLE,
+               'canonical_suppression_unity_trims': round(ds.canonical_suppression(), 4),
+               'flagship_drift_pct': r['value']['drift_pct'],
+               'flagship_point': '6200 m / 205 C / 18500 psi (template HPHT flagship)',
+               'k_mex_in_physics': r['value']['K_MEX_canonical'],
+               'phi_res_in_physics': r['value']['Phi_res_canonical'],
+               'classification': r['classification'],
+               'modules': ['uqff_quartz_hpht_extension', 'uqff_downhole_engine',
+                           'matplotlib_demo', 'qt6_downhole_app']}
+    except Exception as e:
+        sim['error'] = str(e)[:120]
+    canonical_ok = (sim.get('available') and
+                    abs(sim.get('k_mex_in_physics', 0) - float(K_MEX)) < 1e-12 and
+                    abs(sim.get('phi_res_in_physics', 0) - PHI_RES_RESONANCE) < 1e-12)
+    return {'value': {'simulator': sim, 'canonical_primitives_locked': bool(canonical_ok),
+                      'knob_ruling': 'template K_MEX/Phi_res sliders RENAMED k_structural_trim/phi_coupling_trim (Daniel GO 2026-08-22); canonical 25/12 and 0.84 locked in-physics',
+                      'provenance': 'grok_cce7a73b Downhole Simulation thread, 22Aug2026 (source docx watermark URL)',
+                      'well': {'td_ft': 20300, 'gauges': 6, 'units': 'imperial (converged template)'},
+                      'anchors_disclosed': ['0.215 %FS/yr quartz baseline (industry)',
+                                            '150 C / 15000 psi stress knees (template fit)',
+                                            '0.465 psi/ft + 0.018 F/ft gradients',
+                                            'event p=0.27; clip bands (template)']},
+            'formula': 'THE UQFF DOWNHOLE SIMULATOR (Daniel-directed build, GO 2026-08-22): the '
+                       'program first packaged industry-application module - a deep-well HPHT '
+                       'quartz-gauge string (TD ~20,300 ft, 6 sensors) with UQFF-STABILIZED '
+                       'drift. PORT of the 22Aug2026 Grok-thread template (grok_cce7a73b) to '
+                       'the current API: predecessor uqff_pure_calculator calls -> registry '
+                       'constants + u_i_canonical_646(). KNOB RULING APPLIED (Rule 2): the '
+                       'template adjustable K_MEX=1.15/Phi_res=0.93 sliders were tuning gains '
+                       'wearing primitive names - CANONICAL K_MEX = 25/12 and Phi_res = 0.84 '
+                       'now LOCKED inside the suppression composition (= 1.0324 at unity '
+                       'trims: UQFF suppresses drift BELOW the industry baseline); sliders '
+                       'renamed k_structural_trim/phi_coupling_trim (honest engineering '
+                       'gains). DERIVED_HYBRID per P2149: industry anchors (0.215 %FS/yr '
+                       'baseline; stress knees; gradients) x canonical-UQFF suppression - all '
+                       'anchors inline-commented. Four modules (physics/engine/matplotlib/'
+                       'Qt6-optional); engine HEADLESS by design (gate-testable, no display); '
+                       'smoke-tested: 120-step run, CSV export, trims responsive, flagship '
+                       'point 0.336 %FS/yr at 6200 m/205 C/18.5 kpsi. This dispatch imports '
+                       'the subpackage LIVE and verifies the canonical lock on every call.',
+            'source': 'PAPER_2256', 'residual_pct': 0.0}
 
 @_register('PAPER_001')
 def _paper_001(dataset):

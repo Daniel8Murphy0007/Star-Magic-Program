@@ -7,6 +7,25 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.394.0 — 2026-08-22 — THE DOWNHOLE SHIP
+
+- **PAPER_2256 + uqff_downhole_simulator v1.1.0 (NEW PACKAGE):** the first industry-
+  application module — HPHT deep-well quartz-gauge simulator from Daniel's 22Aug2026
+  template thread. Canonical lock: K_MEX = 25/12 + Phi_res = 0.84 + F_TRZ in the
+  suppression composition = 1.0324 (drift BELOW the 0.215 %FS/yr industry baseline);
+  knob ruling — template's primitive-named sliders renamed to engineering trims.
+  API ported predecessor → uqff_calculator (u_i_canonical_646 live). DERIVED_HYBRID,
+  all industry anchors inline-commented.
+- **v1.1.0 extensions:** N-gauge strings; real well profiles from CSV (sample HPHT kick
+  zone shipped — invisible to linear gradients, captured by interpolation); twin-gauge
+  drift-comparison mode (measured conventional/UQFF ratio == canonical suppression away
+  from clip; 1.0325 vs 1.0324 verified live) — the P2250 bench test's simulation side.
+- Package installable (pyproject packages), engine headless, gate runs a 12-gauge
+  profile string + kick-capture + ratio-equality per pass. Modules: physics/engine/
+  matplotlib demo/optional Qt6 + README + sample_well_profile.csv (data-files).
+- Gate 5,768 → 5,777 (+9 pin lines). Keys 2,306 → 2,307. Defs 4,178 → 4,179.
+  Whitepapers +1. SHIP GUARD v4.1 marker advanced (LEDGER_ARC → DOWNHOLE_ARC).
+
 ## v0.393.0 — 2026-08-21 — THE LEDGER SHIP
 
 - **PAPER_2254 — anchor census:** 33 named constants / 981 uses / 8 classes / live

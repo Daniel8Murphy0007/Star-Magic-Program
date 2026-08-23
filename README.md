@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.393.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.393.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.394.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.394.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5768%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2306-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2290-orange)](whitepapers/)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5777%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2307-blue)](uqff_calculator.py)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2291-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.393.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.394.0 complete-compile campaign live**
 
-**This release (v0.393.0): THE LEDGER SHIP — THE CENSUS SERIES COMPLETE, AND THE PACKAGE LEARNS TO TEACH ITSELF.** **PAPER_2254 — THE ANCHOR CENSUS:** all 33 named constants enumerated, use-counted (981), classified, and verified live by introspection; the parsimony statement — **only 17 named external values enter the framework** (10 observed + 4 SI-defined + 3 astro conventions); 4 anchor-named values RELABELED UQFF_DERIVED; the rounded-constant board ruling's scope measured (3 twins / 49 uses); the P2149 Hybrid-Form ledger completed per-anchor. **PAPER_2255 — THE OPEN-ITEMS CENSUS:** the honest what's-not-done sheet — 22 ledger rows in 10 classes with owners and statuses, backed by a live formula-marker scan on every call (29 in-formula OPEN dispatches, 15 route families plural BY doctrine); not-done vs not-to-be-done distinguished; **the six-census series closes** (stakes / resolutions / accuracy / exactness / imports / debts — six live artifacts, the framework auditable without prose). **THE LEDGER'S FIRST LIVE UPDATES, same-day:** Daniel's notebook question surfaced two gaps, both FIXED_SAME_SESSION — `notebooks/00_quickstart.ipynb` authored against the current DISPATCH API (flagships + the six censuses + the 52-identity live-verification finale; every cell smoke-executed clean) and the **artifact-packaging fix**: the six census CSVs are now in data-files with the `_find_registry_artifact` multi-location loader, so pip-installed users load live tables instead of empty ones (the v0.392.0 miss, disclosed and closed). **Totals: 2,251 wired (2,306 DISPATCH keys) / gate 5,768 green / 4,178 defs. Next paper: PAPER_2256.**
+**This release (v0.394.0): THE DOWNHOLE SHIP — THE FRAMEWORK GOES TO WORK.** **PAPER_2256 + `uqff_downhole_simulator` v1.1.0:** the program's first packaged industry-application module, built from Daniel's 22Aug2026 template thread (grok_cce7a73b) on same-day GO — a deep-well HPHT simulator (TD ≈ 20,300 ft) with a quartz P/T gauge string whose drift is **suppressed by the canonical lattice**: suppression = (0.58+0.32·(1−F_TRZ))·(0.52+0.38·K_MEX)·(0.68+0.27·Φ_res) = **1.0324 at the locked {0.1, 25/12, 0.84}** — drift BELOW the 0.215 %FS/yr industry baseline. **The knob ruling (Rule 2):** the template's adjustable "K_MEX"/"Φ_res" sliders were tuning gains wearing primitive names — canonicals now LOCKED in-physics (verified live by the dispatch on every call), sliders renamed `k_structural_trim`/`phi_coupling_trim`. **v1.1.0 extensions (Daniel-directed):** N-gauge strings (`make_sensor_string`); real well profiles from CSV (`load_well_profile_csv`; the shipped sample carries an HPHT overpressure kick the linear model cannot see — 18,405 vs 9,313 psi at the deepest gauge); and **twin-gauge drift-comparison mode** — every station carries a conventional reference gauge, and away from the clip band the measured conventional/UQFF ratio EQUALS the canonical suppression (1.0325 measured vs 1.0324 predicted across a 12-gauge string on the real profile) — the PAPER_2250 quartz bench test's complete simulation instrument. Four modules + README + sample profile, installable package, engine headless by design, DERIVED_HYBRID with every industry anchor inline-commented, gate-verified per run. **Totals: 2,252 wired (2,307 DISPATCH keys) / gate 5,777 green / 4,179 defs. Next paper: PAPER_2257.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.393.0)
+## What is currently shipped (v0.394.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -76,7 +76,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,251 distinct dispatches (2,306 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,252 distinct dispatches (2307 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 

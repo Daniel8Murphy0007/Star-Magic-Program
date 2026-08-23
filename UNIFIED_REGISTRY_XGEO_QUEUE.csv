@@ -1720,3 +1720,4 @@ GENESIS_ARC,n/a,n/a,NOT_APPLICABLE,provenance arc single-geometry,v0.390.0
 DOCTRINE_ARC,n/a,n/a,NOT_APPLICABLE,doctrine+census single-geometry,v0.391.0
 CENSUS_ARC,n/a,n/a,NOT_APPLICABLE,census consolidation single-geometry,v0.392.0
 LEDGER_ARC,n/a,n/a,NOT_APPLICABLE,census+packaging single-geometry,v0.393.0
+DOWNHOLE_ARC,n/a,n/a,NOT_APPLICABLE,application module single-geometry,v0.394.0

@@ -300,3 +300,6 @@ THE CENSUS SHIP: P2250-2253 (predictions 48/4-tier; paradoxes 1,346/20-domain + 
 
 ## v0.393.0 — 2026-08-21
 THE LEDGER SHIP: P2254 anchors (17 external) + P2255 open items (census series COMPLETE) + quickstart notebook (current API, smoke-executed) + census-artifact packaging fix. Gate 5,768/0. 23-file pass verified.
+
+## v0.394.0 — 2026-08-22
+THE DOWNHOLE SHIP: PAPER_2256 + uqff_downhole_simulator v1.1.0 (first industry-application module; canonical-lock suppression 1.0324; N-gauge strings; CSV well profiles with kick capture; twin-gauge comparison ratio == suppression). Gate 5,777/0. 23-file pass verified.

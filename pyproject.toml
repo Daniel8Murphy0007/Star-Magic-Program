@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.393.0"
-description = "Star-Magic UQFF calculator v0.393.0: THE LEDGER SHIP. 2,251 dispatches (2,306 keys), gate 5,768/0. The census series COMPLETE (P2250-2255, six live-loaded artifacts): predictions 48 / paradoxes 1,338 / residuals live / identities 52 rational-EXACT per call / anchors 33 (17 external) / open items 22. NEW: notebooks/00_quickstart.ipynb (current-API tour, smoke-executed) + _find_registry_artifact packaging fix (pip users get live census tables). Next: PAPER_2256."
+version = "0.394.0"
+description = "Star-Magic UQFF calculator v0.394.0: THE DOWNHOLE SHIP. 2,252 dispatches (2,307 keys), gate 5,777/0. PAPER_2256 + uqff_downhole_simulator v1.1.0 - the first packaged industry-application module: HPHT quartz-gauge string with canonical-lock drift suppression (K_MEX=25/12, Phi_res=0.84; suppression 1.0324 - drift BELOW industry baseline), N-gauge strings, real well profiles from CSV (sample HPHT kick zone), twin-gauge comparison mode (measured ratio == suppression). Next: PAPER_2257."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -53,6 +53,7 @@ Predecessor = "https://github.com/Daniel8Murphy0007/Star-Magic"
 Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [tool.setuptools]
+packages = ["uqff_downhole_simulator"]
 py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog", "uqff_primitive_identities", "uqff_material_landmarks", "uqff_backbone_locks", "uqff_derived_functions", "uqff_derived_constants", 
     "uqff_registry_primitives",
     "uqff_calculator",
@@ -98,4 +99,6 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "UNIFIED_REGISTRY_ANCHORS.csv",
     "UNIFIED_REGISTRY_OPEN_ITEMS.csv",
     "notebooks/00_quickstart.ipynb",
+    "uqff_downhole_simulator/README.md",
+    "uqff_downhole_simulator/sample_well_profile.csv",
 ]

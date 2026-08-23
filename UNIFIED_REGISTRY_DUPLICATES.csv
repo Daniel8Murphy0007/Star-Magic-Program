@@ -147,3 +147,4 @@ exponent_flattening_class,p2245_p2246,FAMILY_RECORD,three mantissa-exact/exponen
 fubii_benchmark_era_family,p2249,FAMILY_RECORD,F_LENR SgrA* era values 1.56e36/6.16e39 N (Jun2025) vs wired 6.17e45 (session layer) - recorded per P2170 not reconciled,v0.391.0
 census_artifact_family,p2250_p2253,FAMILY_RECORD,four live-loaded registry artifacts (PREDICTIONS 48; PARADOX_CENSUS 1338; RESIDUALS live-tracked; EXACT_IDENTITIES 53) each pinned to its dispatch,v0.392.0
 census_series_family,p2250_p2255,FAMILY_RECORD,six live-loaded artifacts complete (PREDICTIONS 48 / PARADOX 1338 / RESIDUALS live / IDENTITIES 53 / ANCHORS 33 / OPEN_ITEMS 22) - all in data-files with multi-location loading,v0.393.0
+downhole_module_family,p2256,FAMILY_RECORD,first industry-application module (physics/engine/demo/Qt6 + sample profile); comparison mode = the P2250 quartz bench-test simulation side,v0.394.0

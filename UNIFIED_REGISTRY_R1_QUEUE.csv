@@ -142,3 +142,4 @@ GENESIS_ARC,landmark x5,5,ORIGIN_DOCUMENTED,Daniel board now: rounded variants /
 DOCTRINE_ARC,landmark x3,3,ARCHIVE_CENSUSED,Daniel board unchanged: rounded variants / rare-earth / P047 / renames / deletions / f_SCm reading,v0.391.0
 CENSUS_ARC,landmark x4 + repair,4+1,QUARTET_COMPLETE,Daniel board unchanged: rounded variants / rare-earth / P047 / renames / deletions / f_SCm reading; census candidates remaining: anchors + open-items,v0.392.0
 LEDGER_ARC,landmark x2 + notebook + fix,2+2,SERIES_COMPLETE,Daniel board unchanged (6 items; rounded-constant scope measured 3/49); ledger self-updated x2 FIXED_SAME_SESSION,v0.393.0
+DOWNHOLE_ARC,landmark + package,1+1,MODULE_SHIPPED,Daniel board unchanged (6 items); knob ruling EXECUTED same-day,v0.394.0

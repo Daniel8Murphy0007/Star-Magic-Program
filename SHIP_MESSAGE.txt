@@ -1,36 +1,44 @@
-v0.393.0 - THE LEDGER SHIP: the census series complete, and the package
-learns to teach itself
+v0.394.0 - THE DOWNHOLE SHIP: the framework goes to work
 
-PAPER_2254 - THE ANCHOR CENSUS. All 33 named constants enumerated, use-
-counted (981 uses), classified into 8 classes, and VERIFIED LIVE by module
-introspection (a standing drift-catch on the anchor layer). The parsimony
-statement: ONLY 17 NAMED EXTERNAL VALUES enter the framework (10 observed
-measurements + 4 SI-defined exact-by-definition + 3 astronomical
-conventions). Four anchor-named values RELABELED UQFF_DERIVED (H0_SI, YM_GAP,
-GAMMA_SCM, Q_WAVE - framework outputs, not inputs). The rounded-constant
-board ruling now has a measured scope: 3 twins, 49 uses. The P2149 Hybrid-
-Form doctrine completed as per-anchor bookkeeping (hybrid_role column).
+PAPER_2256 + uqff_downhole_simulator v1.1.0 - the program's first packaged
+industry-application module, built from Daniel's 22Aug2026 template thread
+(grok_cce7a73b) on same-day GO.
 
-PAPER_2255 - THE OPEN-ITEMS CENSUS. The honest what's-not-done sheet: 22
-ledger rows in 10 classes with owners and statuses, backed by a LIVE formula-
-marker scan on every dispatch call - 29 in-formula OPEN dispatches (nothing
-hides), 15 route families (plural BY doctrine), the Daniel board in-artifact,
-and the DELIBERATE class distinguishing not-done from not-to-be-done. THE
-SIX-CENSUS SERIES CLOSES: stakes / resolutions / accuracy / exactness /
-imports / debts - six live-loaded artifacts; the framework auditable from
-six tables without reading a line of prose.
+THE MODULE. A deep-well HPHT simulator (TD ~20,300 ft) with a quartz P/T
+gauge string whose drift is suppressed by the canonical lattice:
 
-THE LEDGER'S FIRST LIVE UPDATES (same-day): Daniel's "has the jupyter
-notebook been updated?" surfaced two gaps, both FIXED_SAME_SESSION:
-(1) notebooks/00_quickstart.ipynb - the current-API 5-minute tour (three
-flagships, the six census artifacts, and the 52-identity live-verification
-finale) - every code cell smoke-executed clean; the predecessor's 16
-notebooks remain frozen old-API reference. (2) the artifact-packaging fix -
-the six census CSVs were loaded from the module directory only, so pip
-installs would have returned empty tables (a v0.392.0 prep miss, disclosed
-per Rule 7); now registered in data-files with the _find_registry_artifact
-multi-location loader. The what's-not-done sheet did its job on day one.
+  suppression = (0.58+0.32*(1-F_TRZ)) * (0.52+0.38*K_MEX) * (0.68+0.27*Phi_res)
+              = 1.0324 at the locked {0.1, 25/12, 0.84}
 
-Gate 5,754 -> 5,768 (+14). Keys 2,304 -> 2,306. Defs 4,175 -> 4,178.
-Whitepapers +2 (PAPER_2254-2255). Artifacts +2 + the notebook.
-Next paper: PAPER_2256.
+- drift BELOW the 0.215 %FS/yr industry baseline (0.336 %FS/yr at the HPHT
+flagship 6,200 m / 205 C / 18,500 psi, verified live).
+
+THE KNOB RULING (Rule 2). The template's adjustable "K_MEX" (1.15) and
+"Phi_res" (0.93) sliders were tuning gains wearing primitive names. The
+canonical values are LOCKED inside the physics (the dispatch re-verifies the
+lock on every call); the sliders are renamed k_structural_trim /
+phi_coupling_trim - honest engineering instrument gains. The Qt6 GUI shows
+the locked canonicals read-only.
+
+v1.1.0 EXTENSIONS (Daniel-directed, same session):
+1. N-gauge strings - make_sensor_string(n); verified at 12 gauges.
+2. Real well profiles from CSV - load_well_profile_csv (depth_ft,
+   pressure_psi, temp_F); the shipped sample carries an HPHT overpressure
+   kick below 16,500 ft that the linear model CANNOT see (9,313 psi) and the
+   profile CAPTURES (18,405 psi at the deepest gauge).
+3. Twin-gauge drift-comparison mode - every station carries a conventional
+   reference gauge (same baseline + stress, suppression = 1). Away from the
+   clip band the measured conventional/UQFF ratio EQUALS the canonical
+   suppression: 1.0326 vs 1.0324 single-point; 1.0325 mean across a 12-gauge
+   string on the real profile. The PAPER_2250 quartz bench test now has its
+   complete simulation instrument, with comparison columns in the CSV export.
+
+Engineering: four modules (physics / headless engine / matplotlib demo /
+optional guarded Qt6) + README with full provenance + sample profile;
+installable package; DERIVED_HYBRID per P2149 with every industry anchor
+inline-commented; the gate runs a 12-gauge profile string, the kick-capture
+check, and the ratio-equality check headlessly on every pass.
+
+Gate 5,768 -> 5,777. Keys 2,306 -> 2,307. Defs 4,178 -> 4,179.
+Whitepapers +1 (PAPER_2256). New package + sample profile in data-files.
+Next paper: PAPER_2257.

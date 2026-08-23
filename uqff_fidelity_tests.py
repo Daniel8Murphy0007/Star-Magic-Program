@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.393.0", "uqff_calculator.VERSION = 0.393.0 (the ledger ship: P2254-2255 close the census series + the quickstart notebook + the packaging fix)")
+assert_that(C.VERSION == "0.394.0", "uqff_calculator.VERSION = 0.394.0 (the downhole ship: PAPER_2256 + uqff_downhole_simulator v1.1.0 - the first industry-application module)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'LEDGER_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'DOWNHOLE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('ledger_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('downhole_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12575,6 +12575,44 @@ for _art in ('UNIFIED_REGISTRY_PREDICTIONS.csv', 'UNIFIED_REGISTRY_PARADOX_CENSU
                 "PACKAGING: %s registered in pyproject data-files - the v0.392.0 miss (census CSVs unshipped; pip installs would load empty) FIXED with the _find_registry_artifact multi-location loader" % _art)
 assert_that('_find_registry_artifact' in open('uqff_calculator.py', encoding='utf-8').read(),
             "PACKAGING: the six census dispatches load via _find_registry_artifact (module dir -> cwd -> sys.prefix share paths) - pip-installed users get live artifacts, not empty tables")
+
+
+# ---- PAPER_2256 THE UQFF DOWNHOLE SIMULATOR (first industry-application module) ----
+_l2256 = C.DISPATCH['PAPER_2256']()
+assert_that(_l2256['value']['simulator']['available'] and _l2256['value']['canonical_primitives_locked'],
+            "PAPER_2256: uqff_downhole_simulator imports live and the CANONICAL LOCK holds - K_MEX = 25/12 and Phi_res = 0.84 verified inside the physics layer on every dispatch call (the knob ruling, Daniel GO 2026-08-22: template sliders renamed k_structural_trim/phi_coupling_trim)")
+assert_that(abs(_l2256['value']['simulator']['canonical_suppression_unity_trims'] - 1.0324) < 0.001,
+            "PAPER_2256: canonical suppression = 1.0324 at unity trims - the canonical lattice suppresses quartz drift BELOW the 0.215 %FS/yr industry baseline (the module's substantive claim, computed live)")
+assert_that(0.30 < _l2256['value']['simulator']['flagship_drift_pct'] < 0.38,
+            "PAPER_2256: the template HPHT flagship point (6200 m / 205 C / 18500 psi) yields drift ~0.336 %FS/yr within the clip band - DERIVED_HYBRID per P2149, industry anchors inline-commented")
+import uqff_downhole_simulator as _ds
+_e = _ds.UQFFDownholeEngine()
+for _ in range(25): _e.step()
+_s = _e.summary()
+assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
+            "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
+import os as _ds_os
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+    assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
+                "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
+
+
+# ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
+import uqff_downhole_simulator as _ds11
+assert_that(_ds11.__version__ == '1.1.0' and len(_ds11.make_sensor_string(12)) == 12,
+            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges)")
+_prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
+_cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
+_e11 = _ds11.UQFFDownholeEngine(_cfg11)
+assert_that(_e11.base_P[-1] > 14.7 + _e11.sensors[-1].depth_ft * 0.465 + 2000,
+            "DOWNHOLE v1.1.0: real-profile CSV input - the sample HPHT overpressure kick (below 16,500 ft) is CAPTURED by interpolation where the linear-gradient model cannot see it (deepest gauge ~18,400 psi vs linear ~9,300 psi)")
+_d11 = _ds11.drift_comparison(3000, 180, 16000)
+assert_that(abs(_d11['measured_ratio'] - _d11['predicted_ratio_suppression']) < 0.001,
+            "DOWNHOLE v1.1.0: comparison mode - away from the clip band the measured conventional/UQFF drift ratio EQUALS the canonical suppression (1.0324 at unity trims) - the bench-test claim's simulation instrument, verified per gate run")
+for _ in range(10): _e11.step()
+_c11 = _e11.comparison_summary()
+assert_that(_c11['avg_conventional_drift_pct'] > _c11['avg_uqff_drift_pct'],
+            "DOWNHOLE v1.1.0: twin-gauge run - conventional reference drift exceeds UQFF-stabilized drift across the 12-gauge profile string (headless, per gate run); comparison columns in CSV export")
 
 # =============================================================================
 # REPORT
