@@ -648,3 +648,4 @@ DOCTRINE_ARC,WHITEPAPER,MERGED,v0.391.0,PAPER_2247-2249 (mechanism layer + MUGE 
 CENSUS_ARC,WHITEPAPER,MERGED,v0.392.0,P2250-2253 census quartet (predictions/paradoxes/residuals/identities) + 4 artifacts + lambda_HHH repair (predecessor gate 3425/0); identity lattice re-verified per call
 LEDGER_ARC,WHITEPAPER,MERGED,v0.393.0,P2254 anchors (17 external; 4 relabeled) + P2255 open items (census series COMPLETE) + quickstart notebook + census-artifact packaging fix (v0.392.0 miss disclosed and closed)
 DOWNHOLE_ARC,WHITEPAPER,MERGED,v0.394.0,PAPER_2256 + uqff_downhole_simulator v1.1.0 (first industry module; canonical-lock suppression 1.0324; knob ruling; N-gauges/CSV profiles/comparison mode; bench-test simulation instrument)
+INSTRUMENT_ARC,WHITEPAPER,MERGED,v0.395.0,uqff_downhole_simulator v1.2-v1.6 (service-life divergence; telemetry QC scored; case study; cited gauge specs; MD/TVD deviation; batch; headless CLI)

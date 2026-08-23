@@ -86,3 +86,132 @@ e = UQFFDownholeEngine(cfg)
 for _ in range(60): e.step()
 print(e.comparison_summary())
 ```
+
+## v1.2.0 extension: service-life drift accumulation (Daniel-directed, 2026-08-23)
+
+`uqff_service_life.py` turns the instantaneous drift RATES into accumulated
+gauge ERROR over months/years of simulated service — the divergence curves a
+real bench test or field trial would record. Twin legs at every station (UQFF
+vs conventional), optional periodic recalibration resets, optional small
+random-walk component (seeded, deterministic at 0), CSV divergence-curve
+export. Anchors: 30,000 psi HPHT full-scale class; 0.5 %FS total-error spec
+budget (both inline-commented).
+
+`divergence_summary()` reports, per sensor: both rates, the predicted
+separation rate (%FS/yr and psi/yr), the measured final separation, the
+accumulated-error ratio against the canonical suppression (converges to
+1.0324 at unity trims), and the service-life arithmetic — years to error
+budget for each leg and the extra service life the suppression buys.
+Default 6-gauge well, 5 years: separation grows 2.0–3.0 psi/yr per station,
+10–15 psi at horizon; ratio lands on the suppression. This is the full
+simulation instrument for the PAPER_2250 LABORATORY-tier bench test: the
+separation you'd measure, not just the ratio you'd predict.
+
+```python
+from uqff_downhole_simulator import ServiceLifeConfig, ServiceLifeSimulator
+sim = ServiceLifeSimulator(config=ServiceLifeConfig(years=5.0, seed=42)).run()
+print(sim.divergence_summary())
+sim.export_csv("divergence_curves.csv")
+```
+
+## v1.3.0 extension: field-telemetry realism (Daniel-directed, 2026-08-23)
+
+`uqff_telemetry.py` (`TelemetryConfig` / `TelemetryRecorder`) wraps the engine
+in what real permanent-gauge telemetry actually looks like: fixed-cadence
+timestamped sampling (anchor: 1 reading/min permanent-quartz class), plus a
+fault injector with ground-truth masks — telemetry-line burst dropouts
+(string-wide MISSING), stuck gauges (electronics freeze, both channels repeat),
+and single-sample spikes per channel. Every sample carries a historian-style
+quality flag.
+
+On top sits a field-grade QC pipeline, scored against the injected ground
+truth: frozen-value detection (identical consecutive samples — precision and
+recall 1.0), and a Hampel MAD despiker with a **common-mode veto** — a gauge
+fault hits one gauge, a well transient hits the string, so multi-gauge
+coincidence or a matching median residual across the other gauges restores the
+raw values instead of "cleaning" real physics. Typical seeded 24-h scores:
+spike-P precision 0.83–1.0 / recall 0.67–0.88 (misses are sub-threshold
+spikes — honestly undetectable), spike-T recall ~1.0 with a ~0.1%
+false-alarm floor. `telemetry_summary()` reports uptime, fault counts, and
+precision/recall per fault class; `export_csv()` writes a field-historian-style
+file (ISO timestamps, raw + flag + cleaned columns, blanks on dropout) — a
+ready-made test bench for downhole analysis pipelines.
+
+```python
+from uqff_downhole_simulator import TelemetryConfig, TelemetryRecorder
+rec = TelemetryRecorder(config=TelemetryConfig(duration_hours=24.0, seed=11)).run()
+print(rec.telemetry_summary())
+rec.export_csv("field_telemetry.csv")
+```
+
+## v1.4.0 extension: depth-sweep case-study mode (Daniel-directed, 2026-08-23)
+
+`uqff_case_study.py` (`CaseStudyConfig` / `depth_sweep` / `case_study` /
+`write_markdown`) sweeps a well from top to TD — linear gradients or a real
+CSV profile — and reports both drift legs at every depth, the separation in
+psi/yr, the HPHT knee crossings, and the extra service life. Headlines
+identify **where the UQFF advantage is largest**: the deep hot interval past
+the 150 °C / 15,000 psi knees, exactly where gauges are hardest to replace
+(default well: 2.04 psi/yr flat below the knees growing to 3.04 psi/yr at
+20,000 ft; a 30,000-ft well reaches 4.21 psi/yr).
+
+`write_markdown()` renders the one-page customer-facing case: claim, depth
+table, headlines, the twin-gauge bench test to run, and the honest
+DERIVED_HYBRID classification note. Also a CLI:
+
+```
+python -m uqff_downhole_simulator.uqff_case_study --td 25000 --out case.md
+python -m uqff_downhole_simulator.uqff_case_study --profile my_well.csv --name "Well A-7"
+```
+
+## v1.5.0 extension: real-datasheet gauge specs (Daniel-directed, 2026-08-23)
+
+`uqff_gauge_specs.py` (`GaugeSpec` / `GAUGE_SPECS` / `load_gauge_spec_json`)
+runs the whole stack on a REAL gauge's published numbers instead of the
+template anchors. Every spec carries a mandatory `source` citation (an
+uncited spec is rejected — Rule 7). Web-verified presets, fetched 2026-08-23:
+`geoq177_16k` and `geoq177_30k` from the **GEO PSI GEOQ 177 public
+specification table** (Quartzdyne sensor; drift <0.01 %FS/yr; accuracy
+±0.02/±0.025 %FS; 177 °C), plus `template_generic` (the v1.0–1.4 default,
+labeled as the stressed-service class it is). Sourcing bonus: the ChampionX
+Quartzdyne performance page independently confirms the drift-vs-temperature
+mechanism with engineering focus at ≥150 °C — external support for the
+template's 150 °C knee anchor.
+
+Pass `spec=` to the physics functions, `gauge_spec=` to `SimulatorConfig` /
+`CaseStudyConfig`, and service-life picks it up from the engine (full scale
+included). With no spec, every number is bit-identical to v1.0–1.4.
+
+Honest scale disclosure: the datasheet drift bound is a reference-condition
+spec limit ~20× below the template's stressed-service baseline, so absolute
+separation shrinks accordingly (0.09–0.16 psi/yr vs 2–3 psi/yr) while the
+suppression RATIO (1.0324) is baseline-independent. Case-study reports name
+the spec and its citation on every page.
+
+```python
+from uqff_downhole_simulator import GAUGE_SPECS, CaseStudyConfig, case_study
+cs = case_study(CaseStudyConfig(gauge_spec=GAUGE_SPECS['geoq177_30k']))
+```
+
+## v1.6.0 extensions: deviation, batch runs, headless CLI (Daniel-directed, 2026-08-23)
+
+1. **Wellbore deviation (MD/TVD)** — `uqff_deviation.py`: gauges sit at
+   MEASURED depth (along the string); pressure and temperature are set by TRUE
+   VERTICAL depth. `DeviationSurvey.from_kickoff(md, inclination, td)` builds
+   the common vertical-then-tangent shape; `load_deviation_csv` reads real
+   survey pairs (`md_ft,tvd_ft`). Attach via `SimulatorConfig(deviation=...)`
+   or `CaseStudyConfig(deviation=...)`. On a 60° tangent from 8,000 ft, the
+   deepest gauge at MD 20,000 reads 6,525 psi / 327 °F where a vertical model
+   claims 9,315 psi / 435 °F — the deviation the vertical model cannot see.
+2. **Multi-well batch runs** — `run_batch({name: SimulatorConfig}, steps=N)`
+   runs a whole field in one call and returns per-well summaries (drift,
+   comparison ratio, deviation, spec) for field-wide studies.
+3. **Headless CLI** — `python -m uqff_downhole_simulator <run|service-life|telemetry|case-study>`
+   with shared well options (`--td --gauges --profile --spec --kickoff
+   --inclination`): every workflow now runs from a shell with no Python code
+   and no display.
+
+```
+python -m uqff_downhole_simulator run --steps 200 --gauges 8 --out run.csv
+python -m uqff_downhole_simulator case-study --td 22000 --kickoff 9000 --inclination 45 --spec geoq177_30k --out case.md
+```

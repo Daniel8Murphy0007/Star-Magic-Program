@@ -303,3 +303,6 @@ THE LEDGER SHIP: P2254 anchors (17 external) + P2255 open items (census series C
 
 ## v0.394.0 — 2026-08-22
 THE DOWNHOLE SHIP: PAPER_2256 + uqff_downhole_simulator v1.1.0 (first industry-application module; canonical-lock suppression 1.0324; N-gauge strings; CSV well profiles with kick capture; twin-gauge comparison ratio == suppression). Gate 5,777/0. 23-file pass verified.
+
+## v0.395.0 — 2026-08-23
+THE INSTRUMENT SHIP: uqff_downhole_simulator v1.2.0-v1.6.0 (service-life divergence curves; telemetry realism with scored QC; depth-sweep case studies; web-verified GEOQ 177 gauge specs with mandatory citations; MD/TVD deviation; batch runs; headless CLI). Suppression ratio 1.0324 invariant across geometry and baseline. Gate 5,800/0. 23-file pass verified.

@@ -11762,3 +11762,52 @@ Three extensions built and headless-verified:
   New files: PAPER_2256 whitepaper + the 8-file uqff_downhole_simulator package
   (v1.1.0 incl. sample_well_profile.csv). Awaiting Daniel: `.\ship.ps1` (clear
   .git/index.lock first).
+
+## Entry 267 — 2026-08-23 — v0.395.0 THE INSTRUMENT SHIP (downhole v1.2.0–v1.6.0)
+
+Daniel-directed refinement of the downhole simulator; the five-item extension
+list proposed post-v0.394.0 executed COMPLETE in one session:
+
+1. v1.2.0 `uqff_service_life.py` — drift rates integrated over service years,
+   twin-leg divergence curves (2.04→3.04 psi/yr per station at FS 30,000;
+   10–15 psi at the 5-yr horizon), recalibration resets, years-to-budget;
+   accumulated-error ratio → canonical suppression at every station.
+2. v1.3.0 `uqff_telemetry.py` — 1/min timestamped acquisition; line dropouts,
+   stuck gauges, spikes; historian quality flags; scored QC pipeline against
+   injected ground truth (frozen-value 1.0/1.0; Hampel + two-part common-mode
+   veto took spike-P precision 0.05→0.83–1.0; two authoring catches fixed:
+   MAD crushed by stuck runs, events mis-flagged as faults).
+3. v1.4.0 `uqff_case_study.py` — depth sweep + one-page markdown customer case
+   + CLI; advantage compounds past the HPHT knees (4.21 psi/yr at 27,000 ft).
+4. v1.5.0 `uqff_gauge_specs.py` — GaugeSpec with MANDATORY citation (uncited
+   specs rejected in code); web-verified GEO PSI GEOQ 177 (Quartzdyne) presets
+   (<0.01 %FS/yr, ±0.02/0.025 %FS, 177 °C; fetched 2026-08-23); unverified
+   "200 °C <0.02%" search-summary figure REFUSED as preset (Rule 7); ChampionX
+   page independently confirms the 150 °C knee anchor; separation honestly
+   rescales ~20x at the reference-condition bound, ratio baseline-independent.
+5. v1.6.0 `uqff_deviation.py` + `run_batch` + `__main__.py` — MD/TVD surveys
+   (kickoff kink pinned as exact station; 60° identity MD 20,000 → TVD 14,000
+   EXACT; deviated deepest gauge 6,525 vs vertical 9,315 psi); multi-well
+   batch (ratio 1.0325–1.0326 on ALL geometries — well-shape invariance
+   gate-pinned); headless CLI run|service-life|telemetry|case-study.
+
+PAPER_2256: +5 same-day appendices (one per version). Gate 5,777→5,800
+(+23 DOWNHOLE pins), 0 failures. Zero calculator physics changes, zero new
+dispatches (residual ratchet untouched). Ship prep: 6 pins at 0.395.0;
+SHIP GUARD v4.1 marker DOWNHOLE_ARC→INSTRUMENT_ARC (+ GAPS id
+instrument_arc_rule7); README release paragraph/campaign line/shipped header;
+CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 10 INSTRUMENT_ARC
+trail rows. Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+### Entry 267 addendum — v0.395.0 RED GATE on Daniel's machine (portability) — FIXED
+
+Daniel's `.\ship.ps1` failed: the v1.3.0 telemetry gate pin exported to a
+hard-coded Unix temp path — green on the Linux authoring sandbox,
+FileNotFoundError on Windows. First gate failure whose cause was the HOST OS,
+not the physics. Fix: both offending pins (telemetry export, case-study render)
+now build scratch paths via tempfile.gettempdir(); the v1.6.0 CLI pin already
+used tempfile.mkdtemp. PERMANENT PORTABILITY GUARD added: the gate scans its
+own source for quote-adjacent Unix temp-path literals (needle constructed at
+runtime so the guard cannot self-match) — the mistake cannot be reintroduced.
+Gate 5,800 → 5,801; README badge + pyproject description synced. Standing
+lesson for the charter set: gate pins write scratch files ONLY via tempfile.

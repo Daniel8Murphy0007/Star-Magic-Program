@@ -38,12 +38,41 @@ from .uqff_downhole_engine import (
     DEFAULT_TD_FT,
     DEFAULT_SENSOR_DEPTHS_FT,
 )
+from .uqff_service_life import (
+    ServiceLifeConfig,
+    ServiceLifeSimulator,
+)
+from .uqff_telemetry import (
+    TelemetryConfig,
+    TelemetryRecorder,
+)
+from .uqff_case_study import (
+    CaseStudyConfig,
+    case_study,
+    depth_sweep,
+    write_markdown,
+)
+from .uqff_gauge_specs import (
+    GaugeSpec,
+    GAUGE_SPECS,
+    load_gauge_spec_json,
+)
+from .uqff_deviation import (
+    DeviationSurvey,
+    load_deviation_csv,
+)
+from .uqff_downhole_engine import run_batch
 
-__version__ = "1.1.0"
+__version__ = "1.6.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
     "UQFF_AVAILABLE", "Sensor", "SimulatorConfig", "UQFFDownholeEngine",
     "WellProfile", "load_well_profile_csv", "make_sensor_string",
+    "ServiceLifeConfig", "ServiceLifeSimulator",
+    "TelemetryConfig", "TelemetryRecorder",
+    "CaseStudyConfig", "case_study", "depth_sweep", "write_markdown",
+    "GaugeSpec", "GAUGE_SPECS", "load_gauge_spec_json",
+    "DeviationSurvey", "load_deviation_csv", "run_batch",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
 ]

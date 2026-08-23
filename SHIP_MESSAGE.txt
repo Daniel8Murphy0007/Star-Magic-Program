@@ -1,44 +1,21 @@
-v0.394.0 - THE DOWNHOLE SHIP: the framework goes to work
+v0.395.0 - THE INSTRUMENT SHIP: the simulator becomes a complete instrument
 
-PAPER_2256 + uqff_downhole_simulator v1.1.0 - the program's first packaged
-industry-application module, built from Daniel's 22Aug2026 template thread
-(grok_cce7a73b) on same-day GO.
+uqff_downhole_simulator v1.2.0-v1.6.0 - the Daniel-directed extension list,
+complete in one session (2026-08-23):
 
-THE MODULE. A deep-well HPHT simulator (TD ~20,300 ft) with a quartz P/T
-gauge string whose drift is suppressed by the canonical lattice:
+- v1.2.0 service-life drift ACCUMULATION: twin-leg divergence curves over
+  simulated service years; recalibration resets; years-to-error-budget;
+  accumulated-error ratio converges to the canonical suppression (1.0324).
+- v1.3.0 field-telemetry REALISM: 1/min timestamped acquisition; dropouts,
+  stuck gauges, spikes with quality flags; scored QC pipeline (frozen-value
+  1.0/1.0; Hampel + common-mode veto, spike-P precision 0.83-1.0).
+- v1.4.0 depth-sweep CASE-STUDY mode: where the advantage is largest
+  (2.04 -> 3.04 psi/yr toward TD); one-page markdown customer case.
+- v1.5.0 real-DATASHEET gauge specs: web-verified GEO PSI GEOQ 177
+  (Quartzdyne) presets, mandatory citations, uncited specs rejected in code;
+  ratio baseline-independent, psi/yr honestly rescaled at the spec bound.
+- v1.6.0 DEVIATION (MD/TVD surveys), multi-well BATCH runs (ratio invariant
+  across geometries), package-level headless CLI (4 subcommands).
 
-  suppression = (0.58+0.32*(1-F_TRZ)) * (0.52+0.38*K_MEX) * (0.68+0.27*Phi_res)
-              = 1.0324 at the locked {0.1, 25/12, 0.84}
-
-- drift BELOW the 0.215 %FS/yr industry baseline (0.336 %FS/yr at the HPHT
-flagship 6,200 m / 205 C / 18,500 psi, verified live).
-
-THE KNOB RULING (Rule 2). The template's adjustable "K_MEX" (1.15) and
-"Phi_res" (0.93) sliders were tuning gains wearing primitive names. The
-canonical values are LOCKED inside the physics (the dispatch re-verifies the
-lock on every call); the sliders are renamed k_structural_trim /
-phi_coupling_trim - honest engineering instrument gains. The Qt6 GUI shows
-the locked canonicals read-only.
-
-v1.1.0 EXTENSIONS (Daniel-directed, same session):
-1. N-gauge strings - make_sensor_string(n); verified at 12 gauges.
-2. Real well profiles from CSV - load_well_profile_csv (depth_ft,
-   pressure_psi, temp_F); the shipped sample carries an HPHT overpressure
-   kick below 16,500 ft that the linear model CANNOT see (9,313 psi) and the
-   profile CAPTURES (18,405 psi at the deepest gauge).
-3. Twin-gauge drift-comparison mode - every station carries a conventional
-   reference gauge (same baseline + stress, suppression = 1). Away from the
-   clip band the measured conventional/UQFF ratio EQUALS the canonical
-   suppression: 1.0326 vs 1.0324 single-point; 1.0325 mean across a 12-gauge
-   string on the real profile. The PAPER_2250 quartz bench test now has its
-   complete simulation instrument, with comparison columns in the CSV export.
-
-Engineering: four modules (physics / headless engine / matplotlib demo /
-optional guarded Qt6) + README with full provenance + sample profile;
-installable package; DERIVED_HYBRID per P2149 with every industry anchor
-inline-commented; the gate runs a 12-gauge profile string, the kick-capture
-check, and the ratio-equality check headlessly on every pass.
-
-Gate 5,768 -> 5,777. Keys 2,306 -> 2,307. Defs 4,178 -> 4,179.
-Whitepapers +1 (PAPER_2256). New package + sample profile in data-files.
-Next paper: PAPER_2257.
+Gate 5,777 -> 5,800 (+23 DOWNHOLE pins). PAPER_2256 +5 appendices.
+Zero calculator physics changes; zero new dispatches. 23-file pass.

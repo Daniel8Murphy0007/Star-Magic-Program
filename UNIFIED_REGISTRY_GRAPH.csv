@@ -12240,3 +12240,4 @@ downhole_simulator,PAPER_2256,CLASSIFIED,PAPER_2149,DERIVED_HYBRID with inline-c
 knob_ruling_record,PAPER_2256,ENFORCES,RULE_2,primitive names never carry tuning values
 downhole_simulator,PAPER_2256,SUPPLIES,PAPER_2250,the simulation side of the quartz bench-test LABORATORY row
 downhole_v110_extensions,PAPER_2256,COMPLETES,BENCH_TEST_SIMULATION,measured ratio equals canonical suppression away from clip
+downhole_v12_v16_extensions,PAPER_2256,COMPLETES,INSTRUMENT_ARC,v1.2-v1.6 five extension layers; suppression ratio invariant across baseline and well geometry

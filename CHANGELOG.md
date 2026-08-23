@@ -7,6 +7,34 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.395.0 — 2026-08-23 — THE INSTRUMENT SHIP
+
+`uqff_downhole_simulator` v1.2.0–v1.6.0 (Daniel-directed extension list, complete):
+
+- **v1.2.0 service-life drift accumulation** — twin-leg divergence curves over
+  simulated service years (2–3 psi/yr per station at FS 30,000; 10–15 psi at 5 yr),
+  recalibration resets, years-to-error-budget arithmetic; accumulated-error ratio
+  converges to the canonical suppression at every station.
+- **v1.3.0 field-telemetry realism** — 1-reading/min timestamped acquisition, line
+  dropouts, stuck gauges, spikes with historian quality flags; scored QC pipeline
+  (frozen-value detection 1.0/1.0; Hampel despiker with two-part common-mode veto,
+  spike-P precision 0.83–1.0) exporting field-historian CSVs.
+- **v1.4.0 depth-sweep case-study mode** — where the advantage is largest (2.04 →
+  3.04 psi/yr toward TD; 4.21 on a 30,000-ft well); one-page markdown customer case
+  with the honest DERIVED_HYBRID note; CLI.
+- **v1.5.0 real-datasheet gauge specs** — web-verified GEO PSI GEOQ 177 (Quartzdyne)
+  presets with mandatory citations (uncited specs REJECTED in code); suppression
+  ratio baseline-independent, psi/yr story honestly rescaled (~20x smaller at the
+  reference-condition spec bound); unverified search-summary figure refused.
+- **v1.6.0 deviation + batch + CLI** — MD/TVD surveys (60° tangent: 6,525 vs
+  vertical-model 9,315 psi at the deepest gauge), multi-well batch runs (ratio
+  invariant across geometries), package-level headless CLI (4 subcommands).
+
+Gate 5,777 → 5,800 (+23 DOWNHOLE pins across v1.2–v1.6). PAPER_2256 carries five
+same-day appendices. Zero calculator physics changes; zero new dispatches.
+
+---
+
 ## v0.394.0 — 2026-08-22 — THE DOWNHOLE SHIP
 
 - **PAPER_2256 + uqff_downhole_simulator v1.1.0 (NEW PACKAGE):** the first industry-

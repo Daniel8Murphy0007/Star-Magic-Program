@@ -105,6 +105,8 @@ class SimulatorConfig:
     history_length: int = 400
     profile: Optional[WellProfile] = None           # real well profile (CSV); overrides gradients
     comparison_mode: bool = True                    # twin-gauge UQFF-vs-conventional tracking
+    gauge_spec: object = None                       # GaugeSpec (v1.5.0, uqff_gauge_specs); None = template anchors
+    deviation: object = None                        # DeviationSurvey (v1.6.0): sensors at MD, physics at TVD
 
 
 class UQFFDownholeEngine:
@@ -127,18 +129,26 @@ class UQFFDownholeEngine:
             for i, d in enumerate(self.cfg.sensor_depths_ft)
         ]
 
+    def _physics_depth_ft(self, md_ft: float) -> float:
+        """Sensor addresses are MD (position on the string); pressure and
+        temperature are set by TVD (v1.6.0 deviation support)."""
+        if self.cfg.deviation is not None:
+            return float(self.cfg.deviation.tvd_of(md_ft))
+        return float(md_ft)
+
     def _init_state(self) -> None:
+        tvds = [self._physics_depth_ft(s.depth_ft) for s in self.sensors]
         if self.cfg.profile is not None:
-            pairs = [self.cfg.profile.interp(s.depth_ft) for s in self.sensors]
+            pairs = [self.cfg.profile.interp(tvd) for tvd in tvds]   # profiles are TVD-indexed
             self.base_P = np.array([p for p, _ in pairs], dtype=float)
             self.base_T = np.array([tF for _, tF in pairs], dtype=float)
         else:
             self.base_P = np.array(
-                [self.cfg.surface_pressure_psi + s.depth_ft * self.cfg.pressure_gradient_psi_per_ft
-                 for s in self.sensors], dtype=float)
+                [self.cfg.surface_pressure_psi + tvd * self.cfg.pressure_gradient_psi_per_ft
+                 for tvd in tvds], dtype=float)
             self.base_T = np.array(
-                [self.cfg.surface_temp_F + s.depth_ft * self.cfg.temp_gradient_F_per_ft
-                 for s in self.sensors], dtype=float)
+                [self.cfg.surface_temp_F + tvd * self.cfg.temp_gradient_F_per_ft
+                 for tvd in tvds], dtype=float)
         self.P = self.base_P.copy()
         self.T = self.base_T.copy()
         self.history_t: List[float] = [0.0]
@@ -152,7 +162,8 @@ class UQFFDownholeEngine:
         r = calculate_quartz_transducer_hpht_UQFF(
             depth_m=depth_m, temp_c=temp_C, pressure_psi=pressure_psi,
             k_structural_trim=sensor.k_structural_trim,
-            phi_coupling_trim=sensor.phi_coupling_trim)
+            phi_coupling_trim=sensor.phi_coupling_trim,
+            spec=self.cfg.gauge_spec)
         return float(r["value"]["drift_pct"])
 
     @property
@@ -166,7 +177,7 @@ class UQFFDownholeEngine:
         out = []
         for i in range(len(self.sensors)):
             temp_C = (self.T[i] - 32.0) * 5.0 / 9.0
-            out.append(conventional_drift(temp_C, self.P[i]))
+            out.append(conventional_drift(temp_C, self.P[i], spec=self.cfg.gauge_spec))
         return np.array(out)
 
     def comparison_summary(self) -> dict:
@@ -256,5 +267,19 @@ class UQFFDownholeEngine:
             "avg_drift_pct": round(float(np.mean(self.current_drifts)), 4),
             "history_points": len(self.history_t),
             "profile": self.cfg.profile.name if self.cfg.profile else "linear gradients",
+            "deviation": self.cfg.deviation.name if self.cfg.deviation is not None else "vertical (MD == TVD)",
+            "gauge_spec": getattr(self.cfg.gauge_spec, 'name', None) or "template_generic (default)",
             "comparison": self.comparison_summary() if self.cfg.comparison_mode else None,
         }
+
+
+def run_batch(wells: dict, steps: int = 100, dt: float = 0.12) -> dict:
+    """Multi-well batch (v1.6.0): run each named SimulatorConfig for `steps`
+    and return {well_name: summary}. A field-wide study in one call."""
+    out = {}
+    for name, cfg in wells.items():
+        eng = UQFFDownholeEngine(cfg)
+        for _ in range(int(steps)):
+            eng.step(dt=dt)
+        out[name] = eng.summary()
+    return out

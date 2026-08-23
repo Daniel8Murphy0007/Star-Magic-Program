@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.394.0"
-description = "Star-Magic UQFF calculator v0.394.0: THE DOWNHOLE SHIP. 2,252 dispatches (2,307 keys), gate 5,777/0. PAPER_2256 + uqff_downhole_simulator v1.1.0 - the first packaged industry-application module: HPHT quartz-gauge string with canonical-lock drift suppression (K_MEX=25/12, Phi_res=0.84; suppression 1.0324 - drift BELOW industry baseline), N-gauge strings, real well profiles from CSV (sample HPHT kick zone), twin-gauge comparison mode (measured ratio == suppression). Next: PAPER_2257."
+version = "0.395.0"
+description = "Star-Magic UQFF calculator v0.395.0: THE INSTRUMENT SHIP. 2,252 dispatches (2,307 keys), gate 5,801/0. uqff_downhole_simulator v1.2.0-v1.6.0: service-life divergence curves, field-telemetry realism with scored QC, depth-sweep customer case studies, web-verified datasheet gauge specs (GEO PSI GEOQ 177 / Quartzdyne), MD/TVD wellbore deviation, multi-well batch runs, headless CLI. Suppression ratio 1.0324 invariant across geometry and baseline. Next: PAPER_2257."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

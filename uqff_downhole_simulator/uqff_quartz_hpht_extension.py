@@ -72,7 +72,8 @@ def calculate_quartz_transducer_hpht_UQFF(depth_m: float,
                                           temp_c: float,
                                           pressure_psi: float,
                                           k_structural_trim: float = 1.0,
-                                          phi_coupling_trim: float = 1.0) -> dict:
+                                          phi_coupling_trim: float = 1.0,
+                                          spec=None) -> dict:
     """Physics-informed quartz HPHT drift model (UQFF-stabilized).
 
     Returns the template's rich dictionary shape, current-API values.
@@ -80,15 +81,31 @@ def calculate_quartz_transducer_hpht_UQFF(depth_m: float,
     (industry spec class); 150 C thermal knee / 15,000 psi pressure knee with
     exponents 1.15 / 0.9 (template engineering fit); clip band 0.035-0.48 %FS/yr
     (physical plausibility bounds, template).
+
+    `spec` (v1.5.0): an optional GaugeSpec (uqff_gauge_specs) replacing the
+    template anchors with a cited datasheet's baseline/knees/exponents. The
+    clip band scales proportionally with the baseline so a datasheet bound
+    ~20x below the template baseline is not floored by template-scaled clips.
+    With spec=None every number is bit-identical to v1.0-1.4.
     """
-    thermal_stress = max(0.0, (temp_c - 150.0) / 80.0) ** 1.15        # anchor: 150 C knee (industry)
-    pressure_stress = max(0.0, (pressure_psi - 15000.0) / 5000.0) ** 0.9  # anchor: 15 kpsi knee (industry)
+    base_drift = 0.215          # anchor: %FS/yr typical good-quartz baseline (industry)
+    knee_C, knee_psi = 150.0, 15000.0   # anchors: industry knees (template; ChampionX confirms >=150 C focus)
+    exp_T, exp_P = 1.15, 0.9            # template engineering fit
+    if spec is not None:
+        base_drift = float(spec.baseline_drift_pct_fs_yr)
+        knee_C = float(spec.thermal_knee_C)
+        knee_psi = float(spec.pressure_knee_psi)
+        exp_T = float(spec.thermal_exponent)
+        exp_P = float(spec.pressure_exponent)
+
+    thermal_stress = max(0.0, (temp_c - knee_C) / 80.0) ** exp_T
+    pressure_stress = max(0.0, (pressure_psi - knee_psi) / 5000.0) ** exp_P
 
     suppression = canonical_suppression(k_structural_trim, phi_coupling_trim)
 
-    base_drift = 0.215   # anchor: %FS/yr typical good-quartz baseline (industry)
     drift = base_drift * (1.0 + 0.55 * thermal_stress + 0.35 * pressure_stress) / suppression
-    drift = min(max(drift, 0.035), 0.48)   # clip band (template plausibility bounds)
+    clip_scale = base_drift / 0.215     # clip band scales with the baseline (template-exact at 0.215)
+    drift = min(max(drift, 0.035 * clip_scale), 0.48 * clip_scale)
 
     expected_temp_c = 15.0 + (depth_m / 1000.0) * 29.5   # anchor: ~29.5 C/km geothermal gradient
     hydrostatic_psi = depth_m * 3.28084 * 0.465          # anchor: 0.465 psi/ft gradient
@@ -107,26 +124,37 @@ def calculate_quartz_transducer_hpht_UQFF(depth_m: float,
             "expected_temp_c": round(expected_temp_c, 1),
             "hydrostatic_psi": round(hydrostatic_psi, 0),
             "uqff_live": UQFF_AVAILABLE,
+            "gauge_spec": spec.name if spec is not None else "template_generic (default)",
         },
         "classification": "DERIVED_HYBRID (PAPER_2149): industry baseline x canonical-UQFF suppression",
         "notes": "star-magic-program port of the 22Aug2026 QCALCGEOM template; knob ruling applied",
     }
 
 
-def conventional_drift(temp_c: float, pressure_psi: float) -> float:
-    """Conventional-gauge drift: SAME industry baseline and stress dressing,
-    NO UQFF suppression (suppression = 1). The comparison-mode reference leg.
+def conventional_drift(temp_c: float, pressure_psi: float, spec=None) -> float:
+    """Conventional-gauge drift: SAME baseline and stress dressing as the UQFF
+    leg (from the template anchors or the given GaugeSpec), NO UQFF suppression
+    (suppression = 1). The comparison-mode reference leg.
     """
-    thermal_stress = max(0.0, (temp_c - 150.0) / 80.0) ** 1.15
-    pressure_stress = max(0.0, (pressure_psi - 15000.0) / 5000.0) ** 0.9
     base_drift = 0.215   # anchor: same industry baseline as the UQFF leg
+    knee_C, knee_psi, exp_T, exp_P = 150.0, 15000.0, 1.15, 0.9
+    if spec is not None:
+        base_drift = float(spec.baseline_drift_pct_fs_yr)
+        knee_C = float(spec.thermal_knee_C)
+        knee_psi = float(spec.pressure_knee_psi)
+        exp_T = float(spec.thermal_exponent)
+        exp_P = float(spec.pressure_exponent)
+    thermal_stress = max(0.0, (temp_c - knee_C) / 80.0) ** exp_T
+    pressure_stress = max(0.0, (pressure_psi - knee_psi) / 5000.0) ** exp_P
     drift = base_drift * (1.0 + 0.55 * thermal_stress + 0.35 * pressure_stress)
-    return min(max(drift, 0.035), 0.48)
+    clip_scale = base_drift / 0.215
+    return min(max(drift, 0.035 * clip_scale), 0.48 * clip_scale)
 
 
 def drift_comparison(depth_m: float, temp_c: float, pressure_psi: float,
                      k_structural_trim: float = 1.0,
-                     phi_coupling_trim: float = 1.0) -> dict:
+                     phi_coupling_trim: float = 1.0,
+                     spec=None) -> dict:
     """Twin-gauge comparison at matched T/P: UQFF-stabilized vs conventional.
 
     The module's substantive testable claim (PAPER_2256 sec 5): away from the
@@ -135,8 +163,8 @@ def drift_comparison(depth_m: float, temp_c: float, pressure_psi: float,
     of the quartz bench test (PAPER_2250 LABORATORY tier).
     """
     uq = calculate_quartz_transducer_hpht_UQFF(
-        depth_m, temp_c, pressure_psi, k_structural_trim, phi_coupling_trim)
-    conv = conventional_drift(temp_c, pressure_psi)
+        depth_m, temp_c, pressure_psi, k_structural_trim, phi_coupling_trim, spec=spec)
+    conv = conventional_drift(temp_c, pressure_psi, spec=spec)
     uqd = uq["value"]["drift_pct"]
     sup = uq["value"]["suppression"]
     return {

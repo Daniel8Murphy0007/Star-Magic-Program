@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.394.0", "uqff_calculator.VERSION = 0.394.0 (the downhole ship: PAPER_2256 + uqff_downhole_simulator v1.1.0 - the first industry-application module)")
+assert_that(C.VERSION == "0.395.0", "uqff_calculator.VERSION = 0.395.0 (the instrument ship: uqff_downhole_simulator v1.2.0-v1.6.0 - the simulator becomes a complete instrument)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'DOWNHOLE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'INSTRUMENT_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('downhole_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('instrument_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,15 +12592,15 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.1.0' and len(_ds11.make_sensor_string(12)) == 12,
-            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges)")
+assert_that(_ds11.__version__ == '1.6.0' and len(_ds11.make_sensor_string(12)) == 12,
+            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.6.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
 _e11 = _ds11.UQFFDownholeEngine(_cfg11)
@@ -12613,6 +12613,135 @@ for _ in range(10): _e11.step()
 _c11 = _e11.comparison_summary()
 assert_that(_c11['avg_conventional_drift_pct'] > _c11['avg_uqff_drift_pct'],
             "DOWNHOLE v1.1.0: twin-gauge run - conventional reference drift exceeds UQFF-stabilized drift across the 12-gauge profile string (headless, per gate run); comparison columns in CSV export")
+
+# ---- PAPER_2256 v1.2.0 EXTENSION (service-life drift accumulation) ----
+_slc = _ds11.ServiceLifeConfig(years=5.0, dt_days=7.0, random_walk_pct_fs_per_sqrt_yr=0.0)
+_sl = _ds11.ServiceLifeSimulator(config=_slc).run()
+_sls = _sl.divergence_summary()
+assert_that(all(_sls['conv_rate_pct_fs_yr'][i] > _sls['uqff_rate_pct_fs_yr'][i]
+                for i in range(len(_sls['uqff_rate_pct_fs_yr']))),
+            "DOWNHOLE v1.2.0: service-life twin legs - conventional accumulation rate exceeds UQFF-stabilized rate at every station of the default 6-gauge well (deterministic run, headless)")
+assert_that(all(abs(_r - _sls['predicted_ratio_suppression']) < 0.001
+                for _r in _sls['measured_ratio_final']),
+            "DOWNHOLE v1.2.0: divergence-curve ratio check - the accumulated-error ratio at the 5-yr horizon converges to the canonical suppression (1.0324 at unity trims) at every station - the separation-you-would-measure form of the sec-5 bench-test claim")
+assert_that(all(_s > 0 for _s in _sls['final_separation_psi'])
+            and _sls['final_separation_psi'][-1] > _sls['final_separation_psi'][0],
+            "DOWNHOLE v1.2.0: separation grows with depth - final 5-yr separation positive at every station and largest at the deepest/hottest gauge (10-15 psi at FS 30,000 psi, deterministic)")
+assert_that(all(_sls['years_to_budget_uqff'][i] > _sls['years_to_budget_conventional'][i]
+                for i in range(len(_sls['uqff_rate_pct_fs_yr']))),
+            "DOWNHOLE v1.2.0: service-life arithmetic - years-to-error-budget (0.5 %FS anchor) is LONGER for the UQFF leg at every station; extra service life is the suppression's field-value statement")
+_slc2 = _ds11.ServiceLifeConfig(years=5.0, dt_days=7.0, random_walk_pct_fs_per_sqrt_yr=0.0,
+                                recalibration_interval_years=2.0)
+_sl2 = _ds11.ServiceLifeSimulator(config=_slc2).run()
+_sls2 = _sl2.divergence_summary()
+assert_that(len(_sls2['recalibrations']) == 2 and
+            _sls2['final_separation_psi'][0] < _sls['final_separation_psi'][0] / 2.0,
+            "DOWNHOLE v1.2.0: recalibration resets - two recal events land in a 5-yr / 2-yr-interval run, both legs zeroed, post-recal separation rebuilds from zero at the predicted rate")
+
+# ---- PAPER_2256 v1.3.0 EXTENSION (field-telemetry realism) ----
+_tr = _ds11.TelemetryRecorder(config=_ds11.TelemetryConfig(duration_hours=24.0, seed=11)).run()
+_ts = _tr.telemetry_summary()
+assert_that(_ts['samples'] == 1440 and _ts['sample_interval_s'] == 60.0
+            and 90.0 < _ts['uptime_pct'] <= 100.0,
+            "DOWNHOLE v1.3.0: field-cadence acquisition - 24 h at 1 reading/min (permanent-quartz telemetry class) = 1,440 timestamped samples per gauge; line-dropout bursts hold uptime in the realistic band (seeded, headless)")
+assert_that(_ts['stuck_samples'] > 0 and _ts['spike_score_P']['injected'] > 0
+            and _ts['spike_score_T']['injected'] > 0 and _ts['missing_samples'] > 0,
+            "DOWNHOLE v1.3.0: fault injector - all three fault classes land in the seeded 24-h run (line dropouts, stuck gauges, per-channel spikes) with ground-truth masks kept for honest scoring")
+assert_that(_ts['stuck_score']['precision'] == 1.0 and _ts['stuck_score']['recall'] == 1.0,
+            "DOWNHOLE v1.3.0: frozen-value QC - identical-consecutive-sample detection scores precision 1.0 / recall 1.0 against injected ground truth (live noise never repeats a float); stuck runs excluded from filter statistics")
+assert_that(_ts['spike_score_P']['precision'] >= 0.8 and _ts['spike_score_P']['recall'] >= 0.6
+            and _ts['spike_score_T']['recall'] >= 0.9,
+            "DOWNHOLE v1.3.0: scored despiker - Hampel + two-part common-mode veto (coincidence + median-residual: a gauge fault hits ONE gauge, a well transient hits the STRING) holds spike-P precision >= 0.8 and recalls at the honest sub-threshold-limited floors")
+import tempfile as _tt13, os as _to13
+_tp = _tr.export_csv(_to13.path.join(_tt13.gettempdir(), '_gate_telemetry.csv'))
+import csv as _tcsv
+with open(_tp) as _tf:
+    _trows = list(_tcsv.reader(_tf))
+assert_that(len(_trows) == 1441 and 'timestamp' in _trows[0][0]
+            and any('MISSING' in _r for _r in _trows[1:]),
+            "DOWNHOLE v1.3.0: field-historian export - ISO timestamps, per-gauge raw + quality flag + cleaned columns, blanks on dropout - a ready-made test bench for downhole analysis pipelines")
+
+# ---- PAPER_2256 v1.4.0 EXTENSION (depth-sweep case-study mode) ----
+_cs = _ds11.case_study()
+_csr = _cs['rows']
+assert_that(len(_csr) == 12 and _cs['canonical_suppression'] == 1.0324,
+            "DOWNHOLE v1.4.0: depth sweep - 12-point top-to-TD sweep runs from the same gate-verified physics layer with the canonical suppression 1.0324 at unity trims")
+assert_that(all(_r['conv_drift_pct_fs_yr'] > _r['uqff_drift_pct_fs_yr'] for _r in _csr)
+            and _csr[-1]['separation_psi_yr'] > _csr[0]['separation_psi_yr'],
+            "DOWNHOLE v1.4.0: advantage compounds with depth - UQFF drift below conventional at EVERY depth; past the HPHT knees the stress dressing multiplies both legs so the absolute separation grows toward TD (2.04 -> 3.04 psi/yr on the default well)")
+_cs30 = _ds11.case_study(_ds11.CaseStudyConfig(td_ft=30000.0, well_name='gate deep well'))
+assert_that(_cs30['headline']['best_separation_psi_yr'] > _cs['headline']['best_separation_psi_yr']
+            and _cs30['headline']['hpht_interval_top_ft'] is not None,
+            "DOWNHOLE v1.4.0: deep-well headline - a 30,000-ft well shows a larger best separation (~4.2 psi/yr) than the default well and a located HPHT interval top - the case-study argument that the advantage is largest where intervention costs most")
+import tempfile as _tt14, os as _to14
+_csp = _ds11.write_markdown(_cs, _to14.path.join(_tt14.gettempdir(), '_gate_case_study.md'))
+with open(_csp, encoding='utf-8') as _cf:
+    _ctxt = _cf.read()
+assert_that(all(_s in _ctxt for _s in ('The claim', 'Depth sweep', 'Headlines', 'How to test it', 'Classification', 'DERIVED_HYBRID', '1.0324')),
+            "DOWNHOLE v1.4.0: one-page customer case renders - claim, depth table, headlines, bench-test instructions, and the honest DERIVED_HYBRID classification with anchors disclosed (PAPER_2149/Rule 7)")
+
+# ---- PAPER_2256 v1.5.0 EXTENSION (real-datasheet gauge specs) ----
+_r15 = _ds11.calculate_quartz_transducer_hpht_UQFF(6200, 205, 18500)
+assert_that(_r15['value']['drift_pct'] == 0.3356,
+            "DOWNHOLE v1.5.0: backward compatibility - with spec=None the template-anchor flagship value 0.3356 %FS/yr is bit-identical to v1.0-1.4 (no numeric drift from the spec plumbing)")
+assert_that(all(_g.source and len(_g.source) > 40 for _g in _ds11.GAUGE_SPECS.values())
+            and _ds11.GAUGE_SPECS['geoq177_30k'].baseline_drift_pct_fs_yr == 0.01
+            and 'geopsi.com' in _ds11.GAUGE_SPECS['geoq177_30k'].source,
+            "DOWNHOLE v1.5.0: cited presets - every GaugeSpec carries a substantive source citation; the geoq177 presets carry the web-verified GEO PSI public spec table values (Quartzdyne sensor, <0.01 %FS/yr, fetched 2026-08-23)")
+_d15 = _ds11.drift_comparison(3000, 180, 16000, spec=_ds11.GAUGE_SPECS['geoq177_30k'])
+assert_that(abs(_d15['measured_ratio'] - _d15['predicted_ratio_suppression']) < 0.005
+            and _d15['uqff_drift_pct'] < 0.02,
+            "DOWNHOLE v1.5.0: baseline-independent claim - at the datasheet baseline (~20x below the stressed-service class) the conventional/UQFF ratio still equals the canonical suppression; the absolute psi/yr story scales with the cited baseline (honest scale disclosure)")
+import json as _j15, tempfile as _t15, os as _o15
+_f15 = _t15.NamedTemporaryFile('w', suffix='.json', delete=False); _j15.dump({'name': 'x', 'full_scale_psi': 1.0, 'baseline_drift_pct_fs_yr': 1.0}, _f15); _f15.close()
+try:
+    _ds11.load_gauge_spec_json(_f15.name)
+    _rej15 = False
+except ValueError:
+    _rej15 = True
+_o15.unlink(_f15.name)
+assert_that(_rej15,
+            "DOWNHOLE v1.5.0: Rule 7 enforcement in code - load_gauge_spec_json REJECTS a spec without a source citation (a spec without a citation is not a spec)")
+_cs15 = _ds11.case_study(_ds11.CaseStudyConfig(gauge_spec=_ds11.GAUGE_SPECS['geoq177_30k']))
+assert_that(_cs15['config']['gauge_spec'] == 'geoq177_30k' and 'geopsi.com' in _cs15['config']['gauge_spec_source']
+            and _cs15['headline']['best_separation_psi_yr'] < 0.5,
+            "DOWNHOLE v1.5.0: spec-carrying case study - the report names the datasheet and its citation, and the headline separation honestly reflects the reference-condition spec bound (~0.15 psi/yr, not the stressed-service 3 psi/yr)")
+
+# ---- PAPER_2256 v1.6.0 EXTENSIONS (deviation MD/TVD, batch runs, headless CLI) ----
+import math as _m16
+_dev16 = _ds11.DeviationSurvey.from_kickoff(kickoff_md_ft=8000.0, inclination_deg=60.0, td_md_ft=20300.0)
+assert_that(_dev16.tvd_of(8000.0) == 8000.0 and abs(_dev16.tvd_of(20000.0) - 14000.0) < 1.0,
+            "DOWNHOLE v1.6.0: MD/TVD deviation - kickoff-and-tangent survey holds the kink exactly (TVD == MD at kickoff) and the 60-deg identity: MD 20,000 -> TVD 8,000 + 12,000*cos(60) = 14,000")
+_ev16 = _ds11.UQFFDownholeEngine(_ds11.SimulatorConfig())
+_ed16 = _ds11.UQFFDownholeEngine(_ds11.SimulatorConfig(deviation=_dev16))
+assert_that(float(_ed16.base_P[-1]) < float(_ev16.base_P[-1]) and float(_ed16.base_T[-1]) < float(_ev16.base_T[-1]),
+            "DOWNHOLE v1.6.0: deviated physics - sensors addressed at MD, physics evaluated at TVD: the deviated well reads LOWER base P and T at every deep station than the vertical model (6,525 vs 9,315 psi at the deepest gauge)")
+_b16 = _ds11.run_batch({'vertical': _ds11.SimulatorConfig(),
+                        'deviated': _ds11.SimulatorConfig(deviation=_dev16)}, steps=10)
+assert_that(len(_b16) == 2 and all(abs(_s['comparison']['measured_ratio_mean'] - 1.0324) < 0.002 for _s in _b16.values()),
+            "DOWNHOLE v1.6.0: batch runs - a multi-well batch returns per-well summaries and the comparison ratio holds the canonical suppression on EVERY geometry (the locked-primitive claim is well-shape invariant)")
+from uqff_downhole_simulator.__main__ import main as _cli16
+import tempfile as _tf16, os as _os16, io as _io16, contextlib as _cl16
+_d16 = _tf16.mkdtemp()
+with _cl16.redirect_stdout(_io16.StringIO()):   # keep the gate report quiet
+    _rc16a = _cli16(['run', '--steps', '5', '--gauges', '3', '--out', _os16.path.join(_d16, 'r.csv')])
+    _rc16b = _cli16(['case-study', '--td', '22000', '--kickoff', '9000', '--inclination', '45',
+                     '--spec', 'geoq177_30k', '--out', _os16.path.join(_d16, 'c.md')])
+assert_that(_rc16a == 0 and _rc16b == 0 and _os16.path.exists(_os16.path.join(_d16, 'c.md')),
+            "DOWNHOLE v1.6.0: headless CLI - python -m uqff_downhole_simulator subcommands execute with no display, including a deviated-well + cited-datasheet case study in one command")
+
+# --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
+# The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:
+# green on the Linux authoring sandbox, FileNotFoundError on Windows at ship
+# time - the first gate assertion whose failure mode was the HOST OS rather
+# than the physics. Standing rule: gate pins write scratch files ONLY via
+# tempfile. This guard scans the gate's own source (needle constructed at
+# runtime so the guard cannot match itself).
+with open(__file__, encoding='utf-8', errors='ignore') as _pg_f:
+    _pg_src = _pg_f.read()
+_pg_needle = chr(47) + 'tmp' + chr(47)
+assert_that(_pg_src.count("'" + _pg_needle) + _pg_src.count('"' + _pg_needle) == 0,
+            "PORTABILITY GUARD: no hard-coded Unix temp-path literals in the gate - scratch paths must come from tempfile.gettempdir()/mkdtemp() so the gate runs green on Windows AND Linux (v0.395.0 red-gate lesson)")
 
 # =============================================================================
 # REPORT

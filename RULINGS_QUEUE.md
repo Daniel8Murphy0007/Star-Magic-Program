@@ -6552,3 +6552,6 @@ uses per P2254). The open-items ledger recorded and closed its own first two ent
 
 Knob ruling EXECUTED (Daniel GO): canonical K_MEX/Phi_res locked in the downhole physics;
 template sliders renamed to engineering trims. Board otherwise unchanged (6 items).
+
+---
+INSTRUMENT_ARC (v0.395.0, 2026-08-23): no new rulings required. Rule 7 disclosures executed in-code (uncited gauge specs rejected; unverified 200C search-summary figure refused as preset). Board unchanged (6 items).
