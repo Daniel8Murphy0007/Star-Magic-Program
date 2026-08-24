@@ -11811,3 +11811,40 @@ own source for quote-adjacent Unix temp-path literals (needle constructed at
 runtime so the guard cannot self-match) — the mistake cannot be reintroduced.
 Gate 5,800 → 5,801; README badge + pyproject description synced. Standing
 lesson for the charter set: gate pins write scratch files ONLY via tempfile.
+
+## Entry 268 — 2026-08-24 — v0.396.0 THE TWO-STREAM SHIP (downhole v1.7.0–v1.9.0)
+
+Daniel's architectural ruling (2026-08-23, verbatim frame): "There are two
+sides to this program so that the standalone theoretical can function to find
+the offset undervalued data streams that coordinate live stream with closed
+stream." Confirmed correct reading; built as three pieces, COMPLETE:
+
+1. v1.7.0 `uqff_tool_library.py` — cited 8-entry catalog: quartz twins (GEOQ
+   177 specs), piezoresistive class (ChampionX-cited exponential-in-T FORM,
+   representative coefficients disclosed), GEOVW/GEOXTR/GEOPulse as
+   PARAMETERS_USER_SUPPLIED with drift_model_for() REFUSING them, G6 Modbus
+   interface = declared ports target; ToolString + rating_check (177 °C gauge
+   caught at the 217 °C kick station).
+2. v1.8.0 `uqff_ports.py` — READ-ONLY plug-in registry → normalized
+   LiveStream. historian_csv + las2 IMPLEMENTED; round-trip vs the v1.3.0
+   telemetry export verified to precision (MISSING→NaN, flags carried);
+   wrapped LAS REFUSED; modbus_g6/witsml/opcua DECLARED-refusing;
+   register_port(); CLI ingest.
+3. v1.9.0 `uqff_reconciler.py` — offset(t) = measured − predicted per
+   station; classifications with thresholds DISCLOSED in every report; drift
+   not classified under ~18-day windows (slopes are noise, said so). Four
+   scenarios verified per gate run: clean 6/6 IN_FAMILY; +50 psi bias →
+   CALIBRATION_OFFSET 50.09 recovered; 2-yr synthetic at conventional rate →
+   DRIFT_CONSISTENT (82.45 in [79.71, 82.29]); THE FIND — kick well vs
+   linear-gradient assumption → UNEXPLAINED_OFFSET 610/4,448/6,083 psi.
+
+Session also carried the v0.395.0 RED-GATE portability incident (hard-coded
+Unix temp path in a gate pin; fixed; permanent PORTABILITY GUARD self-scan
+added — gate 5,800→5,801) before this arc (5,801→5,816, +15 pins).
+
+Ship prep: 6 pins at 0.396.0 (desc 495 chars, measured counts); SHIP GUARD
+marker INSTRUMENT_ARC→TWOSTREAM_ARC (+ GAPS id twostream_arc_rule7); README
+release paragraph/campaign/shipped header; CHANGELOG + _BUILD_LOG +
+SHIP_MESSAGE + RULINGS trail; 10 TWOSTREAM_ARC trail rows. Zero calculator
+physics changes; zero new dispatches (ratchet untouched). Awaiting Daniel:
+`.\ship.ps1` (clear .git/index.lock first).

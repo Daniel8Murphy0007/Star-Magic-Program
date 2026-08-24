@@ -306,3 +306,6 @@ THE DOWNHOLE SHIP: PAPER_2256 + uqff_downhole_simulator v1.1.0 (first industry-a
 
 ## v0.395.0 — 2026-08-23
 THE INSTRUMENT SHIP: uqff_downhole_simulator v1.2.0-v1.6.0 (service-life divergence curves; telemetry realism with scored QC; depth-sweep case studies; web-verified GEOQ 177 gauge specs with mandatory citations; MD/TVD deviation; batch runs; headless CLI). Suppression ratio 1.0324 invariant across geometry and baseline. Gate 5,800/0. 23-file pass verified.
+
+## v0.396.0 — 2026-08-24
+THE TWO-STREAM SHIP: uqff_downhole_simulator v1.7.0-v1.9.0 (cited tool library; read-only ports with historian/LAS implemented and live taps declared; two-stream reconciler with four-scenario validation incl. the 6,083-psi kick find). Architecture complete. Gate 5,816/0. 23-file pass verified.

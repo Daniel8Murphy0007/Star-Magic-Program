@@ -309,3 +309,151 @@ ordering, batch ratio-invariance across geometries, and all four CLI subcommands
 executed headlessly per gate run. **The v1.2→v1.6 extension list requested on
 2026-08-23 is complete**: accumulate (service life), corrupt honestly (telemetry),
 argue (case study), cite (gauge specs), and now bend, scale, and script the well.
+
+---
+
+## APPENDED 2026-08-23 (6) — v1.7.0: THE TOOL LIBRARY (Daniel-directed — first piece of the TWO-STREAM build)
+
+Daniel's architectural ruling (2026-08-23, confirmed): the program has TWO SIDES —
+the standalone theoretical CLOSED STREAM (calculator + simulator, everything derived
+from the locked primitives) and the LIVE STREAM (real telemetry tapped from running
+logging systems at active drill sites). The closed stream's field function is to
+find the OFFSET/UNDERVALUED data in the live stream: closed model predicts what every
+tool should read, the live tap delivers what it does read, and the residual series
+between the two is where the value sits (drift/calibration vs unexplained real
+signal). The remaining build: (1) tool library, (2) ports/plug-ins into running
+logging systems (read-only taps), (3) the two-stream reconciler. This appendix is
+piece (1).
+
+**`uqff_tool_library.py`** — the v1.5.0 citation discipline generalized to the whole
+toolstring. `ToolSpec` catalog (8 entries, every one cited):
+
+| Entry | Class | Spec status |
+|---|---|---|
+| quartz_pt_uqff_geoq177_30k / _conventional_ | quartz P/T (wraps v1.5.0 GaugeSpec) | FULLY_SPECIFIED |
+| quartz_pt_template_stressed | quartz P/T, stressed-service | FULLY_SPECIFIED |
+| piezoresistive_pt_class | piezo P/T | FORM cited, coefficients representative |
+| vibrating_wire_geovw250 | vibrating wire | PARAMETERS_USER_SUPPLIED |
+| thermocouple_string_geoxtr18 | 18-pt thermocouple | PARAMETERS_USER_SUPPLIED |
+| fiber_dts_geopulse | DTS fiber | PARAMETERS_USER_SUPPLIED |
+| surface_interface_g6 | surface interface | **THE PORT TARGET** |
+
+Key structures, all verified live: (a) the piezoresistive drift model's FORM is
+cited verbatim from the ChampionX page ("unpredictable... increases exponentially
+with increasing temperature") with representative coefficients disclosed as an
+engineering fit — at 150 °C it reads 2.28 %FS/yr where conventional quartz reads
+its clip-scaled bound, the quartz-vs-piezo contrast the industry pages describe;
+(b) `PARAMETERS_USER_SUPPLIED` entries have None numbers and `drift_model_for()`
+REFUSES them — the library does not invent vendor data (Rule 7 in code, same
+pattern as the uncited-spec rejection); (c) every entry declares its
+`telemetry_interface` — the G6 card's **Modbus RS485 + 4-20mA** (cited from the
+GEOQ 177 spec-table footnotes, incl. up-to-10-sensors-per-TEC) is the declared
+target the ports layer will implement; (d) `ToolString` + `rating_check()` check
+every station's tool against the well conditions AT that station (profile/
+gradients, MD→TVD honored) — verified catching a 177 °C-rated gauge and a 150 °C
+piezo hung in the sample well's 217 °C kick zone.
+
+Package v1.7.0. Gate pins: catalog citations, quartz-twin ratio through the
+library path, piezo exponential form + over-quartz ordering, user-supplied
+refusal, and the kick-zone rating catch, headlessly per gate run. Next pieces:
+the ports/plug-ins (file-based ingest first), then the reconciler.
+
+---
+
+## APPENDED 2026-08-23 (7) — v1.8.0: THE PORTS/PLUG-IN LAYER (two-stream build, piece 2)
+
+`uqff_ports.py` — the READ-ONLY taps that carry the live stream into the program.
+Everything ingests to one normalized form, **`LiveStream`** (index = time or depth;
+per-channel values with NaN = missing; units and quality flags carried) — the object
+the reconciler (piece 3) will coordinate against the closed stream's predictions.
+
+**The registry pattern (`PORT_REGISTRY`, statuses explicit):**
+
+| Port | Transport | Status |
+|---|---|---|
+| historian_csv | wide-format historian CSV export | IMPLEMENTED |
+| las2 | LAS 2.0 well log (CWLS public standard) | IMPLEMENTED |
+| modbus_g6 | Modbus RS485 (G6 interface card — the tool library's declared target) | DECLARED_SITE_DETAILS_REQUIRED |
+| witsml | WITSML rig-site server | DECLARED_SITE_DETAILS_REQUIRED |
+| opcua | OPC-UA historian/SCADA | DECLARED_SITE_DETAILS_REQUIRED |
+
+DECLARED entries name the protocol but REFUSE to run until real site details exist —
+the same no-invented-behavior pattern as the tool library's user-supplied specs and
+the gauge-spec citation rejection, now applied to PROTOCOLS: the registry does not
+pretend to speak a site system it has never met. `register_port()` lets a site plug
+its own reader in additively without touching the module. Read-only is a design
+rule: ports ingest, never write, configure, or control.
+
+**The proof loop (verified live):** the v1.3.0 telemetry layer's field-historian
+export re-ingested through `ingest(path)` matches the recorder's arrays to export
+precision — MISSING → NaN both sides, quality flags carried onto the right gauge
+channels. Closed stream → simulated live file → port → the same numbers. The v1.3.0
+layer was built as the live side's stand-in; this closes the loop it was built for:
+the ingest path is proven in simulation before it ever touches a site.
+
+**LAS 2.0 honesty:** minimal unwrapped-mode reader with NULL substitution (−999.25
+convention) and metadata capture; WRAP. YES files are REFUSED with a clear error
+rather than mis-parsed — a wrong parse of a real well log would poison the
+reconciler downstream, so refusal is the only honest failure mode. Verified on a
+synthetic LAS with embedded NULLs (coverage reported per channel).
+
+CLI gains `ingest --file X [--port las2]` printing the stream summary. Package
+v1.8.0. Gate pins: registry statuses + refusal, the round-trip equality, LAS NULL
+handling + wrapped refusal, and the plug-in registration path, headlessly per gate
+run. Remaining piece: the two-stream RECONCILER.
+
+---
+
+## APPENDED 2026-08-23 (8) — v1.9.0: THE TWO-STREAM RECONCILER — THE ARCHITECTURE IS COMPLETE
+
+`uqff_reconciler.py` — piece 3, the coordinator Daniel's architecture was built
+toward. The closed stream (locked-primitive physics) predicts what every gauge in a
+described well SHOULD read; the live stream (a ports-layer `LiveStream`) delivers
+what it DOES read; the reconciler aligns the two on the shared toolstring, works
+offset(t) = measured − predicted per station, and classifies:
+
+| Class | Meaning |
+|---|---|
+| IN_FAMILY | streams agree within gauge noise |
+| CALIBRATION_OFFSET | constant bias beyond noise, within instrument scale; magnitude recovered |
+| DRIFT_CONSISTENT | trend inside the closed stream's own aging envelope [UQFF, conventional] at station T/P |
+| TRANSIENTS | clustered excursions — well events, real signal not fault |
+| **UNEXPLAINED_OFFSET / _TREND** | **structure the closed stream cannot account for — the undervalued streams** |
+
+**Honesty structure (Rule 7):** every classification threshold is a DISCLOSED
+engineering heuristic (bias 4σ-of-mean + 1 psi floor; transients 6σ; model-mismatch
+500 psi; drift-envelope margin 2×; minimum trend window ≥ ~18 days — below that a
+slope is noise and the reconciler declines to classify on it rather than guessing).
+Labels are advisory triage; the measured numbers (bias, slope, σ, transient count,
+envelope) are always reported alongside. The drift envelope itself is not a
+heuristic — it is the closed stream's own spec-aware prediction at station
+conditions.
+
+**Four-scenario validation (live, all seeded/deterministic):**
+
+1. **Clean well** (live data from the exact well the model describes): 6/6 stations
+   IN_FAMILY, zero undervalued. The null case behaves.
+2. **Biased gauge** (+50 psi cal offset injected on one sensor):
+   CALIBRATION_OFFSET, recovered bias **50.09 psi**.
+3. **Aging gauge** (synthetic 2-year weekly series drifting at the conventional
+   rate at 17,000 ft): DRIFT_CONSISTENT — measured slope **82.45 psi/yr** inside
+   the predicted envelope **[79.71, 82.29]** (margin-bounded).
+4. **THE FIND** — live data from the kick-profile well reconciled against a
+   linear-gradient well description: the deep stations flag UNEXPLAINED_OFFSET at
+   **610 / 4,448 / 6,083 psi** — the overpressure kick the assumed model cannot
+   see, surfaced by the closed stream as exactly the "offset undervalued data
+   stream" of Daniel's architecture statement. This scenario is the program's
+   field thesis executed end-to-end in code.
+
+Auto station-mapping matches both export layouts (engine + telemetry); explicit
+maps override. Depth-indexed LAS streams are refused by `reconcile()` with
+direction to profile-reconciliation (clock vs depth kept honest). CLI gains
+`reconcile --file field.csv [well options]`. Package v1.9.0.
+
+**The two-stream architecture is COMPLETE**: tool library (what's in the well,
+cited) → ports (how the live stream gets in, read-only) → reconciler (where the
+two streams meet and the undervalued data falls out). Everything downstream of
+here is site-specific detail: real datasheets into the user-supplied specs, real
+protocol parameters into the declared ports, real field files into the ingest
+path — each slot already built, each refusing to pretend until the real thing
+arrives.

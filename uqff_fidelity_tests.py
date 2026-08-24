@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.395.0", "uqff_calculator.VERSION = 0.395.0 (the instrument ship: uqff_downhole_simulator v1.2.0-v1.6.0 - the simulator becomes a complete instrument)")
+assert_that(C.VERSION == "0.396.0", "uqff_calculator.VERSION = 0.396.0 (the two-stream ship: tool library + ports + reconciler - Daniel's two-stream architecture complete)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'INSTRUMENT_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'TWOSTREAM_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('instrument_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('twostream_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,15 +12592,15 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.6.0' and len(_ds11.make_sensor_string(12)) == 12,
-            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.6.0")
+assert_that(_ds11.__version__ == '1.9.0' and len(_ds11.make_sensor_string(12)) == 12,
+            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.9.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
 _e11 = _ds11.UQFFDownholeEngine(_cfg11)
@@ -12729,6 +12729,119 @@ with _cl16.redirect_stdout(_io16.StringIO()):   # keep the gate report quiet
                      '--spec', 'geoq177_30k', '--out', _os16.path.join(_d16, 'c.md')])
 assert_that(_rc16a == 0 and _rc16b == 0 and _os16.path.exists(_os16.path.join(_d16, 'c.md')),
             "DOWNHOLE v1.6.0: headless CLI - python -m uqff_downhole_simulator subcommands execute with no display, including a deviated-well + cited-datasheet case study in one command")
+
+# ---- PAPER_2256 v1.7.0 EXTENSION (the tool library - first piece of the two-stream build) ----
+assert_that(len(_ds11.TOOL_LIBRARY) >= 8 and all(_t.source and len(_t.source) > 40 for _t in _ds11.TOOL_LIBRARY.values()),
+            "DOWNHOLE v1.7.0: tool library - every catalog entry carries a substantive source citation (the v1.5.0 discipline generalized to the whole toolstring)")
+_uq17 = _ds11.drift_model_for(_ds11.TOOL_LIBRARY['quartz_pt_uqff_geoq177_30k'])(180.0, 16000.0)
+_cv17 = _ds11.drift_model_for(_ds11.TOOL_LIBRARY['quartz_pt_conventional_geoq177_30k'])(180.0, 16000.0)
+assert_that(abs(_cv17 / _uq17 - 1.0324) < 0.005,
+            "DOWNHOLE v1.7.0: quartz twins through the library path - the UQFF/conventional pair reproduces the canonical suppression ratio when addressed as catalog tools")
+_pz17 = _ds11.drift_model_for(_ds11.TOOL_LIBRARY['piezoresistive_pt_class'])
+assert_that(_pz17(150.0, 5000.0) > _pz17(100.0, 5000.0) > _pz17(50.0, 5000.0)
+            and _pz17(150.0, 5000.0) > _cv17,
+            "DOWNHOLE v1.7.0: piezoresistive class - drift grows exponentially with temperature and exceeds quartz when hot (FORM cited from the ChampionX page; coefficients disclosed as representative fit, NOT vendor data)")
+_ref17 = False
+try:
+    _ds11.drift_model_for(_ds11.TOOL_LIBRARY['vibrating_wire_geovw250'])
+except ValueError:
+    _ref17 = True
+assert_that(_ref17,
+            "DOWNHOLE v1.7.0: Rule 7 in code again - PARAMETERS_USER_SUPPLIED entries (vibrating wire, DTS fiber, thermocouple card) REFUSE to produce drift models; the library does not invent vendor numbers")
+_ts17 = _ds11.ToolString([(3000.0, 'quartz_pt_uqff_geoq177_30k'), (18200.0, 'quartz_pt_uqff_geoq177_30k')])
+_rc17 = _ds11.rating_check(_ts17, profile=_ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv'))
+assert_that(_rc17[0]['ok'] and not _rc17[1]['ok'],
+            "DOWNHOLE v1.7.0: rating check - a 177 C-rated gauge is flagged at the sample well's ~217 C kick-zone station and passes at the shallow station (the check that catches the toolstring before the well does)")
+
+# ---- PAPER_2256 v1.8.0 EXTENSION (the ports/plug-in layer - two-stream build, piece 2) ----
+import numpy as _np18, tempfile as _tf18, os as _os18
+assert_that(_ds11.PORT_REGISTRY['historian_csv'].status == 'IMPLEMENTED'
+            and _ds11.PORT_REGISTRY['las2'].status == 'IMPLEMENTED'
+            and all(_ds11.PORT_REGISTRY[_n].status == 'DECLARED_SITE_DETAILS_REQUIRED'
+                    for _n in ('modbus_g6', 'witsml', 'opcua')),
+            "DOWNHOLE v1.8.0: port registry - file ports IMPLEMENTED; the live-protocol taps (incl. the tool library's declared modbus_g6 target) are DECLARED with explicit site-details-required status")
+_ref18 = False
+try:
+    _ds11.PORT_REGISTRY['modbus_g6'].reader('x')
+except NotImplementedError:
+    _ref18 = True
+assert_that(_ref18,
+            "DOWNHOLE v1.8.0: no invented site behavior - DECLARED ports REFUSE to run (the registry names the protocol, it does not pretend to speak a system it has never met); read-only is the design rule")
+_d18 = _tf18.mkdtemp()
+_rec18 = _ds11.TelemetryRecorder(config=_ds11.TelemetryConfig(duration_hours=4.0, seed=5)).run()
+_csv18 = _rec18.export_csv(_os18.path.join(_d18, 'f.csv'))
+_st18 = _ds11.ingest(_csv18, port='historian_csv')
+_ch18 = [_n for _n in _st18.channels if _n.startswith('P_raw_psi_S1')][0]
+_v18 = _st18.channel(_ch18).values
+_r18 = _rec18.P_raw[:, 0]
+_m18 = ~_np18.isnan(_r18)
+assert_that(len(_v18) == len(_r18) and _np18.allclose(_v18[_m18], _np18.round(_r18[_m18], 2), atol=1e-9)
+            and bool(_np18.all(_np18.isnan(_v18[~_m18]))) and _st18.channel(_ch18).quality is not None,
+            "DOWNHOLE v1.8.0: ROUND TRIP - closed stream -> simulated live historian CSV -> port -> the recorder's own arrays to export precision, MISSING -> NaN both sides, quality flags carried; the ingest path proven in simulation before touching a site")
+_las18 = _os18.path.join(_d18, 't.las')
+with open(_las18, 'w') as _lf18:
+    _lf18.write("~Version\nVERS. 2.0 : x\nWRAP. NO : x\n~Well\nNULL. -999.25 : x\n~Curve\nDEPT.FT : d\nPRES.PSI : p\n~ASCII\n1000.0 480.2\n2000.0 -999.25\n")
+_ls18 = _ds11.ingest(_las18, port='las2')
+assert_that(_ls18.index_kind == 'depth' and bool(_np18.isnan(_ls18.channel('PRES').values[1]))
+            and _ls18.channel('PRES').unit == 'PSI',
+            "DOWNHOLE v1.8.0: LAS 2.0 (CWLS public standard) - depth-indexed curves, NULL -999.25 -> NaN, units carried; wrapped mode is refused rather than mis-parsed (a wrong well-log parse would poison the reconciler)")
+_wr18 = _os18.path.join(_d18, 'w.las')
+with open(_wr18, 'w') as _wf18:
+    _wf18.write("~Version\nWRAP. YES : wrapped\n~ASCII\n1 2\n")
+_wrref18 = False
+try:
+    _ds11.ingest(_wr18, port='las2')
+except ValueError:
+    _wrref18 = True
+assert_that(_wrref18,
+            "DOWNHOLE v1.8.0: wrapped-LAS refusal verified - the honest failure mode is refusal, not a silent mis-parse")
+
+# ---- PAPER_2256 v1.9.0 EXTENSION (the two-stream reconciler - the architecture complete) ----
+_w19 = _ds11.SimulatorConfig(event_probability=0.0)
+_tc19 = _ds11.TelemetryConfig(duration_hours=12.0, seed=9, line_dropout_start_prob=0.0,
+                              gauge_stuck_start_prob=0.0, spike_prob=0.0)
+_r19 = _ds11.TelemetryRecorder(engine=_ds11.UQFFDownholeEngine(_w19), config=_tc19).run()
+_f19 = _r19.export_csv(_os18.path.join(_d16, 'clean19.csv'))
+_rep19 = _ds11.Reconciler(_w19).reconcile(_ds11.ingest(_f19))
+assert_that(_rep19['classification_counts'].get('IN_FAMILY', 0) == 6
+            and len(_rep19['undervalued_streams']) == 0,
+            "DOWNHOLE v1.9.0: reconciler null case - live data from the exact well the closed stream describes classifies 6/6 IN_FAMILY with zero undervalued streams (the two streams agree when they should)")
+_e19b = _ds11.UQFFDownholeEngine(_ds11.SimulatorConfig(event_probability=0.0))
+_e19b.sensors[2].cal_offset_P = 50.0
+_r19b = _ds11.TelemetryRecorder(engine=_e19b, config=_tc19).run()
+_f19b = _r19b.export_csv(_os18.path.join(_d16, 'bias19.csv'))
+_rep19b = _ds11.Reconciler(_ds11.SimulatorConfig(event_probability=0.0)).reconcile(_ds11.ingest(_f19b))
+_s19b = [_s for _s in _rep19b['stations'] if 'S3' in _s['channel']][0]
+assert_that(_s19b['classification'] == 'CALIBRATION_OFFSET' and abs(_s19b['bias_psi'] - 50.0) < 10.0,
+            "DOWNHOLE v1.9.0: calibration recovery - a +50 psi injected gauge bias is classified CALIBRATION_OFFSET with the magnitude recovered (~50.1 psi measured)")
+_rc19 = _ds11.Reconciler(_ds11.SimulatorConfig())
+_md19 = 17000.0
+_uqe19, _cve19 = _rc19.drift_envelope_psi_yr(_md19)
+_t19 = _np18.arange(0, 2.0 * 365.25 * 24 * 3600, 7 * 24 * 3600.0)
+_bp19, _ = _rc19.predicted_baseline(_md19)
+_rng19 = _np18.random.default_rng(4)
+_v19 = _bp19 + _cve19 * (_t19 / (365.25 * 24 * 3600)) + _rng19.normal(0, 2.0, len(_t19))
+_st19 = _ds11.LiveStream(name='d2y', source_format='synthetic', index_kind='time_s', index=_t19,
+                         channels={'P_raw_psi_S5': _ds11.StreamChannel('P_raw_psi_S5', 'psi', _v19)})
+_rep19c = _rc19.reconcile(_st19, station_map={'P_raw_psi_S5': _md19})
+assert_that(_rep19c['stations'][0]['classification'] == 'DRIFT_CONSISTENT',
+            "DOWNHOLE v1.9.0: drift recognition - a 2-year synthetic series aging at the conventional rate classifies DRIFT_CONSISTENT with the slope inside the closed stream's own spec-aware envelope at station T/P")
+_prof19 = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
+_truth19 = _ds11.SimulatorConfig(profile=_prof19, td_ft=18500.0,
+                                 sensor_depths_ft=[3000.0, 9000.0, 15000.0, 17500.0, 18200.0],
+                                 event_probability=0.0)
+_r19d = _ds11.TelemetryRecorder(engine=_ds11.UQFFDownholeEngine(_truth19), config=_tc19).run()
+_f19d = _r19d.export_csv(_os18.path.join(_d16, 'kick19.csv'))
+_assumed19 = _ds11.SimulatorConfig(td_ft=18500.0,
+                                   sensor_depths_ft=[3000.0, 9000.0, 15000.0, 17500.0, 18200.0],
+                                   event_probability=0.0)
+_rep19d = _ds11.Reconciler(_assumed19).reconcile(_ds11.ingest(_f19d))
+_deep19 = [_s for _s in _rep19d['stations'] if _s['md_ft'] == 18200.0][0]
+assert_that(_deep19['classification'] == 'UNEXPLAINED_OFFSET' and _deep19['bias_psi'] > 5000.0
+            and len(_rep19d['undervalued_streams']) >= 2,
+            "DOWNHOLE v1.9.0: THE FIND - the kick-profile well reconciled against a linear-gradient description flags multi-thousand-psi UNEXPLAINED offsets at the deep stations: the closed stream exposes the offset undervalued data stream the assumed model cannot see (Daniel's two-stream architecture executed end-to-end)")
+assert_that('note' in _rep19d['thresholds_disclosed'],
+            "DOWNHOLE v1.9.0: Rule 7 - every reconciler threshold is disclosed in the report itself; labels are advisory triage, the measured numbers are the record")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

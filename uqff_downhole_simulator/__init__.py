@@ -62,8 +62,31 @@ from .uqff_deviation import (
     load_deviation_csv,
 )
 from .uqff_downhole_engine import run_batch
+from .uqff_tool_library import (
+    ToolSpec,
+    TOOL_LIBRARY,
+    ToolString,
+    drift_model_for,
+    piezoresistive_drift,
+    rating_check,
+)
+from .uqff_ports import (
+    LiveStream,
+    StreamChannel,
+    PortSpec,
+    PORT_REGISTRY,
+    ingest,
+    read_historian_csv,
+    read_las,
+    register_port,
+)
+from .uqff_reconciler import (
+    Reconciler,
+    ReconcilerConfig,
+    auto_station_map,
+)
 
-__version__ = "1.6.0"
+__version__ = "1.9.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
@@ -74,5 +97,10 @@ __all__ = [
     "CaseStudyConfig", "case_study", "depth_sweep", "write_markdown",
     "GaugeSpec", "GAUGE_SPECS", "load_gauge_spec_json",
     "DeviationSurvey", "load_deviation_csv", "run_batch",
+    "ToolSpec", "TOOL_LIBRARY", "ToolString", "drift_model_for",
+    "piezoresistive_drift", "rating_check",
+    "LiveStream", "StreamChannel", "PortSpec", "PORT_REGISTRY",
+    "ingest", "read_historian_csv", "read_las", "register_port",
+    "Reconciler", "ReconcilerConfig", "auto_station_map",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
 ]

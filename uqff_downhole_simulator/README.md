@@ -215,3 +215,79 @@ cs = case_study(CaseStudyConfig(gauge_spec=GAUGE_SPECS['geoq177_30k']))
 python -m uqff_downhole_simulator run --steps 200 --gauges 8 --out run.csv
 python -m uqff_downhole_simulator case-study --td 22000 --kickoff 9000 --inclination 45 --spec geoq177_30k --out case.md
 ```
+
+## v1.7.0 extension: the tool library (Daniel-directed, 2026-08-23 — first piece of the two-stream build)
+
+`uqff_tool_library.py` generalizes the gauge-spec discipline to the whole
+toolstring: a cited catalog (`TOOL_LIBRARY`, 8 entries) of downhole and
+surface tools — UQFF/conventional quartz P/T (wrapping the v1.5.0 GaugeSpecs),
+a piezoresistive class (drift FORM cited from ChampionX: unpredictable,
+exponential in temperature; coefficients disclosed as representative fit),
+vibrating-wire, 18-point thermocouple string, DTS fiber, and the **G6 surface
+interface (Modbus RS485 + 4-20mA)** — every entry declaring the telemetry
+interface it speaks, which is the declaration the live-stream ports/plug-in
+layer will implement.
+
+Honesty structure: entries whose existence is verified but whose numbers were
+not published are `PARAMETERS_USER_SUPPLIED` — their fields are None and
+`drift_model_for()` refuses to invent vendor data. `ToolString` composes
+mixed strings of stations; `rating_check()` checks every tool against the
+well conditions at its station (profile or gradients, deviation honored) —
+it catches a 177 °C gauge hung in the sample well's 217 °C kick zone before
+the well does.
+
+```python
+from uqff_downhole_simulator import ToolString, rating_check, load_well_profile_csv
+ts = ToolString([(3000, 'quartz_pt_uqff_geoq177_30k'), (18200, 'piezoresistive_pt_class')])
+print(rating_check(ts, profile=load_well_profile_csv("uqff_downhole_simulator/sample_well_profile.csv")))
+```
+
+## v1.8.0 extension: the ports/plug-in layer (Daniel-directed, 2026-08-23 — two-stream build, piece 2)
+
+`uqff_ports.py` — READ-ONLY taps ingesting live-stream data into the
+normalized `LiveStream` form the reconciler will consume (index = time or
+depth; per-channel values with NaN for missing; quality flags carried; units
+carried). `PORT_REGISTRY` with explicit statuses: **IMPLEMENTED** —
+`historian_csv` (wide-format historian exports, auto-detecting the v1.3.0
+telemetry layout) and `las2` (LAS 2.0 well logs, CWLS public standard, NULL
+substitution, wrapped mode refused rather than mis-parsed); **DECLARED** —
+`modbus_g6` (the tool library's declared port target), `witsml`, `opcua` —
+these name the protocol but REFUSE to run until real site details exist (no
+invented site behavior). `register_port()` lets a site plug in its own reader
+additively.
+
+The proof loop: the simulator's own v1.3.0 field-style export re-ingested
+through the port matches the recorder's arrays to export precision, with
+MISSING → NaN and flags carried — closed stream → simulated live file →
+port → same numbers. The ingest path is verified in simulation before it
+ever touches a site. CLI: `python -m uqff_downhole_simulator ingest --file
+field.csv` (or `--port las2`).
+
+## v1.9.0 extension: the two-stream reconciler (Daniel-directed, 2026-08-23 — piece 3, the architecture complete)
+
+`uqff_reconciler.py` — the coordinator. The closed stream predicts what every
+gauge in a described well *should* read; a `LiveStream` delivers what it
+*does* read; the reconciler works the per-station offset series and
+classifies each: IN_FAMILY, CALIBRATION_OFFSET (bias recovered),
+DRIFT_CONSISTENT (trend inside the closed stream's own drift envelope
+[UQFF rate, conventional rate] at station T/P — needs ≥18 days of data,
+below that slopes are noise and it says so), TRANSIENTS, or
+**UNEXPLAINED_OFFSET/TREND — the undervalued streams**. Thresholds are
+disclosed engineering heuristics; labels are advisory triage and the numbers
+(bias, slope, sigma, envelope) always ride along.
+
+Validated on four scenarios: clean well → 6/6 IN_FAMILY; +50 psi biased
+gauge → CALIBRATION_OFFSET, 50.09 psi recovered; 2-year synthetic drifting
+at the conventional rate → DRIFT_CONSISTENT (slope 82.45 vs envelope
+[79.71, 82.29] psi/yr); and **the find** — the kick well reconciled against
+a linear-gradient assumption flags 610 / 4,448 / 6,083 psi unexplained
+offsets at the deep stations. The closed stream exposes what the assumed
+model cannot see.
+
+```python
+from uqff_downhole_simulator import Reconciler, SimulatorConfig, ingest
+report = Reconciler(SimulatorConfig(td_ft=18500)).reconcile(ingest("field.csv"))
+print(report['undervalued_streams'])
+```
+
+CLI: `python -m uqff_downhole_simulator reconcile --file field.csv --td 18500`

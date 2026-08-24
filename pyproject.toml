@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.395.0"
-description = "Star-Magic UQFF calculator v0.395.0: THE INSTRUMENT SHIP. 2,252 dispatches (2,307 keys), gate 5,801/0. uqff_downhole_simulator v1.2.0-v1.6.0: service-life divergence curves, field-telemetry realism with scored QC, depth-sweep customer case studies, web-verified datasheet gauge specs (GEO PSI GEOQ 177 / Quartzdyne), MD/TVD wellbore deviation, multi-well batch runs, headless CLI. Suppression ratio 1.0324 invariant across geometry and baseline. Next: PAPER_2257."
+version = "0.396.0"
+description = "Star-Magic UQFF calculator v0.396.0: THE TWO-STREAM SHIP. 2,252 dispatches (2,307 keys), gate 5,816/0. uqff_downhole_simulator v1.7.0-v1.9.0 completes Daniel's two-stream architecture: cited tool library (8 entries, no invented vendor data), read-only ports (historian CSV + LAS 2.0 implemented, live taps declared), and the two-stream reconciler - closed-stream predictions vs live data, offsets classified, undervalued streams flagged (kick-well find: 6,083 psi unexplained). Next: PAPER_2257."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

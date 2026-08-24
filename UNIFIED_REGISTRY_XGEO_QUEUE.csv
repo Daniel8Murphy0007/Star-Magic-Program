@@ -1722,3 +1722,4 @@ CENSUS_ARC,n/a,n/a,NOT_APPLICABLE,census consolidation single-geometry,v0.392.0
 LEDGER_ARC,n/a,n/a,NOT_APPLICABLE,census+packaging single-geometry,v0.393.0
 DOWNHOLE_ARC,n/a,n/a,NOT_APPLICABLE,application module single-geometry,v0.394.0
 INSTRUMENT_ARC,n/a,n/a,NOT_APPLICABLE,application-module extensions single-geometry,v0.395.0
+TWOSTREAM_ARC,n/a,n/a,NOT_APPLICABLE,application-module architecture single-geometry,v0.396.0

@@ -7,6 +7,38 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.396.0 — 2026-08-24 — THE TWO-STREAM SHIP
+
+`uqff_downhole_simulator` v1.7.0–v1.9.0 — Daniel's two-stream architecture
+(closed theoretical stream vs live site stream, coordinated to find offset
+undervalued data) built COMPLETE:
+
+- **v1.7.0 the tool library** — cited catalog of 8 toolstring entries: quartz
+  twins (wrapping the GEOQ 177 specs), piezoresistive class (drift FORM cited
+  from ChampionX — exponential in temperature; coefficients disclosed as
+  representative fit), vibrating wire / thermocouple card / DTS fiber as
+  PARAMETERS_USER_SUPPLIED (refusing invented vendor numbers), and the G6
+  Modbus-RS485 surface interface declared as the ports target. ToolString +
+  station rating checks (catches a 177 °C gauge in the 217 °C kick zone).
+- **v1.8.0 the ports/plug-in layer** — READ-ONLY ingest to the normalized
+  LiveStream form. IMPLEMENTED: historian CSV (round-trip verified against the
+  v1.3.0 telemetry export to precision) and LAS 2.0 (CWLS standard; NULL→NaN;
+  wrapped mode refused, never mis-parsed). DECLARED (refusing until site
+  details): modbus_g6, witsml, opcua. register_port() for site plug-ins;
+  CLI `ingest`.
+- **v1.9.0 the reconciler** — per-station offset series classified IN_FAMILY /
+  CALIBRATION_OFFSET / DRIFT_CONSISTENT / TRANSIENTS / UNEXPLAINED, thresholds
+  disclosed in every report. Four-scenario validation per gate run: clean well
+  6/6 in-family; +50 psi bias recovered at 50.09; 2-yr drift inside the
+  spec-aware envelope; THE FIND — kick well vs linear-gradient assumption
+  flags 610/4,448/6,083 psi unexplained offsets. CLI `reconcile`.
+
+Also: v0.395.0 red-gate portability fix hardened (PORTABILITY GUARD self-scan).
+Gate 5,801 → 5,816. PAPER_2256 +3 appendices (6/7/8). Zero calculator physics
+changes; zero new dispatches.
+
+---
+
 ## v0.395.0 — 2026-08-23 — THE INSTRUMENT SHIP
 
 `uqff_downhole_simulator` v1.2.0–v1.6.0 (Daniel-directed extension list, complete):

@@ -1,21 +1,25 @@
-v0.395.0 - THE INSTRUMENT SHIP: the simulator becomes a complete instrument
+v0.396.0 - THE TWO-STREAM SHIP: the architecture complete
 
-uqff_downhole_simulator v1.2.0-v1.6.0 - the Daniel-directed extension list,
-complete in one session (2026-08-23):
+uqff_downhole_simulator v1.7.0-v1.9.0 - Daniel's two-stream design built
+end-to-end: the standalone theoretical CLOSED STREAM coordinates with the
+LIVE STREAM from site logging systems to find offset undervalued data.
 
-- v1.2.0 service-life drift ACCUMULATION: twin-leg divergence curves over
-  simulated service years; recalibration resets; years-to-error-budget;
-  accumulated-error ratio converges to the canonical suppression (1.0324).
-- v1.3.0 field-telemetry REALISM: 1/min timestamped acquisition; dropouts,
-  stuck gauges, spikes with quality flags; scored QC pipeline (frozen-value
-  1.0/1.0; Hampel + common-mode veto, spike-P precision 0.83-1.0).
-- v1.4.0 depth-sweep CASE-STUDY mode: where the advantage is largest
-  (2.04 -> 3.04 psi/yr toward TD); one-page markdown customer case.
-- v1.5.0 real-DATASHEET gauge specs: web-verified GEO PSI GEOQ 177
-  (Quartzdyne) presets, mandatory citations, uncited specs rejected in code;
-  ratio baseline-independent, psi/yr honestly rescaled at the spec bound.
-- v1.6.0 DEVIATION (MD/TVD surveys), multi-well BATCH runs (ratio invariant
-  across geometries), package-level headless CLI (4 subcommands).
+- v1.7.0 TOOL LIBRARY: cited catalog (8 entries) - quartz twins, ChampionX-
+  cited piezoresistive class, user-supplied entries REFUSING invented vendor
+  numbers, the G6 Modbus interface declared as the ports target; ToolString
+  + station rating checks (177 C gauge caught in the 217 C kick zone).
+- v1.8.0 PORTS/PLUG-INS: read-only ingest to LiveStream. historian_csv +
+  las2 IMPLEMENTED (round-trip verified; wrapped LAS refused, not
+  mis-parsed); modbus_g6/witsml/opcua DECLARED, refusing until site details;
+  register_port() for site plug-ins; CLI ingest.
+- v1.9.0 RECONCILER: offset(t) = measured - predicted per station,
+  classified with DISCLOSED thresholds. Four scenarios verified per gate
+  run: clean 6/6 in-family; +50 psi bias recovered 50.09; 2-yr drift inside
+  the spec-aware envelope; THE FIND - kick well vs linear assumption flags
+  610/4,448/6,083 psi UNEXPLAINED offsets. CLI reconcile.
 
-Gate 5,777 -> 5,800 (+23 DOWNHOLE pins). PAPER_2256 +5 appendices.
-Zero calculator physics changes; zero new dispatches. 23-file pass.
+Plus the v0.395.0 red-gate portability lesson hardened into a permanent
+PORTABILITY GUARD (gate self-scans for hard-coded temp paths).
+
+Gate 5,801 -> 5,816. PAPER_2256 +3 appendices. Zero physics changes;
+zero new dispatches. 23-file pass.

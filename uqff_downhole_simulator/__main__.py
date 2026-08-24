@@ -70,6 +70,16 @@ def main(argv=None) -> int:
     p_tm.add_argument("--seed", type=int, default=None)
     p_tm.add_argument("--out", type=str, default="uqff_telemetry.csv")
 
+    p_in = sub.add_parser("ingest", help="ingest a live-stream file through a port (read-only)")
+    p_in.add_argument("--file", type=str, required=True, help="source file (historian CSV or LAS)")
+    p_in.add_argument("--port", type=str, default="historian_csv",
+                      help="port name from PORT_REGISTRY (historian_csv | las2 | site plug-ins)")
+
+    p_rc = sub.add_parser("reconcile", help="two-stream reconciliation: live file vs closed-stream prediction")
+    _add_well_args(p_rc)
+    p_rc.add_argument("--file", type=str, required=True, help="live-stream file (historian CSV)")
+    p_rc.add_argument("--port", type=str, default="historian_csv")
+
     p_cs = sub.add_parser("case-study", help="depth sweep, write the one-page markdown case")
     _add_well_args(p_cs)
     p_cs.add_argument("--points", type=int, default=12)
@@ -107,6 +117,16 @@ def main(argv=None) -> int:
         s = rec.telemetry_summary()
         print(f"telemetry: {s['samples']} samples -> {out} "
               f"(uptime {s['uptime_pct']}%, stuck P/R {s['stuck_score']['precision']}/{s['stuck_score']['recall']})")
+    elif a.cmd == "ingest":
+        from . import ingest as _ingest
+        st = _ingest(a.file, port=a.port)
+        import json as _json
+        print(_json.dumps(st.summary(), indent=1))
+    elif a.cmd == "reconcile":
+        from . import ingest as _ingest, Reconciler
+        rep = Reconciler(_build_config(a)).reconcile(_ingest(a.file, port=a.port))
+        import json as _json
+        print(_json.dumps(rep, indent=1))
     elif a.cmd == "case-study":
         from .uqff_deviation import DeviationSurvey
         td = a.td if a.td is not None else DEFAULT_TD_FT
