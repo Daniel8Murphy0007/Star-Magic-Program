@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.396.0", "uqff_calculator.VERSION = 0.396.0 (the two-stream ship: tool library + ports + reconciler - Daniel's two-stream architecture complete)")
+assert_that(C.VERSION == "0.397.0", "uqff_calculator.VERSION = 0.397.0 (the connectivity ship: PAPER_2257 + follower/Modbus/tier-ladder + the real-well profile catalogue)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'TWOSTREAM_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'CONNECTIVITY_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('twostream_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('connectivity_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,15 +12592,15 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.9.0' and len(_ds11.make_sensor_string(12)) == 12,
-            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.9.0")
+assert_that(_ds11.__version__ == '1.13.0' and len(_ds11.make_sensor_string(12)) == 12,
+            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.13.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
 _e11 = _ds11.UQFFDownholeEngine(_cfg11)
@@ -12758,11 +12758,13 @@ import numpy as _np18, tempfile as _tf18, os as _os18
 assert_that(_ds11.PORT_REGISTRY['historian_csv'].status == 'IMPLEMENTED'
             and _ds11.PORT_REGISTRY['las2'].status == 'IMPLEMENTED'
             and all(_ds11.PORT_REGISTRY[_n].status == 'DECLARED_SITE_DETAILS_REQUIRED'
-                    for _n in ('modbus_g6', 'witsml', 'opcua')),
-            "DOWNHOLE v1.8.0: port registry - file ports IMPLEMENTED; the live-protocol taps (incl. the tool library's declared modbus_g6 target) are DECLARED with explicit site-details-required status")
+                    for _n in ('witsml', 'opcua'))
+            and _ds11.PORT_REGISTRY['modbus_g6'].status in
+                ('IMPLEMENTED_REQUIRES_SITE_CONFIG', 'DECLARED_DEPENDENCY_MISSING'),
+            "DOWNHOLE v1.8.0/v1.11.0: port registry - file ports IMPLEMENTED; witsml/opcua DECLARED-refusing; modbus_g6 upgraded to real protocol code (status reflects whether the optional pymodbus dependency is installed on THIS machine)")
 _ref18 = False
 try:
-    _ds11.PORT_REGISTRY['modbus_g6'].reader('x')
+    _ds11.PORT_REGISTRY['witsml'].reader('x')
 except NotImplementedError:
     _ref18 = True
 assert_that(_ref18,
@@ -12787,14 +12789,10 @@ assert_that(_ls18.index_kind == 'depth' and bool(_np18.isnan(_ls18.channel('PRES
             "DOWNHOLE v1.8.0: LAS 2.0 (CWLS public standard) - depth-indexed curves, NULL -999.25 -> NaN, units carried; wrapped mode is refused rather than mis-parsed (a wrong well-log parse would poison the reconciler)")
 _wr18 = _os18.path.join(_d18, 'w.las')
 with open(_wr18, 'w') as _wf18:
-    _wf18.write("~Version\nWRAP. YES : wrapped\n~ASCII\n1 2\n")
-_wrref18 = False
-try:
-    _ds11.ingest(_wr18, port='las2')
-except ValueError:
-    _wrref18 = True
-assert_that(_wrref18,
-            "DOWNHOLE v1.8.0: wrapped-LAS refusal verified - the honest failure mode is refusal, not a silent mis-parse")
+    _wf18.write("~Version\nVERS. 2.0:\nWRAP. YES:\n~Well\nNULL. -999.25:\n~Curve\nDEPT.M :\nGR.GAPI :\n~Ascii\n 1.0\n 10.5\n 2.0\n 11.5\n 3.0\n")
+_sw18 = _ds11.read_las(_wr18)
+assert_that(len(_sw18.index) == 2 and float(_sw18.channels['GR'].values[1]) == 11.5,
+            "DOWNHOLE v1.13.0 (supersedes the v1.8.0 refusal): WRAPPED LAS now PARSES - records assembled by curve count, trailing partial records DROPPED not guessed; the upgrade was driven by a REAL wrapped file (Kennetcook #2) rather than speculation")
 
 # ---- PAPER_2256 v1.9.0 EXTENSION (the two-stream reconciler - the architecture complete) ----
 _w19 = _ds11.SimulatorConfig(event_probability=0.0)
@@ -12842,6 +12840,133 @@ assert_that(_deep19['classification'] == 'UNEXPLAINED_OFFSET' and _deep19['bias_
             "DOWNHOLE v1.9.0: THE FIND - the kick-profile well reconciled against a linear-gradient description flags multi-thousand-psi UNEXPLAINED offsets at the deep stations: the closed stream exposes the offset undervalued data stream the assumed model cannot see (Daniel's two-stream architecture executed end-to-end)")
 assert_that('note' in _rep19d['thresholds_disclosed'],
             "DOWNHOLE v1.9.0: Rule 7 - every reconciler threshold is disclosed in the report itself; labels are advisory triage, the measured numbers are the record")
+
+# ---- PAPER_2257 THE TWO-STREAM ARCHITECTURE (landmark consolidation + live dispatch verify) ----
+_l2257 = C.DISPATCH['PAPER_2257']()
+assert_that(_l2257['value']['two_stream_verified'] is True,
+            "PAPER_2257: the two-stream architecture VERIFIED LIVE per dispatch call - suppression lock, ratio equality, tool-library citations complete, null case IN_FAMILY, planted 5,000-psi offset UNEXPLAINED with the undervalued stream counted (Daniel's ruling 2026-08-23 executed end-to-end)")
+_a2257 = _l2257['value']['architecture']
+assert_that(_a2257['canonical_suppression'] == 1.0324 and _a2257['tool_library_entries'] >= 8
+            and _a2257['ports']['historian_csv'] == 'IMPLEMENTED'
+            and _a2257['ports']['modbus_g6'] in ('IMPLEMENTED_REQUIRES_SITE_CONFIG', 'DECLARED_DEPENDENCY_MISSING'),
+            "PAPER_2257: the three pieces present through the dispatch - cited tool library, implemented file ports + declared-refusing live taps, reconciler classifications; the architecture is inspectable from the calculator surface")
+assert_that('refuse' in _l2257['value']['refusal_doctrine'],
+            "PAPER_2257: the REFUSAL DOCTRINE canonized - name what you know (cite it), refuse what you do not (visibly); the standing pattern for all future site-facing work")
+import os as _o57
+assert_that(any(f.startswith('PAPER_2257_') for f in _o57.listdir('whitepapers')),
+            "PAPER_2257: landmark whitepaper authored - consolidates PAPER_2256 appendices 6-8 into the standing record with Daniel's verbatim architectural ruling as the governing frame")
+
+# ---- PAPER_2257 APPEND: v1.10.0 FILE-FOLLOWER (connectivity tier 3 - quasi-live, zero network code) ----
+import csv as _c110
+_w110 = _ds11.SimulatorConfig(event_probability=0.0)
+_r110 = _ds11.TelemetryRecorder(engine=_ds11.UQFFDownholeEngine(_w110),
+                                config=_ds11.TelemetryConfig(duration_hours=2.0, seed=9,
+                                                             line_dropout_start_prob=0.0,
+                                                             gauge_stuck_start_prob=0.0, spike_prob=0.0)).run()
+_full110 = _r110.export_csv(_os18.path.join(_d16, 'follow_full.csv'))
+with open(_full110, newline='') as _ff110:
+    _rows110 = list(_c110.reader(_ff110))
+_live110 = _os18.path.join(_d16, 'follow_live.csv')
+with open(_live110, 'w', newline='') as _lf110:
+    _lf110.write('\n'.join([','.join(_r) for _r in _rows110[:61]]) + '\n')
+_fol110 = _ds11.HistorianFollower(_live110, reconciler=_ds11.Reconciler(_w110))
+_p110a = _fol110.poll_and_reconcile()
+with open(_live110, 'a', newline='') as _lf110:
+    _lf110.write('\n'.join([','.join(_r) for _r in _rows110[61:91]]) + '\n')
+_p110b = _fol110.poll_and_reconcile()
+_p110c = _fol110.poll_and_reconcile()
+assert_that(_p110a['new_samples'] == 60 and _p110b['new_samples'] == 30
+            and _p110b['reconciliation']['classification_counts'].get('IN_FAMILY', 0) == 6
+            and _p110c['new_samples'] == 0 and _p110c['reconciliation'] is None,
+            "FOLLOWER v1.10.0: quasi-live tier - a growing historian export is followed READ-ONLY (60 then +30 samples detected), each arrival reconciled two-stream (6/6 IN_FAMILY), quiet polls do nothing - near-real-time with ZERO network code (connectivity tier 3)")
+with open(_live110, 'w', newline='') as _lf110:
+    _lf110.write('\n'.join([','.join(_r) for _r in _rows110[:11]]) + '\n')
+_p110d = _fol110.poll()
+assert_that(_p110d.rotated and _p110d.new_samples == 10,
+            "FOLLOWER v1.10.0: rotation honesty - a shrunken export (historian rotation/rewrite) is DETECTED and reported, the follower resets rather than mis-following (whole-file re-ingest is robust by construction)")
+assert_that(_ds11.PORT_REGISTRY['modbus_g6'].status in
+            ('IMPLEMENTED_REQUIRES_SITE_CONFIG', 'DECLARED_DEPENDENCY_MISSING'),
+            "CONNECTIVITY LADDER: tier 4 (live protocol) is REAL CODE as of v1.11.0 (Daniel GO 2026-08-24) behind the optional pymodbus dependency - IMPLEMENTED_REQUIRES_SITE_CONFIG when installed, DECLARED_DEPENDENCY_MISSING (refusing with the pip hint) when not; tiers 1-3 built and verified")
+
+# ---- PAPER_2257 APPEND: v1.11.0 MODBUS CLIENT (tier 4 real protocol code; Daniel GO) ----
+_map111_ok = False
+try:
+    _ds11.load_register_map({'name': 'x', 'source': 'short', 'registers': [{'channel': 'a', 'address': 0}]})
+except ValueError:
+    _map111_ok = True
+assert_that(_map111_ok,
+            "MODBUS v1.11.0: Rule 7 on register maps - a map without a substantive source citation is REJECTED (no public G6 map exists in the fetched sources, so NONE is shipped; the example file is labeled EXAMPLE_TEST_FIXTURE)")
+if _ds11.PYMODBUS_AVAILABLE:
+    import threading as _th111, struct as _st111, socket as _sk111, time as _tm111, io as _io111, contextlib as _cl111
+    with _cl111.redirect_stderr(_io111.StringIO()), _cl111.redirect_stdout(_io111.StringIO()):
+        from pymodbus.datastore import ModbusSequentialDataBlock as _DB111, ModbusDeviceContext as _DC111, ModbusServerContext as _SC111
+        from pymodbus.server import StartTcpServer as _SV111
+        def _f32_111(v):
+            _b = _st111.pack('>f', v)
+            return [_st111.unpack('>H', _b[0:2])[0], _st111.unpack('>H', _b[2:4])[0]]
+        _words111 = _f32_111(4180.25) + _f32_111(152.5) + _f32_111(9315.0) + _f32_111(435.1) + [7]
+        _ctx111 = _SC111(devices=_DC111(hr=_DB111(1, _words111)), single=True)
+        _s111 = _sk111.socket(); _s111.bind(('127.0.0.1', 0)); _port111 = _s111.getsockname()[1]; _s111.close()
+        _th111.Thread(target=_SV111, kwargs={'context': _ctx111, 'address': ('127.0.0.1', _port111)}, daemon=True).start()
+        _tm111.sleep(0.7)
+    _stream111 = _ds11.ingest({'host': '127.0.0.1', 'port': _port111, 'polls': 3,
+                               'register_map': 'uqff_downhole_simulator/example_register_map.json'},
+                              port='modbus_g6')
+    assert_that(abs(float(_stream111.channel('P_raw_psi_S1').values[0]) - 4180.25) < 0.01
+                and abs(float(_stream111.channel('T_raw_F_S1').values[0]) - 152.5) < 0.01
+                and float(_stream111.channel('status_word').values[0]) == 7.0
+                and len(_stream111.index) == 3,
+                "MODBUS v1.11.0: LOOPBACK - a real pymodbus TCP client polls an in-process server and decodes the served registers EXACTLY (float32 word-order struct decode, uint16, 3 polls, READ-ONLY reads only); the tap emits the same LiveStream every other port emits")
+else:
+    _dep111 = False
+    try:
+        _ds11.PORT_REGISTRY['modbus_g6'].reader({'host': 'x'})
+    except NotImplementedError as _e111:
+        _dep111 = 'pip install pymodbus' in str(_e111)
+    assert_that(_dep111,
+                "MODBUS v1.11.0: dependency-missing path - without pymodbus the port refuses with the exact pip hint (protocol code is implemented; only the optional dependency is absent on this machine)")
+
+# ---- PAPER_2257 APPEND: v1.12.0 PROFILE CATALOGUE (real public well data) ----
+import numpy as _np112
+_ce112 = _ds11.CATALOG['volve_15_9_19_sr_excerpt']
+_st112 = _ce112.stream()
+_gr112 = _st112.channels['GR'].values
+assert_that(len(_st112.index) == 133 and abs(float(_gr112[0]) - 5.3274) < 1e-4
+            and bool(_np112.isnan(_st112.channels['AC'].values[0]))
+            and _st112.channels['RDEP'].unit == 'OHMM' and _st112.meta.get('WELL') == '15/9-19',
+            "CATALOGUE v1.12.0: REAL third-party well data in the repo - Equinor Volve well 15/9-19 SR verbatim excerpt ingests through the las2 port (first GR value 5.3274 GAPI verbatim, NULL -999.25 -> NaN, units + well identity carried)")
+assert_that(all(_ce112.provenance.get(_k) for _k in ('source_database', 'source_url', 'license', 'fetch_date', 'coverage'))
+            and 'EXCERPT' in _ce112.provenance['coverage'],
+            "CATALOGUE v1.12.0: provenance MANDATORY and complete - source database, URL, license, fetch date, and an honest coverage statement (the shipped file is a disclosed verbatim EXCERPT of the public full file; the depth gap is a capture artifact, stated in-file)")
+import tempfile as _tf112, os as _of112
+_r112 = _ds11.las_to_profile(_st112, out_csv=_of112.path.join(_tf112.mkdtemp(), 'p.csv'))
+assert_that(_r112['derivation'] == 'DERIVED_GRADIENTS' and _r112['stations'] == 133
+            and _ds11.load_well_profile_csv(_r112['csv']).interp(500.0)[0] > 14.7,
+            "CATALOGUE v1.12.0: the converter is HONEST - a composite log with no T/P curves converts to a profile with REAL depth stations and DERIVED_GRADIENTS-labeled conditions (Rule 7: derived is fine, unlabeled is not); the produced CSV loads straight into the engine")
+assert_that(len(_ds11.PROFILE_SOURCES) >= 6
+            and all(_s.get('url') and _s.get('license') and _s.get('access') for _s in _ds11.PROFILE_SOURCES.values()),
+            "CATALOGUE v1.12.0: the public-source table - 6 database families (KGS, Volve, DOE GDR/FORGE, NLOG, US state regulators, offshore nationals) each with URL, license, and an HONEST access note (zip/registration barriers stated, not glossed)")
+
+# ---- CATALOGUE v1.13.0: wells 2 + 3 (one at a time, all data grabbed, test-verified) ----
+_st2c = _ds11.CATALOG['scorpio_e1_sa_excerpt'].stream()
+assert_that(len(_st2c.index) == 60 and abs(float(_st2c.channels['GAMN'].values[0]) - 72.0574) < 1e-4
+            and _st2c.meta.get('WELL') == 'Scorpio E1',
+            "CATALOGUE well 2: Scorpio E1 (South Australia, UWI 6038-187, logged 2015) - 60 verbatim open-hole rows at 30.60-33.55 m; a DIFFERENT LAS dialect (-99999 NULL, divider comments, inline column headers) parsed correctly; GAMN[0] = 72.0574 GAPI verbatim")
+_st3c = _ds11.CATALOG['kennetcook_2_p129_excerpt'].stream()
+assert_that(len(_st3c.index) == 10 and len(_st3c.channels) == 24
+            and abs(float(_st3c.channels['CALI'].values[0]) - 2.4438154697) < 1e-9
+            and bool(__import__('numpy').isnan(_st3c.channels['DT'].values[0])),
+            "CATALOGUE well 3: Kennetcook #2 (P-129, Nova Scotia, Schlumberger 2007) - REAL WRAPPED-MODE file: 10 records x 25 curves assembled by curve count, CALI[0] = 2.4438154697 in verbatim, NULL-inside-record -> NaN")
+assert_that(_st3c.meta.get('BHT') == '42.00000' and _st3c.meta.get('BHT_UNIT') == 'DEGC'
+            and _st3c.meta.get('TDL') == '1935.00000',
+            "CATALOGUE well 3: REAL measured thermal anchor captured - BHT = 42.0 degC at TD 1935 m from the log's own parameter block (stated 'used in calculations' on the log) - the catalogue's first real downhole temperature")
+import tempfile as _tf13, os as _of13
+_r13 = _ds11.las_to_profile(_st3c, out_csv=_of13.path.join(_tf13.mkdtemp(), 'k.csv'))
+assert_that(_r13['derivation'] == 'DERIVED_FROM_MEASURED_BHT',
+            "CATALOGUE v1.13.0: the converter's REAL-ANCHOR tier - with a measured BHT + TD in the header, the thermal profile runs surface -> 42 degC at TD (a real two-point anchor: stronger than pure gradients, weaker than a full curve, LABELED as exactly that)")
+assert_that(all(all(_e.provenance.get(_k) for _k in ('source_database', 'source_url', 'license', 'fetch_date', 'coverage'))
+                for _e in _ds11.CATALOG.values()) and len(_ds11.CATALOG) >= 3,
+            "CATALOGUE v1.13.0: THREE real wells (North Sea / South Australia / Nova Scotia), three LAS dialects, every entry provenance-complete - the citation discipline holding at catalogue scale")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

@@ -267,3 +267,4 @@ LEDGER_ARC,LANDMARK,P2254-2255 dispatches + notebook + _find_registry_artifact,2
 DOWNHOLE_ARC,LANDMARK,PAPER_2256 dispatch + 6-file package + v1.1.0 extensions,1 landmark + 1 package,v0.394.0
 INSTRUMENT_ARC,EXTENSIONS,five extension layers + 4 new modules + package CLI,v1.2-v1.6,v0.395.0
 TWOSTREAM_ARC,EXTENSIONS,three architecture pieces + 3 new modules + 2 CLI subcommands,v1.7-v1.9,v0.396.0
+CONNECTIVITY_ARC,EXTENSIONS,1 landmark dispatch + 4 package versions + 3 real wells + 2 port upgrades,v1.10-v1.13,v0.397.0

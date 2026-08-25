@@ -6558,3 +6558,6 @@ INSTRUMENT_ARC (v0.395.0, 2026-08-23): no new rulings required. Rule 7 disclosur
 
 ---
 TWOSTREAM_ARC (v0.396.0, 2026-08-24): no new rulings required. Daniel's two-stream architecture statement (2026-08-23) executed as pieces 1-3; site details (datasheets for user-supplied tools, protocol parameters for declared ports) are queued as future INPUTS, not rulings. Board unchanged (6 items).
+
+---
+CONNECTIVITY_ARC (v0.397.0, 2026-08-24): ONE ruling executed - Daniel GO on the optional pymodbus dependency (tier-4 Modbus client built + loopback-verified). Independent connectivity assessment adjudicated on the record (PAPER_2257 appendix). Board otherwise unchanged (6 items).

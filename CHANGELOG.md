@@ -7,6 +7,37 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.397.0 — 2026-08-24 — THE CONNECTIVITY SHIP
+
+**PAPER_2257** (new dispatch — 2,253 wired / 2,308 keys): the two-stream
+architecture canonized as a standing landmark with a live-verifying dispatch
+(`two_stream_verified`), Daniel's ruling verbatim, the refusal doctrine as §5.
+
+`uqff_downhole_simulator` v1.10.0–v1.13.0:
+
+- **v1.10.0 file-follower** — quasi-live monitoring of continuously-appended
+  historian exports (poll/diff/reconcile; rotation detected; caller-scheduled);
+  formal connectivity-tier ladder published in response to an independent
+  assessment (correct on no-live-connection; stale on "only simulates").
+- **v1.11.0 real Modbus client** (Daniel GO on the optional pymodbus dependency) —
+  READ-ONLY tap, citation-mandatory register maps (none invented — no public G6
+  map exists), raw-struct decoding, LOOPBACK-VERIFIED against an in-process
+  server; gate green with or without the dependency installed.
+- **v1.12.0 profile catalogue** — 6-database public-source table with honest
+  access notes; provenance-mandatory catalogue entries; honest LAS→profile
+  converter (derived conditions labeled).
+- **v1.13.0 three real wells** — Volve 15/9-19 SR (North Sea), Scorpio E1
+  (South Australia), Kennetcook #2 P-129 (Nova Scotia). The third forced two
+  port upgrades: WRAPPED-LAS parsing (superseding the v1.8.0 refusal, verified
+  against the real file) and the DERIVED_FROM_MEASURED_BHT converter tier
+  (real BHT 42 °C @ TD 1,935 m from the log's own parameter block). All values
+  verbatim-pinned; all entries provenance-complete.
+
+Also: v0.396.0-era portability guard held; SHIP GUARD v5 (surfaces badge
+measured directly) landed mid-arc. Gate 5,816 → 5,835.
+
+---
+
 ## v0.396.0 — 2026-08-24 — THE TWO-STREAM SHIP
 
 `uqff_downhole_simulator` v1.7.0–v1.9.0 — Daniel's two-stream architecture

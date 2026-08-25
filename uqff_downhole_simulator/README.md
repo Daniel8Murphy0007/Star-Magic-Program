@@ -291,3 +291,110 @@ print(report['undervalued_streams'])
 ```
 
 CLI: `python -m uqff_downhole_simulator reconcile --file field.csv --td 18500`
+
+## Connectivity status (formal statement, 2026-08-24)
+
+An independent assessment (2026-08-24) correctly noted this package has **no
+live connection capability** — no network protocol clients, drivers, polling,
+or real-time acquisition — and partially-stale noted that it "only simulates"
+telemetry. The honest tier ladder, so nothing is oversold or undersold:
+
+| Tier | Status | What it means |
+|---|---|---|
+| SIMULATE | ✅ built (v1.3.0) | synthetic field telemetry with faults, flags, scored QC |
+| OFFLINE-INGEST | ✅ built (v1.8.0) | **real** sensor data via exported files: historian CSV, LAS 2.0, `register_port()` site readers — reconciler runs on real data |
+| FILE-FOLLOW (quasi-live) | ✅ built (v1.10.0) | `HistorianFollower` polls a continuously-appended historian export and reconciles new samples — near-real-time with zero network code |
+| LIVE PROTOCOL | 🟡 tier 4 real code (v1.11.0) | `modbus_g6` is a REAL pymodbus TCP client (optional `pip install pymodbus`; READ-ONLY; citation-mandatory register maps; loopback-verified) awaiting site config; witsml / opcua remain declared-refusing |
+
+The workflow the assessment prescribes — export well surveys, gauge
+inventories, and historical readings from your SCADA/historian into CSV and
+feed them in — is exactly tiers 2–3, already built and gate-verified.
+
+## v1.10.0 extension: the file-follower (Daniel-directed, 2026-08-24)
+
+`uqff_follower.py` — `HistorianFollower(path, reconciler=...)` watches a
+growing historian export READ-ONLY: `poll()` re-ingests and diffs by sample
+count (robust by construction against partial lines and file rotation, which
+is detected and reported); `poll_and_reconcile()` runs the two-stream
+reconciliation whenever new samples arrive; `watch()` is a caller-scheduled
+generator (the library never blocks on its own). Verified: 60 → +30 samples
+followed and reconciled 6/6 IN_FAMILY per poll; quiet poll does nothing;
+rotation resets; missing file is a soft error.
+
+```python
+from uqff_downhole_simulator import HistorianFollower, Reconciler, SimulatorConfig
+f = HistorianFollower("historian_export.csv", reconciler=Reconciler(SimulatorConfig()))
+for poll in f.watch(interval_s=60.0):
+    r = f.poll_and_reconcile()
+    if r['reconciliation'] and r['reconciliation']['undervalued_streams']:
+        print("FOUND:", r['reconciliation']['undervalued_streams'])
+```
+
+## v1.11.0 extension: the Modbus client (Daniel GO, 2026-08-24 — tier 4 real code)
+
+`uqff_modbus.py` — a real Modbus TCP client (`ModbusHistorianTap`) behind the
+guarded optional dependency `pip install pymodbus` (same pattern as PyQt6; the
+package runs fully without it, the port refuses with the pip hint). READ-ONLY
+by construction: only read_holding/read_input calls exist. Register maps are
+user-supplied JSON with a MANDATORY source citation — no public G6 register
+map exists in the fetched sources, so none is shipped; the included
+`example_register_map.json` is labeled EXAMPLE_TEST_FIXTURE and describes the
+in-process loopback server used for verification. Decoding is raw-`struct` on
+the 16-bit registers (word order from the map), stable across pymodbus
+versions. Loopback-verified: a real TCP client polled an in-process pymodbus
+server and decoded float32/uint16 registers exactly, emitting the same
+LiveStream every other port emits — the reconciler doesn't know the samples
+came over a wire.
+
+```python
+from uqff_downhole_simulator import ingest
+stream = ingest({'host': '10.0.0.5', 'port': 502, 'polls': 60,
+                 'interval_s': 60.0, 'register_map': 'my_site_g6_map.json'},
+                port='modbus_g6')
+```
+
+## v1.12.0 extension: the well-profile catalogue (Daniel GO, 2026-08-24)
+
+`uqff_profile_catalog.py` + `catalog/` — the closed stream gets REAL wells.
+Three parts: (1) `PROFILE_SOURCES` — a machine-readable table of six public
+geophysical databases (KGS Kansas LAS archive, Equinor Volve, DOE GDR / Utah
+FORGE T-P logs, NLOG, US state regulators, offshore nationals) each with URL,
+license, and an HONEST access note — several serve only ZIPs or need
+registration, so those are documented pull-it-yourself paths. (2) `CATALOG` —
+shipped entries with MANDATORY provenance sidecars; the first is a verbatim
+excerpt of **real Equinor Volve well 15/9-19 SR** composite-log data (Statoil,
+North Sea; excerpt coverage disclosed in-file and in provenance), which
+ingests through the las2 port with the first GR value (5.3274 GAPI) verbatim.
+(3) `las_to_profile()` — the converter to the engine's profile-CSV format:
+measured T/P curves used when present; otherwise REAL depth stations with
+DERIVED_GRADIENTS-labeled conditions (Rule 7 — derived is fine, unlabeled is
+not). Verified end-to-end: real Volve geometry → profile CSV → engine.
+
+```python
+from uqff_downhole_simulator import CATALOG, las_to_profile
+r = las_to_profile(CATALOG['volve_15_9_19_sr_excerpt'].stream(), out_csv='volve_profile.csv')
+```
+
+## v1.13.0 extension: three real wells + two port upgrades (Daniel-directed, 2026-08-24)
+
+Cataloguing continued one well at a time, each grabbed verbatim and test-verified:
+
+| Entry | Well | Region | Dialect exercised |
+|---|---|---|---|
+| volve_15_9_19_sr_excerpt | 15/9-19 SR (Statoil) | North Sea | unwrapped, NULL −999.25 |
+| scorpio_e1_sa_excerpt | Scorpio E1 (UWI 6038-187) | South Australia | NULL −99999, divider comments, inline column headers |
+| kennetcook_2_p129_excerpt | Kennetcook #2 (P-129, Schlumberger 2007) | Nova Scotia | **WRAP. YES** (PETREL), 25 curves |
+
+The Kennetcook well drove two upgrades: **wrapped-LAS parsing** in `read_las`
+(records assembled by curve count, trailing partials dropped not guessed —
+the earlier honest refusal superseded by honest parsing once a real wrapped
+file existed to verify against), and header-anchor capture (BHT/TMAX/TDL/TDD
+into stream meta). Its **real measured BHT — 42.0 °C at TD 1,935 m**, stated
+"used in calculations" on the log itself — feeds the converter's new
+`DERIVED_FROM_MEASURED_BHT` tier: a real two-point thermal profile, stronger
+than pure gradients, weaker than a full curve, labeled as exactly that.
+
+Verification (all gate-pinned per run): every entry's first values verbatim
+(GR 5.3274 / GAMN 72.0574 / CALI 2.4438154697), NULLs → NaN in all three
+dialects, provenance complete on all entries, BHT-anchor math checked against
+the surface→42 °C@TD line, wrapped safety (partial records dropped).

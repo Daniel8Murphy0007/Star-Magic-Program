@@ -1,25 +1,20 @@
-v0.396.0 - THE TWO-STREAM SHIP: the architecture complete
+v0.397.0 - THE CONNECTIVITY SHIP: the live stream gets its doors, and real wells enter the repo
 
-uqff_downhole_simulator v1.7.0-v1.9.0 - Daniel's two-stream design built
-end-to-end: the standalone theoretical CLOSED STREAM coordinates with the
-LIVE STREAM from site logging systems to find offset undervalued data.
+PAPER_2257 (new dispatch): the two-stream architecture as a standing landmark,
+live-verified per call. Downhole v1.10.0-v1.13.0:
 
-- v1.7.0 TOOL LIBRARY: cited catalog (8 entries) - quartz twins, ChampionX-
-  cited piezoresistive class, user-supplied entries REFUSING invented vendor
-  numbers, the G6 Modbus interface declared as the ports target; ToolString
-  + station rating checks (177 C gauge caught in the 217 C kick zone).
-- v1.8.0 PORTS/PLUG-INS: read-only ingest to LiveStream. historian_csv +
-  las2 IMPLEMENTED (round-trip verified; wrapped LAS refused, not
-  mis-parsed); modbus_g6/witsml/opcua DECLARED, refusing until site details;
-  register_port() for site plug-ins; CLI ingest.
-- v1.9.0 RECONCILER: offset(t) = measured - predicted per station,
-  classified with DISCLOSED thresholds. Four scenarios verified per gate
-  run: clean 6/6 in-family; +50 psi bias recovered 50.09; 2-yr drift inside
-  the spec-aware envelope; THE FIND - kick well vs linear assumption flags
-  610/4,448/6,083 psi UNEXPLAINED offsets. CLI reconcile.
+- v1.10 FILE-FOLLOWER: quasi-live monitoring of appended historian exports;
+  connectivity-tier ladder published (independent assessment adjudicated:
+  correct on no-live-connection, stale on "only simulates").
+- v1.11 REAL MODBUS CLIENT (Daniel GO, optional pymodbus): READ-ONLY tap,
+  citation-mandatory register maps, loopback-verified against an in-process
+  server; gate green with or without the dependency.
+- v1.12 PROFILE CATALOGUE: 6 public databases tabled with honest access
+  notes; provenance-mandatory entries; honest LAS->profile converter.
+- v1.13 THREE REAL WELLS: Volve 15/9-19 SR (North Sea) + Scorpio E1 (South
+  Australia) + Kennetcook #2 P-129 (Nova Scotia). Real data forced the code
+  better: WRAPPED-LAS parsing (supersedes the refusal, verified on the real
+  file) + DERIVED_FROM_MEASURED_BHT tier (real 42 C @ 1,935 m anchor).
+  Every value verbatim-pinned; every entry provenance-complete.
 
-Plus the v0.395.0 red-gate portability lesson hardened into a permanent
-PORTABILITY GUARD (gate self-scans for hard-coded temp paths).
-
-Gate 5,801 -> 5,816. PAPER_2256 +3 appendices. Zero physics changes;
-zero new dispatches. 23-file pass.
+Gate 5,816 -> 5,835. 2,253 wired (2,308 keys). Next: PAPER_2258.

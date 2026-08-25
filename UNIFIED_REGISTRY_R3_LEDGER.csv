@@ -235,3 +235,4 @@ v0.393.0,2026-08-21,LEDGER_ARC,registry +7 graph +6 citations +2 pins +14 artifa
 v0.394.0,2026-08-22,DOWNHOLE_ARC,registry +4 graph +6 citations +1 pins +9 package-files +8,gate 5777/0
 v0.395.0,2026-08-23,INSTRUMENT_ARC,registry +1 graph +1 citations +1 pins +23 package-files +4,gate 5800/0
 v0.396.0,2026-08-24,TWOSTREAM_ARC,registry +1 graph +1 citations +1 pins +15 package-files +3,gate 5816/0
+v0.397.0,2026-08-24,CONNECTIVITY_ARC,registry +2 graph +3 citations +2 pins +19 package-files +8 catalog-files +6,gate 5835/0

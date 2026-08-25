@@ -309,3 +309,6 @@ THE INSTRUMENT SHIP: uqff_downhole_simulator v1.2.0-v1.6.0 (service-life diverge
 
 ## v0.396.0 — 2026-08-24
 THE TWO-STREAM SHIP: uqff_downhole_simulator v1.7.0-v1.9.0 (cited tool library; read-only ports with historian/LAS implemented and live taps declared; two-stream reconciler with four-scenario validation incl. the 6,083-psi kick find). Architecture complete. Gate 5,816/0. 23-file pass verified.
+
+## v0.397.0 — 2026-08-24
+THE CONNECTIVITY SHIP: PAPER_2257 landmark+dispatch; downhole v1.10-v1.13 (file-follower; real Modbus client loopback-verified; connectivity ladder; profile catalogue with THREE REAL WELLS incl. wrapped-LAS parsing + measured-BHT tier). Gate 5,835/0. 23-file pass verified.

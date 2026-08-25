@@ -85,8 +85,23 @@ from .uqff_reconciler import (
     ReconcilerConfig,
     auto_station_map,
 )
+from .uqff_follower import (
+    FollowerPoll,
+    HistorianFollower,
+)
+from .uqff_modbus import (
+    PYMODBUS_AVAILABLE,
+    RegisterMap,
+    load_register_map,
+)
+from .uqff_profile_catalog import (
+    CATALOG,
+    CatalogEntry,
+    PROFILE_SOURCES,
+    las_to_profile,
+)
 
-__version__ = "1.9.0"
+__version__ = "1.13.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
@@ -102,5 +117,8 @@ __all__ = [
     "LiveStream", "StreamChannel", "PortSpec", "PORT_REGISTRY",
     "ingest", "read_historian_csv", "read_las", "register_port",
     "Reconciler", "ReconcilerConfig", "auto_station_map",
+    "FollowerPoll", "HistorianFollower",
+    "PYMODBUS_AVAILABLE", "RegisterMap", "load_register_map",
+    "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
 ]

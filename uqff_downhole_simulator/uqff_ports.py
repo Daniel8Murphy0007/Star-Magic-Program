@@ -149,16 +149,28 @@ def read_historian_csv(path) -> LiveStream:
 # LAS 2.0 reader (public well-log standard; unwrapped mode)
 # ---------------------------------------------------------------------------
 def read_las(path) -> LiveStream:
-    """Minimal LAS 2.0 reader: ~Version/~Well/~Curve/~ASCII sections,
-    NULL-value substitution -> NaN, depth-indexed curves. WRAP. YES files are
-    refused (honest unsupported), never mis-parsed."""
+    """LAS 2.0 reader: ~Version/~Well/~Parameter/~Curve/~ASCII sections,
+    NULL-value substitution -> NaN, depth-indexed curves.
+
+    WRAP. NO: one line per depth step. WRAP. YES (v1.13.0, driven by the real
+    Kennetcook #2 / P-129 catalogue well): records are assembled by
+    accumulating values until the curve count is reached - honest parsing
+    replaced the earlier refusal once a real wrapped file existed to verify
+    against. Records with a wrong value count are DROPPED, not guessed.
+
+    Meta captures WELL/COMP/FLD/DATE from ~W plus real downhole anchors from
+    ~P when present (BHT, TMAX, MRT1, TDL, TDD, with units) - the converter's
+    measured-BHT tier feeds on these."""
     p = Path(path)
     lines = p.read_text(encoding='utf-8', errors='ignore').splitlines()
     section = ''
+    wrap = False
     null_val = -999.25                        # LAS convention default
     curves: List[tuple] = []                  # (mnemonic, unit)
     data_rows: List[List[float]] = []
+    pend: List[float] = []                    # wrapped-record accumulator
     meta: Dict[str, str] = {}
+    _P_ANCHORS = ('BHT', 'TMAX', 'MRT1', 'TDL', 'TDD')
     for ln in lines:
         s = ln.strip()
         if not s or s.startswith('#'):
@@ -168,9 +180,7 @@ def read_las(path) -> LiveStream:
             continue
         if section == 'V':
             if s.upper().startswith('WRAP') and '.' in s:
-                if s.split('.', 1)[1].strip().upper().startswith('YES'):
-                    raise ValueError(f"{p}: LAS wrapped mode (WRAP. YES) is not supported - "
-                                     "refusing rather than mis-parsing")
+                wrap = s.split('.', 1)[1].strip().upper().startswith('YES')
         elif section == 'W':
             if s.upper().startswith('NULL') and '.' in s:
                 body = s.split('.', 1)[1]
@@ -183,6 +193,20 @@ def read_las(path) -> LiveStream:
             for key in ('WELL', 'COMP', 'FLD', 'DATE'):
                 if s.upper().startswith(key):
                     meta[key] = s.split(':', 1)[0].split('.', 1)[-1].strip() if '.' in s else s
+        elif section == 'P':
+            head = s.split(':', 1)[0]
+            if '.' in head:
+                mnem, rest = head.split('.', 1)
+                mnem = mnem.strip().upper()
+                if mnem in _P_ANCHORS:
+                    parts = rest.strip().split()
+                    if parts:
+                        unit = parts[0] if not _is_float(parts[0]) else ''
+                        vals = [x for x in parts if _is_float(x)]
+                        if vals:
+                            meta[mnem] = vals[-1]
+                            if unit:
+                                meta[mnem + '_UNIT'] = unit
         elif section == 'C':
             head = s.split(':', 1)[0]
             if '.' in head:
@@ -190,9 +214,18 @@ def read_las(path) -> LiveStream:
                 curves.append((mnem.strip(), rest.strip().split()[0] if rest.strip() else ''))
         elif section == 'A':
             try:
-                data_rows.append([float(x) for x in s.split()])
+                vals = [float(x) for x in s.split()]
             except ValueError:
                 continue
+            if not wrap:
+                data_rows.append(vals)
+            else:
+                pend.extend(vals)
+                while len(pend) >= len(curves) > 0:
+                    data_rows.append(pend[:len(curves)])
+                    pend = pend[len(curves):]
+    if wrap and pend:
+        pass                                   # trailing partial record dropped, not guessed
     if not curves or not data_rows:
         raise ValueError(f"{p}: no curves or no data (need ~Curve and ~ASCII sections)")
     width = len(curves)
@@ -206,6 +239,14 @@ def read_las(path) -> LiveStream:
                 for j, (m, u) in enumerate(curves) if j > 0}
     return LiveStream(name=p.stem, source_format='las2',
                       index_kind='depth', index=index, channels=channels, meta=meta)
+
+
+def _is_float(x: str) -> bool:
+    try:
+        float(x)
+        return True
+    except ValueError:
+        return False
 
 
 # ---------------------------------------------------------------------------

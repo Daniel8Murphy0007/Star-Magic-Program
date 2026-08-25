@@ -145,3 +145,4 @@ LEDGER_ARC,landmark x2 + notebook + fix,2+2,SERIES_COMPLETE,Daniel board unchang
 DOWNHOLE_ARC,landmark + package,1+1,MODULE_SHIPPED,Daniel board unchanged (6 items); knob ruling EXECUTED same-day,v0.394.0
 INSTRUMENT_ARC,landmark appends + package v1.2-v1.6,0,MODULE_EXTENDED,Daniel board unchanged (6 items); no new rulings required this arc,v0.395.0
 TWOSTREAM_ARC,landmark appends + package v1.7-v1.9,0,ARCHITECTURE_COMPLETE,Daniel board unchanged (6 items); site details queued as future inputs not rulings,v0.396.0
+CONNECTIVITY_ARC,landmark + package v1.10-v1.13 + 3 real wells,1,MODBUS_DEPENDENCY_GO,Daniel ruled GO on pymodbus optional dependency (2026-08-24); board otherwise unchanged (6 items),v0.397.0

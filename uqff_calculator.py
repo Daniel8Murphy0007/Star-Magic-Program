@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.396.0"
+VERSION = "0.397.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28904,6 +28904,78 @@ def _p2256(dataset=None):
                        'point 0.336 %FS/yr at 6200 m/205 C/18.5 kpsi. This dispatch imports '
                        'the subpackage LIVE and verifies the canonical lock on every call.',
             'source': 'PAPER_2256', 'residual_pct': 0.0}
+
+@_register('PAPER_2257')
+def _p2257(dataset=None):
+    arch = {'available': False}
+    try:
+        import numpy as _np
+        import uqff_downhole_simulator as ds
+        sup = ds.canonical_suppression()
+        d = ds.drift_comparison(3000, 180, 16000)
+        ports = {n: p.status for n, p in ds.PORT_REGISTRY.items()}
+        tools_cited = all(bool(t.source) and len(t.source) > 40 for t in ds.TOOL_LIBRARY.values())
+        w = ds.SimulatorConfig(event_probability=0.0)
+        rc = ds.Reconciler(w)
+        md = float(w.sensor_depths_ft[0])
+        base, _tF = rc.predicted_baseline(md)
+        t = _np.arange(20) * 60.0
+        rng = _np.random.default_rng(0)
+        clean = ds.LiveStream('clean', 'synthetic', 'time_s', t,
+                              {'P_raw_psi_S1': ds.StreamChannel('P_raw_psi_S1', 'psi',
+                                                                base + rng.normal(0.0, 2.0, 20))})
+        planted = ds.LiveStream('planted', 'synthetic', 'time_s', t,
+                                {'P_raw_psi_S1': ds.StreamChannel('P_raw_psi_S1', 'psi',
+                                                                  base + 5000.0 + rng.normal(0.0, 2.0, 20))})
+        c1 = rc.reconcile(clean, {'P_raw_psi_S1': md})['stations'][0]['classification']
+        rep2 = rc.reconcile(planted, {'P_raw_psi_S1': md})
+        c2 = rep2['stations'][0]['classification']
+        arch = {'available': True, 'version': ds.__version__,
+                'canonical_suppression': round(sup, 4),
+                'ratio_equals_suppression': bool(abs(d['measured_ratio'] - d['predicted_ratio_suppression']) < 0.001),
+                'tool_library_entries': len(ds.TOOL_LIBRARY),
+                'tool_citations_complete': bool(tools_cited),
+                'ports': ports,
+                'null_case_classification': c1,
+                'planted_5000psi_classification': c2,
+                'undervalued_streams_found': len(rep2['undervalued_streams']),
+                'thresholds_disclosed_in_report': bool('note' in rep2['thresholds_disclosed'])}
+    except Exception as e:
+        arch['error'] = str(e)[:120]
+    two_stream_ok = (arch.get('available')
+                     and arch.get('ratio_equals_suppression')
+                     and arch.get('tool_citations_complete')
+                     and arch.get('null_case_classification') == 'IN_FAMILY'
+                     and arch.get('planted_5000psi_classification') == 'UNEXPLAINED_OFFSET'
+                     and arch.get('undervalued_streams_found', 0) >= 1)
+    return {'value': {'architecture': arch,
+                      'two_stream_verified': bool(two_stream_ok),
+                      'daniel_ruling': 'the standalone theoretical (CLOSED STREAM) functions to find the '
+                                       'offset undervalued data streams that coordinate live stream with '
+                                       'closed stream (2026-08-23)',
+                      'pieces': {'tool_library': 'v1.7.0 - cited catalog, refusal of invented vendor data',
+                                 'ports': 'v1.8.0 - READ-ONLY ingest, implemented file ports + declared-refusing live taps',
+                                 'reconciler': 'v1.9.0 - offset classification with disclosed thresholds'},
+                      'refusal_doctrine': 'name what you know, cite it; refuse what you do not, visibly - '
+                                          'uncited specs rejected, user-supplied tools refuse models, declared '
+                                          'ports refuse to run, wrapped LAS refused, sub-window drift not classified'},
+            'formula': 'THE TWO-STREAM ARCHITECTURE (Daniel ruling 2026-08-23, built complete '
+                       'v1.7.0-v1.9.0): CLOSED STREAM (locked-primitive physics, zero external '
+                       'input) predicts what every tool in a described well SHOULD read; LIVE '
+                       'STREAM (site telemetry via READ-ONLY ports) delivers what it DOES read; '
+                       'the RECONCILER works offset(t) = measured - predicted per station and '
+                       'classifies IN_FAMILY / CALIBRATION_OFFSET / DRIFT_CONSISTENT / '
+                       'TRANSIENTS / UNEXPLAINED. Four-scenario validation: clean 6/6 in-family; '
+                       '+50 psi bias recovered 50.09; 2-yr drift inside the spec-aware envelope '
+                       '[79.71, 82.29] psi/yr; THE FIND - kick well vs linear-gradient '
+                       'description flags 610/4,448/6,083 psi UNEXPLAINED offsets: the closed '
+                       'stream exposes the offset undervalued data stream the assumed model '
+                       'cannot see. This dispatch re-verifies the architecture live per call '
+                       '(suppression lock, ratio equality, citations, port statuses, micro '
+                       'two-stream reconciliation).',
+            'source': 'PAPER_2257',
+            'residual_pct': 0.0}
+
 
 @_register('PAPER_001')
 def _paper_001(dataset):

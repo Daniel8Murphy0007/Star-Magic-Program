@@ -12242,3 +12242,6 @@ downhole_simulator,PAPER_2256,SUPPLIES,PAPER_2250,the simulation side of the qua
 downhole_v110_extensions,PAPER_2256,COMPLETES,BENCH_TEST_SIMULATION,measured ratio equals canonical suppression away from clip
 downhole_v12_v16_extensions,PAPER_2256,COMPLETES,INSTRUMENT_ARC,v1.2-v1.6 five extension layers; suppression ratio invariant across baseline and well geometry
 downhole_two_stream_v17_v19,PAPER_2256,COMPLETES,TWOSTREAM_ARC,closed stream predicts / live stream delivers / reconciler classifies; undervalued streams surfaced
+two_stream_architecture,PAPER_2257,CANONIZES,DANIEL_RULING_2026_08_23,closed stream finds offset undervalued live data
+PAPER_2257,PAPER_2256,CONSOLIDATES,APPENDICES_6_8,tool library + ports + reconciler into standing landmark
+connectivity_and_catalogue_v110_v113,PAPER_2257,EXTENDS,CONNECTIVITY_ARC,tier ladder simulate/offline/follow/modbus + real wells Volve+ScorpioE1+Kennetcook2

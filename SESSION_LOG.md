@@ -11848,3 +11848,47 @@ release paragraph/campaign/shipped header; CHANGELOG + _BUILD_LOG +
 SHIP_MESSAGE + RULINGS trail; 10 TWOSTREAM_ARC trail rows. Zero calculator
 physics changes; zero new dispatches (ratchet untouched). Awaiting Daniel:
 `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 269 — 2026-08-24 — v0.397.0 THE CONNECTIVITY SHIP (PAPER_2257 + downhole v1.10–v1.13)
+
+The session that answered "can this program read deployed sensors?" with built
+code and real wells:
+
+1. PAPER_2257 authored + wired (2,253 wired / 2,308 keys): the two-stream
+   architecture landmark; dispatch live-verifies suppression lock, ratio
+   equality, citations, port statuses, and a micro reconciliation per call;
+   refusal doctrine canonized §5. WHITEPAPER_INDEX flipped; residual ratchet
+   fed; whitepapers 2,292.
+2. Independent connectivity assessment adjudicated: CORRECT on no live
+   connection (the declared-refusing tier, by design); STALE on "only
+   simulates" (v1.8.0 offline ingest of real exports already existed).
+   Connectivity-tier ladder published (simulate / offline-ingest /
+   file-follow / live-protocol).
+3. v1.10.0 `uqff_follower.py`: HistorianFollower — poll/diff/reconcile on
+   continuously-appended exports; rotation detected; missing file soft error;
+   caller-scheduled. Tier 3 live today with zero network code.
+4. v1.11.0 `uqff_modbus.py` (Daniel GO on optional pymodbus): READ-ONLY
+   ModbusHistorianTap; register maps user-supplied + citation-mandatory (no
+   public G6 map exists — none invented; example labeled TEST_FIXTURE);
+   raw-struct decode; LOOPBACK-VERIFIED (in-process server, exact float32/
+   uint16 recovery); registry status reflects dependency presence; gate
+   carries BOTH branches (green on Daniel's no-pymodbus Windows).
+5. v1.12.0 `uqff_profile_catalog.py`: PROFILE_SOURCES (6 public databases,
+   honest access notes — GDR/KGS binary/zip barriers documented after live
+   fetch attempts); provenance-mandatory CATALOG; honest las_to_profile.
+6. v1.13.0 THREE REAL WELLS, one at a time per Daniel's order, each verbatim
+   + provenance-sidecar'd + test-verified: Volve 15/9-19 SR (Statoil, North
+   Sea; GR[0]=5.3274 verbatim); Scorpio E1 (SA 6038-187; -99999-NULL
+   dialect); Kennetcook #2 P-129 (Nova Scotia, Schlumberger 2007; WRAP. YES
+   PETREL export + REAL BHT 42.0 °C @ TD 1,935 m). Real data forced two
+   upgrades: wrapped-LAS parsing in read_las (SUPERSEDES the v1.8.0 refusal,
+   verified against the real file; partial records dropped not guessed) and
+   the converter's DERIVED_FROM_MEASURED_BHT tier (~P anchors BHT/TMAX/TDL/
+   TDD captured to stream meta).
+
+Ship prep: pins at 0.397.0 (desc 467 chars, measured counts); SHIP GUARD
+marker TWOSTREAM_ARC→CONNECTIVITY_ARC (+ GAPS id connectivity_arc_rule7);
+README release/campaign/shipped headers; CHANGELOG + _BUILD_LOG +
+SHIP_MESSAGE + RULINGS trail (pymodbus GO recorded); 10 CONNECTIVITY_ARC
+trail rows. Gate 5,816 → 5,835, 0 failures. Package v1.13.0 (26 files incl.
+catalog/, measured). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
