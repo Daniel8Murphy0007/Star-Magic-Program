@@ -290,3 +290,195 @@ first-value verbatim checks on every entry; NULL handling in all dialects; prove
 completeness catalogue-wide; the BHT-anchor arithmetic checked against the
 surface→42 °C@TD line; wrapped-safety on a malformed synthetic. Package v1.13.0;
 gate 5,830 → 5,835.
+
+---
+
+## APPENDED 2026-08-24 (5) — v1.14.0: CATALOGUE WELL 4 — TEXAS, LAS 1.2, THE SECOND REAL BHT
+
+**UNIVERSITY 6-17 NO.1** (Wildcat field, Section 17, Reagan County, TEXAS — the
+Permian region, Energy One's home ground; API 42-303-34774; Halliburton, run TWO out
+of Odessa, logged 06-21-97; via the public PetroPy redistribution of Texas University
+Lands well data, MIT/public record). Fourth real well, and three catalogue firsts:
+
+1. **LAS VERSION 1.2** — the third LAS version dialect in the catalogue. Its
+   value-after-colon header convention exposed a real reader bug (meta captured the
+   label "Well Name" instead of the well name); fixed by branching the ~W capture on
+   the declared VERS. Real data finding real bugs, again — the catalogue is doing its
+   job as a port test corpus, not just a data shelf.
+2. **First imperial-depth well** (STRT/STOP in feet; converter depth_unit='ft' path
+   exercised end-to-end).
+3. **Second real BHT anchor: 141.0 DEGF at TD 9,097 ft** — and the first in
+   Fahrenheit, exercising the converter's no-conversion unit branch. Gate-checked
+   arithmetic: T(2,747 ft) = 94.9 F on the surface→141 F@TD line.
+
+Verified per gate run: 50 verbatim sonic-run rows (DT[0] = 66.106 us/ft in
+verbatim), NULL-in-interval → NaN, well identity correct through the 1.x branch,
+provenance complete. Catalogue standing: FOUR wells / FOUR regions / THREE LAS
+dialects / TWO real BHT anchors. Package v1.14.0; gate 5,835 → 5,839.
+
+---
+
+## APPENDED 2026-08-24 (6) — v1.15.0: CATALOGUE WELL 5 — KANSAS, THE FIRST COMPLETE FILE, AND THE HONEST FALLBACK PROVEN ON REAL DATA
+
+**COLLINGWOOD 1-28** (Amoco Production, Nicholas field, Stanton County, KANSAS;
+API 15-187-20743; Halliburton, 31-MAY-94; KGS ID 1001178549; via the public lasio
+redistribution of the KGS archive — the in-file header carries the KGS update
+history and archive path, so the provenance is written into the data itself).
+
+Three milestones:
+
+1. **The first COMPLETE catalogue entry** (kind REAL_WELL_LOG_COMPLETE): the entire
+   public file verbatim. The 5-station interval slice was the KGS's own archiving —
+   the excerpting was theirs, not ours, and the record says so. The source table's
+   #1 entry (KGS) is now CLOSED via redistribution after its direct downloads
+   proved binary-blocked.
+2. **Second wrapped record shape**: 27 curves (depth + 7/7/7/5-value continuation
+   lines) — the wrapped parser generalizes beyond the file that drove it.
+   Verbatim pins: IDGR[0] = 50.6465 API, ACTC[0] = 55.10 us/ft, IDSP[-1] = 93.2671 mV.
+3. **The honest fallback, exercised by real data**: the file carries a real
+   BHT = 125 DEGF (the catalogue's third) but NO TD parameter. The converter does
+   NOT fabricate an anchor line from a temperature without a depth — it falls to
+   labeled DERIVED_GRADIENTS. The refusal-over-invention doctrine's tier logic,
+   proven on a real edge case rather than a synthetic one.
+
+Catalogue standing: FIVE wells / FIVE regions (North Sea, South Australia,
+Nova Scotia, Texas, Kansas) / THREE LAS dialects / TWO wrapped shapes / THREE real
+BHTs. Package v1.15.0; gate 5,839 → 5,843.
+
+---
+
+## APPENDED 2026-08-24 (7) — v1.16.0: CATALOGUE WELL 6 — GISP2 — THE TEMPERATURE-CURVE PRIZE CAPTURED, THE TIER LADDER COMPLETE ON REAL DATA
+
+The prize (defined when the hunt began): the first real, public, text-fetchable
+continuous temperature-vs-depth curve, to exercise the converter's TOP tier
+(MEASURED_CURVES) with real data. Captured COMPLETE:
+
+**GISP2** — the Greenland Ice Sheet Project 2 borehole at Summit, Greenland; the
+USGS precision temperature log by G. D. Clow (the same scientist whose Alaska
+GTN-P array first pointed the hunt at measured T(z) data, before its zip-only
+archive blocked the direct path). Source: the GEUS "Greenland and Canadian Arctic
+ice temperature profiles database" (Løkkegaard et al. 2023, The Cryosphere 17,
+3829-3845, doi:10.5194/tc-17-3829-2023; data DOI 10.22008/FK2/3BVF9V), publicly
+redistributed on GitHub. 598 stations, 72.61-3,053.15 m to bedrock, ENTIRE file
+verbatim: -31.41 degC near surface, the -32.1345 degC minimum at 1,495 m (the
+thermal memory of the last glacial period), -9.286 degC at the bed.
+
+**What it closes:** with GISP2, all three tiers of the converter's honesty ladder
+have now been exercised by REAL wells - MEASURED_CURVES (GISP2), DERIVED_FROM_
+MEASURED_BHT (Kennetcook #2, University 6-17), DERIVED_GRADIENTS (Volve, Scorpio,
+Collingwood-without-TD). No tier rests on synthetic data alone.
+
+**New machinery:** `read_temperature_csv` (the GEUS d,t format -> depth-indexed
+LiveStream with a TEMP/DEGC channel); catalogue loader extended to CSV entries
+under the same provenance-mandatory discipline. Transcription integrity gate-
+screened: endpoints + minimum verbatim, strict depth monotonicity, and a
+smoothness screen (max step dT 0.13 degC) that would catch a digit typo in the
+598-row verbatim copy; the source URL serves the identical file for independent
+re-verification. Honest framing: an ice borehole, disclosed as such; pressure
+remains DERIVED hydrostatic, labeled.
+
+One count correction en route (Rule 7): the initial provenance said 597 stations
+from an estimate; the measured count is 598, and measured replaced remembered.
+
+Catalogue standing: SIX entries / SIX regions / FOUR formats / THREE real BHTs /
+ONE full measured curve. Package v1.16.0; gate 5,843 -> 5,847. THE PRIZE HUNT IS
+CLOSED.
+
+---
+
+## APPENDED 2026-08-24 (8) — v1.17.0: CATALOGUE WELL 7 — AGASSIZ77 (CANADA) — THE MEASURED TIER GAINS ITS SECOND REGIME
+
+**Agassiz77** (Agassiz Ice Cap, Ellesmere Island, Canadian Arctic North; measured
+1977 - the catalogue's OLDEST measurement; Clarke/Fisher/Waddington 1987 science
+lineage; via the GEUS database, doi:10.5194/tc-17-3829-2023 + 10.22008/FK2/3BVF9V).
+COMPLETE file verbatim: 67 stations, 10.91-340.91 m, -24.16 -> -16.74 degC.
+
+Value beyond the seventh region: the MEASURED_CURVES tier now holds TWO real wells
+in two DIFFERENT thermal regimes - GISP2's 3-km deep-sheet curve with its glacial-
+memory minimum, and Agassiz's thin-cap monotonic warming profile. A tier proven on
+one well could be a coincidence of format; proven on two regimes, it is a working
+path. Honesty note: the GEUS database's own metadata caveats for this borehole
+(approximate location; thickness mismatch vs Vinther 2008) are carried verbatim in
+the provenance sidecar - upstream disclosures preserved, not laundered.
+
+Catalogue standing: SEVEN entries / SEVEN regions / FOUR formats / THREE real BHTs /
+TWO measured curves. Package v1.17.0; gate 5,847 -> 5,849.
+
+---
+
+## APPENDED 2026-08-24 (9) — v1.18.0: CATALOGUE WELL 8 — L07-01 (NETHERLANDS) — THE DESCENDING-INDEX DIALECT
+
+**L07-01** (Petroland, Dutch North Sea offshore; NLOG Unique Borehole Id 7264;
+logged 1971; TD 3,934 m; Lat 53.72 / Long 4.80) - the NLOG open-by-mandate archive
+reached via public redistribution; the NETHERLANDS becomes region EIGHT. 50 verbatim
+deep quad-combo rows (GR/DT/RHOB/NPHI, 3,915.8-3,910.9 m).
+
+Dialect value: the catalogue's first DESCENDING depth index (STEP = -0.1 m - the
+tool logged bottom-up, as most wireline runs physically do). The ingest preserves
+the as-logged order rather than silently re-sorting (the record is the record); the
+downstream chain is order-agnostic by construction (the engine's profile loader
+sorts on load) - gate-verified end-to-end. Eighth format/dialect behavior proven on
+real data without special-casing.
+
+Catalogue standing: EIGHT entries / EIGHT regions / dialects: LAS 1.2, LAS 2.0
+ascending + descending, wrapped x2 shapes, temperature-CSV x2 / THREE real BHTs /
+TWO measured curves. Package v1.18.0; gate 5,849 -> 5,851.
+
+---
+
+## APPENDED 2026-08-24 (10) — v1.19.0: CATALOGUE ENTRY 9 — THE L06-06 SURVEY — THE FIRST REAL WELL TRAJECTORY
+
+**L06-06** (Dutch North Sea, NLOG): the catalogue's first REAL_DEVIATION_SURVEY -
+the COMPLETE file, 200 measured survey stations verbatim: MD, inclination
+(0-5.82 deg), azimuth, TVD, and X/Y offsets at every station, MD 74.2 -> 5,605
+with TVD 5,595.27. A gently deviated S-shaped deep well whose lateral offset walks
+east ~137 units then back - real drilling, in the record.
+
+What it closes: DeviationSurvey ran until now on synthetic kickoff-and-tangent
+shapes and a synthetic CSV; it now runs on MEASURED MD/TVD. The engine's MD->TVD
+physics was driven by the real trajectory and moved the deepest-gauge base pressure
+by 4.5 psi versus the vertical assumption - small and real, exactly what a
+5.8-deg-max S-well should do, and gate-pinned as such rather than inflated.
+
+Discipline notes: (a) KIND HONESTY - a survey entry refuses stream() with direction
+to .survey(); a trajectory is not a log stream and the catalogue does not blur its
+kinds. (b) UNITS - the file declares no depth unit; the ambiguity is recorded in
+provenance rather than resolved by assumption (MD/TVD are used relative to each
+other, which is unit-invariant). (c) Real tie-on duplicate stations preserved
+as-logged. New machinery: read_survey_csv (long-form NLOG headers, direct MD/TVD -
+no minimum-curvature reconstruction, because TVD is measured in-file).
+
+Catalogue standing: NINE entries / EIGHT regions / KINDS: log excerpts x4,
+complete logs x1, temperature profiles x2, deviation survey x1 (+ the sample
+synthetic profile) / THREE real BHTs / TWO measured curves / ONE real trajectory.
+Package v1.19.0; gate 5,851 -> 5,854.
+
+---
+
+## APPENDED 2026-08-24 (11) — v1.20.0: CATALOGUE ENTRY 10 — VOLVE CORE ANALYSIS — LABORATORY GROUND TRUTH ENTERS THE REPO
+
+**15/9-19 A conventional core analysis** (Equinor Volve open data): the catalogue's
+first REAL_CORE_ANALYSIS kind - 87 verbatim laboratory core-plug samples: core 1
+COMPLETE (samples 1-76) plus the core-2 ultra-permeability streak including the
+20,800 mD maximum. In this one excerpt the measured horizontal permeability spans
+a factor of 138,000 (0.151 -> 20,800 mD) - the dynamic range of real rock, in the
+record.
+
+Why it matters to the two-stream program: logs are TOOL RESPONSES; core plugs are
+DIRECT LABORATORY MEASUREMENTS of the rock itself. Core is the ground truth logs
+get calibrated against - the same closed-vs-measured philosophy the reconciler
+applies to gauges, one level deeper. A future petrophysics layer ties log-derived
+porosity/permeability to exactly this data; the calibration endpoint now lives in
+the repo with full provenance.
+
+Honesty structure: the lab's interleaved sampling (saturation samples with blank
+plug columns, plug samples with blank saturation columns) is preserved exactly as
+recorded; two depth columns (core-shifted vs driller) both kept; UNITS are not in
+the CSV header - the standard-convention assignments are recorded in provenance as
+INTERPRETIVE, not claimed as in-file. New machinery: read_core_csv + core-kind
+detection in the catalogue loader.
+
+Catalogue standing: TEN entries / EIGHT regions / FIVE KINDS (log excerpts x4,
+complete logs x1, measured temperature curves x2, deviation survey x1, core
+analysis x1) / THREE real BHTs / TWO measured curves / ONE real trajectory / ONE
+lab dataset. Package v1.20.0; gate 5,854 -> 5,856.

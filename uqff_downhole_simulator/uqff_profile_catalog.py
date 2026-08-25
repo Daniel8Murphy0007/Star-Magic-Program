@@ -92,6 +92,87 @@ PROFILE_SOURCES: Dict[str, dict] = {
 # ---------------------------------------------------------------------------
 # 2) The shipped catalogue (provenance mandatory)
 # ---------------------------------------------------------------------------
+def read_temperature_csv(path) -> LiveStream:
+    """Ingest a temperature-profile CSV (header `d,t`: depth in metres,
+    temperature in degC — the GEUS ice-borehole database format) as a
+    depth-indexed LiveStream with a TEMP channel. The catalogue's non-LAS
+    entry path (v1.16.0, driven by the GISP2 prize well)."""
+    import csv as _csv
+    p = Path(path)
+    d, t = [], []
+    with p.open(newline='', encoding='utf-8') as f:
+        for row in _csv.DictReader(f):
+            d.append(float(row['d']))
+            t.append(float(row['t']))
+    from .uqff_ports import StreamChannel
+    return LiveStream(name=p.stem, source_format='temperature_csv',
+                      index_kind='depth', index=np.array(d, dtype=float),
+                      channels={'TEMP': StreamChannel(name='TEMP', unit='DEGC',
+                                                      values=np.array(t, dtype=float))},
+                      meta={'format': 'GEUS d,t temperature profile'})
+
+
+def read_survey_csv(path):
+    """Ingest a deviation-survey CSV (NLOG-style long headers: Depth /
+    TrueVertical Depth, with inclination/azimuth/offsets alongside) as a
+    DeviationSurvey - MD->TVD taken DIRECTLY from the measured columns, no
+    minimum-curvature reconstruction needed. The catalogue's survey-entry
+    path (v1.19.0, driven by the real L06-06 trajectory)."""
+    import csv as _csv
+    from .uqff_deviation import DeviationSurvey
+    p = Path(path)
+    md, tvd = [], []
+    with p.open(newline='', encoding='utf-8') as f:
+        reader = _csv.DictReader(f)
+        md_col = next(c for c in reader.fieldnames if c.strip().lower() in ('depth', 'md', 'md_ft'))
+        tvd_col = next(c for c in reader.fieldnames
+                       if 'truevertical' in c.strip().lower().replace(' ', '')
+                       or c.strip().lower() in ('tvd', 'tvd_ft'))
+        for row in reader:
+            md.append(float(row[md_col]))
+            tvd.append(float(row[tvd_col]))
+    return DeviationSurvey(md_ft=md, tvd_ft=tvd, name=p.stem)
+
+
+def read_core_csv(path) -> LiveStream:
+    """Ingest a conventional core-analysis CSV (Volve-style header:
+    DEPTH,OrigDepth,CORE_NO,SAMPLE,...) as a depth-indexed LiveStream whose
+    channels are the numeric lab columns (permeability/porosity/saturations/
+    grain density; blanks -> NaN). Laboratory ground truth alongside logs
+    (v1.20.0, driven by the real 15/9-19 A core data)."""
+    import csv as _csv
+    from .uqff_ports import StreamChannel
+    p = Path(path)
+    with p.open(newline='', encoding='utf-8') as f:
+        reader = _csv.DictReader(f)
+        cols = [c for c in reader.fieldnames if c != 'DEPTH']
+        depth, data = [], {c: [] for c in cols}
+        for row in reader:
+            depth.append(float(row['DEPTH']))
+            for c in cols:
+                v = (row.get(c) or '').strip()
+                data[c].append(float(v) if v else np.nan)
+    return LiveStream(name=p.stem, source_format='core_csv',
+                      index_kind='depth', index=np.array(depth, dtype=float),
+                      channels={c: StreamChannel(name=c, unit='', values=np.array(data[c]))
+                                for c in cols},
+                      meta={'format': 'conventional core analysis (units per provenance)'})
+
+
+def _csv_kind(path: Path) -> str:
+    """Distinguish catalogue CSV kinds by header: 'd,t' = temperature profile;
+    survey headers = deviation survey; DEPTH,OrigDepth,CORE_NO = core analysis."""
+    with path.open(encoding='utf-8') as f:
+        header = f.readline().strip().lower()
+    if header.startswith('d,t'):
+        return 'temperature'
+    if header.startswith('depth,origdepth,core_no'):
+        return 'core'
+    if 'depth' in header and ('truevertical' in header.replace(' ', '') or 'tvd' in header):
+        return 'survey'
+    raise ValueError(f"catalogue CSV {path.name}: unrecognized header kind")
+
+
 @dataclass(frozen=True)
 class CatalogEntry:
     name: str
@@ -99,14 +180,29 @@ class CatalogEntry:
     provenance: dict
 
     def stream(self) -> LiveStream:
+        if self.las_path.suffix.lower() == '.csv':
+            kind = _csv_kind(self.las_path)
+            if kind == 'survey':
+                raise ValueError(f"{self.name} is a DEVIATION SURVEY entry - "
+                                 "use .survey() (it is a trajectory, not a log stream)")
+            if kind == 'core':
+                return read_core_csv(self.las_path)
+            return read_temperature_csv(self.las_path)
         return read_las(self.las_path)
+
+    def survey(self):
+        if self.las_path.suffix.lower() != '.csv' or _csv_kind(self.las_path) != 'survey':
+            raise ValueError(f"{self.name} is not a survey entry")
+        return read_survey_csv(self.las_path)
 
 
 def _load_catalog() -> Dict[str, CatalogEntry]:
     out: Dict[str, CatalogEntry] = {}
     if not _CATALOG_DIR.is_dir():
         return out
-    for las in sorted(_CATALOG_DIR.glob('*.las')):
+    files = sorted(list(_CATALOG_DIR.glob('*.las'))
+                   + [p for p in _CATALOG_DIR.glob('*.csv') if not p.name.endswith('.provenance.json')])
+    for las in files:
         prov_path = las.with_suffix('.provenance.json')
         if not prov_path.exists():
             raise ValueError(f"catalogue entry {las.name} has NO provenance sidecar - "

@@ -6561,3 +6561,6 @@ TWOSTREAM_ARC (v0.396.0, 2026-08-24): no new rulings required. Daniel's two-stre
 
 ---
 CONNECTIVITY_ARC (v0.397.0, 2026-08-24): ONE ruling executed - Daniel GO on the optional pymodbus dependency (tier-4 Modbus client built + loopback-verified). Independent connectivity assessment adjudicated on the record (PAPER_2257 appendix). Board otherwise unchanged (6 items).
+
+---
+CATALOGUE_ARC (v0.398.0, 2026-08-25): no new rulings required. Daniel's standing order ("continue to catalogue real wells, one at a time. grab all necessary data!!!!") executed across entries 4-10; every ambiguity resolved by DISCLOSURE (L06-06 survey units, Volve core units, ice-borehole hydrostatic pressure labeling) rather than assumption. Board otherwise unchanged (6 items).

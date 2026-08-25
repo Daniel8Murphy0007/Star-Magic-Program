@@ -7,6 +7,48 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.398.0 — 2026-08-25 — THE CATALOGUE SHIP
+
+`uqff_downhole_simulator` v1.14.0–v1.20.0 — the real-well profile catalogue
+grows from three entries to TEN, one well at a time on Daniel's standing
+order ("continue to catalogue real wells, one at a time. grab all necessary
+data!!!!"), every value verbatim, every entry provenance-sidecar'd, every
+addition gate-pinned and test-verified:
+
+- **v1.14.0 — University 6-17 No.1** (Wildcat, Reagan County, TEXAS; API
+  42-303-34774; Halliburton 1997): LAS 1.2 dialect (value-after-colon branch
+  on VERS), first imperial-depth well, second real BHT (141 °F @ 9,097 ft).
+- **v1.15.0 — Collingwood 1-28** (Amoco, Stanton County, KANSAS; API
+  15-187-20743; KGS): first COMPLETE-file entry, second wrapped shape
+  (27 curves), third real BHT (125 °F) — no TD parameter, so the converter's
+  honest no-anchor fallback is exercised, not papered over.
+- **v1.16.0 — GISP2 (Greenland), THE TEMPERATURE-CURVE PRIZE**: the first
+  continuous MEASURED temperature profile (598 stations, 72.61–3,053.15 m to
+  bedrock; USGS/Clow via GEUS, doi:10.5194/tc-17-3829-2023) — the converter's
+  TOP tier (MEASURED_CURVES) exercised with real data for the first time;
+  the three-tier ladder closes on real wells.
+- **v1.17.0 — Agassiz77** (Agassiz Ice Cap, Ellesmere Island, CANADA, 1977):
+  second COMPLETE measured temperature curve (67 stations) in a different
+  thermal regime; the catalogue's oldest measurement.
+- **v1.18.0 — L07-01** (Petroland 1971, Dutch North Sea via NLOG): first
+  DESCENDING-index log; converter → loader → engine proven order-agnostic.
+- **v1.19.0 — L06-06 survey** (NLOG): FIRST REAL WELL TRAJECTORY — 200
+  measured stations (MD/inclination/azimuth/TVD to MD 5,605) driving
+  DeviationSurvey and MD→TVD physics on real data; survey entries refuse
+  `stream()` (kind discipline); units-undeclared ambiguity disclosed.
+- **v1.20.0 — Volve 15/9-19 A core analysis** (Equinor): first LABORATORY
+  GROUND TRUTH — 87 core-plug samples (core 1 complete + the 20,800 mD
+  ultra-perm streak; permeability spans ×138,000 in one excerpt); lab
+  interleave preserved; units interpretive-not-in-file disclosed;
+  `read_core_csv` + core-kind dispatch in the loader.
+
+Catalogue standing: **TEN entries / EIGHT regions / FIVE kinds**. Real files
+drove four port upgrades (wrapped-LAS parsing, LAS 1.x branch, ~P BHT/TD
+meta anchors, descending index). Gate 5,835 → 5,858, 0 failures. 23-file
+pass verified.
+
+---
+
 ## v0.397.0 — 2026-08-24 — THE CONNECTIVITY SHIP
 
 **PAPER_2257** (new dispatch — 2,253 wired / 2,308 keys): the two-stream

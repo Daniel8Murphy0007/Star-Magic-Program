@@ -11892,3 +11892,49 @@ README release/campaign/shipped headers; CHANGELOG + _BUILD_LOG +
 SHIP_MESSAGE + RULINGS trail (pymodbus GO recorded); 10 CONNECTIVITY_ARC
 trail rows. Gate 5,816 → 5,835, 0 failures. Package v1.13.0 (26 files incl.
 catalog/, measured). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 270 — 2026-08-25 — v0.398.0 THE CATALOGUE SHIP (downhole v1.14–v1.20, entries 4–10)
+
+Seven wells in seven package versions, one at a time per Daniel's standing
+order ("continue to catalogue real wells, one at a time. grab all necessary
+data!!!! Then test verify that you did your job."), each fetched read-only,
+transcribed verbatim, provenance-sidecar'd, gate-pinned, and live-verified:
+
+1. v1.14.0 University 6-17 No.1 (Reagan Co., TEXAS; API 42-303-34774;
+   Halliburton 1997): LAS 1.2 — third version dialect (VERS<2.0
+   value-after-colon branch), first imperial-depth well, second real BHT
+   (141 °F @ 9,097 ft) exercising the converter's DEGF + feet branches.
+2. v1.15.0 Collingwood 1-28 (Stanton Co., KANSAS; API 15-187-20743; KGS):
+   first COMPLETE-file entry, second wrapped shape (27 curves), third real
+   BHT (125 °F) with NO TD parameter — the converter's honest no-anchor
+   fallback exercised (labeled gradients, no fabricated anchor).
+3. v1.16.0 GISP2 (Greenland) — THE TEMPERATURE-CURVE PRIZE: first
+   continuous MEASURED temperature profile, 598 stations 72.61–3,053.15 m
+   to bedrock (USGS/Clow via GEUS, doi:10.5194/tc-17-3829-2023); the
+   MEASURED_CURVES top tier real for the first time — tier ladder closed.
+4. v1.17.0 Agassiz77 (Ellesmere Island, CANADA, 1977): second COMPLETE
+   measured curve (67 stations), different thermal regime, oldest entry.
+5. v1.18.0 L07-01 (Dutch North Sea, NLOG, 1971): first DESCENDING-index
+   log — converter/loader/engine order-agnostic, verified.
+6. v1.19.0 L06-06 survey (NLOG): FIRST REAL WELL TRAJECTORY — 200 measured
+   stations to MD 5,605 driving DeviationSurvey MD→TVD on real data;
+   survey entries refuse stream() (kind discipline); units-undeclared
+   ambiguity DISCLOSED in provenance rather than assumed.
+7. v1.20.0 Volve 15/9-19 A core analysis (Equinor): first LABORATORY
+   GROUND TRUTH — 87 core-plug samples (core 1 complete + 20,800 mD
+   ultra-perm streak; ×138,000 permeability span in one excerpt); lab
+   interleave preserved; units interpretive-not-in-file DISCLOSED;
+   read_core_csv + core-kind dispatch added.
+
+Real files drove four port upgrades across the arc: wrapped-LAS parsing
+(supersedes the v1.8.0 refusal, verified against Kennetcook), LAS 1.x
+meta branch, ~P BHT/TMAX/TDL/TDD meta anchors, descending-index handling.
+Catalogue standing: TEN entries / EIGHT regions / FIVE kinds.
+
+Ship prep: pins at 0.398.0 (desc 477 chars, measured counts); SHIP GUARD
+marker CONNECTIVITY_ARC→CATALOGUE_ARC (+ GAPS id catalogue_arc_rule7);
++2 CATALOGUE_ARC ship pins; README release/campaign/shipped headers +
+badges; CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11
+CATALOGUE_ARC trail rows (incl. DUPLICATES family record). Gate 5,856 →
+5,858, 0 failures. Package v1.20.0 (catalog/ 20 files, measured). Awaiting
+Daniel: `.\ship.ps1` (clear .git/index.lock first).

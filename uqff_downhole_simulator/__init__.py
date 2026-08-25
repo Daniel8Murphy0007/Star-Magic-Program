@@ -99,9 +99,12 @@ from .uqff_profile_catalog import (
     CatalogEntry,
     PROFILE_SOURCES,
     las_to_profile,
+    read_temperature_csv,
+    read_survey_csv,
+    read_core_csv,
 )
 
-__version__ = "1.13.0"
+__version__ = "1.20.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
@@ -119,6 +122,6 @@ __all__ = [
     "Reconciler", "ReconcilerConfig", "auto_station_map",
     "FollowerPoll", "HistorianFollower",
     "PYMODBUS_AVAILABLE", "RegisterMap", "load_register_map",
-    "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile",
+    "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile", "read_temperature_csv", "read_survey_csv", "read_core_csv",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
 ]

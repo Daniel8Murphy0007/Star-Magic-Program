@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.397.0"
-description = "Star-Magic UQFF calculator v0.397.0: THE CONNECTIVITY SHIP. 2,253 dispatches (2,308 keys), gate 5,835/0. PAPER_2257 two-stream architecture landmark + uqff_downhole_simulator v1.10-v1.13: quasi-live file-follower, real Modbus client (optional pymodbus, loopback-verified), connectivity-tier ladder, and a REAL-WELL profile catalogue - Volve 15/9-19 SR, Scorpio E1 (SA), Kennetcook #2 (NS, wrapped LAS + measured BHT 42C@1935m), provenance-mandatory. Next: PAPER_2258."
+version = "0.398.0"
+description = "Star-Magic UQFF calculator v0.398.0: THE CATALOGUE SHIP. 2,253 dispatches (2,308 keys), gate 5,858/0. uqff_downhole_simulator v1.14-v1.20: the real-well catalogue grows 3 -> 10 entries / 8 regions / 5 kinds - Texas LAS 1.2 + BHT 141F, Kansas complete file, GISP2 + Agassiz77 MEASURED temperature curves (converter tier ladder closed on real data), Dutch North Sea descending log + 200-station real trajectory, Volve core analysis (20,800 mD lab ground truth). Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -112,4 +112,18 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "uqff_downhole_simulator/catalog/scorpio_e1_sa_excerpt.provenance.json",
     "uqff_downhole_simulator/catalog/kennetcook_2_p129_excerpt.las",
     "uqff_downhole_simulator/catalog/kennetcook_2_p129_excerpt.provenance.json",
+    "uqff_downhole_simulator/catalog/university_6_17_no1_tx_excerpt.las",
+    "uqff_downhole_simulator/catalog/university_6_17_no1_tx_excerpt.provenance.json",
+    "uqff_downhole_simulator/catalog/collingwood_1_28_ks_complete.las",
+    "uqff_downhole_simulator/catalog/collingwood_1_28_ks_complete.provenance.json",
+    "uqff_downhole_simulator/catalog/gisp2_greenland_temperature.csv",
+    "uqff_downhole_simulator/catalog/gisp2_greenland_temperature.provenance.json",
+    "uqff_downhole_simulator/catalog/agassiz77_canada_temperature.csv",
+    "uqff_downhole_simulator/catalog/agassiz77_canada_temperature.provenance.json",
+    "uqff_downhole_simulator/catalog/l07_01_nl_excerpt.las",
+    "uqff_downhole_simulator/catalog/l07_01_nl_excerpt.provenance.json",
+    "uqff_downhole_simulator/catalog/l06_06_nl_survey.csv",
+    "uqff_downhole_simulator/catalog/l06_06_nl_survey.provenance.json",
+    "uqff_downhole_simulator/catalog/volve_15_9_19a_core_excerpt.csv",
+    "uqff_downhole_simulator/catalog/volve_15_9_19a_core_excerpt.provenance.json",
 ]

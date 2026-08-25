@@ -1,20 +1,29 @@
-v0.397.0 - THE CONNECTIVITY SHIP: the live stream gets its doors, and real wells enter the repo
+v0.398.0 - THE CATALOGUE SHIP: ten real wells, five kinds of real data
 
-PAPER_2257 (new dispatch): the two-stream architecture as a standing landmark,
-live-verified per call. Downhole v1.10.0-v1.13.0:
+Downhole v1.14.0-v1.20.0: the real-well profile catalogue grows 3 -> 10
+entries, one well at a time on Daniel's standing order, every value
+verbatim, every entry provenance-sidecar'd, every addition gate-pinned:
 
-- v1.10 FILE-FOLLOWER: quasi-live monitoring of appended historian exports;
-  connectivity-tier ladder published (independent assessment adjudicated:
-  correct on no-live-connection, stale on "only simulates").
-- v1.11 REAL MODBUS CLIENT (Daniel GO, optional pymodbus): READ-ONLY tap,
-  citation-mandatory register maps, loopback-verified against an in-process
-  server; gate green with or without the dependency.
-- v1.12 PROFILE CATALOGUE: 6 public databases tabled with honest access
-  notes; provenance-mandatory entries; honest LAS->profile converter.
-- v1.13 THREE REAL WELLS: Volve 15/9-19 SR (North Sea) + Scorpio E1 (South
-  Australia) + Kennetcook #2 P-129 (Nova Scotia). Real data forced the code
-  better: WRAPPED-LAS parsing (supersedes the refusal, verified on the real
-  file) + DERIVED_FROM_MEASURED_BHT tier (real 42 C @ 1,935 m anchor).
-  Every value verbatim-pinned; every entry provenance-complete.
+- v1.14 UNIVERSITY 6-17 NO.1 (Reagan Co., TEXAS; Halliburton 1997):
+  LAS 1.2 dialect; first imperial-depth well; real BHT 141 F @ 9,097 ft.
+- v1.15 COLLINGWOOD 1-28 (Stanton Co., KANSAS; KGS): first COMPLETE file;
+  27-curve wrapped shape; third real BHT (125 F) with the honest
+  no-TD-anchor fallback exercised.
+- v1.16 GISP2 (Greenland) - THE TEMPERATURE-CURVE PRIZE: first continuous
+  MEASURED temperature profile (598 stations to bedrock); the converter's
+  MEASURED_CURVES top tier real for the first time - tier ladder closed.
+- v1.17 AGASSIZ77 (Canadian Arctic, 1977): second complete measured curve.
+- v1.18 L07-01 (Dutch North Sea, NLOG): first DESCENDING-index log.
+- v1.19 L06-06 SURVEY (NLOG): FIRST REAL WELL TRAJECTORY - 200 measured
+  stations driving MD->TVD physics on real data; kind discipline
+  (survey refuses stream()).
+- v1.20 VOLVE 15/9-19 A CORE ANALYSIS (Equinor): first LABORATORY GROUND
+  TRUTH - 87 core-plug samples incl. the 20,800 mD streak (x138,000
+  permeability span); lab interleave preserved; units disclosed as
+  interpretive-not-in-file.
 
-Gate 5,816 -> 5,835. 2,253 wired (2,308 keys). Next: PAPER_2258.
+Four port upgrades driven by real files: wrapped-LAS parsing, LAS 1.x
+branch, ~P BHT/TD meta anchors, descending index.
+
+Catalogue: TEN entries / EIGHT regions / FIVE kinds.
+Gate 5,835 -> 5,858, 0 failures. 23-file charter pass verified.

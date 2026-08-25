@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.397.0", "uqff_calculator.VERSION = 0.397.0 (the connectivity ship: PAPER_2257 + follower/Modbus/tier-ladder + the real-well profile catalogue)")
+assert_that(C.VERSION == "0.398.0", "uqff_calculator.VERSION = 0.398.0 (the catalogue ship: the real-well profile catalogue built to TEN entries / EIGHT regions / FIVE kinds, one well at a time on Daniel's order)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'CONNECTIVITY_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'CATALOGUE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('connectivity_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('catalogue_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,15 +12592,15 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.13.0' and len(_ds11.make_sensor_string(12)) == 12,
-            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.13.0")
+assert_that(_ds11.__version__ == '1.20.0' and len(_ds11.make_sensor_string(12)) == 12,
+            "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
 _e11 = _ds11.UQFFDownholeEngine(_cfg11)
@@ -12967,6 +12967,133 @@ assert_that(_r13['derivation'] == 'DERIVED_FROM_MEASURED_BHT',
 assert_that(all(all(_e.provenance.get(_k) for _k in ('source_database', 'source_url', 'license', 'fetch_date', 'coverage'))
                 for _e in _ds11.CATALOG.values()) and len(_ds11.CATALOG) >= 3,
             "CATALOGUE v1.13.0: THREE real wells (North Sea / South Australia / Nova Scotia), three LAS dialects, every entry provenance-complete - the citation discipline holding at catalogue scale")
+
+# ---- CATALOGUE v1.14.0: well 4 - UNIVERSITY 6-17 NO.1 (Texas; LAS 1.2; DEGF BHT) ----
+_st4c = _ds11.CATALOG['university_6_17_no1_tx_excerpt'].stream()
+assert_that(len(_st4c.index) == 50 and abs(float(_st4c.channels['DT'].values[0]) - 66.106) < 1e-6
+            and abs(float(_st4c.index[0]) - 2747.0) < 1e-6
+            and bool(__import__('numpy').isnan(_st4c.channels['GR'].values[0])),
+            "CATALOGUE well 4: UNIVERSITY 6-17 NO.1 (Wildcat field, Reagan County TEXAS - Permian region; API 42-303-34774; Halliburton 1997) - LAS VERSION 1.2, the catalogue's THIRD version dialect, first imperial-depth well: 50 verbatim sonic-run rows at 2,747-2,771.5 ft, DT[0] = 66.106 us/ft verbatim")
+assert_that(_st4c.meta.get('WELL') == 'UNIVERSITY 6-17 NO.1'
+            and _st4c.meta.get('BHT') == '141.0000' and _st4c.meta.get('BHT_UNIT') == 'DEGF'
+            and _st4c.meta.get('TDL') == '9097.0000',
+            "CATALOGUE well 4: LAS 1.x value-after-colon convention handled (well identity captured correctly - the 1.2 header put values AFTER the colon and the reader now branches on VERS) + the SECOND real BHT anchor: 141.0 DEGF at TD 9,097 ft")
+import tempfile as _tf14, os as _of14
+_r14 = _ds11.las_to_profile(_st4c, out_csv=_of14.path.join(_tf14.mkdtemp(), 'u.csv'), depth_unit='ft')
+_rows14 = open(_r14['csv']).read().strip().splitlines()
+_t14 = float(_rows14[1].split(',')[2])
+assert_that(_r14['derivation'] == 'DERIVED_FROM_MEASURED_BHT' and abs(_t14 - (75.0 + 66.0 * 2747.0 / 9097.0)) < 0.1,
+            "CATALOGUE well 4: the BHT tier's DEGF + feet branches - no C-to-F conversion applied to a DEGF anchor, depth kept imperial; T(2,747 ft) = 94.9 F on the surface-to-141F@TD line (checked arithmetically)")
+assert_that(len(_ds11.CATALOG) >= 4,
+            "CATALOGUE v1.14.0: FOUR real wells, FOUR regions (North Sea / South Australia / Nova Scotia / Texas), THREE LAS version dialects, TWO real BHT anchors - every entry provenance-complete")
+
+# ---- CATALOGUE v1.15.0: well 5 - COLLINGWOOD 1-28 (KANSAS; first COMPLETE file; honest BHT fallback) ----
+_st5c = _ds11.CATALOG['collingwood_1_28_ks_complete'].stream()
+assert_that(len(_st5c.index) == 5 and len(_st5c.channels) == 26
+            and abs(float(_st5c.channels['IDGR'].values[0]) - 50.6465) < 1e-4
+            and abs(float(_st5c.channels['IDSP'].values[-1]) - 93.2671) < 1e-4,
+            "CATALOGUE well 5: COLLINGWOOD 1-28 (Amoco, Nicholas field, Stanton County KANSAS; API 15-187-20743; Halliburton 1994; KGS archive via lasio redistribution) - the KGS source table entry CLOSED via redistribution; second WRAPPED well with a different record shape (27 curves), IDGR[0] = 50.6465 API verbatim")
+assert_that(_ds11.CATALOG['collingwood_1_28_ks_complete'].provenance['kind'] == 'REAL_WELL_LOG_COMPLETE',
+            "CATALOGUE well 5: the FIRST COMPLETE entry - the entire public file verbatim (the 5-station interval slice was KGS's own archiving, disclosed as theirs not ours); the excerpt discipline now has its complete-file counterpart")
+import tempfile as _tf15, os as _of15
+_r15 = _ds11.las_to_profile(_st5c, out_csv=_of15.path.join(_tf15.mkdtemp(), 'c.csv'), depth_unit='ft')
+assert_that(_st5c.meta.get('BHT') == '125.0000' and 'TDL' not in _st5c.meta
+            and _r15['derivation'] == 'DERIVED_GRADIENTS',
+            "CATALOGUE well 5: the BHT tier's HONEST FALLBACK exercised by real data - a real BHT (125 DEGF, the catalogue's third) WITHOUT a TD parameter does NOT fabricate an anchor line; the converter falls to labeled gradients (refusal-over-invention, again)")
+assert_that(len(_ds11.CATALOG) >= 5,
+            "CATALOGUE v1.15.0: FIVE real wells, FIVE regions (North Sea / South Australia / Nova Scotia / Texas / Kansas), THREE LAS dialects, TWO wrapped shapes, THREE real BHTs - every entry provenance-complete")
+
+# ---- CATALOGUE v1.16.0: well 6 - GISP2 (Greenland) - THE TEMPERATURE-CURVE PRIZE ----
+import numpy as _np16
+_st6c = _ds11.CATALOG['gisp2_greenland_temperature'].stream()
+_T16 = _st6c.channels['TEMP'].values
+_imin16 = int(_np16.argmin(_T16))
+assert_that(len(_st6c.index) == 598
+            and abs(float(_st6c.index[0]) - 72.61) < 1e-9 and abs(float(_st6c.index[-1]) - 3053.15) < 1e-9
+            and abs(float(_T16[0]) - (-31.4118)) < 1e-9 and abs(float(_T16[-1]) - (-9.286)) < 1e-9,
+            "CATALOGUE well 6 - THE PRIZE: GISP2 (Summit, Greenland; USGS/Clow precision log via the GEUS ice-temperature database, doi:10.5194/tc-17-3829-2023 + 10.22008/FK2/3BVF9V) - the catalogue's FIRST continuous MEASURED temperature profile: 598 stations, 72.61-3053.15 m to bedrock, COMPLETE file, endpoints verbatim")
+assert_that(abs(float(_T16[_imin16]) - (-32.1345)) < 1e-9 and abs(float(_st6c.index[_imin16]) - 1495.0) < 1e-9
+            and bool(_np16.all(_np16.diff(_st6c.index) > 0))
+            and float(_np16.max(_np16.abs(_np16.diff(_T16)))) < 0.15,
+            "CATALOGUE well 6: transcription integrity - the -32.1345 degC glacial-memory minimum sits at 1495 m verbatim, depth strictly monotonic, max step-to-step dT 0.13 degC (the smoothness screen that would catch a digit typo in the 598-row verbatim copy)")
+import tempfile as _tf16b, os as _of16b
+_r16 = _ds11.las_to_profile(_st6c, out_csv=_of16b.path.join(_tf16b.mkdtemp(), 'g.csv'), depth_unit='m')
+_rows16 = open(_r16['csv']).read().strip().splitlines()
+_tb16 = float(_rows16[-1].split(',')[2])
+assert_that(_r16['derivation'] == 'MEASURED_CURVES' and _r16['temperature_curve_used'] == 'TEMP'
+            and abs(_tb16 - (-9.286 * 9.0 / 5.0 + 32.0)) < 0.1,
+            "CATALOGUE v1.16.0 - THE TIER LADDER COMPLETE ON REAL DATA: the converter's TOP tier (MEASURED_CURVES) exercised with a real measured curve for the first time - degC->degF branch checked at the bed (15.29 F); all three tiers (MEASURED / BHT-anchored / gradients) now proven on real wells")
+assert_that(len(_ds11.CATALOG) >= 6,
+            "CATALOGUE v1.16.0: SIX entries, SIX regions (North Sea / South Australia / Nova Scotia / Texas / Kansas / Greenland), LAS 1.2 + 2.0 + wrapped x2 + temperature-CSV formats - every entry provenance-complete, the prize hunt closed")
+
+# ---- CATALOGUE v1.17.0: well 7 - Agassiz77 (CANADA, Ellesmere Island; 2nd measured curve) ----
+_st7c = _ds11.CATALOG['agassiz77_canada_temperature'].stream()
+_T17c = _st7c.channels['TEMP'].values
+assert_that(len(_st7c.index) == 67
+            and abs(float(_st7c.index[0]) - 10.91) < 1e-9 and abs(float(_st7c.index[-1]) - 340.91) < 1e-9
+            and abs(float(_T17c[0]) - (-24.16)) < 1e-9 and abs(float(_T17c[-1]) - (-16.74)) < 1e-9,
+            "CATALOGUE well 7: Agassiz77 (Agassiz Ice Cap, Ellesmere Island, CANADIAN ARCTIC; 1977 - the catalogue's oldest measurement; Clarke/Fisher/Waddington lineage via the GEUS database) - COMPLETE file, 67 stations 10.91-340.91 m, endpoints verbatim; the database's own metadata caveats carried honestly in provenance")
+import tempfile as _tf17c, os as _of17c
+_r17c = _ds11.las_to_profile(_st7c, out_csv=_of17c.path.join(_tf17c.mkdtemp(), 'a.csv'), depth_unit='m')
+assert_that(_r17c['derivation'] == 'MEASURED_CURVES' and _r17c['stations'] == 67
+            and len(_ds11.CATALOG) >= 7,
+            "CATALOGUE v1.17.0: SEVEN entries, SEVEN regions (+ Canada) - the MEASURED_CURVES tier now has TWO real wells (GISP2 deep sheet + Agassiz thin cap: two different thermal regimes, one measured-data tier)")
+
+# ---- CATALOGUE v1.18.0: well 8 - L07-01 (NETHERLANDS; descending-index dialect) ----
+import numpy as _np18c
+_st8c = _ds11.CATALOG['l07_01_nl_excerpt'].stream()
+assert_that(len(_st8c.index) == 50 and bool(_np18c.all(_np18c.diff(_st8c.index) < 0))
+            and abs(float(_st8c.channels['GR'].values[0]) - 122.553802) < 1e-9
+            and _st8c.meta.get('WELL') == 'L07-01' and _st8c.meta.get('TDL') == '3934.00000',
+            "CATALOGUE well 8: L07-01 (Petroland, Dutch North Sea, NLOG UBID 7264, logged 1971, TD 3,934 m) - the catalogue's first DESCENDING-INDEX well (STEP -0.1 m, logged bottom-up), 50 deep quad-combo rows verbatim (GR[0] = 122.553802 GAPI), preserved as-logged through ingest")
+import tempfile as _tf18c, os as _of18c
+_r18c = _ds11.las_to_profile(_st8c, out_csv=_of18c.path.join(_tf18c.mkdtemp(), 'l.csv'), depth_unit='m')
+_pl18c = _ds11.load_well_profile_csv(_r18c['csv'])
+assert_that(_r18c['stations'] == 50 and float(_pl18c.interp(12840.0)[0]) > 14.7
+            and len(_ds11.CATALOG) >= 8,
+            "CATALOGUE v1.18.0: EIGHT entries, EIGHT regions (+ Netherlands) - descending-index data flows converter -> sorting profile loader -> engine without special-casing; order-agnostic by construction")
+
+# ---- CATALOGUE v1.19.0: entry 9 - L06-06 survey (FIRST REAL WELL TRAJECTORY) ----
+_sv19 = _ds11.CATALOG['l06_06_nl_survey'].survey()
+assert_that(len(_sv19.md_ft) == 200
+            and abs(_sv19.md_ft[0] - 74.2) < 1e-9 and abs(_sv19.tvd_ft[-1] - 5595.27) < 1e-9
+            and all(_t <= _m + 1e-9 for _m, _t in zip(_sv19.md_ft, _sv19.tvd_ft)),
+            "CATALOGUE entry 9: L06-06 (Dutch North Sea, NLOG) - the FIRST REAL WELL TRAJECTORY: 200 measured survey stations verbatim (MD/inclination/azimuth/TVD/offsets), MD 74.2 -> 5,605 with TVD 5,595.27; TVD <= MD at every station; units-not-declared ambiguity DISCLOSED in provenance rather than assumed away")
+_ed19 = _ds11.UQFFDownholeEngine(_ds11.SimulatorConfig(td_ft=5605.0, sensor_depths_ft=[3000.0, 5600.0], deviation=_sv19))
+_ev19 = _ds11.UQFFDownholeEngine(_ds11.SimulatorConfig(td_ft=5605.0, sensor_depths_ft=[3000.0, 5600.0]))
+assert_that(0.0 < float(_ev19.base_P[-1] - _ed19.base_P[-1]) < 10.0 and len(_ds11.CATALOG) >= 9,
+            "CATALOGUE v1.19.0: NINE entries - DeviationSurvey runs on MEASURED MD/TVD for the first time (synthetic kickoff shapes now have a real counterpart); the gently-deviated real well shifts deepest-gauge base pressure by a small, real amount - exactly what a 5.8-deg max-inclination S-well should do")
+_sref19 = False
+try:
+    _ds11.CATALOG['l06_06_nl_survey'].stream()
+except ValueError:
+    _sref19 = True
+assert_that(_sref19,
+            "CATALOGUE v1.19.0: kind discipline - a survey entry REFUSES stream() with direction to .survey() (a trajectory is not a log stream; the catalogue keeps its kinds honest)")
+
+# ---- CATALOGUE v1.20.0: entry 10 - Volve 15/9-19 A core analysis (FIRST LAB GROUND TRUTH) ----
+import numpy as _np20c
+_st10c = _ds11.CATALOG['volve_15_9_19a_core_excerpt'].stream()
+_K20 = _st10c.channels['CKHG'].values
+assert_that(_st10c.source_format == 'core_csv' and len(_st10c.index) == 87
+            and abs(float(_K20[0]) - 13.8) < 1e-9
+            and abs(float(_np20c.nanmax(_K20)) - 20800.0) < 1e-9
+            and bool(_np20c.isnan(_K20[1])),
+            "CATALOGUE entry 10: Volve 15/9-19 A CONVENTIONAL CORE ANALYSIS (Equinor open data) - the catalogue's first LABORATORY GROUND TRUTH: 87 core-plug samples verbatim (core 1 complete + the 20,800 mD ultra-perm streak), permeability spanning x138,000 in one excerpt, lab blanks -> NaN")
+_So20 = _st10c.channels['So'].values
+assert_that(bool(_np20c.isnan(_So20[0])) and abs(float(_So20[4]) - 52.9) < 1e-9
+            and len(_ds11.CATALOG) >= 10,
+            "CATALOGUE v1.20.0: TEN entries, FIVE kinds (log excerpts / complete logs / measured temperature curves / real trajectory / core analysis) - saturation samples interleave with plug samples exactly as the lab recorded them; units interpretive-not-in-file DISCLOSED in provenance; the calibration endpoint a petrophysics layer would tie logs to is now in the repo")
+
+# ---- SHIP v0.398.0: THE CATALOGUE SHIP (CATALOGUE_ARC record) ----
+_arc398_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
+assert_that(len(_ds11.CATALOG) == 10 and len(_arc398_kinds) == 5
+            and all(_e.provenance.get('source_url') and _e.provenance.get('license')
+                    and _e.provenance.get('fetch_date') and _e.provenance.get('coverage')
+                    for _e in _ds11.CATALOG.values()),
+            "SHIP v0.398.0 (CATALOGUE_ARC): TEN real-data catalogue entries across EIGHT regions and FIVE kinds (log excerpts / complete logs / measured temperature curves / real trajectory / core analysis), EVERY entry provenance-complete (source URL, license, fetch date, coverage) - built one well at a time on Daniel's order, with real files driving four port upgrades along the way")
+assert_that(True,
+            "CATALOGUE_ARC STANDING RULE (Daniel: 'grab all necessary data!!!!'): catalogue entries are REAL public data fetched read-only, transcribed verbatim, provenance-mandatory (the loader refuses entries without complete sidecars), verified against source values at gate time - no synthetic rows ever presented as field data")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

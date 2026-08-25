@@ -12245,3 +12245,4 @@ downhole_two_stream_v17_v19,PAPER_2256,COMPLETES,TWOSTREAM_ARC,closed stream pre
 two_stream_architecture,PAPER_2257,CANONIZES,DANIEL_RULING_2026_08_23,closed stream finds offset undervalued live data
 PAPER_2257,PAPER_2256,CONSOLIDATES,APPENDICES_6_8,tool library + ports + reconciler into standing landmark
 connectivity_and_catalogue_v110_v113,PAPER_2257,EXTENDS,CONNECTIVITY_ARC,tier ladder simulate/offline/follow/modbus + real wells Volve+ScorpioE1+Kennetcook2
+catalogue_ten_wells_v114_v120,PAPER_2257,EXTENDS,CATALOGUE_ARC,ten real-data entries: TX + KS + GISP2 + Agassiz77 + L07-01 + L06-06 survey + Volve core join Volve SR + ScorpioE1 + Kennetcook2

@@ -651,3 +651,4 @@ DOWNHOLE_ARC,WHITEPAPER,MERGED,v0.394.0,PAPER_2256 + uqff_downhole_simulator v1.
 INSTRUMENT_ARC,WHITEPAPER,MERGED,v0.395.0,uqff_downhole_simulator v1.2-v1.6 (service-life divergence; telemetry QC scored; case study; cited gauge specs; MD/TVD deviation; batch; headless CLI)
 TWOSTREAM_ARC,WHITEPAPER,MERGED,v0.396.0,uqff_downhole_simulator v1.7-v1.9 (cited tool library; read-only ports historian/LAS + declared live taps; two-stream reconciler with four-scenario validation)
 CONNECTIVITY_ARC,WHITEPAPER,MERGED,v0.397.0,PAPER_2257 + v1.10 follower + v1.11 modbus + v1.12 catalogue + v1.13 three real wells (wrapped parsing; BHT tier)
+CATALOGUE_ARC,WHITEPAPER,MERGED,v0.398.0,downhole v1.14-v1.20: entries 4-10 (TX LAS 1.2 + KS complete + two MEASURED temperature curves + NL descending + real 200-station survey + core lab truth)

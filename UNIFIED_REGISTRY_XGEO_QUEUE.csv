@@ -1724,3 +1724,4 @@ DOWNHOLE_ARC,n/a,n/a,NOT_APPLICABLE,application module single-geometry,v0.394.0
 INSTRUMENT_ARC,n/a,n/a,NOT_APPLICABLE,application-module extensions single-geometry,v0.395.0
 TWOSTREAM_ARC,n/a,n/a,NOT_APPLICABLE,application-module architecture single-geometry,v0.396.0
 CONNECTIVITY_ARC,n/a,n/a,NOT_APPLICABLE,application connectivity + real-data catalogue single-geometry,v0.397.0
+CATALOGUE_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.398.0

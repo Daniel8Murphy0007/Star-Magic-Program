@@ -165,6 +165,7 @@ def read_las(path) -> LiveStream:
     lines = p.read_text(encoding='utf-8', errors='ignore').splitlines()
     section = ''
     wrap = False
+    vers = 2.0
     null_val = -999.25                        # LAS convention default
     curves: List[tuple] = []                  # (mnemonic, unit)
     data_rows: List[List[float]] = []
@@ -181,6 +182,10 @@ def read_las(path) -> LiveStream:
         if section == 'V':
             if s.upper().startswith('WRAP') and '.' in s:
                 wrap = s.split('.', 1)[1].strip().upper().startswith('YES')
+            if s.upper().startswith('VERS') and '.' in s:
+                v = s.split('.', 1)[1].split(':')[0].strip().split()
+                if v and _is_float(v[0]):
+                    vers = float(v[0])
         elif section == 'W':
             if s.upper().startswith('NULL') and '.' in s:
                 body = s.split('.', 1)[1]
@@ -192,7 +197,11 @@ def read_las(path) -> LiveStream:
                         pass
             for key in ('WELL', 'COMP', 'FLD', 'DATE'):
                 if s.upper().startswith(key):
-                    meta[key] = s.split(':', 1)[0].split('.', 1)[-1].strip() if '.' in s else s
+                    if vers < 2.0 and ':' in s:
+                        # LAS 1.x convention: the VALUE sits AFTER the colon
+                        meta[key] = s.split(':', 1)[1].strip()
+                    else:
+                        meta[key] = s.split(':', 1)[0].split('.', 1)[-1].strip() if '.' in s else s
         elif section == 'P':
             head = s.split(':', 1)[0]
             if '.' in head:
