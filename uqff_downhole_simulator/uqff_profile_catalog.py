@@ -271,6 +271,144 @@ def read_ktb_dat(path) -> LiveStream:
                       meta=meta)
 
 
+def read_ktb_table(path) -> LiveStream:
+    """Ingest a KTB Information System TYPED table ('!'-header declaring
+    F/C/I columns, e.g. the rock-mechanics compressive-strength tables) as a
+    depth-indexed LiveStream (v1.26.0, driven by the real VB core-strength
+    file). Numeric (F/I) columns become channels; C-typed string columns
+    stay verbatim in the file (ROCK TYPE is carried as per-sample quality
+    on the strength channel). Rendering-collapsed tabs make some short rows
+    ambiguous: a trailing decimal token is assigned by DECLARED TYPE (an I2
+    dip cannot hold a decimal); a trailing integer token that could be
+    either column is REFUSED - NaN + a quality flag with the raw token."""
+    import re as _re
+    p = Path(path)
+    col_re = _re.compile(r'^!\s+\d+\s+"([^"]+)"\s+([FCI])\d*\s*(\S*)')
+    tok_re = _re.compile(r'"[^"]*"|\S+')
+    cols, rows = [], []
+    with p.open(encoding='utf-8') as f:
+        for line in f:
+            line = line.rstrip('\n')
+            if not line.strip():
+                continue
+            if line.lstrip().startswith('!'):
+                m = col_re.match(line.strip())
+                if m:
+                    cols.append((m.group(1).replace(' ', '_'), m.group(2), m.group(3)))
+                continue
+            toks = tok_re.findall(line)
+            if len(toks) >= 6:
+                rows.append(toks)
+    if not cols or not rows:
+        raise ValueError(f"KTB table {p.name}: no typed column block or no rows")
+    import numpy as _np
+    n = len(rows)
+    names = [c[0] for c in cols]
+    num_idx = [i for i, c in enumerate(cols) if c[1] in ('F', 'I')]
+    grids = {names[i]: _np.full(n, _np.nan) for i in num_idx if i > 0}
+    depth = _np.full(n, _np.nan)
+    rock = ['' for _ in range(n)]
+    flags = ['' for _ in range(n)]
+    rock_col = next((i for i, c in enumerate(cols) if 'ROCK' in c[0]), None)
+    for r, toks in enumerate(rows):
+        if len(toks) == len(cols):
+            assign = list(enumerate(toks))
+        else:
+            assign = list(enumerate(toks[:6]))
+            trail = toks[6:]
+            if len(trail) == 1:
+                if '.' in trail[0]:
+                    assign.append((6, trail[0]))
+                else:
+                    flags[r] = f"AMBIGUOUS_TRAILING:{trail[0]}"
+        for ci, tok in assign:
+            name, typ = cols[ci][0], cols[ci][1]
+            if ci == 0:
+                depth[r] = float(tok)
+            elif typ in ('F', 'I'):
+                v = tok.strip().strip('"')
+                if v:
+                    grids[name][r] = float(v)
+            elif ci == rock_col:
+                rock[r] = tok.strip('"')
+    from .uqff_ports import StreamChannel
+    channels = {}
+    for i in num_idx:
+        if i == 0:
+            continue
+        name, unit = names[i], cols[i][2]
+        q = rock if 'STRENGTH' in name else (flags if name == 'E_MODUL' else None)
+        channels[name] = StreamChannel(name=name, unit=unit, values=grids[name],
+                                       quality=list(q) if q else None)
+    return LiveStream(name=p.stem, source_format='ktb_table',
+                      index_kind='depth', index=depth, channels=channels,
+                      meta={'format': 'KTB typed table (rock mechanics); string columns verbatim in file',
+                            'ambiguous_rows_refused': str(sum(1 for x in flags if x))})
+
+
+def read_pangaea_txt(path) -> LiveStream:
+    """Ingest a PANGAEA machine-readable textfile export (self-describing
+    '/* DATA DESCRIPTION */' header + tab-separated matrix) as a
+    depth-indexed LiveStream (v1.28.0, driven by the real ODP 504B borehole
+    -fluid dataset). The header's citation, license and coordinates go to
+    meta; numeric columns become channels (units parsed from '[...]');
+    short rows pad to NaN; the first non-numeric column rides as per-sample
+    quality on the first channel."""
+    import re as _re
+    p = Path(path)
+    text = p.open(encoding='utf-8').read()
+    if not text.startswith('/* DATA DESCRIPTION'):
+        raise ValueError(f"{p.name}: not a PANGAEA textfile export")
+    head, _, body = text.partition('*/')
+    meta = {'format': 'PANGAEA textfile export (self-describing header verbatim in file)'}
+    m = _re.search(r'Citation:\t([^\n]+)', head)
+    if m:
+        meta['citation'] = m.group(1).strip().rstrip(',')
+    m = _re.search(r'License:\t([^\n]+)', head)
+    if m:
+        meta['license'] = m.group(1).strip()
+    m = _re.search(r'LATITUDE:\s*(-?[\d.]+)\s*\*\s*LONGITUDE:\s*(-?[\d.]+)', head)
+    if m:
+        meta['latitude'], meta['longitude'] = m.group(1), m.group(2)
+    m = _re.search(r'ELEVATION:\s*(-?[\d.]+)', head)
+    if m:
+        meta['elevation_m'] = m.group(1)
+    lines = [l for l in body.split('\n') if l.strip()]
+    headers = lines[0].split('\t')
+    rows = [l.split('\t') for l in lines[1:]]
+    import numpy as _np
+    depth_i = next((i for i, h in enumerate(headers) if h.lower().startswith('depth')), None)
+    if depth_i is None:
+        raise ValueError(f"{p.name}: no Depth column")
+    def val(r, i):
+        v = r[i].strip() if i < len(r) else ''
+        try:
+            return float(v) if v else _np.nan
+        except ValueError:
+            return None
+    depth = _np.array([val(r, depth_i) for r in rows], dtype=float)
+    from .uqff_ports import StreamChannel
+    channels = {}
+    label_col = None
+    for i, h in enumerate(headers):
+        if i == depth_i:
+            continue
+        vals = [val(r, i) for r in rows]
+        if any(v is None for v in vals):
+            if label_col is None:
+                label_col = [r[i].strip() if i < len(r) else '' for r in rows]
+            continue
+        mu = _re.search(r'\[([^\]]+)\]', h)
+        name = _re.sub(r'\s*\[[^\]]+\]', '', h).strip()
+        channels[name] = StreamChannel(name=name, unit=(mu.group(1) if mu else ''),
+                                       values=_np.array(vals, dtype=float))
+    if label_col and channels:
+        first = next(iter(channels))
+        channels[first].quality = label_col
+    return LiveStream(name=p.stem, source_format='pangaea_txt',
+                      index_kind='depth', index=depth, channels=channels, meta=meta)
+
+
 def _csv_kind(path: Path) -> str:
     """Distinguish catalogue CSV kinds by header: 'd,t' = temperature profile;
     survey headers = deviation survey; DEPTH,OrigDepth,CORE_NO = core analysis;
@@ -295,7 +433,14 @@ class CatalogEntry:
     provenance: dict
 
     def stream(self) -> LiveStream:
+        if self.las_path.suffix.lower() == '.txt':
+            return read_pangaea_txt(self.las_path)
         if self.las_path.suffix.lower() == '.dat':
+            import re as _re
+            with self.las_path.open(encoding='utf-8') as _f:
+                _head = _f.read(4000)
+            if _re.search(r'^!\s+\d+\s+"[^"]*"\s+C\d*', _head, _re.M):
+                return read_ktb_table(self.las_path)
             return read_ktb_dat(self.las_path)
         if self.las_path.suffix.lower() == '.csv':
             kind = _csv_kind(self.las_path)
@@ -328,6 +473,7 @@ def _load_catalog() -> Dict[str, CatalogEntry]:
     if not _CATALOG_DIR.is_dir():
         return out
     files = sorted(list(_CATALOG_DIR.glob('*.las')) + list(_CATALOG_DIR.glob('*.dat'))
+                   + list(_CATALOG_DIR.glob('*.txt'))
                    + [p for p in _CATALOG_DIR.glob('*.csv') if not p.name.endswith('.provenance.json')])
     for las in files:
         prov_path = las.with_suffix('.provenance.json')

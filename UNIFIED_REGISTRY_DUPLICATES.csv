@@ -150,3 +150,4 @@ census_series_family,p2250_p2255,FAMILY_RECORD,six live-loaded artifacts complet
 downhole_module_family,p2256,FAMILY_RECORD,first industry-application module (physics/engine/demo/Qt6 + sample profile); comparison mode = the P2250 quartz bench-test simulation side,v0.394.0
 catalogue_family,p2257,FAMILY_RECORD,ten real-data catalogue entries share one provenance-mandatory loading pattern (CatalogEntry + sidecar); kinds dispatch stream()/survey() honestly,v0.398.0
 deepdata_family,p2257,FAMILY_RECORD,four KTB column layouts (4-col temp / 6-col twin-sensor / 2-col TVD / 5-col BHGM) on ONE dynamic column-block parser; production reader namespaces per-well channels,v0.399.0
+twentywells_family,p2257,FAMILY_RECORD,two real DUAL-SENSOR instruments now catalogued (KTB twin-thermistor sonde; T2P tip+shaft penetrometer) and two real twin-state datasets (CORK disturbed+equilibrium; strength-vs-overburden pairs),v0.400.0

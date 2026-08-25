@@ -653,3 +653,4 @@ TWOSTREAM_ARC,WHITEPAPER,MERGED,v0.396.0,uqff_downhole_simulator v1.7-v1.9 (cite
 CONNECTIVITY_ARC,WHITEPAPER,MERGED,v0.397.0,PAPER_2257 + v1.10 follower + v1.11 modbus + v1.12 catalogue + v1.13 three real wells (wrapped parsing; BHT tier)
 CATALOGUE_ARC,WHITEPAPER,MERGED,v0.398.0,downhole v1.14-v1.20: entries 4-10 (TX LAS 1.2 + KS complete + two MEASURED temperature curves + NL descending + real 200-station survey + core lab truth)
 DEEPDATA_ARC,WHITEPAPER,MERGED,v0.399.0,downhole v1.21-v1.25: entries 11-15 (production time series + KTB HB/VB temperature + HB trajectory + HB density; KTB-HB closed-stream describable)
+TWENTYWELLS_ARC,WHITEPAPER,MERGED,v0.400.0,downhole v1.26-v1.30: entries 16-20 (KTB VB+HB strength / 504B fluids / U1324 measured pressure / 1027C CORK observatory; quantity ledger CLOSED)

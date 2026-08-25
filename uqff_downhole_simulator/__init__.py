@@ -104,9 +104,11 @@ from .uqff_profile_catalog import (
     read_core_csv,
     read_production_csv,
     read_ktb_dat,
+    read_ktb_table,
+    read_pangaea_txt,
 )
 
-__version__ = "1.25.0"
+__version__ = "1.30.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
@@ -124,6 +126,6 @@ __all__ = [
     "Reconciler", "ReconcilerConfig", "auto_station_map",
     "FollowerPoll", "HistorianFollower",
     "PYMODBUS_AVAILABLE", "RegisterMap", "load_register_map",
-    "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile", "read_temperature_csv", "read_survey_csv", "read_core_csv", "read_production_csv", "read_ktb_dat",
+    "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile", "read_temperature_csv", "read_survey_csv", "read_core_csv", "read_production_csv", "read_ktb_dat", "read_ktb_table", "read_pangaea_txt",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
 ]

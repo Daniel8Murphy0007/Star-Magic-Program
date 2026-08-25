@@ -1,27 +1,26 @@
-v0.399.0 - THE DEEP DATA SHIP: the live stream's shape and the deepest data on Earth
+v0.400.0 - THE TWENTY WELLS SHIP: the quantity ledger closes at twenty entries
 
-Downhole v1.21.0-v1.25.0: catalogue 10 -> 15 entries / 9 kinds.
+Downhole v1.26.0-v1.30.0: catalogue 15 -> 20 entries / 12 regions / 13 kinds.
 
-- v1.21 VOLVE F-12/F-14 DAILY PRODUCTION: first TIME-indexed real field
-  data - 166 records from first oil, with REAL sensor-fault phenomenology
-  (9-day stuck run, dropout to 0.0 bar, negative volume). Caught the
-  v0.398.0 ship pin's frozen ==10 count (counts-use->= enforced).
-- v1.22 KTB MAIN HOLE TEMPERATURE (HB-246): first HOT data - 170-185 degC
-  at 7.7-8.0 km in the deepest research borehole; DISTURBED-log honesty
-  pinned (22.75 h shut-in from the in-file header). Region NINE.
-- v1.23 KTB PILOT TWIN-SENSOR (VB-251, 1988): two sensors 1,140 mm apart,
-  in-file accuracy spec; trailing sensor cooler at EVERY row (mean
-  0.87 degC) - the twin-leg comparison in 1988 hardware.
-- v1.24 KTB-HB TRAJECTORY (0-2,803 m at 1 m): verticality NULL CONTROL,
-  |TVD-MD| <= 0.35 m over 2.8 km; datum offset preserved verbatim.
-- v1.25 KTB-HB BHGM DENSITY (COMPLETE, 197 stations 0-8,400 m): first real
-  density profile; transcribed mean = in-file 2.752 g/cm3 average; LIVE
-  overburden integral in the gate: ~226 MPa ~ 32,750 psi at TD.
+- v1.26 KTB-VB STRENGTH (113 lab samples): first rock-strength data; the
+  geomechanics pair closes LIVE - 59/113 samples weaker than their own
+  overburden (entry-15 measured density): the breakout physics, counted.
+  Cell-level refusal: 9 rendering-ambiguous cells -> NaN + raw token.
+- v1.27 KTB-HB STRENGTH (21 samples): pair complete - HB amphibolites
+  199 MPa vs VB 77; yet 5/21 lose to overburden at 5.5-6.2 km.
+- v1.28 ODP 504B FLUIDS: the deepest hole in OCEANIC crust (region TEN,
+  first sub-seafloor entry); seawater->basalt mixing gradient computed
+  live; PANGAEA self-citing textfile route PROVEN (read_pangaea_txt).
+- v1.29 IODP U1324 MEASURED PRESSURE: the last missing quantity (region
+  ELEVEN); baselines travel in-file; ALL 12 baselined stations
+  OVERPRESSURED (max +2.07 MPa; lambda* 0.385) - THE FIND in nature.
+- v1.30 ODP 1027C CORK OBSERVATORY (region TWELVE): the real permanent
+  downhole gauge - disturbed vs equilibrium measured on both sides
+  (+42.6 C sealed recovery); isothermal hydrothermal basement; logger
+  replacement in the file's own service history.
 
-Milestone: KTB-HB = temperature + trajectory + density - the first well the
-closed stream can describe entirely from catalogued real data.
+The physical-quantity ledger is CLOSED: temperature, trajectory, density,
+strength, rates, core, fluids, pressure - all real, all provenance-complete,
+with baselines beside measurements wherever sources provide them.
 
-Port upgrades: read_production_csv; read_ktb_dat with DYNAMIC column-block
-parsing (four KTB layouts, one parser); survey() from ktb_dat TVD.
-
-Gate 5,858 -> 5,870, 0 failures. 23-file charter pass verified.
+Gate 5,870 -> 5,882, 0 failures. 23-file charter pass verified.

@@ -11977,3 +11977,36 @@ pins (counts >=); README release/campaign/shipped rewrite + badges;
 CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11 DEEPDATA_ARC
 trail rows. Gate 5,868 → 5,870, 0 failures. Package v1.25.0 (catalog/ 30
 files, measured). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 272 — 2026-08-25 — v0.400.0 THE TWENTY WELLS SHIP (downhole v1.26–v1.30, entries 16–20)
+
+The milestone arc: five entries closing the physical-quantity ledger.
+
+1. v1.26.0 KTB-VB strength (113 samples): first lab rock strength;
+   strength-vs-overburden counted live (59/113 below own overburden — the
+   breakout physics); cell-level refusal (9 ambiguous cells, typed-column
+   rule, raw tokens preserved); read_ktb_table.
+2. v1.27.0 KTB-HB strength (21 samples): pair complete; HB 199 vs VB 77
+   MPa mean; 5/21 below overburden at 5.5-6.2 km; reader unchanged.
+3. v1.28.0 ODP 504B fluids (PANGAEA.805957): ocean's KTB, region TEN,
+   first sub-seafloor entry; mixing gradient computed live; PANGAEA
+   self-citing textfile route PROVEN after LDEO .dat proved fetch-blocked
+   (forensics in provenance); read_pangaea_txt.
+4. v1.29.0 U1324 measured pore pressure (PANGAEA.725472): last missing
+   quantity; region ELEVEN; baselines in-file; ALL 12 baselined stations
+   overpressured (max +2.07 MPa; lambda* 0.385 at 608.2 m) — THE FIND in
+   nature; T2P tip/shaft dual-sensor pairs preserved.
+5. v1.30.0 1027C CORK observatory (PANGAEA.722627): region TWELVE,
+   thirteenth kind — the real permanent downhole installation; disturbed
+   vs equilibrium measured at the same stations (+42.6 C recovery at
+   586.8 m); 104 C/km gradient -> isothermal basement (0.1 C spread);
+   observatory service history (logger replaced 1999) in the file's own
+   comment block. Parser unchanged (third PANGAEA entry).
+
+Ship prep: pins at 0.400.0 (desc 479 chars, measured counts); SHIP GUARD
+marker DEEPDATA_ARC→TWENTYWELLS_ARC (+ GAPS id twentywells_arc_rule7);
++2 ship pins (counts >=); README release/campaign/shipped rewrite +
+badges; CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11
+TWENTYWELLS_ARC trail rows. Gate 5,880 → 5,882, 0 failures. Package
+v1.30.0 (catalog/ 40 files, measured). Awaiting Daniel: `.\ship.ps1`
+(clear .git/index.lock first).

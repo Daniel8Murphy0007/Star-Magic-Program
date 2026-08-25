@@ -636,3 +636,125 @@ deep TVD divergence (36 m at 8,400) complements entry 14's near-vertical
 section. **KTB-HB now carries temperature + trajectory + density — the
 closed stream can describe this well entirely from catalogued real data.
 Fifteen entries, nine kinds.**
+
+## v1.26.0 extension: catalogue entry 16 — KTB Pilot Hole rock mechanics (Daniel-directed, 2026-08-25)
+
+**KTB-VB core compressive-strength table** (ICDP legacy KTB Information
+System, COMPLETE 11 KB file): the catalogue's first **LABORATORY ROCK
+STRENGTH** data — 113 uniaxial tests on Pilot Hole cores, 189.79 →
+3,831.88 m, UCS 3.2 → 265.4 MPa, with E-modulus, rock type, foliation dip,
+and per-sample timestamps (1987–1989 field lab). New `read_ktb_table`
+(typed F/C/I column blocks; rock type carried as per-sample quality).
+
+The geomechanics pair closes LIVE: using entry 15's measured mean density,
+the gate counts **59 of 113 samples whose strength falls BELOW the
+overburden at their own depth** — weak foliated gneisses (mean ~49 MPa)
+against strong amphibolites (~137 MPa): the physical reason the KTB pilot
+hole developed breakouts, computed from catalogued data on every run.
+Strength (what the rock can bear) vs overburden (what it does bear) is the
+two-stream comparison at the geomechanics level.
+
+Refusal discipline at the cell level: the source declares TAB separators,
+which the legacy rendering collapses — so empty interior cells lose their
+position. The reader assigns trailing tokens by DECLARED TYPE only (a
+decimal cannot be an I2 dip), and the 9 genuinely ambiguous trailing
+integers are REFUSED: NaN plus the raw token preserved in a per-row quality
+flag, with the source URL carried for byte-level resolution. **Sixteen
+catalogue entries, ten kinds.**
+
+## v1.27.0 extension: catalogue entry 17 — KTB Main Hole strength table (Daniel-directed, 2026-08-25)
+
+**KTB-HB core compressive-strength table** (ICDP legacy site, COMPLETE
+2.5 KB file): the strength pair completes. 21 samples from the Main Hole's
+sparse deep coring (4,151 → 7,400 m; core is rare in the HB — it was mostly
+cutting-drilled): 20 amphibolites at 96.6–307.9 MPa plus one MUS-GNS at
+5,282 m (49.1 MPa, dip 60°) — the deep analogue of the VB's weak-gneiss
+story. `read_ktb_table` reused unchanged: the reader generalizes across
+both holes; the 4 TAB-collapse-ambiguous cells are refused with raw tokens
+preserved, exactly as in entry 16.
+
+The three-entry comparison now runs live in the gate: HB mean strength
+(199 MPa) doubles the VB's (77 MPa) — the deep section holds because it is
+amphibolite — yet at 5.5–6.2 km even amphibolites begin to fall below the
+density-derived overburden (**5 of 21 samples**, including the 49.1 MPa
+gneiss under 142.6 MPa of rock): the mechanical squeeze of true depth,
+counted from entries 15+16+17 together rather than asserted. **Seventeen
+catalogue entries; KTB contributes six, and both holes carry a strength
+table.**
+
+## v1.28.0 extension: catalogue entry 18 — ODP Hole 504B borehole fluids (Daniel-directed, 2026-08-25)
+
+**The ocean's KTB.** ODP Hole 504B (Costa Rica Rift flank, North Pacific;
+seafloor at −3,474 m) is the deepest hole ever drilled into oceanic crust —
+and it joins the catalogue as **region TEN**, the first sub-seafloor entry,
+and the **eleventh kind**: borehole-fluid chemistry (PANGAEA
+doi:10.1594/PANGAEA.805957, Magenheim et al. 1995, COMPLETE dataset — 8
+samples, 350–1,550 mbsf, 42 numeric channels at ambient >160 °C).
+
+The science is a depth gradient and the gate computes it live: Mg falls
+(corr −0.81) while Ca rises (+0.80) and ⁸⁷Sr/⁸⁶Sr slides from the seawater
+value (0.70921) toward basaltic (0.70758) — seawater mixing with a reacted
+end-member down the hole. The paper's own honest framing ("borehole fluids,
+not confirmed formation waters") is preserved as the entry's meaning; the
+near-seawater parcel at 950 m and the short-row NaN padding are real
+structure, kept. For the downhole program this is the chemistry of the
+fluid the tools actually live in — corrosion- and scaling-relevant.
+
+Route milestone: the **PANGAEA textfile export** serves complete datasets
+as tab-separated text whose header carries its own citation, abstract,
+coordinates, per-parameter methods and license (CC-BY-3.0) — all parsed to
+stream meta by the new `read_pangaea_txt`. The richest-provenance source
+format in the catalogue, and a whole source family for future entries.
+**Eighteen entries, ten regions, eleven kinds.**
+
+## v1.29.0 extension: catalogue entry 19 — IODP U1324 measured pore pressure (Daniel-directed, 2026-08-25)
+
+**The last missing quantity arrives.** IODP Site 308-U1324 (Ursa Basin,
+continental slope offshore Louisiana, GULF OF MEXICO — region ELEVEN;
+seafloor −1,056 m): in-situ pore-pressure penetrometer measurements
+(PANGAEA doi:10.1594/PANGAEA.725472, Flemings et al. 2008, COMPLETE — 18
+deployments, 50–608.2 mbsf). The catalogue had temperature, geometry,
+density, strength, rates, core, and fluids; now it has **measured downhole
+pressure** (twelfth kind) — with hydrostatic AND overburden baselines
+travelling in the same file, so overpressure is computed, never asserted.
+
+And it is THE FIND occurring in nature: **every one of the 12 baselined
+stations reads above hydrostatic** (max +2.07 MPa; at the 608.2 m headline
+station, measured 18.80 MPa vs hydrostatic 16.73 vs overburden 22.11 —
+λ* = 0.385) — the shallow overpressure that preconditions the submarine
+landslides this site was drilled to study. Measured-vs-baseline residual as
+real geology: the reconciler's founding scenario, in the record and pinned
+live. Bonus instrument lineage: the T2P probe carries tip AND shaft
+pressure sensors (duplicate-depth row pairs preserved) — the catalogue's
+second real dual-sensor instrument; tip rows' blank baseline cells stay
+NaN, as the source reported them once per deployment. `read_pangaea_txt`
+needed zero changes. **Nineteen entries, eleven regions, twelve kinds.**
+
+## v1.30.0 extension: catalogue entry 20 — the CORK observatory (Daniel-directed, 2026-08-25)
+
+**The twentieth entry is the instrument class this package simulates.**
+ODP Hole 1027C, Juan de Fuca Ridge flank (region TWELVE; seafloor
+−2,656 m; crustal age 3.6 Ma): a **CORK sealed-borehole observatory** —
+the real-world permanent downhole monitoring installation (PANGAEA
+doi:10.1594/PANGAEA.722627, Davis & Becker 2002, COMPLETE). Thirteenth
+kind: observatory profile.
+
+One file, both thermal states, at the same 10 thermistor stations: the
+drilling-disturbed profile at installation (max 19.6 °C) and the
+near-equilibrium profile after ~3 sealed years (max 60.7 °C) — a
+**+42.6 °C recovery at 586.8 m**. The disturbed-vs-equilibrium distinction
+the KTB temperature entries could only disclose in provenance is here
+MEASURED on both sides, and the gate computes the physics live: a steep
+~104 °C/km conductive sediment gradient (young hot crust) collapsing to an
+**isothermal basement** (0.1 °C spread across the deepest five stations,
+vs 1.1 °C while disturbed) — vigorous hydrothermal circulation
+homogenizing the upper crust, the Davis-Becker result from the data.
+
+And the file's own Comment block is a service-life record: CORK installed
+1996, data recoveries 1997/1999/2000, **logger replaced 1999**, current
+status "Operational (pressure only)", plus the formation-pressure summary
+(−69 kPa initial → −26 kPa equilibrium: young crust slightly
+UNDERpressured). Multi-year sealed-hole monitoring with maintenance events
+— the ServiceLifeSimulator's world as history. `read_pangaea_txt`
+unchanged (third entry on the parser). **Twenty entries, twelve regions,
+thirteen kinds.**

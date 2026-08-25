@@ -6567,3 +6567,6 @@ CATALOGUE_ARC (v0.398.0, 2026-08-25): no new rulings required. Daniel's standing
 
 ---
 DEEPDATA_ARC (v0.399.0, 2026-08-25): no new rulings required. Standing catalogue order executed across entries 11-15; ambiguities resolved by DISCLOSURE (Volve redistribution lineage column-by-column; KTB disturbed-log status with pinned shut-in times; empty TLAB left absent; datum offset and run-boundary discontinuities preserved; run-faithful transcription method stated with source URLs). One self-catch folded in: the v0.398.0 ship pin froze the catalogue at ==10, violating counts-use->=; relaxed, disclosed (PAPER_2257 app. 12), and canonized in the v0.399.0 ship pin. Board otherwise unchanged (6 items).
+
+---
+TWENTYWELLS_ARC (v0.400.0, 2026-08-25): no new rulings required. Standing catalogue order executed across entries 16-20. Disclosure practices this arc, now standing: cell-level refusal with raw-token preservation for rendering-ambiguous cells; source papers' own honest framings inherited as entry framings; PANGAEA in-file citations/licenses parsed to meta rather than restated. Board otherwise unchanged (6 items).

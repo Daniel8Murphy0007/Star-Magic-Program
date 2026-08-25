@@ -653,3 +653,163 @@ DENSITY (entry 15) - the first well the closed stream can describe (thermal
 state, geometry, overburden) entirely from catalogued real data. Catalogue
 standing: FIFTEEN entries / NINE regions / NINE kind-strings. Package v1.25.0;
 gate 5,866 -> 5,868.
+
+---
+
+## APPENDED 2026-08-25 (17) — v1.26.0: CATALOGUE ENTRY 16 — STRENGTH MEETS OVERBURDEN: THE GEOMECHANICS PAIR CLOSES ON REAL DATA
+
+**KTB Pilot Hole core compressive-strength table (COMPLETE, 113 samples,
+190-3,832 m)**: the catalogue's first laboratory rock-strength data - UCS 3.2 to
+265.4 MPa with E-modulus, rock type, foliation dip, and sampling timestamps from
+the 1987-89 KTB field laboratory.
+
+The entry exists for one comparison, and the gate now runs it live: entry 15
+measured the crust's density (2.752 g/cm3 mean, borehole gravimetry); entry 16
+measures what that crust can BEAR. Dividing one by the other, 59 OF 113 SAMPLES
+ARE WEAKER THAN THE OVERBURDEN AT THEIR OWN DEPTH - the weak foliated gneisses
+(mean ~49 MPa) sitting under loads their amphibolite neighbours (~137 MPa) shrug
+off. That imbalance is the documented physical reason the KTB pilot hole
+developed breakouts, and it is now COUNTED from catalogued data in a pin, not
+asserted from literature. Strength-vs-overburden is the two-stream comparison
+operating at the geomechanics level: a closed-stream load model meeting measured
+capacity, with the residual classified.
+
+Refusal discipline reaches the CELL level with this entry: the source declares
+TAB separators; the legacy HTML rendering collapses them, so an empty interior
+cell loses its position in short rows. The read_ktb_table reader assigns trailing
+tokens by DECLARED COLUMN TYPE only - a token with a decimal point cannot belong
+to the I2 dip column - and the 9 rows whose trailing integer could be either an
+integer-valued E-modulus or a dip are REFUSED: both cells NaN, the raw token
+preserved in a per-row quality flag, the source URL carried for byte-level
+(tab-preserving) resolution. Nothing is guessed from geology.
+
+Catalogue standing: SIXTEEN entries / NINE regions / TEN kinds. KTB now
+contributes five entries across four kinds; the VB (like the HB before it)
+carries two. A small HB strength table exists at the same site and is noted in
+provenance as not-yet-catalogued. Package v1.26.0; gate 5,870 -> 5,872.
+
+---
+
+## APPENDED 2026-08-25 (18) — v1.27.0: CATALOGUE ENTRY 17 — THE STRENGTH PAIR COMPLETES, AND DEPTH WINS
+
+**KTB Main Hole core strength table (COMPLETE, 21 samples, 4,151-7,400 m)**: the
+companion to entry 16, and the closing panel of the KTB geomechanics triptych.
+The HB was mostly cutting-drilled, so its core is sparse and deep - 20
+amphibolites (96.6-307.9 MPa) and a single muscovite gneiss (49.1 MPa at 5,282 m)
+that replays the VB weak-foliation story three kilometres deeper.
+
+With entries 15+16+17 together the gate now tells the whole mechanical story of
+the deepest borehole complex on Earth from catalogued data alone: the Pilot
+Hole's mixed section averages 77 MPa and fails against its own overburden at 59
+of 113 sample depths (breakouts); the Main Hole's amphibolites average 199 MPa -
+which is WHY a 9.1 km hole could stand - and yet at 5.5-6.2 km even amphibolites
+begin to lose to the density-derived load (5 of 21 samples below their own
+overburden, the gneiss under a 2.9x excess). Strength is lithology; load is
+depth; depth wins eventually. All of it counted live in pins, none of it
+asserted from literature.
+
+Reader maturity note: read_ktb_table needed ZERO changes for this file - the
+typed-column parser, the type-declared assignment rule, and the ambiguous-cell
+refusal (4 rows here) generalized from the VB table unchanged. Five KTB dialects,
+two readers.
+
+Catalogue standing: SEVENTEEN entries / NINE regions / TEN kinds; KTB contributes
+SIX entries and both of its holes now carry temperature AND strength data.
+Package v1.27.0; gate 5,872 -> 5,874.
+
+---
+
+## APPENDED 2026-08-25 (19) — v1.28.0: CATALOGUE ENTRY 18 — THE OCEAN'S KTB, AND A SOURCE FAMILY THAT CITES ITSELF
+
+**ODP Hole 504B borehole fluids, Leg 137** (PANGAEA doi:10.1594/PANGAEA.805957,
+COMPLETE): the deepest hole in oceanic crust - the exact oceanic counterpart of
+the KTB arc - joins as region TEN and the catalogue's first SUB-SEAFLOOR entry
+(seafloor -3,474 m; ambient in-hole >160 degC). Eight samples, 350-1,550 mbsf,
+42 numeric channels: pH, majors, traces, and a full isotope suite.
+
+The entry's physics is a mixing gradient, and the gate computes it rather than
+quotes it: Mg falls with depth (corr -0.81) as Ca rises (+0.80), and 87Sr/86Sr
+slides from the seawater value (0.709212) toward basaltic (0.707575) - the ocean
+reacting with the crust, sampled in a borehole. Honesty inherited from the source
+paper itself: these are BOREHOLE fluids, not confirmed formation waters (in-hole
+reaction with rubble is the authors' preferred reading), and that framing is the
+entry's framing. The near-seawater parcel at 950 m and the trailing-cell NaN
+padding are real structure, preserved.
+
+The route matters as much as the entry: after the LDEO .dat family proved
+fetch-blocked (octet-stream) and the Chrome fallback was unavailable, the
+PANGAEA TEXTFILE EXPORT route was proven - complete datasets served as
+tab-separated text whose header carries its OWN citation, abstract, coordinates,
+per-parameter methods and license. read_pangaea_txt parses that self-description
+into stream meta: the first source format in the catalogue that arrives already
+citing itself. Fetch forensics recorded in provenance; a provenance-grade source
+family is now open for everything after this.
+
+Catalogue standing: EIGHTEEN entries / TEN regions / ELEVEN kinds. The two
+deepest-borehole programmes on Earth - continental (KTB) and oceanic (504B) -
+are both in the record. Package v1.28.0; gate 5,874 -> 5,876.
+
+---
+
+## APPENDED 2026-08-25 (20) — v1.29.0: CATALOGUE ENTRY 19 — MEASURED PRESSURE ARRIVES, AND IT IS THE FIND
+
+**IODP Site U1324 in-situ pore pressure** (PANGAEA doi:10.1594/PANGAEA.725472,
+COMPLETE; Gulf of Mexico, region ELEVEN): 18 penetrometer deployments, 50-608.2
+mbsf. This closes the physical-quantity ledger the catalogue has been assembling
+since entry 1: temperature, trajectory, density, strength, rates, core, fluids -
+and now MEASURED DOWNHOLE PRESSURE, the twelfth kind, the quantity the simulator's
+gauges exist to read.
+
+The dataset is the two-stream thesis in miniature, because the file carries its
+own baselines: per-station HYDROSTATIC pressure (the closed-stream null model)
+and OVERBURDEN (the ceiling), alongside the measurement. The gate computes the
+residual live: ALL 12 baselined stations read above hydrostatic - max +2.07 MPa,
+with lambda* = 0.385 at the 608.2 m headline station (18.80 measured / 16.73
+hydrostatic / 22.11 overburden MPa). That residual is not instrument error; it is
+the rapid-sedimentation overpressure that preconditions the submarine landslides
+this expedition was mounted to study. THE FIND - the offset undervalued data
+stream of Daniel's founding ruling - occurring in nature, in a file whose own
+structure proves it.
+
+Instrument lineage note: the T2P penetrometer reports TIP and SHAFT pressure
+sensors as separate rows at the same depth - the catalogue's second real
+dual-sensor instrument (after the KTB twin-temperature sonde). The duplicate-depth
+pairs are preserved, and tip rows' blank baseline cells stay NaN because the
+source reports baselines once per deployment. read_pangaea_txt required ZERO
+changes - the PANGAEA source family generalizes on its second entry.
+
+Catalogue standing: NINETEEN entries / ELEVEN regions / TWELVE kinds - onshore
+and offshore, continental and oceanic crust, ice and 185 degC rock, from first
+oil to lab bench, with every quantity the closed stream needs now present as
+real data. Package v1.29.0; gate 5,876 -> 5,878.
+
+---
+
+## APPENDED 2026-08-25 (21) — v1.30.0: CATALOGUE ENTRY 20 — THE CATALOGUE MEETS ITS OWN SUBJECT
+
+**ODP Hole 1027C CORK observatory** (PANGAEA doi:10.1594/PANGAEA.722627,
+COMPLETE; Juan de Fuca Ridge flank, region TWELVE): the twentieth entry is a
+SEALED-BOREHOLE PERMANENT OBSERVATORY - the physical instrument class this
+entire package exists to simulate. A CORK is the real permanent downhole gauge:
+installed 1996, data recoveries 1997/1999/2000, a logger REPLACED in 1999,
+status 'Operational (pressure only)' - the ServiceLifeSimulator's decade, as
+recorded history in the file's own Comment block, alongside the formation
+-pressure summary (-69 kPa initial -> -26 kPa equilibrium: young crust slightly
+UNDERpressured - the mirror image of entry 19's Gulf of Mexico overpressure).
+
+The data is one profile measured twice, and it closes the catalogue's oldest
+honesty thread: at the same 10 thermistor stations, the drilling-disturbed
+state at installation (max 19.6 degC) and the near-equilibrium state after
+three sealed years (max 60.7 degC) - a +42.6 degC recovery at 586.8 m. Entries
+12 and 13 could only DISCLOSE that KTB logs were disturbed; entry 20 measures
+the disturbance AND the recovery. And the sealed profile computes the
+Davis-Becker physics live in the gate: ~104 degC/km of conductive sediment
+gradient collapsing to an ISOTHERMAL basement (0.1 degC spread, vs 1.1 while
+disturbed) - hydrothermal circulation homogenizing young oceanic crust.
+
+read_pangaea_txt: zero changes, third entry on the parser.
+
+TWENTY ENTRIES. Twelve regions, thirteen kinds, five continents' worth of
+basins, both deepest-borehole programmes on Earth, every physical quantity the
+closed stream needs, and now the real version of the instrument the closed
+stream simulates. Package v1.30.0; gate 5,878 -> 5,880.

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.399.0", "uqff_calculator.VERSION = 0.399.0 (the deep data ship: catalogue to FIFTEEN entries / NINE kinds - first time-indexed real field data + the KTB deep-data suite with a live overburden integral from measured density)")
+assert_that(C.VERSION == "0.400.0", "uqff_calculator.VERSION = 0.400.0 (THE TWENTY WELLS SHIP: catalogue to TWENTY entries / TWELVE regions / THIRTEEN kinds - the geomechanics pair closed live, the ocean's KTB, measured pressure, and the real permanent downhole observatory)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'DEEPDATA_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'TWENTYWELLS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('deepdata_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('twentywells_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,14 +12592,14 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', 'catalog/ktb_vb_rockmech_compress.dat', 'catalog/ktb_vb_rockmech_compress.provenance.json', 'catalog/ktb_hb_rockmech_compress.dat', 'catalog/ktb_hb_rockmech_compress.provenance.json', 'catalog/odp_504b_leg137_borehole_fluids.txt', 'catalog/odp_504b_leg137_borehole_fluids.provenance.json', 'catalog/iodp_u1324_pore_pressure.txt', 'catalog/iodp_u1324_pore_pressure.provenance.json', 'catalog/odp_1027c_cork_temperature.txt', 'catalog/odp_1027c_cork_temperature.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.25.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.30.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -13191,6 +13191,121 @@ assert_that(220.0 < _pob15 < 232.0
             and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 9,
             "CATALOGUE v1.25.0: FIFTEEN entries, NINE kinds - THE PRESSURE-SIDE INGREDIENT ARRIVES: overburden at TD integrated from MEASURED density over MEASURED TVD = ~226 MPa (~32,750 psi at 8,364 m TVD) - real crustal overburden in exactly the simulator's 30,000-psi-class regime, computed live in this pin from catalogued data; the 5,990 -> 6,000 m run-boundary gravity discontinuity (tool-size change, -1.7 mGal) is preserved and pinned as REAL survey structure; KTB-HB now carries temperature + trajectory + density: closed-stream describable from real data alone")
 
+# ---- CATALOGUE v1.26.0: entry 16 - KTB-VB rock mechanics (STRENGTH vs OVERBURDEN, live) ----
+import numpy as _np26r
+_st16r = _ds11.CATALOG['ktb_vb_rockmech_compress'].stream()
+_ucs16 = _st16r.channels['COMPRESSIVE_STRENGTH'].values
+_em16 = _st16r.channels['E_MODUL'].values
+_rock16 = _st16r.channels['COMPRESSIVE_STRENGTH'].quality
+_flag16 = _st16r.channels['E_MODUL'].quality
+assert_that(_st16r.source_format == 'ktb_table' and len(_st16r.index) == 113
+            and abs(float(_st16r.index[0]) - 189.79) < 1e-9 and abs(float(_st16r.index[-1]) - 3831.88) < 1e-9
+            and abs(float(_np26r.nanmin(_ucs16)) - 3.2) < 1e-9 and abs(float(_np26r.nanmax(_ucs16)) - 265.4) < 1e-9
+            and _rock16[0] == 'GNT-AMP' and _rock16[-1] == 'MET-GAB'
+            and sum(1 for _f in _flag16 if _f) == 9,
+            "CATALOGUE entry 16: KTB Pilot Hole core compressive-strength table (COMPLETE, 113 lab samples 190-3,832 m, UCS 3.2-265.4 MPa with E-modulus/rock type/foliation dip) - the catalogue's first LABORATORY ROCK STRENGTH data; the rendering-collapsed-tab ambiguity is handled by DECLARED TYPE only (a decimal token cannot be an I2 dip) and the 9 genuinely ambiguous trailing integers are REFUSED - NaN plus the raw token preserved in a per-row quality flag, nothing guessed from geology")
+_ovb16 = 2752.0 * 9.81 * _st16r.index / 1e6
+_weak16 = int(_np26r.sum(_ucs16 < _ovb16))
+_bio16 = [float(_ucs16[_i]) for _i in range(113) if _rock16[_i] == 'BIO-GNS']
+_amp16 = [float(_ucs16[_i]) for _i in range(113) if _rock16[_i] in ('GNT-AMP', 'AMP')]
+assert_that(_weak16 == 59
+            and 40.0 < float(_np26r.mean(_bio16)) < 60.0 and 120.0 < float(_np26r.mean(_amp16)) < 150.0
+            and len(_ds11.CATALOG) >= 16
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 10,
+            "CATALOGUE v1.26.0: SIXTEEN entries, TEN kinds - THE GEOMECHANICS PAIR CLOSES LIVE: using entry 15's measured mean density (2.752 g/cm3), 59 of 113 lab samples have compressive strength BELOW the overburden at their own depth (foliated gneisses mean ~49 MPa vs amphibolites ~137 MPa) - the physical reason the KTB pilot hole developed breakouts, COUNTED from catalogued data in this pin rather than asserted; strength vs overburden is the two-stream comparison at the geomechanics level")
+
+# ---- CATALOGUE v1.27.0: entry 17 - KTB-HB strength table (THE STRENGTH PAIR COMPLETES) ----
+import numpy as _np27h
+_st17h = _ds11.CATALOG['ktb_hb_rockmech_compress'].stream()
+_ucs17 = _st17h.channels['COMPRESSIVE_STRENGTH'].values
+_rock17 = _st17h.channels['COMPRESSIVE_STRENGTH'].quality
+_flag17 = _st17h.channels['E_MODUL'].quality
+assert_that(_st17h.source_format == 'ktb_table' and len(_st17h.index) == 21
+            and abs(float(_st17h.index[0]) - 4151.40) < 1e-9 and abs(float(_st17h.index[-1]) - 7400.30) < 1e-9
+            and abs(float(_np27h.nanmin(_ucs17)) - 49.1) < 1e-9 and abs(float(_np27h.nanmax(_ucs17)) - 307.9) < 1e-9
+            and sum(1 for _r in _rock17 if _r == 'AMP') == 20
+            and sum(1 for _f in _flag17 if _f) == 4,
+            "CATALOGUE entry 17: KTB Main Hole core compressive-strength table (COMPLETE, 21 samples 4,151-7,400 m) - the HB's sparse deep coring: 20 amphibolites (96.6-307.9 MPa) + one MUS-GNS (49.1 MPa at 5,282 m); same TAB-collapse handling as entry 16 - the 4 ambiguous trailing integers REFUSED with raw tokens preserved; read_ktb_table reused unchanged (the reader generalizes across both holes)")
+_ovb17 = 2752.0 * 9.81 * _st17h.index / 1e6
+_weak17 = int(_np27h.sum(_ucs17 < _ovb17))
+_vb17 = _ds11.CATALOG['ktb_vb_rockmech_compress'].stream().channels['COMPRESSIVE_STRENGTH'].values
+assert_that(_weak17 == 5
+            and 190.0 < float(_np27h.nanmean(_ucs17)) < 210.0 and 70.0 < float(_np27h.nanmean(_vb17)) < 85.0
+            and len(_ds11.CATALOG) >= 17,
+            "CATALOGUE v1.27.0: SEVENTEEN entries - THE STRENGTH PAIR COMPLETES and the depth story emerges from data: the Main Hole's deep amphibolites average 199 MPa vs the Pilot Hole's mixed 77 MPa, yet at 5.5-6.2 km even AMPHIBOLITES begin to fall below the density-derived overburden (5 of 21 samples, incl. the 49.1 MPa gneiss under 142.6 MPa of rock) - the mechanical squeeze of true depth, counted live from entries 15+16+17 together; KTB now contributes SIX entries and both holes carry a strength table")
+
+# ---- CATALOGUE v1.28.0: entry 18 - ODP 504B borehole fluids (THE OCEAN'S KTB; PANGAEA route proven) ----
+import numpy as _np28o
+_st18o = _ds11.CATALOG['odp_504b_leg137_borehole_fluids'].stream()
+_mg18 = _st18o.channels['Mg2+'].values
+_ca18 = _st18o.channels['Ca2+'].values
+_sr18 = _st18o.channels['87Sr/86Sr'].values
+assert_that(_st18o.source_format == 'pangaea_txt' and len(_st18o.index) == 8
+            and abs(float(_st18o.index[0]) - 350.0) < 1e-9 and abs(float(_st18o.index[-1]) - 1550.0) < 1e-9
+            and abs(float(_mg18[0]) - 54.02) < 1e-9 and abs(float(_np28o.nanmin(_mg18)) - 26.88) < 1e-9
+            and abs(float(_np28o.nanmax(_ca18)) - 43.0) < 1e-9
+            and abs(float(_np28o.nanmax(_sr18)) - 0.709212) < 1e-9
+            and abs(float(_np28o.nanmin(_sr18)) - 0.707575) < 1e-9
+            and _st18o.meta.get('elevation_m') == '-3474.0'
+            and 'CC-BY-3.0' in _st18o.meta.get('license', ''),
+            "CATALOGUE entry 18: ODP Hole 504B borehole fluids, Leg 137 (PANGAEA doi:10.1594/PANGAEA.805957, COMPLETE dataset) - the DEEPEST HOLE IN OCEANIC CRUST joins the catalogue as region TEN and the first SUB-SEAFLOOR entry (seafloor -3,474 m): 8 samples x 42 numeric channels of borehole-fluid chemistry at ambient >160 degC, with the dataset's OWN in-file citation, license (CC-BY-3.0) and coordinates parsed to stream meta - the richest-provenance source format yet (the file cites itself)")
+assert_that(float(_np28o.corrcoef(_st18o.index, _mg18)[0, 1]) < -0.75
+            and float(_np28o.corrcoef(_st18o.index, _ca18)[0, 1]) > 0.75
+            and bool(_np28o.isnan(_st18o.channels['La'].values[3]))
+            and len(_ds11.CATALOG) >= 18
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 11,
+            "CATALOGUE v1.28.0: EIGHTEEN entries, ELEVEN kinds - the ocean reacting with the crust, measured as a DEPTH GRADIENT and computed live: Mg falls (corr -0.81) while Ca rises (corr +0.80) and 87Sr/86Sr slides from the seawater value toward basaltic - seawater mixing with a reacted end-member, the paper's own honest 'borehole fluids, not confirmed formation waters' framing preserved in provenance; the near-seawater parcel at 950 m and the short-row NaN padding are real structure, kept; the PANGAEA textfile route opens a provenance-grade source family for everything after this")
+
+# ---- CATALOGUE v1.29.0: entry 19 - IODP U1324 measured pore pressure (THE LAST QUANTITY ARRIVES) ----
+import numpy as _np29p
+_st19p = _ds11.CATALOG['iodp_u1324_pore_pressure'].stream()
+_uh19 = _st19p.channels['u2 (hydrostatic fluid pressure)'].values
+_ov19 = _st19p.channels['Overb press'].values
+_ue19 = _st19p.channels['- (u end (MPa))'].values
+_i608 = int(_np29p.where(_np29p.isclose(_st19p.index, 608.2))[0][0])
+assert_that(_st19p.source_format == 'pangaea_txt' and len(_st19p.index) == 18
+            and abs(float(_np29p.min(_st19p.index)) - 50.0) < 1e-9 and abs(float(_np29p.max(_st19p.index)) - 608.2) < 1e-9
+            and abs(float(_ue19[_i608]) - 18.80) < 1e-9
+            and abs(float(_uh19[_i608]) - 16730.0) < 1e-9 and abs(float(_ov19[_i608]) - 22110.0) < 1e-9
+            and _st19p.meta.get('elevation_m') == '-1056.8'
+            and 'CC-BY-3.0' in _st19p.meta.get('license', ''),
+            "CATALOGUE entry 19: IODP Site U1324 in-situ pore pressure (PANGAEA doi:10.1594/PANGAEA.725472, COMPLETE) - the catalogue's LAST MISSING QUANTITY arrives: MEASURED downhole pressure, 18 penetrometer deployments 50-608 mbsf in the Gulf of Mexico (region ELEVEN), with hydrostatic AND overburden baselines travelling in the same file - at the 608.2 m headline station: measured 18.80 MPa vs hydrostatic 16.73 vs overburden 22.11")
+_ok19 = ~_np29p.isnan(_uh19)
+_over19 = _ue19[_ok19] - _uh19[_ok19] / 1000.0
+_lam19 = (float(_ue19[_i608]) - float(_uh19[_i608]) / 1000.0) / (float(_ov19[_i608]) / 1000.0 - float(_uh19[_i608]) / 1000.0)
+assert_that(int(_np29p.sum(_ok19)) == 12 and bool(_np29p.all(_over19 > 0))
+            and abs(float(_np29p.max(_over19)) - 2.07) < 0.005
+            and 0.35 < _lam19 < 0.42
+            and bool(_np29p.isnan(_uh19[4]))
+            and len(_ds11.CATALOG) >= 19
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 12,
+            "CATALOGUE v1.29.0: NINETEEN entries, TWELVE kinds - THE FIND, IN REAL DATA: every one of the 12 baselined stations is OVERPRESSURED (measured > hydrostatic, max +2.07 MPa; lambda* = 0.385 at 608.2 m) - the reconciler's founding scenario (measured-vs-baseline residual = real overpressure) occurring in nature, computed live from a file that carries its own baselines; the T2P's tip/shaft duplicate-depth pairs are the second REAL dual-sensor instrument in the catalogue, and tip rows' blank baselines stay NaN - reported once per deployment in the source, not duplicated here")
+
+# ---- CATALOGUE v1.30.0: entry 20 - ODP 1027C CORK observatory (THE REAL PERMANENT GAUGE) ----
+import numpy as _np30c
+_st20c = _ds11.CATALOG['odp_1027c_cork_temperature'].stream()
+_t99c = _st20c.channels['t (1999)'].values
+_t96c = _st20c.channels['t (installation)'].values
+_i586c = int(_np30c.where(_np30c.isclose(_st20c.index, 586.8))[0][0])
+assert_that(_st20c.source_format == 'pangaea_txt' and len(_st20c.index) == 10
+            and abs(float(_st20c.index[-1]) - 612.3) < 1e-9
+            and abs(float(_np30c.nanmax(_t99c)) - 60.7) < 1e-9 and abs(float(_np30c.nanmax(_t96c)) - 19.6) < 1e-9
+            and abs(float(_t99c[_i586c] - _t96c[_i586c]) - 42.6) < 1e-9
+            and bool(_np30c.isnan(_t96c[0]))
+            and _st20c.meta.get('elevation_m') == '-2656.2'
+            and 'CC-BY-3.0' in _st20c.meta.get('license', ''),
+            "CATALOGUE entry 20: ODP Hole 1027C CORK sealed-borehole observatory (PANGAEA doi:10.1594/PANGAEA.722627, COMPLETE; Juan de Fuca Ridge flank, region TWELVE) - the REAL PERMANENT DOWNHOLE INSTALLATION, carrying BOTH thermal states at the same 10 stations: drilling-disturbed at installation (max 19.6 degC) and near-equilibrium after ~3 sealed years (max 60.7 degC) - a +42.6 degC recovery at 586.8 m: the disturbed-vs-equilibrium distinction the KTB entries could only disclose, here MEASURED on both sides of the recovery")
+_deep20 = _st20c.index >= 596.0
+_i176c = int(_np30c.where(_np30c.isclose(_st20c.index, 176.8))[0][0])
+_i581c = int(_np30c.where(_np30c.isclose(_st20c.index, 581.8))[0][0])
+_grad20 = float(_t99c[_i581c] - _t99c[_i176c]) / float(_st20c.index[_i581c] - _st20c.index[_i176c]) * 1000.0
+assert_that(float(_np30c.max(_t99c[_deep20]) - _np30c.min(_t99c[_deep20])) < 0.15
+            and float(_np30c.max(_t96c[_deep20]) - _np30c.min(_t96c[_deep20])) > 0.9
+            and 100.0 < _grad20 < 109.0
+            and len(_ds11.CATALOG) >= 20
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 13,
+            "CATALOGUE v1.30.0: TWENTY entries, THIRTEEN kinds, TWELVE regions - the sealed profile computes the Davis-Becker physics live: a steep ~104 degC/km conductive sediment gradient collapsing to an ISOTHERMAL basement (0.1 degC spread across the deepest five stations, vs 1.1 degC while disturbed) - vigorous hydrothermal circulation homogenizing young crust; the file's own Comment block carries the observatory's SERVICE HISTORY (data recoveries 1997/1999/2000, logger REPLACED, 'Operational (pressure only)') - the ServiceLifeSimulator's world as recorded history: the catalogue's twentieth entry IS the instrument class this package simulates")
+
 # ---- SHIP v0.398.0: THE CATALOGUE SHIP (CATALOGUE_ARC record) ----
 _arc398_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
 assert_that(len(_ds11.CATALOG) >= 10 and len(_arc398_kinds) >= 5
@@ -13211,6 +13326,17 @@ assert_that(len(_ds11.CATALOG) >= 15 and len(_arc399_kinds) >= 9
             "SHIP v0.399.0 (DEEPDATA_ARC): FIFTEEN+ real-data entries across NINE+ kinds - the arc added the live stream's native shape (Volve daily production with REAL sensor-fault phenomenology) and the KTB deep-data suite; KTB-HB carries temperature + trajectory + density, the first well the closed stream can describe entirely from catalogued real data (counts pinned >= per the standing rule the v0.398.0 ship pin taught)")
 assert_that(True,
             "DEEPDATA_ARC STANDING RULE: every disturbed, offset, tied, settling or otherwise imperfect value in a real file is carried VERBATIM with its cause disclosed in provenance and, where classifiable, pinned - the imperfections are the data the two-stream program exists to classify; and ship-pin counts use >= because the catalogue keeps growing")
+
+# ---- SHIP v0.400.0: THE TWENTY WELLS SHIP (TWENTYWELLS_ARC record) ----
+_arc400_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
+assert_that(len(_ds11.CATALOG) >= 20 and len(_arc400_kinds) >= 13
+            and all(k in _ds11.CATALOG for k in ('ktb_vb_rockmech_compress', 'ktb_hb_rockmech_compress',
+                                                 'odp_504b_leg137_borehole_fluids',
+                                                 'iodp_u1324_pore_pressure',
+                                                 'odp_1027c_cork_temperature')),
+            "SHIP v0.400.0 (TWENTYWELLS_ARC): TWENTY+ real-data entries across TWELVE+ regions and THIRTEEN+ kinds - the arc closed the geomechanics pair live (strength vs overburden), brought the ocean's KTB (504B), delivered the catalogue's last missing quantity (measured downhole pressure - and every baselined station was THE FIND), and ended on the real permanent downhole observatory (the CORK): the instrument class this package simulates, as recorded history")
+assert_that(True,
+            "TWENTYWELLS_ARC STANDING RULE: the physical-quantity ledger is CLOSED - temperature, trajectory, density, strength, rates, core, fluids, and pressure all present as real catalogued data with baselines travelling beside measurements wherever the source provides them; and the PANGAEA textfile family (self-citing headers: citation, license, coordinates, methods IN the file) is the preferred source route for future entries")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

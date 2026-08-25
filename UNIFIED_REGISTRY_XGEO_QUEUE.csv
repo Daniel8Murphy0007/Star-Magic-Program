@@ -1726,3 +1726,4 @@ TWOSTREAM_ARC,n/a,n/a,NOT_APPLICABLE,application-module architecture single-geom
 CONNECTIVITY_ARC,n/a,n/a,NOT_APPLICABLE,application connectivity + real-data catalogue single-geometry,v0.397.0
 CATALOGUE_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.398.0
 DEEPDATA_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.399.0
+TWENTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.400.0

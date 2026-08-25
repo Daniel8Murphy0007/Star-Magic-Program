@@ -318,3 +318,6 @@ THE CATALOGUE SHIP: downhole v1.14-v1.20 — real-well catalogue 3→10 entries 
 
 ## v0.399.0 — 2026-08-25
 THE DEEP DATA SHIP: downhole v1.21-v1.25 — catalogue 10→15 entries / 9 kinds (Volve daily production = first time-indexed real field data with real fault phenomenology; KTB suite: hot temperature 170-185 °C, 1988 twin-sensor log, verticality null-control trajectory, COMPLETE BHGM density with live overburden integral ~226 MPa). KTB-HB = first closed-stream-describable well (T + trajectory + density). Gate 5,870/0. 23-file pass verified.
+
+## v0.400.0 — 2026-08-25
+THE TWENTY WELLS SHIP: downhole v1.26-v1.30 — catalogue 15→20 entries / 12 regions / 13 kinds; quantity ledger CLOSED (strength pair counted vs overburden live; 504B ocean-crust fluids; U1324 measured pressure with all-stations overpressure = THE FIND in nature; 1027C CORK observatory with +42.6 °C disturbed→equilibrium recovery). PANGAEA self-citing source family proven. Gate 5,882/0. 23-file pass verified.

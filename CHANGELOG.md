@@ -7,6 +7,42 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.400.0 — 2026-08-25 — THE TWENTY WELLS SHIP
+
+Milestone: the real-data catalogue reaches **TWENTY entries / TWELVE
+regions / THIRTEEN kinds**, and the physical-quantity ledger CLOSES.
+`uqff_downhole_simulator` v1.26.0–v1.30.0:
+
+- **v1.26.0 — KTB Pilot Hole rock mechanics** (COMPLETE, 113 lab samples
+  190–3,832 m): first LABORATORY ROCK STRENGTH; the geomechanics pair
+  closes LIVE — 59 of 113 samples weaker than the overburden at their own
+  depth (entry-15 measured density); cell-level refusal for 9
+  rendering-ambiguous cells (`read_ktb_table`, typed columns).
+- **v1.27.0 — KTB Main Hole strength table** (COMPLETE, 21 deep samples):
+  the pair completes — HB amphibolites 199 MPa vs VB 77 MPa, yet 5 of 21
+  fall below overburden at 5.5–6.2 km: depth wins, counted live.
+- **v1.28.0 — ODP Hole 504B borehole fluids** (PANGAEA.805957, COMPLETE):
+  the deepest hole in OCEANIC crust — region TEN, first sub-seafloor entry;
+  seawater→basalt mixing gradient computed live (corr −0.81/+0.80, Sr
+  isotopes sliding seawater→basaltic); the PANGAEA self-citing textfile
+  route proven (`read_pangaea_txt`).
+- **v1.29.0 — IODP U1324 measured pore pressure** (PANGAEA.725472,
+  COMPLETE; Gulf of Mexico, region ELEVEN): the LAST missing quantity —
+  measured downhole pressure with in-file hydrostatic + overburden
+  baselines; THE FIND in nature: all 12 baselined stations overpressured
+  (max +2.07 MPa, λ* = 0.385 at 608 m); T2P tip/shaft = second real
+  dual-sensor instrument.
+- **v1.30.0 — ODP 1027C CORK observatory** (PANGAEA.722627, COMPLETE;
+  Juan de Fuca, region TWELVE): the real PERMANENT DOWNHOLE GAUGE —
+  disturbed-vs-equilibrium measured on both sides (+42.6 °C sealed
+  recovery), ~104 °C/km gradient collapsing to an isothermal hydrothermal
+  basement (0.1 °C spread), service history (logger replacement) in the
+  file's own comment block.
+
+Gate 5,870 → 5,882, 0 failures. 23-file pass.
+
+---
+
 ## v0.399.0 — 2026-08-25 — THE DEEP DATA SHIP
 
 `uqff_downhole_simulator` v1.21.0–v1.25.0 — the catalogue grows from ten
