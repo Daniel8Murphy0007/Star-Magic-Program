@@ -149,3 +149,4 @@ census_artifact_family,p2250_p2253,FAMILY_RECORD,four live-loaded registry artif
 census_series_family,p2250_p2255,FAMILY_RECORD,six live-loaded artifacts complete (PREDICTIONS 48 / PARADOX 1338 / RESIDUALS live / IDENTITIES 53 / ANCHORS 33 / OPEN_ITEMS 22) - all in data-files with multi-location loading,v0.393.0
 downhole_module_family,p2256,FAMILY_RECORD,first industry-application module (physics/engine/demo/Qt6 + sample profile); comparison mode = the P2250 quartz bench-test simulation side,v0.394.0
 catalogue_family,p2257,FAMILY_RECORD,ten real-data catalogue entries share one provenance-mandatory loading pattern (CatalogEntry + sidecar); kinds dispatch stream()/survey() honestly,v0.398.0
+deepdata_family,p2257,FAMILY_RECORD,four KTB column layouts (4-col temp / 6-col twin-sensor / 2-col TVD / 5-col BHGM) on ONE dynamic column-block parser; production reader namespaces per-well channels,v0.399.0

@@ -1,29 +1,27 @@
-v0.398.0 - THE CATALOGUE SHIP: ten real wells, five kinds of real data
+v0.399.0 - THE DEEP DATA SHIP: the live stream's shape and the deepest data on Earth
 
-Downhole v1.14.0-v1.20.0: the real-well profile catalogue grows 3 -> 10
-entries, one well at a time on Daniel's standing order, every value
-verbatim, every entry provenance-sidecar'd, every addition gate-pinned:
+Downhole v1.21.0-v1.25.0: catalogue 10 -> 15 entries / 9 kinds.
 
-- v1.14 UNIVERSITY 6-17 NO.1 (Reagan Co., TEXAS; Halliburton 1997):
-  LAS 1.2 dialect; first imperial-depth well; real BHT 141 F @ 9,097 ft.
-- v1.15 COLLINGWOOD 1-28 (Stanton Co., KANSAS; KGS): first COMPLETE file;
-  27-curve wrapped shape; third real BHT (125 F) with the honest
-  no-TD-anchor fallback exercised.
-- v1.16 GISP2 (Greenland) - THE TEMPERATURE-CURVE PRIZE: first continuous
-  MEASURED temperature profile (598 stations to bedrock); the converter's
-  MEASURED_CURVES top tier real for the first time - tier ladder closed.
-- v1.17 AGASSIZ77 (Canadian Arctic, 1977): second complete measured curve.
-- v1.18 L07-01 (Dutch North Sea, NLOG): first DESCENDING-index log.
-- v1.19 L06-06 SURVEY (NLOG): FIRST REAL WELL TRAJECTORY - 200 measured
-  stations driving MD->TVD physics on real data; kind discipline
-  (survey refuses stream()).
-- v1.20 VOLVE 15/9-19 A CORE ANALYSIS (Equinor): first LABORATORY GROUND
-  TRUTH - 87 core-plug samples incl. the 20,800 mD streak (x138,000
-  permeability span); lab interleave preserved; units disclosed as
-  interpretive-not-in-file.
+- v1.21 VOLVE F-12/F-14 DAILY PRODUCTION: first TIME-indexed real field
+  data - 166 records from first oil, with REAL sensor-fault phenomenology
+  (9-day stuck run, dropout to 0.0 bar, negative volume). Caught the
+  v0.398.0 ship pin's frozen ==10 count (counts-use->= enforced).
+- v1.22 KTB MAIN HOLE TEMPERATURE (HB-246): first HOT data - 170-185 degC
+  at 7.7-8.0 km in the deepest research borehole; DISTURBED-log honesty
+  pinned (22.75 h shut-in from the in-file header). Region NINE.
+- v1.23 KTB PILOT TWIN-SENSOR (VB-251, 1988): two sensors 1,140 mm apart,
+  in-file accuracy spec; trailing sensor cooler at EVERY row (mean
+  0.87 degC) - the twin-leg comparison in 1988 hardware.
+- v1.24 KTB-HB TRAJECTORY (0-2,803 m at 1 m): verticality NULL CONTROL,
+  |TVD-MD| <= 0.35 m over 2.8 km; datum offset preserved verbatim.
+- v1.25 KTB-HB BHGM DENSITY (COMPLETE, 197 stations 0-8,400 m): first real
+  density profile; transcribed mean = in-file 2.752 g/cm3 average; LIVE
+  overburden integral in the gate: ~226 MPa ~ 32,750 psi at TD.
 
-Four port upgrades driven by real files: wrapped-LAS parsing, LAS 1.x
-branch, ~P BHT/TD meta anchors, descending index.
+Milestone: KTB-HB = temperature + trajectory + density - the first well the
+closed stream can describe entirely from catalogued real data.
 
-Catalogue: TEN entries / EIGHT regions / FIVE kinds.
-Gate 5,835 -> 5,858, 0 failures. 23-file charter pass verified.
+Port upgrades: read_production_csv; read_ktb_dat with DYNAMIC column-block
+parsing (four KTB layouts, one parser); survey() from ktb_dat TVD.
+
+Gate 5,858 -> 5,870, 0 failures. 23-file charter pass verified.

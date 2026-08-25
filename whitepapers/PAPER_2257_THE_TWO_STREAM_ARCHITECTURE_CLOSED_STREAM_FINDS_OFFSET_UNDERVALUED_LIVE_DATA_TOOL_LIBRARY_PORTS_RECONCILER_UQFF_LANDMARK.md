@@ -482,3 +482,174 @@ Catalogue standing: TEN entries / EIGHT regions / FIVE KINDS (log excerpts x4,
 complete logs x1, measured temperature curves x2, deviation survey x1, core
 analysis x1) / THREE real BHTs / TWO measured curves / ONE real trajectory / ONE
 lab dataset. Package v1.20.0; gate 5,854 -> 5,856.
+
+---
+
+## APPENDED 2026-08-25 (12) — v1.21.0: CATALOGUE ENTRY 11 — VOLVE DAILY PRODUCTION — THE LIVE STREAM'S NATIVE SHAPE ENTERS THE CATALOGUE AS REAL DATA
+
+**15/9-F-12 H + 15/9-F-14 H daily production** (Equinor Volve open data via public
+redistribution; processing DISCLOSED - original 24 columns verbatim, 9
+redistributor-derived columns appended and labeled): the catalogue's first
+REAL_PRODUCTION_TIME_SERIES - 166 daily records from FIRST OIL 2008-02-12 through
+2008-07-21, wells interleaved and calendar-gapped exactly as the source records them.
+
+Why this entry closes a structural gap: entries 1-10 are all DEPTH-indexed (logs,
+temperature profiles, a trajectory, core). The LIVE STREAM side of this paper's
+architecture - telemetry, historian exports, the follower, the reconciler - is
+TIME-indexed. Entry 11 is the first real-data instance of that shape: daily per-well
+downhole/wellhead P&T plus rates, ingested by the new read_production_csv into a
+time-indexed LiveStream (86,400 s cadence, per-well namespaced channels, NaN where
+a well has no record).
+
+THE FIND inside the find: the excerpt carries REAL instances of the fault classes
+the v1.3.0 telemetry layer injects synthetically - a genuine 9-day STUCK-SENSOR run
+(AVG_DOWNHOLE_PRESSURE frozen at 264.08789 bar, 2008-05-11 -> 05-19), a wellhead
+dropout (AVG_WHP_P = 0.0, 2008-06-03), a negative water volume (-14.19 Sm3), water
+spikes (8,019.72 Sm3), and blank annulus cells on early F-14 records. The QC
+pipeline's synthetic test bench now has a real counterpart in the repo.
+
+Honesty structure: redistribution processing disclosed column-by-column; units NOT
+in the header, carried as INTERPRETIVE per the redistribution's data dictionary;
+the trailing partial record at the fetch-cap boundary DROPPED, not guessed; entry
+ships with the ship-guard lesson too - the v0.398.0 ship pin had frozen the
+catalogue at == 10 entries, violating the counts-use->= standing rule, and entry 11
+caught it live (pin relaxed to >=).
+
+Catalogue standing: ELEVEN entries / EIGHT regions / SIX KINDS (log excerpts x4,
+complete logs x1, measured temperature curves x2, deviation survey x1, core
+analysis x1, production time series x1). Volve now contributes THREE kinds from one
+field (log + core + production) - the first field with enough in-repo real data to
+exercise closed-stream description, lab calibration, and live-shape reconciliation
+together. Package v1.21.0; gate 5,858 -> 5,860.
+
+---
+
+## APPENDED 2026-08-25 (13) — v1.22.0: CATALOGUE ENTRY 12 — KTB MAIN HOLE — THE HOT REGIME ARRIVES FROM THE DEEPEST RESEARCH BOREHOLE ON EARTH
+
+**KTB-Oberpfalz HB, temperature log HB-246** (German Continental Deep Drilling
+Program; fetched from the ICDP legacy KTB Information System per-log pages - the
+text-accessible route where the GFZ 2021 republication is ZIP-bound; canonical
+citation doi:10.5880/GFZ.KTB.BM.temperature): 1,589 verbatim rows, 7,743 -> 7,985 m
+at half-foot sampling, 169.67 -> 183.58 degC with an in-capture maximum of 185.53
+degC. Region NINE (Germany). The measured-temperature family now spans -32 degC
+(GISP2 glacial memory) to +185 degC (KTB crystalline rock) - and the hot end sits
+exactly in the HPHT regime the simulator's gauge physics models (177 degC-class
+tools, 150 degC stress knees).
+
+The honesty structure IS the find this time: the log's own header carries Time
+Circulation Stopped (09:00 01/01/94) and Time Logger At Bottom (07:45 02/01/94) -
+a ~22.75 h shut-in - and the GFZ data report states all KTB single temperature
+logs are drilling-disturbed. So the entry is carried as a MUD-TEMPERATURE log, not
+equilibrium; the reader parses the disturbance-relevant header fields into stream
+meta and the gate PINS them. A future closed-stream comparison against this log
+must model the disturbed state or disclose the mismatch - the two-stream
+discipline applied to a 30-year-old measurement.
+
+Also recorded: the fetch-route forensics (GDR/OEDI = blocked binary; GFZ datapub =
+ZIP; the ICDP legacy Apache tree = per-log text files, found via directory
+walking) - the connectivity ladder's offline-ingest tier exercised at its
+adversarial edge. New machinery: read_ktb_dat + .dat dialect in the loader.
+
+Catalogue standing: TWELVE entries / NINE regions / SEVEN kind-strings (log
+excerpts x4, complete log x1, ice temperature curves x2, HOT temperature excerpt
+x1, real trajectory x1, core analysis x1, production time series x1). Package
+v1.22.0; gate 5,860 -> 5,862.
+
+---
+
+## APPENDED 2026-08-25 (14) — v1.23.0: CATALOGUE ENTRY 13 — THE TWIN-LEG COMPARISON EXISTED IN 1988 HARDWARE
+
+**KTB Pilot Hole (VB1A), temperature log VB-251** (07 Nov 1988, ICDP legacy KTB
+Information System): 1,082 verbatim six-column rows, 3,268 -> 3,433 m at 95-101
+degC - and the find is the INSTRUMENT: a twin-sensor temperature sonde, two
+calibrated sensors 1,140 mm apart, carrying its own accuracy specification in the
+file header (absolute 0.05 degC, relative 0.01 degC - a real, citable instrument
+spec of exactly the kind the v1.5.0 gauge-spec layer demands).
+
+The physics of the pair is the thesis of this whole program in miniature: the
+trailing sensor passes through mud the leading sensor just disturbed, and reads
+COOLER at every one of 1,082 rows (mean offset 0.87 degC, all-positive,
+gate-pinned). Two co-located channels, one physical cause, a measurable
+systematic offset between them - the twin-leg comparison the simulator runs
+synthetically (UQFF leg vs conventional leg) was being run in hardware in 1988,
+and its residual is in the record.
+
+Real artifacts, pinned verbatim: a 69-row sensor-settling FROZEN run at log start
+(the frozen-value fault class arising from thermal physics, not electronics - the
+QC pipeline's stuck-detector would flag it, and would be wrong about the cause: a
+classification lesson for the reconciler) and the head-tension collapse 279 -> 111
+lbf at the 3,425 m stand-up the header itself announces. Refusal discipline: the
+header's TLAB field is empty in the source and stays absent from meta.
+
+Port upgrade #6 driven by real data: read_ktb_dat now parses the column-definition
+block DYNAMICALLY (names + units from the file), verified against both the
+6-column VB log and the 4-column HB log. Catalogue standing: THIRTEEN entries /
+NINE regions; KTB is the first complex with two catalogued boreholes (Main +
+Pilot). Package v1.23.0; gate 5,862 -> 5,864.
+
+---
+
+## APPENDED 2026-08-25 (15) — v1.24.0: CATALOGUE ENTRY 14 — THE STRAIGHTEST DEEP HOLE AS A NULL CONTROL
+
+**KTB Main Hole TVD file (0-9,080 m; first 2,804 rows at exact 1 m sampling)**:
+the second real trajectory in the catalogue, chosen for being the OPPOSITE of the
+first. L06-06 is a real S-shaped deviated well that bends the engine's pressures;
+KTB-HB's vertical-drilling-system section holds |TVD - MD| <= 0.35 m over 2.8 km -
+the deepest research borehole on Earth is, in this section, among the straightest
+ever drilled. A deviation survey whose correct physical effect is almost exactly
+NOTHING is a null control: if the closed stream's MD->TVD machinery produces a
+material pressure shift on this data, the machinery is wrong.
+
+Honesty items, pinned: the source's ~0.152 m datum offset at MD 0 (TVD starts at
+0.15239, and TVD exceeds MD in the top ~1,400 m) is PRESERVED, not corrected -
+the naive TVD<=MD invariant fails on this real file for a documented reason, which
+is exactly the kind of lesson synthetic data never teaches. And a transcription-
+method disclosure: the 2,804 highly regular rows were reproduced by run-faithful
+transcription (every run boundary and all 32 exceptional rows read directly from
+the capture, hard-coded, then structurally verified: row count, exact MD sequence,
+TVD monotonicity, drift envelope, 16 spot rows) - method stated in provenance,
+source URL carried for independent byte-level re-verification.
+
+Milestone: KTB-HB becomes the FIRST WELL with both temperature (entry 12) and
+trajectory (entry 14) in the catalogue - the closed stream can now describe one
+real well's geometry and thermal state entirely from catalogued real data. Port
+upgrades #7 and #8: survey() accepts ktb_dat TVD files; the KTB column-block
+parser's format-code match widened (F -> F\d*) - three KTB dialects (4-column
+temp, 6-column twin-sensor, 2-column TVD) on one parser.
+
+Catalogue standing: FOURTEEN entries / NINE regions / EIGHT kind-strings / TWO
+real trajectories. Package v1.24.0; gate 5,864 -> 5,866.
+
+---
+
+## APPENDED 2026-08-25 (16) — v1.25.0: CATALOGUE ENTRY 15 — REAL DENSITY, REAL OVERBURDEN: THE PRESSURE SIDE GETS ITS INGREDIENT
+
+**KTB-HB borehole gravimetry, 0-8,400 m, COMPLETE file** (EDCON tool, KTB deep
+crustal lab 1996, Univ. Bochum reduction): 197 stations of in-situ apparent
+density - the crust weighing itself, 2.55-2.95 g/cm3 over 8.4 km, with every
+reduction constant carried in the header (IGSN71 tie, IGF 1967, free-air
+gradient, reduction density 2.742).
+
+Two closures in one entry. FIRST, the transcription cross-check nobody had to
+invent: the file states its own average well density (2.752 g/cm3), and the mean
+of the 196 transcribed rock stations reproduces it to the millidigit - the source
+document audits the catalogue copy. SECOND, the pressure side: the catalogue had
+temperature, geometry, rates, core, but nothing to build PRESSURE from. Now the
+gate integrates rho*g*dz from measured density over measured TVD live on every
+run: overburden at TD = ~226 MPa = ~32,750 psi at 8,364 m - real crustal
+overburden landing exactly in the simulator's 30,000-psi-class HPHT regime.
+
+Honesty structure, pinned: surface station RHO = 0.000 is the gravity reference
+tie, pinned as NOT-a-rock-density (an integral that used it naively would be
+wrong - the pin handles it explicitly and discloses the handling); the -1.7 mGal
+discontinuity at the 5,990 -> 6,000 m run boundary is the header's own tool-size
+change, preserved as real survey structure; GRAV is not monotonic because real
+surveys re-occupy tie stations. And the deep TVD divergence (MD 8,400 -> TVD
+8,364) records the HB's deep deviation - the region entry 14's capture could not
+reach, so the two trajectory sources now bracket the hole.
+
+Milestone: KTB-HB carries TEMPERATURE (entry 12) + TRAJECTORY (entry 14) +
+DENSITY (entry 15) - the first well the closed stream can describe (thermal
+state, geometry, overburden) entirely from catalogued real data. Catalogue
+standing: FIFTEEN entries / NINE regions / NINE kind-strings. Package v1.25.0;
+gate 5,866 -> 5,868.

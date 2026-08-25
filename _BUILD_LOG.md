@@ -315,3 +315,6 @@ THE CONNECTIVITY SHIP: PAPER_2257 landmark+dispatch; downhole v1.10-v1.13 (file-
 
 ## v0.398.0 — 2026-08-25
 THE CATALOGUE SHIP: downhole v1.14-v1.20 — real-well catalogue 3→10 entries / 8 regions / 5 kinds (TX LAS 1.2 + BHT; KS complete file; GISP2 + Agassiz77 MEASURED temperature curves — converter tier ladder closed on real data; NL descending log; L06-06 200-station real trajectory; Volve core 20,800 mD lab ground truth). Four port upgrades driven by real files. Gate 5,858/0. 23-file pass verified.
+
+## v0.399.0 — 2026-08-25
+THE DEEP DATA SHIP: downhole v1.21-v1.25 — catalogue 10→15 entries / 9 kinds (Volve daily production = first time-indexed real field data with real fault phenomenology; KTB suite: hot temperature 170-185 °C, 1988 twin-sensor log, verticality null-control trajectory, COMPLETE BHGM density with live overburden integral ~226 MPa). KTB-HB = first closed-stream-describable well (T + trajectory + density). Gate 5,870/0. 23-file pass verified.

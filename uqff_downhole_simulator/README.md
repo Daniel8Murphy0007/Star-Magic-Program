@@ -521,3 +521,118 @@ provenance. Core data is the calibration endpoint a petrophysics layer would
 tie logs to — the closed stream's future ground truth, now in the repo.
 **Ten catalogue entries, five kinds** (log excerpts, complete logs, measured
 temperature curves, real trajectory, core analysis).
+
+## v1.21.0 extension: catalogue entry 11 — Volve daily production (Daniel-directed, 2026-08-25)
+
+**15/9-F-12 H + 15/9-F-14 H daily production history** (Equinor Volve open
+data via a public redistribution of the "Volve production data.xlsx" Daily
+Production Data sheet — processing DISCLOSED: original 24 columns preserved
+verbatim, 9 redistributor-derived columns appended and labeled as such):
+the catalogue's first **REAL_PRODUCTION_TIME_SERIES** — 166 daily records
+from FIRST OIL 2008-02-12 through 2008-07-21, the field's two main
+producers, source order and calendar gaps preserved exactly.
+
+Why it matters: every prior entry is depth-indexed; the live stream —
+telemetry, historian exports, the reconciler — is TIME-indexed. This entry
+is the live stream's native shape as real field data, and it carries REAL
+sensor-fault phenomenology: a genuine 9-day stuck downhole-pressure run
+(264.08789 bar frozen, 2008-05-11→05-19), a wellhead-pressure dropout to
+0.0 bar, a negative water volume, water-volume spikes, and blank annulus
+cells — the exact fault classes the v1.3.0 QC pipeline injects
+synthetically, now in the record for real. New machinery:
+`read_production_csv` (DATEPRD header → time-indexed LiveStream, elapsed
+seconds at 86,400 s cadence, per-well namespaced channels COL[well],
+blanks/absent dates → NaN; units interpretive per the provenance data
+dictionary, not claimed as in-file). **Eleven catalogue entries, six
+kinds.**
+
+## v1.22.0 extension: catalogue entry 12 — KTB Main Hole hot temperature log (Daniel-directed, 2026-08-25)
+
+**KTB-Oberpfalz HB, log HB-246** (German Continental Deep Drilling Program,
+ICDP legacy KTB Information System; canonical citation
+doi:10.5880/GFZ.KTB.BM.temperature): the catalogue's first **HOT temperature
+data** — 1,589 verbatim rows at 0.1524 m sampling, 7,743.14 → 7,985.15 m,
+**169.67 → 183.58 °C** (in-capture max 185.53 °C at 7,974.94 m) — real
+crystalline rock in exactly the HPHT regime the simulator models, from the
+deepest research borehole complex on Earth (Main Hole TD 9,101 m, ~265 °C).
+Germany is region NINE. Both prior measured temperature curves are ice
+boreholes; the MEASURED temperature family now spans −32 °C (GISP2) to
++185 °C (KTB) on real data.
+
+Honesty structure, pinned: this is a **MUD-temperature log**, run ~22.75 h
+after circulation stopped (the in-file header's TCS/TLAB times are parsed
+into stream meta and gate-pinned) — NOT an equilibrium profile; the KTB
+equilibrium set exists only inside a ZIP this environment cannot fetch, so
+the disturbed log is carried as what it is. Verbatim header preserved
+(PT1000 sensor, calibration GAIN/OFFS, tool string, datum). New machinery:
+`read_ktb_dat` ('!'-comment header + space-separated DEPT/TMP3/HTEN/MRES →
+depth-indexed LiveStream), .dat dialect added to the loader. **Twelve
+catalogue entries, nine regions.**
+
+## v1.23.0 extension: catalogue entry 13 — KTB Pilot Hole twin-sensor log (Daniel-directed, 2026-08-25)
+
+**KTB-Oberpfalz VB1A, log VB-251** (KTB Pilot Hole, 1988; ICDP legacy KTB
+Information System; canonical citation doi:10.5880/GFZ.KTB.BM.temperature):
+a **REAL TWIN-SENSOR instrument** — two calibrated temperature sensors
+1,140 mm apart on one sonde, with the in-file accuracy statement
+"absolute = 0.05 deg C; relative = 0.01 deg C" (a real cited instrument
+spec). 1,082 verbatim six-column rows (DEPT/TMP1/TMP2/GR/HTEN/MRES),
+3,268.22 → 3,432.96 m at 95–101 °C. The trailing sensor reads the
+just-disturbed mud cooler at EVERY row (mean offset 0.87 °C, all-positive,
+gate-pinned) — the simulator's twin-leg comparison, existing in 1988
+hardware.
+
+Real instrument artifacts preserved and pinned: a 69-row sensor-settling
+FROZEN run at log start (TMP1 = 95.374 repeated while the sensors
+equilibrate — the frozen-value fault class, caused by physics not
+electronics) and the head-tension collapse 279 → 111 lbf at the 3,425 m
+stand-up noted in the header. Honesty: the header's TLAB field carries no
+value in the source and stays ABSENT from stream meta — nothing invented.
+This file drove the `read_ktb_dat` upgrade to DYNAMIC column-block parsing
+(entry 12's 4-column log re-verified under the same parser). **Thirteen
+catalogue entries; KTB is the first complex with two catalogued boreholes.**
+
+## v1.24.0 extension: catalogue entry 14 — KTB Main Hole trajectory (Daniel-directed, 2026-08-25)
+
+**KTB-Oberpfalz HB TVD file, 0–9,080 m** (ICDP legacy KTB Information
+System; first 2,804 rows captured at exact 1 m sampling, 0 → 2,803 m): the
+catalogue's **second real well trajectory** — and the opposite extreme from
+the deviated L06-06. In the vertical-drilling-system section of the deepest
+research borehole on Earth, **|TVD − MD| stays within 0.35 m over 2.8 km**:
+a real NULL CONTROL for the engine's MD→TVD physics (a deviation survey
+whose correct effect is almost exactly nothing). The ~0.152 m datum offset
+at MD 0 present in the source is preserved verbatim, not corrected away.
+
+With entry 12 (hlog246 temperature) this makes **KTB-HB the first well with
+both temperature and trajectory in the catalogue** — the closed stream can
+describe this well from its own real data. Port upgrades: `survey()` now
+accepts ktb_dat TVD files, and the column-block parser's format-code match
+widened (`F` → `F\d*`) — three KTB dialects on one parser. Transcription
+method for the highly regular rows disclosed in provenance (run-faithful
+transcription, every boundary and all 32 exceptional rows read directly,
+structural verification against the capture; source URL for byte-level
+re-verification). **Fourteen catalogue entries.**
+
+## v1.25.0 extension: catalogue entry 15 — KTB-HB borehole gravimetry (Daniel-directed, 2026-08-25)
+
+**KTB Main Hole BHGM density profile** (EDCON borehole gravity meter, KTB
+deep crustal lab 1996, Univ. Bochum reduction; ICDP legacy KTB Information
+System; COMPLETE 9.1 KB file in one fetch): the catalogue's first **REAL
+DENSITY PROFILE** — 197 stations, 0 → 8,400 m MD (TVD 8,364 m), in-situ
+apparent density 2.55–2.95 g/cm³ with every reduction constant preserved
+in-header (IGSN71 absolute gravity, IGF 1967, free-air gradient, reduction
+density). Transcription self-check: the mean of the transcribed rock
+densities equals the header's own stated average (2.752 g/cm³) to the
+millidigit.
+
+Why it matters: this is the PRESSURE-side ingredient the catalogue lacked.
+The gate now computes **overburden at TD from measured density over
+measured TVD, live in the pin: ~226 MPa ≈ 32,750 psi** — real crustal
+overburden in exactly the simulator's 30,000-psi-class regime. Disclosures
+pinned: the surface station's RHO = 0.000 is the gravity reference tie
+(not rock); the −1.7 mGal discontinuity at the 5,990→6,000 m run boundary
+is the header's tool-size change, preserved as real survey structure; the
+deep TVD divergence (36 m at 8,400) complements entry 14's near-vertical
+section. **KTB-HB now carries temperature + trajectory + density — the
+closed stream can describe this well entirely from catalogued real data.
+Fifteen entries, nine kinds.**

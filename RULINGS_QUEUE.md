@@ -6564,3 +6564,6 @@ CONNECTIVITY_ARC (v0.397.0, 2026-08-24): ONE ruling executed - Daniel GO on the 
 
 ---
 CATALOGUE_ARC (v0.398.0, 2026-08-25): no new rulings required. Daniel's standing order ("continue to catalogue real wells, one at a time. grab all necessary data!!!!") executed across entries 4-10; every ambiguity resolved by DISCLOSURE (L06-06 survey units, Volve core units, ice-borehole hydrostatic pressure labeling) rather than assumption. Board otherwise unchanged (6 items).
+
+---
+DEEPDATA_ARC (v0.399.0, 2026-08-25): no new rulings required. Standing catalogue order executed across entries 11-15; ambiguities resolved by DISCLOSURE (Volve redistribution lineage column-by-column; KTB disturbed-log status with pinned shut-in times; empty TLAB left absent; datum offset and run-boundary discontinuities preserved; run-faithful transcription method stated with source URLs). One self-catch folded in: the v0.398.0 ship pin froze the catalogue at ==10, violating counts-use->=; relaxed, disclosed (PAPER_2257 app. 12), and canonized in the v0.399.0 ship pin. Board otherwise unchanged (6 items).

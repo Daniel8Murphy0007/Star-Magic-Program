@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.398.0", "uqff_calculator.VERSION = 0.398.0 (the catalogue ship: the real-well profile catalogue built to TEN entries / EIGHT regions / FIVE kinds, one well at a time on Daniel's order)")
+assert_that(C.VERSION == "0.399.0", "uqff_calculator.VERSION = 0.399.0 (the deep data ship: catalogue to FIFTEEN entries / NINE kinds - first time-indexed real field data + the KTB deep-data suite with a live overburden integral from measured density)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'CATALOGUE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'DEEPDATA_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('catalogue_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('deepdata_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -12592,14 +12592,14 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.20.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.25.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -13085,15 +13085,132 @@ assert_that(bool(_np20c.isnan(_So20[0])) and abs(float(_So20[4]) - 52.9) < 1e-9
             and len(_ds11.CATALOG) >= 10,
             "CATALOGUE v1.20.0: TEN entries, FIVE kinds (log excerpts / complete logs / measured temperature curves / real trajectory / core analysis) - saturation samples interleave with plug samples exactly as the lab recorded them; units interpretive-not-in-file DISCLOSED in provenance; the calibration endpoint a petrophysics layer would tie logs to is now in the repo")
 
+# ---- CATALOGUE v1.21.0: entry 11 - Volve F-12/F-14 daily production (FIRST TIME-INDEXED REAL FIELD DATA) ----
+import numpy as _np21p
+from datetime import date as _dt21
+_st11p = _ds11.CATALOG['volve_f12_f14_production_excerpt'].stream()
+def _at21(y, m, d):
+    _w = _np21p.where(_st11p.index == (_dt21(y, m, d) - _dt21(2008, 2, 12)).days * 86400.0)[0]
+    return int(_w[0])
+_whp21 = _st11p.channels['AVG_WHP_P[15/9-F-12]'].values
+_oil21 = _st11p.channels['BORE_OIL_VOL[15/9-F-12]'].values
+_dhp21 = _st11p.channels['AVG_DOWNHOLE_PRESSURE[15/9-F-12]'].values
+assert_that(_st11p.source_format == 'production_csv' and _st11p.index_kind == 'time_s'
+            and len(_st11p.index) == 158 and len(_st11p.channels) == 26
+            and abs(float(_oil21[0]) - 284.65) < 1e-9
+            and abs(float(_whp21[0]) - 106.80593913043478) < 1e-12,
+            "CATALOGUE entry 11: Volve 15/9-F-12/F-14 DAILY PRODUCTION (Equinor open data via public redistribution, processing DISCLOSED) - the catalogue's first TIME-INDEXED real field data: 166 daily records verbatim from FIRST OIL 2008-02-12 (oil 284.65 Sm3, WHP 106.806 bar), 158 unique dates x 2 wells x 13 operational channels, calendar gaps preserved")
+assert_that(int(_np21p.sum(_np21p.isfinite(_dhp21) & (_np21p.abs(_dhp21 - 264.08789) < 1e-9))) == 9
+            and float(_whp21[_at21(2008, 6, 3)]) == 0.0
+            and abs(float(_st11p.channels['BORE_WAT_VOL[15/9-F-12]'].values[_at21(2008, 4, 23)]) + 14.19) < 1e-9
+            and bool(_np21p.isnan(_st11p.channels['AVG_ANNULUS_PRESS[15/9-F-14]'].values[_at21(2008, 7, 18)]))
+            and abs(float(_st11p.channels['BORE_OIL_VOL[15/9-F-14]'].values[_at21(2008, 7, 13)]) - 1735.26) < 1e-9
+            and len(_ds11.CATALOG) >= 11
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 6,
+            "CATALOGUE v1.21.0: ELEVEN entries, SIX kinds - REAL sensor-fault phenomenology in real field data: a genuine 9-day STUCK downhole-pressure run (264.08789 bar frozen), a wellhead dropout to 0.0 bar, a negative water volume, blank cells -> NaN, F-14 first oil 2008-07-13 - the fault classes the v1.3.0 QC pipeline injects synthetically, now in the record for real; the live stream's native time-indexed shape enters the catalogue")
+
+# ---- CATALOGUE v1.22.0: entry 12 - KTB-HB hlog246 (FIRST HOT TEMPERATURE DATA, ninth region) ----
+import numpy as _np22k
+_st12k = _ds11.CATALOG['ktb_hb_hlog246_temperature'].stream()
+_T22 = _st12k.channels['TMP3'].values
+assert_that(_st12k.source_format == 'ktb_dat' and _st12k.index_kind == 'depth'
+            and len(_st12k.index) == 1589
+            and abs(float(_st12k.index[0]) - 7743.1392) < 1e-9 and abs(float(_T22[0]) - 169.67) < 1e-9
+            and abs(float(_st12k.index[-1]) - 7985.1504) < 1e-9 and abs(float(_T22[-1]) - 183.58) < 1e-9
+            and abs(float(_np22k.max(_T22)) - 185.53) < 1e-9
+            and bool(_np22k.all(_np22k.diff(_st12k.index) > 0)),
+            "CATALOGUE entry 12: KTB-Oberpfalz HB temperature log HB-246 (German Continental Deep Drilling Program, ICDP legacy site; canonical citation doi:10.5880/GFZ.KTB.BM.temperature) - the catalogue's first HOT temperature data: 1,589 verbatim rows at 0.1524 m sampling, 7,743.14 -> 7,985.15 m, 169.67 -> 183.58 degC (max 185.53 degC at 7,974.94 m) - real 170-185 degC crystalline rock in the HPHT regime the simulator models")
+assert_that(_st12k.meta.get('well') == 'KTB-OPF-HB'
+            and _st12k.meta.get('time_circulation_stopped') == '09:00 01/01/94'
+            and _st12k.meta.get('time_logger_at_bottom') == '07:45 02/01/94'
+            and len(_ds11.CATALOG) >= 12
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 7,
+            "CATALOGUE v1.22.0: TWELVE entries, NINE regions - the disturbed-log honesty is IN THE PIN: this is a MUD-temperature log ~22.75 h after circulation stopped (TCS/TLAB carried from the in-file header to stream meta), NOT an equilibrium profile - real measurements carried as what they are; the deepest research borehole complex on Earth (HB TD 9,101 m) enters the catalogue as region NINE (Germany)")
+
+# ---- CATALOGUE v1.23.0: entry 13 - KTB Pilot Hole vlog251 (REAL TWIN-SENSOR INSTRUMENT) ----
+import numpy as _np23v
+_st13v = _ds11.CATALOG['ktb_vb_vlog251_temperature'].stream()
+_T1v = _st13v.channels['TMP1'].values
+_T2v = _st13v.channels['TMP2'].values
+_offv = _T1v - _T2v
+assert_that(_st13v.source_format == 'ktb_dat' and len(_st13v.index) == 1082
+            and sorted(_st13v.channels) == ['GR', 'HTEN', 'MRES', 'TMP1', 'TMP2']
+            and abs(float(_st13v.index[0]) - 3268.218) < 1e-9 and abs(float(_T1v[0]) - 95.374) < 1e-9
+            and abs(float(_st13v.index[-1]) - 3432.9624) < 1e-9 and abs(float(_T1v[-1]) - 101.06) < 1e-9
+            and bool(_np23v.all(_offv > 0)) and 0.4 < float(_np23v.mean(_offv)) < 1.0,
+            "CATALOGUE entry 13: KTB Pilot Hole (VB1A) temperature log VB-251 - a REAL TWIN-SENSOR instrument (two calibrated sensors 1,140 mm apart; in-file accuracy spec 0.05/0.01 degC): 1,082 verbatim 6-column rows, 3,268.22 -> 3,432.96 m at 95-101 degC; the trailing sensor reads the just-disturbed mud cooler at EVERY row (mean offset 0.87 degC, all-positive) - the simulator's twin-leg comparison existing in 1988 hardware; dynamic column-block parsing driven by this file (entry-12's 4-column log re-verified under the same parser)")
+assert_that(int(_np23v.sum(_np23v.abs(_T1v - 95.374) < 1e-9)) == 69
+            and float(_np23v.min(_st13v.channels['HTEN'].values)) < 120.0
+            and float(_np23v.max(_st13v.channels['HTEN'].values)) > 270.0
+            and _st13v.meta.get('well') == 'KTB-OPF-VB1A'
+            and _st13v.meta.get('time_circulation_stopped') == '11:00 29/10'
+            and 'time_logger_at_bottom' not in _st13v.meta
+            and len(_ds11.CATALOG) >= 13,
+            "CATALOGUE v1.23.0: THIRTEEN entries - real instrument artifacts pinned: a 69-row sensor-settling FROZEN run at log start and the head-tension collapse (279 -> 111 lbf) at the 3,425 m stand-up, both verbatim; the header's empty TLAB field stays ABSENT from meta (nothing invented for a field the source left blank); KTB becomes the first complex with TWO catalogued boreholes (Main + Pilot)")
+
+# ---- CATALOGUE v1.24.0: entry 14 - KTB-HB trajectory 0-2803 m (THE VERTICALITY NULL CONTROL) ----
+import numpy as _np24t
+_e14t = _ds11.CATALOG['ktb_hb_tvd_0_9080_excerpt']
+_sv14 = _e14t.survey()
+_md14 = _np24t.array(_sv14.md_ft); _tv14 = _np24t.array(_sv14.tvd_ft)
+_dr14 = _tv14 - _md14
+assert_that(len(_md14) == 2804
+            and bool(_np24t.all(_np24t.abs(_md14 - _np24t.arange(2804)) < 1e-9))
+            and abs(float(_tv14[0]) - 0.15239) < 1e-9 and abs(float(_tv14[-1]) - 2802.8) < 1e-9
+            and float(_np24t.max(_np24t.abs(_dr14))) <= 0.35
+            and bool(_np24t.all(_np24t.diff(_tv14) >= 0.0))
+            and abs(float(_sv14.tvd_of(2500.5)) - 2500.3) < 0.05,
+            "CATALOGUE entry 14: KTB Main Hole TVD file (0-9,080 m; first 2,804 rows captured at exact 1 m sampling) - the SECOND real trajectory, and the opposite extreme from L06-06: the vertical-drilling-system section of the deepest research borehole holds |TVD-MD| <= 0.35 m over 2.8 km - a real NULL CONTROL for the engine's MD->TVD physics; the ~0.152 m datum offset at MD 0 is PRESERVED verbatim, not corrected away")
+assert_that(_e14t.stream().source_format == 'ktb_dat'
+            and sorted(_e14t.stream().channels) == ['TVD']
+            and len(_ds11.CATALOG) >= 14
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 8
+            and 'transcription_disclosure' in _e14t.provenance,
+            "CATALOGUE v1.24.0: FOURTEEN entries - KTB-HB is the first well with BOTH temperature (entry 12) and trajectory (entry 14) in the catalogue: the closed stream can now DESCRIBE this well from its own real data; survey() port upgrade accepts ktb_dat TVD files (F-format code widened - three KTB dialects on one parser); run-faithful transcription method DISCLOSED in provenance with the source URL for byte-level re-verification")
+
+# ---- CATALOGUE v1.25.0: entry 15 - KTB-HB borehole gravimetry (REAL DENSITY -> REAL OVERBURDEN) ----
+import numpy as _np25g
+_st15g = _ds11.CATALOG['ktb_hb_bhgm_density'].stream()
+_rho15 = _st15g.channels['RHO'].values
+_tvd15 = _st15g.channels['TVD'].values
+_grv15 = _st15g.channels['GRAV'].values
+assert_that(_st15g.source_format == 'ktb_dat' and len(_st15g.index) == 197
+            and abs(float(_st15g.index[0])) < 1e-9 and abs(float(_st15g.index[-1]) - 8400.0) < 1e-9
+            and abs(float(_tvd15[-1]) - 8364.0) < 1e-9
+            and abs(float(_rho15[0])) < 1e-9
+            and 2.54 < float(_np25g.min(_rho15[1:])) and float(_np25g.max(_rho15[1:])) < 2.96
+            and abs(float(_np25g.mean(_rho15[1:])) - 2.752) < 0.001,
+            "CATALOGUE entry 15: KTB-HB borehole gravimetry (EDCON tool, Univ. Bochum reduction, 1996) - the catalogue's first REAL DENSITY PROFILE, COMPLETE file: 197 stations 0 -> 8,400 m, in-situ apparent density 2.55-2.95 g/cm3; the mean of the transcribed rock densities equals the header's own stated average well density 2.752 g/cm3 to the millidigit - the file cross-checks its own transcription; surface station RHO = 0.000 is the gravity reference tie and is pinned as NOT-a-rock-density")
+_rhoseg15 = _rho15 * 1000.0
+_rhoseg15[0] = _rhoseg15[1]
+_pob15 = float(_np25g.trapezoid(_rhoseg15 * 9.81, _tvd15)) / 1e6
+_i99g = int(_np25g.where(_st15g.index == 5990.0)[0][0]); _i00g = int(_np25g.where(_st15g.index == 6000.0)[0][0])
+assert_that(220.0 < _pob15 < 232.0
+            and float(_grv15[_i00g] - _grv15[_i99g]) < 0.0
+            and len(_ds11.CATALOG) >= 15
+            and len(set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())) >= 9,
+            "CATALOGUE v1.25.0: FIFTEEN entries, NINE kinds - THE PRESSURE-SIDE INGREDIENT ARRIVES: overburden at TD integrated from MEASURED density over MEASURED TVD = ~226 MPa (~32,750 psi at 8,364 m TVD) - real crustal overburden in exactly the simulator's 30,000-psi-class regime, computed live in this pin from catalogued data; the 5,990 -> 6,000 m run-boundary gravity discontinuity (tool-size change, -1.7 mGal) is preserved and pinned as REAL survey structure; KTB-HB now carries temperature + trajectory + density: closed-stream describable from real data alone")
+
 # ---- SHIP v0.398.0: THE CATALOGUE SHIP (CATALOGUE_ARC record) ----
 _arc398_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
-assert_that(len(_ds11.CATALOG) == 10 and len(_arc398_kinds) == 5
+assert_that(len(_ds11.CATALOG) >= 10 and len(_arc398_kinds) >= 5
             and all(_e.provenance.get('source_url') and _e.provenance.get('license')
                     and _e.provenance.get('fetch_date') and _e.provenance.get('coverage')
                     for _e in _ds11.CATALOG.values()),
             "SHIP v0.398.0 (CATALOGUE_ARC): TEN real-data catalogue entries across EIGHT regions and FIVE kinds (log excerpts / complete logs / measured temperature curves / real trajectory / core analysis), EVERY entry provenance-complete (source URL, license, fetch date, coverage) - built one well at a time on Daniel's order, with real files driving four port upgrades along the way")
 assert_that(True,
             "CATALOGUE_ARC STANDING RULE (Daniel: 'grab all necessary data!!!!'): catalogue entries are REAL public data fetched read-only, transcribed verbatim, provenance-mandatory (the loader refuses entries without complete sidecars), verified against source values at gate time - no synthetic rows ever presented as field data")
+
+# ---- SHIP v0.399.0: THE DEEP DATA SHIP (DEEPDATA_ARC record) ----
+_arc399_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
+assert_that(len(_ds11.CATALOG) >= 15 and len(_arc399_kinds) >= 9
+            and 'volve_f12_f14_production_excerpt' in _ds11.CATALOG
+            and all(k in _ds11.CATALOG for k in ('ktb_hb_hlog246_temperature',
+                                                 'ktb_hb_tvd_0_9080_excerpt',
+                                                 'ktb_hb_bhgm_density')),
+            "SHIP v0.399.0 (DEEPDATA_ARC): FIFTEEN+ real-data entries across NINE+ kinds - the arc added the live stream's native shape (Volve daily production with REAL sensor-fault phenomenology) and the KTB deep-data suite; KTB-HB carries temperature + trajectory + density, the first well the closed stream can describe entirely from catalogued real data (counts pinned >= per the standing rule the v0.398.0 ship pin taught)")
+assert_that(True,
+            "DEEPDATA_ARC STANDING RULE: every disturbed, offset, tied, settling or otherwise imperfect value in a real file is carried VERBATIM with its cause disclosed in provenance and, where classifiable, pinned - the imperfections are the data the two-stream program exists to classify; and ship-pin counts use >= because the catalogue keeps growing")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

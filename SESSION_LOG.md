@@ -11938,3 +11938,42 @@ badges; CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11
 CATALOGUE_ARC trail rows (incl. DUPLICATES family record). Gate 5,856 →
 5,858, 0 failures. Package v1.20.0 (catalog/ 20 files, measured). Awaiting
 Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 271 — 2026-08-25 — v0.399.0 THE DEEP DATA SHIP (downhole v1.21–v1.25, entries 11–15)
+
+Five entries in five package versions, each fetched read-only, transcribed
+verbatim, provenance-sidecar'd, gate-pinned, live-verified:
+
+1. v1.21.0 Volve F-12/F-14 daily production: first TIME-indexed real field
+   data (166 records from first oil 2008-02-12; REAL stuck-sensor run,
+   dropout to 0.0 bar, negative volume, blanks); read_production_csv with
+   per-well namespaced channels; caught the v0.398.0 ship pin's frozen
+   ==10 count live (counts-use->= rule enforced, disclosed in paper app. 12).
+2. v1.22.0 KTB-HB hlog246: first HOT temperature (169.67→183.58 °C at
+   7.7-8.0 km, max 185.53); DISTURBED-log honesty pinned (TCS/TLAB ~22.75 h);
+   region NINE; read_ktb_dat; fetch-route forensics recorded (GDR/OEDI
+   blocked binaries; GFZ ZIP; ICDP legacy Apache tree = the text route).
+3. v1.23.0 KTB-VB vlog251: REAL twin-sensor instrument (1,140 mm spacing,
+   in-file 0.05/0.01 °C accuracy spec); mean offset 0.87 °C all-positive
+   over 1,082 rows; 69-row settling freeze + HTEN collapse pinned; empty
+   TLAB stays absent; dynamic column-block parser (entry-12 regression ok).
+4. v1.24.0 KTB-HB TVD 0-2,803 m at exact 1 m: verticality NULL CONTROL
+   (|TVD-MD| <= 0.35 m / 2.8 km); 0.152 m datum offset preserved;
+   run-faithful transcription method disclosed + structurally verified;
+   survey() accepts ktb_dat; F-code regex widened.
+5. v1.25.0 KTB-HB BHGM: COMPLETE 197-station density profile 0-8,400 m;
+   transcribed mean = in-file 2.752 g/cm3 average (self-auditing source);
+   LIVE overburden integral in the gate: ~226 MPa ~ 32,750 psi at TVD
+   8,364 m; surface-tie RHO=0 pinned as not-a-rock-density; -1.7 mGal
+   run-boundary discontinuity preserved. Provenance 189→197 corrected
+   (measured replaces remembered) before wiring.
+
+Milestone: KTB-HB = temperature + trajectory + density — first well the
+closed stream can describe entirely from catalogued real data.
+
+Ship prep: pins at 0.399.0 (desc 488 chars, measured counts); SHIP GUARD
+marker CATALOGUE_ARC→DEEPDATA_ARC (+ GAPS id deepdata_arc_rule7); +2 ship
+pins (counts >=); README release/campaign/shipped rewrite + badges;
+CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11 DEEPDATA_ARC
+trail rows. Gate 5,868 → 5,870, 0 failures. Package v1.25.0 (catalog/ 30
+files, measured). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).

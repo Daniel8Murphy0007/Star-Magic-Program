@@ -159,15 +159,130 @@ def read_core_csv(path) -> LiveStream:
                       meta={'format': 'conventional core analysis (units per provenance)'})
 
 
+def read_production_csv(path) -> LiveStream:
+    """Ingest a daily production-history CSV (Volve-style header:
+    DATEPRD,WELL_BORE_CODE,...) as a TIME-indexed LiveStream - the
+    catalogue's first time-indexed kind (v1.21.0, driven by the real
+    15/9-F-12/F-14 daily records). Index = elapsed seconds from the first
+    date (86400 s cadence); channels are the per-well numeric operational
+    columns, namespaced COL[well]; blanks and absent dates -> NaN. Units are
+    NOT in the header - carried per the provenance data dictionary."""
+    import csv as _csv
+    from datetime import date as _date
+    from .uqff_ports import StreamChannel
+    p = Path(path)
+    numeric = ('ON_STREAM_HRS', 'AVG_DOWNHOLE_PRESSURE', 'AVG_DOWNHOLE_TEMPERATURE',
+               'AVG_DP_TUBING', 'AVG_ANNULUS_PRESS', 'AVG_CHOKE_SIZE_P', 'AVG_WHP_P',
+               'AVG_WHT_P', 'DP_CHOKE_SIZE', 'BORE_OIL_VOL', 'BORE_GAS_VOL',
+               'BORE_WAT_VOL', 'BORE_WI_VOL')
+    units = {'ON_STREAM_HRS': 'h', 'AVG_DOWNHOLE_PRESSURE': 'bar',
+             'AVG_DOWNHOLE_TEMPERATURE': 'degC', 'AVG_DP_TUBING': 'bar',
+             'AVG_ANNULUS_PRESS': 'bar', 'AVG_CHOKE_SIZE_P': 'pct',
+             'AVG_WHP_P': 'bar', 'AVG_WHT_P': 'degC', 'DP_CHOKE_SIZE': 'bar',
+             'BORE_OIL_VOL': 'Sm3', 'BORE_GAS_VOL': 'Sm3', 'BORE_WAT_VOL': 'Sm3',
+             'BORE_WI_VOL': 'Sm3'}
+    rows = []
+    with p.open(newline='', encoding='utf-8') as f:
+        for row in _csv.DictReader(f):
+            rows.append(row)
+    if not rows:
+        raise ValueError(f"production CSV {p.name}: no records")
+    dates = sorted({r['DATEPRD'] for r in rows})
+    wells = []
+    for r in rows:
+        w = r['NPD_WELL_BORE_NAME']
+        if w not in wells:
+            wells.append(w)
+    d0 = _date.fromisoformat(dates[0])
+    idx = np.array([( _date.fromisoformat(d) - d0).days * 86400.0 for d in dates])
+    pos = {d: i for i, d in enumerate(dates)}
+    channels = {}
+    for w in wells:
+        grids = {c: np.full(len(dates), np.nan) for c in numeric}
+        for r in rows:
+            if r['NPD_WELL_BORE_NAME'] != w:
+                continue
+            i = pos[r['DATEPRD']]
+            for c in numeric:
+                v = (r.get(c) or '').strip()
+                if v:
+                    grids[c][i] = float(v)
+        for c in numeric:
+            channels[f"{c}[{w}]"] = StreamChannel(
+                name=f"{c}[{w}]", unit=units[c] + ' (per provenance dictionary)',
+                values=grids[c])
+    return LiveStream(name=p.stem, source_format='production_csv',
+                      index_kind='time_s', index=idx, channels=channels,
+                      meta={'format': 'daily production history (per-well, namespaced channels)',
+                            'start_date': dates[0], 'end_date': dates[-1],
+                            'wells': ';'.join(wells), 'cadence_s': '86400',
+                            'units_note': 'units interpretive per provenance data dictionary, not in-file'})
+
+
+def read_ktb_dat(path) -> LiveStream:
+    """Ingest a KTB Information System temperature-log file ('!'-comment
+    header + space-separated DEPT TMP3 HTEN MRES rows) as a depth-indexed
+    LiveStream - the catalogue's first HOT-regime temperature dialect
+    (v1.22.0, driven by the real KTB-HB hlog246). Header lines are carried
+    into meta (well name, log date, time-since-circulation fields - the
+    disturbed-log disclosure lives in the data itself)."""
+    import re as _re
+    p = Path(path)
+    hdr, rows, cols = [], [], []
+    col_re = _re.compile(r'^!\s+\d+\s+"(\w+)\s[^"]*"\s+F\d*\s+(\S+)')
+    with p.open(encoding='utf-8') as f:
+        for line in f:
+            line = line.rstrip('\n')
+            if not line.strip():
+                continue
+            if line.lstrip().startswith('!'):
+                hdr.append(line)
+                m = col_re.match(line.strip())
+                if m:
+                    cols.append((m.group(1), m.group(2)))
+                continue
+            parts = line.split()
+            if cols and len(parts) == len(cols):
+                try:
+                    rows.append([float(x) for x in parts])
+                except ValueError:
+                    continue
+    if not cols:
+        raise ValueError(f"KTB log {p.name}: no column-definition block in header")
+    if not rows:
+        raise ValueError(f"KTB log {p.name}: no data rows")
+    import numpy as _np
+    arr = _np.array(rows, dtype=float)
+    meta = {'format': 'KTB Information System temperature log (disturbed mud-temperature log, per provenance)'}
+    val_re = {'well': _re.compile(r'"WN\s+UNAL\s+.*?\s{3,}(\S[^"]*)"'),
+              'log_date': _re.compile(r'"DATE\s+UNAL\s+.*?\s{3,}(\S[^"]*)"'),
+              'time_logger_at_bottom': _re.compile(r'"TLAB\s+UNAL\s+Time Logger At Bottom\s{3,}(\S[^"]*)"'),
+              'time_circulation_stopped': _re.compile(r'"TCS\s+UNAL\s+Time Circulation Stopped\s{3,}(\S[^"]*)"')}
+    for h in hdr:
+        for key, rx in val_re.items():
+            m = rx.search(h)
+            if m and key not in meta:
+                meta[key] = m.group(1).strip()
+    from .uqff_ports import StreamChannel
+    return LiveStream(name=p.stem, source_format='ktb_dat',
+                      index_kind='depth', index=arr[:, 0],
+                      channels={n: StreamChannel(name=n, unit=u, values=arr[:, i + 1])
+                                for i, (n, u) in enumerate(cols[1:], start=0)},
+                      meta=meta)
+
+
 def _csv_kind(path: Path) -> str:
     """Distinguish catalogue CSV kinds by header: 'd,t' = temperature profile;
-    survey headers = deviation survey; DEPTH,OrigDepth,CORE_NO = core analysis."""
+    survey headers = deviation survey; DEPTH,OrigDepth,CORE_NO = core analysis;
+    DATEPRD,WELL_BORE_CODE = daily production history (time-indexed)."""
     with path.open(encoding='utf-8') as f:
         header = f.readline().strip().lower()
     if header.startswith('d,t'):
         return 'temperature'
     if header.startswith('depth,origdepth,core_no'):
         return 'core'
+    if header.startswith('dateprd,well_bore_code'):
+        return 'production'
     if 'depth' in header and ('truevertical' in header.replace(' ', '') or 'tvd' in header):
         return 'survey'
     raise ValueError(f"catalogue CSV {path.name}: unrecognized header kind")
@@ -180,6 +295,8 @@ class CatalogEntry:
     provenance: dict
 
     def stream(self) -> LiveStream:
+        if self.las_path.suffix.lower() == '.dat':
+            return read_ktb_dat(self.las_path)
         if self.las_path.suffix.lower() == '.csv':
             kind = _csv_kind(self.las_path)
             if kind == 'survey':
@@ -187,10 +304,20 @@ class CatalogEntry:
                                  "use .survey() (it is a trajectory, not a log stream)")
             if kind == 'core':
                 return read_core_csv(self.las_path)
+            if kind == 'production':
+                return read_production_csv(self.las_path)
             return read_temperature_csv(self.las_path)
         return read_las(self.las_path)
 
     def survey(self):
+        if self.las_path.suffix.lower() == '.dat':
+            st = read_ktb_dat(self.las_path)
+            if 'TVD' not in st.channels:
+                raise ValueError(f"{self.name} is not a trajectory entry (no TVD channel)")
+            from .uqff_deviation import DeviationSurvey
+            return DeviationSurvey(md_ft=[float(x) for x in st.index],
+                                   tvd_ft=[float(x) for x in st.channels['TVD'].values],
+                                   name=self.name)
         if self.las_path.suffix.lower() != '.csv' or _csv_kind(self.las_path) != 'survey':
             raise ValueError(f"{self.name} is not a survey entry")
         return read_survey_csv(self.las_path)
@@ -200,7 +327,7 @@ def _load_catalog() -> Dict[str, CatalogEntry]:
     out: Dict[str, CatalogEntry] = {}
     if not _CATALOG_DIR.is_dir():
         return out
-    files = sorted(list(_CATALOG_DIR.glob('*.las'))
+    files = sorted(list(_CATALOG_DIR.glob('*.las')) + list(_CATALOG_DIR.glob('*.dat'))
                    + [p for p in _CATALOG_DIR.glob('*.csv') if not p.name.endswith('.provenance.json')])
     for las in files:
         prov_path = las.with_suffix('.provenance.json')

@@ -7,6 +7,48 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.399.0 — 2026-08-25 — THE DEEP DATA SHIP
+
+`uqff_downhole_simulator` v1.21.0–v1.25.0 — the catalogue grows from ten
+entries to FIFTEEN across NINE kinds, adding the live stream's native shape
+and the KTB deep-data suite:
+
+- **v1.21.0 — Volve 15/9-F-12/F-14 daily production** (Equinor open data via
+  public redistribution, processing disclosed column-by-column): the first
+  TIME-indexed real field data — 166 daily records from FIRST OIL
+  2008-02-12, carrying REAL sensor-fault phenomenology (a genuine 9-day
+  stuck downhole-pressure run, a wellhead dropout to 0.0 bar, a negative
+  water volume, blank cells). New `read_production_csv` (per-well
+  namespaced channels). The v0.398.0 ship pin's frozen `== 10` count was
+  caught by this entry — counts-use->= standing rule enforced.
+- **v1.22.0 — KTB Main Hole temperature log HB-246** (ICDP legacy site;
+  doi:10.5880/GFZ.KTB.BM.temperature): first HOT temperature data — 1,589
+  rows, 7,743→7,985 m at 169.67→183.58 °C (max 185.53 °C); carried as a
+  DISTURBED mud-temperature log with shut-in times pinned. Region NINE
+  (Germany); new `read_ktb_dat`.
+- **v1.23.0 — KTB Pilot Hole twin-sensor log VB-251** (1988): a REAL
+  twin-sensor instrument (sensors 1,140 mm apart, in-file accuracy spec) —
+  the trailing sensor reads cooler at EVERY one of 1,082 rows (mean
+  0.87 °C): the twin-leg comparison in 1988 hardware; 69-row settling
+  freeze + head-tension collapse pinned; empty TLAB stays absent; dynamic
+  column-block parsing.
+- **v1.24.0 — KTB Main Hole trajectory** (TVD 0–9,080 m file, first 2,804
+  rows at exact 1 m sampling): the verticality NULL CONTROL —
+  |TVD−MD| ≤ 0.35 m over 2.8 km; datum offset preserved verbatim;
+  `survey()` accepts ktb_dat TVD files; transcription method disclosed.
+- **v1.25.0 — KTB Main Hole BHGM density** (COMPLETE file, 197 stations
+  0–8,400 m): first REAL DENSITY PROFILE — transcribed mean = the header's
+  own 2.752 g/cm³ average to the millidigit; the gate integrates overburden
+  from measured density over measured TVD live: **~226 MPa ≈ 32,750 psi at
+  TD** — real crust in the simulator's 30,000-psi-class regime.
+
+Milestone: **KTB-HB carries temperature + trajectory + density — the first
+well the closed stream can describe entirely from catalogued real data.**
+Catalogue: FIFTEEN entries / NINE regions / NINE kinds / TWO trajectories.
+Gate 5,858 → 5,870, 0 failures. 23-file pass.
+
+---
+
 ## v0.398.0 — 2026-08-25 — THE CATALOGUE SHIP
 
 `uqff_downhole_simulator` v1.14.0–v1.20.0 — the real-well profile catalogue
