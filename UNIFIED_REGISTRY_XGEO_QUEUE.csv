@@ -1727,3 +1727,4 @@ CONNECTIVITY_ARC,n/a,n/a,NOT_APPLICABLE,application connectivity + real-data cat
 CATALOGUE_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.398.0
 DEEPDATA_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.399.0
 TWENTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,application real-data catalogue single-geometry,v0.400.0
+INCORPORATION_ARC,n/a,n/a,NOT_APPLICABLE,corporate record ship - no physics content,v0.401.0

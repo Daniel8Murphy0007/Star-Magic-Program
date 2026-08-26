@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.400.0", "uqff_calculator.VERSION = 0.400.0 (THE TWENTY WELLS SHIP: catalogue to TWENTY entries / TWELVE regions / THIRTEEN kinds - the geomechanics pair closed live, the ocean's KTB, measured pressure, and the real permanent downhole observatory)")
+assert_that(C.VERSION == "0.401.0", "uqff_calculator.VERSION = 0.401.0 (THE INCORPORATION SHIP: the six ENRGYONE, Inc. founding documents enter the repository as fidelity-verified PDFs - the corporate stack behind the AGPL-3.0 + Commercial dual license)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9556,13 +9556,13 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'TWENTYWELLS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'INCORPORATION_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
     assert_that(_sg4_band in _sg4_last(_sg4_f),
                 "SHIP GUARD v4.1: %s must carry the CURRENT arc's trail (%s) - every ship touches all 23 charter files, and the audit family is where under-ships hide" % (_sg4_f, _sg4_band))
-assert_that('twentywells_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
+assert_that('incorporation_arc_rule7' in _sg4_last('UNIFIED_REGISTRY_GAPS.csv'),
             "SHIP GUARD v4.1: GAPS ledger must carry the CURRENT arc's Rule 7 disclosure row")
 assert_that(_sg4_band in _sg4_last('UNIFIED_REGISTRY_R1_QUEUE.csv'),
             "SHIP GUARD v4.1: R1 queue must record the current arc's rulings state even when it is 'none' - a silent gap in the rulings trail is indistinguishable from a forgotten one")
@@ -13337,6 +13337,20 @@ assert_that(len(_ds11.CATALOG) >= 20 and len(_arc400_kinds) >= 13
             "SHIP v0.400.0 (TWENTYWELLS_ARC): TWENTY+ real-data entries across TWELVE+ regions and THIRTEEN+ kinds - the arc closed the geomechanics pair live (strength vs overburden), brought the ocean's KTB (504B), delivered the catalogue's last missing quantity (measured downhole pressure - and every baselined station was THE FIND), and ended on the real permanent downhole observatory (the CORK): the instrument class this package simulates, as recorded history")
 assert_that(True,
             "TWENTYWELLS_ARC STANDING RULE: the physical-quantity ledger is CLOSED - temperature, trajectory, density, strength, rates, core, fluids, and pressure all present as real catalogued data with baselines travelling beside measurements wherever the source provides them; and the PANGAEA textfile family (self-citing headers: citation, license, coordinates, methods IN the file) is the preferred source route for future entries")
+
+# ---- SHIP v0.401.0: THE INCORPORATION SHIP (INCORPORATION_ARC record) ----
+import os as _os401
+_corp401 = ['ARTICLES OF INCORPORATION OF ENRGYONE_25Aug2026.pdf',
+            'BYLAWS OF ENRGYONE_25Aug2026.pdf',
+            'COMMERCIAL LICENSE CONFIRMATION LETTER_25Aug2026.pdf',
+            'INTELLECTUAL PROPERTY DUAL LICENSE EXPLANATION_25Aug2026.pdf',
+            'INTELLECTUAL PROPERTY LICENSE AND SUBLICENSE AGREEMENT_25Aug2026.pdf',
+            'NDA_CONFIDENTIALITY_AG_ENRGYONE_25Aug2026.pdf']
+assert_that(all(_os401.path.exists(_os401.path.join('pdf', _f))
+                and _os401.path.getsize(_os401.path.join('pdf', _f)) > 20000 for _f in _corp401),
+            "SHIP v0.401.0 (INCORPORATION_ARC): the SIX ENRGYONE, Inc. founding documents are present in pdf/ as non-trivial PDFs - Articles of Incorporation, Bylaws, Commercial License Confirmation Letter, IP Dual-License Explanation, IP License & Sublicense Agreement (to ACHILLES, Inc.), and the NDA/Confidentiality Agreement: the corporate stack (incorporation -> governance -> co-owners' grant -> license doctrine -> sublicense -> confidentiality) behind the repository's AGPL-3.0 + Commercial dual license")
+assert_that(True,
+            "INCORPORATION_ARC STANDING RULE: corporate documents ship as PDFs converted with LibreOffice headless from Daniel's source .docx and FIDELITY-VERIFIED before deposit (word-count equality, head/tail identity, per-paragraph presence, table content cell-checked) - legal text gets the same verbatim discipline as well data; sources remain Daniel's originals, the repo carries the rendered record")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

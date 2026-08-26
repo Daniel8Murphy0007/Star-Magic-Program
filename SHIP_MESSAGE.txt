@@ -1,26 +1,23 @@
-v0.400.0 - THE TWENTY WELLS SHIP: the quantity ledger closes at twenty entries
+v0.401.0 - THE INCORPORATION SHIP: ENRGYONE, Inc. founding documents enter the repo
 
-Downhole v1.26.0-v1.30.0: catalogue 15 -> 20 entries / 12 regions / 13 kinds.
+Six corporate documents, converted from Daniel's source .docx via
+LibreOffice headless and FIDELITY-VERIFIED before deposit (word counts,
+head/tail identity, per-paragraph presence, table cells), now in pdf/:
 
-- v1.26 KTB-VB STRENGTH (113 lab samples): first rock-strength data; the
-  geomechanics pair closes LIVE - 59/113 samples weaker than their own
-  overburden (entry-15 measured density): the breakout physics, counted.
-  Cell-level refusal: 9 rendering-ambiguous cells -> NaN + raw token.
-- v1.27 KTB-HB STRENGTH (21 samples): pair complete - HB amphibolites
-  199 MPa vs VB 77; yet 5/21 lose to overburden at 5.5-6.2 km.
-- v1.28 ODP 504B FLUIDS: the deepest hole in OCEANIC crust (region TEN,
-  first sub-seafloor entry); seawater->basalt mixing gradient computed
-  live; PANGAEA self-citing textfile route PROVEN (read_pangaea_txt).
-- v1.29 IODP U1324 MEASURED PRESSURE: the last missing quantity (region
-  ELEVEN); baselines travel in-file; ALL 12 baselined stations
-  OVERPRESSURED (max +2.07 MPa; lambda* 0.385) - THE FIND in nature.
-- v1.30 ODP 1027C CORK OBSERVATORY (region TWELVE): the real permanent
-  downhole gauge - disturbed vs equilibrium measured on both sides
-  (+42.6 C sealed recovery); isothermal hydrothermal basement; logger
-  replacement in the file's own service history.
+1. ARTICLES OF INCORPORATION (4 pp) - Ohio ORC 1701; R&D/UQFF/AI purpose
+2. BYLAWS (6 pp) - owners-control amendments; director slate
+3. COMMERCIAL LICENSE CONFIRMATION LETTER (2 pp) - co-owners' exclusive
+   grant to ENRGYONE, Inc.
+4. IP DUAL LICENSE EXPLANATION (3 pp) - AGPL-3.0 vs commercial + the
+   decision table (cell-verified)
+5. IP LICENSE & SUBLICENSE AGREEMENT (5 pp) - ENRGYONE -> ACHILLES, Inc.
+6. NDA / CONFIDENTIALITY AGREEMENT (4 pp) - closes the stack
 
-The physical-quantity ledger is CLOSED: temperature, trajectory, density,
-strength, rates, core, fluids, pressure - all real, all provenance-complete,
-with baselines beside measurements wherever sources provide them.
+One effective date (31 Jul 2026), one officer/director roster, each
+document citing its predecessors: the corporate counterpart of the repo's
+AGPL-3.0 + Commercial dual license.
 
-Gate 5,870 -> 5,882, 0 failures. 23-file charter pass verified.
+Gate pins: six-PDF presence + legal-verbatim standing rule (legal text
+gets the same discipline as well data). No code or catalogue changes.
+
+Gate 5,882 -> 5,884, 0 failures. 23-file charter pass verified.

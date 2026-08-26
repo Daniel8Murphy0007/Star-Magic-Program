@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.400.0"
-description = "Star-Magic UQFF calculator v0.400.0: THE TWENTY WELLS SHIP. 2,253 dispatches (2,308 keys), gate 5,882/0. uqff_downhole_simulator v1.26-v1.30: catalogue 15 -> 20 entries / 12 regions / 13 kinds - KTB rock-strength pair (strength-vs-overburden live), ODP 504B fluids (the ocean's KTB; PANGAEA route), IODP U1324 measured pore pressure (all 12 stations overpressured - THE FIND in nature), 1027C CORK observatory (+42.6C sealed recovery): the real permanent gauge. Next: PAPER_2258."
+version = "0.401.0"
+description = "Star-Magic UQFF calculator v0.401.0: THE INCORPORATION SHIP. 2,253 dispatches (2,308 keys), gate 5,884/0. ENRGYONE, Inc. founding documents enter the repository as six fidelity-verified PDFs (pdf/): Articles of Incorporation, Bylaws, Commercial License Confirmation, IP Dual-License Explanation, IP License & Sublicense Agreement (ACHILLES), and NDA - the corporate stack behind the AGPL-3.0 + Commercial dual license. Downhole catalogue unchanged at 20 entries / 13 kinds. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

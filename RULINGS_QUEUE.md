@@ -6570,3 +6570,6 @@ DEEPDATA_ARC (v0.399.0, 2026-08-25): no new rulings required. Standing catalogue
 
 ---
 TWENTYWELLS_ARC (v0.400.0, 2026-08-25): no new rulings required. Standing catalogue order executed across entries 16-20. Disclosure practices this arc, now standing: cell-level refusal with raw-token preservation for rendering-ambiguous cells; source papers' own honest framings inherited as entry framings; PANGAEA in-file citations/licenses parsed to meta rather than restated. Board otherwise unchanged (6 items).
+
+---
+INCORPORATION_ARC (v0.401.0, 2026-08-25): no new rulings required - conversion and deposit per Daniel's direct instruction. Two source observations DISCLOSED for Daniel's discretion rather than edited: (a) the Articles' final paragraph is drafting commentary ("We are now consistent across both documents") converted faithfully as-is; (b) principal office 103 Nevada Ave #1 (Bylaws) vs Daniel's address #2 (Articles) - likely intentional, flagged only. Board otherwise unchanged (6 items).

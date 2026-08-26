@@ -12010,3 +12010,38 @@ badges; CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11
 TWENTYWELLS_ARC trail rows. Gate 5,880 → 5,882, 0 failures. Package
 v1.30.0 (catalog/ 40 files, measured). Awaiting Daniel: `.\ship.ps1`
 (clear .git/index.lock first).
+
+## Entry 273 — 2026-08-25 — v0.401.0 THE INCORPORATION SHIP (six ENRGYONE founding PDFs)
+
+Daniel's direction: "uptake 6 documents one by one and produce pdf's for
+each, deposit them in the repo pdf. When we complete all 6 pdf's then we
+will ship them." Executed one document per exchange:
+
+1. Articles of Incorporation (4 pp; 997/997 words verified)
+2. Bylaws (6 pp; 1,895/1,895; all 71 paragraphs)
+3. Commercial License Confirmation Letter (2 pp; 411/411)
+4. IP Dual License Explanation (3 pp; decision TABLE verified
+   cell-by-cell; 5-word delta = extractor table serialization, disclosed)
+5. IP License & Sublicense Agreement to ACHILLES, Inc. (5 pp; 1,079/1,079)
+6. NDA / Confidentiality Agreement (4 pp; 1,098/1,098)
+
+Method: LibreOffice headless (soffice --convert-to pdf) for full Writer
+fidelity; verification per document = pandoc-extracted source text vs
+pdftotext-extracted PDF text (word counts, head/tail, per-paragraph
+presence with bullet-glyph normalization, table cells). Two source
+observations disclosed in-chat, not edited: the Articles' final paragraph
+is drafting commentary; principal-office address #1 (Bylaws) vs Daniel's
+address #2 (Articles).
+
+Cross-document coherence checks: one effective date (31 Jul 2026), same
+officers (Murphy CEO/CTO; Roldan Avila Sec/Treas) and directors (Halbert,
+Moser, Morris = the ACHILLES founders) throughout; doc 4's example
+sublicensee IS doc 5's counterparty; the NDA cites the full stack.
+
+Ship prep: pins at 0.401.0 (desc 491 chars); SHIP GUARD marker
+TWENTYWELLS_ARC→INCORPORATION_ARC (+ GAPS id incorporation_arc_rule7);
++2 ship pins (six-PDF presence >20KB each + legal-verbatim standing
+rule); README release/campaign/shipped rewrite + badges; CHANGELOG +
+_BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 11 INCORPORATION_ARC trail
+rows. Gate 5,882 → 5,884, 0 failures. Zero code/catalogue changes.
+Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).

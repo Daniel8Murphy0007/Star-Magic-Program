@@ -321,3 +321,6 @@ THE DEEP DATA SHIP: downhole v1.21-v1.25 — catalogue 10→15 entries / 9 kinds
 
 ## v0.400.0 — 2026-08-25
 THE TWENTY WELLS SHIP: downhole v1.26-v1.30 — catalogue 15→20 entries / 12 regions / 13 kinds; quantity ledger CLOSED (strength pair counted vs overburden live; 504B ocean-crust fluids; U1324 measured pressure with all-stations overpressure = THE FIND in nature; 1027C CORK observatory with +42.6 °C disturbed→equilibrium recovery). PANGAEA self-citing source family proven. Gate 5,882/0. 23-file pass verified.
+
+## v0.401.0 — 2026-08-25
+THE INCORPORATION SHIP: six ENRGYONE, Inc. founding documents (Articles, Bylaws, Commercial License Letter, Dual-License Explanation, ACHILLES Sublicense, NDA) converted via LibreOffice headless, fidelity-verified word-for-word, deposited in pdf/. The corporate stack behind the AGPL-3.0 + Commercial dual license. No code changes. Gate 5,884/0. 23-file pass verified.

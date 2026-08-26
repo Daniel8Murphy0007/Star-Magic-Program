@@ -7,6 +7,37 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.401.0 — 2026-08-25 — THE INCORPORATION SHIP
+
+**ENRGYONE, Inc. is founded, and its papers enter the repository.** Six
+corporate documents, converted one-by-one from Daniel's source .docx via
+LibreOffice headless and fidelity-verified before deposit (word-count
+equality, head/tail identity, per-paragraph presence, table content
+cell-checked), now live in `pdf/`:
+
+1. **Articles of Incorporation** (4 pp) — Ohio for-profit under ORC 1701;
+   1,000 shares common; R&D/UQFF/AI/sub-surface simulation purpose.
+2. **Bylaws** (6 pp) — offices, owners-control amendments, director slate.
+3. **Commercial License Confirmation Letter** (2 pp) — the Technology
+   Co-Owners' exclusive commercial grant to ENRGYONE, Inc.
+4. **IP Dual License Explanation** (3 pp) — AGPL-3.0 vs commercial,
+   with the license-decision table (verified cell-by-cell).
+5. **IP License & Sublicense Agreement** (5 pp) — ENRGYONE → ACHILLES,
+   Inc. (Texas), effective 31 July 2026.
+6. **NDA / Confidentiality Agreement** (4 pp) — closing the stack, citing
+   all prior documents.
+
+The set is internally coherent: one effective date, one officer/director
+roster, each document citing its predecessors — the corporate counterpart
+of the repo's AGPL-3.0 + Commercial dual license (LICENSE / COMMERCIAL.md).
+Two source observations disclosed to Daniel rather than silently edited
+(drafting-commentary final paragraph in the Articles; #1 vs #2 street
+address variance between Bylaws and Articles).
+
+No code or catalogue changes. Gate 5,882 → 5,884, 0 failures. 23-file pass.
+
+---
+
 ## v0.400.0 — 2026-08-25 — THE TWENTY WELLS SHIP
 
 Milestone: the real-data catalogue reaches **TWENTY entries / TWELVE

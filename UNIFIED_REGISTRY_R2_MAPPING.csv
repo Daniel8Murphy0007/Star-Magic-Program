@@ -271,3 +271,4 @@ CONNECTIVITY_ARC,EXTENSIONS,1 landmark dispatch + 4 package versions + 3 real we
 CATALOGUE_ARC,EXTENSIONS,7 catalogue entries + 4 port upgrades (wrapped LAS / LAS 1.x / BHT meta anchors / descending index) + 3 new readers (temperature/survey/core),v1.14-v1.20,v0.398.0
 DEEPDATA_ARC,EXTENSIONS,5 catalogue entries + 3 new readers/dispatches (production_csv / ktb_dat / survey-from-dat) + 3 parser upgrades (dynamic column block; F-code widening; safe header-value extraction) + live overburden integral,v1.21-v1.25,v0.399.0
 TWENTYWELLS_ARC,EXTENSIONS,5 catalogue entries + 2 new readers (read_ktb_table typed-column; read_pangaea_txt self-citing) + cross-entry live physics (strength-vs-overburden; overpressure lambda*; CORK recovery + isothermal basement),v1.26-v1.30,v0.400.0
+INCORPORATION_ARC,CORPORATE_RECORD,6 PDFs in pdf/ + 2 gate pins (presence + fidelity standing rule); zero calculator/package changes,n/a,v0.401.0
