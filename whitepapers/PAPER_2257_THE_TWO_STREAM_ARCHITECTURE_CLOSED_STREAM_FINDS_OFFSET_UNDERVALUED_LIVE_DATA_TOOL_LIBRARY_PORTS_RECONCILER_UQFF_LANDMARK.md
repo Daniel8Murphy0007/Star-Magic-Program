@@ -813,3 +813,242 @@ TWENTY ENTRIES. Twelve regions, thirteen kinds, five continents' worth of
 basins, both deepest-borehole programmes on Earth, every physical quantity the
 closed stream needs, and now the real version of the instrument the closed
 stream simulates. Package v1.30.0; gate 5,878 -> 5,880.
+
+---
+
+## APPENDED 2026-08-25 (22) — v1.31.0: CATALOGUE ENTRY 21 — THE CATALOGUE STARTS DOING SCIENCE WITH ITSELF
+
+**Thermal conductivity of ODP Hole 1027B** (PANGAEA doi:10.1594/PANGAEA.792214,
+COMPLETE JANUS shipboard set): 32 needle-probe measurements at the same site as
+entry 20's CORK observatory. Fourteenth kind - and the entry exists for a
+computation, not a collection: heat flow.
+
+q = k x dT/dz needs two measured ingredients that never travel in one file: the
+rock's conductivity (from core, on deck) and the formation's gradient (from a
+sealed borehole, years later). The catalogue now holds both, from the same site,
+each with its own provenance chain - so the gate computes the flux live on every
+run: mean k 1.43 W/m/K (harmonic 1.42 - the layered-media average disclosed and
+computed beside it) times the CORK's sealed 91 K/km over the overlapping interval
+= ~130 mW/m2. Young-crust heat flow, an order of magnitude above continental,
+derived from two catalogued datasets rather than quoted from a paper. This is
+the closed stream's promise operating one level up: not simulating measurements,
+but COMPOSING them.
+
+Honesty structure: the source's bimodal depth coverage (5 shallow, 27 deep,
+nothing archived between) is preserved and pinned as source structure - no
+interpolation across the gap; probe lineage (FULL vs HALF needle, system and
+probe IDs) rides with every measurement; the DOI was found by probing JANUS's
+sequential numbering (1024A = 792208 -> 792214 = 1027B, first probe), recorded
+in provenance as the discovery route.
+
+Catalogue standing: TWENTY-ONE entries / TWELVE regions / FOURTEEN kinds; two
+multi-dataset site families (KTB-HB: T + trajectory + density; Site 1027: T +
+k -> heat flow). read_pangaea_txt unchanged on its fourth entry. Package
+v1.31.0; gate 5,884 -> 5,886.
+
+---
+
+## APPENDED 2026-08-25 (23) — v1.32.0: CATALOGUE ENTRY 22 — 1979, AND THE DATASET THAT AUDITS ITSELF
+
+**Physical properties of DSDP Hole 69-504B** (PANGAEA doi:10.1594/PANGAEA.221630,
+COMPLETE): the catalogue's first DSDP-era entry - the GLOMAR CHALLENGER, 1979,
+drilling the first 489 m of what would become the deepest hole in oceanic crust.
+61 basalt samples, 281-484 mbsf: porosity 2.66-11.39% (fresh massive flows vs
+altered breccia horizons - newborn crust's alteration architecture), bulk density
+2.73-2.95, grain density 2.94-3.03 g/cm3, every sample carrying its DSDP core
+label.
+
+The entry's distinction is epistemological: it is the first catalogued dataset
+BOUND BY AN INTERNAL IDENTITY. Porosity, grain density and bulk density are not
+three independent numbers - physics ties them: WBD = phi*rho_w + (1-phi)*rho_g.
+The file carries all three, so the gate re-runs the 1979 laboratory's bench
+consistency on every run: ALL 61 ROWS CLOSE (mean |residual| 0.0028 g/cm3, max
+0.0096). One pin, three services: it audits the lab, audits PANGAEA's archival
+chain, and audits this catalogue's transcription - a copy error in any of the
+three columns would break the identity. The verbatim discipline now has a
+dataset that enforces itself.
+
+Family note: 504B joins KTB-HB and Site 1027 as the third multi-dataset family -
+entry 18's borehole fluids (reacting at >160 degC) and entry 22's rock (the very
+basalts those fluids react with), drilled 12 years apart from two different
+vessels, reunited in one catalogue.
+
+Catalogue standing: TWENTY-TWO entries / TWELVE regions / FIFTEEN kinds,
+spanning 1971 (L07-01) to 2016 (Volve production) on the industry side and
+1979 (Glomar Challenger) to 2005 (IODP 308) in scientific drilling.
+read_pangaea_txt unchanged on its fifth entry. Package v1.32.0; gate
+5,886 -> 5,888.
+
+## APPENDED 2026-08-25 (24) - v1.33.0: entry 23, ODP 1165B Prydz Bay (ANTARCTICA) - the replicate audit that caught a source typo
+
+Catalogue entry 23 is the complete thermal-conductivity dataset of ODP Hole 188-1165B (PANGAEA
+doi:10.1594/PANGAEA.792386): 81 needle-probe measurements, 3.75-503.65 mbsf, k = 0.432-1.062 W/m/K,
+Prydz Bay, Antarctic continental rise (-64.3797 S, 67.2190 E, seafloor -3,538 m, Leg 188, 2000).
+Antarctica becomes region THIRTEEN and the catalogue's span is now literally pole-to-pole.
+
+The structural landmark: the file's Comment column carries the three raw replicate readings whose mean
+is the archived k on every row - a dataset that ships its own repeatability record. The gate re-runs the
+shipboard averaging on all 81 rows. Result: 80 close within rounding; the single non-closing row
+(317.35 m: replicates 1.013, 0.016, 1.031 vs archived 1.0200; printed-replicate mean 0.687) is a dropped
+leading digit IN the source archive - substituting 1.016 restores the identity to the fourth decimal.
+Rule 7 handling: the row is preserved verbatim, the anomaly is disclosed in the provenance sidecar, and
+the gate pins the DETECTION (80/1 split + the 1.016 restoration) rather than silently repairing the file.
+The catalogue's verification discipline now detects upstream archival errors as a side effect of
+verifying its own transcription - the same structural self-audit class as entry 22's WBD identity.
+Gate 5,888 -> 5,890. Package v1.33.0. Reader unchanged (read_pangaea_txt, fifth dataset).
+
+## APPENDED 2026-08-26 (25) - v1.34.0: entry 24, ODP 111-504B sheeted-dike elastic moduli - the four-identity audit
+
+Catalogue entry 24 is the complete Christensen/Wepfer/Baud (1989) laboratory table for the sheeted-dike
+complex of Hole 504B (PANGAEA doi:10.1594/PANGAEA.754017): 8 dike core samples from Leg 111, each swept
+through confining pressures 200-6,000 bar, with Vp, Vs, Vp/Vs, Poisson's ratio, bulk and shear moduli,
+ambient density and porosity - 519 cells / 63 rows, verified against the header's own Size declaration.
+504B becomes a THREE-dataset site family across three expeditions and 24 years of measurement type
+(1979 physical properties, 1986 dike elastics, 1991 borehole fluids at >160 C) - one hole, sediment to
+sheeted dikes, rock frame to pore fluid.
+
+Structural landmarks: (1) FIRST pressure-swept laboratory dataset and kind SIXTEEN; (2) first
+label-indexed PANGAEA export - read_pangaea_txt gained a no-depth ordinal-index fallback, with all six
+prior depth-indexed .txt entries regression-verified unchanged; (3) the densest self-audit in the
+catalogue: FOUR internally-derivable columns re-derived by the gate on every run (Vp/Vs 63/63 max dev
+0.0054; Poisson via (r^2-2)/(2(r^2-1)) 63/63 max dev 0.011; shear modulus rho*Vs^2 and bulk modulus
+rho*(Vp^2 - 4/3*Vs^2) on all 56 density-bearing rows, max dev 930 / 1,168 MPa against the table's
+1,000-MPa rounding); (4) the sweep's monotonic-pressure structure detected two source-archive quirks,
+preserved verbatim per Rule 7: sample 161R's nine rows led by an out-of-sequence duplicate 6,000-bar
+row while neighbouring 155R is missing its 6,000-bar row (the orphan continues 155R's pressure trend
+exactly - consistent with a one-row attribution slip in the source table), and sample 148R's absent
+density and 400-bar step. Disclosed in provenance, pinned as detections, not repaired.
+Gate 5,890 -> 5,892. Package v1.34.0.
+
+## APPENDED 2026-08-26 (26) - v1.35.0: entry 25, DSDP 69-504B sound velocity - the cross-entry impedance join
+
+Catalogue entry 25 is the complete Leg 69 shipboard sonic dataset for Hole 504B (PANGAEA
+doi:10.1594/PANGAEA.229754, found first-probe by sequential-DOI reasoning from the 69-505 sibling):
+63 compressional-wave measurements on the 1979 basalt cores, 279.08-484.04 mbsf, Vp 5,105-6,390 m/s.
+504B becomes a FOUR-dataset site family - 1979 sound velocity, 1979 physical properties, 1986 sheeted-
+dike elastic moduli, 1991 borehole fluids - the deepest scientific record of any site in the catalogue.
+
+The structural landmark is the catalogue's first CROSS-ENTRY SAMPLE-BY-SAMPLE JOIN: the sonic table
+and the physical-properties table archive the same core suite as separate PANGAEA datasets, and
+joining on depth (|dz| <= 0.05 m) pairs 60 of 63 rows - four at identical cm positions (6-1,55;
+7-5,3; 8-3,73; 13-2,100). The gate computes a live acoustic-impedance profile of ocean-floor basalt,
+Z = rho x Vp = 13.94-18.50 x1e6 kg/m2/s (mean 16.59), from two independently archived datasets on
+every run - the physics that seismic reflection imaging is built on, running as a fidelity assertion.
+Disclosure: the profile's only duplicate depth is a repeat measurement archived twice (484.04 m,
+sample 29-1,4: 5,105 vs 5,136 m/s = 0.6% repeatability spread), preserved verbatim and pinned.
+Gate 5,892 -> 5,894. Package v1.35.0. Reader unchanged (read_pangaea_txt, depth-indexed path).
+
+## APPENDED 2026-08-26 (27) - v1.36.0: entry 26, Nankai megasplay shear strength - the slope-stability re-derivation
+
+Catalogue entry 26 is the complete laboratory shear-strength table behind Ikari, Strasser, Saffer &
+Kopf (2011, EPSL 312): submarine-landslide potential near the Nankai megasplay fault (PANGAEA
+doi:10.1594/PANGAEA.786715, 150 cells / 15 rows, full abstract preserved in the header). A double
+first: the NANKAI TROUGH accretionary prism joins as region FOURTEEN - the catalogue's first
+subduction-zone data and first entry drilled by D/V Chikyu - and slope-sediment shear strength is
+kind EIGHTEEN, the soft-sediment counterpart to the KTB crystalline strength tables (entries 16/17).
+15 measurements from three holes spanning the megasplay (C0001E/C0004C/C0008A, slopes 3/7/12 deg),
+7.91-121.29 mbsf, tau = 40-470 kPa.
+
+Live physics: the gate re-derives the paper's HEADLINE CONCLUSION on every run - infinite-slope
+driving stress sigma'_v*sin(a)*cos(a) vs measured strength gives factor-of-safety 2.38-15.31 with all
+15 stations statically stable, exactly the published "slopes are stable and submarine landslides are
+not expected to occur under static conditions." Second audit: the effective/total stress ratio sits
+in a tight buoyancy band 0.359-0.413 across all three holes. Third: a source labeling inconsistency
+detected by cross-checking the file's own two label columns - all ten Expedition-316 rows carry Event
+'316-C000xx' but sample labels prefixed '315-', an expedition-number typo in the source table,
+preserved verbatim and disclosed per Rule 7. Gate 5,894 -> 5,896. Package v1.36.0. Reader unchanged.
+
+## APPENDED 2026-08-26 (28) - v1.37.0: entry 27, ODP 118-735B gabbro elastic moduli - the crustal ladder completes
+
+Catalogue entry 27 is the complete Table 4 of Iturrino, Christensen, Kirby & Salisbury (1991):
+average velocities and elastic constants for the Atlantis Bank gabbros of ODP Hole 118-735B (PANGAEA
+doi:10.1594/PANGAEA.757872; 1,144 cells / 104 rows verified against the header's own Size
+declaration; reached via the parent publication-series page - bundle DOIs do not export textfile,
+child tables do, a route note now recorded in provenance). The SOUTHWEST INDIAN RIDGE joins as
+region FIFTEEN (seafloor -731 m, the catalogue's shallowest ocean site), and with it the catalogue
+COMPLETES THE OCEANIC-CRUST LADDER: sediments -> pillow basalts (504B Leg 69) -> sheeted dikes
+(504B Leg 111) -> layer-3 gabbro (735B Leg 118) - the full ophiolite sequence held as verbatim
+public data. 13 gabbro samples x 8 confining pressures (100-2,000 bar), Vp 6,350-7,310 m/s,
+Vs 3,510-4,040 m/s, density 2.84-3.27 g/cm3, full petrographic modal mineralogy in every row.
+
+FIVE audits pinned: the four elastic identities close on ALL 104 rows (density rides on every row,
+unlike the dike table) - Vp/Vs max dev 0.0077, Poisson max dev 0.0059, G = rho*Vs^2 max dev 671 MPa,
+K = rho*(Vp^2-4/3*Vs^2) max dev 792 MPa vs the table's 1,000-MPa rounding - plus a fifth unique to
+this entry: the modal percentages in each sample's verbatim comment sum to ~100% on all 13 samples,
+parsed live from the file. Four source spelling quirks preserved and pinned as presence checks (the
+dataset's own PANGAEA title says 'share-wave'; 'Grabbo'; 'tracee'; '10 oxides' missing its percent
+sign) - the archive's fingerprints, kept, not cleaned. Same Christensen laboratory lineage as the
+504B dike entry: the two pressure-sweep tables are now directly comparable dike-vs-gabbro physics.
+Gate 5,896 -> 5,898. Package v1.37.0. Reader unchanged (ordinal fallback, second use).
+
+## APPENDED 2026-08-26 (29) - v1.38.0: entry 28, ODP 209-1274A mantle peridotite - the ladder goes below the crust
+
+Catalogue entry 28 is the complete shipboard moisture-and-density dataset of ODP Hole 209-1274A
+(Miller/Kelemen/Kikawa, PANGAEA doi:10.1594/PANGAEA.259148; 180 cells / 18 rows; found by a
+three-probe sequential-DOI walk of the leg-ordered JANUS MAD series: Leg 204 at 259099 -> Leg 209
+Hole 1271A at 259145 -> 1274A at 259148). The MID-ATLANTIC RIDGE joins as region SIXTEEN:
+serpentinized mantle harzburgite from the 15deg20min Fracture Zone, 17.79-146.93 mbsf, 22.2%
+hard-rock recovery. THE LADDER IS COMPLETE FROM SEAFLOOR MUD TO THE MANTLE: sediments -> pillow
+basalts (504B Leg 69) -> sheeted dikes (504B Leg 111) -> layer-3 gabbro (735B Leg 118) -> residual
+peridotite (1274A Leg 209).
+
+The physics is in the numbers: every grain density (2.588-2.823 g/cm3) sits far below fresh
+peridotite's ~3.3 - the mass deficit that hydration of the mantle leaves behind, visible in a
+moisture-and-density table.
+
+The audit is the FIVE-IDENTITY LOCK, the cleanest fully-interlocked table in the catalogue: WBD =
+phi*rho_w + (1-phi)*rho_grain (max dev 0.001 g/cm3), DBD = (1-phi)*rho_grain (0.0016), void ratio
+e = phi/(1-phi) (0.0008), and both water contents from WBD/DBD (0.05% / 0.07%) - all five re-derived
+by the gate on all 18 rows. No archival anomalies detected: a 2003 shipboard laboratory whose
+arithmetic still audits perfectly 23 years later. Gate 5,898 -> 5,900. Package v1.38.0. Reader
+unchanged (read_pangaea_txt, depth-indexed path).
+
+## APPENDED 2026-08-26 (30) - v1.39.0: entry 29, Chicxulub M0077A peak-ring P-wave - the crater that ended the Cretaceous
+
+Catalogue entry 29 is the complete discrete-sample P-wave dataset of IODP Hole 364-M0077A (PANGAEA
+doi:10.1594/PANGAEA.883479): 717 rows / 2,170 cells, 506.17-1334.51 mbsf - 828 m of velocity profile
+through the post-impact sediments, suevite, impact melt and shocked peak-ring granite of the
+CHICXULUB CRATER, drilled by mission-specific platform L/B Myrtle in 19.8 m of water on the Yucatan
+shelf. Region SEVENTEEN; first impact structure; largest verbatim PANGAEA table in the catalogue.
+
+The physics is the K-Pg impact itself: the 523 granite-basement rows average 4,171 m/s and no sample
+in the entire profile reaches 5,400 m/s, against intact granite's 5,500-6,000 - the measured
+velocity deficit IS the pervasive shock damage that let the peak ring rise after the impact that
+ended the Cretaceous. Archive fingerprints preserved verbatim: a repeat measurement archived twice
+(44R-3,54-56: 3,082/3,118 m/s, 1.2%), 38 non-monotonic archival steps including the 37R-40R block
+filed 600+ m out of place, and 19 shipboard QC comments ('poor signal', 'dolerite', 'dyke?', 'QAQC').
+
+The structural landmark: A DATASET THAT CHECKSUMS ITS OWN TRANSCRIPTION. Depth = Top + (midpoint of
+the sample label's cm interval)/100 holds EXACTLY on every row, including fractional intervals
+(232R-1,91-93.5 -> 1116.4125) and a decimal-start oddity (299R-2,84.1-96 -> 1321.3005). The gate
+re-runs this identity on all 717 rows and re-derives the header's own Size declaration
+(3 x 717 + 19 = 2,170) on every run - any copying error in label, Top or Depth breaks the pin.
+Transcribed in two parts; checksum passed on first verification. Gate 5,900 -> 5,902. Package
+v1.39.0. Reader unchanged (read_pangaea_txt, depth-indexed path; file order preserved as archived).
+
+## APPENDED 2026-08-26 (31) - v1.40.0: entry 30, ACEX Lomonosov age-depth model - the thirtieth entry reaches the pole
+
+Catalogue entry 30 - the milestone entry - is the canonical ACEX age model (Backman et al. 2008,
+PANGAEA doi:10.1594/PANGAEA.705517, COMPLETE 38 cells / 10 control points): the age-depth backbone
+of the first scientific drilling of the central Arctic Ocean. The CENTRAL ARCTIC OCEAN joins as
+region EIGHTEEN - 87.89 N on the Lomonosov Ridge, 235 km from the North Pole, drilled from the
+icebreaker Vidar Viking in moving sea ice - first icebreaker entry, first composite virtual core
+(spliced from Holes M0002A/M0003A/M0004A/M0004C). AGE-DEPTH GEOCHRONOLOGY is kind NINETEEN: the
+catalogue's first time axis - every earlier entry measures the state of the subsurface; this one
+dates it. 399.63 m of composite core spanning 56 million years.
+
+The structure IS the science: both ACEX hiatuses are encoded in the table itself - 198.70 m appears
+twice (ages 18,200 and 44,400 ka: the same centimetre of seafloor is both early Miocene and middle
+Eocene, a 26.2-Myr unconformity held as a duplicate-depth pair), and the 2.2-Myr Miocene hiatus sits
+between 135.49 and 140.44 m. The audit re-derives ALL SIX sedimentation rates live as
+delta-depth/delta-age between hiatus-aware bounds - the A-B rate closes ONLY when the Miocene hiatus
+is excluded, so the audit verifies the hiatus itself - with B-C at the exact rounding boundary
+(0.8051 -> archived 0.80, tolerance set to the honest half-ulp 0.006 and disclosed). The header's
+own Neogene average closes (198.7/16.0 = 12.4 m/Myr). Rule 7 disclosure: the archive's Comment field
+is TRUNCATED mid-sentence in the source ('...Average sedimentation'), preserved verbatim including
+the cut, the missing Paleogene rate re-derivable at 206.1/11.8 = 17.5 m/Myr.
+
+Thirty entries in, the catalogue spans pole to pole (Prydz Bay to the Lomonosov Ridge), seafloor mud
+to mantle peridotite, a 66-Myr-old impact's shock damage to day-indexed production data - eighteen
+regions, nineteen kinds, every dataset verbatim, every flaw kept, every derivable number re-earned
+by the gate on every run. Gate 5,902 -> 5,904. Package v1.40.0. Reader unchanged.

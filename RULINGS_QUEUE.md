@@ -6573,3 +6573,15 @@ TWENTYWELLS_ARC (v0.400.0, 2026-08-25): no new rulings required. Standing catalo
 
 ---
 INCORPORATION_ARC (v0.401.0, 2026-08-25): no new rulings required - conversion and deposit per Daniel's direct instruction. Two source observations DISCLOSED for Daniel's discretion rather than edited: (a) the Articles' final paragraph is drafting commentary ("We are now consistent across both documents") converted faithfully as-is; (b) principal office 103 Nevada Ave #1 (Bylaws) vs Daniel's address #2 (Articles) - likely intentional, flagged only. Board otherwise unchanged (6 items).
+
+---
+POLE_TO_POLE_ARC (v0.402.0, 2026-08-27): no new rulings required — ten
+entries executed under the standing catalogue order ("continue to
+catalogue real wells, one at a time; grab all necessary data; then test
+verify"). Disclosure practices this arc, now standing: source-archive
+errors detected by an entry's own internal identities (entry 23 replicate
+typo, entry 24 row-slip, entry 26 expedition-prefix typo, entry 29
+duplicate/misfiled rows, entry 30 truncated header) are preserved
+verbatim, disclosed in provenance, and pinned as DETECTIONS — never
+repaired; rounding-boundary tolerances are set at the honest half-ulp and
+disclosed (entry 30 B-C rate 0.8051→0.80). Board otherwise unchanged (6 items).

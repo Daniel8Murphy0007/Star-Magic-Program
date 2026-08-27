@@ -1,0 +1,54 @@
+id,statement,family,lhs,rhs,status,source_papers
+d_bsfg,D_BSFG = D_crit - 2*SO_5,primitive_reduction,6,6,VERIFIED,PAPER_1521
+k_mex,K_MEX = Phi_5/6*SO_5/D_phys = 25/12,primitive_reduction,25/12,25/12,VERIFIED,PAPER_1522
+kappa,kappa = (SO_5/2)*F_TRZ^4 = 5e-4,primitive_reduction,1/2000,1/2000,VERIFIED,PAPER_2112
+q_phonon,Q_phonon = SO_5^2/D_phys^2 = 3*K_MEX = 25/4,primitive_reduction,25/4,25/4,VERIFIED,PAPER_2154
+d_gw,D_GW_erosion = D_phys/D_BSFG = 2/3,primitive_reduction,2/3,2/3,VERIFIED,PAPER_2154;PAPER_885
+h0,H_0 = A_5 + SO_5 = 70,integer_sum,70,70,VERIFIED,PAPER_1573;PAPER_2144
+kernel_k,K = F_TRZ*K_MEX*SSq = 19/160,kernel,19/160,19/160,VERIFIED,PAPER_2132
+immirzi,gamma_Immirzi = 2K = 19/80,kernel,19/80,19/80,VERIFIED,PAPER_2237
+tilt,tilt = K_MEX - 2 = 1/12,tilt,1/12,1/12,VERIFIED,PAPER_1156;PAPER_2178
+tilt_product,F_TRZ*Phi_5/6 = 1/12,tilt,1/12,1/12,VERIFIED,PAPER_2133
+alpha_inv_137,137 = A_5*K_MEX + 1/tilt = 125 + 12,tilt,137,137,VERIFIED,PAPER_2133
+magic_2,2 = SO_5 - 2*D_phys,magic,2,2,VERIFIED,PAPER_1203N
+magic_8,8 = 2*D_phys,magic,8,8,VERIFIED,PAPER_1203N
+magic_20,20 = 2*SO_5,magic,20,20,VERIFIED,PAPER_1203N
+magic_28,28 = D_crit + SO_5 - 2*D_phys,magic,28,28,VERIFIED,PAPER_1203N
+magic_50,50 = A_5 - SO_5,magic,50,50,VERIFIED,PAPER_1203N
+magic_82,82 = A_5 + D_crit - D_phys,magic,82,82,VERIFIED,PAPER_1203N
+magic_126,126 = D_crit + SO_5^2,magic,126,126,VERIFIED,PAPER_1203N;PAPER_2248
+a5_kmex_125,A_5*K_MEX = 125,cross_scale,125,125,VERIFIED,PAPER_1954
+a5_dphys_15,A_5/D_phys = 15,cross_scale,15,15,VERIFIED,PAPER_2143
+dbsfg_dphys_32,D_BSFG/D_phys = 3/2,cross_scale,3/2,3/2,VERIFIED,PAPER_1962
+cadence_62,62 = 2*D_crit + SO_5,composed_integer,62,62,VERIFIED,PAPER_2137
+halving,"halving series {D_phys/2, D_BSFG/2, SO_5/2, D_crit/2} = {2,3,5,13}",halving,"(Fraction(2, 1), Fraction(3, 1), Fraction(5, 1), Fraction(13, 1))","(2, 3, 5, 13)",VERIFIED,PAPER_2138
+f_trz_so5,F_TRZ = 1/SO_5,ratio,1/10,1/10,VERIFIED,PAPER_1160
+successor_11,SO_5 + 1 = 11 (successor ratio numerator),successor,11,11,VERIFIED,PAPER_2128
+nch_predecessor,N_CH = SO_5 - 1 = 9,successor,9,9,VERIFIED,PAPER_2120
+full_circle_360,360 = D_BSFG*A_5,angular,360,360,VERIFIED,PAPER_2116
+rot_45,45 = A_5*(D_phys-1)/D_phys,angular,45,45,VERIFIED,PAPER_2116
+page_recovery,Page = 1 - D_phys*F_TRZ^3*(1+F_TRZ^2) = 24899/25000,budget,24899/25000,24899/25000,VERIFIED,PAPER_2238
+wh_share,WH share = D_phys*F_TRZ^3*(1+F_TRZ^2) = 101/25000,budget,101/25000,101/25000,VERIFIED,PAPER_2238
+ns_cap,NS enstrophy cap = 17/20 (with 3/20 complement),budget,1,1,VERIFIED,PAPER_2098;PAPER_2238
+poincare_712,Poincare 7/12 = 1/2 + tilt,budget,7/12,7/12,VERIFIED,PAPER_2238
+ftrz_kmex_524,F_TRZ*K_MEX = 5/24,kernel,5/24,5/24,VERIFIED,PARADOX_AUDIT_2026_08_16
+frames_25,25 = SO_5^2/D_phys,composed_integer,25,25,VERIFIED,PAPER_2065
+sector_sum_15,sector ladder sum 1+2+3+4+5 = 15 = A_5/D_phys,sector_ladder,15,15,VERIFIED,PAPER_2241
+sector_sum_25,sector sum with UA = 25 = SO_5^2/D_phys,sector_ladder,25,25,VERIFIED,PAPER_2241
+e0_rung,E_0 exponent 20 = D_crit - D_BSFG = 2*SO_5,ladder_rung,20,20,VERIFIED,PAPER_2119;PAPER_2240
+epair_rung,E_pair exponent 22 = D_crit - D_phys = 2*(SO_5+1),ladder_rung,22,22,VERIFIED,PAPER_2239;PAPER_2240
+pair_exp_13,N_pairs(Sun) exponent 13 = D_crit/2 (rungs 9-22=-13),ladder_rung,-13,-13,VERIFIED,PAPER_2239
+k2q_3125,k2/Q rocky = (D_phys-1)/(A_5*K_MEX) = 3/125,tidal,3/125,3/125,VERIFIED,PAPER_2136
+q_tidal_252,Q_tidal = f_SCm/Gamma = 25/2,tidal,25/2,25/2,VERIFIED,PAPER_1804
+factor_03,0.3 = (D_phys-1)/SO_5,cross_regime,3/10,3/10,VERIFIED,PAPER_1953
+mass_gap_52,mass-gap boundary = SO_5/D_phys = 5/2,ratio,5/2,5/2,VERIFIED,P947 canonization v0.388.0
+frame_003,frame interval 0.03 = (D_phys-1)/SO_5^2,composed,3/100,3/100,VERIFIED,PAPER_2065;PAPER_2242
+comp_44,44 = D_phys*(SO_5+1),composed_integer,44,44,VERIFIED,PAPER_2126
+rem_579,"0.579 = SSq*Phi_res(0.84) + F_TRZ -- chain gives 0.5788 (1447/2500): EXACT AT PRINTED PRECISION only (rounds to 0.579), NOT rational-exact -- census finding, reclassified",printed_precision,1447/2500,579/1000,VERIFIED_AT_PRINTED_PRECISION,PAPER_1839;PAPER_2238
+phi_084,Phi_0.84 = 1 - (D_phys*F_TRZ)^2 = 21/25,composition,21/25,21/25,VERIFIED,PAPER_2134
+gamma_scm,gamma_recip = kappa*F_TRZ = 5e-5,composition,1/20000,1/20000,VERIFIED,PAPER_2246
+lambda_vac_11,lambda_vac/rho_SCm = SO_5+1 = 11,successor,11,11,VERIFIED,PAPER_2120
+hubble_tilt,Hubble tilt = 1/12 (K_MEX - 2),tilt,1/12,1/12,VERIFIED,PAPER_1156
+dg_lattice,d_g lattice = D_crit*SO_5^19 (documented 2.55e20 at 1.96%),composed_integer,26,26,VERIFIED,PAPER_2139;PAPER_2245
+drive_6000,drive 6000 Hz = A_5*SO_5^2,anchor_lattice,6000,6000,VERIFIED,PAPER_2242;PAPER_2243
+k1_1e15,k_1 = SO_5^(A_5/D_phys) = 1e15,anchor_lattice,1000000000000000,1000000000000000,VERIFIED,PAPER_2242

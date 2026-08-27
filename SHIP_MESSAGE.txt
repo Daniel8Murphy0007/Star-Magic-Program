@@ -1,23 +1,28 @@
-v0.401.0 - THE INCORPORATION SHIP: ENRGYONE, Inc. founding documents enter the repo
+v0.402.0 - THE POLE-TO-POLE SHIP: catalogue 20->30 entries, span measured
 
-Six corporate documents, converted from Daniel's source .docx via
-LibreOffice headless and FIDELITY-VERIFIED before deposit (word counts,
-head/tail identity, per-paragraph presence, table cells), now in pdf/:
+Ten downhole catalogue packages (v1.31-v1.40), entries 21-30, each a
+COMPLETE public dataset verbatim + provenance + live gate re-derivation:
 
-1. ARTICLES OF INCORPORATION (4 pp) - Ohio ORC 1701; R&D/UQFF/AI purpose
-2. BYLAWS (6 pp) - owners-control amendments; director slate
-3. COMMERCIAL LICENSE CONFIRMATION LETTER (2 pp) - co-owners' exclusive
-   grant to ENRGYONE, Inc.
-4. IP DUAL LICENSE EXPLANATION (3 pp) - AGPL-3.0 vs commercial + the
-   decision table (cell-verified)
-5. IP LICENSE & SUBLICENSE AGREEMENT (5 pp) - ENRGYONE -> ACHILLES, Inc.
-6. NDA / CONFIDENTIALITY AGREEMENT (4 pp) - closes the stack
+- 21 ODP 1027B thermal conductivity -> HEAT-FLOW CLOSURE q=k*dT/dz
+  = 130 mW/m2 computed live from two same-site entries
+- 22 DSDP 504B physical properties: WBD identity closes on all 61 rows
+- 23 ODP 1165B (ANTARCTICA, region 13): replicate audit catches a
+  dropped-digit typo IN the source archive
+- 24 504B sheeted-dike elastic moduli: four identities re-derived
+- 25 504B sound velocity: FOUR-dataset family + cross-entry live
+  impedance join (60/63 rows, Z = 13.9-18.5e6 kg/m2s)
+- 26 Nankai megasplay shear strength (region 14, first Chikyu):
+  published slope-stability conclusion re-derived, FS 2.38-15.31
+- 27 735B gabbros (SW Indian Ridge, region 15): CRUST LADDER COMPLETE
+  (sediment -> basalt -> dikes -> gabbro); five audits
+- 28 1274A mantle peridotite (Mid-Atlantic, region 16): LADDER BELOW
+  THE CRUST; five-identity lock, max dev 0.0016 g/cm3
+- 29 Chicxulub M0077A P-wave (region 17): the K-Pg peak ring, 717
+  self-checksumming rows, shock-damage deficit measured
+- 30 ACEX age model (central Arctic, region 18, 87.89N = 235 km from
+  the Pole): first time axis; hiatus verified by its own arithmetic
 
-One effective date (31 Jul 2026), one officer/director roster, each
-document citing its predecessors: the corporate counterpart of the repo's
-AGPL-3.0 + Commercial dual license.
-
-Gate pins: six-PDF presence + legal-verbatim standing rule (legal text
-gets the same discipline as well data). No code or catalogue changes.
-
-Gate 5,882 -> 5,884, 0 failures. 23-file charter pass verified.
+Reader: read_pangaea_txt ordinal-index fallback. Ship pin MEASURES the
+arc: latitude span between catalogue endpoints >152 degrees, computed
+live from in-file coordinates. THIRTY entries / EIGHTEEN regions /
+NINETEEN kinds. Gate 5,884 -> 5,906, 0 failures. 23-file pass.

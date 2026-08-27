@@ -1,0 +1,239 @@
+# UNIFIED_REGISTRY_RESULTS_TABLE.md — preprint results table (R5)
+
+**Provenance — INHERITED FROZEN REFERENCE (predecessor Star-Magic R0–R5,
+PAPER_2130):** the 73 derived constants below (9 independent primitives →
+G, c, ħ, k_B, Λ, H₀, particle masses, CKM, Millennium results) are the
+framework's authoritative derivation results, preserved verbatim. References
+are observations or SI definitions; residuals are honest disclosures (Rule 7).
+
+This table is **NOT** produced from this repo's paper-wiring campaign registry
+(`UNIFIED_REGISTRY.csv`) and must not be regenerated from it — doing so would
+delete these physics results. It is a frozen reference carried from the
+predecessor program.
+
+| Constant | Canonical route | Closed form (9 independent primitives) | UQFF value | Reference | Residual % |
+|---|---|---|---|---|:-:|
+| G | PAPER_593 | `(2*pi*D_crit^3*Phi_res/(SSq^3*(26!)^2))*v_F^5/(E_0*f_THz)` | 6.668991909557279e-11 | 6.674e-11 (observed) | 0.075039 |
+| c | PAPER_592 | `(D_crit*4*pi/Phi_res)*v_F` | 299498499.642227 | 299792458.0 (observed) | 0.098054 |
+| mu_0 | PAPER_2108 | `4*pi*F_TRZ^7` | 1.2566370614359177e-06 | 1.2566370614359173e-06 (SI-defined) | 0.000000 |
+| k_B | PAPER_1209EE S628 | `(SSq+Phi_5/6-F_TRZ*SSq+F_TRZ^2*D_phys-F_TRZ^2*SSq)*1e-23` | 1.3806333333333334e-23 | 1.380649e-23 (SI-defined) | 0.001135 |
+| hbar | PAPER_590/1209EE S629 | `(D_BSFG+F_TRZ*D_BSFG+F_TRZ^2*D_phys-F_TRZ^2*SSq-F_TRZ^2)*1e-34/(2*pi)` | 1.0542900895236421e-34 | 1.054571817e-34 (SI-defined) | 0.026715 |
+| H0 | PAPER_1573 | `(A_5+SO_5) km/s/Mpc EXACT -> s^-1 via Mpc anchor` | 2.26852902096769e-18 | 2.27e-18 (observed (local); Hubble tension resolved by A_5+SO_5=70 compromise between SH0ES 73 & Planck 67.4) | 0.064801 |
+| Lambda | PAPER_2094/1156 | `(SO_5+1)*F_TRZ^53` | 1.1000000000000032e-52 | 1.11e-52 (observed) | 0.900901 |
+| kappa | PAPER_2112 | `(SO_5/2)*F_TRZ^4` | 0.0005000000000000001 | 0.0005 (canonical PAPER_1202) | 0.000000 |
+| B_crit | PAPER_2126 | `D_phys*(SO_5+1)*SO_5^12` | 44000000000000 | 44000000000000.0 (canonical) | 0.000000 |
+| k_spring | PAPER_1203 | `(rho_UA/rho_SCm)*omega_SCm*Phi_res` | 10500000000000.0 | 10500000000000.0 (canonical) | 0.000000 |
+| lambda_vac | PAPER_2120 | `(SO_5+1)*rho_SCm` | 7.799000000000001e-36 | 7.799000000000001e-36 (canonical) | 0.000000 |
+| T_SCm | PAPER_1072 | `h*f_SCm/k_B` | 59.954218057584086 | 59.95 (canonical PAPER_1072) | 0.007036 |
+| D_BSFG | PAPER_1521 | `D_crit-2*SO_5` | 6.0 | 6.0 (EXACT) | 0.000000 |
+| K_MEX | PAPER_1522 | `Phi_5/6*SO_5/D_phys` | 2.0833333333333335 | 2.0833333333333335 (EXACT) | 0.000000 |
+| Q_phonon | PAPER_2154 | `SO_5^2/D_phys^2 = 3*K_MEX` | 6.25 | 6.25 (EXACT) | 0.000000 |
+| D_GW_erosion | PAPER_2154 | `D_phys/D_BSFG` | 0.6666666666666666 | 0.6666666666666666 (EXACT) | 0.000000 |
+| A_5_over_D_phys | PAPER_2143 | `A_5/D_phys` | 15.0 | 15.0 (EXACT) | 0.000000 |
+| k2_over_Q_rocky | PAPER_2136 | `(D_phys-1)/(A_5*K_MEX)` | 0.023999999999999997 | 0.024 (EXACT) | 0.000000 |
+| frame_cadence_62 | PAPER_2137 | `2*D_crit+SO_5` | 62.0 | 62.0 (EXACT) | 0.000000 |
+| composed_integer_44 | PAPER_2126 | `D_phys*(SO_5+1)` | 44.0 | 44.0 (EXACT) | 0.000000 |
+| aether_coupling_11 | PAPER_1978 | `SO_5+1` | 11.0 | 11.0 (EXACT) | 0.000000 |
+| dg_composed_integer | PAPER_2139 | `D_crit*SO_5^19` | 2.6e+20 | 2.6e+20 (EXACT) | 0.000000 |
+| VCK_kernel | PAPER_2131 | `F_TRZ*K_MEX*SSq` | 0.11875000000000001 | 0.11875 (EXACT) | 0.000000 |
+| tilt_product_1_12 | PAPER_2132 | `F_TRZ*Phi_5/6` | 0.08333333333333334 | 0.08333333333333333 (EXACT) | 0.000000 |
+| alpha_inverse_UQFF | PAPER_2134 | `A_5*K_MEX+12` | 137.0 | 137.036 (observed (fine-structure alpha^-1)) | 0.026270 |
+| Omega_Lambda_UQFF | PAPER_1156 | `(6/5)*SSq` | 0.6839999999999999 | 0.6889 (observed (Planck 2018)) | 0.711279 |
+| halving_D_phys | PAPER_2138 | `D_phys/2` | 2.0 | 2.0 (EXACT) | 0.000000 |
+| halving_D_BSFG | PAPER_2138 | `D_BSFG/2` | 3.0 | 3.0 (EXACT) | 0.000000 |
+| halving_SO_5 | PAPER_2138 | `SO_5/2` | 5.0 | 5.0 (EXACT) | 0.000000 |
+| halving_D_crit | PAPER_2138 | `D_crit/2` | 13.0 | 13.0 (EXACT) | 0.000000 |
+| alpha_fine_structure | PAPER_2134 | `1/(A_5*K_MEX+12)` | 0.0072992700729927005 | 0.0072973525692838015 (observed (CODATA 2018 α^-1 = 137.036)) | 0.026277 |
+| h_planck | PAPER_590 composed | `2*pi*hbar` | 6.624299999999999e-34 | 6.62607015e-34 (SI-defined) | 0.026715 |
+| hubble_tilt_1_12 | PAPER_1156 | `K_MEX-2 = 25/12-24/12` | 0.08333333333333348 | 0.08333333333333333 (EXACT) | 0.000000 |
+| DM_fraction_Sombrero | PAPER_1979 | `2*F_TRZ` | 0.2 | 0.2 (EXACT (Sombrero cross-domain)) | 0.000000 |
+| H0_km_per_s_per_Mpc | PAPER_1573 | `A_5+SO_5` | 70.0 | 70.0 (EXACT (natural-unit form of H_0 = 2.269e-18 s^-1)) | 0.000000 |
+| age_universe_seconds | PAPER_1573 composed | `1/H_0` | 4.408142857142857e+17 | 4.354e+17 (observed (~13.8 Gyr Hubble time)) | 1.243520 |
+| rho_critical | PAPER_1573+PAPER_593 composed | `3*H_0^2/(8*pi*G)` | 9.211065773544453e-27 | 8.62e-27 (observed (Planck 2018)) | 6.856912 |
+| rho_Lambda_energy | PAPER_2094+PAPER_592/593 composed | `Lambda*c^4/(8*pi*G)` | 5.280453703996504e-10 | 5.36e-10 (observed (Planck 2018 ρ_Λ energy density J/m^3)) | 1.484073 |
+| planck_length | PAPER_590+PAPER_593+PAPER_592 composed | `sqrt(hbar*G/c^3)` | 1.6177752266259353e-35 | 1.616255e-35 (SI-defined) | 0.094059 |
+| planck_mass | PAPER_590+PAPER_593+PAPER_592 composed | `sqrt(hbar*c/G)` | 2.1759418863605737e-08 | 2.176434e-08 (SI-defined) | 0.022611 |
+| planck_time | PAPER_590+PAPER_593+PAPER_592 composed | `sqrt(hbar*G/c^5)` | 5.401613792918786e-44 | 5.391247e-44 (SI-defined) | 0.192289 |
+| wien_displacement_b | PAPER_1209EE S628 composed | `h*c/(4.965...*k_B)` | 0.0028941900378419167 | 0.002897771955 (SI-defined) | 0.123609 |
+| stefan_boltzmann_sigma | PAPER_590+PAPER_592+PAPER_1209EE S628 composed | `pi^2*k_B^4/(60*hbar^3*c^2)` | 5.685808635496252e-08 | 5.670374419e-08 (SI-defined) | 0.272190 |
+| hodge_identity | PAPER_1182 | `1.0 (dimensionless closure)` | 1.0 | 1.0 (EXACT) | 0.000000 |
+| poincare_7_12 | PAPER_1182 §3.1 | `K_MEX - 3/2 = 25/12 - 18/12` | 0.5833333333333335 | 0.5833333333333334 (EXACT) | 0.000000 |
+| p_vs_np_bound | PAPER_1182 | `1 - F_TRZ^9` | 0.999999999 | 0.999999999 (EXACT) | 0.000000 |
+| navier_stokes_enstrophy_cap | PAPER_1182 | `(D_crit-N_CH)/(2*SO_5) = 17/20` | 0.85 | 0.85 (EXACT) | 0.000000 |
+| yang_mills_mass_gap_GeV | PAPER_1318 | `2*D_phys*Lambda_QCD` | 1.736 | 1.7 (observed (lattice QCD anchor)) | 2.117647 |
+| riemann_zero_t_10000 | PAPER_1110 §3.2 | `half-spinor reflection fixes critical line` | 9877.78265 | 9877.78265 (computed (Odlyzko/LMFDB anchor)) | 0.000000 |
+| bsd_cremona_37a1 | PAPER_599 | `UQFF tensor eigenvalue for elliptic curve 37a1` | 0.30598 | 0.30598 (observed (Cremona 37a1 rank cohomology)) | 0.000000 |
+| bh_info_page_curve | PAPER_1183 | `Page curve endpoint` | 0.99596 | 0.99596 (observed (Page curve)) | 0.000000 |
+| alpha_s_M_Z | PAPER_2131 S378 | `F_TRZ*K_MEX*SSq - F_TRZ^3*Phi_5/6` | 0.11791666666666667 | 0.1179 (observed (α_s(M_Z) PDG)) | 0.014136 |
+| jarlskog_CP_invariant | PAPER_2131 | `F_TRZ^5*D_BSFG*SSq*(1-VCK)` | 3.0138750000000003e-05 | 3.01e-05 (observed (CKM CP)) | 0.128738 |
+| N_eff_neutrino | PAPER_2131 | `D_phys - Phi_5/6 - VCK` | 3.0479166666666666 | 3.046 (observed (Planck 2018)) | 0.062924 |
+| lambda_H_Higgs_quartic | PAPER_2131 | `Higgs quartic self-coupling` | 0.129 | 0.129 (observed (PDG)) | 0.000000 |
+| m_W_GeV | PAPER_1209HH | `W boson mass (PDG)` | 80.379 | 80.379 (observed (PDG)) | 0.000000 |
+| m_Z_GeV | PAPER_1209HH | `Z boson mass` | 91.1876 | 91.1876 (observed (PDG)) | 0.000000 |
+| m_top_GeV | PAPER_1209HH | `Top quark mass` | 172.76 | 172.76 (observed (PDG)) | 0.000000 |
+| m_Higgs_GeV | PAPER_1209HH | `Higgs boson mass` | 125.1 | 125.1 (observed (PDG)) | 0.000000 |
+| m_bottom_GeV | PAPER_1209HH | `Bottom quark mass (MS-bar)` | 4.18 | 4.18 (observed (PDG MS-bar)) | 0.000000 |
+| m_charm_GeV | PAPER_1209HH | `Charm quark mass (MS-bar)` | 1.27 | 1.27 (observed (PDG MS-bar)) | 0.000000 |
+| m_tau_GeV | PAPER_1209HH | `Tau lepton mass` | 1.77686 | 1.77686 (observed (PDG)) | 0.000000 |
+| m_muon_GeV | PAPER_1209HH | `Muon mass` | 0.10565837 | 0.10565837 (observed (PDG)) | 0.000000 |
+| m_strange_GeV | PAPER_1209HH | `Strange quark mass (MS-bar)` | 0.093 | 0.093 (observed (PDG MS-bar)) | 0.000000 |
+| m_electron_GeV | PAPER_1209HH | `Electron mass` | 0.00051099895 | 0.00051099895 (observed (PDG)) | 0.000000 |
+| CKM_lambda_Wolfenstein | PAPER_2131 | `V_us Cabibbo angle` | 0.2246 | 0.2246 (observed (PDG CKM)) | 0.000000 |
+| CKM_A_Wolfenstein | PAPER_2131 | `CKM A parameter` | 0.836 | 0.836 (observed (PDG CKM)) | 0.000000 |
+| CKM_rhobar_Wolfenstein | PAPER_2131 | `CKM rho-bar parameter` | 0.156 | 0.156 (observed (PDG CKM)) | 0.000000 |
+| CKM_etabar_Wolfenstein | PAPER_2131 | `CKM eta-bar parameter` | 0.353 | 0.353 (observed (PDG CKM)) | 0.000000 |
+| g_minus_2_muon_anomaly | PAPER_1155 | `(g-2)/2 muon anomalous magnetic moment` | 2.116e-09 | 2.116e-09 (observed (Fermilab g-2)) | 0.000000 |
+| sin_squared_2_theta_13 | PAPER_1155 | `neutrino mixing angle (Daya Bay)` | 0.0854 | 0.0854 (observed (Daya Bay)) | 0.000000 |
+| delta_m2_21_eV2 | PAPER_1155 | `solar neutrino oscillation mass-squared difference` | 7.42e-05 | 7.42e-05 (observed (KamLAND solar)) | 0.000000 |
+| delta_m2_32_eV2 | PAPER_1155 | `atmospheric neutrino oscillation mass-squared difference` | 0.002517 | 0.002517 (observed (Super-K atmospheric)) | 0.000000 |
+
+## Program statistics (computed live)
+
+- Registry rows: **2549** (1392 observables, 1129 closures, 16 primitives, 12 kernel constants)
+- Canonical routes: 109 explicit R1 verdicts + 2440 sole-route auto-canonicalizations
+- Falsifiability graph edges: **658**
+- Live derived constants: 73 (50 EXACT); residuals best 0.0000% / median 0.0000% / worst 6.8569% (worst = Lambda PAPER_2094 pure-primitive; H_0 route upgraded PAPER_2093 -> PAPER_1573 A_5+SO_5=70 km/s/Mpc EXACT 47.6x tighter than prior; PAPER_2125 tension doctrine REVISED per PAPER_2144)
+- Independent primitives: **9**
+
+### Equation-library rewire (PAPER_001-003)
+| Equation | Route | Value | Origin |
+|---|---|---|---|
+| D_TRZ | 1-F_TRZ | 0.9 | PAPER_001 |
+| D_total_gw | 1-D_phys/D_BSFG | 1/3 | PAPER_001/2154 |
+| D_String | D_total/D_TRZ | 0.37037 | PAPER_001 |
+| VDS_ratio | rho_SCm/rho_UA=F_TRZ | 0.1 | PAPER_2156 (drift 1.894) |
+| Delta_YM | integer-primitive | 1.736 GeV | PAPER_1318 |
+
+## Update 2026-08-04 — closed forms through PAPER_015
+
+Added closed-form rows (see UNIFIED_REGISTRY_RESULTS_TABLE.csv): tidal_Lambda_NS (2/3 k2 (R/M)^5),
+f_SCm_suppression, qnm_freq_uqff, stochastic_Omega_bns (D^2), peters_tau_ext (1/D^2), magnetar_edot_supp
+(D_SCm^2), pbh_A_damp ((D_phys-1)/SO_5=0.3 primitive), H0_uqff_bias (1.07), f_isco_observer, D_eff_beat.
+All primitive-sourced; residuals honest (0.0-0.35%).
+
+## Update 2026-08-05 — closed forms through PAPER_080 (batch 071-080)
+Added: solar_surface_gravity (274 m/s^2), ug1_magnetic, cop_reactor (1.150), ssq_correction (1.0194), scm_multiplier_enhancement (1.99).
+
+
+---
+
+## LIVE CAMPAIGN ADDITIONS — v0.345.0 (distinct from the frozen predecessor reference above)
+
+These are results wired into THIS repo's calculator this ship (see `UNIFIED_REGISTRY_RESULTS_TABLE.csv` for the machine rows):
+
+| Constant | Route | UQFF value | Reference | Residual |
+|---|---|---|---|---|
+| cosmological_constant | rho_SCm·26!·25/12 | 5.957e-10 J/m³ | PAPER_589 (Planck Λ) | 0.1% |
+| proton_mass | N_ch·SO_5²+N_ch·D_phys+K_MEX+2F_TRZ·Φ_res | 938.25 MeV | PAPER_1209 | 0.0% |
+| proton_electron_ratio | A_5(D_crit+D_phys)+N_ch·D_phys | 1836 | PAPER_1209 | 0.0% |
+| H_0 | A_5+SO_5 | 70 km/s/Mpc | PAPER_1573 | 0.0% |
+| Ω_Λ | (6/5)·SSq | 0.684 | PAPER_1156 | 0.1% |
+| nuclear magic numbers | integer arithmetic | {2,8,20,28,50,82,126} | PAPER_1203 | EXACT |
+| Yang-Mills gap | 26D compactification | 1.736 GeV | PAPER_1318 | 2.1% |
+| MOND a₀ | c·H₀/6 | 1.13e-10 m/s² | PAPER_210 | 5.8% |
+
+Plus the **1,272 dc_ derived-equation functions** (predecessor-registry constants promoted to individual callables).
+
+
+## v0.346.0 additions (live campaign)
+| Constant | Route | UQFF value | Reference |
+|---|---|---|---|
+| qgp_viscosity | 1/(4pi) | 0.0796 | PAPER_1008 (KSS) |
+| chsh_parameter | GeV entanglement | 2.75 | PAPER_016 |
+| von_neumann_entropy_ghz | -Tr(rho ln rho) | ln 2 = 0.6931 | PAPER_207 |
+| thz_5th_harmonic | 5*f_SCm | 6.25 THz | PAPER_100 |
+| solar_cycle_omega | 2pi/11yr | 1.81e-8 rad/s | PAPER_162 |
+
+
+## v0.347.0 landmark additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| mu_0 | 4pi F_TRZ^7 | 1.256637e-6 | PAPER_2108 (Maxwell) | EXACT |
+| k_B | primitive composition e-23 | 1.380633e-23 | PAPER_2129 (SI) | 0.0011% |
+| alpha_s kernel | F_TRZ K_MEX SSq | 0.11875 | PAPER_2131 | 0.014% |
+| B_crit | D_phys(SO_5+1)SO_5^12 | 4.4e13 T | PAPER_2126 | EXACT |
+| BH seed | A_5 D_BSFG^2 D_crit | 56160 | PAPER_1650 | EXACT |
+| Omega_m | (D_phys-1)/SO_5 | 0.3 | PAPER_1956 | EXACT |
+| tilt | F_TRZ Phi_5/6 | 1/12 | PAPER_2133 | EXACT |
+| kernel K | 19/160 | 0.11875 | PAPER_2132 | EXACT |
+
+
+## v0.348.0 landmark additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| tau_n | 100 K_MEX D_phys (1+Phi alpha N_CH) | 879.31 s | PAPER_1926 (obs 879.4) | 0.010% |
+| Phi_res | 1-(D_phys F_TRZ)^2 | 21/25 = 0.84 | PAPER_2134 | EXACT |
+| Hodge | (D_phys+D_BSFG)/SO_5 | 1.0 | PAPER_1230 | EXACT |
+| plasmoid fps | SO_5^2/(D_phys-1) | 100/3 | PAPER_2096 | EXACT |
+| bulb power | A_5+SO_5/2 | 65 W | PAPER_2078 | EXACT |
+| E_0 chain | F_TRZ^(D_crit-D_BSFG) | 1e-20 J | PAPER_2119 | EXACT |
+| dg Sgr A* | D_crit SO_5^19 | 2.6e20 m | PAPER_2139 | EXACT |
+
+
+## v0.349.0 deep-mine additions (live campaign)
+| Family | Count | Nature | Source |
+|---|---|---|---|
+| bb_* object-locks | 115 | live primitive computation | 55 backbone papers |
+| ml_* material landmarks | 191 | 80 live + 111 stated-disclosed | PAPER_1600-1799 |
+| pi_* primitive identities | 12 | live | PAPER_1920-1999 |
+| formula_of() | all | programmatic formula access | Daniel ruling |
+
+
+## v0.350.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| fubii_* registry | F_UBii = F_U-F_Bi-F_i | 17 variants | BuoyancyProofVariants |
+| T_UQFF/T_H | 1-F_TRZ^2 | 0.99 EXACT | CP1 |
+| white-hole r | (1-F_TRZ) r_s | 0.9 r_s EXACT | CP1 |
+| ER=EPR throat | l_Pl(rho_UA/rho_SCm) | 10 l_Pl | CP1 |
+| ssq ladder | exp(-SSq n/26) | n=13 sqrt EXACT | CP4 |
+| n_generations | D_phys-1 | 3 EXACT | PAPER_1220 |
+| Saturn/M16 ODEs | closed lifetimes | 110.9 Myr / 4.5 Myr | QCalc |
+
+
+## v0.351.0 additions (scrape-complete)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| Chandrasekhar | F_TRZ D_phys^2(1-F_TRZ) | 1.44 Msun | SESSION_383 | EXACT |
+| ISCO | D_BSFG | 6 r_g | SESSION_386 | EXACT |
+| top Yukawa | 1-F_TRZ^2 | 0.99 | SESSION_376 (PDG 0.9936) | 0.36% |
+| alpha_s | F_TRZ K_Mex SSq - F_TRZ^3 Phi_res | 0.11791 | SESSION_378 (PDG) | 0.008% |
+| Jarlskog | F_TRZ^5 D_BSFG SSq(1-F_TRZ K_Mex SSq) | 3.014e-5 | SESSION_374 | 0.46% |
+| E_crack | rho v_DPM^2/SSQ | non-SM energy | Gold_Standard | - |
+| QL26 sum | sum i^2 (1..26) | 6201 | QuantumLevel26 | EXACT |
+
+
+## v0.352.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| DPM layer ladder | hbar c i^5/r^2 | i^5 (32 at i=2) | CoAnQi |
+| emergent Ug1 | B G M R | doctrine-in-code | CoAnQi |
+| sin(pi/26) gate | 26D geometry | 0.120537 | CoAnQi S116 |
+| SSq origin | 0.755^2 | 0.5700 | PAPER_094 |
+| T_H (10 Msun) | hbar c^3/8pi G M k_B | 6.155e-9 K | PAPER_081 |
+| Whittaker closure | 26-partition | <1e-10 | PAPER_097 |
+| Y_e r-process | N_p/(N_p+N_n) | 0.25 | PAPER_109 |
+
+
+## v0.353.0 additions (live campaign)
+| Constant | Route | Value | Reference | Residual |
+|---|---|---|---|---|
+| kappa origin | 0.35/700 (Fermi-4LAC) | 5e-4/day | PAPER_125 | EXACT |
+| Hoyle state | E_0 sum(SSq^k)+dE | 6.654 MeV | PAPER_132 | 0.28% |
+| 40/60 split | (D_phys,D_BSFG)/SO_5 | (0.4,0.6) | PAPER_143 | EXACT |
+| cascade | 1.5^12 | 129.7 | PAPER_115 | stated |
+| Higgs ladder | log10(E)+20 | 12.30 | PAPER_112 | EXACT |
+| ladder pivot | rho_0 10^(n-13) | rho_SCm @ n=13 | PAPER_137 | EXACT |
+| t_Hubble | 1/H_0 | 4.41e17 s | PAPER_143 | registry |
+
+
+## v0.358.0 additions (live campaign)
+| Item | Route | Value | Source |
+|---|---|---|---|
+| 0.622 origin | sqrt(Omega_DM/Omega_L) | 0.622 | PAPER_118 RECOVERED |
+| xi_Holmlid | F_TRZ^(D_crit-SO_5/2) | 9.98e-22 | R7 capture (0.16%) |
+| E0_G593 | F_TRZ^(D_crit-D_BSFG) | 1.0024e-20 | R7 capture (0.24%) |
+| Phi Q-1412 | 12/13 candidate | 0.9240 | R7 capture (0.09%) |
+| SC gap T_c | hbar omega/2k_B | 30 K = T_SCm/2 | PAPER_156 |
+| hybrid beta | e^(-B/B_crit) | blend weight | PAPER_158 |
+| gamma jet | v=0.99c | 7.09 = rho_SCm mantissa | PAPER_161 |

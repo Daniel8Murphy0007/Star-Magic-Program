@@ -12249,3 +12249,4 @@ catalogue_ten_wells_v114_v120,PAPER_2257,EXTENDS,CATALOGUE_ARC,ten real-data ent
 deepdata_arc_v121_v125,PAPER_2257,EXTENDS,DEEPDATA_ARC,Volve production time series + KTB suite (HB temp + VB twin-sensor + HB trajectory + HB BHGM density) join the 10-entry catalogue
 twentywells_arc_v126_v130,PAPER_2257,EXTENDS,TWENTYWELLS_ARC,KTB strength pair + 504B fluids + U1324 pressure + 1027C CORK join the 15-entry catalogue; PANGAEA source family opened
 incorporation_documents_v0401,COMMERCIAL.md,FORMALIZES,INCORPORATION_ARC,the repo dual-license (LICENSE + COMMERCIAL.md) gains its corporate counterpart: ENRGYONE Inc incorporation -> governance -> grant -> doctrine -> ACHILLES sublicense -> NDA
+pole_to_pole_catalogue_v0402,uqff_downhole_simulator/catalog,EXTENDS,POLE_TO_POLE_ARC,ten verbatim public datasets with live re-derivation pins: the catalogue spans 87.89N (ACEX) to -64.38S (Prydz Bay) and seafloor mud to mantle peridotite

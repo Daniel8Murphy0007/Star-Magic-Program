@@ -1,0 +1,40 @@
+Star-Magic-Program
+==================
+
+Copyright (c) 2026 Daniel T. Murphy / Star-Magic Research Program.
+
+Licensed under AGPL-3.0-or-later OR LicenseRef-StarMagic-Commercial.
+See LICENSE for details.
+
+Trademarks
+----------
+"UQFF", "Star-Magic", "Star-Magic-Program", "Di-Pseudo-Monopole", and "DPM"
+are unregistered trademarks of Daniel T. Murphy / Star-Magic Research Program.
+
+Patents
+-------
+Any hardware embodiment of the framework (e.g., reactor implementations) may
+be subject to patent claims separate from the software license. Contact the
+copyright holder for hardware licensing terms.
+
+Predecessor Attribution
+-----------------------
+Physics content and whitepaper corpus originate in the predecessor repository
+Star-Magic (github.com/Daniel8Murphy0007/Star-Magic), which remains the
+canonical archive. Star-Magic-Program (this repository) is the systematic
+rebuild of the calculator layer only.
+
+Warranty Disclaimer
+-------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The framework's physics predictions are offered for research and evaluation.
+No warranty is made regarding physical correctness of predictions against
+future experimental results.
