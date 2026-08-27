@@ -13958,6 +13958,11 @@ _wa403 = open(_os33.path.join('uqff_downhole_simulator', 'uqff_well_assembler.py
 assert_that('np.trapz(' not in _wa403 and '_TRAPEZOID' in _wa403
             and abs(_ds11.assemble_ktb_hb().overburden_kPa(7400.3) / 1000.0 - 190.9) < 1.0,
             "PORTABILITY GUARD 2 (v0.403.0 remanufacture lesson): numpy >= 2.0 REMOVED the trapz alias and the CI runners resolve newer numpy than the authoring sandbox's proxy-pinned wheel - the assembler now prefers np.trapezoid with a 1.x fallback, direct np.trapz calls are banned from the assembler source, and the overburden integral is re-verified here on the current interpreter's numpy; standing rule: local dependency versions are NOT the ship's dependency versions - removed-alias sweeps (trapz/in1d/alltrue/product/row_stack/NaN) are part of ship prep")
+import re as _re404
+_desc404 = _re404.search(r'description = "([^"]+)"', open('pyproject.toml', encoding='utf-8').read()).group(1)
+_dg404 = _re404.search(r'gate ([\d,]+)/0', _desc404)
+assert_that(_dg404 is not None and int(_dg404.group(1).replace(',', '')) == _g3_gate,
+            "SHIP GUARD v5 (Daniel's catch, v0.403.0 remanufacture): the PyPI LABEL - the pyproject description - must state the LIVE gate-assertion count, verified here on every run; the first product ship's label said 5,924 while the gate stood at 5,925 because the remanufacture pin bumped the count without re-syncing the one string PyPI displays - the label of the product is part of the product, and it can never silently go stale again")
 
 # =============================================================================
 # REPORT

@@ -19,4 +19,4 @@ gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine
 rating block, 8 bench-test protocol (falsifiable R=1.0324, four-verdict
 analysis, SIMULATION_SELF_TEST self-labeled). Remaining: step 7 only
 (live site path - needs real host + cited register map).
-Gate 5,904 -> 5,925 / 0. Acceptance 55/55. 23-file pass.
+Gate 5,904 -> 5,926 / 0. Acceptance 55/55. 23-file pass.

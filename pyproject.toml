@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "star-magic-program"
 version = "0.403.0"
-description = "Star-Magic UQFF calculator v0.403.0: THE PRODUCT SHIP. 2,253 dispatches (2,308 keys), gate 5,924/0. The downhole simulator completes the adopted independent-evaluation plan (v1.41-v1.48): finish sequence 1-5 - modbus unified, well assembler, measured wells as engine defaults, operator surface, in-package 55-check acceptance suite = FINISHED OFFLINE PRODUCT; field tier 6a gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine rating block, 8 bench-test protocol. Next: PAPER_2258."
+description = "Star-Magic UQFF calculator v0.403.0: THE PRODUCT SHIP. 2,253 dispatches (2,308 keys), gate 5,926/0. The downhole simulator completes the adopted independent-evaluation plan (v1.41-v1.48): finish sequence 1-5 - modbus unified, well assembler, measured wells as engine defaults, operator surface, in-package 55-check acceptance suite = FINISHED OFFLINE PRODUCT; field tier 6a gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine rating block, 8 bench-test protocol. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
