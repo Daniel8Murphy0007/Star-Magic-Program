@@ -88,6 +88,7 @@ class Sensor:
     k_structural_trim: float = 1.0    # engineering trim (renamed from template 'K_MEX' knob)
     phi_coupling_trim: float = 1.0    # engineering trim (renamed from template 'Phi_res' knob)
     name: str = ""
+    tool_name: str = "quartz_pt_uqff_geoq177_30k"   # v1.47.0 mixed strings: which library tool sits here
 
 
 @dataclass
@@ -107,6 +108,8 @@ class SimulatorConfig:
     comparison_mode: bool = True                    # twin-gauge UQFF-vs-conventional tracking
     gauge_spec: object = None                       # GaugeSpec (v1.5.0, uqff_gauge_specs); None = template anchors
     deviation: object = None                        # DeviationSurvey (v1.6.0): sensors at MD, physics at TVD
+    toolstring: object = None                       # ToolString (v1.47.0): mixed per-station tool models
+    acknowledge_over_rating: bool = False           # v1.47.0: the ONLY way past the in-engine rating block
 
 
 class UQFFDownholeEngine:
@@ -118,16 +121,49 @@ class UQFFDownholeEngine:
         self.sensors: List[Sensor] = []
         self._build_sensors()
         self._init_state()
+        if self.cfg.toolstring is not None:
+            self._enforce_rating()
+
+    def _enforce_rating(self) -> None:
+        """v1.47.0: the rating check runs INSIDE the engine, not only as a
+        print - a tool over its cited rating at its station (against the
+        REAL profile when one is attached) blocks construction unless the
+        operator's explicit acknowledge_over_rating rides in the config."""
+        from .uqff_tool_library import rating_check
+        report = rating_check(self.cfg.toolstring,
+                              profile=self.cfg.profile,
+                              deviation=self.cfg.deviation)
+        blocks = [r for r in report if not r["ok"]]
+        self.rating_report = report
+        if blocks and not self.cfg.acknowledge_over_rating:
+            names = "; ".join(
+                f"{b['tool']}@{b['md_ft']:.0f}ft ({b['station_temp_C']}C > "
+                f"{b['temp_rating_C']}C rated)" for b in blocks)
+            raise RuntimeError(
+                f"ENGINE RATING BLOCK: {names}. The check runs inside the "
+                "engine (v1.47.0) - set acknowledge_over_rating=True in the "
+                "config as an explicit operator decision, or fix the string.")
 
     # -- construction -------------------------------------------------------
     def _build_sensors(self) -> None:
-        self.sensors = [
-            Sensor(depth_ft=float(d),
-                   k_structural_trim=self.cfg.global_k_structural_trim,
-                   phi_coupling_trim=self.cfg.global_phi_coupling_trim,
-                   name=f"S{i + 1}")
-            for i, d in enumerate(self.cfg.sensor_depths_ft)
-        ]
+        if self.cfg.toolstring is not None:
+            stations = sorted(self.cfg.toolstring.stations, key=lambda x: x[0])
+            self.sensors = [
+                Sensor(depth_ft=float(md),
+                       k_structural_trim=self.cfg.global_k_structural_trim,
+                       phi_coupling_trim=self.cfg.global_phi_coupling_trim,
+                       name=f"S{i + 1}", tool_name=tn)
+                for i, (md, tn) in enumerate(stations)
+            ]
+            self.cfg.sensor_depths_ft = [s.depth_ft for s in self.sensors]
+        else:
+            self.sensors = [
+                Sensor(depth_ft=float(d),
+                       k_structural_trim=self.cfg.global_k_structural_trim,
+                       phi_coupling_trim=self.cfg.global_phi_coupling_trim,
+                       name=f"S{i + 1}")
+                for i, d in enumerate(self.cfg.sensor_depths_ft)
+            ]
 
     def _physics_depth_ft(self, md_ft: float) -> float:
         """Sensor addresses are MD (position on the string); pressure and
@@ -166,6 +202,77 @@ class UQFFDownholeEngine:
             spec=self.cfg.gauge_spec)
         return float(r["value"]["drift_pct"])
 
+    def station_drift_legs(self, i: int) -> dict:
+        """v1.47.0 mixed strings: each station's drift legs come from ITS
+        tool's runnable model - and tools without a runnable model REFUSE
+        (status says why) instead of borrowing the quartz curve."""
+        from .uqff_tool_library import TOOL_LIBRARY, piezoresistive_drift
+        s = self.sensors[i]
+        tool = TOOL_LIBRARY.get(s.tool_name)
+        t_C = (float(self.T[i]) - 32.0) * 5.0 / 9.0
+        out = {"station": s.name, "md_ft": s.depth_ft, "tool": s.tool_name,
+               "tool_class": tool.tool_class if tool else "?",
+               "uqff_drift_pct": None, "conventional_drift_pct": None}
+        if tool is None:
+            out["status"] = f"UNKNOWN_TOOL '{s.tool_name}' - refused"
+            return out
+        if tool.tool_class == "QUARTZ_PT_GAUGE":
+            out["conventional_drift_pct"] = round(
+                conventional_drift(t_C, float(self.P[i]),
+                                   spec=self.cfg.gauge_spec), 4)
+            if "conventional" in s.tool_name:
+                out["status"] = ("NO_UQFF_LEG: conventional instrument - the "
+                                 "reference leg only (twin comparison needs "
+                                 "the UQFF tool at this station)")
+            else:
+                out["uqff_drift_pct"] = round(
+                    self.compute_drift(s, float(self.T[i]),
+                                       float(self.P[i])), 4)
+                out["status"] = "TWIN_LEGS"
+        elif tool.tool_class == "PIEZORESISTIVE_PT_GAUGE":
+            out["conventional_drift_pct"] = round(piezoresistive_drift(t_C), 4)
+            out["status"] = ("PIEZO_CLASS_ENVELOPE (labeled representative "
+                            "fit, vendor-scatter disclosed) - NO_UQFF_MODEL: "
+                            "no UQFF piezo derivation in the corpus, refused "
+                            "rather than invented")
+        else:
+            out["status"] = ("PARAMETERS_USER_SUPPLIED: no vendor datasheet "
+                            "fetched for this tool class - drift model "
+                            "REFUSED; station still streams well P/T")
+        return out
+
+    def mixed_summary(self) -> dict:
+        """Per-station tool report + aggregates computed ONLY over stations
+        possessing both legs, with the counts disclosed."""
+        rows = [self.station_drift_legs(i) for i in range(len(self.sensors))]
+        twin = [r for r in rows if r["status"] == "TWIN_LEGS"]
+        agg = None
+        if twin:
+            uq = float(np.mean([r["uqff_drift_pct"] for r in twin]))
+            cv = float(np.mean([r["conventional_drift_pct"] for r in twin]))
+            agg = {"avg_uqff_drift_pct": round(uq, 4),
+                   "avg_conventional_drift_pct": round(cv, 4),
+                   "measured_ratio_mean": round(cv / uq, 4) if uq > 0 else None}
+        return {"stations": rows,
+                "twin_leg_stations": len(twin),
+                "single_or_refused_stations": len(rows) - len(twin),
+                "aggregate_over_twin_stations_only": agg}
+
+    def _noise_drifts(self) -> np.ndarray:
+        """Drift values feeding the template noise-suppression map: each
+        station's own runnable model; refused stations contribute 0.0
+        (neutral suppression - template noise unshaped, per mixed_summary)."""
+        if self.cfg.toolstring is None:
+            return self.current_drifts
+        out = []
+        for i in range(len(self.sensors)):
+            legs = self.station_drift_legs(i)
+            d = legs["uqff_drift_pct"]
+            if d is None:
+                d = legs["conventional_drift_pct"]
+            out.append(0.0 if d is None else float(d))
+        return np.array(out)
+
     @property
     def current_drifts(self) -> np.ndarray:
         return np.array([self.compute_drift(s, self.T[i], self.P[i])
@@ -199,7 +306,7 @@ class UQFFDownholeEngine:
     def step(self, dt: float = 0.12) -> None:
         self.time += dt
         n = len(self.sensors)
-        drifts = self.current_drifts
+        drifts = self._noise_drifts()
         suppression = np.clip(1.0 - (drifts / 0.28), 0.25, 1.0)   # template noise-suppression map
         noise_P = np.random.normal(0, 28 * self.cfg.noise_scale, n) * suppression
         noise_T = np.random.normal(0, 0.9 * self.cfg.noise_scale, n) * suppression

@@ -1052,3 +1052,187 @@ Thirty entries in, the catalogue spans pole to pole (Prydz Bay to the Lomonosov 
 to mantle peridotite, a 66-Myr-old impact's shock damage to day-indexed production data - eighteen
 regions, nineteen kinds, every dataset verbatim, every flaw kept, every derivable number re-earned
 by the gate on every run. Gate 5,902 -> 5,904. Package v1.40.0. Reader unchanged.
+
+## APPENDED 2026-08-27 (32) - v1.41.0: the independent evaluation, the finish sequence, and step 1 (Modbus unification)
+
+Daniel supplied an independent component-inventory and gap analysis of the v1.30.0 simulator and
+ruled: "I want to follow the plan if it looks right." Verification against the code confirmed all
+four spot-checked claims (registry/client split as seen statically; engine consuming only
+depth/pressure/temp with template anchors; 141-line v1.0-era Qt app; ToolString not driving step()).
+Two stale numbers corrected for the record (catalogue is now 30 entries / 18 regions / 19 kinds
+after v0.402.0; gate 5,906) - neither changes any finding. THE PLAN IS ADOPTED as the standing
+finish sequence: (1) modbus unification, (2) well assembler, (3) engine on measured P/T, (4)
+operator UI, (5) acceptance suite = finished offline product; (6) mixed toolstring + gamma/LWD,
+(7) one live site path, (8) bench-test protocol for the 1.0324 suppression ratio = field product.
+The evaluation's physics-honesty clause is canonized: DERIVED_HYBRID stays DERIVED_HYBRID.
+
+Step 1 executed (v1.41.0): the split was already unified AT RUNTIME (uqff_modbus upgrades the
+registry entry at package import - the evaluator's static read could not see it), so the fix is
+two-fold honesty hardening: the static source of uqff_ports.py now discloses the import-time upgrade
+(a source-honesty pin guards the disclosure), and the config-validation path is disciplined - a call
+missing host/register_map refuses in the port discipline's own voice naming exactly what is missing
+(citation-mandatory map rule restated), never a raw KeyError, and never refuses when site details
+ARE supplied. Loopback re-verified through the registry reader post-edit. Gate 5,906 -> 5,908.
+Package v1.41.0. The un-run refusal claim in a shipped source file was itself the bug: a product
+must not lie in EITHER direction, including understating what it can do.
+
+## APPENDED 2026-08-27 (33) - v1.42.0: finish-sequence step 2, the well assembler
+
+The evaluation's sharpest finding - "twenty wells are ingested; the engine still only consumes
+depth_ft, pressure_psi, temp_F; the data is stranded" - is answered by `uqff_well_assembler.py`:
+one WellAssembly per site family, assembled from the catalogue's verbatim entries. Four built-ins
+ship: KTB-HB (temperature + trajectory + BHGM density + strength - the four-file family entries
+12-17 accumulated), Site 1027 (CORK equilibrium column + thermal conductivity - the heat-flow-
+closure pair), U1324 (the catalogue's only MEASURED pore pressure, beside its archived overburden),
+and 504B (paired 1979 density + velocity, fluids and dike elastics attached). A generic assemble()
+takes any role->(entry, channel) map.
+
+Design rules, all pinned: (1) STRICT lookups - outside measured coverage the assembly refuses,
+naming the coverage; it never clamps, never extrapolates, never invents. (2) Labeled derivations -
+overburden_kPa() integrates the site's own measured density (KTB: 190.9 MPa at the deepest strength
+sample, under its 253-MPa UCS, consistent with the arc's strength-count pins). (3) The engine
+bridge to_engine_profile() emits the engine's own WellProfile spanning EXACTLY the measured
+temperature coverage, pressure method labeled IN the profile name (Rule 7: measured /
+hydrostatic_seawater / hydrostatic_freshwater); where no temperature was measured the bridge
+REFUSES to substitute a gradient template - the substitution being exactly the stranding this
+module ends. (4) Verified end-to-end: the real UQFFDownholeEngine runs a 3-gauge string inside
+KTB's measured 7,743-7,985 m window, base P/T interpolated from the 1994 log. Steps 3 (measured
+P/T as default demos) and 4 (operator UI) now have their data object. Gate 5,908 -> 5,910.
+Package v1.42.0.
+
+## APPENDED 2026-08-27 (34) - v1.43.0: finish-sequence step 3, measured wells as the default demos
+
+Step 3 closes the evaluation's remaining stranding clauses. (1) demo_config(well) makes the measured
+assemblies the engine's default path: gauges hang strictly inside the measured temperature window
+(KTB: 25,404-26,198 ft of 1994 log; 1027: the CORK column, never past 612.3 m), td = the measured
+window end, and the CLI grows `wells` and `--well` on every subcommand - the 0.465-psi/ft and
+0.018-F/ft templates are no longer the demo path, and sites without measured temperature REFUSE via
+the assembly bridge rather than fall back. (2) production_live_stream() turns catalogue entry 11's
+Volve F-12 MEASURED downhole-gauge pressure into the reconciler's live leg: bar->psi exact and
+labeled, NaN days dropped and counted, the source archive's 9-day stuck fault surviving the adapter
+at 3,830.27 psi, and the station MD caller-supplied because the archived excerpt does not state the
+gauge depth (the adapter refuses to invent it).
+
+The reconciliation result is the arc's best honesty demonstration: Volve F-12 against a static-well
+prediction classifies UNEXPLAINED_TREND at ~-1,096 psi/yr - seventeen times outside the drift
+envelope - because a producing well's drawdown is reservoir physics, not instrument drift. The
+two-stream architecture's founding claim (the closed stream tells you what the live stream should
+read IF nothing physical is happening) survives contact with real field data by correctly refusing
+to explain depletion away as a gauge problem. Gate 5,910 -> 5,912. Package v1.43.0.
+Finish-sequence state: 1 DONE, 2 DONE, 3 DONE; next: 4 operator UI, 5 acceptance suite.
+
+## APPENDED 2026-08-27 (35) - v1.44.0: finish-sequence step 4, the operator surface
+
+Step 4 closes the evaluation's largest hole. Architecture chosen for testability: OperatorSession
+is a HEADLESS controller carrying every operator action (well selection from the measured
+assemblies or a user CSV; toolstring + rating check; run; service-life; case-study; ingest;
+reconcile + undervalued-stream alerts; citations), and the Qt6 window is a thin view over it - so
+the product logic is fully gate-tested in an environment with no display, and the GUI layer
+refuses with the pip hint where PyQt6 is absent (the ports' own pattern). CLI: 'operator'.
+
+The best moment in the build: the blocking rating check needed no contrived kick zone. The measured
+KTB window itself runs to 184 C at its deep end - hotter than the GEOQ 177-class tool's cited
+177 C rating - so 'a 177 C tool in a too-hot zone, blocked inside the run' is demonstrated against
+the archived 1994 log verbatim: start_run() refuses with the stations named; the only override is
+acknowledge_over_rating=True, logged as an explicit operator decision. The citations pane is
+permanent and honest per the evaluation's physics clause: suppression labeled DERIVED_HYBRID /
+NOT a derived constant in the UI itself, catalogue provenance and licenses per component, tool
+sources per hung tool. One API fix en route: ServiceLifeSimulator takes (engine, config) - the
+operator's service-life now evaluates rates at the MEASURED well's stations, which is itself a
+step-3 dividend. Gate 5,912 -> 5,914. Package v1.44.0.
+Finish-sequence state: 1-4 DONE; next: 5 acceptance suite = finished offline product.
+
+## APPENDED 2026-08-27 (36) - v1.45.0: finish-sequence step 5, the acceptance suite - THE OFFLINE-PRODUCT MILESTONE
+
+Step 5 ships the product gate inside the product: acceptance_tests.py, runnable as
+'python -m uqff_downhole_simulator accept', 40 checks in six sections (CLI golden runs with seeded
+byte-identical determinism goldens; the LAS dialect matrix; the reconciler's six-word classification
+vocabulary earned end-to-end on ADAPTIVE synthetic scenarios whose magnitudes come from the
+instance's own gates; catalogue verbatim spot pins; the full operator loop; port states). Green on
+its first complete run. Independence from the physics corpus is enforced by construction, not
+asserted: the fidelity gate executes the suite as a subprocess AND statically verifies the module
+never references uqff_calculator or any PAPER_n. The suite immediately paid for itself by catching
+a step-3 gap: 'case-study --well' had not been wired through the handler - fixed in this version.
+
+THE MILESTONE: with steps 1-5 of the adopted finish sequence complete - (1) modbus unified,
+(2) the well assembler, (3) measured wells as engine defaults, (4) the operator surface, (5) this
+suite - the independent evaluation's own criterion is met verbatim: "After 1-5 it is a finished
+offline product." Five days ago the simulator was a research library with stranded data and a
+v1.0-era GUI; it is now an offline product whose every honesty rule is machine-enforced. The field
+tier stays open and unclaimed, exactly as the evaluation drew it: (6) mixed toolstring + gamma/LWD
+from the catalogue's own GR curves, (7) one live site path with a real cited register map, (8) the
+bench-test protocol that would turn the 1.0324 suppression ratio from simulated composition into
+measured physics. Gate 5,914 -> 5,916. Package v1.45.0.
+
+## APPENDED 2026-08-27 (37) - v1.46.0: field-tier step 6a, gamma / lithology from measured curves
+
+The field tier opens. uqff_gamma.py implements the evaluation's "next physics module" - NaI(Tl)-
+class GR processing, API units, lithology from GR, LAS curve -> formation flag - working ONLY from
+the catalogue's own archived gamma logs. Six entries qualify under unit-disciplined channel
+detection, and the discipline is not decorative: the catalogue itself carries the trap cases (KTB
+'GRAV' in mGals is gravimetry; 504B 'Density grain' contains the letters G-R; the Texas GR curve is
+all-NaN), all excluded by construction and pinned. Results from real logs: the KTB pilot hole's
+1,082-point gamma curve yields 80 alternating intervals - metamorphic banding in the gneiss, read
+off a 1994 log by a 2026 product - and Volve SR's 5.3-72.5 gAPI span gives the textbook clean-sand-
+over-shale split.
+
+Labeling per the Hybrid doctrine, pinned: the linear gamma-ray index is tagged INDUSTRY_STANDARD_
+METHOD / NOT a UQFF derivation; the P5/P95 clean/shale picks are tagged STATISTICAL_PICKS
+(statistics of THIS log, not formation knowledge); the 0.5 sand/shale cutoff is tagged CONVENTION;
+and no detector datasheet ships because none was fetched. Refusals: a flat GR curve (Kennetcook's
+constant 46.7) refuses rather than invent contrast; gamma-free entries refuse naming the channels
+seen. CLI 'gamma'; acceptance suite grows to 45 checks (section G). Gate 5,916 -> 5,918. Package
+v1.46.0. Field-tier remaining: 6b mixed-toolstring step(), 7 one live site path (real cited
+register map), 8 the bench-test protocol.
+
+## APPENDED 2026-08-27 (38) - v1.47.0: field-tier step 6b, mixed toolstrings - and Daniel's twin-track audit
+
+Daniel's three-question audit preceded the GO, answered by measurement: (1) THE TWIN TRACK IS
+MAINTAINED at every layer - engine legs 0.2363/0.2440 %FS/yr (ratio 1.0324) on the measured KTB
+well, service-life per-sensor twin rate arrays with separation curves, the reconciler's twin drift
+envelope (67.9 uqff / 70.1 conventional psi/yr at mid-window), twin tool-library entries, the
+suppression constant labeled DERIVED_HYBRID in the citations pane. (2) UQFF-catalogue COORDINATION,
+honestly inventoried: the quartz extension binds F_TRZ/K_MEX/Phi_res/U_i from the calculator and
+those UQFF-composed rates are now EVALUATED AT MEASURED ARCHIVE CONDITIONS (KTB 339.1 F from the
+1994 log, not the template), and the UQFF-composed envelope has been CONFRONTED with measured field
+data (Volve drawdown, correctly refused as drift) - but no UQFF derivation yet PREDICTS a catalogued
+measured value; that coordination is step 8's bench-test territory by design, and U_i remains
+loaded-not-used per the evaluation's own honesty clause. (3) The missed-items sweep found three
+small real gaps - the gui extra lacked matplotlib, the Qt view lacked an LAS-ingest button and a
+drift tab (two of the sweep's own greps were substring false-positives, re-verified before
+certifying) - all three fixed in-arc, not deferred.
+
+Then 6b: the engine consumes the ToolString. Per-station models with honest legs (twin /
+reference-only / labeled piezo envelope / refused-with-well-P/T-still-streaming), aggregates over
+twin stations only with disclosed counts, and the rating check moved INSIDE the engine constructor -
+the evaluation's 'blocking inside the run' enforced at the deepest layer, with the acknowledged
+override carried on the engine's own rating_report record. Legacy homogeneous path untouched.
+Instructive moment: the first mixed-string demo tried to hang a piezo in the KTB window and the
+rating check refused - the 1994 log is hotter than the 150 C piezo class EVERYWHERE in its window
+(171.7 C at the shallow end) - so the demo moved to the CORK column where every tool is in rating:
+the product's own honesty rules now steer test design. Gate 5,918 -> 5,920; acceptance 50 checks.
+Package v1.47.0. Field-tier remaining: 7 (one live site path), 8 (bench-test protocol).
+
+## APPENDED 2026-08-27 (39) - v1.48.0: field-tier step 8, the bench-test protocol
+
+Step 8 ships the experiment. BENCH_TEST_PROTOCOL.md (in-package, in the sdist) states the
+falsifiable prediction - paired GEOQ-177-class quartz gauges, co-located at a 150 C / 10 kpsi
+setpoint, long-term drift-rate ratio R = conventional/UQFF = 1.0324 at unity trims (~2.3 psi/yr
+separation at 30k FS) - falsifiable in BOTH directions, with apparatus, >=90-day duration (honoring
+the reconciler's own 18-day slope floor: the bench cannot be rushed past the product's standing
+rule), procedure, and the labeling rules for both outcomes. Confirmation would move
+canonical_suppression()'s label from DERIVED_HYBRID to MEASURED_ON_BENCH with the full test record
+attached; refutation keeps DERIVED_HYBRID with the refutation on record; either way there is no
+silent retuning of trims to fit the bench, and U_i remains loaded-but-unused until Daniel supplies
+its derivation path (Rule 10 - the framework author provides the physics).
+
+uqff_bench.py is the analysis half, verified today: four earned verdicts (MEASURED_CONFIRMS on the
+synthetic self-test at R = 1.0263 +/- 0.0118 containing the predicted 1.0324 and excluding 1.0;
+MEASURED_REFUTES on a scaled leg - refutation as a first-class outcome; INSUFFICIENT_SPAN under the
+18-day floor; INSUFFICIENT_SNR when the band contains both 1.0324 and 1.0). The self-test labels
+ITSELF a SIMULATION_SELF_TEST in its own output - arithmetic verified, physics honestly unclaimed:
+the product now carries the experiment that would measure its one hybrid constant, and refuses to
+pretend the experiment has already happened. CLI 'bench'. Acceptance 55 checks (section I). Gate
+5,920 -> 5,922. Package v1.48.0. FIELD TIER: 6a done, 6b done, 8 done; step 7 (one live site path)
+is the only remaining item, blocked on real site details - a cited register map and a host - which
+only the site can supply.

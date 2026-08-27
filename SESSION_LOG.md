@@ -12081,3 +12081,49 @@ release paragraph rewritten + badges (fidelity 5906, cacheBust ×2);
 CHANGELOG + _BUILD_LOG + SHIP_MESSAGE + RULINGS trail; 10 POLE_TO_POLE_ARC
 trail rows + WHITEPAPER_INDEX ship note. Gate 5,904 → 5,906, 0 failures.
 Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 275 — 2026-08-27 — v0.403.0 THE PRODUCT SHIP (downhole v1.41–v1.48: the finish sequence)
+
+Daniel supplied an independent evaluation of the v1.30.0 simulator and
+ruled "I want to follow the plan if it looks right." Verified
+claim-by-claim against the code (all four spot-checks held; two stale
+catalogue counts corrected), adopted verbatim, executed step-by-step on
+GO-cadence:
+
+1 (v1.41) modbus unification — split was already unified AT RUNTIME (the
+evaluator's static read could not see it); fixed both real halves:
+source-honesty disclosure + disciplined config refusal. 2 (v1.42) well
+assembler — catalogue un-stranded; strict coverage; KTB overburden 190.9
+MPa under 253-MPa UCS. 3 (v1.43) measured defaults — demo_config +
+CLI --well/wells; production_live_stream (bar→psi labeled; 9-day stuck
+fault survives; station MD caller-supplied); Volve drawdown −1,096 psi/yr
+= UNEXPLAINED_TREND. 4 (v1.44) operator surface — headless session fully
+gate-tested + thin Qt view; blocking rating check demonstrated on REAL
+data (KTB window 184 C > 177 C tool class); ServiceLifeSimulator API
+mismatch found+fixed. 5 (v1.45) acceptance suite — in-package, grown to
+55 checks; independence by construction; caught its own docstring
+violating the static check, a case-study --well gap, and its own A2
+string-luck flakiness. 6a (v1.46) gamma — unit-disciplined (trap cases
+GRAV/Density-grain pinned); KTB 80 intervals; labels everywhere.
+6b (v1.47) mixed toolstrings — honest legs; in-engine rating block;
+first demo steered to the CORK column by the product's own rules.
+8 (v1.48) bench protocol + four-verdict analysis (selftest R=1.0263
+±0.0118 CONFIRMS; refute/span/SNR paths earned; SIMULATION_SELF_TEST
+self-labeled).
+
+Mid-arc audit (Daniel's three questions): twin track verified by
+measurement at every layer; UQFF-catalogue coordination honestly
+inventoried (composition evaluated at measured conditions + envelope
+confronted with field data; no derivation-match yet — step 8 territory by
+design); sweep found 3 real gaps (gui extra, LAS button, drift tab),
+fixed in-arc; two sweep greps were substring false-positives, re-verified
+before certifying.
+
+Ship prep: version sync 0.403.0 (desc 500 chars) across pyproject /
+calculator / gate / CITATION ×2 / registry version; SHIP GUARD marker
+POLE_TO_POLE_ARC→PRODUCT_ARC (+ GAPS id product_arc_rule7); +2 ship pins
+(live product-surface census + standing record); README release
+paragraph + campaign/shipped lines + badges; CHANGELOG + _BUILD_LOG +
+SHIP_MESSAGE + RULINGS trail; 10 PRODUCT_ARC trail rows + WHITEPAPER_INDEX
+note. Gate 5,922 → 5,924, 0 failures. Remaining: step 7 only (site
+details). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).

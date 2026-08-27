@@ -7,6 +7,46 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.403.0 — 2026-08-27 — THE PRODUCT SHIP
+
+The independent evaluation's finish sequence, **executed** (`uqff_downhole_simulator` v1.41.0–v1.48.0):
+
+**Finish sequence (1–5) = FINISHED OFFLINE PRODUCT, by the evaluation's own criterion:**
+
+- **v1.41** Modbus unified — registry entry IS the real client; disciplined
+  minimal refusal; static source discloses the runtime upgrade.
+- **v1.42** The well assembler — WellAssembly per site family; strict
+  measured-coverage lookups; overburden from the site's own density;
+  engine bridge with Rule-7 method labels.
+- **v1.43** Measured wells as engine defaults — `run --well ktb_hb` on the
+  1994 log; Volve F-12 measured downhole P as the reconciler live leg
+  (drawdown → UNEXPLAINED_TREND: not drift).
+- **v1.44** The operator surface — headless gate-tested OperatorSession +
+  Qt6 view; rating check BLOCKS the run on measured conditions; permanent
+  citations pane (suppression labeled DERIVED_HYBRID in the UI).
+- **v1.45** The acceptance suite — in-package product gate (`accept`),
+  grown to 55 checks; independence from the physics corpus enforced by
+  construction (subprocess + static verification).
+
+**Field tier:**
+
+- **v1.46** (6a) Gamma/lithology from the catalogue's own curves — six
+  gamma-bearing entries under unit discipline; KTB pilot 80 intervals;
+  Volve sand/shale split; every number labeled.
+- **v1.47** (6b) Mixed toolstrings — honest per-station legs; aggregates
+  over twin stations only; rating check inside the engine constructor.
+- **v1.48** (8) Bench-test protocol — BENCH_TEST_PROTOCOL.md in-package;
+  falsifiable R = 1.0324 both directions; four-verdict analysis
+  self-verified as SIMULATION_SELF_TEST.
+
+Mid-arc audit (Daniel): twin track verified by measurement at every layer;
+three small gaps found and fixed in-arc (gui extra + matplotlib,
+LAS-ingest button, twin-leg drift tab). Remaining: step 7 only (one live
+site path — needs a real host + cited register map).
+
+Gate 5,904 → 5,924, 0 failures. Acceptance 55/55. 23-file pass.
+
+---
 ## v0.402.0 — 2026-08-27 — THE POLE-TO-POLE SHIP
 
 The downhole catalogue grows **TWENTY → THIRTY entries** across ten

@@ -94,6 +94,20 @@ from .uqff_modbus import (
     RegisterMap,
     load_register_map,
 )
+from .uqff_well_assembler import (
+    WellAssembly, WellComponent, assemble, assemble_ktb_hb, assemble_odp_504b,
+    assemble_site_1027, assemble_u1324, BUILTIN_ASSEMBLIES,
+    demo_config, production_live_stream,
+)
+from .uqff_gamma import (
+    find_gr_channels, shale_volume, formation_flags, gamma_report, gamma_entries,
+)
+from .uqff_bench import (
+    bench_analysis, bench_selftest,
+)
+from .uqff_operator_app import (
+    OperatorSession, launch_operator_app,
+)
 from .uqff_profile_catalog import (
     CATALOG,
     CatalogEntry,
@@ -108,7 +122,7 @@ from .uqff_profile_catalog import (
     read_pangaea_txt,
 )
 
-__version__ = "1.40.0"
+__version__ = "1.48.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",

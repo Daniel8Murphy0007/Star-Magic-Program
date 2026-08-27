@@ -1,28 +1,28 @@
-v0.402.0 - THE POLE-TO-POLE SHIP: catalogue 20->30 entries, span measured
+v0.403.0 - THE PRODUCT SHIP: the independent evaluation's finish sequence, executed
 
-Ten downhole catalogue packages (v1.31-v1.40), entries 21-30, each a
-COMPLETE public dataset verbatim + provenance + live gate re-derivation:
+Eight downhole packages (v1.41-v1.48) execute the adopted plan:
 
-- 21 ODP 1027B thermal conductivity -> HEAT-FLOW CLOSURE q=k*dT/dz
-  = 130 mW/m2 computed live from two same-site entries
-- 22 DSDP 504B physical properties: WBD identity closes on all 61 rows
-- 23 ODP 1165B (ANTARCTICA, region 13): replicate audit catches a
-  dropped-digit typo IN the source archive
-- 24 504B sheeted-dike elastic moduli: four identities re-derived
-- 25 504B sound velocity: FOUR-dataset family + cross-entry live
-  impedance join (60/63 rows, Z = 13.9-18.5e6 kg/m2s)
-- 26 Nankai megasplay shear strength (region 14, first Chikyu):
-  published slope-stability conclusion re-derived, FS 2.38-15.31
-- 27 735B gabbros (SW Indian Ridge, region 15): CRUST LADDER COMPLETE
-  (sediment -> basalt -> dikes -> gabbro); five audits
-- 28 1274A mantle peridotite (Mid-Atlantic, region 16): LADDER BELOW
-  THE CRUST; five-identity lock, max dev 0.0016 g/cm3
-- 29 Chicxulub M0077A P-wave (region 17): the K-Pg peak ring, 717
-  self-checksumming rows, shock-damage deficit measured
-- 30 ACEX age model (central Arctic, region 18, 87.89N = 235 km from
-  the Pole): first time axis; hiatus verified by its own arithmetic
+FINISH SEQUENCE 1-5 = FINISHED OFFLINE PRODUCT (the evaluation's own criterion):
+- 1 Modbus unified: registry entry IS the real client; disciplined
+  minimal refusal; static source discloses the runtime upgrade
+- 2 Well assembler: catalogue un-stranded into WellAssembly site
+  families; strict measured-coverage lookups; labeled derivations
+- 3 Measured wells as engine defaults: run --well ktb_hb on the 1994
+  log; Volve F-12 measured P as the reconciler live leg (drawdown ->
+  UNEXPLAINED_TREND, not drift)
+- 4 Operator surface: headless gate-tested session + Qt6 view; rating
+  check BLOCKS the run on measured conditions; permanent citations pane
+- 5 Acceptance suite in-package: 55 checks, independence from the
+  physics corpus enforced by construction
 
-Reader: read_pangaea_txt ordinal-index fallback. Ship pin MEASURES the
-arc: latitude span between catalogue endpoints >152 degrees, computed
-live from in-file coordinates. THIRTY entries / EIGHTEEN regions /
-NINETEEN kinds. Gate 5,884 -> 5,906, 0 failures. 23-file pass.
+FIELD TIER:
+- 6a Gamma/lithology from the catalogue's own curves (unit-disciplined;
+  KTB 80 intervals; Volve sand/shale; every number labeled)
+- 6b Mixed toolstrings: honest per-station legs; in-engine rating block
+- 8 Bench-test protocol: falsifiable R=1.0324 both directions;
+  four-verdict analysis; SIMULATION_SELF_TEST self-labeled
+
+Mid-arc audit (Daniel): twin track verified by measurement; 3 gaps
+found+fixed in-arc. Remaining: step 7 only (live site path - needs a
+real host + cited register map). DERIVED_HYBRID stayed DERIVED_HYBRID.
+Gate 5,904 -> 5,924 / 0. Acceptance 55/55. 23-file pass.

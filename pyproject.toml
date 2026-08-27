@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.402.0"
-description = "Star-Magic UQFF calculator v0.402.0: THE POLE-TO-POLE SHIP. 2,253 dispatches (2,308 keys), gate 5,906/0. Downhole catalogue 20->30 entries (v1.31-v1.40): live heat-flow closure q=k*dT/dz; 504B four-dataset family with cross-entry impedance join; Antarctica, Nankai, SW Indian Ridge, Mid-Atlantic, Chicxulub and central Arctic (87.9N) join; crust ladder complete from seafloor mud to mantle peridotite; ACEX age model = first time axis. 18 regions / 19 kinds. Next: PAPER_2258."
+version = "0.403.0"
+description = "Star-Magic UQFF calculator v0.403.0: THE PRODUCT SHIP. 2,253 dispatches (2,308 keys), gate 5,924/0. The downhole simulator completes the adopted independent-evaluation plan (v1.41-v1.48): finish sequence 1-5 - modbus unified, well assembler, measured wells as engine defaults, operator surface, in-package 55-check acceptance suite = FINISHED OFFLINE PRODUCT; field tier 6a gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine rating block, 8 bench-test protocol. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -54,7 +54,7 @@ Issues = "https://github.com/Daniel8Murphy0007/Star-Magic-Program/issues"
 
 [project.optional-dependencies]
 modbus = ["pymodbus>=3.15"]
-gui = ["PyQt6"]
+gui = ["PyQt6", "matplotlib"]
 
 [tool.setuptools]
 packages = ["uqff_downhole_simulator"]
@@ -163,6 +163,7 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "uqff_downhole_simulator/catalog/odp_1274a_mantle_peridotite_mad.provenance.json",
     "uqff_downhole_simulator/catalog/chicxulub_m0077a_pwave_velocity.txt",
     "uqff_downhole_simulator/catalog/chicxulub_m0077a_pwave_velocity.provenance.json",
+    "uqff_downhole_simulator/BENCH_TEST_PROTOCOL.md",
     "uqff_downhole_simulator/catalog/acex_lomonosov_age_depth_model.txt",
     "uqff_downhole_simulator/catalog/acex_lomonosov_age_depth_model.provenance.json",
     "uqff_downhole_simulator/catalog/volve_15_9_19a_core_excerpt.provenance.json",

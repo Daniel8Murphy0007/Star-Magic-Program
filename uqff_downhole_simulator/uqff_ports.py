@@ -292,12 +292,19 @@ PORT_REGISTRY: Dict[str, PortSpec] = {
         name='las2', transport='file (LAS 2.0 well log, CWLS public standard)',
         status=IMPLEMENTED, reader=read_las,
         detail="unwrapped mode; NULL substitution; wrapped mode refused"),
+    # NOTE (v1.41.0): this base entry is the PRE-IMPORT fallback only. Importing
+    # uqff_modbus (which the package __init__ always does) UPGRADES this entry in
+    # place to the real pymodbus TCP client (reader=read_modbus, status=
+    # IMPLEMENTED_REQUIRES_SITE_CONFIG when pymodbus is installed). A static read
+    # of this file alone therefore understates the shipped capability - this
+    # comment exists so source and runtime tell the same story.
     'modbus_g6': PortSpec(
         name='modbus_g6', transport='Modbus RS485 (G6 interface card; 4-20mA analog alt.)',
         status=DECLARED_SITE_DETAILS_REQUIRED, reader=_refuse('modbus_g6',
             "needs the site's register map and polling parameters (target declared by the "
-            "tool library's surface_interface_g6 entry, GEOQ 177 spec-table footnote)"),
-        detail="READ-ONLY tap of the surface interface the quartz string already speaks"),
+            "tool library's surface_interface_g6 entry, GEOQ 177 spec-table footnote); "
+            "NOTE: uqff_modbus upgrades this entry to the real client at package import"),
+        detail="READ-ONLY tap; base declaration - upgraded in place by uqff_modbus at package import (see uqff_modbus.py tail)"),
     'witsml': PortSpec(
         name='witsml', transport='WITSML server (rig-site data exchange standard)',
         status=DECLARED_SITE_DETAILS_REQUIRED, reader=_refuse('witsml',

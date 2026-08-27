@@ -6585,3 +6585,17 @@ duplicate/misfiled rows, entry 30 truncated header) are preserved
 verbatim, disclosed in provenance, and pinned as DETECTIONS — never
 repaired; rounding-boundary tolerances are set at the honest half-ulp and
 disclosed (entry 30 B-C rate 0.8051→0.80). Board otherwise unchanged (6 items).
+
+---
+PRODUCT_ARC (v0.403.0, 2026-08-27): no new rulings required — the
+independent evaluation Daniel supplied was adopted verbatim as the plan
+and executed under GO-cadence. Standing this arc: (a) the evaluation's
+physics-honesty clause is canonized (DERIVED_HYBRID stays DERIVED_HYBRID;
+U_i loaded-but-unused pending the Rule-10 derivation path; no silent trim
+retuning to fit any bench); (b) refusal-as-first-class-outcome extends to
+the bench verdict vocabulary (MEASURED_REFUTES is a result, not an error);
+(c) audit findings get fixed in-arc when they are minutes-sized, logged
+otherwise. OPEN ITEM FOR DANIEL (not a ruling — a dependency): field-tier
+step 7 needs a real site's host + CITED register map for the live Modbus
+path; the code side has been ready since v1.41. Board otherwise unchanged
+(6 items).
