@@ -330,3 +330,6 @@ THE POLE-TO-POLE SHIP: downhole v1.31-v1.40 — catalogue 20→30 entries / 18 r
 
 ## v0.403.0 — 2026-08-27
 THE PRODUCT SHIP: downhole v1.41-v1.48 — the independent evaluation's finish sequence executed 1-5 (modbus unified, well assembler, measured-well engine defaults, operator surface, 55-check in-package acceptance suite) = FINISHED OFFLINE PRODUCT by the evaluation's own criterion; field tier 6a gamma/lithology, 6b mixed toolstrings + in-engine rating block, 8 bench-test protocol with four-verdict self-labeled analysis. Remaining: step 7 only (site details). Gate 5,924/0. Acceptance 55/55. 23-file pass verified.
+
+## v0.403.0-remanufacture — 2026-08-27
+CI red on all runners: numpy>=2.0 removed np.trapz; assembler overburden now uses np.trapezoid (1.x fallback); PORTABILITY GUARD 2 pin + standing removed-alias-sweep rule. Stale TRACKED sdist staging tree star_magic_program-0.402.0/ identified (mounted-FS delete block; gitignored; Daniel removes on Windows). Same version per Daniel (tag preserved; PyPI untouched). Gate 5,925/0. Acceptance 55/55.

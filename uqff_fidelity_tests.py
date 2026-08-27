@@ -13815,13 +13815,16 @@ assert_that(_summ144['avg_conventional_drift_pct'] > _summ144['avg_uqff_drift_pc
 # ---- FINISH-SEQUENCE step 5 (v1.45.0): THE ACCEPTANCE SUITE - FINISHED OFFLINE PRODUCT ----
 import subprocess as _sp145, sys as _sys145
 _acc145 = _sp145.run([_sys145.executable, '-m', 'uqff_downhole_simulator', 'accept'],
-                     capture_output=True, text=True,
+                     capture_output=True, text=True, timeout=900,
                      env={**__import__('os').environ, 'PYTHONPATH': '.'})
+_acc145_diag = ('' if _acc145.returncode == 0 else
+                ' | DIAG rc=%d stdout_tail=%r stderr_tail=%r' % (
+                    _acc145.returncode, _acc145.stdout[-400:], _acc145.stderr[-400:]))
 assert_that(_acc145.returncode == 0
             and '[ACCEPTANCE] OK' in _acc145.stdout
             and 'independent of the physics corpus' in _acc145.stdout
             and 'checks passed' in _acc145.stdout,
-            "FINISH-SEQ 5 (v1.45.0): THE ACCEPTANCE SUITE IS GREEN - the product gate the evaluation demanded ('ship the simulator only when that suite is green, independent of PAPER_n wiring') ships INSIDE the package as 'python -m uqff_downhole_simulator accept' and runs 40 checks across six sections: CLI golden runs (every subcommand as a subprocess, with seeded byte-identical determinism goldens instead of brittle baked floats), the LAS dialect matrix (unwrapped/wrapped/NULL/~P/refusal), the reconciler classification vocabulary earned end-to-end on synthetic streams whose magnitudes are DERIVED FROM THE INSTANCE'S OWN GATES (the suite adapts, it never hardcodes the thresholds it tests), catalogue integrity with verbatim spot pins, the full operator loop including the blocking rating check and the always-honest citations pane, and the port/protocol states - the physics gate runs the product gate as a SUBPROCESS so the independence claim is enforced by construction, not asserted")
+            "FINISH-SEQ 5 (v1.45.0): THE ACCEPTANCE SUITE IS GREEN - the product gate the evaluation demanded ('ship the simulator only when that suite is green, independent of PAPER_n wiring') ships INSIDE the package as 'python -m uqff_downhole_simulator accept' and runs 40 checks across six sections: CLI golden runs (every subcommand as a subprocess, with seeded byte-identical determinism goldens instead of brittle baked floats), the LAS dialect matrix (unwrapped/wrapped/NULL/~P/refusal), the reconciler classification vocabulary earned end-to-end on synthetic streams whose magnitudes are DERIVED FROM THE INSTANCE'S OWN GATES (the suite adapts, it never hardcodes the thresholds it tests), catalogue integrity with verbatim spot pins, the full operator loop including the blocking rating check and the always-honest citations pane, and the port/protocol states - the physics gate runs the product gate as a SUBPROCESS so the independence claim is enforced by construction, not asserted" + _acc145_diag)
 _src145 = open(_os33.path.join('uqff_downhole_simulator', 'acceptance_tests.py'), encoding='utf-8').read()
 assert_that('uqff_calculator' not in _src145
             and 'PAPER_' not in _src145
@@ -13951,6 +13954,10 @@ with open(__file__, encoding='utf-8', errors='ignore') as _pg_f:
 _pg_needle = chr(47) + 'tmp' + chr(47)
 assert_that(_pg_src.count("'" + _pg_needle) + _pg_src.count('"' + _pg_needle) == 0,
             "PORTABILITY GUARD: no hard-coded Unix temp-path literals in the gate - scratch paths must come from tempfile.gettempdir()/mkdtemp() so the gate runs green on Windows AND Linux (v0.395.0 red-gate lesson)")
+_wa403 = open(_os33.path.join('uqff_downhole_simulator', 'uqff_well_assembler.py'), encoding='utf-8').read()
+assert_that('np.trapz(' not in _wa403 and '_TRAPEZOID' in _wa403
+            and abs(_ds11.assemble_ktb_hb().overburden_kPa(7400.3) / 1000.0 - 190.9) < 1.0,
+            "PORTABILITY GUARD 2 (v0.403.0 remanufacture lesson): numpy >= 2.0 REMOVED the trapz alias and the CI runners resolve newer numpy than the authoring sandbox's proxy-pinned wheel - the assembler now prefers np.trapezoid with a 1.x fallback, direct np.trapz calls are banned from the assembler source, and the overburden integral is re-verified here on the current interpreter's numpy; standing rule: local dependency versions are NOT the ship's dependency versions - removed-alias sweeps (trapz/in1d/alltrue/product/row_stack/NaN) are part of ship prep")
 
 # =============================================================================
 # REPORT

@@ -25,6 +25,10 @@ from .uqff_downhole_engine import WellProfile
 from .uqff_profile_catalog import CATALOG
 
 M_TO_FT = 3.280839895            # exact definition: 1 m = 1/0.3048 ft
+_TRAPEZOID = getattr(np, "trapezoid", getattr(np, "trapz", None))
+# numpy >= 2.0 removed the trapz alias (CI numpy is newer than the authoring
+# sandbox's proxy-pinned 2.2.6, which still carried it - the v0.403.0
+# remanufacture lesson): prefer the current name, fall back for numpy 1.x.
 G_MS2 = 9.80665                  # standard gravity (SI definition)
 RHO_FRESHWATER_KGM3 = 1000.0     # labeled derivation input, not a measurement
 RHO_SEAWATER_KGM3 = 1025.0       # labeled derivation input (matches catalogue WBD-identity audits)
@@ -133,7 +137,7 @@ class WellAssembly:
         d = np.append(c.depths[c.depths < depth_m], depth_m)
         r = np.append(c.values[c.depths < depth_m],
                       float(np.interp(depth_m, c.depths, c.values)))
-        return float(np.trapz(r * 1000.0 * G_MS2, d) / 1000.0)   # kPa
+        return float(_TRAPEZOID(r * 1000.0 * G_MS2, d) / 1000.0)   # kPa
 
     # -- the engine bridge -------------------------------------------------
     def to_engine_profile(self, pressure_source: str = "auto",

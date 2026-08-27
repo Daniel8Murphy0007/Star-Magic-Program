@@ -242,3 +242,4 @@ v0.400.0,2026-08-25,TWENTYWELLS_ARC,registry +1 graph +1 citations +1 pins +14-s
 v0.401.0,2026-08-25,INCORPORATION_ARC,pdf-files +6 pins +2 (no code changes),gate 5884/0
 v0.402.0,2026-08-27,POLE_TO_POLE_ARC,catalogue entries +10 (21-30) pins +22 reader ordinal-fallback,gate 5906/0
 v0.403.0,2026-08-27,PRODUCT_ARC,modules +5 protocol +1 pins +20 acceptance 0->55,gate 5924/0
+v0.403.0-remfg,2026-08-27,PRODUCT_ARC,numpy2 trapezoid fix + gitignore + diag hardening + stale-tree disclosure,gate 5925/0

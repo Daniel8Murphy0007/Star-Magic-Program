@@ -6599,3 +6599,12 @@ otherwise. OPEN ITEM FOR DANIEL (not a ruling — a dependency): field-tier
 step 7 needs a real site's host + CITED register map for the live Modbus
 path; the code side has been ready since v1.41. Board otherwise unchanged
 (6 items).
+
+---
+PRODUCT_ARC remanufacture (v0.403.0, 2026-08-27): Daniel ruling executed -
+"do not burn the tag 403" - same version remanufactured after the numpy-2
+trapz CI failure. Standing lessons: (a) removed-alias sweep is ship prep;
+(b) the authoring environment's pinned dependency versions are never
+assumed to be CI's; (c) sdist staging trees are gitignored
+(star_magic_program-*/) and the tracked v0.402.0 leftover is Daniel's
+Windows-side git rm. Board otherwise unchanged (6 items).

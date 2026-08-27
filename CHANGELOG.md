@@ -46,6 +46,23 @@ site path — needs a real host + cited register map).
 
 Gate 5,904 → 5,924, 0 failures. Acceptance 55/55. 23-file pass.
 
+**REMANUFACTURED 2026-08-27 (same version; tag preserved, PyPI never
+received the first push):** CI failed on all runners at the FINISH-SEQ 2
+pin — `AttributeError: numpy has no attribute 'trapz'` (numpy ≥ 2.0
+removed the alias; CI resolves newer numpy than the authoring sandbox's
+proxy-pinned 2.2.6, which still carried it — every local repro was green
+for exactly that reason). Fix: the assembler's overburden integral now
+prefers `np.trapezoid` with a 1.x fallback; a portability-guard pin bans
+direct `np.trapz` from the assembler and canonizes the standing rule
+(local dependency versions are NOT the ship's — removed-alias sweeps are
+ship prep). Also found in the same audit: the tracked
+`star_magic_program-0.402.0/` sdist staging tree (129 stale files left
+by a failed in-repo build on the mounted FS, committed by `add -A` at
+v0.402.0) — `.gitignore` now blocks `star_magic_program-*/`; Daniel
+removes the tree with `git rm -r star_magic_program-0.402.0` on Windows.
+Acceptance A2's stochastic band widened; the gate's acceptance-subprocess
+pin now embeds subprocess stderr in its failure message. Gate 5,925/0.
+
 ---
 ## v0.402.0 — 2026-08-27 — THE POLE-TO-POLE SHIP
 

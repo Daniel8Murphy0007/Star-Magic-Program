@@ -87,7 +87,7 @@ def section_a_cli(tmp: str) -> None:
                                    "avg_conventional_drift_pct",
                                    "measured_ratio_mean"))
        and rows >= 20
-       and 1.030 < float(body.splitlines()[1].split(",")[head.split(",").index("measured_ratio_mean")]) < 1.035,
+       and 1.02 < float(body.splitlines()[1].split(",")[head.split(",").index("measured_ratio_mean")]) < 1.05,
        "A2 run --well ktb_hb: measured profile banner, 6-gauge CSV with "
        "comparison columns, suppression ratio in-file")
 

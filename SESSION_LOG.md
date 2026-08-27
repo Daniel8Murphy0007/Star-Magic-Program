@@ -12127,3 +12127,34 @@ paragraph + campaign/shipped lines + badges; CHANGELOG + _BUILD_LOG +
 SHIP_MESSAGE + RULINGS trail; 10 PRODUCT_ARC trail rows + WHITEPAPER_INDEX
 note. Gate 5,922 → 5,924, 0 failures. Remaining: step 7 only (site
 details). Awaiting Daniel: `.\ship.ps1` (clear .git/index.lock first).
+
+## Entry 276 — 2026-08-27 — v0.403.0 REMANUFACTURE (numpy-2 trapz + stale staging tree)
+
+CI failure diagnosed from Daniel's log screenshots: fidelity-gate (3.12)
+died at gate line 13695 (FINISH-SEQ 2 pin) -> uqff_well_assembler.py:136
+`np.trapz` -> AttributeError: numpy >= 2.0 removed the alias. Root cause
+of the blind-repro failure: the sandbox's proxy-pinned numpy 2.2.6 STILL
+carries trapz, so every local reproduction (build under setuptools 82/84,
+pip install ., gate without pymodbus/matplotlib, 36 s green) passed while
+every CI runner failed. Fix: module-level _TRAPEZOID = np.trapezoid with
+1.x fallback; overburden call switched; PORTABILITY GUARD 2 pin bans
+np.trapz in the assembler and re-runs the 190.9-MPa KTB integral on the
+current interpreter's numpy. STANDING RULE canonized: local dependency
+versions are NOT the ship's dependency versions - removed-alias sweeps
+(trapz/in1d/alltrue/product/row_stack/NaN: repo-wide sweep found exactly
+the one hit) are part of ship prep.
+
+Same audit found Daniel's 'stale files': the TRACKED
+star_magic_program-0.402.0/ sdist staging tree (129 files, ~5 MB - the
+failed in-repo v0.402-prep build could not delete its staging dir on the
+mounted FS and add -A committed it; it rode through v0.402.0's green CI
+as dead weight). Sandbox cannot delete it (same mount permission);
+.gitignore now carries star_magic_program-*/; Daniel removes it on
+Windows: git rm -r star_magic_program-0.402.0. Hardening kept from the
+diagnosis pass: acceptance A2 stochastic band widened, acceptance-
+subprocess pin embeds stderr tail + timeout.
+
+Per Daniel: tag v0.403.0 NOT burned (PyPI never received it) - same
+version remanufactured. Gate 5,924 -> 5,925, 0 failures; acceptance
+55/55; sdist/wheel rebuilt clean. Daniel: delete the stale tree, commit,
+re-tag v0.403.0 (move tag to the new commit), push.
