@@ -12178,3 +12178,17 @@ all recorded, none archived incomplete. Package v1.50.0 → v1.58.0
 every step; acceptance 55/55 at every entry; SHIP GUARD v5 forced label syncs
 live eight times. Ship files: full 23-file pass; 20 catalog data-files added
 to the wheel; wheel-content verification in /tmp before SHIP_MESSAGE.
+
+### Entry 277 addendum — post-ship audit (Daniel: 'Did anything get missed?')
+
+Audit by measurement against tag v0.404.0: 23/23 must-change files in the
+shipped diff, 46 files total, 20 catalog data-files, annotated tag dereferences
+to HEAD = origin/master, working tree was clean. ONE miss found: the README
+'What is currently shipped' section heading still said v0.403.0 and its body
+carried a 5,324-assertion / 6,220-row snapshot from many ships earlier -
+invisible to SHIP GUARD v2, which watches only the campaign line and the
+release paragraph. Fixed to live figures (v0.404.0 / 5,950 / 6,787) and
+canonized as SHIP GUARD v6: the section heading and its counts are now
+machine-verified on every gate run. Gate 5,949 -> 5,950. The PyPI 0.404.0
+long-description carries the stale heading immutably (same class as the
+v0.403.0 Summary slip - cosmetic, corrected on master, guarded forever).

@@ -14277,6 +14277,14 @@ assert_that(len(_ds11.CATALOG) >= 40 and len(_arc404_kinds) >= 29
 assert_that(True,
             "FORTYWELLS_ARC STANDING RULE: the archive's own declared Size is the transcription checksum (re-counted EXACT at gate time for every PANGAEA entry), the archive's own arithmetic is the physics gate (identities re-derived, never assumed), archive anomalies are carried VERBATIM with disclosure and pinned (never repaired), and datasets that cannot arrive COMPLETE through the sanctioned transport stay OUT with the exclusion recorded in the sidecar and the GAPS registry - completeness outranks coverage")
 
+# ---- SHIP GUARD v6 (Daniel's audit catch, v0.404.0): the 'What is currently shipped' section must be LIVE ----
+_g6_readme = open('README.md', encoding='utf-8').read()
+_g6_rows = sum(1 for _ in open('UNIFIED_REGISTRY.csv', encoding='utf-8')) - 1
+assert_that(('## What is currently shipped (v%s)' % _VER) in _g6_readme
+            and ('Fidelity gate: **%s assertions**' % format(_g3_gate, ',')) in _g6_readme
+            and ('Registry: **%s rows**' % format(_g6_rows, ',')) in _g6_readme,
+            "SHIP GUARD v6 (Daniel's 'did anything get missed' audit after v0.404.0): the README 'What is currently shipped' SECTION HEADING must carry the current version and the section's registry-row and gate-assertion figures must be LIVE - this section had silently carried v0.403.0 in its heading and a 5,324-assertion / 6,220-row snapshot from many ships earlier, invisible to SHIP GUARD v2 which watched only the campaign line and the release paragraph; every version-stamped or count-stamped sentence in README is now either machine-verified or it does not survive the audit")
+
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:
 # green on the Linux authoring sandbox, FileNotFoundError on Windows at ship

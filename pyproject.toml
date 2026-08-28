@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "star-magic-program"
 version = "0.404.0"
-description = "Star-Magic UQFF calculator v0.404.0: THE FORTY WELLS SHIP. 2,253 dispatches (2,308 keys), gate 5,949/0. Downhole catalogue v1.49-v1.58, entries 31-40: JFAST Tohoku lab slow-slip (6,887.5 m water record), Hikurangi rate-state friction + reader dedupe (recovered 504B nitrate), Costa Rica 212 C friction envelopes, Hydrate Ridge gas hydrate, Guaymas d13C, Barbados consolidation, Mariana serpentinite, Dead Sea + El'gygytgyn lake records, GBR coral U-Th. 40 entries / 28 regions / 29 kinds. Next: PAPER_2258."
+description = "Star-Magic UQFF calculator v0.404.0: THE FORTY WELLS SHIP. 2,253 dispatches (2,308 keys), gate 5,950/0. Downhole catalogue v1.49-v1.58, entries 31-40: JFAST Tohoku lab slow-slip (6,887.5 m water record), Hikurangi rate-state friction + reader dedupe (recovered 504B nitrate), Costa Rica 212 C friction envelopes, Hydrate Ridge gas hydrate, Guaymas d13C, Barbados consolidation, Mariana serpentinite, Dead Sea + El'gygytgyn lake records, GBR coral U-Th. 40 entries / 28 regions / 29 kinds. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
