@@ -1,22 +1,34 @@
-v0.403.0 - THE PRODUCT SHIP (remanufactured): finish sequence executed + numpy-2 fix
+v0.404.0 - THE FORTY WELLS SHIP: catalogue entries 31-40 (downhole v1.49-v1.58)
 
-REMANUFACTURE (same version; tag preserved, PyPI never received the
-first push): CI failed on every runner at the well-assembler overburden
-pin - numpy >= 2.0 removed np.trapz (authoring sandbox numpy 2.2.6 still
-carried the alias, so local repro was green). Fixed: np.trapezoid with
-1.x fallback; portability-guard pin bans np.trapz and canonizes the
-removed-alias ship-prep sweep. Stale tracked sdist staging tree
-star_magic_program-0.402.0/ gitignored + removed (Windows-side git rm).
+Ten verbatim catalogue entries double the regional reach: census 40 entries /
+28 regions / 29 kinds. Every entry fetched read-only from a public archive,
+transcribed verbatim with mandatory provenance sidecar, its header's own Size
+declaration re-counted EXACT at gate time, and its archive's own arithmetic
+re-derived on every gate run.
 
-SHIP CONTENT (unchanged from first manufacture): eight downhole packages
-v1.41-v1.48 execute the adopted independent-evaluation plan -
-finish sequence 1-5 (modbus unified; well assembler; measured wells as
-engine defaults with Volve F-12 as the reconciler live leg; operator
-surface with blocking rating check + permanent citations pane; 55-check
-in-package acceptance suite, independence by construction) = FINISHED
-OFFLINE PRODUCT by the evaluation's own criterion; field tier 6a
-gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine
-rating block, 8 bench-test protocol (falsifiable R=1.0324, four-verdict
-analysis, SIMULATION_SELF_TEST self-labeled). Remaining: step 7 only
-(live site path - needs real host + cited register map).
-Gate 5,904 -> 5,926 / 0. Acceptance 55/55. 23-file pass.
+The subduction system end-to-end: JFAST C0019 laboratory slow-slip on the
+Tohoku fault (-6,887.5 m water-depth record); Hikurangi U1520 rate-state
+friction - the entry that drove the read_pangaea_txt duplicate-channel DEDUPE
+upgrade, which recovered the 504B nitrate channel silently overwritten since
+entry 18 (31-entry before/after audit: one recovery, zero regressions);
+Costa Rica friction envelopes to 212 C / 90 MPa (tau = mu x sigma on all 31
+rows); Barbados Leg 110 consolidation ('Pc/Po ratio' PROVEN a difference,
+65/66 pairs within 1 kPa - lubricated subduction as arithmetic); Mariana
+serpentinite mud volcano (four-way mantle fingerprint 19/19 vs exotic clast
+0/4). New kinds: gas hydrate (first drilling-hazard quantity), d13C isotopes,
+consolidation geotechnics, bulk-rock geochemistry, 1-mm XRF+MS core scan,
+U-Th geochronology (234U decay identity closes all 54 initial ratios to
+1.3e-4), event-deposit inventory. New worlds: Dead Sea (first lake, lowest
+borehole on Earth, diamagnetic matrix) and Lake El'gygytgyn (milestone entry
+40: the Arctic by land, through lake ice above a 3.6-Myr meteorite crater -
+entry 30 reached the Pole by sea).
+
+Honest exclusions recorded in sidecars + GAPS registry: two fetch-capped
+datasets, one XLSX binary, one table too large for confident verbatim
+transcription - completeness outranks coverage.
+
+Package v1.50.0 -> v1.58.0 (one code change: the pangaea dedupe). 20 catalog
+data-files added to the wheel; /tmp build verified (wheel 80 catalog files,
+zero duplicates, Summary 506 chars with live gate count; twine PASSED;
+installed-wheel acceptance 55/55 from empty cwd). Gate 5,929 -> 5,949 / 0.
+Acceptance 55/55 at every entry. Full 23-file pass. Next paper: PAPER_2258.

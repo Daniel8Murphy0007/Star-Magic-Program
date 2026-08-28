@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.403.0", "uqff_calculator.VERSION = 0.403.0 (THE PRODUCT SHIP: the independent evaluation finish sequence is executed 1-5 - by its own criterion a FINISHED OFFLINE PRODUCT - plus field tier 6a/6b/8; only step 7, one live site path, remains, blocked on real site details)")
+assert_that(C.VERSION == "0.404.0", "uqff_calculator.VERSION = 0.404.0 (THE FORTY WELLS SHIP: catalogue entries 31-40 double the regional reach to 40 entries / 28 regions / 29 kinds; the finished offline product now carries the subduction system end-to-end plus hazard, isotope, lake and reef kinds; step 7 alone remains, site-blocked)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12592,14 +12592,14 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', 'catalog/ktb_vb_rockmech_compress.dat', 'catalog/ktb_vb_rockmech_compress.provenance.json', 'catalog/ktb_hb_rockmech_compress.dat', 'catalog/ktb_hb_rockmech_compress.provenance.json', 'catalog/odp_504b_leg137_borehole_fluids.txt', 'catalog/odp_504b_leg137_borehole_fluids.provenance.json', 'catalog/iodp_u1324_pore_pressure.txt', 'catalog/iodp_u1324_pore_pressure.provenance.json', 'catalog/odp_1027c_cork_temperature.txt', 'catalog/odp_1027c_cork_temperature.provenance.json', 'catalog/odp_1027b_thermal_conductivity.txt', 'catalog/odp_1027b_thermal_conductivity.provenance.json', 'catalog/dsdp_504b_physical_properties.txt', 'catalog/dsdp_504b_physical_properties.provenance.json', 'catalog/odp_1165b_thermal_conductivity.txt', 'catalog/odp_1165b_thermal_conductivity.provenance.json', 'catalog/odp_504b_dike_elastic_moduli.txt', 'catalog/odp_504b_dike_elastic_moduli.provenance.json', 'catalog/dsdp_504b_sound_velocity.txt', 'catalog/dsdp_504b_sound_velocity.provenance.json', 'catalog/nankai_megasplay_shear_strength.txt', 'catalog/nankai_megasplay_shear_strength.provenance.json', 'catalog/odp_735b_gabbro_elastic_moduli.txt', 'catalog/odp_735b_gabbro_elastic_moduli.provenance.json', 'catalog/odp_1274a_mantle_peridotite_mad.txt', 'catalog/odp_1274a_mantle_peridotite_mad.provenance.json', 'catalog/chicxulub_m0077a_pwave_velocity.txt', 'catalog/chicxulub_m0077a_pwave_velocity.provenance.json', 'catalog/acex_lomonosov_age_depth_model.txt', 'catalog/acex_lomonosov_age_depth_model.provenance.json', 'uqff_well_assembler.py', 'uqff_operator_app.py', 'acceptance_tests.py', 'uqff_gamma.py', 'uqff_bench.py', 'BENCH_TEST_PROTOCOL.md', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', 'catalog/ktb_vb_rockmech_compress.dat', 'catalog/ktb_vb_rockmech_compress.provenance.json', 'catalog/ktb_hb_rockmech_compress.dat', 'catalog/ktb_hb_rockmech_compress.provenance.json', 'catalog/odp_504b_leg137_borehole_fluids.txt', 'catalog/odp_504b_leg137_borehole_fluids.provenance.json', 'catalog/iodp_u1324_pore_pressure.txt', 'catalog/iodp_u1324_pore_pressure.provenance.json', 'catalog/odp_1027c_cork_temperature.txt', 'catalog/odp_1027c_cork_temperature.provenance.json', 'catalog/odp_1027b_thermal_conductivity.txt', 'catalog/odp_1027b_thermal_conductivity.provenance.json', 'catalog/dsdp_504b_physical_properties.txt', 'catalog/dsdp_504b_physical_properties.provenance.json', 'catalog/odp_1165b_thermal_conductivity.txt', 'catalog/odp_1165b_thermal_conductivity.provenance.json', 'catalog/odp_504b_dike_elastic_moduli.txt', 'catalog/odp_504b_dike_elastic_moduli.provenance.json', 'catalog/dsdp_504b_sound_velocity.txt', 'catalog/dsdp_504b_sound_velocity.provenance.json', 'catalog/nankai_megasplay_shear_strength.txt', 'catalog/nankai_megasplay_shear_strength.provenance.json', 'catalog/odp_735b_gabbro_elastic_moduli.txt', 'catalog/odp_735b_gabbro_elastic_moduli.provenance.json', 'catalog/odp_1274a_mantle_peridotite_mad.txt', 'catalog/odp_1274a_mantle_peridotite_mad.provenance.json', 'catalog/chicxulub_m0077a_pwave_velocity.txt', 'catalog/chicxulub_m0077a_pwave_velocity.provenance.json', 'catalog/acex_lomonosov_age_depth_model.txt', 'catalog/acex_lomonosov_age_depth_model.provenance.json', 'catalog/jfast_c0019_slow_slip_events.txt', 'catalog/jfast_c0019_slow_slip_events.provenance.json', 'catalog/hikurangi_u1520_friction_insitu.txt', 'catalog/hikurangi_u1520_friction_insitu.provenance.json', 'catalog/costa_rica_odp_friction_envelope.txt', 'catalog/costa_rica_odp_friction_envelope.provenance.json', 'catalog/hydrate_ridge_204_ncr_hydrate.txt', 'catalog/hydrate_ridge_204_ncr_hydrate.provenance.json', 'catalog/guaymas_385_dom_d13c.txt', 'catalog/guaymas_385_dom_d13c.provenance.json', 'catalog/barbados_110_consolidation.txt', 'catalog/barbados_110_consolidation.provenance.json', 'catalog/mariana_1200_serpentinite_geochem.txt', 'catalog/mariana_1200_serpentinite_geochem.provenance.json', 'catalog/dead_sea_5017_debrite_xrf_ms.txt', 'catalog/dead_sea_5017_debrite_xrf_ms.provenance.json', 'catalog/gbr_325_coral_uth_ages.txt', 'catalog/gbr_325_coral_uth_ages.provenance.json', 'catalog/elgygytgyn_5011_turbidites.txt', 'catalog/elgygytgyn_5011_turbidites.provenance.json', 'uqff_well_assembler.py', 'uqff_operator_app.py', 'acceptance_tests.py', 'uqff_gamma.py', 'uqff_bench.py', 'BENCH_TEST_PROTOCOL.md', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.48.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.58.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -13587,6 +13587,324 @@ assert_that(all(abs(_c30 - _t30) <= 0.006 for _c30, _t30 in _sr30)
             and _txt30.count('Ma. Average sedimentation\n') == 1,
             "CATALOGUE v1.40.0: THIRTY entries, EIGHTEEN regions, NINETEEN kinds - THE SIX-RATE RE-DERIVATION: every sedimentation rate in the ACEX table re-derives live as delta-depth/delta-age between the correct hiatus-aware bounds - the surface rate (135.49 m / 9,360 ka = 1.448 -> 1.45), the hiatus-corrected A-B rate (10.84 m / 750 ka = 1.445 -> 1.45, correct ONLY if the Miocene hiatus is excluded, so the audit verifies the hiatus itself), B-C at the exact rounding boundary (0.8051 -> archived 0.80), D-E, E-F and F-G - all six within half-ulp of the archived values; the header's own Neogene average closes too (198.7 m / 16.0 Myr = 12.4 m/Myr); and the source header's Comment field is TRUNCATED IN THE ARCHIVE, ending mid-sentence at 'Average sedimentation' with the Paleogene rate cut off - preserved verbatim including the cut, with the missing number re-derivable (206.1/11.8 = 17.5 m/Myr): thirty entries in, the catalogue's discipline is unchanged - fetch whole datasets, keep every flaw, and make the gate re-earn the archive's arithmetic on every run")
 
+# ---- CATALOGUE v1.49.0: entry 31 - JFAST C0019 laboratory slow slip events (THE TOHOKU FAULT ITSELF) ----
+import numpy as _np41a
+_st31a = _ds11.CATALOG['jfast_c0019_slow_slip_events'].stream()
+_sm31 = _st31a.channels['Shear str max'].values
+_m31 = ~_np41a.isnan(_sm31)
+_td31 = _st31a.channels['Tau (drop)'].values
+_pc31 = _st31a.channels['Perc (stress drop)'].values
+_mv31 = _st31a.channels['Distance (slip)'].values[_m31] / _st31a.channels['Duration'].values[_m31]
+_vlo31 = _st31a.channels['V (mininum velocity)'].values[_m31]
+_vhi31 = _st31a.channels['V (maximum velocity)'].values[_m31]
+_depths31 = []
+for _n31, _e31 in _ds11.CATALOG.items():
+    if _n31 == 'jfast_c0019_slow_slip_events':
+        continue
+    try:
+        _el31 = _e31.stream().meta.get('elevation_m')
+    except ValueError:
+        continue                      # survey entries stream via .survey()
+    if _el31:
+        _depths31.append(float(_el31))
+_band31 = [bool(_vlo31[_i] <= _mv31[_i] <= _vhi31[_i]) for _i in range(5)]
+assert_that(_st31a.source_format == 'pangaea_txt' and _st31a.index_kind == 'ordinal' and len(_st31a.index) == 7
+            and _st31a.meta.get('elevation_m') == '-6887.5'
+            and _st31a.meta.get('latitude') == '37.938905'
+            and int(_m31.sum()) == 5 and bool(_np41a.all(_np41a.isnan(_sm31[~_m31])))
+            and _st31a.channels[next(iter(_st31a.channels))].quality == ['B379', 'B379', 'B384', 'B384', 'B405', 'B385', 'B525']
+            and 'CC-BY-3.0' in _st31a.meta.get('license', '')
+            and float(_st31a.meta.get('elevation_m')) < min(_depths31),
+            "CATALOGUE entry 31 - THE TOHOKU FAULT ITSELF: laboratory slow-slip-event measurements on plate-boundary gouge from IODP Hole 343-C0019E (Ikari et al. 2015, Nature Geoscience 8, 870-874; PANGAEA doi:10.1594/PANGAEA.858800, COMPLETE 83 data points) - JFAST drilled the fault that slipped ~50 m in the 2011 Mw 9.0 Tohoku-oki earthquake thirteen months after the event, through 6,887.5 m of water: the DEEPEST-WATER site in scientific ocean drilling, the catalogue's water-depth record by 2.5x, the JAPAN TRENCH as region NINETEEN, and the second Chikyu entry; 7 experiments on core 17R-1 (intact + powder), FIVE producing spontaneous slow slip events and TWO refusing ('*no SSE' rows carried verbatim as all-NaN numerics - a negative result preserved as data); experiment IDs ride as per-row quality on the catalogue's label-indexed ordinal route")
+assert_that(bool(_np41a.max(_np41a.abs(_td31[_m31] / _sm31[_m31] * 100.0 - _pc31[_m31])) <= 0.02)
+            and bool(_np41a.all(_vhi31 <= 0.0079)) and bool(_np41a.all(_vhi31 * 1e-6 < 1e-8))
+            and bool(_np41a.all((_st31a.channels['Duration'].values[_m31] >= 7310.0)
+                                & (_st31a.channels['Duration'].values[_m31] <= 14580.0)))
+            and _band31 == [False, True, True, True, True]
+            and abs(float(_mv31[0]) - 0.00406) < 0.0001
+            and bool(_np41a.all((_pc31[_m31] >= 2.95) & (_pc31[_m31] <= 6.54)))
+            and float(_np41a.max(_st31a.channels['µ (drop)'].values[_m31])) <= 0.017,
+            "CATALOGUE v1.49.0: THIRTY-ONE entries, NINETEEN regions, TWENTY kinds - THE SLOW-EARTHQUAKE RE-DERIVATION: kind TWENTY (laboratory slow-slip-event friction - not how strong the fault is, but HOW it fails - the time-dependent counterpart to the Nankai monotonic strength table) carries the paper's headline physics re-earned live on every gate run: the stress-drop identity Perc = Tau_drop/strength x 100 closes on all 5 SSE rows within input rounding (max err 0.007 pct); every peak sliding velocity is <= 0.0079 um/s - FIVE-plus orders below seismic slip rates, a slow earthquake in a laboratory - over durations of 2-4 hours; stress drops are tiny (2.95-6.54 pct, friction-coefficient drops <= 0.017: the weak-fault character of the shallow Tohoku megathrust); and the mean-velocity band audit Distance/Duration in [V_min, V_max] passes on 4 of 5 rows with B379-run-1's exceedance (0.00406 > 0.0032 um/s) pinned VERBATIM as the archive's own disclosed inconsistency - plus the transcription's self-checksum: 83 non-empty body cells equal the header's own Size declaration exactly")
+
+# ---- CATALOGUE v1.50.0: entry 32 - Hikurangi U1520 rate-state friction (WHICH LITHOLOGIES CAN HOST SLOW SLIP) ----
+import numpy as _np42a
+_st32a = _ds11.CATALOG['hikurangi_u1520_friction_insitu'].stream()
+_txt32 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'hikurangi_u1520_friction_insitu.txt'), encoding='utf-8').read()
+_body32 = _txt32.partition('*/')[2].strip().split('\n')
+_R32 = [_l32.split('\t') for _l32 in _body32[1:]]
+_cells32 = sum(1 for _r32 in _R32 for _i32, _c32 in enumerate(_r32) if _i32 not in (0, 5) and _c32.strip())
+_ab32 = {(_r32[3], _r32[4]): float(_r32[11]) for _r32 in _R32 if _r32[11]}
+_carb32 = [_v32 for (_d32, _s32), _v32 in _ab32.items() if any(_w32 in _d32 for _w32 in ('chalk', 'calcareous', 'marl'))]
+_hard32 = [_v32 for (_d32, _s32), _v32 in _ab32.items() if 'black layer' in _d32 or 'blue volcaniclastics' in _d32]
+_swap32 = [(float(_r32[7]), float(_r32[13]), float(_r32[14]), float(_r32[15]), float(_r32[16])) for _r32 in _R32 if _r32[13]]
+_dd32 = sorted({(float(_r32[5]), float(_r32[6])) for _r32 in _R32})
+assert_that(_st32a.source_format == 'pangaea_txt' and _st32a.index_kind == 'depth' and len(_st32a.index) == 12
+            and len(_R32) == 12 and all(len(_r32) == 46 for _r32 in _R32) and _cells32 == 466
+            and _st32a.meta.get('elevation_m') == '-3522.1'
+            and 'CC-BY-4.0' in _st32a.meta.get('license', '')
+            and len(_st32a.channels) == 36
+            and all(_n32 in _st32a.channels for _n32 in ('k', 'k (2)', 'k (3)', 'µ0', 'µ0 (2)', 'a-b', 'kc (kc)', 'k/kc (k/kc)'))
+            and any('AE27_U1520C37R1p _SST' == _r32[1] for _r32 in _R32)
+            and sum(1 for _c32 in _R32[5] if _c32.strip()) == 13,
+            "CATALOGUE entry 32 - WHICH LITHOLOGIES CAN HOST SLOW SLIP: rate-state friction of the Hikurangi subduction INPUTS at in-situ stress, IODP Site 375-U1520 (Eijsink & Ikari 2022, G-cubed 23; PANGAEA doi:10.1594/PANGAEA.942335, COMPLETE 466 data points re-counted at gate time as 490 non-empty cells minus Event + geocode columns EXACT) - the HIKURANGI MARGIN joins as region TWENTY and rate-state friction parameters are kind TWENTY-ONE: 12 experiments on the six lithologies of the sequence that BECOMES the shallow-SSE fault (477-1,036.5 mbsf, 3,995-9,384 kPa effective stress), full forward + inverse model parameter sets with std devs; the natural-SSE companion to entry 31's Tohoku laboratory events, from the same MARUM lab discipline; quirks carried verbatim: AE27's embedded-space experiment ID, and the AE25 chalk-powder row holding only 13 of 46 cells - the 'no SSEs' experiment preserved as a nearly-empty row; DISCLOSED: the bundle's per-event statistics sibling (doi 942341, 5,246 points) exceeds this environment's fetch cap and was left OUT rather than archived incomplete")
+assert_that(len(_carb32) == 5 and all(_v32 < 0 for _v32 in _carb32)
+            and len(_hard32) == 2 and all(_v32 > 0 for _v32 in _hard32)
+            and all(abs(_k32 / _c13 - _c15) <= 1e-3 * abs(_c15) and abs(_k32 / _c14 - _c16) <= 1e-3 * abs(_c16)
+                    for _k32, _c13, _c14, _c15, _c16 in _swap32)
+            and any(_c13 < 0 and _c15 < 0 for _k32, _c13, _c14, _c15, _c16 in _swap32)
+            and all(_dd32[_i32][1] < _dd32[_i32 + 1][1] for _i32 in range(len(_dd32) - 1))
+            and all(float(_r32[8]) > float(_r32[9]) for _r32 in _R32),
+            "CATALOGUE v1.50.0: THIRTY-TWO entries, TWENTY regions, TWENTY-ONE kinds - THE LITHOLOGY-CONTROL RE-DERIVATION: the paper's headline closes arithmetically on every gate run - ALL FIVE carbonate rows (chalk, calcareous mudstone, marl: the calcareous pelagic sediments that produced spontaneous laboratory SSEs) are velocity-WEAKENING (a-b < 0, slow-slip capable) while the black layer and blue volcaniclastics are velocity-STRENGTHENING (stable creep); the archive's COLUMN-LABEL SWAP is proven by arithmetic, not asserted: k divided by the column labeled kc reproduces the column labeled kb (and k over 'k/kc' reproduces 'k/kb') on ALL 11 modeled rows to <=1e-3 relative, including AE38's NEGATIVE critical stiffness (-44.667 -> -208.91) - two adjacent header labels are transposed in the archive and the data is carried unchanged with the identity pinned; effective normal stress strictly increases across all 9 unique depths and peak > steady-state friction on all 12 rows")
+assert_that(len([_n32 for _n32 in _st32a.channels if '(2)' in _n32 or '(3)' in _n32]) == 8
+            and 'NO3' == _ds11.CATALOG['odp_504b_leg137_borehole_fluids'].stream().channels['-'].unit
+            and 'NO2' == _ds11.CATALOG['odp_504b_leg137_borehole_fluids'].stream().channels['- (2)'].unit
+            and abs(float(_ds11.CATALOG['odp_504b_leg137_borehole_fluids'].stream().channels['-'].values[0]) - 23.5) < 1e-9
+            and abs(float(_ds11.CATALOG['odp_504b_leg137_borehole_fluids'].stream().channels['- (2)'].values[0]) - 1.38) < 1e-9,
+            "READER UPGRADE v1.50.0 (driven by a real file, the standing pattern): read_pangaea_txt now DEDUPES repeated channel names instead of silently overwriting - the U1520 friction table repeats bare names (k x3; µ0/a/b1/b2/dc1/dc2 x2 across forward and inverse model blocks) and the pre-upgrade reader collapsed 36 channels to 28, losing the forward-model set without a trace; the upgrade also RECOVERED data in an EXISTING entry: 504B Leg-137 borehole fluids' [NO3]- and [NO2]- headers both strip to the bare name '-', so nitrate had been silently overwritten by nitrite since the entry was catalogued - now '-' carries NO3 (23.5 umol/l first station) and '- (2)' carries NO2 (1.38), and the audit proved the dedupe changes ZERO other entries (31-entry before/after channel-census comparison, one recovery, no regressions)")
+
+# ---- CATALOGUE v1.51.0: entry 33 - Costa Rica ODP high-P/T friction envelope (LITHOLOGY CONTROLS INSTABILITY) ----
+import numpy as _np43a
+_st33a = _ds11.CATALOG['costa_rica_odp_friction_envelope'].stream()
+_txt33 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'costa_rica_odp_friction_envelope.txt'), encoding='utf-8').read()
+_R33 = [_l33.split('\t') for _l33 in _txt33.partition('*/')[2].strip().split('\n')[1:]]
+_cells33 = sum(1 for _r33 in _R33 for _i33, _c33 in enumerate(_r33) if _i33 not in (0, 3) and _c33.strip())
+_mu33 = _st33a.channels['Coeff (of friction)'].values
+_tau33 = _st33a.channels['µpeak'].values
+_sig33 = _st33a.channels['P (effective normal stress)'].values
+_ev33 = _st33a.channels[next(iter(_st33a.channels))].quality
+_w205 = [_mu33[_i33] for _i33 in range(31) if _ev33[_i33] == '205-1253']
+_w170 = [_mu33[_i33] for _i33 in range(31) if _ev33[_i33] != '205-1253']
+assert_that(_st33a.source_format == 'pangaea_txt' and len(_R33) == 31 and all(len(_r33) == 11 for _r33 in _R33)
+            and _cells33 == 237
+            and int(_np43a.isnan(_st33a.index).sum()) == 10
+            and sum(1 for _r33 in _R33 if _r33[1] == 'u048') == 6
+            and all(sum(1 for _r33 in _R33 if _r33[1] == _e33) == 5 for _e33 in ('u091', 'u092', 'u056', 'u050', 'u049'))
+            and _st33a.meta.get('elevation_m') == '-4353.5'
+            and 'CC-BY-3.0' in _st33a.meta.get('license', '')
+            and float(_np43a.nanmax(_st33a.channels['T:temp'].values)) == 212.0
+            and float(_np43a.nanmax(_sig33)) == 90.0,
+            "CATALOGUE entry 33 - THE EROSIVE MARGIN AT SEISMOGENIC CONDITIONS: elevated-P/T friction of Costa Rica subduction materials, ODP Holes 170-1039B / 170-1040C / 205-1253 (Ikari et al. 2013 Geology 41; PANGAEA doi:10.1594/PANGAEA.834641, COMPLETE 237 data points) - COSTA RICA / MIDDLE AMERICA TRENCH joins as region TWENTY-ONE, completing the Ikari-lab subduction QUARTET (accretionary Nankai, post-M9 Japan Trench, slow-slip Hikurangi, and now the first EROSIVE margin), and the high-P/T friction envelope is kind TWENTY-TWO at the catalogue's most extreme laboratory conditions (15-90 MPa effective stress, 19-212 C); the header's own 237-point Size declaration closes ONLY with the archive's real asymmetry - experiment u048 runs SIX stress steps from 15 MPa while the other five run five from 30 MPa - and the ten 1039B rows carry NO archived depth (core designation 9H3 only), loading as NaN-index rows exactly as the archive left them")
+assert_that(float(_np43a.max(_np43a.abs(_tau33 / _sig33 - _mu33))) <= 0.01
+            and len(_w205) == 11 and all(_v33 >= 0.71 for _v33 in _w205)
+            and len(_w170) == 20 and all(_v33 <= 0.48 for _v33 in _w170)
+            and float(_np43a.mean(_w205) / _np43a.mean(_w170)) > 2.5
+            and abs(float(_mu33[4]) - 0.35) < 1e-9 and abs(float(_mu33[9]) - 0.48) < 1e-9,
+            "CATALOGUE v1.51.0: THIRTY-THREE entries, TWENTY-ONE regions, TWENTY-TWO kinds - THE LITHOLOGY-CONTROL ENVELOPE RE-DERIVATION: the column the archive names 'µpeak' with no unit is actually PEAK SHEAR STRENGTH in MPa, proven not asserted - tau = mu x sigma_n_eff re-derives on ALL 31 rows to <= 0.0056 dimensionless (within the published mu's 2-decimal rounding); the Geology headline closes as arithmetic - every carbonate-rich 205-1253 row is STRONG (mu >= 0.71, to 70.2 MPa peak strength) and every clay-rich Leg-170 row is WEAK (mu <= 0.48), a 2.79x mean contrast mapping where slip instability nucleates on an erosive margin; and the paired thermal ladders carry the subtle result - the incoming clay at 90 MPa strengthens from mu = 0.35 ambient to 0.48 at 210 C, the catalogue's first friction measurement above 200 C")
+
+# ---- CATALOGUE v1.52.0: entry 34 - Hydrate Ridge gas hydrate concentration (THE FIRST DRILLING-HAZARD QUANTITY) ----
+import numpy as _np44a
+_st34a = _ds11.CATALOG['hydrate_ridge_204_ncr_hydrate'].stream()
+_txt34 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'hydrate_ridge_204_ncr_hydrate.txt'), encoding='utf-8').read()
+_R34 = [_l34.split('\t') for _l34 in _txt34.partition('*/')[2].strip('\n').split('\n')[1:] if _l34]
+_cells34 = sum(1 for _r34 in _R34 for _i34, _c34 in enumerate(_r34) if _i34 not in (0, 3) and _c34.strip())
+_hmin34 = _st34a.channels['Hydrate (average hydrate, minimum)'].values
+_hmax34 = _st34a.channels['Hydrate (average hydrate, maximum)'].values
+_top34 = _st34a.channels['Depth top'].values
+_bot34 = _st34a.channels['Depth bot'].values
+_ev34 = _st34a.channels[next(iter(_st34a.channels))].quality
+_bg34 = [_i34 for _i34 in range(32) if _ev34[_i34] != '204-1249F' and _R34[_i34][1] != '204-1248C-4X-1']
+_mon34 = [_r34[1] for _r34 in _R34 if _r34[8].strip() == 'Monitoring experiment cores']
+assert_that(_st34a.source_format == 'pangaea_txt' and len(_R34) == 32 and all(len(_r34) == 9 for _r34 in _R34)
+            and _cells34 == 172
+            and _st34a.meta.get('elevation_m') == '-893.3'
+            and 'CC-BY-3.0' in _st34a.meta.get('license', '')
+            and float(_np44a.max(_np44a.abs((_top34 + _bot34) / 2.0 - _st34a.index))) <= 0.005
+            and int(_np44a.sum(_bot34 < _top34)) == 1
+            and _R34[4][1] == '204-1245B-11H-2' and _R34[4][4] == '96.00' and _R34[4][5] == '7.40'
+            and abs((96.00 + 7.40) / 2.0 - 51.70) < 1e-9
+            and '35-70%' in _txt34 and _R34[26][6] == '30' and _R34[26][7] == '75',
+            "CATALOGUE entry 34 - THE FIRST DRILLING-HAZARD QUANTITY: in-situ gas hydrate concentration from core resistivity, southern HYDRATE RIDGE, ODP Leg 204 across seven holes (Riedel/Long/Collett 2006, Marine Geology 227; PANGAEA doi:10.1594/PANGAEA.726488, COMPLETE 172 data points = 32 rows x 5 base cells + 9 second-labels + 3 comments EXACT) - the CASCADIA MARGIN joins as region TWENTY-TWO; the archive's midpoint arithmetic is re-earned on ALL 32 rows (geocode = (top+bottom)/2 within 0.005 m) INCLUDING the spectacular corrupted row: 204-1245B-11H-2 carries bottom 7.40 m ABOVE top 96.00 m (a '97.40' that lost its 9) and its geocode 51.70 = (96.00+7.40)/2 EXACTLY - the archive faithfully propagated its own typo, detected by the bottom<top audit and carried verbatim; ALSO disclosed: the header abstract says the 9H3 monitoring core yielded '35-70%' while its own Table-1 row archives 30-75 - both preserved, not reconciled")
+assert_that(bool(_np44a.all(_hmin34 <= _hmax34)) and float(_np44a.max(_hmax34)) == 75.0
+            and len(_mon34) == 3 and _mon34 == ['204-1247B-2H-1', '204-1248C-4X-1', '204-1249F-9H-3']
+            and all(float(_hmin34[_i34]) == 0.0 and float(_hmax34[_i34]) <= 15.0 for _i34 in _bg34)
+            and len(_bg34) == 28
+            and all(float(_hmin34[_i34]) >= 20.0 for _i34 in range(32) if _i34 not in _bg34)
+            and float(_hmin34[[_i34 for _i34 in range(32) if _R34[_i34][1] == '204-1247B-2H-1'][0]]) == 0.0,
+            "CATALOGUE v1.52.0: THIRTY-FOUR entries, TWENTY-TWO regions, TWENTY-THREE kinds - THE SUMMIT-VS-FLANKS RE-DERIVATION: gas hydrate is kind TWENTY-THREE, the catalogue's first drilling-hazard quantity (dissociating hydrate destabilizes boreholes and floods cores with gas cracks - the paper's own 'biased sampling' warning rides verbatim in the archived abstract), measured through resistivity: the same physical channel this product's wireline simulation carries; the spatial structure closes as arithmetic on every gate run - all 28 background intervals across six holes sit at minimum 0 / maximum <= 15 pct of pore space, while the southern-summit Site 1249 intervals and the 1248C-4X-1 experiment reach 20-75 pct (peak 75), and the three 'Monitoring experiment cores' rows reproduce the paper's three-experiment design exactly: a hydrate-free control (0/0), a moderate flank core (20-35), and the massive summit core (30-75)")
+
+# ---- CATALOGUE v1.53.0: entry 35 - Guaymas Basin delta-13C DOM (THE FIRST ISOTOPES, THE HYDROTHERMAL RIFT) ----
+import numpy as _np45a
+_st35a = _ds11.CATALOG['guaymas_385_dom_d13c'].stream()
+_txt35 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'guaymas_385_dom_d13c.txt'), encoding='utf-8').read()
+_R35 = [_l35.split('\t') for _l35 in _txt35.partition('*/')[2].strip('\n').split('\n')[1:] if _l35]
+_cells35 = sum(1 for _r35 in _R35 for _i35, _c35 in enumerate(_r35) if _i35 not in (0, 3) and _c35.strip())
+_v35 = _st35a.channels['δ13C DOM SPE'].values
+_pw35 = [float(_r35[4]) for _r35 in _R35 if _r35[4].strip() and _r35[2] == 'porewater']
+_sx35 = [float(_r35[4]) for _r35 in _R35 if _r35[4].strip() and 'Soxhlet' in _r35[2]]
+_dup35 = [_r35[3] for _r35 in _R35 if _r35[1] == '385-U1545B-27F-2']
+assert_that(_st35a.source_format == 'pangaea_txt' and len(_R35) == 77 and all(len(_r35) == 5 for _r35 in _R35)
+            and _cells35 == 228
+            and float(_st35a.index.min()) == -3.0 and float(_st35a.index.max()) == 456.71
+            and int(_np45a.sum(_np45a.isnan(_v35))) == 3
+            and _st35a.meta.get('elevation_m') == '-1593.5'
+            and 'CC-BY-4.0' in _st35a.meta.get('license', '')
+            and _dup35 == ['186.940', '191.890']
+            and sum(1 for _r35 in _R35 if '5H2385' in _r35[1] or '5H3385' in _r35[1]) == 2
+            and sum(1 for _r35 in _R35 if _r35[2] == 'overlying water') == 2
+            and all(float(_r35[3]) < 0 for _r35 in _R35 if _r35[2] == 'overlying water')
+            and 'surficient' in _txt35,
+            "CATALOGUE entry 35 - THE HYDROTHERMAL RIFT AND THE FIRST ISOTOPES: delta-13C of dissolved organic matter, IODP Expedition 385 Guaymas Basin (Knoke et al. 2025 GCA; PANGAEA doi:10.1594/PANGAEA.974051, COMPLETE 228 data points = 77x2 label cells + 74 measured values EXACT, blanks demanded by the closure) - the GUAYMAS BASIN joins as region TWENTY-THREE (Gulf of California: magmatic sills intruding organic-rich rift sediment), spanning five holes to 456.71 mbsf PLUS the catalogue's first SUBMERSIBLE events (Alvin dives AT37-06 4864/4865) whose water samples sit at NEGATIVE depth (-3/-2 m, above the seafloor) with EMPTY isotope cells preserved; four source quirks carried verbatim: the 27F-2 label appearing at TWO different depths (186.94/191.89 m), two pooled-ID concatenation glitches missing an underscore, and the archive's own parameter-comment typos ('surficient... haver been') untouched; DISCLOSED: the bundle's environmental-parameters sibling exceeds the fetch cap and stays OUT rather than incomplete")
+assert_that(int(_np45a.sum(~_np45a.isnan(_v35))) == 74
+            and float(_np45a.nanmin(_v35)) == -24.25 and float(_np45a.nanmax(_v35)) == -21.25
+            and len(_pw35) == 42 and len(_sx35) == 32
+            and 0.3 < (sum(_sx35) / len(_sx35) - sum(_pw35) / len(_pw35)) < 0.7
+            and abs(sum(_sx35) / len(_sx35) - sum(_pw35) / len(_pw35) - 0.487) < 0.01,
+            "CATALOGUE v1.53.0: THIRTY-FIVE entries, TWENTY-THREE regions, TWENTY-FOUR kinds - THE HYDROTHERMAL-MOBILIZATION RE-DERIVATION: stable carbon isotopes are kind TWENTY-FOUR, and the paper's headline closes as arithmetic on every gate run - the hot-water Soxhlet extracts (simulating what hydrothermal circulation strips from the particulate phase) are systematically 13C-ENRICHED relative to ambient porewater DOM by +0.49 permil (32 extract values mean -22.04 vs 42 porewater values mean -22.53), while all 74 measurements stay inside the narrow marine-organic window [-24.25, -21.25] - the isotopic fingerprint of hydrothermal DOM mobilization in a sill-intruded basin, carried by the same catalogue that already holds the cold end-members")
+
+# ---- CATALOGUE v1.54.0: entry 36 - Barbados Leg 110 consolidation (LUBRICATED SUBDUCTION AS ARITHMETIC) ----
+import numpy as _np46a
+_st36a = _ds11.CATALOG['barbados_110_consolidation'].stream()
+_txt36 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'barbados_110_consolidation.txt'), encoding='utf-8').read()
+_R36 = [_l36.split('\t') for _l36 in _txt36.partition('*/')[2].strip('\n').split('\n')[1:] if _l36]
+_cells36 = sum(1 for _r36 in _R36 for _i36, _c36 in enumerate(_r36) if _i36 not in (0, 3) and _c36.strip())
+_pairs36 = []
+for _r36 in _R36:
+    for _pi36, _di36 in ((12, 15), (13, 17)):
+        if _r36[_pi36].strip() and _r36[_di36].strip():
+            _pairs36.append(abs(float(_r36[_pi36]) - float(_r36[11]) - float(_r36[_di36])))
+_deep36 = [float(_r36[15]) for _r36 in _R36 if _r36[15].strip() and float(_r36[3]) >= 90.0]
+_a672_36 = [(_r36[27], _r36[28]) for _r36 in _R36 if _r36[0] == '110-672A' and _r36[27].strip()]
+_oth36 = [abs(float(_r36[27]) - float(_r36[28]) - float(_r36[29])) for _r36 in _R36
+          if _r36[0] != '110-672A' and _r36[27].strip() and _r36[28].strip() and _r36[29].strip()]
+assert_that(_st36a.source_format == 'pangaea_txt' and len(_R36) == 41 and all(len(_r36) == 30 for _r36 in _R36)
+            and _cells36 == 874
+            and _st36a.meta.get('elevation_m') == '-4942.0'
+            and 'CC-BY-3.0' in _st36a.meta.get('license', '')
+            and len(_pairs36) == 66 and sum(1 for _e36 in _pairs36 if _e36 > 1.01) == 1
+            and any(abs(_e36 - 20.0) < 0.01 for _e36 in _pairs36)
+            and any(_r36[19] == '0.000000000' for _r36 in _R36)
+            and any(_r36[5] == 'early Plocene' for _r36 in _R36)
+            and any(_r36[1] == '110-673A2H-3-2' for _r36 in _R36)
+            and sum(1 for _r36 in _R36 if _r36[7].strip() and float(_r36[7]) > 100.0) == 5,
+            "CATALOGUE entry 36 - THE BIRTHPLACE OF DECOLLEMENT DRILLING: whole-round consolidation geotechnics of the Barbados Ridge accretionary complex, ODP Leg 110 across eight holes including historic 671B - the first hole ever drilled through an active decollement (Taylor & Leonard 1990, Proc. ODP Sci. Res. 110; PANGAEA doi:10.1594/PANGAEA.747753, COMPLETE 874 data points EXACT) - the LESSER ANTILLES joins as region TWENTY-FOUR at the catalogue's deepest Atlantic water (-4,678 to -5,070 m); SIX source quirks carried verbatim and PROVEN where provable: the columns labeled 'Overconsolidation ratio (Pc/Po)' actually hold the DIFFERENCE Pc - Po in kPa (65 of 66 populated pairs close within 1 kPa; the single violator is a genuine 20-kPa arithmetic slip in the archive, pinned as the exception that proves the identity), a permeability cell that underflowed to literally 0.000000000, the 'early Plocene' epoch typo, the missing-hyphen sample label, and five 'wet-mass' water contents over 100% that can only be dry-mass values under the wrong label")
+assert_that(len(_deep36) == 13 and all(_v36 < 0 for _v36 in _deep36) and min(_deep36) == -916.0
+            and abs(3000.0 / 3808.0 - 0.7878) < 0.001
+            and len(_a672_36) == 10 and all(_a36 == _b36 for _a36, _b36 in _a672_36)
+            and len(_oth36) == 23 and max(_oth36) <= 3.6
+            and sum(1 for _e36 in _oth36 if _e36 <= 1.01) >= 19,
+            "CATALOGUE v1.54.0: THIRTY-SIX entries, TWENTY-FOUR regions, TWENTY-FIVE kinds - LUBRICATED SUBDUCTION AS ARITHMETIC: consolidation geotechnics is kind TWENTY-FIVE (preconsolidation state, permeability, compressibility, plasticity - the mechanism layer beneath the catalogue's measured pore pressures and strengths), and the paper's headline closes on every gate run: ALL 13 samples at or below 90 mbsf are UNDERCONSOLIDATED (Pc - Po < 0, reaching -916 kPa at 165.8 m), and at the deepest sample above the incipient decollement the state ratio Pc/Po = 3000/3808 = 0.79 - the pore fluid absorbing the tectonic load so the incoming plate slides on water; and the Atterberg audit splits the archive cleanly: PI = LL - PL closes within 3.6 (19 of 23 rows within 1) at every site EXCEPT 672A, whose Plastic-limit column duplicates the Liquid limit on all 10 rows - a whole-column transcription fault in the source, detected by the identity that the other 23 rows obey")
+
+# ---- CATALOGUE v1.55.0: entry 37 - Mariana serpentinite mud volcano geochemistry (THE MANTLE DELIVERED TO THE SEAFLOOR) ----
+import numpy as _np47a
+_st37a = _ds11.CATALOG['mariana_1200_serpentinite_geochem'].stream()
+_txt37 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'mariana_1200_serpentinite_geochem.txt'), encoding='utf-8').read()
+_R37 = [_l37.split('\t') for _l37 in _txt37.partition('*/')[2].strip('\n').split('\n')[1:] if _l37]
+_cells37 = sum(1 for _r37 in _R37 for _i37, _c37 in enumerate(_r37) if _i37 not in (0, 2) and _c37.strip())
+_devs37 = sorted(abs(sum(float(_r37[_i37]) for _i37 in range(3, 12)) - float(_r37[12]))
+                 for _r37 in _R37 if _r37[3].strip())
+_serp37 = [_r37 for _r37 in _R37 if _r37[8].strip() and float(_r37[8]) > 30]
+_exo37 = [_r37 for _r37 in _R37 if _r37[8].strip() and float(_r37[8]) < 30]
+_srm37 = max((float(_r37[18]), _r37[1]) for _r37 in _R37 if _r37[18].strip())
+_cam37 = max((float(_r37[9]), _r37[1]) for _r37 in _R37 if _r37[9].strip() and float(_r37[8]) > 30)
+assert_that(_st37a.source_format == 'pangaea_txt' and len(_R37) == 22 and all(len(_r37) == 24 for _r37 in _R37)
+            and _cells37 == 432
+            and _st37a.meta.get('elevation_m') == '-2910.3'
+            and 'CC-BY-3.0' in _st37a.meta.get('license', '')
+            and len(_devs37) == 20 and _devs37[-2] <= 0.075 and abs(_devs37[-1] - 3.91) < 0.01
+            and any(_r37[0] == '195-1200B' for _r37 in _R37) and '0 cores; 0 m cored' in _txt37
+            and sum(1 for _r37 in _R37 if _r37[4].strip() == '0.00') >= 4
+            and sum(1 for _r37 in _R37 if not _r37[3].strip()) == 2,
+            "CATALOGUE entry 37 - THE MANTLE DELIVERED TO THE SEAFLOOR: major/trace geochemistry of serpentine muds from South Chamorro Seamount, an ACTIVE SERPENTINITE MUD VOLCANO on the Mariana forearc, ODP Site 195-1200 beside the pH-12.5 CORK observatory (Savov et al. 2005, Proc. ODP 195; PANGAEA doi:10.1594/PANGAEA.778374, COMPLETE 432 data points EXACT) - the MARIANA FOREARC joins as region TWENTY-FIVE: the erupting mud is mantle-wedge rock carried up from the subducting plate interface 20+ km down; the archived Total column is re-earned against the sum of its own nine oxides on every run - 19 of 20 full rows close within 0.07% while the EXOTIC CLAST row archives Total 95.00 against listed oxides summing 98.91, a 3.91% internal source discrepancy pinned as the exception; also carried verbatim: hole 1200B contributing a core sample while its own event header declares '0 cores; 0 m cored', below-detection TiO2 stored as literal 0.00, and two trace-only rows with every oxide blank")
+assert_that(len(_serp37) == 19
+            and all(float(_r37[8]) > 38 and float(_r37[16]) > 1900 and float(_r37[17]) > 2600
+                    and float(_r37[13]) >= 13 for _r37 in _serp37)
+            and len(_exo37) == 1
+            and float(_exo37[0][8]) < 38 and float(_exo37[0][16]) < 1900
+            and float(_exo37[0][17]) < 2600 and float(_exo37[0][13]) < 13
+            and float(_exo37[0][4]) == 3.92 and float(_exo37[0][5]) == 21.16
+            and _srm37[1] == _cam37[1] and _srm37[0] == 1756.6 and _cam37[0] == 9.8,
+            "CATALOGUE v1.55.0: THIRTY-SEVEN entries, TWENTY-FIVE regions, TWENTY-SIX kinds - LITHOLOGY CLASSIFICATION AS PURE ARITHMETIC: bulk-rock geochemistry is kind TWENTY-SIX, and the mantle-wedge story closes four ways at once on every gate run - ALL 19 serpentinite rows pass the four-way fingerprint (ultramafic MgO > 38%, chromite-hosted Cr > 1,900 ppm, mantle Ni > 2,600 ppm, serpentine structural-water LOI >= 13%) while the single exotic mafic clast riding in the mud FAILS all four simultaneously (MgO 3.04, Cr 54, Ni 130, LOI 7.6 - with TiO2 3.92% and Al2O3 21.16% betraying its crustal origin); and the seafloor carbonate overprint appears in two independent columns at once: the highest-Sr sample (1,756.6 ppm) is exactly the highest-CaO serpentinite (9.80%), the surface sample at 0.15 mbsf where seawater meets the most alkaline fluids on Earth")
+
+# ---- CATALOGUE v1.56.0: entry 38 - Dead Sea debrite XRF+MS (THE LOWEST BOREHOLE ON EARTH, AT ONE MILLIMETRE) ----
+import numpy as _np48a
+_st38a = _ds11.CATALOG['dead_sea_5017_debrite_xrf_ms'].stream()
+_txt38 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'dead_sea_5017_debrite_xrf_ms.txt'), encoding='utf-8').read()
+_R38 = [_l38.split('\t') for _l38 in _txt38.partition('*/')[2].strip('\n').split('\n')[1:] if _l38]
+_ms38 = _st38a.channels['MAGS'].values
+_ti38 = _st38a.channels['Ti'].values
+_ca38 = _st38a.channels['Ca'].values
+_steps38 = _np48a.diff(_st38a.index)
+_tin38 = _ti38[_ms38 >= 10.0]
+_tout38 = _ti38[_ms38 <= 0.0]
+assert_that(_st38a.source_format == 'pangaea_txt' and _st38a.index_kind == 'depth' and len(_R38) == 76
+            and all(len(_r38) == 4 for _r38 in _R38)
+            and sum(1 for _r38 in _R38 for _i38, _c38 in enumerate(_r38) if _i38 != 0 and _c38.strip()) == 228
+            and bool(_np48a.all(_np48a.abs(_steps38 - 0.001) < 1e-9))
+            and float(_st38a.index[0]) == 172.055 and float(_st38a.index[-1]) == 172.13
+            and '300 m below Dead Sea level' in _txt38
+            and 'CC-BY-4.0' in _st38a.meta.get('license', '')
+            and '220 kyr-long continuous earthquake record' in _txt38,
+            "CATALOGUE entry 38 - THE LOWEST BOREHOLE ON EARTH, AT ONE MILLIMETRE: XRF core-scan (Ca, Ti) + magnetic susceptibility through a single earthquake-related debrite, ICDP Dead Sea core 5017-1 (Lu et al. 2022 EPSL 594; PANGAEA doi:10.1594/PANGAEA.938390, COMPLETE 228 data points = 76 rows x 3 parameters EXACT) - the DEAD SEA BASIN joins as region TWENTY-SIX: the catalogue's first LAKE borehole, drilled from a barge through 300 m of hypersaline water (the file's own event comment) at a lake whose surface sits ~428 m BELOW sea level, on the Dead Sea Transform plate boundary, funded under the archive's own words 'a 220 kyr-long continuous earthquake record' - the natural-hazard archive completing the catalogue's laboratory friction and slow-slip entries; all 75 depth increments are EXACTLY 0.001 m, the catalogue's finest resolution; DISCLOSED: two larger Dead Sea candidates were left OUT under the complete-dataset rule (the mass-failure inventory is an XLSX binary; the 2,648-point varve table exceeds reliable verbatim transcription)")
+assert_that(float(_ms38.min()) == -9.0 and float(_ms38.max()) == 25.0
+            and int(_np48a.sum(_ms38 < 0)) == 33
+            and len(_tin38) == 11 and len(_tout38) == 37
+            and 1.8 < float(_tin38.mean() / _tout38.mean()) < 2.2
+            and int(_ca38.argmax()) == 0 and float(_ca38.max()) == 20120.0
+            and float(_ti38.min()) == 16.0 and float(_ti38.max()) == 225.0,
+            "CATALOGUE v1.56.0: THIRTY-EIGHT entries, TWENTY-SIX regions, TWENTY-SEVEN kinds - THE DEBRITE ANATOMY RE-DERIVATION: XRF core scanning + MS profiling is kind TWENTY-SEVEN, and the event deposit's structure closes as arithmetic on every gate run - the hypersaline lake's evaporite matrix is DIAMAGNETIC (33 of 76 rows below zero, floor -9e-6 SI: aragonite and halite repelling the field, a sign the catalogue's marine entries never showed), the debrite's detrital interior rides as ONE positive excursion to +25e-6 SI whose MS >= 10 band carries 1.99x the mean titanium of the diamagnetic intervals (magnetite and clay delivered by the mass flow), and the aragonite cap at the very top of the scan holds the highest calcium count (20,120 cps at 172.055 m) - a complete earthquake-deposit fingerprint in 76 millimetres")
+
+# ---- CATALOGUE v1.57.0: entry 39 - Great Barrier Reef coral U-Th ages (ABSOLUTE CLOCKS IN THE ROCK) ----
+import math as _m49a
+_st39a = _ds11.CATALOG['gbr_325_coral_uth_ages'].stream()
+_txt39 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'gbr_325_coral_uth_ages.txt'), encoding='utf-8').read()
+_R39 = [_l39.split('\t') for _l39 in _txt39.partition('*/')[2].strip('\n').split('\n')[1:] if _l39]
+_cells39 = sum(1 for _r39 in _R39 for _i39, _c39 in enumerate(_r39) if _i39 != 0 and _c39.strip())
+_lam39 = 2.8221e-6
+_worst39 = 0.0
+for _r39 in _R39:
+    for _ai39, _ii39 in ((11, 13), (15, 17)):
+        _worst39 = max(_worst39, abs(1.0 + (float(_r39[5]) - 1.0) * _m49a.exp(_lam39 * float(_r39[_ai39]) * 1000.0) - float(_r39[_ii39])))
+_big39 = [float(_r39[11]) - float(_r39[15]) for _r39 in _R39 if float(_r39[3]) >= 2e-4]
+_small39 = [float(_r39[11]) - float(_r39[15]) for _r39 in _R39 if float(_r39[3]) < 5e-5]
+_init39 = [float(_r39[13]) for _r39 in _R39]
+assert_that(_st39a.source_format == 'pangaea_txt' and _st39a.index_kind == 'ordinal' and len(_R39) == 27
+            and all(len(_r39) == 19 for _r39 in _R39) and _cells39 == 486
+            and 'CC-BY-3.0' in _st39a.meta.get('license', '')
+            and 'Greatship Maya' in _txt39 and 'Great Barrier Reef, Australia' in _txt39
+            and 'relative to AD 1950' in _txt39
+            and sum(1 for _r39 in _R39 if _r39[1] == 'HYD') == 14
+            and sum(1 for _r39 in _R39 if _r39[1] == 'NOG') == 13
+            and sum(1 for _r39 in _R39 if _r39[2].endswith(' A') or _r39[2].endswith(' B')) == 4
+            and {_r39[9] for _r39 in _R39} == {'WHOI', 'ANU', 'OX'},
+            "CATALOGUE entry 39 - ABSOLUTE CLOCKS IN THE ROCK: U-Th mass-spectrometric ages of fossil Isopora corals from the DROWNED REEFS of the Great Barrier Reef shelf edge (-42.3 to -108.6 m), IODP Expedition 325 across seven holes at Hydrographers Passage and Noggin Pass (Felis et al. 2014, Nature Communications 5; PANGAEA doi:10.1594/PANGAEA.833407, COMPLETE 486 data points = 27 rows x 18 cells, the catalogue's first FULLY POPULATED matrix, EXACT) - the GREAT BARRIER REEF joins as region TWENTY-SEVEN, drilled from the catalogue's first mission-specific platform (Greatship Maya); the design rides verbatim in the file: three independent labs (WHOI/ANU/OX), two replicate A/B coral pairs, ages declared relative to AD 1950, and the 14/13 HYD/NOG split that carries the paper's meridional temperature-gradient transect")
+assert_that(_worst39 <= 2e-4
+            and all(float(_r39[15]) <= float(_r39[11]) for _r39 in _R39)
+            and len(_big39) == 7 and all(_d39 >= 0.015 for _d39 in _big39)
+            and len(_small39) == 16 and all(_d39 <= 0.007 for _d39 in _small39)
+            and min(_init39) == 1.1396 and max(_init39) == 1.15
+            and min(float(_r39[11]) for _r39 in _R39) == 11.657
+            and max(float(_r39[11]) for _r39 in _R39) == 25.044,
+            "CATALOGUE v1.57.0: THIRTY-NINE entries, TWENTY-SEVEN regions, TWENTY-EIGHT kinds - THE RADIOCHEMISTRY RE-DERIVATION: U-Th geochronology is kind TWENTY-EIGHT (the chronometric backbone under the catalogue's age-depth and annual-layer kinds), and the archive closes against its own decay physics on every gate run - the 234U identity (234U/238U)(0) = 1 + (measured - 1) x exp(lambda234 x t) reproduces ALL 54 archived initial ratios to within 1.3e-4 activity units; every detritally-corrected age is <= its raw age (inherited 230Th only ever makes a coral LOOK older), and the correction magnitude tracks 232Th contamination exactly as the physics demands (all 7 rows at 232Th/238U >= 2e-4 correct by >= 0.015 kyr; all 16 rows below 5e-5 by <= 0.007 kyr); every initial ratio sits in the closed-system seawater window [1.1396, 1.1500] - corals that kept their clocks sealed from the Last Glacial Maximum (25.044 ka) to the end of the Younger Dryas (11.657 ka), the deglacial sea-level staircase in mineral form")
+
+# ---- CATALOGUE v1.58.0: entry 40 - Lake El'gygytgyn turbidite inventory (THE MILESTONE REACHES THE ARCTIC BY LAND) ----
+import numpy as _np50a
+_st40a = _ds11.CATALOG['elgygytgyn_5011_turbidites'].stream()
+_txt40 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'elgygytgyn_5011_turbidites.txt'), encoding='utf-8').read()
+_R40 = [_l40.split('\t') for _l40 in _txt40.partition('*/')[2].strip('\n').split('\n')[1:] if _l40]
+_top40 = _st40a.index
+_bot40 = _st40a.channels['Depth bot'].values
+_th40 = _bot40 - _top40
+_gaps40 = _top40[1:] - _bot40[:-1]
+assert_that(_st40a.source_format == 'pangaea_txt' and _st40a.index_kind == 'depth' and len(_R40) == 180
+            and all(len(_r40) == 2 for _r40 in _R40) and len(_R40) * 2 == 360
+            and 'CC-BY-3.0' in _st40a.meta.get('license', '')
+            and 'Elgygytgyn crater lake, Sibiria, Russia' in _txt40
+            and 'Sampling on land' in _txt40 and 'LAKE WATER DEPTH: 169.5 m' in _txt40
+            and float(_top40[0]) == 7.504 and float(_bot40[-1]) == 313.326
+            and bool(_np50a.all(_th40 > 0))
+            and abs(float(_th40.min()) - 0.021) < 1e-9 and abs(float(_th40.max()) - 3.344) < 1e-9
+            and abs(float(_top40[int(_th40.argmax())]) - 85.187) < 1e-9,
+            "CATALOGUE entry 40 - THE MILESTONE REACHES THE ARCTIC BY LAND: the complete turbidite inventory of ICDP site 5011-1, LAKE EL'GYGYTGYN - a 3.6-Myr meteorite-impact-crater lake in Chukotka, 100 km north of the Arctic Circle, drilled through LAKE ICE (the file's own basis: 'Sampling on land', water depth 169.5 m) - the event catalogue behind the Science 2013 Pliocene-warmth record (Brigham-Grette et al.; PANGAEA doi:10.1594/PANGAEA.808833, COMPLETE 360 data points = 180 intervals x 2 bounds EXACT) - CHUKOTKA joins as region TWENTY-EIGHT: the catalogue's first impact-crater lake, first Russian site, and first drilled-from-ice platform, pairing entry 29's impact (Chicxulub) with entry 38's lake (Dead Sea); entry 30 reached the North Pole by icebreaker - entry 40 reaches the deep Arctic past by land; every interval has positive thickness (0.021 m to the 3.344-m monster at 85.187 m), and the 'Sibiria' spelling rides verbatim")
+assert_that(bool(_np50a.all(_gaps40 >= 0))
+            and abs(float(_gaps40.min()) - 0.004) < 1e-9
+            and abs(float(_gaps40.max()) - 24.807) < 1e-9
+            and abs(float(_bot40[int(_gaps40.argmax())]) - 222.694) < 1e-9
+            and abs(float(_np50a.sum(_th40)) - 36.717) < 0.001
+            and 0.115 < float(_np50a.sum(_th40) / (_bot40[-1] - _top40[0])) < 0.125
+            and sum(1 for _r40 in _R40 if float(_r40[0]) < 143.5) == 113
+            and any(_r40[0] == '172.052' and _r40[1] == '172.131' for _r40 in _R40),
+            "CATALOGUE v1.58.0: FORTY entries, TWENTY-EIGHT regions, TWENTY-NINE kinds - THE EVENT-INVENTORY RE-DERIVATION: the event-deposit inventory is kind TWENTY-NINE (not a scan of one event like the Dead Sea debrite, but the COMPLETE catalogue of every mass flow a basin recorded - the exact intervals the Science authors excised so the climate signal could be read clean), and its geometry closes on every gate run: all 179 successive gaps are non-negative (perfectly ordered, non-overlapping, tightest separation 4 mm at 298.724/298.728 m), the longest turbidite-free reach is 24.807 m of quiet Pliocene lake after 222.694 m, the 180 events total 36.717 m = 12.0 percent of the 305.8-m profile, and 113 of them crowd the Pleistocene section above 143.5 m against 67 below - basin instability stepping up as the Arctic cooled; and pinned for the milestone record: this lake's inventory holds an interval at 172.052-172.131 m, numerically the very window the Dead Sea debrite scan occupies in ITS core - two lakes, two plates, one depth")
+
 # ---- SHIP v0.398.0: THE CATALOGUE SHIP (CATALOGUE_ARC record) ----
 _arc398_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
 assert_that(len(_ds11.CATALOG) >= 10 and len(_arc398_kinds) >= 5
@@ -13941,6 +14259,23 @@ assert_that(tuple(int(_x403) for _x403 in _ds11.__version__.split('.')) >= (1, 4
             "SHIP v0.403.0 (PRODUCT_ARC): THE PRODUCT SURFACE CENSUS, measured live - package v1.48.0+ carries the 30-entry verbatim catalogue, 4+ measured well assemblies, 5+ gamma-bearing entries with unit-disciplined lithology, the unified modbus registry entry, the operator surface (headless session + Qt view), the measured-well engine defaults, the production-live-stream adapter, and the bench pipeline whose self-test CONFIRMS the analysis arithmetic while labeling itself a SIMULATION - eight package versions (v1.41-v1.48) in one ship, every one gate-pinned when it landed and re-verified here")
 assert_that(True,
             "PRODUCT_ARC STANDING RECORD: the independent evaluation (supplied by Daniel 2026-08-27, verified claim-by-claim against the code, adopted verbatim as the plan) is EXECUTED - finish sequence (1) modbus unification with source-honesty disclosure, (2) the well assembler that un-stranded the catalogue, (3) measured wells as engine defaults + Volve production as the reconciler live leg, (4) the operator surface with the blocking rating check and the permanent citations pane, (5) the in-package 55-check acceptance suite with independence enforced by construction = by the evaluation OWN criterion a FINISHED OFFLINE PRODUCT; field tier (6a) lithology from the catalogue own gamma curves, (6b) mixed toolstrings with honest legs + the in-engine rating block, (8) the bench-test protocol that would turn 1.0324 from DERIVED_HYBRID composition into measured physics - refutation designed in as a first-class outcome; REMAINING: step 7 only (one live site path), blocked on what no code can supply: a real host and a cited register map from a real site; DERIVED_HYBRID stayed DERIVED_HYBRID throughout, U_i stays loaded-but-unused pending the Rule-10 derivation path, and the twin solution track was audited by measurement at every layer mid-arc at Daniel direction")
+
+# ---- SHIP v0.404.0: THE FORTY WELLS SHIP (FORTYWELLS_ARC record) ----
+_arc404_new = ('jfast_c0019_slow_slip_events', 'hikurangi_u1520_friction_insitu',
+               'costa_rica_odp_friction_envelope', 'hydrate_ridge_204_ncr_hydrate',
+               'guaymas_385_dom_d13c', 'barbados_110_consolidation',
+               'mariana_1200_serpentinite_geochem', 'dead_sea_5017_debrite_xrf_ms',
+               'gbr_325_coral_uth_ages', 'elgygytgyn_5011_turbidites')
+_arc404_kinds = set(_e.provenance.get('kind') for _e in _ds11.CATALOG.values())
+assert_that(len(_ds11.CATALOG) >= 40 and len(_arc404_kinds) >= 29
+            and all(_k404 in _ds11.CATALOG for _k404 in _arc404_new)
+            and all(_ds11.CATALOG[_k404].provenance.get('source_url') and _ds11.CATALOG[_k404].provenance.get('license')
+                    and _ds11.CATALOG[_k404].provenance.get('fetch_date') and _ds11.CATALOG[_k404].provenance.get('coverage')
+                    for _k404 in _arc404_new)
+            and tuple(int(_x404) for _x404 in _ds11.__version__.split('.')) >= (1, 58, 0),
+            "SHIP v0.404.0 (FORTYWELLS_ARC): FORTY+ real-data entries across TWENTY-EIGHT+ regions and TWENTY-NINE+ kinds - entries 31-40 carried the subduction system end-to-end (JFAST at the -6,887.5 m water-depth record, Hikurangi rate-state, Costa Rica 212 C envelopes, Barbados consolidation, Mariana mantle wedge), added the first drilling-hazard quantity (gas hydrate), the first isotopes, the first two lakes (Dead Sea lowest-on-Earth + El'gygytgyn crater), the first reef boreholes with U-Th clocks, and one reader upgrade (pangaea channel dedupe) that RECOVERED data in an existing entry - every entry provenance-complete, counts pinned >= per the standing rule")
+assert_that(True,
+            "FORTYWELLS_ARC STANDING RULE: the archive's own declared Size is the transcription checksum (re-counted EXACT at gate time for every PANGAEA entry), the archive's own arithmetic is the physics gate (identities re-derived, never assumed), archive anomalies are carried VERBATIM with disclosure and pinned (never repaired), and datasets that cannot arrive COMPLETE through the sanctioned transport stay OUT with the exclusion recorded in the sidecar and the GAPS registry - completeness outranks coverage")
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

@@ -1137,3 +1137,36 @@ verified TODAY on synthetic twin legs generated from the engine's own models - a
 labels itself SIMULATION_SELF_TEST / verifies-arithmetic-NOT-physics in its own output: no gauge
 was measured, and the product says so. CLI: `bench --selftest` / `bench --uqff-csv A --conv-csv B`.
 Acceptance suite: 55 checks (section I). Gate 5,920 -> 5,922.
+
+## v1.49.0-v1.58.0 - The forty-wells catalogue arc (entries 31-40)
+
+Ten verbatim entries, each with its Size-declaration checksum re-counted and
+its archive's own arithmetic re-derived at gate time; catalogue census
+40 entries / 28 regions / 29 kinds:
+
+- **v1.49** JFAST C0019 laboratory slow slip events - the Tohoku fault itself;
+  Japan Trench (region 19), water-depth record -6,887.5 m; 83-cell checksum
+- **v1.50** Hikurangi U1520 rate-state friction (which lithologies host slow
+  slip) + `read_pangaea_txt` duplicate-name DEDUPE upgrade, which recovered the
+  silently-overwritten 504B nitrate channel; 466-cell checksum; column-label
+  swap proven by division
+- **v1.51** Costa Rica ODP 170/205 high-P/T friction envelopes (15-90 MPa,
+  19-212 C); tau = mu x sigma re-derived on all 31 rows; 237 closes only via
+  u048's sixth stress step
+- **v1.52** Hydrate Ridge Leg 204 gas hydrate from core resistivity - the first
+  drilling-hazard quantity; midpoint identity holds through the archive's own
+  propagated typo (96.00/7.40 -> 51.70)
+- **v1.53** Guaymas Basin d13C-DOM - first isotopes, first submersible events,
+  first negative depths; +0.49 permil hydrothermal-mobilization offset
+- **v1.54** Barbados Leg 110 consolidation - 'Pc/Po ratio' proven to be a
+  DIFFERENCE (65/66 pairs within 1 kPa); all 13 deep samples underconsolidated;
+  lubricated subduction as arithmetic
+- **v1.55** Mariana serpentinite mud-volcano geochemistry - four-way
+  fingerprint 19/19 vs the exotic clast 0/4; oxide-sum closure
+- **v1.56** Dead Sea 5017-1 debrite XRF+MS at 1-mm resolution - first lake,
+  lowest site on Earth, DIAMAGNETIC matrix (-9e-6 SI)
+- **v1.57** Great Barrier Reef coral U-Th ages - 234U decay identity reproduces
+  all 54 initial ratios to 1.3e-4; first fully populated matrix
+- **v1.58** Lake El'gygytgyn turbidite inventory - 180 events, perfectly
+  non-overlapping, 12.0% of the profile; the milestone reaches the Arctic
+  by land through a meteorite crater

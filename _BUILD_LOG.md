@@ -333,3 +333,6 @@ THE PRODUCT SHIP: downhole v1.41-v1.48 — the independent evaluation's finish s
 
 ## v0.403.0-remanufacture — 2026-08-27
 CI red on all runners: numpy>=2.0 removed np.trapz; assembler overburden now uses np.trapezoid (1.x fallback); PORTABILITY GUARD 2 pin + standing removed-alias-sweep rule. Stale TRACKED sdist staging tree star_magic_program-0.402.0/ identified (mounted-FS delete block; gitignored; Daniel removes on Windows). Same version per Daniel (tag preserved; PyPI untouched). Gate 5,925/0. Acceptance 55/55.
+
+## v0.404.0 — 2026-08-28
+THE FORTY WELLS SHIP: downhole v1.49–v1.58, catalogue entries 31–40 (census 40/28/29). Subduction end-to-end (JFAST record-depth slow-slip, Hikurangi rate-state + reader dedupe with 504B nitrate recovery, Costa Rica 212 °C envelopes, Barbados Pc−Po difference proof, Mariana mantle-wedge fingerprint) + hydrate hazard + first isotopes + two lakes + coral U-Th (54/54 decay-identity closure). 20 catalog data-files added to the wheel. Gate 5,949/0. Acceptance 55/55. 23-file pass verified.

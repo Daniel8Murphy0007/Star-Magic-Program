@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.404.0 — 2026-08-28 — THE FORTY WELLS SHIP
+
+Ten verbatim catalogue entries (`uqff_downhole_simulator` v1.49.0–v1.58.0, entries 31–40); census 40 entries / 28 regions / 29 kinds:
+
+- **v1.49** JFAST C0019 Tohoku laboratory slow-slip events (Japan Trench; −6,887.5 m water record; 83-cell checksum; B379-1 band exceedance disclosed)
+- **v1.50** Hikurangi U1520 rate-state friction + `read_pangaea_txt` dedupe upgrade (recovered the silently-overwritten 504B nitrate channel; 466-cell checksum; kc/kb column-label swap proven by division)
+- **v1.51** Costa Rica ODP 170/205 high-P/T friction envelopes (τ = µ·σ on all 31 rows; 237 closes only via u048's sixth stress step; 2.79× lithology contrast)
+- **v1.52** Hydrate Ridge Leg 204 gas hydrate (first drilling-hazard quantity; midpoint identity survives the archive's own propagated typo; abstract-vs-table 35–70/30–75 disclosed)
+- **v1.53** Guaymas δ¹³C-DOM (first isotopes/submersible/negative depths; +0.49‰ mobilization offset; 228-cell checksum)
+- **v1.54** Barbados Leg 110 consolidation ('Pc/Po' proven a DIFFERENCE, 65/66 within 1 kPa; 13/13 deep samples underconsolidated to −916 kPa; 672A Atterberg column fault detected by identity)
+- **v1.55** Mariana serpentinite geochemistry (four-way fingerprint 19/19 vs exotic clast 0/4; oxide-sum closure; 1200B zero-cores contradiction preserved)
+- **v1.56** Dead Sea 5017-1 debrite XRF+MS (first lake, lowest site on Earth, 1-mm grid, diamagnetic matrix −9×10⁻⁶ SI)
+- **v1.57** GBR coral U-Th ages (²³⁴U decay identity closes all 54 initial ratios to 1.3×10⁻⁴; first fully populated matrix; Greatship Maya first MSP)
+- **v1.58** El'gygytgyn turbidite inventory (180 events non-overlapping to 4 mm; 12.0% of profile; milestone: Arctic by land through a meteorite crater)
+
+Gate 5,929 → 5,949 (+20 catalogue pins + 2 ship pins + label syncs each entry, SHIP GUARD v5 live throughout). Acceptance 55/55 at every entry. 20 new catalog data-files added to the wheel. Honest exclusions (fetch-cap / binary-route datasets) recorded in provenance sidecars and GAPS registry.
+
 ## v0.403.0 — 2026-08-27 — THE PRODUCT SHIP
 
 The independent evaluation's finish sequence, **executed** (`uqff_downhole_simulator` v1.41.0–v1.48.0):

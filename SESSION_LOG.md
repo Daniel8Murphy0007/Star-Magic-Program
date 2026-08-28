@@ -12158,3 +12158,23 @@ Per Daniel: tag v0.403.0 NOT burned (PyPI never received it) - same
 version remanufactured. Gate 5,924 -> 5,925, 0 failures; acceptance
 55/55; sdist/wheel rebuilt clean. Daniel: delete the stale tree, commit,
 re-tag v0.403.0 (move tag to the new commit), push.
+
+## Entry 277 — 2026-08-27/28 — v0.404.0 THE FORTY WELLS SHIP (downhole v1.49–v1.58, entries 31–40)
+
+Ten catalogue entries on Daniel's per-well GO cadence, each fetched read-only,
+transcribed verbatim, sidecar-provenanced, Size-checksummed and physics-pinned;
+census 40 entries / 28 regions / 29 kinds. Highlights: JFAST Tohoku slow-slip
+(water-depth record −6,887.5 m); Hikurangi friction driving the read_pangaea_txt
+DEDUPE upgrade that recovered the 504B nitrate channel (31-entry before/after
+audit, one recovery, zero regressions); Costa Rica 212 °C envelopes; Hydrate
+Ridge hydrate hazard; Guaymas first isotopes; Barbados 'Pc/Po' proven a
+difference (lubricated subduction as arithmetic); Mariana mantle-wedge
+fingerprint; Dead Sea 1-mm diamagnetic debrite (first lake, lowest site);
+GBR U-Th decay-identity closure (54/54); El'gygytgyn 180-turbidite inventory
+(milestone: Arctic by land). Honest exclusions: 942341/974050 fetch-capped,
+931843 XLSX-binary, 944827 too large for confident verbatim transcription —
+all recorded, none archived incomplete. Package v1.50.0 → v1.58.0
+(one code change: the dedupe; rest data + pins). Gate 5,929 → 5,949, 0 red at
+every step; acceptance 55/55 at every entry; SHIP GUARD v5 forced label syncs
+live eight times. Ship files: full 23-file pass; 20 catalog data-files added
+to the wheel; wheel-content verification in /tmp before SHIP_MESSAGE.

@@ -6608,3 +6608,15 @@ trapz CI failure. Standing lessons: (a) removed-alias sweep is ship prep;
 assumed to be CI's; (c) sdist staging trees are gitignored
 (star_magic_program-*/) and the tracked v0.402.0 leftover is Daniel's
 Windows-side git rm. Board otherwise unchanged (6 items).
+
+## FORTYWELLS_ARC note (v0.404.0, 2026-08-28) — no new rulings
+
+Entries 31–40 executed on per-well GO cadence; zero physics substitutions,
+every archive anomaly carried verbatim with disclosure. One standing
+DEPENDENCY reaffirmed (unchanged): field-tier step 7 (one live site path)
+remains blocked on a real host + cited register map only a site can supply.
+INFO for a future board slot, not a ruling request: four datasets were
+excluded under the complete-dataset rule (two fetch-capped, one XLSX-binary,
+one too large for confident verbatim transcription) — if Daniel wants an
+XLSX-ingestion or chunked-transport route, that is new-capability work, not
+a repair. Board otherwise unchanged.

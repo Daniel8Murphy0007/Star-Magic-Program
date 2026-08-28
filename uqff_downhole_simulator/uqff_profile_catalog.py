@@ -403,8 +403,13 @@ def read_pangaea_txt(path) -> LiveStream:
             continue
         mu = _re.search(r'\[([^\]]+)\]', h)
         name = _re.sub(r'\s*\[[^\]]+\]', '', h).strip()
-        channels[name] = StreamChannel(name=name, unit=(mu.group(1) if mu else ''),
-                                       values=_np.array(vals, dtype=float))
+        base, _n2 = name, 2
+        while name in channels:
+            name = f"{base} ({_n2})"      # v1.50.0: PANGAEA tables may repeat
+            _n2 += 1                      # bare names (k, a, b1...); silent
+        channels[name] = StreamChannel(   # overwrite would lose channels
+            name=name, unit=(mu.group(1) if mu else ''),
+            values=_np.array(vals, dtype=float))
     if label_col and channels:
         first = next(iter(channels))
         channels[first].quality = label_col

@@ -657,3 +657,4 @@ TWENTYWELLS_ARC,WHITEPAPER,MERGED,v0.400.0,downhole v1.26-v1.30: entries 16-20 (
 INCORPORATION_ARC,CORPORATE,MERGED,v0.401.0,six founding PDFs deposited in pdf/ (no code or catalogue changes; corporate record ship)
 POLE_TO_POLE_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.402.0,ten catalogue packages v1.31-v1.40 (entries 21-30) shipped; catalogue 20->30 entries pole to pole
 PRODUCT_ARC,DOWNHOLE_PRODUCT,MERGED,v0.403.0,eight packages v1.41-v1.48 shipped; finish sequence 1-5 + field tier 6a/6b/8 complete
+FORTYWELLS_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.404.0,ten entries v1.49-v1.58; one reader upgrade (pangaea dedupe); census 40 entries / 28 regions / 29 kinds

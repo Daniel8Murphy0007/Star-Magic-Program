@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.403.0"
-description = "Star-Magic UQFF calculator v0.403.0: THE PRODUCT SHIP. 2,253 dispatches (2,308 keys), gate 5,926/0. The downhole simulator completes the adopted independent-evaluation plan (v1.41-v1.48): finish sequence 1-5 - modbus unified, well assembler, measured wells as engine defaults, operator surface, in-package 55-check acceptance suite = FINISHED OFFLINE PRODUCT; field tier 6a gamma/lithology from catalogue curves, 6b mixed toolstrings + in-engine rating block, 8 bench-test protocol. Next: PAPER_2258."
+version = "0.404.0"
+description = "Star-Magic UQFF calculator v0.404.0: THE FORTY WELLS SHIP. 2,253 dispatches (2,308 keys), gate 5,949/0. Downhole catalogue v1.49-v1.58, entries 31-40: JFAST Tohoku lab slow-slip (6,887.5 m water record), Hikurangi rate-state friction + reader dedupe (recovered 504B nitrate), Costa Rica 212 C friction envelopes, Hydrate Ridge gas hydrate, Guaymas d13C, Barbados consolidation, Mariana serpentinite, Dead Sea + El'gygytgyn lake records, GBR coral U-Th. 40 entries / 28 regions / 29 kinds. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -166,5 +166,25 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "uqff_downhole_simulator/BENCH_TEST_PROTOCOL.md",
     "uqff_downhole_simulator/catalog/acex_lomonosov_age_depth_model.txt",
     "uqff_downhole_simulator/catalog/acex_lomonosov_age_depth_model.provenance.json",
+    "uqff_downhole_simulator/catalog/jfast_c0019_slow_slip_events.txt",
+    "uqff_downhole_simulator/catalog/jfast_c0019_slow_slip_events.provenance.json",
+    "uqff_downhole_simulator/catalog/hikurangi_u1520_friction_insitu.txt",
+    "uqff_downhole_simulator/catalog/hikurangi_u1520_friction_insitu.provenance.json",
+    "uqff_downhole_simulator/catalog/costa_rica_odp_friction_envelope.txt",
+    "uqff_downhole_simulator/catalog/costa_rica_odp_friction_envelope.provenance.json",
+    "uqff_downhole_simulator/catalog/hydrate_ridge_204_ncr_hydrate.txt",
+    "uqff_downhole_simulator/catalog/hydrate_ridge_204_ncr_hydrate.provenance.json",
+    "uqff_downhole_simulator/catalog/guaymas_385_dom_d13c.txt",
+    "uqff_downhole_simulator/catalog/guaymas_385_dom_d13c.provenance.json",
+    "uqff_downhole_simulator/catalog/barbados_110_consolidation.txt",
+    "uqff_downhole_simulator/catalog/barbados_110_consolidation.provenance.json",
+    "uqff_downhole_simulator/catalog/mariana_1200_serpentinite_geochem.txt",
+    "uqff_downhole_simulator/catalog/mariana_1200_serpentinite_geochem.provenance.json",
+    "uqff_downhole_simulator/catalog/dead_sea_5017_debrite_xrf_ms.txt",
+    "uqff_downhole_simulator/catalog/dead_sea_5017_debrite_xrf_ms.provenance.json",
+    "uqff_downhole_simulator/catalog/gbr_325_coral_uth_ages.txt",
+    "uqff_downhole_simulator/catalog/gbr_325_coral_uth_ages.provenance.json",
+    "uqff_downhole_simulator/catalog/elgygytgyn_5011_turbidites.txt",
+    "uqff_downhole_simulator/catalog/elgygytgyn_5011_turbidites.provenance.json",
     "uqff_downhole_simulator/catalog/volve_15_9_19a_core_excerpt.provenance.json",
 ]

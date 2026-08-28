@@ -274,3 +274,4 @@ TWENTYWELLS_ARC,EXTENSIONS,5 catalogue entries + 2 new readers (read_ktb_table t
 INCORPORATION_ARC,CORPORATE_RECORD,6 PDFs in pdf/ + 2 gate pins (presence + fidelity standing rule); zero calculator/package changes,n/a,v0.401.0
 POLE_TO_POLE_ARC,DOWNHOLE_CATALOGUE,10 entries + 10 sidecars + reader ordinal-fallback + 20 entry pins + 2 ship pins,uqff_downhole_simulator v1.31.0-v1.40.0,v0.402.0
 PRODUCT_ARC,DOWNHOLE_PRODUCT,5 new modules (assembler/operator/acceptance/gamma/bench) + protocol doc + engine mixed-strings + CLI x6 new commands + 20 entry-step pins + 2 ship pins,uqff_downhole_simulator v1.41.0-v1.48.0,v0.403.0
+FORTYWELLS_ARC,DOWNHOLE_CATALOGUE,10 entries + 20 catalog data-files + read_pangaea_txt dedupe + 20 catalogue pins + 2 ship pins + 8 live label syncs,entries 31-40 -> catalog/*.txt + sidecars,v0.404.0
