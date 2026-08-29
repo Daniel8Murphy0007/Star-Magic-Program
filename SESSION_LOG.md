@@ -12208,3 +12208,30 @@ missed?") caught wells 41–50 absent from pyproject data-files — the same mis
 fixed and canonized as SHIP GUARD v7 (gate diffs catalog/ against data-files on every run).
 Gate 5,949 → 5,973/0 across the arc; acceptance 55/55 at every entry and at ship.
 Ship files: all 23 touched. Daniel ships via .\ship.ps1.
+
+## Entry 279 — 2026-08-29 — THE SURVEYING TOOL SHIP (v0.406.0)
+
+Daniel's mission redirect ("ground strata imaging and sensing... image/map continents one
+site at a time") drove the whole arc. Built: strata-join (v1.69), entry #51 + third runnable
+well (v1.70), operator tier + 3 Retama entries with 181/181 screenshot-vs-XLS cross-checksum
+(v1.71-v1.72), fifth assembly + survey-pair reconciler that diagnosed the archives (v1.73),
+EARTH MODEL Part 1 (v1.74, 29 sites one frame, MD-vs-TVD error caught by the frame's own rule),
+K2 gravity kernel Part 2 (v1.75, UQFF constants only, KTB corr 0.9968), K1 structural ladder
+(v1.76, 7 EXACT, zero violations), INVERSE ENGINE Part 3 (v1.77, first falsifiable strata
+prediction pinned AWAITING DATA: KTB Vp 5,643-6,039 m/s). Daniel's rulings: private tier for
+operator data; K2 kernel first. Guards worked all day: SHIP GUARD v7 caught its author within
+hours of canonization; the v1.45 corpus-independence pin fired on an acceptance docstring.
+Gate 5,949 -> 5,993/0. Acceptance 55 -> 75. Ship files: all 23. Daniel ships via .\ship.ps1.
+
+### Entry 279 addendum — RED GATE on the ship machine (Daniel: "complete failure. reverify")
+
+.\ship.ps1 gate died: ModuleNotFoundError xlrd — the drift-survey .xls entry's reader needs
+xlrd, present in the build sandbox, absent on the ship machine. Root-cause fix, not symptom:
+(1) drift entry converted CELL-FOR-CELL to the dependency-free operator-table format
+(shortest-round-trip floats validated channel-by-channel; vendor '-' literals at TD verbatim;
+byte-identical vendor XLS preserved as .xls.original, unscanned); (2) read_drift_xls import
+guarded with a clear message and kept only for NEW vendor .xls drops; (3) xlrd declared as the
+'xls' optional extra; (4) full dependency audit: no other undeclared third-party import in the
+gate path; (5) gate + acceptance re-run GREEN under a blocked-xlrd environment (PYTHONPATH shim
+raising ImportError - the ship-machine simulation the rehearsal lacked); (6) wheel rebuilt and
+re-proven. Standing lesson appended to CLAUDE.md: rehearse ships with optional modules BLOCKED.

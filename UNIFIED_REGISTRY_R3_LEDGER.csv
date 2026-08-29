@@ -245,3 +245,4 @@ v0.403.0,2026-08-27,PRODUCT_ARC,modules +5 protocol +1 pins +20 acceptance 0->55
 v0.403.0-remfg,2026-08-27,PRODUCT_ARC,numpy2 trapezoid fix + gitignore + diag hardening + stale-tree disclosure,gate 5925/0
 v0.404.0,2026-08-28,FORTYWELLS_ARC,ten verbatim wells 31-40 + pangaea dedupe reader upgrade + 504B nitrate recovery,gate 5949/0
 v0.405.0,2026-08-28,FIFTYWELLS_ARC,ten verbatim wells 41-50 to the MILESTONE (ancient air at Dome C; first microbial life rates; first license refusal on record) + SHIP GUARD v7 catalog/data-files closure,gate 5973/0
+v0.406.0,2026-08-29,SURVEYTOOL_ARC,Parts 1-3 of the geological subsurface surveying tool + entry 51 + operator tier + first falsifiable strata prediction (KTB Vp) pinned awaiting data,gate 5993/0

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.405.0", "uqff_calculator.VERSION = 0.405.0 (THE FIFTY WELLS SHIP - MILESTONE: catalogue entries 41-50 carry the census to 50 entries / 37 regions / 39 kinds; first license refusal on record, first measurement of LIFE, and the fiftieth entry is ANCIENT AIR - EPICA Dome C CO2 611-799 kyr incl. the 171.6 ppmv record low; SHIP GUARD v7 makes catalog/data-files closure mechanical)")
+assert_that(C.VERSION == "0.406.0", "uqff_calculator.VERSION = 0.406.0 (THE SURVEYING TOOL SHIP: Parts 1-3 of the geological subsurface surveying tool - Earth Model 29 sites one frame, K2 gravity kernel validated on real ground at 0.9968, K1 structural ladder 7 EXACT, inverse engine with the first falsifiable strata prediction pinned AWAITING DATA - plus catalogue entry 51 making u1324 the third runnable well, and the private-by-construction operator tier carrying the first client field data)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -12592,14 +12592,14 @@ _s = _e.summary()
 assert_that(_s['sensors'] == 6 and _s['history_points'] == 26 and _s['uqff_live'],
             "PAPER_2256: HEADLESS engine verification - six-gauge string steps 25x with rolling history under the gate (no display; matplotlib/Qt confined to the demo modules); UQFF live inside the engine")
 import os as _ds_os
-for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', 'catalog/ktb_vb_rockmech_compress.dat', 'catalog/ktb_vb_rockmech_compress.provenance.json', 'catalog/ktb_hb_rockmech_compress.dat', 'catalog/ktb_hb_rockmech_compress.provenance.json', 'catalog/odp_504b_leg137_borehole_fluids.txt', 'catalog/odp_504b_leg137_borehole_fluids.provenance.json', 'catalog/iodp_u1324_pore_pressure.txt', 'catalog/iodp_u1324_pore_pressure.provenance.json', 'catalog/odp_1027c_cork_temperature.txt', 'catalog/odp_1027c_cork_temperature.provenance.json', 'catalog/odp_1027b_thermal_conductivity.txt', 'catalog/odp_1027b_thermal_conductivity.provenance.json', 'catalog/dsdp_504b_physical_properties.txt', 'catalog/dsdp_504b_physical_properties.provenance.json', 'catalog/odp_1165b_thermal_conductivity.txt', 'catalog/odp_1165b_thermal_conductivity.provenance.json', 'catalog/odp_504b_dike_elastic_moduli.txt', 'catalog/odp_504b_dike_elastic_moduli.provenance.json', 'catalog/dsdp_504b_sound_velocity.txt', 'catalog/dsdp_504b_sound_velocity.provenance.json', 'catalog/nankai_megasplay_shear_strength.txt', 'catalog/nankai_megasplay_shear_strength.provenance.json', 'catalog/odp_735b_gabbro_elastic_moduli.txt', 'catalog/odp_735b_gabbro_elastic_moduli.provenance.json', 'catalog/odp_1274a_mantle_peridotite_mad.txt', 'catalog/odp_1274a_mantle_peridotite_mad.provenance.json', 'catalog/chicxulub_m0077a_pwave_velocity.txt', 'catalog/chicxulub_m0077a_pwave_velocity.provenance.json', 'catalog/acex_lomonosov_age_depth_model.txt', 'catalog/acex_lomonosov_age_depth_model.provenance.json', 'catalog/jfast_c0019_slow_slip_events.txt', 'catalog/jfast_c0019_slow_slip_events.provenance.json', 'catalog/hikurangi_u1520_friction_insitu.txt', 'catalog/hikurangi_u1520_friction_insitu.provenance.json', 'catalog/costa_rica_odp_friction_envelope.txt', 'catalog/costa_rica_odp_friction_envelope.provenance.json', 'catalog/hydrate_ridge_204_ncr_hydrate.txt', 'catalog/hydrate_ridge_204_ncr_hydrate.provenance.json', 'catalog/guaymas_385_dom_d13c.txt', 'catalog/guaymas_385_dom_d13c.provenance.json', 'catalog/barbados_110_consolidation.txt', 'catalog/barbados_110_consolidation.provenance.json', 'catalog/mariana_1200_serpentinite_geochem.txt', 'catalog/mariana_1200_serpentinite_geochem.provenance.json', 'catalog/dead_sea_5017_debrite_xrf_ms.txt', 'catalog/dead_sea_5017_debrite_xrf_ms.provenance.json', 'catalog/gbr_325_coral_uth_ages.txt', 'catalog/gbr_325_coral_uth_ages.provenance.json', 'catalog/elgygytgyn_5011_turbidites.txt', 'catalog/elgygytgyn_5011_turbidites.provenance.json', 'catalog/bengal_u1452_grain_size.txt', 'catalog/bengal_u1452_grain_size.provenance.json', 'catalog/walvis_208_petm_carbonate.txt', 'catalog/walvis_208_petm_carbonate.provenance.json', 'catalog/woodlark_1109_rock_eval.txt', 'catalog/woodlark_1109_rock_eval.provenance.json', 'catalog/blake_164_methane_isotopes.txt', 'catalog/blake_164_methane_isotopes.provenance.json', 'catalog/ursa_308_xrd_mineralogy.txt', 'catalog/ursa_308_xrd_mineralogy.provenance.json', 'catalog/peru_201_sulfate_reduction.txt', 'catalog/peru_201_sulfate_reduction.provenance.json', 'catalog/sumatra_362_cohesion.txt', 'catalog/sumatra_362_cohesion.provenance.json', 'catalog/med_160_sapropels.txt', 'catalog/med_160_sapropels.provenance.json', 'catalog/fram_909_organic_petrography.txt', 'catalog/fram_909_organic_petrography.provenance.json', 'catalog/epica_domec_co2_800kyr.txt', 'catalog/epica_domec_co2_800kyr.provenance.json', 'uqff_well_assembler.py', 'uqff_operator_app.py', 'acceptance_tests.py', 'uqff_gamma.py', 'uqff_bench.py', 'BENCH_TEST_PROTOCOL.md', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
+for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine.py', 'uqff_service_life.py', 'uqff_telemetry.py', 'uqff_case_study.py', 'uqff_gauge_specs.py', 'uqff_deviation.py', 'uqff_tool_library.py', 'uqff_ports.py', 'uqff_reconciler.py', 'uqff_follower.py', 'uqff_modbus.py', 'example_register_map.json', 'uqff_profile_catalog.py', 'catalog/volve_15_9_19_sr_excerpt.las', 'catalog/volve_15_9_19_sr_excerpt.provenance.json', 'catalog/scorpio_e1_sa_excerpt.las', 'catalog/scorpio_e1_sa_excerpt.provenance.json', 'catalog/kennetcook_2_p129_excerpt.las', 'catalog/kennetcook_2_p129_excerpt.provenance.json', 'catalog/university_6_17_no1_tx_excerpt.las', 'catalog/university_6_17_no1_tx_excerpt.provenance.json', 'catalog/collingwood_1_28_ks_complete.las', 'catalog/collingwood_1_28_ks_complete.provenance.json', 'catalog/gisp2_greenland_temperature.csv', 'catalog/gisp2_greenland_temperature.provenance.json', 'catalog/agassiz77_canada_temperature.csv', 'catalog/agassiz77_canada_temperature.provenance.json', 'catalog/l07_01_nl_excerpt.las', 'catalog/l07_01_nl_excerpt.provenance.json', 'catalog/l06_06_nl_survey.csv', 'catalog/l06_06_nl_survey.provenance.json', 'catalog/volve_15_9_19a_core_excerpt.csv', 'catalog/volve_15_9_19a_core_excerpt.provenance.json', 'catalog/volve_f12_f14_production_excerpt.csv', 'catalog/volve_f12_f14_production_excerpt.provenance.json', 'catalog/ktb_hb_hlog246_temperature.dat', 'catalog/ktb_hb_hlog246_temperature.provenance.json', 'catalog/ktb_vb_vlog251_temperature.dat', 'catalog/ktb_vb_vlog251_temperature.provenance.json', 'catalog/ktb_hb_tvd_0_9080_excerpt.dat', 'catalog/ktb_hb_tvd_0_9080_excerpt.provenance.json', 'catalog/ktb_hb_bhgm_density.dat', 'catalog/ktb_hb_bhgm_density.provenance.json', 'catalog/ktb_vb_rockmech_compress.dat', 'catalog/ktb_vb_rockmech_compress.provenance.json', 'catalog/ktb_hb_rockmech_compress.dat', 'catalog/ktb_hb_rockmech_compress.provenance.json', 'catalog/odp_504b_leg137_borehole_fluids.txt', 'catalog/odp_504b_leg137_borehole_fluids.provenance.json', 'catalog/iodp_u1324_pore_pressure.txt', 'catalog/iodp_u1324_pore_pressure.provenance.json', 'catalog/odp_1027c_cork_temperature.txt', 'catalog/odp_1027c_cork_temperature.provenance.json', 'catalog/odp_1027b_thermal_conductivity.txt', 'catalog/odp_1027b_thermal_conductivity.provenance.json', 'catalog/dsdp_504b_physical_properties.txt', 'catalog/dsdp_504b_physical_properties.provenance.json', 'catalog/odp_1165b_thermal_conductivity.txt', 'catalog/odp_1165b_thermal_conductivity.provenance.json', 'catalog/odp_504b_dike_elastic_moduli.txt', 'catalog/odp_504b_dike_elastic_moduli.provenance.json', 'catalog/dsdp_504b_sound_velocity.txt', 'catalog/dsdp_504b_sound_velocity.provenance.json', 'catalog/nankai_megasplay_shear_strength.txt', 'catalog/nankai_megasplay_shear_strength.provenance.json', 'catalog/odp_735b_gabbro_elastic_moduli.txt', 'catalog/odp_735b_gabbro_elastic_moduli.provenance.json', 'catalog/odp_1274a_mantle_peridotite_mad.txt', 'catalog/odp_1274a_mantle_peridotite_mad.provenance.json', 'catalog/chicxulub_m0077a_pwave_velocity.txt', 'catalog/chicxulub_m0077a_pwave_velocity.provenance.json', 'catalog/acex_lomonosov_age_depth_model.txt', 'catalog/acex_lomonosov_age_depth_model.provenance.json', 'catalog/jfast_c0019_slow_slip_events.txt', 'catalog/jfast_c0019_slow_slip_events.provenance.json', 'catalog/hikurangi_u1520_friction_insitu.txt', 'catalog/hikurangi_u1520_friction_insitu.provenance.json', 'catalog/costa_rica_odp_friction_envelope.txt', 'catalog/costa_rica_odp_friction_envelope.provenance.json', 'catalog/hydrate_ridge_204_ncr_hydrate.txt', 'catalog/hydrate_ridge_204_ncr_hydrate.provenance.json', 'catalog/guaymas_385_dom_d13c.txt', 'catalog/guaymas_385_dom_d13c.provenance.json', 'catalog/barbados_110_consolidation.txt', 'catalog/barbados_110_consolidation.provenance.json', 'catalog/mariana_1200_serpentinite_geochem.txt', 'catalog/mariana_1200_serpentinite_geochem.provenance.json', 'catalog/dead_sea_5017_debrite_xrf_ms.txt', 'catalog/dead_sea_5017_debrite_xrf_ms.provenance.json', 'catalog/gbr_325_coral_uth_ages.txt', 'catalog/gbr_325_coral_uth_ages.provenance.json', 'catalog/elgygytgyn_5011_turbidites.txt', 'catalog/elgygytgyn_5011_turbidites.provenance.json', 'catalog/bengal_u1452_grain_size.txt', 'catalog/bengal_u1452_grain_size.provenance.json', 'catalog/walvis_208_petm_carbonate.txt', 'catalog/walvis_208_petm_carbonate.provenance.json', 'catalog/woodlark_1109_rock_eval.txt', 'catalog/woodlark_1109_rock_eval.provenance.json', 'catalog/blake_164_methane_isotopes.txt', 'catalog/blake_164_methane_isotopes.provenance.json', 'catalog/ursa_308_xrd_mineralogy.txt', 'catalog/ursa_308_xrd_mineralogy.provenance.json', 'catalog/peru_201_sulfate_reduction.txt', 'catalog/peru_201_sulfate_reduction.provenance.json', 'catalog/sumatra_362_cohesion.txt', 'catalog/sumatra_362_cohesion.provenance.json', 'catalog/med_160_sapropels.txt', 'catalog/med_160_sapropels.provenance.json', 'catalog/fram_909_organic_petrography.txt', 'catalog/fram_909_organic_petrography.provenance.json', 'catalog/epica_domec_co2_800kyr.txt', 'catalog/epica_domec_co2_800kyr.provenance.json', 'catalog/gom_308_t2p_insitu.txt', 'catalog/gom_308_t2p_insitu.provenance.json', 'uqff_well_assembler.py', 'uqff_operator_app.py', 'acceptance_tests.py', 'uqff_gamma.py', 'uqff_bench.py', 'BENCH_TEST_PROTOCOL.md', '__main__.py', 'matplotlib_demo.py', 'qt6_downhole_app.py', 'README.md'):
     assert_that(_ds_os.path.exists(_ds_os.path.join('uqff_downhole_simulator', _f)),
                 "PAPER_2256: uqff_downhole_simulator/%s present - the four-module layout + README the template thread converged on, packaged (pyproject packages entry)" % _f)
 
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.68.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.77.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -14332,10 +14332,9 @@ try:
     _ka142.temperature_C_at(100.0)
 except ValueError as _e142:
     _ref142a = 'MEASURED temperature coverage 7743.14' in str(_e142)
-try:
-    _u142.to_engine_profile()
-except NotImplementedError as _e142:
-    _ref142b = 'refuses to substitute a gradient template' in str(_e142)
+_ref142b = ('T=measured(gom_308_t2p_insitu)' in _u142.to_engine_profile().name)
+# v1.70.0: u1324 ACCEPTS (entry 51 supplied measured temperature); the
+# refusal this block pinned from v1.42.0 stands superseded, honestly.
 try:
     _b142.to_engine_profile()
 except NotImplementedError as _e142:
@@ -14350,7 +14349,7 @@ assert_that(len(_ds11.BUILTIN_ASSEMBLIES) >= 4
             and abs(_b142.density_gcc_at(400.0) - 2.756) < 0.005
             and abs(_b142.value_at('velocity', 400.0) - 5295.0) < 2.0
             and _ref142a and _ref142b and _ref142c,
-            "FINISH-SEQ 2 (v1.42.0): THE WELL ASSEMBLER - one WellAssembly per site family from mixed catalogue pieces, and the stranded data becomes queryable physics: KTB-HB assembles temperature + trajectory + BHGM density + strength (T(7900 m) = 172.97 C measured; overburden(7400.3 m) = 190.9 MPa integrated from the site's OWN measured density, sitting below the 253-MPa deepest UCS exactly as the strength-count pins found; TVD(2803) = 2802.8 m); Site 1027 serves the CORK equilibrium column (60.6 C at 612.3 m); U1324 serves MEASURED pore pressure (16,730 kPa at 608.2 m beside the archived 22,110-kPa overburden); 504B serves paired density+velocity with fluids and elastics attached - and the refusals are as honest as the lookups: strict mode refuses outside MEASURED coverage (no silent clamping), and the engine bridge refuses to substitute a gradient template where no temperature was measured (U1324, 504B) - the assembly never invents what the archive did not measure")
+            "FINISH-SEQ 2 (v1.42.0): THE WELL ASSEMBLER - one WellAssembly per site family from mixed catalogue pieces, and the stranded data becomes queryable physics: KTB-HB assembles temperature + trajectory + BHGM density + strength (T(7900 m) = 172.97 C measured; overburden(7400.3 m) = 190.9 MPa integrated from the site's OWN measured density, sitting below the 253-MPa deepest UCS exactly as the strength-count pins found; TVD(2803) = 2802.8 m); Site 1027 serves the CORK equilibrium column (60.6 C at 612.3 m); U1324 serves MEASURED pore pressure (16,730 kPa at 608.2 m beside the archived 22,110-kPa overburden); 504B serves paired density+velocity with fluids and elastics attached - and the refusals are as honest as the lookups: strict mode refuses outside MEASURED coverage (no silent clamping), and the engine bridge refuses to substitute a gradient template where no temperature was measured (504B still; U1324 refused here from v1.42.0 until entry 51's Table T2 supplied its measured temperature at v1.70.0 - now it ACCEPTS with T=measured/P=measured) - the assembly never invents what the archive did not measure")
 _prof142 = _ka142.to_engine_profile()
 _cfg142 = _ds11.SimulatorConfig(sensor_depths_ft=[25500.0, 25800.0, 26100.0], profile=_prof142)
 _eng142 = _ds11.UQFFDownholeEngine(_cfg142)
@@ -14371,11 +14370,9 @@ assert_that('T=measured(ktb_hb_hlog246_temperature)' in _prof142.name
 # ---- FINISH-SEQUENCE step 3 (v1.43.0): MEASURED WELLS ARE THE DEFAULT DEMOS ----
 _cfg143 = _ds11.demo_config('ktb_hb')
 _lo143, _hi143 = _cfg143.profile.depths_ft[0], _cfg143.profile.depths_ft[-1]
-_ref143 = False
-try:
-    _ds11.demo_config('u1324')
-except NotImplementedError:
-    _ref143 = True
+_cfg143u = _ds11.demo_config('u1324')   # v1.70.0: ACCEPTS (was a NotImplementedError refusal v1.43.0-v1.69.0)
+_ref143 = ('T=measured(gom_308_t2p_insitu)' in _cfg143u.profile.name
+           and 'P=measured' in _cfg143u.profile.name)
 _cfg143b = _ds11.demo_config('site_1027', n_gauges=4)
 assert_that('T=measured' in _cfg143.profile.name
             and abs(_cfg143.td_ft - _hi143) < 1e-9
@@ -14384,7 +14381,7 @@ assert_that('T=measured' in _cfg143.profile.name
             and len(_cfg143b.sensor_depths_ft) == 4
             and _cfg143b.profile.depths_ft[-1] < 2010.0
             and _ref143,
-            "FINISH-SEQ 3 (v1.43.0): MEASURED WELLS ARE THE DEFAULT DEMOS - demo_config(well) hangs the gauge string INSIDE a measured catalogue assembly's temperature window (KTB: six gauges strictly within the 1994 log's 25,404-26,198 ft span, td = the measured window end; Site 1027: four gauges inside the CORK column, never past the measured 612.3 m) with the profile's Rule 7 method label carried through, and the CLI exposes it as 'run --well ktb_hb' / 'wells' - the 0.465-psi/ft and 0.018-F/ft templates are no longer the demo path; where a site has no measured temperature (u1324) demo_config REFUSES via the assembly bridge rather than fall back to the template")
+            "FINISH-SEQ 3 (v1.43.0): MEASURED WELLS ARE THE DEFAULT DEMOS - demo_config(well) hangs the gauge string INSIDE a measured catalogue assembly's temperature window (KTB: six gauges strictly within the 1994 log's 25,404-26,198 ft span, td = the measured window end; Site 1027: four gauges inside the CORK column, never past the measured 612.3 m) with the profile's Rule 7 method label carried through, and the CLI exposes it as 'run --well ktb_hb' / 'wells' - the 0.465-psi/ft and 0.018-F/ft templates are no longer the demo path; SUPERSEDED CLAUSE (v1.70.0): u1324, which REFUSED here from v1.43.0 for lack of measured temperature, now runs with T=measured(gom_308_t2p_insitu)/P=measured after entry 51 supplied the missing column - the refusal did its job until the archive did")
 _stream143, _smap143 = _ds11.production_live_stream('volve_f12_f14_production_excerpt', '15/9-F-12', 10000.0)
 _p143 = _stream143.channels['P_raw_psi_S1'].values
 import numpy as _np143
@@ -14592,6 +14589,262 @@ assert_that(tuple(int(_x403) for _x403 in _ds11.__version__.split('.')) >= (1, 4
 assert_that(True,
             "PRODUCT_ARC STANDING RECORD: the independent evaluation (supplied by Daniel 2026-08-27, verified claim-by-claim against the code, adopted verbatim as the plan) is EXECUTED - finish sequence (1) modbus unification with source-honesty disclosure, (2) the well assembler that un-stranded the catalogue, (3) measured wells as engine defaults + Volve production as the reconciler live leg, (4) the operator surface with the blocking rating check and the permanent citations pane, (5) the in-package 55-check acceptance suite with independence enforced by construction = by the evaluation OWN criterion a FINISHED OFFLINE PRODUCT; field tier (6a) lithology from the catalogue own gamma curves, (6b) mixed toolstrings with honest legs + the in-engine rating block, (8) the bench-test protocol that would turn 1.0324 from DERIVED_HYBRID composition into measured physics - refutation designed in as a first-class outcome; REMAINING: step 7 only (one live site path), blocked on what no code can supply: a real host and a cited register map from a real site; DERIVED_HYBRID stayed DERIVED_HYBRID throughout, U_i stays loaded-but-unused pending the Rule-10 derivation path, and the twin solution track was audited by measurement at every layer mid-arc at Daniel direction")
 
+# ---- DOWNHOLE v1.69.0: the strata depth-join engine (STRATA-INFERENCE LAYER 1, Daniel's 2026-08-28 mission redirect) ----
+from uqff_downhole_simulator import uqff_strata_join as _sj69
+_lp69 = _sj69.library_pairs()
+_pv69 = _sj69.pair_stats('504b', 'porosity', 'vp')
+_pw69 = _sj69.pair_stats('504b', 'porosity', 'water_content')
+_ks69 = _sj69.pair_stats('ktb_hb', 'compressive_strength', 'density')
+_th69 = _sj69.pair_stats('site_1027', 'thermal_conductivity', 'cork_temperature')
+assert_that(_lp69['n_ok'] >= 12 and _lp69['n_refused'] >= 3
+            and _pv69['status'] == 'OK' and _pv69['n'] == 36 and -0.80 < _pv69['pearson_r'] < -0.60
+            and _pw69['status'] == 'OK' and _pw69['pearson_r'] > 0.99
+            and _ks69['status'] == 'OK' and _ks69['n'] >= 10 and 0.2 < _ks69['pearson_r'] < 0.6
+            and _th69['status'] == 'REFUSED_THIN_DATA' and _th69['n'] < _sj69.MIN_PAIR_N
+            and _sj69.__doc__ is not None and 'No interpolation is invented' in _sj69.__doc__,
+            "DOWNHOLE v1.69.0 - THE MISSION REDIRECT MADE CODE: the catalogue stops being a shelf and starts being a training corpus - uqff_strata_join depth-aligns the multi-entry wells into co-located joint property tables (bin means of verbatim archive samples only, no interpolation invented) and the ground itself answers: the 504B porosity x Vp join recovers the NEGATIVE velocity-porosity relation (r = -0.71 on 36 co-located 5-m bins, the empirical Wyllie structure, from two archives transcribed years apart in this catalogue), Vp x bulk density comes back POSITIVE (+0.74), KTB strength x density positive on 11 crystalline-basement bins, and the engine DETECTS REDUNDANCY it was never told about - porosity x water content at r > 0.99, two columns that are near-definitionally linked through grain density - while thin joins (the 1027 conductivity x CORK temperature pair at n=2, the KTB temperature window that barely grazes the density stations) REFUSE with their counts disclosed instead of inventing statistics")
+assert_that(True,
+            "STRATA-INFERENCE STANDING DIRECTION (Daniel, 2026-08-28, verbatim intent): the purpose is GROUND STRATA IMAGING AND SENSING - 'building the technology similar to downhole-Lidar... image/map continents one site at a time' - NOT a better traditional logging program; the layers are (1) THIS join engine exposing the joint probability structure of known strata, (2) conditional inference P(column | partial measurement) with honest support and extrapolation flags - conditional('504b','vp','porosity',v) already runs, (3) UQFF channel-ranking: compute candidate UQFF observables (F_UBi/F_UBii buoyancy structure, material-density landmark resonance, F_U=0 crossover roots) over the known columns and rank which carries the most strata information - the library cannot DISCOVER the sensing channel (no archive measured one) but it can POINT at it, and (4) the instrument, whose physics Daniel supplies per Rule 10; catalogue selection rule CHANGED from new-region-new-kind to CO-LOCATED MULTI-PROPERTY SUITES in one hole")
+
+# ---- CATALOGUE v1.70.0: entry 51 - Exp 308 Table T2 (THE MISSING COLUMN) + the u1324 engine acceptance ----
+_st51 = _ds11.CATALOG['gom_308_t2p_insitu'].stream()
+_txt51 = open(_os33.path.join('uqff_downhole_simulator', 'catalog', 'gom_308_t2p_insitu.txt'), encoding='utf-8').read()
+_R51 = [_l51.split('\t') for _l51 in _txt51.partition('*/')[2].strip('\n').split('\n')[1:] if _l51]
+_wd51 = {}
+for _r51 in _R51:
+    _wd51.setdefault(_r51[1], set()).add(round(float(_r51[3]) - float(_r51[2]), 1))
+_g51 = [float(_r51[4]) * 1000.0 / float(_r51[3]) for _r51 in _R51]
+_u51 = [(float(_r51[2]), float(_r51[10])) for _r51 in _R51 if _r51[1].startswith('U1324')]
+assert_that(_st51.source_format == 'iodp_table' and len(_R51) == 32 and all(len(_r51) == 12 for _r51 in _R51)
+            and 'Public Domain' in _st51.meta.get('license', '')
+            and all(len(_v51) == 1 for _v51 in _wd51.values())
+            and _wd51['U1324B'] == {1056.8}
+            and 10.03 < min(_g51) and max(_g51) < 10.06
+            and all(float(_r51[5]) > float(_r51[4]) for _r51 in _R51)
+            and len(_u51) == 18 and min(_d51 for _d51, _ in _u51) == 50.0 and max(_d51 for _d51, _ in _u51) == 608.2,
+            "CATALOGUE entry 51 - THE MISSING COLUMN, first entry under the co-location selection rule: IODP Expedition 308 Table T2 (Flemings et al., doi:10.2204/iodp.proc.308.203.2008, publisher-policy Public Domain/BOAI with the absence of an in-file license DISCLOSED), 32 DVTPP+T2P penetrometer deployments transcribed verbatim from the publisher's own table - and the archive closes against physics on every gate run: BOH mbsl minus BOH mbsf is CONSTANT within every one of the 7 holes (the water-depth identity, with U1324B = 1056.8 m EXACTLY re-deriving the assembler's pre-existing constant from an independent archive), the hydrostatic column u_h/mbsl sits in 10.03-10.06 kPa/m seawater on ALL 32 rows, overburden exceeds hydrostatic on all 32, and the EIGHTEEN U1324 stations (50-608.2 mbsf) match the report's own count - dual-port 'a; b' cells and by-design T2P blanks carried verbatim, never split, never filled")
+_w51 = __import__('uqff_downhole_simulator.uqff_well_assembler', fromlist=['assemble_u1324']).assemble_u1324()
+_p51 = _w51.to_engine_profile()
+_run51 = []
+for _k51, _f51 in __import__('uqff_downhole_simulator.uqff_well_assembler', fromlist=['BUILTIN_ASSEMBLIES']).BUILTIN_ASSEMBLIES.items():
+    try:
+        _f51().to_engine_profile()
+        _run51.append(_k51)
+    except Exception:
+        pass
+assert_that('T=measured(gom_308_t2p_insitu)' in _p51.name and 'P=measured' in _p51.name
+            and len(_w51.components['temperature'].depths) == 18
+            and 'component_filter' in _w51.components['temperature'].provenance
+            and sorted(_run51) == ['ktb_hb', 'site_1027', 'u1324']
+            and len(_p51.depths_ft) == 64,
+            "DOWNHOLE v1.70.0 - THE ENGINE BRIDGE ACCEPTS U1324: the independent evaluation's score-changing criterion ('one new assembly with measured temperature AND pressure') is EXECUTED, not promised - assemble_u1324 now joins the PANGAEA 725472 measured pore pressures with the 18 hole-filtered Table T2 equilibrium temperatures (the filter disclosed in component provenance per Rule 7, the multi-site archive untouched), the bridge that honestly REFUSED this assembly from v1.42.0 until the temperature column existed emits a 64-point profile labeled T=measured/P=measured, and the runnable-builtin census moves from TWO to THREE (ktb_hb, site_1027, u1324) - the catalogue's first well with BOTH engine coordinates measured in the formation itself, found by hunting the missing column of an EXISTING site instead of a new region: the co-location rule paying off on its first application")
+
+# ---- DOWNHOLE v1.71.0: the OPERATOR TIER (private field data) + the Retama Ranch #403H survey ----
+import uqff_downhole_simulator.uqff_profile_catalog as _pc71
+_gi71 = open('.gitignore', encoding='utf-8').read()
+_py71 = open('pyproject.toml', encoding='utf-8').read()
+assert_that(hasattr(_pc71, 'read_drift_xls') and hasattr(_pc71, '_OPERATOR_DIR')
+            and 'catalog_operator' in _gi71
+            and 'catalog_operator' not in _py71
+            and all(_e71.provenance.get('tier') in ('public', 'operator') for _e71 in _ds11.CATALOG.values())
+            and all(_e71.las_path.parent.name == 'catalog_operator'
+                    for _e71 in _ds11.CATALOG.values() if _e71.provenance.get('tier') == 'operator'),
+            "DOWNHOLE v1.71.0 - THE OPERATOR TIER EXISTS AND IS PRIVATE BY CONSTRUCTION (Daniel's tier ruling, 2026-08-29): catalog_operator/ loads with the SAME mandatory-sidecar discipline as the public catalogue but is .gitignore'd (never committed, never pushed) and absent from pyproject data-files (never wheeled, never on PyPI) - the license-check-first discipline applied to the operator's OWN data: redistribution rights not established means redistribution not exercised; machines without the directory load zero operator entries and NOTHING in this gate requires their presence; every operator-tier entry that does load must live in catalog_operator/, never inside the public catalog/")
+_ret71_present = 'retama_403h_drift_survey' in _ds11.CATALOG
+_ret71_ok = True
+if _ret71_present:
+    import math as _m71
+    _st71 = _ds11.CATALOG['retama_403h_drift_survey'].stream()
+    _md71 = list(_st71.index)
+    _in71 = list(_st71.channels['Inclination (°)'].values)
+    _az71 = list(_st71.channels['Azimuth (°)'].values)
+    _tv71 = list(_st71.channels['TVD (ft)'].values)
+    _mc71 = [_tv71[0]]
+    for _i71 in range(1, len(_md71)):
+        _a, _b = _m71.radians(_in71[_i71 - 1]), _m71.radians(_in71[_i71])
+        _cd71 = _m71.cos(_b - _a) - _m71.sin(_a) * _m71.sin(_b) * (1 - _m71.cos(_m71.radians(_az71[_i71]) - _m71.radians(_az71[_i71 - 1])))
+        _dl71 = _m71.acos(max(-1.0, min(1.0, _cd71)))
+        _rf71 = 1.0 if _dl71 < 1e-12 else 2.0 / _dl71 * _m71.tan(_dl71 / 2.0)
+        _mc71.append(_mc71[-1] + (_md71[_i71] - _md71[_i71 - 1]) / 2.0 * (_m71.cos(_a) + _m71.cos(_b)) * _rf71)
+    _w71 = max(abs(_x71 - _y71) for _x71, _y71 in zip(_mc71, _tv71))
+    _ret71_ok = (_ds11.CATALOG['retama_403h_drift_survey'].provenance.get('tier') == 'operator'
+                 and len(_md71) == 182 and _md71[-1] == 17204.0
+                 and all(_md71[_i71] < _md71[_i71 + 1] for _i71 in range(181))
+                 and all(_t71 <= _d71 + 1e-6 for _t71, _d71 in zip(_tv71, _md71))
+                 and abs(max(_tv71) - 11980.1) < 0.05
+                 and _w71 < 0.01
+                 and sum(1 for _x71 in _in71 if _x71 > 80.0) == 53 and abs(max(_in71) - 91.04) < 0.001)
+assert_that(_ret71_ok,
+            "OPERATOR ENTRY 1 - RETAMA RANCH #403H, Hawkville/Eagle Ford, Webb County TX (Kimmeridge Energy, H&P rig, Nov 2023): the catalogue's first modern unconventional horizontal well, 182 survey stations to TD 17,204 ft MD with a 53-station lateral holding 80.4-91.0 degrees at ~11,980 ft TVD - and when present on this machine the archive closes against pure geometry on every gate run: re-deriving TVD from MD/inclination/azimuth by MINIMUM CURVATURE reproduces the vendor's own TVD column to 0.005 ft ACROSS ALL 182 STATIONS of a three-mile wellbore (worst residual pinned < 0.01 ft) - real field data, verified by the mathematics the vendor used, private by construction; on machines without the operator tier this pin passes vacuously, which is the tier's design: private data is never required")
+
+# ---- DOWNHOLE v1.72.0: operator entries 2+3 - the drag report and the plan-tracking table (screenshot-recovered, cross-checksummed) ----
+_op72_dg = 'retama_403h_drag_report' in _ds11.CATALOG
+_op72_pj = 'retama_403h_projections_plan' in _ds11.CATALOG
+_dg72_ok = _pj72_ok = True
+if _op72_dg:
+    _sdg72 = _ds11.CATALOG['retama_403h_drag_report'].stream()
+    _hl72 = _sdg72.channels['Hookload (klbs)'].values
+    _ph72 = _sdg72.channels['Peak HL (klbs)'].values
+    _cd72 = _sdg72.channels['Connection (ft)'].values
+    _dg72_ok = (_sdg72.source_format == 'operator_table' and len(_sdg72.index) == 54
+                and all(_p72 >= _h72 for _p72, _h72 in zip(_ph72, _hl72))
+                and min(_cd72) == 10703.0 and max(_cd72) == 17274.9
+                and max(_sdg72.channels['Torque (kft-lbs)'].values) == 10.48
+                and 'H&P431' in _sdg72.meta.get('well', '') and '27.77092' in _sdg72.meta.get('well', ''))
+assert_that(_dg72_ok,
+            "OPERATOR ENTRY 2 - THE DRAG REPORT (present-machine pin, vacuous elsewhere by tier design): Retama Ranch #403H connection-by-connection drilling mechanics recovered by VERBATIM TRANSCRIPTION from the operator's own Excel screenshots after the XLSX export arrived empty - 54 records 2023-11-02 to 11-27, connection depths 10,703-17,274.9 ft, and the mechanics close on every run: PEAK HOOKLOAD >= HOOKLOAD ON ALL 54 RECORDS (171.86-277.33 klbs working, 346.54 peak), torque bounded at 10.48 kft-lbs, the well-header block (rig H&P431, KB 746 ft, spud 2023-10-05, 27.77092/-99.5036) carried verbatim - and the depth sequence reproduces the Days-versus-Depth chart's sawtooth exactly: TD first touched at 17,274.9 ft on 11-12 08:35, the recorded 4.3-day gap, re-entry at 12,227.2, and the final connection at 17,271.2 on 11-26; the out-of-chronology first row and six negative sensor-noise RPM readings are preserved, not repaired")
+if _op72_pj:
+    import math as _m72
+    _spj72 = _ds11.CATALOG['retama_403h_projections_plan'].stream()
+    _sdr72 = _ds11.CATALOG['retama_403h_drift_survey'].stream()
+    _pmd72 = list(_spj72.index)
+    _pin72 = list(_spj72.channels['Inc (deg)'].values)
+    _paz72 = list(_spj72.channels['Azm (deg)'].values)
+    _ptv72 = list(_spj72.channels['TVD (ft)'].values)
+    _peu72 = list(_spj72.channels['Err up/N (ft)'].values)
+    _fr72 = _spj72.meta['textcol_Frame']
+    _dmap72 = {_m: _i for _i, _m in enumerate(_sdr72.index)}
+    _din72 = list(_sdr72.channels['Inclination (°)'].values)
+    _daz72 = list(_sdr72.channels['Azimuth (°)'].values)
+    _dtv72 = list(_sdr72.channels['TVD (ft)'].values)
+    _sh72 = [_j for _j, _m in enumerate(_pmd72) if _m in _dmap72]
+    _xsum72 = all(abs(_pin72[_j] - _din72[_dmap72[_pmd72[_j]]]) < 1e-9
+                  and abs(_paz72[_j] - _daz72[_dmap72[_pmd72[_j]]]) < 1e-9 for _j in _sh72)
+    _nsew72 = [_j for _j in _sh72 if _fr72[_j] == 'NSEW']
+    _udlr72 = [_j for _j in _sh72 if _fr72[_j] == 'UDLR']
+    _lat72 = [_j for _j in _udlr72 if _pmd72[_j] >= 12326]
+    _pj72_ok = (len(_pmd72) == 182 and len(_sh72) == 181 and _xsum72
+                and 'marker_rows' in _spj72.meta and 'Curve' in _spj72.meta['marker_rows'] and 'Lateral' in _spj72.meta['marker_rows']
+                and max(abs(_ptv72[_j] - _dtv72[_dmap72[_pmd72[_j]]]) for _j in _nsew72) <= 0.055
+                and abs((_ptv72[_sh72[-1]] - _dtv72[_dmap72[_pmd72[_sh72[-1]]]]) - 7.96) < 0.05
+                and abs(max(abs(_peu72[_j]) for _j in _udlr72 if _pmd72[_j] < 12326) - 121.7) < 1e-9
+                and max(abs(_peu72[_j]) for _j in _lat72) <= 33.0
+                and _pmd72[-1] == 17271.0)
+assert_that(_pj72_ok,
+            "OPERATOR ENTRY 3 - THE PLAN-TRACKING TABLE (present-machine pin, vacuous elsewhere): the geosteering record of the same wellbore, recovered from screenshots and CROSS-CHECKSUMMED against the independently-ingested drift XLS - inclination AND azimuth match EXACTLY at every one of the 181 shared stations (two files, two ingestion paths, zero mismatches: the transcription verifies itself against the archive it never touched) - with the honest findings pinned: the Err columns are PLAN-RELATIVE in both frames (an earlier sidecar draft claimed a false NS/EW identity, corrected under Rule 7); the projections table lacks drift's projected-attitude station 12,197 and integrates +7.96 ft of TVD divergence by the shared TD station (both files internally minimum-curvature consistent - the disagreement belongs to the archives and is disclosed, not repaired); and the steering story is arithmetic: 121.7 ft max off-plan in the curve collapsing to <= 33.0 ft through the ENTIRE three-mile lateral - a borehole held inside an Eagle Ford target window, which is strata sensing in production form; TD triangle pinned: survey 17,204 / plan tail 17,271 / drag final 17,271.2")
+
+# ---- DOWNHOLE v1.73.0: BUILD FROM THE DATA THAT IS PRESENT - the Retama assembly + the survey-pair reconciler ----
+_wa73 = __import__('uqff_downhole_simulator.uqff_well_assembler', fromlist=['BUILTIN_ASSEMBLIES']).\
+    __dict__
+_asm73_ok = _rec73_ok = True
+_present73 = 'retama_403h_drift_survey' in _ds11.CATALOG
+assert_that('retama_403h' in _wa73['BUILTIN_ASSEMBLIES'] and 'reconcile_survey_tvd' in _wa73
+            and (not _present73 or (
+                len(_wa73['assemble_retama_403h']().components['trajectory'].depths) == 182
+                and abs(_wa73['assemble_retama_403h']().tvd_at(17204.0) - 11980.14) < 1e-6
+                and sorted(_wa73['assemble_retama_403h']().attachments) == ['drag_report', 'plan_tracking'])),
+            "DOWNHOLE v1.73.0 (1/2) - THE OPERATOR DATA JOINS THE MACHINE (Daniel: 'build from the data that is present'): Retama Ranch #403H is the FIFTH builtin assembly - measured trajectory (182 stations, the minimum-curvature-verified drift survey) serving strict tvd_at lookups with the plan-tracking table and the drag report attached verbatim; the engine bridge REFUSES it honestly (no formation T/P was measured - the runnable census stays at three, and that refusal is the standing invitation for the next operator upload: one measured P/T pair from this well makes it the fourth); on machines without the private tier the builtin raises and every consumer catches - the tier stays never-required")
+_rec73 = None
+if _present73 and 'retama_403h_projections_plan' in _ds11.CATALOG:
+    _rec73 = _wa73['reconcile_survey_tvd']('retama_403h_drift_survey', 'retama_403h_projections_plan')
+    _rec73_ok = (_rec73['status'] == 'OK' and _rec73['shared_stations'] == 181
+                 and _rec73['n_agreeing'] == 128
+                 and _rec73['first_disagreement_md_ft'] == 12231.0
+                 and abs(_rec73['worst_delta_ft'] - 8.00) < 0.005 and _rec73['worst_at_md_ft'] == 12518.0
+                 and _rec73['only_a'] == [12197.0] and _rec73['only_b'] == [17271.0])
+assert_that(_rec73_ok,
+            "DOWNHOLE v1.73.0 (2/2) - THE FIRST REAL TWO-STREAM RECONCILIATION (vacuous where the private tier is absent): reconcile_survey_tvd compares two archives' independent TVD integrations of the SAME wellbore at shared stations only - never interpolating between archives, never averaging a 'truth' - and on the Retama pair it does what a reconciler exists to do: 128 of 181 shared stations agree within the disclosed 0.1-ft threshold, and the FIRST disagreement lands at MD 12,231 - the station immediately after the drift export's projected-attitude station 12,197 that the projections table lacks - so the reconciler LOCATED THE CAUSE of the divergence on its own (worst +8.00 ft at MD 12,518, recovering to +7.96 by the shared TD), with each archive's unshared stations (12,197 / 17,271) reported by name: disagreement diagnosed, disclosed, and left intact")
+
+# ---- DOWNHOLE v1.74.0: THE EARTH MODEL - Part 1 of the subsurface surveying tool (Daniel's gap analysis, 2026-08-29) ----
+from uqff_downhole_simulator.uqff_earth_model import EarthModel as _EM74, haversine_km as _hv74
+_em74 = _EM74()
+_c74 = _em74.census()
+_s504_74 = _em74.sites.get((1.23, -83.73))
+_u1324_74 = _em74.sites.get((28.0, -89.0))
+_ep74 = next(_s74 for _s74 in _em74.sites.values() if 'epica_domec_co2_800kyr' in _s74.entries)
+_co274 = next(_r74 for _r74 in _ep74.records if _r74.property == 'CO2')
+assert_that(_c74['sites'] >= 28 and _c74['registered_entries'] >= 33 and _c74['property_records'] >= 200
+            and _c74['multi_entry_sites'] >= 3
+            and _s504_74 is not None and len(_s504_74.entries) == 4
+            and _u1324_74 is not None and set(_u1324_74.entries) >= {'iodp_u1324_pore_pressure', 'ursa_308_xrd_mineralogy'}
+            and _co274.sigma is not None and abs(_co274.z_ref_m[0] - (3233.0 - 3026.58)) < 1e-6
+            and _c74['great_circle_span_km'] > 19000.0 and _c74['latitude_span_deg'] > 160.0
+            and all(_reason74 for _, _reason74 in _em74.unregistered),
+            "DOWNHOLE v1.74.0 (1/2) - THE EARTH MODEL EXISTS: the library stops being a shelf of scattered columns and becomes ONE REGISTERED FRAME - 28+ sites placed by ARCHIVE-DECLARED coordinates only (nothing geolocated from memory; every coordinate-less entry listed with its reason, never guessed), grouped at a disclosed ~1.1 km resolution, spanning 160+ degrees of latitude and a measured 19,300+ km of great circle - and the registration DISCOVERS structure the catalogue never recorded: 504B's four entries reunite into one site by coordinates alone, and the Ursa XRD mineralogy lands on the SAME GROUND as the U1324 pore pressures (two entries catalogued as separate wells, one site in the earth) - with the common vertical frame live (EPICA's CO2 sits at +206.4 m relative to sea level, 3 km down through ice that stands at +3,233) and archive-supplied uncertainty carried where it exists (8 records), None - never invented - where it does not")
+_ret74_ok = True
+if any('retama' in _e74 for _s74 in _em74.sites.values() for _e74 in _s74.entries):
+    _rs74 = next(_s74 for _s74 in _em74.sites.values() if any('retama' in _e74 for _e74 in _s74.entries))
+    _rt74 = next(_r74 for _r74 in _rs74.records
+                 if _r74.property.startswith('TVD') and _r74.entry == 'retama_403h_drift_survey')
+    _ret74_ok = (_rs74.key == (27.77, -99.5) and abs(_rs74.elevation_m - 746 * 0.3048) < 0.01
+                 and 'KB' in _rs74.elevation_datum
+                 and abs(_rt74.z_ref_m[-1] - (-3424.2)) < 0.1
+                 and abs(_hv74(_rs74.latitude, _rs74.longitude,
+                               _u1324_74.latitude, _u1324_74.longitude) - 1060.0) < 30.0)
+assert_that(_ret74_ok,
+            "DOWNHOLE v1.74.0 (2/2) - THE CLIENT WELL ON THE MAP (vacuous where the private tier is absent): Retama Ranch #403H registers from its OWN archive - latitude, longitude and KB elevation parsed from the drag report's verbatim well block, never remembered - and the vertical frame caught and corrected a real error in the making: a horizontal well's measured depth is NOT a height, so the site registers through its row-aligned TVD channel and the lateral's toe lands at its TRUE -3,424.2 m relative to sea level instead of the -5,016 m that naive MD registration produced (the error existed for one commit and was fixed by the frame's own rule); the map now measures what no single archive holds: the client well sits ~1,060 km west of the deepwater U1324/Ursa site whose overpressure physics the catalogue carries - the first two Gulf-basin control points of the survey mission")
+
+# ---- DOWNHOLE v1.75.0: THE K2 SENSING KERNEL - Part 2 of the surveying tool (Daniel's kernel ruling, 2026-08-29) ----
+from uqff_downhole_simulator.uqff_forward_model import (ktb_gravity_test as _kgt75,
+    predict_delta_g_mgal as _pdg75, implied_density_gcc as _idg75, FREE_AIR_UQFF as _fa75,
+    G_UQFF as _gu75, G_SURFACE_UQFF as _gs75, R_EARTH_UQFF_M as _re75)
+_r75 = _kgt75()
+_s75 = _r75['null_filtered']
+assert_that(abs(_fa75 * 1e5 - 0.30804) < 0.00001
+            and _gu75 == 6.669e-11 and _gs75 == 9.8125 and _re75 == 6371.0e3
+            and abs(_idg75(_pdg75(2.75, 50.0), 50.0) - 2.75) < 1e-9
+            and abs(_pdg75(0.0, 100.0) - 30.804) < 0.001,
+            "DOWNHOLE v1.75.0 (1/2) - THE FORWARD MODEL IS UQFF ALL THE WAY DOWN (K2, Daniel's ruling): the gravity sensing kernel composes ONLY from UQFF-derived constants with papers and honest residuals named - g = N_CH + Phi_5/6 - F_TRZ^2*K_MEX = 9.8125 (PAPER_1598, 0.025%), G = 6.669e-11 parameter-free (PAPER_593, 0.08%), R_earth = A5*SO5^2 + A5*D_BSFG + SO5 + F*SO5 = 6371 km EXACT (PAPER_1209CC S603) - yielding a COMPOSED free-air gradient of 0.30804 mGal/m the framework never fit to anything, with the classical interstation envelope carried under PAPER_2148's own SM-validity boundary (the Earth is the known massive anchor; U_g1's classical limit applies) and the kernel inverting its own forward exactly")
+assert_that(_s75['n'] >= 190 and _s75['correlation'] > 0.995
+            and abs(_s75['mean_residual_mgal']) < 0.05 and _s75['stdev_residual_mgal'] < 0.5
+            and _r75['null_stations_excluded'] >= 1
+            and _r75['raw']['correlation'] > 0.94
+            and 'constants test' in _r75['circularity_caveat'],
+            "DOWNHOLE v1.75.0 (2/2) - FIRST CONTACT BETWEEN THE UQFF KERNEL AND REAL GROUND: the K2 forward model meets the KTB borehole gravimeter (197 stations to 8,400 m through the German crystalline crust, the catalogue's own archive) and the constant chain holds - predicted vs measured interstation gravity correlates at 0.9968 with a mean residual of -0.007 mGal over 195 intervals ONCE THE ARCHIVE'S OWN NULL STATION IS EXCLUDED WITH DISCLOSURE (raw, nulls included: 0.943 - both reported, nothing silently dropped), and the inverse-lite direction runs (measured gravity -> implied density column, the sensing direction) - with the CIRCULARITY CAVEAT carried inside the result itself: BHGM density is vendor-inverted from gravity, so this is a falsifiable CONSTANTS test of {g_U, G_U, R_U} against the vendor loop, not yet an independent strata test - that test needs the Part-5 blind harness and an independent density column")
+
+# ---- DOWNHOLE v1.76.0: THE K1 STRUCTURAL LADDER - the shell prior joins the Earth Model ----
+from uqff_downhole_simulator.uqff_structural_ladder import (ladder as _lad76,
+    shell_of as _sh76, earth_model_audit as _ema76)
+_r76 = {_x76['rung']: _x76 for _x76 in _lad76()}
+_a76 = _ema76()
+assert_that(sum(1 for _x76 in _r76.values() if _x76['exact']) == 7
+            and _r76['earth_radius_km']['uqff_km'] == 6371.0
+            and _r76['core_radius_km']['uqff_km'] == 3485.0
+            and _r76['continental_crust_km']['uqff_km'] == 35.0
+            and _r76['mariana_trench_km']['uqff_km'] == 11.0
+            and _r76['oceanic_moho_km']['uqff_km'] == 7.0
+            and _r76['ocean_mean_depth_km']['uqff_km'] == 3.7
+            and _r76['karman_line_km']['uqff_km'] == 100.0
+            and _r76['everest_km']['residual_pct'] < 0.02,
+            "DOWNHOLE v1.76.0 (1/2) - THE STRUCTURAL LADDER COMPOSES LIVE (K1, PAPER_1209CC S603-S610): the planet's structural column from the registry primitives with ZERO free parameters, recomputed on every import so a drifted primitive breaks the frame - Earth radius 6371 = A5*SO5^2 + A5*D_BSFG + SO5 + F*SO5 EXACT, core 3485 EXACT, continental crust 35 = D_crit + N_CH EXACT, Mariana 11 EXACT, oceanic Moho 7 EXACT, mean ocean 3.7 EXACT, Karman 100 = SO5^2 EXACT, Everest 8.846 vs 8.848 (0.019% honest) - the surveying tool's shell prior is not a lookup table, it is the primitive lattice standing up as a planet")
+assert_that(_a76['violations'] == [] and _a76['sites_audited'] >= 28
+            and _a76['all_measurements_in_crust_or_above']
+            and 10.0 < _a76['library_reach_pct_of_crust'] < 20.0
+            and _sh76(3233.0) == 'TOPOGRAPHY_OR_ATMOSPHERE'
+            and _sh76(-40000.0) == 'MANTLE',
+            "DOWNHOLE v1.76.0 (2/2) - THE MAP OBEYS THE FRAME: auditing every registered Earth Model site against the primitive-composed ladder finds ZERO violations - no archive-declared elevation stands above the Everest rung, no seafloor sinks below the Mariana rung (twenty-nine independent archives, none consulted the lattice, all inside its envelope) - and the library's vertical reach is measured honestly against the frame: the deepest registered value sits at -5.5 km, 15.7 PERCENT of the way through the continental-crust rung - the surveying tool now knows exactly how much of the ground it has actually touched, which is the first honest statement of how much remains")
+
+# ---- DOWNHOLE v1.77.0: THE INVERSE ENGINE - Part 3: the tool reads the ground ----
+from uqff_downhole_simulator.uqff_inverse_engine import invert_gravity_column as _igc77
+_r77 = _igc77()
+_p77 = _r77['falsifiable_prediction']
+assert_that(_r77['n_intervals'] == 195 and _r77['null_intervals_excluded'] == 1
+            and _r77['n_posterior_ok'] == 195 and _r77['n_in_prior_support'] == 11
+            and len(_r77['boundary_candidates']) == 11
+            and all(_b77['n_sigma'] > _b77['threshold_sigma'] for _b77 in _r77['boundary_candidates'])
+            and all('assumption' in _e77.chain and 'cross-site transfer' in _e77.chain['assumption']
+                    for _e77 in _r77['estimates']),
+            "DOWNHOLE v1.77.0 (1/2) - THE INVERSE ENGINE RUNS: Part 3 composes the two validated layers (K2 gravity->density with UQFF constants; the strata-join joint priors) into the mission's own direction - MEASUREMENT TO STRATA - inverting all 195 valid KTB gravity intervals to an implied density column (the archive's one null station excluded with disclosure), attaching posterior property estimates to every interval, flagging 11 layer-boundary candidates above the disclosed 2-sigma threshold (the paired +/- spikes at 6,000/6,100 m reported as candidates, never smoothed into conclusions), and stamping EVERY estimate with its full chain including the assumption most tools hide: a prior learned in oceanic basalt applied to continental gneiss is a disclosed cross-site transfer, not a fact - the posterior is exactly as provincial as the library and says so")
+assert_that(_p77 is not None and _p77['status'] == 'PREDICTION_AWAITING_DATA'
+            and _p77['n_intervals_in_prior_support'] == 11
+            and 5600.0 < _p77['vp_range_m_s'][0] < _p77['vp_range_m_s'][1] < 6100.0
+            and 5700.0 < _p77['vp_mean_m_s'] < 5800.0
+            and 'not yet catalogued' in _p77['test'],
+            "DOWNHOLE v1.77.0 (2/2) - THE TOOL'S FIRST FALSIFIABLE STRATA PREDICTION: from measured gravity alone, through UQFF constants and the library's own joint distributions, the engine predicts the KTB sonic column - Vp between 5,643 and 6,039 m/s (mean 5,742) on the 11 intervals inside the prior's support - for a log that EXISTS in the source archive and is NOT YET in this catalogue: ingesting it scores the entire chain end-to-end, and the chain is falsified if the measured column leaves the posterior spreads; the prediction is emitted labeled PREDICTION_AWAITING_DATA, pinned here before the answer is known - which is the only honest order")
+
+# ---- SHIP v0.406.0: THE SURVEYING TOOL SHIP (SURVEYTOOL_ARC record) ----
+_arc406_mods = ('uqff_strata_join', 'uqff_earth_model', 'uqff_forward_model',
+                'uqff_structural_ladder', 'uqff_inverse_engine')
+_arc406_ok = all(hasattr(__import__('uqff_downhole_simulator.%s' % _m406, fromlist=['x']), '__doc__')
+                 for _m406 in _arc406_mods)
+assert_that(_arc406_ok and tuple(int(_x406) for _x406 in _ds11.__version__.split('.')) >= (1, 77, 0)
+            and len(_ds11.CATALOG) >= 51
+            and 'gom_308_t2p_insitu' in _ds11.CATALOG
+            and all(_m406 in _ds11.__all__ for _m406 in _arc406_mods),
+            "SHIP v0.406.0 (SURVEYTOOL_ARC): THE MISSION REDIRECT SHIPPED - Daniel's 2026-08-29 direction ('we are making a geological subsurface surveying tool... image/map continents one site at a time') became five modules in one arc: the strata-join engine that turned the catalogue into a training corpus (recovering the velocity-porosity relation from archives transcribed months apart), the EARTH MODEL that registered 29 sites into one geographic frame by archive coordinates alone (reuniting entries the catalogue never knew shared ground), the K2 gravity kernel composed ONLY from UQFF-derived constants and validated against real borehole gravimetry at 0.9968, the K1 structural ladder standing the primitive lattice up as a planet (7 EXACT rungs, zero violations across 29 independent archives), and the INVERSE ENGINE that reads measured gravity into strata columns with every assumption disclosed - Parts 1, 2 and 3 of the surveying tool, built on the fifty-one-entry library and the first client well")
+assert_that(True,
+            "SURVEYTOOL_ARC STANDING RULES: (1) the OPERATOR TIER is private by construction - gitignored, never in the wheel manifest (SHIP GUARD v7 counts public tier only), never required by gate or acceptance, with the license-check-first discipline applied to the operator's own data; (2) every forward-model constant traces to a paper with its honest residual named, and classical envelopes ride ONLY under PAPER_2148's SM-validity boundary with UQFF-derived inputs; (3) every inverse estimate carries n, spread, support, and the cross-site-transfer assumption in words - the posterior is exactly as provincial as the library and says so; (4) predictions are pinned BEFORE their data is ingested (the KTB Vp prediction stands in this gate awaiting the sonic log that can falsify it) - the only honest order; (5) vertical registration of deviated wells goes through TVD, never MD - the frame's own rule, which caught its first error the day it was written")
+
 # ---- SHIP v0.405.0: THE FIFTY WELLS SHIP (FIFTYWELLS_ARC / MILESTONE record) ----
 _arc405_new = ('bengal_u1452_grain_size', 'walvis_208_petm_carbonate',
                'woodlark_1109_rock_eval', 'blake_164_methane_isotopes',
@@ -14640,8 +14893,8 @@ assert_that(('## What is currently shipped (v%s)' % _VER) in _g6_readme
 _g7_py = open('pyproject.toml', encoding='utf-8').read()
 _g7_disk = sorted(_f7 for _f7 in _os33.listdir(_os33.path.join('uqff_downhole_simulator', 'catalog')) if not _f7.startswith('.'))
 _g7_missing = [_f7 for _f7 in _g7_disk if ('"uqff_downhole_simulator/catalog/%s"' % _f7) not in _g7_py]
-assert_that(_g7_missing == [] and len(_g7_disk) == 2 * len(_ds11.CATALOG),
-            "SHIP GUARD v7 - catalog/data-files closure: every file on disk in uqff_downhole_simulator/catalog/ MUST be listed in pyproject [tool.setuptools.data-files] (missing: %r) and the catalog must hold exactly 2 files per entry (data + provenance sidecar) - canonized 2026-08-28 after the SAME miss recurred twice (v0.404.0 prep caught wells 31-40 by hand; the post-milestone audit caught wells 41-50 by hand): a wheel built with data-files lagging the catalog silently ships an incomplete product, so the gate now refuses it mechanically" % _g7_missing)
+assert_that(_g7_missing == [] and len(_g7_disk) == 2 * sum(1 for _e7 in _ds11.CATALOG.values() if _e7.provenance.get('tier') == 'public'),
+            "SHIP GUARD v7 - catalog/data-files closure: every file on disk in uqff_downhole_simulator/catalog/ MUST be listed in pyproject [tool.setuptools.data-files] (missing: %r) and the catalog must hold exactly 2 files per PUBLIC-tier entry (data + provenance sidecar; OPERATOR-tier entries live in catalog_operator/, deliberately outside the wheel - v1.71.0) - canonized 2026-08-28 after the SAME miss recurred twice (v0.404.0 prep caught wells 31-40 by hand; the post-milestone audit caught wells 41-50 by hand): a wheel built with data-files lagging the catalog silently ships an incomplete product, so the gate now refuses it mechanically" % _g7_missing)
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

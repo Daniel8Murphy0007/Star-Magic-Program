@@ -7,6 +7,22 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.406.0 — 2026-08-29 — THE SURVEYING TOOL SHIP
+
+The mission redirect made code: Parts 1–3 of the geological subsurface surveying tool (`uqff_downhole_simulator` v1.69.0–v1.77.0), plus catalogue entry #51 and the private operator tier:
+
+- **v1.69** strata-join engine: the catalogue becomes a training corpus — depth-binned joint distributions recover the 504B velocity–porosity relation empirically (r = −0.71, 36 co-located bins); thin joins refuse with counts
+- **v1.70** entry #51 (IODP Exp 308 Table T2, publisher-policy BOAI) completes u1324's measured T+P — the engine's THIRD runnable well; water-depth identity re-derives the assembler constant from an independent archive
+- **v1.71** OPERATOR TIER: private by construction (gitignored, never wheeled, never required) + Retama Ranch #403H drift survey (182 stations, min-curvature closure 0.005 ft over three miles)
+- **v1.72** Retama drag report + plan-tracking table recovered VERBATIM from operator screenshots, cross-checksummed against the independent XLS ingestion: 181/181 stations exact
+- **v1.73** Retama becomes the fifth builtin assembly; `reconcile_survey_tvd` locates the drift/projections TVD divergence cause (the drift-only station at MD 12,197) on its own
+- **v1.74** THE EARTH MODEL (Part 1): 29 sites, one geographic frame, archive coordinates only; U1324+Ursa reunited; deviated wells register through TVD (the frame's rule caught its first error same-day)
+- **v1.75** K2 SENSING KERNEL (Part 2): gravity forward model from UQFF constants only (free-air 0.30804 mGal/m composed, never fit); KTB validation corr 0.9968, circularity caveat in the result
+- **v1.76** K1 STRUCTURAL LADDER (Part 2): 7 EXACT Earth-shell rungs composed live from registry primitives; zero violations across 29 archives; library reach = 15.7% of crust
+- **v1.77** INVERSE ENGINE (Part 3): measurement → strata with disclosed uncertainty; 11 boundary candidates; FIRST FALSIFIABLE STRATA PREDICTION pinned awaiting data (KTB Vp 5,643–6,039 m/s)
+
+**Ship-rehearsal catch (pre-tag):** the first gate run on the ship machine went RED (xlrd missing — drift .xls reader); fixed at the root: drift entry converted cell-for-cell to the dependency-free operator-table format (vendor XLS preserved byte-identical), reader import guarded, xlrd declared as the `xls` optional extra, and the gate re-proven GREEN under a blocked-xlrd environment. Rulings executed: operator data → private tier; kernel order → K2 first. Gate 5,949 → 5,993. Acceptance 55 → 75 (sections J–P). SHIP GUARD v7 canonized and already caught its first live miss. Hygiene: `__all__` completed, README "What it is" rewritten to the actual product.
+
 ## v0.405.0 — 2026-08-28 — THE FIFTY WELLS SHIP (MILESTONE)
 
 Ten verbatim catalogue entries (`uqff_downhole_simulator` v1.59.0–v1.68.0, entries 41–50); census **50 entries / 37 regions / 39 kinds**. The arc opened with the catalogue's first license refusal on record (CC-BY-NC-SA refused; license-check-first now standing) and closed with ancient air:

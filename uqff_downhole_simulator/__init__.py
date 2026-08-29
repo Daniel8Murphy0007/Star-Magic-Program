@@ -122,7 +122,7 @@ from .uqff_profile_catalog import (
     read_pangaea_txt,
 )
 
-__version__ = "1.68.0"
+__version__ = "1.77.0"
 __all__ = [
     "calculate_quartz_transducer_hpht_UQFF", "canonical_suppression",
     "conventional_drift", "drift_comparison",
@@ -142,4 +142,12 @@ __all__ = [
     "PYMODBUS_AVAILABLE", "RegisterMap", "load_register_map",
     "CATALOG", "CatalogEntry", "PROFILE_SOURCES", "las_to_profile", "read_temperature_csv", "read_survey_csv", "read_core_csv", "read_production_csv", "read_ktb_dat", "read_ktb_table", "read_pangaea_txt",
     "DEFAULT_TD_FT", "DEFAULT_SENSOR_DEPTHS_FT",
+    "uqff_strata_join",
+    "uqff_well_assembler", "uqff_gamma", "uqff_bench",
+    "uqff_operator_app", "acceptance_tests",
+    "reconcile_survey_tvd",
+    "uqff_earth_model",
+    "uqff_forward_model",
+    "uqff_structural_ladder",
+    "uqff_inverse_engine",
 ]

@@ -346,6 +346,163 @@ def read_ktb_table(path) -> LiveStream:
                             'ambiguous_rows_refused': str(sum(1 for x in flags if x))})
 
 
+def read_operator_table(path) -> LiveStream:
+    """Ingest a verbatim OPERATOR TABLE TRANSCRIPTION (v1.72.0): field-data
+    tables recovered from operator report screenshots/exports, transcribed
+    cell-for-cell. Format: /* OPERATOR TABLE TRANSCRIPTION */ header
+    (Key:<TAB>Value lines incl. IndexKind: depth|ordinal) then a TSV table.
+    Rows whose index cell is non-numeric (section markers like 'Curve',
+    'Lateral') are carried verbatim into meta['marker_rows'] with their
+    position. Text columns ride in meta as row-aligned lists; numeric columns
+    become channels; nothing is recomputed at ingest."""
+    p = Path(path)
+    txt = p.read_text(encoding='utf-8')
+    head, _, body = txt.partition('*/')
+    meta = {}
+    for line in head.splitlines():
+        if ':\t' in line:
+            k, _, v = line.partition(':\t')
+            meta[k.strip('/* ').strip().lower()] = v.strip()
+    lines = [l for l in body.strip('\n').split('\n') if l]
+    cols = lines[0].split('\t')
+    raw = [l.split('\t') for l in lines[1:]]
+    markers, rows = [], []
+    ordinal = meta.get('indexkind') == 'ordinal'
+    for i, r in enumerate(raw):
+        if ordinal:
+            rows.append(r)   # ordinal tables: col 0 may be text (timestamps)
+            continue
+        try:
+            float(r[0])
+            rows.append(r)
+        except ValueError:
+            markers.append((i, '\t'.join(r).strip()))
+    if markers:
+        meta['marker_rows'] = '; '.join('row %d: %s' % m for m in markers)
+    from .uqff_ports import StreamChannel
+    index_kind = meta.get('indexkind', 'depth')
+    if ordinal:
+        index = np.arange(1, len(rows) + 1, dtype=float)
+        start = 0
+    else:
+        index = np.array([float(r[0]) for r in rows], dtype=float)
+        start = 1
+    channels = {}
+    for c in range(start, len(cols)):
+        vals, numeric = [], 0
+        for r in rows:
+            cell = r[c].strip() if c < len(r) else ''
+            try:
+                vals.append(float(cell))
+                numeric += 1
+            except ValueError:
+                vals.append(float('nan'))
+        if numeric:
+            channels[cols[c]] = StreamChannel(name=cols[c], unit='',
+                                              values=np.array(vals, dtype=float))
+        else:
+            meta['textcol_' + cols[c]] = [r[c].strip() if c < len(r) else ''
+                                          for r in rows]
+    return LiveStream(name=p.stem, source_format='operator_table',
+                      index_kind=('depth' if index_kind != 'ordinal' else 'ordinal'),
+                      index=index, channels=channels, meta=meta)
+
+
+def read_drift_xls(path) -> LiveStream:
+    """Ingest a directional-drilling drift/survey XLS export (v1.71.0, driven
+    by the first OPERATOR-tier entry: the Retama Ranch #403H 183-station
+    survey). Header row names MD / Inclination / Azimuth / TVD / NS / EW
+    (vendor exports interleave blank columns; they are skipped). Depth index =
+    MD [ft]; every named numeric column becomes a channel. Verbatim: cells are
+    read as exported, nothing is recomputed or smoothed at ingest."""
+    try:
+        import xlrd as _xlrd
+    except ImportError as _e:
+        raise ImportError(
+            "read_drift_xls needs the optional third-party module 'xlrd' "
+            "(pip install xlrd). No SHIPPED catalogue entry requires it - "
+            "operator drift surveys are stored in the dependency-free "
+            "operator-table format since the v0.406.0 ship-rehearsal catch; "
+            "this reader exists for ingesting NEW vendor .xls drops only."
+        ) from _e
+    p = Path(path)
+    wb = _xlrd.open_workbook(str(p))
+    sh = wb.sheet_by_index(0)
+    header = [str(sh.cell_value(0, c)).strip() for c in range(sh.ncols)]
+    cols = [(c, h) for c, h in enumerate(header) if h]
+    md_c = next(c for c, h in cols if h.lower().startswith('md'))
+    from .uqff_ports import StreamChannel
+    md, rows = [], []
+    for r in range(1, sh.nrows):
+        try:
+            md.append(float(sh.cell_value(r, md_c)))
+        except (TypeError, ValueError):
+            continue
+        rows.append(r)
+    channels = {}
+    for c, h in cols:
+        if c == md_c:
+            continue
+        vals = []
+        for r in rows:
+            try:
+                vals.append(float(sh.cell_value(r, c)))
+            except (TypeError, ValueError):
+                vals.append(float('nan'))
+        channels[h] = StreamChannel(name=h, unit='', values=np.array(vals, dtype=float))
+    return LiveStream(name=p.stem, source_format='drift_xls', index_kind='depth',
+                      index=np.array(md, dtype=float), channels=channels,
+                      meta={'sheet': sh.name, 'stations': str(len(md))})
+
+
+def read_iodp_table(path) -> LiveStream:
+    """Ingest a verbatim IODP Proceedings data-report table transcription
+    (v1.70.0, driven by Exp 308 Table T2 - the in situ temperature AND
+    pressure penetrometer results that made U1324 the catalogue's first
+    measured-T+P site). File format: a /* IODP TABLE TRANSCRIPTION */ header
+    (citation, source URL, license, verbatim table notes) then a tab-separated
+    table whose cells are carried verbatim. Numeric columns become channels;
+    cells that are blank or hold the T2P dual-port 'a; b' pairs become NaN in
+    the channel (the verbatim cell stays in the file - the reader never
+    repairs); the Hole column rides row-aligned in meta['hole'] so assemblies
+    can filter one site out of a multi-site table without touching the
+    archive. Depth index = the first column whose name contains 'mbsf'."""
+    p = Path(path)
+    txt = p.read_text(encoding='utf-8')
+    head, _, body = txt.partition('*/')
+    meta = {}
+    for line in head.splitlines():
+        if ':\t' in line:
+            k, _, v = line.partition(':\t')
+            meta[k.strip('/* ').strip().lower()] = v.strip()
+    lines = [l for l in body.strip('\n').split('\n') if l]
+    cols = lines[0].split('\t')
+    rows = [l.split('\t') for l in lines[1:]]
+    depth_i = next(i for i, c in enumerate(cols) if 'mbsf' in c.lower())
+    hole_i = next((i for i, c in enumerate(cols) if c.strip().lower() == 'hole'), None)
+    from .uqff_ports import StreamChannel
+    channels = {}
+    for i, c in enumerate(cols):
+        if i in (depth_i, hole_i):
+            continue
+        vals = []
+        numeric = 0
+        for r in rows:
+            cell = r[i].strip() if i < len(r) else ''
+            try:
+                vals.append(float(cell))
+                numeric += 1
+            except ValueError:
+                vals.append(float('nan'))
+        if numeric:
+            channels[c] = StreamChannel(name=c, unit='', values=np.array(vals, dtype=float))
+    if hole_i is not None:
+        meta['hole'] = [r[hole_i].strip() for r in rows]
+    return LiveStream(name=p.stem, source_format='iodp_table', index_kind='depth',
+                      index=np.array([float(r[depth_i]) for r in rows], dtype=float),
+                      channels=channels, meta=meta)
+
+
 def read_pangaea_txt(path) -> LiveStream:
     """Ingest a PANGAEA machine-readable textfile export (self-describing
     '/* DATA DESCRIPTION */' header + tab-separated matrix) as a
@@ -442,7 +599,15 @@ class CatalogEntry:
 
     def stream(self) -> LiveStream:
         if self.las_path.suffix.lower() == '.txt':
+            with self.las_path.open(encoding='utf-8') as _f:
+                _first = _f.readline()
+            if _first.startswith('/* IODP TABLE TRANSCRIPTION'):
+                return read_iodp_table(self.las_path)
+            if _first.startswith('/* OPERATOR TABLE TRANSCRIPTION'):
+                return read_operator_table(self.las_path)
             return read_pangaea_txt(self.las_path)
+        if self.las_path.suffix.lower() == '.xls':
+            return read_drift_xls(self.las_path)
         if self.las_path.suffix.lower() == '.dat':
             import re as _re
             with self.las_path.open(encoding='utf-8') as _f:
@@ -476,13 +641,30 @@ class CatalogEntry:
         return read_survey_csv(self.las_path)
 
 
+_OPERATOR_DIR = _CATALOG_DIR.parent / 'catalog_operator'
+# v1.71.0 OPERATOR TIER: field data supplied by the operator/user, loaded with
+# the SAME sidecar discipline as the public catalogue but PRIVATE by
+# construction - the directory is .gitignore'd, never listed in pyproject
+# data-files (gate-enforced), and therefore never ships in the wheel or
+# reaches PyPI/GitHub. Entries carry provenance['tier']='operator'. Machines
+# without the directory (CI, other installs) simply load zero operator
+# entries; nothing in the gate or acceptance suite REQUIRES their presence.
+
+
 def _load_catalog() -> Dict[str, CatalogEntry]:
     out: Dict[str, CatalogEntry] = {}
-    if not _CATALOG_DIR.is_dir():
-        return out
-    files = sorted(list(_CATALOG_DIR.glob('*.las')) + list(_CATALOG_DIR.glob('*.dat'))
-                   + list(_CATALOG_DIR.glob('*.txt'))
-                   + [p for p in _CATALOG_DIR.glob('*.csv') if not p.name.endswith('.provenance.json')])
+    scan = [(_CATALOG_DIR, 'public'), (_OPERATOR_DIR, 'operator')]
+    for cat_dir, tier in scan:
+        if not cat_dir.is_dir():
+            continue
+        _load_catalog_dir(out, cat_dir, tier)
+    return out
+
+
+def _load_catalog_dir(out, cat_dir, tier) -> None:
+    files = sorted(list(cat_dir.glob('*.las')) + list(cat_dir.glob('*.dat'))
+                   + list(cat_dir.glob('*.txt')) + list(cat_dir.glob('*.xls'))
+                   + [p for p in cat_dir.glob('*.csv') if not p.name.endswith('.provenance.json')])
     for las in files:
         prov_path = las.with_suffix('.provenance.json')
         if not prov_path.exists():
@@ -493,8 +675,8 @@ def _load_catalog() -> Dict[str, CatalogEntry]:
         for req in ('source_database', 'source_url', 'license', 'fetch_date', 'coverage'):
             if not prov.get(req):
                 raise ValueError(f"catalogue entry {las.name}: provenance missing '{req}'")
+        prov['tier'] = tier
         out[las.stem] = CatalogEntry(name=las.stem, las_path=las, provenance=prov)
-    return out
 
 
 CATALOG: Dict[str, CatalogEntry] = _load_catalog()

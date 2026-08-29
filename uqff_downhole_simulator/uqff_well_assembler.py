@@ -86,6 +86,44 @@ class WellAssembly:
             unit=st.channels[channel].unit, depths=d, values=v,
             provenance=dict(entry.provenance))
 
+    def add_hole_filtered(self, role: str, entry_name: str, channel: str,
+                          hole_prefix: str) -> None:
+        """Add a component from a MULTI-SITE table entry, keeping only the rows
+        whose Hole starts with hole_prefix (v1.70.0, driven by Exp 308 Table T2
+        - one verbatim archive, many sites). The filter is processing, not
+        archive editing: the entry stays whole; the component records the
+        filter in its provenance (Rule 7)."""
+        entry = CATALOG[entry_name]
+        st = entry.stream()
+        holes = st.meta.get("hole")
+        if holes is None:
+            raise ValueError(
+                f"assembly '{self.name}': entry '{entry_name}' carries no "
+                "row-aligned hole column - add_hole_filtered needs one")
+        if channel not in st.channels:
+            raise KeyError(
+                f"assembly '{self.name}': entry '{entry_name}' has no channel "
+                f"'{channel}' (has: {list(st.channels)})")
+        mask = np.array([h.startswith(hole_prefix) for h in holes])
+        d = np.asarray(st.index, dtype=float)[mask]
+        v = np.asarray(st.channels[channel].values, dtype=float)[mask]
+        m = ~(np.isnan(d) | np.isnan(v))
+        d, v = d[m], v[m]
+        if len(d) == 0:
+            raise ValueError(
+                f"assembly '{self.name}': no rows of '{entry_name}' match "
+                f"hole prefix '{hole_prefix}'")
+        order = np.argsort(d, kind="stable")
+        prov = dict(entry.provenance)
+        prov["component_filter"] = (
+            f"rows with Hole startswith '{hole_prefix}' ({int(mask.sum())} of "
+            f"{len(holes)} table rows; filter applied by the assembler, "
+            "archive untouched)")
+        self.components[role] = WellComponent(
+            role=role, entry=entry_name, channel=channel,
+            unit=st.channels[channel].unit, depths=d[order], values=v[order],
+            provenance=prov)
+
     def attach(self, role: str, entry_name: str) -> None:
         """Carry a whole entry verbatim (strength tables, fluids, elastics...)."""
         self.attachments[role] = CATALOG[entry_name].stream()
@@ -266,18 +304,83 @@ def assemble_site_1027() -> WellAssembly:
 
 
 def assemble_u1324() -> WellAssembly:
-    """IODP U1324 (Gulf of Mexico): MEASURED pore pressure (penetrometer u2)
-    with the archived overburden column alongside - the catalogue's only
-    measured-pressure site; no temperature profile is catalogued, so the
-    engine bridge refuses (measured-P sites still serve overburden and
-    pressure lookups)."""
-    return assemble(
+    """IODP U1324 (Gulf of Mexico): MEASURED pore pressure (penetrometer u2,
+    PANGAEA 725472) joined by MEASURED in-situ temperature (Exp 308 Table T2,
+    the 18 U1324B/C DVTPP+T2P equilibrium stations, hole-filtered from the
+    verbatim multi-site table) - the catalogue's first site with BOTH engine
+    coordinates measured in the formation. The engine bridge, which honestly
+    refused this assembly from v1.42.0 until the temperature column existed,
+    now accepts it (v1.70.0). The Table T2 water-depth identity
+    (BOH mbsl - BOH mbsf = 1056.8 m on every U1324B row) independently
+    re-derives the water_depth_m constant below."""
+    w = assemble(
         "IODP-U1324", "IODP Site U1324, Ursa Basin, Gulf of Mexico (overpressure)",
         components={
             "pressure": ("iodp_u1324_pore_pressure", "u2 (hydrostatic fluid pressure)"),
             "overburden_archived": ("iodp_u1324_pore_pressure", "Overb press"),
         },
         water_depth_m=1056.8)
+    w.add_hole_filtered("temperature", "gom_308_t2p_insitu", "Tend degC", "U1324")
+    return w
+
+
+def assemble_retama_403h() -> WellAssembly:
+    """Retama Ranch #403H (OPERATOR TIER, v1.73.0): the catalogue's first
+    modern unconventional horizontal well as an ASSEMBLY - measured trajectory
+    (MD -> TVD from the 182-station drift survey, minimum-curvature-verified
+    to 0.005 ft) with the plan-tracking table and the connection-by-connection
+    drag report attached verbatim. No formation temperature or pressure was
+    measured, so to_engine_profile HONESTLY REFUSES - the assembly serves
+    trajectory lookups and the operator attachments. Raises KeyError on
+    machines without the private operator tier (by design: the tier is
+    per-machine and never required)."""
+    return assemble(
+        "RETAMA-403H",
+        "Retama Ranch #403H, Hawkville (Eagle Ford Shale), Webb County, Texas "
+        "(Kimmeridge Energy, rig H&P431, KB 746 ft) - OPERATOR TIER, private",
+        components={
+            "trajectory": ("retama_403h_drift_survey", "TVD (ft)"),
+        },
+        attachments={
+            "plan_tracking": "retama_403h_projections_plan",
+            "drag_report": "retama_403h_drag_report",
+        })
+
+
+def reconcile_survey_tvd(entry_a: str, entry_b: str,
+                         channel_a: str = "TVD (ft)",
+                         channel_b: str = "TVD (ft)",
+                         agree_ft: float = 0.1) -> dict:
+    """Two-stream reconciliation for SURVEYS (v1.73.0): compare two archives'
+    TVD integrations of the same wellbore at their SHARED stations only (no
+    interpolation between archives - stations either match in MD or are
+    listed as unshared). Returns per-station deltas, the worst divergence and
+    where it lives, the count of stations agreeing within `agree_ft`
+    (disclosed threshold), and each side's unshared stations. Honest by
+    construction: it never averages the two archives into a 'truth' - it
+    reports where and how much they disagree and leaves both intact."""
+    sa = CATALOG[entry_a].stream()
+    sb = CATALOG[entry_b].stream()
+    amap = {float(m): float(v) for m, v in zip(sa.index, sa.channels[channel_a].values)
+            if v == v}
+    bmap = {float(m): float(v) for m, v in zip(sb.index, sb.channels[channel_b].values)
+            if v == v}
+    shared = sorted(set(amap) & set(bmap))
+    if not shared:
+        return {"status": "NO_SHARED_STATIONS", "a": entry_a, "b": entry_b}
+    deltas = [(m, bmap[m] - amap[m]) for m in shared]
+    worst = max(deltas, key=lambda d: abs(d[1]))
+    return {
+        "status": "OK", "a": entry_a, "b": entry_b,
+        "shared_stations": len(shared),
+        "only_a": sorted(set(amap) - set(bmap)),
+        "only_b": sorted(set(bmap) - set(amap)),
+        "agree_within_ft": agree_ft,
+        "n_agreeing": sum(1 for _, d in deltas if abs(d) <= agree_ft),
+        "worst_delta_ft": worst[1], "worst_at_md_ft": worst[0],
+        "first_disagreement_md_ft": next((m for m, d in deltas if abs(d) > agree_ft), None),
+        "deltas": deltas,
+    }
 
 
 BUILTIN_ASSEMBLIES = {
@@ -285,6 +388,7 @@ BUILTIN_ASSEMBLIES = {
     "odp_504b": assemble_odp_504b,
     "site_1027": assemble_site_1027,
     "u1324": assemble_u1324,
+    "retama_403h": assemble_retama_403h,   # OPERATOR TIER: raises where the private data is absent
 }
 
 

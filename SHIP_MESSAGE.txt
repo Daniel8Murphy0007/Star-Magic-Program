@@ -1,18 +1,20 @@
-v0.405.0 — THE FIFTY WELLS SHIP (MILESTONE)
+v0.406.0 — THE SURVEYING TOOL SHIP
 
-Downhole catalogue v1.59.0–v1.68.0, entries 41–50; census 50 entries / 37 regions / 39 kinds.
+Daniel's mission redirect made code: Parts 1-3 of the geological subsurface surveying tool.
 
-- First license refusal on record (entry 41 first choice, CC-BY-NC-SA): license-check-first standing.
-- Petroleum-fluids triad complete: Woodlark Rock-Eval (HI=S2/TOC 9/9) + Blake Ridge dual isotopes
-  (all 37 microbial, CO2-reduction) join Hydrate Ridge — where / what / origin.
-- Mohr-Coulomb envelope closed: Sumatra 362 cohesion intercept.
-- First measurement of LIFE: Peru Leg 201 radiotracer sulfate reduction, six orders of magnitude.
-- Ocean-state records: Walvis PETM depth-order dissolution; Med precession-paced sapropels (6/6).
-- Fram Strait macerals: TOC = ter+mar EXACT 12/12; the 103.18 slip + units mislabel + 8 label clips
-  all disclosed, never repaired.
-- Entry #50, THE MILESTONE — ANCIENT AIR: EPICA Dome C CO2 611–799 kyr (PANGAEA 710901, Nature 453);
-  741-cell Size EXACT; lowest atmospheric CO2 ever directly measured (171.6 ppmv @ 667.569 ka);
-  all 247 values below the preindustrial 280; Bereiter-2015 revision disclosed, not applied.
-- SHIP GUARD v7 canonized: catalog/ <-> pyproject data-files closure is now mechanical.
+- v1.69 strata-join: catalogue -> training corpus (504B Wyllie relation recovered, r=-0.71)
+- v1.70 entry #51 (IODP 308 Table T2): u1324 = THIRD runnable well (T+P both measured)
+- v1.71-1.73 OPERATOR TIER (private by construction) + Retama Ranch #403H (survey min-curvature
+  0.005 ft; screenshot recovery cross-checksummed 181/181; survey-pair reconciler diagnoses archives)
+- v1.74 EARTH MODEL: 29 sites, one frame, archive coordinates only; U1324+Ursa reunited
+- v1.75 K2 GRAVITY KERNEL: UQFF constants only (free-air 0.30804 composed); KTB corr 0.9968
+- v1.76 K1 STRUCTURAL LADDER: 7 EXACT rungs live from primitives; zero violations, 29 archives
+- v1.77 INVERSE ENGINE: measurement -> strata with disclosed uncertainty; FIRST FALSIFIABLE
+  STRATA PREDICTION pinned awaiting data (KTB Vp 5,643-6,039 m/s)
 
-Gate 5,949 -> 5,973/0. Acceptance 55/55. 20 new catalog data-files in the wheel (guard-enforced).
+Rulings executed: private tier; K2 first. SHIP GUARD v7 live (caught its first miss same day).
+Gate 5,949 -> 5,993/0. Acceptance 55 -> 75. Registry 6,789 rows.
+
+Pre-tag red-gate fix: xlrd dependency removed from all shipped entries (drift survey converted
+cell-for-cell to dependency-free format, vendor XLS preserved); gate re-proven green with xlrd
+blocked. Catalogue entries must never require optional modules - standing lesson in CLAUDE.md.

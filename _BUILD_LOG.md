@@ -344,3 +344,9 @@ Mohr-Coulomb cohesion intercept, first LIFE (Peru radiotracer rates), Fram Strai
 and the fiftieth entry ANCIENT AIR: EPICA Dome C CO₂ 611–799 kyr (171.6 ppmv record low; 247/247 below
 preindustrial 280). SHIP GUARD v7 canonized (catalog↔data-files mechanical closure). 20 catalog
 data-files added to the wheel. Gate 5,973/0. Acceptance 55/55. 23-file pass verified.
+
+## v0.406.0 — 2026-08-29
+THE SURVEYING TOOL SHIP: downhole v1.69–v1.77 = Parts 1–3 of the subsurface surveying tool
+(Earth Model 29 sites / K2 gravity kernel KTB 0.9968 / K1 ladder 7 EXACT / inverse engine +
+falsifiable KTB Vp prediction). Entry #51 (third runnable well), private operator tier (Retama,
+cross-checksummed 181/181), SHIP GUARD v7, acceptance 55→75. Gate 5,993/0. 23-file pass verified.

@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.405.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.405.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.406.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.406.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5973%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5993%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2308-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.405.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.406.0 complete-compile campaign live**
 
-**This release (v0.405.0): THE FIFTY WELLS SHIP — the milestone, and its crown is ancient air.** Ten new verbatim catalogue entries (`uqff_downhole_simulator` v1.59.0–v1.68.0, entries 41–50) carry the census to **50 entries across 37 regions and 39 physical kinds** — every entry license-checked BEFORE cataloguing (the arc opened with the catalogue's first license refusal on record: a CC-BY-NC-SA dataset that cannot ride inside the AGPL+Commercial dual license), fetched complete, transcribed verbatim with a mandatory provenance sidecar, its Size declaration re-counted EXACT and its archive's own arithmetic re-derived on every gate run. **The arc completed three structures:** the petroleum-fluids triad (Hydrate Ridge measured WHERE the gas is locked, Woodlark Rock-Eval screened WHAT the source could make — HI = S2/TOC re-derived on all nine rows — and Blake Ridge dual isotopes fingerprint the ORIGIN: all 37 δ¹³C values microbial, CO₂-reduction pathway); the Mohr-Coulomb envelope (Sumatra cohesion supplies the strength intercept the four friction kinds could not); and the ocean-state record (Walvis PETM carbonate — the deep Atlantic dissolving its own seafloor in depth order — plus the Mediterranean's precession-paced sapropels, anoxia events with astronomical serial numbers). **Two firsts change what the catalogue IS:** Peru Leg 201 sulfate-reduction rates are its first measurement of LIFE — deep-biosphere metabolism counted atom by radioactive atom across six orders of magnitude — and the fiftieth entry is ANCIENT AIR: EPICA Dome C trapped-gas CO₂ at +3,233 m on the East Antarctic Plateau (the highest site in the catalogue), 247 samples of the actual atmosphere of 611,000–799,000 years ago, including the lowest atmospheric CO₂ ever directly measured (171.6 ppmv at 667.6 ka), every value below the preindustrial 280, with the Bereiter-2015 revision disclosed and deliberately not applied — the catalogue preserves archives, it does not repair them. Also in this arc: Bengal's two-witness turbidite, Ursa's five-way XRD closure, Fram Strait's exact terrestrial–marine TOC partition, and **SHIP GUARD v7**, which makes the catalog↔data-files closure mechanical so a wheel can never again ship with the catalogue lagging the disk. **Totals: 2,253 wired (2,308 DISPATCH keys) / gate 5,973 green / 4,180 defs / acceptance 55 green / catalogue 50 entries. Next paper: PAPER_2258.**
+**This release (v0.406.0): THE SURVEYING TOOL SHIP — the mission redirect made code.** Daniel's direction — *"we are making a geological subsurface surveying tool… image/map continents one site at a time"* — became Parts 1–3 of that tool in a single arc (`uqff_downhole_simulator` v1.69.0–v1.77.0). **Part 1, the Earth Model:** 29 sites registered into one geographic frame by archive-declared coordinates alone (nothing geolocated from memory; 18 coordinate-less entries listed with reasons), on a common vertical frame that reunited entries the catalogue never knew shared ground (U1324's pore pressures and Ursa's clay mineralogy are one site) and whose own rules caught a real error (a horizontal well's MD is not a height — deviated wells register through TVD). **Part 2, the sensing kernels:** K2 — a gravity forward model composed ONLY from UQFF-derived constants (g = 9.8125, G = 6.669×10⁻¹¹, R⊕ = 6371 km EXACT → free-air 0.30804 mGal/m, never fit to anything) validated against the KTB borehole gravimeter at **correlation 0.9968** with the circularity caveat carried inside the result; and K1 — the structural ladder standing the primitive lattice up as a planet (radius/core/crust/Moho/ocean/trench/Kármán, **7 EXACT**), with zero violations across 29 independent archives and the library's reach measured honestly at 15.7% of the crust. **Part 3, the inverse engine:** measured gravity → implied density → posterior strata properties with n/spread/support and the cross-site-transfer assumption disclosed on every estimate — and the tool's **first falsifiable strata prediction** pinned before the answer is known: KTB Vp 5,643–6,039 m/s, `PREDICTION_AWAITING_DATA`, testable the day the GFZ sonic log is catalogued. **Also shipped:** catalogue entry #51 (IODP Exp 308 Table T2 — the missing temperature column that made u1324 the THIRD runnable well, T=measured/P=measured, the independent evaluation's score-changing criterion executed); the strata-join engine (504B's velocity–porosity relation recovered empirically at r = −0.71 from archives transcribed months apart); the **private-by-construction operator tier** carrying the first client field data (Retama Ranch #403H: 182-station survey min-curvature-verified to 0.005 ft, drag report, plan-tracking — screenshot-recovered and cross-checksummed 181/181 exact; gitignored, never wheeled, never required); the survey-pair reconciler that located a TVD divergence's cause on its own; SHIP GUARD v7 (mechanical catalog↔wheel closure); and 20 new acceptance checks. **Totals: 2,253 wired (2,308 DISPATCH keys) / gate 5,993 green / 4,180 defs / acceptance 75 green / catalogue 51 public entries + operator tier. Next paper: PAPER_2258.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.405.0)
+## What is currently shipped (v0.406.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,788 rows**. Fidelity gate: **5,973 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,789 rows**. Fidelity gate: **5,993 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

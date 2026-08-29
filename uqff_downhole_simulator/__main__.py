@@ -197,7 +197,14 @@ def main(argv=None) -> int:
     elif a.cmd == "wells":
         from . import BUILTIN_ASSEMBLIES
         for name, maker in sorted(BUILTIN_ASSEMBLIES.items()):
-            asm = maker()
+            try:
+                asm = maker()
+            except Exception:
+                # operator-tier assemblies on machines without the private
+                # data: listed honestly, never crashing the listing (v1.77.0)
+                print(f"{name}: OPERATOR-TIER assembly - private data not "
+                      "present on this machine (tier is per-machine, never required)")
+                continue
             roles = {r: f"{c.entry}/{c.channel} {c.coverage()[0]:.0f}-{c.coverage()[1]:.0f} m"
                      for r, c in asm.components.items()}
             bridge = "engine-ready" if "temperature" in asm.components else \

@@ -422,6 +422,183 @@ def section_i_bench() -> None:
        "I5 bench: the protocol document ships inside the package")
 
 
+def section_j_strata() -> None:
+    """Section J - strata depth-join engine (v1.69.0): co-located joint tables,
+    honest refusals, and the empirical relations the archives themselves carry."""
+    from . import uqff_strata_join as J
+    lp = J.library_pairs()
+    ok(lp["n_ok"] >= 12 and lp["n_refused"] >= 3,
+       "J1 strata: library pair sweep finds >=12 supported pairs and keeps "
+       "refused thin joins visible")
+    s = J.pair_stats("504b", "porosity", "vp")
+    ok(s["status"] == "OK" and s["n"] >= 30 and -0.9 < s["pearson_r"] < -0.5,
+       "J2 strata: 504B porosity x Vp co-located join recovers the negative "
+       "velocity-porosity relation from the verbatim archives")
+    c = J.conditional("504b", "vp", "porosity", 5.0)
+    ok(c["status"] == "OK" and 4000.0 < c["estimate"] < 7000.0
+       and c["std"] >= 0.0 and "support" in c,
+       "J3 strata: conditional P(Vp | porosity) returns estimate + spread + "
+       "support, basalt-plausible")
+    thin = J.pair_stats("site_1027", "thermal_conductivity", "cork_temperature")
+    ok(thin["status"] == "REFUSED_THIN_DATA" and thin["n"] < J.MIN_PAIR_N,
+       "J4 strata: thin joins REFUSE with the count disclosed instead of "
+       "inventing a statistic")
+
+
+def section_k_measured_tp() -> None:
+    """Section K - the measured T+P well (v1.70.0): the evaluator's
+    score-changing criterion, executable."""
+    import math
+    from .uqff_profile_catalog import CATALOG
+    from .uqff_well_assembler import BUILTIN_ASSEMBLIES, assemble_u1324
+    st = CATALOG["gom_308_t2p_insitu"].stream()
+    ok(st.source_format == "iodp_table" and len(st.index) == 32
+       and len(st.meta.get("hole", [])) == 32 and "license" in st.meta,
+       "K1 measured-T+P: Exp 308 Table T2 loads verbatim (32 deployments, "
+       "row-aligned holes, license in header)")
+    w = assemble_u1324()
+    p = w.to_engine_profile()
+    ok("T=measured" in p.name and "P=measured" in p.name
+       and len(w.components["temperature"].depths) == 18,
+       "K2 measured-T+P: the u1324 engine bridge ACCEPTS with measured "
+       "temperature AND measured pressure (18 hole-filtered stations)")
+    runnable = []
+    for k, f in BUILTIN_ASSEMBLIES.items():
+        try:
+            f().to_engine_profile()
+            runnable.append(k)
+        except Exception:
+            pass
+    ok(sorted(runnable) == ["ktb_hb", "site_1027", "u1324"],
+       "K3 measured-T+P: three runnable builtin wells (was two since v1.42.0)")
+    ok("component_filter" in w.components["temperature"].provenance
+       and all(math.isnan(v) for v, h in zip(st.channels["uend MPa"].values,
+                                             st.meta["hole"])
+               if h == "U1319A"),
+       "K4 measured-T+P: the hole filter is disclosed in provenance (Rule 7) "
+       "and dual-port 'a; b' cells stay NaN in channels - never split, "
+       "never averaged")
+
+
+def section_l_operator_tier() -> None:
+    """Section L - operator tier privacy invariants (v1.71.0). These checks
+    hold on EVERY machine: with zero operator entries (CI, fresh installs)
+    or with private field data present (the operator's machine)."""
+    from .uqff_profile_catalog import CATALOG, read_drift_xls, _OPERATOR_DIR
+    ok(all(e.provenance.get("tier") in ("public", "operator")
+           for e in CATALOG.values()),
+       "L1 operator tier: every catalogue entry carries an explicit tier")
+    ok(all(e.las_path.parent.name == "catalog_operator"
+           for e in CATALOG.values()
+           if e.provenance.get("tier") == "operator"),
+       "L2 operator tier: operator data never lives inside the public "
+       "catalog/ (privacy by construction, whether or not any is present)")
+    from .uqff_well_assembler import (BUILTIN_ASSEMBLIES, reconcile_survey_tvd)
+    present = "retama_403h_drift_survey" in CATALOG
+    ok3 = "retama_403h" in BUILTIN_ASSEMBLIES
+    if present:
+        try:
+            BUILTIN_ASSEMBLIES["retama_403h"]().to_engine_profile()
+            ok3 = False   # must REFUSE: no measured T
+        except NotImplementedError:
+            pass
+    ok(ok3, "L3 operator tier: the Retama assembly is registered and, where "
+            "its data is present, the engine bridge refuses honestly "
+            "(no measured formation T/P)")
+    ok4 = True
+    if present and "retama_403h_projections_plan" in CATALOG:
+        r = reconcile_survey_tvd("retama_403h_drift_survey",
+                                 "retama_403h_projections_plan")
+        ok4 = (r["status"] == "OK" and r["shared_stations"] == 181
+               and r["first_disagreement_md_ft"] == 12231.0
+               and abs(r["worst_delta_ft"] - 8.00) < 0.005)
+    ok(ok4, "L4 operator tier: survey-pair reconciliation reports the two "
+            "archives' TVD disagreement honestly (never averages a 'truth'); "
+            "vacuous where the private data is absent")
+
+
+def section_m_earth_model() -> None:
+    """Section M - the Earth Model (v1.74.0): the library registered into one
+    geographic frame. Floors use public-tier counts so the checks hold on
+    every machine, with or without private operator data."""
+    from .uqff_earth_model import EarthModel, haversine_km
+    em = EarthModel()
+    c = em.census()
+    ok(c["sites"] >= 28 and c["registered_entries"] >= 33
+       and c["multi_entry_sites"] >= 3 and c["property_records"] >= 200,
+       "M1 earth model: >=28 archive-coordinate sites register with >=3 "
+       "multi-entry sites reunited by coordinates alone")
+    ok(c["great_circle_span_km"] > 19000.0 and c["latitude_span_deg"] > 160.0
+       and all(reason for _, reason in em.unregistered)
+       and abs(haversine_km(0, 0, 0, 180) - 20015.1) < 1.0,
+       "M2 earth model: half-planet span measured live, every unregistered "
+       "entry carries its reason, haversine verified against the meridian")
+
+
+def section_n_forward_model() -> None:
+    """Section N - the K2 sensing kernel (v1.75.0): UQFF-composed gravity
+    forward model validated on real borehole gravimetry (public entry -
+    holds on every machine)."""
+    from .uqff_forward_model import (ktb_gravity_test, implied_density_gcc,
+                                     predict_delta_g_mgal, FREE_AIR_UQFF)
+    ok(abs(FREE_AIR_UQFF * 1e5 - 0.30804) < 0.00001
+       and abs(implied_density_gcc(predict_delta_g_mgal(2.75, 50.0), 50.0)
+               - 2.75) < 1e-9,
+       "N1 forward model: UQFF free-air gradient composes to 0.30804 mGal/m "
+       "and the kernel inverts its own forward exactly")
+    r = ktb_gravity_test()
+    s = r["null_filtered"]
+    ok(s["n"] >= 190 and s["correlation"] > 0.995
+       and abs(s["mean_residual_mgal"]) < 0.05
+       and r["null_stations_excluded"] >= 1
+       and "constants test" in r["circularity_caveat"],
+       "N2 forward model: KTB borehole-gravity validation - correlation "
+       ">0.995 over 190+ intervals with the circularity caveat carried in "
+       "the result itself")
+
+
+def section_o_structural_ladder() -> None:
+    """Section O - the K1 structural prior (v1.76.0): the Earth-shell rungs
+    composed live from registry primitives and audited against the Earth
+    Model (public data - holds on every machine; provenance lives in the
+    ladder module, not here - this suite stays corpus-independent)."""
+    from .uqff_structural_ladder import ladder, shell_of, earth_model_audit
+    rungs = {r["rung"]: r for r in ladder()}
+    ok(sum(1 for r in rungs.values() if r["exact"]) == 7
+       and rungs["earth_radius_km"]["uqff_km"] == 6371.0
+       and rungs["continental_crust_km"]["uqff_km"] == 35.0
+       and rungs["everest_km"]["residual_pct"] < 0.02,
+       "O1 ladder: seven EXACT structural rungs compose live from the "
+       "registry primitives (a drifted primitive breaks the ladder)")
+    audit = earth_model_audit()
+    ok(audit["violations"] == [] and audit["all_measurements_in_crust_or_above"]
+       and 5.0 < audit["library_reach_pct_of_crust"] < 100.0
+       and shell_of(-40000.0) == "MANTLE" and shell_of(-3000000.0) == "CORE",
+       "O2 ladder: every registered site obeys the primitive-composed "
+       "Everest/Mariana envelope and the library's crustal reach is "
+       "measured honestly")
+
+
+def section_p_inverse_engine() -> None:
+    """Section P - the inverse engine (v1.77.0): measurement -> strata with
+    uncertainty, every estimate carrying its chain (public data)."""
+    from .uqff_inverse_engine import invert_gravity_column
+    r = invert_gravity_column()
+    ok(r["n_intervals"] >= 190 and r["null_intervals_excluded"] >= 1
+       and r["n_posterior_ok"] >= 190
+       and all("assumption" in e.chain for e in r["estimates"]),
+       "P1 inverse: the gravity column inverts to a strata column and every "
+       "estimate discloses its cross-site-transfer assumption")
+    p = r["falsifiable_prediction"]
+    ok(p is not None and p["status"] == "PREDICTION_AWAITING_DATA"
+       and 5000.0 < p["vp_mean_m_s"] < 7000.0
+       and len(r["boundary_candidates"]) >= 5
+       and all(b["n_sigma"] > b["threshold_sigma"] for b in r["boundary_candidates"]),
+       "P2 inverse: a falsifiable sonic-column prediction is emitted and "
+       "labeled awaiting data; boundary candidates carry their disclosed "
+       "thresholds")
+
+
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "
           "independent of the physics corpus)")
@@ -435,6 +612,13 @@ def main() -> int:
         section_g_gamma()
         section_h_mixed()
         section_i_bench()
+        section_j_strata()
+        section_k_measured_tp()
+        section_l_operator_tier()
+        section_m_earth_model()
+        section_n_forward_model()
+        section_o_structural_ladder()
+        section_p_inverse_engine()
     if _FAILS:
         print(f"[ACCEPTANCE] {len(_FAILS)} FAILURES ({_PASS} passed):")
         for f in _FAILS:

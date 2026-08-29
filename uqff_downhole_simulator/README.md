@@ -8,13 +8,30 @@ packaged industry-application module (Energy One domain).
 
 ## What it is
 
-A deep-well simulator (TD ≈ 20,300 ft) instrumented with **six quartz
-pressure/temperature gauges**. The physics claim: quartz drift, industry-baselined at
-0.215 %FS/yr, is **suppressed by a UQFF composition** built from the canonical
-primitives — the vacuum ratio F_TRZ = 0.1, K_MEX = 25/12, Φ_res = 0.84, with
-U_i = 2.75×10⁻⁷ carried live from `uqff_calculator`. The well produces realistic P/T
-profiles (0.465 psi/ft, 0.018 °F/ft), gauge noise, transient events (p = 0.27/step),
-rolling history, animation, and CSV logs.
+A downhole measurement product with three layers, plus the mission it is being
+built toward:
+
+1. **A quartz-gauge simulation engine** driven by **measured wells** — the
+   assembler hangs sensor strings on real archived profiles (KTB main hole
+   temperature/density/trajectory/strength, CORK Site 1027 seafloor-observatory
+   temperature), with the UQFF drift composition (F_TRZ = 0.1, K_MEX = 25/12,
+   Φ_res = 0.84) applied to gauge physics. A synthetic linear template
+   (TD ≈ 20,300 ft, 0.465 psi/ft, 0.018 °F/ft, six gauges) ships as the
+   demo/fallback path only — it is not the product.
+2. **A 50-entry verbatim archive catalogue** (license-checked, Size-checksummed,
+   provenance sidecars mandatory, every archive's own arithmetic re-derived at
+   gate time) — the ground-truth training corpus.
+3. **The strata-inference layer** (`uqff_strata_join`, v1.69.0): depth-joins the
+   multi-entry wells into co-located joint property tables and exposes the
+   empirical structure of known ground — the first layer of the actual mission,
+   **ground strata imaging and sensing** ("downhole-LiDAR": image/map
+   continents one site at a time), per Daniel's 2026-08-28 standing direction.
+
+Ingestion (LAS / historian CSV / file-follower / Modbus TCP), a two-stream
+reconciler, an operator surface, and a 59-check in-package acceptance suite
+complete the offline product. Honest-status flags are load-bearing: quantities
+without a measured or derived path say so (`PARAMETERS_USER_SUPPLIED`,
+`SIMULATION_SELF_TEST`) rather than pretending.
 
 ## Modules
 
@@ -1186,3 +1203,17 @@ Census: 50 entries / 37 regions / 39 kinds. Every Size declaration re-counted EX
 own arithmetic re-derived at gate time; every anomaly disclosed, never repaired (the 103.18 maceral
 slip, two units-mislabel magnitude proofs, eight field-width label clips, the Bereiter-2015 revision
 disclosed-not-applied). SHIP GUARD v7 now diffs catalog/ against the wheel manifest on every gate run.
+
+## v1.69.0-v1.77.0 - The surveying-tool arc (Parts 1-3)
+
+The mission redirect (Daniel, 2026-08-29: ground strata imaging and sensing, continents one
+site at a time) built the tool's spine in one arc. The strata-join engine turned the catalogue
+into a training corpus of joint property distributions. Entry #51 completed U1324's measured
+T+P pair (third runnable well). The private operator tier took the first client field data
+under the same sidecar discipline as the public catalogue - gitignored, never wheeled, never
+required. The EARTH MODEL registered 29 sites into one geographic frame by archive coordinates
+alone; the K2 gravity kernel composed a forward model from UQFF-derived constants only and met
+real borehole gravimetry at correlation 0.9968; the K1 structural ladder stood the primitive
+lattice up as a planet (7 EXACT rungs, zero site violations); and the INVERSE ENGINE now reads
+measured gravity into strata columns with every assumption disclosed - emitting the tool's
+first falsifiable strata prediction (KTB Vp 5,643-6,039 m/s), pinned before the answer is known.

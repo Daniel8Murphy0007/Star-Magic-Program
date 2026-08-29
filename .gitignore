@@ -62,3 +62,7 @@ tmp/
 # build staging (v0.403.0 lesson: an sdist staging tree survived a failed
 # in-repo build on the mounted FS and got committed by git add -A)
 star_magic_program-*/
+
+# OPERATOR TIER (v1.71.0): user/operator-supplied field data - private by
+# construction; never committed, never packaged, never published.
+uqff_downhole_simulator/catalog_operator/

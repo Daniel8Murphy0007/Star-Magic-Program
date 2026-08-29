@@ -6628,3 +6628,11 @@ event on record: entry 41's first-choice dataset (PANGAEA 912098) REFUSED on lic
 the standing order of operations for every catalogue candidate. All archive anomalies in the
 arc carried verbatim with disclosure (units-mislabel magnitude proofs, the 103.18 maceral slip,
 field-width label clips, the Bereiter-2015 revision disclosed-not-applied). Board otherwise unchanged.
+
+---
+v0.406.0 SURVEYTOOL_ARC (2026-08-29): two rulings RECEIVED and executed — (a) operator field
+data lives in a private-by-construction tier (never committed/wheeled/required); (b) forward-model
+kernel order = K2 buoyancy column first. QUEUED FOR DANIEL (no code can close these): K4
+geological density landmarks (quartz, granite, shale, seawater, limestone, halite, ice) as
+UQFF derivation targets — the spectral library's geological rungs; K3 QCalcGeom re-derivation
+scope; step 7 recorded-interface ruling still open.

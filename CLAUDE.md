@@ -108,6 +108,11 @@ wire best candidate, set registry `status=OPEN_RULING`, append the question to
 - PyPI Trusted Publisher: project `star-magic-program`, workflow
   `release-to-pypi.yml`, environment `pypi`. Tag push auto-publishes.
 - Never run `Remove-Item -Recurse` on a folder while VS Code has it open.
+- v0.406.0 RED-GATE lesson: catalogue entries must NEVER require optional third-party
+  modules (xlrd broke the ship gate on Daniel's machine; the sandbox silently had it).
+  Store entries in dependency-free formats; guard optional-format readers with clear
+  ImportError messages; declare extras in pyproject; and REHEARSE the gate with the
+  optional module BLOCKED (PYTHONPATH shim raising ImportError) before every ship.
 
 ## PERMANENT RULES (from v0.1.0, unchanged)
 
