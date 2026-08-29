@@ -12192,3 +12192,19 @@ canonized as SHIP GUARD v6: the section heading and its counts are now
 machine-verified on every gate run. Gate 5,949 -> 5,950. The PyPI 0.404.0
 long-description carries the stale heading immutably (same class as the
 v0.403.0 Summary slip - cosmetic, corrected on master, guarded forever).
+
+## Entry 278 — 2026-08-28 — THE FIFTY WELLS SHIP (v0.405.0, MILESTONE)
+
+Wells 41–50 on the per-well GO cadence, then the full 23-file ship pass. Census 40/28/29 → **50/37/39**.
+Arc firsts: first license refusal on record (entry 41 first choice, PANGAEA 912098, CC-BY-NC-SA —
+NonCommercial-ShareAlike cannot ride inside the AGPL+Commercial dual license; license-check-first
+now standing discipline), first measurement of LIFE (Peru Leg 201 radiotracer sulfate reduction),
+first ANCIENT AIR (EPICA Dome C trapped-gas CO₂, region 37, kind 39, the milestone fiftieth:
+lowest CO₂ ever directly measured 171.6 ppmv @ 667.569 ka, all 247 values < preindustrial 280,
+Bereiter-2015 revision disclosed not applied). Structures completed: petroleum-fluids triad
+(where/what/origin), Mohr-Coulomb envelope (Sumatra cohesion intercept), ocean-state record
+(PETM depth-order dissolution + precession-paced sapropels). Mid-arc audit (Daniel: "What is being
+missed?") caught wells 41–50 absent from pyproject data-files — the same miss as v0.404.0 prep —
+fixed and canonized as SHIP GUARD v7 (gate diffs catalog/ against data-files on every run).
+Gate 5,949 → 5,973/0 across the arc; acceptance 55/55 at every entry and at ship.
+Ship files: all 23 touched. Daniel ships via .\ship.ps1.

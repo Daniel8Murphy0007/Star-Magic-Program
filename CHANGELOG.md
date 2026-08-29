@@ -7,6 +7,23 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.405.0 — 2026-08-28 — THE FIFTY WELLS SHIP (MILESTONE)
+
+Ten verbatim catalogue entries (`uqff_downhole_simulator` v1.59.0–v1.68.0, entries 41–50); census **50 entries / 37 regions / 39 kinds**. The arc opened with the catalogue's first license refusal on record (CC-BY-NC-SA refused; license-check-first now standing) and closed with ancient air:
+
+- **v1.59** Bengal U1452 grain size (the two-witness turbidite: the only contiguous coarse run coincides exactly with the age-model plateau; the 53.9-phi impossibility disclosed)
+- **v1.60** Walvis Leg 208 PETM carbonate (the deep Atlantic dissolves its own seafloor in depth order — sub-10% clay thickness monotone with water depth)
+- **v1.61** Woodlark 1109 Rock-Eval (first source-rock screen; HI = S2/TOC×100 re-derived on all nine rows within 0.47; transformation ratio on all seven)
+- **v1.62** Blake Ridge 164 methane dual isotopes (the ORIGIN verdict: all 37 δ¹³C values microbial CO₂-reduction; petroleum-fluids triad complete)
+- **v1.63** Ursa 308 XRD mineralogy (five-way closure per row: 18-phase sum reproduces archived totals exactly)
+- **v1.64** Peru Leg 201 sulfate reduction (**first measurement of LIFE**: six orders of magnitude, 0.00–5,337.46 pmol/cm³/day, 185/292 below detection)
+- **v1.65** Sumatra 362 cohesion (the Mohr-Coulomb intercept the four friction kinds could not give; coefficient re-derives per row)
+- **v1.66** Med Leg 160 sapropels (precession-paced anoxia with astronomical serial numbers; coeval ages 6/6 cycles)
+- **v1.67** Fram 909 organic petrography (region 36, the Arctic gateway; TOC = ter+mar EXACT 12/12; maceral closure 11/12 with the single 103.18 slip pinned; g/cm²-under-g/m² units mislabel proven by magnitude; 8 field-width label clips pinned by impossibility)
+- **v1.68** **EPICA Dome C CO₂ 611–799 kyr — THE MILESTONE: ANCIENT AIR** (region 37 East Antarctic Plateau at +3,233 m, the highest site; kind 39 ice-core trapped gas; 741-cell Size EXACT; lowest atmospheric CO₂ ever directly measured, 171.6 ppmv at 667.569 ka; all 247 values below the preindustrial 280; Bereiter-2015 revision disclosed, deliberately not applied)
+
+Gate 5,949 → 5,973 (+20 catalogue pins + 2 ship pins + **SHIP GUARD v7**: mechanical catalog↔data-files closure, canonized after the same wheel-packaging miss was caught by hand twice + label syncs each entry). Acceptance 55/55 at every entry. 20 new catalog data-files added to the wheel (guard-enforced). Post-v0.404.0 audit fixes folded in.
+
 ## v0.404.0 — 2026-08-28 — THE FORTY WELLS SHIP
 
 Ten verbatim catalogue entries (`uqff_downhole_simulator` v1.49.0–v1.58.0, entries 31–40); census 40 entries / 28 regions / 29 kinds:

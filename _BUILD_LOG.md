@@ -336,3 +336,11 @@ CI red on all runners: numpy>=2.0 removed np.trapz; assembler overburden now use
 
 ## v0.404.0 — 2026-08-28
 THE FORTY WELLS SHIP: downhole v1.49–v1.58, catalogue entries 31–40 (census 40/28/29). Subduction end-to-end (JFAST record-depth slow-slip, Hikurangi rate-state + reader dedupe with 504B nitrate recovery, Costa Rica 212 °C envelopes, Barbados Pc−Po difference proof, Mariana mantle-wedge fingerprint) + hydrate hazard + first isotopes + two lakes + coral U-Th (54/54 decay-identity closure). 20 catalog data-files added to the wheel. Gate 5,949/0. Acceptance 55/55. 23-file pass verified.
+
+## v0.405.0 — 2026-08-28
+THE FIFTY WELLS SHIP (MILESTONE): downhole v1.59–v1.68, catalogue entries 41–50 (census 50/37/39).
+First license refusal on record (NC-SA), petroleum-fluids triad complete (where/what/origin),
+Mohr-Coulomb cohesion intercept, first LIFE (Peru radiotracer rates), Fram Strait EXACT TOC partition,
+and the fiftieth entry ANCIENT AIR: EPICA Dome C CO₂ 611–799 kyr (171.6 ppmv record low; 247/247 below
+preindustrial 280). SHIP GUARD v7 canonized (catalog↔data-files mechanical closure). 20 catalog
+data-files added to the wheel. Gate 5,973/0. Acceptance 55/55. 23-file pass verified.

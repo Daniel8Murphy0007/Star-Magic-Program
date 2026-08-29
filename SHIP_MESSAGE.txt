@@ -1,34 +1,18 @@
-v0.404.0 - THE FORTY WELLS SHIP: catalogue entries 31-40 (downhole v1.49-v1.58)
+v0.405.0 — THE FIFTY WELLS SHIP (MILESTONE)
 
-Ten verbatim catalogue entries double the regional reach: census 40 entries /
-28 regions / 29 kinds. Every entry fetched read-only from a public archive,
-transcribed verbatim with mandatory provenance sidecar, its header's own Size
-declaration re-counted EXACT at gate time, and its archive's own arithmetic
-re-derived on every gate run.
+Downhole catalogue v1.59.0–v1.68.0, entries 41–50; census 50 entries / 37 regions / 39 kinds.
 
-The subduction system end-to-end: JFAST C0019 laboratory slow-slip on the
-Tohoku fault (-6,887.5 m water-depth record); Hikurangi U1520 rate-state
-friction - the entry that drove the read_pangaea_txt duplicate-channel DEDUPE
-upgrade, which recovered the 504B nitrate channel silently overwritten since
-entry 18 (31-entry before/after audit: one recovery, zero regressions);
-Costa Rica friction envelopes to 212 C / 90 MPa (tau = mu x sigma on all 31
-rows); Barbados Leg 110 consolidation ('Pc/Po ratio' PROVEN a difference,
-65/66 pairs within 1 kPa - lubricated subduction as arithmetic); Mariana
-serpentinite mud volcano (four-way mantle fingerprint 19/19 vs exotic clast
-0/4). New kinds: gas hydrate (first drilling-hazard quantity), d13C isotopes,
-consolidation geotechnics, bulk-rock geochemistry, 1-mm XRF+MS core scan,
-U-Th geochronology (234U decay identity closes all 54 initial ratios to
-1.3e-4), event-deposit inventory. New worlds: Dead Sea (first lake, lowest
-borehole on Earth, diamagnetic matrix) and Lake El'gygytgyn (milestone entry
-40: the Arctic by land, through lake ice above a 3.6-Myr meteorite crater -
-entry 30 reached the Pole by sea).
+- First license refusal on record (entry 41 first choice, CC-BY-NC-SA): license-check-first standing.
+- Petroleum-fluids triad complete: Woodlark Rock-Eval (HI=S2/TOC 9/9) + Blake Ridge dual isotopes
+  (all 37 microbial, CO2-reduction) join Hydrate Ridge — where / what / origin.
+- Mohr-Coulomb envelope closed: Sumatra 362 cohesion intercept.
+- First measurement of LIFE: Peru Leg 201 radiotracer sulfate reduction, six orders of magnitude.
+- Ocean-state records: Walvis PETM depth-order dissolution; Med precession-paced sapropels (6/6).
+- Fram Strait macerals: TOC = ter+mar EXACT 12/12; the 103.18 slip + units mislabel + 8 label clips
+  all disclosed, never repaired.
+- Entry #50, THE MILESTONE — ANCIENT AIR: EPICA Dome C CO2 611–799 kyr (PANGAEA 710901, Nature 453);
+  741-cell Size EXACT; lowest atmospheric CO2 ever directly measured (171.6 ppmv @ 667.569 ka);
+  all 247 values below the preindustrial 280; Bereiter-2015 revision disclosed, not applied.
+- SHIP GUARD v7 canonized: catalog/ <-> pyproject data-files closure is now mechanical.
 
-Honest exclusions recorded in sidecars + GAPS registry: two fetch-capped
-datasets, one XLSX binary, one table too large for confident verbatim
-transcription - completeness outranks coverage.
-
-Package v1.50.0 -> v1.58.0 (one code change: the pangaea dedupe). 20 catalog
-data-files added to the wheel; /tmp build verified (wheel 80 catalog files,
-zero duplicates, Summary 506 chars with live gate count; twine PASSED;
-installed-wheel acceptance 55/55 from empty cwd). Gate 5,929 -> 5,949 / 0.
-Acceptance 55/55 at every entry. Full 23-file pass. Next paper: PAPER_2258.
+Gate 5,949 -> 5,973/0. Acceptance 55/55. 20 new catalog data-files in the wheel (guard-enforced).

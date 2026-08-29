@@ -1170,3 +1170,19 @@ its archive's own arithmetic re-derived at gate time; catalogue census
 - **v1.58** Lake El'gygytgyn turbidite inventory - 180 events, perfectly
   non-overlapping, 12.0% of the profile; the milestone reaches the Arctic
   by land through a meteorite crater
+
+## v1.59.0-v1.68.0 - The fifty-wells catalogue arc (entries 41-50): the milestone
+
+Ten entries on the per-well cadence, closing at the catalogue's boldest kind. License-check-first
+became standing discipline at entry 41 (first refusal on record: CC-BY-NC-SA cannot ride inside the
+dual-licensed product). The arc completed the petroleum-fluids triad (Hydrate Ridge WHERE + Woodlark
+Rock-Eval WHAT + Blake Ridge dual-isotope ORIGIN), closed the Mohr-Coulomb envelope with Sumatra
+cohesion, and added two kinds that change what the catalogue is: Peru Leg 201 sulfate-reduction rates
+(the first measurement of LIFE - metabolism counted atom by radioactive atom across six orders of
+magnitude) and, at entry fifty, ANCIENT AIR - the EPICA Dome C trapped-gas CO2 record, 611-799 kyr BP,
+247 samples of the actual middle-Pleistocene atmosphere at +3,233 m on the East Antarctic Plateau,
+including the lowest CO2 ever directly measured (171.6 ppmv), every value below the preindustrial 280.
+Census: 50 entries / 37 regions / 39 kinds. Every Size declaration re-counted EXACT; every archive's
+own arithmetic re-derived at gate time; every anomaly disclosed, never repaired (the 103.18 maceral
+slip, two units-mislabel magnitude proofs, eight field-width label clips, the Bereiter-2015 revision
+disclosed-not-applied). SHIP GUARD v7 now diffs catalog/ against the wheel manifest on every gate run.

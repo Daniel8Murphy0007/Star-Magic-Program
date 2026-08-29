@@ -6620,3 +6620,11 @@ excluded under the complete-dataset rule (two fetch-capped, one XLSX-binary,
 one too large for confident verbatim transcription) — if Daniel wants an
 XLSX-ingestion or chunked-transport route, that is new-capability work, not
 a repair. Board otherwise unchanged.
+
+---
+v0.405.0 FIFTYWELLS_ARC note (2026-08-28): no new rulings required. One standing-discipline
+event on record: entry 41's first-choice dataset (PANGAEA 912098) REFUSED on license grounds
+(CC-BY-NC-SA incompatible with the AGPL+Commercial dual license) — license-check-first is now
+the standing order of operations for every catalogue candidate. All archive anomalies in the
+arc carried verbatim with disclosure (units-mislabel magnitude proofs, the 103.18 maceral slip,
+field-width label clips, the Bereiter-2015 revision disclosed-not-applied). Board otherwise unchanged.

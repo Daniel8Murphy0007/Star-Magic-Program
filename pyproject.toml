@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.404.0"
-description = "Star-Magic UQFF calculator v0.404.0: THE FORTY WELLS SHIP. 2,253 dispatches (2,308 keys), gate 5,950/0. Downhole catalogue v1.49-v1.58, entries 31-40: JFAST Tohoku lab slow-slip (6,887.5 m water record), Hikurangi rate-state friction + reader dedupe (recovered 504B nitrate), Costa Rica 212 C friction envelopes, Hydrate Ridge gas hydrate, Guaymas d13C, Barbados consolidation, Mariana serpentinite, Dead Sea + El'gygytgyn lake records, GBR coral U-Th. 40 entries / 28 regions / 29 kinds. Next: PAPER_2258."
+version = "0.405.0"
+description = "Star-Magic UQFF calculator v0.405.0: THE FIFTY WELLS SHIP (milestone). 2,253 dispatches (2,308 keys), gate 5,973/0. Downhole catalogue v1.59-v1.68, entries 41-50: Bengal grain size, Walvis PETM carbonate, Woodlark Rock-Eval, Blake Ridge methane isotopes, Ursa XRD clays, Peru deep-biosphere sulfate reduction (first LIFE), Sumatra cohesion, Med sapropels, Fram Strait macerals, EPICA Dome C ancient air (lowest CO2 ever measured, 171.6 ppmv). 50 entries / 37 regions / 39 kinds. SHIP GUARD v7. Next: PAPER_2258."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -187,4 +187,24 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "uqff_downhole_simulator/catalog/elgygytgyn_5011_turbidites.txt",
     "uqff_downhole_simulator/catalog/elgygytgyn_5011_turbidites.provenance.json",
     "uqff_downhole_simulator/catalog/volve_15_9_19a_core_excerpt.provenance.json",
+    "uqff_downhole_simulator/catalog/bengal_u1452_grain_size.txt",
+    "uqff_downhole_simulator/catalog/bengal_u1452_grain_size.provenance.json",
+    "uqff_downhole_simulator/catalog/walvis_208_petm_carbonate.txt",
+    "uqff_downhole_simulator/catalog/walvis_208_petm_carbonate.provenance.json",
+    "uqff_downhole_simulator/catalog/woodlark_1109_rock_eval.txt",
+    "uqff_downhole_simulator/catalog/woodlark_1109_rock_eval.provenance.json",
+    "uqff_downhole_simulator/catalog/blake_164_methane_isotopes.txt",
+    "uqff_downhole_simulator/catalog/blake_164_methane_isotopes.provenance.json",
+    "uqff_downhole_simulator/catalog/ursa_308_xrd_mineralogy.txt",
+    "uqff_downhole_simulator/catalog/ursa_308_xrd_mineralogy.provenance.json",
+    "uqff_downhole_simulator/catalog/peru_201_sulfate_reduction.txt",
+    "uqff_downhole_simulator/catalog/peru_201_sulfate_reduction.provenance.json",
+    "uqff_downhole_simulator/catalog/sumatra_362_cohesion.txt",
+    "uqff_downhole_simulator/catalog/sumatra_362_cohesion.provenance.json",
+    "uqff_downhole_simulator/catalog/med_160_sapropels.txt",
+    "uqff_downhole_simulator/catalog/med_160_sapropels.provenance.json",
+    "uqff_downhole_simulator/catalog/fram_909_organic_petrography.txt",
+    "uqff_downhole_simulator/catalog/fram_909_organic_petrography.provenance.json",
+    "uqff_downhole_simulator/catalog/epica_domec_co2_800kyr.txt",
+    "uqff_downhole_simulator/catalog/epica_domec_co2_800kyr.provenance.json",
 ]
