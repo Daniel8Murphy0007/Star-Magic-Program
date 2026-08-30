@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.406.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.406.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.407.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.407.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-5993%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2308-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6003%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2309-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.406.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.407.0 complete-compile campaign live**
 
-**This release (v0.406.0): THE SURVEYING TOOL SHIP — the mission redirect made code.** Daniel's direction — *"we are making a geological subsurface surveying tool… image/map continents one site at a time"* — became Parts 1–3 of that tool in a single arc (`uqff_downhole_simulator` v1.69.0–v1.77.0). **Part 1, the Earth Model:** 29 sites registered into one geographic frame by archive-declared coordinates alone (nothing geolocated from memory; 18 coordinate-less entries listed with reasons), on a common vertical frame that reunited entries the catalogue never knew shared ground (U1324's pore pressures and Ursa's clay mineralogy are one site) and whose own rules caught a real error (a horizontal well's MD is not a height — deviated wells register through TVD). **Part 2, the sensing kernels:** K2 — a gravity forward model composed ONLY from UQFF-derived constants (g = 9.8125, G = 6.669×10⁻¹¹, R⊕ = 6371 km EXACT → free-air 0.30804 mGal/m, never fit to anything) validated against the KTB borehole gravimeter at **correlation 0.9968** with the circularity caveat carried inside the result; and K1 — the structural ladder standing the primitive lattice up as a planet (radius/core/crust/Moho/ocean/trench/Kármán, **7 EXACT**), with zero violations across 29 independent archives and the library's reach measured honestly at 15.7% of the crust. **Part 3, the inverse engine:** measured gravity → implied density → posterior strata properties with n/spread/support and the cross-site-transfer assumption disclosed on every estimate — and the tool's **first falsifiable strata prediction** pinned before the answer is known: KTB Vp 5,643–6,039 m/s, `PREDICTION_AWAITING_DATA`, testable the day the GFZ sonic log is catalogued. **Also shipped:** catalogue entry #51 (IODP Exp 308 Table T2 — the missing temperature column that made u1324 the THIRD runnable well, T=measured/P=measured, the independent evaluation's score-changing criterion executed); the strata-join engine (504B's velocity–porosity relation recovered empirically at r = −0.71 from archives transcribed months apart); the **private-by-construction operator tier** carrying the first client field data (Retama Ranch #403H: 182-station survey min-curvature-verified to 0.005 ft, drag report, plan-tracking — screenshot-recovered and cross-checksummed 181/181 exact; gitignored, never wheeled, never required); the survey-pair reconciler that located a TVD divergence's cause on its own; SHIP GUARD v7 (mechanical catalog↔wheel closure); and 20 new acceptance checks. **Totals: 2,253 wired (2,308 DISPATCH keys) / gate 5,993 green / 4,180 defs / acceptance 75 green / catalogue 51 public entries + operator tier. Next paper: PAPER_2258.**
+**This release (v0.407.0): THE SCORED PREDICTION SHIP — the control loop closed, and went to market.** This band contains the first complete predict-score-correct cycle in the product's history. The v1.77 strata prediction (KTB Vp 5,643–6,039 m/s, pinned in the gate before its data existed) met its judge: **catalogue entry #52**, a verbatim excerpt of the KTB main-hole composite log where P-slowness and bulk density ride co-located through the gneiss. At matched density, the ground answered 6,228 m/s — **the prediction was REFUTED as transferred (+10%, >3σ)**, and the diagnosis was the sentence the engine had printed on every estimate in advance: *a prior learned in oceanic basalt applied to continental gneiss is an assumption, not a fact.* The refutation became the correction (v1.79): priors are now chosen by **geological family**, the refuting data itself supplies the continental_crystalline prior (46 washouts excluded, disclosed), and it reproduces its own ground in-sample at 6,231-vs-6,228. **Prediction V2 is pinned and unsettled** — Vp 5,981–6,263 m/s awaiting the transport-blocked deep sonic, with error bars honestly wider than v1's because nineteen real pairs support them. The cycle is canonized as **PAPER_2258** (distinct wired papers now 2,254), whose dispatch re-verifies the entire surveying tool live per call — a paper whose numbers cannot go stale. **The tool got its face** (v1.80): an honest site map and inversion cross-section that print their own caveats — including V2's unsettled status — on the figures themselves. **And the doctrine went commercial:** the ENRGYONE pilot proposal sells the scoring record itself ('no competitor shows you their scoring record — we are built around ours'), proves client-data confidentiality by build artifacts, and carries an explicit *What we will not do* section; the bench-readiness document holds the 1.0324 wager open for hardware with both outcomes designed in. Wiring PAPER_2258 tripped four label ratchets in sequence — each caught mechanically, which is §7 of the paper demonstrating itself. **Totals: 2,254 wired (2,309 DISPATCH keys) / gate 6,003 green / 4,181 defs / acceptance 79 green / catalogue 52 public entries + operator tier. Next paper: PAPER_2259.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.406.0)
+## What is currently shipped (v0.407.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,789 rows**. Fidelity gate: **5,993 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,791 rows**. Fidelity gate: **6,003 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

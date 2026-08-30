@@ -6636,3 +6636,11 @@ kernel order = K2 buoyancy column first. QUEUED FOR DANIEL (no code can close th
 geological density landmarks (quartz, granite, shale, seawater, limestone, halite, ice) as
 UQFF derivation targets — the spectral library's geological rungs; K3 QCalcGeom re-derivation
 scope; step 7 recorded-interface ruling still open.
+
+---
+v0.407.0 SCOREDPRED_ARC (2026-08-29): no new rulings required; the arc ran under standing
+doctrine. STILL QUEUED FOR DANIEL: (a) K4 geological density landmarks (quartz/granite/
+shale/seawater/limestone/halite/ice); (b) K3 QCalcGeom re-derivation scope; (c) step-7
+recorded-interface ruling; (d) gauge procurement per commercial/BENCH_READINESS.md;
+(e) OPTIONAL settlement of Prediction V2: download data.icdp-online.org/sites/ktb/data/
+logging/complogs/hb1/60117200.htm locally and drop it in - the scoring runs the day it lands.

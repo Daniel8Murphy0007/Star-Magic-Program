@@ -44,6 +44,54 @@ from .uqff_forward_model import implied_density_gcc
 from .uqff_profile_catalog import CATALOG
 from . import uqff_strata_join as SJ
 
+PRIOR_FAMILIES = {
+    # v1.79.0 (the lesson of the first scored prediction): priors are chosen
+    # by GEOLOGICAL FAMILY, not by whatever well the library learned first.
+    # 'oceanic_igneous' draws on the 504B joint tables (basalt flank);
+    # 'continental_crystalline' draws SITE-NATIVE pairs from the KTB
+    # composite-log excerpt (entry 52 - the very data that refuted the
+    # transferred prediction now supplies the corrected prior).
+    'oceanic_igneous': {
+        'kind': 'strata_join', 'source': '504b',
+        'note': 'joint tables learned in oceanic basalt (DSDP/ODP 504B)'},
+    'continental_crystalline': {
+        'kind': 'site_pairs', 'source': 'ktb_hb_complog_6020_excerpt',
+        'note': ('site-native rho-Vp pairs from the KTB composite excerpt; '
+                 'washout stations (RHOB <= 2.5 g/cc against enlarged '
+                 'caliper) excluded with the count disclosed - hole '
+                 'artifacts, not rock')},
+}
+
+WASHOUT_RHO_GCC = 2.5
+
+
+def _site_native_pairs(entry: str):
+    """Co-located (rho, Vp) pairs from a composite-log entry, washouts
+    excluded (disclosed). Returns (pairs, n_excluded)."""
+    st = CATALOG[entry].stream()
+    rb = [float(v) for v in st.channels['RHOB (g/cm3)'].values]
+    dt = [float(v) for v in st.channels['DTCO (us/m)'].values]
+    pairs = [(r, 1e6 / t) for r, t in zip(rb, dt) if r > WASHOUT_RHO_GCC and t > 0]
+    return pairs, sum(1 for r in rb if 0 < r <= WASHOUT_RHO_GCC)
+
+
+def _conditional_from_pairs(pairs, value: float, k: int = 7):
+    """k-nearest empirical conditional over raw co-located stations - same
+    honesty contract as the strata-join conditional (n, spread, support,
+    extrapolation flag; refuses when thin)."""
+    if len(pairs) < 8:
+        return {'status': 'REFUSED_THIN_DATA', 'n': len(pairs), 'min_n': 8}
+    lo = min(g for g, _ in pairs)
+    hi = max(g for g, _ in pairs)
+    near = sorted(pairs, key=lambda p: abs(p[0] - value))[:max(int(k), 1)]
+    tv = [t for _, t in near]
+    est = sum(tv) / len(tv)
+    spread = (statistics.pstdev(tv) if len(tv) > 1 else 0.0)
+    return {'status': 'OK', 'estimate': est, 'std': spread, 'n': len(near),
+            'support': (min(g for g, _ in near), max(g for g, _ in near)),
+            'extrapolation': not (lo <= value <= hi)}
+
+
 CROSS_SITE_NOTE = ("cross-site transfer: prior learned at '%s' applied at "
                    "'%s' - an assumption the engine discloses, not a fact")
 
@@ -79,11 +127,16 @@ def invert_gravity_column(entry: str = 'ktb_hb_bhgm_density',
                           prior_well: str = '504b',
                           targets: tuple = ('vp', 'porosity'),
                           rho_null_gcc: float = 0.5,
-                          k_sigma: float = 2.0) -> Dict:
+                          k_sigma: float = 2.0,
+                          prior_family: str = None) -> Dict:
     """The first full inversion: a measured gravity column becomes a strata
     column with uncertainty. Null stations (archive density zeros) excluded
     with the count disclosed; every posterior carries n/spread/support and
     the extrapolation flag from the prior itself."""
+    fam = PRIOR_FAMILIES.get(prior_family) if prior_family else None
+    fam_pairs, fam_washouts = (None, 0)
+    if fam and fam['kind'] == 'site_pairs':
+        fam_pairs, fam_washouts = _site_native_pairs(fam['source'])
     st = CATALOG[entry].stream()
     z = [float(v) for v in st.index]
     grav = [float(v) for v in st.channels['GRAV'].values]
@@ -98,6 +151,20 @@ def invert_gravity_column(entry: str = 'ktb_hb_bhgm_density',
             excluded += 1
             continue
         rho_imp = implied_density_gcc(grav[i] - grav[i - 1], dz)
+        if fam and fam['kind'] == 'site_pairs':
+            chain = {
+                'measurement': '%s GRAV interstation (mGal)' % entry,
+                'density_inversion': 'K2 UQFF constants (uqff_forward_model)',
+                'prior': 'PRIOR_FAMILY %s: %s' % (prior_family, fam['note']),
+                'assumption': ('SITE-NATIVE prior (same borehole family) - '
+                               'in-sample at the excerpt window, disclosed; '
+                               '%d washout stations excluded' % fam_washouts),
+            }
+            est = StrataEstimate(depth_m=z[i], dz_m=dz,
+                                 implied_density_gcc=rho_imp, chain=chain)
+            est.posteriors['vp'] = _conditional_from_pairs(fam_pairs, rho_imp)
+            estimates.append(est)
+            continue
         est = StrataEstimate(
             depth_m=z[i], dz_m=dz, implied_density_gcc=rho_imp,
             chain={

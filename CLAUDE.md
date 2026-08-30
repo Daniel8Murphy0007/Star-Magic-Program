@@ -113,6 +113,14 @@ wire best candidate, set registry `status=OPEN_RULING`, append the question to
   Store entries in dependency-free formats; guard optional-format readers with clear
   ImportError messages; declare extras in pyproject; and REHEARSE the gate with the
   optional module BLOCKED (PYTHONPATH shim raising ImportError) before every ship.
+- v0.407.0 SILENT-SKIP lesson: setuptools SILENTLY OMITS declared py-modules whose files
+  are absent from the build tree (data-files error loudly; py-modules do not) - v0.406.0
+  shipped to PyPI missing 8 of 15 declared modules, so `import uqff_calculator` failed
+  from the installed wheel, and the corpus-INDEPENDENT acceptance suite could not catch
+  it by design. Ship rehearsal rule (g): verify every declared py-module is IN the wheel
+  by listing, then `import uqff_calculator` and run one dispatch FROM THE INSTALLED WHEEL
+  in an empty cwd. The /tmp build copy must be driven BY the pyproject py-modules list,
+  never by a hand-remembered file list.
 
 ## PERMANENT RULES (from v0.1.0, unchanged)
 

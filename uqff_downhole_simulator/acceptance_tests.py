@@ -599,6 +599,50 @@ def section_p_inverse_engine() -> None:
        "thresholds")
 
 
+def section_q_prior_families() -> None:
+    """Section Q - site-family priors (v1.79.0): the inverse engine chooses
+    priors by geological family, and the corrected prior must reproduce the
+    ground it was learned from (public data)."""
+    from .uqff_inverse_engine import (PRIOR_FAMILIES, invert_gravity_column,
+                                      _site_native_pairs,
+                                      _conditional_from_pairs)
+    ok(set(PRIOR_FAMILIES) >= {"oceanic_igneous", "continental_crystalline"}
+       and all("note" in f for f in PRIOR_FAMILIES.values()),
+       "Q1 priors: geological prior families exist and each carries its "
+       "provenance note")
+    pairs, washouts = _site_native_pairs("ktb_hb_complog_6020_excerpt")
+    c = _conditional_from_pairs(pairs, 2.86)
+    r = invert_gravity_column(prior_family="continental_crystalline")
+    ok(c["status"] == "OK" and abs(c["estimate"] - 6228.0) < 60.0
+       and washouts >= 40
+       and all("SITE-NATIVE" in e.chain["assumption"] for e in r["estimates"]),
+       "Q2 priors: the site-native prior reproduces its own ground "
+       "(in-sample, disclosed) and every estimate says which prior it used")
+
+
+def section_r_survey_view(tmp: str) -> None:
+    """Section R - the honest renderer (v1.80.0). Vacuous where the optional
+    plotting package is absent: rendering is presentation, never
+    load-bearing (the red-gate lesson applied in advance)."""
+    import os
+    ok1 = ok2 = True
+    try:
+        from .uqff_survey_view import render_site_map, render_ktb_inversion
+        p1 = os.path.join(tmp, "map.png")
+        p2 = os.path.join(tmp, "xsec.png")
+        r1 = render_site_map(p1)
+        r2 = render_ktb_inversion(p2)
+        ok1 = (r1["sites_drawn"] >= 28 and os.path.getsize(p1) > 10000)
+        ok2 = (r2["intervals_drawn"] >= 190 and r2["vp_points"] >= 150
+               and os.path.getsize(p2) > 10000)
+    except ImportError:
+        pass   # optional dependency absent: vacuous by design, disclosed
+    ok(ok1, "R1 renderer: the site map draws every registered site or the "
+            "optional dependency is absent (vacuous, disclosed)")
+    ok(ok2, "R2 renderer: the inversion cross-section carries the intervals, "
+            "the V2 band, and its unsettled status - or vacuous as above")
+
+
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "
           "independent of the physics corpus)")
@@ -619,6 +663,8 @@ def main() -> int:
         section_n_forward_model()
         section_o_structural_ladder()
         section_p_inverse_engine()
+        section_q_prior_families()
+        section_r_survey_view(tmp)
     if _FAILS:
         print(f"[ACCEPTANCE] {len(_FAILS)} FAILURES ({_PASS} passed):")
         for f in _FAILS:

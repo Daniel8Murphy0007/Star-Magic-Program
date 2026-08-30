@@ -350,3 +350,9 @@ THE SURVEYING TOOL SHIP: downhole v1.69–v1.77 = Parts 1–3 of the subsurface 
 (Earth Model 29 sites / K2 gravity kernel KTB 0.9968 / K1 ladder 7 EXACT / inverse engine +
 falsifiable KTB Vp prediction). Entry #51 (third runnable well), private operator tier (Retama,
 cross-checksummed 181/181), SHIP GUARD v7, acceptance 55→75. Gate 5,993/0. 23-file pass verified.
+
+## v0.407.0 — 2026-08-29
+THE SCORED PREDICTION SHIP: entry #52 judges the first strata prediction (REFUTED +10%,
+diagnosis = pre-disclosed assumption) -> family priors correct it (6,231 vs 6,228) ->
+Prediction V2 pinned. PAPER_2258 landmark self-verifying (2,254/2,309). Honest renderer +
+ENRGYONE commercial package. Gate 5,993 -> 6,003 (crossed 6,000). Acceptance 79. Full pass.

@@ -12235,3 +12235,29 @@ guarded with a clear message and kept only for NEW vendor .xls drops; (3) xlrd d
 gate path; (5) gate + acceptance re-run GREEN under a blocked-xlrd environment (PYTHONPATH shim
 raising ImportError - the ship-machine simulation the rehearsal lacked); (6) wheel rebuilt and
 re-proven. Standing lesson appended to CLAUDE.md: rehearse ships with optional modules BLOCKED.
+
+## Entry 280 — 2026-08-29 — THE SCORED PREDICTION SHIP (v0.407.0)
+
+Daniel's GO on the four-item block (whitepaper / commercial / visualization / hardware path)
+plus the prediction hunt before it. The hunt dodged a trap (the 6,840-7,840 m file is the
+cased-hole NGS run - no sonic) and hit the transport wall (946 KB sonic file truncates
+~6,067 m; predicted depths unreachable - disclosed, never worked around). Entry 52 (65-row
+verbatim excerpt, sonic+density co-located) delivered the verdict: prediction REFUTED as
+transferred, +10%, diagnosed by its own pre-disclosed assumption. v1.79 family priors turned
+the refutation into the correction (in-sample 6,231 vs 6,228); Prediction V2 pinned unsettled.
+PAPER_2258 authored + wired (live self-verifying dispatch; four label ratchets fired in
+sequence during wiring - all caught mechanically). v1.80: honest renderer + ENRGYONE
+commercial package (proposal sells the scoring record; bench readiness holds the 1.0324
+wager). Gate crossed 6,000 -> 6,003/0. Acceptance 79/79. All greens re-proven under the
+blocked-xlrd ship-machine simulation. Ship files: full pass. Daniel ships via .\ship.ps1.
+
+### Entry 280 addendum — ship-rehearsal catch: the silent py-modules skip
+
+The v0.407.0 rehearsal's new probe (import uqff_calculator from the installed wheel)
+exposed that v0.406.0 SHIPPED TO PYPI missing 8 of 15 declared py-modules (setuptools
+silently skips absent py-modules; data-files error loudly) - the calculator was
+unimportable from the wheel, invisible to the deliberately corpus-independent acceptance
+suite. v0.407.0 wheel rebuilt driven by the pyproject py-modules list: 15/15 present,
+calculator imports and runs PAPER_2258 from the installed wheel under blocked-xlrd.
+Lesson canonized as ship-checklist rules (f)+(g) in CLAUDE.md. Disclosure: v0.406.0 on
+PyPI carries the defect; v0.407.0 supersedes it same-day.

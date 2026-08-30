@@ -1,20 +1,22 @@
-v0.406.0 — THE SURVEYING TOOL SHIP
+v0.407.0 — THE SCORED PREDICTION SHIP
 
-Daniel's mission redirect made code: Parts 1-3 of the geological subsurface surveying tool.
+The control loop closed, and went to market.
 
-- v1.69 strata-join: catalogue -> training corpus (504B Wyllie relation recovered, r=-0.71)
-- v1.70 entry #51 (IODP 308 Table T2): u1324 = THIRD runnable well (T+P both measured)
-- v1.71-1.73 OPERATOR TIER (private by construction) + Retama Ranch #403H (survey min-curvature
-  0.005 ft; screenshot recovery cross-checksummed 181/181; survey-pair reconciler diagnoses archives)
-- v1.74 EARTH MODEL: 29 sites, one frame, archive coordinates only; U1324+Ursa reunited
-- v1.75 K2 GRAVITY KERNEL: UQFF constants only (free-air 0.30804 composed); KTB corr 0.9968
-- v1.76 K1 STRUCTURAL LADDER: 7 EXACT rungs live from primitives; zero violations, 29 archives
-- v1.77 INVERSE ENGINE: measurement -> strata with disclosed uncertainty; FIRST FALSIFIABLE
-  STRATA PREDICTION pinned awaiting data (KTB Vp 5,643-6,039 m/s)
+- Entry #52 (KTB composite sonic+density excerpt): the first strata prediction SCORED -
+  REFUTED as transferred (+10%, >3 sigma; measured 6,228 vs predicted 5,675+/-109),
+  diagnosed by the exact assumption the engine disclosed in advance.
+- v1.79 SITE-FAMILY PRIORS: the refuting data becomes the correction (in-sample 6,231 vs
+  6,228); PREDICTION V2 pinned unsettled (Vp 5,981-6,263) awaiting the deep sonic.
+- PAPER_2258 authored + wired: live self-verifying landmark dispatch (2,254 distinct /
+  2,309 keys). Four label ratchets fired during wiring; all caught mechanically.
+- v1.80: honest renderer (figures print their own caveats incl. V2's unsettled status) +
+  ENRGYONE commercial package (pilot proposal sells the scoring record; bench readiness
+  holds the 1.0324 wager open for hardware).
 
-Rulings executed: private tier; K2 first. SHIP GUARD v7 live (caught its first miss same day).
-Gate 5,949 -> 5,993/0. Acceptance 55 -> 75. Registry 6,789 rows.
+Gate 5,993 -> 6,003/0 (CROSSED 6,000). Acceptance 75 -> 79. Registry 6,791 rows.
+Greens re-proven under blocked-xlrd ship-machine simulation.
 
-Pre-tag red-gate fix: xlrd dependency removed from all shipped entries (drift survey converted
-cell-for-cell to dependency-free format, vendor XLS preserved); gate re-proven green with xlrd
-blocked. Catalogue entries must never require optional modules - standing lesson in CLAUDE.md.
+Packaging fix: v0.406.0 shipped missing 8/15 declared py-modules (setuptools silent skip;
+calculator unimportable from that wheel - disclosed). v0.407.0 carries all 15, verified by
+listing + a live PAPER_2258 dispatch run from the installed wheel under blocked-xlrd.
+Ship-checklist rules (f)+(g) canonized in CLAUDE.md.

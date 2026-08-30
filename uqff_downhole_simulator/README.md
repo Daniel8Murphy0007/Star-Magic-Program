@@ -1217,3 +1217,14 @@ real borehole gravimetry at correlation 0.9968; the K1 structural ladder stood t
 lattice up as a planet (7 EXACT rungs, zero site violations); and the INVERSE ENGINE now reads
 measured gravity into strata columns with every assumption disclosed - emitting the tool's
 first falsifiable strata prediction (KTB Vp 5,643-6,039 m/s), pinned before the answer is known.
+
+## v1.78.0-v1.80.0 - The scored-prediction arc
+
+The catalogue judged its own product. Entry 52 (KTB composite sonic+density, verbatim
+excerpt) scored the v1.77 prediction REFUTED as transferred (+10%) - and the diagnosis was
+the assumption the engine had disclosed on every estimate before the data arrived. v1.79
+turned the refutation into machinery: priors chosen by geological family, the refuting data
+supplying the corrected prior (in-sample 6,231 vs measured 6,228), Prediction V2 pinned and
+unsettled. v1.80 gave the tool its face - a site map and cross-section that print their own
+caveats - and carried the doctrine into the ENRGYONE commercial package. Falsifiability is
+not a section heading here; it is the control loop.

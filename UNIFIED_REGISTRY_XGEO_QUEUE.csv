@@ -1733,3 +1733,4 @@ PRODUCT_ARC,n/a,n/a,NOT_APPLICABLE,product-engineering ship - no cross-geometry 
 FORTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,catalogue data ship - no cross-geometry content,v0.404.0
 FIFTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,catalogue data ship - no cross-geometry content,v0.405.0
 SURVEYTOOL_ARC,n/a,n/a,NOT_APPLICABLE,surveying-tool build ship - no cross-geometry content (K3 QCalcGeom re-derivation queued as future arc),v0.406.0
+SCOREDPRED_ARC,n/a,n/a,NOT_APPLICABLE,catalogue+landmark+commercial ship - no cross-geometry content,v0.407.0

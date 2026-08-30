@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.406.0"
-description = "Star-Magic UQFF calculator v0.406.0: THE SURVEYING TOOL SHIP. 2,253 dispatches (2,308 keys), gate 5,993/0. Downhole v1.69-v1.77: Parts 1-3 of the geological subsurface surveying tool - Earth Model (29 sites, one frame), K2 UQFF gravity kernel (KTB validation corr 0.9968), K1 structural ladder (7 EXACT rungs), inverse engine with first falsifiable strata prediction (KTB Vp, awaiting data). Entry 51 = measured T+P; 3 runnable wells; private operator tier carries first client data. Next: PAPER_2258."
+version = "0.407.0"
+description = "Star-Magic UQFF calculator v0.407.0: THE SCORED PREDICTION SHIP. 2,254 dispatches (2,309 keys), gate 6,003/0. The control loop closed: first strata prediction scored REFUTED (+10pct) against KTB ground truth (entry 52), diagnosed by its own pre-disclosed assumption, corrected via geological-family priors (in-sample 6,231 vs 6,228), Prediction V2 pinned awaiting deep sonic. PAPER_2258 landmark self-verifying; ENRGYONE pilot proposal + bench readiness; honest map/cross-section renders. Next: PAPER_2259."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -210,4 +210,6 @@ py-modules = ["uqff_session_closures", "uqff_fubii_variants", "uqff_ngc_catalog"
     "uqff_downhole_simulator/catalog/epica_domec_co2_800kyr.provenance.json",
         "uqff_downhole_simulator/catalog/gom_308_t2p_insitu.txt",
         "uqff_downhole_simulator/catalog/gom_308_t2p_insitu.provenance.json",
+        "uqff_downhole_simulator/catalog/ktb_hb_complog_6020_excerpt.txt",
+        "uqff_downhole_simulator/catalog/ktb_hb_complog_6020_excerpt.provenance.json",
 ]

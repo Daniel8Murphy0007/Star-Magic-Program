@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.406.0"
+VERSION = "0.407.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -28975,6 +28975,86 @@ def _p2257(dataset=None):
                        'two-stream reconciliation).',
             'source': 'PAPER_2257',
             'residual_pct': 0.0}
+
+
+@_register('PAPER_2258')
+def _p2258(dataset=None):
+    tool = {'available': False}
+    try:
+        import statistics as _st
+        from uqff_downhole_simulator.uqff_earth_model import EarthModel as _EM
+        from uqff_downhole_simulator.uqff_structural_ladder import ladder as _lad
+        from uqff_downhole_simulator.uqff_forward_model import ktb_gravity_test as _kgt
+        from uqff_downhole_simulator.uqff_inverse_engine import (
+            invert_gravity_column as _igc, _site_native_pairs as _snp,
+            _conditional_from_pairs as _cfp)
+        em = _EM()
+        cen = em.census()
+        rungs = {r['rung']: r for r in _lad()}
+        k2 = _kgt()['null_filtered']
+        pairs, washouts = _snp('ktb_hb_complog_6020_excerpt')
+        band = [v for r, v in pairs if 2.80 <= r <= 2.90]
+        insample = _cfp(pairs, 2.86)
+        r2 = _igc(prior_family='continental_crystalline')
+        ins = [e for e in r2['estimates']
+               if e.posteriors['vp']['status'] == 'OK'
+               and not e.posteriors['vp']['extrapolation']]
+        v2 = [e.posteriors['vp']['estimate'] for e in ins]
+        tool = {'available': True,
+                'part1_earth_model': {
+                    'sites': cen['sites'],
+                    'great_circle_span_km': cen['great_circle_span_km'],
+                    'latitude_span_deg': cen['latitude_span_deg'],
+                    'multi_entry_sites': cen['multi_entry_sites']},
+                'part2_k1_ladder': {
+                    'exact_rungs': sum(1 for r in rungs.values() if r['exact']),
+                    'earth_radius_km': rungs['earth_radius_km']['uqff_km'],
+                    'continental_crust_km': rungs['continental_crust_km']['uqff_km']},
+                'part2_k2_gravity': {
+                    'correlation_vs_ktb_bhgm': round(k2['correlation'], 5),
+                    'mean_residual_mgal': round(k2['mean_residual_mgal'], 4),
+                    'intervals': k2['n']},
+                'part3_cycle': {
+                    'prediction_v1_m_s': '5675 +/- 109 (504b transfer prior)',
+                    'score_measured_band_mean_m_s': round(_st.mean(band), 0),
+                    'verdict': 'REFUTED_AS_TRANSFERRED (~+10 pct, >3 sigma; '
+                               'diagnosis = the disclosed cross-site assumption)',
+                    'correction_insample_m_s': round(insample['estimate'], 0),
+                    'prediction_v2_mean_m_s': round(_st.mean(v2), 0),
+                    'prediction_v2_status': 'PINNED_AWAITING_DEEP_SONIC',
+                    'washouts_excluded': washouts}}
+    except Exception as e:
+        tool['error'] = str(e)[:120]
+    verified = (tool.get('available')
+                and tool['part1_earth_model']['sites'] >= 28
+                and tool['part2_k1_ladder']['exact_rungs'] == 7
+                and tool['part2_k2_gravity']['correlation_vs_ktb_bhgm'] > 0.995
+                and abs(tool['part3_cycle']['score_measured_band_mean_m_s'] - 6228.0) < 25.0
+                and abs(tool['part3_cycle']['correction_insample_m_s'] - 6231.0) < 60.0)
+    return {'value': {'surveying_tool': tool,
+                      'parts_1_3_verified': bool(verified),
+                      'mission': 'geological subsurface surveying - image/map continents '
+                                 'one site at a time (Daniel directive, 2026-08-29)',
+                      'cycle': 'predict (pinned before data) -> score (refuted honestly) '
+                               '-> correct (family priors) -> predict again (V2 pinned, '
+                               'unsettled) - refutation as designed'},
+            'formula': 'THE UQFF SUBSURFACE SURVEYING TOOL, Parts 1-3 (v1.69.0-v1.79.0): '
+                       'Part 1 EARTH MODEL registers the verbatim library into one frame '
+                       'by archive coordinates only; Part 2 kernels - K1 structural ladder '
+                       '(7 EXACT primitive rungs, zero site violations) + K2 gravity kernel '
+                       'composed solely from UQFF constants (g PAPER_1598, G PAPER_593, '
+                       'R_earth PAPER_1209CC -> free-air 0.30804 mGal/m never fit to '
+                       'anything) validated on the KTB borehole gravimeter at 0.9968; '
+                       'Part 3 INVERSE ENGINE reads measured gravity into strata with '
+                       'n/spread/support and its transfer assumption in words - and the '
+                       'first scored strata prediction LOST honestly (+10 pct), was '
+                       'diagnosed by its own pre-disclosed assumption, and became the '
+                       'corrected continental_crystalline prior (in-sample 6,231 vs '
+                       'measured 6,228). This dispatch re-verifies the whole tool live '
+                       'per call.',
+            'source': 'PAPER_2258',
+            'residual_pct': round(abs(1.0 - (tool.get('part2_k2_gravity', {})
+                                             .get('correlation_vs_ktb_bhgm', 0.0))) * 100, 3)}
 
 
 @_register('PAPER_001')

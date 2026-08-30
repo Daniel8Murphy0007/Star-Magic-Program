@@ -660,3 +660,4 @@ PRODUCT_ARC,DOWNHOLE_PRODUCT,MERGED,v0.403.0,eight packages v1.41-v1.48 shipped;
 FORTYWELLS_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.404.0,ten entries v1.49-v1.58; one reader upgrade (pangaea dedupe); census 40 entries / 28 regions / 29 kinds
 FIFTYWELLS_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.405.0,ten entries v1.59-v1.68; SHIP GUARD v7 (catalog<->data-files closure) canonized; census 50 entries / 37 regions / 39 kinds
 SURVEYTOOL_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.406.0,nine simulator versions v1.69-v1.77; entry 51 + operator tier (3 private entries); Parts 1-3 of the surveying tool; gate 5949->5993; acceptance 55->75
+SCOREDPRED_ARC,DOWNHOLE_CATALOGUE,MERGED,v0.407.0,entry 52 + v1.78-v1.80 + PAPER_2258 + commercial package; gate 5993->6003; acceptance 75->79; wired 2254/2309

@@ -7,6 +7,19 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## v0.407.0 — 2026-08-29 — THE SCORED PREDICTION SHIP
+
+The control loop closed, and went to market (`uqff_downhole_simulator` v1.78.0–v1.80.0 + PAPER_2258 + the ENRGYONE commercial package):
+
+- **v1.78 / entry #52** — THE PREDICTION'S JUDGE: verbatim KTB composite-log excerpt (sonic + density co-located, 6,020–6,030 m; hand-transcription-no-checksum disclosed; the −999.25 nulls, washouts and one impossible negative-resistivity artifact carried verbatim). **The v1.77 prediction scored REFUTED AS TRANSFERRED** (+10%, >3σ; measured 6,228 vs predicted 5,675±109) — diagnosed by the exact assumption the engine had disclosed in advance. Deep predicted depths transport-unreachable; disclosed in sidecar + GAPS.
+- **v1.79** — SITE-FAMILY PRIORS: the refuting data becomes the correction (continental_crystalline prior, 46 washouts excluded, in-sample 6,231 vs 6,228); **Prediction V2 pinned** (Vp 5,981–6,263, honestly wider bars) awaiting the deep sonic.
+- **PAPER_2258** — the surveying-tool landmark, authored + wired with a live self-verifying dispatch (2,254 distinct / 2,309 keys). Wiring it tripped FOUR label ratchets in sequence — each caught mechanically.
+- **v1.80** — the honest renderer (site map + inversion cross-section that print their own caveats, matplotlib optional per the red-gate lesson) + `commercial/`: pilot proposal that sells the scoring record, bench-readiness (1.0324, both outcomes designed in), and the first renders.
+
+Gate 5,993 → 6,003 (**crossing 6,000**). Acceptance 75 → 79 (sections Q–R). Registry 6,791 rows.
+
+**Packaging fix (disclosed):** the ship rehearsal's new installed-wheel calculator probe found that v0.406.0 shipped missing 8 of 15 declared py-modules (setuptools skips absent py-modules silently) — `import uqff_calculator` failed from that wheel. v0.407.0 ships all 15 (verified in the wheel listing + live dispatch run from the installed package) and the rehearsal rule is canonized in CLAUDE.md.
+
 ## v0.406.0 — 2026-08-29 — THE SURVEYING TOOL SHIP
 
 The mission redirect made code: Parts 1–3 of the geological subsurface surveying tool (`uqff_downhole_simulator` v1.69.0–v1.77.0), plus catalogue entry #51 and the private operator tier:
