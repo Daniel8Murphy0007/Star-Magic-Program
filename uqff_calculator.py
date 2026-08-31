@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.407.0"
+VERSION = "0.408.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29306,6 +29306,9 @@ def _paper_005(dataset):
     })
     return {
         'value': _v,
+        'p_scaling_convention': ('B1 RULED 2026-08-31: D^2 canonical corpus-wide; wired P/tau (0.81, 1.23x) '
+                                  'read as D^2 with D_strain=(1-F_TRZ)=0.9 (paper sec2 F=0.903, F^2=0.815; '
+                                  'Q-006 residual mantissa question remains)'),
         'formula': ('F_combined=(1-F_TRZ)^2=0.81 (string deactivated BBH); P_GW=(32/5)(G^4/c^5)(m1m2)^2(m1+m2)/r^5 '
                     '(gw_power_peters, G_UQFF/c); P/tau/E scale by 0.81 (Q-006 sec2=0.903); 9-sector; '
                     'Production Framework; VDS ratio=F_TRZ=0.1 (drift 1.894); cosmogenesis'),
@@ -29433,7 +29436,7 @@ def _paper_008(dataset):
                     'df/dt=(96/5pi)(piMf)^(11/3)/c; 9-sector; Production Framework; VDS=F_TRZ (Q-008)'),
         'source': 'PAPER_008',
         'residual_pct': abs(1.0 / D_sq - 9.0) / 9.0 * 100.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B1: D^2 scaling canonical - P_UQFF=D^2*P_GR, tau=1/D^2; corpus 4-point vote confirmed; Q-008 CLOSED)',
     }
 
 
@@ -41674,23 +41677,23 @@ def _paper_227(dataset):
       by t = 5*tau_SF, M returns to M_init.
     * Stellar-wind ram-pressure acceleration a_wind = rho_wind*v_wind^2/
       rho_fluid; with rho_wind=1e-21 kg/m^3, v_wind=2000 km/s=2e6 m/s,
-      rho_fluid=1e-21 kg/m^3 (rho_wind = rho_fluid), a_wind = v_wind^2 =
-      4e12 m/s^2 - numerically dominant during the O/B-star-active phase.
+      rho_fluid=1e-12 kg/m^3 (canonical ambient ISM per PAPER_228),
+      a_wind = 4e3 m/s^2 (RULED B7 2026-08-31).
     * Parametric wind family: Tapestry LMC (rho_wind=1e-21), Westerlund 2
       (1e-20, 10x denser OB-supergiant, PAPER_228), NGC 1792 SN (1e-21);
       all v_wind=2000 km/s.
     * Params: distance ~160,000 ly (LMC), M_init=240 M_sun, M_gas=10,000
       M_sun, r=10 ly, B=1 uT, tau_SF=5 Myr, canonical t=1 Myr; no erosion
       term (that is the Pillars, PAPER_229).
-    Q-220: the abstract states a_wind ~ 4e3 m/s^2, but sec-2 and the
-    conclusion give 4e12 m/s^2 (= v_wind^2 when rho_wind=rho_fluid); the
-    abstract 4e3 is a typo. Body value 4e12 wired. Appendix drift
-    auto-corrected per charter.
+    Q-220 CLOSED (RULED B7 2026-08-31): the ABSTRACT value 4e3 m/s^2 was
+    correct all along; sec-2's rho_fluid=1e-21 (giving 4e12) was the
+    outlier. Canonical ambient rho_fluid=1e-12 kg/m^3 per PAPER_228's
+    shared convention. Appendix drift auto-corrected per charter.
     """
     M_init = 240.0; M_gas = 10000.0                       # M_sun
     m_dot_factor = M_gas / M_init                         # 41.67
-    rho_wind = 1e-21; v_wind = 2e6; rho_fluid = 1e-21
-    a_wind = rho_wind * v_wind ** 2 / rho_fluid           # 4e12
+    rho_wind = 1e-21; v_wind = 2e6; rho_fluid = 1e-12    # RULED B7: canonical ambient (PAPER_228)
+    a_wind = rho_wind * v_wind ** 2 / rho_fluid           # 4e3 (RULED B7)
     return {
         'value': {
             'domain': '2.25 (Tapestry Starbirth LMC MUGE)',
@@ -41703,16 +41706,16 @@ def _paper_227(dataset):
             'rho_wind': rho_wind,
             'v_wind_m_s': v_wind,
             'rho_fluid': rho_fluid,
-            'a_wind_m_s2': a_wind,                        # 4e12
-            'a_wind_equals_v2_when_equal_rho': True,
+            'a_wind_m_s2': a_wind,                        # 4e3 (RULED B7)
+            'a_wind_equals_v2_when_equal_rho': False,     # superseded: rho_fluid=1e-12 != rho_wind (B7)
             'wind_family': {'tapestry_lmc': 1e-21, 'westerlund2': 1e-20, 'ngc1792_sn': 1e-21},
             'r_ly': 10, 'B_uT': 1, 'tau_sf_Myr': 5,
-            'a_wind_abstract_fork': 'abstract 4e3 vs body/conclusion 4e12 = v_wind^2 (Q-220)',
+            'a_wind_ruling': 'RULED_BATCH1_2026-08-31 (B7): a_wind=4e3 canonical; rho_fluid=1e-12 ambient ISM per PAPER_228; sec-2 1e-21 (4e12) was the outlier; Q-220 CLOSED',
         },
         'formula': 'M(t) = M_init*(1 + (M_gas/M_init)*e^-t/tau_SF); a_wind = rho_wind*v_wind^2/rho_fluid',
         'source': 'PAPER_227',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B7: a_wind=4e3 canonical, rho_fluid=1e-12 ambient per PAPER_228; Q-220 CLOSED)',
     }
 
 
@@ -42291,21 +42294,21 @@ def _paper_237(dataset):
       factors s_* and intermediate params are unspecified, Q-224a).
       g_H = 1.252e46 UQFF hydrogen g-factor (~46 orders above the
       standard proton g_p).
-    * Computable base terms (paper's M=2.984e31 kg, r=1e14 m):
-      I_grav = G*M/r^2 = 1.99e-7 m/s^2; M_i = M/26 = 1.148e30 kg;
-      F_rel = M*c^2/r*(1+f_TRZ) = 2.95e34.
+    * Computable base terms (M=2.984e32 kg = 150 M_sun RULED B6, r=1e14 m):
+      I_grav = G*M/r^2 = 1.99e-6 m/s^2; M_i = M/26 = 1.148e31 kg;
+      F_rel = M*c^2/r*(1+f_TRZ) = 2.95e35.
     * Configurable architecture: scaling_factors map (per-system s_*
       overrides), mt19937 RNG batch, OpenMP 1000+ system parallel,
       loadConfig.
     Q-224: (a) F_U_Bi_i=2.11e208 is a documented benchmark; (b) M labelled
-    "150 M_sun" but given as 2.984e31 kg (= ~15 M_sun; 150 M_sun =
-    2.984e32) - a 10x label/value mismatch; the CP3 example uses 2.984e31.
+    "150 M_sun" label RULED CANONICAL (B6 2026-08-31): M = 2.984e32 kg;
+    the CP3 example's 2.984e31 exponent was the typo. Q-224 CLOSED.
     Appendix drift auto-corrected per charter.
     """
-    M = 2.984e31; r = 1e14                                # kg value from CP3 example
-    I_grav = G_OBSERVED * M / r ** 2                      # 1.99e-7
-    M_i = M / 26                                          # 1.148e30
-    F_rel = M * C_OBSERVED ** 2 / r * (1 + F_TRZ)         # 2.95e34
+    M = 2.984e32; r = 1e14                                # kg = 150 M_sun RULED canonical (B6); CP3 example exponent was the typo
+    I_grav = G_OBSERVED * M / r ** 2                      # 1.99e-6
+    M_i = M / 26                                          # 1.148e31
+    F_rel = M * C_OBSERVED ** 2 / r * (1 + F_TRZ)         # 2.95e35
     lambda_de = LAMBDA_SIMPLE * C_OBSERVED ** 2 / 3       # Lambda*c^2/3 per length
     return {
         'value': {
@@ -42318,20 +42321,20 @@ def _paper_237(dataset):
             'triadic_layers': 26,
             'layer_terms': ['U_g1', 'U_g2', 'U_g3', 'U_g4'],
             'M_kg': M, 'r_m': r,
-            'M_layer_kg': M_i,                            # 1.148e30
-            'i_grav_m_s2': I_grav,                        # 1.99e-7
-            'f_rel': F_rel,                               # 2.95e34
+            'M_layer_kg': M_i,                            # 1.148e31
+            'i_grav_m_s2': I_grav,                        # 1.99e-6
+            'f_rel': F_rel,                               # 2.95e35
             'lambda_de_per_length': lambda_de,
             'fubii_benchmark_N': 2.11e208,                # ties PAPER_217 Branch 1
             'fubii_ties_paper_217': True,
             'g_H': 1.252e46,
             'novel_contributions': 5,
-            'benchmark_fork': 'F_U_Bi_i 2.11e208 documented (PAPER_217 Branch 1); M "150 M_sun" vs 2.984e31 kg=15 M_sun (Q-224)',
+            'ruling': 'RULED_BATCH1_2026-08-31: M=2.984e32 kg (150 M_sun) canonical (B6); F_U_Bi_i=2.11e208 N CONFIRMED shared benchmark with PAPER_217 Branch 1 (B3ii); Q-224 CLOSED',
         },
         'formula': 'F_U_Bi_i = I_grav*x_2 + F_LENR + F_DE + F_res + F_rel; g_UQFF = sum_26(Ug1..4) + Lc^2/3 + quantum',
         'source': 'PAPER_237',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B6: M=2.984e32 kg = 150 M_sun canonical; B3ii: 2.11e208 confirmed shared benchmark; Q-224 CLOSED)',
     }
 
 
@@ -43217,7 +43220,7 @@ def _paper_250(dataset):
         'formula': 'F_U_Bi ~ +2.11e208 N for all omega0=1e-12 (Equivalence Class); F_LENR=k_LENR*(omega_LENR/omega0)^2',
         'source': 'PAPER_250',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B3: derived-correct values canonical - paper exponents were drift; F_U_Bi=2.11e208 CONFIRMED shared class benchmark; DPM_resonance formulas domain-split per B3iii; Q-230 family CLOSED)',
     }
 
 
@@ -43293,7 +43296,7 @@ def _paper_251(dataset):
         'formula': 'DPM Invisibility: F_U_Bi = +2.11e208 N invariant under B0 (F_LENR B0-independent dominates)',
         'source': 'PAPER_251',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B3: derived-correct values canonical - paper exponents were drift; F_U_Bi=2.11e208 CONFIRMED shared class benchmark; DPM_resonance formulas domain-split per B3iii; Q-230 family CLOSED)',
     }
 
 
@@ -43365,7 +43368,7 @@ def _paper_252(dataset):
         'formula': 'Equivalence Class [omega0=1e-12]: F_U_Bi = +2.11e208 N invariant; F[S1]=F[S2] iff omega0(S1)=omega0(S2)',
         'source': 'PAPER_252',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B3: derived-correct values canonical - paper exponents were drift; F_U_Bi=2.11e208 CONFIRMED shared class benchmark; DPM_resonance formulas domain-split per B3iii; Q-230 family CLOSED)',
     }
 
 
@@ -43519,7 +43522,7 @@ def _paper_254(dataset):
         'formula': 'Distance-Independence: F_U_Bi = +2.11e208 N for omega0=1e-12 regardless of distance/L_X/velocity',
         'source': 'PAPER_254',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B3: derived-correct values canonical - paper exponents were drift; F_U_Bi=2.11e208 CONFIRMED shared class benchmark; DPM_resonance formulas domain-split per B3iii; Q-230 family CLOSED)',
     }
 
 
@@ -46883,7 +46886,8 @@ def _paper_316(dataset):
             'source_thread': 'Session 90 NGC6302_RESONANCE_UQFF_MODULE.cpp',
             'system': 'NGC 6302 bipolar PN, Cooper-DPM superconductive resonance channel',
             'f_super_Hz': f_super, 'f_DPM_Hz': f_DPM, 'E_vac_ISM': E_vac_ISM,
-            'A_sc': A_sc,                               # 6.994e21
+            'A_sc': A_sc,                               # 6.994e21 paper-stated (spurious per B4)
+            'A_sc_canonical': A_sc_canonical,           # 6.994e20 CANONICAL (RULED B4)
             'A_sc_formula': 'hbar*f_super*f_DPM/(E_vac_ISM*c)',
             'a_super': a_super,                         # 1.747e-9
             'a_super_formula': 'A_sc*a_DPM',
@@ -46892,12 +46896,12 @@ def _paper_316(dataset):
             'quadratic_law': 'a_super ~ f_DPM^2 (PAPER_295): A_sc linear + a_DPM linear',
             'f_super_discrepancy': ('paper A_sc=6.994e21 requires f_super=1.411e16 (10x the PAPER_295/302 '
                 'canonical Cooper freq 1.411e15); with canonical value A_sc=%.3e -> same A_sc-magnitude '
-                'family as Q-246 -> Q-248 OPEN_RULING' % A_sc_canonical),
+                'family as Q-246 -> Q-248 RULED_BATCH1_2026-08-31 (B4): f_super=1.411e15 canonical and that value IS CANONICAL; the paper 6.994e21 confirmation is SPURIOUS' % A_sc_canonical),
         },
         'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac_ISM*c)=6.994e21 (E_vac_ISM=RHO_SCM, ISM vacuum); a_super=A_sc*a_DPM=1.747e-9 m/s2 (second-dominant PN tier, a_vac_diff>>a_super>>a_THz>>a_DPM); confirms PAPER_295 f_DPM=1e12 A_sc class (f_super=1.411e16 vs canonical 1.411e15, Q-248)',
         'source': 'PAPER_316',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH1_2026-08-31 (B4: f_super=1.411e15 canonical, A_sc=6.994e20; paper 6.994e21 confirmation spurious; Q-246/Q-248 CLOSED)',
     }
 
 

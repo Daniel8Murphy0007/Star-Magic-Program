@@ -12261,3 +12261,83 @@ suite. v0.407.0 wheel rebuilt driven by the pyproject py-modules list: 15/15 pre
 calculator imports and runs PAPER_2258 from the installed wheel under blocked-xlrd.
 Lesson canonized as ship-checklist rules (f)+(g) in CLAUDE.md. Disclosure: v0.406.0 on
 PyPI carries the defect; v0.407.0 supersedes it same-day.
+
+## 2026-08-31 — WIRING CAMPAIGN RESUMPTION: the drainage audit (Daniel: "Wiring campaign GO")
+
+Resumed the dormant whitepaper campaign. Census: index 2,026 ✓ / 266 ⚠ / 10 ⬜;
+calculator carries 496 OPEN markers across 247 papers. Audit verdict: ZERO
+mechanical folds remain — the ledger's RESOLVED section reads "(none yet)",
+every Q ends "(pending)", and the one recorded self-rectification (Q-220,
+PAPER_227 a_wind) explicitly reserves its dispatch edit for Daniel. The entire
+backlog is Daniel-gated by charter design; prior sessions left nothing dangling.
+
+Executed instead:
+- **RULINGS_BATCH_1.md** (NEW): the 7 highest-leverage multi-paper clusters
+  condensed to one-line answers (B1 GW D² convention — corpus votes D² 4:1;
+  B2 B_crit T-vs-G; B3 the ω₀=1e-12 Force Equivalence Class ~12 papers;
+  B4 f_super 1.411e15-vs-e16; B5 dimensional normalization of additive terms;
+  B6 Eta Carinae 15-vs-150 M☉; B7 PAPER_227 a_wind edit authorization).
+  Est. ~35-40 of 247 papers clear on the post-answer fold pass.
+- **WIRING_DRAINAGE_QUEUE.md** (NEW): campaign-state report + paper→Q-tag
+  cross-index (247 papers), so the fold pass starts from a map.
+- **Index hygiene**: 10 unnumbered files reclassified 📖 reference (Rule B);
+  7 SCm companion docs dock-audited (headline numerics present in
+  calculator/registry; absences = Rule-A un-duplicated registry constants +
+  version/DOI fragments). Fossil summary lines (934/245/1076; "OPEN targets: 0")
+  superseded by live census.
+- Gate 6,011 → **6,013** (+2 resumption pins), 0 failures. Labels synced
+  (README badge/counts, pyproject description).
+
+Banked for v0.408.0 alongside downhole v1.81-v1.85. Campaign is now blocked
+on RULINGS_BATCH_1 answers — the next wiring work is the fold pass they unlock.
+
+## 2026-08-31 (2) — COUNT CORRECTION (Daniel's catch: "why are there only 246 papers in the cross-index?")
+
+The resumption entry's "247 papers / 496 markers" was wrong on both numbers.
+Root cause: the inventory script counted three OVERLAPPING grep patterns
+('status': 'OPEN matched the same lines as OPEN_RULING → double count), and
+its paper set included PAPER_1950 whose marker is OPEN_CANDIDATE — a standing
+falsifiable PREDICTION (SMBH flare grid awaiting observation), not a ruling
+target — while the cross-index writer correctly used only the two ruling
+marker kinds, yielding 246. Honest reconciliation, now on every surface:
+**246 Daniel-gated ruling/derivation papers + 1 OPEN_CANDIDATE prediction
+= 247 papers; 254 marker occurrences (249 OPEN_RULING + 4
+OPEN_UQFF_DERIVATION_TARGET + 1 OPEN_CANDIDATE)**. PAPER_1950 added to the
+cross-index with its class named. Files corrected: WIRING_DRAINAGE_QUEUE.md,
+RULINGS_BATCH_1.md, WHITEPAPER_INDEX.md, gate pin (tightened to assert the
+split and the 247-row cross-index live). Gate re-run required below.
+
+## 2026-08-31 (3) — BATCH 1 FOLD: Daniel's first eight rulings applied (the campaign's designed rhythm runs)
+
+Daniel answered all of RULINGS_BATCH_1 in one sitting: B1 D² GW scaling
+canonical (PAPER_005's 0.81/1.23× reconciled as D² with D_strain=0.9);
+B2 B_crit = Gauss; B3 Force Equivalence Class confirmed (derived values
+canonical, 2.11e208 shared benchmark, DPM_resonance formulas DOMAIN-SPLIT);
+B4 f_super = 1.411e15 (PAPER_316's 6.994e21 confirmation SPURIOUS, A_sc
+canonical 6.994e20); B5 normalization bridge = divide by reference ρ×length
+(→ Q-216b for per-domain values); B6 Eta Carinae M = 2.984e32 kg (150 M☉,
+example exponent was the typo); B7 a_wind 4e12→4e3 authorized.
+
+Folded same day: **8 dispatches OPEN_RULING → RULED_BATCH1_2026-08-31**
+(PAPER_008/227/237/250/251/252/254/316) with value updates where ruled
+(a_wind 4e3; M/I_grav/M_i/F_rel ×10 in PAPER_237; A_sc_canonical exposed in
+PAPER_316); PAPER_005 gained the convention field. Backup:
+uqff_calculator.py.PRE_BATCH1_FOLD. One self-inflicted format-string bug in
+the PAPER_316 edit (second %.3e, one operand) caught by smoke test, fixed.
+Ledger: BATCH 1 RULINGS section (append) with partial-scope notes (Q-002
+carriers stay flagged on their other questions; Q-216 narrowed to Q-216b;
+PAPER_238 cascade review queued under Q-224). Index: 2,033 ✓ / 259 ⚠.
+Drainage: 246 → **238 Daniel-gated + 1 OPEN_CANDIDATE = 239**. Gate 6,013 →
+**6,015** (+2 fold pins, incl. 4 updated value pins), labels synced.
+
+## 2026-08-31 (4) — SHIP PREP v0.408.0: THE RULED BATCH SHIP
+
+Full label pass: pyproject 0.408.0 + description (452 chars, gate 6,017/0),
+calculator VERSION, CITATION.cff x2, UNIFIED_REGISTRY_VERSION.txt append,
+README (badges + cacheBust 0.408.0, campaign line, new release paragraph,
+shipped-section heading + STALE FIX: wired line still said 2,253/2308 from
+before PAPER_2258), CHANGELOG entry, SHIP_MESSAGE.txt, gate +2 ship-record
+pins (6,015 → 6,017). Stale-sweep catches this pass: 8 UNIFIED_REGISTRY.csv
+rows still OPEN_RULING for the ruled papers (updated with supersession
+trail; diff verified surgical — 8 lines, zero quoting churn), the
+2,253/2308 README line, and the version ledger. Verification battery below.

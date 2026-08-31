@@ -90,6 +90,8 @@ def main(argv=None) -> int:
                       help="port name from PORT_REGISTRY (historian_csv | las2 | site plug-ins)")
 
     p_w = sub.add_parser("wells", help="list the MEASURED catalogue assemblies (--well targets)")
+    p_rep = sub.add_parser("report", help="generate the client survey report (Part 7)")
+    p_rep.add_argument("--out", default="survey_report", help="output directory")
 
     sub.add_parser("operator", help="launch the operator GUI (requires PyQt6+matplotlib)")
 
@@ -194,6 +196,12 @@ def main(argv=None) -> int:
     elif a.cmd == "operator":
         from .uqff_operator_app import launch_operator_app
         return launch_operator_app()
+    elif a.cmd == "report":
+        from .uqff_project import generate_report
+        r = generate_report(a.out)
+        print("report:", r["report_path"])
+        for k, v in r["renders"].items():
+            print("  %s: %s" % (k, v))
     elif a.cmd == "wells":
         from . import BUILTIN_ASSEMBLIES
         for name, maker in sorted(BUILTIN_ASSEMBLIES.items()):

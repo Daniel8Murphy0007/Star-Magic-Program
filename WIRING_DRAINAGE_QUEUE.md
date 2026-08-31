@@ -1,0 +1,260 @@
+# WIRING DRAINAGE QUEUE - campaign-state report (updated 2026-08-31 after the BATCH 1 fold)
+
+## Verdict
+
+The dispatch layer is COMPLETE (2,254 distinct papers wired). After Daniel's
+BATCH 1 rulings (RULINGS_BATCH_1.md ANSWERS, folded 2026-08-31): 238 papers
+carry OPEN ruling/derivation markers (240 OPEN_RULING + 4
+OPEN_UQFF_DERIVATION_TARGET occurrences), plus PAPER_1950's OPEN_CANDIDATE
+(a standing falsifiable prediction awaiting observation, not a ruling):
+238 Daniel-gated + 1 OPEN_CANDIDATE = 239. Eight papers moved OPEN -> RULED
+in the fold (PAPER_008/227/237/250/251/252/254/316).
+Zero mechanical folds remain beyond Daniel's answers; BATCH 2 follows the
+same rhythm.
+
+Partial-scope notes: Q-002 (B_crit = Gauss) is RULED but its ~10 carrier
+papers hold other open questions and stay flagged; Q-216 is narrowed to
+Q-216b (the ruled bridge FORM 'divide by reference rho x length' still
+needs per-domain reference values).
+
+## Cross-index: paper -> open Q-tags (238 Daniel-gated + 1 OPEN_CANDIDATE = 239)
+
+- PAPER_009: Q-001, Q-009
+- PAPER_013: Q-002, Q-010
+- PAPER_014: Q-011
+- PAPER_015: Q-012
+- PAPER_016b: Q-013
+- PAPER_017: Q-014
+- PAPER_018: Q-015
+- PAPER_019: Q-016
+- PAPER_020: Q-009, Q-017, Q-017a, Q-017b
+- PAPER_021: Q-018, Q-018a, Q-018b
+- PAPER_022: Q-019, Q-019c
+- PAPER_023: Q-020, Q-020a, Q-020d, Q-020e
+- PAPER_024: Q-021, Q-021a, Q-021b, Q-021c
+- PAPER_025: Q-022, Q-022a, Q-022b, Q-022c
+- PAPER_025b: Q-023, Q-023a, Q-023c
+- PAPER_026: Q-023a, Q-023b, Q-024, Q-024b
+- PAPER_026b: Q-025, Q-025a
+- PAPER_026c: Q-244b
+- PAPER_027: Q-026, Q-026a, Q-026b, Q-026c
+- PAPER_028: Q-026a, Q-027, Q-027b
+- PAPER_029: Q-028, Q-028a, Q-028c, Q-028d
+- PAPER_030: Q-029, Q-029c, Q-029d
+- PAPER_031: Q-030, Q-030b
+- PAPER_032: Q-031, Q-031a, Q-031b
+- PAPER_033: Q-032, Q-032c, Q-032d
+- PAPER_034: Q-033, Q-033a, Q-033b
+- PAPER_035: Q-034, Q-034a
+- PAPER_037: Q-035, Q-035a, Q-035b, Q-035c, Q-035d, Q-035e
+- PAPER_038: Q-036, Q-036a, Q-036b, Q-036c
+- PAPER_039: Q-037, Q-037a, Q-037b
+- PAPER_040: Q-038, Q-038a, Q-038b, Q-038c, Q-038d
+- PAPER_041: Q-039, Q-039a
+- PAPER_042: Q-040, Q-040a, Q-040b, Q-040c
+- PAPER_043: Q-041, Q-041a, Q-041b, Q-041c
+- PAPER_044: Q-026c, Q-042, Q-042a, Q-042b, Q-042c
+- PAPER_046: Q-040c, Q-041b, Q-042c, Q-043, Q-043a
+- PAPER_047: Q-044, Q-044a, Q-044b
+- PAPER_048: Q-045, Q-045b
+- PAPER_049: Q-046, Q-046a, Q-046b
+- PAPER_050: Q-047, Q-047b
+- PAPER_051: Q-041b, Q-041e, Q-048, Q-048b, Q-048c
+- PAPER_052: Q-041d, Q-048b, Q-049, Q-049a, Q-049b
+- PAPER_054: Q-048b, Q-050, Q-050a, Q-050b
+- PAPER_055: Q-050a, Q-050b, Q-051, Q-051b
+- PAPER_056: Q-052, Q-052b, Q-052c
+- PAPER_057: Q-051a, Q-053, Q-053a, Q-053b
+- PAPER_058: Q-050a, Q-054, Q-054a, Q-054b
+- PAPER_059: Q-040b, Q-055, Q-055a, Q-055b
+- PAPER_060: Q-056, Q-056a
+- PAPER_061: Q-057
+- PAPER_062: Q-058
+- PAPER_063: Q-059, Q-059b
+- PAPER_064: Q-060, Q-060b, Q-060d
+- PAPER_065: Q-061a, Q-061b, Q-061c
+- PAPER_066: Q-059a, Q-062, Q-062a
+- PAPER_067: Q-059b, Q-063a, Q-063b, Q-063c
+- PAPER_068: Q-060b, Q-064d
+- PAPER_069: Q-059b
+- PAPER_070: Q-059b, Q-065c, Q-066a, Q-066b, Q-066d
+- PAPER_071: Q-062c, Q-067a, Q-067b
+- PAPER_072: Q-060b, Q-068a, Q-068b
+- PAPER_073: Q-069a, Q-069b, Q-069c
+- PAPER_074: Q-070a, Q-070b
+- PAPER_075: Q-060b, Q-071a
+- PAPER_076: Q-072a, Q-072b, Q-072c
+- PAPER_077: Q-060d, Q-073b
+- PAPER_078: Q-074a, Q-074b
+- PAPER_079: Q-075a, Q-075b, Q-075d
+- PAPER_080: Q-076a
+- PAPER_081: Q-077a, Q-077b
+- PAPER_082: Q-078a, Q-078b
+- PAPER_083: Q-078a, Q-079a, Q-079b, Q-079c
+- PAPER_084: Q-080, Q-080b
+- PAPER_085: Q-081b, Q-081c
+- PAPER_086: Q-082a, Q-082b, Q-082c
+- PAPER_087: Q-083a, Q-083b, Q-083c
+- PAPER_088: Q-084a, Q-084b
+- PAPER_089: Q-083a, Q-085a, Q-085b
+- PAPER_090: Q-086a, Q-086c
+- PAPER_091: Q-084, Q-087a, Q-087b, Q-087c
+- PAPER_092: Q-086a, Q-088a, Q-088b, Q-088c
+- PAPER_093: Q-077a, Q-089a, Q-089b, Q-089c
+- PAPER_094: Q-002, Q-090a, Q-090b, Q-090c, Q-090d, Q-090e
+- PAPER_095: Q-083c, Q-091a, Q-091b, Q-091c
+- PAPER_096: Q-092a, Q-092c, Q-092d
+- PAPER_097: Q-093a, Q-093b
+- PAPER_098: Q-094a, Q-094b, Q-094c, Q-094d
+- PAPER_099: Q-095a, Q-095c, Q-095d
+- PAPER_100: Q-084a, Q-096a, Q-096b, Q-096c, Q-096d
+- PAPER_101: Q-082a, Q-097a, Q-097d
+- PAPER_102: Q-084a, Q-098a, Q-098b, Q-098d
+- PAPER_103: Q-099a, Q-099b
+- PAPER_104: Q-060b, Q-097d, Q-100a, Q-100b
+- PAPER_105: Q-101
+- PAPER_106: Q-074c, Q-102b, Q-102c
+- PAPER_107: Q-103a
+- PAPER_108: Q-084, Q-104a, Q-104b
+- PAPER_109: Q-105, Q-105a
+- PAPER_110: Q-094d, Q-098, Q-106a, Q-106b, Q-106c, Q-106d
+- PAPER_111: Q-085a, Q-107a, Q-107b, Q-107c
+- PAPER_112: Q-085a, Q-108a, Q-108b, Q-108c
+- PAPER_113: Q-085a, Q-109a, Q-109b, Q-109c
+- PAPER_114: Q-110a, Q-110b, Q-110c
+- PAPER_115: Q-040b, Q-111a, Q-111b, Q-111c
+- PAPER_116: Q-108a, Q-112a, Q-112b, Q-112c, Q-112d
+- PAPER_117: Q-085a, Q-108a, Q-113a, Q-113b
+- PAPER_118: Q-114a, Q-114b, Q-114c, Q-114d
+- PAPER_119: Q-111, Q-115a, Q-115b, Q-115c, Q-115d
+- PAPER_120: Q-002, Q-107b, Q-111, Q-114a, Q-115c, Q-116a, Q-116b, Q-116c
+- PAPER_121: Q-060b, Q-085a, Q-100a, Q-117a, Q-117b, Q-117c, Q-117d
+- PAPER_122: Q-085a, Q-108a, Q-118a, Q-118b, Q-118c
+- PAPER_123: Q-112a, Q-119a, Q-119b
+- PAPER_124: Q-113b, Q-119a, Q-120a, Q-120b
+- PAPER_125: Q-109b, Q-121a, Q-121b, Q-121c
+- PAPER_126: Q-122a, Q-122b
+- PAPER_127: Q-110a, Q-123a, Q-123b, Q-123c
+- PAPER_128: Q-114c, Q-117c, Q-124a, Q-124b, Q-124c
+- PAPER_129: Q-111, Q-125a, Q-125b, Q-125c
+- PAPER_130: Q-085a, Q-104b, Q-126a, Q-126b, Q-126c
+- PAPER_131: Q-127a, Q-127b, Q-127c, Q-127d
+- PAPER_132: Q-128a, Q-128b, Q-128c
+- PAPER_133: Q-115a, Q-129a, Q-129b
+- PAPER_134: Q-129c, Q-130a, Q-130b, Q-130c
+- PAPER_135: Q-130b, Q-131a, Q-131b
+- PAPER_136: Q-110a, Q-132a, Q-132b, Q-132c
+- PAPER_137: Q-129a, Q-133a, Q-133b, Q-133c
+- PAPER_138: Q-002, Q-134a, Q-134b, Q-134c, Q-134d
+- PAPER_139: Q-135a, Q-135b, Q-135c
+- PAPER_140: Q-136a, Q-136b, Q-136c
+- PAPER_141: Q-137a, Q-137b
+- PAPER_142: Q-113b, Q-138a, Q-138b, Q-138c
+- PAPER_143: Q-139a, Q-139b, Q-139c, Q-139d
+- PAPER_144: Q-140a, Q-140b, Q-140c
+- PAPER_145: Q-141a, Q-141b, Q-141c
+- PAPER_146: Q-135c, Q-141c, Q-142a, Q-142b, Q-142c
+- PAPER_147: Q-143a, Q-143b, Q-143c, Q-143d
+- PAPER_148: Q-002, Q-141c, Q-142a, Q-144a, Q-144b, Q-144c
+- PAPER_149: Q-141c, Q-143a, Q-143c, Q-145a, Q-145b, Q-145c
+- PAPER_150: Q-141c, Q-143a, Q-146a, Q-146b, Q-146c, Q-146d
+- PAPER_151: Q-141c, Q-147a, Q-147b, Q-147c
+- PAPER_152: Q-148a, Q-148b, Q-148c
+- PAPER_153: Q-142a, Q-149a, Q-149b, Q-149c
+- PAPER_154: Q-115, Q-129, Q-129a, Q-150a, Q-150b, Q-150c, Q-150d
+- PAPER_155: Q-151a, Q-151b, Q-151c
+- PAPER_156: Q-152a, Q-152b, Q-152c
+- PAPER_157: Q-129a, Q-150b, Q-153a
+- PAPER_158: Q-002, Q-143a, Q-154a
+- PAPER_159: Q-142, Q-149, Q-155a, Q-155b
+- PAPER_160: Q-153b
+- PAPER_161: Q-153a, Q-157a
+- PAPER_162: Q-158a, Q-158b, Q-158c
+- PAPER_163: Q-159a, Q-159b, Q-159c
+- PAPER_164: Q-002, Q-150b, Q-160a, Q-160b
+- PAPER_165: Q-161a, Q-161b
+- PAPER_166: Q-162a, Q-162b
+- PAPER_167: Q-160a, Q-163a, Q-163b
+- PAPER_168: Q-164
+- PAPER_169: Q-165
+- PAPER_170: Q-158c, Q-166a, Q-166b, Q-166c
+- PAPER_171: Q-167a, Q-167b
+- PAPER_172: Q-143a, Q-147a, Q-162a, Q-167b, Q-168a, Q-168b, Q-168c
+- PAPER_173: Q-002, Q-159b, Q-169a, Q-169b
+- PAPER_174: Q-142, Q-170, Q-170a
+- PAPER_175: Q-171, Q-171a, Q-171b, Q-171c
+- PAPER_176: Q-158c, Q-167c, Q-172a, Q-172b, Q-172c, Q-172d
+- PAPER_177: Q-143, Q-173a, Q-173b
+- PAPER_178: Q-174a
+- PAPER_179: Q-175a, Q-175b, Q-175d
+- PAPER_180: Q-165a, Q-170a, Q-176a
+- PAPER_181: Q-177a, Q-177b
+- PAPER_182: Q-002, Q-174b, Q-178, Q-178b
+- PAPER_183: Q-179a, Q-179b, Q-179c
+- PAPER_184: Q-180a, Q-180b, Q-180c
+- PAPER_185: Q-181a, Q-181b, Q-181c
+- PAPER_186: Q-158c, Q-166b, Q-166c, Q-178a, Q-182a, Q-182b
+- PAPER_187: Q-002, Q-176a, Q-183b
+- PAPER_188: Q-184, Q-184a, Q-184b
+- PAPER_189: Q-184a, Q-185a, Q-185b
+- PAPER_190: Q-186, Q-186a, Q-186b
+- PAPER_191: (untagged - see dispatch status field)
+- PAPER_192: Q-188a
+- PAPER_193: Q-189a
+- PAPER_194: Q-174a
+- PAPER_195: Q-191a
+- PAPER_196: Q-192a, Q-192b
+- PAPER_197: Q-168a, Q-178, Q-189, Q-193a
+- PAPER_198: Q-194a
+- PAPER_199: Q-195a
+- PAPER_200: (untagged - see dispatch status field)
+- PAPER_201: Q-194a, Q-197a
+- PAPER_202: (untagged - see dispatch status field)
+- PAPER_203: Q-198, Q-199a
+- PAPER_204: Q-200a
+- PAPER_205: Q-201a
+- PAPER_206: Q-202
+- PAPER_207: Q-203a
+- PAPER_208: Q-204a, Q-204b
+- PAPER_209: Q-205
+- PAPER_210: (untagged - see dispatch status field)
+- PAPER_211: Q-207
+- PAPER_212: Q-208
+- PAPER_213: Q-209, Q-209a, Q-209b
+- PAPER_214: Q-210
+- PAPER_215: Q-211a, Q-211b
+- PAPER_216: Q-212
+- PAPER_217: Q-213
+- PAPER_218: Q-214
+- PAPER_219: Q-214, Q-215
+- PAPER_220: Q-216
+- PAPER_221: Q-214, Q-217
+- PAPER_222: Q-216
+- PAPER_223: Q-216
+- PAPER_224: Q-218
+- PAPER_226: Q-219
+- PAPER_229: Q-214, Q-221
+- PAPER_230: Q-214, Q-222
+- PAPER_231: Q-223
+- PAPER_239: Q-225
+- PAPER_240: Q-226
+- PAPER_242: Q-227
+- PAPER_244: Q-228
+- PAPER_248: Q-229
+- PAPER_253: Q-230, Q-233
+- PAPER_255: Q-230, Q-235
+- PAPER_256: Q-230, Q-236
+- PAPER_257: Q-237
+- PAPER_258: Q-238
+- PAPER_261: Q-239
+- PAPER_262: Q-240
+- PAPER_264: Q-241
+- PAPER_267: Q-242
+- PAPER_269: Q-242, Q-243
+- PAPER_289: Q-245
+- PAPER_295: Q-245, Q-246
+- PAPER_304: Q-247
+- PAPER_1314: (untagged - see dispatch status field)
+- PAPER_1886: (untagged - see dispatch status field)
+- PAPER_1950: (no Q-tag) OPEN_CANDIDATE - SMBH flare prediction grid, awaiting observation (prediction-status, NOT a ruling target)
+- PAPER_2169: (untagged - see dispatch status field)

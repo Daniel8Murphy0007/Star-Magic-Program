@@ -28,7 +28,7 @@
 
 **Generated:** 2026-07-28 at v0.2.0 ship. Regenerated whenever wiring status changes.
 
-**Legend:** ⬜ = not wired · ✓ = dispatch wired + gate verified · ⚠ = OPEN_UQFF_DERIVATION_TARGET
+**Legend:** ⬜ = not wired · ✓ = dispatch wired + gate verified · ⚠ = OPEN_UQFF_DERIVATION_TARGET · 📖 = reference document, not a wirable numbered paper (Rule B)
 
 ---
 
@@ -100,9 +100,9 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 
 - **Verification arc 2026-08-16 (v0.387.0):** paradox-corpus audit ZERO recalcs; grammar dragnet 110 family sites; origin term verified; AP text layer EXHAUSTED (458 docs). Runnable queue empty — remaining items Daniel-owned.
 - **Distinct wired papers: 2,254 (+55 canonical alias numbers 2179-2233; 2,309 DISPATCH keys). PAPER_2257 two-stream architecture landmark, 2026-08-24; v0.398.0 CATALOGUE SHIP (downhole v1.14-v1.20, ten real-data entries), 2026-08-25; v0.399.0 DEEP DATA SHIP (v1.21-v1.25, entries 11-15, KTB suite + live overburden integral), 2026-08-25; v0.400.0 TWENTY WELLS SHIP (v1.26-v1.30, entries 16-20, quantity ledger closed), 2026-08-25; v0.401.0 INCORPORATION SHIP (six ENRGYONE founding PDFs in pdf/), 2026-08-25; v0.402.0 POLE-TO-POLE SHIP (v1.31-v1.40, entries 21-30: heat-flow closure, 504B four-dataset family + impedance join, crust ladder complete to mantle, Chicxulub, ACEX at 87.89N - thirty entries pole to pole, latitude span >152 deg measured live), 2026-08-27; v0.403.0 PRODUCT SHIP (v1.41-v1.48: evaluation finish sequence 1-5 executed = finished offline product + field tier 6a/6b/8; acceptance suite 55 checks in-package; step 7 alone remains, site-blocked), 2026-08-27; v0.404.0 FORTY WELLS SHIP (v1.49-v1.58, entries 31-40: subduction end-to-end incl. JFAST at -6,887.5 m water record, Hikurangi dedupe upgrade + 504B nitrate recovery, Barbados Pc-Po difference proof, Mariana mantle fingerprint, Dead Sea + El'gygytgyn lakes, GBR U-Th 54/54 decay closure - census 40 entries / 28 regions / 29 kinds), 2026-08-28; v0.405.0 FIFTY WELLS SHIP — MILESTONE (v1.59-v1.68, entries 41-50: first license refusal on record (NC-SA), petroleum-fluids triad complete, Mohr-Coulomb cohesion intercept, first LIFE (Peru sulfate reduction, six orders of magnitude), Fram Strait maceral partition EXACT, and the fiftieth entry ANCIENT AIR — EPICA Dome C CO2 611-799 kyr incl. the lowest atmospheric CO2 ever directly measured 171.6 ppmv, census 50 entries / 37 regions / 39 kinds, SHIP GUARD v7 catalog/data-files closure), 2026-08-28; v0.406.0 SURVEYING TOOL SHIP (downhole v1.69-v1.77: Parts 1-3 of the geological subsurface surveying tool - Earth Model 29 sites/one frame, K2 UQFF gravity kernel KTB-validated 0.9968, K1 structural ladder 7 EXACT, inverse engine + first falsifiable strata prediction AWAITING DATA; entry 51 = third runnable well; private operator tier with first client data), 2026-08-29; v0.407.0 SCORED PREDICTION SHIP (v1.78-v1.80 + PAPER_2258: entry 52 scores the first strata prediction REFUTED as transferred (+10pct, diagnosis = the pre-disclosed assumption), family priors turn refutation into correction (6,231 vs 6,228 in-sample), Prediction V2 pinned awaiting deep sonic; PAPER_2258 landmark self-verifying (2,254 distinct); honest renderer + ENRGYONE commercial package; gate crosses 6,000), 2026-08-29.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
-- **Index table file-row marks:** **934 ✓ CLEAN**, **245 ⚠ OPEN_RULING**, **1076 ⬜** not-touched (934 + 245 + 1076 = 2255 ✓). Wired file-rows (934 + 245 = 1,179) sit below `wired_count()` = 1,417 because variant files share a base dispatch.
+- **Index table file-row marks (live census 2026-08-31):** **2033 ✓ CLEAN**, **259 ⚠ OPEN** (all Daniel-gated - see RULINGS_BATCH_1.md + WIRING_DRAINAGE_QUEUE.md), **10 📖 reference** (Rule B reclassification, dock-audited), **0 ⬜**. Earlier eras' 934/245/1076 census superseded.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
-- **OPEN targets:** 0
+- **OPEN targets:** 238 Daniel-gated ruling/derivation papers + 1 OPEN_CANDIDATE prediction (PAPER_1950) = 239, after the BATCH 1 fold 2026-08-31 (8 papers RULED: 008/227/237/250/251/252/254/316). Batch 2: RULINGS_QUEUE.md.
 
 ---
 
@@ -110,7 +110,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 
 | Status | Paper ID | Title fragment |
 |---|---|---|
-| ⬜ | COMPLETE_UQFF_EQUATIONS_REFERENCE | (no PAPER_N prefix) |
+| 📖 | COMPLETE_UQFF_EQUATIONS_REFERENCE | reference doc (Rule B) - equation compendium of the already-wired corpus |
 | ✓ | PAPER_001 | GW170817 UQFF Damping Analysis | COMPLETE-COMPILE (full Kozima K.1-K.6 + cosmogenesis EOM + VDS/DVP/BSH; helper-merged) |
 | ⚠ | PAPER_002 | GW190425 Mass Gap Interpretation |
 | ⚠ | PAPER_003 | GW150914 UQFF vs LIGO Strain |
@@ -1574,7 +1574,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ⚠ | PAPER_224 | Saturn Dual Gravity Ring Tension UQFF |
 | ✓ | PAPER_225 | Early Universe Relativistic UV UQFF |
 | ⚠ | PAPER_226 | MagnetarSGR0501 11Term MUGE UQFF |
-| ⚠ | PAPER_227 | Tapestry LMC Stellar Wind UQFF |
+| ✓ | PAPER_227 | Tapestry LMC Stellar Wind UQFF | RULED B7 2026-08-31: a_wind=4e3 canonical (rho_fluid=1e-12 per PAPER_228), Q-220 CLOSED
 | ✓ | PAPER_228 | Westerlund2 OB StellarWind MUGE |
 | ⚠ | PAPER_229 | Pillars Creation Erosion MUGE |
 | ⚠ | PAPER_230 | NGC2525 SN2018gv Negative MassLoss MUGE |
@@ -1584,7 +1584,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_234 | SgrAStar Accretion Precession Enhanced MUGE |
 | ✓ | PAPER_235 | Antennae NGC4038 Double Merger Interaction MUGE |
 | ✓ | PAPER_236 | UQFF Learning Advancement Meta Assessment |
-| ⚠ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF | Q-224
+| ✓ | PAPER_237 | UQFFSource10 Catalogue Master Buoyancy 26Layer UQFF | RULED B6+B3ii 2026-08-31: M=2.984e32 (150 M_sun) canonical; 2.11e208 confirmed shared benchmark; Q-224 CLOSED
 | ✓ | PAPER_238 | UQFF Vacuum Repulsion Surface Tension Analogy | CLEAN
 | ⚠ | PAPER_239 | UQFF THz Conduit Shock StarFormation Forces | Q-225
 | ⚠ | PAPER_240 | UQFF Spooky Action DPM Resonance gH Hydrogen | Q-226
@@ -1597,11 +1597,11 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_247 | MUGE Merger Interaction Modulation Tidal Gravity Boost | CLEAN
 | ⚠ | PAPER_248 | UQFF Source10 Batch OpenMP DPM Resonance Profiling | Q-229
 | ✓ | PAPER_249 | UQFF CUDA GPU Tiled GEMM Multi System Acceleration | CLEAN
-| ⚠ | PAPER_250 | SN1006 TypeIa SNR FUBi Ejecta Knot Stabilisation | Q-230
-| ⚠ | PAPER_251 | EtaCarina Homunculus DPM Invisibility LENR Resonance | Q-231
-| ⚠ | PAPER_252 | Chandra Archive Force Equivalence Class UQFF | Q-232
+| ✓ | PAPER_250 | SN1006 TypeIa SNR FUBi Ejecta Knot Stabilisation | RULED B3 2026-08-31: derived values canonical, class benchmark confirmed, Q-230 CLOSED
+| ✓ | PAPER_251 | EtaCarina Homunculus DPM Invisibility LENR Resonance | RULED B3 2026-08-31: Q-230/231 CLOSED (formulas domain-split per B3iii)
+| ✓ | PAPER_252 | Chandra Archive Force Equivalence Class UQFF | RULED B3 2026-08-31: Q-230/232 CLOSED
 | ⚠ | PAPER_253 | SgrA Negative Buoyancy Inversion omega0 Critical | Q-233
-| ⚠ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor | Q-234
+| ✓ | PAPER_254 | KeplerSNR1604 Force Equivalence Class Historical Anchor | RULED B3 2026-08-31: Q-230/234 CLOSED
 | ⚠ | PAPER_255 | PSRJ0030 NeutronStar Density Regime Positive Buoyancy | Q-235
 | ⚠ | PAPER_256 | CrabNebula M1 DPM Geometry Compact Visible Diffuse Invisible | Q-236
 | ⚠ | PAPER_257 | CassiopeiaA SNR Force Equivalence Class 53Order Extension | Q-237
@@ -1663,7 +1663,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_313 | NGC6302 EquatorialTorus MagneticConfinement etaB 3p979e5 vAlfven 8p921e7 |
 | ✓ | PAPER_314 | NGC6302Resonance PN DPM MacroAntenna F DPM 1p267e50 ratio 2p017e13 |
 | ✓ | PAPER_315 | NGC6302Resonance VacDiffTHz CrossoverRadius 3p280km domRatio 8p118e37 |
-| ⚠ | PAPER_316 | NGC6302Resonance CooperDPM Asc 6p994e21 asuper 1p747e9 P295confirm |
+| ✓ | PAPER_316 | NGC6302Resonance CooperDPM Asc 6p994e21 asuper 1p747e9 P295confirm | RULED B4 2026-08-31: f_super=1.411e15, A_sc=6.994e20 canonical; 6.994e21 confirmation spurious; Q-246/248 CLOSED
 | ✓ | PAPER_317 | OrionM42 TrapeziumWindRamPressure etaWind 28p47 tErosion 467kyr |
 | ✓ | PAPER_318 | OrionM42 TrapeziumOBUV etaRad 7p664e18 champagneFlow |
 | ✓ | PAPER_319 | OrionM42 CompactHII SFRBindingCrossover tCross 67p7kyr sSFR 50xLagoon |
@@ -2356,15 +2356,15 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_S203_Phase_H203_PTF | (no PAPER_N prefix) |
 | ✓ | PAPER_S204_Phase_H204_GapClosure | (no PAPER_N prefix) |
 | ✓ | PAPER_S205_Phase_H205_ExpansionErosion | (no PAPER_N prefix) |
-| ⬜ | SCm_Holmlid_KER_Validation | (no PAPER_N prefix) |
-| ⬜ | SCm_Holmlid_Parkhomov_PonsFleischmann_Upgrade | (no PAPER_N prefix) |
-| ⬜ | SCm_Holmlid_Rossi_Parkhomov_Validation | (no PAPER_N prefix) |
-| ⬜ | SCm_Mizuno_LENR_Transmutation | (no PAPER_N prefix) |
-| ⬜ | SCm_PonsFleischmann_Derivation | (no PAPER_N prefix) |
-| ⬜ | SCm_Rossi_ECat_Variants_Unified | (no PAPER_N prefix) |
-| ⬜ | Star-Magic | (no PAPER_N prefix) |
-| ⬜ | TEMPLATES_README | (no PAPER_N prefix) |
-| ⬜ | UQFF_VALIDATION_SYNC_AUDIT | (no PAPER_N prefix) |
+| 📖 | SCm_Holmlid_KER_Validation | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean (family: Holmlid dispatches + registry constants) |
+| 📖 | SCm_Holmlid_Parkhomov_PonsFleischmann_Upgrade | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean |
+| 📖 | SCm_Holmlid_Rossi_Parkhomov_Validation | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean |
+| 📖 | SCm_Mizuno_LENR_Transmutation | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean |
+| 📖 | SCm_PonsFleischmann_Derivation | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean |
+| 📖 | SCm_Rossi_ECat_Variants_Unified | reference doc (Rule B) - SCm companion doc; dock audit 2026-08-31 clean |
+| 📖 | Star-Magic | reference doc (Rule B) - the framework manuscript (authoritative document lineage) |
+| 📖 | TEMPLATES_README | reference doc (Rule B) - tooling documentation |
+| 📖 | UQFF_VALIDATION_SYNC_AUDIT | reference doc (Rule B) - process audit document |
 | ✓ | PAPER_2157 | NEUTRON LIFETIME PUZZLE BOTTLE BEAM SINGLE HIERARCHY TEMPLATE |
 | ✓ | PAPER_2158 | COSMOLOGICAL LITHIUM 7 PROBLEM SIGMA ONE THIRD EXACT |
 | ✓ | PAPER_2159 | BBN THIRD PHI 5 6 COUNTING SECTOR REGISTRATION |

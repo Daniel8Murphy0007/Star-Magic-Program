@@ -6644,3 +6644,34 @@ shale/seawater/limestone/halite/ice); (b) K3 QCalcGeom re-derivation scope; (c) 
 recorded-interface ruling; (d) gauge procurement per commercial/BENCH_READINESS.md;
 (e) OPTIONAL settlement of Prediction V2: download data.icdp-online.org/sites/ktb/data/
 logging/complogs/hb1/60117200.htm locally and drop it in - the scoring runs the day it lands.
+
+## BATCH 1 RULINGS — Daniel, 2026-08-31 (folded same day; gate-pinned)
+
+- **B1 / Q-008:** D^2 canonical (P_UQFF = D^2*P_GR, tau = 1/D^2). PAPER_005's
+  wired 0.81/1.23x reconciled as D^2 with D_strain = (1-F_TRZ) = 0.9 (sec2
+  F=0.903, F^2=0.815); convention note added to PAPER_005; PAPER_008 RULED.
+  Q-006's 0.903-vs-0.9 mantissa residual remains open.
+- **B2 / Q-002:** B_crit unit = GAUSS (4.4e13 G); PAPER_001's 'T' is the typo.
+  Recorded; carrier papers (013/094/120/138/148/158/164/173/182/187) hold
+  other open questions and stay flagged — their Q-002 component is settled.
+- **B3 / Q-230/231/232/234 + Q-224a:** CONFIRMED derived-correct
+  DPM_resonance (1.76e18; 1.76e19 at B0=1e-4) and F_LENR (6.17e39); the
+  papers' stated exponents were drift. F_U_Bi = +2.11e208 N CONFIRMED as the
+  shared founding benchmark (PAPER_217/237/250/251/252/254). Formula variant:
+  DOMAIN-SPLIT — 2*mu_B form canonical in the PAPER_250/251 family, g_H form
+  canonical in the PAPER_248 family. PAPER_250/251/252/254 RULED.
+- **B4 / Q-246+Q-248:** f_super = 1.411e15 Hz canonical (PAPER_295/302).
+  PAPER_316's A_sc = 6.994e20 canonical; its 6.994e21 "confirmation" is
+  SPURIOUS. PAPER_316 RULED. (PAPER_295 stays flagged on Q-245, which is a
+  different fork — E_vac RHO_UA vs RHO_SCM — not ruled in this batch.)
+- **B5 / Q-216:** canonical bridge = DIVISION BY A REFERENCE DENSITY x LENGTH
+  SCALE. Form ruled; per-domain reference values still unspecified —
+  **Q-216b (NEW, narrowed):** which reference rho and L per domain
+  (PAPER_218/219/220 family)? Papers stay flagged pending Q-216b.
+- **B6 / Q-224b:** Eta Carinae M = 2.984e32 kg (150 M_sun) — the label was
+  right, the CP3 example's exponent was the typo. PAPER_237 dispatch updated
+  (I_grav 1.99e-6, M_i 1.148e31, F_rel 2.95e35). Follow-up flagged: PAPER_238's
+  F_vac_rep reproduces its own paper's 2.984e31 arithmetic — cascade review
+  queued as part of Q-224 closure paperwork.
+- **B7 / Q-220:** AUTHORIZED — PAPER_227 a_wind updated 4e12 -> 4e3
+  (rho_fluid 1e-21 -> 1e-12 per PAPER_228). Q-220 CLOSED.

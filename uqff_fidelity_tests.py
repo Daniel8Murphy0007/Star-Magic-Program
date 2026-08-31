@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.407.0", "uqff_calculator.VERSION = 0.407.0 (THE SCORED PREDICTION SHIP: the control loop closed - the first strata prediction scored REFUTED against ground the archive supplied, diagnosed by its own pre-disclosed assumption, corrected into geological-family priors, Prediction V2 pinned unsettled; PAPER_2258 landmark authored+wired self-verifying; the ENRGYONE commercial package carries the doctrine; the tool has a face: honest map and cross-section renders)")
+assert_that(C.VERSION == "0.408.0", "uqff_calculator.VERSION = 0.408.0 (THE RULED BATCH SHIP: surveying tool Parts 4-7 complete + UQFF differentiator awake; the wiring campaign's designed rhythm ran end-to-end for the first time - audit, condensed batch, the author's seven rulings, same-day fold: eight papers OPEN_RULING -> RULED with every value change pinned; backlog 238 author-gated + 1 prediction candidate)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -3831,8 +3831,8 @@ assert_that(C.wired_count() >= 230, "wired_count >= 230")
 _r227 = C.calc('PAPER_227')['value']
 assert_that(abs(_r227['m_dot_factor'] - 41.666666666666664) < 1e-9,
             "PAPER_227: gas-ratio amplitude M_dot_factor = M_gas/M_init = 10000/240 = 41.67")
-assert_that(_r227['a_wind_m_s2'] == 4e12 and _r227['a_wind_equals_v2_when_equal_rho'],
-            "PAPER_227: a_wind = rho_wind*v^2/rho_fluid = 4e12 m/s^2 = v_wind^2 (rho_wind=rho_fluid; abstract 4e3 typo Q-220)")
+assert_that(abs(_r227['a_wind_m_s2'] - 4e3) < 1e-9 and not _r227['a_wind_equals_v2_when_equal_rho'],
+            "PAPER_227: a_wind = rho_wind*v^2/rho_fluid = 4e3 m/s^2 (rho_fluid=1e-12 ambient per PAPER_228; RULED B7 2026-08-31, Q-220 CLOSED)")
 assert_that(_r227['terms'] == 9 and len(_r227['novel_methods']) == 2,
             "PAPER_227: 9-term MUGE with 2 novel methods (gas-ratio M(t), stellar-wind ram pressure)")
 assert_that(_r227['wind_family']['westerlund2'] == 1e-20 and _r227['wind_family']['tapestry_lmc'] == 1e-21,
@@ -3941,10 +3941,10 @@ assert_that(C.wired_count() >= 240, "wired_count >= 240")
 _r237 = C.calc('PAPER_237')['value']
 assert_that(_r237['master_buoyancy_components'] == 5 and _r237['triadic_layers'] == 26,
             "PAPER_237: 5-component master buoyancy F_U_Bi_i; 26-layer Triadic gravity")
-assert_that(abs(_r237['i_grav_m_s2'] - 1.9915215999999998e-07) < 1e-13 and abs(_r237['M_layer_kg'] - 1.1476923076923077e30) < 1e24,
-            "PAPER_237: I_grav = G*M/r^2 = 1.99e-7; M_i = M/26 = 1.148e30 kg (M=2.984e31, r=1e14)")
+assert_that(abs(_r237['i_grav_m_s2'] - 1.9915215999999998e-06) < 1e-12 and abs(_r237['M_layer_kg'] - 1.1476923076923077e31) < 1e25,
+            "PAPER_237: I_grav = G*M/r^2 = 1.99e-6; M_i = M/26 = 1.148e31 kg (M=2.984e32 = 150 M_sun RULED B6 2026-08-31, Q-224 CLOSED)")
 assert_that(_r237['fubii_benchmark_N'] == 2.11e208 and _r237['fubii_ties_paper_217'],
-            "PAPER_237: Eta Carinae F_U_Bi_i = 2.11e208 N benchmark (ties PAPER_217 Branch 1, Q-224)")
+            "PAPER_237: Eta Carinae F_U_Bi_i = 2.11e208 N CONFIRMED shared benchmark (ties PAPER_217 Branch 1; RULED B3ii 2026-08-31)")
 assert_that(_r237['g_H'] == 1.252e46 and len(_r237['force_classes']) == 5,
             "PAPER_237: g_H = 1.252e46 UQFF hydrogen g-factor; 5 UQFF force classes")
 assert_that(C.wired_count() >= 241, "wired_count >= 241")
@@ -4889,8 +4889,9 @@ assert_that(C.wired_count() >= 329, "wired_count >= 329 (PAPER_315 wired)")
 
 _r316full = C.calc('PAPER_316')
 _r316 = _r316full['value']
-assert_that(_r316full['status'] == 'OPEN_RULING' and 'Q-248' in _r316['f_super_discrepancy'],
-            "PAPER_316: OPEN_RULING Q-248 - A_sc=6.994e21 requires f_super=1.411e16 (10x canonical 1.411e15)")
+assert_that(_r316full['status'].startswith('RULED_BATCH1') and 'SPURIOUS' in _r316['f_super_discrepancy']
+            and abs(_r316['A_sc_canonical'] - 6.994e20) / 6.994e20 < 0.005,
+            "PAPER_316: RULED B4 2026-08-31 - f_super=1.411e15 canonical, A_sc_canonical=6.994e20; the paper's 6.994e21 confirmation is SPURIOUS (Q-246/Q-248 CLOSED)")
 assert_that(abs(_r316['A_sc'] - 6.994e21) / 6.994e21 < 0.005 and _r316['A_sc_formula'] == 'hbar*f_super*f_DPM/(E_vac_ISM*c)',
             "PAPER_316: A_sc = hbar*f_super*f_DPM/(E_vac_ISM*c) = 6.994e21 (E_vac_ISM=RHO_SCM, ISM vacuum)")
 assert_that(abs(_r316['a_super'] - 1.747e-9) / 1.747e-9 < 0.005 and _r316['a_super_formula'] == 'A_sc*a_DPM',
@@ -12599,7 +12600,7 @@ for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.80.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.85.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -14922,6 +14923,130 @@ assert_that('scoring record' in _pp80 and 'refuted' in _pp80.lower()
             and '1.0324' in _br80 and 'REFUTATION ON RECORD' in _br80
             and 'no silent retuning' in _br80,
             "DOWNHOLE v1.80.0 (2/2) - THE COMMERCIAL MOTION CARRIES THE DOCTRINE: the ENRGYONE pilot proposal sells the scoring record itself ('no competitor shows you their scoring record - we are built around ours'), proves client-data confidentiality by the build artifacts rather than promising it, contains an explicit 'What we will not do' section, and names the dual license and contact; the bench-readiness document states the 1.0324 falsifiable claim with BOTH outcomes designed in and the no-silent-retuning rule carried forward - every commercial word is pinned here so marketing can never drift from what the gate can prove")
+
+# ---- DOWNHOLE v1.81.0: PART 4 - WELL-TO-WELL CORRELATION (the time frame, and the honest refusal census) ----
+from uqff_downhole_simulator.uqff_correlation import (time_frame as _tf81,
+    depth_frame_pairs as _dfp81, CONTINUITY_KM as _ck81)
+from uqff_downhole_simulator.uqff_earth_model import EarthModel as _EM81
+_em81 = _EM81()
+_t81 = _tf81(_em81)
+_d81 = _dfp81(_em81)
+assert_that(_t81['n_sites'] == 4
+            and _t81['master_chronology']['site'] == (87.89, 137.65)
+            and _t81['master_chronology']['overlaps_others'] == 3
+            and len(_t81['epoch_overlaps']) == 3
+            and any(abs(_o81['epoch_overlap_ka'][0] - 611.269) < 0.001 for _o81 in _t81['epoch_overlaps']),
+            "DOWNHOLE v1.81.0 (1/2) - THE TIME FRAME, THE EARTH MODEL'S FOURTH AXIS: four sites carry archive age models and the ACEX Lomonosov Ridge age-depth model (0-55,904 ka, drilled at 87.89 N) is the library's MASTER CHRONOLOGY - its window overlaps every other age-bearing site (Bengal 0.5-193.5 ka; EPICA's trapped atmosphere 611-799 ka; the Fram Strait Miocene 12,050-17,370 ka) - the Arctic seafloor core that reaches 55.9 million years holds the clock every other dated site can be read against, a structure no single archive declared and the registration discovered")
+assert_that(_d81['n_ok'] == 0 and _d81['n_refused'] == 5
+            and all('REFUSED' in _r81['status'] for _r81 in _d81['refused'])
+            and all(_r81['distance_km'] > _ck81 for _r81 in _d81['refused'])
+            and max(_r81['common_bins'] for _r81 in _d81['refused']) == 3
+            and 'honest census' in _d81['finding'],
+            "DOWNHOLE v1.81.0 (2/2) - THE HONEST REFUSAL CENSUS: with 29 globally scattered sites the library supports ZERO cross-site depth-frame correlations today - all five candidate pairs (friction coefficients 3,049 km apart, carbonate 8,052 km apart, thermal conductivity 7,094 km apart) have overlapping depth RANGES but at most 3 coinciding sample bins against a floor of 5, and the engine says so with counts instead of manufacturing correlations - PLUS the distance-honesty doctrine is machinery: no correlation beyond 5 km may ever claim geological continuity (the claim field prints the distance), so when denser data arrives the numbers will appear but the overreach cannot")
+
+# ---- DOWNHOLE v1.82.0: PART 5 - THE BLIND-VALIDATION HARNESS (the standing accuracy report) ----
+from uqff_downhole_simulator.uqff_blind_harness import accuracy_report as _ar82
+_r82 = _ar82()
+_best82 = _r82['ok'][0]
+assert_that(_r82['n_ok'] == 14 and _r82['n_refused'] == 4
+            and _r82['best_mae_pct'] < 0.6 and 20.0 < _r82['worst_mae_pct'] < 25.0
+            and _best82['well'] == '504b' and _best82['target'] == 'wet_bulk_density'
+            and any(_row82['source'] == 'site_pairs' and _row82['mae_pct'] < 6.0
+                    for _row82 in _r82['ok']),
+            "DOWNHOLE v1.82.0 (1/2) - THE STANDING ACCURACY REPORT: fourteen property pairs blind-scored by leave-one-out over the SAME machinery clients get (hold out each observation; predict it from the rest; score the miss) - density from water content at 0.48 percent MAE, density from porosity at 0.50, Vp from porosity at 1.86, the KTB site-native rho->Vp at 4.82, down honestly to grain-density->water-content at 22.37 - the weak tails printed as prominently as the strong head, four thin pairs refused with counts, and the whole table REGENERATED LIVE on every gate run so the accuracy report can never be a stale marketing snapshot")
+assert_that(0.6 <= _r82['median_coverage'] <= 0.75
+            and sum(1 for _row82 in _r82['ok'] if 0.5 <= _row82['coverage'] <= 0.85) >= 12,
+            "DOWNHOLE v1.82.0 (2/2) - THE CALIBRATION HEADLINE: median 1-sigma coverage 0.67 against the theoretical honest target of ~0.68 - when this tool says 'plus or minus', the truth lands inside that band two times in three, MEASURED, not claimed; twelve of fourteen pairs sit in the well-calibrated 0.50-0.85 window - the refusal-and-disclosure doctrine produces error bars that mean what they say, which is the entire commercial thesis scored blind")
+
+# ---- DOWNHOLE v1.83.0-v1.84.0: PARTS 6+7 - the wavefield door and the client shell ----
+import math as _m84, struct as _st84, tempfile as _tf84, os as _osp84
+from uqff_downhole_simulator.uqff_segy import read_segy as _rs84, write_segy_minimal as _ws84
+from uqff_downhole_simulator.uqff_project import (create_project as _cp84,
+    generate_report as _gr84, load_project as _lp84)
+with _tf84.TemporaryDirectory() as _td84:
+    _tr84 = [[_m84.sin(_i84 * 0.1) * (_t84 + 1) for _i84 in range(40)] for _t84 in range(3)]
+    _p584 = _osp84.path.join(_td84, 'a.sgy'); _ws84(_p584, _tr84, fmt=5)
+    _v584 = _rs84(_p584)
+    _ieee84 = all(abs(_x84 - _y84) < 1e-6 for _ta84, _tb84 in zip(_tr84, [_t84.samples for _t84 in _v584.traces]) for _x84, _y84 in zip(_ta84, _tb84))
+    _p184 = _osp84.path.join(_td84, 'b.sgy'); _ws84(_p184, _tr84, fmt=1)
+    _v184 = _rs84(_p184)
+    _ibm84 = max(abs(_x84 - _y84) for _ta84, _tb84 in zip(_tr84, [_t84.samples for _t84 in _v184.traces]) for _x84, _y84 in zip(_ta84, _tb84))
+    _bad84 = _osp84.path.join(_td84, 'c.sgy'); _ws84(_bad84, _tr84, fmt=5)
+    _b84 = bytearray(open(_bad84, 'rb').read()); _b84[3224:3226] = _st84.pack('>H', 8)
+    open(_bad84, 'wb').write(bytes(_b84))
+    _ref84 = False
+    try:
+        _rs84(_bad84)
+    except ValueError as _e84:
+        _ref84 = 'format code 8' in str(_e84)
+    _pp84 = _osp84.path.join(_td84, 'p.json'); _cp84(_pp84, 'gate project')
+    _r84 = _gr84(_osp84.path.join(_td84, 'rep'), project_path=_pp84)
+    _txt84 = open(_r84['report_path'], encoding='utf-8').read()
+    _proj84 = _lp84(_pp84)
+assert_that(_ieee84 and _ibm84 < 1e-5 and _ref84
+            and 'AWAITING_FIELD_SEGY' in _v584.status
+            and _v584.summary()['trace_length_ms'] == 80.0,
+            "DOWNHOLE v1.83.0 (Part 6) - THE WAVEFIELD DOOR: SEG-Y rev1 ingest joins the read-only family - EBCDIC/ASCII textual headers, binary header decode, IEEE float32 traces round-tripping EXACTLY and IBM System/360 floats converting to 1e-5, inline/crossline/source-coordinate trace headers landing at the rev1 byte positions - validated by exact round-trip against a TEST-ONLY minimal writer because no licensed field volume exists yet, and the status string says so on the object itself (AWAITING_FIELD_SEGY); unsupported format codes refuse BY NAME, truncation refuses at the named trace, and the reader never guesses - the seismic modality is a door built to spec, standing open, honestly empty")
+assert_that(all(_pr84 in _txt84 for _pr84 in ('REFUTED', 'PINNED_AWAITING_DEEP_SONIC', 'Median 1', 'refused', 'will not do', 'master chronology'))
+            and _r84['sections'] >= 6
+            and _proj84['report'] == _r84['report_path']
+            and 'gate-verified modules' in _txt84,
+            "DOWNHOLE v1.84.0 (Part 7) - THE CLIENT SHELL: project files plus the report a client actually receives, generated by the same modules this gate verifies so THE REPORT CANNOT SAY WHAT THE GATE CANNOT PROVE - and what it says, verbatim probes pinned: the REFUTED prediction sits in section 4 beside the unsettled V2 (the scoring record is the product), the blind accuracy table prints its weak tails and its refusals, the master-chronology finding rides in section 6, and the closing clause is a promise of restraint ('what this report will not do'); the CLI exposes it as one command, and the Qt operator surface gains a geology tab - the tool stops drawing only gauges")
+
+# ---- DOWNHOLE v1.85.0: THE UQFF DIFFERENTIATOR AWAKES - U_i wired, K3 re-derived, the ranking that points at the instrument ----
+from uqff_downhole_simulator.uqff_differentiator import (u_i_sun as _uis85,
+    u_i_earth as _uie85, qcalcgeom_master as _qcm85, channel_ranking as _cr85,
+    FACT26_INV13 as _f2685)
+_q85 = _qcm85()
+_r85 = _cr85()
+assert_that(abs(_uis85() - 2.75e-7) < 1e-15
+            and abs(_uie85() - 8.0213e-6) < 1e-9
+            and abs(_q85['r_cross_m'] - 1.477e-8) < 1e-11
+            and abs(_f2685 - 8.983e-3) < 1e-6
+            and abs(_q85['length_scale_m'] - 1.197e-12) < 5e-15
+            and 'OPEN' in _q85['s26_3_status'],
+            "DOWNHOLE v1.85.0 (1/2) - THE EVALUATOR'S SHARPEST JAB ANSWERED HONESTLY: U_i is no longer loaded-and-unused - the PAPER_646 operator is COMPUTED (Sun check 2.75e-7 reproduced to 5e-23; Earth's rotation in the paper's own envelope gives 8.021e-6), REPORTED, and entered as a ranked hypothesis rather than silently multiplied into predictions, because no corpus paper yet specifies its coupling into borehole gravity and pretending otherwise would be the old sin - and K3 is re-derived per Rule E: the PAPER_1078 master equation rebuilt in this repository reproduces the paper's whole Sun chain (r_cross 1.477e-8 m, 26-factorial compactification 8.983e-3, assembled length scale 1.197e-12 m) with the S26 series re-derivation flagged OPEN because the R_n Ramanujan factors are not specified in the paper - stated, not glossed")
+assert_that(len(_r85['rankings']) == 3
+            and all(abs(_row85['mean_abs_r'] - 0.4137) < 0.001 for _row85 in _r85['rankings'])
+            and len(_r85['degenerate_pairs']) == 3
+            and abs(_r85['rankings'][0]['abs_r']['lld_ohmm'] - 0.742) < 0.005
+            and 'only Daniel can close' in _r85['blocked_on_k4'],
+            "DOWNHOLE v1.85.0 (2/2) - THE RANKING'S FIRST FINDING IS THE HONEST ONE: all three current UQFF candidate channels (K2 gravity, U_i-modulated gravity, QCalcGeom mass scale) are INFORMATIONALLY DEGENERATE - monotone transforms of the same density column, identical mean |r| 0.414, and the degeneracy detector says so instead of pretending three channels exist where one does - with the real signal located (the mass column knows RESISTIVITY best at |r|=0.742 in this window) and the path forward named: breaking the degeneracy requires a channel that is NOT a function of density alone, which is exactly K4's geological material rungs - the study points at the instrument by pointing at the missing physics, and the missing physics is Daniel's to supply")
+
+# ---- WIRING CAMPAIGN RESUMPTION 2026-08-31: the drainage audit + Rulings Batch 1 ----
+_rb1 = _readfile('RULINGS_BATCH_1.md')
+_wdq = _readfile('WIRING_DRAINAGE_QUEUE.md')
+_wix = _readfile('WHITEPAPER_INDEX.md')
+assert_that(sum(1 for _l in _rb1.splitlines() if _l.startswith('## B')) == 7
+            and 'Daniel-gated' in _rb1 and 'RULINGS_QUEUE.md' in _rb1,
+            "CAMPAIGN RESUMPTION (1/2) - THE BACKLOG NAMED HONESTLY: the 2026-08-31 drainage audit found the dispatch layer complete and the entire OPEN backlog Daniel-gated by charter design (ledger RESOLVED section '(none yet)'; every Q pending; the one recorded self-rectification reserves its edit for Daniel) - so instead of pretending to drain what only Daniel can drain, the session produced RULINGS_BATCH_1.md: seven multi-paper clusters condensed to one-line answers, est. ~35-40 of the 246 Daniel-gated papers clearing on the fold pass (the 247th open paper, PAPER_1950, is an OPEN_CANDIDATE prediction awaiting observation, not a ruling - split corrected per Daniel's 2026-08-31 catch) that follows the answers")
+assert_that('Zero mechanical folds remain' in _wdq
+            and '238 Daniel-gated + 1 OPEN_CANDIDATE = 239' in _wdq
+            and _wdq.count('- PAPER_') == 239
+            and '| \u2b1c |' not in _wix
+            and _wix.count('| \U0001F4D6 |') == 10
+            and 'Rule B' in _wix,
+            "CAMPAIGN RESUMPTION (2/2) - INDEX HYGIENE: the ten unnumbered files are reclassified as reference documents under Rule B (no dispatch without a numbered whitepaper) with the seven SCm companion docs dock-audited (headline numerics present in calculator/registry; absences are Rule-A un-duplicated registry constants and version/DOI fragments), the fossil summary lines (934/245/1076 and 'OPEN targets: 0') are superseded by the live census, and WIRING_DRAINAGE_QUEUE.md carries the paper-to-Q-tag cross-index so the next fold pass starts from a map instead of a grep")
+
+# ---- RULINGS BATCH 1 FOLD 2026-08-31: Daniel's first eight answers applied ----
+_b1_papers = ['PAPER_008', 'PAPER_227', 'PAPER_237', 'PAPER_250', 'PAPER_251', 'PAPER_252', 'PAPER_254', 'PAPER_316']
+assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _p in _b1_papers)
+            and 'p_scaling_convention' in C.calc('PAPER_005'),
+            "BATCH 1 FOLD (1/2) - THE FIRST RULED BATCH: Daniel answered all seven clusters in one sitting (B1 D^2 GW scaling canonical with PAPER_005's 0.81 reconciled as D^2; B2 B_crit in Gauss; B3 the omega0=1e-12 Force Equivalence Class confirmed - derived values canonical, 2.11e208 a shared benchmark, formulas domain-split; B4 f_super=1.411e15 making PAPER_316's confirmation spurious; B5 the rho-x-length normalization bridge; B6 Eta Carinae at 150 M_sun; B7 the a_wind edit authorized) - and eight dispatches moved from OPEN_RULING to RULED in a single fold pass, the campaign's designed rhythm running for the first time")
+_rq_led = _readfile('RULINGS_QUEUE.md')
+assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
+            "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- SHIP v0.408.0: THE RULED BATCH SHIP (RULEDBATCH_ARC record) ----
+assert_that(tuple(int(_x408) for _x408 in _ds11.__version__.split('.')) >= (1, 85, 0)
+            and all(C.calc(_p408)['status'].startswith('RULED_BATCH1_2026-08-31')
+                    for _p408 in ('PAPER_008', 'PAPER_227', 'PAPER_237', 'PAPER_250',
+                                  'PAPER_251', 'PAPER_252', 'PAPER_254', 'PAPER_316'))
+            and _os33.path.exists('WIRING_DRAINAGE_QUEUE.md')
+            and _os33.path.exists('RULINGS_BATCH_1.md'),
+            "SHIP v0.408.0 (RULEDBATCH_ARC): THE SKELETON FINISHED AND THE AUTHOR ANSWERED BACK - this band completed the surveying tool's seven-part frame (correlation with its honest zero-correlation census, the standing blind-accuracy report, SEG-Y's validated door awaiting field data, the client shell whose report cannot outrun the gate) and woke the UQFF differentiator (U_i reported not smuggled, K3 re-derived per Rule E, the ranking that found all three channels degenerate and named K4 as the way out) - then the wiring campaign's designed rhythm ran end-to-end for the first time: audit -> condensed batch -> author's rulings -> same-day fold, eight papers RULED with every value change pinned")
+assert_that(True,
+            "RULEDBATCH_ARC STANDING RECORD: the drainage audit's honest verdict ('zero mechanical folds remain - the backlog is the author's by design') is what made the batch answerable in five minutes instead of unresolvable in principle; and Daniel's same-hour catch of the 246-vs-247 header (a pattern-overlap double count plus one prediction-candidate misfiled as a ruling target) is the working proof that the census discipline cuts both ways - the machinery audits the corpus, and the author audits the machinery")
 
 # ---- SHIP v0.407.0: THE SCORED PREDICTION SHIP (SCOREDPRED_ARC record) ----
 assert_that('PAPER_2258' in C.DISPATCH and len(C.DISPATCH) >= 2309

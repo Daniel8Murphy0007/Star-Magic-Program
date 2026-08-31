@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.407.0"
-description = "Star-Magic UQFF calculator v0.407.0: THE SCORED PREDICTION SHIP. 2,254 dispatches (2,309 keys), gate 6,003/0. The control loop closed: first strata prediction scored REFUTED (+10pct) against KTB ground truth (entry 52), diagnosed by its own pre-disclosed assumption, corrected via geological-family priors (in-sample 6,231 vs 6,228), Prediction V2 pinned awaiting deep sonic. PAPER_2258 landmark self-verifying; ENRGYONE pilot proposal + bench readiness; honest map/cross-section renders. Next: PAPER_2259."
+version = "0.408.0"
+description = "Star-Magic UQFF calculator v0.408.0: THE RULED BATCH SHIP. Surveying tool Parts 4-7 (correlation, blind harness, SEG-Y, client shell) + UQFF differentiator (U_i wired, K3 re-derived, channel ranking); wiring campaign resumed: RULINGS_BATCH_1 answered by the author and folded same day - 8 papers OPEN->RULED, backlog 246->238. 2,254 dispatches (2,309 keys), gate 6,017/0, acceptance 89/89, catalogue 52 public entries + operator tier. Next: PAPER_2259."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

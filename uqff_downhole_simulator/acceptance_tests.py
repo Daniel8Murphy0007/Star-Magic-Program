@@ -643,6 +643,114 @@ def section_r_survey_view(tmp: str) -> None:
             "the V2 band, and its unsettled status - or vacuous as above")
 
 
+def section_s_correlation() -> None:
+    """Section S - well-to-well correlation (v1.81.0): the time frame's real
+    structure and the depth frame's honest refusal census (public data)."""
+    from .uqff_correlation import time_frame, depth_frame_pairs
+    from .uqff_earth_model import EarthModel
+    em = EarthModel()
+    tf = time_frame(em)
+    ok(tf["n_sites"] >= 4 and tf["master_chronology"]["overlaps_others"] >= 3
+       and len(tf["epoch_overlaps"]) >= 3,
+       "S1 correlation: the time frame registers 4+ age-bearing sites with a "
+       "master chronology overlapping all others")
+    df = depth_frame_pairs(em)
+    ok(df["n_refused"] >= 5
+       and all("continuity" in r["continuity_claim"].lower()
+               or r["continuity_claim"] == "TWIN_HOLE_ELIGIBLE"
+               for r in df["refused"] + df["ok"])
+       and "honest census" in df["finding"],
+       "S2 correlation: every cross-site pair carries a continuity claim "
+       "bounded by distance, and thin pairs refuse with counts")
+
+
+def section_t_blind_harness() -> None:
+    """Section T - the blind-validation harness (v1.82.0): the standing
+    accuracy report, regenerated live (public data)."""
+    from .uqff_blind_harness import accuracy_report
+    r = accuracy_report()
+    ok(r["n_ok"] >= 12 and r["n_refused"] >= 3
+       and r["best_mae_pct"] < 1.0,
+       "T1 harness: 12+ pairs blind-scored leave-one-out with refusals "
+       "listed; best pair under 1 percent MAE")
+    ok(0.5 <= r["median_coverage"] <= 0.85
+       and "stale snapshot" in r["doctrine"],
+       "T2 harness: median 1-sigma coverage sits near the honest 0.68 "
+       "target - the spreads are calibrated by measurement, not claim")
+
+
+def section_u_segy(tmp: str) -> None:
+    """Section U - SEG-Y ingest (v1.83.0): validated by exact round-trip;
+    refusals by name, never by guess."""
+    import math, os, struct
+    from .uqff_segy import read_segy, write_segy_minimal
+    tr = [[math.sin(i * 0.1) * (t + 1) for i in range(40)] for t in range(3)]
+    p5 = os.path.join(tmp, "rt5.sgy")
+    write_segy_minimal(p5, tr, fmt=5)
+    v5 = read_segy(p5)
+    ok(all(abs(x - y) < 1e-6 for ta, tb in
+           zip(tr, [t.samples for t in v5.traces])
+           for x, y in zip(ta, tb))
+       and v5.traces[0].inline == 10 and "AWAITING_FIELD_SEGY" in v5.status,
+       "U1 segy: IEEE round-trip exact, headers land, status honest")
+    p1 = os.path.join(tmp, "rt1.sgy")
+    write_segy_minimal(p1, tr, fmt=1)
+    v1 = read_segy(p1)
+    worst = max(abs(x - y) for ta, tb in
+                zip(tr, [t.samples for t in v1.traces])
+                for x, y in zip(ta, tb))
+    bad = os.path.join(tmp, "bad.sgy")
+    write_segy_minimal(bad, tr, fmt=5)
+    b = bytearray(open(bad, "rb").read())
+    b[3224:3226] = struct.pack(">H", 8)
+    open(bad, "wb").write(bytes(b))
+    refused = False
+    try:
+        read_segy(bad)
+    except ValueError as e:
+        refused = "format code 8" in str(e)
+    ok(worst < 1e-5 and refused,
+       "U2 segy: IBM floats convert exactly and unsupported formats refuse "
+       "by name")
+
+
+def section_v_client_shell(tmp: str) -> None:
+    """Section V - the client shell (v1.84.0): project files + the report
+    that cannot say what the gate cannot prove."""
+    import os
+    from .uqff_project import create_project, generate_report, load_project
+    pp = os.path.join(tmp, "proj.json")
+    create_project(pp, "acceptance project")
+    r = generate_report(os.path.join(tmp, "rep"), project_path=pp)
+    txt = open(r["report_path"], encoding="utf-8").read()
+    ok(all(p in txt for p in ("REFUTED", "PINNED_AWAITING_DEEP_SONIC",
+                              "refused", "will not do"))
+       and os.path.getsize(r["report_path"]) > 2000,
+       "V1 shell: the client report carries the scoring record, the "
+       "unsettled prediction, the refusals, and the will-not-do clause")
+    proj = load_project(pp)
+    ok(proj["report"] == r["report_path"]
+       and proj["simulator_version"] and "created_utc" in proj,
+       "V2 shell: the project file tracks its report, renders, and versions")
+
+
+def section_w_differentiator() -> None:
+    """Section W - the UQFF differentiator layer (v1.85.0): canonical checks
+    and the degeneracy-honest channel ranking (public data)."""
+    from .uqff_differentiator import (u_i_sun, qcalcgeom_master,
+                                      channel_ranking)
+    ok(abs(u_i_sun() - 2.75e-7) < 1e-15
+       and abs(qcalcgeom_master()["length_scale_m"] - 1.197e-12) < 5e-15,
+       "W1 differentiator: U_i reproduces the canonical Sun value exactly "
+       "and the re-derived master equation reproduces its paper chain")
+    r = channel_ranking()
+    ok(len(r["rankings"]) >= 3 and len(r["degenerate_pairs"]) >= 3
+       and "BLOCKED" in r["blocked_on_k4"].upper()
+       or ("only Daniel can close" in r["blocked_on_k4"]),
+       "W2 differentiator: the ranking runs, DISCLOSES that current "
+       "candidates are informationally degenerate, and names the K4 block")
+
+
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "
           "independent of the physics corpus)")
@@ -665,6 +773,11 @@ def main() -> int:
         section_p_inverse_engine()
         section_q_prior_families()
         section_r_survey_view(tmp)
+        section_s_correlation()
+        section_t_blind_harness()
+        section_u_segy(tmp)
+        section_v_client_shell(tmp)
+        section_w_differentiator()
     if _FAILS:
         print(f"[ACCEPTANCE] {len(_FAILS)} FAILURES ({_PASS} passed):")
         for f in _FAILS:

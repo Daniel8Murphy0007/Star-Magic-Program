@@ -5,6 +5,43 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.408.0] — 2026-08-31 — THE RULED BATCH SHIP
+
+### Added
+- **Surveying tool Parts 4–7** (downhole v1.81–v1.84): `uqff_correlation`
+  (time frame + depth-frame refusal census, CONTINUITY_KM doctrine),
+  `uqff_blind_harness` (standing leave-one-out accuracy report, regenerated
+  live), `uqff_segy` (SEG-Y rev-1 reader, IBM/IEEE, round-trip validated,
+  AWAITING_FIELD_SEGY), `uqff_project` (project files, generated client
+  report, CLI `report`, Qt geology tab).
+- **UQFF differentiator** (v1.85): `universal_inertial_operator` (Sun
+  2.75e-7 EXACT, Earth 8.021e-6, WIRED_AS_REPORTED_OBSERVABLE),
+  `qcalcgeom_master` re-derived per Rule E (Sun chain 1.197e-12 m
+  reproduced; S26 series re-derivation OPEN), `channel_ranking` with the
+  degeneracy detector (all three candidates are monotone transforms of the
+  density column; breaking it requires K4).
+- **Campaign resumption artifacts**: RULINGS_BATCH_1.md (+ ANSWERS),
+  WIRING_DRAINAGE_QUEUE.md (paper→Q-tag map), 10 unnumbered files
+  reclassified as dock-audited reference docs.
+- Gate 6,003 → **6,017** (+14: five downhole modules, resumption pins,
+  Batch 1 fold pins, ship record); acceptance 79 → **89**.
+
+### Changed
+- **BATCH 1 FOLD — 8 dispatches OPEN_RULING → RULED_BATCH1_2026-08-31**
+  (PAPER_008/227/237/250/251/252/254/316) per Daniel's rulings: D² GW
+  scaling canonical; B_crit = Gauss; Force Equivalence Class confirmed
+  (2.11e208 shared benchmark, DPM_resonance formulas domain-split);
+  f_super = 1.411e15 (PAPER_316's 6.994e21 confirmation spurious, A_sc
+  canonical 6.994e20); normalization bridge = reference ρ×length (Q-216b
+  opened for per-domain values); Eta Carinae M = 2.984e32 kg (PAPER_237
+  recomputed ×10: I_grav 1.99e-6, M_i 1.148e31, F_rel 2.95e35); PAPER_227
+  a_wind 4e12 → 4e3 (ρ_fluid = 1e-12 per PAPER_228). 8 registry rows
+  status-updated with supersession trail. Backlog 246 → 238 author-gated
+  + 1 OPEN_CANDIDATE. Backup: uqff_calculator.py.PRE_BATCH1_FOLD.
+- Count correction (Daniel's catch): 247/496 conflated marker classes and
+  double-counted patterns; honest split 246+1 papers, 254 occurrences —
+  reconciled on every surface before the fold moved it to 238+1.
+
 ---
 
 ## v0.407.0 — 2026-08-29 — THE SCORED PREDICTION SHIP
