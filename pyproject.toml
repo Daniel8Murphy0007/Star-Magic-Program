@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.409.0"
-description = "Star-Magic UQFF calculator v0.409.0: THE FULL-WHEEL SHIP. Every published file now ships on the wheel (manifest generated from repo contents, SHIP GUARD v8): registry 6,791 rows, rulings ledger, 2,303 whitepaper files, commercial + incorporation docs. Plus Batch-1 verification (all rulings stand) and Batch 2 fold (8 rulings, PAPER_063 e217 reversal, [UA] canonized). 2,254 dispatches, gate 6,024/0, acceptance 89/89. Next: PAPER_2259."
+version = "0.410.0"
+description = "Star-Magic UQFF calculator v0.410.0: THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION. Every published file now ships on the wheel (manifest generated from repo contents, SHIP GUARD v8): registry 6,792 rows, rulings ledger, 2,303 whitepaper files, commercial + incorporation docs. Plus Batch-1 verification (all rulings stand) and Batch 2 fold (8 rulings, PAPER_063 e217 reversal, [UA] canonized). 2,254 dispatches, gate 6,028/0, acceptance 89/89. Next: PAPER_2259."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -119,6 +119,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "UNIFIED_REGISTRY_RESIDUALS.csv",
     "UNIFIED_REGISTRY_RESULTS_TABLE.csv",
     "UNIFIED_REGISTRY_RESULTS_TABLE.md",
+    "UNIFIED_REGISTRY_RESULTS_TABLE_INHERITED.csv",
     "UNIFIED_REGISTRY_SCHEMA.md",
     "UNIFIED_REGISTRY_STATUS_REPORT.md",
     "UNIFIED_REGISTRY_VERSION.txt",

@@ -356,3 +356,26 @@ THE SCORED PREDICTION SHIP: entry #52 judges the first strata prediction (REFUTE
 diagnosis = pre-disclosed assumption) -> family priors correct it (6,231 vs 6,228) ->
 Prediction V2 pinned. PAPER_2258 landmark self-verifying (2,254/2,309). Honest renderer +
 ENRGYONE commercial package. Gate 5,993 -> 6,003 (crossed 6,000). Acceptance 79. Full pass.
+
+## v0.408.0 — 2026-08-31 (entry added at v0.410.0 prep)
+THE RULED BATCH SHIP: surveying tool Parts 4-7 + differentiator (v1.81-1.85);
+campaign resumed; RULINGS_BATCH_1 answered + folded same day (8 papers RULED).
+Gate 6,003 -> 6,017. Acceptance 89.
+
+## v0.409.0 — 2026-08-31 — FIRST FULL-WHEEL PUBLICATION
+Manifest generated from repo contents (~2,540 data-files), SHIP GUARD v8,
+Batch-1 verification, Batch 2 fold. Upgraded by v0.410.0 (registry closure,
+live results table, band trails, history entries).
+
+## v0.410.0 — 2026-09-01 — THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION
+THE FULL-WHEEL SHIP: Daniel's rule ("EVERY SHIP SHOULD BE ON THE WHEEL") closes
+the fifteen-version publication split — manifest generated from repo contents
+(generate_wheel_manifest.py, ~2,540 data-files incl. whitepapers corpus,
+registry family, rulings ledger, commercial + incorporation docs), catalog
+moved to package-data (installs inside the package on every layout), SHIP
+GUARD v8 (repo<->wheel closure) + v7 superseded. Plus the banked trust arc:
+BATCH_1_VERIFICATION (all seven rulings stand; three record defects corrected)
+and RULINGS_BATCH_2 (eight rulings; PAPER_063 mean REVERSED e7 -> -6.05e217 N;
+[UA]=1e-4 canonized). Registry family updated for Batch 2 (16 row edits +
+canonization row + 3 graph edges + citations). Gate 6,003 -> 6,025 across the
+band. Wheel 22.3 MB / 2,706 members.

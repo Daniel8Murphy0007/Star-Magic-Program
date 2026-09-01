@@ -247,3 +247,5 @@ v0.404.0,2026-08-28,FORTYWELLS_ARC,ten verbatim wells 31-40 + pangaea dedupe rea
 v0.405.0,2026-08-28,FIFTYWELLS_ARC,ten verbatim wells 41-50 to the MILESTONE (ancient air at Dome C; first microbial life rates; first license refusal on record) + SHIP GUARD v7 catalog/data-files closure,gate 5973/0
 v0.406.0,2026-08-29,SURVEYTOOL_ARC,Parts 1-3 of the geological subsurface surveying tool + entry 51 + operator tier + first falsifiable strata prediction (KTB Vp) pinned awaiting data,gate 5993/0
 v0.407.0,2026-08-29,SCOREDPRED_ARC,first scored strata prediction (refuted honestly; corrected; V2 pinned) + PAPER_2258 landmark + ENRGYONE commercial package + honest renderer,gate 6003/0
+band,RULEDBATCH_ARC,SHIPPED v0.408.0 (trail row retro-added at v0.410.0 prep - omission disclosed),Batch 1 fold: 8 papers RULED; backlog 246->238
+band,FULLWHEEL_ARC,READY v0.410.0,"full-wheel rule + SHIP GUARD v8 + Batch-1 verification + Batch 2 fold (e217 reversal, [UA] canonized) + results table unfrozen (82 VERIFIED_LIVE) + registry closure"

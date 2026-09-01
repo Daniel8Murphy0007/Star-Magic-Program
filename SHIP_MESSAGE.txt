@@ -1,4 +1,4 @@
-v0.409.0 — THE FULL-WHEEL SHIP
+v0.410.0 — THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION
 
 DANIEL'S RULE EXECUTED: "EVERY SHIP SHOULD BE ON THE WHEEL."
 The v0.394.0-v0.408.0 audit found a fifteen-version publication split -
@@ -24,6 +24,6 @@ ALSO IN THIS BAND (the trust arc, banked):
   E_react v^1 + PAPER_133 genesis root; hadron cluster 9-11.
   Backlog 238 -> 236 author-gated + 1 prediction candidate.
 
-TOTALS: 2,254 wired (2,309 keys) / gate 6,024/0 / acceptance 89/89 /
-registry 6,791 rows / catalogue 52 public + operator tier.
+TOTALS: 2,254 wired (2,309 keys) / gate 6,028/0 / acceptance 89/89 /
+registry 6,792 rows / catalogue 52 public + operator tier.
 Wheel: ~2,700 members. Next: PAPER_2259.

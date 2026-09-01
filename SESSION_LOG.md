@@ -12408,3 +12408,86 @@ whitepapers + 104 catalog-in-package + registry/ledger/legal/commercial),
 sdist 15.6 MB. Installed-wheel probe: 2,309 dispatches, catalogue 52, e217
 ruling flows. Gate 6,024/0 (incl. blocked-xlrd rehearsal), acceptance 89/89.
 Daniel ships via .\ship.ps1.
+
+## 2026-08-31 (9) — DANIEL'S NOT-ENOUGH-FILES CATCH: Batch-2 registry closure repaired before re-ship
+
+Daniel pulled the v0.409.0 tag: the staged diff showed 19 files where the band
+demanded the registry family too. Root cause owned: the Batch 2 fold applied
+charter steps 1-3 + 7-8 (dispatch, gate, index) but SKIPPED steps 4-6
+(registry rows, graph edges, corpus citations) and _BUILD_LOG. Repaired:
+UNIFIED_REGISTRY.csv 15 row edits (PAPER_063 fubii_master_integral value
+-6.05e7 → **-6.05e217 N** + RULED status; PAPER_069 RULED; partial-ruling
+annotations on 089/112/133/145/147 rows) + **ua_velocity_ratio CANONIZED row**
+(6,791 → 6,792 rows); 3 graph edges (UA canonization, e217↔e208 benchmark
+pairing, e172 joint); RULINGS_BATCH_2 citation row; _BUILD_LOG entries for
+BOTH v0.408.0 (omission disclosed retroactively) and v0.409.0. Gate +1 closure
+pin (6,024 → 6,025), labels resynced. Standing consequence pinned: the
+charter's per-paper protocol applies to FOLDS exactly as to wirings.
+
+## 2026-09-01 — v0.410.0: THE FULL-WHEEL SHIP re-cut (burnt v0.409.0 tag; PyPI filename permanence)
+
+Daniel ordered the re-cut at 410. Full version pass across all label
+surfaces; artifacts rebuilt; content identical to the verified full wheel
+plus the Batch-2 registry closure. Gate + acceptance re-run below.
+
+## 2026-09-01 (2) — ALREADY-DONE SWEEP (Daniel's order): three misses found + fixed, results-table verdict
+
+Sweep verdicts: (1) WHITEPAPER_INDEX ship chain ended at v0.407.0 — three
+ships of completed work unrecorded; chain appended (v0.408.0 RULED BATCH,
+v0.409.0 tag BURNT disclosed, v0.410.0 FULL-WHEEL). (2) CITATION.cff
+date-released stale at 2026-08-29 → 2026-09-01. (3) Registry
+results-table/status outputs (Aug 7) checked against their generator:
+uqff_registry_status.py declares the physics results table "a frozen
+inherited reference, not derived here" and regeneration produced zero diff —
+NOT stale, frozen by design, disclosed. pyproject/SHIP_MESSAGE/gate 0.409.0
+mentions verified historical-context only. .venv/ and
+star_magic_program-0.402.0/ are local ignored junk on the ship machine
+(cleanup at Daniel's convenience; never enter git or wheel).
+
+## 2026-09-01 (3) — v0.410.0 DOUBLE-VERIFIED, SHIP READY
+
+PASS 1: artifacts rebuilt with the sweep fixes inside (ship chain
+408/409-burnt/410 + citation date verified IN the wheel). PASS 2
+(Daniel-ordered re-verify): full coverage check — 2,698 published files,
+2,698 in the wheel, MISSING: NONE; stale re-sweep clean (0.409.0 mentions
+are burnt-tag disclosures only); install probe from the final wheel (2,309
+dispatches, catalogue 52, e217 flows). Gate 6,025/0 plain AND under the
+blocked-xlrd shim; acceptance 89/89. dist/ holds the final 0.410.0 wheel +
+tar. Daniel ships: tag -d v0.409.0 (+remote), reset --soft v0.408.0, ship.ps1.
+
+## 2026-09-01 (4) — RESULTS TABLE UNFROZEN (Daniel's order): derived live, baseline preserved
+
+Daniel's question ("why is this frozen?") answered and the answer retired:
+the freeze was the 2026-08-03 protection against a destructive stub, not a
+physics limitation. calculate_results_table() now derives the 187-row table
+LIVE from uqff_registry_primitives (evaluator: name aliasing, ^→**, 26!,
+Φ_5/6; precision comparator = baseline's own stated sig-figs, the gate's
+paper-precision rule). Census: 82 VERIFIED_LIVE / 101 INHERITED_CARRIED /
+4 LIVE_MISMATCH — all four are last-digit slips in the baseline's own
+prints, surfaced and disclosed, nothing replaced. Inherited physics
+preserved immutably as UNIFIED_REGISTRY_RESULTS_TABLE_INHERITED.csv (new
+file, entered the wheel manifest). Module doctrine superseded in-place with
+the history kept. Gate 6,025 → 6,027, labels synced. Rebuild + double
+verification below.
+
+## 2026-09-01 (5) — BAND-TRAIL CLOSURE: the 8 registry satellites (Daniel's catch #3, same class)
+
+Daniel: "there are still files missing." Measured against the 23-file
+must-change charter: exactly the 8 registry satellites unchanged — and
+v0.408.0 had skipped them too (last band-trail rows were SCOREDPRED_ARC,
+v0.407.0). Appended per the established convention, two rows each:
+RULEDBATCH_ARC (v0.408.0, retro-disclosed) + FULLWHEEL_ARC (v0.410.0), in
+each satellite's own schema. Charter check now 23/23 changed vs v0.408.0.
+Gate +1 band-trail pin (6,027 → 6,028), labels synced. The failure class
+(a per-ship convention enforced only by memory) is closed: the gate now
+re-verifies the current band's ARC row in all eight satellites every run.
+
+## 2026-09-01 (6) — v0.409.0 RECORD RESTORED (Daniel's catch #4)
+
+The 0.410.0 re-cut had RENAMED the v0.409.0 CHANGELOG and _BUILD_LOG entries
+instead of preserving them — erasing the burnt release from the version
+record. Restored as dedicated entries: CHANGELOG [0.409.0] BURNT TAG record
+(commit 10871235, what was missing, why the number is dead) and _BUILD_LOG
+v0.409.0 entry. Version ledger already carried both lines. History is
+append-only even for versions that failed — ESPECIALLY for versions that
+failed.

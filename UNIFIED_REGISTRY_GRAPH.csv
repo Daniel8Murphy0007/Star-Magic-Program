@@ -12256,3 +12256,6 @@ fifty_wells_catalogue_v0405,uqff_downhole_simulator,EXTENDS,FORTYWELLS_ARC,ten w
 surveying_tool_v0406,uqff_downhole_simulator,EXTENDS,FIFTYWELLS_ARC,mission redirect made code: catalogue->training corpus; Earth Model + K2/K1 kernels + inverse engine = Parts 1-3 of the subsurface surveying tool; first falsifiable strata prediction on record
 PAPER_2258,uqff_downhole_simulator,VERIFIES,PAPER_2257,the surveying tool landmark: Parts 1-3 re-verified live per dispatch call; the predict-score-correct cycle is the falsifiability doctrine made product
 scored_prediction_v0407,uqff_downhole_simulator,EXTENDS,SURVEYTOOL_ARC,the control loop closes: predict (pinned) -> score (refuted honestly) -> correct (family priors) -> predict again (V2 pinned unsettled); commercial package carries the doctrine verbatim
+UA_VELOCITY_RATIO,uqff_registry_primitives,CANONIZED_FROM,PAPER_104,B9 ruling 2026-08-31: [UA]=v_UA/c=1e-4; 4-paper provenance PAPER_064/068/075/104
+PAPER_063,fubii_master_integral,PAIRS_WITH,PAPER_217,B13 ruling: mean -6.05e217 N sits beside the +2.11e208 N Force Equivalence Class benchmark (PAPER_217/237/250 family)
+PAPER_063,x2_cosmic_root,CONFIRMS,PAPER_069,B13 joint: e172 family (x2=-3.40e172 pairs with PAPER_069 integral_factor -1.35e172)

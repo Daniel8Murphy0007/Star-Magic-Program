@@ -5,7 +5,7 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.409.0] — 2026-08-31 — THE FULL-WHEEL SHIP
+## [0.410.0] — 2026-09-01 — THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION
 
 ### Fixed
 - **The fifteen-version publication split (v0.394.0–v0.408.0), per Daniel's
@@ -30,8 +30,20 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (1.0/2.0/1.5); normalized aTHz canonical; THz family domain-split
   (1.25 carrier / 1.0 cascade); E_react v¹-divide + PAPER_133 genesis
   provenance root; hadron cluster relabeled 9–11. Backlog 238 → 236 + 1.
-- Gate 6,017 → **6,024** (+2 verification, +2 batch-2, +2 v8/ship,
+- **Batch-2 registry closure** (Daniel's not-enough-files catch): 15 registry
+  row edits + ua_velocity_ratio canonization row (6,792 rows), 3 graph edges,
+  batch citation row, _BUILD_LOG entries for v0.408.0 (retro-disclosed) and
+  v0.409.0 — charter steps 4-6 apply to folds exactly as to wirings.
+- Gate 6,017 → **6,025** (+2 verification, +2 batch-2, +2 v8/ship,
   +2 rewritten in place); backups .PRE_BATCH1_FOLD/.PRE_BATCH2_FOLD.
+
+## [0.409.0] — 2026-08-31 — FIRST FULL-WHEEL PUBLICATION
+
+### Record
+- First publication of the full-wheel program: manifest generated from repo
+  contents, SHIP GUARD v8, Batch-1 verification, Batch 2 fold. Upgraded by
+  0.410.0, which completes the program (Batch-2 registry closure, live
+  results table, band-trail rows, v0.409.0 history entries).
 
 ## [0.408.0] — 2026-08-31 — THE RULED BATCH SHIP
 

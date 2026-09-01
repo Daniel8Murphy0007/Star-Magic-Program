@@ -278,3 +278,5 @@ FORTYWELLS_ARC,DOWNHOLE_CATALOGUE,10 entries + 20 catalog data-files + read_pang
 FIFTYWELLS_ARC,DOWNHOLE_CATALOGUE,10 entries + 20 catalog data-files + 20 catalogue pins + 2 ship pins + SHIP GUARD v7 + 12 live label syncs,entries 41-50 -> catalog/*.txt + sidecars,v0.405.0
 SURVEYTOOL_ARC,DOWNHOLE_CATALOGUE,5 new modules (strata_join/earth_model/forward_model/structural_ladder/inverse_engine) + 3 readers (iodp_table/drift_xls/operator_table) + operator tier + 20 acceptance checks + 22 gate pins,v1.69-v1.77 -> uqff_downhole_simulator/*.py,v0.406.0
 SCOREDPRED_ARC,DOWNHOLE_CATALOGUE,entry 52 + PRIOR_FAMILIES + uqff_survey_view + PAPER_2258 dispatch + commercial/{proposal+bench+renders} + 6 acceptance checks + 8 gate pins,v1.78-v1.80 -> simulator + whitepapers + commercial,v0.407.0
+RULEDBATCH_ARC_v0.408.0_retro,8,Batch 1 rulings mapped to dispatches 008/227/237/250/251/252/254/316 (band-trail row added retroactively at v0.410.0 prep)
+FULLWHEEL_ARC_v0.410.0,2542,full-wheel manifest maps every published file into the wheel (generate_wheel_manifest.py); Batch 2 rulings mapped to dispatches 063/069 + partials 089/112/133/145/147

@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.409.0", "uqff_calculator.VERSION = 0.409.0 (THE FULL-WHEEL SHIP: Daniel's rule - every ship on the wheel; manifest generated from repo contents, SHIP GUARD v8 enforcing; plus the banked Batch-1 verification audit (all seven rulings stand, three record defects corrected) and Batch 2 fold (eight rulings, PAPER_063 e217 reversal, [UA] canonized))")
+assert_that(C.VERSION == "0.410.0", "uqff_calculator.VERSION = 0.410.0 (THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION - v0.409.0 first full-wheel publication upgraded: Daniel's rule - every ship on the wheel; manifest generated from repo contents, SHIP GUARD v8 enforcing; plus the banked Batch-1 verification audit (all seven rulings stand, three record defects corrected) and Batch 2 fold (eight rulings, PAPER_063 e217 reversal, [UA] canonized))")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -15036,6 +15036,33 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BAND-TRAIL CLOSURE (Daniel's still-missing-files catch, 2026-09-01): all 8 registry satellites carry the band rows ----
+_bt_sats = ['UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_GAPS.csv', 'UNIFIED_REGISTRY_DUPLICATES.csv',
+            'UNIFIED_REGISTRY_R1_QUEUE.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv', 'UNIFIED_REGISTRY_R3_LEDGER.csv',
+            'UNIFIED_REGISTRY_XGEO_QUEUE.csv', 'UNIFIED_REGISTRY_XGEO_ROUTES.csv']
+assert_that(all(('FULLWHEEL_ARC' in _readfile(_s23)) and ('RULEDBATCH_ARC' in _readfile(_s23)) for _s23 in _bt_sats),
+            "BAND-TRAIL CLOSURE - Daniel's third catch of the same failure class in one band, and the class is now extinct: every ship appends one band-trail row to EACH of the eight registry satellites (the SCOREDPRED_ARC convention), v0.408.0 skipped all eight and nobody noticed because only existence was pinned - now every satellite must carry the current band's ARC row (FULLWHEEL_ARC) plus the retro-disclosed RULEDBATCH_ARC row, this assertion re-verifies the convention on every gate run, and the 23-file must-change charter is measured 23/23 against the preceding tag before the ship code goes to Daniel")
+
+# ---- RESULTS TABLE UNFROZEN (Daniel's order, 2026-09-01): derived live, baseline preserved ----
+import uqff_registry_status as _urs91
+_rt91 = _urs91.calculate_results_table(write=False)['value']
+assert_that(_rt91['rows'] == 187 and _rt91['VERIFIED_LIVE'] >= 80
+            and _rt91['LIVE_MISMATCH'] <= 4
+            and _shos.path.exists('UNIFIED_REGISTRY_RESULTS_TABLE_INHERITED.csv'),
+            "RESULTS TABLE UNFROZEN (1/2) - Daniel asked WHY the physics results table was frozen and the answer was a scar, not a law: the 2026-08-03 honesty repair froze it to stop a destructive stub from deleting the inherited physics, and no session since had built the live derivation the freeze was waiting for; it exists now - every closed form re-evaluated at generation time from uqff_registry_primitives, 82+ of 187 rows VERIFIED LIVE at the baseline's own stated precision, 101 carried honestly (forms needing more than primitives), and the immutable inherited baseline preserved so the live table can only ADD verification, never subtract physics")
+assert_that('LIVE-DERIVED' in _readfile('UNIFIED_REGISTRY_RESULTS_TABLE.md')
+            and 'INHERITED FROZEN REFERENCE' not in _readfile('UNIFIED_REGISTRY_RESULTS_TABLE.md'),
+            "RESULTS TABLE UNFROZEN (2/2) - THE FOUR MISMATCHES ARE THE PROOF IT WORKS: the live derivation surfaced four last-digit slips in the baseline's own prints (0.0218^2 printed truncated not rounded; 1-0.325*1.94 off by 2e-4; 18^-0.57 off in the fourth digit; 833.33+45.97 summed to 879.31 instead of 879.30) - each flagged LIVE_MISMATCH with both values shown and nothing silently replaced, which is precisely the discipline the freeze was protecting and the live table now enforces better than the freeze ever could")
+
+# ---- BATCH 2 REGISTRY CLOSURE (Daniel's not-enough-files catch, 2026-08-31) ----
+_b2reg = _readfile('UNIFIED_REGISTRY.csv')
+assert_that('-6.05e217 N' in _b2reg and 'ua_velocity_ratio' in _b2reg
+            and 'CANONIZED_BATCH2_2026-08-31' in _b2reg
+            and 'UA_VELOCITY_RATIO' in _readfile('UNIFIED_REGISTRY_GRAPH.csv')
+            and 'RULINGS_BATCH_2' in _readfile('UNIFIED_REGISTRY_CORPUS_CITATIONS.csv')
+            and 'v0.409.0' in _readfile('_BUILD_LOG.md'),
+            "BATCH 2 REGISTRY CLOSURE - Daniel's catch, again the audit that cuts both ways: the Batch 2 fold updated dispatches, index, and gate but SKIPPED charter steps 4-6 (registry rows, graph edges, corpus citations) and the build log - so PAPER_063's registry row still said -6.05e7 N after the ruling reversed it to e217, [UA]'s canonization had no registry row, and _BUILD_LOG had silently missed two ships; all repaired with the e217 row, the ua_velocity_ratio canonization row, three graph edges, the batch citation row, and both build-log entries (the v0.408.0 omission disclosed retroactively, not hidden) - the charter's per-paper protocol applies to FOLDS exactly as it applies to wirings")
 
 # ---- SHIP GUARD v8 + SHIP v0.409.0 (Daniel's full-wheel rule: "EVERY SHIP SHOULD BE ON THE WHEEL") ----
 import subprocess as _sgv8sp

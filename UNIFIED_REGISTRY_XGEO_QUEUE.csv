@@ -1734,3 +1734,5 @@ FORTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,catalogue data ship - no cross-geometry co
 FIFTYWELLS_ARC,n/a,n/a,NOT_APPLICABLE,catalogue data ship - no cross-geometry content,v0.405.0
 SURVEYTOOL_ARC,n/a,n/a,NOT_APPLICABLE,surveying-tool build ship - no cross-geometry content (K3 QCalcGeom re-derivation queued as future arc),v0.406.0
 SCOREDPRED_ARC,n/a,n/a,NOT_APPLICABLE,catalogue+landmark+commercial ship - no cross-geometry content,v0.407.0
+RULEDBATCH_ARC,n/a,n/a,NOT_APPLICABLE,rulings/product band - no cross-geometry content (retro-disclosed at v0.410.0),v0.408.0
+FULLWHEEL_ARC,n/a,n/a,NOT_APPLICABLE,publication-integrity band - no cross-geometry content,v0.410.0
