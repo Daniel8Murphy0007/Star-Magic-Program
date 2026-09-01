@@ -12259,3 +12259,4 @@ scored_prediction_v0407,uqff_downhole_simulator,EXTENDS,SURVEYTOOL_ARC,the contr
 UA_VELOCITY_RATIO,uqff_registry_primitives,CANONIZED_FROM,PAPER_104,B9 ruling 2026-08-31: [UA]=v_UA/c=1e-4; 4-paper provenance PAPER_064/068/075/104
 PAPER_063,fubii_master_integral,PAIRS_WITH,PAPER_217,B13 ruling: mean -6.05e217 N sits beside the +2.11e208 N Force Equivalence Class benchmark (PAPER_217/237/250 family)
 PAPER_063,x2_cosmic_root,CONFIRMS,PAPER_069,B13 joint: e172 family (x2=-3.40e172 pairs with PAPER_069 integral_factor -1.35e172)
+CONSOLIDATED_ARC,v0.411.0,UNIFIES,v0.409.0+v0.410.0,the full-wheel program condensed into one complete self-contained publication (Daniel ruling 2026-09-01)

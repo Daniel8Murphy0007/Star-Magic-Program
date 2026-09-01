@@ -379,3 +379,10 @@ and RULINGS_BATCH_2 (eight rulings; PAPER_063 mean REVERSED e7 -> -6.05e217 N;
 [UA]=1e-4 canonized). Registry family updated for Batch 2 (16 row edits +
 canonization row + 3 graph edges + citations). Gate 6,003 -> 6,025 across the
 band. Wheel 22.3 MB / 2,706 members.
+
+## v0.411.0 — 2026-09-01 — THE CONSOLIDATED FULL-WHEEL PUBLICATION
+v0.409.0 + v0.410.0 condensed into one complete self-contained release: full
+wheel (generated manifest, SHIP GUARD v8, package-data catalog), trust arc
+(Batch-1 verification, Batch-2 fold incl. PAPER_063 e217 + [UA] canonized,
+registry closure), live results table (82 VERIFIED_LIVE / 4 slips disclosed),
+band trails gate-enforced. Gate 6,029/0. Acceptance 89/89.

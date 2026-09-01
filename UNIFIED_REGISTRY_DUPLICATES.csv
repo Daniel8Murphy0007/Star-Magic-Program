@@ -155,3 +155,4 @@ incorporation_family,corporate,FAMILY_RECORD,six documents one stack: same effec
 ikari_lab_family,downhole_catalogue,FAMILY_RECORD,four subduction zones one laboratory discipline: Nankai strength (entry 26) + JFAST slow-slip (31) + Hikurangi rate-state (32) + Costa Rica hot envelopes (33) share MARUM/Ikari provenance; distinct kinds kept distinct,v0.404.0
 RULEDBATCH_ARC_band_record,BAND_RECORD,"v0.408.0 (retro-disclosed): no new duplicate families; Batch 1 confirmed 2.11e208 as ONE shared benchmark (PAPER_217/237/250 family), the anti-duplicate ruling"
 FULLWHEEL_ARC_band_record,BAND_RECORD,"v0.410.0: no new duplicate families; THz family DOMAIN-SPLIT (1.25 carrier / 1.0 cascade) and k4 three-way split are RULED domain records, not duplicates"
+CONSOLIDATED_ARC_band_record,BAND_RECORD,v0.411.0: consolidation release - no new duplicate families

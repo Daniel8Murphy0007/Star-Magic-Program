@@ -158,3 +158,4 @@ SURVEYTOOL_ARC,surveying-tool arc,2,RULINGS_RECEIVED,Daniel ruled: (a) operator 
 SCOREDPRED_ARC,scored-prediction arc,0,NO_NEW_RULINGS,arc executed under standing rulings (family selection direction; honesty doctrine); queued for Daniel unchanged: K4 densities / K3 scope / step-7 recorded-interface / gauge procurement,v0.407.0
 RULEDBATCH_ARC,band v0.408.0 (retro-disclosed),RULED,Daniel answered RULINGS_BATCH_1 (7 clusters),no,B1-B7 on record in RULINGS_QUEUE.md
 FULLWHEEL_ARC,band v0.410.0,RULED,"Daniel answered RULINGS_BATCH_2 (8 clusters, B13 re-asked after deepsearch)",no,B8-B15 on record; e217 reversal executed
+CONSOLIDATED_ARC,band v0.411.0,RULED,Daniel ruling: condense v409+v410 completely,no,executed as one self-contained release

@@ -7169,3 +7169,4 @@ SURVEYTOOL_ARC_SOURCES,IODP_PROC_308_TABLE_T2(doi 10.2204/iodp.proc.308.203.2008
 PAPER_2258,PAPER_1598(g);PAPER_593(G);PAPER_1209CC(structural ladder);PAPER_2148(SM-validity boundary);PAPER_2257(two-stream lineage);KTB_ICDP_GFZ(entry 52 + BHGM);DSDP_ODP_504B(prior family)
 SCOREDPRED_ARC_SOURCES,KTB_ICDP_GFZ(complogs/hb1/60117200 sonic+density excerpt - transport-truncation disclosed);PAPER_2258(landmark);PAPER_2257(lineage);PAPER_1598;PAPER_593;PAPER_1209CC;PAPER_2148
 RULINGS_BATCH_2,"PAPER_063(e217 ruling);PAPER_069(e172 joint);PAPER_089(beta_i-form);PAPER_104([UA] definition);PAPER_112(hadron 9-11);PAPER_116(1-GeV self-rectification);PAPER_133(genesis root);PAPER_145(k4 split);PAPER_147(aTHz normalized);PAPER_149(0.0034 table);QCalc_core_uqff.py(SOURCE4 formulas, Rule-E read-only)"
+CONSOLIDATED_ARC,v0.409.0(first full-wheel publication);v0.410.0(upgrade);RULINGS_BATCH_1;RULINGS_BATCH_2;BATCH_1_VERIFICATION;generate_wheel_manifest.py;SHIP_GUARD_v8

@@ -1,29 +1,29 @@
-v0.410.0 — THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION
+v0.411.0 — THE CONSOLIDATED FULL-WHEEL PUBLICATION (v0.409.0 + v0.410.0 CONDENSED)
 
-DANIEL'S RULE EXECUTED: "EVERY SHIP SHOULD BE ON THE WHEEL."
-The v0.394.0-v0.408.0 audit found a fifteen-version publication split -
-registry CSVs, rulings ledger, whitepaper corpus (2,303 files), commercial
-package, and incorporation PDFs published on GitHub every ship, never in
-the PyPI artifacts. Root cause: ship guard watched git, wheel guard watched
-declared modules, nothing tied them together. Fix, mechanical and permanent:
-- generate_wheel_manifest.py: data-files regenerated from repo contents
-  (~2,540 files; only structural exclusions = py-modules + package dir;
-  operator tier stays out via gitignore = confidentiality unchanged).
-- SHIP GUARD v8: repo<->wheel coverage enforced on every gate run.
+One complete, self-contained release of the full-wheel program.
 
-ALSO IN THIS BAND (the trust arc, banked):
-- BATCH_1_VERIFICATION.md: every ruling claim re-read at source with line
-  citations. ALL SEVEN RULINGS STAND. Three record defects corrected
-  (PAPER_005 was never the "linear outlier" - its L62 states P=F^2*P_GR;
-  f_super attribution PAPER_295-only; rho_fluid=1e-12 table-implied).
-  Standing rule: ledger entries are leads, not evidence.
-- RULINGS_BATCH_2 (8 rulings, source-verified first, folded same day):
-  PAPER_063 mean REVERSED e7 -> -6.05e217 N (Daniel rejected a
-  ledger-evidence sub-claim; the deepsearch changed the answer);
-  [UA]=1e-4=v_UA/c CANONIZED; k4 + THz domain-splits; normalized aTHz;
-  E_react v^1 + PAPER_133 genesis root; hadron cluster 9-11.
-  Backlog 238 -> 236 author-gated + 1 prediction candidate.
+EVERYTHING ON THE WHEEL (~2,540 data-files, wheel ~2,710 members):
+- All 2,303 whitepaper corpus files
+- UNIFIED_REGISTRY.csv (6,793 rows) + graph + citations + all 8 satellites
+- RULINGS_QUEUE.md + RULINGS_BATCH_1/2 + BATCH_1_VERIFICATION
+- commercial/ (pilot proposal, bench readiness, renders)
+- pdf/ (six ENRGYONE incorporation docs + built paper PDFs)
+- Live results table + immutable inherited baseline
+- Build log, band trails, audit reports, ship code
+Manifest GENERATED (generate_wheel_manifest.py); SHIP GUARD v8 enforces
+repo<->wheel coverage forever; catalog ships in-package (every layout).
 
-TOTALS: 2,254 wired (2,309 keys) / gate 6,028/0 / acceptance 89/89 /
-registry 6,792 rows / catalogue 52 public + operator tier.
-Wheel: ~2,700 members. Next: PAPER_2259.
+THE TRUST ARC, CONDENSED:
+- Batch-1 verification: all seven rulings stand; three record defects
+  corrected; "ledger entries are leads, not evidence" is doctrine.
+- Batch-2 fold (8 source-verified rulings): PAPER_063 mean REVERSED to
+  -6.05e217 N; [UA]=1e-4=v_UA/c CANONIZED; k4 + THz domain-splits;
+  normalized aTHz; E_react v^1 + PAPER_133 genesis root; hadron 9-11.
+  Backlog 236 author-gated + 1 prediction candidate.
+- Registry closure: 16 row edits + canonization row + graph edges.
+- Results table LIVE: 82/187 VERIFIED_LIVE, 4 baseline slips disclosed,
+  inherited physics preserved immutably.
+
+TOTALS: 2,254 wired (2,309 keys) / gate 6,029/0 / acceptance 89/89 /
+registry 6,793 rows / catalogue 52 public + operator tier.
+Next: PAPER_2259.

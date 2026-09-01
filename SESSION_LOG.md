@@ -12491,3 +12491,14 @@ record. Restored as dedicated entries: CHANGELOG [0.409.0] BURNT TAG record
 v0.409.0 entry. Version ledger already carried both lines. History is
 append-only even for versions that failed — ESPECIALLY for versions that
 failed.
+
+## 2026-09-01 (7) — v0.411.0 THE CONSOLIDATED FULL-WHEEL PUBLICATION (Daniel: "condense v409 and v410 completely")
+
+v0.410.0 shipped; Daniel ordered the consolidation release. One self-contained
+record of the entire full-wheel program: [0.411.0] CHANGELOG entry carries the
+complete condensed content (nothing referenced-elsewhere), SHIP_MESSAGE
+rewritten, README release paragraph, build log, index chain, registry
+consolidation row (publication_consolidation_v0411 → 6,793 rows), graph
+UNIFIES edge, citation row, CONSOLIDATED_ARC rows in all 8 satellites,
+band-trail pin extended to require the consolidated row, +1 ship-record pin
+(gate 6,028 → 6,029), all labels synced. Verification battery + rebuild below.

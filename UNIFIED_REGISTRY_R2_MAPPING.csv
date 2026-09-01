@@ -280,3 +280,4 @@ SURVEYTOOL_ARC,DOWNHOLE_CATALOGUE,5 new modules (strata_join/earth_model/forward
 SCOREDPRED_ARC,DOWNHOLE_CATALOGUE,entry 52 + PRIOR_FAMILIES + uqff_survey_view + PAPER_2258 dispatch + commercial/{proposal+bench+renders} + 6 acceptance checks + 8 gate pins,v1.78-v1.80 -> simulator + whitepapers + commercial,v0.407.0
 RULEDBATCH_ARC_v0.408.0_retro,8,Batch 1 rulings mapped to dispatches 008/227/237/250/251/252/254/316 (band-trail row added retroactively at v0.410.0 prep)
 FULLWHEEL_ARC_v0.410.0,2542,full-wheel manifest maps every published file into the wheel (generate_wheel_manifest.py); Batch 2 rulings mapped to dispatches 063/069 + partials 089/112/133/145/147
+CONSOLIDATED_ARC_v0.411.0,2,v0.409.0 and v0.410.0 publication records mapped into one consolidated release

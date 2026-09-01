@@ -6707,3 +6707,12 @@ mean (PAPER_063 re-wired, gate pin updated)**; B14 E_react v^1-divide
 canonized + PAPER_133 genesis provenance root; B15 hadron cluster 9-11 +
 statistic replaced. Q-059c -> Q-090c; Q-083a, Q-108c, Q-129c/d, Q-141a/d,
 Q-143b/c/e remain open on their papers.
+
+## TRAIL v0.411.0 (2026-09-01) — THE CONSOLIDATED FULL-WHEEL PUBLICATION
+
+Daniel's rulings executed this band: (1) v0.409.0 stays in history as the
+FIRST FULL-WHEEL PUBLICATION — upgraded, never removed; (2) v0.410.0 named
+THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION; (3) v0.411.0 condenses
+both into one complete self-contained release. No new physics rulings; the
+open queue stands at 236 Daniel-gated papers + 1 OPEN_CANDIDATE. Next
+rulings batch (Batch 3) assembles on Daniel's GO.

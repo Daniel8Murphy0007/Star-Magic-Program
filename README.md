@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.410.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.410.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.411.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.411.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6028%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6029%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2309-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.410.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.411.0 complete-compile campaign live**
 
-**This release (v0.410.0): THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION — Daniel's rule: every ship goes on the wheel.** An audit of v0.394.0–v0.408.0 found a fifteen-version publication split: the ship-integrity guard verified every release reached git, the wheel guard verified every declared module reached the wheel, and no guard tied the two together — so the 6,792-row registry family, the 396 KB rulings ledger, the entire 2,303-file whitepaper corpus, the commercial package, and the ENRGYONE incorporation PDFs were fully published on GitHub while the PyPI artifacts silently carried a curated subset. The condensed physics itself was never at risk — `uqff_calculator.py` IS the condensation and has shipped complete in every artifact — but the evidentiary trail was split across channels. **The fix is mechanical and permanent:** `generate_wheel_manifest.py` regenerates the data-files manifest from the repository contents (~2,540 files), and **SHIP GUARD v8** goes red on the first file that ever falls through again. Also in this band, banked from the trust arc: the **Batch-1 verification audit** (every ruling claim re-read at the source with line citations — all seven rulings stand, three record defects found and corrected, 'ledger entries are leads, not evidence' canonized as doctrine) and the **Batch 2 fold** (eight more rulings, every question source-verified first: the PAPER_063 ensemble mean REVERSED to −6.05×10²¹⁷ N after Daniel rejected a ledger-evidence sub-claim and the ordered deepsearch found §6 coherent under the large family; [UA] = 1e-4 = v_UA/c canonized into the registry; k4 and the THz family domain-split; the normalized aTHz form canonical; E_react at v¹ with PAPER_133 the genesis provenance root; the hadron cluster relabeled 9–11). **Totals: 2,254 wired (2,309 DISPATCH keys) / gate 6,028 green / 4,181 defs / acceptance 89 green / registry 6,792 rows / backlog 236 author-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next paper: PAPER_2259.**
+**This release (v0.411.0): THE CONSOLIDATED FULL-WHEEL PUBLICATION — v0.409.0 and v0.410.0 condensed into one complete release.** The full-wheel program, whole, in one place: the PyPI artifacts carry EVERY published file (~2,540 data-files — all 2,303 whitepaper corpus files, the 6,793-row registry family with its falsifiability graph and corpus citations, the complete rulings ledger and both ruled batches, the commercial package, the ENRGYONE incorporation documents, the audit reports, the band trails) with the manifest GENERATED from repository contents by `generate_wheel_manifest.py` and enforced forever by **SHIP GUARD v8** — the wheel and the repository can never silently diverge again. Condensed within it, the whole trust arc: the **Batch-1 verification audit** (every ruling claim re-read at the source with line citations; all seven rulings stand; 'ledger entries are leads, not evidence' is doctrine), the **Batch-2 fold** (eight source-verified rulings including the PAPER_063 ensemble-mean reversal to −6.05×10²¹⁷ N and the canonization of [UA] = 1e-4 = v_UA/c), the **live-derived results table** (82 of 187 physics rows re-derived and VERIFIED at generation time from the primitives, four last-digit baseline slips surfaced and disclosed, the inherited physics preserved immutably), the **Batch-2 registry closure** (16 row edits, canonization row, graph edges, citations), and the **band-trail convention** now gate-enforced across all eight registry satellites. **Totals: 2,254 wired (2,309 DISPATCH keys) / gate 6,029 green / 4,181 defs / acceptance 89 green / registry 6,793 rows / backlog 236 author-gated + 1 prediction candidate / catalogue 52 public entries + operator tier / wheel ~2,710 members. Next paper: PAPER_2259.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.410.0)
+## What is currently shipped (v0.411.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,792 rows**. Fidelity gate: **6,028 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,793 rows**. Fidelity gate: **6,029 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

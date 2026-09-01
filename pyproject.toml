@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.410.0"
-description = "Star-Magic UQFF calculator v0.410.0: THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION. Every published file now ships on the wheel (manifest generated from repo contents, SHIP GUARD v8): registry 6,792 rows, rulings ledger, 2,303 whitepaper files, commercial + incorporation docs. Plus Batch-1 verification (all rulings stand) and Batch 2 fold (8 rulings, PAPER_063 e217 reversal, [UA] canonized). 2,254 dispatches, gate 6,028/0, acceptance 89/89. Next: PAPER_2259."
+version = "0.411.0"
+description = "Star-Magic UQFF calculator v0.411.0: THE CONSOLIDATED FULL-WHEEL PUBLICATION - v0.409.0 + v0.410.0 condensed into one complete release. Every published file on the wheel (~2,540 data-files: 2,303 whitepapers, registry 6,792 rows, rulings ledger, commercial + incorporation docs), SHIP GUARD v8, Batch-1 verification, Batch-2 fold (PAPER_063 e217, [UA] canonized), live results table (82 VERIFIED_LIVE), band trails. 2,254 dispatches, gate 6,029/0, acceptance 89/89. Next: PAPER_2259."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

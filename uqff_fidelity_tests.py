@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.410.0", "uqff_calculator.VERSION = 0.410.0 (THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION - v0.409.0 first full-wheel publication upgraded: Daniel's rule - every ship on the wheel; manifest generated from repo contents, SHIP GUARD v8 enforcing; plus the banked Batch-1 verification audit (all seven rulings stand, three record defects corrected) and Batch 2 fold (eight rulings, PAPER_063 e217 reversal, [UA] canonized))")
+assert_that(C.VERSION == "0.411.0", "uqff_calculator.VERSION = 0.411.0 (THE CONSOLIDATED FULL-WHEEL PUBLICATION: v0.409.0 first full-wheel publication + v0.410.0 upgrade condensed into one complete release - manifest generated from repo contents, SHIP GUARD v8, Batch-1 verification, Batch-2 fold with the PAPER_063 e217 ruling and [UA] canonization, live results table, band trails, full registry closure)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9557,7 +9557,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'PRODUCT_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'CONSOLIDATED_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15037,11 +15037,16 @@ _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
 
+# ---- SHIP v0.411.0: THE CONSOLIDATED FULL-WHEEL PUBLICATION (CONSOLIDATED_ARC record) ----
+assert_that('publication_consolidation_v0411' in _readfile('UNIFIED_REGISTRY.csv')
+            and 'CONSOLIDATED_ARC' in _readfile('UNIFIED_REGISTRY_GRAPH.csv'),
+            "SHIP v0.411.0 (CONSOLIDATED_ARC): ONE COMPLETE RELEASE - v0.409.0 (first full-wheel publication: generated manifest, SHIP GUARD v8, Batch-1 verification, Batch-2 fold) and v0.410.0 (the upgrade: registry closure, live results table, band trails, history records) condensed into a single self-contained publication whose artifacts carry every published file, whose records reference nothing outside themselves, and whose registry row + graph edge make the consolidation itself a first-class citizen of the ledger")
+
 # ---- BAND-TRAIL CLOSURE (Daniel's still-missing-files catch, 2026-09-01): all 8 registry satellites carry the band rows ----
 _bt_sats = ['UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_GAPS.csv', 'UNIFIED_REGISTRY_DUPLICATES.csv',
             'UNIFIED_REGISTRY_R1_QUEUE.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv', 'UNIFIED_REGISTRY_R3_LEDGER.csv',
             'UNIFIED_REGISTRY_XGEO_QUEUE.csv', 'UNIFIED_REGISTRY_XGEO_ROUTES.csv']
-assert_that(all(('FULLWHEEL_ARC' in _readfile(_s23)) and ('RULEDBATCH_ARC' in _readfile(_s23)) for _s23 in _bt_sats),
+assert_that(all(('CONSOLIDATED_ARC' in _readfile(_s23)) and ('FULLWHEEL_ARC' in _readfile(_s23)) and ('RULEDBATCH_ARC' in _readfile(_s23)) for _s23 in _bt_sats),
             "BAND-TRAIL CLOSURE - Daniel's third catch of the same failure class in one band, and the class is now extinct: every ship appends one band-trail row to EACH of the eight registry satellites (the SCOREDPRED_ARC convention), v0.408.0 skipped all eight and nobody noticed because only existence was pinned - now every satellite must carry the current band's ARC row (FULLWHEEL_ARC) plus the retro-disclosed RULEDBATCH_ARC row, this assertion re-verifies the convention on every gate run, and the 23-file must-change charter is measured 23/23 against the preceding tag before the ship code goes to Daniel")
 
 # ---- RESULTS TABLE UNFROZEN (Daniel's order, 2026-09-01): derived live, baseline preserved ----

@@ -5,6 +5,46 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.411.0] — 2026-09-01 — THE CONSOLIDATED FULL-WHEEL PUBLICATION (v0.409.0 + v0.410.0 condensed)
+
+The complete full-wheel program in one self-contained release. Everything
+below ships IN the artifacts of this version; nothing is referenced-elsewhere.
+
+### The full-wheel program (complete)
+- **Every published file is on the wheel**: ~2,540 data-files — all 2,303
+  whitepaper corpus files, UNIFIED_REGISTRY.csv (6,793 rows) + falsifiability
+  graph + corpus citations + all satellite ledgers, RULINGS_QUEUE.md and both
+  ruled batches, BATCH_1_VERIFICATION.md, commercial/ (pilot proposal, bench
+  readiness, renders), pdf/ (six ENRGYONE incorporation documents + built
+  paper PDFs), audit reports, band trails, build log, ship code.
+- **generate_wheel_manifest.py**: the data-files manifest is GENERATED from
+  repository contents; hand-curation abolished.
+- **SHIP GUARD v8**: repo↔wheel coverage enforced on every gate run; the
+  catalog ships inside the package via package-data (works on every install
+  layout); SHIP GUARD v7 superseded accordingly.
+### The trust arc (complete)
+- **Batch-1 verification**: every ruling claim re-read at source with line
+  citations; ALL SEVEN RULINGS STAND; three record defects corrected;
+  standing rule: ledger entries are leads, not evidence.
+- **Batch-2 fold** (eight source-verified rulings): PAPER_063 ensemble mean
+  REVERSED to −6.05e217 N (deepsearch-backed); [UA] = 1e-4 = v_UA/c
+  CANONIZED (UA_VELOCITY_RATIO); k4 domain-split (1.0/2.0/1.5); normalized
+  aTHz canonical; THz family domain-split (1.25 carrier / 1.0 cascade);
+  E_react v¹-divide + PAPER_133 genesis provenance root; hadron cluster
+  relabeled 9–11. Backlog 238 → 236 + 1 candidate.
+- **Batch-2 registry closure**: 16 registry row edits + canonization row +
+  3 graph edges + citations + build-log entries.
+- **Results table UNFROZEN**: derived live from uqff_registry_primitives —
+  82/187 rows VERIFIED_LIVE at the baseline's own precision, 101 carried,
+  4 last-digit baseline slips surfaced and disclosed; inherited physics
+  preserved immutably (UNIFIED_REGISTRY_RESULTS_TABLE_INHERITED.csv).
+- **Band-trail convention gate-enforced**: all eight registry satellites
+  carry RULEDBATCH_ARC + FULLWHEEL_ARC + CONSOLIDATED_ARC rows; the 23-file
+  must-change charter measured mechanically.
+### Gate
+- 6,003 (v0.407.0) → **6,029** across the program; acceptance 89/89.
+
+
 ## [0.410.0] — 2026-09-01 — THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION
 
 ### Fixed
