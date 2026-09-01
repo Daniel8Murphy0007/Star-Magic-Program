@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.408.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.408.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.409.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.409.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6017%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6024%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2309-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.408.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.409.0 complete-compile campaign live**
 
-**This release (v0.408.0): THE RULED BATCH SHIP — the surveying tool finished its skeleton, and the author started answering the corpus back.** Downhole v1.81–v1.85 built Parts 4–7 of the subsurface surveying tool: **well-to-well correlation** (the honest finding: zero cross-site depth-frame correlations survive the 5-common-bin floor today — the refusal census IS the result — while the ACEX master chronology 0–55,904 ka anchors the time frame), the **blind-validation harness** (leave-one-out over the same machinery clients get: 14 pairs, best 0.48% MAE, worst 22.37% printed beside it, median 1σ coverage 0.67 against the honest 0.68 target, regenerated live so the accuracy table can never be a stale marketing snapshot), **SEG-Y seismic ingest** (rev-1 reader with exact IBM float conversion, validated by round-trip, AWAITING_FIELD_SEGY stated), and the **client shell** (project files + a generated report that cannot say what the gate cannot prove, plus the Qt geology tab). The **UQFF differentiator woke** (v1.85): U_i computed and reported (Sun 2.75e-7 EXACT, Earth 8.021e-6) but never silently multiplied in; the PAPER_1078 master equation re-derived per Rule E reproducing the full Sun chain to 1.197e-12 m; and the channel-ranking study delivered its first honest finding — all three candidate channels are informationally degenerate transforms of the density column, and breaking the degeneracy requires K4's geological rungs, which are the author's to supply. **Then the wiring campaign resumed and its designed rhythm ran for the first time:** the drainage audit proved the whole OPEN backlog author-gated (zero mechanical folds left), RULINGS_BATCH_1 condensed the seven highest-leverage clusters, **Daniel answered all seven in one sitting, and the fold landed the same day — eight papers OPEN_RULING → RULED** (GW D² scaling canonical; B_crit in Gauss; the ω₀=1e-12 Force Equivalence Class confirmed with its 2.11e208 N shared benchmark; f_super = 1.411e15 exposing a spurious confirmation; the ρ×length normalization bridge; Eta Carinae at 150 M☉; the a_wind fix authorized), with every ruling gate-pinned and ledgered. Ten unnumbered files reclassified as dock-audited reference docs; fossil census lines superseded. **Totals: 2,254 wired (2,309 DISPATCH keys) / gate 6,017 green / 4,181 defs / acceptance 89 green / registry 6,791 rows / backlog 238 author-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next paper: PAPER_2259.**
+**This release (v0.409.0): THE FULL-WHEEL SHIP — Daniel's rule: every ship goes on the wheel.** An audit of v0.394.0–v0.408.0 found a fifteen-version publication split: the ship-integrity guard verified every release reached git, the wheel guard verified every declared module reached the wheel, and no guard tied the two together — so the 6,791-row registry family, the 396 KB rulings ledger, the entire 2,303-file whitepaper corpus, the commercial package, and the ENRGYONE incorporation PDFs were fully published on GitHub while the PyPI artifacts silently carried a curated subset. The condensed physics itself was never at risk — `uqff_calculator.py` IS the condensation and has shipped complete in every artifact — but the evidentiary trail was split across channels. **The fix is mechanical and permanent:** `generate_wheel_manifest.py` regenerates the data-files manifest from the repository contents (~2,540 files), and **SHIP GUARD v8** goes red on the first file that ever falls through again. Also in this band, banked from the trust arc: the **Batch-1 verification audit** (every ruling claim re-read at the source with line citations — all seven rulings stand, three record defects found and corrected, 'ledger entries are leads, not evidence' canonized as doctrine) and the **Batch 2 fold** (eight more rulings, every question source-verified first: the PAPER_063 ensemble mean REVERSED to −6.05×10²¹⁷ N after Daniel rejected a ledger-evidence sub-claim and the ordered deepsearch found §6 coherent under the large family; [UA] = 1e-4 = v_UA/c canonized into the registry; k4 and the THz family domain-split; the normalized aTHz form canonical; E_react at v¹ with PAPER_133 the genesis provenance root; the hadron cluster relabeled 9–11). **Totals: 2,254 wired (2,309 DISPATCH keys) / gate 6,024 green / 4,181 defs / acceptance 89 green / registry 6,791 rows / backlog 236 author-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next paper: PAPER_2259.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -68,7 +68,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.408.0)
+## What is currently shipped (v0.409.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -85,7 +85,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,791 rows**. Fidelity gate: **6,017 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,791 rows**. Fidelity gate: **6,024 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

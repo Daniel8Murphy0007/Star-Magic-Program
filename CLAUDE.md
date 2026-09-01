@@ -141,3 +141,28 @@ When a later paper supersedes an earlier wiring: update the dispatch, keep the
 old value in the registry row's history via a supersession note, tighten the
 gate assertion, log it in SESSION_LOG. Convergence is the goal, not first-pass
 perfection.
+
+## HARD-WON STANDING LESSON (2026-08-31): SOURCE-VERIFIED RULINGS ONLY
+
+Daniel's catch, verbatim context: batch ruling questions were being built from
+RULINGS_QUEUE summaries without re-reading the papers, and one summary had
+mischaracterized PAPER_005 (called it the "linear outlier" when its L62 states
+the squared convention). RULE: no ruling question goes to Daniel without (1)
+re-reading the source paper, (2) verbatim quotes with file:line citations,
+(3) independent recomputation of every number in the claim. Ledger entries
+are leads, not evidence. Full audit pattern: BATCH_1_VERIFICATION.md.
+
+## HARD-WON STANDING LESSON (2026-08-31): THE FULL-WHEEL RULE
+
+Daniel's ruling, verbatim: "EVERY SHIP SHOULD BE ON THE WHEEL." The
+v0.394.0-v0.408.0 publication split happened because the ship-integrity
+guard verified git-side completeness and the wheel guard verified
+declared-module completeness, and NO GUARD tied repo contents to the wheel
+manifest - fifteen versions of green gates while the registry, rulings
+ledger, whitepapers, commercial docs, and incorporation PDFs never reached
+PyPI. RULE: the data-files manifest is GENERATED (generate_wheel_manifest.py,
+run at every ship prep), never hand-curated; SHIP GUARD v8 enforces
+repo<->wheel coverage; the only exclusions are structural (py-modules,
+package dir) and confidentiality (untracked operator tier). Guard the SEAM
+between guards: any property enforced on two sides separately is unenforced
+in the middle.

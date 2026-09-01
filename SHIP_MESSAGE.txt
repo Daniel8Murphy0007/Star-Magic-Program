@@ -1,39 +1,29 @@
-v0.408.0 — THE RULED BATCH SHIP
+v0.409.0 — THE FULL-WHEEL SHIP
 
-The surveying tool finished its seven-part skeleton, and the author started
-answering the corpus back.
+DANIEL'S RULE EXECUTED: "EVERY SHIP SHOULD BE ON THE WHEEL."
+The v0.394.0-v0.408.0 audit found a fifteen-version publication split -
+registry CSVs, rulings ledger, whitepaper corpus (2,303 files), commercial
+package, and incorporation PDFs published on GitHub every ship, never in
+the PyPI artifacts. Root cause: ship guard watched git, wheel guard watched
+declared modules, nothing tied them together. Fix, mechanical and permanent:
+- generate_wheel_manifest.py: data-files regenerated from repo contents
+  (~2,540 files; only structural exclusions = py-modules + package dir;
+  operator tier stays out via gitignore = confidentiality unchanged).
+- SHIP GUARD v8: repo<->wheel coverage enforced on every gate run.
 
-DOWNHOLE v1.81-v1.85 (Parts 4-7 + the differentiator):
-- uqff_correlation: time frame (ACEX master chronology 0-55,904 ka) +
-  depth-frame census — the honest finding is ZERO cross-site correlations
-  survive the 5-common-bin floor today; the refusal census is the result.
-- uqff_blind_harness: standing leave-one-out accuracy report (14 pairs,
-  best 0.48% MAE, worst 22.37% printed beside it, median coverage 0.67 vs
-  0.68 target) — regenerated live, can never be a stale snapshot.
-- uqff_segy: SEG-Y rev-1 reader (IEEE + exact IBM float), validated by
-  round-trip, AWAITING_FIELD_SEGY stated.
-- uqff_project: project files + generated client report (a report cannot
-  say what the gate cannot prove) + CLI `report` + Qt geology tab.
-- uqff_differentiator: U_i wired-as-reported (Sun 2.75e-7 EXACT, Earth
-  8.021e-6, never silently multiplied); PAPER_1078 re-derived per Rule E
-  (Sun chain 1.197e-12 m); channel ranking's first finding — all three
-  candidate channels are degenerate transforms of density; K4 breaks it.
+ALSO IN THIS BAND (the trust arc, banked):
+- BATCH_1_VERIFICATION.md: every ruling claim re-read at source with line
+  citations. ALL SEVEN RULINGS STAND. Three record defects corrected
+  (PAPER_005 was never the "linear outlier" - its L62 states P=F^2*P_GR;
+  f_super attribution PAPER_295-only; rho_fluid=1e-12 table-implied).
+  Standing rule: ledger entries are leads, not evidence.
+- RULINGS_BATCH_2 (8 rulings, source-verified first, folded same day):
+  PAPER_063 mean REVERSED e7 -> -6.05e217 N (Daniel rejected a
+  ledger-evidence sub-claim; the deepsearch changed the answer);
+  [UA]=1e-4=v_UA/c CANONIZED; k4 + THz domain-splits; normalized aTHz;
+  E_react v^1 + PAPER_133 genesis root; hadron cluster 9-11.
+  Backlog 238 -> 236 author-gated + 1 prediction candidate.
 
-WIRING CAMPAIGN RESUMED — the designed rhythm ran end-to-end:
-- Drainage audit: dispatch layer complete; entire OPEN backlog author-gated
-  (zero mechanical folds remained). Count discipline enforced by Daniel's
-  own catch (246-vs-247 header) — reconciled everywhere same hour.
-- RULINGS_BATCH_1: seven clusters condensed; Daniel answered all seven;
-  fold landed same day. EIGHT papers OPEN_RULING -> RULED_BATCH1
-  (008/227/237/250/251/252/254/316): D^2 GW scaling; B_crit Gauss; Force
-  Equivalence Class confirmed (2.11e208 shared benchmark, formulas
-  domain-split); f_super 1.411e15 (spurious confirmation exposed);
-  rho-x-length bridge (Q-216b opened); Eta Carinae 150 M_sun (PAPER_237
-  recomputed x10); a_wind 4e12 -> 4e3. 8 registry rows superseded with
-  trail. Backlog 246 -> 238 author-gated + 1 prediction candidate.
-- Ten unnumbered files reclassified as dock-audited reference docs;
-  fossil census lines superseded.
-
-TOTALS: 2,254 wired (2,309 keys) / gate 6,017/0 / acceptance 89/89 /
+TOTALS: 2,254 wired (2,309 keys) / gate 6,024/0 / acceptance 89/89 /
 registry 6,791 rows / catalogue 52 public + operator tier.
-Backup: uqff_calculator.py.PRE_BATCH1_FOLD. Next: PAPER_2259.
+Wheel: ~2,700 members. Next: PAPER_2259.

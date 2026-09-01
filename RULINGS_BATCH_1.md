@@ -69,3 +69,9 @@ Q-216b). B6: 2.984e32 kg (150 M_sun). B7: yes, update to 4e3.
 Folded same day: 8 dispatches RULED (PAPER_008/227/237/250/251/252/254/316);
 ledger updated; backlog 246 -> 238 Daniel-gated. Full dispositions in
 RULINGS_QUEUE.md "BATCH 1 RULINGS".
+
+## VERIFICATION CORRECTION (2026-08-31, post-answers)
+
+B1's framing ("PAPER_005 the lone linear outlier") was wrong — PAPER_005 L62
+states P = F_combined^2 x P_GR explicitly. The D^2 ruling stands, unanimous.
+Full audit: BATCH_1_VERIFICATION.md.

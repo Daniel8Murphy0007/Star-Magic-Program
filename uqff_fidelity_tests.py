@@ -117,7 +117,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.408.0", "uqff_calculator.VERSION = 0.408.0 (THE RULED BATCH SHIP: surveying tool Parts 4-7 complete + UQFF differentiator awake; the wiring campaign's designed rhythm ran end-to-end for the first time - audit, condensed batch, the author's seven rulings, same-day fold: eight papers OPEN_RULING -> RULED with every value change pinned; backlog 238 author-gated + 1 prediction candidate)")
+assert_that(C.VERSION == "0.409.0", "uqff_calculator.VERSION = 0.409.0 (THE FULL-WHEEL SHIP: Daniel's rule - every ship on the wheel; manifest generated from repo contents, SHIP GUARD v8 enforcing; plus the banked Batch-1 verification audit (all seven rulings stand, three record defects corrected) and Batch 2 fold (eight rulings, PAPER_063 e217 reversal, [UA] canonized))")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -1670,8 +1670,8 @@ assert_that(abs(_r063['kappa_mcmc_per_day'] - 0.00052) < 1e-8,
             "PAPER_063: kappa_MCMC = 0.00052/day across 47 systems")
 assert_that(abs(_r063['kappa_deviation_pct'] - 4.0) < 0.01,
             "PAPER_063: KAPPA primitive validated - MCMC 4 pct above canonical, inside 95 pct CI")
-assert_that(abs(_r063['planck_ratio'] - 5.0e-37) / 5.0e-37 < 0.01,
-            "PAPER_063: mean/F_Planck = 5.0e-37 EXACT closure pins ensemble mean -6.05e7 N (Q-059a)")
+assert_that(abs(_r063['planck_ratio'] - 5.0e173) / 5.0e173 < 0.01 and _r063['f_ubii_mean_n'] == -6.05e217,
+            "PAPER_063: RULED B13 2026-08-31 - ensemble mean = -6.05e217 N (sec-6 coherent family: clean-LaTeX header, 'far exceeds Planck' prose, e172 cosmic-root pairing, e208 family benchmark); mean/F_Planck = 5.0e173; the earlier e7 pin was built on a ledger reading Daniel rejected and the deepsearch overturned")
 assert_that(abs(_r063['q_wave_ism'] - 3.97e-5) / 3.97e-5 < 0.01,
             "PAPER_063: Q_wave ISM = B^2/2mu0 = 3.97e-5 J/m3 verified")
 assert_that(abs(_r063['q_wave_magnetar'] - 7.68e26) / 7.68e26 < 0.01,
@@ -15021,8 +15021,8 @@ assert_that(sum(1 for _l in _rb1.splitlines() if _l.startswith('## B')) == 7
             and 'Daniel-gated' in _rb1 and 'RULINGS_QUEUE.md' in _rb1,
             "CAMPAIGN RESUMPTION (1/2) - THE BACKLOG NAMED HONESTLY: the 2026-08-31 drainage audit found the dispatch layer complete and the entire OPEN backlog Daniel-gated by charter design (ledger RESOLVED section '(none yet)'; every Q pending; the one recorded self-rectification reserves its edit for Daniel) - so instead of pretending to drain what only Daniel can drain, the session produced RULINGS_BATCH_1.md: seven multi-paper clusters condensed to one-line answers, est. ~35-40 of the 246 Daniel-gated papers clearing on the fold pass (the 247th open paper, PAPER_1950, is an OPEN_CANDIDATE prediction awaiting observation, not a ruling - split corrected per Daniel's 2026-08-31 catch) that follows the answers")
 assert_that('Zero mechanical folds remain' in _wdq
-            and '238 Daniel-gated + 1 OPEN_CANDIDATE = 239' in _wdq
-            and _wdq.count('- PAPER_') == 239
+            and (lambda _mm: _mm is not None and _wdq.count('- PAPER_') == int(_mm.group(1)) + 1)(
+                __import__('re').search(r'(\d+) Daniel-gated \+ 1 OPEN_CANDIDATE = (\d+)', _wdq))
             and '| \u2b1c |' not in _wix
             and _wix.count('| \U0001F4D6 |') == 10
             and 'Rule B' in _wix,
@@ -15036,6 +15036,50 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- SHIP GUARD v8 + SHIP v0.409.0 (Daniel's full-wheel rule: "EVERY SHIP SHOULD BE ON THE WHEEL") ----
+import subprocess as _sgv8sp
+if _shos.path.isdir('.git'):
+    _sgv8out = _sgv8sp.run(['git', 'ls-files', '--cached', '--others', '--exclude-standard'],
+                           capture_output=True, text=True)
+    _sgv8files = [_l8 for _l8 in _sgv8out.stdout.splitlines() if _l8.strip()]
+    _sgv8pp = _readfile('pyproject.toml')
+    _sgv8mods = set(_stre.findall(r'"([^"]+)"', _stre.search(r'py-modules\s*=\s*\[(.*?)\]', _sgv8pp, _stre.S).group(1)))
+    _sgv8missing = [_f8 for _f8 in _sgv8files
+                    if not (_f8.endswith('.py') and _f8[:-3] in _sgv8mods)
+                    and not _f8.startswith('uqff_downhole_simulator/')
+                    and ('"%s",' % _f8) not in _sgv8pp]
+    assert_that(_sgv8out.returncode == 0 and len(_sgv8files) > 2600 and not _sgv8missing
+                and '[tool.setuptools.package-data]' in _sgv8pp and 'include-package-data = true' in _sgv8pp,
+                "SHIP GUARD v8 (Daniel's full-wheel rule, 2026-08-31): EVERY file the ship publishes to the repository must be in the wheel manifest - the v0.394.0-v0.408.0 gap existed because the ship-integrity guard watched git and the wheel guard watched declared modules and NO GUARD tied the two together, so the registry CSVs, the rulings ledger, the whitepaper corpus, the commercial package, and the ENRGYONE incorporation PDFs were published on GitHub for fifteen versions while the PyPI artifacts silently carried a curated subset; the manifest is now GENERATED from the repository contents (generate_wheel_manifest.py) and this guard goes red on the first file that ever falls through again - missing sample: %s" % _sgv8missing[:5])
+else:
+    assert_that(True, "SHIP GUARD v8: repo-context check skipped (no .git here - installed-wheel context; the guard runs on every ship machine)")
+assert_that('generate_wheel_manifest' in _readfile('pyproject.toml') or _shos.path.exists('generate_wheel_manifest.py'),
+            "SHIP v0.409.0 (FULLWHEEL_ARC): THE WHEEL BECAME THE SHIP - Daniel's ruling closed the fifteen-version publication split: the manifest generator turns 'what is in the repository' into 'what is on PyPI' mechanically, ~2,540 data-files including the 6,791-row registry family, the 396KB rulings ledger, all 2,303 whitepaper files, the commercial package, and the incorporation PDFs; the condensed physics was always fully shipped (the calculator IS the condensation) but the evidentiary trail now ships beside it, and the two publication channels can never silently diverge again")
+
+# ---- RULINGS BATCH 2 FOLD 2026-08-31: eight more rulings, every question source-verified first ----
+from uqff_registry_primitives import UA_VELOCITY_RATIO as _uavr
+assert_that(_uavr == 1.0e-4
+            and C.calc('PAPER_063')['status'].startswith('RULED_BATCH2')
+            and C.calc('PAPER_069')['status'].startswith('RULED_BATCH2')
+            and C.calc('PAPER_063')['value']['f_ubii_mean_n'] == -6.05e217,
+            "BATCH 2 FOLD (1/2) - THE STANDARD HELD: every Batch 2 question reached Daniel source-verified (papers re-read, SOURCE4 code located and read, every number recomputed) and the standard immediately paid for itself - Daniel rejected the one sub-claim that had slipped through on ledger evidence (the 'Planck-ratio column'), the ordered deepsearch found the paper's sec-6 to be internally coherent under the LARGE reading (clean-LaTeX e217 header + 'far exceeds' prose + e172 cosmic-root pairing + the e208 family benchmark), and the ruling REVERSED the wired e7 value - the first ruling in the campaign where the deepsearch overturned the original wiring, which is the system working, not failing")
+assert_that('ruling_batch2' in C.calc('PAPER_112')
+            and 'footer_ruling' in C.calc('PAPER_089')
+            and 'athz_ruling' in C.calc('PAPER_147')
+            and 'e_react_ruling' in C.calc('PAPER_133')
+            and 'k4_ruling' in C.calc('PAPER_145'),
+            "BATCH 2 FOLD (2/2) - EIGHT RULINGS LANDED: B8 the PAPER_089 footer stands as the beta_i-form evaluation (147 vs 148.7, 1.2pct disclosed) with the factor string flagged as pasted drift; B9 [UA]=1e-4=v_UA/c canonized into the registry; B10 k4 DOMAIN-SPLIT three ways with MUGE-g confirmed as the parametric system-scale correction; B11 the normalized aTHz form canonical because it reproduces the tables the papers actually printed; B12 the THz family DOMAIN-SPLIT with 1.25 THz keeping the carrier crown; B14 E_react v-to-the-first canonized with PAPER_133 marked the genesis provenance root; B15 the hadron cluster relabeled 9-11 by the corpus's own 1-GeV row - each ruling written into the dispatch it governs, none applied wider than its evidence")
+
+# ---- BATCH 1 VERIFICATION 2026-08-31 (Daniel-ordered): every ruling claim re-read at the source ----
+_bv1 = _readfile('BATCH_1_VERIFICATION.md')
+assert_that('ALL SEVEN RULINGS STAND' in _readfile('RULINGS_QUEUE.md')
+            and 'DEFECT 1' in _bv1 and 'DEFECT 2' in _bv1 and 'DEFECT 3' in _bv1
+            and 'F_combined^2' in _bv1,
+            "BATCH 1 VERIFICATION (1/2) - THE AUDIT DANIEL ORDERED: every claim in every Batch 1 ruling question was re-read against the source paper with line citations and independent recomputation - all seven rulings STAND, and the audit found exactly what it was built to find: three record defects (the Q-008 ledger text had mischaracterized PAPER_005 as the 'linear outlier' when its own L62 states P=F^2*P_GR; the f_super attribution claimed PAPER_302 states what only PAPER_295 states; and PAPER_228's rho_fluid=1e-12 is uniquely implied by its table, not printed) - none overturns a ruling, all are on the record")
+assert_that('SOURCE-VERIFIED RULINGS ONLY' in _readfile('CLAUDE.md')
+            and 'Ledger entries are leads, not evidence' in _bv1,
+            "BATCH 1 VERIFICATION (2/2) - THE STANDING RULE: no ruling question reaches Daniel without the source paper re-read, verbatim line-cited quotes, and independent recomputation - ledger entries are leads, not evidence; this is now CLAUDE.md doctrine because the shortcut it forbids is exactly the class of AI failure that cost the author ten months, and the machinery that audits the corpus must itself be auditable")
 
 # ---- SHIP v0.408.0: THE RULED BATCH SHIP (RULEDBATCH_ARC record) ----
 assert_that(tuple(int(_x408) for _x408 in _ds11.__version__.split('.')) >= (1, 85, 0)
@@ -15120,9 +15164,13 @@ assert_that(('## What is currently shipped (v%s)' % _VER) in _g6_readme
 # ---- SHIP GUARD v7: catalog <-> pyproject data-files CLOSURE (canonized after the wells-41-50 audit catch, 2026-08-28) ----
 _g7_py = open('pyproject.toml', encoding='utf-8').read()
 _g7_disk = sorted(_f7 for _f7 in _os33.listdir(_os33.path.join('uqff_downhole_simulator', 'catalog')) if not _f7.startswith('.'))
-_g7_missing = [_f7 for _f7 in _g7_disk if ('"uqff_downhole_simulator/catalog/%s"' % _f7) not in _g7_py]
+# v0.409.0 FULL-WHEEL supersession: catalog ships via [tool.setuptools.package-data]
+# ('catalog/*' installs INSIDE the package everywhere; the old data-files mirror only
+# worked for --target installs). Closure = the package-data pattern present + rehearsal probe.
+_g7_missing = ([] if ('[tool.setuptools.package-data]' in _g7_py and '"catalog/*"' in _g7_py)
+               else _g7_disk)
 assert_that(_g7_missing == [] and len(_g7_disk) == 2 * sum(1 for _e7 in _ds11.CATALOG.values() if _e7.provenance.get('tier') == 'public'),
-            "SHIP GUARD v7 - catalog/data-files closure: every file on disk in uqff_downhole_simulator/catalog/ MUST be listed in pyproject [tool.setuptools.data-files] (missing: %r) and the catalog must hold exactly 2 files per PUBLIC-tier entry (data + provenance sidecar; OPERATOR-tier entries live in catalog_operator/, deliberately outside the wheel - v1.71.0) - canonized 2026-08-28 after the SAME miss recurred twice (v0.404.0 prep caught wells 31-40 by hand; the post-milestone audit caught wells 41-50 by hand): a wheel built with data-files lagging the catalog silently ships an incomplete product, so the gate now refuses it mechanically" % _g7_missing)
+            "SHIP GUARD v7 - catalog/data-files closure: every file on disk in uqff_downhole_simulator/catalog/ MUST ship in the wheel - since v0.409.0 via [tool.setuptools.package-data] 'catalog/*' (installs inside the package on every layout; the pre-v0.409.0 data-files mirror only worked for --target installs) (missing/mechanism-absent: %r) and the catalog must hold exactly 2 files per PUBLIC-tier entry (data + provenance sidecar; OPERATOR-tier entries live in catalog_operator/, deliberately outside the wheel - v1.71.0) - canonized 2026-08-28 after the SAME miss recurred twice (v0.404.0 prep caught wells 31-40 by hand; the post-milestone audit caught wells 41-50 by hand): a wheel built with data-files lagging the catalog silently ships an incomplete product, so the gate now refuses it mechanically" % _g7_missing)
 
 # --- PORTABILITY GUARD (v0.395.0 red-gate catch on Daniel's machine, 2026-08-23) ---
 # The v1.3.0 telemetry pin wrote scratch output to a hard-coded Unix temp path:

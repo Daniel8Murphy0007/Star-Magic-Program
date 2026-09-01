@@ -6675,3 +6675,35 @@ logging/complogs/hb1/60117200.htm locally and drop it in - the scoring runs the 
   queued as part of Q-224 closure paperwork.
 - **B7 / Q-220:** AUTHORIZED — PAPER_227 a_wind updated 4e12 -> 4e3
   (rho_fluid 1e-21 -> 1e-12 per PAPER_228). Q-220 CLOSED.
+
+## BATCH 1 VERIFICATION + CORRECTIONS — 2026-08-31 (Daniel-ordered; see BATCH_1_VERIFICATION.md)
+
+Every Batch 1 claim re-verified against source-paper text with line citations.
+ALL SEVEN RULINGS STAND. Three record defects found and corrected:
+1. **Q-008 ledger text mischaracterized PAPER_005** — the paper states
+   P = F_combined^2 x P_GR (F=0.903) at L62; it was never the "linear outlier."
+   D^2 ruling strengthened: corpus unanimous, no outlier existed.
+2. **Q-246/248 attribution** — f_super = 1.411e15 is stated in PAPER_295 only
+   (L55, L200); PAPER_302 contains no f_super statement. Plus NEW: PAPER_316's
+   own table (L33) prints a third variant 1.411e-6 Hz.
+3. **Q-220 precision** — rho_fluid = 1e-12 is not printed in PAPER_228; it is
+   uniquely implied by the comparative table's arithmetic (disclosed as
+   inference, not statement).
+
+STANDING RULE (canonized): ruling questions require source re-read + verbatim
+line-cited quotes + independent recomputation. Ledger entries are leads, not
+evidence.
+
+## BATCH 2 RULINGS — Daniel, 2026-08-31 (source-verified per standing rule; folded same day)
+
+Full record: RULINGS_BATCH_2.md. Headlines: B8 footer stands as beta_i-form
+evaluation; B9 [UA]=1e-4=v_UA/c CANONIZED (registry UA_VELOCITY_RATIO); B10
+k4 DOMAIN-SPLIT (1.0/2.0/1.5 in-family) + MUGE-g confirmed parametric; B11
+normalized aTHz canonical (tables authoritative); B12 THz DOMAIN-SPLIT
+(1.25 carrier / 1.0 cascade); **B13 e217 CANONICAL — Daniel rejected the
+first ask (ledger-evidence Planck-ratio sub-claim), the deepsearch found
+sec-6 coherent under the large family, and the ruling REVERSED the wired e7
+mean (PAPER_063 re-wired, gate pin updated)**; B14 E_react v^1-divide
+canonized + PAPER_133 genesis provenance root; B15 hadron cluster 9-11 +
+statistic replaced. Q-059c -> Q-090c; Q-083a, Q-108c, Q-129c/d, Q-141a/d,
+Q-143b/c/e remain open on their papers.

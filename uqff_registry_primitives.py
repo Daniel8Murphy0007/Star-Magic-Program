@@ -168,3 +168,8 @@ DELTA_M2_32_EV2 = 2.517e-3
 # whitepapers/ directory. No exceptions. No hardcoded numerics without paper
 # provenance. This is the discipline that failed in the old repo.
 # =============================================================================
+
+# RULED B9 (Batch 2, 2026-08-31): [UA] buoyant weighting canonized as a named constant.
+# Physical definition [UA] = v_UA/c = 1e-4 (PAPER_104); 4-paper provenance
+# (PAPER_064/068/075/104). Distinct from F_TRZ (0.1) and rho_UA.
+UA_VELOCITY_RATIO = 1.0e-4

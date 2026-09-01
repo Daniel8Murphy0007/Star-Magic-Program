@@ -12341,3 +12341,70 @@ pins (6,015 → 6,017). Stale-sweep catches this pass: 8 UNIFIED_REGISTRY.csv
 rows still OPEN_RULING for the ruled papers (updated with supersession
 trail; diff verified surgical — 8 lines, zero quoting churn), the
 2,253/2308 README line, and the version ledger. Verification battery below.
+
+## 2026-08-31 (5) — BATCH 1 VERIFICATION (Daniel-ordered): "you have the paper — do your job"
+
+Daniel caught batch questions being built from ledger summaries without
+re-reading sources, and pulled trust from the batch process. Response: full
+re-verification of every Batch 1 claim against source-paper text with line
+citations + independent recomputation (BATCH_1_VERIFICATION.md). ALL SEVEN
+RULINGS STAND. Three record defects found: (1) Q-008's ledger text
+mischaracterized PAPER_005 as the "linear outlier" — its L62 states
+P=F²·P_GR; ruling strengthened (unanimous, no outlier); (2) f_super
+attribution — PAPER_295 only, PAPER_302 states nothing (+ PAPER_316's table
+prints a THIRD variant 1.411e-6); (3) ρ_fluid=1e-12 is table-implied, not
+printed, in PAPER_228. Batch 2 items B8-B11 source-verified BEFORE
+re-presentation (PAPER_089 read directly; SOURCE4 code located: Ubi β_i-form,
+k4 three-way fork 1.0/2.0/1.5, aTHz normalized-fTHz reading reproduces
+PAPER_149's 0.0034 table ratio exactly). STANDING RULE canonized in CLAUDE.md:
+source re-read + verbatim line-cited quotes + independent recomputation before
+any ruling question; ledger entries are leads, not evidence. Gate 6,017 →
+6,019 (+2 verification pins), labels synced (banked for v0.409.0).
+
+## 2026-08-31 (6) — RULINGS BATCH 2: eight rulings, one reversal, the standard held
+
+Every question source-verified before reaching Daniel (papers re-read,
+SOURCE4 code located and read, numbers recomputed). Daniel rejected B13's
+first ask — its Planck-ratio sub-claim rested on ledger evidence — and the
+ordered deepsearch changed the answer: PAPER_063's §6 is internally coherent
+under the LARGE family (clean-LaTeX e217 header, 'far exceeds Planck' prose,
+e172 root pairing, e208 family benchmark), and Daniel ruled **e217 canonical,
+REVERSING the wired e7 mean** (dispatch re-wired, planck_ratio 5.0e173, gate
+pin rewritten). Other rulings: B8 footer = β_i-form evaluation (147≈148.7,
+1.2%); B9 [UA]=1e-4=v_UA/c CANONIZED (UA_VELOCITY_RATIO); B10 k4
+DOMAIN-SPLIT 1.0/2.0/1.5 + MUGE-g parametric confirmed; B11 normalized aTHz
+canonical (reproduces PAPER_149's 0.0034); B12 THz DOMAIN-SPLIT (1.25
+carrier/1.0 cascade); B14 E_react v¹-divide + PAPER_133 genesis root; B15
+hadron cluster 9-11 + statistic replaced. Fold: PAPER_063/069 RULED; partial
+ruling fields on 089/112/133/145/147. Backlog 238 → **236 + 1 candidate**.
+Index 2,035 ✓ / 257 ⚠. Gate 6,019 → **6,021** (+2 fold pins, 1 pin
+rewritten), labels synced. Banked for v0.409.0.
+
+## 2026-08-31 (7) — SHIP PREP v0.409.0: THE FULL-WHEEL SHIP (Daniel's rule: "EVERY SHIP SHOULD BE ON THE WHEEL")
+
+Daniel's audit question ("what got missed v0.394.0→v0.408.0? what's not on
+PyPI?") exposed a fifteen-version publication split, and his ruling closed
+it: the wheel now carries EVERYTHING the ship publishes. Root cause named:
+ship guard watched git, wheel guard watched declared modules, no guard tied
+them — the seam between guards. Fix: generate_wheel_manifest.py (data-files
+regenerated from `git ls-files --cached --others --exclude-standard`, ~2,542
+files; structural exclusions only; operator tier stays out via gitignore) +
+SHIP GUARD v8 (repo↔wheel coverage, every gate run, red on the first
+fall-through). Version pass: pyproject 0.409.0 + desc (436 chars), VERSION,
+CITATION ×2, version ledger, README (new release paragraph, badges,
+cacheBust), CHANGELOG, SHIP_MESSAGE, CLAUDE.md lesson ("guard the seam
+between guards"). Gate 6,021 → 6,025. Rehearsal below.
+
+## 2026-08-31 (8) — v0.409.0 REHEARSAL COMPLETE (full wheel proven)
+
+Rehearsal caught and fixed two real defects before ship: (1) the regenerated
+manifest dropped the catalog (package non-.py files don't auto-ship) —
+root-caused to the pre-v0.409.0 data-files mirror only working for --target
+installs; fixed PROPERLY via [tool.setuptools.package-data] 'catalog/*'
+(installs inside the package on every layout); SHIP GUARD v7 superseded to
+enforce the new mechanism, v8 strengthened to require it. (2) Assertion count
+sync (live 6,024). FINAL artifacts: wheel 22.3 MB / 2,706 members (2,303
+whitepapers + 104 catalog-in-package + registry/ledger/legal/commercial),
+sdist 15.6 MB. Installed-wheel probe: 2,309 dispatches, catalogue 52, e217
+ruling flows. Gate 6,024/0 (incl. blocked-xlrd rehearsal), acceptance 89/89.
+Daniel ships via .\ship.ps1.

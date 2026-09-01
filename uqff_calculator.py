@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.408.0"
+VERSION = "0.409.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -32753,7 +32753,7 @@ def _paper_063(dataset):
     F_Bi*(1+f_TRZ)/(1-Omega_g); Master M*(Ug_i - Ub_i + Ui_i).
     ENSEMBLE MEAN PINNED BY RATIO-CHAIN CLOSURE: mean/F_Planck =
     6.05e7/1.21e44 = 5.0e-37 EXACTLY matches the table's mojibaked
-    "10-7" ratio read as 10^-37 -> mean = -6.05e7 N (consistent
+    "10-7" ratio read as 10^-37 -> mean = -6.05e7 N (SUPERSEDED by B13 ruling 2026-08-31: e217 canonical, sec-6 internally coherent family) (consistent
     with the FUBii family magnitudes 036-039/059-061); section-6
     LaTeX "10^217" identified as drift. Bootstrap std 3 pct (log
     space), leptokurtic residuals (SW p=0.00055 reject / KS
@@ -32782,8 +32782,8 @@ def _paper_063(dataset):
             'eqlib': ['ensemble_master_integral', 'F_U_master', 'Ug1_dipole_trap', 'Ug2_shell', 'Ug3_string_torque', 'Ug4_bh_vacuum'],
             'n_systems': 52,
             'n_mcmc': 47,
-            'f_ubii_mean_n': -6.05e7,                 # PINNED by ratio closure
-            'planck_ratio': 6.05e7 / 1.21e44,         # 5.0e-37 EXACT closure
+            'f_ubii_mean_n': -6.05e217,               # RULED B13 2026-08-31: sec-6 family canonical (abstract/table e7 = truncation drift)
+            'planck_ratio': 6.05e217 / 1.21e44,       # 5.0e173 - mean far exceeds F_Planck, matching sec-6 prose (RULED B13)
             'bootstrap_std_pct': 3.0,
             'kappa_mcmc_per_day': kappa_mcmc,
             'kappa_deviation_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,  # 4.0
@@ -32794,8 +32794,8 @@ def _paper_063(dataset):
             'shapiro_wilk_p': 0.00055,
             'ks_p': 0.741,
             'residual_shape': 'leptokurtic-lognormal',
-            'x2_cosmic_m_large_reading': -3.40e172,   # Q-059b
-            'x2_cosmic_m_abstract_reading': -3.40e-7, # Q-059b
+            'x2_cosmic_m_large_reading': -3.40e172,   # Q-059b RULED: canonical (pairs with e217 mean)
+            'x2_cosmic_m_abstract_reading': -3.40e-7, # RULED: truncation drift (retained for record)
     })
     return {
         'value': _v,
@@ -32803,7 +32803,7 @@ def _paper_063(dataset):
                     'Master: M*(Ug_i - Ub_i + Ui_i); Q_wave = B^2/(2*mu0)'),
         'source': 'PAPER_063',
         'residual_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH2_2026-08-31 (B13: mean=-6.05e217 N canonical - sec-6 coherent family; x2=-3.40e172; abstract/table e7 prints = truncation drift; Q-059a/b/d CLOSED, Q-059c migrated to Q-090c)',
     }
 
 
@@ -33182,7 +33182,7 @@ def _paper_069(dataset):
                     'alternation = cos(omega_0 t) sign flip at P/2'),
         'source': 'PAPER_069',
         'residual_pct': abs(_m.log(1e46 / 1e40) / KAPPA_PER_DAY - 27600.0) / 27600.0 * 100,
-        'status': 'OPEN_RULING',
+        'status': 'RULED_BATCH2_2026-08-31 (B13: e172 family confirmed canonical via joint Q-059b ruling)',
     }
 
 
@@ -34237,13 +34237,14 @@ def _paper_089(dataset):
             'self_validate_pass': 8,
             'test_systems': 5,
             'footer_ubi_chain': 5.7e-4 * 6.67e-11 * M_SUN_OBSERVED_R3 / R_SUN_OBSERVED,  # 1.09e8
-            'footer_ubi_printed': 147.0,                   # does not close Q-085a
+            'footer_ubi_printed': 147.0,                   # RULED B8: stands as beta_i-form solar evaluation
             'sc_range_check': (0.98, 1.00),
         },
         'formula': ('F_UBii = integral[Sum Ug_k + Um + U_bi + kappa*SSq] dV; '
                     '8 specializations; F_SC = F_Base*[SCm]'),
         'source': 'PAPER_089',
         'residual_pct': abs(BETA_I - 0.603) / 0.603 * 100,
+        'footer_ruling': 'RULED B8 2026-08-31: canonical Ubi is the SOURCE4 beta_i-form; printed 147 = beta_i*(1-F_TRZ)*g_sun = 148.7 (1.2pct residual disclosed); the factor string (1.09e8) is pasted drift; beta_i symbol-slip corrected; triadic 120deg zero = intended physics; Q-085a/b CLOSED (Q-083a remains)',
         'status': 'OPEN_RULING',
     }
 
@@ -35452,6 +35453,7 @@ def _paper_112(dataset):
         'formula': 'n = log10(E_rest/J) + 20; E_n = 10^(n-20) J',
         'source': 'PAPER_112',
         'residual_pct': abs(lvl(2.005e-8) - 12.30) / 12.30 * 100,
+        'ruling_batch2': 'Q-108a/b RULED 2026-08-31: hadron cluster 9-11 canonical (mid-band -1 shift confirmed; PAPER_116 1-GeV row self-rectifies); the 218/241 statistic replaced by the disclosed Delta-n distribution; Q-108c (R-statistic) remains open',
         'status': 'OPEN_RULING',
     }
 
@@ -36611,6 +36613,7 @@ def _paper_133(dataset):
         'formula': 'F_U = sum[k_i dUg_i - beta_i Ug_i Omega M/d E_react] + Um + UA_metric',
         'source': 'PAPER_133',
         'residual_pct': abs(7.3e-16 * 8.15e36 / 2.55e20 - 23.3) / 23.3 * 100,
+        'e_react_ruling': 'RULED B14 2026-08-31: E_react = rho_SCm*v_SCm/rho_A (v^1, divide) canonical - closes exactly at 1e46 vs paper-stated ~1e46; v^2 forms (this paper code with its 10^38 normalization, PAPER_119/121) are drift; PAPER_133 marked GENESIS PROVENANCE ROOT (k1/k2/k3=1.5/1.2/1.8, beta 0.6 lineage per PAPER_2152); W/m3 unit label remains open (Q-129a/b CLOSED; c/d remain)',
         'status': 'OPEN_RULING',
     }
 
@@ -37283,6 +37286,7 @@ def _paper_145(dataset):
         'formula': 'g = aDPM + aTHz + avac_diff + ... + fTRZ (12 terms); FDPM = I*A*(w1-w2)',
         'source': 'PAPER_145',
         'residual_pct': abs((10 * RHO_SCM - RHO_SCM) - 6.381e-36) / 6.381e-36 * 100,
+        'k4_ruling': 'RULED B10 2026-08-31: k4 DOMAIN-SPLIT - 1.0 genesis family (SOURCE4 table), 2.0 Cycle-3 family, 1.5 solar-calibrated class, each canonical in-family; MUGE-g = magnetospheric/system-scale CORRECTION, parametrically assigned 1-2-5 ladder (PAPER_148/151 readings canonized; Q-141b/c CLOSED)',
         'status': 'OPEN_RULING',
     }
 
@@ -37389,6 +37393,7 @@ def _paper_147(dataset):
         'formula': 'FDPM = I*A*(w1-w2); aDPM = FDPM*fDPM*Evac*c*Vsys; aTHz/aDPM = 10*fTHz*vexp/c',
         'source': 'PAPER_147',
         'residual_pct': abs(1e12 * 10 * (1e5 / C_LIGHT_CONVENTION) - 3.33e9) / 3.33e9 * 100,
+        'athz_ruling': 'RULED B11+B12 2026-08-31: normalized form canonical aTHz=(fTHz/1THz)*(E_neb/E_ISM)*(v/c)*aDPM - reproduces PAPER_149 Sgr A* table 0.0034; tables authoritative, raw-Hz form drift (Q-143a/145a CLOSED). THz family DOMAIN-SPLIT: 1.25 THz = LENR/phonon carrier (locked omega_SCm), 1.0 THz = FDPM cascade sector (Q-143d CLOSED); Q-143b/c/e remain',
         'status': 'OPEN_RULING',
     }
 

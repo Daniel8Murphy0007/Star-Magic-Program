@@ -1,23 +1,19 @@
-# WIRING DRAINAGE QUEUE - campaign-state report (updated 2026-08-31 after the BATCH 1 fold)
+# WIRING DRAINAGE QUEUE - campaign-state report (updated 2026-08-31 after the BATCH 2 fold)
 
 ## Verdict
 
-The dispatch layer is COMPLETE (2,254 distinct papers wired). After Daniel's
-BATCH 1 rulings (RULINGS_BATCH_1.md ANSWERS, folded 2026-08-31): 238 papers
-carry OPEN ruling/derivation markers (240 OPEN_RULING + 4
-OPEN_UQFF_DERIVATION_TARGET occurrences), plus PAPER_1950's OPEN_CANDIDATE
-(a standing falsifiable prediction awaiting observation, not a ruling):
-238 Daniel-gated + 1 OPEN_CANDIDATE = 239. Eight papers moved OPEN -> RULED
-in the fold (PAPER_008/227/237/250/251/252/254/316).
-Zero mechanical folds remain beyond Daniel's answers; BATCH 2 follows the
+The dispatch layer is COMPLETE (2,254 distinct papers wired). After BATCH 2
+(RULINGS_BATCH_2.md - every question source-verified per the standing rule,
+one question rejected by Daniel and re-asked after deepsearch, the ruling
+REVERSING the wired PAPER_063 mean e7 -> e217): 236 papers carry OPEN
+ruling/derivation markers, plus PAPER_1950's OPEN_CANDIDATE prediction:
+236 Daniel-gated + 1 OPEN_CANDIDATE = 237.
+Batch 1 cleared 8 papers; Batch 2 cleared 2 outright (PAPER_063/069) and
+landed partial rulings on ~29 more (their other questions remain).
+Zero mechanical folds remain beyond Daniel's answers; BATCH 3 follows the
 same rhythm.
 
-Partial-scope notes: Q-002 (B_crit = Gauss) is RULED but its ~10 carrier
-papers hold other open questions and stay flagged; Q-216 is narrowed to
-Q-216b (the ruled bridge FORM 'divide by reference rho x length' still
-needs per-domain reference values).
-
-## Cross-index: paper -> open Q-tags (238 Daniel-gated + 1 OPEN_CANDIDATE = 239)
+## Cross-index: paper -> open Q-tags (236 Daniel-gated + 1 OPEN_CANDIDATE = 237)
 
 - PAPER_009: Q-001, Q-009
 - PAPER_013: Q-002, Q-010
@@ -70,13 +66,11 @@ needs per-domain reference values).
 - PAPER_060: Q-056, Q-056a
 - PAPER_061: Q-057
 - PAPER_062: Q-058
-- PAPER_063: Q-059, Q-059b
 - PAPER_064: Q-060, Q-060b, Q-060d
 - PAPER_065: Q-061a, Q-061b, Q-061c
 - PAPER_066: Q-059a, Q-062, Q-062a
 - PAPER_067: Q-059b, Q-063a, Q-063b, Q-063c
 - PAPER_068: Q-060b, Q-064d
-- PAPER_069: Q-059b
 - PAPER_070: Q-059b, Q-065c, Q-066a, Q-066b, Q-066d
 - PAPER_071: Q-062c, Q-067a, Q-067b
 - PAPER_072: Q-060b, Q-068a, Q-068b

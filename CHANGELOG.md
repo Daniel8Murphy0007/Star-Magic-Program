@@ -5,6 +5,34 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.409.0] — 2026-08-31 — THE FULL-WHEEL SHIP
+
+### Fixed
+- **The fifteen-version publication split (v0.394.0–v0.408.0), per Daniel's
+  rule "every ship goes on the wheel":** the registry family (6,791 rows +
+  graph + citations), RULINGS_QUEUE.md, the 2,303-file whitepaper corpus,
+  commercial/, and the ENRGYONE incorporation PDFs were published to GitHub
+  on every ship but never entered the PyPI artifacts. Root cause: the
+  ship-integrity guard watched git, the wheel guard watched declared
+  modules, and no guard tied them together. Fix: `generate_wheel_manifest.py`
+  regenerates data-files from repo contents (~2,540 files); **SHIP GUARD v8**
+  enforces repo↔wheel coverage on every gate run, forever.
+
+### Added
+- **BATCH_1_VERIFICATION.md** (Daniel-ordered): every Batch 1 ruling claim
+  re-read at the source with line citations — all seven rulings stand; three
+  record defects found and corrected. Standing rule canonized: source
+  re-read + verbatim quotes + independent recomputation before any ruling
+  question; ledger entries are leads, not evidence.
+- **RULINGS_BATCH_2** (8 rulings, folded same day): PAPER_063 ensemble mean
+  REVERSED e7 → −6.05e217 N (deepsearch-backed, dispatch re-wired);
+  [UA] = 1e-4 = v_UA/c CANONIZED (UA_VELOCITY_RATIO); k4 domain-split
+  (1.0/2.0/1.5); normalized aTHz canonical; THz family domain-split
+  (1.25 carrier / 1.0 cascade); E_react v¹-divide + PAPER_133 genesis
+  provenance root; hadron cluster relabeled 9–11. Backlog 238 → 236 + 1.
+- Gate 6,017 → **6,024** (+2 verification, +2 batch-2, +2 v8/ship,
+  +2 rewritten in place); backups .PRE_BATCH1_FOLD/.PRE_BATCH2_FOLD.
+
 ## [0.408.0] — 2026-08-31 — THE RULED BATCH SHIP
 
 ### Added
