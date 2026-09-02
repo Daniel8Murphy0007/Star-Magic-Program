@@ -1737,3 +1737,4 @@ SCOREDPRED_ARC,n/a,n/a,NOT_APPLICABLE,catalogue+landmark+commercial ship - no cr
 RULEDBATCH_ARC,n/a,n/a,NOT_APPLICABLE,rulings/product band - no cross-geometry content (retro-disclosed at v0.410.0),v0.408.0
 FULLWHEEL_ARC,n/a,n/a,NOT_APPLICABLE,publication-integrity band - no cross-geometry content,v0.410.0
 CONSOLIDATED_ARC,n/a,n/a,NOT_APPLICABLE,consolidation band - no cross-geometry content,v0.411.0
+FRONTDOOR_ARC,n/a,n/a,NOT_APPLICABLE,product front-door band - no cross-geometry content,v0.412.0

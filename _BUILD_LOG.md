@@ -386,3 +386,9 @@ wheel (generated manifest, SHIP GUARD v8, package-data catalog), trust arc
 (Batch-1 verification, Batch-2 fold incl. PAPER_063 e217 + [UA] canonized,
 registry closure), live results table (82 VERIFIED_LIVE / 4 slips disclosed),
 band trails gate-enforced. Gate 6,029/0. Acceptance 89/89.
+
+## v0.412.0 — 2026-09-01 — THE FRONT DOOR SHIP (Qt)
+star-magic CLI (calc/gate/well/docs/gui) + uqff_paths + installed-layout gate
+(PROVEN green from site-packages, empty cwd) + LIVE-vs-INHERITED honesty flags
+in plain terminal + Qt shell (Papers/Wells/Gate/Export/Geology) + full repo
+mirror on wheel + list_wired alias-safe. Gate 6,031/0. Acceptance 89/89.

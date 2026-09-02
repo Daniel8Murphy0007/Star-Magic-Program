@@ -1,29 +1,32 @@
-v0.411.0 — THE CONSOLIDATED FULL-WHEEL PUBLICATION (v0.409.0 + v0.410.0 CONDENSED)
+v0.412.0 — THE FRONT DOOR SHIP (Qt)
 
-One complete, self-contained release of the full-wheel program.
+The package becomes a program. Daniel's two locks, honored and proven:
 
-EVERYTHING ON THE WHEEL (~2,540 data-files, wheel ~2,710 members):
-- All 2,303 whitepaper corpus files
-- UNIFIED_REGISTRY.csv (6,793 rows) + graph + citations + all 8 satellites
-- RULINGS_QUEUE.md + RULINGS_BATCH_1/2 + BATCH_1_VERIFICATION
-- commercial/ (pilot proposal, bench readiness, renders)
-- pdf/ (six ENRGYONE incorporation docs + built paper PDFs)
-- Live results table + immutable inherited baseline
-- Build log, band trails, audit reports, ship code
-Manifest GENERATED (generate_wheel_manifest.py); SHIP GUARD v8 enforces
-repo<->wheel coverage forever; catalog ships in-package (every layout).
+LOCK 1 — HONEST TERMINAL (no GUI required):
+  star-magic calc PAPER_1318 prints
+    yang_mills_gap = 1.736  [INHERITED_CARRIED]
+  with the three-line legend on every invocation. VERIFIED_LIVE /
+  INHERITED_CARRIED / LIVE_MISMATCH flags come from the live results table;
+  a front door that hid the inherited column would be a lie.
 
-THE TRUST ARC, CONDENSED:
-- Batch-1 verification: all seven rulings stand; three record defects
-  corrected; "ledger entries are leads, not evidence" is doctrine.
-- Batch-2 fold (8 source-verified rulings): PAPER_063 mean REVERSED to
-  -6.05e217 N; [UA]=1e-4=v_UA/c CANONIZED; k4 + THz domain-splits;
-  normalized aTHz; E_react v^1 + PAPER_133 genesis root; hadron 9-11.
-  Backlog 236 author-gated + 1 prediction candidate.
-- Registry closure: 16 row edits + canonization row + graph edges.
-- Results table LIVE: 82/187 VERIFIED_LIVE, 4 baseline slips disclosed,
-  inherited physics preserved immutably.
+LOCK 2 — THE GATE IS THE ENGINEERING:
+  uqff_fidelity_tests.py bootstraps through uqff_paths.data_root() (repo,
+  venv, pip --target all resolve; STAR_MAGIC_DATA_ROOT override). The wheel
+  now carries the COMPLETE repository mirror, so the gate reads its own
+  sources anywhere. PROVEN before ship: all 6,031 assertions green from
+  site-packages in an empty cwd.
 
-TOTALS: 2,254 wired (2,309 keys) / gate 6,029/0 / acceptance 89/89 /
-registry 6,793 rows / catalogue 52 public + operator tier.
-Next: PAPER_2259.
+THE FRONT DOOR:
+  star-magic calc  — dispatch + honesty flags        (terminal)
+  star-magic gate  — full fidelity gate, any layout
+  star-magic well  — downhole simulator passthrough
+  star-magic docs  — where the corpus lives
+  star-magic gui   — Qt shell: Papers | Wells | Gate | Export | Geology
+
+ALSO: uqff_paths discovery module; list_wired() alias-safe (PAPER_1209X
+fixed); space-named junk file barred from the wheel; full repo mirror =
+2,701 data-files.
+
+TOTALS: 2,254 wired (2,309 keys) / gate 6,031/0 / acceptance 89/89 /
+registry 6,794 rows / catalogue 52 public + operator tier.
+Next: PAPER_2259 + P1 (user manual, first-run wizard, Windows one-click).

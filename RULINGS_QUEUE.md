@@ -6716,3 +6716,11 @@ THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION; (3) v0.411.0 condenses
 both into one complete self-contained release. No new physics rulings; the
 open queue stands at 236 Daniel-gated papers + 1 OPEN_CANDIDATE. Next
 rulings batch (Batch 3) assembles on Daniel's GO.
+
+## TRAIL v0.412.0 (2026-09-01) — THE FRONT DOOR SHIP (Qt)
+
+Daniel's rulings executed: GO Qt; LOCK 1 — star-magic calc prints
+LIVE-vs-INHERITED flags in plain terminal (Yang-Mills 1.736 and Page 0.99596
+read INHERITED_CARRIED because they are); LOCK 2 — the gate resolves via
+uqff_paths and was PROVEN green from site-packages in an empty cwd before
+ship. No new physics rulings; open queue 236 Daniel-gated + 1 OPEN_CANDIDATE.

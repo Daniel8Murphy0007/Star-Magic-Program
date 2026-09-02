@@ -12502,3 +12502,17 @@ consolidation row (publication_consolidation_v0411 → 6,793 rows), graph
 UNIFIES edge, citation row, CONSOLIDATED_ARC rows in all 8 satellites,
 band-trail pin extended to require the consolidated row, +1 ship-record pin
 (gate 6,028 → 6,029), all labels synced. Verification battery + rebuild below.
+
+## 2026-09-01 (8) — v0.412.0 THE FRONT DOOR SHIP (Daniel: "GO Qt" + two locks)
+
+Built: uqff_paths (layout discovery: repo/venv/pip-target/env-override);
+gate FRONT DOOR BOOTSTRAP (chdir to data_root() resolved via uqff_paths —
+wheel now a COMPLETE repo mirror incl. modules, 2,701 data-files, so the
+gate reads its own sources anywhere); star_magic_cli (calc/gate/well/docs/
+gui; calc prints per-row VERIFIED_LIVE/INHERITED_CARRIED/LIVE_MISMATCH +
+legend — Lock 1); star_magic_shell (Qt: Papers|Wells|Gate|Export|Geology);
+[project.scripts] star-magic; list_wired alias-safe fix; space-named junk
+file barred from manifest (Windows-locked, manual delete pending). PROOFS:
+gate 6,031/0 from repo AND from site-packages in EMPTY CWD (Lock 2); calc
+honesty flags verified from installed layout; star-magic in bin/. Full
+label/band pass (FRONTDOOR_ARC across satellites, registry 6,794 rows).

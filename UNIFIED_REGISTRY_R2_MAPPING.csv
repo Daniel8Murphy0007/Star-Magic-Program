@@ -281,3 +281,4 @@ SCOREDPRED_ARC,DOWNHOLE_CATALOGUE,entry 52 + PRIOR_FAMILIES + uqff_survey_view +
 RULEDBATCH_ARC_v0.408.0_retro,8,Batch 1 rulings mapped to dispatches 008/227/237/250/251/252/254/316 (band-trail row added retroactively at v0.410.0 prep)
 FULLWHEEL_ARC_v0.410.0,2542,full-wheel manifest maps every published file into the wheel (generate_wheel_manifest.py); Batch 2 rulings mapped to dispatches 063/069 + partials 089/112/133/145/147
 CONSOLIDATED_ARC_v0.411.0,2,v0.409.0 and v0.410.0 publication records mapped into one consolidated release
+FRONTDOOR_ARC_v0.412.0,5,"star-magic subcommands mapped: calc->uqff_calculator, gate->uqff_fidelity_tests via uqff_paths, well->uqff_downhole_simulator, docs->uqff_paths, gui->star_magic_shell"

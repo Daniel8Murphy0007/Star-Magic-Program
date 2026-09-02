@@ -5,6 +5,32 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.412.0] — 2026-09-01 — THE FRONT DOOR SHIP (Qt)
+
+### Added
+- **`star-magic` console command** (`[project.scripts]`): `calc` / `gate` /
+  `well` / `docs` / `gui`. pip installs a front door, not just modules.
+- **`uqff_paths`**: corpus discovery on every layout (repo checkout, venv,
+  pip --target; `STAR_MAGIC_DATA_ROOT` override). `data_root()`, `resolve()`,
+  `corpus()`, `registry()`, `results_table()`.
+- **Lock 1 (Daniel): honest terminal.** `star-magic calc` prints every
+  results-table row's verification flag — VERIFIED_LIVE / INHERITED_CARRIED /
+  LIVE_MISMATCH — with the legend, no GUI required. Yang–Mills 1.736 and
+  Page 0.99596 read INHERITED_CARRIED because they are.
+- **Lock 2 (Daniel): installed-layout gate.** The fidelity gate bootstraps
+  through `uqff_paths.data_root()`; the wheel now carries the COMPLETE
+  repository mirror (modules included) so the gate reads its own sources on
+  any layout. Proven: all assertions green from site-packages in an empty cwd.
+- **Qt shell** (`star_magic_shell`, gui extra): one window — Papers (search +
+  honesty flags), Wells (catalogue + provenance), Gate (one button), Export
+  (CSV: value+formula+residual+citation+flag), Geology.
+### Fixed
+- `list_wired()` crash on suffixed ids (PAPER_1209X) — alias-safe sort.
+- Legacy junk file with a space in its name barred from the wheel
+  (Windows-locked on disk; manual delete pending).
+- Gate 6,029 → **6,031** (+2 front-door lock pins).
+
+
 ## [0.411.0] — 2026-09-01 — THE CONSOLIDATED FULL-WHEEL PUBLICATION (v0.409.0 + v0.410.0 condensed)
 
 The complete full-wheel program in one self-contained release. Everything

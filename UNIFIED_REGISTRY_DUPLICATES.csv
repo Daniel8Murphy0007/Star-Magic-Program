@@ -156,3 +156,4 @@ ikari_lab_family,downhole_catalogue,FAMILY_RECORD,four subduction zones one labo
 RULEDBATCH_ARC_band_record,BAND_RECORD,"v0.408.0 (retro-disclosed): no new duplicate families; Batch 1 confirmed 2.11e208 as ONE shared benchmark (PAPER_217/237/250 family), the anti-duplicate ruling"
 FULLWHEEL_ARC_band_record,BAND_RECORD,"v0.410.0: no new duplicate families; THz family DOMAIN-SPLIT (1.25 carrier / 1.0 cascade) and k4 three-way split are RULED domain records, not duplicates"
 CONSOLIDATED_ARC_band_record,BAND_RECORD,v0.411.0: consolidation release - no new duplicate families
+FRONTDOOR_ARC_band_record,BAND_RECORD,"v0.412.0: no new duplicate families; modules ship in site-packages AND the share mirror BY DESIGN (full-mirror doctrine), disclosed not hidden"
