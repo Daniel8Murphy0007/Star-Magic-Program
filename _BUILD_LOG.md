@@ -403,3 +403,18 @@ RULINGS Batches 3-4 folded (16 rulings) + 8 single deep dives dissolved
 into primitive locks (B18/B20/B22/B25/B31/Q-110b/D_SCm/Q-216b) +
 PAPER_2259 rung-12 conjugate-pair bridge landmark authored + wired.
 Gate 6,045/0. Acceptance 89/89. Registry 6,820. Backlog 236 -> 224 + 1.
+
+## 2026-09-03 — POST-SHIP CORRECTION: v0.413.0 tag-chain gap (Daniel's catch)
+v0.414.0 shipped clean; v0.413.0 turned out never committed/tagged/published
+(silent ship failure). Content verified inside v0.414.0 (full wheel). Records
+corrected (CHANGELOG history note, version-history naming: THE USER MANUAL
+BAND - PREPARED; PUBLISHED INSIDE v0.414.0). SHIP GUARD v9 added: tag-chain
+continuity - every ledger version except current prep must have a git tag;
+authorized gap v0.413.0 on record. ship.ps1 hardened: pre-flight ledger/tag
+check + post-push remote-tag verification. Gate 6,046/0.
+
+## v0.415.0 — 2026-09-03 — THE TAG-CHAIN SHIP
+SHIP GUARD v9 (ledger/tag-chain continuity, v0.413.0 authorized gap on
+record) + ship.ps1 pre-flight chain check and post-push remote-tag
+verification + honest history naming. Physics untouched. Gate 6,046/0.
+Acceptance 89/89.

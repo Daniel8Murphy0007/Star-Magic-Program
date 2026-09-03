@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.414.0"
-description = "Star-Magic UQFF calculator v0.414.0: THE DISSOLUTION SHIP - RULINGS Batches 3-4 folded (16 rulings incl. two-aether-scales doctrine, scoped fTRZ, jet identity trio) plus 8 single deep dives that dissolved into primitive locks: composite 1.5 jet ladder, Higgs level 12, alpha_CR via SOURCE4 + Alfven closure F_TRZ^4*F_TRZ^-2=F_TRZ^2, D_SCm three-layer, and NEW PAPER_2259 rung-12 conjugate-pair bridge sigma_ref = 1 kg/m2 EXACT. 2,255 papers, gate 6,045/0, acceptance 89/89. Backlog 236 to 224."
+version = "0.415.0"
+description = "Star-Magic UQFF calculator v0.415.0: THE TAG-CHAIN SHIP - Daniel caught that v0.413.0 was prepared, believed shipped, and never existed in git (silent ship failure; every file published inside v0.414.0, full wheel verified). Fix: SHIP GUARD v9 tag-chain continuity (version ledger must match git tag chain, authorized gap on record), ship.ps1 pre-flight chain check + post-push remote-tag verification, history named honestly. 2,255 papers, gate 6,046/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

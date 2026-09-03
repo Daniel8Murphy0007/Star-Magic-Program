@@ -166,3 +166,23 @@ repo<->wheel coverage; the only exclusions are structural (py-modules,
 package dir) and confidentiality (untracked operator tier). Guard the SEAM
 between guards: any property enforced on two sides separately is unenforced
 in the middle.
+
+## HARD-WON STANDING LESSON (2026-09-03): THE TAG-CHAIN CONTINUITY RULE
+
+Daniel's catch, verbatim: "successful ship. There's a problem, v413 didn't
+get shipped." v0.413.0 was prepared, believed shipped, and never existed in
+git - no commit, no tag, no PyPI release; the band rode silently into the
+v0.414.0 commit (nothing lost - full wheel verified). ship.ps1's own HEAD
+check could not fire because the run that failed never reached it visibly,
+and NO GUARD tied the version LEDGER (UNIFIED_REGISTRY_VERSION.txt) to the
+tag CHAIN - v0.414.0's charter check measured against v0.412.0 as "the
+preceding tag" and passed. Same seam class as the FULL-WHEEL rule: any
+property enforced on two sides separately is unenforced in the middle.
+RULES: (1) SHIP GUARD v9 - every ledger version except the current prep
+must have a git tag (authorized gaps listed in the guard, as history not
+blame); (2) ship.ps1 pre-flight refuses to ship on a broken chain and
+post-push verifies the REMOTE tag exists before printing SHIPPED; (3) after
+every "successful ship" report, the next session verifies the tag chain
+(git log + git tag) before building on it - a ship is not a ship until the
+remote tag is seen. Version-history naming per Daniel's doctrine: v0.413.0
+= "THE USER MANUAL BAND - PREPARED; PUBLISHED INSIDE v0.414.0."

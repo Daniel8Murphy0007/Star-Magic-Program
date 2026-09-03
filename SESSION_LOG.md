@@ -12651,3 +12651,26 @@ all 8 registry satellites, _sg4_band marker rotated, README banner rewritten
 with live totals (2,255 / 2,310 / 6,045 / 6,820 / backlog 224+1), residuals
 census at 2,310 (ratchet satisfied). Wheel rehearsal + staleness sweep next;
 Daniel ships via .\ship.ps1.
+
+## 2026-09-03 (1) — v0.413.0 TAG-CHAIN GAP: found, named, guarded
+
+Daniel: "successful ship. There's a problem, v413 didn't get shipped."
+Reflog confirms: no v0.413.0 commit ever existed - the USER MANUAL band sat
+uncommitted and rode into the v0.414.0 commit (nothing lost; wheel verified).
+The seam: charter guard measures against "the preceding tag" but nothing tied
+the version LEDGER to the tag CHAIN - v0.414.0 measured against v0.412.0 and
+passed. Fix: SHIP GUARD v9 (tag-chain continuity, authorized gap v0.413.0),
+CHANGELOG history note (PREPARED; PUBLISHED INSIDE v0.414.0 - history, not
+blame), ship.ps1 pre-flight ledger/tag check + post-push remote verification,
+CLAUDE.md standing lesson. Gate 6,045 -> 6,046.
+
+## 2026-09-03 (2) — v0.415.0 SHIP PREP: THE TAG-CHAIN SHIP
+
+Band = the publication-integrity correction (SHIP GUARD v9, ship.ps1
+hardening, honest v0.413.0 history). 23-file charter pass: version synced
+across pyproject / VERSION / gate pin / CITATION.cff / badges+cacheBust /
+CHANGELOG / ledger / SHIP_MESSAGE / _BUILD_LOG, TAGCHAIN_ARC band-trail
+rows in all 8 satellites, _sg4_band rotated. Physics untouched; Batch 5
+remains pending (STOPPED by Daniel mid-presentation, nothing folded).
+Wheel rehearsal + staleness sweep follow; Daniel ships via .\ship.ps1 —
+which now verifies its own remote tag before claiming success.

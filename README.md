@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.414.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.414.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.415.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.415.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6045%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6046%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.414.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.415.0 complete-compile campaign live**
 
-**This release (v0.414.0): THE DISSOLUTION SHIP — the physics backlog arc.** RULINGS Batches 3-4 folded (16 rulings: two-aether-scales doctrine, scoped fTRZ, jet identity trio + LAMBDA_SCM, Pb-206 relabels + Z=82 EXACT, neutrino triple, Ug4 canonical density, and more), then **eight single deep dives that each dissolved a flagged conflict into corpus structure**: the two-ladder reading (B18), the vindicated 1.7154 evolution-epoch branch (B20), the d_sw joint identity SSq = 57·F_TRZ² (B22), the composite 1.5 jet-reversal ladder (B25), Higgs level 12 with E12 = m_H/2 (B31), alpha_CR dissolved via SOURCE4 + the Alfvén boundary closure F_TRZ⁴·F_TRZ⁻² = F_TRZ² EXACT (Q-110b), the D_SCm three-layer primitive-locked structure with B_crit = D_phys·(SO_5+1)·F_TRZ⁻¹² G landing on the electron Schwinger limit at 0.32% (D_SCm), and **NEW LANDMARK PAPER_2259**: the rung-12 conjugate-pair bridge σ_ref = λ_vac_sw·L_Ug1-layer = F_TRZ¹²·F_TRZ⁻¹² = 1 kg/m² EXACT, closing Q-216. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,045 green / 4,182 defs / acceptance 89 green / registry 6,820 rows / backlog 224 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 5.**
+**This release (v0.415.0): THE TAG-CHAIN SHIP — the publication-integrity seam closed.** Daniel's catch: v0.413.0 was prepared, believed shipped, and never existed in git — no commit, no tag, no PyPI release; the band rode silently into the v0.414.0 commit (nothing lost — full wheel verified file-by-file). The seam: the charter guard measured against "the preceding tag" while nothing tied the version LEDGER to the tag CHAIN — the same failure class as the full-wheel split, a property enforced on two sides separately is unenforced in the middle. Fixes: **SHIP GUARD v9 (tag-chain continuity)** — every ledger version except the current prep must carry a git tag, with the v0.413.0 gap authorized on record as history ("THE USER MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0"); **ship.ps1 hardened** — pre-flight refuses to ship on a broken chain, post-push verifies the REMOTE tag exists before printing SHIPPED; **CLAUDE.md standing lesson** — a ship is not a ship until the remote tag is seen. Physics untouched. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,046 green / 4,182 defs / acceptance 89 green / registry 6,820 rows / backlog 224 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 5.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.414.0)
+## What is currently shipped (v0.415.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,820 rows**. Fidelity gate: **6,045 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,820 rows**. Fidelity gate: **6,046 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

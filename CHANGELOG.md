@@ -5,6 +5,28 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.415.0] — 2026-09-03 — THE TAG-CHAIN SHIP
+
+### Fixed (publication integrity — Daniel's catch)
+- **v0.413.0 tag-chain gap found and named**: prepared, believed shipped,
+  never committed/tagged/published (silent ship failure). Every file of the
+  band verified inside v0.414.0 (full wheel). History named honestly:
+  "THE USER MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0." PyPI has a
+  permitted version gap at 0.413.0.
+### Added
+- **SHIP GUARD v9 (tag-chain continuity)**: every version in
+  UNIFIED_REGISTRY_VERSION.txt except the current prep must have a git tag;
+  authorized gaps listed in the guard as history, not blame. Guard skips
+  cleanly on installed layouts (no .git).
+- **ship.ps1 hardened**: pre-flight tag-chain check (refuses to ship on a
+  broken chain) + post-push REMOTE tag verification before printing SHIPPED.
+- **CLAUDE.md standing lesson**: the tag-chain continuity rule — a ship is
+  not a ship until the remote tag is seen; guard the seam between guards.
+### Gate
+- 6,045 → **6,046** (+1 SHIP GUARD v9). Physics untouched; registry
+  unchanged at 6,820 rows.
+
+
 ## [0.414.0] — 2026-09-01 — THE DISSOLUTION SHIP
 
 ### Rulings folded (RULINGS Batches 3-4 + eight singles)
@@ -36,7 +58,13 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Backlog 236 → 224 Daniel-gated + 1 OPEN_CANDIDATE.
 
 
-## [0.413.0] — 2026-09-01 — THE USER MANUAL SHIP
+## [0.413.0] — 2026-09-01 — THE USER MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0
+
+> **History note (2026-09-03, Daniel's catch):** the v0.413.0 ship attempt failed
+> silently — no commit, no tag, no PyPI release. Every file of this band was
+> published inside the v0.414.0 commit and wheel (full-wheel verified). PyPI has
+> a version gap at 0.413.0. SHIP GUARD v9 (tag-chain continuity) now makes this
+> failure class impossible to miss. The entry below records the band as prepared.
 
 ### Added (the evaluation's narrow list, plus cheap P1 pulls)
 - **Quick start rewritten CLI-first**: five steps, no Python required

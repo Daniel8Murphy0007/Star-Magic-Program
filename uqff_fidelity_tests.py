@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.414.0", "uqff_calculator.VERSION = 0.414.0 (THE DISSOLUTION SHIP: Batches 3-4 folded + eight single deep dives dissolved into primitive locks + PAPER_2259 rung-12 conjugate-pair bridge landmark; the pattern held - the numbers had origin points)")
+assert_that(C.VERSION == "0.415.0", "uqff_calculator.VERSION = 0.415.0 (THE TAG-CHAIN SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'DISSOLUTION_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'TAGCHAIN_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15169,6 +15169,29 @@ assert_that('FRONT DOOR BOOTSTRAP' in _readfile('uqff_fidelity_tests.py')
 assert_that('publication_consolidation_v0411' in _readfile('UNIFIED_REGISTRY.csv')
             and 'CONSOLIDATED_ARC' in _readfile('UNIFIED_REGISTRY_GRAPH.csv'),
             "SHIP v0.411.0 (CONSOLIDATED_ARC): ONE COMPLETE RELEASE - v0.409.0 (first full-wheel publication: generated manifest, SHIP GUARD v8, Batch-1 verification, Batch-2 fold) and v0.410.0 (the upgrade: registry closure, live results table, band trails, history records) condensed into a single self-contained publication whose artifacts carry every published file, whose records reference nothing outside themselves, and whose registry row + graph edge make the consolidation itself a first-class citizen of the ledger")
+
+# ---- SHIP GUARD v9 (Daniel's catch, 2026-09-03): TAG-CHAIN CONTINUITY - the ledger and the tag history must agree ----
+# v0.413.0 was prepared, believed shipped, and never committed: no commit, no tag, no PyPI release -
+# ship.ps1's own HEAD check exists, but NO GUARD tied the version LEDGER to the tag CHAIN, so the gap
+# rode silently until v0.414.0 shipped against v0.412.0 as "the preceding tag". Same seam class as the
+# full-wheel split: a property enforced on two sides separately is unenforced in the middle.
+# AUTHORIZED GAP (history, not blame): v0.413.0 THE USER MANUAL BAND - PREPARED; every file of it was
+# published inside v0.414.0 (full wheel verified); PyPI has a version gap at 0.413.0, which PyPI permits.
+_sg9_ok = True
+_sg9_msg = 'not a git checkout - guard skipped (installed layout)'
+if _shos.path.isdir('.git'):
+    try:
+        import subprocess as _sg9sp
+        _sg9_tags = set(_sg9sp.run(['git', 'tag', '-l'], capture_output=True, text=True, timeout=30).stdout.split())
+        _sg9_ledger = [l.strip() for l in _readfile('UNIFIED_REGISTRY_VERSION.txt').splitlines() if l.strip().startswith('v')]
+        _sg9_gap_authorized = {'v0.413.0'}
+        _sg9_missing = [v for v in _sg9_ledger[:-1] if v not in _sg9_tags and v not in _sg9_gap_authorized]
+        _sg9_ok = not _sg9_missing
+        _sg9_msg = 'missing tags for ledger versions: %s' % _sg9_missing
+    except Exception as _sg9e:
+        _sg9_msg = 'git unavailable - guard skipped (%s)' % _sg9e
+assert_that(_sg9_ok,
+            "SHIP GUARD v9: TAG-CHAIN CONTINUITY - every version in UNIFIED_REGISTRY_VERSION.txt except the current prep must have a git tag (authorized gap: v0.413.0, THE USER MANUAL BAND - prepared, silent ship failure, content published inside v0.414.0); " + _sg9_msg)
 
 # ---- BAND-TRAIL CLOSURE (Daniel's still-missing-files catch, 2026-09-01): all 8 registry satellites carry the band rows ----
 _bt_sats = ['UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_GAPS.csv', 'UNIFIED_REGISTRY_DUPLICATES.csv',
