@@ -1,20 +1,25 @@
-v0.415.1 — THE TAG-CHAIN SHIP (CI-FIXED)
+v0.415.2 — THE TAG-CHAIN SHIP (ALL-CONTEXTS-FIXED)
 
-v0.415.0's tag turned both workflows red on guard v9's first CI run — my
-bug: GitHub Actions checkouts are shallow and fetch NO tags, so git tag -l
-was empty and the guard read every ledger version as untagged. The guard
-was verified on the dev checkout and the installed layout, but not the
-third context it runs in.
+Guard v9's second blindspot, found by the timing: the v0.415.1 release run
+failed FASTER (1m04s) than the green CI (1m29s) on the identical commit -
+the gate itself was red in the release context only. Cause: actions/checkout
+on a TAG push fetches exactly one tag (the one being built), so git tag -l
+was non-empty and the zero-tags skip never fired; branch CI has zero tags
+and skipped cleanly, which is why CI was green while the release was red.
 
-- SHIP GUARD v9 fixed: zero visible tags = tag history unavailable in this
-  context = clean skip with message; full enforcement on real checkouts
-  (Daniel's machine, where the v0.413.0 class must be caught).
-- v0.415.0 recorded honestly: tagged, workflows red, never published to
-  PyPI; superseded by this patch. Tag chain remains continuous.
-- Lesson canonized: a guard that runs in three contexts must be verified
-  in all three before it ships.
+- SHIP GUARD v9 final form: enforce ONLY where full tag history exists.
+  Skip when GITHUB_ACTIONS is set or fewer than 100 tags are visible
+  (the real chain is 400+). Teeth unchanged on Daniel's checkout, where
+  the v0.413.0 failure class must be caught.
+- Verified in FOUR contexts before this prep: repo checkout (enforcing,
+  green), simulated branch-CI (0 tags, skip), simulated tag-CI (1 tag,
+  skip), installed wheel (no .git, skip).
+- v0.415.0 and v0.415.1: tagged, never published, superseded. Tag chain
+  continuous - no new authorized gaps needed.
+- Lesson: enumerate the contexts BEFORE shipping a context-sensitive
+  guard. Branch CI, tag CI, dev checkout, installed layout are four
+  different worlds.
 
-Everything else is the v0.415.0 band unchanged: SHIP GUARD v9 tag-chain
-continuity, hardened ship.ps1 (pre-flight chain check + post-push remote
-tag verification), honest v0.413.0 history. Physics untouched.
+Band content unchanged from v0.415.0: SHIP GUARD v9 tag-chain continuity,
+hardened ship.ps1, honest v0.413.0 history. Physics untouched.
 2,255 wired. Registry 6,820 rows. Gate 6,046/0. Acceptance 89/89.

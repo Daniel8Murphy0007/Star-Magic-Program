@@ -424,3 +424,10 @@ v0.415.0 tag went RED in both workflows: guard v9 assumed tag history, but
 Actions shallow checkouts fetch no tags. Guard now skips at zero visible
 tags, enforces on real checkouts. v0.415.0 = tagged, not published,
 superseded. Gate 6,046/0.
+
+## v0.415.2 — 2026-09-03 — THE TAG-CHAIN SHIP (ALL-CONTEXTS-FIXED)
+Second v9 blindspot: tag-push checkouts carry exactly ONE tag, so the
+zero-tags skip never fired in the release workflow. Guard now skips when
+GITHUB_ACTIONS is set or <100 tags visible; enforces on full checkouts.
+Verified in four contexts. v0.415.0/.1 tagged-unpublished-superseded.
+Gate 6,046/0.

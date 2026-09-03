@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.415.1)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.415.1)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.415.2)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.415.2)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6046%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.415.1 complete-compile campaign live**
+**UQFF systematic rebuild — v0.415.2 complete-compile campaign live**
 
-**This release (v0.415.1): THE TAG-CHAIN SHIP — the publication-integrity seam closed.** (v0.415.0 tagged but red in CI on guard v9's first run — Actions checkouts fetch no tags; the guard now skips cleanly at zero visible tags and enforces on real checkouts.) Daniel's catch: v0.413.0 was prepared, believed shipped, and never existed in git — no commit, no tag, no PyPI release; the band rode silently into the v0.414.0 commit (nothing lost — full wheel verified file-by-file). The seam: the charter guard measured against "the preceding tag" while nothing tied the version LEDGER to the tag CHAIN — the same failure class as the full-wheel split, a property enforced on two sides separately is unenforced in the middle. Fixes: **SHIP GUARD v9 (tag-chain continuity)** — every ledger version except the current prep must carry a git tag, with the v0.413.0 gap authorized on record as history ("THE USER MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0"); **ship.ps1 hardened** — pre-flight refuses to ship on a broken chain, post-push verifies the REMOTE tag exists before printing SHIPPED; **CLAUDE.md standing lesson** — a ship is not a ship until the remote tag is seen. Physics untouched. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,046 green / 4,182 defs / acceptance 89 green / registry 6,820 rows / backlog 224 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 5.**
+**This release (v0.415.2): THE TAG-CHAIN SHIP — the publication-integrity seam closed.** (Two red tags on the way: v0.415.0 — branch CI fetches no tags; v0.415.1 — tag-push CI fetches exactly ONE tag, the one being built, so the zero-tags skip never fired in the release workflow. Guard v9 now enforces only where full tag history exists: GITHUB_ACTIONS set or fewer than 100 visible tags = clean skip.) Daniel's catch: v0.413.0 was prepared, believed shipped, and never existed in git — no commit, no tag, no PyPI release; the band rode silently into the v0.414.0 commit (nothing lost — full wheel verified file-by-file). The seam: the charter guard measured against "the preceding tag" while nothing tied the version LEDGER to the tag CHAIN — the same failure class as the full-wheel split, a property enforced on two sides separately is unenforced in the middle. Fixes: **SHIP GUARD v9 (tag-chain continuity)** — every ledger version except the current prep must carry a git tag, with the v0.413.0 gap authorized on record as history ("THE USER MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0"); **ship.ps1 hardened** — pre-flight refuses to ship on a broken chain, post-push verifies the REMOTE tag exists before printing SHIPPED; **CLAUDE.md standing lesson** — a ship is not a ship until the remote tag is seen. Physics untouched. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,046 green / 4,182 defs / acceptance 89 green / registry 6,820 rows / backlog 224 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 5.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.415.1)
+## What is currently shipped (v0.415.2)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.415.1"
-description = "Star-Magic UQFF calculator v0.415.1: THE TAG-CHAIN SHIP (CI-fixed) - SHIP GUARD v9 ties the version ledger to the git tag chain (v0.413.0 gap authorized as history: prepared, published inside v0.414.0); ship.ps1 pre-flight chain check + post-push remote-tag verification. Patch: v0.415.0 went red in CI - Actions checkouts fetch no tags; guard now skips cleanly at zero visible tags. 2,255 papers, gate 6,046/0, acceptance 89/89."
+version = "0.415.2"
+description = "Star-Magic UQFF calculator v0.415.2: THE TAG-CHAIN SHIP (all contexts fixed) - SHIP GUARD v9 ties the version ledger to the git tag chain; ship.ps1 pre-flight + post-push remote-tag verification. v0.415.0: branch CI fetches no tags; v0.415.1: tag-push CI fetches exactly ONE tag, so zero-tags-skip was not enough. Guard now enforces only on full checkouts (GITHUB_ACTIONS or <100 tags = skip). 2,255 papers, gate 6,046/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

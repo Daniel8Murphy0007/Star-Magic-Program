@@ -12683,3 +12683,13 @@ tags; git tag -l empty; guard read the whole ledger as untagged. My bug -
 the guard runs in three contexts and was verified in two. Fixed (zero
 visible tags = clean skip), v0.415.1 prepped, v0.415.0 recorded as tagged/
 unpublished/superseded. Three-context verification lesson canonized.
+
+## 2026-09-03 (4) — v0.415.1 release red -> v0.415.2: the tag-push context
+
+Daniel: "THIS IS A ROYAL FUCKUP." The timing was the tell (release 1m04s <
+green CI 1m29s, same commit): tag-push checkouts fetch exactly ONE tag, so
+the zero-tags skip never fired in the release workflow. Guard v9 final:
+skip when GITHUB_ACTIONS or <100 visible tags; enforce on full checkouts.
+Proven in four contexts (repo / branch-CI sim / tag-CI sim / installed).
+v0.415.0/.1 recorded tagged-unpublished-superseded. Lesson canonized:
+enumerate contexts before shipping context-sensitive guards.

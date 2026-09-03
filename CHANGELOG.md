@@ -5,6 +5,26 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.415.2] — 2026-09-03 — THE TAG-CHAIN SHIP (ALL-CONTEXTS-FIXED)
+
+### Fixed
+- **SHIP GUARD v9, second blindspot**: v0.415.1's zero-tags skip fixed the
+  BRANCH CI context but not the TAG-push release context — actions/checkout
+  on a tag fetches exactly ONE tag (the one being built), so `git tag -l`
+  was non-empty, the skip never fired, and the release workflow alone went
+  red while CI passed on the identical commit (the 1m04s < 1m29s timing was
+  the tell). Guard now enforces only where full history exists: skip when
+  GITHUB_ACTIONS is set OR fewer than 100 tags are visible (the real chain
+  is 400+). Verified in FOUR contexts: repo checkout (enforcing, green),
+  simulated branch-CI (0 tags, skip), simulated tag-CI (1 tag, skip),
+  installed wheel (no .git, skip).
+- v0.415.0 and v0.415.1 = tagged, never published; superseded by this
+  patch. Tag chain continuous.
+### Lesson
+- Enumerate the contexts BEFORE shipping a context-sensitive guard: branch
+  CI, tag CI, dev checkout, installed layout are four different worlds.
+
+
 ## [0.415.1] — 2026-09-03 — THE TAG-CHAIN SHIP (CI-FIXED)
 
 ### Fixed
