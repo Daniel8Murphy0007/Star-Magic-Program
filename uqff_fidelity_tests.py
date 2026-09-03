@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.415.0", "uqff_calculator.VERSION = 0.415.0 (THE TAG-CHAIN SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
+assert_that(C.VERSION == "0.415.1", "uqff_calculator.VERSION = 0.415.1 (THE TAG-CHAIN SHIP, CI-FIXED: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -15185,9 +15185,15 @@ if _shos.path.isdir('.git'):
         _sg9_tags = set(_sg9sp.run(['git', 'tag', '-l'], capture_output=True, text=True, timeout=30).stdout.split())
         _sg9_ledger = [l.strip() for l in _readfile('UNIFIED_REGISTRY_VERSION.txt').splitlines() if l.strip().startswith('v')]
         _sg9_gap_authorized = {'v0.413.0'}
-        _sg9_missing = [v for v in _sg9_ledger[:-1] if v not in _sg9_tags and v not in _sg9_gap_authorized]
-        _sg9_ok = not _sg9_missing
-        _sg9_msg = 'missing tags for ledger versions: %s' % _sg9_missing
+        if not _sg9_tags:
+            # CI shallow checkout: actions/checkout fetches no tags, so git tag -l is empty there.
+            # v0.415.0 lesson: this guard went RED in both workflows on its first CI run for exactly
+            # that reason. Zero visible tags = no tag history in this context, not a broken chain.
+            _sg9_msg = 'no tags visible (shallow/CI checkout) - guard skipped'
+        else:
+            _sg9_missing = [v for v in _sg9_ledger[:-1] if v not in _sg9_tags and v not in _sg9_gap_authorized]
+            _sg9_ok = not _sg9_missing
+            _sg9_msg = 'missing tags for ledger versions: %s' % _sg9_missing
     except Exception as _sg9e:
         _sg9_msg = 'git unavailable - guard skipped (%s)' % _sg9e
 assert_that(_sg9_ok,

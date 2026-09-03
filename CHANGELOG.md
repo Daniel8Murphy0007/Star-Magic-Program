@@ -5,6 +5,22 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.415.1] — 2026-09-03 — THE TAG-CHAIN SHIP (CI-FIXED)
+
+### Fixed
+- **SHIP GUARD v9 CI blindspot (my bug, caught by Daniel on the red run)**:
+  v0.415.0's tag turned both workflows RED — GitHub Actions checkouts are
+  shallow and fetch NO tags, so `git tag -l` was empty and the guard read
+  every ledger version as untagged. Verified on the dev checkout and the
+  installed layout, never on the third context it runs in. Now: zero
+  visible tags = tag history unavailable = clean skip with message; full
+  enforcement on real checkouts. v0.415.0 = tagged, never published;
+  superseded by this patch. Tag chain remains continuous.
+### Lesson
+- A guard that runs in three contexts (dev checkout / CI shallow checkout /
+  installed layout) must be verified in all three before shipping.
+
+
 ## [0.415.0] — 2026-09-03 — THE TAG-CHAIN SHIP
 
 ### Fixed (publication integrity — Daniel's catch)

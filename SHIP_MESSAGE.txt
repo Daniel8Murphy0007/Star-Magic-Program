@@ -1,24 +1,20 @@
-v0.415.0 — THE TAG-CHAIN SHIP
+v0.415.1 — THE TAG-CHAIN SHIP (CI-FIXED)
 
-The publication-integrity seam closed. Daniel's catch: v0.413.0 was
-prepared, believed shipped, and never existed in git — no commit, no tag,
-no PyPI release. The band rode silently into the v0.414.0 commit; nothing
-was lost (full wheel verified file-by-file), but the ledger and the tag
-chain disagreed and no guard was watching that seam.
+v0.415.0's tag turned both workflows red on guard v9's first CI run — my
+bug: GitHub Actions checkouts are shallow and fetch NO tags, so git tag -l
+was empty and the guard read every ledger version as untagged. The guard
+was verified on the dev checkout and the installed layout, but not the
+third context it runs in.
 
-- SHIP GUARD v9 — TAG-CHAIN CONTINUITY: every version in
-  UNIFIED_REGISTRY_VERSION.txt except the current prep must carry a git
-  tag. Authorized gap on record as history, not blame: v0.413.0 = THE USER
-  MANUAL BAND — PREPARED; PUBLISHED INSIDE v0.414.0. Guard skips cleanly
-  on installed layouts.
-- ship.ps1 HARDENED: pre-flight refuses to ship on a broken chain;
-  post-push verifies the REMOTE tag exists before printing SHIPPED.
-- CLAUDE.md STANDING LESSON: a ship is not a ship until the remote tag is
-  seen; any property enforced on two sides separately is unenforced in the
-  middle — third instance of the seam class, now extinct.
-- Records corrected honestly: CHANGELOG history note under [0.413.0],
-  version-history naming per doctrine, _BUILD_LOG + SESSION_LOG entries.
+- SHIP GUARD v9 fixed: zero visible tags = tag history unavailable in this
+  context = clean skip with message; full enforcement on real checkouts
+  (Daniel's machine, where the v0.413.0 class must be caught).
+- v0.415.0 recorded honestly: tagged, workflows red, never published to
+  PyPI; superseded by this patch. Tag chain remains continuous.
+- Lesson canonized: a guard that runs in three contexts must be verified
+  in all three before it ships.
 
-Physics untouched. 2,255 wired (2,310 DISPATCH keys). Registry 6,820 rows.
-Gate 6,046/0. Acceptance 89/89. Full wheel (generated manifest).
-Backlog 224 Daniel-gated + 1 OPEN_CANDIDATE. Next: Batch 5.
+Everything else is the v0.415.0 band unchanged: SHIP GUARD v9 tag-chain
+continuity, hardened ship.ps1 (pre-flight chain check + post-push remote
+tag verification), honest v0.413.0 history. Physics untouched.
+2,255 wired. Registry 6,820 rows. Gate 6,046/0. Acceptance 89/89.

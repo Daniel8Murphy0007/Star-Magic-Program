@@ -418,3 +418,9 @@ SHIP GUARD v9 (ledger/tag-chain continuity, v0.413.0 authorized gap on
 record) + ship.ps1 pre-flight chain check and post-push remote-tag
 verification + honest history naming. Physics untouched. Gate 6,046/0.
 Acceptance 89/89.
+
+## v0.415.1 — 2026-09-03 — THE TAG-CHAIN SHIP (CI-FIXED)
+v0.415.0 tag went RED in both workflows: guard v9 assumed tag history, but
+Actions shallow checkouts fetch no tags. Guard now skips at zero visible
+tags, enforces on real checkouts. v0.415.0 = tagged, not published,
+superseded. Gate 6,046/0.

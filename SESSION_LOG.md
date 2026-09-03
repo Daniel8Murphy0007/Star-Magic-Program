@@ -12674,3 +12674,12 @@ rows in all 8 satellites, _sg4_band rotated. Physics untouched; Batch 5
 remains pending (STOPPED by Daniel mid-presentation, nothing folded).
 Wheel rehearsal + staleness sweep follow; Daniel ships via .\ship.ps1 —
 which now verifies its own remote tag before claiming success.
+
+## 2026-09-03 (3) — v0.415.0 RED IN CI -> v0.415.1 patch
+
+Daniel: "you fowled that up redo it." Both workflows red on the v0.415.0
+tag - guard v9's first CI run. Cause: Actions shallow checkouts fetch no
+tags; git tag -l empty; guard read the whole ledger as untagged. My bug -
+the guard runs in three contexts and was verified in two. Fixed (zero
+visible tags = clean skip), v0.415.1 prepped, v0.415.0 recorded as tagged/
+unpublished/superseded. Three-context verification lesson canonized.
