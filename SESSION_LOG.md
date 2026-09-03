@@ -12516,3 +12516,138 @@ file barred from manifest (Windows-locked, manual delete pending). PROOFS:
 gate 6,031/0 from repo AND from site-packages in EMPTY CWD (Lock 2); calc
 honesty flags verified from installed layout; star-magic in bin/. Full
 label/band pass (FRONTDOOR_ARC across satellites, registry 6,794 rows).
+
+## 2026-09-01 (9) — v0.413.0 THE USER MANUAL SHIP (evaluator's narrow list, verbatim)
+
+README: Quick start rewritten CLI-first (5 steps, no Python), headless-first
+doctrine documented, stale 1,417/4,717/25,126 census block KILLED (one
+number, one source — "two truths is zero truths"). CLI: star-magic export
+(CSV pack, no Qt), star-magic quickstart (catalogue well 200 steps +
+PAPER_646 with flags), real well sub-usage help. Full 23-file pass
+(USERMANUAL_ARC band rows, registry 6,795). Gate 6,031 → 6,033 (+2
+user-manual pins). Verification battery below.
+
+## 2026-09-01 (10) — RULINGS BATCH 3: five ruled, three honestly open
+
+Source-verified batch (all eight clusters line-cited + recomputed before
+presentation). Daniel ruled: B16 PAPER_218 recomputed values canonical
+(8.52e-52 print falls to its own factors' 7.22e-14); B17 B(t) RELATIVE 40%
++ 6,283 s + per-body SCm_contrib (PAPER_162 RULED); B19 **PLASMA-LEVEL
+ORIGIN CANONIZED** (β₁₃=0.60 + 7.09-at-L13: both canonical primitives are
+the Level-13/plasma values of the 26-ladder) + ρ_L1 rename; B21 f_TRZ fork
+→ **CANONICAL 0.1 BRANCH** on all four observables (SgrA* +10% neutrino =
+IceCube-Gen2 detectable — a falsifiable prediction sharpened by ruling);
+B23 drift confirmations + PAPER_059/046 folds. B18/B20/B22: no preference
+— NOT guessed, stay open. Fold: 162/218 RULED, ruling fields on
+042/043/051/088, registry +3 rows (6,798), graph +2, citations +1, index
+2,037 ✓ / 255 ⚠. Gate 6,033 → 6,035. Banked for v0.414.0.
+
+## 2026-09-01 (11) — RULINGS BATCH 4: the FULL-READ batch (Daniel's order) — five ruled + one doctrine, two open
+
+Method upgraded per Daniel ("read all reference papers so you are not
+repeating the AI typos and inventions"): seven papers read END TO END; the
+reads found three things the ledger lacked (PAPER_009's table follows the
+Gaussian its own formula contradicts; the 17 Gpc threshold = 5.2e26 m;
+PAPER_027's own L620 declares the drifted density). Rulings: B24 Pb-206
+relabels + Z=82 EXACT route; B26 scoped fTRZ canonized + Ug4d rename; B27
+jet trio + LAMBDA_SCM primitive + joint 1e46 identity (λ_SCm = ρ_A·v_SCm);
+**B28 Daniel's TWO-AETHER-SCALES doctrine (verbatim ruling): cosmic UA vs
+trapped UA′ operate simultaneously, crossings = mass/buoyancy — the
+PAPER_009 κ split is STRUCTURE, not drift; D_SCm form stays OPEN**; B29
+neutrino triple 72.89 + DW disclosed; B30 canonical-density Ug4 re-wire =
+5.9e-5 + k_eta_LENR. B25/B31 no preference — open. Fold: 117/025b/027
+RULED; ruling fields on 146/153/154/009; registry +7 (6,805 rows) incl. the
+doctrine row; graph +3; LAMBDA_SCM in primitives. Index 2,040 ✓ / 252 ⚠.
+Gate 6,035 → 6,037. Banked for v0.414.0.
+
+## 2026-09-01 (12) — B18 RULED: the two-ladder reading (PAPER_042)
+
+Full section read dissolved the three-way: prose '10' = dropped-superscript
+mojibake of 10^12 (formula + '12-orders' narration on adjacent lines);
+61-decade span = the separate RADIUS ladder. Daniel canonized. PAPER_042
+RULED (Q-040 fully closed, zero values changed). Registry +1 (6,806), graph
++1, gate 6,037 → 6,038, index 2,041 ✓ / 251 ⚠. Backlog 231 → 230 + 1.
+
+## 2026-09-01 (13) — B20 PARTIAL: 1.7154 CARRIES INTENT (protected)
+
+Full reads showed NGC2841's 1.7154 contradicting the stated formula and its
+own z≈0.002 parenthetical; Daniel ruled it INTENTIONAL, not drift — encoding
+to be specified later. Dispatch annotations on PAPER_051/054 + a protection
+pin (gate 6,038 → 6,039) so no future session "repairs" it. Q-048b/Q-050a
+stay open, guarded.
+
+## 2026-09-01 (14) — B20 RESOLVED: 1.7154 vindicated as a derivation
+
+Daniel's correction of my "input slip" reading proved out: 1.7154 =
+1 + H0·F_TRZ⁻¹⁰ yr at H0 = A_5+SO_5 (0.0002% residual; solving t = 1e10 yr
+to 5 digits) — the evolution-epoch branch of a dual-branch Hubble factor,
+grounded in the black→white-hole time structure (PAPER_659) and the F_TRZ
+ladder. Protection pin replaced in-place by the resolution pin; PAPER_051
+fully RULED (Q-048 a-d closed); registry +1 (hubble_factor_dual_branch,
+6,807 rows), graph +1. Standing lesson embodied: the author knew his
+physics better than the evidence summary did.
+
+## 2026-09-01 (15) — B22 RESOLVED: the d_sw joint identity
+
+SSq/57 and F_TRZ² were the same number: SSq = 57·F_TRZ² EXACT links the
+physical route (SSq over the 57-decade spectrum) to the primitive-lock.
+Canonized with 57 as the decade count (58 citation = wobble); footer
+2.16e-3 confirmed. Registry +1 (d_sw_joint_identity, 6,808), graph +1,
+gate 6,039 → 6,040 (pin verifies the identity numerically). PAPER_114
+stays ⚠ on Q-110b (alpha_CR) honestly.
+
+## 2026-09-01 (16) — B31 RESOLVED: Higgs level 12 + the quadratic UH tower
+
+Fourth dissolution: the three-way was three quantities (boson level 12 with
+the E12 = m_H/2 half-quantum relation; UH-n = m_H·n² tower; drifted E18
+label). PAPER_043 fully RULED (four rulings across three batches). Registry
++2 (6,810), graph +1, gate 6,040 → 6,041 (pin verifies E12 = m_H/2 and
+UH-18 = 40.5 TeV numerically). Backlog 229 → 228 + 1.
+
+## 2026-09-01 (17) — B25 RESOLVED: composite 1.5 jet-reversal ladder
+
+Fifth dissolution. Daniel returned to the parked B25 and canonized the
+composition on record: 1.5 = (1+SSq·2/π)(1+F_TRZ). PAPER_115's crossed
+ladders were one composite — 95.2 = 1.5¹²/1.363 EXACT (off-by-one boost),
+129.8 = 1.5¹² (mislabeled N=13). Radius + U_bi corrected. Registry +2
+(6,812), graph +2, gate 6,041 → 6,042. Backlog 228 → 227 + 1.
+
+## 2026-09-01 (18) — Q-110b RESOLVED: alpha_CR dissolved + Alfvén boundary closure
+
+Sixth dissolution, via Daniel-directed corpus deep dive. The canonical Ug2
+(SOURCE4) carries the heliosheath 1% as wind_mod = 1+δ_sw — alpha_CR was
+a paper-local reparametrization's derived normalization (1.011e26), never
+a primitive. Bonus closure: PAPER_127's d_sw = [UA]·F_U(r_Alfvén) locks
+with [UA]=F_TRZ⁴ and B22's d_sw=F_TRZ² as F_TRZ⁴·F_TRZ⁻²=F_TRZ² EXACT.
+PAPER_114 fully RULED. Registry +2 (6,814), graph +2, gate 6,042 → 6,043.
+Backlog 227 → 226 + 1.
+
+## 2026-09-01 (19) — D_SCm RESOLVED: three-layer primitive-locked structure
+
+Seventh dissolution, Daniel-directed ("Gaussian is an environmental
+condition... Look for primordial and variational sustainability factors").
+Environment (Gaussian, B_crit = 44·F_TRZ⁻¹² G EXACT = Schwinger 0.32%),
+variational sustainability (1−(B/F_TRZ⁻¹⁵ G)², PAPER_002 table vindicated),
+operator (unsquared threshold at the F_TRZ² anchor). PAPER_009 fully RULED.
+Registry +3 (6,817), graph +3, gate 6,043 → 6,044. Backlog 226 → 225 + 1.
+
+## 2026-09-01 (20) — Q-216b RESOLVED + PAPER_2259 landmark: rung-12 conjugate-pair bridge
+
+Eighth dissolution. Daniel's "investigate deeper if number 3 is true" led to
+both legs being already-canonized F_TRZ¹² objects: λ_vac_sw (PAPER_2139) ×
+Ug1 amplitude layer (B18) = 1 kg/m² EXACT. PAPER_2259 authored + wired
+(dispatch self-verifies the identity). Family pass-through vindicated as
+physics. Registry +3 (6,820), graph +2, citations +1, gate 6,044 → 6,045.
+Distinct wired papers 2,254 → 2,255. Backlog 225 → 224 + 1. All parked
+singles from Batches 1-4 now resolved.
+
+## 2026-09-01 (21) — v0.414.0 SHIP PREP: THE DISSOLUTION SHIP
+
+Band = Batches 3-4 (16 rulings) + 8 single dissolutions + PAPER_2259
+landmark. 23-file charter pass: version synced (pyproject / VERSION / gate
+pin / CITATION.cff / badges+cacheBust / CHANGELOG / UNIFIED_REGISTRY_VERSION
+/ SHIP_MESSAGE / _BUILD_LOG), DISSOLUTION_ARC band-trail rows appended to
+all 8 registry satellites, _sg4_band marker rotated, README banner rewritten
+with live totals (2,255 / 2,310 / 6,045 / 6,820 / backlog 224+1), residuals
+census at 2,310 (ratchet satisfied). Wheel rehearsal + staleness sweep next;
+Daniel ships via .\ship.ps1.

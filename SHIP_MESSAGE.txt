@@ -1,32 +1,30 @@
-v0.412.0 — THE FRONT DOOR SHIP (Qt)
+v0.414.0 — THE DISSOLUTION SHIP
 
-The package becomes a program. Daniel's two locks, honored and proven:
+The physics-backlog arc: RULINGS Batches 3-4 folded plus eight single deep
+dives, each of which dissolved a flagged conflict into corpus structure.
 
-LOCK 1 — HONEST TERMINAL (no GUI required):
-  star-magic calc PAPER_1318 prints
-    yang_mills_gap = 1.736  [INHERITED_CARRIED]
-  with the three-line legend on every invocation. VERIFIED_LIVE /
-  INHERITED_CARRIED / LIVE_MISMATCH flags come from the live results table;
-  a front door that hid the inherited column would be a lie.
+- BATCH 3 + BATCH 4 FOLDED (16 rulings): plasma-level origin + rho_L1;
+  two-aether-scales doctrine (cosmic [UA] vs trapped [UA']; crossings =
+  mass/buoyancy); scoped fTRZ + Ug4d; jet identity trio + LAMBDA_SCM;
+  Pb-206 relabels + Z=82 = A_5+D_crit-D_phys EXACT; neutrino triple;
+  Ug4 canonical density; f_TRZ canonical 0.1 branch; B(t) relative 40%.
+- EIGHT DISSOLUTIONS: two-ladder reading (B18); 1.7154 = 1 + H0*F_TRZ^-10 yr
+  VINDICATED (B20); d_sw joint identity SSq = 57*F_TRZ^2 (B22); composite
+  1.5 jet-reversal ladder = (1+SSq*2/pi)(1+F_TRZ) (B25); Higgs level 12,
+  E12 = m_H/2 at 0.2% (B31); alpha_CR dissolved - canonical Ug2 is SOURCE4,
+  NEW EXACT Alfven closure d_sw = [UA]*F_U(r_Alfven) = F_TRZ^4*F_TRZ^-2 =
+  F_TRZ^2 (Q-110b); D_SCm three-layer structure - Gaussian environment
+  (B_crit = D_phys*(SO_5+1)*F_TRZ^-12 G = electron Schwinger at 0.32%),
+  variational sustainability (B_collapse = F_TRZ^-15 G, PAPER_002 table
+  vindicated to every printed digit), threshold operator at the F_TRZ^2
+  anchor (D_SCm ruling).
+- NEW LANDMARK PAPER_2259 (authored + wired, full per-paper protocol):
+  rung-12 conjugate-pair bridge sigma_ref = lambda_vac_sw * L_Ug1-layer =
+  F_TRZ^12 * F_TRZ^-12 = 1 kg/m2 EXACT. Closes Q-216; the additive-term
+  pass-through of the PAPER_218/219/220 family vindicated as physics.
+- Distinct wired 2,254 -> 2,255 (2,310 DISPATCH keys). Registry 6,795 ->
+  6,820 rows. Backlog 236 -> 224 Daniel-gated + 1 OPEN_CANDIDATE.
+- Gate 6,045/0. Acceptance 89/89. Full wheel (generated manifest).
 
-LOCK 2 — THE GATE IS THE ENGINEERING:
-  uqff_fidelity_tests.py bootstraps through uqff_paths.data_root() (repo,
-  venv, pip --target all resolve; STAR_MAGIC_DATA_ROOT override). The wheel
-  now carries the COMPLETE repository mirror, so the gate reads its own
-  sources anywhere. PROVEN before ship: all 6,031 assertions green from
-  site-packages in an empty cwd.
-
-THE FRONT DOOR:
-  star-magic calc  — dispatch + honesty flags        (terminal)
-  star-magic gate  — full fidelity gate, any layout
-  star-magic well  — downhole simulator passthrough
-  star-magic docs  — where the corpus lives
-  star-magic gui   — Qt shell: Papers | Wells | Gate | Export | Geology
-
-ALSO: uqff_paths discovery module; list_wired() alias-safe (PAPER_1209X
-fixed); space-named junk file barred from the wheel; full repo mirror =
-2,701 data-files.
-
-TOTALS: 2,254 wired (2,309 keys) / gate 6,031/0 / acceptance 89/89 /
-registry 6,794 rows / catalogue 52 public + operator tier.
-Next: PAPER_2259 + P1 (user manual, first-run wizard, Windows one-click).
+Every dissolution carries numeric verification in the gate. The pattern
+held eight for eight: the numbers had origin points.

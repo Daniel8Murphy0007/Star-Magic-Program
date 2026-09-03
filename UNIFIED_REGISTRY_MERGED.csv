@@ -665,3 +665,5 @@ RULEDBATCH_ARC,8,RULINGS_BATCH_1,v0.408.0 (band-trail row added retroactively at
 FULLWHEEL_ARC,16,RULINGS_BATCH_2 + full-wheel program,v0.410.0,PAPER_063 e217 re-wire + PAPER_069 + partial-ruling annotations + ua_velocity_ratio canonization row merged into the main registry
 CONSOLIDATED_ARC,1,v0.409.0+v0.410.0,v0.411.0,full-wheel program condensed into one publication record
 FRONTDOOR_ARC,3,star_magic_cli+uqff_paths+star_magic_shell,v0.412.0,front-door modules merged into the product line
+USERMANUAL_ARC,2,export+quickstart subcommands,v0.413.0,user-manual band merged into the front door
+DISSOLUTION_ARC,4,batch3+batch4+eight singles+PAPER_2259,v0.414.0,"physics-backlog band merged: rulings folded, landmark wired"

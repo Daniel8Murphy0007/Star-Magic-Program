@@ -7171,3 +7171,7 @@ SCOREDPRED_ARC_SOURCES,KTB_ICDP_GFZ(complogs/hb1/60117200 sonic+density excerpt 
 RULINGS_BATCH_2,"PAPER_063(e217 ruling);PAPER_069(e172 joint);PAPER_089(beta_i-form);PAPER_104([UA] definition);PAPER_112(hadron 9-11);PAPER_116(1-GeV self-rectification);PAPER_133(genesis root);PAPER_145(k4 split);PAPER_147(aTHz normalized);PAPER_149(0.0034 table);QCalc_core_uqff.py(SOURCE4 formulas, Rule-E read-only)"
 CONSOLIDATED_ARC,v0.409.0(first full-wheel publication);v0.410.0(upgrade);RULINGS_BATCH_1;RULINGS_BATCH_2;BATCH_1_VERIFICATION;generate_wheel_manifest.py;SHIP_GUARD_v8
 FRONTDOOR_ARC,independent_evaluation_v0411(P0 list);star_magic_cli.py;uqff_paths.py;star_magic_shell.py;uqff_fidelity_tests.py(bootstrap);Daniel_locks_2026-09-01
+USERMANUAL_ARC,independent_evaluation_v0412(narrow list);README.md(Quick start);star_magic_cli.py(export+quickstart)
+RULINGS_BATCH_3,PAPER_218(L142/150 recompute);PAPER_162(L24/50/71/104);PAPER_042(L87/396);PAPER_043(L93/L364);PAPER_051(L123/L172);PAPER_054(L67);PAPER_088(L31/48/143);PAPER_114(L35/105);PAPER_059(F_rel resolution);PAPER_046(divisor self-rectification)
+RULINGS_BATCH_4,FULL READS: PAPER_117;PAPER_115;PAPER_146;PAPER_154;PAPER_009;PAPER_025b;PAPER_027 + PAPER_043/052(Higgs);PAPER_148/153(scoped fTRZ);PAPER_140/877/2148(two-aether grounding);PAPER_026(M_N1 self-rectification)
+PAPER_2259,PAPER_2139;PAPER_042;PAPER_218;PAPER_219;PAPER_220;PAPER_450;PAPER_2148;PAPER_2151

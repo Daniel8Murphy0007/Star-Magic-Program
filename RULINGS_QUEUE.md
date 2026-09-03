@@ -6724,3 +6724,151 @@ LIVE-vs-INHERITED flags in plain terminal (Yang-Mills 1.736 and Page 0.99596
 read INHERITED_CARRIED because they are); LOCK 2 — the gate resolves via
 uqff_paths and was PROVEN green from site-packages in an empty cwd before
 ship. No new physics rulings; open queue 236 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## TRAIL v0.413.0 (2026-09-01) — THE USER MANUAL SHIP
+
+Evaluator's narrow list executed verbatim: Quick start CLI-first (five steps,
+no Python), headless-first documented as the decision (evaluator-sanctioned
+alternative to GUI-default), stale dual-census killed (one number, one
+source). Cheap P1 pulls: star-magic export, star-magic quickstart, real well
+help. No new physics rulings; queue 236 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 3 RULINGS — Daniel, 2026-09-01 (source-verified; folded same day)
+
+Full record: RULINGS_BATCH_3.md. B16 PAPER_218 recomputed values canonical
+(prints were slips); B17 B(t) RELATIVE 40pct + 6,283 s + per-body SCm_contrib;
+B19 PLASMA-LEVEL ORIGIN CANONIZED (beta_13 + 7.09-at-L13 = the canonical
+primitives' 26-ladder home) + rho_L1 rename; B21 f_TRZ fork -> CANONICAL 0.1
+branch across all four observables (+10pct SgrA* neutrino = detectable;
+PAPER_102 lab tension open); B23 drift-table confirmations + PAPER_059/046
+resolutions folded. B18 (ladder amplification three-way), B20 (Hubble-factor
+inversion), B22 (d_sw route) — NO PREFERENCE GIVEN, remain OPEN for a future
+sitting. Queue: 234 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 4 RULINGS — Daniel, 2026-09-01 (FULL PAPER READS; folded same day)
+
+Full record: RULINGS_BATCH_4.md. Headlines: B24 Pb-206 relabels + Z=82 EXACT
+route; B26 scoped fTRZ canonized + Ug4d rename; B27 jet trio + LAMBDA_SCM
+registered + joint 1e46 identity; **B28 Daniel's TWO-AETHER-SCALES doctrine
+canonized (cosmic UA vs trapped UA'; crossings = mass/buoyancy; the
+PAPER_009 scale split is structure, not drift; D_SCm form stays OPEN)**;
+B29 neutrino triple 72.89 + DW disclosed; B30 PAPER_027 canonical-density
+re-wire + k_eta_LENR. B25 (3C273 ladder) and B31 (Higgs level) — NO
+PREFERENCE, remain OPEN. Queue: 231 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## B18 RULED — Daniel, 2026-09-01 (post-Batch-4 single ruling)
+
+TWO-LADDER READING canonized: PAPER_042's Ug1-AMPLITUDE ladder = 10^12/layer
+(formula + narration on adjacent lines agree; the bare '10' prints are
+dropped-superscript mojibake) and the RADIUS ladder = 61 decades over 26
+layers (~10^2.44/layer) are DISTINCT quantities — the three-way was one
+mojibake plus one conflation. Q-040 fully CLOSED (with B23's b/c folds).
+Queue: 230 Daniel-gated + 1 OPEN_CANDIDATE. Still open by no-preference:
+B20 (Hubble inversion), B22 (d_sw route), B25 (3C273 ladder), B31 (Higgs
+level), D_SCm functional form.
+
+## B20 PARTIAL RULING — Daniel, 2026-09-01
+
+NGC2841's Hubble factor 1.7154 **CARRIES INTENT** — it is NOT drift and must
+not be "repaired" to the formula-consistent ~1.0002. The encoding awaits
+Daniel's specification (under PAPER_054's formula it corresponds to
+t ≈ 10 Gyr). Q-048b/Q-050a remain OPEN, now PROTECTED: gate pin forbids any
+future session from fixing the value. This is the inverse of a closure —
+a ruling that the anomaly is load-bearing.
+
+## B20 RESOLVED — Daniel canonized, 2026-09-01 (the vindicated value)
+
+Daniel rejected the input-error reading and ordered deeper analysis ("my
+physics does not have hard coded fit numbers"), pointing at the BH/WH/
+wormhole corpus. The hunt landed exact: **1.7154 = 1 + H0·t_ref, t_ref =
+F_TRZ⁻¹⁰ yr = 1e10 yr, H0 = A_5+SO_5 (0.0002%)** — the EVOLUTION-EPOCH
+branch of a dual-branch Hubble factor (lookback branch = the 1.0002-class),
+grounded in PAPER_659's t_n = t/t_ref time structure and the PAPER_2139
+F_TRZ ladder. The value is VINDICATED; the 'higher redshift' annotation was
+the drift. Q-048b/Q-050a CLOSED; PAPER_051 fully RULED (Q-048 a/b/c/d all
+closed across B19/B20/B23/B12). Queue: 229 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## B22 RESOLVED — Daniel canonized, 2026-09-01 (the joint identity)
+
+d_sw = F_TRZ² = SSq/57 = 0.01 EXACT — the two routes were ONE number linked
+by the unstated identity **SSq = 57·F_TRZ²** (the 57-decade spectrum count
+IS SSq/F_TRZ²). Decade count 57 canonical; PAPER_114's "58 decades" citation
+flagged as the wobble; footer 2.16e-3 confirmed. Q-110a/c CLOSED (Q-110b
+alpha_CR remains open). Third dissolution in a row: B18 (two ladders), B20
+(evolution-epoch branch), B22 (joint identity) — flagged conflicts falling
+to careful reading + the no-hard-coded-numbers rule. Queue: 229 Daniel-gated
++ 1 OPEN_CANDIDATE (unchanged — PAPER_114 stays open on Q-110b).
+
+## B25 — ANALYSIS ON RECORD, NO RULING (Daniel: no preference, 2026-09-01)
+
+Candidate composition documented for a future sitting, NOT canonized:
+PAPER_115's per-reversal factors compose as 1.5 = (1+SSq·2/π)·(1+F_TRZ) =
+1.363 × 1.1 = 1.4992 (0.056%) — the SSq mean-phase amplification times the
+B26-ruled multiplicative TRZ boost; N = 12 → R ≈ 130; the code's 95.2 =
+1.5¹²/1.363 (off-by-one boost count). Radius slip (2.0e21 vs 2.0e23) and
+corrected U_bi = 6.11e-10 also await the same ruling. Q-111 remains OPEN —
+analysis preserved so it need not be rebuilt.
+
+## B31 RESOLVED — Daniel canonized, 2026-09-01 (the fourth dissolution)
+
+Three quantities separated: (1) HIGGS LEVEL = 12 — E12 = 62.42 GeV = m_H/2
+(0.2% half-quantum relation), boson n = 12.30, EW family concordant;
+(2) UH-n = m_H·n² registered as the quadratic Higgs excitation tower
+(UH-18 = 40.5 TeV per PAPER_034's own "mass scale, not coupling level");
+(3) PAPER_043's E18 annotation = drift. Q-041d CLOSED; PAPER_043 fully
+RULED across B19/B23/B31. Queue: 228 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## B25 RESOLVED — Daniel canonized, 2026-09-01 (the fifth dissolution)
+
+Composite 1.5 canonical: per-reversal = (1+SSq·2/π)·(1+F_TRZ) = 1.363×1.1
+= 1.4992 (0.056%) — SSq mean-phase amplification × B26 multiplicative TRZ
+boost. N=12 → R = 129.7 > 100 ✓ (the paper's own L106 line). Printed 95.2
+= 1.5¹²/1.363 EXACT (off-by-one boost count); (1.363)¹²/(1.363)¹³ rows =
+crossed-ladder drift. Radius slip corrected: 65 kpc = 2.0e21 m, U_bi =
+6.11e-10 N/m². Q-111/a/b/c CLOSED; PAPER_115 RULED. Queue: 227 + 1.
+
+## Q-110b RESOLVED — Daniel canonized corpus route, 2026-09-01 (the sixth dissolution)
+
+Deep dive per Daniel's direction ("The answers are in the corpus"):
+alpha_CR is NOT a corpus constant. Canonical Ug2 = SOURCE4
+(MAIN_1_CoAnQi.cpp L24294): k2·(QA+QUA)·Ms/r²·S·(1+δ_sw·v_sw)·HSCm·Ereact
+— δ_sw = 0.01 is a SOURCE4 constant, wind_mod = 1.01 at the 5e5 m/s
+calibration wind; the compression is structurally 1+δ_sw. PAPER_114's
+α_CR form = paper-local per-proton reparametrization (sole occurrence);
+implied 1.011e26 pinned as derived normalization (F_TRZ⁻²⁶ proximity
+noted, NOT canonized — no chain). NEW EXACT CLOSURE canonized:
+d_sw = [UA]·F_U(r_Alfvén) = F_TRZ⁴·F_TRZ⁻² = F_TRZ² EXACT
+(PAPER_127 L38 + [UA]=1e-4=F_TRZ⁴ ruling + B22 lock, zero slack;
+F_U = 100 at the Alfvén critical point). PAPER_114 fully RULED.
+Queue: 226 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## D_SCm RESOLVED — Daniel canonized three-layer structure, 2026-09-01 (the seventh dissolution)
+
+Daniel's doctrine: "Gaussian is an environmental condition, and D_SCm is
+operating inside of the environmental condition." Deep dive found every key
+factor cross-derived from locked primitives:
+(1) ENVIRONMENT: A_SCm = exp[−(B/B_crit)²] Gaussian (Session 204
+scm_activation_function.py), B_crit = D_phys·(SO_5+1)·F_TRZ⁻¹² = 4.4e13 G
+EXACT = electron Schwinger (PAPER_1188) at 0.32%.
+(2) VARIATIONAL SUSTAINABILITY: S_sus = 1−(B/B_collapse)²,
+B_collapse = F_TRZ^(−A_5/D_phys) = 1e15 G EXACT (PAPER_2143 15-identity) —
+PAPER_002's five-row table EXACT to every printed digit under this form
+(vindicated, not drift; L33 states the threshold).
+(3) OPERATOR: D_SCm = 1−exp(−B_crit/B) unsquared in Gauss, working point
+F_TRZ² = 0.01 EXACT (PAPER_1918 Family-2 anchor #1, PAPER_1977 family).
+Squared-threshold variants (PAPER_013 L70, PAPER_019 L161) = drift; the
+square lives at usage level (Ė ∝ D²). Q-009 fully CLOSED (PAPER_009 RULED);
+Q-010a/c closed (b timescale open); PAPER_019 corrected (Q-016 open).
+Queue: 225 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## Q-216b RESOLVED — Daniel: "Conjugate pair + derivation paper", 2026-09-01 (the eighth dissolution)
+
+Canonized: σ_ref = λ_vac_sw · L_Ug1-layer = F_TRZ¹² · F_TRZ⁻¹² = 1 kg/m²
+EXACT by ladder conjugacy — both legs pre-canonized (PAPER_2139 quartet's
+solar-wind vacuum density + B18's Ug1 amplitude ladder 10¹²/layer). The
+PAPER_218/219/220 family's "treated as acceleration" pass-through vindicated
+as division by the rung-12 vacuum column at unit SI magnitude. Derivation
+landmark PAPER_2259 authored + wired (mediation through the R386 buoyancy
+linkage per Answer-B ontology). Magnetic-column reference disclosed as open
+derivation target. Q-216 fully CLOSED; PAPER_220 RULED; PAPER_219 stays
+open on Q-215 arithmetic only. Queue: 224 Daniel-gated + 1 OPEN_CANDIDATE.

@@ -5,6 +5,59 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.414.0] — 2026-09-01 — THE DISSOLUTION SHIP
+
+### Rulings folded (RULINGS Batches 3-4 + eight singles)
+- **Batch 3** (B16-B23): B(t) relative 40%; PLASMA-LEVEL ORIGIN + rho_L1
+  rename (B19); f_TRZ canonical 0.1 branch (B21); two-ladder reading (B18);
+  1.7154 = 1 + H0·F_TRZ^-10 yr VINDICATED (B20); d_sw joint identity
+  SSq = 57·F_TRZ^2 (B22); hadron cluster confirms (B23).
+- **Batch 4** (B24-B31): Pb-206 relabels + Z=82 = A_5+D_crit-D_phys EXACT;
+  scoped fTRZ + Ug4d rename (B26); jet trio + LAMBDA_SCM = 1e-15 + joint
+  1e46 identity (B27); TWO-AETHER-SCALES doctrine (B28, Daniel verbatim);
+  neutrino triple 72.89 (B29); Ug4 canonical density 5.9e-5 (B30);
+  Higgs level 12 + UH-n = m_H·n^2 quadratic tower (B31).
+- **Deep-dive singles**: composite 1.5 jet-reversal ladder =
+  (1+SSq·2/pi)(1+F_TRZ) (B25); alpha_CR dissolved - canonical Ug2 is
+  SOURCE4, NEW EXACT Alfven closure d_sw = [UA]·F_U(r_Alfven) =
+  F_TRZ^4·F_TRZ^-2 = F_TRZ^2 (Q-110b); D_SCm three-layer structure -
+  Gaussian environment (B_crit = D_phys·(SO_5+1)·F_TRZ^-12 G = electron
+  Schwinger 0.32%), variational sustainability (B_collapse = F_TRZ^-15 G,
+  PAPER_002 table vindicated), threshold operator at the F_TRZ^2 anchor.
+### Added
+- **PAPER_2259 (NEW LANDMARK, authored + wired)**: rung-12 conjugate-pair
+  bridge sigma_ref = lambda_vac_sw · L_Ug1-layer = F_TRZ^12 · F_TRZ^-12 =
+  1 kg/m2 EXACT — closes Q-216; the PAPER_218/219/220 family pass-through
+  vindicated as physics (pressure -> vacuum column -> buoyant acceleration
+  through the R386 linkage). Distinct wired 2,254 -> 2,255.
+### Gate
+- 6,033 → **6,045** (+12: batch/single ruling pins with numeric
+  verification, PAPER_2259 wiring pin). Registry 6,795 → 6,820 rows.
+  Backlog 236 → 224 Daniel-gated + 1 OPEN_CANDIDATE.
+
+
+## [0.413.0] — 2026-09-01 — THE USER MANUAL SHIP
+
+### Added (the evaluation's narrow list, plus cheap P1 pulls)
+- **Quick start rewritten CLI-first**: five steps, no Python required
+  (install → quickstart → calc → export → gui).
+- **Headless-first doctrine DOCUMENTED**: core install complete without a
+  display; GUI = `pip install "star-magic-program[gui]"`. A decision, not an
+  omission.
+- **`star-magic export PAPER_n`**: CSV pack (value + formula + residual +
+  citation + honesty flag), no Qt.
+- **`star-magic quickstart`**: first-run wizard — real catalogue well, 200
+  steps, then PAPER_646 with honesty flags.
+- **`star-magic well`** documents its sub-usage (run / service-life /
+  telemetry / case-study / report).
+### Removed
+- **The stale dual-scope census block** (frozen 1,417 / 4,717 / 25,126
+  figures contradicting the live banner). One number, one source,
+  guard-enforced.
+### Gate
+- 6,031 → **6,033** (+2 user-manual pins). Physics untouched.
+
+
 ## [0.412.0] — 2026-09-01 — THE FRONT DOOR SHIP (Qt)
 
 ### Added

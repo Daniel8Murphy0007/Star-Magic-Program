@@ -251,3 +251,5 @@ band,RULEDBATCH_ARC,SHIPPED v0.408.0 (trail row retro-added at v0.410.0 prep - o
 band,FULLWHEEL_ARC,READY v0.410.0,"full-wheel rule + SHIP GUARD v8 + Batch-1 verification + Batch 2 fold (e217 reversal, [UA] canonized) + results table unfrozen (82 VERIFIED_LIVE) + registry closure"
 band,CONSOLIDATED_ARC,READY v0.411.0,v409+v410 condensed: full wheel + trust arc + registry closure + live results table + band trails
 band,FRONTDOOR_ARC,READY v0.412.0,"the package becomes a program: one command, honest flags, gate green from site-packages"
+band,USERMANUAL_ARC,READY v0.413.0,"the README teaches the command, not the language"
+band,DISSOLUTION_ARC,READY v0.414.0,the numbers had origin points - eight for eight

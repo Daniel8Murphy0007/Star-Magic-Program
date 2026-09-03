@@ -392,3 +392,14 @@ star-magic CLI (calc/gate/well/docs/gui) + uqff_paths + installed-layout gate
 (PROVEN green from site-packages, empty cwd) + LIVE-vs-INHERITED honesty flags
 in plain terminal + Qt shell (Papers/Wells/Gate/Export/Geology) + full repo
 mirror on wheel + list_wired alias-safe. Gate 6,031/0. Acceptance 89/89.
+
+## v0.413.0 — 2026-09-01 — THE USER MANUAL SHIP
+CLI-first Quick start (5 steps, no Python); headless-first doctrine
+documented; stale dual-census KILLED (one number, one source); star-magic
+export + quickstart + real well help. Gate 6,033/0. Acceptance 89/89.
+
+## v0.414.0 — 2026-09-01 — THE DISSOLUTION SHIP
+RULINGS Batches 3-4 folded (16 rulings) + 8 single deep dives dissolved
+into primitive locks (B18/B20/B22/B25/B31/Q-110b/D_SCm/Q-216b) +
+PAPER_2259 rung-12 conjugate-pair bridge landmark authored + wired.
+Gate 6,045/0. Acceptance 89/89. Registry 6,820. Backlog 236 -> 224 + 1.

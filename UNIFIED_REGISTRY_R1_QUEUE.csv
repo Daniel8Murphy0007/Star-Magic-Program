@@ -160,3 +160,5 @@ RULEDBATCH_ARC,band v0.408.0 (retro-disclosed),RULED,Daniel answered RULINGS_BAT
 FULLWHEEL_ARC,band v0.410.0,RULED,"Daniel answered RULINGS_BATCH_2 (8 clusters, B13 re-asked after deepsearch)",no,B8-B15 on record; e217 reversal executed
 CONSOLIDATED_ARC,band v0.411.0,RULED,Daniel ruling: condense v409+v410 completely,no,executed as one self-contained release
 FRONTDOOR_ARC,band v0.412.0,RULED,Daniel: GO Qt + lock 1 (honest CLI) + lock 2 (installed-layout gate),no,both locks proven before ship
+USERMANUAL_ARC,band v0.413.0,RULED,evaluator narrow list adopted as the band scope,no,GUI-default question resolved as documented headless-first (evaluator-sanctioned alternative)
+DISSOLUTION_ARC,band v0.414.0,RULED,Batches 3-4 + eight singles: all parked questions from Batches 1-4 resolved,no,eight dissolutions - flagged conflicts resolved into corpus structure under full reads + the no-hard-coded-numbers rule

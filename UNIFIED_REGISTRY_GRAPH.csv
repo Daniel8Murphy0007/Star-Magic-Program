@@ -12261,3 +12261,22 @@ PAPER_063,fubii_master_integral,PAIRS_WITH,PAPER_217,B13 ruling: mean -6.05e217 
 PAPER_063,x2_cosmic_root,CONFIRMS,PAPER_069,B13 joint: e172 family (x2=-3.40e172 pairs with PAPER_069 integral_factor -1.35e172)
 CONSOLIDATED_ARC,v0.411.0,UNIFIES,v0.409.0+v0.410.0,the full-wheel program condensed into one complete self-contained publication (Daniel ruling 2026-09-01)
 FRONTDOOR_ARC,star_magic_cli,UNIFIES,uqff_calculator+uqff_downhole_simulator,one installable command over both products; honesty flags load-bearing (Daniel lock 1); gate installed-layout proof (Daniel lock 2)
+USERMANUAL_ARC,README.md,TEACHES,star_magic_cli,the Quick start teaches the command not the language; census single-sourced to the live banner
+plasma_level_origin,PAPER_043,CANONIZES,BETA_I+RHO_SCM,B19: both canonical primitives read as Level-13/plasma values of the 26-ladder (3-datum support)
+f_trz_fork_prediction,PAPER_088,DECIDES,Q-087c+Q-092c+Q-096c,"B21: one ruling, four observables - canonical 0.1 branch"
+two_aether_scales,PAPER_009,RESOLVES,kappa_scale_split,B28: the threshold/table scale split IS the cosmic-UA vs trapped-UA-prime structure; crossings = mass/buoyancy (PAPER_2148 crossing doctrine)
+lambda_SCm,PAPER_154,LINKS,E_react_1e46_routes,B27: lambda_SCm = rho_A*v_SCm joins rho*v/rho_A (B14) and rho*v^2/lambda (B27) as one identity family
+z82_exact_route,PAPER_117,ADOPTS,A_5+D_crit-D_phys,B24: EXACT integer route replaces the asserted sub-ladder mapping
+two_ladder_reading,PAPER_042,DISSOLVES,Q-040a_three_way,B18: the amplitude ladder and the radius ladder are distinct quantities; the apparent conflict was one mojibake plus one conflation
+hubble_factor_dual_branch,PAPER_051,DERIVES_FROM,H0_PAPER_1573+F_TRZ_ladder+PAPER_659_time_structure,"B20: 1.7154 vindicated as 1 + H0*F_TRZ^-10 yr - the evolution-epoch branch; annotation was the drift, never the value"
+d_sw_joint_identity,PAPER_114,UNIFIES,SSq_spectrum_route+F_TRZ_ladder_route,B22: the numerology smell was an unstated identity - SSq = 57*F_TRZ^2 links the physical and primitive routes into one number
+higgs_level_12,PAPER_043,SEPARATES,uh_quadratic_tower+E18_annotation,"B31: three quantities disentangled - the boson level (12), the quadratic tower (UH-n), and the drifted E18 label"
+jet_reversal_composite,PAPER_115,COMPOSES,SSq+F_TRZ,B25: 1.5 = (1+SSq*2/pi)*(1+F_TRZ) - crossed-ladder drift dissolved
+ubi_3c273_corrected,PAPER_115,CORRECTS,radius_slip_100x,B25: 6.11e-10 N/m2 at true r = 2.0e21 m; printed 6.14e-14 verifies EXACTLY at wrong r
+alfven_boundary_closure,PAPER_127,CLOSES,F_TRZ2+F_TRZ4+UA_ratio,Q-110b: three separately-ruled quantities lock with zero slack at the Alfven critical point
+alpha_CR_normalization,PAPER_114,DERIVES_FROM,SOURCE4_wind_mod,Q-110b: compression is structurally 1+delta_sw; alpha_CR is the local forms derived normalization
+b_crit_scm_environment,PAPER_1188,CROSS_DERIVES,electron_schwinger,D_SCm ruling: primitive lattice route lands on QED observable at 0.32 pct
+b_collapse_scm_sustainability,PAPER_002,VINDICATES,paper_002_table,D_SCm ruling: five-row table EXACT under the variational sustainability form
+d_scm_threshold_operator,PAPER_1918,ANCHORS,f_trz_squared_family,D_SCm ruling: magnetar working point = anchor 1 of the universal 99 pct suppression family
+sigma_ref_bridge,PAPER_2259,CONJUGATE_PAIR,lambda_vac_sw+l_ug1_layer,Q-216b: rung-12 conjugate product = 1 kg/m2 EXACT; bridges Pa terms into acceleration sums
+sigma_ref_bridge,PAPER_218,NORMALIZES,PAPER_219+PAPER_220+PAPER_450,Q-216b: family pass-through vindicated (division by unit-SI rung-12 vacuum column)
