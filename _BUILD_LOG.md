@@ -431,3 +431,9 @@ zero-tags skip never fired in the release workflow. Guard now skips when
 GITHUB_ACTIONS is set or <100 tags visible; enforces on full checkouts.
 Verified in four contexts. v0.415.0/.1 tagged-unpublished-superseded.
 Gate 6,046/0.
+
+## v0.416.0 — 2026-09-04 — THE ORIGIN POINTS SHIP
+Batches 5-8 + B57: 41 rulings folded under the recalculate-first method;
+rho_crit forensic closure; Cabibbo dual closures; S330 flavor physics;
+PAPER_026c re-ID. Gate 6,051/0. Acceptance 89/89. Registry 6,856.
+Backlog 224 -> 191 + 1.

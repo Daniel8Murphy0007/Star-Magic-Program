@@ -12693,3 +12693,75 @@ skip when GITHUB_ACTIONS or <100 visible tags; enforce on full checkouts.
 Proven in four contexts (repo / branch-CI sim / tag-CI sim / installed).
 v0.415.0/.1 recorded tagged-unpublished-superseded. Lesson canonized:
 enumerate contexts before shipping context-sensitive guards.
+
+## 2026-09-03 (5) — v0.415.2 POST-PUBLICATION SURVEY (Daniel: "tell me what got missed")
+
+Downloaded the PUBLISHED wheel from PyPI and audited it against the repo:
+2,705 tracked files -> 0 missing (19 root modules + 2,704 data files + 141
+package files). Content hashes identical for calculator, gate, registry,
+README, CHANGELOG, CLAUDE.md, ledger, index, rulings queue, session log;
+sole diff = ship.ps1 line endings (LF on Linux-built wheel, CRLF locally;
+byte-identical normalized). Published wheel probed from empty cwd:
+VERSION 0.415.2, 2,310 dispatches, PAPER_2259 sigma_ref = 1.0, full gate
+6,046/0 green from site-packages. NOTHING MISSED. Tag chain: v0.414.0 ->
+v0.415.2 on PyPI with 0.413.0/0.415.0/0.415.1 as recorded unpublished
+history. Release workflow green on first try under the four-context guard.
+
+## 2026-09-03 (6) — BATCH 5 FOLDED (B32-B40): nine rulings, 9-for-9 not-drift
+
+Daniel's method correction mid-batch reset the approach: recalculate before
+labeling. Every "drift" candidate dissolved into an origin point — the
+GW190425 chain closed at 0.04% with SCm activation the corpus itself hinted
+at, 0.903 turned out to be exp(−κD/2), and the magnetar 3,300× "conflict"
+was three corpus-grounded channels. 8 dispatches ruled (PAPER_002/003/004/
+005/007 fields; 013/014/015 status flips), registry +8 (6,828), graph +3,
+gate 6,046 → 6,047, index 3 flips. Backlog 224 → 215 + 1.
+
+## 2026-09-03 (7) — BATCH 6 FOLDED (B41-B48): eight rulings + the ρ_crit forensic closure
+
+Eight more origin points, zero drift verdicts. Headline: the 9.47e-27
+mystery constant behind the 1.894 artifact (935 papers) identified from
+inside PAPER_021 as the cosmological critical density — PAPER_2156's
+open audit target closed. 8 dispatches ruled, registry +8 (6,836),
+graph +3, gate 6,047 → 6,048, index 7 flips (2,057 ✓ / 236 ⚠).
+Backlog 215 → 207 + 1. Open remainders held honestly: L_aether 192 Mpc,
+R_s closed form. Batch 7 starts at Q-020.
+
+## 2026-09-03 (8) — BATCH 7 FOLDED (B49-B56): the derivations existed
+
+Daniel's correction held through three LFU dives — the derivation was in
+PAPER_031 all along (Ug3 string-frequency band 1.02-1.06). Boost family
+extended (single + double), heavy vacuum scale closed (M_s3·SSq = M_KK,
+0.0006%), two-measure DM split, sin² convention, f_SM = SSq⁶, δ_CP routed
+to canonical −π/2. 8 dispatches ruled, registry +8 (6,844), graph +3,
+gate 6,048 → 6,049, index 8 flips (2,065 ✓ / 228 ⚠). Backlog 207 → 199 + 1
+— UNDER 200 for the first time. Five honest opens held.
+
+## 2026-09-04 (1) — B57: Daniel's pointer closed four of five opens
+
+"you can most likely find the answers here: pypi.org/project/uqff/5.86.0"
+— and it held: PAPER_1815's zero-free-parameter g-2 route ran live from the
+wheel (259.58e-11), sigma_SI and f_DM forms surfaced, and the session-log
+trail exposed the Cabibbo AI-error chain, landing on the PAPER_1800 dual
+closures at 0.008%/0.025%. My own 1/D_BSFG² candidate was demoted by the
+session log itself (PRIMITIVE_SAT_ADHOC). VLQ 85.9 fb honestly not found.
+Registry +4 (6,848), graph +2, gate 6,049 → 6,050.
+
+## 2026-09-04 (2) — BATCH 8 FOLDED (B58-B65): the grok threads held the physics
+
+Three deep dives resolved by Daniel's pointers: S330's exact-rational
+flavor closures, the source thread's two-quantity eta-prime split, and the
+kappa_c mock-fit lineage. Copied 411 grok thread files to sandbox for
+greppability (network mount too slow for direct sweeps). 8 dispatches
+ruled, registry +8 (6,856), graph +3, gate 6,050 → 6,051, index 8 flips.
+Backlog 199 → 191 + 1.
+
+## 2026-09-04 (3) — v0.416.0 SHIP PREP: THE ORIGIN POINTS SHIP
+
+Authoring check: one item owed — the B52 PAPER_026c re-ID (executed:
+c-file written with disclosure note, old path stubbed, manual delete
+queued; Windows lock prevents sandbox deletion). Charter pass: version
+synced across all files, ORIGINPOINTS_ARC band rows in 8 satellites,
+_sg4_band rotated, guard-v9 authorized gaps extended to the recorded
+v0.415.0/.1 history, index +PAPER_026c row + ship chain. Wheel rehearsal
++ staleness sweep follow; Daniel ships via .\ship.ps1.

@@ -5,6 +5,38 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.416.0] — 2026-09-04 — THE ORIGIN POINTS SHIP
+
+### Rulings folded (Batches 5-8 + B57 pointer set: 41 rulings, B32-B65 + B57)
+- **Batch 5 (B32-B40)**: GW190425 chain EXACT (0.04%, SCm activation at
+  1e13 G); phase lag = kappa*D*SSq*(1+F_TRZ); h_peak (1+d_sw) boost;
+  0.903 = exp(-kappa*D/2) aether amplitude decay (dual-route P);
+  magnetar three-channel timescales (1/SSq^2 ages via PAPER_094);
+  delta_c 0.45 + A_damp = 0.3 EXACT; siren bias = raw-data correction.
+- **Batch 6 (B41-B48)**: r_aether = (c/kappa)*F_TRZ^-10 (17 Gpc);
+  F_Um = exp(-0.37) regime pair; U_m scoped split ([UA] rung); 8/5 EXACT;
+  sigma8 0.940; FORENSIC: 9.47e-27 = rho_crit (PAPER_2156 target CLOSED);
+  SSq-power ladder EXACT; BBH string three-way = three routes.
+- **Batch 7 (B49-B56)**: (1+d_sw)^n boost family on component sums;
+  two-measure DM split; sin^2 convention + PAPER_026c re-ID;
+  V_string,heavy = M_s3*SSq = M_KK (0.0006%); LFU = PAPER_031 Ically
+  string-frequency band 1.02-1.06 (three dives); f_SM = SSq^6;
+  delta_CP -> canonical -pi/2; F_suppress semantics + sqrt(SSq).
+- **B57 (Daniel's pointer, pypi uqff 5.86.0)**: PAPER_1815 g-2 route
+  live-verified (259.58e-11); sigma_SI form; f_DM = 1-(6/5)SSq-Omega_b;
+  Cabibbo dual closures 0.008%/0.025% (PAPER_1800), fit-era forms demoted.
+- **Batch 8 (B58-B65)**: S330 flavor closures (R(D*) 7/6, R_K 1-1/108);
+  K_CKM = 13/20 EXACT; F_TRZ^3 rung + 844-GeV convergence; eta-prime
+  two-quantity resolution (source thread); kappa_c 18.8 + mock-fit
+  lineage; tautological t_n; formulas/computed/chain-true over mojibake.
+### Authored
+- **PAPER_026c** (re-ID per B52): short sterile-nu variant re-identified;
+  old path stubbed (Windows lock; manual delete queued).
+### Gate
+- 6,046 -> **6,051** (+5 batch pins). Registry 6,820 -> 6,856 rows.
+  Backlog 224 -> 191 Daniel-gated + 1 OPEN_CANDIDATE.
+
+
 ## [0.415.2] — 2026-09-03 — THE TAG-CHAIN SHIP (ALL-CONTEXTS-FIXED)
 
 ### Fixed

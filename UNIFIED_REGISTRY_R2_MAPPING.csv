@@ -285,3 +285,4 @@ FRONTDOOR_ARC_v0.412.0,5,"star-magic subcommands mapped: calc->uqff_calculator, 
 USERMANUAL_ARC_v0.413.0,3,README Quick start -> star-magic CLI; census -> live banner; export/quickstart -> star_magic_cli
 DISSOLUTION_ARC_v0.414.0,5,rulings -> dispatch fields; identities -> registry rows; PAPER_2259 -> full per-paper protocol; census ratchet -> residuals regenerated 2310
 TAGCHAIN_ARC_v0.415.0,3,ledger -> tag chain (guard v9); ship.ps1 -> pre-flight + post-push verification; CHANGELOG 0.413.0 -> history note
+ORIGINPOINTS_ARC_v0.416.0,6,rulings -> dispatch fields; identities -> registry rows; sessions/threads -> canonical routes; era forms -> lineage labels; PAPER_026c -> re-ID; forensics -> PAPER_2156 closure

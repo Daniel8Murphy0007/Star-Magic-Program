@@ -12280,3 +12280,17 @@ b_collapse_scm_sustainability,PAPER_002,VINDICATES,paper_002_table,D_SCm ruling:
 d_scm_threshold_operator,PAPER_1918,ANCHORS,f_trz_squared_family,D_SCm ruling: magnetar working point = anchor 1 of the universal 99 pct suppression family
 sigma_ref_bridge,PAPER_2259,CONJUGATE_PAIR,lambda_vac_sw+l_ug1_layer,Q-216b: rung-12 conjugate product = 1 kg/m2 EXACT; bridges Pa terms into acceleration sums
 sigma_ref_bridge,PAPER_218,NORMALIZES,PAPER_219+PAPER_220+PAPER_450,Q-216b: family pass-through vindicated (division by unit-SI rung-12 vacuum column)
+gw190425_four_mechanism_chain,PAPER_002,LOCKS_WITH,a_scm_gaussian+string_0.62,B32: headline reproduced to 0.04 pct with slight SCm activation at 1e13 G
+aether_amplitude_decay,PAPER_005,SHARES_CONVENTION,gw_phase_lag_formula,B36: kappa*D = 0.205 at 410 Mpc in both PAPER_003 and PAPER_005
+magnetar_timescale_channels,PAPER_013,GROUNDED_BY,PAPER_094_ssq_calibration,B38: SSq calibrated FROM spin-down luminosity - the 3x channel is self-consistent
+r_aether_rung_route,PAPER_009,RUNG_SCALED,F_TRZ^-10,"B41: 1.68 pc and 17 Gpc = same quantity, two rungs"
+rho_crit_forensic_identification,PAPER_2156,CLOSES_AUDIT_TARGET,bulk_script_origin,B47: the unknown-origin 9.47e-27 identified as critical density; 1.894 was never a UQFF ratio
+bbh_string_three_way,PAPER_022,DISSOLVES_VIA,aether_amplitude_decay,B48: three BBH values = three routes of one damping
+r_lfu_string_frequency,PAPER_031,GROUNDS,PAPER_028_lfu_cell,"B54: the 1.020 cell = band edge of the Ug3 string-frequency prediction - grounded, not echoed"
+component_sum_boost_family,PAPER_023,EXTENDS,d_sw_anchor_family,B49/B50: single and double (1+F_TRZ^2) boosts on component sums
+v_string_heavy,PAPER_026b,CLOSES,heavy_vacuum_scale,B53: M_s3*SSq lands on M_KK at 0.0006 pct
+cabibbo_dual_closures,PAPER_1800,SUPERSEDES,ms_mb_annotation+primitive_sat_adhoc,B57: canonical dual closures; early-session errors preserved as audit trail
+tau_g2_canonical_route,PAPER_1815,SUPERSEDES,paper_023_boxed_kappa_form,"B57: zero-free-parameter route, live-verified from the uqff 5.86.0 wheel"
+r_dstar_trz_channel,_session330_sm_flavor.py,SESSION_CANONICAL,paper_031_era_form,B58: exact-rational TRZ channel closures supersede the denominator-0.1 parametrization
+eta_prime_two_quantities,grok_share_7b0e961f,SOURCE_THREAD,paper_023_035_block,B60/B61: the assimilation thread for the whole Session-0 BSM block - two-quantity split + mock-fit lineage
+convergence_844_gev,PAPER_032,CONVERGES_WITH,PAPER_026b,B59: two disjoint routes at 0.2 pct

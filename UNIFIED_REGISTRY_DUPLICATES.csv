@@ -160,3 +160,4 @@ FRONTDOOR_ARC_band_record,BAND_RECORD,"v0.412.0: no new duplicate families; modu
 USERMANUAL_ARC_band_record,BAND_RECORD,v0.413.0: no new duplicate families; the dual-census duplicate TRUTH was the target and it is dead
 DISSOLUTION_ARC_band_record,BAND_RECORD,"v0.414.0: crossed-ladder and squared-threshold variants ruled drift, not duplicate physics; the 95.2/129.8 and squared-D_SCm rows were one ladder and one form wearing wrong labels"
 TAGCHAIN_ARC_band_record,BAND_RECORD,v0.415.0: no duplicate content - the v0.413.0 band exists exactly once in git (inside the v0.414.0 commit); the ledger entry and the missing tag were the same version wearing two states
+ORIGINPOINTS_ARC_band_record,BAND_RECORD,"v0.416.0: PAPER_026 duplicate-claim resolved - sequential file canonical, short variant re-IDd PAPER_026c, old path stubbed (manual delete queued)"

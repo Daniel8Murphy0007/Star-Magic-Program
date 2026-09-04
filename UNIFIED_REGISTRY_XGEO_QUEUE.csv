@@ -1741,3 +1741,4 @@ FRONTDOOR_ARC,n/a,n/a,NOT_APPLICABLE,product front-door band - no cross-geometry
 USERMANUAL_ARC,n/a,n/a,NOT_APPLICABLE,documentation band - no cross-geometry content,v0.413.0
 DISSOLUTION_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content,v0.414.0
 TAGCHAIN_ARC,n/a,n/a,NOT_APPLICABLE,publication-integrity band - no cross-geometry content,v0.415.0
+ORIGINPOINTS_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content,v0.416.0

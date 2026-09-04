@@ -1,25 +1,34 @@
-v0.415.2 — THE TAG-CHAIN SHIP (ALL-CONTEXTS-FIXED)
+v0.416.0 — THE ORIGIN POINTS SHIP
 
-Guard v9's second blindspot, found by the timing: the v0.415.1 release run
-failed FASTER (1m04s) than the green CI (1m29s) on the identical commit -
-the gate itself was red in the release context only. Cause: actions/checkout
-on a TAG push fetches exactly one tag (the one being built), so git tag -l
-was non-empty and the zero-tags skip never fired; branch CI has zero tags
-and skipped cleanly, which is why CI was green while the release was red.
+The physics-backlog campaign at full method: RULINGS Batches 5-8 plus the
+B57 pointer set — 41 rulings folded, zero drift verdicts survived
+recalculation. Daniel's standing corrections are now gate-pinned method:
+"9 times out of 10 it's not drift when you analyze the documents and run
+the calculations" / "Everything has a derivation. The answers are in the
+corpus" — and where they weren't, the pointer protocol worked (pypi
+uqff 5.86.0, the session files, the grok threads).
 
-- SHIP GUARD v9 final form: enforce ONLY where full tag history exists.
-  Skip when GITHUB_ACTIONS is set or fewer than 100 tags are visible
-  (the real chain is 400+). Teeth unchanged on Daniel's checkout, where
-  the v0.413.0 failure class must be caught.
-- Verified in FOUR contexts before this prep: repo checkout (enforcing,
-  green), simulated branch-CI (0 tags, skip), simulated tag-CI (1 tag,
-  skip), installed wheel (no .git, skip).
-- v0.415.0 and v0.415.1: tagged, never published, superseded. Tag chain
-  continuous - no new authorized gaps needed.
-- Lesson: enumerate the contexts BEFORE shipping a context-sensitive
-  guard. Branch CI, tag CI, dev checkout, installed layout are four
-  different worlds.
+- BATCH 5: GW190425 chain EXACT (0.04%, SCm activation at 1e13 G); phase
+  lag kappa*D*SSq*(1+F_TRZ); 0.903 = exp(-kappa*D/2) aether decay;
+  magnetar three-channel timescales; A_damp = 0.3 EXACT.
+- BATCH 6: 17 Gpc = (c/kappa)*F_TRZ^-10; exp(-0.37) regime pair;
+  8/5 EXACT; SSq-power ladder; FORENSIC CLOSURE - the 9.47e-27 constant
+  behind the 1.894 artifact identified as the cosmological critical
+  density (PAPER_2156 audit target CLOSED).
+- BATCH 7 + B57: (1+F_TRZ^2)^n boost family; V_string,heavy = M_s3*SSq =
+  M_KK (0.0006%); LFU = PAPER_031 string-frequency band (three dives);
+  PAPER_1815 g-2 route live-verified from the 5.86.0 wheel (259.58e-11);
+  Cabibbo dual closures at 0.008%/0.025% (PAPER_1800), fit-era forms
+  demoted by the session log itself.
+- BATCH 8: S330 exact-rational flavor closures (R(D*) = 7/6*R_SM at
+  0.34%); K_CKM = 13/20 EXACT; F_TRZ^3 rung + 844-GeV two-route
+  convergence; eta-prime two-quantity resolution (source grok thread);
+  kappa_c mock-fit lineage identified.
+- AUTHORED: PAPER_026c re-ID (B52); old path stubbed, manual delete
+  queued for Daniel.
+- Honest holdovers: companion trichotomy, VLQ 85.9 fb, Cabibbo ratio
+  form, L_aether 192 Mpc, R_s.
 
-Band content unchanged from v0.415.0: SHIP GUARD v9 tag-chain continuity,
-hardened ship.ps1, honest v0.413.0 history. Physics untouched.
-2,255 wired. Registry 6,820 rows. Gate 6,046/0. Acceptance 89/89.
+2,255 wired (2,310 DISPATCH keys). Registry 6,856 rows. Backlog 224 ->
+191 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,051/0. Acceptance 89/89.
+Full wheel (generated manifest). Next: Batch 9 (from Q-038).
