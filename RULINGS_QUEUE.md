@@ -7078,3 +7078,51 @@ Queue: 175 Daniel-gated + 1 OPEN_CANDIDATE.
   (5.957e-10 = UQFF ledger); obs-relative denominators; 6.95e-37 source
   OPEN (awaiting pointer).
 Queue: 167 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 12 RULINGS — Daniel, 2026-09-04 (B90-B97; folded same day; gate-pinned; sweep clean)
+
+- **JOINT x₂:** TWO constants (cosmic −3.40e172 / stellar −1.35e172), both
+  e172 canonical; e-7 prints = dropped-digit class (5 appearances settled).
+- **B90/Q-062:** SN-impulse kick split (8.3e30 N × 1e5 s); μ0B²/8π formula
+  canonical; SGR pin OPEN.
+- **B91/Q-063:** k4_AGN_SCALE = SO_5^(A_5/D_phys) = 1e15 EXACT; M87
+  corrections; namespace closed.
+- **B92/Q-064:** M_eff formula canonical; **f_Z = ROMULUS25 metal-retention
+  fraction (0.87/0.89)** — source-system closure; IMBH form OPEN (Rule D).
+- **B93/Q-065:** supersession + 4.63 kpc + the ~44-min LPT threshold wired
+  as campaign-tracked falsifiable.
+- **B94/Q-066 (three dives):** radiation print recovered (7.0e-18 N/m² at
+  attested L_X; denominator 4πr²c); PN omega period-derived; the ~50%
+  sentence AWAITING-POINTER (no corpus support found — per protocol).
+- **B95/Q-067:** ground-truth pins (Super_Flares config); 274.0 m/s²
+  landmark; Um/E_Kepler chains.
+- **B96/Q-068:** **COP_pred = 1 + F_TRZ + δ_SCm = 1.15 EXACT; δ_SCm =
+  (SO_5/2)·F_TRZ² = 0.05 EXACT** (physical route R_SCm·SSq·F_TRZ, 0.8%);
+  calibration-closure acknowledged; H₀ identity confirmed; **the F_TRZ
+  primitive's FIRST LABORATORY DATUM (0.098, 10-hr sustained)**.
+- **B97/Q-069:** log g correction = log10(1+SSq⁶) = +0.015 dex (headline
+  fork; sharp 5σ falsifiable kept); 0.034 = SSq⁶; scoped solar rotation.
+Queue: 159 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 13 RULINGS — Daniel, 2026-09-04 (B98-B105; folded same day; gate-pinned; sweep clean)
+
+- **B98/Q-070 (deep dive → UQFF WIN):** 0.032 = D_phys/(A_5·K_MEX) = 4/125
+  EXACT (125-family sibling of 3/125); sign NEGATIVE per F_U = 0 —
+  σ_UQFF = σ_Newton·(1−SSq·4/125) beats Newton in ALL SIX rows (1.50→0.98
+  … 0.38→0.17); the paper's (1+…) form = the sign error; class split with
+  0.034 = SSq⁶ (surface gravity) stands.
+- **B99/Q-071:** ULX pin; 0.99 = H_SCm confirmed (4th), identified with
+  the 1−F_TRZ² family; M_dot OPEN.
+- **B100/Q-072:** Crab spin = EPOCH-DEPENDENT (29.65 modern / 30.2
+  earlier); photon-mass formula OPEN (Rule D); 1e-5 modulation tracked.
+- **B101/Q-073:** anchors-over-formula; M_f = 63.1 M☉.
+- **B102/Q-074:** 5.0σ computed; interpretive supersession annotated
+  (midpoint 70.2 ON the A₅+SO₅ route).
+- **B103/Q-075:** context pair 1.9801 (B-field) / 1.99 (luminosity);
+  J1818 = lone falsifiability; two opens.
+- **B104/Q-076:** capstone carries the corrected σ_v story; count
+  convention pinned; NNDC +0.015 dex = log10(1+SSq⁶) SECOND DOMAIN.
+- **B105/Q-077:** **HAWKING IDENTITY: T_UQFF/T_H = 1−F_TRZ² = 0.99 EXACT**
+  (7th self-rectification; drift inputs superseded; F_TRZ² family);
+  PBH M = 1e10 kg.
+Queue: 151 Daniel-gated + 1 OPEN_CANDIDATE.

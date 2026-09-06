@@ -162,3 +162,4 @@ DISSOLUTION_ARC_band_record,BAND_RECORD,"v0.414.0: crossed-ladder and squared-th
 TAGCHAIN_ARC_band_record,BAND_RECORD,v0.415.0: no duplicate content - the v0.413.0 band exists exactly once in git (inside the v0.414.0 commit); the ledger entry and the missing tag were the same version wearing two states
 ORIGINPOINTS_ARC_band_record,BAND_RECORD,"v0.416.0: PAPER_026 duplicate-claim resolved - sequential file canonical, short variant re-IDd PAPER_026c, old path stubbed (manual delete queued)"
 FIFTHSECTOR_ARC_band_record,BAND_RECORD,v0.417.0: the 1.3275 mantissa collision flagged as copy artifact; E_LEP and k_eta namespace splits close the symbol-collision family
+LABDATUM_ARC_band_record,BAND_RECORD,v0.418.0: dual-x2 settled as TWO constants (not duplicates); the 0.032/0.034 siblings = two primitives for two observable classes

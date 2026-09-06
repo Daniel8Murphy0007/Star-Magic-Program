@@ -670,3 +670,4 @@ DISSOLUTION_ARC,4,batch3+batch4+eight singles+PAPER_2259,v0.414.0,"physics-backl
 TAGCHAIN_ARC,1,SHIP GUARD v9 + ship.ps1 hardening + history naming,v0.415.0,publication-integrity band merged: the ledger and the tag chain must agree
 ORIGINPOINTS_ARC,41,batches 5-8 + B57 pointer set,v0.416.0,"physics-backlog band merged: 41 rulings, zero surviving drift verdicts"
 FIFTHSECTOR_ARC,23,batches 9-11 + post-ship audit,v0.417.0,"rulings band merged: prediction fulfilled, forensic pair complete"
+LABDATUM_ARC,16,batches 12-13 + joint dual-x2,v0.418.0,rulings band merged: the primitive met the bench

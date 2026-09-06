@@ -1,35 +1,33 @@
-v0.417.0 — THE FIFTH SECTOR SHIP
+v0.418.0 — THE LABORATORY DATUM SHIP
 
-A gate-pinned prediction came true. Since July the gate has carried
-PAPER_2142's prediction of a 5th sector for the R91 identity
-1/(D_phys-2) = 0.5 - and Batch 11 found it living in PAPER_060's BEC
-suppression table, where the "0.50 vs SSq" puzzle dissolved into the
-primitive. The framework predicted its own next closure.
+The primitive met the bench. Batches 12-13 (16 rulings, B90-B105).
 
-- POST-SHIP AUDIT (Daniel's catch on v0.416.0): three dispatches had
-  shipped OPEN on closed questions - folded, and the tags-vs-status
-  sweep is now a standing rule (ran CLEAN on all three new batches).
-- BATCHES 9-11 (23 rulings, B66-B89):
-  * BOTH PAPER_2156 FORENSIC MYSTERIES SOLVED - 9.47e-27 = the
-    cosmological critical density (B47) and "1.894" = PAPER_048's Ug4
-    Sun-SgrA* force value (B73): a force reading, never a density ratio.
-  * ROOT-ERA UNITS FIX - the kg/m3-vs-J/m3 drift that PAPER_2147
-    corrected across 933 papers traces to Session 0 (PAPER_049), whose
-    "16 orders excess" headline was the artifact (consistent: 0.117).
-  * NEW EXACT LOCKS - 26 = N_CH + D_phys + D_crit/2 = 9+4+13;
-    Ug2/g_grav = D_phys^D_phys = 256; K_CKM = 13/20; the Q_wave regime
-    rung ladder (F_TRZ^-12 / 1 / F_TRZ^6); the whim F_TRZ^12 dilution.
-  * IDENTITIES + ORIGINS - omega_LENR = omega_SCm (the LENR channel IS
-    the phonon resonance); the plasma-level origin of both canonical
-    primitives confirmed on a third datum; E18 rehabilitated as
-    oscillator-projection shorthand.
-  * CONVENTIONS - local-dynamical-mass g_grav, observation-relative
-    residuals, dual-branch Hubble labeling, E_LEP/k_eta namespaces,
-    DPM = Di-Pseudo-Monopole canon.
-- Honest opens: F_LENR exponent, the 6.95e-37 source, the 2x compression
-  form, the kappa-chain, companion trichotomy, VLQ 85.9 fb, Cabibbo
-  ratio form, L_aether 192 Mpc, R_s.
+- FIRST LABORATORY MEASUREMENT OF A LOCKED PRIMITIVE: f_TRZ = 0.098 vs
+  the primitive 0.10 (2.0%), sustained ten hours (reactor record RDR-002,
+  2026-01-26) - arriving inside the newly-closed COP identity:
+  COP_pred = 1 + F_TRZ + delta_SCm = 1.15 EXACT, with delta_SCm =
+  (SO_5/2)*F_TRZ^2 = 0.05 EXACT (kappa's composition family) and the
+  physical route through the ROMULUS25 R_SCm = 0.87 at 0.8%.
+- THE SIGN THAT TURNED A CAVEAT INTO A WIN: PAPER_074's honest "Newton
+  closer in all six rows" dissolved - the dispersion correction is its
+  own primitive (0.032 = D_phys/(A_5*K_MEX) = 4/125 EXACT, sibling of
+  the rocky-Love 3/125) with the NEGATIVE sign the F_U = 0 master
+  equation demands: sigma_UQFF = sigma_Newton*(1 - SSq*4/125) beats
+  Newton in ALL SIX galaxies (1.50->0.98 ... 0.38->0.17).
+- THE HAWKING IDENTITY: T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2
+  = 0.99 EXACT (F_TRZ^2 anchor family; 7th self-rectification).
+- ALSO: dual-x2 settled (cosmic -3.40e172 / stellar -1.35e172, five
+  corrupted appearances); k4_AGN_SCALE = SO_5^15 EXACT; omega_LENR =
+  omega_SCm as identity; f_Z = ROMULUS25 metal retention; log10(1+SSq^6)
+  in two domains (Gaia log g + NNDC binding); epoch-resolved Crab spins;
+  the 1.9801/1.99 class pair; 5.0-sigma computed tension with the
+  interpretive H0 supersession (midpoint 70.2 ON the A_5+SO_5 route);
+  two tracked falsifiables added (44-min LPT threshold, 1e-5 Crab
+  modulation).
+- HONEST OPENS: the Helix 50% sentence AWAITING-POINTER (three dives,
+  told per protocol), 6.95e-37 source, VLQ 85.9 fb, and seven smaller
+  pins held without guessing.
 
-2,255 wired (2,310 DISPATCH keys). Registry 6,880 rows. Backlog 191 ->
-167 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,055/0. Acceptance 89/89.
-Full wheel (generated manifest). Next: Batch 12 (from Q-062).
+2,255 wired (2,310 DISPATCH keys). Registry 6,895 rows. Backlog 167 ->
+151 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,057/0. Acceptance 89/89.
+Full wheel (generated manifest). Next: Batch 14 (from Q-078).

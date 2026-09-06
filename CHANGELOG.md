@@ -5,6 +5,29 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.418.0] — 2026-09-04 — THE LABORATORY DATUM SHIP
+
+### Rulings folded (Batches 12-13: 16 rulings, B90-B105 + joint dual-x2)
+- **Batch 12**: COP IDENTITY - COP_pred = 1 + F_TRZ + delta_SCm = 1.15
+  EXACT with delta_SCm = (SO_5/2)*F_TRZ^2 = 0.05 EXACT (kappa family) and
+  the ROMULUS25 physical route; **the F_TRZ primitive's FIRST LABORATORY
+  DATUM (0.098 vs 0.10, 10-hr sustained)**; dual-x2 joint (cosmic 3.40e172
+  / stellar 1.35e172); k4_AGN_SCALE = SO_5^15 EXACT; f_Z = ROMULUS25
+  metal retention; log g = log10(1+SSq^6) headline; SN-impulse kick split;
+  ground-truth config pins; Helix 50-pct sentence AWAITING-POINTER.
+- **Batch 13**: THE SIGN-CORRECTED WIN - sigma_UQFF = sigma_Newton*
+  (1 - SSq*4/125) with 4/125 = D_phys/(A_5*K_MEX) EXACT beats Newton in
+  all 6 rows (the paper's one-sided caveat dissolved); Hawking identity
+  T_UQFF/T_H = 1 - F_TRZ^2 = 0.99 EXACT; SSq^6 second domain (NNDC);
+  epoch-resolved Crab spins; 1.9801/1.99 class pair; 5.0-sigma computed;
+  interpretive H0 supersession (midpoint 70.2 ON the A_5+SO_5 route);
+  anchors-over-formula QNMs; capstone corrected.
+### Gate
+- 6,055 -> **6,057** (+2 batch pins). Registry 6,880 -> 6,895 rows.
+  Backlog 167 -> 151 Daniel-gated + 1 OPEN_CANDIDATE. Two campaign-tracked
+  falsifiables added; sweeps CLEAN both folds.
+
+
 ## [0.417.0] — 2026-09-04 — THE FIFTH SECTOR SHIP
 
 ### Post-ship audit (Daniel's catch on v0.416.0)

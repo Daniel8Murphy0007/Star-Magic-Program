@@ -287,3 +287,4 @@ DISSOLUTION_ARC_v0.414.0,5,rulings -> dispatch fields; identities -> registry ro
 TAGCHAIN_ARC_v0.415.0,3,ledger -> tag chain (guard v9); ship.ps1 -> pre-flight + post-push verification; CHANGELOG 0.413.0 -> history note
 ORIGINPOINTS_ARC_v0.416.0,6,rulings -> dispatch fields; identities -> registry rows; sessions/threads -> canonical routes; era forms -> lineage labels; PAPER_026c -> re-ID; forensics -> PAPER_2156 closure
 FIFTHSECTOR_ARC_v0.417.0,5,rulings -> dispatch fields; forensics -> PAPER_2156 closures; rungs -> taxonomy; conventions -> registry; audit -> standing sweep rule
+LABDATUM_ARC_v0.418.0,5,reactor record -> COP identity + lab datum; source configs -> ground-truth pins; 125-family -> dispersion lock; F_TRZ^2 family -> Hawking identity; corruption class -> dual-x2

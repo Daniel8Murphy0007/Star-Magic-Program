@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.417.0", "uqff_calculator.VERSION = 0.417.0 (THE FIFTH SECTOR SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
+assert_that(C.VERSION == "0.418.0", "uqff_calculator.VERSION = 0.418.0 (THE LABORATORY DATUM SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'FIFTHSECTOR_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'LABDATUM_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,35 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BATCH 13 RULED 2026-09-04 (B98-B105): the sign that turned a caveat into a win + the Hawking identity ----
+import math as _b13m
+assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')
+                for _p in ('PAPER_074', 'PAPER_075', 'PAPER_076', 'PAPER_077', 'PAPER_078',
+                           'PAPER_079', 'PAPER_080', 'PAPER_081'))
+            and 4 / 125 == 0.032
+            and abs((342 * (1 - 0.57 * 4 / 125) - 324) / 12 - 0.98) < 0.01
+            and abs((1 + 0.1) * (1 - 0.1) - 0.99) < 1e-15
+            and abs(5.6 / _b13m.sqrt(0.5 ** 2 + 1.0 ** 2) - 5.0) < 0.02
+            and abs(1 + 0.99 * 0.99 - 1.9801) < 1e-12
+            and abs(_b13m.log10(1.99) - 0.299) < 1e-3,
+            "BATCH 13 (B98-B105) - the deepest dissolution yet: PAPER_074's one-sided Rule-7 caveat became a UQFF WIN once the sign followed the master equation - sigma_UQFF = sigma_Newton*(1 - SSq*4/125) with 0.032 = D_phys/(A_5*K_MEX) EXACT (the 125-family sibling of the rocky-Love 3/125) beats Newton in ALL SIX rows; the Hawking ratio is the primitive-locked identity (1+F_TRZ)(1-F_TRZ) = 0.99 EXACT joining the F_TRZ^2 anchor family (7th self-rectification, drift inputs superseded); log10(1+SSq^6) claims its SECOND domain (NNDC binding beside Gaia log g); the Crab dual spin is real spin-down epochs; the enhancement pair 1.9801/1.99 is class-scoped; the tension is 5.0 sigma computed; and the capstone now tells the corrected story; opens held: sigma_Newton provenance, M_dot table, photon-mass formula, J1818 provenance, Pdot; sweep CLEAN")
+
+# ---- BATCH 12 RULED 2026-09-04 (B90-B97): ground-truth configs + the COP identity + the first lab datum ----
+import math as _b12m
+assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')
+                for _p in ('PAPER_066', 'PAPER_067', 'PAPER_068', 'PAPER_070',
+                           'PAPER_071', 'PAPER_072', 'PAPER_073'))
+            and 'ruling_b93' in C.calc('PAPER_069') and C.calc('PAPER_069')['status'].startswith('RULED')
+            and abs(8.3e30 * 1e5 - 8.3e35) / 8.3e35 < 1e-12
+            and 10 ** 15 == 1000000000000000
+            and abs(6e5 * (1 - 1e-4 * 0.99) - 5.9994e5) < 1
+            and abs(1 + 0.1 + (10 / 2) * 0.1 ** 2 - 1.15) < 1e-12
+            and abs(0.87 * 0.57 * 0.1 - 0.0496) < 1e-4
+            and abs(_b12m.log10(1 + 0.57 ** 6) - 0.01465) < 1e-4
+            and abs(1e30 / (4 * _b12m.pi * (6.15e18) ** 2 * 3e8) - 7.0e-18) / 7.0e-18 < 0.02
+            and abs(2 * _b12m.pi / 1e6 - 6.28e-6) / 6.28e-6 < 1e-3,
+            "BATCH 12 (B90-B97) - the source configs were the ground truth: the Super_Flares dict confirms every PAPER_071 pin, the PN dict carries its own omega contradiction, and the reactor record RDR-002 supplies the COP IDENTITY - COP_pred = 1 + F_TRZ + delta_SCm = 1.15 EXACT with delta_SCm = (SO_5/2)*F_TRZ^2 = 0.05 EXACT (kappa's composition family) and the physical route through the ROMULUS25 R_SCm = 0.87 at 0.8 percent - plus the F_TRZ primitive's FIRST LABORATORY DATUM (0.098 vs 0.10, 10-hr sustained); the dual-x2 joint ruling settles five corrupted appearances (cosmic 3.40e172 / stellar 1.35e172), k4_AGN_SCALE = SO_5^15 EXACT closes another namespace, f_Z was the ROMULUS25 metal-retention fraction all along, the log-g correction is log10(1+SSq^6) keeping the sharp 5-sigma falsifiable, and the Helix 50-percent sentence is held AWAITING-POINTER after three dives found no corpus support - told honestly, per the protocol; sweep CLEAN")
 
 # ---- BATCH 11 RULED 2026-09-04 (B82-B89): the R91 5th sector lands + the Q_wave rung ladder ----
 import math as _b11m

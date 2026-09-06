@@ -12303,3 +12303,9 @@ hubble_dual_branch_suite,PAPER_054,APPLIES,B20_dual_branch,"B78: the suite inver
 bec_suppression_r91,PAPER_2142,FULFILLS_PREDICTION,r91_5th_sector,B84: the gate-pinned 5th-sector prediction lands in the BEC suppression table
 q_wave_rung_ladder,PAPER_2139,EXTENDS,f_trz_rung_taxonomy,B83: Q_wave regime values = rungs -12/0/+6
 omega_lenr_identity,PAPER_062,IDENTIFIES_WITH,omega_SCm,"B86: LENR channel = phonon resonance, corpus-continuous with the predecessor spine"
+x2_dual_constants,PAPER_070,DECISIVE_EVIDENCE,dual_print_same_paper,joint: both exponents of one value printed in one paper
+cop_identity_rdr,experimental_validation_system.py,GROUND_TRUTH,RDR-002,"B96: the reactor record supplies prediction, measurement, and the ROMULUS25 datum"
+logg_ssq6_correction,PAPER_029,SHARES_CONSTANT,f_sm_ssq6,B97: SSq^6 appears as both f_SM and the log-g correction factor
+dispersion_4_125_lock,PAPER_1954,JOINS_FAMILY,125_denominator,"B98: 4/125 beside 3/125 - two observables, one denominator"
+hawking_identity_099,PAPER_1918,JOINS_FAMILY,f_trz_squared_anchors,B105: 0.99 = 1-F_TRZ^2 joins the universal-suppression family
+ssq6_second_domain,PAPER_073,SHARES_CONSTANT,logg_ssq6_correction,B104: log10(1+SSq^6) in two domains

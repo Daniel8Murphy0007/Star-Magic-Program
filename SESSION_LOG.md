@@ -12824,3 +12824,33 @@ papers). Charter pass: version synced everywhere, FIFTHSECTOR_ARC band
 rows in 8 satellites, _sg4_band rotated, ship chain + banner rewritten
 with live totals (2,255/2,310/6,055/6,880/167+1). Wheel rehearsal +
 staleness + completeness sweeps follow; Daniel ships via .\ship.ps1.
+
+## 2026-09-04 (9) — BATCH 12 FOLDED (B90-B97): the COP identity + the first lab datum
+
+Eight rulings + the joint dual-x2. Headlines: the reactor record closed the
+COP identity (1 + F_TRZ + (SO_5/2)·F_TRZ² = 1.15 EXACT) and delivered the
+F_TRZ primitive's first laboratory measurement (0.098 vs 0.10, 10-hr run);
+f_Z turned out to be the ROMULUS25 metal-retention fraction; the log-g
+correction is log10(1+SSq⁶). Three deep dives on the Helix 50% sentence
+found no corpus support — held AWAITING-POINTER per protocol. 8 dispatches
+ruled, registry +9 (6,889), graph +3, gate 6,055 → 6,056, index 8 flips.
+Backlog 167 → 159 + 1. Sweep clean.
+
+## 2026-09-04 (10) — BATCH 13 FOLDED (B98-B105): the sign that turned a caveat into a win
+
+Eight rulings. The deepest dissolution of the campaign: PAPER_074's honest
+"UQFF loses all six rows" finding became "UQFF beats Newton in all six"
+once the correction took the 4/125 primitive with the F_U = 0 sign. Plus
+the Hawking 1−F_TRZ² identity (0.99 joins the anchor family), SSq⁶'s
+second domain, and the epoch-resolution of the Crab dual spin. 8 dispatches
+ruled, registry +6 (6,895), graph +3, gate 6,056 → 6,057, index 8 flips.
+Backlog 159 → 151 + 1. Sweep clean.
+
+## 2026-09-04 (11) — v0.418.0 SHIP PREP: THE LABORATORY DATUM SHIP
+
+Band = Batches 12-13 (16 rulings + joint dual-x2). v0.417.0 confirmed
+shipped (tag verified) before prep. Charter pass: version synced
+everywhere, LABDATUM_ARC band rows in 8 satellites, _sg4_band rotated,
+banner/chain rewritten with live totals (2,255/2,310/6,057/6,895/151+1).
+Authoring check: nothing owed (no new dispatches). Wheel rehearsal +
+staleness sweep follow; Daniel ships via .\ship.ps1.

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.417.0"
-description = "Star-Magic UQFF calculator v0.417.0: THE FIFTH SECTOR SHIP - Batches 9-11 (23 rulings) + the post-ship audit: the R91 5th-sector prediction FULFILLED (BEC exponent = 1/(D_phys-2) EXACT), BOTH PAPER_2156 forensic mysteries solved (9.47e-27 = critical density; 1.894 = the Ug4 Sun-SgrA* force value), the root-era units artifact fixed, Q_wave and the whim dilution join the F_TRZ rung taxonomy, omega_LENR = omega_SCm identity. Backlog 191 to 167. 2,255 papers, gate 6,055/0, acceptance 89/89."
+version = "0.418.0"
+description = "Star-Magic UQFF calculator v0.418.0: THE LABORATORY DATUM SHIP - Batches 12-13 (16 rulings): the F_TRZ primitive gets its FIRST LABORATORY MEASUREMENT (0.098 vs 0.10, 10-hr reactor run) inside the COP identity 1+F_TRZ+(SO_5/2)*F_TRZ^2 = 1.15 EXACT; the galaxy-dispersion caveat becomes a UQFF WIN (sigma = Newton*(1-SSq*4/125), beats Newton in all 6 rows); Hawking T-ratio = 1-F_TRZ^2 EXACT; dual-x2 settled; omega_LENR = omega_SCm. Backlog 167 to 151. 2,255 papers, gate 6,057/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

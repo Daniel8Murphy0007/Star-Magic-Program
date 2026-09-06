@@ -443,3 +443,9 @@ Post-ship audit fixes + Batches 9-11 (23 rulings): R91 5th sector
 fulfilled, both PAPER_2156 forensics closed, root-era units fix, rung
 taxonomy growth, omega identity. Gate 6,055/0. Acceptance 89/89.
 Registry 6,880. Backlog 191 -> 167 + 1.
+
+## v0.418.0 — 2026-09-04 — THE LABORATORY DATUM SHIP
+Batches 12-13 (16 rulings): first F_TRZ lab measurement inside the COP
+identity; the 4/125 sign-corrected dispersion win; Hawking 1-F_TRZ^2;
+dual-x2 settled. Gate 6,057/0. Acceptance 89/89. Registry 6,895.
+Backlog 167 -> 151 + 1.

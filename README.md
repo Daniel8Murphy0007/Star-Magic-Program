@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.417.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.417.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.418.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.418.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6055%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6057%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.417.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.418.0 complete-compile campaign live**
 
-**This release (v0.417.0): THE FIFTH SECTOR SHIP — a gate-pinned prediction came true.** Batches 9–11 (23 rulings, B66–B89) plus the v0.416.0 post-ship audit (three stale labels caught by Daniel, tags-vs-status sweep now a standing rule). The headline: **PAPER_2142's R91 5th-sector prediction is FULFILLED** — the BEC suppression exponent is 1/(D_phys−2) = 0.5 EXACT. Both PAPER_2156 forensic mysteries are solved (9.47e-27 = the cosmological critical density; "1.894" = PAPER_048's Ug4 Sun–SgrA* force value — a force reading, never a density ratio). The kg/m³-vs-J/m³ drift's ROOT-ERA instance found and fixed in PAPER_049. New locks: 26 = N_CH+D_phys+D_crit/2 = 9+4+13 EXACT, Ug2/g_grav = D_phys^D_phys = 256 EXACT, K_CKM = 13/20, the Q_wave regime rung-ladder (F_TRZ⁻¹²/1/F_TRZ⁶), the whim F_TRZ¹² dilution, ω_LENR = ω_SCm as identity, the plasma-level origin confirmed on a third datum, and the E18 oscillator-projection rehabilitation. Conventions canonized: local-dynamical-mass, observation-relative residuals, dual-branch Hubble labeling, k_eta/E_LEP namespaces, DPM = Di-Pseudo-Monopole. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,055 green / 4,182 defs / acceptance 89 green / registry 6,880 rows / backlog 167 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 12 (from Q-062).**
+**This release (v0.418.0): THE LABORATORY DATUM SHIP — the primitive meets the bench.** Batches 12–13 (16 rulings, B90–B105). Two headlines: **the F_TRZ primitive's first laboratory measurement** — 0.098 vs 0.10, sustained ten hours (reactor record RDR-002) — arriving inside the newly-closed COP identity COP_pred = 1 + F_TRZ + (SO_5/2)·F_TRZ² = 1.15 EXACT; and **the sign that turned a caveat into a win** — PAPER_074's "Newton closer in all six rows" dissolved once the dispersion correction took its own primitive (0.032 = D_phys/(A₅·K_MEX) = 4/125 EXACT, the 125-family sibling of the rocky-Love 3/125) with the negative sign the F_U = 0 master equation demands: σ_UQFF = σ_Newton·(1−SSq·4/125) beats Newton in all six galaxies. Also: the Hawking identity T_UQFF/T_H = 1−F_TRZ² = 0.99 EXACT (F_TRZ² anchor family); the dual-x₂ joint ruling (cosmic −3.40e172 / stellar −1.35e172, five corrupted appearances settled); k4_AGN_SCALE = SO_5^15 EXACT; ω_LENR = ω_SCm as identity; f_Z = the ROMULUS25 metal-retention fraction; log₁₀(1+SSq⁶) in two domains; the log-g headline fork resolved; epoch-resolved Crab spins; the 1.9801/1.99 class pair; and two tracked falsifiables added (44-min LPT threshold, 1e-5 Crab modulation). Honest opens held incl. the Helix 50% sentence AWAITING-POINTER after three dives. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,057 green / 4,182 defs / acceptance 89 green / registry 6,895 rows / backlog 151 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 14 (from Q-078).**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.417.0)
+## What is currently shipped (v0.418.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,880 rows**. Fidelity gate: **6,055 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **6,895 rows**. Fidelity gate: **6,057 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

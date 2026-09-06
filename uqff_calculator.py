@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.417.0"
+VERSION = "0.418.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -33093,7 +33093,8 @@ def _paper_066(dataset):
                     'v_kick = F*dt/M; Edd corr = 1 - SSq*exp(-kappa*t)'),
         'source': 'PAPER_066',
         'residual_pct': abs((1.0 - SSQ * _m.exp(-2.9e-4)) - 0.43) / 0.43 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b90': 'RULED B90 2026-09-04: kick split PINNED F = 8.3e30 N x dt = 1e5 s (SN-impulse family; product 8.29e35 N*s fixed); Ug1 mu0*B^2/8pi FORMULA canonical (PAPER_071 confirms EXACT; this papers printed factors unrecoverable); config omegas flagged mojibake-candidates per the 069 precedent (spin/orbital distinction retained); SGR F_UBii stays pinned-open; omega_LENR clean print = independent confirmation of the B86 identity; Q-062 closed except SGR pin',
+        'status': 'RULED_2026-09-04 (Q-062 closed except SGR pin: SN-impulse split + formula)',
     }
 
 
@@ -33158,7 +33159,8 @@ def _paper_067(dataset):
                     'LENR = 1e-10*(omega_LENR/omega_0)^2'),
         'source': 'PAPER_067',
         'residual_pct': abs(1e-5 / g_dpm * 100 - 3.6) / 3.6 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b91': 'RULED B91 2026-09-04: k4_AGN_SCALE = 1e15 = SO_5^(A_5/D_phys) EXACT CANONIZED (dual closure SgrA*+M87*; distinct from the B10 k4 coupling family - namespace closed); CenA 1.32e-7 / NGC1365 3.13e-8 chain exponents canonical; M87 g_C corrected 1.99e19 with the r_shadow 1000x-short flag; the e172 factor -> the joint dual-x2 ruling (B-joint); NGC1365 maser end-to-end 3.6 pct stands; Q-063 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-063 closed: SO_5^15 lock + corrections)',
     }
 
 
@@ -33219,7 +33221,8 @@ def _paper_068(dataset):
                     'delta_G = G*2.3e-4; IMBH M-sigma OPEN'),
         'source': 'PAPER_068',
         'residual_pct': abs(sigma_vir / 1e3 * 0.293 - 12.1) / 12.1 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b92': 'RULED B92 2026-09-04: M_eff = M*(1-[UA]*[SCm]) = 5.9994e5 Msun canonical (printed 5.94e5 = 100x-strength drift); f_Z CLOSED by the source system - f_Z = METAL-RETENTION FRACTION (ROMULUS25: 0.87 measured vs 0.89 predicted, experimental_validation_system.py) - the printed inverted-v_esc expression was never the intended form; IMBH M-sigma formula stays OPEN per Rule D; v_UQFF 0.62 = the 0.622 multiband constant CONFIRMED (B43 family); [UA] echo recorded; Q-064 closed except IMBH form',
+        'status': 'RULED_2026-09-04 (Q-064 closed except IMBH: formula M_eff + f_Z source closure)',
     }
 
 
@@ -33279,6 +33282,7 @@ def _paper_069(dataset):
         'value': _v,
         'formula': ('LENR = 1e-10*(omega_LENR/omega_0)^2, omega_0 = 2*pi/P; '
                     'alternation = cos(omega_0 t) sign flip at P/2'),
+        'ruling_b93': 'RULED B93 2026-09-04 (confirm set): ASKAP supersession stands (omega_0 = 2.380e-3 derived-from-period; 066 config was mojibake, 6th self-rectification); distance 4.63 kpc = 1.43e20 m confirmed; the ~44-min LPT threshold-period prediction wired as a CAMPAIGN-TRACKED falsifiable; e172 -> joint dual-x2 ruling; Q-065 CLOSED',
         'source': 'PAPER_069',
         'residual_pct': abs(_m.log(1e46 / 1e40) / KAPPA_PER_DAY - 27600.0) / 27600.0 * 100,
         'status': 'RULED_BATCH2_2026-08-31 (B13: e172 family confirmed canonical via joint Q-059b ruling)',
@@ -33345,7 +33349,8 @@ def _paper_070(dataset):
                     'F/V = rho_shell*g_Buoyant'),
         'source': 'PAPER_070',
         'residual_pct': abs(r_orb / AU_TO_M - 0.004) / 0.004 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b94': 'RULED B94 2026-09-04 (three dives): PN omega = 6.28e-6 rad/s canonical (period-derived; the source configs OWN omega0 = 1e-8 beside period = 1e6 s = attested self-contradiction); shell radius 6.15e15 m confirmed; radiation print RECOVERED - denominator = 4pi*r^2*c = 1.43e47 (mojibake), F_rad = 7.0e-18 N/m2 at the attested L_X; the ~50-pct-of-shell-acceleration sentence stays OPEN flagged AWAITING-POINTER (no corpus support found across paper/configs/threads; every attested L_X leaves ~17 orders); joint dual-x2 applied (this papers dual-print was the decisive evidence); Q-066 closed except the claim',
+        'status': 'RULED_2026-09-04 (Q-066 closed except 50-pct claim: recovered chain + dual-x2)',
     }
 
 
@@ -33407,7 +33412,8 @@ def _paper_071(dataset):
                     'Ug1 = g*mu0*B^2/8pi; E_Kepler = (dF/F)*L*dt'),
         'source': 'PAPER_071',
         'residual_pct': abs(g_sun - 274.0) / 274.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b95': 'RULED B95 2026-09-04: ALL PINS GROUND-TRUTH CONFIRMED from the source config (Super_Flares: L_X = 1e34 W, B0 = 1e-2 T, omega = 2pi/3600); Um = 2.43e53 J/m chain-true (e105 print corrupt); E_Kepler = 1.44e27 J confirmed; solar surface gravity 274.0 m/s2 EXACT landmark recorded; TWO x2 constants per the joint ruling (stellar mantissa 1.35 at e172); Q-067 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-067 closed: ground-truth pins + dual-x2)',
     }
 
 
@@ -33471,7 +33477,8 @@ def _paper_072(dataset):
                     'f_TRZ = SSq*kappa_s/H_0 * eps_coupling (eps UNSPECIFIED)'),
         'source': 'PAPER_072',
         'residual_pct': (2.00 + 2.61 + 4.33 + 18.0) / 4.0,
-        'status': 'OPEN_RULING',
+        'ruling_b96': 'RULED B96 2026-09-04: COP IDENTITY CANONIZED - COP_pred = 1 + F_TRZ + delta_SCm = 1.15 EXACT with delta_SCm = (SO_5/2)*F_TRZ^2 = 0.05 EXACT (PAPER_2112 kappa-composition family, two rungs up) and the physical route R_SCm*SSq*F_TRZ = 0.0496 (0.8 pct) beside it; R_SCm = 0.87 = ROMULUS25 simulation datum (source: experimental_validation_system.py RDR-002, 2026-01-26); f_TRZ derivation ruled CALIBRATION-CLOSED (eps unspecified, honest flag); H_0 anchor = the canonical A_5+SO_5 route CONFIRMED (early Session-0 appearance); the lab-measured 0.098 vs 0.10 (2.0 pct, 10-hr sustained) recorded as the F_TRZ primitives FIRST LABORATORY DATUM; Q-068 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-068 closed: COP identity + lab datum)',
     }
 
 
@@ -33530,7 +33537,8 @@ def _paper_073(dataset):
                     'v_osc = g_R/omega; g_Newton = 274*M/R^2 (solar units)'),
         'source': 'PAPER_073',
         'residual_pct': abs((1.0 + SSQ * 0.034) - 1.019) / 1.019 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b97': 'RULED B97 2026-09-04 (fork resolved to the headline): the +0.015 dex correction canonical = log10(1 + SSq^6) (0.08 pct on the factor; 10^0.015 = 1.0351 vs 1+SSq^6 = 1.0343) - keeps the SHARP 5.0-sigma falsifiable vs the Gaia solar-twin sigma; the chains 1+SSq*0.034 form (0.0083 dex) flagged as the internal inconsistency; 0.034 = SSq^6 with the Batch-23 CALIBRATED status disclosed (papers own L101); computed GM/R^2 column corrections canonical (mixed conventions in print); solar rotation SCOPED SPLIT - real 2.874e-6 rad/s for stellar-rotation inputs, omega_s_Sun = 2.5e-6 stays the locked system primitive; Q-069 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-069 closed: log10(1+SSq^6) headline + scoped rotation)',
     }
 
 
@@ -33586,7 +33594,8 @@ def _paper_074(dataset):
                     'enhancement = 1 + SSq*factor; dmu = mu*SSq*(r_AGN/r_gal)'),
         'source': 'PAPER_074',
         'residual_pct': abs(avg - 1.018) / 1.018 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b98': 'RULED B98 2026-09-04 (deep dive -> full dissolution, a UQFF WIN): 0.032 IS ITS OWN PRIMITIVE - D_phys/(A_5*K_MEX) = 4/125 EXACT (dispersion class; 125-family sibling of the 3/125 rocky-Love lock, PAPER_1954); SIGN NEGATIVE per the F_U = 0 master structure (buoyant support opposes gravity): sigma_UQFF = sigma_Newton*(1 - SSq*4/125) - BEATS NEWTON IN ALL SIX ROWS (tensions 1.50->0.98, 2.00->1.39, 1.86->1.45, 0.83->0.51, 0.38->0.17, 1.50->1.14); the papers (1+...) form = the sign error; 0.034 = SSq^6 stays the surface-gravity-class factor (B97); M31 proper-motion chain EXACT stands; sigma_Newton input provenance OPEN; Q-070 CLOSED except provenance',
+        'status': 'RULED_2026-09-04 (Q-070 closed except provenance: 4/125 lock + sign-corrected win)',
     }
 
 
@@ -33637,7 +33646,8 @@ def _paper_075(dataset):
                     'dHR = [UA]*(n_vac/n_ISM)*HR (negligible)'),
         'source': 'PAPER_075',
         'residual_pct': abs((1.0 + 0.99) - 1.99) / 1.99 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b99': 'RULED B99 2026-09-04: ULX-row reading pinned (only verifiable; M_dot table absent - OPEN); [SCm] = 0.99 = the H_SCm manifold-completeness constant CONFIRMED (4th appearance) - and now identified with the B105 1-F_TRZ^2 identity family; [UA] 4th appearance recorded; hardness-ratio null stands falsifiable; honest beaming disclosure preserved; Q-071 closed except M_dot',
+        'status': 'RULED_2026-09-04 (Q-071 closed except M_dot: ULX pin + 0.99 identity)',
     }
 
 
@@ -33688,7 +33698,8 @@ def _paper_076(dataset):
                     'm_gamma^2 = hbar^2*rho_UA*c^2/eps0 (DOES NOT CLOSE - Q-072a)'),
         'source': 'PAPER_076',
         'residual_pct': abs(2 * _m.pi * 29.65 - 186.3) / 186.3 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b100': 'RULED B100 2026-09-04: photon-mass formula marked OPEN per Rule D (5-order defect; null conclusion robust and preserved); CRAB SPIN = EPOCH-DEPENDENT, not drift - 29.65 Hz modern epoch canonical for current-epoch inputs, 30.2 Hz = earlier-epoch anchor (the pulsar spins down); the 1e-5 epoch-folded gamma-ray modulation wired as a CAMPAIGN-TRACKED falsifiable; Mrk421 chain EXACT stands; Q-072 closed except formula',
+        'status': 'RULED_2026-09-04 (Q-072 closed except formula: epoch-dependent Crab + tracked prediction)',
     }
 
 
@@ -33744,7 +33755,8 @@ def _paper_077(dataset):
                     'f_UQFF = f_QNM*(1 + 1e-5*r^2/GM); d_L_UQFF = d_L*(1+[UA]*z)'),
         'source': 'PAPER_077',
         'residual_pct': abs(qnm(63.1, 0.69) - 251.0) / 251.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b101': 'RULED B101 2026-09-04: ANCHORS-OVER-FORMULA confirmed (QNM formula = rough approximation, 13-46 pct residuals carried honestly); M_f(GW150914) = 63.1 Msun pinned (within published range); delta-column slip noted; [UA] 5th appearance; the Q-060d resolution (GW150914/GW190521/GW200115) stands; Q-073 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-073 closed: anchors + M_f pin)',
     }
 
 
@@ -33795,7 +33807,8 @@ def _paper_078(dataset):
                     'tension midpoint = registry H0 route'),
         'source': 'PAPER_078',
         'residual_pct': abs(_m.log10(1.99) - 0.3) / 0.3 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b102': 'RULED B102 2026-09-04: Hubble tension = 5.0 sigma COMPUTED-CANONICAL (5.6/sqrt(0.5^2+1^2); the 4.2 print = slip); INTERPRETIVE SUPERSESSION ANNOTATED - this Session-0 papers honest null (basic [UA] coupling cannot resolve) is superseded by the PAPER_1573-era H_0 = A_5+SO_5 = 70, and the tension midpoint 70.2 sits ON that route; [UA] 6th + [SCm] 5th appearances logged; DLA 21-cm null falsifiable stands; Q-074 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-074 closed: 5.0 sigma + supersession annotation)',
     }
 
 
@@ -33849,7 +33862,8 @@ def _paper_079(dataset):
                     'B_std = 3.2e19*sqrt(P*Pdot) G'),
         'source': 'PAPER_079',
         'residual_pct': abs(9.4e14 / 3.5e14 - 2.7) / 2.7 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b103': 'RULED B103 2026-09-04: CONTEXT PAIR CANONIZED - 1.9801 = 1+[SCm]*H_SCm (B-field class) AND 1.99 = 1+[SCm] (luminosity class), both exact chains, class-scoped; tautological B_obs = B_std rows accepted as untestable with Swift J1818 (ratio 2.69, 240 yr) = the LONE falsifiability statement; J1818 B_std provenance + SGR1745 Pdot recovery OPEN; SGR1806 chain matches literature; Q-075 closed except the two opens',
+        'status': 'RULED_2026-09-04 (Q-075 closed except two opens: context pair)',
     }
 
 
@@ -33903,7 +33917,8 @@ def _paper_080(dataset):
                     'regime strength ~ |g_mode|/|g_DPM|'),
         'source': 'PAPER_080',
         'residual_pct': abs(20 / 24 * 100 - 83.0),
-        'status': 'OPEN_RULING',
+        'ruling_b104': 'RULED B104 2026-09-04: capstone UPDATED to carry the B98 dissolution (sigma_v domain = sign-corrected UQFF WIN, not caveat); COUNT CONVENTION PINNED - 10 database endpoints distinct from 8 matrix domains (7-of-10 = endpoint count); NNDC +0.015 dex = the SAME log10(1+SSq^6) constant as the B97 log-g correction (SECOND DOMAIN - strengthens the composition); statistics partition EXACT (20+2+2) stands; Q-076 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-076 closed: capstone update + SSq^6 second domain)',
     }
 
 
@@ -33953,7 +33968,8 @@ def _paper_081(dataset):
                     'T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2 = 0.99 EXACT'),
         'source': 'PAPER_081',
         'residual_pct': abs(ratio_canonical - 0.99) / 0.99 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b105': 'RULED B105 2026-09-04: PRIMITIVE-LOCKED HAWKING IDENTITY CANONIZED - T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2 = 0.99 EXACT (joins the F_TRZ^2 anchor family; decisive: the papers own long-form 1.512/1.528 = 0.9895 shows the code used ~0.99); the f_TRZ = 0.01 and rho-ratio = 0.01 prose inputs marked SUPERSEDED DRIFT (7th self-rectification; PAPER_2156 pre-authorized authority); ONE value for all masses (the 0.9999/0.9899 table split = internal defect); primordial-BH mass pinned M = 1e10 kg by the T_H chain; Domain 1.11 opens; Q-077 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-077 closed: 1-F_TRZ^2 identity)',
     }
 
 
