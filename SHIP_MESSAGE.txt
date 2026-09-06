@@ -1,34 +1,35 @@
-v0.416.0 — THE ORIGIN POINTS SHIP
+v0.417.0 — THE FIFTH SECTOR SHIP
 
-The physics-backlog campaign at full method: RULINGS Batches 5-8 plus the
-B57 pointer set — 41 rulings folded, zero drift verdicts survived
-recalculation. Daniel's standing corrections are now gate-pinned method:
-"9 times out of 10 it's not drift when you analyze the documents and run
-the calculations" / "Everything has a derivation. The answers are in the
-corpus" — and where they weren't, the pointer protocol worked (pypi
-uqff 5.86.0, the session files, the grok threads).
+A gate-pinned prediction came true. Since July the gate has carried
+PAPER_2142's prediction of a 5th sector for the R91 identity
+1/(D_phys-2) = 0.5 - and Batch 11 found it living in PAPER_060's BEC
+suppression table, where the "0.50 vs SSq" puzzle dissolved into the
+primitive. The framework predicted its own next closure.
 
-- BATCH 5: GW190425 chain EXACT (0.04%, SCm activation at 1e13 G); phase
-  lag kappa*D*SSq*(1+F_TRZ); 0.903 = exp(-kappa*D/2) aether decay;
-  magnetar three-channel timescales; A_damp = 0.3 EXACT.
-- BATCH 6: 17 Gpc = (c/kappa)*F_TRZ^-10; exp(-0.37) regime pair;
-  8/5 EXACT; SSq-power ladder; FORENSIC CLOSURE - the 9.47e-27 constant
-  behind the 1.894 artifact identified as the cosmological critical
-  density (PAPER_2156 audit target CLOSED).
-- BATCH 7 + B57: (1+F_TRZ^2)^n boost family; V_string,heavy = M_s3*SSq =
-  M_KK (0.0006%); LFU = PAPER_031 string-frequency band (three dives);
-  PAPER_1815 g-2 route live-verified from the 5.86.0 wheel (259.58e-11);
-  Cabibbo dual closures at 0.008%/0.025% (PAPER_1800), fit-era forms
-  demoted by the session log itself.
-- BATCH 8: S330 exact-rational flavor closures (R(D*) = 7/6*R_SM at
-  0.34%); K_CKM = 13/20 EXACT; F_TRZ^3 rung + 844-GeV two-route
-  convergence; eta-prime two-quantity resolution (source grok thread);
-  kappa_c mock-fit lineage identified.
-- AUTHORED: PAPER_026c re-ID (B52); old path stubbed, manual delete
-  queued for Daniel.
-- Honest holdovers: companion trichotomy, VLQ 85.9 fb, Cabibbo ratio
-  form, L_aether 192 Mpc, R_s.
+- POST-SHIP AUDIT (Daniel's catch on v0.416.0): three dispatches had
+  shipped OPEN on closed questions - folded, and the tags-vs-status
+  sweep is now a standing rule (ran CLEAN on all three new batches).
+- BATCHES 9-11 (23 rulings, B66-B89):
+  * BOTH PAPER_2156 FORENSIC MYSTERIES SOLVED - 9.47e-27 = the
+    cosmological critical density (B47) and "1.894" = PAPER_048's Ug4
+    Sun-SgrA* force value (B73): a force reading, never a density ratio.
+  * ROOT-ERA UNITS FIX - the kg/m3-vs-J/m3 drift that PAPER_2147
+    corrected across 933 papers traces to Session 0 (PAPER_049), whose
+    "16 orders excess" headline was the artifact (consistent: 0.117).
+  * NEW EXACT LOCKS - 26 = N_CH + D_phys + D_crit/2 = 9+4+13;
+    Ug2/g_grav = D_phys^D_phys = 256; K_CKM = 13/20; the Q_wave regime
+    rung ladder (F_TRZ^-12 / 1 / F_TRZ^6); the whim F_TRZ^12 dilution.
+  * IDENTITIES + ORIGINS - omega_LENR = omega_SCm (the LENR channel IS
+    the phonon resonance); the plasma-level origin of both canonical
+    primitives confirmed on a third datum; E18 rehabilitated as
+    oscillator-projection shorthand.
+  * CONVENTIONS - local-dynamical-mass g_grav, observation-relative
+    residuals, dual-branch Hubble labeling, E_LEP/k_eta namespaces,
+    DPM = Di-Pseudo-Monopole canon.
+- Honest opens: F_LENR exponent, the 6.95e-37 source, the 2x compression
+  form, the kappa-chain, companion trichotomy, VLQ 85.9 fb, Cabibbo
+  ratio form, L_aether 192 Mpc, R_s.
 
-2,255 wired (2,310 DISPATCH keys). Registry 6,856 rows. Backlog 224 ->
-191 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,051/0. Acceptance 89/89.
-Full wheel (generated manifest). Next: Batch 9 (from Q-038).
+2,255 wired (2,310 DISPATCH keys). Registry 6,880 rows. Backlog 191 ->
+167 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,055/0. Acceptance 89/89.
+Full wheel (generated manifest). Next: Batch 12 (from Q-062).

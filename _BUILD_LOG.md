@@ -437,3 +437,9 @@ Batches 5-8 + B57: 41 rulings folded under the recalculate-first method;
 rho_crit forensic closure; Cabibbo dual closures; S330 flavor physics;
 PAPER_026c re-ID. Gate 6,051/0. Acceptance 89/89. Registry 6,856.
 Backlog 224 -> 191 + 1.
+
+## v0.417.0 — 2026-09-04 — THE FIFTH SECTOR SHIP
+Post-ship audit fixes + Batches 9-11 (23 rulings): R91 5th sector
+fulfilled, both PAPER_2156 forensics closed, root-era units fix, rung
+taxonomy growth, omega identity. Gate 6,055/0. Acceptance 89/89.
+Registry 6,880. Backlog 191 -> 167 + 1.

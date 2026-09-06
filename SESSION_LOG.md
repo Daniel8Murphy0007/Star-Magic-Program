@@ -12765,3 +12765,62 @@ synced across all files, ORIGINPOINTS_ARC band rows in 8 satellites,
 _sg4_band rotated, guard-v9 authorized gaps extended to the recorded
 v0.415.0/.1 history, index +PAPER_026c row + ship chain. Wheel rehearsal
 + staleness sweep follow; Daniel ships via .\ship.ps1.
+
+## 2026-09-04 (4) — POST-SHIP AUDIT (v0.416.0): Daniel's catch — three OPEN dispatches on closed questions
+
+Full-account sweep (tags vs status across all 2,310 dispatches): 22 shipped
+OPEN_RULING with settled components. 19 = legitimate carriers (own
+questions open, B2 convention). THREE were misses: PAPER_026c (its own
+dispatch existed; B52's fold only touched PAPER_026), PAPER_222 and
+PAPER_223 (tagged only the fully-closed Q-216). All three folded; gate
+6,051 → 6,052 with the audit pin. STANDING RULE: every batch fold ends
+with a tags-vs-status sweep so a closed question can never leave a
+dispatch OPEN. Corrections ride v0.417.0.
+
+## 2026-09-04 (4) — POST-SHIP AUDIT (v0.416.0): Daniel's catch — three OPEN dispatches on closed questions
+
+Full-account sweep (tags vs status across all 2,310 dispatches): 22 shipped
+OPEN_RULING with settled components. 19 = legitimate carriers (own
+questions open, B2 convention). THREE were misses: PAPER_026c (its own
+dispatch existed; B52's fold only touched PAPER_026), PAPER_222 and
+PAPER_223 (tagged only the fully-closed Q-216). All three folded; gate
+6,051 → 6,052 with the audit pin. STANDING RULE: every batch fold ends
+with a tags-vs-status sweep so a closed question can never leave a
+dispatch OPEN. Corrections ride v0.417.0.
+
+## 2026-09-04 (5) — BATCH 9 FOLDED (B66-B73): both PAPER_2156 mysteries solved
+
+Seven rulings; the headline is forensic completion — the predecessor's two
+unknown-origin constants (9.47e-27 and 1.894) both traced to fresh-corpus
+origins (rho_crit and the Ug4 Sun-SgrA* force value). The whim variant's
+buried 1e-12 turned out to be the lambda_vac_sw rung — the third F_TRZ^12
+appearance this campaign. 7 dispatches ruled, registry +8 (6,864), graph
++3, gate 6,052 → 6,053, index 7 flips. Backlog 190 → 183 + 1. Sweep clean.
+
+## 2026-09-04 (6) — BATCH 10 FOLDED (B74-B81): the root of the units drift
+
+Eight rulings. The find of the batch: PAPER_049 holds the ROOT-ERA instance
+of the kg/m³-vs-J/m³ drift that PAPER_2147 corrected across 933 papers —
+Session 0 is where it started, and its "16 orders" headline was the
+artifact. Two new exact locks (9+4+13, D_phys^D_phys = 256), the plasma-
+level origin confirmed on a third datum, and the E18 annotation
+rehabilitated. 8 dispatches ruled, registry +8 (6,872), graph +3, gate
+6,053 → 6,054, index 8 flips. Backlog 183 → 175 + 1. Sweep clean.
+
+## 2026-09-04 (7) — BATCH 11 FOLDED (B82-B89): the R91 5th sector lands
+
+Eight rulings. The headline: PAPER_2142's gate-pinned prediction of a 5th
+R91 sector is FULFILLED — the BEC suppression exponent is 1/(D_phys−2) =
+0.5 EXACT. Q_wave joins the rung taxonomy (F_TRZ⁻¹²/1/F_TRZ⁶ by regime),
+the LENR channel is identified with the phonon resonance, and two naming
+splits (E_LEPTON_SCALE, k_eta_EFIELD) close the namespace work. 8
+dispatches ruled, registry +8 (6,880), graph +3, gate 6,054 → 6,055,
+index 8 flips. Backlog 175 → 167 + 1. Sweep clean.
+
+## 2026-09-04 (8) — v0.417.0 SHIP PREP: THE FIFTH SECTOR SHIP
+
+Authoring check: nothing owed (no new dispatches; all rulings on existing
+papers). Charter pass: version synced everywhere, FIFTHSECTOR_ARC band
+rows in 8 satellites, _sg4_band rotated, ship chain + banner rewritten
+with live totals (2,255/2,310/6,055/6,880/167+1). Wheel rehearsal +
+staleness + completeness sweeps follow; Daniel ships via .\ship.ps1.

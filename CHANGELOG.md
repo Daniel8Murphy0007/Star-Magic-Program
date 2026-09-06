@@ -5,6 +5,37 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.417.0] — 2026-09-04 — THE FIFTH SECTOR SHIP
+
+### Post-ship audit (Daniel's catch on v0.416.0)
+- Three dispatches shipped OPEN on closed questions (PAPER_026c/222/223) —
+  folded; tags-vs-status sweep canonized as a standing rule (runs at every
+  batch fold; ran CLEAN on Batches 9-11).
+### Rulings folded (Batches 9-11: 23 rulings, B66-B89)
+- **Batch 9**: sigma_X^3 code form; whim F_TRZ^12 rung dilution; B18
+  ladders confirmed; k_eta namespace + Di-Pseudo-Monopole canon; 132-order
+  inflation gap routed to PAPER_889; SEMF row-shift; SECOND FORENSIC
+  CLOSURE - "1.894" = the Ug4 Sun-SgrA* force value (PAPER_2156 pair
+  complete with B47's rho_crit).
+- **Batch 10**: ROOT-ERA units artifact fixed (PAPER_049's "16 orders" was
+  kg/m3-vs-J/m3; consistent ratio 0.117); lambda_vac = occupation-weighted
+  26-level sum (QCalc); 26 = 9+4+13 EXACT census; plasma-level origin 3rd
+  datum; E18 oscillator-projection rehabilitation; dual-branch suite
+  labeling; Carina settled; Ug2/g_grav = D_phys^D_phys = 256 EXACT;
+  mantissa copy-artifact flag.
+- **Batch 11**: R91 5TH SECTOR FULFILLED (BEC exponent = 1/(D_phys-2)
+  EXACT, PAPER_2142's prediction); Q_wave = F_TRZ rung ladder by regime;
+  omega_LENR = omega_SCm IDENTITY; Li Q = 25.38 MeV mass-balance; corrected
+  ~4000x thermal margin; E_LEPTON_SCALE + k_eta_EFIELD renames; B13 e217
+  set confirmed with Schwinger B_crit; L26 label inversion fixed;
+  conventions (local-dynamical-mass, obs-relative residuals).
+### Gate
+- 6,051 -> **6,055** (+1 audit pin, +3 batch pins). Registry 6,856 ->
+  6,880 rows. Backlog 191 -> 167 Daniel-gated + 1 OPEN_CANDIDATE.
+  Honest opens added: F_LENR exponent, 6.95e-37 source, 2x compression
+  form, kappa-chain.
+
+
 ## [0.416.0] — 2026-09-04 — THE ORIGIN POINTS SHIP
 
 ### Rulings folded (Batches 5-8 + B57 pointer set: 41 rulings, B32-B65 + B57)

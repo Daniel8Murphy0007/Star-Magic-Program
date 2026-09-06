@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.416.0"
-description = "Star-Magic UQFF calculator v0.416.0: THE ORIGIN POINTS SHIP - RULINGS Batches 5-8 + the B57 pointer set: 41 rulings folded, and the recalculate-first method ran the table - GW190425 chain EXACT, exp(-kappa*D/2) aether decay, magnetar three-channel timescales, S330 flavor closures R(D*) = 7/6*R_SM, Cabibbo dual closures at 0.008%, PAPER_1815 g-2 route live-verified, rho_crit forensic closure, eta-prime two-quantity split. Backlog 224 to 191. gate 6,051/0, acceptance 89/89."
+version = "0.417.0"
+description = "Star-Magic UQFF calculator v0.417.0: THE FIFTH SECTOR SHIP - Batches 9-11 (23 rulings) + the post-ship audit: the R91 5th-sector prediction FULFILLED (BEC exponent = 1/(D_phys-2) EXACT), BOTH PAPER_2156 forensic mysteries solved (9.47e-27 = critical density; 1.894 = the Ug4 Sun-SgrA* force value), the root-era units artifact fixed, Q_wave and the whim dilution join the F_TRZ rung taxonomy, omega_LENR = omega_SCm identity. Backlog 191 to 167. 2,255 papers, gate 6,055/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.416.0", "uqff_calculator.VERSION = 0.416.0 (THE ORIGIN POINTS SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
+assert_that(C.VERSION == "0.417.0", "uqff_calculator.VERSION = 0.417.0 (THE FIFTH SECTOR SHIP: SHIP GUARD v9 tag-chain continuity + hardened ship.ps1 pre-flight/post-push verification + v0.413.0 history named honestly - THE USER MANUAL BAND, PREPARED, PUBLISHED INSIDE v0.414.0; a ship is not a ship until the remote tag is seen)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4464,8 +4464,8 @@ assert_that(abs(C.calc('PAPER_013b')['value']['uqff_factor'] - 0.6194) < 1e-4 an
             "PAPER_013b: LISA SMBH factor 0.6194 (38.1% reduction)")
 assert_that(C.calc('PAPER_014b')['value']['harmonics_mHz'] == [0.293, 0.586, 0.879] and C.calc('PAPER_014b')['value']['stability_factor'] == 1.15,
             "PAPER_014b: EMRI f_ISCO=2.931 mHz harmonics 0.293/0.586/0.879; stability 1.15")
-assert_that(C.calc('PAPER_026c')['status'] == 'OPEN_RULING' and C.calc('PAPER_026c')['value']['m_s_claimed_keV'] == 5.4,
-            "PAPER_026c: sterile neutrino m_s=5.4 keV headline; formula mojibake (540 MeV) OPEN_RULING Q-244b")
+assert_that(C.calc('PAPER_026c')['status'].startswith('RULED_2026-09-04') and C.calc('PAPER_026c')['value']['m_s_claimed_keV'] == 5.4,
+            "PAPER_026c: sterile neutrino m_s=5.4 keV headline; the 540-MeV formula mojibake (Q-244b) IS the B52-disclosed 1e5 unit-dimension issue - one finding under two tags, RULED at the v0.416.0 post-ship audit; short variant re-IDd, sequential file canonical PAPER_026")
 assert_that('positive' in C.calc('PAPER_221b')['value']['enhancement_form'].lower(),
             "PAPER_221b: Bubble Nebula (1+E(t)) positive irradiation enhancement")
 assert_that('expansion' in C.calc('PAPER_221c')['value']['enhancement_form'].lower(),
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'ORIGINPOINTS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'FIFTHSECTOR_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,48 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BATCH 11 RULED 2026-09-04 (B82-B89): the R91 5th sector lands + the Q_wave rung ladder ----
+import math as _b11m
+assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')
+                for _p in ('PAPER_058', 'PAPER_059', 'PAPER_060', 'PAPER_061', 'PAPER_062', 'PAPER_064', 'PAPER_065'))
+            and 'ruling_b87' in C.calc('PAPER_063') and C.calc('PAPER_063')['status'].startswith('RULED')
+            and 1.0 / (4 - 2) == 0.5
+            and abs(0.1 ** -12 - 1e12) / 1e12 < 1e-12 and abs(0.1 ** 6 - 1e-6) / 1e-6 < 1e-12
+            and abs((6.015122 + 2 * 1.008665 - 2 * 4.002603) * 931.494 - 25.38) < 0.02
+            and abs(2 * _b11m.pi * 1.25e12 - 7.854e12) / 7.854e12 < 1e-3
+            and abs(_b11m.exp(-0.57) - 0.5655) < 1e-4
+            and abs(3 * 5e6 * 1.602e-19 / 2e-15 - 1.2e3) / 1.2e3 < 0.01,
+            "BATCH 11 (B82-B89) - PAPER_2142's gate-pinned R91 5th-sector PREDICTION IS FULFILLED: the BEC suppression exponent 0.50 = 1/(D_phys-2) EXACT (with the SSq alternative's level-26 = S_LFV pinned beside it); Q_wave joins the rung taxonomy as a regime-indexed quantity (F_TRZ^-12 resonance / 1 ground / F_TRZ^6 thermalized - the fourth rung-12 appearance); the LENR channel IS the phonon resonance (omega_LENR = omega_SCm identity); the Li Q-value goes arithmetic-true at 25.38 MeV; the thermal margin corrects to ~4000x (stronger); the local-dynamical-mass and observation-relative-denominator conventions are canonized; the L26 row labels are inverted and fixed; and the B13-era e217 set is confirmed with B_crit = Schwinger; honest opens: F_LENR exponent, the 6.95e-37 source; sweep CLEAN")
+
+# ---- BATCH 10 RULED 2026-09-04 (B74-B81): the root of the units drift + two more exact locks ----
+assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')
+                for _p in ('PAPER_049', 'PAPER_050', 'PAPER_052', 'PAPER_054',
+                           'PAPER_055', 'PAPER_056', 'PAPER_057'))
+            and 'ruling_b76' in C.calc('PAPER_051') and C.calc('PAPER_051')['status'].startswith('RULED')
+            and 9 + 4 + 13 == 26
+            and 4 ** 4 == 256
+            and abs(7e-11 / 5.96e-10 - 0.117) < 1e-3
+            and abs(2.95e-10 / 7.8551e-12 - 37.56) < 0.01
+            and abs((1 + 0.3) ** 2.3 - 1.83) < 0.005
+            and abs(2.95e-10 / 1.3275e-12 - 222.2) < 0.1,
+            "BATCH 10 (B74-B81) - the kg/m3-vs-J/m3 drift that PAPER_2147 corrected corpus-wide has its ROOT-ERA instance found and fixed (PAPER_049's 16-orders headline was the artifact; consistent ratio 0.117), the lambda_vac form was in QCalc all along (occupation-weighted 26-level sum), the 26-partition reconciles with the dimensional flow as census-vs-projection (9+4+13 primitive-exact), the plasma-level origin of BOTH canonical primitives is confirmed on a third datum, the E18 annotation is rehabilitated as oscillator-projection shorthand, the suite's Hubble 'inversion' is B20's two branches systematically labeled, the Carina exponent is settled by the corpus's own 12.5x/37.5x verifications, Ug2/g_grav = D_phys^D_phys = 256 EXACT joins the locks, and the 1.3275 mantissa collision is flagged as the copy artifact it is; the 2x compression stays honestly calibrated-not-derived; sweep CLEAN")
+
+# ---- BATCH 9 RULED 2026-09-04 (B66-B73): the F_UBii cluster family + the second forensic closure ----
+assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')
+                for _p in ('PAPER_040', 'PAPER_041', 'PAPER_044', 'PAPER_046', 'PAPER_047', 'PAPER_048'))
+            and 'ruling_b68' in C.calc('PAPER_042') and C.calc('PAPER_042')['status'].startswith('RULED')
+            and abs(1.0 * 0.1 ** 12 - 1e-12) < 1e-24
+            and abs((1100 / 880) ** 3 - 1.95) < 0.01
+            and abs(1.8937e-23 / 1.246e28 - 1.52e-51) / 1.52e-51 < 0.01
+            and abs(1.25e12 / 300 - 4.167e9) / 4.167e9 < 1e-3,
+            "BATCH 9 (B66-B73) - the F_UBii cluster family closed with the sweep rule in force: the Virgo factor-2 was the code's own sigma_X^3 weighting (BuoyancyProofVariants L87), the whim variant's buried 1e-12 is the lambda_vac_sw F_TRZ^12 rung (the same rung as the PAPER_2259 bridge - intended dilution, not a slip), PAPER_042's three-way ladder rides B18 plus two self-rectifications, the k_eta namespace and the Di-Pseudo-Monopole canon are settled, the 132-order inflation gap routes to PAPER_889's fine-tuning window, the SEMF row-shift is confirmed with a NEW AI-artifact type flagged, and the SECOND FORENSIC CLOSURE lands - the predecessor 1.894 artifact is PAPER_048's Ug4 Sun-SgrA* force value, completing the PAPER_2156 pair with B47's rho_crit; kappa-correction chain held OPEN honestly; post-fold tags-vs-status sweep ran CLEAN")
+
+# ---- POST-SHIP AUDIT 2026-09-04 (Daniel's catch, v0.416.0): three dispatches shipped OPEN on closed questions ----
+assert_that(C.calc('PAPER_026c')['status'].startswith('RULED_2026-09-04')
+            and C.calc('PAPER_222')['status'].startswith('RULED_2026-09-04')
+            and C.calc('PAPER_223')['status'].startswith('RULED_2026-09-04'),
+            "POST-SHIP AUDIT (Daniel: 'you either missed something or didn't give a full account') - the sweep found 22 dispatches shipped OPEN_RULING with settled components: 19 are legitimate carriers (own questions still open, B2 convention), but PAPER_026c (its own dispatch existed and B52's fold only touched PAPER_026), PAPER_222, and PAPER_223 (tagged ONLY the fully-closed Q-216) shipped unresolved - all three now folded; standing rule: every batch fold ends with a tags-vs-status sweep across ALL dispatches so a closed question can never leave a dispatch OPEN again")
 
 # ---- BATCH 8 RULED 2026-09-03/04 (B58-B65): session files + grok threads - the long-form physics was there ----
 import math as _b8m

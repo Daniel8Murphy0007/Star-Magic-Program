@@ -6993,3 +6993,88 @@ block).
 - **B63-B65/Q-035-037:** formulas/computed/chain-true canonical over
   mojibake prints; kn UQFF-frame luminosity; knee→TRZ-break cross-link.
 Queue: 191 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## POST-SHIP AUDIT — Daniel's catch, 2026-09-04 (v0.416.0 full account)
+
+"You either missed something or didn't give a full account of what got
+shipped this round." The tags-vs-status sweep across all 2,310 dispatches
+found 22 shipped OPEN_RULING with settled components: 19 legitimate
+carriers (own questions open, B2 convention) and THREE misses, now folded:
+- **PAPER_026c**: its own dispatch existed all along (tagged Q-244b, the
+  540-MeV formula mojibake) — B52's fold only touched PAPER_026. Q-244b =
+  the SAME finding as the disclosed 1e5 unit issue; both CLOSED.
+- **PAPER_222 + PAPER_223**: tagged only the fully-closed Q-216; ruled via
+  the PAPER_2259 rung-12 bridge.
+STANDING RULE: every batch fold ends with a tags-vs-status sweep so a
+closed question can never leave a dispatch OPEN. Gate 6,051 → 6,052.
+Corrections ride v0.417.0. Queue: 190 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 9 RULINGS — Daniel, 2026-09-04 (B66-B73; folded same day; gate-pinned; sweep clean)
+
+- **B66/Q-038:** σ_X³ code form canonical (BuoyancyProofVariants L87 answered
+  "what IS the weighting"); whim dual convention (N/m³ + N suffixed);
+  Q_wave renormalization = family convention.
+- **B67/Q-039:** the systematic whim 1e-12 = λ_vac_sw F_TRZ¹² rung dilution
+  (intended, not slipped) — same rung as the PAPER_2259 bridge.
+- **B68/Q-040:** confirmations — B18 three-ladders + PAPER_059 F_rel +
+  PAPER_046's 4.17e9 self-rectification.
+- **B70/Q-042:** k_eta namespace (VLQ/LENR/INFL) + DPM = Di-Pseudo-Monopole
+  canon (two era synonyms recorded).
+- **B71/Q-043:** 132-order inflation gap ROUTED to PAPER_889's E(t)-engine
+  fine-tuning window (10¹²⁰⁻¹³⁹, zero free params).
+- **B72/Q-044:** row-shift confirmed (1549/1619); NEW AI-artifact type
+  (leaked conversation-summary sentence) joins the cleanup family.
+- **B73/Q-045:** SECOND FORENSIC CLOSURE — predecessor "1.894" = PAPER_048's
+  Ug4 Sun–SgrA* force value; BOTH PAPER_2156 audit targets now closed
+  (with B47's ρ_crit). κ-correction chain stays OPEN; alpha_UG4 registered.
+(Q-041 needed no slot — closed across B19/B23/B31.)
+Post-fold tags-vs-status sweep: CLEAN. Queue: 183 Daniel-gated + 1.
+
+## BATCH 10 RULINGS — Daniel, 2026-09-04 (B74-B81; folded same day; gate-pinned; sweep clean)
+
+- **B74/Q-046:** λ_vac = Σf_n·E_n/V_eff (QCalc L2231, occupation-weighted);
+  ROOT-ERA units artifact fixed — the "16 orders excess" was kg/m³-vs-J/m³
+  (PAPER_2147's drift traced to Session 0); consistent ratio 0.117.
+- **B75/Q-047:** partition 26 = N_CH+D_phys+D_crit/2 = 9+4+13 EXACT (static
+  census) reconciled with the PAPER_1160 flow (dynamical projection); DM
+  magnitude routed to PAPER_1962 rotation-curve sector; α_cross unattested;
+  043's level-label table rules.
+- **B76/Q-048:** plasma-level origin CONFIRMED (3rd datum — both canonical
+  primitives = L13 values); dual-branch Hubble (B20); ratio 0.05 = era
+  value; THz 1.25 carrier canonical.
+- **B77/Q-049:** self-referential validations scored separately (Rule 7);
+  E18 REHABILITATED as oscillator-projection shorthand (62.4 TeV condensate
+  scale / 125 GeV projected resonance) — folds into Q-041d.
+- **B78/Q-050:** suite Hubble "inversion" = B20's two branches, labeled;
+  computed 7.55× canonical; mass 1e11 M☉.
+- **B79/Q-051:** Carina = 3.3188e-10 settled (PAPER_057 self-rectification);
+  the 2× claim fails definitively.
+- **B80/Q-052:** Ug2/g_grav = D_phys^D_phys = 256 EXACT canonized; 2×
+  compression stays calibrated (form OPEN); 222× = Mice row-confusion.
+- **B81/Q-053:** 1.3275 mantissa collision = copy-artifact flag; 0.40
+  arithmetic-true rules.
+Queue: 175 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 11 RULINGS — Daniel, 2026-09-04 (B82-B89; folded same day; gate-pinned; sweep clean)
+
+- **B82/Q-054:** g_grav = local-dynamical-mass convention (3 papers);
+  dual-branch labeling suite-wide; Tarantula pinned 3.5099e-13.
+- **B83/Q-055:** E_LEPTON_SCALE rename; **Q_wave = regime-indexed F_TRZ
+  rung ladder (F_TRZ⁻¹² / 1 / F_TRZ⁶)** — fourth rung-12 appearance.
+- **B84/Q-056:** **R91 5TH SECTOR FULFILLED** — the BEC suppression
+  exponent 0.50 = 1/(D_phys−2) EXACT (PAPER_2142's standing prediction);
+  SSq alternative (level-26 = S_LFV) pinned; M_UQFF 14.3 TeV = PAPER_023's
+  effective NP scale, distinct from M_KK.
+- **B85/Q-057:** corrected ~4000× margin canonical (GeV slip); T_c 0.38 MeV
+  as-disclosed; β_i 0.61 → 0.6029; SSq 12th role.
+- **B86/Q-058:** k_eta_EFIELD = 1e-55; Li Q = 25.38 MeV (mass balance);
+  **ω_LENR = ω_SCm IDENTITY** (the LENR channel IS the phonon resonance);
+  F_LENR exponent OPEN.
+- **B87/Q-059:** B13 e217 set confirmed; x₂ = −3.40e172; B_crit = 4.4e9 T
+  = Schwinger (PAPER_094 = B2-consistent); κ_MCMC ensemble validation.
+- **B88/Q-060:** 4-mode = triadic + Superconductive 4th mode (α_S = 0.99 =
+  H_SCm); [UA] confirmation recorded; GWTC trio resolved.
+- **B89/Q-061:** mean 2.74% recomputed-canonical; L26 labels inverted
+  (5.957e-10 = UQFF ledger); obs-relative denominators; 6.95e-37 source
+  OPEN (awaiting pointer).
+Queue: 167 Daniel-gated + 1 OPEN_CANDIDATE.

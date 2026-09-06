@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.416.0"
+VERSION = "0.417.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -31501,7 +31501,8 @@ def _paper_040(dataset):
                     'scaling F ~ sigma^3*r_h'),
         'source': 'PAPER_040',
         'residual_pct': abs(coma - (-2.5e60)) / 2.5e60 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b66': 'RULED B66 2026-09-04: CODE FORM CANONICAL - F_UBii_virx = -F_rel*(3*sigma_X^2*r_h/(G*E_LEP))*Q_wave*sigma_X (BuoyancyProofVariants.py L87, sigma_X^3 scaling) - the factor ~2 = dispersion-choice sensitivity ((1100/880)^3 ~ 1.95); validator -7.2e59 canonical; lobe 1e4 = mojibake (chain-true 2.7e55); WHIM CONVENTION CANONIZED - both registered with explicit suffixes (force-density N/m3 vs integrated N); Q_wave renormalization accepted as family convention; Q-038 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-038 closed: sigma_X^3 code form + whim convention)',
     }
 
 
@@ -31559,7 +31560,8 @@ def _paper_041(dataset):
                     'F_whim ~ T^(3/2)*n_b*r_fil'),
         'source': 'PAPER_041',
         'residual_pct': abs(s_min - 2.1e-41) / 2.1e-41 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b67': 'RULED B67 2026-09-04: THE BURIED 1e-12 IS THE F_TRZ^12 RUNG - n_b(used) = n_b(stated) * F_TRZ^12 = 1 m-3 * 1e-12, the lambda_vac_sw vacuum-coupling dilution (PAPER_2139 quartet + PAPER_2259 standing), intended not slipped; one ruling covers PAPER_040+041 whim variants; V_fil 10x = mojibake (true 1.15e71 m3); jet-table exponents mojibake; OVII/OVIII sweet-spot falsifiable preserved; Q-039 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-039 closed: rung dilution)',
     }
 
 
@@ -31622,6 +31624,7 @@ def _paper_042(dataset):
         'value': _v,
         'formula': ('g = sum_26 (Ug1+Ug2+Ug3+Ug4)_i; Ug1_i = E_DPM_i/r_i^2 * rho_UA * f_TRZ_i; '
                     'E_LENR = h * 1.25 THz'),
+        'ruling_b68': 'RULED B68 2026-09-04 (confirmations): (a) B18 two-ladder ruling stands - Ug1 AMPLITUDE 1e12/layer, radius 10^2.44/layer, and the header factor-of-10 = the per-level DENSITY ratio (three ladders, three quantities); (b) F_rel = 4.30e33 N per PAPER_059 (Q-055), distinct from the FUBii family 1e-10 N (namespace note); (c) 300-Hz divisor = 4.17e9 per PAPER_046 self-rectification (the printed 4167 = 1e6 slip); Q-040 CLOSED',
         'source': 'PAPER_042',
         'residual_pct': abs(e_phonon - 8.28e-22) / 8.28e-22 * 100,
         'ruling_batch3': 'B23 RULED 2026-09-01: F_rel = 4.30e33 N folded (PAPER_059 resolution); Colman-Gillespie divisor 4.17e9 folded (PAPER_046 self-rectification); Q-040b/c CLOSED. Q-040a (layer amplification three-way) remains OPEN - no preference given (B18)',
@@ -31753,7 +31756,8 @@ def _paper_044(dataset):
                     'r_i = 10^(-35+i/3); E_i = rho_L1*i^2*(4pi/3)*r_i^3'),
         'source': 'PAPER_044',
         'residual_pct': abs(e_center(26) - 2.83e-84) / 2.83e-84 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b70': 'RULED B70 2026-09-04: K_ETA NAMESPACE CANONIZED - k_eta_VLQ (0.1369) / k_eta_LENR (1e-113, B30) / k_eta_INFL (1e10); DPM EXPANSION CANON = DI-PSEUDO-MONOPOLE (predecessor canon; Duality of Plasmatic Medium + Dark Photon Manifold recorded as era synonyms of the same dual-vacuum structure); r_26 nuclear-scale label = description slip; E_center_1 = 4.16e-112 J resolved by computation, E_26 = 2.83e-84 verified; Q-042 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-042 closed: namespace scheme + Di-Pseudo-Monopole)',
     }
 
 
@@ -31872,7 +31876,8 @@ def _paper_046(dataset):
                     'E_universe ~ E_prebb * k_eta * tau_infl/t_Planck (gap disclosed)'),
         'source': 'PAPER_046',
         'residual_pct': abs(g_coupling(238) - 1619.0) / 1619.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b71': 'RULED B71 2026-09-04: the honestly-disclosed 132-order inflation gap ROUTES to the PAPER_889 E(t)-engine fine-tuning resolution (10^120-139 window, zero free parameters under Daniels kappa ruling) - recorded as the closing candidate pending a dedicated derivation; PASS-as-self-consistency framing stands; gamma labeling corrected (1/gamma = 3.17 yr e-fold, half-life = 2.2 yr); the 4.17e9 self-rectification of PAPER_042 recorded; Q-043 closed as routed',
+        'status': 'RULED_2026-09-04 (Q-043 closed: E(t)-engine route + labeling fix)',
     }
 
 
@@ -31930,7 +31935,8 @@ def _paper_047(dataset):
                     '+ a_p/sqrt(A); B_UQFF = g(A)*V_nuc*rho_L1*k_conv'),
         'source': 'PAPER_047',
         'residual_pct': abs(semf - 490.9) / 490.9 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b72': 'RULED B72 2026-09-04: ROW-SHIFT CONFIRMED (Pb-208 true g = 1549, U-238 = 1619 - the printed values were shifted one row); the leaked conversation-summary sentence flagged as a NEW AI-artifact type (cleanup family, 8th paper); abstract B_UQFF exponent mojibake pinned (computed 2.53e-35); level-10 625 MeV annotated toward the rho-meson (775) vs the pion label (139.6); SEMF chain (0.3 pct) + termination prediction stand; Q-044 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-044 closed: row-shift + artifact flags)',
     }
 
 
@@ -31995,7 +32001,8 @@ def _paper_048(dataset):
                     'rho_vac[SCm] = rho_c*c^2 near BH'),
         'source': 'PAPER_048',
         'residual_pct': abs(ug4_peak - 1.246e28) / 1.246e28 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b73': 'RULED B73 2026-09-04: FORENSIC ORIGIN CANONIZED - 1.8937e-23 N/m2 (this Ug4 Sun-SgrA* validator value) = the predecessor 1.894 bulk-script artifact (PAPER_2156): a FORCE reading, never a density ratio; with B47s 9.47e-27 = rho_crit, BOTH PAPER_2156 audit targets now closed; kappa-correction chain (implied x1.52e-51) REMAINS OPEN (rung candidates noted, not canonized); alpha = 1e-10/day registered as alpha_UG4 (third decay constant beside kappa and gamma); coupling-channel reinterpretation of levels 21/24/26 accepted; near-BH 1e15 kg/m3 = predecessor rho_c continuity noted; Q-045 closed except kappa-chain',
+        'status': 'RULED_2026-09-04 (Q-045 closed except kappa-chain: forensic origin pair complete)',
     }
 
 
@@ -32056,7 +32063,8 @@ def _paper_049(dataset):
                     'rho_SCm_dense = rho_c*c^2; observed Lambda = residual [UA]'),
         'source': 'PAPER_049',
         'residual_pct': abs(ratio_consistent - 0.117) / 0.117 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b74': 'RULED B74 2026-09-04 (deep dive -> QCalc core): lambda_vac CLOSED FORM = sum(f_n*E_n)/V_eff - the occupation-weighted 26-level sum (QCalc.py L2231; component forms lambda_vac_UA Floyd-Sweet, lambda_vac_SCm Heisenberg, lambda_vac_A = rho_A*c^2); 7e-11 = default-occupancy evaluation; HEADLINE CORRECTED - the 16-orders-excess was the ROOT-ERA kg/m3-vs-J/m3 artifact (PAPER_2147s drift traces to Session 0), consistent J/m3 ratio = 0.117 (lambda_vac BELOW Lambda by 8.5x); trapped-UA chain stays mojibake-anchored; Q-046 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-046 closed: QCalc occupation form + root-era units fix)',
     }
 
 
@@ -32115,7 +32123,8 @@ def _paper_050(dataset):
                     'C_10,26/C_10,11 = 0.0302; g_j = sum_26 sum_4 alpha_ijk*phi_k*lambda_i*exp(-kappa*t)'),
         'source': 'PAPER_050',
         'residual_pct': abs(c_ratio - 0.0302) / 0.0302 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b75': 'RULED B75 2026-09-04: PARTITION AND FLOW RECONCILED - 26 -> 10 -> 6 -> 4 = the DYNAMICAL projection (PAPER_1160) and 26 = N_CH + D_phys + D_crit/2 = 9+4+13 EXACT = the STATIC census, primitive-locked complements; DM-alternative magnitude ROUTED to the PAPER_1962 rotation-curve sector (D_BSFG/D_phys = 3/2 universality) with C_10,26 = 1.44 pct as contributor; alpha_cross = UNATTESTED outside this paper (greps: QCalc, CondensedPhysics, uqff 5.86.0) - 045s verified C_ij form rules; level-domain labels: 043s table rules (B31 level-12 + B19 plasma-13 consistency), 050s tier-1 = drift; Q-047 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-047 closed: partition/flow complements + rotation-curve route)',
     }
 
 
@@ -32171,6 +32180,7 @@ def _paper_051(dataset):
         'value': _v,
         'formula': ('alignment = max(0, min(100, (1 - |pred-obs|/|obs|)*100)); '
                     'final parsec: [SCm] viscous Ug4 sink; DM: [SCm]+[UA] opposition'),
+        'ruling_b76': 'RULED B76 2026-09-04 (confirmations via B19/B20/B21): (a) PLASMA-ORIGIN CONFIRMED - both canonical primitives (rho_SCm 7.09-family + beta_i 0.60-family) = LEVEL-13/PLASMA values of the 26-ladder (B19, now 3 corpus data); mojibaked exponent read as the registry RHO_SCM family (7.09 mantissa, -37 exponent); (b) NGC2841 1.7154 = the B20-vindicated evolution-epoch branch (dual-branch Hubble); (c) ratio 0.05 = era value, canonical 0.1 rules (B21); (d) THz: 1.25 carrier canonical (domain-split), 1.2/1.18 = prediction/observed anchors; final-parsec [SCm]-drag preserved; Q-048 CLOSED',
         'source': 'PAPER_051',
         'residual_pct': abs(align(50.0, 48.3) - 96.48),
         'ruling_batch3': 'B19 RULED 2026-09-01: the 7.09 family at Level 13 canonized as the plasma-level origin datum (joint with PAPER_043 beta_13); Q-048a CLOSED. Q-048b (Hubble factor) remains OPEN - no preference given (B20); Q-048c/d remain',
@@ -32234,7 +32244,8 @@ def _paper_052(dataset):
         'formula': ('alignment = (1 - |pred-obs|/|obs|)*100; Page: delta = (1/26)*sum(lambda_i*dS_i/S)'),
         'source': 'PAPER_052',
         'residual_pct': abs(align(125.09, 125.35) - 99.79),
-        'status': 'OPEN_RULING',
+        'ruling_b77': 'RULED B77 2026-09-04: SELF-REFERENTIAL VALIDATIONS scored SEPARATELY from external-literature alignments (Rule 7); placeholder arXiv IDs resolved where real ones exist; the +7.61-vs-10-point margin contradiction flagged (paperwork); Q-041d FOLD-IN ACCEPTED - E18 = 62.4 TeV = the Level-18 condensate SCALE while 125 GeV = the projected resonance (oscillator-projection reading REHABILITATES the E18 annotation; B31s drift verdict softened to projection shorthand); Q-049 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-049 closed: split scoring + oscillator-projection reading)',
     }
 
 
@@ -32345,7 +32356,8 @@ def _paper_054(dataset):
         'source': 'PAPER_054',
         'residual_pct': abs(ug3_boost - 0.4) / 0.4 * 100,
         'ruling_b20': 'B20 RESOLVED (Daniel canonized, 2026-09-01): 1.7154 = 1 + H0*t_ref with t_ref = F_TRZ^-10 years = 1e10 yr and H0 = A_5+SO_5 = 70 (residual 0.0002%) - the EVOLUTION-EPOCH BRANCH of the dual-branch Hubble factor (lookback branch = the 1.0002-class values), grounded in the black->white-hole time structure (PAPER_659 t_n = t/t_ref; f_TRZ negentropic reversal; PAPER_2139 F_TRZ ladder). The value is VINDICATED as derived, not repaired; the higher-redshift ANNOTATION was the drift. Q-048b/Q-050a CLOSED',
-        'status': 'OPEN_RULING',
+        'ruling_b78': 'RULED B78 2026-09-04: DUAL-BRANCH RESOLUTION (B20) - the suites Hubble inversion = two branches: 1.7154 = evolution-epoch branch (1 + H_0*F_TRZ^-10 yr, z-independent), 1.0002-class = local-z branch; canonical definition = dual-branch with each system labeled; 9.3x claim -> computed 7.55x canonical (cross-verified by the 37.5x Tadpole ratio); total mass -> 1e11 Msun (mojibake); Q-050 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-050 closed: dual-branch + computed ratios)',
     }
 
 
@@ -32402,7 +32414,8 @@ def _paper_055(dataset):
                     '(1.3)^2.3 * ~5.5 ~ 10'),
         'source': 'PAPER_055',
         'residual_pct': abs(2.9500e-10 / 7.8551e-12 - 37.5) / 37.5 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b79': 'RULED B79 2026-09-04 (self-rectified set confirmed): Carina = 3.3188e-10 (PAPER_057s 12.5x verification) -> Mice/Carina = 0.889, the 2x claim FAILS definitively; geometric factor computed (1+0.3)^2.3 = 1.83 canonical (printed 1.7 noted, [SCm] spike absorbs); 10x-family exponents pinned via the verified 37.5x Tadpole ratio; Q-051 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-051 closed: Carina exponent settled)',
     }
 
 
@@ -32462,7 +32475,8 @@ def _paper_056(dataset):
                     'tier: 1x / 2x / 10x compression classes'),
         'source': 'PAPER_056',
         'residual_pct': abs(r_2264 - 44.8) / 44.8 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b80': 'RULED B80 2026-09-04: Ug2/g_grav = D_phys^D_phys = 4^4 = 256 EXACT CANONIZED; the 2x compression stays an honest CALIBRATED constant with the closed form OPEN (printed EUV form fails by 6 orders, disclosed by the paper); 222x = the MICE ratio (row confusion; true M42 = 500x, both pinned); wind chain 1600 km/s verified; Q-052 closed except the 2x form',
+        'status': 'RULED_2026-09-04 (Q-052 closed except 2x form: 256 = D_phys^D_phys)',
     }
 
 
@@ -32516,7 +32530,8 @@ def _paper_057(dataset):
         'formula': ('g ratios pin suite exponents; standard class = no [SCm] point compression'),
         'source': 'PAPER_057',
         'residual_pct': abs(g_3372 / g_agcar - 12.5) / 12.5 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b81': 'RULED B81 2026-09-04: the Red Spider / Mystic Mountain exact 5-digit mantissa (1.3275, 100x apart) FLAGGED as a model-suite copy artifact (both values pinned, physics readings preserved); sec-5s arithmetic-true 0.40 rules over the 1/10-within-0.5-pct sentence; mass mojibake pinned; 4th self-rectification (Carina pin) recorded; Q-053 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-053 closed: copy-artifact flag + arithmetic-true ratios)',
     }
 
 
@@ -32574,7 +32589,8 @@ def _paper_058(dataset):
                     'v_shock = v_Alfven*(1 + Ug1/g_grav)^0.5'),
         'source': 'PAPER_058',
         'residual_pct': abs(ranking['m42'] / ranking['tarantula'] - 1890.0) / 1890.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b82': 'RULED B82 2026-09-04: g_grav semantics = LOCAL DYNAMICAL MASS canonized as the family convention (054/057/058); Hubble non-monotonicity = B20 dual-branch labeling suite-wide; mojibake recomputed from verified ratios; Tarantula fixed at 3.5099e-13 via the verified 1890x; Q-054 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-054 closed: local-dynamical-mass convention)',
     }
 
 
@@ -32636,7 +32652,8 @@ def _paper_059(dataset):
                     'F_UBii = -F_rel*(E_cm/E_LEP)*Q_wave*g_local/1e30'),
         'source': 'PAPER_059',
         'residual_pct': abs(v_frag - 6.0) / 6.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b83': 'RULED B83 2026-09-04: E_LEP NAMESPACE - FUBii 1.22e-19 J renamed E_LEPTON_SCALE (E_LEP stays the 200 GeV collider energy); Q_WAVE CANONIZED as a regime-indexed F_TRZ-rung quantity: F_TRZ^-12 (THz resonance) / F_TRZ^0 = 1 (ground) / F_TRZ^6 (thermalized ICM) - fourth F_TRZ^12-rung appearance this campaign; g_local factor ~1.8 stays pinned; P_alpha centrality-averaging reading accepted; 5th self-rectification (F_rel = 4.30e33 print) recorded; Q-055 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-055 closed: rename + Q_wave rung ladder)',
     }
 
 
@@ -32697,7 +32714,8 @@ def _paper_060(dataset):
                     'dE_BEC = 5.0*ln(1.1) = 0.4766 MeV'),
         'source': 'PAPER_060',
         'residual_pct': abs(4.63 - kt) / kt * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b84': 'RULED B84 2026-09-04: THE SUPPRESSION EXPONENT 0.50 = 1/(D_phys-2) EXACT - the PAPER_1958 R91 identity, FULFILLING PAPER_2142s standing 5th-sector prediction; the SSq alternative (level-26 = exp(-SSq) = S_LFV) pinned alongside; mock-data table accepted as calibration demonstration; M_UQFF = 14.3 TeV = PAPER_023s own effective NP scale (distinct from M_KK = 11.6 TeV, both attested); Q-056 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-056 closed: R91 5th sector fulfilled)',
     }
 
 
@@ -32754,7 +32772,8 @@ def _paper_061(dataset):
                     'dT_c_micro = rho_SCm*V/(N*k_B); F_NS = F_nuc*S*sqrt(rho-ratio)'),
         'source': 'PAPER_061',
         'residual_pct': abs(-4.77e6 * 3.5e9 * 1e-10 - (-1.67e6)) / 1.67e6 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b85': 'RULED B85 2026-09-04: F_thermal = 1.2e3 N (MeV/fm arithmetic; printed 1.2e6 = GeV slip) - stability margin ~4000x CANONICAL (stronger than printed); T_c shift 0.38 MeV accepted as-disclosed phenomenological (system_50 calibration); kappa_i = 0.61 auto-corrects to the canonical BETA_I registry value (charter drift table, PAPER_1203); Phi_BEC = SSq 12th physical role recorded (57+28 = 85 pct closes); Q-057 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-057 closed: corrected margin canonical)',
     }
 
 
@@ -32815,7 +32834,8 @@ def _paper_062(dataset):
                     'E_raw = Um*rho_UA/r; E_phys = E_raw*k_eta; omega_LENR = 2*pi*f_SCm'),
         'source': 'PAPER_062',
         'residual_pct': abs(26.9 - 25.38) / 26.9 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b86': 'RULED B86 2026-09-04: k_eta_EFIELD = 1e-55 CONFIRMED by chain closure (E_raw 1.21e61 -> E(Um) 1.21e6 V/m; 4th k_eta namespace member); Li Q-value = 25.38 MeV CANONICAL (arithmetic-true mass balance through 7Li/8Li/8Be; cited W-L 26.9 = literature anchor alongside); OMEGA IDENTITY CANONIZED - omega_LENR = 2*pi*1.25 THz = omega_SCm (the LENR channel IS the SCm phonon resonance; PAPER_066 print supports); F_LENR exponent stays pinned OPEN; heavy-electron chain EXACT stands; Q-058 closed except F_LENR exponent',
+        'status': 'RULED_2026-09-04 (Q-058 closed except F_LENR exp: omega identity + mass-balance Q)',
     }
 
 
@@ -32877,6 +32897,7 @@ def _paper_063(dataset):
         'value': _v,
         'formula': ('C-1: Omega_g*(M_bh/d_g)*Sum(Ug+Ub); C-2: F_Bi*(1+f_TRZ)/(1-Omega_g); '
                     'Master: M*(Ug_i - Ub_i + Ui_i); Q_wave = B^2/(2*mu0)'),
+        'ruling_b87': 'RULED B87 2026-09-04 (B13-era set confirmed): mean = -6.05e217 N (B13 reversal stands; abstract e7 = dropped-exponent print); x_2 = -3.40e172 m (the stability claim requires the large reading); magnetar B_crit = 4.4e9 T = the SCHWINGER field (PAPER_094 revision, consistent with B2s 4.4e13 G); Planck ratio 5.0e173; kappa_MCMC = 0.00052/day retained as the first ensemble-level KAPPA validation; Q-059 CLOSED',
         'source': 'PAPER_063',
         'residual_pct': (kappa_mcmc / KAPPA_PER_DAY - 1.0) * 100,
         'status': 'RULED_BATCH2_2026-08-31 (B13: mean=-6.05e217 N canonical - sec-6 coherent family; x2=-3.40e172; abstract/table e7 prints = truncation drift; Q-059a/b/d CLOSED, Q-059c migrated to Q-090c)',
@@ -32942,7 +32963,8 @@ def _paper_064(dataset):
                     'consistency |g_C - g_UQFF| <= 3*sigma_bootstrap'),
         'source': 'PAPER_064',
         'residual_pct': abs(2 * _m.pi * 30.2 - 190.0) / 190.0 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b88': 'RULED B88 2026-09-04: CROSSWALK CANONIZED - the 4-mode weighted sum = the triadic g decomposition (w_C*g_comp + w_R*g_res + w_B*g_buoy) PLUS the Superconductive term as 4th mode (alpha_S = 0.99 = H_SCm manifold completeness); [UA] = 1e-4 confirmation recorded (canonical since the v_UA/c ruling); GWTC trio = GW150914/GW190521/GW200115 (PAPER_077); Abell worked-example exponents anchored unrecoverable; Crab Resonant closure (190 rad/s = real spin) stands; Q-060 CLOSED',
+        'status': 'RULED_2026-09-04 (Q-060 closed: triadic + SC 4th mode)',
     }
 
 
@@ -33004,7 +33026,8 @@ def _paper_065(dataset):
                     'category census sums to 121'),
         'source': 'PAPER_065',
         'residual_pct': abs(sum(devs) / len(devs) - 2.87),
-        'status': 'OPEN_RULING',
+        'ruling_b89': 'RULED B89 2026-09-04: mean deviation = 2.74 pct CANONICAL (recomputed from the 13 pass rows; 2.87/3.1 = prints); L26 ROW LABELS INVERTED - 5.957e-10 J/m3 IS the UQFF ledger value (predicted side), 5.4e-10 = observation side; the 6.95e-37 measured rho_SCm stays an honest OPEN (no source identified - awaiting pointer); DENOMINATOR CONVENTION PINNED: observation-relative residuals; Solar/Galactic exponents mojibake-unrecoverable; Q-061 closed except the 6.95e-37 source',
+        'status': 'RULED_2026-09-04 (Q-061 closed except 6.95e-37 source: recomputed mean + inversion + convention)',
     }
 
 
@@ -41498,7 +41521,8 @@ def _paper_222(dataset):
         'formula': 'g_HH = G*M/r^2*(1+H*t)*(1-B/B_crit)*(1-E(t)) + P_rad; P_rad = 4*sigma*T^4/(3c)',
         'source': 'PAPER_222',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_q216': 'RULED 2026-09-04 (post-ship audit catch): this papers Q-216 component is FULLY CLOSED - additive-term bridge = rung-12 conjugate pair sigma_ref = lambda_vac_sw * L_Ug1-layer = F_TRZ^12 * F_TRZ^-12 = 1 kg/m2 EXACT (B5 form + Q-216b + PAPER_2259); pass-through vindicated as physics',
+        'status': 'RULED_2026-09-04 (Q-216 closed via PAPER_2259 bridge)',
     }
 
 
@@ -41560,7 +41584,8 @@ def _paper_223(dataset):
         'formula': 'F_BH = P_jet/r_jet; g_fil = G*M_fil/r^2; balance P_jet ~ L_cooling',
         'source': 'PAPER_223',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_q216': 'RULED 2026-09-04 (post-ship audit catch): this papers Q-216 component is FULLY CLOSED - additive-term bridge = rung-12 conjugate pair sigma_ref = 1 kg/m2 EXACT (B5 form + Q-216b + PAPER_2259); pass-through vindicated as physics',
+        'status': 'RULED_2026-09-04 (Q-216 closed via PAPER_2259 bridge)',
     }
 
 
@@ -45626,7 +45651,9 @@ def _paper_026c(dataset):
         'tremaine_gunn_bound_keV': 0.5, 'xray_line_keV': 3.5, 'eqlib': ['sterile_mass_ladder'],
     })
     return {'value': _v, 'formula': 'm_s*c^2=rho_SCm*S26*Phi_res; headline 5.4 keV; product mojibake (540 MeV) flagged',
-            'source': 'PAPER_026c', 'residual_pct': None, 'status': 'OPEN_RULING'}
+            'source': 'PAPER_026c', 'residual_pct': None,
+            'ruling_b52': 'RULED B52 2026-09-03 (folded 2026-09-04 - the v0.416.0 post-ship audit catch): this dispatch is the re-IDd short variant - the Session-0 sequential file is canonical PAPER_026; this variants m_s = rho_SCm*S_26^(3)*Phi_res/c^2 chain yields 5.4e8 eV not 5.4 keV (1e5 unit-dimension issue, DISCLOSED); preserved as history per Rule 9; whitepaper re-IDd to PAPER_026c_..._short_variant.md in v0.416.0; Q-244b (540 MeV formula mojibake) = the SAME finding as the 1e5 unit issue - CLOSED by this disclosure',
+            'status': 'RULED_2026-09-04 (B52 re-ID; unit issue disclosed; history record)'}
 
 
 @_register('PAPER_221b')
