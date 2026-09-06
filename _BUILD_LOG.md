@@ -449,3 +449,10 @@ Batches 12-13 (16 rulings): first F_TRZ lab measurement inside the COP
 identity; the 4/125 sign-corrected dispersion win; Hawking 1-F_TRZ^2;
 dual-x2 settled. Gate 6,057/0. Acceptance 89/89. Registry 6,895.
 Backlog 167 -> 151 + 1.
+
+## v0.419.0 — 2026-09-04 — THE UNDER-100 SHIP
+Batches 14-20 folded (56 rulings, B106-B161). Backlog UNDER 100
+(151 -> 95 + 1). Provenance root (PAPER_133); flagship 6.25 THz
+falsifiable; SSq two anchors; kappa two origins; B112 context split;
+P_SCm rung 3; two doctrines canonized. Gate 6,064/0. Acceptance 89/89.
+Registry 6,950.

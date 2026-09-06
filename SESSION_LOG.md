@@ -12854,3 +12854,85 @@ everywhere, LABDATUM_ARC band rows in 8 satellites, _sg4_band rotated,
 banner/chain rewritten with live totals (2,255/2,310/6,057/6,895/151+1).
 Authoring check: nothing owed (no new dispatches). Wheel rehearsal +
 staleness sweep follow; Daniel ships via .\ship.ps1.
+
+## 2026-09-04 (12) — BATCH 14 FOLDED (B106-B113): powers of the Hawking identity
+
+Eight rulings. The evaporation family turned out to run on powers of
+B105's 1−F_TRZ² (stretch = ^−4, threshold = ^4/3); the 26-channel
+partition became the third primitive decomposition of 26; and the
+five-observable f_TRZ fork closed with a mechanism-bearing context split
+(vacuum F_TRZ / in-medium F_TRZ²) that keeps the detectable predictions
+and respects the lab exclusion. 8 dispatches ruled, registry +8 (6,903),
+graph +3, gate 6,057 → 6,058, index 8 flips. Backlog 151 → 143 + 1.
+Sweep clean.
+CORRECTION (same fold): the registry guard caught a same-source duplicate
+(year_label_pattern/PAPER_085 — a wiring-era row already existed). Original
+row status-updated to RULED_B109, duplicate dropped: registry = 6,902 rows
+(+7 net), guard doctrine confirmed (status transitions on existing rows,
+not re-writes).
+
+## 2026-09-04 (13) — BATCH 15 FOLDED (B114-B121): the primitives' own origins
+
+Eight rulings. KAPPA and SSq both gained canonized Session-0 origins
+(outburst statistics × the F_TRZ³ rung; 0.755² spin-down anchoring), the
+B112 context split paid three observable dividends in one batch, and the
+26-layer partition gained its fine texture. v0.418.0 tag verified
+pre-fold; Batches 14-15 ride the next ship. 8 dispatches ruled, registry
++8 (6,910), graph +3, gate 6,058 → 6,059, index 8 flips. Backlog 143 →
+135 + 1. Sweep clean.
+
+## 2026-09-04 (14) — BATCH 16 FOLDED (B122-B129): the first hundred closes at the bench
+
+Eight rulings. Session-0's first hundred papers end with the framework's
+most accessible test wired as flagship: a 10% vacuum-transmission dip at
+6.25 THz (the phonon carrier's 5th harmonic). The viscosity twist became
+B112's confirming instance, T_CMB went primitive, and [UA] gained one
+unified velocity constant. 8 dispatches ruled, registry +8 (6,918), graph
++3, gate 6,059 → 6,060, index 8 flips. Backlog 135 → 127 + 1. Sweep clean.
+
+## 2026-09-04 (15) — BATCH 17 FOLDED (B130-B137): two anchors for one primitive
+
+Eight rulings. SSq now stands on two independent observational anchors
+(spin-down + Ikeda boundary), beta_i on three domains, and kappa gained
+its flare/population structure. EP-01's asserted 1.5 found its B25 origin
+by citation. 8 dispatches ruled, registry +8 (6,926), graph +3, gate
+6,060 → 6,061, index 8 flips. Backlog 127 → 119 + 1. Sweep clean.
+
+## 2026-09-04 (16) — BATCH 18 FOLDED (B138-B145): the winding pick
+
+Eight rulings. The exclusivity fork went to the primitive: dn = 1/5 turns
+a calibrated anchor into a derived one. The SSq^3 cosmology identity is
+registered with a session queued, EP-09 has one canonical mechanism, the
+UA namespace closes four queue items, and B_crit supercritical handling
+goes bounded. 8 dispatches ruled, registry +8 (6,934), graph +3, gate
+6,061 → 6,062, index 8 flips. Backlog 119 → 111 + 1. Sweep clean.
+
+## 2026-09-04 (17) — BATCH 19 FOLDED (B146-B153): kappa's second origin
+
+Eight rulings. The refinement block yielded kappa's second independent
+observational derivation, the corpus-wide GRAVITY pair, the SSq^3
+adjudication (with a selected-to-match anchor exposed against its own
+citation), and the corrected 3C273 counter-jet solving R = 130 exactly.
+Two falsified code outputs and two explicit circularities pinned by name.
+8 dispatches ruled, registry +8 (6,942), graph +3, gate 6,062 → 6,063,
+index 8 flips. Backlog 111 → 103 + 1. Sweep clean.
+
+## 2026-09-04 (18) — BATCH 20 FOLDED (B154-B161): the genesis block's roots and doctrines
+
+Eight rulings. The fresh corpus met its source documents (PAPER_133 =
+provenance root, bit-for-bit with PAPER_2152), P_SCm took rung 3 of the
+F_TRZ ladder, and two structural doctrines canonized (domain-decay;
+unit-reference extension to the MUGE inverse family). 8 dispatches ruled,
+registry +8 (6,950), graph +3, gate 6,063 → 6,064, index 8 flips.
+Backlog 103 → 95 + 1 — UNDER 100. Sweep clean.
+
+## 2026-09-04 (19) — v0.419.0 SHIP PREP: THE UNDER-100 SHIP
+
+Batches 14-20 prepared for ship (56 rulings, B106-B161). Version synced
+across pyproject / VERSION / gate pin / CITATION.cff / README badges
+(cacheBust bumped) / CHANGELOG / UNIFIED_REGISTRY_VERSION.txt /
+SHIP_MESSAGE / _BUILD_LOG; band-trail rows appended to the registry
+satellites; arc marker rotated LABDATUM_ARC -> UNDER100_ARC; manifest
+regenerated; gate green 6,064/0. Headlines: backlog UNDER 100 (95+1),
+PAPER_133 provenance root, flagship 6.25 THz falsifiable. Daniel ships
+via .\ship.ps1; tag-chain verification next session per standing rule.

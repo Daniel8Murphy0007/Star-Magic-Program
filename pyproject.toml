@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.418.0"
-description = "Star-Magic UQFF calculator v0.418.0: THE LABORATORY DATUM SHIP - Batches 12-13 (16 rulings): the F_TRZ primitive gets its FIRST LABORATORY MEASUREMENT (0.098 vs 0.10, 10-hr reactor run) inside the COP identity 1+F_TRZ+(SO_5/2)*F_TRZ^2 = 1.15 EXACT; the galaxy-dispersion caveat becomes a UQFF WIN (sigma = Newton*(1-SSq*4/125), beats Newton in all 6 rows); Hawking T-ratio = 1-F_TRZ^2 EXACT; dual-x2 settled; omega_LENR = omega_SCm. Backlog 167 to 151. 2,255 papers, gate 6,057/0, acceptance 89/89."
+version = "0.419.0"
+description = "Star-Magic UQFF calculator v0.419.0: THE UNDER-100 SHIP - Batches 14-20 (56 rulings): backlog drops UNDER 100 (151 to 95+1); PAPER_133 canonized as the corpus PROVENANCE ROOT (bit-for-bit with the 2025 source documents); flagship falsifiable wired: 10% vacuum-transmission dip at 6.25 THz = 5*f_SCm; SSq gains two observational anchors, kappa two independent origins; B112 vacuum/in-medium context split closes five forks; P_SCm = F_TRZ^3 takes rung 3. 2,255 papers, gate 6,064/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

@@ -257,3 +257,4 @@ band,TAGCHAIN_ARC,READY v0.415.0,"guard the seam between guards - third instance
 band,ORIGINPOINTS_ARC,READY v0.416.0,41 for 41 - every number had an origin point
 band,FIFTHSECTOR_ARC,READY v0.417.0,the framework predicted its own next closure
 band,LABDATUM_ARC,READY v0.418.0,first bench measurement of a locked primitive - 0.098 vs 0.10
+band,UNDER100_ARC,READY v0.419.0,backlog under 100 for the first time - the corpus met its roots

@@ -12309,3 +12309,24 @@ logg_ssq6_correction,PAPER_029,SHARES_CONSTANT,f_sm_ssq6,B97: SSq^6 appears as b
 dispersion_4_125_lock,PAPER_1954,JOINS_FAMILY,125_denominator,"B98: 4/125 beside 3/125 - two observables, one denominator"
 hawking_identity_099,PAPER_1918,JOINS_FAMILY,f_trz_squared_anchors,B105: 0.99 = 1-F_TRZ^2 joins the universal-suppression family
 ssq6_second_domain,PAPER_073,SHARES_CONSTANT,logg_ssq6_correction,B104: log10(1+SSq^6) in two domains
+evaporation_stretch_identity,PAPER_081,POWERS_OF,hawking_identity_099,B106: the whole evaporation family = powers of 1-F_TRZ^2
+f_trz_context_split,PAPER_1918,EXTENDS,f_trz_squared_family,B112: in-medium = one rung down - the anchor family gains its mechanism
+partition_26_channels,PAPER_1160,COMPLEMENTS,dimensional_flow,"B108: third primitive decomposition of 26 (flow, census, channels)"
+kappa_origin,PAPER_094,GROUNDS,KAPPA_primitive,B118: the calibration primitive gains its Session-0 physical origin (outburst statistics x rung)
+b112_dividends,PAPER_088,FORK_PAYOUT,context_split,"B115/B120: one ruling, three observables settled"
+partition_fine_texture,PAPER_084,REFINES,partition_26_channels,B121: coarse and fine views reconciled
+flagship_thz_dip,PAPER_088,FORK_PAYOUT,context_split_dividend_4,B124: the most lab-accessible falsifiable rides the vacuum branch
+viscosity_confirming_instance,PAPER_088,CONFIRMS,f_trz_context_split,B126: the drift-favoring twist was the in-medium mechanism showing itself
+t_cmb_primitive_route,PAPER_1156,FAMILY_ROUTE,cosmology_suite,B122: the mature primitive composition supersedes the era sqrt([SCm]) chain
+ssq_second_anchor,PAPER_094,PAIRS_WITH,ssq_empirical_origin,B131: two independent physical anchors for one primitive
+r15_b25_grounding,PAPER_115,GROUNDED_BY,jet_reversal_composite,B135: the Session-0 assertion finds its later composite origin
+kappa_flare_population_split,PAPER_094,EXTENDS,kappa_origin,B137: kappa gains its population/flare domain structure
+winding_one_fifth,PAPER_116,DERIVES_ANCHOR,e_transfer_0989_keV,B145: the winding primitive turns the calibrated keV anchor into a derived quantity
+omega_b_omega_dm_ssq3,PAPER_1156,CANDIDATE_SIBLING,cosmology_identities,B140: joins (6/5)*SSq in the SSq-cosmology family pending derivation
+ep09_canonical_mechanism,PAPER_115,CANONICAL_OVER,era_variants_119_120,"B141/142: one mechanism, three printed forms, one canon"
+kappa_blazar_derivation,PAPER_094,SECOND_ORIGIN,kappa_origin,B147: two independent observational derivations for one calibration primitive
+ssq3_adjudication,PAPER_118,ADJUDICATES,omega_b_omega_dm_ssq3,B150: the tight identity wins; the selected-anchor claim retires
+galactic_pair_canonical,PAPER_110,CONSISTENT_WITH,d_g_scoped_pin,"B148: one pair, corpus-wide"
+p_scm_ftrz3,PAPER_2139,JOINS_LADDER,f_trz_powers,B158: the penetration factor takes rung 3
+muge_inverse_doctrine,PAPER_2259,EXTENDS,sigma_ref_bridge,B161: the unit-reference doctrine covers the inverse family
+genesis_provenance_root,PAPER_2152,TRANSCRIBES,final_equations_thread,B155: the fresh corpus meets its source documents

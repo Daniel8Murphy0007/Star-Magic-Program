@@ -7126,3 +7126,158 @@ Queue: 159 Daniel-gated + 1 OPEN_CANDIDATE.
   (7th self-rectification; drift inputs superseded; F_TRZ² family);
   PBH M = 1e10 kg.
 Queue: 151 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 14 RULINGS — Daniel, 2026-09-04 (B106-B113; folded same day; gate-pinned; sweep clean)
+
+- **B106/Q-078 + B107/Q-079 (consolidated):** threshold = chain −1.3%
+  (5.62e11 kg, double-supported); primitive form (1−F_TRZ²)^(4/3) with
+  083's exponent sign-flipped in print; **t_UQFF/t_GR = (1−F_TRZ²)⁻⁴ =
+  1.0410 EXACT** (4th power of the Hawking identity); year-label pattern;
+  literature asteroid window.
+- **B108/Q-080:** partition 26 = D_phys + (D_phys+SO_5) + D_BSFG + 2
+  EXACT (third primitive decomposition of 26); Page linearization struck;
+  Cosmic Egg = canonical term.
+- **B109/Q-081:** 081-family propagation confirmed; year-label canon
+  (2nd instance); t_Page = 0.5205 CAMPAIGN-TRACKED.
+- **B110/Q-082:** kappa_AGN = 5e-7/day registered (domain decay);
+  f_AGN /10 = [SCm]·F_TRZ; Ug4 form OPEN (Rule D).
+- **B111/Q-083:** η MODE-DEPENDENT (SC ×[SCm] / XRB (1+[SCm])); ASKAP
+  two-period reconciliation (2.78 h orbital / 44 min emission).
+- **B112/Q-084:** **THE FIVE-OBSERVABLE FORK CLOSED** — vacuum channels
+  see F_TRZ = 0.1 (+10% SgrA* neutrino DETECTABLE; pulsar timing; FRB
+  slope; THz dip), in-medium channels see F_TRZ² = 0.01 (anchor family
+  gains its mechanism; viscosity exclusion respected).
+- **B113/Q-085:** β_i symbol slip corrected; triadic zero-sum confirmed;
+  footer chain OPEN.
+Queue: 143 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 15 RULINGS — Daniel, 2026-09-04 (B114-B121; folded same day; gate-pinned; sweep clean)
+
+- **B114/Q-086:** 9-term pin; **T0 doctrine's Session-0 root recorded**
+  (PAPER_090's own words); **U_bi/F_U = SSq·κ = 2.85e-4 EXACT named**;
+  7.09e-5 normalization FLAGGED (not canonized).
+- **B115/Q-087:** pulsar-timing = canonical 10% (B112 dividend #2);
+  aDPM label → 270 R_S; 14th mode OPEN.
+- **B116/Q-088:** per-system anchors; 0.07 shift = SgrA* anchor; source
+  damage noted.
+- **B117/Q-089:** T_H → 081-family 9.49e-18; jet → M87 chain 8.1e44;
+  shift form OPEN; 5th canonical-side instance.
+- **B118/Q-090:** **KAPPA ORIGIN = (N_burst/t_active)·F_TRZ³ EXACT**
+  (SGR1745 outburst; the 1e-3 was a rung); **SSq ORIGIN = 0.755² EXACT**
+  (empirical, paired with PAPER_1154); Schwinger B_crit + Q_wave revision
+  confirmed; falloff OPEN.
+- **B119/Q-091:** ASKAP reconciliation RATIFIED (resolves Q-083c);
+  vacuum (1+F_TRZ) canonical with fit anchor; 660 pin; 1.57 family.
+- **B120/Q-092:** SI chain 1.59e26; corrected V-factor ADOPTED (2.7e44
+  erg, nearer CHIME); slope = 1.10 (dividend #3); repeat-drift tracked.
+- **B121/Q-093:** fine partition {D_phys, D_phys, SO_5, D_BSFG, 2}
+  confirmed (10-band = SO_FIVE); coarse/fine reconciled.
+Queue: 135 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 16 RULINGS — Daniel, 2026-09-04 (B122-B129; folded same day; gate-pinned; sweep clean)
+
+- **B122/Q-094 (deep dive):** canonical T_CMB = K_MEX·Φ_res + (D_phys−3) =
+  2.75 K (0.92%, parameter-free) SUPERSEDES the era √[SCm] chain; η_b =
+  ε_CP·[UA] = 6e-10 EXACT canonized; Egg reconciled; κ doctrine standing.
+- **B123/Q-095:** 37.5-DAY chain (yr slip); T = 1e7 K; 0.755 structural
+  reuse; ISCO inputs OPEN.
+- **B124/Q-096:** **ν_hole = 5·f_SCm = 6.25 THz canonized (5 = SO_5/2)**;
+  **FLAGSHIP LAB FALSIFIABLE: 10% vacuum-transmission dip at 6.25 THz**
+  (B112 dividend #4, bench-measurable); 62.4 echo noted-without-retrofit.
+- **B125/Q-097:** Δ_YM = 1.736 GeV PRIMARY; both earlier epochs superseded
+  (chain preserved); conversion defect pinned.
+- **B126/Q-098:** the viscosity twist = **B112's CONFIRMING INSTANCE**
+  (lab fluids = in-medium F_TRZ²); enstrophy cap = complementary layer.
+- **B127/Q-099:** numerological line STRUCK (paper's own label); t_10000 =
+  complementary; **300 Hz = Colman-Gillespie provenance**; direction OPEN.
+- **B128/Q-100:** **ONE VELOCITY: v_UA = c·[UA] = 3.0e4 m/s** (v_SCm =
+  same quantity, era label); Q-060b formally closed at 11 appearances;
+  P≠NP gap honestly recorded.
+- **B129/Q-101:** structural re-expression (no double-count); Domain 1.13
+  closes; two qualitative PASSes pending cross-check.
+Queue: 127 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 17 RULINGS — Daniel, 2026-09-04 (B130-B137; folded same day; gate-pinned; sweep clean)
+
+- **B130/Q-102:** (6/5)·SSq = the ORIGIN of the 0.685 anchor; CPL anchors
+  campaign-tracked; later suite canonical over the Session-0 layer.
+- **B131/Q-103:** **SSq SECOND OBSERVATIONAL ANCHOR canonized** (Ikeda-10α
+  N_B = 0.57 EXACT; Bose derivation = open target); SSq/(i/26)^0.5 named;
+  domain-1.15 = empirical-proof compendium.
+- **B132/Q-104:** **β_i TRI-SOURCE canonized** (SED + MCMC + ejecta;
+  0.6029 primary at 0.48%); f_pp = SSq's 4th role (√SSq near-identity noted).
+- **B133/Q-105:** β_i three-domain + SSq six-role taxonomies canonized;
+  ×0.975 = one row; 1/3 strain factor → GW family.
+- **B134/Q-106:** d_g scoped pin (Gaia canonical / SOURCE4 locked anchor);
+  1.894 candidate = the B73-canonized origin CONFIRMED (cross-repo note
+  here; predecessor read-only).
+- **B135/Q-107:** R = 1.5 GROUNDED via the B25 composite ladder;
+  dissipation → 27 Gyr; 089-footer TEMPLATE-INJECTION standing audit note.
+- **B136/Q-108:** 90.5% statistic + tautological R RETIRED; Δn-vs-uniform
+  test = the replacement criterion; 9-11 relabel stands.
+- **B137/Q-109:** **flare-vs-population κ split** (population = 5e-4 via
+  PAPER_125's named sources; CTA 102 = 5.3× flare, dropped).
+Queue: 119 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 18 RULINGS — Daniel, 2026-09-04 (B138-B145; folded same day; gate-pinned; sweep clean)
+
+- **B138/Q-112:** 1-keV anchor calibrated → DERIVED 0.989 keV (via B145);
+  Holmlid-family convergence flagged for a session; Λ = 30 TeV OPEN.
+- **B139/Q-113:** Z = 82 = A₅+D_crit−D_phys RATIFIED; Pb-208 scoped SSq
+  8th role; −0.2 relabels confirmed.
+- **B140/Q-114:** true anchor 5.31e-10; **Ω_b/Ω_DM = SSq³ (0.16%)
+  REGISTERED, derivation session queued**; strong Ω_Λ form canonized.
+- **B141/Q-115:** joint 1e46 confirmed (B27 routes); Triadic SSq = 0.57
+  (log-ratio renamed); Baktun retired; EP-09 → B25 canon.
+- **B142/Q-116:** **B_crit = Schwinger 4.4e9 T + BOUNDED supercritical
+  handling via the D_SCm threshold** (linear = sub-critical approx);
+  Q-002 finally informed end-to-end.
+- **B143/Q-117:** M_bh scoped split (8.55e36 GRAVITY canonical); **UA
+  namespace split closes FOUR queue items**; √3 + 1/φ finds flagged.
+- **B144/Q-118:** Q-108a RESOLVED-BY-CORPUS (three voices); falsified
+  R² retired, log-space residuals replace; 2 = D_phys/2 flagged.
+- **B145/Q-119:** **WINDING PRIMITIVE: δn = 2/SO_5 = 1/5 EXACT** — the
+  anchor becomes derived (0.989 keV), the round-eV 0.2047 exposed as the
+  conversion mantissa.
+Queue: 111 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 19 RULINGS — Daniel, 2026-09-04 (B146-B153; folded same day; gate-pinned; sweep clean)
+
+- **B146/Q-120:** Pb-208 confirmed; dn double-defect; [SCm] decade-ladder
+  candidate flagged (1e15/1e16/1e17).
+- **B147/Q-121:** **κ's SECOND observational derivation** (α/t_mean =
+  0.35/700 = 5e-4 EXACT, real blazar statistics); circular synthetic fit
+  pinned; E_gap OPEN.
+- **B148/Q-122:** **GRAVITY pair canonical** (8.55e36 kg, 2.554e20 m —
+  Q-117a settled); (1+SSq·β_i·F_TRZ) decomposition; eps_UA circularity.
+- **B149/Q-123:** d_sw triple UNIFIED (B22 + primitive + Q-110b Alfvén);
+  falsified code No. 2 dropped; 0.0145 renamed.
+- **B150/Q-124:** **SSq³ ADJUDICATED to Ω_b/Ω_DM**; the 0.185 anchor
+  exposed against its own citation (Read+2014 = 0.40).
+- **B151/Q-125:** t_n(counter) = −0.81 (R = 130.0 EXACT); 13 knots =
+  D_crit/2; beaming convention OPEN.
+- **B152/Q-126:** canonical β strengthens (0.48%); p_max = 1e15;
+  discriminator target flagged.
+- **B153/Q-127:** RACS = young NS (111 re-scoped); ejecta = 1−β_i =
+  0.3971; [UA]_merger ≈ 1/D_BSFG flagged.
+Queue: 103 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 110.
+
+## BATCH 20 RULINGS — Daniel, 2026-09-04 (B154-B161; folded same day; gate-pinned; sweep clean)
+
+- **B154/Q-128:** Hoyle E_0 CALIBRATED; χ² ASSERTED; two N=3s stay two.
+- **B155/Q-129:** E_react v¹ canonical (three supports); **PAPER_133 =
+  the PROVENANCE ROOT** (PAPER_2152 bit-for-bit; β lineage documented).
+- **B156/Q-130:** Ug2 = 1.18e40 chain; normalized-velocity convention;
+  age law qualitative (α_star OPEN).
+- **B157/Q-131:** **DOMAIN-DECAY DOCTRINE** canonized; **NS-Millennium
+  hierarchy** (enstrophy cap canonical / viscosity microphysics /
+  Gronwall motivational); time-reversal jet = genesis EP-09 ancestor.
+- **B158/Q-132:** **P_SCm = F_TRZ³ EXACT** (rung 3); H_SCm = trapped-SCm
+  bookkeeping (B28 reading); circular lunar relabel pinned.
+- **B159/Q-133:** genesis ENERGIES stand, LABELS superseded (EP block).
+- **B160/Q-134:** manufactured cavity pinned (OPEN); B_crit three-value
+  fork CLOSED under the Schwinger canon.
+- **B161/Q-135:** **unit-reference doctrine EXTENDED to the MUGE inverse
+  family** (affects all downstream applications); inverse-Boyle preserved.
+Falsified outputs Nos. 4-7 pinned across the block.
+Queue: 95 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 100.

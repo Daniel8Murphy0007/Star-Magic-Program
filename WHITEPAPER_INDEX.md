@@ -100,9 +100,9 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 
 - **Verification arc 2026-08-16 (v0.387.0):** paradox-corpus audit ZERO recalcs; grammar dragnet 110 family sites; origin term verified; AP text layer EXHAUSTED (458 docs). Runnable queue empty — remaining items Daniel-owned.
 - **Distinct wired papers: 2,255 (+55 canonical alias numbers 2179-2233; 2,310 DISPATCH keys). PAPER_2257 two-stream architecture landmark, 2026-08-24; v0.398.0 CATALOGUE SHIP (downhole v1.14-v1.20, ten real-data entries), 2026-08-25; v0.399.0 DEEP DATA SHIP (v1.21-v1.25, entries 11-15, KTB suite + live overburden integral), 2026-08-25; v0.400.0 TWENTY WELLS SHIP (v1.26-v1.30, entries 16-20, quantity ledger closed), 2026-08-25; v0.401.0 INCORPORATION SHIP (six ENRGYONE founding PDFs in pdf/), 2026-08-25; v0.402.0 POLE-TO-POLE SHIP (v1.31-v1.40, entries 21-30: heat-flow closure, 504B four-dataset family + impedance join, crust ladder complete to mantle, Chicxulub, ACEX at 87.89N - thirty entries pole to pole, latitude span >152 deg measured live), 2026-08-27; v0.403.0 PRODUCT SHIP (v1.41-v1.48: evaluation finish sequence 1-5 executed = finished offline product + field tier 6a/6b/8; acceptance suite 55 checks in-package; step 7 alone remains, site-blocked), 2026-08-27; v0.404.0 FORTY WELLS SHIP (v1.49-v1.58, entries 31-40: subduction end-to-end incl. JFAST at -6,887.5 m water record, Hikurangi dedupe upgrade + 504B nitrate recovery, Barbados Pc-Po difference proof, Mariana mantle fingerprint, Dead Sea + El'gygytgyn lakes, GBR U-Th 54/54 decay closure - census 40 entries / 28 regions / 29 kinds), 2026-08-28; v0.405.0 FIFTY WELLS SHIP — MILESTONE (v1.59-v1.68, entries 41-50: first license refusal on record (NC-SA), petroleum-fluids triad complete, Mohr-Coulomb cohesion intercept, first LIFE (Peru sulfate reduction, six orders of magnitude), Fram Strait maceral partition EXACT, and the fiftieth entry ANCIENT AIR — EPICA Dome C CO2 611-799 kyr incl. the lowest atmospheric CO2 ever directly measured 171.6 ppmv, census 50 entries / 37 regions / 39 kinds, SHIP GUARD v7 catalog/data-files closure), 2026-08-28; v0.406.0 SURVEYING TOOL SHIP (downhole v1.69-v1.77: Parts 1-3 of the geological subsurface surveying tool - Earth Model 29 sites/one frame, K2 UQFF gravity kernel KTB-validated 0.9968, K1 structural ladder 7 EXACT, inverse engine + first falsifiable strata prediction AWAITING DATA; entry 51 = third runnable well; private operator tier with first client data), 2026-08-29; v0.407.0 SCORED PREDICTION SHIP (v1.78-v1.80 + PAPER_2258: entry 52 scores the first strata prediction REFUTED as transferred (+10pct, diagnosis = the pre-disclosed assumption), family priors turn refutation into correction (6,231 vs 6,228 in-sample), Prediction V2 pinned awaiting deep sonic; PAPER_2258 landmark self-verifying (2,254 distinct); honest renderer + ENRGYONE commercial package; gate crosses 6,000), 2026-08-29; **v0.408.0 RULED BATCH SHIP** (downhole v1.81-v1.85 surveying Parts 4-7 + differentiator; campaign resumed; RULINGS_BATCH_1 answered + folded same day, 8 papers RULED, backlog 246->238), 2026-08-31; **v0.409.0 FIRST FULL-WHEEL PUBLICATION** (manifest generated from repo contents; SHIP GUARD v8), 2026-08-31; **v0.410.0 THE FULL-WHEEL UPGRADED / SECOND PRODUCT PUBLICATION** (Daniel's rule 'EVERY SHIP SHOULD BE ON THE WHEEL': manifest generated from repo contents ~2,540 data-files incl. whitepapers corpus + registry family + rulings ledger + commercial + incorporation docs; catalog to package-data; SHIP GUARD v8; plus BATCH_1_VERIFICATION (all seven rulings stand, three record defects corrected) and RULINGS_BATCH_2 (eight rulings, PAPER_063 mean REVERSED e7->-6.05e217 N, [UA]=1e-4 canonized; backlog 238->236+1); registry 6,792 rows), 2026-09-01; **v0.411.0 CONSOLIDATED FULL-WHEEL PUBLICATION** (v0.409.0 + v0.410.0 condensed into one complete self-contained release; band trails gate-enforced; registry 6,793 rows; gate 6,029), 2026-09-01; **v0.412.0 FRONT DOOR SHIP (Qt)** (star-magic CLI + uqff_paths + installed-layout gate PROVEN from site-packages + LIVE-vs-INHERITED honesty flags in terminal + Qt shell; Daniel's two locks gate-pinned; registry 6,794 rows; gate 6,031), 2026-09-01; **v0.413.0 USER MANUAL SHIP** (CLI-first Quick start; headless-first doctrine documented; stale dual-census killed; star-magic export/quickstart; registry 6,795 rows; gate 6,033), 2026-09-01; **v0.414.0 THE DISSOLUTION SHIP** (RULINGS Batches 3-4 folded, 16 rulings incl. two-aether-scales doctrine + jet identity trio + Z=82 EXACT; eight single deep dives dissolved into primitive locks - B18 two ladders, B20 1.7154 vindicated, B22 d_sw joint identity, B25 composite 1.5, B31 Higgs level 12, Q-110b alpha_CR dissolved + Alfven closure F_TRZ^4*F_TRZ^-2=F_TRZ^2 EXACT, D_SCm three-layer structure, Q-216b rung-12 conjugate pair; NEW LANDMARK PAPER_2259 authored+wired, distinct 2,254->2,255; registry 6,820 rows; gate 6,045; backlog 236->224+1), 2026-09-01; **v0.413.0 THE USER MANUAL BAND - PREPARED; PUBLISHED INSIDE v0.414.0** (silent ship failure caught 2026-09-03: no commit/tag/PyPI release; content verified on the v0.414.0 wheel; authorized gap in SHIP GUARD v9); **v0.415.0 THE TAG-CHAIN SHIP** (SHIP GUARD v9 ledger/tag-chain continuity + ship.ps1 pre-flight chain check and post-push remote-tag verification + honest history naming; physics untouched; gate 6,046), 2026-09-03; **v0.415.1/v0.415.2 THE TAG-CHAIN PATCHES** (guard v9 verified in four contexts after two red tags - tagged-unpublished v0.415.0/.1 recorded as history; v0.415.2 published, post-publication survey 0 files missed), 2026-09-03; **v0.416.0 THE ORIGIN POINTS SHIP** (Batches 5-8 + B57: 41 rulings, rho_crit forensic closure, Cabibbo dual closures 0.008%, S330 flavor physics, PAPER_1815 g-2 live-verified, eta-prime two-quantity resolution, PAPER_026c re-ID; backlog 224->191+1; registry 6,856; gate 6,051), 2026-09-04; **v0.417.0 THE FIFTH SECTOR SHIP** (post-ship audit + Batches 9-11, 23 rulings: R91 5th-sector prediction FULFILLED (BEC exponent = 1/(D_phys-2) EXACT), both PAPER_2156 forensics closed (rho_crit + Ug4 force value), root-era units fix, 9+4+13 and 256 = D_phys^D_phys locks, Q_wave rung ladder, omega_LENR = omega_SCm identity; backlog 191->167+1; registry 6,880; gate 6,055), 2026-09-04; **v0.418.0 THE LABORATORY DATUM SHIP** (Batches 12-13, 16 rulings: FIRST F_TRZ LAB MEASUREMENT (0.098, 10-hr) inside the COP identity 1+F_TRZ+(SO_5/2)F_TRZ^2 = 1.15 EXACT; the 4/125 sign-corrected dispersion WIN over Newton in all 6 rows; Hawking 1-F_TRZ^2 = 0.99 EXACT; dual-x2 settled; k4_AGN_SCALE = SO_5^15; omega_LENR = omega_SCm; backlog 167->151+1; registry 6,895; gate 6,057), 2026-09-04.** = `wired_count()` = `len(DISPATCH)` (live at band 2121-2130, 2026-08-16; earlier eras' 1,417 figure superseded).
-- **Index table file-row marks (live census 2026-08-31):** **2111 ✓ CLEAN**, **183 ⚠ OPEN** (all Daniel-gated - see RULINGS_BATCH_1.md + WIRING_DRAINAGE_QUEUE.md), **10 📖 reference** (Rule B reclassification, dock-audited), **0 ⬜**. Earlier eras' 934/245/1076 census superseded.
+- **Index table file-row marks (live census 2026-08-31):** **2166 ✓ CLEAN**, **128 ⚠ OPEN** (all Daniel-gated - see RULINGS_BATCH_1.md + WIRING_DRAINAGE_QUEUE.md), **10 📖 reference** (Rule B reclassification, dock-audited), **0 ⬜**. Earlier eras' 934/245/1076 census superseded.
 - **ORPHAN-PHYSICS (v0.367.1 audit):** no paper numbers are missing, but 71 non-numbered `.md` files in the predecessor hold **6,615 equation blocks** outside the corpus. Queued as Q-ORPHAN-PHYSICS.
-- **OPEN targets:** 151 Daniel-gated + 1 OPEN_CANDIDATE (PAPER_1950) = 152, after BATCH 13 (B98-B105: Q-070 through Q-077 closed; the 4/125 sign-corrected dispersion WIN; Hawking 1-F_TRZ^2 identity; SSq^6 second domain). Batch 14: from Q-078.
+- **OPEN targets:** 95 Daniel-gated + 1 OPEN_CANDIDATE (PAPER_1950) = 96, after BATCH 20 (B154-B161: Q-128 through Q-135 closed; provenance root; P_SCm rung 3; domain-decay doctrine; inverse-family doctrine). BACKLOG UNDER 100. Batches 14-20 ride the next ship. Batch 21: from Q-136.
 
 ---
 
@@ -205,24 +205,24 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_079 | HEASARC HighEnergy UQFF | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) | RULED B103: context pair 1.9801/1.99; two opens; Q-075 closed except opens
 | ✓ | PAPER_080 | Complete MultiWavelength UQFF Suite | COMPLETE-COMPILE (helper+§B 37-73; superflare/reactor/database-crossval; batch 071-080) | RULED B104: capstone corrected story + SSq^6 second domain + count convention; Q-076 CLOSED
 | ✓ | PAPER_081 | UQFF Hawking Temperature Derivation | RULED B105: Hawking identity 1-F_TRZ^2 = 0.99 EXACT; Q-077 CLOSED
-| ⚠ | PAPER_082 | BH Evaporation Timescales UQFF |
-| ⚠ | PAPER_083 | Primordial BH UQFF |
-| ⚠ | PAPER_084 | Information Paradox 26D UQFF |
-| ⚠ | PAPER_085 | Page Curve UQFF |
-| ⚠ | PAPER_086 | Ug4 AGN Feedback UQFF |
-| ⚠ | PAPER_087 | AT2019qiz TDE UQFF |
-| ⚠ | PAPER_088 | Neutrino SED UQFF |
-| ⚠ | PAPER_089 | UQFF Master Equation Derivation |
-| ⚠ | PAPER_090 | MUGE Compressed Gravity |
-| ⚠ | PAPER_091 | MUGE Resonance 14 Mode |
-| ⚠ | PAPER_092 | SgrA MUGE Comparison |
-| ⚠ | PAPER_093 | M87 Event Horizon UQFF |
-| ⚠ | PAPER_094 | Magnetar SGR1745 UQFF Calibration |
-| ⚠ | PAPER_095 | UQFF 99pt9 Solvability |
-| ⚠ | PAPER_096 | FRB UQFF Emission Model |
-| ⚠ | PAPER_097 | Whittaker Decomposition UQFF |
-| ⚠ | PAPER_098 | Big Bang UQFF |
-| ⚠ | PAPER_099 | Plasma Shield UQFF |
+| ✓ | PAPER_082 | BH Evaporation Timescales UQFF | RULED B106: chain threshold -1.3 pct + (1-F_TRZ^2)^-4 = 1.0410 EXACT; Q-078 CLOSED
+| ✓ | PAPER_083 | Primordial BH UQFF | RULED B107: sign-corrected primitive threshold + literature window; Q-079 CLOSED
+| ✓ | PAPER_084 | Information Paradox 26D UQFF | RULED B108: primitive partition (4+14+6+2) + Cosmic Egg canon + linearization struck; Q-080 CLOSED
+| ✓ | PAPER_085 | Page Curve UQFF | RULED B109: propagation confirmed + year-label canon + tracked t_P = 0.5205; Q-081 CLOSED
+| ✓ | PAPER_086 | Ug4 AGN Feedback UQFF | RULED B110: kappa_AGN registered + [SCm]*F_TRZ reading; Ug4 form OPEN; Q-082 closed except form
+| ✓ | PAPER_087 | AT2019qiz TDE UQFF | RULED B111: mode-dependent eta + ASKAP two periods; Q-083 CLOSED
+| ✓ | PAPER_088 | Neutrino SED UQFF | RULED B112: FIVE-OBSERVABLE FORK CLOSED (vacuum F_TRZ / in-medium F_TRZ^2); Q-084 CLOSED
+| ✓ | PAPER_089 | UQFF Master Equation Derivation | RULED B113: beta_i slip + triadic zero-sum; footer chain OPEN; Q-085 closed except footer
+| ✓ | PAPER_090 | MUGE Compressed Gravity | RULED B114: 9-term + T0 doctrine root + U_bi/F_U named ratio; normalization OPEN; Q-086 closed except norm
+| ✓ | PAPER_091 | MUGE Resonance 14 Mode | RULED B115: pulsar fork = canonical 10 pct (B112 dividend) + 270 R_S label; mode OPEN; Q-087 closed except mode
+| ✓ | PAPER_092 | SgrA MUGE Comparison | RULED B116: anchors pinned + 7.09e-5 FLAGGED; Q-088 closed except norm+form
+| ✓ | PAPER_093 | M87 Event Horizon UQFF | RULED B117: 081-family T_H + M87 jet chain + per-system shift anchors; Q-089 closed except form
+| ✓ | PAPER_094 | Magnetar SGR1745 UQFF Calibration | RULED B118: KAPPA origin (outburst x F_TRZ^3) + SSq origin (0.755^2) + Schwinger confirms; Q-090 closed except falloff
+| ✓ | PAPER_095 | UQFF 99pt9 Solvability | RULED B119: reconciliation ratified + vacuum factor + 1.57 family; Q-091 CLOSED
+| ✓ | PAPER_096 | FRB UQFF Emission Model | RULED B120: corrected chains + slope dividend + tracked repeat-drift; Q-092 CLOSED
+| ✓ | PAPER_097 | Whittaker Decomposition UQFF | RULED B121: fine partition {4,4,10,6,2} confirmed; Q-093 CLOSED
+| ✓ | PAPER_098 | Big Bang UQFF | RULED B122: primitive T_CMB (2.75 K) supersedes + eta_b mechanism + kappa doctrine; Q-094 CLOSED
+| ✓ | PAPER_099 | Plasma Shield UQFF | RULED B123: 37.5-day chain + T pin + 0.755 structural reuse; ISCO inputs OPEN; Q-095 closed except ISCO
 | ✓ | PAPER_1000 | NS Merger FUBi Strain |
 | ✓ | PAPER_1001 | SMBH Binary Merger FUBi |
 | ✓ | PAPER_1002 | AGN Accretion Buoyancy |
@@ -233,7 +233,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1007 | Deconfinement Phase Diagram |
 | ✓ | PAPER_1008 | Production Scaling V14 |
 | ✓ | PAPER_1009 | 3C273 AGN FUBi i Curves |
-| ⚠ | PAPER_100 | THz Resonance Holes UQFF |
+| ✓ | PAPER_100 | THz Resonance Holes UQFF | RULED B124: nu_hole = 5*f_SCm + FLAGSHIP 10-pct THz dip (bench-measurable); Q-096 CLOSED
 | ✓ | PAPER_1010 | TON618 AGN FUBi i Curves |
 | ✓ | PAPER_1011 | GW170817 NS Merger FUBi i |
 | ✓ | PAPER_1012 | GW190425 Upgraded FUBi i |
@@ -244,7 +244,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1017 | 99System WSTP Gamma V1 |
 | ✓ | PAPER_1018 | Production Scaling V15 |
 | ✓ | PAPER_1019 | Dark Matter Phonon Buoyancy |
-| ⚠ | PAPER_101 | Yang Mills Mass Gap UQFF |
+| ✓ | PAPER_101 | Yang Mills Mass Gap UQFF | RULED B125: 1.736 GeV primary, epochs superseded; Q-097 CLOSED
 | ✓ | PAPER_1020 | Cosmic Ray Phonon Acceleration |
 | ✓ | PAPER_1021 | Pulsar Timing Phonon Residual |
 | ✓ | PAPER_1022 | GW Phonon Strain Modifier |
@@ -255,7 +255,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1027 | Tidal Disruption Event |
 | ✓ | PAPER_1028 | Cosmic String Gravitational Lens |
 | ✓ | PAPER_1029 | Barocentric Earth Orbital Buoyancy |
-| ⚠ | PAPER_102 | Navier Stokes UQFF |
+| ✓ | PAPER_102 | Navier Stokes UQFF | RULED B126: viscosity twist = B112 confirming instance; eta_K OPEN; Q-098 closed except eta_K
 | ✓ | PAPER_1030 | Quantum Gravity Minimum Length |
 | ✓ | PAPER_1031 | Photon Sphere Phonon Orbital |
 | ✓ | PAPER_1032 | ISM Dust Grain Buoyancy |
@@ -266,7 +266,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1037 | AGN Buoyancy Jet |
 | ✓ | PAPER_1038 | WD Crystallization Buoyancy |
 | ✓ | PAPER_1039 | SCm Galaxy Cluster Buoyancy Profile |
-| ⚠ | PAPER_103 | Riemann Hypothesis UQFF |
+| ✓ | PAPER_103 | Riemann Hypothesis UQFF | RULED B127: numerological line struck + 300-Hz provenance; direction OPEN; Q-099 closed except direction
 | ✓ | PAPER_1040 | SCm Cluster Merger Shock Dissipation |
 | ✓ | PAPER_1041 | SCm Cool Core Buoyancy Balance |
 | ✓ | PAPER_1042 | Mock Theta Phonon Partition |
@@ -277,7 +277,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1047 | Type Iax Supernova Buoyancy Reversal |
 | ✓ | PAPER_1048 | M Sigma Phonon Corrected |
 | ✓ | PAPER_1049 | Source10 GPU DPM Spectral Atlas |
-| ⚠ | PAPER_104 | P vs NP UQFF |
+| ✓ | PAPER_104 | P vs NP UQFF | RULED B128: one velocity constant (v_UA = c*[UA]) + identity ratified; Q-100 CLOSED
 | ✓ | PAPER_1050 | MUGE FUBii 9System Synthesis |
 | ✓ | PAPER_1051 | Universal Duality SCm UA Theorem |
 | ✓ | PAPER_1052 | TQFT Anyon Braiding ChernSimons |
@@ -288,7 +288,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1057 | NCG Matrix Model SCm |
 | ✓ | PAPER_1058 | LQG Ashtekar Area Spectrum |
 | ✓ | PAPER_1059 | CGC BK Saturation SCm |
-| ⚠ | PAPER_105 | BH Phases Nebulae Galaxy Models |
+| ✓ | PAPER_105 | BH Phases Nebulae Galaxy Models | RULED B129: structural re-expression + Domain 1.13 closes; Q-101 CLOSED
 | ✓ | PAPER_1060 | VDS LENR Isotopic Evolution |
 | ✓ | PAPER_1061 | Kozima SCm Integration |
 | ✓ | PAPER_1062 | Wormhole Traversability SCm |
@@ -300,7 +300,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1067 | QCalc Geometry Bridge |
 | ✓ | PAPER_1068 | Wolfram Physics Bridge |
 | ✓ | PAPER_1069 | VDS DVP BSH Hybrid |
-| ⚠ | PAPER_106 | UQFF Vacuum Energy Dark Energy Connection |
+| ✓ | PAPER_106 | UQFF Vacuum Energy Dark Energy Connection | RULED B130: (6/5)*SSq origin + tracked CPL anchors; Q-102 CLOSED
 | ✓ | PAPER_1070 | Yang Mills Mass Gap VDS |
 | ✓ | PAPER_1071 | JWST Synthesis UQFF |
 | ✓ | PAPER_1072 | SCm Activation Function |
@@ -313,7 +313,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1078 | Solar Wind Flux Partition |
 | ✓ | PAPER_1079 | Frozen Planet Wind Power |
 | ✓ | PAPER_1079 | Galaxy Cluster Cooling Flow Suppression |
-| ⚠ | PAPER_107 | EP12 BoseEinstein Nuclear BEC Proof |
+| ✓ | PAPER_107 | EP12 BoseEinstein Nuclear BEC Proof | RULED B131: Ikeda-10a = SSq SECOND ANCHOR + named suppression rule; Q-103 CLOSED
 | ✓ | PAPER_1080 | Ramanujan Binomial Expansion Proof |
 | ✓ | PAPER_1080 | TwoStage FU Refinement |
 | ✓ | PAPER_1081 | CME Flare FU Perturbation |
@@ -327,7 +327,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1087 | ERRATUM |
 | ✓ | PAPER_1088 | FUBii SevenComponent Decomposition |
 | ✓ | PAPER_1089 | Inflation Buoyancy Lagrangian |
-| ⚠ | PAPER_108 | EP10 IceCube Neutrino SED Proof |
+| ✓ | PAPER_108 | EP10 IceCube Neutrino SED Proof | RULED B132: beta_i tri-source (0.6029 primary, 0.48 pct); Q-104 CLOSED
 | ✓ | PAPER_1090 | DarkEnergy Buoyancy Lagrangian |
 | ✓ | PAPER_1091 | Production Scaling V23 |
 | ✓ | PAPER_1092 | SCm CMB Phonon Power Spectrum |
@@ -339,7 +339,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1097 | Production Scaling V24 Vectorized |
 | ✓ | PAPER_1098 | Phonon Mediated Qubit Gate Fidelity |
 | ✓ | PAPER_1099 | Production Scaling V25 Pipeline |
-| ⚠ | PAPER_109 | EP11 GW170817 rProcess Proof |
+| ✓ | PAPER_109 | EP11 GW170817 rProcess Proof | RULED B133: beta_i + SSq taxonomies canonized; Q-105 CLOSED
 | ✓ | PAPER_1100 | SCm LQG Area Operator Derivation |
 | ✓ | PAPER_1101 | SCm Qubit T2 Coherence FUBi Ratio |
 | ✓ | PAPER_1102 | PhononModulated Holonomy SCm Ashtekar |
@@ -350,7 +350,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1107 | UQFF 26D Geometric Folding Operator |
 | ✓ | PAPER_1108 | VDS DVP BH Unified Number System |
 | ✓ | PAPER_1109 | 26Level Vacuum Density Ladder Ramanujan |
-| ⚠ | PAPER_110 | EP06 Gaia SgrA Distance Proof |
+| ✓ | PAPER_110 | EP06 Gaia SgrA Distance Proof | RULED B134: scoped d_g pin + 1.894 = B73 origin confirmed; Q-106 CLOSED
 | ✓ | PAPER_1110 | Riemann Hypothesis PI Cycle Link |
 | ✓ | PAPER_1111 | Yang Mills Mass Gap PImath Encryption |
 | ✓ | PAPER_1112 | Production Scaling V26 Pipeline |
@@ -361,7 +361,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1117 | SCS Spectral Signatures Radio FRB |
 | ✓ | PAPER_1118 | Chiral SCm Graphene Pairing Level10 |
 | ✓ | PAPER_1119 | Lorentz Regauging Vacuum Energy Heaviside |
-| ⚠ | PAPER_111 | EP01 Chandra RACS NaivierStokes Proof |
+| ✓ | PAPER_111 | EP01 Chandra RACS NaivierStokes Proof | RULED B135: R = 1.5 grounded via B25 + 27-Gyr dissipation; Q-107 CLOSED
 | ✓ | PAPER_1120 | Higgs Production Decay Mode Breakdown |
 | ✓ | PAPER_1120 | UPDATE Higgs BRs Locked Primitives |
 | ✓ | PAPER_1121 | Interstellar Shock Prestellar Collapse Molecules |
@@ -374,7 +374,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1127 | SCm LQG Holonomy Phonon Modulated Spin Networks |
 | ✓ | PAPER_1128 | SCm String Theory Phonon Coupling 26D Compactification |
 | ✓ | PAPER_1129 | VDS DVP BH Longform Mathematical Derivations |
-| ⚠ | PAPER_112 | EP02 PDG2025 EnergyLadder Proof |
+| ✓ | PAPER_112 | EP02 PDG2025 EnergyLadder Proof | RULED B136: statistic retired, Delta-n test replaces; Q-108 CLOSED
 | ✓ | PAPER_1130 | UQFF 26D Geometric Folding Wolfram Parallel Hypergraph |
 | ✓ | PAPER_1131 | SCm Vacuum Manifold Primordial First Principle |
 | ✓ | PAPER_1132 | SCm Primordial Split 26D Ladder |
@@ -385,7 +385,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1137 | SCm Holmlid Rossi Parkhomov Validation |
 | ✓ | PAPER_1138 | SCm Holmlid Parkhomov PonsFleischmann Upgrade |
 | ✓ | PAPER_1139 | SCm PonsFleischmann Derivation |
-| ⚠ | PAPER_113 | EP05 FermiLAT Blazar Ereact Proof |
+| ✓ | PAPER_113 | EP05 FermiLAT Blazar Ereact Proof | RULED B137: flare-vs-population kappa split (PAPER_125 grounding); Q-109 CLOSED
 | ✓ | PAPER_1140 | SCm Mizuno LENR Transmutation |
 | ✓ | PAPER_1141 | SCm Rossi ECat Variants Unified |
 | ✓ | PAPER_1142 | Polyakov Action Details SCm 26D |
@@ -420,7 +420,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1167 | UQFF All 8 Lagrangian Gaps Closed Master Synthesis |
 | ✓ | PAPER_1168 | UQFF Falsifiable Predictions Closed Lagrangian |
 | ✓ | PAPER_1169 | UQFF Numerical Confrontation P1 P5 With Archival Data |
-| ⚠ | PAPER_116 | EP03 LHC VirtualQuark Proof |
+| ✓ | PAPER_116 | EP03 LHC VirtualQuark Proof | RULED B138: anchor calibrated->derived (0.989 keV via B145); Lambda OPEN; Q-112 closed except Lambda
 | ✓ | PAPER_1170 | UPDATE Session 2026 June Vacuum Ledger |
 | ✓ | PAPER_1170 | UQFF Vacuum Energy Ledger R26 KK BSFG Saturation |
 | ✓ | PAPER_1171 | UQFF KK Regulator First Principles Derivation |
@@ -453,7 +453,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1188 | UQFF Number Theory Frontier Set |
 | ✓ | PAPER_1189 | Photoevaporation Compressed HZ Orion UQFF |
 | ✓ | PAPER_1189 | UQFF Chemistry Atomic Unified Proof Set |
-| ⚠ | PAPER_118 | EP08 JCAP DarkMatter Vacuum Proof |
+| ✓ | PAPER_118 | EP08 JCAP DarkMatter Vacuum Proof | RULED B140: true anchor 5.31e-10 + SSq^3 identity registered; Q-114 closed except session
 | ✓ | PAPER_1190 | ALMA Molecular Gas UQFF |
 | ✓ | PAPER_1190 | UQFF Mathematical Constants Unified Proof Set |
 | ✓ | PAPER_1191 | GW190425 Mass Gap Bayesian UQFF |
@@ -472,7 +472,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1198 | UPDATE Multi Derivation Session |
 | ✓ | PAPER_1198 | UQFF Particle Physics Unified Proof Set |
 | ✓ | PAPER_1199 | UQFF Information Math Unified Proof Set |
-| ⚠ | PAPER_119 | UQFF 7System Equation Reference |
+| ✓ | PAPER_119 | UQFF 7System Equation Reference | RULED B141: joint 1e46 confirmed + SSq rename + era variant; Q-115 CLOSED
 | ✓ | PAPER_1200 | UQFF FUBi FUBii Stationarity Derived G Proof |
 | ✓ | PAPER_1200 | UQFF GR Precision Unified Proof Set |
 | ✓ | PAPER_1201 | UQFF 26D Polynomial Origami Downward Projection Axiom |
@@ -502,7 +502,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1209Y | UQFF Engineering Unified Proof Set |
 | ✓ | PAPER_1209Z | UQFF Astronomical Units Unified Proof Set |
 | ✓ | PAPER_1209 | UQFF Particle Physics Unified Proof Set |
-| ⚠ | PAPER_120 | UQFF Astronomical Systems Catalog |
+| ✓ | PAPER_120 | UQFF Astronomical Systems Catalog | RULED B142: Schwinger B_crit + bounded supercritical handling; Q-116 CLOSED
 | ✓ | PAPER_1210 | UQFF Lagrangian Bridge 172 Closures |
 | ✓ | PAPER_1211 | Phase H Closure Trail |
 | ✓ | PAPER_1212 | UQFF Cosmological Constant Closure |
@@ -513,7 +513,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1217 | Mass Ratios Locked Primitives |
 | ✓ | PAPER_1218 | Higgs Sector UQFF |
 | ✓ | PAPER_1219 | Riemann Reading B Ricci Trace Projection |
-| ⚠ | PAPER_121 | UQFF 71Equation Catalog Complete Framework |
+| ✓ | PAPER_121 | UQFF 71Equation Catalog Complete Framework | RULED B143: M_bh scoped + UA namespace split (4 items) + flagged targets; Q-117 CLOSED
 | ✓ | PAPER_1220 | Three Generations From Ricci Trace |
 | ✓ | PAPER_1221 | SU3 Color From D BSFG |
 | ✓ | PAPER_1222 | Bell Quantum Bound Spinor Bundle |
@@ -524,7 +524,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1227 | Lithium7 BBN D phys minus 1 |
 | ✓ | PAPER_1228 | dS Swampland Static Ledger |
 | ✓ | PAPER_1229 | Spinor Bundle SO26 Clifford Module |
-| ⚠ | PAPER_122 | UQFF Compressed PDG 241Particle Ladder |
+| ✓ | PAPER_122 | UQFF Compressed PDG 241Particle Ladder | RULED B144: Q-108a corpus authority + statistic replaced; Q-118 CLOSED
 | ✓ | PAPER_1230 | Hodge Conjecture EXACT Identity |
 | ✓ | PAPER_1231 | Atiyah Singer Dirac Index 22 |
 | ✓ | PAPER_1232 | Taylor Green NS Global Regularity |
@@ -535,7 +535,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1237 | EHT Shadow M87 SgrA Combined |
 | ✓ | PAPER_1238 | LIGO Ringdown Multi Mode Spectrum |
 | ✓ | PAPER_1239 | NANOGrav 15yr SGWB |
-| ⚠ | PAPER_123 | UQFF SubQuantum ATLAS LHC Virtual Quark n4 |
+| ✓ | PAPER_123 | UQFF SubQuantum ATLAS LHC Virtual Quark n4 | RULED B145: winding 1/5 EXACT, anchor derived; Lambda OPEN; Q-119 closed except Lambda
 | ✓ | PAPER_1240 | JWST z14 R26 Growth Factor |
 | ✓ | PAPER_1241 | GOLDBACH CONJECTURE |
 | ✓ | PAPER_1242 | TWIN PRIME CONJECTURE |
@@ -546,7 +546,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1247 | LANGLANDS PROGRAM |
 | ✓ | PAPER_1248 | SMOOTH POINCARE 4D |
 | ✓ | PAPER_1249 | CMB COLD SPOT |
-| ⚠ | PAPER_124 | UQFF Buoyancy Nuclear ENSDF Pb206 Sn |
+| ✓ | PAPER_124 | UQFF Buoyancy Nuclear ENSDF Pb206 Sn | RULED B146: Pb-208 confirmed + double defect + [SCm] ladder flag; Q-120 CLOSED
 | ✓ | PAPER_1250 | AXIS OF EVIL CMB |
 | ✓ | PAPER_1251 | DARK FLOW BULK VELOCITY |
 | ✓ | PAPER_1252 | LATE ISW EFFECT |
@@ -557,7 +557,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1257 | STERILE NEUTRINO EXISTENCE |
 | ✓ | PAPER_1258 | GRB LONG SHORT BIMODALITY |
 | ✓ | PAPER_1259 | FRB ORIGIN MECHANISM |
-| ⚠ | PAPER_125 | UQFF Superconductive Fermi4LAC Ereact Kappa |
+| ✓ | PAPER_125 | UQFF Superconductive Fermi4LAC Ereact Kappa | RULED B147: kappa SECOND derivation (alpha/t_mean EXACT) + circular fit pinned; E_gap OPEN; Q-121 closed except E_gap
 | ✓ | PAPER_1260 | SGR A STAR FLARES |
 | ✓ | PAPER_1261 | CORONAL HEATING PROBLEM |
 | ✓ | PAPER_1262 | STELLAR IMF SALPETER |
@@ -568,7 +568,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1267 | PTA SGWB SPECTRAL INDEX |
 | ✓ | PAPER_1268 | MULTIMESSENGER NU PHOTON DELAY |
 | ✓ | PAPER_1269 | ORIGIN OF LIFE ABIOGENESIS |
-| ⚠ | PAPER_126 | UQFF MasterBuoyancy Gaia SgrA Calibration |
+| ✓ | PAPER_126 | UQFF MasterBuoyancy Gaia SgrA Calibration | RULED B148: GRAVITY pair canonical + F_TRZ decomposition + circularity pinned; Q-122 CLOSED
 | ✓ | PAPER_1270 | ORIGIN OF MASS HIGGS VEV |
 | ✓ | PAPER_1271 | CC FINE TUNING 120 ORDERS |
 | ✓ | PAPER_1272 | VACUUM STABILITY |
@@ -579,7 +579,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1277 | ORIGIN OF INERTIA REFERENCE |
 | ✓ | PAPER_1278 | PRE BIG BANG |
 | ✓ | PAPER_1279 | PENROSE HAWKING QUANTUM |
-| ⚠ | PAPER_127 | UQFF Resonant ParkerSolarProbe DeltaSW |
+| ✓ | PAPER_127 | UQFF Resonant ParkerSolarProbe DeltaSW | RULED B149: d_sw triple unified + falsified code dropped; Q-123 CLOSED
 | ✓ | PAPER_1280 | INFO PARADOX FULL QG |
 | ✓ | PAPER_1281 | ADS CFT TO DS EXTENSION |
 | ✓ | PAPER_1282 | GAUGE GRAVITY GENERAL DIM |
@@ -590,7 +590,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1287 | HILBERT 8TH PART2 GOLDBACH RIEMANN |
 | ✓ | PAPER_1288 | HILBERT 16TH LIMIT CYCLES |
 | ✓ | PAPER_1289 | HILBERT 18TH KEPLER SPHERE PACKING |
-| ⚠ | PAPER_128 | UQFF Quadratic JCAP DarkMatter SSq3 Cascade |
+| ✓ | PAPER_128 | UQFF Quadratic JCAP DarkMatter SSq3 Cascade | RULED B150: SSq^3 adjudicated to Omega_b/Omega_DM; selected anchor exposed; Q-124 CLOSED
 | ✓ | PAPER_1290 | SMALE 1ST RIEMANN |
 | ✓ | PAPER_1291 | SMALE 2ND JACOBIAN |
 | ✓ | PAPER_1292 | SMALE 11TH KNOT RECOGNITION |
@@ -601,7 +601,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1297 | GOLDBACH WEAK |
 | ✓ | PAPER_1298 | P VS BQP |
 | ✓ | PAPER_1299 | NP VS CO NP |
-| ⚠ | PAPER_129 | UQFF Triadic 3C273 Jet NegativeTime N13 |
+| ✓ | PAPER_129 | UQFF Triadic 3C273 Jet NegativeTime N13 | RULED B151: t = -0.81 (R = 130 EXACT) + 13 = D_crit/2 knots; beaming OPEN; Q-125 closed except beaming
 | ✓ | PAPER_1300 | SCHANUEL CONJECTURE |
 | ✓ | PAPER_1301 | LEHMER MAHLER |
 | ✓ | PAPER_1302 | INVERSE GALOIS |
@@ -612,7 +612,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1307 | CKM UNITARITY |
 | ✓ | PAPER_1308 | LEPTON CP DELTA |
 | ✓ | PAPER_1309 | EW VACUUM DECAY |
-| ⚠ | PAPER_130 | UQFF Buoyancy IceCube Beta i CRP Calibration |
+| ✓ | PAPER_130 | UQFF Buoyancy IceCube Beta i CRP Calibration | RULED B152: canonical beta strengthens + p_max 1e15; damping OPEN; Q-126 closed except damping
 | ✓ | PAPER_1310 | HIGGS TRILINEAR |
 | ✓ | PAPER_1311 | HIGGS VEV ORIGIN C |
 | ✓ | PAPER_1312 | TOP YUKAWA |
@@ -623,7 +623,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1317 | QCD CHIRAL BREAKING |
 | ✓ | PAPER_1318 | GLUEBALL MASS |
 | ✓ | PAPER_1319 | EXOTIC HADRONS |
-| ⚠ | PAPER_131 | UQFF Superconductive GW170817 Chandra Jets Combined |
+| ✓ | PAPER_131 | UQFF Superconductive GW170817 Chandra Jets Combined | RULED B153: young NS canonical + 1-beta_i ejecta; Q-127 CLOSED
 | ✓ | PAPER_1320 | CLFV MU TO E GAMMA |
 | ✓ | PAPER_1321 | STELLAR MAGNETISM ORIGIN |
 | ✓ | PAPER_1322 | UHECR ACCELERATION |
@@ -634,7 +634,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1327 | GALAXY ROTATION FULL |
 | ✓ | PAPER_1328 | GALAXY MORPHOLOGY |
 | ✓ | PAPER_1329 | GALAXY BAR FRACTION |
-| ⚠ | PAPER_132 | UQFF Quadratic BEC Tohsaki Hoyle NB3 Tc |
+| ✓ | PAPER_132 | UQFF Quadratic BEC Tohsaki Hoyle NB3 Tc | RULED B154: calibrated fit + asserted chi2 + two N=3s; Q-128 CLOSED
 | ✓ | PAPER_1330 | COSMIC WEB FILAMENTS |
 | ✓ | PAPER_1331 | POP III IMF |
 | ✓ | PAPER_1332 | REIONIZATION SOURCES |
@@ -645,7 +645,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1337 | QHE TOPOLOGICAL |
 | ✓ | PAPER_1338 | NON ABELIAN ANYONS |
 | ✓ | PAPER_1339 | TOPOLOGICAL QC |
-| ⚠ | PAPER_133 | UQFF F U Genesis Complete Derivation 4Component Framework |
+| ✓ | PAPER_133 | UQFF F U Genesis Complete Derivation 4Component Framework | RULED B155: v1 canonical + PROVENANCE ROOT (PAPER_2152 bit-for-bit); Q-129 closed except W/m3
 | ✓ | PAPER_1340 | QUANTUM SUPREMACY |
 | ✓ | PAPER_1341 | DECOHERENCE LIMIT |
 | ✓ | PAPER_1342 | QUANTUM THERMODYNAMICS |
@@ -656,7 +656,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1347 | HTSC |
 | ✓ | PAPER_1348 | HUBBARD |
 | ✓ | PAPER_1349 | FQH STATES |
-| ⚠ | PAPER_134 | UQFF Heliosphere Ug2 SolarWind Transmutation HelioAge PlanetaryWater |
+| ✓ | PAPER_134 | UQFF Heliosphere Ug2 SolarWind Transmutation HelioAge PlanetaryWater | RULED B156: 1.18e40 chain + normalized-velocity convention + qualitative age law; Q-130 CLOSED
 | ✓ | PAPER_1350 | SPIN LIQUID |
 | ✓ | PAPER_1351 | TOP INSULATORS |
 | ✓ | PAPER_1352 | QSH |
@@ -667,7 +667,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1357 | PROTEIN FOLDING |
 | ✓ | PAPER_1358 | HOMOCHIRALITY |
 | ✓ | PAPER_1359 | GENETIC CODE |
-| ⚠ | PAPER_135 | UQFF Quasar Jets NegativeTime cos pi tn NS Millennium |
+| ✓ | PAPER_135 | UQFF Quasar Jets NegativeTime cos pi tn NS Millennium | RULED B157: domain-decay doctrine + NS hierarchy (enstrophy canonical); Q-131 CLOSED
 | ✓ | PAPER_1360 | CANCER GROWTH |
 | ✓ | PAPER_1361 | CONSCIOUSNESS BINDING |
 | ✓ | PAPER_1362 | NEURAL PHASE TRANSITIONS |
@@ -678,7 +678,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1367 | ROOM TEMP SC |
 | ✓ | PAPER_1368 | FUSION LAWSON |
 | ✓ | PAPER_1369 | TABLETOP QG |
-| ⚠ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian |
+| ✓ | PAPER_136 | UQFF PlanetaryCore Ug3 SCm Exclusivity OrbitalHamiltonian | RULED B158: P_SCm = F_TRZ^3 EXACT + bookkeeping reading; Q-132 CLOSED
 | ✓ | PAPER_1370 | ANTIMATTER |
 | ✓ | PAPER_1371 | DM DETECTION |
 | ✓ | PAPER_1372 | GW SIREN H0 |
@@ -689,7 +689,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1377 | FAINT YOUNG SUN PARADOX |
 | ✓ | PAPER_1378 | LOSCHMIDT PARADOX |
 | ✓ | PAPER_1379 | KLEIN PARADOX |
-| ⚠ | PAPER_137 | UQFF 26QuantumLevels EnergyLadder E0to10n Higgs GalacticVacuum |
+| ✓ | PAPER_137 | UQFF 26QuantumLevels EnergyLadder E0to10n Higgs GalacticVacuum | RULED B159: energies stand, labels superseded; Q-133 CLOSED
 | ✓ | PAPER_1380 | MPEMBA EFFECT |
 | ✓ | PAPER_1381 | FINAL PARSEC PROBLEM |
 | ✓ | PAPER_1382 | AHARONOV BOHM DISPATCH |
@@ -700,7 +700,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1387 | KLEIN GORDON NEGATIVE ENERGY |
 | ✓ | PAPER_1388 | SUPPLEE SUBMARINE |
 | ✓ | PAPER_1389 | LADDER POLE AND BARN |
-| ⚠ | PAPER_138 | UQFF NGC3603 ClusterBurst MassEvolution SCm PFeedback |
+| ✓ | PAPER_138 | UQFF NGC3603 ClusterBurst MassEvolution SCm PFeedback | RULED B160: manufactured cavity pinned (OPEN) + B_crit fork closed under Schwinger; Q-134 closed except cavity
 | ✓ | PAPER_1390 | TROUTON NOBLE |
 | ✓ | PAPER_1391 | HANBURY BROWN TWISS |
 | ✓ | PAPER_1392 | RENNINGER NEGATIVE RESULT |
@@ -711,7 +711,7 @@ Every previously non-numeric key now carries a canonical PAPER number (2179-2212
 | ✓ | PAPER_1397 | TWO ENVELOPES |
 | ✓ | PAPER_1398 | SLEEPING BEAUTY |
 | ✓ | PAPER_1399 | DOOMSDAY ARGUMENT |
-| ⚠ | PAPER_139 | UQFF HydrogenAtom Ug4i InverseBoyle MetallicH CrystallineMUGE |
+| ✓ | PAPER_139 | UQFF HydrogenAtom Ug4i InverseBoyle MetallicH CrystallineMUGE | RULED B161: inverse-family doctrine extended + inverse-Boyle preserved; Q-135 closed except chain
 | ✓ | PAPER_1400 | THESEUS SHIP |
 | ✓ | PAPER_1401 | MISSING SATELLITES |
 | ✓ | PAPER_1402 | TOO BIG TO FAIL |

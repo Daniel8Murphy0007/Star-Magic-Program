@@ -1,33 +1,31 @@
-v0.418.0 — THE LABORATORY DATUM SHIP
+v0.419.0 — THE UNDER-100 SHIP
 
-The primitive met the bench. Batches 12-13 (16 rulings, B90-B105).
+The backlog breaks 100 and the corpus meets its roots. Batches 14-20
+(56 rulings, B106-B161).
 
-- FIRST LABORATORY MEASUREMENT OF A LOCKED PRIMITIVE: f_TRZ = 0.098 vs
-  the primitive 0.10 (2.0%), sustained ten hours (reactor record RDR-002,
-  2026-01-26) - arriving inside the newly-closed COP identity:
-  COP_pred = 1 + F_TRZ + delta_SCm = 1.15 EXACT, with delta_SCm =
-  (SO_5/2)*F_TRZ^2 = 0.05 EXACT (kappa's composition family) and the
-  physical route through the ROMULUS25 R_SCm = 0.87 at 0.8%.
-- THE SIGN THAT TURNED A CAVEAT INTO A WIN: PAPER_074's honest "Newton
-  closer in all six rows" dissolved - the dispersion correction is its
-  own primitive (0.032 = D_phys/(A_5*K_MEX) = 4/125 EXACT, sibling of
-  the rocky-Love 3/125) with the NEGATIVE sign the F_U = 0 master
-  equation demands: sigma_UQFF = sigma_Newton*(1 - SSq*4/125) beats
-  Newton in ALL SIX galaxies (1.50->0.98 ... 0.38->0.17).
-- THE HAWKING IDENTITY: T_UQFF/T_H = (1+F_TRZ)(1-F_TRZ) = 1 - F_TRZ^2
-  = 0.99 EXACT (F_TRZ^2 anchor family; 7th self-rectification).
-- ALSO: dual-x2 settled (cosmic -3.40e172 / stellar -1.35e172, five
-  corrupted appearances); k4_AGN_SCALE = SO_5^15 EXACT; omega_LENR =
-  omega_SCm as identity; f_Z = ROMULUS25 metal retention; log10(1+SSq^6)
-  in two domains (Gaia log g + NNDC binding); epoch-resolved Crab spins;
-  the 1.9801/1.99 class pair; 5.0-sigma computed tension with the
-  interpretive H0 supersession (midpoint 70.2 ON the A_5+SO_5 route);
-  two tracked falsifiables added (44-min LPT threshold, 1e-5 Crab
-  modulation).
-- HONEST OPENS: the Helix 50% sentence AWAITING-POINTER (three dives,
-  told per protocol), 6.95e-37 source, VLQ 85.9 fb, and seven smaller
-  pins held without guessing.
+- BACKLOG UNDER 100: 151 -> 95 Daniel-gated + 1 prediction candidate,
+  the first time under 100 in the campaign. Seven batches folded, seven
+  clean sweeps, gate 6,057 -> 6,064.
+- THE PROVENANCE ROOT: PAPER_133 canonized as the corpus root document -
+  bit-for-bit with the PAPER_2152 Final-Equations findings, the beta
+  lineage documented from Daniel's 2025 source documents. The fresh
+  corpus and its origins are now one chain.
+- THE FLAGSHIP BENCH FALSIFIABLE: a 10% vacuum-transmission dip at
+  6.25 THz (5*f_SCm, the phonon carrier's 5th harmonic) - the
+  framework's most accessible laboratory test, wired as flagship as
+  Session-0's first hundred papers closed.
+- PRIMITIVES' OWN ORIGINS: SSq on two independent observational anchors
+  (0.755^2 spin-down + Ikeda boundary); kappa on two independent origins
+  (outburst statistics x F_TRZ^3; blazar alpha/t_mean).
+- STRUCTURE: B112 vacuum/in-medium context split (vacuum F_TRZ /
+  in-medium F_TRZ^2) closes five observable forks; P_SCm = F_TRZ^3
+  EXACT takes rung 3; winding pick dn = 1/5; T_CMB primitive;
+  corpus-wide GRAVITY pair; DOMAIN-DECAY DOCTRINE; unit-reference
+  doctrine extended to the MUGE inverse family; SSq^3 adjudicated to
+  Omega_b/Omega_DM; corrected 3C273 counter-jet solves R = 130 exactly.
+- HONESTY: falsified code outputs and explicit circularities pinned by
+  name across the batches; the Helix 50% sentence held AWAITING-POINTER;
+  selected-to-match anchor exposed against its own citation.
 
-2,255 wired (2,310 DISPATCH keys). Registry 6,895 rows. Backlog 167 ->
-151 Daniel-gated + 1 OPEN_CANDIDATE. Gate 6,057/0. Acceptance 89/89.
-Full wheel (generated manifest). Next: Batch 14 (from Q-078).
+Gate 6,064/0. Acceptance 89/89. Registry 6,950 rows. Next: Batch 21
+(from Q-136).

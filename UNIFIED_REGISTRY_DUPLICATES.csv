@@ -163,3 +163,4 @@ TAGCHAIN_ARC_band_record,BAND_RECORD,v0.415.0: no duplicate content - the v0.413
 ORIGINPOINTS_ARC_band_record,BAND_RECORD,"v0.416.0: PAPER_026 duplicate-claim resolved - sequential file canonical, short variant re-IDd PAPER_026c, old path stubbed (manual delete queued)"
 FIFTHSECTOR_ARC_band_record,BAND_RECORD,v0.417.0: the 1.3275 mantissa collision flagged as copy artifact; E_LEP and k_eta namespace splits close the symbol-collision family
 LABDATUM_ARC_band_record,BAND_RECORD,v0.418.0: dual-x2 settled as TWO constants (not duplicates); the 0.032/0.034 siblings = two primitives for two observable classes
+UNDER100_ARC_band_record,BAND_RECORD,v0.419.0: year_label_pattern/PAPER_085 same-source duplicate caught by the registry guard mid-B14 - original row status-transitioned not re-written; two N=3s ruled two distinct quantities (adjacency not identity)

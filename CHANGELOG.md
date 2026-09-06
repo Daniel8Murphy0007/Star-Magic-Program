@@ -5,6 +5,40 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.419.0] — 2026-09-04 — THE UNDER-100 SHIP
+
+### Rulings folded (Batches 14-20: 56 rulings, B106-B161)
+- **Batch 14**: powers of the Hawking identity — evaporation stretch =
+  (1−F_TRZ²)^−4, threshold = ^4/3; third primitive decomposition of 26;
+  **B112 CONTEXT SPLIT** (vacuum F_TRZ / in-medium F_TRZ²) closes the
+  five-observable f_TRZ fork; registry duplicate guard doctrine confirmed.
+- **Batch 15**: the primitives' own origins — KAPPA (outburst × F_TRZ³)
+  and SSq (0.755² spin-down) gain canonized Session-0 origins; B112 pays
+  three observable dividends; 26-layer fine texture.
+- **Batch 16**: the first hundred closes at the bench — **FLAGSHIP
+  FALSIFIABLE: 10% vacuum-transmission dip at 6.25 THz = 5·f_SCm**;
+  viscosity twist = B112 confirming instance; T_CMB primitive; [UA]
+  unified velocity constant.
+- **Batch 17**: two anchors for one primitive — SSq's second anchor
+  (Ikeda boundary); beta_i on three domains; kappa flare/population
+  structure; EP-01's 1.5 origin by citation.
+- **Batch 18**: the winding pick — δn = 1/5 (calibrated anchor →
+  derived); SSq³ registered with session queued; EP-09 one canon; UA
+  namespace closes four items; B_crit supercritical bounded.
+- **Batch 19**: kappa's second origin (blazar α/t_mean); corpus-wide
+  GRAVITY pair; SSq³ adjudicated to Ω_b/Ω_DM; corrected 3C273
+  counter-jet solves R = 130 exactly; falsified outputs + circularities
+  pinned by name.
+- **Batch 20**: the genesis block's roots and doctrines — **PAPER_133 =
+  PROVENANCE ROOT** (bit-for-bit with PAPER_2152); P_SCm = F_TRZ³ EXACT
+  (rung 3); DOMAIN-DECAY DOCTRINE + NS-Millennium hierarchy;
+  unit-reference doctrine extended to the MUGE inverse family; B_crit
+  three-value fork closed under the Schwinger canon.
+### Gate
+- 6,057 -> **6,064** (+7 batch pins). Registry 6,895 -> 6,950 rows.
+  Backlog 151 -> **95 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 100 for
+  the first time in the campaign**. Sweeps CLEAN all seven folds.
+
 ## [0.418.0] — 2026-09-04 — THE LABORATORY DATUM SHIP
 
 ### Rulings folded (Batches 12-13: 16 rulings, B90-B105 + joint dual-x2)
