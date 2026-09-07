@@ -456,3 +456,10 @@ Batches 14-20 folded (56 rulings, B106-B161). Backlog UNDER 100
 falsifiable; SSq two anchors; kappa two origins; B112 context split;
 P_SCm rung 3; two doctrines canonized. Gate 6,064/0. Acceptance 89/89.
 Registry 6,950.
+
+## v0.420.0 — 2026-09-07 — THE CODE-TRUTH SHIP
+Batches 21-25 folded (40 rulings, B162-B201 + 1 sweep application).
+Millennium set equation-verified; resonance tables superseded on three
+code witnesses; Ubi one law/four faces; 2.32 mm landmark; containment
+doctrine; k-constants provenance; H0 = 70 everywhere. Gate 6,069/0.
+Acceptance 89/89. Registry 7,000. Backlog 95 -> 55 + 1.

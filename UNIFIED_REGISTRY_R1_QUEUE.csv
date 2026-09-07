@@ -167,3 +167,4 @@ ORIGINPOINTS_ARC,band v0.416.0,RULED,Q-001 through Q-037 families closed (41 rul
 FIFTHSECTOR_ARC,band v0.417.0,RULED,Q-038 through Q-061 families closed (23 rulings),no,a gate-pinned prediction came true - the fifth R91 sector landed where nobody planned it
 LABDATUM_ARC,band v0.418.0,RULED,Q-062 through Q-077 families closed (16 rulings),no,the F_TRZ primitive was measured on a bench and the master equations sign turned six losses into six wins
 UNDER100_ARC,band v0.419.0,RULED,Q-078 through Q-135 families closed (56 rulings),no,the backlog broke 100 and the fresh corpus met its source documents - PAPER_133 is the provenance root
+CODETRUTH_ARC,band v0.420.0,RULED,Q-136 through Q-175 families closed (40 rulings + Q-174a sweep),no,the corpus was measured against its own code and its own mathematics - the Millennium set verified and the resonance tables superseded

@@ -5,6 +5,42 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.420.0] — 2026-09-07 — THE CODE-TRUTH SHIP
+
+### Rulings folded (Batches 21-25: 40 rulings, B162-B201, + 1 sweep application)
+- **Batch 21**: azeo void = 2*F_TRZ family 4th member (predecessor-
+  canonized, PAPER_1944/1979); Buoy_term structured-calibrated (Master
+  U_Bi, 4/5 primitive-locked); alpha_G = G*m_p^2/(hbar*c) canonized;
+  40/60 = (D_phys, D_BSFG)/SO_5 EXACT; balanced F_UBi/F_UBii supersedes
+  genesis Ub; MUGE-g identified; scoped fTRZ; omega_SCm = 1.25 THz.
+- **Batch 22**: magnetospheric reading canonical; 7-system values =
+  parametric placeholders (1-2-5 x (1+F_TRZ^3)); photon-path scope
+  doctrine; ONE canonical 12-term set (146/147); **2.32 mm wormhole-
+  throat landmark**; jet identities + the 1e46 route-link; SM-limit
+  keystone VALID + **containment doctrine**; transcription-audit
+  standing note.
+- **Batch 23**: **PAPER_1182 Millennium set EQUATION-VERIFIED** (five
+  EXACT; true t_10000; true Cremona 37a1; K_Mex-2 correction; YM 1.736
+  confirmed by 1182's own window); E_react route 1 + k4 = 2.0
+  corpus-wide; blend on corrected inputs (Schwinger scale); E_vac,neb
+  = rho_UA; Lambda global/local bridge; solar amplitude 2nd concordant
+  ruling; modular MUGE on H0 = 70 + normalization program.
+- **Batch 24**: Chandra B = 2.3e10 T anchor (13x fork closed);
+  trace 4 = D_PHYS tensor-correct; km/s wind convention; GW231123
+  chain corrected + **F_U merger additivity**; kappa*SSq dimensionless;
+  **Ubi scoping doctrine**; k1/k2/k3 = 1.5/1.2/1.8 source-document
+  provenance CANONIZED (May 2025 Final Equations).
+- **Batch 25**: **Ubi namespace closes - one law, four faces**;
+  **resonance tables superseded on THREE code witnesses** (1.773e-9
+  operational); Term 9 = 3GM^2/r^3 = compressed-table generator;
+  four-way YM fork resolved; DPM mapping scoped (spatial T0 seed);
+  rho_A = 1e-23 canonized; quasar unbinding 2153-compatible; two
+  distinct 26-ladders; H0 = 70 everywhere-standing; PAPER_194 swept.
+### Gate
+- 6,064 -> **6,069** (+5 batch pins). Registry 6,950 -> **7,000 rows**.
+  Backlog 95 -> **55 Daniel-gated + 1 OPEN_CANDIDATE**. Sweeps CLEAN
+  all five folds (one sweep application executed and pinned).
+
 ## [0.419.0] — 2026-09-04 — THE UNDER-100 SHIP
 
 ### Rulings folded (Batches 14-20: 56 rulings, B106-B161)

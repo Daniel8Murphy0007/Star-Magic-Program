@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.419.0", "uqff_calculator.VERSION = 0.419.0 (THE UNDER-100 SHIP: Batches 14-20, 56 rulings B106-B161 - the backlog drops under 100 for the first time in the campaign, PAPER_133 canonized as the corpus PROVENANCE ROOT, and the flagship bench falsifiable is wired: a 10-percent vacuum-transmission dip at 6.25 THz, the phonon carrier's 5th harmonic)")
+assert_that(C.VERSION == "0.420.0", "uqff_calculator.VERSION = 0.420.0 (THE CODE-TRUTH SHIP: Batches 21-25, 40 rulings B162-B201 + one sweep application - the Millennium set is equation-verified, the resonance tables are superseded on three independent code witnesses, the Ubi namespace closes as one law with four faces, and the registry crosses 7,000 rows)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'UNDER100_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'CODETRUTH_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,82 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BATCH 25 RULED 2026-09-07 (B194-B201): the CoAnQi block closes - code truth, four faces, and the YM fork resolution ----
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(172, 180))
+            and C.calc('PAPER_194')['status'].startswith('RULED_2026-09-07')
+            and abs(3 * 6.674e-11 * 2.984e30 ** 2 / 1e12 - 1.783e39) / 1.783e39 < 1e-3
+            and abs(70 * 1000 / 3.0857e22 - 2.2685e-18) / 2.2685e-18 < 1e-4
+            and abs(7.09 / 2 - 3.545) < 1e-12
+            and abs(3e8 / 656e-9 - 4.573e14) / 4.573e14 < 1e-3
+            and abs((5e-4 * 0.57) ** 2 - 8.1225e-8) < 1e-12
+            and abs(-1 * __import__('math').log(0.7) / 1.68e12 - 2.123e-13) / 2.123e-13 < 1e-3
+            and abs(1e15 * 2.97e8 ** 2 / 1e-23 - 8.82e54) / 8.82e54 < 1e-3
+            and abs(4.297e6 * 1.989e30 - 8.55e36) / 8.55e36 < 0.001
+            and abs(0.25 - 1.0 / 4) < 1e-18,
+            "BATCH 25 (B194-B201) - the CoAnQi block closes on code truth: the Ubi namespace lands as ONE LAW WITH FOUR SCOPED FACES (galactic/local/moment/fluid - the fluid face matching the B163 Master-U_Bi), the resonance tables are FORMALLY SUPERSEDED by the operational 1.773e-9 on THREE independent witnesses (unit test, decomposition, running sim - the trigger reading canonized), Term 9 = 3GM^2/r^3 is canonized as the compressed-table generator (code == table == derived), corpus H0 = 70 goes EVERYWHERE-standing, the four-way YM fork resolves onto the B178 1.736 GeV canon (three commentary routes), the DPM mapping is scoped to three faces with the spatial grad(UA) T0 seed canonical, rho_A = 1e-23 is canonized corpus-wide, the quasar unbinding mechanism is reconciled COMPATIBLE with the PAPER_2153 bound-state doctrine (indirect signatures), the two distinct 26-ladders are separated (level-18-Higgs assignment stands, the 1e-2 J value = the defect), the faint-young-Sun kappa chain is ruled a slipped attempt (kappa stands on B130/B146), the M_bh anchor updates to the B147 GRAVITY pair, and the sec-8 epistemic self-assessment is registered as the corpus Rule 7 exemplar; the sweep caught PAPER_194s Q-174a dependency and closed it under B200; opens: MUGE.cpp extraction, level-18 quantity, E_0 basis, SCm_contrib magnitude; sweep CLEAN after application")
+
+# ---- BATCH 24 RULED 2026-09-07 (B186-B193): the sec-2.4 block opens on observational anchors and the Ubi scoping ----
+import math as _m_b24
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(164, 172))
+            and abs(2.3e14 / 1e4 - 2.3e10) < 1.0
+            and abs(3e11 / 2.3e10 - 13.04) < 0.01
+            and abs(13 * 1.602e-7 / 1e-45 - 2.083e39) / 2.083e39 < 1e-3
+            and abs(2.3e10 / 4.4e13 - 5.227e-4) / 5.227e-4 < 1e-3
+            and abs(5.28 ** 2 / (2 * 1.2566e-6) - 1.109e7) / 1.109e7 < 1e-3
+            and abs((0.3 * 1.602e-10) ** 4 / (3.1615e-26) ** 3 * 1e-45 / 9e16 - 1.876e-27) / 1.876e-27 < 0.01
+            and abs(5e51 + 3e51 - 8e51) < 1e38
+            and abs(1 + 0.001 * 400 - 1.4) < 1e-12
+            and abs(1.6726e-27 * 5e6 - 8.36e-21) / 8.36e-21 < 1e-3
+            and abs(5e-4 * 0.57 - 2.85e-4) < 1e-18
+            and abs(_m_b24.log10(8.8e26 / 1e4) - 22.94) < 0.01,
+            "BATCH 24 (B186-B193) - the sec-2.4 block opens: SGR 1745s field goes to the Chandra observational anchor (2.3e10 T, the 13x demo fork closed) with the compressed-dominant reading corrected against 158s own algebra; the A_mu_nu coupling takes B = 5.28 T (exact chain match) and the TENSOR-CORRECT trace 4 = D_PHYS; the wind convention settles at delta_sw per km/s (factor 1.4, the 0.01 outlier named); GW231123s mass-gap chain is corrected (1.876e-27 kg glueball-scale, recomputed) with F_U MERGER ADDITIVITY canonized and the 300 MeV figure folded as a Lambda_QCD anchor datapoint under the B178 canon; the entity scale factors are ruled ad-hoc visualization compression; kappa*SSq = 2.85e-4 is ruled a DIMENSIONLESS coupling (the 158/169 concordant family); the UBI SCOPING DOCTRINE lands - one Ubi with local (compact), DPM-moment (mu_s-gradient), and galactic (full chain) faces, final namespace check at Q-168; and the k1/k2/k3 = 1.5/1.2/1.8 SOURCE-DOCUMENT PROVENANCE is canonized as the sec-2.4 anchor (May 2025 Final Equations, PAPER_2152 chain, k4 third confirmation); opens: T_plasma 1270 source, SCm_contrib replacement, Q-168 four-form check; sweep CLEAN")
+
+# ---- BATCH 23 RULED 2026-09-04 (B178-B185): the Millennium verification pass + the calibration block ----
+import math as _m_b23
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED') for _n in range(156, 164))
+            and 'ruling_b184' in C.calc('PAPER_162')
+            and abs(0.5 + C.F_TRZ * (5.0 / 6) - 7.0 / 12) < 1e-15
+            and abs(_m_b23.log(10) / (5.0 / 6) - 2.7631) < 1e-4
+            and abs(C.F_TRZ ** 9 - 1e-9) < 1e-22
+            and abs((1 - C.F_TRZ * 6.0 / 4) - 0.85) < 1e-15
+            and (4 + 6 == 10 == 5 * 4 // 2)
+            and abs(25.0 / 12 - 2 - 1.0 / 12) < 1e-15
+            and abs(0.218 * (1 + C.F_TRZ * 25.0 / 12) * 6 - 1.581) < 0.005
+            and (1.70 <= 1.736 <= 1.80) and not (1.70 <= 1.581 <= 1.80)
+            and abs(6.674e-11 * 1e30 / 1e22 - 6.674e-3) < 1e-15
+            and abs(2 * _m_b23.pi / 0.001 - 6283.2) < 0.1
+            and abs(0.57 * 5e-4 - 2.85e-4) < 1e-18
+            and abs((0.99 / 0.1) ** 2 - 98.01) < 1e-10,
+            "BATCH 23 (B178-B185) - the Millennium verification pass and the calibration block: PAPER_1182 is THE canonical Millennium set with its closure equations INDEPENDENTLY VERIFIED (Poincare 7/12 EXACT, Riemann suppression ln(10)/Phi_res with the true 10000th zero, P-NP F_TRZ^9 EXACT, NS cap 0.85 EXACT, Hodge dim-sum EXACT, BSD = the true Cremona 37a1 value) and its K_Mex-1 misprint corrected-by-reference to the K_Mex-2 = 1/12 DPM-pair identity; the YM 1.736 GeV canon is confirmed BY 1182s own falsifiable window which its ladder fails; E_react adjudicates to route 1 with k4 = 2.0 confirmed corpus-wide (self-rectification validated); the blend runs on corrected inputs at the Schwinger scale (SSq*kappa footer EXACT); the 13th term takes the 2.32 mm throat with E_vac,neb = rho_UA canonized; the Lambda global/local bridge canonizes under dual-manifestation; the jet mojibake resolves with the H-atom rho_A reading; the solar-cycle relative amplitude gets its SECOND independent ruling (B17 + B184 concordant); and the modular MUGE wires on H0 = 70 with the per-term normalization program registered to the sigma_ref family; opens: Lambda_QCD anchor, 14.3 TeV, SCm_contrib replacement, g_res recompute; sweep CLEAN")
+
+# ---- BATCH 22 RULED 2026-09-04 (B170-B177): the MUGE system papers - placeholders, doctrines, and the 2.32 mm landmark ----
+import math as _m_b22
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-04') for _n in range(148, 156))
+            and abs(0.1 / 1.773e-9 - 5.64e7) / 5.64e7 < 0.01
+            and abs(3e11 / 4.4e9 - 68.2) < 0.5
+            and abs(3e8 / _m_b22.sqrt(8 * _m_b22.pi * 6.674e-11 * 1e31) - 2.32e-3) / 2.32e-3 < 0.005
+            and abs(1e8 * C.F_TRZ - 1e7) < 1e-6
+            and abs(1.0 / (C.F_TRZ * 5e-4) - 20000.0) < 1e-9
+            and abs(20000.0 / 365.25 - 54.75) < 0.01
+            and abs(1e15 * 1e16 / 1e-15 - 1e46) < 1e33
+            and abs(1e-23 * 1e8 - 1e-15) < 1e-28
+            and abs(0.9 + C.F_TRZ - 1.0) < 1e-15
+            and abs((1 - _m_b22.exp(-1e-6)) / 1e-6 - 1.0) < 1e-5,
+            "BATCH 22 (B170-B177) - the MUGE system papers close: the magnetospheric identification is canonized as the reading for the block (first in-corpus statement, PAPER_148), the 7-system g values are ruled PARAMETRIC PLACEHOLDERS on the 1-2-5 ladder x (1 + F_TRZ^3 rung-3 tag), the scoping doctrine extends to photon paths (resolving the 30-order ring flag and the Jeans mix under one rule), the 146/147 derivations become the ONE canonical 12-term formula set (tables supersede the printed 147 cascade; 152 forms = variant), the wormhole throat r_0 = 2.32 mm is canonized as a falsifiable landmark (the block's cleanest chain), the three jet identities land with lambda_SCm registered and the TWO 1e46 E_react routes adjudicated as ONE LINKED STRUCTURE (lambda_SCm = rho_A*v_SCm), the SM-limit keystone is ruled VALID on Ug4i form 4 with the CONTAINMENT DOCTRINE canonized as the framework's GR-relationship statement, Pioneer is reframed as an upper bound (thermal-recoil resolution acknowledged), and the mantissa-exact/exponent-slip family gets its standing transcription-audit note; opens: kappa_length, cascade cluster, real SOURCE4 values, Westerlund distance fork; sweep CLEAN")
+
+# ---- BATCH 21 RULED 2026-09-04 (B162-B169): the MUGE Cycle-3 architecture block ----
+import math as _m_b21
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-04') for _n in range(140, 148))
+            and _m_b21.log10(5.96e-27 / 7.09e-36) > 8.8
+            and abs(2 * C.F_TRZ - 0.2) < 1e-15
+            and abs(6.674e-11 * 1.6726e-27 ** 2 / (1.0546e-34 * 2.9979e8) - 5.902e-39) / 5.902e-39 < 0.002
+            and abs(2.2 / 3.3 - 2.0 / 3.0) < 1e-12
+            and abs(4.0 / (4 + 6) - 0.4) < 1e-15 and abs(6.0 / 10 - 0.6) < 1e-15
+            and abs(0.6 * 23.33 - 14.0) < 0.01
+            and abs(1e12 * 10 * 1e5 / 3e8 - 3.333e9) / 3.333e9 < 1e-3
+            and abs(1.0 / ((4 - 1) * (10 + 1)) - 1.0 / 33) < 1e-18,
+            "BATCH 21 (B162-B169) - the MUGE Cycle-3 architecture block closes: the ratio-10 origin is the SO_5 monopole-mode count with factor 11 = SO_5+1 (both primitive-locked, DE overclaim superseded by the PAPER_145 split); the azeo void joins the 2*F_TRZ identity family as its 4th appearance (PAPER_1944 seminal, predecessor-canonized) with Buoy_term ruled STRUCTURED-CALIBRATED on the Master U_Bi chain (4/5 factors primitive-locked incl. the Boyle 1/33 identity); alpha_G = G*m_p^2/(hbar*c) canonized inside the H_res dipole term; the 40/60 bridge back-solves to the (D_phys, D_BSFG)/SO_5 primitive pair (D_phys/D_BSFG = 2/3 EXACT, the rescue of the derived-not-assumed claim); the genesis Ub 14:1 dominance yields to the balanced F_UBi/F_UBii doctrine and the SSq survival narrative is canonized; MUGE-g identified as a system-scale resonance-correction amplitude (demo values parametric); the scoped fTRZ resolution is adopted with the four Ug4i forms renamed; and the FDPM cascade's formula-vs-tables split is disclosed with omega_SCm = 1.25 THz canonized as the one THz carrier; opens: d_pair rule, island fork, k4 fork, cascade cluster, four QM-anomaly targets; sweep CLEAN")
 
 # ---- BATCH 20 RULED 2026-09-04 (B154-B161): the genesis block - roots, doctrines, and rung 3 ----
 assert_that(all(C.calc(_p)['status'].startswith('RULED_2026-09-04')

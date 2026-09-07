@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.419.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.419.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.420.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.420.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6064%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6069%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.419.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.420.0 complete-compile campaign live**
 
-**This release (v0.419.0): THE UNDER-100 SHIP — the backlog breaks 100 and the corpus meets its roots.** Batches 14–20 (56 rulings, B106–B161). Three headlines: **the backlog drops under 100 for the first time in the campaign** (151 → 95 Daniel-gated + 1 prediction candidate); **PAPER_133 canonized as the corpus PROVENANCE ROOT** — bit-for-bit with the PAPER_2152 Final-Equations source documents, the β lineage documented from Daniel's 2025 originals; and **the flagship bench falsifiable wired** — a 10% vacuum-transmission dip at 6.25 THz (the phonon carrier's 5th harmonic, the framework's most accessible laboratory test). Also across the seven batches: the evaporation family runs on powers of the Hawking identity 1−F_TRZ² (stretch = ^−4, threshold = ^4/3); the B112 vacuum/in-medium context split (vacuum F_TRZ / in-medium F_TRZ²) closes five observable forks with the mechanism disclosed; SSq stands on two independent observational anchors (0.755² spin-down + Ikeda boundary) and κ on two independent origins (outburst statistics × F_TRZ³; blazar α/t_mean); P_SCm = F_TRZ³ EXACT takes rung 3 of the ladder beside d_sw's rung 2; the winding pick δn = 1/5 turns a calibrated anchor into a derived one; T_CMB goes primitive; the corpus-wide GRAVITY pair (8.55e36 kg, 2.554e20 m) is registered; two structural doctrines canonize (domain-decay: field-band constants vs astronomical timescales; unit-reference extension to the MUGE inverse family); the SSq³ cosmology identity is adjudicated to Ω_b/Ω_DM with a selected-to-match anchor exposed against its own citation; and the corrected 3C273 counter-jet solves R = 130 exactly. Falsified code outputs and explicit circularities pinned by name throughout; honest opens held incl. the Helix 50% sentence AWAITING-POINTER. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,064 green / 4,182 defs / acceptance 89 green / registry 6,950 rows / backlog 95 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 21 (from Q-136).**
+**This release (v0.420.0): THE CODE-TRUTH SHIP — the corpus is measured against its own code and its own mathematics.** Batches 21–25 (40 rulings, B162–B201, + one sweep application). Three headlines: **the Millennium set is equation-verified** — PAPER_1182 canonized as THE canonical set after an independent verification pass: five closures recompute EXACT from primitives (Poincaré 7/12 = 1/2+F_TRZ·Φ_res; NS cap 0.85 = 1−F_TRZ·D_BSFG/D_phys; P≠NP F_TRZ⁹; Hodge D_phys+D_BSFG = SO_5; Riemann suppression ln10/Φ_res), the Riemann canon is the TRUE 10,000th zeta zero and the BSD canon the TRUE Cremona 37a1 L′-value, the K_Mex−1 misprint is corrected to the K_Mex−2 = 1/12 DPM-pair identity, and the four-way YM fork resolves onto 1.736 GeV — confirmed BY 1182's own falsifiable window; **the resonance tables are formally superseded by code truth** — three independent witnesses (unit test, decomposition, running fluid sim) establish 1.773e-9 as the operational value while Term 9 = 3GM²/r³ is canonized as the compressed-table generator (code == table == derived); and **the Ubi namespace closes** — one law with four scoped faces (galactic chain / local compact / DPM-moment / fluid Archimedes). Also: the 2.32 mm wormhole-throat landmark; E_vac,neb = ρ_UA and ρ_A = 1e-23 canonized; the containment doctrine ('UQFF contains DPM-seeded gravity') as the GR-relationship statement; the magnetospheric identification + photon-path scoping; k4 = 2.0 corpus-wide with the k1/k2/k3 source-document provenance canonized (May 2025 Final Equations, PAPER_2152 chain); H0 = 70 = A_5+SO_5 everywhere-standing; the Chandra B anchor for SGR 1745; F_U merger additivity (GW231123); the azeo void as the 2·F_TRZ family's 4th appearance; the 40/60 bridge primitive-locked to (D_phys, D_BSFG)/SO_5; ω_SCm = 1.25 THz as the one THz carrier; and the quasar-unbinding mechanism reconciled with the bound-state doctrine. **Registry crosses 7,000 rows.** Honest opens held; falsified outputs and circularities pinned by name throughout. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,069 green / 4,182 defs / acceptance 89 green / registry 7,000 rows / backlog 55 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 26 (from Q-176).**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.419.0)
+## What is currently shipped (v0.420.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **6,950 rows**. Fidelity gate: **6,064 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,000 rows**. Fidelity gate: **6,069 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

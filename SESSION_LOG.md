@@ -12936,3 +12936,83 @@ satellites; arc marker rotated LABDATUM_ARC -> UNDER100_ARC; manifest
 regenerated; gate green 6,064/0. Headlines: backlog UNDER 100 (95+1),
 PAPER_133 provenance root, flagship 6.25 THz falsifiable. Daniel ships
 via .\ship.ps1; tag-chain verification next session per standing rule.
+
+## 2026-09-04 (20) — BATCH 21 FOLDED (B162-B169): the MUGE Cycle-3 architecture block
+
+Eight rulings, one deep dive. v0.419.0 tag verified pre-fold (tag ==
+HEAD). The dive found the azeo void already predecessor-canonized as
+2·F_TRZ EXACT (PAPER_1944/1979 n·F_TRZ family — 4th appearance) and the
+Buoy_term's Master U_Bi chain with 4/5 factors primitive-locked. The
+40/60 bridge went primitive ((D_phys, D_BSFG)/SO_5), alpha_G was
+identified, MUGE-g was named a correction amplitude, the scoped fTRZ
+resolution was adopted, and 1.25 THz became the one THz carrier.
+8 dispatches ruled, registry +9 (6,959 — PAPER_141 carries two rows),
+graph +3, gate 6,064 → 6,065, index 8 flips. Backlog 95 → 87 + 1.
+Sweep clean.
+
+## 2026-09-04 (21) — BATCH 22 FOLDED (B170-B177): the MUGE system papers
+
+Eight rulings. The system-paper block resolved as one coherent story:
+the magnetospheric identification (first in-corpus statement) became
+the block's reading, the 7-system values were ruled parametric
+placeholders on the primitive-locked (1+F_TRZ^3) tag, the scoping
+doctrine extended to photon paths, the 146/147 derivations became the
+one canonical 12-term formula set, and three landmarks canonized —
+the 2.32 mm wormhole throat, the jet identities with the 1e46
+route-link (lambda_SCm = rho_A*v_SCm), and the containment doctrine
+(the framework's GR-relationship statement). 8 dispatches ruled,
+registry +11 (6,970), graph +3, gate 6,065 → 6,066, index 8 flips.
+Backlog 87 → 79 + 1. Sweep clean.
+
+## 2026-09-04 (22) — BATCH 23 FOLDED (B178-B185): the Millennium verification pass
+
+Eight rulings, two deep dives on B178 ending in an independent
+equation-verification of PAPER_1182: five closures EXACT from
+primitives, two canons shown to be true mathematical values (t_10000,
+Cremona 37a1), one misprint caught (K_Mex-1 -> K_Mex-2), and the YM
+canon confirmed by the paper's own falsifiable window. The calibration
+block closed around it: E_react route 1 + k4 = 2.0 corpus-wide,
+E_vac,neb = rho_UA canonized, the Lambda global/local bridge, the
+blend on corrected inputs, and the per-term normalization program.
+8 dispatches ruled, registry +10 (6,980), graph +3, gate 6,066 →
+6,067, index 8 flips. Backlog 79 → 71 + 1. Sweep clean.
+
+## 2026-09-07 (1) — BATCH 24 FOLDED (B186-B193): the sec-2.4 block opens
+
+Eight rulings. The block's forks resolved toward observations and
+source documents: SGR 1745's field went to the Chandra anchor, the
+A_mu_nu trace went tensor-correct (4 = D_PHYS), the wind convention
+settled per-km/s, GW231123's chain was corrected with merger
+additivity canonized, kappa*SSq was ruled dimensionless, the Ubi
+scoping doctrine landed (one Ubi, three faces), and the k1/k2/k3
+source-document provenance was canonized as the sec-2.4 anchor.
+8 dispatches ruled, registry +9 (6,989), graph +3, gate 6,067 →
+6,068, index 8 flips. Backlog 71 → 63 + 1. Sweep clean.
+
+## 2026-09-07 (2) — BATCH 25 FOLDED (B194-B201): the CoAnQi block closes on code truth
+
+Eight rulings + one sweep application (PAPER_194/Q-174a via B200). The
+software block's forensic arc completed: the Ubi namespace closed as
+one law with four faces, the resonance tables were formally superseded
+on three independent code witnesses, Term 9 was canonized as the
+compressed-table generator, H0 = 70 went everywhere-standing, the
+four-way YM fork resolved onto the B178 canon, the DPM mapping scoped
+to three faces, rho_A canonized, and the quasar mechanism reconciled
+with the bound-state doctrine. 9 dispatches ruled, registry +11
+(**7,000 rows**), graph +3, gate 6,068 → 6,069, index 9 flips.
+Backlog 63 → 55 + 1. Sweep clean after application.
+
+## 2026-09-07 (3) — v0.420.0 SHIP PREP: THE CODE-TRUTH SHIP
+
+Batches 21-25 prepared for ship (40 rulings, B162-B201 + sweep
+application). Version synced across pyproject / VERSION / gate pin /
+CITATION.cff / README badges (cacheBust bumped) / CHANGELOG /
+UNIFIED_REGISTRY_VERSION.txt / SHIP_MESSAGE / _BUILD_LOG; band-trail
+rows appended to the registry satellites; arc marker rotated
+UNDER100_ARC -> CODETRUTH_ARC; manifest regenerated; gate green
+6,069/0. Ship-prep note: the first prep pass tripped its own length
+assert (desc 519 > 512, rule e) BEFORE any pyproject write - trimmed
+and re-run; the guard chain held. Headlines: Millennium set
+equation-verified, resonance tables superseded on code truth, Ubi
+namespace closed, registry 7,000. Daniel ships via .\ship.ps1;
+tag-chain verification next session per standing rule.

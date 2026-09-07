@@ -1,31 +1,39 @@
-v0.419.0 — THE UNDER-100 SHIP
+v0.420.0 — THE CODE-TRUTH SHIP
 
-The backlog breaks 100 and the corpus meets its roots. Batches 14-20
-(56 rulings, B106-B161).
+The corpus measured against its own code and its own mathematics.
+Batches 21-25 (40 rulings, B162-B201, + one sweep application).
 
-- BACKLOG UNDER 100: 151 -> 95 Daniel-gated + 1 prediction candidate,
-  the first time under 100 in the campaign. Seven batches folded, seven
-  clean sweeps, gate 6,057 -> 6,064.
-- THE PROVENANCE ROOT: PAPER_133 canonized as the corpus root document -
-  bit-for-bit with the PAPER_2152 Final-Equations findings, the beta
-  lineage documented from Daniel's 2025 source documents. The fresh
-  corpus and its origins are now one chain.
-- THE FLAGSHIP BENCH FALSIFIABLE: a 10% vacuum-transmission dip at
-  6.25 THz (5*f_SCm, the phonon carrier's 5th harmonic) - the
-  framework's most accessible laboratory test, wired as flagship as
-  Session-0's first hundred papers closed.
-- PRIMITIVES' OWN ORIGINS: SSq on two independent observational anchors
-  (0.755^2 spin-down + Ikeda boundary); kappa on two independent origins
-  (outburst statistics x F_TRZ^3; blazar alpha/t_mean).
-- STRUCTURE: B112 vacuum/in-medium context split (vacuum F_TRZ /
-  in-medium F_TRZ^2) closes five observable forks; P_SCm = F_TRZ^3
-  EXACT takes rung 3; winding pick dn = 1/5; T_CMB primitive;
-  corpus-wide GRAVITY pair; DOMAIN-DECAY DOCTRINE; unit-reference
-  doctrine extended to the MUGE inverse family; SSq^3 adjudicated to
-  Omega_b/Omega_DM; corrected 3C273 counter-jet solves R = 130 exactly.
-- HONESTY: falsified code outputs and explicit circularities pinned by
-  name across the batches; the Helix 50% sentence held AWAITING-POINTER;
-  selected-to-match anchor exposed against its own citation.
+- THE MILLENNIUM SET IS EQUATION-VERIFIED: PAPER_1182 canonized as THE
+  canonical set after an independent verification pass - five closures
+  recompute EXACT from primitives; the Riemann canon IS the true
+  10,000th zeta zero; the BSD canon IS the true Cremona 37a1 value;
+  the K_Mex-1 misprint corrected to the K_Mex-2 = 1/12 DPM-pair
+  identity; the four-way YM fork resolves onto 1.736 GeV, confirmed
+  BY 1182's own falsifiable window (which its Mexican-hat ladder
+  fails at 1.581).
+- CODE TRUTH: the resonance tables are formally superseded by the
+  operational 1.773e-9 on THREE independent witnesses (unit test,
+  decomposition, running fluid sim); Term 9 = 3GM^2/r^3 is canonized
+  as the compressed-table generator (code == table == derived at
+  0.05 pct); the 7-system values stand as parametric placeholders
+  on the primitive-locked (1 + F_TRZ^3) tag.
+- THE UBI NAMESPACE CLOSES: one law with four scoped faces (galactic
+  chain / local compact / DPM-moment / fluid Archimedes).
+- LANDMARKS + DOCTRINES: the 2.32 mm wormhole throat (no back-solving);
+  the containment doctrine ("UQFF contains DPM-seeded gravity") as the
+  GR-relationship statement; the magnetospheric identification +
+  photon-path scoping; E_vac,neb = rho_UA; rho_A = 1e-23; F_U merger
+  additivity (GW231123, real O4 event); the azeo void as the 2*F_TRZ
+  family's 4th appearance; 40/60 primitive-locked; omega_SCm =
+  1.25 THz the one carrier.
+- PROVENANCE: k1/k2/k3 = 1.5/1.2/1.8 canonized source-document EXACT
+  (May 2025 Final Equations, PAPER_2152 chain); k4 = 2.0 corpus-wide
+  with self-rectification validated; H0 = 70 = A_5 + SO_5
+  everywhere-standing; the Chandra observational anchor takes SGR
+  1745's field.
+- HONESTY: falsified outputs, circularities, slipped derivations, and
+  a Pioneer-claim-carrying transcription slip pinned by name; the
+  sec-8 epistemic self-assessment registered as the Rule 7 exemplar.
 
-Gate 6,064/0. Acceptance 89/89. Registry 6,950 rows. Next: Batch 21
-(from Q-136).
+REGISTRY CROSSES 7,000 ROWS. Gate 6,069/0. Acceptance 89/89.
+Backlog 95 -> 55 + 1. Next: Batch 26 (from Q-176).

@@ -7281,3 +7281,142 @@ Queue: 103 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 110.
   family** (affects all downstream applications); inverse-Boyle preserved.
 Falsified outputs Nos. 4-7 pinned across the block.
 Queue: 95 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 100.
+
+## BATCH 21 RULINGS — Daniel, 2026-09-04 (B162-B169; folded same day; gate-pinned; sweep clean)
+
+- **B162/Q-136:** both SO_5 convergences CANONIZED (10-mode = SO_5;
+  factor 11 = SO_5+1); sec-4 DE identification SUPERSEDED (PAPER_145
+  split); f_quantum body chain canonical.
+- **B163/Q-137 (post-dive):** **azeo void = 2·F_TRZ FAMILY 4TH MEMBER**
+  (PAPER_1944 seminal, predecessor-canonized per PAPER_1979); Buoy_term
+  STRUCTURED-CALIBRATED (Master U_Bi, 4/5 factors primitive-locked incl.
+  Boyle 1/33; delta_k_eta observational). Opens: 1.262e-28 repro,
+  4,000-yr anchor, 80-atm row.
+- **B164/Q-138:** **alpha_G = G·m_p²/(ħc) CANONIZED**; d_pair table
+  not-reproducible (rule OPEN); island fork pinned; N=184 preserved.
+- **B165/Q-139:** **40/60 = (D_phys, D_BSFG)/SO_5 primitive-locked**
+  (2/3 EXACT rescue); circularity + syntax error pinned; four QM-anomaly
+  derivation targets queued.
+- **B166/Q-140:** balanced F_UBi/F_UBii SUPERSEDES genesis Ub (14:1
+  artifact); **SSq survival narrative canonized**; P-NP one canon
+  (predecessor value + two supporting rationales); mu_SCm label pinned.
+- **B167/Q-141:** vacuum split canonical (self-rectification No. 12);
+  **MUGE-g = system-scale resonance-correction amplitude** (demo values
+  parametric; real values OPEN); k4 fork HELD; kappa attribution to
+  PAPER_125 4LAC.
+- **B168/Q-142:** **scoped fTRZ resolution ADOPTED** (additive
+  topology-normalized / multiplicative acceleration); Ug4i four forms
+  renamed, Taylor form carries the SM-limit keystone; ADPM
+  normalization OPEN.
+- **B169/Q-143:** formula-vs-tables split DISCLOSED (cascade cluster
+  OPEN); **omega_SCm = 1.25 THz canonical carrier**; placeholders →
+  arXiv:2408.15233.
+Queue: 87 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 22 RULINGS — Daniel, 2026-09-04 (B170-B177; folded same day; gate-pinned; sweep clean)
+
+- **B170/Q-144:** all four confirmed — fTRZ refutation = B168 datapoint;
+  Schwinger vote folded to B160 canon; **STANDING TRANSCRIPTION-AUDIT
+  NOTE** for the mantissa-exact family; **magnetospheric reading
+  CANONIZED** for the system papers.
+- **B171/Q-145:** tables supersede the printed 147 cascade; body 1.69e25
+  = canonical Sgr A* amplification.
+- **B172/Q-146:** clone = parametric artifact; floor NOT canonized;
+  Jeans mix out-of-scope; ~20-yr periodicity preserved; Westerlund
+  distance fork (2.8/4.2/8 kpc) queued.
+- **B173/Q-147:** **7-system values = PARAMETRIC PLACEHOLDERS**
+  (1-2-5 ladder × (1+F_TRZ³), tag primitive-locked per B158);
+  **photon-path scope doctrine** (one rule resolves the 30-order ring
+  flag + the Jeans mix).
+- **B174/Q-148:** **ONE canonical 12-term set = the 146/147
+  derivations**; 152 forms = variant; H0 = 67.4 folded to the
+  PAPER_1573 route family.
+- **B175/Q-149:** **r₀ = 2.32 mm LANDMARK** (c/√(8πGρv²), no
+  back-solving); throat = scoped-fTRZ anchor context; κ_length OPEN;
+  Gyr-to-yr echo pinned.
+- **B176/Q-150:** f_jet/T_Osc/ν_SCm identities canonized + λ_SCm
+  registered; **the two 1e46 E_react routes = ONE LINKED STRUCTURE**
+  (λ_SCm = ρ_A·v_SCm); curl-free core → B157 NS hierarchy mechanism
+  tier.
+- **B177/Q-151:** **SM-limit keystone VALID on Ug4i form 4**;
+  **CONTAINMENT DOCTRINE canonized** ('UQFF contains DPM-seeded
+  gravity'); Pioneer reframed as upper bound.
+Queue: 79 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 23 RULINGS — Daniel, 2026-09-04 (B178-B185; folded same day; gate-pinned; sweep clean)
+
+- **B178/Q-152 (two dives + verification pass):** **PAPER_1182 = THE
+  canonical Millennium set, equation-verified** — five closures EXACT
+  from primitives, Riemann canon = the true 10,000th zero, BSD canon =
+  the true Cremona 37a1 value; K_Mex−1 misprint corrected-by-reference
+  to K_Mex−2 = 1/12; YM 1.736 confirmed BY 1182's own window (ladder
+  fails it — Λ_QCD anchor OPEN); PAPER_156 bridges = superseded
+  Session-0 commentary.
+- **B179/Q-153:** **E_react route 1 canonical** (B176 link absorbs
+  route 2; route 3 = variant); **k4 = 2.0 corpus-wide** (B167 fork
+  closes, self-rectification validated); Ug3 = assigned (B173
+  fingerprint); −13 collapse registered.
+- **B180/Q-154:** blend on CORRECTED inputs at the **Schwinger scale**;
+  underflow = artifact; SSq·κ footer EXACT.
+- **B181/Q-155:** **2.32 mm canonical** for the 13th term;
+  **E_vac,neb = SO_5·ρ_SCm = ρ_UA CANONIZED**.
+- **B182/Q-156:** J/m³-native-first (2147 discipline + 2149 leg);
+  **Λ global/local bridge CANONIZED** (dual-manifestation consistent).
+- **B183/Q-157:** mojibake (~98×); ρ_A = 1 H atom/m³; 14.3 TeV OPEN.
+- **B184/Q-158:** relative amplitude — **second concordant ruling**
+  (B17 + B184); 6283 s; SCm_contrib = placeholder (170 confession).
+- **B185/Q-159:** test corrected 6.674e-3 (family's most extreme);
+  wired on H0 = 70; **per-term normalization program** registered to
+  the σ_ref family.
+Queue: 71 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 24 RULINGS — Daniel, 2026-09-07 (B186-B193; folded same day; gate-pinned; sweep clean)
+
+- **B186/Q-160:** **B(SGR 1745) = 2.3e10 T canonical** (Chandra anchor;
+  13× demo fork closed); compressed-dominant reading corrected against
+  158's own algebra.
+- **B187/Q-161:** B = 5.28 T intended (exact chain); **trace 4 = D_PHYS
+  tensor-correct**; T_plasma 1270 source OPEN; ~4 mojibake vector pinned.
+- **B188/Q-162:** **km/s convention** — δ_sw = 0.001/(km/s), wind
+  factor 1.4 canonical.
+- **B189/Q-163:** M_gap chain corrected (1.876e-27 kg, N = 2.39e59);
+  **F_U merger ADDITIVITY canonized**; 300 MeV = Λ_QCD anchor datapoint
+  under the B178 canon; quantization falsifiable tracked.
+- **B190/Q-164:** 13 = slip (~23 actual); scale factors = ad hoc
+  visualization compression.
+- **B191/Q-165:** **κ·SSq = 2.85e-4 DIMENSIONLESS coupling** (158/169
+  concordant); JWST NIRCam falsifiable tracked.
+- **B192/Q-166:** **UBI SCOPING DOCTRINE** — compact form = local
+  limit; PAPER_186 resolutions registered; final check at Q-168.
+- **B193/Q-167:** μ_s form folded (one Ubi, three faces); δ_sw = 0.01
+  = outlier; **k1/k2/k3 = 1.5/1.2/1.8 PROVENANCE CANONIZED** (May 2025
+  Final Equations, PAPER_2152 chain).
+Queue: 63 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 25 RULINGS — Daniel, 2026-09-07 (B194-B201; folded same day; gate-pinned; sweep clean after application)
+
+- **B194/Q-168:** **Ubi namespace CLOSES — one law, four scoped faces**
+  (galactic/local/moment/fluid); **resonance tables FORMALLY
+  SUPERSEDED** by the code chain 1.773e-9 (UnitTests smoking gun);
+  trace canon extended (T_s00 = 1.1127e7).
+- **B195/Q-169:** **H0 = 70 EVERYWHERE standing**; **Term 9 = 3GM²/r³
+  canonized as the compressed-table generator** (code == table ==
+  derived); expansion argument context-scoped.
+- **B196/Q-170:** MUGE.cpp extraction queued (3.545 = 7.09/2 lead);
+  fTRZ additive refutation No. 2; fAether = mislabel (not Planck).
+- **B197/Q-171:** **two distinct 26-ladders** (energy-decade vs
+  frequency chain); level-18-Higgs assignment stands, 1e-2 J = defect;
+  E_0 calibrated.
+- **B198/Q-172:** κ chain = slipped attempt (stands on B130/B146);
+  **ρ_A = 1e-23 kg/m³ CANONIZED corpus-wide**; **quasar unbinding
+  COMPATIBLE with PAPER_2153** (indirect signatures); SCm-moment
+  dominance = physics.
+- **B199/Q-173:** third code-truth vote (three witnesses); **trigger
+  reading canonical** (hand-scaled visualization disclosed).
+- **B200/Q-174:** sine-cosine = actual generator; **0.6029 thread-wide**
+  (0.61 = era literal); + swept PAPER_194's Q-174a.
+- **B201/Q-175:** **four-way YM fork RESOLVED onto the B178 1.736
+  canon**; NS wording downgraded (Rule 7); **DPM mapping scoped to
+  three faces** (spatial T0 seed canonical); M_bh → B147 GRAVITY pair;
+  the honesty landmark registered. CoAnQi block closed.
+Queue: 55 Daniel-gated + 1 OPEN_CANDIDATE. **Registry crosses 7,000.**
