@@ -7576,3 +7576,39 @@ and corrected in the registry. Queue zero is REAL as of B250: **zero
 OPEN_RULING statuses in the calculator, verified live by the gate.**
 The campaign: 224 items → 0 Daniel-gated + 1 OPEN_CANDIDATE
 (PAPER_1950, observation-gated). ~250 B-numbered rulings, Batches 1-31.
+
+## BATCH 32 — Daniel, 2026-09-07 (B251-B253; THE EXTRACTION CAMPAIGN OPENS; gate-pinned with live recomputation)
+
+- **B251:** **THE RESONANCE-TABLE GENERATOR FOUND** — the CP3/PAPER_371
+  13-term set; tables = 2×asuper_freq (1.65496e45, 0.005%); ×2 = the
+  generating-run artifact; aDPM = 2.7995e24 = PAPER_180's aborted
+  self-audit EXACTLY; afl confirms B202. 3.545e-42 S49 normalization
+  stays OPEN.
+- **B252:** **SGR 0501's ELEVEN closed forms delivered** (seven missing
+  recovered); 2.94× reconstruction residual OPEN (dpm_ug1_seed lead).
+- **B253:** **numeric a/b/c found** (b = 4.72e-3; F₀ = 1.83e71);
+  x₂ = F₀/b CODE-CONFIRMED; integrand chain pass queued.
+
+## BATCH 33 — Daniel, 2026-09-08 (B254-B256; follow-up extractions; gate-pinned with live recomputation)
+
+- **B254 (SOLVED):** **aDPM_S49 = ½·Evac_neb·ω₁² = 3.545e-42 EXACT** —
+  the kinetic-energy-density form; two aDPM constructs canonized
+  (S49 kinetic / CP3 cascade); the B196 arc fully closes.
+- **B255:** **the TWO-GENERATION SEED FORK documented** — C++
+  G-projection (generates 4.474e12) vs CP3 dpm_ug1_seed = μ_s·M/R
+  (T0 ontology, no G); 2.94× residual open on the C++ side.
+- **B256:** integrand chain fully parameterized; **B249 documented-only
+  ruling VINDICATED** (+2.11e208 unrecoverable from CP3); the
+  **F₀²/b = 7.095e144 ρ_SCm-mantissa echo** logged as a derivation lead.
+
+## TRIPLE DERIVATION SESSION — Daniel, 2026-09-08 (B257-B259; PAPER_2260 authored; gate-pinned live)
+
+- **B257 (CANONIZED + paper):** **Ω_b/Ω_DM = SSq³** — the PAPER_128 N=3
+  cascade (Λ→cluster→filament→halo) with the B166 survival narrative;
+  0.16% vs Planck; falsifiable. The B140/B145 queue closes.
+- **B258 (tier 1 canon):** **the Ikeda Bose anchor formalized** — SSq =
+  Bose occupation at ΔE/kT = ln(1+1/SSq) = 1.0132 (natural-kT 0.5820 at
+  2.1% disclosed); the (4/3)F_TRZ² closure FLAGGED (0.02%, no chain).
+- **B259 (canonized):** **the Holmlid triple convergence** — ladder
+  624.2 (EXACT) / Coulomb 626.2 / phonon 630 canonical, spread 0.92%;
+  the (1+F_TRZ²) bridge FLAGGED (0.07%, no chain).

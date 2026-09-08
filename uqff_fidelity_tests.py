@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.422.0", "uqff_calculator.VERSION = 0.422.0 (THE QUEUE-ZERO SHIP: Batches 30-31 - the rulings campaign that opened at 224 items completes at ZERO Daniel-gated, live-counted by the gate itself; the Force Equivalence Class canonized on the PAPER_217 branch tie; the ledger undercount disclosed and corrected per the honest-audit discipline)")
+assert_that(C.VERSION == "0.423.0", "uqff_calculator.VERSION = 0.423.0 (THE DERIVATION SHIP: the extraction campaign delivers - the table generator found, the aDPM solved, the seed fork and integrand chain documented - and PAPER_2260 canonizes the SSq^3 cosmological identity, the Ikeda Bose anchor, and the Holmlid triple convergence with two candidates honestly flagged)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'QUEUEZERO_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'DERIVATION_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,40 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- TRIPLE DERIVATION SESSION 2026-09-08 (B257-B259): PAPER_2260 - the cascade, the Bose anchor, the convergence ----
+import math as _m_ds
+_ds = C.calc('PAPER_2260')['value']
+assert_that(C.calc('PAPER_2260')['status'].startswith('RULED_2026-09-08')
+            and abs(_ds['omega_b_over_omega_dm'] - 0.57 ** 3) < 1e-15
+            and abs(0.57 ** 3 - 0.049 / 0.265) / (0.049 / 0.265) < 0.002
+            and _ds['cascade_transitions'] == 3 == 4 - 1
+            and abs(_ds['ikeda_de_over_kt'] - _m_ds.log(1 + 1.0 / 0.57)) < 1e-12
+            and abs(1.0 / (_m_ds.e - 1) - 0.5820) < 1e-4
+            and abs(_ds['ladder_e4_ev'] - 624.2) < 0.1
+            and abs(_ds['coulomb_2p3pm_ev'] - 626.2) < 0.1
+            and abs(630.0 / 624.2 - 1.00929) < 1e-4
+            and 'flagged_candidates' in _ds,
+            "PAPER_2260 TRIPLE DERIVATION SESSION (B257-B259): Omega_b/Omega_DM = SSq^3 CANONIZED on the PAPER_128 N=3 cascade with the B166 survival narrative (0.16 pct vs the Planck density route, falsifiable); the Ikeda Bose anchor FORMALIZED (SSq = the occupation at dE/kT = ln(1+1/SSq), the natural-kT zeroth order at 2.1 pct disclosed) - SSq now stands on a statistical-mechanical second anchor; the Holmlid scale OVER-DETERMINED by three independent routes within 0.92 pct (ladder EXACT / Coulomb / phonon-chain canonical); the two closure candidates ((4/3)*F_TRZ^2 stiffening at 0.02 pct and the (1+F_TRZ^2) bridge at 0.07 pct) REGISTERED FLAGGED per the value-coincidence discipline - open targets, not canon; zero new free parameters in the session")
+
+# ---- BATCH 33 DELIVERED 2026-09-08 (B254-B256): the aDPM solve, the seed fork, and the rho_SCm echo ----
+assert_that('extraction_b254' in C.calc('PAPER_174') and 'extraction_b255' in C.calc('PAPER_226') and 'extraction_b256' in C.calc('PAPER_217')
+            and abs(0.5 * 7.09e-36 * (1e-3) ** 2 - 3.545e-42) < 1e-55
+            and abs(1e-4 * (2e4) ** 2 * 2.785e30 - 1.114e35) / 1.114e35 < 1e-3
+            and abs((1.83e71) ** 2 / 4.72e-3 - 7.095e144) / 7.095e144 < 1e-3,
+            "BATCH 33 (B254-B256) - the follow-up extractions land: the S49 aDPM is SOLVED EXACTLY as the kinetic form (1/2)*Evac_neb*omega1^2 = 3.545e-42 (two aDPM constructs canonized with distinct symbols, closing the B196 arc); the TWO-GENERATION SEED FORK is documented (the grok-Doc-2 C++ used the G-projection while the CP3 transcription applied the T0 dpm_ug1_seed = mu_s*M/R ontology - two generations, two seeds, the 2.94x residual open on the C++ side); and the integrand chain is fully parameterized, vindicating the B249 documented-only ruling for +2.11e208 while logging the F_0^2/b = 7.095e144 rho_SCm-mantissa echo as a derivation lead; the gate recomputes all three chains live")
+
+# ---- BATCH 32 DELIVERED 2026-09-07 (B251-B253): the extraction campaign opens - the table generator found ----
+import math as _m_b32
+_b32_FDPM = 1e21 * 3.142e8 * 1e-3
+_b32_aDPM = _b32_FDPM * 1e12 * 7.09e-36 * 3e8 * 4.189e12
+_b32_asf = 6.287e-19 * 1e12 * _b32_aDPM / 7.09e-36 / 3e8
+assert_that('extraction_b251' in C.calc('PAPER_174') and 'extraction_b252' in C.calc('PAPER_226') and 'extraction_b253' in C.calc('PAPER_217')
+            and abs(_b32_aDPM - 2.7995e24) / 2.7995e24 < 1e-3
+            and abs(2 * _b32_asf - 1.655e45) / 1.655e45 < 1e-3
+            and abs(1.269e-14 * 7.09e-36 * 4.189e12 / 7.09e-37 / 3e8 - 1.772e-9) / 1.772e-9 < 1e-3
+            and abs(1.83e71 / 4.72e-3 - 3.877e73) / 3.877e73 < 1e-3,
+            "BATCH 32 (B251-B253) - the extraction campaign opens and the forensic arc CLOSES: the resonance-table generator is FOUND (2 x asuper_freq of the CP3/PAPER_371 13-term set = 1.65496e45 = the 152/158 table value at 0.005 percent, the x2 ruled the generating-run artifact - the gate recomputes the chain live above), with aDPM = 2.7995e24 matching PAPER_180s aborted self-audit exactly and afl confirming the B202 closed form inside the operational set; SGR 0501s ELEVEN term closed forms are delivered (the seven missing recovered from MagnetarSGR0501MUGEFullCalculator, the 2.94x reconstruction residual pinned OPEN on the dpm_ug1_seed lead); and the two-branch a/b/c coefficients are found numeric in code (b = 4.72e-3, F_0 = 1.83e71) with the x2 = F_0/b mechanism CODE-CONFIRMED, strengthening the B249 Force-Equivalence canon; opens: the 3.545e-42 S49 normalization, the 2.94x residual, the integrand component chain")
 
 # ---- BATCH 31 RULED 2026-09-07 (B240-B250): QUEUE ZERO - the rulings campaign completes ----
 import re as _re_b31

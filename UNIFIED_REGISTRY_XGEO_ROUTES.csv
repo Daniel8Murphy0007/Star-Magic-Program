@@ -1749,3 +1749,4 @@ UNDER100_ARC,n/a,XGEO_NOT_REQUIRED,none,v0.419.0
 CODETRUTH_ARC,n/a,XGEO_NOT_REQUIRED,none (B196 extraction target registered),v0.420.0
 RATIOLOCK_ARC,n/a,XGEO_NOT_REQUIRED,afluid closed form delivered (B202),v0.421.0
 QUEUEZERO_ARC,n/a,XGEO_NOT_REQUIRED,extraction queue carried forward,v0.422.0
+DERIVATION_ARC,n/a,XGEO_DELIVERED,the opaque-formula procedure closed its queue,v0.423.0

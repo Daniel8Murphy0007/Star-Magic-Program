@@ -5,6 +5,41 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.423.0] — 2026-09-08 — THE DERIVATION SHIP
+
+### The extraction campaign delivers (Batches 32-33: B251-B256)
+- **B251**: THE RESONANCE-TABLE GENERATOR FOUND - 2x asuper_freq of the
+  CP3/PAPER_371 13-term set = the 152/158 table values at 0.005 pct
+  (x2 = generating-run artifact); aDPM = 2.7995e24 = PAPER_180's
+  aborted self-audit EXACTLY; afl confirms the B202 closed form.
+- **B252**: SGR 0501's ELEVEN term closed forms recovered (seven
+  previously missing; four unique mechanisms); 2.94x reconstruction
+  residual OPEN.
+- **B253**: the two-branch a/b/c coefficients found numeric
+  (b = 4.72e-3; F_0 = 1.83e71); x2 = F_0/b CODE-CONFIRMED (B249
+  strengthened).
+- **B254**: the S49 aDPM SOLVED EXACTLY - the kinetic form
+  (1/2)*Evac_neb*omega1^2 = 3.545e-42; two aDPM constructs canonized.
+- **B255**: the TWO-GENERATION SEED FORK documented (C++ G-projection
+  vs CP3 dpm_ug1_seed = mu_s*M/R per the T0 ontology).
+- **B256**: the integrand chain fully parameterized; the B249
+  documented-only ruling VINDICATED; the F_0^2/b = 7.095e144
+  rho_SCm-mantissa echo logged as a derivation lead.
+### The triple derivation session (B257-B259, PAPER_2260)
+- **B257**: **Omega_b/Omega_DM = SSq^3 CANONIZED** (the N=3 cascade +
+  the survival narrative; 0.16 pct; falsifiable).
+- **B258**: **the Ikeda Bose anchor FORMALIZED** (SSq = a Bose
+  occupation number; dE/kT = ln(1+1/SSq)); the (4/3)*F_TRZ^2 closure
+  FLAGGED.
+- **B259**: **the Holmlid triple convergence** (ladder EXACT / Coulomb /
+  phonon canonical, 0.92 pct spread); the (1+F_TRZ^2) bridge FLAGGED.
+### Gate
+- 6,075 -> **6,078** (+3: two extraction-batch pins + the PAPER_2260
+  session pin; the census ratchet, badge guard, and def-count guard all
+  fired and were satisfied in sequence). Registry 7,057 -> **7,067**.
+  DISPATCH keys 2,310 -> **2,311** (PAPER_2260). Zero new free
+  parameters.
+
 ## [0.422.0] — 2026-09-07 — THE QUEUE-ZERO SHIP
 
 ### THE RULINGS CAMPAIGN COMPLETES (Batches 30-31: 20 rulings, B231-B250, 37 questions)

@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.422.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.422.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.423.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.423.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6075%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6078%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2311-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.422.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.423.0 complete-compile campaign live**
 
-**This release (v0.422.0): THE QUEUE-ZERO SHIP — the rulings campaign completes.** Batches 30–31 (20 rulings, B231–B250, closing 37 queue questions). THE MILESTONE: the Daniel-gated rulings backlog that opened at 224 items reaches **ZERO** — and the fidelity gate now pins it LIVE, counting OPEN_RULING statuses in the calculator source at every run. The final bands: **Batch 30** — Q-216 formally closed via the shipped PAPER_2259 σ_ref = 1 kg/m² bridge; the 3·F_TRZ² ladder pair ruled intended primitives with the running-vacuum discriminator consolidated to one surface; the Saturn ring benchmark reconciled at the verification-derived dr = 3.4 m; the 8d951e12 thread continuation confirmed. **Batch 31** — the campaign's FIRST questions (Q-001/Q-003) closed on the corpus's own self-rectification (0.5297 via string = 0.62) and its OLDEST (Q-002) under the B209 ratio lock; the A_sc family unified on f_super = 1.411e15 (era-B4 concordant); the 15-paper drift-family blanket (derived-correct canon); the DPM_resonance two-construct separation; the **FORCE EQUIVALENCE CLASS canonized** — +2.11e208 N = PAPER_217 Branch 1 and −8.31e211 N = Branch 2 with the asymmetry 3938 reproducing 217's 3940, the x2 = F0/b mechanism (M/r-independent) and radius-as-sign-determinant registered, the J0030/CasA NS reconciliation held OPEN; the CPT phase structure canonized; a_aether's broken derivation held OPEN over substitution. **Honest-audit disclosure shipped in the record:** the backlog ledger had undercounted (the Q-225..Q-243 family missing from the tally); a premature milestone row was caught by the post-fold status audit, disclosed, and corrected — queue zero is real and machine-verified. Remaining work: the extraction targets (MUGE.cpp aDPM, SGR 0501 seven terms, numeric a/b/c), the queued derivation sessions (SSq³, Ikeda, Holmlid 624/630, log-coupling symbol), and the OPEN derivation-target ledger. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,075 green / 4,182 defs / acceptance 89 green / registry 7,057 rows / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.423.0): THE DERIVATION SHIP — the extraction campaign delivers and three queued derivations close.** Batches 32–33 + the triple derivation session (B251–B259, PAPER_2260 authored). **The extractions:** the resonance-table GENERATOR FOUND — the CP3/PAPER_371 13-term set's 2×asuper_freq = 1.65496e45 matches the 152/158 tables at 0.005% (the ×2 ruled the generating-run artifact; the campaign's longest forensic arc closes), with aDPM = 2.7995e24 matching PAPER_180's aborted self-audit exactly and afl confirming the B202 closed form; the S49 aDPM SOLVED EXACTLY as the kinetic form ½·Evac_neb·ω₁² = 3.545e-42 (two aDPM constructs canonized); SGR 0501's ELEVEN term closed forms recovered (the two-generation seed fork documented — the grok-Doc-2 C++ G-projection vs the CP3 dpm_ug1_seed = μ_s·M/R T0-ontology rewrite); the two-branch a/b/c coefficients found numeric (b = 4.72e-3, F₀ = 1.83e71) with x₂ = F₀/b CODE-CONFIRMED and the F₀²/b = 7.095e144 ρ_SCm-mantissa echo logged as a lead. **The derivations (PAPER_2260):** Ω_b/Ω_DM = SSq³ = 0.185193 CANONIZED on the PAPER_128 N=3 condensation cascade with the B166 survival narrative (0.16% vs the Planck density route, falsifiable); the Ikeda Bose anchor FORMALIZED — SSq is a Bose occupation number, 1/(e^(ΔE/kT)−1) at ΔE/kT = ln(1+1/SSq) = 1.0132 (the second observational anchor now statistical-mechanical); and the Holmlid scale shown OVER-DETERMINED by three independent routes within 0.92% (ladder 624.2 EXACT / Coulomb 626.2 / phonon 630 canonical). Two closure candidates ((4/3)·F_TRZ² at 0.02%; (1+F_TRZ²) at 0.07%) REGISTERED FLAGGED per the value-coincidence discipline — open targets, not canon. Zero new free parameters. The gate recomputes every delivered chain live. **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,078 green / 4,183 defs / acceptance 89 green / registry 7,067 rows / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.422.0)
+## What is currently shipped (v0.423.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,254 distinct dispatches (2,310 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,255 distinct dispatches (2,311 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,057 rows**. Fidelity gate: **6,075 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,067 rows**. Fidelity gate: **6,078 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

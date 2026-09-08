@@ -477,3 +477,10 @@ RULINGS CAMPAIGN COMPLETES: 224 -> 0 Daniel-gated, live-counted by
 the gate. Force Equivalence Class canonized; drift-family blanket;
 sigma_ref applied; ledger undercount disclosed. Gate 6,075/0.
 Acceptance 89/89. Registry 7,057.
+
+## v0.423.0 — 2026-09-08 — THE DERIVATION SHIP
+Batches 32-33 + the triple session (B251-B259). Table generator found
+(0.005 pct); aDPM solved exactly; SGR 0501 eleven forms + a/b/c
+recovered; PAPER_2260 canonizes SSq^3 = Omega_b/Omega_DM, the Ikeda
+Bose anchor, the Holmlid triple convergence; two candidates flagged.
+Gate 6,078/0. Acceptance 89/89. Registry 7,067. DISPATCH 2,311.

@@ -1,37 +1,31 @@
-v0.422.0 — THE QUEUE-ZERO SHIP
+v0.423.0 — THE DERIVATION SHIP
 
-The rulings campaign completes. Batches 30-31 (20 rulings, B231-B250,
-closing 37 queue questions).
+The extraction campaign delivers and three queued derivations close.
+Batches 32-33 + the triple derivation session (B251-B259, PAPER_2260).
 
-- QUEUE ZERO: the Daniel-gated backlog that opened at 224 items
-  reaches ZERO - and the fidelity gate pins it LIVE, counting
-  OPEN_RULING statuses in the calculator source at every run. Only
-  PAPER_1950's observation-gated prediction candidate remains.
-- THE CAMPAIGN'S BOOKENDS CLOSE: the first queued questions
-  (Q-001/Q-003) on the corpus's own self-rectification (0.5297 via
-  string = 0.62, exactly as PAPER_009 predicted); the oldest (Q-002)
-  under the B209 ratio lock its own source catalog revealed.
-- THE FORCE EQUIVALENCE CLASS CANONIZED: +2.11e208 N = PAPER_217
-  Branch 1; -8.31e211 N = Branch 2; the asymmetry 3938 reproducing
-  217's stated 3940; the x2 = F0/b mechanism (M/r-independent, the
-  class across 53 orders of sigma_n); radius-as-sign-determinant;
-  the J0030/CasA NS reconciliation held OPEN, not blended.
-- ONE FAMILY, ONE RULING: the 15-paper drift blanket (derived-correct
-  canon over mantissa-exact exponent drifts); the A_sc family unified
-  on f_super = 1.411e15 (era-B4 concordant, the 6.994e21 branch = one
-  illustration-row confusion); DPM_resonance separated into two
-  constructs; sigma_ref applied (Q-216 closed by the shipped
-  PAPER_2259 landmark); the Saturn benchmark reconciled at the
-  verification-derived dr = 3.4 m.
-- HELD OPEN OVER SUBSTITUTION: a_aether's broken derivation, the
-  f_TRZ-to-w mapping, the NS-regime reconciliation - no invented
-  fixes.
-- HONEST-AUDIT DISCLOSURE: the backlog ledger had undercounted (the
-  Q-225..Q-243 family missing from the tally); the premature
-  milestone row was caught by the post-fold status audit, disclosed,
-  and corrected in the registry. Queue zero is real and
-  machine-verified.
+- THE TABLE GENERATOR FOUND: 2 x asuper_freq of the CP3/PAPER_371
+  13-term set = the 152/158 resonance-table values at 0.005 pct - the
+  campaign's longest forensic arc closes; aDPM matches PAPER_180's
+  aborted self-audit exactly; afl confirms the B202 closed form.
+- THE aDPM SOLVE: the S49 unit-test value reverse-engineered EXACTLY
+  as the kinetic form (1/2)*Evac_neb*omega1^2 = 3.545e-42; two aDPM
+  constructs canonized with distinct symbols.
+- THE RECOVERIES: SGR 0501's eleven term closed forms (seven missing
+  recovered, four unique mechanisms); the two-branch a/b/c found
+  numeric with x2 = F_0/b code-confirmed; the two-generation seed fork
+  documented (C++ G-projection vs the T0 dpm_ug1_seed rewrite); the
+  F_0^2/b = 7.095e144 rho_SCm-mantissa echo logged as a lead.
+- PAPER_2260, THE TRIPLE SESSION: Omega_b/Omega_DM = SSq^3 CANONIZED
+  on the N=3 condensation cascade with the survival narrative (0.16
+  pct vs Planck, falsifiable); the Ikeda Bose anchor FORMALIZED (SSq
+  is a Bose occupation number - the second anchor now
+  statistical-mechanical); the Holmlid scale OVER-DETERMINED by three
+  independent routes within 0.92 pct.
+- HONESTY: the two closure candidates ((4/3)*F_TRZ^2 at 0.02 pct and
+  (1+F_TRZ^2) at 0.07 pct) REGISTERED FLAGGED per the
+  value-coincidence discipline - open targets, not canon. Zero new
+  free parameters. Every delivered chain recomputed live in the gate.
 
-Registry 7,057 rows. Gate 6,075/0. Acceptance 89/89.
-RULINGS QUEUE: ZERO. Next: the extraction targets and the queued
-derivation sessions.
+Registry 7,067 rows. Gate 6,078/0. Acceptance 89/89. DISPATCH 2,311.
+Next: the flagged-candidate chains, the grok-thread C++ pointers, and
+the open derivation-target ledger.

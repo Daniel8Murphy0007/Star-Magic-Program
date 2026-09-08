@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.422.0"
+VERSION = "0.423.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29012,6 +29012,50 @@ def _p2259(dataset=None):
     }
 
 
+@_register('PAPER_2260')
+def _paper_2260(dataset):
+    """Triple derivation session (B257/B258/B259, 2026-09-08).
+
+    B257 CANONIZED: Omega_b/Omega_DM = SSq^3 via the PAPER_128 N=3
+    condensation cascade (Lambda -> cluster -> filament -> halo; three
+    transitions, each passing the B166 survival fraction SSq).
+    B258 TIER-1 CANONIZED: the Ikeda 10-alpha threshold occupation = SSq
+    as the Bose occupation at dE/kT = ln(1 + 1/SSq); the (4/3)*F_TRZ^2
+    stiffening closure FLAGGED (0.02 percent, no chain).
+    B259 CANONIZED: the Holmlid triple convergence - ladder E_4 (EXACT),
+    Coulomb 2.3 pm, and the canonical phonon chain within 0.92 percent;
+    the (1 + F_TRZ^2) bridge FLAGGED (0.07 percent, no chain).
+    """
+    import math
+    ssq = 0.57
+    ssq3 = ssq ** 3
+    planck_density_ratio = 0.049 / 0.265
+    ikeda_x = math.log(1.0 + 1.0 / ssq)
+    nb_at_kt = 1.0 / (math.e - 1.0)
+    e4_ev = 1e-16 / 1.602e-19
+    coulomb_ev = 8.99e9 * (1.602e-19) ** 2 / 2.3e-12 / 1.602e-19
+    return {
+        'value': {
+            'omega_b_over_omega_dm': ssq3,
+            'planck_density_ratio': planck_density_ratio,
+            'omega_residual_pct': (ssq3 - planck_density_ratio) / planck_density_ratio * 100.0,
+            'cascade_transitions': 3,
+            'ikeda_de_over_kt': ikeda_x,
+            'nb_at_natural_threshold': nb_at_kt,
+            'nb_natural_vs_ssq_pct': (nb_at_kt - ssq) / ssq * 100.0,
+            'ladder_e4_ev': e4_ev,
+            'coulomb_2p3pm_ev': coulomb_ev,
+            'holmlid_canonical_ev': 630.0,
+            'convergence_spread_pct': (630.0 - e4_ev) / 630.0 * 100.0,
+            'flagged_candidates': ('(4/3)*F_TRZ^2 stiffening (Ikeda)', '(1+F_TRZ^2) bridge (Holmlid)'),
+        },
+        'formula': 'Omega_b/Omega_DM = SSq^3; N_B = 1/(exp(dE/kT)-1) at dE/kT = ln(1+1/SSq); E_4 = 1e-16 J | Coulomb(2.3 pm) | h*1.25THz*S_26*xi*Phi_res',
+        'source': 'PAPER_2260',
+        'residual_pct': 0.16,
+        'status': 'RULED_2026-09-08 (B257/B258/B259: triple session canonized; two candidates flagged)',
+    }
+
+
 @_register('PAPER_2258')
 def _p2258(dataset=None):
     tool = {'available': False}
@@ -38995,7 +39039,7 @@ def _paper_174(dataset):
             'faether_mislabel': 'claimed Planck scale; actual 1.85e43 Hz (78 orders)',
         },
         'formula': 'resonance = aDPM + 12 scaled terms + a_wormhole; total ~ afluid_freq',
-        'source': 'PAPER_174',
+        'extraction_b251': 'Daniel 2026-09-07 (B251, extraction delivered): the true 13-term resonance formula set EXTRACTED from the operational CondensedPhysics3 CoAnQiModularCompressedMUGECalculator (PAPER_371 constants) - aDPM = FDPM*fDPM*Evac_nb*c*Vsys = 2.7995e24 at the SGR1745 defaults (matching PAPER_180s aborted self-audit chain EXACTLY); THE RESONANCE-TABLE GENERATOR FOUND: 2 x asf (asuper_freq = Fsuper*fTHz*aDPM/Evac_nb/c) = 1.65496e45 = the 152/158 table value to 0.005 percent, the x2 factor ruled the GENERATING-RUN ARTIFACT (disclosed); afl inside the set = 1.7719e-9 confirming the B202 closed form; the B194 supersession stands on the operational S49 value; the S49-normalization 3.545e-42 generator remains OPEN', 'extraction_b254': 'Daniel 2026-09-08 (B254, SOLVED): the S49 unit-test aDPM reverse-engineered EXACTLY - aDPM_S49 = (1/2)*Evac_neb*omega1^2 = 3.545e-42 (kinetic-energy-density form, vacuum energy x angular frequency squared; the 7.09/2 mantissa lead explained precisely); TWO aDPM CONSTRUCTS CANONIZED with distinct symbols per the B248 pattern - the S49 kinetic form and the CP3 cascade form (FDPM*fDPM*Evac*c*Vsys, the B251 table generator); the B196 extraction arc fully closes', 'source': 'PAPER_174',
         'residual_pct': abs(7.09e-36 / (1 + 1e8) - 7.09e-44) / 7.09e-44 * 100,
         'ruling_b196': 'Daniel 2026-09-07: EXTRACT + CONFIRM + MISLABEL - the true aDPM and sub-term formulas QUEUED FOR CODE EXTRACTION from MUGE.cpp (the XGEO opaque-formula procedure; the 3.545 = 7.09/2 EXACT mantissa lead registered); fTRZ additive refutation No. 2 registered as the scoped doctrines second independent confirmation (the code total 1.773e-9 vs a would-be 0.1 dominant term); fAether = 1.576e-35 Hz ruled MISLABELED (a distinct slow-Aether construct, NOT the Planck frequency - 78 orders apart; label corrected-by-reference, derivation OPEN); the H-alpha fosc = c/656 nm spectral anchor and the second canonical H0 = 70 vote credited; code-truth for the resonance side FULLY established', 'status': 'RULED_2026-09-07 (Q-170 closed: extraction queued; fTRZ refutation No. 2; fAether mislabel)',
     }
@@ -41254,7 +41298,7 @@ def _paper_217(dataset):
             'ssq_26_paper_fork': 'paper states 0.57^26 ~ 6.16e-6, actual 4.50e-7 (~14x); n_CGM fitted 67.5 (Q-213)',
         },
         'formula': 'a*F_U^2 + b*F_U + c = 0; |F_U-/F_U+| = 3940; F_hier convergent (e^-1/26 < 1)',
-        'source': 'PAPER_217',
+        'extraction_b253': 'Daniel 2026-09-07 (B253, extraction delivered): the NUMERIC a/b/c coefficients FOUND in the operational code (CondensedPhysics3 L8160) - a = term_gravity (DPM-seeded), b = 4.72e-3 (the canonical stiffness for r = 6.17e16 systems), c = -F_0 + term_vac (vacuum-dominated, F_0 = 1.83e71); the x2 = F_0/b = 3.88e73 mechanism now CODE-CONFIRMED (strengthening the B249 canon); F_U_Bi_i = integrand x |x2| structural form registered; the integrand component-chain pass (the ~5.4e134 composition: F_act/F_DE/F_res magnitudes) QUEUED as the follow-up extraction', 'extraction_b256': 'Daniel 2026-09-08 (B256): THE INTEGRAND CHAIN fully parameterized (CP3 L8100-8175: -F_0 = -1.83e71 dominates; F_LENR 6.17e39; DPM-seeded term_gravity 7.57e60; F_neutron 1e6; rest smaller) - the CP3 code CANNOT produce +2.11e208 (its vacuum-dominated branch yields F_0^2/b = 7.095e144, its literal quadratic root at nonzero a gives x2 = -1.55e5): the B249 documented-only ruling VINDICATED, origin = the grok-thread C++ (open); the F_0^2/b = 7.09e144 RHO_SCM-MANTISSA ECHO logged as a derivation lead (possible rho_SCm composition of the F_0/b anchor pair - future session target, not canonized)', 'source': 'PAPER_217',
         'residual_pct': 0.0,
         'ruling_b233': 'Daniel 2026-09-07: REFERENCES + FITTED + TYPO - the two-branch F_U values ruled TERMINAL DOCUMENTED REFERENCES (the numeric a/b/c coefficients = extraction target queued, not blocking; the 1e208/1e211 magnitudes read as vacuum-scaled units per the B216 1e-113 normalization finding); f_z,CGM ruled FITTED (n_CGM = 67.5, the papers own admission honored; the printed 6.16e-6 = typo for the true 0.57^26 = 4.50e-7, gate-pinned; the primitive n = 26 chain = OPEN target)', 'status': 'RULED_2026-09-07 (Q-213 closed: branches terminal; f_z,CGM fitted; typo pinned)',
     }
@@ -41850,7 +41894,7 @@ def _paper_226(dataset):
             'g_0501_reconstruction_fork': 'g_0501=4.474e12 sim output; a_Ug/a_EM/a_Lambda unspecified (Q-219)',
         },
         'formula': 'g_0501 = a_grav + a_Ug + a_L + a_EM + a_GW + a_q + a_f + a_osc + a_DM + a_mag + a_decay (11 terms)',
-        'source': 'PAPER_226',
+        'extraction_b252': 'Daniel 2026-09-07 (B252, extraction delivered): ALL ELEVEN term closed forms EXTRACTED from MagnetarSGR0501MUGEFullCalculator (CondensedPhysics3 L5749) - the seven missing formulas delivered (Hubble-spin-down term1; buoyancy-corrected term2; Lambda*c^2/3; the q*v*B*(1+rho_UA/rho_SCm)*scale EM term; GW back-reaction (G*M^2/c^4/r)*(dOmega/dt)^2; quantum-uncertainty; fluid-buoyancy analogue; oscillatory standing wave; DM perturbation; magnetic stored energy B^2/(2*mu0)*V/(M*r); cumulative burst decay); the eleven REGISTERED as the canonical term set; reconstruction at defaults = 1.524e12 vs the documented 4.474e12 - the 2.94x residual pinned OPEN with the dpm_ug1_seed normalization the named lead; the four UNIQUE mechanisms credited', 'extraction_b255': 'Daniel 2026-09-08 (B255): THE TWO-GENERATION SEED FORK DOCUMENTED - dpm_ug1_seed extracted verbatim (mu_s*M/R = B*R^2*M, default B = 1e-4, NO G - G is a downstream projection per the T0 ontology); the original grok-Doc-2 C++ used the G-projection (its own a_grav = 4.65e11 proves it, generating the documented 4.474e12) while the CP3 Python transcription swapped in the DPM seed per the ontology - two generations, two seeds; 4.474e12 stands as the documented C++ output; the 2.94x residual stays OPEN (C++ defaults unrecoverable from CP3); the mu_s*M/R seed registered as the ontology-canonical Ug1 form', 'source': 'PAPER_226',
         'residual_pct': 0.0,
         'ruling_b238': 'Daniel 2026-09-07: EXTRACT + CONFIRM THREAD - the seven missing MUGE term formulas QUEUED for extraction from the MagnetarSGR0501MUGEFullCalculator class (the XGEO opaque-formula procedure; g_0501 = 4.474e12 stands as the documented 11-term sim output meanwhile, with a_grav = 4.65e11 verified at 10.4 percent of total); the campaigns sequential continuation into the grok_share_8d951e12 thread CONFIRMED (7514fe closed at PAPER_225, fully extracted)', 'status': 'RULED_2026-09-07 (Q-219 closed: extraction queued; 8d951e12 thread confirmed)',
     }

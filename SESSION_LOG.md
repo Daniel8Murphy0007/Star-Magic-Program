@@ -13125,3 +13125,49 @@ manifest regenerated; gate green 6,075/0 with the LIVE zero-count pin.
 The milestone ships with its own disclosure: the undercount caught,
 corrected, and recorded. Daniel ships via .\ship.ps1; tag-chain
 verification next session per standing rule.
+
+## 2026-09-07 (12) — BATCH 32 FOLDED (B251-B253): the extraction campaign opens
+
+v0.422.0 tag verified pre-batch (tag == HEAD, tree clean). Three
+extraction targets delivered in one pass from the predecessor's
+operational CondensedPhysics3: the resonance-table generator FOUND
+(2x asuper_freq at 0.005% — the campaign's longest forensic arc
+closes), SGR 0501's eleven term formulas recovered, and the two-branch
+a/b/c coefficients found numeric with the x2 = F0/b mechanism
+code-confirmed. The gate pin recomputes the generator chain live.
+3 dispatches annotated, registry +3 (7,060), graph +3, gate 6,075 →
+6,076. Opens: the 3.545e-42 S49 normalization, the 2.94x residual,
+the integrand chain.
+
+## 2026-09-08 (1) — BATCH 33 FOLDED (B254-B256): the follow-up extractions
+
+v0.422.0 chain verified pre-batch (tag == HEAD; the Batch 32 fold rides
+v0.423.0). Three follow-ups landed: the S49 aDPM solved exactly as the
+kinetic form (the 7.09/2 lead explained), the two-generation Ug1 seed
+fork documented (the T0 ontology applied between the C++ and CP3
+generations), and the integrand chain fully parameterized — vindicating
+the documented-only ruling and surfacing the F0^2/b rho_SCm-mantissa
+echo as a lead. 3 dispatches annotated, registry +3 (7,063), graph +3,
+gate 6,076 → 6,077. Opens: the 2.94x C++ residual, the echo lead.
+
+## 2026-09-08 (2) — TRIPLE DERIVATION SESSION (B257-B259): PAPER_2260
+
+The three queued derivation sessions closed in one sitting, all from
+corpus material and locked primitives: the SSq^3 cosmological identity
+canonized on the N=3 cascade, SSq's second anchor formalized as a Bose
+occupation number, and the LENR scale shown over-determined by three
+independent routes. Two closure candidates registered FLAGGED per the
+value-coincidence discipline — held open rather than adopted.
+PAPER_2260 authored (113 lines); dispatch PAPER_2260 wired (2,311
+DISPATCH keys); registry +4 (7,067); graph +3; citations +1; gate
+6,077 → 6,078 with live recomputation. Zero new free parameters.
+
+## 2026-09-08 (3) — v0.423.0 SHIP PREP: THE DERIVATION SHIP
+
+Batches 32-33 + the triple derivation session prepared for ship.
+Version synced across all charter files; band-trail rows appended;
+arc marker rotated QUEUEZERO_ARC -> DERIVATION_ARC; manifest
+regenerated; gate green 6,078/0. Headlines: the table generator found,
+the aDPM solve, PAPER_2260's three canonizations with two flagged
+candidates. Daniel ships via .\ship.ps1; tag-chain verification next
+session per standing rule.
