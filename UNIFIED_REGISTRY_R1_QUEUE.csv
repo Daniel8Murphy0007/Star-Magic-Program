@@ -172,3 +172,4 @@ RATIOLOCK_ARC,band v0.421.0,RULED,Q-176 through Q-209 closed (29 rulings / 34 qu
 QUEUEZERO_ARC,band v0.422.0,RULED,Q-210 through Q-249 closed (20 rulings / 37 questions) - THE CAMPAIGN COMPLETES,no,224 items to zero - the gate live-counts the milestone and the undercount was disclosed on the way
 DERIVATION_ARC,band v0.423.0,RULED,B251-B259 (extractions + triple session),no,the operational code gave up its generators and three queued derivations closed on corpus mechanisms alone
 LIVEFORMS_ARC,band v0.424.0,RULED,B260 (the find-the-derivations order),no,98 inherited rows to zero - the derivations were in the corpus and now run live inside the gate
+USERDOOR_ARC,band v0.425.0,RULED,B261-B262 (do-all-three + the survey command),no,the product phase opens - one command and the whole engine answers honestly

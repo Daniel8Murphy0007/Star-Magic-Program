@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.424.0"
-description = "Star-Magic UQFF calculator v0.424.0: THE LIVE-FORMS SHIP - B260 (Daniel's find-the-derivations order): the 98 INHERITED_CARRIED results-table rows drop to ZERO - 71 closed forms transcribed from their cited papers and recomputed live at generation time (YM 1.736 = 2*D_phys*Lambda_QCD per PAPER_1318), 24 dispatch-verified, 3 module-verified, 3 honest back-solve records; the regeneration runs inside the gate; plus the external-audit simulator-README count fix. 2,256 papers, gate 6,079/0, acceptance 89/89."
+version = "0.425.0"
+description = "Star-Magic UQFF calculator v0.425.0: THE USER DOOR SHIP - B261/B262: star-magic survey, the one-command user path (LAS in, one honest strata report out; --demo self-grades at +0.7% against the file's own sonic); the U_i coupling harness (AWAITING_DANIEL_SPEC, degeneracy-honest); the cited WGS84 gravity reference (NGA TR8350.2, de-loopbacked); the KTB +10% investigation with the (1+F_TRZ) family-offset candidate FLAGGED. Simulator v1.87.0. 2,256 papers, gate 6,081/0, acceptance 99/99."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -380,6 +380,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "uqff_downhole_simulator/uqff_forward_model.py",
     "uqff_downhole_simulator/uqff_gamma.py",
     "uqff_downhole_simulator/uqff_gauge_specs.py",
+    "uqff_downhole_simulator/uqff_gravity_reference.py",
     "uqff_downhole_simulator/uqff_inverse_engine.py",
     "uqff_downhole_simulator/uqff_modbus.py",
     "uqff_downhole_simulator/uqff_operator_app.py",
@@ -392,6 +393,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "uqff_downhole_simulator/uqff_service_life.py",
     "uqff_downhole_simulator/uqff_strata_join.py",
     "uqff_downhole_simulator/uqff_structural_ladder.py",
+    "uqff_downhole_simulator/uqff_survey_cmd.py",
     "uqff_downhole_simulator/uqff_survey_view.py",
     "uqff_downhole_simulator/uqff_telemetry.py",
     "uqff_downhole_simulator/uqff_tool_library.py",

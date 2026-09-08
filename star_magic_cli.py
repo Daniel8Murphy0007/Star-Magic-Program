@@ -74,6 +74,21 @@ def cmd_calc(args) -> int:
     return 0
 
 
+
+def cmd_survey(args) -> int:
+    """THE ONE-COMMAND USER PATH: a LAS file in, one honest strata report
+    out. --demo runs the bundled public KTB excerpt so a stranger sees a
+    real result within two minutes of pip install."""
+    from uqff_downhole_simulator.uqff_survey_cmd import run_survey
+    txt, _ = run_survey(path=getattr(args, 'file', None),
+                        demo=bool(getattr(args, 'demo', False)),
+                        family=getattr(args, 'family',
+                                       'continental_crystalline'),
+                        lat=getattr(args, 'lat', None),
+                        elev=getattr(args, 'elev', None))
+    print(txt)
+    return 0
+
 def cmd_gate(_args) -> int:
     """Run the full fidelity gate from ANY cwd on ANY layout (Daniel's lock #2):
     the gate bootstraps itself through uqff_paths.data_root()."""
@@ -164,6 +179,20 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="star-magic",
                                  description="Star-Magic UQFF: calculator + downhole surveying, one door.")
     sub = ap.add_subparsers(dest="cmd", required=True)
+    p_srv = sub.add_parser(
+        "survey", help="ONE COMMAND: LAS file in, honest strata report out "
+                       "(try: star-magic survey --demo)")
+    p_srv.add_argument("file", nargs="?", default=None,
+                       help="LAS 2.0 well-log file")
+    p_srv.add_argument("--demo", action="store_true",
+                       help="run on the bundled public KTB excerpt")
+    p_srv.add_argument("--family", default="continental_crystalline",
+                       help="prior family (printed as an assumption)")
+    p_srv.add_argument("--lat", type=float, default=None,
+                       help="site latitude for cited WGS84 reference QC")
+    p_srv.add_argument("--elev", type=float, default=None,
+                       help="site elevation (m) for reference QC")
+    p_srv.set_defaults(fn=cmd_survey)
     p_calc = sub.add_parser("calc", help="run a paper dispatch with honesty flags")
     p_calc.add_argument("paper", nargs="?", default="")
     p_calc.add_argument("--list", action="store_true")

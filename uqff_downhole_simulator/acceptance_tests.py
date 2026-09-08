@@ -751,6 +751,87 @@ def section_w_differentiator() -> None:
        "candidates are informationally degenerate, and names the K4 block")
 
 
+
+def section_x_do_all_three() -> None:
+    """Section X - Daniel's DO-ALL-THREE order (2026-09-08): the U_i
+    coupling harness, the cited gravity reference, and the KTB +10 pct
+    investigation record (v1.86.0)."""
+    from .uqff_differentiator import u_i_coupling_harness
+    h = u_i_coupling_harness()
+    ok(h['status'] == 'AWAITING_DANIEL_SPEC' and h['null_coupling_self_check'],
+       "X1: U_i coupling harness live - AWAITING_DANIEL_SPEC, the null "
+       "coupling reproduces the K2 baseline bit-exactly (the socket works "
+       "before the plug exists)")
+    d = u_i_coupling_harness({'form': 'multiplicative', 'a': 1.0})
+    ok(d['degenerate_with_k2'] and d['verdict'].startswith('DEGENERATE'),
+       "X2: harness honesty - a depth-constant coupling is convicted "
+       "DEGENERATE (monotone transform of K2, no strata information added)")
+    from .uqff_gravity_reference import (somigliana_normal_gravity_ms2,
+                                         ktb_site_reference,
+                                         check_stream_gravity)
+    ok(abs(somigliana_normal_gravity_ms2(0.0) - 9.7803253359) < 1e-9
+       and abs(somigliana_normal_gravity_ms2(90.0) - 9.8321849379) < 1e-6,
+       "X3: cited gravity reference - WGS84 Somigliana reproduces the "
+       "published equator/pole values (NGA TR8350.2); the reference layer "
+       "is external, not loopback")
+    k = ktb_site_reference()
+    ok(abs(k['reference_gravity_ms2'] - 9.80895) < 5e-5
+       and k['kind'] == 'OBSERVATIONAL_REFERENCE_STANDARD',
+       "X4: KTB site reference = 9.80895 m/s2 (49.8156 N, 513.6 m, cited "
+       "ICDP site) - labeled an observational reference standard per the "
+       "hybrid-form doctrine, never a UQFF-derivation substitute")
+    q = check_stream_gravity(9.8090, 49.8156, 513.6)
+    ok(q['within_band'] and 'CONSISTENT' in q['verdict'],
+       "X5: stream QC against the cited reference works (demo value inside "
+       "the regional-anomaly band)")
+    import statistics
+    from .uqff_inverse_engine import invert_gravity_column
+    from .uqff_profile_catalog import CATALOG
+    v1 = invert_gravity_column(prior_well='504b')
+    vp1 = [e.posteriors['vp']['estimate'] for e in v1['estimates']
+           if e.posteriors.get('vp', {}).get('status') == 'OK'
+           and e.posteriors['vp'].get('estimate')]
+    st = CATALOG['ktb_hb_complog_6020_excerpt'].stream()
+    rho = [float(v) for v in st.channels['RHOB (g/cm3)'].values]
+    dtco = [float(v) for v in st.channels['DTCO (us/m)'].values]
+    meas = [1e6 / dd for r, dd in zip(rho, dtco) if r > 2.5 and dd > 0]
+    ratio = statistics.mean(meas) / statistics.mean(vp1)
+    ok(1.05 < ratio < 1.12,
+       "X6: the +10 pct investigation - the v1 cross-family refutation "
+       "REPRODUCES LIVE (measured/predicted = %.4f on the co-located "
+       "window); the (1+F_TRZ) family-offset factor is a FLAGGED CANDIDATE "
+       "(the record benchmark 6228/5675 = 1.0974 sits 0.24 pct from 1.1; "
+       "+1.7 pct on the window mean) - falsifiable on the deep-sonic file, "
+       "not canon; the method fix (family priors, V2 in-sample -1.2 pct) "
+       "stands PINNED_AWAITING_DEEP_SONIC" % ratio)
+
+
+def section_y_survey() -> None:
+    """Section Y - the one-command user path (v1.87.0): star-magic survey."""
+    from .uqff_survey_cmd import run_survey
+    txt, d = run_survey(demo=True)
+    ok('one honest answer' in txt and d['n_stations'] == 65
+       and d['exclusions']['washout_or_null_stations'] == 46,
+       "Y1 survey demo: end-to-end on the bundled KTB excerpt - 65 "
+       "stations, 46 exclusions DISCLOSED, one readable report")
+    ok('vp_m_s' in d and abs(d.get('vp_cross_check_pct', 99)) < 5.0,
+       "Y2 survey self-grading: the file carries its own sonic and the "
+       "estimate lands within 5 pct of measured (demo: ~+0.7 pct) - the "
+       "tool grades itself when the data allows")
+    ok('ASSUMPTION' in txt and 'refused to guess' in txt,
+       "Y3 survey honesty: the prior-family assumption is printed where "
+       "it acts and the refusals section is always present")
+    import tempfile, os as _os
+    with tempfile.TemporaryDirectory() as td:
+        f = _os.path.join(td, 'empty.las')
+        open(f, 'w').write('~Version\n VERS. 2.0:\n~Well\n~Curve\n'
+                           'DEPT.M : depth\n~ASCII\n1.0\n2.0\n')
+        txt2, d2 = run_survey(path=f)
+        ok(d2['refusals'] and 'REFUSED' in txt2,
+           "Y4 survey refusal: a LAS with no density and no gravity gets "
+           "an honest refusal naming the unlocking channel, not an "
+           "invented answer")
+
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "
           "independent of the physics corpus)")
@@ -778,6 +859,8 @@ def main() -> int:
         section_u_segy(tmp)
         section_v_client_shell(tmp)
         section_w_differentiator()
+        section_x_do_all_three()
+        section_y_survey()
     if _FAILS:
         print(f"[ACCEPTANCE] {len(_FAILS)} FAILURES ({_PASS} passed):")
         for f in _FAILS:

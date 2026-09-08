@@ -28,7 +28,7 @@ built toward:
    continents one site at a time), per Daniel's 2026-08-28 standing direction.
 
 Ingestion (LAS / historian CSV / file-follower / Modbus TCP), a two-stream
-reconciler, an operator surface, and an 89-check in-package acceptance suite
+reconciler, an operator surface, and a 99-check in-package acceptance suite
 complete the offline product. Honest-status flags are load-bearing: quantities
 without a measured or derived path say so (`PARAMETERS_USER_SUPPLIED`,
 `SIMULATION_SELF_TEST`) rather than pretending.

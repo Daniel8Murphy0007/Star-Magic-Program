@@ -490,3 +490,8 @@ B260: INHERITED_CARRIED 98 -> 0 (71 DERIVED_LIVE + 24 DISPATCH + 3
 MODULE + 3 CAPTURED); regeneration runs inside the gate; front-door
 pin updated; simulator README audit fix. Re-versioned from the
 mid-session v0.423.0 ship. Gate 6,079/0. Acceptance 89/89.
+
+## v0.425.0 — 2026-09-08 — THE USER DOOR SHIP
+B261 (U_i harness + cited reference + KTB investigation with the
+(1+F_TRZ) flagged candidate) + B262 (star-magic survey, self-grading
+demo +0.7 pct). Simulator v1.87.0; acceptance 99/99. Gate 6,081/0.

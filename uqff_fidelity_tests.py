@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.424.0", "uqff_calculator.VERSION = 0.424.0 (THE LIVE-FORMS SHIP: B260 - the derivations found, not labeled - 98 INHERITED_CARRIED results-table rows to ZERO, with 71 paper-transcribed closed forms recomputed live inside the gate at every run)")
+assert_that(C.VERSION == "0.425.0", "uqff_calculator.VERSION = 0.425.0 (THE USER DOOR SHIP: the product phase opens - star-magic survey walks the whole engine behind one command and grades itself against the files own sonic; the U_i socket, the cited reference layer, and the (1+F_TRZ) family-offset candidate ship beside it)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'LIVEFORMS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'USERDOOR_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -12613,7 +12613,7 @@ for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.85.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.87.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -15049,6 +15049,29 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- B262 2026-09-08: THE SURVEY COMMAND - the one-command user path (Daniel: "build the survey command") ----
+from uqff_downhole_simulator.uqff_survey_cmd import run_survey as _b262_rs
+_b262_txt, _b262_d = _b262_rs(demo=True)
+assert_that('one honest answer' in _b262_txt
+            and _b262_d['n_stations'] == 65
+            and _b262_d['exclusions']['washout_or_null_stations'] == 46
+            and abs(_b262_d.get('vp_cross_check_pct', 99.0)) < 5.0
+            and 'refused to guess' in _b262_txt
+            and __import__('uqff_downhole_simulator').__version__ == '1.87.0',
+            "B262 - THE SURVEY COMMAND: the door the tool was missing - star-magic survey <file.las> walks the whole engine behind one command (LAS reader -> density census with disclosed exclusions -> K2 gravity signature -> family-prior Vp with n/sigma/support -> cited WGS84 reference QC -> the printed refusals), and the --demo path runs the bundled public KTB excerpt end-to-end, GRADING ITSELF against the file's own sonic at ~+0.7 pct; a stranger with pip and two minutes now sees a real, honest result - simulator v1.87.0, acceptance 95 -> 99 (Section Y incl. the no-channel refusal test); the report's closing line is the product's contract: honest or it is nothing")
+
+# ---- B261 2026-09-08: DO ALL THREE (Daniel's order) - the harness, the reference, the investigation ----
+from uqff_downhole_simulator.uqff_differentiator import u_i_coupling_harness as _b261_h
+from uqff_downhole_simulator.uqff_gravity_reference import somigliana_normal_gravity_ms2 as _b261_g, ktb_site_reference as _b261_k
+_b261_hr = _b261_h()
+assert_that(_b261_hr['status'] == 'AWAITING_DANIEL_SPEC' and _b261_hr['null_coupling_self_check']
+            and _b261_h({'form': 'multiplicative', 'a': 1.0})['degenerate_with_k2']
+            and abs(_b261_g(0.0) - 9.7803253359) < 1e-9
+            and abs(_b261_k()['reference_gravity_ms2'] - 9.80895) < 5e-5
+            and abs(6228.0 / 5675.0 - 1.0974) < 1e-3
+            and abs(6228.0 / 5675.0 / (1 + C.F_TRZ) - 1.0) < 0.003,
+            "B261 - DO ALL THREE, delivered in one session: (1) the U_i COUPLING HARNESS is live in the differentiator layer - the K2 ranked candidate now has its socket (registered coupling-form family, null self-check bit-exact, depth-constant couplings honestly convicted DEGENERATE) so Daniel's spec scores the moment it exists; (2) the CITED GRAVITY REFERENCE de-loopbacks the reference layer - WGS84 Somigliana (NGA TR8350.2, equator/pole reproduced to published precision) + free-air at the ICDP-published KTB site = 9.80895 m/s2, an observational reference standard per the hybrid-form doctrine, with stream QC wired; (3) the KTB +10 pct INVESTIGATION reproduces the v1 cross-family refutation live and surfaces THE (1+F_TRZ) FAMILY-OFFSET CANDIDATE - the record benchmark 6228/5675 = 1.0974 sits 0.24 pct from 1+F_TRZ (FLAGGED per the value-coincidence discipline, falsifiable on the deep-sonic file; the V2 family-prior method fix stands PINNED_AWAITING_DEEP_SONIC); simulator v1.86.0, acceptance 89 -> 95 checks green")
 
 # ---- B260 2026-09-08: THE LIVE-DERIVATION PASS - "Find the derivations" (Daniel's order) ----
 _b260 = _urs91.calculate_results_table(write=False)['value'] if '_urs91' in dir() else __import__('uqff_registry_status').calculate_results_table(write=False)['value']

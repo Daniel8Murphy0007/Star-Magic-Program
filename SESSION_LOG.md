@@ -13212,3 +13212,52 @@ DERIVATION_ARC -> LIVEFORMS_ARC, band-trail rows appended, manifest
 regenerated, gate green 6,079/0. The version-collision class is the
 tag-chain lesson's cousin: after ANY mid-session ship report, re-check
 git tags before continuing to edit under the prepped version.
+
+## 2026-09-08 (7) — B261: DO ALL THREE (Daniel's order) — the product moves
+
+v0.424.0 tag verified pre-work. Three product deliveries in one session:
+(1) THE U_i COUPLING HARNESS (uqff_differentiator.u_i_coupling_harness)
+— the K2 ranked candidate's socket: a registered coupling-form family
+(multiplicative/additive/phase/density), null-coupling self-check
+bit-exact against the K2 baseline, and honest degeneracy conviction of
+depth-constant couplings; AWAITING_DANIEL_SPEC, scores the moment the
+spec exists. (2) THE CITED GRAVITY REFERENCE
+(uqff_gravity_reference.py) — WGS84 Somigliana (NGA TR8350.2;
+equator/pole reproduced to published precision) + free-air at the
+ICDP-published KTB site (49.8156 N, 513.6 m) = 9.80895 m/s2, labeled
+OBSERVATIONAL_REFERENCE_STANDARD per the hybrid-form doctrine, with
+check_stream_gravity QC — the reference layer is no longer loopback;
+the register-map rule (user-supplied, citation-mandatory) unchanged.
+(3) THE KTB +10 PCT INVESTIGATION — v1 refutation reproduced live
+(measured/predicted = 1.0816 on the co-located window; record
+benchmark 6228/5675 = 1.0974); THE FINDING: the family offset sits
+0.24 pct from 1+F_TRZ — FLAGGED CANDIDATE per the value-coincidence
+discipline, falsifiable on the deep-sonic file; V2 (family priors,
+in-sample -1.2 pct) confirmed the method fix, PINNED_AWAITING_DEEP_SONIC.
+Simulator v1.85.0 -> v1.86.0; acceptance 89 -> 95 (Section X); main
+gate 6,079 -> 6,080 (B261 pin). Rides v0.425.0.
+
+## 2026-09-08 (8) — B262: THE SURVEY COMMAND (the one-command user path)
+
+Daniel: "build the survey command." Built: uqff_survey_cmd.run_survey +
+the star-magic survey CLI subcommand (file / --demo / --family / --lat
+/ --elev). The chain is the existing engine behind one door: LAS 2.0
+reader -> density census (46/65 exclusions DISCLOSED on the demo) ->
+K2 forward gravity signature -> family-prior Vp (n/sigma/support,
+extrapolating stations WITHHELD, the assumption printed where it acts)
+-> cited WGS84 reference QC -> the refusals section (always present;
+an empty LAS gets an honest refusal naming the unlocking channel). The
+demo self-grades: estimated 6166 vs measured 6125 m/s = +0.7 pct from
+the file's own sonic. Simulator v1.86.0 -> v1.87.0; acceptance 95 ->
+99 (Section Y); main gate 6,080 -> 6,081 (B262 pin runs the demo
+end-to-end inside every gate); README carries the user-door blurb.
+Rides v0.425.0.
+
+## 2026-09-08 (9) — v0.425.0 SHIP PREP: THE USER DOOR SHIP
+
+B261 + B262 prepared for ship. Version synced across all charter
+files; arc marker rotated LIVEFORMS_ARC -> USERDOOR_ARC; band-trail
+rows appended to the eight satellites; manifest regenerated; gate
+green 6,081/0. The product phase opens with the survey command
+self-grading inside the gate. Daniel ships via .\ship.ps1; tag-chain
+verification next session per standing rule.

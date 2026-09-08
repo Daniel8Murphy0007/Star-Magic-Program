@@ -5,6 +5,34 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.425.0] — 2026-09-08 — THE USER DOOR SHIP
+
+### B262 — the survey command (the one-command user path)
+- `star-magic survey <file.las>` / `--demo`: LAS reader -> density
+  census (exclusions DISCLOSED) -> K2 gravity signature -> family-prior
+  Vp (n/sigma/support; extrapolating stations WITHHELD; assumption
+  printed) -> cited WGS84 reference QC -> the refusals section (always
+  present; the no-channel refusal acceptance-tested). The demo
+  SELF-GRADES: estimated 6,166 vs measured 6,125 m/s = +0.7 pct.
+  The B262 gate pin runs the demo end-to-end inside every gate.
+### B261 — do all three (Daniel's order)
+- **U_i coupling harness**: the K2 ranked candidate's socket -
+  registered coupling-form family, bit-exact null self-check,
+  depth-constant couplings convicted DEGENERATE; AWAITING_DANIEL_SPEC.
+- **Cited gravity reference** (uqff_gravity_reference.py): WGS84
+  Somigliana (NGA TR8350.2) + free-air; KTB site = 9.80895 m/s2;
+  OBSERVATIONAL_REFERENCE_STANDARD per the hybrid-form doctrine;
+  stream QC wired; the register-map rule unchanged.
+- **KTB +10 pct investigation**: v1 refutation reproduced live
+  (1.0816 window / 1.0974 record benchmark); V2 fix confirmed
+  (-1.2 pct in-sample, PINNED_AWAITING_DEEP_SONIC); **the (1+F_TRZ)
+  family-offset candidate FLAGGED** (0.24 pct from the record ratio;
+  falsifiable on the deep-sonic file - one GFZ data request away).
+### Gate
+- 6,079 -> **6,081** (+2: B261 + B262 pins, both running the product
+  chains live). Simulator v1.85.0 -> **v1.87.0**; acceptance 89 ->
+  **99** (Sections X + Y). One era pin updated (simulator version lock).
+
 ## [0.424.0] — 2026-09-08 — THE LIVE-FORMS SHIP
 
 ### B260 — the live-derivation pass (Daniel's find-the-derivations order)

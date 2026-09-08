@@ -1750,3 +1750,4 @@ RATIOLOCK_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - the B196 MUGE.cpp extraction
 QUEUEZERO_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - extraction targets queued (MUGE.cpp aDPM; SGR 0501 seven terms; numeric a/b/c),v0.422.0
 DERIVATION_ARC,n/a,n/a,DELIVERED,the B196-class extraction queue drained (generator + aDPM + eleven terms + a/b/c),v0.423.0
 LIVEFORMS_ARC,n/a,n/a,NOT_APPLICABLE,live-forms band - table derivation work,v0.424.0
+USERDOOR_ARC,n/a,n/a,NOT_APPLICABLE,product band - the user door,v0.425.0
