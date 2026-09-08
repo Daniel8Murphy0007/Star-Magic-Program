@@ -676,3 +676,4 @@ CODETRUTH_ARC,40,batches 21-25 + Q-174a sweep,v0.420.0,rulings band merged: Mill
 RATIOLOCK_ARC,29,batches 26-29,v0.421.0,rulings band merged: ratio lock + canonical F_U + triadic convergence + live-verified mathematics
 QUEUEZERO_ARC,20,batches 30-31,v0.422.0,rulings band merged: QUEUE ZERO - the campaign completes with the Force Equivalence Class canonized
 DERIVATION_ARC,9,batches 32-33 + triple session,v0.423.0,extraction deliveries + PAPER_2260 canonizations merged
+LIVEFORMS_ARC,1,B260 live-derivation pass,v0.424.0,98 -> 0 inherited; 71+24+3+3 live classes

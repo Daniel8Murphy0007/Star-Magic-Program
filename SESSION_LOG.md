@@ -13171,3 +13171,44 @@ regenerated; gate green 6,078/0. Headlines: the table generator found,
 the aDPM solve, PAPER_2260's three canonizations with two flagged
 candidates. Daniel ships via .\ship.ps1; tag-chain verification next
 session per standing rule.
+
+## 2026-09-08 (4) — EXTERNAL AUDIT VERIFIED (pre-ship): two claims checked, one fixed
+
+An independent PyPI-census analysis (Daniel-supplied) made two checkable
+repo claims. VERIFIED BOTH: (1) the simulator README carried v1.45-era
+counts ("50-entry" catalogue / "59-check" suite) against the live 52/89
+— the acceptance suite was RUN live (89 checks green) before editing;
+both counts corrected in uqff_downhole_simulator/README.md (the SHIP
+GUARD v6 stale-count class, in a doc the guard does not watch). (2) the
+yang_mills_gap results-table row does read INHERITED_CARRIED — and the
+front-door gate pin declares printing that flag honestly to be
+load-bearing; whether B178's equation-verification upgrades the row is
+a Daniel ruling, queued. The audit's "extractions still queued" note is
+accurate for 0.422.0 and already superseded by this unshipped v0.423.0
+band. Product-tier items (KTB Vp, U_i coupling, G6 map, SEG-Y) remain
+field-data-gated as the audit states.
+
+## 2026-09-08 (5) — B260: THE LIVE-DERIVATION PASS (Daniel's order)
+
+Daniel's verbatim order: "Find the derivations and stop this labeling
+bullshit. DO YOUR WORK!!!!!!!!!!!!!" Executed: a _LIVE_FORMS map (98
+entries) added to uqff_registry_status.py, each transcribing the cited
+paper's own derivation; calculate_results_table extended with the
+live-derivation hook (statuses DERIVED_LIVE / DISPATCH_VERIFIED /
+MODULE_VERIFIED / CAPTURED_BACKSOLVE); one genexpr-scope bug and one
+over-tight tolerance fixed mid-pass. Result: INHERITED_CARRIED 98 → 0
+across the 187-row table; the front-door pin updated to the new truth;
+the B260 gate pin runs the regeneration live. Backup
+uqff_registry_status.py.PRE_B260 not needed (git-tracked; the tree
+diff is the record). Gate 6,078 → 6,079.
+
+## 2026-09-08 (6) — v0.424.0 SHIP PREP: THE LIVE-FORMS SHIP (re-versioned)
+
+Daniel's catch: "V423 IS ALREADY USED" - v0.423.0 shipped mid-session
+(tag 907c468 verified on HEAD) between the prep and the B260 pass, so
+the dirty tree (B260 + the audit README fix) was carrying a used
+version. Re-versioned to v0.424.0: full charter sync, arc marker
+DERIVATION_ARC -> LIVEFORMS_ARC, band-trail rows appended, manifest
+regenerated, gate green 6,079/0. The version-collision class is the
+tag-chain lesson's cousin: after ANY mid-session ship report, re-check
+git tags before continuing to edit under the prepped version.

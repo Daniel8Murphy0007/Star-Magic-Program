@@ -18,7 +18,7 @@ built toward:
    Φ_res = 0.84) applied to gauge physics. A synthetic linear template
    (TD ≈ 20,300 ft, 0.465 psi/ft, 0.018 °F/ft, six gauges) ships as the
    demo/fallback path only — it is not the product.
-2. **A 50-entry verbatim archive catalogue** (license-checked, Size-checksummed,
+2. **A 52-entry verbatim archive catalogue** (license-checked, Size-checksummed,
    provenance sidecars mandatory, every archive's own arithmetic re-derived at
    gate time) — the ground-truth training corpus.
 3. **The strata-inference layer** (`uqff_strata_join`, v1.69.0): depth-joins the
@@ -28,7 +28,7 @@ built toward:
    continents one site at a time), per Daniel's 2026-08-28 standing direction.
 
 Ingestion (LAS / historian CSV / file-follower / Modbus TCP), a two-stream
-reconciler, an operator surface, and a 59-check in-package acceptance suite
+reconciler, an operator surface, and an 89-check in-package acceptance suite
 complete the offline product. Honest-status flags are load-bearing: quantities
 without a measured or derived path say so (`PARAMETERS_USER_SUPPLIED`,
 `SIMULATION_SELF_TEST`) rather than pretending.

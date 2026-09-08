@@ -1749,3 +1749,4 @@ CODETRUTH_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content (M
 RATIOLOCK_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - the B196 MUGE.cpp extraction delivered its first formula (afluid) via B202,v0.421.0
 QUEUEZERO_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - extraction targets queued (MUGE.cpp aDPM; SGR 0501 seven terms; numeric a/b/c),v0.422.0
 DERIVATION_ARC,n/a,n/a,DELIVERED,the B196-class extraction queue drained (generator + aDPM + eleven terms + a/b/c),v0.423.0
+LIVEFORMS_ARC,n/a,n/a,NOT_APPLICABLE,live-forms band - table derivation work,v0.424.0

@@ -5,6 +5,30 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.424.0] — 2026-09-08 — THE LIVE-FORMS SHIP
+
+### B260 — the live-derivation pass (Daniel's find-the-derivations order)
+- The 98 INHERITED_CARRIED results-table rows drop to **ZERO**:
+  **71 DERIVED_LIVE** (closed forms transcribed from their cited papers
+  into _LIVE_FORMS and recomputed from primitives at generation time —
+  YM 1.736 = 2*D_phys*Lambda_QCD per PAPER_1318; proton integer
+  identities; mu_0 = 4pi*F_TRZ^7; the ladder rungs; 25!!; Li_26; 60+
+  more), **24 DISPATCH_VERIFIED**, **3 MODULE_VERIFIED**, **3
+  CAPTURED_BACKSOLVE** (honest Rule-7 records). The 4 pre-existing
+  LIVE_MISMATCH rows stay disclosed. Two bugs fixed mid-pass (genexpr
+  scope; over-tight mu_0 tolerance). The B260 gate pin re-runs the
+  regeneration at every gate; the front-door pin updated to the new
+  truth.
+### External-audit verification fix
+- Simulator README v1.45-era counts corrected to the live state
+  (52-entry catalogue / 89-check suite; acceptance run live before
+  editing). The audit's second finding (YM INHERITED_CARRIED) became
+  B260's trigger.
+### Gate
+- 6,078 -> **6,079** (+1 B260 pin with live regeneration). Version
+  note: v0.423.0 shipped mid-session; this band re-versioned to
+  v0.424.0 on Daniel's catch ("V423 IS ALREADY USED").
+
 ## [0.423.0] — 2026-09-08 — THE DERIVATION SHIP
 
 ### The extraction campaign delivers (Batches 32-33: B251-B256)

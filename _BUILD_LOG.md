@@ -484,3 +484,9 @@ Batches 32-33 + the triple session (B251-B259). Table generator found
 recovered; PAPER_2260 canonizes SSq^3 = Omega_b/Omega_DM, the Ikeda
 Bose anchor, the Holmlid triple convergence; two candidates flagged.
 Gate 6,078/0. Acceptance 89/89. Registry 7,067. DISPATCH 2,311.
+
+## v0.424.0 — 2026-09-08 — THE LIVE-FORMS SHIP
+B260: INHERITED_CARRIED 98 -> 0 (71 DERIVED_LIVE + 24 DISPATCH + 3
+MODULE + 3 CAPTURED); regeneration runs inside the gate; front-door
+pin updated; simulator README audit fix. Re-versioned from the
+mid-session v0.423.0 ship. Gate 6,079/0. Acceptance 89/89.

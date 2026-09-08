@@ -7612,3 +7612,16 @@ The campaign: 224 items → 0 Daniel-gated + 1 OPEN_CANDIDATE
 - **B259 (canonized):** **the Holmlid triple convergence** — ladder
   624.2 (EXACT) / Coulomb 626.2 / phonon 630 canonical, spread 0.92%;
   the (1+F_TRZ²) bridge FLAGGED (0.07%, no chain).
+
+## B260 — Daniel, 2026-09-08 ("Find the derivations and stop this labeling bullshit. DO YOUR WORK"): THE LIVE-DERIVATION PASS
+
+The 98 INHERITED_CARRIED results-table rows → **ZERO**. 71 closed forms
+transcribed from their cited papers into _LIVE_FORMS and recomputed
+live at generation time (YM 1.736 = 2·D_phys·Λ_QCD per PAPER_1318's
+own line; proton integer identities; μ₀ = 4π·F_TRZ⁷; the ladder rungs;
+25!!; the Li_26 sum; 60+ more); 24 DISPATCH_VERIFIED through their
+wired dispatches; 3 MODULE_VERIFIED family rows; 3 honest
+CAPTURED_BACKSOLVE records retained. The 4 pre-existing LIVE_MISMATCH
+rows stay disclosed. The regeneration + zero-count now run inside the
+gate. The labels were never the work — the derivations were, and they
+were in the corpus.

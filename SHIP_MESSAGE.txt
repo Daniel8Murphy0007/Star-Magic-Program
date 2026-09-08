@@ -1,31 +1,25 @@
-v0.423.0 — THE DERIVATION SHIP
+v0.424.0 — THE LIVE-FORMS SHIP
 
-The extraction campaign delivers and three queued derivations close.
-Batches 32-33 + the triple derivation session (B251-B259, PAPER_2260).
+The derivations found, not labeled. B260, on Daniel's order.
 
-- THE TABLE GENERATOR FOUND: 2 x asuper_freq of the CP3/PAPER_371
-  13-term set = the 152/158 resonance-table values at 0.005 pct - the
-  campaign's longest forensic arc closes; aDPM matches PAPER_180's
-  aborted self-audit exactly; afl confirms the B202 closed form.
-- THE aDPM SOLVE: the S49 unit-test value reverse-engineered EXACTLY
-  as the kinetic form (1/2)*Evac_neb*omega1^2 = 3.545e-42; two aDPM
-  constructs canonized with distinct symbols.
-- THE RECOVERIES: SGR 0501's eleven term closed forms (seven missing
-  recovered, four unique mechanisms); the two-branch a/b/c found
-  numeric with x2 = F_0/b code-confirmed; the two-generation seed fork
-  documented (C++ G-projection vs the T0 dpm_ug1_seed rewrite); the
-  F_0^2/b = 7.095e144 rho_SCm-mantissa echo logged as a lead.
-- PAPER_2260, THE TRIPLE SESSION: Omega_b/Omega_DM = SSq^3 CANONIZED
-  on the N=3 condensation cascade with the survival narrative (0.16
-  pct vs Planck, falsifiable); the Ikeda Bose anchor FORMALIZED (SSq
-  is a Bose occupation number - the second anchor now
-  statistical-mechanical); the Holmlid scale OVER-DETERMINED by three
-  independent routes within 0.92 pct.
-- HONESTY: the two closure candidates ((4/3)*F_TRZ^2 at 0.02 pct and
-  (1+F_TRZ^2) at 0.07 pct) REGISTERED FLAGGED per the
-  value-coincidence discipline - open targets, not canon. Zero new
-  free parameters. Every delivered chain recomputed live in the gate.
+- ZERO INHERITED: the 98 INHERITED_CARRIED results-table rows drop to
+  zero - 71 closed forms transcribed from their cited papers and
+  recomputed live from registry primitives at every generation
+  (Yang-Mills 1.736 = 2*D_phys*Lambda_QCD per PAPER_1318's own line;
+  the proton integer identities; mu_0 = 4pi*F_TRZ^7 Maxwell-EXACT;
+  k_B's five-term composition; the F_TRZ^20/^21 rungs; 25!!; the
+  Li_26 sum; a0 = c*H0/D_BSFG; sixty more), 24 verified through their
+  papers' wired dispatches, 3 family rows by live module census, and
+  3 genuine Rule-7 back-solve records honestly retained.
+- THE ZERO IS GUARDED: the B260 gate pin re-runs the full table
+  regeneration inside every gate run - the count cannot silently
+  regress. The front-door CLI prints the upgraded flags.
+- HONESTY: the 4 pre-existing LIVE_MISMATCH rows stay disclosed with
+  both values shown; the 3 back-solve records keep their true class.
+- ALSO ABOARD: the external-audit simulator-README count fix
+  (52-entry / 89-check, acceptance suite run live before editing).
+- VERSION NOTE: v0.423.0 shipped mid-session; this band re-versioned
+  to v0.424.0 on Daniel's catch.
 
-Registry 7,067 rows. Gate 6,078/0. Acceptance 89/89. DISPATCH 2,311.
-Next: the flagged-candidate chains, the grok-thread C++ pointers, and
-the open derivation-target ledger.
+Registry 7,067 rows. Results table 187 rows, ZERO inherited.
+Gate 6,079/0. Acceptance 89/89. DISPATCH 2,311.

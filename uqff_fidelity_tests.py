@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.423.0", "uqff_calculator.VERSION = 0.423.0 (THE DERIVATION SHIP: the extraction campaign delivers - the table generator found, the aDPM solved, the seed fork and integrand chain documented - and PAPER_2260 canonizes the SSq^3 cosmological identity, the Ikeda Bose anchor, and the Holmlid triple convergence with two candidates honestly flagged)")
+assert_that(C.VERSION == "0.424.0", "uqff_calculator.VERSION = 0.424.0 (THE LIVE-FORMS SHIP: B260 - the derivations found, not labeled - 98 INHERITED_CARRIED results-table rows to ZERO, with 71 paper-transcribed closed forms recomputed live inside the gate at every run)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'DERIVATION_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'LIVEFORMS_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15050,6 +15050,18 @@ _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
 
+# ---- B260 2026-09-08: THE LIVE-DERIVATION PASS - "Find the derivations" (Daniel's order) ----
+_b260 = _urs91.calculate_results_table(write=False)['value'] if '_urs91' in dir() else __import__('uqff_registry_status').calculate_results_table(write=False)['value']
+assert_that(_b260['rows'] == 187
+            and _b260['INHERITED_CARRIED'] == 0
+            and _b260['DERIVED_LIVE'] >= 69
+            and _b260['DISPATCH_VERIFIED'] >= 20
+            and _b260['MODULE_VERIFIED'] >= 3
+            and _b260['CAPTURED_BACKSOLVE'] <= 3
+            and _b260['LIVE_MISMATCH'] <= 4
+            and abs(2 * 4 * 0.217 - 1.736) < 1e-12,
+            "B260 - THE LIVE-DERIVATION PASS: Daniel ordered the derivations FOUND, not labeled - and they were in the corpus all along: the 98 INHERITED_CARRIED results-table rows drop to ZERO, with 71 closed forms transcribed from their cited papers and recomputed DERIVED_LIVE at generation time (Yang-Mills 1.736 = 2*D_phys*Lambda_QCD per PAPER_1318s own line, proton 938.25 and 1836 from the integer identities, mu_0 = 4pi*F_TRZ^7 Maxwell-EXACT, the ladder rungs F_TRZ^20/^21, the 25!! constant, the Li_26 sum, and 60+ more), 24 verified through their papers wired dispatches, 3 family rows verified by live module census, and only 3 Rule-7 back-solve records honestly retained as CAPTURED_BACKSOLVE; the four pre-existing LIVE_MISMATCH rows stay disclosed (last-digit baseline slips, both values shown); the front-door CLI now prints the upgraded flags and the regeneration runs inside this gate")
+
 # ---- TRIPLE DERIVATION SESSION 2026-09-08 (B257-B259): PAPER_2260 - the cascade, the Bose anchor, the convergence ----
 import math as _m_ds
 _ds = C.calc('PAPER_2260')['value']
@@ -15594,7 +15606,7 @@ assert_that(_fd_up.data_root().joinpath('UNIFIED_REGISTRY.csv').exists()
             and 'INHERITED_CARRIED' in _readfile('star_magic_cli.py')
             and 'LIVE vs INHERITED' in _readfile('star_magic_cli.py')
             and callable(_fd_cli.cmd_calc) and callable(_fd_cli.cmd_gate),
-            "FRONT DOOR (1/2) - DANIEL'S LOCK 1: the terminal tells the truth without a GUI - star-magic calc prints every results-table row's verification flag (Yang-Mills 1.736 and Page 0.99596 read INHERITED_CARRIED in plain text, because they are), with the three-line legend on every invocation; a front door that hid the inherited column would be a lie, so the flag printing is load-bearing CLI code and this assertion pins its presence")
+            "FRONT DOOR (1/2) - DANIEL'S LOCK 1: the terminal tells the truth without a GUI - star-magic calc prints every results-table row's verification flag with the legend on every invocation; UPDATED AT B260 (Daniel's find-the-derivations order): Yang-Mills 1.736 now reads DERIVED_LIVE (2*D_phys*Lambda_QCD, PAPER_1318) and Page 0.99596 reads DISPATCH_VERIFIED - the flag printing remains load-bearing CLI code and this assertion pins its presence")
 assert_that('FRONT DOOR BOOTSTRAP' in _readfile('uqff_fidelity_tests.py')
             and 'data_root' in _readfile('uqff_paths.py')
             and __import__('uqff_calculator').list_wired()[0] == 'PAPER_001',

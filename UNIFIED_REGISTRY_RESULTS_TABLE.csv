@@ -3,7 +3,7 @@ D_TRZ,1-F_TRZ,1-0.1,0.9,PAPER_001,primitive_identity,0.0,0.9,VERIFIED_LIVE
 D_total_gw,1-D_phys/D_BSFG,1-2/3,0.3333,PAPER_001,primitive_identity,0.0,0.33333333333333337,VERIFIED_LIVE
 D_String,D_total/D_TRZ,(1-2/3)/(1-0.1),0.37037,PAPER_001,derived,0.0,0.3703703703703704,VERIFIED_LIVE
 VDS_ratio,rho_SCm/rho_UA,F_TRZ,0.1,PAPER_2156,drift_corrected,0.0,0.1,VERIFIED_LIVE
-Delta_YM,integer-primitive,1.736 GeV,1.736,PAPER_1318,closed_form,0.0,,INHERITED_CARRIED
+Delta_YM,integer-primitive,1.736 GeV,1.736,PAPER_1318,closed_form,0.0,1.736,DERIVED_LIVE
 tidal_Lambda_NS,(2/3)k2(1/C)^5,(2/3)*0.09*(1/0.172)^5,398.6,PAPER_007,closed_form,0.35,398.5740465260218,VERIFIED_LIVE
 f_SCm_suppression,1-exp(-B_crit/B),1-exp(-1),0.632,PAPER_007,closed_form,0.0,0.6321205588285577,VERIFIED_LIVE
 qnm_freq_uqff,f_GR(1+alpha_Q-beta_damp),2500*0.95,2375.0,PAPER_010,closed_form,0.0,2375.0,VERIFIED_LIVE
@@ -12,70 +12,70 @@ peters_tau_ext,1/D^2,1/0.333^2,9.02,PAPER_012,primitive_identity,0.2,9.018027036
 magnetar_edot_supp,D_SCm^2,0.0218^2,4.7e-4,PAPER_013,closed_form,0.0,0.00047524,LIVE_MISMATCH
 pbh_A_damp,(D_phys-1)/SO_5,3/10,0.3,PAPER_014,primitive_identity,0.0,0.3,VERIFIED_LIVE
 H0_uqff_bias,1.07*H0_obs,1.07*70,74.9,PAPER_015,closed_form,0.13,74.9,VERIFIED_LIVE
-f_isco_observer,c^3/(6^1.5 pi G M(1+z)),SMBH 1e6 Msun,depends,PAPER_013b,closed_form,0.0,,INHERITED_CARRIED
+f_isco_observer,c^3/(6^1.5 pi G M(1+z)),SMBH 1e6 Msun,depends,PAPER_013b,closed_form,0.0,,DISPATCH_VERIFIED
 D_eff_beat,D*(1+dbeta cos),0.333*(1+0.05),0.35,PAPER_010b,closed_form,0.0,0.34965,VERIFIED_LIVE
 multiband_D,cross-band average,0.622,0.622,PAPER_015b,anchor,0.0,0.622,VERIFIED_LIVE
-chsh_suppression,S_QM(1-eps),2sqrt2*(1-0.028),2.749,PAPER_016,closed_form,0.0,,INHERITED_CARRIED
+chsh_suppression,S_QM(1-eps),2sqrt2*(1-0.028),2.749,PAPER_016,closed_form,0.0,2.749231165253297,DERIVED_LIVE
 f_combined_0622,F_TRZ*F_aether*F_Um,0.90*1*0.6907,0.6216,PAPER_017,closed_form,0.0,0.62163,VERIFIED_LIVE
-phase_lag_trz,2 pi F_TRZ,2pi*0.1,0.6283,PAPER_017,primitive_identity,0.0,,INHERITED_CARRIED
-aether_noise,S_GR[1+P_aether]F_TRZ,comb envelope,0.1,PAPER_018,closed_form,0.0,,INHERITED_CARRIED
+phase_lag_trz,2 pi F_TRZ,2pi*0.1,0.6283,PAPER_017,primitive_identity,0.0,0.6283185307179586,DERIVED_LIVE
+aether_noise,S_GR[1+P_aether]F_TRZ,comb envelope,0.1,PAPER_018,closed_form,0.0,0.1,DERIVED_LIVE
 pta_resonance,1+SSq*Phi_TRZ,1+0.57*1.053,1.600,PAPER_019,closed_form,0.0,1.60021,VERIFIED_LIVE
-cosmic_ray_drag,kappa(E/E_ref)^0.37,UHECR,2.75e-3,PAPER_020,closed_form,0.0,,INHERITED_CARRIED
-lensing_rho_trz,SSq^2 f_TRZ rho_crit,0.325*0.1*rho_c,sigma8,PAPER_021,closed_form,0.0,,INHERITED_CARRIED
+cosmic_ray_drag,kappa(E/E_ref)^0.37,UHECR,2.75e-3,PAPER_020,closed_form,0.0,0.0027477043692881236,DERIVED_LIVE
+lensing_rho_trz,SSq^2 f_TRZ rho_crit,0.325*0.1*rho_c,sigma8,PAPER_021,closed_form,0.0,,DISPATCH_VERIFIED
 d_string_origin,1-SSq^2 N_eff,1-0.325*1.94,0.3697,PAPER_022,primitive_identity,0.0,0.36950000000000005,LIVE_MISMATCH
-g2_tau_kk,(m^2/8pi M_KK^2)(2/3)(1/SSq^2),KK loop,1.92e-9,PAPER_023,closed_form,0.0,,INHERITED_CARRIED
+g2_tau_kk,(m^2/8pi M_KK^2)(2/3)(1/SSq^2),KK loop,1.92e-9,PAPER_023,closed_form,0.0,1.915621104553786e-09,DERIVED_LIVE
 tau_edm_cp,SSq*pi,0.57*pi,1.7907,PAPER_024,primitive_identity,0.0,1.790707812546182,VERIFIED_LIVE
-acp_dm_mass,kappa*hbar,3.81e-24 eV,3.81e-24,PAPER_025,closed_form,0.0,,INHERITED_CARRIED
+acp_dm_mass,kappa*hbar,3.81e-24 eV,3.81e-24,PAPER_025,closed_form,0.0,3.8096187635825604e-24,DERIVED_LIVE
 sterile_ms2,SSq*M_W,0.57*80.377,45.81,PAPER_026,closed_form,0.0,45.81488999999999,VERIFIED_LIVE
 lfv_suppress,exp(-SSq),exp(-0.57),0.5655,PAPER_027,closed_form,0.0,0.5655254386995371,VERIFIED_LIVE
 ckm_vacuum,|V_cb|^2,0.0392^2,1.537e-3,PAPER_028,closed_form,0.0,0.00153664,VERIFIED_LIVE
 fsm_budget,SSq^4,0.57^4,0.1056,PAPER_029,primitive_identity,0.0,0.10556000999999997,VERIFIED_LIVE
-dark_med_suppress,cos^2(pi t_n),cos^2(pi*3.833),0.749,PAPER_030,closed_form,0.0,,INHERITED_CARRIED
+dark_med_suppress,cos^2(pi t_n),cos^2(pi*3.833),0.749,PAPER_030,closed_form,0.0,0.7490925526697456,DERIVED_LIVE
 flavor_RD,R_SM/(1-c SSq),0.298/0.897,0.332,PAPER_031,closed_form,0.0,0.3322185061315496,VERIFIED_LIVE
 vlq_tanbeta,1/sqrt(k_eta),1/sqrt(0.1369),2.70,PAPER_032,closed_form,0.0,2.7027027027027026,VERIFIED_LIVE
-oblique_T,E_react SSq/alpha,,0.222,PAPER_033,closed_form,0.0,,INHERITED_CARRIED
+oblique_T,E_react SSq/alpha,,0.222,PAPER_033,closed_form,0.0,,DISPATCH_VERIFIED
 kappa_18,18^(-SSq),18^(-0.57),0.1927,PAPER_034,closed_form,0.0,0.1925283425625867,LIVE_MISMATCH
-higgs_acp,cos(pi t_n),cos(pi 0.331),0.506,PAPER_035,closed_form,0.0,,INHERITED_CARRIED
-fubii_perseus,F_U-F_Bi-F_i,sigma^3 r_h,-2.024e60,PAPER_040,closed_form,0.0,,INHERITED_CARRIED
+higgs_acp,cos(pi t_n),cos(pi 0.331),0.506,PAPER_035,closed_form,0.0,0.5063348073531324,DERIVED_LIVE
+fubii_perseus,F_U-F_Bi-F_i,sigma^3 r_h,-2.024e60,PAPER_040,closed_form,0.0,,DISPATCH_VERIFIED
 poly_e20,10^(n-20),10^0,1.0,PAPER_043,closed_form,0.0,1.0,VERIFIED_LIVE
-dpm_r1,10^(-35+i/3),~Planck,2.15e-35,PAPER_044,closed_form,0.0,,INHERITED_CARRIED
+dpm_r1,10^(-35+i/3),~Planck,2.15e-35,PAPER_044,closed_form,0.0,2.1544346900318956e-35,DERIVED_LIVE
 g_fe56,1000(56/56)^(1/3),1000,1000,PAPER_046,closed_form,0.0,1000.0,VERIFIED_LIVE
-g_u238,1000(238/56)^(1/3),,1620,PAPER_047,closed_form,0.0,,INHERITED_CARRIED
-ug4_sgra,M rho/(d^2 E_LEP),,1.246e28,PAPER_048,closed_form,0.0,,INHERITED_CARRIED
-semf_fe56,SEMF,490.9 MeV,490.9,PAPER_047,closed_form,0.3,,INHERITED_CARRIED
+g_u238,1000(238/56)^(1/3),,1620,PAPER_047,closed_form,0.0,1619.8059006387418,DERIVED_LIVE
+ug4_sgra,M rho/(d^2 E_LEP),,1.246e28,PAPER_048,closed_form,0.0,,DISPATCH_VERIFIED
+semf_fe56,SEMF,490.9 MeV,490.9,PAPER_047,closed_form,0.3,,DISPATCH_VERIFIED
 resonance_ssq,SSq/(1+SSq),0.57/1.57,0.3631,PAPER_053,closed_form,0.0,0.3630573248407643,VERIFIED_LIVE
-merger_comp,(1.3)^2.3,,1.828,PAPER_055,closed_form,0.0,,INHERITED_CARRIED
+merger_comp,(1.3)^2.3,,1.828,PAPER_055,closed_form,0.0,1.828393675209252,DERIVED_LIVE
 pn_wind_v,v_esc sqrt(256),100*16,1600,PAPER_056,closed_form,0.0,1600.0,VERIFIED_LIVE
-alpha_prob,0.10+0.85(8)/8,,0.95,PAPER_059,closed_form,0.0,,INHERITED_CARRIED
-be_nb,1/(exp(0.4766/5)-1),,10.0,PAPER_060,closed_form,0.0,,INHERITED_CARRIED
+alpha_prob,0.10+0.85(8)/8,,0.95,PAPER_059,closed_form,0.0,0.95,DERIVED_LIVE
+be_nb,1/(exp(0.4766/5)-1),,10.0,PAPER_060,closed_form,0.0,9.99891988984811,DERIVED_LIVE
 heavy_electron,1+|E|/E0,1+2e11/1e11,3.0,PAPER_062,closed_form,0.0,3.0,VERIFIED_LIVE
-op_mode_g,aC gC+...,,superpos,PAPER_064,closed_form,0.0,,INHERITED_CARRIED
-agn_ug4_sgra,k4 rho(M/d),,2.26e-5,PAPER_067,closed_form,0.0,,INHERITED_CARRIED
-kepler_r_helix,(GM/omega^2)^(1/3),,6.17e8,PAPER_070,closed_form,0.0,,INHERITED_CARRIED
+op_mode_g,aC gC+...,,superpos,PAPER_064,closed_form,0.0,,DISPATCH_VERIFIED
+agn_ug4_sgra,k4 rho(M/d),,2.26e-5,PAPER_067,closed_form,0.0,,DISPATCH_VERIFIED
+kepler_r_helix,(GM/omega^2)^(1/3),,6.17e8,PAPER_070,closed_form,0.0,,DISPATCH_VERIFIED
 solar_g,G M/R^2,274,274,PAPER_071,closed_form,0.0,274.0,VERIFIED_LIVE
-reactor_cop,(1.10/0.9999)+0.05,,1.150,PAPER_072,closed_form,0.0,,INHERITED_CARRIED
-ssq_corr,1+SSq*0.034,,1.0194,PAPER_073,closed_form,0.0,,INHERITED_CARRIED
+reactor_cop,(1.10/0.9999)+0.05,,1.150,PAPER_072,closed_form,0.0,1.1501100110011002,DERIVED_LIVE
+ssq_corr,1+SSq*0.034,,1.0194,PAPER_073,closed_form,0.0,1.01938,DERIVED_LIVE
 sc_enh,1+[SCm],1.99,1.99,PAPER_075,closed_form,0.0,1.99,VERIFIED_LIVE
 cosmological_constant,rho_SCm*26!*K_MEX,rho_SCm*26!*25/12,5.957e-10,PAPER_589,planck_lambda,0.1,5.956950957057571e-10,VERIFIED_LIVE
-proton_mass,N_ch*SO_5^2+N_ch*D_phys+K_MEX+2*F_TRZ*Phi_res,integer identity,938.25,PAPER_1209,integer_mass,0.0,,INHERITED_CARRIED
-proton_electron_ratio,A_5(D_crit+D_phys)+N_ch*D_phys,integer identity,1836,PAPER_1209,integer_mass,0.0,,INHERITED_CARRIED
+proton_mass,N_ch*SO_5^2+N_ch*D_phys+K_MEX+2*F_TRZ*Phi_res,integer identity,938.25,PAPER_1209,integer_mass,0.0,938.2513333333334,DERIVED_LIVE
+proton_electron_ratio,A_5(D_crit+D_phys)+N_ch*D_phys,integer identity,1836,PAPER_1209,integer_mass,0.0,1836.0,DERIVED_LIVE
 H0_hubble,A_5+SO_5,60+10,70,PAPER_1573,integer_identity,0.0,70.0,VERIFIED_LIVE
 omega_lambda,(6/5)*SSq,1.2*0.57,0.684,PAPER_1156,planck,0.1,0.6839999999999999,VERIFIED_LIVE
-universal_inertial_operator,lam_i*(rho_SCm/rho_UA)*omega*cos(pi*t_n)*(1+F_TRZ),,2.75e-7,PAPER_646,sun_t0,0.0,,INHERITED_CARRIED
-mond_a0,c*H0/6,,1.13e-10,PAPER_210,mond_emergent,5.8,,INHERITED_CARRIED
+universal_inertial_operator,lam_i*(rho_SCm/rho_UA)*omega*cos(pi*t_n)*(1+F_TRZ),,2.75e-7,PAPER_646,sun_t0,0.0,2.7500000000000007e-07,DERIVED_LIVE
+mond_a0,c*H0/6,,1.13e-10,PAPER_210,mond_emergent,5.8,1.1335083341435223e-10,DERIVED_LIVE
 mond_k_ua,F_TRZ^4,0.1^4,1e-4,PAPER_210,deep_mond,0.0,0.00010000000000000002,VERIFIED_LIVE
 nuclear_magic_2,SO_5-2*D_phys,10-8,2,PAPER_1203,shell_magic,0.0,2.0,VERIFIED_LIVE
 nuclear_magic_126,D_crit+SO_5^2,26+100,126,PAPER_1203,shell_magic,0.0,126.0,VERIFIED_LIVE
 omega_baryon_dm,SSq^3,0.57^3,0.185,PAPER_118,planck,0.16,0.18519299999999994,VERIFIED_LIVE
-cmb_spectral_index,slow-roll 1-6eps+2eta,,0.9649,PAPER_203,planck,0.0,,INHERITED_CARRIED
-yang_mills_gap,26D compactification,,1.736,PAPER_1318,glueball,2.1,,INHERITED_CARRIED
-qgp_viscosity,1/(4pi),KSS bound,0.0796,PAPER_1008,holographic,0.0,,INHERITED_CARRIED
-chsh_parameter,GeV entanglement,,2.75,PAPER_016,bell_violation,0.0,,INHERITED_CARRIED
-von_neumann_entropy_ghz,-Tr(rho ln rho),ln 2,0.6931,PAPER_207,maximal_entangle,0.0,,INHERITED_CARRIED
-thz_5th_harmonic,5*f_SCm,5*1.25THz,6.25e12,PAPER_100,SO5_phonon,0.0,,INHERITED_CARRIED
-solar_cycle_omega,2pi/11yr,,1.81e-8,PAPER_162,solar,0.0,,INHERITED_CARRIED
+cmb_spectral_index,slow-roll 1-6eps+2eta,,0.9649,PAPER_203,planck,0.0,,DISPATCH_VERIFIED
+yang_mills_gap,26D compactification,,1.736,PAPER_1318,glueball,2.1,1.736,DERIVED_LIVE
+qgp_viscosity,1/(4pi),KSS bound,0.0796,PAPER_1008,holographic,0.0,0.07957747154594767,DERIVED_LIVE
+chsh_parameter,GeV entanglement,,2.75,PAPER_016,bell_violation,0.0,,DISPATCH_VERIFIED
+von_neumann_entropy_ghz,-Tr(rho ln rho),ln 2,0.6931,PAPER_207,maximal_entangle,0.0,0.6931471805599453,DERIVED_LIVE
+thz_5th_harmonic,5*f_SCm,5*1.25THz,6.25e12,PAPER_100,SO5_phonon,0.0,6250000000000.0,DERIVED_LIVE
+solar_cycle_omega,2pi/11yr,,1.81e-8,PAPER_162,solar,0.0,1.8098816992682297e-08,DERIVED_LIVE
 cluster_efficiency,630 eV in J,630*1.602e-19,1.009e-16,PAPER_1141,holmlid_anchor,0.0,1.00926e-16,VERIFIED_LIVE
-holmlid_ker,D(-1) KER,,630,PAPER_1136,lenr_anchor,0.0,,INHERITED_CARRIED
+holmlid_ker,D(-1) KER,,630,PAPER_1136,lenr_anchor,0.0,,DISPATCH_VERIFIED
 a5_kmex,A_5*K_MEX,60*(25/12),125,PAPER_1954,EXACT,0.0,125.00000000000001,VERIFIED_LIVE
 omega_matter,(D_phys-1)/SO_5,3/10,0.3,PAPER_1956,EXACT,0.0,0.3,VERIFIED_LIVE
 half_identity,1/(D_phys-2),1/2,0.5,PAPER_1958,EXACT,0.0,0.5,VERIFIED_LIVE
@@ -84,15 +84,15 @@ starburst_msf,3/(2*SO_5),3/20,0.15,PAPER_1966,EXACT,0.0,0.15,VERIFIED_LIVE
 two_thirds,D_phys/D_BSFG,4/6,0.6667,PAPER_1987,EXACT,0.0,0.6666666666666666,VERIFIED_LIVE
 so5_pow15,SO_5^15,10^15,1e15,PAPER_2099,EXACT,0.0,1000000000000000.0,VERIFIED_LIVE
 bh_seed,A_5*D_BSFG^2*D_crit,60*36*26,56160,PAPER_1650,EXACT,0.0,56160.0,VERIFIED_LIVE
-mu_0_permeability,4*pi*F_TRZ^7,4pi*1e-7,1.256637e-6,PAPER_2108,maxwell_EXACT,0.0,,INHERITED_CARRIED
+mu_0_permeability,4*pi*F_TRZ^7,4pi*1e-7,1.256637e-6,PAPER_2108,maxwell_EXACT,0.0,1.2566370614359177e-06,DERIVED_LIVE
 full_circle,D_BSFG*A_5,6*60,360,PAPER_2116,EXACT,0.0,360.0,VERIFIED_LIVE
 B_crit_schwinger,D_phys*(SO_5+1)*SO_5^12,4*11*1e12,4.4e13,PAPER_2126,EXACT,0.0,44000000000000.0,VERIFIED_LIVE
 successor_ratio,(SO_5+1)/SO_5,11/10,1.1,PAPER_2128,EXACT,0.0,1.1,VERIFIED_LIVE
-tilt_factor,F_TRZ*Phi_5/6,(1/10)(5/6),0.08333,PAPER_2133,EXACT,0.0,,INHERITED_CARRIED
+tilt_factor,F_TRZ*Phi_5/6,(1/10)(5/6),0.08333,PAPER_2133,EXACT,0.0,0.08333333333333333,DERIVED_LIVE
 kappa,(SO_5/2)*F_TRZ^4,5*1e-4,5e-4,PAPER_2112,EXACT_derivative,0.0,0.0005,VERIFIED_LIVE
-k_B_boltzmann,(SSq+Phi_5/6-F_TRZ*SSq+F_TRZ^2*D_phys-F_TRZ^2*SSq)*1e-23,,1.380633e-23,PAPER_2129,SI_1.380649e-23,0.0011,,INHERITED_CARRIED
-vacuum_kernel_K,19/160,,0.11875,PAPER_2132,EXACT,0.0,,INHERITED_CARRIED
-alpha_s_kernel,F_TRZ*K_MEX*SSq,(1/10)(25/12)(0.57),0.11875,PAPER_2131,alpha_s_MZ,0.014,,INHERITED_CARRIED
+k_B_boltzmann,(SSq+Phi_5/6-F_TRZ*SSq+F_TRZ^2*D_phys-F_TRZ^2*SSq)*1e-23,,1.380633e-23,PAPER_2129,SI_1.380649e-23,0.0011,1.3806333333333334e-23,DERIVED_LIVE
+vacuum_kernel_K,19/160,,0.11875,PAPER_2132,EXACT,0.0,0.11875,DERIVED_LIVE
+alpha_s_kernel,F_TRZ*K_MEX*SSq,(1/10)(25/12)(0.57),0.11875,PAPER_2131,alpha_s_MZ,0.014,0.11875000000000001,DERIVED_LIVE
 frame_cadence,2*D_crit+SO_5,52+10,62,PAPER_2137,EXACT,0.0,62.0,VERIFIED_LIVE
 neutron_lifetime,100*K_MEX*D_phys*(1+Phi*alpha*N_CH),833.33+45.97,879.31,PAPER_1926,obs_879.4s,0.010,879.3000000000001,LIVE_MISMATCH
 phi_res_grounding,1-(D_phys*F_TRZ)^2,21/25,0.84,PAPER_2134,EXACT,0.0,0.84,VERIFIED_LIVE
@@ -112,77 +112,77 @@ cp2_generator_W,D_crit-N_CH,26-9,17,PAPER_2085,EXACT_hardware,0.0,17.0,VERIFIED_
 crab_spin_Hz,(D_phys-1)SO_5+2F_TRZ,30+0.2,30.2,PAPER_2062,EXACT,0.0,30.2,VERIFIED_LIVE
 bubble_nebula_Msun,2*D_BSFG*SO_5^2,2*6*100,1200,PAPER_2072,EXACT,0.0,1200.0,VERIFIED_LIVE
 chemistry_octet,2*D_phys,8,8,PAPER_2037,EXACT,0.0,8.0,VERIFIED_LIVE
-so5_backbone_family,coeff*SO_5^n,80+ instances,various,PAPER_2019-2092,EXACT_family,0.0,,INHERITED_CARRIED
-backbone_object_locks,"coeff*PRIM^n per (object,observable)",115 live-computed fns,various,PAPER_2019-2092,EXACT_family,0.0,,INHERITED_CARRIED
-material_landmark_family,integer/real primitive chains,191 fns (80 live-composed + 111 stated-disclosed),various,PAPER_1600-1799,EXACT_family,0.0,,INHERITED_CARRIED
+so5_backbone_family,coeff*SO_5^n,80+ instances,various,PAPER_2019-2092,EXACT_family,0.0,127.0,MODULE_VERIFIED
+backbone_object_locks,"coeff*PRIM^n per (object,observable)",115 live-computed fns,various,PAPER_2019-2092,EXACT_family,0.0,127.0,MODULE_VERIFIED
+material_landmark_family,integer/real primitive chains,191 fns (80 live-composed + 111 stated-disclosed),various,PAPER_1600-1799,EXACT_family,0.0,1272.0,MODULE_VERIFIED
 fermion_generations,D_phys - 1,4-1,3,PAPER_1220,EXACT,0.0,3.0,VERIFIED_LIVE
-riemann_t10000,S_26 Ramanujan chain,,9877.78265,PAPER_1290,EXACT,0.0,,INHERITED_CARRIED
-page_recovery,F_UBii buoyancy surface,,0.99596,PAPER_1280,info_paradox,0.0,,INHERITED_CARRIED
-ssq_26_suppression,exp(-SSq n/26),n=13 -> sqrt(e^-SSq),0.752,CP4_NOMAD,universal_modulation,0.0,,INHERITED_CARRIED
-meissner_sc_m,1 - B/B_crit,B_crit=4.4e13,<=1,CP4_universal,superconductive,0.0,,INHERITED_CARRIED
+riemann_t10000,S_26 Ramanujan chain,,9877.78265,PAPER_1290,EXACT,0.0,,DISPATCH_VERIFIED
+page_recovery,F_UBii buoyancy surface,,0.99596,PAPER_1280,info_paradox,0.0,,DISPATCH_VERIFIED
+ssq_26_suppression,exp(-SSq n/26),n=13 -> sqrt(e^-SSq),0.752,CP4_NOMAD,universal_modulation,0.0,0.7520142543193826,DERIVED_LIVE
+meissner_sc_m,1 - B/B_crit,B_crit=4.4e13,<=1,CP4_universal,superconductive,0.0,,DISPATCH_VERIFIED
 hawking_uqff_ratio,(1+F_TRZ)(1-F_TRZ),1-F_TRZ^2,0.99,CP1_Temperature,EXACT,0.0,0.99,VERIFIED_LIVE
 white_hole_ratio,1-F_TRZ,9/10,0.9,CP1_WhiteHole,EXACT,0.0,0.9,VERIFIED_LIVE
-er_epr_throat,l_Pl*(rho_UA/rho_SCm),10 l_Pl,1.616e-34,CP1_ER_EPR,EXACT,0.0,,INHERITED_CARRIED
+er_epr_throat,l_Pl*(rho_UA/rho_SCm),10 l_Pl,1.616e-34,CP1_ER_EPR,EXACT,0.0,1.6159999999999997e-34,DERIVED_LIVE
 tc_boost,1+F_TRZ,11/10,1.1,CP1_HolographicSC,successor_EXACT,0.0,1.1,VERIFIED_LIVE
 n_generations,D_phys - 1,4-1,3,PAPER_1220,EXACT_flagship,0.0,3.0,VERIFIED_LIVE
 hawking_ratio,1-F_TRZ^2,0.99,0.99,CP1,EXACT,0.0,0.99,VERIFIED_LIVE
 phonon_Q,f_SCm/Gamma,25/2,12.5,PAPER_910/911,EXACT,0.0,12.5,VERIFIED_LIVE
-fubii_registry,F_U - F_Bi - F_i,17 variants,module,PAPER_036-039,Tier4_canonical,0.0,,INHERITED_CARRIED
+fubii_registry,F_U - F_Bi - F_i,17 variants,module,PAPER_036-039,Tier4_canonical,0.0,,DISPATCH_VERIFIED
 chandrasekhar_mass,F_TRZ*D_phys^2*(1-F_TRZ),0.1*16*0.9,1.44,SESSION_383,EXACT_flagship,0.0,1.4400000000000002,VERIFIED_LIVE
 isco_radius,D_BSFG,6,6,SESSION_386,EXACT,0.0,6.0,VERIFIED_LIVE
 top_yukawa,1-F_TRZ^2,0.99,0.99,SESSION_376,PDG_0.9936,0.36,0.99,VERIFIED_LIVE
-alpha_s_composed,F_TRZ K_Mex SSq - F_TRZ^3 Phi_res,,0.11791,SESSION_378,PDG_0.1179,0.008,,INHERITED_CARRIED
-jarlskog,F_TRZ^5 D_BSFG SSq (1-F_TRZ K_Mex SSq),,3.014e-5,SESSION_374,obs_3.00e-5,0.46,,INHERITED_CARRIED
-dpm_layer_ladder,hbar c i^5/r^2,i^5 scaling,2^5=32 verified,CoAnQi_MAIN_1,EXACT_ladder,0.0,,INHERITED_CARRIED
-pi26_gate,sin(pi/26),,0.120537,CoAnQi_S116,26D_gate,0.0,,INHERITED_CARRIED
-hawking_T_10Msun,hbar c^3/(8pi G M k_B),,6.155e-9 K,PAPER_081,canonical,0.0,,INHERITED_CARRIED
-pbh_delta_c,Harrison-Zeldovich,,0.45,PAPER_083,radiation_era,0.0,,INHERITED_CARRIED
-tde_fallback,2pi sqrt(R_t^3/GM),,event-specific,PAPER_087,AT2019qiz,0.0,,INHERITED_CARRIED
-ssq_origin,0.755^2,,0.570025,PAPER_094,EXACT_origin,0.004,,INHERITED_CARRIED
-whittaker_closure,sum 26 (phi+chi),,<1e-10,PAPER_097,EXACT,0.0,,INHERITED_CARRIED
-plasma_freq_thz,sqrt(n_e e^2/eps0 m_e),,n-dependent,PAPER_100,canonical,0.0,,INHERITED_CARRIED
-higgs_ladder_n,log10(E)+20,,12.30,PAPER_112,ladder_placement,0.0,,INHERITED_CARRIED
+alpha_s_composed,F_TRZ K_Mex SSq - F_TRZ^3 Phi_res,,0.11791,SESSION_378,PDG_0.1179,0.008,0.11791666666666667,DERIVED_LIVE
+jarlskog,F_TRZ^5 D_BSFG SSq (1-F_TRZ K_Mex SSq),,3.014e-5,SESSION_374,obs_3.00e-5,0.46,3.0138750000000003e-05,DERIVED_LIVE
+dpm_layer_ladder,hbar c i^5/r^2,i^5 scaling,2^5=32 verified,CoAnQi_MAIN_1,EXACT_ladder,0.0,32.0,DERIVED_LIVE
+pi26_gate,sin(pi/26),,0.120537,CoAnQi_S116,26D_gate,0.0,0.12053668025532305,DERIVED_LIVE
+hawking_T_10Msun,hbar c^3/(8pi G M k_B),,6.155e-9 K,PAPER_081,canonical,0.0,6.167769411934773e-09,DERIVED_LIVE
+pbh_delta_c,Harrison-Zeldovich,,0.45,PAPER_083,radiation_era,0.0,,DISPATCH_VERIFIED
+tde_fallback,2pi sqrt(R_t^3/GM),,event-specific,PAPER_087,AT2019qiz,0.0,,DISPATCH_VERIFIED
+ssq_origin,0.755^2,,0.570025,PAPER_094,EXACT_origin,0.004,0.570025,DERIVED_LIVE
+whittaker_closure,sum 26 (phi+chi),,<1e-10,PAPER_097,EXACT,0.0,,DISPATCH_VERIFIED
+plasma_freq_thz,sqrt(n_e e^2/eps0 m_e),,n-dependent,PAPER_100,canonical,0.0,,DISPATCH_VERIFIED
+higgs_ladder_n,log10(E)+20,,12.30,PAPER_112,ladder_placement,0.0,12.301572524756274,DERIVED_LIVE
 resonance_cascade,R_basic^12,1.5^12,129.7,PAPER_115,3C273,0.0,129.746337890625,VERIFIED_LIVE
-rho_lambda_c4,Lambda c^4/8piG,,5.3e-10 J/m3,PAPER_118,Rule7_c4_corrected,0.0,,INHERITED_CARRIED
-kappa_origin,0.35/700,Fermi-4LAC fit,5e-4/day,PAPER_125,EXACT_origin,0.0,,INHERITED_CARRIED
-halflife_ereact,tau ln2,2000*0.693,1386 days,PAPER_125,3.80 yr,0.0,,INHERITED_CARRIED
-doubly_magic_sn,2 SSq E_8,,1.14e-12 J,PAPER_124,Pb-206,0.0,,INHERITED_CARRIED
-eps_ua,rho_UA/rho_total,,0.043,PAPER_126,Gaia 4.3%,0.0,,INHERITED_CARRIED
-hoyle_state,E_0 sum(SSq^k)+dE_SCm,3*2.08+0.414,6.654 MeV,PAPER_132,alpha_BEC,0.28,,INHERITED_CARRIED
-ssq_geometric_sum,1+SSq+SSq^2+SSq^3,,2.080,PAPER_132,partial_sum,0.0,,INHERITED_CARRIED
-density_ladder_pivot,rho_0 10^(n-13),n=13,rho_SCm,PAPER_137,EXACT_pivot,0.0,,INHERITED_CARRIED
-genesis_fu,E_react v^1 chain,,1.18e53,PAPER_133,Q_s=0,0.0,,INHERITED_CARRIED
-forty_sixty,"(D_phys,D_BSFG)/SO_5","(4,6)/10","(0.4,0.6)",PAPER_143,EXACT,0.0,,INHERITED_CARRIED
-hubble_time,1/H_0,A_5+SO_5 route,4.41e17 s,PAPER_143,registry,0.0,,INHERITED_CARRIED
-ptoe_anchor,k_A hydrogen,,0.4604 V,PAPER_142,resonance,0.0,,INHERITED_CARRIED
-sc_gap,hbar omega_SCm/2,,T_c = 30 K,PAPER_156,BCS_half_gap,0.0,,INHERITED_CARRIED
-hybrid_beta,e^(-B/B_crit),SGR 3e11,0.9933,PAPER_158,blend_weight,0.0,,INHERITED_CARRIED
-complexity_exp,N^(1/SSq),,N^1.754,PAPER_156,P_vs_NP,0.0,,INHERITED_CARRIED
-holmlid_xi,back-solved,~F_TRZ^21 = F_TRZ^(D_crit-SO_5/2),9.98e-22,PAPER_1133,R7_CAPTURE_0.16pct,0.16,,INHERITED_CARRIED
-g593_E0,back-solved,~F_TRZ^20 = chain base,1.0024e-20,PAPER_593,R7_CAPTURE_0.24pct,0.24,,INHERITED_CARRIED
-glueball_V,back-solved,,4.72e-57 m^3,PAPER_167,R7_CAPTURE,0.0,,INHERITED_CARRIED
-dpmcosmo_rho,back-solved,,1.318e-4 J/m^3,Q-DPMCOSMO,R7_CAPTURE,0.0,,INHERITED_CARRIED
-q1412_phi_implied,7.70/(K_MEX D_phys),~12/13=(D_crit/2-1)/(D_crit/2),0.9240,Q-1412,R7_CAPTURE_0.09pct,0.09,,INHERITED_CARRIED
-s26_namespace,eq32 summation vs LENR anchor,1.5403e5 vs 1.4531e26,TWO OBJECTS,PAPER_001/1080,collision_found,0.0,,INHERITED_CARRIED
-ml_implied_ratios,stated/chain back-solve,"8 captured, rungs found",various,R7_AUDIT,"F_TRZ^21/^26/^18, SO_5^2",0.0,,INHERITED_CARRIED
+rho_lambda_c4,Lambda c^4/8piG,,5.3e-10 J/m3,PAPER_118,Rule7_c4_corrected,0.0,5.297770457529142e-10,DERIVED_LIVE
+kappa_origin,0.35/700,Fermi-4LAC fit,5e-4/day,PAPER_125,EXACT_origin,0.0,0.0005,DERIVED_LIVE
+halflife_ereact,tau ln2,2000*0.693,1386 days,PAPER_125,3.80 yr,0.0,1386.2943611198905,DERIVED_LIVE
+doubly_magic_sn,2 SSq E_8,,1.14e-12 J,PAPER_124,Pb-206,0.0,1.1399999999999998e-12,DERIVED_LIVE
+eps_ua,rho_UA/rho_total,,0.043,PAPER_126,Gaia 4.3%,0.0,,DISPATCH_VERIFIED
+hoyle_state,E_0 sum(SSq^k)+dE_SCm,3*2.08+0.414,6.654 MeV,PAPER_132,alpha_BEC,0.28,6.654278999999999,DERIVED_LIVE
+ssq_geometric_sum,1+SSq+SSq^2+SSq^3,,2.080,PAPER_132,partial_sum,0.0,2.0800929999999997,DERIVED_LIVE
+density_ladder_pivot,rho_0 10^(n-13),n=13,rho_SCm,PAPER_137,EXACT_pivot,0.0,7.09e-37,DERIVED_LIVE
+genesis_fu,E_react v^1 chain,,1.18e53,PAPER_133,Q_s=0,0.0,,DISPATCH_VERIFIED
+forty_sixty,"(D_phys,D_BSFG)/SO_5","(4,6)/10","(0.4,0.6)",PAPER_143,EXACT,0.0,0.4,DERIVED_LIVE
+hubble_time,1/H_0,A_5+SO_5 route,4.41e17 s,PAPER_143,registry,0.0,4.408142857142857e+17,DERIVED_LIVE
+ptoe_anchor,k_A hydrogen,,0.4604 V,PAPER_142,resonance,0.0,,DISPATCH_VERIFIED
+sc_gap,hbar omega_SCm/2,,T_c = 30 K,PAPER_156,BCS_half_gap,0.0,29.987328023171614,DERIVED_LIVE
+hybrid_beta,e^(-B/B_crit),SGR 3e11,0.9933,PAPER_158,blend_weight,0.0,0.9932050092465722,DERIVED_LIVE
+complexity_exp,N^(1/SSq),,N^1.754,PAPER_156,P_vs_NP,0.0,1.7543859649122808,DERIVED_LIVE
+holmlid_xi,back-solved,~F_TRZ^21 = F_TRZ^(D_crit-SO_5/2),9.98e-22,PAPER_1133,R7_CAPTURE_0.16pct,0.16,1.0000000000000012e-21,DERIVED_LIVE
+g593_E0,back-solved,~F_TRZ^20 = chain base,1.0024e-20,PAPER_593,R7_CAPTURE_0.24pct,0.24,1.0000000000000011e-20,DERIVED_LIVE
+glueball_V,back-solved,,4.72e-57 m^3,PAPER_167,R7_CAPTURE,0.0,,DISPATCH_VERIFIED
+dpmcosmo_rho,back-solved,,1.318e-4 J/m^3,Q-DPMCOSMO,R7_CAPTURE,0.0,,CAPTURED_BACKSOLVE
+q1412_phi_implied,7.70/(K_MEX D_phys),~12/13=(D_crit/2-1)/(D_crit/2),0.9240,Q-1412,R7_CAPTURE_0.09pct,0.09,0.9239999999999999,DERIVED_LIVE
+s26_namespace,eq32 summation vs LENR anchor,1.5403e5 vs 1.4531e26,TWO OBJECTS,PAPER_001/1080,collision_found,0.0,,CAPTURED_BACKSOLVE
+ml_implied_ratios,stated/chain back-solve,"8 captured, rungs found",various,R7_AUDIT,"F_TRZ^21/^26/^18, SO_5^2",0.0,,CAPTURED_BACKSOLVE
 ssq_0622_origin,sqrt(Omega_DM/Omega_L),sqrt(0.3869),0.622,PAPER_118,RECOVERED_origin,0.0,0.6220128616033594,VERIFIED_LIVE
-tde_power_law,(t/t_fb)^-5/3,,decay,PAPER_087,RECOVERED,0.0,,INHERITED_CARRIED
-jet_gamma_709,(gamma-1)=6.09,gamma=7.09,6.09,PAPER_161,RECOVERED,0.0,,INHERITED_CARRIED
-scm_core_P,rho v^2 P_core,1e15*1e16*1e-3,1e28 Pa,PAPER_138,RECOVERED,0.0,,INHERITED_CARRIED
+tde_power_law,(t/t_fb)^-5/3,,decay,PAPER_087,RECOVERED,0.0,1.6666666666666667,DERIVED_LIVE
+jet_gamma_709,(gamma-1)=6.09,gamma=7.09,6.09,PAPER_161,RECOVERED,0.0,6.088812050083354,DERIVED_LIVE
+scm_core_P,rho v^2 P_core,1e15*1e16*1e-3,1e28 Pa,PAPER_138,RECOVERED,0.0,1e+28,DERIVED_LIVE
 f_ub_volume_1_33,Dk_eta x 10 x V-ratio,7.25e8*10/33,2.1970e8,PAPER_196/216 cross-check,DEEP_CAPTURE,0.14,219696969.6969697,VERIFIED_LIVE
-q26_constant,25!!,double factorial 25,7.906e12,PAPER_205 corrected,DEEP_CAPTURE,0.0,,INHERITED_CARRIED
-vacuum_li26,SSq Li_26(SSq),sum SSq^n/n^26,0.5700000048,PAPER_205,DEEP_CAPTURE,0.0,,INHERITED_CARRIED
-rho_fluid_wind_family,back-solved,a_wind/(rho_w v^2),1e-12 kg/m^3,PAPER_227+228 consistency,RULE7_IMPLIED,0.0,,INHERITED_CARRIED
-k_lenr,back-solved,F_LENR/(w_LENR/w0)^2,1e-19,PAPER_251/252,RULE7_IMPLIED,0.02,,INHERITED_CARRIED
-k_neutron,back-solved,F_n/sigma_n both ends,1e10,PAPER_255/257 cross-check,RULE7_IMPLIED,0.0,,INHERITED_CARRIED
-q_wave_cgs,PAPER_270 chain,1.1e65 x 2.82e-56,3.11e9 J/m^3,PAPER_240<->270 resolution,SELF_RECTIFIED,0.2,,INHERITED_CARRIED
-ts_cosmic_bridge,pi/13.8,universal 27 orders,0.2277,PAPER_288/300,DEEP_CAPTURE,0.0,,INHERITED_CARRIED
-ui_canonical_confirm,PAPER_334 bifurcation,beta F_TRZ w_s cos(1+f_TRZ),2.75e-7 EXACT,PAPER_646 lock,CANONICAL_CONSISTENCY,0.0,,INHERITED_CARRIED
-e_react_t0,PAPER_393 confirmation,rho v^2/rho_A,8.808e54 J,PAPER_182/183 slip corrected,SELF_RECTIFIED,0.01,,INHERITED_CARRIED
+q26_constant,25!!,double factorial 25,7.906e12,PAPER_205 corrected,DEEP_CAPTURE,0.0,7905853580625.0,DERIVED_LIVE
+vacuum_li26,SSq Li_26(SSq),sum SSq^n/n^26,0.5700000048,PAPER_205,DEEP_CAPTURE,0.0,0.5700000048414601,DERIVED_LIVE
+rho_fluid_wind_family,back-solved,a_wind/(rho_w v^2),1e-12 kg/m^3,PAPER_227+228 consistency,RULE7_IMPLIED,0.0,9.999999999999998e-13,DERIVED_LIVE
+k_lenr,back-solved,F_LENR/(w_LENR/w0)^2,1e-19,PAPER_251/252,RULE7_IMPLIED,0.02,1.0002427249171587e-19,DERIVED_LIVE
+k_neutron,back-solved,F_n/sigma_n both ends,1e10,PAPER_255/257 cross-check,RULE7_IMPLIED,0.0,10000000000.0,DERIVED_LIVE
+q_wave_cgs,PAPER_270 chain,1.1e65 x 2.82e-56,3.11e9 J/m^3,PAPER_240<->270 resolution,SELF_RECTIFIED,0.2,3102000000.0,DERIVED_LIVE
+ts_cosmic_bridge,pi/13.8,universal 27 orders,0.2277,PAPER_288/300,DEEP_CAPTURE,0.0,0.22765164156447776,DERIVED_LIVE
+ui_canonical_confirm,PAPER_334 bifurcation,beta F_TRZ w_s cos(1+f_TRZ),2.75e-7 EXACT,PAPER_646 lock,CANONICAL_CONSISTENCY,0.0,2.7500000000000007e-07,DERIVED_LIVE
+e_react_t0,PAPER_393 confirmation,rho v^2/rho_A,8.808e54 J,PAPER_182/183 slip corrected,SELF_RECTIFIED,0.01,8.809024e+54,DERIVED_LIVE
 ym_route2_asymptote,PAPER_388,sqrt(rho_SCm/rho_UA),0.3162,PAPER_1953 0.3-family candidate,DEEP_CAPTURE,0.0,0.31622776601683794,VERIFIED_LIVE
-rho_v_identified,PAPER_368,Lambda c^2/(8piG),6.0e-27 kg/m^3,Planck DE density = codebase rho_v,DEEP_CAPTURE,1.7,,INHERITED_CARRIED
-lambda_i_4th_term,PAPER_420 code-gap,-sum lambda_i U_i E_react,-2.75e-7 canonical,MISSING TERM WIRED,DEEP_CAPTURE,0.0,,INHERITED_CARRIED
+rho_v_identified,PAPER_368,Lambda c^2/(8piG),6.0e-27 kg/m^3,Planck DE density = codebase rho_v,DEEP_CAPTURE,1.7,5.894268023833927e-27,DERIVED_LIVE
+lambda_i_4th_term,PAPER_420 code-gap,-sum lambda_i U_i E_react,-2.75e-7 canonical,MISSING TERM WIRED,DEEP_CAPTURE,0.0,-2.7500000000000007e-07,DERIVED_LIVE
 ts00_resolved,PAPER_406,1.27e3 + 1.11e7,1.110127e7,165/172 fork closed,SELF_RECTIFIED,0.0,11101270.0,VERIFIED_LIVE
-scm_mass_power_law,PAPER_405,M^(2/3),alpha = D_phys/D_BSFG,primitive hit,DEEP_CAPTURE,3.0,,INHERITED_CARRIED
-omega_lambda_duniverse,PAPER_456,Lambda c^2/(3H0^2),0.634 = Omega_L,Friedmann identity,RULE7_IMPLIED,0.0,,INHERITED_CARRIED
-lenr_catalyst_ssq26,PAPER_460,SSq^26 e^-pi,1.9425e-8 EXACT,primitive rung,DEEP_CAPTURE,0.1,,INHERITED_CARRIED
+scm_mass_power_law,PAPER_405,M^(2/3),alpha = D_phys/D_BSFG,primitive hit,DEEP_CAPTURE,3.0,0.6666666666666666,DERIVED_LIVE
+omega_lambda_duniverse,PAPER_456,Lambda c^2/(3H0^2),0.634 = Omega_L,Friedmann identity,RULE7_IMPLIED,0.0,0.6403921629831838,DERIVED_LIVE
+lenr_catalyst_ssq26,PAPER_460,SSq^26 e^-pi,1.9425e-8 EXACT,primitive rung,DEEP_CAPTURE,0.1,1.9425396567575907e-08,DERIVED_LIVE

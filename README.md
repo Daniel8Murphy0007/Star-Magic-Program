@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.423.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.423.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.424.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.424.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6078%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6079%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2311-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.423.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.424.0 complete-compile campaign live**
 
-**This release (v0.423.0): THE DERIVATION SHIP — the extraction campaign delivers and three queued derivations close.** Batches 32–33 + the triple derivation session (B251–B259, PAPER_2260 authored). **The extractions:** the resonance-table GENERATOR FOUND — the CP3/PAPER_371 13-term set's 2×asuper_freq = 1.65496e45 matches the 152/158 tables at 0.005% (the ×2 ruled the generating-run artifact; the campaign's longest forensic arc closes), with aDPM = 2.7995e24 matching PAPER_180's aborted self-audit exactly and afl confirming the B202 closed form; the S49 aDPM SOLVED EXACTLY as the kinetic form ½·Evac_neb·ω₁² = 3.545e-42 (two aDPM constructs canonized); SGR 0501's ELEVEN term closed forms recovered (the two-generation seed fork documented — the grok-Doc-2 C++ G-projection vs the CP3 dpm_ug1_seed = μ_s·M/R T0-ontology rewrite); the two-branch a/b/c coefficients found numeric (b = 4.72e-3, F₀ = 1.83e71) with x₂ = F₀/b CODE-CONFIRMED and the F₀²/b = 7.095e144 ρ_SCm-mantissa echo logged as a lead. **The derivations (PAPER_2260):** Ω_b/Ω_DM = SSq³ = 0.185193 CANONIZED on the PAPER_128 N=3 condensation cascade with the B166 survival narrative (0.16% vs the Planck density route, falsifiable); the Ikeda Bose anchor FORMALIZED — SSq is a Bose occupation number, 1/(e^(ΔE/kT)−1) at ΔE/kT = ln(1+1/SSq) = 1.0132 (the second observational anchor now statistical-mechanical); and the Holmlid scale shown OVER-DETERMINED by three independent routes within 0.92% (ladder 624.2 EXACT / Coulomb 626.2 / phonon 630 canonical). Two closure candidates ((4/3)·F_TRZ² at 0.02%; (1+F_TRZ²) at 0.07%) REGISTERED FLAGGED per the value-coincidence discipline — open targets, not canon. Zero new free parameters. The gate recomputes every delivered chain live. **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,078 green / 4,183 defs / acceptance 89 green / registry 7,067 rows / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.424.0): THE LIVE-FORMS SHIP — the derivations found, not labeled.** B260, executed on Daniel's order ('Find the derivations and stop this labeling bullshit'). The physics results table carried 98 INHERITED_CARRIED rows — constants whose derivations existed in the corpus but had never been transcribed as live-evaluatable forms. They now drop to **ZERO**: **71 DERIVED_LIVE** — closed forms transcribed from their cited papers into the _LIVE_FORMS map and recomputed from registry primitives at every generation (Yang-Mills 1.736 = 2·D_phys·Λ_QCD per PAPER_1318's own derivation line; the proton integer identities 938.25 and 1836; μ₀ = 4π·F_TRZ⁷ Maxwell-EXACT; k_B's five-term composition; the F_TRZ²⁰/²¹ ladder rungs; 25!!; the Li₂₆ sum; a₀ = c·H₀/D_BSFG; and sixty more); **24 DISPATCH_VERIFIED** through their papers' wired dispatches; **3 MODULE_VERIFIED** family rows by live callable census; **3 CAPTURED_BACKSOLVE** — the genuine Rule-7 audit records, honestly retained as what they are. The 4 pre-existing LIVE_MISMATCH rows stay disclosed with both values shown. The B260 gate pin re-runs the full regeneration inside every gate, so the zero cannot silently regress; the front-door CLI prints the upgraded flags. Also aboard: the external-audit verification fix (the simulator README's v1.45-era counts corrected to the live 52-entry / 89-check state, with the acceptance suite run live before editing). **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,079 green / 4,183 defs / acceptance 89 green / registry 7,067 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.423.0)
+## What is currently shipped (v0.424.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,067 rows**. Fidelity gate: **6,078 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,067 rows**. Fidelity gate: **6,079 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -768,9 +768,12 @@ complete without a display — every number, flag, well, export, and the full
 fidelity gate (`star-magic gate`) work in a terminal on a server or at a
 wellsite. The Qt window is one command away: `pip install "star-magic-program[gui]"`.
 Every physics number, in the terminal and the window alike, carries its honesty
-flag — VERIFIED_LIVE (re-derived from primitives at generation time),
-INHERITED_CARRIED (baseline value, not re-derived), or LIVE_MISMATCH (both
-values shown). `star-magic docs` prints where the corpus lives on your machine.
+flag — VERIFIED_LIVE / DERIVED_LIVE (re-derived from primitives or the cited
+paper's transcribed closed form at generation time), DISPATCH_VERIFIED (the
+paper's wired dispatch computes it), MODULE_VERIFIED (family row, live callable
+census), CAPTURED_BACKSOLVE (honest Rule-7 audit record), or LIVE_MISMATCH
+(both values shown). As of B260 the table carries ZERO inherited-unverified
+rows. `star-magic docs` prints where the corpus lives on your machine.
 
 ## Library use (Python API)
 
