@@ -5,6 +5,38 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.421.0] — 2026-09-07 — THE RATIO-LOCK SHIP
+
+### Rulings folded (Batches 26-29: 29 rulings, B202-B230, closing 34 questions)
+- **Batch 26 (S49 forensics)**: afluid closed form CANONIZED (SO_5
+  inside, 0.06 pct vs code truth); 8E ASD correction + the Star-Magic
+  ETYMOLOGY registered; the S49 common-source transposition established
+  (v_SCm 2.958 load-bearing through four papers); quasar-NS downgraded
+  with the arrow-of-time mechanism registered; Dirichlet-ETA correction
+  (t_10000 canon holds); mu_s = Bs*Rs^3 (placeholder REMOVED);
+  **B = F_TRZ*Bcrit DESIGN RULE (Q-002 REFRAMED)** + grinding poles.
+- **Batch 27 (infrastructure + umbrella)**: **THE CANONICAL F_U
+  DECLARED** (operational ten-term set, Final-Equations provenance);
+  Units-class dimensional audit = standing step; R_K corrected to
+  j = K+2; ECDSA sign/verify bug pinned with fix; four minimal entries
+  folded.
+- **Batch 28 (sec-2.6 taxonomies)**: TRIADIC cross-repo convergence
+  canonized (196 = calculate_triadic_g); two buoyancy constructs;
+  UQFF QNM parametrization adopted (BB_C-945, not Berti); combined
+  198+199 F_UBii catalog (2151 all-sector); operator-taxonomy TRILOGY
+  with dual channels intentional; BUCKET C = canonical cosmology
+  source; low-l CMB + lensing falsifiables registered; SIDM stance.
+- **Batch 29 (mathematics, live-verified)**: Q_26 = 25!! by recurrence
+  IN THE GATE; imaginary-axis roots; Hermite 26-layer expansion
+  canonized; GHZ entropy = constant ln2; glitch chain tracked;
+  f_flare rename (primitive protected); tail exponent = 3/10 EXACT
+  (1953 family 5th); a0 = c*H0/D_BSFG + k_UA = F_TRZ^4; table-sum
+  898/990; proton 114 / neutron 126 settled; (1+z) typo confirmed.
+### Gate
+- 6,069 -> **6,073** (+4 batch pins). Registry 7,000 -> **7,034 rows**.
+  Backlog 55 -> **21 Daniel-gated + 1 OPEN_CANDIDATE**. Sweeps CLEAN
+  all four folds.
+
 ## [0.420.0] — 2026-09-07 — THE CODE-TRUTH SHIP
 
 ### Rulings folded (Batches 21-25: 40 rulings, B162-B201, + 1 sweep application)

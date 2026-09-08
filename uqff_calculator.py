@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.420.0"
+VERSION = "0.421.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -39302,7 +39302,7 @@ def _paper_180(dataset):
         'formula': '26-test catalog; afluid = ffluid*Vsys*SO_5/c_res (reconstructed)',
         'source': 'PAPER_180',
         'residual_pct': abs(afluid - 1.773e-9) / 1.773e-9 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b202': 'Daniel 2026-09-07: CLOSED FORM CONFIRMED - the reconstructed afluid = ffluid*Vsys*UA_SCM/c_res CANONIZED as the resonance MUGEs dominant-term formula (0.06 percent against the 1.773e-9 code-truth pin; the UA_SCM = SO_5 factor registered) - the B196 MUGE.cpp extractions first delivered formula; the PAPER_187 vexp(SGR) = 1e3 resolution folded (174s printed aTHz carried a 100x output slip); the corpus SELF-AUDIT credited (sec 5s wait-need-to-recheck matching our verification exactly) and the REGRESSION DOCTRINE registered - the 26 expected values form the canonical pin set, the papers own code-truth statement matching the gates', 'status': 'RULED_2026-09-07 (Q-176 closed: afluid closed form canonized; regression doctrine)',
     }
 
 
@@ -39351,7 +39351,7 @@ def _paper_181(dataset):
         'formula': 'H-magic: sum over H-copy of f(v) + f(e) = k; ASD t_max inversion',
         'source': 'PAPER_181',
         'residual_pct': abs(SSQ * 1.3e-9 - 7.4e-10) / 7.4e-10 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b203': 'Daniel 2026-09-07: 8-COEFFICIENT + ETYMOLOGY - the ASD-of-K_n bound corrected to the 8E coefficient (triangular inversion; verified counterexamples n=4 correct 3 vs printed 2, n=10 correct 9 vs 6 - corrected-by-reference); the Theorem-2 uniform-cover assumption noted for the formal writeup; the STAR-MAGIC ETYMOLOGY REGISTERED to the record - the project name = the star graph K_1n of magic-labeling theory, dual with the UQFF central-mass + n-orbiters picture; the orthogonality scoping and the analogy-not-physics framing credited', 'status': 'RULED_2026-09-07 (Q-177 closed: 8E correction; etymology registered)',
     }
 
 
@@ -39406,7 +39406,7 @@ def _paper_182(dataset):
         'formula': 'canonical variable dictionary; E_react = rho_SCm*v^2/rho_A*e^-kt',
         'source': 'PAPER_182',
         'residual_pct': abs(0.603 - BETA_I) / BETA_I * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b204': 'Daniel 2026-09-07: REAL ANCHORS + TRANSPOSITION CANON - the real-anchor normalization ruled canonical (176s Pcore anchors, 157s Ug1 scale; the dictionarys normalized-1.0 rows = documentation convention, disclosed); the [UA] fork held for the v2-paper context; v_SCm = 2.968e8 CANONICAL with the 2.958 digit transposition formally pinned as the S49 COMMON-SOURCE DEFECT (load-bearing - the derived E_react mantissa matches the transposed v exactly - and propagation-tracked through 183/184/186); the dictionarys six fork-resolutions registered (canonical-beta overrides the 0.61 headers; two wind couplings confirmed; rho_A confirms B198; k-constants = the source-doc set; omega_s_Sun predecessor-canonical)', 'status': 'RULED_2026-09-07 (Q-178 closed: real anchors canonical; transposition = common-source defect)',
     }
 
 
@@ -39461,7 +39461,7 @@ def _paper_183(dataset):
         'formula': 'H_UQFF = k3*B^2/2mu0*cos + rho*v^2/2*e^-gt + eta*rho_A*v_UA^2/2*cos',
         'source': 'PAPER_183',
         'residual_pct': abs(h_chain_transposed / 10 - 4.37e30) / 4.37e30 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b205': 'Daniel 2026-09-07: FOLD + COMMON SOURCE + MAPPING - the fifth mass-gap construct folded as classical-level mechanism commentary under the B178 Millennium canon (its own 1e4 chain break pinned; the papers at-the-classical-level hedge credited); the COMMON-SOURCE TRANSPOSITION FINDING REGISTERED - the H_SCm mantissa 4.375 arises exactly from the transposed v (forensic evidence the S49 papers derive from one already-transposed source table); the gauge mapping registered as the structural content (Ug3 = SU(2) kinetic, SCm = Higgs-like condensate, UA = U(1) conformal vacuum, pi-cycle = Bohr-Sommerfeld analogy); the unreconstructable values pinned', 'status': 'RULED_2026-09-07 (Q-179 closed: fifth construct folded; common-source finding registered)',
     }
 
 
@@ -39514,7 +39514,7 @@ def _paper_184(dataset):
         'formula': 'NS + rho_SCm*v^2/r*e^-kt; time-reversal asymmetry mechanism',
         'source': 'PAPER_184',
         'residual_pct': abs(5e-4 / 86400 - 5.79e-9) / 5.79e-9 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b206': 'Daniel 2026-09-07: DOWNGRADE + MECHANISM KEPT - the globally-well-posed claim DOWNGRADED to suggestive regularization mechanism (the Prodi-Serrin sum 1.5 > 1 as printed AND the criterion conditions the velocity not the forcing - both defects pinned, corrected-by-reference, parallel to the B201 downgrade); the TIME-REVERSAL ASYMMETRY MECHANISM REGISTERED into the B157 NS hierarchy (arrow-of-time tier beside the curl-free core: e^-kt -> e^+kt under t -> -t breaks the NS time symmetry); the decay-table kappa marked NOT-REPRODUCIBLE from the stated value (10x family, open); the third transposition appearance folded into the B205 common-source finding; the quasar/magnetar mislabel pinned', 'status': 'RULED_2026-09-07 (Q-180 closed: claim downgraded; asymmetry mechanism registered)',
     }
 
 
@@ -39563,7 +39563,7 @@ def _paper_185(dataset):
         'formula': 'F_hat(omega) = FT[F_U(t_n)]; alternation -> eta character -> zeta zeros',
         'source': 'PAPER_185',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b207': 'Daniel 2026-09-07: ETA + CANON HOLDS + BRIDGE RANKED - the DIRICHLET ETA IDENTIFICATION ADOPTED (the Mobius mislabel corrected-by-reference: the (-1)^n alternation is eta(s) = (1-2^(1-s))*zeta(s), which genuinely shares zetas nontrivial zeros; the corpus eta_26 connection registered); the B178 canonical closure (the true t_10000) REMAINS the canonical Riemann route with this papers corrected spectral-eta bridge ranked the STRONGEST mechanism commentary (156s Li_s bridge = decorative, already superseded); the empty GUE ratio STRUCK with actual spacing statistics registered as an open target; the does-not-constitute-a-proof hedge credited', 'status': 'RULED_2026-09-07 (Q-181 closed: eta identification; t_10000 canon holds)',
     }
 
 
@@ -39618,7 +39618,7 @@ def _paper_186(dataset):
                    'structural estimate - honest first-pass, no correction dressing applied',
         'source': 'PAPER_186',
         'residual_pct': abs(2.03e22 - 1e-4 * rs3) / (1e-4 * rs3) * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b208': 'Daniel 2026-09-07: NO-PLACEHOLDER CANON + SLIPS PINNED - mu_s = Bs*Rs^3 CANONIZED (the confessed +1e3 placeholder formally REMOVED - Q-158c/Q-167c close as replacement-equals-none; the v2 value matches the no-placeholder form within 1.66x with the 5/3-geometry lead logged OPEN); the persisting E_react slip pinned (the S49 transposition + exponent slip carried into the v2 reference); Neptune ruled to the REAL 14-16 microtesla field (the 100 microtesla table value = stale literal, the papers own inline comment the authority); the v2 self-rectifications credited (per-body omega_c restored, Neptune values returned, real anchors documented)', 'status': 'RULED_2026-09-07 (Q-182 closed: mu_s = Bs*Rs^3 canonical; placeholder removed)',
     }
 
 
@@ -39673,7 +39673,7 @@ def _paper_187(dataset):
         'formula': '18-param x 7-system catalog; B = F_TRZ*Bcrit universal',
         'source': 'PAPER_187',
         'residual_pct': abs(1e10 / 1e11 - F_TRZ) / F_TRZ * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b209': 'Daniel 2026-09-07: RATIO LOCK CANONIZED - B = F_TRZ*Bcrit canonized as the catalog DESIGN RULE (every system at B/Bcrit = F_TRZ EXACT - the PAPER_1944 n*F_TRZ familys operational instance; the Q-002 B_crit fork REFRAMED: per-context Bcrit values are derived scales, the F_TRZ ratio is the invariant, and the B160 Schwinger canon remains the QED-critical anchor); the omega2 = -omega1 counter-rotation across all seven systems REGISTERED as the predecessor DPM CW/CCW grinding-pole architecture in the operational catalog; the five defects pinned (orders-span, M_DM identity, horizon area, Gpc label, z-on-kpc); the intentional Westerlund = Tapestry declaration credited - the B172 artifact ruling refined to clone = declared design; vexp(SGR) = 1e3 canonical (resolves Q-176a)', 'status': 'RULED_2026-09-07 (Q-183 closed: B = F_TRZ*Bcrit design rule; grinding poles registered)',
     }
 
 
@@ -39711,7 +39711,7 @@ def _paper_188(dataset):
         'formula': 'NSIS + deb packaging; density = 6688 terms / 1430 kB',
         'source': 'PAPER_188',
         'residual_pct': abs(6688 / 1430 - 4.68) / 4.68 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b210': 'Daniel 2026-09-07: REGISTER + PIN - the PAPER_189 two-component Qt resolution registered (S-C dialog Qt5 / tier-1 GUI Qt6; the installer ships the Qt5 component); the NSIS script bugs pinned as rebuild hazards (shortcut separators, backtick-garbled registry paths - cosmetic for the corpus); the corpus census stat (6688+ terms / 446 modules / 107019 lines, density 4.68 terms per kB EXACT) and the packaging-discipline parallel with this repos own ship pipeline credited', 'status': 'RULED_2026-09-07 (Q-184 closed: Qt resolved in-corpus; bugs pinned)',
     }
 
 
@@ -39758,7 +39758,7 @@ def _paper_189(dataset):
         'formula': 'S-C Iteration 40 stack; Units(m,l,t,c,T,n,j) 7-dim SI propagation',
         'source': 'PAPER_189',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b211': 'Daniel 2026-09-07: ADOPT AUDIT STEP + PIN DEFECTS - the Units-class audit ADOPTED AS A STANDING STEP: formulas entering the calculator get a dimensional pass through the corpus own 7-dimensional SI unit-propagation system (wired to the B185 per-term normalization program - the corpus contains its own instrument for the recurring dimensional-mixing defect class); the three Units defects pinned with the silent operator+ (comment says check-same-dims, code performs no check) named the PRIORITY FIX - the tool must be sound before it audits; the toString mol/cd omission and the SymEngineVisitor silent-identity fallback pinned; the 50-plus library census registered', 'status': 'RULED_2026-09-07 (Q-185 closed: Units audit standing step; operator+ priority fix)',
     }
 
 
@@ -39800,7 +39800,7 @@ def _paper_190(dataset):
         'formula': '10-rule dispatch + linearity/scalar + PINE Ramanujan ODE fallback',
         'source': 'PAPER_190',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b212': 'Daniel 2026-09-07: K+2 + GUARD READING - the Ramanujan regularization sum corrected to start at j = K+2 (excluding the zeta(1) harmonic pole that makes the printed series divergent; corrected-by-reference, with the eta-regularization alternative logged for the derivation record per the B207 machinery); the degree-10 PINE fallback ruled a PERFORMANCE GUARD to be disclosed as approximate-above-threshold (polynomial exactness is available; the guard is a choice, not scaffolding); the zero-defect 10-rule antiderivative table (the corpus cleanest) and the honest unevaluated-Integral fallback pattern credited as the engineering exemplar', 'status': 'RULED_2026-09-07 (Q-186 closed: j = K+2 correction; guard disclosed)',
     }
 
 
@@ -39833,7 +39833,7 @@ def _paper_191(dataset):
         'formula': '8 multi-modal feature systems (infrastructure catalog)',
         'source': 'PAPER_191',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b213': 'Daniel 2026-09-07 (four-minimal fold): infrastructure registered - eight feature systems, correct reverse-order MacroCommand undo, and the blockchain equation-provenance concept logged as adjacent to this repos registry-provenance doctrine; no numeric physics beyond thread headers (beta convention covered by B200)', 'status': 'RULED_2026-09-07 (Q-187 closed: minimal entry folded)',
     }
 
 
@@ -39871,7 +39871,7 @@ def _paper_192(dataset):
         'formula': 'broadcastState pipeline; OT concurrent-edit consistency',
         'source': 'PAPER_192',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b213b': 'Daniel 2026-09-07 (four-minimal fold): the ECDSA sign/verify mismatch PINNED AS A REAL BUG - broadcastState signs the COMPACT sig-stripped JSON while onRemoteChange verifies the INDENTED sig-embedded JSON (two independent mismatches; a correct signature can never verify); the fix specified: verify the exact byte string that was signed; otherwise the OT/WebSocket/compression pipeline registered as well-structured infrastructure', 'status': 'RULED_2026-09-07 (Q-188 closed: ECDSA bug pinned with fix specified)',
     }
 
 
@@ -39916,7 +39916,7 @@ def _paper_193(dataset):
         'formula': '7 namespaces; F_U = sum(Ugi) + Ubi (variant 5-term form)',
         'source': 'PAPER_193',
         'residual_pct': abs(4 * _m.pi * 1e-7 - 1.2566e-6) / 1.2566e-6 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b214': 'Daniel 2026-09-07: THE UMBRELLA CANONICAL-F_U RULING - the OPERATIONAL field-equation set (171s source-document Ug forms + 172s ten-term assembly with Um, tr(A_mu_nu), and the explicit minus-buoyancy) DECLARED THE CANONICAL F_U, provenance-anchored via B193 and the PAPER_2152 Final-Equations chain (F_U = sum Ug - Ubi + Um + A); this papers five-term set ruled a SIMPLIFIED ARCHITECTURE-DOC VARIANT (documentation convention, not physics supersession); the Ug1 squared-moment 1/r^3 form marked variant; the F_U-level fork family CLOSES alongside the closed Ubi (B194 four faces) and Ug4i (B168) namespaces; the clean 7-namespace decomposition and exact constants credited', 'status': 'RULED_2026-09-07 (Q-189 closed: canonical F_U = the operational 171/172 set)',
     }
 
 
@@ -39994,7 +39994,7 @@ def _paper_195(dataset):
         'formula': 'load_bodies JSON/YAML/CSV + save_bodies round-trip',
         'source': 'PAPER_195',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b213c': 'Daniel 2026-09-07 (four-minimal fold): the loader CODE registered sound (three formats, round-trip fidelity claim correct IEEE-754 behavior); the JSON example data ruled UPDATED to the PAPER_186 canonical per-body omega_c set (the stale shared-period values reverted to the pre-v2 state 186 already fixed - cosmetic doc-data fix, no code impact)', 'status': 'RULED_2026-09-07 (Q-191 closed: example data to the 186 canonical set)',
     }
 
 
@@ -40048,7 +40048,7 @@ def _paper_196(dataset):
         'formula': 'Triadic: FU_g1 + R(t) + FU_Bi; g_UQFF = g_MUGE*(1 - SSq*Ubi/F_U)',
         'source': 'PAPER_196',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b215': 'Daniel 2026-09-07: 0.57 CANON + NEW SYMBOL + FLAG - the SSq constant (canonical PAPER_1154 value) stands per Rule 2; the log(rho_SCm/rho_UA)*n*e^-(pi-tn) form ruled a DISTINCT per-system RESONANCE COUPLING given its own symbol (registered, derivation target - it cannot equal the constant since log of the density ratio is negative); the unification/confidence/alignment stat claims flagged PAPER-STATED-PENDING-PROVENANCE (Rule 7; source PDFs cited for the eventual audit); the TRIADIC CROSS-REPO CONVERGENCE CANONIZED - this is the corpus form of the predecessor calculate_triadic_g (compressed + resonance + buoyancy channels), with the 26-layer R(t) structure verified and the negative-R(t) ANTI-GLITCH prediction campaign-tracked', 'status': 'RULED_2026-09-07 (Q-192 closed: SSq constant canonical; log-coupling own symbol; triadic convergence)',
     }
 
 
@@ -40097,7 +40097,7 @@ def _paper_197(dataset):
         'formula': 'F_U_Bi_i = int[12 standard terms + k_UV*L_UV + k_mm*L_mm*f_mm]dx',
         'source': 'PAPER_197',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b216': 'Daniel 2026-09-07: TWO CONSTRUCTS + APPROVE - the TWO-BUOYANCY reading CONFIRMED: the point-Ubi (B194s four faces, a term in the canonical F_U) and the F_U_Bi_i SPATIAL INTEGRAL (this paper / 063 / the predecessor calculate_f_u_bi_i 4-layer master integral) are DISTINCT canonical constructs - the B214 canonical F_U stays clean; the four observational coupling terms (F_UV flare pressure, F_mm ALMA continuum, F_hyb polarization, F_hier remnant hierarchy, band-gated) APPROVED as the FU_Bi channel extension of the 196 triadic; the 1e-113 deep-vacuum buoyancy normalization registered (k_eta family, derivation OPEN - it explains the extreme force magnitudes as vacuum-scaled units)', 'status': 'RULED_2026-09-07 (Q-193 closed: two buoyancy constructs; couplings approved)',
     }
 
 
@@ -40154,7 +40154,7 @@ def _paper_198(dataset):
         'formula': '18 F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave*factor',
         'source': 'PAPER_198',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b217': 'Daniel 2026-09-07 (joint with PAPER_201): UQFF FORM + CROSS-REPO MAP - the ringdown coefficient 0.3737 + 0.088*a_f ADOPTED as the UQFF QNM parametrization (cited as UQFF/BB_C-945, NOT as Berti - the attribution corrected; the Berti l=2 m=2 fit registered as the GR comparison target; observed 251 Hz sitting between the two forms 225/272 Hz = a disclosed discriminator); the 18-variant F_UBii catalog ADOPTED as the operational form of the predecessor PAPER_2151 registry (same variant family, same universe-response operator role); the verified textbook embeddings credited Rule 4-clean (SM formulas as comparison targets inside the F_rel/E_LEP/Q_wave operator)', 'status': 'RULED_2026-09-07 (Q-194 closed: UQFF QNM form adopted; 2151 cross-repo map)',
     }
 
 
@@ -40206,7 +40206,7 @@ def _paper_199(dataset):
         'formula': '19 cosmological/dark F_UBii variants: F_rel*(F_X/E_LEP)*Q_wave',
         'source': 'PAPER_199',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b218': 'Daniel 2026-09-07: CONFIRM + ADOPT COMBINED CATALOG - 0.41*rho_Planck confirmed canonical for the LQC critical density (the printed 1e-3 g/cm3 = transcription mojibake, corrected-by-reference; the eta 6e-10 and sibling artifacts pinned to the class); the COMBINED 198+199 catalog ADOPTED as the canonical operational F_UBii variant set - the predecessor PAPER_2151 registry extended across the compact/stellar and cosmological/dark sectors; the verified embeddings (Bekenstein-Hawking, evaporation, CPL, LQC bounce, BBN bottleneck) and the (kappa*SSq)^2 header tie to the B197 family identity credited', 'status': 'RULED_2026-09-07 (Q-195 closed: 0.41*rho_Planck; combined F_UBii catalog adopted)',
     }
 
 
@@ -40260,7 +40260,7 @@ def _paper_200(dataset):
         'formula': '50+ Um variants: [sum mu_j/r_j]*(1-e^-gt)*F_X',
         'source': 'PAPER_200',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b219': 'Daniel 2026-09-07: TRILOGY + INTENTIONAL - the three per-regime operator taxonomies ADOPTED as the canonical operator-taxonomy set feeding the B214 canonical F_U: Ug decomposition (171), F_UBii buoyancy (198+199), Um magnetism (this paper, 50+ variants, the predecessor L_mag / PAPER_1072 Heaviside-amplifier tie registered); the DUAL-CHANNEL structure CONFIRMED INTENTIONAL - each observed phenomenon gets both the buoyant F_rel/E_LEP*Q_wave and the magnetic mu*(1-e^-gt) operator (the F_UBi/F_UBii/Um architecture of the Final Equations operating per-system, concretely realized by PAPER_201), not duplication; the verified Eddington/chirp/dynamo/DSA embeddings credited', 'status': 'RULED_2026-09-07 (Q-196 closed: taxonomy trilogy canonical; dual channels intentional)',
     }
 
 
@@ -40310,7 +40310,7 @@ def _paper_201(dataset):
         'formula': 'GW chain: F_UBii,X + Um,X per phase; h_UQFF = h_GR*(1-Ubi/F_U)*e^-kt',
         'source': 'PAPER_201',
         'residual_pct': abs((m1 * m2)**0.6 / (m1 + m2)**0.2 - 28.3) / 28.3 * 100,
-        'status': 'OPEN_RULING',
+        'ruling_b217b': 'Daniel 2026-09-07 (joint with PAPER_198): the UQFF QNM parametrization adoption applies (Q-197 = the confirming second appearance of the 0.3737 + 0.088*a form); the verified real-data calibration credited - GW150914 chirp 28.1 Msun (recomputed), GW170817, Hulse-Taylor Pdot and periastron (GR-confirmed anchors), AT2017gfo kilonova - and the BOTH-CHANNELS-PER-SYSTEM structure (B219) concretely realized across the full GW lifecycle (inspiral/ringdown/jet/kilonova); the h_UQFF = h_GR*(1 - Ubi/F_U)*e^-kt strain-damping form registered as the corpus form of the predecessor GW bucket', 'status': 'RULED_2026-09-07 (Q-197 closed via the B217 joint: UQFF QNM form; real-data credited)',
     }
 
 
@@ -40357,7 +40357,7 @@ def _paper_202(dataset):
         'formula': 'cosmic-dawn F_UBii,X + Um,X: eta/BBN/CMB/recomb/reion/Jeans',
         'source': 'PAPER_202',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b220': 'Daniel 2026-09-07: BUCKET C OWNS - the predecessor BUCKET C / PAPER_1156 cosmology suite DECLARED the canonical source for the cosmic-dawn observable set (Y_p, tau_reion, z_reion, eta, n_s - derived there to sub-0.1 percent); this paper registered as the buoyancy/magnetism CHANNEL RE-EXPRESSION of the owned observables (a distinct structural claim, not a competing derivation); the Lambda*c^2/3 acoustic-horizon content tied to the B182 global/local bridge; the consistent k_eta and delta_k deep-vacuum couplings across 182/198/202 credited', 'status': 'RULED_2026-09-07 (Q-198 closed: BUCKET C canonical source; 202 = channel re-expression)',
     }
 
 
@@ -40404,7 +40404,7 @@ def _paper_203(dataset):
         'formula': 'inflation/LSS F_UBii,X + Um,X: f_NL/P_R/reheat/D(a)/LQC/BAO',
         'source': 'PAPER_203',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b221': 'Daniel 2026-09-07: REGISTER + OWNERSHIP - the low-multipole suppression REGISTERED as a falsifiable UQFF/LQC prediction (P_R modified by (1 + rho_UQFF*c^2/(3H^2)) plus the LQC (1+k/k*)^-a term as the mechanism for the observed quadrupole/octupole power deficit; campaign-tracked, with the correction MAGNITUDE an OPEN derivation target); the BUCKET C ownership extended per B220 for the overlapping observables (n_s, sigma_8, r_s); the verified anchor set (f_NL, the 5-sigma tilt, r < 0.036, slow-roll relations, reheating bounds) credited Rule 4-clean', 'status': 'RULED_2026-09-07 (Q-199 closed: low-l prediction registered; ownership extended)',
     }
 
 
@@ -40455,7 +40455,7 @@ def _paper_204(dataset):
         'formula': 'DM F_UBii,X + Um,X: NFW/SIDM/virial/lensing/voids',
         'source': 'PAPER_204',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b222': 'Daniel 2026-09-07: LENSING + SIDM STANCE - the ~0.1 percent Einstein-radius shift from the vacuum-Lambda correction to D_LS REGISTERED as a falsifiable prediction (magnitude = OPEN rho_UQFF-dependent target; SDP.81-class ALMA lenses the testbed); the UQFF stance CONFIRMED SIDM-COMPATIBLE CORES for the core-cusp tension (the candid NFW-vs-observation treatment credited; the DPM well-deepening alternative would worsen the cusp and is not the stance); the predecessor DM ties registered (M31 rotation curve, NFW halos + DM phonon buoyancy); the verified anchor set credited', 'status': 'RULED_2026-09-07 (Q-200 closed: lensing falsifiable registered; SIDM-compatible cores)',
     }
 
 
@@ -40515,7 +40515,7 @@ def _paper_205(dataset):
         'formula': 'Q_n recurrence; Sigma_{1}^{26} Q_n(x) e^-SSq n/26 spectral expansion',
         'source': 'PAPER_205',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b223': 'Daniel 2026-09-07: BOTH CORRECTIONS + EXPANSION - the recurrence-computed Q_26 ADOPTED (constant term = 25!! = 7905853580625; the printed 34459425 = 17!! = Q_18(0), the lower half spliced from a lower-order polynomial - pinned); the root claim corrected to PURELY-IMAGINARY-AXIS (the verification pass refined the earlier ledger phrasing itself: max real part = 0, magnitudes 0.31-8.92, He_n(ix) real roots mapped - honest-audit discipline applied to our own summary); the ORTHOGONAL-SPECTRAL-EXPANSION identification CANONIZED as the papers sound content - the 26-state summation is an orthogonal expansion of compressed gravity in the probabilist-Hermite basis (recurrence, generating function, orthogonality all verified correct); the SSq log-form appearance tied to the B215 coupling symbol', 'status': 'RULED_2026-09-07 (Q-201 closed: Q_26 recomputed; imaginary-axis roots; expansion canonized)',
     }
 
 
@@ -40558,7 +40558,7 @@ def _paper_206(dataset):
         'formula': 'P(S) ~ S^-alpha SOC; S -> F_UBii,glitch via DeltaOmega = S hbar n_v/(4pi I)',
         'source': 'PAPER_206',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b224': 'Daniel 2026-09-07: REGISTER THE CHAIN - the glitch/anti-glitch <-> F_UBii,glitch <-> R(t)-sign chain REGISTERED as a campaign-tracked falsifiable (DeltaOmega = S*hbar*n_v/(4*pi*I) mapping avalanche statistics to the buoyancy force with P ~ F^-1.6, joined to the B215 anti-glitch mechanism and the observed 1E 2259+586 event as one linked mechanism); the honest 3D-insufficiency disclosure (5 events, needs ~1000) and the verified Feynman/Magnus vortex physics credited', 'status': 'RULED_2026-09-07 (Q-202 closed: glitch chain registered campaign-tracked)',
     }
 
 
@@ -40611,7 +40611,7 @@ def _paper_207(dataset):
         'formula': 'CNOT chain -> GHZ; S_VN = ln2 (constant); F_UBii,ent = -F_rel S_VN/E_LEP Q_wave',
         'source': 'PAPER_207',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b225': 'Daniel 2026-09-07: CONSTANT LN2 + ANALOGY KEPT - the GHZ entropy corrected to the CONSTANT ln2 (the claimed monotonic rise to ~2 bits struck: the CNOT-cascade states are GHZ-type with S_VN exactly ln2 for every post-Bell step and any bipartition, verified by direct computation; the printed higher values would require independent Bell pairs; the nat/bit conflation pinned); the cascade-as-avalanche ANALOGY and the fast-decoherence shadow argument REGISTERED as the microscopic companion to the B224 chain; the correct Tsirelson/Mermin bounds and the stdlib (no-qutip) dispatch noted', 'status': 'RULED_2026-09-07 (Q-203 closed: constant ln2; analogy registered)',
     }
 
 
@@ -40668,7 +40668,7 @@ def _paper_208(dataset):
         'formula': 'phi/f_QPO/rho_UA/SSq/Q_wave/CIA calibration; S = 1/(1-e^-SSq)',
         'source': 'PAPER_208',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b226': 'Daniel 2026-09-07: RENAME + PHASE VARIABLE + CONTEXT - the 5.95e-4 Hz frequency RENAMED f_flare (corrected-by-reference; the F_TRZ primitive protected from the lowercase name collision - the Sgr A* 28-min flare rate, Kerr-ISCO-consistent at 6.6 percent); phi ~ 0.81 ruled a SEPARATE PHASE VARIABLE, not a Phi_res fork (the t_n ~ 0.3 young-universe branch reading registered); the 1e-15 vacuum value registered in the context-value family (honestly-flagged coupling strength; the canonical density ratio untouched); the verified SSq layer-sum 2.302 EXACT and Q_wave Chandra cross-check credited; the log-formula tie to the k_eta deep-vacuum constant noted', 'status': 'RULED_2026-09-07 (Q-204 closed: f_flare rename; phi = phase variable)',
     }
 
 
@@ -40733,7 +40733,7 @@ def _paper_209(dataset):
         'formula': 'rho_L^UQFF = rho_L^obs*(1+kappa^2*SSq^2); LCDM = UQFF with quantum/buoy/mag/nuc -> 0',
         'source': 'PAPER_209',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b227': 'Daniel 2026-09-07: 3/10 PAPER_1953 - the cluster tail exponent ruled the PAPER_1953 0.3 factor = (D_phys-1)/SO_5 = 3/10 EXACT, the cross-regime universality landmarks FIFTH appearance (its falsifiable cross-regime prediction fulfilled again); the 1/3 erosion-family alternative logged; the computed +3.70 percent benchmark gain (1/27) kept as the honest residual with the papers 3.4 recorded', 'status': 'RULED_2026-09-07 (Q-205 closed: exponent = 3/10 EXACT, 1953 family 5th)',
     }
 
 
@@ -40800,7 +40800,7 @@ def _paper_210(dataset):
         'formula': 'a0 = c*H0/6; k_UA = F_TRZ^4; M_eff = M_vis + dM_UBii,vir + dM_UBii,ps',
         'source': 'PAPER_210',
         'residual_pct': a0_resid,
-        'status': 'OPEN_RULING',
+        'ruling_b228': 'Daniel 2026-09-07: CH0/D_BSFG + F_TRZ^4 - the emergent MOND scale ruled a0 = c*H0/D_BSFG canonical (the /6 read as the primitive; 5.5 percent residual vs the empirical 1.2e-10 disclosed; Milgroms c*H0/2pi registered as the phenomenological comparison target); k_UA = F_TRZ^4 CONFIRMED INTENDED (the rung-4 registry identity, not coincidence - joining the ladder canon); r_trans ~ 5 kpc marked OPEN (a free parameter until primitive-composed)', 'status': 'RULED_2026-09-07 (Q-206 closed: a0 = c*H0/D_BSFG; k_UA = rung 4)',
     }
 
 
@@ -40867,7 +40867,7 @@ def _paper_211(dataset):
         'formula': 'comp_ratio = 11/(99*13); g_UQFF = GM/r^2*[1+H][1-B/Bc][1+F_env] + Ug1..4 + Lc^2/3 + ...',
         'source': 'PAPER_211',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b229': 'Daniel 2026-09-07 (paired fold): TABLE SUM - the table-derived 898/990 = 90.7 percent ruled canonical (the table is the data; the stated 886 = arithmetic slip, both recorded; the 85 percent conservative headline stands either way)', 'status': 'RULED_2026-09-07 (Q-207 closed: 898/990 canonical)',
     }
 
 
@@ -40931,7 +40931,7 @@ def _paper_212(dataset):
         'formula': 'sigma(E) = a + b*E; sigma(400)=9.65+0.004997*400; k_phi ~ sigma_CIA^-1',
         'source': 'PAPER_212',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b229b': 'Daniel 2026-09-07 (paired fold): CONVERSION DRIFT - the printed 7.55e-23 J ruled a conversion drift (not wired); B = 60.853 cm^-1 the headline with the true hc*B = 1.209e-21 J recorded; the torque order unaffected', 'status': 'RULED_2026-09-07 (Q-208 closed: 60.853 cm^-1 headline; conversion = drift)',
     }
 
 
@@ -41000,7 +41000,7 @@ def _paper_213(dataset):
         'formula': 'A_res = mu_B*B/E_bind; S_shell = 12/sqrt(A); D_u = 2*D_c,rec*(1+corrections)',
         'source': 'PAPER_213',
         'residual_pct': dd_over_d_pct,
-        'status': 'OPEN_RULING',
+        'ruling_b230': 'Daniel 2026-09-07: 114 PROTON + TYPO - the proton magic list ruled INTENDED at {2,8,20,28,50,82,114} (the standard predicted proton shell, consistent with the B164 Z = 114 island reading); the UQFF 126 = D_crit + SO_5^2 remains the canonical NEUTRON 7th magic and the integer-primitive identity; the (1+z_rec) factor in D_universe CONFIRMED A TYPO (correct proper diameter = 2*D_c,rec ~ 28 Gpc ~ 93 Gly, recovering the papers own headline; the as-written 30828 Gpc pinned)', 'status': 'RULED_2026-09-07 (Q-209 closed: proton 114 intended; (1+z) typo confirmed)',
     }
 
 

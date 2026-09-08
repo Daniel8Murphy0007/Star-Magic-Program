@@ -1746,3 +1746,4 @@ FIFTHSECTOR_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content,
 LABDATUM_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content,v0.418.0
 UNDER100_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content,v0.419.0
 CODETRUTH_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - no cross-geometry content (MUGE.cpp extraction queued via B196),v0.420.0
+RATIOLOCK_ARC,n/a,n/a,NOT_APPLICABLE,rulings band - the B196 MUGE.cpp extraction delivered its first formula (afluid) via B202,v0.421.0

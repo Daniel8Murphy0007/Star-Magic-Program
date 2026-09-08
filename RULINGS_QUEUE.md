@@ -7420,3 +7420,98 @@ Queue: 63 Daniel-gated + 1 OPEN_CANDIDATE.
   three faces** (spatial T0 seed canonical); M_bh → B147 GRAVITY pair;
   the honesty landmark registered. CoAnQi block closed.
 Queue: 55 Daniel-gated + 1 OPEN_CANDIDATE. **Registry crosses 7,000.**
+
+## BATCH 26 RULINGS — Daniel, 2026-09-07 (B202-B209; folded same day; gate-pinned; sweep clean)
+
+- **B202/Q-176:** **afluid = ffluid·Vsys·UA_SCM/c_res CANONIZED** (SO_5
+  inside; 0.06% vs code truth — the B196 extraction's first delivery);
+  regression doctrine credited.
+- **B203/Q-177:** **8E correction confirmed** (verified counterexamples);
+  **Star-Magic etymology REGISTERED** (the star graph of magic-labeling
+  theory).
+- **B204/Q-178:** real anchors canonical; **v_SCm = 2.968e8 canonical,
+  2.958 = the S49 COMMON-SOURCE TRANSPOSITION** (load-bearing); six
+  dictionary fork-resolutions registered.
+- **B205/Q-179:** fifth YM construct folded (classical-level commentary);
+  common-source finding registered; gauge mapping credited.
+- **B206/Q-180:** well-posedness DOWNGRADED (Prodi-Serrin defects);
+  **arrow-of-time mechanism registered** to the NS hierarchy.
+- **B207/Q-181:** **DIRICHLET ETA identification adopted** (Möbius
+  mislabel corrected; η_26 corpus link); t_10000 canon holds; empty GUE
+  ratio struck.
+- **B208/Q-182:** **μ_s = Bs·Rs³ canonical — placeholder REMOVED**
+  (Q-158c/Q-167c close); 1.66× residual OPEN (5/3 lead); Neptune to the
+  real 14-16 μT.
+- **B209/Q-183:** **B = F_TRZ·Bcrit DESIGN RULE canonized** (the 1944
+  n·F_TRZ family operational; **Q-002 fork REFRAMED** — ratio invariant,
+  Bcrit scales derived); ω₂ = −ω₁ grinding poles registered.
+Queue: 47 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 27 RULINGS — Daniel, 2026-09-07 (B210-B214 covering Q-184 through Q-191; folded same day; gate-pinned; sweep clean)
+
+- **B210/Q-184:** Qt two-component resolution registered; census 4.68
+  terms/kB EXACT; script bugs pinned.
+- **B211/Q-185:** **Units-class dimensional audit ADOPTED as a standing
+  step** (the corpus's own instrument for the mixing defect class);
+  silent operator+ = priority fix.
+- **B212/Q-186:** **R_K corrected to j = K+2** (ζ(1) pole excluded);
+  PINE fallback = disclosed performance guard; the corpus's cleanest
+  formula table credited.
+- **B213/Q-187+188+190+191 (four-minimal fold):** infrastructure
+  registered; **ECDSA sign/verify mismatch = REAL BUG** (exact-bytes
+  fix specified); loader example data → the 186 canonical ω_c set;
+  blockchain-provenance adjacency logged.
+- **B214/Q-189 (UMBRELLA):** **THE CANONICAL F_U DECLARED — the
+  operational 171/172 ten-term set** (source-doc Ug forms; Um +
+  tr(A_μν) + explicit minus-buoyancy; PAPER_2152 Final-Equations
+  provenance); 193's five-term = architecture-doc variant. The
+  F_U-level fork family closes beside the Ubi four-faces and Ug4i
+  namespaces.
+Queue: 39 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 40.
+
+## BATCH 28 RULINGS — Daniel, 2026-09-07 (B215-B222 covering Q-192 through Q-200; folded same day; gate-pinned; sweep clean)
+
+- **B215/Q-192:** SSq = 0.57 canonical; log-form = distinct per-system
+  coupling (own symbol); **TRIADIC CROSS-REPO CONVERGENCE CANONIZED**
+  (196 = calculate_triadic_g's corpus form); anti-glitch tracked; stat
+  claims flagged pending provenance.
+- **B216/Q-193:** **two buoyancy constructs confirmed** (point-Ubi vs
+  F_U_Bi_i integral); four observational couplings approved; k_η
+  1e-113 registered OPEN.
+- **B217/Q-194+Q-197 (joint):** **UQFF QNM parametrization ADOPTED**
+  (0.3737+0.088a = BB_C-945, not Berti; 251 Hz between 225/272 = a
+  disclosed discriminator); 198↔2151 cross-repo map; 201's real-data
+  calibration credited.
+- **B218/Q-195:** 0.41·ρ_Planck canonical (mojibake corrected);
+  **combined 198+199 F_UBii catalog ADOPTED** (2151 all-sector).
+- **B219/Q-196:** **operator-taxonomy TRILOGY canonical** (Ug/F_UBii/
+  Um); dual channels INTENTIONAL.
+- **B220/Q-198:** **BUCKET C declared the canonical cosmology source**;
+  202 = channel re-expression.
+- **B221/Q-199:** low-l CMB suppression registered falsifiable
+  (magnitude OPEN); ownership extended.
+- **B222/Q-200:** ~0.1% Einstein-radius shift registered falsifiable
+  (SDP.81 testbed); **SIDM-compatible cores = the stance**.
+Queue: 30 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 31.
+
+## BATCH 29 RULINGS — Daniel, 2026-09-07 (B223-B230 covering Q-201 through Q-209; folded same day; gate-pinned with LIVE recurrence; sweep clean)
+
+- **B223/Q-201:** **Q_26(0) = 25!! by recurrence** (17!! splice pinned);
+  roots PURELY IMAGINARY (verification refined our own ledger);
+  **the 26-layer orthogonal Hermite expansion CANONIZED**.
+- **B224/Q-202:** glitch/anti-glitch ↔ F_UBii ↔ R(t)-sign chain
+  campaign-tracked.
+- **B225/Q-203:** **GHZ entropy = constant ln2** (rise claim struck);
+  cascade analogy = B224's quantum companion.
+- **B226/Q-204:** f_flare rename (F_TRZ primitive protected); φ =
+  separate phase variable; 1e-15 = context value.
+- **B227/Q-205:** **tail exponent = (D_phys−1)/SO_5 = 3/10 EXACT** —
+  the PAPER_1953 family's FIFTH cross-regime appearance.
+- **B228/Q-206:** **a₀ = c·H₀/D_BSFG primitive-composed** (5.5%
+  disclosed; Milgrom = comparison); k_UA = F_TRZ⁴ rung-4 intended;
+  r_trans OPEN.
+- **B229/Q-207+208 (paired):** table sum 898/990 canonical; H2
+  conversion drift pinned (true hc·B recorded).
+- **B230/Q-209:** proton magic 114 INTENDED (neutron 126 = D_crit+SO_5²
+  stays the canonical identity); D_universe (1+z) typo confirmed.
+Queue: 21 Daniel-gated + 1 OPEN_CANDIDATE.

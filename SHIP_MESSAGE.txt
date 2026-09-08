@@ -1,39 +1,39 @@
-v0.420.0 — THE CODE-TRUTH SHIP
+v0.421.0 — THE RATIO-LOCK SHIP
 
-The corpus measured against its own code and its own mathematics.
-Batches 21-25 (40 rulings, B162-B201, + one sweep application).
+The campaign's oldest fork reframes and the field equations settle.
+Batches 26-29 (29 rulings, B202-B230, closing 34 queue questions).
 
-- THE MILLENNIUM SET IS EQUATION-VERIFIED: PAPER_1182 canonized as THE
-  canonical set after an independent verification pass - five closures
-  recompute EXACT from primitives; the Riemann canon IS the true
-  10,000th zeta zero; the BSD canon IS the true Cremona 37a1 value;
-  the K_Mex-1 misprint corrected to the K_Mex-2 = 1/12 DPM-pair
-  identity; the four-way YM fork resolves onto 1.736 GeV, confirmed
-  BY 1182's own falsifiable window (which its Mexican-hat ladder
-  fails at 1.581).
-- CODE TRUTH: the resonance tables are formally superseded by the
-  operational 1.773e-9 on THREE independent witnesses (unit test,
-  decomposition, running fluid sim); Term 9 = 3GM^2/r^3 is canonized
-  as the compressed-table generator (code == table == derived at
-  0.05 pct); the 7-system values stand as parametric placeholders
-  on the primitive-locked (1 + F_TRZ^3) tag.
-- THE UBI NAMESPACE CLOSES: one law with four scoped faces (galactic
-  chain / local compact / DPM-moment / fluid Archimedes).
-- LANDMARKS + DOCTRINES: the 2.32 mm wormhole throat (no back-solving);
-  the containment doctrine ("UQFF contains DPM-seeded gravity") as the
-  GR-relationship statement; the magnetospheric identification +
-  photon-path scoping; E_vac,neb = rho_UA; rho_A = 1e-23; F_U merger
-  additivity (GW231123, real O4 event); the azeo void as the 2*F_TRZ
-  family's 4th appearance; 40/60 primitive-locked; omega_SCm =
-  1.25 THz the one carrier.
-- PROVENANCE: k1/k2/k3 = 1.5/1.2/1.8 canonized source-document EXACT
-  (May 2025 Final Equations, PAPER_2152 chain); k4 = 2.0 corpus-wide
-  with self-rectification validated; H0 = 70 = A_5 + SO_5
-  everywhere-standing; the Chandra observational anchor takes SGR
-  1745's field.
-- HONESTY: falsified outputs, circularities, slipped derivations, and
-  a Pioneer-claim-carrying transcription slip pinned by name; the
-  sec-8 epistemic self-assessment registered as the Rule 7 exemplar.
+- THE RATIO LOCK: B = F_TRZ*Bcrit canonized as the catalog design rule
+  - every system in the 7-object source catalog at B/Bcrit = 0.1 =
+  F_TRZ EXACT (the PAPER_1944 n*F_TRZ family operational). The
+  campaign's OLDEST fork (Q-002, open since PAPER_002) REFRAMES: the
+  ratio is the invariant; per-context Bcrit values are derived scales.
+- THE CANONICAL F_U DECLARED: the operational ten-term set - the
+  source-document Ug forms, Um + tr(A_mu_nu), and the explicit
+  minus-buoyancy - on May 2025 Final-Equations provenance; the
+  two-buoyancy distinction (point-Ubi vs the F_U_Bi_i integral) and
+  the operator-taxonomy trilogy (Ug / F_UBii / Um, dual channels
+  intentional) adopted around it.
+- THE TRIADIC CONVERGENCE: PAPER_196 = the corpus form of the
+  predecessor calculate_triadic_g; BUCKET C declared the canonical
+  cosmology source; the combined F_UBii catalog extends the 2151
+  registry across all sectors.
+- MATHEMATICS VERIFIED LIVE: the gate itself now runs the Q_26
+  recurrence (constant = 25!!, the printed 17!! splice pinned); GHZ
+  entropy = constant ln2; the cluster tail exponent = (D_phys-1)/SO_5
+  = 3/10 EXACT (the 0.3 factor's FIFTH cross-regime appearance); the
+  MOND scale primitive-composed (a0 = c*H0/D_BSFG; k_UA = F_TRZ^4).
+- FORENSICS + CORRECTIONS: the S49 common-source transposition
+  (v_SCm 2.958, load-bearing through four papers); the Dirichlet-eta
+  correction; mu_s = Bs*Rs^3 with the placeholder REMOVED; the UQFF
+  QNM form adopted as its own; the Units-class audit standing; the
+  f_flare rename protecting the F_TRZ primitive; proton 114 / neutron
+  126 settled; the ECDSA bug pinned with its fix.
+- THE RECORD: the Star-Magic graph-theory etymology (the star graph
+  of magic-labeling theory) formally entered.
+- FIVE FALSIFIABLES campaign-tracked: the glitch/anti-glitch chain,
+  JWST NIRCam 2.85e-4 discrimination, low-l CMB suppression, the
+  ~0.1 pct lensing shift, GW mass-gap quantization.
 
-REGISTRY CROSSES 7,000 ROWS. Gate 6,069/0. Acceptance 89/89.
-Backlog 95 -> 55 + 1. Next: Batch 26 (from Q-176).
+Registry 7,034 rows. Gate 6,073/0. Acceptance 89/89.
+Backlog 55 -> 21 + 1. Next: Batch 30 (from Q-210).

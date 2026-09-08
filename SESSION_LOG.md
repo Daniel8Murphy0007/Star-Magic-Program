@@ -13016,3 +13016,72 @@ and re-run; the guard chain held. Headlines: Millennium set
 equation-verified, resonance tables superseded on code truth, Ubi
 namespace closed, registry 7,000. Daniel ships via .\ship.ps1;
 tag-chain verification next session per standing rule.
+
+## 2026-09-07 (4) — BATCH 26 FOLDED (B202-B209): the S49 forensics
+
+Eight rulings. v0.420.0 tag verified pre-fold (tag == HEAD). The S49
+software-block forensics completed: the afluid closed form canonized
+(first delivery of the B196 extraction), the common-source
+transposition established across four papers, the Riemann bridge
+corrected to the Dirichlet eta, the mu_s placeholder formally removed,
+and the 7-object catalog yielded the B = F_TRZ*Bcrit ratio lock that
+reframes the long-running Q-002 B_crit fork. The project name's
+graph-theory etymology entered the record. 8 dispatches ruled,
+registry +10 (7,010), graph +3, gate 6,069 → 6,070, index 8 flips.
+Backlog 55 → 47 + 1. Sweep clean.
+
+## 2026-09-07 (5) — BATCH 27 FOLDED (B210-B214): the umbrella canonical-F_U declaration
+
+Five rulings closing eight queue items (four minimal entries folded as
+one). The headline: THE CANONICAL F_U DECLARED — the operational
+171/172 ten-term set, provenance-anchored to the May 2025 Final
+Equations; with it, the last field-equation fork family closes. The
+corpus's own Units class became a standing audit instrument, the
+Ramanujan series took its pole exclusion, and the ECDSA bug got its
+fix specification. 7 dispatches ruled, registry +6 (7,016), graph +3,
+gate 6,070 → 6,071, index 7 flips. Backlog 47 → 39 + 1 — UNDER 40.
+Sweep clean.
+
+## 2026-09-07 (6) — BATCH 28 FOLDED (B215-B222): the sec-2.6 taxonomies
+
+Eight rulings closing nine queue items (the QNM joint fold + the
+pulled-forward Q-200). The taxonomy thread resolved into structure:
+the triadic master equation canonized as the predecessor
+calculate_triadic_g's corpus form, the operator trilogy (Ug/F_UBii/Um)
+adopted with dual channels intentional, the combined F_UBii catalog
+extending the 2151 registry across all sectors, the UQFF QNM
+parametrization adopted as its own form, BUCKET C declared the
+canonical cosmology source, and three falsifiables campaign-tracked
+(anti-glitch, low-l CMB, lensing shift). 9 dispatches ruled, registry
++9 (7,025), graph +3, gate 6,071 → 6,072, index 9 flips. Backlog
+39 → 30 + 1. Sweep clean.
+
+## 2026-09-07 (7) — BATCH 29 FOLDED (B223-B230): the mathematics batch
+
+Eight rulings closing nine queue items, all verified by direct
+computation — the gate pin itself now runs the Q_26 recurrence live
+(constant = 25!!). The Hermite spectral expansion canonized, the GHZ
+entropy corrected to constant ln2, the 0.3 factor took its fifth
+cross-regime appearance (3/10 EXACT), the MOND scale went
+primitive-composed (c*H0/D_BSFG with rung-4 k_UA), the F_TRZ primitive
+was protected from a frequency name collision, and the proton/neutron
+magic distinction was settled (114 intended / 126 canonical identity).
+One honest-audit note: the verification pass corrected our own earlier
+ledger phrasing on the root structure (purely imaginary, not real).
+9 dispatches ruled, registry +9 (7,034), graph +3, gate 6,072 → 6,073,
+index 9 flips. Backlog 30 → 21 + 1. Sweep clean.
+
+## 2026-09-07 (8) — v0.421.0 SHIP PREP: THE RATIO-LOCK SHIP
+
+Batches 26-29 prepared for ship (29 rulings, B202-B230). Version
+synced across pyproject / VERSION / gate pin / CITATION.cff / README
+badges (cacheBust bumped) / CHANGELOG / UNIFIED_REGISTRY_VERSION.txt /
+SHIP_MESSAGE / _BUILD_LOG; band-trail rows appended to the registry
+satellites; arc marker rotated CODETRUTH_ARC -> RATIOLOCK_ARC;
+manifest regenerated; gate green 6,073/0. Ship-prep note: the first
+pass tripped the rule-e length assert (515 > 512) at the TOP of the
+script - zero files touched (the guard now leads the prep), trimmed
+and re-run clean. Headlines: the ratio lock reframing Q-002, the
+canonical F_U declaration, the triadic convergence, the live-verified
+mathematics batch. Daniel ships via .\ship.ps1; tag-chain
+verification next session per standing rule.

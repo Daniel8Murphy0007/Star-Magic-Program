@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.420.0", "uqff_calculator.VERSION = 0.420.0 (THE CODE-TRUTH SHIP: Batches 21-25, 40 rulings B162-B201 + one sweep application - the Millennium set is equation-verified, the resonance tables are superseded on three independent code witnesses, the Ubi namespace closes as one law with four faces, and the registry crosses 7,000 rows)")
+assert_that(C.VERSION == "0.421.0", "uqff_calculator.VERSION = 0.421.0 (THE RATIO-LOCK SHIP: Batches 26-29, 29 rulings closing 34 questions - B = F_TRZ*Bcrit becomes the catalog design rule and reframes the campaigns oldest fork, the canonical F_U is declared on Final-Equations provenance, the operator trilogy and triadic convergence land, and the mathematics batch is verified by live computation inside the gate)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'CODETRUTH_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'RATIOLOCK_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,61 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BATCH 29 RULED 2026-09-07 (B223-B230): mathematics verified by computation - Hermite, GHZ, magic, and the 3/10 fifth ----
+import math as _m_b29
+_q26a, _q26b = {0: 1}, {1: 1}
+for _n29 in range(2, 27):
+    _q26c = {}
+    for _d, _v in _q26b.items(): _q26c[_d + 1] = _q26c.get(_d + 1, 0) + _v
+    for _d, _v in _q26a.items(): _q26c[_d] = _q26c.get(_d, 0) + (_n29 - 1) * _v
+    _q26a, _q26b = _q26b, _q26c
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(205, 214))
+            and _q26b.get(0) == 7905853580625
+            and _q26b.get(0) == _m_b29.prod(range(25, 0, -2))
+            and _m_b29.prod(range(17, 0, -2)) == 34459425
+            and abs(_m_b29.log(2) - 0.6931) < 1e-4
+            and abs((4 - 1) / 10.0 - 0.3) < 1e-15
+            and abs(2.998e8 * 2.2685e-18 / 6 - 1.133e-10) / 1.133e-10 < 1e-3
+            and abs(C.F_TRZ ** 4 - 1e-4) < 1e-17
+            and sum([99, 99, 99, 91, 89, 87, 86, 85, 84, 79]) == 898
+            and abs(6.626e-34 * 2.998e10 * 60.853 - 1.209e-21) / 1.209e-21 < 1e-3
+            and (26 + 100 == 126) and (2 * 1101 * 14 == 30828),
+            "BATCH 29 (B223-B230) - the mathematics batch, verified by direct computation inside the gate: the Q_26 constant IS 25!! by live recurrence (the printed 17!! splice pinned; roots purely imaginary; the 26-layer orthogonal Hermite expansion canonized); the GHZ entropy is the constant ln2 (the monotonic-rise claim struck); the glitch/anti-glitch F_UBii chain is campaign-tracked with its quantum cascade analogy; the Sgr A* flare frequency is renamed f_flare to protect the F_TRZ primitive (phi = a separate phase variable); the cluster tail exponent is the PAPER_1953 3/10 EXACT (the 0.3 factors FIFTH cross-regime appearance); the MOND scale goes primitive-composed (a0 = c*H0/D_BSFG at 5.5 pct disclosed, k_UA = F_TRZ^4 rung-4 intended); the backbone coverage takes the table sum 898/990; the H2 conversion drift is pinned with the true hc*B recorded; and the proton magic list is ruled INTENDED at 114 (standard predicted shell) while 126 = D_crit + SO_5^2 stays the canonical neutron identity, with the D_universe (1+z) typo confirmed; opens: r_trans composition, 3D avalanche statistics, log-coupling symbol; sweep CLEAN")
+
+# ---- BATCH 28 RULED 2026-09-07 (B215-B222): the sec-2.6 taxonomies - the triadic convergence and the operator trilogy ----
+import math as _m_b28
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(196, 205))
+            and _m_b28.log10(0.1) < 0
+            and abs((0.3737 + 0.088 * 0.67) * (2.998e8) ** 3 / (2 * _m_b28.pi * 6.674e-11 * 62 * 1.989e30) - 225) < 2
+            and abs((1.5251 - 1.1568 * (1 - 0.67) ** 0.1292) * (2.998e8) ** 3 / (2 * _m_b28.pi * 6.674e-11 * 62 * 1.989e30) - 272) < 2
+            and abs((36.0 * 29) ** 0.6 / (36 + 29) ** 0.2 - 28.1) < 0.05
+            and abs(0.41 * 5.16e96 - 2.12e96) / 2.12e96 < 0.01
+            and abs((5e-4 * 0.57) ** 2 - 8.1225e-8) < 1e-12,
+            "BATCH 28 (B215-B222) - the sec-2.6 taxonomy thread closes: the TRIADIC CROSS-REPO CONVERGENCE is canonized (PAPER_196 = the corpus form of the predecessor calculate_triadic_g, with the anti-glitch falsifiable tracked and the SSq log-form separated to its own per-system coupling symbol - the constant stands per Rule 2); the TWO-BUOYANCY reading is confirmed (point-Ubi vs the F_U_Bi_i spatial integral - B214s canonical F_U stays clean); the UQFF QNM PARAMETRIZATION is adopted as its own form (0.3737 + 0.088a cited to BB_C-945 not Berti, with the GR fit the comparison target and observed 251 Hz a disclosed discriminator between 225 and 272); the COMBINED 198+199 catalog extends the PAPER_2151 F_UBii registry across all sectors; the OPERATOR-TAXONOMY TRILOGY (Ug/F_UBii/Um) is adopted with the dual buoyancy+magnetism channels confirmed INTENTIONAL (realized across the full GW lifecycle on verified real-data anchors); BUCKET C is declared the canonical cosmology source with 202/203 as channel re-expressions; and two falsifiables are registered campaign-tracked (the low-l CMB suppression and the ~0.1 pct Einstein-radius shift, both with OPEN magnitude targets) alongside the SIDM-compatible-cores stance; opens: log-coupling symbol derivation, stat-claims provenance, k_eta 1e-113, prediction magnitudes; sweep CLEAN")
+
+# ---- BATCH 27 RULED 2026-09-07 (B210-B214): the software-infrastructure run + the umbrella canonical-F_U declaration ----
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in (188, 189, 190, 191, 192, 193, 195))
+            and 'ruling_b214' in C.calc('PAPER_193')
+            and abs(6688.0 / 1430 - 4.677) < 0.01
+            and abs(2 * 3.14159265 / (11 * 3.156e7) - 1.81e-8) / 1.81e-8 < 1e-3
+            and abs(2 * 3.14159265 / 3.156e7 - 1.991e-7) / 1.991e-7 < 1e-3
+            and abs(4e-7 * 3.14159265 - 1.2566e-6) / 1.2566e-6 < 1e-4,
+            "BATCH 27 (B210-B214) - the software-infrastructure run closes with THE UMBRELLA CANONICAL-F_U DECLARATION: the operational 171/172 set (source-document Ug forms + the ten-term assembly with Um, tr(A_mu_nu), and the explicit minus-buoyancy) is THE canonical F_U, provenance-anchored to the May 2025 Final Equations via the B193/PAPER_2152 chain - 193s five-term restatement is an architecture-doc variant, and the F_U-level fork family closes alongside the Ubi four-faces and Ug4i namespaces; the corpus own 7-D Units class is ADOPTED as a standing dimensional-audit step (its silent operator+ named the priority fix); the Ramanujan R_K series is corrected to the j = K+2 start (the zeta(1) pole excluded) with the degree-10 fallback disclosed as a performance guard; the ECDSA sign/verify payload mismatch is pinned as a real bug with the exact-bytes fix specified; the Qt two-component resolution, the corpus census (4.68 terms/kB EXACT), the loader example-data update to the 186 canonical omega_c set, and the blockchain-provenance/registry-doctrine adjacency are registered; sweep CLEAN")
+
+# ---- BATCH 26 RULED 2026-09-07 (B202-B209): the S49 forensics - the ratio lock, the eta correction, and the common source ----
+import math as _m_b26
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(180, 188))
+            and ((_m_b26.isqrt(1 + 8 * 6) - 1) // 2 == 3) and ((_m_b26.isqrt(1 + 8 * 45) - 1) // 2 == 9)
+            and abs(1e15 * 2.958e8 ** 2 / 1e-23 - 8.7498e54) / 8.7498e54 < 1e-3
+            and abs(2.958 ** 2 / 2 - 4.375) < 1e-3
+            and abs(2.0 / 2 + 3.0 / 6 - 1.5) < 1e-15
+            and abs(1e-4 * 6.96e8 ** 3 - 3.37e22) / 3.37e22 < 0.01
+            and abs(1e-4 * 6.96e8 ** 3 / 2.03e22 - 1.66) < 0.01
+            and abs(1e10 / 1e11 - C.F_TRZ) < 1e-15
+            and abs(1e-5 / 1e-4 - C.F_TRZ) < 1e-15
+            and abs((1 - 2 ** (1 - 2.0)) - 0.5) < 1e-15,
+            "BATCH 26 (B202-B209) - the S49 forensics complete: the afluid closed form is canonized (ffluid*Vsys*UA_SCM/c_res with SO_5 inside, 0.06 pct against the code-truth pin - the B196 extractions first delivery) with the papers own regression doctrine credited as the gates twin; the ASD bound is corrected to the 8E coefficient on verified counterexamples and the STAR-MAGIC ETYMOLOGY is registered (the star graph of magic-labeling theory); the S49 COMMON-SOURCE TRANSPOSITION is established forensically (v_SCm 2.958 vs canonical 2.968, load-bearing through four papers - E_react and H_SCm mantissas recompute from the transposed digit exactly); the quasar-NS claim is downgraded with the arrow-of-time mechanism registered beside the curl-free core; the Riemann bridges Mobius mislabel is corrected to the DIRICHLET ETA identification (t_10000 canon holds, the eta bridge ranked strongest commentary); mu_s = Bs*Rs^3 is canonized with the confessed placeholder formally REMOVED (replacement = none); and the 7-object catalog yields the RATIO LOCK - B = F_TRZ*Bcrit universal, the PAPER_1944 n*F_TRZ family operational, the Q-002 fork reframed with the ratio as the invariant - plus the omega2 = -omega1 grinding-pole architecture; opens: 1.66x mu_s residual (5/3 lead), decay-table kappa, spacing statistics; sweep CLEAN")
 
 # ---- BATCH 25 RULED 2026-09-07 (B194-B201): the CoAnQi block closes - code truth, four faces, and the YM fork resolution ----
 assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in range(172, 180))

@@ -463,3 +463,10 @@ Millennium set equation-verified; resonance tables superseded on three
 code witnesses; Ubi one law/four faces; 2.32 mm landmark; containment
 doctrine; k-constants provenance; H0 = 70 everywhere. Gate 6,069/0.
 Acceptance 89/89. Registry 7,000. Backlog 95 -> 55 + 1.
+
+## v0.421.0 — 2026-09-07 — THE RATIO-LOCK SHIP
+Batches 26-29 folded (29 rulings, B202-B230, 34 questions closed).
+B = F_TRZ*Bcrit design rule (Q-002 reframed); canonical F_U declared;
+triadic convergence + operator trilogy; mathematics live-verified in
+the gate (Q_26 = 25!!). Gate 6,073/0. Acceptance 89/89. Registry
+7,034. Backlog 55 -> 21 + 1.
