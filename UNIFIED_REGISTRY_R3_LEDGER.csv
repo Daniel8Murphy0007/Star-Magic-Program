@@ -264,3 +264,4 @@ band,QUEUEZERO_ARC,READY v0.422.0,the rulings campaign completes at zero - live-
 band,DERIVATION_ARC,READY v0.423.0,the extraction campaign delivered and the derivation queue closed - zero new free parameters
 band,LIVEFORMS_ARC,READY v0.424.0,the labels were never the work - the derivations were
 band,USERDOOR_ARC,READY v0.425.0,a stranger with pip and two minutes now sees a real honest result
+band,TESTERLOOP_ARC,READY v0.426.0,the first outside install-to-result loop is closed and recorded

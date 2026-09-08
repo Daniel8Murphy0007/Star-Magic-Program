@@ -495,3 +495,9 @@ mid-session v0.423.0 ship. Gate 6,079/0. Acceptance 89/89.
 B261 (U_i harness + cited reference + KTB investigation with the
 (1+F_TRZ) flagged candidate) + B262 (star-magic survey, self-grading
 demo +0.7 pct). Simulator v1.87.0; acceptance 99/99. Gate 6,081/0.
+
+## v0.426.0 — 2026-09-08 — THE TESTER LOOP SHIP
+First outside install-to-result loop closed (v0.425.0 wheel, +0.7 pct
+self-grade on the user's screen). TESTER_GUIDE.md (PATH-trap immune)
++ the star-magic guide command ship the field lesson back. Gate
+6,082/0. Acceptance 99/99.

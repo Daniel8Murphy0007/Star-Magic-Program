@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.425.0"
-description = "Star-Magic UQFF calculator v0.425.0: THE USER DOOR SHIP - B261/B262: star-magic survey, the one-command user path (LAS in, one honest strata report out; --demo self-grades at +0.7% against the file's own sonic); the U_i coupling harness (AWAITING_DANIEL_SPEC, degeneracy-honest); the cited WGS84 gravity reference (NGA TR8350.2, de-loopbacked); the KTB +10% investigation with the (1+F_TRZ) family-offset candidate FLAGGED. Simulator v1.87.0. 2,256 papers, gate 6,081/0, acceptance 99/99."
+version = "0.426.0"
+description = "Star-Magic UQFF calculator v0.426.0: THE TESTER LOOP SHIP - the first outside install-to-result loop CLOSED (a non-technical user ran the survey demo from the PyPI wheel on his own machine, +0.7% self-grade on screen) and the field lesson shipped back into the product: TESTER_GUIDE.md (click-by-click, PATH-trap immune, python -m primary form) now rides the wheel and prints via the new star-magic guide command. Simulator v1.87.0. 2,256 papers, gate 6,082/0, acceptance 99/99."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -105,6 +105,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "RULINGS_QUEUE.md",
     "SESSION_LOG.md",
     "SHIP_MESSAGE.txt",
+    "TESTER_GUIDE.md",
     "UNIFIED_REGISTRY.csv",
     "UNIFIED_REGISTRY_ANCHORS.csv",
     "UNIFIED_REGISTRY_CORPUS_CITATIONS.csv",

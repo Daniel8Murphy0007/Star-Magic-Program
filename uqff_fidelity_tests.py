@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.425.0", "uqff_calculator.VERSION = 0.425.0 (THE USER DOOR SHIP: the product phase opens - star-magic survey walks the whole engine behind one command and grades itself against the files own sonic; the U_i socket, the cited reference layer, and the (1+F_TRZ) family-offset candidate ship beside it)")
+assert_that(C.VERSION == "0.426.0", "uqff_calculator.VERSION = 0.426.0 (THE TESTER LOOP SHIP: the first outside install-to-result loop closed on a machine this project never touched, and the field lesson - the Windows PATH trap and its python -m cure - shipped back into the guide, the README, and the new guide command)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'USERDOOR_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'TESTERLOOP_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,17 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- B263 2026-09-08: THE TESTER LOOP - the guide ships where the tester lands ----
+import star_magic_cli as _b263_cli
+_b263_guide = open('TESTER_GUIDE.md', encoding='utf-8').read()
+assert_that('python -m star_magic_cli survey --demo' in _b263_guide
+            and 'Add python.exe to PATH' in _b263_guide
+            and 'ignore them' in _b263_guide
+            and 'py -m star_magic_cli survey --demo' in _b263_guide
+            and callable(getattr(_b263_cli, 'cmd_guide', None))
+            and 'TESTER_GUIDE.md' in open('pyproject.toml', encoding='utf-8').read(),
+            "B263 - THE TESTER LOOP: the first outside install-to-result loop closed on v0.425.0 (a non-technical user, an untouched machine, the +0.7 pct self-grade on his screen) and the field lesson ships back where the next tester lands - TESTER_GUIDE.md carries the PATH-proof python -m form as its PRIMARY command, pre-explains the yellow warnings, includes the py fallback, rides the wheel via the generated manifest, and prints in any terminal through the new guide command; one user's confusion became every user's fix, which is what a real program does")
 
 # ---- B262 2026-09-08: THE SURVEY COMMAND - the one-command user path (Daniel: "build the survey command") ----
 from uqff_downhole_simulator.uqff_survey_cmd import run_survey as _b262_rs

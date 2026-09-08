@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.425.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.425.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.426.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.426.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6081%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6082%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2311-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.425.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.426.0 complete-compile campaign live**
 
-**This release (v0.425.0): THE USER DOOR SHIP — the product phase opens.** B261 + B262, both on Daniel's direct orders. **THE SURVEY COMMAND (B262):** `star-magic survey mywell.las` — the one-command user path. A LAS 2.0 file in, one honest strata report out: density census with disclosed exclusions, the K2 UQFF gravity signature, a family-prior Vp estimate with n/σ/support (extrapolating stations WITHHELD, the prior assumption printed where it acts), cited-reference QC, and an explicit refusals section — an empty file gets an honest refusal naming the unlocking channel, acceptance-tested. `--demo` runs the bundled public KTB excerpt end-to-end and GRADES ITSELF against the file's own sonic: estimated 6,166 vs measured 6,125 m/s = **+0.7%**. The B262 gate pin runs the demo inside every gate, so the user path cannot silently rot. **DO ALL THREE (B261):** the U_i coupling harness — the K2 ranked candidate's socket (registered coupling-form family, bit-exact null self-check, depth-constant couplings honestly convicted DEGENERATE), AWAITING_DANIEL_SPEC; the cited gravity reference — WGS84 Somigliana (NGA TR8350.2, equator/pole reproduced to published precision) + free-air at the ICDP-published KTB site = 9.80895 m/s², an observational reference standard that de-loopbacks the reference layer with stream QC wired; and the KTB +10% investigation — the v1 cross-family refutation reproduced live, the V2 family-prior fix confirmed (−1.2% in-sample, PINNED_AWAITING_DEEP_SONIC), and **the (1+F_TRZ) family-offset candidate surfaced** (the record benchmark 6228/5675 = 1.0974 sits 0.24% from 1+F_TRZ — FLAGGED per the value-coincidence discipline, falsifiable on the deep-sonic file). Simulator v1.85.0 → **v1.87.0**; acceptance 89 → **99 checks** (Sections X + Y). **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,081 green / 4,183 defs / acceptance 99 green / registry 7,067 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.426.0): THE TESTER LOOP SHIP — the first outside user, and the lesson he taught us.** Hours after v0.425.0 reached PyPI, a non-technical tester installed it on a machine this project has never touched, hit the classic Windows Scripts-not-on-PATH trap on the `star-magic` shortcut, received one relayed command — and ran the complete survey demo: the full report, the disclosed exclusions, the Vp estimate with error bars, the **+0.7% self-grading cross-check**, and the refusals section, on his own screen. The install-to-result loop is CLOSED. This band ships the field lesson back into the product: **`TESTER_GUIDE.md`** — every click and keystroke written out for a non-technical user, with the PATH-trap-immune `python -m star_magic_cli survey --demo` as the primary command form, the install's yellow warnings pre-explained, and the `py` launcher fallback included — rides the wheel and prints in any terminal via the new **`star-magic guide`** command (`python -m star_magic_cli guide`); the README carries the tester pointer and both command forms. **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,082 green / 4,183 defs / acceptance 99 green / registry 7,067 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.425.0)
+## What is currently shipped (v0.426.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,067 rows**. Fidelity gate: **6,081 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,067 rows**. Fidelity gate: **6,082 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|
@@ -767,7 +767,9 @@ star-magic gui                     # 5. the one window: Papers | Wells | Gate | 
 complete without a display — every number, flag, well, export, and the full
 fidelity gate (`star-magic gate`) work in a terminal on a server or at a
 wellsite. The Qt window is one command away: `pip install "star-magic-program[gui]"`.
-**THE ONE-COMMAND USER PATH:** `star-magic survey mywell.las` — a LAS file
+**GIVE THIS TO A TESTER:** [`TESTER_GUIDE.md`](TESTER_GUIDE.md) — every click written out for a non-technical user; field-tested against the Windows not-on-PATH trap (the guide's command form, `python -m star_magic_cli survey --demo`, works even when the `star-magic` shortcut doesn't).
+
+**THE ONE-COMMAND USER PATH:** `star-magic survey mywell.las` (or the PATH-proof form `python -m star_magic_cli survey mywell.las`) — a LAS file
 in, one honest strata report out (density census with disclosed exclusions,
 the K2 gravity signature, a Vp estimate with n/σ/support and the prior
 assumption printed where it acts, cited-reference QC, and an explicit list

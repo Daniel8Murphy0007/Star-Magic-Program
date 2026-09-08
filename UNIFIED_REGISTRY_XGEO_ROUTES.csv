@@ -1752,3 +1752,4 @@ QUEUEZERO_ARC,n/a,XGEO_NOT_REQUIRED,extraction queue carried forward,v0.422.0
 DERIVATION_ARC,n/a,XGEO_DELIVERED,the opaque-formula procedure closed its queue,v0.423.0
 LIVEFORMS_ARC,n/a,XGEO_NOT_REQUIRED,none,v0.424.0
 USERDOOR_ARC,n/a,XGEO_NOT_REQUIRED,none,v0.425.0
+TESTERLOOP_ARC,n/a,XGEO_NOT_REQUIRED,none,v0.426.0

@@ -106,6 +106,15 @@ def cmd_well(args) -> int:
     return dm.main() if hasattr(dm, "main") else 0
 
 
+
+def cmd_guide(_args) -> int:
+    """Print TESTER_GUIDE.md - the click-by-click instructions a
+    non-technical tester follows (field-tested against the Windows
+    not-on-PATH trap)."""
+    p = uqff_paths.resolve("TESTER_GUIDE.md")
+    print(p.read_text(encoding="utf-8"))
+    return 0
+
 def cmd_docs(_args) -> int:
     root = uqff_paths.data_root()
     print("corpus root:   %s" % root)
@@ -216,6 +225,8 @@ def main(argv=None) -> int:
     p_exp.set_defaults(fn=cmd_export)
     p_qs = sub.add_parser("quickstart", help="first run: catalogue well 200 steps + PAPER_646 with honesty flags")
     p_qs.set_defaults(fn=cmd_quickstart)
+    p_gd = sub.add_parser("guide", help="print the click-by-click tester guide")
+    p_gd.set_defaults(fn=cmd_guide)
     p_docs = sub.add_parser("docs", help="where the corpus lives on this machine")
     p_docs.set_defaults(fn=cmd_docs)
     p_gui = sub.add_parser("gui", help="Qt operator shell (gui extra)")

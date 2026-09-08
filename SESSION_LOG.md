@@ -13261,3 +13261,41 @@ rows appended to the eight satellites; manifest regenerated; gate
 green 6,081/0. The product phase opens with the survey command
 self-grading inside the gate. Daniel ships via .\ship.ps1; tag-chain
 verification next session per standing rule.
+
+## 2026-09-08 (10) — FIRST OUTSIDE USER + TESTER_GUIDE.md (field-tested)
+
+MILESTONE: an outside user (non-technical) installed star-magic-program
+0.425.0 from PyPI on his own Windows machine - install clean, wheel
+complete - and hit the classic Scripts-not-on-PATH trap on the
+star-magic shortcut (the install's own yellow warning named it). Fix
+verified and sent: python -m star_magic_cli survey --demo (the
+__main__ guard exists; confirmed working from the installed wheel).
+TESTER_GUIDE.md authored from the field result: the python -m form is
+now the guide's PRIMARY command (immune to the PATH trap), the yellow
+warnings are pre-explained, and the py-launcher fallback is included.
+README points at the guide. Rides the next band with the wheel
+manifest regenerated (the guide ships to PyPI where testers see it).
+
+## 2026-09-08 (11) — THE LOOP CLOSES: first outside install-to-result, CONFIRMED
+
+Daniel relayed the python -m fix; the user's screen came back with the
+COMPLETE demo report - source line, 19/46 station census, density
+column, K2 gravity signature, Vp 5981-6363 (mean 6166, 1-sigma 304),
+the +0.7% self-grading cross-check, the skipped-QC notice, the
+refusals section, and the contract line - running from the
+PyPI-installed v0.425.0 wheel on a machine this project has never
+touched, operated by a non-technical user. Item 6 of the
+real-program ledger (one external user, install -> run -> result,
+without us in the loop beyond one relayed command) is COMPLETE.
+Remaining on that ledger: the blind transfer (deep-sonic file), the
+field SEG-Y, the U_i spec, the cited-G6 register map, the quartz
+bench number.
+
+## 2026-09-08 (12) — v0.426.0 SHIP PREP: THE TESTER LOOP SHIP
+
+TESTER_GUIDE.md + the star-magic guide command + README pointers
+prepared for ship. Version synced across all charter files; arc
+marker USERDOOR_ARC -> TESTERLOOP_ARC; band-trail rows appended;
+manifest regenerated (guide on the wheel); B263 pin added; gate
+green 6,082/0. Daniel ships via .\ship.ps1; tag-chain verification
+next session per standing rule.

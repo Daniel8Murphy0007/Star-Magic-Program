@@ -5,6 +5,29 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.426.0] — 2026-09-08 — THE TESTER LOOP SHIP
+
+### The first outside install-to-result loop — CLOSED
+- A non-technical tester installed v0.425.0 from PyPI on an untouched
+  Windows machine, hit the Scripts-not-on-PATH trap on the star-magic
+  shortcut (the install's own warning named it), received one relayed
+  command, and ran the COMPLETE survey demo - the +0.7 pct self-grade
+  on his screen. Item 6 of the real-program ledger: done.
+### The field lesson, shipped back
+- **TESTER_GUIDE.md**: click-by-click for a non-technical user;
+  `python -m star_magic_cli survey --demo` is the PRIMARY command
+  (PATH-trap immune); yellow install warnings pre-explained; `py`
+  launcher fallback; the feedback questions at the end. Rides the
+  wheel (generated manifest).
+- **`star-magic guide` command** (`python -m star_magic_cli guide`):
+  prints the guide in any terminal - the tester never digs through
+  folders.
+- README: tester pointer + both command forms on the user-path blurb.
+### Gate
+- 6,081 -> **6,082** (+1 B263 pin: the guide is on the wheel, the
+  command prints it, and the primary command form is the PATH-proof
+  one).
+
 ## [0.425.0] — 2026-09-08 — THE USER DOOR SHIP
 
 ### B262 — the survey command (the one-command user path)
