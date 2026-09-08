@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.421.0"
-description = "Star-Magic UQFF calculator v0.421.0: THE RATIO-LOCK SHIP - Batches 26-29 (29 rulings, 34 questions): B = F_TRZ*Bcrit canonized as the catalog design rule (the oldest fork Q-002 REFRAMED - the ratio is the invariant); THE CANONICAL F_U declared (operational ten-term set, Final-Equations provenance); the triadic cross-repo convergence + operator trilogy; the mathematics batch verified by live computation in the gate (Q_26 = 25!!); backlog 55 to 21+1. 2,255 papers, gate 6,073/0, acceptance 89/89."
+version = "0.422.0"
+description = "Star-Magic UQFF calculator v0.422.0: THE QUEUE-ZERO SHIP - Batches 30-31 (20 rulings closing 37 questions): THE RULINGS CAMPAIGN COMPLETES - 224 items to ZERO Daniel-gated (the gate now live-counts zero OPEN_RULING statuses); the Force Equivalence Class canonized (+2.11e208 = PAPER_217 Branch 1, asymmetry 3938); the 15-paper drift-family blanket; sigma_ref applied; the ledger undercount disclosed and corrected. 2,255 papers, gate 6,075/0, acceptance 89/89."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }

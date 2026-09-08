@@ -5,6 +5,34 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.422.0] — 2026-09-07 — THE QUEUE-ZERO SHIP
+
+### THE RULINGS CAMPAIGN COMPLETES (Batches 30-31: 20 rulings, B231-B250, 37 questions)
+- **Batch 30**: Q-216 closed via the PAPER_2259 sigma_ref bridge;
+  3*F_TRZ^2 ladder pair = intended primitives; one running-vacuum
+  surface; Saturn benchmark reconciled at dr = 3.4 m; Perseus 85 km/s;
+  f_z,CGM ruled fitted; NGC 7635 two mechanisms; SGR 0501 extraction
+  queued + 8d951e12 thread confirmed; a_wind second concordant ruling.
+- **Batch 31 (QUEUE ZERO)**: the campaign's first questions closed on
+  the corpus's own self-rectification and its oldest under the B209
+  ratio lock; Sombrero M = 1e12 M_sun; the A_sc family unified
+  (f_super = 1.411e15, era-B4 concordant); the 15-paper DRIFT-FAMILY
+  BLANKET; DPM_resonance two constructs; the **FORCE EQUIVALENCE CLASS
+  canonized** (+2.11e208 = 217 Branch 1; -8.31e211 = Branch 2;
+  asymmetry 3938~3940; x2 = F0/b; radius-as-sign-determinant;
+  J0030/CasA NS reconciliation OPEN); CPT phase structure canonized;
+  a_aether held OPEN over substitution; CR34 rows corrected.
+- **HONEST-AUDIT DISCLOSURE**: the backlog ledger had undercounted
+  (Q-225..Q-243 missing from the tally); the premature milestone row
+  was caught, disclosed, and corrected. The gate now LIVE-COUNTS zero
+  OPEN_RULING statuses at every run. Three era pins updated to their
+  ruled statuses (289/295/304).
+### Gate
+- 6,073 -> **6,075** (+2 batch pins incl. the live zero-count).
+  Registry 7,042 -> **7,057 rows**. Backlog **224 -> 0 Daniel-gated +
+  1 OPEN_CANDIDATE** (PAPER_1950, observation-gated). ~250 B-numbered
+  rulings across Batches 1-31.
+
 ## [0.421.0] — 2026-09-07 — THE RATIO-LOCK SHIP
 
 ### Rulings folded (Batches 26-29: 29 rulings, B202-B230, closing 34 questions)

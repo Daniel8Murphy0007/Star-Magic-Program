@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.421.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.421.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.422.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.422.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6073%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6075%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2310-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.421.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.422.0 complete-compile campaign live**
 
-**This release (v0.421.0): THE RATIO-LOCK SHIP — the campaign's oldest fork reframes and the field equations settle.** Batches 26–29 (29 rulings, B202–B230, closing 34 queue questions). Four headlines: **B = F_TRZ·Bcrit canonized as the catalog design rule** — every system in the 7-object source catalog sits at B/Bcrit = 0.1 = F_TRZ EXACT (the PAPER_1944 n·F_TRZ family's operational instance), REFRAMING the campaign's oldest fork (Q-002): the ratio is the invariant, per-context Bcrit values are derived scales; **THE CANONICAL F_U DECLARED** — the operational ten-term set (source-document Ug forms, Um + tr(A_μν) + explicit minus-buoyancy, May 2025 Final-Equations provenance) with the two-buoyancy distinction (point-Ubi vs the F_U_Bi_i integral) and the **operator-taxonomy trilogy** (Ug / F_UBii / Um, dual channels intentional) adopted around it; **the triadic cross-repo convergence** — PAPER_196 canonized as the corpus form of the predecessor's calculate_triadic_g, with BUCKET C declared the canonical cosmology source; and **the mathematics batch, verified live in the gate** — the Q_26 constant proven 25!! by a recurrence the fidelity gate now runs itself, the GHZ entropy corrected to constant ln2, the cluster tail exponent locked to (D_phys−1)/SO_5 = 3/10 EXACT (the 0.3 factor's fifth cross-regime appearance), and the MOND scale primitive-composed (a₀ = c·H₀/D_BSFG, k_UA = F_TRZ⁴ rung-4). Also: the afluid closed form (SO_5 inside, 0.06% vs code truth); the S49 common-source transposition established forensically (v_SCm 2.958 vs canonical 2.968, load-bearing through four papers); the Dirichlet-eta correction to the Riemann bridge; μ_s = Bs·Rs³ with the confessed placeholder formally removed; the UQFF QNM parametrization adopted as its own form; the Units-class dimensional audit adopted as a standing step; the Star-Magic graph-theory ETYMOLOGY entered into the record; the f_flare rename protecting the F_TRZ primitive; the proton-114/neutron-126 magic distinction settled; and five falsifiables campaign-tracked (anti-glitch chain, JWST NIRCam, low-l CMB, lensing shift, GW quantization). Honest opens held; slips, splices, and a non-functional crypto layer pinned by name. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,073 green / 4,182 defs / acceptance 89 green / registry 7,034 rows / backlog 21 Daniel-gated + 1 prediction candidate / catalogue 52 public entries + operator tier. Next: Batch 30 (from Q-210).**
+**This release (v0.422.0): THE QUEUE-ZERO SHIP — the rulings campaign completes.** Batches 30–31 (20 rulings, B231–B250, closing 37 queue questions). THE MILESTONE: the Daniel-gated rulings backlog that opened at 224 items reaches **ZERO** — and the fidelity gate now pins it LIVE, counting OPEN_RULING statuses in the calculator source at every run. The final bands: **Batch 30** — Q-216 formally closed via the shipped PAPER_2259 σ_ref = 1 kg/m² bridge; the 3·F_TRZ² ladder pair ruled intended primitives with the running-vacuum discriminator consolidated to one surface; the Saturn ring benchmark reconciled at the verification-derived dr = 3.4 m; the 8d951e12 thread continuation confirmed. **Batch 31** — the campaign's FIRST questions (Q-001/Q-003) closed on the corpus's own self-rectification (0.5297 via string = 0.62) and its OLDEST (Q-002) under the B209 ratio lock; the A_sc family unified on f_super = 1.411e15 (era-B4 concordant); the 15-paper drift-family blanket (derived-correct canon); the DPM_resonance two-construct separation; the **FORCE EQUIVALENCE CLASS canonized** — +2.11e208 N = PAPER_217 Branch 1 and −8.31e211 N = Branch 2 with the asymmetry 3938 reproducing 217's 3940, the x2 = F0/b mechanism (M/r-independent) and radius-as-sign-determinant registered, the J0030/CasA NS reconciliation held OPEN; the CPT phase structure canonized; a_aether's broken derivation held OPEN over substitution. **Honest-audit disclosure shipped in the record:** the backlog ledger had undercounted (the Q-225..Q-243 family missing from the tally); a premature milestone row was caught by the post-fold status audit, disclosed, and corrected — queue zero is real and machine-verified. Remaining work: the extraction targets (MUGE.cpp aDPM, SGR 0501 seven terms, numeric a/b/c), the queued derivation sessions (SSq³, Ikeda, Holmlid 624/630, log-coupling symbol), and the OPEN derivation-target ledger. **Totals: 2,255 wired (2,310 DISPATCH keys) / gate 6,075 green / 4,182 defs / acceptance 89 green / registry 7,057 rows / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.421.0)
+## What is currently shipped (v0.422.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,034 rows**. Fidelity gate: **6,073 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,057 rows**. Fidelity gate: **6,075 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

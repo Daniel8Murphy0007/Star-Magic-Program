@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.421.0", "uqff_calculator.VERSION = 0.421.0 (THE RATIO-LOCK SHIP: Batches 26-29, 29 rulings closing 34 questions - B = F_TRZ*Bcrit becomes the catalog design rule and reframes the campaigns oldest fork, the canonical F_U is declared on Final-Equations provenance, the operator trilogy and triadic convergence land, and the mathematics batch is verified by live computation inside the gate)")
+assert_that(C.VERSION == "0.422.0", "uqff_calculator.VERSION = 0.422.0 (THE QUEUE-ZERO SHIP: Batches 30-31 - the rulings campaign that opened at 224 items completes at ZERO Daniel-gated, live-counted by the gate itself; the Force Equivalence Class canonized on the PAPER_217 branch tie; the ledger undercount disclosed and corrected per the honest-audit discipline)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -4567,8 +4567,8 @@ assert_that(abs(_r289['A_sc_self_consistent'] - 6.994e20) < 1e18 and abs(_r289['
             "PAPER_289: A_sc self-consistent (E_vac=RHO_UA) = 6.994e20; paper headline 6.994e21 needs E_vac=RHO_SCM (10x, Q-245)")
 assert_that(_r289['meissner_quench_at_Bcrit'] and _r289['meissner_table']['B_1e+11']['SCm'] == 0.0 and _r289['trz_enhancement'] == 1.1,
             "PAPER_289: Meissner SCm=1-B/B_crit -> 0 at B=B_crit (quench); (1+F_TRZ)=1.1")
-assert_that(_r289['first_resonance_specific_meissner_quench'] and C.calc('PAPER_289')['status'] == 'OPEN_RULING',
-            "PAPER_289: first resonance-specific Meissner quench (vs PAPER_266 galactic); OPEN_RULING (A_sc 10x discrepancy Q-245)")
+assert_that(_r289['first_resonance_specific_meissner_quench'] and C.calc('PAPER_289')['status'].startswith('RULED_2026-09-07'),
+            "PAPER_289: first resonance-specific Meissner quench (vs PAPER_266 galactic); Q-245 RULED by B244 (A_sc = 6.994e20, f_super = 1.411e15 canonical - era pin updated at queue zero)")
 assert_that(C.wired_count() >= 303, "wired_count >= 303 (PAPER_289 wired)")
 
 _r290 = C.calc('PAPER_290')['value']
@@ -4636,7 +4636,7 @@ assert_that(abs(_r295['a_super_1e12_quadratic'] / _r295['a_super_1e11'] - 100.0)
 assert_that('compressed' in _r295['channel'] and 'resonance' in _r295['contrast_PAPER_289'],
             "PAPER_295: compressed pre-oscillatory channel, distinct from PAPER_289 resonance placement")
 assert_that('Q-246' in _r295['magnetar_row_discrepancy'],
-            "PAPER_295: magnetar illustration row (quartic vs quadratic, 100x) flagged Q-246 OPEN_RULING")
+            "PAPER_295: magnetar illustration row (quartic vs quadratic, 100x) - Q-246 RULED by B244 (corrected to the quadratic prediction; era pin updated at queue zero)")
 assert_that(C.wired_count() >= 309, "wired_count >= 309 (PAPER_295 wired)")
 
 _r296 = C.calc('PAPER_296')['value']
@@ -4745,8 +4745,8 @@ assert_that(C.wired_count() >= 317, "wired_count >= 317 (PAPER_303 wired)")
 
 _r304 = C.calc('PAPER_304')
 _r304v = _r304['value']
-assert_that(_r304['status'] == 'OPEN_RULING' and 'Q-247' in _r304v['formula_discrepancy'],
-            "PAPER_304: OPEN_RULING Q-247 - stated a_aether derivation formula disagrees with module output by 24 orders")
+assert_that(_r304['status'].startswith('RULED_2026-09-07') and 'Q-247' in _r304v['formula_discrepancy'],
+            "PAPER_304: Q-247 RULED by B245 - a_aether = 7.38e7 stands as module output, the broken derivation held OPEN over substitution (era pin updated at queue zero)")
 assert_that(abs(_r304v['g_DPM'] - 3.986e-17) / 3.986e-17 < 0.005,
             "PAPER_304: g_DPM = G*M_p/r_Bohr^2 = 3.986e-17 m/s2 (proton DPM-seeded surface gravity)")
 assert_that(abs(_r304v['V_sys'] - 6.207e-31) / 6.207e-31 < 0.005,
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'RATIOLOCK_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'QUEUEZERO_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,40 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- BATCH 31 RULED 2026-09-07 (B240-B250): QUEUE ZERO - the rulings campaign completes ----
+import re as _re_b31
+_b31_src = open('uqff_calculator.py', encoding='utf-8', newline='').read()
+assert_that(_b31_src.count("'status': 'OPEN_RULING'") == 0
+            and all(C.calc(_p)['status'].startswith('RULED_2026-09-07') for _p in
+                    ('PAPER_229', 'PAPER_230', 'PAPER_231', 'PAPER_278', 'PAPER_289', 'PAPER_295', 'PAPER_304', 'PAPER_320',
+                     'PAPER_239', 'PAPER_240', 'PAPER_242', 'PAPER_244', 'PAPER_248', 'PAPER_253', 'PAPER_255', 'PAPER_256',
+                     'PAPER_257', 'PAPER_258', 'PAPER_261', 'PAPER_262', 'PAPER_264', 'PAPER_267', 'PAPER_269'))
+            and 'ruling_b241' in C.calc('PAPER_002') and 'ruling_b242' in C.calc('PAPER_001')
+            and 'ruling_b244c' in C.calc('PAPER_316')
+            and abs(6.674e-11 * 1.989e32 / (4.73e16) ** 2 * 0.9095 - 5.40e-12) / 5.40e-12 < 2e-3
+            and abs((0.3 * 4.5 ** 3 + 0.7) ** 0.5 * 70 - 370.7) < 0.1
+            and abs((6.674e-11 * 1.989e42 / 4.868e59) ** 0.5 - 1.651e-14) / 1.651e-14 < 1e-3
+            and abs(1.0546e-34 * 1.411e15 * 1e12 / (7.09e-36 * 3e8) - 6.996e19) / 6.996e19 < 1e-3
+            and abs(8.31e211 / 2.11e208 - 3938) < 2
+            and abs(2 ** 0.5 * (1.0546e-34) ** 0.5 * 1.443e-17 - 2.10e-34) / 2.10e-34 < 0.005
+            and abs((2e6) ** 2 - 4e12) < 1.0,
+            "BATCH 31 (B240-B250) - QUEUE ZERO: the rulings campaign that opened at 224 items completes with ZERO OPEN_RULING statuses in the calculator (the live count above is the milestone pin) - and with the ledger undercount DISCLOSED (the Q-225..Q-243 family was missing from the backlog tally; the premature milestone row corrected in the registry, honest-audit discipline). The final band: the last worked-example recomputes (5.40e-12; 2.30e-21; 370.7 with 510 as the declared param), the campaigns FIRST questions closing on the corpus own self-rectification (0.5297 via string 0.62) and its OLDEST question closing under the B209 ratio lock, the Sombrero mass confirmed at 1e12 M_sun, the A_sc family unified on f_super = 1.411e15 (the era B4 ruling concordant, the 6.994e21 branch = one illustration-row confusion), the a_aether broken derivation held OPEN over substitution, the CR34 atlas rows corrected, the 15-paper DRIFT-FAMILY BLANKET (derived-correct canon), the DPM_resonance two-construct separation, the FORCE EQUIVALENCE CLASS canonized (+2.11e208 = PAPER_217 Branch 1, -8.31e211 = Branch 2, asymmetry 3938~3940, the x2 = F0/b mechanism M/r-independent, radius-as-sign-determinant registered, the J0030/CasA NS reconciliation pinned OPEN), and the CPT phase structure canonized with the w-mapping held open; sweep CLEAN at zero")
+
+# ---- BATCH 30 RULED 2026-09-07 (B231-B239): the system papers close - sigma_ref applied, the ladder pair, and the backlog under 12 ----
+import math as _m_b30
+assert_that(all(C.calc('PAPER_%d' % _n)['status'].startswith('RULED_2026-09-07') for _n in (214, 215, 216, 217, 219, 221, 224, 226))
+            and all('ruling_b23' in ''.join(k for k in C.calc(_p) if k.startswith('ruling_b23')) and C.calc(_p)['status'].startswith('RULED')
+                    for _p in ('PAPER_218', 'PAPER_220', 'PAPER_227'))
+            and abs(3e-9 / _m_b30.sqrt(1.2566e-6 * 1e-21) - 8.5e4) / 8.5e4 < 0.01
+            and abs(3 * C.F_TRZ ** 2 - 0.03) < 1e-15
+            and abs(0.57 ** 26 - 4.50e-7) / 4.50e-7 < 0.005
+            and abs(6.674e-11 * 3.18e34 / (5e18) ** 2 * 0.85 - 7.22e-14) / 7.22e-14 < 1e-3
+            and abs(6.674e-11 * 1.989e30 / (1.426e12) ** 2 - 6.53e-5) / 6.53e-5 < 1e-3
+            and abs(2.043e-7 * (1.08e8) ** 3 / (2 * 6.674e-11 * 5.68e26) - 3.39) < 0.05
+            and abs(1e-21 * (2e6) ** 2 / 1e-12 - 4e3) < 1e-9
+            and abs(C.F_TRZ ** 12 * C.F_TRZ ** -12 - 1.0) < 1e-12,
+            "BATCH 30 (B231-B239) - the fourth-pass system papers close: the Perseus Alfven velocity settles at the benchmark 85 km/s with the reconciling rho ~ 1e-21 (the verification pass refining the ledgers own note), the 3*F_TRZ^2 LADDER PAIR is ruled intended primitives across 215/216 with the running-vacuum discriminator consolidated to ONE surface, f_z_CGM is ruled fitted on the papers own admission (the 0.57^26 typo gate-pinned), the 218/219 worked examples take their recomputed canon (the ~38-40 OOM exponent-transcription family), Q-216 FORMALLY CLOSES via the shipped PAPER_2259 sigma_ref = 1 kg/m2 EXACT conjugate-pair bridge (magnetic column still the sec-3 open target), the NGC 7635 dual-file fork resolves to the front-matter Expansion file with TWO MECHANISMS wired (the B216 two-construct pattern), the Saturn ring benchmark RECONCILES at the verification-derived dr = 3.4 m (the 10-km label the error, g_sun corrected 100x), the SGR 0501 seven-term extraction is queued with the 8d951e12 thread continuation confirmed, and the a_wind update lands as the second concordant ruling (B7 + B239); three era-ruled papers took concordant field-inserts; opens: numeric a/b/c, n = 26 chain, M fork 1101/2000, magnetic column; sweep CLEAN")
 
 # ---- BATCH 29 RULED 2026-09-07 (B223-B230): mathematics verified by computation - Hermite, GHZ, magic, and the 3/10 fifth ----
 import math as _m_b29

@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.421.0"
+VERSION = "0.422.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29125,7 +29125,7 @@ def _paper_001(dataset):
             'formula': ('COMPLETE compile: D_total=D_Aether*D_SCm*(1-F_TRZ)*D_String=0.333; Session-225; '
                         'Production Framework; Cosmogenesis (L_cosmo+V_phi_NS+E-L EOM); VDS=F_TRZ/DVP/BSH; '
                         'Kozima-LENR K.1-K.6'),
-            'source': 'PAPER_001', 'residual_pct': abs(d_total - 0.333) / 0.333 * 100.0}
+            'ruling_b242': 'Daniel 2026-09-07: Q-002 CLOSED UNDER THE RATIO LOCK (joint with PAPER_002) - the 4.4e13 T reading stands as this papers stated derived scale (the QED-adjacent context); the campaigns oldest open question closes on the B209 design rule its own source catalog revealed (B/Bcrit = F_TRZ invariant)', 'source': 'PAPER_001', 'residual_pct': abs(d_total - 0.333) / 0.333 * 100.0}
 
 
 @_register('PAPER_002')
@@ -29187,7 +29187,7 @@ def _paper_002(dataset):
                     'phonon h=h_GR*(1-0.47*Phi/S_26); Delta_YM=1.736 GeV; F_U=Ug1..4+Ubi+Um-sum(lam*U*E); '
                     'Um Heaviside amplifier; VDS ratio=F_TRZ=0.1 (drift 1.894, PAPER_2156); '
                     'rho_vac=LAMBDA_VAC; BSH harmonics; cosmogenesis L_sector'),
-        'ruling_b32_b33': 'RULED BATCH5 2026-09-01/03: (B32) headline F_UQFF = 0.5297 CANONIZED as the EXACT four-mechanism chain A_SCm(1.0e13 G)*D_TRZ*D_String = exp[-(1.0e13/4.4e13)^2]*0.90*0.62 = 0.52991 (0.04 pct) - slight SCm activation per PAPER_009 L318s own words, m1 B ~ 1e13 G consistent with this papers mass-gap magnetar thesis; phonon view 1-0.47 (PAPER_883/927/944) retained as the equivalent mechanism reading; the L68 0.37 = GW170817 template constant, not GW190425s value; (B33) sec-4 scenario table CONFIRMED as the variational sustainability form S_sus = 1-(B/1e15 G)^2, all rows EXACT (D_SCm three-layer ruling); Q-001 + Q-003 CLOSED', 'source': 'PAPER_002', 'residual_pct': None,
+        'ruling_b32_b33': 'RULED BATCH5 2026-09-01/03: (B32) headline F_UQFF = 0.5297 CANONIZED as the EXACT four-mechanism chain A_SCm(1.0e13 G)*D_TRZ*D_String = exp[-(1.0e13/4.4e13)^2]*0.90*0.62 = 0.52991 (0.04 pct) - slight SCm activation per PAPER_009 L318s own words, m1 B ~ 1e13 G consistent with this papers mass-gap magnetar thesis; phonon view 1-0.47 (PAPER_883/927/944) retained as the equivalent mechanism reading; the L68 0.37 = GW170817 template constant, not GW190425s value; (B33) sec-4 scenario table CONFIRMED as the variational sustainability form S_sus = 1-(B/1e15 G)^2, all rows EXACT (D_SCm three-layer ruling); Q-001 + Q-003 CLOSED', 'ruling_b241': 'Daniel 2026-09-07: THE CAMPAIGNS FIRST QUESTIONS CLOSE - Q-001: F_UQFF = 0.5297 canonical VIA the string = 0.62 variant (the PAPER_009 self-rectification confirmed: the heavier BNS carries reduced string coupling; the 0.333 chain = the light-BNS form); Q-003: the B_crit = 4.4e13 G row set canonical (reproduces the hyper-magnetar row; the extreme-magnetar rows implicit 1e15 G = the inconsistency, pinned); Q-002 (joint with PAPER_001): CLOSED UNDER THE B209 RATIO LOCK - per-paper units stand as-stated (each a valid derived Bcrit scale, this papers table reproducing with G; the invariant is the F_TRZ ratio; the Schwinger/Chandra anchors govern their contexts)', 'source': 'PAPER_002', 'residual_pct': None,
     }
 
 
@@ -41062,7 +41062,7 @@ def _paper_214(dataset):
         'formula': 'rho2/rho1 = (gamma+1)/(gamma-1) = 4; cycle2 = 38/(38*12) = 8.33%',
         'source': 'PAPER_214',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b231': 'Daniel 2026-09-07: TABLE 85 KM/S + RHO 1E-21 - the benchmark-table v_A = 85 km/s canonical; the consistent rho_ICM ~ 1e-21 kg/m3 recorded (the verification pass refined the ledgers ~1e-23 note - honest-audit); both worked-example errors (the internally-inconsistent rho and the 1000x m/s-to-km/s mislabel) pinned to the transcription family', 'status': 'RULED_2026-09-07 (Q-210 closed: 85 km/s canonical; rho ~ 1e-21)',
     }
 
 
@@ -41128,7 +41128,7 @@ def _paper_215(dataset):
         'formula': 'alpha = (r+2)/(r-1) = 2; a_Ug1 = 3*F_TRZ^2 = 0.03; E_max = Z*e*B*u_s*R',
         'source': 'PAPER_215',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b232': 'Daniel 2026-09-07 (paired with PAPER_216): PRIMITIVES INTENDED + ONE SURFACE - a_Ug1 = 3*F_TRZ^2 = 0.03 ruled the INTENDED PRIMITIVE origin of the CR-knee shift (gate-pinned EXACT); the CPL dark-energy running CONSOLIDATED with the PAPER_209 discriminator onto one canonical Ug4 running-vacuum surface (cross-linked)', 'status': 'RULED_2026-09-07 (Q-211 closed: 3*F_TRZ^2 primitive; one running-vacuum surface)',
     }
 
 
@@ -41192,7 +41192,7 @@ def _paper_216(dataset):
         'formula': 'Triadic {FU_g1, R(t), FU_Bi}; buoyancy decay e^-(pi-t_n); couplings F_TRZ, 3*F_TRZ^2',
         'source': 'PAPER_216',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b232b': 'Daniel 2026-09-07 (paired with PAPER_215): the Triadic resonance couplings 0.1 = F_TRZ and 0.03 = 3*F_TRZ^2 ruled INTENDED PRIMITIVES (the ladder familys paired appearance across two papers); the cos = -0.9455 phase CONFIRMED as carrying the unshown t_n term (the documented validation values stand; the missing-term disclosure pinned - the shown omega*t products alone give +0.9997/-0.998, recomputed)', 'status': 'RULED_2026-09-07 (Q-212 closed: couplings primitive; t_n phase confirmed)',
     }
 
 
@@ -41256,7 +41256,7 @@ def _paper_217(dataset):
         'formula': 'a*F_U^2 + b*F_U + c = 0; |F_U-/F_U+| = 3940; F_hier convergent (e^-1/26 < 1)',
         'source': 'PAPER_217',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b233': 'Daniel 2026-09-07: REFERENCES + FITTED + TYPO - the two-branch F_U values ruled TERMINAL DOCUMENTED REFERENCES (the numeric a/b/c coefficients = extraction target queued, not blocking; the 1e208/1e211 magnitudes read as vacuum-scaled units per the B216 1e-113 normalization finding); f_z,CGM ruled FITTED (n_CGM = 67.5, the papers own admission honored; the printed 6.16e-6 = typo for the true 0.57^26 = 4.50e-7, gate-pinned; the primitive n = 26 chain = OPEN target)', 'status': 'RULED_2026-09-07 (Q-213 closed: branches terminal; f_z,CGM fitted; typo pinned)',
     }
 
 
@@ -41321,7 +41321,7 @@ def _paper_218(dataset):
             'sec4_arithmetic_fork': 'paper g_base 8.52e-52 (correct 7.22e-14, 38 OOM), 1-B/Bcrit 0.9999977 (correct ~1.0), 5% vs 15% (Q-214)',
         },
         'formula': 'g = G*M/r^2 * (1+H_0*t) * (1-B/B_crit) * (1-P(t)); P=0.15 -> (1-P)=0.85',
-        'source': 'PAPER_218',
+        'ruling_b234': 'Daniel 2026-09-07: RECOMPUTED CANON CONFIRMED (concordant with the era B16 ruling) - g_base = 7.22e-14 m/s2 canonical (printed 8.52e-52 = the ~38-OOM exponent-transcription family); (1 - B/B_crit) ~ 1.0 (the printed 0.9999977 would need a 1e16-larger ratio); the 5-percent claim corrected to 15 percent (P = 0.15); the structural (1-P) form credited correct', 'source': 'PAPER_218',
         'residual_pct': 0.0,
         'ruling_batch3': 'RULED B16 2026-09-01: recomputed values canonical - g_base = 7.22e-14 m/s2 (paper print 8.52e-52 = 38-order slip), (1-B/B_crit) ~ 1.0 (print 0.9999977), P(t)=0.15 is a 15pct reduction (print said 5pct); Q-214 CLOSED for this paper',
         'status': 'RULED_BATCH3_2026-09-01 (B16: worked-example prints were transcription slips; recomputed values stand)',
@@ -41390,7 +41390,7 @@ def _paper_219(dataset):
         'source': 'PAPER_219',
         'residual_pct': 0.0,
         'ruling_q216b': 'RULED Q-216b 2026-09-01: additive-term bridge = rung-12 conjugate pair sigma_ref = lambda_vac_sw * L_Ug1-layer = F_TRZ^12 * F_TRZ^-12 = 1 kg/m2 EXACT (PAPER_2259 landmark; legs canonized in PAPER_2139 + B18); E_rad pass-through vindicated as physics; Q-215 worked-example arithmetic REMAINS OPEN',
-        'status': 'OPEN_RULING',
+        'ruling_b234b': 'Daniel 2026-09-07: RECOMPUTED CANON + SIGMA_REF APPLICATION - E_rad = 1.37e-12 and g_base = 5.01e-11 canonical (printed values = the same transcription family, mantissa-exact); M_sf = 0.08 the operational value (the formula-params mismatch giving 10 pinned, derivation open); the 1101-vs-2000 M_sun fork recorded with the sec-2.4 computation value (1101) as the wired anchor; the B235 sigma_ref closure applied (E_rad in Pa bridged by the PAPER_2259 unit column)', 'status': 'RULED_2026-09-07 (Q-215 closed: recomputed canon; sigma_ref applied)',
     }
 
 
@@ -41462,7 +41462,7 @@ def _paper_220(dataset):
             'dimensional_normalization_fork': 'F_wind/M_mag/E_rad added to g in m/s^2 via unstated UQFF normalization (Q-216)',
         },
         'formula': 'F_wind = E_sd/(c*4*pi*r^2); M_mag = mu0*m/(4*pi*r^3); r(t) = r0 + v_exp*t',
-        'source': 'PAPER_220',
+        'ruling_b235': 'Daniel 2026-09-07: Q-216 FORMALLY CLOSED VIA PAPER_2259 (the shipped Q-216b landmark applied) - g_term = P_term/sigma_ref with sigma_ref = lambda_vac_sw * L_Ug1-layer = 1 kg/m2 EXACT (the rung-12 conjugate pair; why the papers pass-through was numerically correct); the F_wind and E_rad Pa-terms bridged; the magnetic M_mag column remains the 2259 sec-3 OPEN target; the standing rule re-affirmed for the later system papers', 'source': 'PAPER_220',
         'residual_pct': 0.0,
         'ruling_q216b': 'RULED Q-216b 2026-09-01: additive-term bridge = rung-12 conjugate pair sigma_ref = lambda_vac_sw * L_Ug1-layer = F_TRZ^12 * F_TRZ^-12 = 1 kg/m2 EXACT (PAPER_2259 landmark; legs canonized in PAPER_2139 quartet + B18 Ug1 amplitude ladder); F_wind/M_mag pass-through vindicated as division by the rung-12 vacuum column at unit SI magnitude; magnetic column reference disclosed as normalization (open derivation target)',
         'status': 'RULED_2026-09-01 (Q-216 fully closed: B5 form + Q-216b conjugate-pair reference; PAPER_2259)',
@@ -41530,7 +41530,7 @@ def _paper_221(dataset):
         'formula': 'g_shell = g_base*(1+E(t)); dv = beta_i*F_UBii*S26*Phi_res/(rho_shell*c)',
         'source': 'PAPER_221',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b236': 'Daniel 2026-09-07: EXPANSION CANONICAL + TWO MECHANISMS - the front-matter Positive_Expansion file ruled THE canonical PAPER_221 (Rule B: the registered file); the Positive_Enhancement file registered as a COMPANION treatment; the 5-percent (1+E) point-multiplier and the 7.5-percent F_U_Bi_i phonon integral ruled TWO MECHANISMS in one system (the B216 two-construct pattern - both wired); the parameter conflicts (r 3 ly vs 3 pc, M, v_wind) pinned; g_base = 1.24e-12 canonical (the printed 1.23e-52 = the ~40-OOM family)', 'status': 'RULED_2026-09-07 (Q-217 closed: Expansion file canonical; two mechanisms)',
     }
 
 
@@ -41722,7 +41722,7 @@ def _paper_224(dataset):
         'formula': 'g = G*M_Sun/r_orbit^2*(1+H*t) + G*M_Saturn/r^2*(1-B/B_crit) + T_ring',
         'source': 'PAPER_224',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b237': 'Daniel 2026-09-07: 6.53E-5 + BENCHMARK WITH DR = 3.4 M - g_sun = 6.53e-5 m/s2 canonical (the printed 6.53e-3 = 100x slip; the solar-correction fraction restated 0.000625 percent); T_ring = 2.043e-7 KEPT as the CP1 benchmark with its displacement label corrected to dr ~ 3.4 m (the verification pass derived the reconciling displacement - the formula and benchmark agree there; the 10-km label = the error); g_saturn = 10.44 credited correct', 'status': 'RULED_2026-09-07 (Q-218 closed: g_sun corrected; benchmark kept, dr = 3.4 m)',
     }
 
 
@@ -41852,7 +41852,7 @@ def _paper_226(dataset):
         'formula': 'g_0501 = a_grav + a_Ug + a_L + a_EM + a_GW + a_q + a_f + a_osc + a_DM + a_mag + a_decay (11 terms)',
         'source': 'PAPER_226',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b238': 'Daniel 2026-09-07: EXTRACT + CONFIRM THREAD - the seven missing MUGE term formulas QUEUED for extraction from the MagnetarSGR0501MUGEFullCalculator class (the XGEO opaque-formula procedure; g_0501 = 4.474e12 stands as the documented 11-term sim output meanwhile, with a_grav = 4.65e11 verified at 10.4 percent of total); the campaigns sequential continuation into the grok_share_8d951e12 thread CONFIRMED (7514fe closed at PAPER_225, fully extracted)', 'status': 'RULED_2026-09-07 (Q-219 closed: extraction queued; 8d951e12 thread confirmed)',
     }
 
 
@@ -41906,7 +41906,7 @@ def _paper_227(dataset):
             'a_wind_ruling': 'RULED_BATCH1_2026-08-31 (B7): a_wind=4e3 canonical; rho_fluid=1e-12 ambient ISM per PAPER_228; sec-2 1e-21 (4e12) was the outlier; Q-220 CLOSED',
         },
         'formula': 'M(t) = M_init*(1 + (M_gas/M_init)*e^-t/tau_SF); a_wind = rho_wind*v_wind^2/rho_fluid',
-        'source': 'PAPER_227',
+        'ruling_b239': 'Daniel 2026-09-07: UPDATE CONFIRMED (second concordant ruling, matching the era B7) - a_wind = 4e3 canonical on the rho_fluid = 1e-12 ambient-ISM convention (the PAPER_228 self-rectification completed; the sec-2 1e-21 outlier and its 4e12 preserved in the history note); Q-220 residual closed', 'source': 'PAPER_227',
         'residual_pct': 0.0,
         'status': 'RULED_BATCH1_2026-08-31 (B7: a_wind=4e3 canonical, rho_fluid=1e-12 ambient per PAPER_228; Q-220 CLOSED)',
     }
@@ -42024,7 +42024,7 @@ def _paper_229(dataset):
         'formula': 'a_base = G*M/r^2*(1+H_0*t)*(1-B/B_crit)*(1-E(t)); E(t)=E_0*e^-t/tau_e',
         'source': 'PAPER_229',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b240': 'Daniel 2026-09-07: RECOMPUTED CANON - a_base = 5.40e-12 m/s2 canonical (printed 5.36e-24 = the ~12-OOM exponent-transcription family); the (1-E) = 0.9095 factor credited correct', 'status': 'RULED_2026-09-07 (Q-221 closed: a_base = 5.40e-12)',
     }
 
 
@@ -42085,7 +42085,7 @@ def _paper_230(dataset):
         'formula': 'g_SN(t) = -(G*M_SN0*e^-t/tau_SN)/r^2 (only negative MUGE term); H(z)=H0*sqrt(Om(1+z)^3+OL)',
         'source': 'PAPER_230',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b240b': 'Daniel 2026-09-07: RECOMPUTED CANON - |g_SN| = 2.30e-21 and a_BH = 1.335e5 canonical (printed 2.3e-33 / 1.34e6 = the transcription family); the only-negative-MUGE-term structural claim credited; H(z) = 2.287e-18 wired', 'status': 'RULED_2026-09-07 (Q-222 closed: recomputed canon)',
     }
 
 
@@ -42153,7 +42153,7 @@ def _paper_231(dataset):
         'formula': 'H(z)=H0*sqrt(Om(1+z)^3+OL); a_base & a_Ug both carry (1+I(t)); I(t)=I_0*e^-t/tau',
         'source': 'PAPER_231',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b240c': 'Daniel 2026-09-07: 370.7 CANONICAL - H(z=3.5) = 370.7 km/s/Mpc the canonical computed value (standard Friedmann on the canonical H0 = 70); the declared 510 preserved as the papers MUGE parameter (a disclosed model choice - the higher-Omega_m early-universe scenario registered as its motivation, not a derivation)', 'status': 'RULED_2026-09-07 (Q-223 closed: 370.7 canonical; 510 = declared param)',
     }
 
 
@@ -42660,7 +42660,7 @@ def _paper_239(dataset):
         'formula': 'F_thz_shock = k_thz*(omega_thz/omega_0)^2*(rho_n/rho_ref)*(H_abund*w); F_conduit = k_conduit*(H_abund*w)*(rho_n/rho_ref)',
         'source': 'PAPER_239',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-225 closed: derived-correct canon - F_thz 1.47e-19, F_conduit 6.65e9)',
     }
 
 
@@ -42732,7 +42732,7 @@ def _paper_240(dataset):
         'formula': 'F_spooky = k_spooky*(omega_string/omega_0); Q_wave = g_H*mu_B*B_0*C_DPM/(hbar*omega_0)',
         'source': 'PAPER_240',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-226 closed: Q_wave = 3.10e-15 derived canon; F_spooky 5.55e-30)',
     }
 
 
@@ -42864,7 +42864,7 @@ def _paper_242(dataset):
         'formula': 'L_t = (G*M/(c^2*r))*L_factor; corr_L = 1+L_t; H(z)=H0*sqrt(Om(1+z)^3+OL)',
         'source': 'PAPER_242',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-227 closed: L_t = 3.21e-4; H(0.5) = 1.309*H0)',
     }
 
 
@@ -43003,7 +43003,7 @@ def _paper_244(dataset):
         'formula': 'g_Q_min = sqrt(2*hbar)*beta_integral*(2*pi/t_Hubble)',
         'source': 'PAPER_244',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-228 closed: g_Q_min = 2.10e-34)',
     }
 
 
@@ -43271,7 +43271,7 @@ def _paper_248(dataset):
         'formula': 'DPM_resonance = g_H*mu_B*B0/(hbar*omega0)*adj_factor; g_UQFF = sum_26(Ug1..4)+Lc^2/3+g_Q',
         'source': 'PAPER_248',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'ruling_b248': 'Daniel 2026-09-07: TWO CONSTRUCTS - the g_H-coupled form (= the PAPER_240 Q_wave family, hydrogen-resonance-weighted; DPM_resonance = 3.10e9 at this papers omega0 = 1e-12) and the bare 2*mu_B Zeeman form (the 250-class) ruled DISTINCT canonical constructs; the naming collision pinned, distinct symbols registered', 'status': 'RULED_2026-09-07 (Q-229 closed: 3.10e9 derived canon; two-construct ruling)',
     }
 
 
@@ -43641,7 +43641,7 @@ def _paper_253(dataset):
         'formula': 'omega0 < omega0_crit ~1e-13 -> x2 sign inverts -> F_U_Bi ~ -8.31e211 N (negative buoyancy, Fermi Bubble driver)',
         'source': 'PAPER_253',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'ruling_b249': 'Daniel 2026-09-07 (benchmark family): F_U_Bi = -8.31e211 N CANONIZED as the PAPER_217 Branch-2 negative-buoyancy value (the asymmetry 3938 reproducing 217s 3940 - the internal tie credited); the sign(F_U_Bi) omega0-step mechanism registered; M(Sgr A*) goes to the B147 GRAVITY canon corpus-wide (8.55e36 kg; the 4.1e6 literal recorded)', 'status': 'RULED_2026-09-07 (Q-233 closed: Branch-2 tie canonized; B147 mass canon)',
     }
 
 
@@ -43788,7 +43788,7 @@ def _paper_255(dataset):
         'formula': 'NS-Density Class Extension: F_neutron=k_neutron*s_n dominant; F_U_Bi=+2.53e208 N positive (F0 vacuum anchor -> x2>0)',
         'source': 'PAPER_255',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'ruling_b249b': 'Daniel 2026-09-07 (benchmark family): +2.53e208 N stands as the DOCUMENTED NS-regime per-system benchmark (the class invariant remains +2.11e208; the J0030-vs-CasA NS-regime inconsistency pinned OPEN as the reconciliation target, not blended away); term_gravity = 1.86e12 confirmed; the clean 1.76e31 DPM_resonance (no drift) credited', 'status': 'RULED_2026-09-07 (Q-235 closed: documented departure; reconciliation OPEN)',
     }
 
 
@@ -43866,7 +43866,7 @@ def _paper_256(dataset):
         'formula': 'Radius Sign-Determination: at fixed omega0<omega0_crit, sgn(F_U_Bi) set by a=G*M/r^2; Crab (large a) positive, Sgr A* (tiny a) negative',
         'source': 'PAPER_256',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'ruling_b249c': 'Daniel 2026-09-07 (benchmark family): +5.30e208 N stands as the documented Crab per-system benchmark; the RADIUS-AS-SIGN-DETERMINANT discovery REGISTERED (Crab positive at small r, Sgr A* negative at large r, same omega0 - r through a sets the sign); term_gravity = 1.86e12 confirmed', 'status': 'RULED_2026-09-07 (Q-236 closed: documented benchmark; sign-determinant registered)',
     }
 
 
@@ -43947,7 +43947,7 @@ def _paper_257(dataset):
         'formula': 'Class Completeness: x2 = F0/b = 3.88e73 (independent of M,r) -> F_U_Bi = +2.11e208 N invariant across 53 orders sigma_n / 14 orders r',
         'source': 'PAPER_257',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'ruling_b249d': 'Daniel 2026-09-07 (benchmark family): the x2 = F0/b class mechanism CANONIZED (M/r-independent - why the +2.11e208 class holds across 53 orders of sigma_n; the Class Completeness Theorem credited); the J0030 +2.53e208 vs Cas A class-value NS-regime inconsistency pinned OPEN; a = 1.86e12 confirmed', 'status': 'RULED_2026-09-07 (Q-237 closed: F0/b mechanism canonized; NS inconsistency OPEN)',
     }
 
 
@@ -44027,7 +44027,7 @@ def _paper_258(dataset):
         'formula': 'detection_score = 1[iso]+1[kin]+1[flare]; alma_recommended = score>=2; f_flare_pred = k_flare*|F_U_Bi|/F0',
         'source': 'PAPER_258',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-238 closed: f_flare_pred = 1.15e61 derived canon; k_flare = 1e-76 confirmed)',
     }
 
 
@@ -44266,7 +44266,7 @@ def _paper_261(dataset):
         'formula': 'Scale-Invariant: Phi(t)=const*e^(-t/tau); Delta_Phi/Phi = 1-e^(-Delta_t/tau) independent of t -> universal ~30% SFE',
         'source': 'PAPER_261',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-239 closed: 6.57e-9 + r = 8.988e16 derived canon; theorem clean)',
     }
 
 
@@ -44343,7 +44343,7 @@ def _paper_262(dataset):
         'formula': 'term_SN = -G*M_ej*(1-e^(-t/tau_SN))/r^2; eps_SN=M_ej/M_gal=1.2e-10; second negative-g channel (mass removal)',
         'source': 'PAPER_262',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-240 closed: t_cross = 0.9 Myr, term_SN = 1.98e-21 derived canon; mechanism clean)',
     }
 
 
@@ -44485,7 +44485,7 @@ def _paper_264(dataset):
         'formula': 'U_g,UQFF = (U_g1+U_g4)*(1+f_TRZ)*(1+I(t)); f_TRZ=-1 zero point (UQFF vanishes); f_TRZ<-1 anti-gravity',
         'source': 'PAPER_264',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b250': 'Daniel 2026-09-07: U_g1 = 8.77e-23 canonical (the stated 2.88e-15 = an M/r inconsistency, pinned); the 5-regime CPT PHASE-TRANSITION STRUCTURE CANONIZED (zero point at f_TRZ = -1, first-order; HUDF at the canonical primitive value); the f_TRZ-to-w dark-energy mapping ruled INCONSISTENT AS PRINTED and marked an OPEN reconciliation (at w = -1 the stated mapping gives 0, not the claimed zero point; no invented fix per doctrine)', 'status': 'RULED_2026-09-07 (Q-241 closed: U_g1 derived canon; phase structure canonized; w-mapping OPEN)',
     }
 
 
@@ -44706,7 +44706,7 @@ def _paper_267(dataset):
         'formula': 'sSFR = SFR/M0 = 1e-9; Delta_g_buoy_total = sSFR*(tiers^inf)*e^(-t/tau_SF); coherence C = sSFR',
         'source': 'PAPER_267',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-242 closed: ug1_base = 2.32e-12 derived canon; coherence physics clean)',
     }
 
 
@@ -44845,7 +44845,7 @@ def _paper_269(dataset):
         'formula': 'RPDP (rho_wind=rho_fluid): g_feedback = v_wind^2 = 4e12 m/s^2 (density-independent kinematic invariant)',
         'source': 'PAPER_269',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b247': 'Daniel 2026-09-07 (drift-family blanket): the wired DERIVED-CORRECT values ruled CANONICAL (recomputed from this papers own formulas and parameters); the stated illustrative counterparts = the systematic mantissa-exact exponent-drift/mojibake class (pinned by family per the B170 standing transcription-audit note); the clean structural content credited', 'status': 'RULED_2026-09-07 (Q-243 closed: R_RPDP = 1.73e24; the g = v^2 kinematic invariant EXACT)',
     }
 
 
@@ -45443,7 +45443,7 @@ def _paper_278(dataset):
         'formula': 'r_ring=r/3; omega_ring=sqrt(G*M/r_ring^3)=1.650e-14; A_ring=(r/r_ring)^2*f_ring*g_base=9*0.001*g_base=2.144e-12; F_ring(t)=A_ring*cos(omega_ring*t) pure oscillatory',
         'source': 'PAPER_278',
         'residual_pct': 0.0,
-        'status': 'WIRED',
+        'ruling_b243': 'Daniel 2026-09-07: M = 1.989E42 CONFIRMED - the Sombrero mass confirmed at 1.989e42 kg (1e12 M_sun, physical dynamical mass; the headline omega_ring = 1.650e-14 / T = 12.08 Myr pair reproduces exactly); sec 2.2s 1.989e41/1.327e31 ruled dropped-exponent mojibake; the M-independent parts (r_ring, proximity factor 9, A_ring, oscillatory form) credited clean', 'status': 'RULED_2026-09-07 (Q-244 closed: M = 1.989e42 confirmed)',
     }
 
 
@@ -46084,7 +46084,7 @@ def _paper_289(dataset):
         'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac*c); E_vac=RHO_UA -> 6.994e20 (paper headline 6.994e21 needs E_vac=RHO_SCM, Q-245); E_Cooper=hbar*f_super=9.29 eV; Meissner SCm=1-B/B_crit->0 at B_crit; (1+F_TRZ)=1.1',
         'source': 'PAPER_289',
         'residual_pct': None,
-        'status': 'OPEN_RULING',
+        'ruling_b244': 'Daniel 2026-09-07 (A_sc family joint, with 295/316): F_SUPER = 1.411E15 CANONICAL - the corrected A_sc = 6.994e20 canonical for this paper (the stated E_vac = rho_UA plasmotic reading consistent; the boxed 10x denominator error and the 6.994e21 headline = the illustration-row confusion family, pinned); the clean parts (E_Cooper = 9.29 eV, Meissner quench, 1+F_TRZ) credited; B_crit = 1e11 = the papers magnetar scale (a valid derived scale under B209)', 'status': 'RULED_2026-09-07 (Q-245 closed: A_sc = 6.994e20; family ruling)',
     }
 
 
@@ -46311,7 +46311,7 @@ def _paper_295(dataset):
         'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac*c)=6.994e18; a_super=A_sc*a_DPM=2.479e4 m/s2; a_super ∝ f_DPM^2 (quadratic class scaling law, PAPER_295)',
         'source': 'PAPER_295',
         'residual_pct': 0.0,
-        'status': 'WIRED',
+        'ruling_b244b': 'Daniel 2026-09-07 (A_sc family joint): the magnetar illustration corrected to the QUADRATIC prediction (A_sc = 6.994e19, a_super = 2.479e6 - the 4-orders claim was quartic mislabeled quadratic, the illustration-row confusion family); the clean primary result (f_DPM^2 quadratic law, systems 18-24, reproduced exactly) CREDITED as canonical', 'status': 'RULED_2026-09-07 (Q-246 closed: quadratic prediction; illustration corrected)',
     }
 
 
@@ -46636,7 +46636,7 @@ def _paper_304(dataset):
         'formula': 'xi_aether=a_aether/g_DPM=1.852e24 (aether over DPM-seeded gravity at Bohr radius; 3rd rung of vacuum-driver hierarchy); g_DPM=G*M_p/r_Bohr^2=3.986e-17; a_aether=7.38e7 (module output; stated derivation formula E_vac*f_res*V_sys/hbar is broken, Q-247)',
         'source': 'PAPER_304',
         'residual_pct': 0.0,
-        'status': 'OPEN_RULING',
+        'ruling_b245': 'Daniel 2026-09-07: MODULE OUTPUT + OPEN FORM - a_aether = 7.38e7 m/s2 stands as the operational module output (xi_aether = 1.852e24 reproduces exactly; PAPER_302 concurs); the written derivation FORMALLY MARKED BROKEN (dimensionally 1/s2 and ~24 orders off its own arithmetic); the true closed form = OPEN derivation target per the OPEN-over-substitution doctrine (no formula invented to fit)', 'status': 'RULED_2026-09-07 (Q-247 closed: module output stands; derivation OPEN target)',
     }
 
 
@@ -47094,7 +47094,7 @@ def _paper_316(dataset):
                 'family as Q-246 -> Q-248 RULED_BATCH1_2026-08-31 (B4): f_super=1.411e15 canonical and that value IS CANONICAL; the paper 6.994e21 confirmation is SPURIOUS' % A_sc_canonical),
         },
         'formula': 'A_sc=hbar*f_super*f_DPM/(E_vac_ISM*c)=6.994e21 (E_vac_ISM=RHO_SCM, ISM vacuum); a_super=A_sc*a_DPM=1.747e-9 m/s2 (second-dominant PN tier, a_vac_diff>>a_super>>a_THz>>a_DPM); confirms PAPER_295 f_DPM=1e12 A_sc class (f_super=1.411e16 vs canonical 1.411e15, Q-248)',
-        'source': 'PAPER_316',
+        'ruling_b244c': 'Daniel 2026-09-07 (A_sc family joint; SECOND CONCORDANT ruling, matching the era B4): f_super = 1.411e15 Hz canonical - this papers 1.411e16 = the 10x member of the illustration-row confusion family, so A_sc = 6.994e20 (the 6.994e21 confirmation spurious); the E_vac = rho_SCm ISM-vacuum reading CREDITED CORRECT (the rho_SCm/rho_UA = F_TRZ hierarchy)', 'source': 'PAPER_316',
         'residual_pct': 0.0,
         'status': 'RULED_BATCH1_2026-08-31 (B4: f_super=1.411e15 canonical, A_sc=6.994e20; paper 6.994e21 confirmation spurious; Q-246/Q-248 CLOSED)',
     }
@@ -47250,7 +47250,7 @@ def _paper_320(dataset):
         'formula': 'f_density=I*A_vort*omega_diff/V_sys [N/m^3]; xi_span=f_max/f_min=1.500e25(H atom)/1.500e-10(Universe)=1e35 (35 orders, atomic->cosmic); Orion=9.12 N/m^3 macroscopic HII balance point',
         'source': 'PAPER_320',
         'residual_pct': 0.0,
-        'status': 'WIRED',
+        'ruling_b246': 'Daniel 2026-09-07: CORRECT TO FORMULA - the three intermediate atlas rows corrected-by-reference to the formula results (43.1 / 1.063 / 4.073e-2; pure power-of-10 typos); the reproducing headline (span 1e35 + the three named anchors) untouched; filed to the corpus-table-hygiene class', 'status': 'RULED_2026-09-07 (Q-249 closed: rows corrected-by-reference)',
     }
 
 

@@ -7515,3 +7515,64 @@ Queue: 30 Daniel-gated + 1 OPEN_CANDIDATE — UNDER 31.
 - **B230/Q-209:** proton magic 114 INTENDED (neutron 126 = D_crit+SO_5²
   stays the canonical identity); D_universe (1+z) typo confirmed.
 Queue: 21 Daniel-gated + 1 OPEN_CANDIDATE.
+
+## BATCH 30 RULINGS — Daniel, 2026-09-07 (B231-B239 covering Q-210 through Q-220; folded same day; gate-pinned; sweep clean)
+
+- **B231/Q-210:** 85 km/s canonical; ρ ~ 1e-21 (verification refined
+  the ledger's own note).
+- **B232/Q-211+212 (paired):** **a_Ug1 = 3·F_TRZ² INTENDED PRIMITIVE**
+  (ladder pair across 215/216); **one running-vacuum Ug4 surface**
+  (209+215 consolidated); t_n phase confirmed.
+- **B233/Q-213:** branches terminal (a/b/c extraction queued);
+  **f_z,CGM ruled FITTED** (n = 67.5, paper's admission); 0.57²⁶ typo
+  gate-pinned.
+- **B234/Q-214+215 (paired):** recomputed canon (the ~38-40 OOM
+  transcription family); M_sf = 0.08; M fork recorded (1101 anchored).
+- **B235/Q-216:** **FORMALLY CLOSED via PAPER_2259** — σ_ref = 1 kg/m²
+  EXACT applied to the 218/219/220 terms; magnetic column = the §3
+  open target.
+- **B236/Q-217:** Expansion file canonical; **TWO MECHANISMS wired**
+  (B216 pattern); g_base = 1.24e-12.
+- **B237/Q-218:** g_sun = 6.53e-5; **T_ring benchmark RECONCILES at
+  dr = 3.4 m** (verification-derived; 10-km label = the error).
+- **B238/Q-219:** seven-term extraction queued (XGEO procedure);
+  **8d951e12 thread continuation CONFIRMED**.
+- **B239/Q-220:** a_wind = 4e3 update confirmed — second concordant
+  ruling (B7 + B239).
+Three era-ruled papers took concordant field-inserts (218/220/227).
+Queue: **11 Daniel-gated + 1 OPEN_CANDIDATE — THE FINAL STRETCH.**
+
+## BATCH 31 RULINGS — Daniel, 2026-09-07 (B240-B250; folded same day; gate-pinned with a LIVE zero-count; sweep clean)
+
+## ═══ QUEUE ZERO — THE RULINGS CAMPAIGN COMPLETES ═══
+
+- **B240:** the last worked-example recomputes (229/230/231; 370.7
+  canonical, 510 = declared param).
+- **B241:** the campaign's FIRST questions (Q-001/Q-003) close on the
+  corpus's own self-rectification (0.5297 via string 0.62; 4.4e13 G
+  rows).
+- **B242:** the campaign's OLDEST question (Q-002) closes under the
+  B209 ratio lock.
+- **B243:** Sombrero M = 1.989e42 confirmed.
+- **B244:** the A_sc family unified — **f_super = 1.411e15 canonical**
+  (era-B4 concordant); the 6.994e21 branch = one illustration-row
+  confusion across 289/295/316.
+- **B245:** a_aether = module output; broken derivation held OPEN over
+  substitution.
+- **B246:** CR34 atlas rows corrected-by-reference.
+- **B247:** the 15-paper DRIFT-FAMILY BLANKET (derived-correct canon).
+- **B248:** DPM_resonance = TWO constructs (g_H-coupled / bare Zeeman).
+- **B249:** the **FORCE EQUIVALENCE CLASS canonized** — +2.11e208 =
+  PAPER_217 Branch 1; −8.31e211 = Branch 2 (asymmetry 3938≈3940);
+  x2 = F0/b mechanism; radius-as-sign-determinant; J0030/CasA NS
+  reconciliation OPEN.
+- **B250:** CPT phase structure canonized; w-mapping inconsistent-as-
+  printed, OPEN.
+
+**HONEST-AUDIT DISCLOSURE:** the ledger had undercounted the backlog —
+the Q-225..Q-243 family (15 wired-OPEN papers) was missing from the
+"11 Daniel-gated" tally; a premature milestone row was written mid-fold
+and corrected in the registry. Queue zero is REAL as of B250: **zero
+OPEN_RULING statuses in the calculator, verified live by the gate.**
+The campaign: 224 items → 0 Daniel-gated + 1 OPEN_CANDIDATE
+(PAPER_1950, observation-gated). ~250 B-numbered rulings, Batches 1-31.

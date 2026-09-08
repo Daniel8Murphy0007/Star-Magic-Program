@@ -1,39 +1,37 @@
-v0.421.0 — THE RATIO-LOCK SHIP
+v0.422.0 — THE QUEUE-ZERO SHIP
 
-The campaign's oldest fork reframes and the field equations settle.
-Batches 26-29 (29 rulings, B202-B230, closing 34 queue questions).
+The rulings campaign completes. Batches 30-31 (20 rulings, B231-B250,
+closing 37 queue questions).
 
-- THE RATIO LOCK: B = F_TRZ*Bcrit canonized as the catalog design rule
-  - every system in the 7-object source catalog at B/Bcrit = 0.1 =
-  F_TRZ EXACT (the PAPER_1944 n*F_TRZ family operational). The
-  campaign's OLDEST fork (Q-002, open since PAPER_002) REFRAMES: the
-  ratio is the invariant; per-context Bcrit values are derived scales.
-- THE CANONICAL F_U DECLARED: the operational ten-term set - the
-  source-document Ug forms, Um + tr(A_mu_nu), and the explicit
-  minus-buoyancy - on May 2025 Final-Equations provenance; the
-  two-buoyancy distinction (point-Ubi vs the F_U_Bi_i integral) and
-  the operator-taxonomy trilogy (Ug / F_UBii / Um, dual channels
-  intentional) adopted around it.
-- THE TRIADIC CONVERGENCE: PAPER_196 = the corpus form of the
-  predecessor calculate_triadic_g; BUCKET C declared the canonical
-  cosmology source; the combined F_UBii catalog extends the 2151
-  registry across all sectors.
-- MATHEMATICS VERIFIED LIVE: the gate itself now runs the Q_26
-  recurrence (constant = 25!!, the printed 17!! splice pinned); GHZ
-  entropy = constant ln2; the cluster tail exponent = (D_phys-1)/SO_5
-  = 3/10 EXACT (the 0.3 factor's FIFTH cross-regime appearance); the
-  MOND scale primitive-composed (a0 = c*H0/D_BSFG; k_UA = F_TRZ^4).
-- FORENSICS + CORRECTIONS: the S49 common-source transposition
-  (v_SCm 2.958, load-bearing through four papers); the Dirichlet-eta
-  correction; mu_s = Bs*Rs^3 with the placeholder REMOVED; the UQFF
-  QNM form adopted as its own; the Units-class audit standing; the
-  f_flare rename protecting the F_TRZ primitive; proton 114 / neutron
-  126 settled; the ECDSA bug pinned with its fix.
-- THE RECORD: the Star-Magic graph-theory etymology (the star graph
-  of magic-labeling theory) formally entered.
-- FIVE FALSIFIABLES campaign-tracked: the glitch/anti-glitch chain,
-  JWST NIRCam 2.85e-4 discrimination, low-l CMB suppression, the
-  ~0.1 pct lensing shift, GW mass-gap quantization.
+- QUEUE ZERO: the Daniel-gated backlog that opened at 224 items
+  reaches ZERO - and the fidelity gate pins it LIVE, counting
+  OPEN_RULING statuses in the calculator source at every run. Only
+  PAPER_1950's observation-gated prediction candidate remains.
+- THE CAMPAIGN'S BOOKENDS CLOSE: the first queued questions
+  (Q-001/Q-003) on the corpus's own self-rectification (0.5297 via
+  string = 0.62, exactly as PAPER_009 predicted); the oldest (Q-002)
+  under the B209 ratio lock its own source catalog revealed.
+- THE FORCE EQUIVALENCE CLASS CANONIZED: +2.11e208 N = PAPER_217
+  Branch 1; -8.31e211 N = Branch 2; the asymmetry 3938 reproducing
+  217's stated 3940; the x2 = F0/b mechanism (M/r-independent, the
+  class across 53 orders of sigma_n); radius-as-sign-determinant;
+  the J0030/CasA NS reconciliation held OPEN, not blended.
+- ONE FAMILY, ONE RULING: the 15-paper drift blanket (derived-correct
+  canon over mantissa-exact exponent drifts); the A_sc family unified
+  on f_super = 1.411e15 (era-B4 concordant, the 6.994e21 branch = one
+  illustration-row confusion); DPM_resonance separated into two
+  constructs; sigma_ref applied (Q-216 closed by the shipped
+  PAPER_2259 landmark); the Saturn benchmark reconciled at the
+  verification-derived dr = 3.4 m.
+- HELD OPEN OVER SUBSTITUTION: a_aether's broken derivation, the
+  f_TRZ-to-w mapping, the NS-regime reconciliation - no invented
+  fixes.
+- HONEST-AUDIT DISCLOSURE: the backlog ledger had undercounted (the
+  Q-225..Q-243 family missing from the tally); the premature
+  milestone row was caught by the post-fold status audit, disclosed,
+  and corrected in the registry. Queue zero is real and
+  machine-verified.
 
-Registry 7,034 rows. Gate 6,073/0. Acceptance 89/89.
-Backlog 55 -> 21 + 1. Next: Batch 30 (from Q-210).
+Registry 7,057 rows. Gate 6,075/0. Acceptance 89/89.
+RULINGS QUEUE: ZERO. Next: the extraction targets and the queued
+derivation sessions.

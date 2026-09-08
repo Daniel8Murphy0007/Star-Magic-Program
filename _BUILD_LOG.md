@@ -470,3 +470,10 @@ B = F_TRZ*Bcrit design rule (Q-002 reframed); canonical F_U declared;
 triadic convergence + operator trilogy; mathematics live-verified in
 the gate (Q_26 = 25!!). Gate 6,073/0. Acceptance 89/89. Registry
 7,034. Backlog 55 -> 21 + 1.
+
+## v0.422.0 — 2026-09-07 — THE QUEUE-ZERO SHIP
+Batches 30-31 folded (20 rulings, B231-B250, 37 questions). THE
+RULINGS CAMPAIGN COMPLETES: 224 -> 0 Daniel-gated, live-counted by
+the gate. Force Equivalence Class canonized; drift-family blanket;
+sigma_ref applied; ledger undercount disclosed. Gate 6,075/0.
+Acceptance 89/89. Registry 7,057.

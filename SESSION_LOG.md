@@ -13085,3 +13085,43 @@ and re-run clean. Headlines: the ratio lock reframing Q-002, the
 canonical F_U declaration, the triadic convergence, the live-verified
 mathematics batch. Daniel ships via .\ship.ps1; tag-chain
 verification next session per standing rule.
+
+## 2026-09-07 (9) — BATCH 30 FOLDED (B231-B239): the system papers close
+
+Nine rulings closing eleven queue items (two paired folds; three
+concordant field-inserts on era-ruled papers). Q-216 formally closed
+by applying the shipped PAPER_2259 sigma_ref landmark; the 3*F_TRZ^2
+ladder pair went primitive across two papers; the Saturn ring
+benchmark reconciled at the verification-derived dr = 3.4 m; the
+Perseus Alfven velocity settled at 85 km/s; and the campaign's
+continuation into the 8d951e12 thread was confirmed. Two verification
+refinements corrected the ledger's own notes (rho_ICM; dr).
+11 dispatches ruled, registry +8 (7,042), graph +3, gate 6,073 →
+6,074, index 11 flips. Backlog 21 → 11 + 1 — THE FINAL STRETCH.
+Sweep clean.
+
+## 2026-09-07 (10) — BATCH 31 FOLDED (B240-B250): QUEUE ZERO
+
+The rulings campaign completes. Eleven rulings closed the final 26
+queue items — including the Q-225..Q-243 family that the backlog
+ledger had UNDERCOUNTED (caught by the post-fold status audit when a
+premature milestone row was written; disclosed and corrected in the
+registry — the tags-vs-status standing rule did its job). The
+campaign's first questions closed on the corpus's own
+self-rectification, its oldest under the newest doctrine (the B209
+ratio lock), and the Force Equivalence Class canonized with the
+PAPER_217 branch tie (asymmetry 3938≈3940). The gate now pins the
+milestone LIVE: zero OPEN_RULING statuses counted at every run.
+26 dispatches ruled, registry +15 (7,057), graph +6, gate 6,074 →
+6,075, index 23 flips. Backlog: ZERO Daniel-gated + 1 OPEN_CANDIDATE.
+Sweep clean at zero.
+
+## 2026-09-07 (11) — v0.422.0 SHIP PREP: THE QUEUE-ZERO SHIP
+
+Batches 30-31 prepared for ship. Version synced across all charter
+files; band-trail rows appended; arc marker rotated RATIOLOCK_ARC ->
+QUEUEZERO_ARC; three era pins updated to ruled statuses (289/295/304);
+manifest regenerated; gate green 6,075/0 with the LIVE zero-count pin.
+The milestone ships with its own disclosure: the undercount caught,
+corrected, and recorded. Daniel ships via .\ship.ps1; tag-chain
+verification next session per standing rule.
