@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.429.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.429.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.430.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.430.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6091%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2314-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6092%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2315-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.429.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.430.0 complete-compile campaign live**
 
-**This release (v0.429.0): THE NS ASSEMBLY SHIP — the evaluator's wire order, executed.** An independent gap analysis found the truth of 0.427: 'The algebraic cap is wired. The time ODE, Stam solver, and DNS falsifier are not.' PAPER_2263 closes all five wire items IN-PACKAGE (`uqff_ns_assembly`): **(1)** the PAPER_1232 Taylor-Green time ODE — ledger Λ = 1/(8π·β_i·UA·(D_crit/D_BSFG)²) = 0.0072977 computed LIVE from primitives, effective growth C·Λ·√Ω₀ − γ = **−0.09944 < 0** forcing the damped branch Ω(t) = Ω₀·e^(−νt), ν = 1/1600 = 1/(D_phys²·SO_5²) EXACT, globally_regular() → T* = ∞, Ω(t=10) bit-matching the closed form; **(2)** `navier_stokes_enstrophy_cap(t)` now returns the **decay curve** E(t) = E₀·e^(−(3/25)νt) (coefficient F_TRZ/Φ_5/6 = 3/25 EXACT) while the bare call still returns 17/20 — every prior pin holds; **(3)** the Stam stable-fluids solver rewritten in pure Python at the PAPER_177 FluidSolver parameters (N=32, dt=0.1, visc=1e-4) with the PAPER_369 SCm jet force, verified bounded, **carrying its own label: NUMERICAL_EVIDENCE, never proof** (PAPER_177/179's flag, preserved); **(4)** the PAPER_543 hypergraph fourth route λ_max = 2P/3 < 1 wired; **(5)** the DNS trefoil Re=10⁶ falsifier (PAPER_1182 #5) left **OPEN with no substitute** — if that peak is unbounded, the cap is dead, and a fake falsifier would be worse than none. Guards: the SPE 8.5e3 construct is pinned out of the 0.85 slot; the Λ-vs-α 0.004% coincidence is FLAGGED, not canonized. **Totals: 2,259 wired (2,314 DISPATCH keys) / gate 6,091 green / 4,186 defs / acceptance 109 green / registry 7,083 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.430.0): THE BALANCE ZONE SHIP — Daniel's twelve-piece direction, canonized.** PAPER_2264 (B269) reads the Navier-Stokes enstrophy cap as the framework's central action-reaction pair: vortex stretching plays F_UBi (inside→outward), the vacuum answers with F_UBii, and the cap 17/20 is their crossing — **the fluid's own r_hz**, the same balance zone that sets gravity's habitable radius (PAPER_1203). The deficit decomposes along the direction's pieces: **3/20 = (negative-time fraction F_TRZ, PAPER_597/1160) × (D_BSFG/D_phys projection, PAPER_1962)**, the polarity split is (2R−1) at the R=0.5 phase transition (PAPER_884/899, PAPER_2098 complementarity), and the dissipated 3/20 **drains through the 1.25 THz phonon — the LENR carrier itself** (ω_LENR = ω_SCm, ruled) — which is why the turbulence UV cutoff sits exactly there. The SMBH 26! bound (PAPER_594) and NS regularity are **one no-singularity theorem** at the two ends of the 26-layer chain; white-hole channel (PAPER_2238) and wormhole stabilization (PAPER_901) are the outflow bookkeeping; the spinor bundle (PAPER_1183/1229) gives the CW/CCW handle; U_i is PAPER_529's escape-velocity anchor. And the B112 two-scale split composed with the cap yields **the PAIR CAP: 0.85 vacuum / 0.985 in-medium** — two scales simultaneously, a pair of range values, flagged falsifiable in the exact pattern of the ruled B126 viscosity pair, gradable by the tier-3 harness the moment lab-vs-astro data arrives. Proof honesty shipped alongside: the **Ω₀ < 1.19×10⁵ validity threshold** of the Taylor-Green argument is disclosed in-package, and the three proof gaps are ledgered OPEN with the **L_buoy variational route named** for the missing cap theorem (PAPER_1065 EOM with F_UBi/F_UBii as body forces) — the paper names the road, it does not claim the arrival. **Totals: 2,260 wired (2,315 DISPATCH keys) / gate 6,092 green / 4,187 defs / acceptance 109 green / registry 7,090 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.429.0)
+## What is currently shipped (v0.430.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,259 distinct dispatches (2,314 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,260 distinct dispatches (2,315 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,083 rows**. Fidelity gate: **6,091 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,090 rows**. Fidelity gate: **6,092 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

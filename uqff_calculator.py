@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.429.0"
+VERSION = "0.430.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29160,6 +29160,37 @@ def _paper_2263(dataset):
         'source': 'PAPER_2263',
         'residual_pct': 0.0,
         'status': 'RULED_2026-09-09 (evaluator wire order 1-5 executed; falsifier kept OPEN)',
+    }
+
+
+@_register('PAPER_2264')
+def _paper_2264(dataset):
+    """The cap is the balance zone (B269, Daniel's direction 2026-09-09).
+
+    The NS enstrophy cap read as the F_UBi/F_UBii crossing - the fluid
+    analogue of r_hz; deficit 3/20 = (negative-time fraction) x
+    (D_BSFG/D_phys projection); drain = the 1.25 THz phonon (the LENR
+    carrier); and the B112 two-scale split yields the PAIR CAP:
+    vacuum 17/20 / in-medium 197/200 - a flagged falsifiable prediction
+    in the exact pattern of the ruled viscosity pair.
+    """
+    from uqff_ns_assembly import balance_zone_chain, enstrophy_cap_pair
+    ch = balance_zone_chain()
+    pair = enstrophy_cap_pair()
+    return {
+        'value': {
+            'vacuum_cap': pair['vacuum_cap'],
+            'in_medium_cap': pair['in_medium_cap'],
+            'pair_status': pair['status'],
+            'deficit_decomposition': ch['deficit_decomposition'],
+            'drain_channel': ch['drain_channel'],
+            'derivation_route_named': ch['derivation_route_named'],
+            'no_singularity_twin': ch['no_singularity_twin'],
+        },
+        'formula': 'cap_context = 1 - F_TRZ^k * (D_BSFG/D_phys), k=1 vacuum / k=2 in-medium (B112 split applied to PAPER_1182 cap); 3/20 = F_TRZ*(D_BSFG/D_phys)',
+        'source': 'PAPER_2264',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-09 (B269: chain + pair-cap canonized; pair cap FLAGGED_FALSIFIABLE_PREDICTION; L_buoy route OPEN until executed)',
     }
 
 

@@ -1,43 +1,30 @@
-v0.429.0 — THE NS ASSEMBLY SHIP
+v0.430.0 — THE BALANCE ZONE SHIP
 
-B267 (PAPER_2263): the independent evaluator said it plainly - "The
-algebraic cap is wired. The time ODE, Stam solver, and DNS falsifier
-are not." All five wire-order items are now closed IN-PACKAGE.
+B269 (PAPER_2264): Daniel's twelve-piece direction canonized - the NS
+enstrophy cap read as the F_UBi/F_UBii crossing, the fluid's own r_hz.
 
-- uqff_ns_assembly (new py-module, on the wheel): the PAPER_1232
-  Taylor-Green time ODE with ledger Lambda = 0.0072977 computed LIVE
-  from primitives, effective growth -0.09944 < 0 forcing the damped
-  branch, globally_regular() -> T* = infinity, Omega(t=10) bit-matching
-  the closed form the evaluator quoted from uqff 5.86.0.
-- The cap returns the CURVE: navier_stokes_enstrophy_cap(t) = the
-  PAPER_1182 decay E(t) = E0*exp(-(3/25)*nu*t), coefficient
-  F_TRZ/Phi_5/6 = 3/25 = 0.12 EXACT; bare call still 17/20 - every
-  prior pin holds, and the SPE 8.5e3 construct is pinned OUT of the
-  0.85 slot forever.
-- Stam stable-fluids in pure Python at the PAPER_177 FluidSolver
-  parameters (N=32, dt=0.1, visc=1e-4; PAPER_369 SCm jet force),
-  verified bounded at N=32 x 5 - CARRYING ITS OWN LABEL:
-  NUMERICAL_EVIDENCE, never proof. No C++ sidecar, no dependency.
-- PAPER_543 fourth route: lambda_max = 2*P_order/3 < 1, wired.
-- The falsifier, kept honest: DNS trefoil at Re=1e6 stays OPEN with no
-  in-package substitute. If that peak is unbounded, the cap is dead -
-  that test is the one that matters, and we do not fake it.
-- Lambda-vs-alpha (0.004 pct) FLAGGED, not canonized - no corpus chain.
+- 3/20 = (negative-time fraction F_TRZ) x (D_BSFG/D_phys projection) -
+  the (-) time piece and the two-scale piece, multiplied.
+- Polarity: 17/20 retained / 3/20 dissipated = the (2R-1) split at the
+  R = 0.5 phase transition.
+- The drain IS the LENR carrier: the 3/20 exits through the 1.25 THz
+  phonon (omega_LENR = omega_SCm, ruled) - which is why the turbulence
+  UV cutoff sits at exactly that frequency.
+- SMBH 26! bound + NS regularity = ONE no-singularity theorem at the
+  two ends of the 26-layer chain; white-hole channel + wormhole
+  stabilization = the outflow bookkeeping; spinor bundle = the CW/CCW
+  handle; U_i = the escape-velocity anchor.
+- THE PAIR CAP (two scales simultaneously -> a pair of range values):
+  vacuum 1 - F_TRZ*(3/2) = 17/20 = 0.85; in-medium 1 - F_TRZ^2*(3/2)
+  = 197/200 = 0.985. FLAGGED FALSIFIABLE - the pattern of the ruled
+  B126 viscosity pair; the tier-3 harness grades either on real data.
+- Proof honesty: Omega0 < 1.19e5 Taylor-Green validity threshold
+  DISCLOSED in-package; three proof gaps ledgered OPEN with the L_buoy
+  variational route NAMED for the missing cap theorem. The paper names
+  the road; it does not claim the arrival.
 
-Gate 6,091/0. Dispatch 2,314 keys. Registry 7,083 rows. Acceptance
+Version note (tag-chain rule): B269 was prepared while v0.429.0
+shipped mid-session; re-versioned to v0.430.0 when the tag was seen.
+
+Gate 6,092/0. Dispatch 2,315 keys. Registry 7,090 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).
-
-B268 (same band) - THE THREE TIERS, on Daniel's order:
-- TIER 1: the field DRAWN, zero dependencies - star-magic fluid renders
-  the |omega| mid-plane as terminal art + PPM, with the Kolmogorov
-  Re^(9/4) resolution honesty riding in the label of every picture.
-- TIER 2: the fast engine (numpy, N=128-256). CORRECTION caught by
-  the blocked-numpy rehearsal itself: numpy is a REQUIRED dependency
-  of this package (the gate refuses to run without it), so the first
-  draft claim of a "[cfd] extra over a dependency-free base" was FALSE
-  and is removed; the guard stays for stripped environments.
-- TIER 3: the falsifier harness, data-gated - grades real DNS/lab CSVs
-  against the 17/20 cap or the 3/25 envelope, REFUSES without data,
-  names JHTDB/Kerr/Kleckner-Irvine as the outside paths. Synthetic
-  proves discrimination only, never evidence.
-Gate 6,091/0. Registry 7,083 rows.

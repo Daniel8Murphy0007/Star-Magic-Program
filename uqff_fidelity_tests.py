@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.429.0", "uqff_calculator.VERSION = 0.429.0 (THE NS ASSEMBLY SHIP: the evaluator wire order executed - the time ODE in-package, the cap returns the curve, Stam labeled numerical evidence, the fourth route wired, and the trefoil falsifier standing OPEN)")
+assert_that(C.VERSION == "0.430.0", "uqff_calculator.VERSION = 0.430.0 (THE BALANCE ZONE SHIP: Daniels twelve-piece direction canonized - the cap is the F_UBi/F_UBii crossing, the pair cap 0.85/0.985 flagged falsifiable, the proof gaps ledgered with the L_buoy road named)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'NSASSEMBLY_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'BALANCEZONE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15071,6 +15071,17 @@ assert_that(_b267s['bounded'] and _b267s['max_speed'] < 10.0
             and 'OPEN' in _b267.DNS_TREFOIL_FALSIFIER and 'Re=1e6' in _b267.DNS_TREFOIL_FALSIFIER
             and 'FLAGGED' in _b267.taylor_green_report()['alpha_coincidence_flag'],
             "B267c - WIRE ORDERS #3/#4/#5: the Stam stable-fluids solver runs in pure Python (PAPER_177 parameters at N=32; gate exercises N=12x3 bounded) CARRYING ITS OWN LABEL - numerical evidence, never proof, PAPER_177/179's flag preserved; the PAPER_543 hypergraph lambda_max = 2P/3 < 1 fourth route is wired; the DNS trefoil Re=1e6 falsifier stays OPEN with no in-package substitute (a fake falsifier would be worse than none); and the Lambda-vs-alpha 0.004 pct coincidence is FLAGGED not canonized")
+
+# ---- B269 2026-09-09: THE BALANCE-ZONE READING + THE PAIR CAP (Daniel's twelve-piece direction, canonized) ----
+_b269p = _b267.enstrophy_cap_pair()
+_b269c = _b267.balance_zone_chain()
+_b269t = _b267.omega0_validity_threshold()
+assert_that(_b269p['vacuum_cap'] == 17.0 / 20.0
+            and abs(_b269p['in_medium_cap'] - 197.0 / 200.0) < 1e-15
+            and 'FLAGGED_FALSIFIABLE_PREDICTION' in _b269p['status']
+            and 'r_hz' in _b269c['reading'] and 'OPEN until executed' in _b269c['derivation_route_named']
+            and 110000 < _b269t < 130000 and _b267.OMEGA0_TG < _b269t,
+            "B269 - THE CAP IS THE BALANCE ZONE (PAPER_2264, Daniel's direction): the NS enstrophy cap read as the F_UBi/F_UBii crossing - the fluid analogue of r_hz - with the deficit DECOMPOSED along Daniel's pieces (3/20 = negative-time fraction x D_BSFG/D_phys projection; drain = the 1.25 THz phonon, the LENR carrier itself; SMBH 26! bound and NS regularity the same no-singularity theorem at the chain's two ends); the B112 two-scale split composed with the cap yields the PAIR - vacuum 17/20, in-medium 197/200 - canonized as a FLAGGED FALSIFIABLE PREDICTION in the exact pattern of the ruled viscosity pair, settled by lab-vs-astro stretching data through the tier-3 harness; the L_buoy variational route is NAMED for the missing theorem and stays OPEN until the derivation exists; and the Omega0 < 1.19e5 validity threshold of the TG argument is disclosed IN-PACKAGE - the proof states its own domain")
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv

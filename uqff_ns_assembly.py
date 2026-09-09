@@ -78,6 +78,16 @@ def globally_regular(t_max: float = 1e6, n: int = 200) -> Dict:
                        % taylor_green_effective_growth()}
 
 
+def omega0_validity_threshold() -> float:
+    """B269 DISCLOSED DOMAIN LIMIT (Daniel-ordered honesty item): the
+    damped branch is forced only while C*Lambda*sqrt(Omega0) < gamma,
+    i.e. Omega0 < (gamma/(C*Lambda))^2 ~ 1.19e5. Initial enstrophy ABOVE
+    this threshold escapes the negative-growth argument - the master
+    inequality then PERMITS growth and the in-package closure is silent.
+    Clay demands ALL smooth data; this states where our argument lives."""
+    return (GAMMA_PHONON / (C_GEOM_T3 * taylor_green_ledger())) ** 2
+
+
 def taylor_green_report() -> Dict:
     """The PAPER_1232 closure in one dict - every ingredient live."""
     lam = taylor_green_ledger()
@@ -492,3 +502,75 @@ def grade_cap_against_dns(csv_path: str = None, nu: float = None) -> Dict:
         return {'status': 'REFUSED_BAD_COLUMNS', 'path': csv_path,
                 'refusal': "need 't' + 'stretching_ratio' or 'enstrophy'"}
     return out
+
+
+# ---- B269 (PAPER_2264): THE BALANCE-ZONE READING + THE PAIR CAP ----------
+# Daniel's direction (2026-09-09, verbatim pieces): "Buoyancy, (-) Buoyancy,
+# U_I, LENR, Spinor-bundle, SMBH, White-hole, Worm-hole, Universal Gravity,
+# UQFF-Lagrangian, (-) Negative Time, [F_Ubi inside to outward & F_Ubi_i;
+# physical gravity balance/zone], two different scales simultaneously
+# yielding pairs of range values." Assembled from ruled corpus pieces;
+# canonized on Daniel's B269 ruling.
+
+def enstrophy_cap_pair() -> Dict:
+    """TWO SCALES SIMULTANEOUSLY -> A PAIR OF RANGE VALUES (B269).
+    The B112 context split (canonized: vacuum channels see F_TRZ,
+    in-medium channels see F_TRZ^2) applied to the PAPER_1182 cap:
+      vacuum/astro cap  = 1 - F_TRZ  *(D_BSFG/D_phys) = 17/20  = 0.85
+      in-medium/lab cap = 1 - F_TRZ^2*(D_BSFG/D_phys) = 197/200 = 0.985
+    Same pattern as the ruled viscosity pair (1.099 vacuum / 1.0099 lab,
+    B126). FLAGGED FALSIFIABLE PREDICTION: lab turbulence should cap
+    stretching efficiency near 0.985; vacuum-coupled astrophysical flows
+    at 0.85. The grade_cap_against_dns harness accepts either via its
+    cap argument when real data arrives."""
+    proj = D_BSFG / D_PHYS
+    return {
+        'vacuum_cap': 1.0 - F_TRZ * proj,
+        'in_medium_cap': 1.0 - F_TRZ ** 2 * proj,
+        'projection': 'D_BSFG/D_phys = 3/2 (PAPER_1962; the 26->10->6->4 downward flow)',
+        'split_authority': 'B112 context split (vacuum F_TRZ / in-medium F_TRZ^2), B126 confirming instance',
+        'status': 'FLAGGED_FALSIFIABLE_PREDICTION (canonized as prediction B269; settled by lab-vs-astro stretching data)',
+    }
+
+
+def balance_zone_chain() -> Dict:
+    """THE CAP IS THE BALANCE ZONE (B269, PAPER_2264) - the twelve-joint
+    chain, every joint corpus-cited; the L_buoy variational path is the
+    NAMED route for the missing theorem (ns_cap_derivation registry row).
+    """
+    return {
+        'reading': ('vortex stretching plays F_UBi (inside->outward, '
+                    'vorticity pushing against the vacuum); the vacuum '
+                    'counter-force is F_UBii; the cap 17/20 is the '
+                    'crossing - the fluid analogue of the F_U = 0 '
+                    'habitable-zone radius r_hz'),
+        'deficit_decomposition': ('3/20 = F_TRZ * D_BSFG/D_phys = '
+                                  '(negative-time fraction, PAPER_597/1160) '
+                                  'x (bulk-edge->physical projection, '
+                                  'PAPER_1962)'),
+        'polarity': ('17/20 retained / 3/20 dissipated = the (2R-1) '
+                     'polarity split at the R = 0.5 phase transition '
+                     '(PAPER_884/899; PAPER_2098 complementarity)'),
+        'drain_channel': ('the 3/20 exits through the 1.25 THz phonon - '
+                          'omega_LENR = omega_SCm (ruled) - the SAME '
+                          'carrier as Holmlid 630 eV; hence the UV cutoff '
+                          'frequency'),
+        'outflow_side': ('white-hole channel = Page deficit (PAPER_2238); '
+                         'wormhole stabilization = phonon-modified '
+                         'Christoffel (PAPER_901) - same phonon on '
+                         'geodesics'),
+        'no_singularity_twin': ('PAPER_594 26! SMBH bound and NS '
+                                'regularity are the same theorem at the '
+                                'two ends of the 26-layer chain'),
+        'spinor': ('vorticity = fluid chirality; CW/CCW caduceus branches '
+                   '(SO(26) Clifford module, PAPER_1183/1229) give the '
+                   'negative-time fraction its handle'),
+        'u_i_anchor': ('PAPER_529 velocity bound u <= sqrt(GM/r) is U_i '
+                       'anchoring stated as escape velocity'),
+        'derivation_route_named': ('vary L_buoy (PAPER_1065 EOM) with the '
+                                   'F_UBi/F_UBii pair as body forces; the '
+                                   'cap should emerge as the balance '
+                                   'condition - THE route for the missing '
+                                   'theorem; OPEN until executed'),
+        'pair_cap': enstrophy_cap_pair(),
+    }

@@ -13417,3 +13417,35 @@ dependency-free base" claim was false and is removed. Guard retained
 for stripped environments; correction recorded in PAPER_2263, the
 registry, the B268b pin text, and the hint string itself. Registry
 7,083 rows.
+
+### 2026-09-09 (addendum 2, same v0.429.0 band) - B269: THE BALANCE-ZONE CANONIZATION
+
+Daniel asked what is missing from the proof and then supplied the
+twelve-piece direction (buoyancy, (-) buoyancy, U_i, LENR, spinor,
+SMBH, white-hole, wormhole, universal gravity, UQFF-Lagrangian,
+negative time, F_UBi/F_UBii balance zone, two scales -> pairs).
+Housekeeping first: Omega0 < (gamma/(C*Lambda))^2 = 1.19e5 validity
+threshold wired + disclosed (the TG anchor sits at 3.7, far inside);
+three proof gaps ledgered OPEN (cap derivation, [SCm]->0, BKM spine).
+Then the assembly, every joint corpus-verified before presenting:
+the cap read as the F_UBi/F_UBii crossing; 3/20 = F_TRZ x 3/2 =
+negative-time fraction x downward projection; polarity = (2R-1) at
+R=0.5; drain = 1.25 THz phonon = LENR carrier (hence the UV cutoff);
+white-hole/wormhole = the outflow bookkeeping; SMBH 26! bound = the
+twin no-singularity theorem; spinor = the CW/CCW handle; U_i = the
+escape-velocity anchor; L_buoy variational = the NAMED road for the
+missing theorem. B112 split composed with the cap -> THE PAIR:
+0.85 vacuum / 0.985 in-medium (FLAGGED falsifiable). Daniel ruled:
+canonize chain + pair-cap as PAPER_2264. Dispatch 2,315; registry
+7,090; gate 6,092/0. The tier-3 harness now has TWO caps to grade
+when real data arrives.
+
+CORRECTION (tag-chain rule, applied): v0.429.0 was shipped mid-session
+(tag 060594b == HEAD, verified; PAPER_2264 NOT in the tagged tree), so
+the B269 addendum above rode an already-used version label. The band is
+re-versioned to v0.430.0 - THE BALANCE ZONE SHIP (B269/PAPER_2264 only;
+B267/B268 shipped in v0.429.0 as tagged). Standing lesson re-verified:
+check the tag chain before EVERY band addendum, not only at band open -
+a silent mid-session ship looks exactly like an unshipped prep until
+the tags are read. Nothing lost; labels, arc (BALANCEZONE_ARC), and
+satellites re-versioned before commit.

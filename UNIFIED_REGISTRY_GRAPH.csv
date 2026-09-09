@@ -12385,3 +12385,6 @@ ns_assembly,PAPER_2263,PORTS,taylor_green_ode,B267: the evaluator's first wire i
 ns_assembly,PAPER_2263,LABELS,stam_solver,numerical evidence never proof - PAPER_177/179's own flag kept
 ns_cap,PAPER_2263,GUARDS,spe_8500_slot,the 8.5e3 SPE construct can never occupy the 0.85 slot
 riddle,PAPER_2263,ANSWERS,three_tier_field,B268: no closed form exists for the field - so draw the evidence, guard the speed, gate the falsifier on real data
+f_ubi_f_ubii,PAPER_2264,CROSSES_AT,ns_enstrophy_cap,B269: the fluid habitable zone - stretching vs vacuum counter-force
+b112_split,PAPER_2264,YIELDS_PAIR,ns_pair_cap,two scales simultaneously - 0.85 vacuum / 0.985 in-medium
+smbh_26_factorial,PAPER_2264,TWINS_WITH,ns_regularity,one no-singularity theorem at both ends of the 26-layer chain

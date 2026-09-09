@@ -526,3 +526,9 @@ tiers - field renderer (star-magic fluid, zero deps), fast numpy
 engine (numpy is a REQUIRED dep - the [cfd]-extra framing was false,
 caught by rehearsal, corrected), falsifier harness AWAITING_DATA.
 Gate 6,091/0.
+
+## v0.430.0 — 2026-09-09 — THE BALANCE ZONE SHIP
+PAPER_2264 (B269): the cap = the F_UBi/F_UBii crossing (the fluid
+r_hz); 3/20 = neg-time x projection; drain = the LENR phonon; PAIR
+CAP 0.85/0.985 flagged falsifiable; Omega0 < 1.19e5 disclosed; proof
+gaps ledgered with the L_buoy road named. Gate 6,092/0.

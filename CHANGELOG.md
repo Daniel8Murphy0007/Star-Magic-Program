@@ -5,6 +5,22 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.430.0 — 2026-09-09 — THE BALANCE ZONE SHIP
+
+- B269 (PAPER_2264): Daniel's balance-zone direction canonized -
+  NS cap = F_UBi/F_UBii crossing (fluid r_hz); 3/20 = neg-time fraction x
+  D_BSFG/D_phys; drain = 1.25 THz phonon (omega_LENR = omega_SCm); SMBH 26!
+  bound + NS regularity = one theorem, two chain ends; PAIR CAP 0.85/0.985
+  (B112 split, FLAGGED falsifiable, pattern of the B126 viscosity pair).
+  Proof gaps ledgered: Omega0 < 1.19e5 threshold DISCLOSED in-package;
+  cap-derivation (L_buoy route named), [SCm]->0 limit, BKM spine all
+  OPEN_UQFF_DERIVATION_TARGET rows. Gate 6,092/0; dispatch 2,315; registry
+  7,090 rows.
+
+- Version note (tag-chain rule): B269 was prepared while v0.429.0 shipped
+  mid-session; the band was re-versioned to v0.430.0 the moment the tag
+  was seen - nothing lost, standing lesson re-verified.
+
 ## v0.429.0 — 2026-09-09 — THE NS ASSEMBLY SHIP
 
 - B267 (PAPER_2263): the independent evaluator's NS gap analysis executed in
