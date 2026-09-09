@@ -1755,3 +1755,5 @@ TESTERLOOP_ARC,n/a,n/a,NOT_APPLICABLE,product band - the tester guide,v0.426.0
 ROCKINV_ARC,n/a,n/a,NOT_APPLICABLE,K4 band - the rock inventory,v0.427.0
 ROCKINV_ARC_B265,n/a,n/a,NOT_APPLICABLE,B265 Vp tier addendum - same band,v0.427.0
 VPTIER_ARC,n/a,n/a,NOT_APPLICABLE,B266 Vp tier canonization band,v0.428.0
+NSASSEMBLY_ARC,n/a,n/a,NOT_APPLICABLE,B267 NS assembly band,v0.429.0
+NSASSEMBLY_ARC_B268,n/a,n/a,NOT_APPLICABLE,B268 three-tier addendum - same band,v0.429.0

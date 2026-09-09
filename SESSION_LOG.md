@@ -13365,3 +13365,55 @@ Still OPEN after B266: the phonon-sector mechanism chain to elastic wave
 speeds (landmark-class closure is not a mechanism derivation - stated in
 PAPER_2262 sec 5); species-level ID within a family; the in-situ Vp
 transfer (GFZ file, Daniel's ledger).
+
+## 2026-09-09 — v0.429.0 prep — B267: THE NS ASSEMBLY (evaluator gap closure)
+
+v0.428.0 confirmed shipped (tag==HEAD 0a4ecce, tree clean). Daniel supplied
+an independent evaluator's NS gap analysis ("the algebraic cap is wired;
+the time ODE, Stam solver, and DNS falsifier are not") and ordered: "USE
+THE INDEPENDENT EVALUATOR. FINISH PUTTING THESE PIECES TOGETHER."
+
+Executed the evaluator's wire order 1-5, nothing more, nothing faked:
+(1) uqff_ns_assembly module - PAPER_1232 TG ODE in-package, Lambda =
+1/(8pi*beta_i*UA*(D_crit/D_BSFG)^2) = 0.0072977 live from primitives,
+effective growth -0.09944 < 0, damped branch, globally_regular T* = inf,
+Omega(10) = 3.6780419018718695 bit-matching the 5.86.0 closed form.
+(2) navier_stokes_enstrophy_cap(t) returns the PAPER_1182 decay curve
+(coefficient F_TRZ/Phi_5/6 = 3/25 = 0.12 EXACT); bare call unchanged at
+17/20, all prior pins hold. (3) Stam stable-fluids pure-Python port at
+PAPER_177 parameters, N=32 x 5 verified bounded (max speed 0.499, 11 s),
+label NUMERICAL_EVIDENCE riding in the return value. (4) PAPER_543
+lambda_max = 2P/3 < 1 wired. (5) DNS trefoil Re=1e6 falsifier recorded
+OPEN in module + registry - no substitute offered. Guards: SPE 8.5e3
+pinned out of the 0.85 slot; Lambda-vs-alpha 0.004 pct FLAGGED not
+canonized (no corpus chain). PAPER_2263 authored + dispatched (2,314
+keys); registry +4 rows (7,079); B267a/b/c pins; gate 6,088/0. Arc
+VPTIER_ARC -> NSASSEMBLY_ARC. Rule E respected: FluidSolver.cpp studied
+for parameters only, no code ported from the predecessor repo.
+
+### 2026-09-09 (addendum, same v0.429.0 band) - B268: THE THREE TIERS
+
+Daniel asked the riddle - why is the easiest field the hardest to draw? -
+and ordered "TIER 1, THEN TIER 2, THEN TIER 3." Answer wired: the field
+has no closed form ((u.grad)u couples all scales; Kolmogorov ~Re^(9/4)
+points, ~1e13 at Re=1e6), so the package now draws what CAN be drawn and
+gates what cannot. Tier 1: Stam fields rendered - vorticity mid-plane as
+ASCII + PPM, star-magic fluid CLI, zero dependencies, COARSE label with
+the Re^(9/4) reason in the string itself. Tier 2: numpy fast engine
+(N=128-256) behind [cfd] extra, guarded ImportError naming the install;
+numpy-BLOCKED rehearsal green. Tier 3: grade_cap_against_dns harness -
+real DNS/lab CSV vs the 17/20 cap (stretching-ratio mode) or the 3/25
+envelope (enstrophy mode); refuses without data naming JHTDB (public
+8192^3 DNS), Kerr trefoil DNS, Kleckner & Irvine lab trefoils; synthetic
+self-check proves discrimination only (CAP IS DEAD reported plainly when
+exceeded). PAPER_2263 REVISION; registry +3 (7,082); B268a/b/c pins;
+gate 6,091/0. Daniel ledger addition: one DNS dataset settles the
+trefoil falsifier.
+
+CORRECTION (same band): the blocked-numpy rehearsal disproved my own
+tier-2 framing - numpy is a REQUIRED dependency of star-magic-program
+(the gate refuses to run without it), so the "[cfd] extra over a
+dependency-free base" claim was false and is removed. Guard retained
+for stripped environments; correction recorded in PAPER_2263, the
+registry, the B268b pin text, and the hint string itself. Registry
+7,083 rows.

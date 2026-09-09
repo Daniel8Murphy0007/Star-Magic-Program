@@ -516,3 +516,13 @@ PAPER_2262: the Vp tier canonized on Daniel's ruling (soft anchors
 disclosed) - 17 primitive forms, 11 exact, worst 0.62%; the H_0
 integer in dolomite; 20/13 cross-ratio EXACT unit-free. Simulator
 v1.90.0; acceptance 109/109. Gate 6,085/0.
+
+## v0.429.0 — 2026-09-09 — THE NS ASSEMBLY SHIP
+PAPER_2263: evaluator wire order 1-5 executed - TG ODE in-package
+(effective -0.09944 < 0, T* = inf), cap returns the decay curve (3/25
+EXACT), Stam pure-Python NUMERICAL_EVIDENCE, lambda_max wired, trefoil
+falsifier OPEN, SPE 8.5e3 guard pinned. B268 same-band: the three
+tiers - field renderer (star-magic fluid, zero deps), fast numpy
+engine (numpy is a REQUIRED dep - the [cfd]-extra framing was false,
+caught by rehearsal, corrected), falsifier harness AWAITING_DATA.
+Gate 6,091/0.

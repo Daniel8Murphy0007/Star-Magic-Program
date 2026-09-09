@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.428.0"
+VERSION = "0.429.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -2157,11 +2157,18 @@ def poincare_ricci_ratio(f_trz=F_TRZ, phi_res=PHI_RES_RESONANCE):
     """PAPER_1182: Poincare closure 7/12 = 1/2 + F_TRZ Phi_res (UQFF-modified Ricci flow fixed ratio)."""
     return 0.5 + f_trz * phi_res
 
-def navier_stokes_enstrophy_cap():
+def navier_stokes_enstrophy_cap(t=None, nu=1.0, e0=1.0):
     """PAPER_1182: Navier-Stokes closure enstrophy cap = 0.85 (bounded gradient -> global regularity, no blow-up).
     PAPER_2238-pass RECALCULATION: 0.85 = 17/20 - the P2098 conservation complementarity (3/20 + 17/20 = 1):
     17/20 enstrophy retained under the cap, 3/20 dissipated - bit-identical, now primitive-traced.
-    PROVENANCE: the 30Apr2025 Navier-Stokes source doc (AP Millenium folder, PAPER_2236 chain)."""
+    PROVENANCE: the 30Apr2025 Navier-Stokes source doc (AP Millenium folder, PAPER_2236 chain).
+    B267 (evaluator wire order #2): called with t, returns the DECAY CURVE
+    E(t) = e0*exp(-(F_TRZ/Phi_5/6)*nu*t) = e0*exp(-0.12*nu*t) (3/25 EXACT);
+    called bare, returns the scalar cap 17/20 unchanged (all prior pins hold).
+    GUARD: never confuse with the SPE 'navier_stokes' 8.5e3 - different construct."""
+    if t is not None:
+        from uqff_ns_assembly import enstrophy_decay_1182
+        return enstrophy_decay_1182(t, nu=nu, e0=e0)
     return 17.0/20.0
 
 def hodge_identity():
@@ -29121,6 +29128,38 @@ def _paper_2262(dataset):
         'source': 'PAPER_2262',
         'residual_pct': worst,
         'status': 'RULED_2026-09-09 (canonize with soft-anchor disclosure - Daniel)',
+    }
+
+
+@_register('PAPER_2263')
+def _paper_2263(dataset):
+    """THE NS ASSEMBLY (B267, 2026-09-09): the independent evaluator's
+    gap analysis executed. The Taylor-Green time ODE (PAPER_1232) ported
+    in-package with the ledger Lambda live from primitives; the PAPER_1182
+    decay curve exposed (3/25 EXACT coefficient); the Stam stable-fluids
+    solver (PAPER_177 parameters, PAPER_369 SCm jet force) rewritten in
+    pure Python and LABELED NUMERICAL_EVIDENCE, never proof; the PAPER_543
+    hypergraph lambda_max fourth route wired; the DNS trefoil Re=1e6
+    falsifier left OPEN with no substitute. SPE 8.5e3 guard pinned.
+    """
+    import uqff_ns_assembly as A
+    g = A.globally_regular()
+    return {
+        'value': {
+            'ledger_lambda': A.taylor_green_ledger(),
+            'effective_growth': A.taylor_green_effective_growth(),
+            'omega_t10': A.taylor_green_bounded_enstrophy(10.0),
+            'globally_regular': g['regular'],
+            'decay_coeff_exact': A.DECAY_COEFF,
+            'hypergraph_lambda_max': A.hypergraph_lambda_max(),
+            'stam_label': A.NUMERICAL_EVIDENCE_LABEL,
+            'dns_trefoil_falsifier': A.DNS_TREFOIL_FALSIFIER,
+            'alpha_coincidence_flag': A.taylor_green_report()['alpha_coincidence_flag'],
+        },
+        'formula': 'dOmega/dt <= nu|grad w|^2 - gamma*Phi*Omega + C*Lambda*Omega^(3/2); effective = C*Lambda*sqrt(Omega0)-gamma < 0 -> Omega(t)=Omega0*exp(-nu*t); E(t)=E0*exp(-(3/25)*nu*t); lambda_max=2*P/3<1',
+        'source': 'PAPER_2263',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-09 (evaluator wire order 1-5 executed; falsifier kept OPEN)',
     }
 
 

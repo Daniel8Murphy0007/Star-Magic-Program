@@ -5,6 +5,34 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.429.0 — 2026-09-09 — THE NS ASSEMBLY SHIP
+
+- B267 (PAPER_2263): the independent evaluator's NS gap analysis executed in
+  full. New module uqff_ns_assembly (py-module, on the wheel): the PAPER_1232
+  Taylor-Green time ODE ported in-package (Lambda live from primitives,
+  effective growth -0.09944 < 0, damped branch, globally_regular T* = inf,
+  Omega(10) bit-matching the closed form); navier_stokes_enstrophy_cap(t)
+  returns the PAPER_1182 decay curve (3/25 EXACT) while the bare call keeps
+  17/20 (all prior pins hold); Stam stable-fluids ported to pure Python at
+  PAPER_177 parameters (N=32 verified bounded) with the PAPER_369 SCm jet
+  force, LABELED NUMERICAL_EVIDENCE never proof; PAPER_543 lambda_max = 2P/3
+  < 1 wired as the fourth route; DNS trefoil Re=1e6 falsifier recorded OPEN
+  with no substitute. Guards: SPE 8.5e3 pinned out of the 0.85 slot;
+  Lambda-vs-alpha 0.004% coincidence FLAGGED not canonized. Gate 6,085 ->
+  6,088 (B267a/b/c); dispatch 2,314 keys; registry 7,079 rows at B267 (7,083 after B268). Simulator
+  untouched (v1.90.0; acceptance 109/109).
+
+- B268 (same band): THE THREE TIERS. Tier 1 - dependency-free field renderer
+  (vorticity_slice/write_ppm/ascii_heatmap/draw_field + star-magic fluid CLI;
+  COARSE + Re^(9/4) honesty in every label). Tier 2 - numpy-vectorized
+  stam_numerical_evidence_fast (numpy is a REQUIRED dependency of this
+  package - the blocked-numpy rehearsal caught and killed the first
+  draft, a false "[cfd] extra / dependency-free base" claim; guard kept
+  for stripped environments; correction in PAPER_2263 + registry). Tier 3 - grade_cap_against_dns falsifier harness: AWAITING_DATA,
+  refuses without a real dataset, names JHTDB/Kerr/Kleckner-Irvine; synthetic
+  self-check proves discrimination only. Gate 6,088 -> 6,091 (B268a/b/c);
+  registry 7,083 rows.
+
 ## v0.428.0 — 2026-09-09 — THE VELOCITY TIER SHIP
 
 - B266 (PAPER_2262): the Vp tier CANONIZED on Daniel's ruling ("Canonize with

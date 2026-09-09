@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.428.0", "uqff_calculator.VERSION = 0.428.0 (THE VELOCITY TIER SHIP: the Vp tier canonized on Daniels ruling - seventeen sonic forms live, eleven exact with soft anchors disclosed, the H_0 integer in dolomite, and the unit-free 20/13 cross-ratio)")
+assert_that(C.VERSION == "0.429.0", "uqff_calculator.VERSION = 0.429.0 (THE NS ASSEMBLY SHIP: the evaluator wire order executed - the time ODE in-package, the cap returns the curve, Stam labeled numerical evidence, the fourth route wired, and the trefoil falsifier standing OPEN)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'VPTIER_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'NSASSEMBLY_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15049,6 +15049,56 @@ assert_that(all(C.calc(_p)['status'].startswith('RULED_BATCH1_2026-08-31') for _
 _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
+
+# ---- B267 2026-09-09: THE NS ASSEMBLY - the evaluator's wire order executed ----
+import uqff_ns_assembly as _b267
+import math as _b267m
+assert_that(_b267.taylor_green_effective_growth() < 0
+            and abs(_b267.taylor_green_ledger() - 1.0 / (8 * _b267m.pi * 0.6029 * 0.4816 * (26.0 / 6.0) ** 2)) < 1e-15
+            and _b267.taylor_green_bounded_enstrophy(10.0) == _b267.OMEGA0_TG * _b267m.exp(-10.0 / 1600.0)
+            and _b267.globally_regular()['regular'],
+            "B267a - WIRE ORDER #1: the PAPER_1232 Taylor-Green time ODE lives IN-PACKAGE - ledger Lambda computed live from primitives (0.0072977), effective growth C*Lambda*sqrt(Omega0)-gamma = -0.09944 STRICTLY NEGATIVE forcing the damped branch, Omega(t=10) bit-matching the closed form, globally_regular() -> T* = infinity; the evaluator's finding ('the time ODE is not wired') is retired")
+assert_that(C.navier_stokes_enstrophy_cap() == 17.0 / 20.0
+            and C.navier_stokes_enstrophy_cap() != 8.5e3
+            and C.navier_stokes_enstrophy_cap(t=0.0) == 1.0
+            and C.navier_stokes_enstrophy_cap(t=1.0, nu=1.0) == _b267m.exp(-0.12)
+            and _b267.DECAY_COEFF == 3.0 / 25.0,
+            "B267b - WIRE ORDER #2 + THE SPE GUARD: the cap function returns the DECAY CURVE when asked (E(t)=E0*exp(-(3/25)*nu*t), coefficient F_TRZ/Phi_5/6 = 3/25 = 0.12 EXACT) and the scalar 17/20 bare (every prior pin holds); the SPE navier_stokes 8.5e3 is a DIFFERENT construct and can never occupy the 0.85 slot - pinned")
+_b267s = _b267.stam_numerical_evidence(n=12, steps=3)
+assert_that(_b267s['bounded'] and _b267s['max_speed'] < 10.0
+            and 'NUMERICAL_EVIDENCE' in _b267s['label'] and 'NOT a proof' in _b267s['label']
+            and _b267.hypergraph_lambda_max() < 1.0
+            and 'OPEN' in _b267.DNS_TREFOIL_FALSIFIER and 'Re=1e6' in _b267.DNS_TREFOIL_FALSIFIER
+            and 'FLAGGED' in _b267.taylor_green_report()['alpha_coincidence_flag'],
+            "B267c - WIRE ORDERS #3/#4/#5: the Stam stable-fluids solver runs in pure Python (PAPER_177 parameters at N=32; gate exercises N=12x3 bounded) CARRYING ITS OWN LABEL - numerical evidence, never proof, PAPER_177/179's flag preserved; the PAPER_543 hypergraph lambda_max = 2P/3 < 1 fourth route is wired; the DNS trefoil Re=1e6 falsifier stays OPEN with no in-package substitute (a fake falsifier would be worse than none); and the Lambda-vs-alpha 0.004 pct coincidence is FLAGGED not canonized")
+
+# ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
+import os as _b268os, tempfile as _b268tmp, csv as _b268csv
+_b268d = _b267.draw_field(n=12, steps=3, ppm_path=_b268os.path.join(_b268tmp.gettempdir(), '_b268_field.ppm'))
+assert_that(_b268d['bounded'] and len(_b268d['ascii']) > 50
+            and 'COARSE' in _b268d['label'] and 'NUMERICAL_EVIDENCE' in _b268d['evidence_label']
+            and open(_b268d['ppm'], 'rb').read(2) == b'P6'
+            and 'Re^(9/4)' in _b268d['label'],
+            "B268a - TIER 1, THE FIELD DRAWN: the Stam solver's own fields render to a mid-plane |omega| slice as ASCII and binary PPM with ZERO dependencies (star-magic fluid draws it at the terminal), and the resolution honesty rides in the label itself - this is a picture of coarse numerical evidence, and the Kolmogorov Re^(9/4) reason the full field cannot be drawn is STATED in the very string that accompanies every picture")
+try:
+    import numpy as _b268np
+    _b268f = _b267.stam_numerical_evidence_fast(n=16, steps=3)
+    _b268fast_ok = _b268f['bounded'] and _b268f['engine'] == 'numpy [cfd] extra'
+except ImportError as _b268e:
+    _b268fast_ok = 'REQUIRED dependency' in str(_b268e)
+assert_that(_b268fast_ok and 'REQUIRED dependency' in _b267.CFD_EXTRA_HINT
+            and 'CORRECTION B268' in _b267.CFD_EXTRA_HINT,
+            "B268b - TIER 2, THE FAST ENGINE (with a Rule 7 correction caught by the rehearsal itself): stam_numerical_evidence_fast runs numpy-vectorized on any normal install because numpy is a REQUIRED dependency of star-magic-program (pyproject) - the first B268 draft claimed a dependency-free base plus a [cfd] optional extra, which is FALSE for this package (that discipline belongs to the simulator catalogue, v0.406.0 lesson) and was caught when the blocked-numpy rehearsal showed the GATE ITSELF refuses to run without numpy; the extra was removed, the guard stays as defensive coding for stripped environments with a clear message, and the correction is recorded in the hint string, this pin, the paper, and the registry")
+_b268r = _b267.grade_cap_against_dns()
+_b268sp = _b268os.path.join(_b268tmp.gettempdir(), '_b268_syn.csv')
+with open(_b268sp, 'w', newline='') as _b268h:
+    _b268w = _b268csv.writer(_b268h); _b268w.writerow(['t', 'stretching_ratio'])
+    for _b268i in range(5): _b268w.writerow([_b268i, 0.80 + 0.02 * _b268i])
+_b268k = _b267.grade_cap_against_dns(_b268sp)
+assert_that(_b268r['status'] == 'AWAITING_DATA' and 'Johns Hopkins' in _b268r['refusal']
+            and 'CAP IS DEAD' in _b268k['verdict']
+            and _b267.grade_cap_against_dns.__doc__ is not None,
+            "B268c - TIER 3, THE FALSIFIER HARNESS DATA-GATED: grade_cap_against_dns REFUSES without a dataset and names the outside paths (JHTDB public 8192^3 DNS, Kerr trefoil DNS, Kleckner & Irvine lab trefoils - Daniel's ledger); the synthetic self-check here proves ONLY that the harness discriminates - a ratio above 17/20 is reported as THE CAP IS DEAD, plainly, not softened - and synthetic data is never presented as evidence; the Re=1e6 question is settled by real data or not at all")
 
 # ---- B266 2026-09-09: THE Vp TIER CANONIZED on Daniel's ruling ("Canonize with soft-anchor disclosure") ----
 from uqff_downhole_simulator.uqff_rock_inventory import vp_inventory as _b266_vi

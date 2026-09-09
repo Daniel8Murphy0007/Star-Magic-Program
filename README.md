@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.428.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.428.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.429.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.429.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6085%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2313-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6091%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2314-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.428.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.429.0 complete-compile campaign live**
 
-**This release (v0.428.0): THE VELOCITY TIER SHIP — the Vp tier, canonized.** On Daniel's ruling ('Canonize with soft-anchor disclosure'), the OPEN item that B265 itself created closes: PAPER_2262 gives the seventeen sonic landmarks primitive decompositions composed LIVE from the locked lattice {D_phys, D_BSFG, N_ch, SO_5, D_crit, A_5} — ELEVEN exact on their midpoint anchors, worst residual peridotite 0.62%. The softness is DISCLOSED where it acts: the anchors are range midpoints quoted to 0.05 km/s, so /10 and /20 rationals land cheaply — stated in the module, the paper, and the gate pin, not hidden. The headline identities: **dolomite Vp = (A_5+SO_5)/SO_5 = 7.0 km/s** — the H_0 integer (PAPER_1573, H_0 = A_5+SO_5 = 70) surfacing in a laboratory acoustic anchor — and the **unit-free dolomite/halite anchor cross-ratio = D_phys·SO_5/D_crit = 20/13 EXACT**, the strongest single result because no unit convention can manufacture a ratio of two anchors. The amphibolite/basalt twin ratio has NO clean primitive form and says so. Corpus precedent: the PAPER_1204 S494 / PAPER_1209Y S572 sound-speed closures and the K4 density tier's own search-then-rule pattern. Classification continues to use RANGES, so the joint classifier's honesty contract is untouched. Simulator **v1.90.0**; acceptance 108 → **109** (Z10). **Totals: 2,258 wired (2,313 DISPATCH keys) / gate 6,085 green / 4,185 defs / acceptance 109 green / registry 7,075 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.429.0): THE NS ASSEMBLY SHIP — the evaluator's wire order, executed.** An independent gap analysis found the truth of 0.427: 'The algebraic cap is wired. The time ODE, Stam solver, and DNS falsifier are not.' PAPER_2263 closes all five wire items IN-PACKAGE (`uqff_ns_assembly`): **(1)** the PAPER_1232 Taylor-Green time ODE — ledger Λ = 1/(8π·β_i·UA·(D_crit/D_BSFG)²) = 0.0072977 computed LIVE from primitives, effective growth C·Λ·√Ω₀ − γ = **−0.09944 < 0** forcing the damped branch Ω(t) = Ω₀·e^(−νt), ν = 1/1600 = 1/(D_phys²·SO_5²) EXACT, globally_regular() → T* = ∞, Ω(t=10) bit-matching the closed form; **(2)** `navier_stokes_enstrophy_cap(t)` now returns the **decay curve** E(t) = E₀·e^(−(3/25)νt) (coefficient F_TRZ/Φ_5/6 = 3/25 EXACT) while the bare call still returns 17/20 — every prior pin holds; **(3)** the Stam stable-fluids solver rewritten in pure Python at the PAPER_177 FluidSolver parameters (N=32, dt=0.1, visc=1e-4) with the PAPER_369 SCm jet force, verified bounded, **carrying its own label: NUMERICAL_EVIDENCE, never proof** (PAPER_177/179's flag, preserved); **(4)** the PAPER_543 hypergraph fourth route λ_max = 2P/3 < 1 wired; **(5)** the DNS trefoil Re=10⁶ falsifier (PAPER_1182 #5) left **OPEN with no substitute** — if that peak is unbounded, the cap is dead, and a fake falsifier would be worse than none. Guards: the SPE 8.5e3 construct is pinned out of the 0.85 slot; the Λ-vs-α 0.004% coincidence is FLAGGED, not canonized. **Totals: 2,259 wired (2,314 DISPATCH keys) / gate 6,091 green / 4,186 defs / acceptance 109 green / registry 7,083 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.428.0)
+## What is currently shipped (v0.429.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,258 distinct dispatches (2,313 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,259 distinct dispatches (2,314 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,075 rows**. Fidelity gate: **6,085 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,083 rows**. Fidelity gate: **6,091 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

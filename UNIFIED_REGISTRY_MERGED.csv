@@ -682,3 +682,5 @@ TESTERLOOP_ARC,1,B263,v0.426.0,the tester loop closed and the guide shipped
 ROCKINV_ARC,1,B264 + PAPER_2261,v0.427.0,seventeen landmarks merged - sixteen EXACT plus the 11/12 ice rung
 ROCKINV_ARC_B265,1,B265 + PAPER_2261 REVISION,v0.427.0,the Vp tier merged onto the seventeen landmarks - two channels one inventory; twins split; family reading canonical for two-channel ID
 VPTIER_ARC,1,B266 + PAPER_2262,v0.428.0,the velocity tier merged onto the seventeen landmarks as canonized forms - density + velocity now BOTH primitive-composed; classification still range-driven
+NSASSEMBLY_ARC,1,B267 + PAPER_2263,v0.429.0,the four NS layers merged into one in-package assembly - microphysics + encompassment + cap/curve + TG instance + hypergraph route + falsifier ledger
+NSASSEMBLY_ARC_B268,1,B268 + PAPER_2263 REVISION,v0.429.0,the three tiers merged onto the assembly - draw the evidence / guard the speed / gate the falsifier on real data
