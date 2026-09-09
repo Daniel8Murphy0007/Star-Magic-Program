@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.426.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.426.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.427.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.427.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6082%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2311-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6084%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2312-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.426.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.427.0 complete-compile campaign live**
 
-**This release (v0.426.0): THE TESTER LOOP SHIP — the first outside user, and the lesson he taught us.** Hours after v0.425.0 reached PyPI, a non-technical tester installed it on a machine this project has never touched, hit the classic Windows Scripts-not-on-PATH trap on the `star-magic` shortcut, received one relayed command — and ran the complete survey demo: the full report, the disclosed exclusions, the Vp estimate with error bars, the **+0.7% self-grading cross-check**, and the refusals section, on his own screen. The install-to-result loop is CLOSED. This band ships the field lesson back into the product: **`TESTER_GUIDE.md`** — every click and keystroke written out for a non-technical user, with the PATH-trap-immune `python -m star_magic_cli survey --demo` as the primary command form, the install's yellow warnings pre-explained, and the `py` launcher fallback included — rides the wheel and prints in any terminal via the new **`star-magic guide`** command (`python -m star_magic_cli guide`); the README carries the tester pointer and both command forms. **Totals: 2,256 wired (2,311 DISPATCH keys) / gate 6,082 green / 4,183 defs / acceptance 99 green / registry 7,067 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.427.0): THE ROCK INVENTORY SHIP — the K4 geological landmark family, derived.** On Daniel's order ('DERIVE GEOLOGICAL LANDMARK. CREATE A UNIQUE FILE FOR ROCK DENSITY INVENTORY, ALONG WITH SUPPORTING DATA STREAMS'), the oldest product block falls: PAPER_2261 canonizes SEVENTEEN geological landmarks — quartz 53/20, calcite, dolomite, halite, gypsum, anhydrite = granite-frame·(1+F_TRZ), ice = 11/12, seawater, granite = quartz+2·F_TRZ², **gneiss = (SO_5+1)/D_phys = 11/4** (the Aether coupling over spacetime — and gneiss is the KTB's own rock), basalt, shale, sandstone, limestone 51/20, amphibolite, peridotite, coal 27/20 — each an observation-headlined anchor (Telford 1990 / Schön 2015, ranges disclosed) with a primitive decomposition composed LIVE from the locked lattice: sixteen EXACT, ice at 0.036%. The unique file (`uqff_rock_inventory.py`) ships with its supporting streams: `classify_density` (RANKED candidates, overlap printed, out-of-inventory refused), `rock_candidate_stream` (the material-ID channel that was BLOCKED_ON_K4, flowing), and `ktb_lithology_validation` — **the classifier's first grade: the density-only column vote for the KTB window names the published paragneiss-amphibolite section** (gneiss top-ranked 16/19; the amphibolite/basalt density-degeneracy DISCLOSED — amphibolite is metamorphosed basalt, and density-only ID honestly cannot split the twins). The survey report's rock refusal is retired BY DERIVATION; the refusal that remains is the correct one — a single confident name. Simulator **v1.89.0**; acceptance 99 → **108** (Sections Z incl. the joint tier). **Totals: 2,257 wired (2,312 DISPATCH keys) / gate 6,084 green / 4,184 defs / acceptance 108 green / registry 7,072 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.426.0)
+## What is currently shipped (v0.427.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,255 distinct dispatches (2,311 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,255 distinct dispatches (2,312 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,067 rows**. Fidelity gate: **6,082 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,072 rows**. Fidelity gate: **6,084 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

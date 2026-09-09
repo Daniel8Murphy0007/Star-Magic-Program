@@ -13299,3 +13299,41 @@ marker USERDOOR_ARC -> TESTERLOOP_ARC; band-trail rows appended;
 manifest regenerated (guide on the wheel); B263 pin added; gate
 green 6,082/0. Daniel ships via .\ship.ps1; tag-chain verification
 next session per standing rule.
+
+## 2026-09-08 (13) — v0.427.0 SHIP PREP: THE ROCK INVENTORY SHIP (B264)
+
+Daniel's order executed: the K4 geological landmark family derived
+(PAPER_2261; 17 landmarks, 16 EXACT to cited anchors, ice 11/12 at
+0.036 pct), the unique file uqff_rock_inventory.py created with its
+three supporting streams, the survey report's rock refusal retired BY
+DERIVATION (the remaining refusal = a single confident name), and the
+classifier graded immediately against published KTB lithology - gneiss
+top-ranked, the amphibolite/basalt density-degeneracy disclosed. One
+capability-limit refinement made mid-validation (the twins are
+density-degenerate; the grade states what density can honestly claim).
+Simulator v1.88.0; acceptance 99 -> 105; W2 updated to the CLOSED
+note; dispatch PAPER_2261 (2,312 keys); registry +3 (7,070); census
+ratchet fed; B264 pin; arc TESTERLOOP_ARC -> ROCKINV_ARC. Gate
+6,084/0. Daniel ships via .\ship.ps1.
+
+### 2026-09-08 (addendum, same v0.427.0 band) - B265: THE OPEN EDGE CLOSED
+
+Daniel: "LET'S WORK ON THIS OPEN EDGE." The amphibolite/basalt density
+degeneracy disclosed by B264 is split by a second channel. VP_RANGES added to
+uqff_rock_inventory (17 entries, observation-headlined, NO primitive
+decompositions forced - Vp-tier primitive derivation flagged OPEN per the
+value-coincidence discipline); classify_joint(rho, vp) requires both ranges
+(twin split demonstrated: 2.95 g/cc + 6.8 km/s -> amphibolite ALONE, 5.7 ->
+amphibolite excluded); joint_candidate_stream + family-graded
+ktb_joint_validation (FAMILIES felsic/mafic/carbonate/evaporite/clastic/
+organic/cryo_fluid). First joint run on real data returned INCOMPLETE
+honestly at species level; per-station inspection showed the true geology -
+alternating felsic/mafic banding, in-situ Vp below lab ranges, 2 transition
+gap stations - so the grade was refined to family level rather than tuning
+ranges to win (explicitly rejected as dishonest). Verdict: JOINT CLASSIFIER
+RESOLVES THE PUBLISHED ALTERNATION (family vote mafic 9 / felsic 5 /
+carbonate 3 noise; gaps 2; twin split True; both families True). Survey
+two-channel shortlist wired. Simulator v1.89.0; acceptance 108/108 (Z7-Z9);
+gate 6,084/0; registry 7,072 (+2 rows); PAPER_2261 REVISION; B265 pin live.
+Species-level ID within a family stays OPEN (more channels or lab-to-in-situ
+corrections; the KTB deep-sonic file on Daniel's ledger is the named path).

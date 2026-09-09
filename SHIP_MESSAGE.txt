@@ -1,18 +1,33 @@
-v0.426.0 — THE TESTER LOOP SHIP
+v0.427.0 — THE ROCK INVENTORY SHIP
 
-The first outside user, and the lesson he taught us.
+The K4 geological landmark family, derived on Daniel's order.
 
-- THE LOOP CLOSED: hours after v0.425.0 hit PyPI, a non-technical
-  tester installed it on a machine this project never touched, hit
-  the Windows Scripts-not-on-PATH trap, received ONE relayed command
-  (python -m star_magic_cli survey --demo), and ran the complete demo
-  - the +0.7 pct self-grading cross-check on his own screen. The
-  install-to-result loop is closed.
-- THE LESSON SHIPPED BACK: TESTER_GUIDE.md - every click written out,
-  the PATH-proof python -m form as the primary command, the yellow
-  warnings pre-explained, the py fallback included, the feedback
-  questions at the end - rides the wheel and prints in any terminal
-  via the new star-magic guide command. The support exchange that
-  fixed one user can now never be needed again.
+- SEVENTEEN LANDMARKS composed live from the locked lattice - sixteen
+  EXACT on their cited anchors (Telford/Schon, ranges disclosed), ice
+  = 11/12 at 0.036 pct. Gneiss = (SO_5+1)/D_phys = 11/4: the Aether
+  coupling over spacetime, and gneiss is the KTB's own rock.
+- THE UNIQUE FILE: uqff_rock_inventory.py with its supporting streams
+  - ranked classification with the overlap printed, the material-ID
+  channel that was BLOCKED_ON_K4 now flowing, and the validation
+  stream that grades the whole family.
+- THE FIRST GRADE IS REAL: the density-only column vote for the KTB
+  window names the published paragneiss-amphibolite section - gneiss
+  top-ranked at 16/19 stations, the mafic twin present, and the
+  amphibolite/basalt density-degeneracy DISCLOSED rather than hidden
+  (amphibolite is metamorphosed basalt; density cannot split the
+  twins and the tool says so).
+- THE REFUSAL RETIRED BY DERIVATION: the survey report now prints the
+  ranked rock shortlist with its honesty block; the one refusal that
+  remains is the correct one - a single confident name.
 
-Simulator v1.87.0. Acceptance 99/99. Gate 6,082/0. Registry 7,067.
+- THE OPEN EDGE, CLOSED SAME-DAY: the Vp discriminator tier splits the
+  amphibolite/basalt twins (disjoint velocity tiers, demonstrated at
+  the twin density), and the first joint run on real data taught the
+  honest granularity - rock FAMILIES: the two-channel vote resolves
+  the KTB window into BOTH published families, the
+  paragneiss-metabasite alternation visible in 10 m of log, with the
+  transition gap stations and the lab-vs-in-situ velocity limit
+  disclosed. Vp-tier primitives: OPEN by discipline, not forced.
+
+Simulator v1.89.0. Acceptance 108/108. Gate 6,084/0. Registry 7,072.
+DISPATCH 2,312. PAPER_2261 rides the wheel.

@@ -301,12 +301,12 @@ def channel_ranking(entry: str = 'ktb_hb_complog_6020_excerpt') -> Dict:
                                 'information - the ranking says so instead '
                                 'of pretending three channels exist where '
                                 'one does'),
-            'blocked_on_k4': ('the MATERIAL-ID channel (which rock is this?) '
-                              'cannot be ranked: the landmark family holds '
-                              'concrete/steel/aluminum/pine but no geological '
-                              'rungs - quartz, granite, shale, seawater, '
-                              'limestone, halite, ice are OPEN UQFF '
-                              'derivation targets that only Daniel can '
-                              'close'),
+            'blocked_on_k4': ('CLOSED 2026-09-08 by Daniel\'s K4 derivation '
+                              'order: uqff_rock_inventory carries seventeen '
+                              'geological landmarks (primitive-composed, '
+                              'anchors cited, ranges disclosed) and the '
+                              'material-ID channel flows as RANKED '
+                              'candidates with overlap honesty - see '
+                              'rock_candidate_stream()'),
             'scope': 'first pass, one 10-m window; re-runs as co-located '
                      'library grows'}

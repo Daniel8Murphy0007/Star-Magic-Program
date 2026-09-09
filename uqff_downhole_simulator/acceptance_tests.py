@@ -745,8 +745,7 @@ def section_w_differentiator() -> None:
        "and the re-derived master equation reproduces its paper chain")
     r = channel_ranking()
     ok(len(r["rankings"]) >= 3 and len(r["degenerate_pairs"]) >= 3
-       and "BLOCKED" in r["blocked_on_k4"].upper()
-       or ("only Daniel can close" in r["blocked_on_k4"]),
+       and "CLOSED 2026-09-08" in r["blocked_on_k4"],
        "W2 differentiator: the ranking runs, DISCLOSES that current "
        "candidates are informationally degenerate, and names the K4 block")
 
@@ -832,6 +831,72 @@ def section_y_survey() -> None:
            "an honest refusal naming the unlocking channel, not an "
            "invented answer")
 
+
+def section_z_rock_inventory() -> None:
+    """Section Z - the K4 geological landmark family (v1.88.0): the rock
+    density inventory and its supporting streams."""
+    from .uqff_rock_inventory import (rock_inventory, classify_density,
+                                      rock_candidate_stream,
+                                      ktb_lithology_validation)
+    inv = rock_inventory()
+    worst = max(abs(e['residual_pct']) for e in inv.values())
+    ok(len(inv) == 17 and worst < 0.05,
+       "Z1 K4 inventory: seventeen geological landmarks, primitive-composed "
+       "live from the registry lattice, worst anchor residual %.3f pct "
+       "(sixteen EXACT, ice = 11/12 at 0.036 pct)" % worst)
+    c = classify_density(2.80)
+    ok(c['n_candidates'] >= 2 and 'cannot single out' in c['honesty'],
+       "Z2 classifier honesty: overlapping ranges return RANKED candidates "
+       "with the overlap printed - never one confident name")
+    o = classify_density(5.0)
+    ok(o['n_candidates'] == 0 and 'out of inventory' in o['honesty'],
+       "Z3 classifier refusal: an out-of-inventory density says so instead "
+       "of guessing")
+    sv = rock_candidate_stream()
+    ok(sv['n_stations'] == 19 and sv['column_vote'],
+       "Z4 material-ID stream: the channel that was BLOCKED_ON_K4 flows - "
+       "per-station candidates over the co-located KTB window")
+    v = ktb_lithology_validation()
+    ok(v['gneiss_top_ranked'] and v['mafic_twin_present']
+       and 'degenerate' in v['degeneracy_disclosed'],
+       "Z5 THE GRADE: the density-only classifier names the KTB's published "
+       "rocks within density's honest capability - gneiss top-ranked "
+       "(16/19 stations; the published dominant lithology) with the mafic "
+       "twin present and the amphibolite/basalt degeneracy DISCLOSED")
+    from .uqff_survey_cmd import run_survey
+    txt, d = run_survey(demo=True)
+    ok('rock candidates' in txt and d.get('rock_candidates')
+       and d['rock_candidates'][0][0] == 'gneiss',
+       "Z6 survey integration: the user report now carries the ranked rock "
+       "shortlist (gneiss first on the demo) with the honesty block - the "
+       "old refusal is retired by derivation, not by relaxation")
+
+    from .uqff_rock_inventory import classify_joint, ktb_joint_validation
+    hi = classify_joint(2.95, 6800)
+    lo = classify_joint(2.95, 5700)
+    ok([h['name'] for h in hi['candidates']] == ['amphibolite']
+       and 'amphibolite' not in [h['name'] for h in lo['candidates']],
+       "Z7 joint classifier: THE TWINS SPLIT - at the twin density 2.95 "
+       "g/cc, 6.8 km/s resolves amphibolite ALONE and 5.7 km/s excludes "
+       "it (the Vp tiers are disjoint; the density degeneracy is broken "
+       "by the second channel)")
+    jv = ktb_joint_validation()
+    ok(jv['both_published_families_present']
+       and jv['twin_split_demonstrated']
+       and dict(jv['family_vote']).get('mafic', 0) >= 3
+       and dict(jv['family_vote']).get('felsic', 0) >= 3,
+       "Z8 THE SHARPER GRADE: the two-channel column vote resolves the KTB "
+       "window into BOTH published families - felsic and mafic stations "
+       "alternating, the paragneiss-metabasite banding visible in 10 m of "
+       "log - graded at the granularity the physics honestly supports")
+    ok(jv['gap_stations'] == 2 and 'capability limit' in
+       jv['in_situ_vp_limit_disclosed'],
+       "Z9 the limit, disclosed: two stations at Vp 6.52-6.54 km/s fall in "
+       "the gneiss->amphibolite gap (transition evidence, reported as "
+       "no-candidate rather than forced) and the lab-vs-in-situ velocity "
+       "limit is stated where it acts - fractured deep crust reads slower "
+       "than laboratory samples")
+
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "
           "independent of the physics corpus)")
@@ -861,6 +926,7 @@ def main() -> int:
         section_w_differentiator()
         section_x_do_all_three()
         section_y_survey()
+        section_z_rock_inventory()
     if _FAILS:
         print(f"[ACCEPTANCE] {len(_FAILS)} FAILURES ({_PASS} passed):")
         for f in _FAILS:

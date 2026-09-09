@@ -209,11 +209,47 @@ def run_survey(path: Optional[str] = None, demo: bool = False,
           'this survey against the cited WGS84 reference)')
     w('')
 
+    # ---- rock candidates (K4 geological landmark family) -----------------
+    from .uqff_rock_inventory import classify_density
+    votes = {}
+    for r in rho_k:
+        for h in classify_density(r)['candidates'][:3]:
+            votes[h['name']] = votes.get(h['name'], 0) + 1
+    ranked = sorted(votes.items(), key=lambda kv: -kv[1])[:3]
+    if ranked:
+        w('rock candidates (K4 landmark family, density-only, RANKED not '
+          'certain):')
+        w('  ' + ', '.join('%s (%d/%d stations)' % (n, c, len(rho_k))
+                           for n, c in ranked))
+        w('  HONESTY: density ranges overlap - these are candidates, not '
+          'an identification; density-degenerate twins (e.g. '
+          'amphibolite/basalt) are indistinguishable by design')
+        out['rock_candidates'] = ranked
+    else:
+        w('rock candidates: none - the density column is outside the K4 '
+          'inventory (stated, not guessed)')
+        out['rock_candidates'] = []
+    if keys['sonic']:
+        from .uqff_rock_inventory import classify_joint
+        son2 = _floats(ch, keys['sonic'])
+        jvotes = {}
+        for i in keep:
+            if son2[i] > 0:
+                for h in classify_joint(rho[i], 1e6 / son2[i])['candidates'][:2]:
+                    jvotes[h['name']] = jvotes.get(h['name'], 0) + 1
+        jranked = sorted(jvotes.items(), key=lambda kv: -kv[1])[:3]
+        if jranked:
+            w('  TWO-CHANNEL (density + sonic) shortlist - the sharper one: '
+              + ', '.join('%s (%d)' % (n, c) for n, c in jranked))
+            w('  the second channel splits the density-degenerate twins '
+              '(amphibolite/basalt Vp tiers are disjoint)')
+            out['rock_candidates_joint'] = jranked
+    w('')
+
     # ---- what the tool will NOT do ---------------------------------------
     w('what this tool refused to guess:')
-    w('  - rock NAMES (quartz/granite/shale...): the geological landmark '
-      'family is an OPEN derivation target - the tool ranks density, it '
-      'does not pretend to name rock')
+    w('  - a SINGLE confident rock name: density-only identification is '
+      'a ranked shortlist with disclosed overlap, never a certainty')
     if not keys['gamma']:
         w('  - lithology proxies from gamma: no gamma channel in this file')
     for r_ in out['refusals']:

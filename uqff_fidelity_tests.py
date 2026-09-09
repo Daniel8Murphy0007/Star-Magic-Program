@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.426.0", "uqff_calculator.VERSION = 0.426.0 (THE TESTER LOOP SHIP: the first outside install-to-result loop closed on a machine this project never touched, and the field lesson - the Windows PATH trap and its python -m cure - shipped back into the guide, the README, and the new guide command)")
+assert_that(C.VERSION == "0.427.0", "uqff_calculator.VERSION = 0.427.0 (THE ROCK INVENTORY SHIP: the K4 geological landmark family derived on Daniels order - seventeen primitive-composed landmarks, the material-ID channel unblocked, and the classifiers first grade naming the KTBs published rocks within densitys honest capability)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'TESTERLOOP_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'ROCKINV_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -12613,7 +12613,7 @@ for _f in ('__init__.py', 'uqff_quartz_hpht_extension.py', 'uqff_downhole_engine
 
 # ---- PAPER_2256 v1.1.0 EXTENSIONS (gauges / CSV profiles / comparison mode) ----
 import uqff_downhole_simulator as _ds11
-assert_that(_ds11.__version__ == '1.87.0' and len(_ds11.make_sensor_string(12)) == 12,
+assert_that(_ds11.__version__ == '1.89.0' and len(_ds11.make_sensor_string(12)) == 12,
             "DOWNHOLE v1.1.0: N-gauge strings - make_sensor_string builds arbitrary evenly-spaced strings (verified at 12 gauges); package at v1.20.0")
 _prof = _ds11.load_well_profile_csv('uqff_downhole_simulator/sample_well_profile.csv')
 _cfg11 = _ds11.SimulatorConfig(sensor_depths_ft=_ds11.make_sensor_string(12), profile=_prof)
@@ -15023,8 +15023,8 @@ assert_that(len(_r85['rankings']) == 3
             and all(abs(_row85['mean_abs_r'] - 0.4137) < 0.001 for _row85 in _r85['rankings'])
             and len(_r85['degenerate_pairs']) == 3
             and abs(_r85['rankings'][0]['abs_r']['lld_ohmm'] - 0.742) < 0.005
-            and 'only Daniel can close' in _r85['blocked_on_k4'],
-            "DOWNHOLE v1.85.0 (2/2) - THE RANKING'S FIRST FINDING IS THE HONEST ONE: all three current UQFF candidate channels (K2 gravity, U_i-modulated gravity, QCalcGeom mass scale) are INFORMATIONALLY DEGENERATE - monotone transforms of the same density column, identical mean |r| 0.414, and the degeneracy detector says so instead of pretending three channels exist where one does - with the real signal located (the mass column knows RESISTIVITY best at |r|=0.742 in this window) and the path forward named: breaking the degeneracy requires a channel that is NOT a function of density alone, which is exactly K4's geological material rungs - the study points at the instrument by pointing at the missing physics, and the missing physics is Daniel's to supply")
+            and 'CLOSED 2026-09-08' in _r85['blocked_on_k4'],
+            "DOWNHOLE v1.85.0 (2/2) - THE RANKING'S FIRST FINDING IS THE HONEST ONE: all three current UQFF candidate channels (K2 gravity, U_i-modulated gravity, QCalcGeom mass scale) are INFORMATIONALLY DEGENERATE - monotone transforms of the same density column, identical mean |r| 0.414, and the degeneracy detector says so instead of pretending three channels exist where one does - with the real signal located (the mass column knows RESISTIVITY best at |r|=0.742 in this window) and the path forward named: breaking the degeneracy requires a channel that is NOT a function of density alone, which is exactly K4's geological material rungs - the study points at the instrument by pointing at the missing physics, and the missing physics is Daniel's to supply - WHICH HE DID: the K4 note now reads CLOSED (B264, PAPER_2261), this pin updated at the supersession")
 
 # ---- WIRING CAMPAIGN RESUMPTION 2026-08-31: the drainage audit + Rulings Batch 1 ----
 _rb1 = _readfile('RULINGS_BATCH_1.md')
@@ -15050,6 +15050,28 @@ _rq_led = _readfile('RULINGS_QUEUE.md')
 assert_that('BATCH 1 RULINGS' in _rq_led and 'ANSWERS (Daniel, 2026-08-31)' in _readfile('RULINGS_BATCH_1.md'),
             "BATCH 1 FOLD (2/2) - THE ANSWERS ARE ON RECORD: every ruling is written into the ledger's BATCH 1 section and the batch file's ANSWERS appendix with per-question dispositions (including the two partial-scope notes: Q-002 Gauss recorded but its ten carrier papers hold other open questions so they stay flagged, and Q-216 narrowed to Q-216b because the ruled bridge FORM still needs its per-domain reference values) - rulings without a paper trail are how drift starts, so the trail is gate-pinned")
 
+# ---- B265 2026-09-08: THE OPEN EDGE CLOSED - the Vp tier splits the twins, the family reading grades the window ----
+from uqff_downhole_simulator.uqff_rock_inventory import classify_joint as _b265_cj, ktb_joint_validation as _b265_kv
+_b265_hi = [h['name'] for h in _b265_cj(2.95, 6800)['candidates']]
+_b265_lo = [h['name'] for h in _b265_cj(2.95, 5700)['candidates']]
+_b265_v = _b265_kv()
+assert_that(_b265_hi == ['amphibolite'] and 'amphibolite' not in _b265_lo
+            and _b265_v['twin_split_demonstrated']
+            and _b265_v['both_published_families_present']
+            and _b265_v['gap_stations'] == 2,
+            "B265 - THE OPEN EDGE CLOSED: the Vp discriminator tier (observation-headlined Christensen/Schon ranges, NO primitives forced - that derivation stays OPEN per the value-coincidence discipline) SPLITS the amphibolite/basalt twins at the twin density (6.8 km/s -> amphibolite alone, 5.7 -> amphibolite excluded), and the first joint run on real data taught the honest granularity: rock FAMILIES - the two-channel vote resolves the KTB window into BOTH published families, the paragneiss-metabasite ALTERNATION visible in 10 m of log, with the two gneiss-to-amphibolite transition stations reported as no-candidate gaps and the lab-vs-in-situ velocity limit disclosed where it acts; species-level ID within a family is the NEXT rung (more channels or in-situ corrections, stated OPEN)")
+
+# ---- B264 2026-09-08: THE K4 FAMILY - "DERIVE GEOLOGICAL LANDMARK" (Daniel's order) ----
+_b264 = C.calc('PAPER_2261')['value']
+assert_that(_b264['n_landmarks'] == 17
+            and _b264['worst_anchor_residual_pct'] < 0.05
+            and abs((10 + 1) / 4.0 - 2.75) < 1e-12
+            and abs((2 * 26 + 1) / 20.0 - 2.65) < 1e-12
+            and abs((26 + 1) / 10.0 * 1.1 - 2.97) < 1e-12
+            and abs((10 + 1) / 12.0 - 0.917) / 0.917 < 5e-4
+            and _b264['gneiss_top_ranked'] and _b264['mafic_twin_present'],
+            "B264 - THE K4 FAMILY DERIVED on Daniel's order: seventeen geological landmarks composed live from the locked lattice (sixteen EXACT on their cited anchors, ice = 11/12 at 0.036 pct) - gneiss = (SO_5+1)/D_phys, the Aether coupling over spacetime, and gneiss is the KTB's own rock; the material-ID channel that was BLOCKED_ON_K4 flows as ranked candidates with overlap honesty, and its FIRST GRADE is real: the density-only column vote for the KTB window names the published paragneiss-amphibolite lithology within density's honest capability, with the amphibolite/basalt degeneracy disclosed rather than hidden - the survey report's rock refusal is retired BY DERIVATION, and the one refusal that remains is the correct one: a single confident name")
+
 # ---- B263 2026-09-08: THE TESTER LOOP - the guide ships where the tester lands ----
 import star_magic_cli as _b263_cli
 _b263_guide = open('TESTER_GUIDE.md', encoding='utf-8').read()
@@ -15069,7 +15091,7 @@ assert_that('one honest answer' in _b262_txt
             and _b262_d['exclusions']['washout_or_null_stations'] == 46
             and abs(_b262_d.get('vp_cross_check_pct', 99.0)) < 5.0
             and 'refused to guess' in _b262_txt
-            and __import__('uqff_downhole_simulator').__version__ == '1.87.0',
+            and __import__('uqff_downhole_simulator').__version__ == '1.89.0',
             "B262 - THE SURVEY COMMAND: the door the tool was missing - star-magic survey <file.las> walks the whole engine behind one command (LAS reader -> density census with disclosed exclusions -> K2 gravity signature -> family-prior Vp with n/sigma/support -> cited WGS84 reference QC -> the printed refusals), and the --demo path runs the bundled public KTB excerpt end-to-end, GRADING ITSELF against the file's own sonic at ~+0.7 pct; a stranger with pip and two minutes now sees a real, honest result - simulator v1.87.0, acceptance 95 -> 99 (Section Y incl. the no-channel refusal test); the report's closing line is the product's contract: honest or it is nothing")
 
 # ---- B261 2026-09-08: DO ALL THREE (Daniel's order) - the harness, the reference, the investigation ----

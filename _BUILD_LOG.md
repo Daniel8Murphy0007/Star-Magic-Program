@@ -501,3 +501,12 @@ First outside install-to-result loop closed (v0.425.0 wheel, +0.7 pct
 self-grade on the user's screen). TESTER_GUIDE.md (PATH-trap immune)
 + the star-magic guide command ship the field lesson back. Gate
 6,082/0. Acceptance 99/99.
+
+## v0.427.0 — 2026-09-08 — THE ROCK INVENTORY SHIP
+PAPER_2261: the K4 family derived (17 landmarks, 16 EXACT); the
+material-ID channel unblocked; the classifier's first grade names the
+KTB's published rocks (degeneracy disclosed). B265 same-band: the
+Vp discriminator tier splits the amphibolite/basalt twins and the
+KTB window grades at family level (both published families; the
+in-situ-vs-lab Vp limit disclosed). Simulator v1.89.0;
+acceptance 108/108. Gate 6,084/0.

@@ -1752,3 +1752,5 @@ DERIVATION_ARC,n/a,n/a,DELIVERED,the B196-class extraction queue drained (genera
 LIVEFORMS_ARC,n/a,n/a,NOT_APPLICABLE,live-forms band - table derivation work,v0.424.0
 USERDOOR_ARC,n/a,n/a,NOT_APPLICABLE,product band - the user door,v0.425.0
 TESTERLOOP_ARC,n/a,n/a,NOT_APPLICABLE,product band - the tester guide,v0.426.0
+ROCKINV_ARC,n/a,n/a,NOT_APPLICABLE,K4 band - the rock inventory,v0.427.0
+ROCKINV_ARC_B265,n/a,n/a,NOT_APPLICABLE,B265 Vp tier addendum - same band,v0.427.0

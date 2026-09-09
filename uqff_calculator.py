@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.426.0"
+VERSION = "0.427.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29053,6 +29053,41 @@ def _paper_2260(dataset):
         'source': 'PAPER_2260',
         'residual_pct': 0.16,
         'status': 'RULED_2026-09-08 (B257/B258/B259: triple session canonized; two candidates flagged)',
+    }
+
+
+@_register('PAPER_2261')
+def _paper_2261(dataset):
+    """K4 geological landmark family (Daniel's derivation order 2026-09-08).
+
+    Seventeen landmarks (8 mineral/fluid + 9 rock), each an
+    observation-headlined anchor (Telford 1990 / Schon 2015, ranges
+    disclosed) with a primitive decomposition over {D_phys, D_crit,
+    SO_5, F_TRZ} - sixteen EXACT, ice = 11/12 at 0.036 percent. The
+    classifier grade: the KTB window's column vote names the published
+    paragneiss-amphibolite lithology within density-only capability
+    (gneiss top-ranked; amphibolite/basalt degeneracy disclosed).
+    """
+    from uqff_downhole_simulator.uqff_rock_inventory import (
+        rock_inventory, ktb_lithology_validation)
+    inv = rock_inventory()
+    worst = max(abs(e['residual_pct']) for e in inv.values())
+    v = ktb_lithology_validation()
+    return {
+        'value': {
+            'n_landmarks': len(inv),
+            'worst_anchor_residual_pct': worst,
+            'gneiss_form': '(SO_5+1)/D_phys = 11/4 = 2.75',
+            'quartz_form': '(2*D_crit+1)/(2*SO_5) = 53/20 = 2.65',
+            'ktb_grade': v['verdict'],
+            'gneiss_top_ranked': v['gneiss_top_ranked'],
+            'mafic_twin_present': v['mafic_twin_present'],
+            'degeneracy_disclosed': True,
+        },
+        'formula': 'rho_rock = primitive composition over {D_phys, D_crit, SO_5, F_TRZ}; anchors observation-headlined, ranges disclosed',
+        'source': 'PAPER_2261',
+        'residual_pct': worst,
+        'status': 'RULED_2026-09-08 (K4 family derived on Daniel order; classifier graded on published KTB lithology)',
     }
 
 

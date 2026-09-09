@@ -5,6 +5,32 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.427.0] — 2026-09-08 — THE ROCK INVENTORY SHIP
+
+### PAPER_2261 — the K4 geological landmark family (Daniel's derivation order)
+- SEVENTEEN landmarks (8 mineral/fluid + 9 rock), anchors
+  observation-headlined (Telford 1990 / Schon 2015, ranges disclosed),
+  primitive decompositions composed LIVE from {D_phys, D_crit, SO_5,
+  F_TRZ}: sixteen EXACT, ice = 11/12 at 0.036 pct. Gneiss =
+  (SO_5+1)/D_phys = 11/4 - the KTB's own rock on the Aether-coupling
+  integer.
+- The unique file: uqff_rock_inventory.py + three supporting streams
+  (classify_density ranked-with-overlap; rock_candidate_stream - the
+  BLOCKED_ON_K4 material-ID channel, flowing;
+  ktb_lithology_validation - THE GRADE).
+- THE FIRST GRADE: the density-only column vote names the KTB's
+  published paragneiss-amphibolite lithology within density's honest
+  capability (gneiss 16/19 top; amphibolite/basalt degeneracy
+  DISCLOSED, not hidden).
+- Survey integration: the rock-NAMES refusal retired BY DERIVATION;
+  the remaining refusal is a single confident name. Differentiator's
+  blocked_on_k4 note flipped to CLOSED; W2 acceptance updated.
+### Gate
+- 6,082 -> **6,083** (+1: the B264 pin; the census ratchet fed).
+  Simulator v1.87.0 -> **v1.88.0**; acceptance 99 -> **105**
+  (Z1-Z6). DISPATCH keys 2,311 -> **2,312** (PAPER_2261).
+- OPEN EDGE CLOSED same-band (B265): Vp discriminator tier added to the K4 inventory (observation-headlined Christensen & Mooney 1995 / Schon 2015 ranges; NO primitives forced on the Vp tier - that derivation stays OPEN by the value-coincidence discipline). classify_joint() splits the amphibolite/basalt density twins (disjoint Vp tiers, demonstrated at 2.95 g/cc); the first joint run on the KTB window graded at the honest granularity - rock FAMILIES: both published families resolved (mafic 9 / felsic 5), the paragneiss-metabasite alternation visible in 10 m of log, 2 gneiss-to-amphibolite transition stations reported as no-candidate gaps, lab-vs-in-situ velocity limit disclosed. Survey report gains the two-channel shortlist when sonic exists. Simulator v1.89.0; acceptance 105 -> 108 (Z7-Z9); gate 6,083 -> 6,084; registry 7,072 rows; PAPER_2261 REVISION appended.
+
 ## [0.426.0] — 2026-09-08 — THE TESTER LOOP SHIP
 
 ### The first outside install-to-result loop — CLOSED
