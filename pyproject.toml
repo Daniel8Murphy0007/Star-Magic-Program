@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.427.0"
-description = "Star-Magic UQFF calculator v0.427.0: THE ROCK INVENTORY SHIP - the K4 geological landmark family DERIVED on Daniel's order (PAPER_2261): seventeen landmarks composed live from the locked lattice (16 EXACT, ice = 11/12 at 0.036%); gneiss = (SO_5+1)/D_phys - and the density-only classifier's FIRST GRADE names the KTB's published paragneiss-amphibolite lithology, degeneracy disclosed; the survey report's rock refusal retired BY DERIVATION. Simulator v1.89.0. 2,257 papers, gate 6,084/0, acceptance 108/108."
+version = "0.428.0"
+description = "Star-Magic UQFF calculator v0.428.0: THE VELOCITY TIER SHIP - the Vp tier CANONIZED on Daniel's ruling (PAPER_2262): seventeen sonic landmarks composed live from the locked lattice, ELEVEN exact on midpoint anchors with the softness DISCLOSED; dolomite = (A_5+SO_5)/SO_5 - the H_0 integer surfacing in a laboratory acoustic anchor; unit-free dolomite/halite cross-ratio = 20/13 EXACT. Simulator v1.90.0. 2,258 papers, gate 6,085/0, acceptance 109/109."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -2023,6 +2023,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "whitepapers/PAPER_225_Early_Universe_Relativistic_UV_UQFF.md",
     "whitepapers/PAPER_2260_TRIPLE_DERIVATION_SESSION_SSQ_CUBED_OMEGA_RATIO_IKEDA_BOSE_ANCHOR_HOLMLID_TRIPLE_CONVERGENCE_UQFF_LANDMARK.md",
     "whitepapers/PAPER_2261_K4_GEOLOGICAL_LANDMARK_FAMILY_ROCK_DENSITY_INVENTORY_UQFF_LANDMARK.md",
+    "whitepapers/PAPER_2262_VP_DISCRIMINATOR_TIER_PRIMITIVE_CANONIZATION_UQFF_LANDMARK.md",
     "whitepapers/PAPER_226_MagnetarSGR0501_11Term_MUGE_UQFF.md",
     "whitepapers/PAPER_227_Tapestry_LMC_Stellar_Wind_UQFF.md",
     "whitepapers/PAPER_228_Westerlund2_OB_StellarWind_MUGE.md",

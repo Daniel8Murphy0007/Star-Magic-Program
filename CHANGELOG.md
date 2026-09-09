@@ -5,6 +5,23 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.428.0 — 2026-09-09 — THE VELOCITY TIER SHIP
+
+- B266 (PAPER_2262): the Vp tier CANONIZED on Daniel's ruling ("Canonize with
+  soft-anchor disclosure") - the OPEN item B265 created closes. Seventeen sonic
+  landmarks get primitive decompositions composed live over {D_phys, D_BSFG,
+  N_ch, SO_5, D_crit, A_5}: 11 EXACT on midpoint anchors, worst peridotite
+  0.62%. Soft-anchor disclosure stated in module, paper, and pin (midpoints
+  quoted to 0.05 km/s make /10 and /20 rationals cheap). Headlines: dolomite
+  Vp = (A_5+SO_5)/SO_5 - the H_0 integer in a laboratory acoustic anchor -
+  and the UNIT-FREE dolomite/halite cross-ratio = D_phys*SO_5/D_crit = 20/13
+  EXACT. The amphibolite/basalt twin ratio has no clean form and says so.
+  Corpus precedent: PAPER_1204 S494 / PAPER_1209Y S572. Classification still
+  uses RANGES - the joint classifier's honesty contract untouched. Simulator
+  v1.90.0; acceptance 108 -> 109 (Z10); gate 6,084 -> 6,085; registry 7,075
+  rows; dispatch 2,313 keys (PAPER_2262). GFZ deep-sonic request drafted for
+  Daniel (settles V2 + the (1+F_TRZ) flag + in-situ Vp transfer).
+
 ## [0.427.0] — 2026-09-08 — THE ROCK INVENTORY SHIP
 
 ### PAPER_2261 — the K4 geological landmark family (Daniel's derivation order)

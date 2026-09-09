@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.427.0"
+VERSION = "0.428.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29088,6 +29088,39 @@ def _paper_2261(dataset):
         'source': 'PAPER_2261',
         'residual_pct': worst,
         'status': 'RULED_2026-09-08 (K4 family derived on Daniel order; classifier graded on published KTB lithology)',
+    }
+
+
+@_register('PAPER_2262')
+def _paper_2262(dataset):
+    """Vp tier canonized (Daniel's ruling 2026-09-09, B266).
+
+    Seventeen sonic landmarks with primitive decompositions composed
+    live over {D_phys, D_BSFG, N_ch, SO_5, D_crit, A_5} - eleven EXACT
+    on midpoint anchors (soft-anchor rounding DISCLOSED), worst 0.62
+    percent (peridotite). Headline: dolomite = (A_5+SO_5)/SO_5 (the H_0
+    integer over SO_5); unit-free dolomite/halite anchor cross-ratio =
+    D_phys*SO_5/D_crit = 20/13 EXACT. Corpus precedent: PAPER_1204
+    S494 / PAPER_1209Y S572 sound-speed closures.
+    """
+    from uqff_downhole_simulator.uqff_rock_inventory import vp_inventory
+    vi = vp_inventory()
+    n_exact = sum(1 for e in vi.values() if e['residual_pct'] < 1e-9)
+    worst = max(e['residual_pct'] for e in vi.values())
+    return {
+        'value': {
+            'n_landmarks': len(vi),
+            'n_exact_on_midpoint': n_exact,
+            'worst_residual_pct': worst,
+            'dolomite_form': vi['dolomite']['form'],
+            'cross_ratio_dolomite_halite': '20/13 = D_phys*SO_5/D_crit EXACT (unit-free)',
+            'soft_anchor_disclosed': True,
+            'twin_ratio_has_no_clean_form': True,
+        },
+        'formula': 'vp_mid = primitive composition over {D_phys, D_BSFG, N_ch, SO_5, D_crit, A_5}; anchors = range midpoints (soft, disclosed); classification uses ranges',
+        'source': 'PAPER_2262',
+        'residual_pct': worst,
+        'status': 'RULED_2026-09-09 (canonize with soft-anchor disclosure - Daniel)',
     }
 
 

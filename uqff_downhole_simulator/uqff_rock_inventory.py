@@ -46,7 +46,7 @@ from typing import Dict, List, Optional
 _ROOT = Path(__file__).resolve().parent.parent
 if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
-from uqff_registry_primitives import D_PHYS, D_CRIT, SO_5, F_TRZ   # Rule A
+from uqff_registry_primitives import D_PHYS, D_CRIT, SO_5, F_TRZ, N_CH, A_5, D_BSFG   # Rule A
 
 # ---------------------------------------------------------------------------
 # THE INVENTORY - anchors from the cited tables; primitive forms LIVE
@@ -403,3 +403,71 @@ def ktb_joint_validation() -> Dict:
                     'limit disclosed' if (split and both) else
                     'INCOMPLETE - recorded honestly'),
     }
+
+
+# ---------------------------------------------------------------------------
+# THE Vp TIER, CANONIZED (Daniel's ruling, 2026-09-09 - B266 / PAPER_2262)
+# ---------------------------------------------------------------------------
+# The velocity midpoints now carry primitive decompositions, composed LIVE
+# from the locked lattice at every import - the same closure class as the
+# K4 density tier and the corpus sound-speed precedents (PAPER_1204 S494
+# air 343 m/s at 0.14 pct; PAPER_1209Y S572 air 343 EXACT).
+#
+# SOFT-ANCHOR DISCLOSURE (Rule 7, stated where it acts): the anchors are
+# RANGE MIDPOINTS quoted to 0.05 km/s (Christensen & Mooney 1995 / Schoen
+# 2015), so "EXACT" here means exact against a rounding convention - softer
+# evidence than the density tier's independently tabulated points. Eleven
+# of seventeen land exactly on their midpoints; the worst residual is
+# peridotite at 0.62 pct. The hardest single result is unit-free: the
+# dolomite/halite anchor cross-ratio = D_phys*SO_5/D_crit = 20/13 EXACT.
+# Classification continues to use the RANGES (VP_RANGES), never the forms.
+
+
+def _vpf():
+    """The seventeen Vp-tier forms (km/s), composed from primitives at
+    call time so the fidelity gate can watch them live."""
+    return {
+        'quartz':      ('(SO_5+1)^2/(2*SO_5) = 121/20',
+                        (SO_5 + 1) ** 2 / (2 * SO_5)),
+        'calcite':     ('D_crit/D_phys = 26/4', D_CRIT / D_PHYS),
+        'dolomite':    ('(A_5+SO_5)/SO_5 = 70/10 - the H_0 integer '
+                        '(PAPER_1573) over SO_5', (A_5 + SO_5) / SO_5),
+        'halite':      ('(A_5-SO_5)/(SO_5+1) = 50/11',
+                        (A_5 - SO_5) / (SO_5 + 1)),
+        'gypsum':      ('2*D_crit/SO_5 = 52/10', 2 * D_CRIT / SO_5),
+        'anhydrite':   ('A_5/SO_5 = 6', A_5 / SO_5),
+        'ice':         ('(D_BSFG+A_5)/(D_crit-N_ch) = 66/17',
+                        (D_BSFG + A_5) / (D_CRIT - N_CH)),
+        'seawater':    ('D_crit/(D_crit-N_ch) = 26/17',
+                        D_CRIT / (D_CRIT - N_CH)),
+        'granite':     ('(A_5-1)/SO_5 = 59/10', (A_5 - 1) / SO_5),
+        'gneiss':      ('(D_crit+A_5)/(D_phys+SO_5) = 86/14',
+                        (D_CRIT + A_5) / (D_PHYS + SO_5)),
+        'basalt':      ('(2*A_5-D_BSFG)/(2*SO_5) = 114/20',
+                        (2 * A_5 - D_BSFG) / (2 * SO_5)),
+        'shale':       ('2*SO_5/D_BSFG = 20/6', 2 * SO_5 / D_BSFG),
+        'sandstone':   ('A_5/D_phys^2 = 60/16', A_5 / D_PHYS ** 2),
+        'limestone':   ('N_ch*(SO_5+1)/(2*SO_5) = 99/20',
+                        N_CH * (SO_5 + 1) / (2 * SO_5)),
+        'amphibolite': ('(N_ch+A_5)/SO_5 = 69/10', (N_CH + A_5) / SO_5),
+        'peridotite':  ('2*D_phys = 8', 2.0 * D_PHYS),
+        'coal':        ('SO_5/D_phys = 10/4', SO_5 / D_PHYS),
+    }
+
+
+def vp_inventory() -> Dict:
+    """The canonized Vp tier: per landmark, the midpoint anchor (km/s),
+    the disclosed range, the primitive form, the live-composed value, and
+    the honest residual against the midpoint."""
+    forms = _vpf()
+    out = {}
+    for name, (lo, hi, mid) in VP_RANGES.items():
+        form, v = forms[name]
+        anchor = mid / 1000.0
+        out[name] = {
+            'anchor_km_s': anchor,
+            'lo_km_s': lo / 1000.0, 'hi_km_s': hi / 1000.0,
+            'form': form, 'vp_km_s': v,
+            'residual_pct': abs(v - anchor) / anchor * 100.0,
+        }
+    return out

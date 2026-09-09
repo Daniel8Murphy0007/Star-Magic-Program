@@ -681,3 +681,4 @@ USERDOOR_ARC,2,B261 + B262,v0.425.0,product band merged: the survey command + th
 TESTERLOOP_ARC,1,B263,v0.426.0,the tester loop closed and the guide shipped
 ROCKINV_ARC,1,B264 + PAPER_2261,v0.427.0,seventeen landmarks merged - sixteen EXACT plus the 11/12 ice rung
 ROCKINV_ARC_B265,1,B265 + PAPER_2261 REVISION,v0.427.0,the Vp tier merged onto the seventeen landmarks - two channels one inventory; twins split; family reading canonical for two-channel ID
+VPTIER_ARC,1,B266 + PAPER_2262,v0.428.0,the velocity tier merged onto the seventeen landmarks as canonized forms - density + velocity now BOTH primitive-composed; classification still range-driven

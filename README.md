@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.427.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.427.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.428.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.428.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6084%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2312-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6085%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2313-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.427.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.428.0 complete-compile campaign live**
 
-**This release (v0.427.0): THE ROCK INVENTORY SHIP — the K4 geological landmark family, derived.** On Daniel's order ('DERIVE GEOLOGICAL LANDMARK. CREATE A UNIQUE FILE FOR ROCK DENSITY INVENTORY, ALONG WITH SUPPORTING DATA STREAMS'), the oldest product block falls: PAPER_2261 canonizes SEVENTEEN geological landmarks — quartz 53/20, calcite, dolomite, halite, gypsum, anhydrite = granite-frame·(1+F_TRZ), ice = 11/12, seawater, granite = quartz+2·F_TRZ², **gneiss = (SO_5+1)/D_phys = 11/4** (the Aether coupling over spacetime — and gneiss is the KTB's own rock), basalt, shale, sandstone, limestone 51/20, amphibolite, peridotite, coal 27/20 — each an observation-headlined anchor (Telford 1990 / Schön 2015, ranges disclosed) with a primitive decomposition composed LIVE from the locked lattice: sixteen EXACT, ice at 0.036%. The unique file (`uqff_rock_inventory.py`) ships with its supporting streams: `classify_density` (RANKED candidates, overlap printed, out-of-inventory refused), `rock_candidate_stream` (the material-ID channel that was BLOCKED_ON_K4, flowing), and `ktb_lithology_validation` — **the classifier's first grade: the density-only column vote for the KTB window names the published paragneiss-amphibolite section** (gneiss top-ranked 16/19; the amphibolite/basalt density-degeneracy DISCLOSED — amphibolite is metamorphosed basalt, and density-only ID honestly cannot split the twins). The survey report's rock refusal is retired BY DERIVATION; the refusal that remains is the correct one — a single confident name. Simulator **v1.89.0**; acceptance 99 → **108** (Sections Z incl. the joint tier). **Totals: 2,257 wired (2,312 DISPATCH keys) / gate 6,084 green / 4,184 defs / acceptance 108 green / registry 7,072 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.428.0): THE VELOCITY TIER SHIP — the Vp tier, canonized.** On Daniel's ruling ('Canonize with soft-anchor disclosure'), the OPEN item that B265 itself created closes: PAPER_2262 gives the seventeen sonic landmarks primitive decompositions composed LIVE from the locked lattice {D_phys, D_BSFG, N_ch, SO_5, D_crit, A_5} — ELEVEN exact on their midpoint anchors, worst residual peridotite 0.62%. The softness is DISCLOSED where it acts: the anchors are range midpoints quoted to 0.05 km/s, so /10 and /20 rationals land cheaply — stated in the module, the paper, and the gate pin, not hidden. The headline identities: **dolomite Vp = (A_5+SO_5)/SO_5 = 7.0 km/s** — the H_0 integer (PAPER_1573, H_0 = A_5+SO_5 = 70) surfacing in a laboratory acoustic anchor — and the **unit-free dolomite/halite anchor cross-ratio = D_phys·SO_5/D_crit = 20/13 EXACT**, the strongest single result because no unit convention can manufacture a ratio of two anchors. The amphibolite/basalt twin ratio has NO clean primitive form and says so. Corpus precedent: the PAPER_1204 S494 / PAPER_1209Y S572 sound-speed closures and the K4 density tier's own search-then-rule pattern. Classification continues to use RANGES, so the joint classifier's honesty contract is untouched. Simulator **v1.90.0**; acceptance 108 → **109** (Z10). **Totals: 2,258 wired (2,313 DISPATCH keys) / gate 6,085 green / 4,185 defs / acceptance 109 green / registry 7,075 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.427.0)
+## What is currently shipped (v0.428.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,255 distinct dispatches (2,312 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,258 distinct dispatches (2,313 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,072 rows**. Fidelity gate: **6,084 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,075 rows**. Fidelity gate: **6,085 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

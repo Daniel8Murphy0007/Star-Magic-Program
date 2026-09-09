@@ -510,3 +510,9 @@ Vp discriminator tier splits the amphibolite/basalt twins and the
 KTB window grades at family level (both published families; the
 in-situ-vs-lab Vp limit disclosed). Simulator v1.89.0;
 acceptance 108/108. Gate 6,084/0.
+
+## v0.428.0 — 2026-09-09 — THE VELOCITY TIER SHIP
+PAPER_2262: the Vp tier canonized on Daniel's ruling (soft anchors
+disclosed) - 17 primitive forms, 11 exact, worst 0.62%; the H_0
+integer in dolomite; 20/13 cross-ratio EXACT unit-free. Simulator
+v1.90.0; acceptance 109/109. Gate 6,085/0.

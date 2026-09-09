@@ -896,6 +896,17 @@ def section_z_rock_inventory() -> None:
        "no-candidate rather than forced) and the lab-vs-in-situ velocity "
        "limit is stated where it acts - fractured deep crust reads slower "
        "than laboratory samples")
+    from .uqff_rock_inventory import vp_inventory
+    vi = vp_inventory()
+    n_exact = sum(1 for e in vi.values() if e['residual_pct'] < 1e-9)
+    worst = max(e['residual_pct'] for e in vi.values())
+    ok(len(vi) == 17 and n_exact == 11 and worst < 0.65
+       and abs(vi['dolomite']['vp_km_s'] - 7.0) < 1e-12
+       and abs(7000.0 / 4550.0 - 40.0 / 26.0) < 1e-12,
+       "Z10 the Vp tier CANONIZED (B266, soft anchors disclosed): 17 "
+       "primitive forms live, 11 exact on midpoints, worst 0.62 pct; "
+       "dolomite = the H_0 integer over SO_5; dolomite/halite anchor "
+       "cross-ratio = 20/13 = D_phys*SO_5/D_crit EXACT, unit-free")
 
 def main() -> int:
     print("UQFF Downhole Simulator - ACCEPTANCE SUITE (product gate, "

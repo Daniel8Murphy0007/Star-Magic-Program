@@ -1,33 +1,27 @@
-v0.427.0 — THE ROCK INVENTORY SHIP
+v0.428.0 — THE VELOCITY TIER SHIP
 
-The K4 geological landmark family, derived on Daniel's order.
+B266 (PAPER_2262): the Vp tier CANONIZED on Daniel's ruling - "Canonize
+with soft-anchor disclosure." The OPEN item that B265 itself created
+closes one band later.
 
-- SEVENTEEN LANDMARKS composed live from the locked lattice - sixteen
-  EXACT on their cited anchors (Telford/Schon, ranges disclosed), ice
-  = 11/12 at 0.036 pct. Gneiss = (SO_5+1)/D_phys = 11/4: the Aether
-  coupling over spacetime, and gneiss is the KTB's own rock.
-- THE UNIQUE FILE: uqff_rock_inventory.py with its supporting streams
-  - ranked classification with the overlap printed, the material-ID
-  channel that was BLOCKED_ON_K4 now flowing, and the validation
-  stream that grades the whole family.
-- THE FIRST GRADE IS REAL: the density-only column vote for the KTB
-  window names the published paragneiss-amphibolite section - gneiss
-  top-ranked at 16/19 stations, the mafic twin present, and the
-  amphibolite/basalt density-degeneracy DISCLOSED rather than hidden
-  (amphibolite is metamorphosed basalt; density cannot split the
-  twins and the tool says so).
-- THE REFUSAL RETIRED BY DERIVATION: the survey report now prints the
-  ranked rock shortlist with its honesty block; the one refusal that
-  remains is the correct one - a single confident name.
+- Seventeen sonic landmarks composed LIVE from the locked lattice
+  {D_phys, D_BSFG, N_ch, SO_5, D_crit, A_5}: ELEVEN exact on their
+  midpoint anchors; worst residual peridotite 0.62%.
+- THE SOFTNESS, DISCLOSED WHERE IT ACTS: anchors are range midpoints
+  quoted to 0.05 km/s, so /10 and /20 rationals land cheaply. Stated in
+  the module docstring, the paper, and the gate pin - not hidden.
+- Headline identities: dolomite Vp = (A_5+SO_5)/SO_5 = 7.0 km/s - the
+  H_0 integer (PAPER_1573) surfacing in a laboratory acoustic anchor -
+  and the UNIT-FREE dolomite/halite anchor cross-ratio =
+  D_phys*SO_5/D_crit = 20/13 EXACT, immune to unit conventions.
+- The amphibolite/basalt twin ratio has NO clean primitive form - said
+  plainly. Classification continues to use RANGES; the joint
+  classifier's honesty contract is untouched.
+- Corpus precedent: PAPER_1204 S494 + PAPER_1209Y S572 sound-speed
+  closures; the K4 density tier's own search-then-rule pattern.
 
-- THE OPEN EDGE, CLOSED SAME-DAY: the Vp discriminator tier splits the
-  amphibolite/basalt twins (disjoint velocity tiers, demonstrated at
-  the twin density), and the first joint run on real data taught the
-  honest granularity - rock FAMILIES: the two-channel vote resolves
-  the KTB window into BOTH published families, the
-  paragneiss-metabasite alternation visible in 10 m of log, with the
-  transition gap stations and the lab-vs-in-situ velocity limit
-  disclosed. Vp-tier primitives: OPEN by discipline, not forced.
-
-Simulator v1.89.0. Acceptance 108/108. Gate 6,084/0. Registry 7,072.
-DISPATCH 2,312. PAPER_2261 rides the wheel.
+Simulator v1.90.0. Acceptance 109/109 (Z10 new). Gate 6,085/0.
+Registry 7,075 rows. Dispatch 2,313 keys (PAPER_2262 wired, Rule B).
+GFZ deep-sonic request drafted for Daniel - one file settles Prediction
+V2, the flagged (1+F_TRZ) family offset, and the lab-to-in-situ Vp
+transfer that upgrades the joint classifier to species level.

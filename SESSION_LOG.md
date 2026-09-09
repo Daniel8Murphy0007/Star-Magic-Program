@@ -13337,3 +13337,31 @@ two-channel shortlist wired. Simulator v1.89.0; acceptance 108/108 (Z7-Z9);
 gate 6,084/0; registry 7,072 (+2 rows); PAPER_2261 REVISION; B265 pin live.
 Species-level ID within a family stays OPEN (more channels or lab-to-in-situ
 corrections; the KTB deep-sonic file on Daniel's ledger is the named path).
+
+## 2026-09-09 — v0.428.0 prep — B266: THE Vp TIER CANONIZED (band opener)
+
+v0.427.0 confirmed shipped (tag==HEAD dc1e343, PyPI 0.427.0 live, tree
+clean - the "what got missed" audit found NOTHING missed; my prep report
+simply predated Daniel's 23:49 ship). Band opened as v0.428.0.
+
+Daniel: "GO" on the two-track plan. Track 1: GFZ deep-sonic data-request
+draft delivered to Daniel (KTB-HB DTCO+RHOB 6,000-9,101 m, LAS 2.0).
+Track 2: the Vp-tier derivation session - rational search over the locked
+lattice against the 17 velocity midpoints, THEN the three-token corpus
+check, which found the precedent that upgrades the class: PAPER_1204 S494
+(air 343 m/s, 0.14%) and PAPER_1209Y S572 (343 EXACT) sound-speed
+closures. Daniel ruled: "Canonize with soft-anchor disclosure."
+
+Executed: vp_inventory() live in uqff_rock_inventory (17 forms, 11 exact
+on midpoints, worst peridotite 0.62%; softness disclosed in module +
+paper + pin); PAPER_2262 authored + dispatched (2,313 keys); registry +3
+rows (7,075) incl. the H_0-integer echo in dolomite and the unit-free
+20/13 cross-ratio; acceptance Z10 (109 checks); simulator v1.90.0; B266
+gate pin; gate 6,085/0. The amphibolite/basalt twin ratio has no clean
+form - recorded as such, not forced. Classification untouched (ranges,
+not forms). Arc marker rotated ROCKINV_ARC -> VPTIER_ARC.
+
+Still OPEN after B266: the phonon-sector mechanism chain to elastic wave
+speeds (landmark-class closure is not a mechanism derivation - stated in
+PAPER_2262 sec 5); species-level ID within a family; the in-situ Vp
+transfer (GFZ file, Daniel's ledger).
