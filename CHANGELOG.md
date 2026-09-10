@@ -5,6 +5,26 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.434.0 — 2026-09-10 — THE PROOF SET SHIP
+
+- B275 (PAPER_2270): the NS proof set consolidated - one master paper +
+  one live mirror (ns_proof_set(); gate-pinned to agree). Eight rungs
+  B267-B274, ZERO open theory rungs. Remainder exact: four data fronts
+  (DNS stretching = kill test; pair cap; THz bench; spectra above k_c),
+  three standing flags. JHTDB acquisition path drafted for Daniel (one
+  token settles fronts 1+4). Claim ceiling stated: physical regularity
+  derived + rigorous; idealization ruled to mathematics; NOT REPLACEMENT.
+  Dispatch 2,321; registry 7,106 rows; gate 6,097/0; simulator untouched.
+
+- B276 (same band, PAPER_2271): FIRST CONTACT - the cap graded on real
+  measured turbulence. JHTDB isotropic8192 (Re_lambda ~ 1300), official
+  REST + publicly sanctioned testing token (2 x 1000 pts < 4096 limit),
+  deterministic LCG points (bit-reproducible). CAP HOLDS: ratios
+  0.028660/0.024624, sub-batch max 0.084421 vs 17/20 - harness verdict.
+  Textbook positive-stretching skewness reproduced (0.778/0.754).
+  Extreme-event scan stays THE kill test (OPEN). Provenance + recipe in
+  jhtdb_grade/. Dispatch 2,322; registry 7,109; gate 6,098/0.
+
 ## v0.433.0 — 2026-09-10 — THE DOMAIN AND PROFILE SHIP
 
 - B273 (PAPER_2268): the Clay domain ruling - the no-cutoff idealization is

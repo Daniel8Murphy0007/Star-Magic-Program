@@ -1762,3 +1762,5 @@ CAPLEMMA_ARC,n/a,n/a,NOT_APPLICABLE,B270 cap-derivation band,v0.431.0
 LEMMACLOSED_ARC,n/a,n/a,NOT_APPLICABLE,B271 lemma-closure band,v0.432.0
 LEMMACLOSED_ARC_B272,n/a,n/a,NOT_APPLICABLE,B272 Theorem A addendum - same band,v0.432.0
 DOMAINPROFILE_ARC,n/a,n/a,NOT_APPLICABLE,B273/B274 domain+profile band,v0.433.0
+NSPROOFSET_ARC,n/a,n/a,NOT_APPLICABLE,B275 consolidation band,v0.434.0
+NSPROOFSET_ARC_B276,n/a,n/a,NOT_APPLICABLE,B276 first-contact addendum - same band,v0.434.0

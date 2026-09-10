@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.433.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.433.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.434.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.434.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6096%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2320-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6098%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2322-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.433.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.434.0 complete-compile campaign live**
 
-**This release (v0.433.0): THE DOMAIN AND PROFILE SHIP — the ruling and the roll-off.** PAPER_2268 (B273) canonizes Daniel's Clay domain ruling: the no-cutoff idealization ([SCm]→0, infinitely many modes — the literal Millennium statement) is **OUTSIDE THE PHYSICAL DOMAIN**. UQFF answers the physical question — why no real fluid ever blows up — and answers it rigorously (Theorem A); the continuum-without-cutoff is a mathematical object no actual fluid instantiates in any framework (every fluid is molecular at ~1 nm, where the phonon cutoff sits). The idealization is left to mathematics, respectfully — the Answer-B shape, NOT REPLACEMENT. This closes the AWAITING ruling row and the [SCm]→0 gap. PAPER_2269 (B274) derives the **phonon roll-off profile**: Φ(f) = exp(−(f−f_c)²/2Γ²), the Gaussian envelope selected by the two-tier test (PAPER_910 derives Γ = 0.1 THz AND uses this envelope itself), with **Q = f_c/Γ = 25/2 = K_MEX·D_BSFG EXACT**. The corollary that closes a loop: low-frequency leakage e^(−Q²/2) ≈ 10⁻³⁴ — **Theorem A's step cutoff was honest to thirty-four decimal places**. Falsifiable: THz-bench transmission dip at 1.25 THz, Gaussian, FWHM 0.235 THz — and the 910-vs-896 width discrepancy (0.1 vs 0.2 THz) is FLAGGED as the experiment's discriminator, not resolved by fiat. **Totals: 2,265 wired (2,320 DISPATCH keys) / gate 6,096 green / 4,192 defs / acceptance 109 green / registry 7,104 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.434.0): THE PROOF SET + FIRST CONTACT SHIP — the ladder consolidated, and the cap meets measured turbulence.** PAPER_2270 (B275) gathers the eight-rung Navier-Stokes arc (B267–B274) into one master paper mirrored by one live function (`ns_proof_set()` — the paper and the code must agree or the gate goes red): assembly, tiers, balance zone, derivation, lemma, rigor, domain, profile — **zero open theory rungs**. The claim at its honest strength: regularity of real fluids is a PHYSICAL consequence of vacuum structure — the cap 17/20 DERIVED within the axiom set (five rivals eliminated), global smoothness RIGOROUS under the physical cutoff (λ_c = 1.18 nm, the molecular scale), the no-cutoff idealization assigned to mathematics by explicit ruling — NOT REPLACEMENT. What remains is stated exactly: **four data fronts** (DNS stretching — the kill test; lab-vs-astro pair cap; THz-bench profile + width discriminator; spectra above k_c) and **three standing flags**, none buried. The JHTDB acquisition path (one free token → gradient samples + spectrum) rides Daniel's ledger and settles two fronts at once. One DNS dataset can still kill the whole thing — which is what makes it science. Same band, B276 (PAPER_2271): **FIRST CONTACT — the cap graded on real data.** Daniel supplied the JHTDB portal; its publicly sanctioned testing token (<4,096 points) allowed an immediate sampled grade on **isotropic8192 — the highest-Reynolds public DNS in existence (8192³, Re_λ ≈ 1300)** — via the official REST service at deterministic, bit-reproducible points. **THE CAP HOLDS**: sampled 1182-form ratios 0.028660 and 0.024624 (sub-batch max 0.084421), every one at least 10× under 17/20 — verdict issued by the same tier-3 harness that would have said CAP IS DEAD just as plainly. The pipeline reproduced the textbook positive-stretching skewness (77.8%/75.4%) — it computes real physics. Power limit in the record: random sampling cannot reach the far tail, so the extreme-event scan remains **THE kill test**, OPEN. Full provenance + re-pull recipe: `jhtdb_grade/`. **Totals: 2,267 wired (2,322 DISPATCH keys) / gate 6,098 green / 4,194 defs / acceptance 109 green / registry 7,109 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.433.0)
+## What is currently shipped (v0.434.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,265 distinct dispatches (2,320 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,267 distinct dispatches (2,322 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,104 rows**. Fidelity gate: **6,096 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,109 rows**. Fidelity gate: **6,098 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

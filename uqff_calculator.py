@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.433.0"
+VERSION = "0.434.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29323,6 +29323,46 @@ def _paper_2269(dataset):
             'formula': 'Phi(f) = exp(-(f-f_c)^2/(2*Gamma^2)); Gamma/f_c = 2/25 = 1/(K_MEX*D_BSFG) EXACT',
             'source': 'PAPER_2269', 'residual_pct': 0.0,
             'status': 'RULED_2026-09-10 (B274: derived, two-tier compliant; 910-vs-896 width FLAGGED)'}
+
+
+@_register('PAPER_2270')
+def _paper_2270(dataset):
+    """The UQFF Navier-Stokes proof set, consolidated (B275). Live
+    mirror of the eight rungs: theory OPEN count zero; four data
+    fronts awaiting; three standing flags; the claim stated at its
+    honest strength. The paper and ns_proof_set() must agree.
+    """
+    from uqff_ns_assembly import ns_proof_set
+    p = ns_proof_set()
+    return {
+        'value': {
+            'rungs': p['rungs'],
+            'theory_open_rungs': p['theory_open_rungs'],
+            'awaiting_outside_data': p['awaiting_outside_data'],
+            'standing_flags': p['standing_flags'],
+            'claim': p['claim'],
+            'status': p['status'],
+        },
+        'formula': 'proof set = eight rungs (B267-B274) + four data fronts + three flags; cap 17/20 derived; Theorem A rigorous; domain ruled',
+        'source': 'PAPER_2270',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-10 (B275: THEORY_COMPLETE_AWAITING_DATA)',
+    }
+
+
+@_register('PAPER_2271')
+def _paper_2271(dataset):
+    """First real-data cap grade (B276): JHTDB isotropic8192, official
+    REST, sanctioned testing token, deterministic points. Ratios
+    0.0287/0.0246 (sub-batch max 0.0844) vs cap 0.85 - CAP HOLDS via
+    the tier-3 harness. Positive-stretching fraction reproduces the
+    textbook skewness. Extreme-event scan stays THE kill test, OPEN.
+    """
+    from uqff_ns_assembly import first_real_data_grade
+    return {'value': first_real_data_grade(),
+            'formula': 'ratio = mean(omega.S.omega)/(max|omega|*mean|omega|^2) <= 17/20 (sampled 1182 form)',
+            'source': 'PAPER_2271', 'residual_pct': 0.0,
+            'status': 'GRADED_2026-09-10 (CAP HOLDS sampled; extreme-event scan OPEN)'}
 
 
 @_register('PAPER_2258')

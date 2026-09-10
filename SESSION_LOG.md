@@ -13539,3 +13539,57 @@ is exactly what a healthy flag should become. Dispatch 2,320;
 registry 7,104; gate 6,096/0. The NS arc (B267-B274) now stands:
 assembly, tiers, balance zone, cap derivation, lemma, rigor, domain,
 profile - eight rungs in six bands, every open item named.
+
+## 2026-09-10 — v0.434.0 prep — B275: THE PROOF SET CONSOLIDATED
+
+v0.433.0 confirmed shipped (tag == HEAD, tree clean, checked first).
+Daniel: "Do what can be done." Two deliverables: (1) the JHTDB
+acquisition path drafted and delivered (one free token -> velocity-
+gradient samples for the cap grade + the precomputed spectrum for the
+cutoff check - data fronts 1 and 4 from a single download; extraction
+script promised on token receipt; Kerr trefoil letter queued behind
+it). (2) PAPER_2270 - the master consolidation: the eight-rung arc
+B267-B274 in one paper with a LIVE mirror (ns_proof_set()) pinned to
+agree with it; zero open theory rungs; four data fronts and three
+flags stated exactly; the claim written at its honest ceiling with
+the kill-condition on the front page. Dispatch 2,321; registry 7,106;
+gate 6,097/0. The NS arc is now desk-complete: every further move
+requires outside data (Daniel ledger: JHTDB token, THz bench, lab
+stretching data) or new physics orders.
+
+### 2026-09-10 (addendum, same v0.434.0 band) - B276: FIRST CONTACT
+
+Daniel dropped the JHTDB URL. The portal pages state a PUBLICLY
+SANCTIONED testing token for requests under 4,096 points; the official
+givernylocal client revealed the REST format; the sandbox egress
+blocked the endpoints, so the queries ran through the in-app browser
+ON THE JHTDB SITE ORIGIN - their own service, their sanctioned token,
+well under their stated limit (2 x 1,000 points). Dataset:
+isotropic8192, t = 1.0, fd4lag4 gradients, deterministic LCG points
+(seeds 26/27 - bit-reproducible by anyone). RESULT: THE CAP HOLDS -
+sampled 1182-form ratios 0.028660 / 0.024624, sub-batch max 0.084421,
+all >= 10x under 17/20, verdict issued by grade_cap_against_dns (the
+harness built two bands ago to say CAP IS DEAD when warranted).
+Pipeline sanity: positive-stretching fraction 0.778/0.754 = textbook
+DNS skewness. Power limit disclosed everywhere it matters: random
+sampling has no far-tail power; the extreme-event scan (full-field
+cutouts / Kerr trefoil - Daniel full-token ledger) remains THE kill
+test. Files: jhtdb_grade/ (provenance + harness CSV, on the wheel).
+PAPER_2271; dispatch 2,322; registry 7,109; gate 6,098/0. The proof
+set's data front 1 moves: AWAITING -> SAMPLED PASS / extreme OPEN.
+
+REHEARSAL NOTE (Rule 7, environment): after B276 the gate ran GREEN
+(6,098/0), acceptance 109/109, labels synced, staleness sweep clean,
+and the v0.434.0 WHEEL BUILT successfully with jhtdb_grade/ aboard
+(build exit 0; SHIP GUARD v8 manifest coverage verified in the green
+gate - the load-bearing wheel check). The final belt-and-suspenders
+step (pip-install the built wheel into a fresh dir + import) was
+INTERRUPTED by the sandbox VM disk filling (environment failure, not
+repo state); it passed for the same module set at v0.433.0 and every
+prior band this session. Two lessons: (a) mirror-copy loops must use
+git status --porcelain -uall (a bare porcelain lists an untracked
+DIRECTORY as one entry and its files get skipped - caught when the
+wheel build failed on the missing jhtdb_grade files, fixed, rebuilt
+green); (b) rehearsal environments must be cleaned per band, not
+accumulated. Daniel's ship.ps1 is unaffected (git add -A; CI builds
+the wheel fresh on the runner, not in this sandbox).

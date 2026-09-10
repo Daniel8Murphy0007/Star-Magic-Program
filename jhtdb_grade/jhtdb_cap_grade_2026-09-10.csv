@@ -1,0 +1,13 @@
+t,stretching_ratio,source
+0,0.02866,isotropic8192 t=1.0 seed26 n=1000 global
+1,0.024624,isotropic8192 t=1.0 seed27 n=1000 global
+2,0.02939,seed27 sub-batch 0 n=100
+3,0.050764,seed27 sub-batch 1 n=100
+4,0.042512,seed27 sub-batch 2 n=100
+5,0.074919,seed27 sub-batch 3 n=100
+6,0.040071,seed27 sub-batch 4 n=100
+7,0.069362,seed27 sub-batch 5 n=100
+8,0.068964,seed27 sub-batch 6 n=100
+9,0.02477,seed27 sub-batch 7 n=100
+10,0.084421,seed27 sub-batch 8 n=100
+11,0.053766,seed27 sub-batch 9 n=100

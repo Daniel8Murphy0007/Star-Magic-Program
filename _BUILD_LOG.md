@@ -550,3 +550,10 @@ PAPER_2268 (B273): Clay idealization ruled OUTSIDE PHYSICAL DOMAIN.
 PAPER_2269 (B274): phonon roll-off derived - Gaussian, Q = 25/2
 EXACT, leakage 1e-34 justifies the Theorem A step; THz-bench FWHM
 0.235 THz; 910-vs-896 width flagged. Gate 6,096/0.
+
+## v0.434.0 — 2026-09-10 — THE PROOF SET SHIP
+PAPER_2270 (B275): the NS master consolidation - eight rungs, zero
+open theory rungs, four data fronts, three flags; live mirror
+ns_proof_set() gate-pinned. B276 same-band: FIRST CONTACT - cap
+graded on JHTDB isotropic8192 via sanctioned public token: CAP HOLDS
+(0.0287/0.0246 vs 0.85); extreme-event scan stays open. Gate 6,098/0.

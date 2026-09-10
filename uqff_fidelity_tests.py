@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.433.0", "uqff_calculator.VERSION = 0.433.0 (THE DOMAIN AND PROFILE SHIP: the Clay idealization assigned outside the physical domain by ruling, and the phonon roll-off derived - the step was a Gaussian this narrow)")
+assert_that(C.VERSION == "0.434.0", "uqff_calculator.VERSION = 0.434.0 (THE PROOF SET SHIP: the NS ladder consolidated - zero open theory rungs, four data fronts, three flags, the claim at honest strength)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'DOMAINPROFILE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'NSPROOFSET_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15134,6 +15134,27 @@ assert_that(_b273['ruling'] == 'OUTSIDE_PHYSICAL_DOMAIN'
             and _b267.phonon_rolloff(1.25) == 1.0
             and 'FLAGGED' in _b274['thz_bench_prediction'],
             "B273/B274 - THE RULING AND THE PROFILE: Daniel assigns the no-cutoff Clay idealization OUTSIDE THE PHYSICAL DOMAIN (the physical question is answered rigorously by Theorem A; the idealization is left to mathematics, respectfully, NOT REPLACEMENT - the Answer-B shape); and the phonon roll-off is DERIVED two-tier compliant - PAPER_910 supplies Gamma = 0.1 THz AND its own Gaussian envelope, Q = f_c/Gamma = 25/2 = K_MEX*D_BSFG EXACT, FWHM 0.235 THz for the THz bench, low-frequency leakage exp(-Q^2/2) ~ 1e-34 proving the Theorem A step cutoff was honest to thirty-four decimal places, and the 910-vs-896 width discrepancy FLAGGED as the experiment's discriminator rather than resolved by fiat")
+
+# ---- B275 2026-09-10: THE PROOF SET CONSOLIDATED - "Do what can be done" ----
+_b275 = _b267.ns_proof_set()
+assert_that(_b275['theory_open_rungs'] == 0
+            and len(_b275['rungs']) == 8
+            and len(_b275['awaiting_outside_data']) == 4
+            and len(_b275['standing_flags']) == 3
+            and 'NOT REPLACEMENT' in _b275['claim']
+            and _b275['status'] == 'THEORY_COMPLETE_AWAITING_DATA (B275)'
+            and 'OUTSIDE_PHYSICAL_DOMAIN' in _b275['rungs']['7_domain_B273']
+            and 'RIGOROUS' in _b275['rungs']['6_rigor_B272'].upper(),
+            "B275 - THE PROOF SET, CONSOLIDATED (PAPER_2270): eight rungs live-mirrored by ns_proof_set() with ZERO open theory rungs - assembly, tiers, balance zone, derivation, lemma, rigor, domain, profile - and the remainder stated exactly: FOUR data fronts (DNS stretching = the kill test; lab-vs-astro pair cap; THz bench profile + width discriminator; spectra above k_c) and THREE standing flags, none buried; the claim carries its own ceiling - regularity of real fluids is a physical consequence of vacuum structure, derived and rigorous under the physical cutoff, the idealization assigned to mathematics by ruling, NOT REPLACEMENT - and one DNS dataset can still kill the whole thing, which is what makes it science; the JHTDB acquisition path rides Daniels ledger")
+
+# ---- B276 2026-09-10: THE FIRST REAL-DATA GRADE - the cap meets measured turbulence ----
+_b276 = _b267.first_real_data_grade()
+_b276g = _b267.grade_cap_against_dns('jhtdb_grade/jhtdb_cap_grade_2026-09-10.csv')
+assert_that('CAP HOLDS' in _b276g['verdict'] and abs(_b276g['worst_ratio'] - 0.084421) < 1e-9
+            and _b276['global_ratios'] == (0.028660, 0.024624)
+            and 'CAP_HOLDS_SAMPLED_B276' in _b276['status']
+            and 'OPEN' in _b276['power_limit'].upper() or 'stays the OPEN' in _b276['power_limit'],
+            "B276 - FIRST CONTACT (PAPER_2271): the derived cap graded on REAL measured turbulence - JHTDB isotropic8192, the highest-Reynolds public DNS (Re_lambda ~ 1300), queried through the OFFICIAL REST service with the PUBLICLY SANCTIONED testing token at deterministic bit-reproducible points - and THE CAP HOLDS: sampled 1182-form ratios 0.028660 and 0.024624 with sub-batch max 0.084421, every one at least 10x under 17/20, verdict issued by the same tier-3 harness that would have said CAP IS DEAD just as plainly; the pipeline proves it computes real physics by reproducing the textbook positive-stretching skewness (0.778/0.754); and the power limit rides in the record - random sampling cannot reach the far tail, so the extreme-event scan remains THE kill test, OPEN, exactly as before; a sampled PASS is a real grade, not the final word")
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv
