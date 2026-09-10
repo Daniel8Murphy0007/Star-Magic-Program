@@ -5,6 +5,21 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.431.0 — 2026-09-09 — THE CAP THEOREM SHIP
+
+- B270 (PAPER_2265): the L_buoy variational derivation of the NS cap - the
+  road PAPER_2264 named, walked. Cap status: postulate -> DERIVED MODULO ONE
+  NAMED LEMMA. Surplus = F_TRZ exact ((1+F_TRZ) vs k_spring*(1+E_n) at
+  F_U = 0); TRZ-carried (PAPER_072 fraction + PAPER_009 D_TRZ = 0.900
+  canonical removal); (2R-1) negative branch opposes production; removal =
+  F_TRZ*(D_BSFG/D_phys) = 3/20; RIVALS ELIMINATED (0.90 bare, 0.81
+  quadratic - neither lands on 17/20); drain = g_phonon (PAPER_1065 EOM
+  term 3 = the LENR carrier), closing 2098 complementarity. BRIDGE LEMMA
+  named + OPEN (transverse projection weight from mode counting, linear
+  action); broad ns_cap_derivation row sharpened to it (supersession note).
+  Module l_buoy_cap_derivation() live; dispatch 2,316 keys; registry 7,093
+  rows; gate 6,093/0. Simulator untouched (v1.90.0; acceptance 109/109).
+
 ## v0.430.0 — 2026-09-09 — THE BALANCE ZONE SHIP
 
 - B269 (PAPER_2264): Daniel's balance-zone direction canonized -

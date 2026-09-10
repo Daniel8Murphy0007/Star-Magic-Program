@@ -12388,3 +12388,5 @@ riddle,PAPER_2263,ANSWERS,three_tier_field,B268: no closed form exists for the f
 f_ubi_f_ubii,PAPER_2264,CROSSES_AT,ns_enstrophy_cap,B269: the fluid habitable zone - stretching vs vacuum counter-force
 b112_split,PAPER_2264,YIELDS_PAIR,ns_pair_cap,two scales simultaneously - 0.85 vacuum / 0.985 in-medium
 smbh_26_factorial,PAPER_2264,TWINS_WITH,ns_regularity,one no-singularity theorem at both ends of the 26-layer chain
+l_buoy_eom,PAPER_2265,DERIVES,ns_enstrophy_cap,B270: produce/remove/drain - the EOM's three terms are the chain
+rival_coefficients,PAPER_2265,ELIMINATED_BY,projected_linear_form,0.90 bare and 0.81 quadratic do not land on the canonical cap

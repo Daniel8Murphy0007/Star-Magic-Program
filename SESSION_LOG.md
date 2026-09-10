@@ -13449,3 +13449,24 @@ check the tag chain before EVERY band addendum, not only at band open -
 a silent mid-session ship looks exactly like an unshipped prep until
 the tags are read. Nothing lost; labels, arc (BALANCEZONE_ARC), and
 satellites re-versioned before commit.
+
+## 2026-09-09 — v0.431.0 prep — B270: THE L_BUOY DERIVATION SESSION
+
+v0.430.0 confirmed shipped (tag 1f0452d == HEAD, PyPI 0.430.0, tree
+clean). Daniel: "next derivation session; the L_buoy variational
+attempt at the cap theorem." Source pass first: PAPER_1065 (the EOM -
+three terms: produce/remove/drain), PAPER_1203 ((1+F_TRZ) vs
+k_spring*(1+E_n) asymmetry), PAPER_072 (F_TRZ = fraction entering the
+TRZ), PAPER_009 (D_TRZ = 0.900, a CANONICAL damping mechanism - the
+find that locked step 2), PAPER_884/899 ((2R-1), R = 0.5),
+PAPER_1182/1962/1160 (the transverse feedback + 3/2 + downward flow).
+The chain closed modulo ONE step: surplus = F_TRZ exact at F_U = 0;
+TRZ-carried with canonical 10 pct removal on the negative branch;
+projected by D_BSFG/D_phys; cap = 17/20 with BOTH rivals (0.90 bare,
+0.81 quadratic) eliminated - the derivation discriminates; drain =
+g_phonon, the EOM's own third term. Daniel ruled: canonize as
+PAPER_2265 with the bridge lemma OPEN. The broad ns_cap_derivation row
+is SHARPENED to ns_cap_bridge_lemma (supersession note appended, old
+row stands as history). l_buoy_cap_derivation() live in
+uqff_ns_assembly; B270 pin recomputes every number. Next rungs: the
+bridge lemma itself (mode-counting), and the Clay H^s/BKM spine.

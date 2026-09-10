@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.430.0"
+VERSION = "0.431.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29191,6 +29191,38 @@ def _paper_2264(dataset):
         'source': 'PAPER_2264',
         'residual_pct': 0.0,
         'status': 'RULED_2026-09-09 (B269: chain + pair-cap canonized; pair cap FLAGGED_FALSIFIABLE_PREDICTION; L_buoy route OPEN until executed)',
+    }
+
+
+@_register('PAPER_2265')
+def _paper_2265(dataset):
+    """L_buoy variational derivation of the NS cap (B270).
+
+    The cap upgrades postulate -> derived modulo ONE named lemma:
+    surplus = F_TRZ exactly (the (1+F_TRZ) overshoot vs the compensated
+    base); TRZ-carried (PAPER_072/009); projected by D_BSFG/D_phys
+    (bridge lemma, OPEN); drained via g_phonon - the EOM's own third
+    term. Rivals 0.90 and 0.81 eliminated; only projected-linear lands
+    on 17/20.
+    """
+    from uqff_ns_assembly import l_buoy_cap_derivation
+    d = l_buoy_cap_derivation()
+    return {
+        'value': {
+            'cap_derived': d['cap_derived'],
+            'cap_canonical_match': d['cap_canonical_match'],
+            'surplus_fraction': d['surplus_fraction'],
+            'projection_weight': d['projection_weight'],
+            'removal_fraction': d['removal_fraction'],
+            'rivals_eliminated': d['rivals_eliminated']['note'],
+            'bridge_lemma_open': 'OPEN' in d['bridge_lemma'],
+            'drain': d['drain'],
+            'status': d['status'],
+        },
+        'formula': 'cap = 1 - surplus*projection = 1 - F_TRZ*(D_BSFG/D_phys) = 17/20; surplus from (1+F_TRZ) vs k_spring*(1+E_n) at F_U = 0; drain = g_phonon (PAPER_1065 EOM term 3)',
+        'source': 'PAPER_2265',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-09 (B270: derived modulo bridge lemma; lemma OPEN)',
     }
 
 

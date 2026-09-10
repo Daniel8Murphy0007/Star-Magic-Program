@@ -532,3 +532,8 @@ PAPER_2264 (B269): the cap = the F_UBi/F_UBii crossing (the fluid
 r_hz); 3/20 = neg-time x projection; drain = the LENR phonon; PAIR
 CAP 0.85/0.985 flagged falsifiable; Omega0 < 1.19e5 disclosed; proof
 gaps ledgered with the L_buoy road named. Gate 6,092/0.
+
+## v0.431.0 — 2026-09-09 — THE CAP THEOREM SHIP
+PAPER_2265 (B270): L_buoy derivation - cap postulate -> derived
+modulo one named bridge lemma; surplus F_TRZ exact; rivals 0.90/0.81
+eliminated; drain = g_phonon (the LENR carrier). Gate 6,093/0.

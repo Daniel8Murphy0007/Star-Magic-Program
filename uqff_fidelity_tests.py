@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.430.0", "uqff_calculator.VERSION = 0.430.0 (THE BALANCE ZONE SHIP: Daniels twelve-piece direction canonized - the cap is the F_UBi/F_UBii crossing, the pair cap 0.85/0.985 flagged falsifiable, the proof gaps ledgered with the L_buoy road named)")
+assert_that(C.VERSION == "0.431.0", "uqff_calculator.VERSION = 0.431.0 (THE CAP THEOREM SHIP: the L_buoy road walked - the cap derived modulo one named bridge lemma, both rivals eliminated, the drain on the EOMs own phonon term)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'BALANCEZONE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'CAPLEMMA_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15082,6 +15082,20 @@ assert_that(_b269p['vacuum_cap'] == 17.0 / 20.0
             and 'r_hz' in _b269c['reading'] and 'OPEN until executed' in _b269c['derivation_route_named']
             and 110000 < _b269t < 130000 and _b267.OMEGA0_TG < _b269t,
             "B269 - THE CAP IS THE BALANCE ZONE (PAPER_2264, Daniel's direction): the NS enstrophy cap read as the F_UBi/F_UBii crossing - the fluid analogue of r_hz - with the deficit DECOMPOSED along Daniel's pieces (3/20 = negative-time fraction x D_BSFG/D_phys projection; drain = the 1.25 THz phonon, the LENR carrier itself; SMBH 26! bound and NS regularity the same no-singularity theorem at the chain's two ends); the B112 two-scale split composed with the cap yields the PAIR - vacuum 17/20, in-medium 197/200 - canonized as a FLAGGED FALSIFIABLE PREDICTION in the exact pattern of the ruled viscosity pair, settled by lab-vs-astro stretching data through the tier-3 harness; the L_buoy variational route is NAMED for the missing theorem and stays OPEN until the derivation exists; and the Omega0 < 1.19e5 validity threshold of the TG argument is disclosed IN-PACKAGE - the proof states its own domain")
+
+# ---- B270 2026-09-09: THE L_BUOY DERIVATION - the cap from postulate to one named lemma ----
+_b270 = _b267.l_buoy_cap_derivation()
+assert_that(_b270['cap_derived'] == 17.0 / 20.0 and _b270['cap_canonical_match']
+            and _b270['surplus_fraction'] == 0.1 and _b270['projection_weight'] == 1.5
+            and _b270['removal_fraction'] == 3.0 / 20.0
+            and abs(_b270['in_medium_cap'] - 197.0 / 200.0) < 1e-15
+            and _b270['rivals_eliminated']['bare_trz'] == 0.9
+            and abs(_b270['rivals_eliminated']['quadratic_trz'] - 0.81) < 1e-15
+            and _b270['rivals_eliminated']['bare_trz'] != 17.0 / 20.0
+            and _b270['rivals_eliminated']['quadratic_trz'] != 17.0 / 20.0
+            and 'OPEN' in _b270['bridge_lemma'] and 'g_phonon' in _b270['drain']
+            and 'DERIVED_MODULO_BRIDGE_LEMMA' in _b270['status'],
+            "B270 - THE CAP, DERIVED (PAPER_2265, Daniel's session order): the L_buoy variational road named by B269 is WALKED - PAPER_1065's EOM supplies produce/remove/drain as its own three terms, the (1+F_TRZ)-vs-k_spring asymmetry of the PAPER_1203 canonical forms makes the surplus EXACTLY F_TRZ at the balance zone, PAPER_072/009 make the surplus TRZ-carried with the canonical 10 pct removal, and the projected-linear composition lands on 17/20 while BOTH rivals (0.90 bare, 0.81 quadratic) are ELIMINATED - the derivation discriminates rather than accommodates; the removed 3/20 drains through g_phonon, the LENR carrier, closing the 2098 bookkeeping; ONE step remains and is NAMED as the bridge lemma (transverse projection weight D_BSFG/D_phys from mode counting, linear action on production) - the cap's status is DERIVED_MODULO_BRIDGE_LEMMA, honestly, and the lemma is a registry-tracked OPEN target, not a claim")
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv

@@ -685,3 +685,4 @@ VPTIER_ARC,1,B266 + PAPER_2262,v0.428.0,the velocity tier merged onto the sevent
 NSASSEMBLY_ARC,1,B267 + PAPER_2263,v0.429.0,the four NS layers merged into one in-package assembly - microphysics + encompassment + cap/curve + TG instance + hypergraph route + falsifier ledger
 NSASSEMBLY_ARC_B268,1,B268 + PAPER_2263 REVISION,v0.429.0,the three tiers merged onto the assembly - draw the evidence / guard the speed / gate the falsifier on real data
 BALANCEZONE_ARC_B269,1,B269 + PAPER_2264,v0.429.0,the twelve pieces merged - the cap is the balance zone and two scales yield the pair
+CAPLEMMA_ARC,1,B270 + PAPER_2265,v0.431.0,the derivation merged onto the cap - one quantity carried from postulate to one-lemma status with the drain on the EOMs own phonon term

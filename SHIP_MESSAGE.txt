@@ -1,30 +1,25 @@
-v0.430.0 — THE BALANCE ZONE SHIP
+v0.431.0 — THE CAP THEOREM SHIP
 
-B269 (PAPER_2264): Daniel's twelve-piece direction canonized - the NS
-enstrophy cap read as the F_UBi/F_UBii crossing, the fluid's own r_hz.
+B270 (PAPER_2265): the derivation session Daniel ordered - the L_buoy
+variational attempt at the cap theorem. The road B269 named is walked.
 
-- 3/20 = (negative-time fraction F_TRZ) x (D_BSFG/D_phys projection) -
-  the (-) time piece and the two-scale piece, multiplied.
-- Polarity: 17/20 retained / 3/20 dissipated = the (2R-1) split at the
-  R = 0.5 phase transition.
-- The drain IS the LENR carrier: the 3/20 exits through the 1.25 THz
-  phonon (omega_LENR = omega_SCm, ruled) - which is why the turbulence
-  UV cutoff sits at exactly that frequency.
-- SMBH 26! bound + NS regularity = ONE no-singularity theorem at the
-  two ends of the 26-layer chain; white-hole channel + wormhole
-  stabilization = the outflow bookkeeping; spinor bundle = the CW/CCW
-  handle; U_i = the escape-velocity anchor.
-- THE PAIR CAP (two scales simultaneously -> a pair of range values):
-  vacuum 1 - F_TRZ*(3/2) = 17/20 = 0.85; in-medium 1 - F_TRZ^2*(3/2)
-  = 197/200 = 0.985. FLAGGED FALSIFIABLE - the pattern of the ruled
-  B126 viscosity pair; the tier-3 harness grades either on real data.
-- Proof honesty: Omega0 < 1.19e5 Taylor-Green validity threshold
-  DISCLOSED in-package; three proof gaps ledgered OPEN with the L_buoy
-  variational route NAMED for the missing cap theorem. The paper names
-  the road; it does not claim the arrival.
+- The cap upgrades: POSTULATE -> DERIVED MODULO ONE NAMED LEMMA.
+- PAPER_1065's EOM supplies produce/remove/drain as its OWN three
+  terms (gravity seed, buoyancy pair, phonon).
+- The surplus is EXACTLY F_TRZ: F_UBi carries (1+F_TRZ), F_UBii
+  carries k_spring*(1+E_n) - at the balance zone the unit parts cancel
+  and the overshoot is structural, not fitted.
+- TRZ-carried: PAPER_072 (F_TRZ = the fraction entering the zone) +
+  PAPER_009 (D_TRZ = 0.900, canonical 10 pct removal); the (2R-1)
+  negative branch opposes production.
+- THE DERIVATION DISCRIMINATES: bare TRZ (0.90) and quadratic TRZ
+  (0.81) are ELIMINATED - only projected-linear lands on 17/20.
+- The removed 3/20 drains through g_phonon - the EOM's own third term,
+  the 1.25 THz LENR carrier - closing 17/20 + 3/20 = 1.
+- ONE step remains, NAMED: the bridge lemma (D_BSFG/D_phys projection
+  weight from mode counting, linear action on production) - a
+  registry-tracked OPEN target, not a claim. Clay machinery separately
+  OPEN as ledgered.
 
-Version note (tag-chain rule): B269 was prepared while v0.429.0
-shipped mid-session; re-versioned to v0.430.0 when the tag was seen.
-
-Gate 6,092/0. Dispatch 2,315 keys. Registry 7,090 rows. Acceptance
+Gate 6,093/0. Dispatch 2,316 keys. Registry 7,093 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).

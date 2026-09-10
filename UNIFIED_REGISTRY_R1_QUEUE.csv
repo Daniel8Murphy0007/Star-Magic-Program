@@ -180,3 +180,4 @@ VPTIER_ARC,band v0.428.0,RULED,B266 (canonize with soft-anchor disclosure),no,th
 NSASSEMBLY_ARC,band v0.429.0,RULED,B267 (the evaluator wire order),no,the evaluator found the seam and the seam is closed - the ODE lives where the cap lives
 NSASSEMBLY_ARC_B268,band v0.429.0,RULED,B268 (tier 1 then 2 then 3),no,the riddle answered in code - what can be drawn is drawn and what cannot says why in its own label
 BALANCEZONE_ARC_B269,band v0.430.0,RULED,B269 (canonize chain + pair-cap),no,Daniels direction assembled joint by joint - and the missing theorem now has a named road
+CAPLEMMA_ARC,band v0.431.0,RULED,B270 (canonize; bridge lemma OPEN),no,the road named in B269 walked in B270 - and the derivation eliminated its own rivals

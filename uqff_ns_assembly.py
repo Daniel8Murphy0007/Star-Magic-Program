@@ -574,3 +574,67 @@ def balance_zone_chain() -> Dict:
                                    'theorem; OPEN until executed'),
         'pair_cap': enstrophy_cap_pair(),
     }
+
+
+# ---- B270 (PAPER_2265): THE L_BUOY VARIATIONAL DERIVATION OF THE CAP -----
+def l_buoy_cap_derivation() -> Dict:
+    """THE CAP, DERIVED MODULO ONE NAMED LEMMA (B270, Daniel's session
+    order). Chain: (1) PAPER_1065 variational EOM has exactly three
+    force terms - gravity seed, buoyancy pair, phonon: produce, remove,
+    drain. (2) PAPER_1203 canonical forms: F_UBi carries (1+F_TRZ),
+    F_UBii carries k_spring*(1+E_n) with NO TRZ factor - at the balance
+    zone the surplus per unit of balanced push is EXACTLY F_TRZ.
+    (3) The surplus is TRZ-carried (PAPER_072: F_TRZ = fraction of
+    channel energy entering the time-reversal zone) and the TRZ removes
+    exactly that fraction from a propagating channel (PAPER_009:
+    D_TRZ = 0.900 canonical); during the TRZ sub-cycle the (2R-1)
+    polarity is negative (PAPER_884/899) - the surplus opposes
+    stretching. (4) BRIDGE LEMMA (the one OPEN step): the surplus
+    enters stretching through the D_BSFG transverse bulk-edge modes
+    (PAPER_1182's own feedback statement) with projection weight
+    D_BSFG/D_phys = 3/2 (PAPER_1962; the 26->10->6->4 flow of
+    PAPER_1160) - asserted by 1182, ratio canonized by 1962, the
+    mode-counting derivation of the WEIGHT itself is OPEN. (5) Removal
+    = F_TRZ*(3/2) = 3/20; cap = 17/20; the 3/20 exits via g_phonon
+    (the EOM's own third term - the 1.25 THz LENR carrier), closing
+    PAPER_2098's 17/20 + 3/20 = 1. DISCRIMINATION: rival coefficients
+    1-F_TRZ = 0.90 (bare) and (1-F_TRZ)^2 = 0.81 (quadratic) are
+    ELIMINATED - only the projected-linear form lands on the canonical
+    cap. In-medium (B112, one F_TRZ eaten): 197/200."""
+    surplus = F_TRZ
+    projection = D_BSFG / D_PHYS
+    # exact integer-ratio composition (F_TRZ = 1/SO_5, PAPER_1160):
+    removal = D_BSFG / (D_PHYS * SO_5)                    # 6/40 = 3/20
+    cap = (D_PHYS * SO_5 - D_BSFG) / (D_PHYS * SO_5)      # 34/40 = 17/20
+    in_medium = ((D_PHYS * SO_5 ** 2 - D_BSFG)
+                 / (D_PHYS * SO_5 ** 2))                  # 394/400 = 197/200
+    return {
+        'eom_terms': ('r-ddot = -mu_s*grad(M_s/r) + g_buoy + g_phonon '
+                      '(PAPER_1065, verbatim) - produce / remove / drain'),
+        'surplus_fraction': surplus,
+        'projection_weight': projection,
+        'removal_fraction': removal,
+        'cap_derived': cap,
+        'cap_canonical_match': cap == 17.0 / 20.0,
+        'in_medium_cap': in_medium,
+        'rivals_eliminated': {'bare_trz': 1.0 - F_TRZ,
+                              'quadratic_trz': (1.0 - F_TRZ) ** 2,
+                              'note': ('0.90 and 0.81 do NOT land on the '
+                                       'canonical cap; only the '
+                                       'projected-linear form does - the '
+                                       'derivation discriminates')},
+        'bridge_lemma': ('OPEN - "the TRZ-carried surplus enters '
+                         'stretching through the transverse bulk-edge '
+                         'modes with projection weight D_BSFG/D_phys": '
+                         'PAPER_1182 asserts the combined coefficient, '
+                         'PAPER_1962 canonizes the ratio; the '
+                         'mode-counting derivation of the weight (and '
+                         'why removal acts ONCE on the production '
+                         'channel, not squared) is the single remaining '
+                         'step'),
+        'drain': ('the removed 3/20 exits via g_phonon - the 1.25 THz '
+                  'LENR carrier (omega_LENR = omega_SCm, ruled)'),
+        'status': ('DERIVED_MODULO_BRIDGE_LEMMA (B270) - upgraded from '
+                   'postulate; Clay universality (H^s/BKM) separately '
+                   'OPEN as ledgered'),
+    }
