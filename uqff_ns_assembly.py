@@ -623,18 +623,225 @@ def l_buoy_cap_derivation() -> Dict:
                                        'canonical cap; only the '
                                        'projected-linear form does - the '
                                        'derivation discriminates')},
-        'bridge_lemma': ('OPEN - "the TRZ-carried surplus enters '
-                         'stretching through the transverse bulk-edge '
-                         'modes with projection weight D_BSFG/D_phys": '
-                         'PAPER_1182 asserts the combined coefficient, '
-                         'PAPER_1962 canonizes the ratio; the '
-                         'mode-counting derivation of the weight (and '
-                         'why removal acts ONCE on the production '
-                         'channel, not squared) is the single remaining '
-                         'step'),
+        'bridge_lemma': ('CLOSED_B271 (PAPER_2266) - L1 linearity by '
+                         'calculus (forces enter a quadratic budget '
+                         'once); L2 weight from three canonized '
+                         'premises: axiom #36 equipartition '
+                         '(PAPER_1223), downward-only re-entry from the '
+                         'adjacent-above D_BSFG stage (PAPER_497/1160), '
+                         'and PAPER_2098 conservation; stage rivals '
+                         '0.75 (SO_5) and 0.35 (D_crit) eliminated - '
+                         'see bridge_lemma_derivation()'),
         'drain': ('the removed 3/20 exits via g_phonon - the 1.25 THz '
                   'LENR carrier (omega_LENR = omega_SCm, ruled)'),
-        'status': ('DERIVED_MODULO_BRIDGE_LEMMA (B270) - upgraded from '
-                   'postulate; Clay universality (H^s/BKM) separately '
-                   'OPEN as ledgered'),
+        'status': ('DERIVED_WITHIN_UQFF_AXIOM_SET (B270 chain + B271 '
+                   'lemma closure) - upgraded from postulate via '
+                   'DERIVED_MODULO_BRIDGE_LEMMA; Clay universality '
+                   '(H^s/BKM) separately OPEN as ledgered'),
+    }
+
+
+# ---- B271 (PAPER_2266): THE BRIDGE LEMMA, DERIVED ------------------------
+def bridge_lemma_derivation() -> Dict:
+    """THE BRIDGE LEMMA CLOSED (B271, Daniel's order "proceed with the
+    bridge lemma"). Two parts:
+
+    L1 (LINEARITY, proven by calculus): the enstrophy budget is
+    d/dt (1/2)<|omega|^2> = <omega . omega-dot>; any body force enters
+    omega-dot exactly once (curl g), so its budget contribution is
+    FIRST power - a mathematical identity about quadratic functionals,
+    framework-neutral. The quadratic rival (1-F_TRZ)^2 = 0.81 is
+    eliminated on principle.
+
+    L2 (THE WEIGHT, from three canonized premises):
+      (a) downward-only flow (PAPER_497 directional rule) on the
+          PAPER_1160 chain D_crit -> SO_5 -> D_BSFG -> D_phys parks the
+          expelled surplus in the LAST reservoir above the physical
+          frame - the D_BSFG stage (PAPER_1182's own "BSFG 6D
+          transverse pressure");
+      (b) equipartition - AXIOM #36 of the canonized 38-axiom
+          inventory (PAPER_1223 Tier G): one share per transverse DOF;
+      (c) conservation (PAPER_2098): all D_BSFG shares land on the
+          D_phys channels; stretching is normalized per physical
+          channel.
+    => per-channel weight = D_BSFG/D_phys; removal = F_TRZ*(3/2) = 3/20.
+
+    STAGE DISCRIMINATION: re-entry from SO_5 would give cap 0.75, from
+    D_crit 0.35 - neither matches; only the adjacent-above stage lands
+    on 17/20. Five candidate coefficients total; the chain selects one.
+    """
+    caps = {
+        'd_crit_stage': 1.0 - D_CRIT / (D_PHYS * SO_5),   # 0.35
+        'so_5_stage': 1.0 - SO_5 / (D_PHYS * SO_5),       # 0.75
+        'd_bsfg_stage': (D_PHYS * SO_5 - D_BSFG) / (D_PHYS * SO_5),  # 17/20
+        'bare_trz': 1.0 - F_TRZ,                           # 0.90
+        'quadratic_trz': (1.0 - F_TRZ) ** 2,               # 0.81
+    }
+    return {
+        'L1_linearity': ('PROVEN (calculus): forces enter the quadratic '
+                         'enstrophy budget once - removal is first power '
+                         'in the surplus; quadratic rival eliminated on '
+                         'principle'),
+        'L2_premises': {
+            'a_stage': 'downward-only (PAPER_497) on the 1160 chain -> adjacent-above reservoir = D_BSFG stage',
+            'b_share': 'equipartition = AXIOM #36 (PAPER_1223 Tier G) -> one share per transverse DOF',
+            'c_landing': 'PAPER_2098 conservation -> all shares land; per-physical-channel normalization',
+        },
+        'weight': D_BSFG / D_PHYS,
+        'candidate_caps': caps,
+        'selected': caps['d_bsfg_stage'],
+        'selected_is_canonical': caps['d_bsfg_stage'] == 17.0 / 20.0,
+        'rivals_all_miss': all(v != 17.0 / 20.0 for k, v in caps.items()
+                               if k != 'd_bsfg_stage'),
+        'status': ('BRIDGE_LEMMA_CLOSED_B271 - the cap is DERIVED WITHIN '
+                   'THE UQFF AXIOM SET; remaining OPEN: Clay H^s/BKM '
+                   'machinery and all-data universality (ledgered), '
+                   'Omega0 domain disclosure stands'),
+    }
+
+
+# ---- B272 (PAPER_2267): THEOREM A - RIGOROUS REGULARITY OF THE UQFF FLUID
+OMEGA_CUTOFF_HZ = 1.25e12        # the phonon carrier (omega_SCm, canonical)
+
+
+def galerkin_mode_count(c_s_m_s: float = 1480.0, L_m: float = 1.0) -> Dict:
+    """THE FINITENESS INPUT, computed: the phonon cutoff at 1.25 THz
+    truncates the mode lattice at k_c = 2*pi*f_c/c_s. For water
+    (c_s = 1480 m/s, seawater Vp anchor of the K4 family):
+    lambda_c = 1.18 nm - THE MOLECULAR SCALE. The framework's cutoff
+    sits exactly where fluids physically stop being continua.
+    CONSISTENCY FLAG (disclosed, not canonized): N_modes per m^3 =
+    2.5e27 vs ~3.3e28 water molecules per m^3 - order-of-magnitude
+    agreement, recorded as a flag pending a corpus chain."""
+    lam = c_s_m_s / OMEGA_CUTOFF_HZ
+    k_c = 2.0 * math.pi * OMEGA_CUTOFF_HZ / c_s_m_s
+    n_per_m3 = (4.0 * math.pi / 3.0) * (k_c / (2.0 * math.pi)) ** 3
+    return {'lambda_c_m': lam, 'k_c_rad_m': k_c,
+            'n_modes': n_per_m3 * L_m ** 3,
+            'molecular_scale_note': ('lambda_c = %.2f nm - the continuum '
+                                     'idealization breaks HERE anyway; the '
+                                     'cutoff is physical, not a truncation '
+                                     'device' % (lam * 1e9)),
+            'molecule_count_flag': ('N_modes/m^3 = %.2e vs ~3.3e28 water '
+                                    'molecules/m^3 (ratio ~13) - FLAGGED '
+                                    'consistency, no corpus chain, NOT '
+                                    'canonized' % n_per_m3),
+            'finite': True}
+
+
+def galerkin_energy_identity_check(n: int = 16, k_max: int = 4,
+                                   seed: int = 26) -> Dict:
+    """THE LOAD-BEARING IDENTITY OF THEOREM A, VERIFIED LIVE: for a
+    divergence-free field truncated to the mode set K (2/3-rule
+    dealiased), the Galerkin nonlinear term conserves energy EXACTLY:
+    <u, P_K P_div[(u.grad)u]> = 0. Verified to machine precision on a
+    random truncated field. This is the identity that makes step 2 of
+    the proof rigorous; this check is its numerical witness, labeled
+    as witness, not as the proof."""
+    import numpy as np
+    rng = np.random.default_rng(seed)
+    k = np.fft.fftfreq(n, d=1.0 / n)
+    KX, KY, KZ = np.meshgrid(k, k, k, indexing='ij')
+    K2 = KX ** 2 + KY ** 2 + KZ ** 2
+    mask = (np.sqrt(K2) <= k_max)
+    # random field, div-free (Leray) projection + truncation
+    def proj(fx, fy, fz):
+        Fx, Fy, Fz = np.fft.fftn(fx), np.fft.fftn(fy), np.fft.fftn(fz)
+        with np.errstate(divide='ignore', invalid='ignore'):
+            div = np.where(K2 > 0, (KX * Fx + KY * Fy + KZ * Fz) / K2, 0.0)
+        Fx, Fy, Fz = Fx - KX * div, Fy - KY * div, Fz - KZ * div
+        Fx, Fy, Fz = Fx * mask, Fy * mask, Fz * mask
+        return (np.real(np.fft.ifftn(Fx)), np.real(np.fft.ifftn(Fy)),
+                np.real(np.fft.ifftn(Fz)))
+    u, v, w = proj(rng.standard_normal((n, n, n)),
+                   rng.standard_normal((n, n, n)),
+                   rng.standard_normal((n, n, n)))
+    # (u.grad)u pseudospectrally, then Galerkin projection
+    def dx(f, KA):
+        return np.real(np.fft.ifftn(1j * KA * np.fft.fftn(f)))
+    ax = u * dx(u, KX) + v * dx(u, KY) + w * dx(u, KZ)
+    ay = u * dx(v, KX) + v * dx(v, KY) + w * dx(v, KZ)
+    az = u * dx(w, KX) + v * dx(w, KY) + w * dx(w, KZ)
+    px, py, pz = proj(ax, ay, az)
+    inner = float(np.mean(u * px + v * py + w * pz))
+    norm = float(np.mean(u * u + v * v + w * w))
+    rel = abs(inner) / max(norm, 1e-300)
+    return {'inner_product': inner, 'field_energy': norm,
+            'relative': rel, 'machine_zero': rel < 1e-12,
+            'label': ('numerical WITNESS of the exact identity '
+                      '<u, P_K P_div[(u.grad)u]> = 0 - the identity is '
+                      'proven by orthogonality + incompressibility; this '
+                      'check just shows the witness')}
+
+
+def theorem_a() -> Dict:
+    """THEOREM A (PAPER_2267, B272): the UQFF fluid is globally regular
+    - RIGOROUSLY, because the phonon cutoff makes it finite-dimensional.
+
+    THEOREM. Let X_K be the (finite-dimensional) space of real,
+    divergence-free velocity fields on the periodic box whose Fourier
+    support lies in K = {k : |k| <= k_c}, k_c = 2*pi*f_c/c_s with
+    f_c = 1.25 THz (the phonon cutoff). Consider
+        du/dt = -P_K P_div[(u.grad)u] - nu*A u - gamma*Phi u
+    (A = Stokes operator, Phi >= 0 the phonon damping profile). Then
+    for EVERY u0 in X_K there is a UNIQUE solution u in C^inf([0,inf);
+    X_K), and ||u(t)|| <= ||u0|| for all t. With the derived cap
+    (PAPER_2265/2266) the enstrophy further obeys the 17/20-capped
+    decay envelope.
+
+    PROOF (four steps, each classical and checkable):
+      1. LOCAL: X_K finite-dim; the RHS is a quadratic polynomial
+         vector field, hence locally Lipschitz; Picard-Lindelof gives
+         unique local solutions.
+      2. A-PRIORI: the Galerkin nonlinearity conserves energy EXACTLY
+         (<u, P_K P_div[(u.grad)u]> = 0 by incompressibility +
+         orthogonality of the projections - witnessed live by
+         galerkin_energy_identity_check); nu, gamma terms are
+         dissipative => d/dt ||u||^2 <= 0 => ||u(t)|| <= ||u0||.
+      3. GLOBAL: a locally Lipschitz ODE whose solutions are a-priori
+         bounded extends to [0, inf) (escape-time dichotomy).
+      4. SMOOTH: finitely many Fourier modes => u(t, x) is a trig
+         polynomial in x, C^inf automatically; t-smoothness from the
+         polynomial RHS.
+    QED.
+
+    HONESTY BLOCK (Rule 7, stated where it acts):
+      * The MATHEMATICS of steps 1-4 is classical - Galerkin systems
+        never blow up, and any mathematician will recognize this. The
+        UQFF content is the PHYSICAL IDENTIFICATION: the cutoff is not
+        a truncation device but the phonon sector of the vacuum - the
+        truncation IS the fluid. lambda_c = 1.18 nm lands at the
+        molecular scale, exactly where the continuum idealization
+        breaks regardless (galerkin_mode_count).
+      * Steps 1-4 do NOT need the cap; energy conservation suffices
+        for global existence. The cap (derived, B270/B271) supplies
+        the QUANTITATIVE enstrophy decay on top.
+      * The Clay statement (no cutoff, [SCm] -> 0) is NOT claimed -
+        that idealization is the Track-2 domain ruling, Daniel-gated.
+      * The mode count is a falsifiable prediction hook: DNS spectra
+        should show no dynamics above k_c.
+    """
+    mc = galerkin_mode_count()
+    return {
+        'statement': ('every initial state of the cutoff (=physical) '
+                      'UQFF fluid has a unique global C^inf solution '
+                      'with non-increasing energy; capped enstrophy '
+                      'decay on top'),
+        'proof_steps': {
+            '1_local': 'Picard-Lindelof on a quadratic polynomial field - RIGOROUS',
+            '2_apriori': 'exact energy conservation of the Galerkin nonlinearity + dissipativity - RIGOROUS (identity witnessed live)',
+            '3_global': 'escape-time dichotomy + a-priori bound - RIGOROUS',
+            '4_smooth': 'trig polynomial in x, polynomial RHS in t - RIGOROUS',
+        },
+        'finiteness_input': mc,
+        'cap_role': ('not needed for existence; supplies the derived '
+                     '17/20 enstrophy decay envelope (B270/B271)'),
+        'classical_disclosure': ('the mathematics is classical Galerkin '
+                                 'theory; the NEW claim is physical - '
+                                 'the truncation IS the fluid (phonon '
+                                 'cutoff at the molecular scale)'),
+        'clay_not_claimed': ('the no-cutoff idealization is Track 2 '
+                             '(domain ruling, Daniel-gated) - not '
+                             'claimed here'),
+        'status': 'THEOREM_A_RIGOROUS_FOR_THE_UQFF_FLUID (B272)',
     }

@@ -181,3 +181,5 @@ NSASSEMBLY_ARC,band v0.429.0,RULED,B267 (the evaluator wire order),no,the evalua
 NSASSEMBLY_ARC_B268,band v0.429.0,RULED,B268 (tier 1 then 2 then 3),no,the riddle answered in code - what can be drawn is drawn and what cannot says why in its own label
 BALANCEZONE_ARC_B269,band v0.430.0,RULED,B269 (canonize chain + pair-cap),no,Daniels direction assembled joint by joint - and the missing theorem now has a named road
 CAPLEMMA_ARC,band v0.431.0,RULED,B270 (canonize; bridge lemma OPEN),no,the road named in B269 walked in B270 - and the derivation eliminated its own rivals
+LEMMACLOSED_ARC,band v0.432.0,RULED,B271 (canonize),no,the one named step walked - and the chain eliminated four rivals on the way
+LEMMACLOSED_ARC_B272,band v0.432.0,RULED,B272 (Track 1),no,the rigorous rung - and the cutoff lands at the molecular scale where continuum fluids end anyway

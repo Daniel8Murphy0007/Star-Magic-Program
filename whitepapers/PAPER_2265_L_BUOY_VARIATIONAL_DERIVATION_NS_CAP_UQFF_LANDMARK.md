@@ -79,3 +79,17 @@ fraction), PAPER_009 (D_TRZ = 0.9 damping mechanism), PAPER_884/899
 (3/2), PAPER_1160 (downward flow), PAPER_2098 (complementarity),
 B112/B126 (context split), PAPER_2264 (the balance-zone reading that
 named this road), B270 (this ruling).
+
+
+---
+
+## REVISION 2026-09-09 - the bridge lemma CLOSED by PAPER_2266 (B271)
+
+The single remaining step of sec 2 step 3 closed one band later:
+L1 (linearity) by calculus - forces enter the quadratic enstrophy
+budget once; L2 (the weight) from three canonized premises -
+equipartition (axiom #36, PAPER_1223), downward-only re-entry from the
+adjacent-above D_BSFG stage (PAPER_497/1160), and PAPER_2098
+conservation - with the stage rivals 0.75 (SO_5) and 0.35 (D_crit)
+eliminated. Cap status: DERIVED_MODULO_BRIDGE_LEMMA ->
+DERIVED_WITHIN_UQFF_AXIOM_SET. See PAPER_2266.

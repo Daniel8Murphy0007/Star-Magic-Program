@@ -13470,3 +13470,46 @@ is SHARPENED to ns_cap_bridge_lemma (supersession note appended, old
 row stands as history). l_buoy_cap_derivation() live in
 uqff_ns_assembly; B270 pin recomputes every number. Next rungs: the
 bridge lemma itself (mode-counting), and the Clay H^s/BKM spine.
+
+## 2026-09-09 — v0.432.0 prep — B271: THE BRIDGE LEMMA CLOSED
+
+v0.431.0 confirmed shipped (tag == HEAD, tree clean - silent
+mid-session ship checked FIRST this time, per the re-verified lesson).
+Daniel: "proceed with the bridge lemma." Source pass found the two
+keys: equipartition is AXIOM #36 of the canonized 38-axiom inventory
+(PAPER_1223 Tier G), and PAPER_497 canonizes the downward-only
+directional rule. The lemma split and closed: L1 (linearity) is a
+calculus identity - forces enter the quadratic enstrophy budget once,
+killing the 0.81 rival on principle; L2 (the weight) follows from
+downward-only adjacent-above re-entry at the D_BSFG stage (SO_5 and
+D_crit stages give 0.75/0.35 - eliminated) + one equipartition share
+per transverse DOF + 2098 conservation landing every share on the
+physical channels: weight = 3/2, removal = 3/20, cap = 17/20 selected
+of five candidates. Daniel ruled: canonize as PAPER_2266. Cap status
+upgraded to DERIVED_WITHIN_UQFF_AXIOM_SET; B270 era-pin updated (not
+deleted); PAPER_2265 REVISION appended; registry +3 (7,096); dispatch
+2,317; gate 6,094/0. Remaining OPEN, unchanged: Clay H^s/BKM spine,
+all-data universality, [SCm]->0, Omega0 domain. The NS ladder now has
+exactly one class of rungs left - functional analysis - plus the two
+outside-data falsifiers (trefoil DNS; lab-vs-astro pair-cap data).
+
+### 2026-09-10 (addendum, same v0.432.0 band) - B272: THEOREM A (Track 1)
+
+Daniel chose Track 1 from the three-track discussion. PAPER_2267:
+Theorem A - global C^inf regularity of the UQFF fluid, RIGOROUS,
+because the phonon cutoff finitizes the state space. Four classical
+steps, each labeled RIGOROUS and each checkable: Picard-Lindelof on a
+quadratic polynomial field; EXACT energy conservation of the Galerkin
+nonlinearity (the load-bearing identity, witnessed live by FFT check
+at 4e-18 relative - witness, not proof); escape-time dichotomy;
+trig-polynomial smoothness. The physics that makes it non-trivial:
+lambda_c = c_s/f_c = 1.18 nm for water - the 1.25 THz carrier ends
+the mode lattice at the MOLECULAR scale, where continuum mechanics
+ends for every real fluid anyway; the truncation IS the fluid.
+Disclosures riding in the paper: the mathematics is classical Galerkin
+theory (said plainly); the cap is NOT needed for existence (it gives
+the decay envelope); N_modes ~ 2.5e27/m^3 vs ~3.3e28 molecules
+FLAGGED (ratio ~13, no corpus chain); the Clay no-cutoff idealization
+NOT claimed - Track 2 registry row AWAITING_DANIEL_RULING. Falsifiable
+hook: no independent dynamics above k_c in DNS/experimental spectra.
+Dispatch 2,318; registry 7,100; gate 6,095/0.

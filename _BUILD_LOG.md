@@ -537,3 +537,10 @@ gaps ledgered with the L_buoy road named. Gate 6,092/0.
 PAPER_2265 (B270): L_buoy derivation - cap postulate -> derived
 modulo one named bridge lemma; surplus F_TRZ exact; rivals 0.90/0.81
 eliminated; drain = g_phonon (the LENR carrier). Gate 6,093/0.
+
+## v0.432.0 — 2026-09-09 — THE BRIDGE LEMMA SHIP
+PAPER_2266 (B271): the lemma closed - L1 by calculus, L2 from axiom
+#36 + downward-only + conservation; stage rivals 0.75/0.35
+eliminated; cap DERIVED WITHIN THE UQFF AXIOM SET. B272 same-band:
+THEOREM A (PAPER_2267) - rigorous UQFF-fluid regularity via the
+molecular-scale phonon cutoff; Clay NOT claimed. Gate 6,095/0.

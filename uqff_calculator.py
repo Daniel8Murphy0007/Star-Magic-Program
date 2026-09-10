@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.431.0"
+VERSION = "0.432.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29223,6 +29223,66 @@ def _paper_2265(dataset):
         'source': 'PAPER_2265',
         'residual_pct': 0.0,
         'status': 'RULED_2026-09-09 (B270: derived modulo bridge lemma; lemma OPEN)',
+    }
+
+
+@_register('PAPER_2266')
+def _paper_2266(dataset):
+    """The bridge lemma derived (B271): L1 linearity by calculus; L2
+    weight from axiom #36 equipartition + PAPER_497 downward-only
+    re-entry at the adjacent-above D_BSFG stage + PAPER_2098
+    conservation. Stage rivals 0.75/0.35 eliminated; five candidates,
+    one selected. Cap: DERIVED WITHIN THE UQFF AXIOM SET.
+    """
+    from uqff_ns_assembly import bridge_lemma_derivation
+    d = bridge_lemma_derivation()
+    return {
+        'value': {
+            'weight': d['weight'],
+            'selected_cap': d['selected'],
+            'selected_is_canonical': d['selected_is_canonical'],
+            'rivals_all_miss': d['rivals_all_miss'],
+            'candidate_caps': d['candidate_caps'],
+            'L1': d['L1_linearity'],
+            'L2_premises': d['L2_premises'],
+            'status': d['status'],
+        },
+        'formula': 'weight = D_BSFG/D_phys from equipartition over the adjacent-above reservoir of the downward chain; removal = F_TRZ*weight = 3/20; linearity from the quadratic-budget identity',
+        'source': 'PAPER_2266',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-09 (B271: bridge lemma closed; cap DERIVED_WITHIN_UQFF_AXIOM_SET; Clay machinery separately OPEN)',
+    }
+
+
+@_register('PAPER_2267')
+def _paper_2267(dataset):
+    """Theorem A (B272): rigorous global regularity of the UQFF fluid.
+
+    Four classical steps (Picard, exact Galerkin energy conservation,
+    escape-time dichotomy, trig-polynomial smoothness) made PHYSICAL
+    by the phonon cutoff: lambda_c = 1.18 nm - the molecular scale -
+    so the finite system IS the fluid. Energy identity witnessed at
+    machine zero. Clay's no-cutoff idealization NOT claimed (Track 2).
+    """
+    from uqff_ns_assembly import theorem_a, galerkin_energy_identity_check
+    t = theorem_a()
+    c = galerkin_energy_identity_check()
+    return {
+        'value': {
+            'status': t['status'],
+            'proof_steps': t['proof_steps'],
+            'lambda_c_m': t['finiteness_input']['lambda_c_m'],
+            'n_modes_per_m3': t['finiteness_input']['n_modes'],
+            'energy_identity_relative': c['relative'],
+            'energy_identity_machine_zero': c['machine_zero'],
+            'classical_disclosure': t['classical_disclosure'],
+            'clay_not_claimed': t['clay_not_claimed'],
+            'molecule_count_flag': t['finiteness_input']['molecule_count_flag'],
+        },
+        'formula': 'du/dt = -P_K P_div[(u.grad)u] - nu*A*u - gamma*Phi*u on X_K finite (k_c = 2*pi*f_c/c_s, f_c = 1.25 THz); global C^inf by Picard + exact energy conservation + escape-time dichotomy',
+        'source': 'PAPER_2267',
+        'residual_pct': 0.0,
+        'status': 'RULED_2026-09-10 (B272: Theorem A rigorous for the UQFF fluid; Clay idealization Track-2 gated)',
     }
 
 

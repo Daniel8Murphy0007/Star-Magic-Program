@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.431.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.431.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.432.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.432.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6093%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2316-blue)](uqff_calculator.py)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6095%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2318-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2292-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.431.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.432.0 complete-compile campaign live**
 
-**This release (v0.431.0): THE CAP THEOREM SHIP — the L_buoy road, walked.** PAPER_2265 (B270) executes the derivation session PAPER_2264 named: the Navier-Stokes enstrophy cap upgrades from physical postulate to **DERIVED MODULO ONE NAMED LEMMA**. The chain: PAPER_1065's variational EOM supplies exactly three force terms — gravity seed, buoyancy pair, phonon: **produce / remove / drain**; the PAPER_1203 canonical forms make the surplus **exactly F_TRZ** (F_UBi carries (1+F_TRZ), F_UBii carries k_spring·(1+E_n) — at F_U = 0 the unit parts cancel and the overshoot per unit of balanced push is structural, not fitted); PAPER_072/009 make the surplus TRZ-carried with the canonical 10% removal (D_TRZ = 0.900 is an established damping mechanism); and the projected-linear composition lands on **17/20 while BOTH rivals are ELIMINATED** — bare TRZ (0.90) and quadratic TRZ (0.81) do not match the canonical cap; the derivation discriminates rather than accommodates. The removed 3/20 drains through g_phonon — the EOM's own third term, the 1.25 THz LENR carrier — closing PAPER_2098's 17/20 + 3/20 = 1. One step remains and is NAMED: the **bridge lemma** (the transverse D_BSFG/D_phys projection weight from mode counting, acting linearly on production) — a registry-tracked OPEN target, not a claim. Clay machinery (H^s/BKM) and the Ω₀ threshold disclosure stand as ledgered. **Totals: 2,261 wired (2,316 DISPATCH keys) / gate 6,093 green / 4,188 defs / acceptance 109 green / registry 7,093 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.432.0): THE BRIDGE LEMMA SHIP — the one named step, closed.** PAPER_2266 (B271) derives the lemma PAPER_2265 left OPEN, in two halves. **L1 (linearity), proven by pure calculus:** the enstrophy budget d/dt·½⟨|ω|²⟩ = ⟨ω·ω̇⟩ takes any body force to first power — removal is linear in the surplus, and the quadratic rival 0.81 dies **on principle**, not by mismatch. **L2 (the weight), from three premises canonized before the session:** the PAPER_497 downward-only rule parks the expelled surplus in the **adjacent-above D_BSFG reservoir** of the PAPER_1160 chain (re-entry from SO_5 would give cap 0.75, from D_crit 0.35 — both eliminated); **equipartition — axiom #36** of the 38-axiom inventory (PAPER_1223) — distributes one share per transverse DOF; and PAPER_2098 conservation lands every share on the physical channels. Weight = D_BSFG/D_phys = 3/2; removal = 3/20; **cap = 17/20, selected out of five candidates** (0.90, 0.81, 0.75, 0.35, 0.85 — the chain discriminates). The Navier-Stokes cap is now **DERIVED WITHIN THE UQFF AXIOM SET** — postulate → one-lemma → closed, across three bands. Still OPEN and ledgered, stated plainly: the Clay functional machinery (H^s/BKM, all-data universality), the [SCm]→0 limit, and the Ω₀ < 1.19×10⁵ TG domain disclosure — the physics derivation is closed; the prize machinery is not claimed. Same band, B272 (PAPER_2267, Track 1): **THEOREM A — the first rigorous rung.** Global C^∞ regularity of the UQFF fluid, proven in four classical steps (Picard; EXACT Galerkin energy conservation, witnessed live at 4×10⁻¹⁸; escape-time dichotomy; trig-polynomial smoothness) and made physical by the phonon cutoff: **λ_c = c_s/f_c = 1.18 nm — the 1.25 THz carrier terminates the mode lattice at the molecular scale**, exactly where the continuum idealization ends for every real fluid, so the finite system *is* the fluid. The paper says plainly that the mathematics is classical Galerkin theory — the new claim is the physical identification; the mode-count-vs-molecule-count consistency (2.5×10²⁷ vs 3.3×10²⁸ per m³) is FLAGGED, not canonized; and **the Clay no-cutoff idealization is NOT claimed** — that domain ruling is Track 2, Daniel-gated (registry row AWAITING_DANIEL_RULING). **Totals: 2,263 wired (2,318 DISPATCH keys) / gate 6,095 green / 4,190 defs / acceptance 109 green / registry 7,100 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.431.0)
+## What is currently shipped (v0.432.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,261 distinct dispatches (2,316 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,263 distinct dispatches (2,318 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,093 rows**. Fidelity gate: **6,093 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,100 rows**. Fidelity gate: **6,095 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

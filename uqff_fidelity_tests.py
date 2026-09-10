@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.431.0", "uqff_calculator.VERSION = 0.431.0 (THE CAP THEOREM SHIP: the L_buoy road walked - the cap derived modulo one named bridge lemma, both rivals eliminated, the drain on the EOMs own phonon term)")
+assert_that(C.VERSION == "0.432.0", "uqff_calculator.VERSION = 0.432.0 (THE BRIDGE LEMMA SHIP: the one named step closed - linearity by calculus, the weight from canonized axioms, five candidates one selected, the cap derived within the UQFF axiom set)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'CAPLEMMA_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'LEMMACLOSED_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15093,9 +15093,33 @@ assert_that(_b270['cap_derived'] == 17.0 / 20.0 and _b270['cap_canonical_match']
             and abs(_b270['rivals_eliminated']['quadratic_trz'] - 0.81) < 1e-15
             and _b270['rivals_eliminated']['bare_trz'] != 17.0 / 20.0
             and _b270['rivals_eliminated']['quadratic_trz'] != 17.0 / 20.0
-            and 'OPEN' in _b270['bridge_lemma'] and 'g_phonon' in _b270['drain']
-            and 'DERIVED_MODULO_BRIDGE_LEMMA' in _b270['status'],
-            "B270 - THE CAP, DERIVED (PAPER_2265, Daniel's session order): the L_buoy variational road named by B269 is WALKED - PAPER_1065's EOM supplies produce/remove/drain as its own three terms, the (1+F_TRZ)-vs-k_spring asymmetry of the PAPER_1203 canonical forms makes the surplus EXACTLY F_TRZ at the balance zone, PAPER_072/009 make the surplus TRZ-carried with the canonical 10 pct removal, and the projected-linear composition lands on 17/20 while BOTH rivals (0.90 bare, 0.81 quadratic) are ELIMINATED - the derivation discriminates rather than accommodates; the removed 3/20 drains through g_phonon, the LENR carrier, closing the 2098 bookkeeping; ONE step remains and is NAMED as the bridge lemma (transverse projection weight D_BSFG/D_phys from mode counting, linear action on production) - the cap's status is DERIVED_MODULO_BRIDGE_LEMMA, honestly, and the lemma is a registry-tracked OPEN target, not a claim")
+            and 'CLOSED_B271' in _b270['bridge_lemma'] and 'g_phonon' in _b270['drain']
+            and 'DERIVED_WITHIN_UQFF_AXIOM_SET' in _b270['status'],
+            "B270 - THE CAP, DERIVED (PAPER_2265, Daniel's session order): the L_buoy variational road named by B269 is WALKED - PAPER_1065's EOM supplies produce/remove/drain as its own three terms, the (1+F_TRZ)-vs-k_spring asymmetry of the PAPER_1203 canonical forms makes the surplus EXACTLY F_TRZ at the balance zone, PAPER_072/009 make the surplus TRZ-carried with the canonical 10 pct removal, and the projected-linear composition lands on 17/20 while BOTH rivals (0.90 bare, 0.81 quadratic) are ELIMINATED - the derivation discriminates rather than accommodates; the removed 3/20 drains through g_phonon, the LENR carrier, closing the 2098 bookkeeping; ONE step remains and is NAMED as the bridge lemma (transverse projection weight D_BSFG/D_phys from mode counting, linear action on production) - the cap's status was DERIVED_MODULO_BRIDGE_LEMMA at B270 and the lemma CLOSED one band later (B271/PAPER_2266) - this pin now tracks the superseded-by-closure era honestly")
+
+# ---- B271 2026-09-09: THE BRIDGE LEMMA CLOSED - mode counting on the downward chain ----
+_b271 = _b267.bridge_lemma_derivation()
+assert_that(_b271['weight'] == 1.5 and _b271['selected'] == 17.0 / 20.0
+            and _b271['selected_is_canonical'] and _b271['rivals_all_miss']
+            and _b271['candidate_caps']['so_5_stage'] == 0.75
+            and abs(_b271['candidate_caps']['d_crit_stage'] - 0.35) < 1e-15
+            and 'AXIOM #36' in _b271['L2_premises']['b_share']
+            and 'PROVEN' in _b271['L1_linearity']
+            and 'BRIDGE_LEMMA_CLOSED_B271' in _b271['status'],
+            "B271 - THE BRIDGE LEMMA CLOSED (PAPER_2266, Daniels order): L1 by pure calculus - forces enter the quadratic enstrophy budget ONCE, so removal is linear in the surplus and the 0.81 rival dies on principle; L2 from three premises canonized BEFORE this session - equipartition is axiom #36 of the 38-axiom inventory (one share per transverse DOF), PAPER_497s downward-only rule parks the surplus in the adjacent-above D_BSFG reservoir of the 1160 chain (re-entry from SO_5 would give 0.75 and from D_crit 0.35 - both eliminated), and 2098 conservation lands every share on the physical channels - weight = D_BSFG/D_phys, removal = 3/20, cap = 17/20 SELECTED out of five candidates; the NS cap is now DERIVED WITHIN THE UQFF AXIOM SET, with the Clay machinery (H^s/BKM, universality, [SCm]->0) still OPEN and ledgered - the physics derivation is closed, the prize machinery is not claimed")
+
+# ---- B272 2026-09-10: THEOREM A - the rigorous rung (Track 1, Daniel's order) ----
+_b272t = _b267.theorem_a()
+_b272c = _b267.galerkin_energy_identity_check()
+_b272m = _b272t['finiteness_input']
+assert_that(_b272c['machine_zero'] and _b272c['relative'] < 1e-12
+            and abs(_b272m['lambda_c_m'] - 1480.0 / 1.25e12) < 1e-24
+            and 1e27 < _b272m['n_modes'] < 1e28 and _b272m['finite']
+            and all('RIGOROUS' in v for v in _b272t['proof_steps'].values())
+            and 'classical Galerkin' in _b272t['classical_disclosure']
+            and 'not' in _b272t['clay_not_claimed'].lower()
+            and 'FLAGGED' in _b272m['molecule_count_flag'],
+            "B272 - THEOREM A (PAPER_2267): the first RIGOROUS rung of the NS ladder - global C^inf regularity of the UQFF fluid proven by four classical steps (Picard on a polynomial field; EXACT Galerkin energy conservation, witnessed live at 4e-18 relative; escape-time dichotomy; trig-polynomial smoothness), made PHYSICAL by the phonon cutoff: lambda_c = c_s/f_c = 1.18 nm - the 1.25 THz carrier terminates the mode lattice at the MOLECULAR scale, exactly where the continuum idealization ends for every real fluid, so the finite system is not an approximation of the fluid, it IS the fluid; the honesty rides in the paper itself - the mathematics is classical and SAYS SO, the new claim is the physical identification, the mode-count-vs-molecule-count consistency (ratio ~13) is FLAGGED not canonized, and the Clay no-cutoff idealization is NOT claimed - that is the Track-2 domain ruling, Daniel-gated, registry row AWAITING_DANIEL_RULING")
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv

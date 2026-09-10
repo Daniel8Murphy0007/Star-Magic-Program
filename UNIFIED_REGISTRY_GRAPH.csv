@@ -12390,3 +12390,8 @@ b112_split,PAPER_2264,YIELDS_PAIR,ns_pair_cap,two scales simultaneously - 0.85 v
 smbh_26_factorial,PAPER_2264,TWINS_WITH,ns_regularity,one no-singularity theorem at both ends of the 26-layer chain
 l_buoy_eom,PAPER_2265,DERIVES,ns_enstrophy_cap,B270: produce/remove/drain - the EOM's three terms are the chain
 rival_coefficients,PAPER_2265,ELIMINATED_BY,projected_linear_form,0.90 bare and 0.81 quadratic do not land on the canonical cap
+axiom_36_equipartition,PAPER_2266,SUPPLIES_SHARES,bridge_lemma_weight,B271: one share per transverse DOF
+downward_only_rule,PAPER_2266,FIXES_STAGE,d_bsfg_reservoir,the adjacent-above rung is the only legal re-entry
+ns_cap_bridge_lemma,PAPER_2266,CLOSES,ns_cap_theorem,the one named step - walked
+phonon_cutoff,PAPER_2267,FINITIZES,uqff_fluid_state_space,B272: 1.25 THz ends the mode lattice at the molecular scale
+theorem_a,PAPER_2267,PROVES,uqff_fluid_regularity,classical Galerkin mathematics + the physical identification

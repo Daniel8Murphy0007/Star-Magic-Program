@@ -1759,3 +1759,5 @@ NSASSEMBLY_ARC,n/a,n/a,NOT_APPLICABLE,B267 NS assembly band,v0.429.0
 NSASSEMBLY_ARC_B268,n/a,n/a,NOT_APPLICABLE,B268 three-tier addendum - same band,v0.429.0
 BALANCEZONE_ARC_B269,n/a,n/a,NOT_APPLICABLE,B269 balance-zone band,v0.430.0
 CAPLEMMA_ARC,n/a,n/a,NOT_APPLICABLE,B270 cap-derivation band,v0.431.0
+LEMMACLOSED_ARC,n/a,n/a,NOT_APPLICABLE,B271 lemma-closure band,v0.432.0
+LEMMACLOSED_ARC_B272,n/a,n/a,NOT_APPLICABLE,B272 Theorem A addendum - same band,v0.432.0

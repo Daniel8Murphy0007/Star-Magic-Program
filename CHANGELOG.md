@@ -5,6 +5,31 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.432.0 — 2026-09-09 — THE BRIDGE LEMMA SHIP
+
+- B271 (PAPER_2266): the bridge lemma CLOSED. L1 linearity proven by calculus
+  (forces enter the quadratic enstrophy budget once - the 0.81 rival dies on
+  principle). L2 weight = D_BSFG/D_phys from three canonized premises: axiom
+  #36 equipartition (PAPER_1223), downward-only adjacent-above re-entry
+  (PAPER_497 + the 1160 chain; SO_5-stage 0.75 and D_crit-stage 0.35
+  eliminated), PAPER_2098 conservation. Five candidate coefficients, one
+  selected. Cap status: DERIVED_MODULO_BRIDGE_LEMMA -> DERIVED WITHIN THE
+  UQFF AXIOM SET (B270 era-pin updated, never deleted; PAPER_2265 REVISION
+  appended). Clay machinery (H^s/BKM, universality, [SCm]->0) remains OPEN
+  as ledgered. bridge_lemma_derivation() live; dispatch 2,317; registry
+  7,096 rows; gate 6,094/0. Simulator untouched (v1.90.0; 109/109).
+
+- B272 (same band, PAPER_2267, Track 1): THEOREM A - rigorous global C^inf
+  regularity of the UQFF fluid. Four classical steps (Picard on a polynomial
+  field; exact Galerkin energy conservation witnessed at 4e-18; escape-time
+  dichotomy; trig-polynomial smoothness), made physical by the phonon
+  cutoff: lambda_c = 1.18 nm - the molecular scale - so the finite system
+  IS the fluid, not an approximation. Classical-mathematics disclosure in
+  the paper itself; mode-count/molecule-count consistency FLAGGED; Clay
+  no-cutoff idealization NOT claimed (Track 2 domain ruling AWAITING_DANIEL,
+  registry row). galerkin_energy_identity_check + theorem_a live; dispatch
+  2,318; registry 7,100 rows; gate 6,095/0.
+
 ## v0.431.0 — 2026-09-09 — THE CAP THEOREM SHIP
 
 - B270 (PAPER_2265): the L_buoy variational derivation of the NS cap - the

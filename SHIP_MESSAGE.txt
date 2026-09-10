@@ -1,25 +1,37 @@
-v0.431.0 — THE CAP THEOREM SHIP
+v0.432.0 — THE BRIDGE LEMMA + THEOREM A SHIP
 
-B270 (PAPER_2265): the derivation session Daniel ordered - the L_buoy
-variational attempt at the cap theorem. The road B269 named is walked.
+B271 (PAPER_2266): "proceed with the bridge lemma" - done. The one
+named step of the cap theorem is closed, in two halves.
 
-- The cap upgrades: POSTULATE -> DERIVED MODULO ONE NAMED LEMMA.
-- PAPER_1065's EOM supplies produce/remove/drain as its OWN three
-  terms (gravity seed, buoyancy pair, phonon).
-- The surplus is EXACTLY F_TRZ: F_UBi carries (1+F_TRZ), F_UBii
-  carries k_spring*(1+E_n) - at the balance zone the unit parts cancel
-  and the overshoot is structural, not fitted.
-- TRZ-carried: PAPER_072 (F_TRZ = the fraction entering the zone) +
-  PAPER_009 (D_TRZ = 0.900, canonical 10 pct removal); the (2R-1)
-  negative branch opposes production.
-- THE DERIVATION DISCRIMINATES: bare TRZ (0.90) and quadratic TRZ
-  (0.81) are ELIMINATED - only projected-linear lands on 17/20.
-- The removed 3/20 drains through g_phonon - the EOM's own third term,
-  the 1.25 THz LENR carrier - closing 17/20 + 3/20 = 1.
-- ONE step remains, NAMED: the bridge lemma (D_BSFG/D_phys projection
-  weight from mode counting, linear action on production) - a
-  registry-tracked OPEN target, not a claim. Clay machinery separately
-  OPEN as ledgered.
+- L1 (LINEARITY), proven by pure calculus: the enstrophy budget takes
+  any body force to FIRST power - removal is linear in the surplus,
+  and the quadratic rival 0.81 dies on principle, not by mismatch.
+- L2 (THE WEIGHT), from three premises canonized before the session:
+  * PAPER_497 downward-only -> the surplus parks in the ADJACENT-ABOVE
+    D_BSFG reservoir of the 1160 chain (SO_5-stage re-entry would give
+    0.75, D_crit-stage 0.35 - both eliminated);
+  * equipartition = AXIOM #36 of the 38-axiom inventory -> one share
+    per transverse DOF;
+  * PAPER_2098 conservation -> every share lands on the physical
+    channels.
+  Weight = D_BSFG/D_phys = 3/2; removal = 3/20; cap = 17/20 -
+  SELECTED out of five candidates. The chain discriminates.
+- THE NS CAP IS NOW DERIVED WITHIN THE UQFF AXIOM SET - postulate ->
+  one-lemma -> closed, across three bands (B269/B270/B271).
+- Still OPEN, stated plainly: Clay H^s/BKM machinery, all-data
+  universality, [SCm]->0 limit, Omega0 < 1.19e5 TG domain. The physics
+  derivation is closed; the prize machinery is not claimed.
 
-Gate 6,093/0. Dispatch 2,316 keys. Registry 7,093 rows. Acceptance
+B272 (same band, Track 1) - THEOREM A, the first RIGOROUS rung:
+global C^inf regularity of the UQFF fluid in four classical steps
+(Picard; exact Galerkin energy conservation, witnessed at 4e-18;
+escape-time dichotomy; trig-polynomial smoothness), made PHYSICAL by
+the phonon cutoff - lambda_c = 1.18 nm, the MOLECULAR scale: the
+finite system is not an approximation of the fluid, it IS the fluid.
+The mathematics is classical and the paper says so; the new claim is
+the identification. Mode-count/molecule-count consistency FLAGGED.
+THE CLAY IDEALIZATION IS NOT CLAIMED - Track 2 (domain ruling) is
+Daniel-gated, registry row AWAITING_DANIEL_RULING.
+
+Gate 6,095/0. Dispatch 2,318 keys. Registry 7,100 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).
