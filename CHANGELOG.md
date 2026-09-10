@@ -5,6 +5,20 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.433.0 — 2026-09-10 — THE DOMAIN AND PROFILE SHIP
+
+- B273 (PAPER_2268): the Clay domain ruling - the no-cutoff idealization is
+  OUTSIDE THE PHYSICAL DOMAIN (Daniel). Theorem A answers the physical
+  question; the idealization is left to mathematics (Answer-B shape, NOT
+  REPLACEMENT). Closes the AWAITING row + ns_scm_zero_limit (position a).
+- B274 (PAPER_2269): the phonon roll-off DERIVED - Gaussian envelope (two-
+  tier compliant: PAPER_910 derives Gamma = 0.1 THz AND uses the envelope),
+  Q = 25/2 = K_MEX*D_BSFG EXACT; leakage exp(-Q^2/2) ~ 1e-34 justifies the
+  Theorem A step to 34 decimals; THz-bench dip FWHM 0.235 THz predicted;
+  910-vs-896 width discrepancy FLAGGED as the bench discriminator.
+  Dispatch 2,320 keys; registry 7,104 rows; gate 6,096/0; simulator
+  untouched (v1.90.0; acceptance 109/109).
+
 ## v0.432.0 — 2026-09-09 — THE BRIDGE LEMMA SHIP
 
 - B271 (PAPER_2266): the bridge lemma CLOSED. L1 linearity proven by calculus

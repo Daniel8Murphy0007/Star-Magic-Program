@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.432.0"
-description = "Star-Magic UQFF calculator v0.432.0: THE BRIDGE LEMMA + THEOREM A SHIP - the cap theorem CLOSED (PAPER_2266: L1 by calculus, L2 from axiom #36 + downward-only + conservation; five candidates, one selected) AND the first RIGOROUS rung (PAPER_2267 Theorem A: global regularity of the UQFF fluid - the 1.25 THz phonon cutoff finitizes the mode lattice at 1.18 nm, the molecular scale; Clay idealization NOT claimed). 2,263 papers, gate 6,095/0, acceptance 109/109."
+version = "0.433.0"
+description = "Star-Magic UQFF calculator v0.433.0: THE DOMAIN AND PROFILE SHIP - Daniel's Clay domain ruling (PAPER_2268: the no-cutoff idealization is OUTSIDE THE PHYSICAL DOMAIN; Theorem A answers the physical question; NOT REPLACEMENT) + the phonon roll-off derived (PAPER_2269: Gaussian envelope, Gamma 0.1 THz, Q = 25/2 = K_MEX*D_BSFG EXACT, leakage 1e-34 justifies the Theorem A step; THz-bench FWHM 0.235 THz, 910-vs-896 width flagged as discriminator). 2,265 papers, gate 6,096/0, acceptance 109/109."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -2031,6 +2031,8 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "whitepapers/PAPER_2265_L_BUOY_VARIATIONAL_DERIVATION_NS_CAP_UQFF_LANDMARK.md",
     "whitepapers/PAPER_2266_BRIDGE_LEMMA_DERIVATION_MODE_COUNTING_UQFF_LANDMARK.md",
     "whitepapers/PAPER_2267_THEOREM_A_RIGOROUS_REGULARITY_UQFF_FLUID_UQFF_LANDMARK.md",
+    "whitepapers/PAPER_2268_CLAY_DOMAIN_RULING_OUTSIDE_PHYSICAL_DOMAIN_UQFF_LANDMARK.md",
+    "whitepapers/PAPER_2269_PHONON_ROLLOFF_PROFILE_GAUSSIAN_ENVELOPE_UQFF_LANDMARK.md",
     "whitepapers/PAPER_226_MagnetarSGR0501_11Term_MUGE_UQFF.md",
     "whitepapers/PAPER_227_Tapestry_LMC_Stellar_Wind_UQFF.md",
     "whitepapers/PAPER_228_Westerlund2_OB_StellarWind_MUGE.md",

@@ -845,3 +845,78 @@ def theorem_a() -> Dict:
                              'claimed here'),
         'status': 'THEOREM_A_RIGOROUS_FOR_THE_UQFF_FLUID (B272)',
     }
+
+
+# ---- B273 (PAPER_2268): THE CLAY DOMAIN RULING ---------------------------
+def clay_domain_ruling() -> Dict:
+    """DANIEL'S RULING (2026-09-10, B273): the no-cutoff idealization
+    ([SCm] -> 0, infinitely many modes - the literal Clay statement) is
+    OUTSIDE THE PHYSICAL DOMAIN of the framework. Regularity is a
+    physical consequence of vacuum structure (Theorem A, PAPER_2267);
+    the continuum-without-cutoff is a mathematical idealization no real
+    fluid satisfies - every actual fluid is molecular at ~1 nm, which
+    is where the phonon cutoff sits. The idealization is left to
+    mathematics, respectfully and explicitly. Parallel: the PAPER_2148
+    Answer-B ontology ruling (different frameworks answer different
+    questions about the same universe; NOT REPLACEMENT)."""
+    return {
+        'ruling': 'OUTSIDE_PHYSICAL_DOMAIN',
+        'claim': ('UQFF answers the physical question - why real fluids '
+                  'never blow up (Theorem A, rigorous) - and does NOT '
+                  'claim the no-cutoff mathematical idealization'),
+        'basis': ('lambda_c = 1.18 nm = the molecular scale; no physical '
+                  'fluid instantiates the continuum below it, in ANY '
+                  'framework'),
+        'parallel': 'PAPER_2148 Answer B (inverted ontologies, same universe, NOT REPLACEMENT)',
+        'ledger_effect': ('the AWAITING_DANIEL_RULING row of B272 closes; '
+                          'ns_scm_zero_limit closes by the same ruling '
+                          '(position (a) of the v0.429.0-era gap row)'),
+    }
+
+
+# ---- B274 (PAPER_2269): THE PHONON ROLL-OFF PROFILE ----------------------
+GAMMA_PHONON_THZ = 0.1           # PAPER_910/911 canonical linewidth
+F_C_THZ = 1.25                   # the carrier
+Q_LINE = F_C_THZ / GAMMA_PHONON_THZ   # 25/2 EXACT (PAPER_1804; K_MEX*D_BSFG)
+
+
+def phonon_rolloff(f_thz: float) -> float:
+    """THE DERIVED DAMPING PROFILE (B274): Phi(f) =
+    exp(-(f - f_c)^2 / (2*Gamma^2)) - the GAUSSIAN resonance envelope,
+    selected by the two-tier Rule 4 test: PAPER_910 derives the inputs
+    (Gamma = 0.1 THz, f_c = 1.25 THz) AND itself uses this envelope
+    (M_jet = exp(-(omega-omega_SCm)^2/(2 Gamma^2)) * ...). Primitive
+    content: Gamma/f_c = 2/25 = 1/(K_MEX*D_BSFG) EXACT."""
+    return math.exp(-((f_thz - F_C_THZ) ** 2) / (2.0 * GAMMA_PHONON_THZ ** 2))
+
+
+def rolloff_report() -> Dict:
+    """The roll-off's numbers, live - including the result that closes a
+    loop: the step-function cutoff Theorem A assumed is JUSTIFIED by the
+    derived profile to 34 decimal places."""
+    fwhm = 2.0 * math.sqrt(2.0 * math.log(2.0)) * GAMMA_PHONON_THZ
+    leakage = math.exp(-Q_LINE ** 2 / 2.0)
+    return {
+        'profile': 'Phi(f) = exp(-(f-f_c)^2/(2*Gamma^2)) - Gaussian (PAPER_910 envelope, two-tier compliant)',
+        'gamma_thz': GAMMA_PHONON_THZ, 'f_c_thz': F_C_THZ,
+        'q_line': Q_LINE,
+        'q_primitive': 'f_c/Gamma = 25/2 = K_MEX*D_BSFG EXACT (PAPER_1804)',
+        'fwhm_thz': fwhm,
+        'low_f_leakage': leakage,
+        'step_justification': ('Phi(0) = exp(-Q^2/2) = %.2e - the sharp '
+                               'cutoff Theorem A assumed is honest to ~34 '
+                               'decimal places; the step was not an '
+                               'idealization, it was a Gaussian this '
+                               'narrow' % leakage),
+        'thz_bench_prediction': ('FALSIFIABLE: transmission dip centered '
+                                 '1.25 THz, Gaussian, FWHM 0.235 THz on '
+                                 'the 910/911 linewidth - the B112 '
+                                 'THz-bench observable, now with a '
+                                 'PROFILE; NOTE the corpus carries a '
+                                 'second width (PAPER_896 modulation '
+                                 'Gaussian, 0.2 THz -> FWHM 0.471 THz) - '
+                                 'the bench DISCRIMINATES between the '
+                                 'two, FLAGGED for ruling, not resolved '
+                                 'here'),
+        'status': 'DERIVED (B274) - envelope two-tier compliant, inputs canonical, width discrepancy 910-vs-896 FLAGGED',
+    }

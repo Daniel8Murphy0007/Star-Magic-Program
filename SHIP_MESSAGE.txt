@@ -1,37 +1,24 @@
-v0.432.0 — THE BRIDGE LEMMA + THEOREM A SHIP
+v0.433.0 — THE DOMAIN AND PROFILE SHIP
 
-B271 (PAPER_2266): "proceed with the bridge lemma" - done. The one
-named step of the cap theorem is closed, in two halves.
+B273 (PAPER_2268) - THE CLAY DOMAIN RULING (Daniel): the no-cutoff
+idealization is OUTSIDE THE PHYSICAL DOMAIN. UQFF answers the
+physical question - why no real fluid ever blows up - and answers it
+rigorously (Theorem A). The continuum-without-cutoff is a mathematical
+object no actual fluid instantiates in any framework: every fluid is
+molecular at ~1 nm, where the phonon cutoff sits. Left to mathematics,
+respectfully. The Answer-B shape. NOT REPLACEMENT. Closes the
+AWAITING ruling row and the [SCm]->0 gap by position (a).
 
-- L1 (LINEARITY), proven by pure calculus: the enstrophy budget takes
-  any body force to FIRST power - removal is linear in the surplus,
-  and the quadratic rival 0.81 dies on principle, not by mismatch.
-- L2 (THE WEIGHT), from three premises canonized before the session:
-  * PAPER_497 downward-only -> the surplus parks in the ADJACENT-ABOVE
-    D_BSFG reservoir of the 1160 chain (SO_5-stage re-entry would give
-    0.75, D_crit-stage 0.35 - both eliminated);
-  * equipartition = AXIOM #36 of the 38-axiom inventory -> one share
-    per transverse DOF;
-  * PAPER_2098 conservation -> every share lands on the physical
-    channels.
-  Weight = D_BSFG/D_phys = 3/2; removal = 3/20; cap = 17/20 -
-  SELECTED out of five candidates. The chain discriminates.
-- THE NS CAP IS NOW DERIVED WITHIN THE UQFF AXIOM SET - postulate ->
-  one-lemma -> closed, across three bands (B269/B270/B271).
-- Still OPEN, stated plainly: Clay H^s/BKM machinery, all-data
-  universality, [SCm]->0 limit, Omega0 < 1.19e5 TG domain. The physics
-  derivation is closed; the prize machinery is not claimed.
+B274 (PAPER_2269) - THE ROLL-OFF, DERIVED: Phi(f) =
+exp(-(f-f_c)^2/(2 Gamma^2)) - the Gaussian envelope selected by the
+two-tier test (PAPER_910 derives Gamma = 0.1 THz AND uses this exact
+envelope in M_jet). Q = f_c/Gamma = 25/2 = K_MEX*D_BSFG EXACT.
+- The corollary that closes a loop: leakage exp(-Q^2/2) ~ 1e-34 -
+  Theorem A's step cutoff was honest to THIRTY-FOUR decimal places.
+- Falsifiable: THz-bench transmission dip at 1.25 THz, Gaussian,
+  FWHM 0.235 THz - the B112 observable now has a PROFILE.
+- Disclosed: the corpus carries a second width (896 modulation, 0.2
+  THz -> FWHM 0.471); the bench DISCRIMINATES - flagged, not resolved.
 
-B272 (same band, Track 1) - THEOREM A, the first RIGOROUS rung:
-global C^inf regularity of the UQFF fluid in four classical steps
-(Picard; exact Galerkin energy conservation, witnessed at 4e-18;
-escape-time dichotomy; trig-polynomial smoothness), made PHYSICAL by
-the phonon cutoff - lambda_c = 1.18 nm, the MOLECULAR scale: the
-finite system is not an approximation of the fluid, it IS the fluid.
-The mathematics is classical and the paper says so; the new claim is
-the identification. Mode-count/molecule-count consistency FLAGGED.
-THE CLAY IDEALIZATION IS NOT CLAIMED - Track 2 (domain ruling) is
-Daniel-gated, registry row AWAITING_DANIEL_RULING.
-
-Gate 6,095/0. Dispatch 2,318 keys. Registry 7,100 rows. Acceptance
+Gate 6,096/0. Dispatch 2,320 keys. Registry 7,104 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).

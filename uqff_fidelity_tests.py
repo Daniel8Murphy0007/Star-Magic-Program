@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.432.0", "uqff_calculator.VERSION = 0.432.0 (THE BRIDGE LEMMA SHIP: the one named step closed - linearity by calculus, the weight from canonized axioms, five candidates one selected, the cap derived within the UQFF axiom set)")
+assert_that(C.VERSION == "0.433.0", "uqff_calculator.VERSION = 0.433.0 (THE DOMAIN AND PROFILE SHIP: the Clay idealization assigned outside the physical domain by ruling, and the phonon roll-off derived - the step was a Gaussian this narrow)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'LEMMACLOSED_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'DOMAINPROFILE_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):
@@ -15120,6 +15120,20 @@ assert_that(_b272c['machine_zero'] and _b272c['relative'] < 1e-12
             and 'not' in _b272t['clay_not_claimed'].lower()
             and 'FLAGGED' in _b272m['molecule_count_flag'],
             "B272 - THEOREM A (PAPER_2267): the first RIGOROUS rung of the NS ladder - global C^inf regularity of the UQFF fluid proven by four classical steps (Picard on a polynomial field; EXACT Galerkin energy conservation, witnessed live at 4e-18 relative; escape-time dichotomy; trig-polynomial smoothness), made PHYSICAL by the phonon cutoff: lambda_c = c_s/f_c = 1.18 nm - the 1.25 THz carrier terminates the mode lattice at the MOLECULAR scale, exactly where the continuum idealization ends for every real fluid, so the finite system is not an approximation of the fluid, it IS the fluid; the honesty rides in the paper itself - the mathematics is classical and SAYS SO, the new claim is the physical identification, the mode-count-vs-molecule-count consistency (ratio ~13) is FLAGGED not canonized, and the Clay no-cutoff idealization is NOT claimed - that is the Track-2 domain ruling, Daniel-gated, registry row AWAITING_DANIEL_RULING")
+
+# ---- B273/B274 2026-09-10: THE DOMAIN RULING + THE ROLL-OFF ----
+_b273 = _b267.clay_domain_ruling()
+_b274 = _b267.rolloff_report()
+import math as _b274m
+assert_that(_b273['ruling'] == 'OUTSIDE_PHYSICAL_DOMAIN'
+            and 'NOT REPLACEMENT' in _b273['parallel']
+            and _b274['q_line'] == 12.5 and abs(25.0 / 12.0 * 6.0 - 12.5) < 1e-15
+            and _b274['gamma_thz'] == 0.1
+            and abs(_b274['fwhm_thz'] - 2.0 * _b274m.sqrt(2.0 * _b274m.log(2.0)) * 0.1) < 1e-15
+            and _b274['low_f_leakage'] < 1e-33
+            and _b267.phonon_rolloff(1.25) == 1.0
+            and 'FLAGGED' in _b274['thz_bench_prediction'],
+            "B273/B274 - THE RULING AND THE PROFILE: Daniel assigns the no-cutoff Clay idealization OUTSIDE THE PHYSICAL DOMAIN (the physical question is answered rigorously by Theorem A; the idealization is left to mathematics, respectfully, NOT REPLACEMENT - the Answer-B shape); and the phonon roll-off is DERIVED two-tier compliant - PAPER_910 supplies Gamma = 0.1 THz AND its own Gaussian envelope, Q = f_c/Gamma = 25/2 = K_MEX*D_BSFG EXACT, FWHM 0.235 THz for the THz bench, low-frequency leakage exp(-Q^2/2) ~ 1e-34 proving the Theorem A step cutoff was honest to thirty-four decimal places, and the 910-vs-896 width discrepancy FLAGGED as the experiment's discriminator rather than resolved by fiat")
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv

@@ -12395,3 +12395,6 @@ downward_only_rule,PAPER_2266,FIXES_STAGE,d_bsfg_reservoir,the adjacent-above ru
 ns_cap_bridge_lemma,PAPER_2266,CLOSES,ns_cap_theorem,the one named step - walked
 phonon_cutoff,PAPER_2267,FINITIZES,uqff_fluid_state_space,B272: 1.25 THz ends the mode lattice at the molecular scale
 theorem_a,PAPER_2267,PROVES,uqff_fluid_regularity,classical Galerkin mathematics + the physical identification
+clay_statement,PAPER_2268,ASSIGNED_TO,mathematical_domain,B273: the physical question answered - the idealization left where it lives
+phonon_line,PAPER_2269,PROFILES,theorem_a_cutoff,B274: the step was a Gaussian this narrow (leakage 1e-34)
+thz_bench,PAPER_2269,DISCRIMINATES,gamma_910_vs_896,two corpus widths - one experiment picks

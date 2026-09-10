@@ -183,3 +183,4 @@ BALANCEZONE_ARC_B269,band v0.430.0,RULED,B269 (canonize chain + pair-cap),no,Dan
 CAPLEMMA_ARC,band v0.431.0,RULED,B270 (canonize; bridge lemma OPEN),no,the road named in B269 walked in B270 - and the derivation eliminated its own rivals
 LEMMACLOSED_ARC,band v0.432.0,RULED,B271 (canonize),no,the one named step walked - and the chain eliminated four rivals on the way
 LEMMACLOSED_ARC_B272,band v0.432.0,RULED,B272 (Track 1),no,the rigorous rung - and the cutoff lands at the molecular scale where continuum fluids end anyway
+DOMAINPROFILE_ARC,band v0.433.0,RULED,B273 (outside physical domain) + B274 (derive),no,the question answered where it lives and the step revealed as a Gaussian this narrow

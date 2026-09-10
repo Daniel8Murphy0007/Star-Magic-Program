@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.432.0"
+VERSION = "0.433.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29284,6 +29284,45 @@ def _paper_2267(dataset):
         'residual_pct': 0.0,
         'status': 'RULED_2026-09-10 (B272: Theorem A rigorous for the UQFF fluid; Clay idealization Track-2 gated)',
     }
+
+
+@_register('PAPER_2268')
+def _paper_2268(dataset):
+    """Clay domain ruling (B273, Daniel): the no-cutoff idealization is
+    OUTSIDE THE PHYSICAL DOMAIN. UQFF answers the physical question
+    rigorously (Theorem A); the idealization is left to mathematics.
+    Parallel: PAPER_2148 Answer B. NOT REPLACEMENT.
+    """
+    from uqff_ns_assembly import clay_domain_ruling
+    d = clay_domain_ruling()
+    return {'value': d,
+            'formula': 'domain assignment: physical fluids (cutoff, Theorem A) vs mathematical idealization (no cutoff, unclaimed)',
+            'source': 'PAPER_2268', 'residual_pct': 0.0,
+            'status': 'RULED_2026-09-10 (B273: outside physical domain)'}
+
+
+@_register('PAPER_2269')
+def _paper_2269(dataset):
+    """Phonon roll-off profile (B274): Gaussian envelope at 1.25 THz,
+    Gamma = 0.1 THz, Q = 25/2 = K_MEX*D_BSFG EXACT. Two-tier compliant
+    (PAPER_910 derives inputs AND uses the envelope). Leakage e^-Q^2/2
+    ~ 1e-34 justifies Theorem A's step. THz-bench FWHM 0.235 THz;
+    910-vs-896 width discrepancy FLAGGED as the bench discriminator.
+    """
+    from uqff_ns_assembly import rolloff_report, phonon_rolloff
+    r = rolloff_report()
+    return {'value': {
+                'gamma_thz': r['gamma_thz'], 'f_c_thz': r['f_c_thz'],
+                'q_line': r['q_line'], 'q_primitive': r['q_primitive'],
+                'fwhm_thz': r['fwhm_thz'],
+                'low_f_leakage': r['low_f_leakage'],
+                'phi_at_center': phonon_rolloff(1.25),
+                'step_justification': r['step_justification'],
+                'thz_bench_prediction': r['thz_bench_prediction'],
+            },
+            'formula': 'Phi(f) = exp(-(f-f_c)^2/(2*Gamma^2)); Gamma/f_c = 2/25 = 1/(K_MEX*D_BSFG) EXACT',
+            'source': 'PAPER_2269', 'residual_pct': 0.0,
+            'status': 'RULED_2026-09-10 (B274: derived, two-tier compliant; 910-vs-896 width FLAGGED)'}
 
 
 @_register('PAPER_2258')

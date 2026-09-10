@@ -13513,3 +13513,29 @@ FLAGGED (ratio ~13, no corpus chain); the Clay no-cutoff idealization
 NOT claimed - Track 2 registry row AWAITING_DANIEL_RULING. Falsifiable
 hook: no independent dynamics above k_c in DNS/experimental spectra.
 Dispatch 2,318; registry 7,100; gate 6,095/0.
+
+## 2026-09-10 — v0.433.0 prep — B273 + B274: THE RULING AND THE ROLL-OFF
+
+v0.432.0 confirmed shipped (tag == HEAD, tree clean, checked first).
+Daniel: "go for ruling and roll-off derivation."
+
+B273: the Track-2 question posed with both positions; Daniel ruled
+OUTSIDE PHYSICAL DOMAIN. PAPER_2268 canonizes it: Theorem A answers
+the physical question; the no-cutoff idealization is left to
+mathematics (Answer-B shape, NOT REPLACEMENT). The AWAITING row and
+ns_scm_zero_limit close together.
+
+B274: source pass confirmed Gamma = 0.1 THz (910/911 canonical,
+Q = 25/2 = K_MEX*D_BSFG via 1804) and found the envelope IN PAPER_910
+ITSELF (M_jet Gaussian) - two-tier test satisfied without any
+classical import. Phi(f) = exp(-(f-f_c)^2/(2 Gamma^2)) wired live.
+The corollary: leakage exp(-Q^2/2) = 1.2e-34 - the step function
+Theorem A assumed is justified to 34 decimals; it was never an
+idealization, it was a Gaussian this narrow. Predictions: THz-bench
+dip FWHM 0.235 THz (the B112 observable, now with a profile); the
+910-vs-896 width discrepancy (0.1 vs 0.2 THz) FLAGGED as the bench
+DISCRIMINATOR - an experiment picks between two corpus values, which
+is exactly what a healthy flag should become. Dispatch 2,320;
+registry 7,104; gate 6,096/0. The NS arc (B267-B274) now stands:
+assembly, tiers, balance zone, cap derivation, lemma, rigor, domain,
+profile - eight rungs in six bands, every open item named.

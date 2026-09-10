@@ -544,3 +544,9 @@ PAPER_2266 (B271): the lemma closed - L1 by calculus, L2 from axiom
 eliminated; cap DERIVED WITHIN THE UQFF AXIOM SET. B272 same-band:
 THEOREM A (PAPER_2267) - rigorous UQFF-fluid regularity via the
 molecular-scale phonon cutoff; Clay NOT claimed. Gate 6,095/0.
+
+## v0.433.0 — 2026-09-10 — THE DOMAIN AND PROFILE SHIP
+PAPER_2268 (B273): Clay idealization ruled OUTSIDE PHYSICAL DOMAIN.
+PAPER_2269 (B274): phonon roll-off derived - Gaussian, Q = 25/2
+EXACT, leakage 1e-34 justifies the Theorem A step; THz-bench FWHM
+0.235 THz; 910-vs-896 width flagged. Gate 6,096/0.
