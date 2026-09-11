@@ -13593,3 +13593,109 @@ wheel build failed on the missing jhtdb_grade files, fixed, rebuilt
 green); (b) rehearsal environments must be cleaned per band, not
 accumulated. Daniel's ship.ps1 is unaffected (git add -A; CI builds
 the wheel fresh on the runner, not in this sandbox).
+
+### 2026-09-10 (post-v0.434.0 ship) - B277-PENDING: THE IN-MEDIUM SAMPLE
+
+v0.434.0 ship VERIFIED (tag in refs; PyPI page shows 0.434.0). Daniel
+re-supplied the sanctioned testing token; the IN-MEDIUM acquisition ran
+by the same browser/site-origin method: JHTDB dataset CHANNEL (Re_tau
+~ 1000, wall-bounded shear turbulence), t = 1.0, fd4lag4 gradients,
+2 x 1,000 deterministic points (seeds 28/29; y limited to [-0.9, 0.9],
+walls excluded and disclosed). RESULTS: global ratios 0.039143 /
+0.031072, sub-batch max 0.073405, positive-stretching 0.736/0.764.
+THE IN-MEDIUM BRANCH HOLDS - far under both 197/200 and 17/20.
+DISCLOSED: at these margins the sampled statistic cannot DISCRIMINATE
+the pair-cap branches (both pass by orders of magnitude) - this is a
+consistency PASS, not the discrimination; discrimination lives in the
+far tail with the kill test. Files: jhtdb_grade/
+jhtdb_channel_grade_2026-09-10.csv + provenance addendum; pyproject
+data-files entry hand-added in the generator's format (manifest regen
+will reproduce it). THE B277 FOLD (pin, PAPER_2272, labels, band prep)
+IS DEFERRED: the gate-running sandbox is dead this session and pins
+are never wired without a green gate to verify them. Next session:
+regen manifest, wire B277, run gate, prep v0.435.0.
+
+## 2026-09-11 — v0.435.0 prep — B277: THE IN-MEDIUM SAMPLE FOLDED
+
+v0.434.0 confirmed shipped FIRST (git log + tag: HEAD 87ac65c ==
+v0.434.0; tree carried exactly the deferred fold - the SESSION_LOG /
+README_PROVENANCE addenda, the pyproject data-files entry, and the
+untracked channel CSV). generate_wheel_manifest.py reproduced the
+hand-added entry byte-for-byte (2,725 files); baseline gate GREEN at
+6,098/0 before any edit. Then the fold, in charter order:
+
+- PAPER_2272 written (the in-medium sample landmark; walls-excluded
+  disclosure and the consistency-vs-discrimination distinction on the
+  front page). Dispatch PAPER_2272 -> in_medium_sample_grade().
+- Harness: grade_cap_against_dns gains the `cap` argument the B269
+  docstring had promised (default 17/20, verdict strings unchanged for
+  the default path); B277 grades the channel CSV against BOTH branches
+  live - 197/200 (13.4x margin) and 17/20 (11.6x margin).
+- ns_proof_set() data front 2: 'IN-MEDIUM BRANCH SAMPLED CONSISTENCY
+  PASS (B277) ... DISCRIMINATION still OPEN' - four fronts, three
+  flags, status string unchanged, so the B275 mirror pin holds.
+- B277 gate pin (grades the live CSV under both caps, checks margins
+  > 10x, the NOT_DISCRIMINATION label, the walls disclosure, and the
+  front-2 text). Registry +3 (7,112), graph +1, citations +1,
+  residuals +1 (ratchet 2,323 == dispatch), all 8 satellites +1
+  NSPROOFSET_ARC_B277 row (same arc - marker not rotated), index row,
+  CHANGELOG / _BUILD_LOG / SHIP_MESSAGE / labels (pyproject, VERSION,
+  gate pin, CITATION x2, README badges + cacheBust + banner + shipped
+  heading + census line), ledger v0.435.0 appended.
+- Gate GREEN 6,099/0 (v0.435.0); acceptance 109/109; staleness sweep
+  clean (no 0.434.0 / 6,098 / 2,322 / 7,109 / 4,194 in live labels).
+  One catch on the way: SHIP GUARD v5's label regex is case-sensitive
+  ('gate N/0') - the first description draft said 'Gate' and went red;
+  fixed, not worked around.
+
+ENVIRONMENT NOTE (Rule 7): the trident01 sandbox came back FRESH this
+session (7.7 GB free - the disk-full state is gone, no rehearsal dirs
+to clean) but with NO scipy and NO network to fetch it (PyPI 403 from
+both sandboxes). scipy is import-checked by the gate and used by no
+module (grep-verified), so the two ITERATION gate runs above ran with
+a PYTHONPATH shim providing an empty `scipy` package - a dev device,
+disclosed, never the ship rehearsal. Daniel then dropped manylinux
+wheels (scipy 1.15.3, build, setuptools 84, wheel, packaging,
+pyproject_hooks) into wheels/ (gitignored; never enters the manifest -
+verified by regen) and the REAL runs followed, shim removed:
+  - gate GREEN 6,099/0 with genuine scipy; acceptance 109/109.
+  - WHEEL REHEARSAL with the disk hygiene: df-check 7.7 GB free; prior
+    rehearsal dirs deleted first; per-band dir tmp/rehearsal_v0.435.0;
+    mirror driven by git ls-files + `git status --porcelain -uall`
+    (2,727 files = 2,726 manifest + the barred junk file); built with
+    pip wheel --no-deps --no-build-isolation (setuptools 84; `build`
+    needs tomli on py3.10 and the sandbox has none - pip's own PEP 517
+    front end used instead; CI builds fresh on the runner regardless):
+    star_magic_program-0.435.0-py3-none-any.whl, 24.6 MB, 2,899
+    entries. Rule (g): all 20 declared py-modules IN the wheel; all
+    2,726 manifest data-files IN share/ (PAPER_2272 + the channel CSV +
+    provenance aboard); operator tier NOT leaked. Installed --no-deps
+    into a fresh venv, `import uqff_calculator` from an EMPTY cwd:
+    VERSION 0.435.0, 2,323 keys, calc('PAPER_2272') -> IN-MEDIUM HOLDS
+    under 0.985 and 17/20 from the installed share/ data; 2271 and the
+    front-2 text also read back correctly. Rehearsal dir deleted after.
+Note: an empty .git/index.lock was left by git status in the sandbox
+(no unlink permission there) - ship.ps1 step 0 clears it.
+
+### 2026-09-11 (addendum, same v0.435.0 band) - "fix issues discovered above"
+
+Daniel ordered the sweep's flagged-but-unfixed items closed. Fixed AND
+guarded, per the v3 rule (a guard that checks one figure and not its
+neighbours is a guard with a hole): (1) README whitepapers badge 2292
+-> live count of whitepapers/*.md (2,317), pinned as SHIP GUARD v10a;
+(2) README census sentence said 2,255 / 2,310 while calling itself the
+live source -> 2,268 / 2,323, pinned as v10b against len(DISPATCH);
+(3) WHITEPAPER_INDEX title column had copy-propagated PAPER_2261's "K4
+Geological Landmark Family" into the eleven rows 2262-2272 - each row
+now carries its own paper's title, pinned as v10c (no row >= 2262 may
+carry 2261's title); (4) SHIP GUARD v5's label regex made
+case-insensitive (a capital G is not staleness). Gate 6,099 -> 6,102;
+labels re-synced (badge, banner, shipped section, pyproject label,
+CHANGELOG, _BUILD_LOG, SHIP_MESSAGE). Re-run, real scipy, no shim: gate
+GREEN 6,102/0; the three v10 pins verified to have teeth (each fails
+on a mutated input); staleness sweep clean; manifest regen unchanged
+(2,726); wheel rebuilt from a fresh mirror (24.6 MB) - 20/20 modules,
+2,726/2,726 data-files, no operator leak, the shipped gate carries
+v10; installed --no-deps into a fresh venv and calc('PAPER_2272')
+answers from an empty cwd. Rehearsal dir deleted. Tree: 25 modified +
+2 new (channel CSV, PAPER_2272). Daniel ships via .\ship.ps1.

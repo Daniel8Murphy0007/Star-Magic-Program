@@ -5,6 +5,29 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.435.0 — 2026-09-11 — THE IN-MEDIUM SAMPLE SHIP
+
+- B277 (PAPER_2272): the pair cap's SECOND branch (PAPER_2264: in-medium
+  197/200 vs vacuum 17/20) graded on real wall-bounded turbulence. JHTDB
+  channel flow (Re_tau ~ 1000), official REST + publicly sanctioned testing
+  token (2 x 1000 pts < 4096), deterministic LCG points seeds 28/29,
+  walls |y| > 0.9 EXCLUDED and disclosed. THE IN-MEDIUM BRANCH HOLDS:
+  ratios 0.039143/0.031072, sub-batch max 0.073405 - 13x under 197/200
+  AND 11x under 17/20; harness verdict via the new `cap` argument on
+  grade_cap_against_dns (the argument the B269 docstring promised; first
+  real use). Positive-stretching 0.736/0.764 (shear-flow skewness).
+  Rule 7: CONSISTENCY PASS only - at these margins the sampled statistic
+  cannot discriminate the two branches; pair-cap discrimination stays
+  OPEN in the far tail with the extreme-event kill test. ns_proof_set()
+  data front 2 now reads exactly that (still 4 fronts / 3 flags).
+  Data + provenance addendum in jhtdb_grade/ (on the wheel).
+  Dispatch 2,323; registry 7,112 rows; gate 6,102/0; simulator untouched.
+- Same band, the sweep's own catches fixed and GUARDED (SHIP GUARD v10):
+  README whitepapers badge measured live (2,317), README census sentence
+  carries the live 2,268 / 2,323, WHITEPAPER_INDEX title column repaired
+  on 2262-2272 (PAPER_2261's title had copy-propagated) and pinned; SHIP
+  GUARD v5 label regex made case-insensitive.
+
 ## v0.434.0 — 2026-09-10 — THE PROOF SET SHIP
 
 - B275 (PAPER_2270): the NS proof set consolidated - one master paper +

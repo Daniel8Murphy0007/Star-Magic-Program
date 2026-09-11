@@ -39,3 +39,38 @@ the OPEN stronger test. A sampled PASS is a real grade, not the final
 word. Consistency check that the pipeline computes real physics: the
 positive-stretching fraction came out 0.778/0.754 (seeds 26/27) -
 the textbook DNS net-positive vortex-stretching skewness.
+
+---
+
+## ADDENDUM 2026-09-10 - the IN-MEDIUM sample (channel flow, B277-pending)
+
+Second acquisition, same method, Daniel-authorized (token re-supplied):
+dataset **channel** (JHTDB turbulent channel flow, Re_tau ~ 1000 -
+wall-bounded IN-MEDIUM shear turbulence), t = 1.0, var=velocity,
+sop=gradient, sint=fd4lag4, tint=none, official REST service, public
+testing token, 2 x 1,000 points (seeds 28/29 of the same LCG;
+x in [0, 8pi], y in [-0.9, 0.9] - walls excluded, disclosed -
+z in [0, 3pi]).
+
+Results (file: jhtdb_channel_grade_2026-09-10.csv):
+  global ratios: seed 28 = 0.039143, seed 29 = 0.031072
+  sub-batch max (20 batches of 100): 0.073405
+  positive-stretching fraction: 0.736 / 0.764
+
+**IN-MEDIUM BRANCH HOLDS**: all values are far under BOTH the
+in-medium pair cap 197/200 = 0.985 AND the vacuum cap 17/20 = 0.85.
+
+HONESTY (Rule 7): at these margins the sampled statistic CANNOT
+DISCRIMINATE between the two pair-cap branches - both pass by orders
+of magnitude. This acquisition is a CONSISTENCY PASS for the in-medium
+branch, NOT the pair-cap discrimination; discrimination lives in the
+far tail (extreme events), same as the kill test. Wall-region
+(|y| > 0.9) stretching is also unsampled - disclosed.
+
+STATUS: data recorded 2026-09-10; the B277 fold was DEFERRED one
+session (the gate sandbox died - disk, see SESSION_LOG) because pins
+are never wired without a green gate run to verify them. FOLDED
+2026-09-11 in the v0.435.0 band: PAPER_2272, dispatch PAPER_2272,
+in_medium_sample_grade() in uqff_ns_assembly, the `cap` argument on
+grade_cap_against_dns (graded here against BOTH 197/200 and 17/20),
+the B277 gate pin, registry rows, ns_proof_set() data front 2.

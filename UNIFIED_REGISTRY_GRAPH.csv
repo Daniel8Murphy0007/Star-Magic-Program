@@ -12400,3 +12400,4 @@ phonon_line,PAPER_2269,PROFILES,theorem_a_cutoff,B274: the step was a Gaussian t
 thz_bench,PAPER_2269,DISCRIMINATES,gamma_910_vs_896,two corpus widths - one experiment picks
 ns_ladder,PAPER_2270,CONSOLIDATES,eight_rungs,B275: one paper, one live function, zero open theory rungs
 jhtdb_isotropic8192,PAPER_2271,GRADES,ns_enstrophy_cap,B276: first contact with measured turbulence - CAP HOLDS sampled at Re_lambda 1300
+jhtdb_channel,PAPER_2272,GRADES,ns_enstrophy_cap_pair,B277: the in-medium branch meets wall-bounded turbulence - HOLDS sampled at Re_tau 1000 under both caps; discrimination OPEN

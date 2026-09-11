@@ -557,3 +557,12 @@ open theory rungs, four data fronts, three flags; live mirror
 ns_proof_set() gate-pinned. B276 same-band: FIRST CONTACT - cap
 graded on JHTDB isotropic8192 via sanctioned public token: CAP HOLDS
 (0.0287/0.0246 vs 0.85); extreme-event scan stays open. Gate 6,098/0.
+
+## v0.435.0 — 2026-09-11 — THE IN-MEDIUM SAMPLE SHIP
+PAPER_2272 (B277): the pair cap's in-medium branch graded on JHTDB
+channel flow (Re_tau ~ 1000) via the sanctioned public token: IN-MEDIUM
+BRANCH HOLDS (0.0391/0.0311, sub-batch max 0.0734 under both 197/200
+and 17/20; walls excluded, disclosed). Consistency PASS only - the
+pair-cap discrimination stays open in the far tail with the kill test.
+Harness gains the `cap` argument. SHIP GUARD v10 (badge, census
+sentence, index titles). Gate 6,102/0.

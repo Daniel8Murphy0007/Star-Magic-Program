@@ -1,36 +1,37 @@
-v0.434.0 — THE PROOF SET + FIRST CONTACT SHIP
+v0.435.0 — THE IN-MEDIUM SAMPLE SHIP
 
-B275 (PAPER_2270): "Do what can be done" - the last desk-side item of
-the Navier-Stokes arc: the MASTER CONSOLIDATION.
+B277 (PAPER_2272): the pair cap's SECOND branch meets real data.
 
-- One paper + one live mirror: ns_proof_set() recomputes all eight
-  rungs at call time; the paper and the function must agree or the
-  gate goes red.
-- The eight rungs (B267-B274): assembly, tiers, balance zone,
-  derivation, lemma, rigor, domain, profile. Open theory rungs: ZERO.
-- The claim at its honest ceiling: regularity of real fluids is a
-  PHYSICAL consequence of vacuum structure - cap 17/20 DERIVED (five
-  rivals eliminated), Theorem A RIGOROUS under the physical cutoff
-  (1.18 nm, the molecular scale), the no-cutoff idealization ruled to
-  mathematics. NOT REPLACEMENT.
-- The remainder, exact: FOUR data fronts (DNS stretching - the kill
-  test; lab-vs-astro pair cap; THz-bench profile + 910-vs-896
-  discriminator; spectra above k_c) and THREE standing flags. Nothing
-  buried. One DNS dataset can still kill the whole thing - which is
-  what makes it science.
-- Daniel ledger: JHTDB token path drafted (gradient samples -> the
-  cap grade; spectrum -> the cutoff check; two fronts, one download).
+- PAPER_2264 (B269) split the NS enstrophy cap by the B112 context
+  rule: vacuum-coupled flows cap at 17/20, in-medium flows at 197/200
+  - a flagged falsifiable prediction. B276 graded the vacuum-side
+  statistic on isotropic8192; B277 puts the in-medium branch in front
+  of wall-bounded turbulence.
+- JHTDB channel flow (Re_tau ~ 1000), t = 1.0, fd4lag4 gradients,
+  official REST service, publicly sanctioned testing token, 2 x 1,000
+  deterministic points (seeds 28/29; bit-reproducible). The walls
+  (|y| > 0.9) were EXCLUDED - disclosed in the paper, the module, the
+  provenance file, and the registry.
+- THE IN-MEDIUM BRANCH HOLDS: sampled 1182-form ratios 0.039143 /
+  0.031072, sub-batch max 0.073405 - thirteen times under 197/200 and
+  eleven times under 17/20. Verdict issued by the tier-3 harness, now
+  carrying the `cap` argument its B269 docstring promised (first real
+  use). Positive-stretching fraction 0.736/0.764 - the DNS skewness
+  reproduced in shear flow.
+- Rule 7, the headline: at these margins the sampled statistic CANNOT
+  DISCRIMINATE the two branches - both pass by an order of magnitude.
+  This is a CONSISTENCY PASS for the in-medium branch, NOT the pair-cap
+  discrimination; that lives in the far tail with the extreme-event
+  kill test and stays OPEN. ns_proof_set() data front 2 says exactly
+  that; four fronts and three flags unchanged in count.
+- Daniel ledger unchanged: JHTDB full token / Kerr letter = the kill
+  test + the pair-cap discrimination; THz bench; GFZ deep-sonic; U_i
+  spec; SEG-Y; quartz bench; tester answers.
+- Housekeeping, guarded: the staleness sweep's own finds are fixed AND
+  pinned as SHIP GUARD v10 - README whitepapers badge measured live,
+  README census sentence carries the live figures, WHITEPAPER_INDEX
+  title column repaired on 2262-2272 (PAPER_2261's title had been
+  copy-propagated); SHIP GUARD v5 label regex case-insensitive.
 
-B276 (same band) - FIRST CONTACT (PAPER_2271): Daniel supplied the
-JHTDB portal and its publicly sanctioned testing token made an
-immediate sampled grade possible on isotropic8192 - the highest-
-Reynolds public DNS in existence (Re_lambda ~ 1300). THE CAP HOLDS:
-sampled 1182-form ratios 0.028660 / 0.024624 (sub-batch max 0.084421),
-all at least 10x under 17/20 - verdict issued by the tier-3 harness
-that would have said CAP IS DEAD just as plainly. The pipeline
-reproduced the textbook positive-stretching skewness. The power limit
-rides in the record: the extreme-event scan remains THE kill test,
-OPEN. Provenance + bit-reproducible recipe: jhtdb_grade/.
-
-Gate 6,098/0. Dispatch 2,322 keys. Registry 7,109 rows. Acceptance
+Gate 6,102/0. Dispatch 2,323 keys. Registry 7,112 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).

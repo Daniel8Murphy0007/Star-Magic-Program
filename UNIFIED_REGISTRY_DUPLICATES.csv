@@ -183,3 +183,4 @@ LEMMACLOSED_ARC_b272_addendum,BAND_RECORD,"v0.432.0 B272: Theorem A REUSES the c
 DOMAINPROFILE_ARC_band_record,BAND_RECORD,"v0.433.0 B273/B274: the ruling REUSES the Answer-B doctrinal shape (cited); the roll-off REUSES the 910 envelope with its own inputs (two-tier, cited); the 910-vs-896 width pair is recorded ONCE as a flagged discrepancy, not duplicated"
 NSPROOFSET_ARC_band_record,BAND_RECORD,"v0.434.0 B275: the consolidation intentionally RESTATES the eight rungs - one master index over eight papers, mirrored live, not duplicated content"
 NSPROOFSET_ARC_b276_addendum,BAND_RECORD,"v0.434.0 B276: the grade REUSES the tier-3 harness and the 1182 statistic exactly as built - first use on real data, no new constructs"
+NSPROOFSET_ARC_b277_record,BAND_RECORD,"v0.435.0 B277: the grade REUSES the tier-3 harness and the 1182 statistic exactly as built; the only construct added is the cap argument the B269 docstring already promised - no duplicated content"

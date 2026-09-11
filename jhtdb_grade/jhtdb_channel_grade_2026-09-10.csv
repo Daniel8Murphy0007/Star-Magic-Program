@@ -1,0 +1,23 @@
+t,stretching_ratio,source
+0,0.039143,channel t=1.0 seed28 n=1000 global (in-medium)
+1,0.031072,channel t=1.0 seed29 n=1000 global (in-medium)
+2,0.038048,seed28 sub-batch 0 n=100
+3,0.053734,seed28 sub-batch 1 n=100
+4,0.040294,seed28 sub-batch 2 n=100
+5,0.067099,seed28 sub-batch 3 n=100
+6,0.036771,seed28 sub-batch 4 n=100
+7,0.062918,seed28 sub-batch 5 n=100
+8,0.062018,seed28 sub-batch 6 n=100
+9,0.060821,seed28 sub-batch 7 n=100
+10,0.051649,seed28 sub-batch 8 n=100
+11,0.022336,seed28 sub-batch 9 n=100
+12,0.041541,seed29 sub-batch 0 n=100
+13,0.064696,seed29 sub-batch 1 n=100
+14,0.043369,seed29 sub-batch 2 n=100
+15,0.071134,seed29 sub-batch 3 n=100
+16,0.043264,seed29 sub-batch 4 n=100
+17,0.036397,seed29 sub-batch 5 n=100
+18,0.043941,seed29 sub-batch 6 n=100
+19,0.026689,seed29 sub-batch 7 n=100
+20,0.049286,seed29 sub-batch 8 n=100
+21,0.073405,seed29 sub-batch 9 n=100
