@@ -7646,3 +7646,23 @@ were in the corpus.
   sound-cone one (ratio c/c_s). Registry: phonon_mollifier_width_eps
   WIRED_FLAGGED; R1_QUEUE NSPROOFSET_ARC_B280 RULING_REQUESTED.
 - **Status:** OPEN (B280, 2026-09-13).
+
+### Q-247 — PAPER_2261 / PAPER_2267 / PAPER_2275 / PAPER_2276 — which sound speed defines the sound cone at omega_SCm
+- **Question:** the phonon cutoff is k_c = omega_SCm / c_s with c_s = 1480
+  m/s (PAPER_2261 anchor, PAPER_2267 L53 "the seawater anchor of the K4
+  family") - the HYDRODYNAMIC (adiabatic, c_0) sound speed. Inelastic
+  x-ray scattering on H2O at 294 K (Sette et al., PRL 75, 850 (1995),
+  ESRF, 5 meV resolution) measures "a propagating excitation with a
+  velocity of sound of 3200 +/- 100 m/s" at Q = 4-14 nm^-1 - the
+  elastic-limit c_inf ("fast sound"), and Monaco et al. (PRE 60, 5505,
+  1999) show the full c_0 -> c_inf transition with Q. k_c = 5.3 nm^-1
+  sits INSIDE that Q window. RULING: (a) keep c_0 (k_c = 5.307 nm^-1,
+  lambda_c = 1.184 nm, eps = 0.156 nm) - the sound cone is defined by
+  the continuum fluid's own sound speed; or (b) adopt c_inf at omega_SCm
+  (k_c = 2.454 nm^-1, lambda_c = 2.560 nm, eps = 0.338 nm) - the medium
+  is elastic at 1.25 THz; or (c) a corpus route from c_0 to c_inf (none
+  found in the sweep). Theorems A and B are unchanged either way; the
+  mode count (PAPER_2267) and eps (PAPER_2275) rescale by 2.162.
+- **Notable:** recomputed live in proof_set_closeout(); the external
+  literal 3200 m/s is sourced inline. Front 4 depends on the answer.
+- **Status:** OPEN (B281, 2026-09-13).

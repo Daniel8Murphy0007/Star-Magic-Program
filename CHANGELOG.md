@@ -5,6 +5,45 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.437.0 — 2026-09-13 — THE CLOSEOUT INDEX SHIP
+
+- B281 (PAPER_2276): THE PROOF SET CLOSED. Daniel, after v0.436.0
+  shipped: "what is remaining to closeout the Navier-Stokes proof?" then
+  "author the paper. then address remaining work. tell me how to obtain
+  token and the physics instruments." The closing index, superseding
+  PAPER_2270 as the entry point (2270 stays canonical for its eight
+  rungs): fifteen rungs B267-B281 each with paper + live mirror;
+  Theorems A and B side by side (A = sharp-filter limit of B; neither
+  uses the cap, BKM or Sobolev; the cap is the falsifiable physics
+  beside them); the derived cap graded 8-13x under on three DNS
+  families with the B278 envelope drift flagged; the ruling; the audit;
+  registry theory rows OPEN = 0. Rulings named, neither changing a
+  theorem: Q-246 (PAPER_106 exponents vs 5/2) and Q-247 NEW - the
+  sound-cone speed at omega_SCm: corpus c_0 = 1480 m/s vs IXS fast
+  sound c_inf = 3200 +/- 100 m/s at Q = 4-14 nm^-1 (Sette 1995), where
+  k_c falls; cutoff numbers x 2.162 (lambda_c 1.184 -> 2.560 nm, k_c
+  5.307 -> 2.454 nm^-1, eps 0.156 -> 0.338 nm); FLAGGED, no corpus
+  chain. Every open front given INSTRUMENT + ACCESS ROUTE: front 1
+  (kill test) = JHTDB FULL token (e-mail turbulence@lists.
+  johnshopkins.edu with name/affiliation/department/use, or SciServer +
+  Cutout Service HDF5) + the Kerr trefoil reconnection fields by letter
+  (Warwick); front 2 = same token on channel / channel5200 tails;
+  front 3 = ATR THz-TDS (water absorbs ~10^2 cm^-1 near 1 THz; few-GHz
+  resolution vs the 0.235 THz feature; one afternoon; NEGATIVE outcome
+  admissible and stated before measurement); front 4 = MD of water
+  (TIP4P/2005, box >= 8 nm, C_T/C_L(k,omega), k = 1-20 nm^-1 -
+  workstation-days, the CHEAPEST open act) + archived IXS/INS (ESRF/
+  ILL), with the honesty that IXS already shows MOLECULAR modes at
+  3200 m/s above k_c so the front is about the hydrodynamic velocity
+  field only. Testing token CANNOT do fronts 1-2; not stretched. NOT
+  claimed: the Clay statement; any front passed; eps measured.
+  Formalization (Lean/Mathlib Theorem B) recorded as an option.
+  proof_set_closeout() live (recomputes A, B, the proof set, the
+  audit; one sourced external literal 3200 m/s). Registry rows
+  ns_proof_set_closeout (WIRED) + sound_cone_speed_at_omega_scm
+  (OPEN_RULING). Dispatch 2,327; registry 7,121 rows; gate 6,106/0;
+  simulator untouched.
+
 ## v0.436.0 — 2026-09-12 — THE REYNOLDS LADDER + SPINE AUDIT + THEOREM B SHIP
 
 - B278 (PAPER_2273): the vacuum-branch cap statistic across FOUR Reynolds

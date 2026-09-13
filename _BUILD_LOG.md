@@ -581,3 +581,13 @@ one mollifier, eps = sqrt(2 beta_i [SSq])/k_c = 0.156 nm; the continuum
 fluid with phonon-mollified transport globally regular (Leray 1934);
 Track 3 closed on the Gaussian form, conditional on PAPER_106 (5/2
 threshold twice) pending Daniel's exponent ruling. Gate 6,105/0.
+
+## v0.437.0 — 2026-09-13 — THE CLOSEOUT INDEX SHIP
+PAPER_2276 (B281): the Navier-Stokes proof set closed on its own terms -
+fifteen rungs B267-B281 with live mirrors, Theorems A and B side by
+side, the derived cap, the ruling, the audit; theory rows open ZERO.
+Every open data front given its instrument and access route (JHTDB
+full token / Kerr fields; channel tails; ATR THz-TDS; MD current
+spectra + IXS/INS). Q-247 opened: sound-cone speed c_0 1480 vs c_inf
+3200 m/s (cutoff numbers x 2.162; no theorem changes). Clay not
+claimed. Gate 6,106/0.

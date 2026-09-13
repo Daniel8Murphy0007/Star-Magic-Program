@@ -13902,3 +13902,87 @@ canonize the PAPER_1042 Gaussian tail) - RULINGS_QUEUE; the kill test;
 the pair-cap discrimination; the THz bench; the envelope-saturation
 check; and, now that Track 3 is written, whether the B272 discussion
 held anything Theorem B does not cover.
+
+## 2026-09-13 — v0.437.0 prep — B281: THE CLOSEOUT INDEX
+
+v0.436.0 shipped by Daniel via .\ship.ps1 (reported "successful ship";
+ship.ps1 prints SHIPPED only after the remote tag is seen - the next
+session still runs `git tag -l v0.436.0` + `git ls-remote --tags origin
+v0.436.0` per the tag-chain rule before building on it). Daniel: "what
+is remaining to closeout the Navier-Stokes proof?" -> the inventory:
+theory CLOSED (two theorems, derived cap, ruling, audit; theory rows
+open 0); remaining = two rulings, four data fronts, three flags; Clay
+not claimed by ruling. Then: "author the paper. then address remaining
+work. tell me how to obtain token and the physics instruments."
+
+PAPER_2276 authored (the closing index; supersedes PAPER_2270 as entry
+point, 2270 canonical for its eight rungs): the ledger B267-B281 with
+mirrors; Theorems A and B side by side; the cap paragraph; the ruling
+and the audit; open rulings; the four fronts each with statement,
+falsifier, INSTRUMENT, ACCESS ROUTE, and what the testing token can
+and cannot do; standing flags; honesty inventory; what closeout means.
+Research for the instrument sections (web, this session): JHTDB
+database-access policy page (token by e-mail to turbulence@lists.
+johnshopkins.edu with name/e-mail/affiliation+department/intended use;
+testing identifier for < 4,096 points; SciServer account for the
+Python-on-SciServer route and the HDF5 Cutout Service; giverny README
+for the container recipe); Robert M. Kerr's Warwick page (trefoil
+series JFM 2018 / PRFluids 2023 / arXiv 2401.03578; contact route);
+ATR THz-TDS literature for water; Sette et al. PRL 75, 850 (1995) -
+IXS, Q = 4-14 nm^-1, 5 meV resolution, "a propagating excitation with
+a velocity of sound of 3200 +/- 100 m/s" - and Monaco 1999 PRE 60,
+5505 (c_0 -> c_inf transition), Sampoli/Ruocco/Sette cond-mat/0501205
+(transverse signature). That last fact is new to the arc and became
+Q-247: k_c = 5.3 nm^-1 sits inside the fast-sound Q window; if the
+sound cone at 1.25 THz is c_inf, every cutoff number scales by
+3200/1480 = 2.162 (lambda_c 1.184 -> 2.560 nm, k_c 5.307 -> 2.454
+nm^-1, eps 0.156 -> 0.338 nm); no theorem changes; FLAGGED, no corpus
+chain; Daniel's ruling. Rule 7 in the paper: front 3 may close NEGATIVE
+(the published water THz spectrum is smooth at 1-1.5 THz - stated
+before measurement); front 4 is a statement about the hydrodynamic
+velocity field, not S(Q,omega) of the molecules, because IXS already
+shows molecular modes propagating above k_c; the testing token cannot
+do fronts 1-2 and will not be stretched.
+
+Fold (B281): proof_set_closeout() in uqff_ns_assembly (recomputes
+theorem_a, theorem_b, ns_proof_set, spine_audit; ledger of 15; fronts
+dict with instruments/access/testing-token verdicts; fast_sound_scaling
+from one sourced external literal 3200 m/s; status THEORY_CLOSED_B281);
+dispatch PAPER_2276 (2,327 keys); VERSION 0.437.0 + pin; B281 gate pin
+(ledger shape, statuses, the rescaled numbers, both rulings, every
+front's instrument/falsifier/OPEN status, the e-mail route, the CANNOT
+verdicts, ATR, NEGATIVE, MD CHEAPEST, 3200 m/s, the paper text, the
+registry row, Q-247 in RULINGS_QUEUE); registry +2 (ns_proof_set_
+closeout WIRED; sound_cone_speed_at_omega_scm OPEN_RULING) -> 7,121;
+graph +2; citations/residuals +1; duplicates/gaps band records; 8
+satellites NSPROOFSET_ARC_B281 (R1_QUEUE RULING_REQUESTED, needs_daniel
+yes); ledger v0.437.0; index row 2276 + census 2,272 / 2,327; RULINGS_
+QUEUE Q-247 (source-verified: PRL abstract quoted; numbers recomputed
+live). Labels: band v0.437.0 THE CLOSEOUT INDEX SHIP - README (banner,
+ONE release paragraph replaced, shipped heading, wired line, census
+sentence, registry line, badges 6106 / 2327 / 2321, cacheBust 0.437.0,
+defs 4,199), pyproject (498 chars), CITATION (version x2, date-released
+2026-09-13), CHANGELOG, _BUILD_LOG, SHIP_MESSAGE. Manifest 2,731.
+
+Gate: red on exactly the four label guards while the count was a
+placeholder, stamped 6,106, then GREEN 6,106/0 (cloud workspace, real
+scipy/sympy/mpmath); acceptance 109/109; staleness sweep clean (no
+6,105 / 2,326 / 2,320 / 7,119 outside history; the only v0.436.0-only
+file before this entry was this log). Environment unchanged from the
+B280 route: the trident01 Linux workspace and both local MCP servers
+still fail to launch, so the tree came over as wheels/_cloud_tree.zip
+(the v0.436.0 prep state = the shipped tree; ship.ps1 changes no
+files), the fold ran in the cloud, and changed files go back over the
+file bridge. Rehearsal (disk hygiene): prior dir deleted, fresh mirror
+2,732 files from the tracked set, build venv with Daniel's setuptools-84
++ wheel-0.48 (the container's Debian setuptools fails on install_layout),
+pip wheel --no-deps --no-build-isolation: 24.7 MB, 20/20 modules,
+2,731/2,731 data-files (PAPER_2276 aboard), no operator leak; installed
+--no-deps into a second fresh venv, calc('PAPER_2276') from an empty
+cwd returns THEORY_CLOSED; rehearsal dir deleted (30 GB free). Tree: 25
+files modified + 1 new (the paper), committed back over the file
+bridge with hashes verified. Daniel ships via .\ship.ps1.
+
+Remaining after this band, Daniel-owned: Q-246, Q-247, the Track 3
+disposition; the JHTDB full-token e-mail; the Kerr letter; the ATR
+THz-TDS afternoon; the MD run (cheapest); the IXS/INS archive pull.
