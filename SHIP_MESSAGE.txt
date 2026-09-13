@@ -1,37 +1,76 @@
-v0.435.0 — THE IN-MEDIUM SAMPLE SHIP
+v0.436.0 — THE REYNOLDS LADDER + SPINE AUDIT + THEOREM B SHIP
 
-B277 (PAPER_2272): the pair cap's SECOND branch meets real data.
+B278 (PAPER_2273): the cap across Re_lambda 433 -> 2,500, up to the
+largest DNS in existence.
 
-- PAPER_2264 (B269) split the NS enstrophy cap by the B112 context
-  rule: vacuum-coupled flows cap at 17/20, in-medium flows at 197/200
-  - a flagged falsifiable prediction. B276 graded the vacuum-side
-  statistic on isotropic8192; B277 puts the in-medium branch in front
-  of wall-bounded turbulence.
-- JHTDB channel flow (Re_tau ~ 1000), t = 1.0, fd4lag4 gradients,
-  official REST service, publicly sanctioned testing token, 2 x 1,000
-  deterministic points (seeds 28/29; bit-reproducible). The walls
-  (|y| > 0.9) were EXCLUDED - disclosed in the paper, the module, the
-  provenance file, and the registry.
-- THE IN-MEDIUM BRANCH HOLDS: sampled 1182-form ratios 0.039143 /
-  0.031072, sub-batch max 0.073405 - thirteen times under 197/200 and
-  eleven times under 17/20. Verdict issued by the tier-3 harness, now
-  carrying the `cap` argument its B269 docstring promised (first real
-  use). Positive-stretching fraction 0.736/0.764 - the DNS skewness
-  reproduced in shear flow.
-- Rule 7, the headline: at these margins the sampled statistic CANNOT
-  DISCRIMINATE the two branches - both pass by an order of magnitude.
-  This is a CONSISTENCY PASS for the in-medium branch, NOT the pair-cap
-  discrimination; that lives in the far tail with the extreme-event
-  kill test and stays OPEN. ns_proof_set() data front 2 says exactly
-  that; four fronts and three flags unchanged in count.
+- A cap graded at one Reynolds number (B276) could be a cap on
+  borrowed time. The ladder asks the question one snapshot cannot:
+  does the sampled 1182-form statistic climb toward 17/20 with Re?
+- Daniel supplied the sanctioned JHTDB testing token a third time.
+  Same protocol - official REST service, deterministic bit-reproducible
+  points (B276 anchors re-pulled bit-exact FIRST), 2 x 1,000 gradient
+  tensors per rung, new seeds - on isotropic1024coarse (Re_lambda
+  ~433), isotropic4096 (610.57), isotropic8192 (1200-1300, B276) and
+  isotropic32768 (~2,500: 32,768^3, 3.5e13 grid points, the
+  record-setting Frontier exascale run), plus a resolution check at
+  fixed Re_lambda ~610 (4096^3 vs isotropic8192 snapshot 6 on 8192^3).
+- THE CAP HOLDS AT EVERY RUNG: worst ratio anywhere 0.107323, eight
+  times under 17/20, verdict by the tier-3 harness on 88 rows. The
+  global statistic shows NO trend toward the cap - the highest rung
+  carries the lowest mean. The resolution pair agrees within seed
+  scatter. Positive-stretching fraction in the textbook 0.75-0.78 band
+  at every rung.
+- Rule 7, the headline: the 100-point sub-batch envelope drifts
+  monotonically upward with Re (0.068 -> 0.107) - the intermittency
+  direction, exactly where a violation would live. FLAGGED for the
+  full-token extreme-event scan, not extrapolated away. The ladder
+  answers the Re-trend question, NOT the kill test, which stays OPEN.
+  isotropic4096's transient backend faults are disclosed; every
+  recorded number came from a 200 response.
 - Daniel ledger unchanged: JHTDB full token / Kerr letter = the kill
-  test + the pair-cap discrimination; THz bench; GFZ deep-sonic; U_i
-  spec; SEG-Y; quartz bench; tester answers.
-- Housekeeping, guarded: the staleness sweep's own finds are fixed AND
-  pinned as SHIP GUARD v10 - README whitepapers badge measured live,
-  README census sentence carries the live figures, WHITEPAPER_INDEX
-  title column repaired on 2262-2272 (PAPER_2261's title had been
-  copy-propagated); SHIP GUARD v5 label regex case-insensitive.
+  test + the pair-cap discrimination (+ now: does the envelope
+  saturate?); THz bench; GFZ deep-sonic; U_i spec; SEG-Y; quartz
+  bench; tester answers.
 
-Gate 6,102/0. Dispatch 2,323 keys. Registry 7,112 rows. Acceptance
+B279 (same band) - THE SPINE AUDIT (PAPER_2274): the proof-gap ledger
+opened at B269 still carried one unnamed theory row, ns_functional_
+spine. Daniel: "find the missing pieces" in the predecessor repo. It
+was the predecessor S300 "UQFF-Leray" argument, and it is audited here
+with file:line quotes: the budget and the cap stand (derived since
+B271), the Sobolev step is FALSE - dimensionally and because H^1(R^3)
+is not in L^inf (a divergence-free family with finite E, finite E_2
+and unbounded sup is exhibited and witnessed live) - Young yields only
+Leray's small-data condition, and a constant 17/20 leaves the BKM
+criterion untouched. The predecessor's own audit had said ASSERTION_
+ONLY. Theorem A never needed the step; the domain ruling assigns the
+regime that does to mathematics; the row closes BY THAT RULING with
+this paper as the record. Registry open theory rows: ZERO. The Clay
+statement is not claimed.
+
+B280 (same band) - THEOREM B (PAPER_2275). Daniel: "I have a feeling
+the solution is all three. Let's solve for all three." The corpus
+carries the phonon sector in three forms - the LINE (Gaussian /
+Lorentzian at f_c = 1.25 THz, Q = 25/2), the THRESHOLD (H_SCm: dynamics
+only below the carrier) and the Gaussian TAIL in mode number q^{n^2},
+q = exp(-beta_i [SSq]) = 0.7092 (PAPER_1042) - and composed they are
+ONE Fourier multiplier: unity below k_c, a shoulder at k_c, Gaussian
+above. In x that is a Gaussian mollifier of width eps = sqrt(2 beta_i
+[SSq])/k_c = 0.156 nm for water - no free parameter, one flagged
+identification (n = k/k_c). Put on the transport, where the corpus
+puts it, the CONTINUUM fluid - all modes, nothing truncated, no ruling
+needed - is Leray's 1934 regularised system: energy conserved; the
+smoothed field's gradient bounded by the energy, ||grad u_eps||_inf <=
+C eps^-5/2 ||u_0||_2 (the step S300 needed and could not have,
+legitimate because the bounded field is the SMOOTHED one; C^2 =
+3/(16 pi^3/2) EXACT); Gronwall closes H^1; the solution is UNIQUE,
+GLOBAL and C^inf. No cap, no envelope, no Sobolev embedding, no BKM.
+Theorem A is the sharp-filter limit; the constant diverging as eps ->
+0 is the domain ruling made quantitative. The whole-corpus sweep
+found the same threshold twice - the PAPER_106 power-law forms close
+the same track iff beta > 5/2 (mollifier) and a >= 5/2 (Lions) - so
+Track 3 is CLOSED on the Gaussian form and CONDITIONAL on PAPER_106,
+pending Daniel's exponent ruling. Front 4 gains a shape (Gaussian
+roll-off, 1/e at 1.71 k_c). The Clay statement is not claimed.
+
+Gate 6,105/0. Dispatch 2,326 keys. Registry 7,119 rows. Acceptance
 109/109 (simulator v1.90.0 untouched).

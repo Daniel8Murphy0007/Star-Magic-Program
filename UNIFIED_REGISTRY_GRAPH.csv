@@ -12401,3 +12401,7 @@ thz_bench,PAPER_2269,DISCRIMINATES,gamma_910_vs_896,two corpus widths - one expe
 ns_ladder,PAPER_2270,CONSOLIDATES,eight_rungs,B275: one paper, one live function, zero open theory rungs
 jhtdb_isotropic8192,PAPER_2271,GRADES,ns_enstrophy_cap,B276: first contact with measured turbulence - CAP HOLDS sampled at Re_lambda 1300
 jhtdb_channel,PAPER_2272,GRADES,ns_enstrophy_cap_pair,B277: the in-medium branch meets wall-bounded turbulence - HOLDS sampled at Re_tau 1000 under both caps; discrimination OPEN
+jhtdb_isotropic_ladder,PAPER_2273,GRADES,ns_enstrophy_cap,B278: four Reynolds numbers 433 -> 2500 incl. isotropic32768 - CAP HOLDS at every rung; envelope drift FLAGGED; kill test OPEN
+predecessor_S300,PAPER_2274,AUDITS,ns_functional_spine,B279: the anonymous spine gap named as the S300 UQFF-Leray route and closed by ruling PAPER_2268 - S3 false; Theorem A unaffected
+phonon_forms_A_B_C,PAPER_2275,COMPOSES_INTO,phonon_mollifier_width_eps,B280: line (PAPER_2269/1907) x threshold (PAPER_102/1072/893) x Gaussian tail (PAPER_1042) = one multiplier; eps = sqrt(2 beta_i SSq)/k_c = 0.156 nm
+phonon_mollifier_width_eps,PAPER_2275,PROVES,theorem_b_continuum,B280: Leray 1934 mollified transport - global unique C^inf solution for every finite-energy divergence-free u_0; M_eps diverges as eps -> 0 (PAPER_2268 boundary quantitative)

@@ -278,3 +278,6 @@ band,DOMAINPROFILE_ARC,PREP v0.433.0,ruling and roll-off in one band - the ladde
 band,NSPROOFSET_ARC,PREP v0.434.0,the proof set consolidated - theory complete and waiting on data with the kill test named first
 band,NSPROOFSET_ARC_B276,PREP v0.434.0,first contact - the cap holds where the data could reach and says so where it could not
 band,NSPROOFSET_ARC_B277,PREP v0.435.0,the in-medium sample - the second branch holds and the statistic says plainly what it cannot decide
+band,NSPROOFSET_ARC_B278,PREP v0.436.0,the Reynolds ladder - the cap holds up to the largest DNS in existence and the one thing that moved with Re is written down as a flag
+band,NSPROOFSET_ARC_B279,PREP v0.436.0,the spine audit - the predecessor said complete and its own audit said assertion; this program derived the cap and proved the theorem without the step, and now says so in the ledger
+band,NSPROOFSET_ARC_B280,PREP v0.436.0,Theorem B - the continuum fluid is globally regular under its own phonon smoothing; the sharp truncation of Theorem A is the eps -> 0 limit of a mollifier the corpus already carried in three pieces; the domain boundary is now the number 0.156 nm

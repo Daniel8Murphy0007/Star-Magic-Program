@@ -7625,3 +7625,24 @@ CAPTURED_BACKSOLVE records retained. The 4 pre-existing LIVE_MISMATCH
 rows stay disclosed. The regeneration + zero-count now run inside the
 gate. The labels were never the work — the derivations were, and they
 were in the corpus.
+
+### Q-246 — PAPER_106 / PAPER_2275 — the high-k phonon exponents (a, beta) vs the 5/2 threshold
+- **Question:** Theorem B (PAPER_2275, B280) closes Track 3 on the
+  PAPER_1042 Gaussian tail q^{n^2}. The whole-corpus sweep found the
+  same threshold twice in PAPER_106 (L97-99): the suppression factor
+  1/(1 + (k/k_Q)^beta) is a valid Leray mollifier iff **beta > 5/2**
+  (||grad rho||_2^2 ~ int k^{4-2 beta} dk), and the damping rate
+  Gamma_0 (k/k_Q)^a gives Lions (1969) global regularity iff
+  **a >= 5/2**. PAPER_106 states neither exponent numerically.
+  RULING: (a) fix a and beta, or (b) canonize the PAPER_1042 Gaussian
+  tail as THE high-k form for fluid modes (beta -> infinity member;
+  both conditions automatic). If either exponent is fixed below 5/2,
+  that route closes NEGATIVE and Theorem B rests on the Gaussian form
+  alone - the theorem and the number 0.156 nm are unaffected either
+  way. Also Daniel-gated: the identification n = k/k_c (only the number
+  depends on it; PAPER_205's e^{-[SSq] n/26} variant gives 0.004 nm).
+- **Notable:** PAPER_106's k_Q = E_Q/(hbar c) is the LIGHT-cone
+  momentum; the fluid cutoff k_c = omega_SCm/c_s (PAPER_2267) is the
+  sound-cone one (ratio c/c_s). Registry: phonon_mollifier_width_eps
+  WIRED_FLAGGED; R1_QUEUE NSPROOFSET_ARC_B280 RULING_REQUESTED.
+- **Status:** OPEN (B280, 2026-09-13).

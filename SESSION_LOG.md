@@ -13699,3 +13699,206 @@ on a mutated input); staleness sweep clean; manifest regen unchanged
 v10; installed --no-deps into a fresh venv and calc('PAPER_2272')
 answers from an empty cwd. Rehearsal dir deleted. Tree: 25 modified +
 2 new (channel CSV, PAPER_2272). Daniel ships via .\ship.ps1.
+
+## 2026-09-11 — v0.436.0 prep — B278: THE REYNOLDS LADDER
+
+v0.435.0 confirmed shipped FIRST (HEAD 0beeebf == tag; tree clean;
+PyPI page shows 0.435.0 in the in-app browser). Daniel dropped the
+sanctioned testing token a third time. Since nothing NS-side moves
+without outside data and a <4,096-point query can only touch WHERE the
+cap holds, the band became the Reynolds ladder: one statistic, four
+Reynolds numbers.
+
+Method notes (for the next session): the sandbox egress still blocks
+JHTDB, so the queries ran in the in-app browser on the JHTDB site
+origin. The REST format was re-derived from the service's own error
+messages (it leaks parameter names): GET /turbulence-svc/values takes
+one point (x,y,z,t,function=GetVariable,dataset,authToken,var,sop,sint,
+tint); POST with the same query string and a TAB-SEPARATED body of
+"x\ty\tz" lines takes a batch (comma- and JSON-bodies fail). Snapshot
+datasets take `t` as an INTEGER index (isotropic8192: 1..6, snapshots
+1-5 = Re 1200-1300, 6 = Re ~610 high-res; isotropic4096/32768: t=1
+only); isotropic1024coarse takes real t in [0, 10.056]. The service
+lists isotropic32768 (32,768^3, Re_lambda ~2,500, Frontier) and it
+answers the testing token. FIRST ACTION was the re-pull of B276's seed-27
+anchor points - bit-exact (72778.5/13137.6; -2.30467e6/2.33286e5), so
+the LCG + gradient chain is proven before any new number is trusted.
+
+Acquisition: isotropic1024coarse t=1.0 seeds 30/31; isotropic4096 t=1
+seeds 32/33; isotropic8192 t=6 seeds 36/37 (the resolution pair with
+4096 at Re ~610); isotropic32768 t=1 seeds 34/35; 1,000 points each,
+8 requests, all well inside the sanctioned limit. isotropic4096 threw
+"result was not filled correctly" ~10 times (even on the single point
+that had answered a minute earlier) before both seeds landed - a
+transient JHTDB backend fault, disclosed in the paper, the module, the
+registry and the provenance file; every recorded number is from a 200.
+One link blip mid-run (the page state survived; results were re-read
+from the page and cross-checked).
+
+RESULT: CAP HOLDS AT EVERY RUNG - worst ratio 0.107323 (8x under 17/20)
+on the largest DNS in existence. Global statistic: NO trend toward the
+cap (rung means 0.0288 / 0.0327 / 0.0229 / 0.0266 / 0.0218). Resolution
+pair at Re ~610 agrees within seed scatter. NEW FLAG (Rule 7, stated as
+the headline): the 100-point sub-batch envelope drifts monotonically
+upward with Re (0.068 -> 0.070 -> 0.082 -> 0.084 -> 0.107; max|w|/w_rms
+5.4 -> 9.7) - the intermittency direction, exactly where a violation
+would live. It is filed as a flag for the full-token extreme-event scan
+(does the envelope saturate?), not extrapolated away. The ladder
+answers the Re-trend question and NOT the kill test.
+
+Fold: PAPER_2273; dispatch PAPER_2273 -> reynolds_ladder_grade()
+(REYNOLDS_LADDER table + live harness read of the 88-row CSV);
+ns_proof_set() front 1 extended (4 fronts / 3 flags unchanged - the
+envelope drift lives inside front 1's text and the registry, not as a
+fourth standing flag, because it is a data-front observation, not a
+corpus-chain gap); B278 gate pin (harness verdict on 88 rows, worst
+0.107323, five rungs spanning 433 -> 2500, monotone envelope, highest
+rung = lowest mean, frac(+) in [0.74, 0.78] everywhere, front-1 text);
+registry +3 (7,115), graph/citations/residuals +1, all 8 satellites
++1 NSPROOFSET_ARC_B278 row, index row + census, labels (pyproject 466
+chars, VERSION, gate pin, CITATION x2, README badges incl. the v10
+whitepapers count 2,318 + banner + shipped + census), ledger v0.436.0,
+CHANGELOG, _BUILD_LOG, SHIP_MESSAGE; manifest 2,728 (CSV + paper
+aboard). Gate GREEN 6,103/0 with real scipy, first run; acceptance
+109/109; staleness sweep clean. Wheel rehearsal with the disk hygiene:
+prior dirs deleted, df-check 7.6 GB free, fresh mirror (2,729 files =
+2,728 manifest + the barred junk file), pip wheel --no-build-isolation
+(setuptools 84): 24.6 MB, 20/20 modules, 2,728/2,728 data-files (CSV +
+PAPER_2273 aboard), no operator leak; installed --no-deps into a fresh
+venv, calc('PAPER_2273') from an empty cwd returns CAP HOLDS at all
+rungs from the installed data. Rehearsal dir deleted. Tree: 25
+modified + 2 new (ladder CSV, PAPER_2273). Daniel ships via .\ship.ps1.
+
+### 2026-09-12 (addendum, same v0.436.0 band) - B279: THE SPINE AUDIT
+
+Daniel: "I was one step from closing the proof set and now ... you want
+me to do all of that over again?" then "do your homework and analyze
+all ships starting with v0.429.0 ... you are missing some memory", then
+"the previous session had access to github.com/Daniel8Murphy0007/
+Star-Magic ... find the missing pieces", then "author a paper."
+
+What the homework found (all ships v0.429.0-v0.435.0 re-read; the
+predecessor repo opened read-only, Rule E): the three-row proof-gap
+ledger of B269 had two rows closed by later rows (derivation ->
+PAPER_2265/2266; [SCm]->0 -> PAPER_2268) and ONE row never superseded:
+ns_functional_spine (H^s/BKM). The DOMAINPROFILE_ARC trail said in
+prose it was "no longer a framework obligation post-B273" but the
+registry still read OPEN - so my status reports in this session first
+called the theory "closed" (B275's zero rungs) and then, on the
+registry, "one open row"; both were true of different artefacts and I
+had never named the argument the row was about. The predecessor names
+it: _session300_millennium_navier_stokes.py - the S300 "UQFF-Leray"
+theorem (cap -> Sobolev -> Young -> global smoothness -> "S300
+COMPLETE"), the PAPER_1182 sec 3.5 era. The predecessor's own
+session-259 _millennium_prize_audit.json had already returned
+ASSERTION_ONLY ("Global smoothness is the OPEN content") and its Lean
+scaffold carries NavierStokesGlobalRegularity as a True placeholder.
+Three-way split, inherited unnamed.
+
+PAPER_2274 authored (file:line quotes from S300, the tex, the audit
+json, the Lean file): S1 budget correct; S2 cap correct and DERIVED
+since B271 (the constant changed, the BKM structure did not); S3 the
+Sobolev step ||w||_inf <= C E_2^{1/2} E^{1/4} FALSE - dimensionally
+(rhs ~ w^{3/2} L^{5/4}; the only balanced exponents are (3/4, -1/4))
+and analytically (H^1(R^3) not in L^inf: the divergence-free family
+omega = grad(r^{1-alpha}) x e_z, 0 < alpha < 1/2, has finite E and E_2
+and unbounded sup; at alpha = 2/5 the integrals are exactly 5 and 5/11
+- both recomputed live in spine_audit() and pinned); S4 Young = a
+small-data threshold (Leray 1934) and the "nu_eff = nu/0.85" sentence
+is a non sequitur; S5 does not follow. The structural sentence: the
+cap bounds stretching BY ||w||_inf E, so it feeds the BKM integral and
+does not control it - 17/20 in place of 1 leaves the criterion where it
+was, which is exactly B269's "3D enstrophy alone does not". Why the
+proof set stands: Theorem A lives on the finite mode space where
+||w||_inf ~ ||w||_2 (S3 unnecessary, not skipped), and PAPER_2268
+assigns the regime that needs S3 to mathematics. Disposition: row
+SUPERSEDED_BY_RULING (PAPER_2268) + AUDITED (PAPER_2274); registry open
+theory rows ZERO - the ledger now says what PAPER_2270 said. The Clay
+statement is NOT claimed; nothing in B267-B278 depended on S3.
+
+Fold: dispatch PAPER_2274 -> spine_audit(); ns_proof_set() gains
+spine_row (rungs untouched, B275 pin holds); B279 gate pin (exponents,
+the two exact integrals, the unbounded sup, the S3/S4 verdicts, the
+BKM sentence, the disposition, the registry SUPERSEDED_BY_RULING row);
+registry +2 (7,117), graph/citations/residuals +1, 8 satellites +1
+NSPROOFSET_ARC_B279, index row + census 2,270 / 2,325; band renamed
+THE REYNOLDS LADDER + SPINE AUDIT SHIP across README banner, pyproject
+(494 chars), CHANGELOG, _BUILD_LOG, SHIP_MESSAGE; badges 6,104 / 2,325
+/ 2,319. Manifest 2,729. Gate GREEN 6,104/0 first run (real scipy);
+acceptance 109/109; staleness sweep clean. Still unlogged and
+Daniel-owned: the content of Track 3 from the B272 discussion.
+Rehearsal (disk hygiene): prior dirs deleted, 7.6 GB free, fresh mirror
+2,730 files, pip wheel --no-build-isolation: 24.6 MB, 20/20 modules,
+2,729/2,729 data-files (PAPER_2273 + PAPER_2274 + ladder CSV aboard), no
+operator leak; installed --no-deps into a fresh venv, calc('PAPER_2274')
+from an empty cwd returns the disposition. Rehearsal dir deleted. Tree:
+25 modified + 3 new. An empty .git/index.lock is again left by git in
+the sandbox - ship.ps1 step 0 clears it. Daniel ships via .\ship.ps1.
+
+### 2026-09-13 (addendum, same v0.436.0 band) - B280: THEOREM B FOLDED
+
+Daniel: "I have a feeling the solution is all three. Let's solve for all
+three" -> PAPER_2275 authored 2026-09-12 (Theorem B; whole-corpus sweep
+in sec 8), wiring deferred for want of a gate-running shell. The shell
+never came back: the Cowork Linux workspace on trident01 fails to start
+(Windows update of 2026-09-08), the Docker MCP gateway dies on launch
+inside Claude Desktop ("Connection closed"; it runs clean by hand in
+25 s), and a plain Node MCP server dies the same way - two unrelated
+servers, one failure, so the fault is the desktop's spawn path, not
+Docker or PATH (Machine PATH now carries Docker's bin; the user PATH
+had stray quotes, stripped). Route taken instead: Daniel zipped the
+exact `git ls-files --cached --others --exclude-standard` set (2,731
+files, 22 MB, into gitignored wheels/), the file bridge carried it to
+the cloud workspace (real scipy 1.17; sympy 1.14 + mpmath 1.4 arrived
+as wheels the same way, PyPI and GitHub both 403 from there), git init
+reproduced the manifest bit-for-bit plus the one PAPER_2275 line, and
+the baseline gate matched the prep state before any edit.
+
+The fold: theorem_b() in uqff_ns_assembly - q = exp(-beta_i [SSq]) =
+0.7092 (SSQ imported from the primitives, no literal), lambda_c = 1.184
+nm, eps = sqrt(2 beta_i [SSq])/k_c = 0.8290/k_c = 0.1562 nm = 0.1319
+lambda_c, multiplier m(n k_c) = q^{n^2} (0.709 / 0.253 / 0.045 /
+1.9e-4 at n = 1/2/3/5), 1/e point 1.706 k_c, the Gaussian gradient
+constant ||grad rho_eps||_2^2 = (3/(16 pi^{3/2})) eps^{-5} EXACT
+(checked against a numeric radial integral to 1e-17), the 5/2 threshold
+twice (beta > 5/2 mollifier: int k^{4-2 beta} converges iff so, table
+{2: no, 5/2: no, 3: yes}; a >= 5/2 Lions), the four RIGOROUS steps,
+the FLAGGED identification n = k/k_c, the RULING REQUESTED line, the
+front-4 shape, the coincidence flag, the not-claimed list. Dispatch
+PAPER_2275 -> theorem_b() (2,326 keys). ns_proof_set() gains
+theorem_b_row and front 4 gains its shape (rungs untouched; B275 pin
+holds). B280 gate pin: every number above at the paper's precision,
+the four steps, the uses/does-not-use sentence, the divergence
+sentence, both flags, the track-3 disposition, theorem_b_row, the
+paper's own text ('**THEOREM B.**', 'RULING REQUESTED', '0.156 nm',
+'beta > 5/2'), the registry row. Registry +2 (theorem_b_continuum
+WIRED; phonon_mollifier_width_eps WIRED_FLAGGED) -> 7,119; graph +2;
+citations/residuals +1; duplicates/gaps band records; all 8 satellites
+NSPROOFSET_ARC_B280 (R1_QUEUE: RULING_REQUESTED, needs_daniel yes).
+Index row 2275 + census 2,271 / 2,326. PAPER_2275 status line flipped
+AUTHORED -> WIRED (B280). Band renamed THE REYNOLDS LADDER + SPINE
+AUDIT + THEOREM B SHIP across README banner (+ Theorem B paragraph),
+pyproject (497 chars), CHANGELOG, _BUILD_LOG, SHIP_MESSAGE; badges
+6,105 / 2,326 / 2,320; README defs 4,198. Manifest 2,730.
+
+Gate: first run red on exactly the four label guards (v3 x2, v5, v6)
+because the count was a placeholder until measured - stamped 6,105 -
+then GREEN 6,105/0 (real scipy + sympy + mpmath, 40 s); acceptance
+109/109. Staleness sweep clean (no 6,104 / 2,325 / 2,319 / 7,117 left
+outside history). Rehearsal (disk hygiene): fresh mirror 2,731 files
+from the tracked set; the container's Debian setuptools 68 fails on
+`install_layout` for this manifest, so the build ran in a fresh venv
+carrying Daniel's setuptools-84 + wheel-0.48 wheels: pip wheel
+--no-deps --no-build-isolation -> 24.7 MB, 20/20 modules, 2,730/2,730
+data-files (PAPER_2275 aboard), no operator leak; installed --no-deps
+into a second fresh venv, calc('PAPER_2275') from an empty cwd returns
+THEOREM_B_PROVED; rehearsal dir deleted (30 GB free). Tree: 24 files
+modified incl. this log + RULINGS_QUEUE Q-246, 0 new (the paper already existed) - committed back over the
+file bridge, unchanged files untouched. Daniel ships via .\ship.ps1
+(it re-gates on his machine; sympy/mpmath/scipy wheels are in wheels/).
+
+OPEN after this band, Daniel-owned: the PAPER_106 exponents a, beta (or
+canonize the PAPER_1042 Gaussian tail) - RULINGS_QUEUE; the kill test;
+the pair-cap discrimination; the THz bench; the envelope-saturation
+check; and, now that Track 3 is written, whether the B272 discussion
+held anything Theorem B does not cover.

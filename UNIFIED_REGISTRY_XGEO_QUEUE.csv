@@ -1765,3 +1765,6 @@ DOMAINPROFILE_ARC,n/a,n/a,NOT_APPLICABLE,B273/B274 domain+profile band,v0.433.0
 NSPROOFSET_ARC,n/a,n/a,NOT_APPLICABLE,B275 consolidation band,v0.434.0
 NSPROOFSET_ARC_B276,n/a,n/a,NOT_APPLICABLE,B276 first-contact addendum - same band,v0.434.0
 NSPROOFSET_ARC_B277,n/a,n/a,NOT_APPLICABLE,B277 in-medium sample band,v0.435.0
+NSPROOFSET_ARC_B278,n/a,n/a,NOT_APPLICABLE,B278 Reynolds ladder band,v0.436.0
+NSPROOFSET_ARC_B279,n/a,n/a,NOT_APPLICABLE,B279 spine audit - same band,v0.436.0
+NSPROOFSET_ARC_B280,n/a,n/a,NOT_APPLICABLE,B280 Theorem B - same band,v0.436.0

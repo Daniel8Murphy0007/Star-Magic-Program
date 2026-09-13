@@ -187,3 +187,6 @@ DOMAINPROFILE_ARC,band v0.433.0,RULED,B273 (outside physical domain) + B274 (der
 NSPROOFSET_ARC,band v0.434.0,RULED,B275 (consolidate),no,what could be done was done - what remains needs the world
 NSPROOFSET_ARC_B276,band v0.434.0,GRADED,B276 (JHTDB sampled grade),no,the harness built to kill was handed real data and returned CAP HOLDS - first contact
 NSPROOFSET_ARC_B277,band v0.435.0,GRADED,B277 (JHTDB channel in-medium sample),no,the second branch held where the data could reach; the discrimination question is left open rather than claimed
+NSPROOFSET_ARC_B278,band v0.436.0,GRADED,B278 (JHTDB Reynolds ladder incl. isotropic32768),no,the cap held at every Reynolds number the public record offers; the envelope drift is filed as a flag for the scan rather than argued away
+NSPROOFSET_ARC_B279,band v0.436.0,CLOSED_BY_RULING,B279 (spine audit; supersedes via PAPER_2268),no,the row was closed by the domain ruling the day it was made - the record just had not written it; the audit names the source and says where it stops
+NSPROOFSET_ARC_B280,band v0.436.0,RULING_REQUESTED,B280 (Theorem B; PAPER_106 exponents a and beta vs the 5/2 threshold),yes,pending - fix a and beta or canonize the PAPER_1042 Gaussian tail; Theorem B stands on the Gaussian form either way

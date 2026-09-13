@@ -566,3 +566,18 @@ and 17/20; walls excluded, disclosed). Consistency PASS only - the
 pair-cap discrimination stays open in the far tail with the kill test.
 Harness gains the `cap` argument. SHIP GUARD v10 (badge, census
 sentence, index titles). Gate 6,102/0.
+
+## v0.436.0 — 2026-09-12 — THE REYNOLDS LADDER + SPINE AUDIT + THEOREM B SHIP
+PAPER_2273 (B278): the NS cap graded across Re_lambda 433 -> 2,500 on
+JHTDB isotropic1024coarse / 4096 / 8192 / 32768 (the 32768^3 record
+DNS) via the sanctioned public token: CAP HOLDS AT EVERY RUNG (worst
+0.1073 vs 0.85); no trend toward the cap; resolution check at Re ~610
+agrees; sub-batch envelope drift with Re FLAGGED for the full-token
+scan. Kill test open. PAPER_2274 (B279): the last anonymous theory row
+(predecessor S300 Sobolev step) named, audited FALSE, closed by the
+B273 ruling - open theory rows zero. PAPER_2275 (B280): THEOREM B -
+the three phonon forms (line, threshold, Gaussian tail) composed into
+one mollifier, eps = sqrt(2 beta_i [SSq])/k_c = 0.156 nm; the continuum
+fluid with phonon-mollified transport globally regular (Leray 1934);
+Track 3 closed on the Gaussian form, conditional on PAPER_106 (5/2
+threshold twice) pending Daniel's exponent ruling. Gate 6,105/0.

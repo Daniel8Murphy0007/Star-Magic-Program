@@ -5,6 +5,74 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.436.0 — 2026-09-12 — THE REYNOLDS LADDER + SPINE AUDIT + THEOREM B SHIP
+
+- B278 (PAPER_2273): the vacuum-branch cap statistic across FOUR Reynolds
+  numbers of forced isotropic turbulence - JHTDB isotropic1024coarse
+  (Re_lambda ~433), isotropic4096 (610.57), isotropic8192 (1200-1300,
+  B276) and isotropic32768 (~2,500; 32,768^3, the largest DNS in
+  existence, reached with the same sanctioned public token) - plus a
+  resolution check at Re_lambda ~610 (4096^3 vs 8192^3 snapshot 6).
+  Same protocol (official REST, 2 x 1000 deterministic points per rung,
+  new seeds; B276 anchors re-pulled bit-exact first). CAP HOLDS AT EVERY
+  RUNG: worst ratio 0.107323 (8x under 17/20), 88 harness rows. Global
+  statistic: NO trend toward the cap (rung means 0.0288 / 0.0327 / 0.0229
+  / 0.0266 / 0.0218). Resolution pair agrees within seed scatter.
+  NEW FLAG: sub-batch envelope drifts monotonically upward with Re
+  (0.068 -> 0.107) - the intermittency direction - filed for the
+  full-token extreme-event scan, not extrapolated away. Kill test OPEN.
+  ns_proof_set() front 1 updated (still 4 fronts / 3 standing flags).
+  Data + provenance addendum in jhtdb_grade/ (on the wheel).
+  Dispatch 2,324; registry 7,115 rows; gate 6,103/0; simulator untouched.
+
+- B279 (same band, PAPER_2274): THE SPINE AUDIT. The B269 proof-gap
+  ledger still carried one unnamed theory row (ns_functional_spine).
+  Daniel pointed at the predecessor repo (Rule E, read-only): the row
+  was the predecessor S300 "UQFF-Leray" argument (PAPER_1182 sec 3.5
+  era). Audited with file:line quotes: S1 budget + S2 cap stand (cap
+  DERIVED since B271); S3 Sobolev step ||w||_inf <= C E_2^1/2 E^1/4 is
+  FALSE - dimensionally (scales as w^3/2 L^5/4; only (3/4,-1/4)
+  balance) and analytically (H^1(R^3) not in L^inf; divergence-free
+  family grad(r^(1-alpha)) x e_z with finite E, E_2, unbounded sup,
+  witnessed live); S4 Young = Leray small data only; BKM untouched by a
+  constant. Predecessor's own session-259 audit: ASSERTION_ONLY; Lean
+  placeholder. Theorem A never used S3; the B273 ruling assigns the
+  regime that needs it to mathematics. Row SUPERSEDED_BY_RULING +
+  AUDITED; registry open theory rows ZERO (matches PAPER_2270). Clay
+  not claimed. spine_audit() live; ns_proof_set() carries spine_row.
+  Dispatch 2,325; registry 7,117 rows; gate 6,104/0.
+
+- B280 (same band, PAPER_2275): THEOREM B. Daniel: "I have a feeling
+  the solution is all three. Let's solve for all three." The corpus's
+  three phonon forms - the LINE (Gaussian/Lorentzian at f_c = 1.25 THz,
+  Q = 25/2; PAPER_2269/1907), the THRESHOLD (H_SCm(k_c - k); PAPER_102/
+  1072/893) and the Gaussian TAIL in mode number q^{n^2}, q = exp(-beta_i
+  [SSq]) = 0.7092 (PAPER_1042) - compose into ONE Fourier multiplier:
+  unity below k_c, shoulder at k_c, Gaussian above. In x that is a
+  Gaussian mollifier of width eps = sqrt(2 beta_i [SSq])/k_c = 0.829/k_c
+  = 0.156 nm (water; 0.1319 lambda_c; no free parameter; ONE flagged
+  identification n = k/k_c - the theorem holds for any smooth tail,
+  only the number depends on it). Placed on the transport (corpus-
+  selected), the CONTINUUM fluid - all modes, no truncation, no ruling
+  - is Leray's 1934 regularised system: (i) energy conserved; (ii)
+  ||grad u_eps||_inf <= ||grad rho_eps||_2 ||u_0||_2 = C eps^-5/2
+  ||u_0||_2 = M_eps, a CONSTANT (C^2 = 3/(16 pi^3/2) EXACT) - the step
+  S300 needed and could not have, legitimate because the bounded field
+  is the smoothed one; (iii) Gronwall on H^1; (iv) local well-posedness
+  + bounds at every order -> UNIQUE GLOBAL C^inf. Uses no cap, no
+  envelope, no Sobolev embedding, no BKM. Theorem A = the sharp-filter
+  limit; M_eps diverging as eps -> 0 = the PAPER_2268 boundary made
+  quantitative. Whole-corpus sweep (2,307 papers, three patterns) found
+  the 5/2 threshold TWICE: the PAPER_106 forms close the same track iff
+  beta > 5/2 (mollifier) / a >= 5/2 (Lions) - Track 3 CLOSED on the
+  Gaussian form, CONDITIONAL on PAPER_106; RULING REQUESTED on the
+  exponents. Front 4 gains a shape (roll-off exp(-0.344 (k/k_c)^2), 1/e
+  at 1.71 k_c). Not claimed: the no-cutoff Clay statement; uniformity
+  as eps -> 0; that 0.156 nm is measured. theorem_b() live;
+  ns_proof_set() carries theorem_b_row. Registry rows
+  theorem_b_continuum (WIRED) + phonon_mollifier_width_eps
+  (WIRED_FLAGGED). Dispatch 2,326; registry 7,119 rows; gate 6,105/0.
+
 ## v0.435.0 — 2026-09-11 — THE IN-MEDIUM SAMPLE SHIP
 
 - B277 (PAPER_2272): the pair cap's SECOND branch (PAPER_2264: in-medium

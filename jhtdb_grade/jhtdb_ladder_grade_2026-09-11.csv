@@ -1,0 +1,89 @@
+t,stretching_ratio,source
+0,0.030460,isotropic1024coarse t=1.0 Re_lambda~433 seed30 n=1000 global
+1,0.027190,isotropic1024coarse t=1.0 Re_lambda~433 seed31 n=1000 global
+2,0.026534,isotropic4096 t=1 Re_lambda=610.57 seed32 n=1000 global
+3,0.038909,isotropic4096 t=1 Re_lambda=610.57 seed33 n=1000 global
+4,0.020592,isotropic8192 t=6 Re_lambda~610 (8192^3 grid) seed36 n=1000 global
+5,0.025278,isotropic8192 t=6 Re_lambda~610 (8192^3 grid) seed37 n=1000 global
+6,0.024620,isotropic32768 t=1 Re_lambda~2500 seed34 n=1000 global
+7,0.019006,isotropic32768 t=1 Re_lambda~2500 seed35 n=1000 global
+8,0.047777,isotropic1024coarse seed30 sub-batch 0 n=100
+9,0.048158,isotropic1024coarse seed30 sub-batch 1 n=100
+10,0.045206,isotropic1024coarse seed30 sub-batch 2 n=100
+11,0.019918,isotropic1024coarse seed30 sub-batch 3 n=100
+12,0.034703,isotropic1024coarse seed30 sub-batch 4 n=100
+13,0.066031,isotropic1024coarse seed30 sub-batch 5 n=100
+14,0.067520,isotropic1024coarse seed30 sub-batch 6 n=100
+15,0.045458,isotropic1024coarse seed30 sub-batch 7 n=100
+16,0.034214,isotropic1024coarse seed30 sub-batch 8 n=100
+17,0.030717,isotropic1024coarse seed30 sub-batch 9 n=100
+18,0.060195,isotropic1024coarse seed31 sub-batch 0 n=100
+19,0.026687,isotropic1024coarse seed31 sub-batch 1 n=100
+20,0.026665,isotropic1024coarse seed31 sub-batch 2 n=100
+21,0.005410,isotropic1024coarse seed31 sub-batch 3 n=100
+22,0.014918,isotropic1024coarse seed31 sub-batch 4 n=100
+23,0.051862,isotropic1024coarse seed31 sub-batch 5 n=100
+24,0.049008,isotropic1024coarse seed31 sub-batch 6 n=100
+25,0.050912,isotropic1024coarse seed31 sub-batch 7 n=100
+26,0.047664,isotropic1024coarse seed31 sub-batch 8 n=100
+27,0.065317,isotropic1024coarse seed31 sub-batch 9 n=100
+28,0.056930,isotropic4096 seed32 sub-batch 0 n=100
+29,0.064591,isotropic4096 seed32 sub-batch 1 n=100
+30,0.040115,isotropic4096 seed32 sub-batch 2 n=100
+31,0.045609,isotropic4096 seed32 sub-batch 3 n=100
+32,0.059621,isotropic4096 seed32 sub-batch 4 n=100
+33,0.025623,isotropic4096 seed32 sub-batch 5 n=100
+34,0.009277,isotropic4096 seed32 sub-batch 6 n=100
+35,0.042903,isotropic4096 seed32 sub-batch 7 n=100
+36,0.055613,isotropic4096 seed32 sub-batch 8 n=100
+37,0.059999,isotropic4096 seed32 sub-batch 9 n=100
+38,0.049828,isotropic4096 seed33 sub-batch 0 n=100
+39,0.070039,isotropic4096 seed33 sub-batch 1 n=100
+40,0.057296,isotropic4096 seed33 sub-batch 2 n=100
+41,0.051240,isotropic4096 seed33 sub-batch 3 n=100
+42,0.030976,isotropic4096 seed33 sub-batch 4 n=100
+43,0.069910,isotropic4096 seed33 sub-batch 5 n=100
+44,0.032466,isotropic4096 seed33 sub-batch 6 n=100
+45,0.056816,isotropic4096 seed33 sub-batch 7 n=100
+46,0.034926,isotropic4096 seed33 sub-batch 8 n=100
+47,0.052702,isotropic4096 seed33 sub-batch 9 n=100
+48,0.023863,isotropic8192 t=6 seed36 sub-batch 0 n=100
+49,0.040122,isotropic8192 t=6 seed36 sub-batch 1 n=100
+50,0.002578,isotropic8192 t=6 seed36 sub-batch 2 n=100
+51,0.013872,isotropic8192 t=6 seed36 sub-batch 3 n=100
+52,0.048457,isotropic8192 t=6 seed36 sub-batch 4 n=100
+53,0.022357,isotropic8192 t=6 seed36 sub-batch 5 n=100
+54,0.050410,isotropic8192 t=6 seed36 sub-batch 6 n=100
+55,0.047627,isotropic8192 t=6 seed36 sub-batch 7 n=100
+56,0.014005,isotropic8192 t=6 seed36 sub-batch 8 n=100
+57,0.037988,isotropic8192 t=6 seed36 sub-batch 9 n=100
+58,0.070830,isotropic8192 t=6 seed37 sub-batch 0 n=100
+59,0.058556,isotropic8192 t=6 seed37 sub-batch 1 n=100
+60,0.081592,isotropic8192 t=6 seed37 sub-batch 2 n=100
+61,0.065074,isotropic8192 t=6 seed37 sub-batch 3 n=100
+62,0.016294,isotropic8192 t=6 seed37 sub-batch 4 n=100
+63,0.028233,isotropic8192 t=6 seed37 sub-batch 5 n=100
+64,0.033882,isotropic8192 t=6 seed37 sub-batch 6 n=100
+65,0.054428,isotropic8192 t=6 seed37 sub-batch 7 n=100
+66,0.041373,isotropic8192 t=6 seed37 sub-batch 8 n=100
+67,0.033601,isotropic8192 t=6 seed37 sub-batch 9 n=100
+68,0.022494,isotropic32768 seed34 sub-batch 0 n=100
+69,0.063425,isotropic32768 seed34 sub-batch 1 n=100
+70,0.041890,isotropic32768 seed34 sub-batch 2 n=100
+71,0.107323,isotropic32768 seed34 sub-batch 3 n=100
+72,0.068316,isotropic32768 seed34 sub-batch 4 n=100
+73,0.043089,isotropic32768 seed34 sub-batch 5 n=100
+74,0.068427,isotropic32768 seed34 sub-batch 6 n=100
+75,0.005955,isotropic32768 seed34 sub-batch 7 n=100
+76,0.052686,isotropic32768 seed34 sub-batch 8 n=100
+77,0.065858,isotropic32768 seed34 sub-batch 9 n=100
+78,0.042752,isotropic32768 seed35 sub-batch 0 n=100
+79,0.053426,isotropic32768 seed35 sub-batch 1 n=100
+80,0.039555,isotropic32768 seed35 sub-batch 2 n=100
+81,0.026354,isotropic32768 seed35 sub-batch 3 n=100
+82,0.006247,isotropic32768 seed35 sub-batch 4 n=100
+83,0.009351,isotropic32768 seed35 sub-batch 5 n=100
+84,0.047510,isotropic32768 seed35 sub-batch 6 n=100
+85,0.054777,isotropic32768 seed35 sub-batch 7 n=100
+86,0.037075,isotropic32768 seed35 sub-batch 8 n=100
+87,0.054366,isotropic32768 seed35 sub-batch 9 n=100
