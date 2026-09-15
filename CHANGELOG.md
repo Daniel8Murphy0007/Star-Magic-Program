@@ -5,6 +5,76 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.438.0 — 2026-09-15 — THE KILL TEST SHIP (stages 1 and 2; prepared 2026-09-13 to 2026-09-15)
+
+- B283 (PAPER_2278): THE LOCAL MAXIMUM - stage 2 of the kill test, same band as B282 below. After
+  a night of SciServer logins the pane could not complete, the cutouts
+  turned out not to need SciServer: GetVariable with sint=fd4noint
+  returns fourth-order finite differences on the TRUE grid at every node
+  requested. Full-resolution cubes around the deep-sample hotspots
+  (PAPER_2277): six 64^3 and two 128^3 (2.6M nodes; slabs of 6-8 z-planes;
+  132 sequential requests, 132/132 HTTP 200, 3-19 s each), graded with
+  each cube's OWN maximum. Acceptance rule stated first: no zero node in
+  the cube and none in a 3-layer halo (stencil reach 2). RESULT: eight
+  clean cubes on two rungs, every one 0.009-0.019 - worst 0.019442
+  (c8192_3), 44x under 17/20; the 128^3 cubes hold the same peak node as
+  their 64^3 cores and grade lower (64^3 = conservative). Most intense
+  region (c32768_1): cube mean 75x the global mean, peak 1.354e9 =
+  11,763x (11x the stage-1 sample at that spot), ratio 0.012005 / 0.011090,
+  peak-cell efficiency 0.074. Octave efficiency falls with intensity
+  inside every cube (eff(32x)/eff(mean) 0.14-0.45). THE DATA HOLE (Rule
+  7): the isotropic32768 store returns |w|^2 = 0 exactly over whole
+  blocks (y-index <= 22781 in the region probed; deterministic on
+  re-pull) and the fd4 stencil across the block edge manufactures |w| ~
+  6,000 two nodes in - stage-1 hotspots 3 and 4 on that rung were
+  hole-edge artefacts, REJECTED; B282's 166 zero points were the same
+  hole; two stage-1 chunks (skip 125000/475000) flagged biased low, the
+  chunk envelope 0.0187 stands; isotropic8192 clean in 3.1M nodes.
+  PAPER_2277 corrected in place; deep_tail_grade() carries
+  correction_b283; ns_proof_set() front 1 updated. NOT CLAIMED: the cap
+  proved; front 1 closed for the whole field. kill_test_stage2_grade()
+  live; data + provenance addendum in jhtdb_grade/. Registry rows
+  kill_test_stage2_cap_grade (GRADED) + jhtdb_isotropic32768_data_hole
+  (FINDING). BAND TOTALS (B282 + B283): dispatch 2,329; registry 7,125
+  rows; gate 6,109/0; simulator untouched.
+- B282 (PAPER_2277): THE DEEP TAIL SAMPLE - stage 1 of the kill test.
+  Daniel requested a personal JHTDB authorization token the morning
+  after v0.436.0 shipped and JHTDB issued it the same afternoon, with
+  rules: GetData <= 2,000,000 points/query, GetCutout <= 3 GB local /
+  16 GB SciServer, no simultaneous queries, targeted subsets only. All
+  kept: forty sequential 25,000-point GetVariable gradient requests
+  (fd4lag4), one in flight at a time, zero errors; a first 200k request
+  was cut off by the front proxy (502) and is disclosed, no data used.
+  The token's value is recorded NOWHERE in the tree; SHIP GUARD v11
+  greps every tracked text file for its prefix on every gate run.
+  Sample: Knuth MMIX LCG, seed 40 on isotropic8192 t=1 and seed 50 on
+  isotropic32768 t=1, 500,000 points each (20 chunks x 25k; chunk k =
+  draws 75000k on, re-pullable bit-exact). Results: CAP HOLDS on every
+  chunk - worst 1182 ratio 0.0200 (forty-fold under 17/20); aggregates
+  0.010882 / 0.006552 (depth-dependent by construction - reported, not
+  leaned on); max |w|^2 333x / 1052x mean; positive-stretching 0.760 /
+  0.758. NEW STATISTIC: the octave efficiency eff(oct) = sum(w.S.w) /
+  (sum|w|^2 sqrt(w2_oct)) - the scale-resolved shadow of the cap,
+  graded on load-bearing octaves (>= 20 cells, >= 1/64 mean) - FALLS
+  with intensity on both rungs: 0.118 at the mean -> 0.062/0.070 at 16x
+  -> 0.033/0.049 at 64x (~|w|^-0.6), max 0.312 at 1/64 of the mean; the
+  rungs agree octave by octave to 0.01. Cells above 16x mean = 0.6 pct
+  of the sample carry 29-34 pct of the stretching. The most intense cell
+  of the million (1052x, isotropic32768) has w.S.w < 0 (local -0.026):
+  compressed along omega. B278 envelope-drift flag: does NOT persist at
+  25k depth (8192 0.0200 vs 32768 0.0187) - retired at that scale, kept
+  on record at 100-point scale. 166 zero-gradient points on
+  isotropic32768 disclosed, excluded from octaves, counted in n. NOT
+  CLOSED: the kill test proper - stage 2 local-max GetCutout cubes
+  around the recorded hotspots (jhtdb_grade/kt_stage2_cutouts.py,
+  SciServer or local, token from the environment) is scripted on the
+  wheel; one cube above 0.85 kills the vacuum-branch cap - RUN as B283
+  in this same band (above), no cube came within forty-fold.
+  deep_tail_grade() live (recomputes everything from the CSV);
+  ns_proof_set() front 1 updated; data + provenance addendum in
+  jhtdb_grade/. Registry rows deep_tail_stage1_cap_grade (GRADED) +
+  octave_stretching_efficiency_trend (FINDING). Band totals above.
+
 ## v0.437.0 — 2026-09-13 — THE CLOSEOUT INDEX SHIP
 
 - B281 (PAPER_2276): THE PROOF SET CLOSED. Daniel, after v0.436.0

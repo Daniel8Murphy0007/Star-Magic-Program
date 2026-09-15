@@ -591,3 +591,22 @@ full token / Kerr fields; channel tails; ATR THz-TDS; MD current
 spectra + IXS/INS). Q-247 opened: sound-cone speed c_0 1480 vs c_inf
 3200 m/s (cutoff numbers x 2.162; no theorem changes). Clay not
 claimed. Gate 6,106/0.
+
+## v0.438.0 — 2026-09-15 — THE KILL TEST SHIP (stages 1 and 2, one band)
+PAPER_2277 (B282): stage 1 of the kill test under Daniel's personal
+JHTDB token (issued same day; value recorded nowhere; SHIP GUARD v11).
+One million gradient tensors - 500k each on isotropic8192 and
+isotropic32768, forty sequential 25k requests inside the database rules,
+zero errors. CAP HOLDS forty-fold on every chunk; the octave stretching
+efficiency FALLS with intensity (0.118 -> 0.06 -> 0.03-0.05), max 0.312;
+the 1052x-mean cell is compressed along omega; B278 envelope flag
+retired at 25k depth. Stage 2 local-max cutouts scripted (jhtdb_grade/
+kt_stage2_cutouts.py); run in this same band as B283:
+PAPER_2278 (B283): stage 2 of the kill test - full-resolution fd4noint
+grid-gradient cubes (64^3 / 128^3, 2.6M nodes, 132 requests, no
+SciServer) around the most intense events of the deep sample, graded
+with their own maxima: 8 clean cubes, worst 0.0194 (44x under 17/20);
+peak 11,763x the global mean grades 0.011-0.012; efficiency falls with
+intensity inside every cube. The isotropic32768 store's zero blocks
+named; two stage-1 hotspots rejected as hole-edge artefacts; stage 1
+corrected. Whole-field front 1 still open. Band gate 6,109/0.

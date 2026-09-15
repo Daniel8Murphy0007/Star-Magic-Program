@@ -134,3 +134,113 @@ extreme event above the cap?" (OPEN, full token / Kerr). Service note:
 isotropic4096 answered "result was not filled correctly" on ~10
 attempts before both seeds landed - a transient backend fault on the
 JHTDB side, disclosed; every number above came from a 200 response.
+
+## ADDENDUM 2026-09-13 - THE DEEP TAIL SAMPLE (stage 1 of the kill test, B282)
+
+Token: Daniel's PERSONAL JHTDB authorization token, issued 2026-09-13 by
+JHTDB staff on request to turbulence@lists.johnshopkins.edu. Its value is
+a credential and is NOT recorded anywhere in this repository (the wheel
+publishes the repository); SHIP GUARD v11 greps the tracked tree for its
+prefix on every gate run. Usage rules that came with it and were kept:
+GetData <= 2,000,000 points per query; GetCutout <= 3 GB local / 16 GB on
+SciServer; no simultaneous queries; small targeted subsets, not
+whole-field crawls.
+
+Protocol: official REST (`/turbulence-svc/values`, function GetVariable,
+var velocity, sop gradient, sint fd4lag4, tint none), POST body of
+tab-separated x y z lines, run from the in-app browser at the site
+origin. Points: Knuth MMIX LCG (a = 6364136223846793005, c =
+1442695040888963407, u = (x >> 11)/2^53, coords u*2pi to 8 decimals,
+three draws per point), seed 40 on isotropic8192 t=1 and seed 50 on
+isotropic32768 t=1, 500,000 points each taken as twenty consecutive
+25,000-point chunks (chunk k = draws 75000k .. 75000k+74999). One request
+in flight at a time. Request size 806 KB, response 4.4 MB (JSON, 9
+gradient components per point). Timing: 98-109 s per chunk on
+isotropic8192, 163-181 s on isotropic32768. Errors: none (40/40 HTTP
+200). Sizing note: a first 200,000-point request was cut off by the
+service front proxy with HTTP 502 after several minutes - the duration
+cap is separate from the point cap - so 25k was chosen to stay near 100
+s; a 20,000-point calibration slab (100 x 100 x 2 lattice, t=1,
+isotropic8192) took 81 s and is not part of the graded sample.
+
+Per point: omega from the antisymmetric part, S from the symmetric part,
+|omega|^2 and omega.S.omega; per chunk: mean |omega|^2, max |omega|^2,
+mean omega.S.omega, the 1182-form ratio, the positive-stretching
+fraction, and an enstrophy-octave histogram (bins of log2(|omega|^2 /
+chunk mean)) carrying cell counts, stretching sums and enstrophy sums;
+the ten highest-enstrophy points per chunk with coordinates. All of it
+is in jhtdb_deep_tail_2026-09-13.csv (chunk rows, octave rows, aggregate
+rows, hotspot rows) and re-graded live by uqff_ns_assembly.deep_tail_
+grade(). Anomaly: 166 of the 500,000 isotropic32768 points came back
+with |omega|^2 = 0 exactly (0.033 pct); treated as service artefacts,
+counted in the aggregate n, excluded from the octave table, disclosed.
+
+Results: isotropic8192 - max |omega|^2 = 1.008e7 = 333x mean, aggregate
+1182 ratio 0.010882, chunk ratios 0.0123-0.0200, positive fraction
+0.7601; isotropic32768 - max |omega|^2 = 1.211e8 = 1052x mean, aggregate
+ratio 0.006552, chunk ratios 0.0047-0.0187, positive fraction 0.7580.
+Octave efficiency eff = sum(omega.S.omega) / (sum|omega|^2 *
+sqrt(|omega|^2 at bin centre)) FALLS with intensity on both rungs
+(0.118 at the mean, 0.062/0.070 at 16x, 0.033/0.049 at 64x); max on
+any load-bearing octave 0.312 (at 1/64 of mean, the weak end). Cells
+above 16x mean are 0.6 pct of the sample and carry 29-34 pct of the
+stretching. The most intense cell of the record (1052x, isotropic32768,
+x y z = 3.53782826 2.80878540 4.77024541) has omega.S.omega < 0 (local
+st/|omega|^3 = -0.026): compressed along its vorticity.
+
+What this is and is not: a 1,000x deeper SAMPLE of the tail than
+B276-B278, on which the cap holds by a wide margin and the efficiency
+trend runs AWAY from the cap with intensity; it is not the whole-volume
+local-max test. Stage 2 - full-resolution GetCutout cubes around the
+hotspot coordinates above, gradients by central differences on the grid,
+graded with the cube's OWN max - is scripted in kt_stage2_cutouts.py
+(SciServer or local, token from the environment) and OPEN.
+
+## ADDENDUM 2026-09-15 - THE LOCAL MAXIMUM (stage 2 of the kill test, B283)
+
+Token: the same personal token (value not recorded). Route: the same
+REST service from the in-app browser at the site origin - SciServer and
+the cutout service were NOT needed: GetVariable with `sint=fd4noint`
+returns fourth-order finite-difference gradients evaluated on the true
+grid, no interpolation, at every grid node requested. Cubes of n^3 grid
+nodes centred on the node nearest each stage-1 hotspot (B282 CSV,
+hotspot rows), sent as slabs of 6 z-planes (64^3: 11 requests of 24,576
+nodes) or 8 z-planes (128^3: 16 requests of 131,072 nodes), one request
+in flight, 3-7 s per 24.6k-node request and 16-19 s per 131k. 132
+requests, 132/132 HTTP 200. Per node: |omega|^2 and omega.S.omega; per
+cube: mean, max (and its node), the 1182 ratio with the CUBE maximum, the
+peak-cell efficiency omega.S.omega/|omega|^3, the positive fraction, and
+the octave table relative to the cube mean. All rows in
+jhtdb_kill_test_stage2_2026-09-15.csv; re-graded live by
+uqff_ns_assembly.kill_test_stage2_grade().
+
+THE DATA HOLE. Cube c32768_3 (centre 2.63592429 4.36877524 4.89765792)
+came back with 122,880 of 262,144 nodes at |omega|^2 = 0 exactly: every
+node with y-index <= 22781, at every x and z of the cube, deterministic
+on re-pull; the first valid row (index 22782) reads |omega| ~ 800-950
+and the next (22783) ~ 5,600-6,600 before relaxing - the fd4 stencil
+straddling the zero block manufactures a spike two nodes in. Cube
+c32768_4 (2.63119183 4.25424803 4.71220780) has the same signature
+(118,784 zero nodes). Both are stage-1 hotspots that were never
+turbulence; both are REJECTED. Consequence for B282: the 166 zero points
+were this hole seen from the sample, and the two isotropic32768 chunks
+that contain hotspots 3 and 4 (skip 125000, 475000) carry an artefact
+maximum in the denominator of their ratio (biased low); the chunk-ratio
+envelope (max 0.0187) comes from other chunks and stands; isotropic8192
+shows no zero node in any cube or halo. Every ACCEPTED cube has zero
+zero-nodes and a zero-free halo - three grid layers outside each face
+sampled at stride 2 (stencil reach is two) - probed for every accepted
+isotropic32768 cube; the isotropic8192 cubes had no zeros inside and the
+dataset showed none anywhere in 500k + 2.6M nodes.
+
+Results (accepted cubes): isotropic8192 - c8192_1 64^3 ratio 0.013566
+(peak 2.639e7 = 870x global mean, peak efficiency 0.018), the same
+region at 128^3 0.011551 (same peak node), c8192_2 0.017350 (peak
+efficiency -0.012, compressed), c8192_3 0.019442; isotropic32768 -
+c32768_1 64^3 0.012005 (cube mean 75x the global mean; peak 1.354e9 =
+11,763x the global mean - eleven times the stage-1 sample at that spot -
+peak efficiency 0.074), 128^3 0.011090 (same peak), c32768_2 0.015565,
+c32768_5 0.009304. Worst local ratio 0.019442 (c8192_3), forty-four-fold
+under 17/20. Octave efficiency inside every cube falls from the cube
+mean to 32x the cube mean (eff(32x)/eff(mean) = 0.14-0.45); load-bearing
+maximum 0.44 (at 1/64 of a cube mean).
