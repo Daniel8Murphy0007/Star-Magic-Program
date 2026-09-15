@@ -12411,3 +12411,7 @@ jhtdb_deep_tail_2026-09-13.csv,PAPER_2277,GRADES,deep_tail_stage1_cap_grade,B282
 deep_tail_stage1_cap_grade,PAPER_2277,RESOLVES_BY_OCTAVE,octave_stretching_efficiency_trend,B282: eff falls with intensity on both rungs; stage 2 local-max cutouts (kt_stage2_cutouts.py) OPEN
 jhtdb_kill_test_stage2_2026-09-15.csv,PAPER_2278,GRADES,kill_test_stage2_cap_grade,B283: 8 cubes fd4noint grid gradients, cube max in the denominator; recomputed live from the CSV
 jhtdb_isotropic32768_data_hole,PAPER_2278,CORRECTS,deep_tail_stage1_cap_grade,B283: two stage-1 isotropic32768 hotspots rejected as hole-edge artefacts; 166 zero points explained; two chunk ratios flagged biased low; envelope stands
+jhtdb_front2_channel_2026-09-15.csv,PAPER_2279,GRADES,in_medium_tail_cap_grade,B284: near-wall 250k + bulk 100k stage 1 + 4 fd4noint local-max slabs stage 2; recomputed live from the CSV
+in_medium_tail_cap_grade,PAPER_2279,EXTENDS,in_medium_sample_grade,B284: closes the B277 near-wall gap (|y|<0.9 excluded) with the y+ [0.5,150] tail; branch holds, discrimination out of reach
+jhtdb_front2_channel5200_2026-09-15.csv,PAPER_2280,GRADES,in_medium_reynolds_rung,B285: channel5200 near-wall 250k + bulk 100k + 7 fd4noint slabs; recomputed live and compared with B284 in wall units
+in_medium_reynolds_rung,PAPER_2280,EXTENDS,in_medium_tail_cap_grade,B285: second rung of the in-medium ladder; flat; twins the isotropic ladder (B278)

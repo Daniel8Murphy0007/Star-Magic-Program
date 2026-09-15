@@ -610,3 +610,18 @@ peak 11,763x the global mean grades 0.011-0.012; efficiency falls with
 intensity inside every cube. The isotropic32768 store's zero blocks
 named; two stage-1 hotspots rejected as hole-edge artefacts; stage 1
 corrected. Whole-field front 1 still open. Band gate 6,109/0.
+
+## v0.439.0 — 2026-09-15 — FRONT 2 SHIP
+PAPER_2279 (B284): front 2 of the proof set - the pair-cap discrimination
+(17/20 vs 197/200) taken to the near-wall tail. JHTDB channel Re_tau ~ 1000,
+personal token. Stage 1: near-wall 250k + bulk 100k gradient tensors; the
+1182 ratio by y+ band peaks 0.024 (buffer). Stage 2: four wall-parallel
+fd4noint local-max slabs, ratio_local up to 0.041 at y+50; peak-cell
+efficiency 0.177 at y+15; channel store clean (zero data holes). IN-MEDIUM
+BRANCH HOLDS (20-130x under both caps); DISCRIMINATION out of reach (flow
+an order of magnitude below the nearer branch); B277 near-wall gap closed;
+PAPER_2280 (B285): the same protocol on channel5200 (Re_tau 5186): 250k
+near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
+1000, local-max envelope 0.0418 vs 0.0413 - NO REYNOLDS TREND across 5x;
+branch holds; discrimination out of reach; the public DNS record is
+exhausted for front 2. Gate 6,111/0. Acceptance 109/109.

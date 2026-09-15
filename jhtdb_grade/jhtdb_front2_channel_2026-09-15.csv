@@ -1,0 +1,36 @@
+record,dataset,f1,f2,f3,f4,f5,f6,f7
+# FRONT 2 - pair-cap discrimination on JHTDB channel (Re_tau ~ 1000, in-medium). Personal token; value recorded nowhere.
+# Stage 1 near-wall band y+[0.5,150] seed 60 t=1 (250k, 10x25k); bulk band |y|<0.85 seed 61 t=1 (100k, 4x25k). fd4lag4.
+# Stage 2 wall-parallel x-z slabs 64x64 fd4noint, graded with each slab's own maximum.
+# band rows: band,n,mean_w2,max_w2,ratio,pos_frac
+band,channel_nearwall,y+0-10,15870,2215.68,23047.47,0.006698,0.548
+band,channel_nearwall,y+10-20,16611,631.90,9546.26,0.014222,0.611
+band,channel_nearwall,y+20-40,33300,230.70,6155.33,0.023718,0.706
+band,channel_nearwall,y+40-60,33344,117.51,7857.39,0.018572,0.728
+band,channel_nearwall,y+60-100,67218,66.995,3044.32,0.023758,0.735
+band,channel_nearwall,y+100-150,83657,40.670,2836.94,0.020041,0.744
+band,channel_bulk,y+150-300,17555,22.405,1465.64,0.019303,0.747
+band,channel_bulk,y+300-1000,82445,6.314,952.96,0.015525,0.753
+# aggregate rows: aggregate,region,n,mean_w2,max_w2,ratio,pos_frac,vacuum_cap,in_medium_cap
+aggregate,channel_nearwall,250000,260.66,23047.47,0.008149,0.7131,0.85,0.985
+aggregate,channel_bulk,100000,9.139,1465.64,0.015438,0.75171,0.85,0.985
+# chunk rows (25k): chunk,region,k,ratio
+chunk,channel_nearwall,0,0.008636
+chunk,channel_nearwall,1,0.008845
+chunk,channel_nearwall,2,0.009941
+chunk,channel_nearwall,3,0.008205
+chunk,channel_nearwall,4,0.009848
+chunk,channel_nearwall,5,0.008502
+chunk,channel_nearwall,6,0.008986
+chunk,channel_nearwall,7,0.008174
+chunk,channel_nearwall,8,0.009392
+chunk,channel_nearwall,9,0.009022
+chunk,channel_bulk,0,0.018644
+chunk,channel_bulk,1,0.019040
+chunk,channel_bulk,2,0.015584
+chunk,channel_bulk,3,0.022156
+# slab rows (stage 2): slab,id,yplus,layer,n,ratio_local,max_w2,mean_w2,pos_frac,peak_local,zero
+slab,s1,1.5,sublayer,4096,0.00453,31988,3864.8,0.523,0.0469,0
+slab,s2,15,production_peak,4096,0.02207,9643,741.7,0.661,0.1766,0
+slab,s3,50,buffer_log,4096,0.04129,2634,112.2,0.680,0.1697,0
+slab,s4,100,log,4096,0.03678,1319,57.9,0.748,0.0410,0

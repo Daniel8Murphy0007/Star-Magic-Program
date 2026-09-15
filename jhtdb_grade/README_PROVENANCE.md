@@ -244,3 +244,53 @@ c32768_5 0.009304. Worst local ratio 0.019442 (c8192_3), forty-four-fold
 under 17/20. Octave efficiency inside every cube falls from the cube
 mean to 32x the cube mean (eff(32x)/eff(mean) = 0.14-0.45); load-bearing
 maximum 0.44 (at 1/64 of a cube mean).
+
+## ADDENDUM 2026-09-15 - FRONT 2, the near-wall in-medium tail (B284, PAPER_2279)
+
+Third acquisition under Daniel's PERSONAL token (value recorded nowhere;
+SHIP GUARD v11). dataset **channel** (JHTDB, Re_tau ~ 1000, wall-bounded
+IN-MEDIUM), t = 1.0, var=velocity sop=gradient, official REST service.
+File: jhtdb_grade/jhtdb_front2_channel_2026-09-15.csv.
+
+STAGE 1 (fd4lag4): near-wall band y in [-0.9995,-0.85] = y+ [0.5,150],
+seed 60, 250,000 pts (10 x 25k); bulk band y in [-0.85,0.85] = y+
+[150,1000], seed 61, 100,000 pts (4 x 25k). LCG x=u*8pi, z=w*3pi,
+y uniform-in-band. Zero errors.
+  near-wall aggregate ratio 0.00815 (max/mean 88, mean shear);
+  bulk aggregate 0.01544; the 1182 ratio by y+ band peaks 0.024 at
+  y+ 20-100; positive fraction rises 0.55 (wall) -> 0.75 (core).
+
+STAGE 2 (fd4noint, the channel's own grid, no interpolation): four
+wall-parallel x-z grid slabs 64x64 = 4096 nodes at y+ 1.5 / 15 / 50 / 100,
+each graded with its OWN maximum. ratio_local 0.0045 -> 0.022 -> 0.041
+-> 0.037; peak-cell efficiency tops 0.177 at y+15; every slab returned
+ZERO zero-nodes (the channel store carries no holes, unlike isotropic32768).
+
+RESULT: IN-MEDIUM BRANCH HOLDS - worst ratio anywhere 0.041, 20.6x under
+17/20 and 23.8x under 197/200. The two branches are 0.135 apart; the flow
+sits an order of magnitude below the nearer one, so the pair-cap
+DISCRIMINATION is OUT OF REACH - a positive statement of what wall
+turbulence at Re_tau 1000 cannot decide (the in-medium echo of the kill
+test's vacuum-branch finding). CLOSES B277's disclosed near-wall gap.
+OPEN: channel5200 (deeper tail). Token value not recorded; sequential 25k
+requests, one in flight.
+
+## ADDENDUM 2026-09-15 - channel5200, the in-medium Reynolds rung (B285, PAPER_2280)
+
+Fourth acquisition under the PERSONAL token (value recorded nowhere).
+dataset **channel5200** (JHTDB, Re_tau = 5185.897, 10240 x 1536 x 7680),
+t = 1.0 (t = 0 and 0.01 return a server error - not used). Same protocol
+as the channel addendum above, one parameter changed (Re_tau in the
+wall-unit band map). File: jhtdb_grade/jhtdb_front2_channel5200_2026-09-15.csv.
+  STAGE 1 (fd4lag4): near-wall y+ [0.5,150] seed 70, 250k (10 x 25k,
+  ~40 s each, 10/10 HTTP 200); bulk y+ > 150 seed 71, 100k (4 x 25k).
+  Near-wall aggregate 0.00656 (mean |w|^2 4,980, max 759,119); bulk
+  0.02023. Band profile in wall units identical to Re_tau 1000 within
+  chunk scatter; positive fraction agrees to 0.005 in all 8 shared bands.
+  STAGE 2 (fd4noint): seven wall-parallel slabs (64x64 at y+ 1.5/15/50/
+  100/300/1000; 128x128 at y+ 50). ratio_local 0.008 / 0.027 / 0.040 /
+  0.042 / 0.029 / 0.040; the 128x128 grades lower (0.027); peak cells at
+  y+ 50 and 100 compressed. Zero zero-nodes anywhere.
+RESULT: worst 0.0418 vs 0.0413 at Re_tau 1000 - NO REYNOLDS TREND across
+a fivefold rise; branch holds (20x / 24x under the two caps);
+discrimination out of reach. The in-medium ladder is two rungs and flat.

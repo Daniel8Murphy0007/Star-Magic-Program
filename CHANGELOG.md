@@ -5,6 +5,55 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.439.0 — 2026-09-15 — FRONT 2 SHIP (the pair-cap discrimination at the near-wall tail, two Reynolds rungs)
+
+- B284 (PAPER_2279): FRONT 2 of the proof set - the pair-cap
+  DISCRIMINATION (vacuum 17/20 vs in-medium 197/200, 0.135 apart) taken
+  to the near-wall tail of wall-bounded turbulence. B277 (PAPER_2272)
+  sampled the channel BULK with the walls excluded (|y| < 0.9, y+ > 100)
+  and disclosed two gaps: the near-wall region unsampled, and the branches
+  indistinguishable at bulk margins. This band closes the first and settles
+  the second. JHTDB channel (Re_tau ~ 1000), personal token (value recorded
+  nowhere; SHIP GUARD v11). STAGE 1 (fd4lag4): near-wall band y+ [0.5,150]
+  seed 60, 250,000 gradient tensors (10 x 25k), + bulk 100,000 (4 x 25k),
+  zero errors; the 1182 ratio by y+ band runs 0.007 (sublayer) -> 0.024
+  (buffer, y+ 20-100) -> 0.015 (core); positive-stretching fraction rises
+  0.55 (wall) -> 0.75 (core). STAGE 2 (fd4noint, the channel's own grid):
+  four wall-parallel x-z slabs (64x64) through the layers, each graded with
+  its OWN maximum: ratio_local 0.0045 (sublayer) -> 0.022 (production peak
+  y+15) -> 0.041 (y+50) -> 0.037 (y+100); peak-cell efficiency tops 0.177
+  at y+15; every slab returned ZERO zero-nodes (channel store clean). THE
+  IN-MEDIUM BRANCH HOLDS - worst ratio anywhere 0.041, 20.6x under 0.85 and
+  23.8x under 0.985 - but the DISCRIMINATION is OUT OF REACH: the flow sits
+  an order of magnitude below the nearer branch, so the measurement cannot
+  say which cap governs wall turbulence (a positive statement of what the
+  data cannot decide, the in-medium echo of the kill test). FINDING: the
+  most intense near-wall enstrophy is mean shear, least efficiently
+  stretched; efficiency peaks in the buffer/log layer, not at the wall.
+  in_medium_tail_grade() live; data + provenance addendum in jhtdb_grade/.
+  Registry rows in_medium_tail_cap_grade (GRADED) + pair_cap_discrimination_reach
+  (FINDING). NOT claimed: the discrimination achieved; the whole channel
+  graded.
+- B285 (PAPER_2280): FRONT 2 EXTENSION - channel5200, the in-medium
+  REYNOLDS RUNG. The B284 protocol repeated on JHTDB channel5200 (Re_tau
+  5186, the largest public wall-bounded DNS, t = 1.0): near-wall 250k
+  (10 x 25k, ~40 s each) + bulk 100k; seven wall-parallel fd4noint slabs
+  (64x64 at y+ 1.5/15/50/100/300/1000 + 128x128 at y+ 50) graded with their
+  own maxima; compared with B284 band by band IN WALL UNITS. NO REYNOLDS
+  TREND: same profile (sublayer 0.0054 vs 0.0067; y+ 100-150 0.0246 vs
+  0.0200; peak in the log layer on both), positive fraction agreeing to
+  0.005 in all 8 shared bands, local-max envelope 0.0418 (y+100) vs 0.0413
+  (y+50) - one percent apart across a fivefold rise in Re_tau; 20x under
+  17/20 and 24x under 197/200 on both. The 128x128 grades lower (B283
+  rule); peak cells at y+ 50/100 COMPRESSED along omega; zero zero-nodes
+  (channel5200 store clean). The in-medium ladder (two rungs, flat) twins
+  the isotropic ladder (B278/B282). in_medium_reynolds_rung() live; data +
+  provenance addendum in jhtdb_grade/. Registry rows in_medium_reynolds_
+  rung (GRADED) + in_medium_reynolds_ladder (FINDING). The public DNS
+  record is exhausted for front 2: what would reach the 0.85-0.985 band is
+  a different regime, not a bigger DNS. BAND TOTALS (B284 + B285):
+  dispatch 2,331; registry 7,129 rows; gate 6,111/0; simulator untouched.
+
 ## v0.438.0 — 2026-09-15 — THE KILL TEST SHIP (stages 1 and 2; prepared 2026-09-13 to 2026-09-15)
 
 - B283 (PAPER_2278): THE LOCAL MAXIMUM - stage 2 of the kill test, same band as B282 below. After

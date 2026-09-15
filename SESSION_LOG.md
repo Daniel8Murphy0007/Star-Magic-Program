@@ -14199,3 +14199,94 @@ needed; ship.ps1 runs ONCE.
 Standing rule from this (Daniel's): a band is what has been built since
 the last verified tag; Claude does not open a new version number on its
 own, and never proposes skipping a tag.
+
+## 2026-09-15 — v0.439.0 prep — B284: FRONT 2 (the pair-cap discrimination, near-wall tail)
+
+Daniel: "proceed with front 2." Front 2 = the pair-cap DISCRIMINATION
+(vacuum 17/20 vs in-medium 197/200, 0.135 apart, PAPER_2264/B269). B277
+sampled the channel BULK with walls excluded (|y|<0.9) and disclosed the
+near-wall region unsampled + branches indistinguishable at bulk margins.
+
+Ran both stages through the in-app browser pane at the JHTDB origin
+(cloud egress blocks JHTDB) under the personal token (value only in the
+pane; never in repo). Channel Re_tau~1000, t=1.0.
+- STAGE 1 (fd4lag4): near-wall band y+[0.5,150] seed 60 250k (10x25k) +
+  bulk seed 61 100k (4x25k); zero errors. 1182 ratio by y+ band peaks
+  0.024 (buffer y+20-100); near-wall aggregate 0.00815, bulk 0.01544;
+  positive fraction rises 0.55(wall)->0.75(core).
+- STAGE 2 (fd4noint, channel's own grid): 4 wall-parallel x-z slabs
+  64x64 at y+ 1.5/15/50/100 graded with own max: ratio_local
+  0.0045->0.022->0.041->0.037; peak-cell efficiency 0.177 at y+15; ZERO
+  zero-nodes every slab (channel store clean, unlike isotropic32768).
+RESULT: in-medium branch HOLDS (worst 0.041, 20.6x/23.8x under both
+caps); DISCRIMINATION out of reach (flow an order of magnitude below the
+nearer branch) - a positive statement of what wall turbulence at Re_tau
+1000 cannot decide, the in-medium echo of the kill test. FINDING: near-
+wall max enstrophy is mean shear, least efficiently stretched; efficiency
+peaks in the buffer/log layer, not at the wall. B277 gap CLOSED.
+
+WIRED: in_medium_tail_grade() (B284) in uqff_ns_assembly; dispatch
+PAPER_2279; gate pin (assert count 6,110); 2 registry rows + GRAPH/
+CITATIONS/RESIDUALS + 8 band-trail satellites; PAPER_2279; WHITEPAPER_
+INDEX row; ns_proof_set() front-2 line updated (theory_open_rungs still
+0); provenance addendum; CSV jhtdb_grade/jhtdb_front2_channel_2026-09-15.
+Data aggregates saved to f2_results/ (workspace).
+
+BAND: v0.439.0 FRONT 2 SHIP, built on the shipped v0.438.0 (tag verified
+over the bridge; loose tags run to v0.438.0). ONE band since v0.438.0 -
+no split. Gate/sweep/wheel rehearsal below.
+
+Re-prep verification (cloud, 2026-09-15): gate GREEN 6,110/0; staleness
+sweep clean on every current-version field (pyproject/VERSION/CITATION x2
++ date/README cacheBust,banner,release,shipped,badges 6110/2330/2324,
+def 4,202, registry 7,127; ledger tail v0.439.0; SHIP_MESSAGE/CHANGELOG/
+_BUILD_LOG tops; every 0.438.0 occurrence is a legitimate history
+reference to the prior band); all 11 satellites carry B284; token absent
+from every tracked file; manifest regenerated 2,738 files; wheel
+rehearsal in the setuptools-84 venv: star_magic_program-0.439.0 24.8 MB,
+20/20 modules, 2,738/2,738 data-files, PAPER_2279 + front2 CSV aboard,
+TOKEN NOT IN WHEEL; from an empty cwd calc('PAPER_2279') returns
+IN_MEDIUM_TAIL_CAP_HOLDS_B284 (holds True, discrimination reachable
+False); acceptance 109/109. Ready to ship via .\ship.ps1 (one band on
+the shipped v0.438.0; chain intact).
+
+## 2026-09-15 — v0.439.0 prep (cont.) — B285: channel5200, the in-medium Reynolds rung
+
+Daniel: "proceed with channel5200." Tag chain read first: loose tags end
+at v0.438.0 - v0.439.0 NOT shipped - so B285 goes INTO the v0.439.0 band
+(Daniel's rule: a band is what has been built since the last verified
+tag; no new version number opened).
+
+Ran the B284 protocol unchanged on channel5200 (Re_tau 5185.897; t = 1.0
+- t = 0 / 0.01 return HTTP 500 and were not used) through the pane under
+the personal token: near-wall y+ [0.5,150] seed 70 250k (10 x 25k,
+~40 s each, 10/10 200), bulk seed 71 100k; seven fd4noint slabs (64x64
+at y+ 1.5/15/50/100/300/1000, 128x128 at y+ 50). All zero-node counts 0.
+RESULT: worst local-max 0.0418 (y+100) vs 0.0413 at Re_tau 1000 - 1.3 pct
+apart across 5x Re_tau; band profile identical in wall units, positive
+fraction agreeing to 0.005 in all 8 shared bands; peak cells at y+50/100
+compressed. NO Reynolds trend; branch holds (20x/24x); discrimination
+out of reach. The in-medium ladder is two rungs and flat - the wall-side
+twin of the isotropic ladder. The public DNS record is exhausted for
+front 2 at both branches.
+
+WIRED: in_medium_reynolds_rung() (B285); dispatch PAPER_2280; gate pin
+(6,111); 2 registry rows + GRAPH/CITATIONS/RESIDUALS + 8 band-trail
+satellites; PAPER_2280; index row; ns_proof_set front-2 line (channel5200
+DONE); provenance addendum; CSV jhtdb_front2_channel5200_2026-09-15.
+Labels: badges 6111/2331/2325, defs 4,203, registry 7,129; README release
+paragraph now covers both rungs; CHANGELOG/SHIP_MESSAGE/_BUILD_LOG
+extended. Version stays 0.439.0. Gate/sweep/rehearsal below.
+
+Re-prep verification (cloud, 2026-09-15, B284+B285): gate GREEN 6,111/0
+(one pin bug caught and fixed: a capital-R literal compared against a
+lowercased paper); staleness sweep clean (badges 6111/2331/2325, defs
+4,203, registry 7,129, census 2,276/2,331; ledger tail v0.439.0, 38
+lines; the B284 registry row that called channel5200 OPEN corrected to
+DONE; PAPER_2279 carries a dated addendum pointing to PAPER_2280); all 11
+satellites carry B285; token absent; manifest 2,740; wheel 24.8 MB,
+20/20 modules, 2,740/2,740 data-files, both papers + both CSVs aboard,
+TOKEN NOT IN WHEEL; from an empty cwd calc('PAPER_2279') and
+calc('PAPER_2280') both return holds True / discrimination reachable
+False; acceptance 109/109. Ready to ship via .\ship.ps1 - one band on the
+shipped v0.438.0; chain intact.

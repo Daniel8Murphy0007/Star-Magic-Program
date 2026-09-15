@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.438.0", "uqff_calculator.VERSION = 0.438.0 (THE KILL TEST SHIP: stages 1 and 2 of the kill test in one band - a million sampled tensors, then the true local maxima - the cap holds forty-four-fold, and the store's holes are named)")
+assert_that(C.VERSION == "0.439.0", "uqff_calculator.VERSION = 0.439.0 (FRONT 2 SHIP: the pair-cap discrimination taken to the near-wall tail; the in-medium branch holds and the discrimination is out of reach)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -15330,6 +15330,59 @@ assert_that(_b283['n_cubes'] == 8 and _b283['n_rejected'] == 2 and _b283['total_
             and 'CORRECTION (2026-09-15' in _readfile('whitepapers/PAPER_2277_THE_DEEP_TAIL_SAMPLE_ONE_MILLION_GRADIENT_TENSORS_PERSONAL_TOKEN_STAGE_1_KILL_TEST_UQFF_LANDMARK.md')
             and '2026-09-15' in _readfile('jhtdb_grade/README_PROVENANCE.md') and 'kill_test_stage2_cap_grade' in _readfile('UNIFIED_REGISTRY.csv'),
             "B283 - THE LOCAL MAXIMUM (PAPER_2278): stage 2 of the kill test, done through the same REST service and token without SciServer - GetVariable with sint=fd4noint returns fourth-order finite differences on the TRUE grid at every node asked, so full-resolution 64^3 and 128^3 cubes (2.6 million nodes, 132 sequential requests, 132/132 HTTP 200) were pulled around the most intense events of the deep sample and graded with each cube's OWN maximum: eight clean cubes on two Reynolds rungs, every one between 0.009 and 0.019 - worst 0.019442 (c8192_3), forty-four-fold under 17/20; the most intense region of the record (isotropic32768: cube mean 75x the global mean, peak 1.354e9 = 11,763x - eleven times the stage-1 sample at that spot) grades 0.012 at 64^3 and 0.011 at 128^3 with peak-cell efficiency 0.074; the 128^3 cubes hold the same peak node and grade lower, so 64^3 is the conservative figure; the octave efficiency FALLS with intensity inside every cube (eff(32x)/eff(mean) 0.14-0.45); two of eight peak cells are compressed along omega. THE DATA HOLE, the band's Rule-7 finding: the isotropic32768 store returns |w|^2 = 0 exactly over whole blocks (y-index <= 22781 in the region probed, deterministic on re-pull) and the fd4 stencil straddling a block edge manufactures |w| ~ 6,000 spikes two nodes in - stage-1 hotspots 3 and 4 on that rung were hole-edge artefacts, never turbulence, REJECTED with the mechanism named; B282's 166 zero points were the same hole; the two stage-1 chunks that contained them are biased low and say so; the chunk envelope 0.0187 stands; isotropic8192 shows no hole in 3.1 million nodes; every accepted cube has a zero-free interior and a zero-free three-layer halo (stencil reach two). NOT claimed: the cap proved; front 1 closed for the whole field (eight regions chosen by a million-point sample; the field has 3.5e13 nodes); the honest form is that the cap holds at the true local maximum of every intense event the deep sample could find on the two highest-Re public DNS in existence, with the efficiency trend running away from it")
+
+# ---- B284 2026-09-15: FRONT 2 - the pair-cap discrimination, near-wall tail (channel Re_tau ~ 1000) ----
+_b284 = _b267.in_medium_tail_grade()
+_b284p = _readfile('whitepapers/PAPER_2279_FRONT_2_THE_PAIR_CAP_DISCRIMINATION_NEAR_WALL_TAIL_CHANNEL_UQFF_LANDMARK.md')
+_b284nw = _b284['stage1']['near_wall']; _b284bulk = _b284['stage1']['bulk']
+_b284slabs = {sl['id']: sl for sl in _b284['stage2']['slabs']}
+assert_that(_b284['front'] == 2 and _b284['pair_cap']['csv_caps_match_primitives']
+            and abs(_b284['pair_cap']['vacuum'] - 17.0/20.0) < 1e-12 and abs(_b284['pair_cap']['in_medium'] - 197.0/200.0) < 1e-12
+            and abs(_b284['pair_cap']['gap'] - 0.135) < 1e-12
+            and _b284nw['n'] == 250000 and _b284bulk['n'] == 100000
+            and abs(_b284nw['ratio'] - 0.008149) < 1e-5 and abs(_b284bulk['ratio'] - 0.015438) < 1e-5
+            and abs(_b284['stage1']['band_ratio_peak'] - 0.023758) < 1e-5
+            and len(_b284['stage2']['slabs']) == 4 and all(sl['zero'] == 0 for sl in _b284['stage2']['slabs'])
+            and abs(_b284slabs['s1']['ratio_local'] - 0.00453) < 1e-6 and abs(_b284slabs['s3']['ratio_local'] - 0.04129) < 1e-6
+            and abs(_b284['stage2']['worst_ratio_local'] - 0.04129) < 1e-6 and _b284['stage2']['worst_at_yplus'] == 50
+            and _b284slabs['s1']['pos_frac'] < _b284slabs['s4']['pos_frac']
+            and abs(_b284['stage2']['peak_cell_efficiency_at_production_peak'] - 0.1766) < 1e-4
+            and _b284['overall_ratio_max'] <= _b284['pair_cap']['vacuum']
+            and _b284['in_medium_branch_holds'] and not _b284['discrimination_reachable']
+            and _b284['margin_under_vacuum'] > 20 and _b284['margin_under_in_medium'] > 20
+            and _b284['stage2']['no_data_holes']
+            and 'IN_MEDIUM_TAIL_CAP_HOLDS_B284' in _b284['status'] and 'discrimination' in _b284['not_claimed'].lower()
+            and 'B284' in _b275d['awaiting_outside_data'][1] and 'OUT OF REACH' in _b275d['awaiting_outside_data'][1] and 'CLOSED' in _b275d['awaiting_outside_data'][1]
+            and 'near-wall' in _b284p and 'y+' in _b284p and '0.041' in _b284p and 'out of reach' in _b284p.lower()
+            and 'in_medium_tail' in _readfile('UNIFIED_REGISTRY.csv'),
+            "B284 - FRONT 2, THE PAIR-CAP DISCRIMINATION AT THE NEAR-WALL TAIL (PAPER_2279): B277 sampled the channel bulk with the walls excluded (|y| < 0.9, y+ > 100) and could only give a bulk consistency pass; this grade supplies the near-wall cutouts PAPER_2276 sec 6.2 named as the instrument the discrimination needs - JHTDB channel (Re_tau ~ 1000), personal token, 250,000 gradient tensors in the band y+ in [0.5,150] (forty sequential 25k requests) plus 100,000 in the bulk, then four wall-parallel x-z grid slabs (fd4noint, the channel's own grid, graded with each slab's own maximum) through the layers. The in-medium branch (197/200) HOLDS: the 1182 ratio, resolved by wall distance, runs 0.007 (viscous sublayer) -> 0.024 (buffer, y+ 20-100) -> 0.015 (core) in stage 1, and the local-max slabs run 0.0045 (sublayer) -> 0.022 (production peak, y+ 15) -> 0.041 (y+ 50) -> 0.037 (y+ 100) in stage 2 - everywhere 20-130x under BOTH the vacuum cap 17/20 and the in-medium cap 197/200. The two branches are 0.135 apart; the flow sits an order of magnitude below the nearer of them, so the DISCRIMINATION is OUT OF REACH - a positive statement of what wall turbulence at Re_tau 1000 cannot decide, exactly as the vacuum branch was for isotropic (B283). FINDING (the in-medium echo of B282/B283): the viscous sublayer has the LOWEST positive-stretching fraction (0.52) and its most intense enstrophy - which is mean shear - the smallest local efficiency (0.047); stretching efficiency peaks in the buffer/log layer, not at the wall, and the peak-cell efficiency tops at 0.177 at the production peak - the most intense vorticity is the least efficiently stretched on the wall side too. The channel store is clean (zero data holes in every slab). NOT claimed: the discrimination achieved; the whole channel graded; channel5200 (deeper tail, the natural extension) - OPEN")
+
+
+# ---- B285 2026-09-15: FRONT 2 EXTENSION - channel5200, the in-medium Reynolds rung ----
+_b285 = _b267.in_medium_reynolds_rung()
+_b285p = _readfile('whitepapers/PAPER_2280_FRONT_2_EXTENSION_CHANNEL5200_THE_IN_MEDIUM_REYNOLDS_RUNG_NO_TREND_UQFF_LANDMARK.md')
+_b285s = {sl['id']: sl for sl in _b285['stage2']['slabs']}
+_b285cmp = {c['yplus']: c for c in _b285['reynolds_comparison_wall_units']}
+assert_that(_b285['rung'] == 'channel5200' and abs(_b285['re_tau'] - 5185.897) < 1e-6 and _b285['pair_cap']['csv_caps_match']
+            and _b285['stage1']['near_wall']['n'] == 250000 and _b285['stage1']['bulk']['n'] == 100000
+            and abs(_b285['stage1']['near_wall']['ratio'] - 0.006562) < 1e-5 and abs(_b285['stage1']['bulk']['ratio'] - 0.020226) < 1e-5
+            and _b285['stage1']['near_wall']['zero'] == 0 and _b285['stage1']['bulk']['zero'] == 0
+            and abs(_b285cmp['0-10']['ratio_5200'] - 0.005356) < 1e-5 and abs(_b285cmp['100-150']['ratio_5200'] - 0.024573) < 1e-5
+            and abs(_b285cmp['150-300']['ratio_5200'] - 0.033804) < 1e-5
+            and len(_b285cmp) == 8 and _b285['max_pos_frac_diff_between_rungs'] < 0.006
+            and len(_b285['stage2']['slabs']) == 7 and _b285['stage2']['no_data_holes']
+            and abs(_b285s['s1']['ratio_local'] - 0.007971) < 1e-5 and abs(_b285s['s4']['ratio_local'] - 0.041835) < 1e-5
+            and abs(_b285['stage2']['worst_ratio_local_64'] - 0.041835) < 1e-5 and _b285['stage2']['worst_at_yplus'] == 100
+            and _b285['stage2']['resolution_check_128_lower'] and set(_b285['stage2']['compressed_peaks']) == {'s3', 's4'}
+            and _b285['local_max_envelope']['relative_difference'] < 0.02
+            and _b285['margin_under_vacuum'] > 20 and _b285['margin_under_in_medium'] > 23
+            and _b285['in_medium_branch_holds'] and not _b285['discrimination_reachable']
+            and 'NONE' in _b285['reynolds_trend'] and 'IN_MEDIUM_REYNOLDS_RUNG_CAP_HOLDS_B285' in _b285['status']
+            and 'channel5200 DONE' in _b275d['awaiting_outside_data'][1] and 'NO Reynolds trend' in _b275d['awaiting_outside_data'][1]
+            and 'Re_tau' in _b285p and '0.0418' in _b285p and 'no reynolds trend' in _b285p.lower() and 'not claimed' in _b285p.lower()
+            and 'in_medium_reynolds_rung' in _readfile('UNIFIED_REGISTRY.csv'),
+            "B285 - FRONT 2 EXTENSION, THE IN-MEDIUM REYNOLDS RUNG (PAPER_2280): the B284 protocol repeated on JHTDB channel5200 (Re_tau 5186, five times the channel's 1000, the largest public wall-bounded DNS) - personal token, 250,000 gradient tensors in the near-wall band y+ [0.5,150] (ten sequential 25k requests, ~40 s each) plus 100,000 in the bulk, then seven wall-parallel x-z fd4noint slabs (64x64 at y+ 1.5/15/50/100/300/1000, one 128x128 check at y+ 50) graded with their own maxima, every number recomputed here from the CSV and compared with B284 band by band IN WALL UNITS. NO REYNOLDS TREND: the 1182-ratio profile is the same on both rungs to within chunk scatter (sublayer 0.0054 vs 0.0067; y+ 100-150 0.0246 vs 0.0200; peak in the log layer on both), the positive-stretching fraction agrees to 0.005 in every one of eight shared bands (0.547 vs 0.548 at the wall, 0.741 vs 0.744 at y+ 100-150), and the local-max envelope is 0.0418 (y+ 100) vs 0.0413 (y+ 50) - ONE PERCENT apart across a fivefold rise in Re_tau; 20x under 17/20 and 24x under 197/200 on both rungs. The 128x128 slab grades lower than its 64x64 core (the B283 rule); the peak cells at y+ 50 and y+ 100 are COMPRESSED along omega, as the 1052x cell of isotropic32768 was; zero zero-nodes anywhere (the channel5200 store is clean). The in-medium branch holds on the largest wall-bounded DNS in existence; the discrimination remains out of reach for the same reason as at Re_tau 1000; and the in-medium ladder - two rungs, both flat - is the wall-side twin of the isotropic Reynolds ladder (B278/B282). NOT claimed: the discrimination; a full 3D cube on the non-uniform y-grid; frames other than t = 1.0")
+
 
 # ---- B268 2026-09-09: THE THREE TIERS - "TIER 1, THEN TIER 2, THEN TIER 3" (Daniel's order) ----
 import os as _b268os, tempfile as _b268tmp, csv as _b268csv

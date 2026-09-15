@@ -1,0 +1,40 @@
+record,dataset,f1,f2,f3,f4,f5,f6,f7,f8,f9
+# FRONT 2 EXTENSION - channel5200 (JHTDB, Re_tau = 5185.897, in-medium). Personal token; value recorded nowhere. t = 1.0.
+# Stage 1 near-wall band y+[0.5,150] seed 70 (250k, 10x25k); bulk band y+>150 seed 71 (100k, 4x25k). fd4lag4.
+# Stage 2 wall-parallel x-z slabs fd4noint (64x64; one 128x128 check), graded with each slab own maximum.
+# band rows: band,region,yplus,n,mean_w2,max_w2,ratio,pos_frac
+band,c5200_nearwall,y+0-10,15862,41398.23,759119.03,0.005356,0.5475
+band,c5200_nearwall,y+10-20,16842,11870.25,178012.50,0.015460,0.6100
+band,c5200_nearwall,y+20-40,33346,4506.29,189650.62,0.019689,0.7036
+band,c5200_nearwall,y+40-60,33597,2295.10,125449.87,0.020951,0.7240
+band,c5200_nearwall,y+60-100,66605,1371.19,70491.54,0.022778,0.7322
+band,c5200_nearwall,y+100-150,83748,833.12,38564.06,0.024574,0.7407
+band,c5200_bulk,y+150-300,2888,440.84,12569.66,0.033804,0.7507
+band,c5200_bulk,y+300-1000,13746,168.41,10203.42,0.025089,0.7576
+band,c5200_bulk,y+1000-6000,83366,29.01,6413.56,0.015123,0.7573
+# aggregate rows: aggregate,region,n,mean_w2,max_w2,ratio,pos_frac,vacuum_cap,in_medium_cap,zero_nodes
+aggregate,c5200_nearwall,250000,4980.21,759119.03,0.006562,0.71016,0.85,0.985,0
+aggregate,c5200_bulk,100000,60.066,12569.66,0.020226,0.75711,0.85,0.985,0
+# chunk rows (25k): chunk,region,k,ratio
+chunk,c5200_nearwall,0,0.009267
+chunk,c5200_nearwall,1,0.007107
+chunk,c5200_nearwall,2,0.007359
+chunk,c5200_nearwall,3,0.009831
+chunk,c5200_nearwall,4,0.009771
+chunk,c5200_nearwall,5,0.009891
+chunk,c5200_nearwall,6,0.008932
+chunk,c5200_nearwall,7,0.008527
+chunk,c5200_nearwall,8,0.009422
+chunk,c5200_nearwall,9,0.008571
+chunk,c5200_bulk,0,0.023459
+chunk,c5200_bulk,1,0.025987
+chunk,c5200_bulk,2,0.022931
+chunk,c5200_bulk,3,0.019525
+# slab rows: slab,id,yplus,side,n,ratio_local,max_w2,mean_w2,pos_frac,peak_local,zero
+slab,s1,1.5,64,4096,0.007971,1161193.57,143391.31,0.5391,0.065351,0
+slab,s2,15,64,4096,0.027021,187077.87,14503.32,0.6785,0.040320,0
+slab,s3,50,64,4096,0.040018,54093.03,3004.64,0.7244,-0.012214,0
+slab,s4,100,64,4096,0.041835,23127.57,1076.53,0.7290,-0.006048,0
+slab,s5,300,64,4096,0.028531,13882.92,591.91,0.7520,0.011191,0
+slab,s6,1000,64,4096,0.040291,847.87,53.12,0.7002,0.006170,0
+slab,s3b,50,128,16384,0.026614,129761.11,3736.98,0.7036,0.047345,0

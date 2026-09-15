@@ -193,3 +193,5 @@ NSPROOFSET_ARC_B280,band v0.436.0,RULING_REQUESTED,B280 (Theorem B; PAPER_106 ex
 NSPROOFSET_ARC_B281,band v0.437.0,RULING_REQUESTED,B281 (Q-247: which sound speed defines the sound cone at omega_SCm - c_0 1480 or c_inf 3200 m/s; plus Q-246 still open),yes,pending - the theorems do not depend on it; the mode count and eps do (x 2.162)
 NSPROOFSET_ARC_B282,band v0.438.0,DATA_GRADED,B282 (stage 1 of the kill test; stage 2 pending a SciServer/cutout run),no,none needed - data front; Daniel runs stage 2 (kt_stage2_cutouts.py) when convenient
 NSPROOFSET_ARC_B283,band v0.438.0,DATA_GRADED,B283 (stage 2 of the kill test; data-hole finding),no,none needed - Daniel decides whether to notify JHTDB of the isotropic32768 zero blocks
+NSPROOFSET_ARC_B284,band v0.439.0,DATA_GRADED,B284 (front 2; the pair-cap discrimination; consistency pass at the near-wall tail),no,Daniel decides whether to run channel5200 for the deeper tail
+NSPROOFSET_ARC_B285,band v0.439.0,DATA_GRADED,B285 (channel5200; the in-medium Reynolds rung; no trend),no,front 2 exhausts the public DNS record - next move is Daniel-owned (regime, not resolution)
