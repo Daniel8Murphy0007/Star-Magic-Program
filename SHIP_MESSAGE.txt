@@ -1,51 +1,47 @@
-v0.439.0 — FRONT 2 SHIP (the pair-cap discrimination at the near-wall tail, two Reynolds rungs)
+v0.440.0 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP
 
-B284 + B285 (PAPER_2279, PAPER_2280): front 2 of the Navier-Stokes proof
-set - the pair-cap DISCRIMINATION taken to the near-wall tail of
-wall-bounded turbulence on two Reynolds rungs. Built on the v0.438.0 KILL
-TEST SHIP (front 1); one band since v0.438.0.
+B286 (PAPER_2281): front 4 of the Navier-Stokes proof set - caught
+mis-specified before any CPU, re-posed on the right observable, and then
+MEASURED the same day with a simulation written from scratch. One band
+since v0.439.0.
 
-The cap is a pair (PAPER_2264): vacuum-branch flows obey 17/20 = 0.85,
-in-medium (wall-bounded) flows 197/200 = 0.985, the two 0.135 apart.
-B277 sampled the channel BULK with the walls excluded. This band supplies
-the near-wall cutouts under the personal token (value recorded nowhere;
-SHIP GUARD v11).
+- THE DEFECT (the program's own; Rule 7): PAPER_2276 sec 6.4 asked the MD
+  run to compare "the transverse current integrated over omega" with
+  exp(-0.344 (k/k_c)^2). That integral is C_T(k,0) = N k_B T/m at EVERY
+  wavenumber in any classical fluid at equilibrium - the equipartition
+  identity, flat in k. A run would have "falsified" the roll-off while
+  testing nothing.
+- THE OBSERVABLE: the wavevector-dependent shear viscosity eta(k) from the
+  transverse-current autocorrelation (Palmer 1994; Hess 2002; gmx tcaf) -
+  the fluid's transverse-momentum TRANSFER at k. PREDICTION: eta(k)/eta_0
+  = exp(-0.344 (k/k_c)^2), k_c = 5.31 nm^-1 (c_0) or 2.45 nm^-1 (c_inf);
+  gmx-tcaf coefficient a = 0.344/k_c^2 = 0.0122 / 0.0570 nm^2. Falsifier
+  stated before measurement.
+- THE INSTRUMENT: the package index being unreachable, md_grade/
+  md_engine.py - a rigid TIP4P/2005 water MD in numpy (RATTLE, virtual M
+  site, O-O LJ + reaction-field Coulomb, site-based 0.9 nm cutoff) -
+  validated on force/energy consistency (machine precision), energy
+  conservation (-0.006 kJ/mol per molecule over 2 ps) and the model's
+  potential energy (-47.5 vs -47.4 published). Every line ships in
+  md_grade/ with the run script, analysis, log, NVE check and CSV.
+- THE MEASUREMENT: 512 molecules, 240 ps, 26 k-shells to 13.8 nm^-1,
+  eta(k) by the Green-Kubo integral with block errors. eta_0 1.05 mPa s.
+  eta/eta_0 flat to k ~ 6 nm^-1, then rolling off to 1/e at 13.3 nm^-1 -
+  MEASURED k_c = 7.8 nm^-1.
+- THE READING: c_0 (5.31) - SAME SCALE, factor 1.47, NOT a precision
+  match. c_inf (2.45) - EXCLUDED by a factor 3.2: the first fluid-side
+  evidence on Q-247, and it points to c_0 = 1480 m/s. Shape (Gaussian vs
+  Lorentzian) undecided at this quality; the second estimator gives k_c
+  4.4, so c_0 sits between the estimators. Per the pre-stated falsifier
+  this is NOT a pass of the 0.344 coefficient: the roll-off exists, on
+  the sound-cone scale; the exact coefficient is not confirmed.
+- Q-250 OPENED (is eta(k) the canonical reading of transfer). PAPER_2276
+  carries a dated correction. Registry rows front4_specification,
+  front4_eta_k_grade (GRADED), front4_measured_roll_off (FINDING).
 
-B284 - JHTDB channel, Re_tau ~ 1000 (PAPER_2279):
-- STAGE 1 (fd4lag4): near-wall y+ [0.5,150] 250,000 gradient tensors +
-  bulk 100,000, zero errors; the 1182 ratio by y+ band runs 0.007
-  (sublayer) -> 0.024 (buffer) -> 0.015 (core).
-- STAGE 2 (fd4noint, own grid): four wall-parallel slabs graded with
-  their OWN maxima: 0.0045 -> 0.022 -> 0.041 (y+50) -> 0.037.
+Not claimed: front 4 passed or closed; one run, one box, one seed,
+reaction field; the diffusion coefficient. Record run (8 nm, 1-2 ns,
+PME) is the next instrument.
 
-B285 - JHTDB channel5200, Re_tau 5186, the largest public wall-bounded
-DNS (PAPER_2280): the identical protocol, one parameter changed, graded
-side by side IN WALL UNITS.
-- NO REYNOLDS TREND: the same band profile; the positive-stretching
-  fraction agrees to 0.005 in all eight shared bands (0.547 vs 0.548 at
-  the wall, 0.741 vs 0.744 at y+ 100-150); the local-max envelope is
-  0.0418 vs 0.0413 - ONE PERCENT apart across a fivefold rise in Re_tau.
-- Seven slabs (64x64 at y+ 1.5/15/50/100/300/1000; 128x128 at y+ 50): the
-  128x128 grades lower (the B283 rule); the log layer's most intense cells
-  at y+ 50 and 100 are COMPRESSED along omega. Zero zero-nodes anywhere.
-
-RESULT: the IN-MEDIUM BRANCH HOLDS on both rungs - worst 0.042, 20x under
-0.85 and 24x under 0.985 - but the DISCRIMINATION is OUT OF REACH: the
-flow sits an order of magnitude below the nearer branch and raising
-Re_tau fivefold moved it by one percent. The in-medium ladder (two rungs,
-flat) is the wall-side twin of the isotropic ladder. The public DNS
-record is exhausted for front 2; what would reach the 0.85-0.985 band is
-a different regime, not a bigger DNS.
-
-FINDING (both rungs): the viscous sublayer has the lowest positive-
-stretching fraction and its most intense enstrophy - mean shear - the
-smallest local efficiency; stretching efficiency peaks in the buffer/log
-layer, never at the wall. The most intense vorticity is the least
-efficiently stretched on the wall side too.
-
-in_medium_tail_grade() + in_medium_reynolds_rung() live. Four registry
-rows. B277 near-wall gap closed. Not claimed: the discrimination; the
-whole channel graded; a 3D cube on the non-uniform grid.
-
-Gate 6,111/0. Dispatch 2,331 keys. Registry 7,129 rows. Acceptance
+Gate 6,113/0. Dispatch 2,332 keys. Registry 7,132 rows. Acceptance
 109/109 (simulator untouched).

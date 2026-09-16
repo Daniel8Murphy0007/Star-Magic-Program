@@ -195,3 +195,4 @@ NSPROOFSET_ARC_B282,band v0.438.0,DATA_GRADED,B282 (stage 1 of the kill test; st
 NSPROOFSET_ARC_B283,band v0.438.0,DATA_GRADED,B283 (stage 2 of the kill test; data-hole finding),no,none needed - Daniel decides whether to notify JHTDB of the isotropic32768 zero blocks
 NSPROOFSET_ARC_B284,band v0.439.0,DATA_GRADED,B284 (front 2; the pair-cap discrimination; consistency pass at the near-wall tail),no,Daniel decides whether to run channel5200 for the deeper tail
 NSPROOFSET_ARC_B285,band v0.439.0,DATA_GRADED,B285 (channel5200; the in-medium Reynolds rung; no trend),no,front 2 exhausts the public DNS record - next move is Daniel-owned (regime, not resolution)
+NSPROOFSET_ARC_B286,band v0.440.0,RULING_REQUESTED,B286 (front 4 re-specified; Q-250 which observable canonizes transfer above k_c),yes,Q-250 - eta(k) from the TCAF proposed; Daniel decides; the MD run also awaits a wheel or his machine

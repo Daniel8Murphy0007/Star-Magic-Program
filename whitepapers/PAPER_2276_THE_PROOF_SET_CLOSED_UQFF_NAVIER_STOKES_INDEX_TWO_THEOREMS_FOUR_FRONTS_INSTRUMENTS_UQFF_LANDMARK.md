@@ -240,6 +240,10 @@ a technicality - it will not be stretched.
   current spectra C_T(k, omega), C_L(k, omega) for k = 1-20 nm^-1 and the
   kinetic-energy spectrum E(k). Test: the k-dependence of the transverse
   current integrated over omega against exp(-0.344 (k/k_c)^2) for the
+  [CORRECTED 2026-09-15, PAPER_2281/B286: that integral is C_T(k,0) =
+  N k_B T/m at every k - equipartition, flat by identity. The observable
+  is the wavevector-dependent shear viscosity eta(k) from the TCAF, with
+  the prediction a = 0.344/k_c^2 in the gmx tcaf fit eta_0 (1 - a k^2).]
   two candidate k_c (Q-247). This runs on a workstation in days; it
   needs no token and no beam time. It is the cheapest open front.
 - **Instrument (b): inelastic x-ray scattering (IXS) / inelastic neutron

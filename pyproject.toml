@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.439.0"
-description = "Star-Magic UQFF calculator v0.439.0: FRONT 2 SHIP - the pair-cap discrimination (PAPER_2279-2280) at the near-wall tail of wall-bounded turbulence, JHTDB channel Re_tau 1000 AND channel5200 Re_tau 5186: 700k gradient tensors + 11 local-max fd4noint slabs vs BOTH branches 17/20 and 197/200 - in-medium branch HOLDS (worst 0.042, 20x under both), NO Reynolds trend across a fivefold rise, discrimination out of reach (flow an order of magnitude below the nearer branch); gate 6,111/0."
+version = "0.440.0"
+description = "Star-Magic UQFF calculator v0.440.0: FRONT 4 RE-SPECIFIED AND MEASURED SHIP (PAPER_2281) - the MD test as written was the equipartition identity, caught before any run; re-posed on the wavevector-dependent shear viscosity eta(k) and MEASURED with the program own numpy TIP4P/2005 MD (512 molecules, 240 ps): eta(k) rolls off with measured k_c 7.8 nm^-1 - the c_0 sound-cone scale (5.31), fast sound (2.45) excluded by 3x, the 0.344 coefficient not confirmed; Q-250 opened; gate 6,113/0."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -187,6 +187,16 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "jhtdb_grade/jhtdb_kill_test_stage2_2026-09-15.csv",
     "jhtdb_grade/jhtdb_ladder_grade_2026-09-11.csv",
     "jhtdb_grade/kt_stage2_cutouts.py",
+]
+"share/star-magic-program/md_grade" = [
+    "md_grade/front4_analyze.py",
+    "md_grade/front4_eta_k.csv",
+    "md_grade/front4_main_analysis.json",
+    "md_grade/front4_main_run.log",
+    "md_grade/front4_nve_check.txt",
+    "md_grade/front4_run.py",
+    "md_grade/front4_tcaf.py",
+    "md_grade/md_engine.py",
 ]
 "share/star-magic-program/notebooks" = [
     "notebooks/00_quickstart.ipynb",
@@ -2057,6 +2067,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "whitepapers/PAPER_2279_FRONT_2_THE_PAIR_CAP_DISCRIMINATION_NEAR_WALL_TAIL_CHANNEL_UQFF_LANDMARK.md",
     "whitepapers/PAPER_227_Tapestry_LMC_Stellar_Wind_UQFF.md",
     "whitepapers/PAPER_2280_FRONT_2_EXTENSION_CHANNEL5200_THE_IN_MEDIUM_REYNOLDS_RUNG_NO_TREND_UQFF_LANDMARK.md",
+    "whitepapers/PAPER_2281_FRONT_4_RESPECIFIED_THE_EQUIPARTITION_IDENTITY_AND_THE_WAVEVECTOR_DEPENDENT_SHEAR_VISCOSITY_UQFF_LANDMARK.md",
     "whitepapers/PAPER_228_Westerlund2_OB_StellarWind_MUGE.md",
     "whitepapers/PAPER_229_Pillars_Creation_Erosion_MUGE.md",
     "whitepapers/PAPER_230_NGC2525_SN2018gv_Negative_MassLoss_MUGE.md",

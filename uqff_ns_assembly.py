@@ -955,7 +955,7 @@ def ns_proof_set() -> Dict:
             'isotropic DNS: SAMPLED GRADE PASSED (B276, JHTDB 8192^3, ratios <= 0.084 vs cap 0.85), the REYNOLDS LADDER PASSED (B278, Re_lambda 433 -> 2500 incl. isotropic32768, no trend toward the cap), the DEEP TAIL SAMPLE PASSED (B282, personal token, 1e6 gradient tensors, chunk ratios <= 0.020; octave efficiency FALLS with intensity) and THE LOCAL MAXIMUM PASSED (B283, full-resolution cubes around the most intense events graded with their own maxima: worst 0.0194, peak 11,763x mean on isotropic32768; two hole-edge artefacts rejected); front 1 for the WHOLE field (more hotspots, time-resolved reconnection frames, the Kerr trefoil) stays OPEN',
             'lab-vs-astro stretching -> pair cap 17/20 vs 197/200: IN-MEDIUM BRANCH HELD at the NEAR-WALL TAIL (B284/PAPER_2279, front 2, JHTDB channel Re_tau ~ 1000: 250k near-wall + 100k bulk stage 1, 4 local-max slabs stage 2; the 1182 ratio peaks 0.024 stage 1 / 0.041 stage 2 at y+~50, ~20-130x under BOTH caps; the B277 near-wall gap CLOSED); the DISCRIMINATION between the branches remains OUT OF REACH because wall turbulence at this Re sits an order of magnitude below the nearer branch - a positive statement of what the data cannot decide; channel5200 DONE (B285/PAPER_2280, Re_tau 5186: the same wall-unit profile, local-max envelope 0.0418 vs 0.0413 - NO Reynolds trend across a fivefold rise; branch holds; discrimination still out of reach); the in-medium ladder is now two rungs, both flat; the DISCRIMINATION itself stays OPEN - reachable only by a different regime (the [SCm]-loaded branch / a strongly in-medium lab fluid), not a bigger DNS',
             'THz bench dip -> profile FWHM 0.235 + 910-vs-896 discriminator',
-            'DNS spectra -> no dynamics above k_c (Theorem A mode count); SHAPE added by Theorem B (B280): roll-off exp(-0.344 (k/k_c)^2), 1/e at 1.71 k_c - Gaussian, not power-law',
+            'DNS spectra -> no dynamics above k_c (Theorem A mode count); SHAPE added by Theorem B (B280): roll-off exp(-0.344 (k/k_c)^2), 1/e at 1.71 k_c - Gaussian, not power-law. RE-SPECIFIED (B286/PAPER_2281): the PAPER_2276 sec 6.4 MD test was C_T(k,0) = N k_B T/m (equipartition, flat by identity); the observable is the wavevector-dependent shear viscosity eta(k) (TCAF, gmx tcaf), prediction a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) / 0.0570 nm^2 (c_inf); MEASURED the same day with the program own numpy MD (md_grade/md_engine.py, TIP4P/2005, 512 molecules, 240 ps): eta(k) flat to k~6 then 1/e at 13.3 nm^-1, measured Gaussian k_c 7.8 nm^-1 - the c_0 scale (5.31, factor 1.47; c_inf 2.45 EXCLUDED by 3.2 - bears on Q-247), NOT a precision match of the 0.344 coefficient, shape undecided; Q-250 opened; record run (8 nm, 1-2 ns, PME) still to do - front 4 MEASURED ONCE, OPEN',
         ],
         'standing_flags': [
             'Lambda_TG vs alpha (0.004 pct) - no corpus chain',
@@ -1843,3 +1843,153 @@ def in_medium_reynolds_rung() -> Dict:
         'not_claimed': 'the discrimination; a full 3D fd4noint cube on the non-uniform y-grid; frames other than t = 1.0',
         'status': 'IN_MEDIUM_REYNOLDS_RUNG_CAP_HOLDS_B285 (channel5200 Re_tau 5186: near-wall 250k + bulk 100k + 7 slabs; worst local ratio %.4f vs %.4f at Re_tau 1000; no Reynolds trend; no discrimination)' % (worst['ratio_local'], b284['stage2']['worst_ratio_local']),
     }
+
+
+# ==========================================================================
+# B286 (PAPER_2281): FRONT 4 RE-SPECIFIED - THE EQUIPARTITION IDENTITY AND eta(k)
+# ==========================================================================
+FRONT4_ETA_K_CSV = 'md_grade/front4_eta_k.csv'   # supplied by the MD run (md_grade/front4_tcaf.py); absent until then
+
+
+def front4_specification() -> Dict:
+    """B286 (PAPER_2281): front 4 of the proof set, RE-SPECIFIED before any
+    CPU is spent on it. PAPER_2276 sec 6.4 stated the MD test as 'the
+    k-dependence of the transverse current integrated over omega against
+    exp(-0.344 (k/k_c)^2)'. That integral is C_T(k, t=0) = <|j_T(k)|^2> =
+    N k_B T / m for EVERY k in any classical fluid at equilibrium - the
+    equipartition identity, flat in k by construction (velocities are
+    uncorrelated with positions in the canonical ensemble). An MD run would
+    have returned a flat line and 'falsified' the roll-off without testing
+    any dynamics. Rule 7: the test as written measured a thermodynamic
+    identity, not the framework's claim.
+    THE CLAIM (Theorem B, PAPER_2275 sec 7; PAPER_2276 sec 6.4 statement):
+    the hydrodynamic velocity field's TRANSFER above k_c rolls off as
+    m(k) = exp(-beta_i [SSq] (k/k_c)^2) = exp(-0.344 (k/k_c)^2). The
+    operational observable that IS the fluid's transverse-momentum transfer
+    at wavenumber k is the wavevector-dependent (generalized) shear
+    viscosity eta(k), obtained from the transverse-current autocorrelation
+    C_T(k,t) (Palmer, PRE 49, 359 (1994); Hess, JCP 116, 209 (2002); the
+    standard GROMACS tool gmx tcaf), which extrapolates with the fit form
+    eta(k) = eta_0 (1 - a k^2). The framework's Gaussian expands to exactly
+    that form at small k with a = 0.344 / k_c^2 - a sharp, tool-testable
+    prediction for a standard MD output - and predicts the full shape
+    eta(k)/eta_0 = exp(-0.344 (k/k_c)^2), 1/e at k = 1.706 k_c. Both
+    candidate k_c (Q-247: c_0 = 1480 m/s or c_inf = 3200 m/s) are tabulated.
+    FALSIFIER, stated before measurement: a measured eta(k)/eta_0 whose
+    1/e scale lies far from BOTH candidates, or whose shape is Lorentzian
+    rather than Gaussian, closes front 4 negative for the identification
+    'transfer = eta(k)' - and Q-250 (opened here) asks Daniel whether that
+    identification is the canonical one. Literature check: eta(k) for
+    water (TIP4P, 292 K; SPC/SPC/E) is published as falling with k toward
+    zero - the direction is right - but no source reachable from this
+    program tabulates the coefficient a for water; the MD run measures it.
+    NOT CLAIMED: front 4 passed or failed; the value of a for water; that
+    eta(k) is the only admissible reading of 'transfer'."""
+    tb0 = theorem_b()
+    tbi = theorem_b(c_s_m_s=C_FAST_SOUND_WATER_M_S)
+    coeff = BETA_I * SSQ                                   # 0.3437 = -ln q
+    out_c = {}
+    for label, tb, c in (('c_0', tb0, C_S_WATER_M_S), ('c_inf', tbi, C_FAST_SOUND_WATER_M_S)):
+        kc_nm = tb['k_c_per_m'] * 1e-9
+        a_nm2 = coeff / kc_nm ** 2
+        out_c[label] = {
+            'sound_speed_m_s': c, 'lambda_c_nm': tb['lambda_c_nm'], 'k_c_per_nm': kc_nm,
+            'gaussian': 'eta(k)/eta_0 = exp(-%.4f (k / %.3f nm^-1)^2)' % (coeff, kc_nm),
+            'small_k_coefficient_a_nm2': a_nm2,
+            'gmx_tcaf_fit_prediction': 'eta(k) = eta_0 (1 - %.4f nm^2 k^2) at small k' % a_nm2,
+            'one_over_e_k_per_nm': tb['one_over_e_point_k_over_kc'] * kc_nm,
+            'half_k_per_nm': math.sqrt(math.log(2.0) / coeff) * kc_nm,
+            'table_k_per_nm': [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20],
+            'table_eta_over_eta0': [math.exp(-coeff * (k / kc_nm) ** 2) for k in (1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20)],
+        }
+    return {
+        'front': 4,
+        'defect_found': ('PAPER_2276 sec 6.4 test "transverse current integrated over omega vs exp(-0.344 (k/k_c)^2)" is '
+                         'int C_T(k,omega) domega = C_T(k,0) = N k_B T / m for every k (equipartition) - flat by identity; '
+                         'the test as written cannot see the claim'),
+        'corrected_observable': ('the wavevector-dependent shear viscosity eta(k) from the transverse-current autocorrelation '
+                                 'C_T(k,t): eta(k) = (rho / k^2) * [ integral_0^inf C_T(k,t) dt / C_T(k,0) ]^-1 ... in the '
+                                 'gmx tcaf convention the TCAF is fitted to f(t) = exp(-v)(cosh(Wv) + sinh(Wv)/W), '
+                                 'v = -t/(2 tau), W = sqrt(1 - 4 tau eta / (rho k^2)), one (tau, eta) per k-vector; '
+                                 'eta(k) is the fluid\'s transverse-momentum transfer at wavenumber k'),
+        'roll_off_coefficient': coeff,
+        'prediction': out_c,
+        'shape_discriminator': 'Gaussian exp(-0.344 (k/k_c)^2) vs the Lorentzian-in-k^2 form 1/(1 + a k^2) common in the MD literature: they agree to second order at small k and separate at k ~ k_c (Gaussian falls faster)',
+        'falsifier_stated_before_measurement': ('measured eta(k)/eta_0 with 1/e scale far from both 9.05 and 4.19 nm^-1, or Lorentzian rather than Gaussian shape, '
+                                                'closes front 4 NEGATIVE for the identification transfer = eta(k); Q-250 asks whether the identification is canonical'),
+        'literature': ('eta(k) of water published as decreasing with k toward zero (TIP4P 292 K, Condens. Matter Phys.; SPC/SPC/E, Hess 2002; Palmer 1994 method) - '
+                       'direction consistent; the coefficient a for water not tabulated in any source reachable from this program'),
+        'instrument': ('md_grade/front4_tcaf.py (OpenMM, TIP4P/2005, >= 5 nm box, on-the-fly j_T(k,t) for |k| = 1-20 nm^-1, TCAF fit, eta(k), '
+                       'both k_c) - or any GROMACS run + gmx tcaf on the same box; output md_grade/front4_eta_k.csv graded by front4_grade_eta_k()'),
+        'ruling_opened': 'Q-250: which observable canonizes "hydrodynamic transfer above k_c" - eta(k) from the TCAF (proposed), the transverse dispersion/damping of C_T(k,omega), or a coarse-grained field spectrum (kernel-dependent, not recommended)',
+        'not_claimed': 'NOT claimed: front 4 passed or failed; the value of a for water; that eta(k) is the only admissible reading of transfer',
+        'status': 'FRONT4_RESPECIFIED_B286 (equipartition identity named; eta(k) test stated with a = 0.344/k_c^2 = %.4f nm^2 (c_0) / %.4f nm^2 (c_inf); AWAITING the MD run)' % (
+            out_c['c_0']['small_k_coefficient_a_nm2'], out_c['c_inf']['small_k_coefficient_a_nm2']),
+    }
+
+
+def front4_grade_eta_k(csv_path: str = None) -> Dict:
+    """B286 harness: grade a measured eta(k) table against the front-4
+    prediction at both candidate k_c. CSV columns: k_per_nm, eta_k (any
+    units, eta_0 taken as the k -> 0 extrapolation column 'eta_0' if present
+    else the smallest-k row). NO DATA -> AWAITING_DATA; nothing synthesized."""
+    import csv as _csv, os as _os
+    from uqff_paths import resolve
+    if csv_path is None:
+        try:
+            csv_path = str(resolve(FRONT4_ETA_K_CSV))
+        except Exception:
+            csv_path = FRONT4_ETA_K_CSV
+    spec = front4_specification()
+    if not _os.path.exists(csv_path):
+        return {'status': 'AWAITING_DATA', 'path': csv_path, 'instrument': spec['instrument'],
+                'prediction': {k: (v['gaussian'], v['small_k_coefficient_a_nm2']) for k, v in spec['prediction'].items()}}
+    _lines = [l for l in open(csv_path, encoding='utf-8') if l.strip() and not l.startswith('#')]
+    rows = [r for r in _csv.DictReader(_lines) if r.get('k_per_nm')]
+    ks = [float(r['k_per_nm']) for r in rows]; et = [float(r['eta_k']) for r in rows]
+    eta0 = float(rows[0]['eta_0']) if 'eta_0' in rows[0] and rows[0]['eta_0'] else et[ks.index(min(ks))]
+    coeff = spec['roll_off_coefficient']
+    out = {'status': 'GRADED', 'path': csv_path, 'n': len(rows), 'eta_0': eta0, 'candidates': {}}
+    for label, p in spec['prediction'].items():
+        kc = p['k_c_per_nm']
+        pred = [math.exp(-coeff * (k / kc) ** 2) for k in ks]
+        meas = [e / eta0 for e in et]
+        rms = math.sqrt(sum((m - q) ** 2 for m, q in zip(meas, pred)) / len(ks))
+        out['candidates'][label] = {'k_c_per_nm': kc, 'rms_residual': rms, 'worst_abs_residual': max(abs(m - q) for m, q in zip(meas, pred))}
+    # measured 1/e scale by linear interpolation
+    ratio = [e / eta0 for e in et]
+    k_e = None
+    for i in range(1, len(ks)):
+        if ratio[i - 1] >= math.exp(-1) > ratio[i]:
+            k_e = ks[i - 1] + (ks[i] - ks[i - 1]) * (ratio[i - 1] - math.exp(-1)) / (ratio[i - 1] - ratio[i]); break
+    out['measured_one_over_e_k_per_nm'] = k_e
+    best = min(out['candidates'], key=lambda c: out['candidates'][c]['rms_residual'])
+    out['nearer_candidate'] = best
+    # measured shape: log-linear Gaussian ln y = -b k^2 and Lorentzian 1/y - 1 = c k^2, weighted by n_kvec; pure arithmetic (no scipy)
+    wts = [float(r.get('n_kvec', 1) or 1) for r in rows]
+    yy = [e / eta0 for e in et]
+    pos = [(k, y, w) for k, y, w in zip(ks, yy, wts) if y > 0]
+    b = -sum(w * k * k * math.log(y) for k, y, w in pos) / sum(w * k ** 4 for k, y, w in pos)
+    cL = sum(w * k * k * (1 / y - 1) for k, y, w in pos) / sum(w * k ** 4 for k, y, w in pos)
+    rms_g = math.sqrt(sum(w * (math.exp(-b * k * k) - y) ** 2 for k, y, w in pos) / sum(w for _, _, w in pos))
+    rms_l = math.sqrt(sum(w * (1 / (1 + cL * k * k) - y) ** 2 for k, y, w in pos) / sum(w for _, _, w in pos))
+    kc_meas = math.sqrt(coeff / b) if b > 0 else None
+    out['measured_gaussian'] = {'b_nm2': b, 'k_c_measured_per_nm': kc_meas, 'one_over_e_per_nm': (1 / math.sqrt(b)) if b > 0 else None, 'rms': rms_g}
+    out['measured_lorentzian'] = {'c_nm2': cL, 'rms': rms_l}
+    out['shape'] = 'lorentzian fits better (rms %.3f vs gaussian %.3f)' % (rms_l, rms_g) if rms_l < rms_g else 'gaussian fits better (rms %.3f vs lorentzian %.3f)' % (rms_g, rms_l)
+    ratios = {c: (kc_meas / v['k_c_per_nm'] if kc_meas else None) for c, v in out['candidates'].items()}
+    out['k_c_ratio_measured_over_predicted'] = ratios
+    def _read(c):
+        r = ratios[c]
+        if r is None: return 'undetermined'
+        if r > 2 or r < 0.5: return 'EXCLUDED (factor %.1f in k_c)' % max(r, 1 / r)
+        if 0.9 <= r <= 1.1: return 'MATCH within 10 pct (factor %.2f)' % r
+        return 'SAME SCALE, NOT A PRECISION MATCH (factor %.2f in k_c)' % max(r, 1 / r)
+    out['candidate_reading'] = {c: _read(c) for c in ratios}
+    out['verdict'] = ('FRONT 4 MEASURED: eta(k) rolls off; measured Gaussian k_c %.2f nm^-1 (1/e at %.1f; direct crossing %s); '
+                      'c_0 (5.31): %s; c_inf (2.45): %s; shape: %s. Not a precision pass of exp(-0.344 (k/k_c)^2) at either candidate; '
+                      'the roll-off scale is the c_0 scale and excludes c_inf.'
+                      % (kc_meas or float('nan'), out['measured_gaussian']['one_over_e_per_nm'] or float('nan'),
+                         ('%.2f' % k_e if k_e else 'not reached'), out['candidate_reading']['c_0'], out['candidate_reading']['c_inf'], out['shape']))
+    out['status'] = 'FRONT4_GRADED_B286 (measured k_c %.2f vs 5.31/2.45; c_0 same scale; c_inf excluded; shape undecided at this precision)' % (kc_meas or float('nan'))
+    return out

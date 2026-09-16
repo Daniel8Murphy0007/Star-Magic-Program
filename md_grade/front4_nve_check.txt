@@ -1,0 +1,4 @@
+N 512 L 2.486 L/2 1.243  prelist 1.10
+equilibrated T 292.8  (341 s)
+NVE dt=2.0fs, 1.9 ps: dE/N = -0.0057 kJ/mol (std 0.0018), dT = +1.1 K
+NVE dt=1.0fs, 1.0 ps: dE/N = -0.0015 kJ/mol (std 0.0004), dT = +19.8 K

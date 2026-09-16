@@ -625,3 +625,16 @@ near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
 1000, local-max envelope 0.0418 vs 0.0413 - NO REYNOLDS TREND across 5x;
 branch holds; discrimination out of reach; the public DNS record is
 exhausted for front 2. Gate 6,111/0. Acceptance 109/109.
+
+## v0.440.0 — 2026-09-15 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP
+PAPER_2281 (B286): the front-4 MD test (PAPER_2276 sec 6.4) was C_T(k,0)
+= N k_B T/m - the equipartition identity, flat in k - caught before any
+run. Re-posed on eta(k) from the transverse-current autocorrelation with
+the prediction a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) / 0.0570 nm^2
+(c_inf) for the stock gmx tcaf fit; then MEASURED with the program's own
+numpy TIP4P/2005 MD (md_grade/md_engine.py; 512 molecules, 240 ps):
+eta(k) rolls off with measured k_c 7.8 nm^-1 - the c_0 scale (factor
+1.47), c_inf excluded (3.2x), coefficient 0.344 not confirmed, shape
+undecided; harness GRADED; Q-250 opened; record run OPEN. Gate 6,113/0.
+Acceptance 109/109.
+

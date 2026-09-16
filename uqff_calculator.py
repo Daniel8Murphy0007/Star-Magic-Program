@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.439.0"
+VERSION = "0.440.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29526,6 +29526,32 @@ def _paper_2280(dataset):
             'formula': 'B284 protocol at Re_tau 5186; wall-unit band comparison with Re_tau 1000; local-max envelope ratio (5186/1000)',
             'source': 'PAPER_2280', 'residual_pct': 0.0,
             'status': 'IN_MEDIUM_REYNOLDS_RUNG_CAP_HOLDS_2026-09-15 (no Re trend; branch holds; discrimination out of reach)'}
+
+
+@_register('PAPER_2281')
+def _paper_2281(dataset):
+    """Front 4 re-specified (B286). The MD test PAPER_2276 sec 6.4 wrote -
+    the transverse current integrated over omega - is C_T(k,0) = N k_B T/m
+    at every k (equipartition), flat by identity; it could not see the
+    claim. The observable the claim is about is the wavevector-dependent
+    shear viscosity eta(k) from the transverse-current autocorrelation
+    (Palmer 1994; Hess 2002; gmx tcaf), the fluid's transverse-momentum
+    transfer at k. Prediction: eta(k)/eta_0 = exp(-0.344 (k/k_c)^2), i.e.
+    the standard fit coefficient a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) or
+    0.0570 nm^2 (c_inf); 1/e at 9.05 / 4.19 nm^-1. Falsifier stated before
+    measurement. Then MEASURED (B286b): the package index unreachable, the
+    instrument was written from scratch - md_grade/md_engine.py, rigid
+    TIP4P/2005 in numpy - 512 molecules, 240 ps, 26 k-shells: eta_0 1.05
+    mPa s; measured Gaussian k_c 7.8 nm^-1 (1/e 13.3) = the c_0 scale
+    (factor 1.47, NOT a precision match), c_inf EXCLUDED (3.2x); shape
+    undecided; coefficient 0.344 not confirmed; harness GRADED; Q-250
+    opened. Not claimed: front 4 passed or closed (one run, one seed)."""
+    from uqff_ns_assembly import front4_specification, front4_grade_eta_k
+    spec = front4_specification(); spec['harness'] = front4_grade_eta_k()
+    return {'value': spec,
+            'formula': 'eta(k)/eta_0 = exp(-beta_i [SSq] (k/k_c)^2); small-k fit eta(k) = eta_0 (1 - a k^2) with a = beta_i [SSq] / k_c^2; k_c = omega_SCm / c_s',
+            'source': 'PAPER_2281', 'residual_pct': 0.0,
+            'status': 'FRONT4_RESPECIFIED_AND_MEASURED_2026-09-15 (equipartition identity named; eta(k) measured with the program own MD: k_c 7.8 nm^-1 - c_0 scale, c_inf excluded, 0.344 not confirmed; record run OPEN)'}
 
 
 @_register('PAPER_2258')

@@ -5,6 +5,63 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.440.0 — 2026-09-15 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP (the equipartition identity, eta(k), and the program's own MD)
+
+- B286 (PAPER_2281): FRONT 4 caught mis-specified BEFORE any CPU. The MD
+  test PAPER_2276 sec 6.4 wrote - the transverse current integrated over
+  omega vs exp(-0.344 (k/k_c)^2) - is int C_T(k,omega) domega = C_T(k,0)
+  = N k_B T/m at every k in any classical fluid at equilibrium: the
+  equipartition identity, flat in k by construction; a run would have
+  "falsified" the roll-off without testing any dynamics (Rule 7: the
+  program's own defect, named in full). RE-POSED on the observable the
+  claim is about: the wavevector-dependent shear viscosity eta(k) from
+  the transverse-current autocorrelation (Palmer PRE 49, 359 (1994);
+  Hess JCP 116, 209 (2002); gmx tcaf) - the fluid's transverse-momentum
+  TRANSFER at k. PREDICTION: eta(k)/eta_0 = exp(-0.344 (k/k_c)^2), i.e.
+  the stock fit eta(k) = eta_0 (1 - a k^2) must give a = 0.344/k_c^2 =
+  0.0122 nm^2 (c_0, k_c 5.307 nm^-1, 1/e 9.05) or 0.0570 nm^2 (c_inf, k_c
+  2.454, 1/e 4.19); the candidates differ 4.67x so the run also settles
+  Q-247 from the fluid side. Falsifier stated before measurement.
+  INSTRUMENT on the wheel: md_grade/front4_tcaf.py (OpenMM, TIP4P/2005
+  XML, on-the-fly j_T(k,t) per k-shell, gmx-tcaf fit, CSV). HARNESS
+  front4_grade_eta_k() AWAITING_DATA (synthesizes nothing). Q-250 OPENED
+  (canonical reading of "transfer": eta(k) proposed). The package index
+  is HTTP 403 from the cloud workspace, so the run waits on an OpenMM
+  wheel in wheels/ or Daniel's machine. PAPER_2276 sec 6.4 carries a dated
+  correction. Registry rows front4_specification (SPECIFIED) +
+  front4_eta_k_grade (AWAITING_DATA). Dispatch 2,332; registry 7,131
+  rows. NOT claimed: front 4 passed or failed; that eta(k) is the only
+  reading.
+- B286b (PAPER_2281 sec 5b): FRONT 4 MEASURED the same day. With the
+  package index unreachable, the instrument was written from scratch -
+  md_grade/md_engine.py, a rigid TIP4P/2005 water MD in numpy (RATTLE,
+  virtual M site with redistributed force, O-O LJ + reaction-field
+  Coulomb, SITE-based 0.9 nm cutoff after a molecule-based cutoff was
+  caught heating +1.5 kJ/mol per molecule per 2 ps timestep-independently
+  - the RF force at a group boundary is ~50 kJ/mol/nm; the site cutoff
+  conserves energy to -0.006 kJ/mol per molecule over 2 ps at 2 fs;
+  forces = -grad E to machine precision by finite differences; E/N
+  -47.5 vs the model's published -47.4). Run: 512 molecules, L 2.486 nm,
+  40 ps equilibration, 240 ps production, j_T(k,t) every 20 fs, 369
+  k-vectors in 26 shells to 13.8 nm^-1; eta(k) by the Green-Kubo
+  integral with four-block errors (the gmx-form fit reported as a
+  second, low-biased estimator). RESULT: eta_0 1.05 mPa s; eta/eta_0
+  flat to k ~ 6 then 1/e at 13.3 nm^-1; measured Gaussian k_c 7.8
+  nm^-1. c_0 (5.31): SAME SCALE, factor 1.47, NOT a precision match;
+  c_inf (2.45): EXCLUDED by 3.2 - the first fluid-side evidence on
+  Q-247, pointing to c_0; shape undecided (two weightings disagree);
+  the second estimator gives k_c 4.4, so c_0 sits between the
+  estimators. Per the pre-stated falsifier: NOT a pass of exp(-0.344
+  (k/k_c)^2); the roll-off exists on the sound-cone scale and the
+  coefficient is not confirmed. Harness front4_grade_eta_k() GRADED
+  (measured k_c, shape test, candidate readings - pure arithmetic, no
+  scipy in the gate). Engine, run script, analysis, log, NVE check and
+  CSV all on the wheel (md_grade/). Registry row front4_measured_roll_off
+  (FINDING) + front4_eta_k_grade -> GRADED; GRAPH edge BEARS_ON Q-247.
+  Dispatch 2,332; registry 7,132 rows; gate 6,113/0; simulator
+  untouched. NOT claimed: front 4 passed or closed; one run one box one
+  seed; the diffusion coefficient. Record run (8 nm, 1-2 ns, PME) OPEN.
+
 ## v0.439.0 — 2026-09-15 — FRONT 2 SHIP (the pair-cap discrimination at the near-wall tail, two Reynolds rungs)
 
 - B284 (PAPER_2279): FRONT 2 of the proof set - the pair-cap

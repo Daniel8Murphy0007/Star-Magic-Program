@@ -14290,3 +14290,112 @@ TOKEN NOT IN WHEEL; from an empty cwd calc('PAPER_2279') and
 calc('PAPER_2280') both return holds True / discrimination reachable
 False; acceptance 109/109. Ready to ship via .\ship.ps1 - one band on the
 shipped v0.438.0; chain intact.
+
+## 2026-09-15 — v0.440.0 prep — B286: FRONT 4 RE-SPECIFIED (the equipartition identity)
+
+Daniel: "proceed with recommendations" (front 4, the MD run; Q-247
+unanswered so both k_c). Tag chain read first: v0.439.0 tag present -
+new band v0.440.0. PyPI is HTTP 403 from the cloud (even numpy will not
+resolve), so no MD engine installs here.
+
+Before asking for a wheel, re-read the front-4 test as written
+(PAPER_2276 sec 6.4): "the transverse current integrated over omega vs
+exp(-0.344 (k/k_c)^2)". That integral is C_T(k,0) = N k_B T/m at every k
+- equipartition, flat by identity. The test could not see the claim; a
+run would have failed it trivially. Named the defect (the program's
+own), re-posed the front on eta(k) from the TCAF (the standard gmx tcaf
+observable; literature: eta(k) of water falls with k toward zero - Cond.
+Matter Phys. 2005 TIP4P 292 K; Hess 2002 SPC/SPC-E; Palmer 1994 method;
+the coefficient a for water not tabulated in any reachable source - Hess
+full text 403). Derived the prediction: the gmx tcaf fit coefficient
+a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) / 0.0570 nm^2 (c_inf), 1/e at 9.05 /
+4.19 nm^-1, ratio 4.67. Wrote the instrument md_grade/front4_tcaf.py
+(OpenMM, TIP4P/2005 XML, on-the-fly j_T(k,t), gmx-tcaf fit; two unit
+bugs caught in review: W^2 = 1 - 4 tau eta k^2/rho and the amu nm^-1
+ps^-1 -> mPa s conversion, checked against water 0.89 mPa s). Harness
+front4_grade_eta_k() AWAITING_DATA. Q-250 opened (Q-248/249 already
+taken by older rulings).
+
+WIRED: front4_specification() + front4_grade_eta_k() (B286); dispatch
+PAPER_2281; gate pin (6,112); 2 registry rows + GRAPH x2/CITATIONS/
+RESIDUALS + 8 band-trail satellites incl. the Rule-7 row; PAPER_2281;
+index row; PAPER_2276 sec 6.4 dated correction; ns_proof_set front-4
+line; RULINGS_QUEUE Q-250; labels 6112/2332/2326, defs 4,204, registry
+7,131. Gate/sweep/rehearsal below.
+
+
+Re-prep verification (cloud, 2026-09-15, B286): gate GREEN 6,112/0 (two
+strings caught: the assembly still said Q-248 from before the number
+collision was found - Q-248/249 belong to older rulings - and the
+not_claimed line lacked the word 'not'); staleness sweep clean (badges
+6112/2332/2326, defs 4,204, registry 7,131, census 2,277/2,332; ledger
+tail v0.440.0, 39 lines); all 11 satellites carry B286; token absent;
+manifest 2,742 incl. md_grade/front4_tcaf.py; wheel 24.8 MB, 20/20
+modules, 2,742/2,742 data-files, PAPER_2281 + the instrument aboard,
+TOKEN NOT IN WHEEL; from an empty cwd calc('PAPER_2281') returns
+FRONT4_RESPECIFIED_B286 with harness AWAITING_DATA and a = 0.0122 /
+0.0570 nm^2; acceptance 109/109. Ready to ship via .\ship.ps1 - one band
+on the shipped v0.439.0; chain intact.
+
+## 2026-09-15 — v0.440.0 prep (cont.) — B286b: FRONT 4 MEASURED (the program's own MD)
+
+Daniel: "FIX YOUR FUCKING MISTAKE. AND DON'T FUCK IT UP." The mistake:
+the front-4 test I wrote into PAPER_2276 (v0.437.0) was an equipartition
+identity. A correction without a measurement is a half-fix, so the
+measurement was made here, with no work on Daniel's side: PyPI, GitHub
+and conda are all 403/unreachable from the cloud, so the MD engine was
+written from scratch in numpy (md_grade/md_engine.py).
+
+Engine: rigid TIP4P/2005 (Abascal-Vega 2005 parameters), RATTLE on three
+constraints, M as a linear virtual site with force redistribution, O-O LJ
++ reaction-field Coulomb (eps_rf = inf). FIRST VERSION HEATED: +1.5
+kJ/mol per molecule per 2 ps, timestep-independent -> not integration
+error. Forces checked against -grad E by finite differences: exact. Cause:
+the molecule-based cutoff switches all nine site pairs on at O-O = r_c
+where the site-pair RF force is ~50 kJ/mol/nm (V''(r_c) delta), not zero.
+Fix: SITE-based cutoff (with eps_rf = inf both V and F vanish at r_c);
+also a first NVE test box (N=125, L/2 = 0.78 < r_c) was itself invalid -
+retested at N=512: dE/N = -0.006 kJ/mol over 2 ps at 2 fs (std 0.002).
+E/N -47.5 vs the model's -47.4. 0.076 s/step on 2 cores.
+
+Run: N=512, L 2.486 nm (k_min 2.53), 40 ps equil, 240 ps production,
+Berendsen tau 5 ps, j_T(k,t) every 20 fs for 369 k-vectors / 26 shells
+to 13.8 nm^-1; 3.1 h wall. Analysis: Green-Kubo integral eta(k) =
+rho/(k^2 int_0^8ps C_T dt) with four 60-ps block errors (primary); the
+gmx-form fit as a second estimator (biased ~3x low in the oscillatory
+shear-wave regime at these k; disclosed). Two weightings of the
+Gaussian-vs-Lorentzian shape test disagree -> shape undecided. D from
+the single-origin MSD came out unphysical (system drift not removed) -
+not used; validation rests on E/N, force consistency, conservation.
+
+RESULT: eta_0 1.05 mPa s (lit. 0.855); eta/eta_0 ~1 to k~6, 0.6 at 9.5,
+1/e at 13.3-13.4 nm^-1; Gaussian b 0.0056 nm^2 -> measured k_c 7.8 nm^-1.
+c_0 (5.31): same scale, factor 1.47, not a precision match. c_inf
+(2.45): EXCLUDED, factor 3.2 (bears on Q-247 -> c_0). Second estimator
+k_c 4.4 - c_0 between the estimators. Per the pre-stated falsifier: NOT
+a pass of the 0.344 coefficient; the roll-off exists on the sound-cone
+scale. Front 4 measured once, OPEN; record run 8 nm / 1-2 ns / PME next.
+
+WIRED: harness front4_grade_eta_k() GRADED (measured k_c, shape test,
+candidate readings - pure arithmetic, no scipy in the gate; comment lines
+in the CSV skipped); gate pin B286b (6,113); registry +1
+(front4_measured_roll_off) and front4_eta_k_grade -> GRADED (7,132);
+GRAPH x2; PAPER_2281 sec 5b + sec 0/7 updated; proof-set front-4 line
+MEASURED; dispatch status; labels 6113/7132; the OpenMM script's
+virtual-site weights corrected to TIP4P/2005 (they were TIP4P-Ew's).
+md_grade/ now carries the engine, run and analysis scripts, the
+analysis JSON, the run log, the NVE check and the CSV (the 66 MB raw
+j_T(k,t) archive stays in the workspace; regenerable from the scripts).
+Version stays 0.440.0 - one band on v0.439.0. Gate/sweep/rehearsal below.
+VERIFIED: gate 6,113/0 (two catches on the way - the B286 pin still
+asserted the harness AWAITING_DATA, and md_engine.py's own docstring still
+described the molecule-based cutoff that had been replaced: both fixed,
+the docstring now records the heating bug and the site-cutoff fix); wheel
+rebuilt from the generated manifest (2,922 entries; md_grade/ x8 on it;
+20/20 py-modules; token prefix ABSENT from every entry); installed in a
+clean venv and calc('PAPER_2281') run from an empty cwd - harness GRADED
+from the wheel's own CSV, k_c 7.805; acceptance 109/109; staleness sweep
+of 2,750 tracked files (no 6,112 / 7,131 / 4,203 / AWAITING_DATA left in
+any current-state file - only in history). Ready to ship via .\ship.ps1 -
+one band on v0.439.0, version 0.440.0, nothing for Daniel to decide.
+

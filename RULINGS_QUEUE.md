@@ -7666,3 +7666,30 @@ were in the corpus.
 - **Notable:** recomputed live in proof_set_closeout(); the external
   literal 3200 m/s is sourced inline. Front 4 depends on the answer.
 - **Status:** OPEN (B281, 2026-09-13).
+
+### Q-250 — PAPER_2276 / PAPER_2275 / PAPER_2281 — which observable canonizes "the hydrodynamic velocity field's transfer above k_c"
+- **Context:** PAPER_2276 sec 6.4 specified the front-4 MD test as the
+  transverse current integrated over omega vs exp(-0.344 (k/k_c)^2). That
+  integral is C_T(k, t=0) = N k_B T/m at every k - the equipartition
+  identity, flat by construction (PAPER_2281 sec 1). The test could not
+  see the claim. Caught before any run.
+- **Proposal (B286):** the wavevector-dependent shear viscosity eta(k)
+  from the transverse-current autocorrelation (Palmer 1994; Hess 2002;
+  gmx tcaf) - the fluid's transverse-momentum transfer at k. It makes the
+  prediction sharp: gmx tcaf's own fit eta(k) = eta_0 (1 - a k^2) must
+  give a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) or 0.0570 nm^2 (c_inf); full
+  shape Gaussian with 1/e at 9.05 / 4.19 nm^-1.
+- **Alternatives:** (b) the transverse dispersion/damping of C_T(k,omega)
+  (onset and decay of propagating shear waves, the IXS transverse
+  signature); (c) a coarse-grained velocity-field spectrum (kernel-
+  dependent; not recommended).
+- **Question for Daniel:** is eta(k) the canonical reading of "transfer"?
+  If yes, front 4 is graded on it as PAPER_2281 sec 4 states. If (b), the
+  same run supplies C_T(k,t) and the grade is re-stated on the shear-wave
+  onset wavenumber vs k_c.
+- **Also needed:** the MD run itself - the cloud workspace cannot reach
+  the package index (HTTP 403); an OpenMM wheel (cp311, manylinux_2_28)
+  dropped into wheels/, or `python md_grade/front4_tcaf.py` on Daniel's
+  machine with `pip install openmm`, produces md_grade/front4_eta_k.csv.
+- **Status:** OPEN (B286, 2026-09-15).
+

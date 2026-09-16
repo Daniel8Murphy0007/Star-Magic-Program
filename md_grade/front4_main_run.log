@@ -1,0 +1,68 @@
+N 512 L 2.4859 nm  k_min 2.528 nm^-1  rc 0.9
+eq step 0 T 293.5 E/N -47.15 220 s
+eq step 500 T 304.0 E/N -47.45 259 s
+eq step 1000 T 297.7 E/N -47.43 298 s
+eq step 1500 T 310.1 E/N -47.84 336 s
+eq step 2000 T 306.8 E/N -47.87 376 s
+eq step 2500 T 300.7 E/N -47.86 415 s
+eq step 3000 T 292.2 E/N -47.40 454 s
+eq step 3500 T 296.3 E/N -47.39 492 s
+eq step 4000 T 293.9 E/N -47.46 530 s
+eq step 4500 T 302.1 E/N -47.68 568 s
+eq step 5000 T 299.6 E/N -47.54 607 s
+eq step 5500 T 310.9 E/N -47.86 647 s
+eq step 6000 T 300.4 E/N -47.75 686 s
+eq step 6500 T 298.4 E/N -47.59 725 s
+eq step 7000 T 307.6 E/N -47.66 764 s
+eq step 7500 T 290.9 E/N -47.13 804 s
+eq step 8000 T 291.4 E/N -47.25 842 s
+eq step 8500 T 300.4 E/N -47.52 882 s
+eq step 9000 T 304.0 E/N -47.62 921 s
+eq step 9500 T 300.7 E/N -47.40 961 s
+eq step 0 T 305.9 E/N -47.71 1001 s
+eq step 500 T 299.5 E/N -47.51 1041 s
+eq step 1000 T 294.8 E/N -47.39 1080 s
+eq step 1500 T 302.4 E/N -47.57 1120 s
+eq step 2000 T 300.0 E/N -47.56 1159 s
+eq step 2500 T 298.5 E/N -47.46 1198 s
+eq step 3000 T 291.0 E/N -47.27 1238 s
+eq step 3500 T 303.2 E/N -47.58 1277 s
+eq step 4000 T 298.3 E/N -47.47 1317 s
+eq step 4500 T 302.0 E/N -47.57 1356 s
+eq step 5000 T 289.6 E/N -47.30 1395 s
+eq step 5500 T 291.2 E/N -47.39 1434 s
+eq step 6000 T 302.5 E/N -47.62 1474 s
+eq step 6500 T 301.0 E/N -47.54 1513 s
+eq step 7000 T 305.5 E/N -47.66 1553 s
+eq step 7500 T 309.4 E/N -47.79 1592 s
+eq step 8000 T 293.5 E/N -47.42 1631 s
+eq step 8500 T 299.4 E/N -47.61 1669 s
+eq step 9000 T 292.5 E/N -47.44 1708 s
+eq step 9500 T 302.3 E/N -47.70 1747 s
+equilibrated: T 286.8  E/N -47.38  1787 s
+k-vectors 369 shells [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 29, 30]
+prod sample 0 / 12000 T 297.6 E/N -47.53 1787 s
+prod sample 500 / 12000 T 307.7 E/N -47.85 2180 s
+prod sample 1000 / 12000 T 298.3 E/N -47.51 2577 s
+prod sample 1500 / 12000 T 298.3 E/N -47.63 2980 s
+prod sample 2000 / 12000 T 298.5 E/N -47.61 3378 s
+prod sample 2500 / 12000 T 298.3 E/N -47.65 3773 s
+prod sample 3000 / 12000 T 302.6 E/N -47.70 4164 s
+prod sample 3500 / 12000 T 301.0 E/N -47.65 4555 s
+prod sample 4000 / 12000 T 284.5 E/N -47.26 4948 s
+prod sample 4500 / 12000 T 297.1 E/N -47.52 5335 s
+prod sample 5000 / 12000 T 301.1 E/N -47.67 5722 s
+prod sample 5500 / 12000 T 297.8 E/N -47.55 6113 s
+prod sample 6000 / 12000 T 303.9 E/N -47.72 6507 s
+prod sample 6500 / 12000 T 297.3 E/N -47.63 6900 s
+prod sample 7000 / 12000 T 296.7 E/N -47.50 7292 s
+prod sample 7500 / 12000 T 294.1 E/N -47.39 7685 s
+prod sample 8000 / 12000 T 302.7 E/N -47.68 8076 s
+prod sample 8500 / 12000 T 289.4 E/N -47.32 8471 s
+prod sample 9000 / 12000 T 305.8 E/N -47.71 8862 s
+prod sample 9500 / 12000 T 293.9 E/N -47.40 9251 s
+prod sample 10000 / 12000 T 300.5 E/N -47.62 9640 s
+prod sample 10500 / 12000 T 288.4 E/N -47.28 10035 s
+prod sample 11000 / 12000 T 304.9 E/N -47.71 10427 s
+prod sample 11500 / 12000 T 291.3 E/N -47.38 10820 s
+DONE 12000 samples 11218 s

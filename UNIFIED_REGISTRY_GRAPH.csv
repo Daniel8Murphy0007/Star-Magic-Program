@@ -12415,3 +12415,7 @@ jhtdb_front2_channel_2026-09-15.csv,PAPER_2279,GRADES,in_medium_tail_cap_grade,B
 in_medium_tail_cap_grade,PAPER_2279,EXTENDS,in_medium_sample_grade,B284: closes the B277 near-wall gap (|y|<0.9 excluded) with the y+ [0.5,150] tail; branch holds, discrimination out of reach
 jhtdb_front2_channel5200_2026-09-15.csv,PAPER_2280,GRADES,in_medium_reynolds_rung,B285: channel5200 near-wall 250k + bulk 100k + 7 fd4noint slabs; recomputed live and compared with B284 in wall units
 in_medium_reynolds_rung,PAPER_2280,EXTENDS,in_medium_tail_cap_grade,B285: second rung of the in-medium ladder; flat; twins the isotropic ladder (B278)
+front4_specification,PAPER_2281,CORRECTS,PAPER_2276,B286: the sec 6.4 MD test was an equipartition identity; eta(k) from the TCAF replaces it; a = 0.344/k_c^2
+md_grade/front4_tcaf.py,PAPER_2281,INSTRUMENTS,front4_eta_k_grade,B286: OpenMM TIP4P/2005 TCAF route (not run - package index unreachable); the CSV was produced by md_grade/md_engine.py + front4_run.py + front4_analyze.py (B286b)
+md_grade/front4_eta_k.csv,PAPER_2281,GRADES,front4_eta_k_grade,B286: the program's own numpy MD (md_engine.py) -> 26-shell eta(k) -> harness GRADED; measured k_c 7.8 vs 5.31/2.45
+front4_measured_roll_off,PAPER_2281,BEARS_ON,Q-247,B286: the fluid-side roll-off scale points to c_0 = 1480 m/s and excludes c_inf = 3200 m/s by a factor 3
