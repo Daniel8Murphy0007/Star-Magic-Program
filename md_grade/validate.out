@@ -1,0 +1,23 @@
+1. Madelung (NaCl) from Ewald: 1.747565  (literature 1.747565)  rel err 1.2e-07
+2a. real-space + LJ + excl: C kernel vs numpy reference: dE = -1.197e-04 kJ/mol (E_real -22692.2020 vs -22692.2019; lj 3451.9553 vs 3451.9553; excl 257926.3601 vs 257926.3601)
+2b. reciprocal: PME (K=26, order 4) vs direct k-sum: E_rec 240.56195 vs 241.30402  rel 3.08e-03
+2c. total E: -21989.89363 vs -21989.15144  (dE/N -1.45e-03 kJ/mol)
+2d. forces: max |F_pme - F_ref| = 1.2810 kJ/mol/nm  vs rms |F| = 1043.90  (rel 1.2e-03)
+2e. PME spacing 0.10 order 4 K=26: E_rec 240.56195 (ref 241.30402, rel 3.1e-03)
+2e. PME spacing 0.08 order 4 K=32: E_rec 240.92360 (ref 241.30402, rel 1.6e-03)
+2e. PME spacing 0.12 order 4 K=22: E_rec 239.86589 (ref 241.30402, rel 6.0e-03)
+2e. PME spacing 0.10 order 6 K=26: E_rec 241.23722 (ref 241.30402, rel 2.8e-04)
+3. FD O-atom   0 dim 0: -dE/dx = -1240.9789   F = -1240.9159
+3. FD O-atom   7 dim 1: -dE/dx =    40.9388   F =    40.9330
+3. FD O-atom 100 dim 2: -dE/dx = -1117.7722   F = -1117.7576
+3. FD O-atom 511 dim 0: -dE/dx =  -436.6627   F =  -436.7206
+3. FD O-atom  50 dim 1: -dE/dx =    -2.3725   F =    -2.3986
+3. FD H-atom   3 site 1 dim 2: -dE/dx =  -132.4565   F =  -132.4798
+3. FD H-atom  77 site 2 dim 0: -dE/dx =   831.2167   F =   831.1993
+3. max relative FD error 1.09e-02
+4. N=2197 L=4.040 K=42 threads=1: forces 0.040 s (2nd call 0.039 s)
+   full step 0.059 s
+4. N=8000 L=6.215 K=64 threads=1: forces 0.135 s (2nd call 0.134 s)
+   full step 0.200 s
+4. N=17576 L=8.079 K=82 threads=1: forces 0.323 s (2nd call 0.319 s)
+   full step 0.478 s

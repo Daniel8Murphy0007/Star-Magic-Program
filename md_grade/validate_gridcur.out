@@ -1,0 +1,7 @@
+k in [ 0.0, 3.0): n=  1  rms rel err |j_fft - j_exact| / rms|j| = 1.77e-06  max 1.77e-06   |ratio| mean 1.0000
+k in [ 3.0, 6.0): n= 19  rms rel err |j_fft - j_exact| / rms|j| = 5.79e-05  max 1.31e-04   |ratio| mean 1.0000
+k in [ 6.0, 9.0): n= 35  rms rel err |j_fft - j_exact| / rms|j| = 3.35e-04  max 9.43e-04   |ratio| mean 0.9997
+k in [ 9.0,12.0): n= 62  rms rel err |j_fft - j_exact| / rms|j| = 1.43e-03  max 5.42e-03   |ratio| mean 0.9990
+k in [12.0,14.5): n= 99  rms rel err |j_fft - j_exact| / rms|j| = 3.46e-03  max 9.76e-03   |ratio| mean 0.9982
+time exact 0.044 s (K=216 vectors, 6591 atoms)  fft 0.010 s (all k at once)
+(2026-09-16, N=2197 box, seed 3; validate_gridcur.py)

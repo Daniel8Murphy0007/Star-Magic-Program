@@ -626,6 +626,17 @@ near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
 branch holds; discrimination out of reach; the public DNS record is
 exhausted for front 2. Gate 6,111/0. Acceptance 109/109.
 
+## v0.441.0 — 2026-09-17 — FRONT 4 RECORD RUN SHIP
+PAPER_2282 (B287): an SPME engine (md_grade/md_pme.py, C kernels, FFT
+currents) written and validated for the front-4 record run (Madelung
+1.747565; F = -grad E 3e-8; NVE -0.0001 kJ/mol/N per 2 ps; eta_0 0.84-0.85
+vs 0.855; D 2.3-2.4e-5); four runs (4.04 nm x 3 seeds x 300 ps; 6.21 nm x
+200 ps): eta(k) Gaussian with k_c 7.90 +- 0.05 nm^-1 - c_0 x 1.49, c_inf
+EXCLUDED, shear waves from 1.0-1.4 nm^-1; the PAPER_2281 falsifier applied:
+NEGATIVE on the 0.344 coefficient, POSITIVE on existence and shape. Q-247
+(c_0; 1480 re-provenanced), Q-250 (eta(k) COM), Q-246 (Gaussian) RULED;
+Q-251 opened. Gate 6,114/0. Acceptance 109/109.
+
 ## v0.440.0 — 2026-09-15 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP
 PAPER_2281 (B286): the front-4 MD test (PAPER_2276 sec 6.4) was C_T(k,0)
 = N k_B T/m - the equipartition identity, flat in k - caught before any

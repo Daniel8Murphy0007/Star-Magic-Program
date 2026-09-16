@@ -1,0 +1,129 @@
+{
+ "band": "v0.441.0 B287",
+ "paper": "PAPER_2282",
+ "model": "TIP4P/2005 rigid, SPME order 4 grid 0.1 nm alpha 3.5, rc 0.9 nm, 298 K, dt 2 fs, Berendsen 5 ps",
+ "runs": [
+  {
+   "tag": "B13s11",
+   "N": 2197,
+   "L": 4.0395,
+   "ps": 300,
+   "seed": 11,
+   "kc_com": 7.8897,
+   "kc_com_err": 0.06,
+   "kc_atoms": 8.0,
+   "chi2_gauss": 53.1,
+   "chi2_lor": 141.8,
+   "eta0": 0.837,
+   "D": 2.33e-05
+  },
+  {
+   "tag": "B13s12",
+   "N": 2197,
+   "L": 4.0395,
+   "ps": 300,
+   "seed": 12,
+   "kc_com": 7.888,
+   "kc_com_err": 0.07,
+   "kc_atoms": 8.0,
+   "chi2_gauss": 57.6,
+   "chi2_lor": 83.4,
+   "eta0": 0.838,
+   "D": 2.42e-05
+  },
+  {
+   "tag": "B13s13",
+   "N": 2197,
+   "L": 4.0395,
+   "ps": 300,
+   "seed": 13,
+   "kc_com": 7.942,
+   "kc_com_err": 0.06,
+   "kc_atoms": 8.04,
+   "chi2_gauss": 55.5,
+   "chi2_lor": 136.1,
+   "eta0": 0.832,
+   "D": 2.38e-05
+  },
+  {
+   "tag": "C20",
+   "N": 8000,
+   "L": 6.2147,
+   "ps": 200,
+   "seed": 21,
+   "kc_com": 7.933,
+   "kc_com_err": 0.098,
+   "kc_atoms": 8.01,
+   "chi2_gauss": 70.7,
+   "chi2_lor": 104.4,
+   "eta0": 0.8285,
+   "eta_plateau_k_lt_2p6": 0.85,
+   "eta_plateau_err": 0.023,
+   "D": 2.38e-05
+  }
+ ],
+ "pooled_B": {
+  "kc_com": 7.9009286944624275,
+  "kc_fit_err": 0.04530107518017443,
+  "kc_seed_scatter": 0.01774032200602795,
+  "kc_per_seed": [
+   7.889651983010933,
+   7.887959583948648,
+   7.942006564140966
+  ],
+  "kc_atoms": 8.015850241195734,
+  "kc_atoms_err": 0.04714729717442462,
+  "b_nm2": 0.00550508279316632,
+  "b_err": 6.312831798142942e-05,
+  "k_1e": 13.477770985400278,
+  "eta0_gauss": 0.8364255665609281,
+  "chi2_gauss": 33.4740823765598,
+  "chi2_lor": 191.9540662010369,
+  "ndata": 28,
+  "ratio_c0": 1.4888591204444244,
+  "ratio_cinf": 3.2190876362705456,
+  "implied_c_m_s": 994.0580326309173,
+  "eta_ratio_at_kc_c0_fit": 0.8563903471447387,
+  "eta_ratio_at_kc_c0_data": 0.827823508428148,
+  "eta_ratio_at_kc_cinf_fit": 0.9673808098415669
+ },
+ "C_box": {
+  "kc_com": 7.932978243513922,
+  "kc_err": 0.0982076477128261,
+  "chi2_gauss": 70.7125214097485,
+  "chi2_lor": 104.44808215075723,
+  "ndata": 31,
+  "eta_plateau_k_lt_2p6": 0.85,
+  "eta_plateau_err": 0.023,
+  "shear_wave": {
+   "k_1p01": {
+    "cmin": -0.029581521109380095,
+    "sig": 0.028404892348543407
+   },
+   "k_1p43": {
+    "cmin": -0.09444067922384061,
+    "sig": 0.017580399460603104
+   },
+   "onset_bracket_per_nm": [
+    1.011,
+    1.43
+   ]
+  }
+ },
+ "prediction": {
+  "coefficient": 0.343653,
+  "kc_c0": 5.3067,
+  "kc_cinf": 2.4544,
+  "m_at_kc": 0.709
+ },
+ "validation": {
+  "madelung": 1.747565,
+  "madelung_lit": 1.747565,
+  "realspace_C_vs_numpy_kJ": 0.00012,
+  "spme_vs_direct_rel": 0.0031,
+  "fd_force_rel": 3.3e-08,
+  "nve_dE_per_N_2ps": -0.0001,
+  "gridcur_rms_rel_k12_14p5": 0.0035,
+  "Epot_per_N": -47.2
+ }
+}

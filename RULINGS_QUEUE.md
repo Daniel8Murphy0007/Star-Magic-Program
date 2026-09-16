@@ -7645,7 +7645,16 @@ were in the corpus.
   momentum; the fluid cutoff k_c = omega_SCm/c_s (PAPER_2267) is the
   sound-cone one (ratio c/c_s). Registry: phonon_mollifier_width_eps
   WIRED_FLAGGED; R1_QUEUE NSPROOFSET_ARC_B280 RULING_REQUESTED.
-- **Status:** OPEN (B280, 2026-09-13).
+- **RULED 2026-09-17 (B287, PAPER_2282 sec 6):** option (b) - the PAPER_1042
+  Gaussian tail q^{n^2} is canonized as THE high-k form for fluid modes (the
+  beta -> infinity member; both Leray conditions automatic). Evidence: the
+  front-4 record run finds eta(k) Gaussian in every run (chi2 33 vs
+  Lorentzian 192, pooled 3 seeds; 71 vs 104, 6.21 nm box) - the PAPER_106
+  beta = 2 form is the excluded alternative. The identification n = k/k_c
+  stays flagged (only the number 0.156 nm depends on it). Ruled on
+  RULINGS_BRIEF_Q246_Q247_Q250.md sec 3-4 ("proceed with the next two parts
+  as identified").
+- **Status:** RULED (B287, 2026-09-17).
 
 ### Q-247 — PAPER_2261 / PAPER_2267 / PAPER_2275 / PAPER_2276 — which sound speed defines the sound cone at omega_SCm
 - **Question:** the phonon cutoff is k_c = omega_SCm / c_s with c_s = 1480
@@ -7665,7 +7674,18 @@ were in the corpus.
   mode count (PAPER_2267) and eps (PAPER_2275) rescale by 2.162.
 - **Notable:** recomputed live in proof_set_closeout(); the external
   literal 3200 m/s is sourced inline. Front 4 depends on the answer.
-- **Status:** OPEN (B281, 2026-09-13).
+- **RULED 2026-09-17 (B287, PAPER_2282 sec 6):** option (a) - c_0 defines
+  the sound cone; k_c = omega_SCm/c_0 = 5.307 nm^-1 stands; c_inf rejected.
+  Evidence: the record run measures k_c = 7.90 +- 0.05 nm^-1 in 4 runs / 2
+  boxes / 3 seeds: c_0 x 1.489 (recorded in the registry as a measured
+  fact - the coefficient 0.344 at c_0 is NEGATIVE by the PAPER_2281 sec 4
+  falsifier), c_inf x 3.22 EXCLUDED. PROVENANCE CORRECTED: the literal 1480
+  m/s entered at PAPER_2267 L53 as an external value (fresh water ~20 C;
+  1497 at 25 C); PAPER_2261 carries seawater as a DENSITY landmark only
+  (L40) - the "seawater anchor" attribution is withdrawn (registry row
+  sound_cone_speed_at_omega_scm; uqff_ns_assembly C_S_WATER_M_S). The
+  ratio 1.489 vs D_BSFG/D_phys = 1.5 is opened as Q-251.
+- **Status:** RULED (B287, 2026-09-17).
 
 ### Q-250 — PAPER_2276 / PAPER_2275 / PAPER_2281 — which observable canonizes "the hydrodynamic velocity field's transfer above k_c"
 - **Context:** PAPER_2276 sec 6.4 specified the front-4 MD test as the
@@ -7687,9 +7707,35 @@ were in the corpus.
   If yes, front 4 is graded on it as PAPER_2281 sec 4 states. If (b), the
   same run supplies C_T(k,t) and the grade is re-stated on the shear-wave
   onset wavenumber vs k_c.
-- **Also needed:** the MD run itself - the cloud workspace cannot reach
-  the package index (HTTP 403); an OpenMM wheel (cp311, manylinux_2_28)
-  dropped into wheels/, or `python md_grade/front4_tcaf.py` on Daniel's
-  machine with `pip install openmm`, produces md_grade/front4_eta_k.csv.
-- **Status:** OPEN (B286, 2026-09-15).
+- **(struck B287: "Also needed: the MD run itself" - the run exists:
+  md_grade/md_engine.py (B286b) and the SPME record run md_grade/md_pme.py
+  (B287); no OpenMM needed.)**
+- **RULED 2026-09-17 (B287, PAPER_2282 sec 6):** eta(k), the wavevector-
+  dependent shear viscosity from the transverse-current autocorrelation,
+  on the molecular CENTRE-OF-MASS current, is the canonical reading of
+  "transfer above k_c". The atomic current (k_c 8.02 vs 7.90, 1.5 pct) is
+  reported alongside; the shear-wave onset k_T (reading (b)) is reported
+  alongside - measured at 1.0-1.4 nm^-1, BELOW both candidates, so (b)
+  would fail front 4 for both where (a) gives the c_0 scale within 1.5:
+  the readings are not interchangeable. With this ruling the front-4
+  result is read as a FAILED PREDICTION of the coefficient, not a wrong
+  observable (PAPER_2281 sec 4 required one or the other).
+- **Status:** RULED (B287, 2026-09-17).
+
+### Q-251 — PAPER_2282 / PAPER_2275 / PAPER_1521 — the measured fluid cutoff sits one D_BSFG/D_phys rung above the sound cone: coincidence or route?
+- **Observation (B287):** the record run measures k_c(fluid)/k_c(c_0) =
+  7.90/5.307 = 1.489 +- 0.010 (fit) / +- 0.004 (seed scatter). The corpus
+  ratio D_BSFG/D_phys = 6/4 = 1.5 sits inside that error (0.995 of it). A
+  route would read k_c(fluid) = (D_BSFG/D_phys) omega_SCm/c_0 = 7.96
+  nm^-1 - the fluid cutoff one BSFG-over-physical rung above the sound
+  cone - and would make the coefficient 0.344 correct at THAT k_c.
+- **Why it is not claimed:** post-hoc; one free parameter matched to a
+  ubiquitous corpus ratio; one liquid (TIP4P/2005), one temperature
+  (298 K). A pre-stated test: a second liquid (LJ argon; methanol) or a
+  temperature series of water, with the ratio predicted BEFORE the run.
+- **RULING asked:** (a) leave as an observation (default); (b) authorize
+  the pre-stated test (another engine run: the same instrument, a second
+  fluid); (c) a corpus route from D_BSFG/D_phys to the fluid cutoff, if
+  one exists (none searched for yet).
+- **Status:** OPEN (B287, 2026-09-17).
 

@@ -1,47 +1,39 @@
-v0.440.0 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP
+v0.441.0 — FRONT 4 RECORD RUN SHIP
 
-B286 (PAPER_2281): front 4 of the Navier-Stokes proof set - caught
-mis-specified before any CPU, re-posed on the right observable, and then
-MEASURED the same day with a simulation written from scratch. One band
-since v0.439.0.
+B287 (PAPER_2282): the front-4 record run - an engine written for it, four
+runs in two boxes with three seeds, the number did not move, the
+pre-stated falsifier applied, three rulings folded. One band since v0.440.0.
 
-- THE DEFECT (the program's own; Rule 7): PAPER_2276 sec 6.4 asked the MD
-  run to compare "the transverse current integrated over omega" with
-  exp(-0.344 (k/k_c)^2). That integral is C_T(k,0) = N k_B T/m at EVERY
-  wavenumber in any classical fluid at equilibrium - the equipartition
-  identity, flat in k. A run would have "falsified" the roll-off while
-  testing nothing.
-- THE OBSERVABLE: the wavevector-dependent shear viscosity eta(k) from the
-  transverse-current autocorrelation (Palmer 1994; Hess 2002; gmx tcaf) -
-  the fluid's transverse-momentum TRANSFER at k. PREDICTION: eta(k)/eta_0
-  = exp(-0.344 (k/k_c)^2), k_c = 5.31 nm^-1 (c_0) or 2.45 nm^-1 (c_inf);
-  gmx-tcaf coefficient a = 0.344/k_c^2 = 0.0122 / 0.0570 nm^2. Falsifier
-  stated before measurement.
-- THE INSTRUMENT: the package index being unreachable, md_grade/
-  md_engine.py - a rigid TIP4P/2005 water MD in numpy (RATTLE, virtual M
-  site, O-O LJ + reaction-field Coulomb, site-based 0.9 nm cutoff) -
-  validated on force/energy consistency (machine precision), energy
-  conservation (-0.006 kJ/mol per molecule over 2 ps) and the model's
-  potential energy (-47.5 vs -47.4 published). Every line ships in
-  md_grade/ with the run script, analysis, log, NVE check and CSV.
-- THE MEASUREMENT: 512 molecules, 240 ps, 26 k-shells to 13.8 nm^-1,
-  eta(k) by the Green-Kubo integral with block errors. eta_0 1.05 mPa s.
-  eta/eta_0 flat to k ~ 6 nm^-1, then rolling off to 1/e at 13.3 nm^-1 -
-  MEASURED k_c = 7.8 nm^-1.
-- THE READING: c_0 (5.31) - SAME SCALE, factor 1.47, NOT a precision
-  match. c_inf (2.45) - EXCLUDED by a factor 3.2: the first fluid-side
-  evidence on Q-247, and it points to c_0 = 1480 m/s. Shape (Gaussian vs
-  Lorentzian) undecided at this quality; the second estimator gives k_c
-  4.4, so c_0 sits between the estimators. Per the pre-stated falsifier
-  this is NOT a pass of the 0.344 coefficient: the roll-off exists, on
-  the sound-cone scale; the exact coefficient is not confirmed.
-- Q-250 OPENED (is eta(k) the canonical reading of transfer). PAPER_2276
-  carries a dated correction. Registry rows front4_specification,
-  front4_eta_k_grade (GRADED), front4_measured_roll_off (FINDING).
+- THE ENGINE: md_grade/md_pme.py + pair_kernel.c + gridcur.py - rigid
+  TIP4P/2005 with smooth particle-mesh Ewald (the reaction-field caveat of
+  B286b gone), pair kernel / RATTLE / B-spline spreading in C, transverse
+  currents by FFT momentum-density transform. Validated: Madelung constant
+  of NaCl 1.747565 (1.2e-7); C vs numpy 1.2e-4 kJ/mol; SPME 3e-3; forces =
+  -grad E to 3e-8; NVE -0.0001 kJ/mol per molecule over 2 ps; E/N -47.2;
+  eta_0 0.84-0.85 vs 0.855; D 2.3-2.4e-5 vs 2.1-2.3.
+- THE RUNS: 2197 molecules / 4.04 nm / 300 ps at seeds 11, 12, 13 and 8000
+  / 6.21 nm / 200 ps; sampled every 4 fs (B286b's 20 fs was marginal above
+  k ~ 5) on the centre-of-mass and atomic currents.
+- THE RESULT: eta(k) rolls off as a GAUSSIAN (chi2 33 vs Lorentzian 192)
+  with k_c = 7.89 / 7.89 / 7.94 / 7.93 -> 7.90 +- 0.05 nm^-1. c_0 (5.31):
+  factor 1.49 - at k_c(c_0) the measured suppression is 14 pct where
+  PAPER_2275 says 29. c_inf (2.45): factor 3.2, EXCLUDED. Shear waves begin
+  at 1.0-1.4 nm^-1, four to five times below k_c(c_0).
+- THE VERDICT (PAPER_2281 sec 4, as written before measuring): front 4
+  CLOSED NEGATIVE ON THE COEFFICIENT - the 1/e wavenumber 13.5 lies far
+  from both 9.05 and 4.19 - and POSITIVE ON EXISTENCE AND SHAPE. A failed
+  prediction, recorded as one; what survives, stated separately.
+- THE RULINGS (Daniel 2026-09-17, on the brief): Q-247 c_0 stands and the
+  literal 1480 m/s is re-provenanced (PAPER_2267 L53; PAPER_2261 has no
+  sound speed); Q-250 eta(k) on the centre-of-mass current is canonical;
+  Q-246 the PAPER_1042 Gaussian tail is THE high-k form. Q-251 OPENED:
+  k_c(measured)/k_c(c_0) = 1.489 +- 0.010 vs D_BSFG/D_phys = 1.5 -
+  post-hoc, one liquid, one temperature; an observation, not a claim.
 
-Not claimed: front 4 passed or closed; one run, one box, one seed,
-reaction field; the diffusion coefficient. Record run (8 nm, 1-2 ns,
-PME) is the next instrument.
+Not claimed: front 4 passed; the 8 nm / 1 ns plateau (not run - the
+workspace suspends between turns; the 4 nm seeds and the 6 nm box were
+chosen instead, on record); the value of 0.156 nm; anything about real
+water beyond TIP4P/2005.
 
-Gate 6,113/0. Dispatch 2,332 keys. Registry 7,132 rows. Acceptance
+Gate 6,114/0. Dispatch 2,333 keys. Registry 7,137 rows. Acceptance
 109/109 (simulator untouched).

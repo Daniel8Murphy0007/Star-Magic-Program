@@ -14399,3 +14399,74 @@ of 2,750 tracked files (no 6,112 / 7,131 / 4,203 / AWAITING_DATA left in
 any current-state file - only in history). Ready to ship via .\ship.ps1 -
 one band on v0.439.0, version 0.440.0, nothing for Daniel to decide.
 
+## 2026-09-16/17 — v0.441.0 prep — B287: FRONT 4, THE RECORD RUN; Q-247/Q-250/Q-246 RULED; Q-251 OPENED
+
+Daniel: "proceed with 1 & 2" (the record run; the rulings brief), then
+"proceed with the next two parts as identified" (the rulings folded; this
+band). Tag chain verified first: v0.440.0 annotated tag on HEAD.
+
+THE ENGINE. PyPI unreachable; the RF engine's one caveat was the
+electrostatics, so a second engine was written: md_pme.py (SPME order 4,
+0.1 nm, alpha 3.5; site cutoff 0.9; exclusion + self), pair_kernel.c (cell
+list, erfc table 2e-5 nm / 6e-8, per-thread buffers, OpenMP; RATTLE;
+pme_spread/gather), gridcur.py (currents for all selected k by B-spline
+spreading + FFT + b(m) deconvolution). Validation ladder before launch:
+Madelung 1.747565 (1.2e-7); C vs numpy reference 1.2e-4 kJ/mol (a first
+test box with L/2 < rc + 0.2 was itself invalid - the same trap as B286b's
+N=125 box - retested at N=512); SPME 3.1e-3 (order 4) / 2.8e-4 (order 6);
+F = -grad E 3e-8; NVE -0.0001 kJ/mol/N per 2 ps; FFT currents 3.5e-3 rms at
+k 12-14.5. Step cost: 0.06 s (2197 molecules, 2 threads), 0.16 s (8000),
+0.7 s (17576).
+
+THE CONSTRAINT. The first launch (8 nm + 4 nm in the background) died
+within minutes: the cloud workspace suspends between turns and restarts
+from disk ("up 0 min"); a run advances only while a turn is held open.
+Told Daniel plainly; he chose "4 nm seeds first, then 6 nm". Ran as held
+turns: seed 11 (2.3 h), seed 12, seed 13, then the 6 nm box (4.5 h),
+polled every 10 min, checkpointed every 10 min.
+
+THE RESULT. k_c 7.89 / 7.89 / 7.94 (4 nm seeds; pooled 7.90 +- 0.05, seed
+scatter 0.02) and 7.93 +- 0.10 (6 nm); atomic current 8.02; Gaussian in
+every run (chi2 33 vs 192; 71 vs 104); eta_0 0.836 / plateau 0.850 +-
+0.023; D 2.33/2.42/2.38/2.38e-5 (a first MSD fit over long lags gave
+2.7e-5 - too few origins - fixed to lags 5-40 ps); shear-wave onset
+between k = 1.01 (diffusive) and 1.43 (5 sigma negative lobe). Falsifier
+of PAPER_2281 sec 4 applied: NEGATIVE on the coefficient, POSITIVE on
+existence and shape. Implied c 994 m/s. Ratio to c_0 1.489 +- 0.010 -
+D_BSFG/D_phys = 1.5 sits inside it: opened as Q-251, NOT claimed.
+
+THE BRIEF. RULINGS_BRIEF_Q246_Q247_Q250.md, source-verified (verbatim
+file:line, every number recomputed): two findings - the "seawater anchor"
+for c_s = 1480 is a DENSITY landmark (PAPER_2261 L40), the sound speed is
+an external literal at PAPER_2267 L53 (fresh water ~20 C); and Q-250 has
+an atoms-vs-molecules sub-question (1.5 pct in k_c). Updated with the
+record numbers and committed to the repo before this band.
+
+THE RULINGS (Daniel: proceed with the next two parts as identified, over
+the brief's recommendation table): Q-247 c_0 (residual recorded;
+provenance corrected in C_S_WATER_M_S, galerkin_mode_count, the registry
+row); Q-250 eta(k) on the COM current (atomic and k_T alongside; the
+stale "Also needed" struck); Q-246 option (b) Gaussian tail (n = k/k_c
+stays flagged). Q-251 opened with a pre-stated test named.
+
+WIRED: front4_record_grade() (pure arithmetic weighted log-linear fits -
+reproduces scipy: 7.89/7.92, atomic 8.01/8.00), front4_rulings(),
+D_BSFG_OVER_D_PHYS; PAPER_2282 dispatch (2,333); proof-set front-4 line
+RECORD RUN DONE / CLOSED NEGATIVE ON THE COEFFICIENT; registry +5 / 4
+edited (7,137); GRAPH +7; 9 satellites B287; GAPS b287 + Rule-7 last;
+RULINGS_QUEUE three RULED + Q-251; WHITEPAPER_INDEX 2282; gate pin B287
+(6,114); md_grade +25 files (correlator archives 90-110 MB each stay in
+the workspace; regenerable from the scripts). Version 0.441.0 - one band
+on v0.440.0.
+VERIFIED: gate 6,114/0 (catches on the way: the proof-set line lost its
+"OPEN" token; the paper said "closes NEGATIVE" where the pin wanted
+"CLOSED NEGATIVE"; a pin's case did not match the verdict text; the index
+dispatch count and the whitepapers badge needed 2,333 / 2,327 - all
+fixed against the live values); acceptance 109/109; wheel 2,949 entries
+(md_grade x33, no .so / .npz; PAPER_2282 and the brief on it; 20/20
+py-modules; token prefix ABSENT); installed in a clean venv,
+calc('PAPER_2282') from an empty cwd GRADED from the wheel's own CSV +
+summary; staleness sweep of 2,777 tracked files clean (the two "record run
+OPEN / still to do" live strings of B286 updated to DONE). Ready to ship
+via .\ship.ps1 - one band on v0.440.0, version 0.441.0.
+

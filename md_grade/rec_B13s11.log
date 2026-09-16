@@ -1,0 +1,53 @@
+N 2197 L 4.0395 nm  k_min 1.5554  K 491 vectors in 28 shells (cap 40, nshell 40)  kmax 14.0  sample every 2 steps (4.0 fs)  lags 431 (fine to 0.8 ps, then every 10 samples to 10.0 ps)  blocks 6  grid K 42  seed 11
+eq step 0 T 304.6 E/N -46.673 64 s
+eq step 1000 T 302.8 E/N -46.991 99 s
+eq step 2000 T 297.6 E/N -47.159 133 s
+eq step 3000 T 298.3 E/N -47.182 167 s
+eq step 4000 T 302.9 E/N -47.169 202 s
+eq step 5000 T 302.6 E/N -47.136 236 s
+eq step 6000 T 298.7 E/N -47.162 270 s
+eq step 7000 T 293.7 E/N -47.082 304 s
+eq step 8000 T 301.8 E/N -47.337 339 s
+eq step 9000 T 296.5 E/N -47.045 372 s
+eq step 0 T 305.6 E/N -47.265 407 s
+eq step 1000 T 294.0 E/N -46.989 442 s
+eq step 2000 T 300.0 E/N -47.126 477 s
+eq step 3000 T 300.7 E/N -47.204 512 s
+eq step 4000 T 304.6 E/N -47.293 547 s
+eq step 5000 T 298.5 E/N -47.050 582 s
+eq step 6000 T 302.6 E/N -47.220 618 s
+eq step 7000 T 295.4 E/N -47.096 652 s
+eq step 8000 T 297.2 E/N -47.162 686 s
+eq step 9000 T 297.9 E/N -47.124 720 s
+equilibrated: T 295.9  E/N -47.044  754 s
+prod sample 0 / 75000  t=0.0 ps  T 297.6  E/N -47.086  0 s (0.088 s/step)
+prod sample 2500 / 75000  t=10.0 ps  T 296.5  E/N -47.047  278 s (0.056 s/step)
+prod sample 5000 / 75000  t=20.0 ps  T 299.0  E/N -47.106  561 s (0.056 s/step)
+prod sample 7500 / 75000  t=30.0 ps  T 296.8  E/N -47.046  836 s (0.056 s/step)
+prod sample 10000 / 75000  t=40.0 ps  T 296.7  E/N -47.048  1125 s (0.056 s/step)
+prod sample 12500 / 75000  t=50.0 ps  T 300.0  E/N -47.153  1396 s (0.056 s/step)
+prod sample 15000 / 75000  t=60.0 ps  T 298.2  E/N -47.119  1663 s (0.055 s/step)
+prod sample 17500 / 75000  t=70.0 ps  T 298.4  E/N -47.152  1937 s (0.055 s/step)
+prod sample 20000 / 75000  t=80.0 ps  T 291.0  E/N -46.930  2209 s (0.055 s/step)
+prod sample 22500 / 75000  t=90.0 ps  T 295.4  E/N -47.034  2480 s (0.055 s/step)
+prod sample 25000 / 75000  t=100.0 ps  T 297.5  E/N -47.105  2747 s (0.055 s/step)
+prod sample 27500 / 75000  t=110.0 ps  T 301.2  E/N -47.195  3017 s (0.055 s/step)
+prod sample 30000 / 75000  t=120.0 ps  T 296.2  E/N -47.098  3285 s (0.055 s/step)
+prod sample 32500 / 75000  t=130.0 ps  T 294.5  E/N -47.020  3563 s (0.055 s/step)
+prod sample 35000 / 75000  t=140.0 ps  T 299.4  E/N -47.115  3832 s (0.055 s/step)
+prod sample 37500 / 75000  t=150.0 ps  T 295.8  E/N -47.036  4115 s (0.055 s/step)
+prod sample 40000 / 75000  t=160.0 ps  T 301.7  E/N -47.157  4389 s (0.055 s/step)
+prod sample 42500 / 75000  t=170.0 ps  T 299.9  E/N -47.124  4660 s (0.055 s/step)
+prod sample 45000 / 75000  t=180.0 ps  T 305.5  E/N -47.296  4936 s (0.055 s/step)
+prod sample 47500 / 75000  t=190.0 ps  T 296.8  E/N -47.069  5209 s (0.055 s/step)
+prod sample 50000 / 75000  t=200.0 ps  T 297.5  E/N -47.066  5477 s (0.055 s/step)
+prod sample 52500 / 75000  t=210.0 ps  T 297.5  E/N -47.061  5745 s (0.055 s/step)
+prod sample 55000 / 75000  t=220.0 ps  T 295.7  E/N -47.051  6013 s (0.055 s/step)
+prod sample 57500 / 75000  t=230.0 ps  T 296.4  E/N -47.054  6277 s (0.055 s/step)
+prod sample 60000 / 75000  t=240.0 ps  T 297.5  E/N -47.104  6545 s (0.055 s/step)
+prod sample 62500 / 75000  t=250.0 ps  T 292.9  E/N -46.968  6823 s (0.055 s/step)
+prod sample 65000 / 75000  t=260.0 ps  T 297.6  E/N -47.096  7119 s (0.055 s/step)
+prod sample 67500 / 75000  t=270.0 ps  T 294.9  E/N -46.994  7393 s (0.055 s/step)
+prod sample 70000 / 75000  t=280.0 ps  T 298.9  E/N -47.122  7680 s (0.055 s/step)
+prod sample 72500 / 75000  t=290.0 ps  T 302.0  E/N -47.202  7948 s (0.055 s/step)
+DONE 75000 samples 8221 s

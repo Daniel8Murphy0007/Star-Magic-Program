@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.440.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.440.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.441.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.441.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
-[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6113%2F0-brightgreen)](uqff_fidelity_tests.py)
-[![Public surfaces](https://img.shields.io/badge/public_surfaces-2332-blue)](uqff_calculator.py)
-[![Whitepapers](https://img.shields.io/badge/whitepapers-2326-orange)](whitepapers/)
+[![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6114%2F0-brightgreen)](uqff_fidelity_tests.py)
+[![Public surfaces](https://img.shields.io/badge/public_surfaces-2333-blue)](uqff_calculator.py)
+[![Whitepapers](https://img.shields.io/badge/whitepapers-2327-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.440.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.441.0 complete-compile campaign live**
 
-**This release (v0.440.0): FRONT 4 RE-SPECIFIED AND MEASURED — the MD test as written was the equipartition theorem; the real observable; and the first measurement of it, with a simulation written from scratch.** Front 4 of the Navier-Stokes proof set (PAPER_2276 §6.4) asked a molecular-dynamics run to compare "the transverse current integrated over ω" with the Gaussian roll-off exp(−0.344 (k/k_c)²). That integral is C_T(k, t=0) = N·k_BT/m at *every* wavenumber in any classical fluid at equilibrium — the equipartition identity, flat in k by construction; a run would have "falsified" the roll-off while testing nothing. B286 (PAPER_2281) names the defect and re-poses the front on the observable the claim is actually about: the wavevector-dependent shear viscosity η(k) from the transverse-current autocorrelation (Palmer 1994; Hess 2002; `gmx tcaf`) — the fluid’s transverse-momentum *transfer* at k — for which the framework predicts η(k)/η₀ = exp(−0.344 (k/k_c)²), i.e. **k_c = 5.31 nm⁻¹ (c_0) or 2.45 nm⁻¹ (c_∞)**. Then, the package index being unreachable, the instrument was written from scratch: `md_grade/md_engine.py`, a rigid TIP4P/2005 water MD in numpy (RATTLE, virtual M site, reaction-field Coulomb with a site cutoff), validated on force/energy consistency to machine precision, energy conservation (−0.006 kJ/mol per molecule over 2 ps), and the model’s potential energy (−47.5 vs −47.4 published). 512 molecules, 240 ps, 26 k-shells to 13.8 nm⁻¹, η(k) by the Green–Kubo integral with block errors. **Result:** η₀ ≈ 1.05 mPa·s; η/η₀ flat to k ≈ 6 nm⁻¹, then rolling off to 1/e at 13.3 nm⁻¹ — a **measured k_c of 7.8 nm⁻¹**. That is the c_0 sound-cone scale (factor 1.47), and it *excludes* fast sound (c_∞, factor 3.2) — the first fluid-side evidence on Q-247. It is **not** a precision match of the 0.344 coefficient at either candidate, and the Gaussian-vs-Lorentzian shape is undecided at this quality. Honest state: the roll-off exists, on the c_0 scale; the exact coefficient is not confirmed; the record run (8 nm, 1–2 ns, PME) is the next instrument. Q-250 opened (is η(k) the canonical reading of transfer). PAPER_2276 carries a dated correction. Not claimed: front 4 passed or closed; the model’s third digit; the diffusion coefficient. **Totals: 2,277 wired (2,332 DISPATCH keys) / gate 6,113 green / 4,204 defs / acceptance 109 green / registry 7,132 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.441.0): FRONT 4, THE RECORD RUN — a particle-mesh Ewald engine written and validated for it, four runs in two boxes with three seeds, and the number did not move.** v0.440.0 measured the wavevector-dependent shear viscosity η(k) of TIP4P/2005 water once — reaction field, 20-fs sampling, one seed — and found the roll-off at k_c ≈ 7.8 nm⁻¹. B287 (PAPER_2282) is the record run that measurement called for. A second engine was written for it: smooth particle-mesh Ewald electrostatics, the pair kernel, RATTLE and the B-spline spreading in C, the transverse currents by an FFT momentum-density transform — validated on a ladder that ends at the Madelung constant of NaCl (1.747565, exact to 1e-7), forces = −∇E to 3e-8, energy conservation to −0.0001 kJ/mol per molecule over 2 ps, and the model’s own transport (η₀ 0.84–0.85 vs 0.855 mPa·s; D 2.3–2.4e-5 cm²/s). Four runs: 2,197 molecules in a 4.04 nm box for 300 ps at seeds 11, 12, 13, and 8,000 molecules in a 6.21 nm box for 200 ps, sampled every 4 fs on the centre-of-mass and atomic currents. **Result: η(k) rolls off as a GAUSSIAN with k_c = 7.90 ± 0.05 nm⁻¹** (seeds 7.89 / 7.89 / 7.94; the 6 nm box 7.93 ± 0.10; χ² Gaussian 33 vs Lorentzian 192). Against the framework: c_0 gives 5.31 (factor 1.49; at that k the measured suppression is 14 % where PAPER_2275 says 29 %), c_∞ gives 2.45 (factor 3.2, EXCLUDED). The 6 nm box also finds where shear waves begin: between 1.0 and 1.4 nm⁻¹ — four to five times below k_c(c_0). **The falsifier stated in PAPER_2281 §4 is applied as written: front 4 CLOSES NEGATIVE ON THE COEFFICIENT** (the 1/e wavenumber, 13.5, lies far from both 9.05 and 4.19) **and POSITIVE ON EXISTENCE AND SHAPE** (Gaussian, on the sound-cone scale, fast sound excluded). Three rulings folded on this evidence (Daniel, 2026-09-17): Q-247 c_0 stands — and the literal 1480 m/s is re-provenanced (it entered at PAPER_2267 L53; PAPER_2261 carries seawater as a density only); Q-250 η(k) on the centre-of-mass current is the canonical reading of transfer; Q-246 the PAPER_1042 Gaussian tail is canonized. One opened, not ruled: the measured ratio 1.489 ± 0.010 sits on D_BSFG/D_phys = 1.5 (Q-251) — post-hoc, one liquid, one temperature, written down as an observation. Not claimed: front 4 passed; the 8 nm / 1 ns plateau (not run — the workspace suspends between turns; the 4 nm seeds and the 6 nm box were chosen instead); anything about real water beyond the model. **Totals: 2,278 wired (2,333 DISPATCH keys) / gate 6,114 green / 4,205 defs / acceptance 109 green / registry 7,137 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -22,7 +22,7 @@ License: AGPL-3.0-or-later OR Commercial
 
 Per Daniel's 2026-08-08 directive, headline numbers are reported at BOTH scopes:
 
-**Census — one number, one source:** the release banner above carries the LIVE figures (2,277 distinct wired papers / 2,332 dispatch keys, gate assertions, registry rows), verified on every gate run by the ship guards. The per-era census snapshots that used to live here (the 1,417-frontier / 4,717-assertion / 25,126-row figures) were frozen history masquerading as status — killed at v0.413.0 per independent evaluation; era history lives in CHANGELOG and SESSION_LOG where history belongs.
+**Census — one number, one source:** the release banner above carries the LIVE figures (2,278 distinct wired papers / 2,333 dispatch keys, gate assertions, registry rows), verified on every gate run by the ship guards. The per-era census snapshots that used to live here (the 1,417-frontier / 4,717-assertion / 25,126-row figures) were frozen history masquerading as status — killed at v0.413.0 per independent evaluation; era history lives in CHANGELOG and SESSION_LOG where history belongs.
 
 **Single-file scope** (used for per-band deltas): calculator defs, main-registry rows,
 gate assertions, dispatch count — always labeled as such in CHANGELOG/SESSION_LOG entries.
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.440.0)
+## What is currently shipped (v0.441.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -68,7 +68,7 @@ Sequential wiring of all 2,255 whitepapers, starting at PAPER_001.
 Authorized 2026-07-28: autonomous band sessions, ship per session via
 `ship.ps1`, full stop at PAPER_500 for manual review.
 
-**Wired: 2,277 distinct dispatches (2,332 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
+**Wired: 2,278 distinct dispatches (2,333 DISPATCH keys incl. the 55 canonical alias numbers 2179-2233)** (one per paper, Rule B closed). **Complete-compile frontier: PAPER_001-1300** (+ b-variants) fully captured over a **1766-function primitive-sourced equation library** — every equation and section (core + Session-225 + Production Framework + Cosmogenesis Lagrangian + VDS/DVP/BSH + Kozima-LENR K.1-K.6) via _common_uqff_blocks, with paper-specific §B DVP prime ladder (gate-guarded), 40/40+ linked-paper mapping, and a campaign-aware XGEO chain.
 
 **Derived-constants catalog (v0.344.0):** all **1,272 unique predecessor-registry derived constants** wired and callable via `uqff_derived_constants.py` — e.g. `derived_constant("alpha_inverse")` → 137.0 (PAPER_1167), `derived_constant("astro_BH_entropy_coeff")` → 0.24833 (PAPER_594). 661 numeric, routes + provenance preserved.
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,132 rows**. Fidelity gate: **6,113 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,137 rows**. Fidelity gate: **6,114 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

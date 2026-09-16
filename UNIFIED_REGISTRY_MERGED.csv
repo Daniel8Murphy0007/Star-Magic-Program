@@ -701,3 +701,4 @@ NSPROOFSET_ARC_B283,1,B283 + PAPER_2278,v0.438.0,the local maximum merged - full
 NSPROOFSET_ARC_B284,1,B284 + PAPER_2279,v0.439.0,front 2 merged - the pair-cap discrimination taken to the near-wall tail (channel Re_tau ~ 1000); in-medium branch holds; discrimination out of reach; B277 near-wall gap closed
 NSPROOFSET_ARC_B285,1,B285 + PAPER_2280,v0.439.0,channel5200 rung merged - the in-medium Reynolds ladder is two rungs and flat; branch holds; discrimination out of reach
 NSPROOFSET_ARC_B286,1,B286 + PAPER_2281,v0.440.0,front 4 re-specified - the equipartition identity named; eta(k) stated as the observable with the prediction a = 0.344/k_c^2; instrument on the wheel; harness awaiting data
+NSPROOFSET_ARC_B287,1,B287 + PAPER_2282,v0.441.0,front 4 record run - SPME engine; k_c 7.90 +- 0.05 Gaussian in 4 runs; c_inf excluded; shear-wave onset 1.0-1.4; falsifier applied NEGATIVE on the coefficient; Q-247/Q-250/Q-246 ruled; Q-251 opened

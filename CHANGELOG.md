@@ -5,6 +5,58 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.441.0 — 2026-09-17 — FRONT 4 RECORD RUN SHIP (an SPME engine, four runs, k_c 7.90 +- 0.05, the falsifier applied, three rulings folded)
+
+- B287 (PAPER_2282): FRONT 4, THE RECORD RUN. The B286b measurement (one
+  run, reaction field, 20-fs sampling, one seed) called for it; the cloud
+  workspace suspends between turns, so it was run in held-open chunks on
+  Daniel's choice (4 nm seeds first, then a 6 nm box) rather than the 8 nm
+  / 1 ns spec of PAPER_2281 - stated on record.
+  ENGINE (md_grade/md_pme.py + pair_kernel.c + gridcur.py): rigid
+  TIP4P/2005 with smooth particle-mesh Ewald (order 4, 0.1 nm grid, alpha
+  3.5 nm^-1, site cutoff 0.9 nm, exclusion correction, self term); C pair
+  kernel with a molecule cell list and a 2e-5 nm erfc table (6e-8); RATTLE
+  in C; SPME spreading/gathering in C; OpenMP; transverse currents for all
+  selected k-vectors by B-spline/FFT momentum-density transform.
+  VALIDATION LADDER (md_grade/validate.out, validate_gridcur.out,
+  nve_pme.out): Madelung constant of NaCl 1.747565 (1.2e-7); C real space
+  vs numpy reference 1.2e-4 kJ/mol in 22,692; SPME vs direct k-sum 3e-3;
+  F = -grad E 3e-8; NVE -0.0001 kJ/mol per molecule over 2 ps (the RF
+  engine: -0.006); E/N -47.2; equipartition of the currents 0.99-1.03;
+  FFT currents vs exact 3.5e-3 rms at k 12-14.5; eta_0 0.84-0.85 vs 0.855;
+  D 2.33/2.42/2.38/2.38 e-5 vs 2.1-2.3.
+  RUNS: 2197 molecules / 4.04 nm / 300 ps at seeds 11, 12, 13; 8000 /
+  6.21 nm / 200 ps; 4-fs sampling; COM and atomic currents; on-the-fly
+  autocorrelator (4-fs lags to 0.8 ps, 40-fs to 10 ps) in six blocks.
+  RESULT: eta(k) GAUSSIAN (chi2 33 vs Lorentzian 192 pooled; 71 vs 104 at
+  6 nm) with k_c 7.89 / 7.89 / 7.94 / 7.93 -> 7.90 +- 0.05 nm^-1 (atomic
+  8.02); c_0 x 1.49 (eta/eta_0 at k_c(c_0) 0.856 vs the predicted 0.709);
+  c_inf x 3.22 EXCLUDED; implied c 994 m/s; shear-wave onset 1.0-1.4
+  nm^-1 (diffusive at 1.01, propagating at 1.43 at 5 sigma) - BELOW both
+  candidates. FALSIFIER (PAPER_2281 sec 4) APPLIED: front 4 CLOSED
+  NEGATIVE ON THE COEFFICIENT (1/e at 13.5 vs 9.05 / 4.19), POSITIVE ON
+  EXISTENCE AND SHAPE. Harness front4_record_grade() (pure arithmetic,
+  weighted log-linear fits) reproduces the scipy numbers.
+  RULINGS (Daniel 2026-09-17, on RULINGS_BRIEF_Q246_Q247_Q250.md): Q-247
+  c_0 stands, c_inf rejected, residual 1.489 recorded as measured, and
+  the literal 1480 m/s RE-PROVENANCED (external at PAPER_2267 L53; fresh
+  water ~20 C; PAPER_2261 carries seawater as a DENSITY only - the
+  "seawater anchor" attribution withdrawn in uqff_ns_assembly and the
+  registry); Q-250 eta(k) on the centre-of-mass current canonical (atomic
+  and the onset k_T reported alongside; the stale "Also needed: the MD
+  run" struck); Q-246 option (b), the PAPER_1042 Gaussian tail canonized
+  (n = k/k_c stays flagged). Q-251 OPENED: 1.489 +- 0.010 vs D_BSFG/D_phys
+  = 1.5 - observation only, not claimed.
+  WIRED: dispatch PAPER_2282 (2,333 keys); registry +5 rows (front4_record_run,
+  front4_record_grade, shear_wave_onset_water, front4_rulings_2026_09_17,
+  fluid_cutoff_scale_ratio_q251) and 4 rows edited (sound_cone -> RULED,
+  eps row, roll-off row, closeout); GRAPH +7; satellites B287; GAPS b287 +
+  Rule-7 row; gate pin B287 (6,114); md_grade +25 files (engine, kernels,
+  validation, run, analysis, logs, CSV, summary; the 90-110 MB
+  correlator archives stay in the workspace, regenerable). Registry 7,137
+  rows; gate 6,114/0; simulator untouched. NOT claimed: front 4 passed;
+  the 8 nm plateau; the value of 0.156 nm; real water beyond the model.
+
 ## v0.440.0 — 2026-09-15 — FRONT 4 RE-SPECIFIED AND MEASURED SHIP (the equipartition identity, eta(k), and the program's own MD)
 
 - B286 (PAPER_2281): FRONT 4 caught mis-specified BEFORE any CPU. The MD

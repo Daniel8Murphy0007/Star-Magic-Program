@@ -1,0 +1,5 @@
+equil 166 s  T 297.6  E/N -47.153
+NVE dt=0.002: 2 ps, dE_total/N = -0.0001 kJ/mol (drift +0.0005 kJ/mol/ps, std 0.0008)  T 296.0
+NVE dt=0.001: 2 ps, dE_total/N = -0.0005 kJ/mol (drift +0.0000 kJ/mol/ps, std 0.0002)  T 302.3
+E_pot/N -47.270  parts {'lj': 8.839, 'real': -50.636, 'excl': 503.762, 'rec': 0.367, 'self': -509.603}
+(2026-09-16, N=2197, seed 7, OMP 2 threads; nve_pme.py 13)
