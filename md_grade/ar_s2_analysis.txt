@@ -1,0 +1,45 @@
+== argon eta(k) ==  (C_T(0)/(N kT M) per vector-component: 1.01, 0.99, 0.98, 1.01, 1.01)
+n2=   1 k= 1.088 nvec= 3  eta=0.2852 +- 0.0091 mPa s  C_min +0.117 at 10.000 ps  omega_L 0.63 ps^-1 -> omega/k 578 m/s
+n2=   2 k= 1.538 nvec= 6  eta=0.2770 +- 0.0269 mPa s  C_min -0.007 at 10.000 ps  omega_L 1.88 ps^-1 -> omega/k 1225 m/s
+n2=   3 k= 1.884 nvec= 4  eta=0.2876 +- 0.0152 mPa s  C_min -0.038 at 6.000 ps  omega_L 2.51 ps^-1 -> omega/k 1334 m/s
+n2=   4 k= 2.175 nvec= 3  eta=0.3006 +- 0.0185 mPa s  C_min -0.044 at 10.000 ps  omega_L 3.14 ps^-1 -> omega/k 1444 m/s
+n2=   5 k= 2.432 nvec=12  eta=0.2747 +- 0.0173 mPa s  C_min -0.049 at 3.440 ps  omega_L 3.14 ps^-1 -> omega/k 1292 m/s
+n2=   6 k= 2.664 nvec=12  eta=0.2695 +- 0.0058 mPa s  C_min -0.061 at 2.880 ps  omega_L 3.14 ps^-1 -> omega/k 1179 m/s
+n2=   8 k= 3.077 nvec= 6  eta=0.2609 +- 0.0123 mPa s  C_min -0.070 at 2.320 ps  omega_L 3.77 ps^-1 -> omega/k 1225 m/s
+n2=   9 k= 3.263 nvec=15  eta=0.2582 +- 0.0113 mPa s  C_min -0.078 at 2.000 ps  omega_L 4.40 ps^-1 -> omega/k 1348 m/s
+n2=  11 k= 3.608 nvec=12  eta=0.2522 +- 0.0109 mPa s  C_min -0.087 at 1.744 ps  omega_L 4.40 ps^-1 -> omega/k 1219 m/s
+n2=  12 k= 3.768 nvec= 4  eta=0.2671 +- 0.0335 mPa s  C_min -0.098 at 1.648 ps  omega_L 5.03 ps^-1 -> omega/k 1334 m/s
+n2=  14 k= 4.070 nvec=24  eta=0.2521 +- 0.0097 mPa s  C_min -0.104 at 1.448 ps  omega_L 5.03 ps^-1 -> omega/k 1235 m/s
+n2=  17 k= 4.485 nvec=24  eta=0.2295 +- 0.0028 mPa s  C_min -0.107 at 1.280 ps  omega_L 5.65 ps^-1 -> omega/k 1261 m/s
+n2=  19 k= 4.741 nvec=12  eta=0.2495 +- 0.0101 mPa s  C_min -0.113 at 1.208 ps  omega_L 6.28 ps^-1 -> omega/k 1325 m/s
+n2=  22 k= 5.102 nvec=12  eta=0.2270 +- 0.0131 mPa s  C_min -0.116 at 1.064 ps  omega_L 6.28 ps^-1 -> omega/k 1232 m/s
+n2=  26 k= 5.546 nvec=24  eta=0.2237 +- 0.0104 mPa s  C_min -0.128 at 0.944 ps  omega_L 6.91 ps^-1 -> omega/k 1246 m/s
+n2=  30 k= 5.958 nvec=24  eta=0.2189 +- 0.0039 mPa s  C_min -0.143 at 0.856 ps  omega_L 7.54 ps^-1 -> omega/k 1266 m/s
+n2=  35 k= 6.435 nvec=24  eta=0.1955 +- 0.0051 mPa s  C_min -0.147 at 0.792 ps  omega_L 8.17 ps^-1 -> omega/k 1269 m/s
+n2=  40 k= 6.879 nvec=12  eta=0.1823 +- 0.0058 mPa s  C_min -0.150 at 0.720 ps  omega_L 8.17 ps^-1 -> omega/k 1187 m/s
+n2=  46 k= 7.377 nvec=24  eta=0.1825 +- 0.0064 mPa s  C_min -0.157 at 0.664 ps  omega_L 8.80 ps^-1 -> omega/k 1192 m/s
+n2=  54 k= 7.993 nvec=24  eta=0.1780 +- 0.0065 mPa s  C_min -0.166 at 0.600 ps  omega_L 9.42 ps^-1 -> omega/k 1179 m/s
+n2=  62 k= 8.565 nvec=24  eta=0.1609 +- 0.0016 mPa s  C_min -0.170 at 0.568 ps  omega_L 10.05 ps^-1 -> omega/k 1174 m/s
+n2=  72 k= 9.230 nvec=18  eta=0.1512 +- 0.0058 mPa s  C_min -0.169 at 0.528 ps  omega_L 10.05 ps^-1 -> omega/k 1089 m/s
+n2=  84 k= 9.969 nvec=24  eta=0.1409 +- 0.0039 mPa s  C_min -0.172 at 0.496 ps  omega_L 10.68 ps^-1 -> omega/k 1071 m/s
+n2=  97 k=10.713 nvec=24  eta=0.1239 +- 0.0030 mPa s  C_min -0.171 at 0.464 ps  omega_L 10.05 ps^-1 -> omega/k 938 m/s
+n2= 113 k=11.563 nvec=24  eta=0.1124 +- 0.0045 mPa s  C_min -0.165 at 0.440 ps  omega_L 10.05 ps^-1 -> omega/k 869 m/s
+n2= 130 k=12.402 nvec=24  eta=0.0985 +- 0.0026 mPa s  C_min -0.158 at 0.416 ps  omega_L 10.05 ps^-1 -> omega/k 811 m/s
+n2= 152 k=13.410 nvec=24  eta=0.0809 +- 0.0023 mPa s  C_min -0.147 at 0.408 ps  omega_L 9.42 ps^-1 -> omega/k 703 m/s
+n2= 176 k=14.430 nvec=12  eta=0.0764 +- 0.0043 mPa s  C_min -0.137 at 0.392 ps  omega_L 8.17 ps^-1 -> omega/k 566 m/s
+n2= 203 k=15.497 nvec=24  eta=0.0611 +- 0.0013 mPa s  C_min -0.124 at 0.384 ps  omega_L 6.91 ps^-1 -> omega/k 446 m/s
+n2= 235 k=16.674 nvec=24  eta=0.0480 +- 0.0014 mPa s  C_min -0.109 at 0.384 ps  omega_L 5.03 ps^-1 -> omega/k 301 m/s
+n2= 273 k=17.972 nvec=24  eta=0.0390 +- 0.0012 mPa s  C_min -0.093 at 0.384 ps  omega_L 4.40 ps^-1 -> omega/k 245 m/s
+n2= 317 k=19.366 nvec=24  eta=0.0325 +- 0.0009 mPa s  C_min -0.082 at 0.392 ps  omega_L 3.77 ps^-1 -> omega/k 195 m/s
+n2= 366 k=20.809 nvec=24  eta=0.0263 +- 0.0008 mPa s  C_min -0.074 at 0.400 ps  omega_L 3.77 ps^-1 -> omega/k 181 m/s
+n2= 425 k=22.424 nvec=24  eta=0.0239 +- 0.0008 mPa s  C_min -0.070 at 0.408 ps  omega_L 5.03 ps^-1 -> omega/k 224 m/s
+n2= 493 k=24.151 nvec=24  eta=0.0212 +- 0.0005 mPa s  C_min -0.075 at 0.416 ps  omega_L 6.91 ps^-1 -> omega/k 286 m/s
+n2= 571 k=25.991 nvec=24  eta=0.0187 +- 0.0004 mPa s  C_min -0.079 at 0.416 ps  omega_L 8.17 ps^-1 -> omega/k 314 m/s
+
+Gaussian: eta0 0.2324 mPa s, b 0.00475 +- 0.00003 nm^2 -> measured k_c 8.51 +- 0.03 (1/e at 14.51), chi2 1561.5 | Lorentzian eta0 0.3497 c 0.02187 chi2 1088.1 -> lorentzian (n=36)
+low-k plateau eta_0 (k<3, 6 shells): 0.2767 +- 0.0043 mPa s (NIST 85 K: 0.2795)
+model c_0 from longitudinal dispersion at k = 1.09, 1.54, 1.88: 578, 1225, 1334 m/s (NIST 854.35)
+D (multi-origin MSD, lags 5-40 ps) = 1.80e-05 cm^2/s (LJ literature at this state ~1.6-1.8e-5)
+T mean 84.95 K  P mean 310 bar  samples 50000 = 400 ps
+P1 k_c = omega/c_0 (NIST 854.35): 9.19 -> measured/predicted = 0.925
+P2 = 1.5 x P1: 13.79 -> measured/predicted = 0.617

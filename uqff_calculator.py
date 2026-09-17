@@ -73,7 +73,7 @@ from uqff_registry_primitives import (
     DELTA_M2_21_EV2, DELTA_M2_32_EV2,
 )
 
-VERSION = "0.441.0"
+VERSION = "0.442.0"
 
 # NAMED OBSERVED SI ANCHORS (constant drain 2026-08-16, PAPER_2141 bulk pattern + PAPER_2149 observation-headlining)
 # Bit-identical to the literals they replace; UQFF-derived counterparts live in uqff_registry_primitives.
@@ -29576,6 +29576,30 @@ def _paper_2282(dataset):
             'formula': 'eta(k) = rho / (k^2 int_0^tmax C_T(k,t)/C_T(k,0) dt); eta(k)/eta_0 = exp(-b k^2), k_c(measured) = sqrt(beta_i [SSq] / b); compared with k_c = omega_SCm / c_s at c_0 and c_inf',
             'source': 'PAPER_2282', 'residual_pct': 0.0,
             'status': g.get('status', 'AWAITING_DATA')}
+
+
+@_register('PAPER_2283')
+def _paper_2283(dataset):
+    """The Q-251 pre-stated test (B288). Written into RULINGS_QUEUE.md and
+    committed BEFORE the run: Lennard-Jones argon at the NIST 85 K state
+    point (c_0 854.35 m/s); P1 k_c = omega_SCm/c_0 = 9.19 nm^-1 (Q-247 as
+    ruled), P2 = (D_BSFG/D_phys) x P1 = 13.79 (the Q-251 route); rule +-10
+    pct. Instrument: the B287 engine's LJ path (md_grade/lj_kernel.c,
+    argon_record.py), same FFT currents and correlator; validated (kernel
+    exact, F = -grad E 6e-9, NVE 1e-5 kJ/mol per atom per 10 ps, eta_0
+    0.274-0.277 vs NIST 0.2795, D 1.8e-5). Two seeds x 400 ps, 4096 atoms.
+    RESULT: eta(k) Gaussian to k = 14 with k_c = 7.17 +- 0.05 nm^-1: P1
+    x 0.78, P2 x 0.52 - NEITHER. Q-251 CLOSED NEGATIVE (water's 1.489 was
+    a coincidence); P1 negative for argon as for water. Observation, not
+    ruled: k_c x sigma = 2.50 (water) and 2.44 (argon) - the cutoff tracks
+    molecular size, not omega_SCm/c_s -> Q-252 opened, Daniel-gated. Not
+    claimed: which reading of Q-252 is right; the model's own c_0 (not
+    cleanly measured); anything beyond two liquids at one state each."""
+    from uqff_ns_assembly import q251_argon_grade, front4_rulings
+    g = q251_argon_grade()
+    return {'value': {'grade': g, 'Q-251': front4_rulings()['Q-251'], 'Q-252': front4_rulings()['Q-252']},
+            'formula': 'k_c(measured) = sqrt(beta_i [SSq] / b) from eta(k)/eta_0 = exp(-b k^2), k <= 14 nm^-1; vs P1 = omega_SCm/c_0 and P2 = (D_BSFG/D_phys) omega_SCm/c_0; rule +-10 pct',
+            'source': 'PAPER_2283', 'residual_pct': 0.0, 'status': g.get('status', 'AWAITING_DATA')}
 
 
 @_register('PAPER_2258')

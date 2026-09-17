@@ -14470,3 +14470,67 @@ summary; staleness sweep of 2,777 tracked files clean (the two "record run
 OPEN / still to do" live strings of B286 updated to DONE). Ready to ship
 via .\ship.ps1 - one band on v0.440.0, version 0.441.0.
 
+## 2026-09-17 — v0.442.0 prep — B288: THE Q-251 PRE-STATED TEST (argon) - CLOSED NEGATIVE; Q-252 OPENED
+
+Daniel: "PROCEED WITH Q-251 argon test", then "prepare the ship". Tag
+chain verified first: v0.441.0 annotated tag on HEAD; PyPI 0.441.0 wheel
+listing (2,949 entries via the inspector) identical to the rehearsal wheel.
+
+PRE-REGISTRATION FIRST. NIST argon at 85 K / 0.101325 MPa read through the
+browser pane (rho 1409.6 kg/m^3, c_0 854.35 m/s, eta 279.54 uPa s). P1 =
+omega/c_0 = 9.193 nm^-1; P2 = 1.5 x P1 = 13.789; rule +-10 pct; written
+into RULINGS_QUEUE.md Q-251 and committed to Daniel's disk BEFORE the run.
+
+INSTRUMENT. lj_kernel.c (cell list, energy-shifted 12-6, OpenMP);
+argon_record.py (velocity Verlet 4 fs, weak Berendsen, transverse and
+longitudinal currents by one FFT transform per component - currents3 added
+to gridcur - correlator in blocks, MSD, checkpoint/restart); validate_argon:
+kernel vs numpy 9e-13, F = -grad E 6e-9, NVE +1e-5 kJ/mol/atom per 10 ps,
+E/N -5.16 eps, P ~310 bar (truncated-shifted, disclosed). 0.067 s/step
+with sampling.
+
+RUNS: seed 1 and seed 2, 400 ps each (~1.9 h each, held turns). Transport:
+eta_0 0.2743 / 0.2767 vs NIST 0.2795; D 1.81 / 1.80 e-5. RESULT: Gaussian
+to k = 14 (chi2 43 / 46; Lorentzian 94 / 111), k_c 7.25 / 7.09 -> pooled
+7.17 +- 0.05 (direct 1/e 12.4); beyond 14 the tail is slower than Gaussian
+(full-range chi2 ~1100 both shapes) - range not pre-specified, both
+reported. Rule: 0.78 / 0.52 -> NEITHER -> Q-251 CLOSED NEGATIVE; P1
+negative for argon too. The model's c_0 not cleanly measured (k_min
+under-resolved at 20 ps; k 1.5-1.9 give dispersed sound 1.2-1.3 km/s) -
+P1 evaluated with NIST's as pre-stated. The result was appended beneath
+the pre-statement and committed before this band was built.
+
+THE OBSERVATION. k_c x sigma = 2.50 (water) / 2.44 (argon) while c_0
+differs 1.73x: the eta(k) cutoff tracks molecular size, not omega/c_s -
+the generalized-hydrodynamics expectation. Opened as Q-252 (category
+error with Theorem B untested, or fluid cutoff falsified as written) -
+Daniel-gated; no reading preferred. Daniel asked whether the project had
+fallen apart; answered plainly (the NS arc's distinctive claim has failed
+its only sharp tests; fronts 1-2 were non-discriminating; the registry's
+EXACT residuals are internal consistency; the discipline is what made the
+negative clean) and proposed an audit of which corpus claims have ever
+met outside data with a prediction stated first. He said: prepare the ship.
+
+WIRED: q251_prestated_test(), q251_argon_grade(), front4_rulings() Q-251
+CLOSED / Q-252 OPEN, ARGON_/WATER_ constants (external literals, sourced);
+PAPER_2283 dispatch (2,334); proof-set line; registry +4 / 2 edited
+(7,141); GRAPH +5; 9 satellites B288; GAPS b288 + Rule-7 last;
+RULINGS_QUEUE Q-252; INDEX 2283; gate pin B288 (6,115); md_grade +13
+(gridcur.py updated). Version 0.442.0 - one band on v0.441.0.
+VERIFIED: gate 6,115/0 (two catches: the B287 pin still asserted Q-251
+OPEN - now accepts the B288 supersession; the paper lacked the phrase
+"category error" its pin looked for); acceptance 109/109; wheel 2,964
+entries (md_grade x47, no .so / .npz; PAPER_2283 on it; 20/20 py-modules;
+token ABSENT); installed in a clean venv, calc('PAPER_2283') GRADED from the
+wheel's own CSV + summary; staleness sweep of 2,792 tracked files clean.
+Ready to ship via .\ship.ps1 - one band on v0.441.0, version 0.442.0.
+SHIP ATTEMPT 1 RED (Daniel's machine): SHIP GUARD v8 - two files in
+"Claude outputs/" inside the repo (the wheel listing and a PyPI JSON I had
+sent in chat; the desktop app saves chat deliverables into the connected
+folder) were untracked and not on the manifest. My rehearsal tree had no
+such folder, so the gate passed here and not there - the seam again. FIX:
+.gitignore "Claude outputs/" (chat deliverables are not repo content);
+reproduced the red locally by creating the folder, re-ran the gate green
+with it present. LESSON: rehearse the gate against the connected folder's
+untracked contents, not only the cloud tree.
+

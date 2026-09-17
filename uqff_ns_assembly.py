@@ -955,7 +955,7 @@ def ns_proof_set() -> Dict:
             'isotropic DNS: SAMPLED GRADE PASSED (B276, JHTDB 8192^3, ratios <= 0.084 vs cap 0.85), the REYNOLDS LADDER PASSED (B278, Re_lambda 433 -> 2500 incl. isotropic32768, no trend toward the cap), the DEEP TAIL SAMPLE PASSED (B282, personal token, 1e6 gradient tensors, chunk ratios <= 0.020; octave efficiency FALLS with intensity) and THE LOCAL MAXIMUM PASSED (B283, full-resolution cubes around the most intense events graded with their own maxima: worst 0.0194, peak 11,763x mean on isotropic32768; two hole-edge artefacts rejected); front 1 for the WHOLE field (more hotspots, time-resolved reconnection frames, the Kerr trefoil) stays OPEN',
             'lab-vs-astro stretching -> pair cap 17/20 vs 197/200: IN-MEDIUM BRANCH HELD at the NEAR-WALL TAIL (B284/PAPER_2279, front 2, JHTDB channel Re_tau ~ 1000: 250k near-wall + 100k bulk stage 1, 4 local-max slabs stage 2; the 1182 ratio peaks 0.024 stage 1 / 0.041 stage 2 at y+~50, ~20-130x under BOTH caps; the B277 near-wall gap CLOSED); the DISCRIMINATION between the branches remains OUT OF REACH because wall turbulence at this Re sits an order of magnitude below the nearer branch - a positive statement of what the data cannot decide; channel5200 DONE (B285/PAPER_2280, Re_tau 5186: the same wall-unit profile, local-max envelope 0.0418 vs 0.0413 - NO Reynolds trend across a fivefold rise; branch holds; discrimination still out of reach); the in-medium ladder is now two rungs, both flat; the DISCRIMINATION itself stays OPEN - reachable only by a different regime (the [SCm]-loaded branch / a strongly in-medium lab fluid), not a bigger DNS',
             'THz bench dip -> profile FWHM 0.235 + 910-vs-896 discriminator',
-            'DNS spectra -> no dynamics above k_c (Theorem A mode count); SHAPE added by Theorem B (B280): roll-off exp(-0.344 (k/k_c)^2), 1/e at 1.71 k_c - Gaussian, not power-law. RE-SPECIFIED (B286/PAPER_2281): the PAPER_2276 sec 6.4 MD test was C_T(k,0) = N k_B T/m (equipartition, flat by identity); the observable is the wavevector-dependent shear viscosity eta(k) (TCAF, gmx tcaf), prediction a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) / 0.0570 nm^2 (c_inf); MEASURED the same day with the program own numpy MD (md_grade/md_engine.py, TIP4P/2005, 512 molecules, 240 ps): eta(k) flat to k~6 then 1/e at 13.3 nm^-1, measured Gaussian k_c 7.8 nm^-1 - the c_0 scale (5.31, factor 1.47; c_inf 2.45 EXCLUDED by 3.2 - bears on Q-247), NOT a precision match of the 0.344 coefficient, shape undecided; Q-250 opened - front 4 MEASURED ONCE (B286b). Then the RECORD RUN DONE (B287, PAPER_2282): SPME engine (md_pme), 4 runs / 2 boxes (4.04 and 6.21 nm) / 3 seeds, 4-fs sampling: k_c 7.90 +- 0.05 nm^-1 in every run, GAUSSIAN (chi2 33 vs 192), eta_0 0.84-0.85 (lit. 0.855), D 2.3-2.4e-5; c_0 x 1.49, c_inf EXCLUDED x 3.2; shear-wave onset k_T 1.0-1.4 nm^-1 BELOW both candidates. RULED 2026-09-17: Q-247 c_0 stands (provenance of 1480 corrected), Q-250 eta(k) on the centre-of-mass current canonical, Q-246 Gaussian tail canonized. VERDICT on the pre-stated falsifier: the 0.344 coefficient at k_c = omega/c_0 is NEGATIVE; existence and Gaussian shape POSITIVE; ratio 1.489 vs D_BSFG/D_phys = 1.5 opened as Q-251 (OPEN) - front 4 CLOSED NEGATIVE ON THE COEFFICIENT, POSITIVE ON SHAPE',
+            'DNS spectra -> no dynamics above k_c (Theorem A mode count); SHAPE added by Theorem B (B280): roll-off exp(-0.344 (k/k_c)^2), 1/e at 1.71 k_c - Gaussian, not power-law. RE-SPECIFIED (B286/PAPER_2281): the PAPER_2276 sec 6.4 MD test was C_T(k,0) = N k_B T/m (equipartition, flat by identity); the observable is the wavevector-dependent shear viscosity eta(k) (TCAF, gmx tcaf), prediction a = 0.344/k_c^2 = 0.0122 nm^2 (c_0) / 0.0570 nm^2 (c_inf); MEASURED the same day with the program own numpy MD (md_grade/md_engine.py, TIP4P/2005, 512 molecules, 240 ps): eta(k) flat to k~6 then 1/e at 13.3 nm^-1, measured Gaussian k_c 7.8 nm^-1 - the c_0 scale (5.31, factor 1.47; c_inf 2.45 EXCLUDED by 3.2 - bears on Q-247), NOT a precision match of the 0.344 coefficient, shape undecided; Q-250 opened - front 4 MEASURED ONCE (B286b). Then the RECORD RUN DONE (B287, PAPER_2282): SPME engine (md_pme), 4 runs / 2 boxes (4.04 and 6.21 nm) / 3 seeds, 4-fs sampling: k_c 7.90 +- 0.05 nm^-1 in every run, GAUSSIAN (chi2 33 vs 192), eta_0 0.84-0.85 (lit. 0.855), D 2.3-2.4e-5; c_0 x 1.49, c_inf EXCLUDED x 3.2; shear-wave onset k_T 1.0-1.4 nm^-1 BELOW both candidates. RULED 2026-09-17: Q-247 c_0 stands (provenance of 1480 corrected), Q-250 eta(k) on the centre-of-mass current canonical, Q-246 Gaussian tail canonized. VERDICT on the pre-stated falsifier: the 0.344 coefficient at k_c = omega/c_0 is NEGATIVE; existence and Gaussian shape POSITIVE; ratio 1.489 vs D_BSFG/D_phys = 1.5 opened as Q-251 - front 4 CLOSED NEGATIVE ON THE COEFFICIENT, POSITIVE ON SHAPE. Q-251 PRE-STATED TEST on argon (B288, PAPER_2283): P1 9.19 / P2 13.79 written before the run; measured k_c 7.17 +- 0.05 (Gaussian to k 14; eta_0 and D match NIST) -> NEITHER: Q-251 CLOSED NEGATIVE, P1 negative for argon too (-22 pct). OBSERVATION: k_c x sigma = 2.50 (water) / 2.44 (argon) - the cutoff tracks molecular size, not omega/c_s -> Q-252 OPEN (Daniel-gated)',
         ],
         'standing_flags': [
             'Lambda_TG vs alpha (0.004 pct) - no corpus chain',
@@ -2021,7 +2021,11 @@ def front4_rulings() -> Dict:
                   'status': 'RULED 2026-09-17'},
         'Q-251': {'question': 'the measured roll-off scale is k_c(measured)/k_c(c_0) = 1.489 +- 0.010 (fit) / +- 0.004 (seeds); D_BSFG/D_phys = %.1f. Coincidence or route? A route would read k_c(fluid) = (D_BSFG/D_phys) omega_SCm/c_0 = 7.96 nm^-1, i.e. the fluid cutoff sits one BSFG-over-physical rung above the sound cone. POST-HOC, one parameter, one liquid, one temperature - a pre-stated test needs a second liquid or a temperature series' % D_BSFG_OVER_D_PHYS,
                   'not_claimed': 'NOT claimed: that the ratio is 1.5; that any corpus derivation produces it; the coefficient 0.344 at k_c = 7.96',
-                  'status': 'OPEN (B287, 2026-09-17)'},
+                  'status': 'CLOSED NEGATIVE (B288, 2026-09-17): the pre-stated argon test measured k_c 7.17 +- 0.05 nm^-1 - ratio to P1 0.78, to P2 0.52, neither within 10 pct; water 1.489 was a coincidence'},
+        'Q-252': {'question': 'the measured eta(k) cutoff sits at k_c x sigma = 2.50 (water) and 2.44 (argon) while c_0 differs by 1.73x between them: the roll-off tracks the molecular diameter, not omega_SCm/c_s. Is the sound-cone k_c of PAPER_2267 / PAPER_2275 a different object from the fluid transfer cutoff eta(k) measures (in which case front 4 as an eta(k) test of omega/c_s was a category error and Theorem B is untouched but untested by it), or is the framework cutoff for fluids falsified as written?',
+                  'evidence': 'B287 water k_c 7.90 +- 0.05 (4 runs); B288 argon k_c 7.17 +- 0.05 (2 seeds); both Gaussian to 1.7 k_c; both engines reproduce eta_0 and D to 1-5 pct',
+                  'not_claimed': 'NOT claimed: which reading is right; that 2.5/sigma is a framework number; anything about Theorems A and B beyond what they state about their own independence from the coefficient',
+                  'status': 'OPEN (B288, 2026-09-17) - Daniel-gated'},
     }
 
 
@@ -2095,3 +2099,67 @@ def front4_record_grade(csv_path: str = None, summary_path: str = None) -> Dict:
                                 % (B['one_over_e_per_nm'] if B else float('nan'), B['k_c_ratio_measured_over_predicted']['c_0'] if B else float('nan'), B['k_c_ratio_measured_over_predicted']['c_inf'] if B else float('nan')))
     out['status'] = 'FRONT4_RECORD_GRADED_B287 (k_c %.2f nm^-1 in both boxes; Gaussian; c_0 x %.2f; c_inf excluded; coefficient NEGATIVE; shear-wave onset 1.0-1.4)' % (out['k_c_record_per_nm'], out['ratio_to_c0'])
     return out
+
+
+# ---- B288 (v0.442.0, PAPER_2283): the Q-251 PRE-STATED TEST on argon - CLOSED NEGATIVE; Q-252 opened ----
+Q251_ARGON_CSV = 'md_grade/q251_argon_eta_k.csv'
+Q251_ARGON_SUMMARY = 'md_grade/q251_argon_summary.json'
+ARGON_SIGMA_NM = 0.3405          # Lennard-Jones argon (external literal, PAPER_2283 sec 1)
+ARGON_C0_NIST_M_S = 854.35       # NIST Chemistry WebBook, argon 85 K / 0.101325 MPa (external literal, read 2026-09-17)
+WATER_SIGMA_OO_NM = 0.31589      # TIP4P/2005 O-O sigma (Abascal & Vega 2005; md_grade/md_engine.py)
+
+
+def q251_prestated_test() -> Dict:
+    """The Q-251 test exactly as pre-stated in RULINGS_QUEUE.md on 2026-09-17 BEFORE the run: the two
+    predictions, the reading rule, and the state point. Pure arithmetic from the primitives."""
+    kc_p1 = 2 * math.pi * F_C_THZ * 1e12 / ARGON_C0_NIST_M_S / 1e9
+    return {'liquid': 'Lennard-Jones argon, NIST 85 K / 0.101325 MPa (rho 21.25 nm^-3, c_0 %.2f m/s, eta 0.2795 mPa s)' % ARGON_C0_NIST_M_S,
+            'P1_kc_per_nm': kc_p1, 'P1_label': 'k_c = omega_SCm / c_0 (Q-247 as ruled)',
+            'P2_kc_per_nm': D_BSFG_OVER_D_PHYS * kc_p1, 'P2_label': 'k_c = (D_BSFG/D_phys) omega_SCm / c_0 (the Q-251 route)',
+            'coefficient': BETA_I * SSQ, 'rule': 'measured Gaussian k_c within +-10 pct of P1 -> Q-251 NEGATIVE; of P2 -> Q-251 POSITIVE; neither -> both NEGATIVE, ratio recorded next to water 1.489',
+            'water_ratio_recorded': 1.489}
+
+
+def q251_argon_grade(csv_path: str = None, summary_path: str = None) -> Dict:
+    """B288 harness: grade the argon eta(k) table against the pre-stated P1 / P2 by the pre-stated rule.
+    Weighted log-linear Gaussian fit over the water-comparable range k <= 14 nm^-1 (the like-for-like number)
+    and over the full range; direct 1/e crossing; the k_c x sigma observation. NO DATA -> AWAITING_DATA."""
+    import csv as _csv, os as _os, json as _json
+    from uqff_paths import resolve
+    def _p(rel):
+        try: return str(resolve(rel))
+        except Exception: return rel
+    csv_path = csv_path or _p(Q251_ARGON_CSV); summary_path = summary_path or _p(Q251_ARGON_SUMMARY)
+    pre = q251_prestated_test()
+    if not (_os.path.exists(csv_path) and _os.path.exists(summary_path)):
+        return {'status': 'AWAITING_DATA', 'path': csv_path, 'prestated': pre}
+    _lines = [l for l in open(csv_path, encoding='utf-8') if l.strip() and not l.startswith('#')]
+    rows = [r for r in _csv.DictReader(_lines) if r.get('k_per_nm')]
+    summ = _json.load(open(summary_path, encoding='utf-8'))
+    ks = [float(r['k_per_nm']) for r in rows]; et = [float(r['eta_k_pooled']) for r in rows]; ee = [float(r['eta_err_pooled']) for r in rows]
+    coeff = pre['coefficient']
+    def gfit(sel):
+        X = [k * k for k, s in zip(ks, sel) if s]; Y = [math.log(v) for v, s in zip(et, sel) if s]; w = [1 / (e / v) ** 2 for v, e, s in zip(et, ee, sel) if s]
+        Sw = sum(w); Sx = sum(a * x for a, x in zip(w, X)); Sy = sum(a * y for a, y in zip(w, Y)); Sxx = sum(a * x * x for a, x in zip(w, X)); Sxy = sum(a * x * y for a, x, y in zip(w, X, Y))
+        den = Sw * Sxx - Sx * Sx; b = -(Sw * Sxy - Sx * Sy) / den; e0 = math.exp((Sy + b * Sx) / Sw); b_err = math.sqrt(Sw / den)
+        kc = math.sqrt(coeff / b); chi = sum(((e0 * math.exp(-b * x) - v) / e) ** 2 for x, v, e, s in zip([k * k for k in ks], et, ee, sel) if s)
+        return {'n': len(X), 'eta_0_gauss': e0, 'b_nm2': b, 'k_c_per_nm': kc, 'k_c_err': 0.5 * kc * b_err / b, 'one_over_e_per_nm': 1 / math.sqrt(b), 'chi2_gaussian': chi}
+    f14 = gfit([k <= 14.0 for k in ks]); fall = gfit([True] * len(ks))
+    lo = [(v, e) for k, v, e in zip(ks, et, ee) if k < 3.0]; wl = [1 / e ** 2 for _, e in lo]; e0p = sum(v * a for (v, _), a in zip(lo, wl)) / sum(wl)
+    ratio = [v / e0p for v in et]; k_e = None
+    for i in range(1, len(ks)):
+        if ratio[i - 1] >= math.exp(-1) > ratio[i]:
+            k_e = ks[i - 1] + (ks[i] - ks[i - 1]) * (ratio[i - 1] - math.exp(-1)) / (ratio[i - 1] - ratio[i]); break
+    kc = f14['k_c_per_nm']; r1 = kc / pre['P1_kc_per_nm']; r2 = kc / pre['P2_kc_per_nm']
+    within = lambda r: abs(r - 1) <= 0.10
+    if within(r1) and not within(r2): verdict = 'P1 within 10 pct -> Q-251 NEGATIVE'
+    elif within(r2) and not within(r1): verdict = 'P2 within 10 pct -> Q-251 POSITIVE (second liquid)'
+    elif within(r1) and within(r2): verdict = 'both within 10 pct (impossible by construction)'
+    else: verdict = 'NEITHER within 10 pct -> Q-251 CLOSED NEGATIVE; P1 (omega_SCm/c_0) NEGATIVE for argon as for water'
+    return {'status': 'Q251_ARGON_GRADED_B288 (k_c %.2f vs P1 %.2f / P2 %.2f: %s)' % (kc, pre['P1_kc_per_nm'], pre['P2_kc_per_nm'], verdict.split(' -> ')[0]),
+            'prestated': pre, 'n_rows': len(rows), 'fit_k_le_14': f14, 'fit_full_range': fall, 'eta_0_plateau_k_lt_3': e0p, 'direct_one_over_e_per_nm': k_e,
+            'ratio_P1': r1, 'ratio_P2': r2, 'verdict': verdict,
+            'eta_over_eta0_at_P1': math.exp(-f14['b_nm2'] * pre['P1_kc_per_nm'] ** 2), 'eta_over_eta0_at_P2': math.exp(-f14['b_nm2'] * pre['P2_kc_per_nm'] ** 2), 'predicted_at_kc': math.exp(-coeff),
+            'kc_sigma': {'argon': kc * ARGON_SIGMA_NM, 'water': 7.90 * WATER_SIGMA_OO_NM, 'c0_ratio_water_over_argon': 1480.0 / ARGON_C0_NIST_M_S, 'kc_ratio_water_over_argon': 7.90 / kc},
+            'observation': 'k_c x sigma = %.2f (argon) and %.2f (water): the roll-off of eta(k) sits at k ~ 2.5/sigma in both liquids - it tracks the molecular diameter, not omega_SCm/c_s (c_0 ratio %.2f, k_c ratio %.2f). Opened as Q-252; NOT ruled.' % (kc * ARGON_SIGMA_NM, 7.90 * WATER_SIGMA_OO_NM, 1480.0 / ARGON_C0_NIST_M_S, 7.90 / kc),
+            'summary': summ}

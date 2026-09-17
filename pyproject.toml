@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.441.0"
-description = "Star-Magic UQFF calculator v0.441.0: FRONT 4 RECORD RUN SHIP (PAPER_2282) - a particle-mesh Ewald engine written and validated for it (Madelung 1.747565; NVE 1e-4 kJ/mol); four runs, two boxes, three seeds: eta(k) of TIP4P/2005 water Gaussian with k_c 7.90 +- 0.05 nm^-1 - c_0 x 1.49, fast sound excluded, shear waves from 1.0-1.4 nm^-1; the pre-stated falsifier applied: NEGATIVE on the 0.344 coefficient, POSITIVE on shape; Q-247/Q-250/Q-246 ruled, Q-251 opened; gate 6,114/0."
+version = "0.442.0"
+description = "Star-Magic UQFF calculator v0.442.0: Q-251 PRE-STATED TEST SHIP (PAPER_2283) - two predictions for Lennard-Jones argon committed to the repo before the run (k_c 9.19 or 13.79 nm^-1), measured k_c 7.17 +- 0.05: neither; Q-251 closed negative; the eta(k) cutoff tracks the molecular diameter in both liquids (k_c sigma 2.50 / 2.44), not omega_SCm/c_s - opened as Q-252, Daniel-gated; gate 6,115/0."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -191,6 +191,14 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
 ]
 "share/star-magic-program/md_grade" = [
     "md_grade/README_MD_GRADE.md",
+    "md_grade/ar_analyze.py",
+    "md_grade/ar_s1.log",
+    "md_grade/ar_s1_analysis.json",
+    "md_grade/ar_s1_analysis.txt",
+    "md_grade/ar_s2.log",
+    "md_grade/ar_s2_analysis.json",
+    "md_grade/ar_s2_analysis.txt",
+    "md_grade/argon_record.py",
     "md_grade/ewald_ref.py",
     "md_grade/front4_analyze.py",
     "md_grade/front4_eta_k.csv",
@@ -203,12 +211,16 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "md_grade/front4_run.py",
     "md_grade/front4_tcaf.py",
     "md_grade/gridcur.py",
+    "md_grade/lj_kernel.c",
     "md_grade/md_engine.py",
     "md_grade/md_pme.py",
     "md_grade/nve_pme.out",
     "md_grade/nve_pme.py",
     "md_grade/pair_kernel.c",
     "md_grade/pool_B13.json",
+    "md_grade/pool_argon.json",
+    "md_grade/q251_argon_eta_k.csv",
+    "md_grade/q251_argon_summary.json",
     "md_grade/rec_B13s11.log",
     "md_grade/rec_B13s11_analysis.json",
     "md_grade/rec_B13s12.log",
@@ -221,6 +233,8 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "md_grade/rec_pool.py",
     "md_grade/validate.out",
     "md_grade/validate.py",
+    "md_grade/validate_argon.out",
+    "md_grade/validate_argon.py",
     "md_grade/validate_gridcur.out",
     "md_grade/validate_gridcur.py",
 ]
@@ -2095,6 +2109,7 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "whitepapers/PAPER_2280_FRONT_2_EXTENSION_CHANNEL5200_THE_IN_MEDIUM_REYNOLDS_RUNG_NO_TREND_UQFF_LANDMARK.md",
     "whitepapers/PAPER_2281_FRONT_4_RESPECIFIED_THE_EQUIPARTITION_IDENTITY_AND_THE_WAVEVECTOR_DEPENDENT_SHEAR_VISCOSITY_UQFF_LANDMARK.md",
     "whitepapers/PAPER_2282_FRONT_4_THE_RECORD_RUN_SPME_ENGINE_FOUR_RUNS_TWO_BOXES_THREE_SEEDS_ETA_K_GAUSSIAN_KC_7_90_THREE_RULINGS_FOLDED_UQFF_LANDMARK.md",
+    "whitepapers/PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md",
     "whitepapers/PAPER_228_Westerlund2_OB_StellarWind_MUGE.md",
     "whitepapers/PAPER_229_Pillars_Creation_Erosion_MUGE.md",
     "whitepapers/PAPER_230_NGC2525_SN2018gv_Negative_MassLoss_MUGE.md",

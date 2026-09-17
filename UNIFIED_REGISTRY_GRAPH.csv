@@ -12426,3 +12426,8 @@ shear_wave_onset_water,PAPER_2282,RULES,Q-250,B287: k_T 1.0-1.4 below both candi
 front4_record_run,PAPER_2282,RULES,Q-246,B287: Gaussian chi2 33 vs 192 -> PAPER_1042 Gaussian tail RULED canonical
 fluid_cutoff_scale_ratio_q251,PAPER_2282,OPENS,Q-251,"B287: 1.489 +- 0.010 vs D_BSFG/D_phys = 1.5 - observation, not claimed"
 primitive,D_BSFG,observable,fluid_cutoff_scale_ratio_q251,D_BSFG/D_phys = 1.5 (Q-251 comparison only)
+md_grade/q251_argon_eta_k.csv,PAPER_2283,GRADES,q251_argon_grade,B288: LJ argon 2 seeds x 400 ps (lj_kernel.c + argon_record.py) -> 36-shell eta(k) -> harness GRADED against the pre-stated P1/P2
+q251_argon_prestated_test,PAPER_2283,PRE_REGISTERS,q251_argon_grade,B288: predictions and rule committed before the run (RULINGS_QUEUE.md Q-251)
+q251_argon_grade,PAPER_2283,CLOSES,Q-251,B288: NEITHER within 10 pct -> Q-251 CLOSED NEGATIVE; water 1.489 was a coincidence
+eta_k_cutoff_tracks_molecular_diameter,PAPER_2283,OPENS,Q-252,"B288: k_c x sigma = 2.50 / 2.44 in water / argon - the cutoff tracks sigma, not omega_SCm/c_s"
+front4_record_run,PAPER_2282,COMPARED_WITH,q251_argon_eta_k,B288: water k_c 7.90 vs argon 7.17 (ratio 1.10) against a c_0 ratio of 1.73

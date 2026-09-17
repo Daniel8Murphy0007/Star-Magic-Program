@@ -626,6 +626,15 @@ near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
 branch holds; discrimination out of reach; the public DNS record is
 exhausted for front 2. Gate 6,111/0. Acceptance 109/109.
 
+## v0.442.0 — 2026-09-17 — Q-251 PRE-STATED TEST SHIP
+PAPER_2283 (B288): LJ argon at the NIST 85 K state point; P1 = omega/c_0
+= 9.19 nm^-1 and P2 = 1.5 x P1 = 13.79 committed to the repo before the
+run; engine LJ path validated (kernel exact; F = -grad E 6e-9; NVE 1e-5;
+eta_0 0.274-0.277 vs NIST 0.2795; D 1.8e-5); 2 seeds x 400 ps: k_c 7.17
++- 0.05 -> NEITHER; Q-251 CLOSED NEGATIVE; k_c x sigma 2.50 / 2.44 in
+water / argon -> Q-252 opened (Daniel-gated). Gate 6,115/0. Acceptance
+109/109.
+
 ## v0.441.0 — 2026-09-17 — FRONT 4 RECORD RUN SHIP
 PAPER_2282 (B287): an SPME engine (md_grade/md_pme.py, C kernels, FFT
 currents) written and validated for the front-4 record run (Madelung

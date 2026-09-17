@@ -1,39 +1,34 @@
-v0.441.0 — FRONT 4 RECORD RUN SHIP
+v0.442.0 — Q-251 PRE-STATED TEST SHIP
 
-B287 (PAPER_2282): the front-4 record run - an engine written for it, four
-runs in two boxes with three seeds, the number did not move, the
-pre-stated falsifier applied, three rulings folded. One band since v0.440.0.
+B288 (PAPER_2283): the first fully pre-registered test in the corpus, a
+second liquid, and neither prediction survived. One band since v0.441.0.
 
-- THE ENGINE: md_grade/md_pme.py + pair_kernel.c + gridcur.py - rigid
-  TIP4P/2005 with smooth particle-mesh Ewald (the reaction-field caveat of
-  B286b gone), pair kernel / RATTLE / B-spline spreading in C, transverse
-  currents by FFT momentum-density transform. Validated: Madelung constant
-  of NaCl 1.747565 (1.2e-7); C vs numpy 1.2e-4 kJ/mol; SPME 3e-3; forces =
-  -grad E to 3e-8; NVE -0.0001 kJ/mol per molecule over 2 ps; E/N -47.2;
-  eta_0 0.84-0.85 vs 0.855; D 2.3-2.4e-5 vs 2.1-2.3.
-- THE RUNS: 2197 molecules / 4.04 nm / 300 ps at seeds 11, 12, 13 and 8000
-  / 6.21 nm / 200 ps; sampled every 4 fs (B286b's 20 fs was marginal above
-  k ~ 5) on the centre-of-mass and atomic currents.
-- THE RESULT: eta(k) rolls off as a GAUSSIAN (chi2 33 vs Lorentzian 192)
-  with k_c = 7.89 / 7.89 / 7.94 / 7.93 -> 7.90 +- 0.05 nm^-1. c_0 (5.31):
-  factor 1.49 - at k_c(c_0) the measured suppression is 14 pct where
-  PAPER_2275 says 29. c_inf (2.45): factor 3.2, EXCLUDED. Shear waves begin
-  at 1.0-1.4 nm^-1, four to five times below k_c(c_0).
-- THE VERDICT (PAPER_2281 sec 4, as written before measuring): front 4
-  CLOSED NEGATIVE ON THE COEFFICIENT - the 1/e wavenumber 13.5 lies far
-  from both 9.05 and 4.19 - and POSITIVE ON EXISTENCE AND SHAPE. A failed
-  prediction, recorded as one; what survives, stated separately.
-- THE RULINGS (Daniel 2026-09-17, on the brief): Q-247 c_0 stands and the
-  literal 1480 m/s is re-provenanced (PAPER_2267 L53; PAPER_2261 has no
-  sound speed); Q-250 eta(k) on the centre-of-mass current is canonical;
-  Q-246 the PAPER_1042 Gaussian tail is THE high-k form. Q-251 OPENED:
-  k_c(measured)/k_c(c_0) = 1.489 +- 0.010 vs D_BSFG/D_phys = 1.5 -
-  post-hoc, one liquid, one temperature; an observation, not a claim.
+- THE PRE-STATEMENT: written into RULINGS_QUEUE.md Q-251 and committed to
+  the repository before any run. Lennard-Jones argon at the NIST 85 K /
+  0.101325 MPa state point (c_0 854.35 m/s, eta 0.2795 mPa s, read from
+  the WebBook). P1, the Q-247 form: k_c = omega_SCm/c_0 = 9.19 nm^-1. P2,
+  the Q-251 route: (D_BSFG/D_phys) x P1 = 13.79. Rule: +-10 pct. The
+  result is appended beneath the pre-statement, which is unchanged.
+- THE INSTRUMENT: the B287 engine's LJ path (md_grade/lj_kernel.c,
+  argon_record.py, gridcur.currents3). Kernel exact against numpy; forces
+  = -grad E to 6e-9; NVE +0.00001 kJ/mol per atom over 10 ps. The model
+  reproduces NIST: eta_0 0.274 / 0.277 vs 0.2795; D 1.8e-5.
+- THE MEASUREMENT: 4096 atoms, 2 seeds x 400 ps, 36 shells to 26 nm^-1.
+  eta(k) Gaussian over the water-comparable range (chi2 43/46 vs
+  Lorentzian 94/111): k_c = 7.25 / 7.09 -> 7.17 +- 0.05 nm^-1.
+- THE RULE APPLIED: k_c/P1 = 0.78; k_c/P2 = 0.52. NEITHER. Q-251 CLOSED
+  NEGATIVE - water's 1.489 was a coincidence. P1, already negative for
+  water (+49 pct), is negative for argon (-22 pct).
+- THE OBSERVATION (recorded, not claimed): sound speeds differ 1.73x, the
+  cutoffs 1.10x; k_c x sigma = 2.50 (water) and 2.44 (argon). The eta(k)
+  cutoff tracks the molecular diameter, not omega_SCm/c_s. Q-252 OPENED,
+  Daniel-gated: a category error (Theorem B untested by front 4), or the
+  framework fluid cutoff falsified as written.
 
-Not claimed: front 4 passed; the 8 nm / 1 ns plateau (not run - the
-workspace suspends between turns; the 4 nm seeds and the 6 nm box were
-chosen instead, on record); the value of 0.156 nm; anything about real
-water beyond TIP4P/2005.
+Not claimed: which reading of Q-252; the model's own c_0 (not cleanly
+measured; P1 evaluated with NIST's as pre-stated); the fit range (not
+pre-specified; both reported; neither rescues a prediction); anything
+beyond two liquids at one state point each.
 
-Gate 6,114/0. Dispatch 2,333 keys. Registry 7,137 rows. Acceptance
+Gate 6,115/0. Dispatch 2,334 keys. Registry 7,141 rows. Acceptance
 109/109 (simulator untouched).

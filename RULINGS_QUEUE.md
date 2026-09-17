@@ -7737,5 +7737,86 @@ were in the corpus.
   the pre-stated test (another engine run: the same instrument, a second
   fluid); (c) a corpus route from D_BSFG/D_phys to the fluid cutoff, if
   one exists (none searched for yet).
-- **Status:** OPEN (B287, 2026-09-17).
+- **PRE-STATED TEST (Daniel: "PROCEED WITH Q-251 argon test", 2026-09-17;
+  written and committed to the repo BEFORE any run):** liquid argon,
+  Lennard-Jones (sigma 0.3405 nm, epsilon 0.9961 kJ/mol = 119.8 K), at the
+  NIST state point 85 K, 0.101325 MPa: density 1409.6 kg/m^3 (21.25 nm^-3,
+  rho* 0.839, T* 0.710), c_0 = 854.35 m/s, eta = 279.54 uPa s (NIST
+  Chemistry WebBook, isobaric table, read 2026-09-17). PREDICTIONS:
+  (P1, Q-247 as ruled) k_c = omega_SCm / c_0 = 9.19 nm^-1, Gaussian with
+  coefficient 0.344, 1/e at 15.7 nm^-1; (P2, the Q-251 route) k_c =
+  (D_BSFG/D_phys) omega_SCm / c_0 = 13.79 nm^-1, 1/e at 23.5 (water's own
+  measured ratio 1.489 would give 13.69). READING RULE: measured Gaussian k_c
+  within +-10 pct of 9.19 -> P1 holds for argon and Q-251 closes NEGATIVE
+  (water's 1.49 was a coincidence); within +-10 pct of 13.79 -> Q-251 has
+  its second liquid (POSITIVE, still not a derivation); neither -> both
+  NEGATIVE and the ratio k_c/k_c(c_0) is recorded next to water's 1.489.
+  The MODEL's own c_0 is measured in the same run (longitudinal-current
+  dispersion at the lowest k) and k_c(c_0) is restated with it if it differs
+  from NIST by more than 5 pct; eta_0 and D are checked against NIST 0.280
+  mPa s and the LJ literature (D ~ 1.7e-5 cm^2/s). Instrument: the B287
+  engine's LJ path (md_grade/argon_record.py), same FFT currents, same
+  correlator, same Green-Kubo estimator; 4096 atoms, L 5.78 nm (k_min 1.09),
+  k to 26 nm^-1, 4-fs sampling, two seeds. Nothing in this paragraph
+  changes after the run; the result is appended below it.
+- **RESULT (2026-09-17, appended below the pre-statement, which is unchanged):**
+  two seeds, 4,096 LJ atoms, L 5.777 nm (k_min 1.09), 400 ps each, 36 shells
+  to 26 nm^-1, 8-fs sampling. Engine validation: C kernel vs numpy 9e-12
+  kJ/mol; F = -grad E 3e-8; NVE -0.00001 kJ/mol per atom over 10 ps; E/N
+  -5.15 eps; equipartition of the currents 1.00-1.03. Transport vs NIST:
+  eta_0 (plateau k < 3) = 0.2743 / 0.2767 +- 0.005 mPa s vs 0.2795; D =
+  1.81 / 1.80 e-5 cm^2/s vs the LJ literature 1.6-1.8. MEASURED: eta(k) is
+  Gaussian over the water-comparable range k <= 14 nm^-1 (chi2 43 / 46 on 27
+  shells; Lorentzian 94 / 111) with k_c = 7.25 +- 0.06 and 7.09 +- 0.06;
+  POOLED k_c = 7.17 +- 0.05 nm^-1 (1/e at 12.2; the direct 1/e crossing of
+  eta/eta_0 gives 12.4). Over the full range to 26 the tail is SLOWER than
+  Gaussian (chi2 ~1000 for either shape; eta/eta_0 = 0.065 at 26 vs 0.026
+  Gaussian) - the fit range was not pre-specified, so both are reported;
+  the like-for-like number is the k <= 14 one. READING BY THE RULE: k_c /
+  P1 (9.19) = 0.78; k_c / P2 (13.79) = 0.52. NEITHER within +-10 pct.
+  **Q-251 CLOSES NEGATIVE**: water's ratio 1.489 does not recur (argon's is
+  0.78); D_BSFG/D_phys = 1.5 was a coincidence. P1 (k_c = omega_SCm/c_0) is
+  also NEGATIVE for argon at the 10 pct rule (-22 pct), as it was for water
+  (+49 pct). eta/eta_0 at k_c(c_0) = 0.56 vs the predicted 0.709.
+  **OBSERVATION (not pre-stated; recorded, not claimed):** the two liquids'
+  sound speeds differ by 1.73x (1480 vs 854 m/s) but their measured k_c
+  differ by 1.10x (7.90 vs 7.17); in units of the molecular diameter, k_c x
+  sigma = 2.50 (water, sigma_OO 0.3159 nm) and 2.44 (argon, sigma 0.3405 nm)
+  - the roll-off of eta(k) sits at k ~ 2.5/sigma in both, i.e. it tracks
+  the molecular size, not omega_SCm/c_s. That is the generalized-
+  hydrodynamics expectation for eta(k) in simple liquids and it is what the
+  data say; what it implies for the framework's k_c is a NEW question
+  (Q-252, to be opened in the band), not a ruling here. The model's own c_0
+  was NOT cleanly measured (the lowest shell is under-resolved at a 20-ps
+  lag window; the k = 1.5-1.9 shells give the dispersed sound, 1.2-1.3
+  km/s) - P1 was evaluated with NIST's c_0 as pre-stated, and the model
+  reproduces NIST's eta_0 to 1-2 pct and D to the literature.
+- **Status:** CLOSED NEGATIVE (B288, 2026-09-17) - by the pre-stated rule.
+
+### Q-252 — PAPER_2283 / PAPER_2282 / PAPER_2267 / PAPER_2275 — the measured fluid cutoff tracks the molecular diameter, not omega_SCm/c_s: is the sound-cone k_c a different object from the eta(k) cutoff, or is the framework cutoff for fluids falsified as written?
+- **Evidence (B287 + B288):** water (TIP4P/2005, 298 K) k_c = 7.90 +- 0.05
+  nm^-1; argon (LJ, 85 K) k_c = 7.17 +- 0.05. Their sound speeds differ by
+  1.73x (1480 vs 854 m/s), so the framework's k_c = omega_SCm/c_s differs
+  by 1.73x (5.31 vs 9.19); the measured cutoffs differ by 1.10x. In units
+  of the molecular diameter, k_c x sigma = 2.50 (water, sigma_OO 0.3159)
+  and 2.44 (argon, 0.3405). Both Gaussian to 1.7 k_c; both engines
+  reproduce eta_0 and D to 1-5 pct. The ratio measured/k_c(c_0) is 1.49
+  for water and 0.78 for argon - no common factor.
+- **What it is:** the generalized-hydrodynamics expectation for the
+  wavevector-dependent shear viscosity of a simple liquid: non-locality on
+  the molecular scale. It needs no carrier at 1.25 THz to produce.
+- **RULING asked:** (a) the sound-cone k_c of PAPER_2267 (the surviving
+  mode set at omega_SCm/c_s, the object Theorems A and B are built on) is
+  NOT the transfer cutoff eta(k) measures - front 4 as an eta(k) test of
+  omega/c_s was a category error (the program's own, twice re-posed);
+  Theorem B is untouched and remains UNTESTED by fronts 1-4; front 4 is
+  retired or re-posed a third time on an observable that actually reads
+  the mode set; or (b) the framework cutoff for fluids IS the transfer
+  cutoff and is falsified as written for two liquids - the NS arc's
+  distinctive physical claim closes negative and the corpus records it;
+  or (c) something the sweep has not found.
+- **Not claimed:** which reading is right; that 2.5/sigma is a framework
+  number; anything about Theorems A and B beyond their stated
+  independence from the coefficient.
+- **Status:** OPEN (B288, 2026-09-17) - Daniel-gated.
 

@@ -16,6 +16,16 @@ class GridCurrents:
         self.idx = (ix, iy, iz)
         self.bfac = b[ix] * b[iy] * b[iz]
 
+    def currents3(self, r, v, m, e3):
+        """As currents(), plus the projection on a third direction set e3 (K,3) - e.g. k-hat for the longitudinal current."""
+        K = self.K; r = np.ascontiguousarray(r, dtype=np.float64)
+        J = np.empty((3, len(self.nvec)), np.complex128); Q = np.empty((K, K, K))
+        for d in range(3):
+            w = np.ascontiguousarray(m * v[:, d])
+            _lib.pme_spread(len(w), r.ctypes.data_as(_dp), w.ctypes.data_as(_dp), self.L, K, Q.ctypes.data_as(_dp))
+            J[d] = np.conj(np.fft.fftn(Q)[self.idx]) * self.bfac
+        return (J * self.e1.T).sum(0), (J * self.e2.T).sum(0), (J * e3.T).sum(0)
+
     def currents(self, r, v, m):
         """r,v: (Na,3); m: (Na,). Returns j1, j2 complex (K,) = sum m (v.e) exp(i k.r) for the k set."""
         K = self.K; r = np.ascontiguousarray(r, dtype=np.float64)

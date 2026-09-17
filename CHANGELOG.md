@@ -5,6 +5,57 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.442.0 — 2026-09-17 — Q-251 PRE-STATED TEST SHIP (argon; two predictions committed before the run; neither; Q-252 opened)
+
+- B288 (PAPER_2283): THE Q-251 PRE-STATED TEST. PAPER_2282 had noticed
+  water's k_c/k_c(c_0) = 1.489 on D_BSFG/D_phys = 1.5 and refused to claim
+  it; this band ran the test it named. PRE-REGISTRATION: the predictions
+  and the reading rule were written into RULINGS_QUEUE.md Q-251 and
+  committed to the repo BEFORE any run - P1 = omega_SCm/c_0(NIST 854.35
+  m/s) = 9.19 nm^-1 (Q-247 as ruled), P2 = (D_BSFG/D_phys) x P1 = 13.79,
+  rule +-10 pct; the RESULT is appended beneath, the pre-statement
+  unchanged. INSTRUMENT: the B287 engine's LJ path - md_grade/lj_kernel.c
+  (cell-list 12-6, energy-shifted at 2.5 sigma, OpenMP), argon_record.py
+  (velocity Verlet 4 fs, transverse AND longitudinal currents by the B287
+  FFT transform - gridcur.currents3 - correlator, MSD, checkpoint),
+  validate_argon.py (kernel vs numpy 9e-13 kJ/mol; F = -grad E 6e-9; NVE
+  +0.00001 kJ/mol per atom over 10 ps; E/N -5.16 eps). State point: NIST
+  argon 85 K / 0.101325 MPa (rho 21.25 nm^-3, c_0 854.35, eta 0.2795 mPa s
+  - read through the browser pane). RUNS: 4096 atoms, L 5.78 nm, 36 shells
+  to 26 nm^-1, 2 seeds x 400 ps, 8-fs sampling. TRANSPORT CHECK: eta_0
+  plateau 0.2743 / 0.2767 +- 0.005 vs NIST 0.2795; D 1.81 / 1.80 e-5 vs
+  the LJ literature 1.6-1.8. RESULT: eta(k) Gaussian over the water-
+  comparable range k <= 14 (chi2 43/46 vs Lorentzian 94/111, n = 27) with
+  k_c 7.25 +- 0.06 / 7.09 +- 0.06 -> POOLED 7.17 +- 0.05 nm^-1 (harness
+  7.16; direct 1/e crossing 12.4); beyond k ~ 14 the tail is slower than
+  Gaussian (full-range chi2 ~1100, both shapes) - the fit range was not
+  pre-specified, both are reported, neither rescues a prediction. THE
+  RULE APPLIED: k_c/P1 = 0.78, k_c/P2 = 0.52 -> NEITHER within 10 pct ->
+  Q-251 CLOSED NEGATIVE (water's 1.489 was a coincidence); P1 negative for
+  argon (-22 pct) as for water (+49 pct); eta/eta_0 at P1 0.57 and at P2
+  0.28 against the predicted 0.709. OBSERVATION (recorded, NOT claimed):
+  c_0 differs 1.73x between the liquids, the measured k_c 1.10x; k_c x
+  sigma = 2.50 (water, sigma_OO 0.3159) and 2.44 (argon, 0.3405) - the
+  eta(k) cutoff tracks the molecular diameter, not omega_SCm/c_s (the
+  generalized-hydrodynamics expectation). Q-252 OPENED, Daniel-gated: (a)
+  the sound-cone k_c is a different object from the eta(k) cutoff (front
+  4 a category error; Theorem B untouched and untested by it), (b) the
+  framework fluid cutoff is falsified as written, (c) other. Nothing
+  further on front 4 until it is ruled.
+  WIRED: q251_prestated_test(), q251_argon_grade() (pure arithmetic;
+  reproduces scipy), front4_rulings() Q-251 CLOSED / Q-252 OPEN; dispatch
+  PAPER_2283 (2,334); proof-set front-4 line extended; registry +4 rows
+  (q251_argon_prestated_test, q251_argon_eta_k, q251_argon_grade,
+  eta_k_cutoff_tracks_molecular_diameter) and 2 edited
+  (fluid_cutoff_scale_ratio_q251 -> CLOSED_NEGATIVE; closeout); GRAPH +5;
+  9 satellites B288; GAPS b288 + Rule-7 row; RULINGS_QUEUE Q-251 result +
+  Q-252; WHITEPAPER_INDEX 2283; gate pin B288 (6,115); md_grade +13
+  files (gridcur.py updated). Registry 7,141 rows; gate 6,115/0;
+  simulator untouched. NOT claimed: which reading of Q-252; the model's
+  own c_0 (not cleanly measured); anything beyond two liquids at one
+  state point each; anything about Theorems A and B beyond their stated
+  independence from the coefficient.
+
 ## v0.441.0 — 2026-09-17 — FRONT 4 RECORD RUN SHIP (an SPME engine, four runs, k_c 7.90 +- 0.05, the falsifier applied, three rulings folded)
 
 - B287 (PAPER_2282): FRONT 4, THE RECORD RUN. The B286b measurement (one

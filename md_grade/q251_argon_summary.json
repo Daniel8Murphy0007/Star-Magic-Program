@@ -1,0 +1,108 @@
+{
+ "band": "v0.442.0 B288",
+ "paper": "PAPER_2283",
+ "model": "LJ argon sigma 0.3405 nm eps 0.9961 kJ/mol, truncated-shifted rc 0.85 nm (2.5 sigma), no tail correction",
+ "state": {
+  "T_K": 85.0,
+  "rho_per_nm3": 21.25,
+  "rho_star": 0.839,
+  "T_star": 0.71,
+  "nist_c0_m_s": 854.35,
+  "nist_eta_mPas": 0.27954,
+  "nist_rho_kg_m3": 1409.6,
+  "P_model_bar": 310
+ },
+ "prestated": {
+  "P1_kc": 9.193,
+  "P1_1e": 15.68,
+  "P2_kc": 13.789,
+  "P2_1e": 23.52,
+  "rule": "+-10 pct",
+  "water_ratio": 1.489
+ },
+ "runs": [
+  {
+   "tag": "s1",
+   "seed": 1,
+   "N": 4096,
+   "L": 5.7765,
+   "ps": 400,
+   "kc_k14": 7.25,
+   "kc_k14_err": 0.06,
+   "chi2_g_k14": 43,
+   "chi2_l_k14": 94,
+   "kc_full": 7.98,
+   "chi2_g_full": 1120,
+   "eta0_plateau": 0.2743,
+   "eta0_plateau_err": 0.0047,
+   "D": 1.81e-05
+  },
+  {
+   "tag": "s2",
+   "seed": 2,
+   "N": 4096,
+   "L": 5.7765,
+   "ps": 400,
+   "kc_k14": 7.09,
+   "kc_k14_err": 0.06,
+   "chi2_g_k14": 46,
+   "chi2_l_k14": 111,
+   "kc_full": 8.51,
+   "chi2_g_full": 1561,
+   "eta0_plateau": 0.2767,
+   "eta0_plateau_err": 0.0043,
+   "D": 1.8e-05
+  }
+ ],
+ "pooled": {
+  "k14": {
+   "n": 27,
+   "eta0": 0.2708280371365801,
+   "b": 0.006691538879149454,
+   "kc": 7.166334355837633,
+   "kc_err": 0.046447970735304815,
+   "k_1e": 12.224665857379605,
+   "chi2_gauss": 53.6469556765602,
+   "chi2_lor": 111.22396864904272,
+   "ratio_P1": 0.7795425166798252,
+   "ratio_P2": 0.5197138556702903,
+   "kc_sigma": 2.440136848162714
+  },
+  "full": {
+   "n": 36,
+   "eta0": 0.24752542985484155,
+   "b": 0.005426924765758597,
+   "kc": 7.957619502496744,
+   "kc_err": 0.02198319937605996,
+   "k_1e": 13.574476797743495,
+   "chi2_gauss": 1075.6274770749515,
+   "chi2_lor": 1463.0721215744886,
+   "ratio_P1": 0.865617263406586,
+   "ratio_P2": 0.5770991009135358,
+   "kc_sigma": 2.7095694406001414
+  },
+  "eta0_plateau": 0.27546861422193214
+ },
+ "reading": {
+  "ratio_P1": 0.7795425166798252,
+  "ratio_P2": 0.5197138556702903,
+  "verdict": "NEITHER within +-10 pct: Q-251 CLOSED NEGATIVE; P1 (omega/c_0) NEGATIVE for argon (-22 pct) as for water (+49 pct)",
+  "eta_over_eta0_at_P1": 0.557,
+  "eta_over_eta0_at_P2": 0.282
+ },
+ "observation": {
+  "kc_sigma_argon": 2.440136848162714,
+  "kc_sigma_water": 2.495531,
+  "c0_ratio_water_over_argon": 1.7323111137121787,
+  "kc_ratio_water_over_argon": 1.102376697448498,
+  "note": "k_c tracks the molecular diameter (~2.5/sigma), not omega_SCm/c_s - opened as Q-252, not ruled"
+ },
+ "validation": {
+  "kernel_vs_numpy_kJ": 8.6e-12,
+  "fd_force_rel": 3.5e-08,
+  "nve_dE_per_N_10ps": -1e-05,
+  "E_per_N_eps": -5.16,
+  "equipartition": "1.00-1.03",
+  "model_c0": "not cleanly measured (lowest shell under-resolved at 20 ps; k 1.5-1.9 give dispersed sound 1.2-1.3 km/s); P1 evaluated with NIST c_0 as pre-stated"
+ }
+}

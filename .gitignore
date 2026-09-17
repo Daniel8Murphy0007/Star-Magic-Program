@@ -66,3 +66,8 @@ star_magic_program-*/
 # OPERATOR TIER (v1.71.0): user/operator-supplied field data - private by
 # construction; never committed, never packaged, never published.
 uqff_downhole_simulator/catalog_operator/
+
+# Claude desktop app chat deliverables: the app saves files sent in chat into the
+# connected folder under "Claude outputs/" (v0.442.0 lesson: two such files sat in
+# the repo untracked and SHIP GUARD v8 refused to ship). Not repo content, never packaged.
+Claude outputs/

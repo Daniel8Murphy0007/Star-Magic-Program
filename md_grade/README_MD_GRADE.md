@@ -1,4 +1,4 @@
-# md_grade — the front-4 instruments (B286b, B287)
+# md_grade — the front-4 instruments (B286b, B287) and the Q-251 argon test (B288)
 
 Everything here is source and data; nothing is compiled on the wheel.
 
@@ -18,6 +18,12 @@ Everything here is source and data; nothing is compiled on the wheel.
 | `rec_analyze.py`, `rec_pool.py` | Per-run analysis (eta(k) per shell on COM and atomic currents, block errors, Gaussian/Lorentzian fits, shear-wave onset, D) and seed pooling. |
 | `rec_B13s1{1,2,3}_analysis.json`, `rec_C20_analysis.json`, `pool_B13.json`, `rec_*.log` | The four runs' analyses and logs. |
 | `front4_record_eta_k.csv`, `front4_record_summary.json` | What the harness (`uqff_ns_assembly.front4_record_grade`) grades. |
+| `lj_kernel.c` | B288: Lennard-Jones cell-list kernel (energy-shifted 12-6, OpenMP). Build: `gcc -O3 -march=native -fopenmp -shared -fPIC -o lj_kernel.so lj_kernel.c -lm` |
+| `argon_record.py` | B288: the Q-251 argon run - velocity Verlet, transverse + longitudinal currents (`gridcur.currents3`), correlator, MSD, checkpoint/restart. Needs `pair_kernel.so` built too (gridcur's spreader). |
+| `validate_argon.py` -> `validate_argon.out` | Kernel vs numpy, forces vs finite differences, equilibration, NVE at 4,096 atoms. |
+| `ar_analyze.py` | Per-run analysis: eta(k) per shell, Gaussian/Lorentzian fits, longitudinal dispersion, D, the P1/P2 ratios. |
+| `ar_s1_analysis.json/.txt`, `ar_s2_analysis.json/.txt`, `pool_argon.json`, `ar_s1.log`, `ar_s2.log` | The two seeds and their pooling. |
+| `q251_argon_eta_k.csv`, `q251_argon_summary.json` | What the harness (`uqff_ns_assembly.q251_argon_grade`) grades against the pre-stated P1 / P2. |
 
 The raw correlator archives (`rec_*.npz`, 90-110 MB each) are not on the
 wheel; every number in the JSONs and the CSV is regenerable from the

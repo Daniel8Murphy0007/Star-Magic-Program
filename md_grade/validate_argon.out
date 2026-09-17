@@ -1,0 +1,4 @@
+1. C kernel vs numpy all-pairs: dE 9.09e-13 kJ/mol (E 3567.0853)  max dF 2.91e-11
+2. F = -grad E, max rel err 5.96e-09
+3. equil N=4096 L=5.777: T 84.80  E/N -5.1532 kJ/mol (-5.173 eps)  P 306 bar  37 s (0.0037 s/step)
+4. NVE 10 ps at 4 fs: dE_tot/N = +0.00001 kJ/mol (std 0.00000)  T 84.87

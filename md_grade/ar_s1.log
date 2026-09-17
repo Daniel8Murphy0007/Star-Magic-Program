@@ -1,0 +1,17 @@
+ARGON LJ  N 4096  L 5.7765 nm  rho 21.250 nm^-3 (rho* 0.839)  T 85.0 K (T* 0.709)  rc 0.85  k_min 1.0877  K 647 vectors in 36 shells (cap 24)  kmax 26.0  grid 74 (h 0.078)  dt 4.0 fs  sample every 2  lags 476 (fine to 2.0 ps, every 10 to 20.0 ps)  blocks 6  seed 1
+eq step 0 T 84.61 E/N -5.1589 32 s
+eq step 2500 T 85.13 E/N -5.1537 44 s
+eq step 5000 T 85.30 E/N -5.1618 55 s
+eq step 7500 T 85.33 E/N -5.1524 67 s
+equilibrated: T 84.54  E/N -5.1444 kJ/mol  P 328.3 bar  78 s
+prod sample 0 / 50000  t=0.0 ps  T 84.48  E/N -5.1437  P 330 bar  0 s (0.1166 s/step)
+prod sample 5000 / 50000  t=40.0 ps  T 85.99  E/N -5.1672  P 277 bar  682 s (0.0682 s/step)
+prod sample 10000 / 50000  t=80.0 ps  T 83.49  E/N -5.1374  P 334 bar  1382 s (0.0691 s/step)
+prod sample 15000 / 50000  t=120.0 ps  T 84.67  E/N -5.1495  P 312 bar  2058 s (0.0686 s/step)
+prod sample 20000 / 50000  t=160.0 ps  T 83.90  E/N -5.1413  P 329 bar  2739 s (0.0685 s/step)
+prod sample 25000 / 50000  t=200.0 ps  T 85.36  E/N -5.1601  P 296 bar  3375 s (0.0675 s/step)
+prod sample 30000 / 50000  t=240.0 ps  T 84.69  E/N -5.1511  P 323 bar  3987 s (0.0664 s/step)
+prod sample 35000 / 50000  t=280.0 ps  T 84.08  E/N -5.1457  P 328 bar  4656 s (0.0665 s/step)
+prod sample 40000 / 50000  t=320.0 ps  T 86.09  E/N -5.1681  P 275 bar  5356 s (0.0670 s/step)
+prod sample 45000 / 50000  t=360.0 ps  T 85.84  E/N -5.1649  P 283 bar  6005 s (0.0667 s/step)
+DONE 50000 samples 6646 s
