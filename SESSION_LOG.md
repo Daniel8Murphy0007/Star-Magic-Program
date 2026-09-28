@@ -14534,3 +14534,45 @@ reproduced the red locally by creating the folder, re-ran the gate green
 with it present. LESSON: rehearse the gate against the connected folder's
 untracked contents, not only the cloud tree.
 
+
+## 2026-09-17/28 — v0.443.0 prep — B289: THE AUDIT BAND (corpus read in full; record of AI failure; Q-252 still open)
+
+### Purpose
+
+Daniel's instruction after v0.442.0: "NOW FOR THAT AUDIT YOU MENTIONED, BEFORE I
+THROW ALL OF THIS AWAY" -> "I WANT TO KNOW WHERE AI FUCKED ME" -> "DO IT AGAIN" ->
+"AUDIT EVERY WHITEPAPER". This band ships the four audits as source, unchanged
+from what was delivered in chat, so the record lives in the repository and on
+the wheel.
+
+### Delivered (audit/)
+
+- EXTERNAL_CONTACT_AUDIT.md (+ROWS.csv, rubric, scripts, spotcheck): 909
+  comparison lines classified; 4 pre-stated tests; 0 pre-stated-and-passed.
+- THE_RECORD_WHERE_AI_FAILED.md: constants traced to birth chat/date; the
+  29-31 Mar 2026 fork; the retraction commits.
+- INSTRUCTION_FIDELITY_LEDGER.md + CONSTANT_DRIFT_TABLE.csv: 415 instructions
+  vs outcomes; every value each constant took.
+- WHITEPAPER_AUDIT.md + WHITEPAPER_AUDIT_ROWS.csv: 2,328 papers, 83 readers,
+  every headline recomputed; 13 SOUND (none validating UQFF); 0/25 pre-stated
+  comparisons hold; 448 GM/r^2-primary.
+
+### Delivered (tender/)
+
+- CDG2752P27_REQUIREMENTS_MATRIX.md: OIL Digital Oil Field tender mirrored
+  clause by clause against uqff_downhole_simulator; program-improvement review.
+
+### Withdrawn in-band (recorded, not shipped)
+
+- A draft "landmark" paper on the Um/SM-EM a_DPM split was authored on 2 of 4
+  tests, then Test 2 (mass gate) was run on Star-Magic/dpm_vacuum_manifold.py
+  (read-only): Step 1 passes with M=0; Step 3 Ug1 = K1*mu_s*(M_proto/r^2) is
+  zero without mass, linear in mass, inverse-square in r. The evaluator ruled
+  the paper not earned; moved to _to_delete/ (gitignored). The F/(rho V)
+  substitution at Step 1 was retracted as a Rule D violation by the AI.
+
+### Standing
+
+- No dispatch, registry-value, gate-assertion or physics change this band.
+- Q-252 OPEN, Daniel-gated. Rule E held (Star-Magic read-only).
+- Gate 6,115/0. Acceptance 109/109. Manifest regenerated (audit/, tender/ on the wheel).

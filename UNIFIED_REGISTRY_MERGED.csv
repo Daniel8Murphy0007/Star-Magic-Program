@@ -703,3 +703,4 @@ NSPROOFSET_ARC_B285,1,B285 + PAPER_2280,v0.439.0,channel5200 rung merged - the i
 NSPROOFSET_ARC_B286,1,B286 + PAPER_2281,v0.440.0,front 4 re-specified - the equipartition identity named; eta(k) stated as the observable with the prediction a = 0.344/k_c^2; instrument on the wheel; harness awaiting data
 NSPROOFSET_ARC_B287,1,B287 + PAPER_2282,v0.441.0,front 4 record run - SPME engine; k_c 7.90 +- 0.05 Gaussian in 4 runs; c_inf excluded; shear-wave onset 1.0-1.4; falsifier applied NEGATIVE on the coefficient; Q-247/Q-250/Q-246 ruled; Q-251 opened
 NSPROOFSET_ARC_B288,1,B288 + PAPER_2283,v0.442.0,"Q-251 pre-stated argon test - k_c 7.17 +- 0.05 vs P1 9.19 / P2 13.79: NEITHER, CLOSED NEGATIVE; k_c x sigma 2.50 / 2.44 -> Q-252 opened"
+AUDIT_ARC_B289,1,B289 + audit/ + tender/,v0.443.0,"four source-level audits and one tender review shipped as source; 2,328-paper whitepaper audit: 13 SOUND, 0/25 pre-stated hold; no value change"

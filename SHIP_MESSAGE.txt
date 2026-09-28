@@ -1,34 +1,26 @@
-v0.442.0 — Q-251 PRE-STATED TEST SHIP
+v0.443.0 — THE AUDIT BAND SHIP
 
-B288 (PAPER_2283): the first fully pre-registered test in the corpus, a
-second liquid, and neither prediction survived. One band since v0.441.0.
+B289: the corpus read in full and recomputed, the record of where the AI
+tools failed, and a tender review — shipped as source. One band since
+v0.442.0. No dispatch, registry-value, gate-assertion or physics change.
 
-- THE PRE-STATEMENT: written into RULINGS_QUEUE.md Q-251 and committed to
-  the repository before any run. Lennard-Jones argon at the NIST 85 K /
-  0.101325 MPa state point (c_0 854.35 m/s, eta 0.2795 mPa s, read from
-  the WebBook). P1, the Q-247 form: k_c = omega_SCm/c_0 = 9.19 nm^-1. P2,
-  the Q-251 route: (D_BSFG/D_phys) x P1 = 13.79. Rule: +-10 pct. The
-  result is appended beneath the pre-statement, which is unchanged.
-- THE INSTRUMENT: the B287 engine's LJ path (md_grade/lj_kernel.c,
-  argon_record.py, gridcur.currents3). Kernel exact against numpy; forces
-  = -grad E to 6e-9; NVE +0.00001 kJ/mol per atom over 10 ps. The model
-  reproduces NIST: eta_0 0.274 / 0.277 vs 0.2795; D 1.8e-5.
-- THE MEASUREMENT: 4096 atoms, 2 seeds x 400 ps, 36 shells to 26 nm^-1.
-  eta(k) Gaussian over the water-comparable range (chi2 43/46 vs
-  Lorentzian 94/111): k_c = 7.25 / 7.09 -> 7.17 +- 0.05 nm^-1.
-- THE RULE APPLIED: k_c/P1 = 0.78; k_c/P2 = 0.52. NEITHER. Q-251 CLOSED
-  NEGATIVE - water's 1.489 was a coincidence. P1, already negative for
-  water (+49 pct), is negative for argon (-22 pct).
-- THE OBSERVATION (recorded, not claimed): sound speeds differ 1.73x, the
-  cutoffs 1.10x; k_c x sigma = 2.50 (water) and 2.44 (argon). The eta(k)
-  cutoff tracks the molecular diameter, not omega_SCm/c_s. Q-252 OPENED,
-  Daniel-gated: a category error (Theorem B untested by front 4), or the
-  framework fluid cutoff falsified as written.
-
-Not claimed: which reading of Q-252; the model's own c_0 (not cleanly
-measured; P1 evaluated with NIST's as pre-stated); the fit range (not
-pre-specified; both reported; neither rescues a prediction); anything
-beyond two liquids at one state point each.
-
-Gate 6,115/0. Dispatch 2,334 keys. Registry 7,141 rows. Acceptance
-109/109 (simulator untouched).
+- audit/EXTERNAL_CONTACT_AUDIT.md (+ROWS.csv, rubric.txt, look_elsewhere.py,
+  template_census.py, spotcheck.txt): 909 external-comparison lines
+  classified; 4 pre-stated tests; 0 pre-stated-and-passed; the primitive
+  vocabulary reaches any target within 0.1 pct (look-elsewhere).
+- audit/THE_RECORD_WHERE_AI_FAILED.md: every real-valued constant traced to
+  its birth chat and date (beta_i 0.603 mock-fit and [SSq] 0.57 wrong
+  equation, both 14 Sep 2025); the 29-31 Mar 2026 audit-request -> G6-stamp
+  fork; the retraction/recovery commits.
+- audit/INSTRUCTION_FIDELITY_LEDGER.md + CONSTANT_DRIFT_TABLE.csv: 415 dated
+  instructions vs what the tools did next, in the tools' own words; every
+  value each constant took across 21 months.
+- audit/WHITEPAPER_AUDIT.md + WHITEPAPER_AUDIT_ROWS.csv: all 2,328 papers
+  read in full, headline recomputed: SOUND 13 / CALIBRATION_ONLY 878 /
+  DEFECTIVE 547 / NARRATIVE 288 / UNSUPPORTED 265 / CIRCULAR 259 / STAMPED
+  66; 0 of 25 pre-stated named comparisons hold; 448 GM/r^2-first.
+- tender/CDG2752P27_REQUIREMENTS_MATRIX.md: OIL DOF tender mirrored clause
+  by clause against uqff_downhole_simulator (program-improvement review).
+- .gitignore: _to_delete/ (withdrawn a_DPM landmark parked, never ships).
+- Registry: two audit-census rows (RECORDED). Arc marker AUDIT_ARC.
+- Gate 6,115/0. Acceptance 109/109. Q-252 OPEN, Daniel-gated. Rule E held.

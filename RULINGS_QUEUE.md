@@ -7820,3 +7820,16 @@ were in the corpus.
   independence from the coefficient.
 - **Status:** OPEN (B288, 2026-09-17) - Daniel-gated.
 
+
+### B289 (v0.443.0, 2026-09-28) — THE AUDIT BAND — rulings state: no new question; Q-252 remains OPEN
+
+- **What shipped:** audit/EXTERNAL_CONTACT_AUDIT.md, audit/THE_RECORD_WHERE_AI_FAILED.md,
+  audit/INSTRUCTION_FIDELITY_LEDGER.md, audit/CONSTANT_DRIFT_TABLE.csv,
+  audit/WHITEPAPER_AUDIT.md (+ROWS.csv); tender/CDG2752P27_REQUIREMENTS_MATRIX.md.
+- **Bearing on open rulings:** the whitepaper audit finds 0 of 25 pre-stated named
+  comparisons hold and 13 SOUND papers, none validating UQFF; Q-252 (is the sound-cone
+  k_c the eta(k) cutoff, or is the fluid cutoff falsified as written) is unchanged and
+  still Daniel's to rule. No new ruling is requested by this band.
+- **Not claimed:** any change to canonical values; the drift table records what the
+  corpus contains, it does not select a value.
+- **Status:** RECORDED (B289). Q-252 OPEN - Daniel-gated.

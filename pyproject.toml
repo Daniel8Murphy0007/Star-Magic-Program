@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "star-magic-program"
-version = "0.442.0"
-description = "Star-Magic UQFF calculator v0.442.0: Q-251 PRE-STATED TEST SHIP (PAPER_2283) - two predictions for Lennard-Jones argon committed to the repo before the run (k_c 9.19 or 13.79 nm^-1), measured k_c 7.17 +- 0.05: neither; Q-251 closed negative; the eta(k) cutoff tracks the molecular diameter in both liquids (k_c sigma 2.50 / 2.44), not omega_SCm/c_s - opened as Q-252, Daniel-gated; gate 6,115/0."
+version = "0.443.0"
+description = "Star-Magic UQFF calculator v0.443.0: THE AUDIT BAND (B289) - three source-level audits of the corpus shipped in audit/: external-contact audit (909 comparison lines, 0 pre-stated-and-passed), the dated record of where the tools failed, the instruction-fidelity ledger, and the full whitepaper audit (2,328 papers read and recomputed: 13 sound, none validating UQFF; 0 of 25 pre-stated comparisons hold), plus a tender review in tender/. No dispatch, registry or physics change. Gate 6,115/0; 2,334 keys."
 readme = "README.md"
 authors = [
     { name = "Daniel T. Murphy", email = "daniel.murphy00@enrgyone.com" }
@@ -170,6 +170,19 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     ".github/workflows/ci.yml",
     ".github/workflows/release-to-pypi.yml",
 ]
+"share/star-magic-program/audit" = [
+    "audit/CONSTANT_DRIFT_TABLE.csv",
+    "audit/EXTERNAL_CONTACT_AUDIT.md",
+    "audit/EXTERNAL_CONTACT_AUDIT_ROWS.csv",
+    "audit/INSTRUCTION_FIDELITY_LEDGER.md",
+    "audit/THE_RECORD_WHERE_AI_FAILED.md",
+    "audit/WHITEPAPER_AUDIT.md",
+    "audit/WHITEPAPER_AUDIT_ROWS.csv",
+    "audit/look_elsewhere.py",
+    "audit/rubric.txt",
+    "audit/spotcheck.txt",
+    "audit/template_census.py",
+]
 "share/star-magic-program/commercial" = [
     "commercial/BENCH_READINESS.md",
     "commercial/PILOT_PROPOSAL_SUBSURFACE_SURVEYING.md",
@@ -299,6 +312,9 @@ uqff_downhole_simulator = ["catalog/*", "*.md", "*.json", "*.csv"]
     "reference/Star-Magic_manuscript_v5.pdf",
     "reference/UQFF_VALIDATION_SYNC_AUDIT.pdf",
     "reference/uqff_production_arxiv.pdf",
+]
+"share/star-magic-program/tender" = [
+    "tender/CDG2752P27_REQUIREMENTS_MATRIX.md",
 ]
 "share/star-magic-program/tex" = [
     "tex/PAPER_001_GW170817_UQFF_Damping_Analysis.tex",

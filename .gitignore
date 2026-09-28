@@ -71,3 +71,6 @@ uqff_downhole_simulator/catalog_operator/
 # connected folder under "Claude outputs/" (v0.442.0 lesson: two such files sat in
 # the repo untracked and SHIP GUARD v8 refused to ship). Not repo content, never packaged.
 Claude outputs/
+
+# withdrawn files pending manual deletion (never shipped)
+_to_delete/

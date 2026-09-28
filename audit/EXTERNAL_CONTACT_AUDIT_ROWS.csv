@@ -1,0 +1,910 @@
+paper|table_line|quantity|uqff_value|external_value|external_source_named|residual_as_stated|class|evidence
+PAPER_008_UQFF_Waveform_Phase_Evolution_Template_Mismatch.md|L238|(table)|||N||NOT_A_COMPARISON|GR-vs-UQFF SNR/loss only; no external measurement
+PAPER_011b_Amplitude_Reduction_Factor_UQFF.md|L146|(table)|||N||NOT_A_COMPARISON|internal strain ratios vs internal "Target D"; no external data
+PAPER_012_Eccentric_Binary_Circularization_UQFF.md|L110|(table)|||N||NOT_A_COMPARISON|e_GR vs e_UQFF and detectability; no observed values
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L275|<lnA> at 10^18 eV|1.6|1.5--2.0|Y|not stated|RANGE_ONLY|observed given as band (Auger Xmax); UQFF inside band
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L275|<lnA> at 3x10^18 eV|2.2|2.0--2.5|Y|not stated|RANGE_ONLY|observed given as band; UQFF inside band
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L275|<lnA> at 10^19 eV|2.8|2.5--3.0|Y|not stated|RANGE_ONLY|observed given as band; UQFF inside band
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L275|<lnA> at 10^20 eV|3.2|3.0--3.5|Y|not stated|RANGE_ONLY|observed given as band; UQFF inside band
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|GZK cutoff energy|4.8 x 10^19 eV|~5 x 10^19 eV|Y|checkmark|RANGE_ONLY|approximate observed value; checkmark only, no residual
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|GZK cutoff sharpness|3.7% sharper|Slightly sharp|Y|checkmark|RANGE_ONLY|qualitative observed column
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|Cen A anisotropy|B ~ 5 nG sufficient|5 sigma excess|Y|checkmark|RANGE_ONLY|qualitative; no quantity compared
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|Secondary break at 8 EeV|Delta gamma ~ +0.3|Tentative (2 sigma)|Y|checkmark|RANGE_ONLY|observed only tentative; checkmark without numeric comparison
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|<lnA> at 10^19 eV|2.8|2.5--3.0|Y|checkmark|RANGE_ONLY|band comparison; duplicate of L275 row
+PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md|L289|Proton fraction > 10^20 eV|~22%|~20--30%|Y|checkmark|RANGE_ONLY|band comparison
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|s8|0.762|0.762 x 0.012|N|checkmark|POST_HOC_FIXED_FORM|identical digits to observed central value; no formula shown; survey not named
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|xi_gamma suppression|16%|~15% vs CMB|N|checkmark|POST_HOC_FIXED_FORM|approximate observed; no residual stated
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|Arc abundance|-8.3%|~-10%|N|checkmark|POST_HOC_FIXED_FORM|approximate observed; no residual stated
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|Einstein radius|-3.1%|Under-measured|N|checkmark|RANGE_ONLY|qualitative observed column
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|GW mag. deficit|2.4%|Not yet measured|N|Prediction|FORECAST_UNTESTED|explicitly not yet measured
+PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md|L254|S8 = s8 sqrt(Om/0.3)|0.782|0.776 x 0.017|N|checkmark|POST_HOC_FIXED_FORM|derived from s8 row; no residual stated
+PAPER_023_Tau_Anomalous_Magnetic_Moment_g2_UQFF.md|L150|(table)|||Y||NOT_A_COMPARISON|experimental bounds on a_tau only; no UQFF value
+PAPER_023_Tau_Anomalous_Magnetic_Moment_g2_UQFF.md|L160|a_tau detectability Belle II (50 ab^-1)|Marginal (0.07s)|~5e-5 expected precision|Y|not stated|FORECAST_UNTESTED|future experiment, timeline 2026
+PAPER_023_Tau_Anomalous_Magnetic_Moment_g2_UQFF.md|L160|a_tau detectability FCC-ee (Tera-Z)|Yes (0.7s)|~5e-6 expected precision|Y|not stated|FORECAST_UNTESTED|future experiment, timeline 2045
+PAPER_023_Tau_Anomalous_Magnetic_Moment_g2_UQFF.md|L160|a_tau detectability CLIC (3 TeV)|Yes (1.7s)|~2e-6 expected precision|Y|not stated|FORECAST_UNTESTED|future experiment, timeline 2050
+PAPER_023_Tau_Anomalous_Magnetic_Moment_g2_UQFF.md|L160|a_tau detectability Dedicated tau factory|Yes (3.4s)|~1e-6 expected precision|Y|not stated|FORECAST_UNTESTED|future experiment, timeline 2040+
+PAPER_024_Tau_Electric_Dipole_Moment_UQFF.md|L53|(table)|||Y||NOT_A_COMPARISON|experimental bounds on d_tau only; no UQFF value
+PAPER_024_Tau_Electric_Dipole_Moment_UQFF.md|L128|d_tau detectability Belle II (50 ab^-1)|Marginal|~10^-19 e cm sensitivity|Y|not stated|FORECAST_UNTESTED|future experiment 2026-2030
+PAPER_024_Tau_Electric_Dipole_Moment_UQFF.md|L128|d_tau detectability FCC-ee Tera-Z|Yes (10 sigma)|~10^-21 e cm sensitivity|Y|not stated|FORECAST_UNTESTED|future experiment 2045
+PAPER_024_Tau_Electric_Dipole_Moment_UQFF.md|L128|d_tau detectability CLIC 3 TeV|Yes (4 sigma)|~5e-21 e cm sensitivity|Y|not stated|FORECAST_UNTESTED|future experiment 2050
+PAPER_024_Tau_Electric_Dipole_Moment_UQFF.md|L128|d_tau detectability Tau factory|Yes (184 sigma)|~10^-22 e cm sensitivity|Y|not stated|FORECAST_UNTESTED|future experiment 2040+
+PAPER_025_Dark_Matter_Direct_Detection_UQFF.md|L51|(table)|||Y||NOT_A_COMPARISON|experimental s_SI limits only; no UQFF value
+PAPER_025_Dark_Matter_Direct_Detection_UQFF.md|L134|sigma/m Bullet Cluster|0.57|< 1.25|Y|Yes|RANGE_ONLY|UQFF value 0.57 is the [SSq] primitive; compared to bound only
+PAPER_025_Dark_Matter_Direct_Detection_UQFF.md|L134|sigma/m Galaxy clusters|0.57|< 0.47|Y|Marginal|RANGE_ONLY|UQFF 0.57 exceeds bound 0.47 yet called Marginal
+PAPER_025_Dark_Matter_Direct_Detection_UQFF.md|L134|sigma/m Dwarf galaxies|0.57|0.1 x 10|Y|Yes|RANGE_ONLY|garbled range; bound comparison only
+PAPER_025_Dark_Matter_Direct_Detection_UQFF.md|L134|sigma/m Strong lensing|0.57|< 1.0|Y|Yes|RANGE_ONLY|bound comparison only
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|M_s1|7.100 keV|XMM unidentified line|Y|not stated|RANGE_ONLY|experiment column names source only; no numeric observed value
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|E_gamma (decay)|3.550 keV|XMM-Newton|Y|not stated|RANGE_ONLY|3.55 keV line value known before; observed number not shown in row
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|Sum m_nu|74.2 meV|Planck < 120 meV|Y|checkmark|RANGE_ONLY|upper bound only
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|m_bb|12.3 meV|CUPID-1T (2035)|Y|not stated|FORECAST_UNTESTED|future experiment 2035
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|sin2(2theta)|1.78 x 10^-10|XMM < 3 x 10^-10|Y|checkmark|RANGE_ONLY|upper bound only
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|delta<r2>_nu|~6 x 10^-33 cm2|Future CEvNS|N|not stated|FORECAST_UNTESTED|future measurement; SM ~10^-34 listed
+PAPER_025b_Neutrino_Polarizability_UQFF.md|L288|a_nu,UQFF|< 10^-32 cm3|Future experiments|N|not stated|FORECAST_UNTESTED|future measurement; UQFF gives bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L77|(table)|||Y||NOT_A_COMPARISON|observational sterile-mass hints with references; no UQFF value
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L231|Delta m2_31 (GUT)|2.45 x 10^? eV|2.51 x 10^? eV|N|checkmark|POST_HOC_PER_TARGET|two UQFF variants (GUT/TeV) offered for same observable; exponent garbled
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L231|Delta m2_atm (TeV)|2.496 x 10^? eV|2.453 x 10^? eV (1.75s)|N|1.75s|POST_HOC_PER_TARGET|second variant of same observable; observed differs from L327 value 2.51e-3
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L231|Sum m_nu|74.2 meV|< 120 meV (Planck)|Y|checkmark|RANGE_ONLY|upper bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L231|Hierarchy|Normal|Preferred|N|checkmark|RANGE_ONLY|qualitative
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L231|m_nu3|50.3 meV|~50 meV (atm scale)|N|checkmark|POST_HOC_FIXED_FORM|approximate observed; no residual stated
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L280|m_bb signal KamLAND-Zen 800|Below threshold|~20 meV sensitivity|Y|not stated|FORECAST_UNTESTED|future 2026
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L280|m_bb signal LEGEND-1000|~1.2s|~10 meV sensitivity|Y|not stated|FORECAST_UNTESTED|future 2033
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L280|m_bb signal nEXO|~2.5s|~5 meV sensitivity|Y|not stated|FORECAST_UNTESTED|future 2035
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L280|m_bb signal CUPID-1T|~4s detection|~3 meV sensitivity|Y|not stated|FORECAST_UNTESTED|future 2035
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|M_s1 X-ray line energy|3.550 x 0.005 keV|XRISM Resolve|Y|not stated|FORECAST_UNTESTED|future 2025-2027; value equals known 3.55 keV line
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|Line width (Doppler)|2.6 eV FWHM|XRISM Resolve|Y|not stated|FORECAST_UNTESTED|future 2025-2027
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|sin(2theta)|1.78 x 10^?|Athena|Y|not stated|FORECAST_UNTESTED|future 2037
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|Delta m2_atm|2.496 x 10^? eV|JUNO, HK|Y|not stated|FORECAST_UNTESTED|future 2027; quantity already measured elsewhere
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|Sum m_nu|0.0764 eV|CMB-S4|Y|not stated|FORECAST_UNTESTED|future 2030; differs from 74.2 meV in L231/L327
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|m_bb|12.3 meV|CUPID-1T|Y|not stated|FORECAST_UNTESTED|future 2035
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|M_s2 = 45.8 GeV production|s x BR ~ 0.1 fb|FCC-ee|Y|not stated|FORECAST_UNTESTED|future 2045
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|M_s3 = 20.4 TeV production|s ~ 1 ab at 100 TeV|FCC-hh|Y|not stated|FORECAST_UNTESTED|future 2050
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|eta_B (TeV leptogenesis)|7.47 x 10^?|CMB B-mode|Y|not stated|FORECAST_UNTESTED|future 2035; eta_B already measured by CMB
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L293|eta_B (GUT leptogenesis)|6.1 x 10^?|CMB B-mode|Y|not stated|FORECAST_UNTESTED|future 2035; second variant of eta_B
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_N1|2.19 x 10^? GeV|N/A (GUT scale)|N|Theoretical|NOT_A_COMPARISON|no external value
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_N2|1.25 x 10^? GeV|N/A|N|Theoretical|NOT_A_COMPARISON|no external value
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_N3|7.12 x 10^8 GeV|N/A|N|Theoretical|NOT_A_COMPARISON|no external value
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_s1|7.10 keV|3.55 keV line hint|N|checkmark|POST_HOC_FIXED_FORM|7.1 keV is 2x the known 3.55 keV line; hint only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_s2|45.8 GeV|> 45.6 GeV (LEP)|Y|checkmark|RANGE_ONLY|lower bound only; prediction sits just above bound
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|M_s3|20.4 TeV|> 13.6 TeV (LHC)|Y|checkmark|RANGE_ONLY|lower bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|m_nu1|8.7 meV|> 0|N|checkmark|RANGE_ONLY|trivial bound
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|m_nu2|15.2 meV|> 0|N|checkmark|RANGE_ONLY|trivial bound
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|m_nu3|50.3 meV|~50 meV|N|checkmark|POST_HOC_FIXED_FORM|approximate observed; no residual
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|Delta m2_31|2.45e-3 eV|2.51e-3 eV|N|checkmark|POST_HOC_FIXED_FORM|no residual stated; L231 gives alternative TeV variant
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|Sum m_nu|74.2 meV|< 120 meV|N|checkmark|RANGE_ONLY|upper bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|eta_B (GUT)|6.1e-10|6.12e-10|N|checkmark|POST_HOC_PER_TARGET|two variants (GUT/TeV) for same observable
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|eta_B (TeV)|7.47e-10|6.10e-10 (22%)|N|22%|POST_HOC_PER_TARGET|22% off, still checkmark; observed digits differ from GUT row (6.12 vs 6.10)
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|m_bb|12.3 meV|< 90 meV|N|checkmark|RANGE_ONLY|upper bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|sin(2theta_1)|1.78e-10|< 3e-10 (XMM)|Y|checkmark|RANGE_ONLY|upper bound only
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|Omega_s1 h2|0.12|0.12|N|checkmark|INPUT_REPRODUCED|identical digits; relic density target restated
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|Hierarchy|Normal|Preferred|N|checkmark|RANGE_ONLY|qualitative
+PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md|L327|Free parameters|0|--|N|checkmark|NOT_A_COMPARISON|claim row, no external value
+PAPER_026b_Vector_Like_Quarks_UQFF.md|L182|sigma(M_Q=1150 GeV)|~250 fb|Excluded (lower bound)|Y|not stated|RANGE_ONLY|ATLAS column qualitative; no observed cross-section number
+PAPER_026b_Vector_Like_Quarks_UQFF.md|L182|sigma(M_Q=1500 GeV)|~85.9 fb|Near-threshold|Y|not stated|RANGE_ONLY|qualitative
+PAPER_026b_Vector_Like_Quarks_UQFF.md|L182|sigma(M_Q=2000 GeV)|~35 fb|Expected|Y|not stated|RANGE_ONLY|qualitative
+PAPER_026b_Vector_Like_Quarks_UQFF.md|L182|sigma(M_Q=2600 GeV)|~13 fb|ATLAS upper limit|Y|not stated|RANGE_ONLY|qualitative; no limit number given
+PAPER_027_Lepton_Flavor_Violation_UQFF.md|L303|Predicted BR (tau- e+)|exp(-pi x 3.833) = 5.9 x 10^-6|< 5.9 x 10^-6|Y|checkmark|POST_HOC_PER_TARGET|identical digits to LHCb bound; exponent 3.833 chosen per row
+PAPER_027_Lepton_Flavor_Violation_UQFF.md|L303|Predicted BR (tau+ e-)|exp(-pi x 3.900) = 4.9 x 10^-6|< 4.9 x 10^-6|Y|checkmark|POST_HOC_PER_TARGET|identical digits to LHCb bound; different exponent 3.900 per row
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L303|abs(V_cb)|sqrt([SCm]_flavor) = sqrt(Ug2/kappa_Higgs)|(39.2 +/- 0.9) x 10^-3|Y|checkmark|INPUT_REPRODUCED|[SCm]_flavor defined as V_cb^2; circular
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L303|Gamma(B->D l nu)|F_U(Ug1+Ug2+Ug3+Ug4+Um-Ub_i)|3.14 x 10^9 s-1|Y|checkmark|POST_HOC_PER_TARGET|row-specific formula from primitives; no numeric UQFF value shown
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L303|LFU R(e nu/mu nu)|1.020 (kappa_Higgs = 1.0)|1.020 +/- 0.030|Y|checkmark|POST_HOC_PER_TARGET|identical digits; kappa_Higgs "calibrated"; L408 lists UQFF as 1.000 instead
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L303|kappa_Higgs|1.0 (calibrated)|Consistent|N|checkmark|INPUT_REPRODUCED|explicitly calibrated; SM value
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|abs(V_cb)|sqrt([SCm]_flavor) = 39.2 x 10^-3|(39.2 +/- 0.9) x 10^-3|Y|Exact, within 1 sigma|INPUT_REPRODUCED|identical digits; [SCm]_flavor = V_cb^2 by definition
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|[SCm]_flavor|V_cb^2 = 1.537 x 10^-3|N/A (UQFF quantity)|N|Defined|NOT_A_COMPARISON|internal quantity defined from V_cb
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|BR(B0->D- l+ nu)|2.06%|(2.06 +/- 0.08)%|Y|Exact, within 1 sigma|INPUT_REPRODUCED|identical digits; "Exact"
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|BR(B+->D0bar l+ nu)|isospin -> 2.31%|(2.31 +/- 0.09)%|Y|Exact, within 1 sigma|INPUT_REPRODUCED|identical digits; "Exact"
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|LFU R(e nu/mu nu)|1.000 (kappa_Higgs=1.0)|1.020 +/- 0.030|Y|Within 1 sigma, 0.67 sigma|INPUT_REPRODUCED|UQFF value is SM value 1.000; L303 gave 1.020
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|F_U (B->D l nu)|75.81 (positive -> allowed)|Signal observed|N|Consistent|RANGE_ONLY|sign-only consistency
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|Ug2 = [SCm]_flavor|1.537 x 10^-3|---|N|Calibrated|INPUT_REPRODUCED|explicitly calibrated; no external value
+PAPER_028_BSM_Coupling_Constants_UQFF.md|L408|kappa_Higgs|1.0 (SM limit)|Consistent|N|Applied|INPUT_REPRODUCED|SM value applied
+PAPER_029_New_Physics_TeV_Scale_UQFF.md|L391|SM baryonic fraction|[SSq]^5 / D_s entropy = 4.85%|4.9%|N|checkmark|POST_HOC_PER_TARGET|row-specific formula from primitives
+PAPER_029_New_Physics_TeV_Scale_UQFF.md|L391|Dark matter fraction|SCm (1-f_SM) / (1+[SSq]) = 26.8%|27%|N|checkmark|POST_HOC_PER_TARGET|different formula per row
+PAPER_029_New_Physics_TeV_Scale_UQFF.md|L391|Dark energy fraction|UA residual = 1 - f_SM - f_DM = 68.3%|68%|N|checkmark|POST_HOC_PER_TARGET|not independent; obtained by subtraction of other two rows
+PAPER_032_BSM_Scalar_Sectors_UQFF.md|L92|(table)|||N||NOT_A_COMPARISON|observed kappa ranges only; no UQFF value
+PAPER_034_Higgs_Kappa_t_Coupling_UQFF.md|L206|sigma(tH)|1.14 x 10^-3 pb|1.15 x 10^-3 pb|Y|95.83%|POST_HOC_FIXED_FORM|"CERN Observed" generic; alignment % not a simple ratio of the two values
+PAPER_034_Higgs_Kappa_t_Coupling_UQFF.md|L206|abs(kappa_c) bound|42.0|< 47 (obs 44.5)|Y|94.38%|RANGE_ONLY|compared against a bound; SM value 1.00
+PAPER_034_Higgs_Kappa_t_Coupling_UQFF.md|L206|mu_tH signal|0.948|0.9583|Y|98.96%|POST_HOC_FIXED_FORM|same data as sigma(tH) row (obs/SM ratio)
+PAPER_041_Intracluster_Medium_Physics_UQFF.md|L230|(table)|||Y||NOT_A_COMPARISON|qualitative equation features vs observed evidence; no UQFF numbers
+PAPER_052_UQFF_Predictions_vs_arXiv_2025.md|L113|(table)|||N||NOT_A_COMPARISON|internal alignment-score targets vs actual; no external quantities
+PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md|L165|P_alpha (E*=9 MeV)|0.95|~0.85 (Schmidt 2016)|Y|89%|POST_HOC_FIXED_FORM|approximate reference value; 89% match
+PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md|L165|v_heaviest|6.0 cm/ns|~6 cm/ns (Fig. 1)|N|checkmark|POST_HOC_FIXED_FORM|reference is a figure; approximate
+PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md|L165|Ikeda channels|10|10 (Fig. 3 4Ca)|N|checkmark|INPUT_REPRODUCED|identical digits; integer count from figure
+PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md|L165|F_UBii sign|Negative (stable)|BEC hint = stable|N|checkmark|RANGE_ONLY|sign only
+PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md|L165|T_BEC calibration|5.0 MeV|T ~ 5 MeV|N|checkmark|INPUT_REPRODUCED|labelled "calibration"; identical value
+PAPER_064_4_UQFF_Operational_Modes.md|L190|(table)|||Y||NOT_A_COMPARISON|mode/dataset matrix; no values compared
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|RDR-001 TRZ Factor|0.100|0.098|N|2.00%|POST_HOC_FIXED_FORM|round predicted value; measurement provenance not given
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|RDR-002 COP|1.15|1.12|N|2.61%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|RDR-003 Plasma T (K)|3.0 x 10^6|2.87 x 10^6|N|4.33%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|RDR-004 Net Energy (%)|15.0|12.3|N|18.0%|POST_HOC_FIXED_FORM|18% deviation flagged ?? but retained
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|QSC-001 THz frequency|1.20 THz|1.18 THz|N|1.67%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|QSC-002 Amplitude dA|5.2 V|5.205 V|N|0.10%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|QSC-003 Signal count|847|--|N||NOT_A_COMPARISON|no measured value
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|QSC-004 2nd harmonic|2.40 THz|2.36 THz|N|1.67%|POST_HOC_FIXED_FORM|2x the QSC-001 row; same residual
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|GC-M13-001 M13 v_disp|12.3 km/s|12.1 km/s|N|1.63%|POST_HOC_FIXED_FORM|no source in this table (Gaia DR4 in PAPER_068)
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|GC-M13-002 M13 f_Z|0.89|0.87|N|2.25%|POST_HOC_FIXED_FORM|"measured" f_Z is from simulation ROMULUS25 per PAPER_068
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|GC-OMEGA-001 omega Cen v_disp|18.7 km/s|18.2 km/s|N|2.75%|POST_HOC_FIXED_FORM|no source in this table
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|GC-OMEGA-002 omega Cen M_BH|4.2 x 10^4 Msun|4.0 x 10^4 Msun|N|5.00%|POST_HOC_FIXED_FORM|no source in this table
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|26D-L13-001 Layer 13 [SCm]|7.09e-37 J/m|6.95e-37 J/m|N|2.01%|POST_HOC_FIXED_FORM|"measured" value of an internal UQFF layer quantity
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|26D-L18-001 Higgs mass|125.09 GeV|125.35 GeV|N|0.21%|POST_HOC_FIXED_FORM|known value; PDG not cited
+PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md|L104|26D-L26-001 Layer 26|5.4e-10 J/m|5.96e-10 J/m|N|9.40%|POST_HOC_FIXED_FORM|"measured" value of an internal UQFF layer quantity
+PAPER_068_Globular_Cluster_Dynamics_UQFF.md|L66|M13 velocity dispersion|12.3 km/s|12.1 km/s|Y|1.63%|POST_HOC_FIXED_FORM|source Gaia DR4; same numbers as PAPER_065
+PAPER_068_Globular_Cluster_Dynamics_UQFF.md|L66|M13 metal retention f_Z|0.89|0.87|Y|2.25%|POST_HOC_FIXED_FORM|"measured" source ROMULUS25 is a simulation
+PAPER_068_Globular_Cluster_Dynamics_UQFF.md|L102|omega Cen velocity dispersion|18.7 km/s|18.2 km/s|Y|2.75%|POST_HOC_FIXED_FORM|source "Hubble + Gaia" generic
+PAPER_068_Globular_Cluster_Dynamics_UQFF.md|L102|omega Cen central IMBH mass|4.2 x 10^4 Msun|4.0 x 10^4 Msun|Y|5.00%|POST_HOC_FIXED_FORM|source "X-ray observations" generic
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L69|RDR-001 TRZ factor f_TRZ|0.100|0.098|N|2.00%|POST_HOC_FIXED_FORM|measurement provenance not given; duplicate of PAPER_065
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L69|RDR-002 Coefficient of Performance|1.15|1.12|N|2.61%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L69|RDR-003 Plasma temperature T_plasma|3.0 x 10^6 K|2.87 x 10^6 K|N|4.33%|POST_HOC_FIXED_FORM|measurement provenance not given
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L69|RDR-004 Net energy over-unity|15.0%|12.3%|N|18.0%|POST_HOC_FIXED_FORM|18% deviation labelled ACCEPTABLE
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L197|QSC-001 f_THz|1.20 THz|1.18 THz|N|1.67%|POST_HOC_FIXED_FORM|duplicate of PAPER_065; no source
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L197|QSC-002 Amplitude dA|5.2 V|5.205 V|N|0.10%|POST_HOC_FIXED_FORM|no source
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L197|QSC-004 2nd harmonic|2.40 THz|2.36 THz|N|1.67%|POST_HOC_FIXED_FORM|2x the f_THz row
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L231|TRZ factor f_TRZ|0.100|0.098|N|2.0%|POST_HOC_FIXED_FORM|third repeat of RDR rows
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L231|COP|1.15|1.12|N|2.6%|POST_HOC_FIXED_FORM|repeat
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L231|T_plasma|3.00 MK|2.87 MK|N|4.3%|POST_HOC_FIXED_FORM|repeat
+PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md|L231|Net energy over-unity|15.0%|12.3%|N|18.0%|POST_HOC_FIXED_FORM|repeat; ACCEPTABLE at 18%
+PAPER_079_HEASARC_HighEnergy_UQFF.md|L98|(table)|||Y||NOT_A_COMPARISON|qualitative predictions; no numeric external comparison
+PAPER_087_AT2019qiz_TDE_UQFF.md|L41|(table)|||Y||NOT_A_COMPARISON|observed properties with references only; no UQFF value
+PAPER_087_AT2019qiz_TDE_UQFF.md|L145|Peak luminosity|2.20 x 10^44 erg/s|2.4 x 10^44 erg/s|N|91.7%|POST_HOC_FIXED_FORM|observed value from L41 (Nicholl+2020) not cited in this row
+PAPER_087_AT2019qiz_TDE_UQFF.md|L145|Rise time|~28.5 d|~30 d|N|95.0%|POST_HOC_FIXED_FORM|approximate both sides
+PAPER_087_AT2019qiz_TDE_UQFF.md|L145|Fallback time|27.9 d|~27 d|N|96.7%|POST_HOC_FIXED_FORM|approximate observed
+PAPER_087_AT2019qiz_TDE_UQFF.md|L145|Disk efficiency eta|0.099|~0.10|N|99.0%|POST_HOC_FIXED_FORM|0.1 is a standard assumed efficiency
+PAPER_087_AT2019qiz_TDE_UQFF.md|L145|Decline factor|26D coherence|Viscous dominated|N|Physical|RANGE_ONLY|qualitative
+PAPER_090_MUGE_Compressed_Gravity.md|L488|Fine structure alpha|Ug1 dipole coupling|1/137.036 (PDG 2024)|Y|PASS|INPUT_REPRODUCED|no UQFF number; PASS against known constant
+PAPER_090_MUGE_Compressed_Gravity.md|L488|Cosmological Lambda|1.1 x 10^-52 m^-2|1.114 x 10^-52 (Planck 2018)|Y|PASS|INPUT_REPRODUCED|UQFF value is the known value rounded
+PAPER_090_MUGE_Compressed_Gravity.md|L488|Proton decay rate|kappa = 0.0005/day -> Gamma_p suppression|< 4.17 x 10^-35/yr (Super-K)|Y|PASS|RANGE_ONLY|bound only; no UQFF rate given
+PAPER_090_MUGE_Compressed_Gravity.md|L488|Buoyancy signature|F_U_Bi_i gravity correction|Not yet measured|N|Testable|FORECAST_UNTESTED|explicitly not yet measured
+PAPER_108_EP10_IceCube_Neutrino_SED_Proof.md|L139|Spectral index Gamma|2.37 (combined)|2.37 x 0.09|Y|checkmark|INPUT_REPRODUCED|identical digits to IceCube value; kappa_i = 0.61 tuned
+PAPER_108_EP10_IceCube_Neutrino_SED_Proof.md|L139|Sub-PeV normalization|F0 x 1.01 (TRZ)|1.44e-18|Y|checkmark|INPUT_REPRODUCED|F0 is the IceCube measured value itself
+PAPER_108_EP10_IceCube_Neutrino_SED_Proof.md|L139|pp fraction at E < 0.1 PeV|~75% ([SSq] mixing)|~70-80%|Y|checkmark|RANGE_ONLY|band; SM column gives same band
+PAPER_108_EP10_IceCube_Neutrino_SED_Proof.md|L139|p-gamma fraction at E > 0.1 PeV|~35%|~30-40%|Y|checkmark|RANGE_ONLY|band; SM column gives same band
+PAPER_109_EP11_GW170817_rProcess_Proof.md|L54|(table)|||Y||NOT_A_COMPARISON|observed values with sources only; no UQFF value
+PAPER_1115_SCS_Constraints_21cm_Dark_Ages.md|L70|G mu/c^2|Naturally satisfied|<= 10^-7|N|91.68%|RANGE_ONLY|bound only; 91.68% alignment attached to a non-numeric prediction
+PAPER_1115_SCS_Constraints_21cm_Dark_Ages.md|L70|T_21,base(z=20)|-47.2 mK|~ -47 mK|N|--|POST_HOC_FIXED_FORM|standard cosmology baseline, not a UQFF-specific quantity
+PAPER_1115_SCS_Constraints_21cm_Dark_Ages.md|L70|Delta T_SCS|~ 10^-39 mK|< 1 mK|N|Negligible|RANGE_ONLY|bound only
+PAPER_1120_UPDATE_Higgs_BRs_Locked_Primitives.md|L11|BR(H->gamma gamma)|0.00208|0.00227|N|8.22%|POST_HOC_FIXED_FORM|"locked primitives"; source not named
+PAPER_1120_UPDATE_Higgs_BRs_Locked_Primitives.md|L11|BR(H->ZZ)|0.0319|0.0262|N|21.8%|POST_HOC_FIXED_FORM|21.8% residual
+PAPER_1120_UPDATE_Higgs_BRs_Locked_Primitives.md|L11|BR(H->WW)|0.231|0.215|N|7.24%|POST_HOC_FIXED_FORM|source not named
+PAPER_1120_UPDATE_Higgs_BRs_Locked_Primitives.md|L11|BR(H->bb)|0.579|0.582|N|0.62%|POST_HOC_FIXED_FORM|source not named
+PAPER_1120_UPDATE_Higgs_BRs_Locked_Primitives.md|L11|BR(H->tau tau)|0.0666|0.0627|N|6.06%|POST_HOC_FIXED_FORM|source not named
+PAPER_1122_Bow_Shock_ISM_Chemistry_Prebiotic.md|L277|Formamide abundance|10^-9|10^-9 (relative)|Y|not stated|RANGE_ONLY|identical digits; order-of-magnitude only
+PAPER_1122_Bow_Shock_ISM_Chemistry_Prebiotic.md|L277|Glycine abundance|~ 10^-12|< 10^-11 (Sgr B2)|Y|not stated|RANGE_ONLY|upper bound only
+PAPER_1122_Bow_Shock_ISM_Chemistry_Prebiotic.md|L277|Amino acetonitrile abundance|10^-10|10^-10 (Sgr B2)|Y|not stated|RANGE_ONLY|identical digits; order-of-magnitude only
+PAPER_1133_Holmlid_Rydberg_SCm_Bridge.md|L31|(table)|||Y||NOT_A_COMPARISON|Holmlid values restated in SI units; no UQFF prediction
+PAPER_1140_SCm_Mizuno_LENR_Transmutation.md|L48|Holmlid K-Fe KER|epsilon_cluster = 630 eV|630 eV KER|Y|not stated|INPUT_REPRODUCED|identical digits; Holmlid value used as input
+PAPER_1140_SCm_Mizuno_LENR_Transmutation.md|L48|Parkhomov Ni-H power|N ~ 2 x 10^18, f_b = 1|150--280 W|Y|not stated|POST_HOC_PER_TARGET|N and f_b chosen per experiment; no predicted power shown
+PAPER_1140_SCm_Mizuno_LENR_Transmutation.md|L48|Pons-Fleischmann Pd-D power|V = 10^-6 m3, f_b = 0.001|1--50 W|Y|not stated|POST_HOC_PER_TARGET|f_b changed to 0.001 for this row
+PAPER_1140_SCm_Mizuno_LENR_Transmutation.md|L48|Mizuno Ni-D power|N ~ 10^20--10^21, f_b scaled|10--300 W|Y|not stated|POST_HOC_PER_TARGET|"f_b scaled" per row
+PAPER_114_EP07_ParkerProbe_Heliosheath_Proof.md|L150|rho_sw E01 (r=35.7 Rsun)|7.2 x 10^?|7.1 x 10^?|Y|1.4%|POST_HOC_FIXED_FORM|exponent garbled; PSP encounter named
+PAPER_114_EP07_ParkerProbe_Heliosheath_Proof.md|L150|rho_sw E06 (r=20.4 Rsun)|9.0 x 10^?|9.2 x 10^?|Y|2.2%|POST_HOC_FIXED_FORM|exponent garbled
+PAPER_114_EP07_ParkerProbe_Heliosheath_Proof.md|L150|rho_sw E13 (r=13.3 Rsun)|1.38 x 10^?|1.4 x 10^?|Y|1.4%|POST_HOC_FIXED_FORM|exponent garbled
+PAPER_114_EP07_ParkerProbe_Heliosheath_Proof.md|L150|rho_sw E17 (r=10.2 Rsun)|2.75 x 10^?|2.8 x 10^?|Y|1.8%|POST_HOC_FIXED_FORM|exponent garbled
+PAPER_1155_DPM_26Layer_Amplification_Particle_Masses.md|L102|Proton mass|1.627 x 10^-27 kg|1.673 x 10^-27 kg|N|-2.75%|POST_HOC_FIXED_FORM|same predicted value for proton and neutron
+PAPER_1155_DPM_26Layer_Amplification_Particle_Masses.md|L102|Neutron mass|1.627 x 10^-27 kg|1.675 x 10^-27 kg|N|-2.87%|POST_HOC_FIXED_FORM|identical prediction to proton row
+PAPER_1155_DPM_26Layer_Amplification_Particle_Masses.md|L102|C-12 mass|1.952 x 10^-26 kg|1.993 x 10^-26 kg|N|-2.06%|POST_HOC_FIXED_FORM|consistent ~2-3% underprediction
+PAPER_1155_DPM_26Layer_Amplification_Particle_Masses.md|L102|Fe-56 mass|9.110 x 10^-26 kg|9.288 x 10^-26 kg|N|-1.92%|POST_HOC_FIXED_FORM|consistent ~2% underprediction
+PAPER_1156_UQFF_Cosmological_Constant_Closure.md|L118|Lambda vs Planck 2018|1.0890 x 10^-52|1.089 x 10^-52 m^-2|Y|0.002%|POST_HOC_FIXED_FORM|identical digits to Planck 2018 value
+PAPER_1156_UQFF_Cosmological_Constant_Closure.md|L118|Lambda vs Planck + DESI 2025|1.0890 x 10^-52|1.114 x 10^-52 m^-2|Y|2.246%|POST_HOC_FIXED_FORM|same prediction; 2.2% off newer value
+PAPER_1165_UQFF_beta_i_Triangular_Closure.md|L76|beta_1|12/20 = 0.600|0.603|N|+0.5%|INPUT_REPRODUCED|"observed" beta_i are framework parameters, not external data
+PAPER_1165_UQFF_beta_i_Triangular_Closure.md|L76|beta_2|9/20 = 0.450|0.450|N|0.000%|INPUT_REPRODUCED|identical digits; internal parameter
+PAPER_1165_UQFF_beta_i_Triangular_Closure.md|L76|beta_3|6/20 = 0.300|0.300|N|0.000%|INPUT_REPRODUCED|identical digits; internal parameter
+PAPER_1165_UQFF_beta_i_Triangular_Closure.md|L76|beta_4|3/20 = 0.150|0.150|N|0.000%|INPUT_REPRODUCED|identical digits; internal parameter
+PAPER_1169_UQFF_Numerical_Confrontation_P1_P5_With_Archival_Data.md|L137|SGR 1806-20 QPO prefactor (TRZ)|0.0833|0.0834|Y|+0.1%|POST_HOC_FIXED_FORM|"measured prefactor" is a fit of the UQFF form to archival data
+PAPER_1169_UQFF_Numerical_Confrontation_P1_P5_With_Archival_Data.md|L137|AT2019qiz late bump prefactor (BSFG)|0.0833|0.0831|Y|-0.2%|POST_HOC_FIXED_FORM|fitted prefactor vs fixed 0.0833
+PAPER_1169_UQFF_Numerical_Confrontation_P1_P5_With_Archival_Data.md|L137|ASKAP J1832-0911 prefactor (TRZ)|0.0833|0.0837|Y|+0.5%|POST_HOC_FIXED_FORM|fitted prefactor vs fixed 0.0833
+PAPER_1169_UQFF_Numerical_Confrontation_P1_P5_With_Archival_Data.md|L137|Sgr A* variability prefactor (BSFG)|0.0833|0.0832|Y|-0.1%|POST_HOC_FIXED_FORM|fitted prefactor vs fixed 0.0833
+PAPER_116_EP03_LHC_VirtualQuark_Proof.md|L131|(table)|||Y||NOT_A_COMPARISON|n_expected is a UQFF integer level; E_transfer is the input; nothing external measured
+PAPER_1173_UQFF_KK_Tower_Hbar_Tracked_Derivation.md|L132|L_KK vs Eot-Wash (2007)|--|L > 56 um|Y|Marginally consistent|RANGE_ONLY|UQFF value not shown in table; bound only
+PAPER_1173_UQFF_KK_Tower_Hbar_Tracked_Derivation.md|L132|L_KK vs Stanford/IUPUI (2020)|--|L > 52 um|Y|Consistent (within 2x)|RANGE_ONLY|bound only
+PAPER_1173_UQFF_KK_Tower_Hbar_Tracked_Derivation.md|L132|L_KK vs HUST sub-mm (2022)|--|L > 48 um|Y|Consistent (within 2x)|RANGE_ONLY|bound only
+PAPER_1173_UQFF_KK_Tower_Hbar_Tracked_Derivation.md|L132|L_KK vs Wuhan torsion (proposed 2027)|--|L > 10 um|Y|Decisive test|FORECAST_UNTESTED|proposed experiment
+PAPER_1174_UQFF_Closed_Ledger_Falsifiability_P6_P10.md|L96|P6 Sub-mm Yukawa L_KK*|20--90 um|Wuhan torsion|Y|not stated|FORECAST_UNTESTED|2027
+PAPER_1174_UQFF_Closed_Ledger_Falsifiability_P6_P10.md|L96|P7 CMB w0, wa|(-1.0000, 0.0000)|CMB-S4+DESI|Y|not stated|FORECAST_UNTESTED|2028; equals LambdaCDM value
+PAPER_1174_UQFF_Closed_Ledger_Falsifiability_P6_P10.md|L96|P8 JWST Delta mu(z=6)|+0.015 mag|JWST SNe Ia|Y|not stated|FORECAST_UNTESTED|2027
+PAPER_1174_UQFF_Closed_Ledger_Falsifiability_P6_P10.md|L96|P9 LISA Omega_GW(f=0.37 mHz)|2 x 10^-13|LISA L1|Y|not stated|FORECAST_UNTESTED|2035
+PAPER_1174_UQFF_Closed_Ledger_Falsifiability_P6_P10.md|L96|P10 IceCube nu Cherenkov suppression|g <= 0.185|IceCube-Gen2|Y|not stated|FORECAST_UNTESTED|2032; bound-type prediction
+PAPER_1180_UQFF_P14_CMB_S4_mu_Distortion.md|L26|(table)|||Y||NOT_A_COMPARISON|experiment sensitivities on mu only; no UQFF value
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S266 alpha_EM^-1|137.036|137.0360|N|<0.001%|POST_HOC_PER_TARGET|row-specific formula 4pi K_Mex(D_phys+Phi_res); identical digits
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S267 sin^2 theta_W|0.2238|0.2229|N|+0.40%|POST_HOC_PER_TARGET|row-specific formula 1 - Phi_res [S_Sq]
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S268 m_u/m_d|0.400|0.42 +/- 0.02|N|-4.8%|POST_HOC_PER_TARGET|row-specific formula F_TRZ D_phys
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S269 m_s/m_d|11.87|19.5 +/- 2.5|N|(Q-mass loop, see §5.1)|POST_HOC_PER_TARGET|large miss; residual not stated, deferred to §5.1
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S270 V_us (CKM)|0.2275|0.2253|N|+0.98%|POST_HOC_PER_TARGET|row-specific formula sin(F_TRZ K_Mex)
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S271 beta_i (buoyancy)|0.6029|0.6029 (lock)|N|exact|INPUT_REPRODUCED|identical digits; "lock" = internal parameter, not external
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S272 m_e (MeV)|0.5110|0.5110|N|exact|POST_HOC_PER_TARGET|identical digits; formula 10^-0.293 is a bare fitted exponent
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S273 m_mu/m_e|207.13|206.768|N|+0.18%|POST_HOC_PER_TARGET|row-specific formula A_5 D_phys + Phi_res [S_Sq]
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S274 m_tau/m_mu|16.83|16.82|N|+0.06%|POST_HOC_PER_TARGET|row-specific formula D_BSFG^3/2 [S_Sq] K_Mex
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S275 Higgs vev v|246.05|246.22|N|-0.07%|POST_HOC_PER_TARGET|row-specific exponent formula
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S276 m_H|125.18|125.25|N|-0.06%|POST_HOC_PER_TARGET|lambda = K_Mex/A_5 chosen for this row
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S277 theta_13 (PMNS)|8.78°|8.61°|N|+2.0%|POST_HOC_PER_TARGET|row-specific formula arcsin(sqrt(F_TRZ Phi_res))
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S278 theta_23 (PMNS)|46.4°|49.0°|N|-5.3%|POST_HOC_PER_TARGET|row-specific formula arcsin(sqrt(1-F_TRZ))
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S279 Delta m^2_31|2.55 x 10^-3 eV^2|2.51 x 10^-3|N|+1.6%|POST_HOC_PER_TARGET|"scale" formula with free exponent N_ch
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S280 Sigma m_nu|0.0119|<0.12 (Planck)|Y|consistent|RANGE_ONLY|upper bound only
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S281 M_R (seesaw)|5.13 x 10^13|benchmark|N|derived|NOT_A_COMPARISON|no external value
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S282 Omega_b h^2|0.02238|0.02237|N|+0.04%|POST_HOC_PER_TARGET|row-specific formula F_TRZ^2 2Phi_res [S_Sq]
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S283 Omega_DM h^2|0.1140|0.1198|N|-4.8%|POST_HOC_PER_TARGET|sqrt(D_crit) x Omega_b h^2
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S284 n_s|0.9600|0.9649|N|-0.51%|POST_HOC_PER_TARGET|row-specific formula
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S285 CKM J|3.13 x 10^-5|3.36 x 10^-5|N|-6.8%|POST_HOC_PER_TARGET|row-specific formula with N_ch exponent
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S286 alpha_s(M_Z)|0.1182|0.1179|N|+0.25%|POST_HOC_PER_TARGET|row-specific formula
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S287 r_p (proton)|0.8409 fm|0.8409 fm|N|exact|POST_HOC_PER_TARGET|identical digits; exponent D_phys*D_phys+beta chosen for row
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S288 g_1,g_2,g_3|all <0.5%|--|N|closed|RANGE_ONLY|no observed values or predictions shown
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S289 T_CMB|2.7261|2.72548|N|+0.02%|POST_HOC_PER_TARGET|row-specific formula 10^(-D_phys/2+beta)
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S289 H_0 (UQFF)|69.93|--|N|anchor|NOT_A_COMPARISON|labelled anchor; no observed value
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S289 eta_B|6.09 x 10^-10|6.14 x 10^-10|N|-0.8%|POST_HOC_PER_TARGET|row-specific formula
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S290 dark/baryon|5.0990|5.097 +/- 0.034|N|+0.04%|POST_HOC_PER_TARGET|sqrt(26); D_crit=26 primitive
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S291 Delta a_mu|2.5065 x 10^-9|2.51(59) x 10^-9|N|-0.006 sigma|POST_HOC_PER_TARGET|row-specific formula with N_ch exponent
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S292 Lambda l_P^2|2.872 x 10^-122|2.88 x 10^-122|N|-0.27%|POST_HOC_PER_TARGET|exponent 122 chosen for this row
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S293 H_late/H_early|1.083333|1.083680|N|-0.032%|POST_HOC_PER_TARGET|sqrt(13/12); ratio of two anchor values
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S294 tau_n (bottle, total)|877.57 s|877.75(28)|N|-0.66 sigma|POST_HOC_PER_TARGET|row-specific exponent formula
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S294 BR_non-beta|1.140%|1.121%|N|+1.7%|POST_HOC_PER_TARGET|"observed" 1.121% is inferred from beam-bottle gap, not measured
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S294 tau_n (beam)|887.68 s|887.70(2.20)|N|-0.007 sigma|POST_HOC_PER_TARGET|derived from bottle row and BR row
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L73|S295 sigma_Li-7|0.3333|0.316 +/- 0.070|N|+0.28 sigma|POST_HOC_PER_TARGET|D_phys F_TRZ Phi_res = 1/3
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L208|H_early|67.187|67.40 +/- 0.50|N|-0.32% (-0.43 sigma)|POST_HOC_FIXED_FORM|from anchor H0=69.93 and sqrt(13/12); source not named
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L208|H_late|72.785|73.04 +/- 1.04|N|-0.35% (-0.25 sigma)|POST_HOC_FIXED_FORM|from anchor and ratio; source not named
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L208|Ratio H_late/H_early|1.08333|1.08368|N|-0.032%|POST_HOC_FIXED_FORM|duplicate of S293
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|1 JWST + CMB-S4 joint H_0|H_early=67.19, H_late=72.79|ratio drift > 0.1%|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|2 LIGO-LISA standard sirens H_0|69.93|drift > 2 km/s/Mpc|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|3 TDCOSMO time-delay H_0|converges to 69.93|systematic > 1%|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|4 PERKEO-IV/UCNTau-II/aCORN BR_non-beta|1.14 +/- 0.05%|< 0.5% kills UQFF|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|5 Neutron-to-dark-matter search|null|any signal kills UQFF|N|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|6 ELT/HARMONI halo-star Li-7|1.667 +/- 0.05 x 10^-10|deviation > 10% kills|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|7 Halo-star 6Li/7Li|0.033 +/- 0.005|>0.05 or <0.02 kills|N|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|8 Primordial He-4 depletion Y_p|exactly zero|any depletion kills|N|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|9 Next-gen Fermilab muon g-2|Delta a_mu=2.5065 x 10^-9|drift > 0.3 sigma kills|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|10 Euclid + DESI sigma_8 / S_8|residual 0.04% at sqrt(26) ratio|tension > 1 sigma kills|Y|not stated|FORECAST_UNTESTED|falsifier table
+PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md|L244|11 w_DE(z) from DESI|exactly -1, no time variation|abs(1+w) > 0.02 kills|Y|not stated|FORECAST_UNTESTED|falsifier table; equals LambdaCDM
+PAPER_1184_Chandra_Flux_to_Parameter_Bridge.md|L57|A1 Sgr A* quiescent L_X|5 x 10^32|~2.4 x 10^33 (Baganoff 2003)|Y|factor ~5 (band-correction)|POST_HOC_FIXED_FORM|model L_X is flux-distance conversion; factor 5 miss excused
+PAPER_1184_Chandra_Flux_to_Parameter_Bridge.md|L57|A2 Cas A SNR L_X|1.5 x 10^37|~2.1 x 10^36 (abs-corr.)|N|factor 3|POST_HOC_FIXED_FORM|factor 3 miss; catalog source not named
+PAPER_1184_Chandra_Flux_to_Parameter_Bridge.md|L57|A3 NGC 1275 (Perseus) L_X|1.3 x 10^43|2.3 x 10^45 (Sanders 2014)|Y|factor 170 (cooling-flow boost)|POST_HOC_FIXED_FORM|factor 170 miss excused as cooling-flow boost
+PAPER_1184_Chandra_Flux_to_Parameter_Bridge.md|L57|A4 background field L_X|< 10^34|non-detection|N|checkmark|RANGE_ONLY|bound vs non-detection
+PAPER_1185_Neutrino_GW_Cross_Coupling_UQFF.md|L51|A1 GW150914 h_UQFF|3.3 x 10^-22|~10^-21|Y|checkmark|RANGE_ONLY|model ~3x below observed strain; still checkmarked
+PAPER_1185_Neutrino_GW_Cross_Coupling_UQFF.md|L51|A2 GW170817 h_UQFF|1.7 x 10^-22|~5 x 10^-22|Y|checkmark|RANGE_ONLY|model ~3x below observed; checkmark only
+PAPER_1185_Neutrino_GW_Cross_Coupling_UQFF.md|L51|A3 SN1987A GW|GW null|null|Y|checkmark|RANGE_ONLY|null vs null
+PAPER_1185_Neutrino_GW_Cross_Coupling_UQFF.md|L51|A4 LIGO noise h|< 3 x 10^-23|floor|Y|checkmark (below threshold)|RANGE_ONLY|bound only
+PAPER_1187_Cooling_Flow_Mass_Accretion_UQFF.md|L45|A1 NGC 1275/Perseus Mdot_eff|500--1200 Msun/yr|50--200 (Fabian 2006)|Y|classical-isobaric upper bound; feedback reduces|RANGE_ONLY|model 5-10x above catalog; excused
+PAPER_1187_Cooling_Flow_Mass_Accretion_UQFF.md|L45|A2 M87/Virgo Mdot_eff|20--80|<~ 0.1 (Russell 2013)|Y|within isobaric ceiling|RANGE_ONLY|model 200x+ above catalog; called within ceiling
+PAPER_1187_Cooling_Flow_Mass_Accretion_UQFF.md|L45|A3 Coma Mdot_eff|100--400|50--200 (Allen 2001)|Y|checkmark|RANGE_ONLY|overlapping ranges
+PAPER_1187_Cooling_Flow_Mass_Accretion_UQFF.md|L45|A4 NGC 1399/Fornax Mdot_eff|4--20|1--10 (Paolillo 2002)|Y|checkmark|RANGE_ONLY|overlapping ranges
+PAPER_1187_UQFF_Cosmological_Tensions_Unified_Proof_Set.md|L108|H_0|Layer-dependent coupling|67.4 vs 73|N|Resolves tension|RANGE_ONLY|qualitative mechanism; no UQFF number
+PAPER_1187_UQFF_Cosmological_Tensions_Unified_Proof_Set.md|L108|Li-7 / BBN|Buoyancy suppression|3x deficit|N|Resolves|RANGE_ONLY|qualitative
+PAPER_1187_UQFF_Cosmological_Tensions_Unified_Proof_Set.md|L108|Axis|Layer-26 preferred direction|Aligned|N|Explains|RANGE_ONLY|qualitative
+PAPER_1187_UQFF_Cosmological_Tensions_Unified_Proof_Set.md|L108|Cold Spot|Phase transition signature|Anomalous|N|Natural|RANGE_ONLY|qualitative
+PAPER_1187_UQFF_Cosmological_Tensions_Unified_Proof_Set.md|L108|n_s|Layer tilt contribution|0.964|N|Matches|RANGE_ONLY|"Matches" with no UQFF number
+PAPER_1191_UQFF_Cosmology_Deepset_Unified_Proof_Set.md|L114|H_0|Layer-dependent (resolves tension)|67-73 km/s/Mpc|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1191_UQFF_Cosmology_Deepset_Unified_Proof_Set.md|L114|Omega_m|From layer averaging|0.31|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1191_UQFF_Cosmology_Deepset_Unified_Proof_Set.md|L114|Omega_Lambda|From Um field|0.69|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1191_UQFF_Cosmology_Deepset_Unified_Proof_Set.md|L114|n_s|Layer-corrected inflation|0.96|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1191_UQFF_Cosmology_Deepset_Unified_Proof_Set.md|L114|Age|Layer-integrated evolution|13.8 Gyr|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Mantle convection|Layer-coupled buoyancy|Ra >> Rc, vigorous flow|N|not stated|RANGE_ONLY|qualitative; no UQFF number
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Plate tectonics|Slab pull > ridge push|5-15 cm/year motion|N|not stated|RANGE_ONLY|"explanation" is standard geophysics; no UQFF number
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Earthquakes|Stress release in layers|M_w = (2/3)log(M_0)-10.7|N|not stated|RANGE_ONLY|observation column is the standard moment-magnitude formula
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Jet streams|Thermal wind balance|50-100 m/s at upper levels|N|not stated|RANGE_ONLY|"explanation" is textbook meteorology
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Hurricanes|Baroclinic instability|V_max ~ 80 m/s|N|not stated|RANGE_ONLY|qualitative
+PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md|L213|Climate cycles|Coupled layer oscillations|3-60 year periods|N|not stated|RANGE_ONLY|qualitative
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|W mass|80.31 GeV|80.379|N|0.08%|POST_HOC_FIXED_FORM|no formula or source shown
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|Z mass|91.88 GeV|91.188|N|0.76%|POST_HOC_FIXED_FORM|no formula or source shown
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|Higgs mass|125 GeV|125.1|N|0.08%|POST_HOC_FIXED_FORM|no formula or source shown
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|top mass|173.0 GeV|173.0|N|0.5%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|bottom mass|4.18 GeV|4.18|N|1.0%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|charm mass|1.27 GeV|1.27|N|1.6%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|tau mass|1.78 GeV|1.78|N|0.06%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|muon mass|0.106 GeV|0.106|N|0.05%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|strange mass|95 MeV|95 MeV|N|0.5%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md|L11|electron mass|0.511 MeV|0.511|N|0.13%|POST_HOC_FIXED_FORM|identical digits yet nonzero residual stated
+PAPER_1217_Mass_Ratios_Locked_Primitives.md|L52|m_d/m_u|K_MEX + TRZ·SSQ·(D_phys-3) = 2.140|2.136|N|0.20%|POST_HOC_PER_TARGET|distinct formula per row from primitives
+PAPER_1217_Mass_Ratios_Locked_Primitives.md|L52|m_s/m_u|K_MEX·(D_crit·Phi - 1) = 43.42|43.18|N|0.55%|POST_HOC_PER_TARGET|distinct formula per row
+PAPER_1217_Mass_Ratios_Locked_Primitives.md|L52|m_c/m_u|D_crit^2·Phi_res = 567.8|577.3|N|1.63%|POST_HOC_PER_TARGET|distinct formula per row
+PAPER_1217_Mass_Ratios_Locked_Primitives.md|L52|m_b/m_u|e·D_crit^2 + K_MEX·D_crit·Phi = 1883|1900|N|0.89%|POST_HOC_PER_TARGET|distinct formula per row
+PAPER_121_UQFF_71Equation_Catalog_Complete_Framework.md|L56|(table)|||N||NOT_A_COMPARISON|catalog of modes/equations with named "empirical proofs"; no values compared
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|u quark (virtual) rest energy|~10?6 J (n=4)|m_u 2.2 MeV|Y|<5%|POST_HOC_FIXED_FORM|ladder E_n = E_0 x 10^n; order-of-magnitude UQFF value
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Electron rest energy|8.19 x 10^?4 J (n=6)|m_e c^2 = 0.511 MeV|Y|0.9%|POST_HOC_FIXED_FORM|single decade ladder
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Pion rest energy|2.41 x 10^? J (n=9)|m_pi c^2 = 135 MeV|Y|1.8%|POST_HOC_FIXED_FORM|exponent garbled
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Proton rest energy|1.50 x 10^? J (n=10)|m_p c^2 = 938.3 MeV|Y|0.1%|POST_HOC_FIXED_FORM|exponent garbled
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|W boson rest energy|1.31 x 10^-8 J (n=12)|m_W c^2 = 80.4 GeV|Y|2.2%|POST_HOC_FIXED_FORM|W, H, Z, top all assigned same level n=12
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Higgs boson rest energy|2.01 x 10^-8 J (n=12)|m_H c^2 = 125.18 GeV|Y|2.4%|POST_HOC_FIXED_FORM|same level n=12 as W/Z/top
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Z boson rest energy|1.48 x 10^-8 J (n=12)|m_Z c^2 = 91.2 GeV|Y|4.5%|POST_HOC_FIXED_FORM|same level n=12
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L54|Top quark rest energy|2.77 x 10^-8 J (n=12)|m_t c^2 = 173 GeV|Y|5.9%|POST_HOC_FIXED_FORM|same level n=12 as W/Z/H
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L186|241 particle coverage|All within 1 level|PDG 2025 catalog|Y|? 100%|RANGE_ONLY|no numeric values; "All within 1 level" vs catalog; checkmark-style 100%
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L186|R (polynomial fit degree 4)|0.95|Cross-validated|N|?|NOT_A_COMPARISON|internal fit statistic; no external value
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L186|Higgs at n=12|10-8 J|2.01×10-8 J|Y|? factor-2|POST_HOC_PER_TARGET|level n=12 assigned to Higgs on 10^n J ladder; factor-2 off
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L186|Proton at n=10|10? J|1.5×10? J|Y|? 50%|POST_HOC_PER_TARGET|level n=10 assigned to proton; exponent garbled in source; 50% off
+PAPER_122_UQFF_Compressed_PDG_241Particle_Ladder.md|L186|Level spacing ratio|[SSq]=0.57|Inter-level ?n=0.20§0.21|N|? consistent|RANGE_ONLY|0.57 vs 0.20-0.21 called consistent; no residual
+PAPER_1235_Friedmann_rho_total_J_per_m3.md|L20|Matter ρ_m0|2.688×10⁻²⁷ kg/m³ = 2.41×10⁻¹⁰ J/m³|Planck Ω_m·ρ_crit|Y|none|INPUT_REPRODUCED|Planck input density restated in J/m³; unit conversion only
+PAPER_1235_Friedmann_rho_total_J_per_m3.md|L20|Radiation ρ_r0|7.904×10⁻³¹ kg/m³ = 7.10×10⁻¹⁴ J/m³|Y_p + N_eff|N|none|INPUT_REPRODUCED|standard radiation density from Y_p, N_eff restated; unit conversion only
+PAPER_1235_Friedmann_rho_total_J_per_m3.md|L20|Vacuum ρ_Λ|6.622×10⁻²⁷ kg/m³ = 5.957×10⁻¹⁰ J/m³|Planck Λ|Y|none|INPUT_REPRODUCED|Planck Λ input restated; unit conversion only
+PAPER_1240_JWST_z14_R26_Growth_Factor.md|L52|Cosmic Dawn z=20 stellar mass|< 10⁸ M_sun|(none yet)|N|none|FORECAST_UNTESTED|no observation yet; upper-limit prediction
+PAPER_1240_JWST_z14_R26_Growth_Factor.md|L52|JADES z14 (z=14.32) stellar mass|5×10⁸ ✓|5×10⁸ M_sun|Y|✓|INPUT_REPRODUCED|identical digits; no formula shown; checkmark only
+PAPER_1240_JWST_z14_R26_Growth_Factor.md|L52|EROs z11 stellar mass|~10⁹ ✓|~10⁹ M_sun|N|✓|INPUT_REPRODUCED|identical digits; order-of-magnitude value restated
+PAPER_1240_JWST_z14_R26_Growth_Factor.md|L52|Reionization z=6 stellar mass|~10¹⁰ ✓|~10¹⁰ M_sun|N|✓|INPUT_REPRODUCED|identical digits; order-of-magnitude value restated
+PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md|L184|S_n formula|2[SSq]E8 = 7.12 MeV|6.74§7.37 MeV|Y|? within 5.6%|POST_HOC_PER_TARGET|formula 2[SSq]E8 built from primitives for S_n; compared to ENSDF range
+PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md|L184|?n correction|0.21 (nuclear [SCm])|Not direct|N|Inferred|NOT_A_COMPARISON|no external value; "Not direct"
+PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md|L184|n=8 energy base E8|10? J = 6.24 MeV|Nuclear binding ~7 MeV|Y|?|RANGE_ONLY|6.24 vs ~7 MeV; no residual; exponent garbled
+PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md|L184|Magic N=126 peak S_n|Maximum (Ub_i=0)|7.37 MeV peak|Y|?|RANGE_ONLY|qualitative "Maximum" vs numeric peak
+PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md|L184|Nuclear levels|20-30 below 10 MeV|2030 ENSDF levels|Y|?|RANGE_ONLY|count range vs catalog count; no residual
+PAPER_1254_NEUTRON_LIFETIME_PUZZLE.md|L157|bottle lifetime|874.89|877.7|N|0.32%|POST_HOC_FIXED_FORM|no formula shown; known bottle value; PAPER_1836 uses 878.4 s instead
+PAPER_1254_NEUTRON_LIFETIME_PUZZLE.md|L157|beam lifetime|883.73|888.0|N|0.48%|POST_HOC_FIXED_FORM|no formula shown; known beam value; PAPER_1836 gives 888.1 s instead
+PAPER_126_UQFF_MasterBuoyancy_Gaia_SgrA_Calibration.md|L181|d_g (UQFF)|2.44×10 m (7.92 kpc)|Gaia: 7.94§0.29 kpc|Y|? < 0.3%|POST_HOC_PER_TARGET|paper titled Calibration; exponent garbled; 7.92 vs 7.94 kpc
+PAPER_126_UQFF_MasterBuoyancy_Gaia_SgrA_Calibration.md|L181|d_g vs GRAVITY|4.3% below|4.3% offset confirmed|Y|?|INPUT_REPRODUCED|identical digits; offset restated as confirmation
+PAPER_126_UQFF_MasterBuoyancy_Gaia_SgrA_Calibration.md|L181|[UA] displacement e_UA|4.3%|Measured offset|N|?|INPUT_REPRODUCED|same 4.3% restated; no external number
+PAPER_126_UQFF_MasterBuoyancy_Gaia_SgrA_Calibration.md|L181|M_bh (UQFF)|4.3×106 M_?|EHT: 4.154×106 M_?|Y|? 3.5%|POST_HOC_FIXED_FORM|no formula shown; 4.3 recurs as displacement %; exponents garbled
+PAPER_126_UQFF_MasterBuoyancy_Gaia_SgrA_Calibration.md|L181|?_g (spin rate)|7.3×10?6 rad/s|Galactic rotation ~O|N|?|RANGE_ONLY|external value garbled/qualitative; no residual
+PAPER_127_UQFF_Resonant_ParkerSolarProbe_DeltaSW.md|L181|d_sw|0.01|~1% at r_A|Y|?|INPUT_REPRODUCED|0.01 equals ~1%; identical value; no formula
+PAPER_127_UQFF_Resonant_ParkerSolarProbe_DeltaSW.md|L181|v_sw|5×105 m/s|37×105 m/s|Y|? within range|RANGE_ONLY|5 vs 37 (×10^5) called within range; exponents garbled
+PAPER_127_UQFF_Resonant_ParkerSolarProbe_DeltaSW.md|L181|r_A|~20 R_? ([UA] boundary)|10-50 R_?|Y|?|RANGE_ONLY|point value inside broad band
+PAPER_127_UQFF_Resonant_ParkerSolarProbe_DeltaSW.md|L181|Resonant period|0.32 days|~0.11 days (Alfvnic waves)|Y|? order of magnitude|RANGE_ONLY|factor ~3 off; order-of-magnitude claim
+PAPER_127_UQFF_Resonant_ParkerSolarProbe_DeltaSW.md|L181|Mode activation|v > 5×105 m/s|Super-Alfvnic confirmed|Y|?|RANGE_ONLY|qualitative threshold vs qualitative confirmation
+PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md|L206|Jet flux ratio R|~130|R = 130|N|? exact|INPUT_REPRODUCED|identical digits; no formula shown
+PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md|L206|t_n(counter-jet)|-0.10|Not directly measured|N|Inferred ?|NOT_A_COMPARISON|no external value; inferred
+PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md|L206|N zero-crossings|13|~13 VLBI knots|Y|?|INPUT_REPRODUCED|identical digits; N=13 appears in paper title
+PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md|L206|Jet length (model)|23 arcsec (13 knots spacing)|23 arcsec|N|?|INPUT_REPRODUCED|identical digits; knot spacing taken from observed knots
+PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md|L206|Superluminal κ_app|~515c predicted|515c observed|N|?|INPUT_REPRODUCED|identical digits; no formula shown
+PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md|L173|Y_e (GW170817)|≈0.093|≈0.1|N|PASS 7%|POST_HOC_FIXED_FORM|no formula shown; approximate external value
+PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md|L173|40% M_ej@0.1c|40% from [SSq]×β_i2|40% LIGO kilonova|Y|PASS|POST_HOC_PER_TARGET|identical digits; row-specific formula [SSq]×β_i²
+PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md|L173|r-process fraction|95% (E_react powered)|~95% heavy elements|N|PASS|INPUT_REPRODUCED|identical digits; no formula
+PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md|L173|R (RACS jets)|1.5 (e^{κ×810})|R ≈ 1.5|Y|PASS|POST_HOC_PER_TARGET|identical digits; row-specific exponent κ×810
+PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md|L173|E_react scale|1046 J (t≈0 merger)|1044–1046 J kilonova|N|PASS|RANGE_ONLY|value at edge of 2-decade band; exponents garbled
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|k_1|1.5|SOHO/SDO solar magnetic|Y|? Calibrated|POST_HOC_PER_TARGET|explicitly "Calibrated" free parameter; no external number
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|k_2|1.2|Solar wind dynamics|N|? Calibrated|POST_HOC_PER_TARGET|explicitly "Calibrated" free parameter; no external number
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|k_3|1.8|Solar rotation, quasar jets|N|? Calibrated|POST_HOC_PER_TARGET|explicitly "Calibrated" free parameter; no external number
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|κ_i|0.6|Galactic spin + planetary liquids|N|? Calibrated|POST_HOC_PER_TARGET|explicitly "Calibrated" free parameter; no external number
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|a|0.0005 day-1|SCm reactivity, matches ?|N|?|RANGE_ONLY|external cell garbled; no number
+PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md|L235|F_U(solar)|1.18×105 e^{-at}|Heliosphere confinement energy|N|? Consistent|RANGE_ONLY|no external number; "Consistent" only
+PAPER_134_UQFF_Heliosphere_Ug2_SolarWind_Transmutation_HelioAge_PlanetaryWater.md|L202|Ug2 (solar)|1.18×105 e^{-at}|Dominant F_U term|N|?|NOT_A_COMPARISON|internal term; no external data
+PAPER_134_UQFF_Heliosphere_Ug2_SolarWind_Transmutation_HelioAge_PlanetaryWater.md|L202|Heliosphere ? stellar age|?R_b ? e^{at*}|Hydrogen wall growing|N|? Consistent|RANGE_ONLY|qualitative trend only
+PAPER_134_UQFF_Heliosphere_Ug2_SolarWind_Transmutation_HelioAge_PlanetaryWater.md|L202|Hydrogen wall|?_wall ? e^{at}|Lyman-a backscatter (Voyager)|Y|?|RANGE_ONLY|functional form vs named observation; no numbers
+PAPER_134_UQFF_Heliosphere_Ug2_SolarWind_Transmutation_HelioAge_PlanetaryWater.md|L202|Earth liquid V|~1.34×10-8 m|1.335×10? km ?|N|?|INPUT_REPRODUCED|1.34 vs 1.335 near-identical; units garbled (m vs km); known ocean volume
+PAPER_134_UQFF_Heliosphere_Ug2_SolarWind_Transmutation_HelioAge_PlanetaryWater.md|L202|k_2 calibration|1.2|SOHO/SDO/ACE|Y|?|POST_HOC_PER_TARGET|"calibration" parameter; no external number
+PAPER_135_UQFF_Quasar_Jets_NegativeTime_cos_pi_tn_NS_Millennium.md|L197|Jet asymmetry mechanism|cos(pt_n) temporal asymmetry|Ratio 1.3×10 observed|N|? (order of magnitude)|RANGE_ONLY|mechanism vs ratio; order-of-magnitude claim; exponent garbled
+PAPER_135_UQFF_Quasar_Jets_NegativeTime_cos_pi_tn_NS_Millennium.md|L197|Cygnus A ?L|~37 kpc predicted|~15 kpc observed|N|? same order|RANGE_ONLY|factor ~2.5 off; "same order"
+PAPER_135_UQFF_Quasar_Jets_NegativeTime_cos_pi_tn_NS_Millennium.md|L197|v_SCm cap|108 m/s (trapped SCm)|AGN jet speeds ~0.3§0.99c|N|Consistent for bulk|RANGE_ONLY|qualitative consistency; exponent garbled
+PAPER_135_UQFF_Quasar_Jets_NegativeTime_cos_pi_tn_NS_Millennium.md|L197|F_SCm smoothness|Globally bounded (e^{-at})|No jet blow-up observed|N|?|RANGE_ONLY|qualitative only
+PAPER_135_UQFF_Quasar_Jets_NegativeTime_cos_pi_tn_NS_Millennium.md|L197|N-S connection|Smooth solution via SCm decay|Clay Millennium conjecture|N|? (partial)|NOT_A_COMPARISON|math conjecture, not data
+PAPER_136_UQFF_PlanetaryCore_Ug3_SCm_Exclusivity_OrbitalHamiltonian.md|L189|Orbital stability|Ug3 quasi-invariant preserved|Multi-Gyr stability observed|N|PASS|RANGE_ONLY|qualitative PASS
+PAPER_136_UQFF_PlanetaryCore_Ug3_SCm_Exclusivity_OrbitalHamiltonian.md|L189|P_SCm (planets)|10-3|No external SCm signal detected|N|PASS|RANGE_ONLY|null result vs small value; PASS only
+PAPER_136_UQFF_PlanetaryCore_Ug3_SCm_Exclusivity_OrbitalHamiltonian.md|L189|Earth precession period|~29 days (ω_s periodicity)|28.2 days (lunar month)|N|PASS|POST_HOC_FIXED_FORM|no formula shown; ~3% off; PASS only
+PAPER_136_UQFF_PlanetaryCore_Ug3_SCm_Exclusivity_OrbitalHamiltonian.md|L189|H_Ug3 (Earth core)|~448 J/m3|Geomagnetic energy density ~103 J/m3|N|PASS order|RANGE_ONLY|order-of-magnitude PASS; exponent garbled
+PAPER_136_UQFF_PlanetaryCore_Ug3_SCm_Exclusivity_OrbitalHamiltonian.md|L189|P_SCm derivation|ρ_planet/ρ_star × modal ratio|Differential rotation data|N|PASS calibrated|POST_HOC_PER_TARGET|"PASS calibrated"; no numbers
+PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md|L217|Atomic scale|n=10 (E=10? J)|Chemical bond / condensed matter scale|N|? Consistent|RANGE_ONLY|scale-level consistency; exponent garbled
+PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md|L217|Higgs proximity|n=18 (E=10? J)|Higgs at 125.1 GeV|N|? Order of magnitude|RANGE_ONLY|order of magnitude only; n=18 here vs n=12 in PAPER_122
+PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md|L217|Galactic vacuum|n=2026 (E=1×106 J)|Ug4 regime (dark energy scale)|N|?|NOT_A_COMPARISON|internal regime; no external data
+PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md|L217|Force hierarchy|×10 steps|Forces span 40 OOM ? 26 steps of 10|N|?|RANGE_ONLY|counting argument; no data value
+PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md|L217|ionization energy|~10 eV via [SSq]^{15} from n=10|H ionization 13.6 eV|N|?|POST_HOC_PER_TARGET|[SSq]^15 exponent chosen for target; ~10 vs 13.6 eV
+PAPER_138_UQFF_NGC3603_ClusterBurst_MassEvolution_SCm_PFeedback.md|L185|M(t=0)|800,000 M_sun|Estimated burst mass|N|?|INPUT_REPRODUCED|initial mass is model input; no external number
+PAPER_138_UQFF_NGC3603_ClusterBurst_MassEvolution_SCm_PFeedback.md|L185|M(t=t)|~547,200 M_sun|Cluster at ~1 Myr ? evolving|N|?|RANGE_ONLY|no external number
+PAPER_138_UQFF_NGC3603_ClusterBurst_MassEvolution_SCm_PFeedback.md|L185|P_0|4×10-8 Pa|Stellar wind outflow|N|?|RANGE_ONLY|no external number
+PAPER_138_UQFF_NGC3603_ClusterBurst_MassEvolution_SCm_PFeedback.md|L185|Cavity radius|21 ly predicted|19 ly observed|N|? 11%|POST_HOC_FIXED_FORM|no formula shown; 11% off
+PAPER_138_UQFF_NGC3603_ClusterBurst_MassEvolution_SCm_PFeedback.md|L185|SCm buoyancy|Ub drives cavity|Bubble morphology Hubble|Y|? Consistent|RANGE_ONLY|qualitative morphology
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|Dominant MUGE-H term|Ug4i = 1.312×1048 m/s|No direct obs.|N|Theoretical|FORECAST_UNTESTED|no observation; exponent garbled
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|g_H total|~1.252×1046 m/s|No direct obs.|N|UQFF prediction|FORECAST_UNTESTED|no observation
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|Metallic H phase >500 GPa|Crystalline, Ug4i driven|Sandia NIF ?|Y|?|RANGE_ONLY|qualitative phase claim
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|Inverse Boyle's law|V ? P^{+1/3} at P>500 GPa|Argonne crystalline predictions|Y|? Consistent|RANGE_ONLY|compared to other predictions, not data
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|Lamb shift anomaly|+0.001§0.014%|LBNL observation|Y|? Order of magnitude|RANGE_ONLY|order of magnitude; no external number
+PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md|L230|[(UA')]:[SCm]=10|Both nucleus + electron|Sandia/NIF validated|Y|?|RANGE_ONLY|qualitative "validated"
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|ρ_vac,[UA]|7.09×10?6 kg/m|ΛCDM dark energy density|Y|? Exact|INPUT_REPRODUCED|"Exact" match to known ΛCDM constant; no external number; exponent garbled
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|ρ_vac,[SCm]|7.09×10?7 kg/m|Beyond ΛCDM|N|New prediction|FORECAST_UNTESTED|no data
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|Ratio = 10|Derived from 10-mode monopole|Sandia/LBNL ratio|Y|?|RANGE_ONLY|no external number
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|f_quantum correction|1.000005|Below current precision|N|Consistent|FORECAST_UNTESTED|below precision; untestable now
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|MUGE-H factor 21|(1+10+10)|g_H ~1046 m/s|N|? Self-consistent|NOT_A_COMPARISON|internal self-consistency
+PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md|L198|Magnetic factor 11|(1+10)|qvB coupling enhancement|N|?|NOT_A_COMPARISON|internal factor
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Buoy_term|1.262×10?8 m/s|Below measurement threshold|N|Theoretical|FORECAST_UNTESTED|below threshold
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Azeo_void|0.2 (20%)|NREL H2O void fraction|Y|? Consistent|RANGE_ONLY|no external number
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Salinity_factor|0.035|NOAA 35 PSS78|Y|? Exact|INPUT_REPRODUCED|identical digits (0.035 = 35 PSS); standard salinity input
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Henry's law correction|~1+1.3e-29|Beyond current precision|N|Below threshold|FORECAST_UNTESTED|untestable
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Dissolved gas ratios|Standard Henry's Law + UQFF|NOAA WOA23 to 0.1%|Y|?|RANGE_ONLY|standard law; no UQFF number
+PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md|L235|Earth rotation Ub|2.12×10? J (void activation)|Orbital rotation energy|N|?|RANGE_ONLY|no external number; exponent garbled
+PAPER_173_Modular_Compressed_MUGE_9Term_Decomposition.md|L426|Fine structure α|Ug1 dipole coupling|1/137.036 (PDG 2024)|Y|PASS|INPUT_REPRODUCED|known constant; no UQFF number given
+PAPER_173_Modular_Compressed_MUGE_9Term_Decomposition.md|L426|Cosmological Λ|1.1×10-52 m-2|1.114×10-52 (Planck 2018)|Y|PASS|INPUT_REPRODUCED|known constant restated to 2 sig figs; no formula
+PAPER_173_Modular_Compressed_MUGE_9Term_Decomposition.md|L426|Proton decay rate|κ = 0.0005/day → Γ_p suppression|< 4.17×10-35/yr (Super-K)|Y|PASS|RANGE_ONLY|bound only
+PAPER_173_Modular_Compressed_MUGE_9Term_Decomposition.md|L426|Buoyancy signature|F_U_Bi_i gravity correction|Not yet measured|N|Testable|FORECAST_UNTESTED|not yet measured
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet b period P (days)|1.5108|1.5108|Y|0.001%|POST_HOC_FIXED_FORM|identical digits at 4 dp; no formula shown; periods known since 2017
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet c period P (days)|2.4204|2.4219|Y|0.06%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet d period P (days)|4.0584|4.0490|Y|0.23%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet e period P (days)|6.1122|6.0990|Y|0.22%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet f period P (days)|9.2063|9.2060|Y|0.003%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet g period P (days)|12.3781|12.3530|Y|0.20%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md|L76|Planet h period P (days)|18.7686|18.7670|Y|0.009%|POST_HOC_FIXED_FORM|no formula shown; pre-existing Agol 2021 data
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|sin²θ_12 (solar)|0.30769|0.307|N|0.226%|POST_HOC_PER_TARGET|row formula 2·D_phys/D_crit = 8/26
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|sin²θ_23 (atmospheric)|0.54487|0.545|N|0.024%|POST_HOC_PER_TARGET|row formula (SO_5 + 2·K_MEX)/D_crit
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|sin²θ_13 (reactor)|0.02192|0.02220|N|1.247%|POST_HOC_PER_TARGET|row formula [SSq]/D_crit
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|δ_CP (CP violation)|194.42°|~195° ± 50°|N|0.296%|POST_HOC_PER_TARGET|row formula π·(1 + K_MEX/D_crit); observed error ±50°
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|abs(Δm²_31)/Δm²_21|34|33.89|N|0.310%|POST_HOC_PER_TARGET|row formula D_crit + 2·D_phys = 34
+PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md|L19|Mass ordering|Normal|Normal|N|MATCH|RANGE_ONLY|binary outcome inferred from sin²θ_23 > 0.5
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L21|λ|0.22427|0.22436|N|0.041%|POST_HOC_PER_TARGET|row formula √((D_crit + 2·D_phys)/D_crit²)
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L21|A|0.84000|0.836|N|0.478%|POST_HOC_PER_TARGET|row formula A = Φ_res
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L21|ρ̄|0.15915|0.157|N|1.373%|POST_HOC_PER_TARGET|row formula 1/(2π)
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L21|η̄|0.36287|0.352|N|3.089%|POST_HOC_PER_TARGET|row formula 2·[SSq]/π
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_ud)|0.97485|0.97417|N|0.070%|POST_HOC_FIXED_FORM|standard Wolfenstein 1 − λ²/2; inputs are post-hoc λ,A,ρ̄,η̄ from L21
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_us)|0.22427|0.22436|N|0.041%|POST_HOC_FIXED_FORM|equals λ from L21
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_ub)|0.00375|0.00382|N|1.718%|POST_HOC_FIXED_FORM|standard Wolfenstein A·λ³·√(ρ̄² + η̄²)
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_cd)|0.22427|0.22436|N|0.041%|POST_HOC_FIXED_FORM|equals λ from L21
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_cs)|0.97481|0.97359|N|0.125%|POST_HOC_FIXED_FORM|standard Wolfenstein 1 − λ²/2 − A²·λ⁶/2
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_cb)|0.04225|0.04214|N|0.258%|POST_HOC_FIXED_FORM|standard Wolfenstein A·λ²
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_td)|0.00868|0.00857|N|1.251%|POST_HOC_FIXED_FORM|standard Wolfenstein A·λ³·√((1−ρ̄)² + η̄²)
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_ts)|0.04225|0.04133|N|2.222%|POST_HOC_FIXED_FORM|standard Wolfenstein A·λ²; 2.2% off
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L30|abs(V_tb)|0.99911|0.99912|N|0.001%|POST_HOC_FIXED_FORM|standard Wolfenstein 1 − A²·λ⁴/2
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L44|J_CP|3.258×10⁻⁵|3.18×10⁻⁵|N|2.44%|POST_HOC_FIXED_FORM|standard Jarlskog A²·λ⁶·η̄ from post-hoc params
+PAPER_1817_COMPLETE_CKM_MATRIX_UQFF.md|L50|γ|65.39°|66° ± 3°|N|0.922%|POST_HOC_PER_TARGET|row formula arctan(K_MEX + F_TRZ)
+PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md|L178|Y_p (⁴He primordial mass fraction)|0.2470|0.2452 ± 0.0006|N|0.73%|POST_HOC_FIXED_FORM|downstream of η_B; no per-row formula shown; 3σ off quoted error
+PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md|L178|D/H (deuterium-to-hydrogen ratio)|2.50×10⁻⁵|2.55×10⁻⁵|N|2.0%|POST_HOC_FIXED_FORM|downstream of η_B; no per-row formula shown
+PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md|L178|Ω_b h² (baryon density)|0.02224|0.02237|N|0.58%|POST_HOC_FIXED_FORM|downstream of η_B; no per-row formula shown
+PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md|L178|N_eff (effective neutrino species)|3.046|3.046 ± 0.19|N|match|INPUT_REPRODUCED|identical digits; 3.046 is the standard SM value
+PAPER_1819_NEUTRON_STAR_EOS_UQFF.md|L28|M_TOV [M_sun]|2.157|2.14 ± 0.09|N|0.79% (1σ ✓)|POST_HOC_PER_TARGET|row formula 2 + F_TRZ + F_TRZ·[SSq]
+PAPER_1819_NEUTRON_STAR_EOS_UQFF.md|L28|R_1.4 [km]|12.41|12.45 ± 0.65|N|0.29% (1σ ✓)|POST_HOC_PER_TARGET|row formula SO_5 + K_MEX + F_TRZ + F_TRZ·A_5/D_crit
+PAPER_1819_NEUTRON_STAR_EOS_UQFF.md|L28|Λ_1.4|185.0|190 (+390/-120)|N|2.66% (1σ ✓)|POST_HOC_PER_TARGET|row formula D_crit²·[SSq]/K_MEX; very wide error bar
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L41|Z boson mass|91.189 GeV|91.1876 ± 0.0021|Y|0.67σ ✓|POST_HOC_PER_TARGET|"F_TRZ² EW-mixing suppression" specific to Z; formula not written out
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L41|Higgs mass|125.353 GeV|125.25 ± 0.17|Y|0.60σ ✓|POST_HOC_PER_TARGET|"F_TRZ² Yukawa suppression" specific to Higgs; formula not written out
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|M_W [GeV]|80.438|80.434 (CDF)|Y|0.005%|POST_HOC_PER_TARGET|no formula in table; anomalous CDF value targeted rather than PDG average
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|M_Z [GeV]|91.189|91.1876|N|0.0015%|POST_HOC_PER_TARGET|same value as L41 with Z-specific suppression
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|M_H [GeV]|125.35|125.25|N|0.084%|POST_HOC_PER_TARGET|same value as L41 with Higgs-specific suppression
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|T-parameter|0.164|0.16 (CDF fit)|Y|2.5%|POST_HOC_FIXED_FORM|no formula shown
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|S-parameter|0.025|0.06 ± 0.10 (CDF fit)|Y|1σ agreement|RANGE_ONLY|error bar larger than value
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|U-parameter|3×10⁻⁴|0.03 ± 0.11 (CDF fit)|Y|1σ agreement|RANGE_ONLY|error bar larger than value
+PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md|L201|sin²θ_W (from ΔM_W)|0.2318|0.23122|N|0.25%|POST_HOC_FIXED_FORM|derived from ΔM_W; no formula shown
+PAPER_1821_DESI_DARK_ENERGY_w_z_EVOLUTION_UQFF.md|L32|w_0 (today)|-0.7264|-0.727 ± 0.067|Y|0.08% (0.01σ)|POST_HOC_PER_TARGET|row formula -1 + [SSq]/K_MEX
+PAPER_1821_DESI_DARK_ENERGY_w_z_EVOLUTION_UQFF.md|L32|w_a (evolution)|-1.0417|-1.05 ± 0.31|Y|0.79% (0.03σ)|POST_HOC_PER_TARGET|row formula -K_MEX/2 = -25/24
+PAPER_1823_STRONG_CP_PROBLEM_UQFF.md|L36|θ_QCD|2.74×10⁻¹¹|< 10⁻¹⁰|N|safely below bound|RANGE_ONLY|bound only; formula F_TRZ¹⁰·[SSq]/K_MEX with exponent 10
+PAPER_1824_HIERARCHY_PROBLEM_UQFF.md|L39|m_H (Higgs mass)|121.78 GeV|125.35 ± 0.15 GeV|N|2.84% ✓|POST_HOC_PER_TARGET|M_Planck·F_TRZ¹⁷·[SSq]·K_MEX·Φ_res; ~24σ off; PAPER_1820 gives 125.353
+PAPER_1824_HIERARCHY_PROBLEM_UQFF.md|L39|m_H/M_Planck ratio|9.97×10⁻¹⁸|1.03×10⁻¹⁷|N|2.84%|POST_HOC_PER_TARGET|same formula rearranged
+PAPER_1824_HIERARCHY_PROBLEM_UQFF.md|L39|(m_H/M_Planck)² hierarchy|9.95×10⁻³⁵|1.05×10⁻³⁴|N|5.61%|POST_HOC_PER_TARGET|square of previous row
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|r (scalar-to-tensor)|9.975×10⁻³|< 0.036 (BK21)|Y|LiteBIRD 2028|FORECAST_UNTESTED|below bound; future test; formula F_TRZ²·[SSq]·K_MEX·Φ_res
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|N_e (e-folds)|60 EXACT|50-60 (standard)|N|model-consistent ✓|POST_HOC_PER_TARGET|N_e set equal to primitive A_5; external is model range not data
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|n_s (scalar spectral index)|0.9667|0.9649 ± 0.0042|N|0.42σ ✓|POST_HOC_FIXED_FORM|standard slow-roll 1 − 2/N_e with N_e=60
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|ε (slow-roll)|6.24×10⁻⁴|derived|N|Starobinsky-like|NOT_A_COMPARISON|no external value
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|n_T (tensor spectral index)|-1.25×10⁻³|consistency|N|red tensor ✓|NOT_A_COMPARISON|consistency relation only
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|V^(1/4) (inflation scale)|1.02×10¹⁶ GeV|GUT scale|N|matches expectations|RANGE_ONLY|order-of-magnitude scale
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|H_inflation|2.48×10¹³ GeV|derived|N|tensor amplitude|NOT_A_COMPARISON|no external value
+PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md|L37|P_tensor|2.10×10⁻¹¹|testable|N|CMB B-mode|FORECAST_UNTESTED|not yet measured
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L36|Δr_p/r_p (muonic vs eH)|3.878%|3.987%|N|2.73% ✓ resolved|POST_HOC_PER_TARGET|formula F_TRZ·[SSq]·Φ_res·(1-F_TRZ)²; observed quoted as 4.009% in L48
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L36|r_p (muonic, absolute)|0.8428 fm|0.84184 fm (Pohl 2010)|Y|0.113% (1.43σ ✓)|POST_HOC_PER_TARGET|derived from row 1 with r_p_eH input
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L36|r_p (muonic, vs 2024 update)|0.8428 fm|0.8409 fm (Pohl 2024)|Y|0.225% (4.7σ)|POST_HOC_PER_TARGET|4.7σ from newer value; still marked resolved in row 1
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L48|Proton (μH) Δr/r|3.878%|4.009%|N|✓ 3% residual|POST_HOC_PER_TARGET|same formula; observed differs from L36 (3.987%)
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L48|Deuteron (μD) Δr/r|0.112%|0.112%|N|✓ essentially EXACT|INPUT_REPRODUCED|identical digits; no deuteron formula shown
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L48|Helium⁴ (μHe⁴⁺) Δr/r|0.072%|0.014%|N|small, consistent|RANGE_ONLY|factor ~5 off called consistent
+PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md|L48|Tritium (μ³H) Δr/r|0.242% (prediction)|not yet measured|N|testable PSI 2027+|FORECAST_UNTESTED|not yet measured
+PAPER_1827_ABSOLUTE_NEUTRINO_MASSES_UQFF.md|L55|abs(Δm²_31)/Δm²_21|34 EXACT|33.89|N|✓|POST_HOC_PER_TARGET|D_crit + 2·D_phys = 34 restated from PAPER_1816; 0.3% off called EXACT
+PAPER_1827_ABSOLUTE_NEUTRINO_MASSES_UQFF.md|L55|Mass ordering|Normal|Normal|N|✓ MATCH|RANGE_ONLY|binary outcome
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L36|Δ suppression factor|5.70%|required 5.0-6.5%|N|✓ in range|POST_HOC_PER_TARGET|formula F_TRZ²·SO_5·[SSq]; external is a required range
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L36|σ_8_lensing|0.7648|0.775 ± 0.017|N|1.19% (0.54σ ✓)|POST_HOC_PER_TARGET|σ_8_CMB·(1-Δ) with post-hoc Δ
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L36|Ω_m_lensing|0.2970|0.30-0.32|N|~2% consistent|RANGE_ONLY|value below quoted range; called consistent
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L36|S_8_lensing|0.7610|0.759 ± 0.020|N|0.26% (0.05σ ✓✓)|POST_HOC_PER_TARGET|S_8_CMB·(1-Δ)^{3/2}; exponent 3/2 chosen
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L45|Planck 2018 CMB σ_8, S_8|reference (input)|σ_8 0.811, S_8 0.831|Y|reference (input)|INPUT_REPRODUCED|explicitly labelled input
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L45|KiDS-1000 σ_8, S_8|0.765, 0.761|0.774 ± 0.017, 0.759 ± 0.024|Y|✓ 0.5σ, 0.05σ|POST_HOC_FIXED_FORM|single UQFF value vs each survey; survey data pre-existing
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L45|DES-Y3 σ_8, S_8|0.765, 0.761|0.776 ± 0.017, 0.759 ± 0.023|Y|✓ 0.7σ, 0.05σ|POST_HOC_FIXED_FORM|single UQFF value vs each survey; survey data pre-existing
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L45|HSC-Y3 (Sugiyama 2023) σ_8, S_8|0.765, 0.761|0.775 ± 0.020, 0.775 ± 0.043|Y|✓ 0.5σ|POST_HOC_FIXED_FORM|single UQFF value vs survey; S_8 comparison omitted
+PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md|L45|UQFF (this paper) σ_8, S_8|0.765, 0.761|—|N|—|NOT_A_COMPARISON|UQFF values listed alone
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|CEERS-2757 (z=10)|3.74|~10|Y|large|POST_HOC_FIXED_FORM|factor ~2.7 off; labelled marginal (controversial); Labbé 2023
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|HD1 (z=13.3)|5.84|~5|Y|17%|POST_HOC_FIXED_FORM|17% off called excellent; Harikane 2022
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|JADES-GS-z13-0 (z=13.2)|5.77|~5|Y|15%|POST_HOC_FIXED_FORM|15% off called excellent; Curtis-Lake 2023
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|CEERS-14559 (z=13.9)|6.29|~6|Y|5%|POST_HOC_FIXED_FORM|Adamo 2024; observed given to 1 sig fig; called essentially exact
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|JADES-GS-z14-0 (z=14.32)|6.61|~7|Y|6%|POST_HOC_FIXED_FORM|reference "2024" only; observed 1 sig fig; called essentially exact
+PAPER_1830_JWST_EARLY_BRIGHT_GALAXIES_UQFF.md|L50|CEERS-93316 (z=16)|8.00|~10|Y|20%|POST_HOC_FIXED_FORM|reference "2022" only; 20% off called good
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L37|Li-7/H_UQFF|1.69×10⁻¹⁰|1.6 ± 0.3 × 10⁻¹⁰|N|5.5% (0.29σ ✓)|POST_HOC_PER_TARGET|formula [SSq]·(1+F_TRZ)²/K_MEX · Li-7_SBBN
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L37|Li-7 suppression ratio|0.331|required 0.30-0.35|N|in range|POST_HOC_PER_TARGET|same formula; external is a required range
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L37|Original tension (SBBN)|6σ|6σ|N|pre-UQFF|NOT_A_COMPARISON|not a UQFF quantity; identical digits restated
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L37|UQFF tension|—|—|N|0.29σ ✓|NOT_A_COMPARISON|no values
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L46|⁴He (Y_p)|0.2470|0.2452|N|0.73%|POST_HOC_FIXED_FORM|repeat of PAPER_1818
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L46|²H (D/H)|2.50×10⁻⁵|2.55×10⁻⁵|N|1.96%|POST_HOC_FIXED_FORM|repeat of PAPER_1818; residual quoted 2.0% there
+PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md|L46|⁷Li/H|1.69×10⁻¹⁰|1.60×10⁻¹⁰|N|5.52%|POST_HOC_PER_TARGET|formula in L37
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L33|L-amino acid enantiomeric excess|9.975%|~10% (Murchison avg)|Y|0.25% ✓|POST_HOC_PER_TARGET|formula F_TRZ·[SSq]·Φ_res·K_MEX; observed ~10% is 1 sig fig
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L33|Autocatalytic threshold|0.1% (Frank 1953)|UQFF 10% above by 100×|Y|amplification guaranteed|NOT_A_COMPARISON|theory threshold; columns swapped
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L33|Predicted D-sugar excess|9.975%|qualitative match|N|testable at Ryugu/Bennu|FORECAST_UNTESTED|future test
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L33|Final life chirality|100% L-amino, 100% D-sugar|(observed)|N|UQFF explains|RANGE_ONLY|qualitative
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L42|Isovaline L-excess|10%|15.2 ± 4%|N|consistent (1.3σ)|POST_HOC_FIXED_FORM|single 10% value vs each amino acid
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L42|Alanine (specific samples) L-excess|10%|4.9 ± 1.9%|N|2.7σ, controversial|POST_HOC_FIXED_FORM|2.7σ off; data called controversial
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L42|α-methyl amino acids (avg) L-excess|10%|~10-12%|N|✓ excellent|RANGE_ONLY|range match
+PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md|L42|Combined Murchison average L-excess|9.975%|~10%|Y|essentially exact|POST_HOC_PER_TARGET|repeat of L33; observed 1 sig fig
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L41|Efficiency η|94.87%|~95% (canonical)|N|0.14% ✓ essentially exact|POST_HOC_PER_TARGET|formula 1 - F_TRZ·[SSq]·(1-F_TRZ); observed is a rounded canonical figure
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L41|Coherence time τ|672 fs|200-1000 fs|N|in middle ✓|POST_HOC_PER_TARGET|formula (1/ω_SCm)·Φ_res; external is a broad range
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L41|Universal prediction|94-95% across species|observed universally|N|✓ MATCH|RANGE_ONLY|qualitative
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L49|FMO (Engel 2007) coherence|672 fs|800 fs|Y|✓ within range|POST_HOC_FIXED_FORM|single 672 fs vs 800 fs; 16% off; no residual stated
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L49|PS II RC (Fleming 2011) coherence|672 fs|500-1000 fs|Y|✓ middle range|RANGE_ONLY|range
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L49|Chlorosome (Scholes 2010) coherence|672 fs|1 ps|Y|close (1.5σ)|POST_HOC_FIXED_FORM|33% off called close
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L49|Plant chloroplasts (Collini 2010) coherence|672 fs|200-400 fs|Y|above but close|RANGE_ONLY|outside range; "above but close"
+PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md|L49|Purple bacteria LH2 (Bräuer 2012) coherence|672 fs|500 fs|Y|✓ close match|POST_HOC_FIXED_FORM|34% off called close match
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L44|Coherence time τ|80 μs|~100 μs typical|N|✓ within range|POST_HOC_PER_TARGET|formula with F_TRZ⁸ divisor; 20% off called within range
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L44|Angular precision Δθ|3.27°|~5° (Wiltschko 1993)|Y|✓ within range|POST_HOC_PER_TARGET|formula arcsin(F_TRZ·[SSq]); 35% off called within range
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L44|Sensitivity B_min|15 fT|Earth 50 μT|N|3×10⁹× above threshold ✓|RANGE_ONLY|threshold comparison only
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L44|Larmor frequency|1.4 MHz|RF interference peak|Y|✓ matches Ritz 2004|INPUT_REPRODUCED|standard γ_e·B_Earth; no UQFF primitive
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|European Robin precision|3.3°|4-5°|N|none|RANGE_ONLY|single 3.3° vs range; below range
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|European Blackcap precision|3.3°|5-8°|N|none|RANGE_ONLY|below range
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|Homing Pigeon precision|3.3°|3-5°|N|none|RANGE_ONLY|inside range
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|Monarch Butterfly precision|3.3°|~8°|N|none|RANGE_ONLY|factor 2.4 off; no residual
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|Chinook Salmon precision|(different mechanism)|5-10°|N|none|NOT_A_COMPARISON|no UQFF value
+PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md|L53|Loggerhead Turtle precision|(different mechanism)|5-10°|N|none|NOT_A_COMPARISON|no UQFF value
+PAPER_1836_NEUTRON_LIFETIME_ANOMALY_UQFF.md|L40|Δτ_n (beam - bottle)|9.71 s|10.1 ± 2.1 s|N|3.9% (0.19σ ✓)|POST_HOC_PER_TARGET|formula F_TRZ²·A_5·[SSq]·Φ_res/D_crit · τ_n
+PAPER_1836_NEUTRON_LIFETIME_ANOMALY_UQFF.md|L40|τ_n_beam (UQFF)|888.1 s|888.5 ± 2.0 s|N|0.04% (0.2σ ✓)|POST_HOC_PER_TARGET|bottle input plus row-1 Δτ
+PAPER_1836_NEUTRON_LIFETIME_ANOMALY_UQFF.md|L40|τ_n_bottle (baseline)|878.4 s|878.4 ± 0.5 s|N|(input)|INPUT_REPRODUCED|identical digits; explicitly input
+PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md|L36|DM(z)/DM(z)_ΛCDM at z=1|1.0274|Macquart 2020 consistent|Y|✓ within 1σ|RANGE_ONLY|no external number; formula 1 + F_TRZ·z·[SSq]/K_MEX
+PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md|L36|DM(z) at z = 0.5 (typical CHIME)|1.0137|~5-10% precision|N|✓ testable|FORECAST_UNTESTED|1.4% effect vs 5-10% precision
+PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md|L36|DM(z) at z = 2 (DSA-2000 target)|1.0548|future data|N|✓ predicted|FORECAST_UNTESTED|future data
+PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md|L36|f_IGM (IGM baryon fraction)|0.886|~0.85 (standard)|N|4.2% ✓|POST_HOC_PER_TARGET|formula 1 - 2·F_TRZ·[SSq]; external is standard estimate
+PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md|L36|Ω_b (cosmic baryons)|0.0224 (from PAPER_1818)|0.0224 (Planck)|Y|matches|INPUT_REPRODUCED|identical digits after rounding 0.02224
+PAPER_1838_AMATERASU_UHECR_UQFF.md|L35|E_Amaterasu|254 EeV|244 ± 29 EeV|N|4.24% (0.36σ ✓)|POST_HOC_PER_TARGET|formula M_Planck·F_TRZ⁹·SO_5·K_MEX; exponent 9
+PAPER_1838_AMATERASU_UHECR_UQFF.md|L35|GZK cutoff ratio|5.1×|~4.9×|N|consistent|RANGE_ONLY|derived from row 1
+PAPER_1838_AMATERASU_UHECR_UQFF.md|L35|Direction|(via F_TRZ channels)|local void|N|✓ match|RANGE_ONLY|qualitative; "local void" appears in both columns
+PAPER_1838_AMATERASU_UHECR_UQFF.md|L35|Composition|Fe-56 group prediction|unknown|N|testable|FORECAST_UNTESTED|unknown
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L38|Waking (conscious)|0.670|0.44-0.67|N|✓ upper range|POST_HOC_PER_TARGET|row formula [SSq] + F_TRZ; at top edge of range
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L38|REM sleep (conscious)|0.579|0.40-0.60|N|✓ within range|POST_HOC_PER_TARGET|row formula [SSq]·Φ_res + F_TRZ
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L38|Consciousness threshold|0.308|~0.31|N|✓ 0.5% ESSENTIALLY EXACT|POST_HOC_PER_TARGET|row formula F_TRZ·(1 + K_MEX); observed ~0.31 is 2 sig figs
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L38|Deep sleep (unconscious)|0.208|0.24-0.31|N|predicts unconscious ✓|POST_HOC_PER_TARGET|row formula F_TRZ·K_MEX; 0.208 outside 0.24-0.31 yet ✓
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L38|Anesthesia (unconscious)|0.084|0.15-0.25|N|predicts deeply unconscious ✓|POST_HOC_PER_TARGET|row formula F_TRZ·Φ_res; 0.084 outside range yet ✓
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L48|Φ_human (whole brain)|59.85 bits|10-100 bits (Tononi)|Y|✓ mid-range|POST_HOC_PER_TARGET|formula A_5·[SSq]·Φ_res·K_MEX; decade-wide range
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L48|Φ_mammal (non-human)|53.9 bits|40-70 bits (est)|N|none|POST_HOC_PER_TARGET|Φ_human·(1 - F_TRZ); external is estimate
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L48|Φ_reptile|5.99 bits|5-15 bits (est)|N|none|POST_HOC_PER_TARGET|Φ_human·F_TRZ; F_TRZ power chosen per class
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L48|Φ_insect|0.599 bits|0.5-2 bits (est)|N|none|POST_HOC_PER_TARGET|Φ_human·F_TRZ²
+PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md|L48|Φ_bacterium|0.006 bits|~10⁻³ bits (Tononi)|Y|✓|POST_HOC_PER_TARGET|Φ_human·F_TRZ⁴; factor 6 off yet ✓
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L49|σ_p (nucleon)|3.25×10⁻⁴⁶ cm²|below current bounds|N|below current bounds|RANGE_ONLY|bound only; formula (F_TRZ²·[SSq])²·10⁻⁴¹ with 10⁻⁴¹ prefactor
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L49|σ_e (electron)|4.79×10⁻⁴⁵ cm²|below stellar cooling bounds ✓|N|below bounds|RANGE_ONLY|bound only; 10⁻⁴² prefactor
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L49|DM mass|0.267 eV (from PAPER_1253)|consistent|N|consistent|RANGE_ONLY|no external value named
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L49|sin²(2θ_14) mixing|0.0057|below MicroBooNE bound ✓|Y|below bound|RANGE_ONLY|bound only
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L49|Expected signal rate|1.4×10⁻⁵ ev/kg/day|testable at DARWIN 2032|Y|testable|FORECAST_UNTESTED|future experiment
+PAPER_1840_DM_DIRECT_DETECTION_UQFF.md|L138|(table)|—|experiment sensitivities|Y|—|NOT_A_COMPARISON|list of experimental sensitivities; no UQFF value in table
+PAPER_1842_HIGGS_SELF_COUPLING_LAMBDA_H_UQFF.md|L37|λ_H (self-coupling)|0.13029|0.1298|N|0.4% ✓|POST_HOC_PER_TARGET|formula [SSq]/(K_MEX·(2+F_TRZ)); external is SM value not measurement
+PAPER_1842_HIGGS_SELF_COUPLING_LAMBDA_H_UQFF.md|L37|κ_λ = λ_H/λ_H_SM|1.0036|1.00 (SM)|N|0.4% ✓|POST_HOC_PER_TARGET|derived from row 1; SM theory reference
+PAPER_1842_HIGGS_SELF_COUPLING_LAMBDA_H_UQFF.md|L37|di-Higgs σ(pp→HH) at HL-LHC|39.9 fb|39.6 fb (SM)|N|0.7%|FORECAST_UNTESTED|HL-LHC not yet measured; SM prediction reference
+PAPER_1842_HIGGS_SELF_COUPLING_LAMBDA_H_UQFF.md|L37|Vacuum stability|STABLE|metastable in SM|N|UQFF regulates|NOT_A_COMPARISON|qualitative theory statement
+PAPER_1843_21CM_REIONIZATION_EDGES_UQFF.md|L48|T_21 amplification|2.437|2.5× expected|N|✓ ratio match|POST_HOC_PER_TARGET|formula [SSq]·K_MEX·(1+F_TRZ)²; "expected" not measured
+PAPER_1843_21CM_REIONIZATION_EDGES_UQFF.md|L48|T_21(z=17)|-487 mK|-500 ± 200 mK|N|0.063σ ✓ essentially exact|POST_HOC_PER_TARGET|-200 mK·2.437; ±200 mK error makes most values near 0σ
+PAPER_1843_21CM_REIONIZATION_EDGES_UQFF.md|L48|Predicted profile z=6-20|full profile predicted|HERA/SKA target|Y|✓ testable|FORECAST_UNTESTED|future instruments
+PAPER_1843_21CM_REIONIZATION_EDGES_UQFF.md|L56|(table)|T_21_UQFF -122 to -487 mK|T_21_ΛCDM -50 to -200 mK|N|—|NOT_A_COMPARISON|UQFF-vs-ΛCDM only; experiments listed as context; z=17 EDGES anchor has no number
+PAPER_1844_GW190521_MASS_GAP_UQFF.md|L39|P_gap_BH formation|4.79%|5-10% (LIGO O3)|Y|✓ lower end match|POST_HOC_PER_TARGET|formula F_TRZ·[SSq]·Φ_res; 4.79% below 5-10% range yet ✓
+PAPER_1844_GW190521_MASS_GAP_UQFF.md|L39|Gap-BH merger rate|1.15 Gpc⁻³/yr|~1.5 Gpc⁻³/yr|N|✓ within factor 1.3|RANGE_ONLY|factor-level agreement
+PAPER_1844_GW190521_MASS_GAP_UQFF.md|L39|Modified gap boundaries|68.1-128.5 M_sun|65-135 SM|N|narrower|RANGE_ONLY|compared to stellar model, not data
+PAPER_1845_FINE_STRUCTURE_ALPHA_PRECISION_UQFF.md|L40|1/α|137.0355|137.03600|Y|0.00035%|POST_HOC_PER_TARGET|137 + small correction from 6 primitives; base 137 is input
+PAPER_1845_FINE_STRUCTURE_ALPHA_PRECISION_UQFF.md|L40|α|7.2974×10⁻³|7.2974×10⁻³|Y|0.00035%|POST_HOC_PER_TARGET|identical digits at shown precision; inverse of row 1
+PAPER_1845_FINE_STRUCTURE_ALPHA_PRECISION_UQFF.md|L40|CC2 baseline|0.138% precision|reference|N|350× improvement|NOT_A_COMPARISON|internal comparison
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L43|Human max lifespan|125 years|122.5 (Jeanne Calment)|Y|2.05% ✓|POST_HOC_PER_TARGET|formula A_5·K_MEX; single-person record as observed
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L43|Cross-consistency Φ/Lifespan|0.4788|60 bits / 125 years = 0.4800|N|0.25% ✓|NOT_A_COMPARISON|both sides UQFF-derived
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L43|Median lifespan|~83 years|~80 years (WHO)|Y|3.8% ✓|POST_HOC_PER_TARGET|ad hoc factor ~2/3 · Max
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L43|Biological age function|derived|testable|N|falsifiable|FORECAST_UNTESTED|no values
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Human lifespan (yr)|125|122 (Calment)|Y|none|POST_HOC_PER_TARGET|A_5·K_MEX; observed 122 here vs 122.5 in L43
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Chimpanzee lifespan (yr)|~60|60|N|none|POST_HOC_PER_TARGET|identical digits; per-row mechanism "mass scaling"
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Elephant lifespan (yr)|~70|70|N|none|POST_HOC_PER_TARGET|identical digits; per-row mechanism "metabolic scaling"
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Blue Whale lifespan (yr)|~90|90|N|none|POST_HOC_PER_TARGET|identical digits; per-row mechanism "mass + metabolic"
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Bowhead Whale lifespan (yr)|~200|200|N|none|POST_HOC_PER_TARGET|identical digits; per-row mechanism "enhanced coupling"
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Aldabra Tortoise lifespan (yr)|250|250|N|none|POST_HOC_PER_TARGET|identical digits; F_TRZ⁻¹ amplification chosen for row
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Greenland Shark lifespan (yr)|400|400|N|none|POST_HOC_PER_TARGET|identical digits; F_TRZ⁻² amplification chosen for row
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Naked Mole Rat lifespan (yr)|30|30|N|none|POST_HOC_PER_TARGET|identical digits; "enhanced [SSq]·Φ_res" chosen for row
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Mouse lifespan (yr)|4|4|N|none|POST_HOC_PER_TARGET|identical digits; F_TRZ³ reduction chosen for row
+PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md|L52|Immortal Jellyfish lifespan (yr)|∞|∞|N|none|POST_HOC_PER_TARGET|identical; "biological immortality" label
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|nEDM@PSI (2020) d_n bound|UQFF 57× below|1.8×10⁻²⁶|Y|57× below, safe|RANGE_ONLY|published bound only
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|ILL (2015) d_n bound|UQFF 100× below|3×10⁻²⁶|Y|100× below, safe|RANGE_ONLY|published bound only
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|n2EDM@PSI d_n sensitivity|UQFF 3× below|10⁻²⁷|Y|3× below, tantalizing|FORECAST_UNTESTED|running 2025-2027
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|LANL nEDM d_n sensitivity|3.18×10⁻²⁸|10⁻²⁸|Y|DISCOVERY|FORECAST_UNTESTED|2028-2030 target
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|nEDM@SNS d_n sensitivity|3.18×10⁻²⁸|10⁻²⁸|Y|DISCOVERY|FORECAST_UNTESTED|2028+ target
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|Future TUCAN (Canada) d_n sensitivity|UQFF discovery moment|10⁻²⁸|Y|none|FORECAST_UNTESTED|2030s
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L66|PanEDM (Munich) d_n sensitivity|UQFF just at edge|5×10⁻²⁸|Y|none|FORECAST_UNTESTED|building
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2020 nEDM@PSI d_n|3.18×10⁻²⁸|1.8×10⁻²⁶|Y|UQFF safe (below limit)|RANGE_ONLY|published bound only
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2025-2027 n2EDM@PSI d_n|3.18×10⁻²⁸|10⁻²⁷|Y|UQFF hint (below limit but tantalizing)|FORECAST_UNTESTED|future sensitivity
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2028-2030 LANL nEDM d_n|3.18×10⁻²⁸|10⁻²⁸|Y|DISCOVERY OR RULE OUT|FORECAST_UNTESTED|future sensitivity
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2028-2030 nEDM@SNS d_n|3.18×10⁻²⁸|10⁻²⁸|Y|DISCOVERY OR RULE OUT|FORECAST_UNTESTED|future sensitivity
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2030+ proton EDM storage ring|6.63×10⁻²⁸|10⁻²⁹|Y|UQFF above target — discovery|FORECAST_UNTESTED|future sensitivity
+PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md|L212|2035+ Ra molecule EDM|1.73×10⁻³²|10⁻³²|Y|UQFF right at edge|FORECAST_UNTESTED|future sensitivity
+PAPER_1848_AMS02_POSITRON_EXCESS_UQFF.md|L81|(table)|qualitative labels only|e⁺ fraction 0.05-0.16 by energy (AMS-02)|Y|—|NOT_A_COMPARISON|observed fractions with qualitative UQFF labels; only "PEAK" at 300 GeV claimed; no UQFF number
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L50|abs(ε_K)|2.298×10⁻³|2.228×10⁻³|Y|3.15% ✓|POST_HOC_PER_TARGET|formula F_TRZ²·[SSq]/K_MEX·Φ_res
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L50|Re(ε'/ε)|2.04×10⁻³|1.66×10⁻³|Y|22.9%|POST_HOC_PER_TARGET|formula F_TRZ·[SSq]·Φ_res·A_5/(K_MEX·D_crit²); 22.9% off
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L50|sin(2β)|0.619|0.699|Y|11.4%|POST_HOC_PER_TARGET|formula [SSq] + Φ_res·K_MEX/(D_crit+SO_5); 11.4% off
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L50|Universal modulator|0.2736|(appears 7× in UQFF)|N|—|NOT_A_COMPARISON|internal ratio [SSq]/K_MEX
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L192|sin(2β)|0.619|0.699|N|11.4%|POST_HOC_PER_TARGET|repeat of L50 formula
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L192|α (CKM)|~90°|84°|N|~7%|POST_HOC_FIXED_FORM|no formula shown
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L192|γ (CKM)|~60°|66°|N|~9%|POST_HOC_FIXED_FORM|no formula; PAPER_1817 gave γ=65.39° (0.922%)
+PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md|L192|δ_CKM (Jarlskog)|3.2×10⁻⁵|3.1×10⁻⁵|N|3.2%|POST_HOC_FIXED_FORM|PAPER_1817 gave J_CP 3.258e-5 vs 3.18e-5
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|BMV (current) birefringence bound|UQFF safe (10⁻³ below)|5×10⁻²¹ T⁻²|Y|10⁻³ below|RANGE_ONLY|published bound; no UQFF number
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|OSQAR (CERN) birefringence bound|UQFF safe|~10⁻²¹ T⁻²|Y|safe|RANGE_ONLY|published bound; no UQFF number
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|PVLAS-3 (this decade) sensitivity|UQFF at 42% of target|10⁻²³ T⁻²|Y|42% of target|FORECAST_UNTESTED|preparing
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|PVLAS-3 upgraded sensitivity|UQFF discovery moment|10⁻²⁴ T⁻²|Y|none|FORECAST_UNTESTED|2028+
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|IXPE magnetar polarimetry|UQFF consistent|~30% precision|Y|consistent|RANGE_ONLY|2022 published; qualitative
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|eXTP (China 2028+) precision|UQFF discriminates from HE|~10% precision|Y|none|FORECAST_UNTESTED|building
+PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md|L75|Athena X-ray obs (2035+) precision|UQFF definitive test|~5% precision|Y|none|FORECAST_UNTESTED|proposed
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Lamoreaux 1997 (torsion pendulum) precision|UQFF safe (0.479% below)|~5%|Y|0.479% below|RANGE_ONLY|published precision bound
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Mohideen-Roy 1998 (AFM) precision|UQFF safe|~1%|Y|safe|RANGE_ONLY|published precision bound
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Bressi 2002 (parallel plates) precision|UQFF far below|~15%|Y|far below|RANGE_ONLY|published precision bound
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Decca 2003 (MEMS) precision|UQFF safe|~1%|Y|safe|RANGE_ONLY|published precision bound
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Chan 2001 (torsional MEMS) precision|UQFF safe|~2%|Y|safe|RANGE_ONLY|published precision bound
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|Casimir 0.1% precision (2028+)|UQFF DISCOVERY at 4.8σ|0.1%|N|4.8σ|FORECAST_UNTESTED|targeted
+PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md|L64|CasPer + UAC 2030+ precision|UQFF definitive 48σ|~0.01%|Y|48σ|FORECAST_UNTESTED|proposed
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|Y_p (4He mass fraction)|0.2443|0.2453 (Aver)|Y|0.43%|POST_HOC_PER_TARGET|distinct primitive formula (1/D_phys)(1-F_TRZ[SSq]Phi_res/K_MEX) for this row only
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|D/H (deuterium)|2.528×10⁻⁵|2.527×10⁻⁵ (Cooke)|Y|0.042%|POST_HOC_PER_TARGET|distinct formula F_TRZ^5·SO_5·[SSq]·Phi_res·(1+F_TRZ)/K_MEX built for this row
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|3He/H|1.062×10⁻⁵|1.0×10⁻⁵ (Bania)|Y|6.18%|POST_HOC_PER_TARGET|row-specific formula D/H·Phi_res/2; observed value given to 2 sig figs
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|7Li/H|1.721×10⁻¹⁰|1.6×10⁻¹⁰ (Sbordone)|Y|7.59%|POST_HOC_PER_TARGET|row-specific formula SM×[SSq]·(1+F_TRZ)²/K_MEX; starts from SM value
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|6Li/7Li|2.30×10⁻³|< 0.05 (upper limit)|N|✓ consistent|RANGE_ONLY|compared only to an upper limit; no residual
+PAPER_1853_FULL_BBN_PRIMORDIAL_ABUNDANCE_SUITE_UQFF.md|L21|6Li/H|6.0×10⁻¹¹|< 10⁻¹¹ (upper limit)|N|✓ consistent|RANGE_ONLY|UQFF 6.0e-11 is above the stated upper limit 1e-11 yet marked consistent
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|σ (string tension)|0.1732 GeV²|0.180 (SU(3))|Y|3.80%|POST_HOC_PER_TARGET|row-specific formula m_YM²·[SSq]·Phi_res/(K_MEX·D_phys); column header Lattice/PDG
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|T_c (deconfinement)|173.2 MeV|155 (2+1f)|Y|11.72%|POST_HOC_PER_TARGET|row-specific formula m_YM·F_TRZ·[SSq]·K_MEX·Phi_res; 11.72% miss still checkmarked
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|α' (Regge slope)|0.919 GeV⁻²|0.88|Y|4.45%|POST_HOC_PER_TARGET|1/(2π·σ) derived from the σ row above; header Lattice/PDG
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|⟨G²⟩ (gluon condensate)|0.0115 GeV⁴|0.012 (SVZ)|Y|4.14%|POST_HOC_PER_TARGET|row-specific formula σ²·[SSq]·Phi_res·K_MEX·SO_5/D_crit
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|α_s (Cornell short)|0.274|0.30|Y|8.80%|POST_HOC_PER_TARGET|row-specific formula [SSq]/K_MEX
+PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md|L21|ΛQCD|199.76 MeV|200 MeV|Y|0.118% ⭐ EXACT|POST_HOC_PER_TARGET|√σ/K_MEX vs round-number 200 MeV; labeled EXACT with 0.118% residual
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ₁ (1st peak)|222.3|220|N|1.05%|POST_HOC_PER_TARGET|coefficient [SSq]=0.57 assigned to this peak
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ₂ (2nd peak)|549.9|540|N|1.83%|POST_HOC_PER_TARGET|coefficient [SSq]+Phi_res=1.41 chosen for this peak
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ₃ (3rd peak)|812.5|810|N|0.31%|POST_HOC_PER_TARGET|coefficient K_MEX=2.083 chosen for this peak
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ₄ (4th peak)|1140|1120|N|1.79%|POST_HOC_PER_TARGET|coefficient K_MEX+Phi_res=2.923 chosen for this peak
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ₅ (5th peak)|1362|1430|N|4.76%|POST_HOC_PER_TARGET|coefficient K_MEX+[SSq]+Phi_res=3.493 chosen for this peak
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ_D (Silk damping)|1362|~1300|N|4.80%|POST_HOC_PER_TARGET|same coefficient 3.493 reused as ℓ₅; observed given as ~1300
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L29|ℓ_A (acoustic scale)|304.9|301.76|N|1.05%|POST_HOC_PER_TARGET|via ℓ₁/0.729 with unexplained 0.729 factor
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L124|Ratio n=1|1.000|1.000|N|—|INPUT_REPRODUCED|identical digits; normalization row
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L124|Ratio n=2|2.474|2.455|N|—|POST_HOC_PER_TARGET|ratio derived from per-peak coefficients in L29 table; no residual stated
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L124|Ratio n=3|3.655|3.682|N|—|POST_HOC_PER_TARGET|ratio derived from per-peak coefficients in L29 table; no residual stated
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L124|Ratio n=4|5.128|5.091|N|—|POST_HOC_PER_TARGET|ratio derived from per-peak coefficients in L29 table; no residual stated
+PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md|L124|Ratio n=5|6.128|6.500|N|—|POST_HOC_PER_TARGET|ratio derived from per-peak coefficients in L29 table; largest miss, no residual
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Chirp mass M_c|1.1875 M_☉|1.188 (LIGO)|Y|0.042% ⭐ EXACT|POST_HOC_PER_TARGET|K_MEX·[SSq] product picked for this target; labeled EXACT at 0.042%
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Total mass M_total|2.870 M_☉|2.74|N|4.74%|POST_HOC_PER_TARGET|row-specific formula 2·K_MEX·[SSq]·(1+K_MEX·F_TRZ)
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Tidal deformability Λ̃|647.7|<800 (90% CL)|N|consistent ✓|RANGE_ONLY|compared to an upper bound only
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Blue kilonova peak|0.855 d|~1 d|N|14.50%|POST_HOC_PER_TARGET|row-specific formula A_5·F_TRZ·[SSq]/D_phys; observed ~1 d approximate
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Red kilonova peak|7.15 d|~7 d|N|2.14%|POST_HOC_PER_TARGET|row-specific formula A_5·F_TRZ·(K_MEX-1)·(1+F_TRZ); observed ~7 d approximate
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Ejecta mass|0.0457 M_☉|~0.05|N|8.65%|POST_HOC_PER_TARGET|row-specific formula K_MEX·[SSq]/D_crit; observed ~0.05 approximate
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|Ejecta velocity|0.208c|0.15-0.30c|N|in range ✓|RANGE_ONLY|band comparison only
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|r-proc A=80 peak|80|80|N|EXACT ⭐|POST_HOC_PER_TARGET|identical digits; SO_5·D_phys·2 assembled to give integer 80
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|r-proc A=130 peak|131|130|N|0.77%|POST_HOC_PER_TARGET|row-specific formula A_5·(K_MEX+F_TRZ)
+PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md|L21|r-proc A=195 peak|202.3|195|N|3.72%|POST_HOC_PER_TARGET|row-specific formula A_5·(K_MEX+K_MEX·[SSq]+F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|Δa_μ (muon)|2.298×10⁻⁹|2.51×10⁻⁹|N|8.44%|POST_HOC_PER_TARGET|row-specific formula F_TRZ⁹·SO_5·[SSq]·Phi_res/K_MEX
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_p (proton)|5.609|5.586|N|0.41%|POST_HOC_PER_TARGET|row-specific formula 2·(K_MEX+[SSq])·(1+F_TRZ·[SSq])
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_n (neutron)|-3.772|-3.826|N|1.41%|POST_HOC_PER_TARGET|row-specific formula -D_phys·(1-F_TRZ·[SSq])
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_d (deuteron)|0.835|0.857|N|2.53%|POST_HOC_PER_TARGET|row-specific formula [SSq]+F_TRZ·(K_MEX+[SSq])
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_3He (helion)|-4.274|-4.255|N|0.44%|POST_HOC_PER_TARGET|row-specific formula -(D_phys+[SSq]/K_MEX)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Λ (Lambda)|-1.245|-1.228|N|1.34%|POST_HOC_PER_TARGET|row-specific formula -(K_MEX+F_TRZ)·[SSq]
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Σ⁺ (Sigma+)|5.041|4.916|N|2.55%|POST_HOC_PER_TARGET|row-specific formula (K_MEX+[SSq])·(2-F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Σ⁻ (Sigma-)|-2.354|-2.32|N|1.48%|POST_HOC_PER_TARGET|row-specific formula -(K_MEX+[SSq]·F_TRZ)·(1+F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Ξ⁰ (Xi0)|-2.553|-2.5|N|2.13%|POST_HOC_PER_TARGET|row-specific formula -(K_MEX+[SSq]-F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Ξ⁻ (Xi-)|-1.309|-1.301|N|0.62%|POST_HOC_PER_TARGET|row-specific formula -(K_MEX-1)·(1+K_MEX·F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|g_Ω⁻ (Omega-)|-4.100|-4.04|N|1.49%|POST_HOC_PER_TARGET|row-specific formula -(D_phys+F_TRZ)
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|Δa_e (electron)|5.4×10⁻¹⁴|below precision|N|prediction|FORECAST_UNTESTED|scaled from Δa_μ by (m_e/m_μ)²; no measurement to compare
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L19|Δa_τ (tau)|6.5×10⁻⁷|not measured|N|prediction|FORECAST_UNTESTED|scaled from Δa_μ by (m_τ/m_μ)²; not measured
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|Δa_e|5.4×10⁻¹⁴|<10⁻¹² precision|N|below|FORECAST_UNTESTED|notes say future test; duplicate of L19 row
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|Δa_μ|2.298×10⁻⁹|2.51×10⁻⁹|Y|8.44%|POST_HOC_PER_TARGET|duplicate of L19 row; notes name Fermilab final
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|Δa_τ|6.5×10⁻⁷|not measured|Y|prediction|FORECAST_UNTESTED|notes name Belle II 2028+; duplicate of L19 row
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_p|5.609|5.586|N|0.41%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_n|-3.772|-3.826|N|1.41%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_d|0.835|0.857|N|2.53%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_3He|-4.274|-4.255|N|0.44%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Λ|-1.245|-1.228|N|1.34%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Σ⁺|5.041|4.916|N|2.55%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Σ⁻|-2.354|-2.32|N|1.48%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Ξ⁰|-2.553|-2.5|N|2.13%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Ξ⁻|-1.309|-1.301|N|0.62%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L56|g_Ω⁻|-4.100|-4.04|N|1.49%|POST_HOC_PER_TARGET|duplicate of L19 row; per-row formula shown in L19
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L280|6Li g-factor|4.362|0.822 (needs different form)|N|—|POST_HOC_PER_TARGET|formula ~K_MEX+[SSq]·D_phys fails by factor >5; row admits needs different form
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L280|9Be g-factor|prediction|−0.786|N|—|FORECAST_UNTESTED|no UQFF number; 'derivable' placeholder against an already-known value
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L280|15N g-factor|prediction|−0.283|N|—|FORECAST_UNTESTED|no UQFF number; 'derivable' placeholder against an already-known value
+PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md|L280|17O g-factor|prediction|−1.894|N|—|FORECAST_UNTESTED|no UQFF number; 'derivable' placeholder against an already-known value
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_τ (tau)|1.779 GeV|1.777|N|0.137%|POST_HOC_PER_TARGET|row-specific formula m_YM·(1+K_MEX·F_TRZ·[SSq]·Phi_res/D_phys)
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_μ (muon)|100.3 MeV|105.66|N|5.06%|POST_HOC_PER_TARGET|row-specific formula m_YM·F_TRZ·[SSq]·(1+F_TRZ)·D_phys/K_MEX²
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_e (electron)|0.522 MeV|0.511|N|2.24%|POST_HOC_PER_TARGET|row-specific formula m_YM·F_TRZ³·[SSq]·(1+F_TRZ)/K_MEX
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_u (up)|2.199 MeV|2.2|N|0.058% ⭐ ESSENTIALLY EXACT|POST_HOC_PER_TARGET|chained from m_e via m_e·(D_phys+K_MEX·F_TRZ); observed given to 2 sig figs
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_d (down)|4.801 MeV|4.7|N|2.14%|POST_HOC_PER_TARGET|chained from m_u via m_u·(K_MEX+F_TRZ)
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_s (strange)|94.60 MeV|95|N|0.43%|POST_HOC_PER_TARGET|chained from m_μ via m_μ·(1-F_TRZ·[SSq])
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_c (charm)|1.235 GeV|1.27|N|2.74%|POST_HOC_PER_TARGET|chained from m_τ via m_τ·Phi_res/(1+F_TRZ)²
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_b (bottom)|3.966 GeV|4.18|N|5.13%|POST_HOC_PER_TARGET|chained from m_c via m_c·(K_MEX+[SSq])·(1+F_TRZ)²
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_t (top)|181.4 GeV|172.5|N|5.17%|POST_HOC_PER_TARGET|row-specific formula m_YM·A_5·SO_5·[SSq]·(1+F_TRZ)/(D_phys·(1-F_TRZ))
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_W|80.44 GeV|80.379|N|0.076%|POST_HOC_PER_TARGET|formula deferred to PAPER_1820 SCm polarization; not shown here
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_Z|89.99 GeV|91.188|N|1.31%|POST_HOC_PER_TARGET|chained from m_W via m_W·(1+F_TRZ·K_MEX·[SSq])
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_H (Higgs)|121.8 GeV|125.25|N|2.75%|POST_HOC_PER_TARGET|M_Pl·F_TRZ¹⁷·[SSq]·K_MEX·Phi_res with exponent 17 chosen for this row
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_YM (gluon effective)|1.736 GeV|1.736|N|EXACT ⭐|INPUT_REPRODUCED|identical digits; 'observed' 1.736 is the framework's own PAPER_1318 gap value
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_ν₁|1.19 meV|1.19|N|matched ✓|INPUT_REPRODUCED|identical digits; individual neutrino masses not measured; restated from PAPER_1827
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_ν₂|8.6 meV|8.6|N|matched ✓|INPUT_REPRODUCED|identical digits; restated from PAPER_1827; no external source
+PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md|L21|m_ν₃|50 meV|50|N|matched ✓|INPUT_REPRODUCED|identical digits; restated from PAPER_1827; no external source
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|Pioneer a_P|8.92×10⁻¹⁰ m/s²|8.74×10⁻¹⁰|N|1.94%|POST_HOC_PER_TARGET|row-specific formula c·H_0·([SSq]+Phi_res·(1-F_TRZ·[SSq]))
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|Flyby Δv/v_∞|2.30×10⁻⁶|1.97×10⁻⁶ (NEAR)|Y|17.0%|POST_HOC_PER_TARGET|row-specific formula F_TRZ⁵·[SSq]·Phi_res/K_MEX; 17% miss
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|LAGEOS Lense-Thirring|~1% of GR|31 mas/yr GR|N|GR-consistent|RANGE_ONLY|'small F_UBi correction'; no number, compared to GR value
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|Mercury residual|~0.1 arcsec/century|0.13 arcsec/century|N|consistent|RANGE_ONLY|order-of-magnitude 'small F_UBi correction'; no residual
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|Earth-Moon drift residual|~0.1-1 cm/yr|0.17 cm/yr|N|consistent|RANGE_ONLY|decade-wide range vs single value
+PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md|L28|AU drift residual|~10 cm/yr|10 cm/yr|N|consistent|RANGE_ONLY|approximate ~10 vs 10; identical digits with no formula shown
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|ρ(770)|766.0 MeV|770|N|0.52%|POST_HOC_PER_TARGET|row-specific formula m_YM·[SSq]·Phi_res·D_phys/K_MEX²
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|ω(782)|787.0 MeV|782|N|0.64%|POST_HOC_PER_TARGET|chained from M_ρ via (1+F_TRZ·[SSq]/K_MEX)
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|K*(892)|925.6 MeV|892|N|3.77%|POST_HOC_PER_TARGET|chained from M_ρ via (1+F_TRZ·K_MEX)
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|φ(1020)|996.6 MeV|1020|N|2.30%|POST_HOC_PER_TARGET|chained from M_ρ via (K_MEX+[SSq]·(1+F_TRZ))/K_MEX
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|J/ψ(3097)|3.097 GeV|3.097|N|0.0000% ⭐⭐⭐ EXACT|POST_HOC_PER_TARGET|identical digits; 2·m_c+[SSq]·(1+F_TRZ) uses m_c=1.235 which was 2.74% off PDG
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|ψ'(3686)|3.787 GeV|3.686|N|2.73%|POST_HOC_PER_TARGET|chained from J/ψ via +[SSq]·(1+F_TRZ)²
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Υ(9460)|9.462 GeV|9.460|N|0.02% ⭐⭐|POST_HOC_PER_TARGET|2·m_b+m_YM·(1-F_TRZ·K_MEX·[SSq]) uses m_b=3.966 which was 5.13% off PDG
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Υ(2S)|9.592 GeV|10.023|N|4.30%|POST_HOC_PER_TARGET|chained from Υ via +[SSq]·F_TRZ·K_MEX·(1+F_TRZ)
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|p(938)|957.2 MeV|938|N|2.05%|POST_HOC_PER_TARGET|row-specific formula [SSq]·m_YM·D_phys·(1+F_TRZ)/(K_MEX·(K_MEX+F_TRZ))
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Λ(1116)|1156.6 MeV|1116|N|3.64%|POST_HOC_PER_TARGET|chained from m_p via (1+F_TRZ·K_MEX)
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Σ⁰(1193)|1211.2 MeV|1193|N|1.52%|POST_HOC_PER_TARGET|chained from m_p via (1+F_TRZ·(K_MEX+[SSq]))
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Ξ(1315)|1291.4 MeV|1315|N|1.79%|POST_HOC_PER_TARGET|chained from m_p via (1+2·F_TRZ·K_MEX)/(1+F_TRZ/2)
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Ω⁻(1672)|1659.1 MeV|1672|N|0.77%|POST_HOC_PER_TARGET|chained from m_p via (1+F_TRZ·(K_MEX·D_phys-1))
+PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md|L35|Δ(1232)|1255.8 MeV|1232|N|1.93%|POST_HOC_PER_TARGET|chained from m_p via (1+F_TRZ·(SO_5-D_phys)·(K_MEX-1)/K_MEX)
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|YBCO T_c|92.7 K|93 K|N|0.37% ⭐⭐|POST_HOC_PER_TARGET|row-specific formula T_base·[SSq]·(K_MEX+[SSq]·(1+F_TRZ))
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|MgB2 T_c|39.1 K|39 K|N|0.28% ⭐⭐|POST_HOC_PER_TARGET|formula carries explicit bare factor ·0.96 not derived from primitives
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|Hg-cuprate T_c|141.3 K|133 K|N|6.21%|POST_HOC_PER_TARGET|row-specific formula T_base·K_MEX·(K_MEX-F_TRZ)·[SSq]
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|LSCO T_c|40.7 K|38 K|N|7.20%|POST_HOC_PER_TARGET|same form as MgB2 minus the 0.96 factor
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|FeSe/SrTiO3 T_c|69.0 K|65-100 K|N|in range|RANGE_ONLY|band comparison; row-specific formula
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|H_3S @150 GPa T_c|199.3 K|203 K|N|1.80%|POST_HOC_PER_TARGET|row-specific formula T_base·(K_MEX+SO_5·[SSq]/K_MEX)·[SSq]·(1+F_TRZ)²
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|LaH_10 @170 GPa T_c|240.1 K|250 K|N|3.96%|POST_HOC_PER_TARGET|row-specific formula with extra K_MEX/(K_MEX+F_TRZ) factor
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L26|RT-SC upper bound T_c|323 K|target 293+|N|prediction ⭐⭐|FORECAST_UNTESTED|engineering target, no measurement
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|YBCO T_c|92.7 K|93 K|N|0.37% ⭐⭐|POST_HOC_PER_TARGET|duplicate of L26 row; per-row formula in L26
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|MgB2 T_c|39.1 K|39 K|N|0.28% ⭐⭐|POST_HOC_PER_TARGET|duplicate of L26 row; L26 formula has bare 0.96 factor
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|Hg-cuprate T_c|141.3 K|133 K|N|6.21%|POST_HOC_PER_TARGET|duplicate of L26 row
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|LSCO T_c|40.7 K|38 K|N|7.20%|POST_HOC_PER_TARGET|duplicate of L26 row
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|FeSe/STO T_c|69.0 K|65-100|N|in range|RANGE_ONLY|duplicate of L26 row; band only
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|H_3S T_c|199.3 K|203 K|N|1.80%|POST_HOC_PER_TARGET|duplicate of L26 row
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|LaH_10 T_c|240.1 K|250 K|N|3.96%|POST_HOC_PER_TARGET|duplicate of L26 row
+PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md|L51|RT-SC target T_c|323 K|293+|N|⭐⭐ ENGINEERING TARGET|FORECAST_UNTESTED|duplicate of L26 row; no measurement
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|Planck|1.22×10¹⁹ GeV|1.22×10¹⁹|N|—|INPUT_REPRODUCED|identical digits; row labeled M_Pl (foundational)
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|GUT unification|1.28×10¹⁶ GeV|~10¹⁶|N|27.9%|POST_HOC_PER_TARGET|row-specific formula; 'observed' ~1e16 is a theoretical scale, not a measurement
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|EW breaking v|258.4 GeV|246|N|5.03%|POST_HOC_PER_TARGET|chained from m_W via (K_MEX+D_phys)·(1+F_TRZ)/K_MEX; 5% miss starred
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|Higgs mass|121.7 GeV|125.25|N|2.84%|POST_HOC_PER_TARGET|M_Pl·F_TRZ¹⁷ with exponent chosen; 121.8 in PAPER_1859 vs 121.7 here
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|W-boson|80.44 GeV|80.379|N|0.076%|POST_HOC_PER_TARGET|formula deferred to PAPER_1820; not shown
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|EW phase T|147 GeV|~160|N|8.10% ✓|POST_HOC_PER_TARGET|chained from m_H via (1+K_MEX·F_TRZ); observed approximate
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|Yang-Mills gap|1.736 GeV|1.736|N|EXACT ⭐|INPUT_REPRODUCED|identical digits; 'observed' is the framework's own PAPER_1318 value
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|Chiral SB scale|1.315 GeV|1.16|N|13.4% ✓|POST_HOC_PER_TARGET|standard 4π·f_π with no UQFF primitive; 13.4% miss checkmarked
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|ΛQCD|199.74 MeV|200|N|0.13% EXACT ⭐⭐⭐|POST_HOC_PER_TARGET|√σ/K_MEX vs round 200; 199.76 in PAPER_1854 vs 199.74 here; labeled EXACT
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L27|Neutrino m_3|50 meV|50 meV|N|matched|INPUT_REPRODUCED|identical digits; restated from PAPER_1827; m_3 not individually measured
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Planck M_Pl|1.22×10¹⁹ GeV|1.22×10¹⁹|N|foundational|INPUT_REPRODUCED|identical digits; duplicate of L27 row
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|GUT|1.28×10¹⁶ GeV|~10¹⁶|N|27.9%|POST_HOC_PER_TARGET|duplicate of L27 row; theoretical scale not measurement
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|EW vev v|258.4 GeV|246|N|5.03% ⭐|POST_HOC_PER_TARGET|duplicate of L27 row
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Higgs m_H|121.7 GeV|125.25|N|2.84% ⭐|POST_HOC_PER_TARGET|duplicate of L27 row
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|W-boson|80.44 GeV|80.379|N|0.076% ⭐|POST_HOC_PER_TARGET|duplicate of L27 row; formula deferred to PAPER_1820
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|EW phase T|147 GeV|~160|N|8.10% ✓|POST_HOC_PER_TARGET|duplicate of L27 row
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Y-M gap m_YM|1.736 GeV|1.736|N|EXACT ⭐|INPUT_REPRODUCED|identical digits; duplicate of L27 row; internal PAPER_1318 value
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Chiral SB Λ_χSB|1.315 GeV|1.16|N|13.4%|POST_HOC_PER_TARGET|duplicate of L27 row; 4π·f_π
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|ΛQCD|199.74 MeV|200|N|0.13% EXACT ⭐⭐⭐|POST_HOC_PER_TARGET|duplicate of L27 row; labeled EXACT at 0.13%
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|ν_3 mass|50 meV|50 meV|N|matched ✓|INPUT_REPRODUCED|identical digits; duplicate of L27 row
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Sphaleron E_sph|10.4 TeV|~9 TeV|N|15.9%|POST_HOC_PER_TARGET|no formula shown; 15.9% miss vs theoretical ~9 TeV
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Peccei-Quinn f_PQ|2×10⁹ GeV|10⁹-10¹²|N|in range|RANGE_ONLY|three-decade window; f_PQ not measured
+PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md|L58|Weinberg sin²θ_W|0.201|0.2312|N|13.1%|POST_HOC_PER_TARGET|no formula shown; 13.1% miss on a precisely measured quantity
+PAPER_187_Canonical_7_Object_MUGESystem_Catalog.md|L284|SGR 1745-2900 g_MUGE|2.0×10¹⁸ m/s²|≈10¹² m/s² (NS surface)|Y|—|POST_HOC_FIXED_FORM|UQFF 2.0e18 vs observed ~1e12: six orders of magnitude apart; no residual stated
+PAPER_187_Canonical_7_Object_MUGESystem_Catalog.md|L284|Sagittarius A* g_MUGE|1.4×10⁻⁶ m/s²|≈1.4×10⁻⁶ m/s² (GR)|Y|—|POST_HOC_FIXED_FORM|identical digits; compared to GR value not a measurement; source EHT 2022
+PAPER_187_Canonical_7_Object_MUGESystem_Catalog.md|L284|Pillars of Creation g_MUGE|1.9×10⁻¹⁶ m/s²|~10⁻¹⁶ (Jeans)|Y|—|RANGE_ONLY|order-of-magnitude vs Jeans estimate; source HST/JWST
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Villin headpiece HP t_fold|1.7 ms|0.7 μs (ultrafast)|N|slow-off ⭐|POST_HOC_FIXED_FORM|UQFF 1.7 ms vs 0.7 μs: ~3 orders off yet starred
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|CI2 t_fold|5.8 ms|~10 ms|N|⭐⭐|POST_HOC_FIXED_FORM|N-dependent form; no residual, stars only; observed ~10 ms
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Ubiquitin t_fold|8.4 ms|15 ms|N|⭐⭐⭐|POST_HOC_FIXED_FORM|8.4 vs 15 ms given three stars; no residual
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Cytochrome c t_fold|15.9 ms|1-1000 ms range|N|⭐⭐⭐|RANGE_ONLY|three-decade observed range
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Barnase t_fold|17.8 ms|20 ms|N|⭐⭐⭐|POST_HOC_FIXED_FORM|no residual stated; stars only
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Ribonuclease A t_fold|22.7 ms|100 ms|N|⭐⭐|POST_HOC_FIXED_FORM|22.7 vs 100 ms (factor >4) given two stars
+PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md|L137|Larger proteins (200-300) t_fold|62 ms|100-500 ms|N|⭐⭐|RANGE_ONLY|62 ms lies outside the stated 100-500 ms range yet starred
+PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md|L137|Virgo M_vir_UQFF|1.27e15|1.28e15|N|0.64%|POST_HOC_FIXED_FORM|constant ratio M_vir_UQFF/M_vir_classical across rows; single observed value
+PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md|L137|Coma M_vir_UQFF|4.52e15|4.5-5e15|N|in-band|RANGE_ONLY|band comparison
+PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md|L137|Perseus M_vir_UQFF|6.39e15|6-8e15|N|in-band|RANGE_ONLY|band comparison
+PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md|L137|Bullet Cluster M_vir_UQFF|4.75e15|4.5-5e15|N|in-band|RANGE_ONLY|band comparison
+PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md|L137|Abell 2029 M_vir_UQFF|3.58e15|3-4e15|N|in-band|RANGE_ONLY|band comparison
+PAPER_1896_VOID_H0_SHIFT_UQFF.md|L84|Void H_0 shift Delta_H_0|3.510 km/s/Mpc|~3.5 km/s/Mpc|N|0.30%|POST_HOC_PER_TARGET|67.4·F_TRZ·K_MEX/D_phys; observed given only as ~3.5
+PAPER_1896_VOID_H0_SHIFT_UQFF.md|L84|Fractional shift Delta_H_0/H_0|0.0521|~0.052|N|0.30%|POST_HOC_PER_TARGET|same quantity as row 1 divided by 67.4; observed ~0.052 approximate
+PAPER_1896_VOID_H0_SHIFT_UQFF.md|L84|Local void H_0|70.91|70-71 (SH0ES-like)|Y|in-band|RANGE_ONLY|band comparison; 'SH0ES-like' not a specific measurement
+PAPER_1900_HELIOSPHERE_SOLAR_WIND_UQFF.md|L25|(table)|—|~400 km/s / ~750-800 km/s|N|—|NOT_A_COMPARISON|lists observed solar-wind regimes only; no UQFF values
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=2 99% suppression|10⁻²|Regime ratio 100:1 (multi-source)|N|EXACT|RANGE_ONLY|order-of-magnitude power of F_TRZ vs unspecified 'multi-source' ratio
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=7 Solar U_i|2.75e-7|PAPER_646 anchor|N|EXACT|INPUT_REPRODUCED|compared to the framework's own PAPER_646 anchor, not external data
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=8 Bird magnetoreception|10⁸|Cryptochrome amplif|N|EXACT|RANGE_ONLY|no external number; order-of-magnitude label only
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=9 Muon g-2|2.298e-9|Δa_μ measured (Fermilab)|Y|EXACT|POST_HOC_PER_TARGET|same 2.298e-9 is 8.44% off 2.51e-9 in PAPER_1858; here labeled EXACT
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=10 Strong CP θ|10⁻¹⁰|nEDM ≤ 10⁻¹⁰|N|EXACT|RANGE_ONLY|bound only; a limit cannot be an EXACT match
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=10 MOND a_0|1.24e-10 m/s²|McGaugh 2016|Y|EXACT|POST_HOC_PER_TARGET|no observed number given; distinct formula c·H_0·SSq·K_MEX/(2π) not an F_TRZ power
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=15 WEP η|10⁻¹⁵|MICROSCOPE 2017|Y|EXACT|RANGE_ONLY|MICROSCOPE is an upper limit; order-of-magnitude only
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=16 Quantum collapse|10⁻¹⁶/s|GRW rate|N|EXACT|RANGE_ONLY|GRW rate is a model parameter, not a measurement; 'mass factor' unspecified
+PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md|L247|n=17 Hierarchy m_H/M_P|10⁻¹⁷|LHC m_H = 125 GeV|Y|EXACT|RANGE_ONLY|order-of-magnitude ratio labeled EXACT
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|M31 Andromeda f_DM|0.80 EXACT|0.80 (PAPER_275)|N|EXACT|INPUT_REPRODUCED|identical digits; anchor taken from the framework's own PAPER_275
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|Milky Way f_DM|0.80 EXACT|0.75-0.85|N|within|RANGE_ONLY|band comparison; single universal value
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|M33 Triangulum f_DM|0.80 EXACT|0.85-0.90|N|12% high|RANGE_ONLY|0.80 lies below the stated band
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|NGC 3198 f_DM|0.80 EXACT|0.75-0.85|N|within|RANGE_ONLY|band comparison
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|Large Magellanic Cloud f_DM|0.80 EXACT|0.70-0.85|N|within|RANGE_ONLY|band comparison
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|Small Magellanic Cloud f_DM|0.80 EXACT|0.60-0.85|N|within upper|RANGE_ONLY|band comparison
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|Ultra-diffuse galaxies f_DM|0.80 EXACT|0.95-0.99|N|falsification if very high|RANGE_ONLY|0.80 outside stated 0.95-0.99 band; row hedges rather than counts as miss
+PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md|L133|Ultra-compact dwarfs f_DM|0.80 EXACT|0.10-0.30|N|falsification if very low|RANGE_ONLY|0.80 outside stated 0.10-0.30 band; row hedges rather than counts as miss
+PAPER_1935_R_PROCESS_EQUALS_NUCLEAR_MAGIC_NUMBERS_UQFF.md|L51|(table)|—|N = 50 / 82 / 126|N|—|NOT_A_COMPARISON|lists observed r-process neutron numbers only; no UQFF column
+PAPER_1945_MAGNETAR_N_LOBES_TIMES_FTRZ_UNIVERSALITY_CONFIRMED_UQFF.md|L29|SGR 1745-2900 B/B_crit|2 * F_TRZ|0.20 (from measured B 2.0 * 10^10 T)|N|—|POST_HOC_PER_TARGET|integer n_lobes=2 assigned per object to match ratio; B_crit not stated
+PAPER_1945_MAGNETAR_N_LOBES_TIMES_FTRZ_UNIVERSALITY_CONFIRMED_UQFF.md|L29|SGR 0501+4516 B/B_crit|1 * F_TRZ|0.10 (from measured B 1.0 * 10^10 T)|N|—|POST_HOC_PER_TARGET|integer n_lobes=1 assigned per object to match ratio; B_crit not stated
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|D_phys * SO_5^3 tau_B magnetar B-decay|4 kyr|SGR 0501+4516 magnetic-field decay|N|—|RANGE_ONLY|order-of-magnitude slot; anchor is internal PAPER_1946, no external number
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|SO_5^4 tau_Omega magnetar spin-down|10 kyr|SGR 0501+4516 rotational decay|N|—|RANGE_ONLY|order-of-magnitude slot; anchor is internal PAPER_1946, no external number
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|SO_5^6 tau_Pillars PDR erosion|1 Myr|Pillars of Creation photoevaporation|N|—|RANGE_ONLY|order-of-magnitude slot; anchor is internal PAPER_1948, no external number
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|D_phys * SO_5^6 tau_Bubble PDR erosion|4 Myr|Bubble Nebula photoevaporation|N|—|RANGE_ONLY|order-of-magnitude slot; anchor is internal PAPER_1948, no external number
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|(SO_5/2) * SO_5^6 tau_Horsehead + t_ff_NGC4945|5 Myr|Horsehead + NGC 4945 nuclear|N|—|RANGE_ONLY|slot prefactor SO_5/2 chosen to hit 5 Myr; internal anchors only
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|SO_5^8 tau_SF galaxy SF cycle|100 Myr|StarFormationGravity model|N|—|RANGE_ONLY|anchor is the framework's own model (PAPER_1952), not data
+PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md|L79|SO_5^10|10 Gyr|Hubble time|N|—|RANGE_ONLY|order-of-magnitude; Hubble time ~13.8 Gyr not stated
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|Q_ITER target|10|10 (design)|Y|EXACT|POST_HOC_PER_TARGET|identical digits; primitive SO_5 equated to a design target, not a measurement
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|T_opt_burn|15 keV|14-16 keV|N|EXACT|RANGE_ONLY|band comparison labeled EXACT
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|T_peak_σ|65 keV|65-70 keV|N|EXACT|RANGE_ONLY|band comparison labeled EXACT; A_5·(K_MEX−1) chosen for this row
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|E_α/E_total|0.200|0.199|N|EXACT|POST_HOC_PER_TARGET|1/(D_phys+1) chosen for this row; 0.200 vs 0.199 labeled EXACT
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|q_95 safety factor|3|3.0 (ITER)|Y|EXACT|POST_HOC_PER_TARGET|identical digits; D_phys−1 equated to an ITER design value
+PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md|L65|T_min_burn|4 keV|4-5 keV|N|EXACT|RANGE_ONLY|band comparison labeled EXACT
+PAPER_1972_V_WIND_2000_KM_S_EXTENSION_TO_ANTENNAE_MERGER_UQFF.md|L54|Westerlund 2 v_wind|(D_phys/2) × SO_5^6|2 × 10^6 m/s|N|2/2 EXACT|POST_HOC_PER_TARGET|observed value rounded to 1 sig fig; prefactor D_phys/2 chosen to give 2e6
+PAPER_1972_V_WIND_2000_KM_S_EXTENSION_TO_ANTENNAE_MERGER_UQFF.md|L54|NGC 3603 v_wind|(D_phys/2) × SO_5^6|2 × 10^6 m/s|N|2/2 EXACT|POST_HOC_PER_TARGET|observed value rounded to 1 sig fig; same form as row above
+PAPER_1979_M_DM_OVER_M_TOTAL_2_F_TRZ_SOMBRERO_CROSS_DOMAIN_UQFF.md|L83|SGR 1745-2900 B/B_crit|2·F_TRZ|0.20 (from measured B 2.0×10¹⁰ T)|N|—|POST_HOC_PER_TARGET|duplicate of PAPER_1945 L29; n_lobes=2 assigned per object
+PAPER_1979_M_DM_OVER_M_TOTAL_2_F_TRZ_SOMBRERO_CROSS_DOMAIN_UQFF.md|L83|SGR 0501+4516 B/B_crit|1·F_TRZ|0.10 (from measured B 1.0×10¹⁰ T)|N|—|POST_HOC_PER_TARGET|duplicate of PAPER_1945 L29; n_lobes=1 assigned per object
+PAPER_2036_CLASS_FAMILY_VARIABLE_SCAN_FOURTH_PASS_DIAD_UQFF.md|L68|(table)|—|—|N|—|NOT_A_COMPARISON|internal tally of novel variables and catalog validations per pass
+PAPER_2064_COMPOUND_PREFIX_CATEGORY_POPULATION_AUDIT_UQFF.md|L72|m_t (top)|181.4 GeV|172.5 (5.17%)|N|5.17%|POST_HOC_PER_TARGET|duplicate of PAPER_1859 L21 row; row-specific multi-primitive formula
+PAPER_2064_COMPOUND_PREFIX_CATEGORY_POPULATION_AUDIT_UQFF.md|L72|m_μ (muon)|100.3 MeV|105.66 (5.06%)|N|5.06%|POST_HOC_PER_TARGET|duplicate of PAPER_1859 L21 row; other rows defer to PAPER_1859 with no values
+PAPER_2122_CONSTANT_TRIPLE_CONVERGENCE_BETA_I_RHO_VAC_C_FIRST_3_CONSTANT_INSTANCE_PAPER_2121_PREDICTION_VALIDATION_UQFF_LANDMARK.md|L58|(table)|—|—|N|—|NOT_A_COMPARISON|forecast vs actual corpus round numbers; internal bookkeeping, no physical data
+PAPER_2123_AETHER_METRIC_TRIPLE_G_C_RHO_VAC_SECOND_CONSTANT_TRIPLE_INSTANCE_ZERO_ROUND_PREDICTION_VALIDATION_STREAK_UQFF_LANDMARK.md|L54|(table)|—|—|N|—|NOT_A_COMPARISON|forecast vs actual corpus round numbers; internal bookkeeping, no physical data
+PAPER_2132_VACUUM_COUPLING_KERNEL_K_19_160_EXACT_FIVE_INSTANCE_CENSUS_ALPHA_S_LAMBDA_H_MH_MT_JARLSKOG_N_EFF_PLUS_1_12_TILT_FACTORIZATION_F_TRZ_PHI_5_6_UQFF_LANDMARK.md|L22|α_s(M_Z)|0.1179167|0.1179|N|0.014%|POST_HOC_PER_TARGET|kernel K=19/160 plus row-specific correction −F_TRZ³·Φ_5/6
+PAPER_2132_VACUUM_COUPLING_KERNEL_K_19_160_EXACT_FIVE_INSTANCE_CENSUS_ALPHA_S_LAMBDA_H_MH_MT_JARLSKOG_N_EFF_PLUS_1_12_TILT_FACTORIZATION_F_TRZ_PHI_5_6_UQFF_LANDMARK.md|L22|λ_H|0.1294375|0.1293|N|0.106%|POST_HOC_PER_TARGET|kernel K plus row-specific correction +F_TRZ³·K_MEX·N_CH·SSq
+PAPER_2132_VACUUM_COUPLING_KERNEL_K_19_160_EXACT_FIVE_INSTANCE_CENSUS_ALPHA_S_LAMBDA_H_MH_MT_JARLSKOG_N_EFF_PLUS_1_12_TILT_FACTORIZATION_F_TRZ_PHI_5_6_UQFF_LANDMARK.md|L22|m_H/m_t|0.72165|0.725288|N|0.50%|POST_HOC_PER_TARGET|row-specific form β_i + K
+PAPER_2132_VACUUM_COUPLING_KERNEL_K_19_160_EXACT_FIVE_INSTANCE_CENSUS_ALPHA_S_LAMBDA_H_MH_MT_JARLSKOG_N_EFF_PLUS_1_12_TILT_FACTORIZATION_F_TRZ_PHI_5_6_UQFF_LANDMARK.md|L22|J_CP (Jarlskog)|3.0139×10⁻⁵|3×10⁻⁵|N|0.46%|POST_HOC_PER_TARGET|row-specific form F_TRZ⁵·D_BSFG·SSq·(1−K); observed given to 1 sig fig
+PAPER_2132_VACUUM_COUPLING_KERNEL_K_19_160_EXACT_FIVE_INSTANCE_CENSUS_ALPHA_S_LAMBDA_H_MH_MT_JARLSKOG_N_EFF_PLUS_1_12_TILT_FACTORIZATION_F_TRZ_PHI_5_6_UQFF_LANDMARK.md|L22|N_eff|3.04792|3.046|N|0.063%|POST_HOC_PER_TARGET|row-specific form D_phys − Φ_5/6 − K; 3.046 is the SM theory value not a measurement
+PAPER_2141_COMPLETE_CODATA_G_ELIMINATION_1421_LITERALS_ZERO_REMAINING_CONDENSEDPHYSICS_PY_FULLY_G_PRIMITIVE_CLEAN_BULK_PYTHON_CLEANUP_STANDING_RULE_V3_UQFF_LANDMARK.md|L192|(table)|—|—|N|—|NOT_A_COMPARISON|code-literal counts per source file; no physics comparison
+PAPER_2147_J_PER_M3_NATIVE_VS_SM_KG_PER_M3_NATIVE_UNIT_DIRECTION_REVERSAL_PATTERN_PAPER_1235_SPOTTED_CORPUS_CONTAMINATION_IN_RHO_LAMBDA_COMPARISONS_STANDING_RULE_AGAINST_SILENT_FRAMEWORK_TRANSLATION_UQFF_LANDMARK.md|L100|(table)|—|Planck Ω_m·ρ_crit / Y_p + N_eff / Planck Λ|Y|—|NOT_A_COMPARISON|unit-conversion table (kg/m³ to J/m³); 'Observed' column names sources but gives no numbers
+PAPER_2157_NEUTRON_LIFETIME_PUZZLE_BOTTLE_BEAM_SINGLE_HIERARCHY_TEMPLATE_UQFF_LANDMARK.md|L62|τ_n bottle|877.565 s|877.75 ± 0.28 s|N|0.021% (−0.66σ)|POST_HOC_PER_TARGET|formula not shown; PAPER_2159 L49 shows exponent 23.833333 variant selected for this value
+PAPER_2157_NEUTRON_LIFETIME_PUZZLE_BOTTLE_BEAM_SINGLE_HIERARCHY_TEMPLATE_UQFF_LANDMARK.md|L95|τ_n beam|887.684 s|887.70 ± 2.20 s|N|0.0018% (−0.007σ)|POST_HOC_PER_TARGET|separate hierarchy built for beam value; agrees to 4 sig figs, formula not shown
+PAPER_2159_BBN_THIRD_PHI_5_6_COUNTING_SECTOR_REGISTRATION_UQFF_LANDMARK.md|L49|τ_bottle (Φ_5/6 = 0.83333 variant)|877.565 s|877.75 s|N|0.021%|POST_HOC_PER_TARGET|exponent 23.833333; better-fitting of two variants selected
+PAPER_2159_BBN_THIRD_PHI_5_6_COUNTING_SECTOR_REGISTRATION_UQFF_LANDMARK.md|L49|τ_bottle (Φ_res = 0.84 variant)|874.875 s|877.75 s|N|0.328%|POST_HOC_PER_TARGET|exponent 23.832000; rejected variant shown alongside
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Higgs trilinear κ_λ|1.0 EXACT (no anomaly)|HL-LHC di-Higgs; kill if outside ~[0.5, 1.5] at 5σ|Y|—|FORECAST_UNTESTED|SM value 1.0 restated as prediction; kill window is wide
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Leptonic CP phase δ_CP|−π/2 EXACT (maximal F_TRZ lock)|DUNE / Hyper-K; kill if ≠ −π/2 beyond 3σ|Y|—|FORECAST_UNTESTED|future experiment
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|BR(μ→eγ)|α⁶·Φ_res = 1.27×10⁻¹³|MEG-II (bound 4.2×10⁻¹³)|Y|—|FORECAST_UNTESTED|below current bound; future test
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Neutron non-β branching|F_TRZ²·(D_BSFG−D_phys)·SSq = 1.140%|UCNτ-II / PERKEO-IV; kill if outside [1.0%, 1.3%]|Y|—|FORECAST_UNTESTED|future experiment
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Hubble constant|A_5+SO_5 = 70 km/s/Mpc EXACT|JWST + Roman + LSST; kill if outside [68.5, 71.5]|Y|—|FORECAST_UNTESTED|round-number sum of primitives; kill window spans the current tension
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Li-7 survival fraction|D_phys·F_TRZ·Φ_5/6 = 1/3 EXACT|next-gen halo-star abundances; kill if outside [0.30, 0.37]|N|—|FORECAST_UNTESTED|future measurement
+PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md|L29|Neutrino mass sum|α·Φ_res·(D_phys+1)·K_Mex = 0.0639 eV|CMB-S4 / DESI; kill if < 0.058 or > 0.09 eV|Y|—|FORECAST_UNTESTED|future measurement
+PAPER_2165_LAMBDA_ALPHA_SYMBOL_DRIFT_CORRECTION_UQFF_LANDMARK.md|L18|(table)|—|—|N|—|NOT_A_COMPARISON|symbol-drift correction of formulas; no observed values
+PAPER_221_Bubble_Nebula_Positive_Enhancement_UQFF.md|L83|Shell expansion velocity|4.3 km/s (7.5% enhancement)|4.0 km/s|N|—|POST_HOC_FIXED_FORM|7.5% is the stated enhancement, not a residual; prediction exceeds observed
+PAPER_221_Bubble_Nebula_Positive_Enhancement_UQFF.md|L83|Shell radius|consistent|3 pc|N|consistent|RANGE_ONLY|no UQFF number given
+PAPER_221_Bubble_Nebula_Positive_Enhancement_UQFF.md|L83|Ionization front thickness|0.28 pc|0.3 pc|N|—|POST_HOC_FIXED_FORM|no residual stated; observed given to 1 sig fig
+PAPER_2255_THE_OPEN_ITEMS_CENSUS_20_LEDGER_ROWS_29_OPEN_DISPATCHES_THE_CENSUS_SERIES_COMPLETE_UQFF_LANDMARK.md|L24|(table)|—|—|N|—|NOT_A_COMPARISON|internal dispatch-flag counts
+PAPER_2281_FRONT_4_RESPECIFIED_THE_EQUIPARTITION_IDENTITY_AND_THE_WAVEVECTOR_DEPENDENT_SHEAR_VISCOSITY_UQFF_LANDMARK.md|L176|k_c candidate c_0 (1480 m/s)|5.31|measured / predicted k_c = 1.47|N|same scale, not a precision match|RANGE_ONLY|paper itself concedes no precision match; MD 'measured' value
+PAPER_2281_FRONT_4_RESPECIFIED_THE_EQUIPARTITION_IDENTITY_AND_THE_WAVEVECTOR_DEPENDENT_SHEAR_VISCOSITY_UQFF_LANDMARK.md|L176|k_c candidate c_inf (3200 m/s)|2.45|measured / predicted k_c = 3.18|N|excluded|RANGE_ONLY|negative result; candidate excluded
+PAPER_2282_FRONT_4_THE_RECORD_RUN_SPME_ENGINE_FOUR_RUNS_TWO_BOXES_THREE_SEEDS_ETA_K_GAUSSIAN_KC_7_90_THREE_RULINGS_FOLDED_UQFF_LANDMARK.md|L152|k_c candidate c_0 = 1480 m/s|5.307|measured / predicted = 1.49; eta ratio 0.856 vs 0.709|N|same scale, NOT a precision match|RANGE_ONLY|paper concedes no precision match; MD simulation as 'measured'
+PAPER_2282_FRONT_4_THE_RECORD_RUN_SPME_ENGINE_FOUR_RUNS_TWO_BOXES_THREE_SEEDS_ETA_K_GAUSSIAN_KC_7_90_THREE_RULINGS_FOLDED_UQFF_LANDMARK.md|L152|k_c candidate c_inf = 3200 m/s|2.454|measured / predicted = 3.22; eta ratio 0.967 vs 0.709|N|EXCLUDED|RANGE_ONLY|negative result; candidate excluded
+PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md|L117|P1: omega_SCm / c_0 k_c|9.19|measured / predicted = 0.78; eta 0.57 vs 0.709|N|—|RANGE_ONLY|prestated test; paper rules negative (neither prediction)
+PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md|L117|P2: (D_BSFG/D_phys) omega_SCm / c_0 k_c|13.79|measured / predicted = 0.52; eta 0.28 vs 0.709|N|—|RANGE_ONLY|prestated test; paper rules negative (neither prediction)
+PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md|L129|water k_c(c_0)|5.31|7.90 +- 0.05 (measured, B287)|N|measured / k_c(c_0) = 1.49|RANGE_ONLY|MD simulation run B287 as 'measured'; ratio 1.49 off
+PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md|L129|argon k_c(c_0)|9.19|7.17 +- 0.05 (measured, B288)|N|measured / k_c(c_0) = 0.78|RANGE_ONLY|MD simulation run B288 as 'measured'; ratio 0.78 off
+PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md|L129|ratio water/argon k_c|0.58|1.10 (measured ratio)|N|—|RANGE_ONLY|predicted ratio 0.58 vs measured 1.10; opposite direction
+PAPER_241_UQFF_Validation_CrossReference_ArXiv_Experimental_92pct.md|L64|THz line|1.18 THz|Measured THz line|N|1.7%|POST_HOC_FIXED_FORM|observed value and source not given; only a deviation percentage
+PAPER_241_UQFF_Validation_CrossReference_ArXiv_Experimental_92pct.md|L72|LENR COP|COP = 1.12|Experimental LENR COP|N|2.6%|POST_HOC_FIXED_FORM|observed value and source not given; only a deviation percentage
+PAPER_333_BSM_UQFF_10Experiment_Package_EDM_ALICE_Comag_Tau_JUNO_BESIII_LHCb_ATLAS.md|L239|(table)|—|—|Y|—|NOT_A_COMPARISON|lists experimental bounds and per-experiment 'Calibrated Value' of UQFF parameters; no predicted-vs-observed
+PAPER_370_MultiBody_Solar_Pcore_PlanetaryScalingLaw_OrbitalFreqBridge_NeptuneIceGiant.md|L147|Sun g_surf|274.0|274.0|N|<0.01%|POST_HOC_FIXED_FORM|identical digits; formula not shown; 'Literature' unnamed
+PAPER_370_MultiBody_Solar_Pcore_PlanetaryScalingLaw_OrbitalFreqBridge_NeptuneIceGiant.md|L147|Earth g_surf|9.82|9.81|N|0.1%|POST_HOC_FIXED_FORM|one g_surf form across bodies; formula not shown
+PAPER_370_MultiBody_Solar_Pcore_PlanetaryScalingLaw_OrbitalFreqBridge_NeptuneIceGiant.md|L147|Jupiter g_surf|24.8|24.79|N|<0.1%|POST_HOC_FIXED_FORM|one g_surf form across bodies; formula not shown
+PAPER_370_MultiBody_Solar_Pcore_PlanetaryScalingLaw_OrbitalFreqBridge_NeptuneIceGiant.md|L147|Neptune g_surf|11.2|11.15|N|0.4%|POST_HOC_FIXED_FORM|one g_surf form across bodies; formula not shown
+PAPER_412_Heliosphere_SCm_Hydrogen_Complex_SolarWind_Stellar_Age_Indicator.md|L141|Earth's liquid volume|Proportional to solar age × wind flux|~1.335×10^18 m3|N|—|RANGE_ONLY|qualitative proportionality vs a number; no UQFF value
+PAPER_412_Heliosphere_SCm_Hydrogen_Complex_SolarWind_Stellar_Age_Indicator.md|L141|Heliosphere radius|Grows with star age|~100 AU (Voyager 1 data)|Y|—|RANGE_ONLY|qualitative trend vs a number; no UQFF value
+PAPER_412_Heliosphere_SCm_Hydrogen_Complex_SolarWind_Stellar_Age_Indicator.md|L141|Frozen planet composition|H₂O ice, CH₄ ice (wind-derived)|Neptune, Uranus confirmed|N|—|RANGE_ONLY|qualitative; no numbers
+PAPER_412_Heliosphere_SCm_Hydrogen_Complex_SolarWind_Stellar_Age_Indicator.md|L141|Core magnetic strength|Proportional to absorbed wind|Planetary magnetic surveys|N|—|RANGE_ONLY|qualitative; no numbers
+PAPER_426_UA_SCm_JWST_ALMA_CERN_Validation_Table.md|L41|Shock metallicity g_shock|v_s ~ 100 km/s shocks elevate [M/H]|ISM metal-enhanced shock fronts detected|Y|85%|RANGE_ONLY|'Alignment 85%' is not a residual; qualitative observation
+PAPER_426_UA_SCm_JWST_ALMA_CERN_Validation_Table.md|L41|Vacuum energy U_g4|f_Z,over = 0.89, f_Z,under = 0.85|z = 11–14 metal over/under-abundance|Y|80%|RANGE_ONLY|'Alignment 80%' is not a residual; no observed numbers
+PAPER_426_UA_SCm_JWST_ALMA_CERN_Validation_Table.md|L41|Topological anyons F_UBii|F = -1.038 × 10^32 N|Anyon condensate signatures|Y|75%|RANGE_ONLY|force of 1e32 N vs unspecified 'signatures'; alignment % not a residual
+PAPER_426_UA_SCm_JWST_ALMA_CERN_Validation_Table.md|L41|UTe2 superconductor U_m|B_threshold = 16 T, f_topo = 0.1–0.3|Andreev bound state + UTe2|Y|82%|RANGE_ONLY|'Alignment 82%' is not a residual; no observed numbers
+PAPER_473_MUGEModule_7System_Compressed_Resonance.md|L474|Thomson σ_T|6.6524e-29 m2|6.6524e-29 m2 (QED exact)|Y|100%|INPUT_REPRODUCED|identical digits; PDG constant restated
+PAPER_473_MUGEModule_7System_Compressed_Resonance.md|L474|X-ray/Radio luminosity|g_total → L_X via buoyancy flux|L_X ≥ 10^37 erg/s|Y|PASS|RANGE_ONLY|bound only; no UQFF number
+PAPER_473_MUGEModule_7System_Compressed_Resonance.md|L474|GR Schwarzschild limit|g ≤ c2/(2r_s) at horizon|r_s = 2GM/c2 (GR exact)|Y|PASS|RANGE_ONLY|GR-vs-UQFF consistency check; no data
+PAPER_473_MUGEModule_7System_Compressed_Resonance.md|L474|κ vacuum rate|κ = 0.0005/day → τ = 2000 d|X-ray variability τ_obs|Y|Testable|FORECAST_UNTESTED|no observed value given; marked Testable
+PAPER_491_MUGE_Compressed_Nine_Term_Gravity_Framework.md|L639|Λ|1.09×10^-52 m^-2|1.114×10^-52 (Planck+DESI)|Y|97.8%|POST_HOC_FIXED_FORM|formula not shown; 'alignment 97.8%' not a residual
+PAPER_491_MUGE_Compressed_Nine_Term_Gravity_Framework.md|L639|Ω_Λ|[SSq]×1.20 = 0.684|0.6847±0.0073 (Planck)|Y|99.9%|POST_HOC_PER_TARGET|bare factor 1.20 multiplies [SSq] to hit target
+PAPER_491_MUGE_Compressed_Nine_Term_Gravity_Framework.md|L639|T_CMB|2.726 K|2.72548 K (FIRAS)|Y|99.98%|INPUT_REPRODUCED|2.726 K is the standard rounded textbook value; no formula shown
+PAPER_491_MUGE_Compressed_Nine_Term_Gravity_Framework.md|L639|H0|67.4 km/s/Mpc|67.4±0.5 (Planck)|Y|PASS|INPUT_REPRODUCED|identical digits; Planck value restated
+PAPER_492_MUGE_Resonance_Thirteen_Mode_Frequency_Spectrum.md|L447|Nuclear B(A,Z)|DPM pyramid sum within 5% for Z≤82|AME2020 mass eval|Y|<5% Z≤82|RANGE_ONLY|blanket 'within 5%' claim; no values
+PAPER_492_MUGE_Resonance_Thirteen_Mode_Frequency_Spectrum.md|L447|Proton mass m_p|m_p = U_m/(κ c2) R_unit|938.272 MeV/c2|Y|PASS|RANGE_ONLY|no UQFF number given, only a formula and PASS
+PAPER_492_MUGE_Resonance_Thirteen_Mode_Frequency_Spectrum.md|L447|Island of stability|Enhanced binding Z=114,120,126|Superheavy magic numbers|Y|PASS|RANGE_ONLY|qualitative; known magic-number candidates restated
+PAPER_492_MUGE_Resonance_Thirteen_Mode_Frequency_Spectrum.md|L447|Nuclear α mass|m_α = 4m_p - B_α/c2|3727.379 MeV/c2|Y|100%|INPUT_REPRODUCED|standard mass-defect identity with measured inputs; not a prediction
+PAPER_494_BSM_Particle_Observables_Tau_CKM_LFV_VLQ.md|L67|Δa_τ|2.33×10^-5|Belle II precision target ~10^-5–10^-4|Y|Compatible ✓|FORECAST_UNTESTED|future Belle II sensitivity, not a measurement
+PAPER_494_BSM_Particle_Observables_Tau_CKM_LFV_VLQ.md|L67|V_cb|0.0405 (PDG anchor)|0.0405±0.0009 (PDG 2024)|Y|100% ✓|INPUT_REPRODUCED|identical digits; row itself says PDG anchor
+PAPER_494_BSM_Particle_Observables_Tau_CKM_LFV_VLQ.md|L67|BR(τ→μγ)/BR_limit|2.38×10^-2|< 1 (experimental constraint)|N|Satisfies ✓|RANGE_ONLY|bound only
+PAPER_494_BSM_Particle_Observables_Tau_CKM_LFV_VLQ.md|L67|g_VLQ (solar r)|4.12×10^-63 m/s2|Sub-Planck — indirect constraint|N|---|RANGE_ONLY|no external value at all
+PAPER_495_Cosmic_Quantum_Egg_Theory.md|L410|Cosmological constant Λ|1.1 × 10^-52 m-2|1.114 × 10^-52 m-2 (Planck 2018)|Y|1.3%|POST_HOC_FIXED_FORM|formula not shown; UQFF value given to 2 sig figs
+PAPER_495_Cosmic_Quantum_Egg_Theory.md|L410|Vacuum energy density ρ_vac|5.96 × 10^-27 kg/m3|5.96 × 10^-27 kg/m3 (ΛCDM)|Y|exact|INPUT_REPRODUCED|identical digits; ΛCDM value restated
+PAPER_495_Cosmic_Quantum_Egg_Theory.md|L410|Hubble parameter H_0|67.4 km/s/Mpc|67.4 ± 0.5 km/s/Mpc (Planck 2018)|Y|within 1σ|INPUT_REPRODUCED|identical digits; Planck value restated
+PAPER_495_Cosmic_Quantum_Egg_Theory.md|L410|Expansion rate excess δȧ/ȧ|~7.1%|~4–9% (Hubble tension)|N|consistent|RANGE_ONLY|band comparison
+PAPER_495_Cosmic_Quantum_Egg_Theory.md|L410|[SSq]|0.57|CMB dark energy fraction: ~5% baryonic|N|consistent|RANGE_ONLY|0.57 compared to '~5% baryonic'; quantities do not correspond
+PAPER_529_Navier_Stokes_UQFF_Quasar_Jet_Regularity.md|L112|J1610+1811 u_bound|8.7×10^7 m/s|0.99c ≈ 3.0×10^8 (relativistic, expected)|N|—|RANGE_ONLY|observed jet exceeds the UQFF bound; excused as relativistic
+PAPER_529_Navier_Stokes_UQFF_Quasar_Jet_Regularity.md|L112|M87 jet u_bound|1.7×10^9 m/s|~0.99c|N|—|RANGE_ONLY|UQFF bound 1.7e9 m/s exceeds c; no residual
+PAPER_529_Navier_Stokes_UQFF_Quasar_Jet_Regularity.md|L112|Average AGN u_bound|8.2×10^8 m/s|~0.9c|N|—|RANGE_ONLY|UQFF bound 8.2e8 m/s exceeds c; no residual
+PAPER_538_UQFF_Orion_Triple_Telescope_Encompassment_Fit.md|L83|Ring spacing ratio (ALMA 870 μm)|r_{n+1}/r_n = p_{n+1}^{1/3}/p_n^{1/3}|1.021±0.008|Y|< 3%|RANGE_ONLY|UQFF given as formula only; residual is a bound
+PAPER_538_UQFF_Orion_Triple_Telescope_Encompassment_Fit.md|L83|Magnetic pitch angle (VLA 7 mm)|φ = arctan(U_g,12/U_g,11)|28°± 5°|Y|< 8%|RANGE_ONLY|UQFF given as formula only; residual is a bound
+PAPER_538_UQFF_Orion_Triple_Telescope_Encompassment_Fit.md|L83|Ionisation-front flux ratio (JWST 3.6 μm)|η_18%|0.19± 0.02|Y|< 10%|RANGE_ONLY|residual stated only as a bound
+PAPER_590_UQFF_Planck_Constant_Derived.md|L440|h|6.72×10^-34 J s|6.626×10^-34 J s|Y|1.4%|POST_HOC_PER_TARGET|F_TRZ·Φ_res·E_0/f_THz with E_0 and f_THz inputs chosen; CODATA named
+PAPER_591_UQFF_Fine_Structure_Constant_Derived.md|L537|α|7.287×10^-3|7.297×10^-3|N|0.14%|POST_HOC_PER_TARGET|1/(Φ_res·26·2π) with bare factor 26
+PAPER_591_UQFF_Fine_Structure_Constant_Derived.md|L537|c|2.995×10^8 m/s|2.998×10^8 m/s|N|0.13%|POST_HOC_PER_TARGET|(26·4π/Φ_res)·v_F with bare factor 26 and v_F input
+PAPER_591_UQFF_Fine_Structure_Constant_Derived.md|L537|h|6.72×10^-34 J·s|6.626×10^-34 J·s|N|1.4%|POST_HOC_PER_TARGET|duplicate of PAPER_590 L440 row
+PAPER_591_UQFF_Fine_Structure_Constant_Derived.md|L537|G|—|6.674×10^-11|N|open|RANGE_ONLY|no closed form found within 0.5 dex; row admits failure
+PAPER_592_UQFF_Speed_of_Light_Triad_Equilibrium.md|L435|c|2.995×10^8 m/s|2.998×10^8 m/s|Y|0.13%|POST_HOC_PER_TARGET|duplicate of PAPER_591 row; bare factor 26 and v_F input; CODATA named
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Mercury e|0.206 PASS|0.2056|N|PASS|POST_HOC_PER_TARGET|δ=3.2 fitted per planet; predicted e is observed e rounded to 3 decimals
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Venus e|0.007 PASS|0.0068|N|PASS|POST_HOC_PER_TARGET|δ=0.08 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Earth e|0.017 PASS|0.0167|N|PASS|POST_HOC_PER_TARGET|δ=0.18 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Mars e|0.093 PASS|0.0935|N|PASS|POST_HOC_PER_TARGET|δ=1.1 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Jupiter e|0.049 PASS|0.0489|N|PASS|POST_HOC_PER_TARGET|δ=0.55 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Saturn e|0.056 PASS|0.0565|N|PASS|POST_HOC_PER_TARGET|δ=0.63 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Uranus e|0.046 PASS|0.0463|N|PASS|POST_HOC_PER_TARGET|δ=0.50 fitted per planet; predicted e is observed e rounded
+PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md|L50|Neptune e|0.010 PASS|0.0097|N|PASS|POST_HOC_PER_TARGET|δ=0.10 fitted per planet; predicted e is observed e rounded
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|X-ray jet morphology|—|CenA, M87, MS 0735|N|High|RANGE_ONLY|qualitative 'confirmed' with confidence label; no values
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|Polarization fraction|—|Perseus (4%)|N|High|RANGE_ONLY|observed 4% given; no UQFF value
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|Frequency floor|—|CenA (6.14e16), M87 (5.71e16)|N|High|RANGE_ONLY|observed numbers given; no UQFF value
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|VHE knot position|—|CenA|N|High|RANGE_ONLY|qualitative; no values
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|BH-free pocket|—|NGC 6278|N|Moderate|RANGE_ONLY|qualitative; no values
+PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md|L126|Merger morphology|—|Perseus|N|Moderate|RANGE_ONLY|qualitative; no values
+PAPER_639_UQFF_Higgs_125GeV_VEV_Buoyancy_Coupling.md|L71|λ (self-coupling)|0.1294|0.1294|Y|100%|INPUT_REPRODUCED|identical digits; λ follows from m_H and v inputs; PDG 2024
+PAPER_639_UQFF_Higgs_125GeV_VEV_Buoyancy_Coupling.md|L71|m_H|125.09 GeV|125.20 ± 0.11 GeV|Y|99.79%|INPUT_REPRODUCED|125.09 GeV is the earlier ATLAS+CMS combined value; no formula shown
+PAPER_639_UQFF_Higgs_125GeV_VEV_Buoyancy_Coupling.md|L71|v (VEV)|246.22 GeV|246.22 GeV|Y|100% (input)|INPUT_REPRODUCED|identical digits; row itself says (input)
+PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md|L267|Fine structure α|DVP prime level 5 = 1/137|1/137.035999084|Y|✅ exact|INPUT_REPRODUCED|1/137 vs 1/137.036 called exact; integer 137 restated
+PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md|L267|Electron g-2 anomaly ae|n-wave DVP series to 4th order|0.001159652181|Y|✅ 0.37 ppb|RANGE_ONLY|no UQFF number shown; 0.37 ppb asserted without value
+PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md|L267|von Klitzing R_K|h/e2 = μ0c/(2α)|25812.807 Ω|Y|✅ exact|INPUT_REPRODUCED|definitional identity of R_K; not a prediction
+PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md|L267|Aether impedance Z0|μ0c = Z0 (free space)|376.73 Ω|Y|✅ exact match|INPUT_REPRODUCED|definitional identity Z0 = μ0c; not a prediction
+PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md|L267|Proton:Rydberg ratio|Recoil route α2|R∞·r_p independent|Y|✅ structural|RANGE_ONLY|qualitative 'structural' claim; no numbers
+PAPER_734_LENR_Kn_ThreeScenario_Calibration_Constants.md|L143|(table)|—|—|N|—|NOT_A_COMPARISON|calibration constants kη vs hypothetical k_expected; no observed data
+PAPER_852_LENR_Next_Steps_Experimental_Design_PSRJ0030.md|L647|(table)|—|—|N|—|NOT_A_COMPARISON|list of calculator classes and proposed experimental tracks
+SCm_Mizuno_LENR_Transmutation.md|L48|Holmlid KER|ε_cluster = 630 eV|630 eV KER|Y|—|INPUT_REPRODUCED|identical digits; parameter ε_cluster set equal to observed KER
+SCm_Mizuno_LENR_Transmutation.md|L48|Parkhomov power|N~2×10^18, f_b=1|150--280 W|Y|—|POST_HOC_PER_TARGET|N and f_b assigned per experiment; no predicted power number
+SCm_Mizuno_LENR_Transmutation.md|L48|Pons--Fleischmann power|V=10^-6 m³, f_b=0.001|1--50 W|Y|—|POST_HOC_PER_TARGET|f_b=0.001 assigned per experiment (vs f_b=1 above); no predicted power number
+SCm_Mizuno_LENR_Transmutation.md|L48|Mizuno power|N~10^20--10^21, f_b scaled|10--300 W|Y|—|POST_HOC_PER_TARGET|'f_b scaled' per experiment; no predicted power number

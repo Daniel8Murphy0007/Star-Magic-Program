@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.442.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.442.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.443.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.443.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6115%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2334-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2328-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.442.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.443.0 complete-compile campaign live**
 
-**This release (v0.442.0): THE Q-251 PRE-STATED TEST — two predictions committed to the repository before the run, a second liquid, and neither prediction survived.** v0.441.0 measured water’s η(k) cutoff at 1.489 × the framework’s k_c(c_0) and noticed that 1.489 sits on D_BSFG/D_phys = 1.5 — and declined to claim it, naming the test that could: a second liquid with the ratio predicted first. B288 (PAPER_2283) is that test. Lennard-Jones argon at the NIST 85 K state point (c_0 = 854.35 m/s, read from the WebBook). Written into RULINGS_QUEUE.md and committed before a single step ran: P1, the Q-247 form, k_c = ω_SCm/c_0 = 9.19 nm⁻¹; P2, the Q-251 route, 1.5 × that = 13.79; reading rule ±10 %. The engine’s LJ path was validated the same way as the water engine (kernel exact, forces = −∇E to 6e-9, NVE drift 1e-5 kJ/mol per atom over 10 ps) and reproduces NIST’s viscosity to 1–2 % and the literature diffusion coefficient. **Measured: k_c = 7.25 ± 0.06 and 7.09 ± 0.06 in two seeds, pooled 7.17 ± 0.05 nm⁻¹**, Gaussian over the water-comparable range. Ratio to P1 0.78; to P2 0.52. **Neither. Q-251 is CLOSED NEGATIVE** by the rule written before the data — water’s 1.489 was a coincidence — and the sound-cone form P1, already negative for water (+49 %), is negative for argon too (−22 %). What the two liquids say together, recorded and not claimed: their sound speeds differ by 1.73×, their cutoffs by 1.10×, and k_c·σ = 2.50 (water) and 2.44 (argon). The cutoff of η(k) tracks the molecular diameter, not ω_SCm/c_s — the ordinary generalized-hydrodynamics expectation. Whether that means the sound-cone k_c is a different object from what η(k) measures (front 4 a category error; Theorem B untouched but untested) or that the framework’s fluid cutoff is falsified as written is **Q-252, opened against the program itself and left to Daniel.** Not claimed: which reading; the model’s own c_0 (not cleanly measured — P1 evaluated with NIST’s, as pre-stated); the fit range (not pre-specified; both reported; neither rescues a prediction). **Totals: 2,279 wired (2,334 DISPATCH keys) / gate 6,115 green / 4,206 defs / acceptance 109 green / registry 7,141 rows / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.443.0): THE AUDIT BAND — the corpus read in full and recomputed, and the record of where the tools failed, shipped as source.** Four audits land in `audit/`. The external-contact audit classifies all 909 lines where a paper compares a UQFF number to something external: 287 reproduce their input, 234 are post-hoc per target, 155 post-hoc fixed-form, 97 range-only, 74 untested forecasts, 62 not comparisons; 4 pre-stated tests (fronts 1–2 non-discriminating; front 4 and Q-251 negative) and 0 pre-stated-and-passed. THE_RECORD traces every real-valued constant to the chat and date it was born (β_i = 0.603 fitted to mock data and [SSq] = 0.57 from a wrong equation, both 14 Sep 2025) and the 29–31 Mar 2026 audit-request-to-G6-stamp fork. The instruction-fidelity ledger sets 415 of Daniel's dated instructions beside what the tools did next, in the tools' own words; the constant-drift table lists every value each constant took (β_i sixteen; ρ_SCm seven across 56 orders). The whitepaper audit read all 2,328 papers with every headline recomputed: 13 sound (math identities, textbook astrophysics with negligible UQFF term, or the program's own negative tests), 878 calibration-only, 547 defective, 288 narrative, 265 unsupported, 259 circular, 66 stamped; of 25 papers attempting a pre-stated named comparison, 0 hold; 448 begin from GM/r². `tender/` carries a clause-by-clause program review against OIL tender CDG2752P27. **Nothing in the calculator, registry values, gate assertions or physics changed; this band ships the record.** Q-252 stays Daniel-gated. **Totals: 2,279 wired (2,334 DISPATCH keys) / gate 6,115 green / 4,206 defs / acceptance 109 green / registry 7,143 rows / whitepapers 2,328 / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.442.0)
+## What is currently shipped (v0.443.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,141 rows**. Fidelity gate: **6,115 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,143 rows**. Fidelity gate: **6,115 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

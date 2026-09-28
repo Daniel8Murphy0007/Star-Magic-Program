@@ -12431,3 +12431,6 @@ q251_argon_prestated_test,PAPER_2283,PRE_REGISTERS,q251_argon_grade,B288: predic
 q251_argon_grade,PAPER_2283,CLOSES,Q-251,B288: NEITHER within 10 pct -> Q-251 CLOSED NEGATIVE; water 1.489 was a coincidence
 eta_k_cutoff_tracks_molecular_diameter,PAPER_2283,OPENS,Q-252,"B288: k_c x sigma = 2.50 / 2.44 in water / argon - the cutoff tracks sigma, not omega_SCm/c_s"
 front4_record_run,PAPER_2282,COMPARED_WITH,q251_argon_eta_k,B288: water k_c 7.90 vs argon 7.17 (ratio 1.10) against a c_0 ratio of 1.73
+whitepaper_audit_verdict_census,AUDIT_B289,RECORDS,audit/WHITEPAPER_AUDIT_ROWS.csv,"B289: 2,328 verdict rows; 13 SOUND; 0/25 pre-stated comparisons hold"
+external_contact_audit_census,AUDIT_B289,RECORDS,audit/EXTERNAL_CONTACT_AUDIT_ROWS.csv,"B289: 909 lines; 4 T2; 0 T3"
+whitepaper_audit_verdict_census,PAPER_2283,CONFIRMS,q251_argon_grade,"B289: the corpus audit and the Q-251 result agree - the honest tests are the negative ones"

@@ -130,7 +130,7 @@ assert_that(abs(P.N_EFF_NEUTRINO - n_eff_expected) < 1e-15,
 # =============================================================================
 # BLOCK 7 — CALCULATOR SCAFFOLD INTEGRITY
 # =============================================================================
-assert_that(C.VERSION == "0.442.0", "uqff_calculator.VERSION = 0.442.0 (Q-251 PRE-STATED TEST SHIP: LJ argon, two predictions committed before the run, measured k_c 7.17 +- 0.05 - neither; Q-251 closed negative; the cutoff tracks sigma in both liquids; Q-252 opened)")
+assert_that(C.VERSION == "0.443.0", "uqff_calculator.VERSION = 0.443.0 (THE AUDIT BAND B289: audit/ ships the external-contact audit, THE_RECORD, the instruction-fidelity ledger, the constant-drift table and the full 2,328-paper whitepaper audit; tender/ ships the CDG2752P27 program review; no dispatch, registry-value or physics change; Q-252 remains Daniel-gated)")
 assert_that(isinstance(C.DISPATCH, dict), "DISPATCH is a dict")
 assert_that(C.wired_count() >= 0, "wired_count is queryable (>= 0)")
 assert_that(callable(C.calc), "calc is callable")
@@ -9570,7 +9570,7 @@ def _sg4_last(path, n=4000):
             return _f.read().decode('utf-8', 'ignore')
     except OSError:
         return ''
-_sg4_band = 'NSPROOFSET_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
+_sg4_band = 'AUDIT_ARC'  # v4.1 (2026-08-21): tracks the CURRENT arc marker each ship - the frozen BAND_2151_2156 form passed four ships by tail-window luck until the GAPS tail rotated it out; update this marker at every ship prep
 for _sg4_f in ('UNIFIED_REGISTRY_MERGED.csv', 'UNIFIED_REGISTRY_R2_MAPPING.csv',
                'UNIFIED_REGISTRY_R3_LEDGER.csv', 'UNIFIED_REGISTRY_XGEO_QUEUE.csv',
                'UNIFIED_REGISTRY_XGEO_ROUTES.csv'):

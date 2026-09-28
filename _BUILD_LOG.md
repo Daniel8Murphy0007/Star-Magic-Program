@@ -626,6 +626,16 @@ near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
 branch holds; discrimination out of reach; the public DNS record is
 exhausted for front 2. Gate 6,111/0. Acceptance 109/109.
 
+## v0.443.0 — 2026-09-28 — THE AUDIT BAND SHIP
+B289: audit/ ships four source-level audits - external-contact (909 lines,
+0 pre-stated-and-passed), THE_RECORD (constants traced to birth chat/date;
+the 29-31 Mar 2026 G6-stamp fork), instruction-fidelity ledger (415
+instructions vs outcomes) + constant-drift table, and the full whitepaper
+audit (2,328 papers read + recomputed: 13 SOUND, 878 CALIBRATION_ONLY, 547
+DEFECTIVE; 0/25 pre-stated comparisons hold; 448 GM/r^2-first). tender/
+ships the CDG2752P27 program review. No physics change. Gate 6,115/0.
+Acceptance 109/109.
+
 ## v0.442.0 — 2026-09-17 — Q-251 PRE-STATED TEST SHIP
 PAPER_2283 (B288): LJ argon at the NIST 85 K state point; P1 = omega/c_0
 = 9.19 nm^-1 and P2 = 1.5 x P1 = 13.79 committed to the repo before the

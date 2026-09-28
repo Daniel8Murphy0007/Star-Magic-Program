@@ -1,5 +1,6 @@
 # WHITEPAPER_INDEX — Star-Magic-Program
 > **REWIRE IN PROGRESS (unshipped):** PAPER_001-003 recomposed over the new equation-library architecture (full-equation capture, primitive-sourced, all sections). Continuing through the corpus; no release until 300+ done.
+> **v0.443.0 audit band (B289):** audit/WHITEPAPER_AUDIT_ROWS.csv carries one verdict row per whitepaper (2,328): SOUND 13 / CALIBRATION_ONLY 878 / DEFECTIVE 547 / NARRATIVE 288 / UNSUPPORTED 265 / CIRCULAR 259 / STAMPED 66. Index ticks are wiring status (code reproduces paper); audit verdicts are paper status (paper reproduces itself / an independent measurement). The two are different questions and both are now on the wheel.
 
 
 > **v0.345.0 predecessor mine + derived-constants:** 1,272 predecessor-registry derived constants promoted to individual callable functions (dc_*); ~110 flagship closed forms mined as primitive-sourced fns; GRAPH + CORPUS_CITATIONS linked-paper maps updated. Predecessor repo read-only (Rule E).

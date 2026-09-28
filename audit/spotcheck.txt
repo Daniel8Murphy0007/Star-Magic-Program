@@ -1,0 +1,352 @@
+--- PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md L69 | RDR-002 Coefficient of Performance | UQFF=1.15 | EXT=1.12 | POST_HOC_FIXED_FORM
+    | RDR-002 | Coefficient of Performance | 1.15 | 1.12 | **2.61%** | ? PASS |
+--- PAPER_133_UQFF_F_U_Genesis_Complete_Derivation_4Component_Framework.md L235 | a | UQFF=0.0005 day-1 | EXT=SCm reactivity, matches ? | RANGE_ONLY
+    | Parameter | Derived | Observed/Calibrated | Agreement |
+    |-----------|---------|---------------------|-----------|
+--- PAPER_1840_DM_DIRECT_DETECTION_UQFF.md L49 | σ_e (electron) | UQFF=4.79×10⁻⁴⁵ cm² | EXT=below stellar cooling bounds ✓ | RANGE_ONLY
+    | **σ_e (electron)** | **F_TRZ²·[SSq]·Φ_res · 10⁻⁴² cm²** | **4.79×10⁻⁴⁵ cm²** | below stellar cooling bounds ✓ |
+    ### Master Formula (electron cross-section)
+--- PAPER_1843_21CM_REIONIZATION_EDGES_UQFF.md L48 | Predicted profile z=6-20 | UQFF=full profile predicted | EXT=HERA/SKA target | FORECAST_UNTESTED
+    | Predicted profile z=6-20 | scales with amplification | full profile predicted | HERA/SKA target | ✓ testable |
+--- PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md L28 | LAGEOS Lense-Thirring | UQFF=~1% of GR | EXT=31 mas/yr GR | RANGE_ONLY
+    | LAGEOS Lense-Thirring | small F_UBi correction | ~1% of GR | 31 mas/yr GR | GR-consistent |
+    | LAGEOS | Lense-Thirring | GR + small F_UBi | 31 mas/yr GR ±10% | consistent |
+--- PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md L104 | QSC-001 THz frequency | UQFF=1.20 THz | EXT=1.18 THz | POST_HOC_FIXED_FORM
+    | QSC-001 | THz frequency | 1.20 THz | 1.18 THz | 1.67% | ? |
+--- PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md L244 | 6 ELT/HARMONI halo-star Li-7 | UQFF=1.667 +/- 0.05 x 10^-10 | EXT=deviation > 10% kills | FORECAST_UNTESTED
+    | 6 | ELT/HARMONI halo-star Li-7 | $1.667\pm 0.05\times 10^{-10}$ | deviation > 10% kills |
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L19 | g_p (proton) | UQFF=5.609 | EXT=5.586 | POST_HOC_PER_TARGET
+    | **g_p (proton)** | **2·(K_MEX+[SSq])·(1+F_TRZ·[SSq])** | **5.609** | 5.586 | **0.41%** ⭐ |
+    - **Proton (uud)**: g_p ∝ K_MEX+[SSq] × F_TRZ correction
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L56 | g_Σ⁻ | UQFF=-2.354 | EXT=-2.32 | POST_HOC_PER_TARGET
+    | Particle | UQFF | Observed | Residual | Notes |
+    |---|:-:|:-:|:-:|:-|
+--- PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md L75 | PVLAS-3 upgraded sensitivity | UQFF=UQFF discovery moment | EXT=10⁻²⁴ T⁻² | FORECAST_UNTESTED
+    | Experiment | Sensitivity target | Status | UQFF verdict |
+    | PVLAS-3 (this decade) | 10⁻²³ T⁻² | preparing | UQFF at 42% of target |
+--- PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md L37 | n_T (tensor spectral index) | UQFF=-1.25×10⁻³ | EXT=consistency | NOT_A_COMPARISON
+    | **n_T (tensor spectral index)** | -r/8 | -1.25×10⁻³ | consistency | red tensor ✓ |
+--- PAPER_2283_THE_Q251_PRESTATED_TEST_LENNARD_JONES_ARGON_KC_7_17_NEITHER_PREDICTION_Q251_CLOSED_NEGATIVE_THE_CUTOFF_TRACKS_SIGMA_Q252_OPENED_UQFF_LANDMARK.md L129 | ratio water/argon k_c | UQFF=0.58 | EXT=1.10 (measured ratio) | RANGE_ONLY
+    | ratio water/argon | 1.73 | 0.58 | 1.10 | | | 1.02 |
+--- PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md L21 | σ (string tension) | UQFF=0.1732 GeV² | EXT=0.180 (SU(3)) | POST_HOC_PER_TARGET
+    | **σ (string tension)** | m_YM²·[SSq]·Φ_res/(K_MEX·D_phys) | **0.1732 GeV²** | 0.180 (SU(3)) | **3.80%** ✓ |
+    ### Observable 1: String Tension σ
+--- PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md L50 | sin(2β) | UQFF=0.619 | EXT=0.699 | POST_HOC_PER_TARGET
+    | sin(2β) | [SSq] + Φ_res·K_MEX/(D_crit+SO_5) | 0.619 | 0.699 | 11.4% |
+--- PAPER_1921_F_DM_EQUALS_UG3_CROSS_FRAMEWORK_CLOSURE_UQFF.md L133 | M33 Triangulum f_DM | UQFF=0.80 EXACT | EXT=0.85-0.90 | RANGE_ONLY
+    | Galaxy | Observed f_DM range | UQFF prediction | Match |
+    | M33 Triangulum | 0.85-0.90 | 0.80 EXACT | 12% high |
+--- PAPER_2281_FRONT_4_RESPECIFIED_THE_EQUIPARTITION_IDENTITY_AND_THE_WAVEVECTOR_DEPENDENT_SHEAR_VISCOSITY_UQFF_LANDMARK.md L176 | k_c candidate c_inf (3200 m/s) | UQFF=2.45 | EXT=measured / predicted k_c = 3.18 | RANGE_ONLY
+    | candidate | predicted k_c | predicted 1/e | measured / predicted k_c | reading |
+    | c_inf (3200 m/s) | 2.45 | 4.19 | 3.18 | excluded |
+--- PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md L29 | BR(μ→eγ) | UQFF=α⁶·Φ_res = 1.27×10⁻¹³ | EXT=MEG-II (bound 4.2×10⁻¹³) | FORECAST_UNTESTED
+    | 3 | BR(μ→eγ) | **α⁶·Φ_res = 1.27×10⁻¹³** | MEG-II (bound 4.2×10⁻¹³) | observation above 1.6×10⁻¹³, or exclusion below 1.0×10⁻¹³ | PAPER_1646 |
+    | 4 | Neutron non-β branching | **F_TRZ²·(D_BSFG−D_phys)·SSq = 1.140%** | UCNτ-II / PERKEO-IV | BR outside [1.0%, 1.3%] | PAPER_2157 |
+--- PAPER_1838_AMATERASU_UHECR_UQFF.md L35 | Composition | UQFF=Fe-56 group prediction | EXT=unknown | FORECAST_UNTESTED
+    | Composition | heavy nucleus | Fe-56 group prediction | unknown | testable | — |
+--- PAPER_1972_V_WIND_2000_KM_S_EXTENSION_TO_ANTENNAE_MERGER_UQFF.md L54 | Westerlund 2 v_wind | UQFF=(D_phys/2) × SO_5^6 | EXT=2 × 10^6 m/s | POST_HOC_PER_TARGET
+    The identity is stated as universal for "all OB-supergiant-dominated YMCs" — a category label that includes Westerlund 2, NGC 3603, and by extension any system dominated by OB-supergiant wind physics.
+    - YMC (Westerlund 2, NGC 3603, Antennae OB-supergiant): OB-star launched wind at cluster scale
+--- PAPER_221_Bubble_Nebula_Positive_Enhancement_UQFF.md L83 | Shell expansion velocity | UQFF=4.3 km/s (7.5% enhancement) | EXT=4.0 km/s | POST_HOC_FIXED_FORM
+    | Shell expansion velocity | $4.0\ \text{km/s}$ | $4.3\ \text{km/s}$ (7.5% enhancement) |
+--- PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md L124 | Ratio n=2 | UQFF=2.474 | EXT=2.455 | POST_HOC_PER_TARGET
+    | n | Ratio UQFF | Ratio observed |
+    Peak ratios 1 : 2.474 : 3.655 (UQFF) match observed 1 : 2.455 : 3.682 essentially exactly.
+--- PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md L45 | UQFF (this paper) σ_8, S_8 | UQFF=0.765, 0.761 | EXT=— | NOT_A_COMPARISON
+    | **UQFF (this paper)** | **0.765** | **0.761** | — |
+--- PAPER_1187_Cooling_Flow_Mass_Accretion_UQFF.md L45 | A4 NGC 1399/Fornax Mdot_eff | UQFF=4--20 | EXT=1--10 (Paolillo 2002) | RANGE_ONLY
+    | A4 NGC 1399 / Fornax | $3\times 10^{42}$ | $1.5$ | $5\times 10^8$ | $4$--$20$ | $1$--$10$ (Paolillo 2002) | $\checkmark$ |
+--- PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md L275 | <lnA> at 10^19 eV | UQFF=2.8 | EXT=2.5--3.0 | RANGE_ONLY
+    | $\langle$lnA$\rangle$ at 10$^{19}$ eV | 2.5 | 2.8 | 2.5--3.0 | $\checkmark$ |
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L56 | Δa_μ | UQFF=2.298×10⁻⁹ | EXT=2.51×10⁻⁹ | POST_HOC_PER_TARGET
+    | Particle | UQFF | Observed | Residual | Notes |
+    |---|:-:|:-:|:-:|:-|
+--- PAPER_028_BSM_Coupling_Constants_UQFF.md L408 | abs(V_cb) | UQFF=sqrt([SCm]_flavor) = 39.2 x 10^-3 | EXT=(39.2 +/- 0.9) x 10^-3 | INPUT_REPRODUCED
+    | |V_cb| | $\sqrt{}$[SCm]_flavor = 39.2$\times$10-3 | (39.2 $\pm$ 0.9)$\times$10-3 | \checkmark Exact | within 1$\sigma$ |
+    | [SCm]_flavor | |V_cb|2 = 1.537$\times$10-3 | N/A (UQFF quantity) | \checkmark Defined | --- |
+--- PAPER_065_121_System_UQFF_Validation_Statistical_Summary.md L104 | 26D-L13-001 Layer 13 [SCm] | UQFF=7.09e-37 J/m | EXT=6.95e-37 J/m | POST_HOC_FIXED_FORM
+    | 26D-L13-001 | Layer 13 [SCm] | 7.09e-37 J/m | 6.95e-37 J/m | 2.01% | ? |
+--- PAPER_1240_JWST_z14_R26_Growth_Factor.md L52 | EROs z11 stellar mass | UQFF=~10⁹ ✓ | EXT=~10⁹ M_sun | INPUT_REPRODUCED
+    | Epoch | z | t_age | Stellar mass observed | UQFF predicted |
+    | EROs z11 | 11 | 420 Myr | ~10⁹ M_sun | ~10⁹ ✓ |
+--- PAPER_495_Cosmic_Quantum_Egg_Theory.md L410 | Expansion rate excess δȧ/ȧ | UQFF=~7.1% | EXT=~4–9% (Hubble tension) | RANGE_ONLY
+    | Expansion rate excess $\delta\dot{a}/\dot{a}$ | $\sim$7.1% | $\sim$4–9% (Hubble tension) | consistent |
+--- PAPER_059_Alpha_BEC_Heavy_Ion_Collisions_UQFF.md L165 | T_BEC calibration | UQFF=5.0 MeV | EXT=T ~ 5 MeV | INPUT_REPRODUCED
+    | T_BEC calibration | 5.0 MeV | T ~ 5 MeV | ? |
+--- PAPER_1832_BBN_LITHIUM_7_PROBLEM_UQFF.md L37 | Original tension (SBBN) | UQFF=6σ | EXT=6σ | NOT_A_COMPARISON
+    | Original tension (SBBN) | direct | 6σ | 6σ | — | pre-UQFF |
+--- PAPER_021_Gravitational_Lensing_Corrections_UQFF_Vacuum_Density.md L254 | xi_gamma suppression | UQFF=16% | EXT=~15% vs CMB | POST_HOC_FIXED_FORM
+    | $\xi_\gamma$ suppression | 0% | 16% | ~15% vs CMB | $\checkmark$ |
+--- PAPER_495_Cosmic_Quantum_Egg_Theory.md L410 | Vacuum energy density ρ_vac | UQFF=5.96 × 10^-27 kg/m3 | EXT=5.96 × 10^-27 kg/m3 (ΛCDM) | INPUT_REPRODUCED
+    | Vacuum energy density $\rho_{vac}$ | $5.96 \times 10^{-27}$ kg/m3 | $5.96 \times 10^{-27}$ kg/m3 ($\Lambda$CDM) | exact |
+--- PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md L27 | EW phase T | UQFF=147 GeV | EXT=~160 | POST_HOC_PER_TARGET
+    | **EW phase T** | m_H·(1+K_MEX·F_TRZ) | **147 GeV** | ~160 | 8.10% ✓ |
+    | EW phase T | 147 GeV | ~160 | 8.10% ✓ |
+--- PAPER_631_UQFF_Multi_System_Jet_Hypergraph_Comparison.md L126 | X-ray jet morphology | UQFF=— | EXT=CenA, M87, MS 0735 | RANGE_ONLY
+    | X-ray jet morphology | CenA, M87, MS 0735 | High |
+--- PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md L51 | RT-SC target T_c | UQFF=323 K | EXT=293+ | FORECAST_UNTESTED
+    | **RT-SC target** | prediction | **323 K** | 293+ | ⭐⭐ ENGINEERING TARGET |
+--- PAPER_131_UQFF_Superconductive_GW170817_Chandra_Jets_Combined.md L173 | R (RACS jets) | UQFF=1.5 (e^{κ×810}) | EXT=R ≈ 1.5 | POST_HOC_PER_TARGET
+    | R (RACS jets) | 1.5 (e^{$\kappa$$\times$810}) | R $\approx$ 1.5 | PASS |
+--- PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md L73 | S293 H_late/H_early | UQFF=1.083333 | EXT=1.083680 | POST_HOC_PER_TARGET
+    | **S293** | **$H_{\text{late}}/H_{\text{early}}$** | $\sqrt{K_{\text{Mex}}-1}=\sqrt{13/12}$ | 1.083333 | 1.083680 | $\mathbf{-0.032\%}$ |
+--- PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md L178 | Ω_b h² (baryon density) | UQFF=0.02224 | EXT=0.02237 | POST_HOC_FIXED_FORM
+    | Ω_b h² (baryon density) | 0.02224 | 0.02237 | 0.58% |
+    - **PAPER_1156** — CC2 Section 3 baryon density observables (downstream verification)
+--- PAPER_1197_UQFF_Geophysics_Atmospheric_Unified_Proof_Set.md L213 | Plate tectonics | UQFF=Slab pull > ridge push | EXT=5-15 cm/year motion | RANGE_ONLY
+    | Plate tectonics | Slab pull > ridge push | 5-15 cm/year motion |
+--- PAPER_139_UQFF_HydrogenAtom_Ug4i_InverseBoyle_MetallicH_CrystallineMUGE.md L230 | Metallic H phase >500 GPa | UQFF=Crystalline, Ug4i driven | EXT=Sandia NIF ? | RANGE_ONLY
+    | Metallic H phase >500 GPa | Crystalline, Ug4i driven | Sandia NIF ? | ? |
+    inverse Boyle's law behavior observed at >500 GPa metallic hydrogen phases. The Ug4i inversion
+--- PAPER_140_UQFF_UAprSCm10_DualMonopole_VacuumDensity_UniversalRatio.md L198 | Magnetic factor 11 | UQFF=(1+10) | EXT=qvB coupling enhancement | NOT_A_COMPARISON
+    | Magnetic factor 11 | (1+10) | qvB coupling enhancement | ? |
+--- PAPER_491_MUGE_Compressed_Nine_Term_Gravity_Framework.md L639 | H0 | UQFF=67.4 km/s/Mpc | EXT=67.4±0.5 (Planck) | INPUT_REPRODUCED
+    | H0 | 67.4 km/s/Mpc | 67.4$\pm$0.5 (Planck) | PASS |
+--- PAPER_1816_COMPLETE_NEUTRINO_SECTOR_UQFF.md L19 | sin²θ_13 (reactor) | UQFF=0.02192 | EXT=0.02220 | POST_HOC_PER_TARGET
+    | **sin²θ_13** (reactor) | **[SSq] / D_crit** | **0.02192** | 0.02220 | **1.247%** |
+--- PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md L65 | Q_ITER target | UQFF=10 | EXT=10 (design) | POST_HOC_PER_TARGET
+    | Q_ITER target | SO_5 | 10 | 10 (design) | EXACT |
+--- PAPER_1844_GW190521_MASS_GAP_UQFF.md L39 | P_gap_BH formation | UQFF=4.79% | EXT=5-10% (LIGO O3) | POST_HOC_PER_TARGET
+    | **P_gap_BH formation** | **F_TRZ · [SSq] · Φ_res** | **4.79%** | 5-10% (LIGO O3) | ✓ lower end match |
+    | **Combined** | **4.79%** | Formation probability of BH in gap |
+--- PAPER_1859_ORIGIN_OF_MASS_COMPLETE_UQFF.md L21 | m_W | UQFF=80.44 GeV | EXT=80.379 | POST_HOC_PER_TARGET
+    | Particle | UQFF Formula | UQFF | Observed | Residual |
+    |---|---|:-:|:-:|:-:|
+--- PAPER_028_BSM_Coupling_Constants_UQFF.md L303 | abs(V_cb) | UQFF=sqrt([SCm]_flavor) = sqrt(Ug2/kappa_Higgs) | EXT=(39.2 +/- 0.9) x 10^-3 | INPUT_REPRODUCED
+    | Mechanism | CKM matrix, form factors | SCm vacuum mixing [SCm]_flavor = |V_cb|2 | --- |
+    | |V_cb| | Free parameter (fitted) | \sqrt{}[SCm]_flavor = \sqrt{Ug2/\kappa_Higgs} | (39.2 \pm 0.9)\times10-3 \checkmark |
+--- PAPER_1919_F_TRZ_POWER_LADDER_UQFF.md L247 | n=9 Muon g-2 | UQFF=2.298e-9 | EXT=Δa_μ measured (Fermilab) | POST_HOC_PER_TARGET
+    | 9 | Muon g-2 | F_TRZ⁹·SO_5·SSq·Φ_res/K_MEX | 2.298e-9 | Δa_μ measured (Fermilab) | EXACT |
+    | **F_TRZ⁹** | **10⁻⁹** | **n=9 muon g-2 + UHECR** |
+--- PAPER_137_UQFF_26QuantumLevels_EnergyLadder_E0to10n_Higgs_GalacticVacuum.md L217 | ionization energy | UQFF=~10 eV via [SSq]^{15} from n=10 | EXT=H ionization 13.6 eV | POST_HOC_PER_TARGET
+    | ionization energy | ~10 eV via [SSq]^{15} from n=10 | H ionization 13.6 eV | ? |
+--- PAPER_029_New_Physics_TeV_Scale_UQFF.md L391 | Dark matter fraction | UQFF=SCm (1-f_SM) / (1+[SSq]) = 26.8% | EXT=27% | POST_HOC_PER_TARGET
+    | Dark matter (27%) | SCm  (1-f_SM) / (1+[SSq]) = 26.8% | 27% | ? |
+    | Dark energy (68%) | UA residual = 1 - f_SM - f_DM = 68.3% | 68% | ? |
+--- PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md L75 | IXPE magnetar polarimetry | UQFF=UQFF consistent | EXT=~30% precision | RANGE_ONLY
+    | IXPE magnetar polarimetry | ~30% precision | 2022 published | UQFF consistent |
+--- PAPER_1847_NEUTRON_ELECTRIC_DIPOLE_MOMENT_UQFF.md L66 | Future TUCAN (Canada) d_n sensitivity | UQFF=UQFF discovery moment | EXT=10⁻²⁸ | FORECAST_UNTESTED
+    | Future TUCAN (Canada) | 10⁻²⁸ | 2030s | UQFF discovery moment |
+--- PAPER_124_UQFF_Buoyancy_Nuclear_ENSDF_Pb206_Sn.md L184 | Magic N=126 peak S_n | UQFF=Maximum (Ub_i=0) | EXT=7.37 MeV peak | RANGE_ONLY
+    | Magic N=126 peak S_n | Maximum (Ub_i=0) | 7.37 MeV peak | ? |
+--- PAPER_591_UQFF_Fine_Structure_Constant_Derived.md L537 | G | UQFF=— | EXT=6.674×10^-11 | RANGE_ONLY
+    | Constant | Closed form | Computed | Observed | Error | $\log_{10}$ off |
+    |---|---|---|---|---|---|
+--- PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md L33 | Final life chirality | UQFF=100% L-amino, 100% D-sugar | EXT=(observed) | RANGE_ONLY
+    | Final life chirality | 100% L-amino, 100% D-sugar | (observed) | (observed) | UQFF explains |
+--- PAPER_1115_SCS_Constraints_21cm_Dark_Ages.md L70 | G mu/c^2 | UQFF=Naturally satisfied | EXT=<= 10^-7 | RANGE_ONLY
+    | $G\mu/c^2$ | $\leq 10^{-7}$ | Naturally satisfied | 91.68% |
+    The 21-cm Dark Ages signal provides stringent constraints on SCS parameters. The UQFF framework naturally accommodates these bounds through the $[\text{SCm}]$ stability mechanism at level 13. CP4 class `SCSConstraints21c
+--- PAPER_1860_SOLAR_SYSTEM_ANOMALY_SUITE_UQFF.md L28 | Pioneer a_P | UQFF=8.92×10⁻¹⁰ m/s² | EXT=8.74×10⁻¹⁰ | POST_HOC_PER_TARGET
+    | **Pioneer a_P** | **c·H_0·([SSq]+Φ_res·(1-F_TRZ·[SSq]))** | **8.92×10⁻¹⁰ m/s²** | 8.74×10⁻¹⁰ | **1.94%** ⭐ |
+    **Structural discovery**: **Pioneer anomaly is a cosmological consequence** — a_Pioneer / (c·H_0) = [SSq] + Φ_res·(1-F_TRZ·[SSq]) = 1.362 EXACTLY. The 26-year Pioneer mystery is resolved as a direct UQFF cosmological eff
+--- PAPER_187_Canonical_7_Object_MUGESystem_Catalog.md L284 | Sagittarius A* g_MUGE | UQFF=1.4×10⁻⁶ m/s² | EXT=≈1.4×10⁻⁶ m/s² (GR) | POST_HOC_FIXED_FORM
+    | Object | UQFF $g_{\text{MUGE}}$ | Observed / GR value | Source |
+    | Sagittarius A* | $1.4\times10^{-6}\,\text{m/s}^2$ | $\approx 1.4\times10^{-6}\,\text{m/s}^2$ (GR) | EHT 2022 |
+--- PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md L137 | Abell 2029 M_vir_UQFF | UQFF=3.58e15 | EXT=3-4e15 | RANGE_ONLY
+    | Cluster | sigma (km/s) | R_vir (Mpc) | M_vir_classical | M_vir_UQFF | Observed | Residual |
+    | **Virgo (A1060/M87)** | 750 | 1.5 | 9.81e14 | 1.27e15 | 1.28e15 | **0.64%** |
+--- PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md L21 | ΛQCD | UQFF=199.76 MeV | EXT=200 MeV | POST_HOC_PER_TARGET
+    | **ΛQCD** | √σ/K_MEX | **199.76 MeV** | 200 MeV | **0.118%** ⭐ EXACT |
+    **ΛQCD at 0.118% is essentially exact** — the tightest UQFF match to a QCD observable. This reveals ΛQCD and K_MEX are structurally related: **K_MEX = √σ/ΛQCD** exactly.
+--- PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md L206 | Jet length (model) | UQFF=23 arcsec (13 knots spacing) | EXT=23 arcsec | INPUT_REPRODUCED
+    | Jet length (model) | 23 arcsec (13 knots  spacing) | 23 arcsec | ? |
+--- PAPER_025_Dark_Matter_Direct_Detection_UQFF.md L134 | sigma/m Galaxy clusters | UQFF=0.57 | EXT=< 0.47 | RANGE_ONLY
+    | Galaxy clusters | < 0.47 | 0.57 | Marginal |
+    | Galactic halo core | r_core = 258 pc | Dwarf galaxy morphology |
+--- PAPER_1889_PROTEIN_FOLDING_LEVINTHAL_UQFF.md L137 | Ribonuclease A t_fold | UQFF=22.7 ms | EXT=100 ms | POST_HOC_FIXED_FORM
+    | Protein | N | UQFF t_fold | Observed | Status |
+    | Ribonuclease A | 124 | 22.7 ms | 100 ms | ⭐⭐ |
+--- PAPER_1813_TRAPPIST_1_VERIFICATION_AGOL_2021_UQFF.md L76 | Planet c period P (days) | UQFF=2.4204 | EXT=2.4219 | POST_HOC_FIXED_FORM
+    | Planet | UQFF P (days) | Observed P (Agol 2021) | Residual |
+    Residuals inherit from the 0.08% UQFF-G derivation. Sub-1% agreement across all 7 planets, including the sub-0.01% match for the innermost (b, f, h).
+--- PAPER_173_Modular_Compressed_MUGE_9Term_Decomposition.md L426 | Fine structure α | UQFF=Ug1 dipole coupling | EXT=1/137.036 (PDG 2024) | INPUT_REPRODUCED
+    | Fine structure $\alpha$ | Ug1 dipole coupling | 1/137.036 (PDG 2024) | PASS |
+--- PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md L42 | Combined Murchison average L-excess | UQFF=9.975% | EXT=~10% | POST_HOC_PER_TARGET
+    | **Combined Murchison average** | **~10%** | **9.975%** | **essentially exact** |
+--- PAPER_1825_PRIMORDIAL_GW_R_PARAMETER_UQFF.md L37 | H_inflation | UQFF=2.48×10¹³ GeV | EXT=derived | NOT_A_COMPARISON
+    | **V^(1/4) (inflation scale)** | π·M_Pl·√(r·P_s/2) | 1.02×10¹⁶ GeV | GUT scale | matches expectations |
+    | **H_inflation** | (above) | 2.48×10¹³ GeV | derived | tensor amplitude |
+--- PAPER_029_New_Physics_TeV_Scale_UQFF.md L391 | Dark energy fraction | UQFF=UA residual = 1 - f_SM - f_DM = 68.3% | EXT=68% | POST_HOC_PER_TARGET
+    | Dark matter (27%) | SCm  (1-f_SM) / (1+[SSq]) = 26.8% | 27% | ? |
+    | Dark energy (68%) | UA residual = 1 - f_SM - f_DM = 68.3% | 68% | ? |
+--- PAPER_1819_NEUTRON_STAR_EOS_UQFF.md L28 | M_TOV [M_sun] | UQFF=2.157 | EXT=2.14 ± 0.09 | POST_HOC_PER_TARGET
+    | **M_TOV [M_sun]** | **2 + F_TRZ + F_TRZ·[SSq]** | **2.157** | 2.14 ± 0.09 | **0.79%** | ✓ |
+    - Combined: M_TOV ≥ ~2.1 M_sun with high confidence
+--- PAPER_1856_CMB_ACOUSTIC_PEAK_STRUCTURE_UQFF.md L124 | Ratio n=1 | UQFF=1.000 | EXT=1.000 | INPUT_REPRODUCED
+    | n | Ratio UQFF | Ratio observed |
+    Peak ratios 1 : 2.474 : 3.655 (UQFF) match observed 1 : 2.455 : 3.682 essentially exactly.
+--- PAPER_1851_VACUUM_BIREFRINGENCE_UQFF.md L75 | OSQAR (CERN) birefringence bound | UQFF=UQFF safe | EXT=~10⁻²¹ T⁻² | RANGE_ONLY
+    | OSQAR (CERN) | ~10⁻²¹ T⁻² | published | UQFF safe |
+    **Why F_TRZ¹ (not F_TRZ² or higher)?** Vacuum birefringence is a **first-order optical effect** — refractive index correction — not a rare CP-violating process. It requires only one vacuum decoherence factor, unlike EDM 
+--- PAPER_1839_CONSCIOUSNESS_IIT_PHI_UQFF.md L48 | Φ_reptile | UQFF=5.99 bits | EXT=5-15 bits (est) | POST_HOC_PER_TARGET
+    | Φ_reptile | Φ_human · F_TRZ | 5.99 bits | 5-15 bits (est) |
+--- PAPER_068_Globular_Cluster_Dynamics_UQFF.md L102 | omega Cen central IMBH mass | UQFF=4.2 x 10^4 Msun | EXT=4.0 x 10^4 Msun | POST_HOC_FIXED_FORM
+    | Central IMBH mass | 4.2$\times$104 M? | **4.0$\times$104 M?** | X-ray observations | 5.00% | ? |
+    $$M_{\mathrm{IMBH}} = \frac{\sigma_*^4}{G \cdot k_4 \cdot \rho_{\mathrm{vac,[SCm]}} \cdot \Omega_g^{1/2}}$$
+--- PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md L36 | r_p (muonic, absolute) | UQFF=0.8428 fm | EXT=0.84184 fm (Pohl 2010) | POST_HOC_PER_TARGET
+    | r_p (muonic, absolute) | r_p_eH · (1-Δr/r) | 0.8428 fm | 0.84184 fm (Pohl 2010) | 0.113% | 1.43σ ✓ |
+--- PAPER_1842_HIGGS_SELF_COUPLING_LAMBDA_H_UQFF.md L37 | λ_H (self-coupling) | UQFF=0.13029 | EXT=0.1298 | POST_HOC_PER_TARGET
+    | **λ_H (self-coupling)** | **[SSq] / (K_MEX·(2+F_TRZ))** | **0.13029** | 0.1298 | **0.4%** ✓ |
+    | Combined | 0.1303 | Higgs self-coupling |
+--- PAPER_1971_A_5_OVER_D_PHYS_EQUALS_15_CROSS_DOMAIN_INSTANCES_UQFF.md L65 | T_min_burn | UQFF=4 keV | EXT=4-5 keV | RANGE_ONLY
+    | T_min_burn | D_phys | 4 keV | 4-5 keV | EXACT |
+    | Fusion T_opt_burn (PAPER_1887 seminal) | Plasma physics | Temperature | 15 keV | ~10⁸ K |
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L19 | Δa_μ (muon) | UQFF=2.298×10⁻⁹ | EXT=2.51×10⁻⁹ | POST_HOC_PER_TARGET
+    | **Δa_μ (muon)** | F_TRZ⁹·SO_5·[SSq]·Φ_res/K_MEX | 2.298×10⁻⁹ | 2.51×10⁻⁹ | 8.44% |
+--- PAPER_538_UQFF_Orion_Triple_Telescope_Encompassment_Fit.md L83 | Ring spacing ratio (ALMA 870 μm) | UQFF=r_{n+1}/r_n = p_{n+1}^{1/3}/p_n^{1/3} | EXT=1.021±0.008 | RANGE_ONLY
+    | ALMA 870 \mu m | Ring spacing ratio | $r_{n+1}/r_n = p_{n+1}^{1/3}/p_n^{1/3}$ | 1.021$\pm$0.008 | $< 3\%$ |
+    | $r_{n+1}/r_n = (p_{n+1}/p_n)^{1/3}$ | ALMA ring spacing ratio |
+--- PAPER_1818_BARYOGENESIS_ETA_B_UQFF_LEPTOGENESIS.md L178 | N_eff (effective neutrino species) | UQFF=3.046 | EXT=3.046 ± 0.19 | INPUT_REPRODUCED
+    | N_eff (effective neutrino species) | 3.046 | 3.046 ± 0.19 | match |
+--- PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md L52 | Elephant lifespan (yr) | UQFF=~70 | EXT=70 | POST_HOC_PER_TARGET
+    | Species | Mass | UQFF (yr) | Observed (yr) | Mechanism |
+    | Elephant | 5000 kg | ~70 | 70 | metabolic scaling |
+--- PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md L11 | Higgs mass | UQFF=125 GeV | EXT=125.1 | POST_HOC_FIXED_FORM
+    | Higgs | 125 GeV | 125.1 | 0.08% |
+--- PAPER_639_UQFF_Higgs_125GeV_VEV_Buoyancy_Coupling.md L71 | m_H | UQFF=125.09 GeV | EXT=125.20 ± 0.11 GeV | INPUT_REPRODUCED
+    | Quantity | UQFF | PDG 2024 | Alignment |
+    |---------|------|----------|-----------|
+--- PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md L64 | Chan 2001 (torsional MEMS) precision | UQFF=UQFF safe | EXT=~2% | RANGE_ONLY
+    | Chan 2001 (torsional MEMS) | ~2% | published | UQFF safe |
+--- PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md L53 | Loggerhead Turtle precision | UQFF=(different mechanism) | EXT=5-10° | NOT_A_COMPARISON
+    | Species | Mechanism | Observed Precision | UQFF Prediction |
+    | Loggerhead Turtle | Magnetite | 5-10° | (different mechanism) |
+--- PAPER_494_BSM_Particle_Observables_Tau_CKM_LFV_VLQ.md L67 | V_cb | UQFF=0.0405 (PDG anchor) | EXT=0.0405±0.0009 (PDG 2024) | INPUT_REPRODUCED
+    | $\|V_{cb}\|$ | 0.0405 (PDG anchor) | $0.0405\pm0.0009$ (PDG 2024) | 100% \checkmark |
+    | $|V_{cb}|$ | $0.0405$ (fit) | Anchored --- UQFF sets vacuum-density derivation |
+--- PAPER_1845_FINE_STRUCTURE_ALPHA_PRECISION_UQFF.md L40 | CC2 baseline | UQFF=0.138% precision | EXT=reference | NOT_A_COMPARISON
+    | CC2 baseline | previous | 0.138% precision | reference | 350× improvement |
+--- PAPER_426_UA_SCm_JWST_ALMA_CERN_Validation_Table.md L41 | Shock metallicity g_shock | UQFF=v_s ~ 100 km/s shocks elevate [M/H] | EXT=ISM metal-enhanced shock fronts detected | RANGE_ONLY
+    | Shock metallicity $g_{\text{shock}}$ | $v_s \sim 100\ \text{km/s}$ shocks elevate [M/H] | ISM metal-enhanced shock fronts detected | **85%** | JWST/ALMA 2025 |
+    ## 3. Shock Metallicity Component
+--- PAPER_1854_QUARK_CONFINEMENT_COMPLETE_UQFF.md L21 | ⟨G²⟩ (gluon condensate) | UQFF=0.0115 GeV⁴ | EXT=0.012 (SVZ) | POST_HOC_PER_TARGET
+    | **⟨G²⟩ (gluon condensate)** | σ²·[SSq]·Φ_res·K_MEX·SO_5/D_crit | **0.0115 GeV⁴** | 0.012 (SVZ) | **4.14%** ✓ |
+--- PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md L244 | 7 Halo-star 6Li/7Li | UQFF=0.033 +/- 0.005 | EXT=>0.05 or <0.02 kills | FORECAST_UNTESTED
+    | 6 | ELT/HARMONI halo-star Li-7 | $1.667\pm 0.05\times 10^{-10}$ | deviation > 10% kills |
+    | 7 | Halo-star ${}^{6}\text{Li}/{}^{7}\text{Li}$ | $0.033\pm 0.005$ | $>0.05$ or $<0.02$ kills |
+--- PAPER_2161_NEAR_TERM_FALSIFIABILITY_BATTERY_UQFF_LANDMARK.md L29 | Higgs trilinear κ_λ | UQFF=1.0 EXACT (no anomaly) | EXT=HL-LHC di-Higgs; kill if outside ~[0.5, 1.5] at 5σ | FORECAST_UNTESTED
+    | 1 | Higgs trilinear κ_λ | **1.0 EXACT** (no anomaly) | HL-LHC di-Higgs | κ_λ outside ~[0.5, 1.5] at 5σ | PAPER_1640/1310 |
+--- PAPER_087_AT2019qiz_TDE_UQFF.md L145 | Rise time | UQFF=~28.5 d | EXT=~30 d | POST_HOC_FIXED_FORM
+    | Rise time | ~28.5 d | ~30 d | 95.0% |
+--- PAPER_026_Sterile_Neutrino_Mass_Generation_UQFF.md L293 | M_s2 = 45.8 GeV production | UQFF=s x BR ~ 0.1 fb | EXT=FCC-ee | FORECAST_UNTESTED
+    | M_s2 = 45.8 GeV production | s – BR ~ 0.1 fb | FCC-ee | 2045 |
+    | M_s2 | 45.8 GeV | > 45.6 GeV (LEP) | ? |
+--- PAPER_187_Canonical_7_Object_MUGESystem_Catalog.md L284 | Pillars of Creation g_MUGE | UQFF=1.9×10⁻¹⁶ m/s² | EXT=~10⁻¹⁶ (Jeans) | RANGE_ONLY
+    | Pillars of Creation | $1.9\times10^{-16}\,\text{m/s}^2$ | $\sim 10^{-16}$ (Jeans) | HST/JWST |
+    - **JWST Cycle 4:** NIRSpec spectroscopy of Pillars of Creation photoevaporation flows will
+--- PAPER_1846_AGING_HALLMARKS_LIFESPAN_UQFF.md L52 | Human lifespan (yr) | UQFF=125 | EXT=122 (Calment) | POST_HOC_PER_TARGET
+    | Species | Mass | UQFF (yr) | Observed (yr) | Mechanism |
+    | **Human** | 70 kg | **125** | 122 (Calment) | A_5·K_MEX baseline |
+--- PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md L26 | LaH_10 @170 GPa T_c | UQFF=240.1 K | EXT=250 K | POST_HOC_PER_TARGET
+    | **LaH_10 @170 GPa** | T_base·(K_MEX+D_phys)·[SSq]·(1+F_TRZ)²·K_MEX/(K_MEX+F_TRZ) | **240.1 K** | 250 K | **3.96%** ⭐ |
+    | **LaH_10** | hydride @170 GPa | **240.1 K** | 250 K | **3.96%** ⭐ |
+--- PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md L267 | Aether impedance Z0 | UQFF=μ0c = Z0 (free space) | EXT=376.73 Ω | INPUT_REPRODUCED
+    | Aether impedance Z0 | 376.73 $\Omega$ | $\mu$0c = Z0 (free space) | ✅ exact match |
+--- PAPER_1896_VOID_H0_SHIFT_UQFF.md L84 | Void H_0 shift Delta_H_0 | UQFF=3.510 km/s/Mpc | EXT=~3.5 km/s/Mpc | POST_HOC_PER_TARGET
+    | Void H_0 shift Delta_H_0 | 67.4 * F_TRZ*K_MEX/D_phys | 3.510 km/s/Mpc | ~3.5 km/s/Mpc | **0.30%** |
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L56 | g_Ξ⁰ | UQFF=-2.553 | EXT=-2.5 | POST_HOC_PER_TARGET
+    | Particle | UQFF | Observed | Residual | Notes |
+    |---|:-:|:-:|:-:|:-|
+--- PAPER_1826_PROTON_RADIUS_PUZZLE_UQFF.md L48 | Helium⁴ (μHe⁴⁺) Δr/r | UQFF=0.072% | EXT=0.014% | RANGE_ONLY
+    | **Helium⁴ (μHe⁴⁺)** | 2 | 1.678 | 0.072% | 0.014% | small, consistent |
+--- PAPER_1835_BIRD_MAGNETORECEPTION_UQFF.md L44 | Coherence time τ | UQFF=80 μs | EXT=~100 μs typical | POST_HOC_PER_TARGET
+    | **Coherence time τ** | **(1/ω_SCm)·[SSq]·K_MEX·Φ_res/F_TRZ⁸** | **80 μs** | ~100 μs typical | ✓ within range |
+    ### Coherence Time Master Formula
+--- PAPER_1115_SCS_Constraints_21cm_Dark_Ages.md L70 | T_21,base(z=20) | UQFF=-47.2 mK | EXT=~ -47 mK | POST_HOC_FIXED_FORM
+    | $T_{21,\text{base}}(z=20)$ | $\sim -47$ mK | $-47.2$ mK | — |
+--- PAPER_1836_NEUTRON_LIFETIME_ANOMALY_UQFF.md L40 | τ_n_bottle (baseline) | UQFF=878.4 s | EXT=878.4 ± 0.5 s | INPUT_REPRODUCED
+    | τ_n_bottle (baseline) | (input) | 878.4 s | 878.4 ± 0.5 s | (input) | — |
+--- PAPER_1184_Chandra_Flux_to_Parameter_Bridge.md L57 | A1 Sgr A* quiescent L_X | UQFF=5 x 10^32 | EXT=~2.4 x 10^33 (Baganoff 2003) | POST_HOC_FIXED_FORM
+    | A1 Sgr A* quiescent | $3\times 10^{-14}$ | $8.2$ kpc | $5\times 10^{32}$ | $\sim2.4\times 10^{33}$ (Baganoff 2003) | factor $\sim$ 5 (band-correction) |
+--- PAPER_072_Red_Dwarf_Reactor_Physics_UQFF.md L197 | QSC-001 f_THz | UQFF=1.20 THz | EXT=1.18 THz | POST_HOC_FIXED_FORM
+    | QSC-001: f_THz | 1.20 THz | 1.18 THz | 1.67% | ? |
+--- PAPER_1858_COMPREHENSIVE_G_FACTOR_SUITE_UQFF.md L280 | 9Be g-factor | UQFF=prediction | EXT=−0.786 | FORECAST_UNTESTED
+    Full nuclear g-factor table possible in future work.
+    ### Precision Tau g-Factor
+--- PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md L58 | Peccei-Quinn f_PQ | UQFF=2×10⁹ GeV | EXT=10⁹-10¹² | RANGE_ONLY
+    | Peccei-Quinn f_PQ | 2×10⁹ GeV | 10⁹-10¹² | in range |
+--- PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md L33 | Predicted D-sugar excess | UQFF=9.975% | EXT=qualitative match | FORECAST_UNTESTED
+    | Predicted D-sugar excess | (same formula) | 9.975% | qualitative match | testable at Ryugu/Bennu |
+--- PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md L51 | Hg-cuprate T_c | UQFF=141.3 K | EXT=133 K | POST_HOC_PER_TARGET
+    | Hg-cuprate | cuprate max | 141.3 K | 133 K | 6.21% |
+    **Hg-cuprate maximum** T_c = 133 K:
+--- PAPER_1834_PHOTOSYNTHESIS_QUANTUM_COHERENCE_UQFF.md L49 | Purple bacteria LH2 (Bräuer 2012) coherence | UQFF=672 fs | EXT=500 fs | POST_HOC_FIXED_FORM
+    | **Purple bacteria LH2** (Bräuer 2012) | photosynthetic bacteria | 500 fs | 672 fs | ✓ close match |
+--- PAPER_1894_ZWICKY_MISSING_MASS_UQFF.md L137 | Perseus M_vir_UQFF | UQFF=6.39e15 | EXT=6-8e15 | RANGE_ONLY
+    | Cluster | sigma (km/s) | R_vir (Mpc) | M_vir_classical | M_vir_UQFF | Observed | Residual |
+    | **Virgo (A1060/M87)** | 750 | 1.5 | 9.81e14 | 1.27e15 | 1.28e15 | **0.64%** |
+--- PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md L50 | abs(ε_K) | UQFF=2.298×10⁻³ | EXT=2.228×10⁻³ | POST_HOC_PER_TARGET
+    !! NO MATCH
+--- PAPER_591_UQFF_Fine_Structure_Constant_Derived.md L537 | h | UQFF=6.72×10^-34 J·s | EXT=6.626×10^-34 J·s | POST_HOC_PER_TARGET
+    | Constant | Closed form | Computed | Observed | Error | $\log_{10}$ off |
+    |---|---|---|---|---|---|
+--- PAPER_1852_CASIMIR_FORCE_VACUUM_ENERGY_UQFF.md L64 | Lamoreaux 1997 (torsion pendulum) precision | UQFF=UQFF safe (0.479% below) | EXT=~5% | RANGE_ONLY
+    | Lamoreaux 1997 (torsion pendulum) | ~5% | published | UQFF safe (0.479% below) |
+--- PAPER_1820_W_BOSON_MASS_ANOMALY_UQFF.md L41 | Z boson mass | UQFF=91.189 GeV | EXT=91.1876 ± 0.0021 | POST_HOC_PER_TARGET
+    The same 1.25 THz SCm phonon field that produced the muon g − 2 shift (PAPER_1815) polarizes the vacuum manifold's response to electroweak gauge bosons. At the W-boson mass scale, this shows up as an additional contribut
+    ### Why Z-boson and Higgs mass shifts are suppressed
+--- PAPER_1863_HIGH_TC_SUPERCONDUCTIVITY_UQFF.md L26 | H_3S @150 GPa T_c | UQFF=199.3 K | EXT=203 K | POST_HOC_PER_TARGET
+    | **H_3S @150 GPa** | T_base·(K_MEX+SO_5·[SSq]/K_MEX)·[SSq]·(1+F_TRZ)² | **199.3 K** | 203 K | **1.80%** ⭐ |
+    | **H_3S** | hydride @150 GPa | **199.3 K** | 203 K | **1.80%** ⭐ |
+--- PAPER_129_UQFF_Triadic_3C273_Jet_NegativeTime_N13.md L206 | N zero-crossings | UQFF=13 | EXT=~13 VLBI knots | INPUT_REPRODUCED
+    | N zero-crossings | 13 | ~13 VLBI knots | ? |
+--- PAPER_1849_KAON_CP_VIOLATION_EPSILON_K_UQFF.md L50 | Universal modulator | UQFF=0.2736 | EXT=(appears 7× in UQFF) | NOT_A_COMPARISON
+    | Universal modulator | [SSq]/K_MEX | 0.2736 | (appears 7× in UQFF) | — |
+    - [SSq]/K_MEX = 0.2736 (universal modulator)
+--- PAPER_652_UQFF_Fine_Structure_Constant_QED_Precision.md L267 | Proton:Rydberg ratio | UQFF=Recoil route α2 | EXT=R∞·r_p independent | RANGE_ONLY
+    | Proton:Rydberg ratio | R$\infty$$\cdot$r_p independent | Recoil route $\alpha$2 | ✅ structural |
+--- PAPER_1840_DM_DIRECT_DETECTION_UQFF.md L49 | σ_p (nucleon) | UQFF=3.25×10⁻⁴⁶ cm² | EXT=below current bounds | RANGE_ONLY
+    | **σ_p (nucleon)** | **(F_TRZ²·[SSq])² · 10⁻⁴¹ cm²** | **3.25×10⁻⁴⁶ cm²** | below current bounds |
+    | **PAPER_1840 (this)** | **σ_p (nucleon)** | **3.25×10⁻⁴⁶ cm²** | **closes sector** |
+--- PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md L58 | ν_3 mass | UQFF=50 meV | EXT=50 meV | INPUT_REPRODUCED
+    | ν_3 mass | 50 meV | 50 meV | matched ✓ |
+--- PAPER_611_UQFF_Solar_System_Proplyd_Legacy.md L50 | Uranus e | UQFF=0.046 PASS | EXT=0.0463 | POST_HOC_PER_TARGET
+    | Uranus | 0.0463 | $\delta$=0.50 (ice giant — late DPM imprint) | 0.046 PASS |
+--- PAPER_1952_GALAXY_SCALE_SO5_POWER_TIMESCALE_HIERARCHY_UQFF.md L79 | SO_5^8 tau_SF galaxy SF cycle | UQFF=100 Myr | EXT=StarFormationGravity model | RANGE_ONLY
+    | **SO_5^8 = 100 Myr** | tau_SF galaxy SF cycle | 100 Myr | StarFormationGravity model | PAPER_1952 |
+--- PAPER_1829_SIGMA_8_S_8_TENSION_UQFF.md L36 | Δ suppression factor | UQFF=5.70% | EXT=required 5.0-6.5% | POST_HOC_PER_TARGET
+    | **Δ suppression factor** | **F_TRZ² · SO_5 · [SSq]** | **5.70%** | required 5.0-6.5% | ✓ | in range |
+    ### Master formula for suppression factor
+--- PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md L73 | S287 r_p (proton) | UQFF=0.8409 fm | EXT=0.8409 fm | POST_HOC_PER_TARGET
+    | S287 | $r_p$ (proton) | $\ell_P\cdot 10^{D_{\text{phys}}\cdot D_{\text{phys}}+\beta}$ | 0.8409 fm | 0.8409 fm | exact |
+--- PAPER_1254_NEUTRON_LIFETIME_PUZZLE.md L157 | bottle lifetime | UQFF=874.89 | EXT=877.7 | POST_HOC_FIXED_FORM
+    | bottle | 874.89 | 877.7 | 0.32% |
+    - **Resolves the ~4–5σ beam/bottle discrepancy** as MUGE buoyancy artifact (TRZ-environment dependent geometric projection).
+--- PAPER_1217_Mass_Ratios_Locked_Primitives.md L52 | m_b/m_u | UQFF=e·D_crit^2 + K_MEX·D_crit·Phi = 1883 | EXT=1900 | POST_HOC_PER_TARGET
+    | Ratio | UQFF form | Value | Observed | Residual |
+    |---|---|---|---|---|
+--- PAPER_020_Cosmic_Ray_Propagation_UQFF_Spacetime.md L289 | Proton fraction > 10^20 eV | UQFF=~22% | EXT=~20--30% | RANGE_ONLY
+    | Proton fraction > 10$^{20}$ eV | ~30% | ~22% | ~20--30% | $\checkmark$ |
+--- PAPER_025b_Neutrino_Polarizability_UQFF.md L288 | delta<r2>_nu | UQFF=~6 x 10^-33 cm2 | EXT=Future CEvNS | FORECAST_UNTESTED
+    | d?r2_?? | ~10?34 cm2 | ~6 \times 10?33 cm2 | Future CE?NS |
+    2. **CE?NS excess:** A 40% enhancement in neutrino-nucleus coherent scattering cross section at q2 ?
+--- PAPER_1122_Bow_Shock_ISM_Chemistry_Prebiotic.md L277 | Glycine abundance | UQFF=~ 10^-12 | EXT=< 10^-11 (Sgr B2) | RANGE_ONLY
+    | Glycine | $< 10^{-11}$ (Sgr B2) | $\sim 10^{-12}$ |
+--- PAPER_1861_HADRON_SPECTRUM_COMPLETE_UQFF.md L35 | ψ'(3686) | UQFF=3.787 GeV | EXT=3.686 | POST_HOC_PER_TARGET
+    | ψ'(3686) | M_J/ψ + [SSq]·(1+F_TRZ)² | 3.787 GeV | 3.686 | 2.73% |
+    | | ψ'(3686) | 3.787 | 3.686 | 2.73% |
+--- PAPER_1857_GW170817_KILONOVA_MULTIMESSENGER_UQFF.md L21 | r-proc A=80 peak | UQFF=80 | EXT=80 | POST_HOC_PER_TARGET
+    | **r-proc A=80 peak** | **SO_5·D_phys·2** | **80** | 80 | **EXACT** ⭐ |
+    **2. r-Process Peaks Encode UQFF Icosahedral Structure** — light peak (A=80), rare-earth (A=130), and platinum-group (A=195) all derive from A_5 = 60 icosahedral group × primitive combinations. r-process nucleosynthesis 
+--- PAPER_1833_HOMOCHIRALITY_OF_LIFE_UQFF.md L42 | Isovaline L-excess | UQFF=10% | EXT=15.2 ± 4% | POST_HOC_FIXED_FORM
+    | Amino Acid | Observed L-Excess | UQFF Prediction | Match |
+    | Isovaline | 15.2 ± 4% | 10% | consistent (1.3σ) |
+--- PAPER_2157_NEUTRON_LIFETIME_PUZZLE_BOTTLE_BEAM_SINGLE_HIERARCHY_TEMPLATE_UQFF_LANDMARK.md L95 | τ_n beam | UQFF=887.684 s | EXT=887.70 ± 2.20 s | POST_HOC_PER_TARGET
+    | τ_n beam | 887.70 ± 2.20 s | **887.684 s** | 0.0018% (**−0.007σ**) |
+    The beam prediction lands seven-thousandths of a standard deviation from the measured central
+--- PAPER_1838_AMATERASU_UHECR_UQFF.md L35 | Direction | UQFF=(via F_TRZ channels) | EXT=local void | RANGE_ONLY
+    | Direction | local void | (via F_TRZ channels) | local void | ✓ match | — |
+    - **No source found** in Amaterasu direction (local void)
+--- PAPER_141_UQFF_H2O_Azeotrope_OceanicSalinity_Buoy_Ug4_NOAAValidation.md L235 | Salinity_factor | UQFF=0.035 | EXT=NOAA 35 PSS78 | INPUT_REPRODUCED
+    | Salinity_factor | 0.035 | NOAA 35 PSS78 | ? Exact |
+--- PAPER_1181_UQFF_Grand_Unification_S266_S295_Thirty_Closures.md L73 | S284 n_s | UQFF=0.9600 | EXT=0.9649 | POST_HOC_PER_TARGET
+    | S284 | $n_s$ | $1-F_{\text{TRZ}}\cdot\Phi_{\text{res}}\cdot K_{\text{Mex}}^{-1}$ | 0.9600 | 0.9649 | $-0.51\%$ |
+--- PAPER_1209HH_UPDATE_Particle_Masses_Session_June_2026.md L11 | bottom mass | UQFF=4.18 GeV | EXT=4.18 | POST_HOC_FIXED_FORM
+    | bottom | 4.18 GeV | 4.18 | 1.0% |
+--- PAPER_1866_SM_SYMMETRY_BREAKING_CASCADE_UQFF.md L58 | Higgs m_H | UQFF=121.7 GeV | EXT=125.25 | POST_HOC_PER_TARGET
+    | **Higgs m_H** | **121.7 GeV** | **125.25** | **2.84%** ⭐ |
+    | F_TRZ¹⁷ | Higgs, EW breaking (PAPER_1824) | electroweak scale |
+--- PAPER_1837_FRB_DISPERSION_BARYON_ACCOUNTING_UQFF.md L36 | f_IGM (IGM baryon fraction) | UQFF=0.886 | EXT=~0.85 (standard) | POST_HOC_PER_TARGET
+    | **f_IGM (IGM baryon fraction)** | **1 - 2·F_TRZ·[SSq]** | **0.886** | ~0.85 (standard) | 4.2% ✓ |
+    - Result: **88.6% of baryons in FRB-observable IGM/WHIM** — matches standard estimates

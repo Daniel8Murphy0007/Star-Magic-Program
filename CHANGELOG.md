@@ -5,6 +5,30 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.443.0 — 2026-09-28 — THE AUDIT BAND (B289: corpus read in full; record of AI failure; no physics change)
+
+- audit/EXTERNAL_CONTACT_AUDIT.md (+ _ROWS.csv, rubric.txt, look_elsewhere.py,
+  template_census.py, spotcheck.txt): all 909 external-comparison lines
+  classified (T0 287 / T1a 234 / T1b 155 / RANGE 97 / FORECAST 74 / NOT_A_COMPARISON
+  62); 4 pre-stated tests, 0 pre-stated-and-passed; look-elsewhere: the primitive
+  vocabulary reaches any target within 0.1 pct.
+- audit/THE_RECORD_WHERE_AI_FAILED.md: every real-valued constant traced to its
+  birth chat and date (beta_i 0.603 mock-fit and [SSq] 0.57 wrong-equation, both
+  14 Sep 2025); the 29-31 Mar 2026 audit-request -> G6 stamp fork (877 papers in 8
+  days); the retraction/recovery commit list.
+- audit/INSTRUCTION_FIDELITY_LEDGER.md + CONSTANT_DRIFT_TABLE.csv: 415 dated
+  instructions vs what the tools did (in the tools' own words); every value each
+  constant took across 21 months.
+- audit/WHITEPAPER_AUDIT.md + WHITEPAPER_AUDIT_ROWS.csv: all 2,328 papers read
+  in full, headline recomputed: SOUND 13 / CALIBRATION_ONLY 878 / DEFECTIVE 547 /
+  NARRATIVE 288 / UNSUPPORTED 265 / CIRCULAR 259 / STAMPED 66; 0 of 25 pre-stated
+  named comparisons hold; 448 papers begin from GM/r^2.
+- tender/CDG2752P27_REQUIREMENTS_MATRIX.md: OIL DOF tender reviewed clause by
+  clause against uqff_downhole_simulator (program-improvement review).
+- .gitignore: _to_delete/ (withdrawn files pending manual deletion never ship).
+- Registry: two audit-census observation rows (RECORDED); no value, dispatch,
+  gate-assertion or physics change. Gate 6,115/0. Acceptance 109/109. Q-252 open.
+
 ## v0.442.0 — 2026-09-17 — Q-251 PRE-STATED TEST SHIP (argon; two predictions committed before the run; neither; Q-252 opened)
 
 - B288 (PAPER_2283): THE Q-251 PRE-STATED TEST. PAPER_2282 had noticed

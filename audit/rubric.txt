@@ -1,0 +1,13 @@
+You are auditing comparison tables extracted from a physics whitepaper corpus (the "UQFF" framework). For EVERY table in the file, and for every data row in it that compares a UQFF-computed quantity with an externally measured/observed/experimental value, output ONE CSV line with these columns (use | as the separator, no header, one row per line, nothing else in your final answer except these lines):
+
+paper | table_line | quantity | uqff_value | external_value | external_source_named (Y/N) | residual_as_stated | class | evidence
+
+class must be exactly one of:
+- INPUT_REPRODUCED: the "prediction" is a known constant that is an input or is simply restated (e.g. "reproduces alpha = 1/137.036", "100% (exact input)").
+- POST_HOC_PER_TARGET: each row has its own formula built from the framework's few primitives (F_TRZ, K_MEX, SSq, D_phys, SO_5, D_BSFG, beta_i ...) chosen for that target, or a free parameter tuned per row (look for distinct formulas per row, "calibrated", "fitted", "chosen", "adjusted", or an "empirical" factor).
+- POST_HOC_FIXED_FORM: one formula with the same fixed inputs applied across rows/quantities, compared to already-known data (no per-row freedom visible), but the data existed before the paper.
+- RANGE_ONLY: qualitative or order-of-magnitude consistency ("within band", "consistent", "PASS", bounds/limits, checkmarks without numbers).
+- FORECAST_UNTESTED: a prediction for a future or not-yet-performed measurement (LISA, Belle II, FCC, "not yet measured", "testable").
+- NOT_A_COMPARISON: the table does not compare UQFF to external data (e.g. lists of experimental bounds only, GR-vs-UQFF only, internal quantities).
+
+Rules: be literal and skeptical; if a row shows a UQFF value equal to the observed value to all digits, note "identical digits" in evidence. Do not invent values; copy them. If a whole table is NOT_A_COMPARISON, output a single line for the table with quantity = "(table)". Keep evidence under 120 characters. Read the ENTIRE file before answering.
