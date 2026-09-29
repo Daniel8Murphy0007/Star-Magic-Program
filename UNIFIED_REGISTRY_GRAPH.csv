@@ -12434,3 +12434,5 @@ front4_record_run,PAPER_2282,COMPARED_WITH,q251_argon_eta_k,B288: water k_c 7.90
 whitepaper_audit_verdict_census,AUDIT_B289,RECORDS,audit/WHITEPAPER_AUDIT_ROWS.csv,"B289: 2,328 verdict rows; 13 SOUND; 0/25 pre-stated comparisons hold"
 external_contact_audit_census,AUDIT_B289,RECORDS,audit/EXTERNAL_CONTACT_AUDIT_ROWS.csv,"B289: 909 lines; 4 T2; 0 T3"
 whitepaper_audit_verdict_census,PAPER_2283,CONFIRMS,q251_argon_grade,"B289: the corpus audit and the Q-251 result agree - the honest tests are the negative ones"
+client_report_family_census,PAPER_2256,EXTENDS,uqff_downhole_simulator,"B290: the simulator paper's product gains the client-facing report family"
+client_report_family_census,PAPER_2258,CONSUMES,blind_harness_accuracy,"B290: the accuracy statement re-scores the blind harness trial by trial (MAPE, 90 pct CI)"

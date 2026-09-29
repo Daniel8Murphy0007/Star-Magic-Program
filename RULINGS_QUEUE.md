@@ -7833,3 +7833,16 @@ were in the corpus.
 - **Not claimed:** any change to canonical values; the drift table records what the
   corpus contains, it does not select a value.
 - **Status:** RECORDED (B289). Q-252 OPEN - Daniel-gated.
+
+### B290 (v0.444.0, 2026-09-29) — THE CLIENT-USER BAND — rulings state: no new question; Q-252 remains OPEN
+
+- **What shipped:** the client-facing layer of uqff_downhole_simulator (build steps 1-11
+  of the 2026-09-28 reporting-basis reformulation): canonical sample record and quality
+  rules, nine report types in scope-of-work outline, accuracy statement (MAPE at 90 pct
+  CI), drift monitor with re-fit change log, well-test validation, alarm engine, model
+  cards, store-and-forward, config versioning, SBOM, monthly SLA, FAT/SAT, dashboard.
+- **Rulings:** none requested. The band changes no canonical value, dispatch or gate
+  count. Q-252 (sound-cone k_c vs the eta(k) cutoff) is unchanged and Daniel's to rule.
+- **Not claimed:** any validation of the gauge aging envelope (NONE ON RECORD, stated on
+  its model card); any accuracy claim for the five NOT ACCEPTABLE library quantities.
+- **Status:** RECORDED (B290). Q-252 OPEN - Daniel-gated.

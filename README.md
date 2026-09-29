@@ -1,16 +1,16 @@
 # Star-Magic-Program
 
-[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.443.0)](https://pypi.org/project/star-magic-program/)
-[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.443.0)](https://pypi.org/project/star-magic-program/)
+[![PyPI version](https://img.shields.io/pypi/v/star-magic-program.svg?cacheBust=0.444.0)](https://pypi.org/project/star-magic-program/)
+[![Python versions](https://img.shields.io/pypi/pyversions/star-magic-program.svg?cacheBust=0.444.0)](https://pypi.org/project/star-magic-program/)
 [![Documentation Status](https://readthedocs.org/projects/star-magic-program/badge/?version=latest)](https://star-magic-program.readthedocs.io/en/latest/?badge=latest)
 [![License: AGPL-3.0 + Commercial](https://img.shields.io/badge/License-AGPL--3.0%20%2B%20Commercial-blue.svg)](LICENSE)
 [![Fidelity gate](https://img.shields.io/badge/fidelity_gate-6115%2F0-brightgreen)](uqff_fidelity_tests.py)
 [![Public surfaces](https://img.shields.io/badge/public_surfaces-2334-blue)](uqff_calculator.py)
 [![Whitepapers](https://img.shields.io/badge/whitepapers-2328-orange)](whitepapers/)
 
-**UQFF systematic rebuild — v0.443.0 complete-compile campaign live**
+**UQFF systematic rebuild — v0.444.0 complete-compile campaign live**
 
-**This release (v0.443.0): THE AUDIT BAND — the corpus read in full and recomputed, and the record of where the tools failed, shipped as source.** Four audits land in `audit/`. The external-contact audit classifies all 909 lines where a paper compares a UQFF number to something external: 287 reproduce their input, 234 are post-hoc per target, 155 post-hoc fixed-form, 97 range-only, 74 untested forecasts, 62 not comparisons; 4 pre-stated tests (fronts 1–2 non-discriminating; front 4 and Q-251 negative) and 0 pre-stated-and-passed. THE_RECORD traces every real-valued constant to the chat and date it was born (β_i = 0.603 fitted to mock data and [SSq] = 0.57 from a wrong equation, both 14 Sep 2025) and the 29–31 Mar 2026 audit-request-to-G6-stamp fork. The instruction-fidelity ledger sets 415 of Daniel's dated instructions beside what the tools did next, in the tools' own words; the constant-drift table lists every value each constant took (β_i sixteen; ρ_SCm seven across 56 orders). The whitepaper audit read all 2,328 papers with every headline recomputed: 13 sound (math identities, textbook astrophysics with negligible UQFF term, or the program's own negative tests), 878 calibration-only, 547 defective, 288 narrative, 265 unsupported, 259 circular, 66 stamped; of 25 papers attempting a pre-stated named comparison, 0 hold; 448 begin from GM/r². `tender/` carries a clause-by-clause program review against OIL tender CDG2752P27. **Nothing in the calculator, registry values, gate assertions or physics changed; this band ships the record.** Q-252 stays Daniel-gated. **Totals: 2,279 wired (2,334 DISPATCH keys) / gate 6,115 green / 4,206 defs / acceptance 109 green / registry 7,143 rows / whitepapers 2,328 / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
+**This release (v0.444.0): THE CLIENT-USER BAND — the downhole gauge program speaks the client's language.** Build steps (1)–(11) of the 2026-09-28 reformulation land in `uqff_downhole_simulator/`: `sample_record` (canonical measurement record; RANGE/ROC/FLATLINE/SPIKE/STALE/GAP rules naming the rule and limit that fired; ranges from the gauge datasheet), `client_reports` (nine report types in the scope-of-work outline, vocabulary-gated), `accuracy_statement` (MAPE with seeded bootstrap 90 % CI, band read at the conservative end: 8 of 14 library quantities meet 95 %, 5 NOT ACCEPTABLE, printed), `drift_monitor` (scheduled evaluation log, CURRENT/STALE, re-fit change log with before/after, SLA clocks, annual cap), `well_test_validation` (criteria file hashed on every report; Volve F-12: 7 tests accepted, 32 rejected with reason codes; two-level approval trail), `alarm_engine` (setpoint/deadband/on-delay state machine, event log, ISA-18.2 KPIs against targets), `model_card` (six cards from live objects; aging envelope validation NONE ON RECORD), `store_forward` (72 h edge buffer, chronological rate-controlled replay, dedupe, per-record latency), `config_versioning`, `sbom`, `sla_report` (month measured from records; NOT MEASURED never reads as met), `fat_sat` (protocol with signature block), `dashboard` (tiles, ranking, alarm wall, drill-down; light/dark). Twelve CLI commands. Simulator 1.91.0. **Nothing in the calculator, registry values, gate assertions or physics changed.** Q-252 stays Daniel-gated. **Totals: 2,279 wired (2,334 DISPATCH keys) / gate 6,115 green / 4,206 defs / acceptance 163 green / registry 7,144 rows / whitepapers 2,328 / results table 187 rows at ZERO inherited / backlog 0 Daniel-gated + 1 observation-gated candidate / catalogue 52 public entries + operator tier.**
 
 Author: Daniel T. Murphy · Star-Magic Research Program
 License: AGPL-3.0-or-later OR Commercial
@@ -60,7 +60,7 @@ Mizuno, Rossi).
 Full framework physics lives in the whitepaper corpus — the physics is the
 whitepapers; the calculator computes what the whitepapers derive.
 
-## What is currently shipped (v0.443.0)
+## What is currently shipped (v0.444.0)
 
 ### Wiring campaign — LIVE (see `CLAUDE.md` charter)
 
@@ -77,7 +77,7 @@ Authorized 2026-07-28: autonomous band sessions, ship per session via
 
 **Flagship UQFF closed forms now individually callable** (v0.342.0–v0.343.0 predecessor mine): cosmological constant Λ = ρ_SCm·26!·25/12 = 5.957e-10 (Planck), proton mass 938.25 MeV and m_p/m_e = 1836 from integers, H₀ = A_5+SO_5 = 70 EXACT, Ω_Λ = 0.684, Universal Inertial Operator U_i = 2.75e-7 (Sun), Higgs vev 246 GeV, fine-structure α, electron g−2 = 0.001159652, Holmlid 630 eV / Coulomb 626 eV LENR chain, and **all 8 Clay Millennium closures** (Riemann, P≠NP, Yang-Mills=1.736, Poincaré=7/12, Navier-Stokes=0.85, Hodge=1.0, BSD, BH-info).
 
-Registry: **7,143 rows**. Fidelity gate: **6,115 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
+Registry: **7,144 rows**. Fidelity gate: **6,115 assertions**, green. *(v0.285.0/v0.321.0 burned/yanked on PyPI.)*
 
 | Paper | Content | Key result |
 |---|---|---|

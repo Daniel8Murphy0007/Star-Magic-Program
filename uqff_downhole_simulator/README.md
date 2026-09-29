@@ -28,7 +28,7 @@ built toward:
    continents one site at a time), per Daniel's 2026-08-28 standing direction.
 
 Ingestion (LAS / historian CSV / file-follower / Modbus TCP), a two-stream
-reconciler, an operator surface, and a 108-check in-package acceptance suite
+reconciler, an operator surface, and a 163-check in-package acceptance suite
 complete the offline product. Honest-status flags are load-bearing: quantities
 without a measured or derived path say so (`PARAMETERS_USER_SUPPLIED`,
 `SIMULATION_SELF_TEST`) rather than pretending.
@@ -1228,3 +1228,104 @@ supplying the corrected prior (in-sample 6,231 vs measured 6,228), Prediction V2
 unsettled. v1.80 gave the tool its face - a site map and cross-section that print their own
 caveats - and carried the doctrine into the ENRGYONE commercial package. Falsifiability is
 not a section heading here; it is the control loop.
+
+## The client-report family (Daniel GO, 2026-09-28 - reporting basis in scope-of-work outline)
+
+The engines return dicts; a client engineer opens a report. `sample_record.py` is the canonical
+measurement record every client-facing number now passes through - `tag_id, timestamp_utc, value,
+unit, quality_flag, rule_fired, source_layer, ingest_timestamp_utc` - with a tag catalogue (owner,
+engineering unit, engineering range, cadence, source layer) and per-tag quality rules (RANGE, ROC,
+FLATLINE, SPIKE, STALE, GAP) that name the rule and limit that fired on every flagged sample. Source
+flags carried by a stream are mapped, never discarded. `client_reports.py` renders the reports in the
+numbering of a production-operations scope of work and refuses to write a report containing the
+program's internal register (`forbidden_terms` gate, acceptance AA5). First report: the **Gauge Drift
+& Reconciliation Report** (`client-report --report drift`) - summary; tag catalogue (4.2.1.2); data
+quality (4.2.2); drift evaluation with classification key and action (4.2.10); model drift and
+staleness status with the SLA clocks (SLA 1.0: evaluate 24 h, notify 1 bd, fallback 2 bd, re-fit
+10 bd); configuration in force (4.2.1.4); proposed change-log entries; provenance and limitations.
+Markdown, HTML, machine JSON, records CSV and tag CSV land together. On the Volve 15/9-F-12 excerpt
+the record layer flags the excerpt's genuine stuck-sensor run (9 FLATLINE samples) and the report
+carries the reconciler's UNEXPLAINED_TREND as MODEL DRIFT DETECTED with the FALLBACK action - the
+drawdown is process, not instrument, and the report says to investigate exactly that. The historian
+port now keeps the ISO time origin in `meta['start_time']` so client records carry real timestamps.
+
+**Build steps (3) and (4), same day.** `rules_from_gauge_spec` derives the engineering RANGE from the
+gauge datasheet (pressure 0 to full scale; temperature up to the rating) and records the citation in
+`limits_basis`; what a datasheet does not state - the rate-of-change limit, flatline run, staleness
+multiple, spike threshold - is printed as an operations setting, never invented. A rolling-median/MAD
+spike rule joins the record layer (6 x MAD, window 21, disclosed per flagged sample); on the Volve
+excerpt it fires on 5 daily excursions beside the 9-sample stuck run. `accuracy_statement.py` is the
+client's statistic: per predicted quantity per well, MAPE with a seeded bootstrap 90 % CI, coverage at
+the CI level as a calibration check, and the band (>= 95 / 90-95 / 85-90 / < 85) read at the
+conservative end of the interval. `library_backtest()` re-scores the blind harness trial by trial;
+`client-report --report accuracy` writes the Accuracy Statement (SLA 4.0 definitions, SCC 5.0 method,
+five-year measurement plan). The library statement today: 14 quantities scored on 410 trials, 8 meet
+the 95 % target, 1 band 2, 5 NOT ACCEPTABLE, 4 pending - printed as found.
+
+**Build steps (5) and (6), same day.** `drift_monitor.py` runs the reconciler as a scheduled job with an
+injected clock: every evaluation is a JSON line per station (`evaluations.jsonl`), the state ages into
+CURRENT / STALE against the 24 h cadence with overdue hours counted, a CALIBRATION_OFFSET becomes a
+`REFIT_OFFSET` change-log entry with before/after coefficients that a named approver applies (the
+correction is then subtracted from the live leg and the next evaluation reads IN_FAMILY), UNEXPLAINED
+classes become FALLBACK proposals, the SLA clocks (notify 1 / fallback 2 / re-fit 10 business days)
+start at the detecting evaluation, and the fifth re-fit in a calendar year is BLOCKED_ANNUAL_LIMIT
+(SOW 4.2.26). `drift-monitor --action evaluate|status|approve` on the CLI; `--report` writes the drift
+report with section 5 fed from the log. `well_test_validation.py` detects stable periods with the
+client-agreed logic in a criteria file (printed with its sha256 on every report): per-sample
+eligibility (on stream, complete, quality GOOD), greedy maximal windows under rate/pressure CV, trend and
+operating-point rules, reason codes naming the rule and the value that failed, virtual rates as the
+means of accepted tests, and a two-level approval trail with timestamps. On the Volve 15/9-F-12
+excerpt: 7 well tests accepted (e.g. WT024, 2–9 May 2008, oil 3,177.5 Sm3/d over 8 days at choke 33),
+32 candidates rejected with reasons (shut-in days, choke moves, unstable gas, wellhead swings).
+`well-test --live-catalog ... --criteria ... --out` writes the Well Test Validation Report (SOW 4.2.3.1).
+
+**Build steps (7) and (8), same day.** `alarm_engine.py` is the alarm layer (SOW 4.2.4): definitions
+with tag, kind (HIGH / HIGH_HIGH / LOW / LOW_LOW / RATE / QUALITY), setpoint, return-to-normal deadband,
+on-delay, priority P1–P5 and the basis of the setpoint; an ISA-18.2-style state machine (NORMAL →
+ACTIVE_UNACKED → ACTIVE_ACKED → CLEARED, RTN_UNACKED, SHELVED); an append-only event log; and the
+alarm-management KPIs (rate per 10 min per operator position, floods, standing, chattering, priority
+split, top-10) printed beside their commonly stated targets. `defaults_from_catalogue` derives only
+over-range alarms from the tag catalogue's engineering range and a quality alarm per tag - process
+setpoints come from the client's definitions file. On the 24 h telemetry export the quality alarms
+flood (the report says so and names the remedy) and the deepest gauge's temperature reads above the
+template datasheet rating - a real over-range alarm on the demo well. `model_card.py` generates one
+card per model from the live objects (after Mitchell et al. 2019): intended use, out-of-scope uses,
+inputs with sources, settings with basis, calibration data with the catalogue's provenance (database,
+URL, licence, fetch date), recomputed evaluation, limitations, re-fit history from the drift monitor's
+change log, and component sha256s. Six cards: well baseline, gauge aging envelope (field validation
+NONE ON RECORD, lower bound labelled an unvalidated engineering model), strata property estimator
+(14 back-tested quantities incl. the five NOT ACCEPTABLE), rock density inventory (17 cited anchors),
+quality rules, well-test detector. `alarms` and `model-cards` on the CLI.
+
+**Build steps (9) and (10), same day - the reformulation's build list is complete except the web view.**
+`store_forward.py` is the edge buffer (SOW 4.2.1.6; SLA 5.0): capacity in hours of cadence, spool file,
+chronological rate-controlled replay metered per second, duplicate suppression by (tag, timestamp), every
+delivered record stamped with its ingest time so latency is measured per record and per layer; the
+simulation driver replays a historian export against outage windows with the records' own clock. Two
+outages on the 24 h export: 1,380 buffered, 1,380 replayed in order, none lost, none duplicated; the
+Data Resilience report prints latency for all records and for live delivery only (SLA 7.0 exclusion).
+`config_versioning.py` versions every configuration with author, note, sha256 and a key-level diff;
+rollback is a new version equal to an old one, history never deleted; export/import to files.
+`sbom.py` generates the eight-field SBOM from installed metadata (licence expressions read, never
+guessed; optional components listed installed or not). `sla_report.py` measures the month from the
+program's own records - drift cadence, re-fit within 10 bd, annual cap, latency p95/p99 and %-within,
+link availability, losses, duplicates, alarms, well-test approvals, accuracy bands, config changes -
+every line measured / target / status, NOT MEASURED when a record is absent, never assumed met.
+`fat_sat.py` renders the acceptance suite as a FAT or SAT protocol (SOW 4.2.20 / 4.2.21): numbered
+steps, expected/actual, witness column, signature block; the SAT records the installed environment
+from the SBOM; internal-register checks are excluded and counted, no check altered. CLI: `store-forward`,
+`config`, `sbom`, `sla-report`, `fat-sat`.
+
+**Build step (11) - the web view; the build list from the 2026-09-28 reformulation is complete.**
+`dashboard.py` generates the client's browser page (SOW 4.2.12; 4.2.4): status tiles with one hero
+figure (wells with model drift detected), a well ranking ordered by drift severity, unacknowledged
+alarms and data quality, an alarm wall by priority, and a report index - every figure read from the
+machine JSON the report generators wrote, every tile and row a drill-down link to its report, status
+always an icon with a label, light and dark themes from the same tokens. `orchestrate()` runs the whole
+family for the wells given - catalogue wells (drift + well tests) and historian files (drift + alarms +
+resilience) - then the site reports (accuracy statement, six model cards, SBOM, monthly SLA, optional
+SAT) - and builds `index.html`. `dashboard --catalog-well ENTRY:WELL:MD --file CSV --outage ... --month
+YYYY-MM --sat --out DIR` on the CLI. On the demo set (Volve F-12, Volve F-14, the 24 h export): 2 of 3
+wells with model drift detected, 7 well tests awaiting approval, 26 unacknowledged alarms, 8 of 14
+accuracy quantities meeting target, store-and-forward lossless, SLA 6 MET / 4 NOT MET / 4 not
+measured - printed as found.

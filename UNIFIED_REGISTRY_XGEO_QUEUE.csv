@@ -1777,3 +1777,4 @@ NSPROOFSET_ARC_B286,n/a,n/a,NOT_APPLICABLE,B286 front 4 re-specified - same arc,
 NSPROOFSET_ARC_B287,n/a,n/a,NOT_APPLICABLE,B287 front 4 record run - same arc,v0.441.0
 NSPROOFSET_ARC_B288,n/a,n/a,NOT_APPLICABLE,B288 Q-251 argon test - same arc,v0.442.0
 AUDIT_ARC_B289,n/a,n/a,NOT_APPLICABLE,B289 audit band - no geometry,v0.443.0
+CLIENT_ARC_B290,n/a,n/a,NOT_APPLICABLE,B290 client-user band - no geometry,v0.444.0

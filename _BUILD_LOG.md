@@ -626,6 +626,15 @@ near-wall + 100k bulk + 7 slabs; wall-unit profile identical to Re_tau
 branch holds; discrimination out of reach; the public DNS record is
 exhausted for front 2. Gate 6,111/0. Acceptance 109/109.
 
+## v0.444.0 — 2026-09-29 — THE CLIENT-USER BAND SHIP
+B290: uqff_downhole_simulator gains its client-facing layer - thirteen
+modules, twelve CLI commands, nine report types in scope-of-work outline,
+vocabulary-gated; drift monitor with re-fit change log; well-test validation
+with criteria file and approval trail; alarm engine with ISA-18.2 KPIs; six
+model cards; store-and-forward with lossless chronological replay; config
+versioning; SBOM; monthly SLA measurement; FAT/SAT protocol; dashboard.
+Acceptance 109 -> 163. Simulator 1.91.0. Gate 6,115/0. No physics change.
+
 ## v0.443.0 — 2026-09-28 — THE AUDIT BAND SHIP
 B289: audit/ ships four source-level audits - external-contact (909 lines,
 0 pre-stated-and-passed), THE_RECORD (constants traced to birth chat/date;

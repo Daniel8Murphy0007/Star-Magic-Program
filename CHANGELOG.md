@@ -5,6 +5,30 @@ All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.444.0 — 2026-09-29 — THE CLIENT-USER BAND (B290: the downhole gauge program's client-facing layer; no physics change)
+
+- uqff_downhole_simulator: thirteen new modules - sample_record (canonical
+  measurement record + quality rules, datasheet-derived ranges, spike rule),
+  client_reports (nine report types in scope-of-work outline; internal-register
+  vocabulary gate), accuracy_statement (MAPE, seeded bootstrap 90 pct CI,
+  conservative band), drift_monitor (scheduled evaluation log, staleness,
+  re-fit change log with before/after, SLA clocks, annual re-fit cap),
+  well_test_validation (criteria file hashed on every report, reason codes,
+  two-level approval trail), alarm_engine (ISA-18.2 state machine, event log,
+  KPIs against targets), model_card (six cards from live objects),
+  store_forward (72 h edge buffer, chronological rate-controlled replay,
+  dedupe, per-record latency), config_versioning (diff, rollback, history),
+  sbom (eight fields from installed metadata), sla_report (month measured from
+  records; NOT MEASURED never reads as met), fat_sat (protocol + signature
+  block), dashboard (tiles, ranking, alarm wall, drill-down; light/dark).
+- CLI: client-report, drift-monitor, well-test, alarms, model-cards,
+  store-forward, config, sbom, sla-report, fat-sat, dashboard (+ accuracy
+  route). uqff_ports keeps the ISO time origin in meta['start_time'].
+- Acceptance 109 -> 163 (section AA, 54 checks). Simulator 1.90.0 -> 1.91.0.
+  Gate tuple PAPER_2256 now guards the thirteen modules on the wheel.
+- Registry: one product-arc row (RECORDED, no value change) -> 7,144 rows.
+  Arc marker CLIENT_ARC. Gate 6,115/0. Q-252 OPEN, Daniel-gated. Rule E held.
+
 ## v0.443.0 — 2026-09-28 — THE AUDIT BAND (B289: corpus read in full; record of AI failure; no physics change)
 
 - audit/EXTERNAL_CONTACT_AUDIT.md (+ _ROWS.csv, rubric.txt, look_elsewhere.py,

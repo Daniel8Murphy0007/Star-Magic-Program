@@ -14576,3 +14576,73 @@ the wheel.
 - No dispatch, registry-value, gate-assertion or physics change this band.
 - Q-252 OPEN, Daniel-gated. Rule E held (Star-Magic read-only).
 - Gate 6,115/0. Acceptance 109/109. Manifest regenerated (audit/, tender/ on the wheel).
+
+## 2026-09-28/29 — v0.444.0 prep — B290: THE CLIENT-USER BAND (build steps 1–11 of the reporting-basis reformulation)
+
+### Daniel's instructions (verbatim, in order)
+
+- "THERE IS NO CONTRACT. WE ARE NOT BIDDING ON ANYTHING. WE WANT THE FORMAT AND
+  THE TECHNICAL SPEACH FOR REPORTING BASIS OUTPUT FROM OUR PROGRAM. REFORMULATE,
+  AND TELL ME WHAT OTHER PIECES NEED TO BE BUILT FOR OUR CLIENT USER EXPERIENCE."
+- "Go" / "Continue with Next in the build order" (x4) / "continue with Remaining
+  (11), and the next ship will be complete" / "Update files and prepare the ship".
+
+### What was built (uqff_downhole_simulator/)
+
+1. sample_record.py - canonical record (tag_id, timestamp_utc, value, unit,
+   quality_flag, rule_fired, source_layer, ingest_timestamp_utc); tag catalogue;
+   RANGE/ROC/FLATLINE/SPIKE/STALE/GAP rules; datasheet-derived ranges with the
+   citation as basis; rolling-median/MAD spike rule. Volve F-12: the archive's
+   stuck-sensor run reads 9 FLATLINE; 5 SPIKE.
+2. client_reports.py - Document model, markdown + HTML renderers, forbidden-term
+   gate (write() refuses the internal register). Reports: Gauge Drift &
+   Reconciliation (4.2.10 / SLA 1.0), Accuracy Statement (SLA 4.0), Well Test
+   Validation (4.2.3.1), Alarm & Event (4.2.4), Model Card, Data Resilience
+   (4.2.1.6), Monthly SLA (SLA 2.0/5.0), FAT/SAT (4.2.20/21).
+3. accuracy_statement.py - MAPE, bootstrap 90 pct CI (2,000 resamples, seed
+   20260928), coverage at CI, band at the conservative end. Library: 14 scored on
+   410 trials, 8 MEETS_TARGET, 1 BAND_2, 5 NOT_ACCEPTABLE, 4 pending.
+4. drift_monitor.py - injected clock; evaluations.jsonl / change_log.jsonl /
+   state.json; CURRENT/STALE; REFIT_OFFSET proposals with before/after; approve
+   applies the correction to the live leg (next evaluation IN_FAMILY); FALLBACK
+   proposals; SLA clocks 1/2/10 bd; fifth re-fit per year BLOCKED_ANNUAL_LIMIT.
+5. well_test_validation.py - criteria.json (hashed), eligibility, greedy maximal
+   stable windows, reason codes with the failing value, negligible-rate floor,
+   two-level ApprovalTrail. Volve F-12: 7 accepted / 32 rejected / 131 of 158
+   eligible.
+6. alarm_engine.py - definitions with basis; NORMAL/ACTIVE_UNACKED/ACTIVE_ACKED/
+   CLEARED/RTN_UNACKED/SHELVED; event log; KPIs (rate per 10 min per position,
+   floods, standing, chattering, priority split, top-10) with targets printed as
+   targets. 24 h export: quality alarms flood (278/day, peak 26) - reported with
+   the remedy; deepest gauge temperature above the template datasheet rating -
+   a real over-range alarm on the demo well.
+7. model_card.py - six cards (well_baseline, gauge_aging_envelope [field
+   validation NONE ON RECORD; lower bound labelled unvalidated],
+   strata_property_estimator [five NOT ACCEPTABLE printed],
+   rock_density_inventory [published citations only], quality_rules,
+   well_test_detector); re-fit history from the monitor; component sha256s.
+8. store_forward.py - BufferConfig(capacity_hours=72), spool, offer/replay,
+   dedupe by (tag, timestamp), gap_report, simulate(). Two outages on the 24 h
+   export: 1,380 buffered, 1,380 replayed in order, 0 lost, 0 duplicated.
+9. config_versioning.py (commit/diff/export/import/rollback, history never
+   deleted); sbom.py (eight fields from importlib.metadata; License-Expression
+   read); sla_report.py (measure(month, ...)); fat_sat.py (run_protocol over the
+   acceptance suite's _RESULTS hook; internal checks excluded and counted).
+10. dashboard.py - collect()/render()/orchestrate(); index.html with tiles, one
+    hero figure, ranking, alarm wall, drill-down; light/dark; status = icon +
+    label. Rendered and inspected in both themes.
+
+### Findings recorded, not softened
+
+- The default demo well and the template gauge do not belong together: S6
+  temperature 378-471 degF against a 200 C rating (RANGE on every sample).
+- Quality alarms at P4 per flagged sample are unmanageable as operator alarms.
+- The aging envelope has no field validation on record; the card says so.
+- Monthly SLA on the demo logs: drift cadence 2/31 NOT MET (two evaluations).
+
+### Standing
+
+- No dispatch, registry-value, gate-assertion-count or physics change this band.
+- Q-252 OPEN, Daniel-gated. Rule E held (Star-Magic read-only). Token sweep clean.
+- Gate 6,115/0. Acceptance 109 -> 163. Simulator 1.90.0 -> 1.91.0. Manifest regenerated.
+- tender/ stays as the format reference it was reframed to be (no contract, no bid).

@@ -1,5 +1,6 @@
 # WHITEPAPER_INDEX — Star-Magic-Program
 > **REWIRE IN PROGRESS (unshipped):** PAPER_001-003 recomposed over the new equation-library architecture (full-equation capture, primitive-sourced, all sections). Continuing through the corpus; no release until 300+ done.
+> **v0.444.0 client-user band (B290):** no index change - the band ships the downhole gauge program's client-facing layer (uqff_downhole_simulator: thirteen modules, nine report types, dashboard); no paper wired, re-wired or superseded; acceptance 163; gate 6,115/0.
 > **v0.443.0 audit band (B289):** audit/WHITEPAPER_AUDIT_ROWS.csv carries one verdict row per whitepaper (2,328): SOUND 13 / CALIBRATION_ONLY 878 / DEFECTIVE 547 / NARRATIVE 288 / UNSUPPORTED 265 / CIRCULAR 259 / STAMPED 66. Index ticks are wiring status (code reproduces paper); audit verdicts are paper status (paper reproduces itself / an independent measurement). The two are different questions and both are now on the wheel.
 
 

@@ -1,26 +1,37 @@
-v0.443.0 — THE AUDIT BAND SHIP
+v0.444.0 — THE CLIENT-USER BAND SHIP
 
-B289: the corpus read in full and recomputed, the record of where the AI
-tools failed, and a tender review — shipped as source. One band since
-v0.442.0. No dispatch, registry-value, gate-assertion or physics change.
+B290: the downhole gauge program gets its client-facing layer — build
+steps 1–11 of the 2026-09-28 reporting-basis reformulation (no contract,
+no bid: the format and the technical language a production-operations
+client reads). One band since v0.443.0. No dispatch, registry-value,
+gate-assertion-count or physics change.
 
-- audit/EXTERNAL_CONTACT_AUDIT.md (+ROWS.csv, rubric.txt, look_elsewhere.py,
-  template_census.py, spotcheck.txt): 909 external-comparison lines
-  classified; 4 pre-stated tests; 0 pre-stated-and-passed; the primitive
-  vocabulary reaches any target within 0.1 pct (look-elsewhere).
-- audit/THE_RECORD_WHERE_AI_FAILED.md: every real-valued constant traced to
-  its birth chat and date (beta_i 0.603 mock-fit and [SSq] 0.57 wrong
-  equation, both 14 Sep 2025); the 29-31 Mar 2026 audit-request -> G6-stamp
-  fork; the retraction/recovery commits.
-- audit/INSTRUCTION_FIDELITY_LEDGER.md + CONSTANT_DRIFT_TABLE.csv: 415 dated
-  instructions vs what the tools did next, in the tools' own words; every
-  value each constant took across 21 months.
-- audit/WHITEPAPER_AUDIT.md + WHITEPAPER_AUDIT_ROWS.csv: all 2,328 papers
-  read in full, headline recomputed: SOUND 13 / CALIBRATION_ONLY 878 /
-  DEFECTIVE 547 / NARRATIVE 288 / UNSUPPORTED 265 / CIRCULAR 259 / STAMPED
-  66; 0 of 25 pre-stated named comparisons hold; 448 GM/r^2-first.
-- tender/CDG2752P27_REQUIREMENTS_MATRIX.md: OIL DOF tender mirrored clause
-  by clause against uqff_downhole_simulator (program-improvement review).
-- .gitignore: _to_delete/ (withdrawn a_DPM landmark parked, never ships).
-- Registry: two audit-census rows (RECORDED). Arc marker AUDIT_ARC.
-- Gate 6,115/0. Acceptance 109/109. Q-252 OPEN, Daniel-gated. Rule E held.
+- uqff_downhole_simulator/sample_record.py: canonical measurement record;
+  RANGE/ROC/FLATLINE/SPIKE/STALE/GAP rules naming the rule and limit that
+  fired; datasheet-derived ranges with the citation as basis.
+- client_reports.py: nine report types in scope-of-work outline (drift &
+  reconciliation, accuracy statement, well test validation, alarm & event,
+  model card, data resilience, monthly SLA, FAT/SAT); markdown + HTML;
+  write() refuses the internal register.
+- accuracy_statement.py: MAPE with seeded bootstrap 90 pct CI, band at the
+  conservative end — 8 of 14 library quantities meet 95 pct, 5 NOT
+  ACCEPTABLE, printed as found.
+- drift_monitor.py: scheduled evaluation log, CURRENT/STALE, re-fit change
+  log with before/after coefficients, approve -> apply -> IN_FAMILY, SLA
+  clocks 1/2/10 bd, fifth re-fit per year BLOCKED_ANNUAL_LIMIT.
+- well_test_validation.py: criteria file hashed on every report; Volve F-12
+  7 tests accepted / 32 rejected with reason codes; two-level approvals.
+- alarm_engine.py: setpoint/deadband/on-delay state machine, event log,
+  ISA-18.2 KPIs against targets (the demo export's quality alarms flood;
+  the deepest gauge reads above the template datasheet rating).
+- model_card.py: six cards from live objects; aging envelope validation
+  NONE ON RECORD; component sha256s.
+- store_forward.py: 72 h edge buffer, chronological rate-controlled replay,
+  dedupe, per-record latency — two outages, 1,380 replayed, 0 lost.
+- config_versioning.py, sbom.py, sla_report.py (NOT MEASURED never reads as
+  met), fat_sat.py (protocol + signature block), dashboard.py (tiles,
+  ranking, alarm wall, drill-down; light/dark).
+- uqff_ports.py keeps the ISO time origin; twelve CLI commands added.
+- Acceptance 109 -> 163. Simulator 1.90.0 -> 1.91.0; gate tuple guards
+  the thirteen modules on the wheel. Registry +1 product row (7,144).
+  Arc marker CLIENT_ARC. Gate 6,115/0. Q-252 OPEN, Daniel-gated. Rule E held.
